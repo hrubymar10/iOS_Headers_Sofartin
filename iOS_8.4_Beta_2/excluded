@@ -1,0 +1,5 @@
+--reject "NSLeafProxy.h" --reject "JSExport.h" --reject "SCNCameraControlEventHandler.h" --reject "SCNTextureLayerSource.h" --reject "SCNRenderer.h" --reject "SCNNode.h" --reject "SCNTextureSpriteKitSource.h" --reject "SK3DNode.h" --reject "SKFieldNode.h" --reject "SKPhysicsWorld.h" --reject "SKVelocityFieldNode.h"
+
+--reject "PKPhysicsField.h" --reject "PKPhysicsFieldLinearGravity.h" --reject "PKPhysicsWorld.h" --reject "WebGLLayer.h"
+
+nothing
