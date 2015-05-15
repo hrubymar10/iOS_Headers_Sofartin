@@ -13,14 +13,14 @@
     id _statisticsUpdateHandler;
 }
 
-@property(assign,readonly) NSDate * anchorDate;
-@property(assign,copy) id initialResultsHandler;
-@property(assign,copy) NSDateComponents * intervalComponents;
-@property(assign,retain) NSNumber * lastAnchor;
-@property(assign,readwrite) unsigned long long mergeStrategy;
-@property(assign,readonly) unsigned long long options;
-@property(assign,retain) HKStatisticsCollection * statisticsCollection;
-@property(assign,copy) id statisticsUpdateHandler;
+@property (readonly) NSDate *anchorDate;
+@property (nonatomic, copy) id initialResultsHandler;
+@property (readonly, copy) NSDateComponents *intervalComponents;
+@property (retain) NSNumber *lastAnchor;
+@property (nonatomic) unsigned long long mergeStrategy;
+@property (readonly) unsigned long long options;
+@property (retain) HKStatisticsCollection *statisticsCollection;
+@property (nonatomic, copy) id statisticsUpdateHandler;
 
 + (Class)_queryServerDataObjectClass;
 

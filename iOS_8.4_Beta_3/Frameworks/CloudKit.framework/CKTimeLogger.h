@@ -15,15 +15,15 @@
     double _relationTime;
 }
 
-@property(assign,readonly) NSArray * childLoggers;
-@property(assign,retain) NSMutableDictionary * currentSessions;
-@property(assign,readonly) NSDictionary * logs;
-@property(assign,retain) NSString * observedObjectClassName;
-@property(assign,retain) NSString * observedObjectDescription;
-@property(assign,readwrite) CKTimeLogger * parentLogger;
-@property(assign,retain) NSString * parentLoggerDescription;
-@property(assign,retain) NSString * relationMessage;
-@property(assign,readwrite) double relationTime;
+@property (readonly) NSArray *childLoggers;
+@property (retain) NSMutableDictionary *currentSessions;
+@property (readonly) NSDictionary *logs;
+@property (nonatomic, retain) NSString *observedObjectClassName;
+@property (nonatomic, retain) NSString *observedObjectDescription;
+@property (nonatomic) CKTimeLogger *parentLogger;
+@property (nonatomic, retain) NSString *parentLoggerDescription;
+@property (nonatomic, retain) NSString *relationMessage;
+@property (nonatomic) double relationTime;
 
 + (id)loggerForObject:(id)arg1;
 

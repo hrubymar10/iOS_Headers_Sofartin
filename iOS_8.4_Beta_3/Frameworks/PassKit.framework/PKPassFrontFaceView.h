@@ -10,8 +10,8 @@
     bool _showsShare;
 }
 
-@property(assign,readwrite) bool showsInfo;
-@property(assign,readwrite) bool showsShare;
+@property (nonatomic) bool showsInfo;
+@property (nonatomic) bool showsShare;
 
 - (void)_flipButtonPressed;
 - (id)_relevantBuckets;

@@ -10,8 +10,8 @@
     NSMutableDictionary *_downloadsByID;
 }
 
-@property(assign,readonly) SSDownloadManager * downloadManager;
-@property(assign,readonly) NSArray * downloads;
+@property (nonatomic, readonly) SSDownloadManager *downloadManager;
+@property (nonatomic, readonly) NSArray *downloads;
 
 - (void)_finishPreflightWithCompletionBlock:(id)arg1;
 - (void)_reloadDownloadManager;

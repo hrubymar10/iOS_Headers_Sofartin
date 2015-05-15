@@ -7,8 +7,8 @@
     long long _offset;
 }
 
-@property(assign,readwrite) long long affinity;
-@property(assign,readwrite) long long offset;
+@property long long affinity;
+@property long long offset;
 
 + (id)positionWithOffset:(long long)arg1;
 + (id)positionWithOffset:(long long)arg1 affinity:(long long)arg2;

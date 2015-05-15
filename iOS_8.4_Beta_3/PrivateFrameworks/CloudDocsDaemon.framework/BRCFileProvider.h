@@ -10,14 +10,14 @@
     NSURL *_url;
 }
 
-@property(assign,copy) NSString * _fileReactorID;
-@property(assign,readonly) NSOperationQueue * _providedItemsOperationQueue;
-@property(assign,copy) NSURL * _providedItemsURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) BRCAccountSession * session;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *_fileReactorID;
+@property (readonly) NSOperationQueue *_providedItemsOperationQueue;
+@property (readonly, copy) NSURL *_providedItemsURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) BRCAccountSession *session;
+@property (readonly) Class superclass;
 
 + (id)prettyNameForFilePresenterID:(id)arg1;
 

@@ -10,9 +10,9 @@
     struct __CFUUID { } *_ownerID;
 }
 
-@property(assign,retain) TSCECalculationEngine * calcEngine;
-@property(assign,readwrite) struct __CFUUID { }* formulaOwnerID;
-@property(assign,retain) TSCEOwnerFormulaMap * formulasForUndo;
+@property (nonatomic, retain) TSCECalculationEngine *calcEngine;
+@property (nonatomic) struct __CFUUID { }*formulaOwnerID;
+@property (nonatomic, retain) TSCEOwnerFormulaMap *formulasForUndo;
 
 + (struct { unsigned short x1; unsigned char x2; unsigned char x3; })coordFromIndex:(unsigned long long)arg1;
 + (unsigned long long)indexFromCoord:(const struct { unsigned short x1; unsigned char x2; unsigned char x3; }*)arg1;

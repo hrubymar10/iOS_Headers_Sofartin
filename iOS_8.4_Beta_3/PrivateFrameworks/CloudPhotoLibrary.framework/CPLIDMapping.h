@@ -8,9 +8,9 @@
     NSString *_localIdentifier;
 }
 
-@property(assign,readonly) NSString * cloudIdentifier;
-@property(getter=isFinal,assign,readonly) bool final;
-@property(assign,readonly) NSString * localIdentifier;
+@property (nonatomic, readonly) NSString *cloudIdentifier;
+@property (getter=isFinal, nonatomic, readonly) bool final;
+@property (nonatomic, readonly) NSString *localIdentifier;
 
 - (void).cxx_destruct;
 - (id)cloudIdentifier;

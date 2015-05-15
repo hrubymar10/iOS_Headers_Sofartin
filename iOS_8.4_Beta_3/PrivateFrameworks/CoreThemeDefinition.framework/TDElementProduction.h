@@ -4,17 +4,17 @@
 
 @interface TDElementProduction : NSManagedObject
 
-@property(assign,retain) TDThemeConstant * artworkDraftType;
-@property(assign,retain) TDRenditionKeySpec * baseKeySpec;
-@property(assign,retain) NSString * comment;
-@property(assign,retain) NSDate * dateOfLastChange;
-@property(assign,retain) NSNumber * isExcludedFromFilter;
-@property(assign,retain) TDNamedElement * name;
-@property(assign,retain) TDSchemaPartDefinition * partDefinition;
-@property(assign,retain) TDThemeConstant * renditionSubtype;
-@property(assign,retain) TDRenditionType * renditionType;
-@property(assign,retain) NSSet * renditions;
-@property(assign,retain) TDThemeConstant * zeroCodeArtworkInfo;
+@property (nonatomic, retain) TDThemeConstant *artworkDraftType;
+@property (nonatomic, retain) TDRenditionKeySpec *baseKeySpec;
+@property (nonatomic, retain) NSString *comment;
+@property (nonatomic, retain) NSDate *dateOfLastChange;
+@property (nonatomic, retain) NSNumber *isExcludedFromFilter;
+@property (nonatomic, retain) TDNamedElement *name;
+@property (nonatomic, retain) TDSchemaPartDefinition *partDefinition;
+@property (nonatomic, retain) TDThemeConstant *renditionSubtype;
+@property (nonatomic, retain) TDRenditionType *renditionType;
+@property (nonatomic, retain) NSSet *renditions;
+@property (nonatomic, retain) TDThemeConstant *zeroCodeArtworkInfo;
 
 - (id)associatedFileModificationDateWithDocument:(id)arg1;
 - (id)associatedFileURLWithDocument:(id)arg1;

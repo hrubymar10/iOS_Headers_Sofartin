@@ -8,12 +8,12 @@
     UIWindow *_window;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) UIColor * interactionTintColor;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIWindow * window;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) UIColor *interactionTintColor;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIWindow *window;
 
 - (void)_applicationDidFinishLaunching:(id)arg1;
 - (void)_exitForStoreNotAvailable;

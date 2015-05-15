@@ -13,18 +13,18 @@
     id _tableViewCellHook;
 }
 
-@property(assign,retain) NSString * cachedCellReuseIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool editable;
-@property(assign,retain) EKEvent * event;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id participantRemoved;
-@property(assign,copy) id participantTapped;
-@property(assign,retain) NSMutableArray * participants;
-@property(assign,readwrite) unsigned long long reuseIdentifierVersion;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id tableViewCellHook;
+@property (nonatomic, retain) NSString *cachedCellReuseIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool editable;
+@property (nonatomic, retain) EKEvent *event;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id participantRemoved;
+@property (nonatomic, copy) id participantTapped;
+@property (nonatomic, retain) NSMutableArray *participants;
+@property (nonatomic) unsigned long long reuseIdentifierVersion;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id tableViewCellHook;
 
 - (void).cxx_destruct;
 - (bool)_isValidRow:(long long)arg1;

@@ -7,12 +7,12 @@
     double _setupDuration;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double setupDuration;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double setupDuration;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)description;

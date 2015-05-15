@@ -13,18 +13,18 @@
     City *_weatherCity;
 }
 
-@property(assign,readonly) NSString * abbreviation;
-@property(assign,readonly) ALCity * alCity;
-@property(assign,readonly) NSNumber * alCityId;
-@property(assign,readonly) NSString * countryCode;
-@property(assign,readonly) NSString * countryName;
-@property(assign,readonly) NSURL * idUrl;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSDictionary * properties;
-@property(assign,readonly) NSString * timeZone;
-@property(assign,readonly) NSString * unlocalizedCityName;
-@property(assign,readonly) NSString * unlocalizedCountryName;
-@property(assign,retain) City * weatherCity;
+@property (nonatomic, readonly) NSString *abbreviation;
+@property (nonatomic, readonly) ALCity *alCity;
+@property (nonatomic, readonly) NSNumber *alCityId;
+@property (nonatomic, readonly) NSString *countryCode;
+@property (nonatomic, readonly) NSString *countryName;
+@property (nonatomic, readonly) NSURL *idUrl;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSDictionary *properties;
+@property (nonatomic, readonly) NSString *timeZone;
+@property (nonatomic, readonly) NSString *unlocalizedCityName;
+@property (nonatomic, readonly) NSString *unlocalizedCountryName;
+@property (nonatomic, retain) City *weatherCity;
 
 + (bool)isCachedLanguageStaleForProperties:(id)arg1;
 + (bool)isCachedLanguageStaleForProperties:(id)arg1 systemLanguage:(id)arg2;

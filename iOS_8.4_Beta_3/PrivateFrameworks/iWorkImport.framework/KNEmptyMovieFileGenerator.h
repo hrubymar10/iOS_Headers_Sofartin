@@ -7,7 +7,7 @@
     NSURL *mGeneratedFileURL;
 }
 
-@property(assign,readonly) NSURL * generatedFileURL;
+@property (nonatomic, readonly) NSURL *generatedFileURL;
 
 - (void)dealloc;
 - (void)generateFileWithCompletionHandler:(id)arg1;

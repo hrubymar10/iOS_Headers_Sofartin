@@ -6,8 +6,8 @@
     NSDictionary *_responseParameters;
 }
 
-@property(assign,readonly) NSString * description;
-@property(assign,readonly) unsigned long long numberOfCards;
+@property (nonatomic, readonly) NSString *description;
+@property (nonatomic, readonly) unsigned long long numberOfCards;
 
 - (void).cxx_destruct;
 - (id)description;

@@ -21,22 +21,22 @@
     NSString *_toggledTitle;
 }
 
-@property(assign,readwrite) bool autoIncrement;
-@property(assign,readwrite) long long autoIncrementCount;
-@property(assign,readwrite) long long count;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIToggleButtonDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) SKUIButtonViewElement * element;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * nonToggledImage;
-@property(assign,retain) NSString * nonToggledTitle;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long toggleButtonType;
-@property(assign,retain) NSString * toggleItemIdentifier;
-@property(getter=isToggled,assign,readwrite) bool toggled;
-@property(assign,retain) UIImage * toggledImage;
-@property(assign,retain) NSString * toggledTitle;
+@property (nonatomic) bool autoIncrement;
+@property (nonatomic) long long autoIncrementCount;
+@property (nonatomic) long long count;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIToggleButtonDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) SKUIButtonViewElement *element;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *nonToggledImage;
+@property (nonatomic, retain) NSString *nonToggledTitle;
+@property (readonly) Class superclass;
+@property (nonatomic) long long toggleButtonType;
+@property (nonatomic, retain) NSString *toggleItemIdentifier;
+@property (getter=isToggled, nonatomic) bool toggled;
+@property (nonatomic, retain) UIImage *toggledImage;
+@property (nonatomic, retain) NSString *toggledTitle;
 
 - (void).cxx_destruct;
 - (id)_layoutForString:(id)arg1;

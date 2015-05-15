@@ -8,10 +8,10 @@
     PHObject *_objectBeforeChanges;
 }
 
-@property(assign,readonly) bool assetContentChanged;
-@property(assign,readonly) id objectAfterChanges;
-@property(assign,readonly) id objectBeforeChanges;
-@property(assign,readonly) bool objectWasDeleted;
+@property (readonly) bool assetContentChanged;
+@property (readonly) id objectAfterChanges;
+@property (readonly) id objectBeforeChanges;
+@property (readonly) bool objectWasDeleted;
 
 - (void).cxx_destruct;
 - (void)_calculateDiffs;

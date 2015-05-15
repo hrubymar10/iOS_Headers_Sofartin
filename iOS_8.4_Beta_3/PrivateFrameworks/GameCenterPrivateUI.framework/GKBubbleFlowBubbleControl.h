@@ -4,7 +4,7 @@
 
 @interface GKBubbleFlowBubbleControl : GKValueWithCaptionBubbleControl
 
-@property(assign,readonly) bool hasAnyContent;
+@property (nonatomic, readonly) bool hasAnyContent;
 
 - (bool)hasAnyContent;
 - (struct CGSize { double x1; double x2; })intrinsicContentSize;

@@ -9,8 +9,8 @@
     NSString *_workoutState;
 }
 
-@property(assign,readonly) NSDictionary * workoutData;
-@property(assign,readonly) NSString * workoutState;
+@property (nonatomic, readonly) NSDictionary *workoutData;
+@property (nonatomic, readonly) NSString *workoutState;
 
 - (void)activateWorkout;
 - (void)dealloc;

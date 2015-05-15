@@ -7,12 +7,12 @@
     BRCContainerScheduler *_scheduler;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CKServerChangeToken * metadataChangeToken;
-@property(assign,readonly) BRCContainerScheduler * scheduler;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CKServerChangeToken *metadataChangeToken;
+@property (nonatomic, readonly) BRCContainerScheduler *scheduler;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)initWithContainerScheduler:(id)arg1 metadataChangeToken:(id)arg2;

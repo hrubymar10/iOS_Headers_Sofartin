@@ -6,7 +6,7 @@
     NSString *_webAuthToken;
 }
 
-@property(assign,copy) NSString * webAuthToken;
+@property (nonatomic, copy) NSString *webAuthToken;
 
 + (bool)supportsSecureCoding;
 

@@ -12,13 +12,13 @@
     bool _shouldPresentRemoteViewController;
 }
 
-@property(assign,retain) GKGame * game;
-@property(assign,readwrite) bool gkIsDisappearing;
-@property(assign,readwrite) bool isRequestingRemoteViewController;
-@property(assign,readwrite) bool presentingRemoteViewController;
-@property(assign,retain) GKRemoteViewController * remoteViewController;
-@property(assign,copy) id remoteViewReadyHandler;
-@property(assign,readwrite) bool shouldPresentRemoteViewController;
+@property (nonatomic, retain) GKGame *game;
+@property (nonatomic) bool gkIsDisappearing;
+@property (nonatomic) bool isRequestingRemoteViewController;
+@property (nonatomic) bool presentingRemoteViewController;
+@property (nonatomic, retain) GKRemoteViewController *remoteViewController;
+@property (nonatomic, copy) id remoteViewReadyHandler;
+@property (nonatomic) bool shouldPresentRemoteViewController;
 
 - (id)_presentingViewController;
 - (bool)automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers;

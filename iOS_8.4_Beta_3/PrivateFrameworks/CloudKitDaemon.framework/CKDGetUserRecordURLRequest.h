@@ -7,8 +7,8 @@
     CKRecord *_userRecord;
 }
 
-@property(assign,copy) id recordFetchedBlock;
-@property(assign,retain) CKRecord * userRecord;
+@property (nonatomic, copy) id recordFetchedBlock;
+@property (nonatomic, retain) CKRecord *userRecord;
 
 - (void).cxx_destruct;
 - (int)operationType;

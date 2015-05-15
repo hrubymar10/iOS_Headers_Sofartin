@@ -10,10 +10,10 @@
     NSMutableDictionary *_pendingScenarios;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)completeOperation:(id)arg1 withError:(id)arg2;
 - (void)consumeScenario:(id)arg1 withCompletionHandler:(id)arg2;

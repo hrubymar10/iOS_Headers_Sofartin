@@ -10,11 +10,11 @@
     NSString *_uniqueIdentifier;
 }
 
-@property(getter=isExclusive,assign,readwrite) bool exclusive;
-@property(assign,readonly) bool isExclusive;
-@property(assign,readwrite) int pid;
-@property(assign,readwrite) int statusBarStyleOverrides;
-@property(assign,copy) NSString * uniqueIdentifier;
+@property (getter=isExclusive, nonatomic) bool exclusive;
+@property (nonatomic, readonly) bool isExclusive;
+@property (nonatomic) int pid;
+@property (nonatomic) int statusBarStyleOverrides;
+@property (nonatomic, copy) NSString *uniqueIdentifier;
 
 + (bool)supportsSecureCoding;
 

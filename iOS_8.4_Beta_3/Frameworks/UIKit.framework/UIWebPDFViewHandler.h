@@ -44,14 +44,14 @@
     bool _showsShadowsForHTMLContent;
 }
 
-@property(assign,retain) UIColor * backgroundColorForUnRenderedContent;
-@property(assign,readonly) UIView * frontView;
-@property(assign,readwrite) bool hideActivityIndicatorForUnRenderedContent;
-@property(assign,readwrite) bool hidePageViewsUntilReadyToRender;
-@property(assign,readwrite) NSObject<UIWebPDFViewHandlerDelegate> * pdfHandlerDelegate;
-@property(assign,readonly) UIWebPDFView * pdfView;
-@property(assign,readwrite) bool scalesPageToFit;
-@property(assign,readwrite) bool showPageLabels;
+@property (nonatomic, retain) UIColor *backgroundColorForUnRenderedContent;
+@property (nonatomic, readonly) UIView *frontView;
+@property (nonatomic) bool hideActivityIndicatorForUnRenderedContent;
+@property (nonatomic) bool hidePageViewsUntilReadyToRender;
+@property (nonatomic) NSObject<UIWebPDFViewHandlerDelegate> *pdfHandlerDelegate;
+@property (nonatomic, readonly) UIWebPDFView *pdfView;
+@property (nonatomic) bool scalesPageToFit;
+@property (nonatomic) bool showPageLabels;
 
 - (id)_absoluteUrlRelativeToDocumentURL:(id)arg1;
 - (id)_actionForType:(int)arg1;

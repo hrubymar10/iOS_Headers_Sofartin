@@ -14,10 +14,10 @@
     UIView *_springViewParent;
 }
 
-@property(assign,readonly) UIButton * okButton;
-@property(assign,readonly) UILabel * promptLabel;
-@property(assign,readwrite) bool showsOkButton;
-@property(assign,readwrite) bool showsPromptLabel;
+@property (nonatomic, readonly) UIButton *okButton;
+@property (nonatomic, readonly) UILabel *promptLabel;
+@property (nonatomic) bool showsOkButton;
+@property (nonatomic) bool showsPromptLabel;
 
 - (void)_autofillForMesaWithCompletion:(id)arg1;
 - (void)_getPasscodeFieldSize:(struct CGSize { double x1; double x2; }*)arg1 okButtonSize:(struct CGSize { double x1; double x2; }*)arg2;

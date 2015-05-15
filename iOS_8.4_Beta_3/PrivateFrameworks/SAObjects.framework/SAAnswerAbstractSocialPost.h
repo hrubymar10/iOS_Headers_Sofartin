@@ -4,19 +4,19 @@
 
 @interface SAAnswerAbstractSocialPost : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * author;
-@property(assign,copy) NSString * authorTitle;
-@property(assign,copy) NSArray * comments;
-@property(assign,copy) NSDate * dateCreated;
-@property(assign,copy) NSDate * dateModified;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * icon;
-@property(assign,readwrite) long long rank;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *author;
+@property (nonatomic, copy) NSString *authorTitle;
+@property (nonatomic, copy) NSArray *comments;
+@property (nonatomic, copy) NSDate *dateCreated;
+@property (nonatomic, copy) NSDate *dateModified;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURL *icon;
+@property (nonatomic) long long rank;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) NSString *title;
 
 + (id)abstractSocialPost;
 + (id)abstractSocialPostWithDictionary:(id)arg1 context:(id)arg2;

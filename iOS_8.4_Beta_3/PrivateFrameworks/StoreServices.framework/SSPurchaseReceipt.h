@@ -6,9 +6,9 @@
     ISPurchaseReceipt *_purchaseReceipt;
 }
 
-@property(assign,readonly) NSDate * expirationDate;
-@property(assign,readonly) bool isRevoked;
-@property(assign,readonly) bool isVPPLicensed;
+@property (readonly) NSDate *expirationDate;
+@property (readonly) bool isRevoked;
+@property (readonly) bool isVPPLicensed;
 
 + (void)getReceiptPathWithCompletionBlock:(id)arg1;
 

@@ -6,7 +6,7 @@
     NSString *_href;
 }
 
-@property(assign,copy) NSString * href;
+@property (nonatomic, copy) NSString *href;
 
 - (bool)allowsPasteAsSmartField;
 - (id)copyWithContext:(id)arg1;

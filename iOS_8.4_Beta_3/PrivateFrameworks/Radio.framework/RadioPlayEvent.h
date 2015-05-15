@@ -14,15 +14,15 @@
     long long _type;
 }
 
-@property(assign,readonly) NSDate * datePlayed;
-@property(assign,readonly) long long endReason;
-@property(assign,readonly) double endTimeInTrack;
-@property(assign,copy) NSString * externalIdentifier;
-@property(assign,readonly) double startTimeInTrack;
-@property(assign,readonly) long long storeID;
-@property(assign,copy) NSData * timedMetadata;
-@property(assign,copy) NSDictionary * trackInfo;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) NSDate *datePlayed;
+@property (nonatomic, readonly) long long endReason;
+@property (nonatomic, readonly) double endTimeInTrack;
+@property (nonatomic, readonly, copy) NSString *externalIdentifier;
+@property (nonatomic, readonly) double startTimeInTrack;
+@property (nonatomic, readonly) long long storeID;
+@property (nonatomic, readonly, copy) NSData *timedMetadata;
+@property (nonatomic, readonly, copy) NSDictionary *trackInfo;
+@property (nonatomic, readonly) long long type;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

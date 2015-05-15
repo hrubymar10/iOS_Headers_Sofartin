@@ -12,12 +12,12 @@
     NSMutableArray *logMessageList;
 }
 
-@property(assign,retain) NSArray * alarms;
-@property(assign,readonly) NSString * defaultSound;
-@property(assign,readonly) long long defaultSoundType;
-@property(assign,readwrite) bool invalidAlarmsDetected;
-@property(assign,retain) NSDate * lastModified;
-@property(assign,retain) NSMutableArray * logMessageList;
+@property (nonatomic, readonly, retain) NSArray *alarms;
+@property (nonatomic, readonly) NSString *defaultSound;
+@property (nonatomic, readonly) long long defaultSoundType;
+@property (nonatomic) bool invalidAlarmsDetected;
+@property (nonatomic, retain) NSDate *lastModified;
+@property (nonatomic, retain) NSMutableArray *logMessageList;
 
 + (id)copyReadAlarmsFromPreferences;
 + (bool)discardOldVersion;

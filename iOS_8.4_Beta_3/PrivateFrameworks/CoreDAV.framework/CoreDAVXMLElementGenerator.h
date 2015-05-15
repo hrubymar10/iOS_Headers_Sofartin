@@ -17,21 +17,21 @@
     int _parsingState;
 }
 
-@property(assign,retain) NSURL * baseURL;
-@property(assign,retain) NSMutableData * cDATA;
-@property(assign,retain) NSDictionary * cachedElementParseRules;
-@property(assign,retain) NSMutableData * characters;
-@property(assign,readwrite) bool checkedElementValidityIfRootElement;
-@property(assign,retain) CoreDAVXMLElementGenerator * currentlyParsingSubItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) CoreDAVItem * element;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isUnrecognized;
-@property(assign,readwrite) SEL parentElementSetter;
-@property(assign,readwrite) CoreDAVXMLElementGenerator * parentGenerator;
-@property(assign,readwrite) int parsingState;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSURL *baseURL;
+@property (nonatomic, retain) NSMutableData *cDATA;
+@property (nonatomic, retain) NSDictionary *cachedElementParseRules;
+@property (nonatomic, retain) NSMutableData *characters;
+@property (nonatomic) bool checkedElementValidityIfRootElement;
+@property (nonatomic, retain) CoreDAVXMLElementGenerator *currentlyParsingSubItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) CoreDAVItem *element;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isUnrecognized;
+@property (nonatomic) SEL parentElementSetter;
+@property (nonatomic) CoreDAVXMLElementGenerator *parentGenerator;
+@property (nonatomic) int parsingState;
+@property (readonly) Class superclass;
 
 - (id)baseURL;
 - (id)cDATA;

@@ -20,21 +20,21 @@
     NSMutableSet *_updates;
 }
 
-@property(assign,retain) PLPhotoLibrary * changeHandlingPhotoLibrary;
-@property(assign,retain) NSMutableDictionary * changeNotificationInfo;
-@property(assign,retain) NSMutableDictionary * changeRequests;
-@property(assign,retain) NSMutableSet * deletes;
-@property(assign,retain) NSHashTable * fetchResults;
-@property(assign,retain) NSMutableSet * inserts;
-@property(assign,readwrite) bool isChangeProcessingPending;
-@property(assign,readwrite) double lastChangeProcessingStarted;
-@property(assign,retain) NSHashTable * observers;
-@property(assign,retain) PLPhotoLibrary * photoLibrary;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSMutableDictionary * saveTokensToKnownUUIDs;
-@property(assign,retain) NSObject<OS_dispatch_queue> * transactionQueue;
-@property(assign,readwrite) bool unknownMergeEvent;
-@property(assign,retain) NSMutableSet * updates;
+@property (nonatomic, retain) PLPhotoLibrary *changeHandlingPhotoLibrary;
+@property (nonatomic, retain) NSMutableDictionary *changeNotificationInfo;
+@property (nonatomic, retain) NSMutableDictionary *changeRequests;
+@property (nonatomic, retain) NSMutableSet *deletes;
+@property (nonatomic, retain) NSHashTable *fetchResults;
+@property (nonatomic, retain) NSMutableSet *inserts;
+@property (nonatomic) bool isChangeProcessingPending;
+@property (nonatomic) double lastChangeProcessingStarted;
+@property (nonatomic, retain) NSHashTable *observers;
+@property (nonatomic, retain) PLPhotoLibrary *photoLibrary;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSMutableDictionary *saveTokensToKnownUUIDs;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *transactionQueue;
+@property (nonatomic) bool unknownMergeEvent;
+@property (nonatomic, retain) NSMutableSet *updates;
 
 + (Class)PHObjectClassForEntityName:(id)arg1;
 + (Class)PHObjectClassForOID:(id)arg1;

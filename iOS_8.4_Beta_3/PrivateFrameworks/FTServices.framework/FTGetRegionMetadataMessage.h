@@ -7,8 +7,8 @@
     NSDictionary *_responseRegionInformation;
 }
 
-@property(assign,copy) NSString * language;
-@property(assign,copy) NSDictionary * responseRegionInformation;
+@property (copy) NSString *language;
+@property (copy) NSDictionary *responseRegionInformation;
 
 - (id)bagKey;
 - (long long)command;

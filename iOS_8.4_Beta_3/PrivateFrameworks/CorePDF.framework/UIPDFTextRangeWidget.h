@@ -30,9 +30,9 @@
     double _startX;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } currentSelectionPointOnPage;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } initialSelectionPointOnPage;
-@property(assign,readwrite) UIPDFPageView * pageView;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } currentSelectionPointOnPage;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } initialSelectionPointOnPage;
+@property (nonatomic) UIPDFPageView *pageView;
 
 - (struct CGPoint { double x1; double x2; })currentSelectionPointOnPage;
 - (void)dealloc;

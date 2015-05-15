@@ -10,15 +10,15 @@
     double _timestamp;
 }
 
-@property(assign,readwrite) double bookmarkTime;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool hasBeenPlayed;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * itemIdentifier;
-@property(assign,readwrite) unsigned long long playCount;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double timestamp;
+@property double bookmarkTime;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property bool hasBeenPlayed;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *itemIdentifier;
+@property unsigned long long playCount;
+@property (readonly) Class superclass;
+@property double timestamp;
 
 + (id)_testableMetadataItem_1;
 + (id)keyValueStoreItemIdentifierForItem:(id)arg1;

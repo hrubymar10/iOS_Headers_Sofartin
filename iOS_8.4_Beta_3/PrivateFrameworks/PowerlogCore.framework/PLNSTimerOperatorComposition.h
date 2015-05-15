@@ -14,16 +14,16 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) NSDate * fireDate;
-@property(assign,readwrite) double interval;
-@property(assign,readwrite) PLOperator * operator;
-@property(assign,copy) id operatorBlock;
-@property(assign,readwrite) bool repeats;
-@property(assign,retain) NSTimer * timer;
-@property(assign,readwrite) bool timerActive;
-@property(assign,readwrite) double tolerance;
-@property(assign,retain) id userInfo;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) NSDate *fireDate;
+@property double interval;
+@property PLOperator *operator;
+@property (nonatomic, copy) id operatorBlock;
+@property bool repeats;
+@property (retain) NSTimer *timer;
+@property (nonatomic) bool timerActive;
+@property double tolerance;
+@property (retain) id userInfo;
+@property (retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)dealloc;

@@ -19,14 +19,14 @@
     long long _writeNativeDataToPasteboardOnceToken;
 }
 
-@property(assign,copy) NSDictionary * contentDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool excludeNativeData;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) TSPObjectContext * pasteboardContext;
-@property(assign,readonly) TSPPasteboardObject * pasteboardObject;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSDictionary *contentDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool excludeNativeData;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) TSPObjectContext *pasteboardContext;
+@property (nonatomic, readonly) TSPPasteboardObject *pasteboardObject;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (long long)componentWriterMode;

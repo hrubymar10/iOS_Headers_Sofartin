@@ -4,7 +4,7 @@
 
 @interface SACalendarEventSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * events;
+@property (nonatomic, copy) NSArray *events;
 
 + (id)eventSnippet;
 + (id)eventSnippetWithDictionary:(id)arg1 context:(id)arg2;

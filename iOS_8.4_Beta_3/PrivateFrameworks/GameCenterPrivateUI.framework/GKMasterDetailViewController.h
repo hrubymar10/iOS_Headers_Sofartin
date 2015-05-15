@@ -16,20 +16,20 @@
     bool _shouldCollapseToDetail;
 }
 
-@property(assign,retain) NSMutableArray * controllersDelayingPresentation;
-@property(getter=isCovered,assign,readwrite) bool covered;
-@property(assign,readwrite) <GKMasterDetailViewControllerDelegate> * masterDetailDelegate;
-@property(assign,retain) GKMasterDetailNavigationController * masterNavigationController;
-@property(assign,copy) id presentationDelayHandler;
-@property(assign,retain) UIViewController * rootDetailViewController;
-@property(assign,retain) UIView * separatorBarMaskView;
-@property(assign,retain) UIView * separatorBarView;
-@property(assign,retain) UIColor * separatorLineColor;
-@property(assign,retain) UIView * separatorLineView;
-@property(assign,retain) UIView * separatorWrapperView;
-@property(assign,readwrite) bool shouldCollapseToDetail;
-@property(assign,retain) UIViewController * topDetailViewController;
-@property(assign,retain) UIViewController * topMasterViewController;
+@property (nonatomic, retain) NSMutableArray *controllersDelayingPresentation;
+@property (getter=isCovered, nonatomic) bool covered;
+@property (nonatomic) <GKMasterDetailViewControllerDelegate> *masterDetailDelegate;
+@property (nonatomic, retain) GKMasterDetailNavigationController *masterNavigationController;
+@property (nonatomic, copy) id presentationDelayHandler;
+@property (nonatomic, readonly, retain) UIViewController *rootDetailViewController;
+@property (nonatomic, retain) UIView *separatorBarMaskView;
+@property (nonatomic, retain) UIView *separatorBarView;
+@property (nonatomic, retain) UIColor *separatorLineColor;
+@property (nonatomic, retain) UIView *separatorLineView;
+@property (nonatomic, retain) UIView *separatorWrapperView;
+@property (nonatomic) bool shouldCollapseToDetail;
+@property (nonatomic, readonly, retain) UIViewController *topDetailViewController;
+@property (nonatomic, readonly, retain) UIViewController *topMasterViewController;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 

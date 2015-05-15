@@ -6,25 +6,25 @@
     AVExternalDeviceInternal *_externalDevice;
 }
 
-@property(assign,readonly) NSString * ID;
-@property(assign,readonly) NSData * MFiCertificateSerialNumber;
-@property(assign,readonly) NSData * OEMIcon;
-@property(assign,readonly) NSString * OEMIconLabel;
-@property(assign,readonly) bool OEMIconVisible;
-@property(assign,readwrite) <AVExternalDeviceDelegate> * delegate;
-@property(assign,readonly) NSArray * externalDeviceHIDs;
-@property(assign,readonly) bool limitedUI;
-@property(assign,readonly) NSArray * limitedUIElements;
-@property(assign,readonly) NSString * modelName;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) bool nightMode;
-@property(assign,readonly) bool nightModeSupported;
-@property(assign,readonly) bool ownsTurnByTurnNavigation;
-@property(assign,readonly) bool rightHandDrive;
-@property(assign,readonly) NSArray * screenIDs;
-@property(assign,readonly) NSDictionary * screenInputCapabilities;
-@property(assign,readonly) NSData * settingsIcon;
-@property(assign,readonly) long long transportType;
+@property (nonatomic, readonly) NSString *ID;
+@property (nonatomic, readonly) NSData *MFiCertificateSerialNumber;
+@property (nonatomic, readonly) NSData *OEMIcon;
+@property (nonatomic, readonly) NSString *OEMIconLabel;
+@property (nonatomic, readonly) bool OEMIconVisible;
+@property (nonatomic) <AVExternalDeviceDelegate> *delegate;
+@property (nonatomic, readonly) NSArray *externalDeviceHIDs;
+@property (nonatomic, readonly) bool limitedUI;
+@property (nonatomic, readonly) NSArray *limitedUIElements;
+@property (nonatomic, readonly) NSString *modelName;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) bool nightMode;
+@property (nonatomic, readonly) bool nightModeSupported;
+@property (nonatomic, readonly) bool ownsTurnByTurnNavigation;
+@property (nonatomic, readonly) bool rightHandDrive;
+@property (nonatomic, readonly) NSArray *screenIDs;
+@property (nonatomic, readonly) NSDictionary *screenInputCapabilities;
+@property (nonatomic, readonly) NSData *settingsIcon;
+@property (nonatomic, readonly) long long transportType;
 
 + (id)currentCarPlayExternalDevice;
 + (id)currentExternalDevice;

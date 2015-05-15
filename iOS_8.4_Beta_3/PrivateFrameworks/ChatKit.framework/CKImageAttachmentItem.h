@@ -11,9 +11,9 @@
     bool _useDefaultSize;
 }
 
-@property(assign,readwrite) bool backgroundEnqueued;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } imageSize;
-@property(assign,readwrite) bool useDefaultSize;
+@property (nonatomic) bool backgroundEnqueued;
+@property struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic) bool useDefaultSize;
 
 + (id)UTITypes;
 

@@ -13,14 +13,14 @@
     } _principalClassInstance;
 }
 
-@property(assign,readonly) struct Object { int (**x1)(); id x2; }* _apiObject;
-@property(assign,readonly) struct OpaqueWKBundle { }* _bundleRef;
-@property(assign,readonly) WKConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) id parameters;
-@property(assign,readonly) Class superclass;
+@property (readonly) struct Object { int (**x1)(); id x2; }*_apiObject;
+@property (readonly) struct OpaqueWKBundle { }*_bundleRef;
+@property (readonly) WKConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) id parameters;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

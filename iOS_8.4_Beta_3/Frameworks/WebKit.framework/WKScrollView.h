@@ -8,7 +8,7 @@
     WKWebView<UIScrollViewDelegate> *_internalDelegate;
 }
 
-@property(assign,readwrite) WKWebView<UIScrollViewDelegate> * internalDelegate;
+@property (nonatomic) WKWebView<UIScrollViewDelegate> *internalDelegate;
 
 - (struct CGSize { double x1; double x2; })_currentTopLeftRubberbandAmount;
 - (void)_restoreContentOffsetWithRubberbandAmount:(struct CGSize { double x1; double x2; })arg1;

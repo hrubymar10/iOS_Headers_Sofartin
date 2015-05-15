@@ -24,22 +24,22 @@
     double _topColorRed;
 }
 
-@property(assign,retain) UIColor * bottomColor;
-@property(assign,readonly) double bottomColorBlue;
-@property(assign,readonly) double bottomColorGreen;
-@property(assign,readonly) double bottomColorRed;
-@property(assign,retain) _FIUIIcon * dotIcon;
-@property(assign,readwrite) float dotPercentage;
-@property(assign,retain) _FIUIIcon * icon;
-@property(assign,readwrite) double opacity;
-@property(assign,readwrite) float percentage;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } position;
-@property(assign,readwrite) double size;
-@property(assign,readwrite) double thickness;
-@property(assign,retain) UIColor * topColor;
-@property(assign,readonly) double topColorBlue;
-@property(assign,readonly) double topColorGreen;
-@property(assign,readonly) double topColorRed;
+@property (nonatomic, retain) UIColor *bottomColor;
+@property (nonatomic, readonly) double bottomColorBlue;
+@property (nonatomic, readonly) double bottomColorGreen;
+@property (nonatomic, readonly) double bottomColorRed;
+@property (nonatomic, retain) _FIUIIcon *dotIcon;
+@property (nonatomic) float dotPercentage;
+@property (nonatomic, retain) _FIUIIcon *icon;
+@property (nonatomic) double opacity;
+@property (nonatomic) float percentage;
+@property (nonatomic) struct CGPoint { double x1; double x2; } position;
+@property (nonatomic) double size;
+@property (nonatomic) double thickness;
+@property (nonatomic, retain) UIColor *topColor;
+@property (nonatomic, readonly) double topColorBlue;
+@property (nonatomic, readonly) double topColorGreen;
+@property (nonatomic, readonly) double topColorRed;
 
 - (void).cxx_destruct;
 - (id)_newAnimatablePropertyForType:(unsigned long long)arg1;

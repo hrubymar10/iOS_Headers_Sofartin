@@ -22,7 +22,7 @@
     NSString *_vertexName;
 }
 
-@property(assign,readwrite) unsigned int program;
+@property (nonatomic) unsigned int program;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

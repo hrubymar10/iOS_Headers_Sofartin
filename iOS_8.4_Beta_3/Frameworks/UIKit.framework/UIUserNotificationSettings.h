@@ -7,8 +7,8 @@
     unsigned long long _types;
 }
 
-@property(assign,copy) NSSet * categories;
-@property(assign,readonly) unsigned long long types;
+@property (nonatomic, readonly, copy) NSSet *categories;
+@property (nonatomic, readonly) unsigned long long types;
 
 + (id)settingsForRegisteredSettings:(id)arg1 requestedSettings:(id)arg2;
 + (id)settingsForTypes:(unsigned long long)arg1 categories:(id)arg2;

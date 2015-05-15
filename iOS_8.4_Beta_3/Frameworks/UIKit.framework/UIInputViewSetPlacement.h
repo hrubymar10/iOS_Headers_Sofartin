@@ -6,11 +6,11 @@
     double _extendedHeight;
 }
 
-@property(assign,readwrite) double extendedHeight;
-@property(assign,readonly) bool isInteractive;
-@property(assign,readonly) bool isUndocked;
-@property(assign,readonly) bool showsInputViews;
-@property(assign,readonly) bool showsKeyboard;
+@property (nonatomic) double extendedHeight;
+@property (nonatomic, readonly) bool isInteractive;
+@property (nonatomic, readonly) bool isUndocked;
+@property (nonatomic, readonly) bool showsInputViews;
+@property (nonatomic, readonly) bool showsKeyboard;
 
 + (id)placement;
 

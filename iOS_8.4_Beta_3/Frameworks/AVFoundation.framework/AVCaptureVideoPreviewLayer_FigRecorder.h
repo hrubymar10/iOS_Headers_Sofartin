@@ -6,14 +6,14 @@
     AVCaptureVideoPreviewLayerInternal_FigRecorder *_internal;
 }
 
-@property(assign,readwrite) bool automaticallyAdjustsMirroring;
-@property(assign,readonly) AVCaptureConnection_FigRecorder * connection;
-@property(getter=isMirrored,assign,readwrite) bool mirrored;
-@property(getter=isMirroringSupported,assign,readonly) bool mirroringSupported;
-@property(assign,readwrite) long long orientation;
-@property(getter=isOrientationSupported,assign,readonly) bool orientationSupported;
-@property(assign,retain) AVCaptureSession_FigRecorder * session;
-@property(assign,copy) NSString * videoGravity;
+@property (nonatomic) bool automaticallyAdjustsMirroring;
+@property (nonatomic, readonly) AVCaptureConnection_FigRecorder *connection;
+@property (getter=isMirrored, nonatomic) bool mirrored;
+@property (getter=isMirroringSupported, nonatomic, readonly) bool mirroringSupported;
+@property (nonatomic) long long orientation;
+@property (getter=isOrientationSupported, nonatomic, readonly) bool orientationSupported;
+@property (nonatomic, retain) AVCaptureSession_FigRecorder *session;
+@property (copy) NSString *videoGravity;
 
 + (void)initialize;
 + (id)layerWithSession:(id)arg1;

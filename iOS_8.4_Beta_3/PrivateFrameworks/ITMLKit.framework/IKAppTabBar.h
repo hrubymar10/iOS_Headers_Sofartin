@@ -7,8 +7,8 @@
     IKJSTabBar *_jsTabBar;
 }
 
-@property(assign,readonly) <IKAppTabBarController> * controller;
-@property(assign,readwrite) IKJSTabBar * jsTabBar;
+@property (nonatomic, readonly) <IKAppTabBarController> *controller;
+@property (nonatomic) IKJSTabBar *jsTabBar;
 
 - (void).cxx_destruct;
 - (id)controller;

@@ -6,7 +6,7 @@
     UIViewController *_wrapperViewController;
 }
 
-@property(assign,retain) UIViewController * wrapperViewController;
+@property (retain) UIViewController *wrapperViewController;
 
 - (id)_activityImage;
 - (id)_embeddedActivityViewController;

@@ -10,10 +10,10 @@
     UIViewController<MPUExtrasVideoPlaybackViewController> *_videoPlaybackViewController;
 }
 
-@property(assign,readwrite) double collectionViewHeight;
-@property(assign,readonly) MPUExtrasContext * context;
-@property(assign,readwrite) UIView * menuBarView;
-@property(assign,retain) UIViewController * videoPlaybackViewController;
+@property (nonatomic) double collectionViewHeight;
+@property (nonatomic, readonly) MPUExtrasContext *context;
+@property (nonatomic) UIView *menuBarView;
+@property (nonatomic, retain) UIViewController *videoPlaybackViewController;
 
 - (void).cxx_destruct;
 - (void)_menuBarHeightChange:(id)arg1;

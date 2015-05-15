@@ -6,10 +6,10 @@
     SUScriptFunction *_action;
 }
 
-@property(assign,retain) WebScriptObject * action;
-@property(assign,retain) id items;
-@property(assign,retain) NSNumber * selectedIndex;
-@property(assign,retain) NSString * title;
+@property (retain) WebScriptObject *action;
+@property (retain) id items;
+@property (retain) NSNumber *selectedIndex;
+@property (retain) NSString *title;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

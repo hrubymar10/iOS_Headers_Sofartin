@@ -12,13 +12,13 @@
     double fStartDate;
 }
 
-@property(assign,readonly) NSNumber * basalNatalies;
-@property(assign,readonly) NSNumber * mets;
-@property(assign,readonly) NSNumber * natalies;
-@property(assign,readonly) long long recordId;
-@property(assign,readonly) long long session;
-@property(assign,readonly) NSUUID * sourceId;
-@property(assign,readonly) NSDate * startDate;
+@property (nonatomic, readonly) NSNumber *basalNatalies;
+@property (nonatomic, readonly) NSNumber *mets;
+@property (nonatomic, readonly) NSNumber *natalies;
+@property (nonatomic, readonly) long long recordId;
+@property (nonatomic, readonly) long long session;
+@property (nonatomic, readonly) NSUUID *sourceId;
+@property (nonatomic, readonly) NSDate *startDate;
 
 + (id)maxNatalieEntries;
 + (id)sessionName:(long long)arg1;

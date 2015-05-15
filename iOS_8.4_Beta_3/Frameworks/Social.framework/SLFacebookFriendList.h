@@ -8,9 +8,9 @@
     NSString *_type;
 }
 
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * type;
+@property (retain) NSString *identifier;
+@property (retain) NSString *name;
+@property (retain) NSString *type;
 
 + (id)friendListWithDictionary:(id)arg1;
 + (id)friendListsWithResponseData:(id)arg1;

@@ -9,12 +9,12 @@
     TSPPackage *_package;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) bool isCancelled;
-@property(assign,readonly) bool isPasswordProtected;
-@property(assign,readonly) bool isValid;
-@property(assign,readonly) TSPPackage * package;
-@property(assign,readonly) long long packageType;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) bool isCancelled;
+@property (nonatomic, readonly) bool isPasswordProtected;
+@property (nonatomic, readonly) bool isValid;
+@property (nonatomic, readonly) TSPPackage *package;
+@property (nonatomic, readonly) long long packageType;
 
 + (bool)convertDocumentAtURL:(id)arg1 toPackageType:(long long)arg2 error:(id*)arg3;
 + (id)newPackageConverterWithURL:(id)arg1;

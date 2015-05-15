@@ -6,7 +6,7 @@
     NSExtension *_extension;
 }
 
-@property(assign,retain) NSExtension * extension;
+@property (nonatomic, retain) NSExtension *extension;
 
 - (id)containingBundle;
 - (id)containingBundleDisplayName;

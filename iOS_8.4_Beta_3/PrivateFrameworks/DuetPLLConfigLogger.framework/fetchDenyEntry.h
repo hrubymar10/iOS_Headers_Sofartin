@@ -7,8 +7,8 @@
     int _why;
 }
 
-@property(assign,retain) NSDate * when;
-@property(assign,readwrite) int why;
+@property (retain) NSDate *when;
+@property int why;
 
 - (void).cxx_destruct;
 - (id)init;

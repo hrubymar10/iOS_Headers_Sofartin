@@ -11,12 +11,12 @@
     float _rangeMin;
 }
 
-@property(assign,readonly) NSArray * bonArray;
-@property(assign,retain) ABLEStaticMapInclusiveDomainVectorRange * bonDoubleMap;
-@property(assign,readwrite) float domainMax;
-@property(assign,readwrite) float domainMin;
-@property(assign,readwrite) float rangeMax;
-@property(assign,readwrite) float rangeMin;
+@property (readonly) NSArray *bonArray;
+@property (retain) ABLEStaticMapInclusiveDomainVectorRange *bonDoubleMap;
+@property float domainMax;
+@property float domainMin;
+@property float rangeMax;
+@property float rangeMin;
 
 + (id)bonDrainWithArray:(id)arg1 domainMin:(float)arg2 domainMax:(float)arg3 rangeMin:(float)arg4 rangeMax:(float)arg5;
 + (id)bonDrainWithDomainMin:(float)arg1 domainMax:(float)arg2 rangeMin:(float)arg3 rangeMax:(float)arg4;

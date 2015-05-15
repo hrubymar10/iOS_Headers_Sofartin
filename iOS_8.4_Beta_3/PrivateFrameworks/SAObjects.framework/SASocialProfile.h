@@ -4,13 +4,13 @@
 
 @interface SASocialProfile : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * serviceType;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * url;
-@property(assign,copy) NSString * userName;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *serviceType;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *url;
+@property (nonatomic, copy) NSString *userName;
 
 + (id)socialProfile;
 + (id)socialProfileWithDictionary:(id)arg1 context:(id)arg2;

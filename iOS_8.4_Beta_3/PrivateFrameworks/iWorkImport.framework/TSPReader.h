@@ -61,22 +61,22 @@
     NSObject<OS_dispatch_queue> *_unarchiveQueue;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_group> * completionGroup;
-@property(assign,readonly) TSPComponent * component;
-@property(assign,readonly) TSPObjectContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) <TSPReaderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool didFinishResolvingReferences;
-@property(assign,retain) NSError * error;
-@property(assign,readonly) unsigned long long fileFormatVersion;
-@property(assign,readonly) bool hasDocumentVersionUUID;
-@property(assign,readonly) bool hasReadFailure;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isCrossAppPaste;
-@property(assign,readonly) bool isCrossDocumentPaste;
-@property(assign,readonly) bool isFromCopy;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSObject<OS_dispatch_group> *completionGroup;
+@property (nonatomic, readonly) TSPComponent *component;
+@property (nonatomic, readonly) TSPObjectContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) <TSPReaderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool didFinishResolvingReferences;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, readonly) unsigned long long fileFormatVersion;
+@property (nonatomic, readonly) bool hasDocumentVersionUUID;
+@property (readonly) bool hasReadFailure;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isCrossAppPaste;
+@property (nonatomic, readonly) bool isCrossDocumentPaste;
+@property (nonatomic, readonly) bool isFromCopy;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

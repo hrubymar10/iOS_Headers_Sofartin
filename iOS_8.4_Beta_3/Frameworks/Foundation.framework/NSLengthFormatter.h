@@ -8,9 +8,9 @@
     void *_reserved;
 }
 
-@property(getter=isForPersonHeightUse,assign,readwrite) bool forPersonHeightUse;
-@property(assign,copy) NSNumberFormatter * numberFormatter;
-@property(assign,readwrite) long long unitStyle;
+@property (getter=isForPersonHeightUse) bool forPersonHeightUse;
+@property (copy) NSNumberFormatter *numberFormatter;
+@property long long unitStyle;
 
 - (id)attributedStringForObjectValue:(id)arg1 withDefaultAttributes:(id)arg2;
 - (void)dealloc;

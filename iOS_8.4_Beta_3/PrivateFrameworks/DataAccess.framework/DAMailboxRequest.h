@@ -8,9 +8,9 @@
     int _requestType;
 }
 
-@property(assign,readwrite) int bodyFormat;
-@property(assign,copy) NSString * messageID;
-@property(assign,readwrite) int requestType;
+@property (nonatomic) int bodyFormat;
+@property (nonatomic, copy) NSString *messageID;
+@property (nonatomic) int requestType;
 
 - (void).cxx_destruct;
 - (int)bodyFormat;

@@ -9,11 +9,11 @@
     SKUITabBarItem *_tabBarItem;
 }
 
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) IKJSNavigationDocument * navigationDocument;
-@property(assign,readonly) NSString * rootURL;
-@property(assign,readonly) SKUITabBarItem * tabBarItem;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) IKJSNavigationDocument *navigationDocument;
+@property (nonatomic, readonly) NSString *rootURL;
+@property (nonatomic, readonly) SKUITabBarItem *tabBarItem;
+@property (nonatomic, readonly) NSString *title;
 
 - (void).cxx_destruct;
 - (void)dealloc;

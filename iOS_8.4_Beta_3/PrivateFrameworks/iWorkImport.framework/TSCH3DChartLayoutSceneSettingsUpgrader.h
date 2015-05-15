@@ -9,7 +9,7 @@
     bool mIsMutatedForSceneSettings;
 }
 
-@property(assign,readwrite) bool hasConstantDepth;
+@property (nonatomic) bool hasConstantDepth;
 
 - (id)containingViewportByResizingScene:(id)arg1 toResizingFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg2;
 - (void)dealloc;

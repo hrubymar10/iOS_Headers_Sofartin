@@ -7,8 +7,8 @@
     long long _storeAdamID;
 }
 
-@property(assign,copy) NSString * buyParameters;
-@property(assign,readwrite) long long storeAdamID;
+@property (nonatomic, copy) NSString *buyParameters;
+@property (nonatomic) long long storeAdamID;
 
 - (void).cxx_destruct;
 - (id)buyParameters;

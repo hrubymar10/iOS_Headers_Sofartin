@@ -10,15 +10,15 @@
     } _data;
 }
 
-@property(assign,readonly) struct Object { int (**x1)(); id x2; }* _apiObject;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSURL * destinationURL;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSURLRequest * originalRequest;
-@property(assign,readonly) NSURLResponse * response;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * title;
+@property (readonly) struct Object { int (**x1)(); id x2; }*_apiObject;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSURL *destinationURL;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSURLRequest *originalRequest;
+@property (readonly) NSURLResponse *response;
+@property (readonly) Class superclass;
+@property (readonly) NSString *title;
 
 - (id).cxx_construct;
 - (struct Object { int (**x1)(); id x2; }*)_apiObject;

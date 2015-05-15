@@ -6,7 +6,7 @@
     bool _invalidateGeometryOnlyOfExistingLayoutAttributes;
 }
 
-@property(assign,readwrite) bool invalidateGeometryOnlyOfExistingLayoutAttributes;
+@property (nonatomic) bool invalidateGeometryOnlyOfExistingLayoutAttributes;
 
 - (bool)invalidateGeometryOnlyOfExistingLayoutAttributes;
 - (void)setInvalidateGeometryOnlyOfExistingLayoutAttributes:(bool)arg1;

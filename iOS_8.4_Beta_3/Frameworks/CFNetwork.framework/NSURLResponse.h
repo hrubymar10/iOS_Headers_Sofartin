@@ -6,13 +6,13 @@
     NSURLResponseInternal *_internal;
 }
 
-@property(assign,copy) NSString * MIMEType;
-@property(assign,copy) NSURL * URL;
-@property(assign,readonly) long long expectedContentLength;
-@property(assign,readonly) bool ssv_isExpiredResponse;
-@property(assign,copy) NSString * suggestedFilename;
-@property(assign,copy) NSString * textEncodingName;
-@property(assign,readonly) bool tsu_isHTTPSuccess;
+@property (readonly, copy) NSString *MIMEType;
+@property (readonly, copy) NSURL *URL;
+@property (readonly) long long expectedContentLength;
+@property (nonatomic, readonly) bool ssv_isExpiredResponse;
+@property (readonly, copy) NSString *suggestedFilename;
+@property (readonly, copy) NSString *textEncodingName;
+@property (readonly) bool tsu_isHTTPSuccess;
 
 + (id)_responseWithCFURLResponse:(struct _CFURLResponse { }*)arg1;
 + (id)getObjectKeyWithIndex:(long long)arg1;

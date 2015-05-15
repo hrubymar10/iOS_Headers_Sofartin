@@ -15,16 +15,16 @@
     unsigned int _numUsers;
 }
 
-@property(assign,readwrite) unsigned int databaseSize;
-@property(assign,readwrite) unsigned int numAccessories;
-@property(assign,readwrite) unsigned int numAccessoryServiceGroups;
-@property(assign,readwrite) unsigned int numHomes;
-@property(assign,readwrite) unsigned int numLocationGroups;
-@property(assign,readwrite) unsigned int numLocations;
-@property(assign,readwrite) unsigned int numScenes;
-@property(assign,readwrite) unsigned int numServices;
-@property(assign,readwrite) unsigned int numTriggers;
-@property(assign,readwrite) unsigned int numUsers;
+@property unsigned int databaseSize;
+@property unsigned int numAccessories;
+@property unsigned int numAccessoryServiceGroups;
+@property unsigned int numHomes;
+@property unsigned int numLocationGroups;
+@property unsigned int numLocations;
+@property unsigned int numScenes;
+@property unsigned int numServices;
+@property unsigned int numTriggers;
+@property unsigned int numUsers;
 
 - (unsigned int)databaseSize;
 - (id)description;

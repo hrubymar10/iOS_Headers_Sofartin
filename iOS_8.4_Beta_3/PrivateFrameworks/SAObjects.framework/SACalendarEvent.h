@@ -4,20 +4,20 @@
 
 @interface SACalendarEvent : SADomainObject
 
-@property(assign,copy) NSArray * alerts;
-@property(assign,readwrite) bool allDay;
-@property(assign,copy) NSArray * attendees;
-@property(assign,copy) NSURL * calendarId;
-@property(assign,copy) NSURL * calendarPunchoutURI;
-@property(assign,copy) NSDate * endDate;
-@property(assign,copy) NSNumber * includeRecurrences;
-@property(assign,copy) NSString * location;
-@property(assign,copy) NSString * notes;
-@property(assign,copy) NSNumber * readOnly;
-@property(assign,copy) NSArray * recurrences;
-@property(assign,copy) NSDate * startDate;
-@property(assign,copy) NSString * timeZoneId;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSArray *alerts;
+@property (nonatomic) bool allDay;
+@property (nonatomic, copy) NSArray *attendees;
+@property (nonatomic, copy) NSURL *calendarId;
+@property (nonatomic, copy) NSURL *calendarPunchoutURI;
+@property (nonatomic, copy) NSDate *endDate;
+@property (nonatomic, copy) NSNumber *includeRecurrences;
+@property (nonatomic, copy) NSString *location;
+@property (nonatomic, copy) NSString *notes;
+@property (nonatomic, copy) NSNumber *readOnly;
+@property (nonatomic, copy) NSArray *recurrences;
+@property (nonatomic, copy) NSDate *startDate;
+@property (nonatomic, copy) NSString *timeZoneId;
+@property (nonatomic, copy) NSString *title;
 
 + (id)event;
 + (id)eventWithDictionary:(id)arg1 context:(id)arg2;

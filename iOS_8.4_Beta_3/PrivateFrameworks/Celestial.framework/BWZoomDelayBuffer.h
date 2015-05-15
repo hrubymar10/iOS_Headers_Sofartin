@@ -11,8 +11,8 @@
     unsigned int _zoomRequestBufferIndex;
 }
 
-@property(assign,readwrite) int operatingMode;
-@property(assign,readonly) unsigned int zoomDelay;
+@property (nonatomic) int operatingMode;
+@property (nonatomic, readonly) unsigned int zoomDelay;
 
 - (void)addZoomRequest:(struct { float x1; int x2; bool x3; })arg1;
 - (void)dealloc;

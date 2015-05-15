@@ -12,8 +12,8 @@
     MusicAVPlayer *_player;
 }
 
-@property(assign,readwrite) <MusicRemoteControllerDelegate> * delegate;
-@property(assign,readonly) MusicAVPlayer * player;
+@property (nonatomic) <MusicRemoteControllerDelegate> *delegate;
+@property (nonatomic, readonly) MusicAVPlayer *player;
 
 - (void).cxx_destruct;
 - (void)_avItemStoreIDDidChangeNotification:(id)arg1;

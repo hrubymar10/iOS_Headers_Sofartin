@@ -10,15 +10,15 @@
     bool _wantExit;
 }
 
-@property(assign,retain) XPCClient * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <WPZoneTrackerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool wantEntry;
-@property(assign,readwrite) bool wantExit;
+@property (nonatomic, retain) XPCClient *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <WPZoneTrackerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property long long state;
+@property (readonly) Class superclass;
+@property (nonatomic) bool wantEntry;
+@property (nonatomic) bool wantExit;
 
 - (void).cxx_destruct;
 - (void)changeState:(long long)arg1;

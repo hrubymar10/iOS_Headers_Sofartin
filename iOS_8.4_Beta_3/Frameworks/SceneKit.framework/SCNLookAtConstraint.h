@@ -8,8 +8,8 @@
     SCNNode *_target;
 }
 
-@property(assign,readwrite) bool gimbalLockEnabled;
-@property(assign,readonly) SCNNode * target;
+@property (nonatomic) bool gimbalLockEnabled;
+@property (nonatomic, readonly) SCNNode *target;
 
 + (id)SCNJSExportProtocol;
 + (id)lookAtConstraintWithTarget:(id)arg1;

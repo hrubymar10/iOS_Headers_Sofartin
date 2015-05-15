@@ -24,8 +24,8 @@
     MFMailComposeRemoteViewController *_serviceViewController;
 }
 
-@property(assign,readwrite) id autorotationDelegate;
-@property(assign,readwrite) <MFMailComposeViewControllerDelegate> * mailComposeDelegate;
+@property (nonatomic) id autorotationDelegate;
+@property (nonatomic) <MFMailComposeViewControllerDelegate> *mailComposeDelegate;
 
 - (void)_beginDelayingCompositionPresenation;
 - (void)_cancelComposition:(id)arg1;

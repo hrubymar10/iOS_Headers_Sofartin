@@ -33,14 +33,14 @@
     NSArray *m_usageTrackingTypes;
 }
 
-@property(assign,retain) TIKeyboardCandidateResultSet * candidateResultSet;
-@property(assign,readonly) TIKeyboardCandidateResultSet * candidates;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool showHiddenCandidatesOnly;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned int usageTrackingMask;
+@property (nonatomic, retain) TIKeyboardCandidateResultSet *candidateResultSet;
+@property (nonatomic, readonly) TIKeyboardCandidateResultSet *candidates;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool showHiddenCandidatesOnly;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned int usageTrackingMask;
 
 - (void)_candidateSelected:(id)arg1;
 - (id)activeCandidateList;

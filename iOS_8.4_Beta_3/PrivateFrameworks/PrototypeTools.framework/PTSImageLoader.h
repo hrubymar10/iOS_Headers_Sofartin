@@ -8,8 +8,8 @@
     NSString *_path;
 }
 
-@property(assign,readwrite) <PTSImageLoaderDelegate> * delegate;
-@property(getter=isLoading,assign,readwrite) bool loading;
+@property (nonatomic) <PTSImageLoaderDelegate> *delegate;
+@property (getter=isLoading) bool loading;
 
 - (void).cxx_destruct;
 - (id)delegate;

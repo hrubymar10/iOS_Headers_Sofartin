@@ -7,8 +7,8 @@
     UIView *_footerView;
 }
 
-@property(assign,retain) UIView * contentView;
-@property(assign,retain) UIView * footerView;
+@property (nonatomic, retain) UIView *contentView;
+@property (nonatomic, retain) UIView *footerView;
 
 - (void)centerContentViewIfDesirable;
 - (id)contentView;

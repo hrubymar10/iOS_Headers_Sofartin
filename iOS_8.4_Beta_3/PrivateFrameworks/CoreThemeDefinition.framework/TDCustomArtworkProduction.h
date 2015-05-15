@@ -6,7 +6,7 @@
     bool _hasCustomDateOfLastChange;
 }
 
-@property(assign,readwrite) bool hasCustomDateOfLastChange;
+@property (nonatomic) bool hasCustomDateOfLastChange;
 
 - (bool)hasCustomDateOfLastChange;
 - (void)setDateOfLastChange:(id)arg1;

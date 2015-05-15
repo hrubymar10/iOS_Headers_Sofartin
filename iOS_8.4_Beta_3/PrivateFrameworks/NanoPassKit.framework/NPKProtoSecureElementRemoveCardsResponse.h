@@ -11,10 +11,10 @@
     bool _success;
 }
 
-@property(assign,readwrite) bool hasPending;
-@property(assign,readwrite) bool hasSuccess;
-@property(assign,readwrite) bool pending;
-@property(assign,readwrite) bool success;
+@property (nonatomic) bool hasPending;
+@property (nonatomic) bool hasSuccess;
+@property (nonatomic) bool pending;
+@property (nonatomic) bool success;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

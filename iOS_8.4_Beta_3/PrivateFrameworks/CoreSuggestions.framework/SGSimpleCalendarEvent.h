@@ -19,20 +19,20 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) NSString * calendar;
-@property(assign,readonly) NSDate * creationDate;
-@property(assign,readonly) NSDate * end;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) bool isAllDay;
-@property(assign,readonly) NSDate * lastModifiedDate;
-@property(assign,readonly) NSString * location;
-@property(assign,readonly) NSString * notes;
-@property(assign,readonly) SGSimpleNamedEmailAddress * organizer;
-@property(assign,readonly) NSArray * participants;
-@property(assign,readonly) NSDate * start;
-@property(assign,readonly) NSTimeZone * timeZone;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) NSString *calendar;
+@property (nonatomic, readonly) NSDate *creationDate;
+@property (nonatomic, readonly) NSDate *end;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) bool isAllDay;
+@property (nonatomic, readonly) NSDate *lastModifiedDate;
+@property (nonatomic, readonly) NSString *location;
+@property (nonatomic, readonly) NSString *notes;
+@property (nonatomic, readonly) SGSimpleNamedEmailAddress *organizer;
+@property (nonatomic, readonly) NSArray *participants;
+@property (nonatomic, readonly) NSDate *start;
+@property (nonatomic, readonly) NSTimeZone *timeZone;
+@property (nonatomic, readonly) NSString *title;
 
 + (id)eventWithIdentifier:(id)arg1 properties:(id)arg2;
 + (id)eventWithIdentifier:(id)arg1 title:(id)arg2 start:(id)arg3 end:(id)arg4 timeZone:(id)arg5 creationDate:(id)arg6 lastModifiedDate:(id)arg7 isAllDay:(bool)arg8 calendar:(id)arg9 notes:(id)arg10 location:(id)arg11 organizer:(id)arg12 participants:(id)arg13 url:(id)arg14;

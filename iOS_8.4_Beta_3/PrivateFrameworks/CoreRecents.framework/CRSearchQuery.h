@@ -11,12 +11,12 @@
     id _weightDecayer;
 }
 
-@property(assign,copy) id comparator;
-@property(assign,copy) NSArray * domains;
-@property(assign,readwrite) unsigned long long implicitGroupThreshold;
-@property(assign,readwrite) unsigned long long options;
-@property(assign,retain) NSPredicate * predicate;
-@property(assign,copy) id weightDecayer;
+@property (nonatomic, copy) id comparator;
+@property (nonatomic, copy) NSArray *domains;
+@property (nonatomic) unsigned long long implicitGroupThreshold;
+@property (nonatomic) unsigned long long options;
+@property (nonatomic, retain) NSPredicate *predicate;
+@property (nonatomic, copy) id weightDecayer;
 
 + (id)frecencyComparator;
 + (id)frecencyComparatorForSearch:(id)arg1 preferredKinds:(id)arg2 sendingAddress:(id)arg3 queryOptions:(unsigned long long)arg4;

@@ -53,11 +53,11 @@
     VKTileProvider *_tileProvider;
 }
 
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  backgroundColor; /* unknown property attribute:  1>=[4f]} */
-@property(assign,readonly) const struct VKTileKey { unsigned int x1; int x2; int x3; unsigned int x4; }* keyToRasterize;
-@property(assign,readwrite) VKMapModel * mapModel;
-@property(assign,readwrite) unsigned long long rasterizingScaleFactor;
-@property(assign,readwrite) VKTileProvider * tileProvider;
+@property (nonatomic) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  backgroundColor; /* unknown property attribute:  1>=[4f]} */
+@property (nonatomic, readonly) const struct VKTileKey { unsigned int x1; int x2; int x3; unsigned int x4; }*keyToRasterize;
+@property (nonatomic) VKMapModel *mapModel;
+@property (nonatomic) unsigned long long rasterizingScaleFactor;
+@property (nonatomic) VKTileProvider *tileProvider;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

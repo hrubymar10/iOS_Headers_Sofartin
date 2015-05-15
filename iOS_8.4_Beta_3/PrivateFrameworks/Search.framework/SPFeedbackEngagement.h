@@ -9,10 +9,10 @@
     bool _userReturnedToResultsList;
 }
 
-@property(assign,retain) NSURL * action_destination;
-@property(assign,retain) NSString * cardType;
-@property(assign,readwrite) bool engagementOnCard;
-@property(assign,readwrite) bool userReturnedToResultsList;
+@property (nonatomic, retain) NSURL *action_destination;
+@property (nonatomic, retain) NSString *cardType;
+@property (nonatomic) bool engagementOnCard;
+@property (nonatomic) bool userReturnedToResultsList;
 
 - (id)action_destination;
 - (id)cardType;

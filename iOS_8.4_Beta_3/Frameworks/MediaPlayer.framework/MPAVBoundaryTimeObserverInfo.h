@@ -8,9 +8,9 @@
     NSArray *_times;
 }
 
-@property(assign,copy) id block;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) NSArray * times;
+@property (nonatomic, readonly, copy) id block;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, readonly) NSArray *times;
 
 - (void).cxx_destruct;
 - (id)block;

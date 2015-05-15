@@ -12,13 +12,13 @@
     unsigned long long _syncWindow;
 }
 
-@property(assign,readwrite) unsigned long long maximumRequestCharacterCount;
-@property(assign,retain) NSString * multipleDeviceFetchChangesThrottlingPolicyString;
-@property(assign,retain) NSString * multipleDeviceSaveChangesThrottlingPolicyString;
-@property(assign,retain) NSString * singleDeviceFetchChangesThrottlingPolicyString;
-@property(assign,retain) NSString * singleDeviceSaveChangesThrottlingPolicyString;
-@property(assign,retain) NSString * syncCircleSizeRetrievalThrottlingPolicyString;
-@property(assign,readwrite) unsigned long long syncWindow;
+@property unsigned long long maximumRequestCharacterCount;
+@property (retain) NSString *multipleDeviceFetchChangesThrottlingPolicyString;
+@property (retain) NSString *multipleDeviceSaveChangesThrottlingPolicyString;
+@property (retain) NSString *singleDeviceFetchChangesThrottlingPolicyString;
+@property (retain) NSString *singleDeviceSaveChangesThrottlingPolicyString;
+@property (retain) NSString *syncCircleSizeRetrievalThrottlingPolicyString;
+@property unsigned long long syncWindow;
 
 + (id)existingSharedCloudHistoryConfiguration;
 

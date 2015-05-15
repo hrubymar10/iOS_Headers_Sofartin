@@ -15,20 +15,20 @@
     double _startTime;
 }
 
-@property(assign,readwrite) bool allowLocation;
-@property(assign,retain) NSMutableData * collectedData;
-@property(assign,retain) NSURLSessionDataTask * dataTask;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool doCache;
-@property(assign,readwrite) bool doResume;
-@property(assign,readwrite) <PRSSessionController> * factory;
-@property(assign,readwrite) bool failed;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * queryString;
-@property(assign,readwrite) double scaleFactor;
-@property(assign,readwrite) double startTime;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool allowLocation;
+@property (nonatomic, retain) NSMutableData *collectedData;
+@property (nonatomic, retain) NSURLSessionDataTask *dataTask;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property bool doCache;
+@property bool doResume;
+@property (nonatomic) <PRSSessionController> *factory;
+@property bool failed;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *queryString;
+@property double scaleFactor;
+@property (nonatomic) double startTime;
+@property (readonly) Class superclass;
 
 + (id)existingQueryForString:(id)arg1 scaleFactor:(double)arg2 webSearch:(bool)arg3 handler:(id)arg4;
 

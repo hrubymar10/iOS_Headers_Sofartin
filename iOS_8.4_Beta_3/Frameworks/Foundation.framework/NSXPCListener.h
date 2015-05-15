@@ -13,8 +13,8 @@
     void *reserved0;
 }
 
-@property(assign,readwrite) <NSXPCListenerDelegate> * delegate;
-@property(assign,retain) NSXPCListenerEndpoint * endpoint;
+@property <NSXPCListenerDelegate> *delegate;
+@property (readonly, retain) NSXPCListenerEndpoint *endpoint;
 
 + (id)_UUID;
 + (id)anonymousListener;

@@ -12,7 +12,7 @@
     bool _started;
 }
 
-@property(getter=isNetworkAccessRequired,assign,readwrite) bool networkAccessRequired;
+@property (getter=isNetworkAccessRequired, nonatomic) bool networkAccessRequired;
 
 - (void).cxx_destruct;
 - (int)_ensureNetworkInterfaceMonitorStarted;

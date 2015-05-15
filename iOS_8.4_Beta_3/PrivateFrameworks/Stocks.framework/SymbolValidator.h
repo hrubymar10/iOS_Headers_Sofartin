@@ -7,7 +7,7 @@
     NSArray *_symbols;
 }
 
-@property(assign,readwrite) id delegate;
+@property (nonatomic) id delegate;
 
 - (void).cxx_destruct;
 - (id)aggregateDictionaryDomain;

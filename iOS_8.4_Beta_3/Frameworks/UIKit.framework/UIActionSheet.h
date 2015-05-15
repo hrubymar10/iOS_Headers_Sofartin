@@ -19,19 +19,19 @@
     _UIWeakRef *_weakDelegate;
 }
 
-@property(assign,readwrite) long long actionSheetStyle;
-@property(assign,readwrite) long long cancelButtonIndex;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UIActionSheetDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long destructiveButtonIndex;
-@property(assign,readonly) long long firstOtherButtonIndex;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long numberOfButtons;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
-@property(getter=isVisible,assign,readonly) bool visible;
-@property(assign,retain) _UIWeakRef * weakDelegate;
+@property (nonatomic) long long actionSheetStyle;
+@property (nonatomic) long long cancelButtonIndex;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UIActionSheetDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long destructiveButtonIndex;
+@property (nonatomic, readonly) long long firstOtherButtonIndex;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long numberOfButtons;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
+@property (getter=isVisible, nonatomic, readonly) bool visible;
+@property (nonatomic, retain) _UIWeakRef *weakDelegate;
 
 + (bool)_isAlertControllerShimClass;
 + (Class)_popoverControllerClass;

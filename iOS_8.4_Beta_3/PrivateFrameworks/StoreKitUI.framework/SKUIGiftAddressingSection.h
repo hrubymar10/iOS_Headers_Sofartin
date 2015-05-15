@@ -12,8 +12,8 @@
     double _textViewCellHeight;
 }
 
-@property(assign,retain) SKUIGift * gift;
-@property(assign,readwrite) <UITextFieldDelegate> * textFieldDelegate;
+@property (nonatomic, retain) SKUIGift *gift;
+@property (nonatomic) <UITextFieldDelegate> *textFieldDelegate;
 
 - (void).cxx_destruct;
 - (id)_attributedPlaceholderWithString:(id)arg1;

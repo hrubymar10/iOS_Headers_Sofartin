@@ -14,16 +14,16 @@
     SKUISearchBarViewElement *_viewElement;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool displaysSearchBarInNavigationBar;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIViewController * parentViewController;
-@property(assign,readonly) UISearchBar * searchBar;
-@property(assign,retain) SKUISearchBarViewElement * searchBarViewElement;
-@property(assign,readwrite) bool showsResultsForEmptyField;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool displaysSearchBarInNavigationBar;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UIViewController *parentViewController;
+@property (nonatomic, readonly) UISearchBar *searchBar;
+@property (nonatomic, retain) SKUISearchBarViewElement *searchBarViewElement;
+@property (nonatomic) bool showsResultsForEmptyField;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_cancelGestureAction:(id)arg1;

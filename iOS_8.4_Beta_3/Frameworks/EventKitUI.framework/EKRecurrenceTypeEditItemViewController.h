@@ -14,16 +14,16 @@
     UITableView *_table;
 }
 
-@property(assign,retain) EKCalendarItem * calendarItem;
-@property(assign,retain) EKUICustomRecurrenceViewController * customRecurrenceViewController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <EKRecurrenceTypeEditItemViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) EKRecurrenceRule * recurrenceRule;
-@property(assign,readwrite) long long repeatType;
-@property(assign,retain) NSDate * suggestedStartDate;
-@property(assign,readonly) Class superclass;
+@property (retain) EKCalendarItem *calendarItem;
+@property (retain) EKUICustomRecurrenceViewController *customRecurrenceViewController;
+@property (readonly, copy) NSString *debugDescription;
+@property <EKRecurrenceTypeEditItemViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) EKRecurrenceRule *recurrenceRule;
+@property (nonatomic) long long repeatType;
+@property (nonatomic, retain) NSDate *suggestedStartDate;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_checkItemAtIndexPath:(id)arg1;

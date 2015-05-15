@@ -12,13 +12,13 @@
     CALayer *_titleEdgesLayerMask;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPUMediaControlsTitlesViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,readonly) long long mediaControlsStyle;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPUMediaControlsTitlesViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic, readonly) long long mediaControlsStyle;
+@property (readonly) Class superclass;
 
 + (id)detailTextColorForMediaControlsStyle:(long long)arg1 highlighted:(bool)arg2;
 

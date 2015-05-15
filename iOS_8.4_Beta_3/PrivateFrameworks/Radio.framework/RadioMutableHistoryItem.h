@@ -4,10 +4,10 @@
 
 @interface RadioMutableHistoryItem : RadioHistoryItem
 
-@property(assign,retain) NSDate * datePlayed;
-@property(assign,copy) NSString * externalIdentifier;
-@property(assign,retain) RadioTrack * track;
-@property(assign,readwrite) long long type;
+@property (nonatomic, retain) NSDate *datePlayed;
+@property (nonatomic, copy) NSString *externalIdentifier;
+@property (nonatomic, retain) RadioTrack *track;
+@property (nonatomic) long long type;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setDatePlayed:(id)arg1;

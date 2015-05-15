@@ -27,10 +27,10 @@
     double _rotationHysteresisDegrees;
 }
 
-@property(setter=_setRotationFilter:,assign,retain) PUValueFilter * _rotationFilter;
-@property(setter=_setTouchesNeedUpdate:,assign,readwrite) bool _touchesNeedUpdate;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } initialPinchRect;
-@property(assign,readwrite) double rotationHysteresisDegrees;
+@property (setter=_setRotationFilter:, nonatomic, retain) PUValueFilter *_rotationFilter;
+@property (setter=_setTouchesNeedUpdate:, nonatomic) bool _touchesNeedUpdate;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } initialPinchRect;
+@property (nonatomic) double rotationHysteresisDegrees;
 
 - (void).cxx_destruct;
 - (id)_rotationFilter;

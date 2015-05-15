@@ -20,22 +20,22 @@
     NSString *_username;
 }
 
-@property(assign,retain) NSString * accountDescription;
-@property(assign,copy) NSString * accountPersistentUUID;
-@property(assign,retain) NSData * certificatePersistentID;
-@property(assign,retain) NSString * certificateUUID;
-@property(assign,copy) NSString * emailAddress;
-@property(assign,retain) NSData * embeddedCertificate;
-@property(assign,retain) NSString * embeddedCertificateName;
-@property(assign,copy) NSString * embeddedCertificatePassword;
-@property(assign,readonly) bool hasCertificate;
-@property(assign,retain) NSString * hostname;
-@property(assign,retain) NSNumber * mailNumberOfPastDaysToSync;
-@property(assign,copy) NSString * password;
-@property(assign,readwrite) bool syncDefaultFoldersOnly;
-@property(assign,readonly) NSNumber * syncDefaultFoldersOnlyNum;
-@property(assign,retain) NSNumber * useSSL;
-@property(assign,copy) NSString * username;
+@property (nonatomic, readonly, retain) NSString *accountDescription;
+@property (nonatomic, copy) NSString *accountPersistentUUID;
+@property (nonatomic, retain) NSData *certificatePersistentID;
+@property (nonatomic, readonly, retain) NSString *certificateUUID;
+@property (nonatomic, copy) NSString *emailAddress;
+@property (nonatomic, readonly, retain) NSData *embeddedCertificate;
+@property (nonatomic, readonly, retain) NSString *embeddedCertificateName;
+@property (nonatomic, copy) NSString *embeddedCertificatePassword;
+@property (nonatomic, readonly) bool hasCertificate;
+@property (nonatomic, readonly, retain) NSString *hostname;
+@property (nonatomic, readonly, retain) NSNumber *mailNumberOfPastDaysToSync;
+@property (nonatomic, copy) NSString *password;
+@property (nonatomic) bool syncDefaultFoldersOnly;
+@property (nonatomic, readonly) NSNumber *syncDefaultFoldersOnlyNum;
+@property (nonatomic, retain) NSNumber *useSSL;
+@property (nonatomic, copy) NSString *username;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

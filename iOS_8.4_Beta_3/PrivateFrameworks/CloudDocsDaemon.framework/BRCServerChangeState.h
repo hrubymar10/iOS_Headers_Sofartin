@@ -10,13 +10,13 @@
     CKServerChangeToken *_pendingChangeToken;
 }
 
-@property(assign,retain) CKServerChangeToken * changeToken;
-@property(assign,readwrite) unsigned long long clientRequestID;
-@property(assign,readonly) bool hasNeverSyncedDown;
-@property(assign,retain) NSDate * lastSyncDownDate;
-@property(assign,readwrite) long long lastSyncDownStatus;
-@property(assign,readonly) CKServerChangeToken * nextSyncRequestChangeToken;
-@property(assign,retain) CKServerChangeToken * pendingChangeToken;
+@property (nonatomic, retain) CKServerChangeToken *changeToken;
+@property (nonatomic) unsigned long long clientRequestID;
+@property (nonatomic, readonly) bool hasNeverSyncedDown;
+@property (retain) NSDate *lastSyncDownDate;
+@property (nonatomic) long long lastSyncDownStatus;
+@property (nonatomic, readonly) CKServerChangeToken *nextSyncRequestChangeToken;
+@property (nonatomic, retain) CKServerChangeToken *pendingChangeToken;
 
 + (bool)supportsSecureCoding;
 

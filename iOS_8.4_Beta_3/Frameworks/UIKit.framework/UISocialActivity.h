@@ -7,8 +7,8 @@
     SLComposeViewController *_socialComposeViewController;
 }
 
-@property(assign,copy) NSString * builtinActivityType;
-@property(assign,retain) SLComposeViewController * socialComposeViewController;
+@property (nonatomic, copy) NSString *builtinActivityType;
+@property (nonatomic, retain) SLComposeViewController *socialComposeViewController;
 
 + (long long)activityCategory;
 

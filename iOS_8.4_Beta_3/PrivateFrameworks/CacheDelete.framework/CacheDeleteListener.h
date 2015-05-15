@@ -9,14 +9,14 @@
     id _xObj;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSXPCListener * listener;
-@property(assign,retain) Protocol * protocol;
-@property(assign,retain) NSMutableSet * requiredEntitlements;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) id xObj;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSXPCListener *listener;
+@property (nonatomic, retain) Protocol *protocol;
+@property (nonatomic, retain) NSMutableSet *requiredEntitlements;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) id xObj;
 
 + (id)daemonListenerWithExportedObject:(id)arg1;
 

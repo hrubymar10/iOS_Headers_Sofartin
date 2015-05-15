@@ -16,16 +16,16 @@
     bool _skipIncrementalChanges;
 }
 
-@property(assign,readonly) NSIndexSet * changedIndexes;
-@property(assign,readonly) NSArray * changedObjects;
-@property(assign,readonly) PHFetchResult * fetchResultAfterChanges;
-@property(assign,readonly) PHFetchResult * fetchResultBeforeChanges;
-@property(assign,readonly) bool hasIncrementalChanges;
-@property(assign,readonly) bool hasMoves;
-@property(assign,readonly) NSIndexSet * insertedIndexes;
-@property(assign,readonly) NSArray * insertedObjects;
-@property(assign,readonly) NSIndexSet * removedIndexes;
-@property(assign,readonly) NSArray * removedObjects;
+@property (readonly) NSIndexSet *changedIndexes;
+@property (readonly) NSArray *changedObjects;
+@property (readonly) PHFetchResult *fetchResultAfterChanges;
+@property (readonly) PHFetchResult *fetchResultBeforeChanges;
+@property (readonly) bool hasIncrementalChanges;
+@property (readonly) bool hasMoves;
+@property (readonly) NSIndexSet *insertedIndexes;
+@property (readonly) NSArray *insertedObjects;
+@property (readonly) NSIndexSet *removedIndexes;
+@property (readonly) NSArray *removedObjects;
 
 + (id)_oidsForPHObjects:(id)arg1;
 + (id)changeDetailsFromFetchResult:(id)arg1 toFetchResult:(id)arg2 changedObjects:(id)arg3;

@@ -19,11 +19,11 @@
     bool _usesDatePickerAsInputView;
 }
 
-@property(assign,retain) NSDate * date;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } datePickerSize;
-@property(assign,readwrite) <ABDateFieldDelegate> * delegate;
-@property(getter=isEditable,assign,readwrite) bool editable;
-@property(assign,readwrite) <ABDatePickerPresentationDelegate> * presentationDelegate;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic) struct CGSize { double x1; double x2; } datePickerSize;
+@property (nonatomic) <ABDateFieldDelegate> *delegate;
+@property (getter=isEditable, nonatomic) bool editable;
+@property (nonatomic) <ABDatePickerPresentationDelegate> *presentationDelegate;
 
 - (void)_attachToDatePicker:(id)arg1;
 - (id)_clearButton;

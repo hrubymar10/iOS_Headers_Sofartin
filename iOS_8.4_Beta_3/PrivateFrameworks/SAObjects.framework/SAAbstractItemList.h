@@ -4,8 +4,8 @@
 
 @interface SAAbstractItemList : SADomainObject
 
-@property(assign,copy) NSArray * domainObjects;
-@property(assign,copy) NSNumber * selectedIndex;
+@property (nonatomic, copy) NSArray *domainObjects;
+@property (nonatomic, copy) NSNumber *selectedIndex;
 
 + (id)abstractItemList;
 + (id)abstractItemListWithDictionary:(id)arg1 context:(id)arg2;

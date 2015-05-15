@@ -29,13 +29,13 @@
     NSMutableArray *_touches;
 }
 
-@property(assign,readwrite) double allowableMovement;
-@property(assign,readwrite) <UITapRecognizerDelegate> * delegate;
-@property(assign,readwrite) double maximumIntervalBetweenSuccessiveTaps;
-@property(assign,readwrite) double maximumSingleTapDuration;
-@property(assign,readwrite) unsigned long long numberOfTapsRequired;
-@property(assign,readwrite) unsigned long long numberOfTouchesRequired;
-@property(assign,readonly) NSArray * touches;
+@property (nonatomic) double allowableMovement;
+@property (nonatomic) <UITapRecognizerDelegate> *delegate;
+@property (nonatomic) double maximumIntervalBetweenSuccessiveTaps;
+@property (nonatomic) double maximumSingleTapDuration;
+@property (nonatomic) unsigned long long numberOfTapsRequired;
+@property (nonatomic) unsigned long long numberOfTouchesRequired;
+@property (nonatomic, readonly) NSArray *touches;
 
 - (void)_beginInteraction;
 - (struct CGPoint { double x1; double x2; })_digitizerLocation;

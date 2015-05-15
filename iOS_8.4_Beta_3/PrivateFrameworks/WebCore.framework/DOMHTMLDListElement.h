@@ -4,7 +4,7 @@
 
 @interface DOMHTMLDListElement : DOMHTMLElement
 
-@property(assign,readwrite) bool compact;
+@property bool compact;
 
 - (bool)compact;
 - (void)setCompact:(bool)arg1;

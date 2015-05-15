@@ -10,8 +10,8 @@
     UIImageView *_videosImageView;
 }
 
-@property(assign,copy) NSString * destinationName;
-@property(assign,readwrite) long long style;
+@property (nonatomic, copy) NSString *destinationName;
+@property (nonatomic) long long style;
 
 - (void).cxx_destruct;
 - (id)destinationName;

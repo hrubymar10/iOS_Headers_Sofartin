@@ -6,11 +6,11 @@
     AVMetadataFaceObjectInternal *_internal;
 }
 
-@property(assign,readonly) long long faceID;
-@property(assign,readonly) bool hasRollAngle;
-@property(assign,readonly) bool hasYawAngle;
-@property(assign,readonly) double rollAngle;
-@property(assign,readonly) double yawAngle;
+@property (readonly) long long faceID;
+@property (readonly) bool hasRollAngle;
+@property (readonly) bool hasYawAngle;
+@property (readonly) double rollAngle;
+@property (readonly) double yawAngle;
 
 + (id)faceObjectWithFigEmbeddedCaptureDeviceFaceDictionary:(id)arg1 input:(id)arg2;
 

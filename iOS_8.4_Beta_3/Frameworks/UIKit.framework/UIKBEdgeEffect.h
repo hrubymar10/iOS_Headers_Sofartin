@@ -11,18 +11,18 @@
     double _weight;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long edges;
-@property(assign,retain) UIKBGradient * gradient;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double inset;
-@property(assign,readonly) bool isValid;
-@property(assign,readwrite) double opacity;
-@property(assign,readonly) SEL renderSelector;
-@property(assign,readonly) bool renderUnder;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double weight;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) unsigned long long edges;
+@property (nonatomic, retain) UIKBGradient *gradient;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double inset;
+@property (nonatomic, readonly) bool isValid;
+@property (nonatomic) double opacity;
+@property (nonatomic, readonly) SEL renderSelector;
+@property (nonatomic, readonly) bool renderUnder;
+@property (readonly) Class superclass;
+@property (nonatomic) double weight;
 
 + (id)effectWithColor:(id)arg1 edges:(unsigned long long)arg2 inset:(double)arg3 weight:(double)arg4;
 

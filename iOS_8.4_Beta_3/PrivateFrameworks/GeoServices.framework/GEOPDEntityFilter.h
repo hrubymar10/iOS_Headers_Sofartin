@@ -9,8 +9,8 @@
     bool _includeSpokenNames;
 }
 
-@property(assign,readwrite) bool hasIncludeSpokenNames;
-@property(assign,readwrite) bool includeSpokenNames;
+@property (nonatomic) bool hasIncludeSpokenNames;
+@property (nonatomic) bool includeSpokenNames;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

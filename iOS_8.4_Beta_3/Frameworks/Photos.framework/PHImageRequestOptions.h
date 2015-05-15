@@ -31,23 +31,23 @@
     long long _version;
 }
 
-@property(assign,readwrite) bool allowPlaceholder;
-@property(assign,readwrite) double aspectRatioHint;
-@property(assign,copy) id cachingCompletedHandler;
-@property(assign,readwrite) bool degradedFormatPreferJPEG;
-@property(assign,readwrite) bool deliveryFirstResultAsynchronously;
-@property(assign,readwrite) long long deliveryMode;
-@property(assign,readwrite) double demoteFactor;
-@property(assign,readwrite) double downloadUpdateInterval;
-@property(assign,readwrite) long long loadingMode;
-@property(getter=isMemoryCachingAllowed,assign,readwrite) bool memoryCachingAllowed;
-@property(getter=isNetworkAccessAllowed,assign,readwrite) bool networkAccessAllowed;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } normalizedCropRect;
-@property(assign,copy) id progressHandler;
-@property(assign,readwrite) long long rank;
-@property(assign,readwrite) long long resizeMode;
-@property(getter=isSynchronous,assign,readwrite) bool synchronous;
-@property(assign,readwrite) long long version;
+@property (nonatomic) bool allowPlaceholder;
+@property (nonatomic) double aspectRatioHint;
+@property (nonatomic, copy) id cachingCompletedHandler;
+@property (nonatomic) bool degradedFormatPreferJPEG;
+@property (nonatomic) bool deliveryFirstResultAsynchronously;
+@property (nonatomic) long long deliveryMode;
+@property (nonatomic) double demoteFactor;
+@property (nonatomic) double downloadUpdateInterval;
+@property (nonatomic) long long loadingMode;
+@property (getter=isMemoryCachingAllowed, nonatomic) bool memoryCachingAllowed;
+@property (getter=isNetworkAccessAllowed, nonatomic) bool networkAccessAllowed;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } normalizedCropRect;
+@property (nonatomic, copy) id progressHandler;
+@property (nonatomic) long long rank;
+@property (nonatomic) long long resizeMode;
+@property (getter=isSynchronous, nonatomic) bool synchronous;
+@property (nonatomic) long long version;
 
 + (id)defaultOptionsAllowingPlaceholder;
 

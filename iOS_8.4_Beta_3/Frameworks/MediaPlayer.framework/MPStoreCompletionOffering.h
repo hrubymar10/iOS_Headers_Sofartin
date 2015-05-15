@@ -11,10 +11,10 @@
     NSURL *_storeURL;
 }
 
-@property(assign,readonly) MPStoreOfferMediaItemCollection * collectionWithCompletionItems;
-@property(assign,readwrite) long long preferredStoreOfferVariant;
-@property(assign,readonly) long long presentationStyle;
-@property(assign,copy) NSURL * storeURL;
+@property (nonatomic, readonly) MPStoreOfferMediaItemCollection *collectionWithCompletionItems;
+@property (nonatomic) long long preferredStoreOfferVariant;
+@property (nonatomic, readonly) long long presentationStyle;
+@property (nonatomic, readonly, copy) NSURL *storeURL;
 
 + (long long)defaultOfferVariant;
 + (id)offeringWithResponse:(id)arg1 localItemsQuery:(id)arg2;

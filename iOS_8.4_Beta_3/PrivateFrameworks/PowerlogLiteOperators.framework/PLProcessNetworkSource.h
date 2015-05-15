@@ -8,9 +8,9 @@
     struct __NStatSource { } *_source;
 }
 
-@property(assign,copy) NSDictionary * countsDictionary;
-@property(assign,copy) NSDictionary * descriptionDictionary;
-@property(assign,readwrite) struct __NStatSource { }* source;
+@property (nonatomic, copy) NSDictionary *countsDictionary;
+@property (nonatomic, copy) NSDictionary *descriptionDictionary;
+@property (nonatomic) struct __NStatSource { }*source;
 
 - (void).cxx_destruct;
 - (id)countsDictionary;

@@ -6,10 +6,10 @@
     NSMutableDictionary *_userInfo;
 }
 
-@property(assign,copy) NSArray * attachments;
-@property(assign,copy) NSAttributedString * attributedContentText;
-@property(assign,copy) NSAttributedString * attributedTitle;
-@property(assign,copy) NSDictionary * userInfo;
+@property (nonatomic, copy) NSArray *attachments;
+@property (nonatomic, copy) NSAttributedString *attributedContentText;
+@property (nonatomic, copy) NSAttributedString *attributedTitle;
+@property (nonatomic, copy) NSDictionary *userInfo;
 
 + (bool)supportsSecureCoding;
 

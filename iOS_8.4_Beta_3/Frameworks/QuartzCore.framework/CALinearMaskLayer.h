@@ -4,7 +4,7 @@
 
 @interface CALinearMaskLayer : CALayer
 
-@property(assign,readwrite) struct CGColor { }* foregroundColor;
+@property struct CGColor { }*foregroundColor;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (bool)_hasRenderLayerSubclass;

@@ -10,8 +10,8 @@
     unsigned int totalCount;
 }
 
-@property(assign,retain) NSDate * latestDateToAdd;
-@property(assign,retain) NSArray * matchingRemoteIDs;
+@property (nonatomic, retain) NSDate *latestDateToAdd;
+@property (nonatomic, readonly, retain) NSArray *matchingRemoteIDs;
 
 - (void)dealloc;
 - (bool)handleItems:(id)arg1;

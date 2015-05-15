@@ -9,20 +9,20 @@
     NSMutableArray *_delegates;
 }
 
-@property(assign,retain) NSMutableArray * _delegates;
-@property(assign,readonly) bool _ready;
-@property(assign,readwrite) bool blockIncomingInvitationsDuringCall;
-@property(assign,readwrite) bool blockMultipleIncomingInvitations;
-@property(assign,readwrite) bool blockOutgoingInvitationsDuringCall;
-@property(assign,readonly) bool cameraCapable;
-@property(assign,readonly) bool cameraConnected;
-@property(assign,readwrite) <IMAVControllerDelegate> * delegate;
-@property(assign,retain) NSArray * delegates;
-@property(assign,readonly) bool hasActiveConference;
-@property(assign,readonly) bool hasRunningConference;
-@property(assign,readonly) bool microphoneCapable;
-@property(assign,readonly) bool microphoneConnected;
-@property(assign,readonly) unsigned int overallChatState;
+@property (nonatomic, retain) NSMutableArray *_delegates;
+@property (nonatomic, readonly) bool _ready;
+@property (nonatomic) bool blockIncomingInvitationsDuringCall;
+@property (nonatomic) bool blockMultipleIncomingInvitations;
+@property (nonatomic) bool blockOutgoingInvitationsDuringCall;
+@property (nonatomic, readonly) bool cameraCapable;
+@property (nonatomic, readonly) bool cameraConnected;
+@property (nonatomic) <IMAVControllerDelegate> *delegate;
+@property (nonatomic, readonly, retain) NSArray *delegates;
+@property (nonatomic, readonly) bool hasActiveConference;
+@property (nonatomic, readonly) bool hasRunningConference;
+@property (nonatomic, readonly) bool microphoneCapable;
+@property (nonatomic, readonly) bool microphoneConnected;
+@property (nonatomic, readonly) unsigned int overallChatState;
 
 + (id)sharedInstance;
 

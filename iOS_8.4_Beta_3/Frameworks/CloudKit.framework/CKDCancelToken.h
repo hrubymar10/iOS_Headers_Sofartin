@@ -7,7 +7,7 @@
     bool _isCancelled;
 }
 
-@property(assign,copy) id cancelAction;
+@property (nonatomic, copy) id cancelAction;
 
 - (void).cxx_destruct;
 - (void)cancel;

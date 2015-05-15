@@ -8,9 +8,9 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSString * seedDescription;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
+@property (nonatomic, readonly, copy) NSString *seedDescription;
+@property (nonatomic, readonly, copy) NSString *subtitle;
+@property (nonatomic, readonly, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -11,7 +11,7 @@
     unsigned long long m_timeStamp;
 }
 
-@property(assign,readwrite) unsigned long long timeStamp;
+@property (nonatomic) unsigned long long timeStamp;
 
 + (void)initialize;
 

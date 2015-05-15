@@ -8,10 +8,10 @@
     NSString *_transition;
 }
 
-@property(assign,retain) PUAirplayRoute * airplayRoute;
-@property(assign,readonly) bool isOrigamiTransition;
-@property(assign,retain) MPMediaItemCollection * musicCollection;
-@property(assign,copy) NSString * transition;
+@property (nonatomic, retain) PUAirplayRoute *airplayRoute;
+@property (nonatomic, readonly) bool isOrigamiTransition;
+@property (nonatomic, retain) MPMediaItemCollection *musicCollection;
+@property (nonatomic, copy) NSString *transition;
 
 + (id)settingsForAirplayRoute:(id)arg1;
 

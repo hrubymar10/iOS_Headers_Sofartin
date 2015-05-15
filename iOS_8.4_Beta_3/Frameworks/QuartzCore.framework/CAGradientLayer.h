@@ -4,12 +4,12 @@
 
 @interface CAGradientLayer : CALayer
 
-@property(assign,retain) id colorMap;
-@property(assign,copy) NSArray * colors;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } endPoint;
-@property(assign,copy) NSArray * locations;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } startPoint;
-@property(assign,copy) NSString * type;
+@property (retain) id colorMap;
+@property (copy) NSArray *colors;
+@property struct CGPoint { double x1; double x2; } endPoint;
+@property (copy) NSArray *locations;
+@property struct CGPoint { double x1; double x2; } startPoint;
+@property (copy) NSString *type;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (bool)_hasRenderLayerSubclass;

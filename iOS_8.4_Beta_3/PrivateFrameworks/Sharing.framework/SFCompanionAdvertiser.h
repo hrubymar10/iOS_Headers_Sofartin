@@ -8,10 +8,10 @@
     bool _supportsStreams;
 }
 
-@property(assign,readwrite) <SFCompanionAdvertiserDelegate> * delegate;
-@property(assign,readonly) NSData * serviceEndpointData;
-@property(assign,copy) NSString * serviceType;
-@property(assign,readwrite) bool supportsStreams;
+@property <SFCompanionAdvertiserDelegate> *delegate;
+@property (readonly) NSData *serviceEndpointData;
+@property (readonly, copy) NSString *serviceType;
+@property bool supportsStreams;
 
 - (void)dealloc;
 - (id)delegate;

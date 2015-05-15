@@ -13,14 +13,14 @@
     int _transactionType;
 }
 
-@property(assign,retain) NSString * actingPeerID;
-@property(assign,retain) PFUbiquityGlobalObjectID * globalID;
-@property(assign,retain) PFUbiquityKnowledgeVector * knowledgeVector;
-@property(assign,retain) NSString * storeName;
-@property(assign,retain) NSDate * transactionDate;
-@property(assign,retain) PFUbiquityLocation * transactionLogLocation;
-@property(assign,retain) NSNumber * transactionNumber;
-@property(assign,readwrite) int transactionType;
+@property (nonatomic, retain) NSString *actingPeerID;
+@property (nonatomic, retain) PFUbiquityGlobalObjectID *globalID;
+@property (nonatomic, retain) PFUbiquityKnowledgeVector *knowledgeVector;
+@property (nonatomic, retain) NSString *storeName;
+@property (nonatomic, retain) NSDate *transactionDate;
+@property (nonatomic, retain) PFUbiquityLocation *transactionLogLocation;
+@property (nonatomic, retain) NSNumber *transactionNumber;
+@property (nonatomic) int transactionType;
 
 - (id)actingPeerID;
 - (void)dealloc;

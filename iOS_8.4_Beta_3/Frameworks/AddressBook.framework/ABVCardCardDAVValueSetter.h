@@ -7,7 +7,7 @@
     bool _recordIsGroup;
 }
 
-@property(assign,readwrite) bool recordIsGroup;
+@property bool recordIsGroup;
 
 + (struct __CFDictionary { }*)_personToGroupPropertyMap;
 + (int)groupPropertyForPersonProperty:(int)arg1;

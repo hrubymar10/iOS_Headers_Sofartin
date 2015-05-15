@@ -21,22 +21,22 @@
     NSData *_uuidReference;
 }
 
-@property(assign,readwrite) bool hasIdxTableAvail;
-@property(assign,readwrite) bool hasPersistentAvail;
-@property(assign,readwrite) bool hasTimeDeltaFromReference;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasTransientDeselectAvail;
-@property(assign,readwrite) bool hasTransientResetAvail;
-@property(assign,readonly) bool hasUrl;
-@property(assign,readonly) bool hasUuidReference;
-@property(assign,readwrite) unsigned int idxTableAvail;
-@property(assign,readwrite) unsigned int persistentAvail;
-@property(assign,readwrite) unsigned long long timeDeltaFromReference;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int transientDeselectAvail;
-@property(assign,readwrite) unsigned int transientResetAvail;
-@property(assign,retain) NSString * url;
-@property(assign,retain) NSData * uuidReference;
+@property (nonatomic) bool hasIdxTableAvail;
+@property (nonatomic) bool hasPersistentAvail;
+@property (nonatomic) bool hasTimeDeltaFromReference;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasTransientDeselectAvail;
+@property (nonatomic) bool hasTransientResetAvail;
+@property (nonatomic, readonly) bool hasUrl;
+@property (nonatomic, readonly) bool hasUuidReference;
+@property (nonatomic) unsigned int idxTableAvail;
+@property (nonatomic) unsigned int persistentAvail;
+@property (nonatomic) unsigned long long timeDeltaFromReference;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int transientDeselectAvail;
+@property (nonatomic) unsigned int transientResetAvail;
+@property (nonatomic, retain) NSString *url;
+@property (nonatomic, retain) NSData *uuidReference;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

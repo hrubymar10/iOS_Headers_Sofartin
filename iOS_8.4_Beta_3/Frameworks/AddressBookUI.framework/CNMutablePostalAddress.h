@@ -4,14 +4,14 @@
 
 @interface CNMutablePostalAddress : CNPostalAddress
 
-@property(assign,copy) NSString * ISOCountryCode;
-@property(assign,copy) NSString * city;
-@property(assign,copy) NSString * country;
-@property(assign,copy) NSString * postalCode;
-@property(assign,copy) NSString * state;
-@property(assign,copy) NSString * street;
-@property(assign,copy) NSString * subAdministrativeArea;
-@property(assign,copy) NSString * subLocality;
+@property (copy) NSString *ISOCountryCode;
+@property (copy) NSString *city;
+@property (copy) NSString *country;
+@property (copy) NSString *postalCode;
+@property (copy) NSString *state;
+@property (copy) NSString *street;
+@property (copy) NSString *subAdministrativeArea;
+@property (copy) NSString *subLocality;
 
 + (id)postalAddress;
 

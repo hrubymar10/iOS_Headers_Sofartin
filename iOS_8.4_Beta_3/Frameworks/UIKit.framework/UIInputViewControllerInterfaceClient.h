@@ -6,7 +6,7 @@
     <_UIIVCInterface> *_forwardingInterface;
 }
 
-@property(assign,retain) <_UIIVCInterface> * forwardingInterface;
+@property (nonatomic, retain) <_UIIVCInterface> *forwardingInterface;
 
 + (id)_extensionAuxiliaryHostProtocol;
 + (id)_extensionAuxiliaryVendorProtocol;

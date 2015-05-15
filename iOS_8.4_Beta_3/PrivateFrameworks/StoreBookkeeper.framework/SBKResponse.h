@@ -12,25 +12,25 @@
     double _retrySeconds;
 }
 
-@property(assign,readonly) NSString * MIMEType;
-@property(assign,copy) NSString * consoleDescription;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) bool isAuthenticationError;
-@property(assign,readonly) bool isError;
-@property(assign,readonly) bool isGenericError;
-@property(assign,readonly) bool isPuntedError;
-@property(assign,readonly) bool isRecoverable;
-@property(assign,readonly) bool isSuccess;
-@property(assign,readonly) bool isUnsupportedClient;
-@property(assign,readonly) bool isValidationError;
-@property(assign,readonly) NSError * requestError;
-@property(assign,readonly) unsigned long long responseCode;
-@property(assign,readonly) NSDictionary * responseDictionary;
-@property(assign,readonly) NSDictionary * responseHeaderFields;
-@property(assign,readonly) SBKResponseStatus * responseStatus;
-@property(assign,readonly) double retrySeconds;
-@property(assign,readonly) bool shouldFileRadar;
-@property(assign,readonly) long long statusCode;
+@property (nonatomic, readonly) NSString *MIMEType;
+@property (readonly, copy) NSString *consoleDescription;
+@property (nonatomic, readonly) NSError *error;
+@property (readonly) bool isAuthenticationError;
+@property (readonly) bool isError;
+@property (readonly) bool isGenericError;
+@property (readonly) bool isPuntedError;
+@property (readonly) bool isRecoverable;
+@property (readonly) bool isSuccess;
+@property (readonly) bool isUnsupportedClient;
+@property (readonly) bool isValidationError;
+@property (readonly) NSError *requestError;
+@property (nonatomic, readonly) unsigned long long responseCode;
+@property (nonatomic, readonly) NSDictionary *responseDictionary;
+@property (nonatomic, readonly) NSDictionary *responseHeaderFields;
+@property (nonatomic, readonly) SBKResponseStatus *responseStatus;
+@property (readonly) double retrySeconds;
+@property (readonly) bool shouldFileRadar;
+@property (readonly) long long statusCode;
 
 + (id)responseWithCode:(unsigned long long)arg1 headerFields:(id)arg2 responseDictionary:(id)arg3 MIMEType:(id)arg4 error:(id)arg5;
 + (id)responseWithResponse:(id)arg1;

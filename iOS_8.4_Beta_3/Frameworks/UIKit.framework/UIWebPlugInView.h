@@ -14,10 +14,10 @@
     UIWebDocumentView *_webView;
 }
 
-@property(assign,readwrite) bool isMapViewPlugIn;
-@property(assign,readwrite) bool isQuickTimePlugIn;
-@property(assign,readwrite) bool isiAdPlugIn;
-@property(getter=isParentedInLayer,assign,readwrite) bool parentedInLayer;
+@property (nonatomic) bool isMapViewPlugIn;
+@property (nonatomic) bool isQuickTimePlugIn;
+@property (nonatomic) bool isiAdPlugIn;
+@property (getter=isParentedInLayer, nonatomic) bool parentedInLayer;
 
 - (void)_attachPluginLayerOnMainThread;
 - (void)_connectPluginLayers;

@@ -12,13 +12,13 @@
     CKDPUserPrivacySettings *_userPrivacySettings;
 }
 
-@property(assign,retain) NSMutableArray * applicationBundles;
-@property(assign,retain) NSString * applicationContainer;
-@property(assign,readwrite) int applicationContainerEnvironment;
-@property(assign,readonly) bool hasApplicationContainer;
-@property(assign,readwrite) bool hasApplicationContainerEnvironment;
-@property(assign,readonly) bool hasUserPrivacySettings;
-@property(assign,retain) CKDPUserPrivacySettings * userPrivacySettings;
+@property (nonatomic, retain) NSMutableArray *applicationBundles;
+@property (nonatomic, retain) NSString *applicationContainer;
+@property (nonatomic) int applicationContainerEnvironment;
+@property (nonatomic, readonly) bool hasApplicationContainer;
+@property (nonatomic) bool hasApplicationContainerEnvironment;
+@property (nonatomic, readonly) bool hasUserPrivacySettings;
+@property (nonatomic, retain) CKDPUserPrivacySettings *userPrivacySettings;
 
 - (void).cxx_destruct;
 - (void)addApplicationBundle:(id)arg1;

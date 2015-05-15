@@ -9,10 +9,10 @@
     NSMutableArray *_subscriptions;
 }
 
-@property(assign,copy) id subscriptionFetchedBlock;
-@property(assign,retain) NSMutableDictionary * subscriptionIDByRequestID;
-@property(assign,retain) NSArray * subscriptionIDs;
-@property(assign,retain) NSArray * subscriptions;
+@property (nonatomic, copy) id subscriptionFetchedBlock;
+@property (nonatomic, retain) NSMutableDictionary *subscriptionIDByRequestID;
+@property (nonatomic, retain) NSArray *subscriptionIDs;
+@property (nonatomic, retain) NSArray *subscriptions;
 
 - (void).cxx_destruct;
 - (id)initWithSubscriptionIDs:(id)arg1;

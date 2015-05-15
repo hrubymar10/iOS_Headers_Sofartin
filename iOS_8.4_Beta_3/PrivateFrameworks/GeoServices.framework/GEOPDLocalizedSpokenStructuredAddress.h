@@ -7,10 +7,10 @@
     GEOStructuredAddress *_spokenStructuredAddress;
 }
 
-@property(assign,readonly) bool hasLocale;
-@property(assign,readonly) bool hasSpokenStructuredAddress;
-@property(assign,retain) NSString * locale;
-@property(assign,retain) GEOStructuredAddress * spokenStructuredAddress;
+@property (nonatomic, readonly) bool hasLocale;
+@property (nonatomic, readonly) bool hasSpokenStructuredAddress;
+@property (nonatomic, retain) NSString *locale;
+@property (nonatomic, retain) GEOStructuredAddress *spokenStructuredAddress;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

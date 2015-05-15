@@ -7,8 +7,8 @@
     NSString *_searchTerm;
 }
 
-@property(assign,readonly) unsigned long long resultType;
-@property(assign,readonly) NSString * searchTerm;
+@property (nonatomic, readonly) unsigned long long resultType;
+@property (nonatomic, readonly) NSString *searchTerm;
 
 - (void)dealloc;
 - (unsigned long long)resultType;

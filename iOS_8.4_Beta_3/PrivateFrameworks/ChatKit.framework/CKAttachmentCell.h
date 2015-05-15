@@ -9,10 +9,10 @@
     CKAttachmentItem *_representedObject;
 }
 
-@property(assign,retain) UIImageView * checkmarkView;
-@property(assign,readwrite) NSObject<CKAttachmentCellDelegate> * delegate;
-@property(getter=isEditing,assign,readwrite) bool editing;
-@property(assign,retain) CKAttachmentItem * representedObject;
+@property (nonatomic, retain) UIImageView *checkmarkView;
+@property (nonatomic) NSObject<CKAttachmentCellDelegate> *delegate;
+@property (getter=isEditing, nonatomic) bool editing;
+@property (nonatomic, retain) CKAttachmentItem *representedObject;
 
 - (id)checkmarkView;
 - (void)copy:(id)arg1;

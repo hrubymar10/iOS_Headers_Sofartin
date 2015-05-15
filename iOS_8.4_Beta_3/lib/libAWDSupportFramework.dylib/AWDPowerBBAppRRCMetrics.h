@@ -12,11 +12,11 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,retain) NSMutableArray * appConnStats;
-@property(assign,readwrite) bool hasNumRRCConnections;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int numRRCConnections;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic, retain) NSMutableArray *appConnStats;
+@property (nonatomic) bool hasNumRRCConnections;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int numRRCConnections;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)addAppConnStats:(id)arg1;
 - (id)appConnStats;

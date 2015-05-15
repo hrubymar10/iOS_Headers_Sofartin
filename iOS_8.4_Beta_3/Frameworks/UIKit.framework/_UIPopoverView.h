@@ -15,16 +15,16 @@
     UIImageView *_toolbarShine;
 }
 
-@property(setter=_setDimmingViewTopEdgeInset:,assign,readwrite) double _dimmingViewTopEdgeInset;
-@property(assign,readwrite) unsigned long long arrowDirection;
-@property(assign,readwrite) double arrowOffset;
-@property(assign,readwrite) long long backgroundStyle;
-@property(assign,copy) UIColor * popoverBackgroundColor;
-@property(assign,readwrite) UIPopoverController * popoverController;
-@property(assign,retain) UIActionSheet * presentedActionSheet;
-@property(assign,readwrite) bool showsBackgroundComponentHighlights;
-@property(assign,readwrite) bool showsBackgroundViewHighlight;
-@property(assign,readwrite) bool showsContentViewHighlight;
+@property (setter=_setDimmingViewTopEdgeInset:, nonatomic) double _dimmingViewTopEdgeInset;
+@property (nonatomic) unsigned long long arrowDirection;
+@property (nonatomic) double arrowOffset;
+@property (nonatomic) long long backgroundStyle;
+@property (nonatomic, copy) UIColor *popoverBackgroundColor;
+@property (nonatomic) UIPopoverController *popoverController;
+@property (nonatomic, retain) UIActionSheet *presentedActionSheet;
+@property (nonatomic) bool showsBackgroundComponentHighlights;
+@property (nonatomic) bool showsBackgroundViewHighlight;
+@property (nonatomic) bool showsContentViewHighlight;
 
 + (id)popoverViewContainingView:(id)arg1;
 

@@ -19,18 +19,18 @@
     NSString *_typeIdentifier;
 }
 
-@property(assign,readwrite) long long downsampleStatus;
-@property(assign,readonly) NSString * identifier;
-@property(assign,retain) NSItemProvider * itemProvider;
-@property(assign,readonly) long long itemProviderPreviewType;
-@property(assign,readwrite) bool needsAnotherPreviewGeneration;
-@property(assign,copy) id payload;
-@property(assign,copy) NSURL * payloadSourceFileURL;
-@property(assign,retain) UIImage * previewImage;
-@property(assign,readwrite) long long previewType;
-@property(assign,readwrite) bool startedPayloadLoad;
-@property(assign,readwrite) long long type;
-@property(assign,copy) NSString * typeIdentifier;
+@property (nonatomic) long long downsampleStatus;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, retain) NSItemProvider *itemProvider;
+@property (nonatomic, readonly) long long itemProviderPreviewType;
+@property (nonatomic) bool needsAnotherPreviewGeneration;
+@property (nonatomic, copy) id payload;
+@property (nonatomic, copy) NSURL *payloadSourceFileURL;
+@property (nonatomic, retain) UIImage *previewImage;
+@property long long previewType;
+@property (nonatomic) bool startedPayloadLoad;
+@property (nonatomic) long long type;
+@property (nonatomic, copy) NSString *typeIdentifier;
 
 + (bool)attachmentTypeRepresentsAnImage:(long long)arg1;
 + (bool)supportsSecureCoding;

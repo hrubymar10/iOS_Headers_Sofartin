@@ -16,17 +16,17 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,retain) MSPDroppedPin * droppedPin;
-@property(assign,readonly) bool hasDroppedPin;
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,readwrite) bool hasPosition;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasType;
-@property(assign,retain) NSString * identifier;
-@property(assign,readwrite) double position;
-@property(assign,readwrite) double timestamp;
-@property(assign,readwrite) int type;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, retain) MSPDroppedPin *droppedPin;
+@property (nonatomic, readonly) bool hasDroppedPin;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic) bool hasPosition;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasType;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic) double position;
+@property (nonatomic) double timestamp;
+@property (nonatomic) int type;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

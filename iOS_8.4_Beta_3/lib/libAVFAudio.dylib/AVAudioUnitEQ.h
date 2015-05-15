@@ -4,8 +4,8 @@
 
 @interface AVAudioUnitEQ : AVAudioUnitEffect
 
-@property(assign,readonly) NSArray * bands;
-@property(assign,readwrite) float globalGain;
+@property (nonatomic, readonly) NSArray *bands;
+@property (nonatomic) float globalGain;
 
 - (id)bands;
 - (float)globalGain;

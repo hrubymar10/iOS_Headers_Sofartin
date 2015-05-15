@@ -6,7 +6,7 @@
     SKScene *_scene;
 }
 
-@property(assign,retain) SKScene * scene;
+@property (nonatomic, retain) SKScene *scene;
 
 - (void)dealloc;
 - (bool)isOpaque;

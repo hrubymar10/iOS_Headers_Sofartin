@@ -7,8 +7,8 @@
     NSMutableArray *_textEntries;
 }
 
-@property(assign,retain) NSMutableArray * entries;
-@property(assign,retain) NSMutableArray * textEntries;
+@property (nonatomic, retain) NSMutableArray *entries;
+@property (nonatomic, retain) NSMutableArray *textEntries;
 
 - (void)addEntries:(id)arg1;
 - (void)addTextEntries:(id)arg1;

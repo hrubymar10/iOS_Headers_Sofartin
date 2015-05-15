@@ -8,13 +8,13 @@
     NSMutableDictionary *__extensionServiceConnections;
 }
 
-@property(setter=_setExtensionContexts:,assign,retain) NSMutableDictionary * _extensionContexts;
-@property(setter=_setExtensionPrincipalObjects:,assign,retain) NSMutableDictionary * _extensionPrincipalObjects;
-@property(setter=_setExtensionServiceConnections:,assign,retain) NSMutableDictionary * _extensionServiceConnections;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (setter=_setExtensionContexts:, nonatomic, retain) NSMutableDictionary *_extensionContexts;
+@property (setter=_setExtensionPrincipalObjects:, nonatomic, retain) NSMutableDictionary *_extensionPrincipalObjects;
+@property (setter=_setExtensionServiceConnections:, nonatomic, retain) NSMutableDictionary *_extensionServiceConnections;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_completionConcurrentQueue;
 + (id)_expirationConcurrentQueue;

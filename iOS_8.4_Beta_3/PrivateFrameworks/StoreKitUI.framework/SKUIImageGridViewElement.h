@@ -9,9 +9,9 @@
     } _size;
 }
 
-@property(assign,readonly) long long columnCount;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) long long columnCount;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
 
 - (long long)columnCount;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })contentInset;

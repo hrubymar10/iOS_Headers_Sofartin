@@ -17,8 +17,8 @@
     long long _priority;
 }
 
-@property(assign,readwrite) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } mergeRange;
-@property(assign,readwrite) long long priority;
+@property (nonatomic) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } mergeRange;
+@property (nonatomic) long long priority;
 
 - (id).cxx_construct;
 - (id)description;

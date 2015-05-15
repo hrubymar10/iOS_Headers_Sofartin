@@ -10,11 +10,11 @@
     ABTransportButton *_transportIcon2;
 }
 
-@property(assign,readwrite) <ABPropertyCellDelegate> * delegate;
-@property(assign,readonly) UILabel * faceTimeLabel;
-@property(assign,readwrite) bool isFaceTimeAudioAvailable;
-@property(assign,readonly) ABTransportButton * transportIcon1;
-@property(assign,readonly) ABTransportButton * transportIcon2;
+@property (nonatomic) <ABPropertyCellDelegate> *delegate;
+@property (nonatomic, readonly) UILabel *faceTimeLabel;
+@property (nonatomic) bool isFaceTimeAudioAvailable;
+@property (nonatomic, readonly) ABTransportButton *transportIcon1;
+@property (nonatomic, readonly) ABTransportButton *transportIcon2;
 
 - (id)constantConstraints;
 - (void)dealloc;

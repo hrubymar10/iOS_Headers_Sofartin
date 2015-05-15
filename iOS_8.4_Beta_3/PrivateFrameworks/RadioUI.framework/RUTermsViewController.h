@@ -8,8 +8,8 @@
     NSString *_terms;
 }
 
-@property(assign,readonly) unsigned long long currentTermsVersion;
-@property(assign,readwrite) <RUTermsViewControllerDelegate> * delegate;
+@property (nonatomic, readonly) unsigned long long currentTermsVersion;
+@property (nonatomic) <RUTermsViewControllerDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_acceptAction:(id)arg1;

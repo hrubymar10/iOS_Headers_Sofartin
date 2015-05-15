@@ -8,9 +8,9 @@
     NSString *_userAgent;
 }
 
-@property(assign,retain) NSString * localeIdentifier;
-@property(assign,copy) id reply;
-@property(assign,retain) NSString * userAgent;
+@property (retain) NSString *localeIdentifier;
+@property (copy) id reply;
+@property (retain) NSString *userAgent;
 
 - (void).cxx_destruct;
 - (id)initWithLocaleIdentifier:(id)arg1 userAgent:(id)arg2 reply:(id)arg3;

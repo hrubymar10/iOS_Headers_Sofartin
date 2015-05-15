@@ -20,21 +20,21 @@
     NSMutableArray *trendHandlerQueue;
 }
 
-@property(assign,readonly) NSMutableArray * appForecastHandlerQueue;
-@property(assign,readonly) NSMutableArray * bgDataReadHandlerQueue;
-@property(assign,readonly) NSMutableArray * bgNDISCDataReadHandlerQueue;
-@property(assign,readonly) NSMutableArray * dataBudgetHandlerQueue;
-@property(assign,readonly) NSMutableArray * dataForecastHandlerQueue;
-@property(assign,readonly) NSMutableArray * dataReadHandlerQueue;
-@property(assign,readonly) NSMutableArray * databaseAgeHandlerQueue;
-@property(assign,readonly) NSMutableArray * noprewarmListHandlerQueue;
-@property(assign,readonly) NSMutableArray * ok2LaunchHandlerQueue;
-@property(assign,readonly) NSMutableArray * powerFetchBudgetHandlerQueue;
-@property(assign,readonly) NSMutableArray * powerForecastHandlerQueue;
-@property(assign,readonly) NSMutableArray * powerPushBudgetHandlerQueue;
-@property(assign,readonly) NSMutableArray * queryHandlerQueue;
-@property(assign,readonly) NSMutableArray * scoreHandlerQueue;
-@property(assign,readonly) NSMutableArray * trendHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *appForecastHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *bgDataReadHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *bgNDISCDataReadHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *dataBudgetHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *dataForecastHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *dataReadHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *databaseAgeHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *noprewarmListHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *ok2LaunchHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *powerFetchBudgetHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *powerForecastHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *powerPushBudgetHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *queryHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *scoreHandlerQueue;
+@property (nonatomic, readonly) NSMutableArray *trendHandlerQueue;
 
 - (void).cxx_destruct;
 - (id)appForecastHandlerQueue;

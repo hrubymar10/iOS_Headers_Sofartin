@@ -30,12 +30,12 @@
     long long _type;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } anchorPoint;
-@property(assign,readonly) long long attachedBehaviorType;
-@property(assign,readwrite) double damping;
-@property(assign,readwrite) double frequency;
-@property(assign,copy) NSArray * items;
-@property(assign,readwrite) double length;
+@property (nonatomic) struct CGPoint { double x1; double x2; } anchorPoint;
+@property (nonatomic, readonly) long long attachedBehaviorType;
+@property (nonatomic) double damping;
+@property (nonatomic) double frequency;
+@property (nonatomic, readonly, copy) NSArray *items;
+@property (nonatomic) double length;
 
 - (void)_associate;
 - (void)_changedParameter;

@@ -252,15 +252,15 @@
     } _waterRenderStateWithoutBlending;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool disableRealisticLand;
-@property(assign,readwrite) bool disableRealisticRoads;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <GEORoutePreloadSession> * routePreloadSession;
-@property(assign,readwrite) float sceneAlpha;
-@property(assign,retain) VKSkyModel * skyModel;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool disableRealisticLand;
+@property (nonatomic) bool disableRealisticRoads;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <GEORoutePreloadSession> *routePreloadSession;
+@property (nonatomic) float sceneAlpha;
+@property (nonatomic, retain) VKSkyModel *skyModel;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

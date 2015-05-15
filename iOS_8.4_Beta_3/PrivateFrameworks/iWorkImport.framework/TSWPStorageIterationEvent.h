@@ -13,11 +13,11 @@
     int _type;
 }
 
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSObject * object;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,readwrite) TSWPStorage * storage;
-@property(assign,readonly) int type;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) NSObject *object;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic) TSWPStorage *storage;
+@property (nonatomic, readonly) int type;
 
 + (id)characterEventWithRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1;
 + (id)eventWithType:(int)arg1 providerIdentifier:(id)arg2 range:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg3 object:(id)arg4;

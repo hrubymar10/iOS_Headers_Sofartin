@@ -8,9 +8,9 @@
     NSString *_property;
 }
 
-@property(assign,readwrite) CNContact * contact;
-@property(assign,readwrite) int identifier;
-@property(assign,readwrite) NSString * property;
+@property CNContact *contact;
+@property int identifier;
+@property NSString *property;
 
 + (id)proxyForContact:(id)arg1 propertyKey:(id)arg2 propertyIdentifier:(int)arg3;
 

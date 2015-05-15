@@ -7,8 +7,8 @@
     UILabel *_addLabel;
 }
 
-@property(assign,retain) UIImageView * addIcon;
-@property(assign,retain) UILabel * addLabel;
+@property (nonatomic, retain) UIImageView *addIcon;
+@property (nonatomic, retain) UILabel *addLabel;
 
 + (double)preferredHeight;
 

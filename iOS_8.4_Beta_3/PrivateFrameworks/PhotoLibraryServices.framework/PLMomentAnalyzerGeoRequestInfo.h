@@ -14,16 +14,16 @@
     <GEOMapServiceTicket> *_reverseGeocodeRequest;
 }
 
-@property(assign,copy) NSArray * assetIds;
-@property(assign,copy) NSArray * extraAssetIds;
-@property(getter=hasExtraData,assign,readonly) bool extraData;
-@property(assign,copy) NSArray * extraLocations;
-@property(assign,readwrite) unsigned long long failureCount;
-@property(assign,retain) NSObject<NSCopying> * momentId;
-@property(assign,copy) NSString * momentUuid;
-@property(assign,readwrite) unsigned long long requestType;
-@property(assign,retain) PLRevGeoLocationInfo * revGeoLocationInfo;
-@property(assign,retain) <GEOMapServiceTicket> * reverseGeocodeRequest;
+@property (nonatomic, copy) NSArray *assetIds;
+@property (nonatomic, copy) NSArray *extraAssetIds;
+@property (getter=hasExtraData, nonatomic, readonly) bool extraData;
+@property (nonatomic, copy) NSArray *extraLocations;
+@property (nonatomic) unsigned long long failureCount;
+@property (nonatomic, retain) NSObject<NSCopying> *momentId;
+@property (nonatomic, copy) NSString *momentUuid;
+@property (nonatomic) unsigned long long requestType;
+@property (nonatomic, retain) PLRevGeoLocationInfo *revGeoLocationInfo;
+@property (nonatomic, retain) <GEOMapServiceTicket> *reverseGeocodeRequest;
 
 - (id)assetIds;
 - (void)dealloc;

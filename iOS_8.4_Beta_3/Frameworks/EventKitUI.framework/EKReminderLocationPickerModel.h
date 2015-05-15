@@ -21,15 +21,15 @@
     long long _selectedMeCardItem;
 }
 
-@property(assign,readonly) void* addressBook;
-@property(assign,readonly) EKReminderLocationItem * currentLocationItem;
-@property(assign,retain) EKReminderLocationItem * customLocationItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) EKReminderLocationItem * itemBeingGeocoded;
-@property(assign,readonly) bool meCardIsSet;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) void*addressBook;
+@property (nonatomic, readonly) EKReminderLocationItem *currentLocationItem;
+@property (nonatomic, retain) EKReminderLocationItem *customLocationItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) EKReminderLocationItem *itemBeingGeocoded;
+@property (nonatomic, readonly) bool meCardIsSet;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_beginOperation;

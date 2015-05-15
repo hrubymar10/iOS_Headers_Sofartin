@@ -8,20 +8,20 @@
     NSMutableSet *_persistenceWarnings;
 }
 
-@property(assign,readonly) bool areNewExternalReferencesToDataAllowed;
-@property(assign,readonly) NSUUID * baseUUIDForObjectUUID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) <NSFilePresenter> * filePresenter;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool ignoreDocumentSupport;
-@property(assign,readonly) bool isDocumentSupportTemporary;
-@property(assign,readonly) bool isInCollaborationMode;
-@property(assign,readonly) bool isInReadOnlyMode;
-@property(assign,readonly) NSSet * persistenceWarnings;
-@property(assign,readonly) bool preserveDocumentRevisionIdentifierForSequenceZero;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) bool areNewExternalReferencesToDataAllowed;
+@property (nonatomic, readonly) NSUUID *baseUUIDForObjectUUID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) <NSFilePresenter> *filePresenter;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool ignoreDocumentSupport;
+@property (nonatomic, readonly) bool isDocumentSupportTemporary;
+@property (nonatomic, readonly) bool isInCollaborationMode;
+@property (nonatomic, readonly) bool isInReadOnlyMode;
+@property (nonatomic, readonly) NSSet *persistenceWarnings;
+@property (nonatomic, readonly) bool preserveDocumentRevisionIdentifierForSequenceZero;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)addPersistenceWarnings:(id)arg1;

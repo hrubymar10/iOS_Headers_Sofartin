@@ -19,14 +19,14 @@
     } _geolocationProvider;
 }
 
-@property(assign,readonly) struct Object { int (**x1)(); id x2; }* _apiObject;
-@property(assign,readonly) _WKProcessPoolConfiguration * _configuration;
-@property(setter=_setDownloadDelegate:,assign,readwrite) <_WKDownloadDelegate> * _downloadDelegate;
-@property(assign,readonly) WKGeolocationProviderIOS * _geolocationProvider;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly) struct Object { int (**x1)(); id x2; }*_apiObject;
+@property (nonatomic, readonly) _WKProcessPoolConfiguration *_configuration;
+@property (setter=_setDownloadDelegate:, nonatomic) <_WKDownloadDelegate> *_downloadDelegate;
+@property (readonly) WKGeolocationProviderIOS *_geolocationProvider;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_websiteDataURLForContainerWithURL:(id)arg1;
 + (id)_websiteDataURLForContainerWithURL:(id)arg1 bundleIdentifierIfNotInContainer:(id)arg2;

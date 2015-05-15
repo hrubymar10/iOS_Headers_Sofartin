@@ -4,7 +4,7 @@
 
 @interface AACompleteEmailVettingResponse : AAResponse
 
-@property(assign,readonly) int vettingStatus;
+@property (nonatomic, readonly) int vettingStatus;
 
 - (int)vettingStatus;
 

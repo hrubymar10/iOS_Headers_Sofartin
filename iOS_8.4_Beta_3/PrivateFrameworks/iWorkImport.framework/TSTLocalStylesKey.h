@@ -7,8 +7,8 @@
     TSWPParagraphStyle *mTextStyle;
 }
 
-@property(assign,retain) TSTCellStyle * cellStyle;
-@property(assign,retain) TSWPParagraphStyle * textStyle;
+@property (retain) TSTCellStyle *cellStyle;
+@property (retain) TSWPParagraphStyle *textStyle;
 
 - (id)cellStyle;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

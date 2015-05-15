@@ -7,7 +7,7 @@
     short mMode;
 }
 
-@property(assign,readwrite) short mode;
+@property (nonatomic) short mode;
 
 + (id)argumentSpecForFunctionIndex:(int)arg1 argumentIndex:(int)arg2;
 

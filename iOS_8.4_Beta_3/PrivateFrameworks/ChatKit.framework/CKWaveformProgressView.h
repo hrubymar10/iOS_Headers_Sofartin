@@ -12,13 +12,13 @@
     UIImage *_waveform;
 }
 
-@property(assign,readwrite) BOOL color;
-@property(assign,readwrite) double currentTime;
-@property(assign,retain) IMManualUpdater * displayUpdater;
-@property(assign,readwrite) double duration;
-@property(getter=isPlayed,assign,readwrite) bool played;
-@property(getter=isPlaying,assign,readwrite) bool playing;
-@property(assign,retain) UIImage * waveform;
+@property (nonatomic) BOOL color;
+@property (nonatomic) double currentTime;
+@property (nonatomic, retain) IMManualUpdater *displayUpdater;
+@property (nonatomic) double duration;
+@property (getter=isPlayed, nonatomic) bool played;
+@property (getter=isPlaying, nonatomic) bool playing;
+@property (nonatomic, retain) UIImage *waveform;
 
 - (BOOL)color;
 - (double)currentTime;

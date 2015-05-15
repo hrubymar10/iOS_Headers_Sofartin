@@ -6,7 +6,7 @@
     NSString *_phoneNumber;
 }
 
-@property(assign,readonly) NSString * phoneNumber;
+@property (nonatomic, readonly) NSString *phoneNumber;
 
 + (id)phoneNumber:(id)arg1 label:(id)arg2;
 + (bool)supportsSecureCoding;

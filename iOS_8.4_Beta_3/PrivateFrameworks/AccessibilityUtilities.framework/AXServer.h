@@ -9,10 +9,10 @@
     bool _shouldRegisterClientCallbackSourceOnMainRunloop;
 }
 
-@property(assign,retain) AXIPCClient * client;
-@property(assign,retain) AXIPCServer * server;
-@property(assign,copy) NSString * serverIdentifier;
-@property(assign,readwrite) bool shouldRegisterClientCallbackSourceOnMainRunloop;
+@property (nonatomic, retain) AXIPCClient *client;
+@property (nonatomic, retain) AXIPCServer *server;
+@property (nonatomic, copy) NSString *serverIdentifier;
+@property (nonatomic) bool shouldRegisterClientCallbackSourceOnMainRunloop;
 
 - (bool)_connectIfNecessary;
 - (void)_connectServerIfNecessary;

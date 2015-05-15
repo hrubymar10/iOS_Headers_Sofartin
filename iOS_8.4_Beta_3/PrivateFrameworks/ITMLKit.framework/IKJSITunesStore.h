@@ -10,14 +10,14 @@
     ISLoadURLBagOperation *_pendingBagOperation;
 }
 
-@property(assign,readonly) NSString * DSID;
-@property(assign,readonly) NSDictionary * accountInfo;
-@property(assign,retain) id cookie;
-@property(assign,retain) NSString * cookieURL;
-@property(assign,readonly) NSString * networkConnectionType;
-@property(assign,readwrite) ISLoadURLBagOperation * pendingBagOperation;
-@property(assign,retain) NSString * storefront;
-@property(assign,readonly) NSString * userAgent;
+@property (nonatomic, readonly) NSString *DSID;
+@property (nonatomic, readonly) NSDictionary *accountInfo;
+@property (nonatomic, retain) id cookie;
+@property (nonatomic, retain) NSString *cookieURL;
+@property (nonatomic, readonly) NSString *networkConnectionType;
+@property (nonatomic) ISLoadURLBagOperation *pendingBagOperation;
+@property (nonatomic, retain) NSString *storefront;
+@property (nonatomic, readonly) NSString *userAgent;
 
 + (id)_URLBagContext;
 + (void)setHeadersForURL:(id)arg1 inRequestProperties:(id)arg2;

@@ -61,15 +61,15 @@
     double _sourceAspectRatio;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } aspectRatio;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } cropInsets;
-@property(getter=isCropMode,assign,readwrite) bool cropMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PLImageAdjustmentViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIImage * editedImage;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) struct CGSize { double x1; double x2; } aspectRatio;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } cropInsets;
+@property (getter=isCropMode, nonatomic) bool cropMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PLImageAdjustmentViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIImage *editedImage;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_beginCropGesture:(id)arg1;
 - (void)_cropTimer:(id)arg1;

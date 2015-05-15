@@ -6,7 +6,7 @@
     NSTextAttachment *_attachment;
 }
 
-@property(assign,retain) NSTextAttachment * attachment;
+@property (nonatomic, retain) NSTextAttachment *attachment;
 
 + (id)interactableLinkWithAttachment:(id)arg1 range:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg2;
 

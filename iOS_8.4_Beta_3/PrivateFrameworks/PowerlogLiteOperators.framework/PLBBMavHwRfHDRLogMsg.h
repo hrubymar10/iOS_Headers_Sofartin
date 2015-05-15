@@ -16,17 +16,17 @@
     NSNumber *_tDTXOnFrame;
 }
 
-@property(assign,retain) NSMutableDictionary * commonInfo;
-@property(assign,retain) NSString * error;
-@property(assign,readwrite) unsigned char inited;
-@property(assign,retain) NSMutableDictionary * kvPairs;
-@property(assign,retain) NSNumber * lDTXOffFrame;
-@property(assign,retain) NSNumber * lDTXOnFrame;
-@property(assign,retain) NSNumber * logDuration;
-@property(assign,retain) NSNumber * sDTXOffFrame;
-@property(assign,retain) NSNumber * sDTXOnFrame;
-@property(assign,retain) NSNumber * tDTXOffFrame;
-@property(assign,retain) NSNumber * tDTXOnFrame;
+@property (nonatomic, retain) NSMutableDictionary *commonInfo;
+@property (retain) NSString *error;
+@property (nonatomic) unsigned char inited;
+@property (nonatomic, retain) NSMutableDictionary *kvPairs;
+@property (retain) NSNumber *lDTXOffFrame;
+@property (retain) NSNumber *lDTXOnFrame;
+@property (retain) NSNumber *logDuration;
+@property (retain) NSNumber *sDTXOffFrame;
+@property (retain) NSNumber *sDTXOnFrame;
+@property (retain) NSNumber *tDTXOffFrame;
+@property (retain) NSNumber *tDTXOnFrame;
 
 + (id)entryEventBackwardDefinitionBBMavHwRfHDR;
 

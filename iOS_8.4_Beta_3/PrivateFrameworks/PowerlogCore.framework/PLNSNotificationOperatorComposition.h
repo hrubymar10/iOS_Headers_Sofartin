@@ -10,12 +10,12 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,readonly) NSString * notificationName;
-@property(assign,retain) NSArray * notificationNames;
-@property(assign,retain) id observer;
-@property(assign,readwrite) PLOperator * operator;
-@property(assign,copy) id operatorBlock;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (readonly) NSString *notificationName;
+@property (retain) NSArray *notificationNames;
+@property (retain) id observer;
+@property PLOperator *operator;
+@property (nonatomic, copy) id operatorBlock;
+@property (retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)dealloc;

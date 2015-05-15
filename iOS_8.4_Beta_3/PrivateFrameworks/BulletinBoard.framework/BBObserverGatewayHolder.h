@@ -13,10 +13,10 @@
     NSMutableArray *_timeouts;
 }
 
-@property(assign,readwrite) unsigned long long feed;
-@property(assign,retain) BBObserverClientProxy * gateway;
-@property(assign,readwrite) unsigned long long gatewayPriority;
-@property(assign,copy) NSString * name;
+@property (nonatomic) unsigned long long feed;
+@property (nonatomic, retain) BBObserverClientProxy *gateway;
+@property (nonatomic) unsigned long long gatewayPriority;
+@property (nonatomic, copy) NSString *name;
 
 - (id)_addTimeout:(double)arg1 forBulletinID:(id)arg2 inSectionID:(id)arg3 handler:(id)arg4;
 - (void)_handleTimeout;

@@ -24,16 +24,16 @@
     NSString *importSessionIdentifier;
 }
 
-@property(assign,retain) ICCameraDevice * camera;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PLCameraImporterDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * importSessionIdentifier;
-@property(assign,readwrite) bool isAppleDevice;
-@property(assign,retain) NSMutableArray * items;
-@property(assign,retain) NSMutableDictionary * itemsMapping;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) ICCameraDevice *camera;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PLCameraImporterDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *importSessionIdentifier;
+@property (nonatomic) bool isAppleDevice;
+@property (nonatomic, retain) NSMutableArray *items;
+@property (nonatomic, retain) NSMutableDictionary *itemsMapping;
+@property (readonly) Class superclass;
 
 - (void)_addImportItemFromCameraFile:(id)arg1;
 - (void)_clearImportItemsForDownload:(id)arg1;

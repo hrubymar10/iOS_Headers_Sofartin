@@ -6,7 +6,7 @@
     NSArray *_results;
 }
 
-@property(assign,copy) NSArray * results;
+@property (nonatomic, copy) NSArray *results;
 
 + (bool)supportsSecureCoding;
 

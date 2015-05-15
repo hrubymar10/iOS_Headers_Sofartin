@@ -9,7 +9,7 @@
     bool _shouldLaunchMobileMail;
 }
 
-@property(assign,readwrite) bool shouldLaunchMobileMail;
+@property (nonatomic) bool shouldLaunchMobileMail;
 
 - (id)connection;
 - (void)dealloc;

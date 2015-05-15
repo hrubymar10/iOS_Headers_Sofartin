@@ -11,16 +11,16 @@
     bool _waitsForPurchaseOperations;
 }
 
-@property(assign,copy) NSNumber * accountIdentifier;
-@property(assign,copy) NSData * actionData;
-@property(assign,copy) NSString * actionName;
-@property(assign,readwrite) bool allowsBootstrapCellularData;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long protocolVersion;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool waitsForPurchaseOperations;
+@property (copy) NSNumber *accountIdentifier;
+@property (copy) NSData *actionData;
+@property (copy) NSString *actionName;
+@property bool allowsBootstrapCellularData;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property long long protocolVersion;
+@property (readonly) Class superclass;
+@property bool waitsForPurchaseOperations;
 
 - (id)accountIdentifier;
 - (id)actionData;

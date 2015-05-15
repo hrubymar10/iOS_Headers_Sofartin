@@ -11,8 +11,8 @@
     UIView<UITextInput> *m_container;
 }
 
-@property(assign,readonly) UIView<UITextInput> * container;
-@property(assign,copy) NSArray * rects;
+@property (nonatomic, readonly) UIView<UITextInput> *container;
+@property (nonatomic, copy) NSArray *rects;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })boundingRect;
 - (id)container;

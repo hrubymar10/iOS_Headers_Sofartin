@@ -7,9 +7,9 @@
     unsigned long long _occurrenceCount;
 }
 
-@property(assign,readonly) NSDate * endDate;
-@property(assign,readonly) unsigned long long occurrenceCount;
-@property(assign,readonly) bool usesEndDate;
+@property (nonatomic, readonly) NSDate *endDate;
+@property (nonatomic, readonly) unsigned long long occurrenceCount;
+@property (nonatomic, readonly) bool usesEndDate;
 
 + (id)recurrenceEndWithEndDate:(id)arg1;
 + (id)recurrenceEndWithOccurrenceCount:(unsigned long long)arg1;

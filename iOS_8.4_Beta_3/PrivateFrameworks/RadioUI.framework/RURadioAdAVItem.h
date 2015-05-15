@@ -14,11 +14,11 @@
     NSString *_stationStringID;
 }
 
-@property(assign,retain) RadioStation * station;
-@property(assign,readonly) NSString * stationHash;
-@property(assign,readonly) long long stationID;
-@property(assign,readonly) NSString * stationName;
-@property(assign,readonly) NSString * stationStringID;
+@property (nonatomic, retain) RadioStation *station;
+@property (nonatomic, readonly) NSString *stationHash;
+@property (nonatomic, readonly) long long stationID;
+@property (nonatomic, readonly) NSString *stationName;
+@property (nonatomic, readonly) NSString *stationStringID;
 
 - (void).cxx_destruct;
 - (void)_applyLoudnessInfo;

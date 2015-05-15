@@ -7,8 +7,8 @@
     MPRemotePlaybackQueue *_playbackQueue;
 }
 
-@property(assign,readonly) long long insertionPosition;
-@property(assign,readonly) MPRemotePlaybackQueue * playbackQueue;
+@property (nonatomic, readonly) long long insertionPosition;
+@property (nonatomic, readonly) MPRemotePlaybackQueue *playbackQueue;
 
 - (void).cxx_destruct;
 - (id)initWithCommand:(id)arg1 mediaRemoteType:(unsigned int)arg2 options:(id)arg3;

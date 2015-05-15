@@ -14,13 +14,13 @@
     FBProcessManager *_processManager;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool exited;
-@property(assign,readonly) bool failedLaunch;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) FBApplicationProcess * process;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool exited;
+@property (nonatomic, readonly) bool failedLaunch;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) FBApplicationProcess *process;
+@property (readonly) Class superclass;
 
 - (void)_begin;
 - (bool)_canBeInterrupted;

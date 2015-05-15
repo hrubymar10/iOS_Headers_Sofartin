@@ -8,9 +8,9 @@
     AXTimer *_timeoutTimer;
 }
 
-@property(assign,readwrite) bool didTimeout;
-@property(assign,copy) id postConnectionBlock;
-@property(assign,retain) AXTimer * timeoutTimer;
+@property (nonatomic) bool didTimeout;
+@property (nonatomic, copy) id postConnectionBlock;
+@property (nonatomic, retain) AXTimer *timeoutTimer;
 
 - (void)_performTask;
 - (void)dealloc;

@@ -8,7 +8,7 @@
     int mVerticalAlignment;
 }
 
-@property(assign,readwrite) double maxWidthForChildren;
+@property (nonatomic) double maxWidthForChildren;
 
 - (void)dealloc;
 - (bool)forceWesternLineBreaking;

@@ -6,7 +6,7 @@
     NSString *_key;
 }
 
-@property(assign,copy) NSString * key;
+@property (nonatomic, copy) NSString *key;
 
 - (id)CAMLTypeForKey:(id)arg1;
 - (void)apply:(id)arg1;

@@ -8,9 +8,9 @@
     bool _dissapearing;
 }
 
-@property(assign,readwrite) bool appeared;
-@property(assign,readwrite) bool appearing;
-@property(assign,readwrite) bool dissapearing;
+@property (nonatomic) bool appeared;
+@property (nonatomic) bool appearing;
+@property (nonatomic) bool dissapearing;
 
 - (bool)appeared;
 - (bool)appearing;

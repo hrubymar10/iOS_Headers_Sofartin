@@ -11,12 +11,12 @@
     int _style;
 }
 
-@property(assign,readwrite) BOOL color;
-@property(assign,retain) IMManualUpdater * displayUpdater;
-@property(getter=isPlayed,assign,readwrite) bool played;
-@property(getter=isPlaying,assign,readwrite) bool playing;
-@property(assign,readwrite) float progress;
-@property(assign,readwrite) int style;
+@property (nonatomic) BOOL color;
+@property (nonatomic, retain) IMManualUpdater *displayUpdater;
+@property (getter=isPlayed, nonatomic) bool played;
+@property (getter=isPlaying, nonatomic) bool playing;
+@property (nonatomic) float progress;
+@property (nonatomic) int style;
 
 + (id)imageWithType:(unsigned char)arg1 color:(BOOL)arg2;
 + (float)progressForTime:(double)arg1 duration:(double)arg2;

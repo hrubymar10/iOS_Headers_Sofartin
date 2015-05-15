@@ -14,14 +14,14 @@
     NSArray *_weeksOfTheYear;
 }
 
-@property(assign,copy) NSArray * daysOfTheMonth;
-@property(assign,copy) NSArray * daysOfTheWeek;
-@property(assign,copy) NSArray * daysOfTheYear;
-@property(assign,readonly) bool isDirty;
-@property(assign,copy) NSArray * monthsOfTheYear;
-@property(assign,copy) NSArray * setPositions;
-@property(assign,copy) NSString * specifier;
-@property(assign,copy) NSArray * weeksOfTheYear;
+@property (nonatomic, copy) NSArray *daysOfTheMonth;
+@property (nonatomic, copy) NSArray *daysOfTheWeek;
+@property (nonatomic, copy) NSArray *daysOfTheYear;
+@property (nonatomic, readonly) bool isDirty;
+@property (nonatomic, copy) NSArray *monthsOfTheYear;
+@property (nonatomic, copy) NSArray *setPositions;
+@property (nonatomic, copy) NSString *specifier;
+@property (nonatomic, copy) NSArray *weeksOfTheYear;
 
 - (void)_appendDaysOfTheWeek:(id)arg1 toSpecifier:(id)arg2;
 - (void)_appendIndexList:(id)arg1 toSpecifier:(id)arg2 propertyKey:(unsigned short)arg3;

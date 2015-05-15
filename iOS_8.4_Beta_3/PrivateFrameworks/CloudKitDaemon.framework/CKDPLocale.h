@@ -9,13 +9,13 @@
     NSString *_regionCode;
 }
 
-@property(assign,retain) NSString * activeKeyboard;
-@property(assign,retain) NSMutableArray * enabledKeyboards;
-@property(assign,readonly) bool hasActiveKeyboard;
-@property(assign,readonly) bool hasLanguageCode;
-@property(assign,readonly) bool hasRegionCode;
-@property(assign,retain) NSString * languageCode;
-@property(assign,retain) NSString * regionCode;
+@property (nonatomic, retain) NSString *activeKeyboard;
+@property (nonatomic, retain) NSMutableArray *enabledKeyboards;
+@property (nonatomic, readonly) bool hasActiveKeyboard;
+@property (nonatomic, readonly) bool hasLanguageCode;
+@property (nonatomic, readonly) bool hasRegionCode;
+@property (nonatomic, retain) NSString *languageCode;
+@property (nonatomic, retain) NSString *regionCode;
 
 - (void).cxx_destruct;
 - (id)activeKeyboard;

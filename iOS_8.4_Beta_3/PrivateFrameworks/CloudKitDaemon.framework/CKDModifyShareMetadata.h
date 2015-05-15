@@ -11,12 +11,12 @@
     unsigned long long _state;
 }
 
-@property(assign,retain) CKDeleteShareInfo * deleteInfo;
-@property(assign,retain) NSError * error;
-@property(assign,readonly) bool isDelete;
-@property(assign,readonly) CKShare * share;
-@property(assign,readonly) CKShareID * shareID;
-@property(assign,readwrite) unsigned long long state;
+@property (nonatomic, retain) CKDeleteShareInfo *deleteInfo;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, readonly) bool isDelete;
+@property (nonatomic, readonly) CKShare *share;
+@property (nonatomic, readonly) CKShareID *shareID;
+@property (nonatomic) unsigned long long state;
 
 + (id)_stringForUploadState:(unsigned long long)arg1;
 + (id)modifyMetadataForDeleteWithShareID:(id)arg1;

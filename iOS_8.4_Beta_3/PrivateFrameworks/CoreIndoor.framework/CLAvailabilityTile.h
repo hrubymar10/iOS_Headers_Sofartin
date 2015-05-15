@@ -19,19 +19,19 @@
     NSMutableArray *_venues;
 }
 
-@property(assign,readwrite) double availabilityZScoreConfidenceInterval;
-@property(assign,readwrite) bool hasAvailabilityZScoreConfidenceInterval;
-@property(assign,readwrite) bool hasLocationOfInterestMergeRadiusKM;
-@property(assign,readonly) bool hasParameterOverrides;
-@property(assign,readwrite) bool hasPreferPredictionWithinNActivityCycles;
-@property(assign,readwrite) bool hasPrefetchMaxFloorCount;
-@property(assign,readwrite) bool hasPrefetchRadiusKM;
-@property(assign,readwrite) unsigned int locationOfInterestMergeRadiusKM;
-@property(assign,retain) LocalizerParameters * parameterOverrides;
-@property(assign,readwrite) unsigned int preferPredictionWithinNActivityCycles;
-@property(assign,readwrite) unsigned int prefetchMaxFloorCount;
-@property(assign,readwrite) unsigned int prefetchRadiusKM;
-@property(assign,retain) NSMutableArray * venues;
+@property (nonatomic) double availabilityZScoreConfidenceInterval;
+@property (nonatomic) bool hasAvailabilityZScoreConfidenceInterval;
+@property (nonatomic) bool hasLocationOfInterestMergeRadiusKM;
+@property (nonatomic, readonly) bool hasParameterOverrides;
+@property (nonatomic) bool hasPreferPredictionWithinNActivityCycles;
+@property (nonatomic) bool hasPrefetchMaxFloorCount;
+@property (nonatomic) bool hasPrefetchRadiusKM;
+@property (nonatomic) unsigned int locationOfInterestMergeRadiusKM;
+@property (nonatomic, retain) LocalizerParameters *parameterOverrides;
+@property (nonatomic) unsigned int preferPredictionWithinNActivityCycles;
+@property (nonatomic) unsigned int prefetchMaxFloorCount;
+@property (nonatomic) unsigned int prefetchRadiusKM;
+@property (nonatomic, retain) NSMutableArray *venues;
 
 - (void).cxx_destruct;
 - (void)addVenues:(id)arg1;

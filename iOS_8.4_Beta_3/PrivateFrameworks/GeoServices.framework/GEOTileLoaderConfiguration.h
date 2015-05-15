@@ -12,13 +12,13 @@
     bool _trackUsage;
 }
 
-@property(assign,copy) NSString * diskCacheLocation;
-@property(assign,retain) NSLocale * locale;
-@property(assign,retain) GEOResourceManifestConfiguration * manifestConfiguration;
-@property(assign,readwrite) unsigned long long memoryCacheCostLimit;
-@property(assign,readwrite) unsigned long long memoryCacheCountLimit;
-@property(assign,readwrite) Class serverProxyClass;
-@property(assign,readwrite) bool trackUsage;
+@property (nonatomic, copy) NSString *diskCacheLocation;
+@property (nonatomic, retain) NSLocale *locale;
+@property (nonatomic, retain) GEOResourceManifestConfiguration *manifestConfiguration;
+@property (nonatomic) unsigned long long memoryCacheCostLimit;
+@property (nonatomic) unsigned long long memoryCacheCountLimit;
+@property (nonatomic) Class serverProxyClass;
+@property (nonatomic) bool trackUsage;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

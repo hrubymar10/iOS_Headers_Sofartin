@@ -19,8 +19,8 @@
     id _pathHandler;
 }
 
-@property(assign,copy) id errorHandler;
-@property(assign,copy) id pathHandler;
+@property (copy) id errorHandler;
+@property (copy) id pathHandler;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

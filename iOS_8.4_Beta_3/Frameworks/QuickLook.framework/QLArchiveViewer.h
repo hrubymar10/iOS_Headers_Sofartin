@@ -11,11 +11,11 @@
     bool _visible;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(getter=isVisible,assign,readonly) bool visible;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (getter=isVisible, readonly) bool visible;
 
 - (void)_cancelUpdateThumbnails;
 - (struct CGSize { double x1; double x2; })_imageSize;

@@ -28,12 +28,12 @@
     BSSettings *_transientLocalSettings;
 }
 
-@property(getter=isBackgrounded,assign,readonly) bool backgrounded;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } contentOffset;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
-@property(assign,readonly) long long interfaceOrientation;
-@property(assign,readonly) double level;
-@property(assign,copy) NSArray * occlusions;
+@property (getter=isBackgrounded, nonatomic, readonly) bool backgrounded;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } contentOffset;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
+@property (nonatomic, readonly) long long interfaceOrientation;
+@property (nonatomic, readonly) double level;
+@property (nonatomic, readonly, copy) NSArray *occlusions;
 
 + (bool)_isMutable;
 + (id)settings;

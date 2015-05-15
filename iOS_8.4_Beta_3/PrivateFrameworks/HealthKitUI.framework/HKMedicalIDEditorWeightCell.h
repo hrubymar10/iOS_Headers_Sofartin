@@ -9,11 +9,11 @@
     UIPickerView *_picker;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSNumber * kilogramValue;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSNumber *kilogramValue;
+@property (readonly) Class superclass;
 
 + (double)defaultKilogramValue;
 

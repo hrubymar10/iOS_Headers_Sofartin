@@ -6,7 +6,7 @@
     CKConversation *_selectedConversation;
 }
 
-@property(assign,retain) CKConversation * selectedConversation;
+@property (nonatomic, retain) CKConversation *selectedConversation;
 
 - (void)_handleNewComposePressed:(id)arg1;
 - (void)conversationListDidChange:(id)arg1;

@@ -13,8 +13,8 @@
     int _cd_version;
 }
 
-@property(assign,readonly) NSEntityDescription * entity;
-@property(assign,readonly) NSManagedObjectID * objectID;
+@property (nonatomic, readonly) NSEntityDescription *entity;
+@property (nonatomic, readonly) NSManagedObjectID *objectID;
 
 + (void)_entityDeallocated;
 + (id)alloc;

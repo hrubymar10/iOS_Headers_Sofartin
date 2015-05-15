@@ -11,7 +11,7 @@
     } _hitRectInsets;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitRectInsets;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitRectInsets;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })hitRect;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })hitRectInsets;

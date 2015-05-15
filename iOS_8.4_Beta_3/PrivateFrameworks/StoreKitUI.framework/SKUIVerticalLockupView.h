@@ -32,14 +32,14 @@
     double _zoomingImageWidth;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double opacityOfViewsOtherThanProductImageView;
-@property(assign,readwrite) long long sizingStyle;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double zoomingImageAlpha;
-@property(assign,readwrite) double zoomingImageWidth;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double opacityOfViewsOtherThanProductImageView;
+@property (nonatomic) long long sizingStyle;
+@property (readonly) Class superclass;
+@property (nonatomic) double zoomingImageAlpha;
+@property (nonatomic) double zoomingImageWidth;
 
 + (id)_attributedStringForButton:(id)arg1 context:(id)arg2;
 + (id)_attributedStringForLabel:(id)arg1 context:(id)arg2;

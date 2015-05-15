@@ -10,10 +10,10 @@
     bool _valid;
 }
 
-@property(assign,readonly) bool animateUnhighlight;
-@property(assign,readwrite) UITableViewCell * cell;
-@property(assign,readwrite) long long originalSelectionStyle;
-@property(assign,readonly) bool valid;
+@property (nonatomic, readonly) bool animateUnhighlight;
+@property (nonatomic) UITableViewCell *cell;
+@property (nonatomic) long long originalSelectionStyle;
+@property (nonatomic, readonly) bool valid;
 
 + (id)contextWithCell:(id)arg1;
 

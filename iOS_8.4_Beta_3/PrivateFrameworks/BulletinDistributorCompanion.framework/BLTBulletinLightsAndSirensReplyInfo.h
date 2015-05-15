@@ -8,9 +8,9 @@
     id _reply;
 }
 
-@property(assign,readwrite) bool didPlayLightsAndSirens;
-@property(assign,readwrite) bool handledLightsAndSirens;
-@property(assign,copy) id reply;
+@property (nonatomic) bool didPlayLightsAndSirens;
+@property (nonatomic) bool handledLightsAndSirens;
+@property (nonatomic, copy) id reply;
 
 - (void).cxx_destruct;
 - (bool)didPlayLightsAndSirens;

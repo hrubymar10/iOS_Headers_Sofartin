@@ -13,14 +13,14 @@
     CRColor *_stalePointColor;
 }
 
-@property(assign,retain) CAShapeLayer * cameraAreaLayer;
-@property(assign,retain) CAShapeLayer * focusIndicatorLayer;
-@property(assign,retain) CAShapeLayer * focusPointLayer;
-@property(assign,retain) CAShapeLayer * frameIndicator;
-@property(assign,retain) CRColor * freshPointColor;
-@property(assign,retain) NSMutableArray * pointLayers;
-@property(assign,retain) AVCaptureVideoPreviewLayer * previewLayer;
-@property(assign,retain) CRColor * stalePointColor;
+@property (retain) CAShapeLayer *cameraAreaLayer;
+@property (retain) CAShapeLayer *focusIndicatorLayer;
+@property (retain) CAShapeLayer *focusPointLayer;
+@property (retain) CAShapeLayer *frameIndicator;
+@property (retain) CRColor *freshPointColor;
+@property (retain) NSMutableArray *pointLayers;
+@property (retain) AVCaptureVideoPreviewLayer *previewLayer;
+@property (retain) CRColor *stalePointColor;
 
 + (id)layer;
 

@@ -6,7 +6,7 @@
     <MPUExtrasCarouselCollectionViewDelegate> *_carouselCollectionViewDelegate;
 }
 
-@property(assign,readwrite) <MPUExtrasCarouselCollectionViewDelegate> * carouselCollectionViewDelegate;
+@property (nonatomic) <MPUExtrasCarouselCollectionViewDelegate> *carouselCollectionViewDelegate;
 
 - (void).cxx_destruct;
 - (id)carouselCollectionViewDelegate;

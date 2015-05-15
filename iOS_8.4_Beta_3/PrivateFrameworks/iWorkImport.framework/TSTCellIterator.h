@@ -32,9 +32,9 @@
     TSTTableModel *mTableModel;
 }
 
-@property(assign,readonly) bool dontExpandCellRefs;
-@property(assign,readonly) int rowWalkDirection;
-@property(assign,readonly) TSTTableModel * tableModel;
+@property (readonly) bool dontExpandCellRefs;
+@property (readonly) int rowWalkDirection;
+@property (nonatomic, readonly) TSTTableModel *tableModel;
 
 - (id).cxx_construct;
 - (void)dealloc;

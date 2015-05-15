@@ -7,8 +7,8 @@
     int _abPersonChangeId;
 }
 
-@property(assign,readwrite) int abGroupChangeId;
-@property(assign,readwrite) int abPersonChangeId;
+@property (nonatomic) int abGroupChangeId;
+@property (nonatomic) int abPersonChangeId;
 
 - (int)abGroupChangeId;
 - (int)abPersonChangeId;

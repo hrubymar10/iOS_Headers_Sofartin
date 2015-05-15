@@ -8,8 +8,8 @@
     UITextView *_valueTextView;
 }
 
-@property(assign,retain) PKPassField * field;
-@property(assign,readwrite) bool showLinks;
+@property (nonatomic, retain) PKPassField *field;
+@property (nonatomic) bool showLinks;
 
 + (id)_linkColor;
 + (id)_linkTextAttributes;

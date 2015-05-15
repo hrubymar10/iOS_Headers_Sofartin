@@ -7,8 +7,8 @@
     NSNumber *inputIntensity;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputIntensity;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputIntensity;
 
 + (id)customAttributes;
 

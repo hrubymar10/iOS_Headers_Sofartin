@@ -10,16 +10,16 @@
     unsigned long long mType;
 }
 
-@property(assign,readonly) TSUColor * firstColor;
-@property(assign,retain) NSArray * gradientStops;
-@property(assign,readonly) unsigned long long gradientType;
-@property(assign,readonly) bool hasAlpha;
-@property(assign,readwrite) bool isAdvancedGradient;
-@property(assign,readonly) bool isOpaque;
-@property(assign,readonly) TSUColor * lastColor;
-@property(assign,readwrite) double opacity;
-@property(assign,readonly) NSString * presetKind;
-@property(assign,readonly) struct CGShading { }* shadingRef;
+@property (nonatomic, readonly) TSUColor *firstColor;
+@property (nonatomic, readonly, retain) NSArray *gradientStops;
+@property (nonatomic, readonly) unsigned long long gradientType;
+@property (nonatomic, readonly) bool hasAlpha;
+@property (nonatomic) bool isAdvancedGradient;
+@property (nonatomic, readonly) bool isOpaque;
+@property (nonatomic, readonly) TSUColor *lastColor;
+@property (nonatomic) double opacity;
+@property (nonatomic, readonly) NSString *presetKind;
+@property (nonatomic, readonly) struct CGShading { }*shadingRef;
 
 + (void)bootstrapPresetsOfKind:(id)arg1 inTheme:(id)arg2 alternate:(int)arg3;
 + (void)disableInflections;

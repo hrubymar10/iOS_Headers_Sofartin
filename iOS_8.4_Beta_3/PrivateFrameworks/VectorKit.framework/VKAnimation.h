@@ -20,13 +20,13 @@
     id _timingFunction;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,readwrite) double duration;
-@property(assign,readonly) int priority;
-@property(assign,readonly) bool running;
-@property(assign,readwrite) bool runsForever;
-@property(assign,copy) id stepHandler;
-@property(assign,copy) id timingFunction;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic) double duration;
+@property (nonatomic, readonly) int priority;
+@property (nonatomic, readonly) bool running;
+@property (nonatomic) bool runsForever;
+@property (nonatomic, copy) id stepHandler;
+@property (nonatomic, copy) id timingFunction;
 
 + (void)setDragCoefficientGetter:(id)arg1;
 

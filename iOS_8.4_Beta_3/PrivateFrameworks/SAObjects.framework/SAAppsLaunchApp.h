@@ -4,7 +4,7 @@
 
 @interface SAAppsLaunchApp : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * launchId;
+@property (nonatomic, copy) NSString *launchId;
 
 + (id)launchApp;
 + (id)launchAppWithDictionary:(id)arg1 context:(id)arg2;

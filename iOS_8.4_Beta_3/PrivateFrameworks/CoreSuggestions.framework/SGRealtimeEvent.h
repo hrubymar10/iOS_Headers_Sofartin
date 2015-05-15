@@ -8,9 +8,9 @@
     int _state;
 }
 
-@property(assign,readonly) SGEvent * event;
-@property(assign,readonly) NSString * eventIdentifier;
-@property(assign,readonly) int state;
+@property (nonatomic, readonly) SGEvent *event;
+@property (nonatomic, readonly) NSString *eventIdentifier;
+@property (nonatomic, readonly) int state;
 
 + (id)realtimeEventForCanceledEvent:(id)arg1 eventIdentifier:(id)arg2;
 + (id)realtimeEventForDuplicateEvent:(id)arg1;

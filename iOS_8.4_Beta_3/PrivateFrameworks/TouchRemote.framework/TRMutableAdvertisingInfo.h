@@ -4,8 +4,8 @@
 
 @interface TRMutableAdvertisingInfo : TRAdvertisingInfo
 
-@property(assign,copy) NSData * pairingPublicKey;
-@property(assign,copy) NSData * wirelessProximityIdentifier;
+@property (nonatomic, copy) NSData *pairingPublicKey;
+@property (nonatomic, copy) NSData *wirelessProximityIdentifier;
 
 - (void)setPairingPublicKey:(id)arg1;
 - (void)setWirelessProximityIdentifier:(id)arg1;

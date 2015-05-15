@@ -16,11 +16,11 @@
     MKStarRatingAndLabelView *_starView;
 }
 
-@property(assign,readwrite) NSString * author;
-@property(assign,readwrite) NSDate * date;
-@property(assign,readwrite) UIImage * picture;
-@property(assign,readwrite) unsigned long long rating;
-@property(assign,readwrite) NSString * reviewText;
+@property (nonatomic) NSString *author;
+@property (nonatomic) NSDate *date;
+@property (nonatomic) UIImage *picture;
+@property (nonatomic) unsigned long long rating;
+@property (nonatomic) NSString *reviewText;
 
 + (double)intrinsicContentHeight;
 + (id)reuseIdentifier;

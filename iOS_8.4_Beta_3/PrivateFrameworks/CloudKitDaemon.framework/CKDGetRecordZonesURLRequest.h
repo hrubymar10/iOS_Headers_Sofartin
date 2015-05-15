@@ -9,10 +9,10 @@
     NSArray *_zoneIDs;
 }
 
-@property(assign,copy) id recordZoneFetchedBlock;
-@property(assign,readonly) NSArray * recordZones;
-@property(assign,retain) NSMutableDictionary * zoneIDByRequestID;
-@property(assign,retain) NSArray * zoneIDs;
+@property (nonatomic, copy) id recordZoneFetchedBlock;
+@property (nonatomic, readonly) NSArray *recordZones;
+@property (nonatomic, retain) NSMutableDictionary *zoneIDByRequestID;
+@property (nonatomic, retain) NSArray *zoneIDs;
 
 - (void).cxx_destruct;
 - (id)initWithRecordZoneIDs:(id)arg1;

@@ -32,17 +32,17 @@
     } _textRange;
 }
 
-@property(assign,retain) UIImageView * animatedView;
-@property(assign,copy) id animationCompletionHandler;
-@property(assign,retain) UIImage * capturedGlyphImage;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } glyphRange;
-@property(assign,readwrite) bool isABigReplacement;
-@property(assign,readwrite) bool isASmallReplacement;
-@property(assign,readwrite) bool isAnIntroduction;
-@property(assign,readwrite) double offscreenXLocation;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } targetFrame;
-@property(assign,retain) UIColor * textColor;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } textRange;
+@property (nonatomic, retain) UIImageView *animatedView;
+@property (nonatomic, copy) id animationCompletionHandler;
+@property (nonatomic, retain) UIImage *capturedGlyphImage;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } glyphRange;
+@property (nonatomic) bool isABigReplacement;
+@property (nonatomic) bool isASmallReplacement;
+@property (nonatomic) bool isAnIntroduction;
+@property (nonatomic) double offscreenXLocation;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } targetFrame;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } textRange;
 
 - (void)animateOut;
 - (id)animatedView;

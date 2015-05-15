@@ -4,21 +4,21 @@
 
 @interface CDDMAttributeNameMapper : NSManagedObject
 
-@property(assign,retain) NSNumber * anonymizedBeacon;
-@property(assign,retain) NSNumber * anonymizedLocation;
-@property(assign,retain) NSString * associatedPools;
-@property(assign,retain) NSNumber * category;
-@property(assign,retain) NSNumber * clientId;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,retain) NSString * dataProtectionClass;
-@property(assign,retain) NSNumber * estimatedCadenceSeconds;
-@property(assign,retain) NSNumber * integerId;
-@property(assign,retain) NSNumber * localDaysSinceSunday;
-@property(assign,retain) NSNumber * localTime;
-@property(assign,retain) NSNumber * localTimeQuarterHourSlot;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSNumber * networkQuality;
-@property(assign,retain) NSNumber * type;
-@property(assign,retain) NSNumber * userId;
+@property (nonatomic, retain) NSNumber *anonymizedBeacon;
+@property (nonatomic, retain) NSNumber *anonymizedLocation;
+@property (nonatomic, retain) NSString *associatedPools;
+@property (nonatomic, retain) NSNumber *category;
+@property (nonatomic, retain) NSNumber *clientId;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic, retain) NSString *dataProtectionClass;
+@property (nonatomic, retain) NSNumber *estimatedCadenceSeconds;
+@property (nonatomic, retain) NSNumber *integerId;
+@property (nonatomic, retain) NSNumber *localDaysSinceSunday;
+@property (nonatomic, retain) NSNumber *localTime;
+@property (nonatomic, retain) NSNumber *localTimeQuarterHourSlot;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSNumber *networkQuality;
+@property (nonatomic, retain) NSNumber *type;
+@property (nonatomic, retain) NSNumber *userId;
 
 @end

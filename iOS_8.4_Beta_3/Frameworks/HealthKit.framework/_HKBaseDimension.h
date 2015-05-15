@@ -9,14 +9,14 @@
     double _reductionCoefficient;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * name;
-@property(assign,retain) HKUnit * reducedUnit;
-@property(assign,retain) HKBaseUnit * reducibleBaseUnit;
-@property(assign,readwrite) double reductionCoefficient;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, retain) HKUnit *reducedUnit;
+@property (nonatomic, retain) HKBaseUnit *reducibleBaseUnit;
+@property (nonatomic) double reductionCoefficient;
+@property (readonly) Class superclass;
 
 + (id)_uniquedDefinedDimensionWithName:(id)arg1;
 + (id)_uniquedDimensionWithName:(id)arg1 configuration:(id)arg2;

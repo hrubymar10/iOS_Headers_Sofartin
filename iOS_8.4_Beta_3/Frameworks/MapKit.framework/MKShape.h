@@ -7,13 +7,13 @@
     NSString *_title;
 }
 
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * subtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *subtitle;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (struct { double x1; double x2; })coordinate;

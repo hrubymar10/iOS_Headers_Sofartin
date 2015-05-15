@@ -7,8 +7,8 @@
     NSURL *_sortURL;
 }
 
-@property(assign,readwrite) <SKUISortDataRequestDelegate> * delegate;
-@property(assign,readonly) NSURL * sortURL;
+@property (nonatomic) <SKUISortDataRequestDelegate> *delegate;
+@property (nonatomic, readonly) NSURL *sortURL;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

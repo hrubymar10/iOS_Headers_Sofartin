@@ -24,24 +24,24 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) int fzError;
-@property(assign,retain) NSString * guid;
-@property(assign,readwrite) unsigned int hasAttachments;
-@property(assign,readwrite) bool hasFzError;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasHasAttachments;
-@property(assign,readwrite) bool hasIsFromEmail;
-@property(assign,readwrite) bool hasIsFromPhoneNumber;
-@property(assign,readwrite) bool hasIsGroupMessage;
-@property(assign,readwrite) bool hasIsTypingIndicator;
-@property(assign,readwrite) bool hasMessageError;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int isFromEmail;
-@property(assign,readwrite) unsigned int isFromPhoneNumber;
-@property(assign,readwrite) unsigned int isGroupMessage;
-@property(assign,readwrite) unsigned int isTypingIndicator;
-@property(assign,readwrite) unsigned int messageError;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) int fzError;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic) unsigned int hasAttachments;
+@property (nonatomic) bool hasFzError;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasHasAttachments;
+@property (nonatomic) bool hasIsFromEmail;
+@property (nonatomic) bool hasIsFromPhoneNumber;
+@property (nonatomic) bool hasIsGroupMessage;
+@property (nonatomic) bool hasIsTypingIndicator;
+@property (nonatomic) bool hasMessageError;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int isFromEmail;
+@property (nonatomic) unsigned int isFromPhoneNumber;
+@property (nonatomic) unsigned int isGroupMessage;
+@property (nonatomic) unsigned int isTypingIndicator;
+@property (nonatomic) unsigned int messageError;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

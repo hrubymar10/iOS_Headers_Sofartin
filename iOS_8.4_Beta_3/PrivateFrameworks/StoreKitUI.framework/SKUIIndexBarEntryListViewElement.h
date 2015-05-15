@@ -9,11 +9,11 @@
     NSString *_targetIndexBarEntryID;
 }
 
-@property(assign,copy) NSArray * childIndexBarEntryElements;
-@property(assign,readonly) long long entryListElementType;
-@property(getter=isIndexBarHiddenWhenEmpty,assign,readonly) bool indexBarHiddenWhenEmpty;
-@property(assign,readonly) long long minimumEntityCount;
-@property(assign,copy) NSString * targetIndexBarEntryID;
+@property (nonatomic, readonly, copy) NSArray *childIndexBarEntryElements;
+@property (nonatomic, readonly) long long entryListElementType;
+@property (getter=isIndexBarHiddenWhenEmpty, nonatomic, readonly) bool indexBarHiddenWhenEmpty;
+@property (nonatomic, readonly) long long minimumEntityCount;
+@property (nonatomic, readonly, copy) NSString *targetIndexBarEntryID;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

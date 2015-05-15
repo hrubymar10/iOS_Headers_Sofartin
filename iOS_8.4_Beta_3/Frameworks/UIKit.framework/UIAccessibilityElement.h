@@ -4,21 +4,21 @@
 
 @interface UIAccessibilityElement : NSObject <UIAccessibilityIdentification>
 
-@property(assign,readwrite) id accessibilityContainer;
-@property(assign,retain) NSArray * accessibilityContainerElements;
-@property(assign,readwrite) id accessibilityDelegate;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } accessibilityFrame;
-@property(assign,retain) NSString * accessibilityHint;
-@property(assign,copy) NSString * accessibilityIdentifier;
-@property(assign,retain) NSString * accessibilityLabel;
-@property(assign,readwrite) unsigned long long accessibilityTraits;
-@property(assign,retain) NSString * accessibilityValue;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isAccessibilityElement;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) id accessibilityContainer;
+@property (nonatomic, retain) NSArray *accessibilityContainerElements;
+@property (nonatomic) id accessibilityDelegate;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } accessibilityFrame;
+@property (nonatomic, retain) NSString *accessibilityHint;
+@property (nonatomic, copy) NSString *accessibilityIdentifier;
+@property (nonatomic, retain) NSString *accessibilityLabel;
+@property (nonatomic) unsigned long long accessibilityTraits;
+@property (nonatomic, retain) NSString *accessibilityValue;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isAccessibilityElement;
+@property (readonly) Class superclass;
 
 - (id)accessibilityContainerElements;
 - (id)accessibilityDelegate;

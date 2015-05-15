@@ -15,15 +15,15 @@
     bool _zeroPadsFractionDigits;
 }
 
-@property(getter=isAdaptive,assign,readwrite) bool adaptive;
-@property(assign,readwrite) unsigned long long allowedUnits;
-@property(assign,readwrite) bool allowsNonnumericFormatting;
-@property(assign,readwrite) long long countStyle;
-@property(assign,readwrite) long long formattingContext;
-@property(assign,readwrite) bool includesActualByteCount;
-@property(assign,readwrite) bool includesCount;
-@property(assign,readwrite) bool includesUnit;
-@property(assign,readwrite) bool zeroPadsFractionDigits;
+@property (getter=isAdaptive) bool adaptive;
+@property unsigned long long allowedUnits;
+@property bool allowsNonnumericFormatting;
+@property long long countStyle;
+@property long long formattingContext;
+@property bool includesActualByteCount;
+@property bool includesCount;
+@property bool includesUnit;
+@property bool zeroPadsFractionDigits;
 
 + (id)stringFromByteCount:(long long)arg1 countStyle:(long long)arg2;
 

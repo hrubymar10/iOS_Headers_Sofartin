@@ -8,7 +8,7 @@
     NSObject<OS_dispatch_source> *_updateTimerSource;
 }
 
-@property(assign,retain) NSString * loadingTitle;
+@property (nonatomic, retain) NSString *loadingTitle;
 
 - (void).cxx_destruct;
 - (void)_updateCloudProgressAnimated:(bool)arg1;

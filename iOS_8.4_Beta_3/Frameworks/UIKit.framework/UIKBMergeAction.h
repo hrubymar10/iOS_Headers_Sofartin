@@ -9,10 +9,10 @@
     NSString *_remainingKeyName;
 }
 
-@property(assign,retain) NSString * disappearingKeyName;
-@property(assign,retain) UIKBGeometry * factors;
-@property(assign,retain) NSArray * orderedKeyList;
-@property(assign,retain) NSString * remainingKeyName;
+@property (nonatomic, retain) NSString *disappearingKeyName;
+@property (nonatomic, retain) UIKBGeometry *factors;
+@property (nonatomic, retain) NSArray *orderedKeyList;
+@property (nonatomic, retain) NSString *remainingKeyName;
 
 + (id)mergeActionWithOrderedKeyList:(id)arg1 factors:(id)arg2;
 + (id)mergeActionWithRemainingKeyName:(id)arg1 disappearingKeyName:(id)arg2 factors:(id)arg3;

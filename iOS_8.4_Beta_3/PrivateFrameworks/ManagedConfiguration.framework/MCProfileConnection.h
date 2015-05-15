@@ -18,12 +18,12 @@
     id userInputReplyBlock;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSXPCConnection * publicXPCConnection;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSXPCConnection * xpcConnection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSXPCConnection *publicXPCConnection;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSXPCConnection *xpcConnection;
 
 + (id)profileInstallationErrorWithUnderlyingError:(id)arg1;
 + (id)sharedConnection;

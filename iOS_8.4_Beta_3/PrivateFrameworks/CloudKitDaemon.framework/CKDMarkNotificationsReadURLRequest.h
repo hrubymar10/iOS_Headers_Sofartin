@@ -8,9 +8,9 @@
     id _notificationMarkedReadProgressBlock;
 }
 
-@property(assign,retain) NSArray * notificationIDs;
-@property(assign,retain) NSMutableDictionary * notificationIDsByRequestID;
-@property(assign,copy) id notificationMarkedReadProgressBlock;
+@property (nonatomic, retain) NSArray *notificationIDs;
+@property (nonatomic, retain) NSMutableDictionary *notificationIDsByRequestID;
+@property (nonatomic, copy) id notificationMarkedReadProgressBlock;
 
 - (void).cxx_destruct;
 - (id)initWithNotificationIDsToMarkRead:(id)arg1;

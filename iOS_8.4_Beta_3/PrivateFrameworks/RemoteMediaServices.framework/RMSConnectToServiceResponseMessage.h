@@ -12,12 +12,12 @@
     int _sessionIdentifier;
 }
 
-@property(assign,retain) RMSControlInterfaceMessage * controlInterface;
-@property(assign,readonly) bool hasControlInterface;
-@property(assign,readwrite) bool hasResponseCode;
-@property(assign,readwrite) bool hasSessionIdentifier;
-@property(assign,readwrite) int responseCode;
-@property(assign,readwrite) int sessionIdentifier;
+@property (nonatomic, retain) RMSControlInterfaceMessage *controlInterface;
+@property (nonatomic, readonly) bool hasControlInterface;
+@property (nonatomic) bool hasResponseCode;
+@property (nonatomic) bool hasSessionIdentifier;
+@property (nonatomic) int responseCode;
+@property (nonatomic) int sessionIdentifier;
 
 - (void).cxx_destruct;
 - (id)controlInterface;

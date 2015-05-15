@@ -13,16 +13,16 @@
     AXDialectMap *userLocaleDialect;
 }
 
-@property(assign,retain) NSArray * alternateLanguageIDs;
-@property(assign,readonly) NSArray * alternativeVoiceIdentifiers;
-@property(getter=isAmbiguous,assign,readwrite) bool ambiguous;
-@property(assign,retain) NSArray * associatedAmbiguousLanguages;
-@property(assign,readonly) AXDialectMap * defaultDialect;
-@property(assign,retain) NSArray * dialects;
-@property(assign,copy) NSString * generalLanguageID;
-@property(assign,readonly) AXDialectMap * userLocaleDialect;
-@property(assign,readwrite) AXDialectMap * userPreferredDialect;
-@property(getter=isWestern,assign,readwrite) bool western;
+@property (nonatomic, retain) NSArray *alternateLanguageIDs;
+@property (nonatomic, readonly) NSArray *alternativeVoiceIdentifiers;
+@property (getter=isAmbiguous, nonatomic) bool ambiguous;
+@property (nonatomic, retain) NSArray *associatedAmbiguousLanguages;
+@property (nonatomic, readonly) AXDialectMap *defaultDialect;
+@property (nonatomic, retain) NSArray *dialects;
+@property (nonatomic, copy) NSString *generalLanguageID;
+@property (nonatomic, readonly) AXDialectMap *userLocaleDialect;
+@property (nonatomic) AXDialectMap *userPreferredDialect;
+@property (getter=isWestern, nonatomic) bool western;
 
 - (id)alternateLanguageIDs;
 - (id)alternativeVoiceIdentifiers;

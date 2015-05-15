@@ -4,7 +4,7 @@
 
 @interface ICSFreeBusyTime : ICSProperty
 
-@property(assign,readwrite) int fbtype;
+@property (nonatomic) int fbtype;
 
 - (int)fbtype;
 - (id)initWithPeriod:(id)arg1;

@@ -7,8 +7,8 @@
     bool _selected;
 }
 
-@property(assign,readonly) SKUIViewElementText * itemText;
-@property(getter=isSelected,assign,readonly) bool selected;
+@property (nonatomic, readonly) SKUIViewElementText *itemText;
+@property (getter=isSelected, nonatomic, readonly) bool selected;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

@@ -26,12 +26,12 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUWelcomeViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=isDisplayingLoading,assign,readwrite) bool displayingLoading;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUWelcomeViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=isDisplayingLoading, nonatomic) bool displayingLoading;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_accountStoreDidChangeNotification:(id)arg1;

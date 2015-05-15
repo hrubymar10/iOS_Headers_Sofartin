@@ -41,9 +41,9 @@
     NSDictionary *cuiInfo;
 }
 
-@property(assign,readonly) CUIPSDGradient * gradient;
-@property(assign,readonly) unsigned long long numberOfSlices;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }* sliceRects;
+@property (nonatomic, readonly) CUIPSDGradient *gradient;
+@property (nonatomic, readonly) unsigned long long numberOfSlices;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }*sliceRects;
 
 - (id).cxx_construct;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })alignmentRectangle;

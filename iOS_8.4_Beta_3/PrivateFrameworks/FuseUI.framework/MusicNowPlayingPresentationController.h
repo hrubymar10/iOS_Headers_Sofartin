@@ -8,13 +8,13 @@
     bool _wantsAtmosphericStatusBar;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIView * nowPlayingClippingView;
-@property(assign,retain) MusicNowPlayingAtmosphericStatusBar * nowPlayingStatusBar;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool wantsAtmosphericStatusBar;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIView *nowPlayingClippingView;
+@property (nonatomic, retain) MusicNowPlayingAtmosphericStatusBar *nowPlayingStatusBar;
+@property (readonly) Class superclass;
+@property (nonatomic) bool wantsAtmosphericStatusBar;
 
 - (void).cxx_destruct;
 - (void)_attachStatusBar;

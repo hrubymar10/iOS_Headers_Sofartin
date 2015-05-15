@@ -14,15 +14,15 @@
     id _saveCompletionBlock;
 }
 
-@property(assign,readwrite) bool allowDefaultZoneSave;
-@property(assign,copy) id deleteCompletionBlock;
-@property(assign,readwrite) bool markZonesAsUserPurged;
-@property(assign,readwrite) int numZoneSaveAttempts;
-@property(assign,retain) NSMutableDictionary * pcsOplockFailureCountByZoneID;
-@property(assign,retain) NSArray * recordZoneIDsToDelete;
-@property(assign,retain) NSMutableDictionary * recordZonesByZoneID;
-@property(assign,retain) NSMutableArray * recordZonesToSave;
-@property(assign,copy) id saveCompletionBlock;
+@property (nonatomic) bool allowDefaultZoneSave;
+@property (nonatomic, copy) id deleteCompletionBlock;
+@property (nonatomic) bool markZonesAsUserPurged;
+@property (nonatomic) int numZoneSaveAttempts;
+@property (nonatomic, retain) NSMutableDictionary *pcsOplockFailureCountByZoneID;
+@property (nonatomic, retain) NSArray *recordZoneIDsToDelete;
+@property (nonatomic, retain) NSMutableDictionary *recordZonesByZoneID;
+@property (nonatomic, retain) NSMutableArray *recordZonesToSave;
+@property (nonatomic, copy) id saveCompletionBlock;
 
 - (void).cxx_destruct;
 - (void)_checkAndPrepareZones;

@@ -7,12 +7,12 @@
     UIColor *_tintColor;
 }
 
-@property(assign,retain) NSAttributedString * attributedTitle;
-@property(assign,readonly) double maximumSnappingHeight;
-@property(assign,readonly) double minimumSnappingHeight;
-@property(assign,readwrite) UIRefreshControl * refreshControl;
-@property(assign,readonly) long long style;
-@property(assign,retain) UIColor * tintColor;
+@property (nonatomic, retain) NSAttributedString *attributedTitle;
+@property (nonatomic, readonly) double maximumSnappingHeight;
+@property (nonatomic, readonly) double minimumSnappingHeight;
+@property (nonatomic) UIRefreshControl *refreshControl;
+@property (nonatomic, readonly) long long style;
+@property (nonatomic, retain) UIColor *tintColor;
 
 - (double)_heightAtWhichNoneOfTheInterfaceElementsAreVisibleEvenIfTheControlIsStillPartiallyOnScreen;
 - (id)attributedTitle;

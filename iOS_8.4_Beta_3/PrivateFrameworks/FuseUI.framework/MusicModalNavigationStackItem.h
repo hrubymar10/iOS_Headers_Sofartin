@@ -9,10 +9,10 @@
     SKUINavigationDocumentController *_navigationDocumentController;
 }
 
-@property(setter=setJSNavigationDocumentManagedObject:,assign,retain) MusicJSManagedObject * jsNavigationDocumentManagedObject;
-@property(assign,readwrite) long long lastNavigationControllerOperation;
-@property(assign,readonly) UINavigationController * navigationController;
-@property(assign,retain) SKUINavigationDocumentController * navigationDocumentController;
+@property (setter=setJSNavigationDocumentManagedObject:, nonatomic, retain) MusicJSManagedObject *jsNavigationDocumentManagedObject;
+@property (nonatomic) long long lastNavigationControllerOperation;
+@property (nonatomic, readonly) UINavigationController *navigationController;
+@property (nonatomic, retain) SKUINavigationDocumentController *navigationDocumentController;
 
 - (void).cxx_destruct;
 - (id)initWithNavigationController:(id)arg1;

@@ -4,9 +4,9 @@
 
 @interface NSManagedObjectID : NSObject <NSCopying>
 
-@property(assign,readonly) NSEntityDescription * entity;
-@property(assign,readonly) NSPersistentStore * persistentStore;
-@property(getter=isTemporaryID,assign,readonly) bool temporaryID;
+@property (readonly) NSEntityDescription *entity;
+@property (readonly) NSPersistentStore *persistentStore;
+@property (getter=isTemporaryID, readonly) bool temporaryID;
 
 + (bool)accessInstanceVariablesDirectly;
 + (void)initialize;

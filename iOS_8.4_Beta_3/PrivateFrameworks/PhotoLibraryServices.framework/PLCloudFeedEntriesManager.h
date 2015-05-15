@@ -6,7 +6,7 @@
     PLPhotoLibrary *__library;
 }
 
-@property(assign,retain) PLPhotoLibrary * _library;
+@property (nonatomic, readonly, retain) PLPhotoLibrary *_library;
 
 + (id)sharedManager;
 

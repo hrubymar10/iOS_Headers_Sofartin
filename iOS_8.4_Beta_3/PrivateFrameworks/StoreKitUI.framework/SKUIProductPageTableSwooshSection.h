@@ -11,14 +11,14 @@
     SKUILockupSwooshViewController *_swooshViewController;
 }
 
-@property(assign,copy) id actionBlock;
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIResourceLoader * resourceLoader;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIViewController * swooshViewController;
+@property (nonatomic, copy) id actionBlock;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIResourceLoader *resourceLoader;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UIViewController *swooshViewController;
 
 - (void).cxx_destruct;
 - (id)_artworkLoader;

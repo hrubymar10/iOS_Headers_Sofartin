@@ -7,8 +7,8 @@
     PKPass *_pass;
 }
 
-@property(assign,retain) UIImage * icon;
-@property(assign,retain) PKPass * pass;
+@property (nonatomic, retain) UIImage *icon;
+@property (nonatomic, retain) PKPass *pass;
 
 + (id)UTITypes;
 + (id)attachmentSummary:(unsigned long long)arg1;

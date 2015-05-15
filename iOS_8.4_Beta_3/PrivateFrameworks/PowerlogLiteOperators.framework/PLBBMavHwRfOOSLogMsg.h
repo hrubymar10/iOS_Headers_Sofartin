@@ -22,23 +22,23 @@
     NSNumber *_pssiTicks;
 }
 
-@property(assign,retain) NSMutableDictionary * commonInfo;
-@property(assign,retain) NSString * error;
-@property(assign,readwrite) unsigned char inited;
-@property(assign,retain) NSMutableDictionary * kvPairs;
-@property(assign,retain) NSNumber * logDuration;
-@property(assign,retain) NSArray * oosGsmPssiStatTicks;
-@property(assign,retain) NSArray * oosGsmPssiTimes;
-@property(assign,readwrite) unsigned char oosInProgress;
-@property(assign,retain) NSArray * oosLtePssiStatTicks;
-@property(assign,retain) NSArray * oosLtePssiTimes;
-@property(assign,retain) NSArray * oosTdsPssiStatTicks;
-@property(assign,retain) NSArray * oosTdsPssiTimes;
-@property(assign,retain) NSNumber * oosTicks;
-@property(assign,retain) NSNumber * oosTimes;
-@property(assign,retain) NSArray * oosWcdmaPssiStatTicks;
-@property(assign,retain) NSArray * oosWcdmaPssiTimes;
-@property(assign,retain) NSNumber * pssiTicks;
+@property (nonatomic, retain) NSMutableDictionary *commonInfo;
+@property (retain) NSString *error;
+@property (nonatomic) unsigned char inited;
+@property (nonatomic, retain) NSMutableDictionary *kvPairs;
+@property (retain) NSNumber *logDuration;
+@property (retain) NSArray *oosGsmPssiStatTicks;
+@property (retain) NSArray *oosGsmPssiTimes;
+@property unsigned char oosInProgress;
+@property (retain) NSArray *oosLtePssiStatTicks;
+@property (retain) NSArray *oosLtePssiTimes;
+@property (retain) NSArray *oosTdsPssiStatTicks;
+@property (retain) NSArray *oosTdsPssiTimes;
+@property (retain) NSNumber *oosTicks;
+@property (retain) NSNumber *oosTimes;
+@property (retain) NSArray *oosWcdmaPssiStatTicks;
+@property (retain) NSArray *oosWcdmaPssiTimes;
+@property (retain) NSNumber *pssiTicks;
 
 + (id)entryEventBackwardDefinitionOOSPerRat;
 

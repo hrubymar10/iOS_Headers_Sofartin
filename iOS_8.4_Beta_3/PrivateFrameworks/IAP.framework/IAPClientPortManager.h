@@ -9,7 +9,7 @@
     NSObject<OS_dispatch_queue> *_portListQueue;
 }
 
-@property(assign,readwrite) bool iaptransportdIsRunning;
+@property (nonatomic) bool iaptransportdIsRunning;
 
 + (id)sharedInstance;
 

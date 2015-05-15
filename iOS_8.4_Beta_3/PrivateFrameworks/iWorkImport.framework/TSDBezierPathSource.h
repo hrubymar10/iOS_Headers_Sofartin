@@ -11,7 +11,7 @@
     TSUBezierPath *mPath;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } naturalSize;
+@property (nonatomic) struct CGSize { double x1; double x2; } naturalSize;
 
 + (id)pathSourceWithBezierPath:(id)arg1;
 

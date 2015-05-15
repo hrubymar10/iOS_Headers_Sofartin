@@ -12,13 +12,13 @@
     NSData *_userInfoData;
 }
 
-@property(assign,copy) NSURLRequest * URLRequest;
-@property(assign,readwrite) bool attemptedConnection;
-@property(assign,retain) NSURLConnection * connection;
-@property(assign,copy) NSString * identifier;
-@property(assign,readonly) NKIssue * issue;
-@property(assign,copy) NSDictionary * userInfo;
-@property(assign,retain) NSData * userInfoData;
+@property (copy) NSURLRequest *URLRequest;
+@property bool attemptedConnection;
+@property (retain) NSURLConnection *connection;
+@property (copy) NSString *identifier;
+@property (readonly) NKIssue *issue;
+@property (copy) NSDictionary *userInfo;
+@property (retain) NSData *userInfoData;
 
 - (id)URLRequest;
 - (bool)_attemptedConnection;

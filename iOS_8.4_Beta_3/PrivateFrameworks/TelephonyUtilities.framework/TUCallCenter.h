@@ -9,23 +9,23 @@
     NSMutableArray *_displayedCalls;
 }
 
-@property(assign,retain) TUCallModelState * callModelState;
-@property(assign,retain) TUCallCenterCallsCache * callsCache;
-@property(assign,readonly) bool canMergeCalls;
-@property(assign,readonly) TUCall * conferenceCall;
-@property(assign,retain) NSMutableArray * conferenceParticipantCalls;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) TUCall * displayedCall;
-@property(assign,retain) NSMutableArray * displayedCalls;
-@property(assign,readonly) NSArray * displayedCallsNotIncludingIncomingCall;
-@property(assign,retain) TUCall * frontmostAudioOrVideoCall;
-@property(assign,readonly) TUCall * frontmostCall;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool inCall;
-@property(assign,retain) TUCall * incomingCall;
-@property(assign,retain) NSArray * incomingCalls;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) TUCallModelState *callModelState;
+@property (nonatomic, retain) TUCallCenterCallsCache *callsCache;
+@property (nonatomic, readonly) bool canMergeCalls;
+@property (nonatomic, readonly) TUCall *conferenceCall;
+@property (nonatomic, retain) NSMutableArray *conferenceParticipantCalls;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) TUCall *displayedCall;
+@property (nonatomic, retain) NSMutableArray *displayedCalls;
+@property (nonatomic, readonly) NSArray *displayedCallsNotIncludingIncomingCall;
+@property (nonatomic, readonly, retain) TUCall *frontmostAudioOrVideoCall;
+@property (nonatomic, readonly) TUCall *frontmostCall;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool inCall;
+@property (nonatomic, readonly, retain) TUCall *incomingCall;
+@property (nonatomic, readonly, retain) NSArray *incomingCalls;
+@property (readonly) Class superclass;
 
 + (id)_sharedInstanceWithDaemonDelegate:(id)arg1;
 + (id)defaultCallState;

@@ -9,9 +9,9 @@
     unsigned long long _width;
 }
 
-@property(assign,readonly) unsigned long long height;
-@property(assign,readonly) double pixelAspectRatio;
-@property(assign,readonly) unsigned long long width;
+@property (nonatomic, readonly) unsigned long long height;
+@property (nonatomic, readonly) double pixelAspectRatio;
+@property (nonatomic, readonly) unsigned long long width;
 
 + (id)_displayModeWithMode:(int)arg1 display:(id)arg2;
 

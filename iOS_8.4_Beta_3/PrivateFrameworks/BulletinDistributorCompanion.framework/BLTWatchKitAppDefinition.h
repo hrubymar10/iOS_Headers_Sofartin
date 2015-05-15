@@ -8,9 +8,9 @@
     NSString *_watchKitAppBundleID;
 }
 
-@property(assign,readonly) NSString * containerBundleID;
-@property(assign,readonly) bool isInstalled;
-@property(assign,readonly) NSString * watchKitAppBundleID;
+@property (nonatomic, readonly) NSString *containerBundleID;
+@property (nonatomic, readonly) bool isInstalled;
+@property (nonatomic, readonly) NSString *watchKitAppBundleID;
 
 - (void).cxx_destruct;
 - (id)containerBundleID;

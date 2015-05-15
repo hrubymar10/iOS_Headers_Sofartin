@@ -6,7 +6,7 @@
     PUPhotoViewContentHelper *_contentHelper;
 }
 
-@property(assign,readonly) PUPhotoViewContentHelper * contentHelper;
+@property (nonatomic, readonly) PUPhotoViewContentHelper *contentHelper;
 
 - (void).cxx_destruct;
 - (id)contentHelper;

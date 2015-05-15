@@ -11,9 +11,9 @@
     UIColor *_textColor;
 }
 
-@property(assign,readwrite) <SKUIEditorialLinkViewDelegate> * delegate;
-@property(assign,readwrite) long long horizontalAlignment;
-@property(assign,retain) SKUIEditorialLinkLayout * linkLayout;
+@property (nonatomic) <SKUIEditorialLinkViewDelegate> *delegate;
+@property (nonatomic) long long horizontalAlignment;
+@property (nonatomic, retain) SKUIEditorialLinkLayout *linkLayout;
 
 - (void).cxx_destruct;
 - (void)_linkButtonAction:(id)arg1;

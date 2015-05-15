@@ -9,10 +9,10 @@
     NSString *_mimeType;
 }
 
-@property(assign,readonly) NSData * data;
-@property(assign,readonly) NSString * fileName;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSString * mimeType;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic, readonly) NSString *fileName;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) NSString *mimeType;
 
 + (id)wrapperWithData:(id)arg1 mimeType:(id)arg2 fileName:(id)arg3;
 

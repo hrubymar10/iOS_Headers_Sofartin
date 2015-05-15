@@ -15,16 +15,16 @@
     NSDate *_timeoutDate;
 }
 
-@property(assign,retain) NSDate * completionDate;
-@property(assign,retain) NSData * data;
-@property(assign,retain) NSString * exchangeID;
-@property(assign,retain) NSDictionary * localizableMessage;
-@property(assign,retain) NSArray * recipientIndexes;
-@property(assign,retain) NSArray * replies;
-@property(assign,retain) NSDate * sendDate;
-@property(assign,readwrite) unsigned char senderIndex;
-@property(assign,retain) NSString * statusString;
-@property(assign,retain) NSDate * timeoutDate;
+@property (nonatomic, retain) NSDate *completionDate;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic, retain) NSString *exchangeID;
+@property (nonatomic, retain) NSDictionary *localizableMessage;
+@property (nonatomic, retain) NSArray *recipientIndexes;
+@property (nonatomic, retain) NSArray *replies;
+@property (nonatomic, retain) NSDate *sendDate;
+@property (nonatomic) unsigned char senderIndex;
+@property (nonatomic, retain) NSString *statusString;
+@property (nonatomic, retain) NSDate *timeoutDate;
 
 + (id)secureCodedPropertyKeys;
 

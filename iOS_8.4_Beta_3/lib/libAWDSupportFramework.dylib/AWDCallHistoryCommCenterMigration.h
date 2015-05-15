@@ -15,14 +15,14 @@
     unsigned int _version;
 }
 
-@property(assign,readwrite) bool hasRecordCount;
-@property(assign,readwrite) bool hasSuccess;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasVersion;
-@property(assign,readwrite) unsigned int recordCount;
-@property(assign,readwrite) bool success;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int version;
+@property (nonatomic) bool hasRecordCount;
+@property (nonatomic) bool hasSuccess;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasVersion;
+@property (nonatomic) unsigned int recordCount;
+@property (nonatomic) bool success;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int version;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

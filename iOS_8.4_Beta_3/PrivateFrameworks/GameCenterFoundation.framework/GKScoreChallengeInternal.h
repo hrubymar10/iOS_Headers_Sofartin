@@ -7,8 +7,8 @@
     GKScoreInternal *_score;
 }
 
-@property(assign,retain) GKLeaderboardInternal * leaderboard;
-@property(assign,copy) GKScoreInternal * score;
+@property (nonatomic, retain) GKLeaderboardInternal *leaderboard;
+@property (nonatomic, copy) GKScoreInternal *score;
 
 + (id)internalRepresentation;
 + (id)secureCodedPropertyKeys;

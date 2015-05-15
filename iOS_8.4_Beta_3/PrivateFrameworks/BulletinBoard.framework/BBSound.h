@@ -18,23 +18,23 @@
     NSDictionary *_vibrationPattern;
 }
 
-@property(assign,copy) NSString * accountIdentifier;
-@property(assign,readwrite) int alertType;
-@property(assign,copy) NSString * audioCategory;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double maxDuration;
-@property(getter=isRepeating,assign,readwrite) bool repeats;
-@property(assign,copy) NSString * ringtoneName;
-@property(assign,copy) NSString * songPath;
-@property(assign,readwrite) unsigned long long soundBehavior;
-@property(assign,readwrite) long long soundType;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned int systemSoundID;
-@property(assign,copy) NSString * toneIdentifier;
-@property(assign,copy) NSString * vibrationIdentifier;
-@property(assign,copy) NSDictionary * vibrationPattern;
+@property (nonatomic, copy) NSString *accountIdentifier;
+@property (nonatomic) int alertType;
+@property (nonatomic, copy) NSString *audioCategory;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double maxDuration;
+@property (getter=isRepeating, nonatomic) bool repeats;
+@property (nonatomic, copy) NSString *ringtoneName;
+@property (nonatomic, copy) NSString *songPath;
+@property (nonatomic) unsigned long long soundBehavior;
+@property (nonatomic) long long soundType;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned int systemSoundID;
+@property (nonatomic, copy) NSString *toneIdentifier;
+@property (nonatomic, copy) NSString *vibrationIdentifier;
+@property (nonatomic, copy) NSDictionary *vibrationPattern;
 
 + (id)_possiblyCachedAlertSoundForInitializedSound:(id)arg1;
 + (void)_removeCachedSound:(id)arg1;

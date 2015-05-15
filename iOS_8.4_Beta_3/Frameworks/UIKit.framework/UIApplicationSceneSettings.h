@@ -4,12 +4,12 @@
 
 @interface UIApplicationSceneSettings : FBSSceneSettings <UIApplicationSceneSettings>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) int statusBarStyleOverridesToSuppress;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool underLock;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) int statusBarStyleOverridesToSuppress;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool underLock;
 
 - (bool)isUISubclass;
 - (id)keyDescriptionForSetting:(unsigned long long)arg1;

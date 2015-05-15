@@ -12,12 +12,12 @@
     unsigned int _type;
 }
 
-@property(assign,retain) NSString * exceptionData;
-@property(assign,readonly) bool hasExceptionData;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int type;
+@property (nonatomic, retain) NSString *exceptionData;
+@property (nonatomic, readonly) bool hasExceptionData;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasType;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int type;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

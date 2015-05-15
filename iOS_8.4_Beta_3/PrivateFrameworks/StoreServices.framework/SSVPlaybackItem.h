@@ -6,9 +6,9 @@
     NSDictionary *_itemDictionary;
 }
 
-@property(assign,readonly) NSArray * assets;
-@property(assign,copy) NSDictionary * itemDictionary;
-@property(assign,copy) id itemIdentifier;
+@property (nonatomic, readonly) NSArray *assets;
+@property (nonatomic, readonly, copy) NSDictionary *itemDictionary;
+@property (nonatomic, readonly, copy) id itemIdentifier;
 
 - (void).cxx_destruct;
 - (void)_enumerateAssetsUsingBlock:(id)arg1;

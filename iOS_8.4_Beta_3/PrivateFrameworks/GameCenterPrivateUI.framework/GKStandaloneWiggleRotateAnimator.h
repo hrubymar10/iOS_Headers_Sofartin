@@ -8,9 +8,9 @@
     _GKBubbleFlowPathTransitionInfo *_transitionContext;
 }
 
-@property(assign,retain) GKBubbleFlowContainerView * containerView;
-@property(assign,readwrite) long long rotationDirection;
-@property(assign,retain) _GKBubbleFlowPathTransitionInfo * transitionContext;
+@property (nonatomic, retain) GKBubbleFlowContainerView *containerView;
+@property (nonatomic) long long rotationDirection;
+@property (nonatomic, retain) _GKBubbleFlowPathTransitionInfo *transitionContext;
 
 - (void)animate;
 - (void)animateForBubbleContainer:(id)arg1 withTransitionCoordinator:(id)arg2;

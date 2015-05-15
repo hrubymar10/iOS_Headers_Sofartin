@@ -6,7 +6,7 @@
     UIView *_flipSourceView;
 }
 
-@property(assign,retain) UIView * flipSourceView;
+@property (nonatomic, retain) UIView *flipSourceView;
 
 - (void).cxx_destruct;
 - (id)flipSourceView;

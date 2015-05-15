@@ -9,10 +9,10 @@
     int _type;
 }
 
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSDictionary * parameters;
-@property(assign,readwrite) int type;
+@property (retain) NSString *identifier;
+@property (retain) NSString *name;
+@property (retain) NSDictionary *parameters;
+@property int type;
 
 + (int)_privacySettingTypeFromTypeIdentifier:(id)arg1;
 + (id)postPrivacySettingForPrivacyOptionDictionary:(id)arg1;

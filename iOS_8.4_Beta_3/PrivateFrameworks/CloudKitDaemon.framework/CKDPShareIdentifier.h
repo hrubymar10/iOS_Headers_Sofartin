@@ -7,10 +7,10 @@
     CKDPRecordZoneIdentifier *_zoneIdentifier;
 }
 
-@property(assign,readonly) bool hasValue;
-@property(assign,readonly) bool hasZoneIdentifier;
-@property(assign,retain) CKDPIdentifier * value;
-@property(assign,retain) CKDPRecordZoneIdentifier * zoneIdentifier;
+@property (nonatomic, readonly) bool hasValue;
+@property (nonatomic, readonly) bool hasZoneIdentifier;
+@property (nonatomic, retain) CKDPIdentifier *value;
+@property (nonatomic, retain) CKDPRecordZoneIdentifier *zoneIdentifier;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

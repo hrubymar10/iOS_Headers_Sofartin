@@ -7,9 +7,9 @@
     GEOMapRegion *_displayMapRegion;
 }
 
-@property(assign,retain) NSMutableArray * disambiguationLabels;
-@property(assign,retain) GEOMapRegion * displayMapRegion;
-@property(assign,readonly) bool hasDisplayMapRegion;
+@property (nonatomic, retain) NSMutableArray *disambiguationLabels;
+@property (nonatomic, retain) GEOMapRegion *displayMapRegion;
+@property (nonatomic, readonly) bool hasDisplayMapRegion;
 
 - (void)addDisambiguationLabel:(id)arg1;
 - (void)clearDisambiguationLabels;

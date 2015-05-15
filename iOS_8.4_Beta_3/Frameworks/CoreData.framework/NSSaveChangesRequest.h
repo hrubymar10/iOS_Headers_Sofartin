@@ -11,10 +11,10 @@
     NSSet *_updatedObjects;
 }
 
-@property(assign,readonly) NSSet * deletedObjects;
-@property(assign,readonly) NSSet * insertedObjects;
-@property(assign,readonly) NSSet * lockedObjects;
-@property(assign,readonly) NSSet * updatedObjects;
+@property (readonly) NSSet *deletedObjects;
+@property (readonly) NSSet *insertedObjects;
+@property (readonly) NSSet *lockedObjects;
+@property (readonly) NSSet *updatedObjects;
 
 + (void)initialize;
 

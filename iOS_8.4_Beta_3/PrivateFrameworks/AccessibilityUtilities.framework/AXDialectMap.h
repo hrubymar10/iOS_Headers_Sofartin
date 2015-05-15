@@ -11,19 +11,19 @@
     NSString *_voiceName;
 }
 
-@property(assign,readonly) AXLanguageManager * langManager;
-@property(assign,readwrite) AXLangMap * langMap;
-@property(assign,readonly) NSString * languageNameAndLocaleInCurrentLocale;
-@property(assign,readonly) NSString * languageNameAndLocaleInNativeLocale;
-@property(assign,readonly) NSString * languageNameInCurrentLocale;
-@property(assign,readonly) NSString * languageNameInNativeLocale;
-@property(assign,retain) NSLocale * locale;
-@property(assign,readonly) NSString * localeNameInCurrentLocale;
-@property(assign,readonly) NSString * regionID;
-@property(assign,retain) NSCharacterSet * secondaryLanguageRange;
-@property(assign,retain) NSCharacterSet * speakableCharacters;
-@property(assign,copy) NSString * specificLanguageID;
-@property(assign,copy) NSString * voiceName;
+@property (nonatomic, readonly) AXLanguageManager *langManager;
+@property (nonatomic) AXLangMap *langMap;
+@property (nonatomic, readonly) NSString *languageNameAndLocaleInCurrentLocale;
+@property (nonatomic, readonly) NSString *languageNameAndLocaleInNativeLocale;
+@property (nonatomic, readonly) NSString *languageNameInCurrentLocale;
+@property (nonatomic, readonly) NSString *languageNameInNativeLocale;
+@property (nonatomic, retain) NSLocale *locale;
+@property (nonatomic, readonly) NSString *localeNameInCurrentLocale;
+@property (nonatomic, readonly) NSString *regionID;
+@property (nonatomic, retain) NSCharacterSet *secondaryLanguageRange;
+@property (nonatomic, retain) NSCharacterSet *speakableCharacters;
+@property (nonatomic, copy) NSString *specificLanguageID;
+@property (nonatomic, copy) NSString *voiceName;
 
 - (id)basicDescription;
 - (bool)canSpeakCharacter:(unsigned short)arg1;

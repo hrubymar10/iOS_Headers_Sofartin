@@ -4,7 +4,7 @@
 
 @interface SAStockSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * stocks;
+@property (nonatomic, copy) NSArray *stocks;
 
 + (id)snippet;
 + (id)snippetWithDictionary:(id)arg1 context:(id)arg2;

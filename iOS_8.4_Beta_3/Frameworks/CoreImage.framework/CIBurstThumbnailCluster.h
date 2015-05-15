@@ -10,11 +10,11 @@
     NSMutableDictionary *imageProps;
 }
 
-@property(assign,readwrite) NSMutableArray * burstImages;
-@property(assign,readwrite) id completionBlock;
-@property(assign,readwrite) struct __IOSurface { }* fullsizeJpegData;
-@property(assign,readwrite) CIBurstYUVImage * image;
-@property(assign,readwrite) NSMutableDictionary * imageProps;
+@property NSMutableArray *burstImages;
+@property id completionBlock;
+@property struct __IOSurface { }*fullsizeJpegData;
+@property CIBurstYUVImage *image;
+@property NSMutableDictionary *imageProps;
 
 - (void)addItemsFromCluster:(id)arg1;
 - (id)burstImages;

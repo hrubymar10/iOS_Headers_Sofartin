@@ -6,7 +6,7 @@
     UIMoreListController *__listController;
 }
 
-@property(assign,readwrite) UIMoreListController * _listController;
+@property (nonatomic) UIMoreListController *_listController;
 
 - (id)_listController;
 - (void)didMoveToWindow;

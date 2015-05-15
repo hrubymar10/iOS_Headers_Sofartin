@@ -4,7 +4,7 @@
 
 @interface SKUITracklistPageComponent : SKUIPageComponent
 
-@property(assign,readonly) SKUITracklistViewElement * viewElement;
+@property (nonatomic, readonly) SKUITracklistViewElement *viewElement;
 
 - (long long)componentType;
 - (id)initWithViewElement:(id)arg1;

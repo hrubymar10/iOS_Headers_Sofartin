@@ -18,24 +18,24 @@
     NSURL *_unzippingURL;
 }
 
-@property(assign,readonly) long long UUID;
-@property(assign,readonly) <QLPreviewItem> * currentPreviewItem;
-@property(assign,readwrite) long long currentPreviewItemIndex;
-@property(assign,readonly) long long currentUIItemIndex;
-@property(assign,readwrite) <QLPreviewControllerDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long numberOfPreviewItems;
-@property(assign,readonly) long long numberOfUIItems;
-@property(assign,readonly) bool prepared;
-@property(assign,retain) <QLPreviewItem> * previewItem;
-@property(assign,readonly) <QLPreviewItem> * realCurrentPreviewItem;
-@property(assign,readwrite) long long realCurrentPreviewItemIndex;
-@property(assign,readonly) long long realNumberOfPreviewItems;
-@property(assign,readonly) bool shouldShowFileList;
-@property(assign,readonly) Class superclass;
-@property(getter=isViewingArchive,assign,readonly) bool viewingArchive;
+@property (readonly) long long UUID;
+@property (readonly) <QLPreviewItem> *currentPreviewItem;
+@property long long currentPreviewItemIndex;
+@property (readonly) long long currentUIItemIndex;
+@property <QLPreviewControllerDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) long long numberOfPreviewItems;
+@property (readonly) long long numberOfUIItems;
+@property (readonly) bool prepared;
+@property (retain) <QLPreviewItem> *previewItem;
+@property (readonly) <QLPreviewItem> *realCurrentPreviewItem;
+@property long long realCurrentPreviewItemIndex;
+@property (readonly) long long realNumberOfPreviewItems;
+@property (readonly) bool shouldShowFileList;
+@property (readonly) Class superclass;
+@property (getter=isViewingArchive, readonly) bool viewingArchive;
 
 - (id)UIItemAtIndex:(long long)arg1;
 - (long long)UUID;

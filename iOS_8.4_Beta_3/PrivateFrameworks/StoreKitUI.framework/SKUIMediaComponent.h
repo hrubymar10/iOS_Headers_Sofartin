@@ -17,22 +17,22 @@
     long long _titleFontWeight;
 }
 
-@property(assign,readonly) NSString * accessibilityLabel;
-@property(assign,readonly) long long alignment;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double duration;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUILink * link;
-@property(assign,readonly) long long mediaAppearance;
-@property(assign,readonly) long long mediaIdentifier;
-@property(assign,readonly) long long mediaType;
-@property(assign,readonly) NSString * mediaURLString;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) SKUIArtworkList * thumbnailArtworkList;
-@property(assign,readonly) NSString * title;
-@property(assign,readonly) float titleFontSize;
-@property(assign,readonly) long long titleFontWeight;
+@property (nonatomic, readonly) NSString *accessibilityLabel;
+@property (nonatomic, readonly) long long alignment;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double duration;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUILink *link;
+@property (nonatomic, readonly) long long mediaAppearance;
+@property (nonatomic, readonly) long long mediaIdentifier;
+@property (nonatomic, readonly) long long mediaType;
+@property (nonatomic, readonly) NSString *mediaURLString;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) SKUIArtworkList *thumbnailArtworkList;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) float titleFontSize;
+@property (nonatomic, readonly) long long titleFontWeight;
 
 - (void).cxx_destruct;
 - (id)accessibilityLabel;

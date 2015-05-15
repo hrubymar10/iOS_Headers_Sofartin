@@ -17,18 +17,18 @@
     double _turnaroundTime;
 }
 
-@property(assign,readonly) bool hasMapRegion;
-@property(assign,readwrite) bool hasStatusCodeInfo;
-@property(assign,readonly) bool hasSuggestionMetadata;
-@property(assign,readwrite) bool hasTurnaroundTime;
-@property(assign,retain) GEOMapRegion * mapRegion;
-@property(assign,retain) NSMutableArray * namedFeatures;
-@property(assign,retain) NSMutableArray * placeResults;
-@property(assign,readwrite) int status;
-@property(assign,readwrite) int statusCodeInfo;
-@property(assign,retain) NSMutableArray * suggestionEntryLists;
-@property(assign,retain) NSData * suggestionMetadata;
-@property(assign,readwrite) double turnaroundTime;
+@property (nonatomic, readonly) bool hasMapRegion;
+@property (nonatomic) bool hasStatusCodeInfo;
+@property (nonatomic, readonly) bool hasSuggestionMetadata;
+@property (nonatomic) bool hasTurnaroundTime;
+@property (nonatomic, retain) GEOMapRegion *mapRegion;
+@property (nonatomic, retain) NSMutableArray *namedFeatures;
+@property (nonatomic, retain) NSMutableArray *placeResults;
+@property (nonatomic) int status;
+@property (nonatomic) int statusCodeInfo;
+@property (nonatomic, retain) NSMutableArray *suggestionEntryLists;
+@property (nonatomic, retain) NSData *suggestionMetadata;
+@property (nonatomic) double turnaroundTime;
 
 - (void)_geoMapItemsWithHandler:(id)arg1;
 - (void)addNamedFeatures:(id)arg1;

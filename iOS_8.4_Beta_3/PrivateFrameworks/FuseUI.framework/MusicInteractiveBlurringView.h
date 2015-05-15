@@ -9,8 +9,8 @@
     UIView *_tintView;
 }
 
-@property(assign,readwrite) double tintAlphaProgressMultiplier;
-@property(assign,readonly) UIView * tintView;
+@property (nonatomic) double tintAlphaProgressMultiplier;
+@property (nonatomic, readonly) UIView *tintView;
 
 - (void).cxx_destruct;
 - (bool)_shouldUseHighQualityGraphics;

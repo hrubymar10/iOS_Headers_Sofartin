@@ -9,10 +9,10 @@
     NSString *_syncID;
 }
 
-@property(assign,readwrite) unsigned int chunkIndex;
-@property(assign,retain) SYMessageHeader * header;
-@property(assign,retain) NSMutableArray * objects;
-@property(assign,retain) NSString * syncID;
+@property (nonatomic) unsigned int chunkIndex;
+@property (nonatomic, retain) SYMessageHeader *header;
+@property (nonatomic, retain) NSMutableArray *objects;
+@property (nonatomic, retain) NSString *syncID;
 
 - (void).cxx_destruct;
 - (void)addObjects:(id)arg1;

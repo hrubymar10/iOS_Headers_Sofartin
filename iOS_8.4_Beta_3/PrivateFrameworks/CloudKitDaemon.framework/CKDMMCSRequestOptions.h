@@ -12,13 +12,13 @@
     NSArray *_zoneNames;
 }
 
-@property(assign,readwrite) bool allowsCellularAccess;
-@property(assign,readwrite) bool allowsPowerNapScheduling;
-@property(assign,retain) NSString * applicationBundleID;
-@property(assign,retain) NSString * applicationSecondaryID;
-@property(assign,retain) NSString * containerID;
-@property(assign,readwrite) bool usesBackgroundSession;
-@property(assign,retain) NSArray * zoneNames;
+@property (nonatomic) bool allowsCellularAccess;
+@property (nonatomic) bool allowsPowerNapScheduling;
+@property (nonatomic, retain) NSString *applicationBundleID;
+@property (nonatomic, retain) NSString *applicationSecondaryID;
+@property (nonatomic, retain) NSString *containerID;
+@property (nonatomic) bool usesBackgroundSession;
+@property (nonatomic, retain) NSArray *zoneNames;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

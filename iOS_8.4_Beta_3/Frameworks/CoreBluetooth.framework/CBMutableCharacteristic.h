@@ -8,13 +8,13 @@
     NSMutableArray *_subscribedCentrals;
 }
 
-@property(assign,retain) NSNumber * ID;
-@property(assign,retain) CBUUID * UUID;
-@property(assign,retain) NSArray * descriptors;
-@property(assign,readwrite) unsigned long long permissions;
-@property(assign,readwrite) unsigned long long properties;
-@property(assign,retain) NSArray * subscribedCentrals;
-@property(assign,retain) NSData * value;
+@property (retain) NSNumber *ID;
+@property (nonatomic, retain) CBUUID *UUID;
+@property (retain) NSArray *descriptors;
+@property (nonatomic) unsigned long long permissions;
+@property (nonatomic) unsigned long long properties;
+@property (readonly, retain) NSArray *subscribedCentrals;
+@property (retain) NSData *value;
 
 - (id)ID;
 - (void)dealloc;

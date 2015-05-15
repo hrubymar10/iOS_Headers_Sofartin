@@ -6,9 +6,9 @@
     NSArray *_uuids;
 }
 
-@property(assign,readonly) NSString * UUIDPathString;
-@property(assign,readonly) NSUUID * lastUUID;
-@property(assign,readonly) NSArray * uuids;
+@property (nonatomic, readonly) NSString *UUIDPathString;
+@property (nonatomic, readonly) NSUUID *lastUUID;
+@property (nonatomic, readonly) NSArray *uuids;
 
 + (id)lastUUIDFromUUIDPathString:(id)arg1;
 

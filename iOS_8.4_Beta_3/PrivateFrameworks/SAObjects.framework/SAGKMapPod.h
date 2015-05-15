@@ -4,10 +4,10 @@
 
 @interface SAGKMapPod : SAGKPodView
 
-@property(assign,retain) SALocation * location;
-@property(assign,retain) SAUIAppPunchOut * punchOut;
-@property(assign,copy) NSNumber * showButton;
-@property(assign,copy) NSNumber * zoomLevel;
+@property (nonatomic, retain) SALocation *location;
+@property (nonatomic, retain) SAUIAppPunchOut *punchOut;
+@property (nonatomic, copy) NSNumber *showButton;
+@property (nonatomic, copy) NSNumber *zoomLevel;
 
 + (id)mapPod;
 + (id)mapPodWithDictionary:(id)arg1 context:(id)arg2;

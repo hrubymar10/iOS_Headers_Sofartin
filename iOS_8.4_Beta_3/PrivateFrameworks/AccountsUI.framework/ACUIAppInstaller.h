@@ -14,12 +14,12 @@
     bool _resultOfLastInstallationCheck;
 }
 
-@property(assign,readwrite) <ACUIAppInstallerDelegate> * delegate;
-@property(assign,readonly) bool isAvailableInStore;
-@property(assign,readonly) bool isDownloadable;
-@property(assign,readonly) bool isInstalled;
-@property(assign,retain) NSURL * publisherURL;
-@property(assign,readonly) bool requiresReachabilityCheckToDetermineDownloadability;
+@property (nonatomic) <ACUIAppInstallerDelegate> *delegate;
+@property (nonatomic, readonly) bool isAvailableInStore;
+@property (nonatomic, readonly) bool isDownloadable;
+@property (nonatomic, readonly) bool isInstalled;
+@property (nonatomic, retain) NSURL *publisherURL;
+@property (nonatomic, readonly) bool requiresReachabilityCheckToDetermineDownloadability;
 
 + (id)currentStoreFront;
 

@@ -18,9 +18,9 @@
     NSMutableArray *_tileEdgeJunctions;
 }
 
-@property(assign,retain) NSMutableArray * oppositeCarriagewayJunctions;
-@property(assign,readwrite) bool oppositeCarriagewayJunctionsValid;
-@property(assign,retain) VKLabelTile * tile;
+@property (nonatomic, readonly, retain) NSMutableArray *oppositeCarriagewayJunctions;
+@property (nonatomic) bool oppositeCarriagewayJunctionsValid;
+@property (nonatomic, readonly, retain) VKLabelTile *tile;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -11,12 +11,12 @@
     bool _showProgressTray;
 }
 
-@property(assign,readwrite) double progress;
-@property(assign,retain) UIColor * progressBackgroundColor;
-@property(assign,retain) UIColor * progressColor;
-@property(assign,readwrite) double progressLineWidth;
-@property(assign,readwrite) long long progressStartPoint;
-@property(assign,readwrite) bool showProgressTray;
+@property (nonatomic) double progress;
+@property (nonatomic, retain) UIColor *progressBackgroundColor;
+@property (nonatomic, retain) UIColor *progressColor;
+@property (nonatomic) double progressLineWidth;
+@property (nonatomic) long long progressStartPoint;
+@property (nonatomic) bool showProgressTray;
 
 + (bool)needsDisplayForKey:(id)arg1;
 

@@ -9,8 +9,8 @@
     UISwitch *m_predictiveSwitch;
 }
 
-@property(assign,retain) NSArray * inputModes;
-@property(assign,readwrite) bool keyboardSettingsFromSwitcher;
+@property (nonatomic, retain) NSArray *inputModes;
+@property (nonatomic) bool keyboardSettingsFromSwitcher;
 
 + (id)activeInstance;
 + (id)sharedInstance;

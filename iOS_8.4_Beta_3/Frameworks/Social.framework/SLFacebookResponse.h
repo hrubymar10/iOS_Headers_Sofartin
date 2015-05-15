@@ -9,10 +9,10 @@
     NSHTTPURLResponse *_urlResponse;
 }
 
-@property(assign,readonly) int APIresponseErrorCode;
-@property(assign,readonly) long long httpErrorCode;
-@property(assign,readonly) NSDictionary * responseParameters;
-@property(assign,readonly) NSHTTPURLResponse * urlResponse;
+@property (readonly) int APIresponseErrorCode;
+@property (readonly) long long httpErrorCode;
+@property (readonly) NSDictionary *responseParameters;
+@property (readonly) NSHTTPURLResponse *urlResponse;
 
 - (void).cxx_destruct;
 - (int)APIresponseErrorCode;

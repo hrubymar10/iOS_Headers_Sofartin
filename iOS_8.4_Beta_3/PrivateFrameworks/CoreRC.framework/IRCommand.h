@@ -9,10 +9,10 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readonly) bool isRepeat;
-@property(assign,readonly) unsigned long long payload;
-@property(assign,readonly) IRProtocol * protocol;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic, readonly) bool isRepeat;
+@property (nonatomic, readonly) unsigned long long payload;
+@property (nonatomic, readonly) IRProtocol *protocol;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)dealloc;
 - (id)init;

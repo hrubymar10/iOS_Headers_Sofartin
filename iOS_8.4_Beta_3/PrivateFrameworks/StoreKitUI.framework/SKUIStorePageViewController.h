@@ -20,16 +20,16 @@
     SKUIStorePage *_storePage;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIStorePageDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isLoading,assign,readonly) bool loading;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,retain) UIRefreshControl * refreshControl;
-@property(assign,copy) SKUIStorePage * storePage;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIStorePageDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isLoading, nonatomic, readonly) bool loading;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic, retain) UIRefreshControl *refreshControl;
+@property (nonatomic, copy) SKUIStorePage *storePage;
+@property (readonly) Class superclass;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 + (id)viewControllerWithRestorationIdentifierPath:(id)arg1 coder:(id)arg2;

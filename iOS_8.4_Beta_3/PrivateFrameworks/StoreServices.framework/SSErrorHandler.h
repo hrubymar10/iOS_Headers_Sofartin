@@ -11,8 +11,8 @@
     SSXPCConnection *_observerConnection;
 }
 
-@property(assign,readwrite) <SSErrorHandlerDelegate> * delegate;
-@property(assign,copy) NSArray * failureTypes;
+@property <SSErrorHandlerDelegate> *delegate;
+@property (copy) NSArray *failureTypes;
 
 - (void)_dispatchToDelegate:(id)arg1;
 - (void)_handleMessage:(id)arg1 fromServerConnection:(id)arg2;

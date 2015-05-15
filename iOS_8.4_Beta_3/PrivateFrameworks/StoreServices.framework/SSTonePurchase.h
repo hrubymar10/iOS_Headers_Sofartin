@@ -10,15 +10,15 @@
     bool _shouldMakeDefaultTextTone;
 }
 
-@property(assign,copy) NSArray * allowedToneStyles;
-@property(assign,retain) NSNumber * assigneeIdentifier;
-@property(assign,copy) NSString * assigneeToneStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool shouldMakeDefaultRingtone;
-@property(assign,readwrite) bool shouldMakeDefaultTextTone;
-@property(assign,readonly) Class superclass;
+@property (copy) NSArray *allowedToneStyles;
+@property (retain) NSNumber *assigneeIdentifier;
+@property (copy) NSString *assigneeToneStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property bool shouldMakeDefaultRingtone;
+@property bool shouldMakeDefaultTextTone;
+@property (readonly) Class superclass;
 
 - (void)_addEntriesToDatabaseEncoding:(id)arg1;
 - (void)_setValuesUsingDatabaseEncoding:(id)arg1;

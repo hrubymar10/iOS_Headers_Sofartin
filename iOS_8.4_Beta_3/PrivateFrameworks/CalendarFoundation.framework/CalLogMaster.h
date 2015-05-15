@@ -15,14 +15,14 @@
     CalLogNode *_userNotificationNode;
 }
 
-@property(assign,retain) CalLogNode * aslNode;
-@property(assign,readwrite) bool autoFlush;
-@property(assign,readwrite) bool hasValidNotificationRegistrationToken;
-@property(assign,readwrite) int notificationRegistrationToken;
-@property(assign,retain) CalLogNode * rootConfigurationNode;
-@property(assign,retain) CalLogNode * standardOutNode;
-@property(assign,retain) NSArray * topLevelNodes;
-@property(assign,retain) CalLogNode * userNotificationNode;
+@property (nonatomic, retain) CalLogNode *aslNode;
+@property (nonatomic) bool autoFlush;
+@property (nonatomic) bool hasValidNotificationRegistrationToken;
+@property (nonatomic) int notificationRegistrationToken;
+@property (nonatomic, retain) CalLogNode *rootConfigurationNode;
+@property (nonatomic, retain) CalLogNode *standardOutNode;
+@property (nonatomic, retain) NSArray *topLevelNodes;
+@property (nonatomic, retain) CalLogNode *userNotificationNode;
 
 + (id)sharedLogMaster;
 

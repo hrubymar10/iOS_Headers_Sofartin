@@ -16,13 +16,13 @@
     double _visibleWidth;
 }
 
-@property(assign,readonly) _UITableViewCellActionButton * accessoryView;
-@property(assign,readonly) struct CGSize { double x1; double x2; } contentSize;
-@property(assign,readwrite) double cornerRadius;
-@property(assign,readonly) _UITableViewCellActionButton * deleteView;
-@property(assign,readwrite) int sectionLocation;
-@property(assign,readwrite) double visibleHeightRatio;
-@property(assign,readwrite) double visibleWidth;
+@property (nonatomic, readonly) _UITableViewCellActionButton *accessoryView;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } contentSize;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic, readonly) _UITableViewCellActionButton *deleteView;
+@property (nonatomic) int sectionLocation;
+@property (nonatomic) double visibleHeightRatio;
+@property (nonatomic) double visibleWidth;
 
 - (id)accessoryView;
 - (struct CGSize { double x1; double x2; })contentSize;

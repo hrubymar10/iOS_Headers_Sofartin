@@ -4,7 +4,7 @@
 
 @interface SAPhoneCallEmergencySnippet : SAPhoneCallSnippet
 
-@property(assign,readwrite) long long countDownSeconds;
+@property (nonatomic) long long countDownSeconds;
 
 + (id)callEmergencySnippet;
 + (id)callEmergencySnippetWithDictionary:(id)arg1 context:(id)arg2;

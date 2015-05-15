@@ -10,7 +10,7 @@
     SKUIViewElementLayoutContext *_layoutContext;
 }
 
-@property(assign,readonly) SKUIEditorialComponent * pageComponent;
+@property (nonatomic, readonly) SKUIEditorialComponent *pageComponent;
 
 - (void).cxx_destruct;
 - (id)_colorScheme;

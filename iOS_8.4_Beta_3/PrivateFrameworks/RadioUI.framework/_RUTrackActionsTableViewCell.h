@@ -13,11 +13,11 @@
     UIView *_topSeparatorView;
 }
 
-@property(assign,retain) UIImage * accessoryImage;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } accessoryImageOffset;
-@property(assign,readwrite) bool displaysAsDisabled;
-@property(assign,retain) UIImage * highlightedAccessoryImage;
-@property(assign,readwrite) bool showsTopSeparator;
+@property (nonatomic, retain) UIImage *accessoryImage;
+@property (nonatomic) struct UIOffset { double x1; double x2; } accessoryImageOffset;
+@property (nonatomic) bool displaysAsDisabled;
+@property (nonatomic, retain) UIImage *highlightedAccessoryImage;
+@property (nonatomic) bool showsTopSeparator;
 
 + (id)_textLabelFont;
 + (double)defaultHeightForTraitCollection:(id)arg1;

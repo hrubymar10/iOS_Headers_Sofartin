@@ -4,7 +4,7 @@
 
 @interface SASettingShowAndPerformSettingsAction : SABaseClientBoundCommand
 
-@property(assign,retain) <SASettingSettingsAction> * settingsAction;
+@property (nonatomic, retain) <SASettingSettingsAction> *settingsAction;
 
 + (id)showAndPerformSettingsAction;
 + (id)showAndPerformSettingsActionWithDictionary:(id)arg1 context:(id)arg2;

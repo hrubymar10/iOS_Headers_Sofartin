@@ -29,25 +29,25 @@
     bool _useSyncCollection;
 }
 
-@property(assign,readwrite) bool actionsOnly;
-@property(assign,retain) NSURL * addMemberURL;
-@property(assign,retain) NSString * bulkChangeCheckCTag;
-@property(assign,retain) NSDictionary * bulkRequests;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CoreDAVLocalDBInfoProvider> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool ensureUpdatedCTag;
-@property(assign,readonly) NSURL * folderURL;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * localItemURLOrder;
-@property(assign,readwrite) unsigned long long maxIndependentTasks;
-@property(assign,readwrite) unsigned long long multiGetBatchSize;
-@property(assign,retain) NSString * nextCTag;
-@property(assign,retain) NSString * previousCTag;
-@property(assign,retain) NSString * previousSyncToken;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useMultiGet;
-@property(assign,readwrite) bool useSyncCollection;
+@property (nonatomic) bool actionsOnly;
+@property (nonatomic, retain) NSURL *addMemberURL;
+@property (nonatomic, retain) NSString *bulkChangeCheckCTag;
+@property (nonatomic, retain) NSDictionary *bulkRequests;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CoreDAVLocalDBInfoProvider> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool ensureUpdatedCTag;
+@property (nonatomic, readonly) NSURL *folderURL;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *localItemURLOrder;
+@property (nonatomic) unsigned long long maxIndependentTasks;
+@property (nonatomic) unsigned long long multiGetBatchSize;
+@property (nonatomic, retain) NSString *nextCTag;
+@property (nonatomic, retain) NSString *previousCTag;
+@property (nonatomic, retain) NSString *previousSyncToken;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useMultiGet;
+@property (nonatomic) bool useSyncCollection;
 
 - (void)_bulkChange;
 - (void)_bulkChangeTask:(id)arg1 didFinishWithError:(id)arg2;

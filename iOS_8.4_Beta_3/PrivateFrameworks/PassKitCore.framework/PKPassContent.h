@@ -10,11 +10,11 @@
     long long _transitType;
 }
 
-@property(assign,copy) NSArray * backFieldBuckets;
-@property(assign,retain) PKImage * footerImage;
-@property(assign,copy) NSArray * frontFieldBuckets;
-@property(assign,copy) NSString * logoText;
-@property(assign,readwrite) long long transitType;
+@property (nonatomic, copy) NSArray *backFieldBuckets;
+@property (nonatomic, retain) PKImage *footerImage;
+@property (nonatomic, copy) NSArray *frontFieldBuckets;
+@property (nonatomic, copy) NSString *logoText;
+@property (nonatomic) long long transitType;
 
 + (bool)supportsSecureCoding;
 

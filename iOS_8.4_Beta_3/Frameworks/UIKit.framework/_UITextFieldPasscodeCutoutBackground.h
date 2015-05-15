@@ -10,9 +10,9 @@
     double _outlineAlpha;
 }
 
-@property(assign,readwrite) double cornerRadius;
-@property(assign,readonly) UIBezierPath * customPath;
-@property(assign,readwrite) double outlineAlpha;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic, readonly) UIBezierPath *customPath;
+@property (nonatomic) double outlineAlpha;
 
 + (id)_fillColor:(bool)arg1;
 + (id)_strokeColor:(bool)arg1;

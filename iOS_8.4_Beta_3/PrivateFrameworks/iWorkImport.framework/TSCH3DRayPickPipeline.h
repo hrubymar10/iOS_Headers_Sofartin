@@ -18,9 +18,9 @@
     TSCH3DRayPickPipelineDelegate *mSceneObjectDelegate;
 }
 
-@property(assign,readonly) TSCH3DPickedPoint * pickedPoint;
-@property(assign,readonly) NSArray * pickedPoints;
-@property(assign,readwrite) float slack;
+@property (nonatomic, readonly) TSCH3DPickedPoint *pickedPoint;
+@property (nonatomic, readonly) NSArray *pickedPoints;
+@property (nonatomic) float slack;
 
 + (id)pipelineWithScene:(id)arg1 position:(const struct tvec2<float> { union { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; union { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; }*)arg2;
 

@@ -18,21 +18,21 @@
     NSObject<OS_dispatch_queue> *_syncQueue;
 }
 
-@property(assign,readwrite) struct OpaqueAGPSession { }* agpSession;
-@property(assign,retain) NSObject<OS_dispatch_queue> * callbackQueue;
-@property(assign,readonly) NSArray * connectedPeers;
-@property(assign,retain) NSMutableDictionary * connectionPendingPeerEvents;
-@property(assign,readwrite) <MCSessionDelegate> * delegate;
-@property(assign,readonly) long long encryptionPreference;
-@property(assign,readwrite) unsigned int gckPID;
-@property(assign,readwrite) struct OpaqueGCKSession { }* gckSession;
-@property(assign,readonly) MCPeerID * myPeerID;
-@property(assign,retain) NSMutableDictionary * peerIDMap;
-@property(assign,retain) NSMutableDictionary * peerStates;
-@property(assign,readwrite) <MCSessionPrivateDelegate> * privateDelegate;
-@property(assign,readwrite) <MCSessionPrivateDelegate> * privateDelegate;
-@property(assign,readonly) NSArray * securityIdentity;
-@property(assign,retain) NSObject<OS_dispatch_queue> * syncQueue;
+@property (nonatomic) struct OpaqueAGPSession { }*agpSession;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *callbackQueue;
+@property (nonatomic, readonly) NSArray *connectedPeers;
+@property (nonatomic, retain) NSMutableDictionary *connectionPendingPeerEvents;
+@property (nonatomic) <MCSessionDelegate> *delegate;
+@property (nonatomic, readonly) long long encryptionPreference;
+@property (nonatomic) unsigned int gckPID;
+@property (nonatomic) struct OpaqueGCKSession { }*gckSession;
+@property (nonatomic, readonly) MCPeerID *myPeerID;
+@property (nonatomic, retain) NSMutableDictionary *peerIDMap;
+@property (nonatomic, retain) NSMutableDictionary *peerStates;
+@property (nonatomic) <MCSessionPrivateDelegate> *privateDelegate;
+@property (nonatomic) <MCSessionPrivateDelegate> *privateDelegate;
+@property (nonatomic, readonly) NSArray *securityIdentity;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *syncQueue;
 
 + (id)stringForMCSessionSendDataMode:(long long)arg1;
 + (id)stringForSessionState:(long long)arg1;

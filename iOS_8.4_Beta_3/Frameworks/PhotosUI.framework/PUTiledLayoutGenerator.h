@@ -49,25 +49,25 @@
     id _tileMinimumSizeBlock;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } captionPadding;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } interTileSpacing;
-@property(assign,readonly) bool isAtEnd;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } noCaptionSpacing;
-@property(assign,readwrite) long long numberOfMagneticGuidelines;
-@property(assign,readwrite) id parsedFrameBlock;
-@property(assign,readwrite) double roundingScale;
-@property(assign,readwrite) long long scanLocation;
-@property(assign,readwrite) long long scanSpecialSequenceCount;
-@property(assign,readwrite) PUTiledLayoutGeneratorScanState * scanState;
-@property(assign,readwrite) bool scannedBatchHasCaption;
-@property(assign,retain) id scannedBatchID;
-@property(assign,readwrite) bool shouldStop;
-@property(assign,copy) id tileBatchIDBlock;
-@property(assign,copy) id tileCaptionSizeBlock;
-@property(assign,readwrite) long long tileCount;
-@property(assign,copy) id tileHasCaptionBlock;
-@property(assign,copy) id tileImageSizeBlock;
-@property(assign,copy) id tileMinimumSizeBlock;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } captionPadding;
+@property (nonatomic) struct CGSize { double x1; double x2; } interTileSpacing;
+@property (nonatomic, readonly) bool isAtEnd;
+@property (nonatomic) struct CGSize { double x1; double x2; } noCaptionSpacing;
+@property (nonatomic) long long numberOfMagneticGuidelines;
+@property (nonatomic) id parsedFrameBlock;
+@property (nonatomic) double roundingScale;
+@property (nonatomic) long long scanLocation;
+@property (nonatomic) long long scanSpecialSequenceCount;
+@property (nonatomic) PUTiledLayoutGeneratorScanState *scanState;
+@property (nonatomic) bool scannedBatchHasCaption;
+@property (nonatomic, retain) id scannedBatchID;
+@property (nonatomic) bool shouldStop;
+@property (nonatomic, copy) id tileBatchIDBlock;
+@property (nonatomic, copy) id tileCaptionSizeBlock;
+@property (nonatomic) long long tileCount;
+@property (nonatomic, copy) id tileHasCaptionBlock;
+@property (nonatomic, copy) id tileImageSizeBlock;
+@property (nonatomic, copy) id tileMinimumSizeBlock;
 
 - (void).cxx_destruct;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })captionPadding;

@@ -16,17 +16,17 @@
     double _whitePointRed;
 }
 
-@property(assign,readwrite) double averageLinearBlue;
-@property(assign,readwrite) double averageLinearGreen;
-@property(assign,readwrite) double averageLinearRed;
-@property(assign,readwrite) double blackPoint;
-@property(assign,readwrite) double blackPointBlue;
-@property(assign,readwrite) double blackPointGreen;
-@property(assign,readwrite) double blackPointRed;
-@property(assign,readwrite) double whitePoint;
-@property(assign,readwrite) double whitePointBlue;
-@property(assign,readwrite) double whitePointGreen;
-@property(assign,readwrite) double whitePointRed;
+@property (nonatomic) double averageLinearBlue;
+@property (nonatomic) double averageLinearGreen;
+@property (nonatomic) double averageLinearRed;
+@property (nonatomic) double blackPoint;
+@property (nonatomic) double blackPointBlue;
+@property (nonatomic) double blackPointGreen;
+@property (nonatomic) double blackPointRed;
+@property (nonatomic) double whitePoint;
+@property (nonatomic) double whitePointBlue;
+@property (nonatomic) double whitePointGreen;
+@property (nonatomic) double whitePointRed;
 
 - (id)analysisDictionary;
 - (double)averageLinearBlue;

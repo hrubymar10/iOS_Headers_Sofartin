@@ -8,8 +8,8 @@
     UIImage *_outputImage;
 }
 
-@property(assign,copy) id createLayerBlock;
-@property(assign,readonly) UIImage * outputImage;
+@property (nonatomic, copy) id createLayerBlock;
+@property (nonatomic, readonly) UIImage *outputImage;
 
 + (void)preheatOffscreenRenderOperations;
 

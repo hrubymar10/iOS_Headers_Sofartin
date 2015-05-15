@@ -6,7 +6,7 @@
     PLXPCListenerOperatorComposition *_xpcHandler;
 }
 
-@property(assign,retain) PLXPCListenerOperatorComposition * xpcHandler;
+@property (retain) PLXPCListenerOperatorComposition *xpcHandler;
 
 + (id)entryEventIntervalDefinitions;
 + (void)load;

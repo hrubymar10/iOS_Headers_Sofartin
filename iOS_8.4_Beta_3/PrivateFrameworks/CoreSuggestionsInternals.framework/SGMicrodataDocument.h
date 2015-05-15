@@ -7,8 +7,8 @@
     NSMutableArray *_items;
 }
 
-@property(assign,readonly) NSDictionary * htmlIds;
-@property(assign,readonly) NSArray * items;
+@property (nonatomic, readonly) NSDictionary *htmlIds;
+@property (nonatomic, readonly) NSArray *items;
 
 - (void).cxx_destruct;
 - (void)addItem:(id)arg1;

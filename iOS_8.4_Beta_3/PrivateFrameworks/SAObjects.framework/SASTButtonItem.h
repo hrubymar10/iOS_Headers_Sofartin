@@ -4,14 +4,14 @@
 
 @interface SASTButtonItem : AceObject <SASTActionableTemplateItem>
 
-@property(assign,retain) <SASTTemplateAction> * action;
-@property(assign,readwrite) bool centered;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) SAUIDecoratedText * decoratedLabel;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUILocalImageResource * localImageResource;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) <SASTTemplateAction> *action;
+@property (nonatomic) bool centered;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) SAUIDecoratedText *decoratedLabel;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUILocalImageResource *localImageResource;
+@property (readonly) Class superclass;
 
 + (id)buttonItem;
 + (id)buttonItemWithDictionary:(id)arg1 context:(id)arg2;

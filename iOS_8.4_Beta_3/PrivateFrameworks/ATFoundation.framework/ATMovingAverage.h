@@ -9,8 +9,8 @@
     unsigned long long _window;
 }
 
-@property(assign,readonly) double average;
-@property(assign,readonly) unsigned long long window;
+@property (nonatomic, readonly) double average;
+@property (nonatomic, readonly) unsigned long long window;
 
 - (double)average;
 - (void)dealloc;

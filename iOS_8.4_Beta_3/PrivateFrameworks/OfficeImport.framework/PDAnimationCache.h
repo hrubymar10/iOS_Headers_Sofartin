@@ -26,27 +26,27 @@
     double mValue;
 }
 
-@property(assign,retain) PDBuild * build;
-@property(assign,readwrite) double delay;
-@property(assign,readwrite) double direction;
-@property(assign,readwrite) double duration;
-@property(assign,retain) NSString * groupId;
-@property(assign,readwrite) bool hasDelay;
-@property(assign,readwrite) bool hasDirection;
-@property(assign,readwrite) bool hasDuration;
-@property(assign,readwrite) bool hasPartCount;
-@property(assign,readwrite) bool hasValue;
-@property(assign,readwrite) bool isHead;
-@property(assign,readwrite) int iterateType;
-@property(assign,readwrite) int level;
-@property(assign,retain) PDAnimateMotionBehavior * motionPath;
-@property(assign,readwrite) int nodeType;
-@property(assign,readwrite) int partCount;
-@property(assign,readwrite) int presetClass;
-@property(assign,readwrite) int presetId;
-@property(assign,readwrite) int presetSubType;
-@property(assign,retain) PDAnimationTarget * target;
-@property(assign,readwrite) double value;
+@property (nonatomic, retain) PDBuild *build;
+@property (nonatomic) double delay;
+@property (nonatomic) double direction;
+@property (nonatomic) double duration;
+@property (nonatomic, retain) NSString *groupId;
+@property (nonatomic) bool hasDelay;
+@property (nonatomic) bool hasDirection;
+@property (nonatomic) bool hasDuration;
+@property (nonatomic) bool hasPartCount;
+@property (nonatomic) bool hasValue;
+@property (nonatomic) bool isHead;
+@property (nonatomic) int iterateType;
+@property (nonatomic) int level;
+@property (nonatomic, retain) PDAnimateMotionBehavior *motionPath;
+@property (nonatomic) int nodeType;
+@property (nonatomic) int partCount;
+@property (nonatomic) int presetClass;
+@property (nonatomic) int presetId;
+@property (nonatomic) int presetSubType;
+@property (nonatomic, retain) PDAnimationTarget *target;
+@property (nonatomic) double value;
 
 + (id)createAnimationInfoDataForCacheItem:(id)arg1 order:(unsigned int)arg2;
 + (void)loadAnimationCache:(id)arg1 pdAnimation:(id)arg2 state:(id)arg3;

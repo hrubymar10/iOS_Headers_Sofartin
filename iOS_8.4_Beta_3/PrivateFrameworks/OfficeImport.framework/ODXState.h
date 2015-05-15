@@ -7,7 +7,7 @@
     OAXDrawingState *mOfficeArtState;
 }
 
-@property(assign,retain) CXNamespace * ODXDiagramNamespace;
+@property (nonatomic, retain) CXNamespace *ODXDiagramNamespace;
 
 - (id)ODXDiagramNamespace;
 - (void)dealloc;

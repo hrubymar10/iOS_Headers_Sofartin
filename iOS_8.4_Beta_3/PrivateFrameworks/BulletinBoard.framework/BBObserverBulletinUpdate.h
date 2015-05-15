@@ -8,9 +8,9 @@
     long long _updateType;
 }
 
-@property(assign,retain) BBBulletin * bulletin;
-@property(assign,readonly) unsigned long long transactionID;
-@property(assign,readonly) long long updateType;
+@property (nonatomic, readonly, retain) BBBulletin *bulletin;
+@property (nonatomic, readonly) unsigned long long transactionID;
+@property (nonatomic, readonly) long long updateType;
 
 + (bool)supportsSecureCoding;
 

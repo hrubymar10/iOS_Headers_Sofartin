@@ -11,18 +11,18 @@
     NSMutableArray *_writePrincipalURLs;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSURL * principalURL;
-@property(assign,retain) NSMutableSet * readDetails;
-@property(assign,retain) NSSet * readOnlyPrincipalDetails;
-@property(assign,retain) NSMutableArray * readPrincipalURLs;
-@property(assign,retain) NSSet * readWritePrincipalDetails;
-@property(assign,readwrite) bool serverSupportsExpandPropertyReport;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableSet * writeDetails;
-@property(assign,retain) NSMutableArray * writePrincipalURLs;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSURL *principalURL;
+@property (nonatomic, retain) NSMutableSet *readDetails;
+@property (nonatomic, readonly, retain) NSSet *readOnlyPrincipalDetails;
+@property (nonatomic, retain) NSMutableArray *readPrincipalURLs;
+@property (nonatomic, readonly, retain) NSSet *readWritePrincipalDetails;
+@property (nonatomic) bool serverSupportsExpandPropertyReport;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMutableSet *writeDetails;
+@property (nonatomic, retain) NSMutableArray *writePrincipalURLs;
 
 - (void)_getPrincipalDetailsForURL:(id)arg1;
 - (id)_mappingsForPrincipalDetails;

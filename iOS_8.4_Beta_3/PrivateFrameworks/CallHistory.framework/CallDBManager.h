@@ -9,10 +9,10 @@
     unsigned char _notifyDataStoreChangeReason;
 }
 
-@property(assign,readwrite) unsigned char dataStoreType;
-@property(assign,retain) DBManager * dbManager;
-@property(assign,readwrite) bool deviceUnlocked;
-@property(assign,readwrite) unsigned char notifyDataStoreChangeReason;
+@property unsigned char dataStoreType;
+@property (retain) DBManager *dbManager;
+@property bool deviceUnlocked;
+@property unsigned char notifyDataStoreChangeReason;
 
 + (id)dataStoreName;
 + (id)getDBLocationIsSandboxed:(bool)arg1 isTemporary:(bool)arg2;

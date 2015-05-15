@@ -9,10 +9,10 @@
     NSArray *_shareURLs;
 }
 
-@property(assign,copy) id acceptSharesCompletionBlock;
-@property(assign,retain) NSMutableDictionary * errorsByShareURL;
-@property(assign,copy) id perShareCompletionBlock;
-@property(assign,copy) NSArray * shareURLs;
+@property (nonatomic, copy) id acceptSharesCompletionBlock;
+@property (nonatomic, retain) NSMutableDictionary *errorsByShareURL;
+@property (nonatomic, copy) id perShareCompletionBlock;
+@property (nonatomic, copy) NSArray *shareURLs;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

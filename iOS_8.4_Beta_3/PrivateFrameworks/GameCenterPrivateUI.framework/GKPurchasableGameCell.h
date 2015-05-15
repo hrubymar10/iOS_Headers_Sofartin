@@ -11,12 +11,12 @@
     GKStoreItemInternal *_storeItem;
 }
 
-@property(assign,readwrite) float capturedRating;
-@property(assign,retain) UILabel * developerLabel;
-@property(assign,retain) UILabel * numberRatings;
-@property(assign,retain) UILabel * priceLabel;
-@property(assign,retain) GKRatingView * ratingStarsView;
-@property(assign,retain) GKStoreItemInternal * storeItem;
+@property (nonatomic) float capturedRating;
+@property (nonatomic, retain) UILabel *developerLabel;
+@property (nonatomic, retain) UILabel *numberRatings;
+@property (nonatomic, retain) UILabel *priceLabel;
+@property (nonatomic, retain) GKRatingView *ratingStarsView;
+@property (nonatomic, retain) GKStoreItemInternal *storeItem;
 
 - (bool)canRemoveItem;
 - (float)capturedRating;

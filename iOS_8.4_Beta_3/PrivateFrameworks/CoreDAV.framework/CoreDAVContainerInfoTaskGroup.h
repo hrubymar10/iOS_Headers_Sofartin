@@ -11,13 +11,13 @@
     int _phase;
 }
 
-@property(assign,readwrite) int containerInfoDepth;
-@property(assign,readonly) NSSet * containerURLs;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CoreDAVContainerInfoTaskGroupDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) int containerInfoDepth;
+@property (nonatomic, readonly) NSSet *containerURLs;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CoreDAVContainerInfoTaskGroupDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)_copyContainerParserMappings;
 - (id)_copyContainerWithURL:(id)arg1 andProperties:(id)arg2;

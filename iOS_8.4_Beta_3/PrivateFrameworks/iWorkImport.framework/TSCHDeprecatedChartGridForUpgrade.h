@@ -6,7 +6,7 @@
     TSCHChartGrid *mGrid;
 }
 
-@property(assign,retain) TSCHChartGrid * grid;
+@property (nonatomic, readonly, retain) TSCHChartGrid *grid;
 
 - (void)dealloc;
 - (id)grid;

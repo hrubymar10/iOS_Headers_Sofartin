@@ -22,10 +22,10 @@
     GLKEffectPropertyTexture *_textureCubeMap;
 }
 
-@property(assign,readwrite) bool dirtyUniforms;
-@property(assign,readwrite) union _GLKMatrix3 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; float x_1_1_4; float x_1_1_5; float x_1_1_6; float x_1_1_7; float x_1_1_8; float x_1_1_9; } x1; float x2[9]; } matrix;
-@property(assign,readwrite) int matrixLoc;
-@property(assign,readonly) GLKEffectPropertyTexture * textureCubeMap;
+@property (nonatomic) bool dirtyUniforms;
+@property (nonatomic) union _GLKMatrix3 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; float x_1_1_4; float x_1_1_5; float x_1_1_6; float x_1_1_7; float x_1_1_8; float x_1_1_9; } x1; float x2[9]; } matrix;
+@property (nonatomic) int matrixLoc;
+@property (nonatomic, readonly) GLKEffectPropertyTexture *textureCubeMap;
 
 - (void)dealloc;
 - (id)description;

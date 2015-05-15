@@ -10,10 +10,10 @@
     NSString *_procName;
 }
 
-@property(assign,readwrite) unsigned int duration;
-@property(assign,readwrite) bool hasDuration;
-@property(assign,readonly) bool hasProcName;
-@property(assign,retain) NSString * procName;
+@property (nonatomic) unsigned int duration;
+@property (nonatomic) bool hasDuration;
+@property (nonatomic, readonly) bool hasProcName;
+@property (nonatomic, retain) NSString *procName;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -6,7 +6,7 @@
     NSMutableArray *_shares;
 }
 
-@property(assign,retain) NSMutableArray * shares;
+@property (nonatomic, retain) NSMutableArray *shares;
 
 - (void).cxx_destruct;
 - (void)addShare:(id)arg1;

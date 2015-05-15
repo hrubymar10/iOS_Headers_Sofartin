@@ -6,7 +6,7 @@
     CBUUID *_UUID;
 }
 
-@property(assign,retain) CBUUID * UUID;
+@property (nonatomic, retain) CBUUID *UUID;
 
 - (id)UUID;
 - (void)dealloc;

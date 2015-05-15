@@ -15,12 +15,12 @@
     NSString *_rottenTomatoesText;
 }
 
-@property(assign,readonly) NSString * descriptionFirstLine;
-@property(assign,readonly) NSString * descriptionSecondLine;
-@property(assign,readonly) double rating;
-@property(assign,readonly) NSString * ratingText;
-@property(assign,readonly) bool rottenTomatoesInformationOnSecondLine;
-@property(assign,readonly) NSString * rottenTomatoesText;
+@property (nonatomic, readonly) NSString *descriptionFirstLine;
+@property (nonatomic, readonly) NSString *descriptionSecondLine;
+@property (nonatomic, readonly) double rating;
+@property (nonatomic, readonly) NSString *ratingText;
+@property (nonatomic, readonly) bool rottenTomatoesInformationOnSecondLine;
+@property (nonatomic, readonly) NSString *rottenTomatoesText;
 
 - (void).cxx_destruct;
 - (id)descriptionFirstLine;

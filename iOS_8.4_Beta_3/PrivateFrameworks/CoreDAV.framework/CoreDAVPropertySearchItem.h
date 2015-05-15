@@ -8,9 +8,9 @@
     CoreDAVLeafItem *_prop;
 }
 
-@property(assign,retain) NSString * match;
-@property(assign,retain) NSString * matchTypeAttribute;
-@property(assign,retain) CoreDAVLeafItem * prop;
+@property (nonatomic, retain) NSString *match;
+@property (nonatomic, retain) NSString *matchTypeAttribute;
+@property (nonatomic, retain) CoreDAVLeafItem *prop;
 
 - (void)dealloc;
 - (id)description;

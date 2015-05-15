@@ -4,10 +4,10 @@
 
 @interface PLManagedFace : PLManagedObject
 
-@property(assign,retain) NSString * albumUUID;
-@property(assign,retain) PLManagedAsset * asset;
-@property(assign,readwrite) short identifier;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } relativeRect;
+@property (nonatomic, retain) NSString *albumUUID;
+@property (nonatomic, retain) PLManagedAsset *asset;
+@property (nonatomic) short identifier;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } relativeRect;
 
 + (id)entityInManagedObjectContext:(id)arg1;
 + (id)entityName;

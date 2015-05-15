@@ -12,12 +12,12 @@
     SSXPCConnection *_responseConnection;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SSRequestDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool shouldCancelAfterTaskExpiration;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SSRequestDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool shouldCancelAfterTaskExpiration;
+@property (readonly) Class superclass;
 
 - (void)__beginBackgroundTask;
 - (void)__endBackgroundTask;

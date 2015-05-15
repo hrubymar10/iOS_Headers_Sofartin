@@ -10,11 +10,11 @@
     NSString *_videoType;
 }
 
-@property(assign,readonly) double bitRate;
-@property(assign,readonly) unsigned long long mediaAssetType;
-@property(assign,readonly) bool powerRequired;
-@property(assign,readonly) bool useCellular;
-@property(assign,readonly) NSString * videoType;
+@property (nonatomic, readonly) double bitRate;
+@property (nonatomic, readonly) unsigned long long mediaAssetType;
+@property (nonatomic, readonly) bool powerRequired;
+@property (nonatomic, readonly) bool useCellular;
+@property (nonatomic, readonly) NSString *videoType;
 
 + (id)videoDerivativeSpecificationsWithDictionaryArray:(id)arg1;
 

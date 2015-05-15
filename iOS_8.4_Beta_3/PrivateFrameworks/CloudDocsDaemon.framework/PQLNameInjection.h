@@ -4,11 +4,11 @@
 
 @interface PQLNameInjection : PQLNameInjectionBase <PQLInjecting>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSData * sql;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSData *sql;
+@property (readonly) Class superclass;
 
 + (id)_appendString:(id)arg1 toInjection:(id)arg2;
 + (id)nameWithPrefix:(id)arg1 suffix:(id)arg2;

@@ -47,18 +47,18 @@
     } _viewToMaskTransform;
 }
 
-@property(assign,readwrite) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } flippedViewToMaskTransform;
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } inverseFlippedViewToMaskTransform;
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } inverseViewToMaskTransform;
-@property(assign,readonly) NSMutableArray * layers;
-@property(assign,readwrite) int maskLongEdgeSize;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } maskSize;
-@property(assign,readwrite) bool shouldNotify;
-@property(assign,readwrite) NSDictionary * strokesDataDictionary;
-@property(assign,readwrite) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } viewToMaskTransform;
-@property(assign,retain) UIImage * workingImage;
-@property(assign,retain) BLPixelImageBuffer * workingImageBuffer;
-@property(assign,readwrite) double workingImageScaleFactor;
+@property (nonatomic) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } flippedViewToMaskTransform;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } inverseFlippedViewToMaskTransform;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } inverseViewToMaskTransform;
+@property (nonatomic, readonly) NSMutableArray *layers;
+@property (nonatomic) int maskLongEdgeSize;
+@property (nonatomic) struct CGSize { double x1; double x2; } maskSize;
+@property (nonatomic) bool shouldNotify;
+@property (nonatomic) NSDictionary *strokesDataDictionary;
+@property (nonatomic) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } viewToMaskTransform;
+@property (nonatomic, retain) UIImage *workingImage;
+@property (nonatomic, retain) BLPixelImageBuffer *workingImageBuffer;
+@property (nonatomic) double workingImageScaleFactor;
 
 - (struct CGImage { }*)brushImageRefWithSize:(float)arg1 softness:(float)arg2;
 - (void)dealloc;

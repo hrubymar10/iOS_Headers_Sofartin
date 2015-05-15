@@ -7,10 +7,10 @@
     UIView *_dividerView;
 }
 
-@property(setter=_setContentBackdropOverlayBlendMode:,assign,readwrite) long long _contentBackdropOverlayBlendMode;
-@property(setter=_setDividerView:,assign,retain) UIView * _dividerView;
-@property(assign,readwrite) long long contentBackdropOverlayBlendMode;
-@property(assign,retain) UIColor * contentBackgroundColor;
+@property (setter=_setContentBackdropOverlayBlendMode:, nonatomic) long long _contentBackdropOverlayBlendMode;
+@property (setter=_setDividerView:, nonatomic, retain) UIView *_dividerView;
+@property (nonatomic) long long contentBackdropOverlayBlendMode;
+@property (nonatomic, retain) UIColor *contentBackgroundColor;
 
 - (long long)_contentBackdropOverlayBlendMode;
 - (id)_dividerView;

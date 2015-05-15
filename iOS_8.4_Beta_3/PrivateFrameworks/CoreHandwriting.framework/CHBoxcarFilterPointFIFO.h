@@ -7,8 +7,8 @@
     unsigned long long _width;
 }
 
-@property(assign,retain) NSMutableArray * prevPoints;
-@property(assign,readwrite) unsigned long long width;
+@property (nonatomic, retain) NSMutableArray *prevPoints;
+@property (nonatomic) unsigned long long width;
 
 - (void)addPoint:(struct CGPoint { double x1; double x2; })arg1;
 - (void)clear;

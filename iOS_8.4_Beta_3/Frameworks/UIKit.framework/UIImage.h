@@ -25,25 +25,25 @@
     UITraitCollection *_traitCollection;
 }
 
-@property(assign,readonly) struct CGImage { }* CGImage;
-@property(assign,readonly) CIImage * CIImage;
-@property(assign,readonly) struct CGImage { }* _gkCGImage;
-@property(assign,readonly) long long _gkImageOrientation;
-@property(assign,readonly) double _gkScale;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } alignmentRectInsets;
-@property(assign,readonly) MPArtworkCatalog * artworkCatalog;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } capInsets;
-@property(assign,readonly) double duration;
-@property(assign,retain) UIImageAsset * imageAsset;
-@property(assign,readonly) long long imageOrientation;
-@property(assign,readonly) NSArray * images;
-@property(assign,readonly) long long leftCapWidth;
-@property(assign,readonly) long long renderingMode;
-@property(assign,readonly) long long resizingMode;
-@property(assign,readonly) double scale;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) long long topCapHeight;
-@property(assign,copy) UITraitCollection * traitCollection;
+@property (nonatomic, readonly) struct CGImage { }*CGImage;
+@property (nonatomic, readonly) CIImage *CIImage;
+@property (readonly) struct CGImage { }*_gkCGImage;
+@property (readonly) long long _gkImageOrientation;
+@property (readonly) double _gkScale;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } alignmentRectInsets;
+@property (nonatomic, readonly) MPArtworkCatalog *artworkCatalog;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } capInsets;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic, retain) UIImageAsset *imageAsset;
+@property (nonatomic, readonly) long long imageOrientation;
+@property (nonatomic, readonly) NSArray *images;
+@property (nonatomic, readonly) long long leftCapWidth;
+@property (nonatomic, readonly) long long renderingMode;
+@property (nonatomic, readonly) long long resizingMode;
+@property (nonatomic, readonly) double scale;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) long long topCapHeight;
+@property (nonatomic, copy) UITraitCollection *traitCollection;
 
 + (id)APDImageNamed:(id)arg1;
 + (id)APDStretchyImageNamed:(id)arg1 hStretch:(bool)arg2 vStretch:(bool)arg3;

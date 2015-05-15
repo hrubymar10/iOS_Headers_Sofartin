@@ -10,17 +10,17 @@
     TSWPChangeSession *_session;
 }
 
-@property(assign,readonly) TSUColor * changeAdornmentsColor;
-@property(assign,readwrite) bool changeWasAddedToDocumentRoot;
-@property(assign,retain) NSDate * date;
-@property(getter=isHidden,assign,readonly) bool hidden;
-@property(assign,readonly) bool isDeletion;
-@property(assign,readonly) bool isInsertion;
-@property(assign,readwrite) TSWPStorage * parentStorage;
-@property(assign,retain) TSWPChangeSession * session;
-@property(assign,readonly) bool showsHiddenDeletionMarkup;
-@property(assign,readonly) bool showsMarkup;
-@property(assign,readonly) TSUColor * textMarkupColor;
+@property (nonatomic, readonly) TSUColor *changeAdornmentsColor;
+@property (nonatomic) bool changeWasAddedToDocumentRoot;
+@property (nonatomic, retain) NSDate *date;
+@property (getter=isHidden, nonatomic, readonly) bool hidden;
+@property (nonatomic, readonly) bool isDeletion;
+@property (nonatomic, readonly) bool isInsertion;
+@property (nonatomic) TSWPStorage *parentStorage;
+@property (nonatomic, retain) TSWPChangeSession *session;
+@property (nonatomic, readonly) bool showsHiddenDeletionMarkup;
+@property (nonatomic, readonly) bool showsMarkup;
+@property (nonatomic, readonly) TSUColor *textMarkupColor;
 
 - (void)adoptStylesheet:(id)arg1 withMapper:(id)arg2;
 - (bool)canMergeWithKind:(int)arg1 session:(id)arg2;

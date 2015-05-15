@@ -6,7 +6,7 @@
     TSCHChartValueAxisLabelsLayoutItem *mValueLabels;
 }
 
-@property(assign,readonly) TSCHChartValueAxisLabelsLayoutItem * axisValueLabelsLayoutItem;
+@property (nonatomic, readonly) TSCHChartValueAxisLabelsLayoutItem *axisValueLabelsLayoutItem;
 
 - (id)axisValueLabelsLayoutItem;
 - (void)buildSubTree;

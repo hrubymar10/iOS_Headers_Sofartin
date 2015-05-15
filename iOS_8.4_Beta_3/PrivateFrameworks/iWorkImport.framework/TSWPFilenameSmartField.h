@@ -6,7 +6,7 @@
     unsigned int _displayFlags;
 }
 
-@property(assign,readwrite) unsigned int displayFlags;
+@property (nonatomic) unsigned int displayFlags;
 
 - (bool)allowsPasteAsSmartField;
 - (id)copyWithContext:(id)arg1;

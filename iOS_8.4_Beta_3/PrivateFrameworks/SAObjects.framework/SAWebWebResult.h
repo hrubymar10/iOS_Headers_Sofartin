@@ -4,13 +4,13 @@
 
 @interface SAWebWebResult : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * descriptionText;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSURL * url;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *descriptionText;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSURL *url;
 
 + (id)webResult;
 + (id)webResultWithDictionary:(id)arg1 context:(id)arg2;

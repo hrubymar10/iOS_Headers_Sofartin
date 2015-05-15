@@ -6,8 +6,8 @@
     AVTextStyleRuleInternal *_textStyleRule;
 }
 
-@property(assign,readonly) NSDictionary * textMarkupAttributes;
-@property(assign,readonly) NSString * textSelector;
+@property (nonatomic, readonly) NSDictionary *textMarkupAttributes;
+@property (nonatomic, readonly) NSString *textSelector;
 
 + (id)propertyListForTextStyleRules:(id)arg1;
 + (id)textStyleRuleWithTextMarkupAttributes:(id)arg1;

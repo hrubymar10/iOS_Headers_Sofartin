@@ -7,8 +7,8 @@
     void *_layoutsLibraryHandle;
 }
 
-@property(assign,retain) NSMutableDictionary * internalCache;
-@property(assign,readonly) void* layoutsLibraryHandle;
+@property (retain) NSMutableDictionary *internalCache;
+@property (nonatomic, readonly) void*layoutsLibraryHandle;
 
 + (id)layoutsFileName;
 + (id)sharedKeyboardFactory;

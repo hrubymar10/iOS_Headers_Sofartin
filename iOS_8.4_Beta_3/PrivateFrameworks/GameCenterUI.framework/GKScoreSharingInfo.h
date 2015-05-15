@@ -11,12 +11,12 @@
     GKPlayer *_player;
 }
 
-@property(assign,retain) UIImage * badgeImage;
-@property(assign,readwrite) bool complete;
-@property(assign,retain) GKGame * game;
-@property(assign,retain) UIImage * iconImage;
-@property(assign,retain) GKLeaderboard * leaderboardCategory;
-@property(assign,retain) GKPlayer * player;
+@property (nonatomic, retain) UIImage *badgeImage;
+@property (nonatomic) bool complete;
+@property (nonatomic, retain) GKGame *game;
+@property (nonatomic, retain) UIImage *iconImage;
+@property (nonatomic, retain) GKLeaderboard *leaderboardCategory;
+@property (nonatomic, retain) GKPlayer *player;
 
 + (bool)supportsSecureCoding;
 

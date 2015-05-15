@@ -16,17 +16,17 @@
     NSString *_totalGiftAmountString;
 }
 
-@property(assign,copy) NSDate * deliveryDate;
-@property(assign,readwrite) long long giftAmount;
-@property(assign,copy) NSString * giftAmountString;
-@property(assign,readonly) long long giftCategory;
-@property(assign,readonly) SKUIItem * item;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSArray * recipientAddresses;
-@property(assign,copy) NSString * senderEmailAddress;
-@property(assign,copy) NSString * senderName;
-@property(assign,copy) SKUIGiftTheme * theme;
-@property(assign,copy) NSString * totalGiftAmountString;
+@property (nonatomic, copy) NSDate *deliveryDate;
+@property (nonatomic) long long giftAmount;
+@property (nonatomic, copy) NSString *giftAmountString;
+@property (nonatomic, readonly) long long giftCategory;
+@property (nonatomic, readonly) SKUIItem *item;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSArray *recipientAddresses;
+@property (nonatomic, copy) NSString *senderEmailAddress;
+@property (nonatomic, copy) NSString *senderName;
+@property (nonatomic, copy) SKUIGiftTheme *theme;
+@property (nonatomic, copy) NSString *totalGiftAmountString;
 
 - (void).cxx_destruct;
 - (id)HTTPBodyDictionary;

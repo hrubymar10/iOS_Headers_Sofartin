@@ -7,8 +7,8 @@
     double _maximumNeighbourDistance;
 }
 
-@property(assign,readwrite) double maximumDistanceForAligningEdges;
-@property(assign,readwrite) double maximumNeighbourDistance;
+@property (nonatomic) double maximumDistanceForAligningEdges;
+@property (nonatomic) double maximumNeighbourDistance;
 
 - (id)_groupablesForItems:(id)arg1;
 - (id)init;

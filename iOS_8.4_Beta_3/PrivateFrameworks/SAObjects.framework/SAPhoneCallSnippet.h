@@ -4,7 +4,7 @@
 
 @interface SAPhoneCallSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * calls;
+@property (nonatomic, copy) NSArray *calls;
 
 + (id)callSnippet;
 + (id)callSnippetWithDictionary:(id)arg1 context:(id)arg2;

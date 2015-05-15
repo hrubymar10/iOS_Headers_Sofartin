@@ -18,15 +18,15 @@
     long long _previousCollectionsCount;
 }
 
-@property(assign,copy) NSArray * changedIndexPaths;
-@property(assign,copy) NSIndexSet * changedSections;
-@property(assign,copy) NSArray * contentChangedIndexPaths;
-@property(assign,copy) NSArray * deletedIndexPaths;
-@property(assign,copy) NSIndexSet * deletedSections;
-@property(assign,readonly) bool hasIncrementalChanges;
-@property(assign,copy) NSArray * insertedIndexPaths;
-@property(assign,copy) NSIndexSet * insertedSections;
-@property(assign,readonly) PHChange * originatingPhotoLibraryChange;
+@property (readonly, copy) NSArray *changedIndexPaths;
+@property (readonly, copy) NSIndexSet *changedSections;
+@property (readonly, copy) NSArray *contentChangedIndexPaths;
+@property (readonly, copy) NSArray *deletedIndexPaths;
+@property (readonly, copy) NSIndexSet *deletedSections;
+@property (readonly) bool hasIncrementalChanges;
+@property (readonly, copy) NSArray *insertedIndexPaths;
+@property (readonly, copy) NSIndexSet *insertedSections;
+@property (readonly) PHChange *originatingPhotoLibraryChange;
 
 - (void).cxx_destruct;
 - (void)_prepareIncrementalDetails;

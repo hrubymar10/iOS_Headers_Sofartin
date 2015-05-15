@@ -22,25 +22,25 @@
     bool _transient;
 }
 
-@property(assign,copy) NSString * avalancheUUID;
-@property(assign,copy) CIFilter * effectFilter;
-@property(getter=isFinalResponse,assign,readwrite) bool finalResponse;
-@property(assign,copy) id stillImageCompletionBlock;
-@property(assign,retain) UIImage * stillImageFilteredPreviewImage;
-@property(assign,readwrite) struct __IOSurface { }* stillImageFilteredPreviewSurface;
-@property(assign,retain) NSData * stillImageJPEGData;
-@property(assign,retain) NSMutableDictionary * stillImageJob;
-@property(assign,copy) NSDictionary * stillImageMetadata;
-@property(assign,retain) UIImage * stillImageOriginalImage;
-@property(assign,readwrite) struct opaqueCMSampleBuffer { }* stillImageOriginalSampleBuffer;
-@property(assign,readwrite) struct __IOSurface { }* stillImageOriginalSurface;
-@property(assign,readwrite) unsigned long long stillImageOriginalSurfaceSize;
-@property(assign,copy) id stillImageRequestEnqueuedBlock;
-@property(assign,retain) UIImage * stillImageUnfilteredPreviewImage;
-@property(assign,readwrite) struct __IOSurface { }* stillImageUnfilteredPreviewSurface;
-@property(assign,readonly) UIImage * thumbnailImage;
-@property(assign,copy) NSString * timelapseDestinationPath;
-@property(getter=isTransient,assign,readwrite) bool transient;
+@property (nonatomic, copy) NSString *avalancheUUID;
+@property (nonatomic, copy) CIFilter *effectFilter;
+@property (getter=isFinalResponse, nonatomic) bool finalResponse;
+@property (nonatomic, copy) id stillImageCompletionBlock;
+@property (nonatomic, retain) UIImage *stillImageFilteredPreviewImage;
+@property (nonatomic) struct __IOSurface { }*stillImageFilteredPreviewSurface;
+@property (nonatomic, retain) NSData *stillImageJPEGData;
+@property (nonatomic, retain) NSMutableDictionary *stillImageJob;
+@property (nonatomic, readonly, copy) NSDictionary *stillImageMetadata;
+@property (nonatomic, retain) UIImage *stillImageOriginalImage;
+@property (nonatomic) struct opaqueCMSampleBuffer { }*stillImageOriginalSampleBuffer;
+@property (nonatomic) struct __IOSurface { }*stillImageOriginalSurface;
+@property (nonatomic) unsigned long long stillImageOriginalSurfaceSize;
+@property (nonatomic, copy) id stillImageRequestEnqueuedBlock;
+@property (nonatomic, retain) UIImage *stillImageUnfilteredPreviewImage;
+@property (nonatomic) struct __IOSurface { }*stillImageUnfilteredPreviewSurface;
+@property (nonatomic, readonly) UIImage *thumbnailImage;
+@property (nonatomic, copy) NSString *timelapseDestinationPath;
+@property (getter=isTransient, nonatomic) bool transient;
 
 - (void).cxx_destruct;
 - (id)avalancheUUID;

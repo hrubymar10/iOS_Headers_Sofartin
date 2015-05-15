@@ -6,7 +6,7 @@
     id _internal;
 }
 
-@property(assign,copy) id gestureHandler;
+@property (copy) id gestureHandler;
 
 + (bool)isGestureServiceAvailable;
 + (bool)isGestureServiceEnabled;

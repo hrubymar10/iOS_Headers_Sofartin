@@ -10,7 +10,7 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readwrite) <CECBusPollingOperationDelegate> * delegate;
+@property (nonatomic) <CECBusPollingOperationDelegate> *delegate;
 
 - (void)continuePolling;
 - (void)dealloc;

@@ -9,12 +9,12 @@
     float mTop;
 }
 
-@property(assign,readwrite) float bottom;
-@property(assign,readonly) float height;
-@property(assign,readwrite) float left;
-@property(assign,readwrite) float right;
-@property(assign,readwrite) float top;
-@property(assign,readonly) float width;
+@property (nonatomic) float bottom;
+@property (nonatomic, readonly) float height;
+@property (nonatomic) float left;
+@property (nonatomic) float right;
+@property (nonatomic) float top;
+@property (nonatomic, readonly) float width;
 
 - (float)bottom;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

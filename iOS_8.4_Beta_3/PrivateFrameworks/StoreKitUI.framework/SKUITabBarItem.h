@@ -14,15 +14,15 @@
     UIColor *_userInterfaceTintColor;
 }
 
-@property(assign,readwrite) bool alwaysCreatesRootViewController;
-@property(assign,readwrite) long long barTintStyle;
-@property(assign,retain) UIViewController * customRootViewController;
-@property(assign,copy) NSString * metricsIdentifier;
-@property(assign,copy) NSURL * rootURL;
-@property(assign,retain) Class rootViewControllerClass;
-@property(assign,readonly) NSString * tabIdentifier;
-@property(assign,retain) UITabBarItem * underlyingTabBarItem;
-@property(assign,retain) UIColor * userInterfaceTintColor;
+@property (nonatomic) bool alwaysCreatesRootViewController;
+@property (nonatomic) long long barTintStyle;
+@property (nonatomic, retain) UIViewController *customRootViewController;
+@property (nonatomic, copy) NSString *metricsIdentifier;
+@property (nonatomic, copy) NSURL *rootURL;
+@property (nonatomic, retain) Class rootViewControllerClass;
+@property (nonatomic, readonly) NSString *tabIdentifier;
+@property (nonatomic, retain) UITabBarItem *underlyingTabBarItem;
+@property (nonatomic, retain) UIColor *userInterfaceTintColor;
 
 - (void).cxx_destruct;
 - (bool)alwaysCreatesRootViewController;

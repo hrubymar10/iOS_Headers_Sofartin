@@ -11,12 +11,12 @@
     NSString *_text;
 }
 
-@property(assign,readwrite) long long confidenceScore;
-@property(assign,readwrite) double endTime;
-@property(assign,readwrite) bool removeSpaceAfter;
-@property(assign,readwrite) bool removeSpaceBefore;
-@property(assign,readwrite) double startTime;
-@property(assign,copy) NSString * text;
+@property (nonatomic) long long confidenceScore;
+@property (nonatomic) double endTime;
+@property (nonatomic) bool removeSpaceAfter;
+@property (nonatomic) bool removeSpaceBefore;
+@property (nonatomic) double startTime;
+@property (nonatomic, copy) NSString *text;
 
 + (bool)supportsSecureCoding;
 

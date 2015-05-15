@@ -4,14 +4,14 @@
 
 @interface SAAnswerLinkedAnswer : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * descriptionText;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * image;
-@property(assign,copy) NSURL * link;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *descriptionText;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURL *image;
+@property (nonatomic, copy) NSURL *link;
+@property (nonatomic, copy) NSString *name;
+@property (readonly) Class superclass;
 
 + (id)linkedAnswer;
 + (id)linkedAnswerWithDictionary:(id)arg1 context:(id)arg2;

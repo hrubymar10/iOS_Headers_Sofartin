@@ -4,8 +4,8 @@
 
 @interface SAStockReference : SADomainObject
 
-@property(assign,copy) NSString * companyName;
-@property(assign,copy) NSString * symbol;
+@property (nonatomic, copy) NSString *companyName;
+@property (nonatomic, copy) NSString *symbol;
 
 + (id)reference;
 + (id)referenceWithDictionary:(id)arg1 context:(id)arg2;

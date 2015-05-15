@@ -10,8 +10,8 @@
     NSObject<OS_xpc_object> *_x_reply_connection;
 }
 
-@property(assign,copy) NSDictionary * info;
-@property(assign,readonly) NSString * name;
+@property (nonatomic, copy) NSDictionary *info;
+@property (nonatomic, readonly) NSString *name;
 
 - (void).cxx_destruct;
 - (id)_createXPCMessage;

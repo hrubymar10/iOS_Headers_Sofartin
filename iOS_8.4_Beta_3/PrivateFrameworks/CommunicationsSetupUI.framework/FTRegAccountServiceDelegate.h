@@ -9,14 +9,14 @@
     NSDictionary *_responseDictionary;
 }
 
-@property(assign,retain) IDSAccountController * accountController;
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CNFRegController * regController;
-@property(assign,copy) NSDictionary * responseDictionary;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) IDSAccountController *accountController;
+@property (nonatomic, copy) id completionHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CNFRegController *regController;
+@property (nonatomic, copy) NSDictionary *responseDictionary;
+@property (readonly) Class superclass;
 
 - (bool)_account:(id)arg1 matchesSetupParameters:(id)arg2;
 - (void)_cleanup;

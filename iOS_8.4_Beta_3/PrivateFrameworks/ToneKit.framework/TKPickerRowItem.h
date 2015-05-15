@@ -6,7 +6,7 @@
     long long _row;
 }
 
-@property(assign,readwrite) long long row;
+@property (nonatomic) long long row;
 
 - (void)_appendDescriptionOfAttributesToString:(id)arg1;
 - (void)_setRow:(long long)arg1;

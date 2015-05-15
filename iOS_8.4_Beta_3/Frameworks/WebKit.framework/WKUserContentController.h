@@ -11,7 +11,7 @@
     } _userScripts;
 }
 
-@property(assign,copy) NSArray * userScripts;
+@property (nonatomic, readonly, copy) NSArray *userScripts;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

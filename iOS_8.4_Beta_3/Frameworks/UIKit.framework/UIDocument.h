@@ -40,23 +40,23 @@
     NSMutableArray *_versions;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSDocumentDifferenceSize * differenceDueToRecentChanges;
-@property(assign,readonly) NSDocumentDifferenceSize * differenceSincePreservingPreviousVersion;
-@property(assign,readonly) NSDocumentDifferenceSize * differenceSinceSaving;
-@property(assign,readonly) unsigned long long documentState;
-@property(getter=_isEditingDisabled,setter=_setEditingDisabled:,assign,readwrite) bool editingDisabled;
-@property(assign,copy) NSDate * fileModificationDate;
-@property(assign,copy) NSString * fileType;
-@property(assign,readonly) NSURL * fileURL;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * localizedName;
-@property(assign,retain) NSOperationQueue * presentedItemOperationQueue;
-@property(assign,copy) NSURL * presentedItemURL;
-@property(assign,copy) NSURL * primaryPresentedItemURL;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSUndoManager * undoManager;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSDocumentDifferenceSize *differenceDueToRecentChanges;
+@property (nonatomic, readonly) NSDocumentDifferenceSize *differenceSincePreservingPreviousVersion;
+@property (nonatomic, readonly) NSDocumentDifferenceSize *differenceSinceSaving;
+@property (readonly) unsigned long long documentState;
+@property (getter=_isEditingDisabled, setter=_setEditingDisabled:) bool editingDisabled;
+@property (copy) NSDate *fileModificationDate;
+@property (readonly, copy) NSString *fileType;
+@property (readonly) NSURL *fileURL;
+@property (readonly) unsigned long long hash;
+@property (readonly, copy) NSString *localizedName;
+@property (readonly, retain) NSOperationQueue *presentedItemOperationQueue;
+@property (readonly, copy) NSURL *presentedItemURL;
+@property (readonly, copy) NSURL *primaryPresentedItemURL;
+@property (readonly) Class superclass;
+@property (retain) NSUndoManager *undoManager;
 
 + (void)_autosavingTimerDidFireSoContinue:(id)arg1;
 + (id)_customizationOfError:(id)arg1 withDescription:(id)arg2 recoverySuggestion:(id)arg3 recoveryAttempter:(id)arg4;

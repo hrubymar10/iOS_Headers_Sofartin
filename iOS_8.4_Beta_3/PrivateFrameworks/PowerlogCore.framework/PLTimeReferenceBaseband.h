@@ -7,8 +7,8 @@
     bool _followupCurrentTimeRunning;
 }
 
-@property(assign,retain) PLNSNotificationOperatorComposition * basebandTimeNotification;
-@property(assign,readwrite) bool followupCurrentTimeRunning;
+@property (retain) PLNSNotificationOperatorComposition *basebandTimeNotification;
+@property bool followupCurrentTimeRunning;
 
 - (void).cxx_destruct;
 - (id)basebandTimeNotification;

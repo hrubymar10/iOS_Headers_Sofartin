@@ -11,12 +11,12 @@
     NSMutableSet *_topicsCache;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isConnected;
-@property(assign,readonly) NSData * pushToken;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isConnected;
+@property (nonatomic, readonly) NSData *pushToken;
+@property (readonly) Class superclass;
 
 + (id)sharedInstance;
 

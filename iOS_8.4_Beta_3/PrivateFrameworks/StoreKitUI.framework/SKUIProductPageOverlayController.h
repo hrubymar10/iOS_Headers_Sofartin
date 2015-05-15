@@ -10,16 +10,16 @@
     UIViewController *_parentViewController;
 }
 
-@property(assign,readonly) NSArray * URLs;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIProductPageOverlayDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long numberOfVisibleOverlays;
-@property(assign,readonly) UIViewController * parentViewController;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIView * view;
+@property (nonatomic, readonly) NSArray *URLs;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIProductPageOverlayDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long numberOfVisibleOverlays;
+@property (nonatomic, readonly) UIViewController *parentViewController;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UIView *view;
 
 - (void).cxx_destruct;
 - (id)URLs;

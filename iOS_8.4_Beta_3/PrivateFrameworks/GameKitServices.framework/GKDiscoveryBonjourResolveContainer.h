@@ -8,9 +8,9 @@
     NSMutableArray *_serviceRefList;
 }
 
-@property(assign,readwrite) GKDiscoveryBonjour * context;
-@property(assign,copy) id resolveCompletionHandler;
-@property(assign,retain) NSMutableArray * serviceRefList;
+@property (nonatomic) GKDiscoveryBonjour *context;
+@property (nonatomic, copy) id resolveCompletionHandler;
+@property (nonatomic, retain) NSMutableArray *serviceRefList;
 
 - (id)context;
 - (void)dealloc;

@@ -6,7 +6,7 @@
     PUEditPlugin *_plugin;
 }
 
-@property(assign,readonly) PUEditPlugin * plugin;
+@property (nonatomic, readonly) PUEditPlugin *plugin;
 
 + (long long)activityCategory;
 

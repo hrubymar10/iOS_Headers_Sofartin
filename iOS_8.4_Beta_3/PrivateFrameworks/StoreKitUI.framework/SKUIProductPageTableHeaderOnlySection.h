@@ -6,7 +6,7 @@
     UIView *_headerView;
 }
 
-@property(assign,retain) UIView * headerView;
+@property (nonatomic, retain) UIView *headerView;
 
 - (void).cxx_destruct;
 - (id)headerView;

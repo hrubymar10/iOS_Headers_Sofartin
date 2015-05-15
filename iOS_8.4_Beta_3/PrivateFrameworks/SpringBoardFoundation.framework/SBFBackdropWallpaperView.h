@@ -7,7 +7,7 @@
     SBFBackdropStatisticsProvider *_statisticsProvider;
 }
 
-@property(assign,readwrite) bool colorSamplingEnabled;
+@property (nonatomic) bool colorSamplingEnabled;
 
 + (bool)_allowsParallax;
 

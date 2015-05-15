@@ -13,15 +13,15 @@
     bool _wantsImmediateHandlingOfEditingChangeRecords;
 }
 
-@property(assign,readonly) MusicEntityViewDescriptor * entityViewDescriptor;
-@property(assign,copy) NSString * iconName;
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) bool supportsSplitView;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSArray * userActivityItemTypes;
-@property(assign,retain) Class viewControllerClass;
-@property(assign,readwrite) bool wantsImmediateHandlingOfEditingChangeRecords;
-@property(assign,readonly) bool wantsVisualIndicationOfSelection;
+@property (nonatomic, readonly) MusicEntityViewDescriptor *entityViewDescriptor;
+@property (nonatomic, copy) NSString *iconName;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic) bool supportsSplitView;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSArray *userActivityItemTypes;
+@property (nonatomic, retain) Class viewControllerClass;
+@property (nonatomic) bool wantsImmediateHandlingOfEditingChangeRecords;
+@property (nonatomic, readonly) bool wantsVisualIndicationOfSelection;
 
 - (void).cxx_destruct;
 - (void)applyEntityProviderChangeRecords:(id)arg1;

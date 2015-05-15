@@ -9,8 +9,8 @@
     bool _invalidatingSections;
 }
 
-@property(assign,retain) PULayoutSectioning * baseSectioning;
-@property(assign,readwrite) <PULayoutSectioningDelegate> * delegate;
+@property (nonatomic, retain) PULayoutSectioning *baseSectioning;
+@property (nonatomic) <PULayoutSectioningDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (long long)__debugUnsampledIndexForRealIndexPath:(struct PUSimpleIndexPath { long long x1; long long x2; })arg1;

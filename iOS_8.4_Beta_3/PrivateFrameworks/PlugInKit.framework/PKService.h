@@ -12,17 +12,17 @@
     NSArray *_subsystems;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * _sync;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) <PKServiceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableDictionary * personalities;
-@property(assign,retain) NSXPCListener * serviceListener;
-@property(assign,readwrite) bool shared;
-@property(assign,retain) PKServicePersonality * solePersonality;
-@property(assign,retain) NSArray * subsystems;
-@property(assign,readonly) Class superclass;
+@property (retain) NSObject<OS_dispatch_queue> *_sync;
+@property (readonly, copy) NSString *debugDescription;
+@property (retain) <PKServiceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) NSMutableDictionary *personalities;
+@property (retain) NSXPCListener *serviceListener;
+@property bool shared;
+@property (retain) PKServicePersonality *solePersonality;
+@property (retain) NSArray *subsystems;
+@property (readonly) Class superclass;
 
 + (int)_defaultRun:(int)arg1 arguments:(const char **)arg2;
 + (id)defaultService;

@@ -17,10 +17,10 @@
     NSArray *_wordsToSetAfterAnimations;
 }
 
-@property(assign,readonly) NSLayoutManager * streamingLayoutManager;
-@property(assign,readonly) NSTextContainer * streamingTextContainer;
-@property(assign,readonly) NSTextStorage * streamingTextStorage;
-@property(assign,copy) NSArray * words;
+@property (nonatomic, readonly) NSLayoutManager *streamingLayoutManager;
+@property (nonatomic, readonly) NSTextContainer *streamingTextContainer;
+@property (nonatomic, readonly) NSTextStorage *streamingTextStorage;
+@property (nonatomic, copy) NSArray *words;
 
 - (void)_commitFinalResults;
 - (void)animateText;

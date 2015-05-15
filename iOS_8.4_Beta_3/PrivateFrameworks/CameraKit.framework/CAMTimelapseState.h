@@ -18,20 +18,20 @@
     bool _usingFrontCamera;
 }
 
-@property(assign,readwrite) bool allFramesWritten;
-@property(assign,readwrite) int captureOrientation;
-@property(assign,readonly) double captureTimeInterval;
-@property(assign,readonly) long long connectionMode;
-@property(assign,readwrite) float focusLensPosition;
-@property(assign,readonly) long long frameIndexStride;
-@property(assign,retain) NSDate * lastFrameResponseTime;
-@property(assign,readonly) long long nextFrameIndex;
-@property(assign,retain) CLLocation * startLocation;
-@property(assign,retain) NSDate * startTime;
-@property(assign,readwrite) long long stopReasons;
-@property(assign,retain) NSDate * stopTime;
-@property(assign,retain) NSString * timelapseUUID;
-@property(getter=isUsingFrontCamera,assign,readwrite) bool usingFrontCamera;
+@property (nonatomic) bool allFramesWritten;
+@property (nonatomic) int captureOrientation;
+@property (nonatomic, readonly) double captureTimeInterval;
+@property (nonatomic, readonly) long long connectionMode;
+@property (nonatomic) float focusLensPosition;
+@property (nonatomic, readonly) long long frameIndexStride;
+@property (nonatomic, retain) NSDate *lastFrameResponseTime;
+@property (nonatomic, readonly) long long nextFrameIndex;
+@property (nonatomic, retain) CLLocation *startLocation;
+@property (nonatomic, retain) NSDate *startTime;
+@property (nonatomic) long long stopReasons;
+@property (nonatomic, retain) NSDate *stopTime;
+@property (nonatomic, retain) NSString *timelapseUUID;
+@property (getter=isUsingFrontCamera, nonatomic) bool usingFrontCamera;
 
 + (double)maxTimeToWaitForWrittenFrameAfterStop;
 + (id)stateWithContentsOfFile:(id)arg1;

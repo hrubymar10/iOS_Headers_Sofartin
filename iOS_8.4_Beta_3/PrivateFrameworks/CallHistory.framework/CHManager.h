@@ -25,26 +25,26 @@
     long long _unreadCallCount;
 }
 
-@property(assign,retain) id addressBookChangedNotificationRef;
-@property(assign,readwrite) bool cacheIsDirty;
-@property(assign,copy) NSString * coalescingStrategy;
-@property(assign,retain) id databaseChangedNotificationRef;
-@property(assign,readwrite) bool generateSyncTransactions;
-@property(assign,readwrite) unsigned int limitingCallTypes;
-@property(assign,copy) NSDate * limitingEndDate;
-@property(assign,copy) NSDate * limitingStartDate;
-@property(assign,readwrite) long long numberOfUnseenMissedCalls;
-@property(assign,copy) NSPredicate * postFetchingPredicate;
-@property(assign,readwrite) bool reCoalesce;
-@property(assign,retain) NSArray * recentCalls;
-@property(assign,readwrite) bool showsFaceTimeAudioCalls;
-@property(assign,readwrite) bool showsFaceTimeCalls;
-@property(assign,readwrite) bool showsFaceTimeVideoCalls;
-@property(assign,readwrite) bool showsTelephonyCalls;
-@property(assign,retain) <SyncManagerProtocol> * syncManager;
-@property(getter=uncoalescedRecentCallsSync,assign,retain) NSArray * uncoalescedRecentCalls;
-@property(assign,retain) NSArray * uncoalescedUnFilteredRecentCalls;
-@property(assign,readwrite) long long unreadCallCount;
+@property (retain) id addressBookChangedNotificationRef;
+@property bool cacheIsDirty;
+@property (nonatomic, copy) NSString *coalescingStrategy;
+@property (retain) id databaseChangedNotificationRef;
+@property bool generateSyncTransactions;
+@property (nonatomic) unsigned int limitingCallTypes;
+@property (nonatomic, copy) NSDate *limitingEndDate;
+@property (nonatomic, copy) NSDate *limitingStartDate;
+@property long long numberOfUnseenMissedCalls;
+@property (nonatomic, copy) NSPredicate *postFetchingPredicate;
+@property bool reCoalesce;
+@property (nonatomic, retain) NSArray *recentCalls;
+@property (nonatomic) bool showsFaceTimeAudioCalls;
+@property (nonatomic) bool showsFaceTimeCalls;
+@property (nonatomic) bool showsFaceTimeVideoCalls;
+@property (nonatomic) bool showsTelephonyCalls;
+@property (retain) <SyncManagerProtocol> *syncManager;
+@property (getter=uncoalescedRecentCallsSync, nonatomic, retain) NSArray *uncoalescedRecentCalls;
+@property (retain) NSArray *uncoalescedUnFilteredRecentCalls;
+@property long long unreadCallCount;
 
 + (unsigned int)CHCallStatusForCallWithDuration:(double)arg1 isOriginated:(bool)arg2 isAnswered:(bool)arg3;
 

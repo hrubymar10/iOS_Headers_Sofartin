@@ -46,8 +46,8 @@
     } _uncoveredTransform;
 }
 
-@property(assign,copy) UIColor * primaryColor;
-@property(assign,readwrite) bool revealed;
+@property (nonatomic, copy) UIColor *primaryColor;
+@property (nonatomic) bool revealed;
 
 + (id)defaultActions;
 

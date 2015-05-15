@@ -23,7 +23,7 @@
     double smoothingCoefficient;
 }
 
-@property(assign,readwrite) int blendMode;
+@property (nonatomic) int blendMode;
 
 + (void)initialize;
 

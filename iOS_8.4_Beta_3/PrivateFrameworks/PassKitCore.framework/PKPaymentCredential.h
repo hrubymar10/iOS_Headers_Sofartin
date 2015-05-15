@@ -22,26 +22,26 @@
     NSURL *_termsURL;
 }
 
-@property(assign,copy) NSString * applicationIdentifier;
-@property(assign,copy) NSString * cardSecurityCode;
-@property(assign,readonly) NSString * cardTypeDescription;
-@property(assign,copy) NSString * cardholderName;
-@property(assign,readwrite) long long credentialType;
-@property(assign,readwrite) long long eligibilityStatus;
-@property(assign,readonly) NSString * eligibilityStatusDescription;
-@property(assign,copy) NSString * expiration;
-@property(assign,copy) NSURL * iconURL;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * longDescription;
-@property(assign,copy) NSURL * passURL;
-@property(assign,copy) NSString * primaryAccountNumber;
-@property(assign,copy) NSString * primaryAccountNumberPrefix;
-@property(assign,copy) NSString * region;
-@property(assign,copy) NSString * sanitizedPrimaryAccountNumber;
-@property(assign,readwrite) long long status;
-@property(assign,readonly) NSString * statusDescription;
-@property(assign,copy) NSString * termsID;
-@property(assign,copy) NSURL * termsURL;
+@property (nonatomic, copy) NSString *applicationIdentifier;
+@property (nonatomic, copy) NSString *cardSecurityCode;
+@property (nonatomic, readonly) NSString *cardTypeDescription;
+@property (nonatomic, copy) NSString *cardholderName;
+@property (nonatomic) long long credentialType;
+@property (nonatomic) long long eligibilityStatus;
+@property (nonatomic, readonly) NSString *eligibilityStatusDescription;
+@property (nonatomic, copy) NSString *expiration;
+@property (nonatomic, copy) NSURL *iconURL;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSString *longDescription;
+@property (nonatomic, copy) NSURL *passURL;
+@property (nonatomic, copy) NSString *primaryAccountNumber;
+@property (nonatomic, copy) NSString *primaryAccountNumberPrefix;
+@property (nonatomic, copy) NSString *region;
+@property (nonatomic, copy) NSString *sanitizedPrimaryAccountNumber;
+@property (nonatomic) long long status;
+@property (nonatomic, readonly) NSString *statusDescription;
+@property (nonatomic, copy) NSString *termsID;
+@property (nonatomic, copy) NSURL *termsURL;
 
 + (id)credentialWithDictionary:(id)arg1;
 + (bool)supportsSecureCoding;

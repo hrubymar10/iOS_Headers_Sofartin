@@ -7,8 +7,8 @@
     NSString *_key;
 }
 
-@property(assign,retain) NSData * encodedValue;
-@property(assign,retain) NSString * key;
+@property (nonatomic, retain) NSData *encodedValue;
+@property (nonatomic, retain) NSString *key;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

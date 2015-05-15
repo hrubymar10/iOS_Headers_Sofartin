@@ -8,10 +8,10 @@
     NSString *_platform;
 }
 
-@property(assign,readonly) unsigned long long majorVersion;
-@property(assign,readonly) unsigned long long minorVersion;
-@property(assign,copy) NSString * platform;
-@property(assign,readonly) NSString * string;
+@property (nonatomic, readonly) unsigned long long majorVersion;
+@property (nonatomic, readonly) unsigned long long minorVersion;
+@property (nonatomic, readonly, copy) NSString *platform;
+@property (nonatomic, readonly) NSString *string;
 
 + (id)versionFromString:(id)arg1;
 + (id)versionWithMajor:(unsigned long long)arg1 minor:(unsigned long long)arg2 platform:(id)arg3;

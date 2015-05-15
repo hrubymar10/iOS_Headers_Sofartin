@@ -14,15 +14,15 @@
     bool _usesUppercaseLettersForSectionHeaderTitles;
 }
 
-@property(assign,retain) MusicEntityViewContentDescriptor * defaultContentDescriptor;
-@property(assign,retain) MusicEntityViewContentDescriptor * defaultSectionHeaderContentDescriptor;
-@property(assign,retain) <MusicEntityProviding> * entityProvider;
-@property(assign,readwrite) bool rightSeparatorInsetFollowsLayoutMargin;
-@property(assign,readwrite) long long sectionHeaderHairlineStyleForNonFloatingState;
-@property(assign,retain) UIColor * sectionHeaderTextColorForNonFloatingState;
-@property(assign,readwrite) double sectionHeaderTopContentInset;
-@property(assign,readwrite) bool sectionHeaderViewsFloat;
-@property(assign,readwrite) bool usesUppercaseLettersForSectionHeaderTitles;
+@property (nonatomic, retain) MusicEntityViewContentDescriptor *defaultContentDescriptor;
+@property (nonatomic, retain) MusicEntityViewContentDescriptor *defaultSectionHeaderContentDescriptor;
+@property (nonatomic, retain) <MusicEntityProviding> *entityProvider;
+@property (nonatomic) bool rightSeparatorInsetFollowsLayoutMargin;
+@property (nonatomic) long long sectionHeaderHairlineStyleForNonFloatingState;
+@property (nonatomic, retain) UIColor *sectionHeaderTextColorForNonFloatingState;
+@property (nonatomic) double sectionHeaderTopContentInset;
+@property (nonatomic) bool sectionHeaderViewsFloat;
+@property (nonatomic) bool usesUppercaseLettersForSectionHeaderTitles;
 
 - (void).cxx_destruct;
 - (id)contentDescriptorForIndexPath:(id)arg1;

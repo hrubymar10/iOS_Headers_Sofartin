@@ -12,8 +12,8 @@
     NSObject<OS_dispatch_source> *_timerSource;
 }
 
-@property(assign,retain) NSDate * fireDate;
-@property(assign,readonly) bool isValid;
+@property (nonatomic, retain) NSDate *fireDate;
+@property (nonatomic, readonly) bool isValid;
 
 - (void)_callTarget;
 - (void)_cleanupTimer;

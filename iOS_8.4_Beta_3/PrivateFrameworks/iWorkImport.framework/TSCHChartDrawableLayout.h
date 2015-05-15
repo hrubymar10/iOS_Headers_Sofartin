@@ -21,22 +21,22 @@
     bool mSuppressChartLayoutInvalidation;
 }
 
-@property(assign,readonly) TSCHChartInfo * chartInfo;
-@property(assign,retain) TSCHChartLayout * chartLayout;
-@property(assign,readwrite) unsigned long long dataSetIndex;
-@property(assign,readonly) bool is3DChart;
-@property(assign,copy) TSDLayoutGeometry * legendGeometry;
-@property(assign,copy) TSDLayoutGeometry * legendModelGeometry;
-@property(assign,readonly) TSCHChartModel * model;
-@property(assign,retain) TSCHChartLayout * p_chartLayout;
-@property(assign,retain) TSCHChartLayout * p_chartLayoutNoCreate;
-@property(assign,copy) TSDLayoutGeometry * p_lastChartAreaGeometry;
-@property(assign,copy) TSDLayoutGeometry * p_lastPureGeometry;
-@property(assign,copy) TSDLayoutGeometry * p_legendGeometryForResize;
-@property(assign,retain) TSCHChartDrawableLayoutLegendResizer * p_legendResizer;
-@property(assign,readonly) NSIndexSet * pieWedgeExplosionSeriesIndices;
-@property(assign,copy) NSArray * pieWedgeExplosions;
-@property(assign,copy) NSDictionary * seriesIndexedPieWedgeExplosions;
+@property (nonatomic, readonly) TSCHChartInfo *chartInfo;
+@property (nonatomic, readonly, retain) TSCHChartLayout *chartLayout;
+@property (nonatomic) unsigned long long dataSetIndex;
+@property (nonatomic, readonly) bool is3DChart;
+@property (nonatomic, copy) TSDLayoutGeometry *legendGeometry;
+@property (nonatomic, copy) TSDLayoutGeometry *legendModelGeometry;
+@property (nonatomic, readonly) TSCHChartModel *model;
+@property (nonatomic, readonly, retain) TSCHChartLayout *p_chartLayout;
+@property (nonatomic, retain) TSCHChartLayout *p_chartLayoutNoCreate;
+@property (nonatomic, copy) TSDLayoutGeometry *p_lastChartAreaGeometry;
+@property (nonatomic, copy) TSDLayoutGeometry *p_lastPureGeometry;
+@property (nonatomic, copy) TSDLayoutGeometry *p_legendGeometryForResize;
+@property (nonatomic, retain) TSCHChartDrawableLayoutLegendResizer *p_legendResizer;
+@property (nonatomic, readonly) NSIndexSet *pieWedgeExplosionSeriesIndices;
+@property (nonatomic, copy) NSArray *pieWedgeExplosions;
+@property (nonatomic, copy) NSDictionary *seriesIndexedPieWedgeExplosions;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })alignmentFrame;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })alignmentFrameForProvidingGuidesInRoot;

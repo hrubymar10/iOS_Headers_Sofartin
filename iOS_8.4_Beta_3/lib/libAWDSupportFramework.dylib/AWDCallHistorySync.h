@@ -13,12 +13,12 @@
     unsigned int _uploadRecordCount;
 }
 
-@property(assign,readwrite) unsigned int downloadRecordCount;
-@property(assign,readwrite) bool hasDownloadRecordCount;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasUploadRecordCount;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int uploadRecordCount;
+@property (nonatomic) unsigned int downloadRecordCount;
+@property (nonatomic) bool hasDownloadRecordCount;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasUploadRecordCount;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int uploadRecordCount;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

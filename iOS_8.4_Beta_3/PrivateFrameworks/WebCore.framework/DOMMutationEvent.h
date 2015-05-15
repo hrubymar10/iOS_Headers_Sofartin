@@ -4,11 +4,11 @@
 
 @interface DOMMutationEvent : DOMEvent
 
-@property(assign,readonly) unsigned short attrChange;
-@property(assign,copy) NSString * attrName;
-@property(assign,copy) NSString * newValue;
-@property(assign,copy) NSString * prevValue;
-@property(assign,readonly) DOMNode * relatedNode;
+@property (readonly) unsigned short attrChange;
+@property (readonly, copy) NSString *attrName;
+@property (readonly, copy) NSString *newValue;
+@property (readonly, copy) NSString *prevValue;
+@property (readonly) DOMNode *relatedNode;
 
 - (unsigned short)attrChange;
 - (id)attrName;

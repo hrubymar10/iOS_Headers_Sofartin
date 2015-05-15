@@ -13,8 +13,8 @@
     NSURL *_url;
 }
 
-@property(assign,copy) id updateHandler;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, copy) id updateHandler;
+@property (readonly) NSURL *url;
 
 - (void)dealloc;
 - (void)disableUpdates;

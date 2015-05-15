@@ -13,12 +13,12 @@
     UIInterpolatingMotionEffect *_verticalSlideEffect;
 }
 
-@property(assign,readwrite) double horizontalSlideAccelerationBoostFactor;
-@property(assign,readwrite) double maximumHorizontalTiltAngle;
-@property(assign,readwrite) double maximumVerticalTiltAngle;
-@property(assign,readwrite) double rotatingSphereRadius;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } slideMagnitude;
-@property(assign,readwrite) double verticalSlideAccelerationBoostFactor;
+@property (nonatomic) double horizontalSlideAccelerationBoostFactor;
+@property (nonatomic) double maximumHorizontalTiltAngle;
+@property (nonatomic) double maximumVerticalTiltAngle;
+@property (nonatomic) double rotatingSphereRadius;
+@property (nonatomic) struct UIOffset { double x1; double x2; } slideMagnitude;
+@property (nonatomic) double verticalSlideAccelerationBoostFactor;
 
 - (void)_activateTiltEffectIfNecessary;
 - (id)_keyPathsAndRelativeValuesForPose:(id)arg1;

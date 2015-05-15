@@ -15,16 +15,16 @@
     GEOWalkingOptions *_walkingOptions;
 }
 
-@property(assign,readonly) NSArray * additionalTransportTypesRequested;
-@property(assign,readonly) NSDate * arrivalDate;
-@property(assign,readonly) GEOAutomobileOptions * automobileOptions;
-@property(assign,readonly) GEOLocation * currentLocation;
-@property(assign,readonly) NSDate * departureDate;
-@property(assign,readonly) GEOComposedWaypoint * destinationWaypoint;
-@property(assign,readonly) bool includeDistance;
-@property(assign,readonly) GEOComposedWaypoint * sourceWaypoint;
-@property(assign,readonly) int transportType;
-@property(assign,readonly) GEOWalkingOptions * walkingOptions;
+@property (nonatomic, readonly) NSArray *additionalTransportTypesRequested;
+@property (nonatomic, readonly) NSDate *arrivalDate;
+@property (nonatomic, readonly) GEOAutomobileOptions *automobileOptions;
+@property (nonatomic, readonly) GEOLocation *currentLocation;
+@property (nonatomic, readonly) NSDate *departureDate;
+@property (nonatomic, readonly) GEOComposedWaypoint *destinationWaypoint;
+@property (nonatomic, readonly) bool includeDistance;
+@property (nonatomic, readonly) GEOComposedWaypoint *sourceWaypoint;
+@property (nonatomic, readonly) int transportType;
+@property (nonatomic, readonly) GEOWalkingOptions *walkingOptions;
 
 - (id)additionalTransportTypesRequested;
 - (id)arrivalDate;

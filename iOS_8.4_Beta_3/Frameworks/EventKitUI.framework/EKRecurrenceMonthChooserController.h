@@ -7,8 +7,8 @@
     bool _prohibitsMultipleMonthsInYearlyRecurrence;
 }
 
-@property(assign,retain) NSArray * monthsOfTheYear;
-@property(assign,readwrite) bool prohibitsMultipleMonthsInYearlyRecurrence;
+@property (nonatomic, retain) NSArray *monthsOfTheYear;
+@property (nonatomic) bool prohibitsMultipleMonthsInYearlyRecurrence;
 
 - (void).cxx_destruct;
 - (id)cellLabels;

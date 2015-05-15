@@ -4,8 +4,8 @@
 
 @interface SASStartCorrectedSpeechRequest : SAStartRequest
 
-@property(assign,copy) NSString * interactionId;
-@property(assign,copy) NSString * sessionId;
+@property (nonatomic, copy) NSString *interactionId;
+@property (nonatomic, copy) NSString *sessionId;
 
 + (id)startCorrectedSpeechRequest;
 + (id)startCorrectedSpeechRequestWithDictionary:(id)arg1 context:(id)arg2;

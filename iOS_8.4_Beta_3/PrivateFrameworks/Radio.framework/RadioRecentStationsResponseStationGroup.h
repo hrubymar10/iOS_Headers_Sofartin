@@ -6,9 +6,9 @@
     NSDictionary *_responseDictionary;
 }
 
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,copy) NSString * localizedTitle;
-@property(assign,copy) NSArray * stationDictionaries;
+@property (getter=isActive, nonatomic, readonly) bool active;
+@property (nonatomic, readonly, copy) NSString *localizedTitle;
+@property (nonatomic, readonly, copy) NSArray *stationDictionaries;
 
 - (void).cxx_destruct;
 - (id)initWithResponseDictionary:(id)arg1;

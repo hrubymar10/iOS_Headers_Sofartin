@@ -6,7 +6,7 @@
     UILabel *_label;
 }
 
-@property(assign,retain) UILabel * label;
+@property (nonatomic, retain) UILabel *label;
 
 - (void)dealloc;
 - (id)label;

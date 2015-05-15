@@ -20,21 +20,21 @@
     NSNumber *_updateCount;
 }
 
-@property(assign,readwrite) bool allDay;
-@property(assign,retain) NSString * calendarName;
-@property(assign,readwrite) unsigned int changeType;
-@property(assign,retain) NSNumber * createCount;
-@property(assign,readwrite) bool dateChanged;
-@property(assign,retain) NSNumber * deleteCount;
-@property(assign,retain) NSDate * endDate;
-@property(assign,retain) NSString * eventID;
-@property(assign,retain) NSString * location;
-@property(assign,readwrite) bool locationChanged;
-@property(assign,retain) NSDate * startDate;
-@property(assign,retain) NSDate * startDateForNextOccurrence;
-@property(assign,readwrite) bool timeChanged;
-@property(assign,readwrite) bool titleChanged;
-@property(assign,retain) NSNumber * updateCount;
+@property (nonatomic) bool allDay;
+@property (nonatomic, retain) NSString *calendarName;
+@property (nonatomic) unsigned int changeType;
+@property (nonatomic, retain) NSNumber *createCount;
+@property (nonatomic) bool dateChanged;
+@property (nonatomic, retain) NSNumber *deleteCount;
+@property (nonatomic, retain) NSDate *endDate;
+@property (nonatomic, retain) NSString *eventID;
+@property (nonatomic, retain) NSString *location;
+@property (nonatomic) bool locationChanged;
+@property (nonatomic, retain) NSDate *startDate;
+@property (nonatomic, retain) NSDate *startDateForNextOccurrence;
+@property (nonatomic) bool timeChanged;
+@property (nonatomic) bool titleChanged;
+@property (nonatomic, retain) NSNumber *updateCount;
 
 - (bool)allDay;
 - (id)calendarName;

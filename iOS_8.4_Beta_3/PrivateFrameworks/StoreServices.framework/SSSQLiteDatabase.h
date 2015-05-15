@@ -15,8 +15,8 @@
     long long _taskAssertionCount;
 }
 
-@property(assign,copy) id setupBlock;
-@property(assign,readwrite) bool takesTaskCompletionAssertions;
+@property (nonatomic, copy) id setupBlock;
+@property bool takesTaskCompletionAssertions;
 
 + (void)_setTakesTaskCompletionAssertions:(bool)arg1;
 + (void)_stepStatement:(struct sqlite3_stmt { }*)arg1 hasRow:(bool*)arg2 didFinish:(bool*)arg3 isCorrupt:(bool*)arg4;

@@ -9,15 +9,15 @@
     NSString *_title;
 }
 
-@property(assign,copy) BBAction * action;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSData * glyphData;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) BBImage * image;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) BBAction *action;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSData *glyphData;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) BBImage *image;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
 
 + (id)_possiblyCachedButtonForInitializedButton:(id)arg1;
 + (void)_removeButtonFromCache:(id)arg1;

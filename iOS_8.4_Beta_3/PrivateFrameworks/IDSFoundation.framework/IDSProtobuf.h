@@ -7,11 +7,11 @@
     NSData *_uncompressedData;
 }
 
-@property(assign,retain) IDSMessageContext * context;
-@property(assign,retain) NSData * data;
-@property(assign,readwrite) bool isResponse;
-@property(assign,readwrite) unsigned short type;
-@property(assign,retain) NSData * uncompressedData;
+@property (nonatomic, retain) IDSMessageContext *context;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic) bool isResponse;
+@property (nonatomic) unsigned short type;
+@property (nonatomic, retain) NSData *uncompressedData;
 
 + (id)keyRepresentationForType:(unsigned short)arg1 isResponse:(bool)arg2;
 

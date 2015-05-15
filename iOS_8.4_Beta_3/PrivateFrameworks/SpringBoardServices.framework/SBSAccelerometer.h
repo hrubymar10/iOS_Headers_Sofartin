@@ -7,17 +7,17 @@
     <SBSAccelerometerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) bool accelerometerEventsEnabled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SBSAccelerometerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool orientationEventsEnabled;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double updateInterval;
-@property(assign,readwrite) float xThreshold;
-@property(assign,readwrite) float yThreshold;
-@property(assign,readwrite) float zThreshold;
+@property (nonatomic) bool accelerometerEventsEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SBSAccelerometerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool orientationEventsEnabled;
+@property (readonly) Class superclass;
+@property (nonatomic) double updateInterval;
+@property (nonatomic) float xThreshold;
+@property (nonatomic) float yThreshold;
+@property (nonatomic) float zThreshold;
 
 - (void)accelerometer:(id)arg1 didAccelerateWithTimeStamp:(double)arg2 x:(float)arg3 y:(float)arg4 z:(float)arg5 eventType:(int)arg6;
 - (void)accelerometer:(id)arg1 didChangeDeviceOrientation:(int)arg2;

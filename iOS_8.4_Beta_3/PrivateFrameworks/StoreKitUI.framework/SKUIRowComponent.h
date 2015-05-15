@@ -11,12 +11,12 @@
     bool _shouldAutoFlow;
 }
 
-@property(assign,readonly) UIColor * backgroundColor;
-@property(assign,readonly) NSArray * childComponents;
-@property(assign,readonly) NSArray * columnWidths;
-@property(assign,readonly) long long numberOfColumns;
-@property(assign,readonly) bool shouldAutoFlow;
-@property(assign,readonly) SKUIRowViewElement * viewElement;
+@property (nonatomic, readonly) UIColor *backgroundColor;
+@property (nonatomic, readonly) NSArray *childComponents;
+@property (nonatomic, readonly) NSArray *columnWidths;
+@property (nonatomic, readonly) long long numberOfColumns;
+@property (nonatomic, readonly) bool shouldAutoFlow;
+@property (nonatomic, readonly) SKUIRowViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (id)_childComponentWithContext:(id)arg1;

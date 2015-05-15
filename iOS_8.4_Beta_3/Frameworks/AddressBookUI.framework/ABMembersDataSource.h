@@ -17,14 +17,14 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,readwrite) void* addressBook;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ABMembersDataSourceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) ABModel * model;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) void*addressBook;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ABMembersDataSourceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) ABModel *model;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
+@property (readonly) Class superclass;
 
 - (void)_invalidateMeCard;
 - (void*)addressBook;

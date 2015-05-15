@@ -6,7 +6,7 @@
     bool _shouldPlayLightsAndSirens;
 }
 
-@property(assign,readonly) bool shouldPlayLightsAndSirens;
+@property (nonatomic, readonly) bool shouldPlayLightsAndSirens;
 
 + (bool)supportsSecureCoding;
 

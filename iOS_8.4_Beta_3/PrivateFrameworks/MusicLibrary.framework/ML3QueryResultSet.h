@@ -13,10 +13,10 @@
     NSMutableArray *_updateToLibraryCurrentRevisionCompletionBlocks;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) long long localRevision;
-@property(assign,readonly) ML3Query * query;
-@property(assign,readonly) long long revision;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, readonly) long long localRevision;
+@property (nonatomic, readonly) ML3Query *query;
+@property (nonatomic, readonly) long long revision;
 
 - (void).cxx_destruct;
 - (id)_initWithQuery:(id)arg1 supportsIncrementalUpdate:(bool)arg2;

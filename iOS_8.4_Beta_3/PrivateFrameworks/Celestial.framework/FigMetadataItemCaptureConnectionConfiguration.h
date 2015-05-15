@@ -7,8 +7,8 @@
     struct opaqueCMFormatDescription { } *_formatDescription;
 }
 
-@property(assign,retain) struct OpaqueCMClock { }* clock;
-@property(assign,retain) struct opaqueCMFormatDescription { }* formatDescription;
+@property (nonatomic, retain) struct OpaqueCMClock { }*clock;
+@property (nonatomic, retain) struct opaqueCMFormatDescription { }*formatDescription;
 
 - (struct OpaqueCMClock { }*)clock;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

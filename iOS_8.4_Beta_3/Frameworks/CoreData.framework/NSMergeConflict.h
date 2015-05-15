@@ -11,12 +11,12 @@
     id _source;
 }
 
-@property(assign,retain) NSDictionary * cachedSnapshot;
-@property(assign,readonly) unsigned long long newVersionNumber;
-@property(assign,retain) NSDictionary * objectSnapshot;
-@property(assign,readonly) unsigned long long oldVersionNumber;
-@property(assign,retain) NSDictionary * persistedSnapshot;
-@property(assign,retain) NSManagedObject * sourceObject;
+@property (readonly, retain) NSDictionary *cachedSnapshot;
+@property (readonly) unsigned long long newVersionNumber;
+@property (readonly, retain) NSDictionary *objectSnapshot;
+@property (readonly) unsigned long long oldVersionNumber;
+@property (readonly, retain) NSDictionary *persistedSnapshot;
+@property (readonly, retain) NSManagedObject *sourceObject;
 
 - (id)ancestorSnapshot;
 - (id)cachedSnapshot;

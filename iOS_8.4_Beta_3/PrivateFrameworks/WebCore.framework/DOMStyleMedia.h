@@ -4,7 +4,7 @@
 
 @interface DOMStyleMedia : DOMObject
 
-@property(assign,copy) NSString * type;
+@property (readonly, copy) NSString *type;
 
 - (void)dealloc;
 - (void)finalize;

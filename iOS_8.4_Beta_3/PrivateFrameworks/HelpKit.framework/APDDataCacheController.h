@@ -13,8 +13,8 @@
     unsigned long long _maxDataCacheSize;
 }
 
-@property(assign,retain) NSMutableArray * dataCacheArray;
-@property(assign,retain) NSString * locale;
+@property (nonatomic, retain) NSMutableArray *dataCacheArray;
+@property (nonatomic, retain) NSString *locale;
 
 + (void)removeInstance;
 + (id)sharedInstance;

@@ -4,8 +4,8 @@
 
 @interface AVAudioUnitDistortion : AVAudioUnitEffect
 
-@property(assign,readwrite) float preGain;
-@property(assign,readwrite) float wetDryMix;
+@property (nonatomic) float preGain;
+@property (nonatomic) float wetDryMix;
 
 - (struct AUPreset { int x1; struct __CFString {} *x2; })FillOutAUPreset:(long long)arg1;
 - (id)init;

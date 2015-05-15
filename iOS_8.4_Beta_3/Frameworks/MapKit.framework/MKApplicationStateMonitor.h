@@ -10,9 +10,9 @@
     unsigned long long _observerCount;
 }
 
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,readwrite) bool forceBackboardServicesMonitoring;
-@property(getter=isInBackground,assign,readonly) bool inBackground;
+@property (getter=isActive, nonatomic, readonly) bool active;
+@property (nonatomic) bool forceBackboardServicesMonitoring;
+@property (getter=isInBackground, nonatomic, readonly) bool inBackground;
 
 + (id)sharedInstance;
 

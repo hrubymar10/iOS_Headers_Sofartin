@@ -4,13 +4,13 @@
 
 @interface CAContext : NSObject
 
-@property(assign,readwrite) struct CGColorSpace { }* colorSpace;
-@property(assign,readonly) unsigned int contextId;
-@property(assign,retain) CALayer * layer;
-@property(assign,readwrite) float level;
-@property(assign,readonly) NSDictionary * options;
-@property(getter=isSecure,assign,readwrite) bool secure;
-@property(assign,readonly) bool valid;
+@property struct CGColorSpace { }*colorSpace;
+@property (readonly) unsigned int contextId;
+@property (retain) CALayer *layer;
+@property float level;
+@property (readonly) NSDictionary *options;
+@property (getter=isSecure) bool secure;
+@property (readonly) bool valid;
 
 + (id)allContexts;
 + (id)currentContext;

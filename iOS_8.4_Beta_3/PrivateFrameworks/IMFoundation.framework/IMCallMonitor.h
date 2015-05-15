@@ -8,8 +8,8 @@
     bool _wasOnCall;
 }
 
-@property(assign,retain) NSDate * dateLastCallEnded;
-@property(assign,readonly) bool isOnCall;
+@property (nonatomic, readonly, retain) NSDate *dateLastCallEnded;
+@property (nonatomic, readonly) bool isOnCall;
 
 + (id)sharedInstance;
 

@@ -8,9 +8,9 @@
     CKBalloonTextView *_textView;
 }
 
-@property(assign,copy) NSAttributedString * attributedText;
-@property(assign,readwrite) bool centerTextWhenSkinny;
-@property(assign,retain) CKBalloonTextView * textView;
+@property (nonatomic, copy) NSAttributedString *attributedText;
+@property (nonatomic) bool centerTextWhenSkinny;
+@property (nonatomic, retain) CKBalloonTextView *textView;
 
 - (id)attributedText;
 - (bool)centerTextWhenSkinny;

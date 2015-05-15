@@ -14,14 +14,14 @@
     bool _userGroupPrefsLockedWhenInit;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <SynchronizedDefaultsDelegate> * syncDelegate;
-@property(assign,copy) NSString * twcURLString;
-@property(assign,readwrite) bool userGroupPrefsLockedWhenInit;
-@property(assign,copy) NSString * yahooWeatherURLString;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) <SynchronizedDefaultsDelegate> *syncDelegate;
+@property (nonatomic, copy) NSString *twcURLString;
+@property (nonatomic) bool userGroupPrefsLockedWhenInit;
+@property (nonatomic, copy) NSString *yahooWeatherURLString;
 
 + (void)clearSharedPreferences;
 + (id)serviceDebuggingPath;

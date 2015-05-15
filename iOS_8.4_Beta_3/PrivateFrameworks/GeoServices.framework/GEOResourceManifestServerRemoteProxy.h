@@ -17,11 +17,11 @@
     NSObject<OS_dispatch_queue> *_serverQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <GEOResourceManifestServerProxyDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <GEOResourceManifestServerProxyDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_handleMessage:(id)arg1 xpcMessage:(id)arg2;
 - (void)_setupConnection;

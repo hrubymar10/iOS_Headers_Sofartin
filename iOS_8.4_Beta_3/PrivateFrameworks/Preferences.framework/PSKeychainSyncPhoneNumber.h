@@ -7,8 +7,8 @@
     NSString *_digits;
 }
 
-@property(assign,retain) KeychainSyncCountryInfo * countryInfo;
-@property(assign,retain) NSString * digits;
+@property (nonatomic, retain) KeychainSyncCountryInfo *countryInfo;
+@property (nonatomic, retain) NSString *digits;
 
 + (id)phoneNumberWithDigits:(id)arg1 countryInfo:(id)arg2;
 

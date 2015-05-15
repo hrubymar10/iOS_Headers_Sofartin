@@ -25,25 +25,25 @@
     bool mWasImportedAsPreUFF;
 }
 
-@property(assign,readonly) bool allSlidesSkipped;
-@property(assign,readwrite) bool automaticallyPlaysUponOpen;
-@property(assign,readwrite) double autoplayBuildDelay;
-@property(assign,readwrite) double autoplayTransitionDelay;
-@property(assign,readwrite) bool idleTimerActive;
-@property(assign,readwrite) double idleTimerDelay;
-@property(assign,readwrite) bool localizeDocument;
-@property(assign,readwrite) bool loopPresentation;
-@property(assign,readwrite) int mode;
-@property(assign,readonly) bool needsToUpdateThumbnails;
-@property(assign,retain) KNRecording * recording;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) bool slideNumbersVisible;
-@property(assign,retain) KNSlideTree * slideTree;
-@property(assign,retain) KNSoundtrack * soundtrack;
-@property(assign,readonly) TSSStylesheet * stylesheet;
-@property(assign,retain) KNTheme * theme;
-@property(assign,retain) KNUIState * uiState;
-@property(assign,readonly) bool wasImportedAsPreUFF;
+@property (nonatomic, readonly) bool allSlidesSkipped;
+@property (nonatomic) bool automaticallyPlaysUponOpen;
+@property (nonatomic) double autoplayBuildDelay;
+@property (nonatomic) double autoplayTransitionDelay;
+@property (nonatomic) bool idleTimerActive;
+@property (nonatomic) double idleTimerDelay;
+@property (nonatomic) bool localizeDocument;
+@property (nonatomic) bool loopPresentation;
+@property (nonatomic) int mode;
+@property (nonatomic, readonly) bool needsToUpdateThumbnails;
+@property (nonatomic, retain) KNRecording *recording;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) bool slideNumbersVisible;
+@property (nonatomic, retain) KNSlideTree *slideTree;
+@property (nonatomic, retain) KNSoundtrack *soundtrack;
+@property (nonatomic, readonly) TSSStylesheet *stylesheet;
+@property (nonatomic, retain) KNTheme *theme;
+@property (nonatomic, retain) KNUIState *uiState;
+@property (nonatomic, readonly) bool wasImportedAsPreUFF;
 
 + (unsigned long long)maximumHeight;
 + (unsigned long long)maximumHeightForExport;

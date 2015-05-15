@@ -10,23 +10,23 @@
     NSMutableArray *_wallTimestamps;
 }
 
-@property(assign,readwrite) bool binaryImagesBeforeStacks;
-@property(assign,readonly) unsigned long long count;
-@property(assign,readwrite) bool displayBinaryImageAddresses;
-@property(assign,readwrite) bool displayBinaryImagesLackingNameOrPath;
-@property(assign,readwrite) bool displayFrameAddresses;
-@property(assign,readwrite) bool displayIdleWorkQueueThreads;
-@property(assign,readwrite) bool displayNonRunnableThreads;
-@property(assign,readwrite) bool displayOffsetsFromUnnamedSymbols;
-@property(assign,readwrite) bool displayProcessFirstLastTimes;
-@property(assign,readwrite) bool displayStateChangesOnIdleThreads;
-@property(assign,readwrite) bool displaySub1MsCpuTime;
-@property(assign,readwrite) bool displaySymbolInformation;
-@property(assign,readwrite) PASampleAggregatorOptions * options;
-@property(assign,readonly) PASampleTimeSeriesDataStore * sampleStore;
-@property(assign,readwrite) bool tabDelineateBinaryImageSections;
-@property(assign,retain) NSMutableSet * tasks;
-@property(assign,readwrite) bool verbose;
+@property bool binaryImagesBeforeStacks;
+@property (readonly) unsigned long long count;
+@property bool displayBinaryImageAddresses;
+@property bool displayBinaryImagesLackingNameOrPath;
+@property bool displayFrameAddresses;
+@property bool displayIdleWorkQueueThreads;
+@property bool displayNonRunnableThreads;
+@property bool displayOffsetsFromUnnamedSymbols;
+@property bool displayProcessFirstLastTimes;
+@property bool displayStateChangesOnIdleThreads;
+@property bool displaySub1MsCpuTime;
+@property bool displaySymbolInformation;
+@property PASampleAggregatorOptions *options;
+@property (readonly) PASampleTimeSeriesDataStore *sampleStore;
+@property bool tabDelineateBinaryImageSections;
+@property (retain) NSMutableSet *tasks;
+@property bool verbose;
 
 - (void)addSampleTask:(id)arg1 atTimestampIndex:(unsigned long long)arg2;
 - (bool)binaryImagesBeforeStacks;

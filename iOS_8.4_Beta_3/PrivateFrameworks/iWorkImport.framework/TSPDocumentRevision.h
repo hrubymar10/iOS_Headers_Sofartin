@@ -7,9 +7,9 @@
     int _sequence;
 }
 
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSString * revisionString;
-@property(assign,readonly) int sequence;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) NSString *revisionString;
+@property (nonatomic, readonly) int sequence;
 
 + (id)documentRevisionAtURL:(id)arg1 passphrase:(id)arg2 error:(id*)arg3;
 + (id)revisionWithRevisionString:(id)arg1;

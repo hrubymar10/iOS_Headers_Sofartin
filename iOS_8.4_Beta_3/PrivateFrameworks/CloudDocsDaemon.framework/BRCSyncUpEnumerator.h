@@ -16,8 +16,8 @@
     NSMutableSet *_whitelist;
 }
 
-@property(assign,readonly) unsigned int batchSize;
-@property(assign,readonly) unsigned long long retryAfter;
+@property (nonatomic, readonly) unsigned int batchSize;
+@property (nonatomic, readonly) unsigned long long retryAfter;
 
 - (void).cxx_destruct;
 - (bool)_blackListStackIfItemThrottled:(id)arg1 now:(unsigned long long)arg2;

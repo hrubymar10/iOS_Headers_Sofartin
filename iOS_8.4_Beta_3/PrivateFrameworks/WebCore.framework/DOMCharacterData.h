@@ -4,8 +4,8 @@
 
 @interface DOMCharacterData : DOMNode
 
-@property(assign,copy) NSString * data;
-@property(assign,readonly) unsigned int length;
+@property (copy) NSString *data;
+@property (readonly) unsigned int length;
 
 - (void)appendData:(id)arg1;
 - (id)data;

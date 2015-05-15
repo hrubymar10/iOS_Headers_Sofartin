@@ -7,16 +7,16 @@
     NSMutableDictionary *_dict;
 }
 
-@property(assign,retain) id boostContext;
-@property(assign,readwrite) long long broadcastID;
-@property(assign,readwrite) NSNumber * broadcastTime;
-@property(assign,readwrite) bool expectsPeerResponse;
-@property(assign,copy) NSString * incomingResponseIdentifier;
-@property(assign,readwrite) NSNumber * originalCommand;
-@property(assign,copy) NSString * outgoingResponseIdentifier;
-@property(assign,readwrite) NSNumber * priority;
-@property(assign,copy) NSString * storageGuid;
-@property(assign,readwrite) bool wantsAppAck;
+@property (nonatomic, retain) id boostContext;
+@property (nonatomic) long long broadcastID;
+@property (nonatomic) NSNumber *broadcastTime;
+@property (nonatomic) bool expectsPeerResponse;
+@property (nonatomic, copy) NSString *incomingResponseIdentifier;
+@property (nonatomic) NSNumber *originalCommand;
+@property (nonatomic, copy) NSString *outgoingResponseIdentifier;
+@property (nonatomic) NSNumber *priority;
+@property (nonatomic, copy) NSString *storageGuid;
+@property (nonatomic) bool wantsAppAck;
 
 - (id)boostContext;
 - (long long)broadcastID;

@@ -8,9 +8,9 @@
     id _requestCompletionBlock;
 }
 
-@property(assign,readonly) id completionBlock;
-@property(assign,readwrite) long long estimatedResultCount;
-@property(assign,readonly) NSFetchRequest * fetchRequest;
+@property (readonly) id completionBlock;
+@property (nonatomic) long long estimatedResultCount;
+@property (readonly) NSFetchRequest *fetchRequest;
 
 - (id)completionBlock;
 - (void)dealloc;

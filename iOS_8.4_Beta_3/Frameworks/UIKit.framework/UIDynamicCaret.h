@@ -13,16 +13,16 @@
     long long _selectedIndex;
 }
 
-@property(assign,retain) _UIDynamicCaretAlternatives * alternativesView;
-@property(assign,retain) TIKeyboardCandidateResultSet * candidateSet;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) _UIDynamicCaretHelpLabel * helpLabel;
-@property(assign,retain) _UIDynamicCaretInput * inputView;
-@property(assign,readwrite) bool isActive;
-@property(assign,retain) _UIDynamicCaretNoContentView * noContentView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) _UIDynamicCaretAlternatives *alternativesView;
+@property (nonatomic, retain) TIKeyboardCandidateResultSet *candidateSet;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) _UIDynamicCaretHelpLabel *helpLabel;
+@property (nonatomic, retain) _UIDynamicCaretInput *inputView;
+@property (nonatomic) bool isActive;
+@property (nonatomic, retain) _UIDynamicCaretNoContentView *noContentView;
+@property (readonly) Class superclass;
 
 - (void)alternativeTappedAtIndex:(long long)arg1;
 - (id)alternativesView;

@@ -11,19 +11,19 @@
     <RUTrackActionsDelegate> *_trackActionsDelegate;
 }
 
-@property(assign,copy) NSString * artistText;
-@property(assign,retain) UIImage * artworkImage;
-@property(assign,readonly) long long cancelIndex;
-@property(assign,readonly) struct CGSize { double x1; double x2; } contentSize;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long enabledActions;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long onActions;
-@property(getter=isPresentedInPopover,assign,readwrite) bool presentedInPopover;
-@property(assign,copy) NSString * songText;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <RUTrackActionsDelegate> * trackActionsDelegate;
+@property (nonatomic, copy) NSString *artistText;
+@property (nonatomic, retain) UIImage *artworkImage;
+@property (nonatomic, readonly) long long cancelIndex;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } contentSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long enabledActions;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long onActions;
+@property (getter=isPresentedInPopover, nonatomic) bool presentedInPopover;
+@property (nonatomic, copy) NSString *songText;
+@property (readonly) Class superclass;
+@property (nonatomic) <RUTrackActionsDelegate> *trackActionsDelegate;
 
 + (struct CGSize { double x1; double x2; })artworkSize;
 

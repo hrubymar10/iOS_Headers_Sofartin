@@ -10,9 +10,9 @@
     UIImage *_thumbnail;
 }
 
-@property(assign,retain) NSURL * assetURL;
-@property(assign,retain) NSURL * localURL;
-@property(assign,retain) UIImage * thumbnail;
+@property (nonatomic, readonly, retain) NSURL *assetURL;
+@property (nonatomic, readonly, retain) NSURL *localURL;
+@property (retain) UIImage *thumbnail;
 
 - (void)_fetchAndPersistImageDataForAsset:(id)arg1 withImageManager:(id)arg2;
 - (id)assetURL;

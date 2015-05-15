@@ -30,13 +30,13 @@
     } _startRect;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endRect;
-@property(assign,readwrite) bool isEditable;
-@property(assign,readwrite) bool isNone;
-@property(assign,readwrite) bool isRange;
-@property(assign,readwrite) unsigned long long selectedTextLength;
-@property(assign,copy) NSArray * selectionRects;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } startRect;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endRect;
+@property (nonatomic) bool isEditable;
+@property (nonatomic) bool isNone;
+@property (nonatomic) bool isRange;
+@property (nonatomic) unsigned long long selectedTextLength;
+@property (nonatomic, copy) NSArray *selectionRects;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } startRect;
 
 + (id)textRangeWithState:(bool)arg1 isRange:(bool)arg2 isEditable:(bool)arg3 startRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg4 endRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg5 selectionRects:(id)arg6 selectedTextLength:(unsigned long long)arg7;
 

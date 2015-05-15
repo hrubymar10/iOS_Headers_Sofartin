@@ -8,8 +8,8 @@
     NSString *_primaryString;
 }
 
-@property(assign,readonly) NSArray * alternativeStrings;
-@property(assign,readonly) NSString * primaryString;
+@property (readonly) NSArray *alternativeStrings;
+@property (readonly) NSString *primaryString;
 
 - (id)alternativeAtIndex:(unsigned long long)arg1;
 - (id)alternativeStrings;

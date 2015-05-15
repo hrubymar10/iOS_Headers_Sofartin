@@ -9,12 +9,12 @@
     RUIWebContainerView *_webContainerView;
 }
 
-@property(assign,retain) NSURL * baseURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUITableHeaderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSURL *baseURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUITableHeaderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)baseURL;

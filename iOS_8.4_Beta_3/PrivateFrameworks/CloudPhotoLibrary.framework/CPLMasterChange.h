@@ -15,18 +15,18 @@
     NSArray *_resources;
 }
 
-@property(assign,copy) NSDate * creationDate;
-@property(assign,copy) NSString * filename;
-@property(assign,readwrite) unsigned long long fullSizeJPEGSource;
-@property(assign,copy) NSDate * importDate;
-@property(assign,copy) NSString * importGroupIdentifier;
-@property(assign,readonly) bool isImage;
-@property(assign,readonly) bool isVideo;
-@property(assign,copy) NSString * itemType;
-@property(assign,retain) NSData * mediaMetaData;
-@property(assign,copy) NSString * mediaMetaDataType;
-@property(assign,readwrite) long long originalOrientation;
-@property(assign,copy) NSArray * resources;
+@property (nonatomic, copy) NSDate *creationDate;
+@property (nonatomic, copy) NSString *filename;
+@property (nonatomic) unsigned long long fullSizeJPEGSource;
+@property (nonatomic, copy) NSDate *importDate;
+@property (nonatomic, copy) NSString *importGroupIdentifier;
+@property (nonatomic, readonly) bool isImage;
+@property (nonatomic, readonly) bool isVideo;
+@property (nonatomic, copy) NSString *itemType;
+@property (nonatomic, retain) NSData *mediaMetaData;
+@property (nonatomic, copy) NSString *mediaMetaDataType;
+@property (nonatomic) long long originalOrientation;
+@property (nonatomic, copy) NSArray *resources;
 
 - (void).cxx_destruct;
 - (void)awakeFromStorage;

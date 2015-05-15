@@ -13,8 +13,8 @@
     SUNavigationItem *_wrappedNavigationItem;
 }
 
-@property(assign,readwrite) bool shouldDelayChanges;
-@property(assign,retain) SUNavigationItem * wrappedNavigationItem;
+@property (nonatomic) bool shouldDelayChanges;
+@property (nonatomic, retain) SUNavigationItem *wrappedNavigationItem;
 
 - (void)_prepareButtonItemForDisplay:(id)arg1;
 - (void)_scheduleCommit;

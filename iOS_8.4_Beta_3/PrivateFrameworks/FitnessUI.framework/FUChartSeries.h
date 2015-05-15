@@ -20,13 +20,13 @@
     NSNumber *_minYValue;
 }
 
-@property(assign,readwrite) float animationDuration;
-@property(assign,retain) FUChartDataSet * dataSet;
-@property(assign,readwrite) <FUChartSeriesDataSource> * dataSource;
-@property(assign,readwrite) <FUChartSeriesDelegate> * delegate;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,retain) NSNumber * maxYValue;
-@property(assign,retain) NSNumber * minYValue;
+@property (nonatomic) float animationDuration;
+@property (nonatomic, retain) FUChartDataSet *dataSet;
+@property (nonatomic) <FUChartSeriesDataSource> *dataSource;
+@property (nonatomic) <FUChartSeriesDelegate> *delegate;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic, retain) NSNumber *maxYValue;
+@property (nonatomic, retain) NSNumber *minYValue;
 
 - (void).cxx_destruct;
 - (id)_getMaxXValue;

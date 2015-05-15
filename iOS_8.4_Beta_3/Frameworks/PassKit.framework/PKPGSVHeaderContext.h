@@ -19,12 +19,12 @@
     UIView *_subheaderView;
 }
 
-@property(assign,readonly) double headerHeight;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } headerMargins;
-@property(assign,readonly) UIView * headerView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } subheaderMargins;
-@property(assign,readonly) UIView * subheaderView;
-@property(assign,readonly) double totalHeight;
+@property (nonatomic, readonly) double headerHeight;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } headerMargins;
+@property (nonatomic, readonly) UIView *headerView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } subheaderMargins;
+@property (nonatomic, readonly) UIView *subheaderView;
+@property (nonatomic, readonly) double totalHeight;
 
 + (void)animateAppearanceForLayer:(id)arg1 withCompletionHandler:(id)arg2;
 + (void)animateDisappearanceForLayer:(id)arg1 withCompletionHandler:(id)arg2;

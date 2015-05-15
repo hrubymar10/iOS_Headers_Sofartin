@@ -4,7 +4,7 @@
 
 @interface ABPropertyGroupPostalAddressItem : ABPropertyGroupItem
 
-@property(assign,readonly) CNPostalAddress * address;
+@property (nonatomic, readonly) CNPostalAddress *address;
 
 - (bool)_isMinimalAddress:(id)arg1;
 - (id)address;

@@ -7,8 +7,8 @@
     NSMutableArray *_textureAtlas;
 }
 
-@property(assign,retain) NSMutableArray * genericShields;
-@property(assign,retain) NSMutableArray * textureAtlas;
+@property (nonatomic, retain) NSMutableArray *genericShields;
+@property (nonatomic, retain) NSMutableArray *textureAtlas;
 
 - (void)addGenericShield:(id)arg1;
 - (void)addTextureAtlas:(id)arg1;

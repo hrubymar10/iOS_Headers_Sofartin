@@ -8,13 +8,13 @@
     SSKeybagRequest *_request;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPMediaItem * mediaItem;
-@property(assign,retain) SSKeybagRequest * request;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPMediaItem *mediaItem;
+@property (nonatomic, retain) SSKeybagRequest *request;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)dealloc;

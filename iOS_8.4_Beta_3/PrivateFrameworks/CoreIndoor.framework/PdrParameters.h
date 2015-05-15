@@ -17,16 +17,16 @@
     float _pdrVsWifi;
 }
 
-@property(assign,readwrite) float biasVariancePerSecond;
-@property(assign,readwrite) float gyroVariance;
-@property(assign,readwrite) bool hasBiasVariancePerSecond;
-@property(assign,readwrite) bool hasGyroVariance;
-@property(assign,readwrite) bool hasMagnetometerReliability;
-@property(assign,readwrite) bool hasOmegaVariancePerSecond;
-@property(assign,readwrite) bool hasPdrVsWifi;
-@property(assign,readwrite) float magnetometerReliability;
-@property(assign,readwrite) float omegaVariancePerSecond;
-@property(assign,readwrite) float pdrVsWifi;
+@property (nonatomic) float biasVariancePerSecond;
+@property (nonatomic) float gyroVariance;
+@property (nonatomic) bool hasBiasVariancePerSecond;
+@property (nonatomic) bool hasGyroVariance;
+@property (nonatomic) bool hasMagnetometerReliability;
+@property (nonatomic) bool hasOmegaVariancePerSecond;
+@property (nonatomic) bool hasPdrVsWifi;
+@property (nonatomic) float magnetometerReliability;
+@property (nonatomic) float omegaVariancePerSecond;
+@property (nonatomic) float pdrVsWifi;
 
 - (float)biasVariancePerSecond;
 - (void)copyTo:(id)arg1;

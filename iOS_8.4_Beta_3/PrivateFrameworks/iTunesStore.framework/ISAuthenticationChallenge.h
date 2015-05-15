@@ -7,15 +7,15 @@
     NSString *_localizedTitle;
 }
 
-@property(assign,readonly) long long failureCount;
-@property(assign,readonly) bool hasPassword;
-@property(assign,retain) NSString * localizedMessage;
-@property(assign,retain) NSString * localizedTitle;
-@property(assign,retain) NSString * password;
-@property(assign,readonly) <NSURLAuthenticationChallengeSender> * sender;
-@property(assign,retain) NSString * user;
-@property(assign,readonly) bool userNameIsEditable;
-@property(assign,readonly) bool userNameIsEmail;
+@property (readonly) long long failureCount;
+@property (readonly) bool hasPassword;
+@property (retain) NSString *localizedMessage;
+@property (retain) NSString *localizedTitle;
+@property (readonly, retain) NSString *password;
+@property (readonly) <NSURLAuthenticationChallengeSender> *sender;
+@property (readonly, retain) NSString *user;
+@property (readonly) bool userNameIsEditable;
+@property (readonly) bool userNameIsEmail;
 
 - (void)cancelAuthentication;
 - (void)dealloc;

@@ -11,8 +11,8 @@
     NSObject<OS_dispatch_source> *_timerSource;
 }
 
-@property(assign,copy) id cancellationHandler;
-@property(assign,retain) NSInvocation * presentInvocation;
+@property (nonatomic, copy) id cancellationHandler;
+@property (nonatomic, retain) NSInvocation *presentInvocation;
 
 - (void)beginDelayedPresentation;
 - (void)cancelDelayedPresentation:(bool)arg1;

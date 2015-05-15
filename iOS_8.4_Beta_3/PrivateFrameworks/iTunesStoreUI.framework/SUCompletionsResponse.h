@@ -7,8 +7,8 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSArray * completionItems;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSArray *completionItems;
+@property (nonatomic, readonly) NSString *title;
 
 - (id)completionItems;
 - (void)dealloc;

@@ -9,12 +9,12 @@
     NSString *_launchURL;
 }
 
-@property(assign,readwrite) int activationMode;
-@property(assign,retain) BLTPBAppearance * appearance;
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,readonly) bool hasLaunchURL;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSString * launchURL;
+@property (nonatomic) int activationMode;
+@property (nonatomic, retain) BLTPBAppearance *appearance;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, readonly) bool hasLaunchURL;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSString *launchURL;
 
 - (void).cxx_destruct;
 - (int)activationMode;

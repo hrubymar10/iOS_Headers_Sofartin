@@ -11,12 +11,12 @@
     NSURL *_url;
 }
 
-@property(assign,readwrite) long long assetType;
-@property(getter=isBackgroundReview,assign,readwrite) bool backgroundReview;
-@property(assign,readwrite) unsigned long long itemIdentifier;
-@property(assign,retain) ISReview * review;
-@property(assign,readwrite) unsigned long long softwareVersionIdentifier;
-@property(assign,retain) NSURL * url;
+@property long long assetType;
+@property (getter=isBackgroundReview) bool backgroundReview;
+@property unsigned long long itemIdentifier;
+@property (retain) ISReview *review;
+@property unsigned long long softwareVersionIdentifier;
+@property (retain) NSURL *url;
 
 - (void)_fetchReviewInformation;
 - (long long)assetType;

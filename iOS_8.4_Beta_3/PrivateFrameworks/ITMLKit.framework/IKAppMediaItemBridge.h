@@ -7,12 +7,12 @@
     IKJSMediaItem *_jsMediaItem;
 }
 
-@property(assign,readonly) <IKAppMediaItem> * appMediaItem;
-@property(assign,retain) NSString * description;
-@property(assign,readonly) IKJSMediaItem * jsMediaItem;
-@property(assign,retain) NSString * subtitle;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSString * url;
+@property (nonatomic, readonly) <IKAppMediaItem> *appMediaItem;
+@property (nonatomic, retain) NSString *description;
+@property (nonatomic, readonly) IKJSMediaItem *jsMediaItem;
+@property (nonatomic, retain) NSString *subtitle;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *url;
 
 - (void).cxx_destruct;
 - (id)appMediaItem;

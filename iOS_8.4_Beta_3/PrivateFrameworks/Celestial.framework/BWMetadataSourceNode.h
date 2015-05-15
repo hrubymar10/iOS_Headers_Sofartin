@@ -9,7 +9,7 @@
     bool _running;
 }
 
-@property(assign,readonly) struct opaqueCMFormatDescription { }* formatDescription;
+@property (nonatomic, readonly) struct opaqueCMFormatDescription { }*formatDescription;
 
 + (void)initialize;
 

@@ -7,8 +7,8 @@
     TSWPTOCEntryStyle *_tocEntryStyle;
 }
 
-@property(assign,readwrite) bool showInTOC;
-@property(assign,retain) TSWPTOCEntryStyle * tocEntryStyle;
+@property (nonatomic) bool showInTOC;
+@property (nonatomic, retain) TSWPTOCEntryStyle *tocEntryStyle;
 
 - (id)initWithTOCEntryStyle:(id)arg1 showInTOC:(bool)arg2;
 - (void)setShowInTOC:(bool)arg1;

@@ -6,7 +6,7 @@
     NSObject<OS_xpc_object> *_endpoint;
 }
 
-@property(assign,readwrite) NSObject<OS_xpc_object> * endpoint;
+@property (nonatomic) NSObject<OS_xpc_object> *endpoint;
 
 - (id)_initWithEndpoint:(id)arg1;
 - (id)createConnection;

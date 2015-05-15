@@ -19,20 +19,20 @@
     NSDate *timeAtProcessing;
 }
 
-@property(assign,readwrite) long long mediaProgress;
-@property(assign,readwrite) long long mediaSheets;
-@property(assign,readwrite) long long mediaSheetsCompleted;
-@property(assign,readwrite) long long number;
-@property(assign,retain) NSString * printerDisplayName;
-@property(assign,readwrite) long long printerKind;
-@property(assign,retain) NSString * printerLocation;
-@property(assign,readwrite) long long remoteJobId;
-@property(assign,retain) PKPrintSettings * settings;
-@property(assign,readwrite) long long state;
-@property(assign,retain) NSData * thumbnailImage;
-@property(assign,retain) NSDate * timeAtCompleted;
-@property(assign,retain) NSDate * timeAtCreation;
-@property(assign,retain) NSDate * timeAtProcessing;
+@property (nonatomic) long long mediaProgress;
+@property (nonatomic) long long mediaSheets;
+@property (nonatomic) long long mediaSheetsCompleted;
+@property (nonatomic) long long number;
+@property (nonatomic, retain) NSString *printerDisplayName;
+@property (nonatomic) long long printerKind;
+@property (nonatomic, retain) NSString *printerLocation;
+@property (nonatomic) long long remoteJobId;
+@property (nonatomic, retain) PKPrintSettings *settings;
+@property (nonatomic) long long state;
+@property (nonatomic, retain) NSData *thumbnailImage;
+@property (nonatomic, retain) NSDate *timeAtCompleted;
+@property (nonatomic, retain) NSDate *timeAtCreation;
+@property (nonatomic, retain) NSDate *timeAtProcessing;
 
 + (id)currentJob;
 + (id)jobs;

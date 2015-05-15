@@ -9,9 +9,9 @@
     bool _parentWantsCellNeedsLayout;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readonly) UIView * contentView;
-@property(assign,readonly) UIView * parentCellView;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) UIView *contentView;
+@property (nonatomic, readonly) UIView *parentCellView;
 
 - (void).cxx_destruct;
 - (id)clientContext;

@@ -25,23 +25,23 @@
     id _uiConfigDelegate;
 }
 
-@property(assign,readwrite) bool activeTask;
-@property(assign,retain) NSString * autoGuessSetupRecommendation;
-@property(assign,retain) NSDictionary * bonjourRecord;
-@property(assign,readwrite) id context;
-@property(assign,retain) NSString * keychainBasePassword;
-@property(assign,retain) NSString * keychainDiskPassword;
-@property(assign,retain) NSString * keychainWiFiPassword;
-@property(assign,retain) NSString * lastDNSName;
-@property(assign,readonly) NSDate * lastHeardFromDevice;
-@property(assign,retain) NSDictionary * lastInstrumentation;
-@property(assign,retain) NSString * lastSystemName;
-@property(assign,readwrite) bool rememberBasePassword;
-@property(assign,readwrite) bool rememberDiskPassword;
-@property(assign,readwrite) bool rememberWiFiPassword;
-@property(assign,retain) NSDictionary * restoreRecommendation;
-@property(assign,readonly) NSMutableSet * setupDelegates;
-@property(assign,readwrite) <SetupUIConfigDelegate> * uiConfigDelegate;
+@property (nonatomic) bool activeTask;
+@property (nonatomic, retain) NSString *autoGuessSetupRecommendation;
+@property (nonatomic, retain) NSDictionary *bonjourRecord;
+@property (nonatomic) id context;
+@property (nonatomic, retain) NSString *keychainBasePassword;
+@property (nonatomic, retain) NSString *keychainDiskPassword;
+@property (nonatomic, retain) NSString *keychainWiFiPassword;
+@property (nonatomic, retain) NSString *lastDNSName;
+@property (nonatomic, readonly) NSDate *lastHeardFromDevice;
+@property (nonatomic, retain) NSDictionary *lastInstrumentation;
+@property (nonatomic, retain) NSString *lastSystemName;
+@property (nonatomic) bool rememberBasePassword;
+@property (nonatomic) bool rememberDiskPassword;
+@property (nonatomic) bool rememberWiFiPassword;
+@property (retain) NSDictionary *restoreRecommendation;
+@property (nonatomic, readonly) NSMutableSet *setupDelegates;
+@property (nonatomic) <SetupUIConfigDelegate> *uiConfigDelegate;
 
 + (void)initialize;
 + (id)setupController;

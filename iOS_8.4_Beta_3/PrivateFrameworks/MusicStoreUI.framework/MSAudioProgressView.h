@@ -11,8 +11,8 @@
     UIImageView *_stopImageView;
 }
 
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,copy) SUPlayerStatus * playerStatus;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic, copy) SUPlayerStatus *playerStatus;
 
 - (void)_cancelBufferingTimer;
 - (id)_newBufferingImageView;

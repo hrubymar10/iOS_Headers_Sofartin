@@ -7,8 +7,8 @@
     long long _maxFileLoggingLevel;
 }
 
-@property(assign,readwrite) long long maxConsoleLoggingLevel;
-@property(assign,readwrite) long long maxFileLoggingLevel;
+@property (nonatomic) long long maxConsoleLoggingLevel;
+@property (nonatomic) long long maxFileLoggingLevel;
 
 + (id)pairWithMaxConsoleLevel:(long long)arg1 maxFileLevel:(long long)arg2;
 

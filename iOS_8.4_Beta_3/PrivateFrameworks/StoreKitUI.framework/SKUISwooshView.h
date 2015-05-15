@@ -24,15 +24,15 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readonly) UIControl * chevronTitleControl;
-@property(assign,retain) UICollectionView * collectionView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } collectionViewInsets;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,readonly) UIControl * seeAllControl;
-@property(assign,copy) NSString * seeAllTitle;
-@property(assign,readwrite) bool showsChevronForTitle;
-@property(assign,copy) NSString * title;
-@property(assign,copy) UIColor * titleColor;
+@property (nonatomic, readonly) UIControl *chevronTitleControl;
+@property (nonatomic, retain) UICollectionView *collectionView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } collectionViewInsets;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic, readonly) UIControl *seeAllControl;
+@property (nonatomic, copy) NSString *seeAllTitle;
+@property (nonatomic) bool showsChevronForTitle;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) UIColor *titleColor;
 
 - (void).cxx_destruct;
 - (id)_seeAllArrowImage;

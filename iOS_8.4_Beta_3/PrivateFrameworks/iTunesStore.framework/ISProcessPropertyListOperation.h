@@ -7,7 +7,7 @@
     NSDictionary *_propertyList;
 }
 
-@property(assign,retain) ISPropertyListProvider * dataProvider;
+@property (retain) ISPropertyListProvider *dataProvider;
 
 - (id)dataProvider;
 - (void)dealloc;

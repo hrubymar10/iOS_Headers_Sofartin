@@ -14,15 +14,15 @@
     bool _speakerIsPlayingAudio;
 }
 
-@property(assign,retain) PLXPCListenerOperatorComposition * audioAppXPCListener;
-@property(assign,readonly) NSString * audioHardware;
-@property(assign,readonly) NSDictionary * audioPowerModel;
-@property(assign,retain) PLEntry * entryRoutingOld;
-@property(assign,retain) PLEntry * entrySpeakerPowerOld;
-@property(assign,readonly) NSMutableArray * nsOutputNotifications;
-@property(assign,readonly) NSMutableArray * nsRoutingNotifications;
-@property(assign,retain) PLXPCListenerOperatorComposition * speakerAmpXPCListener;
-@property(assign,readwrite) bool speakerIsPlayingAudio;
+@property (retain) PLXPCListenerOperatorComposition *audioAppXPCListener;
+@property (readonly) NSString *audioHardware;
+@property (readonly) NSDictionary *audioPowerModel;
+@property (retain) PLEntry *entryRoutingOld;
+@property (retain) PLEntry *entrySpeakerPowerOld;
+@property (readonly) NSMutableArray *nsOutputNotifications;
+@property (readonly) NSMutableArray *nsRoutingNotifications;
+@property (retain) PLXPCListenerOperatorComposition *speakerAmpXPCListener;
+@property bool speakerIsPlayingAudio;
 
 + (id)accountingGroupDefinitions;
 + (id)entryEventBackwardDefinitions;

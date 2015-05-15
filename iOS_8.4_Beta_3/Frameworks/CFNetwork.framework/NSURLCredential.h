@@ -6,7 +6,7 @@
     NSURLCredentialInternal *_internal;
 }
 
-@property(assign,readonly) unsigned long long persistence;
+@property (readonly) unsigned long long persistence;
 
 + (id)credentialForTrust:(struct __SecTrust { }*)arg1;
 + (id)credentialWithIdentity:(struct __SecIdentity { }*)arg1 certificates:(id)arg2 persistence:(unsigned long long)arg3;

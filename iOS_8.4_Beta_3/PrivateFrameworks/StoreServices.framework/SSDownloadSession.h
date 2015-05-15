@@ -10,8 +10,8 @@
     long long _sessionID;
 }
 
-@property(assign,readonly) SSDownload * download;
-@property(assign,readonly) SSDownloadAsset * downloadAsset;
+@property (readonly) SSDownload *download;
+@property (readonly) SSDownloadAsset *downloadAsset;
 
 - (id)_copySessionPropertyWithKey:(const char *)arg1;
 - (id)_initSSDownloadSession;

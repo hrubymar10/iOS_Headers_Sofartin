@@ -25,21 +25,21 @@
     UIColor *topGradientColor;
 }
 
-@property(assign,retain) UIColor * bottomGradientColor;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,retain) UIColor * embossHighlightColor;
-@property(assign,retain) UIColor * embossShadowColor;
-@property(assign,readwrite) double embossSize;
-@property(assign,readwrite) double innerOpacity;
-@property(assign,readwrite) int innerShadowBlendMode;
-@property(assign,readwrite) double innerShadowBlur;
-@property(assign,retain) UIColor * innerShadowColor;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } innerShadowOffset;
-@property(assign,readwrite) int outerShadowBlendMode;
-@property(assign,readwrite) double outerShadowBlur;
-@property(assign,retain) UIColor * outerShadowColor;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } outerShadowOffset;
-@property(assign,retain) UIColor * topGradientColor;
+@property (nonatomic, retain) UIColor *bottomGradientColor;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic, retain) UIColor *embossHighlightColor;
+@property (nonatomic, retain) UIColor *embossShadowColor;
+@property (nonatomic) double embossSize;
+@property (nonatomic) double innerOpacity;
+@property (nonatomic) int innerShadowBlendMode;
+@property (nonatomic) double innerShadowBlur;
+@property (nonatomic, retain) UIColor *innerShadowColor;
+@property (nonatomic) struct CGPoint { double x1; double x2; } innerShadowOffset;
+@property (nonatomic) int outerShadowBlendMode;
+@property (nonatomic) double outerShadowBlur;
+@property (nonatomic, retain) UIColor *outerShadowColor;
+@property (nonatomic) struct CGPoint { double x1; double x2; } outerShadowOffset;
+@property (nonatomic, retain) UIColor *topGradientColor;
 
 + (id)defaultLetterpressStyle;
 + (id)old2xLetterpressStyle;

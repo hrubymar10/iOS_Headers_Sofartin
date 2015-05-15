@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_itemPCSFetchQueue;
 }
 
-@property(assign,copy) id fetchPCSItemForCacheBlock;
-@property(assign,retain) NSMutableDictionary * itemIDToPCSCacheItem;
-@property(assign,retain) NSObject<OS_dispatch_queue> * itemPCSFetchQueue;
+@property (nonatomic, copy) id fetchPCSItemForCacheBlock;
+@property (nonatomic, retain) NSMutableDictionary *itemIDToPCSCacheItem;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *itemPCSFetchQueue;
 
 - (void).cxx_destruct;
 - (void)_initCache;

@@ -4,20 +4,20 @@
 
 @interface PLCloudMaster : PLManagedObject
 
-@property(assign,retain) NSSet * assetAttributes;
-@property(assign,readwrite) short cloudLocalState;
-@property(assign,retain) NSString * cloudMasterGUID;
-@property(assign,readwrite) short cloudServerState;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,readwrite) short fullSizeJPEGSource;
-@property(assign,retain) NSDate * importDate;
-@property(assign,retain) NSString * importSessionID;
-@property(assign,retain) NSManagedObject * mediaMetadata;
-@property(assign,retain) NSString * mediaMetadataType;
-@property(assign,retain) NSString * originalFilename;
-@property(assign,readwrite) short originalOrientation;
-@property(assign,retain) NSSet * resources;
-@property(assign,retain) NSString * uniformTypeIdentifier;
+@property (nonatomic, retain) NSSet *assetAttributes;
+@property (nonatomic) short cloudLocalState;
+@property (nonatomic, retain) NSString *cloudMasterGUID;
+@property (nonatomic) short cloudServerState;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic) short fullSizeJPEGSource;
+@property (nonatomic, retain) NSDate *importDate;
+@property (nonatomic, retain) NSString *importSessionID;
+@property (nonatomic, retain) NSManagedObject *mediaMetadata;
+@property (nonatomic, retain) NSString *mediaMetadataType;
+@property (nonatomic, retain) NSString *originalFilename;
+@property (nonatomic) short originalOrientation;
+@property (nonatomic, retain) NSSet *resources;
+@property (nonatomic, retain) NSString *uniformTypeIdentifier;
 
 + (id)allCloudMastersInManagedObjectContext:(id)arg1;
 + (id)cloudMasterWithGUID:(id)arg1 inManagedObjectContext:(id)arg2;

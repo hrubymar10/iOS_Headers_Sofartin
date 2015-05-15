@@ -16,21 +16,21 @@
     NSArray *_visibleSegments;
 }
 
-@property(assign,readonly) IKAppContext * appContext;
-@property(assign,readonly) IKAppDocument * biographyDocument;
-@property(assign,readonly) NSDictionary * biographyDocumentOptions;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicJSProfileNativeViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * featureName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) IKJSNavigationDocument * navigationDocument;
-@property(assign,readonly) NSDictionary * profileEntityValueProviderData;
-@property(assign,readonly) NSDictionary * reportingInformation;
-@property(assign,readonly) IKAppDocument * shareDocument;
-@property(assign,readonly) NSDictionary * shareDocumentOptions;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSArray * visibleSegments;
+@property (nonatomic, readonly) IKAppContext *appContext;
+@property (nonatomic, readonly) IKAppDocument *biographyDocument;
+@property (nonatomic, readonly) NSDictionary *biographyDocumentOptions;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicJSProfileNativeViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSString *featureName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) IKJSNavigationDocument *navigationDocument;
+@property (nonatomic, readonly) NSDictionary *profileEntityValueProviderData;
+@property (nonatomic, readonly) NSDictionary *reportingInformation;
+@property (nonatomic, readonly) IKAppDocument *shareDocument;
+@property (nonatomic, readonly) NSDictionary *shareDocumentOptions;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *visibleSegments;
 
 + (id)featureName;
 

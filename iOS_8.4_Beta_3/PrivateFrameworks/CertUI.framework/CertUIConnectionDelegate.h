@@ -12,8 +12,8 @@
     CertUITrustManager *_trustManager;
 }
 
-@property(assign,copy) NSString * connectionDisplayName;
-@property(assign,readwrite) id forwardingDelegate;
+@property (nonatomic, copy) NSString *connectionDisplayName;
+@property (nonatomic) id forwardingDelegate;
 
 + (id)defaultServiceForProtocol:(id)arg1;
 

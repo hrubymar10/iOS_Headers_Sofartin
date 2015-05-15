@@ -6,7 +6,7 @@
     double _scale;
 }
 
-@property(assign,readwrite) double scale;
+@property (nonatomic) double scale;
 
 + (id)operatorWithScale:(double)arg1;
 

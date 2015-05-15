@@ -10,15 +10,15 @@
     NSMutableDictionary *_tracksByStationKey;
 }
 
-@property(assign,copy) NSDictionary * dialogDictionary;
-@property(assign,retain) NSDate * expirationDate;
-@property(assign,readonly) unsigned long long globalVersion;
-@property(assign,copy) NSDictionary * responseDictionary;
-@property(assign,readonly) bool shouldIncrementSkipCount;
-@property(assign,readonly) NSDate * skipDate;
-@property(assign,retain) RadioStation * station;
-@property(assign,readonly) long long tracklistActionType;
-@property(assign,copy) NSArray * unusedKBSyncStrings;
+@property (nonatomic, readonly, copy) NSDictionary *dialogDictionary;
+@property (nonatomic, retain) NSDate *expirationDate;
+@property (nonatomic, readonly) unsigned long long globalVersion;
+@property (nonatomic, readonly, copy) NSDictionary *responseDictionary;
+@property (nonatomic, readonly) bool shouldIncrementSkipCount;
+@property (nonatomic, readonly) NSDate *skipDate;
+@property (nonatomic, retain) RadioStation *station;
+@property (nonatomic, readonly) long long tracklistActionType;
+@property (nonatomic, readonly, copy) NSArray *unusedKBSyncStrings;
 
 - (void).cxx_destruct;
 - (id)_tracksForStationKey:(id)arg1;

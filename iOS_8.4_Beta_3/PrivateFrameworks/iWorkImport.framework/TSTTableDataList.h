@@ -9,8 +9,8 @@
     unsigned int mNextID;
 }
 
-@property(assign,readonly) TSTIntegerKeyDict * data;
-@property(assign,readonly) unsigned int nextID;
+@property (nonatomic, readonly) TSTIntegerKeyDict *data;
+@property (nonatomic, readonly) unsigned int nextID;
 
 + (id)newObjectForUnarchiver:(id)arg1;
 

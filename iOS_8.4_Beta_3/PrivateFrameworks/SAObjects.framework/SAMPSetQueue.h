@@ -4,11 +4,11 @@
 
 @interface SAMPSetQueue : SADomainCommand
 
-@property(assign,copy) NSArray * filters;
-@property(assign,retain) SAMPCollection * mediaItems;
-@property(assign,readwrite) bool shouldOverrideManuallyCuratedUpNext;
-@property(assign,readwrite) bool shouldShuffle;
-@property(assign,copy) NSArray * sort;
+@property (nonatomic, copy) NSArray *filters;
+@property (nonatomic, retain) SAMPCollection *mediaItems;
+@property (nonatomic) bool shouldOverrideManuallyCuratedUpNext;
+@property (nonatomic) bool shouldShuffle;
+@property (nonatomic, copy) NSArray *sort;
 
 + (id)setQueue;
 + (id)setQueueWithDictionary:(id)arg1 context:(id)arg2;

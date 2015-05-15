@@ -9,10 +9,10 @@
     } _gravity;
 }
 
-@property(assign,readwrite) double angle;
-@property(assign,readwrite) struct CGVector { double x1; double x2; } gravityDirection;
-@property(assign,copy) NSArray * items;
-@property(assign,readwrite) double magnitude;
+@property (nonatomic) double angle;
+@property (nonatomic) struct CGVector { double x1; double x2; } gravityDirection;
+@property (nonatomic, readonly, copy) NSArray *items;
+@property (nonatomic) double magnitude;
 
 - (void)_addItem:(id)arg1;
 - (void)_associate;

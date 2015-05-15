@@ -9,10 +9,10 @@
     long long _type;
 }
 
-@property(assign,readonly) NSDate * datePlayed;
-@property(assign,copy) NSString * externalIdentifier;
-@property(assign,readonly) RadioTrack * track;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) NSDate *datePlayed;
+@property (nonatomic, readonly, copy) NSString *externalIdentifier;
+@property (nonatomic, readonly) RadioTrack *track;
+@property (nonatomic, readonly) long long type;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

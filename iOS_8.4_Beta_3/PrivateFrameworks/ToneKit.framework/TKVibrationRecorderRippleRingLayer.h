@@ -11,11 +11,11 @@
     double _ringSpeed;
 }
 
-@property(setter=_setCreationTimestamp:,assign,readwrite) double _creationTimestamp;
-@property(setter=_setNormalizedRingLocation:,assign,readwrite) struct CGPoint { double x1; double x2; } _normalizedRingLocation;
-@property(setter=_setRingSpeed:,assign,readwrite) double _ringSpeed;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } normalizedRingLocation;
-@property(assign,readonly) double ringSpeed;
+@property (setter=_setCreationTimestamp:, nonatomic) double _creationTimestamp;
+@property (setter=_setNormalizedRingLocation:, nonatomic) struct CGPoint { double x1; double x2; } _normalizedRingLocation;
+@property (setter=_setRingSpeed:, nonatomic) double _ringSpeed;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } normalizedRingLocation;
+@property (nonatomic, readonly) double ringSpeed;
 
 - (double)_creationTimestamp;
 - (struct CGPoint { double x1; double x2; })_normalizedRingLocation;

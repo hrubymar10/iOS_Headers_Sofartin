@@ -13,18 +13,18 @@
     NSString *_valueKeyPath;
 }
 
-@property(assign,readwrite) int alignment;
-@property(assign,copy) NSArray * choices;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) _UISettings * settings;
-@property(assign,retain) NSArray * subviewConstraints;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITableView * tableView;
-@property(assign,retain) UILabel * titleLabel;
-@property(assign,copy) NSString * valueKeyPath;
+@property (nonatomic) int alignment;
+@property (nonatomic, copy) NSArray *choices;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) _UISettings *settings;
+@property (nonatomic, retain) NSArray *subviewConstraints;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UITableView *tableView;
+@property (nonatomic, retain) UILabel *titleLabel;
+@property (nonatomic, copy) NSString *valueKeyPath;
 
 + (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })defaultFrame;
 + (id)picker;

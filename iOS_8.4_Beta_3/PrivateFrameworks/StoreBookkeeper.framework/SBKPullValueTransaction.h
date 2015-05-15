@@ -12,13 +12,13 @@
     bool _success;
 }
 
-@property(assign,readonly) <SBKKeyValuePayloadPair> * clientItemPayloadPair;
-@property(assign,readonly) NSString * clientItemVersionAnchor;
-@property(assign,copy) NSString * requestedKey;
-@property(assign,readonly) NSString * resultDomainVersion;
-@property(assign,readonly) <SBKKeyValuePayloadPair> * resultItemPayloadPair;
-@property(assign,readonly) NSString * resultItemVersionAnchor;
-@property(assign,readonly) bool success;
+@property (readonly) <SBKKeyValuePayloadPair> *clientItemPayloadPair;
+@property (readonly) NSString *clientItemVersionAnchor;
+@property (readonly, copy) NSString *requestedKey;
+@property (readonly) NSString *resultDomainVersion;
+@property (readonly) <SBKKeyValuePayloadPair> *resultItemPayloadPair;
+@property (readonly) NSString *resultItemVersionAnchor;
+@property (readonly) bool success;
 
 - (void).cxx_destruct;
 - (id)clampsKey;

@@ -8,9 +8,9 @@
     double _lastUpdateTime;
 }
 
-@property(assign,retain) NSMutableSet * animatingViews;
-@property(assign,readwrite) CADisplayLink * displayLink;
-@property(assign,readwrite) double lastUpdateTime;
+@property (nonatomic, retain) NSMutableSet *animatingViews;
+@property (nonatomic) CADisplayLink *displayLink;
+@property (nonatomic) double lastUpdateTime;
 
 + (id)sharedAnimator;
 

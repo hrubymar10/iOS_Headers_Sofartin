@@ -31,22 +31,22 @@
     } _textContainerOrigin;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isHorizontallyResizable,assign,readwrite) bool horizontallyResizable;
-@property(assign,readonly) NSLayoutManager * layoutManager;
-@property(assign,readwrite) long long layoutOrientation;
-@property(assign,copy) NSDictionary * linkTextAttributes;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } markedRange;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } maxSize;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } minSize;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) NSTextContainer * textContainer;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textContainerInset;
-@property(assign,readonly) NSTextStorage * textStorage;
-@property(assign,readwrite) bool usesTiledViews;
-@property(getter=isVerticallyResizable,assign,readwrite) bool verticallyResizable;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isHorizontallyResizable, nonatomic) bool horizontallyResizable;
+@property (nonatomic, readonly) NSLayoutManager *layoutManager;
+@property (nonatomic) long long layoutOrientation;
+@property (nonatomic, copy) NSDictionary *linkTextAttributes;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } markedRange;
+@property (nonatomic) struct CGSize { double x1; double x2; } maxSize;
+@property (nonatomic) struct CGSize { double x1; double x2; } minSize;
+@property (readonly) Class superclass;
+@property (nonatomic) NSTextContainer *textContainer;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textContainerInset;
+@property (nonatomic, readonly) NSTextStorage *textStorage;
+@property (nonatomic) bool usesTiledViews;
+@property (getter=isVerticallyResizable, nonatomic) bool verticallyResizable;
 
 + (Class)layerClass;
 

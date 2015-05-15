@@ -8,13 +8,13 @@
     <SFActivityAdvertiserDelegate> *_delegate;
 }
 
-@property(assign,retain) <SFActivityAdvertiserProtocol> * connectionProxy;
-@property(assign,retain) SFInternalAdvertisement * currentAdvertisement;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SFActivityAdvertiserDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (retain) <SFActivityAdvertiserProtocol> *connectionProxy;
+@property (retain) SFInternalAdvertisement *currentAdvertisement;
+@property (readonly, copy) NSString *debugDescription;
+@property <SFActivityAdvertiserDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)sharedAdvertiser;
 

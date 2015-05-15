@@ -8,9 +8,9 @@
     <NSObject> *_value;
 }
 
-@property(assign,retain) NSString * format;
-@property(assign,readwrite) bool obfuscated;
-@property(assign,retain) <NSObject> * value;
+@property (nonatomic, retain) NSString *format;
+@property (nonatomic) bool obfuscated;
+@property (nonatomic, retain) <NSObject> *value;
 
 - (void).cxx_destruct;
 - (id)format;

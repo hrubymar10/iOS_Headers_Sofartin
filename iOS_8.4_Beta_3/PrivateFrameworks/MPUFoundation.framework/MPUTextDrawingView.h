@@ -7,8 +7,8 @@
     MPUTextDrawingContext *_textDrawingContext;
 }
 
-@property(assign,readonly) NSString * text;
-@property(assign,retain) MPUTextDrawingContext * textDrawingContext;
+@property (nonatomic, readonly) NSString *text;
+@property (nonatomic, retain) MPUTextDrawingContext *textDrawingContext;
 
 - (void).cxx_destruct;
 - (double)_cachedDisplayScale;

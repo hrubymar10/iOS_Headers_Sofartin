@@ -19,18 +19,18 @@
     NSURL *_videoURL;
 }
 
-@property(assign,retain) PHAdjustmentData * adjustmentData;
-@property(assign,readonly) AVAsset * avAsset;
-@property(assign,readwrite) long long baseVersion;
-@property(assign,copy) NSDate * creationDate;
-@property(assign,retain) UIImage * displaySizeImage;
-@property(assign,readwrite) int fullSizeImageOrientation;
-@property(assign,copy) NSURL * fullSizeImageURL;
-@property(assign,copy) CLLocation * location;
-@property(assign,readwrite) unsigned long long mediaSubtypes;
-@property(assign,readwrite) long long mediaType;
-@property(assign,copy) NSString * uniformTypeIdentifier;
-@property(assign,copy) NSURL * videoURL;
+@property (retain) PHAdjustmentData *adjustmentData;
+@property (readonly) AVAsset *avAsset;
+@property (nonatomic) long long baseVersion;
+@property (copy) NSDate *creationDate;
+@property (retain) UIImage *displaySizeImage;
+@property int fullSizeImageOrientation;
+@property (copy) NSURL *fullSizeImageURL;
+@property (copy) CLLocation *location;
+@property unsigned long long mediaSubtypes;
+@property long long mediaType;
+@property (copy) NSString *uniformTypeIdentifier;
+@property (nonatomic, copy) NSURL *videoURL;
 
 - (void).cxx_destruct;
 - (void)_invalidateAVAsset;

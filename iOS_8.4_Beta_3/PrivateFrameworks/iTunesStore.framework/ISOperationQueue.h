@@ -6,7 +6,7 @@
     NSOperationQueue *_queue;
 }
 
-@property(assign,readwrite) bool adjustsMaxConcurrentOperationCount;
+@property bool adjustsMaxConcurrentOperationCount;
 
 + (id)mainQueue;
 

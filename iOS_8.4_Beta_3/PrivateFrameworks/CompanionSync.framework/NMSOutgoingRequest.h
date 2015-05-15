@@ -16,21 +16,21 @@
     bool _shouldEncrypt;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSDictionary * extraIDSOptions;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * idsIdentifier;
-@property(assign,readwrite) NMSMessageCenter * messageCenter;
-@property(assign,readwrite) unsigned short messageID;
-@property(assign,retain) id pbRequest;
-@property(assign,retain) NSDictionary * persistentUserInfo;
-@property(assign,readwrite) unsigned long long priority;
-@property(assign,readwrite) double responseTimeout;
-@property(assign,readwrite) double sendTimeout;
-@property(assign,readwrite) bool shouldEncrypt;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSData *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSDictionary *extraIDSOptions;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *idsIdentifier;
+@property (nonatomic) NMSMessageCenter *messageCenter;
+@property (nonatomic) unsigned short messageID;
+@property (nonatomic, retain) id pbRequest;
+@property (nonatomic, retain) NSDictionary *persistentUserInfo;
+@property (nonatomic) unsigned long long priority;
+@property (nonatomic) double responseTimeout;
+@property (nonatomic) double sendTimeout;
+@property (nonatomic) bool shouldEncrypt;
+@property (readonly) Class superclass;
 
 + (id)requestWithMessageID:(unsigned short)arg1;
 

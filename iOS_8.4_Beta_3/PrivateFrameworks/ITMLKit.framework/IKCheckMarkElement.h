@@ -4,7 +4,7 @@
 
 @interface IKCheckMarkElement : IKViewElement
 
-@property(assign,readonly) unsigned long long alignment;
+@property (nonatomic, readonly) unsigned long long alignment;
 
 + (bool)shouldParseChildDOMElements;
 

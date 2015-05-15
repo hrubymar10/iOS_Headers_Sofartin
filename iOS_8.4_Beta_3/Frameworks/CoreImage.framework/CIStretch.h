@@ -8,9 +8,9 @@
     CIVector *inputSize;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIVector * inputPoint;
-@property(assign,retain) CIVector * inputSize;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIVector *inputPoint;
+@property (nonatomic, retain) CIVector *inputSize;
 
 + (id)customAttributes;
 

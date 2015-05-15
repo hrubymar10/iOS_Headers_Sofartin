@@ -26,27 +26,27 @@
     NSString *_watchFaceColor;
 }
 
-@property(assign,retain) NSNumber * bcmWindowMaterial;
-@property(assign,retain) NSNumber * bottomEnclosureMaterial;
-@property(assign,retain) NSString * deviceColor;
-@property(assign,retain) NSString * deviceEnclosureColor;
-@property(getter=isDiagnosticsOptInEnabled,assign,readwrite) bool diagnosticsOptInEnabled;
-@property(assign,retain) NSNumber * fcmMaterial;
-@property(assign,retain) NSDate * lastModificationDate;
-@property(getter=isLocationOptInEnabled,assign,readwrite) bool locationOptInEnabled;
-@property(assign,retain) NSString * marketingVersion;
-@property(assign,retain) NSString * material;
-@property(assign,retain) NSString * model;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * productType;
-@property(getter=isSiriOptInEnabled,assign,readwrite) bool siriOptInEnabled;
-@property(assign,retain) NSNumber * sizeInBytes;
-@property(assign,retain) NSString * systemBuildVersion;
-@property(assign,retain) NSString * systemVersion;
-@property(assign,retain) NSNumber * topEnclosureMaterial;
-@property(assign,retain) NSUUID * uuid;
-@property(assign,retain) NSString * watchFace;
-@property(assign,retain) NSString * watchFaceColor;
+@property (nonatomic, retain) NSNumber *bcmWindowMaterial;
+@property (nonatomic, retain) NSNumber *bottomEnclosureMaterial;
+@property (nonatomic, retain) NSString *deviceColor;
+@property (nonatomic, retain) NSString *deviceEnclosureColor;
+@property (getter=isDiagnosticsOptInEnabled, nonatomic) bool diagnosticsOptInEnabled;
+@property (nonatomic, retain) NSNumber *fcmMaterial;
+@property (nonatomic, retain) NSDate *lastModificationDate;
+@property (getter=isLocationOptInEnabled, nonatomic) bool locationOptInEnabled;
+@property (nonatomic, retain) NSString *marketingVersion;
+@property (nonatomic, retain) NSString *material;
+@property (nonatomic, retain) NSString *model;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *productType;
+@property (getter=isSiriOptInEnabled, nonatomic) bool siriOptInEnabled;
+@property (nonatomic, retain) NSNumber *sizeInBytes;
+@property (nonatomic, retain) NSString *systemBuildVersion;
+@property (nonatomic, retain) NSString *systemVersion;
+@property (nonatomic, retain) NSNumber *topEnclosureMaterial;
+@property (nonatomic, retain) NSUUID *uuid;
+@property (nonatomic, retain) NSString *watchFace;
+@property (nonatomic, retain) NSString *watchFaceColor;
 
 + (bool)supportsSecureCoding;
 

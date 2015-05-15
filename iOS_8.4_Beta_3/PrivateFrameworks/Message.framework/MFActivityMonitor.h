@@ -32,7 +32,7 @@
     NSString *_taskName;
 }
 
-@property(assign,retain) MFMailboxUid * mailbox;
+@property (retain) MFMailboxUid *mailbox;
 
 + (id)currentMonitor;
 + (void)destroyMonitor;

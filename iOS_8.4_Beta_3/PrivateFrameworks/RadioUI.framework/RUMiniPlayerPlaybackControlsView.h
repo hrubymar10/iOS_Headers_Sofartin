@@ -4,8 +4,8 @@
 
 @interface RUMiniPlayerPlaybackControlsView : MPUMiniPlayerPlaybackControlsView
 
-@property(assign,readonly) UIView * viewForPresentingStationActions;
-@property(assign,readonly) UIView * viewForPresentingTrackActions;
+@property (nonatomic, readonly) UIView *viewForPresentingStationActions;
+@property (nonatomic, readonly) UIView *viewForPresentingTrackActions;
 
 - (bool)_allowsScrubbingForItem:(id)arg1;
 - (id)_artistTextForItem:(id)arg1;

@@ -9,8 +9,8 @@
     NSObject<OS_dispatch_queue> *replyQueue;
 }
 
-@property(assign,readonly) NSObject<OS_xpc_object> * connection;
-@property(assign,readonly) NSMutableDictionary * registeredBlocks;
+@property (readonly) NSObject<OS_xpc_object> *connection;
+@property (readonly) NSMutableDictionary *registeredBlocks;
 
 + (id)LTEConferenceXPCClientSingleton;
 + (id)dictionaryForAudioSessionConfig:(id)arg1;

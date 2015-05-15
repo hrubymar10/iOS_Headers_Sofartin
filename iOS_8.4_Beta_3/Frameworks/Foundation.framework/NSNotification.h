@@ -4,9 +4,9 @@
 
 @interface NSNotification : NSObject <NSCoding, NSCopying>
 
-@property(assign,copy) NSString * name;
-@property(assign,retain) id object;
-@property(assign,copy) NSDictionary * userInfo;
+@property (readonly, copy) NSString *name;
+@property (readonly, retain) id object;
+@property (readonly, copy) NSDictionary *userInfo;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)notificationWithName:(id)arg1 object:(id)arg2;

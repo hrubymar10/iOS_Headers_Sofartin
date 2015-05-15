@@ -15,20 +15,20 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) NSURL * baseURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) MSASPConnectionGate * gate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * headerVersion;
-@property(assign,readwrite) bool isShuttingDown;
-@property(assign,retain) NSObject<OS_dispatch_queue> * memberQueue;
-@property(assign,retain) NSObject<OS_dispatch_group> * pendingConnectionsGroup;
-@property(assign,retain) NSObject<OS_dispatch_queue> * pendingConnectionsQueue;
-@property(assign,retain) NSString * personID;
-@property(assign,retain) NSString * serverSideConfigVersion;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) NSURL *baseURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) MSASPConnectionGate *gate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *headerVersion;
+@property (nonatomic) bool isShuttingDown;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *memberQueue;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *pendingConnectionsGroup;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *pendingConnectionsQueue;
+@property (nonatomic, readonly, retain) NSString *personID;
+@property (nonatomic, retain) NSString *serverSideConfigVersion;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (id)HTTPErrorWithStatusCode:(long long)arg1;

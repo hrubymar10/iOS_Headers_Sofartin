@@ -10,9 +10,9 @@
     NSMutableArray *_usages;
 }
 
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,retain) NSMutableArray * usages;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic, retain) NSMutableArray *usages;
 
 - (void)addUsage:(id)arg1;
 - (void)clearUsages;

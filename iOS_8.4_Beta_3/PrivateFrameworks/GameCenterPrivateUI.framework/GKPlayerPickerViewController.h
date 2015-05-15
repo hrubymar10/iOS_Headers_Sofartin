@@ -12,13 +12,13 @@
     bool _supportsNearby;
 }
 
-@property(assign,retain) GKGame * game;
-@property(assign,copy) id handler;
-@property(assign,readwrite) long long maxSelectable;
-@property(assign,readwrite) <GKNearbyBrowserDelegate> * nearbyDelegate;
-@property(assign,retain) NSArray * preselectedPlayers;
-@property(assign,readwrite) GKSearchBarView * searchBar;
-@property(assign,readwrite) bool supportsNearby;
+@property (nonatomic, retain) GKGame *game;
+@property (nonatomic, copy) id handler;
+@property (nonatomic) long long maxSelectable;
+@property (nonatomic) <GKNearbyBrowserDelegate> *nearbyDelegate;
+@property (nonatomic, retain) NSArray *preselectedPlayers;
+@property (nonatomic) GKSearchBarView *searchBar;
+@property (nonatomic) bool supportsNearby;
 
 + (id)challengesPickerWithChallenge:(id)arg1 selectedPlayers:(id)arg2;
 + (id)multiplayerPickerForGame:(id)arg1 hiddenPlayers:(id)arg2;

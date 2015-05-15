@@ -13,11 +13,11 @@
     UIView *_topBorderView;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,readwrite) long long features;
-@property(assign,readwrite) unsigned long long gameCenterFeatures;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic) long long features;
+@property (nonatomic) unsigned long long gameCenterFeatures;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)_gameCenterStringWithFeatures:(unsigned long long)arg1;

@@ -4,14 +4,14 @@
 
 @interface SALocalSearchShowMapPoints : SADomainCommand
 
-@property(assign,copy) NSString * directionsType;
-@property(assign,retain) SALocalSearchMapItem * itemDestination;
-@property(assign,retain) SALocalSearchMapItem * itemSource;
-@property(assign,copy) NSString * language;
-@property(assign,copy) NSNumber * regionOfInterestRadiusInMiles;
-@property(assign,retain) SALocalSearchMapItemList * searchItems;
-@property(assign,readwrite) bool showDirections;
-@property(assign,readwrite) bool showTraffic;
+@property (nonatomic, copy) NSString *directionsType;
+@property (nonatomic, retain) SALocalSearchMapItem *itemDestination;
+@property (nonatomic, retain) SALocalSearchMapItem *itemSource;
+@property (nonatomic, copy) NSString *language;
+@property (nonatomic, copy) NSNumber *regionOfInterestRadiusInMiles;
+@property (nonatomic, retain) SALocalSearchMapItemList *searchItems;
+@property (nonatomic) bool showDirections;
+@property (nonatomic) bool showTraffic;
 
 + (id)showMapPoints;
 + (id)showMapPointsWithDictionary:(id)arg1 context:(id)arg2;

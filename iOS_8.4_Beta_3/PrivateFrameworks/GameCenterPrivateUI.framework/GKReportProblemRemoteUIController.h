@@ -7,8 +7,8 @@
     NSURL *_url;
 }
 
-@property(assign,retain) GKPlayer * problemPlayer;
-@property(assign,retain) NSURL * url;
+@property (nonatomic, retain) GKPlayer *problemPlayer;
+@property (nonatomic, retain) NSURL *url;
 
 + (id)controllerForProblemPlayer:(id)arg1 completionHandler:(id)arg2;
 

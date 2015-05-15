@@ -9,10 +9,10 @@
     <NSObject> *_object;
 }
 
-@property(assign,retain) MSASAlbum * album;
-@property(assign,retain) NSString * albumGUID;
-@property(assign,readwrite) int errorCount;
-@property(assign,retain) <NSObject> * object;
+@property (nonatomic, retain) MSASAlbum *album;
+@property (nonatomic, retain) NSString *albumGUID;
+@property (nonatomic) int errorCount;
+@property (nonatomic, retain) <NSObject> *object;
 
 - (void).cxx_destruct;
 - (id)album;

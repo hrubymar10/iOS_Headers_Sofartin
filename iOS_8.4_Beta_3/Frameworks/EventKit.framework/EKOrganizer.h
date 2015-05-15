@@ -4,7 +4,7 @@
 
 @interface EKOrganizer : EKParticipant
 
-@property(getter=isCurrentUser,assign,readwrite) bool currentUser;
+@property (getter=isCurrentUser, nonatomic) bool currentUser;
 
 + (id)organizerWithName:(id)arg1 emailAddress:(id)arg2 address:(id)arg3 isCurrentUser:(bool)arg4;
 

@@ -12,12 +12,12 @@
     long long _type;
 }
 
-@property(assign,readwrite) bool acceptsTapsWhenDisabled;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) int group;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,readwrite) bool supportsLongPress;
-@property(assign,readonly) long long type;
+@property (nonatomic) bool acceptsTapsWhenDisabled;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic, readonly) int group;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic) bool supportsLongPress;
+@property (nonatomic, readonly) long long type;
 
 + (void)_addTransportControl:(id)arg1 toTransportControlsArray:(id)arg2;
 + (id)_createTransportControlForType:(long long)arg1 withMediaRemoteCommand:(struct _MRMediaRemoteCommandInfo { }*)arg2;

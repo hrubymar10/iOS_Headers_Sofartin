@@ -13,13 +13,13 @@
     } _originatingWebView;
 }
 
-@property(assign,readonly) struct Object { int (**x1)(); id x2; }* _apiObject;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) WKWebView * originatingWebView;
-@property(assign,readonly) NSURLRequest * request;
-@property(assign,readonly) Class superclass;
+@property (readonly) struct Object { int (**x1)(); id x2; }*_apiObject;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) WKWebView *originatingWebView;
+@property (nonatomic, readonly) NSURLRequest *request;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -37,20 +37,20 @@
     bool _usesBlurredBackground;
 }
 
-@property(assign,copy) NSString * backdropGroupName;
-@property(assign,readwrite) UIImage * backgroundImageForBlurring;
-@property(assign,readonly) long long backgroundType;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } bigHitInsets;
-@property(assign,readonly) UIColor * controlForeGroundColor;
-@property(assign,retain) UIImage * customPlayImage;
-@property(assign,retain) UIImage * customToggleImage;
-@property(assign,retain) UIImageView * imageView;
-@property(getter=isIndeterminate,assign,readonly) bool indeterminate;
-@property(assign,readwrite) float progress;
-@property(assign,copy) UIColor * progressIndicatorColor;
-@property(assign,readwrite) bool showOuterBorder;
-@property(assign,readonly) bool showingPlayIndicator;
-@property(assign,readonly) bool showingProgress;
+@property (nonatomic, copy) NSString *backdropGroupName;
+@property (nonatomic) UIImage *backgroundImageForBlurring;
+@property (nonatomic, readonly) long long backgroundType;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } bigHitInsets;
+@property (nonatomic, readonly) UIColor *controlForeGroundColor;
+@property (nonatomic, retain) UIImage *customPlayImage;
+@property (nonatomic, retain) UIImage *customToggleImage;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (getter=isIndeterminate, nonatomic, readonly) bool indeterminate;
+@property (nonatomic) float progress;
+@property (nonatomic, copy) UIColor *progressIndicatorColor;
+@property (nonatomic) bool showOuterBorder;
+@property (nonatomic, readonly) bool showingPlayIndicator;
+@property (nonatomic, readonly) bool showingProgress;
 
 + (struct { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; })_calculateStatistics:(struct CGImage { }*)arg1 withSize:(struct CGSize { double x1; double x2; })arg2;
 + (id)blurColorForImage:(id)arg1 forButtonSize:(struct CGSize { double x1; double x2; })arg2 withOffsetRight:(float)arg3 withOffsetBottom:(float)arg4;

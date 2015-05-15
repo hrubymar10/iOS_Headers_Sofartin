@@ -10,17 +10,17 @@
     NSIndexSet *_oldFilteredIndexes;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSIndexSet * filteredIndexes;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PLIndexMapper * indexMapper;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSIndexSet * updatedFilteredIndexes;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSIndexSet *filteredIndexes;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) PLIndexMapper *indexMapper;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, retain) NSIndexSet *updatedFilteredIndexes;
 
 + (id)notificationForDerivedObject:(id)arg1 priorChangeState:(id)arg2 forBackingObjectNotification:(id)arg3;
 

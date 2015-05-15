@@ -11,12 +11,12 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,readwrite) unsigned long long clientCount;
-@property(assign,readonly) <XPCServiceListenerDelegate> * delegate;
-@property(assign,retain) NSObject<OS_xpc_object> * listener;
-@property(assign,retain) NSMutableSet * serviceConnections;
-@property(assign,retain) NSString * serviceName;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic) unsigned long long clientCount;
+@property (nonatomic, readonly) <XPCServiceListenerDelegate> *delegate;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *listener;
+@property (nonatomic, retain) NSMutableSet *serviceConnections;
+@property (nonatomic, readonly, retain) NSString *serviceName;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)_workQueueShutDownServiceConnections:(id)arg1 index:(unsigned long long)arg2 completionBlock:(id)arg3;

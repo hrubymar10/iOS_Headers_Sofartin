@@ -6,7 +6,7 @@
     UIDynamicAnimator *_animator;
 }
 
-@property(assign,readwrite) UIDynamicAnimator * animator;
+@property UIDynamicAnimator *animator;
 
 - (void)_displayLinkTick:(id)arg1;
 - (id)animator;

@@ -58,15 +58,15 @@
     } _viewUniformData;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  fillColor; /* unknown property attribute:  1>=[4f]} */
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) VKMapModel * mapModel;
-@property(assign,readwrite) unsigned char renderPass;
-@property(assign,readwrite) bool simpleGridEnabled;
-@property(assign,readonly) VKStyleManager * styleManager;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  fillColor; /* unknown property attribute:  1>=[4f]} */
+@property (readonly) unsigned long long hash;
+@property (nonatomic) VKMapModel *mapModel;
+@property (nonatomic) unsigned char renderPass;
+@property (nonatomic) bool simpleGridEnabled;
+@property (nonatomic, readonly) VKStyleManager *styleManager;
+@property (readonly) Class superclass;
 
 + (bool)reloadOnStylesheetChange;
 

@@ -6,8 +6,8 @@
     AVCaptureAudioDataOutputInternal_FigRecorder *_internal;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * sampleBufferCallbackQueue;
-@property(assign,readonly) <AVCaptureAudioDataOutputSampleBufferDelegate_FigRecorder> * sampleBufferDelegate;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *sampleBufferCallbackQueue;
+@property (nonatomic, readonly) <AVCaptureAudioDataOutputSampleBufferDelegate_FigRecorder> *sampleBufferDelegate;
 
 + (void)initialize;
 

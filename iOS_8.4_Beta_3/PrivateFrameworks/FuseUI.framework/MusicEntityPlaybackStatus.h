@@ -10,11 +10,11 @@
     float _playbackRate;
 }
 
-@property(assign,readonly) double playbackCurrentTime;
-@property(assign,readonly) long long playbackDisplayState;
-@property(assign,readonly) double playbackDuration;
-@property(assign,readonly) float playbackRate;
-@property(assign,readonly) bool shouldDisplayPlaying;
+@property (nonatomic, readonly) double playbackCurrentTime;
+@property (nonatomic, readonly) long long playbackDisplayState;
+@property (nonatomic, readonly) double playbackDuration;
+@property (nonatomic, readonly) float playbackRate;
+@property (nonatomic, readonly) bool shouldDisplayPlaying;
 
 - (id)_copyWithClass:(Class)arg1 zone:(struct _NSZone { }*)arg2;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

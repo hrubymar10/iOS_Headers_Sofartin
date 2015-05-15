@@ -7,8 +7,8 @@
     unsigned long long _quotaAvailable;
 }
 
-@property(assign,copy) id fetchUserQuotaCompletionBlock;
-@property(assign,readwrite) unsigned long long quotaAvailable;
+@property (nonatomic, copy) id fetchUserQuotaCompletionBlock;
+@property (nonatomic) unsigned long long quotaAvailable;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

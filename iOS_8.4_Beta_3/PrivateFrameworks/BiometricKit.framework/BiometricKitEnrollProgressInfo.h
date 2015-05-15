@@ -11,12 +11,12 @@
     UIImage *_renderedImage;
 }
 
-@property(assign,retain) UIImage * captureImage;
-@property(assign,readwrite) long long currentPrimaryComponentID;
-@property(assign,readwrite) int message;
-@property(assign,retain) NSDictionary * messageDetails;
-@property(assign,readwrite) long long progress;
-@property(assign,retain) UIImage * renderedImage;
+@property (nonatomic, retain) UIImage *captureImage;
+@property (nonatomic) long long currentPrimaryComponentID;
+@property (nonatomic) int message;
+@property (nonatomic, retain) NSDictionary *messageDetails;
+@property (nonatomic) long long progress;
+@property (nonatomic, retain) UIImage *renderedImage;
 
 - (id)captureImage;
 - (long long)currentPrimaryComponentID;

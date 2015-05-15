@@ -7,8 +7,8 @@
     UIImageView *_photoImageView;
 }
 
-@property(assign,retain) UILabel * nameLabel;
-@property(assign,retain) UIImageView * photoImageView;
+@property (nonatomic, retain) UILabel *nameLabel;
+@property (nonatomic, retain) UIImageView *photoImageView;
 
 - (void)dealloc;
 - (id)initWithName:(id)arg1;

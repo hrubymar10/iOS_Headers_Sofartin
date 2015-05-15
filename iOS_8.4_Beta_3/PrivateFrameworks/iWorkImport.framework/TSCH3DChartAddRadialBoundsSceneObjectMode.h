@@ -6,7 +6,7 @@
     float mFactor;
 }
 
-@property(assign,readwrite) float factor;
+@property (nonatomic) float factor;
 
 - (float)factor;
 - (void)getBounds:(id)arg1;

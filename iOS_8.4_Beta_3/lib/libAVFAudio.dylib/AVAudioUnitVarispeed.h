@@ -4,7 +4,7 @@
 
 @interface AVAudioUnitVarispeed : AVAudioUnitTimeEffect
 
-@property(assign,readwrite) float rate;
+@property (nonatomic) float rate;
 
 - (id)init;
 - (float)rate;

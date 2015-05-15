@@ -14,19 +14,19 @@
     NSString *_username;
 }
 
-@property(assign,retain) NSArray * anchorCertificates;
-@property(assign,copy) id completionBlock;
-@property(assign,retain) NSURLConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didFailDueToMissingCredentials;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * password;
-@property(assign,retain) NSMutableData * responseData;
-@property(assign,retain) id selfReference;
-@property(assign,readwrite) bool shouldUseResponseBodyAsLoginPrompt;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * username;
+@property (nonatomic, retain) NSArray *anchorCertificates;
+@property (nonatomic, copy) id completionBlock;
+@property (nonatomic, retain) NSURLConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool didFailDueToMissingCredentials;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *password;
+@property (nonatomic, retain) NSMutableData *responseData;
+@property (nonatomic, retain) id selfReference;
+@property (nonatomic) bool shouldUseResponseBodyAsLoginPrompt;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *username;
 
 - (void).cxx_destruct;
 - (id)anchorCertificates;

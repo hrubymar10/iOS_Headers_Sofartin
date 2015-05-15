@@ -6,7 +6,7 @@
     NSArray *_recordZoneIDs;
 }
 
-@property(assign,retain) NSArray * recordZoneIDs;
+@property (nonatomic, retain) NSArray *recordZoneIDs;
 
 - (void).cxx_destruct;
 - (id)recordZoneIDs;

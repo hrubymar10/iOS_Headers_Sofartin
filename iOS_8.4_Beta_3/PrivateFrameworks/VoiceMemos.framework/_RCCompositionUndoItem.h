@@ -7,8 +7,8 @@
     NSString *_reasonAccessTokenName;
 }
 
-@property(assign,copy) RCComposition * composition;
-@property(assign,readwrite) NSString * reasonAccessTokenName;
+@property (nonatomic, copy) RCComposition *composition;
+@property (nonatomic) NSString *reasonAccessTokenName;
 
 - (void).cxx_destruct;
 - (id)composition;

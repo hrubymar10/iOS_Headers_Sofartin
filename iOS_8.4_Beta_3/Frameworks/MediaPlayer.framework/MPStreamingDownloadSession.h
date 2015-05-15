@@ -13,14 +13,14 @@
     NSURL *_sourceURL;
 }
 
-@property(assign,copy) NSString * assetFlavor;
-@property(assign,readwrite) unsigned long long assetQuality;
-@property(assign,readwrite) bool didStartLeaseSession;
-@property(assign,readwrite) unsigned long long downloadToken;
-@property(assign,readwrite) unsigned long long protectionType;
-@property(assign,copy) NSDictionary * purchaseBundle;
-@property(assign,retain) NSDictionary * responseAssetDictionary;
-@property(assign,copy) NSURL * sourceURL;
+@property (nonatomic, copy) NSString *assetFlavor;
+@property (nonatomic) unsigned long long assetQuality;
+@property (nonatomic) bool didStartLeaseSession;
+@property (nonatomic) unsigned long long downloadToken;
+@property (nonatomic) unsigned long long protectionType;
+@property (nonatomic, copy) NSDictionary *purchaseBundle;
+@property (nonatomic, retain) NSDictionary *responseAssetDictionary;
+@property (nonatomic, copy) NSURL *sourceURL;
 
 - (void).cxx_destruct;
 - (id)assetFlavor;

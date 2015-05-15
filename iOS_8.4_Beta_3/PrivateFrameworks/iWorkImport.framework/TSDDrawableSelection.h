@@ -6,11 +6,11 @@
     NSSet *mInfos;
 }
 
-@property(assign,readonly) unsigned long long infoCount;
-@property(assign,retain) NSSet * infos;
-@property(assign,readonly) bool isEmpty;
-@property(assign,readonly) unsigned long long unlockedInfoCount;
-@property(assign,readonly) NSSet * unlockedInfos;
+@property (nonatomic, readonly) unsigned long long infoCount;
+@property (nonatomic, readonly, retain) NSSet *infos;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, readonly) unsigned long long unlockedInfoCount;
+@property (nonatomic, readonly) NSSet *unlockedInfos;
 
 + (Class)archivedSelectionClass;
 

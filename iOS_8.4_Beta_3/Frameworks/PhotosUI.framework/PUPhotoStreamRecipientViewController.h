@@ -25,13 +25,13 @@
     bool _wasFirstResponder;
 }
 
-@property(assign,readwrite) double bottomTableOffset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * recipients;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) double bottomTableOffset;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) id delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *recipients;
+@property (readonly) Class superclass;
 
 + (void)recordRecentInvitationRecipient:(id)arg1 displayName:(id)arg2 date:(id)arg3;
 

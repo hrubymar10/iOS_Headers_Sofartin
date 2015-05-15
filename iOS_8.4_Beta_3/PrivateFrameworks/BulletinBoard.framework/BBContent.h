@@ -8,9 +8,9 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
 
 + (id)contentWithTitle:(id)arg1 subtitle:(id)arg2 message:(id)arg3;
 + (bool)supportsSecureCoding;

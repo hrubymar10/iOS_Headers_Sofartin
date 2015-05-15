@@ -10,12 +10,12 @@
     unsigned int _width;
 }
 
-@property(assign,readonly) bool containsMipmaps;
-@property(assign,readonly) unsigned int height;
-@property(assign,readonly) unsigned int name;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) unsigned int target;
-@property(assign,readonly) unsigned int width;
+@property (nonatomic, readonly) bool containsMipmaps;
+@property (nonatomic, readonly) unsigned int height;
+@property (nonatomic, readonly) unsigned int name;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) unsigned int target;
+@property (nonatomic, readonly) unsigned int width;
 
 + (id)textureInfoWithName:(unsigned int)arg1 target:(unsigned int)arg2 width:(unsigned int)arg3 height:(unsigned int)arg4 containsMipmaps:(bool)arg5;
 

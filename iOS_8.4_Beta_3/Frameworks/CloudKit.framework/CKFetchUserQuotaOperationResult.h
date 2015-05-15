@@ -6,7 +6,7 @@
     unsigned long long _quotaAvailable;
 }
 
-@property(assign,readwrite) unsigned long long quotaAvailable;
+@property (nonatomic) unsigned long long quotaAvailable;
 
 + (bool)supportsSecureCoding;
 

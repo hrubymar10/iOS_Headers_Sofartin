@@ -6,7 +6,7 @@
     NSString *mStrokeName;
 }
 
-@property(assign,copy) NSString * strokeName;
+@property (nonatomic, copy) NSString *strokeName;
 
 + (Class)classForName:(id)arg1;
 + (id)strokeWithName:(id)arg1 color:(id)arg2 width:(double)arg3;

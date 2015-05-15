@@ -9,10 +9,10 @@
     long long _type;
 }
 
-@property(assign,readonly) unsigned long long integerId;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) CDSession * session;
-@property(assign,readonly) long long type;
+@property (readonly) unsigned long long integerId;
+@property (readonly) NSString *name;
+@property (readonly) CDSession *session;
+@property (readonly) long long type;
 
 - (void).cxx_destruct;
 - (id)childBudgetWithName:(id)arg1 maxFraction:(double)arg2 type:(long long)arg3 error:(id*)arg4;

@@ -15,20 +15,20 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSString * artistName;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SSItemImageCollection * imageCollection;
-@property(assign,readonly) NSString * itemKind;
-@property(assign,readonly) long long persistentIdentifier;
-@property(assign,readonly) NSDate * releaseDate;
-@property(assign,readonly) NSString * releaseDateString;
-@property(assign,readonly) NSNumber * storeAccountIdentifier;
-@property(assign,readonly) unsigned long long storeItemIdentifier;
-@property(assign,readonly) unsigned long long storePreorderIdentifier;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSString *artistName;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SSItemImageCollection *imageCollection;
+@property (nonatomic, readonly) NSString *itemKind;
+@property (nonatomic, readonly) long long persistentIdentifier;
+@property (nonatomic, readonly) NSDate *releaseDate;
+@property (nonatomic, readonly) NSString *releaseDateString;
+@property (nonatomic, readonly) NSNumber *storeAccountIdentifier;
+@property (nonatomic, readonly) unsigned long long storeItemIdentifier;
+@property (nonatomic, readonly) unsigned long long storePreorderIdentifier;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *title;
 
 - (id)_initWithPersistentIdentifier:(long long)arg1;
 - (void)_setArtistName:(id)arg1;

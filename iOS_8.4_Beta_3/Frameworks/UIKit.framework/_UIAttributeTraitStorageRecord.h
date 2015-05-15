@@ -7,8 +7,8 @@
     id _value;
 }
 
-@property(assign,readonly) UITraitCollection * traitCollection;
-@property(assign,readonly) id value;
+@property (nonatomic, readonly) UITraitCollection *traitCollection;
+@property (nonatomic, readonly) id value;
 
 - (void)dealloc;
 - (void)encodeWithCoder:(id)arg1;

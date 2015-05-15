@@ -11,7 +11,7 @@
     NSMutableArray *_tasks;
 }
 
-@property(assign,retain) UIKeyboardTaskExecutionContext * executionContext;
+@property (nonatomic, retain) UIKeyboardTaskExecutionContext *executionContext;
 
 - (void)addDeferredTask:(id)arg1;
 - (void)addTask:(id)arg1;

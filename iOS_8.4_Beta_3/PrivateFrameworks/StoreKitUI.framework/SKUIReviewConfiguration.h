@@ -9,10 +9,10 @@
     NSString *_ratingURLString;
 }
 
-@property(assign,readonly) NSString * allVersionsURLString;
-@property(assign,readonly) NSString * currentVersionURLString;
-@property(assign,readonly) NSString * pageNumberQueryParameter;
-@property(assign,readonly) NSString * ratingURLString;
+@property (nonatomic, readonly) NSString *allVersionsURLString;
+@property (nonatomic, readonly) NSString *currentVersionURLString;
+@property (nonatomic, readonly) NSString *pageNumberQueryParameter;
+@property (nonatomic, readonly) NSString *ratingURLString;
 
 - (void).cxx_destruct;
 - (id)allVersionsURLString;

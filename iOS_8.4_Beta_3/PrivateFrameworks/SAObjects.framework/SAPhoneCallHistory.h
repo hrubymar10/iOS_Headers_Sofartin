@@ -4,12 +4,12 @@
 
 @interface SAPhoneCallHistory : SAPhoneCallSearchResult
 
-@property(assign,copy) NSNumber * blocked;
-@property(assign,copy) NSNumber * callCount;
-@property(assign,copy) NSNumber * faceTime;
-@property(assign,copy) NSNumber * faceTimeAudio;
-@property(assign,copy) NSNumber * missed;
-@property(assign,copy) NSNumber * outgoing;
+@property (nonatomic, copy) NSNumber *blocked;
+@property (nonatomic, copy) NSNumber *callCount;
+@property (nonatomic, copy) NSNumber *faceTime;
+@property (nonatomic, copy) NSNumber *faceTimeAudio;
+@property (nonatomic, copy) NSNumber *missed;
+@property (nonatomic, copy) NSNumber *outgoing;
 
 + (id)callHistory;
 + (id)callHistoryWithDictionary:(id)arg1 context:(id)arg2;

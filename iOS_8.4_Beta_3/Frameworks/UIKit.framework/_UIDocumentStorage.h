@@ -7,8 +7,8 @@
     NSString *_scope;
 }
 
-@property(assign,readonly) NSURL * rootURL;
-@property(getter=isUbiquitous,assign,readonly) bool ubiquitous;
+@property (readonly) NSURL *rootURL;
+@property (getter=isUbiquitous, readonly) bool ubiquitous;
 
 - (void)dealloc;
 - (id)initWithSearchScope:(id)arg1 rootURL:(id)arg2;

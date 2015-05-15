@@ -6,7 +6,7 @@
     double _height;
 }
 
-@property(assign,readonly) double height;
+@property (nonatomic, readonly) double height;
 
 - (long long)componentType;
 - (double)height;

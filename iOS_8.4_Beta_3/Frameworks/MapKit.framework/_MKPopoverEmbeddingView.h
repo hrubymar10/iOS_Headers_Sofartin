@@ -6,7 +6,7 @@
     <_MKPopoverEmbeddingViewWindowDelegate> *_windowDelegate;
 }
 
-@property(assign,readwrite) <_MKPopoverEmbeddingViewWindowDelegate> * windowDelegate;
+@property (nonatomic) <_MKPopoverEmbeddingViewWindowDelegate> *windowDelegate;
 
 - (void).cxx_destruct;
 - (void)didMoveToWindow;

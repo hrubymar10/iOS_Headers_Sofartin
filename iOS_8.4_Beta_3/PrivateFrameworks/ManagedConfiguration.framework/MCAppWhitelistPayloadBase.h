@@ -8,9 +8,9 @@
     NSArray *_whitelistedAppsAndOptions;
 }
 
-@property(assign,readwrite) bool allowAccessWithoutPasscode;
-@property(assign,readwrite) bool forceAllowSupervisorAccess;
-@property(assign,retain) NSArray * whitelistedAppsAndOptions;
+@property (nonatomic) bool allowAccessWithoutPasscode;
+@property (nonatomic) bool forceAllowSupervisorAccess;
+@property (nonatomic, retain) NSArray *whitelistedAppsAndOptions;
 
 + (id)knownOptionsKeys;
 + (id)knownUserEnabledOptionKeys;

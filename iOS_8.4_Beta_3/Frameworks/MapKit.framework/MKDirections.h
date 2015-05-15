@@ -11,7 +11,7 @@
     NSObject<OS_dispatch_group> *_waypointsDispatchGroup;
 }
 
-@property(getter=isCalculating,assign,readonly) bool calculating;
+@property (getter=isCalculating, nonatomic, readonly) bool calculating;
 
 - (void).cxx_destruct;
 - (void)_calculateETAWithCompletionHandler:(id)arg1;

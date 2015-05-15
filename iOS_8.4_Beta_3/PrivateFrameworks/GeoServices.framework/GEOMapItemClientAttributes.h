@@ -7,10 +7,10 @@
     GEOMapItemRoutineAttributes *_routineAttributes;
 }
 
-@property(assign,retain) GEOMapItemAddressBookAttributes * addressBookAttributes;
-@property(assign,readonly) bool hasAddressBookAttributes;
-@property(assign,readonly) bool hasRoutineAttributes;
-@property(assign,retain) GEOMapItemRoutineAttributes * routineAttributes;
+@property (nonatomic, retain) GEOMapItemAddressBookAttributes *addressBookAttributes;
+@property (nonatomic, readonly) bool hasAddressBookAttributes;
+@property (nonatomic, readonly) bool hasRoutineAttributes;
+@property (nonatomic, retain) GEOMapItemRoutineAttributes *routineAttributes;
 
 + (id)clientAttributesCopyForSharing:(id)arg1;
 

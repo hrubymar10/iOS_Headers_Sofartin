@@ -4,8 +4,8 @@
 
 @interface GKHostedGameCenterViewController : GKHostedViewController
 
-@property(assign,readonly) GKGameCenterViewController * _parentController;
-@property(assign,readonly) GKRemoteGameCenterViewController * _remoteController;
+@property (nonatomic, readonly) GKGameCenterViewController *_parentController;
+@property (nonatomic, readonly) GKRemoteGameCenterViewController *_remoteController;
 
 - (id)_parentController;
 - (id)_presentingViewController;

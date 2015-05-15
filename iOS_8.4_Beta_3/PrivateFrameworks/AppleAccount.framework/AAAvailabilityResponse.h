@@ -8,9 +8,9 @@
     NSString *_status;
 }
 
-@property(assign,readonly) NSString * eta;
-@property(assign,readonly) NSString * feature;
-@property(assign,readonly) NSString * status;
+@property (nonatomic, readonly) NSString *eta;
+@property (nonatomic, readonly) NSString *feature;
+@property (nonatomic, readonly) NSString *status;
 
 - (void).cxx_destruct;
 - (id)eta;

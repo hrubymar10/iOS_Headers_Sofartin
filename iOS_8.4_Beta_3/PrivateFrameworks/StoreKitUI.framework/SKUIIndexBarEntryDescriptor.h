@@ -20,13 +20,13 @@
     long long _visibilityPriority;
 }
 
-@property(assign,retain) SKUIArtwork * artwork;
-@property(assign,copy) NSAttributedString * attributedString;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentEdgeInsets;
-@property(assign,readwrite) long long entryDescriptorType;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readwrite) long long visibilityPriority;
+@property (nonatomic, retain) SKUIArtwork *artwork;
+@property (nonatomic, copy) NSAttributedString *attributedString;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentEdgeInsets;
+@property (nonatomic) long long entryDescriptorType;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic) long long visibilityPriority;
 
 + (id)entryDescriptorWithArtwork:(id)arg1;
 + (id)entryDescriptorWithAttributedString:(id)arg1;

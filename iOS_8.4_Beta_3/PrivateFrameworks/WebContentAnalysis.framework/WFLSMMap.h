@@ -7,7 +7,7 @@
     NSNumber *threshold;
 }
 
-@property(assign,copy) NSNumber * threshold;
+@property (copy) NSNumber *threshold;
 
 + (id)mapFromFilePath:(id)arg1;
 + (id)mapFromURL:(id)arg1;

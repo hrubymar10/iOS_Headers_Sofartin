@@ -10,11 +10,11 @@
     NSDate *_transactionDate;
 }
 
-@property(assign,readonly) NSString * exportingPeerID;
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,readonly) NSString * modelVersionHash;
-@property(assign,readonly) NSArray * storeNames;
-@property(assign,retain) NSDate * transactionDate;
+@property (nonatomic, readonly) NSString *exportingPeerID;
+@property (nonatomic, readonly) NSString *localPeerID;
+@property (nonatomic, readonly) NSString *modelVersionHash;
+@property (nonatomic, readonly) NSArray *storeNames;
+@property (nonatomic, retain) NSDate *transactionDate;
 
 - (void)dealloc;
 - (id)description;

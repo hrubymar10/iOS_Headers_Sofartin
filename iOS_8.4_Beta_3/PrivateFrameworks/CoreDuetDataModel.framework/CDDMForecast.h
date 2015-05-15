@@ -4,23 +4,23 @@
 
 @interface CDDMForecast : NSManagedObject
 
-@property(assign,retain) NSNumber * attributeId;
-@property(assign,retain) NSNumber * basisCount;
-@property(assign,retain) NSNumber * basisFilled;
-@property(assign,retain) NSNumber * clientId;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,retain) NSNumber * forecastFormat;
-@property(assign,retain) NSDate * forecastGeneratedOn;
-@property(assign,retain) NSNumber * forecastGranularity;
-@property(assign,retain) NSNumber * forecastGroupId;
-@property(assign,retain) NSNumber * forecastType;
-@property(assign,retain) NSDate * historyWindowEnd;
-@property(assign,retain) NSNumber * historyWindowRecurrenceDelta;
-@property(assign,retain) NSNumber * historyWindowRecurrenceWidth;
-@property(assign,retain) NSDate * historyWindowStart;
-@property(assign,retain) NSNumber * integerId;
-@property(assign,retain) NSNumber * limitCount;
-@property(assign,retain) NSDate * oldestEntryDate;
-@property(assign,retain) NSNumber * userId;
+@property (nonatomic, retain) NSNumber *attributeId;
+@property (nonatomic, retain) NSNumber *basisCount;
+@property (nonatomic, retain) NSNumber *basisFilled;
+@property (nonatomic, retain) NSNumber *clientId;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic, retain) NSNumber *forecastFormat;
+@property (nonatomic, retain) NSDate *forecastGeneratedOn;
+@property (nonatomic, retain) NSNumber *forecastGranularity;
+@property (nonatomic, retain) NSNumber *forecastGroupId;
+@property (nonatomic, retain) NSNumber *forecastType;
+@property (nonatomic, retain) NSDate *historyWindowEnd;
+@property (nonatomic, retain) NSNumber *historyWindowRecurrenceDelta;
+@property (nonatomic, retain) NSNumber *historyWindowRecurrenceWidth;
+@property (nonatomic, retain) NSDate *historyWindowStart;
+@property (nonatomic, retain) NSNumber *integerId;
+@property (nonatomic, retain) NSNumber *limitCount;
+@property (nonatomic, retain) NSDate *oldestEntryDate;
+@property (nonatomic, retain) NSNumber *userId;
 
 @end

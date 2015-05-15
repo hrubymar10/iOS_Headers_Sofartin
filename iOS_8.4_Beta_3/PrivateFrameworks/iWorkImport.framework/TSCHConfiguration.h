@@ -18,20 +18,20 @@
     bool mUse3DFillFor3DChartFallback;
 }
 
-@property(assign,readonly) TSSPropertyMap * appSpecificPropertyOverrides;
-@property(assign,readwrite) bool disableHighQualityRenderingIfNecessary;
-@property(assign,readwrite) bool exportsUsingSageKeynoteChartNonStyleDefaultsOverride;
-@property(assign,readwrite) Class multiDataChartOptionsControllerBuildSupportClass;
-@property(assign,copy) NSString * saveChartStyleHelpKey;
-@property(assign,readwrite) bool shouldForceDiscreteGraphicsFor3D;
-@property(assign,readwrite) bool showMessageOnSelection;
-@property(assign,readwrite) bool supports3DFillDataEmbeddingRecovery;
-@property(assign,readwrite) bool supportsChartDataEditor;
-@property(assign,readwrite) bool supportsChartRangeEditingMode;
-@property(assign,readwrite) bool supportsNumberFormatSameAsSource;
-@property(assign,readwrite) bool supportsTextBackground;
-@property(assign,readwrite) bool supportsTextWrapping;
-@property(assign,readwrite) bool use3DFillFor3DChartFallback;
+@property (readonly) TSSPropertyMap *appSpecificPropertyOverrides;
+@property (nonatomic) bool disableHighQualityRenderingIfNecessary;
+@property (nonatomic) bool exportsUsingSageKeynoteChartNonStyleDefaultsOverride;
+@property (nonatomic) Class multiDataChartOptionsControllerBuildSupportClass;
+@property (nonatomic, copy) NSString *saveChartStyleHelpKey;
+@property (nonatomic) bool shouldForceDiscreteGraphicsFor3D;
+@property (nonatomic) bool showMessageOnSelection;
+@property (nonatomic) bool supports3DFillDataEmbeddingRecovery;
+@property (nonatomic) bool supportsChartDataEditor;
+@property (nonatomic) bool supportsChartRangeEditingMode;
+@property (nonatomic) bool supportsNumberFormatSameAsSource;
+@property (nonatomic) bool supportsTextBackground;
+@property (nonatomic) bool supportsTextWrapping;
+@property (nonatomic) bool use3DFillFor3DChartFallback;
 
 + (id)_singletonAlloc;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;

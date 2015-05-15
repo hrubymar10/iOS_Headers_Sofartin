@@ -8,7 +8,7 @@
     NSObject<OS_dispatch_queue> *_serialQueue;
 }
 
-@property(assign,copy) RadioRequestContext * requestContext;
+@property (nonatomic, copy) RadioRequestContext *requestContext;
 
 + (id)sharedQueue;
 

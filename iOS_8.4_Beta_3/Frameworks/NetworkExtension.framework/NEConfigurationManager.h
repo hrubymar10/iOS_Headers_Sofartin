@@ -24,24 +24,24 @@
     NSUUID *_userUUID;
 }
 
-@property(assign,retain) NSData * SCPreferencesSignature;
-@property(assign,copy) id changedHandler;
-@property(assign,readwrite) int changedNotifyToken;
-@property(assign,retain) NSObject<OS_dispatch_queue> * changedQueue;
-@property(assign,retain) NSDictionary * currentIndex;
-@property(assign,retain) NSKeyedUnarchiver * decoder;
-@property(assign,retain) <NEConfigurationManagerDelegate> * delegate;
-@property(assign,readwrite) long long generation;
-@property(assign,readwrite) bool hasReadPermission;
-@property(assign,readwrite) bool hasVPNAPIEntitlement;
-@property(assign,readonly) NEHelper * helper;
-@property(assign,readwrite) bool isNEHelper;
-@property(assign,readwrite) bool isVPNPublicAPI;
-@property(assign,retain) NSMutableDictionary * loadedConfigurations;
-@property(assign,retain) NSMutableDictionary * loadedIndex;
-@property(assign,readonly) NSString * pluginType;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) NSUUID * userUUID;
+@property (retain) NSData *SCPreferencesSignature;
+@property (copy) id changedHandler;
+@property int changedNotifyToken;
+@property (retain) NSObject<OS_dispatch_queue> *changedQueue;
+@property (retain) NSDictionary *currentIndex;
+@property (retain) NSKeyedUnarchiver *decoder;
+@property (retain) <NEConfigurationManagerDelegate> *delegate;
+@property long long generation;
+@property bool hasReadPermission;
+@property bool hasVPNAPIEntitlement;
+@property (readonly) NEHelper *helper;
+@property bool isNEHelper;
+@property bool isVPNPublicAPI;
+@property (retain) NSMutableDictionary *loadedConfigurations;
+@property (retain) NSMutableDictionary *loadedIndex;
+@property (readonly) NSString *pluginType;
+@property (readonly) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) NSUUID *userUUID;
 
 + (long long)configuration:(id)arg1 overlapsWithOtherConfiguration:(id)arg2;
 + (bool)configurationIsEnabled:(id)arg1;

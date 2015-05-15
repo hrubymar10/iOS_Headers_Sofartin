@@ -7,8 +7,8 @@
     UILabel *_valueLabel;
 }
 
-@property(assign,readonly) UILabel * labelLabel;
-@property(assign,readonly) UILabel * valueLabel;
+@property (nonatomic, readonly) UILabel *labelLabel;
+@property (nonatomic, readonly) UILabel *valueLabel;
 
 - (void)dealloc;
 - (id)labelLabel;

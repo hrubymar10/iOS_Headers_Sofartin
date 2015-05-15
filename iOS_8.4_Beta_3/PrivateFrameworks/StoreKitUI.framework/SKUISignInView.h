@@ -12,11 +12,11 @@
     NSMapTable *_viewFontDescriptors;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUISignInViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUISignInViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_borderPathWithSize:(struct CGSize { double x1; double x2; })arg1;
 + (id)_fontDescriptorWithViewElement:(id)arg1 defaultTextStyle:(id)arg2 bold:(bool)arg3;

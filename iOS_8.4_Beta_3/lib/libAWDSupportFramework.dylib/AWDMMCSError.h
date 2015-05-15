@@ -11,11 +11,11 @@
     NSMutableArray *_underlyingErrors;
 }
 
-@property(assign,readwrite) int code;
-@property(assign,retain) NSString * domain;
-@property(assign,readwrite) bool hasCode;
-@property(assign,readonly) bool hasDomain;
-@property(assign,retain) NSMutableArray * underlyingErrors;
+@property (nonatomic) int code;
+@property (nonatomic, retain) NSString *domain;
+@property (nonatomic) bool hasCode;
+@property (nonatomic, readonly) bool hasDomain;
+@property (nonatomic, retain) NSMutableArray *underlyingErrors;
 
 - (void)addUnderlyingErrors:(id)arg1;
 - (void)clearUnderlyingErrors;

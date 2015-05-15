@@ -7,10 +7,10 @@
     CKDPPublicKey *_publicKey;
 }
 
-@property(assign,retain) NSString * currentKeyHash;
-@property(assign,readonly) bool hasCurrentKeyHash;
-@property(assign,readonly) bool hasPublicKey;
-@property(assign,retain) CKDPPublicKey * publicKey;
+@property (nonatomic, retain) NSString *currentKeyHash;
+@property (nonatomic, readonly) bool hasCurrentKeyHash;
+@property (nonatomic, readonly) bool hasPublicKey;
+@property (nonatomic, retain) CKDPPublicKey *publicKey;
 
 + (id)options;
 

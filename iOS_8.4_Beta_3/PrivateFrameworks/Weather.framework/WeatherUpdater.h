@@ -9,7 +9,7 @@
     id _weatherCompletionUpdaterHandler;
 }
 
-@property(assign,copy) id weatherCompletionUpdaterHandler;
+@property (nonatomic, copy) id weatherCompletionUpdaterHandler;
 
 - (void)_failed:(unsigned long long)arg1;
 - (void)_updateNextPendingCity;

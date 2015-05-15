@@ -7,7 +7,7 @@
     NSMutableDictionary *_binaryImages;
 }
 
-@property(assign,readonly) PASampleTimeSeriesDataStore * sampleStore;
+@property (readonly) PASampleTimeSeriesDataStore *sampleStore;
 
 - (void)addSampleTask:(id)arg1 atTimestampIndex:(unsigned long long)arg2;
 - (id)aggregator;

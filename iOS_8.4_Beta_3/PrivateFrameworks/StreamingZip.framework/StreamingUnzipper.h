@@ -9,7 +9,7 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,readwrite) NSXPCConnection * xpcConnection;
+@property (nonatomic) NSXPCConnection *xpcConnection;
 
 - (void).cxx_destruct;
 - (id)_beginNonStreamablePassthroughWithRemainingBytes:(const void*)arg1 length:(unsigned long long)arg2;

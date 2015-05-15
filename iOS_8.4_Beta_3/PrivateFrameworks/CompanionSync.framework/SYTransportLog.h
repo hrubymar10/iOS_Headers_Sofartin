@@ -7,7 +7,7 @@
     NSString *_rootPath;
 }
 
-@property(assign,copy) NSString * facility;
+@property (nonatomic, copy) NSString *facility;
 
 + (id)_logPath;
 + (id)sharedInstance;

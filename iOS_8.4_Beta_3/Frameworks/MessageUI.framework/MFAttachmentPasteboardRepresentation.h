@@ -8,10 +8,10 @@
     NSString *_name;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,retain) NSString * mimeType;
-@property(assign,retain) NSString * name;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic, retain) NSString *mimeType;
+@property (nonatomic, retain) NSString *name;
+@property (getter=isValid, nonatomic, readonly) bool valid;
 
 - (id)data;
 - (void)dealloc;

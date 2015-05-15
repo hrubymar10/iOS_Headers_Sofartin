@@ -8,9 +8,9 @@
     NSNumber *inputTime;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIImage * inputTargetImage;
-@property(assign,retain) NSNumber * inputTime;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIImage *inputTargetImage;
+@property (nonatomic, retain) NSNumber *inputTime;
 
 + (id)customAttributes;
 

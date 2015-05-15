@@ -17,19 +17,19 @@
     NEProfileIngestionPayloadInfo *_payloadInfo;
 }
 
-@property(assign,copy) NEVPN * VPN;
-@property(assign,copy) NEAOVPN * alwaysOnVPN;
-@property(assign,copy) NEVPNApp * appVPN;
-@property(assign,copy) NSString * application;
-@property(assign,copy) NSString * applicationIdentifier;
-@property(assign,copy) NSString * applicationName;
-@property(assign,copy) NEContentFilter * contentFilter;
-@property(assign,copy) NSString * externalIdentifier;
-@property(assign,readonly) long long grade;
-@property(assign,readonly) NSUUID * identifier;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NEProfileIngestionPayloadInfo * payloadInfo;
-@property(assign,readonly) NSString * pluginType;
+@property (copy) NEVPN *VPN;
+@property (copy) NEAOVPN *alwaysOnVPN;
+@property (copy) NEVPNApp *appVPN;
+@property (copy) NSString *application;
+@property (copy) NSString *applicationIdentifier;
+@property (copy) NSString *applicationName;
+@property (copy) NEContentFilter *contentFilter;
+@property (copy) NSString *externalIdentifier;
+@property (readonly) long long grade;
+@property (readonly) NSUUID *identifier;
+@property (copy) NSString *name;
+@property (copy) NEProfileIngestionPayloadInfo *payloadInfo;
+@property (readonly) NSString *pluginType;
 
 + (bool)SCServiceWithIdentifier:(id)arg1 existsInPreferences:(struct __SCPreferences { }*)arg2;
 + (void)addError:(id)arg1 toList:(id)arg2;

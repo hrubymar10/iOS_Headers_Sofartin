@@ -8,7 +8,7 @@
     PASampleUserFrame *_user;
 }
 
-@property(assign,readwrite) PAStackshotThread * stackshotThread;
+@property PAStackshotThread *stackshotThread;
 
 - (void)dealloc;
 - (void)iterateFrames:(id)arg1;

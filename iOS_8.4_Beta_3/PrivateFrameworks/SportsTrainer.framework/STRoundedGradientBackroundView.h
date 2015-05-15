@@ -9,9 +9,9 @@
     UIColor *_topColor;
 }
 
-@property(assign,retain) UIColor * borderColor;
-@property(assign,retain) UIColor * bottomColor;
-@property(assign,retain) UIColor * topColor;
+@property (nonatomic, retain) UIColor *borderColor;
+@property (nonatomic, retain) UIColor *bottomColor;
+@property (nonatomic, retain) UIColor *topColor;
 
 - (id)_gradient;
 - (void)_invalidateGradient;

@@ -6,7 +6,7 @@
     AVMetadataItemFilterInternal *_itemFilterInternal;
 }
 
-@property(assign,readonly) NSDictionary * whitelist;
+@property (readonly) NSDictionary *whitelist;
 
 + (id)metadataItemFilterForSharing;
 

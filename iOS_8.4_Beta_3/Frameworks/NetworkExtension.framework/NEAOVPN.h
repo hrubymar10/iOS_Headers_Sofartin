@@ -12,13 +12,13 @@
     bool _toggleEnabled;
 }
 
-@property(getter=isAllowAllCaptiveNetworkPlugins,assign,readwrite) bool allowAllCaptiveNetworkPlugins;
-@property(getter=isAllowCaptiveWebSheet,assign,readwrite) bool allowCaptiveWebSheet;
-@property(assign,copy) NSDictionary * allowedCaptiveNetworkPlugins;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,copy) NSDictionary * interfaceProtocolMapping;
-@property(assign,copy) NSDictionary * serviceExceptions;
-@property(getter=isToggleEnabled,assign,readwrite) bool toggleEnabled;
+@property (getter=isAllowAllCaptiveNetworkPlugins) bool allowAllCaptiveNetworkPlugins;
+@property (getter=isAllowCaptiveWebSheet) bool allowCaptiveWebSheet;
+@property (copy) NSDictionary *allowedCaptiveNetworkPlugins;
+@property (getter=isEnabled) bool enabled;
+@property (copy) NSDictionary *interfaceProtocolMapping;
+@property (copy) NSDictionary *serviceExceptions;
+@property (getter=isToggleEnabled) bool toggleEnabled;
 
 + (bool)supportsSecureCoding;
 

@@ -19,19 +19,19 @@
     bool _usesTallCharacterSet;
 }
 
-@property(assign,readonly) NSAttributedString * attributedString;
-@property(assign,readonly) double baselineOffset;
-@property(assign,readonly) struct CGSize { double x1; double x2; } boundingSize;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsetsForShadow;
-@property(assign,readonly) double firstBaselineOffset;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long numberOfLines;
-@property(assign,readonly) NSStringDrawingContext * stringDrawingContext;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) double topInset;
-@property(assign,readonly) bool usesTallCharacterSet;
+@property (nonatomic, readonly) NSAttributedString *attributedString;
+@property (nonatomic, readonly) double baselineOffset;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } boundingSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsetsForShadow;
+@property (nonatomic, readonly) double firstBaselineOffset;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long numberOfLines;
+@property (nonatomic, readonly) NSStringDrawingContext *stringDrawingContext;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) double topInset;
+@property (nonatomic, readonly) bool usesTallCharacterSet;
 
 - (void).cxx_destruct;
 - (id)attributedString;

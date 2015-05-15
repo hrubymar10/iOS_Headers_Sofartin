@@ -21,14 +21,14 @@
     SKUIResourceLoader *_resourceLoader;
 }
 
-@property(assign,readwrite) <SKUIIndexBarControlControllerDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIIndexBarControlControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIIndexBarControl * indexBarControl;
-@property(assign,retain) SKUIResourceLoader * resourceLoader;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) <SKUIIndexBarControlControllerDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIIndexBarControlControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIIndexBarControl *indexBarControl;
+@property (nonatomic, retain) SKUIResourceLoader *resourceLoader;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_URLForEntryDescriptor:(id)arg1;

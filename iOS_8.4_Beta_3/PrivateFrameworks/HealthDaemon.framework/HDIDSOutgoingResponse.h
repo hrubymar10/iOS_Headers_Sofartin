@@ -16,21 +16,21 @@
     bool _sent;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool doNotCompress;
-@property(assign,readwrite) bool forceLocalDelivery;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * idsIdentifier;
-@property(assign,readwrite) unsigned short messageID;
-@property(assign,retain) id pbResponse;
-@property(assign,retain) NSDictionary * persistentUserInfo;
-@property(assign,readwrite) unsigned long long priority;
-@property(assign,readwrite) HDIDSIncomingRequest * request;
-@property(assign,readwrite) double sendTimeout;
-@property(getter=isSent,assign,readwrite) bool sent;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSData *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool doNotCompress;
+@property (nonatomic) bool forceLocalDelivery;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *idsIdentifier;
+@property (nonatomic) unsigned short messageID;
+@property (nonatomic, retain) id pbResponse;
+@property (nonatomic, retain) NSDictionary *persistentUserInfo;
+@property (nonatomic) unsigned long long priority;
+@property (nonatomic) HDIDSIncomingRequest *request;
+@property (nonatomic) double sendTimeout;
+@property (getter=isSent) bool sent;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)configureWithActivationRestore:(id)arg1 pairingInfo:(id)arg2;

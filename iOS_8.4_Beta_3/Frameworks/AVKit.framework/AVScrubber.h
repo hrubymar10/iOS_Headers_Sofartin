@@ -11,10 +11,10 @@
     double _touchLocationOffsetFromThumbViewCenter;
 }
 
-@property(assign,retain) NSArray * loadedTimeRanges;
-@property(assign,readonly) NSString * localizedScrubbingSpeedName;
-@property(getter=isPreciseScrubbingFeasible,assign,readonly) bool preciseScrubbingFeasible;
-@property(assign,readwrite) long long scrubbingSpeed;
+@property (nonatomic, retain) NSArray *loadedTimeRanges;
+@property (nonatomic, readonly) NSString *localizedScrubbingSpeedName;
+@property (getter=isPreciseScrubbingFeasible, nonatomic, readonly) bool preciseScrubbingFeasible;
+@property (nonatomic) long long scrubbingSpeed;
 
 + (id)keyPathsForValuesAffectingLocalizedScrubbingSpeedName;
 + (id)keyPathsForValuesAffectingPreciseScrubbingFeasible;

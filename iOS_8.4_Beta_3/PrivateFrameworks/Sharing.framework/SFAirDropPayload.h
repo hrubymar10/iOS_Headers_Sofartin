@@ -12,13 +12,13 @@
     bool _wasString;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,retain) NSData * data;
-@property(assign,readwrite) long long identifer;
-@property(assign,copy) NSString * payloadDescription;
-@property(assign,retain) UIImage * previewImage;
-@property(assign,copy) NSString * type;
-@property(assign,readwrite) bool wasString;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic) long long identifer;
+@property (nonatomic, copy) NSString *payloadDescription;
+@property (nonatomic, retain) UIImage *previewImage;
+@property (nonatomic, copy) NSString *type;
+@property (nonatomic) bool wasString;
 
 + (id)newPayloadWithData:(id)arg1 ofType:(id)arg2 description:(id)arg3 previewImage:(id)arg4 identifier:(long long)arg5;
 + (id)newPayloadWithURL:(id)arg1 description:(id)arg2 previewImage:(id)arg3 identifier:(long long)arg4;

@@ -9,10 +9,10 @@
     unsigned char _tipDirection;
 }
 
-@property(assign,retain) _GKCustomDrawnSpeechBalloonBackgroundView * customDrawnView;
-@property(assign,readwrite) unsigned char drawStyle;
-@property(assign,retain) _GKImageSpeechBalloonBackgroundView * strokedImageView;
-@property(assign,readwrite) unsigned char tipDirection;
+@property (nonatomic, retain) _GKCustomDrawnSpeechBalloonBackgroundView *customDrawnView;
+@property (nonatomic) unsigned char drawStyle;
+@property (nonatomic, retain) _GKImageSpeechBalloonBackgroundView *strokedImageView;
+@property (nonatomic) unsigned char tipDirection;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })alignmentRectInsets;
 - (id)customDrawnView;

@@ -16,7 +16,7 @@
     bool _yieldingToSync;
 }
 
-@property(assign,copy) id adviceBlock;
+@property (nonatomic, copy) id adviceBlock;
 
 + (id)_engineIdentifier;
 + (int)_geoTransportTypeForCalLocationRoutingMode:(long long)arg1;

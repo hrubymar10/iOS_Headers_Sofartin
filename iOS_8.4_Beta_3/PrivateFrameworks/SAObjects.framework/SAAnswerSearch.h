@@ -4,13 +4,13 @@
 
 @interface SAAnswerSearch : SADomainCommand
 
-@property(assign,retain) SALocation * address;
-@property(assign,copy) NSString * attribute;
-@property(assign,copy) NSString * miscQuestion;
-@property(assign,copy) NSString * placeAttribute;
-@property(assign,copy) NSArray * product;
-@property(assign,copy) NSString * timeQuestion;
-@property(assign,copy) NSString * verbType;
+@property (nonatomic, retain) SALocation *address;
+@property (nonatomic, copy) NSString *attribute;
+@property (nonatomic, copy) NSString *miscQuestion;
+@property (nonatomic, copy) NSString *placeAttribute;
+@property (nonatomic, copy) NSArray *product;
+@property (nonatomic, copy) NSString *timeQuestion;
+@property (nonatomic, copy) NSString *verbType;
 
 + (id)search;
 + (id)searchWithDictionary:(id)arg1 context:(id)arg2;

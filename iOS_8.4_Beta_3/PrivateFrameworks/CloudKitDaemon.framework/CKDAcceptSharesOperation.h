@@ -10,11 +10,11 @@
     NSMutableArray *_shareURLsToAccept;
 }
 
-@property(assign,copy) id acceptCompletionBlock;
-@property(assign,retain) NSMutableArray * acceptedShareURLsToFetch;
-@property(assign,readwrite) int numShareAcceptAttempts;
-@property(assign,retain) NSMutableDictionary * shareInfosToAcceptByURL;
-@property(assign,retain) NSMutableArray * shareURLsToAccept;
+@property (nonatomic, copy) id acceptCompletionBlock;
+@property (nonatomic, retain) NSMutableArray *acceptedShareURLsToFetch;
+@property (nonatomic) int numShareAcceptAttempts;
+@property (nonatomic, retain) NSMutableDictionary *shareInfosToAcceptByURL;
+@property (nonatomic, retain) NSMutableArray *shareURLsToAccept;
 
 - (void).cxx_destruct;
 - (bool)_acceptShares;

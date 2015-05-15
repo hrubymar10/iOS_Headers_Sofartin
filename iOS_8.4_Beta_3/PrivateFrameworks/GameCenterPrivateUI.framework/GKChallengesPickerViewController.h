@@ -7,8 +7,8 @@
     GKChallengesPickerDataSource *_challengesPickerDataSource;
 }
 
-@property(assign,retain) GKChallenge * challenge;
-@property(assign,retain) GKChallengesPickerDataSource * challengesPickerDataSource;
+@property (nonatomic, retain) GKChallenge *challenge;
+@property (nonatomic, retain) GKChallengesPickerDataSource *challengesPickerDataSource;
 
 - (id)challenge;
 - (id)challengesPickerDataSource;

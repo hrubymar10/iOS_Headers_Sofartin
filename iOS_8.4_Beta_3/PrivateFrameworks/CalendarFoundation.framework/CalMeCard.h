@@ -9,10 +9,10 @@
     long long _version;
 }
 
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSArray * emailAddresses;
-@property(assign,retain) NSString * uniqueID;
-@property(assign,readwrite) long long version;
+@property (readonly, retain) NSString *displayName;
+@property (readonly, retain) NSArray *emailAddresses;
+@property (readonly, retain) NSString *uniqueID;
+@property long long version;
 
 + (id)cardFromPath:(id)arg1;
 + (bool)supportsSecureCoding;

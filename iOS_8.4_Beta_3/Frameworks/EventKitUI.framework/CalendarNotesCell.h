@@ -7,9 +7,9 @@
     UITextView *_textView;
 }
 
-@property(assign,retain) NSString * placeholder;
-@property(assign,copy) NSString * text;
-@property(assign,retain) UITextView * textView;
+@property (nonatomic, retain) NSString *placeholder;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, readonly, retain) UITextView *textView;
 
 - (void).cxx_destruct;
 - (bool)becomeFirstResponder;

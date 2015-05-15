@@ -7,8 +7,8 @@
     TITextInputTraits *_textInputTraits;
 }
 
-@property(assign,retain) TIDocumentState * documentState;
-@property(assign,retain) TITextInputTraits * textInputTraits;
+@property (nonatomic, retain) TIDocumentState *documentState;
+@property (nonatomic, retain) TITextInputTraits *textInputTraits;
 
 + (id)stateForKeyboardState:(id)arg1;
 + (bool)supportsSecureCoding;

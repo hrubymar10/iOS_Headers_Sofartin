@@ -6,7 +6,7 @@
     NSSet *_allowedValues;
 }
 
-@property(assign,readonly) NSSet * allowedValues;
+@property (nonatomic, readonly) NSSet *allowedValues;
 
 + (bool)_acceptsOperatorType:(unsigned long long)arg1;
 + (id)filterWithKey:(id)arg1 operatorType:(unsigned long long)arg2 values:(id)arg3;

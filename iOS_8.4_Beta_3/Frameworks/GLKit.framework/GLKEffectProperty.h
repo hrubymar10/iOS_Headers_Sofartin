@@ -13,13 +13,13 @@
     char *_vshSource;
 }
 
-@property(assign,readwrite) unsigned long long dirtyUniforms;
-@property(assign,readwrite) GLKEffect * effect;
-@property(assign,readwrite) char * fshSource;
-@property(assign,readwrite) int location;
-@property(assign,readwrite) unsigned char masksInitialized;
-@property(assign,readwrite) char * nameString;
-@property(assign,readwrite) char * vshSource;
+@property (nonatomic) unsigned long long dirtyUniforms;
+@property (nonatomic) GLKEffect *effect;
+@property (nonatomic) char *fshSource;
+@property (nonatomic) int location;
+@property (nonatomic) unsigned char masksInitialized;
+@property (nonatomic) char *nameString;
+@property (nonatomic) char *vshSource;
 
 + (void)logSetMasksWithLabel:(id)arg1 obj:(id)arg2 typeStr:(id)arg3;
 + (void)setStaticMasksWithVshRoot:(id)arg1 fshRoot:(id)arg2;

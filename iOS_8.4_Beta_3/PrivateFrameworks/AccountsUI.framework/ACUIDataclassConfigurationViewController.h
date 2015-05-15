@@ -24,16 +24,16 @@
     bool _shouldShowDeleteAccountButton;
 }
 
-@property(assign,retain) ACAccount * account;
-@property(assign,copy) id configurationCompletion;
-@property(assign,readwrite) PSSpecifier * dataclassGroupSpecifier;
-@property(assign,readonly) PSSpecifier * deleteButtonSpecifier;
-@property(getter=isFirstTimeSetup,assign,readwrite) bool firstTimeSetup;
-@property(assign,readwrite) bool isMailSetupForced;
-@property(assign,copy) NSArray * preEnabledDataclasses;
-@property(assign,readwrite) bool shouldEnableAccountSummaryCell;
-@property(assign,readwrite) bool shouldEnableDeleteAccountButton;
-@property(assign,readwrite) bool shouldShowDeleteAccountButton;
+@property (nonatomic, retain) ACAccount *account;
+@property (nonatomic, copy) id configurationCompletion;
+@property (nonatomic) PSSpecifier *dataclassGroupSpecifier;
+@property (nonatomic, readonly) PSSpecifier *deleteButtonSpecifier;
+@property (getter=isFirstTimeSetup, nonatomic) bool firstTimeSetup;
+@property (nonatomic) bool isMailSetupForced;
+@property (nonatomic, copy) NSArray *preEnabledDataclasses;
+@property (nonatomic) bool shouldEnableAccountSummaryCell;
+@property (nonatomic) bool shouldEnableDeleteAccountButton;
+@property (nonatomic) bool shouldShowDeleteAccountButton;
 
 + (bool)shouldPresentAsModalSheet;
 

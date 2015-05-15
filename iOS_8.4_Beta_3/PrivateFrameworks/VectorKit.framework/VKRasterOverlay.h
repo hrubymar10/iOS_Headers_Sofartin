@@ -19,10 +19,10 @@
     VKRasterOverlayTileSource *_tileSource;
 }
 
-@property(assign,readwrite) <VKRasterOverlayDelegate> * delegate;
-@property(assign,readwrite) unsigned long long level;
-@property(assign,readwrite) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } replaceMapContentInRect;
-@property(assign,readwrite) VKRasterOverlayTileSource * tileSource;
+@property <VKRasterOverlayDelegate> *delegate;
+@property (nonatomic) unsigned long long level;
+@property (nonatomic) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } replaceMapContentInRect;
+@property (nonatomic) VKRasterOverlayTileSource *tileSource;
 
 - (id).cxx_construct;
 - (bool)canDrawKey:(const struct { unsigned int x1; unsigned int x2; unsigned int x3; }*)arg1;

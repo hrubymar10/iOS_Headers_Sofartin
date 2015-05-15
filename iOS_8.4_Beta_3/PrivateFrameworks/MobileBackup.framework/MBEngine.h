@@ -11,26 +11,26 @@
     MBSettingsContext *_settingsContext;
 }
 
-@property(assign,readonly) MBAppManager * appManager;
-@property(getter=isBackgroundRestore,assign,readonly) bool backgroundRestore;
-@property(getter=isBackupEngine,assign,readonly) bool backupEngine;
-@property(getter=shouldCommitIfPossible,assign,readonly) bool commitIfPossible;
-@property(assign,readonly) MBDebugContext * debugContext;
-@property(assign,readonly) MBDomainManager * domainManager;
-@property(getter=isDriveEngine,assign,readonly) bool driveEngine;
-@property(getter=isEncrypted,assign,readwrite) bool encrypted;
-@property(assign,readonly) int engineMode;
-@property(assign,readonly) NSString * engineModeString;
-@property(assign,readonly) int engineType;
-@property(assign,readonly) NSString * engineTypeString;
-@property(getter=isForegroundRestore,assign,readonly) bool foregroundRestore;
-@property(getter=isMigrate,assign,readonly) bool migrate;
-@property(assign,readonly) MBProperties * properties;
-@property(getter=isRestoreEngine,assign,readonly) bool restoreEngine;
-@property(assign,readonly) int restoreType;
-@property(assign,readonly) NSString * restoreTypeString;
-@property(getter=isServiceEngine,assign,readonly) bool serviceEngine;
-@property(assign,readonly) MBSettingsContext * settingsContext;
+@property (nonatomic, readonly) MBAppManager *appManager;
+@property (getter=isBackgroundRestore, nonatomic, readonly) bool backgroundRestore;
+@property (getter=isBackupEngine, nonatomic, readonly) bool backupEngine;
+@property (getter=shouldCommitIfPossible, nonatomic, readonly) bool commitIfPossible;
+@property (nonatomic, readonly) MBDebugContext *debugContext;
+@property (nonatomic, readonly) MBDomainManager *domainManager;
+@property (getter=isDriveEngine, nonatomic, readonly) bool driveEngine;
+@property (getter=isEncrypted, nonatomic) bool encrypted;
+@property (nonatomic, readonly) int engineMode;
+@property (nonatomic, readonly) NSString *engineModeString;
+@property (nonatomic, readonly) int engineType;
+@property (nonatomic, readonly) NSString *engineTypeString;
+@property (getter=isForegroundRestore, nonatomic, readonly) bool foregroundRestore;
+@property (getter=isMigrate, nonatomic, readonly) bool migrate;
+@property (nonatomic, readonly) MBProperties *properties;
+@property (getter=isRestoreEngine, nonatomic, readonly) bool restoreEngine;
+@property (nonatomic, readonly) int restoreType;
+@property (nonatomic, readonly) NSString *restoreTypeString;
+@property (getter=isServiceEngine, nonatomic, readonly) bool serviceEngine;
+@property (nonatomic, readonly) MBSettingsContext *settingsContext;
 
 + (id)stringForEngineMode:(int)arg1;
 + (id)stringForEngineType:(int)arg1;

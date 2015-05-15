@@ -8,9 +8,9 @@
     long long _discoverable;
 }
 
-@property(assign,copy) NSSet * applicationBundleIDs;
-@property(assign,copy) CKContainerID * containerID;
-@property(assign,readwrite) long long discoverable;
+@property (nonatomic, copy) NSSet *applicationBundleIDs;
+@property (nonatomic, copy) CKContainerID *containerID;
+@property (nonatomic) long long discoverable;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

@@ -4,13 +4,13 @@
 
 @interface SASTAncillaryImageItem : AceObject <SASTTemplateItem>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUINanoImageResource * imageResource;
-@property(assign,retain) SAUIDecoratedText * subtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SAUIDecoratedText * title;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUINanoImageResource *imageResource;
+@property (nonatomic, retain) SAUIDecoratedText *subtitle;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SAUIDecoratedText *title;
 
 + (id)ancillaryImageItem;
 + (id)ancillaryImageItemWithDictionary:(id)arg1 context:(id)arg2;

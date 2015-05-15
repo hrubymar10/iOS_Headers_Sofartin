@@ -6,24 +6,24 @@
     id _delegate;
 }
 
-@property(assign,readonly) id _controller;
-@property(assign,readonly) unsigned long long capabilities;
-@property(assign,readonly) unsigned long long capabilitiesOfCPU;
-@property(assign,readonly) unsigned long long capabilitiesOfNetwork;
-@property(assign,readonly) id controller;
-@property(assign,readwrite) id delegate;
-@property(assign,readonly) bool isAVInterfaceReady;
-@property(assign,readwrite) void* localVideoBackLayer;
-@property(assign,readwrite) void* localVideoLayer;
-@property(assign,readwrite) unsigned int maxBitrate;
-@property(assign,readonly) unsigned int overallChatState;
-@property(assign,readwrite) bool shouldKeepCameraRunning;
-@property(assign,readonly) bool supportsLayers;
-@property(assign,readonly) bool supportsRelay;
-@property(assign,readonly) bool systemCanAudioChat;
-@property(assign,readonly) bool systemCanVideoChat;
-@property(assign,readonly) bool systemSupportsBackFacingCamera;
-@property(assign,readonly) bool systemSupportsFrontFacingCamera;
+@property (nonatomic, readonly) id _controller;
+@property (nonatomic, readonly) unsigned long long capabilities;
+@property (nonatomic, readonly) unsigned long long capabilitiesOfCPU;
+@property (nonatomic, readonly) unsigned long long capabilitiesOfNetwork;
+@property (nonatomic, readonly) id controller;
+@property id delegate;
+@property (nonatomic, readonly) bool isAVInterfaceReady;
+@property (nonatomic) void*localVideoBackLayer;
+@property (nonatomic) void*localVideoLayer;
+@property (nonatomic) unsigned int maxBitrate;
+@property (nonatomic, readonly) unsigned int overallChatState;
+@property (nonatomic) bool shouldKeepCameraRunning;
+@property (nonatomic, readonly) bool supportsLayers;
+@property (nonatomic, readonly) bool supportsRelay;
+@property (nonatomic, readonly) bool systemCanAudioChat;
+@property (nonatomic, readonly) bool systemCanVideoChat;
+@property (nonatomic, readonly) bool systemSupportsBackFacingCamera;
+@property (nonatomic, readonly) bool systemSupportsFrontFacingCamera;
 
 + (id)alloc;
 + (id)sharedInstance;

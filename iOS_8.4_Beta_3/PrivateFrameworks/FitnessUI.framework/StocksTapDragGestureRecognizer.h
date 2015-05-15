@@ -20,11 +20,11 @@
     NSMutableSet *_touches;
 }
 
-@property(assign,readwrite) unsigned long long maximumNumberOfTouches;
-@property(assign,readwrite) unsigned long long minimumNumberOfTouches;
-@property(assign,readwrite) double requiredPressDelay;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } touchableBounds;
-@property(assign,readonly) NSSet * touches;
+@property (nonatomic) unsigned long long maximumNumberOfTouches;
+@property (nonatomic) unsigned long long minimumNumberOfTouches;
+@property (nonatomic) double requiredPressDelay;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } touchableBounds;
+@property (nonatomic, readonly) NSSet *touches;
 
 - (void).cxx_destruct;
 - (id)initWithTarget:(id)arg1 action:(SEL)arg2;

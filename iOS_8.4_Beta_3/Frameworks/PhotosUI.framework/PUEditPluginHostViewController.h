@@ -14,19 +14,19 @@
     PUEditPlugin *_plugin;
 }
 
-@property(setter=_setDidHandleCancel:,assign,readwrite) bool _didHandleCancel;
-@property(setter=_setDidHandleDone:,assign,readwrite) bool _didHandleDone;
-@property(setter=_setDisablingIdleTimerToken:,assign,retain) id _disablingIdleTimerToken;
-@property(setter=_setExtensionDidBeginContentEditing:,assign,readwrite) bool _extensionDidBeginContentEditing;
-@property(setter=_setRemoteViewController:,assign,retain) UIViewController * _remoteViewController;
-@property(setter=_setRequest:,assign,copy) <NSCopying> * _request;
-@property(assign,readwrite) <PUEditPluginHostViewControllerDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUEditPluginHostViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) PUEditPlugin * plugin;
-@property(assign,readonly) Class superclass;
+@property (setter=_setDidHandleCancel:, nonatomic) bool _didHandleCancel;
+@property (setter=_setDidHandleDone:, nonatomic) bool _didHandleDone;
+@property (setter=_setDisablingIdleTimerToken:, nonatomic, retain) id _disablingIdleTimerToken;
+@property (setter=_setExtensionDidBeginContentEditing:, nonatomic) bool _extensionDidBeginContentEditing;
+@property (setter=_setRemoteViewController:, retain) UIViewController *_remoteViewController;
+@property (setter=_setRequest:, copy) <NSCopying> *_request;
+@property (nonatomic) <PUEditPluginHostViewControllerDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUEditPluginHostViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) PUEditPlugin *plugin;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_addRemoteViewControllerIfNeeded;

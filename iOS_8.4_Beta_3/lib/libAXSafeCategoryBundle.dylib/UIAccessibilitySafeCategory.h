@@ -4,7 +4,7 @@
 
 @interface UIAccessibilitySafeCategory : NSObject
 
-@property(assign,copy) NSString * accessibilityIdentifier;
+@property (nonatomic, copy) NSString *accessibilityIdentifier;
 
 + (void)_addCategoryMethod:(struct objc_method { }*)arg1 toClass:(Class)arg2 isClass:(bool)arg3;
 + (id)_initializeSafeCategoryFromValidationManager;

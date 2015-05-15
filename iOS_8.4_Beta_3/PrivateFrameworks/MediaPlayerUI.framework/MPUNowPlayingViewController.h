@@ -29,19 +29,19 @@
     bool _wantsVideoLayer;
 }
 
-@property(assign,readonly) UIView * _contentView;
-@property(assign,readonly) UIViewController * _contentViewController;
-@property(getter=_isDetailScrubbing,assign,readonly) bool _detailScrubbing;
-@property(assign,readonly) UINavigationItem * _effectiveNavigationItem;
-@property(assign,readonly) MPAVItem * _item;
-@property(assign,readonly) MPUNowPlayingPlaybackControlsView * _playbackControlsView;
-@property(assign,retain) MPUApplicationDefaults * applicationDefaults;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPNowPlayingObserver * nowPlayingObserver;
-@property(assign,retain) MPAVController * player;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) UIView *_contentView;
+@property (nonatomic, readonly) UIViewController *_contentViewController;
+@property (getter=_isDetailScrubbing, nonatomic, readonly) bool _detailScrubbing;
+@property (nonatomic, readonly) UINavigationItem *_effectiveNavigationItem;
+@property (nonatomic, readonly) MPAVItem *_item;
+@property (nonatomic, readonly) MPUNowPlayingPlaybackControlsView *_playbackControlsView;
+@property (nonatomic, retain) MPUApplicationDefaults *applicationDefaults;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPNowPlayingObserver *nowPlayingObserver;
+@property (nonatomic, retain) MPAVController *player;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)MPU_supportsMiniPlayer;

@@ -10,10 +10,10 @@
     CKDPRecordZoneIdentifier *_zoneIdentifier;
 }
 
-@property(assign,readwrite) bool hasUserPurge;
-@property(assign,readonly) bool hasZoneIdentifier;
-@property(assign,readwrite) bool userPurge;
-@property(assign,retain) CKDPRecordZoneIdentifier * zoneIdentifier;
+@property (nonatomic) bool hasUserPurge;
+@property (nonatomic, readonly) bool hasZoneIdentifier;
+@property (nonatomic) bool userPurge;
+@property (nonatomic, retain) CKDPRecordZoneIdentifier *zoneIdentifier;
 
 + (id)options;
 

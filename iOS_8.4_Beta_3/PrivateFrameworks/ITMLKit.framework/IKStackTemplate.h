@@ -4,9 +4,9 @@
 
 @interface IKStackTemplate : IKViewElement
 
-@property(assign,retain) IKBackgroundElement * background;
-@property(assign,retain) IKCollectionListElement * collectionList;
-@property(assign,retain) IKDocumentBannerElement * documentBanner;
+@property (nonatomic, readonly, retain) IKBackgroundElement *background;
+@property (nonatomic, readonly, retain) IKCollectionListElement *collectionList;
+@property (nonatomic, readonly, retain) IKDocumentBannerElement *documentBanner;
 
 - (id)background;
 - (id)collectionList;

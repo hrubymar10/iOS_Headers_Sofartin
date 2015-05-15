@@ -7,12 +7,12 @@
     SUWebView *_webView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) struct OpaqueJSContext { }* globalExecutionContext;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) id windowScriptObject;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) struct OpaqueJSContext { }*globalExecutionContext;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) id windowScriptObject;
 
 - (void)_cancelLoadOperation;
 - (id)_newLoadOperation;

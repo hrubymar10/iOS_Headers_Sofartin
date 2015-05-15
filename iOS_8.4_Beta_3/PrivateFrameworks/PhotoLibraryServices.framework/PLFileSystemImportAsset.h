@@ -9,10 +9,10 @@
     int assetKind;
 }
 
-@property(assign,readwrite) int assetKind;
-@property(assign,retain) NSDate * dateCreated;
-@property(assign,retain) NSObject<PLAlbumProtocol> * destinationAlbum;
-@property(assign,retain) NSMutableSet * urls;
+@property (nonatomic) int assetKind;
+@property (nonatomic, retain) NSDate *dateCreated;
+@property (nonatomic, retain) NSObject<PLAlbumProtocol> *destinationAlbum;
+@property (nonatomic, retain) NSMutableSet *urls;
 
 - (int)assetKind;
 - (long long)compare:(id)arg1;

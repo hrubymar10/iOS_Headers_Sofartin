@@ -6,7 +6,7 @@
     long long _resultCode;
 }
 
-@property(assign,readwrite) long long resultCode;
+@property (nonatomic) long long resultCode;
 
 + (bool)supportsSecureCoding;
 

@@ -8,12 +8,12 @@
     BRCServerZone *_serverZone;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasCaughtUp;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isConsistent;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasCaughtUp;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isConsistent;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_learnOwnerIdentity:(id)arg1;

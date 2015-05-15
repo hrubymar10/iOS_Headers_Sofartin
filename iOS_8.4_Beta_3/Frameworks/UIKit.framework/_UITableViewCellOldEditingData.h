@@ -8,8 +8,8 @@
     UIView *_separator;
 }
 
-@property(assign,retain) UIControl * reorderControl;
-@property(assign,retain) UIView * separatorView;
+@property (nonatomic, retain) UIControl *reorderControl;
+@property (nonatomic, retain) UIView *separatorView;
 
 - (bool)dataRequired;
 - (void)dealloc;

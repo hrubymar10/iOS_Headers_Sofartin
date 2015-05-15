@@ -6,13 +6,13 @@
     void *_impl;
 }
 
-@property(assign,readonly) NSString * UID;
-@property(assign,readonly) NSArray * channels;
-@property(assign,readonly) NSArray * dataSources;
-@property(assign,readonly) NSString * portName;
-@property(assign,readonly) NSString * portType;
-@property(assign,readonly) AVAudioSessionDataSourceDescription * preferredDataSource;
-@property(assign,readonly) AVAudioSessionDataSourceDescription * selectedDataSource;
+@property (readonly) NSString *UID;
+@property (readonly) NSArray *channels;
+@property (readonly) NSArray *dataSources;
+@property (readonly) NSString *portName;
+@property (readonly) NSString *portType;
+@property (readonly) AVAudioSessionDataSourceDescription *preferredDataSource;
+@property (readonly) AVAudioSessionDataSourceDescription *selectedDataSource;
 
 + (id)privateCreateOrConfigureArray:(id)arg1 withRawPortArray:(id)arg2;
 + (bool)privateMatchesInputs:(id)arg1 toRawInputs:(id)arg2;

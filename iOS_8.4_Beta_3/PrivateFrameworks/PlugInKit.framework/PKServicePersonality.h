@@ -10,21 +10,21 @@
     NSUserDefaults *_preferences;
 }
 
-@property(assign,readonly) NSDictionary * bundleInfoDictionary;
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) id embeddedPrincipal;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) id hostPrincipal;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSDictionary * plugInDictionary;
-@property(assign,retain) id plugInPrincipal;
-@property(assign,retain) NSUserDefaults * preferences;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSURL * url;
-@property(assign,readonly) NSUUID * uuid;
-@property(assign,readonly) NSString * version;
+@property (readonly) NSDictionary *bundleInfoDictionary;
+@property (retain) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain) id embeddedPrincipal;
+@property (readonly) unsigned long long hash;
+@property (retain) id hostPrincipal;
+@property (readonly) NSString *identifier;
+@property (readonly) NSDictionary *plugInDictionary;
+@property (retain) id plugInPrincipal;
+@property (retain) NSUserDefaults *preferences;
+@property (readonly) Class superclass;
+@property (readonly) NSURL *url;
+@property (readonly) NSUUID *uuid;
+@property (readonly) NSString *version;
 
 - (void).cxx_destruct;
 - (void)beginUsingPlugIn:(id)arg1 ready:(id)arg2;

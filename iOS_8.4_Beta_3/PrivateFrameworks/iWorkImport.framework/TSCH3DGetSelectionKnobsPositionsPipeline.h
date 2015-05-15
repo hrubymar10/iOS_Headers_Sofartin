@@ -10,7 +10,7 @@
     NSArray *mSelection;
 }
 
-@property(assign,readonly) NSArray * projectedPoints;
+@property (nonatomic, readonly) NSArray *projectedPoints;
 
 + (id)pipelineWithRep:(id)arg1 scene:(id)arg2 selection:(id)arg3 normalizedKnobRadius:(float)arg4;
 

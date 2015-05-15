@@ -11,12 +11,12 @@
     NSURL *_shareURL;
 }
 
-@property(assign,retain) NSString * etag;
-@property(assign,retain) NSData * publicKey;
-@property(assign,retain) NSData * publicPCSData;
-@property(assign,retain) NSString * publicPCSEtag;
-@property(assign,retain) CKShareID * shareID;
-@property(assign,retain) NSURL * shareURL;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, retain) NSData *publicKey;
+@property (nonatomic, retain) NSData *publicPCSData;
+@property (nonatomic, retain) NSString *publicPCSEtag;
+@property (nonatomic, retain) CKShareID *shareID;
+@property (nonatomic, retain) NSURL *shareURL;
 
 - (void).cxx_destruct;
 - (id)etag;

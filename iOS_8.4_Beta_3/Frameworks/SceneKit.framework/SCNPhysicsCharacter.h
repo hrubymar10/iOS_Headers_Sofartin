@@ -20,8 +20,8 @@
     SCNPhysicsWorld *_world;
 }
 
-@property(assign,readwrite) double jumpSpeed;
-@property(assign,readwrite) double velocity;
+@property (nonatomic) double jumpSpeed;
+@property (nonatomic) double velocity;
 
 - (id).cxx_construct;
 - (void)_addToPhysicsWorld:(id)arg1;

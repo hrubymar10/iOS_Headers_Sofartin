@@ -50,19 +50,19 @@
     int mLayoutState;
 }
 
-@property(assign,readonly) bool canAspectRatioLockBeChangedByUser;
-@property(assign,readonly) NSSet * connectedLayouts;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) TSDLayoutGeometry * dynamicGeometry;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSObject<TSDInfo> * info;
-@property(assign,readonly) bool invalidGeometry;
-@property(assign,readonly) bool isStrokeBeingManipulated;
-@property(assign,readonly) int layoutState;
-@property(assign,readonly) TSDLayoutGeometry * originalGeometry;
-@property(assign,readonly) bool resizeMayChangeAspectRatio;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) bool canAspectRatioLockBeChangedByUser;
+@property (nonatomic, readonly) NSSet *connectedLayouts;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) TSDLayoutGeometry *dynamicGeometry;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSObject<TSDInfo> *info;
+@property (nonatomic, readonly) bool invalidGeometry;
+@property (nonatomic, readonly) bool isStrokeBeingManipulated;
+@property (nonatomic, readonly) int layoutState;
+@property (nonatomic, readonly) TSDLayoutGeometry *originalGeometry;
+@property (nonatomic, readonly) bool resizeMayChangeAspectRatio;
+@property (readonly) Class superclass;
 
 - (void)addConnectedLayout:(id)arg1;
 - (id)additionalDependenciesForChildLayout:(id)arg1;

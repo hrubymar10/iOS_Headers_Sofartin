@@ -10,10 +10,10 @@
     } _private;
 }
 
-@property(assign,readonly) MTLRenderPassColorAttachmentDescriptorArray * colorAttachments;
-@property(assign,copy) MTLRenderPassDepthAttachmentDescriptor * depthAttachment;
-@property(assign,copy) MTLRenderPassStencilAttachmentDescriptor * stencilAttachment;
-@property(assign,retain) <MTLBuffer> * visibilityResultBuffer;
+@property (readonly) MTLRenderPassColorAttachmentDescriptorArray *colorAttachments;
+@property (nonatomic, copy) MTLRenderPassDepthAttachmentDescriptor *depthAttachment;
+@property (nonatomic, copy) MTLRenderPassStencilAttachmentDescriptor *stencilAttachment;
+@property (nonatomic, retain) <MTLBuffer> *visibilityResultBuffer;
 
 + (id)renderPassDescriptor;
 

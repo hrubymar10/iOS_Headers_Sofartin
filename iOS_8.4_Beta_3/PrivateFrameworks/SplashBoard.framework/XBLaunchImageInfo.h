@@ -16,18 +16,18 @@
     } _size;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) bool isDownscaled;
-@property(assign,readwrite) bool isOpaque;
-@property(assign,readwrite) bool isSnapshot;
-@property(assign,readwrite) long long orientation;
-@property(assign,retain) NSString * path;
-@property(assign,readwrite) double scale;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) bool isDownscaled;
+@property (nonatomic) bool isOpaque;
+@property (nonatomic) bool isSnapshot;
+@property (nonatomic) long long orientation;
+@property (nonatomic, retain) NSString *path;
+@property (nonatomic) double scale;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (id)description;

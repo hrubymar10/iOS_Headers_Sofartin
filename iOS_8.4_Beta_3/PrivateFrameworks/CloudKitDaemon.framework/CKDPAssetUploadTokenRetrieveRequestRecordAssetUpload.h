@@ -8,11 +8,11 @@
     CKDPRecordType *_type;
 }
 
-@property(assign,retain) NSMutableArray * assetFields;
-@property(assign,readonly) bool hasRecordId;
-@property(assign,readonly) bool hasType;
-@property(assign,retain) CKDPRecordIdentifier * recordId;
-@property(assign,retain) CKDPRecordType * type;
+@property (nonatomic, retain) NSMutableArray *assetFields;
+@property (nonatomic, readonly) bool hasRecordId;
+@property (nonatomic, readonly) bool hasType;
+@property (nonatomic, retain) CKDPRecordIdentifier *recordId;
+@property (nonatomic, retain) CKDPRecordType *type;
 
 - (void).cxx_destruct;
 - (void)addAssetFields:(id)arg1;

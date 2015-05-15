@@ -6,7 +6,7 @@
     NSData *_nonceData;
 }
 
-@property(assign,retain) NSData * nonceData;
+@property (nonatomic, retain) NSData *nonceData;
 
 - (void)dealloc;
 - (id)initWithData:(id)arg1;

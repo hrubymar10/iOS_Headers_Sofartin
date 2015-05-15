@@ -10,15 +10,15 @@
     UILabel *_organizationLabel;
 }
 
-@property(assign,retain) UIImageView * chevron;
-@property(assign,retain) UIImageView * contactImageView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CKMediaObject * mediaObject;
-@property(assign,retain) UILabel * nameLabel;
-@property(assign,retain) UILabel * organizationLabel;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIImageView *chevron;
+@property (nonatomic, retain) UIImageView *contactImageView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CKMediaObject *mediaObject;
+@property (nonatomic, retain) UILabel *nameLabel;
+@property (nonatomic, retain) UILabel *organizationLabel;
+@property (readonly) Class superclass;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })alignmentRectInsets;
 - (id)chevron;

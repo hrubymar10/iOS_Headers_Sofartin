@@ -9,10 +9,10 @@
     NSString *_text;
 }
 
-@property(assign,readonly) <MFContactsSearchConsumer> * consumer;
-@property(assign,readonly) NSMutableSet * operations;
-@property(assign,readonly) NSMutableSet * searchQueries;
-@property(assign,readonly) NSString * text;
+@property (nonatomic, readonly) <MFContactsSearchConsumer> *consumer;
+@property (nonatomic, readonly) NSMutableSet *operations;
+@property (nonatomic, readonly) NSMutableSet *searchQueries;
+@property (nonatomic, readonly) NSString *text;
 
 + (id)contextWithConsumer:(id)arg1 text:(id)arg2 operations:(id)arg3 searchQueries:(id)arg4;
 

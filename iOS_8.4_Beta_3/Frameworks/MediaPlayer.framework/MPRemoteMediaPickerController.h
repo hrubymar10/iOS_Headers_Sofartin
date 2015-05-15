@@ -6,7 +6,7 @@
     MPMediaPickerController *_mediaPickerController;
 }
 
-@property(assign,readwrite) MPMediaPickerController * mediaPickerController;
+@property (nonatomic) MPMediaPickerController *mediaPickerController;
 
 + (id)exportedInterface;
 + (id)serviceViewControllerInterface;

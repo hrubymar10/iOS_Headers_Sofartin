@@ -45,13 +45,13 @@
     UIVisualEffectView *_vibrancyEffectView;
 }
 
-@property(setter=_setAppearanceGuideClass:,assign,readwrite) Class _appearanceGuideClass;
-@property(setter=_setCenterAllContents:,assign,readwrite) bool _centerAllContents;
-@property(getter=_isSelected,setter=_setSelected:,assign,readwrite) bool _selected;
-@property(setter=_setShowsHighlightedState:,assign,readwrite) bool _showsHighlightedState;
-@property(assign,retain) NSValue * labelOffsetValue;
-@property(assign,readonly) UITabBarButtonLabel * tabBarButtonLabel;
-@property(getter=_unselectedTintColor,setter=_setUnselectedTintColor:,assign,retain) UIColor * unselectedTintColor;
+@property (setter=_setAppearanceGuideClass:, nonatomic) Class _appearanceGuideClass;
+@property (setter=_setCenterAllContents:, nonatomic) bool _centerAllContents;
+@property (getter=_isSelected, setter=_setSelected:, nonatomic) bool _selected;
+@property (setter=_setShowsHighlightedState:, nonatomic) bool _showsHighlightedState;
+@property (nonatomic, retain) NSValue *labelOffsetValue;
+@property (nonatomic, readonly) UITabBarButtonLabel *tabBarButtonLabel;
+@property (getter=_unselectedTintColor, setter=_setUnselectedTintColor:, nonatomic, retain) UIColor *unselectedTintColor;
 
 + (id)_defaultLabelColor;
 

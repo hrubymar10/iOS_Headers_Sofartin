@@ -4,13 +4,13 @@
 
 @interface SAUIAcePronunciationItem : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSArray * commands;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * tts;
+@property (nonatomic, copy) NSArray *commands;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *tts;
 
 + (id)acePronunciationItem;
 + (id)acePronunciationItemWithDictionary:(id)arg1 context:(id)arg2;

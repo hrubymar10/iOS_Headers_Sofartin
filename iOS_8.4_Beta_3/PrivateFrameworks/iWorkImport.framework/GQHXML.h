@@ -12,7 +12,7 @@
     bool mUseExternalCss;
 }
 
-@property(assign,readonly) bool isProgressive;
+@property (readonly) bool isProgressive;
 
 - (void)addCharRef:(const char *)arg1;
 - (void)addContent:(struct __CFString { }*)arg1;

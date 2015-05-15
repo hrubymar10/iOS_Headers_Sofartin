@@ -7,10 +7,10 @@
     CKDPRecordFieldValue *_value;
 }
 
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,readonly) bool hasValue;
-@property(assign,retain) CKDPRecordFieldIdentifier * identifier;
-@property(assign,retain) CKDPRecordFieldValue * value;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, readonly) bool hasValue;
+@property (nonatomic, retain) CKDPRecordFieldIdentifier *identifier;
+@property (nonatomic, retain) CKDPRecordFieldValue *value;
 
 + (id)emptyFieldWithKey:(id)arg1;
 

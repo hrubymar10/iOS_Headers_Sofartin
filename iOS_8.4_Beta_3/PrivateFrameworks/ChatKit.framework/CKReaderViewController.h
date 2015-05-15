@@ -8,15 +8,15 @@
     UITextView *_textView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKReaderViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * messageGUID;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSAttributedString * text;
-@property(assign,retain) UITextView * textView;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } visibleRange;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKReaderViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *messageGUID;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSAttributedString *text;
+@property (nonatomic, retain) UITextView *textView;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } visibleRange;
 
 - (bool)ckCanDismissWhenSuspending;
 - (void)contentSizeCategoryDidChange:(id)arg1;

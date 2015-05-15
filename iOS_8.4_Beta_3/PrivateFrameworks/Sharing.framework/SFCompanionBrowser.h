@@ -16,15 +16,15 @@
     NSMutableArray *_serviceTypes;
 }
 
-@property(assign,retain) <SFCompanionBrowserProtocol> * connectionProxy;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SFCompanionBrowserDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool foundDevices;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * identifier;
-@property(assign,copy) NSString * serviceType;
-@property(assign,readonly) Class superclass;
+@property (retain) <SFCompanionBrowserProtocol> *connectionProxy;
+@property (readonly, copy) NSString *debugDescription;
+@property <SFCompanionBrowserDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property bool foundDevices;
+@property (readonly) unsigned long long hash;
+@property (retain) NSString *identifier;
+@property (readonly, copy) NSString *serviceType;
+@property (readonly) Class superclass;
 
 - (id)_initWithServiceTypes:(id)arg1;
 - (void)clearCache;

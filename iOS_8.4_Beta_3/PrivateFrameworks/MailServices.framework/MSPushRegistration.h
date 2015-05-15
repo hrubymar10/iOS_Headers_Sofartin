@@ -9,10 +9,10 @@
     NSString *_notificationNamePrefix;
 }
 
-@property(assign,copy) NSString * accountIdentifier;
-@property(assign,copy) NSString * bundleIdentifier;
-@property(assign,copy) NSArray * mailboxNames;
-@property(assign,copy) NSString * notificationNamePrefix;
+@property (nonatomic, copy) NSString *accountIdentifier;
+@property (nonatomic, copy) NSString *bundleIdentifier;
+@property (nonatomic, copy) NSArray *mailboxNames;
+@property (nonatomic, copy) NSString *notificationNamePrefix;
 
 - (id)accountIdentifier;
 - (id)bundleIdentifier;

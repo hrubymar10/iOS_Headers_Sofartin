@@ -6,14 +6,14 @@
     id _internal;
 }
 
-@property(assign,readonly) CMAttitude * attitude;
-@property(assign,readonly) bool doingBiasEstimation;
-@property(assign,readonly) bool doingYawCorrection;
-@property(assign,readonly) struct { double x1; double x2; double x3; } gravity;
-@property(assign,readonly) struct { struct { double x_1_1_1; double x_1_1_2; double x_1_1_3; } x1; int x2; } magneticField;
-@property(assign,readonly) int magneticFieldCalibrationLevel;
-@property(assign,readonly) struct { double x1; double x2; double x3; } rotationRate;
-@property(assign,readonly) struct { double x1; double x2; double x3; } userAcceleration;
+@property (nonatomic, readonly) CMAttitude *attitude;
+@property (nonatomic, readonly) bool doingBiasEstimation;
+@property (nonatomic, readonly) bool doingYawCorrection;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; } gravity;
+@property (nonatomic, readonly) struct { struct { double x_1_1_1; double x_1_1_2; double x_1_1_3; } x1; int x2; } magneticField;
+@property (nonatomic, readonly) int magneticFieldCalibrationLevel;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; } rotationRate;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; } userAcceleration;
 
 + (bool)supportsSecureCoding;
 

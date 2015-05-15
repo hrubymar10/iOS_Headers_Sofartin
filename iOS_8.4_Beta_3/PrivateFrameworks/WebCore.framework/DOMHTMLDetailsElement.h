@@ -4,7 +4,7 @@
 
 @interface DOMHTMLDetailsElement : DOMHTMLElement
 
-@property(assign,readwrite) bool open;
+@property bool open;
 
 - (bool)open;
 - (void)setOpen:(bool)arg1;

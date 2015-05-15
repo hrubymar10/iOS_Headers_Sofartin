@@ -15,14 +15,14 @@
     bool _zoomToHighlightSelection;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UIWebFindOnPageHighlighterDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long highlightedMatchIndex;
-@property(assign,readonly) unsigned long long numberOfMatches;
-@property(assign,copy) NSString * searchText;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UIWebFindOnPageHighlighterDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long highlightedMatchIndex;
+@property (nonatomic, readonly) unsigned long long numberOfMatches;
+@property (nonatomic, readonly, copy) NSString *searchText;
+@property (readonly) Class superclass;
 
 + (bool)expandedRectsWouldIntersect:(id)arg1;
 

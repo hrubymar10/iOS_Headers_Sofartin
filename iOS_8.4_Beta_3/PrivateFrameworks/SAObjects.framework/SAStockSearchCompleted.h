@@ -4,14 +4,14 @@
 
 @interface SAStockSearchCompleted : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * refId;
-@property(assign,copy) NSArray * stockList;
-@property(assign,copy) NSArray * stockReferences;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic, copy) NSArray *stockList;
+@property (nonatomic, copy) NSArray *stockReferences;
+@property (readonly) Class superclass;
 
 + (id)searchCompleted;
 + (id)searchCompletedWithDictionary:(id)arg1 context:(id)arg2;

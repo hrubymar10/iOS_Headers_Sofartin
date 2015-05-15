@@ -8,10 +8,10 @@
     NSString *_unformattedID;
 }
 
-@property(assign,retain) NSString * ID;
-@property(assign,retain) NSString * countryCode;
-@property(assign,retain) NSDictionary * handleInfo;
-@property(assign,retain) NSString * unformattedID;
+@property (nonatomic, retain) NSString *ID;
+@property (nonatomic, retain) NSString *countryCode;
+@property (nonatomic, readonly, retain) NSDictionary *handleInfo;
+@property (nonatomic, retain) NSString *unformattedID;
 
 - (id)ID;
 - (long long)compareIDs:(id)arg1;

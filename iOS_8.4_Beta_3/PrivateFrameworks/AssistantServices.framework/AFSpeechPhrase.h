@@ -7,8 +7,8 @@
     bool _isLowConfidence;
 }
 
-@property(assign,copy) NSArray * interpretations;
-@property(assign,readwrite) bool isLowConfidence;
+@property (nonatomic, copy) NSArray *interpretations;
+@property (nonatomic) bool isLowConfidence;
 
 + (bool)supportsSecureCoding;
 

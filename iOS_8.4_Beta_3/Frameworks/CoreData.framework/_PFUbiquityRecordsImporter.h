@@ -24,24 +24,24 @@
     PFUbiquityLocation *_ubiquityRootLocation;
 }
 
-@property(assign,readwrite) bool allowBaselineRoll;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool importOnlyActiveStores;
-@property(assign,readonly) NSOperationQueue * importQueue;
-@property(assign,readonly) bool isMonitoring;
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,readwrite) NSObject<OS_dispatch_source> * logRestartTimer;
-@property(assign,readonly) NSPersistentStoreCoordinator * privatePSC;
-@property(assign,readonly) NSPersistentStore * privateStore;
-@property(assign,readonly) PFUbiquityRecordsImporterSchedulingContext * schedulingContext;
-@property(assign,readonly) NSRecursiveLock * schedulingLock;
-@property(assign,retain) PFUbiquitySwitchboardCacheWrapper * sideLoadCacheWrapper;
-@property(assign,readonly) NSString * storeName;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool throttleNotifications;
-@property(assign,retain) PFUbiquityLocation * ubiquityRootLocation;
+@property bool allowBaselineRoll;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property bool importOnlyActiveStores;
+@property (readonly) NSOperationQueue *importQueue;
+@property (readonly) bool isMonitoring;
+@property (readonly) NSString *localPeerID;
+@property NSObject<OS_dispatch_source> *logRestartTimer;
+@property (nonatomic, readonly) NSPersistentStoreCoordinator *privatePSC;
+@property (nonatomic, readonly) NSPersistentStore *privateStore;
+@property (nonatomic, readonly) PFUbiquityRecordsImporterSchedulingContext *schedulingContext;
+@property (nonatomic, readonly) NSRecursiveLock *schedulingLock;
+@property (nonatomic, retain) PFUbiquitySwitchboardCacheWrapper *sideLoadCacheWrapper;
+@property (readonly) NSString *storeName;
+@property (readonly) Class superclass;
+@property bool throttleNotifications;
+@property (nonatomic, retain) PFUbiquityLocation *ubiquityRootLocation;
 
 + (id)addPrivateStore:(id)arg1 toCoordinator:(id)arg2 atURL:(id)arg3 error:(id*)arg4;
 + (void)afterDelay:(double)arg1 executeBlockOnRootQueue:(id)arg2;

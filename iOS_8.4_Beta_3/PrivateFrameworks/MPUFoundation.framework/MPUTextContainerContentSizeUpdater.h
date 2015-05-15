@@ -7,8 +7,8 @@
     <MPUTextContainer> *_textContainer;
 }
 
-@property(assign,retain) NSString * lastSeenPreferredContentSizeCategory;
-@property(assign,readwrite) <MPUTextContainer> * textContainer;
+@property (nonatomic, retain) NSString *lastSeenPreferredContentSizeCategory;
+@property (nonatomic) <MPUTextContainer> *textContainer;
 
 - (void).cxx_destruct;
 - (void)_preferredContentSizeCategoryDidChange:(id)arg1;

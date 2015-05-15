@@ -46,20 +46,20 @@
     NSMutableDictionary *_trackedTouches;
 }
 
-@property(assign,copy) RCUIConfiguration * UIConfiguration;
-@property(assign,readwrite) double assetCurrentTime;
-@property(assign,readwrite) double assetDuration;
-@property(assign,readonly) long long beginTimeIndicatorSelectionAffinity;
-@property(assign,readonly) double currentTimeIndicatorCoordinate;
-@property(assign,readwrite) <RCWaveformSelectionOverlayDelegate> * delegate;
-@property(getter=isDisplayingSelectionTimes,assign,readwrite) bool displayingSelectionTimes;
-@property(getter=isEditingEnabled,assign,readwrite) bool editingEnabled;
-@property(assign,readonly) long long endTimeIndicatorSelectionAffinity;
-@property(assign,readonly) struct { double x1; double x2; } selectedTimeRange;
-@property(assign,readwrite) double selectedTimeRangeMaximumDuration;
-@property(assign,readwrite) double selectedTimeRangeMinimumDuration;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } selectionRect;
-@property(assign,readwrite) double trackedAssetCurrentTime;
+@property (nonatomic, copy) RCUIConfiguration *UIConfiguration;
+@property (nonatomic) double assetCurrentTime;
+@property (nonatomic) double assetDuration;
+@property (nonatomic, readonly) long long beginTimeIndicatorSelectionAffinity;
+@property (nonatomic, readonly) double currentTimeIndicatorCoordinate;
+@property (nonatomic) <RCWaveformSelectionOverlayDelegate> *delegate;
+@property (getter=isDisplayingSelectionTimes, nonatomic) bool displayingSelectionTimes;
+@property (getter=isEditingEnabled, nonatomic) bool editingEnabled;
+@property (nonatomic, readonly) long long endTimeIndicatorSelectionAffinity;
+@property (nonatomic, readonly) struct { double x1; double x2; } selectedTimeRange;
+@property (nonatomic) double selectedTimeRangeMaximumDuration;
+@property (nonatomic) double selectedTimeRangeMinimumDuration;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } selectionRect;
+@property (nonatomic) double trackedAssetCurrentTime;
 
 - (void).cxx_destruct;
 - (id)UIConfiguration;

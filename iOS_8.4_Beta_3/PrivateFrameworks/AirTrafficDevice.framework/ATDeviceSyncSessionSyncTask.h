@@ -17,7 +17,7 @@
     unsigned long long _totalItemsSyncedCount;
 }
 
-@property(assign,readwrite) bool startAssetTaskWhenFinished;
+@property (nonatomic) bool startAssetTaskWhenFinished;
 
 - (void).cxx_destruct;
 - (void)_applyChangesForSyncResponse:(id)arg1 toCurrentRevision:(unsigned long long)arg2 versionToken:(id)arg3 onMessageLink:(id)arg4;

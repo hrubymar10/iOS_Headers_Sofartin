@@ -4,10 +4,10 @@
 
 @interface AVAudioUnitDelay : AVAudioUnitEffect
 
-@property(assign,readwrite) double delayTime;
-@property(assign,readwrite) float feedback;
-@property(assign,readwrite) float lowPassCutoff;
-@property(assign,readwrite) float wetDryMix;
+@property (nonatomic) double delayTime;
+@property (nonatomic) float feedback;
+@property (nonatomic) float lowPassCutoff;
+@property (nonatomic) float wetDryMix;
 
 - (double)delayTime;
 - (float)feedback;

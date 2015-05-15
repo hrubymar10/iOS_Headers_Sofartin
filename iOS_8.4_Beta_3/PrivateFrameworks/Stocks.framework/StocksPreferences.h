@@ -9,9 +9,9 @@
     unsigned long long _textDirection;
 }
 
-@property(getter=isChangeColorSwapped,assign,readonly) bool changeColorSwapped;
-@property(assign,readonly) bool textAttachmentDirectionIsRightToLeft;
-@property(assign,readonly) unsigned long long textDirection;
+@property (getter=isChangeColorSwapped, nonatomic, readonly) bool changeColorSwapped;
+@property (nonatomic, readonly) bool textAttachmentDirectionIsRightToLeft;
+@property (nonatomic, readonly) unsigned long long textDirection;
 
 + (void)clearSharedPreferences;
 + (id)sharedPreferences;

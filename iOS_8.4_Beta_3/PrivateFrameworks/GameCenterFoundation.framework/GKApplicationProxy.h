@@ -7,17 +7,17 @@
     NSDictionary *_metadata;
 }
 
-@property(assign,retain) NSNumber * adamID;
-@property(assign,retain) NSBundle * bundle;
-@property(assign,retain) NSString * bundleID;
-@property(assign,retain) NSString * bundleVersion;
-@property(assign,retain) NSNumber * externalVersion;
-@property(getter=isGameCenterEnabled,assign,readonly) bool gameCenterEnabled;
-@property(getter=isInstalled,assign,readonly) bool installed;
-@property(assign,retain) LSApplicationProxy * lsProxy;
-@property(assign,retain) NSDictionary * metadata;
-@property(assign,retain) NSDate * purchaseDate;
-@property(getter=isRestricted,assign,readonly) bool restricted;
+@property (nonatomic, readonly, retain) NSNumber *adamID;
+@property (nonatomic, readonly, retain) NSBundle *bundle;
+@property (nonatomic, readonly, retain) NSString *bundleID;
+@property (nonatomic, readonly, retain) NSString *bundleVersion;
+@property (nonatomic, readonly, retain) NSNumber *externalVersion;
+@property (getter=isGameCenterEnabled, nonatomic, readonly) bool gameCenterEnabled;
+@property (getter=isInstalled, nonatomic, readonly) bool installed;
+@property (nonatomic, retain) LSApplicationProxy *lsProxy;
+@property (nonatomic, retain) NSDictionary *metadata;
+@property (nonatomic, readonly, retain) NSDate *purchaseDate;
+@property (getter=isRestricted, nonatomic, readonly) bool restricted;
 
 + (id)metadataForBundleURL:(id)arg1;
 

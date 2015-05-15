@@ -8,9 +8,9 @@
     bool _hasIdentitySet;
 }
 
-@property(assign,readwrite) long long encryptionPreference;
-@property(assign,retain) NSData * gckSessionConnectionData;
-@property(assign,readwrite) bool hasIdentitySet;
+@property (nonatomic) long long encryptionPreference;
+@property (nonatomic, retain) NSData *gckSessionConnectionData;
+@property (nonatomic) bool hasIdentitySet;
 
 + (id)connectionDataSegmentWithEncryptionPreference:(long long)arg1 identitySet:(bool)arg2 gckSessionConnectionDataBytes:(void*)arg3 gckSessionConnectionDataLength:(unsigned long long)arg4;
 

@@ -9,12 +9,12 @@
     GKUITheme *_theme;
 }
 
-@property(assign,readonly) GKComposeRemoteViewController * _remote;
-@property(assign,copy) NSString * defaultMessage;
-@property(assign,retain) NSMutableArray * emailsToAddAsRecipients;
-@property(assign,retain) NSMutableArray * playerInternalsToAddAsRecipients;
-@property(assign,readwrite) unsigned int rid;
-@property(assign,retain) GKUITheme * theme;
+@property (nonatomic, readonly) GKComposeRemoteViewController *_remote;
+@property (nonatomic, copy) NSString *defaultMessage;
+@property (nonatomic, retain) NSMutableArray *emailsToAddAsRecipients;
+@property (nonatomic, retain) NSMutableArray *playerInternalsToAddAsRecipients;
+@property (nonatomic) unsigned int rid;
+@property (nonatomic, retain) GKUITheme *theme;
 
 - (void)_addRecipientInternals:(id)arg1;
 - (id)_presentingViewController;

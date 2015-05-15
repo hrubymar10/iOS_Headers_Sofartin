@@ -21,18 +21,18 @@
     UIColor *_titleTextColor;
 }
 
-@property(setter=_setAlertController:,assign,readwrite) UIAlertController * _alertController;
-@property(setter=_setDescriptiveText:,assign,copy) NSString * _descriptiveText;
-@property(setter=_setIsDefault:,assign,readwrite) bool _isDefault;
-@property(setter=_setRepresenter:,assign,readwrite) <_UIAlertActionRepresenting> * _representer;
-@property(getter=_contentViewController,setter=_setContentViewController:,assign,retain) UIViewController * contentViewController;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,copy) id handler;
-@property(assign,retain) UIImage * image;
-@property(assign,copy) id shouldDismissHandler;
-@property(assign,copy) id simpleHandler;
-@property(assign,readwrite) long long style;
-@property(assign,copy) NSString * title;
+@property (setter=_setAlertController:, nonatomic) UIAlertController *_alertController;
+@property (setter=_setDescriptiveText:, nonatomic, copy) NSString *_descriptiveText;
+@property (setter=_setIsDefault:) bool _isDefault;
+@property (setter=_setRepresenter:) <_UIAlertActionRepresenting> *_representer;
+@property (getter=_contentViewController, setter=_setContentViewController:, nonatomic, retain) UIViewController *contentViewController;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic, copy) id handler;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, copy) id shouldDismissHandler;
+@property (nonatomic, copy) id simpleHandler;
+@property (nonatomic) long long style;
+@property (nonatomic, copy) NSString *title;
 
 + (id)_actionWithContentViewController:(id)arg1 style:(long long)arg2;
 + (id)_actionWithTitle:(id)arg1 descriptiveText:(id)arg2 image:(id)arg3 style:(long long)arg4 handler:(id)arg5 shouldDismissHandler:(id)arg6;

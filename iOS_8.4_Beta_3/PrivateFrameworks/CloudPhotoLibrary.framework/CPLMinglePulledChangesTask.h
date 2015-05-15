@@ -9,7 +9,7 @@
     NSObject<OS_dispatch_queue> *_lock;
 }
 
-@property(assign,retain) <CPLMinglePulledChangesTaskDelegate> * delegate;
+@property (retain) <CPLMinglePulledChangesTaskDelegate> *delegate;
 
 + (bool)mingleBatch:(id)arg1 forStore:(id)arg2 putBatchesInPullQueue:(bool*)arg3 error:(id*)arg4;
 

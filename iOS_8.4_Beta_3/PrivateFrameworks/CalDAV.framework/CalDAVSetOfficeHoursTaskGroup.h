@@ -7,13 +7,13 @@
     NSURL *_inboxURL;
 }
 
-@property(assign,retain) ICSDocument * calendarAvailability;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CoreDAVTaskGroupDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSURL * inboxURL;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) ICSDocument *calendarAvailability;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CoreDAVTaskGroupDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSURL *inboxURL;
+@property (readonly) Class superclass;
 
 - (id)calendarAvailability;
 - (void)dealloc;

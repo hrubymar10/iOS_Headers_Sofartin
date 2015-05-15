@@ -19,12 +19,12 @@
     NSMutableDictionary *_tableDescriptorDict;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <TableViewManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UITableView * managedTableView;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <TableViewManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UITableView *managedTableView;
+@property (readonly) Class superclass;
 
 + (id)boldSystemLabelFont;
 + (id)smallSystemLabelFont;

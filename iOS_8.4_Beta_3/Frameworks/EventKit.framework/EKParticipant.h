@@ -6,23 +6,23 @@
     EKCalendarItem *_owner;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) NSString * UUID;
-@property(assign,copy) NSURL * address;
-@property(assign,copy) NSString * comment;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * emailAddress;
-@property(assign,copy) NSString * firstName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isCurrentUser;
-@property(assign,copy) NSString * lastName;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) EKCalendarItem * owner;
-@property(assign,readonly) int participantRole;
-@property(assign,readonly) int participantStatus;
-@property(assign,readonly) int participantType;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) NSString *UUID;
+@property (nonatomic, copy) NSURL *address;
+@property (nonatomic, copy) NSString *comment;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *emailAddress;
+@property (nonatomic, copy) NSString *firstName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isCurrentUser;
+@property (nonatomic, copy) NSString *lastName;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) EKCalendarItem *owner;
+@property (nonatomic, readonly) int participantRole;
+@property (nonatomic, readonly) int participantStatus;
+@property (nonatomic, readonly) int participantType;
+@property (readonly) Class superclass;
 
 + (void*)findABPersonByURL:(id)arg1 inAddressBook:(void*)arg2;
 

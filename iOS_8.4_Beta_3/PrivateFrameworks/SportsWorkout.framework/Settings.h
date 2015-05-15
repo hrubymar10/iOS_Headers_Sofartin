@@ -7,8 +7,8 @@
     NSString *language;
 }
 
-@property(assign,retain) NSString * gender;
-@property(assign,retain) NSString * language;
+@property (retain) NSString *gender;
+@property (retain) NSString *language;
 
 - (id)gender;
 - (id)initWithLanguage:(id)arg1 gender:(id)arg2;

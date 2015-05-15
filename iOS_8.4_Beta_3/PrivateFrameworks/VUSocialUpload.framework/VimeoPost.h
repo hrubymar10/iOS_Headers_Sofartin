@@ -28,19 +28,19 @@
     long long _videoSize;
 }
 
-@property(assign,readwrite) unsigned long long accessType;
-@property(assign,retain) ACAccount * account;
-@property(assign,retain) ALAsset * asset;
-@property(assign,retain) NSData * assetData;
-@property(assign,retain) NSURL * assetURL;
-@property(assign,retain) VUDataReader * dataReader;
-@property(assign,readwrite) <VimeoPostDelegate> * delegate;
-@property(assign,retain) NSURL * exportedVideoURL;
-@property(assign,retain) NSString * postDescription;
-@property(assign,readwrite) long long privacySettings;
-@property(assign,retain) NSArray * tags;
-@property(assign,retain) NSString * title;
-@property(assign,readwrite) long long videoSize;
+@property (nonatomic) unsigned long long accessType;
+@property (nonatomic, retain) ACAccount *account;
+@property (nonatomic, retain) ALAsset *asset;
+@property (nonatomic, retain) NSData *assetData;
+@property (nonatomic, retain) NSURL *assetURL;
+@property (nonatomic, retain) VUDataReader *dataReader;
+@property (nonatomic) <VimeoPostDelegate> *delegate;
+@property (nonatomic, retain) NSURL *exportedVideoURL;
+@property (nonatomic, retain) NSString *postDescription;
+@property (nonatomic) long long privacySettings;
+@property (nonatomic, retain) NSArray *tags;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic) long long videoSize;
 
 + (bool)_isUsingCellular;
 + (id)dictionaryWithResponseData:(id)arg1 error:(id*)arg2;

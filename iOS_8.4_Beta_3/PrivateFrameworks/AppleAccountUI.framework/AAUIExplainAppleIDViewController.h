@@ -11,7 +11,7 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readwrite) bool shouldShowInviteeInstructions;
+@property (nonatomic) bool shouldShowInviteeInstructions;
 
 - (void).cxx_destruct;
 - (double)_heightForText:(id)arg1 constrainedToWidth:(double)arg2;

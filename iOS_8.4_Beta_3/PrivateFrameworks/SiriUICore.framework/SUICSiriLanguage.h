@@ -9,10 +9,10 @@
     NSString *_spokenLanguageCode;
 }
 
-@property(getter=_delegate,assign,readonly) <SUICSiriLanguageDelegate> * delegate;
-@property(getter=_setupAssistantNeedsToRunAvailable,assign,readwrite) bool setupAssistantNeedsToRunAvailable;
-@property(assign,readwrite) bool setupAssistantNeedsToRunChecked;
-@property(assign,copy) NSString * spokenLanguageCode;
+@property (getter=_delegate, nonatomic, readonly) <SUICSiriLanguageDelegate> *delegate;
+@property (getter=_setupAssistantNeedsToRunAvailable, nonatomic) bool setupAssistantNeedsToRunAvailable;
+@property (nonatomic) bool setupAssistantNeedsToRunChecked;
+@property (nonatomic, copy) NSString *spokenLanguageCode;
 
 - (void).cxx_destruct;
 - (id)_computeSpokenLanguageCode;

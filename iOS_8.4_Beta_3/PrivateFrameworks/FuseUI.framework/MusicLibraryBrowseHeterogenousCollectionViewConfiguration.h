@@ -6,8 +6,8 @@
     NSArray *_libraryViewConfigurations;
 }
 
-@property(assign,readonly) MusicEntityCollectionViewDescriptor * entityCollectionViewDescriptor;
-@property(assign,readonly) NSArray * libraryViewConfigurations;
+@property (nonatomic, readonly) MusicEntityCollectionViewDescriptor *entityCollectionViewDescriptor;
+@property (nonatomic, readonly) NSArray *libraryViewConfigurations;
 
 - (void).cxx_destruct;
 - (id)collectionViewDescriptorForSection:(unsigned long long)arg1 traitCollection:(id)arg2;

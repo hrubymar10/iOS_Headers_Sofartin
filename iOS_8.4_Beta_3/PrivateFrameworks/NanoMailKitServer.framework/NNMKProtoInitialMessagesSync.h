@@ -17,21 +17,21 @@
     NSString *_syncedMailboxURL;
 }
 
-@property(assign,retain) NSData * dateForRequestingMoreMessages;
-@property(assign,retain) NSData * dateSynced;
-@property(assign,readwrite) unsigned int fullSyncVersion;
-@property(assign,readonly) bool hasDateForRequestingMoreMessages;
-@property(assign,readonly) bool hasDateSynced;
-@property(assign,readwrite) bool hasFullSyncVersion;
-@property(assign,readonly) bool hasSyncedMailboxAccountId;
-@property(assign,readonly) bool hasSyncedMailboxCustomName;
-@property(assign,readwrite) bool hasSyncedMailboxType;
-@property(assign,readonly) bool hasSyncedMailboxURL;
-@property(assign,retain) NSMutableArray * initialMessages;
-@property(assign,retain) NSString * syncedMailboxAccountId;
-@property(assign,retain) NSString * syncedMailboxCustomName;
-@property(assign,readwrite) unsigned int syncedMailboxType;
-@property(assign,retain) NSString * syncedMailboxURL;
+@property (nonatomic, retain) NSData *dateForRequestingMoreMessages;
+@property (nonatomic, retain) NSData *dateSynced;
+@property (nonatomic) unsigned int fullSyncVersion;
+@property (nonatomic, readonly) bool hasDateForRequestingMoreMessages;
+@property (nonatomic, readonly) bool hasDateSynced;
+@property (nonatomic) bool hasFullSyncVersion;
+@property (nonatomic, readonly) bool hasSyncedMailboxAccountId;
+@property (nonatomic, readonly) bool hasSyncedMailboxCustomName;
+@property (nonatomic) bool hasSyncedMailboxType;
+@property (nonatomic, readonly) bool hasSyncedMailboxURL;
+@property (nonatomic, retain) NSMutableArray *initialMessages;
+@property (nonatomic, retain) NSString *syncedMailboxAccountId;
+@property (nonatomic, retain) NSString *syncedMailboxCustomName;
+@property (nonatomic) unsigned int syncedMailboxType;
+@property (nonatomic, retain) NSString *syncedMailboxURL;
 
 - (void).cxx_destruct;
 - (void)addInitialMessage:(id)arg1;

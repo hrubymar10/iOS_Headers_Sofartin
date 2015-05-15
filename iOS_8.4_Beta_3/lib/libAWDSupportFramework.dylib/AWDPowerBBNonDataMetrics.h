@@ -21,20 +21,20 @@
     unsigned int _voicePowerMicroWatt;
 }
 
-@property(assign,readwrite) unsigned int aPWakeCacheFlushCnt;
-@property(assign,readwrite) bool hasAPWakeCacheFlushCnt;
-@property(assign,readwrite) bool hasIdlePowerMicroWatt;
-@property(assign,readwrite) bool hasOOSPowerMicroWatt;
-@property(assign,readwrite) bool hasRegistrationPowerMicroWatt;
-@property(assign,readwrite) bool hasScanPowerMicroWatt;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasVoicePowerMicroWatt;
-@property(assign,readwrite) unsigned int idlePowerMicroWatt;
-@property(assign,readwrite) unsigned int oOSPowerMicroWatt;
-@property(assign,readwrite) unsigned int registrationPowerMicroWatt;
-@property(assign,readwrite) unsigned int scanPowerMicroWatt;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int voicePowerMicroWatt;
+@property (nonatomic) unsigned int aPWakeCacheFlushCnt;
+@property (nonatomic) bool hasAPWakeCacheFlushCnt;
+@property (nonatomic) bool hasIdlePowerMicroWatt;
+@property (nonatomic) bool hasOOSPowerMicroWatt;
+@property (nonatomic) bool hasRegistrationPowerMicroWatt;
+@property (nonatomic) bool hasScanPowerMicroWatt;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasVoicePowerMicroWatt;
+@property (nonatomic) unsigned int idlePowerMicroWatt;
+@property (nonatomic) unsigned int oOSPowerMicroWatt;
+@property (nonatomic) unsigned int registrationPowerMicroWatt;
+@property (nonatomic) unsigned int scanPowerMicroWatt;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int voicePowerMicroWatt;
 
 - (unsigned int)aPWakeCacheFlushCnt;
 - (void)copyTo:(id)arg1;

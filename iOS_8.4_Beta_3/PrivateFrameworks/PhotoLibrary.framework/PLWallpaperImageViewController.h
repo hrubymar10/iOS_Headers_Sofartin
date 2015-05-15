@@ -15,12 +15,12 @@
     NSString *_wallpaperTitle;
 }
 
-@property(assign,readwrite) bool isWallpaperEdit;
-@property(assign,readwrite) long long previewType;
-@property(assign,readwrite) long long previewVariant;
-@property(assign,readwrite) bool saveWallpaperData;
-@property(assign,retain) SBSUIWallpaperPreviewViewController * wallpaperPreviewViewController;
-@property(assign,copy) NSString * wallpaperTitle;
+@property (nonatomic) bool isWallpaperEdit;
+@property (nonatomic) long long previewType;
+@property (nonatomic) long long previewVariant;
+@property (nonatomic) bool saveWallpaperData;
+@property (nonatomic, retain) SBSUIWallpaperPreviewViewController *wallpaperPreviewViewController;
+@property (nonatomic, copy) NSString *wallpaperTitle;
 
 - (void)_adjustScrollViewGeometry;
 - (void)_backgroundCropWallpaper;

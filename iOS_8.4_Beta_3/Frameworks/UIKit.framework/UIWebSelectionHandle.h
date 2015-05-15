@@ -18,12 +18,12 @@
     } _touchToCenterOffset;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } centerToSelectionPointOffset;
-@property(assign,readonly) bool hasTextPosition;
-@property(assign,readwrite) int position;
-@property(assign,readwrite) int textPosition;
-@property(assign,retain) UITouch * touch;
-@property(assign,readonly) struct CGSize { double x1; double x2; } touchToCenterOffset;
+@property (nonatomic) struct CGSize { double x1; double x2; } centerToSelectionPointOffset;
+@property (nonatomic, readonly) bool hasTextPosition;
+@property (nonatomic) int position;
+@property (nonatomic) int textPosition;
+@property (nonatomic, retain) UITouch *touch;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } touchToCenterOffset;
 
 - (struct CGPoint { double x1; double x2; })applyCenterToSelectionPointOffset:(struct CGPoint { double x1; double x2; })arg1;
 - (struct CGPoint { double x1; double x2; })applyOffsetInDirectionOfHandle:(double)arg1 toPoint:(struct CGPoint { double x1; double x2; })arg2;

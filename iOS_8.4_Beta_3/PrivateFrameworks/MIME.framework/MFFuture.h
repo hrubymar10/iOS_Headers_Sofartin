@@ -9,12 +9,12 @@
     NSConditionLock *_stateLock;
 }
 
-@property(getter=isCancelled,assign,readonly) bool cancelled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isFinished,assign,readonly) bool finished;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (getter=isCancelled, readonly) bool cancelled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isFinished, readonly) bool finished;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)future;
 

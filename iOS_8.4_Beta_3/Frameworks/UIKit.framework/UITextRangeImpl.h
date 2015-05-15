@@ -7,8 +7,8 @@
     DOMRange *_domRange;
 }
 
-@property(assign,readwrite) long long affinity;
-@property(assign,retain) DOMRange * domRange;
+@property (nonatomic) long long affinity;
+@property (nonatomic, retain) DOMRange *domRange;
 
 + (id)wrapDOMRange:(id)arg1;
 + (id)wrapDOMRange:(id)arg1 withAffinity:(long long)arg2;

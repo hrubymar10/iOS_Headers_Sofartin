@@ -8,11 +8,11 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,readonly) bool hasLatLng;
-@property(assign,readonly) bool hasMapRegion;
-@property(assign,retain) GEOLatLng * latLng;
-@property(assign,retain) GEOMapRegion * mapRegion;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, readonly) bool hasLatLng;
+@property (nonatomic, readonly) bool hasMapRegion;
+@property (nonatomic, retain) GEOLatLng *latLng;
+@property (nonatomic, retain) GEOMapRegion *mapRegion;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

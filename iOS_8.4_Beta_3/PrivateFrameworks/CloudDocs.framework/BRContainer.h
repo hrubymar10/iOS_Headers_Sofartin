@@ -17,24 +17,24 @@
     NSData *_sbExtension;
 }
 
-@property(assign,copy) NSSet * bundleIdentifiers;
-@property(assign,readwrite) unsigned int currentStatus;
-@property(assign,readonly) unsigned int currentStatus;
-@property(assign,readonly) NSSet * documentsTypes;
-@property(assign,readonly) NSURL * documentsURL;
-@property(assign,readonly) NSSet * exportedTypes;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSSet * importedTypes;
-@property(assign,readwrite) bool isCloudSyncTCCDisabled;
-@property(assign,readonly) bool isDocumentScopePublic;
-@property(assign,readwrite) bool isInInitialState;
-@property(assign,retain) NSDate * lastServerUpdate;
-@property(assign,retain) NSDate * lastServerUpdate;
-@property(assign,readonly) NSString * localizedName;
-@property(getter=isOverQuota,assign,readwrite) bool overQuota;
-@property(getter=isOverQuota,assign,readonly) bool overQuota;
-@property(assign,readonly) NSData * propertiesData;
-@property(assign,readonly) NSString * supportedFolderLevels;
+@property (nonatomic, readonly, copy) NSSet *bundleIdentifiers;
+@property (nonatomic) unsigned int currentStatus;
+@property (nonatomic, readonly) unsigned int currentStatus;
+@property (nonatomic, readonly) NSSet *documentsTypes;
+@property (nonatomic, readonly) NSURL *documentsURL;
+@property (nonatomic, readonly) NSSet *exportedTypes;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) NSSet *importedTypes;
+@property (nonatomic) bool isCloudSyncTCCDisabled;
+@property (nonatomic, readonly) bool isDocumentScopePublic;
+@property (nonatomic) bool isInInitialState;
+@property (nonatomic, retain) NSDate *lastServerUpdate;
+@property (nonatomic, readonly, retain) NSDate *lastServerUpdate;
+@property (nonatomic, readonly) NSString *localizedName;
+@property (getter=isOverQuota, nonatomic) bool overQuota;
+@property (getter=isOverQuota, nonatomic, readonly) bool overQuota;
+@property (nonatomic, readonly) NSData *propertiesData;
+@property (nonatomic, readonly) NSString *supportedFolderLevels;
 
 + (id)URLForPlistOfContainerIdentifier:(id)arg1;
 + (void)_generateiOSIconsIntoDict:(id)arg1 usingBundle:(id)arg2;

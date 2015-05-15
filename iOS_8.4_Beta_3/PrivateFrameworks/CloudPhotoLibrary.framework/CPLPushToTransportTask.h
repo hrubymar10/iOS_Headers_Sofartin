@@ -16,7 +16,7 @@
     <CPLEngineTransportUploadBatchTask> *_uploadTask;
 }
 
-@property(assign,retain) <CPLPushToTransportTaskDelegate> * delegate;
+@property (retain) <CPLPushToTransportTaskDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_detectUpdatesForFullRecordsWithNoChangeDataInBatch:(id)arg1;

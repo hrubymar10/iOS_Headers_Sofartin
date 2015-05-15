@@ -6,7 +6,7 @@
     bool _enableSharing;
 }
 
-@property(assign,readwrite) bool enableSharing;
+@property (nonatomic) bool enableSharing;
 
 + (void)deleteAllLocalSharedAlbumsInLibrary:(id)arg1 keepPendingAlbums:(bool)arg2 withReason:(id)arg3;
 + (void)enableCloudSharing:(bool)arg1;

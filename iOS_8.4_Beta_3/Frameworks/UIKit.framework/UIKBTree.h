@@ -11,12 +11,12 @@
     int type;
 }
 
-@property(assign,retain) NSMutableDictionary * cache;
-@property(assign,retain) NSString * layoutTag;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSMutableDictionary * properties;
-@property(assign,retain) NSMutableArray * subtrees;
-@property(assign,readwrite) int type;
+@property (nonatomic, retain) NSMutableDictionary *cache;
+@property (nonatomic, retain) NSString *layoutTag;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSMutableDictionary *properties;
+@property (nonatomic, retain) NSMutableArray *subtrees;
+@property (nonatomic) int type;
 
 + (long long)extraIPhoneIdiom:(long long)arg1 width:(double)arg2 landscape:(bool)arg3;
 + (id)key;

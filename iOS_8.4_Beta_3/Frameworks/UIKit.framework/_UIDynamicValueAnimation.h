@@ -16,10 +16,10 @@
     id _viewApplier;
 }
 
-@property(assign,copy) NSArray * activeValues;
-@property(assign,readwrite) double friction;
-@property(assign,readwrite) double value;
-@property(assign,readwrite) double velocity;
+@property (nonatomic, copy) NSArray *activeValues;
+@property (nonatomic) double friction;
+@property (nonatomic) double value;
+@property (nonatomic) double velocity;
 
 + (id)_dynamicValueAnimationMatchingCASpringAnimationWithMass:(double)arg1 stiffness:(double)arg2 damping:(float)arg3 velocity:(float)arg4 fromValue:(double)arg5 toValue:(double)arg6;
 + (id)pu_dynamicValueAnimationWithInitialValue:(double)arg1 initialVelocity:(double)arg2 targetValue:(double)arg3 stiffness:(double)arg4 dampingFactor:(double)arg5 epsilon:(double)arg6;

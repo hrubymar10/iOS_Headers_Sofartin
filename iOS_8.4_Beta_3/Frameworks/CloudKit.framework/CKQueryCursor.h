@@ -7,8 +7,8 @@
     CKRecordZoneID *_zoneID;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,retain) CKRecordZoneID * zoneID;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic, retain) CKRecordZoneID *zoneID;
 
 + (bool)supportsSecureCoding;
 

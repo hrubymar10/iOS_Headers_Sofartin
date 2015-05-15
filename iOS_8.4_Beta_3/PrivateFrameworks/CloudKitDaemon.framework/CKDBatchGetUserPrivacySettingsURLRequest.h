@@ -6,7 +6,7 @@
     NSArray *_containerPrivacySettings;
 }
 
-@property(assign,retain) NSArray * containerPrivacySettings;
+@property (nonatomic, retain) NSArray *containerPrivacySettings;
 
 - (void).cxx_destruct;
 - (id)containerPrivacySettings;

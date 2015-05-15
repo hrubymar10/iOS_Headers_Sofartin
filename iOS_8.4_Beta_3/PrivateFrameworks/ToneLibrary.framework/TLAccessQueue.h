@@ -8,9 +8,9 @@
     NSString *_threadLocalStorageKey;
 }
 
-@property(setter=_setSerialQueue:,assign,readwrite) NSObject<OS_dispatch_queue> * _serialQueue;
-@property(setter=_setThreadLocalStorageKey:,assign,copy) NSString * _threadLocalStorageKey;
-@property(assign,copy) NSString * label;
+@property (setter=_setSerialQueue:, nonatomic) NSObject<OS_dispatch_queue> *_serialQueue;
+@property (setter=_setThreadLocalStorageKey:, nonatomic, copy) NSString *_threadLocalStorageKey;
+@property (nonatomic, copy) NSString *label;
 
 - (void)_performSynchronousBlockInSerialQueue:(id)arg1;
 - (id)_serialQueue;

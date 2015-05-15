@@ -13,14 +13,14 @@
     long long _truncationSize;
 }
 
-@property(assign,readwrite) int MIMESupport;
-@property(assign,readwrite) bool allOrNone;
-@property(assign,readwrite) int bodyType;
-@property(assign,retain) NSString * collectionID;
-@property(assign,readwrite) bool deepTraversal;
-@property(assign,retain) NSDate * priorToDate;
-@property(assign,readwrite) bool rebuildResults;
-@property(assign,readwrite) long long truncationSize;
+@property (nonatomic) int MIMESupport;
+@property (nonatomic) bool allOrNone;
+@property (nonatomic) int bodyType;
+@property (nonatomic, retain) NSString *collectionID;
+@property (nonatomic) bool deepTraversal;
+@property (nonatomic, retain) NSDate *priorToDate;
+@property (nonatomic) bool rebuildResults;
+@property (nonatomic) long long truncationSize;
 
 + (id)mailboxSearchQueryWithSearchString:(id)arg1 consumer:(id)arg2;
 

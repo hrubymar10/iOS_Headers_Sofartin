@@ -6,7 +6,7 @@
     HAPMetadataTuple *_hapMetadataTuple;
 }
 
-@property(assign,retain) HAPMetadataTuple * hapMetadataTuple;
+@property (nonatomic, retain) HAPMetadataTuple *hapMetadataTuple;
 
 + (bool)supportsSecureCoding;
 

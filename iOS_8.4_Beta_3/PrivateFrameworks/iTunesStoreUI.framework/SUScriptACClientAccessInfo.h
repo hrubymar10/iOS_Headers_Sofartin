@@ -7,11 +7,11 @@
     NSMutableDictionary *_dictionary;
 }
 
-@property(assign,readonly) NSDictionary * accessInfoDictionary;
-@property(assign,readonly) NSString * accessKeyFacebookAppID;
-@property(assign,readonly) NSString * accessKeyFacebookPermissions;
-@property(assign,readonly) NSString * accessKeyPurposeStatement;
-@property(assign,retain) SUScriptAppleAccountType * accountType;
+@property (readonly) NSDictionary *accessInfoDictionary;
+@property (readonly) NSString *accessKeyFacebookAppID;
+@property (readonly) NSString *accessKeyFacebookPermissions;
+@property (readonly) NSString *accessKeyPurposeStatement;
+@property (retain) SUScriptAppleAccountType *accountType;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

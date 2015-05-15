@@ -12,14 +12,14 @@
     NSString *_typeDescription;
 }
 
-@property(assign,copy) NSString * contactPoint;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * organizationName;
-@property(assign,readwrite) bool requiresUserInteraction;
-@property(assign,copy) NSString * sourceAddress;
-@property(assign,readwrite) unsigned long long type;
-@property(assign,copy) NSString * typeDescription;
-@property(assign,readonly) NSString * typeDescriptionUnlocalized;
+@property (nonatomic, copy) NSString *contactPoint;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSString *organizationName;
+@property (nonatomic) bool requiresUserInteraction;
+@property (nonatomic, copy) NSString *sourceAddress;
+@property (nonatomic) unsigned long long type;
+@property (nonatomic, copy) NSString *typeDescription;
+@property (nonatomic, readonly) NSString *typeDescriptionUnlocalized;
 
 + (bool)supportsSecureCoding;
 + (id)verificationChannelWithDictionary:(id)arg1 andOrganizationName:(id)arg2;

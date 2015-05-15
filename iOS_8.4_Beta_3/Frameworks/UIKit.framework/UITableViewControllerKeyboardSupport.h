@@ -9,9 +9,9 @@
     unsigned int _viewIsDisappearing;
 }
 
-@property(assign,readwrite) double adjustmentForKeyboard;
-@property(assign,readwrite) bool registeredForNotifications;
-@property(assign,readwrite) bool viewIsDisappearing;
+@property (nonatomic) double adjustmentForKeyboard;
+@property (nonatomic) bool registeredForNotifications;
+@property (nonatomic) bool viewIsDisappearing;
 
 - (void)_keyboardDidChangeFrame:(id)arg1;
 - (void)_keyboardDidHide:(id)arg1;

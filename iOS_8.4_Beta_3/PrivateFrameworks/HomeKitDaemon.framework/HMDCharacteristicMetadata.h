@@ -12,13 +12,13 @@
     NSString *_units;
 }
 
-@property(assign,copy) NSString * format;
-@property(assign,copy) NSString * manufacturerDescription;
-@property(assign,readonly) NSNumber * maxLength;
-@property(assign,readonly) NSNumber * maximumValue;
-@property(assign,readonly) NSNumber * minimumValue;
-@property(assign,readonly) NSNumber * stepValue;
-@property(assign,copy) NSString * units;
+@property (nonatomic, readonly, copy) NSString *format;
+@property (nonatomic, readonly, copy) NSString *manufacturerDescription;
+@property (nonatomic, readonly) NSNumber *maxLength;
+@property (nonatomic, readonly) NSNumber *maximumValue;
+@property (nonatomic, readonly) NSNumber *minimumValue;
+@property (nonatomic, readonly) NSNumber *stepValue;
+@property (nonatomic, readonly, copy) NSString *units;
 
 + (bool)isValidMetadata:(id)arg1;
 + (bool)supportsSecureCoding;

@@ -48,18 +48,18 @@
     UIWindow *_window;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } baseSize;
-@property(assign,readwrite) <MPUStackViewDataSource> * dataSource;
-@property(assign,readwrite) bool forcesIntegralX;
-@property(assign,readwrite) bool forcesIntegralY;
-@property(assign,readonly) Class itemClass;
-@property(assign,readonly) NSString * itemReuseIdentifier;
-@property(assign,readonly) NSArray * items;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } maximumRelativeOffsetStep;
-@property(assign,readonly) long long numberOfItems;
-@property(assign,readwrite) UIView * perspectiveTargetView;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } sizeInsetStep;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } vanishingPoint;
+@property (nonatomic) struct CGSize { double x1; double x2; } baseSize;
+@property (nonatomic) <MPUStackViewDataSource> *dataSource;
+@property (nonatomic) bool forcesIntegralX;
+@property (nonatomic) bool forcesIntegralY;
+@property (nonatomic, readonly) Class itemClass;
+@property (nonatomic, readonly) NSString *itemReuseIdentifier;
+@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic) struct UIOffset { double x1; double x2; } maximumRelativeOffsetStep;
+@property (nonatomic, readonly) long long numberOfItems;
+@property (nonatomic) UIView *perspectiveTargetView;
+@property (nonatomic) struct CGSize { double x1; double x2; } sizeInsetStep;
+@property (nonatomic) struct CGPoint { double x1; double x2; } vanishingPoint;
 
 - (void).cxx_destruct;
 - (id)_dequeueReusableItem;

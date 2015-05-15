@@ -7,9 +7,9 @@
     TKVibrationPickerViewController *_vibrationPicker;
 }
 
-@property(assign,retain) CNContactStyle * contactStyle;
-@property(assign,readwrite) <ABPickerControllerDelegate> * delegate;
-@property(assign,readonly) TKVibrationPickerViewController * vibrationPicker;
+@property (nonatomic, retain) CNContactStyle *contactStyle;
+@property (nonatomic) <ABPickerControllerDelegate> *delegate;
+@property (nonatomic, readonly) TKVibrationPickerViewController *vibrationPicker;
 
 - (void)cancelButton:(id)arg1;
 - (id)contactStyle;

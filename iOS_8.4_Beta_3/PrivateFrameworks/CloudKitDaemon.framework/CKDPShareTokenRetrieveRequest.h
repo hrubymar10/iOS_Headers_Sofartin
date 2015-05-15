@@ -8,12 +8,12 @@
     NSData *_shortTokenHash;
 }
 
-@property(assign,readonly) bool hasRoutingKey;
-@property(assign,readonly) bool hasShareId;
-@property(assign,readonly) bool hasShortTokenHash;
-@property(assign,retain) NSString * routingKey;
-@property(assign,retain) CKDPShareIdentifier * shareId;
-@property(assign,retain) NSData * shortTokenHash;
+@property (nonatomic, readonly) bool hasRoutingKey;
+@property (nonatomic, readonly) bool hasShareId;
+@property (nonatomic, readonly) bool hasShortTokenHash;
+@property (nonatomic, retain) NSString *routingKey;
+@property (nonatomic, retain) CKDPShareIdentifier *shareId;
+@property (nonatomic, retain) NSData *shortTokenHash;
 
 + (id)options;
 

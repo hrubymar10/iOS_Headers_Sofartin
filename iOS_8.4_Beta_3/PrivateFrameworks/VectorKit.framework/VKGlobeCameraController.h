@@ -95,17 +95,17 @@
     bool _wasPitched;
 }
 
-@property(assign,readonly) struct { double x1; double x2; double x3; } centerCoordinate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) struct GlobeView { int (**x1)(); }* globeView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) GEOMapRegion * mapRegion;
-@property(assign,readonly) GEOMapRegion * mapRegionOfInterest;
-@property(assign,readonly) double pitch;
-@property(assign,readonly) double presentationYaw;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) double yaw;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; } centerCoordinate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) struct GlobeView { int (**x1)(); }*globeView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) GEOMapRegion *mapRegion;
+@property (nonatomic, readonly) GEOMapRegion *mapRegionOfInterest;
+@property (nonatomic, readonly) double pitch;
+@property (nonatomic, readonly) double presentationYaw;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) double yaw;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

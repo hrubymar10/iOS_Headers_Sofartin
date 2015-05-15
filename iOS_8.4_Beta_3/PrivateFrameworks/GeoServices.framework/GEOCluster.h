@@ -11,10 +11,10 @@
     } _indexs;
 }
 
-@property(assign,retain) GEOPlaceResult * container;
-@property(assign,readonly) bool hasContainer;
-@property(assign,readonly) int* indexs;
-@property(assign,readonly) unsigned long long indexsCount;
+@property (nonatomic, retain) GEOPlaceResult *container;
+@property (nonatomic, readonly) bool hasContainer;
+@property (nonatomic, readonly) int*indexs;
+@property (nonatomic, readonly) unsigned long long indexsCount;
 
 - (void)addIndex:(int)arg1;
 - (void)clearIndexs;

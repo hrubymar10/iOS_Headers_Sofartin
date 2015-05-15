@@ -7,8 +7,8 @@
     NSArray *_textFieldValues;
 }
 
-@property(assign,readonly) long long buttonIdentifier;
-@property(assign,readonly) NSArray * textFieldValues;
+@property (nonatomic, readonly) long long buttonIdentifier;
+@property (nonatomic, readonly) NSArray *textFieldValues;
 
 - (void).cxx_destruct;
 - (long long)buttonIdentifier;

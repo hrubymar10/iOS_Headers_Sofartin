@@ -20,25 +20,25 @@
     NSObject<OS_dispatch_data> *_writeBuffer;
 }
 
-@property(assign,copy) id _afterDidReportProgressOnQueue;
-@property(assign,readwrite) unsigned long long _transientWriteProgress;
-@property(assign,readwrite) bool canWrite;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didIssueNeedFinish;
-@property(assign,retain) __NSCFLocalDownloadFile * downloadFile;
-@property(assign,copy) id fileCompletion;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long initialResumeSize;
-@property(assign,readwrite) unsigned long long ioSuspend;
-@property(assign,readwrite) bool needFinish;
-@property(assign,retain) NSDictionary * originalResumeInfo;
-@property(assign,copy) id resumeCallback;
-@property(assign,readwrite) int seqNo;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool suppressProgress;
-@property(assign,readwrite) unsigned long long totalWrote;
-@property(assign,readwrite) NSObject<OS_dispatch_data> * writeBuffer;
+@property (copy) id _afterDidReportProgressOnQueue;
+@property unsigned long long _transientWriteProgress;
+@property bool canWrite;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property bool didIssueNeedFinish;
+@property (retain) __NSCFLocalDownloadFile *downloadFile;
+@property (copy) id fileCompletion;
+@property (readonly) unsigned long long hash;
+@property long long initialResumeSize;
+@property unsigned long long ioSuspend;
+@property bool needFinish;
+@property (retain) NSDictionary *originalResumeInfo;
+@property (copy) id resumeCallback;
+@property int seqNo;
+@property (readonly) Class superclass;
+@property bool suppressProgress;
+@property unsigned long long totalWrote;
+@property NSObject<OS_dispatch_data> *writeBuffer;
 
 - (id)_afterDidReportProgressOnQueue;
 - (void)_onqueue_cancelByProducingResumeData:(id)arg1;

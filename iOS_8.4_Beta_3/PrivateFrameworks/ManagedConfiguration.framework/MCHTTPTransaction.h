@@ -21,17 +21,17 @@
     NSString *_userAgent;
 }
 
-@property(assign,retain) NSString * CMSSignatureHeaderName;
-@property(assign,retain) NSString * contentType;
-@property(assign,retain) NSData * data;
-@property(assign,retain) NSError * error;
-@property(assign,retain) NSString * method;
-@property(assign,retain) NSURL * permanentlyRedirectedURL;
-@property(assign,retain) NSData * responseData;
-@property(assign,readonly) long long statusCode;
-@property(assign,readwrite) double timeout;
-@property(assign,retain) NSURL * url;
-@property(assign,retain) NSString * userAgent;
+@property (nonatomic, retain) NSString *CMSSignatureHeaderName;
+@property (nonatomic, retain) NSString *contentType;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic, readonly, retain) NSError *error;
+@property (nonatomic, retain) NSString *method;
+@property (nonatomic, readonly, retain) NSURL *permanentlyRedirectedURL;
+@property (nonatomic, readonly, retain) NSData *responseData;
+@property (nonatomic, readonly) long long statusCode;
+@property (nonatomic) double timeout;
+@property (nonatomic, retain) NSURL *url;
+@property (nonatomic, retain) NSString *userAgent;
 
 + (id)performRequestURL:(id)arg1 method:(id)arg2 timeout:(double)arg3 userAgent:(id)arg4 contentType:(id)arg5 data:(id)arg6 identity:(struct __SecIdentity { }*)arg7 outPermanentlyRedirectedURL:(id*)arg8 outError:(id*)arg9;
 + (id)transactionWithURL:(id)arg1 method:(id)arg2;

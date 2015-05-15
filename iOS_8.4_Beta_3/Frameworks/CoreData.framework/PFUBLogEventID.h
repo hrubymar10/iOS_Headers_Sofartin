@@ -8,9 +8,9 @@
     NSString *_idString;
 }
 
-@property(assign,readonly) long long eventType;
-@property(assign,readonly) long long hash;
-@property(assign,readonly) NSString * idString;
+@property (nonatomic, readonly) long long eventType;
+@property (nonatomic, readonly) long long hash;
+@property (nonatomic, readonly) NSString *idString;
 
 + (void)initialize;
 

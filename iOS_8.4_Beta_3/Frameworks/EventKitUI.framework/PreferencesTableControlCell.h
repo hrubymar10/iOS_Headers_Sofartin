@@ -4,7 +4,7 @@
 
 @interface PreferencesTableControlCell : EKUIConstrainedFontsTableViewCell
 
-@property(assign,retain) UIControl * control;
+@property (nonatomic, retain) UIControl *control;
 
 - (id)control;
 - (void)setControl:(id)arg1;

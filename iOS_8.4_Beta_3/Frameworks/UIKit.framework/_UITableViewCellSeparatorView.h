@@ -10,8 +10,8 @@
     UIVisualEffect *_separatorEffect;
 }
 
-@property(assign,readwrite) bool drawsWithVibrantLightMode;
-@property(assign,retain) UIVisualEffect * separatorEffect;
+@property (nonatomic) bool drawsWithVibrantLightMode;
+@property (nonatomic, retain) UIVisualEffect *separatorEffect;
 
 - (void)dealloc;
 - (bool)drawsWithVibrantLightMode;

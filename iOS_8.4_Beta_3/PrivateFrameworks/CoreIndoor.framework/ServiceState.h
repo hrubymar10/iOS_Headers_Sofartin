@@ -13,14 +13,14 @@
     NSString *_username;
 }
 
-@property(assign,retain) NSString * apiKey;
-@property(assign,retain) IndoorProtocolProxy * delegateProxy;
-@property(assign,retain) NSString * password;
-@property(assign,readwrite) bool pausedLocalization;
-@property(assign,retain) NSSet * selectedVenues;
-@property(assign,retain) NSString * server;
-@property(assign,readwrite) bool updateLocation;
-@property(assign,retain) NSString * username;
+@property (nonatomic, retain) NSString *apiKey;
+@property (nonatomic, retain) IndoorProtocolProxy *delegateProxy;
+@property (nonatomic, retain) NSString *password;
+@property (nonatomic) bool pausedLocalization;
+@property (nonatomic, retain) NSSet *selectedVenues;
+@property (nonatomic, retain) NSString *server;
+@property (nonatomic) bool updateLocation;
+@property (nonatomic, retain) NSString *username;
 
 - (void).cxx_destruct;
 - (id)apiKey;

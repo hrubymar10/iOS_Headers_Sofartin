@@ -15,8 +15,8 @@
     } min;
 }
 
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } max;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } min;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } max;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } min;
 
 + (id)SCNJSExportProtocol;
 

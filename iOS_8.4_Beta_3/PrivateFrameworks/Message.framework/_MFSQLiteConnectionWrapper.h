@@ -8,9 +8,9 @@
     unsigned long long _type;
 }
 
-@property(assign,readonly) MFSQLiteConnection * connection;
-@property(assign,readonly) unsigned long long generation;
-@property(assign,readwrite) unsigned long long type;
+@property (nonatomic, readonly) MFSQLiteConnection *connection;
+@property (nonatomic, readonly) unsigned long long generation;
+@property (nonatomic) unsigned long long type;
 
 - (id)connection;
 - (void)dealloc;

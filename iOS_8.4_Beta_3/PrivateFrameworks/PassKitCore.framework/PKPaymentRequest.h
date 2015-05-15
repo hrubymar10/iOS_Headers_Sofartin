@@ -20,21 +20,21 @@
     NSArray *_supportedNetworks;
 }
 
-@property(assign,copy) NSData * applicationData;
-@property(assign,readwrite) void* billingAddress;
-@property(assign,copy) NSString * countryCode;
-@property(assign,copy) NSString * currencyCode;
-@property(assign,readwrite) unsigned long long merchantCapabilities;
-@property(assign,copy) NSString * merchantIdentifier;
-@property(assign,copy) NSArray * paymentSummaryItems;
-@property(assign,readwrite) unsigned long long requiredBillingAddressFields;
-@property(assign,readwrite) unsigned long long requiredShippingAddressFields;
-@property(assign,readwrite) void* shippingAddress;
-@property(getter=isShippingEditable,assign,readwrite) bool shippingEditable;
-@property(assign,copy) NSString * shippingEditableMessage;
-@property(assign,copy) NSArray * shippingMethods;
-@property(assign,readwrite) unsigned long long shippingType;
-@property(assign,copy) NSArray * supportedNetworks;
+@property (nonatomic, copy) NSData *applicationData;
+@property (nonatomic) void*billingAddress;
+@property (nonatomic, copy) NSString *countryCode;
+@property (nonatomic, copy) NSString *currencyCode;
+@property (nonatomic) unsigned long long merchantCapabilities;
+@property (nonatomic, copy) NSString *merchantIdentifier;
+@property (nonatomic, copy) NSArray *paymentSummaryItems;
+@property (nonatomic) unsigned long long requiredBillingAddressFields;
+@property (nonatomic) unsigned long long requiredShippingAddressFields;
+@property (nonatomic) void*shippingAddress;
+@property (getter=isShippingEditable, nonatomic) bool shippingEditable;
+@property (nonatomic, copy) NSString *shippingEditableMessage;
+@property (nonatomic, copy) NSArray *shippingMethods;
+@property (nonatomic) unsigned long long shippingType;
+@property (nonatomic, copy) NSArray *supportedNetworks;
 
 + (bool)supportsSecureCoding;
 

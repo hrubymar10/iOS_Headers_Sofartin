@@ -14,16 +14,16 @@
     BBSettingsGateway *_settingsGateway;
 }
 
-@property(assign,retain) BLTSettingSyncServer * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isDNDMirrorEnabled;
-@property(assign,readonly) bool isWristDetectDisabled;
-@property(assign,retain) NPSManager * npsManager;
-@property(assign,retain) BBObserver * observer;
-@property(assign,retain) BBSettingsGateway * settingsGateway;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) BLTSettingSyncServer *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isDNDMirrorEnabled;
+@property (nonatomic, readonly) bool isWristDetectDisabled;
+@property (nonatomic, retain) NPSManager *npsManager;
+@property (nonatomic, retain) BBObserver *observer;
+@property (nonatomic, retain) BBSettingsGateway *settingsGateway;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_isWristDetectionDisabled;

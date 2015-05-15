@@ -7,8 +7,8 @@
     NSString *_name;
 }
 
-@property(assign,copy) id handler;
-@property(assign,copy) NSString * name;
+@property (nonatomic, copy) id handler;
+@property (nonatomic, copy) NSString *name;
 
 + (id)eventWithName:(id)arg1 handler:(id)arg2;
 

@@ -30,8 +30,8 @@
     NSString *_personID;
 }
 
-@property(assign,readwrite) <MSServerSideConfigProtocolDelegate> * delegate;
-@property(assign,readonly) NSString * personID;
+@property (nonatomic) <MSServerSideConfigProtocolDelegate> *delegate;
+@property (nonatomic, readonly) NSString *personID;
 
 - (void).cxx_destruct;
 - (void)_didFailAuthenticationWithError:(id)arg1;

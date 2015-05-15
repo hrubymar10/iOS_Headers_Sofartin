@@ -7,8 +7,8 @@
     NSString *_name;
 }
 
-@property(assign,readwrite) unsigned int flags;
-@property(assign,copy) NSString * name;
+@property (nonatomic) unsigned int flags;
+@property (nonatomic, copy) NSString *name;
 
 - (void)dealloc;
 - (id)description;

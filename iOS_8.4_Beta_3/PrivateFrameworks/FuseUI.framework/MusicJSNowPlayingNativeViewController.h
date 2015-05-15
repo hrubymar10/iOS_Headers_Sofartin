@@ -6,8 +6,8 @@
     <MusicJSNowPlayingNativeViewControllerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <MusicJSNowPlayingNativeViewControllerDelegate> * delegate;
-@property(assign,readonly) IKJSNavigationDocument * navigationDocument;
+@property (nonatomic) <MusicJSNowPlayingNativeViewControllerDelegate> *delegate;
+@property (nonatomic, readonly) IKJSNavigationDocument *navigationDocument;
 
 - (void).cxx_destruct;
 - (id)delegate;

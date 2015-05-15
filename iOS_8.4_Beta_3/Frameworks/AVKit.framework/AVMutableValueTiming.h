@@ -4,9 +4,9 @@
 
 @interface AVMutableValueTiming : AVValueTiming
 
-@property(assign,readwrite) double anchorTimeStamp;
-@property(assign,readwrite) double anchorValue;
-@property(assign,readwrite) double rate;
+@property (nonatomic) double anchorTimeStamp;
+@property (nonatomic) double anchorValue;
+@property (nonatomic) double rate;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 

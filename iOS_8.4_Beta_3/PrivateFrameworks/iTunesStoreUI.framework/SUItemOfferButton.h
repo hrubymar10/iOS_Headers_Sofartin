@@ -11,12 +11,12 @@
     bool _shouldShowConfirmation;
 }
 
-@property(assign,readwrite) long long animationHorizontalAlignment;
-@property(assign,copy) NSString * confirmationTitle;
-@property(assign,copy) NSString * itemOfferButtonStyle;
-@property(assign,copy) NSString * offerTitle;
-@property(assign,readwrite) bool shouldShowConfirmation;
-@property(getter=isShowingConfirmation,assign,readwrite) bool showingConfirmation;
+@property (nonatomic) long long animationHorizontalAlignment;
+@property (nonatomic, copy) NSString *confirmationTitle;
+@property (nonatomic, copy) NSString *itemOfferButtonStyle;
+@property (nonatomic, copy) NSString *offerTitle;
+@property (nonatomic) bool shouldShowConfirmation;
+@property (getter=isShowingConfirmation, nonatomic) bool showingConfirmation;
 
 + (double)defaultAnimationDuration;
 + (id)itemOfferButtonStyleForItem:(id)arg1 offer:(id)arg2;

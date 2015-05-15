@@ -6,13 +6,13 @@
     long long _layoutOrientation;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long layoutOrientation;
-@property(assign,readonly) double standardBottomBarHeight;
-@property(assign,readonly) double standardSideBarWidth;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long layoutOrientation;
+@property (nonatomic, readonly) double standardBottomBarHeight;
+@property (nonatomic, readonly) double standardSideBarWidth;
+@property (readonly) Class superclass;
 
 - (long long)layoutOrientation;
 - (void)setLayoutOrientation:(long long)arg1;

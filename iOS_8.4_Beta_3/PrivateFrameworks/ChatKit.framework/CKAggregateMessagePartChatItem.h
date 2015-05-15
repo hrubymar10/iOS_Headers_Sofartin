@@ -6,8 +6,8 @@
     NSArray *_subparts;
 }
 
-@property(assign,copy) NSArray * subparts;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSArray *subparts;
+@property (nonatomic, readonly, copy) NSString *title;
 
 - (Class)balloonViewClass;
 - (id)composition;

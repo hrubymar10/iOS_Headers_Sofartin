@@ -17,20 +17,20 @@
     bool _usesVariableLayout;
 }
 
-@property(assign,retain) NSMutableDictionary * allSubtypeParameters;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) BBSectionSubtypeParameters * defaultSubtypeParameters;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * displayName;
-@property(assign,readwrite) bool displaysCriticalBulletins;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) BBSectionIcon * icon;
-@property(assign,readwrite) unsigned long long messageNumberOfLines;
-@property(assign,readwrite) bool orderSectionUsingRecencyDate;
-@property(assign,readwrite) bool showsDateInFloatingLockScreenAlert;
-@property(assign,readwrite) bool showsSubtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool usesVariableLayout;
+@property (nonatomic, retain) NSMutableDictionary *allSubtypeParameters;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) BBSectionSubtypeParameters *defaultSubtypeParameters;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic) bool displaysCriticalBulletins;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) BBSectionIcon *icon;
+@property (nonatomic) unsigned long long messageNumberOfLines;
+@property (nonatomic) bool orderSectionUsingRecencyDate;
+@property (nonatomic) bool showsDateInFloatingLockScreenAlert;
+@property (nonatomic) bool showsSubtitle;
+@property (readonly) Class superclass;
+@property (nonatomic) bool usesVariableLayout;
 
 + (id)addSectionParametersToCache:(id)arg1;
 + (id)copyCachedSectionParametersWithIdentifier:(id)arg1;

@@ -7,8 +7,8 @@
     NSString *_modelVersionHash;
 }
 
-@property(assign,readonly) NSManagedObjectModel * model;
-@property(assign,readonly) NSString * modelVersionHash;
+@property (nonatomic, readonly) NSManagedObjectModel *model;
+@property (nonatomic, readonly) NSString *modelVersionHash;
 
 - (void)dealloc;
 - (id)description;

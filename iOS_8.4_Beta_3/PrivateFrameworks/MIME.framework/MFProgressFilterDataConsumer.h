@@ -8,8 +8,8 @@
     id _progressBlock;
 }
 
-@property(assign,readonly) unsigned long long expectedSize;
-@property(assign,copy) id progressBlock;
+@property (readonly) unsigned long long expectedSize;
+@property (nonatomic, copy) id progressBlock;
 
 - (long long)appendData:(id)arg1;
 - (void)dealloc;

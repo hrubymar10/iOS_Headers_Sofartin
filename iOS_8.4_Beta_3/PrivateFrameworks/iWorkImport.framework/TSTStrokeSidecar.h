@@ -10,15 +10,15 @@
     NSPointerArray *_topRowStrokes;
 }
 
-@property(assign,retain) NSPointerArray * bottomRowStrokes;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSPointerArray * leftColumnStrokes;
-@property(assign,readwrite) int maxOrder;
-@property(assign,retain) NSPointerArray * rightColumnStrokes;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSPointerArray * topRowStrokes;
+@property (nonatomic, retain) NSPointerArray *bottomRowStrokes;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSPointerArray *leftColumnStrokes;
+@property (nonatomic) int maxOrder;
+@property (nonatomic, retain) NSPointerArray *rightColumnStrokes;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSPointerArray *topRowStrokes;
 
 - (id)bottomRowStrokes;
 - (id)cellBorderAtCellID:(struct { unsigned short x1; unsigned char x2; unsigned char x3; })arg1;

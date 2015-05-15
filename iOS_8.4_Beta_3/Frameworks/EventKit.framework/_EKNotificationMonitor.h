@@ -26,11 +26,11 @@
     bool _useSyncIdleTimer;
 }
 
-@property(assign,readonly) unsigned long long eventNotificationCount;
-@property(assign,readonly) NSArray * eventNotificationReferences;
-@property(assign,readonly) unsigned long long notificationCount;
-@property(assign,readonly) NSArray * notificationReferences;
-@property(assign,readonly) NSArray * reminderNotificationReferences;
+@property (nonatomic, readonly) unsigned long long eventNotificationCount;
+@property (nonatomic, readonly) NSArray *eventNotificationReferences;
+@property (nonatomic, readonly) unsigned long long notificationCount;
+@property (nonatomic, readonly) NSArray *notificationReferences;
+@property (nonatomic, readonly) NSArray *reminderNotificationReferences;
 
 - (void)_alertPrefChanged;
 - (unsigned long long)_checkForEventNotifications:(id)arg1;

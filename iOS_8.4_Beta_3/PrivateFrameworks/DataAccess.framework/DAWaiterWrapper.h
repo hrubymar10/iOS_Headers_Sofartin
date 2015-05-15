@@ -9,10 +9,10 @@
     int _waiterNum;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,readwrite) long long dataclasses;
-@property(assign,retain) <DADataclassLockWatcher> * waiter;
-@property(assign,readonly) int waiterNum;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic) long long dataclasses;
+@property (nonatomic, retain) <DADataclassLockWatcher> *waiter;
+@property (nonatomic, readonly) int waiterNum;
 
 - (void).cxx_destruct;
 - (id)completionHandler;

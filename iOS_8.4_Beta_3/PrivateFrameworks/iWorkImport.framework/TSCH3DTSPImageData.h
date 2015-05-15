@@ -7,7 +7,7 @@
     TSCH3DTSPImageDataTexture *mParent;
 }
 
-@property(assign,retain) TSPData * data;
+@property (nonatomic, retain) TSPData *data;
 
 + (id)dataWithTSPImageData:(id)arg1;
 

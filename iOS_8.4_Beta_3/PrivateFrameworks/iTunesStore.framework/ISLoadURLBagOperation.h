@@ -7,12 +7,12 @@
     ISURLBag *_outputBag;
 }
 
-@property(assign,readonly) ISURLBag * URLBag;
-@property(assign,readonly) SSURLBagContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly) ISURLBag *URLBag;
+@property (readonly) SSURLBagContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)URLBag;
 - (void)_addHeadersToRequestProperties:(id)arg1;

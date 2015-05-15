@@ -9,10 +9,10 @@
     NSString *_eventExternalURL;
 }
 
-@property(assign,retain) EKTravelAdvisor * advisor;
-@property(assign,retain) EKTravelAgendaItem * agendaItem;
-@property(assign,readwrite) bool dismissed;
-@property(assign,retain) NSString * eventExternalURL;
+@property (nonatomic, retain) EKTravelAdvisor *advisor;
+@property (nonatomic, retain) EKTravelAgendaItem *agendaItem;
+@property (nonatomic) bool dismissed;
+@property (nonatomic, retain) NSString *eventExternalURL;
 
 - (id)advisor;
 - (id)agendaItem;

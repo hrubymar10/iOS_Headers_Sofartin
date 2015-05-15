@@ -6,7 +6,7 @@
     TSWPStorage *mStorage;
 }
 
-@property(assign,retain) TSWPStorage * storage;
+@property (nonatomic, retain) TSWPStorage *storage;
 
 + (id)payloadWithStorage:(id)arg1;
 

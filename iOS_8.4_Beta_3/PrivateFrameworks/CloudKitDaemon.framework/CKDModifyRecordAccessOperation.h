@@ -12,13 +12,13 @@
     NSMutableDictionary *_recordsToSaveByID;
 }
 
-@property(assign,copy) id accessWasGrantedBlock;
-@property(assign,copy) id accessWasRevokedBlock;
-@property(assign,retain) NSMutableSet * fetchedRecordIDs;
-@property(assign,readwrite) int numSaveAttempts;
-@property(assign,retain) NSArray * recordIDsToGrant;
-@property(assign,retain) NSArray * recordIDsToRevoke;
-@property(assign,retain) NSMutableDictionary * recordsToSaveByID;
+@property (nonatomic, copy) id accessWasGrantedBlock;
+@property (nonatomic, copy) id accessWasRevokedBlock;
+@property (nonatomic, retain) NSMutableSet *fetchedRecordIDs;
+@property (nonatomic) int numSaveAttempts;
+@property (nonatomic, retain) NSArray *recordIDsToGrant;
+@property (nonatomic, retain) NSArray *recordIDsToRevoke;
+@property (nonatomic, retain) NSMutableDictionary *recordsToSaveByID;
 
 - (void).cxx_destruct;
 - (struct _PCSIdentityData { }*)_copyShareProtectionFromRecord:(id)arg1 error:(id*)arg2;

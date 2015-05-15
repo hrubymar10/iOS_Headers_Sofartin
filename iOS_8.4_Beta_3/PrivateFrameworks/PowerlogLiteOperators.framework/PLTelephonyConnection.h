@@ -9,8 +9,8 @@
     struct __CFRunLoopSource { } *ctServerSource;
 }
 
-@property(assign,readonly) struct __CTServerConnection { }* connection;
-@property(assign,retain) PLAgent * observerAgent;
+@property (nonatomic, readonly) struct __CTServerConnection { }*connection;
+@property (retain) PLAgent *observerAgent;
 
 + (id)sharedTelephonyConnection;
 

@@ -9,9 +9,9 @@
     id _reserved;
 }
 
-@property(assign,readonly) SCNGeometry * geometry;
-@property(assign,readonly) double screenSpaceRadius;
-@property(assign,readonly) double worldSpaceDistance;
+@property (readonly) SCNGeometry *geometry;
+@property (readonly) double screenSpaceRadius;
+@property (readonly) double worldSpaceDistance;
 
 + (id)SCNJSExportProtocol;
 + (id)levelOfDetailWithGeometry:(id)arg1 screenSpaceRadius:(double)arg2;

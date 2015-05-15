@@ -9,10 +9,10 @@
     NSArray *_uuidsOfRemovedHomes;
 }
 
-@property(assign,copy) NSArray * accessories;
-@property(assign,copy) NSArray * homes;
-@property(assign,copy) NSUUID * primaryHomeUUID;
-@property(assign,copy) NSArray * uuidsOfRemovedHomes;
+@property (nonatomic, readonly, copy) NSArray *accessories;
+@property (nonatomic, readonly, copy) NSArray *homes;
+@property (nonatomic, readonly, copy) NSUUID *primaryHomeUUID;
+@property (nonatomic, readonly, copy) NSArray *uuidsOfRemovedHomes;
 
 - (void).cxx_destruct;
 - (id)accessories;

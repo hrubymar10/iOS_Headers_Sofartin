@@ -14,13 +14,13 @@
     BSZeroingWeakReference *_zeroingWeakProcess;
 }
 
-@property(assign,retain) BSAuditToken * auditToken;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <FBWorkspaceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) FBProcess * process;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, retain) BSAuditToken *auditToken;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <FBWorkspaceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) FBProcess *process;
+@property (readonly) Class superclass;
 
 - (id)_newSceneWithHost:(id)arg1 initialClientSettings:(id)arg2;
 - (id)_newWorkspaceServer;

@@ -15,17 +15,17 @@
     bool _triedCreatingAlternatePartConsumer;
 }
 
-@property(assign,retain) <MFCollectingDataConsumer> * alternatePartConsumer;
-@property(assign,retain) NSMutableData * bodyData;
-@property(assign,retain) <MFMessageDataConsumerFactory> * consumerFactory;
-@property(assign,retain) <MFCollectingDataConsumer> * dataConsumer;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) DAMailMessage * message;
-@property(assign,readwrite) int requestedFormat;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) double timeOfLastActivity;
+@property (nonatomic, retain) <MFCollectingDataConsumer> *alternatePartConsumer;
+@property (nonatomic, readonly, retain) NSMutableData *bodyData;
+@property (nonatomic, retain) <MFMessageDataConsumerFactory> *consumerFactory;
+@property (nonatomic, retain) <MFCollectingDataConsumer> *dataConsumer;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) DAMailMessage *message;
+@property (nonatomic) int requestedFormat;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) double timeOfLastActivity;
 
 - (id)alternatePartConsumer;
 - (id)bodyData;

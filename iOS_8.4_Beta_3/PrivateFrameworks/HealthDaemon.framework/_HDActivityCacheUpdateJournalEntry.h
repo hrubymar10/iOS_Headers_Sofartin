@@ -6,7 +6,7 @@
     HKActivityCache *_activityCache;
 }
 
-@property(assign,readonly) HKActivityCache * activityCache;
+@property (nonatomic, readonly) HKActivityCache *activityCache;
 
 + (void)applyEntries:(id)arg1 withDaemon:(id)arg2;
 + (long long)behavior;

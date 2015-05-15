@@ -9,7 +9,7 @@
     MLMediaLibraryService *_mediaLibraryService;
 }
 
-@property(assign,readwrite) <ML3DatabaseDistantConnectionDelegate> * distantDelegate;
+@property (nonatomic) <ML3DatabaseDistantConnectionDelegate> *distantDelegate;
 
 - (void).cxx_destruct;
 - (bool)_internalBeginTransactionWithBehaviorType:(unsigned long long)arg1;

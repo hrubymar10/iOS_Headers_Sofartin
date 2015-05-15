@@ -6,15 +6,15 @@
     NSMutableArray *_artworks;
 }
 
-@property(getter=_lookupArray,assign,readonly) NSArray * _lookupArray;
-@property(assign,copy) NSArray * artworks;
-@property(assign,readonly) NSMutableDictionary * cacheRepresentation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIArtwork * largestArtwork;
-@property(assign,readonly) SKUIArtwork * smallestArtwork;
-@property(assign,readonly) Class superclass;
+@property (getter=_lookupArray, nonatomic, readonly) NSArray *_lookupArray;
+@property (nonatomic, copy) NSArray *artworks;
+@property (nonatomic, readonly) NSMutableDictionary *cacheRepresentation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIArtwork *largestArtwork;
+@property (nonatomic, readonly) SKUIArtwork *smallestArtwork;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_lookupArray;

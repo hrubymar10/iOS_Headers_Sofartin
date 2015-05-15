@@ -9,10 +9,10 @@
     unsigned long long _size;
 }
 
-@property(assign,readwrite) unsigned int CRC;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) unsigned long long offset;
-@property(assign,readwrite) unsigned long long size;
+@property (nonatomic) unsigned int CRC;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) unsigned long long offset;
+@property (nonatomic) unsigned long long size;
 
 - (void).cxx_destruct;
 - (unsigned int)CRC;

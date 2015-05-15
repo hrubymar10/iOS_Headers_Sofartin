@@ -6,15 +6,15 @@
     NSSet *mInfos;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long infoCount;
-@property(assign,readonly) NSSet * infos;
-@property(assign,readonly) bool isEmpty;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long unlockedInfoCount;
-@property(assign,readonly) NSSet * unlockedInfos;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long infoCount;
+@property (nonatomic, readonly) NSSet *infos;
+@property (nonatomic, readonly) bool isEmpty;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long unlockedInfoCount;
+@property (nonatomic, readonly) NSSet *unlockedInfos;
 
 + (Class)archivedSelectionClass;
 + (id)emptySelection;

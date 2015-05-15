@@ -10,21 +10,21 @@
     NSMutableArray *_childrenOrder;
 }
 
-@property(assign,readonly) NSDictionary * appleAttributes;
-@property(assign,retain) NSString * bulkParsedCTag;
-@property(assign,retain) NSString * bulkParsedPTag;
-@property(assign,retain) CoreDAVErrorItem * bulkUploadErrorItem;
-@property(assign,readonly) NSArray * childrenOrder;
-@property(assign,readonly) NSData * dataPayload;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isBookmarkBarFolder;
-@property(assign,readwrite) bool isBookmarkFolder;
-@property(assign,readwrite) bool isBookmarkMenuFolder;
-@property(assign,retain) NSURL * serverID;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * syncKey;
+@property (nonatomic, readonly) NSDictionary *appleAttributes;
+@property (nonatomic, retain) NSString *bulkParsedCTag;
+@property (nonatomic, retain) NSString *bulkParsedPTag;
+@property (nonatomic, retain) CoreDAVErrorItem *bulkUploadErrorItem;
+@property (nonatomic, readonly) NSArray *childrenOrder;
+@property (nonatomic, readonly) NSData *dataPayload;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isBookmarkBarFolder;
+@property (nonatomic) bool isBookmarkFolder;
+@property (nonatomic) bool isBookmarkMenuFolder;
+@property (nonatomic, retain) NSURL *serverID;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *syncKey;
 
 + (id)copyPropertyMappingsForParser;
 

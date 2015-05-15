@@ -14,12 +14,12 @@
     int _travelMethod;
 }
 
-@property(assign,readwrite) EKTravelAgendaItem * agendaItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) int travelMethod;
+@property (nonatomic) EKTravelAgendaItem *agendaItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) int travelMethod;
 
 - (void)_getAutomobilePredictionFrom:(id)arg1 handler:(id)arg2;
 - (void)_getOneshotPredictionFrom:(id)arg1 transportType:(int)arg2 handler:(id)arg3;

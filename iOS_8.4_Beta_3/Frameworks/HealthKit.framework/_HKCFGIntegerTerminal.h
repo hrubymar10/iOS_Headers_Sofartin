@@ -6,7 +6,7 @@
     id _condition;
 }
 
-@property(assign,copy) id condition;
+@property (nonatomic, copy) id condition;
 
 - (void).cxx_destruct;
 - (id)_label;

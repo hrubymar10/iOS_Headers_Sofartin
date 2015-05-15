@@ -21,8 +21,8 @@
     CALayer *mTapToReplaceLayer;
 }
 
-@property(assign,readonly) TSDMediaInfo * mediaInfo;
-@property(assign,readonly) TSDMediaLayout * mediaLayout;
+@property (nonatomic, readonly) TSDMediaInfo *mediaInfo;
+@property (nonatomic, readonly) TSDMediaLayout *mediaLayout;
 
 - (void)dealloc;
 - (bool)i_shouldRenderStroke:(id)arg1;

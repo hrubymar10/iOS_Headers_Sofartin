@@ -9,12 +9,12 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,readonly) long long containerClass;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSDictionary * info;
-@property(getter=isTemporary,assign,readonly) bool temporary;
-@property(assign,readonly) NSURL * url;
-@property(assign,readonly) NSUUID * uuid;
+@property (nonatomic, readonly) long long containerClass;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) NSDictionary *info;
+@property (getter=isTemporary, nonatomic, readonly) bool temporary;
+@property (nonatomic, readonly) NSURL *url;
+@property (nonatomic, readonly) NSUUID *uuid;
 
 + (id)containerWithIdentifier:(id)arg1 createIfNecessary:(bool)arg2 existed:(bool*)arg3 error:(id*)arg4;
 + (id)containerWithIdentifier:(id)arg1 error:(id*)arg2;

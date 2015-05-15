@@ -9,10 +9,10 @@
     long long __style;
 }
 
-@property(setter=_setAdditionalPhotoStreamAssets:,assign,retain) NSArray * _additionalPhotoStreamAssets;
-@property(setter=_setAssets:,assign,retain) NSArray * _assets;
-@property(setter=_setClientName:,assign,retain) NSString * _clientName;
-@property(setter=_setStyle:,assign,readwrite) long long _style;
+@property (setter=_setAdditionalPhotoStreamAssets:, nonatomic, retain) NSArray *_additionalPhotoStreamAssets;
+@property (setter=_setAssets:, nonatomic, retain) NSArray *_assets;
+@property (setter=_setClientName:, nonatomic, retain) NSString *_clientName;
+@property (setter=_setStyle:, nonatomic) long long _style;
 
 + (void)_getWarningTitle:(id*)arg1 message:(id*)arg2 buttonTitle:(id*)arg3 forItemSuffix:(id)arg4 count:(unsigned long long)arg5 operation:(long long)arg6 clientName:(id)arg7;
 + (id)_usedElsewhereWarningTextForAssetCount:(long long)arg1 inPhotoStreamCount:(long long)arg2 iniPhotoCount:(long long)arg3 inSomeAlbumCount:(long long)arg4 affectedLocalAlbumsCount:(long long)arg5 itemKindSuffix:(id)arg6 actualDeletionCount:(long long)arg7;

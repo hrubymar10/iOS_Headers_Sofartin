@@ -8,11 +8,11 @@
     NSMutableArray *_sortedBys;
 }
 
-@property(assign,retain) CKDPUserAlias * alias;
-@property(assign,readonly) bool hasAlias;
-@property(assign,readonly) bool hasPcsServiceType;
-@property(assign,retain) NSString * pcsServiceType;
-@property(assign,retain) NSMutableArray * sortedBys;
+@property (nonatomic, retain) CKDPUserAlias *alias;
+@property (nonatomic, readonly) bool hasAlias;
+@property (nonatomic, readonly) bool hasPcsServiceType;
+@property (nonatomic, retain) NSString *pcsServiceType;
+@property (nonatomic, retain) NSMutableArray *sortedBys;
 
 + (id)options;
 

@@ -9,9 +9,9 @@
     bool _showAttachments;
 }
 
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,retain) EKEvent * event;
-@property(assign,readwrite) bool showAttachments;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic, retain) EKEvent *event;
+@property (nonatomic) bool showAttachments;
 
 - (void).cxx_destruct;
 - (id)_calendarItemIndexSet;

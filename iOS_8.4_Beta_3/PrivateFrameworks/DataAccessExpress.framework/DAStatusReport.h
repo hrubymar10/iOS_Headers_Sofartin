@@ -21,22 +21,22 @@
     NSNumber *_uploadedElements;
 }
 
-@property(assign,retain) NSString * accountType;
-@property(assign,retain) NSNumber * averageHBI;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSNumber * downloadedElements;
-@property(assign,retain) NSNumber * failedNetworkRequests;
-@property(assign,retain) NSNumber * failedProtocolRequests;
-@property(assign,retain) NSNumber * falseMoreAvailableCount;
-@property(assign,readwrite) int numHBIDataPoints;
-@property(assign,retain) NSString * persistentUUID;
-@property(assign,retain) NSString * protocolVersion;
-@property(assign,retain) NSNumber * successfulRequests;
-@property(assign,readwrite) bool syncingAllowed;
-@property(assign,retain) NSNumber * timeInNetworking;
-@property(assign,retain) NSNumber * timeSpan;
-@property(assign,retain) NSNumber * uploadedElements;
+@property (nonatomic, retain) NSString *accountType;
+@property (nonatomic, retain) NSNumber *averageHBI;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSNumber *downloadedElements;
+@property (nonatomic, retain) NSNumber *failedNetworkRequests;
+@property (nonatomic, retain) NSNumber *failedProtocolRequests;
+@property (nonatomic, retain) NSNumber *falseMoreAvailableCount;
+@property (nonatomic) int numHBIDataPoints;
+@property (nonatomic, retain) NSString *persistentUUID;
+@property (nonatomic, retain) NSString *protocolVersion;
+@property (nonatomic, retain) NSNumber *successfulRequests;
+@property (nonatomic) bool syncingAllowed;
+@property (nonatomic, retain) NSNumber *timeInNetworking;
+@property (nonatomic, retain) NSNumber *timeSpan;
+@property (nonatomic, retain) NSNumber *uploadedElements;
 
 - (void).cxx_destruct;
 - (id)accountType;

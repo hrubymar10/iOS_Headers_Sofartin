@@ -23,25 +23,25 @@
     unsigned char _version;
 }
 
-@property(assign,retain) NSString * bundleID;
-@property(assign,retain) NSString * deviceID;
-@property(assign,retain) NSString * inviteID;
-@property(assign,readonly) bool isNearby;
-@property(assign,retain) NSDictionary * localizableMessage;
-@property(assign,readwrite) unsigned long long matchType;
-@property(assign,retain) NSString * message;
-@property(assign,retain) NSString * participantID;
-@property(assign,retain) NSData * peerBlob;
-@property(assign,retain) NSString * peerID;
-@property(assign,retain) NSData * peerNATIP;
-@property(assign,readwrite) int peerNATType;
-@property(assign,retain) NSData * peerPushToken;
-@property(assign,retain) GKPlayerInternal * player;
-@property(assign,readwrite) unsigned int playerAttributes;
-@property(assign,readwrite) int playerGroup;
-@property(assign,retain) NSString * rid;
-@property(assign,retain) NSData * sessionToken;
-@property(assign,readwrite) unsigned char version;
+@property (nonatomic, retain) NSString *bundleID;
+@property (nonatomic, retain) NSString *deviceID;
+@property (nonatomic, retain) NSString *inviteID;
+@property (nonatomic, readonly) bool isNearby;
+@property (nonatomic, retain) NSDictionary *localizableMessage;
+@property (nonatomic) unsigned long long matchType;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic, retain) NSString *participantID;
+@property (nonatomic, retain) NSData *peerBlob;
+@property (nonatomic, retain) NSString *peerID;
+@property (nonatomic, retain) NSData *peerNATIP;
+@property (nonatomic) int peerNATType;
+@property (nonatomic, retain) NSData *peerPushToken;
+@property (nonatomic, retain) GKPlayerInternal *player;
+@property (nonatomic) unsigned int playerAttributes;
+@property (nonatomic) int playerGroup;
+@property (nonatomic, retain) NSString *rid;
+@property (nonatomic, retain) NSData *sessionToken;
+@property (nonatomic) unsigned char version;
 
 + (id)inviteFromNearbyPlayer:(id)arg1 participantID:(id)arg2 deviceID:(id)arg3 bundleID:(id)arg4 connectionData:(id)arg5;
 + (id)inviteWithBulletin:(id)arg1;

@@ -16,18 +16,18 @@
     } _thumbnailSize;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) int imageFormat;
-@property(assign,readonly) int imageHeight;
-@property(assign,readonly) int imageLength;
-@property(assign,readonly) int imageRowBytes;
-@property(assign,readonly) struct CGSize { double x1; double x2; } imageSize;
-@property(assign,readonly) int imageWidth;
-@property(assign,readonly) bool isReadOnly;
-@property(assign,readonly) NSString * path;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) int imageFormat;
+@property (nonatomic, readonly) int imageHeight;
+@property (nonatomic, readonly) int imageLength;
+@property (nonatomic, readonly) int imageRowBytes;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic, readonly) int imageWidth;
+@property (nonatomic, readonly) bool isReadOnly;
+@property (nonatomic, readonly) NSString *path;
+@property (readonly) Class superclass;
 
 + (bool)_deviceShouldUseLowPerformancePixelFormat;
 + (id)baseSessionOptions;

@@ -12,11 +12,11 @@
     CLIntersiloInterface *_proxiedInterface;
 }
 
-@property(assign,readonly) <CLIntersiloProxyDelegateProtocol> * delegate;
-@property(assign,copy) CLIntersiloInterface * delegateInterface;
-@property(assign,readonly) CLSilo * delegateSilo;
-@property(assign,copy) CLIntersiloInterface * proxiedInterface;
-@property(assign,readwrite) bool valid;
+@property (nonatomic, readonly) <CLIntersiloProxyDelegateProtocol> *delegate;
+@property (nonatomic, readonly, copy) CLIntersiloInterface *delegateInterface;
+@property (nonatomic, readonly) CLSilo *delegateSilo;
+@property (nonatomic, readonly, copy) CLIntersiloInterface *proxiedInterface;
+@property (nonatomic) bool valid;
 
 + (void)becameFatallyBlocked:(id)arg1;
 + (id)getSilo;

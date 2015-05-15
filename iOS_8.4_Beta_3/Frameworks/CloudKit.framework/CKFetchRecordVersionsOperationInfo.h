@@ -8,9 +8,9 @@
     NSArray *_recordIDs;
 }
 
-@property(assign,retain) NSArray * desiredKeys;
-@property(assign,retain) NSString * minimumVersionETag;
-@property(assign,retain) NSArray * recordIDs;
+@property (nonatomic, retain) NSArray *desiredKeys;
+@property (nonatomic, retain) NSString *minimumVersionETag;
+@property (nonatomic, retain) NSArray *recordIDs;
 
 + (bool)supportsSecureCoding;
 

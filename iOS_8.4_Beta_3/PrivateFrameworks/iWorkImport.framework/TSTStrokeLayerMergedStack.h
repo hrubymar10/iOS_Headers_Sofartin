@@ -15,16 +15,16 @@
     TSTMutableStrokeLayer *_spillMinorStrokeLayer;
 }
 
-@property(assign,retain) TSTMutableStrokeLayer * clearedMajorStrokeLayer;
-@property(assign,retain) TSTMutableStrokeLayer * clearedMinorStrokeLayer;
-@property(assign,retain) TSTStrokeOrderedLayer * customOrderedStrokeLayer;
-@property(assign,retain) TSTStrokeLayer * customUnorderedStrokeLayer;
-@property(assign,retain) TSTStrokeLayer * defaultMajorStrokeLayer;
-@property(assign,retain) TSTStrokeLayer * defaultMinorStrokeLayer;
-@property(assign,retain) TSTStrokeOrderedLayer * dynamicOrderedStrokeLayer;
-@property(assign,retain) TSTMutableStrokeLayer * dynamicUnorderedStrokeLayer;
-@property(assign,retain) TSTMutableStrokeLayer * spillMajorStrokeLayer;
-@property(assign,retain) TSTMutableStrokeLayer * spillMinorStrokeLayer;
+@property (nonatomic, retain) TSTMutableStrokeLayer *clearedMajorStrokeLayer;
+@property (nonatomic, retain) TSTMutableStrokeLayer *clearedMinorStrokeLayer;
+@property (nonatomic, retain) TSTStrokeOrderedLayer *customOrderedStrokeLayer;
+@property (nonatomic, retain) TSTStrokeLayer *customUnorderedStrokeLayer;
+@property (nonatomic, retain) TSTStrokeLayer *defaultMajorStrokeLayer;
+@property (nonatomic, retain) TSTStrokeLayer *defaultMinorStrokeLayer;
+@property (nonatomic, retain) TSTStrokeOrderedLayer *dynamicOrderedStrokeLayer;
+@property (nonatomic, retain) TSTMutableStrokeLayer *dynamicUnorderedStrokeLayer;
+@property (nonatomic, retain) TSTMutableStrokeLayer *spillMajorStrokeLayer;
+@property (nonatomic, retain) TSTMutableStrokeLayer *spillMinorStrokeLayer;
 
 + (double)maxWidthForLeftStrokes:(id)arg1 mergedWithRightStrokes:(id)arg2 atRowIndex:(long long)arg3;
 + (double)maxWidthForLeftStrokes:(id)arg1 mergedWithRightStrokes:(id)arg2 inRange:(struct TSTSimpleRange { long long x1; unsigned long long x2; })arg3 cachedMax:(double)arg4;

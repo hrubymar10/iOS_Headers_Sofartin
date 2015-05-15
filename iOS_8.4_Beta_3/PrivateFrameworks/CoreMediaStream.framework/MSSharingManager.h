@@ -19,14 +19,14 @@
     int _state;
 }
 
-@property(assign,readwrite) MSMediaStreamDaemon * daemon;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MSSharingManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * personID;
-@property(assign,retain) NSArray * shares;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) MSMediaStreamDaemon *daemon;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MSSharingManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *personID;
+@property (nonatomic, retain) NSArray *shares;
+@property (readonly) Class superclass;
 
 + (id)_clearInstantiatedSharingManagersByPersonID;
 + (void)abortAllActivities;

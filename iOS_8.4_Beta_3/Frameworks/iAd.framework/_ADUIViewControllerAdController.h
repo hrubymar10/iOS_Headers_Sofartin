@@ -18,24 +18,24 @@
     bool _presentingFullScreenAd;
 }
 
-@property(assign,copy) NSString * bannerAdSection;
-@property(assign,copy) NSString * bannerAuthUserName;
-@property(assign,copy) NSURL * bannerServerURL;
-@property(assign,retain) ADBannerView * bannerView;
-@property(assign,readwrite) bool canDisplayBannerAds;
-@property(assign,readwrite) bool canOwnSharedBanner;
-@property(assign,readonly) UIViewController * contentViewController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isDisplayingBannerAd,assign,readonly) bool displayingBannerAd;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) ADInterstitialAd * interstitialAd;
-@property(assign,copy) NSString * interstitialAdSection;
-@property(assign,copy) NSString * interstitialAuthUserName;
-@property(assign,readwrite) long long interstitialPresentationPolicy;
-@property(assign,copy) NSURL * interstitialServerURL;
-@property(getter=isPresentingFullScreenAd,assign,readwrite) bool presentingFullScreenAd;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *bannerAdSection;
+@property (nonatomic, copy) NSString *bannerAuthUserName;
+@property (nonatomic, copy) NSURL *bannerServerURL;
+@property (nonatomic, retain) ADBannerView *bannerView;
+@property (nonatomic) bool canDisplayBannerAds;
+@property (nonatomic) bool canOwnSharedBanner;
+@property (nonatomic, readonly) UIViewController *contentViewController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isDisplayingBannerAd, nonatomic, readonly) bool displayingBannerAd;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) ADInterstitialAd *interstitialAd;
+@property (nonatomic, copy) NSString *interstitialAdSection;
+@property (nonatomic, copy) NSString *interstitialAuthUserName;
+@property (nonatomic) long long interstitialPresentationPolicy;
+@property (nonatomic, copy) NSURL *interstitialServerURL;
+@property (getter=isPresentingFullScreenAd, nonatomic) bool presentingFullScreenAd;
+@property (readonly) Class superclass;
 
 + (id)_sharedBannerView;
 + (void)prepareInterstitialAds;

@@ -10,17 +10,17 @@
     NSTimer *_reliabilityAttemptTimer;
 }
 
-@property(assign,readonly) bool allowAnyNetwork;
-@property(assign,readonly) bool dataActiveAndReachable;
-@property(assign,readwrite) bool enableCriticalReliability;
-@property(assign,readonly) bool networkActive;
-@property(assign,readonly) bool networkEnabled;
-@property(assign,readonly) bool networkReachable;
-@property(assign,readonly) bool validNetworkActive;
-@property(assign,readonly) bool validNetworkEnabled;
-@property(assign,readonly) bool validNetworkReachable;
-@property(assign,readonly) bool wiFiActiveAndReachable;
-@property(assign,readonly) bool willSearchForNetwork;
+@property (nonatomic, readonly) bool allowAnyNetwork;
+@property (nonatomic, readonly) bool dataActiveAndReachable;
+@property (nonatomic) bool enableCriticalReliability;
+@property (nonatomic, readonly) bool networkActive;
+@property (nonatomic, readonly) bool networkEnabled;
+@property (nonatomic, readonly) bool networkReachable;
+@property (nonatomic, readonly) bool validNetworkActive;
+@property (nonatomic, readonly) bool validNetworkEnabled;
+@property (nonatomic, readonly) bool validNetworkReachable;
+@property (nonatomic, readonly) bool wiFiActiveAndReachable;
+@property (nonatomic, readonly) bool willSearchForNetwork;
 
 + (id)sharedInstance;
 

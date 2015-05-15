@@ -7,8 +7,8 @@
     id _updateBlock;
 }
 
-@property(assign,copy) id completionBlock;
-@property(assign,copy) id progressUpdateBlock;
+@property (copy) id completionBlock;
+@property (copy) id progressUpdateBlock;
 
 - (id)completionBlock;
 - (void)dealloc;

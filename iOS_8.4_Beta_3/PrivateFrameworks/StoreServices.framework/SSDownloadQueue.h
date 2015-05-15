@@ -8,17 +8,17 @@
     struct __CFSet { } *_observers;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSSet * downloadKinds;
-@property(assign,readonly) SSDownloadManager * downloadManager;
-@property(assign,readonly) NSArray * downloads;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * placeholderDownloads;
-@property(assign,readonly) NSArray * preorders;
-@property(assign,readwrite) bool shouldAutomaticallyFinishDownloads;
-@property(assign,readonly) Class superclass;
-@property(getter=isUsingNetwork,assign,readonly) bool usingNetwork;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSSet *downloadKinds;
+@property (readonly) SSDownloadManager *downloadManager;
+@property (nonatomic, readonly) NSArray *downloads;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *placeholderDownloads;
+@property (nonatomic, readonly) NSArray *preorders;
+@property (nonatomic) bool shouldAutomaticallyFinishDownloads;
+@property (readonly) Class superclass;
+@property (getter=isUsingNetwork, readonly) bool usingNetwork;
 
 + (id)mediaDownloadKinds;
 + (id)softwareApplicationDownloadKinds;

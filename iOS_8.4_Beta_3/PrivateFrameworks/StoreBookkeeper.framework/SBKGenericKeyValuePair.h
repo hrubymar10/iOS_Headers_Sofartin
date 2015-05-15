@@ -7,12 +7,12 @@
     NSData *_kvsPayload;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * kvsKey;
-@property(assign,readonly) NSData * kvsPayload;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *kvsKey;
+@property (nonatomic, readonly) NSData *kvsPayload;
+@property (readonly) Class superclass;
 
 + (id)pairWithKVSKey:(id)arg1 kvsPayload:(id)arg2;
 

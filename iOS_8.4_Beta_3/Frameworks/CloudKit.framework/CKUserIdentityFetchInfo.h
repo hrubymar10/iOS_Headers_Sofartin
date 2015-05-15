@@ -7,8 +7,8 @@
     CKRecordID *_recordID;
 }
 
-@property(assign,copy) NSString * emailAddress;
-@property(assign,copy) CKRecordID * recordID;
+@property (nonatomic, copy) NSString *emailAddress;
+@property (nonatomic, copy) CKRecordID *recordID;
 
 + (bool)supportsSecureCoding;
 

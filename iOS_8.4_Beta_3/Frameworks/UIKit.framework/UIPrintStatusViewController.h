@@ -7,7 +7,7 @@
     <UIPrintStatusDelegate> *_printStatusDelegate;
 }
 
-@property(assign,readwrite) <UIPrintStatusDelegate> * printStatusDelegate;
+@property (nonatomic) <UIPrintStatusDelegate> *printStatusDelegate;
 
 - (void)dealloc;
 - (void)dismissAnimated:(bool)arg1;

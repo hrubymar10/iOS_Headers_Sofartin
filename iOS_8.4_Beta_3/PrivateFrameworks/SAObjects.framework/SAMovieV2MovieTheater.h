@@ -4,8 +4,8 @@
 
 @interface SAMovieV2MovieTheater : SADomainObject
 
-@property(assign,retain) SALocalSearchBusiness2 * business;
-@property(assign,copy) NSArray * movies;
+@property (nonatomic, retain) SALocalSearchBusiness2 *business;
+@property (nonatomic, copy) NSArray *movies;
 
 + (id)movieTheater;
 + (id)movieTheaterWithDictionary:(id)arg1 context:(id)arg2;

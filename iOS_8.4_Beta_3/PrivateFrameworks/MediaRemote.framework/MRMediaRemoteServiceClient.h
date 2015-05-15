@@ -19,19 +19,19 @@
     struct MRMediaRemoteService { } *_service;
 }
 
-@property(assign,retain) NSArray * externalScreenTypeNotificationObservers;
-@property(assign,retain) NSArray * nowPlayingNotificationObservers;
-@property(assign,retain) NSArray * originNotificationObservers;
-@property(assign,readwrite) bool receivesExternalScreenTypeChangedNotifications;
-@property(assign,readwrite) bool receivesOriginChangedNotifications;
-@property(assign,readwrite) bool receivesPlaybackErrorNotifications;
-@property(assign,readwrite) bool receivesRoutesChangedNotifications;
-@property(assign,readwrite) bool receivesSupportedCommandsNotifications;
-@property(getter=isRegisteredForNowPlayingNotifications,assign,readonly) bool registeredForNowPlayingNotifications;
-@property(assign,readonly) NSArray * registeredOrigins;
-@property(assign,retain) NSArray * routingNotificationObservers;
-@property(assign,readonly) struct MRMediaRemoteService { }* service;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * serviceQueue;
+@property (nonatomic, retain) NSArray *externalScreenTypeNotificationObservers;
+@property (nonatomic, retain) NSArray *nowPlayingNotificationObservers;
+@property (nonatomic, retain) NSArray *originNotificationObservers;
+@property (nonatomic) bool receivesExternalScreenTypeChangedNotifications;
+@property (nonatomic) bool receivesOriginChangedNotifications;
+@property (nonatomic) bool receivesPlaybackErrorNotifications;
+@property (nonatomic) bool receivesRoutesChangedNotifications;
+@property (nonatomic) bool receivesSupportedCommandsNotifications;
+@property (getter=isRegisteredForNowPlayingNotifications, nonatomic, readonly) bool registeredForNowPlayingNotifications;
+@property (nonatomic, readonly) NSArray *registeredOrigins;
+@property (nonatomic, retain) NSArray *routingNotificationObservers;
+@property (nonatomic, readonly) struct MRMediaRemoteService { }*service;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *serviceQueue;
 
 + (id)sharedServiceClient;
 

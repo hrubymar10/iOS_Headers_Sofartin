@@ -7,9 +7,9 @@
     NSMutableArray *_likes;
 }
 
-@property(assign,readonly) bool hasLikeInfo;
-@property(assign,retain) CKDPLikeInfo * likeInfo;
-@property(assign,retain) NSMutableArray * likes;
+@property (nonatomic, readonly) bool hasLikeInfo;
+@property (nonatomic, retain) CKDPLikeInfo *likeInfo;
+@property (nonatomic, retain) NSMutableArray *likes;
 
 - (void).cxx_destruct;
 - (void)addLike:(id)arg1;

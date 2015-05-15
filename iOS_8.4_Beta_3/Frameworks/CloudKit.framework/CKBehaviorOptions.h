@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_cachedPrefsQueue;
 }
 
-@property(assign,retain) NSMutableDictionary * cachedPrefs;
-@property(assign,retain) NSObject<OS_dispatch_queue> * cachedPrefsQueue;
+@property (nonatomic, retain) NSMutableDictionary *cachedPrefs;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *cachedPrefsQueue;
 
 + (id)sharedOptions;
 

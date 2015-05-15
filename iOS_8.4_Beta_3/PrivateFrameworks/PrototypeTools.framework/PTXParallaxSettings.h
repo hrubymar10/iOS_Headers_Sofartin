@@ -25,26 +25,26 @@
     double _tiltIncreaseY;
 }
 
-@property(assign,readwrite) bool alphaEnabled;
-@property(assign,readwrite) long long distanceFromScreen;
-@property(assign,readwrite) bool increaseEnabled;
-@property(assign,readwrite) double maxAlpha;
-@property(assign,readwrite) double minAlpha;
-@property(assign,readwrite) double perspectiveTransform;
-@property(assign,readwrite) long long slideDirectionX;
-@property(assign,readwrite) long long slideDirectionY;
-@property(assign,readwrite) bool slideEnabled;
-@property(assign,readwrite) double slideIncreaseX;
-@property(assign,readwrite) double slideIncreaseY;
-@property(assign,readwrite) double slidePixelsX;
-@property(assign,readwrite) double slidePixelsY;
-@property(assign,readwrite) double tiltDegreesX;
-@property(assign,readwrite) double tiltDegreesY;
-@property(assign,readwrite) long long tiltDirectionX;
-@property(assign,readwrite) long long tiltDirectionY;
-@property(assign,readwrite) bool tiltEnabled;
-@property(assign,readwrite) double tiltIncreaseX;
-@property(assign,readwrite) double tiltIncreaseY;
+@property bool alphaEnabled;
+@property long long distanceFromScreen;
+@property bool increaseEnabled;
+@property double maxAlpha;
+@property double minAlpha;
+@property double perspectiveTransform;
+@property long long slideDirectionX;
+@property long long slideDirectionY;
+@property bool slideEnabled;
+@property double slideIncreaseX;
+@property double slideIncreaseY;
+@property double slidePixelsX;
+@property double slidePixelsY;
+@property double tiltDegreesX;
+@property double tiltDegreesY;
+@property long long tiltDirectionX;
+@property long long tiltDirectionY;
+@property bool tiltEnabled;
+@property double tiltIncreaseX;
+@property double tiltIncreaseY;
 
 + (id)settingsControllerModule;
 

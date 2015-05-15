@@ -19,7 +19,7 @@
     double _thinBorderWidth;
 }
 
-@property(assign,retain) UIImage * posterImage;
+@property (nonatomic, retain) UIImage *posterImage;
 
 + (Class)layerClass;
 

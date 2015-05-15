@@ -17,16 +17,16 @@
     int _staticEntityType;
 }
 
-@property(assign,readwrite) int entityOrder;
-@property(assign,retain) NSMutableArray * filterPredicates;
-@property(assign,readwrite) bool filteringDisabled;
-@property(assign,readwrite) int groupingType;
-@property(assign,readwrite) bool hasEntityOrder;
-@property(assign,readwrite) bool hasFilteringDisabled;
-@property(assign,readwrite) bool hasGroupingType;
-@property(assign,readwrite) bool hasStaticEntityType;
-@property(assign,retain) NSMutableArray * staticEntityIdentifiers;
-@property(assign,readwrite) int staticEntityType;
+@property (nonatomic) int entityOrder;
+@property (nonatomic, retain) NSMutableArray *filterPredicates;
+@property (nonatomic) bool filteringDisabled;
+@property (nonatomic) int groupingType;
+@property (nonatomic) bool hasEntityOrder;
+@property (nonatomic) bool hasFilteringDisabled;
+@property (nonatomic) bool hasGroupingType;
+@property (nonatomic) bool hasStaticEntityType;
+@property (nonatomic, retain) NSMutableArray *staticEntityIdentifiers;
+@property (nonatomic) int staticEntityType;
 
 - (void).cxx_destruct;
 - (void)addFilterPredicates:(id)arg1;

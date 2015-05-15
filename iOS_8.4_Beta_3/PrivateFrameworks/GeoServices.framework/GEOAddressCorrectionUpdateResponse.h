@@ -9,8 +9,8 @@
     unsigned int _retryScheduleInDays;
 }
 
-@property(assign,readwrite) bool hasRetryScheduleInDays;
-@property(assign,readwrite) unsigned int retryScheduleInDays;
+@property (nonatomic) bool hasRetryScheduleInDays;
+@property (nonatomic) unsigned int retryScheduleInDays;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

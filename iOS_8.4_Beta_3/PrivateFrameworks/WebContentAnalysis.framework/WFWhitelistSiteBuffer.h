@@ -8,9 +8,9 @@
     NSMutableSet *siteSet;
 }
 
-@property(assign,readwrite) unsigned long long maxSize;
-@property(assign,retain) NSMutableArray * siteBuffer;
-@property(assign,retain) NSMutableSet * siteSet;
+@property unsigned long long maxSize;
+@property (retain) NSMutableArray *siteBuffer;
+@property (retain) NSMutableSet *siteSet;
 
 - (void)addURLString:(id)arg1;
 - (bool)containsMetasitePrefixOfURLString:(id)arg1;

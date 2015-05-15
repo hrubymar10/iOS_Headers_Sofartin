@@ -12,14 +12,14 @@
     float _textureScale;
 }
 
-@property(assign,readwrite) double contentScale;
-@property(assign,readonly) VKMapTileList * fragments;
-@property(assign,readwrite) float maximumStyleZ;
-@property(assign,retain) GEOVectorTile * modelTile;
-@property(assign,retain) VKSharedResources * sharedResources;
-@property(assign,retain) VKStyleManager * styleManager;
-@property(assign,readwrite) float textureScale;
-@property(assign,readonly) long long vectorType;
+@property (nonatomic) double contentScale;
+@property (nonatomic, readonly) VKMapTileList *fragments;
+@property (nonatomic) float maximumStyleZ;
+@property (nonatomic, retain) GEOVectorTile *modelTile;
+@property (nonatomic, retain) VKSharedResources *sharedResources;
+@property (nonatomic, retain) VKStyleManager *styleManager;
+@property (nonatomic) float textureScale;
+@property (nonatomic, readonly) long long vectorType;
 
 - (double)contentScale;
 - (void)dealloc;

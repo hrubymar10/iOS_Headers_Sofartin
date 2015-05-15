@@ -6,12 +6,12 @@
     AVAssetReaderInternal *_priv;
 }
 
-@property(assign,retain) AVAsset * asset;
-@property(assign,readonly) NSError * error;
-@property(getter=_figAssetReader,assign,readonly) struct OpaqueFigAssetReader { }* figAssetReader;
-@property(assign,readonly) NSArray * outputs;
-@property(assign,readonly) long long status;
-@property(assign,readwrite) struct { struct { long long x_1_1_1; int x_1_1_2; unsigned int x_1_1_3; long long x_1_1_4; } x1; struct { long long x_2_1_1; int x_2_1_2; unsigned int x_2_1_3; long long x_2_1_4; } x2; } timeRange;
+@property (nonatomic, readonly, retain) AVAsset *asset;
+@property (readonly) NSError *error;
+@property (getter=_figAssetReader, nonatomic, readonly) struct OpaqueFigAssetReader { }*figAssetReader;
+@property (nonatomic, readonly) NSArray *outputs;
+@property (readonly) long long status;
+@property (nonatomic) struct { struct { long long x_1_1_1; int x_1_1_2; unsigned int x_1_1_3; long long x_1_1_4; } x1; struct { long long x_2_1_1; int x_2_1_2; unsigned int x_2_1_3; long long x_2_1_4; } x2; } timeRange;
 
 + (id)_errorForOSStatus:(int)arg1;
 + (id)assetReaderWithAsset:(id)arg1 error:(id*)arg2;

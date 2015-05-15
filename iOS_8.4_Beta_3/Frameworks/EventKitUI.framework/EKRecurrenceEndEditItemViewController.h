@@ -15,12 +15,12 @@
     unsigned int _updatingPicker;
 }
 
-@property(assign,copy) NSDate * bestInitialDate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSDate * repeatEndDate;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSDate *bestInitialDate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSDate *repeatEndDate;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_cellForRow:(long long)arg1;

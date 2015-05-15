@@ -17,17 +17,17 @@
     _MKUserTrackingButton *_userTrackingButton;
 }
 
-@property(assign,retain) UIView * _associatedView;
-@property(assign,retain) UINavigationBar * _navigationBar;
-@property(setter=_setState:,assign,readwrite) long long _state;
-@property(assign,retain) UIToolbar * _toolbar;
-@property(setter=_setUserTrackingView:,assign,retain) <MKUserTrackingView> * _userTrackingView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MKMapView * mapView;
-@property(getter=_selectsWhenTracking,setter=_setSelectsWhenTracking:,assign,readwrite) bool selectsWhenTracking;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIView *_associatedView;
+@property (nonatomic, retain) UINavigationBar *_navigationBar;
+@property (setter=_setState:, nonatomic) long long _state;
+@property (nonatomic, retain) UIToolbar *_toolbar;
+@property (setter=_setUserTrackingView:, nonatomic, retain) <MKUserTrackingView> *_userTrackingView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MKMapView *mapView;
+@property (getter=_selectsWhenTracking, setter=_setSelectsWhenTracking:, nonatomic) bool selectsWhenTracking;
+@property (readonly) Class superclass;
 
 + (Class)_activityIndicatorClass;
 

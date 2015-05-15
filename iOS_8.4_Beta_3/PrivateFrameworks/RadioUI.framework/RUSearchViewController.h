@@ -33,16 +33,16 @@
     UIView *_tableViewBackgroundView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUSearchViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool displaysCoreSeedName;
-@property(assign,readwrite) bool excludeFeaturedStations;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool showsAddingIndicator;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UITableView * tableView;
-@property(assign,retain) UIView * tableViewBackgroundView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUSearchViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool displaysCoreSeedName;
+@property (nonatomic) bool excludeFeaturedStations;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool showsAddingIndicator;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UITableView *tableView;
+@property (nonatomic, retain) UIView *tableViewBackgroundView;
 
 - (void).cxx_destruct;
 - (void)_addMetricsControllerOperationBlock:(id)arg1;

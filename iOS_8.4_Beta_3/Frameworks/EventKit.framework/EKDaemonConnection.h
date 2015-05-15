@@ -15,9 +15,9 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,retain) <CADInterface> * CADOperationProxy;
-@property(assign,readwrite) id delegate;
-@property(assign,retain) NSXPCConnection * xpcConnection;
+@property (readonly, retain) <CADInterface> *CADOperationProxy;
+@property id delegate;
+@property (readonly, retain) NSXPCConnection *xpcConnection;
 
 + (void)waitOnSemaphoreWithBlock:(id)arg1;
 

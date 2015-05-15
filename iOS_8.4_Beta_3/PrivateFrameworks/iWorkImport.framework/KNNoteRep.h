@@ -6,12 +6,12 @@
     TSWPRep *mContainedRep;
 }
 
-@property(assign,readonly) TSWPRep * containedRep;
-@property(assign,readonly) NSObject<TSDContainerInfo> * containerInfo;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) TSWPRep *containedRep;
+@property (nonatomic, readonly) NSObject<TSDContainerInfo> *containerInfo;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)addAdditionalChildLayersToArray:(id)arg1;
 - (bool)canBeginEditingChildRepOnDoubleTap:(id)arg1;

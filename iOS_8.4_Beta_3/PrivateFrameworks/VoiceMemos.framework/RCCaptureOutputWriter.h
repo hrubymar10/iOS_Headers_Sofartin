@@ -33,26 +33,26 @@
     long long _writerState;
 }
 
-@property(assign,readonly) AVCaptureSession * AVCaptureSession;
-@property(assign,retain) NSURL * activeOutputFileURL;
-@property(assign,retain) AVAssetWriter * assetWriter;
-@property(assign,readonly) double assetWritingCheckpointInterval;
-@property(assign,readwrite) <RCCaptureOutputWriterDelegate> * captureOutputDelegate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double finalizedAssetDuration;
-@property(assign,readonly) bool finalizedAssetEncounteredError;
-@property(assign,readonly) NSURL * finalizedAssetURL;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double maxRecordedDuration;
-@property(assign,readwrite) unsigned long long maxRecordedFileSize;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSDate * recordingCreationDate;
-@property(assign,copy) NSUUID * recordingSessionID;
-@property(assign,retain) AVCaptureAudioDataOutput * sampleBufferDataOutput;
-@property(assign,retain) NSObject<OS_dispatch_queue> * sampleBufferQueue;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long writerState;
+@property (nonatomic, readonly) AVCaptureSession *AVCaptureSession;
+@property (nonatomic, retain) NSURL *activeOutputFileURL;
+@property (nonatomic, retain) AVAssetWriter *assetWriter;
+@property (nonatomic, readonly) double assetWritingCheckpointInterval;
+@property (nonatomic) <RCCaptureOutputWriterDelegate> *captureOutputDelegate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double finalizedAssetDuration;
+@property (nonatomic, readonly) bool finalizedAssetEncounteredError;
+@property (nonatomic, readonly) NSURL *finalizedAssetURL;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double maxRecordedDuration;
+@property (nonatomic) unsigned long long maxRecordedFileSize;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSDate *recordingCreationDate;
+@property (nonatomic, copy) NSUUID *recordingSessionID;
+@property (nonatomic, retain) AVCaptureAudioDataOutput *sampleBufferDataOutput;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *sampleBufferQueue;
+@property (readonly) Class superclass;
+@property (nonatomic) long long writerState;
 
 - (void).cxx_destruct;
 - (id)AVCaptureSession;

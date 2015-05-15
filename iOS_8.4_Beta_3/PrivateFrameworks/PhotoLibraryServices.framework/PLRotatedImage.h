@@ -6,7 +6,7 @@
     bool _wasRotated;
 }
 
-@property(assign,readwrite) bool wasRotated;
+@property (nonatomic) bool wasRotated;
 
 - (void)setWasRotated:(bool)arg1;
 - (bool)wasRotated;

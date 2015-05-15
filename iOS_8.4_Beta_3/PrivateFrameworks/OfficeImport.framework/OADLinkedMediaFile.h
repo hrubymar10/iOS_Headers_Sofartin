@@ -7,8 +7,8 @@
     NSURL *mUrl;
 }
 
-@property(assign,readwrite) bool isExternal;
-@property(assign,retain) NSURL * url;
+@property bool isExternal;
+@property (retain) NSURL *url;
 
 - (void)dealloc;
 - (bool)isExternal;

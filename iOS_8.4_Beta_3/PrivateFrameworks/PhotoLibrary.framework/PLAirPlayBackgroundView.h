@@ -6,7 +6,7 @@
     NSString *_deviceName;
 }
 
-@property(assign,retain) NSString * deviceName;
+@property (nonatomic, retain) NSString *deviceName;
 
 - (void)dealloc;
 - (id)deviceName;

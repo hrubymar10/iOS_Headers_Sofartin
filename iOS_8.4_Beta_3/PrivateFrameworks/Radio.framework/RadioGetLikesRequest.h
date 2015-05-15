@@ -10,9 +10,9 @@
     RadioStation *_station;
 }
 
-@property(assign,readwrite) unsigned long long numberOfBannedTracks;
-@property(assign,readwrite) unsigned long long numberOfLikedTracks;
-@property(assign,readwrite) bool shouldProcessItems;
+@property (nonatomic) unsigned long long numberOfBannedTracks;
+@property (nonatomic) unsigned long long numberOfLikedTracks;
+@property (nonatomic) bool shouldProcessItems;
 
 - (void).cxx_destruct;
 - (void)cancel;

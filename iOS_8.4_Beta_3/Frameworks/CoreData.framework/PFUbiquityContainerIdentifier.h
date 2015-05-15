@@ -12,16 +12,16 @@
     NSString *_uuidString;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSOperationQueue * presentedItemOperationQueue;
-@property(assign,copy) NSURL * presentedItemURL;
-@property(assign,copy) NSURL * primaryPresentedItemURL;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool usedExistingUUIDFile;
-@property(assign,readonly) PFUbiquityLocation * uuidFileLocation;
-@property(assign,readonly) NSString * uuidString;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSOperationQueue *presentedItemOperationQueue;
+@property (readonly, copy) NSURL *presentedItemURL;
+@property (readonly, copy) NSURL *primaryPresentedItemURL;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool usedExistingUUIDFile;
+@property (nonatomic, readonly) PFUbiquityLocation *uuidFileLocation;
+@property (nonatomic, readonly) NSString *uuidString;
 
 - (void)accommodatePresentedItemDeletionWithCompletionHandler:(id)arg1;
 - (void)dealloc;

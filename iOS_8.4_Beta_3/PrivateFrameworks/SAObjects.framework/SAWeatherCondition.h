@@ -4,12 +4,12 @@
 
 @interface SAWeatherCondition : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * conditionCode;
-@property(assign,readwrite) long long conditionCodeIndex;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *conditionCode;
+@property (nonatomic) long long conditionCodeIndex;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)condition;
 + (id)conditionWithDictionary:(id)arg1 context:(id)arg2;

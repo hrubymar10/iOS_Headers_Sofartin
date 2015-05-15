@@ -10,13 +10,13 @@
     <UIViewControllerContextTransitioning> *_transitionContext;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double duration;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInteractive,assign,readwrite) bool interactive;
-@property(setter=_setInteractiveProgress:,assign,readwrite) double interactiveProgress;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double duration;
+@property (readonly) unsigned long long hash;
+@property (getter=isInteractive, nonatomic) bool interactive;
+@property (setter=_setInteractiveProgress:, nonatomic) double interactiveProgress;
+@property (readonly) Class superclass;
 
 + (id)interactionControllerForAnimationController:(id)arg1;
 

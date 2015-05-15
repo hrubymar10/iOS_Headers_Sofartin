@@ -19,20 +19,20 @@
     NSURL *_url;
 }
 
-@property(assign,retain) NSAttributedString * attributedText;
-@property(assign,retain) NSArray * chatGUIDs;
-@property(assign,retain) NSArray * chatGuids;
-@property(assign,retain) NSDate * date;
-@property(assign,retain) NSString * guid;
-@property(assign,readwrite) bool isAudioMessage;
-@property(assign,readwrite) bool isOutgoing;
-@property(assign,readwrite) bool isRead;
-@property(assign,readwrite) long long messageID;
-@property(assign,retain) NSArray * recipients;
-@property(assign,retain) IMSPIHandle * sender;
-@property(assign,retain) NSString * subject;
-@property(assign,retain) NSString * text;
-@property(assign,retain) NSURL * url;
+@property (retain) NSAttributedString *attributedText;
+@property (retain) NSArray *chatGUIDs;
+@property (readonly, retain) NSArray *chatGuids;
+@property (retain) NSDate *date;
+@property (retain) NSString *guid;
+@property bool isAudioMessage;
+@property bool isOutgoing;
+@property bool isRead;
+@property long long messageID;
+@property (retain) NSArray *recipients;
+@property (retain) IMSPIHandle *sender;
+@property (retain) NSString *subject;
+@property (retain) NSString *text;
+@property (retain) NSURL *url;
 
 - (id)attributedText;
 - (id)chatGUIDs;

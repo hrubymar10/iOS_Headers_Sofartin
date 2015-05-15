@@ -6,7 +6,7 @@
     double _alignedDescriptiveLabelTextWidth;
 }
 
-@property(assign,readwrite) double alignedDescriptiveLabelTextWidth;
+@property double alignedDescriptiveLabelTextWidth;
 
 - (double)alignedDescriptiveLabelTextWidth;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

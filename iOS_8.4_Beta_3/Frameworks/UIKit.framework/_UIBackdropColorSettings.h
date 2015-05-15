@@ -15,17 +15,17 @@
     double _previousContrast;
 }
 
-@property(assign,readwrite) double averageBrightness;
-@property(assign,readwrite) double averageHue;
-@property(assign,readwrite) double averageSaturation;
-@property(assign,readonly) UIColor * color;
-@property(assign,readwrite) double contrast;
-@property(assign,readwrite) bool hasObservedValues;
-@property(assign,readwrite) _UIBackdropViewSettings * parentSettings;
-@property(assign,readwrite) double previousAverageBrightness;
-@property(assign,readwrite) double previousAverageHue;
-@property(assign,readwrite) double previousAverageSaturation;
-@property(assign,readwrite) double previousContrast;
+@property (nonatomic) double averageBrightness;
+@property (nonatomic) double averageHue;
+@property (nonatomic) double averageSaturation;
+@property (nonatomic, readonly) UIColor *color;
+@property (nonatomic) double contrast;
+@property (nonatomic) bool hasObservedValues;
+@property (nonatomic) _UIBackdropViewSettings *parentSettings;
+@property (nonatomic) double previousAverageBrightness;
+@property (nonatomic) double previousAverageHue;
+@property (nonatomic) double previousAverageSaturation;
+@property (nonatomic) double previousContrast;
 
 - (bool)applyCABackdropLayerStatistics:(id)arg1;
 - (double)averageBrightness;

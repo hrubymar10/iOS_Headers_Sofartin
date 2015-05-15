@@ -10,7 +10,7 @@
     NSMutableArray *sensorNamesV;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * batteryLevelChanged;
+@property (retain) PLEntryNotificationOperatorComposition *batteryLevelChanged;
 
 + (id)accountingGroupDefinitions;
 + (id)defaults;

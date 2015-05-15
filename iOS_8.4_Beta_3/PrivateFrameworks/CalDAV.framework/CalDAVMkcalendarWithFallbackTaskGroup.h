@@ -12,10 +12,10 @@
     NSURL *_url;
 }
 
-@property(assign,retain) NSDictionary * headersToOverride;
-@property(assign,retain) NSDictionary * responseHeaders;
-@property(assign,readwrite) bool shouldSupportVEVENT;
-@property(assign,readwrite) bool shouldSupportVTODO;
+@property (nonatomic, retain) NSDictionary *headersToOverride;
+@property (nonatomic, retain) NSDictionary *responseHeaders;
+@property (nonatomic) bool shouldSupportVEVENT;
+@property (nonatomic) bool shouldSupportVTODO;
 
 - (void)_mkcalendarAfterFailureCount:(unsigned long long)arg1;
 - (void)dealloc;

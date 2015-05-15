@@ -13,14 +13,14 @@
     VSSpeechSynthesizer *_synthesizer;
 }
 
-@property(getter=_activeElements,assign,readonly) NSMutableArray * activeElements;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) <AFUISpeechSynthesisDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=_elementQueue,assign,readonly) AFUIQueue * elementQueue;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <AFUISpeechSynthesisLocalDelegate> * localDelegate;
-@property(assign,readonly) Class superclass;
+@property (getter=_activeElements, nonatomic, readonly) NSMutableArray *activeElements;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) <AFUISpeechSynthesisDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=_elementQueue, nonatomic, readonly) AFUIQueue *elementQueue;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <AFUISpeechSynthesisLocalDelegate> *localDelegate;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_activeElements;

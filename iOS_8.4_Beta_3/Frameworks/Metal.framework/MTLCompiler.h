@@ -11,10 +11,10 @@
     NSString *_pluginPath;
 }
 
-@property(assign,readonly) struct { unsigned char x1[32]; } cacheUUID;
-@property(assign,readwrite) struct MTLCompilerConnectionManager { int (**x1)(); }* compilerConnectionManager;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * compilerQueue;
-@property(assign,copy) NSString * pluginPath;
+@property (readonly) struct { unsigned char x1[32]; } cacheUUID;
+@property struct MTLCompilerConnectionManager { int (**x1)(); }*compilerConnectionManager;
+@property NSObject<OS_dispatch_queue> *compilerQueue;
+@property (readonly, copy) NSString *pluginPath;
 
 - (id).cxx_construct;
 - (struct { unsigned char x1[32]; })cacheUUID;

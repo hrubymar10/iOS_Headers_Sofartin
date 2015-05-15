@@ -7,7 +7,7 @@
     TSWPShapeLayout *_editingShapeLayout;
 }
 
-@property(assign,readonly) TSWPShapeLayout * editingShapeLayout;
+@property (nonatomic, readonly) TSWPShapeLayout *editingShapeLayout;
 
 - (void)dealloc;
 - (id)editingShapeLayout;

@@ -20,14 +20,14 @@
     PSYSyncRestrictionProvider *_syncRestrictionProvider;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PSYSyncCoordinatorDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * serviceName;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long syncRestriction;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PSYSyncCoordinatorDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) NSString *serviceName;
+@property (readonly) Class superclass;
+@property unsigned long long syncRestriction;
 
 + (void)initialize;
 + (id)syncCoordinatorWithServiceName:(id)arg1;

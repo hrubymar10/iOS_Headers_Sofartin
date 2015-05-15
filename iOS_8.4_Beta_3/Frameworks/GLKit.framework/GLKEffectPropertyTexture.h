@@ -24,26 +24,26 @@
     char *_unitCubeNameString;
 }
 
-@property(assign,readonly) struct GLKBigInt_s { unsigned long long x1; unsigned long long x2; } allFshMasks;
-@property(assign,readwrite) unsigned char enabled;
-@property(assign,readwrite) int envMode;
-@property(assign,readonly) NSString * filePath;
-@property(assign,readwrite) unsigned char matrixEnabled;
-@property(assign,readwrite) unsigned int name;
-@property(assign,readonly) unsigned char normalizedNormalsMask;
-@property(assign,readwrite) unsigned int target;
-@property(assign,readonly) NSMutableArray * texGenArray;
-@property(assign,readonly) GLKEffectPropertyTexGen * texGenR;
-@property(assign,readonly) GLKEffectPropertyTexGen * texGenS;
-@property(assign,readonly) GLKEffectPropertyTexGen * texGenT;
-@property(assign,readwrite) int textureIndex;
-@property(assign,readwrite) int unit2dLoc;
-@property(assign,readwrite) char * unit2dNameString;
-@property(assign,readwrite) int unitCubeLoc;
-@property(assign,readwrite) char * unitCubeNameString;
-@property(assign,readonly) unsigned char useTexCoordAttribMask;
-@property(assign,readonly) unsigned char vNormalEyeMask;
-@property(assign,readonly) unsigned char vPositionEyeMask;
+@property (nonatomic, readonly) struct GLKBigInt_s { unsigned long long x1; unsigned long long x2; } allFshMasks;
+@property (nonatomic) unsigned char enabled;
+@property (nonatomic) int envMode;
+@property (nonatomic, readonly) NSString *filePath;
+@property (nonatomic) unsigned char matrixEnabled;
+@property (nonatomic) unsigned int name;
+@property (nonatomic, readonly) unsigned char normalizedNormalsMask;
+@property (nonatomic) unsigned int target;
+@property (nonatomic, readonly) NSMutableArray *texGenArray;
+@property (nonatomic, readonly) GLKEffectPropertyTexGen *texGenR;
+@property (nonatomic, readonly) GLKEffectPropertyTexGen *texGenS;
+@property (nonatomic, readonly) GLKEffectPropertyTexGen *texGenT;
+@property (nonatomic) int textureIndex;
+@property (nonatomic) int unit2dLoc;
+@property (nonatomic) char *unit2dNameString;
+@property (nonatomic) int unitCubeLoc;
+@property (nonatomic) char *unitCubeNameString;
+@property (nonatomic, readonly) unsigned char useTexCoordAttribMask;
+@property (nonatomic, readonly) unsigned char vNormalEyeMask;
+@property (nonatomic, readonly) unsigned char vPositionEyeMask;
 
 + (void)clearAllTexturingMasks:(struct GLKBigInt_s { unsigned long long x1; unsigned long long x2; }*)arg1 fshMask:(struct GLKBigInt_s { unsigned long long x1; unsigned long long x2; }*)arg2;
 + (void)setStaticMasksWithVshRoot:(id)arg1 fshRoot:(id)arg2;

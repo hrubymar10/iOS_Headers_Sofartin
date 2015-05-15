@@ -10,15 +10,15 @@
     NSString *_productType;
 }
 
-@property(assign,readonly) NSString * bundleIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=_isLocalDevice,setter=_setLocalDevice:,assign,readwrite) bool localDevice;
-@property(assign,readonly) NSString * name;
-@property(getter=_options,setter=_setOptions:,assign,readwrite) unsigned long long options;
-@property(getter=_productType,setter=_setProductType:,assign,retain) NSString * productType;
-@property(assign,readonly) Class superclass;
+@property (readonly) NSString *bundleIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=_isLocalDevice, setter=_setLocalDevice:, nonatomic) bool localDevice;
+@property (readonly) NSString *name;
+@property (getter=_options, setter=_setOptions:, nonatomic) unsigned long long options;
+@property (getter=_productType, setter=_setProductType:, nonatomic, retain) NSString *productType;
+@property (readonly) Class superclass;
 
 + (id)_currentSourceProductType:(bool)arg1;
 + (id)_generateIdentifierForAppleDevice;

@@ -15,14 +15,14 @@
     int _weekday;
 }
 
-@property(assign,readwrite) bool hasHour;
-@property(assign,readwrite) bool hasMinute;
-@property(assign,readwrite) bool hasSecond;
-@property(assign,readwrite) bool hasWeekday;
-@property(assign,readwrite) int hour;
-@property(assign,readwrite) int minute;
-@property(assign,readwrite) int second;
-@property(assign,readwrite) int weekday;
+@property (nonatomic) bool hasHour;
+@property (nonatomic) bool hasMinute;
+@property (nonatomic) bool hasSecond;
+@property (nonatomic) bool hasWeekday;
+@property (nonatomic) int hour;
+@property (nonatomic) int minute;
+@property (nonatomic) int second;
+@property (nonatomic) int weekday;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

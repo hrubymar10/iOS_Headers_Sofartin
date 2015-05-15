@@ -8,8 +8,8 @@
     NSObject<OS_dispatch_queue> *_requestQueue;
 }
 
-@property(assign,readonly) id requestBlock;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * requestQueue;
+@property (nonatomic, readonly) id requestBlock;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *requestQueue;
 
 - (void)_requestMediaDataIfReady;
 - (void)dealloc;

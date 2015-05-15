@@ -6,7 +6,7 @@
     UISearchController *_searchController;
 }
 
-@property(assign,readonly) UISearchController * searchController;
+@property (nonatomic, readonly) UISearchController *searchController;
 
 - (void).cxx_destruct;
 - (id)initWithSearchBarViewElement:(id)arg1;

@@ -12,12 +12,12 @@
     long long _position;
 }
 
-@property(assign,readwrite) bool albumSortAscending;
-@property(assign,readwrite) unsigned long long albumSortType;
-@property(assign,readwrite) unsigned long long albumType;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * parentIdentifier;
-@property(assign,readwrite) long long position;
+@property (nonatomic) bool albumSortAscending;
+@property (nonatomic) unsigned long long albumSortType;
+@property (nonatomic) unsigned long long albumType;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *parentIdentifier;
+@property (nonatomic) long long position;
 
 - (void).cxx_destruct;
 - (bool)albumSortAscending;

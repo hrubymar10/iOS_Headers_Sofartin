@@ -7,8 +7,8 @@
     NSMutableArray *_segments;
 }
 
-@property(assign,readonly) unsigned long long averagePowerLevelsRate;
-@property(assign,readonly) NSArray * segments;
+@property (nonatomic, readonly) unsigned long long averagePowerLevelsRate;
+@property (nonatomic, readonly) NSArray *segments;
 
 + (void)initialize;
 + (id)waveformURLForAVURL:(id)arg1;

@@ -4,12 +4,12 @@
 
 @interface TSWPColumnStyle : TSSStyle <TSWPColumnMetrics>
 
-@property(assign,readonly) bool alwaysStartsNewTarget;
-@property(assign,readonly) unsigned long long columnCount;
-@property(assign,readonly) bool columnsAreLeftToRight;
-@property(assign,readonly) TSWPPadding * layoutMargins;
-@property(assign,readonly) bool shrinkTextToFit;
-@property(assign,readonly) double textScaleFactor;
+@property (nonatomic, readonly) bool alwaysStartsNewTarget;
+@property (nonatomic, readonly) unsigned long long columnCount;
+@property (nonatomic, readonly) bool columnsAreLeftToRight;
+@property (nonatomic, readonly) TSWPPadding *layoutMargins;
+@property (nonatomic, readonly) bool shrinkTextToFit;
+@property (nonatomic, readonly) double textScaleFactor;
 
 + (float)defaultFloatValueForProperty:(int)arg1;
 + (int)defaultIntValueForProperty:(int)arg1;

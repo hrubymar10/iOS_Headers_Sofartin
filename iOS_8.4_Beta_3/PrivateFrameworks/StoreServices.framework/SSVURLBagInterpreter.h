@@ -8,13 +8,13 @@
     NSArray *_subscriptionSignedActions;
 }
 
-@property(assign,copy) NSArray * AMDDomains;
-@property(assign,copy) NSURL * mescalCertificateURL;
-@property(assign,copy) NSURL * mescalSetupURL;
-@property(assign,copy) NSDictionary * mescalSignedActions;
-@property(assign,copy) NSDictionary * mescalSignedRequests;
-@property(assign,copy) NSDictionary * mescalSignedResponses;
-@property(assign,copy) NSString * storeFrontSuffix;
+@property (nonatomic, readonly, copy) NSArray *AMDDomains;
+@property (nonatomic, readonly, copy) NSURL *mescalCertificateURL;
+@property (nonatomic, readonly, copy) NSURL *mescalSetupURL;
+@property (nonatomic, readonly, copy) NSDictionary *mescalSignedActions;
+@property (nonatomic, readonly, copy) NSDictionary *mescalSignedRequests;
+@property (nonatomic, readonly, copy) NSDictionary *mescalSignedResponses;
+@property (nonatomic, readonly, copy) NSString *storeFrontSuffix;
 
 - (void).cxx_destruct;
 - (id)AMDDomains;

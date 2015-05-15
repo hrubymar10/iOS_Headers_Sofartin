@@ -27,18 +27,18 @@
     PKPaymentWebService *_webService;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPassDeleteHandler> * deleteOverrider;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) UIColor * detailTextColor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIColor * highlightColor;
-@property(assign,readwrite) UIColor * linkTextColor;
-@property(assign,readwrite) UIColor * primaryTextColor;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * transactions;
-@property(assign,readwrite) <PKPaymentVerificationEntryDelegate> * verificationDelegate;
-@property(assign,readwrite) UIColor * warningTextColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPassDeleteHandler> *deleteOverrider;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) UIColor *detailTextColor;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UIColor *highlightColor;
+@property (nonatomic) UIColor *linkTextColor;
+@property (nonatomic) UIColor *primaryTextColor;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *transactions;
+@property (nonatomic) <PKPaymentVerificationEntryDelegate> *verificationDelegate;
+@property (nonatomic) UIColor *warningTextColor;
 
 - (void)_activationFooterPressed:(id)arg1;
 - (id)_activationFooterView;

@@ -15,12 +15,12 @@
     unsigned int _uniqueId;
 }
 
-@property(assign,retain) MFAttachmentManager * attachmentManager;
-@property(assign,readonly) NSURL * baseURL;
-@property(assign,readonly) NSData * htmlData;
-@property(assign,readonly) MFMimeBody * mimeBody;
-@property(assign,readonly) MFMimePart * mimePart;
-@property(assign,readwrite) unsigned int preferredEncoding;
+@property (nonatomic, retain) MFAttachmentManager *attachmentManager;
+@property (readonly) NSURL *baseURL;
+@property (readonly) NSData *htmlData;
+@property (readonly) MFMimeBody *mimeBody;
+@property (readonly) MFMimePart *mimePart;
+@property unsigned int preferredEncoding;
 
 + (id)sourceForURL:(id)arg1;
 

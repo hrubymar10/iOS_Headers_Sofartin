@@ -8,15 +8,15 @@
     NSMutableSet *_supportedItems;
 }
 
-@property(assign,readonly) NSDictionary * dictRepresentation;
-@property(assign,readonly) long long maxResources;
-@property(assign,retain) CoreDAVLeafItem * maxResourcesItem;
-@property(assign,readonly) long long maxSize;
-@property(assign,retain) CoreDAVLeafItem * maxSizeItem;
-@property(assign,readonly) NSSet * supportedItems;
-@property(assign,readonly) bool supportsDelete;
-@property(assign,readonly) bool supportsInsert;
-@property(assign,readonly) bool supportsUpdate;
+@property (nonatomic, readonly) NSDictionary *dictRepresentation;
+@property (nonatomic, readonly) long long maxResources;
+@property (nonatomic, retain) CoreDAVLeafItem *maxResourcesItem;
+@property (nonatomic, readonly) long long maxSize;
+@property (nonatomic, retain) CoreDAVLeafItem *maxSizeItem;
+@property (nonatomic, readonly) NSSet *supportedItems;
+@property (nonatomic, readonly) bool supportsDelete;
+@property (nonatomic, readonly) bool supportsInsert;
+@property (nonatomic, readonly) bool supportsUpdate;
 
 + (id)copyParseRules;
 

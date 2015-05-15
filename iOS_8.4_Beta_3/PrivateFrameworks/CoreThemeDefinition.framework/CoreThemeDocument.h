@@ -19,11 +19,11 @@
     NSString *pathToRepresentedDocument;
 }
 
-@property(assign,readwrite) <TDAssetManagementDelegate> * assetManagementDelegate;
-@property(assign,readwrite) <TDCustomAssetProvider> * customAssetProvider;
-@property(assign,readwrite) long long documentCapabilities;
-@property(assign,copy) NSString * pathToRepresentedDocument;
-@property(assign,readonly) NSURL * themeBitSourceURL;
+@property (nonatomic) <TDAssetManagementDelegate> *assetManagementDelegate;
+@property (nonatomic) <TDCustomAssetProvider> *customAssetProvider;
+@property (nonatomic) long long documentCapabilities;
+@property (copy) NSString *pathToRepresentedDocument;
+@property (nonatomic, readonly) NSURL *themeBitSourceURL;
 
 + (void)_addThemeDocument:(id)arg1;
 + (id)_imageAssetURLsByCopyingFileURLs:(id)arg1 toManagedLocationAtURL:(id)arg2 error:(id*)arg3;

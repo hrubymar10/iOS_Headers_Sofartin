@@ -4,7 +4,7 @@
 
 @interface SKOpenGLNode : SKNode
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } viewportSize;
+@property struct CGSize { double x1; double x2; } viewportSize;
 
 + (id)openGLNodeWithViewportSize:(struct CGSize { double x1; double x2; })arg1;
 

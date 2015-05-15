@@ -6,7 +6,7 @@
     PKDaemonClient *_client;
 }
 
-@property(assign,retain) PKDaemonClient * client;
+@property (retain) PKDaemonClient *client;
 
 + (id)defaultManager;
 

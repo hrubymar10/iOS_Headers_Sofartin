@@ -4,7 +4,7 @@
 
 @interface MPUInsetProxyScrollView : UIScrollView
 
-@property(assign,readwrite) <MPUInsetProxyScrollViewDelegate> * delegate;
+@property (nonatomic) <MPUInsetProxyScrollViewDelegate> *delegate;
 
 - (void)setContentInset:(struct UIEdgeInsets { double x1; double x2; double x3; double x4; })arg1;
 - (void)setScrollIndicatorInsets:(struct UIEdgeInsets { double x1; double x2; double x3; double x4; })arg1;

@@ -16,22 +16,22 @@
     MIPSeries *_series;
 }
 
-@property(assign,retain) MIPAlbum * album;
-@property(assign,retain) MIPArtist * artist;
-@property(assign,retain) MIPGenre * genre;
-@property(assign,readonly) bool hasAlbum;
-@property(assign,readonly) bool hasArtist;
-@property(assign,readonly) bool hasGenre;
-@property(assign,readonly) bool hasMediaItem;
-@property(assign,readonly) bool hasMultiverseId;
-@property(assign,readwrite) bool hasOperationType;
-@property(assign,readonly) bool hasPlaylist;
-@property(assign,readonly) bool hasSeries;
-@property(assign,retain) MIPMediaItem * mediaItem;
-@property(assign,retain) MIPMultiverseIdentifier * multiverseId;
-@property(assign,readwrite) int operationType;
-@property(assign,retain) MIPPlaylist * playlist;
-@property(assign,retain) MIPSeries * series;
+@property (nonatomic, retain) MIPAlbum *album;
+@property (nonatomic, retain) MIPArtist *artist;
+@property (nonatomic, retain) MIPGenre *genre;
+@property (nonatomic, readonly) bool hasAlbum;
+@property (nonatomic, readonly) bool hasArtist;
+@property (nonatomic, readonly) bool hasGenre;
+@property (nonatomic, readonly) bool hasMediaItem;
+@property (nonatomic, readonly) bool hasMultiverseId;
+@property (nonatomic) bool hasOperationType;
+@property (nonatomic, readonly) bool hasPlaylist;
+@property (nonatomic, readonly) bool hasSeries;
+@property (nonatomic, retain) MIPMediaItem *mediaItem;
+@property (nonatomic, retain) MIPMultiverseIdentifier *multiverseId;
+@property (nonatomic) int operationType;
+@property (nonatomic, retain) MIPPlaylist *playlist;
+@property (nonatomic, retain) MIPSeries *series;
 
 - (void).cxx_destruct;
 - (id)album;

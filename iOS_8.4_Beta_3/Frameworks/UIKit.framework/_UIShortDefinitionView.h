@@ -7,7 +7,7 @@
     _UIDefinitionValue *_definitionValue;
 }
 
-@property(assign,retain) _UIDefinitionValue * definitionValue;
+@property (nonatomic, retain) _UIDefinitionValue *definitionValue;
 
 - (void)dealloc;
 - (id)definitionValue;

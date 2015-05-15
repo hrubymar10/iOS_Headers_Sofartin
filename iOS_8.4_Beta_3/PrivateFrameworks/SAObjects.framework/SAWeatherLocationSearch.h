@@ -4,8 +4,8 @@
 
 @interface SAWeatherLocationSearch : SADomainCommand
 
-@property(assign,copy) NSURL * identifier;
-@property(assign,copy) NSString * locationId;
+@property (nonatomic, copy) NSURL *identifier;
+@property (nonatomic, copy) NSString *locationId;
 
 + (id)locationSearch;
 + (id)locationSearchWithDictionary:(id)arg1 context:(id)arg2;

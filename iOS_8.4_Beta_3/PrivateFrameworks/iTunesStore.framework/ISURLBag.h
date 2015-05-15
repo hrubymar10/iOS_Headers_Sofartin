@@ -14,14 +14,14 @@
     NSString *_storeFrontIdentifier;
 }
 
-@property(assign,copy) SSURLBagContext * URLBagContext;
-@property(assign,readonly) NSDictionary * URLBagDictionary;
-@property(assign,readonly) NSSet * availableStorefrontItemKinds;
-@property(assign,readwrite) double invalidationTime;
-@property(assign,readwrite) bool loadedFromDiskCache;
-@property(assign,copy) NSString * storeFrontIdentifier;
-@property(getter=isValid,assign,readonly) bool valid;
-@property(assign,readonly) long long versionIdentifier;
+@property (nonatomic, copy) SSURLBagContext *URLBagContext;
+@property (nonatomic, readonly) NSDictionary *URLBagDictionary;
+@property (readonly) NSSet *availableStorefrontItemKinds;
+@property (nonatomic) double invalidationTime;
+@property (nonatomic) bool loadedFromDiskCache;
+@property (nonatomic, copy) NSString *storeFrontIdentifier;
+@property (getter=isValid, nonatomic, readonly) bool valid;
+@property (nonatomic, readonly) long long versionIdentifier;
 
 + (bool)_allowUnsignedBags;
 + (void)_loadItemKindURLBagKeyMap;

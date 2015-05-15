@@ -7,8 +7,8 @@
     id _isTracking;
 }
 
-@property(assign,copy) id brightnessChangedExternally;
-@property(assign,copy) id isTracking;
+@property (nonatomic, copy) id brightnessChangedExternally;
+@property (nonatomic, copy) id isTracking;
 
 + (id)sharedController;
 

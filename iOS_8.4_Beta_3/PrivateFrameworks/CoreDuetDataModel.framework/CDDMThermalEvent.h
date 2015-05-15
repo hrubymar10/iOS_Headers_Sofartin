@@ -4,14 +4,14 @@
 
 @interface CDDMThermalEvent : NSManagedObject
 
-@property(assign,retain) NSNumber * anonymizedBeacon;
-@property(assign,retain) NSNumber * anonymizedLocation;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,retain) NSNumber * localDaysSinceSunday;
-@property(assign,retain) NSNumber * localTime;
-@property(assign,retain) NSNumber * localTimeQuarterHourSlot;
-@property(assign,retain) NSNumber * networkQuality;
-@property(assign,retain) NSNumber * thermalLevel;
-@property(assign,retain) NSNumber * userId;
+@property (nonatomic, retain) NSNumber *anonymizedBeacon;
+@property (nonatomic, retain) NSNumber *anonymizedLocation;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic, retain) NSNumber *localDaysSinceSunday;
+@property (nonatomic, retain) NSNumber *localTime;
+@property (nonatomic, retain) NSNumber *localTimeQuarterHourSlot;
+@property (nonatomic, retain) NSNumber *networkQuality;
+@property (nonatomic, retain) NSNumber *thermalLevel;
+@property (nonatomic, retain) NSNumber *userId;
 
 @end

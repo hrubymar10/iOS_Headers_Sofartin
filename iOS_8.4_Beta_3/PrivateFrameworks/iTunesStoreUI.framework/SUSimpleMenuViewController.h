@@ -7,8 +7,8 @@
     NSArray *_titles;
 }
 
-@property(assign,copy) NSString * cancelButtonTitle;
-@property(assign,copy) NSArray * titles;
+@property (nonatomic, copy) NSString *cancelButtonTitle;
+@property (nonatomic, copy) NSArray *titles;
 
 - (void)_cancelAction:(id)arg1;
 - (id)cancelButtonTitle;

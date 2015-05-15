@@ -8,7 +8,7 @@
     unsigned long long _pendingEffectsCount;
 }
 
-@property(assign,copy) id completionHandler;
+@property (nonatomic, copy) id completionHandler;
 
 - (void).cxx_destruct;
 - (void)addApplyChangesBlock:(id)arg1;

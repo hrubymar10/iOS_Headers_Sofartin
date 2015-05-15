@@ -8,8 +8,8 @@
     bool isInternalInstall;
 }
 
-@property(assign,readwrite) bool dontSynchronizePreferences;
-@property(assign,readwrite) bool isInternalInstall;
+@property (nonatomic) bool dontSynchronizePreferences;
+@property (nonatomic) bool isInternalInstall;
 
 + (id)sharedPreferencesController;
 

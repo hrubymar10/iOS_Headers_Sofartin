@@ -9,10 +9,10 @@
     UIColor *_tintColor;
 }
 
-@property(assign,readonly) NSBundle * bundle;
-@property(assign,copy) NSString * imageName;
-@property(assign,readwrite) long long renderingMode;
-@property(assign,copy) UIColor * tintColor;
+@property (nonatomic, readonly) NSBundle *bundle;
+@property (nonatomic, readonly, copy) NSString *imageName;
+@property (nonatomic) long long renderingMode;
+@property (nonatomic, copy) UIColor *tintColor;
 
 - (void).cxx_destruct;
 - (id)bundle;

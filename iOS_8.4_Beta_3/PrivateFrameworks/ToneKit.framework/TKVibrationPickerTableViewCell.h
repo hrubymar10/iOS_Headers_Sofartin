@@ -9,20 +9,20 @@
     UITextField *_removableTextField;
 }
 
-@property(getter=_isDisplayingRemovableTextField,assign,readonly) bool _displayingRemovableTextField;
-@property(setter=_setRemovableTextField:,assign,retain) UITextField * _removableTextField;
-@property(getter=isChecked,assign,readwrite) bool checked;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <TKVibrationPickerTableViewCellDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=isEditable,assign,readwrite) bool editable;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIColor * highlightedTextColor;
-@property(assign,retain) NSString * labelText;
-@property(assign,retain) NSString * placeholderText;
-@property(assign,retain) UIColor * regularTextColor;
-@property(assign,retain) UIFont * regularTextFont;
-@property(assign,readonly) Class superclass;
+@property (getter=_isDisplayingRemovableTextField, nonatomic, readonly) bool _displayingRemovableTextField;
+@property (setter=_setRemovableTextField:, nonatomic, retain) UITextField *_removableTextField;
+@property (getter=isChecked, nonatomic) bool checked;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <TKVibrationPickerTableViewCellDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=isEditable, nonatomic) bool editable;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIColor *highlightedTextColor;
+@property (nonatomic, retain) NSString *labelText;
+@property (nonatomic, retain) NSString *placeholderText;
+@property (nonatomic, retain) UIColor *regularTextColor;
+@property (nonatomic, retain) UIFont *regularTextFont;
+@property (readonly) Class superclass;
 
 - (bool)_isDisplayingRemovableTextField;
 - (void)_layoutRemovableTextField;

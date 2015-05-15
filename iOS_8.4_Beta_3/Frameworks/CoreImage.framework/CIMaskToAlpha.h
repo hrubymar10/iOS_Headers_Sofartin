@@ -6,7 +6,7 @@
     CIImage *inputImage;
 }
 
-@property(assign,retain) CIImage * inputImage;
+@property (nonatomic, retain) CIImage *inputImage;
 
 + (id)customAttributes;
 

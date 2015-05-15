@@ -14,21 +14,21 @@
     int _state;
 }
 
-@property(assign,retain) NSSet * aceItems;
-@property(assign,retain) NSDictionary * attachments;
-@property(assign,retain) NSSet * attendeePrincipalURLs;
-@property(assign,readwrite) bool attendeesCanManageDropBox;
-@property(assign,retain) NSDictionary * contentTypes;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CoreDAVTaskGroupDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSURL * dropboxURL;
-@property(assign,retain) NSDictionary * etags;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSDictionary * putFailureSizes;
-@property(assign,retain) NSMutableDictionary * sentAttachmentURLsToETags;
-@property(assign,readwrite) int state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSSet *aceItems;
+@property (nonatomic, retain) NSDictionary *attachments;
+@property (nonatomic, retain) NSSet *attendeePrincipalURLs;
+@property (nonatomic) bool attendeesCanManageDropBox;
+@property (nonatomic, retain) NSDictionary *contentTypes;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CoreDAVTaskGroupDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSURL *dropboxURL;
+@property (nonatomic, readonly, retain) NSDictionary *etags;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSDictionary *putFailureSizes;
+@property (nonatomic, retain) NSMutableDictionary *sentAttachmentURLsToETags;
+@property (nonatomic) int state;
+@property (readonly) Class superclass;
 
 + (id)dropboxACEItemsForPrincipalURLs:(id)arg1 baseURL:(id)arg2 writable:(bool)arg3;
 

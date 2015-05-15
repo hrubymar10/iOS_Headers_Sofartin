@@ -7,8 +7,8 @@
     id _shareDestroyCompletionBlock;
 }
 
-@property(assign,retain) CKShare * share;
-@property(assign,copy) id shareDestroyCompletionBlock;
+@property (nonatomic, retain) CKShare *share;
+@property (copy) id shareDestroyCompletionBlock;
 
 - (void)dealloc;
 - (void)finishWithResult:(id)arg1 error:(id)arg2;

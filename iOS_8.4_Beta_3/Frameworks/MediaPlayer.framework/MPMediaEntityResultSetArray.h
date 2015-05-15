@@ -13,7 +13,7 @@
     MPMediaQuerySectionInfo *_sectionInfo;
 }
 
-@property(assign,readonly) <MPMediaLibraryResultSet> * resultSet;
+@property (nonatomic, readonly) <MPMediaLibraryResultSet> *resultSet;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -7,9 +7,9 @@
     struct __CFPhoneNumber { } *_phoneNumber;
 }
 
-@property(assign,readonly) NSString * emailAddress;
-@property(assign,readonly) struct __CFPhoneNumber { }* phoneNumber;
-@property(assign,readonly) NSString * unformattedID;
+@property (nonatomic, readonly) NSString *emailAddress;
+@property (nonatomic, readonly) struct __CFPhoneNumber { }*phoneNumber;
+@property (nonatomic, readonly) NSString *unformattedID;
 
 - (bool)_acceptItemType:(id)arg1;
 - (bool)_acceptVersion:(id)arg1;

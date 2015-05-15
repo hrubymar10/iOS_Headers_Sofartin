@@ -11,12 +11,12 @@
     SKUILayoutCache *_textLayoutCache;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readwrite) double maximumNavigationBarWidth;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,readwrite) UIViewController * parentViewController;
-@property(assign,retain) SKUIResourceLoader * resourceLoader;
-@property(assign,retain) SKUILayoutCache * textLayoutCache;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic) double maximumNavigationBarWidth;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic) UIViewController *parentViewController;
+@property (nonatomic, retain) SKUIResourceLoader *resourceLoader;
+@property (nonatomic, retain) SKUILayoutCache *textLayoutCache;
 
 - (void).cxx_destruct;
 - (id)clientContext;

@@ -8,9 +8,9 @@
     NSArray *_triggers;
 }
 
-@property(assign,readwrite) unsigned long long concurrencyLevel;
-@property(assign,retain) NSArray * scenarioProducers;
-@property(assign,retain) NSArray * triggers;
+@property (nonatomic) unsigned long long concurrencyLevel;
+@property (nonatomic, retain) NSArray *scenarioProducers;
+@property (nonatomic, retain) NSArray *triggers;
 
 - (unsigned long long)concurrencyLevel;
 - (id)scenarioProducers;

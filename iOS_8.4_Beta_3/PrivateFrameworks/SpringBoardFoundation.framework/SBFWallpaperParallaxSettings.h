@@ -8,9 +8,9 @@
     double _perspectiveTransform;
 }
 
-@property(assign,readwrite) double overhangX;
-@property(assign,readwrite) double overhangY;
-@property(assign,readwrite) double perspectiveTransform;
+@property double overhangX;
+@property double overhangY;
+@property double perspectiveTransform;
 
 + (struct CGSize { double x1; double x2; })_requiredOverhangSizeForCurrentDevice;
 + (struct CGSize { double x1; double x2; })bestWallpaperSizeForParallaxFactor:(double)arg1;

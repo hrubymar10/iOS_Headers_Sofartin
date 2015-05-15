@@ -14,15 +14,15 @@
     long long _transportType;
 }
 
-@property(assign,retain) UIColor * color;
-@property(assign,retain) CNContact * contact;
-@property(assign,retain) CNContactStyle * contactStyle;
-@property(assign,readwrite) <ABContactActionDelegate> * delegate;
-@property(getter=isDestructive,assign,readwrite) bool destructive;
-@property(assign,readonly) SEL selector;
-@property(assign,retain) id target;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) long long transportType;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic, retain) CNContact *contact;
+@property (nonatomic, retain) CNContactStyle *contactStyle;
+@property (nonatomic) <ABContactActionDelegate> *delegate;
+@property (getter=isDestructive, nonatomic) bool destructive;
+@property (nonatomic, readonly) SEL selector;
+@property (nonatomic, readonly, retain) id target;
+@property (nonatomic, readonly, copy) NSString *title;
+@property (nonatomic) long long transportType;
 
 + (id)contactActionWithTitle:(id)arg1 target:(id)arg2 selector:(SEL)arg3;
 + (id)contactActionWithTitle:(id)arg1 target:(id)arg2 selector:(SEL)arg3 destructive:(bool)arg4;

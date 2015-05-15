@@ -11,12 +11,12 @@
     NSString *_lastName;
 }
 
-@property(assign,retain) NSURL * address;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) ICSDateValue * dtstamp;
-@property(assign,retain) NSString * emailAddress;
-@property(assign,retain) NSString * firstName;
-@property(assign,retain) NSString * lastName;
+@property (nonatomic, retain) NSURL *address;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) ICSDateValue *dtstamp;
+@property (nonatomic, retain) NSString *emailAddress;
+@property (nonatomic, retain) NSString *firstName;
+@property (nonatomic, retain) NSString *lastName;
 
 - (id)address;
 - (id)copyParseRules;

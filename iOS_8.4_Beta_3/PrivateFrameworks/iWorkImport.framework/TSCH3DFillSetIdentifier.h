@@ -8,9 +8,9 @@
     NSString *_textureSetID;
 }
 
-@property(assign,readonly) unsigned long long seriesIndex;
-@property(assign,readonly) NSString * textureSetFilename;
-@property(assign,readonly) NSString * textureSetID;
+@property (nonatomic, readonly) unsigned long long seriesIndex;
+@property (nonatomic, readonly) NSString *textureSetFilename;
+@property (nonatomic, readonly) NSString *textureSetID;
 
 + (id)identifierWithContentsOfDictionary:(id)arg1;
 + (id)identifierWithFillName:(id)arg1 seriesName:(id)arg2 textureSetID:(id)arg3;

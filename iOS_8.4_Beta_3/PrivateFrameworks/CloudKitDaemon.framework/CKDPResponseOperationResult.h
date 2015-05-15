@@ -10,10 +10,10 @@
     } _has;
 }
 
-@property(assign,readwrite) int code;
-@property(assign,retain) CKDPResponseOperationResultError * error;
-@property(assign,readwrite) bool hasCode;
-@property(assign,readonly) bool hasError;
+@property (nonatomic) int code;
+@property (nonatomic, retain) CKDPResponseOperationResultError *error;
+@property (nonatomic) bool hasCode;
+@property (nonatomic, readonly) bool hasError;
 
 - (void).cxx_destruct;
 - (int)code;

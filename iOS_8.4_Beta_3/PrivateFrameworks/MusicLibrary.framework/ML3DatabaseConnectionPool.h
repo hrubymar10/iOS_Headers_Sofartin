@@ -20,15 +20,15 @@
     _ML3DatabaseConnectionSubPool *_writersSubPool;
 }
 
-@property(assign,readwrite) unsigned long long connectionsJournalingMode;
-@property(assign,readwrite) int connectionsProfilingLevel;
-@property(assign,readonly) NSString * databasePath;
-@property(assign,readwrite) <ML3DatabaseConnectionPoolDelegate> * delegate;
-@property(assign,readonly) bool isCurrentThreadConnectionInTransaction;
-@property(getter=isLocked,assign,readonly) bool locked;
-@property(assign,readonly) unsigned long long maxReaders;
-@property(assign,readonly) unsigned long long maxWriters;
-@property(assign,readwrite) bool useDistantWriterConnections;
+@property (nonatomic) unsigned long long connectionsJournalingMode;
+@property (nonatomic) int connectionsProfilingLevel;
+@property (nonatomic, readonly) NSString *databasePath;
+@property (nonatomic) <ML3DatabaseConnectionPoolDelegate> *delegate;
+@property (readonly) bool isCurrentThreadConnectionInTransaction;
+@property (getter=isLocked, nonatomic, readonly) bool locked;
+@property (nonatomic, readonly) unsigned long long maxReaders;
+@property (nonatomic, readonly) unsigned long long maxWriters;
+@property (nonatomic) bool useDistantWriterConnections;
 
 - (void).cxx_destruct;
 - (void)_closeAllConnectionsAndWaitForBusyConnections:(bool)arg1;

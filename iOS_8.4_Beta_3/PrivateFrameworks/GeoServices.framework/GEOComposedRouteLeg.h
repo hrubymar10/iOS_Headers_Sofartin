@@ -15,18 +15,18 @@
     long long _type;
 }
 
-@property(assign,readwrite) GEOComposedRoute * composedRoute;
-@property(assign,readonly) unsigned int endPointIndex;
-@property(assign,readonly) unsigned long long endStepIndex;
-@property(assign,readonly) unsigned int pointCount;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } pointRange;
-@property(assign,readonly) unsigned int startPointIndex;
-@property(assign,readonly) unsigned long long startStepIndex;
-@property(assign,readonly) unsigned long long stepCount;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } stepRange;
-@property(assign,readonly) NSArray * steps;
-@property(assign,readonly) int transportType;
-@property(assign,readonly) long long type;
+@property (nonatomic) GEOComposedRoute *composedRoute;
+@property (nonatomic, readonly) unsigned int endPointIndex;
+@property (nonatomic, readonly) unsigned long long endStepIndex;
+@property (nonatomic, readonly) unsigned int pointCount;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } pointRange;
+@property (nonatomic, readonly) unsigned int startPointIndex;
+@property (nonatomic, readonly) unsigned long long startStepIndex;
+@property (nonatomic, readonly) unsigned long long stepCount;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } stepRange;
+@property (nonatomic, readonly) NSArray *steps;
+@property (nonatomic, readonly) int transportType;
+@property (nonatomic, readonly) long long type;
 
 - (id)composedRoute;
 - (id)description;

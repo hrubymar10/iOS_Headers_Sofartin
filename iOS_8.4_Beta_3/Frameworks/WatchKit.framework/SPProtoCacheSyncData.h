@@ -8,9 +8,9 @@
     SPProtoCacheAssets *_transientCache;
 }
 
-@property(assign,retain) NSString * cacheIdentifier;
-@property(assign,retain) SPProtoCacheAssets * permanentCache;
-@property(assign,retain) SPProtoCacheAssets * transientCache;
+@property (nonatomic, retain) NSString *cacheIdentifier;
+@property (nonatomic, retain) SPProtoCacheAssets *permanentCache;
+@property (nonatomic, retain) SPProtoCacheAssets *transientCache;
 
 - (void).cxx_destruct;
 - (id)cacheIdentifier;

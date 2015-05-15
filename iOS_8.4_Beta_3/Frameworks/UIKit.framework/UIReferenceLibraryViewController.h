@@ -13,12 +13,12 @@
     NSString *_term;
 }
 
-@property(setter=_setRotationDecider:,assign,retain) UIWindow * _rotationDecider;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id dismissCompletionHandler;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (setter=_setRotationDecider:, nonatomic, retain) UIWindow *_rotationDecider;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id dismissCompletionHandler;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_backgroundColor;
 + (id)_colorAttributes;

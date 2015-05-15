@@ -8,9 +8,9 @@
     NSArray *_stations;
 }
 
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,copy) NSString * localizedTitle;
-@property(assign,copy) NSArray * stations;
+@property (getter=isActive, nonatomic, readonly) bool active;
+@property (nonatomic, readonly, copy) NSString *localizedTitle;
+@property (nonatomic, readonly, copy) NSArray *stations;
 
 - (void).cxx_destruct;
 - (id)_copyWithRecentStationsGroupClass:(Class)arg1;

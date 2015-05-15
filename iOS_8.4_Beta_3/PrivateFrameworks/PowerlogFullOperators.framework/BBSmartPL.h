@@ -11,12 +11,12 @@
     PLSmartPLService *_operator;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * bbHwOtherCallback;
-@property(assign,readwrite) PLTelephonyConnection * connection;
-@property(assign,readwrite) double cxoDuration;
-@property(assign,retain) NSDate * lastLogDate;
-@property(assign,readwrite) double logDuration;
-@property(assign,readwrite) PLSmartPLService * operator;
+@property (retain) PLEntryNotificationOperatorComposition *bbHwOtherCallback;
+@property PLTelephonyConnection *connection;
+@property double cxoDuration;
+@property (retain) NSDate *lastLogDate;
+@property double logDuration;
+@property PLSmartPLService *operator;
 
 - (void).cxx_destruct;
 - (id)bbHwOtherCallback;

@@ -7,8 +7,8 @@
     NSDate *_startTime;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * audioRailCallback;
-@property(assign,retain) NSDate * startTime;
+@property (retain) PLEntryNotificationOperatorComposition *audioRailCallback;
+@property (retain) NSDate *startTime;
 
 + (id)entryAggregateDefinitionAwdAudio;
 + (id)entryAggregateDefinitions;

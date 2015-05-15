@@ -6,7 +6,7 @@
     bool disappearsOnHighlight;
 }
 
-@property(assign,readwrite) bool disappearsOnHighlight;
+@property (nonatomic) bool disappearsOnHighlight;
 
 - (bool)disappearsOnHighlight;
 - (void)forceSetBackgroundColor:(id)arg1;

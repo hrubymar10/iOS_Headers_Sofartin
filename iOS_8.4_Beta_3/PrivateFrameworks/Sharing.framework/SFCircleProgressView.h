@@ -4,11 +4,11 @@
 
 @interface SFCircleProgressView : UIView
 
-@property(assign,readwrite) double progress;
-@property(assign,readonly) UIColor * progressColor;
-@property(assign,readwrite) double progressLineWidth;
-@property(assign,readwrite) long long progressStartPoint;
-@property(assign,readwrite) bool showProgressTray;
+@property (nonatomic) double progress;
+@property (nonatomic, readonly) UIColor *progressColor;
+@property (nonatomic) double progressLineWidth;
+@property (nonatomic) long long progressStartPoint;
+@property (nonatomic) bool showProgressTray;
 
 + (Class)layerClass;
 

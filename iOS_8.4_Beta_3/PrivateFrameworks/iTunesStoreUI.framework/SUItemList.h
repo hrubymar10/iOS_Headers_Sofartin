@@ -8,10 +8,10 @@
     bool _ignoresEmptySections;
 }
 
-@property(assign,readwrite) bool ignoresEmptySections;
-@property(assign,readonly) long long numberOfItems;
-@property(assign,readonly) long long numberOfSections;
-@property(assign,readonly) NSArray * sectionIndexTitles;
+@property (nonatomic) bool ignoresEmptySections;
+@property (nonatomic, readonly) long long numberOfItems;
+@property (nonatomic, readonly) long long numberOfSections;
+@property (nonatomic, readonly) NSArray *sectionIndexTitles;
 
 - (id)_groupAtExternalIndex:(long long)arg1;
 - (void)_removeHiddenItemsFromArray:(id)arg1;

@@ -27,7 +27,7 @@
     struct vector<WBTextBoxReaderInfo, std::__1::allocator<WBTextBoxReaderInfo> > { struct WBTextBoxReaderInfo {} *x1; struct WBTextBoxReaderInfo {} *x2; struct __compressed_pair<WBTextBoxReaderInfo *, std::__1::allocator<WBTextBoxReaderInfo> > { struct WBTextBoxReaderInfo {} *x_3_1_1; } x3; } *mTextBoxes;
 }
 
-@property(assign,readwrite) WDDocument * targetDocument;
+@property (nonatomic) WDDocument *targetDocument;
 
 - (void)addFont:(id)arg1 index:(int)arg2;
 - (void)addStyle:(id)arg1 index:(int)arg2;

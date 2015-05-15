@@ -8,39 +8,39 @@
     TPFootnoteHeightMeasurer *_footnoteHeightMeasurer;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } anchorPoint;
-@property(assign,retain) NSMutableArray * anchoredDrawablesForRelayout;
-@property(assign,readonly) unsigned int autosizeFlags;
-@property(assign,readonly) TSDCanvas * canvas;
-@property(assign,retain) NSMutableArray * columns;
-@property(assign,readonly) struct CGSize { double x1; double x2; } currentSize;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <TSWPFootnoteHeightMeasurer> * footnoteHeightMeasurer;
-@property(assign,readonly) <TSWPFootnoteMarkProvider> * footnoteMarkProvider;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct __CFLocale { }* hyphenationLocale;
-@property(assign,readonly) bool layoutIsValid;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } maskRect;
-@property(assign,readonly) double maxAnchorY;
-@property(assign,readonly) struct CGSize { double x1; double x2; } maxSize;
-@property(assign,readonly) struct CGSize { double x1; double x2; } minSize;
-@property(assign,readonly) int naturalAlignment;
-@property(assign,readonly) int naturalDirection;
-@property(assign,readonly) TSPObject<TSDHint> * nextTargetFirstChildHint;
-@property(assign,retain) <TSWPOffscreenColumn> * nextTargetFirstColumn;
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{TSWPTopicNumberHints={map<const TSWPListStyle *' */ struct * nextTargetTopicNumbers; /* unknown property attribute:  true> >=Q}}}QQ} */
-@property(assign,readonly) unsigned long long pageCount;
-@property(assign,readonly) unsigned long long pageNumber;
-@property(assign,readonly) TSDLayout * parentLayoutForInlineAttachments;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } position;
-@property(assign,retain) <TSWPOffscreenColumn> * previousTargetLastColumn;
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{TSWPTopicNumberHints={map<const TSWPListStyle *' */ struct * previousTargetTopicNumbers; /* unknown property attribute:  true> >=Q}}}QQ} */
-@property(assign,readonly) bool shouldHyphenate;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool textIsVertical;
-@property(assign,readonly) int verticalAlignment;
-@property(assign,readonly) bool wantsLineFragments;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } anchorPoint;
+@property (nonatomic, retain) NSMutableArray *anchoredDrawablesForRelayout;
+@property (nonatomic, readonly) unsigned int autosizeFlags;
+@property (nonatomic, readonly) TSDCanvas *canvas;
+@property (nonatomic, readonly, retain) NSMutableArray *columns;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } currentSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) <TSWPFootnoteHeightMeasurer> *footnoteHeightMeasurer;
+@property (nonatomic, readonly) <TSWPFootnoteMarkProvider> *footnoteMarkProvider;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct __CFLocale { }*hyphenationLocale;
+@property (nonatomic, readonly) bool layoutIsValid;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } maskRect;
+@property (nonatomic, readonly) double maxAnchorY;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } maxSize;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } minSize;
+@property (nonatomic, readonly) int naturalAlignment;
+@property (nonatomic, readonly) int naturalDirection;
+@property (nonatomic, readonly) TSPObject<TSDHint> *nextTargetFirstChildHint;
+@property (nonatomic, readonly, retain) <TSWPOffscreenColumn> *nextTargetFirstColumn;
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{TSWPTopicNumberHints={map<const TSWPListStyle *' */ struct *nextTargetTopicNumbers; /* unknown property attribute:  true> >=Q}}}QQ} */
+@property (nonatomic, readonly) unsigned long long pageCount;
+@property (nonatomic, readonly) unsigned long long pageNumber;
+@property (nonatomic, readonly) TSDLayout *parentLayoutForInlineAttachments;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } position;
+@property (nonatomic, readonly, retain) <TSWPOffscreenColumn> *previousTargetLastColumn;
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{TSWPTopicNumberHints={map<const TSWPListStyle *' */ struct *previousTargetTopicNumbers; /* unknown property attribute:  true> >=Q}}}QQ} */
+@property (nonatomic, readonly) bool shouldHyphenate;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool textIsVertical;
+@property (nonatomic, readonly) int verticalAlignment;
+@property (nonatomic, readonly) bool wantsLineFragments;
 
 + (struct CGSize { double x1; double x2; })minimumBodySize;
 

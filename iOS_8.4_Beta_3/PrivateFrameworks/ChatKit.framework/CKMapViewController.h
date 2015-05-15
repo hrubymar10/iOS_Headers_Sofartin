@@ -8,13 +8,13 @@
     MKMapView *_mapView;
 }
 
-@property(assign,retain) <MKAnnotation> * annotation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MKMapItem * mapItem;
-@property(assign,retain) MKMapView * mapView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) <MKAnnotation> *annotation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MKMapItem *mapItem;
+@property (nonatomic, retain) MKMapView *mapView;
+@property (readonly) Class superclass;
 
 - (void)_toolbarItemPressed:(id)arg1;
 - (id)annotation;

@@ -4,13 +4,13 @@
 
 @interface SADIAGLatencyDiagnosticReportDiagnosticReport : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSNumber * latency;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSURL * uri;
-@property(assign,copy) NSString * verb;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSNumber *latency;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSURL *uri;
+@property (nonatomic, copy) NSString *verb;
 
 + (id)latencyDiagnosticReportDiagnosticReport;
 + (id)latencyDiagnosticReportDiagnosticReportWithDictionary:(id)arg1 context:(id)arg2;

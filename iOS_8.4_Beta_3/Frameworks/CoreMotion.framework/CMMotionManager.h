@@ -6,26 +6,26 @@
     id _internal;
 }
 
-@property(getter=isAccelerometerActive,assign,readonly) bool accelerometerActive;
-@property(getter=isAccelerometerAvailable,assign,readonly) bool accelerometerAvailable;
-@property(assign,readonly) CMAccelerometerData * accelerometerData;
-@property(assign,readwrite) double accelerometerUpdateInterval;
-@property(assign,readonly) CMAmbientPressureData * ambientPressureData;
-@property(assign,readonly) unsigned long long attitudeReferenceFrame;
-@property(assign,readonly) CMDeviceMotion * deviceMotion;
-@property(getter=isDeviceMotionActive,assign,readonly) bool deviceMotionActive;
-@property(getter=isDeviceMotionAvailable,assign,readonly) bool deviceMotionAvailable;
-@property(assign,readwrite) double deviceMotionUpdateInterval;
-@property(getter=isGyroActive,assign,readonly) bool gyroActive;
-@property(getter=isGyroAvailable,assign,readonly) bool gyroAvailable;
-@property(assign,readonly) CMGyroData * gyroData;
-@property(assign,readwrite) double gyroUpdateInterval;
-@property(getter=isMagnetometerActive,assign,readonly) bool magnetometerActive;
-@property(getter=isMagnetometerAvailable,assign,readonly) bool magnetometerAvailable;
-@property(assign,readonly) CMMagnetometerData * magnetometerData;
-@property(assign,readwrite) double magnetometerUpdateInterval;
-@property(assign,readwrite) bool showsDeviceMovementDisplay;
-@property(getter=isSidebandSensorFusionAvailable,assign,readonly) bool sidebandSensorFusionAvailable;
+@property (getter=isAccelerometerActive, nonatomic, readonly) bool accelerometerActive;
+@property (getter=isAccelerometerAvailable, nonatomic, readonly) bool accelerometerAvailable;
+@property (readonly) CMAccelerometerData *accelerometerData;
+@property (nonatomic) double accelerometerUpdateInterval;
+@property (readonly) CMAmbientPressureData *ambientPressureData;
+@property (nonatomic, readonly) unsigned long long attitudeReferenceFrame;
+@property (readonly) CMDeviceMotion *deviceMotion;
+@property (getter=isDeviceMotionActive, nonatomic, readonly) bool deviceMotionActive;
+@property (getter=isDeviceMotionAvailable, nonatomic, readonly) bool deviceMotionAvailable;
+@property (nonatomic) double deviceMotionUpdateInterval;
+@property (getter=isGyroActive, nonatomic, readonly) bool gyroActive;
+@property (getter=isGyroAvailable, nonatomic, readonly) bool gyroAvailable;
+@property (readonly) CMGyroData *gyroData;
+@property (nonatomic) double gyroUpdateInterval;
+@property (getter=isMagnetometerActive, nonatomic, readonly) bool magnetometerActive;
+@property (getter=isMagnetometerAvailable, nonatomic, readonly) bool magnetometerAvailable;
+@property (readonly) CMMagnetometerData *magnetometerData;
+@property (nonatomic) double magnetometerUpdateInterval;
+@property (nonatomic) bool showsDeviceMovementDisplay;
+@property (getter=isSidebandSensorFusionAvailable, nonatomic, readonly) bool sidebandSensorFusionAvailable;
 
 + (unsigned long long)availableAttitudeReferenceFrames;
 + (bool)configureM7Activity:(bool)arg1 stepCounting:(bool)arg2 activityForceCodeTransition:(bool)arg3 stepCountingForceCodeTransition:(bool)arg4 threshold:(bool)arg5 impulse:(bool)arg6 onBodyDetection:(bool)arg7 ispMode:(unsigned char)arg8 predictionInterval:(float)arg9 logLevel:(BOOL)arg10 proactiveRevisitTime:(unsigned short)arg11;

@@ -4,31 +4,31 @@
 
 @interface NSCalendar : NSObject <NSCopying, NSSecureCoding>
 
-@property(assign,copy) NSString * AMSymbol;
-@property(assign,copy) NSString * PMSymbol;
-@property(assign,copy) NSString * calendarIdentifier;
-@property(assign,copy) NSArray * eraSymbols;
-@property(assign,readwrite) unsigned long long firstWeekday;
-@property(assign,copy) NSLocale * locale;
-@property(assign,copy) NSArray * longEraSymbols;
-@property(assign,readwrite) unsigned long long minimumDaysInFirstWeek;
-@property(assign,copy) NSArray * monthSymbols;
-@property(assign,copy) NSArray * quarterSymbols;
-@property(assign,copy) NSArray * shortMonthSymbols;
-@property(assign,copy) NSArray * shortQuarterSymbols;
-@property(assign,copy) NSArray * shortStandaloneMonthSymbols;
-@property(assign,copy) NSArray * shortStandaloneQuarterSymbols;
-@property(assign,copy) NSArray * shortStandaloneWeekdaySymbols;
-@property(assign,copy) NSArray * shortWeekdaySymbols;
-@property(assign,copy) NSArray * standaloneMonthSymbols;
-@property(assign,copy) NSArray * standaloneQuarterSymbols;
-@property(assign,copy) NSArray * standaloneWeekdaySymbols;
-@property(assign,copy) NSTimeZone * timeZone;
-@property(assign,copy) NSArray * veryShortMonthSymbols;
-@property(assign,copy) NSArray * veryShortStandaloneMonthSymbols;
-@property(assign,copy) NSArray * veryShortStandaloneWeekdaySymbols;
-@property(assign,copy) NSArray * veryShortWeekdaySymbols;
-@property(assign,copy) NSArray * weekdaySymbols;
+@property (readonly, copy) NSString *AMSymbol;
+@property (readonly, copy) NSString *PMSymbol;
+@property (readonly, copy) NSString *calendarIdentifier;
+@property (readonly, copy) NSArray *eraSymbols;
+@property unsigned long long firstWeekday;
+@property (copy) NSLocale *locale;
+@property (readonly, copy) NSArray *longEraSymbols;
+@property unsigned long long minimumDaysInFirstWeek;
+@property (readonly, copy) NSArray *monthSymbols;
+@property (readonly, copy) NSArray *quarterSymbols;
+@property (readonly, copy) NSArray *shortMonthSymbols;
+@property (readonly, copy) NSArray *shortQuarterSymbols;
+@property (readonly, copy) NSArray *shortStandaloneMonthSymbols;
+@property (readonly, copy) NSArray *shortStandaloneQuarterSymbols;
+@property (readonly, copy) NSArray *shortStandaloneWeekdaySymbols;
+@property (readonly, copy) NSArray *shortWeekdaySymbols;
+@property (readonly, copy) NSArray *standaloneMonthSymbols;
+@property (readonly, copy) NSArray *standaloneQuarterSymbols;
+@property (readonly, copy) NSArray *standaloneWeekdaySymbols;
+@property (copy) NSTimeZone *timeZone;
+@property (readonly, copy) NSArray *veryShortMonthSymbols;
+@property (readonly, copy) NSArray *veryShortStandaloneMonthSymbols;
+@property (readonly, copy) NSArray *veryShortStandaloneWeekdaySymbols;
+@property (readonly, copy) NSArray *veryShortWeekdaySymbols;
+@property (readonly, copy) NSArray *weekdaySymbols;
 
 + (id)CalCalendarWithUnsanitizedCalendarIdentifier:(id)arg1;
 + (id)CalGregorianCalendarForTimeZone:(id)arg1;

@@ -11,12 +11,12 @@
     NSURL *_probeURL;
 }
 
-@property(assign,copy) NSArray * DNSSearchDomainMatch;
-@property(assign,copy) NSArray * DNSServerAddressMatch;
-@property(assign,copy) NSArray * SSIDMatch;
-@property(assign,readonly) long long action;
-@property(assign,readwrite) long long interfaceTypeMatch;
-@property(assign,copy) NSURL * probeURL;
+@property (copy) NSArray *DNSSearchDomainMatch;
+@property (copy) NSArray *DNSServerAddressMatch;
+@property (copy) NSArray *SSIDMatch;
+@property (readonly) long long action;
+@property long long interfaceTypeMatch;
+@property (copy) NSURL *probeURL;
 
 + (id)createOnDemandRulesFromLegacyDictionary:(id)arg1;
 + (bool)supportsSecureCoding;

@@ -20,13 +20,13 @@
     bool _pending;
 }
 
-@property(assign,readonly) unsigned int* activationStates;
-@property(assign,readonly) unsigned long long activationStatesCount;
-@property(assign,retain) NSMutableArray * cardAIDs;
-@property(assign,readwrite) bool hasPending;
-@property(assign,readonly) unsigned int* lifecycleStates;
-@property(assign,readonly) unsigned long long lifecycleStatesCount;
-@property(assign,readwrite) bool pending;
+@property (nonatomic, readonly) unsigned int*activationStates;
+@property (nonatomic, readonly) unsigned long long activationStatesCount;
+@property (nonatomic, retain) NSMutableArray *cardAIDs;
+@property (nonatomic) bool hasPending;
+@property (nonatomic, readonly) unsigned int*lifecycleStates;
+@property (nonatomic, readonly) unsigned long long lifecycleStatesCount;
+@property (nonatomic) bool pending;
 
 - (void).cxx_destruct;
 - (unsigned int*)activationStates;

@@ -11,7 +11,7 @@
     } listLock;
 }
 
-@property(assign,copy) id changeListener;
+@property (nonatomic, copy) id changeListener;
 
 + (id)defaultDeviceOfType:(unsigned int)arg1;
 + (id)newDeviceList;

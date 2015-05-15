@@ -13,12 +13,12 @@
     unsigned int _to;
 }
 
-@property(assign,readwrite) bool allDay;
-@property(assign,readwrite) unsigned int from;
-@property(assign,readwrite) bool hasAllDay;
-@property(assign,readwrite) bool hasFrom;
-@property(assign,readwrite) bool hasTo;
-@property(assign,readwrite) unsigned int to;
+@property (nonatomic) bool allDay;
+@property (nonatomic) unsigned int from;
+@property (nonatomic) bool hasAllDay;
+@property (nonatomic) bool hasFrom;
+@property (nonatomic) bool hasTo;
+@property (nonatomic) unsigned int to;
 
 - (bool)allDay;
 - (void)copyTo:(id)arg1;

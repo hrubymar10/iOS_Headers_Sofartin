@@ -7,8 +7,8 @@
     NSString *_hostName;
 }
 
-@property(assign,retain) NSError * error;
-@property(assign,retain) NSString * hostName;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, retain) NSString *hostName;
 
 + (id)_gkReachabilityWithHostName:(id)arg1;
 

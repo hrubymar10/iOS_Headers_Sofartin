@@ -4,8 +4,8 @@
 
 @interface TDSchemaElementProduction : TDSimpleArtworkElementProduction
 
-@property(assign,retain) NSString * folderName;
-@property(assign,retain) NSOrderedSet * slices;
+@property (nonatomic, retain) NSString *folderName;
+@property (nonatomic, retain) NSOrderedSet *slices;
 
 - (id)associatedFileURLWithDocument:(id)arg1;
 - (void)generateNewRendition;

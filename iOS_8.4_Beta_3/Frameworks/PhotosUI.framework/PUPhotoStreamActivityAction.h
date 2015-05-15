@@ -8,9 +8,9 @@
     NSString *_valueText;
 }
 
-@property(assign,copy) id action;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSString * valueText;
+@property (nonatomic, copy) id action;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *valueText;
 
 - (void).cxx_destruct;
 - (id)action;

@@ -12,13 +12,13 @@
     long long _updateType;
 }
 
-@property(assign,readonly) long long keyboardType;
-@property(getter=isSecureText,assign,readonly) bool secureText;
-@property(assign,readonly) unsigned long long sessionID;
-@property(assign,readonly) NSString * subtitle;
-@property(assign,readonly) NSString * text;
-@property(assign,readonly) NSString * title;
-@property(assign,readonly) long long updateType;
+@property (nonatomic, readonly) long long keyboardType;
+@property (getter=isSecureText, nonatomic, readonly) bool secureText;
+@property (nonatomic, readonly) unsigned long long sessionID;
+@property (nonatomic, readonly) NSString *subtitle;
+@property (nonatomic, readonly) NSString *text;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) long long updateType;
 
 + (unsigned int)_packetEventType;
 

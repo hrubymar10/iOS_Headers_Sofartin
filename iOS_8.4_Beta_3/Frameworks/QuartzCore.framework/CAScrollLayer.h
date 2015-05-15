@@ -4,7 +4,7 @@
 
 @interface CAScrollLayer : CALayer
 
-@property(assign,copy) NSString * scrollMode;
+@property (copy) NSString *scrollMode;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (id)defaultValueForKey:(id)arg1;

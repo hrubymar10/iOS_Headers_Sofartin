@@ -14,7 +14,7 @@
     } _flags;
 }
 
-@property(assign,readonly) NSArray * arguments;
+@property (readonly) NSArray *arguments;
 
 - (id).cxx_construct;
 - (id)arguments;

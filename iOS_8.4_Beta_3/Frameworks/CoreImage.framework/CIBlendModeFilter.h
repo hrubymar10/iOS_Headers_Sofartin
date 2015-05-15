@@ -7,8 +7,8 @@
     CIImage *inputImage;
 }
 
-@property(assign,retain) CIImage * inputBackgroundImage;
-@property(assign,retain) CIImage * inputImage;
+@property (nonatomic, retain) CIImage *inputBackgroundImage;
+@property (nonatomic, retain) CIImage *inputImage;
 
 + (id)_filter_display_name;
 + (id)_kernel;

@@ -6,9 +6,9 @@
     void *_impl;
 }
 
-@property(assign,readwrite) bool enable;
-@property(assign,readonly) AVAudioUnitEQFilterParameters * filterParameters;
-@property(assign,readwrite) float level;
+@property (nonatomic) bool enable;
+@property (nonatomic, readonly) AVAudioUnitEQFilterParameters *filterParameters;
+@property (nonatomic) float level;
 
 - (void)dealloc;
 - (bool)enable;

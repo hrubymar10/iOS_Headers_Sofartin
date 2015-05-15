@@ -18,13 +18,13 @@
     NSObject<OS_dispatch_source> *_timeoutTimer;
 }
 
-@property(assign,readwrite) int cancelType;
-@property(assign,retain) NSMutableArray * completions;
-@property(assign,retain) NSError * error;
-@property(assign,copy) id expirationHandler;
-@property(assign,copy) id finishedHandler;
-@property(assign,retain) id result;
-@property(assign,retain) SBKTaskAssertion * taskAssertion;
+@property int cancelType;
+@property (retain) NSMutableArray *completions;
+@property (retain) NSError *error;
+@property (copy) id expirationHandler;
+@property (copy) id finishedHandler;
+@property (retain) id result;
+@property (retain) SBKTaskAssertion *taskAssertion;
 
 - (void).cxx_destruct;
 - (void)_invalidateAssertion:(bool)arg1;

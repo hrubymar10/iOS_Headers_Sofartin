@@ -4,16 +4,16 @@
 
 @interface SASettingOpenAppSettings : SASettingOpenSettings <SASettingAppSettingCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * appId;
-@property(assign,copy) NSString * appWithSettingsId;
-@property(assign,copy) NSArray * callbacks;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * location;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic, copy) NSString *appId;
+@property (nonatomic, copy) NSString *appWithSettingsId;
+@property (nonatomic, copy) NSArray *callbacks;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *location;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
 
 + (id)openAppSettings;
 + (id)openAppSettingsWithDictionary:(id)arg1 context:(id)arg2;

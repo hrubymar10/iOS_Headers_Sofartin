@@ -4,8 +4,8 @@
 
 @interface VKSkyDrawStyle : VKRenderStyle
 
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  fillColor; /* unknown property attribute:  1>=[4f]} */
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  horizonColor; /* unknown property attribute:  1>=[4f]} */
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  fillColor; /* unknown property attribute:  1>=[4f]} */
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  horizonColor; /* unknown property attribute:  1>=[4f]} */
 
 + (int)renderStyleID;
 

@@ -8,13 +8,13 @@
     MPMediaPredicate *_thenPredicate;
 }
 
-@property(assign,copy) MPMediaPredicate * conditionPredicate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) MPMediaPredicate * elsePredicate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) MPMediaPredicate * thenPredicate;
+@property (nonatomic, readonly, copy) MPMediaPredicate *conditionPredicate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) MPMediaPredicate *elsePredicate;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, copy) MPMediaPredicate *thenPredicate;
 
 + (id)predicateWithConditionPredicate:(id)arg1 thenPredicate:(id)arg2 elsePredicate:(id)arg3;
 

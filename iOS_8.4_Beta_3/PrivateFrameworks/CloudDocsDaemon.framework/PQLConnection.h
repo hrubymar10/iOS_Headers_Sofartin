@@ -34,24 +34,24 @@
     int _vacuumTracker;
 }
 
-@property(assign,copy) id autoRollbackHandler;
-@property(assign,readonly) long long changes;
-@property(assign,readwrite) bool crashIfUsedAfterClose;
-@property(assign,readonly) struct sqlite3 { }* dbHandle;
-@property(assign,readonly) bool isInBatch;
-@property(assign,readonly) bool isInTransaction;
-@property(assign,copy) NSString * label;
-@property(assign,retain) NSError * lastError;
-@property(assign,readonly) long long lastInsertedRowID;
-@property(assign,copy) id lockedHandler;
-@property(assign,copy) id postFlushHook;
-@property(assign,copy) id preFlushHook;
-@property(assign,copy) id profilingHook;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * serialQueue;
-@property(assign,copy) id sqliteErrorHandler;
-@property(assign,readwrite) unsigned long long statementCacheMaxCount;
-@property(getter=isTraced,assign,readwrite) bool traced;
-@property(assign,copy) NSURL * url;
+@property (nonatomic, copy) id autoRollbackHandler;
+@property (nonatomic, readonly) long long changes;
+@property (nonatomic) bool crashIfUsedAfterClose;
+@property (nonatomic, readonly) struct sqlite3 { }*dbHandle;
+@property (nonatomic, readonly) bool isInBatch;
+@property (nonatomic, readonly) bool isInTransaction;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, retain) NSError *lastError;
+@property (nonatomic, readonly) long long lastInsertedRowID;
+@property (nonatomic, copy) id lockedHandler;
+@property (nonatomic, copy) id postFlushHook;
+@property (nonatomic, copy) id preFlushHook;
+@property (nonatomic, copy) id profilingHook;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *serialQueue;
+@property (nonatomic, copy) id sqliteErrorHandler;
+@property (nonatomic) unsigned long long statementCacheMaxCount;
+@property (getter=isTraced, nonatomic) bool traced;
+@property (nonatomic, readonly, copy) NSURL *url;
 
 + (void)initialize;
 

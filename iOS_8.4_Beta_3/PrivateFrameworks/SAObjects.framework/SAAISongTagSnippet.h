@@ -4,12 +4,12 @@
 
 @interface SAAISongTagSnippet : SAUISnippet
 
-@property(assign,retain) SAUIButton * addButton;
-@property(assign,retain) SAUIAppPunchOut * attributionPunchOut;
-@property(assign,retain) SAMPPlaybackButton * playbackButton;
-@property(assign,retain) SAUIAppPunchOut * purchaseSongPunchOut;
-@property(assign,retain) SAUIAppPunchOut * songDetailsPunchOut;
-@property(assign,retain) SAAISongTag * songTag;
+@property (nonatomic, retain) SAUIButton *addButton;
+@property (nonatomic, retain) SAUIAppPunchOut *attributionPunchOut;
+@property (nonatomic, retain) SAMPPlaybackButton *playbackButton;
+@property (nonatomic, retain) SAUIAppPunchOut *purchaseSongPunchOut;
+@property (nonatomic, retain) SAUIAppPunchOut *songDetailsPunchOut;
+@property (nonatomic, retain) SAAISongTag *songTag;
 
 + (id)songTagSnippet;
 + (id)songTagSnippetWithDictionary:(id)arg1 context:(id)arg2;

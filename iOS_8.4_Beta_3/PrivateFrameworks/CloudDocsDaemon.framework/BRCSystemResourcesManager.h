@@ -23,12 +23,12 @@
     NSHashTable *_reachabilityObservers;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isNetworkReachable;
-@property(assign,readonly) bool isPowerOK;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isNetworkReachable;
+@property (readonly) bool isPowerOK;
+@property (readonly) Class superclass;
 
 + (id)manager;
 

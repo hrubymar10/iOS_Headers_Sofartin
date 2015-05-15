@@ -4,18 +4,18 @@
 
 @interface SAGKAnswerProperty : AceObject <SAAceSerializable>
 
-@property(assign,retain) <SAClientBoundCommand> * command;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) SAUIDecoratedText * decoratedValue;
-@property(assign,retain) SAUIDecoratedText * decoratedValueAnnotation;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * name;
-@property(assign,retain) SAUIAppPunchOut * punchOut;
-@property(assign,copy) NSNumber * selected;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * value;
-@property(assign,copy) NSString * valueAnnotation;
+@property (nonatomic, retain) <SAClientBoundCommand> *command;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) SAUIDecoratedText *decoratedValue;
+@property (nonatomic, retain) SAUIDecoratedText *decoratedValueAnnotation;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) SAUIAppPunchOut *punchOut;
+@property (nonatomic, copy) NSNumber *selected;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *value;
+@property (nonatomic, copy) NSString *valueAnnotation;
 
 + (id)answerProperty;
 + (id)answerPropertyWithDictionary:(id)arg1 context:(id)arg2;

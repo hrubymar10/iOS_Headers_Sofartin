@@ -9,9 +9,9 @@
     unsigned int _valuePlaceholder;
 }
 
-@property(assign,retain) UILabel * detailTextLabel2;
-@property(assign,readwrite) <EKCellShortener> * shortener;
-@property(assign,retain) UILabel * textLabel2;
+@property (nonatomic, readonly, retain) UILabel *detailTextLabel2;
+@property (nonatomic) <EKCellShortener> *shortener;
+@property (nonatomic, readonly, retain) UILabel *textLabel2;
 
 - (void).cxx_destruct;
 - (void)_checkValueWidth;

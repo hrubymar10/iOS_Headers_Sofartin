@@ -12,7 +12,7 @@
     } mLine;
 }
 
-@property(assign,readonly) struct TSCHLegendAnchorLine { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; double x2; } line;
+@property (nonatomic, readonly) struct TSCHLegendAnchorLine { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; double x2; } line;
 
 + (id)halfSpaceWithLine:(struct TSCHLegendAnchorLine { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; double x2; })arg1;
 

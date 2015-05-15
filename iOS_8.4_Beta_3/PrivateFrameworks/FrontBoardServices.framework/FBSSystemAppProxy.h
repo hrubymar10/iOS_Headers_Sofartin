@@ -6,7 +6,7 @@
     bool _uiApplicationClient;
 }
 
-@property(getter=isUIApplicationClient,setter=setUIApplicationClient:,assign,readwrite) bool uiApplicationClient;
+@property (getter=isUIApplicationClient, setter=setUIApplicationClient:) bool uiApplicationClient;
 
 + (id)sharedInstance;
 

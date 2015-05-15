@@ -58,8 +58,8 @@
     bool mQueriedModel;
 }
 
-@property(assign,readonly) TSTMasterLayout * masterLayout;
-@property(assign,readonly) TSTTableModel * tableModel;
+@property (nonatomic, readonly) TSTMasterLayout *masterLayout;
+@property (nonatomic, readonly) TSTTableModel *tableModel;
 
 - (id).cxx_construct;
 - (void)dealloc;

@@ -11,7 +11,7 @@
     struct CGColor { } *_rawColor;
 }
 
-@property(assign,readonly) double offset;
+@property (nonatomic, readonly) double offset;
 
 - (long long)compare:(id)arg1;
 - (struct CGColor { }*)copyCGColor;

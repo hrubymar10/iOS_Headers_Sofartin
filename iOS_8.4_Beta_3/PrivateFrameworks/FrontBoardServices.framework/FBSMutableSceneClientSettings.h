@@ -4,9 +4,9 @@
 
 @interface FBSMutableSceneClientSettings : FBSSceneClientSettings
 
-@property(assign,copy) NSSet * occlusions;
-@property(assign,readwrite) long long preferredInterfaceOrientation;
-@property(assign,readwrite) double preferredLevel;
+@property (nonatomic, copy) NSSet *occlusions;
+@property (nonatomic) long long preferredInterfaceOrientation;
+@property (nonatomic) double preferredLevel;
 
 + (bool)_isMutable;
 

@@ -21,20 +21,20 @@
     bool _usesOpportunisticSockets;
 }
 
-@property(assign,copy) NSString * accountIdentifier;
-@property(assign,readwrite) bool allowsTrustPrompt;
-@property(assign,retain) NSArray * clientCertificates;
-@property(assign,readonly) bool isCellularConnection;
-@property(assign,readonly) bool isReadable;
-@property(assign,readonly) bool isValid;
-@property(assign,readonly) bool isWritable;
-@property(assign,readonly) NSString * remoteHostname;
-@property(assign,readonly) unsigned int remotePortNumber;
-@property(assign,readonly) NSArray * serverCertificates;
-@property(assign,copy) NSString * sourceApplicationBundleIdentifier;
-@property(assign,readonly) NSData * sourceIPAddress;
-@property(assign,readwrite) int timeout;
-@property(assign,readwrite) bool usesOpportunisticSockets;
+@property (nonatomic, copy) NSString *accountIdentifier;
+@property (nonatomic) bool allowsTrustPrompt;
+@property (nonatomic, retain) NSArray *clientCertificates;
+@property (nonatomic, readonly) bool isCellularConnection;
+@property (nonatomic, readonly) bool isReadable;
+@property (nonatomic, readonly) bool isValid;
+@property (nonatomic, readonly) bool isWritable;
+@property (nonatomic, readonly) NSString *remoteHostname;
+@property (nonatomic, readonly) unsigned int remotePortNumber;
+@property (nonatomic, readonly) NSArray *serverCertificates;
+@property (nonatomic, copy) NSString *sourceApplicationBundleIdentifier;
+@property (nonatomic, readonly) NSData *sourceIPAddress;
+@property (nonatomic) int timeout;
+@property (nonatomic) bool usesOpportunisticSockets;
 
 - (unsigned int)_bufferedByteCount;
 - (bool)_startSSLHandshakeWithProtocol:(id)arg1 disableSSL2:(bool)arg2 errorPtr:(id*)arg3;

@@ -7,8 +7,8 @@
     NSSet *_directoryGatewayURLs;
 }
 
-@property(assign,readonly) NSSet * addressBookHomes;
-@property(assign,readonly) NSSet * directoryGatewayURLs;
+@property (nonatomic, readonly) NSSet *addressBookHomes;
+@property (nonatomic, readonly) NSSet *directoryGatewayURLs;
 
 - (id)_copyAccountPropertiesPropFindElements;
 - (void)_setPropertiesFromParsedResponses:(id)arg1;

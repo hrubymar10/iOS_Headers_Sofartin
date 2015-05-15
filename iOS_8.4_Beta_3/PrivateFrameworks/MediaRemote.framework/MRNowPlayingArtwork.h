@@ -4,8 +4,8 @@
 
 @interface MRNowPlayingArtwork : NSObject
 
-@property(assign,readonly) bool hasArtworkData;
-@property(assign,readonly) unsigned int type;
+@property (nonatomic, readonly) bool hasArtworkData;
+@property (nonatomic, readonly) unsigned int type;
 
 + (id)createNowPlayingArtworkFromXPCDictionary:(id)arg1;
 

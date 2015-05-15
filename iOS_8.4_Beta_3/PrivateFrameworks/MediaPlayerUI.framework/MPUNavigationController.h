@@ -7,8 +7,8 @@
     bool _supportsStandardInterfaceOrientations;
 }
 
-@property(assign,copy) id overrideSupportedInterfaceOrientationsHandler;
-@property(assign,readwrite) bool supportsStandardInterfaceOrientations;
+@property (nonatomic, copy) id overrideSupportedInterfaceOrientationsHandler;
+@property (nonatomic) bool supportsStandardInterfaceOrientations;
 
 - (void).cxx_destruct;
 - (id)overrideSupportedInterfaceOrientationsHandler;

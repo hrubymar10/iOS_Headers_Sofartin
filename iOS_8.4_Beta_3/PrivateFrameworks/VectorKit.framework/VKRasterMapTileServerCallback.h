@@ -8,9 +8,9 @@
     double startTimestamp;
 }
 
-@property(assign,copy) id handler;
-@property(assign,retain) VKRasterMapTileRequest * request;
-@property(assign,readwrite) double startTimestamp;
+@property (nonatomic, copy) id handler;
+@property (nonatomic, retain) VKRasterMapTileRequest *request;
+@property (nonatomic) double startTimestamp;
 
 - (void)dealloc;
 - (id)description;

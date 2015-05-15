@@ -17,17 +17,17 @@
     int _status;
 }
 
-@property(assign,readwrite) unsigned int distance;
-@property(assign,readwrite) bool hasDistance;
-@property(assign,readwrite) bool hasHistoricTravelTime;
-@property(assign,readwrite) bool hasLiveTravelTime;
-@property(assign,readonly) bool hasPlaceSearchResponse;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,readwrite) unsigned int historicTravelTime;
-@property(assign,readwrite) unsigned int liveTravelTime;
-@property(assign,retain) GEOPlaceSearchResponse * placeSearchResponse;
-@property(assign,retain) NSMutableArray * sortedETAs;
-@property(assign,readwrite) int status;
+@property (nonatomic) unsigned int distance;
+@property (nonatomic) bool hasDistance;
+@property (nonatomic) bool hasHistoricTravelTime;
+@property (nonatomic) bool hasLiveTravelTime;
+@property (nonatomic, readonly) bool hasPlaceSearchResponse;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic) unsigned int historicTravelTime;
+@property (nonatomic) unsigned int liveTravelTime;
+@property (nonatomic, retain) GEOPlaceSearchResponse *placeSearchResponse;
+@property (nonatomic, retain) NSMutableArray *sortedETAs;
+@property (nonatomic) int status;
 
 - (void)addSortedETA:(id)arg1;
 - (void)clearSortedETAs;

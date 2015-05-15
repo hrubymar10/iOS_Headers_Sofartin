@@ -6,8 +6,8 @@
     <TUAudioPlayerDelegateProtocol> *_delegate;
 }
 
-@property(assign,readwrite) <TUAudioPlayerDelegateProtocol> * delegate;
-@property(assign,readonly) bool playingSound;
+@property (nonatomic) <TUAudioPlayerDelegateProtocol> *delegate;
+@property (nonatomic, readonly) bool playingSound;
 
 - (void)dealloc;
 - (id)delegate;

@@ -9,10 +9,10 @@
     NSArray *_sortedProperties;
 }
 
-@property(assign,readonly) Class handle;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSDictionary * propertiesByName;
-@property(assign,readonly) NSArray * sortedProperties;
+@property (nonatomic, readonly) Class handle;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSDictionary *propertiesByName;
+@property (nonatomic, readonly) NSArray *sortedProperties;
 
 + (id)classForHandle:(Class)arg1;
 + (id)classForObject:(id)arg1;

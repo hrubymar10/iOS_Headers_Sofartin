@@ -6,7 +6,7 @@
     unsigned long long _method;
 }
 
-@property(assign,readonly) unsigned long long method;
+@property (nonatomic, readonly) unsigned long long method;
 
 + (bool)supportsSecureCoding;
 

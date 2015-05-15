@@ -4,12 +4,12 @@
 
 @interface SALocalSearchOfferList : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * offers;
-@property(assign,copy) NSString * providerId;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *offers;
+@property (nonatomic, copy) NSString *providerId;
+@property (readonly) Class superclass;
 
 + (id)offerList;
 + (id)offerListWithDictionary:(id)arg1 context:(id)arg2;

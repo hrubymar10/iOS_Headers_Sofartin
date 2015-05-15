@@ -8,9 +8,9 @@
     MSVArtworkServiceRequest *_request;
 }
 
-@property(assign,copy) NSString * debugMessage;
-@property(assign,readonly) NSError * operationError;
-@property(assign,readonly) MSVArtworkServiceRequest * request;
+@property (nonatomic, readonly, copy) NSString *debugMessage;
+@property (nonatomic, readonly) NSError *operationError;
+@property (nonatomic, readonly) MSVArtworkServiceRequest *request;
 
 - (void).cxx_destruct;
 - (id)debugMessage;

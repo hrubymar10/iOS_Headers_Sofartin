@@ -16,17 +16,17 @@
     id _underlyingResult;
 }
 
-@property(assign,readwrite) bool async;
-@property(assign,readwrite) long long attemptsRemaining;
-@property(assign,copy) id completionBlock;
-@property(assign,readwrite) bool didSucceed;
-@property(assign,readwrite) double interval;
-@property(assign,readwrite) long long maxAttempts;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * queue;
-@property(assign,copy) id replayBlock;
-@property(assign,retain) NSError * underlyingError;
-@property(assign,retain) id underlyingResult;
+@property (nonatomic) bool async;
+@property (nonatomic) long long attemptsRemaining;
+@property (nonatomic, copy) id completionBlock;
+@property (nonatomic) bool didSucceed;
+@property (nonatomic) double interval;
+@property (nonatomic) long long maxAttempts;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, copy) id replayBlock;
+@property (nonatomic, retain) NSError *underlyingError;
+@property (nonatomic, retain) id underlyingResult;
 
 + (id)replayBlock:(id)arg1 name:(id)arg2 attempts:(long long)arg3 interval:(double)arg4 async:(bool)arg5 queue:(id)arg6 completion:(id)arg7;
 

@@ -4,7 +4,7 @@
 
 @interface MNFNoteProperty : NSManagedObject
 
-@property(assign,retain) NSString * propertyKey;
-@property(assign,retain) id propertyValue;
+@property (nonatomic, retain) NSString *propertyKey;
+@property (nonatomic, retain) id propertyValue;
 
 @end

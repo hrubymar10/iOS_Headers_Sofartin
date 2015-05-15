@@ -7,8 +7,8 @@
     UIWebView *_webView;
 }
 
-@property(assign,retain) NSData * content;
-@property(assign,readonly) UIWebView * webView;
+@property (nonatomic, retain) NSData *content;
+@property (nonatomic, readonly) UIWebView *webView;
 
 - (id)content;
 - (void)dealloc;

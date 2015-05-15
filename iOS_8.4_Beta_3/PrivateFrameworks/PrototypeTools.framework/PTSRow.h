@@ -20,25 +20,25 @@
     id _valueValidatator;
 }
 
-@property(assign,copy) PTSRowAction * action;
-@property(assign,readwrite) long long allowedEditingTypes;
-@property(assign,copy) NSPredicate * condition;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) _UISettings * groupChild;
-@property(assign,retain) NSString * groupKeyPath;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * imageKeyPath;
-@property(assign,readwrite) PTSSection * section;
-@property(assign,retain) _UISettings * settings;
-@property(assign,retain) UIImage * staticImage;
-@property(assign,copy) NSString * staticTitle;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * titleKeyPath;
-@property(assign,retain) id value;
-@property(assign,copy) id valueFormatter;
-@property(assign,copy) NSString * valueKeyPath;
-@property(assign,copy) id valueValidatator;
+@property (nonatomic, copy) PTSRowAction *action;
+@property (nonatomic) long long allowedEditingTypes;
+@property (nonatomic, copy) NSPredicate *condition;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) _UISettings *groupChild;
+@property (nonatomic, retain) NSString *groupKeyPath;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *imageKeyPath;
+@property (nonatomic) PTSSection *section;
+@property (nonatomic, retain) _UISettings *settings;
+@property (nonatomic, retain) UIImage *staticImage;
+@property (nonatomic, copy) NSString *staticTitle;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *titleKeyPath;
+@property (nonatomic, retain) id value;
+@property (nonatomic, copy) id valueFormatter;
+@property (nonatomic, copy) NSString *valueKeyPath;
+@property (nonatomic, copy) id valueValidatator;
 
 + (id)row;
 + (id)rowWithTitle:(id)arg1 valueKeyPath:(id)arg2;

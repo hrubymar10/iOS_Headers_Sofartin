@@ -4,11 +4,11 @@
 
 @interface TSDMutableColorFill : TSDColorFill <NSCopying>
 
-@property(assign,readwrite) double brightness;
-@property(assign,copy) TSUColor * color;
-@property(assign,readwrite) double hue;
-@property(assign,readwrite) double opacity;
-@property(assign,readwrite) double saturation;
+@property (nonatomic) double brightness;
+@property (nonatomic, copy) TSUColor *color;
+@property (nonatomic) double hue;
+@property (nonatomic) double opacity;
+@property (nonatomic) double saturation;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setBrightness:(double)arg1;

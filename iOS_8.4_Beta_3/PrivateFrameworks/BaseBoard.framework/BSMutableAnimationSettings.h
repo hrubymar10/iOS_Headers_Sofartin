@@ -4,10 +4,10 @@
 
 @interface BSMutableAnimationSettings : BSAnimationSettings
 
-@property(assign,readwrite) double delay;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) double frameInterval;
-@property(assign,retain) CAMediaTimingFunction * timingFunction;
+@property (nonatomic) double delay;
+@property (nonatomic) double duration;
+@property (nonatomic) double frameInterval;
+@property (nonatomic, retain) CAMediaTimingFunction *timingFunction;
 
 + (id)settingsWithDuration:(double)arg1;
 + (id)settingsWithDuration:(double)arg1 delay:(double)arg2;

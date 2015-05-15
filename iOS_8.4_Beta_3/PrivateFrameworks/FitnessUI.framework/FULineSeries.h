@@ -36,24 +36,24 @@
     int _waveForm;
 }
 
-@property(assign,retain) NSArray * barViews;
-@property(assign,retain) FUGradientObject * fillGradient;
-@property(assign,retain) UIColor * highlightIndicatorColor;
-@property(assign,readwrite) struct CGGradient { }* highlightIndicatorGradient;
-@property(assign,retain) UIView * highlightView;
-@property(assign,retain) UIColor * lineColor;
-@property(assign,readwrite) double lineWidth;
-@property(assign,retain) NSArray * plotPoints;
-@property(assign,retain) UIColor * pointColor;
-@property(assign,readwrite) int pointOccurrence;
-@property(assign,readwrite) float pointRadius;
-@property(assign,readwrite) int pointStyle;
-@property(assign,retain) FUGradientObject * selectedFillGradient;
-@property(assign,retain) UIColor * selectedLineColor;
-@property(assign,retain) UIColor * selectedPointColor;
-@property(assign,readwrite) float sineWaveSmoothingFactor;
-@property(assign,readwrite) bool snapToPoint;
-@property(assign,readwrite) int waveForm;
+@property (nonatomic, retain) NSArray *barViews;
+@property (nonatomic, retain) FUGradientObject *fillGradient;
+@property (nonatomic, retain) UIColor *highlightIndicatorColor;
+@property (nonatomic) struct CGGradient { }*highlightIndicatorGradient;
+@property (nonatomic, retain) UIView *highlightView;
+@property (nonatomic, retain) UIColor *lineColor;
+@property (nonatomic) double lineWidth;
+@property (nonatomic, retain) NSArray *plotPoints;
+@property (nonatomic, retain) UIColor *pointColor;
+@property (nonatomic) int pointOccurrence;
+@property (nonatomic) float pointRadius;
+@property (nonatomic) int pointStyle;
+@property (nonatomic, retain) FUGradientObject *selectedFillGradient;
+@property (nonatomic, retain) UIColor *selectedLineColor;
+@property (nonatomic, retain) UIColor *selectedPointColor;
+@property (nonatomic) float sineWaveSmoothingFactor;
+@property (nonatomic) bool snapToPoint;
+@property (nonatomic) int waveForm;
 
 - (void).cxx_destruct;
 - (void)_clipHighlightLayerWithPoints:(id)arg1;

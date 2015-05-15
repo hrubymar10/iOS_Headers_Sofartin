@@ -9,10 +9,10 @@
     long long _uniqueID;
 }
 
-@property(assign,readwrite) int errorCount;
-@property(assign,readonly) <NSCoding> * object;
-@property(assign,readwrite) long long size;
-@property(assign,readwrite) long long uniqueID;
+@property (nonatomic) int errorCount;
+@property (nonatomic, readonly) <NSCoding> *object;
+@property (nonatomic) long long size;
+@property (nonatomic) long long uniqueID;
 
 + (long long)indexOfObject:(id)arg1 inWrapperArray:(id)arg2;
 + (id)objectsFromWrappers:(id)arg1;

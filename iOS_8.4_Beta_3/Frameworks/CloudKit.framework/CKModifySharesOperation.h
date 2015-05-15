@@ -12,13 +12,13 @@
     NSArray *_sharesToSave;
 }
 
-@property(assign,retain) NSMutableArray * deletedShareIDs;
-@property(assign,copy) id modifySharesCompletionBlock;
-@property(assign,retain) NSMutableDictionary * savedSharesByShareID;
-@property(assign,retain) NSMutableDictionary * shareErrorsByShareID;
-@property(assign,readonly) NSArray * shareIDsToDelete;
-@property(assign,retain) NSMutableDictionary * sharesByShareID;
-@property(assign,readonly) NSArray * sharesToSave;
+@property (nonatomic, retain) NSMutableArray *deletedShareIDs;
+@property (nonatomic, copy) id modifySharesCompletionBlock;
+@property (nonatomic, retain) NSMutableDictionary *savedSharesByShareID;
+@property (nonatomic, retain) NSMutableDictionary *shareErrorsByShareID;
+@property (nonatomic, readonly) NSArray *shareIDsToDelete;
+@property (nonatomic, retain) NSMutableDictionary *sharesByShareID;
+@property (nonatomic, readonly) NSArray *sharesToSave;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

@@ -7,15 +7,15 @@
     TSPPackage *_package;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) TSPDocumentProperties * documentProperties;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isPasswordProtected;
-@property(assign,readonly) bool isValid;
-@property(assign,readonly) long long packageType;
-@property(assign,readonly) NSString * passwordHint;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) TSPDocumentProperties *documentProperties;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isPasswordProtected;
+@property (nonatomic, readonly) bool isValid;
+@property (nonatomic, readonly) long long packageType;
+@property (nonatomic, readonly) NSString *passwordHint;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)checkPassword:(id)arg1;

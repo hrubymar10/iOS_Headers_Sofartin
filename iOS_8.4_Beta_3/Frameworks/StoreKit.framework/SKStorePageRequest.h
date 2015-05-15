@@ -8,9 +8,9 @@
     NSURL *_productURL;
 }
 
-@property(assign,readwrite) long long productPageStyle;
-@property(assign,copy) NSDictionary * productParameters;
-@property(assign,copy) NSURL * productURL;
+@property (nonatomic) long long productPageStyle;
+@property (nonatomic, copy) NSDictionary *productParameters;
+@property (nonatomic, copy) NSURL *productURL;
 
 - (id)copyXPCEncoding;
 - (void)dealloc;

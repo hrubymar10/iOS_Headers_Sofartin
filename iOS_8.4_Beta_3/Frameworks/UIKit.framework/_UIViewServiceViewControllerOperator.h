@@ -41,11 +41,11 @@
     _UIViewControllerOneToOneTransitionContext *_viewControllerTransitioningContext;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <_UIViewServiceViewControllerOperatorDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <_UIViewServiceViewControllerOperatorDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)XPCInterface;
 + (id)operatorWithRemoteViewControllerProxy:(id)arg1 hostPID:(int)arg2 hostBundleID:(id)arg3 hostAuditToken:(struct { unsigned int x1[8]; })arg4;

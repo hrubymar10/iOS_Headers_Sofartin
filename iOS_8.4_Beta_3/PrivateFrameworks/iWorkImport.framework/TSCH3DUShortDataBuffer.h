@@ -12,7 +12,7 @@
     } mContainer;
 }
 
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{vector<TSCH3D::PODType<unsigned short>' */ struct * container; /* unknown property attribute:  std::__1::allocator<TSCH3D::PODType<unsigned short> > >=^{PODType<unsigned short>}}} */
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{vector<TSCH3D::PODType<unsigned short>' */ struct *container; /* unknown property attribute:  std::__1::allocator<TSCH3D::PODType<unsigned short> > >=^{PODType<unsigned short>}}} */
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

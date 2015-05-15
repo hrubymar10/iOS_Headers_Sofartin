@@ -11,7 +11,7 @@
     UIView *_reorderSeparatorView;
 }
 
-@property(getter=isDataRequired,assign,readonly) bool dataRequired;
+@property (getter=isDataRequired, nonatomic, readonly) bool dataRequired;
 
 - (void)dealloc;
 - (id)deleteConfirmationControl:(bool)arg1;

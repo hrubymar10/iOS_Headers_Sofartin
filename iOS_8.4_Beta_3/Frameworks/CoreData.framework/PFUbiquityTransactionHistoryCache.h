@@ -18,11 +18,11 @@
     NSString *_storeName;
 }
 
-@property(assign,readonly) PFUbiquityKnowledgeVector * cacheKV;
-@property(assign,readonly) NSArray * cachedGlobalIDs;
-@property(assign,retain) PFUbiquityGlobalObjectIDCache * globalIDCache;
-@property(assign,readonly) PFUbiquityKnowledgeVector * minCacheKV;
-@property(assign,readonly) PFUbiquityLocation * ubiquityRootLocation;
+@property (nonatomic, readonly) PFUbiquityKnowledgeVector *cacheKV;
+@property (nonatomic, readonly) NSArray *cachedGlobalIDs;
+@property (nonatomic, retain) PFUbiquityGlobalObjectIDCache *globalIDCache;
+@property (nonatomic, readonly) PFUbiquityKnowledgeVector *minCacheKV;
+@property (nonatomic, readonly) PFUbiquityLocation *ubiquityRootLocation;
 
 - (bool)addTransactionEntry:(id)arg1 error:(id*)arg2;
 - (bool)addTransactionEntryLight:(id)arg1 needsWrite:(bool)arg2 error:(id*)arg3;

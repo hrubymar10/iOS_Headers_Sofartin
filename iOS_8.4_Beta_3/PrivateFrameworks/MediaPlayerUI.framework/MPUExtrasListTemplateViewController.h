@@ -14,11 +14,11 @@
     UIImageView *_vignetteView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPUExtrasViewElementViewController * relatedContentViewController;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPUExtrasViewElementViewController *relatedContentViewController;
+@property (readonly) Class superclass;
 
 + (id)relatedContentViewControllerForElement:(id)arg1;
 

@@ -29,20 +29,20 @@
     } _scrollSpeed;
 }
 
-@property(setter=_setLastContentOffset:,assign,readwrite) struct CGPoint { double x1; double x2; } _lastContentOffset;
-@property(setter=_setLastContentSize:,assign,readwrite) struct CGSize { double x1; double x2; } _lastContentSize;
-@property(setter=_setLastScrollView:,assign,readwrite) UIScrollView * _lastScrollView;
-@property(setter=_setLastTime:,assign,readwrite) double _lastTime;
-@property(setter=_setNextRegime:,assign,readwrite) long long _nextRegime;
-@property(setter=_setNextRegimeCount:,assign,readwrite) long long _nextRegimeCount;
-@property(setter=_setTimeoutTimer:,assign,retain) NSTimer * _timeoutTimer;
-@property(assign,readwrite) <PUScrollViewSpeedometerDelegate> * delegate;
-@property(assign,readwrite) double fastLowerThreshold;
-@property(assign,readwrite) double fastUpperThreshold;
-@property(assign,readwrite) double mediumLowerThreshold;
-@property(assign,readwrite) double mediumUpperThreshold;
-@property(assign,readwrite) long long regime;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } scrollSpeed;
+@property (setter=_setLastContentOffset:, nonatomic) struct CGPoint { double x1; double x2; } _lastContentOffset;
+@property (setter=_setLastContentSize:, nonatomic) struct CGSize { double x1; double x2; } _lastContentSize;
+@property (setter=_setLastScrollView:, nonatomic) UIScrollView *_lastScrollView;
+@property (setter=_setLastTime:, nonatomic) double _lastTime;
+@property (setter=_setNextRegime:, nonatomic) long long _nextRegime;
+@property (setter=_setNextRegimeCount:, nonatomic) long long _nextRegimeCount;
+@property (setter=_setTimeoutTimer:, nonatomic, retain) NSTimer *_timeoutTimer;
+@property (nonatomic) <PUScrollViewSpeedometerDelegate> *delegate;
+@property (nonatomic) double fastLowerThreshold;
+@property (nonatomic) double fastUpperThreshold;
+@property (nonatomic) double mediumLowerThreshold;
+@property (nonatomic) double mediumUpperThreshold;
+@property (nonatomic) long long regime;
+@property (nonatomic) struct CGPoint { double x1; double x2; } scrollSpeed;
 
 - (void).cxx_destruct;
 - (void)_handleTimeoutTimer:(id)arg1;

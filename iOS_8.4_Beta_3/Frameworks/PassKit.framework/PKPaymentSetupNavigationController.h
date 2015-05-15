@@ -11,13 +11,13 @@
     PKPaymentWebService *_webService;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * prefetchedCredentials;
-@property(assign,readwrite) <PKPaymentSetupDelegate> * setupDelegate;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) PKPaymentWebService * webService;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *prefetchedCredentials;
+@property (nonatomic) <PKPaymentSetupDelegate> *setupDelegate;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) PKPaymentWebService *webService;
 
 + (id)viewControllerForPresentingPaymentError:(id)arg1;
 

@@ -13,14 +13,14 @@
     id _writeHandler;
 }
 
-@property(assign,retain) BTLEClient * client;
-@property(assign,copy) NSString * readCharacteristic;
-@property(assign,copy) NSData * readData;
-@property(assign,copy) id readHandler;
-@property(assign,copy) id replyHandler;
-@property(assign,copy) NSString * writeCharacteristic;
-@property(assign,copy) NSData * writeData;
-@property(assign,copy) id writeHandler;
+@property (nonatomic, retain) BTLEClient *client;
+@property (nonatomic, copy) NSString *readCharacteristic;
+@property (nonatomic, copy) NSData *readData;
+@property (nonatomic, copy) id readHandler;
+@property (nonatomic, copy) id replyHandler;
+@property (nonatomic, copy) NSString *writeCharacteristic;
+@property (nonatomic, copy) NSData *writeData;
+@property (nonatomic, copy) id writeHandler;
 
 - (id)client;
 - (id)readCharacteristic;

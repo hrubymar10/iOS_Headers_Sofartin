@@ -9,7 +9,7 @@
     double rssihistory;
 }
 
-@property(assign,readonly) CALayer * layer;
+@property (nonatomic, readonly) CALayer *layer;
 
 - (void).cxx_destruct;
 - (id)accessibilityValue;

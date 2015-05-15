@@ -6,7 +6,7 @@
     UIColor *_color;
 }
 
-@property(assign,readonly) UIColor * color;
+@property (nonatomic, readonly) UIColor *color;
 
 + (bool)supportsSecureCoding;
 + (id)wrapperForColor:(id)arg1;

@@ -7,7 +7,7 @@
     NSString *_string;
 }
 
-@property(assign,readonly) unsigned long long position;
+@property (readonly) unsigned long long position;
 
 + (id)scannerWithString:(id)arg1;
 

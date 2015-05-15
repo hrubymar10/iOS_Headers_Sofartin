@@ -12,14 +12,14 @@
     float _zoomLevel;
 }
 
-@property(assign,retain) GEOLatLng * coordinate;
-@property(assign,readonly) bool hasCoordinate;
-@property(assign,readonly) bool hasImage;
-@property(assign,readonly) bool hasViewportInfo;
-@property(assign,readwrite) bool hasZoomLevel;
-@property(assign,retain) NSData * image;
-@property(assign,retain) GEOPDViewportInfo * viewportInfo;
-@property(assign,readwrite) float zoomLevel;
+@property (nonatomic, retain) GEOLatLng *coordinate;
+@property (nonatomic, readonly) bool hasCoordinate;
+@property (nonatomic, readonly) bool hasImage;
+@property (nonatomic, readonly) bool hasViewportInfo;
+@property (nonatomic) bool hasZoomLevel;
+@property (nonatomic, retain) NSData *image;
+@property (nonatomic, retain) GEOPDViewportInfo *viewportInfo;
+@property (nonatomic) float zoomLevel;
 
 - (id)coordinate;
 - (void)copyTo:(id)arg1;

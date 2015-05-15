@@ -16,12 +16,12 @@
     } _visualStyling;
 }
 
-@property(assign,copy) TIKeyboardCandidate * candidate;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,retain) UILabel * label;
-@property(assign,retain) UILabel * secondaryLabel;
-@property(assign,retain) UIKBThemedView * themedView;
-@property(assign,readwrite) struct { unsigned int x1 : 6; unsigned int x2 : 1; unsigned int x3 : 1; unsigned int x4 : 8; unsigned int x5 : 16; } visualStyling;
+@property (nonatomic, copy) TIKeyboardCandidate *candidate;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic, retain) UILabel *label;
+@property (nonatomic, retain) UILabel *secondaryLabel;
+@property (nonatomic, retain) UIKBThemedView *themedView;
+@property (nonatomic) struct { unsigned int x1 : 6; unsigned int x2 : 1; unsigned int x3 : 1; unsigned int x4 : 8; unsigned int x5 : 16; } visualStyling;
 
 + (id)labelFontForText:(id)arg1;
 + (id)secondaryLabelFont;

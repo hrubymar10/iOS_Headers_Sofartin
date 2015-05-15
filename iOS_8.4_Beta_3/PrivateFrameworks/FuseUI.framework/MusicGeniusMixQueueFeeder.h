@@ -7,7 +7,7 @@
     <MusicGeniusMixQueueFeederDataSource> *_dataSource;
 }
 
-@property(assign,retain) <MusicGeniusMixQueueFeederDataSource> * dataSource;
+@property (nonatomic, retain) <MusicGeniusMixQueueFeederDataSource> *dataSource;
 
 - (void).cxx_destruct;
 - (id)dataSource;

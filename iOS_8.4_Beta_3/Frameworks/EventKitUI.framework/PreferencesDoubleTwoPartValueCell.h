@@ -7,8 +7,8 @@
     TwoPartTextLabel *_twoPartLabel2;
 }
 
-@property(assign,retain) UILabel * textLabel2;
-@property(assign,retain) TwoPartTextLabel * twoPartTextLabel2;
+@property (nonatomic, readonly, retain) UILabel *textLabel2;
+@property (nonatomic, readonly, retain) TwoPartTextLabel *twoPartTextLabel2;
 
 - (void).cxx_destruct;
 - (void)_layoutSubviewsCore;

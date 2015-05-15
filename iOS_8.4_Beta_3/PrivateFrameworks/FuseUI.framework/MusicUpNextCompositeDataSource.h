@@ -9,13 +9,13 @@
     MusicSectionEntityValueContext *_sectionEntityValueContext;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicUpNextCompositeDataSourceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MusicEntityViewHorizontalLockupContentDescriptor * horizontalLockupContentDescriptor;
-@property(assign,retain) MPUAVPlayer * player;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicUpNextCompositeDataSourceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MusicEntityViewHorizontalLockupContentDescriptor *horizontalLockupContentDescriptor;
+@property (nonatomic, retain) MPUAVPlayer *player;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_configureEntityValueContextOutput:(id)arg1;

@@ -8,13 +8,13 @@
     NSString *_source;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * messageId;
-@property(assign,readonly) long long messageIdHash;
-@property(assign,readonly) NSString * source;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *messageId;
+@property (nonatomic, readonly) long long messageIdHash;
+@property (nonatomic, readonly) NSString *source;
+@property (readonly) Class superclass;
 
 + (bool)isSupportedEntityType:(long long)arg1;
 

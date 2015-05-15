@@ -6,7 +6,7 @@
     NSData *_xmlUIData;
 }
 
-@property(assign,readonly) NSData * xmlUIData;
+@property (nonatomic, readonly) NSData *xmlUIData;
 
 - (void).cxx_destruct;
 - (bool)bodyIsPlist;

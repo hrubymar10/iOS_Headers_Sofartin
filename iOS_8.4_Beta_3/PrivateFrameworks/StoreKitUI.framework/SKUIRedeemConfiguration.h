@@ -12,13 +12,13 @@
     UIImage *_successImage;
 }
 
-@property(assign,readonly) SKUIITunesPassConfiguration * ITunesPassConfiguration;
-@property(assign,readonly) long long category;
-@property(assign,readonly) SKUIClientContext * clientContext;
-@property(assign,readonly) UIImage * inputImage;
-@property(assign,readonly) UIImage * landingImage;
-@property(assign,readonly) NSOperationQueue * operationQueue;
-@property(assign,readonly) UIImage * successImage;
+@property (nonatomic, readonly) SKUIITunesPassConfiguration *ITunesPassConfiguration;
+@property (nonatomic, readonly) long long category;
+@property (nonatomic, readonly) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) UIImage *inputImage;
+@property (nonatomic, readonly) UIImage *landingImage;
+@property (nonatomic, readonly) NSOperationQueue *operationQueue;
+@property (nonatomic, readonly) UIImage *successImage;
 
 - (void).cxx_destruct;
 - (id)ITunesPassConfiguration;

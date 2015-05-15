@@ -9,14 +9,14 @@
     NSMutableDictionary *_urls;
 }
 
-@property(assign,readonly) NSMutableDictionary * cacheRepresentation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long numberOfVariants;
-@property(assign,readonly) NSString * orientationString;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) long long uniqueIdentifier;
+@property (nonatomic, readonly) NSMutableDictionary *cacheRepresentation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long numberOfVariants;
+@property (nonatomic, readonly) NSString *orientationString;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) long long uniqueIdentifier;
 
 - (void).cxx_destruct;
 - (id)URLForVariant:(id)arg1;

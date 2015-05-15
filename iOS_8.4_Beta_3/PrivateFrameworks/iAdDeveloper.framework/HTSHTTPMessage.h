@@ -8,9 +8,9 @@
     NSString *_versionString;
 }
 
-@property(assign,retain) NSData * body;
-@property(assign,retain) NSMutableDictionary * headers;
-@property(assign,copy) NSString * versionString;
+@property (nonatomic, retain) NSData *body;
+@property (nonatomic, retain) NSMutableDictionary *headers;
+@property (nonatomic, copy) NSString *versionString;
 
 - (void)addHeadersToMessage:(struct __CFHTTPMessage { }*)arg1;
 - (id)body;

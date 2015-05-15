@@ -12,13 +12,13 @@
     bool _owned;
 }
 
-@property(assign,readonly) short cloudAlbumSubtype;
-@property(getter=isCloudMultipleContributorsEnabled,assign,readonly) bool cloudMultipleContributorsEnabled;
-@property(assign,retain) NSNumber * cloudOwnerEmailKey;
-@property(assign,retain) NSString * cloudOwnerFirstName;
-@property(assign,retain) NSString * cloudOwnerFullName;
-@property(assign,retain) NSString * cloudOwnerLastName;
-@property(getter=isOwned,assign,readonly) bool owned;
+@property (nonatomic, readonly) short cloudAlbumSubtype;
+@property (getter=isCloudMultipleContributorsEnabled, nonatomic, readonly) bool cloudMultipleContributorsEnabled;
+@property (nonatomic, readonly, retain) NSNumber *cloudOwnerEmailKey;
+@property (nonatomic, readonly, retain) NSString *cloudOwnerFirstName;
+@property (nonatomic, readonly, retain) NSString *cloudOwnerFullName;
+@property (nonatomic, readonly, retain) NSString *cloudOwnerLastName;
+@property (getter=isOwned, nonatomic, readonly) bool owned;
 
 + (id)identifierCode;
 + (id)managedEntityName;

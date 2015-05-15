@@ -6,11 +6,11 @@
     UILabel *_emojiSectionHeader;
 }
 
-@property(assign,readwrite) double headerFontSize;
-@property(assign,copy) NSString * headerName;
-@property(assign,readwrite) double headerOpacity;
-@property(assign,copy) UIColor * headerTextColor;
-@property(assign,readwrite) bool useVibrantBlend;
+@property (nonatomic) double headerFontSize;
+@property (nonatomic, copy) NSString *headerName;
+@property (nonatomic) double headerOpacity;
+@property (nonatomic, copy) UIColor *headerTextColor;
+@property (nonatomic) bool useVibrantBlend;
 
 - (void)dealloc;
 - (double)headerFontSize;

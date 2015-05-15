@@ -4,7 +4,7 @@
 
 @interface SAAceCalendarSystemSetting : SADomainObject
 
-@property(assign,copy) NSString * calendarType;
+@property (nonatomic, copy) NSString *calendarType;
 
 + (id)aceCalendarSystemSetting;
 + (id)aceCalendarSystemSettingWithDictionary:(id)arg1 context:(id)arg2;

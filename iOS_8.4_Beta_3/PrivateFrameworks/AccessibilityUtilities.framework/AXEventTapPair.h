@@ -10,11 +10,11 @@
     int priority;
 }
 
-@property(assign,copy) id handler;
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) int priority;
-@property(assign,retain) struct __IOHIDEventSystemClient { }* systemClient;
-@property(assign,readwrite) int type;
+@property (nonatomic, copy) id handler;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic) int priority;
+@property (nonatomic, retain) struct __IOHIDEventSystemClient { }*systemClient;
+@property (nonatomic) int type;
 
 - (void)dealloc;
 - (id)description;

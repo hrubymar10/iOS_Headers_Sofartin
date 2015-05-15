@@ -7,8 +7,8 @@
     int _weekday;
 }
 
-@property(assign,retain) NSNumber * number;
-@property(assign,readwrite) int weekday;
+@property (nonatomic, retain) NSNumber *number;
+@property int weekday;
 
 + (id)byDayValueFromICSString:(id)arg1;
 + (int)weekdayFromICSString:(id)arg1;

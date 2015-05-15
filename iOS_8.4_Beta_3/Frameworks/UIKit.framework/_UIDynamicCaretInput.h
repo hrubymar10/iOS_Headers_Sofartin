@@ -25,13 +25,13 @@
     } _lastViewLoc;
 }
 
-@property(assign,retain) TIHandwritingStrokes * accumulatedStrokes;
-@property(assign,retain) UIDelayedAction * committedAction;
-@property(assign,retain) _UIDynamicCaretDot * dotView;
-@property(assign,retain) NSTimer * fadeTimer;
-@property(assign,readonly) bool hasInk;
-@property(assign,readonly) double inkWidth;
-@property(assign,readonly) bool isInking;
+@property (nonatomic, retain) TIHandwritingStrokes *accumulatedStrokes;
+@property (nonatomic, retain) UIDelayedAction *committedAction;
+@property (nonatomic, retain) _UIDynamicCaretDot *dotView;
+@property (nonatomic, retain) NSTimer *fadeTimer;
+@property (nonatomic, readonly) bool hasInk;
+@property (nonatomic, readonly) double inkWidth;
+@property (nonatomic, readonly) bool isInking;
 
 - (void)_fadeInk;
 - (id)accumulatedStrokes;

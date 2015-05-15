@@ -16,13 +16,13 @@
     bool _showDestinationPlaceholder;
 }
 
-@property(assign,retain) UIImage * backgroundPlaceholderImage;
-@property(assign,retain) UIView * backgroundPlaceholderPosterImageView;
-@property(assign,readonly) UIView * backgroundPlaceholderView;
-@property(assign,copy) NSString * destinationName;
-@property(assign,readwrite) long long destinationPlaceholderStyle;
-@property(assign,readwrite) long long interfaceOrientation;
-@property(assign,copy) id layoutSubviewsPostflightHandler;
+@property (nonatomic, retain) UIImage *backgroundPlaceholderImage;
+@property (nonatomic, retain) UIView *backgroundPlaceholderPosterImageView;
+@property (nonatomic, readonly) UIView *backgroundPlaceholderView;
+@property (nonatomic, copy) NSString *destinationName;
+@property (nonatomic) long long destinationPlaceholderStyle;
+@property (nonatomic) long long interfaceOrientation;
+@property (nonatomic, copy) id layoutSubviewsPostflightHandler;
 
 - (void).cxx_destruct;
 - (void)_createInformationalTitleView:(id*)arg1 systemFont:(id)arg2 lineBreakMode:(long long)arg3;

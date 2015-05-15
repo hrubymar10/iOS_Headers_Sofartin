@@ -6,8 +6,8 @@
     NSAttributedString *_attributedString;
 }
 
-@property(assign,retain) NSAttributedString * attributedString;
-@property(assign,retain) NSString * string;
+@property (nonatomic, readonly, retain) NSAttributedString *attributedString;
+@property (nonatomic, readonly, retain) NSString *string;
 
 + (id)textWithDOMElement:(id)arg1 usingParseBlock:(id)arg2;
 

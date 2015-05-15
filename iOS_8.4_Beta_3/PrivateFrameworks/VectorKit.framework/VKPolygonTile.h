@@ -13,14 +13,14 @@
     float _scale;
 }
 
-@property(assign,readwrite) float alpha;
-@property(assign,retain) VKAnimation * animation;
-@property(assign,retain) VKAnimation * animationForPitch;
-@property(assign,readonly) NSArray * coastlineGroups;
-@property(assign,readonly) float maxLayeringHeight;
-@property(assign,readonly) float minLayeringHeight;
-@property(assign,readonly) NSArray * polygonGroups;
-@property(assign,readwrite) float scale;
+@property (nonatomic) float alpha;
+@property (nonatomic, retain) VKAnimation *animation;
+@property (nonatomic, retain) VKAnimation *animationForPitch;
+@property (nonatomic, readonly) NSArray *coastlineGroups;
+@property (nonatomic, readonly) float maxLayeringHeight;
+@property (nonatomic, readonly) float minLayeringHeight;
+@property (nonatomic, readonly) NSArray *polygonGroups;
+@property (nonatomic) float scale;
 
 - (float)alpha;
 - (id)animation;

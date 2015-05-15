@@ -11,20 +11,20 @@
     NSMutableDictionary *_memberQueueUserSettings;
 }
 
-@property(assign,copy) NSDictionary * combinedProfileRestrictions;
-@property(assign,readonly) NSDictionary * currentRestrictions;
-@property(assign,readonly) NSDictionary * defaultRestrictions;
-@property(assign,readonly) NSDictionary * defaultSettings;
-@property(assign,copy) NSDictionary * effectiveUserSettings;
-@property(assign,retain) NSObject<OS_dispatch_queue> * memberQueue;
-@property(assign,retain) NSMutableDictionary * memberQueueClientRestrictions;
-@property(assign,readonly) NSMutableDictionary * memberQueueCombinedProfileRestrictions;
-@property(assign,retain) NSMutableDictionary * memberQueueEffectiveUserSettings;
-@property(assign,retain) NSMutableDictionary * memberQueueProfileRestrictions;
-@property(assign,retain) NSMutableDictionary * memberQueueRestrictions;
-@property(assign,retain) NSMutableDictionary * memberQueueUserSettings;
-@property(assign,copy) NSDictionary * profileRestrictions;
-@property(assign,copy) NSDictionary * userSettings;
+@property (nonatomic, readonly, copy) NSDictionary *combinedProfileRestrictions;
+@property (nonatomic, readonly) NSDictionary *currentRestrictions;
+@property (nonatomic, readonly) NSDictionary *defaultRestrictions;
+@property (nonatomic, readonly) NSDictionary *defaultSettings;
+@property (nonatomic, readonly, copy) NSDictionary *effectiveUserSettings;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *memberQueue;
+@property (nonatomic, retain) NSMutableDictionary *memberQueueClientRestrictions;
+@property (nonatomic, readonly) NSMutableDictionary *memberQueueCombinedProfileRestrictions;
+@property (nonatomic, retain) NSMutableDictionary *memberQueueEffectiveUserSettings;
+@property (nonatomic, retain) NSMutableDictionary *memberQueueProfileRestrictions;
+@property (nonatomic, retain) NSMutableDictionary *memberQueueRestrictions;
+@property (nonatomic, retain) NSMutableDictionary *memberQueueUserSettings;
+@property (nonatomic, readonly, copy) NSDictionary *profileRestrictions;
+@property (nonatomic, readonly, copy) NSDictionary *userSettings;
 
 + (id)allowedImportFromAppBundleIDsWithOriginalAppBundleIDs:(id)arg1 managedAppBundleIDs:(id)arg2 localAppBundleID:(id)arg3 localAccountIsManaged:(bool)arg4 mayOpenFromUnmanagedToManaged:(bool)arg5 mayOpenFromManagedToUnmanaged:(bool)arg6 isAppBundleIDExemptBlock:(id)arg7 isAppBundleIDAccountBasedBlock:(id)arg8;
 + (id)allowedKeyboardBundleIDsAfterApplyingFilterToBundleIDs:(id)arg1 managedAppBundleIDs:(id)arg2 hostAppIsManaged:(bool)arg3 mayOpenFromUnmanagedToManaged:(bool)arg4 mayOpenFromManagedToUnmanaged:(bool)arg5;

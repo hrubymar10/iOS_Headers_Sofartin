@@ -11,10 +11,10 @@
     double _value;
 }
 
-@property(assign,copy) UIColor * emptyColor;
-@property(assign,copy) UIColor * filledColor;
-@property(assign,readwrite) long long numberOfStars;
-@property(assign,readwrite) double value;
+@property (nonatomic, copy) UIColor *emptyColor;
+@property (nonatomic, copy) UIColor *filledColor;
+@property (nonatomic) long long numberOfStars;
+@property (nonatomic) double value;
 
 - (void).cxx_destruct;
 - (void)drawRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

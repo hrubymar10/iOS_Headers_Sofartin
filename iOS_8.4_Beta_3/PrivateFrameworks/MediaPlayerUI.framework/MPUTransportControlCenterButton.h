@@ -6,13 +6,13 @@
     MPUTransportButtonEventHandler *_transportButtonEventHandler;
 }
 
-@property(assign,readwrite) bool adjustsImageWhenHighlighted;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) MPUTransportButtonEventHandler * transportButtonEventHandler;
-@property(assign,readwrite) long long transportButtonImageViewContentMode;
+@property (nonatomic) bool adjustsImageWhenHighlighted;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) MPUTransportButtonEventHandler *transportButtonEventHandler;
+@property (nonatomic) long long transportButtonImageViewContentMode;
 
 + (id)transportButton;
 

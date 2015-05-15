@@ -17,22 +17,22 @@
     <TKVibrationRecorderStyleProvider> *_styleProvider;
 }
 
-@property(setter=_setCurrentTimeInterval:,assign,readwrite) double _currentTimeInterval;
-@property(setter=_setCurrentVibrationComponentDidBeginTimeInterval:,assign,readwrite) double _currentVibrationComponentDidBeginTimeInterval;
-@property(setter=_setDotForCurrentVibrationComponent:,assign,retain) TKVibrationRecorderProgressDotImageView * _dotForCurrentVibrationComponent;
-@property(setter=_setDotForCurrentVibrationComponentLeftConstraint:,assign,retain) NSLayoutConstraint * _dotForCurrentVibrationComponentLeftConstraint;
-@property(setter=_setDotForCurrentVibrationComponentRightConstraint:,assign,retain) NSLayoutConstraint * _dotForCurrentVibrationComponentRightConstraint;
-@property(assign,readonly) struct UIOffset { double x1; double x2; } _dotInsets;
-@property(assign,readonly) struct CGSize { double x1; double x2; } _dotSize;
-@property(setter=_setDots:,assign,retain) NSMutableArray * _dots;
-@property(setter=_setMaximumTimeInterval:,assign,readwrite) double _maximumTimeInterval;
-@property(setter=_setPreviousPauseDidBeginTimeInterval:,assign,readwrite) double _previousPauseDidBeginTimeInterval;
-@property(setter=_setProgressView:,assign,retain) UIView * _progressView;
-@property(setter=_setProgressViewWidthConstraint:,assign,retain) NSLayoutConstraint * _progressViewWidthConstraint;
-@property(assign,readonly) UIImage * _resizableDotImage;
-@property(setter=_setStyleProvider:,assign,retain) <TKVibrationRecorderStyleProvider> * _styleProvider;
-@property(assign,readwrite) double currentTimeInterval;
-@property(assign,readwrite) int roundedCornersCompensationDelayMode;
+@property (setter=_setCurrentTimeInterval:, nonatomic) double _currentTimeInterval;
+@property (setter=_setCurrentVibrationComponentDidBeginTimeInterval:, nonatomic) double _currentVibrationComponentDidBeginTimeInterval;
+@property (setter=_setDotForCurrentVibrationComponent:, nonatomic, retain) TKVibrationRecorderProgressDotImageView *_dotForCurrentVibrationComponent;
+@property (setter=_setDotForCurrentVibrationComponentLeftConstraint:, nonatomic, retain) NSLayoutConstraint *_dotForCurrentVibrationComponentLeftConstraint;
+@property (setter=_setDotForCurrentVibrationComponentRightConstraint:, nonatomic, retain) NSLayoutConstraint *_dotForCurrentVibrationComponentRightConstraint;
+@property (nonatomic, readonly) struct UIOffset { double x1; double x2; } _dotInsets;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } _dotSize;
+@property (setter=_setDots:, nonatomic, retain) NSMutableArray *_dots;
+@property (setter=_setMaximumTimeInterval:, nonatomic) double _maximumTimeInterval;
+@property (setter=_setPreviousPauseDidBeginTimeInterval:, nonatomic) double _previousPauseDidBeginTimeInterval;
+@property (setter=_setProgressView:, nonatomic, retain) UIView *_progressView;
+@property (setter=_setProgressViewWidthConstraint:, nonatomic, retain) NSLayoutConstraint *_progressViewWidthConstraint;
+@property (nonatomic, readonly) UIImage *_resizableDotImage;
+@property (setter=_setStyleProvider:, nonatomic, retain) <TKVibrationRecorderStyleProvider> *_styleProvider;
+@property (nonatomic) double currentTimeInterval;
+@property (nonatomic) int roundedCornersCompensationDelayMode;
 
 - (double)_cappedValueForTimeInterval:(double)arg1;
 - (double)_currentTimeInterval;

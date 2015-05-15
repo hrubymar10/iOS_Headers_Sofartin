@@ -39,18 +39,18 @@
     float _value;
 }
 
-@property(getter=isContinuous,assign,readwrite) bool continuous;
-@property(assign,readonly) UIImage * currentMaximumTrackImage;
-@property(assign,readonly) UIImage * currentMinimumTrackImage;
-@property(assign,readonly) UIImage * currentThumbImage;
-@property(assign,retain) UIColor * maximumTrackTintColor;
-@property(assign,readwrite) float maximumValue;
-@property(assign,retain) UIImage * maximumValueImage;
-@property(assign,retain) UIColor * minimumTrackTintColor;
-@property(assign,readwrite) float minimumValue;
-@property(assign,retain) UIImage * minimumValueImage;
-@property(assign,retain) UIColor * thumbTintColor;
-@property(assign,readwrite) float value;
+@property (getter=isContinuous, nonatomic) bool continuous;
+@property (nonatomic, readonly) UIImage *currentMaximumTrackImage;
+@property (nonatomic, readonly) UIImage *currentMinimumTrackImage;
+@property (nonatomic, readonly) UIImage *currentThumbImage;
+@property (nonatomic, retain) UIColor *maximumTrackTintColor;
+@property (nonatomic) float maximumValue;
+@property (nonatomic, retain) UIImage *maximumValueImage;
+@property (nonatomic, retain) UIColor *minimumTrackTintColor;
+@property (nonatomic) float minimumValue;
+@property (nonatomic, retain) UIImage *minimumValueImage;
+@property (nonatomic, retain) UIColor *thumbTintColor;
+@property (nonatomic) float value;
 
 - (bool)_alwaysHandleScrollerMouseEvent;
 - (void)_buildTrackArtwork;

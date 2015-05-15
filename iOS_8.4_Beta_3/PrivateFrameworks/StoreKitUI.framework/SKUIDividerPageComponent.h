@@ -6,8 +6,8 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSString * dividerTitle;
-@property(assign,readonly) SKUIDividerViewElement * viewElement;
+@property (nonatomic, readonly) NSString *dividerTitle;
+@property (nonatomic, readonly) SKUIDividerViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (long long)componentType;

@@ -11,9 +11,9 @@
     <MKUserTrackingView> *_userTrackingView;
 }
 
-@property(assign,readonly) UIImageView * imageView;
-@property(assign,readwrite) long long state;
-@property(assign,retain) <MKUserTrackingView> * userTrackingView;
+@property (nonatomic, readonly) UIImageView *imageView;
+@property (nonatomic) long long state;
+@property (nonatomic, retain) <MKUserTrackingView> *userTrackingView;
 
 - (void).cxx_destruct;
 - (id)_activityIndicatorView;

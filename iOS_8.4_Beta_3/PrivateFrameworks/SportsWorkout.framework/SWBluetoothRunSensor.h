@@ -13,8 +13,8 @@
     unsigned long long _remainingBatteryLifetimeInHours;
 }
 
-@property(assign,readonly) unsigned long long packetCount;
-@property(assign,readonly) double secondsConnected;
+@property (nonatomic, readonly) unsigned long long packetCount;
+@property (nonatomic, readonly) double secondsConnected;
 
 + (void)__writePacketRecord:(id)arg1;
 

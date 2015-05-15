@@ -6,7 +6,7 @@
     unsigned short _operatorChar;
 }
 
-@property(assign,readonly) unsigned short operatorChar;
+@property (nonatomic, readonly) unsigned short operatorChar;
 
 - (bool)_isIntegral;
 - (bool)_isInvisibleCharacter;

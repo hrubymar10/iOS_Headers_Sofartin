@@ -16,21 +16,21 @@
     SSVURLBagInterpreter *_urlBagInterpreter;
 }
 
-@property(assign,retain) SSVFairPlaySAPSession * SAPSession;
-@property(assign,copy) SSVSAPSignaturePolicy * SAPSignaturePolicy;
-@property(assign,readonly) NSURLRequest * URLRequest;
-@property(assign,copy) SSAuthenticationContext * authenticationContext;
-@property(assign,retain) SSVURLDataConsumer * dataConsumer;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SSURLConnectionRequestDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSURL * destinationFileURL;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SSURLRequestProperties * requestProperties;
-@property(assign,readwrite) bool runsInProcess;
-@property(assign,readwrite) bool sendsResponseForHTTPFailures;
-@property(assign,readwrite) bool shouldMescalSign;
-@property(assign,readonly) Class superclass;
+@property (retain) SSVFairPlaySAPSession *SAPSession;
+@property (copy) SSVSAPSignaturePolicy *SAPSignaturePolicy;
+@property (readonly) NSURLRequest *URLRequest;
+@property (copy) SSAuthenticationContext *authenticationContext;
+@property (retain) SSVURLDataConsumer *dataConsumer;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SSURLConnectionRequestDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (copy) NSURL *destinationFileURL;
+@property (readonly) unsigned long long hash;
+@property (readonly) SSURLRequestProperties *requestProperties;
+@property bool runsInProcess;
+@property bool sendsResponseForHTTPFailures;
+@property bool shouldMescalSign;
+@property (readonly) Class superclass;
 
 + (id)newRadioRequestWithRequestContext:(id)arg1 requestProperties:(id)arg2 storeBag:(id)arg3;
 

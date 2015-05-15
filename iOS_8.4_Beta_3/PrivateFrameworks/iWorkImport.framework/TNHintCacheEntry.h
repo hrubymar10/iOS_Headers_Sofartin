@@ -11,9 +11,9 @@
     } mOrigin;
 }
 
-@property(assign,retain) <TSDHint> * hint;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } origin;
-@property(getter=isValid,assign,readwrite) bool valid;
+@property (retain) <TSDHint> *hint;
+@property struct CGPoint { double x1; double x2; } origin;
+@property (getter=isValid) bool valid;
 
 - (id)hint;
 - (id)initWithHint:(id)arg1 origin:(struct CGPoint { double x1; double x2; })arg2;

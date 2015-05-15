@@ -8,8 +8,8 @@
     bool _touchesWereCancelled;
 }
 
-@property(assign,readwrite) <MFCorecipientsIndicatorAtomDelegate> * delegate;
-@property(assign,retain) NSArray * recipients;
+@property (nonatomic) <MFCorecipientsIndicatorAtomDelegate> *delegate;
+@property (nonatomic, retain) NSArray *recipients;
 
 - (id)delegate;
 - (id)init;

@@ -9,12 +9,12 @@
     double _topBoundaryTime;
 }
 
-@property(assign,readonly) double freeSpaceLeftBoundary;
-@property(assign,readonly) double freeSpaceWidth;
-@property(assign,readwrite) double initialLeftBoundary;
-@property(assign,readwrite) double rightBoundary;
-@property(assign,readonly) NSArray * stackedOccurrences;
-@property(assign,readwrite) double topBoundaryTime;
+@property (nonatomic, readonly) double freeSpaceLeftBoundary;
+@property (nonatomic, readonly) double freeSpaceWidth;
+@property (nonatomic) double initialLeftBoundary;
+@property (nonatomic) double rightBoundary;
+@property (nonatomic, readonly) NSArray *stackedOccurrences;
+@property (nonatomic) double topBoundaryTime;
 
 - (void).cxx_destruct;
 - (id)description;

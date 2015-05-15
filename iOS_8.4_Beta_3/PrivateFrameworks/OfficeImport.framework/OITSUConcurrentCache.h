@@ -6,7 +6,7 @@
     OITSUReadWriteQueue *mReadWriteQueue;
 }
 
-@property(assign,readonly) OITSUReadWriteQueue * readWriteQueue;
+@property (nonatomic, readonly) OITSUReadWriteQueue *readWriteQueue;
 
 - (void)addEntriesFromDictionary:(id)arg1;
 - (unsigned long long)count;

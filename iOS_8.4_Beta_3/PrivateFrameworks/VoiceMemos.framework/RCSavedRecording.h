@@ -10,26 +10,26 @@
     bool _pathWasInvalid;
 }
 
-@property(assign,copy) NSURL * URIRepresentation;
-@property(assign,readonly) AVAsset * avAsset;
-@property(getter=isBeingMade,assign,readwrite) bool beingMade;
-@property(assign,copy) NSString * customLabel;
-@property(assign,copy) NSDate * date;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * detailLabel;
-@property(assign,readwrite) double duration;
-@property(assign,readonly) bool hasPendingChangeAffectingEntityRevision;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long iTunesPersistentID;
-@property(assign,readonly) NSString * label;
-@property(assign,readwrite) long long labelPreset;
-@property(assign,copy) NSString * path;
-@property(getter=isPendingRestore,assign,readwrite) bool pendingRestore;
-@property(assign,readwrite) long long recordingID;
-@property(assign,readonly) Class superclass;
-@property(getter=isSynced,assign,readwrite) bool synced;
-@property(assign,copy) NSURL * url;
+@property (nonatomic, readonly, copy) NSURL *URIRepresentation;
+@property (nonatomic, readonly) AVAsset *avAsset;
+@property (getter=isBeingMade, nonatomic) bool beingMade;
+@property (nonatomic, copy) NSString *customLabel;
+@property (nonatomic, copy) NSDate *date;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *detailLabel;
+@property (nonatomic) double duration;
+@property (nonatomic, readonly) bool hasPendingChangeAffectingEntityRevision;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long iTunesPersistentID;
+@property (nonatomic, readonly) NSString *label;
+@property (nonatomic) long long labelPreset;
+@property (nonatomic, copy) NSString *path;
+@property (getter=isPendingRestore, nonatomic) bool pendingRestore;
+@property (nonatomic) long long recordingID;
+@property (readonly) Class superclass;
+@property (getter=isSynced, nonatomic) bool synced;
+@property (nonatomic, readonly, copy) NSURL *url;
 
 + (id)localizedStringForRecordingLabel:(long long)arg1;
 + (id)propertiesAffectingEntityRevision;

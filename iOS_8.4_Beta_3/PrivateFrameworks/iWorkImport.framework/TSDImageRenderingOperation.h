@@ -7,7 +7,7 @@
     bool mShouldClipVertically;
 }
 
-@property(assign,retain) TSDImageInfo * imageInfo;
+@property (retain) TSDImageInfo *imageInfo;
 
 - (void)dealloc;
 - (void)doWorkWithReadLock;

@@ -7,8 +7,8 @@
     id _progressBlock;
 }
 
-@property(assign,readonly) id completionHandler;
-@property(assign,readonly) id progressBlock;
+@property (readonly) id completionHandler;
+@property (readonly) id progressBlock;
 
 - (id)completionHandler;
 - (void)dealloc;

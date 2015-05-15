@@ -4,8 +4,8 @@
 
 @interface GCControllerElement : NSObject
 
-@property(getter=isAnalog,assign,readonly) bool analog;
-@property(assign,readonly) GCControllerElement * collection;
+@property (getter=isAnalog, readonly) bool analog;
+@property (readonly) GCControllerElement *collection;
 
 - (bool)_setValue:(float)arg1;
 - (id)collection;

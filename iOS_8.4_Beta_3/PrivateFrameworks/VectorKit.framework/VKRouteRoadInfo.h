@@ -11,9 +11,9 @@
     NSString *_shieldGroup;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,readonly) struct PolylineCoordinate { unsigned int x1; float x2; } routeOffset;
-@property(assign,retain) NSString * shieldGroup;
+@property (nonatomic, readonly, retain) NSString *name;
+@property (nonatomic, readonly) struct PolylineCoordinate { unsigned int x1; float x2; } routeOffset;
+@property (nonatomic, readonly, retain) NSString *shieldGroup;
 
 - (id).cxx_construct;
 - (void)dealloc;

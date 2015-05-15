@@ -9,8 +9,8 @@
     NSMutableSet *_selectedAlbumGuids;
 }
 
-@property(assign,readwrite) bool allowsMutlipleSelection;
-@property(assign,readwrite) <PUPhotoStreamsAlbumsTableViewControllerDelegate> * pickerDelegate;
+@property (nonatomic) bool allowsMutlipleSelection;
+@property (nonatomic) <PUPhotoStreamsAlbumsTableViewControllerDelegate> *pickerDelegate;
 
 + (id)_albumsComparator;
 + (struct NSObject { Class x1; }*)albumListForContentMode:(int)arg1;

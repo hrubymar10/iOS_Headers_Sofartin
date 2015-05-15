@@ -4,10 +4,10 @@
 
 @interface DOMHTMLParamElement : DOMHTMLElement
 
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * type;
-@property(assign,copy) NSString * value;
-@property(assign,copy) NSString * valueType;
+@property (copy) NSString *name;
+@property (copy) NSString *type;
+@property (copy) NSString *value;
+@property (copy) NSString *valueType;
 
 - (id)name;
 - (void)setName:(id)arg1;

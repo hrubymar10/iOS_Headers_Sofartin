@@ -8,12 +8,12 @@
     int _scope;
 }
 
-@property(assign,copy) NSString * displayName;
-@property(assign,readonly) NSSet * indexedStyles;
-@property(assign,retain) TSURetainedPointerKeyDictionary * map;
-@property(assign,readonly) NSSet * paragraphStylesShownInTOC;
-@property(assign,readonly) NSString * presetKind;
-@property(assign,readwrite) int scope;
+@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic, readonly) NSSet *indexedStyles;
+@property (nonatomic, retain) TSURetainedPointerKeyDictionary *map;
+@property (nonatomic, readonly) NSSet *paragraphStylesShownInTOC;
+@property (nonatomic, readonly) NSString *presetKind;
+@property (nonatomic) int scope;
 
 - (void)addIndexedStyle:(id)arg1 withEntryStyle:(id)arg2;
 - (void)addIndexedStyle:(id)arg1 withEntryStyle:(id)arg2 showInTOC:(bool)arg3;

@@ -9,10 +9,10 @@
     CAShapeLayer *_reticleLayer;
 }
 
-@property(assign,retain) CATextLayer * codeLayer;
-@property(assign,retain) NSMutableArray * completionBlocks;
-@property(assign,readwrite) double demoSpeed;
-@property(assign,retain) CAShapeLayer * reticleLayer;
+@property (retain) CATextLayer *codeLayer;
+@property (retain) NSMutableArray *completionBlocks;
+@property double demoSpeed;
+@property (retain) CAShapeLayer *reticleLayer;
 
 + (id)layer;
 

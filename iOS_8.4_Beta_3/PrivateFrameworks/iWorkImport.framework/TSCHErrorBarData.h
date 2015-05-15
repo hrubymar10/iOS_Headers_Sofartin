@@ -20,8 +20,8 @@
     bool mSupportsXAxisBars;
 }
 
-@property(assign,readonly) long long maxValueGroupIndex;
-@property(assign,readonly) long long minValueGroupIndex;
+@property (nonatomic, readonly) long long maxValueGroupIndex;
+@property (nonatomic, readonly) long long minValueGroupIndex;
 
 + (bool)hasErrorBarsForSeries:(id)arg1;
 + (int)p_errorBarSettingForSeries:(id)arg1 useXAxis:(bool)arg2 axisID:(id)arg3;

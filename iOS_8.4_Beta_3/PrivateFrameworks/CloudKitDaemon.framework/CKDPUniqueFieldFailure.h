@@ -6,8 +6,8 @@
     CKDPIdentifier *_identifierForConstraintFailure;
 }
 
-@property(assign,readonly) bool hasIdentifierForConstraintFailure;
-@property(assign,retain) CKDPIdentifier * identifierForConstraintFailure;
+@property (nonatomic, readonly) bool hasIdentifierForConstraintFailure;
+@property (nonatomic, retain) CKDPIdentifier *identifierForConstraintFailure;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

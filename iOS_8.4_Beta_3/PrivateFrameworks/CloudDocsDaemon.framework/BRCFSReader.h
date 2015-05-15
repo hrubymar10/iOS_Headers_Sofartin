@@ -14,13 +14,13 @@
     bool _resumed;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,readonly) NSObject<OS_dispatch_group> * lostScanGroup;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * serialQueue;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCancelled;
+@property (nonatomic, readonly) NSObject<OS_dispatch_group> *lostScanGroup;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *serialQueue;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_canRetryThrottleID:(long long)arg1 zone:(id)arg2;

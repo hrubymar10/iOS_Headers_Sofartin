@@ -7,11 +7,11 @@
     NSArray *_regions;
 }
 
-@property(assign,retain) FTMessageDelivery * _delivery;
-@property(assign,retain) NSArray * _regions;
-@property(assign,readonly) bool isLoaded;
-@property(assign,readonly) bool isLoading;
-@property(assign,readonly) NSArray * regions;
+@property (retain) FTMessageDelivery *_delivery;
+@property (retain) NSArray *_regions;
+@property (readonly) bool isLoaded;
+@property (readonly) bool isLoading;
+@property (readonly) NSArray *regions;
 
 + (id)sharedInstance;
 

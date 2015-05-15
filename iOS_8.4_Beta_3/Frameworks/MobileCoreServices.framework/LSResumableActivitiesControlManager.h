@@ -7,8 +7,8 @@
     NSXPCConnection *connection;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,readwrite) id delegate;
+@property (retain) NSXPCConnection *connection;
+@property id delegate;
 
 + (id)resumableActivitiesControlManager;
 

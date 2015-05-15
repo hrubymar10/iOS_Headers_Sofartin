@@ -10,11 +10,11 @@
     NSString *mString;
 }
 
-@property(assign,readonly) TSCH3DLabelBitmapContextInfo * bitmapContextInfo;
-@property(assign,readonly) double labelWidth;
-@property(assign,readonly) TSWPParagraphStyle * paragraphStyle;
-@property(assign,readonly) double renderSamples;
-@property(assign,readonly) NSString * string;
+@property (nonatomic, readonly) TSCH3DLabelBitmapContextInfo *bitmapContextInfo;
+@property (nonatomic, readonly) double labelWidth;
+@property (nonatomic, readonly) TSWPParagraphStyle *paragraphStyle;
+@property (nonatomic, readonly) double renderSamples;
+@property (nonatomic, readonly) NSString *string;
 
 + (id)labelAttributesWithParagraphStyle:(id)arg1 string:(id)arg2 bitmapContextInfo:(id)arg3 labelWidth:(double)arg4 renderSamples:(double)arg5;
 

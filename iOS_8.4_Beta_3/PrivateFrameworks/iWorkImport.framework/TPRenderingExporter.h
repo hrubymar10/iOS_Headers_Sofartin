@@ -10,8 +10,8 @@
     unsigned long long mPageIndex;
 }
 
-@property(assign,readonly) bool didLimitPageLayout;
-@property(assign,readwrite) long long lastPageIndexForLayout;
+@property (readonly) bool didLimitPageLayout;
+@property (nonatomic) long long lastPageIndexForLayout;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })boundsRect;
 - (id)currentInfos;

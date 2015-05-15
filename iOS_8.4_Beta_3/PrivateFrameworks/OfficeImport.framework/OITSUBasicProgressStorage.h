@@ -8,9 +8,9 @@
     double mValue;
 }
 
-@property(getter=isIndeterminate,assign,readwrite) bool indeterminate;
-@property(assign,readwrite) double maxValue;
-@property(assign,readwrite) double value;
+@property (getter=isIndeterminate) bool indeterminate;
+@property double maxValue;
+@property double value;
 
 - (bool)isIndeterminate;
 - (double)maxValue;

@@ -7,7 +7,7 @@
     MusicLibraryPlaylistsViewConfiguration *_playlistsViewConfiguration;
 }
 
-@property(assign,readonly) unsigned long long entityLimit;
+@property (nonatomic, readonly) unsigned long long entityLimit;
 
 + (unsigned long long)defaultEntityLimit;
 

@@ -7,7 +7,7 @@
     bool _shouldContain;
 }
 
-@property(assign,readonly) bool shouldContain;
+@property (nonatomic, readonly) bool shouldContain;
 
 + (id)predicateWithPersistentIDs:(const long long*)arg1 count:(unsigned long long)arg2 shouldContain:(bool)arg3;
 + (id)predicateWithPersistentIDs:(id)arg1 shouldContain:(bool)arg2;

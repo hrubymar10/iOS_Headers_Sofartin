@@ -9,20 +9,20 @@
     NSMutableDictionary *_unsavedAccountProperties;
 }
 
-@property(assign,readonly) ACAccount * accountForRenewingCredentials;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSString * hostname;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSString * managedTag;
-@property(assign,readonly) ACAccount * parentAccount;
-@property(assign,readonly) NSString * parentAccountIdentifier;
-@property(assign,readonly) ACAccount * persistentAccount;
-@property(assign,readonly) NSDictionary * properties;
-@property(assign,copy) NSString * sourceApplicationBundleIdentifier;
-@property(assign,readonly) NSString * syncStoreIdentifier;
-@property(assign,readonly) NSString * type;
-@property(assign,readonly) NSString * uniqueId;
-@property(assign,retain) NSString * username;
+@property (readonly) ACAccount *accountForRenewingCredentials;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSString *hostname;
+@property (readonly) NSString *identifier;
+@property (readonly) NSString *managedTag;
+@property (readonly) ACAccount *parentAccount;
+@property (readonly) NSString *parentAccountIdentifier;
+@property (readonly) ACAccount *persistentAccount;
+@property (readonly) NSDictionary *properties;
+@property (nonatomic, copy) NSString *sourceApplicationBundleIdentifier;
+@property (readonly) NSString *syncStoreIdentifier;
+@property (readonly) NSString *type;
+@property (readonly) NSString *uniqueId;
+@property (nonatomic, retain) NSString *username;
 
 + (id)_accountClass;
 + (id)_basicPropertyForKey:(id)arg1 persistentAccount:(id)arg2;

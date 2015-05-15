@@ -16,7 +16,7 @@
     NSDate *_startDate;
 }
 
-@property(assign,retain) NSError * error;
+@property (nonatomic, retain) NSError *error;
 
 - (void)_finishWithError:(id)arg1;
 - (void)cancel;

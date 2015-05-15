@@ -23,17 +23,17 @@
     double _stiffness;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } attachmentPointA;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } attachmentPointB;
-@property(assign,readwrite) double damping;
-@property(assign,readwrite) id delegate;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,retain) CAValueFunction * function;
-@property(assign,retain) CALayer * layerA;
-@property(assign,retain) CALayer * layerB;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) double restLength;
-@property(assign,readwrite) double stiffness;
+@property struct CGPoint { double x1; double x2; } attachmentPointA;
+@property struct CGPoint { double x1; double x2; } attachmentPointB;
+@property double damping;
+@property id delegate;
+@property (getter=isEnabled) bool enabled;
+@property (retain) CAValueFunction *function;
+@property (retain) CALayer *layerA;
+@property (retain) CALayer *layerB;
+@property (copy) NSString *name;
+@property double restLength;
+@property double stiffness;
 
 + (void)CAMLParserStartElement:(id)arg1;
 + (id)defaultValueForKey:(id)arg1;

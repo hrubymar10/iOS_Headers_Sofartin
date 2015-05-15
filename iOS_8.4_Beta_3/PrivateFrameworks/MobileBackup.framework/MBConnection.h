@@ -8,7 +8,7 @@
     NSObject<MBConnectionHandler> *_handler;
 }
 
-@property(assign,readwrite) NSObject<MBConnectionHandler> * messageHandler;
+@property (nonatomic) NSObject<MBConnectionHandler> *messageHandler;
 
 - (void)_handleXPCError:(id)arg1;
 - (void)_handleXPCEvent:(id)arg1;

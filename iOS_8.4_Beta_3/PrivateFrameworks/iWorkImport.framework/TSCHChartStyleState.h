@@ -4,15 +4,15 @@
 
 @interface TSCHChartStyleState : TSCHPropertyValueStorageContainer <NSCopying>
 
-@property(assign,copy) NSMutableArray * categoryAxisStyles;
-@property(assign,retain) TSCHChartStyle * chartStyle;
-@property(assign,retain) TSCHLegendStyle * legendStyle;
-@property(assign,copy) NSMutableArray * paragraphStyles;
-@property(assign,copy) NSMutableDictionary * referenceLineStyles;
-@property(assign,retain) TSCHReferenceLineStyle * referenceLineThemeStyle;
-@property(assign,copy) NSMutableArray * seriesPrivateStyles;
-@property(assign,copy) NSMutableArray * seriesThemeStyles;
-@property(assign,copy) NSMutableArray * valueAxisStyles;
+@property (nonatomic, copy) NSMutableArray *categoryAxisStyles;
+@property (nonatomic, retain) TSCHChartStyle *chartStyle;
+@property (nonatomic, retain) TSCHLegendStyle *legendStyle;
+@property (nonatomic, copy) NSMutableArray *paragraphStyles;
+@property (nonatomic, copy) NSMutableDictionary *referenceLineStyles;
+@property (nonatomic, retain) TSCHReferenceLineStyle *referenceLineThemeStyle;
+@property (nonatomic, copy) NSMutableArray *seriesPrivateStyles;
+@property (nonatomic, copy) NSMutableArray *seriesThemeStyles;
+@property (nonatomic, copy) NSMutableArray *valueAxisStyles;
 
 - (id)allStyles;
 - (id)applyStyleSwapTuple:(id)arg1;

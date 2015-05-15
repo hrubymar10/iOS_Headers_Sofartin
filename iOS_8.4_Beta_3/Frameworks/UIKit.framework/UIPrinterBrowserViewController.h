@@ -17,11 +17,11 @@
     bool _shouldFilterPrinters;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double maximumPopoverHeight;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property double maximumPopoverHeight;
+@property (readonly) Class superclass;
 
 - (void)addPrinter:(id)arg1 moreComing:(bool)arg2;
 - (void)adjustPopoverSize;

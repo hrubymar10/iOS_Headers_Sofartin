@@ -4,7 +4,7 @@
 
 @interface NSDistributedNotificationCenter : NSNotificationCenter
 
-@property(assign,readwrite) bool suspended;
+@property bool suspended;
 
 + (id)defaultCenter;
 + (id)notificationCenterForType:(id)arg1;

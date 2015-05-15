@@ -10,14 +10,14 @@
     bool _unarchiving;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) long long imageOrientation;
-@property(assign,readwrite) double imageScale;
-@property(assign,retain) NSData * pngData;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) UIImage *image;
+@property long long imageOrientation;
+@property double imageScale;
+@property (retain) NSData *pngData;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_updateImageData;

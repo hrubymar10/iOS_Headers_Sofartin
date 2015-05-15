@@ -10,10 +10,10 @@
     long long _verticalSizeClass;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,retain) UIImageView * imageView;
-@property(assign,retain) NSArray * principalAttachments;
-@property(assign,readwrite) long long verticalSizeClass;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, retain) NSArray *principalAttachments;
+@property (nonatomic) long long verticalSizeClass;
 
 + (id)fallbackPreviewImage;
 

@@ -63,15 +63,15 @@
     } _sectionInset;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } estimatedItemSize;
-@property(getter=_estimatesSizes,assign,readonly) bool estimatesSizes;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } footerReferenceSize;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } headerReferenceSize;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } itemSize;
-@property(assign,readwrite) double minimumInteritemSpacing;
-@property(assign,readwrite) double minimumLineSpacing;
-@property(assign,readwrite) long long scrollDirection;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } sectionInset;
+@property (nonatomic) struct CGSize { double x1; double x2; } estimatedItemSize;
+@property (getter=_estimatesSizes, nonatomic, readonly) bool estimatesSizes;
+@property (nonatomic) struct CGSize { double x1; double x2; } footerReferenceSize;
+@property (nonatomic) struct CGSize { double x1; double x2; } headerReferenceSize;
+@property (nonatomic) struct CGSize { double x1; double x2; } itemSize;
+@property (nonatomic) double minimumInteritemSpacing;
+@property (nonatomic) double minimumLineSpacing;
+@property (nonatomic) long long scrollDirection;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } sectionInset;
 
 + (Class)invalidationContextClass;
 

@@ -7,8 +7,8 @@
     MSAsset *_asset;
 }
 
-@property(assign,retain) MSASAlbum * album;
-@property(assign,retain) MSAsset * asset;
+@property (nonatomic, retain) MSASAlbum *album;
+@property (nonatomic, retain) MSAsset *asset;
 
 - (void).cxx_destruct;
 - (id)album;

@@ -11,8 +11,8 @@
     } _contentInset;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,readonly) bool hasDisclosureChevron;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic, readonly) bool hasDisclosureChevron;
 
 + (struct CGSize { double x1; double x2; })preferredSizeForSettingDescription:(id)arg1 context:(id)arg2;
 + (bool)prefetchResourcesForSettingDescription:(id)arg1 reason:(long long)arg2 context:(id)arg3;

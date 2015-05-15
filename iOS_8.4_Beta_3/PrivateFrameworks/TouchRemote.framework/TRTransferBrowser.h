@@ -14,12 +14,12 @@
     WPTransfer *_transferSession;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <TRTransferBrowserDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long state;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <TRTransferBrowserDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long state;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_beginScanningIfPowered;

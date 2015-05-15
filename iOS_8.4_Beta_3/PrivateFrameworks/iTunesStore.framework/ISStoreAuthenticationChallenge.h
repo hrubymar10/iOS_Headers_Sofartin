@@ -11,12 +11,12 @@
     bool _userNameIsEditable;
 }
 
-@property(assign,readwrite) long long failureCount;
-@property(assign,readwrite) bool hasPassword;
-@property(assign,retain) NSString * password;
-@property(assign,readwrite) <NSURLAuthenticationChallengeSender> * sender;
-@property(assign,retain) NSString * user;
-@property(assign,readwrite) bool userNameIsEditable;
+@property long long failureCount;
+@property bool hasPassword;
+@property (retain) NSString *password;
+@property <NSURLAuthenticationChallengeSender> *sender;
+@property (retain) NSString *user;
+@property bool userNameIsEditable;
 
 - (void)dealloc;
 - (long long)failureCount;

@@ -10,15 +10,15 @@
     CKComposition *_pasteboardComposition;
 }
 
-@property(assign,readwrite) BOOL balloonColor;
-@property(assign,retain) NSMutableDictionary * composeImages;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableDictionary * mediaObjects;
-@property(assign,readwrite) long long pasteboardChangeCount;
-@property(assign,retain) CKComposition * pasteboardComposition;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) BOOL balloonColor;
+@property (nonatomic, retain) NSMutableDictionary *composeImages;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableDictionary *mediaObjects;
+@property (nonatomic) long long pasteboardChangeCount;
+@property (nonatomic, retain) CKComposition *pasteboardComposition;
+@property (readonly) Class superclass;
 
 - (id)attributedTextForCompositionText:(id)arg1;
 - (BOOL)balloonColor;

@@ -4,12 +4,12 @@
 
 @interface RadioMutableHistoryCategory : RadioHistoryCategory
 
-@property(assign,copy) NSString * categoryDescription;
-@property(assign,copy) NSArray * items;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * stationHash;
-@property(assign,readwrite) long long stationID;
-@property(assign,readwrite) long long type;
+@property (nonatomic, copy) NSString *categoryDescription;
+@property (nonatomic, copy) NSArray *items;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *stationHash;
+@property (nonatomic) long long stationID;
+@property (nonatomic) long long type;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setCategoryDescription:(id)arg1;

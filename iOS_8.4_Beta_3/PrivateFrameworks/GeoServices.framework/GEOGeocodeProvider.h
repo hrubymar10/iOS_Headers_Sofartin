@@ -8,9 +8,9 @@
     id _successHandler;
 }
 
-@property(assign,copy) id batchSuccessHandler;
-@property(assign,copy) id errorHandler;
-@property(assign,copy) id successHandler;
+@property (nonatomic, copy) id batchSuccessHandler;
+@property (nonatomic, copy) id errorHandler;
+@property (nonatomic, copy) id successHandler;
 
 + (id)providerName;
 

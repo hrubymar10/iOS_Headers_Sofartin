@@ -7,8 +7,8 @@
     int _proposedGLintValue;
 }
 
-@property(assign,readonly) int GLintValue;
-@property(assign,readwrite) int proposedGLintValue;
+@property (nonatomic, readonly) int GLintValue;
+@property (nonatomic) int proposedGLintValue;
 
 - (int)GLintValue;
 - (id)description;

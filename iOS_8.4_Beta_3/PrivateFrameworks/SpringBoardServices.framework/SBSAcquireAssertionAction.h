@@ -4,9 +4,9 @@
 
 @interface SBSAcquireAssertionAction : BSAction
 
-@property(assign,readonly) NSString * assertionName;
-@property(assign,readonly) unsigned int port;
-@property(assign,readonly) NSString * reason;
+@property (nonatomic, readonly) NSString *assertionName;
+@property (nonatomic, readonly) unsigned int port;
+@property (nonatomic, readonly) NSString *reason;
 
 + (id)assertionWithAssertionName:(id)arg1 reason:(id)arg2 withHandler:(id)arg3;
 

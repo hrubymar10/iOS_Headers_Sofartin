@@ -6,11 +6,11 @@
     AVCaptureMetadataOutputInternal_FigRecorder *_internal;
 }
 
-@property(assign,readonly) NSArray * availableMetadataObjectTypes;
-@property(assign,copy) NSArray * metadataObjectTypes;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * metadataObjectsCallbackQueue;
-@property(assign,readonly) <AVCaptureMetadataOutputObjectsDelegate_FigRecorder> * metadataObjectsDelegate;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rectOfInterest;
+@property (nonatomic, readonly) NSArray *availableMetadataObjectTypes;
+@property (nonatomic, copy) NSArray *metadataObjectTypes;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *metadataObjectsCallbackQueue;
+@property (nonatomic, readonly) <AVCaptureMetadataOutputObjectsDelegate_FigRecorder> *metadataObjectsDelegate;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rectOfInterest;
 
 + (void)initialize;
 

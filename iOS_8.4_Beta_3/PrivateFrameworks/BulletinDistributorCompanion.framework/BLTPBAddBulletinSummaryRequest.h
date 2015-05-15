@@ -6,8 +6,8 @@
     BLTPBBulletinSummary *_bulletin;
 }
 
-@property(assign,retain) BLTPBBulletinSummary * bulletin;
-@property(assign,readonly) bool hasBulletin;
+@property (nonatomic, retain) BLTPBBulletinSummary *bulletin;
+@property (nonatomic, readonly) bool hasBulletin;
 
 - (void).cxx_destruct;
 - (id)bulletin;

@@ -8,7 +8,7 @@
     Protocol *_protocol;
 }
 
-@property(assign,retain) id invocationTarget;
+@property (nonatomic, retain) id invocationTarget;
 
 - (void)dealloc;
 - (void)forwardInvocation:(id)arg1;

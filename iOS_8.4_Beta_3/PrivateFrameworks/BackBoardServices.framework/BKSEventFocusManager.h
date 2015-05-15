@@ -9,10 +9,10 @@
     bool _systemAppControlsFocusOnMainDisplay;
 }
 
-@property(assign,readonly) NSMutableSet * currentState;
-@property(assign,readwrite) bool needsFlush;
-@property(assign,readonly) NSMutableDictionary * pendingStatesByPriority;
-@property(assign,readwrite) bool systemAppControlsFocusOnMainDisplay;
+@property (nonatomic, readonly) NSMutableSet *currentState;
+@property (nonatomic) bool needsFlush;
+@property (nonatomic, readonly) NSMutableDictionary *pendingStatesByPriority;
+@property (nonatomic) bool systemAppControlsFocusOnMainDisplay;
 
 + (id)sharedInstance;
 

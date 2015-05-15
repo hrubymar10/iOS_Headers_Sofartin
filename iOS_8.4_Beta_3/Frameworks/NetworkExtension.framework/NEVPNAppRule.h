@@ -9,10 +9,10 @@
     NSArray *_matchExecutables;
 }
 
-@property(assign,readonly) NSString * identifier;
-@property(assign,copy) NSArray * matchAccountIdentifiers;
-@property(assign,copy) NSArray * matchDomains;
-@property(assign,copy) NSArray * matchExecutables;
+@property (readonly) NSString *identifier;
+@property (copy) NSArray *matchAccountIdentifiers;
+@property (copy) NSArray *matchDomains;
+@property (copy) NSArray *matchExecutables;
 
 + (bool)supportsSecureCoding;
 

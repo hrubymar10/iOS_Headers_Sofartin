@@ -11,12 +11,12 @@
     struct CGPath { } *_path;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool parserError;
-@property(assign,readonly) struct CGPath { }* path;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool parserError;
+@property (readonly) struct CGPath { }*path;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (id)init;

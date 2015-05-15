@@ -8,9 +8,9 @@
     unsigned long long _style;
 }
 
-@property(assign,retain) UITableViewRowAction * action;
-@property(assign,copy) UIVisualEffect * backgroundEffect;
-@property(assign,readwrite) unsigned long long style;
+@property (nonatomic, retain) UITableViewRowAction *action;
+@property (nonatomic, copy) UIVisualEffect *backgroundEffect;
+@property (nonatomic) unsigned long long style;
 
 + (id)actionButtonWithStyle:(unsigned long long)arg1;
 

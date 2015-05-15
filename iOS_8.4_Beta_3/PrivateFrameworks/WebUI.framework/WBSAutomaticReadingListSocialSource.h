@@ -14,18 +14,18 @@
     NSXPCConnection *_socialHelperConnection;
 }
 
-@property(assign,readonly) NSString * accountTypeIdentifier;
-@property(assign,copy) NSArray * accounts;
-@property(assign,retain) NSDictionary * accountsToTrackedRecordsInfoMap;
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,copy) NSArray * activeAccounts;
-@property(assign,retain) Class fallbackIconProviderClass;
-@property(assign,retain) NSTimer * minimumTimeBetweenRequestsTimer;
-@property(assign,readwrite) unsigned long long numberOfRequestsInProgressForNewerItems;
-@property(assign,readonly) id serviceImage;
-@property(assign,readonly) NSString * serviceName;
-@property(assign,readonly) NSString * serviceType;
-@property(assign,retain) NSXPCConnection * socialHelperConnection;
+@property (nonatomic, readonly) NSString *accountTypeIdentifier;
+@property (nonatomic, copy) NSArray *accounts;
+@property (nonatomic, retain) NSDictionary *accountsToTrackedRecordsInfoMap;
+@property (getter=isActive, nonatomic, readonly) bool active;
+@property (nonatomic, readonly, copy) NSArray *activeAccounts;
+@property (nonatomic, retain) Class fallbackIconProviderClass;
+@property (nonatomic, retain) NSTimer *minimumTimeBetweenRequestsTimer;
+@property (nonatomic) unsigned long long numberOfRequestsInProgressForNewerItems;
+@property (nonatomic, readonly) id serviceImage;
+@property (nonatomic, readonly) NSString *serviceName;
+@property (nonatomic, readonly) NSString *serviceType;
+@property (nonatomic, retain) NSXPCConnection *socialHelperConnection;
 
 + (id)allSocialSources;
 + (id)itemsFromAllSocialSourcesByDate;

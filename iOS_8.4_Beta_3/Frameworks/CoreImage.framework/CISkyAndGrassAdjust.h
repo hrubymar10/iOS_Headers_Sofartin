@@ -8,9 +8,9 @@
     NSNumber *inputSkyAmount;
 }
 
-@property(assign,retain) NSNumber * inputGrassAmount;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputSkyAmount;
+@property (nonatomic, retain) NSNumber *inputGrassAmount;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputSkyAmount;
 
 + (id)customAttributes;
 

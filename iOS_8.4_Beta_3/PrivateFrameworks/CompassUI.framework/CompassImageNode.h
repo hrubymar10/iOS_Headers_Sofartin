@@ -18,10 +18,10 @@
     CompassImageNode *_rightChild;
 }
 
-@property(assign,copy) NSString * imageKey;
-@property(assign,retain) CompassImageNode * leftChild;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rect;
-@property(assign,retain) CompassImageNode * rightChild;
+@property (nonatomic, copy) NSString *imageKey;
+@property (nonatomic, retain) CompassImageNode *leftChild;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rect;
+@property (nonatomic, retain) CompassImageNode *rightChild;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

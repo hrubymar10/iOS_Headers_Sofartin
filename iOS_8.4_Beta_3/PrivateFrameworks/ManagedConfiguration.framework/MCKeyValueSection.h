@@ -8,9 +8,9 @@
     NSString *_sectionTitle;
 }
 
-@property(assign,retain) NSString * sectionFooter;
-@property(assign,retain) NSArray * sectionKeyValues;
-@property(assign,retain) NSString * sectionTitle;
+@property (nonatomic, retain) NSString *sectionFooter;
+@property (nonatomic, retain) NSArray *sectionKeyValues;
+@property (nonatomic, retain) NSString *sectionTitle;
 
 + (id)sectionWithKeyValues:(id)arg1;
 + (id)sectionWithLocalizedArray:(id)arg1 title:(id)arg2 footer:(id)arg3;

@@ -7,8 +7,8 @@
     id _observer;
 }
 
-@property(assign,readwrite) struct __CFDictionary { }* KVODictionary;
-@property(assign,readwrite) id observer;
+@property (nonatomic) struct __CFDictionary { }*KVODictionary;
+@property (nonatomic) id observer;
 
 - (struct __CFDictionary { }*)KVODictionary;
 - (void)addKVOObject:(id)arg1 forKeyPath:(id)arg2 options:(unsigned long long)arg3 context:(void*)arg4;

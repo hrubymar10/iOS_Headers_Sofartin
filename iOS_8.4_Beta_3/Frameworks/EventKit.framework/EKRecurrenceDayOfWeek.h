@@ -7,8 +7,8 @@
     long long _weekNumber;
 }
 
-@property(assign,readonly) long long dayOfTheWeek;
-@property(assign,readonly) long long weekNumber;
+@property (nonatomic, readonly) long long dayOfTheWeek;
+@property (nonatomic, readonly) long long weekNumber;
 
 + (id)dayOfWeek:(long long)arg1;
 + (id)dayOfWeek:(long long)arg1 weekNumber:(long long)arg2;

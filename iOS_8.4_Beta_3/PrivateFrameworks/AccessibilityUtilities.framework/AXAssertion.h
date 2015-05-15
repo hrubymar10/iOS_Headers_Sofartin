@@ -7,8 +7,8 @@
     NSString *_identifier;
 }
 
-@property(assign,retain) NSString * assertionType;
-@property(assign,retain) NSString * identifier;
+@property (nonatomic, retain) NSString *assertionType;
+@property (nonatomic, retain) NSString *identifier;
 
 + (id)assertionWithType:(id)arg1 identifier:(id)arg2;
 

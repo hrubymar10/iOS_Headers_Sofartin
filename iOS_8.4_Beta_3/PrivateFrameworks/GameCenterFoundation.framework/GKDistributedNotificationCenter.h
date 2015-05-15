@@ -6,11 +6,11 @@
     id _internal;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CPDistributedNotificationCenter * notificationCenter;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) CPDistributedNotificationCenter *notificationCenter;
+@property (readonly) Class superclass;
 
 + (id)defaultCenter;
 

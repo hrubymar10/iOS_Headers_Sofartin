@@ -4,13 +4,13 @@
 
 @interface PLAssetToAlbumOrder : PLManagedObject <PLOrderKeyObject>
 
-@property(assign,retain) PLManagedAlbum * album;
-@property(assign,retain) PLManagedAsset * asset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long orderValue;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) PLManagedAlbum *album;
+@property (nonatomic, retain) PLManagedAsset *asset;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long orderValue;
+@property (readonly) Class superclass;
 
 + (id)newAssetOrderForAsset:(id)arg1 album:(id)arg2;
 

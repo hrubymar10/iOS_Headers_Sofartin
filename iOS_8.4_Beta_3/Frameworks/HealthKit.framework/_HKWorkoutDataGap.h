@@ -7,8 +7,8 @@
     NSUUID *_start;
 }
 
-@property(assign,retain) NSUUID * end;
-@property(assign,retain) NSUUID * start;
+@property (nonatomic, retain) NSUUID *end;
+@property (nonatomic, retain) NSUUID *start;
 
 + (bool)supportsSecureCoding;
 

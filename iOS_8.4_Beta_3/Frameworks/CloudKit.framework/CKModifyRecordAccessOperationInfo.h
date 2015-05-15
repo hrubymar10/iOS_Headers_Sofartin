@@ -7,8 +7,8 @@
     NSArray *_recordIDsToRevoke;
 }
 
-@property(assign,retain) NSArray * recordIDsToGrant;
-@property(assign,retain) NSArray * recordIDsToRevoke;
+@property (nonatomic, retain) NSArray *recordIDsToGrant;
+@property (nonatomic, retain) NSArray *recordIDsToRevoke;
 
 + (bool)supportsSecureCoding;
 

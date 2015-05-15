@@ -18,17 +18,17 @@
     unsigned long long _unreadAssetCollectionsCount;
 }
 
-@property(assign,copy) id childCollectionsSortingComparator;
-@property(assign,readonly) long long collectionListSubtype;
-@property(assign,readonly) long long collectionListType;
-@property(assign,readonly) NSArray * collections;
-@property(assign,readonly) NSDate * endDate;
-@property(assign,readonly) unsigned long long estimatedChildCollectionCount;
-@property(assign,readonly) NSArray * localizedLocationNames;
-@property(assign,readonly) PHQuery * query;
-@property(assign,readonly) NSDate * startDate;
-@property(assign,readonly) NSString * transientIdentifier;
-@property(assign,readonly) unsigned long long unreadAssetCollectionsCount;
+@property (nonatomic, readonly, copy) id childCollectionsSortingComparator;
+@property (nonatomic, readonly) long long collectionListSubtype;
+@property (nonatomic, readonly) long long collectionListType;
+@property (nonatomic, readonly) NSArray *collections;
+@property (nonatomic, readonly) NSDate *endDate;
+@property (nonatomic, readonly) unsigned long long estimatedChildCollectionCount;
+@property (nonatomic, readonly) NSArray *localizedLocationNames;
+@property (nonatomic, readonly) PHQuery *query;
+@property (nonatomic, readonly) NSDate *startDate;
+@property (nonatomic, readonly) NSString *transientIdentifier;
+@property (nonatomic, readonly) unsigned long long unreadAssetCollectionsCount;
 
 + (id)entityKeyForPropertyKey:(id)arg1;
 + (id)fetchCollectionListsContainingCollection:(id)arg1 options:(id)arg2;

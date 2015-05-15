@@ -9,10 +9,10 @@
     NSMutableDictionary *_operationFlowControls;
 }
 
-@property(assign,readwrite) unsigned long long defaultBudget;
-@property(assign,readwrite) double defaultRegeneration;
-@property(assign,readwrite) double maximumThrottleTime;
-@property(assign,retain) NSMutableDictionary * operationFlowControls;
+@property (nonatomic) unsigned long long defaultBudget;
+@property (nonatomic) double defaultRegeneration;
+@property double maximumThrottleTime;
+@property (nonatomic, retain) NSMutableDictionary *operationFlowControls;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

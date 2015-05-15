@@ -15,8 +15,8 @@
     NSString *_successfulPairingServiceName;
 }
 
-@property(assign,readwrite) <RMSPairingServerDelegate> * delegate;
-@property(assign,readonly) unsigned short port;
+@property (nonatomic) <RMSPairingServerDelegate> *delegate;
+@property (nonatomic, readonly) unsigned short port;
 
 - (void).cxx_destruct;
 - (id)_parsedQueryParametersWithQueryString:(id)arg1;

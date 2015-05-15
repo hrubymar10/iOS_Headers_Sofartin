@@ -17,15 +17,15 @@
     NSDictionary *_uniformTextAttributes;
 }
 
-@property(assign,copy) NSAttributedString * attributedText;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } boundingSize;
-@property(assign,readwrite) double firstBaselineOffsetFromTop;
-@property(getter=_image,setter=_setImage:,assign,retain) UIImage * image;
-@property(assign,readwrite) double lastBaselineOffsetFromBottom;
-@property(assign,retain) NSStringDrawingContext * stringDrawingContext;
-@property(assign,readwrite) long long stringDrawingOptions;
-@property(assign,copy) NSString * text;
-@property(assign,copy) NSDictionary * uniformTextAttributes;
+@property (nonatomic, copy) NSAttributedString *attributedText;
+@property (nonatomic) struct CGSize { double x1; double x2; } boundingSize;
+@property (nonatomic) double firstBaselineOffsetFromTop;
+@property (getter=_image, setter=_setImage:, nonatomic, retain) UIImage *image;
+@property (nonatomic) double lastBaselineOffsetFromBottom;
+@property (nonatomic, retain) NSStringDrawingContext *stringDrawingContext;
+@property (nonatomic) long long stringDrawingOptions;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) NSDictionary *uniformTextAttributes;
 
 - (void).cxx_destruct;
 - (id)_image;

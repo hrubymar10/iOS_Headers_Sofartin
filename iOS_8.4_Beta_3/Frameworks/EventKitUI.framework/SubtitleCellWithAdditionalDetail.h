@@ -6,7 +6,7 @@
     UILabel *_additionalDetailLabel;
 }
 
-@property(assign,retain) UILabel * additionalDetailLabel;
+@property (nonatomic, readonly, retain) UILabel *additionalDetailLabel;
 
 - (void).cxx_destruct;
 - (id)additionalDetailLabel;

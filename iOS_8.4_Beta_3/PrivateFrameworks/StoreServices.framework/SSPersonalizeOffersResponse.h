@@ -9,11 +9,11 @@
     NSMutableDictionary *_priceDisplayNames;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * personalizedItems;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *personalizedItems;
+@property (readonly) Class superclass;
 
 - (void)_setPersonalizedItems:(id)arg1;
 - (id)actionDisplayNameForItemType:(id)arg1;

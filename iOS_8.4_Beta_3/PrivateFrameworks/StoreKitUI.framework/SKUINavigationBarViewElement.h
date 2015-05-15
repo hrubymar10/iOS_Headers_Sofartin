@@ -7,12 +7,12 @@
     bool _hidesShadow;
 }
 
-@property(assign,readonly) bool hidesBackButton;
-@property(assign,readonly) bool hidesShadow;
-@property(assign,readonly) bool isTransparent;
-@property(assign,readonly) NSArray * mainViewElements;
-@property(assign,readonly) NSArray * navigationPalettes;
-@property(assign,readonly) UIColor * tintColor;
+@property (nonatomic, readonly) bool hidesBackButton;
+@property (nonatomic, readonly) bool hidesShadow;
+@property (nonatomic, readonly) bool isTransparent;
+@property (nonatomic, readonly) NSArray *mainViewElements;
+@property (nonatomic, readonly) NSArray *navigationPalettes;
+@property (nonatomic, readonly) UIColor *tintColor;
 
 - (id)applyUpdatesWithElement:(id)arg1;
 - (bool)hidesBackButton;

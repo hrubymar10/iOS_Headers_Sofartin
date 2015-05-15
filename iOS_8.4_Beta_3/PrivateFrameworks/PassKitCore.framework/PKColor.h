@@ -10,9 +10,9 @@
     double _red;
 }
 
-@property(assign,readonly) struct CGColor { }* CGColor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * string;
+@property (nonatomic, readonly) struct CGColor { }*CGColor;
+@property (nonatomic, readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *string;
 
 + (id)colorFromString:(id)arg1;
 + (id)colorWithH:(double)arg1 S:(double)arg2 B:(double)arg3 A:(double)arg4;

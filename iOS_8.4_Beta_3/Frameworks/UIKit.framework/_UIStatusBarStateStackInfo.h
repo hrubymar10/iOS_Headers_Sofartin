@@ -8,9 +8,9 @@
     long long _statusBarOrientationWithoutHost;
 }
 
-@property(assign,readwrite) int hostPID;
-@property(assign,readwrite) double statusBarHeightWithoutHost;
-@property(assign,readwrite) long long statusBarOrientationWithoutHost;
+@property int hostPID;
+@property double statusBarHeightWithoutHost;
+@property long long statusBarOrientationWithoutHost;
 
 - (int)hostPID;
 - (void)setHostPID:(int)arg1;

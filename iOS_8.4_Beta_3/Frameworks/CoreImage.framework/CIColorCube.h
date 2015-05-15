@@ -9,9 +9,9 @@
     CIImage *inputImage;
 }
 
-@property(assign,copy) NSData * inputCubeData;
-@property(assign,retain) NSNumber * inputCubeDimension;
-@property(assign,retain) CIImage * inputImage;
+@property (nonatomic, copy) NSData *inputCubeData;
+@property (nonatomic, retain) NSNumber *inputCubeDimension;
+@property (nonatomic, retain) CIImage *inputImage;
 
 + (id)customAttributes;
 

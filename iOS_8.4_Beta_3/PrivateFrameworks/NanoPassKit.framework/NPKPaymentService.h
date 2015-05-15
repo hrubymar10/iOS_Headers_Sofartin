@@ -10,15 +10,15 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <NPKPaymentServiceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long fieldDetectReferenceCount;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool requestsPaymentSessions;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSPointerArray * transientPassAssertions;
-@property(assign,retain) NSXPCConnection * xpcConnection;
+@property (readonly, copy) NSString *debugDescription;
+@property <NPKPaymentServiceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long fieldDetectReferenceCount;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool requestsPaymentSessions;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSPointerArray *transientPassAssertions;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
 
 + (id)paymentGlobalConcurrentQueue;
 

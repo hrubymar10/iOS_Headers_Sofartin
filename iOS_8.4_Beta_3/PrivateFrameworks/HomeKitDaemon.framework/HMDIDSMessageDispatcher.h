@@ -14,17 +14,17 @@
     NSMutableDictionary *_remoteGateways;
 }
 
-@property(assign,retain) NSMutableDictionary * activeClientSecureSessions;
-@property(assign,retain) NSMutableDictionary * activeServerSecureSessions;
-@property(assign,retain) HMDAdminEnforcementMessageFilter * adminMsgFilter;
-@property(assign,retain) HMDIdentityRegistry * identityRegistry;
-@property(assign,retain) HMDMessageFilterChain * msgFilterChain;
-@property(assign,retain) HMMessageDispatcher * notificationDispatcher;
-@property(assign,retain) HMDNotificationRelay * notificationRelay;
-@property(assign,retain) HMMessageDispatcher * recvDispatcher;
-@property(assign,retain) NSMutableDictionary * remoteGateways;
-@property(assign,readonly) NSArray * residentDevices;
-@property(assign,readonly) NSArray * transientDevices;
+@property (nonatomic, retain) NSMutableDictionary *activeClientSecureSessions;
+@property (nonatomic, retain) NSMutableDictionary *activeServerSecureSessions;
+@property (nonatomic, retain) HMDAdminEnforcementMessageFilter *adminMsgFilter;
+@property (nonatomic, retain) HMDIdentityRegistry *identityRegistry;
+@property (nonatomic, retain) HMDMessageFilterChain *msgFilterChain;
+@property (nonatomic, retain) HMMessageDispatcher *notificationDispatcher;
+@property (nonatomic, retain) HMDNotificationRelay *notificationRelay;
+@property (nonatomic, retain) HMMessageDispatcher *recvDispatcher;
+@property (nonatomic, retain) NSMutableDictionary *remoteGateways;
+@property (nonatomic, readonly) NSArray *residentDevices;
+@property (nonatomic, readonly) NSArray *transientDevices;
 
 + (bool)isWhitelistedLocalMessage:(id)arg1;
 + (id)remappedRemotePrepareWriteCommands;

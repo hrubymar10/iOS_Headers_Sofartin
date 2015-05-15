@@ -9,14 +9,14 @@
     bool _selected;
 }
 
-@property(assign,retain) UIImage * actualImage;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isOnAdaptiveBackground,assign,readwrite) long long onAdaptiveBackground;
-@property(assign,retain) GKPlayer * player;
-@property(assign,readwrite) bool selected;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIImage *actualImage;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isOnAdaptiveBackground, nonatomic) long long onAdaptiveBackground;
+@property (nonatomic, retain) GKPlayer *player;
+@property (nonatomic) bool selected;
+@property (readonly) Class superclass;
 
 + (void)initialize;
 

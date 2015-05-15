@@ -7,8 +7,8 @@
     NSDictionary *_x_props;
 }
 
-@property(assign,readwrite) int classification;
-@property(assign,retain) NSDictionary * x_props;
+@property int classification;
+@property (retain) NSDictionary *x_props;
 
 + (id)metadataWithData:(id)arg1;
 + (id)metadataWithICSComponent:(id)arg1;

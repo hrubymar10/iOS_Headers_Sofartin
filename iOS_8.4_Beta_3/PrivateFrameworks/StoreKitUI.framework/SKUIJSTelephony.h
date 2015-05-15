@@ -8,13 +8,13 @@
     struct __CTServerConnection { } *_telephonyServer;
 }
 
-@property(getter=isCellularRoaming,assign,readonly) bool cellularRoaming;
-@property(assign,readonly) NSString * countryCode;
-@property(assign,readonly) NSString * mobileCountryCode;
-@property(assign,readonly) NSString * mobileNetworkCode;
-@property(assign,readonly) NSString * operatorName;
-@property(assign,readonly) NSString * phoneNumber;
-@property(assign,readonly) NSString * providerName;
+@property (getter=isCellularRoaming, nonatomic, readonly) bool cellularRoaming;
+@property (nonatomic, readonly) NSString *countryCode;
+@property (nonatomic, readonly) NSString *mobileCountryCode;
+@property (nonatomic, readonly) NSString *mobileNetworkCode;
+@property (nonatomic, readonly) NSString *operatorName;
+@property (nonatomic, readonly) NSString *phoneNumber;
+@property (nonatomic, readonly) NSString *providerName;
 
 - (void).cxx_destruct;
 - (struct __CTServerConnection { }*)_telephonyServer;

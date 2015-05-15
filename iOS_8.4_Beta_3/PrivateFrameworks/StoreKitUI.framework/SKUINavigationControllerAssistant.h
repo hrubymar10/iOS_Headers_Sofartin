@@ -12,10 +12,10 @@
     UIViewController *_statusOverlayViewController;
 }
 
-@property(assign,readonly) SKUIClientContext * clientContext;
-@property(assign,readwrite) bool hidesShadow;
-@property(assign,readonly) UINavigationController * navigationController;
-@property(assign,retain) <SKUIStatusOverlayProvider> * statusOverlayProvider;
+@property (nonatomic, readonly) SKUIClientContext *clientContext;
+@property (nonatomic) bool hidesShadow;
+@property (nonatomic, readonly) UINavigationController *navigationController;
+@property (nonatomic, retain) <SKUIStatusOverlayProvider> *statusOverlayProvider;
 
 + (id)assistantForNavigationController:(id)arg1 clientContext:(id)arg2;
 + (id)existingAssistantForNavigationController:(id)arg1;

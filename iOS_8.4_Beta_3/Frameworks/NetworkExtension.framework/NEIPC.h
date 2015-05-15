@@ -9,10 +9,10 @@
     NSObject<OS_dispatch_io> *_socket_io;
 }
 
-@property(assign,copy) id messageHandler;
-@property(assign,retain) NSObject<OS_dispatch_data> * previousData;
-@property(assign,readwrite) int socket;
-@property(assign,retain) NSObject<OS_dispatch_io> * socket_io;
+@property (copy) id messageHandler;
+@property (retain) NSObject<OS_dispatch_data> *previousData;
+@property int socket;
+@property (retain) NSObject<OS_dispatch_io> *socket_io;
 
 - (void).cxx_destruct;
 - (id)initWithSocket:(int)arg1;

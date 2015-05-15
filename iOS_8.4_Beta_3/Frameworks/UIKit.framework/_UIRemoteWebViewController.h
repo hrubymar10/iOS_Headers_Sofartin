@@ -6,7 +6,7 @@
     _UIWebViewController *_webViewController;
 }
 
-@property(assign,readwrite) _UIWebViewController * webViewController;
+@property (nonatomic) _UIWebViewController *webViewController;
 
 + (id)exportedInterface;
 + (id)serviceViewControllerInterface;

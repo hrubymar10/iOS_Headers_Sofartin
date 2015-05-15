@@ -8,7 +8,7 @@
     BRCAccountSession *_session;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
 
 - (void).cxx_destruct;
 - (void)_enumerateItemsForEvictSyncWithBlock:(id)arg1 withUrgency:(int)arg2;

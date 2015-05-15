@@ -15,16 +15,16 @@
     int _type;
 }
 
-@property(assign,copy) NSString * abURLString;
-@property(assign,copy) NSString * address;
-@property(assign,copy) NSString * displayName;
-@property(assign,readonly) bool isCurrentLocation;
-@property(assign,copy) CLLocation * location;
-@property(assign,retain) CLPlacemark * placemark;
-@property(assign,readwrite) double radius;
-@property(assign,copy) NSString * routeType;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) int type;
+@property (copy) NSString *abURLString;
+@property (copy) NSString *address;
+@property (copy) NSString *displayName;
+@property (nonatomic, readonly) bool isCurrentLocation;
+@property (nonatomic, copy) CLLocation *location;
+@property (retain) CLPlacemark *placemark;
+@property (nonatomic) double radius;
+@property (copy) NSString *routeType;
+@property (copy) NSString *title;
+@property int type;
 
 + (id)coordinatesFromGeoURLString:(id)arg1;
 + (id)fullDisplayStringWithTitle:(id)arg1 address:(id)arg2;

@@ -14,12 +14,12 @@
     bool _valueChanged;
 }
 
-@property(assign,readwrite) PSListController * controllerDelegate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool returnKeyTapped;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) PSListController *controllerDelegate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool returnKeyTapped;
+@property (readonly) Class superclass;
 
 + (long long)cellStyle;
 

@@ -12,11 +12,11 @@
     NSMutableArray *_localizedNames;
 }
 
-@property(assign,retain) NSString * alias;
-@property(assign,readwrite) long long geoOntologyId;
-@property(assign,readwrite) bool hasGeoOntologyId;
-@property(assign,readwrite) int level;
-@property(assign,retain) NSMutableArray * localizedNames;
+@property (nonatomic, retain) NSString *alias;
+@property (nonatomic) long long geoOntologyId;
+@property (nonatomic) bool hasGeoOntologyId;
+@property (nonatomic) int level;
+@property (nonatomic, retain) NSMutableArray *localizedNames;
 
 - (void)addLocalizedNames:(id)arg1;
 - (id)alias;

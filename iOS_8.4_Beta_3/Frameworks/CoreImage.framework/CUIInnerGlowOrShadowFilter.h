@@ -10,11 +10,11 @@
     NSNumber *inputRange;
 }
 
-@property(assign,retain) CIColor * inputColor;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIVector * inputOffset;
-@property(assign,retain) NSNumber * inputRadius;
-@property(assign,retain) NSNumber * inputRange;
+@property (nonatomic, retain) CIColor *inputColor;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIVector *inputOffset;
+@property (nonatomic, retain) NSNumber *inputRadius;
+@property (nonatomic, retain) NSNumber *inputRange;
 
 + (id)customAttributes;
 

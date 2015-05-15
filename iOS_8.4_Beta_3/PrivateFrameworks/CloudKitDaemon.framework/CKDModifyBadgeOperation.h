@@ -6,7 +6,7 @@
     unsigned long long _badgeValue;
 }
 
-@property(assign,readonly) unsigned long long badgeValue;
+@property (nonatomic, readonly) unsigned long long badgeValue;
 
 - (unsigned long long)badgeValue;
 - (id)initWithOperationInfo:(id)arg1 clientContext:(id)arg2;

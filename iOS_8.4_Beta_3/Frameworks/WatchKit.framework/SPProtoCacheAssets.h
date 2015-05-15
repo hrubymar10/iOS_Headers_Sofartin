@@ -6,7 +6,7 @@
     NSMutableArray *_assets;
 }
 
-@property(assign,retain) NSMutableArray * assets;
+@property (nonatomic, retain) NSMutableArray *assets;
 
 - (void).cxx_destruct;
 - (void)addAssets:(id)arg1;

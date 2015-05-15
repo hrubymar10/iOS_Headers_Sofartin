@@ -19,14 +19,14 @@
     CIFilter *_warmAndCoolFilter;
 }
 
-@property(assign,retain) CIFilter * auraFilter;
-@property(assign,retain) CIFilter * blackAndWhiteFilter;
-@property(assign,retain) CIFilter * dramaFilter;
-@property(assign,retain) CIFilter * duotoneFilter;
-@property(assign,readwrite) bool liveInteraction;
-@property(assign,retain) CIFilter * photoFiltersFilter;
-@property(assign,retain) CIFilter * vintageFilter;
-@property(assign,retain) CIFilter * warmAndCoolFilter;
+@property (nonatomic, retain) CIFilter *auraFilter;
+@property (nonatomic, retain) CIFilter *blackAndWhiteFilter;
+@property (nonatomic, retain) CIFilter *dramaFilter;
+@property (nonatomic, retain) CIFilter *duotoneFilter;
+@property (nonatomic) bool liveInteraction;
+@property (nonatomic, retain) CIFilter *photoFiltersFilter;
+@property (nonatomic, retain) CIFilter *vintageFilter;
+@property (nonatomic, retain) CIFilter *warmAndCoolFilter;
 
 - (id)auraFilter;
 - (id)blackAndWhiteFilter;

@@ -30,16 +30,16 @@
     id selectedTarget;
 }
 
-@property(assign,copy) UIAlertAction * action;
-@property(assign,readwrite) double alignedDescriptiveLabelTextWidth;
-@property(assign,readonly) double currentDescriptiveLabelTextWidth;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool discrete;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) UIAlertControllerVisualStyle * visualStyle;
+@property (nonatomic, copy) UIAlertAction *action;
+@property double alignedDescriptiveLabelTextWidth;
+@property (readonly) double currentDescriptiveLabelTextWidth;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property bool discrete;
+@property (readonly) unsigned long long hash;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (readonly) Class superclass;
+@property UIAlertControllerVisualStyle *visualStyle;
 
 - (void)_action:(id)arg1 changedToBeDefault:(bool)arg2;
 - (void)_action:(id)arg1 changedToChecked:(bool)arg2;

@@ -8,7 +8,7 @@
     UIImage *_videoPlaceholderImage;
 }
 
-@property(assign,readonly) SKUILockupSwooshViewController * swooshViewController;
+@property (nonatomic, readonly) SKUILockupSwooshViewController *swooshViewController;
 
 - (void).cxx_destruct;
 - (id)cachedImageForItem:(id)arg1;

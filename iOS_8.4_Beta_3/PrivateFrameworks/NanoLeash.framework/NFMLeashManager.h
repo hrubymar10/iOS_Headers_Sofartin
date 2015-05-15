@@ -22,25 +22,25 @@
     bool _testMode;
 }
 
-@property(assign,retain) CBCentralManager * centralManager;
-@property(assign,readwrite) long long centralPhase;
-@property(assign,readwrite) bool connected;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) CBPeripheral * discoveredPeripheral;
-@property(assign,retain) NSObject<OS_dispatch_queue> * externalQueue;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <NFMLLeashBreakDelegate> * leashDelegate;
-@property(assign,retain) NSObject<OS_dispatch_source> * leashDispatchSourceTimer;
-@property(assign,copy) NSString * leashIdentifier;
-@property(assign,readwrite) long long leashMode;
-@property(assign,readwrite) bool needsToScanForPeripheral;
-@property(assign,retain) CBPeripheral * peripheral;
-@property(assign,retain) CBScalablePipe * pipe;
-@property(assign,retain) CBScalablePipeManager * pipeManager;
-@property(assign,copy) NSString * serviceUUID;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool testMode;
+@property (nonatomic, retain) CBCentralManager *centralManager;
+@property (nonatomic) long long centralPhase;
+@property (nonatomic) bool connected;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) CBPeripheral *discoveredPeripheral;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *externalQueue;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <NFMLLeashBreakDelegate> *leashDelegate;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *leashDispatchSourceTimer;
+@property (nonatomic, copy) NSString *leashIdentifier;
+@property (nonatomic) long long leashMode;
+@property (nonatomic) bool needsToScanForPeripheral;
+@property (nonatomic, retain) CBPeripheral *peripheral;
+@property (nonatomic, retain) CBScalablePipe *pipe;
+@property (nonatomic, retain) CBScalablePipeManager *pipeManager;
+@property (nonatomic, copy) NSString *serviceUUID;
+@property (readonly) Class superclass;
+@property (nonatomic) bool testMode;
 
 - (void).cxx_destruct;
 - (void)beginMonitoringLeash;

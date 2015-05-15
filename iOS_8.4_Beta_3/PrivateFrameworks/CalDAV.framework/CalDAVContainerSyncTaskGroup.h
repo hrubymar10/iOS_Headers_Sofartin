@@ -17,17 +17,17 @@
     NSDateComponents *_todoFilterStartDate;
 }
 
-@property(assign,retain) <CalDAVCalendar> * calendar;
-@property(assign,retain) NSDateComponents * eventFilterEndDate;
-@property(assign,retain) NSDateComponents * eventFilterStartDate;
-@property(assign,readwrite) bool fallbackOnMultiGetError;
-@property(assign,readwrite) bool getScheduleChanges;
-@property(assign,readwrite) bool getScheduleTags;
-@property(assign,readwrite) bool supportsExtendedCalendarQuery;
-@property(assign,readwrite) bool syncEvents;
-@property(assign,readwrite) bool syncTodos;
-@property(assign,retain) NSDateComponents * todoFilterEndDate;
-@property(assign,retain) NSDateComponents * todoFilterStartDate;
+@property (nonatomic, retain) <CalDAVCalendar> *calendar;
+@property (nonatomic, retain) NSDateComponents *eventFilterEndDate;
+@property (nonatomic, retain) NSDateComponents *eventFilterStartDate;
+@property (nonatomic) bool fallbackOnMultiGetError;
+@property (nonatomic) bool getScheduleChanges;
+@property (nonatomic) bool getScheduleTags;
+@property (nonatomic) bool supportsExtendedCalendarQuery;
+@property (nonatomic) bool syncEvents;
+@property (nonatomic) bool syncTodos;
+@property (nonatomic, retain) NSDateComponents *todoFilterEndDate;
+@property (nonatomic, retain) NSDateComponents *todoFilterStartDate;
 
 - (bool)_shouldFetchEventsForState:(int)arg1;
 - (bool)_shouldFetchTodosForState:(int)arg1;

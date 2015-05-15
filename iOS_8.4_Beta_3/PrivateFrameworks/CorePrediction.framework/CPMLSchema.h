@@ -14,12 +14,12 @@
     int yColumnPosition;
 }
 
-@property(assign,readonly) NSMutableArray * attribute;
-@property(assign,readonly) NSMutableArray * availableOptions;
-@property(assign,readonly) NSMutableArray * indexColumnList;
-@property(assign,readonly) NSMutableArray * nsRemapTable;
-@property(assign,readonly) NSMutableString * schemaHeader;
-@property(assign,readonly) NSMutableString * schemaHeaderWithType;
+@property (nonatomic, readonly) NSMutableArray *attribute;
+@property (nonatomic, readonly) NSMutableArray *availableOptions;
+@property (nonatomic, readonly) NSMutableArray *indexColumnList;
+@property (nonatomic, readonly) NSMutableArray *nsRemapTable;
+@property (nonatomic, readonly) NSMutableString *schemaHeader;
+@property (nonatomic, readonly) NSMutableString *schemaHeaderWithType;
 
 - (void).cxx_destruct;
 - (id)attribute;

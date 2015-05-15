@@ -9,10 +9,10 @@
     id _values;
 }
 
-@property(getter=isNegative,assign,readonly) bool negative;
-@property(assign,readonly) SSSQLiteQuery * query;
-@property(assign,readonly) NSString * queryProperty;
-@property(assign,readonly) NSArray * values;
+@property (getter=isNegative, nonatomic, readonly) bool negative;
+@property (nonatomic, readonly) SSSQLiteQuery *query;
+@property (nonatomic, readonly) NSString *queryProperty;
+@property (nonatomic, readonly) NSArray *values;
 
 + (id)containsPredicateWithProperty:(id)arg1 query:(id)arg2 queryProperty:(id)arg3;
 + (id)containsPredicateWithProperty:(id)arg1 values:(id)arg2;

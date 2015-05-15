@@ -8,15 +8,15 @@
     long long _numberOfIgnoredInvalidations;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) NSString * entityCountFormat;
-@property(assign,readonly) long long entityType;
-@property(assign,readonly) bool isEmpty;
-@property(assign,readonly) NSArray * localizedSectionIndexTitles;
-@property(assign,readonly) unsigned long long numberOfSections;
-@property(assign,readonly) bool showsEntityCountFooter;
-@property(assign,readonly) bool showsIndexBar;
-@property(assign,readonly) bool usesSections;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, readonly) NSString *entityCountFormat;
+@property (nonatomic, readonly) long long entityType;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, readonly) NSArray *localizedSectionIndexTitles;
+@property (nonatomic, readonly) unsigned long long numberOfSections;
+@property (nonatomic, readonly) bool showsEntityCountFooter;
+@property (nonatomic, readonly) bool showsIndexBar;
+@property (nonatomic, readonly) bool usesSections;
 
 + (Class)invalidationContextClass;
 

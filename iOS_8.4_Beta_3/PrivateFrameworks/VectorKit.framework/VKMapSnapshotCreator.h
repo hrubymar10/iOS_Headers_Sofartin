@@ -16,16 +16,16 @@
     unsigned int _tileGroupID;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long labelScaleFactor;
-@property(assign,readwrite) bool localizeLabels;
-@property(assign,readwrite) long long mapType;
-@property(assign,readwrite) bool showsBuildings;
-@property(assign,readwrite) bool showsPointsOfInterest;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long labelScaleFactor;
+@property (nonatomic) bool localizeLabels;
+@property (nonatomic) long long mapType;
+@property (nonatomic) bool showsBuildings;
+@property (nonatomic) bool showsPointsOfInterest;
+@property (readonly) struct CGSize { double x1; double x2; } size;
+@property (readonly) Class superclass;
 
 + (struct shared_ptr<ggl::GLDevice> { struct GLDevice {} *x1; struct __shared_weak_count {} *x2; })device;
 + (bool)supportsHighResolutionSnapshots;

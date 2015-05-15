@@ -15,16 +15,16 @@
     _UIDocumentPickerDocumentTableViewController *_weak_tableView;
 }
 
-@property(assign,retain) SKUIItemOfferButton * cloudButton;
-@property(assign,retain) UIView * iconCenteringView;
-@property(assign,retain) UIImageView * iconView;
-@property(assign,readwrite) bool isContainer;
-@property(assign,retain) _UIDocumentPickerContainerItem * item;
-@property(assign,retain) id progressSubscriber;
-@property(assign,retain) NSTimer * progressTimer;
-@property(assign,retain) UILabel * subtitleLabel;
-@property(assign,readwrite) _UIDocumentPickerDocumentTableViewController * tableView;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) SKUIItemOfferButton *cloudButton;
+@property (nonatomic, retain) UIView *iconCenteringView;
+@property (nonatomic, retain) UIImageView *iconView;
+@property (nonatomic) bool isContainer;
+@property (nonatomic, retain) _UIDocumentPickerContainerItem *item;
+@property (nonatomic, retain) id progressSubscriber;
+@property (nonatomic, retain) NSTimer *progressTimer;
+@property (nonatomic, retain) UILabel *subtitleLabel;
+@property (nonatomic) _UIDocumentPickerDocumentTableViewController *tableView;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 + (double)estimatedHeight;
 + (struct CGSize { double x1; double x2; })thumbnailSize;

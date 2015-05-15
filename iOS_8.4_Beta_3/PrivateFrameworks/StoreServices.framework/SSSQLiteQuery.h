@@ -7,9 +7,9 @@
     SSSQLiteQueryDescriptor *_descriptor;
 }
 
-@property(assign,readonly) long long countOfEntities;
-@property(assign,readonly) SSSQLiteDatabase * database;
-@property(assign,readonly) SSSQLiteQueryDescriptor * queryDescriptor;
+@property (readonly) long long countOfEntities;
+@property (readonly) SSSQLiteDatabase *database;
+@property (readonly) SSSQLiteQueryDescriptor *queryDescriptor;
 
 - (id)_newSelectSQLWithProperties:(const id*)arg1 count:(unsigned long long)arg2;
 - (void)bindToSelectStatement:(struct sqlite3_stmt { }*)arg1 bindingIndex:(inout int*)arg2;

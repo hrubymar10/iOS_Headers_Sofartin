@@ -6,7 +6,7 @@
     NSArray *_calls;
 }
 
-@property(assign,retain) NSArray * calls;
+@property (retain) NSArray *calls;
 
 - (id)calls;
 - (void)dealloc;

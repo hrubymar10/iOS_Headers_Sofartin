@@ -8,9 +8,9 @@
     bool _wantsDrawerLayout;
 }
 
-@property(assign,readwrite) double drawerPercentRevealed;
-@property(assign,readwrite) BOOL orientation;
-@property(assign,readwrite) bool wantsDrawerLayout;
+@property (nonatomic) double drawerPercentRevealed;
+@property (nonatomic) BOOL orientation;
+@property (nonatomic) bool wantsDrawerLayout;
 
 - (void)configureForChatItem:(id)arg1;
 - (double)drawerPercentRevealed;

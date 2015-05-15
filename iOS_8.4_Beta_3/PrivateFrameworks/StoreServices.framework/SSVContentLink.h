@@ -12,14 +12,14 @@
     long long _targetApplication;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,copy) NSString * categoryName;
-@property(assign,readwrite) long long contentKind;
-@property(assign,copy) NSNumber * itemIdentifier;
-@property(assign,copy) NSString * itemTitle;
-@property(assign,copy) NSString * providerName;
-@property(assign,copy) NSString * searchTerm;
-@property(assign,readwrite) long long targetApplication;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, copy) NSString *categoryName;
+@property (nonatomic) long long contentKind;
+@property (nonatomic, copy) NSNumber *itemIdentifier;
+@property (nonatomic, copy) NSString *itemTitle;
+@property (nonatomic, copy) NSString *providerName;
+@property (nonatomic, copy) NSString *searchTerm;
+@property (nonatomic) long long targetApplication;
 
 - (void).cxx_destruct;
 - (id)URL;

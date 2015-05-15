@@ -6,7 +6,7 @@
     NSString *_inviteCode;
 }
 
-@property(assign,copy) NSString * inviteCode;
+@property (nonatomic, copy) NSString *inviteCode;
 
 - (void).cxx_destruct;
 - (id)inviteCode;

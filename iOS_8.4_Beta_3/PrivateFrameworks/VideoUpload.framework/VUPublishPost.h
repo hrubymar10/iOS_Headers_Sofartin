@@ -7,7 +7,7 @@
     <VUPublishPostDelegate> *_delegate;
 }
 
-@property(assign,readwrite) bool allowsCellularAccessForUploads;
+@property (nonatomic) bool allowsCellularAccessForUploads;
 
 - (void).cxx_destruct;
 - (bool)allowsCellularAccessForUploads;

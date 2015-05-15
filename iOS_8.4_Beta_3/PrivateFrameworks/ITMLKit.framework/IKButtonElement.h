@@ -4,10 +4,10 @@
 
 @interface IKButtonElement : IKViewElement
 
-@property(assign,readonly) long long buttonType;
-@property(assign,copy) NSString * confirmationText;
-@property(assign,retain) IKImageElement * image;
-@property(assign,retain) IKTextElement * text;
+@property (nonatomic, readonly) long long buttonType;
+@property (nonatomic, readonly, copy) NSString *confirmationText;
+@property (nonatomic, readonly, retain) IKImageElement *image;
+@property (nonatomic, readonly, retain) IKTextElement *text;
 
 - (long long)buttonType;
 - (id)confirmationText;

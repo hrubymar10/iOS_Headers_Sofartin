@@ -7,8 +7,8 @@
     double _rowHeight;
 }
 
-@property(assign,readwrite) unsigned long long highlightedRowIndex;
-@property(assign,readwrite) double rowHeight;
+@property (nonatomic) unsigned long long highlightedRowIndex;
+@property (nonatomic) double rowHeight;
 
 + (struct CGColor { }*)backgroundColor;
 + (id)collectionViewKind;

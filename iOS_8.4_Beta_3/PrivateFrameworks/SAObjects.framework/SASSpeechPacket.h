@@ -4,14 +4,14 @@
 
 @interface SASSpeechPacket : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long packetNumber;
-@property(assign,copy) NSArray * packets;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long packetNumber;
+@property (nonatomic, copy) NSArray *packets;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
 
 + (id)speechPacket;
 + (id)speechPacketWithDictionary:(id)arg1 context:(id)arg2;

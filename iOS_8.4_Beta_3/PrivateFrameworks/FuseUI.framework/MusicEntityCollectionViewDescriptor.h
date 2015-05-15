@@ -16,14 +16,14 @@
     bool _wantsEdgeToEdgeLayout;
 }
 
-@property(assign,copy) id layoutMetricsBlock;
-@property(assign,readwrite) double sectionHeaderBottomContentInset;
-@property(assign,readwrite) bool shouldFlattenToSingleSectionInRegularWidthAndHeight;
-@property(assign,readwrite) bool shouldShowOnlyFirstRowOfContent;
-@property(assign,readwrite) bool showsSectionHeaders;
-@property(assign,readwrite) double verticalLockupMaximumWidth;
-@property(assign,readwrite) struct { double x1; double x2; } verticalLockupWidthFromCollectionViewWidthLinearRelation;
-@property(assign,readwrite) bool wantsEdgeToEdgeLayout;
+@property (nonatomic, copy) id layoutMetricsBlock;
+@property (nonatomic) double sectionHeaderBottomContentInset;
+@property (nonatomic) bool shouldFlattenToSingleSectionInRegularWidthAndHeight;
+@property (nonatomic) bool shouldShowOnlyFirstRowOfContent;
+@property (nonatomic) bool showsSectionHeaders;
+@property (nonatomic) double verticalLockupMaximumWidth;
+@property (nonatomic) struct { double x1; double x2; } verticalLockupWidthFromCollectionViewWidthLinearRelation;
+@property (nonatomic) bool wantsEdgeToEdgeLayout;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

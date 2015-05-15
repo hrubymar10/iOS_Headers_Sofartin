@@ -7,11 +7,11 @@
     NSArray *_prefetchedProperties;
 }
 
-@property(assign,copy) NSString * entityTypeString;
-@property(assign,readonly) SKUILimitListViewElement * limitListViewElement;
-@property(assign,readonly) SKUIPredicateListViewElement * predicateListViewElement;
-@property(assign,copy) NSArray * prefetchedProperties;
-@property(assign,readonly) SKUISortDescriptorListViewElement * sortDescriptorListViewElement;
+@property (nonatomic, readonly, copy) NSString *entityTypeString;
+@property (nonatomic, readonly) SKUILimitListViewElement *limitListViewElement;
+@property (nonatomic, readonly) SKUIPredicateListViewElement *predicateListViewElement;
+@property (nonatomic, readonly, copy) NSArray *prefetchedProperties;
+@property (nonatomic, readonly) SKUISortDescriptorListViewElement *sortDescriptorListViewElement;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

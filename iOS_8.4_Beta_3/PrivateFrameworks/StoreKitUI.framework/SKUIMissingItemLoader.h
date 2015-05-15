@@ -11,14 +11,14 @@
     NSMutableDictionary *_requests;
 }
 
-@property(assign,readwrite) long long batchSize;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIMissingItemDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * imageProfile;
-@property(assign,copy) NSString * keyProfile;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long batchSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIMissingItemDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *imageProfile;
+@property (nonatomic, copy) NSString *keyProfile;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_existingRequestIDForItemID:(id)arg1;

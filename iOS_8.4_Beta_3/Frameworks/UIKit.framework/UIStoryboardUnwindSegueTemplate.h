@@ -6,7 +6,7 @@
     NSString *_action;
 }
 
-@property(assign,copy) NSString * action;
+@property (nonatomic, copy) NSString *action;
 
 - (void)_perform:(id)arg1;
 - (id)_unwindExecutorForTarget:(id)arg1;

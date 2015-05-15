@@ -8,8 +8,8 @@
     NSMutableArray *_selectedRows;
 }
 
-@property(assign,retain) NSMutableArray * cells;
-@property(assign,retain) NSArray * daysOfTheWeek;
+@property (nonatomic, retain) NSMutableArray *cells;
+@property (nonatomic, retain) NSArray *daysOfTheWeek;
 
 - (void).cxx_destruct;
 - (int)_dayMask;

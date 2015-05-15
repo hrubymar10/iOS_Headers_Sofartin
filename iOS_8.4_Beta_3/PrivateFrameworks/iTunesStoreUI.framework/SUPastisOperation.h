@@ -8,9 +8,9 @@
     AVAssetResourceLoadingRequest *_loadingRequest;
 }
 
-@property(assign,retain) NSURL * certificateURL;
-@property(assign,retain) NSURL * keyURL;
-@property(assign,retain) AVAssetResourceLoadingRequest * loadingRequest;
+@property (nonatomic, retain) NSURL *certificateURL;
+@property (nonatomic, retain) NSURL *keyURL;
+@property (nonatomic, retain) AVAssetResourceLoadingRequest *loadingRequest;
 
 - (id)_getAppCertWithError:(id*)arg1;
 - (id)_getCKCForSPC:(id)arg1 URI:(id)arg2 error:(id*)arg3;

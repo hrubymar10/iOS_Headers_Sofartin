@@ -12,22 +12,22 @@
     NSMutableArray *_recentLogs;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <BSFileLoggerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=isEnabled,assign,readonly) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long logDestinations;
-@property(assign,readonly) NSString * logPath;
-@property(assign,readonly) NSString * logPreferenceDomain;
-@property(assign,readonly) NSString * logPreferenceName;
-@property(assign,readonly) int maxLogCount;
-@property(assign,readonly) unsigned long long maxLogLinesInMemory;
-@property(assign,readonly) int maxLogSize;
-@property(assign,readonly) NSString * name;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) bool shouldEnableOnInternalBuilds;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <BSFileLoggerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=isEnabled, nonatomic, readonly) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long logDestinations;
+@property (nonatomic, readonly) NSString *logPath;
+@property (nonatomic, readonly) NSString *logPreferenceDomain;
+@property (nonatomic, readonly) NSString *logPreferenceName;
+@property (nonatomic, readonly) int maxLogCount;
+@property (nonatomic, readonly) unsigned long long maxLogLinesInMemory;
+@property (nonatomic, readonly) int maxLogSize;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, readonly) bool shouldEnableOnInternalBuilds;
+@property (readonly) Class superclass;
 
 - (void)_appendLogForCategory:(id)arg1 withFormat:(id)arg2 arguments:(char *)arg3;
 - (void)_disableLogCategory:(id)arg1;

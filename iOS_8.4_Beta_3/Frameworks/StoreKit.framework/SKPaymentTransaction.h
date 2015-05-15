@@ -6,16 +6,16 @@
     id _internal;
 }
 
-@property(assign,readonly) NSString * _transactionIdentifier;
-@property(assign,readonly) NSArray * downloads;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) NSString * matchingIdentifier;
-@property(assign,readonly) SKPaymentTransaction * originalTransaction;
-@property(assign,readonly) SKPayment * payment;
-@property(assign,readonly) NSDate * transactionDate;
-@property(assign,readonly) NSString * transactionIdentifier;
-@property(assign,readonly) NSData * transactionReceipt;
-@property(assign,readonly) long long transactionState;
+@property (nonatomic, readonly) NSString *_transactionIdentifier;
+@property (nonatomic, readonly) NSArray *downloads;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) NSString *matchingIdentifier;
+@property (nonatomic, readonly) SKPaymentTransaction *originalTransaction;
+@property (nonatomic, readonly) SKPayment *payment;
+@property (nonatomic, readonly) NSDate *transactionDate;
+@property (nonatomic, readonly) NSString *transactionIdentifier;
+@property (nonatomic, readonly) NSData *transactionReceipt;
+@property (nonatomic, readonly) long long transactionState;
 
 - (void)_setDownloads:(id)arg1;
 - (void)_setError:(id)arg1;

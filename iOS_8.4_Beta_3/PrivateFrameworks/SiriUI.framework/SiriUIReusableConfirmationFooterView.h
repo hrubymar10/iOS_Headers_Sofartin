@@ -9,9 +9,9 @@
     SiriUIKeyline *_verticalKeyline;
 }
 
-@property(assign,readonly) UIButton * cancelButton;
-@property(assign,readonly) UIButton * confirmButton;
-@property(assign,retain) SAUIConfirmationOptions * confirmationOptions;
+@property (nonatomic, readonly) UIButton *cancelButton;
+@property (nonatomic, readonly) UIButton *confirmButton;
+@property (nonatomic, retain) SAUIConfirmationOptions *confirmationOptions;
 
 + (double)defaultHeight;
 

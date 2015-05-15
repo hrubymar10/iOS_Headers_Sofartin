@@ -9,14 +9,14 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSString * URLBagKey;
-@property(assign,readonly) NSString * actionString;
-@property(assign,copy) NSDictionary * queryStringDictionary;
-@property(assign,readonly) NSString * redeemCode;
-@property(assign,copy) NSString * referrerApplicationName;
-@property(assign,copy) NSString * referrerURLString;
-@property(assign,readonly) NSString * searchTerm;
-@property(assign,readonly) NSURL * underlyingURL;
+@property (nonatomic, readonly) NSString *URLBagKey;
+@property (nonatomic, readonly) NSString *actionString;
+@property (nonatomic, readonly, copy) NSDictionary *queryStringDictionary;
+@property (nonatomic, readonly) NSString *redeemCode;
+@property (nonatomic, copy) NSString *referrerApplicationName;
+@property (nonatomic, copy) NSString *referrerURLString;
+@property (nonatomic, readonly) NSString *searchTerm;
+@property (nonatomic, readonly) NSURL *underlyingURL;
 
 - (void).cxx_destruct;
 - (id)URLBagKey;

@@ -11,12 +11,12 @@
     NSXPCConnection *_xpcConn;
 }
 
-@property(assign,retain) NSString * ID;
-@property(assign,retain) NSSet * desiredNotifications;
-@property(assign,readwrite) bool doesPeriodic;
-@property(assign,readwrite) bool doesPurge;
-@property(assign,retain) NSXPCListenerEndpoint * endpoint;
-@property(assign,retain) NSXPCConnection * xpcConn;
+@property (nonatomic, retain) NSString *ID;
+@property (nonatomic, retain) NSSet *desiredNotifications;
+@property bool doesPeriodic;
+@property bool doesPurge;
+@property (nonatomic, retain) NSXPCListenerEndpoint *endpoint;
+@property (nonatomic, retain) NSXPCConnection *xpcConn;
 
 - (void).cxx_destruct;
 - (id)ID;

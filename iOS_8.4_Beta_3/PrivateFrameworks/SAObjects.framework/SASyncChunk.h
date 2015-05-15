@@ -4,18 +4,18 @@
 
 @interface SASyncChunk : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * key;
-@property(assign,copy) NSString * postGen;
-@property(assign,copy) NSString * preGen;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * toAdd;
-@property(assign,copy) NSArray * toRemove;
-@property(assign,copy) NSString * validity;
+@property (nonatomic, copy) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *key;
+@property (nonatomic, copy) NSString *postGen;
+@property (nonatomic, copy) NSString *preGen;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *toAdd;
+@property (nonatomic, copy) NSArray *toRemove;
+@property (nonatomic, copy) NSString *validity;
 
 + (id)chunk;
 + (id)chunkWithDictionary:(id)arg1 context:(id)arg2;

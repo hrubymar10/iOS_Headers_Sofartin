@@ -6,7 +6,7 @@
     bool _showRecommendationActions;
 }
 
-@property(assign,readwrite) bool showRecommendationActions;
+@property (nonatomic) bool showRecommendationActions;
 
 - (id)initWithDOMElement:(id)arg1 parent:(id)arg2 elementFactory:(id)arg3;
 - (void)setShowRecommendationActions:(bool)arg1;

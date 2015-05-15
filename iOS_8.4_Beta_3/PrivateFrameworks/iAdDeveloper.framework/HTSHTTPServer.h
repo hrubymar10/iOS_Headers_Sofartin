@@ -26,20 +26,20 @@
     unsigned long long _totalBytesWritten;
 }
 
-@property(assign,readwrite) double bandwidthStddev;
-@property(assign,readwrite) int cacheMaxAge;
-@property(assign,readwrite) struct __CFHTTPMessage { }* currentRequest;
-@property(assign,readwrite) <HTSHTTPServerDelegate> * delegate;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * delegateQueue;
-@property(assign,readwrite) bool digestAuthenticationEnabled;
-@property(assign,copy) NSString * documentRoot;
-@property(assign,readwrite) double kbps;
-@property(assign,readwrite) double latency;
-@property(assign,readwrite) double latencyStddev;
-@property(assign,readwrite) bool pipeliningEnabled;
-@property(assign,readonly) unsigned short port;
-@property(assign,readonly) unsigned long long totalBytesWritten;
-@property(assign,readonly) NSString * urlString;
+@property (nonatomic) double bandwidthStddev;
+@property (nonatomic) int cacheMaxAge;
+@property (nonatomic) struct __CFHTTPMessage { }*currentRequest;
+@property (nonatomic) <HTSHTTPServerDelegate> *delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> *delegateQueue;
+@property (nonatomic) bool digestAuthenticationEnabled;
+@property (nonatomic, copy) NSString *documentRoot;
+@property (nonatomic) double kbps;
+@property (nonatomic) double latency;
+@property (nonatomic) double latencyStddev;
+@property (nonatomic) bool pipeliningEnabled;
+@property (nonatomic, readonly) unsigned short port;
+@property (nonatomic, readonly) unsigned long long totalBytesWritten;
+@property (nonatomic, readonly) NSString *urlString;
 
 - (id)_authenticationResponseForRequest:(id)arg1;
 - (void)_cleanupListenSocket;

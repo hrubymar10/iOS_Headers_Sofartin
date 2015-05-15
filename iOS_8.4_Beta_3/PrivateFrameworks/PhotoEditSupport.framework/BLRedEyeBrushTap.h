@@ -12,10 +12,10 @@
     double _timestamp;
 }
 
-@property(assign,readwrite) int destinationWidth;
-@property(assign,retain) NSDictionary * eyeRepairData;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } point;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic) int destinationWidth;
+@property (nonatomic, retain) NSDictionary *eyeRepairData;
+@property (nonatomic) struct CGPoint { double x1; double x2; } point;
+@property (nonatomic) double timestamp;
 
 - (void)dealloc;
 - (int)destinationWidth;

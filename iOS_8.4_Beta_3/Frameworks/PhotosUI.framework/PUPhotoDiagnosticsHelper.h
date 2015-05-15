@@ -8,13 +8,13 @@
     UIViewController *_referenceViewController;
 }
 
-@property(setter=_setKeepSelf:,assign,retain) PUPhotoDiagnosticsHelper * _keepSelf;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUPhotoDiagnosticsHelperDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIViewController * referenceViewController;
-@property(assign,readonly) Class superclass;
+@property (setter=_setKeepSelf:, nonatomic, retain) PUPhotoDiagnosticsHelper *_keepSelf;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUPhotoDiagnosticsHelperDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UIViewController *referenceViewController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_composeMessageForDiagnosticInformation:(id)arg1 withProblemType:(long long)arg2;

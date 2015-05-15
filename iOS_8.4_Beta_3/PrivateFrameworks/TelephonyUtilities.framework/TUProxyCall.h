@@ -15,17 +15,17 @@
     bool _voicemail;
 }
 
-@property(assign,readwrite) int callIdentifier;
-@property(assign,copy) NSString * callerNameFromNetwork;
-@property(assign,retain) NSString * conferenceIdentifier;
-@property(getter=isConferenced,assign,readwrite) bool conferenced;
-@property(assign,copy) NSString * destinationID;
-@property(assign,copy) NSString * displayName;
-@property(getter=isOutgoing,assign,readwrite) bool outgoing;
-@property(assign,readwrite) int service;
-@property(assign,readwrite) double startTime;
-@property(assign,readwrite) int status;
-@property(getter=isVoicemail,assign,readwrite) bool voicemail;
+@property (nonatomic) int callIdentifier;
+@property (nonatomic, copy) NSString *callerNameFromNetwork;
+@property (nonatomic, retain) NSString *conferenceIdentifier;
+@property (getter=isConferenced, nonatomic) bool conferenced;
+@property (nonatomic, copy) NSString *destinationID;
+@property (nonatomic, copy) NSString *displayName;
+@property (getter=isOutgoing, nonatomic) bool outgoing;
+@property (nonatomic) int service;
+@property (nonatomic) double startTime;
+@property (nonatomic) int status;
+@property (getter=isVoicemail, nonatomic) bool voicemail;
 
 + (bool)supportsSecureCoding;
 

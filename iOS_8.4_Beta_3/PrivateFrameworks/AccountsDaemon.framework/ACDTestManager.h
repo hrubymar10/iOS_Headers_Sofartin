@@ -9,8 +9,8 @@
     NSString *_storePath;
 }
 
-@property(assign,readonly) NSXPCListenerEndpoint * remoteAccountStoreEndpoint;
-@property(assign,readonly) NSXPCListenerEndpoint * remoteOAuthSignerEndpoint;
+@property (nonatomic, readonly) NSXPCListenerEndpoint *remoteAccountStoreEndpoint;
+@property (nonatomic, readonly) NSXPCListenerEndpoint *remoteOAuthSignerEndpoint;
 
 + (id)testServer;
 

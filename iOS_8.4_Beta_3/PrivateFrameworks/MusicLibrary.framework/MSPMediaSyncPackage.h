@@ -14,16 +14,16 @@
     int _type;
 }
 
-@property(assign,retain) MSPMediaSyncError * error;
-@property(assign,readonly) bool hasError;
-@property(assign,readonly) bool hasHeader;
-@property(assign,readwrite) bool hasLastPackage;
-@property(assign,readonly) bool hasSyncOperation;
-@property(assign,readwrite) bool hasType;
-@property(assign,retain) MSPMediaSyncHeader * header;
-@property(assign,readwrite) bool lastPackage;
-@property(assign,retain) MSPMediaSyncOperation * syncOperation;
-@property(assign,readwrite) int type;
+@property (nonatomic, retain) MSPMediaSyncError *error;
+@property (nonatomic, readonly) bool hasError;
+@property (nonatomic, readonly) bool hasHeader;
+@property (nonatomic) bool hasLastPackage;
+@property (nonatomic, readonly) bool hasSyncOperation;
+@property (nonatomic) bool hasType;
+@property (nonatomic, retain) MSPMediaSyncHeader *header;
+@property (nonatomic) bool lastPackage;
+@property (nonatomic, retain) MSPMediaSyncOperation *syncOperation;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

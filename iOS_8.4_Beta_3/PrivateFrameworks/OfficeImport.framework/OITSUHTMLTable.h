@@ -11,9 +11,9 @@
     NSMutableArray *_rows;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) unsigned long long lastRowIndex;
-@property(assign,readwrite) unsigned long long rowClassStride;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, readonly) unsigned long long lastRowIndex;
+@property (nonatomic) unsigned long long rowClassStride;
 
 + (id)_attributesStringFromAttributes:(id)arg1;
 + (id)_keyForCell:(unsigned long long)arg1 :(unsigned long long)arg2;

@@ -8,7 +8,7 @@
     NSURL *_writeURL;
 }
 
-@property(assign,readonly) NSURL * writeURL;
+@property (nonatomic, readonly) NSURL *writeURL;
 
 + (bool)finishWritingToURL:(id)arg1 byMovingItemAtURL:(id)arg2 addingAttributes:(id)arg3 error:(id*)arg4;
 + (void)removeTemporaryDirectoryAtURL:(id)arg1;

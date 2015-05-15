@@ -14,7 +14,7 @@
     NSArray *_trackIDs;
 }
 
-@property(getter=_playbackItem,assign,readonly) struct OpaqueFigPlaybackItem { }* playbackItem;
+@property (getter=_playbackItem, nonatomic, readonly) struct OpaqueFigPlaybackItem { }*playbackItem;
 
 - (void)_addFigObjectNotifications;
 - (Class)_classForTrackInspectors;

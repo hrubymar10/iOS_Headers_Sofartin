@@ -4,7 +4,7 @@
 
 @interface _PLManagedKeyword : PLManagedObject
 
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSString *title;
 
 + (id)entityInManagedObjectContext:(id)arg1;
 + (id)entityName;

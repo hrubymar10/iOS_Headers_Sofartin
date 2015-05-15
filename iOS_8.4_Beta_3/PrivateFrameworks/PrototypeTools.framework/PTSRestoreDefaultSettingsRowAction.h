@@ -6,7 +6,7 @@
     NSString *_settingsKeyPath;
 }
 
-@property(assign,copy) NSString * settingsKeyPath;
+@property (nonatomic, copy) NSString *settingsKeyPath;
 
 + (id)actionWithSettingsKeyPath:(id)arg1;
 

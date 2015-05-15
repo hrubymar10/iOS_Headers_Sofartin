@@ -9,10 +9,10 @@
     UIColor *_textSecondaryColor;
 }
 
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,readwrite) bool isBackgroundLight;
-@property(assign,retain) UIColor * textPrimaryColor;
-@property(assign,retain) UIColor * textSecondaryColor;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic) bool isBackgroundLight;
+@property (nonatomic, retain) UIColor *textPrimaryColor;
+@property (nonatomic, retain) UIColor *textSecondaryColor;
 
 - (void).cxx_destruct;
 - (id)backgroundColor;

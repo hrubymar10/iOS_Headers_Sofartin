@@ -11,20 +11,20 @@
     ACAccount *_owningAccount;
 }
 
-@property(assign,copy) NSString * credentialType;
-@property(getter=isDirty,assign,readwrite) bool dirty;
-@property(assign,readonly) NSSet * dirtyProperties;
-@property(getter=isEmpty,assign,readwrite) bool empty;
-@property(assign,retain) NSDate * expiryDate;
-@property(assign,copy) NSString * findMyiPhoneToken;
-@property(assign,copy) NSString * hsaToken;
-@property(assign,copy) NSString * mapsToken;
-@property(assign,copy) NSString * oauthRefreshToken;
-@property(assign,copy) NSString * oauthToken;
-@property(assign,copy) NSString * oauthTokenSecret;
-@property(assign,copy) NSString * password;
-@property(assign,copy) NSString * token;
-@property(assign,copy) NSDate * tokenExpiryDate;
+@property (nonatomic, copy) NSString *credentialType;
+@property (getter=isDirty, nonatomic) bool dirty;
+@property (nonatomic, readonly) NSSet *dirtyProperties;
+@property (getter=isEmpty, nonatomic) bool empty;
+@property (nonatomic, retain) NSDate *expiryDate;
+@property (nonatomic, copy) NSString *findMyiPhoneToken;
+@property (nonatomic, copy) NSString *hsaToken;
+@property (nonatomic, copy) NSString *mapsToken;
+@property (nonatomic, copy) NSString *oauthRefreshToken;
+@property (nonatomic, copy) NSString *oauthToken;
+@property (nonatomic, copy) NSString *oauthTokenSecret;
+@property (nonatomic, copy) NSString *password;
+@property (nonatomic, copy) NSString *token;
+@property (nonatomic, copy) NSDate *tokenExpiryDate;
 
 + (id)credentialPolicyForAccountType:(id)arg1 key:(id)arg2 clientID:(id)arg3;
 + (id)credentialWithOAuthToken:(id)arg1 tokenSecret:(id)arg2;

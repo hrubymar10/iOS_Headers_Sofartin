@@ -12,12 +12,12 @@
     NSObject<OS_dispatch_queue> *_writeQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSFileHandle * readHandle;
-@property(getter=isStreamBased,assign,readonly) bool streamBased;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSFileHandle *readHandle;
+@property (getter=isStreamBased, readonly) bool streamBased;
+@property (readonly) Class superclass;
 
 - (void)_onqueue_didFinishWithError:(id)arg1;
 - (void)_onqueue_didReceiveData:(id)arg1 withCompletion:(id)arg2;

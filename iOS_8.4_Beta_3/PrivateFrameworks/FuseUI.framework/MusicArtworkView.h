@@ -14,9 +14,9 @@
     bool _touchHighlighted;
 }
 
-@property(assign,readwrite) <MusicArtworkViewDelegate> * delegate;
-@property(assign,readwrite) double idealAspectRatio;
-@property(assign,readwrite) bool shouldRespectHighlightProperty;
+@property (nonatomic) <MusicArtworkViewDelegate> *delegate;
+@property (nonatomic) double idealAspectRatio;
+@property (nonatomic) bool shouldRespectHighlightProperty;
 
 - (void).cxx_destruct;
 - (void)_finishTouches:(id)arg1 didCancel:(bool)arg2 withEvent:(id)arg3;

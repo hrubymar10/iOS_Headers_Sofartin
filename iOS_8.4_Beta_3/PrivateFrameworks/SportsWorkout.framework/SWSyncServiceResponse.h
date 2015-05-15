@@ -16,18 +16,18 @@
     NSError *_validationError;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * email;
-@property(assign,readonly) NSString * errorCode;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * pin;
-@property(assign,readonly) NSString * pinStatus;
-@property(assign,readonly) NSString * screenName;
-@property(assign,readonly) NSString * serviceException;
-@property(assign,readonly) NSString * status;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * token;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *email;
+@property (nonatomic, readonly) NSString *errorCode;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *pin;
+@property (nonatomic, readonly) NSString *pinStatus;
+@property (nonatomic, readonly) NSString *screenName;
+@property (nonatomic, readonly) NSString *serviceException;
+@property (nonatomic, readonly) NSString *status;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *token;
 
 - (void)dealloc;
 - (id)email;

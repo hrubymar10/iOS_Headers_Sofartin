@@ -6,7 +6,7 @@
     UIView *_accessoryClippingView;
 }
 
-@property(assign,retain) UIView * accessoryClippingView;
+@property (nonatomic, retain) UIView *accessoryClippingView;
 
 - (void).cxx_destruct;
 - (bool)_shouldChangeStatusBarViewController;

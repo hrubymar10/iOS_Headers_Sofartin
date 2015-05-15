@@ -12,13 +12,13 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIViewElementSlideshowDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIViewElementLayoutContext * layoutContext;
-@property(assign,readonly) long long numberOfSlideshowItems;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIViewElementSlideshowDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIViewElementLayoutContext *layoutContext;
+@property (nonatomic, readonly) long long numberOfSlideshowItems;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)dealloc;

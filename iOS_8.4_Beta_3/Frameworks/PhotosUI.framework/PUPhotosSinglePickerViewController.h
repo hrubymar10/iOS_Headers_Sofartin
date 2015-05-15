@@ -8,7 +8,7 @@
     UIBarButtonItem *_doneButton;
 }
 
-@property(assign,copy) id completionHandler;
+@property (nonatomic, copy) id completionHandler;
 
 - (void).cxx_destruct;
 - (void)_done:(id)arg1;

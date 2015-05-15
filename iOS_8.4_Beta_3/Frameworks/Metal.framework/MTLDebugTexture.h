@@ -11,12 +11,12 @@
     bool _purgeableStateHasBeenSet;
 }
 
-@property(assign,readonly) unsigned long long bytesPerRow;
-@property(assign,copy) MTLTextureDescriptor * descriptor;
-@property(assign,readonly) unsigned long long offset;
-@property(assign,readonly) unsigned long long plane;
-@property(assign,readonly) unsigned long long purgeableState;
-@property(assign,readonly) bool purgeableStateHasBeenSet;
+@property (nonatomic, readonly) unsigned long long bytesPerRow;
+@property (nonatomic, readonly, copy) MTLTextureDescriptor *descriptor;
+@property (nonatomic, readonly) unsigned long long offset;
+@property (nonatomic, readonly) unsigned long long plane;
+@property (nonatomic, readonly) unsigned long long purgeableState;
+@property (nonatomic, readonly) bool purgeableStateHasBeenSet;
 
 - (void).cxx_destruct;
 - (unsigned long long)bytesPerRow;

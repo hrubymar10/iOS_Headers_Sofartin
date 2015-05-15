@@ -9,7 +9,7 @@
     id _localWeatherHandler;
 }
 
-@property(assign,retain) City * currentCity;
+@property (nonatomic, retain) City *currentCity;
 
 + (void)clearSharedLocationUpdater;
 + (id)sharedLocationUpdater;

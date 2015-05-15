@@ -24,18 +24,18 @@
     HKActivityCache *_yesterdayActivityCache;
 }
 
-@property(assign,readonly) HKActivityCache * currentActivityCache;
-@property(assign,retain) NSObject<OS_dispatch_queue> * dataQueue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <HDHealthDaemon> * healthDaemon;
-@property(assign,retain) NSObject<OS_dispatch_queue> * ivarQueue;
-@property(assign,retain) NSObject<OS_dispatch_queue> * observerQueue;
-@property(assign,retain) NSHashTable * observers;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) HKActivityCache * todayActivityCache;
-@property(assign,retain) HKActivityCache * yesterdayActivityCache;
+@property (nonatomic, readonly) HKActivityCache *currentActivityCache;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *dataQueue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <HDHealthDaemon> *healthDaemon;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *ivarQueue;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *observerQueue;
+@property (nonatomic, retain) NSHashTable *observers;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) HKActivityCache *todayActivityCache;
+@property (nonatomic, retain) HKActivityCache *yesterdayActivityCache;
 
 - (void).cxx_destruct;
 - (void)_dataQueue_nanoSyncRestoreDidFinish:(id)arg1;

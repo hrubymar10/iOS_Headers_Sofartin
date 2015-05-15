@@ -6,24 +6,24 @@
     NSString *_alternativeText;
 }
 
-@property(assign,copy) NSString * alternativeText;
-@property(assign,readonly) NSString * candidate;
-@property(getter=isCompletionCandidate,assign,readonly) bool completionCandidate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) unsigned long long deleteCount;
-@property(assign,copy) NSString * description;
-@property(getter=isEmojiCandidate,assign,readonly) bool emojiCandidate;
-@property(getter=isExtensionCandidate,assign,readonly) bool extensionCandidate;
-@property(getter=isFullwidthCandidate,assign,readonly) bool fullwidthCandidate;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInlineCompletionCandidate,assign,readonly) bool inlineCompletionCandidate;
-@property(assign,readonly) NSString * input;
-@property(assign,readonly) bool isAutocorrection;
-@property(assign,readonly) bool isForShortcutConversion;
-@property(assign,readonly) NSString * label;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned int usageTrackingMask;
-@property(assign,readonly) unsigned long long wordOriginFeedbackID;
+@property (nonatomic, copy) NSString *alternativeText;
+@property (nonatomic, readonly) NSString *candidate;
+@property (getter=isCompletionCandidate, nonatomic, readonly) bool completionCandidate;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) unsigned long long deleteCount;
+@property (readonly, copy) NSString *description;
+@property (getter=isEmojiCandidate, nonatomic, readonly) bool emojiCandidate;
+@property (getter=isExtensionCandidate, nonatomic, readonly) bool extensionCandidate;
+@property (getter=isFullwidthCandidate, nonatomic, readonly) bool fullwidthCandidate;
+@property (readonly) unsigned long long hash;
+@property (getter=isInlineCompletionCandidate, nonatomic, readonly) bool inlineCompletionCandidate;
+@property (nonatomic, readonly) NSString *input;
+@property (nonatomic, readonly) bool isAutocorrection;
+@property (nonatomic, readonly) bool isForShortcutConversion;
+@property (nonatomic, readonly) NSString *label;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned int usageTrackingMask;
+@property (nonatomic, readonly) unsigned long long wordOriginFeedbackID;
 
 + (bool)supportsSecureCoding;
 + (int)type;

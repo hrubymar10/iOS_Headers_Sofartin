@@ -10,9 +10,9 @@
     NSURL *_url;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,readwrite) SEL action;
-@property(assign,readwrite) id target;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic) SEL action;
+@property (nonatomic) id target;
 
 - (id)URL;
 - (SEL)action;

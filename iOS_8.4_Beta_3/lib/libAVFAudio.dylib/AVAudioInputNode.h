@@ -4,11 +4,11 @@
 
 @interface AVAudioInputNode : AVAudioIONode <AVAudioMixing>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) float volume;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) float volume;
 
 - (id)initWithIOUnit:(struct AVAudioIOUnit { int (**x1)(); id x2; struct AVAudioEngineImpl {} *x3; struct OpaqueAudioComponentInstance {} *x4; id x5; id x6; }*)arg1;
 - (float)rate;

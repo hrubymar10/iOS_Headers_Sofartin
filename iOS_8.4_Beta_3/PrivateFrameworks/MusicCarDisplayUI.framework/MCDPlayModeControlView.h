@@ -9,10 +9,10 @@
     MCDButton *_shuffleButton;
 }
 
-@property(assign,readwrite) bool creatingGenius;
-@property(assign,readonly) MCDButton * geniusButton;
-@property(assign,readonly) MCDButton * repeatButton;
-@property(assign,readonly) MCDButton * shuffleButton;
+@property (nonatomic) bool creatingGenius;
+@property (nonatomic, readonly) MCDButton *geniusButton;
+@property (nonatomic, readonly) MCDButton *repeatButton;
+@property (nonatomic, readonly) MCDButton *shuffleButton;
 
 - (void).cxx_destruct;
 - (bool)creatingGenius;

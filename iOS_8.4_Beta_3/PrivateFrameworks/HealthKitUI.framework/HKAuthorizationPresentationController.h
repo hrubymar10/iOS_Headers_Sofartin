@@ -10,15 +10,15 @@
     UIWindow *_window;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didPresent;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) HKHealthPrivacyHostViewController * hostViewController;
-@property(assign,retain) _UIAsyncInvocation * requestCancellationInvocation;
-@property(assign,retain) UIWindow * savedKeyWindow;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIWindow * window;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool didPresent;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) HKHealthPrivacyHostViewController *hostViewController;
+@property (nonatomic, retain) _UIAsyncInvocation *requestCancellationInvocation;
+@property (nonatomic, retain) UIWindow *savedKeyWindow;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIWindow *window;
 
 - (void).cxx_destruct;
 - (void)_didFinishDismissing;

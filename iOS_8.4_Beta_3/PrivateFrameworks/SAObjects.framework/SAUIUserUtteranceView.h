@@ -4,7 +4,7 @@
 
 @interface SAUIUserUtteranceView : SAAceView
 
-@property(assign,copy) NSString * text;
+@property (nonatomic, copy) NSString *text;
 
 + (id)userUtteranceView;
 + (id)userUtteranceViewWithDictionary:(id)arg1 context:(id)arg2;

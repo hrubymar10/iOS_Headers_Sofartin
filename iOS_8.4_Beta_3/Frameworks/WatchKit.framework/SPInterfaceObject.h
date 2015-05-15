@@ -10,11 +10,11 @@
     NSString *_viewControllerID;
 }
 
-@property(assign,copy) NSString * interfaceProperty;
-@property(assign,copy) NSString * propertyIndex;
-@property(assign,readwrite) long long rowIndex;
-@property(assign,readwrite) long long tableIndex;
-@property(assign,copy) NSString * viewControllerID;
+@property (nonatomic, copy) NSString *interfaceProperty;
+@property (nonatomic, copy) NSString *propertyIndex;
+@property (nonatomic) long long rowIndex;
+@property (nonatomic) long long tableIndex;
+@property (nonatomic, copy) NSString *viewControllerID;
 
 - (void).cxx_destruct;
 - (id)_initWithInterfaceProperty:(id)arg1 viewControllerID:(id)arg2 propertyIndex:(long long)arg3 tableIndex:(long long)arg4 rowIndex:(long long)arg5;

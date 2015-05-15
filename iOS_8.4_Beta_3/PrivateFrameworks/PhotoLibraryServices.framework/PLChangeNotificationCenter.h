@@ -62,8 +62,8 @@
     NSMutableArray *_snapshots;
 }
 
-@property(assign,readonly) bool _shouldForceFetchingAlbumsToReload;
-@property(assign,retain) NSNotificationCenter * backingCenter;
+@property (nonatomic, readonly) bool _shouldForceFetchingAlbumsToReload;
+@property (nonatomic, readonly, retain) NSNotificationCenter *backingCenter;
 
 + (id)allManagedObjectKeysStrategy;
 + (id)defaultCenter;

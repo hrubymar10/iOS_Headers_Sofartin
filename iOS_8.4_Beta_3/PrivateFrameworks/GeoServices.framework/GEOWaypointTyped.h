@@ -14,16 +14,16 @@
     int _waypointType;
 }
 
-@property(assign,readwrite) bool hasIsCurrentLocation;
-@property(assign,readonly) bool hasWaypointId;
-@property(assign,readonly) bool hasWaypointLocation;
-@property(assign,readonly) bool hasWaypointPlace;
-@property(assign,readwrite) bool hasWaypointType;
-@property(assign,readwrite) bool isCurrentLocation;
-@property(assign,retain) GEOWaypointID * waypointId;
-@property(assign,retain) GEOWaypointLocation * waypointLocation;
-@property(assign,retain) GEOWaypointPlace * waypointPlace;
-@property(assign,readwrite) int waypointType;
+@property (nonatomic) bool hasIsCurrentLocation;
+@property (nonatomic, readonly) bool hasWaypointId;
+@property (nonatomic, readonly) bool hasWaypointLocation;
+@property (nonatomic, readonly) bool hasWaypointPlace;
+@property (nonatomic) bool hasWaypointType;
+@property (nonatomic) bool isCurrentLocation;
+@property (nonatomic, retain) GEOWaypointID *waypointId;
+@property (nonatomic, retain) GEOWaypointLocation *waypointLocation;
+@property (nonatomic, retain) GEOWaypointPlace *waypointPlace;
+@property (nonatomic) int waypointType;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

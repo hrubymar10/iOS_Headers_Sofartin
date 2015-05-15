@@ -17,15 +17,15 @@
     double _selfAdjustedSafeTimeForModeling;
 }
 
-@property(assign,readwrite) bool cacheOn;
-@property(assign,retain) NSArray * cacheResults;
-@property(assign,readwrite) struct _PLTimeIntervalRange { double x1; double x2; } cacheTimeRange;
-@property(assign,readonly) bool isNegativePowerSupported;
-@property(assign,retain) PLEntry * lastSnapshot;
-@property(assign,readwrite) bool logRail;
-@property(assign,readonly) short railDirection;
-@property(assign,retain) NSString * railName;
-@property(assign,readonly) double selfAdjustedSafeTimeForModeling;
+@property bool cacheOn;
+@property (retain) NSArray *cacheResults;
+@property struct _PLTimeIntervalRange { double x1; double x2; } cacheTimeRange;
+@property (readonly) bool isNegativePowerSupported;
+@property (nonatomic, retain) PLEntry *lastSnapshot;
+@property bool logRail;
+@property (readonly) short railDirection;
+@property (readonly, retain) NSString *railName;
+@property (readonly) double selfAdjustedSafeTimeForModeling;
 
 + (id)entryEventNoneDefinitionRail;
 + (id)entryEventNoneDefinitions;

@@ -9,10 +9,10 @@
     CBPeripheral *_peripheral;
 }
 
-@property(assign,readwrite) int RSSI;
-@property(assign,readwrite) double lastSeen;
-@property(assign,copy) NSString * name;
-@property(assign,retain) CBPeripheral * peripheral;
+@property (nonatomic) int RSSI;
+@property (nonatomic) double lastSeen;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) CBPeripheral *peripheral;
 
 - (int)RSSI;
 - (void)dealloc;

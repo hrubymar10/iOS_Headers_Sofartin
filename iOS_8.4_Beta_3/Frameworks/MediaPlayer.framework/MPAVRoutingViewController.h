@@ -21,14 +21,14 @@
     MPWeakTimer *_updateTimer;
 }
 
-@property(assign,readwrite) bool allowMirroring;
-@property(setter=setAVItemType:,assign,readwrite) unsigned long long avItemType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPAVRoutingViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long style;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool allowMirroring;
+@property (setter=setAVItemType:, nonatomic) unsigned long long avItemType;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPAVRoutingViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long style;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (unsigned long long)_debugButtonTableViewIndex;

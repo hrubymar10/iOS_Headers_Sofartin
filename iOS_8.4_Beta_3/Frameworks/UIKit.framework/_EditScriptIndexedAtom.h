@@ -9,10 +9,10 @@
     NSString *_replacementText;
 }
 
-@property(assign,readwrite) long long editOperation;
-@property(assign,readwrite) unsigned long long indexInArrayB;
-@property(assign,readwrite) unsigned long long indexToEdit;
-@property(assign,retain) NSString * replacementText;
+@property (nonatomic) long long editOperation;
+@property (nonatomic) unsigned long long indexInArrayB;
+@property (nonatomic) unsigned long long indexToEdit;
+@property (nonatomic, retain) NSString *replacementText;
 
 + (id)atomWithEditOperation:(long long)arg1 indexToEdit:(unsigned long long)arg2 newText:(id)arg3 indexInArrayB:(unsigned long long)arg4;
 

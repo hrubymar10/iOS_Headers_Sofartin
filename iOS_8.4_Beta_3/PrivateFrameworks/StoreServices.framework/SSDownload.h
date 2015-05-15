@@ -9,20 +9,20 @@
     SSDownloadStatus *_status;
 }
 
-@property(getter=_XPCConnection,assign,readonly) SSXPCConnection * _XPCConnection;
-@property(assign,retain) NSArray * assets;
-@property(getter=isCancelable,assign,readonly) bool cancelable;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) id downloadIdentifier;
-@property(assign,copy) SSDownloadPolicy * downloadPolicy;
-@property(assign,readonly) long long downloadSizeLimit;
-@property(getter=isExternal,assign,readonly) bool external;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) SSDownloadMetadata * metadata;
-@property(assign,readonly) long long persistentIdentifier;
-@property(assign,retain) SSDownloadStatus * status;
-@property(assign,readonly) Class superclass;
+@property (getter=_XPCConnection, readonly) SSXPCConnection *_XPCConnection;
+@property (nonatomic, retain) NSArray *assets;
+@property (getter=isCancelable, readonly) bool cancelable;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) id downloadIdentifier;
+@property (copy) SSDownloadPolicy *downloadPolicy;
+@property (readonly) long long downloadSizeLimit;
+@property (getter=isExternal, nonatomic, readonly) bool external;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) SSDownloadMetadata *metadata;
+@property (readonly) long long persistentIdentifier;
+@property (nonatomic, retain) SSDownloadStatus *status;
+@property (readonly) Class superclass;
 
 + (long long)_existsMessage;
 + (long long)_getExternalValuesMessage;

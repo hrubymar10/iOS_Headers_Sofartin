@@ -26,23 +26,23 @@
     bool _webViewStartedLoading;
 }
 
-@property(assign,retain) APDKVOManager * KVOManager;
-@property(assign,readwrite) UIActivityIndicatorView * activityIndicatorView;
-@property(assign,retain) APDDataManager * dataManager;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <APDTopicViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool displayAsPopover;
-@property(assign,readwrite) UIImageView * errorImageView;
-@property(assign,readwrite) UILabel * errorMessageLabel;
-@property(assign,readwrite) UILabel * errorTitleLabel;
-@property(assign,retain) UIView * errorView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool showWithManualInset;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) UIWebView * topicWebView;
-@property(assign,readwrite) long long topicWebViewDisplayIndex;
-@property(assign,readwrite) bool updateDataManagerWithCurrentTopic;
+@property (nonatomic, retain) APDKVOManager *KVOManager;
+@property (nonatomic) UIActivityIndicatorView *activityIndicatorView;
+@property (nonatomic, retain) APDDataManager *dataManager;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <APDTopicViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool displayAsPopover;
+@property (nonatomic) UIImageView *errorImageView;
+@property (nonatomic) UILabel *errorMessageLabel;
+@property (nonatomic) UILabel *errorTitleLabel;
+@property (nonatomic, retain) UIView *errorView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool showWithManualInset;
+@property (readonly) Class superclass;
+@property (nonatomic) UIWebView *topicWebView;
+@property (nonatomic) long long topicWebViewDisplayIndex;
+@property (nonatomic) bool updateDataManagerWithCurrentTopic;
 
 - (void).cxx_destruct;
 - (id)KVOManager;

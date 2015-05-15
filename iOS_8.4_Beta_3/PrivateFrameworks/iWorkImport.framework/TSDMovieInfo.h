@@ -23,18 +23,18 @@
     float mVolume;
 }
 
-@property(getter=isAudioOnly,assign,readwrite) bool audioOnly;
-@property(assign,retain) TSPData * audioOnlyImageData;
-@property(assign,readwrite) double endTime;
-@property(assign,retain) TSPData * importedAuxiliaryMovieData;
-@property(assign,readwrite) unsigned long long loopOption;
-@property(assign,retain) TSPData * movieData;
-@property(assign,retain) NSURL * movieRemoteURL;
-@property(assign,retain) TSPData * posterImageData;
-@property(assign,readwrite) double posterTime;
-@property(assign,readwrite) double startTime;
-@property(getter=isStreaming,assign,readwrite) bool streaming;
-@property(assign,readwrite) float volume;
+@property (getter=isAudioOnly, nonatomic) bool audioOnly;
+@property (nonatomic, retain) TSPData *audioOnlyImageData;
+@property (nonatomic) double endTime;
+@property (nonatomic, retain) TSPData *importedAuxiliaryMovieData;
+@property (nonatomic) unsigned long long loopOption;
+@property (nonatomic, retain) TSPData *movieData;
+@property (nonatomic, retain) NSURL *movieRemoteURL;
+@property (nonatomic, retain) TSPData *posterImageData;
+@property (nonatomic) double posterTime;
+@property (nonatomic) double startTime;
+@property (getter=isStreaming, nonatomic) bool streaming;
+@property (nonatomic) float volume;
 
 + (double)defaultPosterTimeForDuration:(double)arg1;
 + (id)presetKinds;

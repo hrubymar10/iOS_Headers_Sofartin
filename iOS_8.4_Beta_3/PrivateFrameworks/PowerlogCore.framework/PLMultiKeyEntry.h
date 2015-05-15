@@ -6,7 +6,7 @@
     NSMutableDictionary *_multiKeys;
 }
 
-@property(assign,retain) NSMutableDictionary * multiKeys;
+@property (retain) NSMutableDictionary *multiKeys;
 
 + (void)load;
 

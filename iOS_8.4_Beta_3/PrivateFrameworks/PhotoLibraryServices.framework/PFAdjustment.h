@@ -12,13 +12,13 @@
     NSDictionary *_settings;
 }
 
-@property(assign,readonly) NSString * autoIdentifier;
-@property(assign,readonly) NSDictionary * autoSettings;
-@property(assign,readonly) bool enabled;
-@property(assign,readonly) unsigned long long formatVersion;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSString * maskUUID;
-@property(assign,readonly) NSDictionary * settings;
+@property (nonatomic, readonly) NSString *autoIdentifier;
+@property (nonatomic, readonly) NSDictionary *autoSettings;
+@property (nonatomic, readonly) bool enabled;
+@property (nonatomic, readonly) unsigned long long formatVersion;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) NSString *maskUUID;
+@property (nonatomic, readonly) NSDictionary *settings;
 
 + (bool)isValidArchiveDictionary:(id)arg1 errors:(id)arg2;
 

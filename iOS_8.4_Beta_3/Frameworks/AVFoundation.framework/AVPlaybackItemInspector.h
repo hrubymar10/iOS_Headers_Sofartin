@@ -7,7 +7,7 @@
     NSArray *_trackIDs;
 }
 
-@property(getter=_playbackItem,setter=_setPlaybackItem:,assign,retain) struct OpaqueFigPlaybackItem { }* playbackItem;
+@property (getter=_playbackItem, setter=_setPlaybackItem:, nonatomic, retain) struct OpaqueFigPlaybackItem { }*playbackItem;
 
 - (struct OpaqueFigPlaybackItem { }*)_playbackItem;
 - (void)_setPlaybackItem:(struct OpaqueFigPlaybackItem { }*)arg1;

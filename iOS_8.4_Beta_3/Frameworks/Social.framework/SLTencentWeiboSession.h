@@ -13,12 +13,12 @@
     NSBundle *_serviceBundle;
 }
 
-@property(assign,copy) id connectionResetBlock;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id locationInformationChangedBlock;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id connectionResetBlock;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id locationInformationChangedBlock;
+@property (readonly) Class superclass;
 
 + (id)_remoteInterface;
 

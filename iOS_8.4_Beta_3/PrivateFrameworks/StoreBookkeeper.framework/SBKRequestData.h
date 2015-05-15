@@ -6,7 +6,7 @@
     SBKTransaction *_transaction;
 }
 
-@property(assign,retain) SBKTransaction * transaction;
+@property (retain) SBKTransaction *transaction;
 
 + (id)propertyListBodyWithTransaction:(id)arg1;
 

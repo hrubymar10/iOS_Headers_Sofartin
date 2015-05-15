@@ -8,10 +8,10 @@
     id _value;
 }
 
-@property(assign,readonly) NSString * comparisonType;
-@property(assign,readonly) MPMediaPropertyPredicate * nativePredicate;
-@property(assign,readonly) NSString * property;
-@property(assign,readonly) id value;
+@property (readonly) NSString *comparisonType;
+@property (nonatomic, readonly) MPMediaPropertyPredicate *nativePredicate;
+@property (readonly) NSString *property;
+@property (readonly) id value;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

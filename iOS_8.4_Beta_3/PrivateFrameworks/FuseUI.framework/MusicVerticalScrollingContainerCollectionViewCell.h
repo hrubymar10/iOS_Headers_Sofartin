@@ -10,8 +10,8 @@
     MusicVerticalScrollingContainerItem *_verticalScrollingContainerItem;
 }
 
-@property(assign,readwrite) <MusicVerticalScrollingContainerCollectionViewCellDelegate> * delegate;
-@property(assign,retain) MusicVerticalScrollingContainerItem * verticalScrollingContainerItem;
+@property (nonatomic) <MusicVerticalScrollingContainerCollectionViewCellDelegate> *delegate;
+@property (nonatomic, retain) MusicVerticalScrollingContainerItem *verticalScrollingContainerItem;
 
 - (void).cxx_destruct;
 - (void)_performBlockAffectingBounds:(id)arg1;

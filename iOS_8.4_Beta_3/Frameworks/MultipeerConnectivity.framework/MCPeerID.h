@@ -6,7 +6,7 @@
     MCPeerIDInternal *_internal;
 }
 
-@property(assign,readonly) NSString * displayName;
+@property (nonatomic, readonly) NSString *displayName;
 
 + (bool)supportsSecureCoding;
 

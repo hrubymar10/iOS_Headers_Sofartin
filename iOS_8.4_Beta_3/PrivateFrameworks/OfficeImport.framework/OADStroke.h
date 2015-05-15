@@ -23,8 +23,8 @@
     float mWidth;
 }
 
-@property(assign,retain) OADLineEnd * head;
-@property(assign,retain) OADLineEnd * tail;
+@property (nonatomic, retain) OADLineEnd *head;
+@property (nonatomic, retain) OADLineEnd *tail;
 
 + (id)blackStroke;
 + (id)defaultProperties;

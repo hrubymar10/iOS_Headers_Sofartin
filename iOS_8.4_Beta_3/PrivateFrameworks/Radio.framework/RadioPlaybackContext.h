@@ -7,8 +7,8 @@
     NSArray *_trackPlaybackDescriptorQueue;
 }
 
-@property(assign,readonly) long long numberOfSkipsUsed;
-@property(assign,copy) NSArray * trackPlaybackDescriptorQueue;
+@property (nonatomic, readonly) long long numberOfSkipsUsed;
+@property (nonatomic, readonly, copy) NSArray *trackPlaybackDescriptorQueue;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

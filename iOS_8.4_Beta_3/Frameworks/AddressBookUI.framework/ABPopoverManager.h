@@ -14,19 +14,19 @@
     bool _rotating;
 }
 
-@property(assign,retain) UIActionSheet * autorotateActionSheet;
-@property(assign,retain) UIBarButtonItem * autorotateBarButtonItem;
-@property(assign,readwrite) unsigned long long autorotateDirrections;
-@property(assign,retain) UIPopoverController * autorotatePopoverController;
-@property(assign,retain) UIResponder * autorotateResponder;
-@property(assign,retain) UIView * autorotateView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIWindow * observedWindow;
-@property(assign,retain) id realDelegate;
-@property(assign,retain) <ABPopoverRepresentDelegate> * representDelegate;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIActionSheet *autorotateActionSheet;
+@property (nonatomic, retain) UIBarButtonItem *autorotateBarButtonItem;
+@property (nonatomic) unsigned long long autorotateDirrections;
+@property (nonatomic, retain) UIPopoverController *autorotatePopoverController;
+@property (nonatomic, retain) UIResponder *autorotateResponder;
+@property (nonatomic, retain) UIView *autorotateView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIWindow *observedWindow;
+@property (nonatomic, retain) id realDelegate;
+@property (nonatomic, retain) <ABPopoverRepresentDelegate> *representDelegate;
+@property (readonly) Class superclass;
 
 + (void)actionSheet:(id)arg1 dismissWithClickedButtonIndex:(long long)arg2 animated:(bool)arg3;
 + (void)actionSheet:(id)arg1 showFromBarButtonItem:(id)arg2 animated:(bool)arg3;

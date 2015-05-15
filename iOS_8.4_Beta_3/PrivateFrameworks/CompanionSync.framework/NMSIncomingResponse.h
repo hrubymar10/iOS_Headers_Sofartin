@@ -12,17 +12,17 @@
     NSDate *_requestSent;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * idsIdentifier;
-@property(assign,readwrite) unsigned short messageID;
-@property(assign,retain) id pbResponse;
-@property(assign,copy) NSString * requestIDSIdentifier;
-@property(assign,retain) NSDictionary * requestPersistentUserInfo;
-@property(assign,retain) NSDate * requestSent;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSData *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *idsIdentifier;
+@property (nonatomic) unsigned short messageID;
+@property (nonatomic, retain) id pbResponse;
+@property (nonatomic, copy) NSString *requestIDSIdentifier;
+@property (nonatomic, retain) NSDictionary *requestPersistentUserInfo;
+@property (nonatomic, retain) NSDate *requestSent;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)CPObfuscatedDescriptionObject;

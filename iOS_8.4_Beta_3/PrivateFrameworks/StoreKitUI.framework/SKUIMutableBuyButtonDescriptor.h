@@ -4,13 +4,13 @@
 
 @interface SKUIMutableBuyButtonDescriptor : SKUIBuyButtonDescriptor
 
-@property(assign,copy) NSString * buttonText;
-@property(assign,readwrite) long long buttonType;
-@property(assign,copy) NSString * confirmationText;
-@property(assign,readwrite) unsigned long long elementType;
-@property(assign,readwrite) long long itemIdentifier;
-@property(assign,retain) SKUIStoreIdentifier * storeIdentifier;
-@property(assign,copy) NSString * variantIdentifier;
+@property (nonatomic, copy) NSString *buttonText;
+@property (nonatomic) long long buttonType;
+@property (nonatomic, copy) NSString *confirmationText;
+@property (nonatomic) unsigned long long elementType;
+@property (nonatomic) long long itemIdentifier;
+@property (nonatomic, retain) SKUIStoreIdentifier *storeIdentifier;
+@property (nonatomic, copy) NSString *variantIdentifier;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setButtonText:(id)arg1;

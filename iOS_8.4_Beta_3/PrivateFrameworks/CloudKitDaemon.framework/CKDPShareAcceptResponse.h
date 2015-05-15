@@ -6,8 +6,8 @@
     CKDPShare *_share;
 }
 
-@property(assign,readonly) bool hasShare;
-@property(assign,retain) CKDPShare * share;
+@property (nonatomic, readonly) bool hasShare;
+@property (nonatomic, retain) CKDPShare *share;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

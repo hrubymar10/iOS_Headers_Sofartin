@@ -11,7 +11,7 @@
     NSTimer *_suppressedUpdatesTimer;
 }
 
-@property(assign,retain) NSString * modificationStamp;
+@property (retain) NSString *modificationStamp;
 
 + (void)_updateCacheForMessageGUID:(id)arg1 fromMessage:(id)arg2 toMessage:(id)arg3;
 + (id)sharedInstance;

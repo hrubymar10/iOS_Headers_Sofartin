@@ -4,7 +4,7 @@
 
 @interface SAHABooleanValue : SAHAAttributeValue
 
-@property(assign,readwrite) bool value;
+@property (nonatomic) bool value;
 
 + (id)booleanValue;
 + (id)booleanValueWithDictionary:(id)arg1 context:(id)arg2;

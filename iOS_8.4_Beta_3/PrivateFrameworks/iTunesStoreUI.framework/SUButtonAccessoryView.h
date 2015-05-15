@@ -6,7 +6,7 @@
     SUGradientButton *_button;
 }
 
-@property(assign,readonly) SUGradientButton * button;
+@property (nonatomic, readonly) SUGradientButton *button;
 
 - (id)button;
 - (void)dealloc;

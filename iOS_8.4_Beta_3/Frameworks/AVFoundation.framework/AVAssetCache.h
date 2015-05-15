@@ -6,10 +6,10 @@
     AVAssetCacheInternal *_priv;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,readonly) long long currentSize;
-@property(assign,readwrite) long long maxEntrySize;
-@property(assign,readwrite) long long maxSize;
+@property (nonatomic, readonly, copy) NSURL *URL;
+@property (nonatomic, readonly) long long currentSize;
+@property (nonatomic) long long maxEntrySize;
+@property (nonatomic) long long maxSize;
 
 + (id)assetCacheWithURL:(id)arg1;
 

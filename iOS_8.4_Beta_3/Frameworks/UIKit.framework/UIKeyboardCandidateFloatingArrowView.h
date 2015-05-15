@@ -6,7 +6,7 @@
     UIButton *_arrowButton;
 }
 
-@property(assign,retain) UIButton * arrowButton;
+@property (nonatomic, retain) UIButton *arrowButton;
 
 + (id)collectionViewKind;
 + (id)reuseIdentifier;

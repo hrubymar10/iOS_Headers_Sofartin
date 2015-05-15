@@ -7,8 +7,8 @@
     bool _shouldAuthenticate;
 }
 
-@property(assign,retain) SBKRequest * SBKRequest;
-@property(assign,readwrite) bool shouldAuthenticate;
+@property (nonatomic, retain) SBKRequest *SBKRequest;
+@property (nonatomic) bool shouldAuthenticate;
 
 + (id)operationWithRequest:(id)arg1 delegate:(id)arg2;
 

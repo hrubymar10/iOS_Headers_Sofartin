@@ -8,13 +8,13 @@
     NSDictionary *_options;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) int photoThumbnailMaxDimension;
-@property(assign,readonly) float photoThumbnailQuality;
-@property(assign,readonly) bool photoThumbnailQualitySpecified;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) int photoThumbnailMaxDimension;
+@property (readonly) float photoThumbnailQuality;
+@property (readonly) bool photoThumbnailQualitySpecified;
+@property (readonly) Class superclass;
 
 + (id)cameraViewfinder;
 + (void)initialize;

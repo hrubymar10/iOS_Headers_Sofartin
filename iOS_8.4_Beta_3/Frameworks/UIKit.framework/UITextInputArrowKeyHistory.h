@@ -12,13 +12,13 @@
     UITextPosition *startPosition;
 }
 
-@property(assign,readwrite) bool affinityDownstream;
-@property(assign,readwrite) long long amount;
-@property(assign,readwrite) int anchor;
-@property(assign,retain) UITextPosition * cursor;
-@property(assign,retain) UITextPosition * end;
-@property(assign,retain) UITextPosition * start;
-@property(assign,retain) UITextPosition * startPosition;
+@property (nonatomic) bool affinityDownstream;
+@property (nonatomic) long long amount;
+@property (nonatomic) int anchor;
+@property (nonatomic, retain) UITextPosition *cursor;
+@property (nonatomic, retain) UITextPosition *end;
+@property (nonatomic, retain) UITextPosition *start;
+@property (nonatomic, retain) UITextPosition *startPosition;
 
 - (bool)affinityDownstream;
 - (long long)amount;

@@ -84,9 +84,9 @@
     NSMutableDictionary *mVirtualScreenToCapabilitiesMap;
 }
 
-@property(assign,readonly) NSSet * childrenContexts;
-@property(assign,readonly) bool isSharable;
-@property(assign,readonly) TSCH3DGLVersion * version;
+@property (nonatomic, readonly) NSSet *childrenContexts;
+@property (nonatomic, readonly) bool isSharable;
+@property (nonatomic, readonly) TSCH3DGLVersion *version;
 
 - (id).cxx_construct;
 - (void)activateTextureUnit:(unsigned long long)arg1;

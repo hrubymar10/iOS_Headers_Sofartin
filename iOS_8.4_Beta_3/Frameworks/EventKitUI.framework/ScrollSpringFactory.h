@@ -6,7 +6,7 @@
     double _initialVelocity;
 }
 
-@property(assign,readwrite) double initialVelocity;
+@property (nonatomic) double initialVelocity;
 
 + (id)sharedFactory;
 

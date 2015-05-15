@@ -7,8 +7,8 @@
     struct __CFString { } *_entitlementStatus;
 }
 
-@property(assign,readonly) bool faceTimeNonWiFiEntitled;
-@property(assign,retain) NSDictionary * registrationState;
+@property (nonatomic, readonly) bool faceTimeNonWiFiEntitled;
+@property (nonatomic, readonly, retain) NSDictionary *registrationState;
 
 + (id)sharedInstance;
 

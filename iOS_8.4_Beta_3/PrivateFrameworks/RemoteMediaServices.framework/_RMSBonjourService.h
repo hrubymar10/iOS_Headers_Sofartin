@@ -9,10 +9,10 @@
     long long _state;
 }
 
-@property(getter=isAvailable,assign,readwrite) bool available;
-@property(assign,retain) NSNetService * netService;
-@property(assign,retain) RMSService * service;
-@property(assign,readwrite) long long state;
+@property (getter=isAvailable, nonatomic) bool available;
+@property (nonatomic, retain) NSNetService *netService;
+@property (nonatomic, retain) RMSService *service;
+@property (nonatomic) long long state;
 
 - (void).cxx_destruct;
 - (bool)isAvailable;

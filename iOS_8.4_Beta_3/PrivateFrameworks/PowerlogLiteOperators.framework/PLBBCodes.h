@@ -9,10 +9,10 @@
     NSArray *_allMav_LogCodes;
 }
 
-@property(assign,retain) NSArray * Mav5_7_Lite_LogCodes;
-@property(assign,retain) NSArray * Mav5_7_LogCodes;
-@property(assign,retain) NSArray * Mav7_LogCodes;
-@property(assign,retain) NSArray * allMav_LogCodes;
+@property (retain) NSArray *Mav5_7_Lite_LogCodes;
+@property (retain) NSArray *Mav5_7_LogCodes;
+@property (retain) NSArray *Mav7_LogCodes;
+@property (retain) NSArray *allMav_LogCodes;
 
 - (void).cxx_destruct;
 - (id)Mav5_7_Lite_LogCodes;

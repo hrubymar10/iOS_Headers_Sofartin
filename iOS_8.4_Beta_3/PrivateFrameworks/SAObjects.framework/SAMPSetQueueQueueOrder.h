@@ -4,12 +4,12 @@
 
 @interface SAMPSetQueueQueueOrder : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) bool descending;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * mediaItemProperty;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) bool descending;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *mediaItemProperty;
+@property (readonly) Class superclass;
 
 + (id)setQueueQueueOrder;
 + (id)setQueueQueueOrderWithDictionary:(id)arg1 context:(id)arg2;

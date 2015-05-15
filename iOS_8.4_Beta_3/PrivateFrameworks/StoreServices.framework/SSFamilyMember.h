@@ -12,17 +12,17 @@
     bool _sharingPurchases;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * firstName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * iCloudAccountName;
-@property(assign,retain) NSNumber * iCloudIdentifier;
-@property(assign,retain) NSNumber * iTunesIdentifier;
-@property(assign,retain) NSString * lastName;
-@property(getter=isMe,assign,readwrite) bool me;
-@property(getter=isSharingPurchases,assign,readwrite) bool sharingPurchases;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *firstName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *iCloudAccountName;
+@property (nonatomic, retain) NSNumber *iCloudIdentifier;
+@property (nonatomic, retain) NSNumber *iTunesIdentifier;
+@property (nonatomic, retain) NSString *lastName;
+@property (getter=isMe, nonatomic) bool me;
+@property (getter=isSharingPurchases, nonatomic) bool sharingPurchases;
+@property (readonly) Class superclass;
 
 - (id)copyXPCEncoding;
 - (id)description;

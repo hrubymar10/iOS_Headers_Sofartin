@@ -45,10 +45,10 @@
     BBObserverServerProxy *_serverProxy;
 }
 
-@property(assign,readwrite) <BBObserverDelegate> * delegate;
-@property(assign,copy) NSString * gatewayName;
-@property(assign,readonly) unsigned long long gatewayPriority;
-@property(assign,readwrite) unsigned long long observerFeed;
+@property (nonatomic) <BBObserverDelegate> *delegate;
+@property (nonatomic, readonly, copy) NSString *gatewayName;
+@property (nonatomic, readonly) unsigned long long gatewayPriority;
+@property (nonatomic) unsigned long long observerFeed;
 
 + (void)initialize;
 

@@ -17,9 +17,9 @@
     } _startValue;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } currentValue;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } endValue;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } startValue;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } currentValue;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } endValue;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } startValue;
 
 + (id)animationWithEndingCGPointValue:(struct CGPoint { double x1; double x2; })arg1 duration:(double)arg2 timingFunction:(id)arg3 completion:(id)arg4;
 

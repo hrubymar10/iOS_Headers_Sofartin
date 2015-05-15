@@ -6,7 +6,7 @@
     NSArray *_subparts;
 }
 
-@property(assign,copy) NSArray * subparts;
+@property (nonatomic, readonly, copy) NSArray *subparts;
 
 - (Class)__ck_chatItemClass;
 - (id)_initWithItem:(id)arg1 subparts:(id)arg2;

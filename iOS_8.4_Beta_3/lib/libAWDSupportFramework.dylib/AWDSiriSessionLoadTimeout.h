@@ -18,18 +18,18 @@
     bool _wwanPreferred;
 }
 
-@property(assign,readwrite) unsigned long long connectionTechnology;
-@property(assign,retain) NSString * connectionURL;
-@property(assign,readwrite) bool hasConnectionTechnology;
-@property(assign,readonly) bool hasConnectionURL;
-@property(assign,readwrite) bool hasInterfaceIndex;
-@property(assign,readwrite) bool hasSendBufferSize;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasWwanPreferred;
-@property(assign,readwrite) unsigned long long interfaceIndex;
-@property(assign,readwrite) unsigned long long sendBufferSize;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) bool wwanPreferred;
+@property (nonatomic) unsigned long long connectionTechnology;
+@property (nonatomic, retain) NSString *connectionURL;
+@property (nonatomic) bool hasConnectionTechnology;
+@property (nonatomic, readonly) bool hasConnectionURL;
+@property (nonatomic) bool hasInterfaceIndex;
+@property (nonatomic) bool hasSendBufferSize;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasWwanPreferred;
+@property (nonatomic) unsigned long long interfaceIndex;
+@property (nonatomic) unsigned long long sendBufferSize;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) bool wwanPreferred;
 
 - (unsigned long long)connectionTechnology;
 - (id)connectionURL;

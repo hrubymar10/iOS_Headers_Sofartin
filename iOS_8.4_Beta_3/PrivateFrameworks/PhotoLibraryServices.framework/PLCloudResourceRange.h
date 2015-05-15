@@ -9,10 +9,10 @@
     PLCloudResourceNode *_rootNode;
 }
 
-@property(assign,readonly) unsigned short category;
-@property(assign,readonly) unsigned short qualityClass;
-@property(assign,readonly) unsigned long long totalCount;
-@property(assign,readonly) unsigned long long totalSize;
+@property (nonatomic, readonly) unsigned short category;
+@property (nonatomic, readonly) unsigned short qualityClass;
+@property (nonatomic, readonly) unsigned long long totalCount;
+@property (nonatomic, readonly) unsigned long long totalSize;
 
 - (void)assignSuccessorNode:(id)arg1;
 - (unsigned short)category;

@@ -8,10 +8,10 @@
     NSMutableArray *_scaledConstraints;
 }
 
-@property(assign,retain) NSAttributedString * attributionString;
-@property(assign,retain) UILabel * label;
-@property(assign,retain) NSArray * marginConstraints;
-@property(assign,retain) NSMutableArray * scaledConstraints;
+@property (nonatomic, retain) NSAttributedString *attributionString;
+@property (nonatomic, retain) UILabel *label;
+@property (nonatomic, retain) NSArray *marginConstraints;
+@property (nonatomic, retain) NSMutableArray *scaledConstraints;
 
 + (id)fontForLabel;
 + (double)intrinsicContentHeight;

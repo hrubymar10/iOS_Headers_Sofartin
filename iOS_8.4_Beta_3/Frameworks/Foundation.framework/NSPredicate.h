@@ -10,7 +10,7 @@
     unsigned int reserved;
 }
 
-@property(assign,copy) NSString * predicateFormat;
+@property (readonly, copy) NSString *predicateFormat;
 
 + (void)initialize;
 + (id)newStringFrom:(id)arg1 usingUnicodeTransforms:(unsigned long long)arg2;

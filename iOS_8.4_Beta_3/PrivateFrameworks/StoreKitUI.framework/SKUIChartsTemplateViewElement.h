@@ -6,10 +6,10 @@
     NSString *_type;
 }
 
-@property(assign,readonly) SKUIActivityIndicatorViewElement * activityIndicator;
-@property(assign,readonly) NSArray * columns;
-@property(assign,readonly) SKUINavigationBarViewElement * navigationBarElement;
-@property(assign,readonly) NSString * type;
+@property (nonatomic, readonly) SKUIActivityIndicatorViewElement *activityIndicator;
+@property (nonatomic, readonly) NSArray *columns;
+@property (nonatomic, readonly) SKUINavigationBarViewElement *navigationBarElement;
+@property (nonatomic, readonly) NSString *type;
 
 - (void).cxx_destruct;
 - (id)activityIndicator;

@@ -8,9 +8,9 @@
     PSUsageBundleApp *_usageBundleApp;
 }
 
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) PSUsageBundleApp * usageBundleApp;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) PSUsageBundleApp *usageBundleApp;
 
 + (id)categoryNamed:(id)arg1 withIdentifier:(id)arg2 forUsageBundleApp:(id)arg3;
 

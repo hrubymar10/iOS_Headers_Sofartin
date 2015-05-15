@@ -6,7 +6,7 @@
     AFTimer *_timer;
 }
 
-@property(assign,retain) AFTimer * timer;
+@property (nonatomic, retain) AFTimer *timer;
 
 + (bool)supportsSecureCoding;
 

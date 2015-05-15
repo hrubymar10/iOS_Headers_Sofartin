@@ -14,7 +14,7 @@
     id _whenDone;
 }
 
-@property(assign,copy) id whenDone;
+@property (nonatomic, copy) id whenDone;
 
 - (void).cxx_destruct;
 - (void)_iterate:(unsigned long long)arg1;

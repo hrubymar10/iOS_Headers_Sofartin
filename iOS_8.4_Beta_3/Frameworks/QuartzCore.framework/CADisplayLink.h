@@ -6,12 +6,12 @@
     void *_impl;
 }
 
-@property(assign,readonly) CADisplay * display;
-@property(assign,readonly) double duration;
-@property(assign,readwrite) long long frameInterval;
-@property(getter=isPaused,assign,readwrite) bool paused;
-@property(assign,readonly) double timestamp;
-@property(assign,retain) id userInfo;
+@property (nonatomic, readonly) CADisplay *display;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic) long long frameInterval;
+@property (getter=isPaused, nonatomic) bool paused;
+@property (nonatomic, readonly) double timestamp;
+@property (nonatomic, retain) id userInfo;
 
 + (id)displayLinkWithDisplay:(id)arg1 target:(id)arg2 selector:(SEL)arg3;
 + (id)displayLinkWithTarget:(id)arg1 selector:(SEL)arg2;

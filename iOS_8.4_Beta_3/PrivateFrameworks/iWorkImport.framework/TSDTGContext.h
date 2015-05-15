@@ -10,11 +10,11 @@
     <TSDThumbnailIdentifier> *_thumbnailId;
 }
 
-@property(assign,readonly) <TSDThumbnailConsumer> * consumer;
-@property(assign,readwrite) bool continueThumbnailing;
-@property(assign,readonly) <TSDThumbnailProducer> * producer;
-@property(assign,retain) TSUImage * thumbnail;
-@property(assign,readwrite) <TSDThumbnailIdentifier> * thumbnailId;
+@property (nonatomic, readonly) <TSDThumbnailConsumer> *consumer;
+@property (nonatomic) bool continueThumbnailing;
+@property (nonatomic, readonly) <TSDThumbnailProducer> *producer;
+@property (nonatomic, retain) TSUImage *thumbnail;
+@property (nonatomic) <TSDThumbnailIdentifier> *thumbnailId;
 
 - (id)consumer;
 - (bool)continueThumbnailing;

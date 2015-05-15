@@ -6,7 +6,7 @@
     UIScrollView *_contentScrollView;
 }
 
-@property(assign,readwrite) UIScrollView * contentScrollView;
+@property (nonatomic) UIScrollView *contentScrollView;
 
 - (id)contentScrollView;
 - (void)setContentScrollView:(id)arg1;

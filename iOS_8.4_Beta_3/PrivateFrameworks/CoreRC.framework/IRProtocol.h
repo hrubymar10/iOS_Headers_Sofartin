@@ -9,10 +9,10 @@
     double _repeatInterval;
 }
 
-@property(assign,readonly) double carrierFrequency;
-@property(assign,readonly) unsigned char options;
-@property(assign,readonly) unsigned char protocolID;
-@property(assign,readonly) double repeatInterval;
+@property (nonatomic, readonly) double carrierFrequency;
+@property (nonatomic, readonly) unsigned char options;
+@property (nonatomic, readonly) unsigned char protocolID;
+@property (nonatomic, readonly) double repeatInterval;
 
 + (id)protocolWithID:(unsigned char)arg1 options:(unsigned char)arg2;
 

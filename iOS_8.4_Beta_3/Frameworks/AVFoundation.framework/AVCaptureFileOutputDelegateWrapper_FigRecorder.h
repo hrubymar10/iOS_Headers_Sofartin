@@ -12,13 +12,13 @@
     bool _receivedDidStopRecording;
 }
 
-@property(assign,readonly) NSArray * connections;
-@property(assign,readonly) <AVCaptureFileOutputRecordingDelegate_FigRecorder><AVCaptureFileOutputPauseResumeDelegate_FigRecorder> * delegate;
-@property(assign,readwrite) int didStopRecordingError;
-@property(assign,retain) NSArray * metadata;
-@property(assign,readonly) NSURL * outputFileURL;
-@property(assign,readwrite) bool receivedDidStartRecording;
-@property(assign,readwrite) bool receivedDidStopRecording;
+@property (readonly) NSArray *connections;
+@property (readonly) <AVCaptureFileOutputRecordingDelegate_FigRecorder><AVCaptureFileOutputPauseResumeDelegate_FigRecorder> *delegate;
+@property int didStopRecordingError;
+@property (retain) NSArray *metadata;
+@property (readonly) NSURL *outputFileURL;
+@property bool receivedDidStartRecording;
+@property bool receivedDidStopRecording;
 
 + (id)wrapperWithURL:(id)arg1 delegate:(id)arg2 connections:(id)arg3;
 

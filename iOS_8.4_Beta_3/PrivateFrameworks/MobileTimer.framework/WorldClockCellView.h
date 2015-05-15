@@ -15,14 +15,14 @@
     NSTimeZone *_timeZone;
 }
 
-@property(assign,readonly) AnalogClockView * analogClock;
-@property(assign,readonly) UILabel * combinedLabel;
-@property(assign,readwrite) <WorldClockCellViewDelegate> * delegate;
-@property(assign,readonly) DigitalClockLabel * digitalClock;
-@property(assign,readonly) UILabel * nameLabel;
-@property(assign,readonly) int runMode;
-@property(assign,readonly) bool started;
-@property(assign,readwrite) long long style;
+@property (nonatomic, readonly) AnalogClockView *analogClock;
+@property (nonatomic, readonly) UILabel *combinedLabel;
+@property (nonatomic) <WorldClockCellViewDelegate> *delegate;
+@property (nonatomic, readonly) DigitalClockLabel *digitalClock;
+@property (nonatomic, readonly) UILabel *nameLabel;
+@property (nonatomic, readonly) int runMode;
+@property (nonatomic, readonly) bool started;
+@property (nonatomic) long long style;
 
 + (id)combinedStringFromDate:(id)arg1 withTimezoneOffset:(long long)arg2 dayText:(id*)arg3 hourText:(id*)arg4 usesSeparateLines:(bool)arg5;
 + (double)defaultCellHeight;

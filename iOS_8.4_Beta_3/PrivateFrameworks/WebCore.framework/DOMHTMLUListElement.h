@@ -4,8 +4,8 @@
 
 @interface DOMHTMLUListElement : DOMHTMLElement
 
-@property(assign,readwrite) bool compact;
-@property(assign,copy) NSString * type;
+@property bool compact;
+@property (copy) NSString *type;
 
 - (bool)compact;
 - (void)setCompact:(bool)arg1;

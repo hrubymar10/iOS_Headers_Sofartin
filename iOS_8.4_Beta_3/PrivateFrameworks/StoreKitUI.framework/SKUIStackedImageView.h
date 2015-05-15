@@ -9,13 +9,13 @@
     MPUStackView *_stackView;
 }
 
-@property(assign,retain) MPUBorderDrawingCache * borderDrawingCache;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIView * perspectiveTargetView;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } vanishingPoint;
+@property (nonatomic, retain) MPUBorderDrawingCache *borderDrawingCache;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UIView *perspectiveTargetView;
+@property (readonly) Class superclass;
+@property (nonatomic) struct CGPoint { double x1; double x2; } vanishingPoint;
 
 + (struct SKUIStackedImageConfiguration { struct UIOffset { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; long long x3; })_configurationForSize:(struct CGSize { double x1; double x2; })arg1;
 + (double)maximumPerspectiveHeightForSize:(struct CGSize { double x1; double x2; })arg1;

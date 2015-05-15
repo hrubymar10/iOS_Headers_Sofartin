@@ -15,11 +15,11 @@
     OADTextListStyle *mTitleTextStyle;
 }
 
-@property(assign,readwrite) bool dateTimePlaceholderIsVisible;
-@property(assign,readwrite) bool footerPlaceholderIsVisible;
-@property(assign,readwrite) bool headerPlaceholderIsVisible;
-@property(assign,retain) NSMutableArray * slideLayouts;
-@property(assign,readwrite) bool slideNumberPlaceholderIsVisible;
+@property (nonatomic) bool dateTimePlaceholderIsVisible;
+@property (nonatomic) bool footerPlaceholderIsVisible;
+@property (nonatomic) bool headerPlaceholderIsVisible;
+@property (nonatomic, retain) NSMutableArray *slideLayouts;
+@property (nonatomic) bool slideNumberPlaceholderIsVisible;
 
 - (id)addSlideLayout;
 - (void)addSlideLayout:(id)arg1;

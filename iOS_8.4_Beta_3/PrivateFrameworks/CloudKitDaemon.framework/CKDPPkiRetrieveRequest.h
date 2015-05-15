@@ -6,7 +6,7 @@
     NSMutableArray *_userIds;
 }
 
-@property(assign,retain) NSMutableArray * userIds;
+@property (nonatomic, retain) NSMutableArray *userIds;
 
 + (id)options;
 

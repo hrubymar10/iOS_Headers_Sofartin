@@ -21,14 +21,14 @@
     MusicVerticalScrollingContainerViewController *_verticalScrollingContainerViewController;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readwrite) double contentBottomLayoutGuide;
-@property(assign,readwrite) double contentTopLayoutGuide;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIDocumentContainerViewController * relatedContentDocumentContainerViewController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic) double contentBottomLayoutGuide;
+@property (nonatomic) double contentTopLayoutGuide;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIDocumentContainerViewController *relatedContentDocumentContainerViewController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_configureContainerEntityValueContext;

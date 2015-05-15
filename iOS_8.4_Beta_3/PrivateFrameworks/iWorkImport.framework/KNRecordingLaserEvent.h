@@ -9,7 +9,7 @@
     } mUnitLocation;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } unitLocation;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } unitLocation;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)description;

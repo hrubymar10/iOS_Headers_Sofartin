@@ -9,13 +9,13 @@
     PSPasscodeField *_passcodeField;
 }
 
-@property(assign,readwrite) bool convertsNumeralsToASCII;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <KeychainSyncPasscodeFieldDelegate> * delegate;
-@property(assign,readwrite) bool denyFirstResponder;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool convertsNumeralsToASCII;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <KeychainSyncPasscodeFieldDelegate> *delegate;
+@property (nonatomic) bool denyFirstResponder;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_setSecureTextEntry:(bool)arg1;
 - (bool)becomeFirstResponder;

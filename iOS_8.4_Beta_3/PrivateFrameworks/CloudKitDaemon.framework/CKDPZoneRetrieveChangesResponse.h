@@ -11,11 +11,11 @@
     NSData *_syncContinuationToken;
 }
 
-@property(assign,retain) NSMutableArray * changedZones;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,readonly) bool hasSyncContinuationToken;
-@property(assign,readwrite) int status;
-@property(assign,retain) NSData * syncContinuationToken;
+@property (nonatomic, retain) NSMutableArray *changedZones;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic, readonly) bool hasSyncContinuationToken;
+@property (nonatomic) int status;
+@property (nonatomic, retain) NSData *syncContinuationToken;
 
 - (void).cxx_destruct;
 - (void)addChangedZones:(id)arg1;

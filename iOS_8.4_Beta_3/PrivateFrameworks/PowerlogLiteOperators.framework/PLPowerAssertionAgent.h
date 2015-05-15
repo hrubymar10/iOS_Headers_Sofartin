@@ -17,19 +17,19 @@
     PLEntryNotificationOperatorComposition *_wakeNotification;
 }
 
-@property(assign,retain) NSMutableDictionary * assertionAggregatedLastSample;
-@property(assign,retain) PLCFNotificationOperatorComposition * assertionBufferFullNotification;
-@property(assign,readwrite) bool assertionBufferFullNotificationActive;
-@property(assign,retain) PLNSTimerOperatorComposition * assertionBufferFullNotificationRearmTimer;
-@property(assign,retain) NSMutableArray * assertionBufferNotificationTracking;
-@property(assign,retain) PLCFNotificationOperatorComposition * assertionNotification;
-@property(assign,retain) PLNSTimerOperatorComposition * assertionSnapShotTimer;
-@property(assign,readwrite) bool assertionSnapshotTimerActive;
-@property(assign,retain) PLEntryNotificationOperatorComposition * batteryLevelNotificiations;
-@property(assign,retain) PLEntryNotificationOperatorComposition * canSleepNotification;
-@property(assign,readwrite) bool firstBufferDrain;
-@property(assign,retain) PLNSTimerOperatorComposition * runQueryTimer;
-@property(assign,retain) PLEntryNotificationOperatorComposition * wakeNotification;
+@property (nonatomic, retain) NSMutableDictionary *assertionAggregatedLastSample;
+@property (retain) PLCFNotificationOperatorComposition *assertionBufferFullNotification;
+@property (nonatomic) bool assertionBufferFullNotificationActive;
+@property (retain) PLNSTimerOperatorComposition *assertionBufferFullNotificationRearmTimer;
+@property (retain) NSMutableArray *assertionBufferNotificationTracking;
+@property (retain) PLCFNotificationOperatorComposition *assertionNotification;
+@property (retain) PLNSTimerOperatorComposition *assertionSnapShotTimer;
+@property (nonatomic) bool assertionSnapshotTimerActive;
+@property (retain) PLEntryNotificationOperatorComposition *batteryLevelNotificiations;
+@property (retain) PLEntryNotificationOperatorComposition *canSleepNotification;
+@property bool firstBufferDrain;
+@property (retain) PLNSTimerOperatorComposition *runQueryTimer;
+@property (retain) PLEntryNotificationOperatorComposition *wakeNotification;
 
 + (id)accountingGroupDefinitions;
 + (id)defaults;

@@ -7,7 +7,7 @@
     unsigned long long _style;
 }
 
-@property(assign,readonly) unsigned long long style;
+@property (nonatomic, readonly) unsigned long long style;
 
 + (id)overlayPropertiesFactoryWithStyle:(unsigned long long)arg1;
 

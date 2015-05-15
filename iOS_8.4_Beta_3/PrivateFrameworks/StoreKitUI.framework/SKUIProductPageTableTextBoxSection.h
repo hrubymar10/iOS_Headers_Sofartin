@@ -12,11 +12,11 @@
     NSString *_title;
 }
 
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,readwrite) long long stringIndex;
-@property(assign,copy) NSString * subtitle;
-@property(assign,retain) SKUILayoutCache * textLayoutCache;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic) long long stringIndex;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, retain) SKUILayoutCache *textLayoutCache;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)colorScheme;

@@ -4,10 +4,10 @@
 
 @interface AVValueTiming : NSObject <NSCoding, NSCopying, NSMutableCopying>
 
-@property(assign,readonly) double anchorTimeStamp;
-@property(assign,readonly) double anchorValue;
-@property(assign,readonly) double currentValue;
-@property(assign,readonly) double rate;
+@property (nonatomic, readonly) double anchorTimeStamp;
+@property (nonatomic, readonly) double anchorValue;
+@property (nonatomic, readonly) double currentValue;
+@property (nonatomic, readonly) double rate;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (double)currentTimeStamp;

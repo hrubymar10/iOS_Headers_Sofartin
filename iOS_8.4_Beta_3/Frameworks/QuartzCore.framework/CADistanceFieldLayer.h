@@ -4,12 +4,12 @@
 
 @interface CADistanceFieldLayer : CALayer
 
-@property(assign,readwrite) struct CGColor { }* foregroundColor;
-@property(assign,readwrite) bool invertsShape;
-@property(assign,readwrite) double lineWidth;
-@property(assign,readwrite) double offset;
-@property(assign,copy) NSString * renderMode;
-@property(assign,readwrite) double sharpness;
+@property struct CGColor { }*foregroundColor;
+@property bool invertsShape;
+@property double lineWidth;
+@property double offset;
+@property (copy) NSString *renderMode;
+@property double sharpness;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (bool)_hasRenderLayerSubclass;

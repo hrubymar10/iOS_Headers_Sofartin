@@ -9,10 +9,10 @@
     float _portionComplete;
 }
 
-@property(assign,readwrite) double estimatedTimeRemaining;
-@property(assign,readwrite) bool isDone;
-@property(assign,retain) NSString * phase;
-@property(assign,readwrite) float portionComplete;
+@property (nonatomic) double estimatedTimeRemaining;
+@property (nonatomic) bool isDone;
+@property (nonatomic, retain) NSString *phase;
+@property (nonatomic) float portionComplete;
 
 + (bool)supportsSecureCoding;
 

@@ -22,16 +22,16 @@
     double _transitionDuration;
 }
 
-@property(getter=isAnimated,assign,readwrite) bool animated;
-@property(getter=isCancelled,assign,readwrite) bool cancelled;
-@property(assign,readwrite) long long completionCurve;
-@property(assign,readwrite) double completionVelocity;
-@property(assign,readwrite) long long fromOrientation;
-@property(getter=isInteractive,assign,readwrite) bool interactive;
-@property(assign,readwrite) double percentComplete;
-@property(assign,readwrite) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } targetTransform;
-@property(assign,readwrite) long long toOrientation;
-@property(assign,readwrite) double transitionDuration;
+@property (getter=isAnimated, nonatomic) bool animated;
+@property (getter=isCancelled, nonatomic) bool cancelled;
+@property (nonatomic) long long completionCurve;
+@property (nonatomic) double completionVelocity;
+@property (nonatomic) long long fromOrientation;
+@property (getter=isInteractive, nonatomic) bool interactive;
+@property (nonatomic) double percentComplete;
+@property (nonatomic) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } targetTransform;
+@property (nonatomic) long long toOrientation;
+@property (nonatomic) double transitionDuration;
 
 + (id)descriptionForTransitionCoordinatorContext:(id)arg1;
 + (bool)supportsSecureCoding;

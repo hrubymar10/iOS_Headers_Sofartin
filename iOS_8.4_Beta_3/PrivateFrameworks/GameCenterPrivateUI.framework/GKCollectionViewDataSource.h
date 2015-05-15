@@ -13,22 +13,22 @@
     NSMutableDictionary *_sectionsToSearchKeys;
 }
 
-@property(assign,copy) GKGridLayoutMetrics * dataSourceMetrics;
-@property(assign,retain) GKGridLayoutMetrics * dataSourceMetricsInternal;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) NSString * defaultSearchKey;
-@property(assign,copy) GKSectionMetrics * defaultSectionMetrics;
-@property(assign,retain) GKSectionMetrics * defaultSectionMetricsInternal;
-@property(assign,readwrite) <GKCollectionViewDataSourceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isRootDataSource;
-@property(assign,readonly) bool isSearchable;
-@property(assign,retain) NSMutableDictionary * kindsToFactories;
-@property(assign,retain) NSHashTable * listeners;
-@property(assign,retain) NSMutableDictionary * sectionsToMetrics;
-@property(assign,retain) NSMutableDictionary * sectionsToSearchKeys;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) GKGridLayoutMetrics *dataSourceMetrics;
+@property (nonatomic, retain) GKGridLayoutMetrics *dataSourceMetricsInternal;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) NSString *defaultSearchKey;
+@property (nonatomic, copy) GKSectionMetrics *defaultSectionMetrics;
+@property (nonatomic, retain) GKSectionMetrics *defaultSectionMetricsInternal;
+@property (nonatomic) <GKCollectionViewDataSourceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isRootDataSource;
+@property (nonatomic, readonly) bool isSearchable;
+@property (nonatomic, retain) NSMutableDictionary *kindsToFactories;
+@property (nonatomic, retain) NSHashTable *listeners;
+@property (nonatomic, retain) NSMutableDictionary *sectionsToMetrics;
+@property (nonatomic, retain) NSMutableDictionary *sectionsToSearchKeys;
+@property (readonly) Class superclass;
 
 - (id)_gkDescriptionWithChildren:(int)arg1;
 - (id)collectionView:(id)arg1 cellForItemAtIndexPath:(id)arg2;

@@ -15,16 +15,16 @@
     NSString *_serverName;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSError * downloadError;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isFault;
-@property(assign,readwrite) unsigned int options;
-@property(assign,readonly) NSString * serverName;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool userInitiated;
-@property(assign,readonly) bool wantsContent;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSError *downloadError;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isFault;
+@property (nonatomic) unsigned int options;
+@property (nonatomic, readonly) NSString *serverName;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool userInitiated;
+@property (nonatomic, readonly) bool wantsContent;
 
 + (bool)supportsSecureCoding;
 

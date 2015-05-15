@@ -13,15 +13,15 @@
     NSString *_serviceType;
 }
 
-@property(assign,readonly) HMDAccessory * accessory;
-@property(assign,readonly) NSString * associatedServiceType;
-@property(assign,copy) NSArray * characteristics;
-@property(assign,retain) HAPService * hapService;
-@property(assign,copy) NSNumber * instanceID;
-@property(getter=getName,assign,copy) NSString * name;
-@property(assign,retain) NSString * providedName;
-@property(assign,retain) NSString * serviceType;
-@property(assign,copy) NSString * type;
+@property (nonatomic, readonly) HMDAccessory *accessory;
+@property (nonatomic, readonly) NSString *associatedServiceType;
+@property (nonatomic, readonly, copy) NSArray *characteristics;
+@property (nonatomic, retain) HAPService *hapService;
+@property (nonatomic, copy) NSNumber *instanceID;
+@property (getter=getName, nonatomic, copy) NSString *name;
+@property (nonatomic, retain) NSString *providedName;
+@property (nonatomic, retain) NSString *serviceType;
+@property (nonatomic, readonly, copy) NSString *type;
 
 + (bool)supportsSecureCoding;
 

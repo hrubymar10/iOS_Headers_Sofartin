@@ -14,13 +14,13 @@
     unsigned long long _storageID;
 }
 
-@property(assign,retain) NSURL * documentURL;
-@property(assign,readonly) <NSCopying><NSSecureCoding> * persistentIdentifier;
-@property(assign,retain) NSData * privExtension;
-@property(assign,retain) NSData * pubExtension;
-@property(assign,readonly) long long remoteID;
-@property(assign,retain) GSStagingPrefix * stagingPrefix;
-@property(assign,readonly) unsigned long long storageID;
+@property (retain) NSURL *documentURL;
+@property (nonatomic, readonly) <NSCopying><NSSecureCoding> *persistentIdentifier;
+@property (retain) NSData *privExtension;
+@property (retain) NSData *pubExtension;
+@property (nonatomic, readonly) long long remoteID;
+@property (nonatomic, retain) GSStagingPrefix *stagingPrefix;
+@property (nonatomic, readonly) unsigned long long storageID;
 
 + (id)storageIDForItemAtURL:(id)arg1 error:(id*)arg2;
 + (id)storagePrefixForFileDescriptor:(int)arg1 error:(id*)arg2;

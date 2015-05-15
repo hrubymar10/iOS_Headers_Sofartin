@@ -13,16 +13,16 @@
     CKDPRecordZoneIdentifier *_zoneIdentifier;
 }
 
-@property(assign,retain) NSData * continuationMarker;
-@property(assign,readonly) bool hasContinuationMarker;
-@property(assign,readwrite) bool hasLimit;
-@property(assign,readonly) bool hasQuery;
-@property(assign,readonly) bool hasRequestedFields;
-@property(assign,readonly) bool hasZoneIdentifier;
-@property(assign,readwrite) unsigned int limit;
-@property(assign,retain) CKDPQuery * query;
-@property(assign,retain) CKDPRequestedFields * requestedFields;
-@property(assign,retain) CKDPRecordZoneIdentifier * zoneIdentifier;
+@property (nonatomic, retain) NSData *continuationMarker;
+@property (nonatomic, readonly) bool hasContinuationMarker;
+@property (nonatomic) bool hasLimit;
+@property (nonatomic, readonly) bool hasQuery;
+@property (nonatomic, readonly) bool hasRequestedFields;
+@property (nonatomic, readonly) bool hasZoneIdentifier;
+@property (nonatomic) unsigned int limit;
+@property (nonatomic, retain) CKDPQuery *query;
+@property (nonatomic, retain) CKDPRequestedFields *requestedFields;
+@property (nonatomic, retain) CKDPRecordZoneIdentifier *zoneIdentifier;
 
 + (id)options;
 

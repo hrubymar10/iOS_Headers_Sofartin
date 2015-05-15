@@ -7,8 +7,8 @@
     SSAccount *_storeAccount;
 }
 
-@property(assign,readwrite) bool shouldAuthenticate;
-@property(assign,readonly) SSAccount * storeAccount;
+@property bool shouldAuthenticate;
+@property (readonly) SSAccount *storeAccount;
 
 + (void)clearLastSyncnedAccount;
 + (id)lastFailedSyncAccountIdentifier;

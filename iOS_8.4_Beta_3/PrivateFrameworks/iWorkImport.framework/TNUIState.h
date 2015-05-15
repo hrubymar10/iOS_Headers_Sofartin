@@ -31,27 +31,27 @@
     bool mShowsComments;
 }
 
-@property(assign,readonly) NSMutableDictionary * chartUIState;
-@property(assign,readwrite) <TNUIStateDelegate> * delegate;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } desktopScreenSize;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } desktopWindowFrame;
-@property(assign,readwrite) long long documentMode;
-@property(assign,readonly) bool hasPreviousVisibleRect;
-@property(assign,readonly) bool hasVisibleRect;
-@property(assign,readwrite) int inspectorPaneViewMode;
-@property(getter=isInspectorPaneVisible,assign,readwrite) bool inspectorPaneVisible;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } previousScrollPosition;
-@property(assign,readonly) float previousViewScale;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } previousVisibleRect;
-@property(assign,readwrite) bool removedAllQuickCalcFunctions;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } scrollPosition;
-@property(assign,copy) NSArray * selectedQuickCalcFunctions;
-@property(assign,retain) TSKSelectionPath * selectionPath;
-@property(assign,readonly) TNSheetSelection * sheetSelection;
-@property(assign,readwrite) bool showCanvasGuides;
-@property(assign,readwrite) bool showsComments;
-@property(assign,readonly) float viewScale;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } visibleRect;
+@property (nonatomic, readonly) NSMutableDictionary *chartUIState;
+@property (nonatomic) <TNUIStateDelegate> *delegate;
+@property (nonatomic) struct CGSize { double x1; double x2; } desktopScreenSize;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } desktopWindowFrame;
+@property (nonatomic) long long documentMode;
+@property (nonatomic, readonly) bool hasPreviousVisibleRect;
+@property (nonatomic, readonly) bool hasVisibleRect;
+@property (nonatomic) int inspectorPaneViewMode;
+@property (getter=isInspectorPaneVisible, nonatomic) bool inspectorPaneVisible;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } previousScrollPosition;
+@property (nonatomic, readonly) float previousViewScale;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } previousVisibleRect;
+@property (nonatomic) bool removedAllQuickCalcFunctions;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } scrollPosition;
+@property (nonatomic, copy) NSArray *selectedQuickCalcFunctions;
+@property (nonatomic, retain) TSKSelectionPath *selectionPath;
+@property (nonatomic, readonly) TNSheetSelection *sheetSelection;
+@property (nonatomic) bool showCanvasGuides;
+@property (nonatomic) bool showsComments;
+@property (nonatomic, readonly) float viewScale;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } visibleRect;
 
 + (double)maximumViewScale;
 + (double)minimumViewScale;

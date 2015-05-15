@@ -9,8 +9,8 @@
     } _has;
 }
 
-@property(assign,readwrite) int error;
-@property(assign,readwrite) bool hasError;
+@property (nonatomic) int error;
+@property (nonatomic) bool hasError;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

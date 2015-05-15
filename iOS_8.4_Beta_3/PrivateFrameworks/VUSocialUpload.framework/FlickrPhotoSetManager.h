@@ -8,9 +8,9 @@
     <FlickrPhotoSetTableDelegate> *_tableDelegate;
 }
 
-@property(assign,readwrite) <FlickrComposeOptionViewDelegate> * delegate;
-@property(assign,readonly) NSArray * photoSets;
-@property(assign,readwrite) <FlickrPhotoSetTableDelegate> * tableDelegate;
+@property (nonatomic) <FlickrComposeOptionViewDelegate> *delegate;
+@property (nonatomic, readonly) NSArray *photoSets;
+@property (nonatomic) <FlickrPhotoSetTableDelegate> *tableDelegate;
 
 - (void).cxx_destruct;
 - (id)delegate;

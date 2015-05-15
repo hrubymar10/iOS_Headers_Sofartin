@@ -10,7 +10,7 @@
     double _touchOffsetFromMagnificationPoint;
 }
 
-@property(assign,readwrite) bool isHorizontal;
+@property (nonatomic) bool isHorizontal;
 
 + (id)sharedRangedMagnifier;
 

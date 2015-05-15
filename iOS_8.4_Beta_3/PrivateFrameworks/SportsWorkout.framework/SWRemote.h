@@ -6,7 +6,7 @@
     bool _isListeningToRemote;
 }
 
-@property(assign,readonly) bool isListeningToRemote;
+@property (nonatomic, readonly) bool isListeningToRemote;
 
 - (void)beginListeningToRemoteCommands;
 - (bool)isListeningToRemote;

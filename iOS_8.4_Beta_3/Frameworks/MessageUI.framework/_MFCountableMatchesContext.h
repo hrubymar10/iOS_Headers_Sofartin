@@ -8,7 +8,7 @@
     NSMutableSet *_popularPeople;
 }
 
-@property(assign,readwrite) long long maxCount;
+@property (nonatomic) long long maxCount;
 
 - (void)countInstances:(id)arg1 usingPredicate:(id)arg2;
 - (void)dealloc;

@@ -9,15 +9,15 @@
     double _width;
 }
 
-@property(assign,readonly) NSAttributedString * attributedString;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class layoutClass;
-@property(assign,readwrite) long long numberOfLines;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool wantsBaselineOffset;
-@property(assign,readwrite) double width;
+@property (nonatomic, readonly) NSAttributedString *attributedString;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) Class layoutClass;
+@property (nonatomic) long long numberOfLines;
+@property (readonly) Class superclass;
+@property (nonatomic) bool wantsBaselineOffset;
+@property (nonatomic) double width;
 
 - (void).cxx_destruct;
 - (id)attributedString;

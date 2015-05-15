@@ -13,11 +13,11 @@
     UIColor *_tintColor;
 }
 
-@property(assign,readonly) double blurRadius;
-@property(assign,readonly) long long graphicsQuality;
-@property(assign,readonly) unsigned long long style;
-@property(assign,readonly) double tintAlpha;
-@property(assign,readonly) UIColor * tintColor;
+@property (nonatomic, readonly) double blurRadius;
+@property (nonatomic, readonly) long long graphicsQuality;
+@property (nonatomic, readonly) unsigned long long style;
+@property (nonatomic, readonly) double tintAlpha;
+@property (nonatomic, readonly) UIColor *tintColor;
 
 - (void)_configure;
 - (id)_settingsForStyle;

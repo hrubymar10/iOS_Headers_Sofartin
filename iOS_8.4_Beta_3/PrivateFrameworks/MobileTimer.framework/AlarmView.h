@@ -17,21 +17,21 @@
     DigitalClockLabel *_timeLabel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UILabel * detailLabel;
-@property(assign,readonly) UISwitch * enabledSwitch;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * name;
-@property(assign,retain) UIFont * nameFont;
-@property(assign,retain) UILabel * nameLabel;
-@property(assign,retain) UIFont * repeatFont;
-@property(assign,retain) UILabel * repeatLabel;
-@property(assign,copy) NSString * repeatText;
-@property(assign,retain) UILabel * secondaryDesignatorLabel;
-@property(assign,readwrite) long long style;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) DigitalClockLabel * timeLabel;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, retain) UILabel *detailLabel;
+@property (nonatomic, readonly) UISwitch *enabledSwitch;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) UIFont *nameFont;
+@property (nonatomic, readonly, retain) UILabel *nameLabel;
+@property (nonatomic, retain) UIFont *repeatFont;
+@property (nonatomic, readonly, retain) UILabel *repeatLabel;
+@property (nonatomic, copy) NSString *repeatText;
+@property (nonatomic, readonly, retain) UILabel *secondaryDesignatorLabel;
+@property (nonatomic) long long style;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) DigitalClockLabel *timeLabel;
 
 - (void)dateLabel:(id)arg1 timeDesignatorDidChange:(id)arg2;
 - (void)dealloc;

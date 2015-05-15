@@ -10,8 +10,8 @@
     unsigned long long _stationCount;
 }
 
-@property(assign,readwrite) bool shouldGroupResponses;
-@property(assign,readwrite) unsigned long long stationCount;
+@property (nonatomic) bool shouldGroupResponses;
+@property (nonatomic) unsigned long long stationCount;
 
 - (void).cxx_destruct;
 - (id)_newRecentStationsURLRequestPropertiesWithBaseURL:(id)arg1;

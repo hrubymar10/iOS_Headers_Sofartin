@@ -12,9 +12,9 @@
     long long _serviceType;
 }
 
-@property(assign,retain) NSArray * activeAccounts;
-@property(assign,retain) IMServiceImpl * service;
-@property(assign,readwrite) long long serviceType;
+@property (nonatomic, readonly, retain) NSArray *activeAccounts;
+@property (nonatomic, retain) IMServiceImpl *service;
+@property (nonatomic) long long serviceType;
 
 - (id)_activeAccounts;
 - (void)_handleAccountNotification:(id)arg1;

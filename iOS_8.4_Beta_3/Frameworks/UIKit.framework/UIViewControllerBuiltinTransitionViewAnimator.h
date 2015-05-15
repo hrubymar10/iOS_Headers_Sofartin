@@ -11,15 +11,15 @@
     <UIViewControllerContextTransitioning> *_transitionContext;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) UIView * fromView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool removeFromView;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) UIView * toView;
-@property(assign,readwrite) int transition;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) id delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) UIView *fromView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool removeFromView;
+@property (readonly) Class superclass;
+@property (nonatomic) UIView *toView;
+@property (nonatomic) int transition;
 
 - (struct CGPoint { double x1; double x2; })_adjustOrigin:(struct CGPoint { double x1; double x2; })arg1 givenOtherOrigin:(struct CGPoint { double x1; double x2; })arg2 forTransition:(int)arg3;
 - (void)_prepareKeyboardForTransition:(int)arg1 fromView:(id)arg2;

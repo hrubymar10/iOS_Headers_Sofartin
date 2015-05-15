@@ -11,7 +11,7 @@
     SKUIFacebookLikeStatus *_likeStatus;
 }
 
-@property(assign,readonly) SKUIFacebookPageComponent * pageComponent;
+@property (nonatomic, readonly) SKUIFacebookPageComponent *pageComponent;
 
 - (void).cxx_destruct;
 - (id)_accountStore;

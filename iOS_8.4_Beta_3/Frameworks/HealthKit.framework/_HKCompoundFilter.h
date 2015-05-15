@@ -7,8 +7,8 @@
     NSArray *_subfilters;
 }
 
-@property(assign,readonly) unsigned long long compoundType;
-@property(assign,readonly) NSArray * subfilters;
+@property (nonatomic, readonly) unsigned long long compoundType;
+@property (nonatomic, readonly) NSArray *subfilters;
 
 + (id)filterWithSubfilters:(id)arg1 compoundType:(unsigned long long)arg2;
 + (bool)supportsSecureCoding;

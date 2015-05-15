@@ -10,15 +10,15 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,readonly) bool hasLanguage;
-@property(assign,readonly) bool hasLocationDisplayString;
-@property(assign,readonly) bool hasMapRegion;
-@property(assign,readonly) bool hasQuery;
-@property(assign,retain) NSString * language;
-@property(assign,retain) NSString * locationDisplayString;
-@property(assign,retain) GEOMapRegion * mapRegion;
-@property(assign,retain) NSString * query;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, readonly) bool hasLanguage;
+@property (nonatomic, readonly) bool hasLocationDisplayString;
+@property (nonatomic, readonly) bool hasMapRegion;
+@property (nonatomic, readonly) bool hasQuery;
+@property (nonatomic, retain) NSString *language;
+@property (nonatomic, retain) NSString *locationDisplayString;
+@property (nonatomic, retain) GEOMapRegion *mapRegion;
+@property (nonatomic, retain) NSString *query;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

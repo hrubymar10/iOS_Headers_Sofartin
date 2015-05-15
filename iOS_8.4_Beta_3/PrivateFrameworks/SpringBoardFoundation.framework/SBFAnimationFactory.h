@@ -6,12 +6,12 @@
     BSAnimationSettings *_settings;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) double delay;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double duration;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) double delay;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double duration;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (void)animateWithFactory:(id)arg1 actions:(id)arg2;
 + (void)animateWithFactory:(id)arg1 actions:(id)arg2 completion:(id)arg3;

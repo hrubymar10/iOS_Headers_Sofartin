@@ -7,7 +7,7 @@
     bool _useDarkText;
 }
 
-@property(assign,readwrite) unsigned long long mapType;
+@property (nonatomic) unsigned long long mapType;
 
 - (id)_attributesWithStroke:(bool)arg1;
 - (void)_prepareLabel;

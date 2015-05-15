@@ -12,13 +12,13 @@
     long long _userAffinityCount;
 }
 
-@property(assign,copy) UIColor * fillColor;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * imageName;
-@property(assign,copy) NSString * imageTreatment;
-@property(assign,copy) NSURL * imageURL;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) long long userAffinityCount;
+@property (nonatomic, copy) UIColor *fillColor;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSString *imageName;
+@property (nonatomic, copy) NSString *imageTreatment;
+@property (nonatomic, copy) NSURL *imageURL;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) long long userAffinityCount;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

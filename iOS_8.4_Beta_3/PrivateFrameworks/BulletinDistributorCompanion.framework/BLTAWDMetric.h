@@ -7,7 +7,7 @@
     AWDMetricContainer *_metricContainer;
 }
 
-@property(assign,retain) id metric;
+@property (nonatomic, readonly, retain) id metric;
 
 - (void).cxx_destruct;
 - (id)initWithMetricID:(unsigned int)arg1 class:(Class)arg2;

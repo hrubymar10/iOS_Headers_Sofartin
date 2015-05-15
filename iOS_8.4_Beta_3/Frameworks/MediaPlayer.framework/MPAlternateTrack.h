@@ -10,11 +10,11 @@
     AVMediaSelectionOption *_option;
 }
 
-@property(assign,readonly) NSString * canonicalLanguageIdentifier;
-@property(assign,retain) NSString * displayName;
-@property(assign,readonly) bool isDVS;
-@property(assign,readonly) bool isMainProgram;
-@property(assign,readonly) AVMediaSelectionOption * option;
+@property (nonatomic, readonly) NSString *canonicalLanguageIdentifier;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, readonly) bool isDVS;
+@property (nonatomic, readonly) bool isMainProgram;
+@property (nonatomic, readonly) AVMediaSelectionOption *option;
 
 + (id)threeCharCodesForEncodedISO639_2_T:(id)arg1;
 

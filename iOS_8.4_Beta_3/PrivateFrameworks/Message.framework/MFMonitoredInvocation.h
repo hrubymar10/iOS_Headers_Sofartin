@@ -8,8 +8,8 @@
     bool _shouldLogInvocation;
 }
 
-@property(assign,readwrite) bool isLowPriority;
-@property(assign,readonly) MFActivityMonitor * monitor;
+@property (nonatomic) bool isLowPriority;
+@property (nonatomic, readonly) MFActivityMonitor *monitor;
 
 + (id)invocationWithMethodSignature:(id)arg1;
 + (id)invocationWithSelector:(SEL)arg1 target:(id)arg2 object1:(id)arg3 object2:(id)arg4 taskName:(id)arg5 priority:(int)arg6 canBeCancelled:(bool)arg7;

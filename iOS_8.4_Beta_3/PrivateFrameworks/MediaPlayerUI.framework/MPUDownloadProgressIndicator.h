@@ -17,9 +17,9 @@
     float _value;
 }
 
-@property(assign,readwrite) bool canCancel;
-@property(assign,readonly) long long style;
-@property(assign,readwrite) float value;
+@property (nonatomic) bool canCancel;
+@property (nonatomic, readonly) long long style;
+@property (nonatomic) float value;
 
 + (void)_drawModernGradientInRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 + (bool)_isStyleModernShimmer:(long long)arg1;

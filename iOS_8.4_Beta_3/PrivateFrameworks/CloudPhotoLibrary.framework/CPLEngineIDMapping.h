@@ -4,11 +4,11 @@
 
 @interface CPLEngineIDMapping : CPLEngineStorage <CPLAbstractObject>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (readonly) Class superclass;
 
 - (bool)addCloudIdentifier:(id)arg1 forLocalIdentifier:(id)arg2 isFinal:(bool)arg3 error:(id*)arg4;
 - (id)cloudIdentifierForLocalIdentifier:(id)arg1 isFinal:(bool*)arg2;

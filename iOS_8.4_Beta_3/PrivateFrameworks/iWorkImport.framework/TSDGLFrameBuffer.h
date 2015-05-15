@@ -24,12 +24,12 @@
     NSArray *_textureLookupInfosByAttachment;
 }
 
-@property(assign,readonly) unsigned int currentGLTexture;
-@property(assign,readonly) NSString * currentGLTextureName;
-@property(assign,readonly) bool isBound;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) bool shouldDeleteTexturesOnTeardown;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) unsigned int currentGLTexture;
+@property (nonatomic, readonly) NSString *currentGLTextureName;
+@property (nonatomic, readonly) bool isBound;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) bool shouldDeleteTexturesOnTeardown;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
 
 + (int)currentGLFramebuffer;
 + (int)currentGLFramebufferWithBindingOption:(long long)arg1;

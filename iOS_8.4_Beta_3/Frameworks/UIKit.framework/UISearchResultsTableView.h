@@ -8,8 +8,8 @@
     UIView *_topShadowView;
 }
 
-@property(getter=_topShadowView,setter=_setTopShadowView:,assign,retain) UIView * _topShadowView;
-@property(assign,readwrite) UISearchDisplayController * controller;
+@property (getter=_topShadowView, setter=_setTopShadowView:, nonatomic, retain) UIView *_topShadowView;
+@property (nonatomic) UISearchDisplayController *controller;
 
 - (void)_numberOfRowsDidChange;
 - (double)_offsetForNoResultsMessage;

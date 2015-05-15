@@ -4,7 +4,7 @@
 
 @interface SASportsAthleteSnippet : SASportsSnippet
 
-@property(assign,copy) NSArray * athletes;
+@property (nonatomic, copy) NSArray *athletes;
 
 + (id)athleteSnippet;
 + (id)athleteSnippetWithDictionary:(id)arg1 context:(id)arg2;

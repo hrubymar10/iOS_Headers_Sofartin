@@ -10,10 +10,10 @@
     CKDPRecordZoneIdentifier *_zoneIdentifier;
 }
 
-@property(assign,readwrite) int changeType;
-@property(assign,readwrite) bool hasChangeType;
-@property(assign,readonly) bool hasZoneIdentifier;
-@property(assign,retain) CKDPRecordZoneIdentifier * zoneIdentifier;
+@property (nonatomic) int changeType;
+@property (nonatomic) bool hasChangeType;
+@property (nonatomic, readonly) bool hasZoneIdentifier;
+@property (nonatomic, retain) CKDPRecordZoneIdentifier *zoneIdentifier;
 
 - (void).cxx_destruct;
 - (int)changeType;

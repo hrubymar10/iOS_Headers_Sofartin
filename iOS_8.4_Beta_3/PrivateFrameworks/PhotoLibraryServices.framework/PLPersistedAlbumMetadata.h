@@ -19,20 +19,20 @@
     NSString *_uuid;
 }
 
-@property(assign,readwrite) bool allowsOverwite;
-@property(assign,retain) NSMutableOrderedSet * assetUUIDs;
-@property(assign,retain) NSString * cloudGUID;
-@property(assign,retain) NSString * customKeyAssetUUID;
-@property(assign,readwrite) bool customSortAscending;
-@property(assign,readwrite) int customSortKey;
-@property(assign,retain) PLGenericAlbum * genericAlbum;
-@property(getter=isInTrash,assign,readwrite) bool inTrash;
-@property(assign,readonly) bool isFolder;
-@property(assign,retain) NSNumber * kind;
-@property(assign,retain) NSURL * metadataURL;
-@property(getter=isPinned,assign,readwrite) bool pinned;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSString * uuid;
+@property (nonatomic) bool allowsOverwite;
+@property (nonatomic, retain) NSMutableOrderedSet *assetUUIDs;
+@property (nonatomic, retain) NSString *cloudGUID;
+@property (nonatomic, retain) NSString *customKeyAssetUUID;
+@property (nonatomic) bool customSortAscending;
+@property (nonatomic) int customSortKey;
+@property (nonatomic, retain) PLGenericAlbum *genericAlbum;
+@property (getter=isInTrash, nonatomic) bool inTrash;
+@property (nonatomic, readonly) bool isFolder;
+@property (nonatomic, retain) NSNumber *kind;
+@property (nonatomic, retain) NSURL *metadataURL;
+@property (getter=isPinned, nonatomic) bool pinned;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *uuid;
 
 + (bool)_isAlbumMetadataExtension:(id)arg1;
 + (bool)_isFolderMetadataExtension:(id)arg1;

@@ -8,9 +8,9 @@
     NSString *_name;
 }
 
-@property(assign,readonly) NSArray * columns;
-@property(assign,readonly) NSArray * foreignKeyConstraints;
-@property(assign,readonly) NSString * name;
+@property (nonatomic, readonly) NSArray *columns;
+@property (nonatomic, readonly) NSArray *foreignKeyConstraints;
+@property (nonatomic, readonly) NSString *name;
 
 - (void).cxx_destruct;
 - (id)_copyWithZone:(struct _NSZone { }*)arg1 concreteClass:(Class)arg2;

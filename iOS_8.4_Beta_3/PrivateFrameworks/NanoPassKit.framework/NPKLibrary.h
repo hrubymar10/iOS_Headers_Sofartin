@@ -24,27 +24,27 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool disableCaching;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool initialLoadComplete;
-@property(assign,retain) NSArray * lastSeenRelevantPassTuples;
-@property(assign,readwrite) bool needsRelevancyInformation;
-@property(assign,readwrite) bool needsUpdatePassDescriptions;
-@property(assign,readonly) NSArray * nonPaymentPassDescriptions;
-@property(assign,retain) NSMutableDictionary * passCache;
-@property(assign,retain) NSArray * passDescriptions;
-@property(assign,retain) NSTimer * passLibraryChangedCoalescingTimer;
-@property(assign,retain) NSObject<OS_dispatch_queue> * passesQueue;
-@property(assign,readonly) NSArray * paymentPassDescriptions;
-@property(assign,readonly) NSArray * relevantPassTuples;
-@property(assign,readwrite) bool serverHasPasses;
-@property(assign,readwrite) bool serverHasPotentiallyRelevantPasses;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool updatingPassDescriptions;
-@property(assign,retain) NSMutableArray * workToPerformAfterInitialLoad;
-@property(assign,readonly) NSXPCConnection * xpcConnection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool disableCaching;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool initialLoadComplete;
+@property (nonatomic, retain) NSArray *lastSeenRelevantPassTuples;
+@property (nonatomic) bool needsRelevancyInformation;
+@property (nonatomic) bool needsUpdatePassDescriptions;
+@property (nonatomic, readonly) NSArray *nonPaymentPassDescriptions;
+@property (nonatomic, retain) NSMutableDictionary *passCache;
+@property (nonatomic, retain) NSArray *passDescriptions;
+@property (nonatomic, retain) NSTimer *passLibraryChangedCoalescingTimer;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *passesQueue;
+@property (nonatomic, readonly) NSArray *paymentPassDescriptions;
+@property (nonatomic, readonly) NSArray *relevantPassTuples;
+@property bool serverHasPasses;
+@property bool serverHasPotentiallyRelevantPasses;
+@property (readonly) Class superclass;
+@property (nonatomic) bool updatingPassDescriptions;
+@property (nonatomic, retain) NSMutableArray *workToPerformAfterInitialLoad;
+@property (readonly) NSXPCConnection *xpcConnection;
 
 + (id)sharedInstance;
 

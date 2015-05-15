@@ -9,21 +9,21 @@
     bool _watchingLibrary;
 }
 
-@property(assign,readonly) NSArray * collections;
-@property(assign,readonly) NSString * comparisonTypeContains;
-@property(assign,readonly) NSString * comparisonTypeEquals;
-@property(assign,copy) id filterPredicates;
-@property(assign,copy) NSString * groupingType;
-@property(assign,readonly) NSString * groupingTypeAlbum;
-@property(assign,readonly) NSString * groupingTypeAlbumArtist;
-@property(assign,readonly) NSString * groupingTypeArtist;
-@property(assign,readonly) NSString * groupingTypeComposer;
-@property(assign,readonly) NSString * groupingTypeGenre;
-@property(assign,readonly) NSString * groupingTypePlaylist;
-@property(assign,readonly) NSString * groupingTypePodcastTitle;
-@property(assign,readonly) NSString * groupingTypeTitle;
-@property(assign,readonly) NSArray * items;
-@property(assign,readonly) MPMediaQuery * nativeQuery;
+@property (readonly) NSArray *collections;
+@property (readonly) NSString *comparisonTypeContains;
+@property (readonly) NSString *comparisonTypeEquals;
+@property (copy) id filterPredicates;
+@property (copy) NSString *groupingType;
+@property (readonly) NSString *groupingTypeAlbum;
+@property (readonly) NSString *groupingTypeAlbumArtist;
+@property (readonly) NSString *groupingTypeArtist;
+@property (readonly) NSString *groupingTypeComposer;
+@property (readonly) NSString *groupingTypeGenre;
+@property (readonly) NSString *groupingTypePlaylist;
+@property (readonly) NSString *groupingTypePodcastTitle;
+@property (readonly) NSString *groupingTypeTitle;
+@property (readonly) NSArray *items;
+@property (nonatomic, readonly) MPMediaQuery *nativeQuery;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

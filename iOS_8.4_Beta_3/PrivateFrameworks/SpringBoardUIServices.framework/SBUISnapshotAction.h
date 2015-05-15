@@ -4,7 +4,7 @@
 
 @interface SBUISnapshotAction : BSAction
 
-@property(assign,readonly) SBUISnapshotContext * context;
+@property (nonatomic, readonly) SBUISnapshotContext *context;
 
 - (id)context;
 - (id)initWithContext:(id)arg1 handler:(id)arg2;

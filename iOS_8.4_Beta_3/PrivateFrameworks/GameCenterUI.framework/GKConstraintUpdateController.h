@@ -6,7 +6,7 @@
     NSPointerArray *_constraintsToUpdate;
 }
 
-@property(assign,retain) NSPointerArray * constraintsToUpdate;
+@property (nonatomic, retain) NSPointerArray *constraintsToUpdate;
 
 + (id)sharedController;
 

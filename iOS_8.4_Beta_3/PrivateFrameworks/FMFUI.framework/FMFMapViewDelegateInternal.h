@@ -8,13 +8,13 @@
     bool _respondingToUserTouch;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <FMFMapViewDelegateInternalDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) FMFWildcardGestureRecognizer * gr;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool respondingToUserTouch;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <FMFMapViewDelegateInternalDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) FMFWildcardGestureRecognizer *gr;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool respondingToUserTouch;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_moveCenterByOffset:(struct CGPoint { double x1; double x2; })arg1 from:(struct { double x1; double x2; })arg2 mapView:(id)arg3;

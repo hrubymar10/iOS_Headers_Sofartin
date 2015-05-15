@@ -8,9 +8,9 @@
     bool _reverseLocationDataIsValid;
 }
 
-@property(assign,readonly) PHAsset * asset;
-@property(assign,readonly) NSData * reverseLocationData;
-@property(assign,readonly) bool reverseLocationDataIsValid;
+@property (nonatomic, readonly) PHAsset *asset;
+@property (nonatomic, readonly) NSData *reverseLocationData;
+@property (nonatomic, readonly) bool reverseLocationDataIsValid;
 
 - (void).cxx_destruct;
 - (id)asset;

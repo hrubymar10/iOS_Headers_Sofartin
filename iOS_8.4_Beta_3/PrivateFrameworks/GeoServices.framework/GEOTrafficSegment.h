@@ -13,12 +13,12 @@
     int _width;
 }
 
-@property(assign,readwrite) bool hasSpeed;
-@property(assign,readwrite) bool hasWidth;
-@property(assign,readwrite) int speed;
-@property(assign,readwrite) int vertexCount;
-@property(assign,readwrite) int vertexOffset;
-@property(assign,readwrite) int width;
+@property (nonatomic) bool hasSpeed;
+@property (nonatomic) bool hasWidth;
+@property (nonatomic) int speed;
+@property (nonatomic) int vertexCount;
+@property (nonatomic) int vertexOffset;
+@property (nonatomic) int width;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

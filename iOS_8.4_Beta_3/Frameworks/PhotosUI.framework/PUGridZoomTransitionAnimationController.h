@@ -6,7 +6,7 @@
     <UIViewControllerContextTransitioning> *_transitionContext;
 }
 
-@property(assign,readonly) PUZoomableGridTransition * gridTransitionInfo;
+@property (nonatomic, readonly) PUZoomableGridTransition *gridTransitionInfo;
 
 - (void).cxx_destruct;
 - (void)animateTransition:(id)arg1;

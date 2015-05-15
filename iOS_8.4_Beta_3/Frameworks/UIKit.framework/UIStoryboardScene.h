@@ -6,7 +6,7 @@
     UIViewController *sceneViewController;
 }
 
-@property(assign,retain) UIViewController * sceneViewController;
+@property (nonatomic, retain) UIViewController *sceneViewController;
 
 - (void)dealloc;
 - (id)sceneViewController;

@@ -4,10 +4,10 @@
 
 @interface CTCellularPlanSubscriptionAccountStatusParser : NSObject <CTCellularPlanValidating>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (bool)validate:(id)arg1;
 + (bool)validate:(id)arg1 parseTo:(int*)arg2;

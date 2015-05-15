@@ -10,16 +10,16 @@
     NSString *_summary;
 }
 
-@property(assign,retain) NSURL * calendarURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CoreDAVTaskGroupDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableSet * invalidSharees;
-@property(assign,retain) NSSet * shareesToRemove;
-@property(assign,retain) NSSet * shareesToSet;
-@property(assign,retain) NSString * summary;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSURL *calendarURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CoreDAVTaskGroupDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableSet *invalidSharees;
+@property (nonatomic, retain) NSSet *shareesToRemove;
+@property (nonatomic, retain) NSSet *shareesToSet;
+@property (nonatomic, retain) NSString *summary;
+@property (readonly) Class superclass;
 
 - (id)calendarURL;
 - (void)dealloc;

@@ -6,7 +6,7 @@
     bool _isDisabled;
 }
 
-@property(assign,readwrite) bool isDisabled;
+@property (nonatomic) bool isDisabled;
 
 - (void)disable;
 - (bool)isDisabled;

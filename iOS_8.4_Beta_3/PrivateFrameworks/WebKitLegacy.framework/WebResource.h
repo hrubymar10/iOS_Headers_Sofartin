@@ -6,11 +6,11 @@
     WebResourcePrivate *_private;
 }
 
-@property(assign,copy) NSString * MIMEType;
-@property(assign,readonly) NSURL * URL;
-@property(assign,copy) NSData * data;
-@property(assign,copy) NSString * frameName;
-@property(assign,copy) NSString * textEncodingName;
+@property (nonatomic, readonly, copy) NSString *MIMEType;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly, copy) NSData *data;
+@property (nonatomic, readonly, copy) NSString *frameName;
+@property (nonatomic, readonly, copy) NSString *textEncodingName;
 
 + (id)bundleForClass;
 

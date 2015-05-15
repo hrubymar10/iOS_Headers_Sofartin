@@ -7,11 +7,11 @@
     TransactionManager *_transactionManager;
 }
 
-@property(assign,readonly) CallHistoryDBClientHandle * dbHandle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) CallHistoryDBClientHandle *dbHandle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)addUpdateTransactions:(id)arg1;

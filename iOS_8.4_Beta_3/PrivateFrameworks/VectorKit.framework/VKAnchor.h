@@ -9,13 +9,13 @@
     } _anchor;
 }
 
-@property(assign,readwrite) struct { double x1; double x2; } coordinate;
-@property(assign,readwrite) <VKAnchorDelegate> * delegate;
-@property(assign,readonly) bool followsTerrain;
-@property(assign,readonly) bool isGeocentric;
-@property(assign,readonly) bool isMercator;
-@property(assign,readonly) struct VKPoint { double x1; double x2; double x3; } mercatorPoint;
-@property(assign,readonly) struct VKPoint { double x1; double x2; double x3; } worldPoint;
+@property (nonatomic) struct { double x1; double x2; } coordinate;
+@property (nonatomic) <VKAnchorDelegate> *delegate;
+@property (nonatomic, readonly) bool followsTerrain;
+@property (nonatomic, readonly) bool isGeocentric;
+@property (nonatomic, readonly) bool isMercator;
+@property (nonatomic, readonly) struct VKPoint { double x1; double x2; double x3; } mercatorPoint;
+@property (nonatomic, readonly) struct VKPoint { double x1; double x2; double x3; } worldPoint;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

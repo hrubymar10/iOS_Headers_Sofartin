@@ -7,21 +7,21 @@
     TSWPStorage *_parentStorage;
 }
 
-@property(assign,readonly) int annotationDisplayStringType;
-@property(assign,readonly) int annotationType;
-@property(assign,readonly) TSKAnnotationAuthor * author;
-@property(assign,readonly) NSString * changeTrackingContentFormatString;
-@property(assign,readonly) NSString * changeTrackingContentString;
-@property(assign,readonly) NSString * changeTrackingTitleString;
-@property(assign,retain) TSDCommentStorage * commentStorage;
-@property(assign,readonly) NSDate * date;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <TSKModel> * hostingModel;
-@property(assign,retain) TSWPStorage * parentStorage;
-@property(assign,copy) TSDCommentStorage * storage;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) int annotationDisplayStringType;
+@property (nonatomic, readonly) int annotationType;
+@property (nonatomic, readonly) TSKAnnotationAuthor *author;
+@property (nonatomic, readonly) NSString *changeTrackingContentFormatString;
+@property (nonatomic, readonly) NSString *changeTrackingContentString;
+@property (nonatomic, readonly) NSString *changeTrackingTitleString;
+@property (nonatomic, retain) TSDCommentStorage *commentStorage;
+@property (nonatomic, readonly) NSDate *date;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <TSKModel> *hostingModel;
+@property (nonatomic, retain) TSWPStorage *parentStorage;
+@property (nonatomic, copy) TSDCommentStorage *storage;
+@property (readonly) Class superclass;
 
 + (id)defaultHighlightWithContext:(id)arg1 includeCommentWithAuthor:(id)arg2;
 

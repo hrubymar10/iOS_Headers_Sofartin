@@ -4,11 +4,11 @@
 
 @interface TDColorName : NSManagedObject
 
-@property(assign,retain) NSSet * colorDefinitions;
-@property(assign,retain) NSString * colorDescription;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSString * illustrationURL;
-@property(assign,retain) NSNumber * isExcludedFromFilter;
-@property(assign,retain) NSString * selector;
+@property (nonatomic, retain) NSSet *colorDefinitions;
+@property (nonatomic, retain) NSString *colorDescription;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSString *illustrationURL;
+@property (nonatomic, retain) NSNumber *isExcludedFromFilter;
+@property (nonatomic, retain) NSString *selector;
 
 @end

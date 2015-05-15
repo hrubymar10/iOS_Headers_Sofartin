@@ -10,10 +10,10 @@
     double _valueInCanonicalUnit;
 }
 
-@property(assign,readonly) bool hasSample;
-@property(assign,readwrite) bool hasValueInCanonicalUnit;
-@property(assign,retain) HDCodableSample * sample;
-@property(assign,readwrite) double valueInCanonicalUnit;
+@property (nonatomic, readonly) bool hasSample;
+@property (nonatomic) bool hasValueInCanonicalUnit;
+@property (nonatomic, retain) HDCodableSample *sample;
+@property (nonatomic) double valueInCanonicalUnit;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

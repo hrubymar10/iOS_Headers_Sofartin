@@ -6,7 +6,7 @@
     NSString *_previousScheduleTag;
 }
 
-@property(assign,retain) NSString * previousScheduleTag;
+@property (nonatomic, retain) NSString *previousScheduleTag;
 
 - (id)additionalHeaderValues;
 - (void)dealloc;

@@ -4,7 +4,7 @@
 
 @interface SALocalSearchActionableMapItem : SALocalSearchMapItem
 
-@property(assign,copy) NSArray * commands;
+@property (nonatomic, copy) NSArray *commands;
 
 + (id)actionableMapItem;
 + (id)actionableMapItemWithDictionary:(id)arg1 context:(id)arg2;

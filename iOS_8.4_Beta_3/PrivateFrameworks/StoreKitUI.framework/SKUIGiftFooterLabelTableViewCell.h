@@ -6,7 +6,7 @@
     UILabel *_footerLabel;
 }
 
-@property(assign,copy) NSString * footerLabel;
+@property (nonatomic, copy) NSString *footerLabel;
 
 - (void).cxx_destruct;
 - (id)footerLabel;

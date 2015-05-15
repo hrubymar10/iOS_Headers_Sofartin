@@ -7,8 +7,8 @@
     long long _type;
 }
 
-@property(assign,readonly) NSDictionary * options;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) NSDictionary *options;
+@property (nonatomic, readonly) long long type;
 
 + (id)actionTypeToString:(long long)arg1;
 + (bool)supportsSecureCoding;

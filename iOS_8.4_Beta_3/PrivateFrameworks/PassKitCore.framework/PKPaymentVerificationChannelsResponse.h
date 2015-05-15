@@ -6,7 +6,7 @@
     NSArray *_verificationChannels;
 }
 
-@property(assign,retain) NSArray * verificationChannels;
+@property (nonatomic, retain) NSArray *verificationChannels;
 
 + (id)responseWithData:(id)arg1 forPass:(id)arg2;
 

@@ -15,16 +15,16 @@
     NSString *_savedIdentifier;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,readonly) bool fullScreen;
-@property(assign,readonly) NSNumber * fullScreenNum;
-@property(assign,retain) NSData * iconData;
-@property(assign,readonly) bool isRemovable;
-@property(assign,readonly) NSNumber * isRemovableNum;
-@property(assign,retain) NSString * label;
-@property(assign,readonly) bool precomposed;
-@property(assign,readonly) NSNumber * precomposedNum;
-@property(assign,retain) NSString * savedIdentifier;
+@property (nonatomic, readonly, retain) NSURL *URL;
+@property (nonatomic, readonly) bool fullScreen;
+@property (nonatomic, readonly) NSNumber *fullScreenNum;
+@property (nonatomic, readonly, retain) NSData *iconData;
+@property (nonatomic, readonly) bool isRemovable;
+@property (nonatomic, readonly) NSNumber *isRemovableNum;
+@property (nonatomic, readonly, retain) NSString *label;
+@property (nonatomic, readonly) bool precomposed;
+@property (nonatomic, readonly) NSNumber *precomposedNum;
+@property (nonatomic, retain) NSString *savedIdentifier;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

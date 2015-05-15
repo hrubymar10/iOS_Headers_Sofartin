@@ -8,7 +8,7 @@
     unsigned long long mStride;
 }
 
-@property(assign,readonly) unsigned long long stride;
+@property (nonatomic, readonly) unsigned long long stride;
 
 - (struct CGPoint { double x1; double x2; })axisAnchorForPosition:(int)arg1 degrees:(float)arg2 area:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg3 unrotatedSize:(struct CGSize { double x1; double x2; })arg4 unitSpaceValue:(double)arg5;
 - (id)axisLayoutItem;

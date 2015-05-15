@@ -4,7 +4,7 @@
 
 @interface SABackgroundUpdateRequest : SAStartRequest
 
-@property(assign,retain) <SAAceSerializable> * attachment;
+@property (nonatomic, retain) <SAAceSerializable> *attachment;
 
 + (id)backgroundUpdateRequest;
 + (id)backgroundUpdateRequestWithDictionary:(id)arg1 context:(id)arg2;

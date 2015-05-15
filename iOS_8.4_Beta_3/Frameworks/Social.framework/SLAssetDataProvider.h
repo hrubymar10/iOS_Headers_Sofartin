@@ -13,7 +13,7 @@
     int _numRequestedImages;
 }
 
-@property(assign,copy) id fetchCompletion;
+@property (copy) id fetchCompletion;
 
 - (void).cxx_destruct;
 - (void)_assetFetchFailedWithError:(id)arg1;

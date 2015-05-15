@@ -11,12 +11,12 @@
     NSString *_username;
 }
 
-@property(assign,readonly) NSString * address;
-@property(assign,readwrite) bool authenticationRequired;
-@property(assign,copy) NSString * password;
-@property(assign,readonly) int port;
-@property(assign,readonly) long long type;
-@property(assign,copy) NSString * username;
+@property (readonly) NSString *address;
+@property bool authenticationRequired;
+@property (copy) NSString *password;
+@property (readonly) int port;
+@property (readonly) long long type;
+@property (copy) NSString *username;
 
 + (bool)supportsSecureCoding;
 

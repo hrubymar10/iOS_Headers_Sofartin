@@ -17,19 +17,19 @@
     unsigned short _versionNeededToExtract;
 }
 
-@property(assign,readwrite) unsigned int compressedSize;
-@property(assign,readwrite) unsigned short compressionMethod;
-@property(assign,readwrite) unsigned int crc32;
-@property(assign,retain) NSData * extraFieldData;
-@property(assign,readonly) unsigned short extraFieldLength;
-@property(assign,retain) NSString * filename;
-@property(assign,readonly) unsigned short filenameLength;
-@property(assign,readwrite) unsigned short generalPurposeBit;
-@property(assign,readwrite) unsigned short lastModDate;
-@property(assign,readwrite) unsigned short lastModTime;
-@property(assign,readonly) unsigned int totalHeaderLength;
-@property(assign,readwrite) unsigned int uncompressedSize;
-@property(assign,readwrite) unsigned short versionNeededToExtract;
+@property (nonatomic) unsigned int compressedSize;
+@property (nonatomic) unsigned short compressionMethod;
+@property (nonatomic) unsigned int crc32;
+@property (nonatomic, retain) NSData *extraFieldData;
+@property (nonatomic, readonly) unsigned short extraFieldLength;
+@property (nonatomic, retain) NSString *filename;
+@property (nonatomic, readonly) unsigned short filenameLength;
+@property (nonatomic) unsigned short generalPurposeBit;
+@property (nonatomic) unsigned short lastModDate;
+@property (nonatomic) unsigned short lastModTime;
+@property (nonatomic, readonly) unsigned int totalHeaderLength;
+@property (nonatomic) unsigned int uncompressedSize;
+@property (nonatomic) unsigned short versionNeededToExtract;
 
 - (void)appendToData:(id)arg1;
 - (unsigned int)compressedSize;

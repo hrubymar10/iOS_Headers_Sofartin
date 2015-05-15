@@ -42,18 +42,18 @@
     } _shadowViewUniformData;
 }
 
-@property(assign,readwrite) float alpha;
-@property(assign,retain) VKAnimation * animation;
-@property(assign,retain) VKAnimation * animationForPitch;
-@property(assign,readonly) struct CullingGridWithHeight { float x1[16]; } cullingGrid;
-@property(assign,readonly) struct FogInfo { struct shared_ptr<ggl::Fog::FogUniformData> { struct FogUniformData {} *x_1_1_1; struct __shared_weak_count {} *x_1_1_2; } x1; }* fogInfo;
-@property(assign,readonly) double maxHeight;
-@property(assign,readonly) float maxLayeringHeight;
-@property(assign,readonly) float minLayeringHeight;
-@property(assign,readonly) VK3DObjectSubTile * objectSubTile;
-@property(assign,readwrite) float scale;
-@property(assign,readonly) struct Texture2D { int (**x1)(); struct ResourceManager {} *x2; struct RenderResource {} *x3; int x4; int x5; unsigned int x6; int x7; int x8; int x9; float x10; struct TextureDataAbstract {} *x11; bool x12; bool x13; bool x14; unsigned int x15; unsigned int x16; int x17; int x18; }* shadowTexture;
-@property(assign,readonly) struct shared_ptr<ggl::Tile::ViewUniformData> { struct ViewUniformData {} *x1; struct __shared_weak_count {} *x2; } shadowViewUniformData;
+@property (nonatomic) float alpha;
+@property (nonatomic, retain) VKAnimation *animation;
+@property (nonatomic, retain) VKAnimation *animationForPitch;
+@property (nonatomic, readonly) struct CullingGridWithHeight { float x1[16]; } cullingGrid;
+@property (nonatomic, readonly) struct FogInfo { struct shared_ptr<ggl::Fog::FogUniformData> { struct FogUniformData {} *x_1_1_1; struct __shared_weak_count {} *x_1_1_2; } x1; }*fogInfo;
+@property (nonatomic, readonly) double maxHeight;
+@property (nonatomic, readonly) float maxLayeringHeight;
+@property (nonatomic, readonly) float minLayeringHeight;
+@property (nonatomic, readonly) VK3DObjectSubTile *objectSubTile;
+@property (nonatomic) float scale;
+@property (nonatomic, readonly) struct Texture2D { int (**x1)(); struct ResourceManager {} *x2; struct RenderResource {} *x3; int x4; int x5; unsigned int x6; int x7; int x8; int x9; float x10; struct TextureDataAbstract {} *x11; bool x12; bool x13; bool x14; unsigned int x15; unsigned int x16; int x17; int x18; }*shadowTexture;
+@property (nonatomic, readonly) struct shared_ptr<ggl::Tile::ViewUniformData> { struct ViewUniformData {} *x1; struct __shared_weak_count {} *x2; } shadowViewUniformData;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

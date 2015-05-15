@@ -7,9 +7,9 @@
     NSString *_languageCode;
 }
 
-@property(assign,retain) NSMutableArray * announcements;
-@property(assign,readonly) bool hasLanguageCode;
-@property(assign,retain) NSString * languageCode;
+@property (nonatomic, retain) NSMutableArray *announcements;
+@property (nonatomic, readonly) bool hasLanguageCode;
+@property (nonatomic, retain) NSString *languageCode;
 
 - (void)addAnnouncement:(id)arg1;
 - (id)announcementAtIndex:(unsigned long long)arg1;

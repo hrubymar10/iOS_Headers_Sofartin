@@ -6,7 +6,7 @@
     ML3MusicLibrary *_currentLibrary;
 }
 
-@property(assign,retain) ML3MusicLibrary * currentLibrary;
+@property (nonatomic, retain) ML3MusicLibrary *currentLibrary;
 
 + (id)sharedManager;
 

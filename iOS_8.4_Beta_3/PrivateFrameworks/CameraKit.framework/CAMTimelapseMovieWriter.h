@@ -23,24 +23,24 @@
     AVAssetWriter *__writer;
 }
 
-@property(assign,readonly) NSMutableDictionary * _availableImageData;
-@property(assign,readonly) NSMutableDictionary * _availablePixelBuffers;
-@property(assign,copy) id _completion;
-@property(assign,readonly) long long _currentOutputFrameIndex;
-@property(assign,readonly) NSArray * _frameFilePaths;
-@property(assign,readonly) long long _framesPerSecond;
-@property(assign,readonly) NSOperationQueue * _imageDecodeQueue;
-@property(assign,readonly) NSOperationQueue * _imageReadQueue;
-@property(assign,readonly) NSMutableSet * _inFlightReadFrameIndexes;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * _movieWritingQueue;
-@property(assign,readonly) long long _nextReadFileIndex;
-@property(assign,readonly) long long _nextWriteFileIndex;
-@property(assign,readonly) AVAssetWriterInputPixelBufferAdaptor * _pixelBufferAdaptor;
-@property(assign,readonly) long long _residentImageDataCount;
-@property(assign,readonly) long long _residentPixelBufferCount;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * _synchronizationQueue;
-@property(assign,readonly) AVAssetWriterInput * _videoInput;
-@property(assign,readonly) AVAssetWriter * _writer;
+@property (nonatomic, readonly) NSMutableDictionary *_availableImageData;
+@property (nonatomic, readonly) NSMutableDictionary *_availablePixelBuffers;
+@property (nonatomic, readonly, copy) id _completion;
+@property (nonatomic, readonly) long long _currentOutputFrameIndex;
+@property (nonatomic, readonly) NSArray *_frameFilePaths;
+@property (nonatomic, readonly) long long _framesPerSecond;
+@property (nonatomic, readonly) NSOperationQueue *_imageDecodeQueue;
+@property (nonatomic, readonly) NSOperationQueue *_imageReadQueue;
+@property (nonatomic, readonly) NSMutableSet *_inFlightReadFrameIndexes;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *_movieWritingQueue;
+@property (nonatomic, readonly) long long _nextReadFileIndex;
+@property (nonatomic, readonly) long long _nextWriteFileIndex;
+@property (nonatomic, readonly) AVAssetWriterInputPixelBufferAdaptor *_pixelBufferAdaptor;
+@property (nonatomic, readonly) long long _residentImageDataCount;
+@property (nonatomic, readonly) long long _residentPixelBufferCount;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *_synchronizationQueue;
+@property (nonatomic, readonly) AVAssetWriterInput *_videoInput;
+@property (nonatomic, readonly) AVAssetWriter *_writer;
 
 - (void).cxx_destruct;
 - (bool)_appendPixelBuffer:(struct __CVBuffer { }*)arg1;

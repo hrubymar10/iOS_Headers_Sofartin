@@ -15,11 +15,11 @@
     <PUCollectionViewReorderDelegate> *_reorderDelegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <PUCollectionViewReorderDelegate> * reorderDelegate;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <PUCollectionViewReorderDelegate> *reorderDelegate;
+@property (readonly) Class superclass;
 
 + (id)_reuseKeyForSupplementaryViewOfKind:(id)arg1 withReuseIdentifier:(id)arg2;
 

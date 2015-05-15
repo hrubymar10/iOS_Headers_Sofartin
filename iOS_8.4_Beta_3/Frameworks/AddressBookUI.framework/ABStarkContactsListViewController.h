@@ -11,14 +11,14 @@
     <ABStarkContactsListViewControllerDelegate> *_peoplePickerDelegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) AVExternalDevice * externalDevice;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool limitedUI;
-@property(assign,retain) ABStarkNoContentBannerView * overlayView;
-@property(assign,readwrite) <ABStarkContactsListViewControllerDelegate> * peoplePickerDelegate;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) AVExternalDevice *externalDevice;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool limitedUI;
+@property (nonatomic, retain) ABStarkNoContentBannerView *overlayView;
+@property (nonatomic) <ABStarkContactsListViewControllerDelegate> *peoplePickerDelegate;
+@property (readonly) Class superclass;
 
 - (bool)abDataSource:(id)arg1 selectedPerson:(void*)arg2 atIndexPath:(id)arg3 withMemberCell:(id)arg4 animate:(bool)arg5;
 - (bool)abDataSource:(id)arg1 shouldAllowSelectingPersonWithRecordID:(int)arg2;

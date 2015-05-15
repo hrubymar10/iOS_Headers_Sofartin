@@ -8,9 +8,9 @@
     unsigned long long _mapDisplayStyle;
 }
 
-@property(assign,retain) MKAnnotationView * annotationView;
-@property(assign,readwrite) <MKAnnotationCalloutControllerDelegate> * delegate;
-@property(assign,readwrite) unsigned long long mapDisplayStyle;
+@property (nonatomic, retain) MKAnnotationView *annotationView;
+@property (nonatomic) <MKAnnotationCalloutControllerDelegate> *delegate;
+@property (nonatomic) unsigned long long mapDisplayStyle;
 
 - (void).cxx_destruct;
 - (void)_addAccessoryTargetForView:(id)arg1;

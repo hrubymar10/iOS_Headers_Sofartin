@@ -12,19 +12,19 @@
     UILongPressGestureRecognizer *_pressGesture;
 }
 
-@property(getter=_alwaysShowOnOffLabel,setter=_setAlwaysShowsOnOffLabel:,assign,readwrite) bool alwaysShowOnOffLabel;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double enabledAlpha;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * offImage;
-@property(getter=isOn,assign,readwrite) bool on;
-@property(getter=_onColor,setter=_setOnColor:,assign,retain) UIColor * onColor;
-@property(assign,retain) UIImage * onImage;
-@property(assign,retain) UIColor * onTintColor;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIColor * thumbTintColor;
-@property(assign,retain) UIColor * tintColor;
+@property (getter=_alwaysShowOnOffLabel, setter=_setAlwaysShowsOnOffLabel:, nonatomic) bool alwaysShowOnOffLabel;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double enabledAlpha;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *offImage;
+@property (getter=isOn, nonatomic) bool on;
+@property (getter=_onColor, setter=_setOnColor:, nonatomic, retain) UIColor *onColor;
+@property (nonatomic, retain) UIImage *onImage;
+@property (nonatomic, retain) UIColor *onTintColor;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIColor *thumbTintColor;
+@property (nonatomic, retain) UIColor *tintColor;
 
 + (Class)_internalViewClass;
 

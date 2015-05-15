@@ -20,26 +20,26 @@
     bool _shouldAuthenticateIfNecessary;
 }
 
-@property(assign,retain) SSAccount * account;
-@property(assign,retain) SBKStoreAuthenticationController * authenticationController;
-@property(assign,retain) SBKTaskAssertion * backgroundTaskAssertion;
-@property(assign,readwrite) long long conflictResolutionAttempts;
-@property(assign,retain) SBKTransaction * currentTransaction;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SBKTransactionControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * domain;
-@property(getter=isEnabled,assign,readonly) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isIdle,assign,readonly) bool idle;
-@property(assign,readwrite) bool isResolvingError;
-@property(assign,readwrite) id networkTypeObserver;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,retain) NSMutableArray * pendingTransactions;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) NSURL * requestURL;
-@property(assign,readwrite) bool shouldAuthenticateIfNecessary;
-@property(assign,readonly) Class superclass;
+@property (retain) SSAccount *account;
+@property (retain) SBKStoreAuthenticationController *authenticationController;
+@property (retain) SBKTaskAssertion *backgroundTaskAssertion;
+@property long long conflictResolutionAttempts;
+@property (nonatomic, retain) SBKTransaction *currentTransaction;
+@property (readonly, copy) NSString *debugDescription;
+@property <SBKTransactionControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *domain;
+@property (getter=isEnabled, readonly) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (getter=isIdle, readonly) bool idle;
+@property bool isResolvingError;
+@property id networkTypeObserver;
+@property (retain) NSOperationQueue *operationQueue;
+@property (retain) NSMutableArray *pendingTransactions;
+@property (retain) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) NSURL *requestURL;
+@property bool shouldAuthenticateIfNecessary;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_beginBackgroundTask;

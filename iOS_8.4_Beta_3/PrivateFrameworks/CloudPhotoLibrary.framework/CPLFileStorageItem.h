@@ -9,10 +9,10 @@
     bool _original;
 }
 
-@property(assign,readonly) CPLResourceIdentity * identity;
-@property(assign,readonly) NSDate * lastAccessDate;
-@property(getter=isMarkedForDelete,assign,readonly) bool markedForDelete;
-@property(getter=isOriginal,assign,readonly) bool original;
+@property (nonatomic, readonly) CPLResourceIdentity *identity;
+@property (nonatomic, readonly) NSDate *lastAccessDate;
+@property (getter=isMarkedForDelete, nonatomic, readonly) bool markedForDelete;
+@property (getter=isOriginal, nonatomic, readonly) bool original;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

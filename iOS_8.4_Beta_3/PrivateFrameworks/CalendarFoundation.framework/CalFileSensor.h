@@ -11,10 +11,10 @@
     int _type;
 }
 
-@property(assign,copy) id eventBlock;
-@property(assign,retain) NSString * path;
-@property(assign,readwrite) bool started;
-@property(assign,readwrite) int type;
+@property (nonatomic, copy) id eventBlock;
+@property (nonatomic, retain) NSString *path;
+@property (nonatomic) bool started;
+@property (nonatomic) int type;
 
 + (unsigned long long)_maskForFileSensorType:(int)arg1;
 + (id)copyFileSensorTypeAsString:(int)arg1;

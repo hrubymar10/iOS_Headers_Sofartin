@@ -9,8 +9,8 @@
     bool _success;
 }
 
-@property(assign,readwrite) bool hasSuccess;
-@property(assign,readwrite) bool success;
+@property (nonatomic) bool hasSuccess;
+@property (nonatomic) bool success;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

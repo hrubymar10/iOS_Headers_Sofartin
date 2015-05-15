@@ -6,7 +6,7 @@
     TSCH3DDataBuffer *mMesh;
 }
 
-@property(assign,retain) TSCH3DDataBuffer * mesh;
+@property (nonatomic, retain) TSCH3DDataBuffer *mesh;
 
 - (void)dealloc;
 - (void)flushMemory;

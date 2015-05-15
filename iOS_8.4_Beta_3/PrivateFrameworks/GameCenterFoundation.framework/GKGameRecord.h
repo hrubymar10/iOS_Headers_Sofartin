@@ -6,26 +6,26 @@
     GKPlayer *_player;
 }
 
-@property(assign,readonly) unsigned long long achievementPoints;
-@property(assign,readonly) unsigned long long achievements;
-@property(assign,readonly) NSString * defaultLeaderboardIdentifier;
-@property(assign,readonly) unsigned long long friendRank;
-@property(assign,retain) GKGameRecordInternal * internal;
-@property(assign,readonly) NSDate * lastPlayedDate;
-@property(assign,readonly) unsigned long long maxAchievementPoints;
-@property(assign,readonly) unsigned long long maxAchievements;
-@property(assign,readonly) unsigned long long maxFriendRank;
-@property(assign,readonly) unsigned long long maxRank;
-@property(assign,readonly) unsigned long long numberOfCategories;
-@property(assign,readonly) unsigned long long numberOfLeaderboardSets;
-@property(assign,readonly) unsigned long long numberOfLeaderboards;
-@property(assign,readonly) bool played;
-@property(assign,retain) GKPlayer * player;
-@property(assign,readonly) NSDate * purchaseDate;
-@property(assign,readonly) unsigned long long rank;
-@property(assign,readonly) bool supportsAchievements;
-@property(assign,readonly) bool supportsLeaderboardSets;
-@property(assign,readonly) bool supportsLeaderboards;
+@property (nonatomic, readonly) unsigned long long achievementPoints;
+@property (nonatomic, readonly) unsigned long long achievements;
+@property (nonatomic, readonly) NSString *defaultLeaderboardIdentifier;
+@property (nonatomic, readonly) unsigned long long friendRank;
+@property (readonly, retain) GKGameRecordInternal *internal;
+@property (nonatomic, readonly) NSDate *lastPlayedDate;
+@property (nonatomic, readonly) unsigned long long maxAchievementPoints;
+@property (nonatomic, readonly) unsigned long long maxAchievements;
+@property (nonatomic, readonly) unsigned long long maxFriendRank;
+@property (nonatomic, readonly) unsigned long long maxRank;
+@property (nonatomic, readonly) unsigned long long numberOfCategories;
+@property (nonatomic, readonly) unsigned long long numberOfLeaderboardSets;
+@property (nonatomic, readonly) unsigned long long numberOfLeaderboards;
+@property (nonatomic, readonly) bool played;
+@property (nonatomic, retain) GKPlayer *player;
+@property (nonatomic, readonly) NSDate *purchaseDate;
+@property (nonatomic, readonly) unsigned long long rank;
+@property (nonatomic, readonly) bool supportsAchievements;
+@property (nonatomic, readonly) bool supportsLeaderboardSets;
+@property (nonatomic, readonly) bool supportsLeaderboards;
 
 + (id)cacheKeyForPlayer:(id)arg1 game:(id)arg2;
 + (id)cacheKeyForPlayer:(id)arg1 internal:(id)arg2;

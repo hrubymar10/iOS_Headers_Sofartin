@@ -8,8 +8,8 @@
     GEOMapRequestManager *_requestManager;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,readonly) bool isFinished;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic, readonly) bool isFinished;
 
 - (void)cancel;
 - (void)complete;

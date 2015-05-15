@@ -17,20 +17,20 @@
     bool _unconnected;
 }
 
-@property(assign,copy) NSArray * accessories;
-@property(assign,readonly) bool hasPairings;
-@property(assign,copy) NSString * homeName;
-@property(assign,copy) NSString * identifier;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * internalDelegateQueue;
-@property(assign,readonly) NSHashTable * internalDelegates;
-@property(assign,readwrite) <HAPKeyStore> * keyStore;
-@property(assign,readonly) long long linkType;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * pairSetupPassword;
-@property(getter=isPaired,assign,readonly) bool paired;
-@property(assign,retain) HAPAccessory * primaryAccessory;
-@property(getter=isReachable,assign,readwrite) bool reachable;
-@property(getter=isUnconnected,assign,readwrite) bool unconnected;
+@property (nonatomic, copy) NSArray *accessories;
+@property (nonatomic, readonly) bool hasPairings;
+@property (nonatomic, copy) NSString *homeName;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *internalDelegateQueue;
+@property (nonatomic, readonly) NSHashTable *internalDelegates;
+@property (nonatomic) <HAPKeyStore> *keyStore;
+@property (nonatomic, readonly) long long linkType;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *pairSetupPassword;
+@property (getter=isPaired, nonatomic, readonly) bool paired;
+@property (nonatomic, retain) HAPAccessory *primaryAccessory;
+@property (getter=isReachable, nonatomic) bool reachable;
+@property (getter=isUnconnected, nonatomic) bool unconnected;
 
 + (bool)isAccessoryServerWithIdentifierPaired:(id)arg1 keyStore:(id)arg2;
 

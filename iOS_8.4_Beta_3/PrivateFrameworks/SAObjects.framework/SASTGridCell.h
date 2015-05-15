@@ -4,12 +4,12 @@
 
 @interface SASTGridCell : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUIDecoratedText * subTitle;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SAUIDecoratedText * title;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUIDecoratedText *subTitle;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SAUIDecoratedText *title;
 
 + (id)gridCell;
 + (id)gridCellWithDictionary:(id)arg1 context:(id)arg2;

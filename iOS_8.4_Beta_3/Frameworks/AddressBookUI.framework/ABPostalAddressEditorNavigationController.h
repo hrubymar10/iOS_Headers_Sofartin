@@ -6,7 +6,7 @@
     <ABPostalAddressEditorDelegate> *_addressEditorDelegate;
 }
 
-@property(assign,readwrite) <ABPostalAddressEditorDelegate> * addressEditorDelegate;
+@property (nonatomic) <ABPostalAddressEditorDelegate> *addressEditorDelegate;
 
 - (id)addressEditorDelegate;
 - (id)initWithContact:(id)arg1 property:(int)arg2 editNames:(bool)arg3;

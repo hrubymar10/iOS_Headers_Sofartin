@@ -12,9 +12,9 @@
     bool _nextPage;
 }
 
-@property(assign,readwrite) bool alwaysShowTypedText;
-@property(assign,readwrite) int messageCount;
-@property(assign,readwrite) int minLetters;
+@property (nonatomic) bool alwaysShowTypedText;
+@property (nonatomic) int messageCount;
+@property (nonatomic) int minLetters;
 
 + (void)hideViaNotification;
 + (void)loadSettings;

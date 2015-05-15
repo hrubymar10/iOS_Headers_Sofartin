@@ -27,28 +27,28 @@
     NSString *_uuid;
 }
 
-@property(assign,copy) NSString * actionButtonLabel;
-@property(assign,copy) NSURL * activateActionURL;
-@property(assign,copy) NSURL * clearActionURL;
-@property(assign,copy) NSString * clientIdentifier;
-@property(assign,copy) NSString * delegateMachServiceName;
-@property(assign,copy) NSURL * dismissActionlURL;
-@property(assign,readwrite) unsigned long long displayStyle;
-@property(assign,copy) NSDate * expiryDate;
-@property(assign,copy) NSNumber * familyMemberDSID;
-@property(assign,readwrite) bool hasActionButton;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * informativeText;
-@property(assign,copy) NSData * launchActionArguments;
-@property(assign,copy) NSURL * launchActionURL;
-@property(assign,copy) NSString * otherButtonLabel;
-@property(assign,copy) NSDate * relevanceDate;
-@property(assign,readwrite) bool shouldPersistWhenActivated;
-@property(assign,readwrite) bool shouldPersistWhenDismissed;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * unlockActionLabel;
-@property(assign,copy) NSDictionary * userInfo;
-@property(assign,copy) NSString * uuid;
+@property (copy) NSString *actionButtonLabel;
+@property (copy) NSURL *activateActionURL;
+@property (copy) NSURL *clearActionURL;
+@property (copy) NSString *clientIdentifier;
+@property (copy) NSString *delegateMachServiceName;
+@property (copy) NSURL *dismissActionlURL;
+@property unsigned long long displayStyle;
+@property (copy) NSDate *expiryDate;
+@property (copy) NSNumber *familyMemberDSID;
+@property bool hasActionButton;
+@property (copy) NSString *identifier;
+@property (copy) NSString *informativeText;
+@property (copy) NSData *launchActionArguments;
+@property (copy) NSURL *launchActionURL;
+@property (copy) NSString *otherButtonLabel;
+@property (copy) NSDate *relevanceDate;
+@property bool shouldPersistWhenActivated;
+@property bool shouldPersistWhenDismissed;
+@property (copy) NSString *title;
+@property (copy) NSString *unlockActionLabel;
+@property (copy) NSDictionary *userInfo;
+@property (copy) NSString *uuid;
 
 + (bool)supportsSecureCoding;
 

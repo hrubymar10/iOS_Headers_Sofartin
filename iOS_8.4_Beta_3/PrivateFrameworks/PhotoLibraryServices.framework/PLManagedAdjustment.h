@@ -4,10 +4,10 @@
 
 @interface PLManagedAdjustment : _PLManagedAdjustment
 
-@property(assign,readwrite) int adjustmentType;
-@property(assign,copy) PLManagedAsset * asset;
-@property(assign,copy) NSString * filterName;
-@property(assign,copy) NSDictionary * filterSettings;
+@property (nonatomic) int adjustmentType;
+@property (nonatomic, copy) PLManagedAsset *asset;
+@property (nonatomic, copy) NSString *filterName;
+@property (nonatomic, copy) NSDictionary *filterSettings;
 
 + (id)ciFiltersForAdjustmentsOnManagedAsset:(id)arg1 forDestinationImageSize:(struct CGSize { double x1; double x2; })arg2;
 + (id)ciFiltersForAdjustmentsOnManagedAsset:(id)arg1 forDestinationImageSize:(struct CGSize { double x1; double x2; })arg2 effectFilterCount:(unsigned long long*)arg3;

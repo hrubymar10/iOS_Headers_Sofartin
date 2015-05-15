@@ -10,15 +10,15 @@
     NSTimer *_timer;
 }
 
-@property(assign,readwrite) double currentTime;
-@property(getter=isCurrentTimeAtEndOfSeekableTimeRanges,assign,readonly) bool currentTimeAtEndOfSeekableTimeRanges;
-@property(assign,readwrite) double currentTimeWithinEndTimes;
-@property(assign,readwrite) double interval;
-@property(assign,retain) AVPlayerController * playerController;
-@property(assign,readonly) double remainingTime;
-@property(assign,readonly) double remainingTimeWithinEndTimes;
-@property(assign,readwrite) double resolution;
-@property(getter=isThirtySecondsBeforeCurrentTimeWithinSeekableTimeRanges,assign,readonly) bool thirtySecondsBeforeCurrentTimeWithinSeekableTimeRanges;
+@property double currentTime;
+@property (getter=isCurrentTimeAtEndOfSeekableTimeRanges, readonly) bool currentTimeAtEndOfSeekableTimeRanges;
+@property double currentTimeWithinEndTimes;
+@property double interval;
+@property (retain) AVPlayerController *playerController;
+@property (readonly) double remainingTime;
+@property (readonly) double remainingTimeWithinEndTimes;
+@property double resolution;
+@property (getter=isThirtySecondsBeforeCurrentTimeWithinSeekableTimeRanges, readonly) bool thirtySecondsBeforeCurrentTimeWithinSeekableTimeRanges;
 
 + (bool)automaticallyNotifiesObserversOfCurrentTime;
 + (id)keyPathsForValuesAffectingCurrentTimeAtEndOfSeekableTimeRanges;

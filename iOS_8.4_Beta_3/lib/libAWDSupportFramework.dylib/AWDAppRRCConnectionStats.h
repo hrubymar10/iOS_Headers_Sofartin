@@ -20,20 +20,20 @@
     unsigned int _totalBytesTransferred;
 }
 
-@property(assign,readwrite) unsigned int bundleBGDuration;
-@property(assign,readwrite) unsigned int bundleFGDuration;
-@property(assign,retain) NSString * bundleName;
-@property(assign,readwrite) bool hasBundleBGDuration;
-@property(assign,readwrite) bool hasBundleFGDuration;
-@property(assign,readonly) bool hasBundleName;
-@property(assign,readwrite) bool hasNumMOConnectionTriggered;
-@property(assign,readwrite) bool hasNumMTConnectionTriggered;
-@property(assign,readwrite) bool hasRAT;
-@property(assign,readwrite) bool hasTotalBytesTransferred;
-@property(assign,readwrite) unsigned int numMOConnectionTriggered;
-@property(assign,readwrite) unsigned int numMTConnectionTriggered;
-@property(assign,readwrite) int rAT;
-@property(assign,readwrite) unsigned int totalBytesTransferred;
+@property (nonatomic) unsigned int bundleBGDuration;
+@property (nonatomic) unsigned int bundleFGDuration;
+@property (nonatomic, retain) NSString *bundleName;
+@property (nonatomic) bool hasBundleBGDuration;
+@property (nonatomic) bool hasBundleFGDuration;
+@property (nonatomic, readonly) bool hasBundleName;
+@property (nonatomic) bool hasNumMOConnectionTriggered;
+@property (nonatomic) bool hasNumMTConnectionTriggered;
+@property (nonatomic) bool hasRAT;
+@property (nonatomic) bool hasTotalBytesTransferred;
+@property (nonatomic) unsigned int numMOConnectionTriggered;
+@property (nonatomic) unsigned int numMTConnectionTriggered;
+@property (nonatomic) int rAT;
+@property (nonatomic) unsigned int totalBytesTransferred;
 
 - (unsigned int)bundleBGDuration;
 - (unsigned int)bundleFGDuration;

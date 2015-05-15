@@ -20,16 +20,16 @@
     UIWindow *_window;
 }
 
-@property(assign,retain) NSString * currentTestName;
-@property(assign,retain) NSDictionary * currentTestOptions;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) BLActivityAlert * iPhotoMigrationActivityAlert;
-@property(assign,readonly) bool isOnWifi;
-@property(assign,readonly) bool isReachable;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIWindow * window;
+@property (nonatomic, retain) NSString *currentTestName;
+@property (nonatomic, retain) NSDictionary *currentTestOptions;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) BLActivityAlert *iPhotoMigrationActivityAlert;
+@property (nonatomic, readonly) bool isOnWifi;
+@property (nonatomic, readonly) bool isReachable;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIWindow *window;
 
 + (void)initialize;
 

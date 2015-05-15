@@ -17,18 +17,18 @@
     NSString *_videoGravity;
 }
 
-@property(getter=isDisabledLayoutForEffectsFullsizeView,assign,readwrite) bool disableLayoutForEffectsFullsizeView;
-@property(getter=isDisabledLayoutForEffectsGridViews,assign,readwrite) bool disableLayoutForEffectsGridViews;
-@property(getter=isDisabledLayoutForPreviewView,assign,readwrite) bool disableLayoutForPreviewView;
-@property(assign,retain) CAMEffectsFullsizeView * effectsFullsizeView;
-@property(assign,retain) CAMEffectsGridLabelsView * effectsGridLabelsView;
-@property(assign,retain) CAMEffectsGridView * effectsGridView;
-@property(assign,retain) UIView * fadeOutView;
-@property(assign,readwrite) long long orientation;
-@property(assign,retain) AVCaptureVideoPreviewLayer * previewLayer;
-@property(assign,retain) UIView * previewLayerView;
-@property(getter=isSquare,assign,readwrite) bool square;
-@property(assign,copy) NSString * videoGravity;
+@property (getter=isDisabledLayoutForEffectsFullsizeView, nonatomic) bool disableLayoutForEffectsFullsizeView;
+@property (getter=isDisabledLayoutForEffectsGridViews, nonatomic) bool disableLayoutForEffectsGridViews;
+@property (getter=isDisabledLayoutForPreviewView, nonatomic) bool disableLayoutForPreviewView;
+@property (nonatomic, readonly, retain) CAMEffectsFullsizeView *effectsFullsizeView;
+@property (nonatomic, readonly, retain) CAMEffectsGridLabelsView *effectsGridLabelsView;
+@property (nonatomic, readonly, retain) CAMEffectsGridView *effectsGridView;
+@property (nonatomic, readonly, retain) UIView *fadeOutView;
+@property (nonatomic) long long orientation;
+@property (nonatomic, retain) AVCaptureVideoPreviewLayer *previewLayer;
+@property (nonatomic, readonly, retain) UIView *previewLayerView;
+@property (getter=isSquare, nonatomic) bool square;
+@property (nonatomic, copy) NSString *videoGravity;
 
 - (void).cxx_destruct;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_frameForSubviewsAccountForSquare:(bool)arg1;

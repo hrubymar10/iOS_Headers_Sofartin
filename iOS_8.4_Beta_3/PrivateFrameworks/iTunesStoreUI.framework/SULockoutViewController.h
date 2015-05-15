@@ -9,10 +9,10 @@
     NSString *_messageTitle;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,retain) NSBundle * localizationBundle;
-@property(assign,retain) NSString * messageBody;
-@property(assign,retain) NSString * messageTitle;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) NSBundle *localizationBundle;
+@property (nonatomic, retain) NSString *messageBody;
+@property (nonatomic, retain) NSString *messageTitle;
 
 - (id)copyArchivableContext;
 - (void)dealloc;

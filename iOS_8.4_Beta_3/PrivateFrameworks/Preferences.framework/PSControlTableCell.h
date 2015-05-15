@@ -6,7 +6,7 @@
     UIControl *_control;
 }
 
-@property(assign,retain) UIControl * control;
+@property (nonatomic, retain) UIControl *control;
 
 - (bool)canReload;
 - (id)control;

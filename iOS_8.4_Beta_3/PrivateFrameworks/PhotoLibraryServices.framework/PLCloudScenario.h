@@ -8,9 +8,9 @@
     NSProgress *_progress;
 }
 
-@property(assign,retain) NSArray * operations;
-@property(assign,readwrite) unsigned long long priority;
-@property(assign,retain) NSProgress * progress;
+@property (nonatomic, retain) NSArray *operations;
+@property (nonatomic) unsigned long long priority;
+@property (nonatomic, retain) NSProgress *progress;
 
 - (void)dealloc;
 - (id)operations;

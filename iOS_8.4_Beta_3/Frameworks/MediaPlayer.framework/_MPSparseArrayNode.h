@@ -7,8 +7,8 @@
     unsigned long long _relativeOffset;
 }
 
-@property(assign,retain) id object;
-@property(assign,readwrite) unsigned long long relativeOffset;
+@property (nonatomic, retain) id object;
+@property (nonatomic) unsigned long long relativeOffset;
 
 + (bool)supportsSecureCoding;
 

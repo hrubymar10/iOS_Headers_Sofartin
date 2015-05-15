@@ -10,20 +10,20 @@
     double _width;
 }
 
-@property(assign,readonly) bool alwaysStartsNewTarget;
-@property(assign,readonly) unsigned long long columnCount;
-@property(assign,readonly) bool columnsAreLeftToRight;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } footnoteSeparatorLineFrame;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double height;
-@property(assign,readwrite) bool includeFootnoteSeparatorLine;
-@property(assign,readonly) bool isEmpty;
-@property(assign,readonly) TSWPPadding * layoutMargins;
-@property(assign,readonly) bool shrinkTextToFit;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) double textScaleFactor;
+@property (nonatomic, readonly) bool alwaysStartsNewTarget;
+@property (nonatomic, readonly) unsigned long long columnCount;
+@property (nonatomic, readonly) bool columnsAreLeftToRight;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } footnoteSeparatorLineFrame;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double height;
+@property (nonatomic) bool includeFootnoteSeparatorLine;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, readonly) TSWPPadding *layoutMargins;
+@property (nonatomic, readonly) bool shrinkTextToFit;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) double textScaleFactor;
 
 - (void)addFootnoteLayout:(id)arg1;
 - (struct CGSize { double x1; double x2; })adjustedInsetsForTarget:(id)arg1;

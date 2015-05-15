@@ -8,9 +8,9 @@
     void *_store;
 }
 
-@property(assign,copy) NSString * accountIdentifier;
-@property(assign,readwrite) void* group;
-@property(assign,readwrite) void* store;
+@property (nonatomic, copy) NSString *accountIdentifier;
+@property (nonatomic) void*group;
+@property (nonatomic) void*store;
 
 - (void)ab_bindStatement:(struct CPSqliteStatement { struct CPSqliteConnection {} *x1; struct sqlite3_stmt {} *x2; }*)arg1 withBindingOffset:(int*)arg2 predicateIdentifier:(int)arg3;
 - (id)accountIdentifier;

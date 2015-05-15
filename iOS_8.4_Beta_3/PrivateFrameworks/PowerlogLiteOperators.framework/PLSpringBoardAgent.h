@@ -17,18 +17,18 @@
     NSDictionary *_screenNumberToName;
 }
 
-@property(assign,retain) PLAccountingGroup * appAccountingGroup;
-@property(assign,readwrite) bool autoLockIsNil;
-@property(assign,retain) PLNSTimerOperatorComposition * dailyWallpaperPoll;
-@property(assign,retain) PLEntryNotificationOperatorComposition * displayOffNotification;
-@property(assign,readonly) PLNSNotificationOperatorComposition * notificationSBAutoLockTimerFiredNotification;
-@property(assign,readonly) PLCFNotificationOperatorComposition * notificationSBBlankTrackingChanged;
-@property(assign,readonly) PLNSNotificationOperatorComposition * notificationSBLocalNotificationFired;
-@property(assign,readonly) PLCFNotificationOperatorComposition * notificationSBLockTrackingChanged;
-@property(assign,readonly) PLNSNotificationOperatorComposition * notificationSBRemoteNotificationReceived;
-@property(assign,readonly) PLNSNotificationOperatorComposition * notificationSBScreenTimeTrackingChanged;
-@property(assign,readonly) PLNSNotificationOperatorComposition * notificationSBWallpaperTrackingChanged;
-@property(assign,retain) NSDictionary * screenNumberToName;
+@property (retain) PLAccountingGroup *appAccountingGroup;
+@property bool autoLockIsNil;
+@property (retain) PLNSTimerOperatorComposition *dailyWallpaperPoll;
+@property (retain) PLEntryNotificationOperatorComposition *displayOffNotification;
+@property (readonly) PLNSNotificationOperatorComposition *notificationSBAutoLockTimerFiredNotification;
+@property (readonly) PLCFNotificationOperatorComposition *notificationSBBlankTrackingChanged;
+@property (readonly) PLNSNotificationOperatorComposition *notificationSBLocalNotificationFired;
+@property (readonly) PLCFNotificationOperatorComposition *notificationSBLockTrackingChanged;
+@property (readonly) PLNSNotificationOperatorComposition *notificationSBRemoteNotificationReceived;
+@property (readonly) PLNSNotificationOperatorComposition *notificationSBScreenTimeTrackingChanged;
+@property (readonly) PLNSNotificationOperatorComposition *notificationSBWallpaperTrackingChanged;
+@property (retain) NSDictionary *screenNumberToName;
 
 + (id)accountingGroupDefinitions;
 + (id)entryEventBackwardDefinitions;

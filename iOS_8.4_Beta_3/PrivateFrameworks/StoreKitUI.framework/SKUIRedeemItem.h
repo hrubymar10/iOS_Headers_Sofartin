@@ -9,10 +9,10 @@
     NSString *title;
 }
 
-@property(assign,retain) SKUIArtworkList * artworks;
-@property(assign,readwrite) long long itemIdentifier;
-@property(assign,readwrite) long long itemKind;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) SKUIArtworkList *artworks;
+@property (nonatomic) long long itemIdentifier;
+@property (nonatomic) long long itemKind;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (struct _NSRange { unsigned long long x1; unsigned long long x2; })ageBandRange;

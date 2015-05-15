@@ -7,8 +7,8 @@
     PLCFNotificationOperatorComposition *_notificationReduceMotionChanged;
 }
 
-@property(assign,readonly) PLCFNotificationOperatorComposition * notificationBackgroundContrastChanged;
-@property(assign,readonly) PLCFNotificationOperatorComposition * notificationReduceMotionChanged;
+@property (readonly) PLCFNotificationOperatorComposition *notificationBackgroundContrastChanged;
+@property (readonly) PLCFNotificationOperatorComposition *notificationReduceMotionChanged;
 
 + (id)accountingGroupDefinitions;
 + (id)entryEventBackwardDefinitions;

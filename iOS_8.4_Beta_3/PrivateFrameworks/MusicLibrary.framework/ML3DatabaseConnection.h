@@ -29,21 +29,21 @@
     int _willDeleteDatabaseNotifyToken;
 }
 
-@property(assign,readwrite) bool automaticCheckpointingEnabled;
-@property(assign,readwrite) unsigned long long checkpointStatementThreshold;
-@property(assign,readwrite) <ML3DatabaseConnectionDelegate> * connectionDelegate;
-@property(assign,readonly) NSUUID * currentTransactionID;
-@property(assign,readonly) NSString * databasePath;
-@property(assign,readwrite) const void* iTunesExtensions;
-@property(assign,readonly) bool isInTransaction;
-@property(assign,readonly) bool isOpen;
-@property(setter=setReadOnly:,assign,readwrite) bool isReadOnly;
-@property(assign,readwrite) unsigned long long journalingMode;
-@property(assign,readwrite) bool logQueryPlans;
-@property(assign,readwrite) int profilingLevel;
-@property(assign,readwrite) unsigned long long protectionLevel;
-@property(assign,readonly) bool transactionMarkedForRollBack;
-@property(assign,readonly) NSUUID * uniqueIdentifier;
+@property (nonatomic) bool automaticCheckpointingEnabled;
+@property (nonatomic) unsigned long long checkpointStatementThreshold;
+@property (nonatomic) <ML3DatabaseConnectionDelegate> *connectionDelegate;
+@property (nonatomic, readonly) NSUUID *currentTransactionID;
+@property (nonatomic, readonly) NSString *databasePath;
+@property (nonatomic) const void*iTunesExtensions;
+@property (nonatomic, readonly) bool isInTransaction;
+@property (nonatomic, readonly) bool isOpen;
+@property (setter=setReadOnly:, nonatomic) bool isReadOnly;
+@property (nonatomic) unsigned long long journalingMode;
+@property (nonatomic) bool logQueryPlans;
+@property (nonatomic) int profilingLevel;
+@property (nonatomic) unsigned long long protectionLevel;
+@property (nonatomic, readonly) bool transactionMarkedForRollBack;
+@property (nonatomic, readonly) NSUUID *uniqueIdentifier;
 
 - (void).cxx_destruct;
 - (bool)_alterTableNamed:(id)arg1 withNewColumnDefinitions:(id)arg2 newColumnNames:(id)arg3 oldColumnNames:(id)arg4;

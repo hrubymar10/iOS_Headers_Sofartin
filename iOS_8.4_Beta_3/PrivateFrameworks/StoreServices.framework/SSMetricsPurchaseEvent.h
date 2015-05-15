@@ -4,10 +4,10 @@
 
 @interface SSMetricsPurchaseEvent : SSMetricsBaseEvent
 
-@property(assign,readwrite) double requestStartTime;
-@property(assign,readwrite) double responseEndTime;
-@property(assign,readwrite) double responseStartTime;
-@property(assign,retain) NSString * transactionIdentifier;
+@property (nonatomic) double requestStartTime;
+@property (nonatomic) double responseEndTime;
+@property (nonatomic) double responseStartTime;
+@property (nonatomic, retain) NSString *transactionIdentifier;
 
 - (void)addFieldsFromPurchaseResponse:(id)arg1;
 - (id)init;

@@ -7,12 +7,12 @@
     NSArray *_textFieldValues;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long selectedButtonIndex;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * textFieldValues;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long selectedButtonIndex;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *textFieldValues;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

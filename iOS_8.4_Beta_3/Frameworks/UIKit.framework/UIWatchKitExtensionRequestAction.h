@@ -4,7 +4,7 @@
 
 @interface UIWatchKitExtensionRequestAction : BSAction
 
-@property(assign,retain) NSDictionary * request;
+@property (nonatomic, readonly, retain) NSDictionary *request;
 
 - (long long)UIActionType;
 - (id)initWithInfo:(id)arg1 timeout:(double)arg2 forResponseOnQueue:(id)arg3 withHandler:(id)arg4;

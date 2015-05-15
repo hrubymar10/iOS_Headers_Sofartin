@@ -13,14 +13,14 @@
     UIImage *_placeholderImage;
 }
 
-@property(assign,readonly) UIImage * _externalImage;
-@property(getter=_aspectConstraintMultiplier,setter=_setAspectConstraintMultiplier:,assign,readwrite) double aspectConstraintMultiplier;
-@property(assign,readwrite) bool automaticallyApplyAspectConstraints;
-@property(assign,readwrite) bool dimsWhenHighlighted;
-@property(getter=isDisplayingPlaceholder,assign,readwrite) bool displayingPlaceholder;
-@property(assign,readwrite) bool forcesAnimatedUnhighlighting;
-@property(assign,retain) UIImage * placeholderImage;
-@property(assign,readonly) bool shouldDisplayPlaceholder;
+@property (nonatomic, readonly) UIImage *_externalImage;
+@property (getter=_aspectConstraintMultiplier, setter=_setAspectConstraintMultiplier:, nonatomic) double aspectConstraintMultiplier;
+@property (nonatomic) bool automaticallyApplyAspectConstraints;
+@property (nonatomic) bool dimsWhenHighlighted;
+@property (getter=isDisplayingPlaceholder, nonatomic) bool displayingPlaceholder;
+@property (nonatomic) bool forcesAnimatedUnhighlighting;
+@property (nonatomic, retain) UIImage *placeholderImage;
+@property (nonatomic, readonly) bool shouldDisplayPlaceholder;
 
 - (void).cxx_destruct;
 - (double)_aspectConstraintMultiplier;

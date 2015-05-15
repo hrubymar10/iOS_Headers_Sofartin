@@ -8,14 +8,14 @@
     bool _isSelectable;
 }
 
-@property(assign,copy) NSAttributedString * attribution;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MKPlaceSharedAttributionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isSelectable;
-@property(assign,readonly) bool requiresPreferredContentSizeInStackingView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSAttributedString *attribution;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MKPlaceSharedAttributionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isSelectable;
+@property (nonatomic, readonly) bool requiresPreferredContentSizeInStackingView;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)attribution;

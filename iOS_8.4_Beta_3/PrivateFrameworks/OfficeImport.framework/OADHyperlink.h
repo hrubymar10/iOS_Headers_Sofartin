@@ -14,9 +14,9 @@
     NSString *mTooltip;
 }
 
-@property(assign,readwrite) bool doAddToHistory;
-@property(assign,readwrite) bool doEndSound;
-@property(assign,readwrite) bool isVisited;
+@property (nonatomic) bool doAddToHistory;
+@property (nonatomic) bool doEndSound;
+@property (nonatomic) bool isVisited;
 
 - (id)action;
 - (void)dealloc;

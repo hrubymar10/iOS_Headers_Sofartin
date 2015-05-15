@@ -6,8 +6,8 @@
     struct CGImage { } *_cgImage;
 }
 
-@property(assign,readonly) struct CGImage { }* image;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) struct CGImage { }*image;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
 
 + (id)imageWithCGImage:(struct CGImage { }*)arg1;
 

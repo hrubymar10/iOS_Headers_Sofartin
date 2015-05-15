@@ -23,13 +23,13 @@
     long long _startPage;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,readwrite) double maximumContentHeight;
-@property(assign,readwrite) double maximumContentWidth;
-@property(assign,readonly) long long pageCount;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } perPageContentInsets;
-@property(assign,readwrite) UIPrintPageRenderer * printPageRenderer;
-@property(assign,readwrite) long long startPage;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic) double maximumContentHeight;
+@property (nonatomic) double maximumContentWidth;
+@property (nonatomic, readonly) long long pageCount;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } perPageContentInsets;
+@property (nonatomic) UIPrintPageRenderer *printPageRenderer;
+@property (nonatomic) long long startPage;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_pageContentRect:(bool)arg1;
 - (void)_recalcIfNecessary;

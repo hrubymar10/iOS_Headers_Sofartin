@@ -9,7 +9,7 @@
     id _startAction;
 }
 
-@property(assign,readwrite) bool performImmediately;
+@property bool performImmediately;
 
 + (id)actionWithStartAction:(id)arg1 cancelAction:(id)arg2 finishAction:(id)arg3;
 

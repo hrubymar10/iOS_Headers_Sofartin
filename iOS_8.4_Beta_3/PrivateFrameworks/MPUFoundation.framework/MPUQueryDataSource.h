@@ -13,8 +13,8 @@
     MPMediaQuerySectionInfo *_sectionInfo;
 }
 
-@property(assign,readwrite) bool ignoringInvalidationDueToBackgroundApplicationState;
-@property(assign,readonly) MPMediaQuery * query;
+@property (nonatomic) bool ignoringInvalidationDueToBackgroundApplicationState;
+@property (nonatomic, readonly) MPMediaQuery *query;
 
 - (void).cxx_destruct;
 - (void)_applicationDidEnterBackground:(id)arg1;

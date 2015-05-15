@@ -9,14 +9,14 @@
     id _value;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ABSimpleTextInputViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * placeholder;
-@property(assign,copy) NSString * stringValue;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ABSimpleTextInputViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *placeholder;
+@property (nonatomic, copy) NSString *stringValue;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
+@property (readonly) Class superclass;
 
 - (bool)_allowsAutorotation;
 - (bool)_isSupportedInterfaceOrientation:(long long)arg1;

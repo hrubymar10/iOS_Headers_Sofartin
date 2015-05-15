@@ -8,9 +8,9 @@
     CIImage *inputImage;
 }
 
-@property(assign,copy) NSString * inputCameraModel;
-@property(assign,copy) NSArray * inputCorrectionInfo;
-@property(assign,retain) CIImage * inputImage;
+@property (nonatomic, copy) NSString *inputCameraModel;
+@property (nonatomic, copy) NSArray *inputCorrectionInfo;
+@property (nonatomic, retain) CIImage *inputImage;
 
 - (id)_initFromProperties:(id)arg1;
 - (bool)_isIdentity;

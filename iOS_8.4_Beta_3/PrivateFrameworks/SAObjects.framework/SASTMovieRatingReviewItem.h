@@ -4,12 +4,12 @@
 
 @interface SASTMovieRatingReviewItem : AceObject <SASTTemplateItem>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUIDecoratedText * reviews;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SASTTemplatePercentageRating * templatePercentageRating;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUIDecoratedText *reviews;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SASTTemplatePercentageRating *templatePercentageRating;
 
 + (id)movieRatingReviewItem;
 + (id)movieRatingReviewItemWithDictionary:(id)arg1 context:(id)arg2;

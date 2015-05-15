@@ -10,11 +10,11 @@
     PHFetchOptions *_options;
 }
 
-@property(assign,readonly) id fetchBlock;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSOrderedSet * objectIDs;
-@property(assign,readonly) NSArray * objects;
-@property(assign,copy) PHFetchOptions * options;
+@property (readonly) id fetchBlock;
+@property (readonly) NSString *identifier;
+@property (readonly) NSOrderedSet *objectIDs;
+@property (readonly) NSArray *objects;
+@property (readonly, copy) PHFetchOptions *options;
 
 - (void).cxx_destruct;
 - (id)changeHandlingKey;

@@ -7,8 +7,8 @@
     int m_magnifierMethod;
 }
 
-@property(assign,readwrite) int autoscrollDirections;
-@property(assign,readwrite) int magnifierMethod;
+@property (nonatomic) int autoscrollDirections;
+@property (nonatomic) int magnifierMethod;
 
 - (int)autoscrollDirections;
 - (void)drawAutoscroller:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

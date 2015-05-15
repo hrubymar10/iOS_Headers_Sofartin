@@ -7,7 +7,7 @@
     long long _logLevel;
 }
 
-@property(assign,readwrite) long long logLevel;
+@property long long logLevel;
 
 + (void)initialize;
 + (id)sharedEventLogger;

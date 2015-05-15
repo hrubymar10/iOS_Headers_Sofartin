@@ -12,13 +12,13 @@
     bool _returnsDistinctEntities;
 }
 
-@property(assign,readwrite) Class entityClass;
-@property(assign,copy) NSString * groupBy;
-@property(assign,readwrite) long long limitCount;
-@property(assign,copy) NSArray * orderingDirections;
-@property(assign,copy) NSArray * orderingProperties;
-@property(assign,copy) HDSQLitePredicate * predicate;
-@property(assign,readwrite) bool returnsDistinctEntities;
+@property (nonatomic) Class entityClass;
+@property (nonatomic, copy) NSString *groupBy;
+@property (nonatomic) long long limitCount;
+@property (nonatomic, copy) NSArray *orderingDirections;
+@property (nonatomic, copy) NSArray *orderingProperties;
+@property (nonatomic, copy) HDSQLitePredicate *predicate;
+@property (nonatomic) bool returnsDistinctEntities;
 
 - (id)_newSelectSQLWithProperties:(id)arg1;
 - (id)_newSelectSQLWithProperties:(id)arg1 columns:(id)arg2;

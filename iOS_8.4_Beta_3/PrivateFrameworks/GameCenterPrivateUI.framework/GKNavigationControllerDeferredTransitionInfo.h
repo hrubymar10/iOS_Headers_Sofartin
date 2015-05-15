@@ -8,9 +8,9 @@
     UIViewController *_viewController;
 }
 
-@property(assign,readwrite) bool animated;
-@property(assign,readwrite) int type;
-@property(assign,retain) UIViewController * viewController;
+@property (nonatomic) bool animated;
+@property (nonatomic) int type;
+@property (nonatomic, retain) UIViewController *viewController;
 
 - (bool)animated;
 - (void)setAnimated:(bool)arg1;

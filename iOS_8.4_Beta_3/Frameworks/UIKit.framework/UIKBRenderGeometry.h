@@ -57,21 +57,21 @@
     bool _tallPopup;
 }
 
-@property(assign,readwrite) bool detachedVariants;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } displayFrame;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } displayInsets;
-@property(assign,readwrite) long long flickDirection;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } paddedFrame;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } paddedInsets;
-@property(assign,readwrite) int popupBias;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } popupSource;
-@property(assign,readwrite) int roundRectCorners;
-@property(assign,readwrite) double roundRectRadius;
-@property(assign,retain) NSValue * splitLeftRect;
-@property(assign,retain) NSValue * splitRightRect;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } symbolFrame;
-@property(assign,readwrite) bool tallPopup;
+@property (nonatomic) bool detachedVariants;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } displayFrame;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } displayInsets;
+@property (nonatomic) long long flickDirection;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } paddedFrame;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } paddedInsets;
+@property (nonatomic) int popupBias;
+@property (nonatomic) struct CGPoint { double x1; double x2; } popupSource;
+@property (nonatomic) int roundRectCorners;
+@property (nonatomic) double roundRectRadius;
+@property (nonatomic, retain) NSValue *splitLeftRect;
+@property (nonatomic, retain) NSValue *splitRightRect;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } symbolFrame;
+@property (nonatomic) bool tallPopup;
 
 + (id)geometryWithFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 paddedFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg2;
 + (id)geometryWithShape:(id)arg1;

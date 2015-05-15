@@ -8,8 +8,8 @@
     NSObject<OS_dispatch_source> *_signalSource;
 }
 
-@property(assign,copy) id fireBlock;
-@property(assign,readwrite) int signal;
+@property (nonatomic, copy) id fireBlock;
+@property (nonatomic) int signal;
 
 - (void).cxx_destruct;
 - (void)_shutDownSource;

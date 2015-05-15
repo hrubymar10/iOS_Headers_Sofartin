@@ -12,15 +12,15 @@
     MusicUpNextPunchOutView *_punchOutView;
 }
 
-@property(assign,readonly) UIView * attachedView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool disableWrapperScroll;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double minimumYForReorderingCells;
-@property(assign,readonly) long long pinViewLocation;
-@property(assign,readwrite) bool punchOutEnabled;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) UIView *attachedView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool disableWrapperScroll;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double minimumYForReorderingCells;
+@property (nonatomic, readonly) long long pinViewLocation;
+@property (nonatomic) bool punchOutEnabled;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_autoscrollForReordering:(id)arg1;

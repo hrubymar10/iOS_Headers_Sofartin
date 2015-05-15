@@ -21,23 +21,23 @@
     int _topStrokeOrder;
 }
 
-@property(assign,retain) TSDStroke * bottomStroke;
-@property(assign,readonly) int bottomStrokeOrder;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) bool definedBottomStroke;
-@property(assign,readonly) bool definedLeftStroke;
-@property(assign,readonly) bool definedRightStroke;
-@property(assign,readonly) bool definedTopStroke;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isEmpty;
-@property(assign,retain) TSDStroke * leftStroke;
-@property(assign,readonly) int leftStrokeOrder;
-@property(assign,retain) TSDStroke * rightStroke;
-@property(assign,readonly) int rightStrokeOrder;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) TSDStroke * topStroke;
-@property(assign,readonly) int topStrokeOrder;
+@property (nonatomic, readonly, retain) TSDStroke *bottomStroke;
+@property (nonatomic, readonly) int bottomStrokeOrder;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) bool definedBottomStroke;
+@property (nonatomic, readonly) bool definedLeftStroke;
+@property (nonatomic, readonly) bool definedRightStroke;
+@property (nonatomic, readonly) bool definedTopStroke;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, readonly, retain) TSDStroke *leftStroke;
+@property (nonatomic, readonly) int leftStrokeOrder;
+@property (nonatomic, readonly, retain) TSDStroke *rightStroke;
+@property (nonatomic, readonly) int rightStrokeOrder;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, retain) TSDStroke *topStroke;
+@property (nonatomic, readonly) int topStrokeOrder;
 
 + (id)cellBorder;
 + (id)cellBorderForResettingAllStrokes;

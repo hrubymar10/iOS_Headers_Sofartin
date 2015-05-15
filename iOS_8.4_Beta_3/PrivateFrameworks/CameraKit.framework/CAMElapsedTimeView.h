@@ -9,10 +9,10 @@
     NSTimer *__updateTimer;
 }
 
-@property(assign,readonly) UIImageView * _recordingImageView;
-@property(assign,readonly) NSDate * _startTime;
-@property(assign,readonly) UILabel * _timeLabel;
-@property(assign,readonly) NSTimer * _updateTimer;
+@property (nonatomic, readonly) UIImageView *_recordingImageView;
+@property (nonatomic, readonly) NSDate *_startTime;
+@property (nonatomic, readonly) UILabel *_timeLabel;
+@property (nonatomic, readonly) NSTimer *_updateTimer;
 
 - (void).cxx_destruct;
 - (void)_beginRecordingAnimation;

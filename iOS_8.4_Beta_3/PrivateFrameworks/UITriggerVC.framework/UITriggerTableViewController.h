@@ -8,13 +8,13 @@
     IDSService *_idsService;
 }
 
-@property(assign,retain) NSMutableArray * UIProviders;
-@property(assign,retain) UIAlertView * alertView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) IDSService * idsService;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSMutableArray *UIProviders;
+@property (nonatomic, retain) UIAlertView *alertView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) IDSService *idsService;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)UIProviders;

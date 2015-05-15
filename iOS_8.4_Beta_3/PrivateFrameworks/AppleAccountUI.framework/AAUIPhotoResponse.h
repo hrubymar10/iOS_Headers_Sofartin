@@ -8,9 +8,9 @@
     NSString *_serverCacheTag;
 }
 
-@property(assign,readonly) NSValue * cropRect;
-@property(assign,readonly) NSData * photoData;
-@property(assign,readonly) NSString * serverCacheTag;
+@property (nonatomic, readonly) NSValue *cropRect;
+@property (nonatomic, readonly) NSData *photoData;
+@property (nonatomic, readonly) NSString *serverCacheTag;
 
 - (void).cxx_destruct;
 - (id)cropRect;

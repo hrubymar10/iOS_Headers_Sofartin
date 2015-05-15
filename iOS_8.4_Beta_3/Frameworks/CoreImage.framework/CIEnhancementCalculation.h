@@ -20,11 +20,11 @@
     CIEnhancementHistogram *satHist;
 }
 
-@property(assign,readonly) CIEnhancementHistogram * borderHist;
-@property(assign,readonly) CIEnhancementHistogram * lumHist;
-@property(assign,readonly) struct { double x1; double x2; } originalFaceColor;
-@property(assign,readonly) CIEnhancementHistogram * rgbSumHist;
-@property(assign,readonly) CIEnhancementHistogram * satHist;
+@property (readonly) CIEnhancementHistogram *borderHist;
+@property (readonly) CIEnhancementHistogram *lumHist;
+@property (readonly) struct { double x1; double x2; } originalFaceColor;
+@property (readonly) CIEnhancementHistogram *rgbSumHist;
+@property (readonly) CIEnhancementHistogram *satHist;
 
 + (double)bestWarmthForI:(double)arg1 q:(double)arg2 percentChange:(double*)arg3;
 

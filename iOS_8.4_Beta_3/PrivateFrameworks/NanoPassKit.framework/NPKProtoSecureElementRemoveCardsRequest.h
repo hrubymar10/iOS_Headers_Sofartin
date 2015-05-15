@@ -6,7 +6,7 @@
     NSMutableArray *_cardAIDs;
 }
 
-@property(assign,retain) NSMutableArray * cardAIDs;
+@property (nonatomic, retain) NSMutableArray *cardAIDs;
 
 - (void).cxx_destruct;
 - (void)addCardAIDs:(id)arg1;

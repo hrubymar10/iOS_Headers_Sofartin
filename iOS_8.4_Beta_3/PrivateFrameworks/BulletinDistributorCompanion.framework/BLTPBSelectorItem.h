@@ -7,8 +7,8 @@
     SEL _selector;
 }
 
-@property(assign,readwrite) int (* method;
-@property(assign,readwrite) SEL selector;
+@property (nonatomic) int (*method;
+@property (nonatomic) SEL selector;
 
 - (int (*)method;
 - (SEL)selector;

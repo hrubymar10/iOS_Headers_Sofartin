@@ -7,12 +7,12 @@
     NSArray *_iTunesAccountNames;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSArray * familyMembers;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * iTunesAccountNames;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSArray *familyMembers;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *iTunesAccountNames;
+@property (readonly) Class superclass;
 
 - (id)allITunesAccountNames;
 - (id)allITunesIdentifiers;

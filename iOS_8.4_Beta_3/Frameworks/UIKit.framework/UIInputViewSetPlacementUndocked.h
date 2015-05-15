@@ -12,8 +12,8 @@
     double _normalizedOffset;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } chromeBuffer;
-@property(assign,readwrite) double normalizedOffset;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } chromeBuffer;
+@property (nonatomic) double normalizedOffset;
 
 + (id)placementWithUndockedOffset:(double)arg1 chromeBuffer:(struct UIEdgeInsets { double x1; double x2; double x3; double x4; })arg2;
 

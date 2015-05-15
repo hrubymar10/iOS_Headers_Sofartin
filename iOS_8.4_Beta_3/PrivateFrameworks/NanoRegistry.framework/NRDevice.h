@@ -11,12 +11,12 @@
     NSMutableDictionary *_properties;
 }
 
-@property(assign,retain) NSMutableDictionary * changeBlocks;
-@property(assign,retain) NSObject<OS_dispatch_queue> * nrQueue;
-@property(assign,retain) NSMutableDictionary * observers;
-@property(assign,retain) NSMutableArray * promiscuousChangeBlocks;
-@property(assign,retain) NSPointerArray * promiscuousObservers;
-@property(assign,retain) NSMutableDictionary * properties;
+@property (nonatomic, retain) NSMutableDictionary *changeBlocks;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *nrQueue;
+@property (nonatomic, retain) NSMutableDictionary *observers;
+@property (nonatomic, retain) NSMutableArray *promiscuousChangeBlocks;
+@property (nonatomic, retain) NSPointerArray *promiscuousObservers;
+@property (nonatomic, retain) NSMutableDictionary *properties;
 
 + (bool)supportsSecureCoding;
 

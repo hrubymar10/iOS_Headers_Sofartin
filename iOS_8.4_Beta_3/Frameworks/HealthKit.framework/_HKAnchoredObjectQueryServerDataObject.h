@@ -7,8 +7,8 @@
     unsigned long long _limit;
 }
 
-@property(assign,retain) NSNumber * anchor;
-@property(assign,readwrite) unsigned long long limit;
+@property (nonatomic, retain) NSNumber *anchor;
+@property (nonatomic) unsigned long long limit;
 
 + (bool)supportsSecureCoding;
 

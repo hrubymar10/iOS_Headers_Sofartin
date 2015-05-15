@@ -4,9 +4,9 @@
 
 @interface DOMHTMLLegendElement : DOMHTMLElement
 
-@property(assign,copy) NSString * accessKey;
-@property(assign,copy) NSString * align;
-@property(assign,readonly) DOMHTMLFormElement * form;
+@property (copy) NSString *accessKey;
+@property (copy) NSString *align;
+@property (readonly) DOMHTMLFormElement *form;
 
 - (id)accessKey;
 - (id)align;

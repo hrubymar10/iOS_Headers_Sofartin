@@ -25,24 +25,24 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIActivityIndicatorView * activityIndicator;
-@property(assign,retain) UIButton * cancelButton;
-@property(assign,readonly) long long cancelButtonIndex;
-@property(assign,retain) NSString * cancelButtonTitle;
-@property(assign,readwrite) <BLAlertViewControllerDelegate> * delegate;
-@property(assign,retain) UIButton * firstOtherButton;
-@property(assign,retain) NSString * firstOtherButtonTitle;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } formSize;
-@property(assign,readwrite) bool hasActivity;
-@property(assign,retain) NSString * message;
-@property(assign,retain) UILabel * messageLabel;
-@property(assign,readwrite) double progress;
-@property(assign,retain) UIProgressView * progressView;
-@property(assign,retain) UIButton * secondOtherButton;
-@property(assign,retain) NSString * secondOtherButtonTitle;
-@property(assign,readwrite) bool showsActivityIndicator;
-@property(assign,readwrite) bool showsProgressIndicator;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, retain) UIButton *cancelButton;
+@property (nonatomic, readonly) long long cancelButtonIndex;
+@property (nonatomic, retain) NSString *cancelButtonTitle;
+@property (nonatomic) <BLAlertViewControllerDelegate> *delegate;
+@property (nonatomic, retain) UIButton *firstOtherButton;
+@property (nonatomic, retain) NSString *firstOtherButtonTitle;
+@property (nonatomic) struct CGSize { double x1; double x2; } formSize;
+@property (nonatomic) bool hasActivity;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic, retain) UILabel *messageLabel;
+@property (nonatomic) double progress;
+@property (nonatomic, retain) UIProgressView *progressView;
+@property (nonatomic, retain) UIButton *secondOtherButton;
+@property (nonatomic, retain) NSString *secondOtherButtonTitle;
+@property (nonatomic) bool showsActivityIndicator;
+@property (nonatomic) bool showsProgressIndicator;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 - (void).cxx_destruct;
 - (void)_recalculateFormSize;

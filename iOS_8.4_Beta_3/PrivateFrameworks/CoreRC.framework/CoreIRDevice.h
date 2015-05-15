@@ -6,7 +6,7 @@
     bool _isLocalDevice;
 }
 
-@property(assign,readwrite) bool isLocalDevice;
+@property (nonatomic) bool isLocalDevice;
 
 + (bool)supportsSecureCoding;
 

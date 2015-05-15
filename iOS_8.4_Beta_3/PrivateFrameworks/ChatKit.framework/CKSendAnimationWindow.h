@@ -6,7 +6,7 @@
     CKGradientReferenceView *_gradientReferenceView;
 }
 
-@property(assign,retain) CKGradientReferenceView * gradientReferenceView;
+@property (nonatomic, retain) CKGradientReferenceView *gradientReferenceView;
 
 - (void)dealloc;
 - (id)gradientReferenceView;

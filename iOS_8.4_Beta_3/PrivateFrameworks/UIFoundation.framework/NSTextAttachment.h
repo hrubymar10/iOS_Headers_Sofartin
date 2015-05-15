@@ -21,16 +21,16 @@
     UITextAttachmentView *_wrapperView;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
-@property(assign,retain) UIView * contentView;
-@property(assign,retain) NSData * contents;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * fileType;
-@property(assign,retain) NSFileWrapper * fileWrapper;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
+@property (retain) UIView *contentView;
+@property (nonatomic, retain) NSData *contents;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *fileType;
+@property (nonatomic, retain) NSFileWrapper *fileWrapper;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *image;
+@property (readonly) Class superclass;
 
 + (id)imageCache;
 + (void)initialize;

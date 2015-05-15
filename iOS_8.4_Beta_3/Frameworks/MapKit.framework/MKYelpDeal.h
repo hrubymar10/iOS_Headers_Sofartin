@@ -8,13 +8,13 @@
     NSString *urlString;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * identifier;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSString * urlString;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *identifier;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *urlString;
 
 + (id)dealWithJSONObject:(id)arg1;
 

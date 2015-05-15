@@ -11,7 +11,7 @@
     NSSet *_searchTerms;
 }
 
-@property(assign,readwrite) <CoreDAVContainerQueryTaskDelegate> * delegate;
+@property (nonatomic) <CoreDAVContainerQueryTaskDelegate> *delegate;
 
 + (id)_copySearchTermsFromSearchString:(id)arg1;
 

@@ -9,10 +9,10 @@
     bool showsCandidateInline;
 }
 
-@property(assign,readwrite) bool caretBlinks;
-@property(assign,readwrite) bool receivedCandidatesInCurrentInputMode;
-@property(assign,readwrite) bool showsCandidateBar;
-@property(assign,readwrite) bool showsCandidateInline;
+@property (nonatomic) bool caretBlinks;
+@property (nonatomic) bool receivedCandidatesInCurrentInputMode;
+@property (nonatomic) bool showsCandidateBar;
+@property (nonatomic) bool showsCandidateInline;
 
 - (bool)_isAutomaticKeyboard;
 - (void)activate;

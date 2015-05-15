@@ -11,12 +11,12 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIImage * backgroundImage;
-@property(assign,copy) NSString * body;
-@property(assign,retain) UIImage * glowImage;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) long long layoutPreset;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) UIImage *backgroundImage;
+@property (nonatomic, copy) NSString *body;
+@property (nonatomic, retain) UIImage *glowImage;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) long long layoutPreset;
+@property (nonatomic, copy) NSString *title;
 
 - (id)_bodyLabel;
 - (id)_imageView;

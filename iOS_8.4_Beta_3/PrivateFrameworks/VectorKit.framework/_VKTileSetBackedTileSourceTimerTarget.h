@@ -6,7 +6,7 @@
     VKTileSetBackedTileSource *_tileSource;
 }
 
-@property(assign,readwrite) VKTileSetBackedTileSource * tileSource;
+@property (nonatomic) VKTileSetBackedTileSource *tileSource;
 
 - (void)expireTiles:(id)arg1;
 - (void)setTileSource:(id)arg1;

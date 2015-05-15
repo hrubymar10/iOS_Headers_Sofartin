@@ -13,14 +13,14 @@
     CoreDAVLeafItem *_summary;
 }
 
-@property(assign,retain) NSURL * acceptedURL;
-@property(assign,retain) CalDAVCalendarServerAccessItem * access;
-@property(assign,retain) CoreDAVLeafItem * commonName;
-@property(assign,retain) NSString * firstName;
-@property(assign,retain) CoreDAVHrefItem * href;
-@property(assign,retain) CoreDAVItemWithNoChildren * inviteStatus;
-@property(assign,retain) NSString * lastName;
-@property(assign,retain) CoreDAVLeafItem * summary;
+@property (nonatomic, retain) NSURL *acceptedURL;
+@property (nonatomic, retain) CalDAVCalendarServerAccessItem *access;
+@property (nonatomic, retain) CoreDAVLeafItem *commonName;
+@property (nonatomic, retain) NSString *firstName;
+@property (nonatomic, retain) CoreDAVHrefItem *href;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *inviteStatus;
+@property (nonatomic, retain) NSString *lastName;
+@property (nonatomic, retain) CoreDAVLeafItem *summary;
 
 - (id)acceptedURL;
 - (id)access;

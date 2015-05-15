@@ -7,12 +7,12 @@
     NSString *_installedOnDeviceID;
 }
 
-@property(assign,retain) NSData * certificatePersistentID;
-@property(assign,retain) NSDate * expiry;
-@property(assign,copy) NSString * installedOnDeviceID;
-@property(assign,readonly) bool isIdentity;
-@property(assign,readonly) bool isRoot;
-@property(assign,readonly) bool isSigned;
+@property (nonatomic, retain) NSData *certificatePersistentID;
+@property (nonatomic, readonly, retain) NSDate *expiry;
+@property (nonatomic, copy) NSString *installedOnDeviceID;
+@property (nonatomic, readonly) bool isIdentity;
+@property (nonatomic, readonly) bool isRoot;
+@property (nonatomic, readonly) bool isSigned;
 
 - (void).cxx_destruct;
 - (id)certificatePersistentID;

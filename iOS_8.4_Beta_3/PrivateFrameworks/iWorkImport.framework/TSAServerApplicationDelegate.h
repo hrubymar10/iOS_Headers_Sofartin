@@ -6,7 +6,7 @@
     TSABaseApplicationDelegate *_baseApplicationDelegate;
 }
 
-@property(assign,retain) TSABaseApplicationDelegate * baseApplicationDelegate;
+@property (nonatomic, retain) TSABaseApplicationDelegate *baseApplicationDelegate;
 
 + (id)sharedDelegate;
 

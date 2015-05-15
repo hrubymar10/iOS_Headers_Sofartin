@@ -4,15 +4,15 @@
 
 @interface SASFinishSpeech : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * endpoint;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * orderedContext;
-@property(assign,readwrite) long long packetCount;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *endpoint;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *orderedContext;
+@property (nonatomic) long long packetCount;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
 
 + (id)finishSpeech;
 + (id)finishSpeechWithDictionary:(id)arg1 context:(id)arg2;

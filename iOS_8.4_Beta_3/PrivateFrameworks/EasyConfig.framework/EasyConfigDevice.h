@@ -70,13 +70,13 @@
     NSObject<OS_dispatch_queue> *_userQueue;
 }
 
-@property(assign,copy) NSDictionary * configuration;
-@property(assign,readwrite) unsigned long long deviceIdentifier;
-@property(assign,retain) NSObject<OS_dispatch_queue> * dispatchQueue;
-@property(assign,readwrite) unsigned long long features;
-@property(assign,copy) NSString * model;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) bool pausesAfterApply;
+@property (nonatomic, copy) NSDictionary *configuration;
+@property (nonatomic) unsigned long long deviceIdentifier;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *dispatchQueue;
+@property (nonatomic) unsigned long long features;
+@property (nonatomic, copy) NSString *model;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) bool pausesAfterApply;
 
 + (id)deviceWithScanRecord:(id)arg1;
 + (bool)supportedScanRecord:(id)arg1;

@@ -7,12 +7,12 @@
     double _level;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned int identifier;
-@property(assign,readonly) double level;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned int identifier;
+@property (nonatomic, readonly) double level;
+@property (readonly) Class superclass;
 
 + (id)contextWithSceneContext:(id)arg1;
 

@@ -10,16 +10,16 @@
     bool _usingAttributedText;
 }
 
-@property(assign,readwrite) double actualFontShrinkageFactor;
-@property(assign,retain) GKTextStyle * appliedStyle;
-@property(assign,retain) GKTextStyle * baseStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double minimumScaleFactor;
-@property(assign,readwrite) bool shouldInhibitReplay;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool usingAttributedText;
+@property (nonatomic) double actualFontShrinkageFactor;
+@property (nonatomic, retain) GKTextStyle *appliedStyle;
+@property (nonatomic, retain) GKTextStyle *baseStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double minimumScaleFactor;
+@property (nonatomic) bool shouldInhibitReplay;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool usingAttributedText;
 
 + (void)initialize;
 

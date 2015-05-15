@@ -8,8 +8,8 @@
     UIImageView *_editIndicator;
 }
 
-@property(assign,readwrite) long long cellState;
-@property(assign,readonly) SKUIDownloadsCellView * cellView;
+@property (nonatomic) long long cellState;
+@property (nonatomic, readonly) SKUIDownloadsCellView *cellView;
 
 - (void).cxx_destruct;
 - (void)_reloadEditState;

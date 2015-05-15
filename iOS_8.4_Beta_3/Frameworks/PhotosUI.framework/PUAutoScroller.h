@@ -15,10 +15,10 @@
     NSTimer *_timer;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } distanceFromCenterFrame;
-@property(assign,retain) UIScrollView * scrollView;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } speed;
-@property(assign,retain) NSTimer * timer;
+@property (nonatomic) struct CGPoint { double x1; double x2; } distanceFromCenterFrame;
+@property (nonatomic, retain) UIScrollView *scrollView;
+@property (nonatomic) struct CGPoint { double x1; double x2; } speed;
+@property (nonatomic, retain) NSTimer *timer;
 
 + (void)_scrollTestFire;
 + (void)performScrollTest:(id)arg1 iterations:(unsigned long long)arg2 length:(double)arg3 delta:(double)arg4 vertical:(bool)arg5;

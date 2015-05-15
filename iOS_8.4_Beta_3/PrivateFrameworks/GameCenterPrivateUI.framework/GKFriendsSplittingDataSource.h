@@ -11,14 +11,14 @@
     NSMutableDictionary *_pickerInfos;
 }
 
-@property(assign,retain) NSString * achievementID;
-@property(assign,retain) GKFriendsDataSource * friendsDataSource;
-@property(assign,retain) GKGame * game;
-@property(assign,retain) NSSet * hiddenPlayers;
-@property(assign,retain) NSString * leaderboardID;
-@property(assign,readwrite) long long maxSelectable;
-@property(assign,retain) NSMutableDictionary * pickerInfos;
-@property(assign,retain) NSArray * selectedPlayers;
+@property (nonatomic, retain) NSString *achievementID;
+@property (nonatomic, retain) GKFriendsDataSource *friendsDataSource;
+@property (nonatomic, retain) GKGame *game;
+@property (nonatomic, retain) NSSet *hiddenPlayers;
+@property (nonatomic, retain) NSString *leaderboardID;
+@property (nonatomic) long long maxSelectable;
+@property (nonatomic, retain) NSMutableDictionary *pickerInfos;
+@property (nonatomic, retain) NSArray *selectedPlayers;
 
 - (bool)_changePickerInfo:(id)arg1 selected:(bool)arg2;
 - (id)achievementID;

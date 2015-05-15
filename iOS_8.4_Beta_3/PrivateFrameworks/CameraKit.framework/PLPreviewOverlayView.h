@@ -6,7 +6,7 @@
     CAMCameraView *cameraView;
 }
 
-@property(assign,readwrite) CAMCameraView * cameraView;
+@property (nonatomic) CAMCameraView *cameraView;
 
 - (id)cameraView;
 - (bool)pointInside:(struct CGPoint { double x1; double x2; })arg1 withEvent:(id)arg2;

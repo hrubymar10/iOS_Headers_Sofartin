@@ -11,8 +11,8 @@
     PTPCameraDeviceManager *_ptpDevManager;
 }
 
-@property(assign,readonly) NSMutableArray * browsers;
-@property(assign,readonly) NSMutableArray * devices;
+@property (readonly) NSMutableArray *browsers;
+@property (readonly) NSMutableArray *devices;
 
 + (id)defaultBrowser;
 + (bool)exists;

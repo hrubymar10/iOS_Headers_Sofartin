@@ -4,7 +4,7 @@
 
 @interface SAAnswerSocialAnswer : SAAnswerAbstractSocialPost
 
-@property(assign,copy) NSNumber * selectedAnswer;
+@property (nonatomic, copy) NSNumber *selectedAnswer;
 
 + (id)socialAnswer;
 + (id)socialAnswerWithDictionary:(id)arg1 context:(id)arg2;

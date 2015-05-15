@@ -22,16 +22,16 @@
     MusicUpNextTableView *_tableView;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readonly) MusicUpNextAggregateDataSource * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hidesNowPlaying;
-@property(assign,readonly) UIView * itemContentViewContainerView;
-@property(assign,retain) MPUAVPlayer * player;
-@property(assign,readonly) bool shouldDismissOnItemChange;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) MusicUpNextAggregateDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hidesNowPlaying;
+@property (nonatomic, readonly) UIView *itemContentViewContainerView;
+@property (nonatomic, retain) MPUAVPlayer *player;
+@property (nonatomic, readonly) bool shouldDismissOnItemChange;
+@property (readonly) Class superclass;
 
 + (id)upNextViewControllerWithPlayer:(id)arg1;
 

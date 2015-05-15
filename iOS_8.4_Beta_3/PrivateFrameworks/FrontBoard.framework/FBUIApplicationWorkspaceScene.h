@@ -16,7 +16,7 @@
     NSMutableArray *_watchdogStack;
 }
 
-@property(getter=_workspaceQueue_isTransitioningToForeground,assign,readonly) bool transitioningToForeground;
+@property (getter=_workspaceQueue_isTransitioningToForeground, nonatomic, readonly) bool transitioningToForeground;
 
 - (void)_dispatchBlockAfterProcessLaunch:(id)arg1;
 - (void)_workspaceQueue_activateForSEO:(bool)arg1 withSettings:(id)arg2 transitionContext:(id)arg3 eventBlock:(id)arg4;

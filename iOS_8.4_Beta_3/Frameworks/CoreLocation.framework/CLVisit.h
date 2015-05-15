@@ -13,13 +13,13 @@
     double _horizontalAccuracy;
 }
 
-@property(assign,copy) NSDate * arrivalDate;
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,copy) NSDate * departureDate;
-@property(assign,copy) NSDate * detectionDate;
-@property(assign,readonly) bool hasArrivalDate;
-@property(assign,readonly) bool hasDepartureDate;
-@property(assign,readonly) double horizontalAccuracy;
+@property (nonatomic, readonly, copy) NSDate *arrivalDate;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (nonatomic, readonly, copy) NSDate *departureDate;
+@property (nonatomic, readonly, copy) NSDate *detectionDate;
+@property (nonatomic, readonly) bool hasArrivalDate;
+@property (nonatomic, readonly) bool hasDepartureDate;
+@property (nonatomic, readonly) double horizontalAccuracy;
 
 + (bool)supportsSecureCoding;
 

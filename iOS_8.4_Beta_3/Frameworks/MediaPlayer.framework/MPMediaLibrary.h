@@ -71,10 +71,10 @@
     long long _removalReason;
 }
 
-@property(assign,readonly) NSString * _syncValidity;
-@property(assign,readonly) NSDate * lastModifiedDate;
-@property(assign,readonly) NSURL * protectedContentSupportStorageURL;
-@property(assign,readwrite) long long removalReason;
+@property (nonatomic, readonly) NSString *_syncValidity;
+@property (nonatomic, readonly) NSDate *lastModifiedDate;
+@property (nonatomic, readonly) NSURL *protectedContentSupportStorageURL;
+@property (nonatomic) long long removalReason;
 
 + (id)_libraryDataProviders;
 + (id)_libraryForDataProvider:(id)arg1;

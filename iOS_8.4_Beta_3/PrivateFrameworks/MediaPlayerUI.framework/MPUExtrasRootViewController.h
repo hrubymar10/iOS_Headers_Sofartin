@@ -15,19 +15,19 @@
     <IKAppDataStoring> *_vendorStorage;
 }
 
-@property(assign,retain) IKAppContext * applicationContext;
-@property(assign,retain) MPUExtrasArtworkDataSource * artworkDataSource;
-@property(assign,readonly) MPUExtrasContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) MPUExtrasFeatureContainerViewController * featureContainer;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <IKAppDataStoring> * localStorage;
-@property(assign,readonly) UIView * mainMenuBar;
-@property(assign,retain) MPUExtrasMainTemplateViewController * mainTemplateViewController;
-@property(assign,readonly) UINavigationController * navigationController;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) <IKAppDataStoring> * vendorStorage;
+@property (nonatomic, retain) IKAppContext *applicationContext;
+@property (nonatomic, retain) MPUExtrasArtworkDataSource *artworkDataSource;
+@property (nonatomic, readonly) MPUExtrasContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) MPUExtrasFeatureContainerViewController *featureContainer;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <IKAppDataStoring> *localStorage;
+@property (nonatomic, readonly) UIView *mainMenuBar;
+@property (nonatomic, retain) MPUExtrasMainTemplateViewController *mainTemplateViewController;
+@property (nonatomic, readonly) UINavigationController *navigationController;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) <IKAppDataStoring> *vendorStorage;
 
 + (id)currentController;
 

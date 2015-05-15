@@ -19,12 +19,12 @@
     NSString *_threadLocalHandleKey;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MFMailMessageLibraryDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) int protectedDataAvailability;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MFMailMessageLibraryDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) int protectedDataAvailability;
+@property (readonly) Class superclass;
 
 + (void)_removeLibrary:(bool)arg1 atPath:(id)arg2;
 + (id)defaultInstance;

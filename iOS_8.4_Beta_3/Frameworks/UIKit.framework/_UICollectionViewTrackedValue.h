@@ -10,8 +10,8 @@
     long long _valuesCount;
 }
 
-@property(assign,readwrite) bool isAccumulating;
-@property(assign,readwrite) double trackedValue;
+@property (nonatomic) bool isAccumulating;
+@property (nonatomic) double trackedValue;
 
 - (void)addValue:(double)arg1;
 - (id)init;

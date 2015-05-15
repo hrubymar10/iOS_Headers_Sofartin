@@ -7,12 +7,12 @@
     NSArray *_data;
 }
 
-@property(assign,retain) NSString * cachedStringValue;
-@property(assign,retain) NSArray * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSString *cachedStringValue;
+@property (nonatomic, retain) NSArray *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)EditScriptDataWithArray:(id)arg1;
 + (id)EditScriptDataWithString:(id)arg1 chunkSize:(long long)arg2;

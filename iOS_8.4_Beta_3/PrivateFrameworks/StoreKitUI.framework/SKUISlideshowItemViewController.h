@@ -16,15 +16,15 @@
     bool _zoomingGestureThresholdBroken;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUISlideshowItemViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUISlideshowImageScrollView * imageScrollView;
-@property(assign,readwrite) long long indexInCollection;
-@property(assign,retain) UIImage * itemImage;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUISlideshowItemViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUISlideshowImageScrollView *imageScrollView;
+@property (nonatomic) long long indexInCollection;
+@property (nonatomic, retain) UIImage *itemImage;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_gestureRecognizer:(id)arg1 canBePreventedByGestureRecognizer:(id)arg2;

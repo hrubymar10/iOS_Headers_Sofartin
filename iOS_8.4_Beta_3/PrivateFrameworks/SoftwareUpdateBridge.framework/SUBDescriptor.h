@@ -22,25 +22,25 @@
     bool _willProceedWithInstallation;
 }
 
-@property(assign,retain) NSError * denialReasons;
-@property(assign,retain) SUBDocumentation * documentation;
-@property(assign,retain) NSString * documentationID;
-@property(assign,readwrite) long long downloadSize;
-@property(assign,retain) NSString * humanReadableUpdateName;
-@property(assign,readwrite) long long installationSize;
-@property(assign,readwrite) bool isAwaitingAdmissionControlForInstallation;
-@property(assign,retain) NSString * marketingVersion;
-@property(assign,readwrite) long long msuHandle;
-@property(assign,readwrite) long long msuPrepareSize;
-@property(assign,readonly) long long preparationSize;
-@property(assign,retain) NSString * productBuildVersion;
-@property(assign,retain) NSString * productSystemName;
-@property(assign,retain) NSString * productVersion;
-@property(assign,retain) NSString * publisher;
-@property(assign,readwrite) long long totalRequiredFreeSpace;
-@property(assign,readwrite) long long unarchivedSize;
-@property(assign,readwrite) bool userDidAcceptTermsAndConditions;
-@property(assign,readwrite) bool willProceedWithInstallation;
+@property (nonatomic, retain) NSError *denialReasons;
+@property (nonatomic, retain) SUBDocumentation *documentation;
+@property (nonatomic, retain) NSString *documentationID;
+@property (nonatomic) long long downloadSize;
+@property (nonatomic, readonly, retain) NSString *humanReadableUpdateName;
+@property (nonatomic) long long installationSize;
+@property (nonatomic) bool isAwaitingAdmissionControlForInstallation;
+@property (nonatomic, retain) NSString *marketingVersion;
+@property (nonatomic) long long msuHandle;
+@property (nonatomic) long long msuPrepareSize;
+@property (nonatomic, readonly) long long preparationSize;
+@property (nonatomic, retain) NSString *productBuildVersion;
+@property (nonatomic, retain) NSString *productSystemName;
+@property (nonatomic, retain) NSString *productVersion;
+@property (nonatomic, retain) NSString *publisher;
+@property (nonatomic) long long totalRequiredFreeSpace;
+@property (nonatomic) long long unarchivedSize;
+@property (nonatomic) bool userDidAcceptTermsAndConditions;
+@property (nonatomic) bool willProceedWithInstallation;
 
 + (bool)supportsSecureCoding;
 

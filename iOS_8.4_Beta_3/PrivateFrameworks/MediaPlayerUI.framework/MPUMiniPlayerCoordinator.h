@@ -12,14 +12,14 @@
     UIViewController *_viewController;
 }
 
-@property(assign,readonly) UINavigationController * _navigationController;
-@property(assign,readonly) MPUMiniPlayerPlaybackControlsView * _playbackControlsView;
-@property(assign,readonly) UIViewController * _viewController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MPAVController * player;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) UINavigationController *_navigationController;
+@property (nonatomic, readonly) MPUMiniPlayerPlaybackControlsView *_playbackControlsView;
+@property (nonatomic, readonly) UIViewController *_viewController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MPAVController *player;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_currentProspectivePlaybackInformation;

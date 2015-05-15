@@ -9,10 +9,10 @@
     bool _valid;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,readwrite) <PSYConnectionDelegate> * delegate;
-@property(assign,retain) PSYOptions * options;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (nonatomic) <PSYConnectionDelegate> *delegate;
+@property (nonatomic, retain) PSYOptions *options;
+@property (getter=isValid, nonatomic, readonly) bool valid;
 
 - (void).cxx_destruct;
 - (void)_handleConnectionInterruption;

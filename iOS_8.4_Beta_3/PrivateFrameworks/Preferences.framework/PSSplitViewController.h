@@ -7,8 +7,8 @@
     <PSSplitViewControllerNavigationDelegate> *_navigationDelegate;
 }
 
-@property(assign,retain) PSRootController * containerNavigationController;
-@property(assign,readwrite) <PSSplitViewControllerNavigationDelegate> * navigationDelegate;
+@property (nonatomic, retain) PSRootController *containerNavigationController;
+@property (nonatomic) <PSSplitViewControllerNavigationDelegate> *navigationDelegate;
 
 - (id)childViewControllerForStatusBarStyle;
 - (id)containerNavigationController;

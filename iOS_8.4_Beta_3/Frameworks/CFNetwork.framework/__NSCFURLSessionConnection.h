@@ -27,13 +27,13 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) <SessionConnectionDelegate> * delegate;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * delegateQueue;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSURLSessionTask * task;
+@property (readonly, copy) NSString *debugDescription;
+@property (retain) <SessionConnectionDelegate> *delegate;
+@property NSObject<OS_dispatch_queue> *delegateQueue;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (copy) NSURLSessionTask *task;
 
 - (void)_cleanup;
 - (void)_conditionalRequirementsChanged:(bool)arg1;

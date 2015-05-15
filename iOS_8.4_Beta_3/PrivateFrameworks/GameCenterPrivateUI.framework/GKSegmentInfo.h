@@ -9,15 +9,15 @@
     NSString *_title;
 }
 
-@property(assign,retain) GKCollectionViewDataSource * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <GKSegmentInfoDelegagte> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) GKPlaceholderContentStateMachine * loadingMatchine;
-@property(assign,retain) NSString * loadingState;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) GKCollectionViewDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <GKSegmentInfoDelegagte> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) GKPlaceholderContentStateMachine *loadingMatchine;
+@property (nonatomic, retain) NSString *loadingState;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSString *title;
 
 - (id)dataSource;
 - (void)dealloc;

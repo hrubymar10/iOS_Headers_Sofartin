@@ -8,11 +8,11 @@
     void *_reserved;
 }
 
-@property(assign,copy) NSString * attribute;
-@property(assign,readonly) unsigned long long resultCount;
-@property(assign,copy) NSArray * results;
-@property(assign,copy) NSArray * subgroups;
-@property(assign,retain) id value;
+@property (readonly, copy) NSString *attribute;
+@property (readonly) unsigned long long resultCount;
+@property (readonly, copy) NSArray *results;
+@property (readonly, copy) NSArray *subgroups;
+@property (readonly, retain) id value;
 
 - (void)_addResult:(unsigned long long)arg1;
 - (id)_init:(id)arg1 attributes:(id)arg2 index:(unsigned long long)arg3 value:(id)arg4;

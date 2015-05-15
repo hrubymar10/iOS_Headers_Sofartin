@@ -6,7 +6,7 @@
     id _buttonHandler;
 }
 
-@property(assign,copy) id buttonHandler;
+@property (nonatomic, copy) id buttonHandler;
 
 - (id)buttonHandler;
 - (bool)isSelectable;

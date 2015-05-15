@@ -7,8 +7,8 @@
     _UIBackdropViewSettings *_effectSettings;
 }
 
-@property(assign,readonly) _UIVisualEffectConfig * effectConfig;
-@property(assign,readonly) _UIBackdropViewSettings * effectSettings;
+@property (nonatomic, readonly) _UIVisualEffectConfig *effectConfig;
+@property (nonatomic, readonly) _UIBackdropViewSettings *effectSettings;
 
 + (bool)supportsSecureCoding;
 

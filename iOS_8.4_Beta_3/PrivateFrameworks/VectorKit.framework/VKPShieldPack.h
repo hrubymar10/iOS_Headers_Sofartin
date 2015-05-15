@@ -7,8 +7,8 @@
     NSMutableArray *_shields;
 }
 
-@property(assign,retain) NSMutableArray * atlas;
-@property(assign,retain) NSMutableArray * shields;
+@property (nonatomic, retain) NSMutableArray *atlas;
+@property (nonatomic, retain) NSMutableArray *shields;
 
 - (void)addAtlas:(id)arg1;
 - (void)addShields:(id)arg1;

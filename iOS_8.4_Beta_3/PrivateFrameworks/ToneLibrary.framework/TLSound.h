@@ -8,9 +8,9 @@
     unsigned int _soundID;
 }
 
-@property(setter=_setShouldDisposeOfSoundID:,assign,readwrite) bool _shouldDisposeOfSoundID;
-@property(assign,copy) NSString * filePath;
-@property(assign,readwrite) unsigned int soundID;
+@property (setter=_setShouldDisposeOfSoundID:, nonatomic) bool _shouldDisposeOfSoundID;
+@property (nonatomic, copy) NSString *filePath;
+@property (nonatomic) unsigned int soundID;
 
 - (void)_setFilePath:(id)arg1;
 - (void)_setShouldDisposeOfSoundID:(bool)arg1;

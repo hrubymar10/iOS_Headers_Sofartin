@@ -10,9 +10,9 @@
     id _sensorDatumComparisonBlock;
 }
 
-@property(assign,readwrite) double bufferAggregationInterval;
-@property(assign,copy) id objectCreationBlock;
-@property(assign,copy) id sensorDatumComparisonBlock;
+@property (nonatomic) double bufferAggregationInterval;
+@property (nonatomic, copy) id objectCreationBlock;
+@property (nonatomic, copy) id sensorDatumComparisonBlock;
 
 - (void).cxx_destruct;
 - (bool)_bufferLengthAchieved:(double)arg1 buffer:(id)arg2 lastProcessedDatum:(id)arg3;

@@ -7,8 +7,8 @@
     NSDictionary *_payload;
 }
 
-@property(assign,retain) NSError * error;
-@property(assign,retain) NSDictionary * payload;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, retain) NSDictionary *payload;
 
 + (id)messageWithPayload:(id)arg1;
 

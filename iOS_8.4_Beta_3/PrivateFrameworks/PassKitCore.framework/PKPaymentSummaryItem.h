@@ -7,8 +7,8 @@
     NSString *_label;
 }
 
-@property(assign,copy) NSDecimalNumber * amount;
-@property(assign,copy) NSString * label;
+@property (nonatomic, copy) NSDecimalNumber *amount;
+@property (nonatomic, copy) NSString *label;
 
 + (id)summaryItemWithLabel:(id)arg1 amount:(id)arg2;
 + (bool)supportsSecureCoding;

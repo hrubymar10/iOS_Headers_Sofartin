@@ -10,7 +10,7 @@
     } _range;
 }
 
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
 
 + (id)rangedFilterWithConsumer:(id)arg1 range:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg2;
 + (id)rangedFilterWithConsumers:(id)arg1 range:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg2;

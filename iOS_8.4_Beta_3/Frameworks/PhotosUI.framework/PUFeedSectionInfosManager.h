@@ -13,7 +13,7 @@
     NSMapTable *_sectionInfosByCloudFeedEntry;
 }
 
-@property(assign,readwrite) <PUFeedSectionInfosManagerDelegate> * delegate;
+@property (nonatomic) <PUFeedSectionInfosManagerDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_didFinishPostingNotifications:(id)arg1;

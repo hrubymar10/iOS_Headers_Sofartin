@@ -7,8 +7,8 @@
     NSString *mName;
 }
 
-@property(assign,readonly) NSData * data;
-@property(assign,readonly) NSString * name;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic, readonly) NSString *name;
 
 + (id)namedDataWithData:(id)arg1 named:(id)arg2;
 

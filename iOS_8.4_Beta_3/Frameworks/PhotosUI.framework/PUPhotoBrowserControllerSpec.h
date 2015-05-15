@@ -6,19 +6,19 @@
     PUAvalancheReviewControllerSpec *_avalancheReviewControllerSpec;
 }
 
-@property(assign,readonly) PUAvalancheReviewControllerSpec * avalancheReviewControllerSpec;
-@property(assign,readonly) bool isInCamera;
-@property(assign,readonly) int photoThumbnailFormat;
-@property(assign,readonly) bool shouldShowAirplayItem;
-@property(assign,readonly) bool shouldShowBackButtonTitle;
-@property(assign,readonly) bool shouldShowDeleteItem;
-@property(assign,readonly) bool shouldShowEditItem;
-@property(assign,readonly) bool shouldShowPhotoScrubber;
-@property(assign,readonly) bool shouldShowShareItem;
-@property(assign,readonly) bool shouldShowSlideshowItem;
-@property(assign,readonly) unsigned long long supportedInterfaceOrientations;
-@property(assign,readonly) bool wantsCompactCommentsLayout;
-@property(assign,readonly) bool wantsSubtitleForPhotobrowserTitleInLandscape;
+@property (nonatomic, readonly) PUAvalancheReviewControllerSpec *avalancheReviewControllerSpec;
+@property (nonatomic, readonly) bool isInCamera;
+@property (nonatomic, readonly) int photoThumbnailFormat;
+@property (nonatomic, readonly) bool shouldShowAirplayItem;
+@property (nonatomic, readonly) bool shouldShowBackButtonTitle;
+@property (nonatomic, readonly) bool shouldShowDeleteItem;
+@property (nonatomic, readonly) bool shouldShowEditItem;
+@property (nonatomic, readonly) bool shouldShowPhotoScrubber;
+@property (nonatomic, readonly) bool shouldShowShareItem;
+@property (nonatomic, readonly) bool shouldShowSlideshowItem;
+@property (nonatomic, readonly) unsigned long long supportedInterfaceOrientations;
+@property (nonatomic, readonly) bool wantsCompactCommentsLayout;
+@property (nonatomic, readonly) bool wantsSubtitleForPhotobrowserTitleInLandscape;
 
 - (void).cxx_destruct;
 - (id)avalancheReviewControllerSpec;

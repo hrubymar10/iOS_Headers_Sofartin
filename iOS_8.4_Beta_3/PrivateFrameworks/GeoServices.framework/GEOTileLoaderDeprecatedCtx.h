@@ -14,10 +14,10 @@
     GEOTileKeyList *_submittedList;
 }
 
-@property(assign,readonly) id callback;
-@property(assign,copy) id error;
-@property(assign,copy) id finished;
-@property(assign,copy) id progress;
+@property (nonatomic, readonly) id callback;
+@property (nonatomic, copy) id error;
+@property (nonatomic, copy) id finished;
+@property (nonatomic, copy) id progress;
 
 - (void)breakCycle;
 - (id)callback;

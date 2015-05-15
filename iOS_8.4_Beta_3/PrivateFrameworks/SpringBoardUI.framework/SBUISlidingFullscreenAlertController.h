@@ -9,8 +9,8 @@
     UIView *_topBar;
 }
 
-@property(assign,readonly) UIView * bottomBar;
-@property(assign,readonly) UIView * topBar;
+@property (nonatomic, readonly) UIView *bottomBar;
+@property (nonatomic, readonly) UIView *topBar;
 
 - (bool)_animatingToHomescreenWallpaper;
 - (double)_animationDelayForOthersActivation;

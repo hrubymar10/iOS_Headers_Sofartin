@@ -8,9 +8,9 @@
     UIView *_styledSeparatorView;
 }
 
-@property(assign,retain) UIButton * addCommentButton;
-@property(assign,retain) UILabel * contentLabel;
-@property(assign,retain) UIView * styledSeparatorView;
+@property (nonatomic, readonly, retain) UIButton *addCommentButton;
+@property (nonatomic, readonly, retain) UILabel *contentLabel;
+@property (nonatomic, readonly, retain) UIView *styledSeparatorView;
 
 + (double)heightForWidth:(double)arg1;
 

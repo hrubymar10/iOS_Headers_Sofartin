@@ -7,8 +7,8 @@
     ML3StatementCacheNode *_next;
 }
 
-@property(assign,copy) NSObject<NSCopying> * dictionaryKey;
-@property(assign,retain) ML3StatementCacheNode * next;
+@property (nonatomic, copy) NSObject<NSCopying> *dictionaryKey;
+@property (nonatomic, retain) ML3StatementCacheNode *next;
 
 - (void).cxx_destruct;
 - (id)description;

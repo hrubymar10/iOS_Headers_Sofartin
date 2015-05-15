@@ -8,9 +8,9 @@
     NSString *_name;
 }
 
-@property(assign,copy) NSData * data;
-@property(assign,copy) NSString * mimeType;
-@property(assign,copy) NSString * name;
+@property (nonatomic, readonly, copy) NSData *data;
+@property (nonatomic, readonly, copy) NSString *mimeType;
+@property (nonatomic, readonly, copy) NSString *name;
 
 + (id)logWithData:(id)arg1 mimeType:(id)arg2 name:(id)arg3 attemptCompression:(bool)arg4;
 

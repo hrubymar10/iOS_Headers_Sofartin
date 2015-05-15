@@ -14,15 +14,15 @@
     CoreDAVLeafItem *_uid;
 }
 
-@property(assign,retain) CalDAVCalendarServerAccessItem * access;
-@property(assign,retain) CoreDAVItemWithNoChildren * calendarPublic;
-@property(assign,retain) CoreDAVItemWithHrefChildItem * hostURL;
-@property(assign,retain) CoreDAVHrefItem * href;
-@property(assign,retain) CoreDAVItemWithNoChildren * inviteStatus;
-@property(assign,retain) CalDAVCalendarServerOrganizerItem * organizer;
-@property(assign,retain) CoreDAVLeafItem * summary;
-@property(assign,retain) CalDAVSupportedCalendarComponentSet * supportedCalendarComponentSet;
-@property(assign,retain) CoreDAVLeafItem * uid;
+@property (nonatomic, retain) CalDAVCalendarServerAccessItem *access;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *calendarPublic;
+@property (nonatomic, retain) CoreDAVItemWithHrefChildItem *hostURL;
+@property (nonatomic, retain) CoreDAVHrefItem *href;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *inviteStatus;
+@property (nonatomic, retain) CalDAVCalendarServerOrganizerItem *organizer;
+@property (nonatomic, retain) CoreDAVLeafItem *summary;
+@property (nonatomic, retain) CalDAVSupportedCalendarComponentSet *supportedCalendarComponentSet;
+@property (nonatomic, retain) CoreDAVLeafItem *uid;
 
 - (id)access;
 - (id)calendarPublic;

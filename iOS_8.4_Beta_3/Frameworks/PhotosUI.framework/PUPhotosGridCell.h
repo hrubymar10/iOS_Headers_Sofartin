@@ -26,17 +26,17 @@
     bool _transitionIsAppearing;
 }
 
-@property(getter=isCloudIconVisible,assign,readwrite) bool cloudIconVisible;
-@property(assign,readwrite) int currentImageRequestID;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } fillerEdgeInsets;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,retain) PUPhotoView * photoContentView;
-@property(assign,retain) NSNumber * progress;
-@property(getter=isSelectionBadgeVisible,assign,readwrite) bool selectionBadgeVisible;
-@property(assign,retain) PUPhotoView * temporaryPhotoContentView;
-@property(assign,readonly) UIView * transitionFillerView;
-@property(assign,readwrite) bool transitionFillerViewEnabled;
-@property(assign,readwrite) bool transitionIsAppearing;
+@property (getter=isCloudIconVisible, nonatomic) bool cloudIconVisible;
+@property (nonatomic) int currentImageRequestID;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } fillerEdgeInsets;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic, retain) PUPhotoView *photoContentView;
+@property (nonatomic, retain) NSNumber *progress;
+@property (getter=isSelectionBadgeVisible, nonatomic) bool selectionBadgeVisible;
+@property (nonatomic, retain) PUPhotoView *temporaryPhotoContentView;
+@property (nonatomic, readonly) UIView *transitionFillerView;
+@property (nonatomic) bool transitionFillerViewEnabled;
+@property (nonatomic) bool transitionIsAppearing;
 
 + (Class)_contentViewClass;
 

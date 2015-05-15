@@ -7,7 +7,7 @@
     NSArray *_textRepresentations;
 }
 
-@property(assign,copy) NSArray * textRepresentations;
+@property (nonatomic, copy) NSArray *textRepresentations;
 
 - (void).cxx_destruct;
 - (void)_calculateTextSizes;

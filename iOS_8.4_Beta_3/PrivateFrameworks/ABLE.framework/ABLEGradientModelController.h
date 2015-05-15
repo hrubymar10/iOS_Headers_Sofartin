@@ -21,21 +21,21 @@
     double recurrence;
 }
 
-@property(assign,retain) NSDictionary * configuration;
-@property(assign,readonly) ABLECoreDuetController * coreDuetController;
-@property(assign,readwrite) unsigned long long currentBON;
-@property(assign,readonly) unsigned long long currentShortBON;
-@property(assign,readwrite) bool enabled;
-@property(assign,retain) NSDate * expiryDate;
-@property(assign,readonly) ABLEGradient * gradient;
-@property(assign,readwrite) double historyPeriodRequired;
-@property(assign,retain) NSArray * lastData;
-@property(assign,retain) NSDate * lastDate;
-@property(assign,readonly) float lastGradient;
-@property(assign,retain) NSMutableArray * lastShortData;
-@property(assign,readonly) float lastShortGradient;
-@property(assign,readonly) double lifetime;
-@property(assign,readonly) double recurrence;
+@property (retain) NSDictionary *configuration;
+@property (readonly) ABLECoreDuetController *coreDuetController;
+@property unsigned long long currentBON;
+@property (readonly) unsigned long long currentShortBON;
+@property bool enabled;
+@property (retain) NSDate *expiryDate;
+@property (readonly) ABLEGradient *gradient;
+@property double historyPeriodRequired;
+@property (retain) NSArray *lastData;
+@property (retain) NSDate *lastDate;
+@property (readonly) float lastGradient;
+@property (retain) NSMutableArray *lastShortData;
+@property (readonly) float lastShortGradient;
+@property (readonly) double lifetime;
+@property (readonly) double recurrence;
 
 - (void).cxx_destruct;
 - (void)calculateBONForCurrentLevel:(float)arg1 andChargeState:(bool)arg2 atDate:(id)arg3 onQueue:(id)arg4 usingHandler:(id)arg5;

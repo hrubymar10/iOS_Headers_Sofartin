@@ -8,8 +8,8 @@
     bool _keepAlive;
 }
 
-@property(assign,retain) NSData * artworkData;
-@property(assign,retain) NSString * artworkIdentifier;
+@property (nonatomic, retain) NSData *artworkData;
+@property (nonatomic, retain) NSString *artworkIdentifier;
 
 - (void).cxx_destruct;
 - (id)artworkData;

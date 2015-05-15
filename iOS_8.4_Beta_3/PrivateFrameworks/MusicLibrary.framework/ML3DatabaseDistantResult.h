@@ -9,9 +9,9 @@
     NSString *_sql;
 }
 
-@property(assign,readonly) ML3DatabaseDistantConnection * distantConnection;
-@property(assign,readonly) NSArray * parameters;
-@property(assign,readonly) NSString * sql;
+@property (nonatomic, readonly) ML3DatabaseDistantConnection *distantConnection;
+@property (nonatomic, readonly) NSArray *parameters;
+@property (nonatomic, readonly) NSString *sql;
 
 - (void).cxx_destruct;
 - (bool)_fetchRowsIfEmpty;

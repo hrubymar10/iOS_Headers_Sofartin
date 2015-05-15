@@ -10,11 +10,11 @@
     NSMutableArray *_propertyItems;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isPresentingModalViewController;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isPresentingModalViewController;
+@property (readonly) Class superclass;
 
 + (id)cellIdentifierForClass:(Class)arg1;
 + (id)cellIdentifierForEditingProperty:(id)arg1;

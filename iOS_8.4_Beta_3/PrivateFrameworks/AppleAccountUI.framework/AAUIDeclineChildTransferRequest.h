@@ -6,7 +6,7 @@
     NSString *_requestCode;
 }
 
-@property(assign,copy) NSString * requestCode;
+@property (nonatomic, copy) NSString *requestCode;
 
 - (void).cxx_destruct;
 - (bool)isUserInitiated;

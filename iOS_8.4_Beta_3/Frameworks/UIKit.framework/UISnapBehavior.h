@@ -20,7 +20,7 @@
     } _stateFlags;
 }
 
-@property(assign,readwrite) double damping;
+@property (nonatomic) double damping;
 
 - (void)_associate;
 - (void)_dissociate;

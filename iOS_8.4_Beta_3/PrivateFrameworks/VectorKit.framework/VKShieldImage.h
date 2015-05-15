@@ -9,7 +9,7 @@
     } _center;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } center;
+@property (readonly) struct CGPoint { double x1; double x2; } center;
 
 - (id).cxx_construct;
 - (struct CGPoint { double x1; double x2; })center;

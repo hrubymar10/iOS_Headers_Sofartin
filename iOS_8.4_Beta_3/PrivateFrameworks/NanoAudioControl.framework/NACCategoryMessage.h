@@ -6,8 +6,8 @@
     NSString *_category;
 }
 
-@property(assign,retain) NSString * category;
-@property(assign,readonly) bool hasCategory;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic, readonly) bool hasCategory;
 
 - (void).cxx_destruct;
 - (id)category;

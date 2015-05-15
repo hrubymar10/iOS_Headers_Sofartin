@@ -12,12 +12,12 @@
     id _updateCompletionHandler;
 }
 
-@property(assign,readwrite) <StockUpdaterDelegate> * delegate;
-@property(assign,readonly) bool forceUpdate;
-@property(assign,readonly) bool isComprehensive;
-@property(assign,retain) NSArray * pendingStocks;
-@property(assign,retain) NSArray * requestStocks;
-@property(assign,copy) id updateCompletionHandler;
+@property (nonatomic) <StockUpdaterDelegate> *delegate;
+@property (nonatomic, readonly) bool forceUpdate;
+@property (nonatomic, readonly) bool isComprehensive;
+@property (nonatomic, retain) NSArray *pendingStocks;
+@property (nonatomic, retain) NSArray *requestStocks;
+@property (nonatomic, copy) id updateCompletionHandler;
 
 - (void).cxx_destruct;
 - (id)_parseDataSourceMapFromDataSourceDictionaries:(id)arg1;

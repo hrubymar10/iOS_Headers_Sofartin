@@ -30,13 +30,13 @@
     long long _state;
 }
 
-@property(assign,retain) NSNumber * RSSI;
-@property(assign,readwrite) <CBPeripheralDelegate> * delegate;
-@property(assign,readonly) bool isConnected;
-@property(assign,readonly) bool isConnectedToSystem;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSArray * services;
-@property(assign,readwrite) long long state;
+@property (retain) NSNumber *RSSI;
+@property (nonatomic) <CBPeripheralDelegate> *delegate;
+@property (readonly) bool isConnected;
+@property (nonatomic, readonly) bool isConnectedToSystem;
+@property (retain) NSString *name;
+@property (retain) NSArray *services;
+@property long long state;
 
 - (id)RSSI;
 - (id)attributeForHandle:(id)arg1;

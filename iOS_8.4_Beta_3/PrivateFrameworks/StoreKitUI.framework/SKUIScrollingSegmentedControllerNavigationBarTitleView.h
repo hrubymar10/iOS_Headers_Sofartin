@@ -10,7 +10,7 @@
     SKUIScrollingSegmentedController *_owningController;
 }
 
-@property(assign,readwrite) SKUIScrollingSegmentedController * owningController;
+@property (nonatomic) SKUIScrollingSegmentedController *owningController;
 
 - (void).cxx_destruct;
 - (struct CGSize { double x1; double x2; })_navigationBarTitleViewSizeWithDesiredValue:(struct CGSize { double x1; double x2; })arg1 originalValue:(struct CGSize { double x1; double x2; })arg2;

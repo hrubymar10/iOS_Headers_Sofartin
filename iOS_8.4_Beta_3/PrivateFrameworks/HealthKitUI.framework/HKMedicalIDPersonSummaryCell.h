@@ -15,9 +15,9 @@
     bool _resetFormatters;
 }
 
-@property(assign,retain) NSDate * birthdate;
-@property(assign,retain) NSString * name;
-@property(assign,retain) UIImage * picture;
+@property (nonatomic, retain) NSDate *birthdate;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) UIImage *picture;
 
 - (void).cxx_destruct;
 - (void)_contentSizeCategoryDidChange:(id)arg1;

@@ -4,18 +4,18 @@
 
 @interface DOMHTMLSelectElement : DOMHTMLElement
 
-@property(assign,readwrite) bool autofocus;
-@property(assign,readwrite) bool disabled;
-@property(assign,readonly) DOMHTMLFormElement * form;
-@property(assign,readonly) int length;
-@property(assign,readwrite) bool multiple;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) DOMHTMLOptionsCollection * options;
-@property(assign,readwrite) int selectedIndex;
-@property(assign,readwrite) int size;
-@property(assign,copy) NSString * type;
-@property(assign,copy) NSString * value;
-@property(assign,readonly) bool willValidate;
+@property bool autofocus;
+@property bool disabled;
+@property (readonly) DOMHTMLFormElement *form;
+@property (readonly) int length;
+@property bool multiple;
+@property (copy) NSString *name;
+@property (readonly) DOMHTMLOptionsCollection *options;
+@property int selectedIndex;
+@property int size;
+@property (readonly, copy) NSString *type;
+@property (copy) NSString *value;
+@property (readonly) bool willValidate;
 
 - (void)_activateItemAtIndex:(int)arg1;
 - (void)_activateItemAtIndex:(int)arg1 allowMultipleSelection:(bool)arg2;

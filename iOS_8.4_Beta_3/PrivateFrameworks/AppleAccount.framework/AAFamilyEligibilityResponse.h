@@ -11,14 +11,14 @@
     NSString *_underageEligibilityAlertTitle;
 }
 
-@property(assign,readonly) long long eligibilityStatus;
-@property(assign,readonly) bool eligible;
-@property(assign,readonly) NSArray * familyFeaturePrimaryDescriptions;
-@property(assign,readonly) NSArray * familyFeatureSecondaryDescriptions;
-@property(assign,readonly) NSString * familyFeatureSecondaryTitle;
-@property(assign,readonly) bool hasPendingInvites;
-@property(assign,readonly) NSString * underageEligibilityAlertMessage;
-@property(assign,readonly) NSString * underageEligibilityAlertTitle;
+@property (nonatomic, readonly) long long eligibilityStatus;
+@property (nonatomic, readonly) bool eligible;
+@property (nonatomic, readonly) NSArray *familyFeaturePrimaryDescriptions;
+@property (nonatomic, readonly) NSArray *familyFeatureSecondaryDescriptions;
+@property (nonatomic, readonly) NSString *familyFeatureSecondaryTitle;
+@property (nonatomic, readonly) bool hasPendingInvites;
+@property (nonatomic, readonly) NSString *underageEligibilityAlertMessage;
+@property (nonatomic, readonly) NSString *underageEligibilityAlertTitle;
 
 - (void).cxx_destruct;
 - (long long)eligibilityStatus;

@@ -8,9 +8,9 @@
     <ABDatePickerViewControllerDismissDelegate> *_dismissDelegate;
 }
 
-@property(assign,readwrite) void* context;
-@property(assign,retain) UIDatePicker * datePicker;
-@property(assign,readwrite) <ABDatePickerViewControllerDismissDelegate> * dismissDelegate;
+@property (nonatomic) void*context;
+@property (nonatomic, retain) UIDatePicker *datePicker;
+@property (nonatomic) <ABDatePickerViewControllerDismissDelegate> *dismissDelegate;
 
 + (struct CGSize { double x1; double x2; })datePickerSize;
 

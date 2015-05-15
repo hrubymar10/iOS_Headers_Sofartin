@@ -8,9 +8,9 @@
     NSString *mScreenTip;
 }
 
-@property(assign,retain) NSString * hyperlink1;
-@property(assign,retain) NSString * hyperlink2;
-@property(assign,retain) NSString * screenTip;
+@property (nonatomic, retain) NSString *hyperlink1;
+@property (nonatomic, retain) NSString *hyperlink2;
+@property (nonatomic, retain) NSString *screenTip;
 
 - (void)dealloc;
 - (id)hyperlink1;

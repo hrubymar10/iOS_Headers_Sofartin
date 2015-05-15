@@ -7,8 +7,8 @@
     unsigned char _tipDirection;
 }
 
-@property(assign,retain) UIImage * templateImage;
-@property(assign,readwrite) unsigned char tipDirection;
+@property (nonatomic, retain) UIImage *templateImage;
+@property (nonatomic) unsigned char tipDirection;
 
 - (unsigned char)_tipDirectionForCurrentUILayoutDirection;
 - (void)dealloc;

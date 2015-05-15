@@ -4,8 +4,8 @@
 
 @interface PUFiltersToolControllerSpec : PUPhotoEditToolControllerSpec
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } thumbnailCellSize;
-@property(assign,readonly) double thumbnailEdgeMaxLength;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } thumbnailCellSize;
+@property (nonatomic, readonly) double thumbnailEdgeMaxLength;
 
 - (void)configureThumbnailsCollectionLayout:(id)arg1;
 - (struct CGSize { double x1; double x2; })thumbnailCellSize;

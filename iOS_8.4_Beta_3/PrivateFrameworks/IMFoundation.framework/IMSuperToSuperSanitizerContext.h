@@ -13,8 +13,8 @@
     unsigned long long _offset;
 }
 
-@property(assign,retain) NSArray * attachments;
-@property(assign,retain) NSAttributedString * sanitizedContent;
+@property (readonly, retain) NSArray *attachments;
+@property (readonly, retain) NSAttributedString *sanitizedContent;
 
 - (id)attachments;
 - (void)dealloc;

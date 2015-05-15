@@ -13,14 +13,14 @@
     NSURL *_trustedServiceManagerURL;
 }
 
-@property(assign,retain) NSURL * brokerURL;
-@property(assign,retain) NSArray * certificates;
-@property(assign,readwrite) long long consistencyCheckBackoffLevel;
-@property(assign,retain) NSString * lastUpdatedTag;
-@property(assign,retain) NSURL * paymentServicesURL;
-@property(assign,retain) NSString * pushTopic;
-@property(assign,retain) NSString * trustedServiceManagerPushTopic;
-@property(assign,retain) NSURL * trustedServiceManagerURL;
+@property (nonatomic, retain) NSURL *brokerURL;
+@property (nonatomic, retain) NSArray *certificates;
+@property (nonatomic) long long consistencyCheckBackoffLevel;
+@property (nonatomic, retain) NSString *lastUpdatedTag;
+@property (nonatomic, retain) NSURL *paymentServicesURL;
+@property (nonatomic, retain) NSString *pushTopic;
+@property (nonatomic, retain) NSString *trustedServiceManagerPushTopic;
+@property (nonatomic, retain) NSURL *trustedServiceManagerURL;
 
 + (bool)supportsSecureCoding;
 

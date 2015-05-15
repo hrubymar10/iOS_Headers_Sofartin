@@ -4,14 +4,14 @@
 
 @interface TSDMutableCalligraphyStroke : TSDCalligraphyStroke
 
-@property(assign,readwrite) double actualWidth;
-@property(assign,readwrite) int cap;
-@property(assign,copy) TSUColor * color;
-@property(assign,readwrite) int join;
-@property(assign,readwrite) double miterLimit;
-@property(assign,copy) TSDStrokePattern * pattern;
-@property(assign,copy) NSString * strokeName;
-@property(assign,readwrite) double width;
+@property (nonatomic) double actualWidth;
+@property (nonatomic) int cap;
+@property (nonatomic, copy) TSUColor *color;
+@property (nonatomic) int join;
+@property (nonatomic) double miterLimit;
+@property (nonatomic, copy) TSDStrokePattern *pattern;
+@property (nonatomic, copy) NSString *strokeName;
+@property (nonatomic) double width;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setPatternPropertiesFromStroke:(id)arg1;

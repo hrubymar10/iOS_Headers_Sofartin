@@ -7,8 +7,8 @@
     unsigned long long _options;
 }
 
-@property(assign,readwrite) unsigned long long mergeStrategy;
-@property(assign,readwrite) unsigned long long options;
+@property (nonatomic) unsigned long long mergeStrategy;
+@property (nonatomic) unsigned long long options;
 
 + (bool)supportsSecureCoding;
 

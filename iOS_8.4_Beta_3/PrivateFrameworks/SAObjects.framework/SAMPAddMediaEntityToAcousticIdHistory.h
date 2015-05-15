@@ -4,8 +4,8 @@
 
 @interface SAMPAddMediaEntityToAcousticIdHistory : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * adamId;
-@property(assign,copy) NSString * affiliateId;
+@property (nonatomic, copy) NSString *adamId;
+@property (nonatomic, copy) NSString *affiliateId;
 
 + (id)addMediaEntityToAcousticIdHistory;
 + (id)addMediaEntityToAcousticIdHistoryWithDictionary:(id)arg1 context:(id)arg2;

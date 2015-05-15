@@ -10,13 +10,13 @@
     NSString *_uuid;
 }
 
-@property(getter=isDeleted,assign,readonly) bool deleted;
-@property(assign,copy) NSString * localIdentifier;
-@property(assign,readonly) NSManagedObjectID * objectID;
-@property(assign,readonly) PHPhotoLibrary * photoLibrary;
-@property(assign,readwrite) unsigned long long propertyHint;
-@property(getter=isTransient,assign,readonly) bool transient;
-@property(assign,readonly) NSString * uuid;
+@property (getter=isDeleted, readonly) bool deleted;
+@property (nonatomic, readonly, copy) NSString *localIdentifier;
+@property (readonly) NSManagedObjectID *objectID;
+@property (readonly) PHPhotoLibrary *photoLibrary;
+@property unsigned long long propertyHint;
+@property (getter=isTransient, readonly) bool transient;
+@property (readonly) NSString *uuid;
 
 + (id)authorizationAwareFetchResultWithOptions:(id)arg1 fetchBlock:(id)arg2;
 + (id)entityKeyForPropertyKey:(id)arg1;

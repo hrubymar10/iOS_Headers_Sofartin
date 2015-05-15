@@ -15,12 +15,12 @@
     bool _viewHasAppeared;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,retain) _UIAsyncInvocation * cancelViewServiceRequest;
-@property(assign,readwrite) <PKAddPassesViewControllerDelegate> * delegate;
-@property(assign,retain) NSArray * passes;
-@property(assign,readwrite) long long previousStatusBarStyle;
-@property(assign,retain) PKRemoteAddPassesViewController * remoteViewController;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic, retain) _UIAsyncInvocation *cancelViewServiceRequest;
+@property (nonatomic) <PKAddPassesViewControllerDelegate> *delegate;
+@property (nonatomic, retain) NSArray *passes;
+@property (nonatomic) long long previousStatusBarStyle;
+@property (nonatomic, retain) PKRemoteAddPassesViewController *remoteViewController;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 + (bool)canAddPasses;

@@ -10,10 +10,10 @@
     double _visitTime;
 }
 
-@property(assign,retain) WBSHistoryItem * associatedHistoryItem;
-@property(assign,retain) WBSHistoryVisit * associatedHistoryVisit;
-@property(assign,copy) NSString * urlString;
-@property(assign,readonly) double visitTime;
+@property (nonatomic, retain) WBSHistoryItem *associatedHistoryItem;
+@property (nonatomic, retain) WBSHistoryVisit *associatedHistoryVisit;
+@property (nonatomic, readonly, copy) NSString *urlString;
+@property (nonatomic, readonly) double visitTime;
 
 - (void).cxx_destruct;
 - (id)associatedHistoryItem;

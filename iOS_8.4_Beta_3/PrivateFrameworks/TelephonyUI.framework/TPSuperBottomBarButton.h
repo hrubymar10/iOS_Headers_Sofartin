@@ -14,10 +14,10 @@
     bool _usesSmallerFontSize;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } buttonSize;
-@property(assign,readwrite) long long orientation;
-@property(assign,retain) UIColor * originalBackgroundColor;
-@property(assign,readwrite) bool usesSmallerFontSize;
+@property (nonatomic) struct CGSize { double x1; double x2; } buttonSize;
+@property (nonatomic) long long orientation;
+@property (nonatomic, retain) UIColor *originalBackgroundColor;
+@property (nonatomic) bool usesSmallerFontSize;
 
 + (id)defaultFont;
 + (double)defaultHeight;

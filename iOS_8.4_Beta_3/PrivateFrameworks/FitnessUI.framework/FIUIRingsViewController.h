@@ -84,12 +84,12 @@
     bool _viewIsVisible;
 }
 
-@property(assign,retain) UIImage * iconSpriteImage;
-@property(assign,readwrite) unsigned long long iconTextureColumns;
-@property(assign,readwrite) unsigned long long iconTextureRows;
-@property(assign,readonly) NSArray * ringGroups;
-@property(assign,readwrite) int ringGroupsPerRow;
-@property(assign,readwrite) double ringSpacing;
+@property (nonatomic, retain) UIImage *iconSpriteImage;
+@property (nonatomic) unsigned long long iconTextureColumns;
+@property (nonatomic) unsigned long long iconTextureRows;
+@property (nonatomic, readonly) NSArray *ringGroups;
+@property (nonatomic) int ringGroupsPerRow;
+@property (nonatomic) double ringSpacing;
 
 + (id)_iconSpriteImage;
 + (id)_ringsViewControllerConfiguredForCompanionWithNumberOfRings:(long long)arg1 ringType:(long long)arg2;

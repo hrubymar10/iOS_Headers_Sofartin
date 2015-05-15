@@ -24,25 +24,25 @@
     bool _wantsIncrementalChangeDetails;
 }
 
-@property(assign,readwrite) long long cacheSizeForFetch;
-@property(assign,readwrite) long long chunkSizeForFetch;
-@property(assign,retain) NSArray * customObjectIDSortOrder;
-@property(assign,readwrite) unsigned long long fetchLimit;
-@property(assign,readwrite) unsigned long long fetchPropertyHint;
-@property(assign,readwrite) bool forceIncludeCloudSharedAssets;
-@property(assign,readwrite) bool forceIncludeiTunesSyncAssets;
-@property(assign,readonly) bool hasIncludeCloudSharedAssetsOverride;
-@property(assign,readwrite) bool includeAllBurstAssets;
-@property(assign,readwrite) bool includeDuplicateAssets;
-@property(assign,readwrite) bool includeHiddenAssets;
-@property(assign,readwrite) bool includeWallpaperAssets;
-@property(assign,retain) NSPredicate * internalPredicate;
-@property(assign,retain) NSArray * internalSortDescriptors;
-@property(assign,retain) NSPredicate * predicate;
-@property(assign,readwrite) bool reverseSortOrder;
-@property(assign,retain) NSArray * sortDescriptors;
-@property(assign,retain) NSString * transientIdentifier;
-@property(assign,readwrite) bool wantsIncrementalChangeDetails;
+@property (nonatomic) long long cacheSizeForFetch;
+@property (nonatomic) long long chunkSizeForFetch;
+@property (nonatomic, retain) NSArray *customObjectIDSortOrder;
+@property (nonatomic) unsigned long long fetchLimit;
+@property (nonatomic) unsigned long long fetchPropertyHint;
+@property (nonatomic) bool forceIncludeCloudSharedAssets;
+@property (nonatomic) bool forceIncludeiTunesSyncAssets;
+@property (nonatomic, readonly) bool hasIncludeCloudSharedAssetsOverride;
+@property (nonatomic) bool includeAllBurstAssets;
+@property (nonatomic) bool includeDuplicateAssets;
+@property (nonatomic) bool includeHiddenAssets;
+@property (nonatomic) bool includeWallpaperAssets;
+@property (nonatomic, retain) NSPredicate *internalPredicate;
+@property (nonatomic, retain) NSArray *internalSortDescriptors;
+@property (nonatomic, retain) NSPredicate *predicate;
+@property (nonatomic) bool reverseSortOrder;
+@property (nonatomic, retain) NSArray *sortDescriptors;
+@property (nonatomic, retain) NSString *transientIdentifier;
+@property (nonatomic) bool wantsIncrementalChangeDetails;
 
 + (id)fetchOptionsWithInclusiveDefaults;
 + (id)pu_standardFetchOptions;

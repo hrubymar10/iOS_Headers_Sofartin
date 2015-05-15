@@ -8,10 +8,10 @@
     double _width;
 }
 
-@property(assign,readonly) double height;
-@property(assign,readonly) NSString * localizedName;
-@property(assign,readonly) double ratio;
-@property(assign,readonly) double width;
+@property (nonatomic, readonly) double height;
+@property (nonatomic, readonly) NSString *localizedName;
+@property (nonatomic, readonly) double ratio;
+@property (nonatomic, readonly) double width;
 
 + (id)allAspectsWithOriginalSize:(struct CGSize { double x1; double x2; })arg1 currentSize:(struct CGSize { double x1; double x2; })arg2;
 

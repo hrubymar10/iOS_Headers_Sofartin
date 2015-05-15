@@ -4,27 +4,27 @@
 
 @interface PLCloudSharedComment : PLManagedObject
 
-@property(assign,retain) PLCloudFeedCommentsEntry * cloudFeedCommentEntry;
-@property(assign,readonly) PLCloudFeedCommentsEntry * cloudFeedEntry;
-@property(assign,retain) PLCloudFeedCommentsEntry * cloudFeedLikeCommentEntry;
-@property(assign,retain) NSString * cloudGUID;
-@property(assign,retain) NSDate * commentClientDate;
-@property(assign,retain) NSDate * commentDate;
-@property(assign,retain) NSString * commentText;
-@property(assign,retain) NSString * commentType;
-@property(assign,retain) PLManagedAsset * commentedAsset;
-@property(assign,readonly) NSString * commenterEmail;
-@property(assign,readonly) NSString * commenterFirstName;
-@property(assign,readonly) NSString * commenterFullName;
-@property(assign,retain) NSString * commenterHashedPersonID;
-@property(assign,readonly) NSString * commenterLastName;
-@property(assign,retain) NSNumber * isBatchComment;
-@property(assign,retain) NSNumber * isCaption;
-@property(assign,retain) NSNumber * isDeletable;
-@property(assign,retain) NSNumber * isLike;
-@property(assign,readonly) bool isLikeBoolValue;
-@property(assign,retain) NSNumber * isMyComment;
-@property(assign,retain) PLManagedAsset * likedAsset;
+@property (nonatomic, retain) PLCloudFeedCommentsEntry *cloudFeedCommentEntry;
+@property (nonatomic, readonly) PLCloudFeedCommentsEntry *cloudFeedEntry;
+@property (nonatomic, retain) PLCloudFeedCommentsEntry *cloudFeedLikeCommentEntry;
+@property (nonatomic, retain) NSString *cloudGUID;
+@property (nonatomic, retain) NSDate *commentClientDate;
+@property (nonatomic, retain) NSDate *commentDate;
+@property (nonatomic, retain) NSString *commentText;
+@property (nonatomic, retain) NSString *commentType;
+@property (nonatomic, retain) PLManagedAsset *commentedAsset;
+@property (nonatomic, readonly) NSString *commenterEmail;
+@property (nonatomic, readonly) NSString *commenterFirstName;
+@property (nonatomic, readonly) NSString *commenterFullName;
+@property (nonatomic, retain) NSString *commenterHashedPersonID;
+@property (nonatomic, readonly) NSString *commenterLastName;
+@property (nonatomic, retain) NSNumber *isBatchComment;
+@property (nonatomic, retain) NSNumber *isCaption;
+@property (nonatomic, retain) NSNumber *isDeletable;
+@property (nonatomic, retain) NSNumber *isLike;
+@property (nonatomic, readonly) bool isLikeBoolValue;
+@property (nonatomic, retain) NSNumber *isMyComment;
+@property (nonatomic, retain) PLManagedAsset *likedAsset;
 
 + (id)cloudSharedCommentWithGUID:(id)arg1 inLibrary:(id)arg2;
 + (id)cloudSharedCommentWithGUIDs:(id)arg1 inLibrary:(id)arg2;

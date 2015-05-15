@@ -13,14 +13,14 @@
     NSMutableArray *_savedRecordZones;
 }
 
-@property(assign,retain) NSMutableArray * deletedRecordZoneIDs;
-@property(assign,readwrite) bool markZonesAsUserPurged;
-@property(assign,copy) id modifyRecordZonesCompletionBlock;
-@property(assign,retain) NSMutableDictionary * recordZoneErrors;
-@property(assign,copy) NSArray * recordZoneIDsToDelete;
-@property(assign,retain) NSMutableDictionary * recordZonesByZoneIDs;
-@property(assign,copy) NSArray * recordZonesToSave;
-@property(assign,retain) NSMutableArray * savedRecordZones;
+@property (nonatomic, retain) NSMutableArray *deletedRecordZoneIDs;
+@property (nonatomic) bool markZonesAsUserPurged;
+@property (nonatomic, copy) id modifyRecordZonesCompletionBlock;
+@property (nonatomic, retain) NSMutableDictionary *recordZoneErrors;
+@property (nonatomic, copy) NSArray *recordZoneIDsToDelete;
+@property (nonatomic, retain) NSMutableDictionary *recordZonesByZoneIDs;
+@property (nonatomic, copy) NSArray *recordZonesToSave;
+@property (nonatomic, retain) NSMutableArray *savedRecordZones;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

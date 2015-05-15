@@ -9,8 +9,8 @@
     OITSUScaledProgressStorage *mStorage;
 }
 
-@property(assign,readwrite) double maxValue;
-@property(assign,retain) OITSUProgress * progress;
+@property double maxValue;
+@property (retain) OITSUProgress *progress;
 
 - (id)addProgressObserverWithValueInterval:(double)arg1 queue:(id)arg2 handler:(id)arg3;
 - (void)dealloc;

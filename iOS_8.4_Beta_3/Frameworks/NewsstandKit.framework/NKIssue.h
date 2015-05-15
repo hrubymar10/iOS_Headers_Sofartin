@@ -14,12 +14,12 @@
     NSMutableSet *_resolvedAssets;
 }
 
-@property(assign,copy) NSURL * contentURL;
-@property(assign,copy) NSDate * date;
-@property(assign,copy) NSString * directory;
-@property(assign,copy) NSArray * downloadingAssets;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) long long status;
+@property (readonly, copy) NSURL *contentURL;
+@property (copy) NSDate *date;
+@property (copy) NSString *directory;
+@property (readonly, copy) NSArray *downloadingAssets;
+@property (copy) NSString *name;
+@property (readonly) long long status;
 
 - (void)_assetChanged:(id)arg1;
 - (id)_assetsForRequest:(id)arg1;

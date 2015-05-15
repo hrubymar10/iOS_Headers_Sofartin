@@ -22,18 +22,18 @@
     double _oldestAcceptedTime;
 }
 
-@property(assign,readwrite) bool activelyTrackingLocation;
-@property(assign,readwrite) int authorizationStatus;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CLLocationManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) float lastLocationAccuracy;
-@property(assign,readwrite) struct { double x1; double x2; } lastLocationCoord;
-@property(assign,copy) NSDate * lastLocationTimeStamp;
-@property(assign,retain) CLLocationManager * locationManager;
-@property(assign,readwrite) bool locationTrackingIsReady;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool activelyTrackingLocation;
+@property (nonatomic) int authorizationStatus;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CLLocationManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) float lastLocationAccuracy;
+@property (nonatomic) struct { double x1; double x2; } lastLocationCoord;
+@property (nonatomic, copy) NSDate *lastLocationTimeStamp;
+@property (nonatomic, retain) CLLocationManager *locationManager;
+@property (nonatomic) bool locationTrackingIsReady;
+@property (readonly) Class superclass;
 
 + (void)clearSharedLocationManager;
 + (id)sharedWeatherLocationManager;

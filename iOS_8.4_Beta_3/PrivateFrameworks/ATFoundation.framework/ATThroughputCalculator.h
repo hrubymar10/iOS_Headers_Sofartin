@@ -10,7 +10,7 @@
     bool _suspended;
 }
 
-@property(assign,readonly) double throughput;
+@property (nonatomic, readonly) double throughput;
 
 - (void).cxx_destruct;
 - (id)init;

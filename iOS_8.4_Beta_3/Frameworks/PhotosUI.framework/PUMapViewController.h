@@ -23,14 +23,14 @@
     bool _useCurrentUserLocation;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSObject<PLDiagnosticsProvider> * diagnosticsProvider;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long maxItemsInitialZoom;
-@property(assign,readwrite) bool shouldShowTabBar;
-@property(assign,readwrite) bool shouldShowToolbar;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSObject<PLDiagnosticsProvider> *diagnosticsProvider;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long maxItemsInitialZoom;
+@property (nonatomic) bool shouldShowTabBar;
+@property (nonatomic) bool shouldShowToolbar;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_addLocationsToArray:(id)arg1 forInitialZoomWithMapItems:(id)arg2;

@@ -7,9 +7,9 @@
     NSMutableArray *_sections;
 }
 
-@property(assign,readonly) bool hasManifest;
-@property(assign,retain) CKDPAsset * manifest;
-@property(assign,retain) NSMutableArray * sections;
+@property (nonatomic, readonly) bool hasManifest;
+@property (nonatomic, retain) CKDPAsset *manifest;
+@property (nonatomic, retain) NSMutableArray *sections;
 
 - (void).cxx_destruct;
 - (void)addSections:(id)arg1;

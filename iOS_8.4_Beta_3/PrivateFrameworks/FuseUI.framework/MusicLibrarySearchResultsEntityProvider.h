@@ -10,13 +10,13 @@
     NSString *_searchTerm;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasResults;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long maximumNumberOfSectionResults;
-@property(assign,copy) NSString * searchTerm;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasResults;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long maximumNumberOfSectionResults;
+@property (nonatomic, copy) NSString *searchTerm;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_filterResults;

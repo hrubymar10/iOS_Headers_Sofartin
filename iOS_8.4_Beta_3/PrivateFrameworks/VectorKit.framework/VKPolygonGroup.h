@@ -292,22 +292,22 @@
     VKVectorTile *_tile;
 }
 
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  centroid; /* unknown property attribute:  1>=[2f]} */
-@property(assign,readonly) unsigned int cullingMask;
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::Building::BuildingMesh>={vector<ggl::Building::BuildingMesh *' */ struct * extrusionFillMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::Building::BuildingMesh *> >=^^{BuildingMesh}}}^{BuildingMesh}} */
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::Building::BuildingMesh>={vector<ggl::Building::BuildingMesh *' */ struct * extrusionFillMeshVendorForPointyRoofs; /* unknown property attribute:  std::__1::allocator<ggl::Building::BuildingMesh *> >=^^{BuildingMesh}}}^{BuildingMesh}} */
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::PrefilteredLine::PrefilteredLineMesh>={vector<ggl::PrefilteredLine::PrefilteredLineMesh *' */ struct * extrusionStrokeMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::PrefilteredLine::PrefilteredLineMesh *> >=^^{PrefilteredLineMesh}}}^{PrefilteredLineMesh}} */
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::PrefilteredLine::PrefilteredLineMesh>={vector<ggl::PrefilteredLine::PrefilteredLineMesh *' */ struct * extrusionStrokeMeshVendorForPointyRoofs; /* unknown property attribute:  std::__1::allocator<ggl::PrefilteredLine::PrefilteredLineMesh *> >=^^{PrefilteredLineMesh}}}^{PrefilteredLineMesh}} */
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{vector<ggl::PolygonBase::CompressedMeshMesh' */ struct * fillMeshes; /* unknown property attribute:  std::__1::allocator<ggl::PolygonBase::CompressedMeshMesh> >=^{CompressedMeshMesh}}} */
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{vector<ggl::PolygonBase::CompressedMeshMesh' */ struct * fillMeshesForPointyRoofs; /* unknown property attribute:  std::__1::allocator<ggl::PolygonBase::CompressedMeshMesh> >=^{CompressedMeshMesh}}} */
-@property(assign,readonly) bool isFixedSize;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  origin; /* unknown property attribute:  1>=[3f]} */
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::BuildingPointyRoof::BuildingMesh>={vector<ggl::BuildingPointyRoof::BuildingMesh *' */ struct * pointyRoofFillMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::BuildingPointyRoof::BuildingMesh *> >=^^{BuildingMesh}}}^{BuildingMesh}} */
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::PrefilteredLine::PrefilteredLineMesh>={vector<ggl::PrefilteredLine::PrefilteredLineMesh *' */ struct * pointyRoofStrokeMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::PrefilteredLine::PrefilteredLineMesh *> >=^^{PrefilteredLineMesh}}}^{PrefilteredLineMesh}} */
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  size; /* unknown property attribute:  1>=[3f]} */
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{vector<ggl::PolygonMesh::MeshMesh' */ struct * strokeMeshes; /* unknown property attribute:  std::__1::allocator<ggl::PolygonMesh::MeshMesh> >=^{MeshMesh}}} */
-@property(assign,readonly) struct shared_ptr<md::StyleQuery> { struct StyleQuery {} *x1; struct __shared_weak_count {} *x2; }* styleQuery;
-@property(assign,readonly) float tileZoom;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  centroid; /* unknown property attribute:  1>=[2f]} */
+@property (nonatomic, readonly) unsigned int cullingMask;
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::Building::BuildingMesh>={vector<ggl::Building::BuildingMesh *' */ struct *extrusionFillMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::Building::BuildingMesh *> >=^^{BuildingMesh}}}^{BuildingMesh}} */
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::Building::BuildingMesh>={vector<ggl::Building::BuildingMesh *' */ struct *extrusionFillMeshVendorForPointyRoofs; /* unknown property attribute:  std::__1::allocator<ggl::Building::BuildingMesh *> >=^^{BuildingMesh}}}^{BuildingMesh}} */
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::PrefilteredLine::PrefilteredLineMesh>={vector<ggl::PrefilteredLine::PrefilteredLineMesh *' */ struct *extrusionStrokeMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::PrefilteredLine::PrefilteredLineMesh *> >=^^{PrefilteredLineMesh}}}^{PrefilteredLineMesh}} */
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::PrefilteredLine::PrefilteredLineMesh>={vector<ggl::PrefilteredLine::PrefilteredLineMesh *' */ struct *extrusionStrokeMeshVendorForPointyRoofs; /* unknown property attribute:  std::__1::allocator<ggl::PrefilteredLine::PrefilteredLineMesh *> >=^^{PrefilteredLineMesh}}}^{PrefilteredLineMesh}} */
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{vector<ggl::PolygonBase::CompressedMeshMesh' */ struct *fillMeshes; /* unknown property attribute:  std::__1::allocator<ggl::PolygonBase::CompressedMeshMesh> >=^{CompressedMeshMesh}}} */
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{vector<ggl::PolygonBase::CompressedMeshMesh' */ struct *fillMeshesForPointyRoofs; /* unknown property attribute:  std::__1::allocator<ggl::PolygonBase::CompressedMeshMesh> >=^{CompressedMeshMesh}}} */
+@property (nonatomic, readonly) bool isFixedSize;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  origin; /* unknown property attribute:  1>=[3f]} */
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::BuildingPointyRoof::BuildingMesh>={vector<ggl::BuildingPointyRoof::BuildingMesh *' */ struct *pointyRoofFillMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::BuildingPointyRoof::BuildingMesh *> >=^^{BuildingMesh}}}^{BuildingMesh}} */
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::PrefilteredLine::PrefilteredLineMesh>={vector<ggl::PrefilteredLine::PrefilteredLineMesh *' */ struct *pointyRoofStrokeMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::PrefilteredLine::PrefilteredLineMesh *> >=^^{PrefilteredLineMesh}}}^{PrefilteredLineMesh}} */
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  size; /* unknown property attribute:  1>=[3f]} */
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{vector<ggl::PolygonMesh::MeshMesh' */ struct *strokeMeshes; /* unknown property attribute:  std::__1::allocator<ggl::PolygonMesh::MeshMesh> >=^{MeshMesh}}} */
+@property (nonatomic, readonly) struct shared_ptr<md::StyleQuery> { struct StyleQuery {} *x1; struct __shared_weak_count {} *x2; }*styleQuery;
+@property (nonatomic, readonly) float tileZoom;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

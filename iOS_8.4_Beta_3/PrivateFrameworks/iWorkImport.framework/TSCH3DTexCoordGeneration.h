@@ -30,7 +30,7 @@
     } mTransform;
 }
 
-@property(assign,retain) TSCH3DNormalDirectionMapper * normalDirectionMapper;
+@property (nonatomic, retain) TSCH3DNormalDirectionMapper *normalDirectionMapper;
 
 - (id).cxx_construct;
 - (void)dealloc;

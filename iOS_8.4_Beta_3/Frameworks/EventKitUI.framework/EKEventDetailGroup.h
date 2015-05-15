@@ -8,9 +8,9 @@
     long long _tag;
 }
 
-@property(assign,retain) NSString * headerTitle;
-@property(assign,retain) NSArray * items;
-@property(assign,readwrite) long long tag;
+@property (nonatomic, retain) NSString *headerTitle;
+@property (nonatomic, retain) NSArray *items;
+@property (nonatomic) long long tag;
 
 - (void).cxx_destruct;
 - (id)cellForSubitemAtIndex:(unsigned long long)arg1;

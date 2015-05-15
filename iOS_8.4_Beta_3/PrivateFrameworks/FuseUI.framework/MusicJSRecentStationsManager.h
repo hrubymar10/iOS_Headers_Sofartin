@@ -8,7 +8,7 @@
     RadioRecentStationsController *_recentStationsController;
 }
 
-@property(assign,readonly) RadioRecentStationsController * recentStationsController;
+@property (nonatomic, readonly) RadioRecentStationsController *recentStationsController;
 
 - (void).cxx_destruct;
 - (id)_dictionaryFromStation:(id)arg1;

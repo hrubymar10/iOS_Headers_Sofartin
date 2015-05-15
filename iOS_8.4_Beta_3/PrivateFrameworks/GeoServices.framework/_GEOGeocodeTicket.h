@@ -11,13 +11,13 @@
     GEOMapServiceTraits *_traits;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) GEOPlaceSearchResponse * response;
-@property(assign,readonly) GEOMapRegion * resultBoundingRegion;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) GEOMapServiceTraits * traits;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) GEOPlaceSearchResponse *response;
+@property (nonatomic, readonly) GEOMapRegion *resultBoundingRegion;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) GEOMapServiceTraits *traits;
 
 - (id)_initWithGeocodeRequest:(id)arg1 traits:(id)arg2;
 - (void)_reverseGeocodeWithRequest:(id)arg1 handler:(id)arg2 networkActivity:(id)arg3;

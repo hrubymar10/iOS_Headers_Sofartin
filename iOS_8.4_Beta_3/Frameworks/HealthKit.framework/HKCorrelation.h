@@ -6,13 +6,13 @@
     NSMutableDictionary *_objects;
 }
 
-@property(getter=_UUID,assign,readonly) NSUUID * UUID;
-@property(assign,readonly) HKCorrelationType * correlationType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSSet * objects;
-@property(assign,readonly) Class superclass;
+@property (getter=_UUID, readonly) NSUUID *UUID;
+@property (readonly) HKCorrelationType *correlationType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly, copy) NSSet *objects;
+@property (readonly) Class superclass;
 
 + (bool)_allowEmptyCorrelations;
 + (bool)_isConcreteObjectClass;

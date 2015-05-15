@@ -8,9 +8,9 @@
     NSString *_scriptStr;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,retain) ISURLOperation * opertaion;
-@property(assign,retain) NSString * scriptStr;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic, retain) ISURLOperation *opertaion;
+@property (nonatomic, retain) NSString *scriptStr;
 
 - (void).cxx_destruct;
 - (id)URL;

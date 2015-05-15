@@ -4,12 +4,12 @@
 
 @interface SPTopHit : NSManagedObject
 
-@property(assign,retain) NSString * category;
-@property(assign,retain) NSNumber * cxid;
-@property(assign,retain) NSString * displayIdentifier;
-@property(assign,retain) NSString * extid;
-@property(assign,retain) NSNumber * lastChosen;
-@property(assign,retain) NSData * letterWeights;
-@property(assign,retain) NSNumber * movingAvg;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic, retain) NSNumber *cxid;
+@property (nonatomic, retain) NSString *displayIdentifier;
+@property (nonatomic, retain) NSString *extid;
+@property (nonatomic, retain) NSNumber *lastChosen;
+@property (nonatomic, retain) NSData *letterWeights;
+@property (nonatomic, retain) NSNumber *movingAvg;
 
 @end

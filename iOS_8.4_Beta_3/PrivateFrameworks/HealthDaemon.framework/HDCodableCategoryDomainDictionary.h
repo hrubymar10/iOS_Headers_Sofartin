@@ -11,15 +11,15 @@
     NSMutableArray *_keyValuePairs;
 }
 
-@property(assign,readwrite) long long category;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * domain;
-@property(assign,readwrite) bool hasCategory;
-@property(assign,readonly) bool hasDomain;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableArray * keyValuePairs;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long category;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *domain;
+@property (nonatomic) bool hasCategory;
+@property (nonatomic, readonly) bool hasDomain;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableArray *keyValuePairs;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_validateForInsertionWithError:(id*)arg1;

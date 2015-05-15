@@ -7,7 +7,7 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readonly) ACAccount * cachedPrimaryAppleAccount;
+@property (readonly) ACAccount *cachedPrimaryAppleAccount;
 
 + (id)pl_sharedAccountStore;
 

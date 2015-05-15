@@ -6,13 +6,13 @@
     NSURLConnectionInternal *_internal;
 }
 
-@property(assign,copy) NSURLRequest * currentRequest;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NKAssetDownload * newsstandAssetDownload;
-@property(assign,copy) NSURLRequest * originalRequest;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSURLRequest *currentRequest;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) NKAssetDownload *newsstandAssetDownload;
+@property (readonly, copy) NSURLRequest *originalRequest;
+@property (readonly) Class superclass;
 
 + (void)_collectTimingDataWithOptions:(unsigned long long)arg1;
 + (bool)_collectsTimingData;

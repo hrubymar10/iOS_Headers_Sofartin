@@ -64,14 +64,14 @@
     bool mUseLabelBounds;
 }
 
-@property(assign,retain) TSCH3DLabelResource * label;
-@property(assign,readonly) TSCH3DCamera * labelCamera;
-@property(assign,retain) TSCH3DDataBufferResource * mesh;
-@property(assign,retain) TSCH3DLabelsMeshRenderer * meshRenderer;
-@property(assign,retain) TSCH3DSceneRenderPipeline * pipeline;
-@property(assign,readonly) struct LabelRenderInfo { struct tvec2<float> { union { float x_1_2_1; float x_1_2_2; float x_1_2_3; } x_1_1_1; union { float x_2_2_1; float x_2_2_2; float x_2_2_3; } x_1_1_2; } x1; struct tvec2<float> { union { float x_1_2_1; float x_1_2_2; float x_1_2_3; } x_2_1_1; union { float x_2_2_1; float x_2_2_2; float x_2_2_3; } x_2_1_2; } x2; struct tvec2<float> { union { float x_1_2_1; float x_1_2_2; float x_1_2_3; } x_3_1_1; union { float x_2_2_1; float x_2_2_2; float x_2_2_3; } x_3_1_2; } x3; struct tvec2<float> { union { float x_1_2_1; float x_1_2_2; float x_1_2_3; } x_4_1_1; union { float x_2_2_1; float x_2_2_2; float x_2_2_3; } x_4_1_2; } x4; } renderInfo;
-@property(assign,retain) TSCH3DLabelResources * resources;
-@property(assign,readwrite) bool useLabelBounds;
+@property (nonatomic, retain) TSCH3DLabelResource *label;
+@property (nonatomic, readonly) TSCH3DCamera *labelCamera;
+@property (nonatomic, retain) TSCH3DDataBufferResource *mesh;
+@property (nonatomic, retain) TSCH3DLabelsMeshRenderer *meshRenderer;
+@property (nonatomic, retain) TSCH3DSceneRenderPipeline *pipeline;
+@property (nonatomic, readonly) struct LabelRenderInfo { struct tvec2<float> { union { float x_1_2_1; float x_1_2_2; float x_1_2_3; } x_1_1_1; union { float x_2_2_1; float x_2_2_2; float x_2_2_3; } x_1_1_2; } x1; struct tvec2<float> { union { float x_1_2_1; float x_1_2_2; float x_1_2_3; } x_2_1_1; union { float x_2_2_1; float x_2_2_2; float x_2_2_3; } x_2_1_2; } x2; struct tvec2<float> { union { float x_1_2_1; float x_1_2_2; float x_1_2_3; } x_3_1_1; union { float x_2_2_1; float x_2_2_2; float x_2_2_3; } x_3_1_2; } x3; struct tvec2<float> { union { float x_1_2_1; float x_1_2_2; float x_1_2_3; } x_4_1_1; union { float x_2_2_1; float x_2_2_2; float x_2_2_3; } x_4_1_2; } x4; } renderInfo;
+@property (nonatomic, retain) TSCH3DLabelResources *resources;
+@property (nonatomic) bool useLabelBounds;
 
 + (id)renderCacheKey;
 + (id)renderer;

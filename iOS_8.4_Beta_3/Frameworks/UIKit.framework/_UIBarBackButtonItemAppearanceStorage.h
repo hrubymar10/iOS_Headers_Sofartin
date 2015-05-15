@@ -10,8 +10,8 @@
     NSValue *titlePositionOffset;
 }
 
-@property(assign,retain) NSValue * miniTitlePositionOffset;
-@property(assign,retain) NSValue * titlePositionOffset;
+@property (nonatomic, retain) NSValue *miniTitlePositionOffset;
+@property (nonatomic, retain) NSValue *titlePositionOffset;
 
 - (id)anyBackgroundImage;
 - (id)backgroundImageForState:(unsigned long long)arg1 isMini:(bool)arg2;

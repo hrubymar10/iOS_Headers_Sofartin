@@ -6,7 +6,7 @@
     NSData *_pushToken;
 }
 
-@property(assign,copy) NSData * pushToken;
+@property (readonly, copy) NSData *pushToken;
 
 - (void).cxx_destruct;
 - (id)initWithPushToken:(id)arg1;

@@ -4,7 +4,7 @@
 
 @interface SANoteCreate : SADomainCommand
 
-@property(assign,copy) NSString * contents;
+@property (nonatomic, copy) NSString *contents;
 
 + (id)create;
 + (id)createWithDictionary:(id)arg1 context:(id)arg2;

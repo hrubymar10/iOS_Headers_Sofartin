@@ -7,7 +7,7 @@
     UIImage *_pretiledImage;
 }
 
-@property(assign,readonly) UIImage * pretiledImage;
+@property (nonatomic, readonly) UIImage *pretiledImage;
 
 + (id)cacheValueWithPretiledImage:(id)arg1 cacheKey:(id)arg2;
 

@@ -31,18 +31,18 @@
     long long _style;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } artworkEdgeInsets;
-@property(assign,retain) UIImage * artworkImage;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } artworkOverlayEdgeInsets;
-@property(assign,retain) UIImage * artworkOverlayImage;
-@property(assign,readwrite) double customDuration;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUAudioPreviewViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) RUPreviewSession * previewSession;
-@property(assign,readonly) long long style;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } artworkEdgeInsets;
+@property (nonatomic, retain) UIImage *artworkImage;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } artworkOverlayEdgeInsets;
+@property (nonatomic, retain) UIImage *artworkOverlayImage;
+@property (nonatomic) double customDuration;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUAudioPreviewViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) RUPreviewSession *previewSession;
+@property (nonatomic, readonly) long long style;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_cancelAction:(id)arg1;

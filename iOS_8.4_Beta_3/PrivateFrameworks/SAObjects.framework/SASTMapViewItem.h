@@ -4,13 +4,13 @@
 
 @interface SASTMapViewItem : AceObject <SASTActionableTemplateItem>
 
-@property(assign,retain) <SASTTemplateAction> * action;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SALocation * location;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSNumber * zoomLevel;
+@property (nonatomic, retain) <SASTTemplateAction> *action;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SALocation *location;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSNumber *zoomLevel;
 
 + (id)mapViewItem;
 + (id)mapViewItemWithDictionary:(id)arg1 context:(id)arg2;

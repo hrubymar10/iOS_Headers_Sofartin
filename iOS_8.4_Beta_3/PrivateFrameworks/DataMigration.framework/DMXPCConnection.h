@@ -10,9 +10,9 @@
     NSObject<OS_dispatch_queue> *_replyQueue;
 }
 
-@property(assign,readonly) NSObject<OS_xpc_object> * connection;
-@property(assign,copy) id interruptionHandler;
-@property(assign,copy) id invalidationHandler;
+@property (nonatomic, readonly) NSObject<OS_xpc_object> *connection;
+@property (copy) id interruptionHandler;
+@property (copy) id invalidationHandler;
 
 - (void).cxx_destruct;
 - (void)_handleMessage:(id)arg1;

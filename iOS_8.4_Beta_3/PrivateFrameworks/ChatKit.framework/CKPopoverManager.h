@@ -8,14 +8,14 @@
     id _presenter;
 }
 
-@property(assign,retain) UIViewController * currentContentController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id handler;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIPopoverController * popoverController;
-@property(assign,copy) id presenter;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, retain) UIViewController *currentContentController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id handler;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIPopoverController *popoverController;
+@property (nonatomic, copy) id presenter;
+@property (readonly) Class superclass;
 
 + (id)sharedInstance;
 

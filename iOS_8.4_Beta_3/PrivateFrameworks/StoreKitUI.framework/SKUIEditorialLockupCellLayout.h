@@ -20,11 +20,11 @@
     unsigned long long _visibleFields;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,readwrite) long long layoutStyle;
-@property(assign,readonly) SKUILockupItemCellLayout * lockupCellLayout;
-@property(assign,readonly) SKUITextBoxView * textBoxView;
-@property(assign,readwrite) unsigned long long visibleFields;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic) long long layoutStyle;
+@property (nonatomic, readonly) SKUILockupItemCellLayout *lockupCellLayout;
+@property (nonatomic, readonly) SKUITextBoxView *textBoxView;
+@property (nonatomic) unsigned long long visibleFields;
 
 + (double)_imagePaddingForArtworkSize:(long long)arg1;
 + (double)editorialWidthForCellWidth:(double)arg1 lockupStyle:(struct SKUILockupStyle { long long x1; long long x2; unsigned long long x3; })arg2;

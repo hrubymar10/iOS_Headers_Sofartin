@@ -8,9 +8,9 @@
     bool _footerVisible;
 }
 
-@property(assign,retain) UIView * contentView;
-@property(assign,retain) UIView * footerView;
-@property(getter=isFooterVisible,assign,readwrite) bool footerVisible;
+@property (nonatomic, retain) UIView *contentView;
+@property (nonatomic, retain) UIView *footerView;
+@property (getter=isFooterVisible, nonatomic) bool footerVisible;
 
 - (id)contentView;
 - (void)dealloc;

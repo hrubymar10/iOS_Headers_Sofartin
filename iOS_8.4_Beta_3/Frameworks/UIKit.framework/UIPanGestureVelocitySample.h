@@ -14,9 +14,9 @@
     } start;
 }
 
-@property(assign,readwrite) double dt;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } end;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } start;
+@property double dt;
+@property struct CGPoint { double x1; double x2; } end;
+@property struct CGPoint { double x1; double x2; } start;
 
 - (double)dt;
 - (struct CGPoint { double x1; double x2; })end;

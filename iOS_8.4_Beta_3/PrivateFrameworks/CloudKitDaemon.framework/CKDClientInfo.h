@@ -10,9 +10,9 @@
     struct MGNotificationTokenStruct { } *_hostNotificationToken;
 }
 
-@property(assign,readwrite) Class CKDUITextInputModeClass;
-@property(assign,readonly) NSArray * enabledKeyboards;
-@property(assign,readonly) NSString * hostname;
+@property (nonatomic) Class CKDUITextInputModeClass;
+@property (nonatomic, readonly) NSArray *enabledKeyboards;
+@property (nonatomic, readonly) NSString *hostname;
 
 + (id)sharedClientInfo;
 

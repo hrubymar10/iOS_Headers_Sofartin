@@ -11,12 +11,12 @@
     EDProtection *mProtection;
 }
 
-@property(assign,retain) EDAlignmentInfo * alignmentInfo;
-@property(assign,retain) EDBorders * borders;
-@property(assign,retain) EDContentFormat * contentFormat;
-@property(assign,retain) EDFill * fill;
-@property(assign,retain) EDFont * font;
-@property(assign,retain) EDProtection * protection;
+@property (nonatomic, retain) EDAlignmentInfo *alignmentInfo;
+@property (nonatomic, retain) EDBorders *borders;
+@property (nonatomic, retain) EDContentFormat *contentFormat;
+@property (nonatomic, retain) EDFill *fill;
+@property (nonatomic, retain) EDFont *font;
+@property (nonatomic, retain) EDProtection *protection;
 
 + (id)differentialStyle;
 

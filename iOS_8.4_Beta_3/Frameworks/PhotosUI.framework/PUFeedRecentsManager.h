@@ -11,11 +11,11 @@
     PLPhotoLibrary *_photoLibrary;
 }
 
-@property(setter=_setCachedRecentAssets:,assign,copy) NSOrderedSet * _cachedRecentAssets;
-@property(assign,readwrite) long long count;
-@property(assign,readwrite) <PUFeedRecentsManagerDelegate> * delegate;
-@property(assign,retain) PLPhotoLibrary * photoLibrary;
-@property(assign,copy) NSOrderedSet * recentAssets;
+@property (setter=_setCachedRecentAssets:, nonatomic, copy) NSOrderedSet *_cachedRecentAssets;
+@property (nonatomic) long long count;
+@property (nonatomic) <PUFeedRecentsManagerDelegate> *delegate;
+@property (nonatomic, retain) PLPhotoLibrary *photoLibrary;
+@property (nonatomic, readonly, copy) NSOrderedSet *recentAssets;
 
 - (void).cxx_destruct;
 - (id)_cachedRecentAssets;

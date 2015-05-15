@@ -8,9 +8,9 @@
     id _value;
 }
 
-@property(assign,retain) NSData * authorizationData;
-@property(assign,retain) HAPCharacteristic * characteristic;
-@property(assign,retain) id value;
+@property (nonatomic, retain) NSData *authorizationData;
+@property (nonatomic, retain) HAPCharacteristic *characteristic;
+@property (nonatomic, retain) id value;
 
 + (id)writeRequestTupleForCharacteristic:(id)arg1 value:(id)arg2 authorizationData:(id)arg3;
 

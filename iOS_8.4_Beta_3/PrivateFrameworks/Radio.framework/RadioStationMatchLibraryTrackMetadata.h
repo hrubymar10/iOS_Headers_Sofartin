@@ -23,24 +23,24 @@
     NSNumber *_year;
 }
 
-@property(assign,copy) NSString * albumArtistName;
-@property(assign,copy) NSString * albumName;
-@property(assign,copy) NSString * artistName;
-@property(getter=isCompilation,assign,copy) NSNumber * compilation;
-@property(assign,copy) NSString * composerName;
-@property(assign,copy) NSString * copyright;
-@property(assign,copy) NSNumber * discCount;
-@property(assign,copy) NSNumber * discNumber;
-@property(assign,copy) NSNumber * duration;
-@property(assign,copy) NSNumber * fileSize;
-@property(assign,copy) NSString * genreName;
-@property(assign,copy) NSString * kind;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSNumber * storeAdamID;
-@property(assign,copy) NSNumber * storeCloudID;
-@property(assign,copy) NSNumber * trackCount;
-@property(assign,copy) NSNumber * trackNumber;
-@property(assign,copy) NSNumber * year;
+@property (nonatomic, copy) NSString *albumArtistName;
+@property (nonatomic, copy) NSString *albumName;
+@property (nonatomic, copy) NSString *artistName;
+@property (getter=isCompilation, nonatomic, copy) NSNumber *compilation;
+@property (nonatomic, copy) NSString *composerName;
+@property (nonatomic, copy) NSString *copyright;
+@property (nonatomic, copy) NSNumber *discCount;
+@property (nonatomic, copy) NSNumber *discNumber;
+@property (nonatomic, copy) NSNumber *duration;
+@property (nonatomic, copy) NSNumber *fileSize;
+@property (nonatomic, copy) NSString *genreName;
+@property (nonatomic, copy) NSString *kind;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSNumber *storeAdamID;
+@property (nonatomic, copy) NSNumber *storeCloudID;
+@property (nonatomic, copy) NSNumber *trackCount;
+@property (nonatomic, copy) NSNumber *trackNumber;
+@property (nonatomic, copy) NSNumber *year;
 
 + (id)metadataKey;
 

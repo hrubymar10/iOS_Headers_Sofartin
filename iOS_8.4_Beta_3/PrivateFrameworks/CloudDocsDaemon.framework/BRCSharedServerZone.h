@@ -7,10 +7,10 @@
     NSString *_ownerName;
 }
 
-@property(assign,readonly) BRCSharedLocalContainer * container;
-@property(assign,readonly) bool isPrivateContainer;
-@property(assign,readonly) bool isSharedContainer;
-@property(assign,readonly) NSString * mangledID;
+@property (nonatomic, readonly) BRCSharedLocalContainer *container;
+@property (nonatomic, readonly) bool isPrivateContainer;
+@property (nonatomic, readonly) bool isSharedContainer;
+@property (nonatomic, readonly) NSString *mangledID;
 
 - (void).cxx_destruct;
 - (id)asSharedZone;

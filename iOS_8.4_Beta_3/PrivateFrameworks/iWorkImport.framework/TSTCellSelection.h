@@ -22,19 +22,19 @@
     int mSelectionType;
 }
 
-@property(assign,readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } anchorCellID;
-@property(assign,readonly) TSTCellRegion * baseRegion;
-@property(assign,readonly) unsigned long long cellCount;
-@property(assign,readonly) TSTCellRegion * cellRegion;
-@property(assign,readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } cursorCellID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isAtEndOfLine;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } searchReferenceRange;
-@property(assign,readonly) int selectionType;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } anchorCellID;
+@property (nonatomic, readonly) TSTCellRegion *baseRegion;
+@property (nonatomic, readonly) unsigned long long cellCount;
+@property (nonatomic, readonly) TSTCellRegion *cellRegion;
+@property (nonatomic, readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } cursorCellID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isAtEndOfLine;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } searchReferenceRange;
+@property (nonatomic, readonly) int selectionType;
+@property (readonly) Class superclass;
 
 + (Class)archivedSelectionClass;
 + (id)selectionWithTableModel:(id)arg1 cellID:(struct { unsigned short x1; unsigned char x2; unsigned char x3; })arg2;

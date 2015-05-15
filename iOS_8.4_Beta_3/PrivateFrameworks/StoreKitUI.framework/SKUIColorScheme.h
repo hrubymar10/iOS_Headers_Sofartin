@@ -9,11 +9,11 @@
     UIColor *_secondaryTextColor;
 }
 
-@property(assign,copy) UIColor * backgroundColor;
-@property(assign,copy) UIColor * highlightedTextColor;
-@property(assign,copy) UIColor * primaryTextColor;
-@property(assign,readonly) long long schemeStyle;
-@property(assign,copy) UIColor * secondaryTextColor;
+@property (nonatomic, copy) UIColor *backgroundColor;
+@property (nonatomic, copy) UIColor *highlightedTextColor;
+@property (nonatomic, copy) UIColor *primaryTextColor;
+@property (nonatomic, readonly) long long schemeStyle;
+@property (nonatomic, copy) UIColor *secondaryTextColor;
 
 + (bool)supportsSecureCoding;
 

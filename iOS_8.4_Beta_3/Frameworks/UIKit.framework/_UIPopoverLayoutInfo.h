@@ -59,19 +59,19 @@
     bool _updatesEnabled;
 }
 
-@property(assign,readonly) unsigned long long arrowDirection;
-@property(assign,readwrite) double arrowHeight;
-@property(assign,readwrite) bool constrainToTargetRect;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } containingFrame;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } containingFrameInsets;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
-@property(assign,readonly) double offset;
-@property(assign,readwrite) bool preferLandscapeOrientations;
-@property(assign,readwrite) unsigned long long preferredArrowDirections;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } preferredContentSize;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } targetRect;
-@property(getter=_updatesEnabled,setter=_setUpdatesEnabled:,assign,readwrite) bool updatesEnabled;
+@property (nonatomic, readonly) unsigned long long arrowDirection;
+@property (nonatomic) double arrowHeight;
+@property (nonatomic) bool constrainToTargetRect;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } containingFrame;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } containingFrameInsets;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
+@property (nonatomic, readonly) double offset;
+@property (nonatomic) bool preferLandscapeOrientations;
+@property (nonatomic) unsigned long long preferredArrowDirections;
+@property (nonatomic) struct CGSize { double x1; double x2; } preferredContentSize;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } targetRect;
+@property (getter=_updatesEnabled, setter=_setUpdatesEnabled:, nonatomic) bool updatesEnabled;
 
 + (id)_observationKeys;
 

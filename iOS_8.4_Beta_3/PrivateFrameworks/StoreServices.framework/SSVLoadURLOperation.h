@@ -29,27 +29,27 @@
     NSURLRequest *_urlRequest;
 }
 
-@property(getter=isITunesStoreRequest,assign,readwrite) bool ITunesStoreRequest;
-@property(assign,retain) SSVFairPlaySAPSession * SAPSession;
-@property(assign,copy) SSVSAPSignaturePolicy * SAPSignaturePolicy;
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) NSURLRequest * URLRequest;
-@property(assign,readonly) NSHTTPURLResponse * URLResponse;
-@property(assign,readonly) NSCachedURLResponse * cachedURLResponse;
-@property(assign,retain) SSVURLDataConsumer * dataConsumer;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id expiredOutputBlock;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long machineDataStyle;
-@property(assign,readonly) SSMetricsPageEvent * metricsPageEvent;
-@property(assign,copy) id outputBlock;
-@property(assign,copy) id prepareRequestBlock;
-@property(assign,readwrite) bool recordsMetrics;
-@property(assign,copy) NSString * referrerApplicationName;
-@property(assign,copy) NSString * referrerURLString;
-@property(assign,copy) NSString * storeFrontSuffix;
-@property(assign,readonly) Class superclass;
+@property (getter=isITunesStoreRequest) bool ITunesStoreRequest;
+@property (retain) SSVFairPlaySAPSession *SAPSession;
+@property (copy) SSVSAPSignaturePolicy *SAPSignaturePolicy;
+@property (readonly) NSURL *URL;
+@property (readonly) NSURLRequest *URLRequest;
+@property (readonly) NSHTTPURLResponse *URLResponse;
+@property (readonly) NSCachedURLResponse *cachedURLResponse;
+@property (retain) SSVURLDataConsumer *dataConsumer;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (copy) id expiredOutputBlock;
+@property (readonly) unsigned long long hash;
+@property long long machineDataStyle;
+@property (readonly) SSMetricsPageEvent *metricsPageEvent;
+@property (copy) id outputBlock;
+@property (copy) id prepareRequestBlock;
+@property bool recordsMetrics;
+@property (copy) NSString *referrerApplicationName;
+@property (copy) NSString *referrerURLString;
+@property (copy) NSString *storeFrontSuffix;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)SAPSession;

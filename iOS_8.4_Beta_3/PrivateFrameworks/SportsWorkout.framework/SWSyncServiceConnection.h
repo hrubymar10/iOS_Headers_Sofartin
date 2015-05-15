@@ -9,7 +9,7 @@
     NSMutableData *_receivedData;
 }
 
-@property(assign,readonly) SWSyncHost * host;
+@property (nonatomic, readonly) SWSyncHost *host;
 
 - (void)_bailOutTimerFired:(id)arg1;
 - (void)_restartBailOutTimer;

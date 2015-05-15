@@ -7,8 +7,8 @@
     NSArray *_detailViews;
 }
 
-@property(assign,readwrite) double detailLabelOriginX;
-@property(assign,retain) NSArray * detailViews;
+@property (nonatomic) double detailLabelOriginX;
+@property (nonatomic, retain) NSArray *detailViews;
 
 - (void).cxx_destruct;
 - (void)createViewWithDescriptors:(id)arg1;

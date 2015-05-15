@@ -4,18 +4,18 @@
 
 @interface SAMicroblogObject : SADomainObject
 
-@property(assign,copy) NSURL * attachment;
-@property(assign,copy) NSString * content;
-@property(assign,copy) NSDate * dateSent;
-@property(assign,copy) NSDictionary * hashtagAlternatives;
-@property(assign,retain) SALocation * location;
-@property(assign,copy) NSNumber * outgoing;
-@property(assign,copy) NSArray * recipients;
-@property(assign,copy) NSURL * refereceId;
-@property(assign,retain) SAPersonAttribute * sender;
-@property(assign,copy) NSString * serviceType;
-@property(assign,copy) NSDictionary * socialProfileReferences;
-@property(assign,copy) NSNumber * useLocation;
+@property (nonatomic, copy) NSURL *attachment;
+@property (nonatomic, copy) NSString *content;
+@property (nonatomic, copy) NSDate *dateSent;
+@property (nonatomic, copy) NSDictionary *hashtagAlternatives;
+@property (nonatomic, retain) SALocation *location;
+@property (nonatomic, copy) NSNumber *outgoing;
+@property (nonatomic, copy) NSArray *recipients;
+@property (nonatomic, copy) NSURL *refereceId;
+@property (nonatomic, retain) SAPersonAttribute *sender;
+@property (nonatomic, copy) NSString *serviceType;
+@property (nonatomic, copy) NSDictionary *socialProfileReferences;
+@property (nonatomic, copy) NSNumber *useLocation;
 
 + (id)object;
 + (id)objectWithDictionary:(id)arg1 context:(id)arg2;

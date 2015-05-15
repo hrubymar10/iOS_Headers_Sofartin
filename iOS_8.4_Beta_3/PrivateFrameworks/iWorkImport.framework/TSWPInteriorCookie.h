@@ -7,8 +7,8 @@
     TSWPShapeLayout *_shapeLayout;
 }
 
-@property(assign,readwrite) TSWPColumn * column;
-@property(assign,readwrite) TSWPShapeLayout * layout;
+@property (nonatomic) TSWPColumn *column;
+@property (nonatomic) TSWPShapeLayout *layout;
 
 - (id)column;
 - (id)layout;

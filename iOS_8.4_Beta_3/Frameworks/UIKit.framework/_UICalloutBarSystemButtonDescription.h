@@ -10,8 +10,8 @@
     int m_type;
 }
 
-@property(assign,readonly) SEL action;
-@property(assign,copy) id configurationBlock;
+@property (nonatomic, readonly) SEL action;
+@property (nonatomic, copy) id configurationBlock;
 
 + (id)buttonDescriptionWithImage:(id)arg1 action:(SEL)arg2 type:(int)arg3;
 + (id)buttonDescriptionWithTitle:(id)arg1 action:(SEL)arg2 type:(int)arg3;

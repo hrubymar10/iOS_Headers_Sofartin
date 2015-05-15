@@ -15,14 +15,14 @@
     double _longitudeDelta;
 }
 
-@property(assign,readwrite) bool hasLatitude;
-@property(assign,readwrite) bool hasLatitudeDelta;
-@property(assign,readwrite) bool hasLongitude;
-@property(assign,readwrite) bool hasLongitudeDelta;
-@property(assign,readwrite) double latitude;
-@property(assign,readwrite) double latitudeDelta;
-@property(assign,readwrite) double longitude;
-@property(assign,readwrite) double longitudeDelta;
+@property (nonatomic) bool hasLatitude;
+@property (nonatomic) bool hasLatitudeDelta;
+@property (nonatomic) bool hasLongitude;
+@property (nonatomic) bool hasLongitudeDelta;
+@property (nonatomic) double latitude;
+@property (nonatomic) double latitudeDelta;
+@property (nonatomic) double longitude;
+@property (nonatomic) double longitudeDelta;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

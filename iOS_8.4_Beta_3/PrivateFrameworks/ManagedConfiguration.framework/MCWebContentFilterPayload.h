@@ -15,16 +15,16 @@
     NSArray *_whitelistedBookmarks;
 }
 
-@property(assign,readwrite) bool autoFilterEnabled;
-@property(assign,retain) NSArray * blacklistedURLStrings;
-@property(assign,readwrite) bool filterBrowsers;
-@property(assign,readwrite) bool filterSockets;
-@property(assign,copy) NSString * filterType;
-@property(assign,copy) NSString * name;
-@property(assign,retain) NSArray * permittedURLStrings;
-@property(assign,copy) NSString * pluginBundleID;
-@property(assign,retain) NSDictionary * pluginConfiguration;
-@property(assign,retain) NSArray * whitelistedBookmarks;
+@property (nonatomic) bool autoFilterEnabled;
+@property (nonatomic, retain) NSArray *blacklistedURLStrings;
+@property (nonatomic) bool filterBrowsers;
+@property (nonatomic) bool filterSockets;
+@property (nonatomic, copy) NSString *filterType;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) NSArray *permittedURLStrings;
+@property (nonatomic, copy) NSString *pluginBundleID;
+@property (nonatomic, retain) NSDictionary *pluginConfiguration;
+@property (nonatomic, retain) NSArray *whitelistedBookmarks;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

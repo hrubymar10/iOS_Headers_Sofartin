@@ -15,16 +15,16 @@
     unsigned int _numberOfVisitsBucket;
 }
 
-@property(assign,readwrite) double confidence;
-@property(assign,readwrite) bool hasConfidence;
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,readonly) bool hasLocation;
-@property(assign,readwrite) bool hasLocationIndex;
-@property(assign,readwrite) bool hasNumberOfVisitsBucket;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) GEOLocation * location;
-@property(assign,readwrite) unsigned int locationIndex;
-@property(assign,readwrite) unsigned int numberOfVisitsBucket;
+@property (nonatomic) double confidence;
+@property (nonatomic) bool hasConfidence;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, readonly) bool hasLocation;
+@property (nonatomic) bool hasLocationIndex;
+@property (nonatomic) bool hasNumberOfVisitsBucket;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) GEOLocation *location;
+@property (nonatomic) unsigned int locationIndex;
+@property (nonatomic) unsigned int numberOfVisitsBucket;
 
 - (double)confidence;
 - (void)copyTo:(id)arg1;

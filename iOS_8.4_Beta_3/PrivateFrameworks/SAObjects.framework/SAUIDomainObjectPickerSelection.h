@@ -4,8 +4,8 @@
 
 @interface SAUIDomainObjectPickerSelection : SAStartRequest
 
-@property(assign,retain) SAUIDomainObjectPicker * domainObjectPicker;
-@property(assign,retain) SADomainObject * selectedItem;
+@property (nonatomic, retain) SAUIDomainObjectPicker *domainObjectPicker;
+@property (nonatomic, retain) SADomainObject *selectedItem;
 
 + (id)domainObjectPickerSelection;
 + (id)domainObjectPickerSelectionWithDictionary:(id)arg1 context:(id)arg2;

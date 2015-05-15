@@ -7,7 +7,7 @@
     NSLock *_lock;
 }
 
-@property(assign,retain) NSArray * accounts;
+@property (readonly, retain) NSArray *accounts;
 
 + (id)beginAccountManagerSessionForObject:(id)arg1;
 + (void)endAccountManagerSessionForObject:(id)arg1;

@@ -13,11 +13,11 @@
     int width;
 }
 
-@property(assign,readwrite) char * Cbuffer;
-@property(assign,readwrite) char * Ybuffer;
-@property(assign,readwrite) int bytesPerRow;
-@property(assign,readwrite) int height;
-@property(assign,readwrite) int width;
+@property char *Cbuffer;
+@property char *Ybuffer;
+@property int bytesPerRow;
+@property int height;
+@property int width;
 
 - (char *)Cbuffer;
 - (char *)Ybuffer;

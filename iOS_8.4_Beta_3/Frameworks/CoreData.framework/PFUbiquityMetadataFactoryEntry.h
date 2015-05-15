@@ -9,10 +9,10 @@
     NSPersistentStore *_store;
 }
 
-@property(assign,readonly) PFUbiquityMetadataFactoryFilePresenter * filePresenter;
-@property(assign,readonly) PFUbiquityLocation * metadataStoreFileLocation;
-@property(assign,readonly) NSPersistentStoreCoordinator * psc;
-@property(assign,readonly) NSPersistentStore * store;
+@property (nonatomic, readonly) PFUbiquityMetadataFactoryFilePresenter *filePresenter;
+@property (nonatomic, readonly) PFUbiquityLocation *metadataStoreFileLocation;
+@property (nonatomic, readonly) NSPersistentStoreCoordinator *psc;
+@property (nonatomic, readonly) NSPersistentStore *store;
 
 - (void)dealloc;
 - (id)description;

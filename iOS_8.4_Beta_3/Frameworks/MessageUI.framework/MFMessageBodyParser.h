@@ -14,7 +14,7 @@
     NSMutableArray *_subparsers;
 }
 
-@property(assign,readwrite) unsigned long long options;
+@property (nonatomic) unsigned long long options;
 
 + (bool)isLinebreakImpliedAfterTagName:(id)arg1;
 + (bool)isLinebreakImpliedBeforeTagName:(id)arg1;

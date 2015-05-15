@@ -18,7 +18,7 @@
     unsigned long long _uniqueRemoteId;
 }
 
-@property(assign,copy) id deallocationHandler;
+@property (nonatomic, copy) id deallocationHandler;
 
 + (id)messageWithLibraryID:(unsigned int)arg1;
 

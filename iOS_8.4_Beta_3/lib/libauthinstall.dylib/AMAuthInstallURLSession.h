@@ -11,15 +11,15 @@
     double _timeout;
 }
 
-@property(assign,retain) NSMutableDictionary * completions;
-@property(assign,retain) NSMutableDictionary * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSMutableDictionary * responses;
-@property(assign,retain) NSURLSession * session;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSMutableDictionary *completions;
+@property (nonatomic, retain) NSMutableDictionary *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSMutableDictionary *responses;
+@property (nonatomic, retain) NSURLSession *session;
+@property (readonly) Class superclass;
 
 - (void)URLSession:(id)arg1 dataTask:(id)arg2 didReceiveData:(id)arg3;
 - (void)URLSession:(id)arg1 dataTask:(id)arg2 didReceiveResponse:(id)arg3 completionHandler:(id)arg4;

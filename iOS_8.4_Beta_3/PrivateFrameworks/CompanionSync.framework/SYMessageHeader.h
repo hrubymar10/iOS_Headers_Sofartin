@@ -10,11 +10,11 @@
     unsigned int _version;
 }
 
-@property(assign,retain) SYPeer * sender;
-@property(assign,readwrite) unsigned long long sequenceNumber;
-@property(assign,retain) SYVectorClock * state;
-@property(assign,readwrite) double timestamp;
-@property(assign,readwrite) unsigned int version;
+@property (nonatomic, retain) SYPeer *sender;
+@property (nonatomic) unsigned long long sequenceNumber;
+@property (nonatomic, retain) SYVectorClock *state;
+@property (nonatomic) double timestamp;
+@property (nonatomic) unsigned int version;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

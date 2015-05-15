@@ -4,9 +4,9 @@
 
 @interface SAHAAction : SADomainObject
 
-@property(assign,copy) NSString * actionType;
-@property(assign,copy) NSString * attribute;
-@property(assign,retain) SAHAAttributeValue * value;
+@property (nonatomic, copy) NSString *actionType;
+@property (nonatomic, copy) NSString *attribute;
+@property (nonatomic, retain) SAHAAttributeValue *value;
 
 + (id)action;
 + (id)actionWithDictionary:(id)arg1 context:(id)arg2;

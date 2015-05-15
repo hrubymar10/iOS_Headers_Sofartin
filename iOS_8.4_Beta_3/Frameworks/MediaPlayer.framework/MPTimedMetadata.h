@@ -6,11 +6,11 @@
     AVMetadataItem *_metadataItem;
 }
 
-@property(assign,readonly) NSDictionary * allMetadata;
-@property(assign,readonly) NSString * key;
-@property(assign,readonly) NSString * keyspace;
-@property(assign,readonly) double timestamp;
-@property(assign,readonly) id value;
+@property (nonatomic, readonly) NSDictionary *allMetadata;
+@property (nonatomic, readonly) NSString *key;
+@property (nonatomic, readonly) NSString *keyspace;
+@property (nonatomic, readonly) double timestamp;
+@property (nonatomic, readonly) id value;
 
 - (void).cxx_destruct;
 - (id)_initWithMetadataItem:(id)arg1;

@@ -12,13 +12,13 @@
     float _thumbnailScale;
 }
 
-@property(assign,readwrite) long long constraintType;
-@property(assign,readwrite) float fixedDimension;
-@property(assign,readwrite) float fixedHeight;
-@property(assign,readwrite) float fixedWidth;
-@property(assign,readwrite) float maxAspectRatio;
-@property(assign,readwrite) float minAspectRatio;
-@property(assign,readwrite) float thumbnailScale;
+@property (nonatomic) long long constraintType;
+@property (nonatomic) float fixedDimension;
+@property (nonatomic) float fixedHeight;
+@property (nonatomic) float fixedWidth;
+@property (nonatomic) float maxAspectRatio;
+@property (nonatomic) float minAspectRatio;
+@property (nonatomic) float thumbnailScale;
 
 + (bool)supportsSecureCoding;
 

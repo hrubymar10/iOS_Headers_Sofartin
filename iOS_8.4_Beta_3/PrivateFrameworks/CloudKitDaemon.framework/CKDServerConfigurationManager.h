@@ -16,17 +16,17 @@
     bool _usesBackgroundSession;
 }
 
-@property(assign,readwrite) bool allowsCellularAccess;
-@property(assign,retain) NSOperationQueue * configurationQueue;
-@property(assign,retain) NSMutableDictionary * containerOperations;
-@property(assign,retain) NSMutableDictionary * containerSpecificInfoOperations;
-@property(assign,retain) NSOperationQueue * containerSpecificInfoQueue;
-@property(assign,retain) NSMutableDictionary * containerSpecificInfos;
-@property(assign,retain) CKDServerConfiguration * globalConfiguration;
-@property(assign,retain) CKDGlobalConfigurationOperation * globalConfigurationOp;
-@property(assign,readwrite) int iCloudEnvNotifToken;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readwrite) bool usesBackgroundSession;
+@property (nonatomic) bool allowsCellularAccess;
+@property (nonatomic, retain) NSOperationQueue *configurationQueue;
+@property (nonatomic, retain) NSMutableDictionary *containerOperations;
+@property (nonatomic, retain) NSMutableDictionary *containerSpecificInfoOperations;
+@property (nonatomic, retain) NSOperationQueue *containerSpecificInfoQueue;
+@property (nonatomic, retain) NSMutableDictionary *containerSpecificInfos;
+@property (nonatomic, retain) CKDServerConfiguration *globalConfiguration;
+@property (nonatomic, retain) CKDGlobalConfigurationOperation *globalConfigurationOp;
+@property (nonatomic) int iCloudEnvNotifToken;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic) bool usesBackgroundSession;
 
 + (void)expireConfigurationForContext:(id)arg1;
 + (void)expireGlobalConfiguration;

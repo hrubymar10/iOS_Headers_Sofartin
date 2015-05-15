@@ -14,9 +14,9 @@
     NSObject<OS_xpc_object> *_serverEndpoint;
 }
 
-@property(assign,copy) id handler;
-@property(assign,copy) NSArray * interestedBundleIDs;
-@property(assign,readwrite) unsigned int interestedStates;
+@property (nonatomic, copy) id handler;
+@property (nonatomic, copy) NSArray *interestedBundleIDs;
+@property (nonatomic) unsigned int interestedStates;
 
 - (id)_connection;
 - (void)_setEndpoint:(id)arg1;

@@ -7,7 +7,7 @@
     UIPickerTableView *pickerTable;
 }
 
-@property(assign,readwrite) UIPickerTableView * pickerTable;
+@property (nonatomic) UIPickerTableView *pickerTable;
 
 - (void)_setIsCenterCell:(bool)arg1 shouldModifyAlphaOfView:(bool)arg2;
 - (void)_tapAction:(id)arg1;

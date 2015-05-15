@@ -6,7 +6,7 @@
     long long _kind;
 }
 
-@property(assign,readwrite) long long kind;
+@property (nonatomic) long long kind;
 
 - (id)collectionView:(id)arg1 cellForItemAtIndexPath:(id)arg2;
 - (void)configureCollectionView:(id)arg1;

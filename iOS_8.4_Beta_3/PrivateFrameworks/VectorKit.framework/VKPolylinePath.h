@@ -20,15 +20,15 @@
     BOOL _trafficSpeed;
 }
 
-@property(assign,readonly) bool hasCompletedMapMatching;
-@property(assign,readonly) bool isMapMatched;
-@property(assign,readonly) unsigned int pointCount;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct * points; /* unknown property attribute:  1>=[2f]} */
-@property(assign,readwrite) struct PolylineCoordinate { unsigned int x1; float x2; } routeEnd;
-@property(assign,readwrite) struct PolylineCoordinate { unsigned int x1; float x2; } routeStart;
-@property(assign,readonly) GEOComposedRouteSection * section;
-@property(assign,readonly) GEOSnappedRoutePath * snappedPath;
-@property(assign,readwrite) BOOL trafficSpeed;
+@property (readonly) bool hasCompletedMapMatching;
+@property (readonly) bool isMapMatched;
+@property (nonatomic, readonly) unsigned int pointCount;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct *points; /* unknown property attribute:  1>=[2f]} */
+@property (nonatomic) struct PolylineCoordinate { unsigned int x1; float x2; } routeEnd;
+@property (nonatomic) struct PolylineCoordinate { unsigned int x1; float x2; } routeStart;
+@property (nonatomic, readonly) GEOComposedRouteSection *section;
+@property (nonatomic, readonly) GEOSnappedRoutePath *snappedPath;
+@property (nonatomic) BOOL trafficSpeed;
 
 - (id).cxx_construct;
 - (void)assignPoints:(struct Matrix<float, 2, 1> { float x1[2]; }*)arg1 count:(unsigned int)arg2;

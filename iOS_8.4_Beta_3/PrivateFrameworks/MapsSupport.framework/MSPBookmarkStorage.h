@@ -18,21 +18,21 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,readonly) bool hasPlaceBookmark;
-@property(assign,readwrite) bool hasPosition;
-@property(assign,readonly) bool hasRegionBookmark;
-@property(assign,readonly) bool hasRouteBookmark;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasType;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) MSPPlaceBookmark * placeBookmark;
-@property(assign,readwrite) double position;
-@property(assign,retain) MSPRegionBookmark * regionBookmark;
-@property(assign,retain) MSPRouteBookmark * routeBookmark;
-@property(assign,readwrite) double timestamp;
-@property(assign,readwrite) int type;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, readonly) bool hasPlaceBookmark;
+@property (nonatomic) bool hasPosition;
+@property (nonatomic, readonly) bool hasRegionBookmark;
+@property (nonatomic, readonly) bool hasRouteBookmark;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasType;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) MSPPlaceBookmark *placeBookmark;
+@property (nonatomic) double position;
+@property (nonatomic, retain) MSPRegionBookmark *regionBookmark;
+@property (nonatomic, retain) MSPRouteBookmark *routeBookmark;
+@property (nonatomic) double timestamp;
+@property (nonatomic) int type;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

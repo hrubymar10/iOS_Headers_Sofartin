@@ -4,7 +4,7 @@
 
 @interface SAStructuredDictationResult : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * items;
+@property (nonatomic, copy) NSArray *items;
 
 + (id)structuredDictationResult;
 + (id)structuredDictationResultWithDictionary:(id)arg1 context:(id)arg2;

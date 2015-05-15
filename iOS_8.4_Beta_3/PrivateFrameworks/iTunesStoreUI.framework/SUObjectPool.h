@@ -7,7 +7,7 @@
     NSMutableArray *_vendedObjects;
 }
 
-@property(assign,readonly) NSArray * vendedObjects;
+@property (nonatomic, readonly) NSArray *vendedObjects;
 
 - (void)addObjects:(id)arg1 forClass:(Class)arg2;
 - (id)addObjectsOfClass:(Class)arg1 count:(long long)arg2 forClass:(Class)arg3;

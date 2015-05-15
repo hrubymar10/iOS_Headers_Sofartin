@@ -9,10 +9,10 @@
     bool _wasSplit;
 }
 
-@property(assign,retain) CPLChangeBatch * batch;
-@property(assign,readwrite) bool reachedMinSplit;
-@property(assign,readwrite) unsigned long long retryCount;
-@property(assign,readwrite) bool wasSplit;
+@property (nonatomic, retain) CPLChangeBatch *batch;
+@property (nonatomic) bool reachedMinSplit;
+@property (nonatomic) unsigned long long retryCount;
+@property (nonatomic) bool wasSplit;
 
 - (void)addRecord:(id)arg1;
 - (id)batch;

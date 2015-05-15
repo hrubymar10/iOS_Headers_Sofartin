@@ -10,9 +10,9 @@
     int _placeTypeLimit;
 }
 
-@property(assign,readwrite) bool hasPlaceTypeLimit;
-@property(assign,retain) NSMutableArray * locations;
-@property(assign,readwrite) int placeTypeLimit;
+@property (nonatomic) bool hasPlaceTypeLimit;
+@property (nonatomic, retain) NSMutableArray *locations;
+@property (nonatomic) int placeTypeLimit;
 
 - (void)addLocation:(id)arg1;
 - (void)clearLocations;

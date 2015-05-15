@@ -9,10 +9,10 @@
     NSMutableArray *_notificationIDsMarkedRead;
 }
 
-@property(assign,retain) NSMutableDictionary * errorsByNotificationID;
-@property(assign,copy) id markNotificationsReadCompletionBlock;
-@property(assign,copy) NSArray * notificationIDs;
-@property(assign,retain) NSMutableArray * notificationIDsMarkedRead;
+@property (nonatomic, retain) NSMutableDictionary *errorsByNotificationID;
+@property (nonatomic, copy) id markNotificationsReadCompletionBlock;
+@property (nonatomic, copy) NSArray *notificationIDs;
+@property (nonatomic, retain) NSMutableArray *notificationIDsMarkedRead;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

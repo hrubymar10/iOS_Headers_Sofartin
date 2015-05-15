@@ -6,8 +6,8 @@
     void *_priv;
 }
 
-@property(assign,readonly) long long condition;
-@property(assign,copy) NSString * name;
+@property (readonly) long long condition;
+@property (copy) NSString *name;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 

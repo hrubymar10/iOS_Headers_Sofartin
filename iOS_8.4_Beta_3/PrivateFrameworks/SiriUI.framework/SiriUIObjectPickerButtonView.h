@@ -9,8 +9,8 @@
     SiriUIKeyline *_topKeyline;
 }
 
-@property(assign,readonly) UIButton * button;
-@property(assign,readwrite) bool showsTopKeyline;
+@property (nonatomic, readonly) UIButton *button;
+@property (nonatomic) bool showsTopKeyline;
 
 + (double)defaultHeight;
 

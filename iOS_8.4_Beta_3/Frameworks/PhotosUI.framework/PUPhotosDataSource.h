@@ -28,20 +28,20 @@
     bool _slowBackgroundFetch;
 }
 
-@property(setter=_setPreviousCollectionsCount:,assign,readwrite) unsigned long long _previousCollectionsCount;
-@property(assign,readonly) NSSet * allowedUUIDs;
-@property(assign,readwrite) long long backgroundFetchOriginSection;
-@property(assign,retain) PHFetchResult * collectionListFetchResult;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) long long estimatedOtherCount;
-@property(assign,readonly) long long estimatedPhotosCount;
-@property(assign,readonly) long long estimatedVideosCount;
-@property(assign,retain) NSPredicate * filterPredicate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isEmpty;
-@property(assign,readonly) PHPhotoLibrary * photoLibrary;
-@property(assign,readonly) Class superclass;
+@property (setter=_setPreviousCollectionsCount:, nonatomic) unsigned long long _previousCollectionsCount;
+@property (nonatomic, readonly) NSSet *allowedUUIDs;
+@property (nonatomic) long long backgroundFetchOriginSection;
+@property (nonatomic, retain) PHFetchResult *collectionListFetchResult;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) long long estimatedOtherCount;
+@property (nonatomic, readonly) long long estimatedPhotosCount;
+@property (nonatomic, readonly) long long estimatedVideosCount;
+@property (nonatomic, retain) NSPredicate *filterPredicate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, readonly) PHPhotoLibrary *photoLibrary;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_allSectionsAccurate;

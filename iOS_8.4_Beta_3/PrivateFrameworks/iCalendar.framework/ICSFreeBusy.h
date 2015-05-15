@@ -4,18 +4,18 @@
 
 @interface ICSFreeBusy : ICSComponent
 
-@property(assign,retain) NSArray * attendee;
-@property(assign,retain) ICSDate * created;
-@property(assign,retain) ICSDate * dtend;
-@property(assign,retain) ICSDate * dtstamp;
-@property(assign,retain) ICSDate * dtstart;
-@property(assign,retain) ICSDuration * duration;
-@property(assign,retain) NSArray * freebusy;
-@property(assign,retain) ICSUserAddress * organizer;
-@property(assign,retain) NSString * summary;
-@property(assign,retain) NSString * uid;
-@property(assign,retain) NSString * x_calendarserver_extended_freebusy;
-@property(assign,retain) NSString * x_calendarserver_mask_uid;
+@property (retain) NSArray *attendee;
+@property (retain) ICSDate *created;
+@property (retain) ICSDate *dtend;
+@property (retain) ICSDate *dtstamp;
+@property (retain) ICSDate *dtstart;
+@property (retain) ICSDuration *duration;
+@property (nonatomic, retain) NSArray *freebusy;
+@property (retain) ICSUserAddress *organizer;
+@property (retain) NSString *summary;
+@property (retain) NSString *uid;
+@property (nonatomic, retain) NSString *x_calendarserver_extended_freebusy;
+@property (nonatomic, retain) NSString *x_calendarserver_mask_uid;
 
 + (id)name;
 

@@ -12,13 +12,13 @@
     NSURL *_transactionServiceURL;
 }
 
-@property(assign,copy) NSString * appURLScheme;
-@property(assign,copy) NSString * messagePushTopic;
-@property(assign,copy) NSURL * messageServiceURL;
-@property(assign,readwrite) bool supportsDPANNotifications;
-@property(assign,readwrite) bool supportsFPANNotifications;
-@property(assign,copy) NSString * transactionPushTopic;
-@property(assign,copy) NSURL * transactionServiceURL;
+@property (nonatomic, copy) NSString *appURLScheme;
+@property (nonatomic, copy) NSString *messagePushTopic;
+@property (nonatomic, copy) NSURL *messageServiceURL;
+@property (nonatomic) bool supportsDPANNotifications;
+@property (nonatomic) bool supportsFPANNotifications;
+@property (nonatomic, copy) NSString *transactionPushTopic;
+@property (nonatomic, copy) NSURL *transactionServiceURL;
 
 + (bool)supportsSecureCoding;
 

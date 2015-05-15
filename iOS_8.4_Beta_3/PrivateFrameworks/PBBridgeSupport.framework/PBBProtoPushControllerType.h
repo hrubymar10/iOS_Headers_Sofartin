@@ -10,9 +10,9 @@
     double _intendedFireDate;
 }
 
-@property(assign,readwrite) unsigned int controllerType;
-@property(assign,readwrite) bool hasIntendedFireDate;
-@property(assign,readwrite) double intendedFireDate;
+@property (nonatomic) unsigned int controllerType;
+@property (nonatomic) bool hasIntendedFireDate;
+@property (nonatomic) double intendedFireDate;
 
 - (unsigned int)controllerType;
 - (void)copyTo:(id)arg1;

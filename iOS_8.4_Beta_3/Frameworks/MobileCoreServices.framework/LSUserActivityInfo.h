@@ -16,17 +16,17 @@
     NSURL *_webpageURL;
 }
 
-@property(assign,copy) NSDate * activityDate;
-@property(assign,copy) NSData * activityPayload;
-@property(assign,readwrite) unsigned long long changeCount;
-@property(assign,copy) NSError * error;
-@property(assign,copy) NSDictionary * options;
-@property(assign,copy) NSData * streamsData;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) unsigned long long type;
-@property(assign,copy) NSString * typeIdentifier;
-@property(assign,copy) NSUUID * uuid;
-@property(assign,copy) NSURL * webpageURL;
+@property (copy) NSDate *activityDate;
+@property (copy) NSData *activityPayload;
+@property unsigned long long changeCount;
+@property (copy) NSError *error;
+@property (copy) NSDictionary *options;
+@property (copy) NSData *streamsData;
+@property (copy) NSString *title;
+@property unsigned long long type;
+@property (copy) NSString *typeIdentifier;
+@property (copy) NSUUID *uuid;
+@property (copy) NSURL *webpageURL;
 
 + (bool)supportsSecureCoding;
 

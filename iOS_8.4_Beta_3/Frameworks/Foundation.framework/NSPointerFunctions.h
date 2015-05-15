@@ -4,14 +4,14 @@
 
 @interface NSPointerFunctions : NSObject <NSCopying>
 
-@property(assign,readwrite) int (* acquireFunction;
-@property(assign,readwrite) int (* descriptionFunction;
-@property(assign,readwrite) int (* hashFunction;
-@property(assign,readwrite) int (* isEqualFunction;
-@property(assign,readwrite) int (* relinquishFunction;
-@property(assign,readwrite) int (* sizeFunction;
-@property(assign,readwrite) bool usesStrongWriteBarrier;
-@property(assign,readwrite) bool usesWeakReadAndWriteBarriers;
+@property int (*acquireFunction;
+@property int (*descriptionFunction;
+@property int (*hashFunction;
+@property int (*isEqualFunction;
+@property int (*relinquishFunction;
+@property int (*sizeFunction;
+@property bool usesStrongWriteBarrier;
+@property bool usesWeakReadAndWriteBarriers;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)pointerFunctionsWithOptions:(unsigned long long)arg1;

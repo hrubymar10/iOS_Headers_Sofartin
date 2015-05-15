@@ -10,11 +10,11 @@
     NSObject<OS_dispatch_group> *_itemGroupSetCompletionGroup;
 }
 
-@property(assign,copy) id itemGroupCompletionBlock;
-@property(assign,retain) NSMutableArray * itemGroupContexts;
-@property(assign,retain) CKDMMCSItemGroupSet * itemGroupSet;
-@property(assign,copy) id itemGroupSetCompletionBlock;
-@property(assign,retain) NSObject<OS_dispatch_group> * itemGroupSetCompletionGroup;
+@property (nonatomic, copy) id itemGroupCompletionBlock;
+@property (nonatomic, retain) NSMutableArray *itemGroupContexts;
+@property (nonatomic, retain) CKDMMCSItemGroupSet *itemGroupSet;
+@property (nonatomic, copy) id itemGroupSetCompletionBlock;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *itemGroupSetCompletionGroup;
 
 - (void).cxx_destruct;
 - (void)_addItemGroupContext:(id)arg1;

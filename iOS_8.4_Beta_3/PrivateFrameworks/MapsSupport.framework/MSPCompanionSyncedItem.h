@@ -10,19 +10,19 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,retain) MSPBookmarkStorage * bookmark;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasBookmark;
-@property(assign,readonly) bool hasPin;
-@property(assign,readonly) bool hasSearchRequest;
-@property(assign,readonly) bool hasSyncId;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MSPPinStorage * pin;
-@property(assign,retain) MSPSearchRequestStorage * searchRequest;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * syncId;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, retain) MSPBookmarkStorage *bookmark;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasBookmark;
+@property (nonatomic, readonly) bool hasPin;
+@property (nonatomic, readonly) bool hasSearchRequest;
+@property (nonatomic, readonly) bool hasSyncId;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MSPPinStorage *pin;
+@property (nonatomic, retain) MSPSearchRequestStorage *searchRequest;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSString *syncId;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (void).cxx_destruct;
 - (id)bookmark;

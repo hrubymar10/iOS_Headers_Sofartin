@@ -8,9 +8,9 @@
     CIVector *inputTargetNeutral;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIVector * inputNeutral;
-@property(assign,retain) CIVector * inputTargetNeutral;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIVector *inputNeutral;
+@property (nonatomic, retain) CIVector *inputTargetNeutral;
 
 + (id)customAttributes;
 

@@ -8,9 +8,9 @@
     float _tomatoRating;
 }
 
-@property(assign,readonly) long long freshness;
-@property(assign,readonly) SKUIViewElementText * ratingText;
-@property(assign,readonly) float tomatoRating;
+@property (nonatomic, readonly) long long freshness;
+@property (nonatomic, readonly) SKUIViewElementText *ratingText;
+@property (nonatomic, readonly) float tomatoRating;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

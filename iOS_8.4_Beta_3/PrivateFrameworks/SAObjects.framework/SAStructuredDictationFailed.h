@@ -4,11 +4,11 @@
 
 @interface SAStructuredDictationFailed : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * dialogIdentifier;
-@property(assign,readwrite) long long errorCode;
-@property(assign,copy) NSString * recognition;
-@property(assign,copy) NSString * userFacingReasonDescription;
-@property(assign,copy) NSString * userFacingReasonTitle;
+@property (nonatomic, copy) NSString *dialogIdentifier;
+@property (nonatomic) long long errorCode;
+@property (nonatomic, copy) NSString *recognition;
+@property (nonatomic, copy) NSString *userFacingReasonDescription;
+@property (nonatomic, copy) NSString *userFacingReasonTitle;
 
 + (id)structuredDictationFailed;
 + (id)structuredDictationFailedWithDictionary:(id)arg1 context:(id)arg2;

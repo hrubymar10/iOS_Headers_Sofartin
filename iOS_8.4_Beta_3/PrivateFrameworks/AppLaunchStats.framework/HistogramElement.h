@@ -9,10 +9,10 @@
     NSString *stringkey;
 }
 
-@property(assign,readwrite) unsigned long long count;
-@property(assign,readwrite) double probability;
-@property(assign,readwrite) unsigned long long queryID;
-@property(assign,retain) NSString * stringkey;
+@property (nonatomic) unsigned long long count;
+@property (nonatomic) double probability;
+@property (nonatomic) unsigned long long queryID;
+@property (nonatomic, retain) NSString *stringkey;
 
 - (void).cxx_destruct;
 - (unsigned long long)count;

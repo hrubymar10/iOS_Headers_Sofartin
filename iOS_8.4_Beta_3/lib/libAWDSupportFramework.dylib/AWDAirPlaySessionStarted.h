@@ -18,18 +18,18 @@
     unsigned int _transportType;
 }
 
-@property(assign,readwrite) unsigned int audioCompressionType;
-@property(assign,readwrite) bool hasAudioCompressionType;
-@property(assign,readwrite) bool hasInitiator;
-@property(assign,readwrite) bool hasSessionType;
-@property(assign,readonly) bool hasSessionUUID;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasTransportType;
-@property(assign,readwrite) unsigned int initiator;
-@property(assign,readwrite) unsigned int sessionType;
-@property(assign,retain) NSString * sessionUUID;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int transportType;
+@property (nonatomic) unsigned int audioCompressionType;
+@property (nonatomic) bool hasAudioCompressionType;
+@property (nonatomic) bool hasInitiator;
+@property (nonatomic) bool hasSessionType;
+@property (nonatomic, readonly) bool hasSessionUUID;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasTransportType;
+@property (nonatomic) unsigned int initiator;
+@property (nonatomic) unsigned int sessionType;
+@property (nonatomic, retain) NSString *sessionUUID;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int transportType;
 
 - (unsigned int)audioCompressionType;
 - (void)copyTo:(id)arg1;

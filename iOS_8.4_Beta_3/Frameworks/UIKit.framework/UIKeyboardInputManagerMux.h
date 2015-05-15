@@ -8,9 +8,9 @@
     <TIKeyboardInputManager> *_systemInputManager;
 }
 
-@property(assign,readonly) bool hasSystemInputManager;
-@property(assign,retain) <_UIIVCResponseDelegateImpl> * responseDelegate;
-@property(assign,retain) <TIKeyboardInputManager> * systemInputManager;
+@property (nonatomic, readonly) bool hasSystemInputManager;
+@property (nonatomic, retain) <_UIIVCResponseDelegateImpl> *responseDelegate;
+@property (nonatomic, retain) <TIKeyboardInputManager> *systemInputManager;
 
 + (bool)instancesRespondToSelector:(SEL)arg1;
 + (id)sharedInstance;

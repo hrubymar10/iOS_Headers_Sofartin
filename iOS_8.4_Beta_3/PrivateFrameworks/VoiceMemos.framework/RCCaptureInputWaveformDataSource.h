@@ -17,22 +17,22 @@
     double _updatedCapturedFragmentDuration;
 }
 
-@property(assign,readonly) RCWaveform * baseWaveform;
-@property(assign,readonly) bool canUpdateCaptureComposition;
-@property(assign,readonly) NSArray * captureInitialDecomposedFragments;
-@property(assign,readonly) double captureInsertionDurationInComposition;
-@property(assign,readonly) double captureInsertionTimeInComposition;
-@property(assign,readonly) RCMutableComposition * capturedComposition;
-@property(assign,readonly) RCMutableCompositionFragment * capturedFragment;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) RCComposition * destinationComposition;
-@property(assign,readonly) RCCompositionFragment * destinationFragment;
-@property(assign,readonly) double finalCapturedFragmentDuration;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isOverdub,assign,readonly) bool overdub;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) double updatedCapturedFragmentDuration;
+@property (nonatomic, readonly) RCWaveform *baseWaveform;
+@property (nonatomic, readonly) bool canUpdateCaptureComposition;
+@property (nonatomic, readonly) NSArray *captureInitialDecomposedFragments;
+@property (nonatomic, readonly) double captureInsertionDurationInComposition;
+@property (nonatomic, readonly) double captureInsertionTimeInComposition;
+@property (nonatomic, readonly) RCMutableComposition *capturedComposition;
+@property (nonatomic, readonly) RCMutableCompositionFragment *capturedFragment;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) RCComposition *destinationComposition;
+@property (nonatomic, readonly) RCCompositionFragment *destinationFragment;
+@property (nonatomic, readonly) double finalCapturedFragmentDuration;
+@property (readonly) unsigned long long hash;
+@property (getter=isOverdub, nonatomic, readonly) bool overdub;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) double updatedCapturedFragmentDuration;
 
 - (void).cxx_destruct;
 - (id)_captureSegmentsInComponentWaveform:(id)arg1 captureTimeRange:(struct { double x1; double x2; })arg2 componentWaveformSegmentOffset:(double)arg3;

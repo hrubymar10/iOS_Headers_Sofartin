@@ -7,7 +7,7 @@
     NSArray *_stations;
 }
 
-@property(assign,retain) NSArray * stations;
+@property (nonatomic, retain) NSArray *stations;
 
 - (void).cxx_destruct;
 - (id)initWithQuery:(id)arg1 player:(id)arg2 serviceProvider:(id)arg3;

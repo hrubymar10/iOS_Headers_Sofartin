@@ -14,15 +14,15 @@
     double _wifiOut;
 }
 
-@property(assign,readwrite) double cellIn;
-@property(assign,readwrite) double cellOut;
-@property(assign,readwrite) int refCount;
-@property(assign,retain) NSDictionary * startArgs;
-@property(assign,readwrite) double startTime;
-@property(assign,retain) NSDictionary * stopArgs;
-@property(assign,readwrite) double stopTime;
-@property(assign,readwrite) double wifiIn;
-@property(assign,readwrite) double wifiOut;
+@property double cellIn;
+@property double cellOut;
+@property int refCount;
+@property (retain) NSDictionary *startArgs;
+@property double startTime;
+@property (retain) NSDictionary *stopArgs;
+@property double stopTime;
+@property double wifiIn;
+@property double wifiOut;
 
 - (void).cxx_destruct;
 - (void)addDataWithCellIn:(double)arg1 withCellOut:(double)arg2 withWifiIn:(double)arg3 withWifiOut:(double)arg4;

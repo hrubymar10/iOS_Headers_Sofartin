@@ -9,9 +9,9 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIImage * iconImage;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) UIImage *iconImage;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)addButtonWithTitle:(id)arg1;

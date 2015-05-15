@@ -4,10 +4,10 @@
 
 @interface GKAsyncSocket : NSObject
 
-@property(assign,copy) id connectedHandler;
-@property(assign,copy) id receiveDataHandler;
-@property(assign,retain) id socketName;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * targetQueue;
+@property (nonatomic, copy) id connectedHandler;
+@property (nonatomic, copy) id receiveDataHandler;
+@property (nonatomic, retain) id socketName;
+@property (nonatomic) NSObject<OS_dispatch_queue> *targetQueue;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 

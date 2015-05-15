@@ -7,8 +7,8 @@
     NSString *_merchantIdentifier;
 }
 
-@property(assign,retain) NSData * applicationData;
-@property(assign,retain) NSString * merchantIdentifier;
+@property (nonatomic, retain) NSData *applicationData;
+@property (nonatomic, retain) NSString *merchantIdentifier;
 
 - (id)applicationData;
 - (void)dealloc;

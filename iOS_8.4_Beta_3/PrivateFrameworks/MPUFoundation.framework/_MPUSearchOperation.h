@@ -9,8 +9,8 @@
     NSString *_searchString;
 }
 
-@property(assign,readonly) MPUSearchDataSource * dataSource;
-@property(assign,copy) NSString * searchString;
+@property (nonatomic, readonly) MPUSearchDataSource *dataSource;
+@property (nonatomic, readonly, copy) NSString *searchString;
 
 - (void).cxx_destruct;
 - (id)dataSource;

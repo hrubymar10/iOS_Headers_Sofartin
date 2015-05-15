@@ -16,13 +16,13 @@
     bool _showToggles;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PSSearchControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) PSListController * listController;
-@property(assign,readonly) UISearchBar * searchBar;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PSSearchControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) PSListController *listController;
+@property (nonatomic, readonly) UISearchBar *searchBar;
+@property (readonly) Class superclass;
 
 + (double)_additionalHeightForLabelWithText:(id)arg1 font:(id)arg2 boundingWidth:(double)arg3;
 

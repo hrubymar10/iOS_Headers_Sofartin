@@ -6,7 +6,7 @@
     NSNumber *_ID;
 }
 
-@property(assign,retain) NSNumber * ID;
+@property (retain) NSNumber *ID;
 
 - (id)ID;
 - (void)dealloc;

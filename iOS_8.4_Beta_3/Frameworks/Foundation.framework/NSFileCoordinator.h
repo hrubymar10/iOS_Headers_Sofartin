@@ -12,7 +12,7 @@
     NSURL *_recentFilePresenterURL;
 }
 
-@property(assign,copy) NSString * purposeIdentifier;
+@property (copy) NSString *purposeIdentifier;
 
 + (void)__itemAtURL:(id)arg1 didChangeUbiquityWithPurposeID:(id)arg2;
 + (void)__itemAtURL:(id)arg1 didChangeWithPurposeID:(id)arg2;

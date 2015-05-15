@@ -10,11 +10,11 @@
     long long _targetOrientation;
 }
 
-@property(assign,retain) UIInputViewAnimationStyle * animationStyle;
-@property(assign,readwrite) int postRotationState;
-@property(assign,readwrite) bool requiresNewState;
-@property(assign,readwrite) int state;
-@property(assign,readwrite) long long targetOrientation;
+@property (nonatomic, retain) UIInputViewAnimationStyle *animationStyle;
+@property (nonatomic) int postRotationState;
+@property (nonatomic) bool requiresNewState;
+@property (nonatomic) int state;
+@property (nonatomic) long long targetOrientation;
 
 + (id)stateWithState:(int)arg1 targetOrientation:(long long)arg2;
 

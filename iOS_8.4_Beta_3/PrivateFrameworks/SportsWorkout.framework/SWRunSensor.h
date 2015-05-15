@@ -6,7 +6,7 @@
     <SWRunSensorPacketObserver> *_packetObserver;
 }
 
-@property(assign,readonly) unsigned long long remainingBatteryLifetimeInHours;
+@property (nonatomic, readonly) unsigned long long remainingBatteryLifetimeInHours;
 
 + (unsigned long long)remainingHoursConsideredToBeLowBattery;
 

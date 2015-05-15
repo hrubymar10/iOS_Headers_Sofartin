@@ -13,18 +13,18 @@
     ADPrerollTopBar *_topBar;
 }
 
-@property(assign,readwrite) double accumulatedViewingTime;
-@property(assign,readwrite) bool barsVisible;
-@property(assign,retain) ADPrerollBottomBar * bottomBar;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ADPrerollViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSTimer * passiveWatchingTimer;
-@property(assign,readwrite) bool skipButtonCountingDown;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIImageView * swooshView;
-@property(assign,retain) ADPrerollTopBar * topBar;
+@property (nonatomic) double accumulatedViewingTime;
+@property (nonatomic) bool barsVisible;
+@property (nonatomic, retain) ADPrerollBottomBar *bottomBar;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ADPrerollViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSTimer *passiveWatchingTimer;
+@property (nonatomic) bool skipButtonCountingDown;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIImageView *swooshView;
+@property (nonatomic, retain) ADPrerollTopBar *topBar;
 
 + (Class)layerClass;
 

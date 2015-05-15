@@ -16,8 +16,8 @@
     NSObject<OS_dispatch_queue> *_saveQueue;
 }
 
-@property(assign,retain) ETPerson * ephemeralPerson;
-@property(assign,retain) NSMutableArray * friendList;
+@property (nonatomic, retain) ETPerson *ephemeralPerson;
+@property (nonatomic, retain) NSMutableArray *friendList;
 
 + (id)_positionColors;
 

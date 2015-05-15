@@ -8,9 +8,9 @@
     double _radius;
 }
 
-@property(assign,readwrite) UIColor * color;
-@property(assign,readwrite) int pointStyle;
-@property(assign,readwrite) double radius;
+@property (nonatomic) UIColor *color;
+@property (nonatomic) int pointStyle;
+@property (nonatomic) double radius;
 
 + (id)pointWithColor:(id)arg1 radius:(double)arg2 style:(int)arg3;
 

@@ -13,14 +13,14 @@
     Class _sessionClass;
 }
 
-@property(assign,retain) NSXPCInterface * clientInterface;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * managedObjectModelPath;
-@property(assign,retain) NSString * persistentStoreName;
-@property(assign,retain) NSString * serviceName;
-@property(assign,readonly) Class superclass;
+@property (retain) NSXPCInterface *clientInterface;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) NSString *managedObjectModelPath;
+@property (retain) NSString *persistentStoreName;
+@property (retain) NSString *serviceName;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_verifyAuthorizationForConnection:(id)arg1;

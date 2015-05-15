@@ -13,14 +13,14 @@
     bool _shouldOnlySaveAssetContent;
 }
 
-@property(assign,readwrite) bool atomic;
-@property(assign,retain) NSData * clientChangeTokenData;
-@property(assign,retain) NSDictionary * conflictLosersToResolveByRecordID;
-@property(assign,retain) NSArray * recordIDsToDelete;
-@property(assign,copy) NSDictionary * recordIDsToDeleteToEtags;
-@property(assign,retain) NSArray * recordsToSave;
-@property(assign,readwrite) long long savePolicy;
-@property(assign,readwrite) bool shouldOnlySaveAssetContent;
+@property (nonatomic) bool atomic;
+@property (nonatomic, retain) NSData *clientChangeTokenData;
+@property (nonatomic, retain) NSDictionary *conflictLosersToResolveByRecordID;
+@property (nonatomic, retain) NSArray *recordIDsToDelete;
+@property (nonatomic, copy) NSDictionary *recordIDsToDeleteToEtags;
+@property (nonatomic, retain) NSArray *recordsToSave;
+@property (nonatomic) long long savePolicy;
+@property (nonatomic) bool shouldOnlySaveAssetContent;
 
 + (bool)supportsSecureCoding;
 

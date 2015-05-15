@@ -8,9 +8,9 @@
     double _strength;
 }
 
-@property(assign,retain) _UILegibilitySettings * settings;
-@property(assign,retain) UIImage * shadow;
-@property(assign,readwrite) double strength;
+@property (nonatomic, retain) _UILegibilitySettings *settings;
+@property (nonatomic, retain) UIImage *shadow;
+@property (nonatomic) double strength;
 
 - (void)dealloc;
 - (bool)isEqual:(id)arg1;

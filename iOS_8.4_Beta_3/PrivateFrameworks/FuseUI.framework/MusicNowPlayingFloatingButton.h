@@ -15,15 +15,15 @@
     UIImageView *_shadowView;
 }
 
-@property(assign,retain) NSString * backdropGroupName;
-@property(assign,retain) _UIBackdropView * backdropView;
-@property(assign,retain) MusicCircleView * blendModeTintView;
-@property(assign,retain) MusicCircleView * colorTintView;
-@property(assign,retain) UIImage * glyphImage;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } glyphImageOffset;
-@property(assign,retain) UIImageView * glyphImageView;
-@property(assign,readwrite) bool hideShadow;
-@property(assign,retain) UIImageView * shadowView;
+@property (nonatomic, retain) NSString *backdropGroupName;
+@property (nonatomic, retain) _UIBackdropView *backdropView;
+@property (nonatomic, retain) MusicCircleView *blendModeTintView;
+@property (nonatomic, retain) MusicCircleView *colorTintView;
+@property (nonatomic, retain) UIImage *glyphImage;
+@property (nonatomic) struct UIOffset { double x1; double x2; } glyphImageOffset;
+@property (nonatomic, retain) UIImageView *glyphImageView;
+@property (nonatomic) bool hideShadow;
+@property (nonatomic, retain) UIImageView *shadowView;
 
 - (void).cxx_destruct;
 - (id)backdropGroupName;

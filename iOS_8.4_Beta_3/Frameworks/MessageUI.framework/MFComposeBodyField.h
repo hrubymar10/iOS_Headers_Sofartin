@@ -30,7 +30,7 @@
     bool _shouldShowStandardButtons;
 }
 
-@property(assign,readwrite) bool shouldShowStandardButtons;
+@property bool shouldShowStandardButtons;
 
 + (void)addAdditionalItemsToCalloutBar;
 

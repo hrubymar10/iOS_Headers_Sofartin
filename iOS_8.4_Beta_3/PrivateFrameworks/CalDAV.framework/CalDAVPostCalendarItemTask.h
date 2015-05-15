@@ -6,8 +6,8 @@
     NSString *_previousScheduleTag;
 }
 
-@property(assign,readwrite) <CalDAVPostCalendarItemTaskDelegate> * delegate;
-@property(assign,retain) NSString * previousScheduleTag;
+@property (nonatomic) <CalDAVPostCalendarItemTaskDelegate> *delegate;
+@property (nonatomic, retain) NSString *previousScheduleTag;
 
 - (id)additionalHeaderValues;
 - (void)dealloc;

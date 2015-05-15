@@ -7,8 +7,8 @@
     NSString *_symbolicValue;
 }
 
-@property(assign,readonly) double numericValue;
-@property(assign,copy) NSString * symbolicValue;
+@property (nonatomic, readonly) double numericValue;
+@property (nonatomic, readonly, copy) NSString *symbolicValue;
 
 + (id)constantWithSymbolicValue:(id)arg1 numericValue:(double)arg2;
 

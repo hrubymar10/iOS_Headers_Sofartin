@@ -10,10 +10,10 @@
     NSMutableSet *_momentListIdsToProcess;
 }
 
-@property(assign,readonly) bool hasWork;
-@property(assign,readwrite) double maximumInterval;
-@property(assign,readwrite) double minimumInterval;
-@property(assign,readonly) bool shouldProcessWork;
+@property (nonatomic, readonly) bool hasWork;
+@property (nonatomic) double maximumInterval;
+@property (nonatomic) double minimumInterval;
+@property (nonatomic, readonly) bool shouldProcessWork;
 
 - (void)dealloc;
 - (id)dequeueMomentListIdsForProcessing;

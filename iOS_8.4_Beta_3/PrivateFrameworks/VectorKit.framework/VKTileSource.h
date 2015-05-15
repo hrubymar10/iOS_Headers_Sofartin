@@ -20,21 +20,21 @@
     int loadingTiles;
 }
 
-@property(assign,readwrite) <VKTileSourceClient> * client;
-@property(assign,readwrite) double contentScale;
-@property(assign,readonly) struct Device { }* device;
-@property(assign,readonly) unsigned int maximumDownloadZoomLevel;
-@property(assign,readonly) long long maximumZoomLevel;
-@property(assign,readonly) bool maximumZoomLevelBoundsCamera;
-@property(assign,readonly) unsigned int minimumDownloadZoomLevel;
-@property(assign,readonly) long long minimumZoomLevel;
-@property(assign,readonly) bool minimumZoomLevelBoundsCamera;
-@property(assign,readwrite) bool preloadOnly;
-@property(assign,readwrite) bool requireWiFi;
-@property(assign,retain) VKSharedResources * sharedResources;
-@property(assign,retain) VKStyleManager * styleManager;
-@property(assign,readonly) long long tileSize;
-@property(assign,readonly) long long zEquivalenceClass;
+@property (nonatomic) <VKTileSourceClient> *client;
+@property (nonatomic) double contentScale;
+@property (nonatomic, readonly) struct Device { }*device;
+@property (nonatomic, readonly) unsigned int maximumDownloadZoomLevel;
+@property (nonatomic, readonly) long long maximumZoomLevel;
+@property (nonatomic, readonly) bool maximumZoomLevelBoundsCamera;
+@property (nonatomic, readonly) unsigned int minimumDownloadZoomLevel;
+@property (nonatomic, readonly) long long minimumZoomLevel;
+@property (nonatomic, readonly) bool minimumZoomLevelBoundsCamera;
+@property (nonatomic) bool preloadOnly;
+@property (nonatomic) bool requireWiFi;
+@property (nonatomic, retain) VKSharedResources *sharedResources;
+@property (nonatomic, retain) VKStyleManager *styleManager;
+@property (nonatomic, readonly) long long tileSize;
+@property (nonatomic, readonly) long long zEquivalenceClass;
 
 - (id)_extraInfoForPendingSourceKey:(const struct VKTileKey { unsigned int x1; int x2; int x3; unsigned int x4; }*)arg1;
 - (void)_failedToLoadSourceKey:(const struct VKTileKey { unsigned int x1; int x2; int x3; unsigned int x4; }*)arg1 downloadKey:(const struct _GEOTileKey { unsigned int x1 : 6; unsigned int x2 : 26; unsigned int x3 : 26; unsigned int x4 : 6; unsigned int x5 : 8; unsigned int x6 : 8; unsigned int x7 : 8; unsigned int x8 : 1; unsigned int x9 : 7; unsigned char x10[4]; }*)arg2 error:(id)arg3;

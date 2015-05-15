@@ -16,12 +16,12 @@
     unsigned long long _zoomLevel;
 }
 
-@property(assign,readonly) GEOMapAccess * map;
-@property(assign,copy) id tileHandler;
-@property(assign,readonly) int tileScale;
-@property(assign,readonly) int tileSize;
-@property(assign,readonly) int tileStyle;
-@property(assign,readonly) unsigned long long zoomLevel;
+@property (nonatomic, readonly) GEOMapAccess *map;
+@property (nonatomic, copy) id tileHandler;
+@property (nonatomic, readonly) int tileScale;
+@property (nonatomic, readonly) int tileSize;
+@property (nonatomic, readonly) int tileStyle;
+@property (nonatomic, readonly) unsigned long long zoomLevel;
 
 + (id)realisticTileFinderForMap:(id)arg1 center:(struct { double x1; double x2; })arg2 radius:(double)arg3;
 + (bool)supportsRealisticMap;

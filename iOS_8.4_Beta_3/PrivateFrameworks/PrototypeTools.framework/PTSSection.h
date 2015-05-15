@@ -15,14 +15,14 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSArray * appearanceConditions;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) _UISettings * settings;
-@property(assign,retain) NSString * submoduleKeyPath;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSArray *appearanceConditions;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) _UISettings *settings;
+@property (nonatomic, retain) NSString *submoduleKeyPath;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_assertNoGroupTemplateProperties:(id)arg1;

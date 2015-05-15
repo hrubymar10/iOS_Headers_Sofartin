@@ -6,7 +6,7 @@
     NSString *_template;
 }
 
-@property(assign,copy) NSString * template;
+@property (nonatomic, copy) NSString *template;
 
 - (void)dealloc;
 - (id)initWithTemplate:(id)arg1;

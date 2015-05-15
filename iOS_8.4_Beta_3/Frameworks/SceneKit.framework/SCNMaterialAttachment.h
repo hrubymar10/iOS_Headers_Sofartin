@@ -13,11 +13,11 @@
     unsigned int target;
 }
 
-@property(assign,readwrite) void* context;
-@property(assign,readwrite) unsigned int glID;
-@property(assign,copy) NSDictionary * options;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readwrite) unsigned int target;
+@property (nonatomic) void*context;
+@property (nonatomic) unsigned int glID;
+@property (nonatomic, copy) NSDictionary *options;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic) unsigned int target;
 
 - (void*)context;
 - (void)dealloc;

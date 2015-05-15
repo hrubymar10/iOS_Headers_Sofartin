@@ -6,7 +6,7 @@
     NPKPaymentService *_paymentService;
 }
 
-@property(assign,readwrite) NPKPaymentService * paymentService;
+@property (nonatomic) NPKPaymentService *paymentService;
 
 - (void).cxx_destruct;
 - (void)dealloc;

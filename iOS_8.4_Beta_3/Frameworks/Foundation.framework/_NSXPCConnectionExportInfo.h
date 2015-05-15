@@ -8,9 +8,9 @@
     id _exportedObject;
 }
 
-@property(assign,readwrite) long long exportCount;
-@property(assign,retain) NSXPCInterface * exportedInterface;
-@property(assign,retain) id exportedObject;
+@property long long exportCount;
+@property (retain) NSXPCInterface *exportedInterface;
+@property (retain) id exportedObject;
 
 - (void)dealloc;
 - (id)description;

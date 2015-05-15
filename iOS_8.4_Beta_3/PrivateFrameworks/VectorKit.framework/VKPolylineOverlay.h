@@ -10,15 +10,15 @@
     double _trafficTimeStamp;
 }
 
-@property(assign,readonly) GEOMapRegion * boundingMapRegion;
-@property(assign,readonly) GEOComposedRoute * composedRoute;
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) VKTrafficSegmentsAlongRoute * trafficSegments;
-@property(assign,readonly) double trafficTimeStamp;
+@property (nonatomic, readonly) GEOMapRegion *boundingMapRegion;
+@property (nonatomic, readonly) GEOComposedRoute *composedRoute;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) VKTrafficSegmentsAlongRoute *trafficSegments;
+@property (nonatomic, readonly) double trafficTimeStamp;
 
 - (void)_setNeedsLayout;
 - (void)_updateTraffic;

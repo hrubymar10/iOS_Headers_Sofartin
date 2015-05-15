@@ -9,7 +9,7 @@
     BSDispatchSource *_source;
 }
 
-@property(assign,copy) BSMachSendRight * sendRight;
+@property (nonatomic, readonly, copy) BSMachSendRight *sendRight;
 
 - (void)dealloc;
 - (id)initWithPort:(unsigned int)arg1 queue:(id)arg2 deathHandler:(id)arg3;

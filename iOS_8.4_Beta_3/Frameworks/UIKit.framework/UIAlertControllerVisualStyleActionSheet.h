@@ -6,7 +6,7 @@
     UIAlertControllerDescriptor *_descriptor;
 }
 
-@property(assign,retain) UIAlertControllerDescriptor * descriptor;
+@property (nonatomic, retain) UIAlertControllerDescriptor *descriptor;
 
 - (double)_systemFontSize;
 - (double)backgroundCornerRadius;

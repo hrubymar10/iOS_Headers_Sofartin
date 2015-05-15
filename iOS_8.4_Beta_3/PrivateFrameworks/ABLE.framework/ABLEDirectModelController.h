@@ -7,8 +7,8 @@
     ABLEBONDirect *_directMap;
 }
 
-@property(assign,readonly) unsigned long long currentBON;
-@property(assign,readonly) ABLEBONDirect * directMap;
+@property (readonly) unsigned long long currentBON;
+@property (readonly) ABLEBONDirect *directMap;
 
 - (void).cxx_destruct;
 - (void)calculateBONForCurrentLevel:(float)arg1 andChargeState:(bool)arg2 atDate:(id)arg3 onQueue:(id)arg4 usingHandler:(id)arg5;

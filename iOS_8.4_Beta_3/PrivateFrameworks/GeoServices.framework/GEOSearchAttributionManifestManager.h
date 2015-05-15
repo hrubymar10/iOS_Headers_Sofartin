@@ -6,7 +6,7 @@
     <GEOSearchAttributionServerProxy> *_serverProxy;
 }
 
-@property(assign,readonly) <GEOSearchAttributionServerProxy> * serverProxy;
+@property (nonatomic, readonly) <GEOSearchAttributionServerProxy> *serverProxy;
 
 + (id)sharedManager;
 + (void)useLocalProxy;

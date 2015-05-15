@@ -7,7 +7,7 @@
     PUPhotosGridViewController *_gridViewController;
 }
 
-@property(assign,readonly) PUPhotosGridViewController * gridViewController;
+@property (nonatomic, readonly) PUPhotosGridViewController *gridViewController;
 
 + (int)albumFilterForMediaTypes:(id)arg1;
 + (id)albumListViewControllerSpec;

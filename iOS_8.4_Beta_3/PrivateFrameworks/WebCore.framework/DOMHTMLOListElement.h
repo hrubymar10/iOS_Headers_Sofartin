@@ -4,9 +4,9 @@
 
 @interface DOMHTMLOListElement : DOMHTMLElement
 
-@property(assign,readwrite) bool compact;
-@property(assign,readwrite) int start;
-@property(assign,copy) NSString * type;
+@property bool compact;
+@property int start;
+@property (copy) NSString *type;
 
 - (bool)compact;
 - (bool)reversed;

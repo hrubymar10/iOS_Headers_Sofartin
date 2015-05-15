@@ -10,8 +10,8 @@
     } _range;
 }
 
-@property(assign,retain) UITextView * container;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic, retain) UITextView *container;
+@property struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
 
 - (bool)_addResultsToAttributes;
 - (struct __DDScanQuery { }*)_createScanQueryForBackend;

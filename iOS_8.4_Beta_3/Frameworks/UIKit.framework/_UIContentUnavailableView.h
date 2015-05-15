@@ -25,11 +25,11 @@
     NSLayoutConstraint *titleToMessageConstraint;
 }
 
-@property(assign,copy) id buttonAction;
-@property(assign,copy) NSString * buttonTitle;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) unsigned long long vibrantOptions;
+@property (nonatomic, copy) id buttonAction;
+@property (nonatomic, copy) NSString *buttonTitle;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) unsigned long long vibrantOptions;
 
 - (void)_actionButtonPressed:(id)arg1;
 - (id)_buttonBackgroundImageForStyle:(unsigned long long)arg1 controlState:(unsigned long long)arg2;

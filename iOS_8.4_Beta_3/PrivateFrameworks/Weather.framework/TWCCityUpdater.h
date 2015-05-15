@@ -8,8 +8,8 @@
     id _weatherUpdateCompletion;
 }
 
-@property(assign,retain) NSMutableArray * parsedCities;
-@property(assign,retain) NSArray * requestedCities;
+@property (nonatomic, retain) NSMutableArray *parsedCities;
+@property (nonatomic, retain) NSArray *requestedCities;
 
 + (void)clearSharedCityUpdater;
 + (id)sharedCityUpdater;

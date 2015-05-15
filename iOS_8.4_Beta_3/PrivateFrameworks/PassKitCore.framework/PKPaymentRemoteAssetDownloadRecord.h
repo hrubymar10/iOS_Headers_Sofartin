@@ -7,8 +7,8 @@
     NSDictionary *_remoteAssetsByTaskIdentifier;
 }
 
-@property(assign,retain) NSURL * passURL;
-@property(assign,retain) NSDictionary * remoteAssetsByTaskIdentifier;
+@property (nonatomic, retain) NSURL *passURL;
+@property (nonatomic, retain) NSDictionary *remoteAssetsByTaskIdentifier;
 
 + (bool)supportsSecureCoding;
 

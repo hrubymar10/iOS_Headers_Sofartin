@@ -10,7 +10,7 @@
     NSMutableArray *_queuedMessages;
 }
 
-@property(assign,readonly) NSString * name;
+@property (nonatomic, readonly) NSString *name;
 
 + (id)_currentPipelineStage;
 + (void)_setCurrentPipelineStage:(id)arg1;

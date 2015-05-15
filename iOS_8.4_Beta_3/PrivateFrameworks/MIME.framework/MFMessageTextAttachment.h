@@ -6,7 +6,7 @@
     NSMutableDictionary *_cache;
 }
 
-@property(assign,retain) MFMessageFileWrapper * fileWrapper;
+@property (nonatomic, retain) MFMessageFileWrapper *fileWrapper;
 
 + (unsigned long long)precedenceLevel;
 

@@ -6,7 +6,7 @@
     id _block;
 }
 
-@property(assign,readwrite) id block;
+@property id block;
 
 + (id)SCNJSExportProtocol;
 

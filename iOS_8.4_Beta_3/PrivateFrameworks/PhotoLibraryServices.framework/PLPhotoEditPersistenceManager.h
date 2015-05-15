@@ -4,8 +4,8 @@
 
 @interface PLPhotoEditPersistenceManager : NSObject
 
-@property(assign,readonly) NSString * latestFormatIdentifier;
-@property(assign,readonly) NSString * latestFormatVersion;
+@property (nonatomic, readonly) NSString *latestFormatIdentifier;
+@property (nonatomic, readonly) NSString *latestFormatVersion;
 
 - (id)_allConverterClasses;
 - (id)_allImporterClasses;

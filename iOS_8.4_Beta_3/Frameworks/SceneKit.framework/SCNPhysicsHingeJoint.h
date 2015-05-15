@@ -31,12 +31,12 @@
     SCNPhysicsWorld *_world;
 }
 
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } anchorA;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } anchorB;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } axisA;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } axisB;
-@property(assign,readonly) SCNPhysicsBody * bodyA;
-@property(assign,readonly) SCNPhysicsBody * bodyB;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } anchorA;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } anchorB;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } axisA;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } axisB;
+@property (nonatomic, readonly) SCNPhysicsBody *bodyA;
+@property (nonatomic, readonly) SCNPhysicsBody *bodyB;
 
 + (id)SCNJSExportProtocol;
 + (id)jointWithBody:(id)arg1 axis:(struct SCNVector3 { float x1; float x2; float x3; })arg2 anchor:(struct SCNVector3 { float x1; float x2; float x3; })arg3;

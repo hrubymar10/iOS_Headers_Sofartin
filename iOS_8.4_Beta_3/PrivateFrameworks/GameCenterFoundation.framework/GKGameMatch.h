@@ -8,10 +8,10 @@
     GKPlayer *_player;
 }
 
-@property(assign,retain) NSDate * date;
-@property(assign,readonly) GKGame * game;
-@property(assign,retain) GKRecentMatchInternal * internal;
-@property(assign,readonly) GKPlayer * player;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, readonly) GKGame *game;
+@property (retain) GKRecentMatchInternal *internal;
+@property (nonatomic, readonly) GKPlayer *player;
 
 + (id)instanceMethodSignatureForSelector:(SEL)arg1;
 + (bool)instancesRespondToSelector:(SEL)arg1;

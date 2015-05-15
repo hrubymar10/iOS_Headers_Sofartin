@@ -23,14 +23,14 @@
     SKUIFlexibleSegmentedControl *_segmentedControl;
 }
 
-@property(assign,readonly) _UIBackdropView * backdropView;
-@property(assign,copy) NSArray * chartViewControllers;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long numberOfVisibleColumns;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) _UIBackdropView *backdropView;
+@property (nonatomic, copy) NSArray *chartViewControllers;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long numberOfVisibleColumns;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_headerViewAction:(id)arg1;

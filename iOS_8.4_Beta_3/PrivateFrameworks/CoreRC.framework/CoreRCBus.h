@@ -9,9 +9,9 @@
     NSUUID *_uniqueID;
 }
 
-@property(assign,readonly) NSSet * devices;
-@property(assign,readonly) NSMutableSet * devicesInternal;
-@property(assign,readonly) NSUUID * uniqueID;
+@property (nonatomic, readonly) NSSet *devices;
+@property (nonatomic, readonly) NSMutableSet *devicesInternal;
+@property (nonatomic, readonly) NSUUID *uniqueID;
 
 + (bool)supportsSecureCoding;
 

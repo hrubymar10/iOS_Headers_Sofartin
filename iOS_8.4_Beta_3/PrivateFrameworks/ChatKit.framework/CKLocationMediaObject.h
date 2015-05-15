@@ -9,13 +9,13 @@
     } _coordinate;
 }
 
-@property(assign,readwrite) struct { double x1; double x2; } coordinate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * subtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
+@property (nonatomic) struct { double x1; double x2; } coordinate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) NSString *subtitle;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, copy) NSString *title;
 
 + (id)UTITypes;
 + (Class)__ck_attachmentItemClass;

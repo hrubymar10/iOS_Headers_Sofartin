@@ -6,7 +6,7 @@
     CoreDAVPrincipalItem *_principal;
 }
 
-@property(assign,retain) CoreDAVPrincipalItem * principal;
+@property (nonatomic, retain) CoreDAVPrincipalItem *principal;
 
 + (id)copyParseRules;
 

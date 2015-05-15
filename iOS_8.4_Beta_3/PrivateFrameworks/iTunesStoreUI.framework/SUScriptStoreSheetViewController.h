@@ -4,10 +4,10 @@
 
 @interface SUScriptStoreSheetViewController : SUScriptViewController
 
-@property(assign,readwrite) long long productPageStyle;
-@property(assign,readonly) long long productPageStyleAutomatic;
-@property(assign,readonly) long long productPageStylePad;
-@property(assign,readonly) long long productPageStylePhone;
+@property long long productPageStyle;
+@property (readonly) long long productPageStyleAutomatic;
+@property (readonly) long long productPageStylePad;
+@property (readonly) long long productPageStylePhone;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

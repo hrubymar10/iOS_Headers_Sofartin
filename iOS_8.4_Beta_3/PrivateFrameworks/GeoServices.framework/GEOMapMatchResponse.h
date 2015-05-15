@@ -12,12 +12,12 @@
     NSData *_zilchPoints;
 }
 
-@property(assign,readwrite) bool hasMatchingStatus;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,readonly) bool hasZilchPoints;
-@property(assign,readwrite) int matchingStatus;
-@property(assign,readwrite) int status;
-@property(assign,retain) NSData * zilchPoints;
+@property (nonatomic) bool hasMatchingStatus;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic, readonly) bool hasZilchPoints;
+@property (nonatomic) int matchingStatus;
+@property (nonatomic) int status;
+@property (nonatomic, retain) NSData *zilchPoints;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

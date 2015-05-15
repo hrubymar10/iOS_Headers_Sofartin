@@ -12,7 +12,7 @@
     UIColor *_tintColor;
 }
 
-@property(assign,retain) UIColor * tintColor;
+@property (nonatomic, readonly, retain) UIColor *tintColor;
 
 - (id)_batteryColorForCapacity:(double)arg1 lowCapacity:(double)arg2 charging:(bool)arg3;
 - (void)_cacheImage:(id)arg1 named:(id)arg2;

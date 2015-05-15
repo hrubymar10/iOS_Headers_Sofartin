@@ -7,7 +7,7 @@
     id mWillModifyBlock;
 }
 
-@property(assign,copy) id willModifyBlock;
+@property (nonatomic, copy) id willModifyBlock;
 
 + (bool)chartTypeUsesSeriesLimiting:(id)arg1;
 + (double)depthFactorForAdjustingNumberOfSeries:(unsigned long long)arg1 chartType:(id)arg2 fromOldLimitingSeries:(unsigned long long)arg3 toNewLimitingSeries:(unsigned long long)arg4;

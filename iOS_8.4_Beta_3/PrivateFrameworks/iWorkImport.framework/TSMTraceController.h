@@ -11,7 +11,7 @@
     NSString *mTraceDirectory;
 }
 
-@property(assign,readonly) NSString * traceDirectory;
+@property (nonatomic, readonly) NSString *traceDirectory;
 
 + (void)addBuffer:(id)arg1;
 + (long long)addBufferWithTag:(id)arg1 size:(long long)arg2;

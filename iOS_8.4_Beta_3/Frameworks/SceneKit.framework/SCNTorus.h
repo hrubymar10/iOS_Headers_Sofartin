@@ -12,10 +12,10 @@
     long long _torusringSegmentCount;
 }
 
-@property(assign,readwrite) double pipeRadius;
-@property(assign,readwrite) long long pipeSegmentCount;
-@property(assign,readwrite) double ringRadius;
-@property(assign,readwrite) long long ringSegmentCount;
+@property (nonatomic) double pipeRadius;
+@property (nonatomic) long long pipeSegmentCount;
+@property (nonatomic) double ringRadius;
+@property (nonatomic) long long ringSegmentCount;
 
 + (id)SCNJSExportProtocol;
 + (bool)supportsSecureCoding;

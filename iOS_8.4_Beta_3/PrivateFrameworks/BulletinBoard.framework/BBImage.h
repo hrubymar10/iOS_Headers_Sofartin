@@ -9,14 +9,14 @@
     NSString *_path;
 }
 
-@property(assign,copy) NSString * bundlePath;
-@property(assign,copy) NSData * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * path;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *bundlePath;
+@property (nonatomic, copy) NSData *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *path;
+@property (readonly) Class superclass;
 
 + (id)imageWithData:(id)arg1;
 + (id)imageWithName:(id)arg1 inBundle:(id)arg2;

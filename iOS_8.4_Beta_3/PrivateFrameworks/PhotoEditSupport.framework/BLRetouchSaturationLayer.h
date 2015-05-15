@@ -6,7 +6,7 @@
     float _saturation;
 }
 
-@property(assign,readwrite) float saturation;
+@property (nonatomic) float saturation;
 
 + (id)layerWithSaturation:(float)arg1;
 

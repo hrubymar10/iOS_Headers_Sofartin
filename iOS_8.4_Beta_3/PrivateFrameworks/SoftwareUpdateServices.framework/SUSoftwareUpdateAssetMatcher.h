@@ -11,12 +11,12 @@
     SUPreferences *_preferences;
 }
 
-@property(assign,readwrite) bool compareWithTatsuForEligibility;
-@property(assign,readonly) NSString * fromBuild;
-@property(assign,readonly) NSString * fromProductType;
-@property(assign,readonly) NSString * fromReleaseType;
-@property(assign,readonly) NSString * fromVersion;
-@property(assign,retain) SUPreferences * preferences;
+@property (nonatomic) bool compareWithTatsuForEligibility;
+@property (nonatomic, readonly) NSString *fromBuild;
+@property (nonatomic, readonly) NSString *fromProductType;
+@property (nonatomic, readonly) NSString *fromReleaseType;
+@property (nonatomic, readonly) NSString *fromVersion;
+@property (nonatomic, retain) SUPreferences *preferences;
 
 + (id)matcherForCurrentDevice;
 + (id)matcherForCurrentDeviceWithInterestedStates:(int)arg1;

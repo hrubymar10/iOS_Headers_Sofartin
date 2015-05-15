@@ -7,12 +7,12 @@
     SUPlaceholderViewController *_placeholderViewController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIComposeReviewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) SKUIReviewMetadata * editedReviewMetadata;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIComposeReviewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) SKUIReviewMetadata *editedReviewMetadata;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_cancelAction:(id)arg1;

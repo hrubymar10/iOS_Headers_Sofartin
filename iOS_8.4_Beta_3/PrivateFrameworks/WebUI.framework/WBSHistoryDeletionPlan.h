@@ -13,14 +13,14 @@
     NSMapTable *_updatedLastVisitsByItem;
 }
 
-@property(assign,readonly) NSSet * allItemsToDelete;
-@property(assign,readonly) NSMapTable * allVisitsToDeleteByItemExcludingItemsBeingDeleted;
-@property(assign,readonly) NSSet * allVisitsToDeleteExcludingVisitsFromItemsBeingDeleted;
-@property(assign,readonly) NSSet * discoveredItemsToDelete;
-@property(assign,readonly) NSSet * discoveredVisitsToDelete;
-@property(assign,readonly) NSSet * triggeringItems;
-@property(assign,readonly) NSSet * triggeringVisits;
-@property(assign,readonly) NSMapTable * updatedLastVisitsByItem;
+@property (nonatomic, readonly) NSSet *allItemsToDelete;
+@property (nonatomic, readonly) NSMapTable *allVisitsToDeleteByItemExcludingItemsBeingDeleted;
+@property (nonatomic, readonly) NSSet *allVisitsToDeleteExcludingVisitsFromItemsBeingDeleted;
+@property (nonatomic, readonly) NSSet *discoveredItemsToDelete;
+@property (nonatomic, readonly) NSSet *discoveredVisitsToDelete;
+@property (nonatomic, readonly) NSSet *triggeringItems;
+@property (nonatomic, readonly) NSSet *triggeringVisits;
+@property (nonatomic, readonly) NSMapTable *updatedLastVisitsByItem;
 
 - (void).cxx_destruct;
 - (id)_extraVisitsToDeleteWhenDeletingItems:(id)arg1 visits:(id)arg2;

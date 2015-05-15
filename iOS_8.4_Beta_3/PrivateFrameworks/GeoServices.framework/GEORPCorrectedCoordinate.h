@@ -7,10 +7,10 @@
     GEOLatLng *_originalCoordinate;
 }
 
-@property(assign,retain) GEOLatLng * correctedCoordinate;
-@property(assign,readonly) bool hasCorrectedCoordinate;
-@property(assign,readonly) bool hasOriginalCoordinate;
-@property(assign,retain) GEOLatLng * originalCoordinate;
+@property (nonatomic, retain) GEOLatLng *correctedCoordinate;
+@property (nonatomic, readonly) bool hasCorrectedCoordinate;
+@property (nonatomic, readonly) bool hasOriginalCoordinate;
+@property (nonatomic, retain) GEOLatLng *originalCoordinate;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

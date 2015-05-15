@@ -26,25 +26,25 @@
     bool _timeLapse;
 }
 
-@property(assign,readwrite) bool burstFavorite;
-@property(assign,readwrite) bool burstPicked;
-@property(assign,retain) NSString * burstUUID;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) bool fetchingMetadata;
-@property(assign,readwrite) bool fetchingThumbnail;
-@property(assign,readwrite) long long fileSize;
-@property(assign,readwrite) bool hasMetadata;
-@property(assign,readwrite) bool hasOverriddenOrientation;
-@property(assign,readwrite) bool hasThumbnail;
-@property(assign,readwrite) bool highFramerate;
-@property(assign,retain) NSMutableDictionary * metadata;
-@property(assign,retain) NSMutableDictionary * metadata_hidden;
-@property(assign,readwrite) unsigned long long orientation;
-@property(assign,readwrite) struct CGImage { }* originalThumbnail;
-@property(getter=isRaw,assign,readwrite) bool raw;
-@property(assign,retain) NSMutableArray * sidecarFiles;
-@property(assign,readwrite) struct CGImage { }* thumbnail;
-@property(assign,readwrite) bool timeLapse;
+@property bool burstFavorite;
+@property bool burstPicked;
+@property (retain) NSString *burstUUID;
+@property double duration;
+@property bool fetchingMetadata;
+@property bool fetchingThumbnail;
+@property long long fileSize;
+@property bool hasMetadata;
+@property bool hasOverriddenOrientation;
+@property bool hasThumbnail;
+@property bool highFramerate;
+@property (retain) NSMutableDictionary *metadata;
+@property (retain) NSMutableDictionary *metadata_hidden;
+@property unsigned long long orientation;
+@property struct CGImage { }*originalThumbnail;
+@property (getter=isRaw) bool raw;
+@property (retain) NSMutableArray *sidecarFiles;
+@property struct CGImage { }*thumbnail;
+@property bool timeLapse;
 
 - (bool)burstFavorite;
 - (bool)burstPicked;

@@ -58,14 +58,14 @@
     id _videoSBufHandler;
 }
 
-@property(assign,readonly) BWFigVideoCaptureDevice * captureDevice;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) BWNodeOutput * detectedFacesOutput;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) BWNodeOutput * stillImageOutput;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) BWNodeOutput * videoCaptureOutput;
+@property (readonly) BWFigVideoCaptureDevice *captureDevice;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) BWNodeOutput *detectedFacesOutput;
+@property (readonly) unsigned long long hash;
+@property (readonly) BWNodeOutput *stillImageOutput;
+@property (readonly) Class superclass;
+@property (readonly) BWNodeOutput *videoCaptureOutput;
 
 + (int)_indexOfFormatInFormatsArray:(id)arg1 matchingSensorDimensions:(struct { int x1; int x2; })arg2 sensorPixelFormat:(unsigned int)arg3 sensorFormatIndex:(int)arg4;
 + (id)captureDeviceSourceNodeWithCaptureDevice:(id)arg1;

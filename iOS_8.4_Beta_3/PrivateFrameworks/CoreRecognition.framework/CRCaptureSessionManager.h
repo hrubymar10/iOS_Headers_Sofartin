@@ -22,20 +22,20 @@
     long long _whiteBalanceMode;
 }
 
-@property(assign,copy) NSString * cameraMode;
-@property(assign,readwrite) long long cameraPosition;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } cameraResolution;
-@property(assign,retain) AVCaptureSession * captureSession;
-@property(assign,readwrite) <AVCaptureVideoDataOutputSampleBufferDelegate> * captureSessionDelegate;
-@property(assign,retain) AVCaptureVideoDataOutput * captureVideoDataOutput;
-@property(assign,readwrite) struct __CVBuffer { }* correctedCreditCardBuffer;
-@property(assign,retain) AVCaptureDeviceInput * deviceInput;
-@property(assign,readwrite) long long exposureMode;
-@property(assign,readwrite) long long focusMode;
-@property(assign,retain) id inputPortFormatObserver;
-@property(assign,retain) AVCaptureVideoPreviewLayer * previewLayer;
-@property(assign,readwrite) long long torchMode;
-@property(assign,readwrite) long long whiteBalanceMode;
+@property (nonatomic, copy) NSString *cameraMode;
+@property (nonatomic) long long cameraPosition;
+@property (nonatomic) struct CGSize { double x1; double x2; } cameraResolution;
+@property (nonatomic, retain) AVCaptureSession *captureSession;
+@property (nonatomic) <AVCaptureVideoDataOutputSampleBufferDelegate> *captureSessionDelegate;
+@property (nonatomic, retain) AVCaptureVideoDataOutput *captureVideoDataOutput;
+@property struct __CVBuffer { }*correctedCreditCardBuffer;
+@property (nonatomic, retain) AVCaptureDeviceInput *deviceInput;
+@property (nonatomic) long long exposureMode;
+@property (nonatomic) long long focusMode;
+@property (retain) id inputPortFormatObserver;
+@property (nonatomic, retain) AVCaptureVideoPreviewLayer *previewLayer;
+@property (nonatomic) long long torchMode;
+@property (nonatomic) long long whiteBalanceMode;
 
 - (void).cxx_destruct;
 - (void)_refocusOnPoint:(struct CGPoint { double x1; double x2; })arg1 focusMode:(long long)arg2 exposure:(bool)arg3;

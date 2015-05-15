@@ -7,8 +7,8 @@
     ABUIDataCollectorLogger *_logger;
 }
 
-@property(assign,retain) NSString * appIdentifier;
-@property(assign,retain) ABUIDataCollectorLogger * logger;
+@property (nonatomic, retain) NSString *appIdentifier;
+@property (nonatomic, retain) ABUIDataCollectorLogger *logger;
 
 + (bool)isEnabled;
 + (id)sharedCollector;

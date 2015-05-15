@@ -9,7 +9,7 @@
     NSString *_lookasideFilePath;
 }
 
-@property(assign,readwrite) bool isOutgoingTraffic;
+@property (nonatomic) bool isOutgoingTraffic;
 
 + (id)_logQueue;
 

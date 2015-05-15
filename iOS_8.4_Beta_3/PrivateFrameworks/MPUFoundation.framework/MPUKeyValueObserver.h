@@ -9,10 +9,10 @@
     NSOperationQueue *_queue;
 }
 
-@property(assign,copy) id observationHandler;
-@property(assign,copy) NSString * observedKeyPath;
-@property(assign,retain) id observedObject;
-@property(assign,retain) NSOperationQueue * queue;
+@property (nonatomic, copy) id observationHandler;
+@property (nonatomic, copy) NSString *observedKeyPath;
+@property (nonatomic, retain) id observedObject;
+@property (nonatomic, retain) NSOperationQueue *queue;
 
 + (id)observerForKeyPath:(id)arg1 object:(id)arg2 queue:(id)arg3 observationHandler:(id)arg4;
 

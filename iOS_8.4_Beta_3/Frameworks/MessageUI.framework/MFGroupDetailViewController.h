@@ -7,8 +7,8 @@
     MFRecentComposeRecipientGroup *_group;
 }
 
-@property(assign,readwrite) <MFGroupDetailViewControllerDelegate> * delegate;
-@property(assign,retain) MFRecentComposeRecipientGroup * group;
+@property (nonatomic) <MFGroupDetailViewControllerDelegate> *delegate;
+@property (nonatomic, retain) MFRecentComposeRecipientGroup *group;
 
 - (void)_removeButtonTapped:(id)arg1;
 - (void)dealloc;

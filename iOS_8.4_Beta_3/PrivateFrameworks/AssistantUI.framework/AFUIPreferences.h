@@ -7,7 +7,7 @@
     NSUserDefaults *_userDefaults;
 }
 
-@property(assign,readwrite) <AFUIPreferencesDelegate> * delegate;
+@property (nonatomic) <AFUIPreferencesDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_mutateValueForKey:(id)arg1 block:(id)arg2;

@@ -11,8 +11,8 @@
     } mIdOfFirstOccurence;
 }
 
-@property(assign,readwrite) unsigned long long count;
-@property(assign,readwrite) struct { unsigned short x1; unsigned char x2; unsigned char x3; } idOfFirstOccurence;
+@property unsigned long long count;
+@property struct { unsigned short x1; unsigned char x2; unsigned char x3; } idOfFirstOccurence;
 
 - (id).cxx_construct;
 - (unsigned long long)count;

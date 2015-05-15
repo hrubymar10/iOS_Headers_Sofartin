@@ -6,7 +6,7 @@
     NSSet *_unavailableItemIdentifiers;
 }
 
-@property(assign,copy) NSSet * unavailableItemIdentifiers;
+@property (nonatomic, copy) NSSet *unavailableItemIdentifiers;
 
 - (void).cxx_destruct;
 - (id)_itemsWithDictionary:(id)arg1;

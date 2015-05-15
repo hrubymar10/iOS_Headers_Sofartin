@@ -6,7 +6,7 @@
     unsigned int _count;
 }
 
-@property(assign,readwrite) unsigned int count;
+@property unsigned int count;
 
 - (unsigned int)count;
 - (id)debugDescription;

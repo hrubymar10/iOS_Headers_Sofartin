@@ -16,16 +16,16 @@
     GSPermanentStorage *_versionsStore;
 }
 
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) NSString * etag;
-@property(assign,readwrite) bool hasThumbnail;
-@property(assign,readonly) bool isLatestVersion;
-@property(assign,readonly) NSString * lastEditorDeviceName;
-@property(assign,readonly) NSString * lastEditorFormattedName;
-@property(assign,readonly) NSDate * modificationDate;
-@property(assign,readonly) <NSCopying><NSSecureCoding> * persistentIdentifier;
-@property(assign,readonly) unsigned long long size;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, readonly) NSString *etag;
+@property (nonatomic) bool hasThumbnail;
+@property (nonatomic, readonly) bool isLatestVersion;
+@property (nonatomic, readonly) NSString *lastEditorDeviceName;
+@property (nonatomic, readonly) NSString *lastEditorFormattedName;
+@property (nonatomic, readonly) NSDate *modificationDate;
+@property (nonatomic, readonly) <NSCopying><NSSecureCoding> *persistentIdentifier;
+@property (nonatomic, readonly) unsigned long long size;
+@property (nonatomic, readonly) NSURL *url;
 
 + (id)listVersionsOfDocumentAtURL:(id)arg1;
 

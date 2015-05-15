@@ -7,8 +7,8 @@
     NSString *mType;
 }
 
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSString * type;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSString *type;
 
 + (id)axisLabelsType;
 + (id)axisLineType;

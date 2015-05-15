@@ -9,7 +9,7 @@
     NSMutableDictionary *featureOptions;
 }
 
-@property(assign,retain) CIContext * context;
+@property (nonatomic, retain) CIContext *context;
 
 - (id)context;
 - (void)dealloc;

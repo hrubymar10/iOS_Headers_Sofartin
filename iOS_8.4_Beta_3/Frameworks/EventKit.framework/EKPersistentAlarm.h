@@ -4,20 +4,20 @@
 
 @interface EKPersistentAlarm : EKPersistentObject <NSCopying>
 
-@property(assign,readonly) NSString * UUID;
-@property(assign,copy) NSDate * absoluteDate;
-@property(assign,copy) NSDate * acknowledgedDate;
-@property(assign,readwrite) int alarmType;
-@property(getter=isDefaultAlarm,assign,readwrite) bool defaultAlarm;
-@property(assign,copy) NSData * externalData;
-@property(assign,copy) NSString * externalID;
-@property(assign,readonly) bool isAbsolute;
-@property(assign,copy) EKPersistentLocation * location;
-@property(assign,retain) EKPersistentAlarm * originalAlarm;
-@property(assign,readwrite) long long proximity;
-@property(assign,readwrite) double relativeOffset;
-@property(assign,copy) NSSet * snoozedAlarms;
-@property(assign,copy) NSTimeZone * timeZone;
+@property (nonatomic, readonly) NSString *UUID;
+@property (nonatomic, copy) NSDate *absoluteDate;
+@property (nonatomic, copy) NSDate *acknowledgedDate;
+@property (nonatomic) int alarmType;
+@property (getter=isDefaultAlarm, nonatomic) bool defaultAlarm;
+@property (nonatomic, copy) NSData *externalData;
+@property (nonatomic, copy) NSString *externalID;
+@property (nonatomic, readonly) bool isAbsolute;
+@property (nonatomic, copy) EKPersistentLocation *location;
+@property (nonatomic, retain) EKPersistentAlarm *originalAlarm;
+@property (nonatomic) long long proximity;
+@property (nonatomic) double relativeOffset;
+@property (nonatomic, copy) NSSet *snoozedAlarms;
+@property (nonatomic, copy) NSTimeZone *timeZone;
 
 + (id)defaultPropertiesToLoad;
 + (id)relations;

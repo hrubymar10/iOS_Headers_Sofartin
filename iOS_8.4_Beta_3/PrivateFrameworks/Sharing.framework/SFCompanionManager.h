@@ -13,18 +13,18 @@
     NSMutableDictionary *_streamHandlers;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * deviceID;
-@property(assign,copy) NSString * deviceIP;
-@property(assign,copy) NSString * deviceName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) <SFCompanionServiceManagerProtocol> * managerProxy;
-@property(assign,readwrite) NSObject<OS_dispatch_semaphore> * managerSemaphore;
-@property(assign,retain) NSMutableDictionary * services;
-@property(assign,retain) NSMutableDictionary * streamHandlers;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (copy) NSString *deviceID;
+@property (copy) NSString *deviceIP;
+@property (copy) NSString *deviceName;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *identifier;
+@property (retain) <SFCompanionServiceManagerProtocol> *managerProxy;
+@property NSObject<OS_dispatch_semaphore> *managerSemaphore;
+@property (retain) NSMutableDictionary *services;
+@property (retain) NSMutableDictionary *streamHandlers;
+@property (readonly) Class superclass;
 
 + (id)serviceManager;
 

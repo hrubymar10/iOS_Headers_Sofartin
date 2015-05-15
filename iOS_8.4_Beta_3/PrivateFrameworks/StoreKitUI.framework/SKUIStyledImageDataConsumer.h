@@ -37,16 +37,16 @@
     double _shadowRadius;
 }
 
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,retain) UIColor * borderColor;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } borderWidths;
-@property(assign,readwrite) long long imageContentMode;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } imagePadding;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } imageSize;
-@property(assign,readwrite) long long imageTreatment;
-@property(assign,retain) UIColor * shadowColor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } shadowOffset;
-@property(assign,readwrite) double shadowRadius;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic, retain) UIColor *borderColor;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } borderWidths;
+@property (nonatomic) long long imageContentMode;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } imagePadding;
+@property (nonatomic) struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic) long long imageTreatment;
+@property (nonatomic, retain) UIColor *shadowColor;
+@property (nonatomic) struct CGSize { double x1; double x2; } shadowOffset;
+@property (nonatomic) double shadowRadius;
 
 + (id)appIconConsumerWithSize:(struct CGSize { double x1; double x2; })arg1;
 + (id)applePackIconConsumer;

@@ -8,9 +8,9 @@
     NSMutableDictionary *_objectsContainedInHomes;
 }
 
-@property(assign,retain) NSMutableDictionary * adminsOfHomes;
-@property(assign,retain) NSString * localAdminName;
-@property(assign,retain) NSMutableDictionary * objectsContainedInHomes;
+@property (nonatomic, retain) NSMutableDictionary *adminsOfHomes;
+@property (nonatomic, retain) NSString *localAdminName;
+@property (nonatomic, retain) NSMutableDictionary *objectsContainedInHomes;
 
 + (bool)isWhitelistedMessage:(id)arg1;
 

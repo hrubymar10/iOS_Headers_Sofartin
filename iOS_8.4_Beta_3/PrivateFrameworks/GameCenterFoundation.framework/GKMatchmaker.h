@@ -24,26 +24,26 @@
     bool _wasNearbyBrowsing;
 }
 
-@property(assign,readonly) bool hasInviteListener;
-@property(assign,copy) id inviteHandler;
-@property(assign,copy) id inviteeResponseHandler;
-@property(assign,retain) NSSet * invitees;
-@property(assign,retain) NSDictionary * inviteesByUserID;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * lookForInviteQueue;
-@property(assign,retain) GKMatch * match;
-@property(assign,readwrite) int matching;
-@property(assign,readwrite) bool nearbyAdvertising;
-@property(assign,readwrite) bool nearbyBrowsing;
-@property(assign,retain) NSSet * nearbyCompatibileHashes;
-@property(assign,retain) GKDiscovery * nearbyDiscovery;
-@property(assign,retain) NSMutableDictionary * nearbyInvites;
-@property(assign,copy) id nearbyPlayerHandler;
-@property(assign,copy) id nearbyPlayerIDHandler;
-@property(assign,retain) NSMutableDictionary * nearbyPlayers;
-@property(assign,readwrite) double nearbyQueryAllowance;
-@property(assign,retain) NSDate * nearbyQueryLastCheckDate;
-@property(assign,copy) id recipientResponseHandler;
-@property(assign,readwrite) bool wasNearbyBrowsing;
+@property (nonatomic, readonly) bool hasInviteListener;
+@property (nonatomic, copy) id inviteHandler;
+@property (nonatomic, copy) id inviteeResponseHandler;
+@property (nonatomic, retain) NSSet *invitees;
+@property (retain) NSDictionary *inviteesByUserID;
+@property (nonatomic) NSObject<OS_dispatch_queue> *lookForInviteQueue;
+@property (nonatomic, retain) GKMatch *match;
+@property int matching;
+@property (nonatomic) bool nearbyAdvertising;
+@property (nonatomic) bool nearbyBrowsing;
+@property (nonatomic, retain) NSSet *nearbyCompatibileHashes;
+@property (nonatomic, retain) GKDiscovery *nearbyDiscovery;
+@property (nonatomic, retain) NSMutableDictionary *nearbyInvites;
+@property (nonatomic, copy) id nearbyPlayerHandler;
+@property (nonatomic, copy) id nearbyPlayerIDHandler;
+@property (retain) NSMutableDictionary *nearbyPlayers;
+@property (nonatomic) double nearbyQueryAllowance;
+@property (nonatomic, retain) NSDate *nearbyQueryLastCheckDate;
+@property (nonatomic, copy) id recipientResponseHandler;
+@property (nonatomic) bool wasNearbyBrowsing;
 
 + (id)descriptionForNearbyDictionary:(id)arg1;
 + (id)sharedMatchmaker;

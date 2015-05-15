@@ -7,8 +7,8 @@
     NSString *_slotIdentifier;
 }
 
-@property(getter=isGatewayAdSlot,assign,readonly) bool gatewayAdSlot;
-@property(assign,copy) NSString * slotIdentifier;
+@property (getter=isGatewayAdSlot, nonatomic, readonly) bool gatewayAdSlot;
+@property (nonatomic, readonly, copy) NSString *slotIdentifier;
 
 + (bool)supportsSecureCoding;
 

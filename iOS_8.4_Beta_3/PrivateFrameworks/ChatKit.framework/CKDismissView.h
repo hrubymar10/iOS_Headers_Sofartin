@@ -7,8 +7,8 @@
     NSArray *_passthroughViews;
 }
 
-@property(assign,readwrite) <CKDismissViewDelegate> * delegate;
-@property(assign,copy) NSArray * passthroughViews;
+@property (nonatomic) <CKDismissViewDelegate> *delegate;
+@property (nonatomic, copy) NSArray *passthroughViews;
 
 - (void)dealloc;
 - (id)delegate;

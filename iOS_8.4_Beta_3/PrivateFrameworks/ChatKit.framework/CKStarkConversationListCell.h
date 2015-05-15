@@ -9,13 +9,13 @@
     UIImageView *_unreadImageView;
 }
 
-@property(assign,retain) NSDate * date;
-@property(assign,retain) UIDateLabel * dateLabel;
-@property(assign,readwrite) bool hasUnreadMessages;
-@property(assign,readwrite) UIImage * monogramImage;
-@property(assign,retain) NSString * recipientNames;
-@property(assign,retain) UILabel * recipientsLabel;
-@property(assign,retain) UIImageView * unreadImageView;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, retain) UIDateLabel *dateLabel;
+@property (nonatomic) bool hasUnreadMessages;
+@property (nonatomic) UIImage *monogramImage;
+@property (nonatomic, retain) NSString *recipientNames;
+@property (nonatomic, retain) UILabel *recipientsLabel;
+@property (nonatomic, retain) UIImageView *unreadImageView;
 
 + (double)starkCellMarginWidth;
 

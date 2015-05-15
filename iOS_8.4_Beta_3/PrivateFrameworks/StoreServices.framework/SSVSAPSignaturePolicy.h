@@ -7,8 +7,8 @@
     NSArray *_signatureComponents;
 }
 
-@property(assign,readonly) long long policyType;
-@property(assign,copy) NSArray * signatureComponents;
+@property (nonatomic, readonly) long long policyType;
+@property (nonatomic, readonly, copy) NSArray *signatureComponents;
 
 - (void).cxx_destruct;
 - (id)_dataToSignWithDataSource:(id)arg1;

@@ -38,20 +38,20 @@
     bool _viewShrunk;
 }
 
-@property(assign,readwrite) long long HDSize;
-@property(assign,readwrite) long long SDSize;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <VUPublishViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enableHDSection;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) int selectedOption;
-@property(assign,readwrite) bool showHDSection;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) VUCategory * videoCategory;
-@property(assign,readonly) NSString * videoDescription;
-@property(assign,readonly) NSArray * videoTags;
-@property(assign,readonly) NSString * videoTitle;
+@property (nonatomic) long long HDSize;
+@property (nonatomic) long long SDSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <VUPublishViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enableHDSection;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) int selectedOption;
+@property (nonatomic) bool showHDSection;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) VUCategory *videoCategory;
+@property (nonatomic, readonly) NSString *videoDescription;
+@property (nonatomic, readonly) NSArray *videoTags;
+@property (nonatomic, readonly) NSString *videoTitle;
 
 - (void).cxx_destruct;
 - (long long)HDSize;

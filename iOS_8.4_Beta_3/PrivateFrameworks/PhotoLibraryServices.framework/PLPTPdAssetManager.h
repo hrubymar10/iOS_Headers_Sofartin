@@ -14,15 +14,15 @@
     NSFileManager *fileManager;
 }
 
-@property(assign,retain) NSArray * albumObjectIDs;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) NSObject<PhotoLibraryPTPDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSFileManager * fileManager;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PLManagedObjectContext * managedObjectContext;
-@property(assign,retain) PLPhotoLibrary * photoLibrary;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, retain) NSArray *albumObjectIDs;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) NSObject<PhotoLibraryPTPDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSFileManager *fileManager;
+@property (readonly) unsigned long long hash;
+@property (readonly, retain) PLManagedObjectContext *managedObjectContext;
+@property (nonatomic, readonly, retain) PLPhotoLibrary *photoLibrary;
+@property (readonly) Class superclass;
 
 - (id)_allAssetObjectIDs;
 - (id)_fetchObjectIDsForAssetsExposedToPTPFromObjectIDs:(id)arg1;

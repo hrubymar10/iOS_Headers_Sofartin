@@ -6,16 +6,16 @@
     SBKTransaction *_transaction;
 }
 
-@property(assign,copy) NSString * currentStoreAccountName;
-@property(assign,readonly) bool isAccountsChangedError;
-@property(assign,readonly) bool isAuthenticationError;
-@property(assign,readonly) bool isClampError;
-@property(assign,readonly) bool isRecoverableError;
-@property(assign,readonly) bool isTransactionCancelledError;
-@property(assign,readonly) bool isTransactionMissingInformationError;
-@property(assign,copy) NSString * previousStoreAccountName;
-@property(assign,readonly) double retrySeconds;
-@property(assign,retain) SBKTransaction * transaction;
+@property (readonly, copy) NSString *currentStoreAccountName;
+@property (readonly) bool isAccountsChangedError;
+@property (readonly) bool isAuthenticationError;
+@property (readonly) bool isClampError;
+@property (readonly) bool isRecoverableError;
+@property (readonly) bool isTransactionCancelledError;
+@property (readonly) bool isTransactionMissingInformationError;
+@property (readonly, copy) NSString *previousStoreAccountName;
+@property (readonly) double retrySeconds;
+@property (retain) SBKTransaction *transaction;
 
 + (id)delegateCancelledErrorWithTransaction:(id)arg1 underlyingError:(id)arg2;
 + (id)keyValueStoreDisabledErrorWithTransaction:(id)arg1 underlyingError:(id)arg2;

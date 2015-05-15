@@ -11,13 +11,13 @@
     NSString *_truncatedItemsString;
 }
 
-@property(assign,readonly) double actualHeight;
-@property(assign,retain) NSString * andOthers;
-@property(assign,readonly) double desiredHeight;
-@property(assign,retain) UIFont * font;
-@property(assign,retain) NSArray * items;
-@property(assign,retain) NSString * separator;
-@property(assign,retain) UIColor * textColor;
+@property (nonatomic, readonly) double actualHeight;
+@property (nonatomic, retain) NSString *andOthers;
+@property (nonatomic, readonly) double desiredHeight;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic, retain) NSArray *items;
+@property (nonatomic, retain) NSString *separator;
+@property (nonatomic, retain) UIColor *textColor;
 
 - (void).cxx_destruct;
 - (long long)_stringDrawingOptions;

@@ -14,10 +14,10 @@
     } _placeDataComponents;
 }
 
-@property(assign,readwrite) int actionComponent;
-@property(assign,readwrite) bool hasActionComponent;
-@property(assign,readonly) int* placeDataComponents;
-@property(assign,readonly) unsigned long long placeDataComponentsCount;
+@property (nonatomic) int actionComponent;
+@property (nonatomic) bool hasActionComponent;
+@property (nonatomic, readonly) int*placeDataComponents;
+@property (nonatomic, readonly) unsigned long long placeDataComponentsCount;
 
 - (int)actionComponent;
 - (void)addPlaceDataComponents:(int)arg1;

@@ -17,15 +17,15 @@
     unsigned int _usbRemovedIterator;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct __IOHIDManager { }* hidManager;
-@property(assign,readwrite) bool idleTimerNeedsReset;
-@property(assign,copy) id logger;
-@property(assign,retain) <GameControllerDaemon> * remote;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct __IOHIDManager { }*hidManager;
+@property (nonatomic) bool idleTimerNeedsReset;
+@property (nonatomic, copy) id logger;
+@property (nonatomic, retain) <GameControllerDaemon> *remote;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)addController:(id)arg1;

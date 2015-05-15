@@ -4,12 +4,12 @@
 
 @interface SASiriSupport : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * authToken;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSArray * endpoints;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *authToken;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSArray *endpoints;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)siriSupport;
 + (id)siriSupportWithDictionary:(id)arg1 context:(id)arg2;

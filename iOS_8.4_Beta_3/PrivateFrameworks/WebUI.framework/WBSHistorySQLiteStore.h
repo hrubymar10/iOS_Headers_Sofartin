@@ -43,13 +43,13 @@
     NSTimer *_writeTimer;
 }
 
-@property(assign,readonly) WBSSQLiteDatabase * database;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <WBSHistoryStoreDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool pushNotificationsAreInitialized;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) WBSSQLiteDatabase *database;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <WBSHistoryStoreDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool pushNotificationsAreInitialized;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

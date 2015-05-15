@@ -7,10 +7,10 @@
     NSString *_itemIdentifier;
 }
 
-@property(assign,readonly) long long circleSize;
-@property(assign,readonly) SKUIImageViewElement * imageElement;
-@property(assign,readonly) NSString * itemIdentifier;
-@property(assign,readonly) SKUILabelViewElement * titleElement;
+@property (nonatomic, readonly) long long circleSize;
+@property (nonatomic, readonly) SKUIImageViewElement *imageElement;
+@property (nonatomic, readonly) NSString *itemIdentifier;
+@property (nonatomic, readonly) SKUILabelViewElement *titleElement;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

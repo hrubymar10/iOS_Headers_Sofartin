@@ -12,10 +12,10 @@
     SKUIGroupViewElement *_viewElement;
 }
 
-@property(assign,readonly) SKUIClientContext * clientContext;
-@property(assign,readwrite) SKUISettingsGroupController * controller;
-@property(assign,readwrite) SKUISettingsGroupsDescription * parent;
-@property(assign,retain) SKUIGroupViewElement * viewElement;
+@property (nonatomic, readonly) SKUIClientContext *clientContext;
+@property (nonatomic) SKUISettingsGroupController *controller;
+@property (nonatomic) SKUISettingsGroupsDescription *parent;
+@property (nonatomic, retain) SKUIGroupViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (void)_dismissViewController:(id)arg1 animated:(bool)arg2 completion:(id)arg3;

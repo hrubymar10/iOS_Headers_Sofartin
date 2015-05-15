@@ -8,9 +8,9 @@
     long long _defaultPriority;
 }
 
-@property(assign,copy) id activityCompletionHandler;
-@property(assign,copy) id activityCompletionWithItemsHandler;
-@property(assign,readonly) NSExtension * applicationExtension;
+@property (nonatomic, copy) id activityCompletionHandler;
+@property (nonatomic, copy) id activityCompletionWithItemsHandler;
+@property (nonatomic, readonly) NSExtension *applicationExtension;
 
 + (id)_activityFunctionImage:(id)arg1;
 + (id)_activityGenericImage:(id)arg1;

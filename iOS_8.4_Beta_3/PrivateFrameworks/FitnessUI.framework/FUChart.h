@@ -22,22 +22,22 @@
     double _yAxisEdgeInset;
 }
 
-@property(assign,readwrite) double animationDuration;
-@property(assign,retain) FUChartBackgroundView * backgroundView;
-@property(assign,readwrite) <FUChartDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool labelsInsetChartBackground;
-@property(assign,retain) NSDate * maxXValue;
-@property(assign,retain) NSNumber * maxYValue;
-@property(assign,retain) NSDate * minXValue;
-@property(assign,retain) NSNumber * minYValue;
-@property(assign,readonly) UIScrollView * scrollView;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) FUTimeAxisDescriptor * xAxisDescriptor;
-@property(assign,readwrite) double xAxisToLabelPadding;
-@property(assign,readwrite) double yAxisEdgeInset;
+@property (nonatomic) double animationDuration;
+@property (nonatomic, retain) FUChartBackgroundView *backgroundView;
+@property (nonatomic) <FUChartDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool labelsInsetChartBackground;
+@property (nonatomic, retain) NSDate *maxXValue;
+@property (nonatomic, retain) NSNumber *maxYValue;
+@property (nonatomic, retain) NSDate *minXValue;
+@property (nonatomic, retain) NSNumber *minYValue;
+@property (nonatomic, readonly) UIScrollView *scrollView;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) FUTimeAxisDescriptor *xAxisDescriptor;
+@property (nonatomic) double xAxisToLabelPadding;
+@property (nonatomic) double yAxisEdgeInset;
 
 - (void).cxx_destruct;
 - (double)_absolutePositionForXPlaneValue:(id)arg1;

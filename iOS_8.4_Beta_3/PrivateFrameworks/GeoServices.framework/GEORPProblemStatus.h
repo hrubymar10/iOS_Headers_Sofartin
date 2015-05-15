@@ -13,14 +13,14 @@
     int _problemState;
 }
 
-@property(assign,readwrite) double creationDate;
-@property(assign,readwrite) bool hasCreationDate;
-@property(assign,readonly) bool hasProblemId;
-@property(assign,readonly) bool hasProblemResolution;
-@property(assign,readwrite) bool hasProblemState;
-@property(assign,retain) NSString * problemId;
-@property(assign,retain) GEORPResolution * problemResolution;
-@property(assign,readwrite) int problemState;
+@property (nonatomic) double creationDate;
+@property (nonatomic) bool hasCreationDate;
+@property (nonatomic, readonly) bool hasProblemId;
+@property (nonatomic, readonly) bool hasProblemResolution;
+@property (nonatomic) bool hasProblemState;
+@property (nonatomic, retain) NSString *problemId;
+@property (nonatomic, retain) GEORPResolution *problemResolution;
+@property (nonatomic) int problemState;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

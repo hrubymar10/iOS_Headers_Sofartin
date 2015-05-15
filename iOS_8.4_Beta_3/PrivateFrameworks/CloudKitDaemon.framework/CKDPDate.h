@@ -9,8 +9,8 @@
     double _time;
 }
 
-@property(assign,readwrite) bool hasTime;
-@property(assign,readwrite) double time;
+@property (nonatomic) bool hasTime;
+@property (nonatomic) double time;
 
 - (id)_prettyDictionaryRepresentation;
 - (void)copyTo:(id)arg1;

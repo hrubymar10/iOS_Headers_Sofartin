@@ -7,8 +7,8 @@
     NSString *_sql;
 }
 
-@property(assign,retain) NSMutableArray * parameters;
-@property(assign,retain) NSString * sql;
+@property (nonatomic, retain) NSMutableArray *parameters;
+@property (nonatomic, retain) NSString *sql;
 
 + (id)naturalStatementWithSQL:(id)arg1 parameters:(id)arg2;
 

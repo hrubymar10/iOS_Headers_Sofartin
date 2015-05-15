@@ -6,7 +6,7 @@
     EKUIDividedGridViewController *_viewController;
 }
 
-@property(assign,readwrite) EKUIDividedGridViewController * viewController;
+@property EKUIDividedGridViewController *viewController;
 
 - (void).cxx_destruct;
 - (struct CGSize { double x1; double x2; })intrinsicContentSize;

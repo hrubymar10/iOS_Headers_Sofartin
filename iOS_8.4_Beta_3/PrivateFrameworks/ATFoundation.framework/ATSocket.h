@@ -17,13 +17,13 @@
     unsigned int _writeBufferSize;
 }
 
-@property(assign,readwrite) int descriptor;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readwrite) long long socketMode;
-@property(assign,readwrite) unsigned long long suggestedBufferSize;
-@property(assign,readonly) int transportUpdgradeExceptionCount;
-@property(assign,retain) id userInfo;
-@property(assign,readwrite) unsigned int writeBufferSize;
+@property (nonatomic) int descriptor;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic) long long socketMode;
+@property (nonatomic) unsigned long long suggestedBufferSize;
+@property (nonatomic, readonly) int transportUpdgradeExceptionCount;
+@property (nonatomic, retain) id userInfo;
+@property (nonatomic) unsigned int writeBufferSize;
 
 + (id)createBoundPair:(id)arg1;
 + (bool)supportsSecureCoding;

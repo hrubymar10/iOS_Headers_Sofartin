@@ -9,10 +9,10 @@
     NSString *_username;
 }
 
-@property(assign,retain) ACAccount * account;
-@property(assign,copy) NSString * authToken;
-@property(assign,copy) NSString * password;
-@property(assign,copy) NSString * username;
+@property (nonatomic, retain) ACAccount *account;
+@property (nonatomic, copy) NSString *authToken;
+@property (nonatomic, copy) NSString *password;
+@property (nonatomic, copy) NSString *username;
 
 + (Class)responseClass;
 

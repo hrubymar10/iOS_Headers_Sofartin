@@ -14,12 +14,12 @@
     bool _zoomed;
 }
 
-@property(assign,retain) NSString * localizedName;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSArray * previewHTMLStrings;
-@property(assign,retain) NSArray * previewStyleSheets;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(getter=isZoomed,assign,readwrite) bool zoomed;
+@property (nonatomic, retain) NSString *localizedName;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSArray *previewHTMLStrings;
+@property (nonatomic, retain) NSArray *previewStyleSheets;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (getter=isZoomed, nonatomic) bool zoomed;
 
 + (id)magnifyModeWithSize:(struct CGSize { double x1; double x2; })arg1 name:(id)arg2 localizedName:(id)arg3 isZoomed:(bool)arg4;
 

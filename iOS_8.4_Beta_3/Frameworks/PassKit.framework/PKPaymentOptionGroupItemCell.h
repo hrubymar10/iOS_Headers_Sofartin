@@ -6,7 +6,7 @@
     PKPaymentOptionGroupItem *_optionGroupItem;
 }
 
-@property(assign,retain) PKPaymentOptionGroupItem * optionGroupItem;
+@property (nonatomic, retain) PKPaymentOptionGroupItem *optionGroupItem;
 
 - (void)_updateCellContent;
 - (void)dealloc;

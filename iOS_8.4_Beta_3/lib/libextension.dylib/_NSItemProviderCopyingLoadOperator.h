@@ -7,12 +7,12 @@
     NSDictionary *_loadedItems;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) NSItemProvider * itemProvider;
-@property(assign,retain) NSDictionary * loadedItems;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) NSItemProvider *itemProvider;
+@property (nonatomic, retain) NSDictionary *loadedItems;
+@property (readonly) Class superclass;
 
 + (bool)supportsSecureCoding;
 

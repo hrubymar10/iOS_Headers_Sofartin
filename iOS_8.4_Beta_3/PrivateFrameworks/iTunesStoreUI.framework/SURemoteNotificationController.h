@@ -4,7 +4,7 @@
 
 @interface SURemoteNotificationController : NSObject
 
-@property(assign,readonly) unsigned long long enabledNotificationTypes;
+@property (nonatomic, readonly) unsigned long long enabledNotificationTypes;
 
 + (id)sharedInstance;
 

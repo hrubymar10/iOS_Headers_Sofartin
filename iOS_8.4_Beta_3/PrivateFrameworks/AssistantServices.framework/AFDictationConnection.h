@@ -15,8 +15,8 @@
     unsigned int _stateInSync;
 }
 
-@property(assign,readonly) bool currentlyUsingLocalDication;
-@property(assign,readwrite) <AFDictationDelegate> * delegate;
+@property (nonatomic, readonly) bool currentlyUsingLocalDication;
+@property (nonatomic) <AFDictationDelegate> *delegate;
 
 + (bool)dictationIsEnabled;
 + (bool)dictationIsSupportedForLanguageCode:(id)arg1 error:(id*)arg2;

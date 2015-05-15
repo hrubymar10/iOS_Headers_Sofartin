@@ -10,8 +10,8 @@
     NSString *_text;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } allowedSize;
-@property(assign,copy) NSString * text;
+@property (nonatomic) struct CGSize { double x1; double x2; } allowedSize;
+@property (nonatomic, copy) NSString *text;
 
 - (void).cxx_destruct;
 - (struct CGSize { double x1; double x2; })allowedSize;

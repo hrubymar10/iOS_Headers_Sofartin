@@ -23,22 +23,22 @@
     CKDPRecordZoneIdentifier *_zoneIdentifier;
 }
 
-@property(assign,readwrite) int evaluationType;
-@property(assign,retain) NSMutableArray * filters;
-@property(assign,readwrite) bool fireOnce;
-@property(assign,readwrite) bool hasEvaluationType;
-@property(assign,readwrite) bool hasFireOnce;
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,readonly) bool hasNotification;
-@property(assign,readwrite) bool hasOwner;
-@property(assign,readonly) bool hasZoneIdentifier;
-@property(assign,retain) CKDPIdentifier * identifier;
-@property(assign,readonly) int* mutationTriggers;
-@property(assign,readonly) unsigned long long mutationTriggersCount;
-@property(assign,retain) CKDPSubscriptionNotification * notification;
-@property(assign,readwrite) int owner;
-@property(assign,retain) NSMutableArray * recordTypes;
-@property(assign,retain) CKDPRecordZoneIdentifier * zoneIdentifier;
+@property (nonatomic) int evaluationType;
+@property (nonatomic, retain) NSMutableArray *filters;
+@property (nonatomic) bool fireOnce;
+@property (nonatomic) bool hasEvaluationType;
+@property (nonatomic) bool hasFireOnce;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, readonly) bool hasNotification;
+@property (nonatomic) bool hasOwner;
+@property (nonatomic, readonly) bool hasZoneIdentifier;
+@property (nonatomic, retain) CKDPIdentifier *identifier;
+@property (nonatomic, readonly) int*mutationTriggers;
+@property (nonatomic, readonly) unsigned long long mutationTriggersCount;
+@property (nonatomic, retain) CKDPSubscriptionNotification *notification;
+@property (nonatomic) int owner;
+@property (nonatomic, retain) NSMutableArray *recordTypes;
+@property (nonatomic, retain) CKDPRecordZoneIdentifier *zoneIdentifier;
 
 - (void).cxx_destruct;
 - (void)addFilters:(id)arg1;

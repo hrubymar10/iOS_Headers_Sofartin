@@ -8,9 +8,9 @@
     double _darknessLevel;
 }
 
-@property(assign,readonly) double averageLevel;
-@property(assign,readonly) double brightnessLevel;
-@property(assign,readonly) double darknessLevel;
+@property (nonatomic, readonly) double averageLevel;
+@property (nonatomic, readonly) double brightnessLevel;
+@property (nonatomic, readonly) double darknessLevel;
 
 - (double)averageLevel;
 - (double)brightnessLevel;

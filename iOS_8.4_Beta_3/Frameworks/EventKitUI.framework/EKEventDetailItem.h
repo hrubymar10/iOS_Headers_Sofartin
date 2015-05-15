@@ -13,17 +13,17 @@
     UIViewController<EKEditItemViewControllerProtocol> *_viewController;
 }
 
-@property(assign,readwrite) bool allowsEditing;
-@property(assign,readwrite) int cellPosition;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <EKEventDetailItemDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long maximumNumberOfSubItems;
-@property(assign,readonly) bool requiresLayoutForSubitemCount;
-@property(assign,readwrite) bool shouldIndent;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIViewController * viewController;
+@property (nonatomic) bool allowsEditing;
+@property (nonatomic) int cellPosition;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <EKEventDetailItemDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long maximumNumberOfSubItems;
+@property (nonatomic, readonly) bool requiresLayoutForSubitemCount;
+@property (nonatomic) bool shouldIndent;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIViewController *viewController;
 
 - (void).cxx_destruct;
 - (bool)allowsEditing;

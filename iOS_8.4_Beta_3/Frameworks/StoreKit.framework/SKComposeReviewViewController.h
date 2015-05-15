@@ -11,7 +11,7 @@
     SKInvocationQueueProxy<SKUIServiceComposeReviewViewController> *_serviceProxy;
 }
 
-@property(assign,readwrite) <SKComposeReviewDelegate> * delegate;
+@property (nonatomic) <SKComposeReviewDelegate> *delegate;
 
 - (void)_addRemoteView;
 - (void)_didFinishWithResult:(bool)arg1 error:(id)arg2;

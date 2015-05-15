@@ -8,9 +8,9 @@
     NSArray *_playersToLoad;
 }
 
-@property(assign,retain) GKChallenge * challenge;
-@property(assign,retain) GKComposeHeaderField * challengeField;
-@property(assign,retain) NSArray * playersToLoad;
+@property (nonatomic, retain) GKChallenge *challenge;
+@property (nonatomic, retain) GKComposeHeaderField *challengeField;
+@property (nonatomic, retain) NSArray *playersToLoad;
 
 + (void)composeAndSendFlowForChallenge:(id)arg1 selectPlayers:(id)arg2 defaultMessage:(id)arg3 forcePicker:(bool)arg4 readyHandler:(id)arg5 completionHandler:(id)arg6;
 + (id)composeFlowForChallenge:(id)arg1 players:(id)arg2 defaultMessage:(id)arg3 completionHandler:(id)arg4;

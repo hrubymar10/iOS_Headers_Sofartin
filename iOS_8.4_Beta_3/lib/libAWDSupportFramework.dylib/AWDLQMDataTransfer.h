@@ -16,16 +16,16 @@
     unsigned int _txBytes;
 }
 
-@property(assign,retain) NSString * bundleName;
-@property(assign,readonly) bool hasBundleName;
-@property(assign,readwrite) bool hasLQM;
-@property(assign,readwrite) bool hasRxBytes;
-@property(assign,readwrite) bool hasStateDuration;
-@property(assign,readwrite) bool hasTxBytes;
-@property(assign,readwrite) int lQM;
-@property(assign,readwrite) unsigned int rxBytes;
-@property(assign,readwrite) unsigned int stateDuration;
-@property(assign,readwrite) unsigned int txBytes;
+@property (nonatomic, retain) NSString *bundleName;
+@property (nonatomic, readonly) bool hasBundleName;
+@property (nonatomic) bool hasLQM;
+@property (nonatomic) bool hasRxBytes;
+@property (nonatomic) bool hasStateDuration;
+@property (nonatomic) bool hasTxBytes;
+@property (nonatomic) int lQM;
+@property (nonatomic) unsigned int rxBytes;
+@property (nonatomic) unsigned int stateDuration;
+@property (nonatomic) unsigned int txBytes;
 
 - (id)bundleName;
 - (void)copyTo:(id)arg1;

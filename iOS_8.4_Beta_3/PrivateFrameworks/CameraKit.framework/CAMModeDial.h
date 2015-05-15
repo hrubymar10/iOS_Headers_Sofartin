@@ -17,18 +17,18 @@
     unsigned long long _selectedIndex;
 }
 
-@property(assign,readonly) UIView * _centeringDebugView;
-@property(assign,copy) NSString * _contentSizeCategory;
-@property(assign,readonly) UIView * _dialContainerView;
-@property(assign,readonly) CAGradientLayer * _dialGradientLayer;
-@property(assign,readonly) UIImageView * _dotImageView;
-@property(assign,readonly) UIView * _dotTopMarginLayoutSpacer;
-@property(assign,readonly) NSMutableArray * _items;
-@property(assign,readonly) UIView * _itemsContainerView;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }* _tapZones;
-@property(assign,readwrite) <CAMModeDialDataSource> * dataSource;
-@property(assign,readonly) long long orientation;
-@property(assign,readwrite) unsigned long long selectedIndex;
+@property (nonatomic, readonly) UIView *_centeringDebugView;
+@property (nonatomic, readonly, copy) NSString *_contentSizeCategory;
+@property (nonatomic, readonly) UIView *_dialContainerView;
+@property (nonatomic, readonly) CAGradientLayer *_dialGradientLayer;
+@property (nonatomic, readonly) UIImageView *_dotImageView;
+@property (nonatomic, readonly) UIView *_dotTopMarginLayoutSpacer;
+@property (nonatomic, readonly) NSMutableArray *_items;
+@property (nonatomic, readonly) UIView *_itemsContainerView;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }*_tapZones;
+@property (nonatomic) <CAMModeDialDataSource> *dataSource;
+@property (nonatomic, readonly) long long orientation;
+@property (nonatomic) unsigned long long selectedIndex;
 
 - (void).cxx_destruct;
 - (double)_approximateWidthOfLabelAtIndex:(long long)arg1;

@@ -4,7 +4,7 @@
 
 @interface SAGKPodView : SAAceView
 
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *title;
 
 + (id)podView;
 + (id)podViewWithDictionary:(id)arg1 context:(id)arg2;

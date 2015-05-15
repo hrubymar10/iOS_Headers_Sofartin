@@ -13,15 +13,15 @@
     id _value;
 }
 
-@property(assign,readwrite) bool eventNotificationsEnabled;
-@property(assign,copy) NSNumber * instanceID;
-@property(assign,retain) HAPCharacteristicMetadata * metadata;
-@property(assign,readwrite) unsigned long long properties;
-@property(assign,readwrite) HAPService * service;
-@property(assign,readwrite) bool shouldValidateValueAfterReading;
-@property(assign,readonly) bool supportsAdditionalAuthorizationData;
-@property(assign,copy) NSString * type;
-@property(assign,copy) id value;
+@property (nonatomic) bool eventNotificationsEnabled;
+@property (nonatomic, copy) NSNumber *instanceID;
+@property (nonatomic, retain) HAPCharacteristicMetadata *metadata;
+@property (nonatomic) unsigned long long properties;
+@property (nonatomic) HAPService *service;
+@property (nonatomic) bool shouldValidateValueAfterReading;
+@property (nonatomic, readonly) bool supportsAdditionalAuthorizationData;
+@property (nonatomic, copy) NSString *type;
+@property (nonatomic, copy) id value;
 
 - (void).cxx_destruct;
 - (id)_generateValidMetadata:(id)arg1;

@@ -17,22 +17,22 @@
     NSUUID *_uuid;
 }
 
-@property(assign,readwrite) double autoPlaybackPosition;
-@property(assign,retain) UIColor * backgroundColorOverride;
-@property(assign,retain) NSString * contentType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long index;
-@property(assign,readwrite) bool isPromisedItem;
-@property(assign,retain) NSString * password;
-@property(assign,readonly) NSString * previewItemTitle;
-@property(assign,readonly) NSURL * previewItemURL;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSURL * url;
-@property(assign,retain) NSURL * urlForDisplay;
-@property(assign,readonly) NSUUID * uuid;
+@property double autoPlaybackPosition;
+@property (nonatomic, retain) UIColor *backgroundColorOverride;
+@property (retain) NSString *contentType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property long long index;
+@property bool isPromisedItem;
+@property (retain) NSString *password;
+@property (readonly) NSString *previewItemTitle;
+@property (readonly) NSURL *previewItemURL;
+@property (readonly) Class superclass;
+@property (retain) NSString *title;
+@property (retain) NSURL *url;
+@property (retain) NSURL *urlForDisplay;
+@property (readonly) NSUUID *uuid;
 
 + (id)encodedClasses;
 + (id)proxyWithPreviewItem:(id)arg1;

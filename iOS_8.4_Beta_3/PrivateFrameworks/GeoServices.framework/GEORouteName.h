@@ -10,10 +10,10 @@
     GEONameInfo *_nameInfo;
 }
 
-@property(assign,readwrite) bool hasLastZilchStitchedIndex;
-@property(assign,readonly) bool hasNameInfo;
-@property(assign,readwrite) int lastZilchStitchedIndex;
-@property(assign,retain) GEONameInfo * nameInfo;
+@property (nonatomic) bool hasLastZilchStitchedIndex;
+@property (nonatomic, readonly) bool hasNameInfo;
+@property (nonatomic) int lastZilchStitchedIndex;
+@property (nonatomic, retain) GEONameInfo *nameInfo;
 
 - (struct CGImage { }*)_mapKitImage;
 - (void)copyTo:(id)arg1;

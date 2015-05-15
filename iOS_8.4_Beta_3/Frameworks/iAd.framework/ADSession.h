@@ -9,15 +9,15 @@
     ADAdSheetConnection *_connection;
 }
 
-@property(assign,retain) NSMutableArray * adSpaces;
-@property(assign,readwrite) bool applicationCanReceiveBackgroundAds;
-@property(assign,readwrite) int classicUnavailableToken;
-@property(assign,retain) ADAdSheetConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) <ADSSession_RPC> * rpcProxy;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSMutableArray *adSpaces;
+@property (nonatomic) bool applicationCanReceiveBackgroundAds;
+@property (nonatomic) int classicUnavailableToken;
+@property (nonatomic, retain) ADAdSheetConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) <ADSSession_RPC> *rpcProxy;
+@property (readonly) Class superclass;
 
 + (id)sharedInstance;
 

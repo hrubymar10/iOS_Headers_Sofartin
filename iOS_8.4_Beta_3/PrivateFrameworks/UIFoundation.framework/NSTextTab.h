@@ -12,9 +12,9 @@
     id _reserved;
 }
 
-@property(assign,readonly) long long alignment;
-@property(assign,readonly) double location;
-@property(assign,readonly) NSDictionary * options;
+@property (readonly) long long alignment;
+@property (readonly) double location;
+@property (readonly) NSDictionary *options;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)columnTerminatorsForLocale:(id)arg1;

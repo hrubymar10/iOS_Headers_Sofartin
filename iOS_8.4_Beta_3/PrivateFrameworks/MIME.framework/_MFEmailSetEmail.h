@@ -8,9 +8,9 @@
     unsigned long long _hash;
 }
 
-@property(assign,retain) NSString * address;
-@property(assign,readonly) NSString * commentedAddress;
-@property(assign,readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *address;
+@property (nonatomic, readonly) NSString *commentedAddress;
+@property (nonatomic, readonly) unsigned long long hash;
 
 - (id)address;
 - (id)commentedAddress;

@@ -6,11 +6,11 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSURL *URL;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)URL;
 - (id)copyXPCEncoding;

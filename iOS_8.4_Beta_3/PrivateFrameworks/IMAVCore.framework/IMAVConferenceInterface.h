@@ -10,7 +10,7 @@
     bool _pendingCleanup;
 }
 
-@property(assign,readonly) AVConference * controller;
+@property (nonatomic, readonly) AVConference *controller;
 
 + (bool)_forceRelayMode;
 + (void)_postParticipantMediaChangeNotification:(id)arg1 cameraChanged:(bool)arg2 orientationChanged:(bool)arg3 aspectChanged:(bool)arg4 contentRectChanged:(bool)arg5 cameraWillSwitch:(bool)arg6 camera:(unsigned int)arg7 orentation:(unsigned int)arg8 aspect:(struct CGSize { double x1; double x2; })arg9 contentRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg10;

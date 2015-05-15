@@ -13,24 +13,24 @@
     IMDServiceSession *_session;
 }
 
-@property(assign,retain) NSDictionary * accountDefaults;
-@property(assign,retain) NSString * accountID;
-@property(assign,retain) NSDictionary * accountInfoToPost;
-@property(assign,readonly) bool isActive;
-@property(assign,readonly) bool isDisabled;
-@property(assign,readwrite) bool isLoading;
-@property(assign,readwrite) bool isManaged;
-@property(assign,retain) NSString * loginID;
-@property(assign,retain) NSDictionary * registrationAlertInfo;
-@property(assign,readonly) int registrationError;
-@property(assign,readonly) int registrationStatus;
-@property(assign,retain) IMDService * service;
-@property(assign,retain) IMDServiceSession * session;
-@property(assign,readonly) bool shouldPublishNowPlaying;
-@property(assign,retain) NSDictionary * status;
-@property(assign,retain) NSDictionary * statusToPost;
-@property(assign,retain) NSDictionary * statusToSave;
-@property(assign,readwrite) bool wasDisabledAutomatically;
+@property (nonatomic, readonly, retain) NSDictionary *accountDefaults;
+@property (nonatomic, readonly, retain) NSString *accountID;
+@property (nonatomic, readonly, retain) NSDictionary *accountInfoToPost;
+@property (nonatomic, readonly) bool isActive;
+@property (nonatomic, readonly) bool isDisabled;
+@property (nonatomic) bool isLoading;
+@property (nonatomic) bool isManaged;
+@property (nonatomic, readonly, retain) NSString *loginID;
+@property (nonatomic, readonly, retain) NSDictionary *registrationAlertInfo;
+@property (nonatomic, readonly) int registrationError;
+@property (nonatomic, readonly) int registrationStatus;
+@property (nonatomic, readonly, retain) IMDService *service;
+@property (nonatomic, readonly, retain) IMDServiceSession *session;
+@property (nonatomic, readonly) bool shouldPublishNowPlaying;
+@property (nonatomic, readonly, retain) NSDictionary *status;
+@property (nonatomic, readonly, retain) NSDictionary *statusToPost;
+@property (nonatomic, readonly, retain) NSDictionary *statusToSave;
+@property (nonatomic) bool wasDisabledAutomatically;
 
 - (id)_registrationInfo;
 - (void)_updateIdle;

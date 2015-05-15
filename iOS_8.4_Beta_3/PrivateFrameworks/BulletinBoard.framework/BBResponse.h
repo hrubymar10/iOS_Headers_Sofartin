@@ -17,16 +17,16 @@
     bool _sent;
 }
 
-@property(assign,copy) NSString * actionID;
-@property(assign,readwrite) long long actionType;
-@property(assign,readwrite) bool activated;
-@property(assign,retain) NSString * bulletinID;
-@property(assign,copy) NSString * buttonID;
-@property(assign,copy) NSDictionary * context;
-@property(assign,copy) NSArray * lifeAssertions;
-@property(assign,copy) NSString * originID;
-@property(assign,copy) NSString * replyText;
-@property(assign,copy) id sendBlock;
+@property (nonatomic, copy) NSString *actionID;
+@property (nonatomic) long long actionType;
+@property (nonatomic) bool activated;
+@property (nonatomic, retain) NSString *bulletinID;
+@property (nonatomic, copy) NSString *buttonID;
+@property (nonatomic, copy) NSDictionary *context;
+@property (nonatomic, copy) NSArray *lifeAssertions;
+@property (nonatomic, copy) NSString *originID;
+@property (nonatomic, copy) NSString *replyText;
+@property (nonatomic, copy) id sendBlock;
 
 + (bool)supportsSecureCoding;
 

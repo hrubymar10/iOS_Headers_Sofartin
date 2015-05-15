@@ -12,13 +12,13 @@
     NSEnumerator *_updatedKeysEnumerator;
 }
 
-@property(assign,copy) id completionBlock;
-@property(assign,retain) NSEnumerator * conflictedKeysEnumerator;
-@property(assign,retain) NSEnumerator * deletedKeysEnumerator;
-@property(assign,readwrite) bool resolvedConflictsNeedSyncToServer;
-@property(assign,retain) SBKSyncResponseData * responseData;
-@property(assign,retain) SBKSyncTransaction * transaction;
-@property(assign,retain) NSEnumerator * updatedKeysEnumerator;
+@property (copy) id completionBlock;
+@property (retain) NSEnumerator *conflictedKeysEnumerator;
+@property (retain) NSEnumerator *deletedKeysEnumerator;
+@property bool resolvedConflictsNeedSyncToServer;
+@property (retain) SBKSyncResponseData *responseData;
+@property (retain) SBKSyncTransaction *transaction;
+@property (retain) NSEnumerator *updatedKeysEnumerator;
 
 - (void).cxx_destruct;
 - (void)_processDeletedKey:(id)arg1 isDirty:(bool*)arg2;

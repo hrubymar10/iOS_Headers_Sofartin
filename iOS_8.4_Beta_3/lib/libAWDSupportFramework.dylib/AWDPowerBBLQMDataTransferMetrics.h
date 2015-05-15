@@ -15,11 +15,11 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSMutableArray * lQMBytes;
-@property(assign,readonly) unsigned int* lQMTransitionCntBuckets;
-@property(assign,readonly) unsigned long long lQMTransitionCntBucketsCount;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSMutableArray *lQMBytes;
+@property (nonatomic, readonly) unsigned int*lQMTransitionCntBuckets;
+@property (nonatomic, readonly) unsigned long long lQMTransitionCntBucketsCount;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)addLQMBytes:(id)arg1;
 - (void)addLQMTransitionCntBuckets:(unsigned int)arg1;

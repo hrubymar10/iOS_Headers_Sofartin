@@ -6,7 +6,7 @@
     NSArray *_notificationIDs;
 }
 
-@property(assign,retain) NSArray * notificationIDs;
+@property (nonatomic, retain) NSArray *notificationIDs;
 
 + (bool)supportsSecureCoding;
 

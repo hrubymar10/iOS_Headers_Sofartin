@@ -100,18 +100,18 @@
     int _specularColorLoc;
 }
 
-@property(assign,readwrite) int _ambientColorLoc;
-@property(assign,readwrite) struct GLKBigInt_s { unsigned long long x1; unsigned long long x2; } _colorMaterialEnabledMask;
-@property(assign,readwrite) int _diffuseColorLoc;
-@property(assign,readwrite) int _emissiveColorLoc;
-@property(assign,readwrite) int _shininessLoc;
-@property(assign,readwrite) int _specularColorLoc;
-@property(assign,readwrite) union _GLKVector4 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; float x_1_1_4; } x1; struct { float x_2_1_1; float x_2_1_2; float x_2_1_3; float x_2_1_4; } x2; struct { float x_3_1_1; float x_3_1_2; float x_3_1_3; float x_3_1_4; } x3; float x4[4]; } ambientColor;
-@property(assign,readwrite) union _GLKVector4 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; float x_1_1_4; } x1; struct { float x_2_1_1; float x_2_1_2; float x_2_1_3; float x_2_1_4; } x2; struct { float x_3_1_1; float x_3_1_2; float x_3_1_3; float x_3_1_4; } x3; float x4[4]; } diffuseColor;
-@property(assign,readwrite) unsigned long long* effectDirtyUniforms;
-@property(assign,readwrite) union _GLKVector4 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; float x_1_1_4; } x1; struct { float x_2_1_1; float x_2_1_2; float x_2_1_3; float x_2_1_4; } x2; struct { float x_3_1_1; float x_3_1_2; float x_3_1_3; float x_3_1_4; } x3; float x4[4]; } emissiveColor;
-@property(assign,readwrite) float shininess;
-@property(assign,readwrite) union _GLKVector4 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; float x_1_1_4; } x1; struct { float x_2_1_1; float x_2_1_2; float x_2_1_3; float x_2_1_4; } x2; struct { float x_3_1_1; float x_3_1_2; float x_3_1_3; float x_3_1_4; } x3; float x4[4]; } specularColor;
+@property (nonatomic) int _ambientColorLoc;
+@property (nonatomic) struct GLKBigInt_s { unsigned long long x1; unsigned long long x2; } _colorMaterialEnabledMask;
+@property (nonatomic) int _diffuseColorLoc;
+@property (nonatomic) int _emissiveColorLoc;
+@property (nonatomic) int _shininessLoc;
+@property (nonatomic) int _specularColorLoc;
+@property (nonatomic) union _GLKVector4 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; float x_1_1_4; } x1; struct { float x_2_1_1; float x_2_1_2; float x_2_1_3; float x_2_1_4; } x2; struct { float x_3_1_1; float x_3_1_2; float x_3_1_3; float x_3_1_4; } x3; float x4[4]; } ambientColor;
+@property (nonatomic) union _GLKVector4 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; float x_1_1_4; } x1; struct { float x_2_1_1; float x_2_1_2; float x_2_1_3; float x_2_1_4; } x2; struct { float x_3_1_1; float x_3_1_2; float x_3_1_3; float x_3_1_4; } x3; float x4[4]; } diffuseColor;
+@property (nonatomic) unsigned long long*effectDirtyUniforms;
+@property (nonatomic) union _GLKVector4 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; float x_1_1_4; } x1; struct { float x_2_1_1; float x_2_1_2; float x_2_1_3; float x_2_1_4; } x2; struct { float x_3_1_1; float x_3_1_2; float x_3_1_3; float x_3_1_4; } x3; float x4[4]; } emissiveColor;
+@property (nonatomic) float shininess;
+@property (nonatomic) union _GLKVector4 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; float x_1_1_4; } x1; struct { float x_2_1_1; float x_2_1_2; float x_2_1_3; float x_2_1_4; } x2; struct { float x_3_1_1; float x_3_1_2; float x_3_1_3; float x_3_1_4; } x3; float x4[4]; } specularColor;
 
 + (void)setStaticMasksWithVshRoot:(id)arg1 fshRoot:(id)arg2;
 

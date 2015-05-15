@@ -17,15 +17,15 @@
     UILabel *_travelTimeLabel;
 }
 
-@property(assign,readwrite) <EKDayOccurrenceTravelTimeViewMetricsDelegate> * delegate;
-@property(assign,retain) UIColor * elementColor;
-@property(assign,readwrite) double hairlineYPosition;
-@property(assign,retain) UIColor * lineColor;
-@property(assign,copy) NSString * location;
-@property(assign,readwrite) int occurrenceBackgroundStyle;
-@property(assign,readwrite) long long routingMode;
-@property(assign,readwrite) bool selected;
-@property(assign,readwrite) double travelTime;
+@property (nonatomic) <EKDayOccurrenceTravelTimeViewMetricsDelegate> *delegate;
+@property (nonatomic, retain) UIColor *elementColor;
+@property (nonatomic) double hairlineYPosition;
+@property (nonatomic, retain) UIColor *lineColor;
+@property (nonatomic, copy) NSString *location;
+@property (nonatomic) int occurrenceBackgroundStyle;
+@property (nonatomic) long long routingMode;
+@property (nonatomic) bool selected;
+@property (nonatomic) double travelTime;
 
 - (void).cxx_destruct;
 - (double)_iconScale;

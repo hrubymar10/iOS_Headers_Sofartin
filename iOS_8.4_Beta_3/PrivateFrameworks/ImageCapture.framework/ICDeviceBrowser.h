@@ -6,9 +6,9 @@
     id _privateData;
 }
 
-@property(getter=isBrowsing,assign,readonly) bool browsing;
-@property(assign,readwrite) <ICDeviceBrowserDelegate> * delegate;
-@property(assign,readonly) NSArray * devices;
+@property (getter=isBrowsing, readonly) bool browsing;
+@property <ICDeviceBrowserDelegate> *delegate;
+@property (readonly) NSArray *devices;
 
 - (void)dealloc;
 - (id)delegate;

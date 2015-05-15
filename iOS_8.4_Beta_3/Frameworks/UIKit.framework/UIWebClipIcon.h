@@ -12,10 +12,10 @@
     NSURL *_url;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } bestSize;
-@property(getter=isPrecomposed,assign,readwrite) bool precomposed;
-@property(getter=isSiteWide,assign,readwrite) bool siteWide;
-@property(assign,retain) NSURL * url;
+@property (nonatomic) struct CGSize { double x1; double x2; } bestSize;
+@property (getter=isPrecomposed, nonatomic) bool precomposed;
+@property (getter=isSiteWide, nonatomic) bool siteWide;
+@property (nonatomic, retain) NSURL *url;
 
 - (struct CGSize { double x1; double x2; })bestSize;
 - (long long)compare:(id)arg1 preferringDeviceIconSizes:(bool)arg2;

@@ -4,7 +4,7 @@
 
 @interface IKOrdinalElement : IKTextElement
 
-@property(assign,readonly) unsigned long long maxLength;
+@property (nonatomic, readonly) unsigned long long maxLength;
 
 - (unsigned long long)maxLength;
 

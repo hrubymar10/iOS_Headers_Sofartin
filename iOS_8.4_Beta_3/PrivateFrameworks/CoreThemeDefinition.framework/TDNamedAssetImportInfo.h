@@ -39,24 +39,24 @@
     long long _templateRenderingMode;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } alignmentRect;
-@property(assign,copy) NSURL * fileURL;
-@property(assign,readwrite) unsigned long long graphicsClass;
-@property(assign,readwrite) long long idiom;
-@property(assign,readwrite) bool isTemplate;
-@property(assign,readwrite) unsigned long long memoryClass;
-@property(assign,copy) NSDate * modificationDate;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) long long nameIdentifier;
-@property(assign,readwrite) long long renditionType;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } resizableSliceSize;
-@property(assign,readwrite) long long resizingMode;
-@property(assign,readwrite) unsigned long long scaleFactor;
-@property(assign,readwrite) long long sizeClassHorizontal;
-@property(assign,readwrite) long long sizeClassVertical;
-@property(assign,readwrite) struct { double x1; double x2; double x3; double x4; } sliceInsets;
-@property(assign,readwrite) long long subtype;
-@property(assign,readwrite) long long templateRenderingMode;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } alignmentRect;
+@property (nonatomic, copy) NSURL *fileURL;
+@property (nonatomic) unsigned long long graphicsClass;
+@property (nonatomic) long long idiom;
+@property (nonatomic) bool isTemplate;
+@property (nonatomic) unsigned long long memoryClass;
+@property (nonatomic, copy) NSDate *modificationDate;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) long long nameIdentifier;
+@property (nonatomic) long long renditionType;
+@property (nonatomic) struct CGSize { double x1; double x2; } resizableSliceSize;
+@property (nonatomic) long long resizingMode;
+@property (nonatomic) unsigned long long scaleFactor;
+@property (nonatomic) long long sizeClassHorizontal;
+@property (nonatomic) long long sizeClassVertical;
+@property (nonatomic) struct { double x1; double x2; double x3; double x4; } sliceInsets;
+@property (nonatomic) long long subtype;
+@property (nonatomic) long long templateRenderingMode;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })alignmentRect;
 - (void)dealloc;

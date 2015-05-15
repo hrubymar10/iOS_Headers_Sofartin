@@ -6,7 +6,7 @@
     TIHandwritingStrokes *_strokes;
 }
 
-@property(assign,retain) TIHandwritingStrokes * strokes;
+@property (nonatomic, retain) TIHandwritingStrokes *strokes;
 
 - (void)addPoint:(struct CGPoint { double x1; double x2; })arg1;
 - (void)clear;

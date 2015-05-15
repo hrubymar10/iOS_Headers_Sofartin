@@ -23,14 +23,14 @@
     long long _state;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CBCentralManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isScanning;
-@property(assign,readonly) CBPairingAgent * sharedPairingAgent;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CBCentralManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property bool isScanning;
+@property (nonatomic, readonly) CBPairingAgent *sharedPairingAgent;
+@property long long state;
+@property (readonly) Class superclass;
 
 - (void)cancelPeripheralConnection:(id)arg1;
 - (void)cancelPeripheralConnection:(id)arg1 force:(bool)arg2;

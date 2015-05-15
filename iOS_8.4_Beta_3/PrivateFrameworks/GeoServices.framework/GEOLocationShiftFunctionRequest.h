@@ -8,9 +8,9 @@
     unsigned short _providerID;
 }
 
-@property(assign,readwrite) struct { double x1; double x2; } coordinate;
-@property(assign,readwrite) unsigned short providerID;
-@property(assign,readonly) PBRequest * shiftRequest;
+@property (nonatomic) struct { double x1; double x2; } coordinate;
+@property (nonatomic) unsigned short providerID;
+@property (nonatomic, readonly) PBRequest *shiftRequest;
 
 - (struct { double x1; double x2; })coordinate;
 - (void)dealloc;

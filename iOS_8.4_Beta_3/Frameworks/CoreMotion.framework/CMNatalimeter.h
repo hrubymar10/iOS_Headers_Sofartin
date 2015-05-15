@@ -6,7 +6,7 @@
     CMNatalimeterInternal *_internal;
 }
 
-@property(assign,readonly) CMNatalimeterInternal * _internal;
+@property (nonatomic, readonly) CMNatalimeterInternal *_internal;
 
 + (id)defaultUserProfile;
 + (bool)isNatalimeterAvailable;

@@ -4,13 +4,13 @@
 
 @interface TPPreviewExporter : TPRenderingExporter <TSKImageExporter>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long height;
-@property(assign,readwrite) bool scaleToFit;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long width;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long height;
+@property (nonatomic) bool scaleToFit;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned long long width;
 
 - (unsigned long long)height;
 - (id)p_renderingExporterDelegate;

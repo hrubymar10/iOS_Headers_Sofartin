@@ -7,8 +7,8 @@
     long long _selectedTitleIndex;
 }
 
-@property(assign,readwrite) long long selectedTitleIndex;
-@property(assign,copy) NSArray * titles;
+@property (nonatomic) long long selectedTitleIndex;
+@property (nonatomic, copy) NSArray *titles;
 
 - (void).cxx_destruct;
 - (void)_buttonAction:(id)arg1;

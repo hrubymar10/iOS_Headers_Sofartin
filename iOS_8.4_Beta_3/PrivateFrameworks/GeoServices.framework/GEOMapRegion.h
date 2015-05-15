@@ -16,19 +16,19 @@
     double _westLng;
 }
 
-@property(assign,readonly) double centerLat;
-@property(assign,readonly) double centerLng;
-@property(assign,readwrite) double eastLng;
-@property(assign,readwrite) bool hasEastLng;
-@property(assign,readwrite) bool hasNorthLat;
-@property(assign,readwrite) bool hasSouthLat;
-@property(assign,readwrite) bool hasWestLng;
-@property(assign,readwrite) double northLat;
-@property(assign,readwrite) double southLat;
-@property(assign,readonly) double spanLat;
-@property(assign,readonly) double spanLng;
-@property(assign,retain) NSMutableArray * vertexs;
-@property(assign,readwrite) double westLng;
+@property (nonatomic, readonly) double centerLat;
+@property (nonatomic, readonly) double centerLng;
+@property (nonatomic) double eastLng;
+@property (nonatomic) bool hasEastLng;
+@property (nonatomic) bool hasNorthLat;
+@property (nonatomic) bool hasSouthLat;
+@property (nonatomic) bool hasWestLng;
+@property (nonatomic) double northLat;
+@property (nonatomic) double southLat;
+@property (nonatomic, readonly) double spanLat;
+@property (nonatomic, readonly) double spanLng;
+@property (nonatomic, retain) NSMutableArray *vertexs;
+@property (nonatomic) double westLng;
 
 + (id)_mapkit_mapRegionEnclosingAnnotations:(id)arg1;
 + (id)_mapkit_mapRegionForCoordinateRegion:(struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; })arg1;

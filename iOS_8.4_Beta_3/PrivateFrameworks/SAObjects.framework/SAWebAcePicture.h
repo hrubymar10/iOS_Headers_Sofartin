@@ -4,13 +4,13 @@
 
 @interface SAWebAcePicture : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * format;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSNumber * height;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSNumber * width;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *format;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSNumber *height;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSNumber *width;
 
 + (id)acePicture;
 + (id)acePictureWithDictionary:(id)arg1 context:(id)arg2;

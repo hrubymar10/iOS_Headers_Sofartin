@@ -8,9 +8,9 @@
     NSString *_phoneNumber;
 }
 
-@property(assign,readwrite) bool lostModeEnabled;
-@property(assign,retain) NSString * message;
-@property(assign,retain) NSString * phoneNumber;
+@property (nonatomic) bool lostModeEnabled;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic, retain) NSString *phoneNumber;
 
 + (bool)supportsSecureCoding;
 

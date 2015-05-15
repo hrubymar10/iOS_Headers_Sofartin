@@ -7,8 +7,8 @@
     NSURL *_priorURL;
 }
 
-@property(assign,readonly) int absoluteOrder;
-@property(assign,retain) NSURL * priorURL;
+@property (nonatomic, readonly) int absoluteOrder;
+@property (nonatomic, retain) NSURL *priorURL;
 
 - (int)absoluteOrder;
 - (void)dealloc;

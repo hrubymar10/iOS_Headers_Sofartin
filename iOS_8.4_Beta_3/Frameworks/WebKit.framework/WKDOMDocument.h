@@ -4,7 +4,7 @@
 
 @interface WKDOMDocument : WKDOMNode
 
-@property(assign,readonly) WKDOMElement * body;
+@property (readonly) WKDOMElement *body;
 
 - (id)body;
 - (id)createElement:(id)arg1;

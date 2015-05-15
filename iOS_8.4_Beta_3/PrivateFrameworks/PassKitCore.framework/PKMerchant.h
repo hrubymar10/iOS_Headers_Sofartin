@@ -15,18 +15,18 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSString * displayName;
-@property(assign,copy) NSString * industryCategory;
-@property(assign,readwrite) long long industryCode;
-@property(assign,copy) CLLocation * location;
-@property(assign,readwrite) double locationLatitude;
-@property(assign,readwrite) double locationLongitude;
-@property(assign,readwrite) unsigned long long mapsIdentifier;
-@property(assign,copy) NSString * mapsName;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * phoneNumber;
-@property(assign,copy) NSString * rawName;
-@property(setter=setURL:,assign,copy) NSURL * url;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, copy) NSString *industryCategory;
+@property (nonatomic) long long industryCode;
+@property (nonatomic, copy) CLLocation *location;
+@property (nonatomic) double locationLatitude;
+@property (nonatomic) double locationLongitude;
+@property (nonatomic) unsigned long long mapsIdentifier;
+@property (nonatomic, copy) NSString *mapsName;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *phoneNumber;
+@property (nonatomic, copy) NSString *rawName;
+@property (setter=setURL:, nonatomic, copy) NSURL *url;
 
 + (bool)supportsSecureCoding;
 

@@ -8,8 +8,8 @@
     long long _state;
 }
 
-@property(assign,readonly) AFUIRequestOptions * options;
-@property(assign,readonly) long long state;
+@property (nonatomic, readonly) AFUIRequestOptions *options;
+@property (nonatomic, readonly) long long state;
 
 - (void).cxx_destruct;
 - (void)_updateState:(long long)arg1;

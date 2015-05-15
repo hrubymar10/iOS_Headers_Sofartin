@@ -18,16 +18,16 @@
     } _userPaths;
 }
 
-@property(assign,readonly) bool hasProblemContext;
-@property(assign,readonly) bool hasProblemCorrections;
-@property(assign,readwrite) bool hasProblemType;
-@property(assign,readwrite) bool hasProtocolVersion;
-@property(assign,retain) GEORPProblemContext * problemContext;
-@property(assign,retain) GEORPProblemCorrections * problemCorrections;
-@property(assign,readwrite) int problemType;
-@property(assign,readwrite) unsigned int protocolVersion;
-@property(assign,readonly) int* userPaths;
-@property(assign,readonly) unsigned long long userPathsCount;
+@property (nonatomic, readonly) bool hasProblemContext;
+@property (nonatomic, readonly) bool hasProblemCorrections;
+@property (nonatomic) bool hasProblemType;
+@property (nonatomic) bool hasProtocolVersion;
+@property (nonatomic, retain) GEORPProblemContext *problemContext;
+@property (nonatomic, retain) GEORPProblemCorrections *problemCorrections;
+@property (nonatomic) int problemType;
+@property (nonatomic) unsigned int protocolVersion;
+@property (nonatomic, readonly) int*userPaths;
+@property (nonatomic, readonly) unsigned long long userPathsCount;
 
 - (void)addUserPath:(int)arg1;
 - (void)clearUserPaths;

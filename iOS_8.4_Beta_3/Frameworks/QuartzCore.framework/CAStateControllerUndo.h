@@ -9,14 +9,14 @@
     NSMutableArray *_transitions;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableArray * elements;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CAStateControllerUndo * next;
-@property(assign,retain) CAState * state;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableArray * transitions;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMutableArray *elements;
+@property (readonly) unsigned long long hash;
+@property (readonly) CAStateControllerUndo *next;
+@property (nonatomic, retain) CAState *state;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMutableArray *transitions;
 
 - (void)addElement:(id)arg1;
 - (void)addTransition:(id)arg1;

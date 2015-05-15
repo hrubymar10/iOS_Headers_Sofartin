@@ -9,10 +9,10 @@
     CoreDAVItemWithNoChildren *_isMarkedUndeletable;
 }
 
-@property(assign,retain) CoreDAVItemWithNoChildren * canBePublished;
-@property(assign,retain) CoreDAVItemWithNoChildren * canBeShared;
-@property(assign,retain) CoreDAVItemWithNoChildren * isMarkedImmutableSharees;
-@property(assign,retain) CoreDAVItemWithNoChildren * isMarkedUndeletable;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *canBePublished;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *canBeShared;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *isMarkedImmutableSharees;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *isMarkedUndeletable;
 
 - (id)canBePublished;
 - (id)canBeShared;

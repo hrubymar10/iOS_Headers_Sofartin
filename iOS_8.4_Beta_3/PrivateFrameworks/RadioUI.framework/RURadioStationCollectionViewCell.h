@@ -15,18 +15,18 @@
     NSMutableDictionary *_textImageViews;
 }
 
-@property(assign,readwrite) bool adjustsArtworkImageWhenHighlighted;
-@property(assign,retain) UIImage * artworkImage;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool displaysAsStack;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isNowPlaying,assign,readwrite) bool nowPlaying;
-@property(assign,retain) RURadioStationsCollectionViewTemplate * radioStationsCollectionViewTemplate;
-@property(assign,readwrite) UIView * stackPerspectiveTargetView;
-@property(assign,copy) NSString * subtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
+@property (nonatomic) bool adjustsArtworkImageWhenHighlighted;
+@property (nonatomic, retain) UIImage *artworkImage;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool displaysAsStack;
+@property (readonly) unsigned long long hash;
+@property (getter=isNowPlaying, nonatomic) bool nowPlaying;
+@property (nonatomic, retain) RURadioStationsCollectionViewTemplate *radioStationsCollectionViewTemplate;
+@property (nonatomic) UIView *stackPerspectiveTargetView;
+@property (nonatomic, copy) NSString *subtitle;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_setText:(id)arg1 forElementNamed:(id)arg2;

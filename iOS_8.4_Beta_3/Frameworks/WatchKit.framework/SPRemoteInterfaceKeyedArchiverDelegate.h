@@ -6,11 +6,11 @@
     bool _imageIsNamed;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool imageIsNamed;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool imageIsNamed;
+@property (readonly) Class superclass;
 
 - (void)archiver:(id)arg1 didEncodeObject:(id)arg2;
 - (id)archiver:(id)arg1 willEncodeObject:(id)arg2;

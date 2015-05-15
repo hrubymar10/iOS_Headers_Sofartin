@@ -10,9 +10,9 @@
     int _state;
 }
 
-@property(assign,readwrite) bool isListeningToKeybagChanges;
-@property(assign,readwrite) int keybagChangeNotifyToken;
-@property(getter=isWaitingForAuth,assign,readonly) bool waitingForAuth;
+@property (nonatomic) bool isListeningToKeybagChanges;
+@property (nonatomic) int keybagChangeNotifyToken;
+@property (getter=isWaitingForAuth, nonatomic, readonly) bool waitingForAuth;
 
 + (id)sharedManager;
 

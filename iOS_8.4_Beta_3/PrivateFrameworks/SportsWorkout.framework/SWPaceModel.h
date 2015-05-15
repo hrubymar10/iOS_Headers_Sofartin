@@ -6,22 +6,22 @@
     void *_paceModelValue;
 }
 
-@property(assign,readonly) bool canBeUsedForRunCalibration;
-@property(assign,readonly) bool canBeUsedForWalkCalibration;
-@property(assign,readonly) float distanceInMiles;
-@property(assign,readonly) bool isWalk;
-@property(assign,readonly) unsigned long long lifetimeBatteryHoursUsed;
-@property(assign,readonly) float lifetimeCalibratedRunningMiles;
-@property(assign,readonly) float lifetimeCalibratedWalkingMiles;
-@property(assign,readonly) float lifetimeUncalibratedRunningMiles;
-@property(assign,readonly) float lifetimeUncalibratedWalkingMiles;
-@property(assign,readonly) float maximumValidCalibrationMiles;
-@property(assign,readonly) float minimumValidCalibrationMiles;
-@property(assign,readonly) float paceInSecondsPerMile;
-@property(assign,copy) NSData * parameters;
-@property(assign,readonly) unsigned long long remainingBatteryLifetimeInHours;
-@property(assign,readonly) unsigned long long runningStepCount;
-@property(assign,readonly) unsigned long long walkingStepCount;
+@property (nonatomic, readonly) bool canBeUsedForRunCalibration;
+@property (nonatomic, readonly) bool canBeUsedForWalkCalibration;
+@property (nonatomic, readonly) float distanceInMiles;
+@property (nonatomic, readonly) bool isWalk;
+@property (nonatomic, readonly) unsigned long long lifetimeBatteryHoursUsed;
+@property (nonatomic, readonly) float lifetimeCalibratedRunningMiles;
+@property (nonatomic, readonly) float lifetimeCalibratedWalkingMiles;
+@property (nonatomic, readonly) float lifetimeUncalibratedRunningMiles;
+@property (nonatomic, readonly) float lifetimeUncalibratedWalkingMiles;
+@property (nonatomic, readonly) float maximumValidCalibrationMiles;
+@property (nonatomic, readonly) float minimumValidCalibrationMiles;
+@property (nonatomic, readonly) float paceInSecondsPerMile;
+@property (nonatomic, copy) NSData *parameters;
+@property (nonatomic, readonly) unsigned long long remainingBatteryLifetimeInHours;
+@property (nonatomic, readonly) unsigned long long runningStepCount;
+@property (nonatomic, readonly) unsigned long long walkingStepCount;
 
 - (id)FGSNForRadioId:(unsigned long long)arg1;
 - (struct PaceModel { float x1; bool x2; unsigned char x3; unsigned short x4; bool x5; unsigned char x6; unsigned long long x7; bool x8; unsigned long long x9; unsigned long long x10; unsigned long long x11; unsigned long long x12; unsigned long long x13; unsigned char x14; unsigned short x15; unsigned long long x16; unsigned long long x17; float x18; short x19; float x20; short x21; float x22; float x23; float x24; short x25; float x26; short x27; float x28; float x29; unsigned char x30; unsigned char x31[3]; unsigned short x32[7]; unsigned char x33; bool x34; unsigned short x35; unsigned short x36; unsigned short x37; bool x38; bool x39; unsigned long long x40; unsigned long long x41; unsigned long long x42; unsigned long long x43; unsigned long long x44; unsigned short x45; bool x46; unsigned char x47[3]; float x48; short x49; float x50; short x51; float x52; short x53; float x54; short x55; unsigned char x56; unsigned short x57; unsigned char x58; }*)_paceModel;

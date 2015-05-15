@@ -6,7 +6,7 @@
     UILabel *_textLabel;
 }
 
-@property(assign,readonly) UILabel * textLabel;
+@property (nonatomic, readonly) UILabel *textLabel;
 
 + (id)_createLabelInCell:(id)arg1;
 

@@ -16,11 +16,11 @@
     UITextView *_titleView;
 }
 
-@property(assign,retain) UIButton * actionButton;
-@property(assign,retain) UIImage * headerImage;
-@property(assign,copy) NSAttributedString * message;
-@property(assign,readwrite) bool showActivityIndicator;
-@property(assign,copy) NSAttributedString * title;
+@property (nonatomic, retain) UIButton *actionButton;
+@property (nonatomic, retain) UIImage *headerImage;
+@property (nonatomic, copy) NSAttributedString *message;
+@property (nonatomic) bool showActivityIndicator;
+@property (nonatomic, copy) NSAttributedString *title;
 
 + (double)bodySeparation;
 + (double)defaultHeight;

@@ -6,7 +6,7 @@
     <UIWebFormControl> *_innerWebDateTimeControl;
 }
 
-@property(assign,retain) <UIWebFormControl> * _innerWebDateTimeControl;
+@property (nonatomic, retain) <UIWebFormControl> *_innerWebDateTimeControl;
 
 - (id)_innerWebDateTimeControl;
 - (void)dealloc;

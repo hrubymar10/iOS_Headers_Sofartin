@@ -7,8 +7,8 @@
     NSString *_transactionIdentifier;
 }
 
-@property(assign,copy) NSData * transactionData;
-@property(assign,copy) NSString * transactionIdentifier;
+@property (nonatomic, copy) NSData *transactionData;
+@property (nonatomic, copy) NSString *transactionIdentifier;
 
 + (bool)supportsSecureCoding;
 + (id)wrappedPaymentWithTransactionResponse:(id)arg1;

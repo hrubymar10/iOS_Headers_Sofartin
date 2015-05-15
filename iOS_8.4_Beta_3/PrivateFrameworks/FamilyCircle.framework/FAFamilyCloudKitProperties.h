@@ -6,11 +6,11 @@
     NSDictionary *_dictionary;
 }
 
-@property(assign,copy) NSString * bundleID;
-@property(assign,copy) NSDictionary * dictionary;
-@property(assign,copy) NSString * participantID;
-@property(assign,copy) NSString * shareID;
-@property(assign,copy) NSString * zoneID;
+@property (nonatomic, readonly, copy) NSString *bundleID;
+@property (nonatomic, readonly, copy) NSDictionary *dictionary;
+@property (nonatomic, readonly, copy) NSString *participantID;
+@property (nonatomic, readonly, copy) NSString *shareID;
+@property (nonatomic, readonly, copy) NSString *zoneID;
 
 + (bool)supportsSecureCoding;
 

@@ -7,8 +7,8 @@
     SKUIHorizontalLockupView *_lockup;
 }
 
-@property(assign,readwrite) SKUIImageView * imageView;
-@property(assign,readwrite) SKUIHorizontalLockupView * lockup;
+@property (nonatomic) SKUIImageView *imageView;
+@property (nonatomic) SKUIHorizontalLockupView *lockup;
 
 - (void).cxx_destruct;
 - (id)imageView;

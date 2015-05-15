@@ -4,8 +4,8 @@
 
 @interface CAMMutablePanoramaCaptureRequest : CAMPanoramaCaptureRequest
 
-@property(assign,readwrite) long long captureDevice;
-@property(assign,readwrite) long long deviceOrientation;
+@property (nonatomic) long long captureDevice;
+@property (nonatomic) long long deviceOrientation;
 
 - (void)setCaptureDevice:(long long)arg1;
 - (void)setDeviceOrientation:(long long)arg1;

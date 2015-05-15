@@ -4,7 +4,7 @@
 
 @interface SKUIReviewListViewElement : SKUIViewElement
 
-@property(assign,readonly) NSArray * reviews;
+@property (nonatomic, readonly) NSArray *reviews;
 
 - (long long)pageComponentType;
 - (id)reviews;

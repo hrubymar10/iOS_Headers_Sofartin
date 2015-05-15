@@ -18,12 +18,12 @@
     } _thumbnailSize;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CAMEffectSelectionViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CIFilter * selectedEffect;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CAMEffectSelectionViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CIFilter *selectedEffect;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_generateFilters;

@@ -6,13 +6,13 @@
     long long _itemID;
 }
 
-@property(assign,readwrite) long long albumID;
-@property(assign,retain) RadioArtworkCollection * artworkCollection;
-@property(assign,readwrite) bool isSeed;
-@property(assign,readwrite) long long itemID;
-@property(assign,copy) RadioSeedMetadata * seedMetadata;
-@property(assign,readwrite) long long storeID;
-@property(assign,readwrite) long long type;
+@property (nonatomic) long long albumID;
+@property (nonatomic, retain) RadioArtworkCollection *artworkCollection;
+@property (nonatomic) bool isSeed;
+@property (nonatomic) long long itemID;
+@property (nonatomic, copy) RadioSeedMetadata *seedMetadata;
+@property (nonatomic) long long storeID;
+@property (nonatomic) long long type;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (long long)itemID;

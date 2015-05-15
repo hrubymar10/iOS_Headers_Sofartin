@@ -4,19 +4,19 @@
 
 @interface CDDMBookkeeping : NSManagedObject
 
-@property(assign,retain) NSNumber * budgetVersion;
-@property(assign,retain) NSNumber * databaseVersion;
-@property(assign,retain) NSString * deviceDescription;
-@property(assign,retain) NSNumber * maxAttributeIntegerId;
-@property(assign,retain) NSNumber * maxForecastGroupId;
-@property(assign,retain) NSNumber * maxPoolIntegerId;
-@property(assign,retain) NSDate * newestEntryDate;
-@property(assign,retain) NSDate * oldestEntryDate;
-@property(assign,retain) NSNumber * systemCumulativeComputeUtilizationGauge;
-@property(assign,retain) NSNumber * systemCumulativeIoReadBytesGauge;
-@property(assign,retain) NSNumber * systemCumulativeIoWriteBytesGauge;
-@property(assign,retain) NSNumber * systemCumulativeMillijoulesGauge;
-@property(assign,retain) NSNumber * systemCumulativeNetworkBytesGauge;
-@property(assign,retain) NSNumber * systemCumulativePushesGauge;
+@property (nonatomic, retain) NSNumber *budgetVersion;
+@property (nonatomic, retain) NSNumber *databaseVersion;
+@property (nonatomic, retain) NSString *deviceDescription;
+@property (nonatomic, retain) NSNumber *maxAttributeIntegerId;
+@property (nonatomic, retain) NSNumber *maxForecastGroupId;
+@property (nonatomic, retain) NSNumber *maxPoolIntegerId;
+@property (nonatomic, retain) NSDate *newestEntryDate;
+@property (nonatomic, retain) NSDate *oldestEntryDate;
+@property (nonatomic, retain) NSNumber *systemCumulativeComputeUtilizationGauge;
+@property (nonatomic, retain) NSNumber *systemCumulativeIoReadBytesGauge;
+@property (nonatomic, retain) NSNumber *systemCumulativeIoWriteBytesGauge;
+@property (nonatomic, retain) NSNumber *systemCumulativeMillijoulesGauge;
+@property (nonatomic, retain) NSNumber *systemCumulativeNetworkBytesGauge;
+@property (nonatomic, retain) NSNumber *systemCumulativePushesGauge;
 
 @end

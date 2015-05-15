@@ -7,8 +7,8 @@
     struct CGPath { } *_path;
 }
 
-@property(assign,readonly) UIImage * canvasImage;
-@property(assign,readonly) struct CGPath { }* canvasPath;
+@property (nonatomic, readonly) UIImage *canvasImage;
+@property (nonatomic, readonly) struct CGPath { }*canvasPath;
 
 - (id)_initWithCanvas:(id)arg1;
 - (id)canvasImage;

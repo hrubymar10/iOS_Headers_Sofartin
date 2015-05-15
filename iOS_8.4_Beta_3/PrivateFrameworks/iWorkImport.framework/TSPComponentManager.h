@@ -15,21 +15,21 @@
     TSPComponent *_viewStateComponent;
 }
 
-@property(assign,readonly) TSPObjectContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) TSPComponent * documentComponent;
-@property(assign,readonly) TSPComponent * documentMetadataComponent;
-@property(assign,readonly) TSPComponent * documentObjectContainerComponent;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isDocumentComponentTreeModified;
-@property(assign,readonly) bool isSupportComponentTreeModified;
-@property(assign,readonly) TSPComponent * packageMetadataComponent;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) TSPComponent * supportComponent;
-@property(assign,readonly) TSPComponent * supportMetadataComponent;
-@property(assign,readonly) TSPComponent * supportObjectContainerComponent;
-@property(assign,retain) TSPComponent * viewStateComponent;
+@property (nonatomic, readonly) TSPObjectContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) TSPComponent *documentComponent;
+@property (nonatomic, readonly) TSPComponent *documentMetadataComponent;
+@property (nonatomic, readonly) TSPComponent *documentObjectContainerComponent;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isDocumentComponentTreeModified;
+@property (nonatomic, readonly) bool isSupportComponentTreeModified;
+@property (nonatomic, readonly) TSPComponent *packageMetadataComponent;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) TSPComponent *supportComponent;
+@property (nonatomic, readonly) TSPComponent *supportMetadataComponent;
+@property (nonatomic, readonly) TSPComponent *supportObjectContainerComponent;
+@property (retain) TSPComponent *viewStateComponent;
 
 - (void).cxx_destruct;
 - (void)beginIgnoringCachedObjectEviction;

@@ -9,12 +9,12 @@
     bool _lowBatteryLocateStateAvailable;
 }
 
-@property(assign,readonly) bool fmipEnabled;
-@property(assign,readwrite) unsigned long long fmipState;
-@property(assign,readwrite) bool fmipStateAvailable;
-@property(assign,readonly) bool fmipStateChangeInProgress;
-@property(assign,readwrite) bool lowBatteryLocateEnabled;
-@property(assign,readwrite) bool lowBatteryLocateStateAvailable;
+@property (nonatomic, readonly) bool fmipEnabled;
+@property (nonatomic) unsigned long long fmipState;
+@property (nonatomic) bool fmipStateAvailable;
+@property (nonatomic, readonly) bool fmipStateChangeInProgress;
+@property (nonatomic) bool lowBatteryLocateEnabled;
+@property (nonatomic) bool lowBatteryLocateStateAvailable;
 
 + (id)sharedInstance;
 

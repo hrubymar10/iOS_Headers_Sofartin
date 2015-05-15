@@ -7,8 +7,8 @@
     UIBezierPath *_path;
 }
 
-@property(assign,retain) UIColor * fillColor;
-@property(assign,retain) UIBezierPath * path;
+@property (nonatomic, retain) UIColor *fillColor;
+@property (nonatomic, retain) UIBezierPath *path;
 
 - (void)dealloc;
 - (void)drawRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

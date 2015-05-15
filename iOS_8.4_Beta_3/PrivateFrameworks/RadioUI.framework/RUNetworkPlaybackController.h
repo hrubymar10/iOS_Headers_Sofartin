@@ -9,9 +9,9 @@
     double _minimumBitrateForHighQuality;
 }
 
-@property(assign,readonly) AVAssetCache * assetCache;
-@property(assign,copy) NSString * highQualityAssetFlavor;
-@property(assign,readonly) double minimumBitrateForHighQuality;
+@property (nonatomic, readonly) AVAssetCache *assetCache;
+@property (nonatomic, readonly, copy) NSString *highQualityAssetFlavor;
+@property (nonatomic, readonly) double minimumBitrateForHighQuality;
 
 + (id)sharedController;
 

@@ -4,8 +4,8 @@
 
 @interface MPUProspectivePlaybackInformation : NSObject <NSCopying>
 
-@property(assign,readonly) bool isRadioProspectivePlaybackInformation;
-@property(assign,readonly) RURadioStationPlaybackMetadata * stationMetadata;
+@property (nonatomic, readonly) bool isRadioProspectivePlaybackInformation;
+@property (nonatomic, readonly) RURadioStationPlaybackMetadata *stationMetadata;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (unsigned long long)hash;

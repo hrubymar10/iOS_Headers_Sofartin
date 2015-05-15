@@ -10,13 +10,13 @@
     bool _suffixWhenPrefixOnly;
 }
 
-@property(assign,readwrite) bool isContinuation;
-@property(assign,copy) NSArray * localizedSortedNames;
-@property(assign,copy) NSString * localizedTitleForNameInfo;
-@property(assign,copy) NSString * namePrefix;
-@property(assign,copy) NSString * nameSuffix;
-@property(assign,copy) NSArray * sortedNames;
-@property(assign,readwrite) bool suffixWhenPrefixOnly;
+@property (nonatomic) bool isContinuation;
+@property (nonatomic, readonly, copy) NSArray *localizedSortedNames;
+@property (nonatomic, readonly, copy) NSString *localizedTitleForNameInfo;
+@property (nonatomic, copy) NSString *namePrefix;
+@property (nonatomic, copy) NSString *nameSuffix;
+@property (nonatomic, copy) NSArray *sortedNames;
+@property (nonatomic) bool suffixWhenPrefixOnly;
 
 + (id)_localizedNameForName:(id)arg1;
 

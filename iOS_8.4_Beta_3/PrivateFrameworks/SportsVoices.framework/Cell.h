@@ -7,11 +7,11 @@
     int _type;
 }
 
-@property(assign,retain) NSMutableDictionary * attributes;
-@property(assign,retain) NSString * content;
-@property(assign,retain) NSString * post;
-@property(assign,retain) NSString * pre;
-@property(assign,readonly) int type;
+@property (retain) NSMutableDictionary *attributes;
+@property (retain) NSString *content;
+@property (retain) NSString *post;
+@property (retain) NSString *pre;
+@property (readonly) int type;
 
 + (id)blank;
 + (id)cell;

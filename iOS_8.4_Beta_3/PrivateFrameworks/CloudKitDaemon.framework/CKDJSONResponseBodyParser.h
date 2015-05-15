@@ -9,14 +9,14 @@
     NSError *_parserError;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id objectParsedBlock;
-@property(assign,retain) NSObject<OS_dispatch_queue> * parseQueue;
-@property(assign,retain) NSMutableData * parserData;
-@property(assign,retain) NSError * parserError;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id objectParsedBlock;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *parseQueue;
+@property (nonatomic, retain) NSMutableData *parserData;
+@property (nonatomic, retain) NSError *parserError;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)finishWithCompletion:(id)arg1;

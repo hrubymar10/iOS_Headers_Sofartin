@@ -6,8 +6,8 @@
     NSMutableDictionary *_dictionary;
 }
 
-@property(assign,retain) NSDate * simulatedDate;
-@property(assign,readonly) long long time;
+@property (nonatomic, retain) NSDate *simulatedDate;
+@property (nonatomic, readonly) long long time;
 
 + (id)defaultDebugContext;
 

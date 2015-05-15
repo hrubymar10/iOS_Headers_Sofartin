@@ -10,9 +10,9 @@
     UIViewController *_placeholderViewController;
 }
 
-@property(assign,readonly) NSString * charityIdentifier;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,retain) NSOperationQueue * operationQueue;
+@property (nonatomic, readonly) NSString *charityIdentifier;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
 
 - (void).cxx_destruct;
 - (void)_cancelButtonAction:(id)arg1;

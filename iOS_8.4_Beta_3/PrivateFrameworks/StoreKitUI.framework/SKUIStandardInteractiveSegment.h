@@ -35,14 +35,14 @@
     UIColor *_unselectedTitleColor;
 }
 
-@property(assign,copy) NSAttributedString * attributedTitle;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentEdgeInsets;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double relativeSelectionProgress;
-@property(assign,readwrite) long long segmentPosition;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSAttributedString *attributedTitle;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentEdgeInsets;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double relativeSelectionProgress;
+@property (nonatomic) long long segmentPosition;
+@property (readonly) Class superclass;
 
 + (double)defaultHeight;
 

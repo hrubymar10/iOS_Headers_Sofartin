@@ -12,9 +12,9 @@
     UIView *_thumbnailView;
 }
 
-@property(assign,copy) NSString * text;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } thumbnailSize;
-@property(assign,retain) UIView * thumbnailView;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic) struct CGSize { double x1; double x2; } thumbnailSize;
+@property (nonatomic, retain) UIView *thumbnailView;
 
 + (double)defaultSpacing;
 + (struct CGSize { double x1; double x2; })sizeForImageSize:(struct CGSize { double x1; double x2; })arg1;

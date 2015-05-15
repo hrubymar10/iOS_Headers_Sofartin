@@ -30,16 +30,16 @@
     bool _treatingHostAsBackgrounded;
 }
 
-@property(assign,retain) PKAuthenticator * authenticator;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPaymentAuthorizationHostProtocol> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PKPaymentAuthorizationDataModel * model;
-@property(assign,retain) PKPaymentService * paymentService;
-@property(assign,retain) PKPaymentWebService * paymentWebService;
-@property(assign,readwrite) unsigned long long state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) PKAuthenticator *authenticator;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPaymentAuthorizationHostProtocol> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PKPaymentAuthorizationDataModel *model;
+@property (nonatomic, retain) PKPaymentService *paymentService;
+@property (nonatomic, retain) PKPaymentWebService *paymentWebService;
+@property (nonatomic) unsigned long long state;
+@property (readonly) Class superclass;
 
 - (void)_addPassphraseViewControllerToHierarchy:(id)arg1 withCompletion:(id)arg2;
 - (long long)_authenticatorPolicy;

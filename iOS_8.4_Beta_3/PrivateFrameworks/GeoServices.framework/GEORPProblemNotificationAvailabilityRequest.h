@@ -24,20 +24,20 @@
     } _problemTypes;
 }
 
-@property(assign,readonly) unsigned long long* businessIds;
-@property(assign,readonly) unsigned long long businessIdsCount;
-@property(assign,retain) GEOClientCapabilities * clientCapabilities;
-@property(assign,retain) NSString * countryCode;
-@property(assign,retain) NSData * devicePushToken;
-@property(assign,readonly) bool hasClientCapabilities;
-@property(assign,readonly) bool hasCountryCode;
-@property(assign,readonly) bool hasDevicePushToken;
-@property(assign,readwrite) bool hasPinType;
-@property(assign,readwrite) bool hasPlaceType;
-@property(assign,readwrite) int pinType;
-@property(assign,readwrite) int placeType;
-@property(assign,readonly) int* problemTypes;
-@property(assign,readonly) unsigned long long problemTypesCount;
+@property (nonatomic, readonly) unsigned long long*businessIds;
+@property (nonatomic, readonly) unsigned long long businessIdsCount;
+@property (nonatomic, retain) GEOClientCapabilities *clientCapabilities;
+@property (nonatomic, retain) NSString *countryCode;
+@property (nonatomic, retain) NSData *devicePushToken;
+@property (nonatomic, readonly) bool hasClientCapabilities;
+@property (nonatomic, readonly) bool hasCountryCode;
+@property (nonatomic, readonly) bool hasDevicePushToken;
+@property (nonatomic) bool hasPinType;
+@property (nonatomic) bool hasPlaceType;
+@property (nonatomic) int pinType;
+@property (nonatomic) int placeType;
+@property (nonatomic, readonly) int*problemTypes;
+@property (nonatomic, readonly) unsigned long long problemTypesCount;
 
 - (void)addBusinessId:(unsigned long long)arg1;
 - (void)addProblemType:(int)arg1;

@@ -8,9 +8,9 @@
     long long _type;
 }
 
-@property(assign,readwrite) double duration;
-@property(assign,retain) SUDOMElement * sourceElement;
-@property(assign,readwrite) long long type;
+@property (nonatomic) double duration;
+@property (nonatomic, retain) SUDOMElement *sourceElement;
+@property (nonatomic) long long type;
 
 + (long long)transitionTypeFromString:(id)arg1;
 

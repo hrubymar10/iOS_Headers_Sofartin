@@ -6,7 +6,7 @@
     CLGeocoderInternal *_internal;
 }
 
-@property(getter=isGeocoding,assign,readonly) bool geocoding;
+@property (getter=isGeocoding, nonatomic, readonly) bool geocoding;
 
 - (void)_ensureMainThreadExecutionContextForBlock:(id)arg1;
 - (void)_notifyCancel;

@@ -13,8 +13,8 @@
     struct __CFDictionary { } *_replacedObjects;
 }
 
-@property(assign,readwrite) NSXPCConnection * _connection;
-@property(assign,readwrite) <NSXPCEncoderDelegate> * delegate;
+@property NSXPCConnection *_connection;
+@property <NSXPCEncoderDelegate> *delegate;
 
 + (id)_dataWithXPCObject:(id)arg1;
 

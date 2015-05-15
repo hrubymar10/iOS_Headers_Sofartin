@@ -9,10 +9,10 @@
     UIScrollView *_scrollView;
 }
 
-@property(assign,readwrite) double adjustment;
-@property(assign,retain) NSTimer * delayedScrollTimer;
-@property(assign,readwrite) bool manuallyAdjusted;
-@property(assign,retain) UIScrollView * scrollView;
+@property (nonatomic) double adjustment;
+@property (nonatomic, retain) NSTimer *delayedScrollTimer;
+@property (nonatomic) bool manuallyAdjusted;
+@property (nonatomic, retain) UIScrollView *scrollView;
 
 + (id)recordWithScrollView:(id)arg1;
 

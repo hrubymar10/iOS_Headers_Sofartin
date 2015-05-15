@@ -13,13 +13,13 @@
     BRCDeadlineScheduler *_uploadsDeadlineScheduler;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,readwrite) bool isDefaultOwnerOutOfQuota;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) BRCDeadlineScheduler * uploadsDeadlineScheduler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCancelled;
+@property (nonatomic) bool isDefaultOwnerOutOfQuota;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) BRCDeadlineScheduler *uploadsDeadlineScheduler;
 
 - (void).cxx_destruct;
 - (id)_buildItemTooLargeErrorIfNeeded:(id)arg1 syncContext:(id)arg2;

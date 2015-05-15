@@ -8,7 +8,7 @@
     struct __CXQuery { } *query;
 }
 
-@property(assign,readonly) struct __CXQuery { }* query;
+@property (nonatomic, readonly) struct __CXQuery { }*query;
 
 - (void).cxx_destruct;
 - (void)dealloc;

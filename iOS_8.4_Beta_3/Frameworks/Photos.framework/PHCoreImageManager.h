@@ -17,18 +17,18 @@
     NSObject<OS_dispatch_queue> *_requestLookupTableIsolationQueue;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * CPLDownloadFireAndForgetRequestQueue;
-@property(assign,retain) NSObject<OS_dispatch_queue> * CPLDownloadUpdateIsolationQueue;
-@property(assign,readwrite) int CPLDownloadUpdateNotifyToken;
-@property(assign,retain) NSMutableSet * cloudDomainsWithPurgeScheduled;
-@property(assign,retain) NSMutableSet * domainsWithPurgeScheduled;
-@property(assign,retain) NSMapTable * perDomainCloudPreheatItemMapTables;
-@property(assign,retain) NSMapTable * perDomainHighPriorityRequestWaitGroups;
-@property(assign,retain) NSMapTable * perDomainMissedPreheatItemMapTables;
-@property(assign,retain) NSMapTable * perDomainPreheatItemMapTables;
-@property(assign,retain) NSObject<OS_dispatch_queue> * preheatItemIsolationQueue;
-@property(assign,retain) NSMapTable * requestLookupTable;
-@property(assign,retain) NSObject<OS_dispatch_queue> * requestLookupTableIsolationQueue;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *CPLDownloadFireAndForgetRequestQueue;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *CPLDownloadUpdateIsolationQueue;
+@property (nonatomic) int CPLDownloadUpdateNotifyToken;
+@property (nonatomic, retain) NSMutableSet *cloudDomainsWithPurgeScheduled;
+@property (nonatomic, retain) NSMutableSet *domainsWithPurgeScheduled;
+@property (nonatomic, retain) NSMapTable *perDomainCloudPreheatItemMapTables;
+@property (nonatomic, retain) NSMapTable *perDomainHighPriorityRequestWaitGroups;
+@property (nonatomic, retain) NSMapTable *perDomainMissedPreheatItemMapTables;
+@property (nonatomic, retain) NSMapTable *perDomainPreheatItemMapTables;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *preheatItemIsolationQueue;
+@property (nonatomic, retain) NSMapTable *requestLookupTable;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *requestLookupTableIsolationQueue;
 
 + (struct CGSize { double x1; double x2; })_aspectedSizeWithSize:(struct CGSize { double x1; double x2; })arg1 maxDimension:(double)arg2;
 + (int)_bestFormatWithSize:(struct CGSize { double x1; double x2; })arg1 contentMode:(long long)arg2 options:(id)arg3 aspectRatio:(double)arg4 hasAdjustmentsHandler:(id)arg5 isTableFormat:(bool*)arg6 desiredImagePixelSize:(struct CGSize { double x1; double x2; }*)arg7;

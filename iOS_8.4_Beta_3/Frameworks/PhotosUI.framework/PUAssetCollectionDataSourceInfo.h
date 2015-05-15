@@ -7,8 +7,8 @@
     bool _explicitlyDisableFilters;
 }
 
-@property(assign,readwrite) bool UUIDFilterHidesSomeAssets;
-@property(assign,readwrite) bool explicitlyDisableFilters;
+@property (nonatomic) bool UUIDFilterHidesSomeAssets;
+@property (nonatomic) bool explicitlyDisableFilters;
 
 - (bool)UUIDFilterHidesSomeAssets;
 - (void)_setExplicitlyDisableFilters:(bool)arg1;

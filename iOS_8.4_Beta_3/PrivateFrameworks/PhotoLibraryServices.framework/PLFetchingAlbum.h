@@ -12,14 +12,14 @@
     unsigned long long _videosCount;
 }
 
-@property(assign,retain) NSPredicate * ALAssetsGroupFilterPredicate;
-@property(assign,readwrite) unsigned long long batchSize;
-@property(assign,retain) NSData * customQueryParameters;
-@property(assign,retain) NSString * customQueryType;
-@property(assign,retain) NSPredicate * extraFilterPredicate;
-@property(assign,retain) NSFetchRequest * fetchRequest;
-@property(assign,retain) NSOrderedSet * fetchedAssets;
-@property(assign,readonly) bool hasAssetsCache;
+@property (nonatomic, retain) NSPredicate *ALAssetsGroupFilterPredicate;
+@property (nonatomic) unsigned long long batchSize;
+@property (nonatomic, retain) NSData *customQueryParameters;
+@property (nonatomic, retain) NSString *customQueryType;
+@property (nonatomic, readonly, retain) NSPredicate *extraFilterPredicate;
+@property (nonatomic, retain) NSFetchRequest *fetchRequest;
+@property (nonatomic, retain) NSOrderedSet *fetchedAssets;
+@property (nonatomic, readonly) bool hasAssetsCache;
 
 + (id)_panoramasAlbumPredicate;
 + (bool)contextShouldIgnoreChangesForALAssetsGroupFilterPredicate;

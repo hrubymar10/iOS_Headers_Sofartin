@@ -7,8 +7,8 @@
     NSNumber *_minimum;
 }
 
-@property(assign,readonly) NSNumber * maximum;
-@property(assign,readonly) NSNumber * minimum;
+@property (nonatomic, readonly) NSNumber *maximum;
+@property (nonatomic, readonly) NSNumber *minimum;
 
 - (void).cxx_destruct;
 - (bool)containsValue:(double)arg1;

@@ -7,8 +7,8 @@
     NSMutableDictionary *mAssetMap;
 }
 
-@property(assign,retain) NSString * appAssetPath;
-@property(assign,retain) NSMutableDictionary * assetMap;
+@property (nonatomic, retain) NSString *appAssetPath;
+@property (nonatomic, retain) NSMutableDictionary *assetMap;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)colorForResource:(id)arg1;

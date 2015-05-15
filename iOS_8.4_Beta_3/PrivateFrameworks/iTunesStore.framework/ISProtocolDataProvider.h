@@ -11,12 +11,12 @@
     bool _shouldTriggerDownloads;
 }
 
-@property(assign,readwrite) bool shouldPostFooterSectionChanged;
-@property(assign,readwrite) bool shouldProcessAccount;
-@property(assign,readwrite) bool shouldProcessAuthenticationDialogs;
-@property(assign,readwrite) bool shouldProcessDialogs;
-@property(assign,readwrite) bool shouldProcessProtocol;
-@property(assign,readwrite) bool shouldTriggerDownloads;
+@property bool shouldPostFooterSectionChanged;
+@property bool shouldProcessAccount;
+@property bool shouldProcessAuthenticationDialogs;
+@property bool shouldProcessDialogs;
+@property bool shouldProcessProtocol;
+@property bool shouldTriggerDownloads;
 
 - (void)_checkDownloadQueues;
 - (void)_checkInAppPurchaseQueueForAction:(id)arg1;

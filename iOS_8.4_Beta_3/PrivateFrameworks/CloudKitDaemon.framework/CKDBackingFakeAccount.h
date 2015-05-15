@@ -11,12 +11,12 @@
     NSString *_primaryEmail;
 }
 
-@property(assign,retain) NSDictionary * accountBag;
-@property(assign,retain) NSString * dsid;
-@property(assign,retain) NSObject<OS_dispatch_queue> * fakeAccountInfoQueue;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSString * password;
-@property(assign,retain) NSString * primaryEmail;
+@property (nonatomic, retain) NSDictionary *accountBag;
+@property (nonatomic, retain) NSString *dsid;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *fakeAccountInfoQueue;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSString *password;
+@property (nonatomic, retain) NSString *primaryEmail;
 
 + (Class)_platformBackingAccountClass;
 + (id)fakeAccountWithEmail:(id)arg1 password:(id)arg2;

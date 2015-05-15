@@ -8,9 +8,9 @@
     PFUbiquityTransactionLog *_transactionLog;
 }
 
-@property(assign,retain) PFUbiquityStoreSaveSnapshot * destinationStoreSaveSnapshot;
-@property(assign,retain) PFUbiquityStoreSaveSnapshot * sourceStoreSaveSnapshot;
-@property(assign,retain) PFUbiquityTransactionLog * transactionLog;
+@property (nonatomic, retain) PFUbiquityStoreSaveSnapshot *destinationStoreSaveSnapshot;
+@property (nonatomic, retain) PFUbiquityStoreSaveSnapshot *sourceStoreSaveSnapshot;
+@property (nonatomic, retain) PFUbiquityTransactionLog *transactionLog;
 
 - (void)dealloc;
 - (id)destinationStoreSaveSnapshot;

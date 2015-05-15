@@ -6,7 +6,7 @@
     TSUReadWriteQueue *mReadWriteQueue;
 }
 
-@property(assign,readonly) TSUReadWriteQueue * readWriteQueue;
+@property (nonatomic, readonly) TSUReadWriteQueue *readWriteQueue;
 
 - (void)addEntriesFromDictionary:(id)arg1;
 - (unsigned long long)count;

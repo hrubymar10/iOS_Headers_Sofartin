@@ -4,7 +4,7 @@
 
 @interface GKABPerson : GKABRecord
 
-@property(assign,retain) GKABMultiValue * socialProfile;
+@property (nonatomic, retain) GKABMultiValue *socialProfile;
 
 - (id)emails;
 - (void)setSocialProfile:(id)arg1;

@@ -17,19 +17,19 @@
     MPVolumeSlider *_volumeSlider;
 }
 
-@property(assign,readonly) UIView * _createButton;
-@property(getter=_isDetailScrubbing,assign,readonly) bool _detailScrubbing;
-@property(assign,readonly) double _titleBaselineY;
-@property(assign,readonly) MPUMiniPlayerTransportControls * _transportControls;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPPlaybackControlsDelegate><MPTransportControlsTarget><MPUMiniPlayerActionsViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPUProspectivePlaybackInformation * prospectivePlaybackInformation;
-@property(getter=isShowingCreateLoadingIndicator,assign,readwrite) bool showingCreateLoadingIndicator;
-@property(assign,readonly) MPUSkipLimitView * skipLimitView;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) double titleMaxX;
+@property (nonatomic, readonly) UIView *_createButton;
+@property (getter=_isDetailScrubbing, nonatomic, readonly) bool _detailScrubbing;
+@property (nonatomic, readonly) double _titleBaselineY;
+@property (nonatomic, readonly) MPUMiniPlayerTransportControls *_transportControls;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPPlaybackControlsDelegate><MPTransportControlsTarget><MPUMiniPlayerActionsViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPUProspectivePlaybackInformation *prospectivePlaybackInformation;
+@property (getter=isShowingCreateLoadingIndicator, nonatomic) bool showingCreateLoadingIndicator;
+@property (nonatomic, readonly) MPUSkipLimitView *skipLimitView;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) double titleMaxX;
 
 + (unsigned long long)defaultVisibleParts;
 

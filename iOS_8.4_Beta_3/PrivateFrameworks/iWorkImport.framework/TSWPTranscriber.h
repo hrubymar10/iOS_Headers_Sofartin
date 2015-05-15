@@ -9,7 +9,7 @@
     NSString *_transformIdentifier;
 }
 
-@property(assign,readonly) NSLocale * romanizationLocale;
+@property (readonly) NSLocale *romanizationLocale;
 
 + (id)transcriberWithIdentifier:(id)arg1 displayName:(id)arg2 romanizationLocaleID:(id)arg3 transformIdentifier:(id)arg4;
 

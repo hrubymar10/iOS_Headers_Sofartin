@@ -10,10 +10,10 @@
     float _volumeValue;
 }
 
-@property(assign,retain) NSString * category;
-@property(assign,readonly) bool hasCategory;
-@property(assign,readwrite) bool hasVolumeValue;
-@property(assign,readwrite) float volumeValue;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic, readonly) bool hasCategory;
+@property (nonatomic) bool hasVolumeValue;
+@property (nonatomic) float volumeValue;
 
 - (void).cxx_destruct;
 - (id)category;

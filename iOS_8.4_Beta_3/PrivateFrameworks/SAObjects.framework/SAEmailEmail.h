@@ -4,19 +4,19 @@
 
 @interface SAEmailEmail : SADomainObject
 
-@property(assign,copy) NSDate * dateSent;
-@property(assign,retain) SAPersonAttribute * fromEmail;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * messagePreview;
-@property(assign,copy) NSNumber * outgoing;
-@property(assign,copy) NSArray * receivingAddresses;
-@property(assign,copy) NSArray * recipientsBcc;
-@property(assign,copy) NSArray * recipientsCc;
-@property(assign,copy) NSArray * recipientsTo;
-@property(assign,copy) NSURL * referenceId;
-@property(assign,copy) NSString * subject;
-@property(assign,copy) NSString * timeZoneId;
-@property(assign,copy) NSString * type;
+@property (nonatomic, copy) NSDate *dateSent;
+@property (nonatomic, retain) SAPersonAttribute *fromEmail;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *messagePreview;
+@property (nonatomic, copy) NSNumber *outgoing;
+@property (nonatomic, copy) NSArray *receivingAddresses;
+@property (nonatomic, copy) NSArray *recipientsBcc;
+@property (nonatomic, copy) NSArray *recipientsCc;
+@property (nonatomic, copy) NSArray *recipientsTo;
+@property (nonatomic, copy) NSURL *referenceId;
+@property (nonatomic, copy) NSString *subject;
+@property (nonatomic, copy) NSString *timeZoneId;
+@property (nonatomic, copy) NSString *type;
 
 + (id)email;
 + (id)emailWithDictionary:(id)arg1 context:(id)arg2;

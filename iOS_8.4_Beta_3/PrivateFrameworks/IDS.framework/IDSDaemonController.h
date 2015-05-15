@@ -31,17 +31,17 @@
     NSSet *_services;
 }
 
-@property(setter=_setAutoReconnect:,assign,readwrite) bool _autoReconnect;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * _remoteMessageQueue;
-@property(assign,readwrite) int curXPCMessagePriority;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isConnecting;
-@property(assign,readonly) IDSDaemonListener * listener;
-@property(assign,readonly) NSString * listenerID;
-@property(assign,readonly) Class superclass;
+@property (setter=_setAutoReconnect:) bool _autoReconnect;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *_remoteMessageQueue;
+@property (nonatomic) int curXPCMessagePriority;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) id delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isConnecting;
+@property (nonatomic, readonly) IDSDaemonListener *listener;
+@property (nonatomic, readonly) NSString *listenerID;
+@property (readonly) Class superclass;
 
 + (bool)_applicationWillTerminate;
 + (void)_blockUntilSendQueueIsEmpty;

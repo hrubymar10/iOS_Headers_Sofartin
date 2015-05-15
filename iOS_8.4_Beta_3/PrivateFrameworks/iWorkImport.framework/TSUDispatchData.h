@@ -12,13 +12,13 @@
     unsigned long long _size;
 }
 
-@property(assign,readwrite) bool alwaysDefragmentData;
-@property(assign,readonly) NSObject<OS_dispatch_data> * data;
-@property(assign,readonly) NSObject<OS_dispatch_data> * defragmentedData;
-@property(assign,readonly) NSObject<OS_dispatch_data> * fragmentedData;
-@property(assign,readonly) unsigned long long fragmentsCount;
-@property(assign,readwrite) unsigned long long maxFragmentsCount;
-@property(assign,readonly) unsigned long long size;
+@property (nonatomic) bool alwaysDefragmentData;
+@property (nonatomic, readonly) NSObject<OS_dispatch_data> *data;
+@property (nonatomic, readonly) NSObject<OS_dispatch_data> *defragmentedData;
+@property (nonatomic, readonly) NSObject<OS_dispatch_data> *fragmentedData;
+@property (nonatomic, readonly) unsigned long long fragmentsCount;
+@property (nonatomic) unsigned long long maxFragmentsCount;
+@property (nonatomic, readonly) unsigned long long size;
 
 - (void).cxx_destruct;
 - (bool)alwaysDefragmentData;

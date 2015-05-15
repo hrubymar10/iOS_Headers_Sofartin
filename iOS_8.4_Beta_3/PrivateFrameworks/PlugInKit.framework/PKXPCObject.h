@@ -6,7 +6,7 @@
     NSObject<OS_xpc_object> *_object;
 }
 
-@property(assign,retain) NSObject<OS_xpc_object> * object;
+@property (retain) NSObject<OS_xpc_object> *object;
 
 + (id)object:(id)arg1;
 + (bool)supportsSecureCoding;

@@ -12,8 +12,8 @@
     NSString *_reason;
 }
 
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } pts;
-@property(assign,readonly) NSString * reason;
+@property (readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } pts;
+@property (readonly) NSString *reason;
 
 + (id)newDroppedSampleWithReason:(id)arg1 pts:(struct { long long x1; int x2; unsigned int x3; long long x4; })arg2;
 

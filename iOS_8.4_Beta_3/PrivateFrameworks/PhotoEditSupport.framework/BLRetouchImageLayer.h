@@ -8,9 +8,9 @@
     double _imageScaleFactor;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,retain) BLPixelImageBuffer * imageBuffer;
-@property(assign,readwrite) double imageScaleFactor;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) BLPixelImageBuffer *imageBuffer;
+@property (nonatomic) double imageScaleFactor;
 
 - (void)dealloc;
 - (id)image;

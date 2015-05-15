@@ -4,7 +4,7 @@
 
 @interface SASSpeechRecognitionComplete : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * sessionId;
+@property (nonatomic, copy) NSString *sessionId;
 
 + (id)speechRecognitionComplete;
 + (id)speechRecognitionCompleteWithDictionary:(id)arg1 context:(id)arg2;

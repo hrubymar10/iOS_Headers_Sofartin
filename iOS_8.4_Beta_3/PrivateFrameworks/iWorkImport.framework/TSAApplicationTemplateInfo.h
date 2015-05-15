@@ -8,15 +8,15 @@
     NSString *_previewVariant;
 }
 
-@property(assign,readonly) NSURL * bundledDocumentContainerURL;
-@property(assign,readonly) NSURL * documentContainerURL;
-@property(assign,readonly) NSString * documentVariant;
-@property(assign,readonly) long long downloadState;
-@property(assign,readonly) NSURL * downloadedDocumentContainerURL;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSBundle * previewBundle;
-@property(assign,readonly) NSString * previewVariant;
-@property(assign,readonly) NSURL * templateZipURL;
+@property (nonatomic, readonly) NSURL *bundledDocumentContainerURL;
+@property (nonatomic, readonly) NSURL *documentContainerURL;
+@property (nonatomic, readonly) NSString *documentVariant;
+@property (nonatomic, readonly) long long downloadState;
+@property (nonatomic, readonly) NSURL *downloadedDocumentContainerURL;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSBundle *previewBundle;
+@property (nonatomic, readonly) NSString *previewVariant;
+@property (nonatomic, readonly) NSURL *templateZipURL;
 
 + (id)bundledDocumentContainerDirectoryURL;
 + (id)documentURLWithDocumentContainerURL:(id)arg1 variant:(id)arg2;

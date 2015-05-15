@@ -7,9 +7,9 @@
     NSString *_previewURLString;
 }
 
-@property(assign,readonly) long long itemIdentifier;
-@property(assign,readonly) SKUILockupViewElement * previewLockup;
-@property(assign,readonly) NSString * previewURLString;
+@property (nonatomic, readonly) long long itemIdentifier;
+@property (nonatomic, readonly) SKUILockupViewElement *previewLockup;
+@property (nonatomic, readonly) NSString *previewURLString;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

@@ -14,9 +14,9 @@
     } _velocity;
 }
 
-@property(assign,readonly) long long gestureState;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } location;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } velocity;
+@property (nonatomic, readonly) long long gestureState;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } location;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } velocity;
 
 + (unsigned int)_packetEventType;
 

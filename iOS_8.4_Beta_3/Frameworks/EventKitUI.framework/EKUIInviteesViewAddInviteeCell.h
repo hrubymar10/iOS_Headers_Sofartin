@@ -10,11 +10,11 @@
     UILabel *_simpleTextLabel;
 }
 
-@property(assign,readwrite) double leftInset;
-@property(assign,retain) NSLayoutConstraint * leftInsetConstraint;
-@property(assign,retain) NSArray * persistentConstraints;
-@property(assign,retain) NSString * simpleText;
-@property(assign,retain) UILabel * simpleTextLabel;
+@property (nonatomic) double leftInset;
+@property (nonatomic, retain) NSLayoutConstraint *leftInsetConstraint;
+@property (nonatomic, retain) NSArray *persistentConstraints;
+@property (nonatomic, retain) NSString *simpleText;
+@property (nonatomic, retain) UILabel *simpleTextLabel;
 
 + (id)_simpleTextLabelFont;
 

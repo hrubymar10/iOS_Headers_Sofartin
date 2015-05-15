@@ -12,19 +12,19 @@
     bool _radialButtonRotationEnabled;
 }
 
-@property(assign,readwrite) bool autoDismiss;
-@property(assign,retain) CKJoystickButtonItem * centerButtonItem;
-@property(assign,readwrite) <CKJoystickControllerDelegate> * delegate;
-@property(assign,readwrite) long long deviceOrientation;
-@property(assign,readonly) unsigned long long highlightStyle;
-@property(assign,readwrite) CKJoystickButtonItem * highlightedButtonItem;
-@property(getter=isJoystickCollapsed,assign,readonly) bool joystickCollapsed;
-@property(assign,retain) CKJoystickView * joystickView;
-@property(getter=isJoystickVisible,assign,readonly) bool joystickVisible;
-@property(assign,copy) NSArray * passthroughViews;
-@property(assign,copy) NSArray * radialButtonItems;
-@property(assign,readwrite) bool radialButtonRotationEnabled;
-@property(assign,retain) UIColor * tintColor;
+@property (nonatomic) bool autoDismiss;
+@property (nonatomic, readonly, retain) CKJoystickButtonItem *centerButtonItem;
+@property (nonatomic) <CKJoystickControllerDelegate> *delegate;
+@property (nonatomic) long long deviceOrientation;
+@property (nonatomic, readonly) unsigned long long highlightStyle;
+@property (nonatomic) CKJoystickButtonItem *highlightedButtonItem;
+@property (getter=isJoystickCollapsed, nonatomic, readonly) bool joystickCollapsed;
+@property (nonatomic, retain) CKJoystickView *joystickView;
+@property (getter=isJoystickVisible, nonatomic, readonly) bool joystickVisible;
+@property (nonatomic, copy) NSArray *passthroughViews;
+@property (nonatomic, readonly, copy) NSArray *radialButtonItems;
+@property (nonatomic) bool radialButtonRotationEnabled;
+@property (nonatomic, retain) UIColor *tintColor;
 
 + (double)joystickExpandAnimationDuration;
 + (double)joystickExpandedRadius;

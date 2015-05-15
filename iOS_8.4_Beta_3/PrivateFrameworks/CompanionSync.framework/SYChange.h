@@ -9,11 +9,11 @@
     unsigned long long _version;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,readonly) bool hasData;
-@property(assign,retain) NSString * objectId;
-@property(assign,readwrite) int type;
-@property(assign,readwrite) unsigned long long version;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic, readonly) bool hasData;
+@property (nonatomic, retain) NSString *objectId;
+@property (nonatomic) int type;
+@property (nonatomic) unsigned long long version;
 
 + (id)changeWithObject:(id)arg1 updateType:(int)arg2 store:(id)arg3;
 

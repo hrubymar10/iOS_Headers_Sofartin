@@ -8,16 +8,16 @@
     NSOperationQueue *_presenterOperationQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) <NPSDomainAccessorFilePresenterDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSURL * domainURL;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSOperationQueue * presentedItemOperationQueue;
-@property(assign,copy) NSURL * presentedItemURL;
-@property(assign,retain) NSOperationQueue * presenterOperationQueue;
-@property(assign,copy) NSURL * primaryPresentedItemURL;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) <NPSDomainAccessorFilePresenterDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSURL *domainURL;
+@property (readonly) unsigned long long hash;
+@property (readonly, retain) NSOperationQueue *presentedItemOperationQueue;
+@property (readonly, copy) NSURL *presentedItemURL;
+@property (nonatomic, retain) NSOperationQueue *presenterOperationQueue;
+@property (readonly, copy) NSURL *primaryPresentedItemURL;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)dealloc;

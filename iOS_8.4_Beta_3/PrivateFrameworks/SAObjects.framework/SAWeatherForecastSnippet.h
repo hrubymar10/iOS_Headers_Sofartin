@@ -4,9 +4,9 @@
 
 @interface SAWeatherForecastSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * aceWeathers;
-@property(assign,retain) SAUIAppPunchOut * appPunchOut;
-@property(assign,retain) SAUIImageResource * attributionImage;
+@property (nonatomic, copy) NSArray *aceWeathers;
+@property (nonatomic, retain) SAUIAppPunchOut *appPunchOut;
+@property (nonatomic, retain) SAUIImageResource *attributionImage;
 
 + (id)forecastSnippet;
 + (id)forecastSnippetWithDictionary:(id)arg1 context:(id)arg2;

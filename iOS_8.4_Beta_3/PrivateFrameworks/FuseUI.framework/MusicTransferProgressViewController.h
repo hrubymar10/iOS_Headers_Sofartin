@@ -14,12 +14,12 @@
     MusicTransferAggregator *_transferAggregator;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicTransferProgressViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool showsDoneButton;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicTransferProgressViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool showsDoneButton;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_actionButtonAction:(id)arg1;

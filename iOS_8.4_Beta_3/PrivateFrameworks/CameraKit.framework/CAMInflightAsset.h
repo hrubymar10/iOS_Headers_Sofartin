@@ -17,18 +17,18 @@
     short _visibilityState;
 }
 
-@property(assign,readonly) bool _didPersistAvalanche;
-@property(assign,readonly) bool _hasPendingAvalanchePersistenceUpdate;
-@property(assign,readwrite) int avalanchePickType;
-@property(assign,retain) NSString * avalancheUUID;
-@property(assign,readwrite) long long captureDeviceDuringCapture;
-@property(assign,retain) NSDate * dateCreated;
-@property(assign,readwrite) long long deviceOrientationDuringCapture;
-@property(assign,retain) NSString * directory;
-@property(assign,retain) NSString * filename;
-@property(assign,readwrite) bool isVideo;
-@property(assign,retain) NSString * uuid;
-@property(assign,readwrite) short visibilityState;
+@property (nonatomic, readonly) bool _didPersistAvalanche;
+@property (nonatomic, readonly) bool _hasPendingAvalanchePersistenceUpdate;
+@property (nonatomic) int avalanchePickType;
+@property (nonatomic, retain) NSString *avalancheUUID;
+@property (nonatomic) long long captureDeviceDuringCapture;
+@property (nonatomic, retain) NSDate *dateCreated;
+@property (nonatomic) long long deviceOrientationDuringCapture;
+@property (nonatomic, retain) NSString *directory;
+@property (nonatomic, retain) NSString *filename;
+@property (nonatomic) bool isVideo;
+@property (nonatomic, retain) NSString *uuid;
+@property (nonatomic) short visibilityState;
 
 - (void).cxx_destruct;
 - (void)_avalanchePersistenceStateDidChange;

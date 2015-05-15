@@ -8,7 +8,7 @@
     NSKnownKeysDictionary *_snapshotValues;
 }
 
-@property(assign,retain) PLManagedObject * managedObject;
+@property (nonatomic, readonly, retain) PLManagedObject *managedObject;
 
 + (struct __CFDictionary { }*)_createIndexMapsSnapshotForManagedObject:(id)arg1 changeNotificationCenter:(id)arg2;
 + (id)snapshotForManagedObject:(id)arg1 changeNotificationCenter:(id)arg2 useCommitedValues:(bool)arg3;

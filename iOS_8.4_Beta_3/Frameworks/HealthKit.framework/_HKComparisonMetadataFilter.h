@@ -6,7 +6,7 @@
     id _value;
 }
 
-@property(assign,readonly) id value;
+@property (nonatomic, readonly) id value;
 
 + (bool)_acceptsOperatorType:(unsigned long long)arg1;
 + (id)filterWithKey:(id)arg1 operatorType:(unsigned long long)arg2 value:(id)arg3;

@@ -7,10 +7,10 @@
     UILabel *_subtitleView;
 }
 
-@property(assign,retain) NSString * currentSubtitle;
-@property(assign,retain) UIColor * currentSubtitleColor;
-@property(assign,retain) UIColor * currentSubtitleShadowColor;
-@property(assign,retain) UILabel * subtitleLabel;
+@property (nonatomic, readonly, retain) NSString *currentSubtitle;
+@property (nonatomic, readonly, retain) UIColor *currentSubtitleColor;
+@property (nonatomic, readonly, retain) UIColor *currentSubtitleShadowColor;
+@property (nonatomic, readonly, retain) UILabel *subtitleLabel;
 
 - (void)_setupSubtitleView;
 - (id)_subtitleFont;

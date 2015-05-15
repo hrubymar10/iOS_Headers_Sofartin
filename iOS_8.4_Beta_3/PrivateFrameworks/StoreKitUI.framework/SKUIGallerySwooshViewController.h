@@ -10,12 +10,12 @@
     SKUISwooshView *_swooshView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIGallerySwooshViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) SKUISwooshPageComponent * gallerySwoosh;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIGallerySwooshViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) SKUISwooshPageComponent *gallerySwoosh;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_newViewWithMediaComponent:(id)arg1;

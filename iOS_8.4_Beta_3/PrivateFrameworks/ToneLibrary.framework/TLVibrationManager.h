@@ -12,20 +12,20 @@
     NPSDomainAccessor *_transientNanoPreferencesDomainAccessor;
 }
 
-@property(setter=_setAccessQueue:,assign,retain) TLAccessQueue * _accessQueue;
-@property(setter=_setAllowsAutoRefresh:,assign,readwrite) bool _allowsAutoRefresh;
-@property(setter=_setCachedSystemVibrationPatterns:,assign,retain) NSDictionary * _cachedSystemVibrationPatterns;
-@property(setter=_setCachedUserGeneratedVibrationPatterns:,assign,retain) NSDictionary * _cachedUserGeneratedVibrationPatterns;
-@property(setter=_setSpecialBehaviors:,assign,readwrite) unsigned long long _specialBehaviors;
-@property(assign,readonly) NSDictionary * _systemVibrationPatterns;
-@property(setter=_setTransientNanoPreferencesDomainAccessor:,assign,retain) NPSDomainAccessor * _transientNanoPreferencesDomainAccessor;
-@property(getter=_isUnitTestingModeEnabled,assign,readonly) bool _unitTestingModeEnabled;
-@property(assign,readonly) NSDictionary * _userGeneratedVibrationPatterns;
-@property(assign,readwrite) bool allowsAutoRefresh;
-@property(assign,readwrite) bool needsRefresh;
-@property(assign,readonly) bool shouldVibrateForCurrentRingerSwitchState;
-@property(assign,readonly) bool shouldVibrateOnRing;
-@property(assign,readonly) bool shouldVibrateOnSilent;
+@property (setter=_setAccessQueue:, retain) TLAccessQueue *_accessQueue;
+@property (setter=_setAllowsAutoRefresh:, nonatomic) bool _allowsAutoRefresh;
+@property (setter=_setCachedSystemVibrationPatterns:, nonatomic, retain) NSDictionary *_cachedSystemVibrationPatterns;
+@property (setter=_setCachedUserGeneratedVibrationPatterns:, nonatomic, retain) NSDictionary *_cachedUserGeneratedVibrationPatterns;
+@property (setter=_setSpecialBehaviors:, nonatomic) unsigned long long _specialBehaviors;
+@property (nonatomic, readonly) NSDictionary *_systemVibrationPatterns;
+@property (setter=_setTransientNanoPreferencesDomainAccessor:, nonatomic, retain) NPSDomainAccessor *_transientNanoPreferencesDomainAccessor;
+@property (getter=_isUnitTestingModeEnabled, nonatomic, readonly) bool _unitTestingModeEnabled;
+@property (nonatomic, readonly) NSDictionary *_userGeneratedVibrationPatterns;
+@property (nonatomic) bool allowsAutoRefresh;
+@property (nonatomic) bool needsRefresh;
+@property (nonatomic, readonly) bool shouldVibrateForCurrentRingerSwitchState;
+@property (nonatomic, readonly) bool shouldVibrateOnRing;
+@property (nonatomic, readonly) bool shouldVibrateOnSilent;
 
 + (void)_handleVibrateOnRingOrSilentDidChangeNotification;
 + (void)_handleVibrationPreferencesDidChangeNotificationForPreferencesKinds:(unsigned long long)arg1 atInitiativeOfVibrationManager:(id)arg2;

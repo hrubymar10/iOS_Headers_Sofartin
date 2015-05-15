@@ -9,11 +9,11 @@
     NSString *_syncID;
 }
 
-@property(assign,readwrite) unsigned int chunkIndex;
-@property(assign,retain) SYErrorInfo * error;
-@property(assign,readonly) bool hasError;
-@property(assign,retain) SYMessageHeader * header;
-@property(assign,retain) NSString * syncID;
+@property (nonatomic) unsigned int chunkIndex;
+@property (nonatomic, retain) SYErrorInfo *error;
+@property (nonatomic, readonly) bool hasError;
+@property (nonatomic, retain) SYMessageHeader *header;
+@property (nonatomic, retain) NSString *syncID;
 
 - (void).cxx_destruct;
 - (unsigned int)chunkIndex;

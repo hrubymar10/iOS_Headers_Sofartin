@@ -7,10 +7,10 @@
     NSMutableArray *_objects;
 }
 
-@property(assign,readonly) long long count;
-@property(assign,readwrite) <AFUIQueueDelegate> * delegate;
-@property(assign,readonly) id frontObject;
-@property(getter=_objects,assign,readonly) NSMutableArray * objects;
+@property (nonatomic, readonly) long long count;
+@property (nonatomic) <AFUIQueueDelegate> *delegate;
+@property (nonatomic, readonly) id frontObject;
+@property (getter=_objects, nonatomic, readonly) NSMutableArray *objects;
 
 - (void).cxx_destruct;
 - (id)_objects;

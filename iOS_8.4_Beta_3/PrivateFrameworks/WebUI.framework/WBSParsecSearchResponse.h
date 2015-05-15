@@ -9,11 +9,11 @@
     unsigned long long _sizeInBytes;
 }
 
-@property(assign,readonly) WBSParsecSearchCompletionResultSet * bestCompletionResultSet;
-@property(assign,readonly) NSArray * completionResultSets;
-@property(assign,readonly) NSArray * errorCodesForCompletionResultSets;
-@property(assign,readonly) double maxAge;
-@property(assign,readonly) unsigned long long sizeInBytes;
+@property (nonatomic, readonly) WBSParsecSearchCompletionResultSet *bestCompletionResultSet;
+@property (nonatomic, readonly) NSArray *completionResultSets;
+@property (nonatomic, readonly) NSArray *errorCodesForCompletionResultSets;
+@property (nonatomic, readonly) double maxAge;
+@property (nonatomic, readonly) unsigned long long sizeInBytes;
 
 - (void).cxx_destruct;
 - (id)bestCompletionResultSet;

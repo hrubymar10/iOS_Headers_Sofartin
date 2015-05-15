@@ -6,18 +6,18 @@
     AVMetadataItemInternal *_priv;
 }
 
-@property(assign,copy) NSString * dataType;
-@property(assign,readonly) NSData * dataValue;
-@property(assign,readonly) NSDate * dateValue;
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } duration;
-@property(assign,copy) NSString * extendedLanguageTag;
-@property(assign,copy) NSDictionary * extraAttributes;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSLocale * locale;
-@property(assign,readonly) NSNumber * numberValue;
-@property(assign,readonly) NSString * stringValue;
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } time;
-@property(assign,copy) <NSObject><NSCopying> * value;
+@property (readonly, copy) NSString *dataType;
+@property (readonly) NSData *dataValue;
+@property (readonly) NSDate *dateValue;
+@property (readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } duration;
+@property (readonly, copy) NSString *extendedLanguageTag;
+@property (readonly, copy) NSDictionary *extraAttributes;
+@property (readonly, copy) NSString *identifier;
+@property (readonly, copy) NSLocale *locale;
+@property (readonly) NSNumber *numberValue;
+@property (readonly) NSString *stringValue;
+@property (readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } time;
+@property (readonly, copy) <NSObject><NSCopying> *value;
 
 + (bool)_clientExpectsISOUserDataKeysInQuickTimeUserDataKeySpace;
 + (id)_figMetadataPropertyFromMetadataItems:(id)arg1;

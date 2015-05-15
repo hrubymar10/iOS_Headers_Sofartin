@@ -6,7 +6,7 @@
     TSCH3DGLFramebuffer *mOriginal;
 }
 
-@property(assign,retain) TSCH3DGLFramebuffer * original;
+@property (nonatomic, retain) TSCH3DGLFramebuffer *original;
 
 - (id)GLHandleForSession:(id)arg1;
 - (bool)activateInsideSession:(id)arg1;

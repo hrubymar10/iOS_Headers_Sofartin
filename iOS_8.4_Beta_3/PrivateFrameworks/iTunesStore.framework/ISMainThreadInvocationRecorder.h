@@ -6,7 +6,7 @@
     bool _waitUntilDone;
 }
 
-@property(assign,readwrite) bool waitUntilDone;
+@property (nonatomic) bool waitUntilDone;
 
 - (void)invokeInvocation:(id)arg1;
 - (void)setWaitUntilDone:(bool)arg1;

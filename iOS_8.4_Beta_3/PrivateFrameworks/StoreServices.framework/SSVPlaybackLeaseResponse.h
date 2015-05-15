@@ -4,10 +4,10 @@
 
 @interface SSVPlaybackLeaseResponse : SSVPlaybackResponse
 
-@property(assign,readonly) double leaseDuration;
-@property(assign,copy) NSData * leaseInfoData;
-@property(getter=isOfflineSlotAvailable,assign,readonly) bool offlineSlotAvailable;
-@property(assign,copy) NSData * subscriptionKeyBagData;
+@property (nonatomic, readonly) double leaseDuration;
+@property (nonatomic, readonly, copy) NSData *leaseInfoData;
+@property (getter=isOfflineSlotAvailable, nonatomic, readonly) bool offlineSlotAvailable;
+@property (nonatomic, readonly, copy) NSData *subscriptionKeyBagData;
 
 - (bool)isOfflineSlotAvailable;
 - (id)itemForItemIdentifier:(id)arg1;

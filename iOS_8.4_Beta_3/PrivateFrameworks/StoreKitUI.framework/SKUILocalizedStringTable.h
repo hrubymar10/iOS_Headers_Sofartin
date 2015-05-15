@@ -8,8 +8,8 @@
     NSString *_tableName;
 }
 
-@property(assign,readonly) NSBundle * bundle;
-@property(assign,readonly) NSString * tableName;
+@property (nonatomic, readonly) NSBundle *bundle;
+@property (nonatomic, readonly) NSString *tableName;
 
 - (void).cxx_destruct;
 - (id)_legacyLanguageNameForLanguageCode:(id)arg1;

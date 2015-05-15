@@ -11,12 +11,12 @@
     bool _wantsProtectionInfo;
 }
 
-@property(assign,retain) NSMutableDictionary * emailAliasToEmailAddress;
-@property(assign,retain) NSArray * emailsToDiscover;
-@property(assign,retain) NSMutableDictionary * hashedEmailByRequestID;
-@property(assign,copy) id progressBlock;
-@property(assign,retain) NSArray * userRecordIDsToDiscover;
-@property(assign,readwrite) bool wantsProtectionInfo;
+@property (nonatomic, retain) NSMutableDictionary *emailAliasToEmailAddress;
+@property (nonatomic, retain) NSArray *emailsToDiscover;
+@property (nonatomic, retain) NSMutableDictionary *hashedEmailByRequestID;
+@property (nonatomic, copy) id progressBlock;
+@property (nonatomic, retain) NSArray *userRecordIDsToDiscover;
+@property (nonatomic) bool wantsProtectionInfo;
 
 - (void).cxx_destruct;
 - (id)emailAliasToEmailAddress;

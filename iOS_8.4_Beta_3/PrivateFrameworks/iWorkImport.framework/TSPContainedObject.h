@@ -6,7 +6,7 @@
     TSPObject *_owner;
 }
 
-@property(assign,readwrite) TSPObject * owner;
+@property (nonatomic) TSPObject *owner;
 
 - (void).cxx_destruct;
 - (id)documentRoot;

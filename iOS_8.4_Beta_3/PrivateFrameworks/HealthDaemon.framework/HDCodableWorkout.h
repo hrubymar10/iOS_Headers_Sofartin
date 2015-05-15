@@ -21,21 +21,21 @@
     long long _type;
 }
 
-@property(assign,readwrite) double duration;
-@property(assign,retain) NSMutableArray * events;
-@property(assign,readwrite) double goal;
-@property(assign,readwrite) long long goalType;
-@property(assign,readwrite) bool hasDuration;
-@property(assign,readwrite) bool hasGoal;
-@property(assign,readwrite) bool hasGoalType;
-@property(assign,readonly) bool hasSample;
-@property(assign,readwrite) bool hasTotalDistanceInCanonicalUnit;
-@property(assign,readwrite) bool hasTotalEnergyBurnedInCanonicalUnit;
-@property(assign,readwrite) bool hasType;
-@property(assign,retain) HDCodableSample * sample;
-@property(assign,readwrite) double totalDistanceInCanonicalUnit;
-@property(assign,readwrite) double totalEnergyBurnedInCanonicalUnit;
-@property(assign,readwrite) long long type;
+@property (nonatomic) double duration;
+@property (nonatomic, retain) NSMutableArray *events;
+@property (nonatomic) double goal;
+@property (nonatomic) long long goalType;
+@property (nonatomic) bool hasDuration;
+@property (nonatomic) bool hasGoal;
+@property (nonatomic) bool hasGoalType;
+@property (nonatomic, readonly) bool hasSample;
+@property (nonatomic) bool hasTotalDistanceInCanonicalUnit;
+@property (nonatomic) bool hasTotalEnergyBurnedInCanonicalUnit;
+@property (nonatomic) bool hasType;
+@property (nonatomic, retain) HDCodableSample *sample;
+@property (nonatomic) double totalDistanceInCanonicalUnit;
+@property (nonatomic) double totalEnergyBurnedInCanonicalUnit;
+@property (nonatomic) long long type;
 
 - (void).cxx_destruct;
 - (void)addEvents:(id)arg1;

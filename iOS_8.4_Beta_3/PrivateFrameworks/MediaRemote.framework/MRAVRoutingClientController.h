@@ -9,7 +9,7 @@
     NSObject<OS_dispatch_queue> *_serialQueue;
 }
 
-@property(assign,readonly) struct MRMediaRemoteService { }* mediaRemoteService;
+@property (nonatomic, readonly) struct MRMediaRemoteService { }*mediaRemoteService;
 
 - (void)_cacheFetchedPickableRoutes:(id)arg1 forCategory:(id)arg2;
 - (void)_flushPendingCompletionHandlersWithPickableRoutes:(id)arg1 forCategory:(id)arg2;

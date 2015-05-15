@@ -7,8 +7,8 @@
     unsigned long long mLifespan;
 }
 
-@property(assign,readonly) TSCH3DGLStatisticsData * allFramesStatistics;
-@property(assign,readonly) TSCH3DGLStatisticsData * currentFrameStatistics;
+@property (nonatomic, readonly) TSCH3DGLStatisticsData *allFramesStatistics;
+@property (nonatomic, readonly) TSCH3DGLStatisticsData *currentFrameStatistics;
 
 - (void)activateShader:(id)arg1;
 - (id)allFramesStatistics;

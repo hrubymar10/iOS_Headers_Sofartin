@@ -4,8 +4,8 @@
 
 @interface SAMPPlaybackButton : SAAceView
 
-@property(assign,copy) NSArray * pauseCommands;
-@property(assign,copy) NSArray * playCommands;
+@property (nonatomic, copy) NSArray *pauseCommands;
+@property (nonatomic, copy) NSArray *playCommands;
 
 + (id)playbackButton;
 + (id)playbackButtonWithDictionary:(id)arg1 context:(id)arg2;

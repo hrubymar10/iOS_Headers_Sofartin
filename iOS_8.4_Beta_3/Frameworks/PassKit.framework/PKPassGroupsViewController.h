@@ -22,14 +22,14 @@
     bool _welcomeStateEnabled;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPassGroupsViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) PKPassGroupStackView * groupStackView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool passesAreOutdated;
-@property(assign,readonly) Class superclass;
-@property(getter=isWelcomeStateEnabled,assign,readwrite) bool welcomeStateEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPassGroupsViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, retain) PKPassGroupStackView *groupStackView;
+@property (readonly) unsigned long long hash;
+@property bool passesAreOutdated;
+@property (readonly) Class superclass;
+@property (getter=isWelcomeStateEnabled, nonatomic) bool welcomeStateEnabled;
 
 + (void)beginTrackingAction;
 + (void)endTrackingAction;

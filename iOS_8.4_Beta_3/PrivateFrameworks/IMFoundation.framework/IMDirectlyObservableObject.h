@@ -6,7 +6,7 @@
     NSArray *_observers;
 }
 
-@property(assign,retain) NSArray * observers;
+@property (retain) NSArray *observers;
 
 - (void)_objectDidPostNotification:(id)arg1;
 - (void)addObserver:(id)arg1;

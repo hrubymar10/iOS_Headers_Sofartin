@@ -4,14 +4,14 @@
 
 @interface EKPersistentSharee : EKPersistentObject <NSCopying>
 
-@property(assign,readonly) NSString * UUID;
-@property(assign,copy) NSString * displayName;
-@property(assign,copy) NSString * emailAddress;
-@property(assign,copy) NSString * externalID;
-@property(assign,copy) NSString * firstName;
-@property(assign,copy) NSString * lastName;
-@property(assign,readwrite) int shareeAccessLevel;
-@property(assign,readwrite) int shareeStatus;
+@property (nonatomic, readonly) NSString *UUID;
+@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic, copy) NSString *emailAddress;
+@property (nonatomic, copy) NSString *externalID;
+@property (nonatomic, copy) NSString *firstName;
+@property (nonatomic, copy) NSString *lastName;
+@property (nonatomic) int shareeAccessLevel;
+@property (nonatomic) int shareeStatus;
 
 + (id)defaultPropertiesToLoad;
 + (id)relations;

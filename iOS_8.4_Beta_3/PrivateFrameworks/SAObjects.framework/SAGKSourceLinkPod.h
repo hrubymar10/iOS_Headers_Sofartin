@@ -4,8 +4,8 @@
 
 @interface SAGKSourceLinkPod : SAGKPodView
 
-@property(assign,copy) NSString * linkText;
-@property(assign,retain) SAUIAppPunchOut * punchOut;
+@property (nonatomic, copy) NSString *linkText;
+@property (nonatomic, retain) SAUIAppPunchOut *punchOut;
 
 + (id)sourceLinkPod;
 + (id)sourceLinkPodWithDictionary:(id)arg1 context:(id)arg2;

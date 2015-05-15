@@ -6,17 +6,17 @@
     NSMutableDictionary *_addressDictionary;
 }
 
-@property(assign,copy) NSString * ISOCountryCode;
-@property(assign,retain) NSMutableDictionary * addressDictionary;
-@property(assign,copy) NSString * city;
-@property(assign,copy) NSString * country;
-@property(assign,readonly) NSString * formattedAddress;
-@property(assign,readonly) NSString * formattedAddressSingleLine;
-@property(assign,copy) NSString * postalCode;
-@property(assign,copy) NSString * state;
-@property(assign,copy) NSString * street;
-@property(assign,copy) NSString * subAdministrativeArea;
-@property(assign,copy) NSString * subLocality;
+@property (readonly, copy) NSString *ISOCountryCode;
+@property (retain) NSMutableDictionary *addressDictionary;
+@property (readonly, copy) NSString *city;
+@property (readonly, copy) NSString *country;
+@property (nonatomic, readonly) NSString *formattedAddress;
+@property (nonatomic, readonly) NSString *formattedAddressSingleLine;
+@property (readonly, copy) NSString *postalCode;
+@property (readonly, copy) NSString *state;
+@property (readonly, copy) NSString *street;
+@property (readonly, copy) NSString *subAdministrativeArea;
+@property (readonly, copy) NSString *subLocality;
 
 + (id)addressFormatsDictionary;
 + (id)defaultCountryCode;

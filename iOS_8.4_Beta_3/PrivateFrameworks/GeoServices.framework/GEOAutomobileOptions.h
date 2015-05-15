@@ -9,8 +9,8 @@
     bool _includeHistoricTravelTime;
 }
 
-@property(assign,readwrite) bool hasIncludeHistoricTravelTime;
-@property(assign,readwrite) bool includeHistoricTravelTime;
+@property (nonatomic) bool hasIncludeHistoricTravelTime;
+@property (nonatomic) bool includeHistoricTravelTime;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

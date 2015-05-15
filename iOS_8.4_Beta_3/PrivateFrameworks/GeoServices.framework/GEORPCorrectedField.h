@@ -14,16 +14,16 @@
     NSString *_originalValue;
 }
 
-@property(assign,retain) NSString * correctedValue;
-@property(assign,readwrite) int field;
-@property(assign,retain) NSString * fieldName;
-@property(assign,readonly) bool hasCorrectedValue;
-@property(assign,readwrite) bool hasField;
-@property(assign,readonly) bool hasFieldName;
-@property(assign,readwrite) bool hasIsMarkedIncorrect;
-@property(assign,readonly) bool hasOriginalValue;
-@property(assign,readwrite) bool isMarkedIncorrect;
-@property(assign,retain) NSString * originalValue;
+@property (nonatomic, retain) NSString *correctedValue;
+@property (nonatomic) int field;
+@property (nonatomic, retain) NSString *fieldName;
+@property (nonatomic, readonly) bool hasCorrectedValue;
+@property (nonatomic) bool hasField;
+@property (nonatomic, readonly) bool hasFieldName;
+@property (nonatomic) bool hasIsMarkedIncorrect;
+@property (nonatomic, readonly) bool hasOriginalValue;
+@property (nonatomic) bool isMarkedIncorrect;
+@property (nonatomic, retain) NSString *originalValue;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -6,7 +6,7 @@
     NSMutableDictionary *_eventListenersMap;
 }
 
-@property(assign,retain) NSMutableDictionary * eventListenersMap;
+@property (nonatomic, retain) NSMutableDictionary *eventListenersMap;
 
 - (void).cxx_destruct;
 - (bool)_searchEventListener:(id)arg1 key:(id)arg2 destroy:(bool)arg3;

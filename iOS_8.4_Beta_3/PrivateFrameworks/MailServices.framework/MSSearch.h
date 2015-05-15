@@ -6,11 +6,11 @@
     <MSSearchDelegate> *_delegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MSSearchDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MSSearchDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)findMessageData:(id)arg1 matchingCriterion:(id)arg2 options:(unsigned long long)arg3 delegate:(id)arg4;
 + (id)findMessageData:(id)arg1 matchingCriterion:(id)arg2 shouldFetch:(bool)arg3 onServer:(bool)arg4 delegate:(id)arg5;

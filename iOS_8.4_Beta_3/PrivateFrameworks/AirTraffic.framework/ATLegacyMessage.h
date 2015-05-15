@@ -15,16 +15,16 @@
     double _timestamp;
 }
 
-@property(assign,retain) NSString * dataClass;
-@property(assign,readwrite) unsigned int messageId;
-@property(assign,readwrite) unsigned long long messageType;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSDictionary * parameters;
-@property(assign,retain) NSData * payload;
-@property(assign,retain) NSError * result;
-@property(assign,readwrite) unsigned int sessionNumber;
-@property(assign,retain) NSData * sig;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic, retain) NSString *dataClass;
+@property (nonatomic) unsigned int messageId;
+@property (nonatomic) unsigned long long messageType;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSDictionary *parameters;
+@property (nonatomic, retain) NSData *payload;
+@property (nonatomic, retain) NSError *result;
+@property (nonatomic) unsigned int sessionNumber;
+@property (nonatomic, retain) NSData *sig;
+@property (nonatomic) double timestamp;
 
 + (id)_messageTypeString:(unsigned long long)arg1;
 + (unsigned int)currentSessionNumber;

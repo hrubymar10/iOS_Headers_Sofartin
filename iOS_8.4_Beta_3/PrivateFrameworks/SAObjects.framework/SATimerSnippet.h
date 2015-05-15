@@ -4,7 +4,7 @@
 
 @interface SATimerSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * timers;
+@property (nonatomic, copy) NSArray *timers;
 
 + (id)snippet;
 + (id)snippetWithDictionary:(id)arg1 context:(id)arg2;

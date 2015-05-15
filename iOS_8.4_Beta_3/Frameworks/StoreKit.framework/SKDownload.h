@@ -15,16 +15,16 @@
     NSString *_version;
 }
 
-@property(getter=_downloadID,setter=_setDownloadID:,assign,copy) NSNumber * _downloadID;
-@property(assign,readonly) NSString * contentIdentifier;
-@property(assign,readonly) long long contentLength;
-@property(assign,readonly) NSURL * contentURL;
-@property(assign,readonly) NSString * contentVersion;
-@property(assign,readonly) long long downloadState;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) float progress;
-@property(assign,readonly) double timeRemaining;
-@property(assign,readonly) SKPaymentTransaction * transaction;
+@property (getter=_downloadID, setter=_setDownloadID:, nonatomic, copy) NSNumber *_downloadID;
+@property (nonatomic, readonly) NSString *contentIdentifier;
+@property (nonatomic, readonly) long long contentLength;
+@property (nonatomic, readonly) NSURL *contentURL;
+@property (nonatomic, readonly) NSString *contentVersion;
+@property (nonatomic, readonly) long long downloadState;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) float progress;
+@property (nonatomic, readonly) double timeRemaining;
+@property (nonatomic, readonly) SKPaymentTransaction *transaction;
 
 - (void)_applyChangeset:(id)arg1;
 - (id)_downloadID;

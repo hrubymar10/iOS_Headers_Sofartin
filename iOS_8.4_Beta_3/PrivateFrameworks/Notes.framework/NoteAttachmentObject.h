@@ -4,10 +4,10 @@
 
 @interface NoteAttachmentObject : NSManagedObject
 
-@property(assign,retain) NSString * contentID;
-@property(assign,retain) NSString * filename;
-@property(assign,retain) NSString * mimeType;
-@property(assign,retain) NoteObject * note;
+@property (nonatomic, retain) NSString *contentID;
+@property (nonatomic, retain) NSString *filename;
+@property (nonatomic, retain) NSString *mimeType;
+@property (nonatomic, retain) NoteObject *note;
 
 + (bool)applyFileAttributesForAttachment:(id)arg1 error:(id*)arg2;
 + (bool)migrateAttachmentRelatedFilesInContext:(id)arg1 error:(id*)arg2;

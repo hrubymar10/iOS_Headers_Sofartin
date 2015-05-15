@@ -6,7 +6,7 @@
     NSMutableArray *_variants;
 }
 
-@property(assign,retain) NSMutableArray * variants;
+@property (nonatomic, retain) NSMutableArray *variants;
 
 - (void).cxx_destruct;
 - (void)addVariant:(id)arg1;

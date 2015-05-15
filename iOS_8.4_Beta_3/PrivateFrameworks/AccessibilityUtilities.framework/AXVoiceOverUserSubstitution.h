@@ -14,15 +14,15 @@
     NSUUID *_uuid;
 }
 
-@property(assign,readwrite) bool active;
-@property(assign,readwrite) bool appliesToAllApps;
-@property(assign,copy) NSSet * bundleIdentifiers;
-@property(assign,readwrite) bool ignoreCase;
-@property(assign,readonly) bool isReplacementTextAllPunctuation;
-@property(assign,readonly) bool isReplacementTextSurroundedByPunctuation;
-@property(assign,copy) NSString * originalString;
-@property(assign,copy) NSString * replacementString;
-@property(assign,retain) NSUUID * uuid;
+@property (nonatomic) bool active;
+@property (nonatomic) bool appliesToAllApps;
+@property (nonatomic, copy) NSSet *bundleIdentifiers;
+@property (nonatomic) bool ignoreCase;
+@property (nonatomic, readonly) bool isReplacementTextAllPunctuation;
+@property (nonatomic, readonly) bool isReplacementTextSurroundedByPunctuation;
+@property (nonatomic, copy) NSString *originalString;
+@property (nonatomic, copy) NSString *replacementString;
+@property (nonatomic, retain) NSUUID *uuid;
 
 + (bool)supportsSecureCoding;
 

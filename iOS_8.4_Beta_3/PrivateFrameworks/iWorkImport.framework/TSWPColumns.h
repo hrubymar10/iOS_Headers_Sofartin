@@ -9,8 +9,8 @@
     double _widthArray;
 }
 
-@property(assign,readwrite) unsigned long long columnCount;
-@property(assign,readwrite) bool equalWidth;
+@property (nonatomic) unsigned long long columnCount;
+@property (nonatomic) bool equalWidth;
 
 + (id)columns;
 

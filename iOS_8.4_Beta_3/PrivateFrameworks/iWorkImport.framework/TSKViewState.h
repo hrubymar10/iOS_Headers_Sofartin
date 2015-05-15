@@ -6,7 +6,7 @@
     TSPObject *_viewStateRoot;
 }
 
-@property(assign,retain) TSPObject * viewStateRoot;
+@property (nonatomic, retain) TSPObject *viewStateRoot;
 
 + (id)viewStateWithRoot:(id)arg1 context:(id)arg2;
 

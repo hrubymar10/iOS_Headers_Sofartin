@@ -6,7 +6,7 @@
     NSString *_identifier;
 }
 
-@property(assign,retain) NSString * identifier;
+@property (nonatomic, retain) NSString *identifier;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

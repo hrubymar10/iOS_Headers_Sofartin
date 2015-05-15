@@ -6,9 +6,9 @@
     AVExternalDeviceHIDInternal *_externalDeviceHID;
 }
 
-@property(assign,readonly) NSString * UUID;
-@property(assign,readwrite) long long inputMode;
-@property(assign,readonly) NSString * screenID;
+@property (nonatomic, readonly) NSString *UUID;
+@property (nonatomic) long long inputMode;
+@property (nonatomic, readonly) NSString *screenID;
 
 - (id)UUID;
 - (id)_externalDevice;

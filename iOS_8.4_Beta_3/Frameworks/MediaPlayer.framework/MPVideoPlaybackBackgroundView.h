@@ -15,8 +15,8 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,retain) MPAVController * player;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic, retain) MPAVController *player;
 
 - (void).cxx_destruct;
 - (void)_activeAudioRouteDidChange:(id)arg1;

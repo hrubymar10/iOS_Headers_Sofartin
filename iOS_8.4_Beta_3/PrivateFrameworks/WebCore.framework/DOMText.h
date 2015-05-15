@@ -4,7 +4,7 @@
 
 @interface DOMText : DOMCharacterData
 
-@property(assign,copy) NSString * wholeText;
+@property (readonly, copy) NSString *wholeText;
 
 - (id)replaceWholeText:(id)arg1;
 - (id)splitText:(unsigned int)arg1;

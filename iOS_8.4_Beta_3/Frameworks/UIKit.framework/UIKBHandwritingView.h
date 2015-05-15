@@ -14,19 +14,19 @@
     UIKBHandwritingStrokeView *_strokeView;
 }
 
-@property(assign,retain) UIBezierPath * currentPath;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct CGColor { }* inkColor;
-@property(assign,readwrite) struct CGImage { }* inkMask;
-@property(assign,readwrite) double inkWidth;
-@property(assign,retain) NSMutableArray * interpolatedPaths;
-@property(assign,retain) UIKBHandwritingQuadCurvePointFIFO * interpolatingFIFO;
-@property(assign,retain) UIKBHandwritingBoxcarFilterPointFIFO * smoothingFIFO;
-@property(assign,retain) UIKBHandwritingStrokePointFIFO * strokeFIFO;
-@property(assign,retain) UIKBHandwritingStrokeView * strokeView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIBezierPath *currentPath;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct CGColor { }*inkColor;
+@property (nonatomic) struct CGImage { }*inkMask;
+@property (nonatomic) double inkWidth;
+@property (nonatomic, retain) NSMutableArray *interpolatedPaths;
+@property (nonatomic, retain) UIKBHandwritingQuadCurvePointFIFO *interpolatingFIFO;
+@property (nonatomic, retain) UIKBHandwritingBoxcarFilterPointFIFO *smoothingFIFO;
+@property (nonatomic, retain) UIKBHandwritingStrokePointFIFO *strokeFIFO;
+@property (nonatomic, retain) UIKBHandwritingStrokeView *strokeView;
+@property (readonly) Class superclass;
 
 - (void)addInkPoint:(struct CGPoint { double x1; double x2; })arg1;
 - (bool)cancelTouchTracking;

@@ -7,8 +7,8 @@
     NSNumber *_reason;
 }
 
-@property(assign,copy) NSArray * peers;
-@property(assign,copy) NSNumber * reason;
+@property (copy) NSArray *peers;
+@property (copy) NSNumber *reason;
 
 - (id)bagKey;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

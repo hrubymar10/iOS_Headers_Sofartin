@@ -7,8 +7,8 @@
     PLSemaphore *_canSleepSemaphore;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * canSleepNotification;
-@property(assign,retain) PLSemaphore * canSleepSemaphore;
+@property (retain) PLEntryNotificationOperatorComposition *canSleepNotification;
+@property (retain) PLSemaphore *canSleepSemaphore;
 
 + (id)accountingGroupDefinitions;
 + (id)defaults;

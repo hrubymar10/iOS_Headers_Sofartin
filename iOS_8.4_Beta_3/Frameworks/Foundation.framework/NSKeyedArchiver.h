@@ -22,8 +22,8 @@
     id _visited;
 }
 
-@property(assign,readwrite) <NSKeyedArchiverDelegate> * delegate;
-@property(assign,readwrite) unsigned long long outputFormat;
+@property <NSKeyedArchiverDelegate> *delegate;
+@property unsigned long long outputFormat;
 
 + (id)_sp_secureArchivedDataWithRootObject:(id)arg1;
 + (bool)archiveRootObject:(id)arg1 toFile:(id)arg2;

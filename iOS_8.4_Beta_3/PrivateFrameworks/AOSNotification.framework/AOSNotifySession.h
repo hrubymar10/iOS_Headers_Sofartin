@@ -9,14 +9,14 @@
     NSObject<OS_dispatch_queue> *_xpcConnectionCreationQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id fmfAppPushMsgHandler;
-@property(assign,copy) id fmfAppPushTokenHandler;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSXPCConnection * xpcConnection;
-@property(assign,retain) NSObject<OS_dispatch_queue> * xpcConnectionCreationQueue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id fmfAppPushMsgHandler;
+@property (nonatomic, copy) id fmfAppPushTokenHandler;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *xpcConnectionCreationQueue;
 
 + (id)copyStoreAccount;
 + (id)sharedInstance;

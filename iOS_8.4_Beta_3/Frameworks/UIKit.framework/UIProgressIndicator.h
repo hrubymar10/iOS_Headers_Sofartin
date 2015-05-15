@@ -4,7 +4,7 @@
 
 @interface UIProgressIndicator : UIActivityIndicatorView
 
-@property(assign,readwrite) int progressIndicatorStyle;
+@property (nonatomic) int progressIndicatorStyle;
 
 + (struct CGSize { double x1; double x2; })size;
 

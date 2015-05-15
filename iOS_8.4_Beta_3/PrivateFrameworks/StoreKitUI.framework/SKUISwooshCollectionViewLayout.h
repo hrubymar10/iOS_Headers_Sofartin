@@ -8,9 +8,9 @@
     bool _snapsToItemCenters;
 }
 
-@property(assign,copy) UIColor * backgroundColor;
-@property(assign,readwrite) bool snapsToItemBoundaries;
-@property(assign,readwrite) bool snapsToItemCenters;
+@property (nonatomic, copy) UIColor *backgroundColor;
+@property (nonatomic) bool snapsToItemBoundaries;
+@property (nonatomic) bool snapsToItemCenters;
 
 + (Class)layoutAttributesClass;
 + (float)snapToBoundariesDecelerationRate;

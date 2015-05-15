@@ -4,12 +4,12 @@
 
 @interface SAMicroblogTwitterPostAuthor : SADomainObject
 
-@property(assign,readwrite) long long followersCount;
-@property(assign,copy) NSString * fullName;
-@property(assign,copy) NSURL * profileImageUrl;
-@property(assign,copy) NSString * screenName;
-@property(assign,copy) NSNumber * userId;
-@property(assign,readwrite) bool verified;
+@property (nonatomic) long long followersCount;
+@property (nonatomic, copy) NSString *fullName;
+@property (nonatomic, copy) NSURL *profileImageUrl;
+@property (nonatomic, copy) NSString *screenName;
+@property (nonatomic, copy) NSNumber *userId;
+@property (nonatomic) bool verified;
 
 + (id)twitterPostAuthor;
 + (id)twitterPostAuthorWithDictionary:(id)arg1 context:(id)arg2;

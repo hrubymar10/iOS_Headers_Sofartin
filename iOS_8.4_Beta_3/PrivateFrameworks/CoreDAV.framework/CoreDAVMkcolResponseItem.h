@@ -6,7 +6,7 @@
     NSMutableSet *_propStats;
 }
 
-@property(assign,retain) NSMutableSet * propStats;
+@property (nonatomic, retain) NSMutableSet *propStats;
 
 + (id)copyParseRules;
 

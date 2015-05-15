@@ -7,8 +7,8 @@
     long long _variant;
 }
 
-@property(assign,readonly) NSData * data;
-@property(assign,readonly) long long variant;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic, readonly) long long variant;
 
 + (struct CGImage { }*)_newBlackWallpaperImage;
 + (id)cachedWallpaperDataForVariant:(long long)arg1;

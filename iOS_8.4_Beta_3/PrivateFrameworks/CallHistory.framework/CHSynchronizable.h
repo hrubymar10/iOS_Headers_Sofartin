@@ -6,7 +6,7 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (readonly) NSObject<OS_dispatch_queue> *queue;
 
 - (void).cxx_destruct;
 - (void)execute:(id)arg1;

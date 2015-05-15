@@ -8,12 +8,12 @@
     GEOWaypointTyped *_waypoint;
 }
 
-@property(assign,readonly) bool hasLatLng;
-@property(assign,readonly) bool hasMapItemStorage;
-@property(assign,readonly) bool hasWaypoint;
-@property(assign,retain) GEOLatLng * latLng;
-@property(assign,retain) GEOMapItemStorage * mapItemStorage;
-@property(assign,retain) GEOWaypointTyped * waypoint;
+@property (nonatomic, readonly) bool hasLatLng;
+@property (nonatomic, readonly) bool hasMapItemStorage;
+@property (nonatomic, readonly) bool hasWaypoint;
+@property (nonatomic, retain) GEOLatLng *latLng;
+@property (nonatomic, retain) GEOMapItemStorage *mapItemStorage;
+@property (nonatomic, retain) GEOWaypointTyped *waypoint;
 
 + (id)composedWaypointForAddressString:(id)arg1 traits:(id)arg2 clientAttributes:(id)arg3 completionHandler:(id)arg4 networkActivityHandler:(id)arg5;
 + (id)composedWaypointForCoordinate:(struct { double x1; double x2; })arg1 addressDictionary:(id)arg2 placeName:(id)arg3 traits:(id)arg4 completionHandler:(id)arg5 networkActivityHandler:(id)arg6;

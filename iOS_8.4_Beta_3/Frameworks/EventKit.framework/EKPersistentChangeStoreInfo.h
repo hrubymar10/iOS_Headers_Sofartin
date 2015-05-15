@@ -8,9 +8,9 @@
     int _secondMinConsumedSequenceNumber;
 }
 
-@property(assign,retain) NSString * minConsumedClientIdentifier;
-@property(assign,readwrite) int minConsumedSequenceNumber;
-@property(assign,readwrite) int secondMinConsumedSequenceNumber;
+@property (nonatomic, retain) NSString *minConsumedClientIdentifier;
+@property (nonatomic) int minConsumedSequenceNumber;
+@property (nonatomic) int secondMinConsumedSequenceNumber;
 
 - (void)dealloc;
 - (id)description;

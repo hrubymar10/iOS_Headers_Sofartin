@@ -10,16 +10,16 @@
     <IKJSImpression> *_parentImpression;
 }
 
-@property(assign,readonly) NSArray * children;
-@property(assign,readonly) NSString * data;
-@property(assign,readonly) long long index;
-@property(assign,readwrite) long long indexInParent;
-@property(assign,copy) NSString * metricsData;
-@property(assign,retain) NSMutableArray * mutableChildren;
-@property(assign,retain) NSMutableArray * mutableTimestamps;
-@property(assign,readonly) id parent;
-@property(assign,readwrite) <IKJSImpression> * parentImpression;
-@property(assign,readonly) NSArray * timestamps;
+@property (nonatomic, readonly) NSArray *children;
+@property (nonatomic, readonly) NSString *data;
+@property (nonatomic, readonly) long long index;
+@property (nonatomic) long long indexInParent;
+@property (nonatomic, copy) NSString *metricsData;
+@property (nonatomic, retain) NSMutableArray *mutableChildren;
+@property (nonatomic, retain) NSMutableArray *mutableTimestamps;
+@property (nonatomic, readonly) id parent;
+@property (nonatomic) <IKJSImpression> *parentImpression;
+@property (nonatomic, readonly) NSArray *timestamps;
 
 - (void).cxx_destruct;
 - (void)addChild:(id)arg1;

@@ -15,16 +15,16 @@
     NSString *_simStatus;
 }
 
-@property(assign,retain) NSString * activeBand;
-@property(assign,retain) NSString * airplaneMode;
-@property(assign,retain) NSString * callStatus;
-@property(assign,retain) NSString * campedRat;
-@property(assign,retain) NSString * currentRat;
-@property(assign,retain) NSString * dataStatus;
-@property(assign,retain) NSString * preferredRat;
-@property(assign,retain) NSNumber * signalBars;
-@property(assign,retain) NSNumber * signalStrength;
-@property(assign,retain) NSString * simStatus;
+@property (retain) NSString *activeBand;
+@property (retain) NSString *airplaneMode;
+@property (retain) NSString *callStatus;
+@property (retain) NSString *campedRat;
+@property (retain) NSString *currentRat;
+@property (retain) NSString *dataStatus;
+@property (retain) NSString *preferredRat;
+@property (retain) NSNumber *signalBars;
+@property (retain) NSNumber *signalStrength;
+@property (retain) NSString *simStatus;
 
 + (id)entryEventPointDefinitionTelephonyActivity;
 

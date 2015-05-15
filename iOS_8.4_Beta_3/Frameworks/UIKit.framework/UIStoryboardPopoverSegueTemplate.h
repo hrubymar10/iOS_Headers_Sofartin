@@ -9,10 +9,10 @@
     unsigned long long _permittedArrowDirections;
 }
 
-@property(assign,retain) UIBarButtonItem * anchorBarButtonItem;
-@property(assign,retain) UIView * anchorView;
-@property(assign,copy) NSArray * passthroughViews;
-@property(assign,readwrite) unsigned long long permittedArrowDirections;
+@property (nonatomic, retain) UIBarButtonItem *anchorBarButtonItem;
+@property (nonatomic, retain) UIView *anchorView;
+@property (nonatomic, copy) NSArray *passthroughViews;
+@property (nonatomic) unsigned long long permittedArrowDirections;
 
 - (id)anchorBarButtonItem;
 - (id)anchorView;

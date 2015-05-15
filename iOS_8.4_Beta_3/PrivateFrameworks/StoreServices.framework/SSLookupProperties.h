@@ -9,14 +9,14 @@
     NSNumber *_timeoutInterval;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * keyProfile;
-@property(assign,readwrite) long long localizationStyle;
-@property(assign,copy) CLLocation * location;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSNumber * timeoutInterval;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *keyProfile;
+@property (nonatomic) long long localizationStyle;
+@property (nonatomic, copy) CLLocation *location;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSNumber *timeoutInterval;
 
 - (id)copyRequestParameters;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

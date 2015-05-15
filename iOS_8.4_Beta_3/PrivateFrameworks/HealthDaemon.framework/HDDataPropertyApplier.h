@@ -12,13 +12,13 @@
     unsigned long long _sourcePropertyIndex;
 }
 
-@property(assign,copy) id authorizationFilter;
-@property(assign,readonly) HDSQLiteDatabase * database;
-@property(assign,retain) HDMetadataValueStatement * metadataValueStatement;
-@property(assign,copy) NSArray * propertyOrder;
-@property(assign,copy) NSDictionary * propertySetters;
-@property(assign,retain) NSMutableDictionary * sourceByPersistentIDCache;
-@property(assign,readwrite) unsigned long long sourcePropertyIndex;
+@property (nonatomic, readonly, copy) id authorizationFilter;
+@property (nonatomic, readonly) HDSQLiteDatabase *database;
+@property (nonatomic, retain) HDMetadataValueStatement *metadataValueStatement;
+@property (nonatomic, readonly, copy) NSArray *propertyOrder;
+@property (nonatomic, readonly, copy) NSDictionary *propertySetters;
+@property (nonatomic, retain) NSMutableDictionary *sourceByPersistentIDCache;
+@property (nonatomic) unsigned long long sourcePropertyIndex;
 
 - (void).cxx_destruct;
 - (id)_sourceForPersistentID:(id)arg1 healthDaemon:(id)arg2 error:(id*)arg3;

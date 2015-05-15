@@ -11,12 +11,12 @@
     } _totalSize;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * links;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct CGSize { double x1; double x2; } totalSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *links;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } totalSize;
 
 - (void).cxx_destruct;
 - (void)dealloc;

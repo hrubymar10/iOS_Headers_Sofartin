@@ -6,7 +6,7 @@
     TNUIState *mUIState;
 }
 
-@property(assign,readonly) TNUIState * uiState;
+@property (nonatomic, readonly) TNUIState *uiState;
 
 - (void)dealloc;
 - (id)initFromUnarchiver:(id)arg1;

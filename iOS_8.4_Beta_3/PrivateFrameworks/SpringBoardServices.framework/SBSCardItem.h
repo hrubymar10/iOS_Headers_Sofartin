@@ -14,15 +14,15 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,copy) NSData * attachmentData;
-@property(assign,copy) NSString * body;
-@property(assign,copy) NSString * bundleName;
-@property(assign,copy) NSData * iconData;
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) bool requiresPasscode;
-@property(assign,copy) UIImage * thumbnail;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSDictionary * userInfo;
+@property (nonatomic, copy) NSData *attachmentData;
+@property (nonatomic, copy) NSString *body;
+@property (nonatomic, copy) NSString *bundleName;
+@property (nonatomic, copy) NSData *iconData;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic) bool requiresPasscode;
+@property (nonatomic, copy) UIImage *thumbnail;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSDictionary *userInfo;
 
 + (bool)supportsSecureCoding;
 

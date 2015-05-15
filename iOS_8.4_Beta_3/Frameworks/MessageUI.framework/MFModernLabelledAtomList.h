@@ -21,17 +21,17 @@
     bool _usePadDisplayStyle;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UILabel * label;
-@property(assign,retain) UIColor * labelTextColor;
-@property(getter=isLabelVisible,assign,readwrite) bool labelVisible;
-@property(assign,readwrite) double lineSpacing;
-@property(assign,readonly) unsigned long long numberOfRows;
-@property(assign,readwrite) bool primary;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool usePadDisplayStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UILabel *label;
+@property (nonatomic, retain) UIColor *labelTextColor;
+@property (getter=isLabelVisible, nonatomic) bool labelVisible;
+@property (nonatomic) double lineSpacing;
+@property (nonatomic, readonly) unsigned long long numberOfRows;
+@property (nonatomic) bool primary;
+@property (readonly) Class superclass;
+@property (nonatomic) bool usePadDisplayStyle;
 
 + (double)atomLineHeight;
 + (id)defaultLabelFont;

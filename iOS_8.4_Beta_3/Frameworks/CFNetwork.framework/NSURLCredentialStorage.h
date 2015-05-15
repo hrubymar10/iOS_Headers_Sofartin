@@ -6,7 +6,7 @@
     NSURLCredentialStorageInternal *_internal;
 }
 
-@property(assign,copy) NSDictionary * allCredentials;
+@property (readonly, copy) NSDictionary *allCredentials;
 
 + (id)sharedCredentialStorage;
 

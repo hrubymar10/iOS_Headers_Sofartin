@@ -9,8 +9,8 @@
     SBFWallpaperView *_wallpaperView;
 }
 
-@property(assign,retain) SBFLockScreenDateView * dateView;
-@property(assign,retain) SBFWallpaperView * wallpaperView;
+@property (nonatomic, retain) SBFLockScreenDateView *dateView;
+@property (nonatomic, retain) SBFWallpaperView *wallpaperView;
 
 - (void)_layoutDateView;
 - (void)_layoutMotionButton;

@@ -12,11 +12,11 @@
     <CalLogWriter> *_writer;
 }
 
-@property(assign,retain) NSMutableArray * accumulator;
-@property(assign,readwrite) unsigned long long accumulatorBufferSize;
-@property(assign,retain) CalLogFilter * filter;
-@property(assign,retain) NSMutableArray * subnodes;
-@property(assign,retain) <CalLogWriter> * writer;
+@property (nonatomic, retain) NSMutableArray *accumulator;
+@property (nonatomic) unsigned long long accumulatorBufferSize;
+@property (nonatomic, retain) CalLogFilter *filter;
+@property (nonatomic, retain) NSMutableArray *subnodes;
+@property (nonatomic, retain) <CalLogWriter> *writer;
 
 - (void).cxx_destruct;
 - (id)accumulator;

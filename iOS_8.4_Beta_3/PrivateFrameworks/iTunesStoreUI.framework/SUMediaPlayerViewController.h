@@ -10,12 +10,12 @@
     long long _playerState;
 }
 
-@property(assign,retain) SUClientInterface * clientInterface;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) SUMediaPlayerItem * mediaPlayerItem;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SUClientInterface *clientInterface;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) SUMediaPlayerItem *mediaPlayerItem;
+@property (readonly) Class superclass;
 
 + (bool)_URLIsITunesU:(id)arg1;
 + (void)_sendPingRequestsForURLs:(id)arg1 URLBagKey:(id)arg2 playerItem:(id)arg3;

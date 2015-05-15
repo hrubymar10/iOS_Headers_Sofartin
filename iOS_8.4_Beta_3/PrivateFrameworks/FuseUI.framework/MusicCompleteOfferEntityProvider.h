@@ -14,14 +14,14 @@
     <MusicEntityProviding> *_storeEntityProvider;
 }
 
-@property(assign,retain) MusicClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <MusicEntityProviding> * localEntityProvider;
-@property(assign,readwrite) bool shouldIncludeStoreCompleteOffer;
-@property(getter=isStoreCompleteOfferAvailable,assign,readonly) bool storeCompleteOfferAvailable;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) MusicClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <MusicEntityProviding> *localEntityProvider;
+@property (nonatomic) bool shouldIncludeStoreCompleteOffer;
+@property (getter=isStoreCompleteOfferAvailable, nonatomic, readonly) bool storeCompleteOfferAvailable;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_entityProviderDidInvalidateNotification:(id)arg1;

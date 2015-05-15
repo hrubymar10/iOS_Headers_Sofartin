@@ -10,8 +10,8 @@
     NSLock *_lock;
 }
 
-@property(assign,copy) id comparator;
-@property(assign,copy) id keyGenerator;
+@property (nonatomic, copy) id comparator;
+@property (nonatomic, copy) id keyGenerator;
 
 - (void)_nts_evictObject;
 - (void)_nts_setObject:(id)arg1 forKey:(id)arg2;

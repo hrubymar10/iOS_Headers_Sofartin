@@ -4,13 +4,13 @@
 
 @interface DOMGestureEvent : DOMUIEvent
 
-@property(assign,readonly) bool altKey;
-@property(assign,readonly) bool ctrlKey;
-@property(assign,readonly) bool metaKey;
-@property(assign,readonly) float rotation;
-@property(assign,readonly) float scale;
-@property(assign,readonly) bool shiftKey;
-@property(assign,readonly) <DOMEventTarget> * target;
+@property (readonly) bool altKey;
+@property (readonly) bool ctrlKey;
+@property (readonly) bool metaKey;
+@property (readonly) float rotation;
+@property (readonly) float scale;
+@property (readonly) bool shiftKey;
+@property (readonly) <DOMEventTarget> *target;
 
 - (bool)altKey;
 - (bool)ctrlKey;

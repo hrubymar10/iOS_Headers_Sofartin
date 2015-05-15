@@ -12,18 +12,18 @@
     double _width;
 }
 
-@property(assign,copy) NSAttributedString * attributedText;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double fontSize;
-@property(assign,readwrite) long long fontWeight;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class layoutClass;
-@property(assign,readwrite) long long numberOfLines;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
-@property(assign,readwrite) unsigned char textAlignment;
-@property(assign,readwrite) double width;
+@property (nonatomic, copy) NSAttributedString *attributedText;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double fontSize;
+@property (nonatomic) long long fontWeight;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) Class layoutClass;
+@property (nonatomic) long long numberOfLines;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic) unsigned char textAlignment;
+@property (nonatomic) double width;
 
 - (void).cxx_destruct;
 - (id)attributedText;

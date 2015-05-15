@@ -13,9 +13,9 @@
     NSString *_versionPath;
 }
 
-@property(assign,readwrite) unsigned long long cacheItemLimit;
-@property(assign,readwrite) bool lockOnRead;
-@property(assign,readonly) int version;
+@property (nonatomic) unsigned long long cacheItemLimit;
+@property (nonatomic) bool lockOnRead;
+@property (nonatomic, readonly) int version;
 
 - (struct CGImage { }*)_copyAndStoreImageForKey:(id)arg1 inGroup:(id)arg2 withSize:(struct CGSize { double x1; double x2; })arg3 format:(int)arg4 scale:(double)arg5 fillMem:(id)arg6 alternateCompletion:(id)arg7;
 - (id)_versionPath;

@@ -18,13 +18,13 @@
     bool _shouldSendFingerOffNotification;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SBUIBiometricEventMonitorDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long lockoutState;
-@property(getter=isMatchingEnabled,assign,readonly) bool matchingEnabled;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SBUIBiometricEventMonitorDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long lockoutState;
+@property (getter=isMatchingEnabled, nonatomic, readonly) bool matchingEnabled;
+@property (readonly) Class superclass;
 
 + (id)sharedInstance;
 

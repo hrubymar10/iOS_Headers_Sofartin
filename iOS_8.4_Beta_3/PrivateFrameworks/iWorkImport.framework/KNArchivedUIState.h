@@ -6,7 +6,7 @@
     KNUIState *mUIState;
 }
 
-@property(assign,readonly) KNUIState * uiState;
+@property (nonatomic, readonly) KNUIState *uiState;
 
 - (void)dealloc;
 - (id)initFromUnarchiver:(id)arg1;

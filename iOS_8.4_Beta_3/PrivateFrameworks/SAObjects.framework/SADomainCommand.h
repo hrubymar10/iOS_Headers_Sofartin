@@ -4,9 +4,9 @@
 
 @interface SADomainCommand : SABaseClientBoundCommand
 
-@property(assign,copy) NSURL * targetAppId;
-@property(assign,copy) NSURL * targetPluginId;
-@property(assign,copy) NSNumber * timeout;
+@property (nonatomic, copy) NSURL *targetAppId;
+@property (nonatomic, copy) NSURL *targetPluginId;
+@property (nonatomic, copy) NSNumber *timeout;
 
 + (id)domainCommand;
 + (id)domainCommandWithDictionary:(id)arg1 context:(id)arg2;

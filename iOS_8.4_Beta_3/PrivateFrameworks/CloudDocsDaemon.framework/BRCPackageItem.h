@@ -19,21 +19,21 @@
     int _type;
 }
 
-@property(assign,readonly) long long assetRank;
-@property(assign,readonly) NSData * contentSignature;
-@property(assign,readonly) unsigned long long fileID;
-@property(assign,readonly) BRCGenerationID * generationID;
-@property(assign,readonly) bool isDirectory;
-@property(assign,readonly) bool isFile;
-@property(assign,readonly) bool isSymlink;
-@property(assign,readonly) BOOL mode;
-@property(assign,readonly) long long mtime;
-@property(assign,readonly) unsigned long long packageDocumentID;
-@property(assign,readonly) NSString * pathInPackage;
-@property(assign,readonly) NSData * quarantineInfo;
-@property(assign,readonly) long long size;
-@property(assign,readonly) NSString * symlinkContent;
-@property(assign,readonly) int type;
+@property (nonatomic, readonly) long long assetRank;
+@property (nonatomic, readonly) NSData *contentSignature;
+@property (nonatomic, readonly) unsigned long long fileID;
+@property (nonatomic, readonly) BRCGenerationID *generationID;
+@property (nonatomic, readonly) bool isDirectory;
+@property (nonatomic, readonly) bool isFile;
+@property (nonatomic, readonly) bool isSymlink;
+@property (nonatomic, readonly) BOOL mode;
+@property (nonatomic, readonly) long long mtime;
+@property (nonatomic, readonly) unsigned long long packageDocumentID;
+@property (nonatomic, readonly) NSString *pathInPackage;
+@property (nonatomic, readonly) NSData *quarantineInfo;
+@property (nonatomic, readonly) long long size;
+@property (nonatomic, readonly) NSString *symlinkContent;
+@property (nonatomic, readonly) int type;
 
 + (bool)_deleteSnapshotAtPath:(id)arg1 error:(id*)arg2;
 + (bool)_rescanDirectoryInPackage:(id)arg1 error:(id*)arg2;

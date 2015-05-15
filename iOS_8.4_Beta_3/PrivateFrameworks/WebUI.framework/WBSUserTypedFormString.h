@@ -6,7 +6,7 @@
     NSString *_userTypedString;
 }
 
-@property(assign,readonly) NSString * userTypedString;
+@property (nonatomic, readonly) NSString *userTypedString;
 
 - (void).cxx_destruct;
 - (id)completion;

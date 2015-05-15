@@ -12,11 +12,11 @@
     RUTrackActionsViewController *_trackActionsViewController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUMiniPlayerCoordinatorDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUMiniPlayerCoordinatorDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_addStationFromItem:(id)arg1 usingArtist:(bool)arg2;

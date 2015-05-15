@@ -13,14 +13,14 @@
     double _travelStateScore;
 }
 
-@property(assign,readonly) unsigned long long currentTrafficDensity;
-@property(assign,readonly) bool hasTrafficIncidentOnRoute;
-@property(assign,readonly) unsigned long long historicTrafficDensity;
-@property(assign,readonly) int routeIncidentSignificance;
-@property(assign,readonly) NSString * routeIncidentStreetName;
-@property(assign,readonly) int routeIncidentType;
-@property(assign,readonly) unsigned long long travelState;
-@property(assign,readonly) double travelStateScore;
+@property (nonatomic, readonly) unsigned long long currentTrafficDensity;
+@property (nonatomic, readonly) bool hasTrafficIncidentOnRoute;
+@property (nonatomic, readonly) unsigned long long historicTrafficDensity;
+@property (nonatomic, readonly) int routeIncidentSignificance;
+@property (nonatomic, readonly) NSString *routeIncidentStreetName;
+@property (nonatomic, readonly) int routeIncidentType;
+@property (nonatomic, readonly) unsigned long long travelState;
+@property (nonatomic, readonly) double travelStateScore;
 
 - (void)addTrafficIncidentOfType:(int)arg1 withSignificance:(int)arg2 onStreet:(id)arg3;
 - (id)advice;

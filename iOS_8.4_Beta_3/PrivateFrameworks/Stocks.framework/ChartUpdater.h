@@ -9,7 +9,7 @@
     Stock *_stock;
 }
 
-@property(assign,readwrite) <ChartUpdaterDelegate> * delegate;
+@property (nonatomic) <ChartUpdaterDelegate> *delegate;
 
 + (id)_rangeStringForInterval:(long long)arg1;
 

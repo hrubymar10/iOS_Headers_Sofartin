@@ -11,10 +11,10 @@
     float _variancePerSecond;
 }
 
-@property(assign,readwrite) bool hasSearchWidth;
-@property(assign,readwrite) bool hasVariancePerSecond;
-@property(assign,readwrite) float searchWidth;
-@property(assign,readwrite) float variancePerSecond;
+@property (nonatomic) bool hasSearchWidth;
+@property (nonatomic) bool hasVariancePerSecond;
+@property (nonatomic) float searchWidth;
+@property (nonatomic) float variancePerSecond;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

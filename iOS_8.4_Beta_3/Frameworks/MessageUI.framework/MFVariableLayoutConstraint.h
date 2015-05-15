@@ -9,8 +9,8 @@
     double _medianValue;
 }
 
-@property(assign,readwrite) id interpolationFormula;
-@property(assign,readwrite) double medianValue;
+@property (nonatomic) id interpolationFormula;
+@property (nonatomic) double medianValue;
 
 + (long long)_medianContentSizeIndex;
 + (id)medianContentSizeCategory;

@@ -10,9 +10,9 @@
     NSDate *_time;
 }
 
-@property(assign,readwrite) double distanceFromDestination;
-@property(assign,readonly) double penalty;
-@property(assign,retain) NSDate * time;
+@property (nonatomic) double distanceFromDestination;
+@property (nonatomic, readonly) double penalty;
+@property (nonatomic, retain) NSDate *time;
 
 - (double)distanceFromDestination;
 - (double)penalty;

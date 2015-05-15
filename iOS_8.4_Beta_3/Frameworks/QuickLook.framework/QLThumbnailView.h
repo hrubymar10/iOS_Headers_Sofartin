@@ -29,11 +29,11 @@
     } unselectedFrame;
 }
 
-@property(assign,readwrite) bool alwaysVisible;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) long long pageNumber;
-@property(assign,retain) QLThumbnailOperation * thumbnailOperation;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } unselectedFrame;
+@property bool alwaysVisible;
+@property (retain) UIImage *image;
+@property long long pageNumber;
+@property (retain) QLThumbnailOperation *thumbnailOperation;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } unselectedFrame;
 
 - (bool)alwaysVisible;
 - (void)dealloc;

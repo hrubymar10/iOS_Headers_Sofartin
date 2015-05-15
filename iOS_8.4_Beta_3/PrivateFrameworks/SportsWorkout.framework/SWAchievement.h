@@ -4,8 +4,8 @@
 
 @interface SWAchievement : NSManagedObject
 
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * sensorSerialNumber;
-@property(assign,retain) NSDecimalNumber * value;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *sensorSerialNumber;
+@property (nonatomic, retain) NSDecimalNumber *value;
 
 @end

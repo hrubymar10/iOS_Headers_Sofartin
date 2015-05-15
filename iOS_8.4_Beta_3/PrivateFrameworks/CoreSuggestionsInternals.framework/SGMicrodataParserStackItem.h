@@ -9,10 +9,10 @@
     NSArray *_textConsumers;
 }
 
-@property(assign,readonly) SGMicrodataDocument * document;
-@property(assign,readonly) NSArray * itemScopes;
-@property(assign,readonly) SGMicrodataParserStackItem * parent;
-@property(assign,readonly) NSArray * textConsumers;
+@property (readonly) SGMicrodataDocument *document;
+@property (readonly) NSArray *itemScopes;
+@property (readonly) SGMicrodataParserStackItem *parent;
+@property (readonly) NSArray *textConsumers;
 
 - (void).cxx_destruct;
 - (id)document;

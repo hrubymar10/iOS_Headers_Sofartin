@@ -46,15 +46,15 @@
     int _xlImportDateMode;
 }
 
-@property(assign,retain) NSDate * currentDate;
-@property(assign,retain) <TSKMultiTableRemapping> * currentTableIdRemapper;
-@property(assign,retain) NSTimeZone * currentTimeZone;
-@property(assign,readwrite) unsigned long long documentRandomSeed;
-@property(assign,readwrite) unsigned long long loadFromFileVersion;
-@property(assign,readonly) bool shouldAbortRecalculation;
-@property(assign,retain) TSCERewriteTableIDInfo * tableIDHistory;
-@property(assign,readwrite) struct __CFUUID { }* transposingTableID;
-@property(assign,readonly) TSCEUUidReferenceMap * uuidReferenceMap;
+@property (retain) NSDate *currentDate;
+@property (retain) <TSKMultiTableRemapping> *currentTableIdRemapper;
+@property (retain) NSTimeZone *currentTimeZone;
+@property unsigned long long documentRandomSeed;
+@property (nonatomic) unsigned long long loadFromFileVersion;
+@property (readonly) bool shouldAbortRecalculation;
+@property (readonly, retain) TSCERewriteTableIDInfo *tableIDHistory;
+@property struct __CFUUID { }*transposingTableID;
+@property (readonly) TSCEUUidReferenceMap *uuidReferenceMap;
 
 + (unsigned long long)generateRandomSeed;
 + (bool)localVariablesEnabled;

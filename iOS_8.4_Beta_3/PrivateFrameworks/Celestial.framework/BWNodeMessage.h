@@ -7,8 +7,8 @@
     int _type;
 }
 
-@property(assign,readonly) int category;
-@property(assign,readonly) int type;
+@property (readonly) int category;
+@property (readonly) int type;
 
 - (int)category;
 - (int)type;

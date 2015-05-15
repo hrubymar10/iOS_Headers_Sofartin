@@ -51,13 +51,13 @@
     bool _usesLightContentOverHeader;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long options;
-@property(assign,readwrite) bool shouldAutomaticallySelectMyMusicSegment;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long options;
+@property (nonatomic) bool shouldAutomaticallySelectMyMusicSegment;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_calculateCollapsed;

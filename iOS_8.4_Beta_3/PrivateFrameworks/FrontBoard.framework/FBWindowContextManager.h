@@ -9,8 +9,8 @@
     NSMutableOrderedSet *_orderedContexts;
 }
 
-@property(assign,readwrite) <FBWindowContextManagerDelegate> * delegate;
-@property(assign,copy) NSString * identifier;
+@property (nonatomic) <FBWindowContextManagerDelegate> *delegate;
+@property (nonatomic, copy) NSString *identifier;
 
 - (void)_enumerateObserversWithBlock:(id)arg1;
 - (void)addContext:(id)arg1;

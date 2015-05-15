@@ -6,7 +6,7 @@
     NSNumber *_number;
 }
 
-@property(assign,retain) NSNumber * number;
+@property (nonatomic, retain) NSNumber *number;
 
 + (id)numberWithInt:(int)arg1;
 + (id)numberWithInteger:(long long)arg1;

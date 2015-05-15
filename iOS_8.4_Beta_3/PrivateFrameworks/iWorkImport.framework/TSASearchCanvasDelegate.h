@@ -7,11 +7,11 @@
     TSKDocumentRoot *mDocumentRoot;
 }
 
-@property(assign,readonly) TSDCanvas * canvas;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) TSDCanvas *canvas;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)canvas;
 - (id)canvasSelectionPathForInfo:(id)arg1;

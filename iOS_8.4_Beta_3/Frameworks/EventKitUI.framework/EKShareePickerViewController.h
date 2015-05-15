@@ -7,12 +7,12 @@
     EKCalendarShareePicker *_picker;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <EKShareePickerViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * sharees;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <EKShareePickerViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *sharees;
+@property (readonly) Class superclass;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 

@@ -6,7 +6,7 @@
     id _descriptor;
 }
 
-@property(assign,copy) id descriptor;
+@property (nonatomic, copy) id descriptor;
 
 + (id)ruleWithDescriptor:(id)arg1;
 

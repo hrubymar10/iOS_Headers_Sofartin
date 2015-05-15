@@ -14,14 +14,14 @@
     double _startDate;
 }
 
-@property(assign,readwrite) long long dataType;
-@property(assign,readwrite) double endDate;
-@property(assign,readwrite) bool hasDataType;
-@property(assign,readwrite) bool hasEndDate;
-@property(assign,readonly) bool hasObject;
-@property(assign,readwrite) bool hasStartDate;
-@property(assign,retain) HDCodableObject * object;
-@property(assign,readwrite) double startDate;
+@property (nonatomic) long long dataType;
+@property (nonatomic) double endDate;
+@property (nonatomic) bool hasDataType;
+@property (nonatomic) bool hasEndDate;
+@property (nonatomic, readonly) bool hasObject;
+@property (nonatomic) bool hasStartDate;
+@property (nonatomic, retain) HDCodableObject *object;
+@property (nonatomic) double startDate;
 
 - (void).cxx_destruct;
 - (id)_decodedObjectTypeOfClass:(Class)arg1;

@@ -12,13 +12,13 @@
     long long _settingsID;
 }
 
-@property(assign,readonly) NSArray * connections;
-@property(assign,readonly) AVWeakReferencingDelegateStorage * delegateStorage;
-@property(assign,retain) NSArray * metadata;
-@property(assign,readonly) NSURL * outputFileURL;
-@property(getter=isPaused,assign,readwrite) bool paused;
-@property(getter=isRecording,assign,readwrite) bool recording;
-@property(assign,readonly) long long settingsID;
+@property (readonly) NSArray *connections;
+@property (readonly) AVWeakReferencingDelegateStorage *delegateStorage;
+@property (retain) NSArray *metadata;
+@property (readonly) NSURL *outputFileURL;
+@property (getter=isPaused, nonatomic) bool paused;
+@property (getter=isRecording, nonatomic) bool recording;
+@property (readonly) long long settingsID;
 
 + (id)wrapperWithURL:(id)arg1 delegate:(id)arg2 settingsID:(long long)arg3 connections:(id)arg4;
 

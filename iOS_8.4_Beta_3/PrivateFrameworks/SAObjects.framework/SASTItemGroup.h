@@ -4,7 +4,7 @@
 
 @interface SASTItemGroup : SAUISnippet
 
-@property(assign,copy) NSArray * templateItems;
+@property (nonatomic, copy) NSArray *templateItems;
 
 + (id)itemGroup;
 + (id)itemGroupWithDictionary:(id)arg1 context:(id)arg2;

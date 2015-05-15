@@ -20,17 +20,17 @@
     unsigned long long _type;
 }
 
-@property(assign,retain) CADisplay * caDisplay;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double orientation;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } referenceBounds;
-@property(assign,readwrite) double scale;
-@property(assign,readwrite) unsigned int seed;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) long long tags;
-@property(assign,readonly) unsigned long long type;
+@property (nonatomic, readonly, retain) CADisplay *caDisplay;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double orientation;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } referenceBounds;
+@property (nonatomic) double scale;
+@property (nonatomic) unsigned int seed;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) long long tags;
+@property (nonatomic, readonly) unsigned long long type;
 
 + (id)_CADisplayForId:(unsigned int)arg1;
 + (bool)supportsSecureCoding;

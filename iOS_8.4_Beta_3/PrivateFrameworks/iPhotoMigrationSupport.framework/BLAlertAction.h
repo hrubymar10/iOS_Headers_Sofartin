@@ -7,8 +7,8 @@
     NSString *_name;
 }
 
-@property(assign,readonly) id block;
-@property(assign,readonly) NSString * name;
+@property (readonly) id block;
+@property (readonly) NSString *name;
 
 + (id)actionWithName:(id)arg1 andBlock:(id)arg2;
 + (id)cancelAction;

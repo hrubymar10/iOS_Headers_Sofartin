@@ -9,10 +9,10 @@
     NSString *_searchTerm;
 }
 
-@property(assign,retain) SSMetricsConfiguration * metricsConfiguration;
-@property(assign,retain) SSMetricsPageEvent * metricsPageEvent;
-@property(assign,copy) NSArray * resultCategories;
-@property(assign,copy) NSString * searchTerm;
+@property (nonatomic, retain) SSMetricsConfiguration *metricsConfiguration;
+@property (nonatomic, retain) SSMetricsPageEvent *metricsPageEvent;
+@property (nonatomic, copy) NSArray *resultCategories;
+@property (nonatomic, copy) NSString *searchTerm;
 
 - (void).cxx_destruct;
 - (id)metricsConfiguration;

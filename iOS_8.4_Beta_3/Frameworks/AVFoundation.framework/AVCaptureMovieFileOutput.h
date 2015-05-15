@@ -6,8 +6,8 @@
     AVCaptureMovieFileOutputInternal *_internal;
 }
 
-@property(assign,copy) NSArray * metadata;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } movieFragmentInterval;
+@property (nonatomic, copy) NSArray *metadata;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } movieFragmentInterval;
 
 + (id)alloc;
 + (bool)consolidateMovieFragmentsInFile:(id)arg1 error:(id*)arg2;

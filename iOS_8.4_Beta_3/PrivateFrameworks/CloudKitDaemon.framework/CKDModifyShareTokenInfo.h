@@ -9,10 +9,10 @@
     NSData *_shortSharingTokenHashData;
 }
 
-@property(assign,retain) NSString * baseToken;
-@property(assign,retain) NSData * encryptedFullTokenData;
-@property(assign,retain) CKShareID * shareID;
-@property(assign,retain) NSData * shortSharingTokenHashData;
+@property (nonatomic, retain) NSString *baseToken;
+@property (nonatomic, retain) NSData *encryptedFullTokenData;
+@property (nonatomic, retain) CKShareID *shareID;
+@property (nonatomic, retain) NSData *shortSharingTokenHashData;
 
 - (void).cxx_destruct;
 - (id)baseToken;

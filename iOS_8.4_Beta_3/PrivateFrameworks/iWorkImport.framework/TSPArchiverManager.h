@@ -20,7 +20,7 @@
     } _flags;
 }
 
-@property(assign,retain) TSPDescriptionGenerator * descriptionGenerator;
+@property (nonatomic, retain) TSPDescriptionGenerator *descriptionGenerator;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

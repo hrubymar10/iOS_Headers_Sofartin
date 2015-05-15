@@ -7,8 +7,8 @@
     NSString *_intarrayTableName;
 }
 
-@property(assign,readwrite) struct sqlite3_intarray { }* intarrayTable;
-@property(assign,retain) NSString * intarrayTableName;
+@property struct sqlite3_intarray { }*intarrayTable;
+@property (retain) NSString *intarrayTableName;
 
 - (void)dealloc;
 - (struct sqlite3_intarray { }*)intarrayTable;

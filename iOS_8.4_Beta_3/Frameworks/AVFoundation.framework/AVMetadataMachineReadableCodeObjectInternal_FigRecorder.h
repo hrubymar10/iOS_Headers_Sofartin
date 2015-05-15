@@ -9,10 +9,10 @@
     NSString *stringValue;
 }
 
-@property(assign,retain) NSDictionary * basicDescriptor;
-@property(assign,retain) NSArray * corners;
-@property(assign,readwrite) bool decoded;
-@property(assign,retain) NSString * stringValue;
+@property (retain) NSDictionary *basicDescriptor;
+@property (retain) NSArray *corners;
+@property bool decoded;
+@property (retain) NSString *stringValue;
 
 - (id)basicDescriptor;
 - (id)corners;

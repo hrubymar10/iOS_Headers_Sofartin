@@ -8,9 +8,9 @@
     NSDecimalNumber *_value;
 }
 
-@property(assign,retain) NSString * distanceUnits;
-@property(assign,retain) NSDecimalNumber * repeatInterval;
-@property(assign,retain) NSDecimalNumber * value;
+@property (nonatomic, retain) NSString *distanceUnits;
+@property (nonatomic, retain) NSDecimalNumber *repeatInterval;
+@property (nonatomic, retain) NSDecimalNumber *value;
 
 + (id)targetWithValue:(id)arg1 repeatInterval:(id)arg2 selector:(SEL)arg3 distanceUnits:(id)arg4;
 

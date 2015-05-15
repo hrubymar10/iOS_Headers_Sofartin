@@ -6,15 +6,15 @@
     void *_impl;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) AVAudioEngine * engine;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) AVAudioTime * lastRenderTime;
-@property(assign,readonly) unsigned long long numberOfInputs;
-@property(assign,readonly) unsigned long long numberOfOutputs;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) float volume;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) AVAudioEngine *engine;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) AVAudioTime *lastRenderTime;
+@property (nonatomic, readonly) unsigned long long numberOfInputs;
+@property (nonatomic, readonly) unsigned long long numberOfOutputs;
+@property (readonly) Class superclass;
+@property (nonatomic) float volume;
 
 - (struct OpaqueAudioComponentInstance { }*)audioUnit;
 - (id)clock;

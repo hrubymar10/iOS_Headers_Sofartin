@@ -24,11 +24,11 @@
     } _submittedQueueLock;
 }
 
-@property(assign,readwrite) int backgroundTrackingPID;
-@property(assign,readwrite) bool executionEnabled;
-@property(assign,copy) NSString * label;
-@property(getter=isProfilingEnabled,assign,readwrite) bool profilingEnabled;
-@property(assign,readwrite) bool skipRender;
+@property int backgroundTrackingPID;
+@property bool executionEnabled;
+@property (copy) NSString *label;
+@property (getter=isProfilingEnabled) bool profilingEnabled;
+@property bool skipRender;
 
 - (void)_submitAvailableCommandBuffers;
 - (int)backgroundTrackingPID;

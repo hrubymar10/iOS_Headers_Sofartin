@@ -57,11 +57,11 @@
     double _triggerThreshold;
 }
 
-@property(assign,readonly) double lastScore;
-@property(assign,readonly) unsigned long long sampleCount;
-@property(assign,readonly) unsigned long long sampleCountAtEndOfTrigger;
-@property(assign,readonly) unsigned long long sampleCountAtStartOfTrigger;
-@property(assign,readonly) unsigned long long samplerate;
+@property (readonly) double lastScore;
+@property (readonly) unsigned long long sampleCount;
+@property (readonly) unsigned long long sampleCountAtEndOfTrigger;
+@property (readonly) unsigned long long sampleCountAtStartOfTrigger;
+@property (readonly) unsigned long long samplerate;
 
 + (void)initialize;
 

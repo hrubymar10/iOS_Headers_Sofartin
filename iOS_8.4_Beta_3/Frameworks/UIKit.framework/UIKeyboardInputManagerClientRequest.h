@@ -7,8 +7,8 @@
     NSInvocation *_invocation;
 }
 
-@property(assign,readwrite) unsigned long long errorCount;
-@property(assign,readonly) NSInvocation * invocation;
+@property (nonatomic) unsigned long long errorCount;
+@property (nonatomic, readonly) NSInvocation *invocation;
 
 + (id)untargetedInvocationWithInvocation:(id)arg1 withCompletion:(bool)arg2;
 

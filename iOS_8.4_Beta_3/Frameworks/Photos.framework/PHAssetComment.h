@@ -17,24 +17,24 @@
     bool _isMyComment;
 }
 
-@property(assign,readonly) bool canBeDeletedByUser;
-@property(assign,readonly) NSString * cloudGUID;
-@property(assign,readonly) NSDate * commentClientDate;
-@property(assign,readonly) NSDate * commentDate;
-@property(assign,readonly) NSString * commentText;
-@property(assign,readonly) NSString * commenterDisplayName;
-@property(assign,readonly) NSString * commenterEmail;
-@property(assign,readonly) NSString * commenterFirstName;
-@property(assign,readonly) NSString * commenterFullName;
-@property(assign,readonly) NSString * commenterHashedPersonID;
-@property(assign,readonly) NSString * commenterLastName;
-@property(assign,readonly) bool isBatchComment;
-@property(assign,readonly) bool isCaption;
-@property(assign,readonly) bool isDeletable;
-@property(assign,readonly) bool isInterestingForAlbumsSorting;
-@property(assign,readonly) bool isInterestingToUser;
-@property(assign,readonly) bool isLike;
-@property(assign,readonly) bool isMyComment;
+@property (nonatomic, readonly) bool canBeDeletedByUser;
+@property (nonatomic, readonly) NSString *cloudGUID;
+@property (nonatomic, readonly) NSDate *commentClientDate;
+@property (nonatomic, readonly) NSDate *commentDate;
+@property (nonatomic, readonly) NSString *commentText;
+@property (nonatomic, readonly) NSString *commenterDisplayName;
+@property (nonatomic, readonly) NSString *commenterEmail;
+@property (nonatomic, readonly) NSString *commenterFirstName;
+@property (nonatomic, readonly) NSString *commenterFullName;
+@property (nonatomic, readonly) NSString *commenterHashedPersonID;
+@property (nonatomic, readonly) NSString *commenterLastName;
+@property (nonatomic, readonly) bool isBatchComment;
+@property (nonatomic, readonly) bool isCaption;
+@property (nonatomic, readonly) bool isDeletable;
+@property (nonatomic, readonly) bool isInterestingForAlbumsSorting;
+@property (nonatomic, readonly) bool isInterestingToUser;
+@property (nonatomic, readonly) bool isLike;
+@property (nonatomic, readonly) bool isMyComment;
 
 + (id)managedEntityName;
 + (id)propertiesToFetchWithHint:(unsigned long long)arg1;

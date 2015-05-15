@@ -14,12 +14,12 @@
     int mRenderAsTokenType;
 }
 
-@property(assign,readwrite) <TSTCanvasReferenceProvider> * canvasReferenceProvider;
-@property(assign,retain) NSString * completionText;
-@property(assign,retain) TSTReferenceNode * editingReferenceNode;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } prefixRange;
-@property(assign,retain) TSUColor * referenceColor;
-@property(assign,readonly) int renderAsTokenType;
+@property (nonatomic) <TSTCanvasReferenceProvider> *canvasReferenceProvider;
+@property (nonatomic, retain) NSString *completionText;
+@property (nonatomic, retain) TSTReferenceNode *editingReferenceNode;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } prefixRange;
+@property (nonatomic, retain) TSUColor *referenceColor;
+@property (nonatomic, readonly) int renderAsTokenType;
 
 - (id).cxx_construct;
 - (id)canvasReferenceProvider;

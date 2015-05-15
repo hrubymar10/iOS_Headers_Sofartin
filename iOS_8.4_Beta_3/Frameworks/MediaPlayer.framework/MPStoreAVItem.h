@@ -17,8 +17,8 @@
     MPStreamingDownloadSession *_streamingDownloadSession;
 }
 
-@property(assign,readonly) unsigned long long options;
-@property(assign,readonly) MPMediaPlaybackItemMetadata * playbackItemMetadata;
+@property (nonatomic, readonly) unsigned long long options;
+@property (nonatomic, readonly) MPMediaPlaybackItemMetadata *playbackItemMetadata;
 
 + (id)_assetURLForCachedLocalPlaybackAssetFilePathForPlaybackItemMetadata:(id)arg1 withMinimumAssetQuality:(unsigned long long)arg2 assetOptions:(id)arg3 returningProtectionType:(unsigned long long*)arg4 assetQuality:(unsigned long long*)arg5;
 + (unsigned long long)_preferredAssetQualityForCurrentNetworkConditions;

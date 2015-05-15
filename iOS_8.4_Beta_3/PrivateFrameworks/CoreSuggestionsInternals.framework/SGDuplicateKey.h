@@ -8,10 +8,10 @@
     SGDuplicateKey *_parentKey;
 }
 
-@property(assign,readonly) NSString * compositeHash;
-@property(assign,readonly) NSObject<SGEntityKey> * entityKey;
-@property(assign,readonly) long long entityType;
-@property(assign,readonly) SGDuplicateKey * parentKey;
+@property (nonatomic, readonly) NSString *compositeHash;
+@property (nonatomic, readonly) NSObject<SGEntityKey> *entityKey;
+@property (nonatomic, readonly) long long entityType;
+@property (nonatomic, readonly) SGDuplicateKey *parentKey;
 
 + (id)duplicateKeyForCuratedContactWithExternalId:(int)arg1;
 + (id)duplicateKeyForCuratedEventWithExternalID:(id)arg1;

@@ -7,8 +7,8 @@
     bool _selected;
 }
 
-@property(getter=isSelected,assign,readonly) bool selected;
-@property(assign,readonly) SKUIActionsViewElement * swipeActions;
+@property (getter=isSelected, nonatomic, readonly) bool selected;
+@property (nonatomic, readonly) SKUIActionsViewElement *swipeActions;
 
 - (id)applyUpdatesWithElement:(id)arg1;
 - (void)enumerateChildrenUsingBlock:(id)arg1;

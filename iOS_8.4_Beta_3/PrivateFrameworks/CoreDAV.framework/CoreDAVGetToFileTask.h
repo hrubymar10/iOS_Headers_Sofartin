@@ -6,7 +6,7 @@
     NSFileHandle *_destinationFile;
 }
 
-@property(assign,retain) NSFileHandle * destinationFile;
+@property (nonatomic, retain) NSFileHandle *destinationFile;
 
 - (id)copyDefaultParserForContentType:(id)arg1;
 - (void)dealloc;

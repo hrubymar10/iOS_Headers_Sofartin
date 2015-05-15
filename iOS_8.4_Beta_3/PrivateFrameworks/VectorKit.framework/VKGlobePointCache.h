@@ -6,7 +6,7 @@
     VKClassicGlobeCanvas *_canvas;
 }
 
-@property(assign,readwrite) VKClassicGlobeCanvas * canvas;
+@property (nonatomic) VKClassicGlobeCanvas *canvas;
 
 - (id)addHandleAtCoordinate:(struct { double x1; double x2; })arg1 withHighPrecision:(bool)arg2;
 - (id)canvas;

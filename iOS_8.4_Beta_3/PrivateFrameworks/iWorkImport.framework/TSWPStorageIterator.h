@@ -14,7 +14,7 @@
     TSWPStorage *_storage;
 }
 
-@property(assign,retain) NSCharacterSet * markers;
+@property (nonatomic, retain) NSCharacterSet *markers;
 
 - (void)addAttributeRangeProvider:(int)arg1;
 - (void)addLocationProvider:(id)arg1;

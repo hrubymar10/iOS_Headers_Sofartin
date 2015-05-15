@@ -7,7 +7,7 @@
     NSMutableString *_plainString;
 }
 
-@property(assign,readonly) NSString * plainString;
+@property (nonatomic, readonly) NSString *plainString;
 
 - (void)dealloc;
 - (id)initWithAttributedString:(id)arg1;

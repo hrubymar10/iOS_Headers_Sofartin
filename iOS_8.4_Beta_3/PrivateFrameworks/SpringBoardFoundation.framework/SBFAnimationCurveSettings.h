@@ -14,9 +14,9 @@
     unsigned long long _curve;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } controlPoint1;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } controlPoint2;
-@property(assign,readwrite) unsigned long long curve;
+@property (nonatomic) struct CGPoint { double x1; double x2; } controlPoint1;
+@property (nonatomic) struct CGPoint { double x1; double x2; } controlPoint2;
+@property (nonatomic) unsigned long long curve;
 
 + (id)_rowsRelativeToKeyPath:(id)arg1;
 + (id)settingsControllerModule;

@@ -4,8 +4,8 @@
 
 @interface SASTTemplatePercentageRating : SASTTemplateRating
 
-@property(assign,retain) SAUILocalImageResource * localImageResource;
-@property(assign,retain) SAUIDecoratedText * value;
+@property (nonatomic, retain) SAUILocalImageResource *localImageResource;
+@property (nonatomic, retain) SAUIDecoratedText *value;
 
 + (id)templatePercentageRating;
 + (id)templatePercentageRatingWithDictionary:(id)arg1 context:(id)arg2;

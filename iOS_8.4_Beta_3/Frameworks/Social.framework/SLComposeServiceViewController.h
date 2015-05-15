@@ -44,24 +44,24 @@
     bool _wasPresented;
 }
 
-@property(assign,retain) UIViewController * autoCompletionViewController;
-@property(assign,retain) NSNumber * charactersRemaining;
-@property(assign,retain) NSMutableArray * constraints;
-@property(assign,readonly) NSString * contentText;
-@property(assign,retain) SLSheetContentView * contentView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long maxImageAttachmentSize;
-@property(assign,retain) SLSheetNavigationController * navigationController;
-@property(assign,copy) NSString * placeholder;
-@property(assign,readwrite) bool preventSheetPositionChanges;
-@property(assign,retain) SLSheetRootViewController * sheetRootViewController;
-@property(assign,readonly) UIView * sheetView;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool suppressKeyboard;
-@property(assign,readonly) UITextView * textView;
-@property(assign,readonly) bool wasPresented;
+@property (nonatomic, retain) UIViewController *autoCompletionViewController;
+@property (nonatomic, retain) NSNumber *charactersRemaining;
+@property (retain) NSMutableArray *constraints;
+@property (nonatomic, readonly) NSString *contentText;
+@property (nonatomic, retain) SLSheetContentView *contentView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long maxImageAttachmentSize;
+@property (nonatomic, retain) SLSheetNavigationController *navigationController;
+@property (nonatomic, copy) NSString *placeholder;
+@property (nonatomic) bool preventSheetPositionChanges;
+@property (nonatomic, retain) SLSheetRootViewController *sheetRootViewController;
+@property (readonly) UIView *sheetView;
+@property (readonly) Class superclass;
+@property (nonatomic) bool suppressKeyboard;
+@property (nonatomic, readonly) UITextView *textView;
+@property (readonly) bool wasPresented;
 
 + (id)_imageAttachmentLoadDownsamplePreviewQueue;
 + (bool)_preventsAppearanceProxyCustomization;

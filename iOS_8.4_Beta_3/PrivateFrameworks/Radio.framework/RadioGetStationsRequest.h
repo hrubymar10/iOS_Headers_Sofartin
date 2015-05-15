@@ -12,11 +12,11 @@
     long long _resultsOffset;
 }
 
-@property(assign,readonly) SSMetricsConfiguration * metricsConfiguration;
-@property(assign,copy) SSMetricsPageEvent * metricsPageEvent;
-@property(assign,readwrite) long long numberOfResults;
-@property(assign,readonly) long long parentNodeID;
-@property(assign,readwrite) long long resultsOffset;
+@property (nonatomic, readonly) SSMetricsConfiguration *metricsConfiguration;
+@property (nonatomic, readonly, copy) SSMetricsPageEvent *metricsPageEvent;
+@property (nonatomic) long long numberOfResults;
+@property (nonatomic, readonly) long long parentNodeID;
+@property (nonatomic) long long resultsOffset;
 
 - (void).cxx_destruct;
 - (id)_rootTreeNodeByApplyingResponse:(id)arg1 returningError:(id*)arg2;

@@ -13,9 +13,9 @@
     id _verificationRequestHandler;
 }
 
-@property(assign,retain) UIImage * passSnapshot;
-@property(assign,readwrite) <PKPaymentSetupViewControllerDelegate> * setupDelegate;
-@property(assign,copy) id verificationRequestHandler;
+@property (nonatomic, retain) UIImage *passSnapshot;
+@property (nonatomic) <PKPaymentSetupViewControllerDelegate> *setupDelegate;
+@property (nonatomic, copy) id verificationRequestHandler;
 
 - (id)_detailTextLabelForChanne:(id)arg1;
 - (void)_disableCells;

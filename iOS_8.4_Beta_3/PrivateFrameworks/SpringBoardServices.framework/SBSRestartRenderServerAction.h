@@ -4,7 +4,7 @@
 
 @interface SBSRestartRenderServerAction : BSAction
 
-@property(assign,readonly) NSURL * targetURL;
+@property (nonatomic, readonly) NSURL *targetURL;
 
 + (id)restartActionWithTargetRelaunchURL:(id)arg1;
 

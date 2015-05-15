@@ -10,7 +10,7 @@
     NSArray *_targets;
 }
 
-@property(assign,readwrite) int curXPCMessagePriority;
+@property (nonatomic) int curXPCMessagePriority;
 
 - (int)curXPCMessagePriority;
 - (void)dealloc;

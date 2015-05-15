@@ -13,18 +13,18 @@
     NSTimeZone *_timeZone;
 }
 
-@property(assign,copy) NSDate * date;
-@property(assign,readonly) UILabel * dateLabel;
-@property(assign,retain) UIFont * font;
-@property(assign,readonly) bool hasTimeDesignator;
-@property(assign,readwrite) bool hideTimeDesignator;
-@property(assign,readwrite) <MTDateLabelObserver> * observer;
-@property(assign,readwrite) double paddingFromTimeToDesignator;
-@property(assign,retain) UIColor * textColor;
-@property(assign,readwrite) long long timeDesignatorBaselineAdjustment;
-@property(assign,retain) UIFont * timeDesignatorFont;
-@property(assign,readonly) UILabel * timeDesignatorLabel;
-@property(assign,retain) NSTimeZone * timeZone;
+@property (nonatomic, copy) NSDate *date;
+@property (nonatomic, readonly) UILabel *dateLabel;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic, readonly) bool hasTimeDesignator;
+@property (nonatomic) bool hideTimeDesignator;
+@property (nonatomic) <MTDateLabelObserver> *observer;
+@property (nonatomic) double paddingFromTimeToDesignator;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic) long long timeDesignatorBaselineAdjustment;
+@property (nonatomic, retain) UIFont *timeDesignatorFont;
+@property (nonatomic, readonly) UILabel *timeDesignatorLabel;
+@property (nonatomic, retain) NSTimeZone *timeZone;
 
 - (void)_noteLayoutChange;
 - (void)_updateDateString;

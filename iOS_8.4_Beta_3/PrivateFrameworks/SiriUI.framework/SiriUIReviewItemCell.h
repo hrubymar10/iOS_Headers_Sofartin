@@ -19,8 +19,8 @@
     UIView *_ratingView;
 }
 
-@property(assign,readwrite) long long characterLimit;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic) long long characterLimit;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
 
 + (id)_authorDateFontAttribute;
 + (id)_authorFontAttribute;

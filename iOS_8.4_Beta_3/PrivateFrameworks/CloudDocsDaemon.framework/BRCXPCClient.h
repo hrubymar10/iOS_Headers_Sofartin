@@ -23,19 +23,19 @@
     BRCAccountSession *_session;
 }
 
-@property(assign,readonly) NSString * bundleID;
-@property(assign,readonly) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) NSString * defaultContainerID;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool dieOnInvalidate;
-@property(assign,readonly) NSSet * entitledContainerIDs;
-@property(assign,readonly) bool hasPrivateSharingInterfaceEntitlement;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readwrite) bool isUsingUbiquity;
-@property(assign,retain) BRCAccountSession * session;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSString *bundleID;
+@property (nonatomic, readonly) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) NSString *defaultContainerID;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool dieOnInvalidate;
+@property (nonatomic, readonly) NSSet *entitledContainerIDs;
+@property (nonatomic, readonly) bool hasPrivateSharingInterfaceEntitlement;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic) bool isUsingUbiquity;
+@property (nonatomic, retain) BRCAccountSession *session;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)__cacheEntitlements;

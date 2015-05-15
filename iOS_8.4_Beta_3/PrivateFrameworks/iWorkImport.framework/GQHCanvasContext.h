@@ -10,10 +10,10 @@
     bool mHasStroke;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)addPathForLineEndStyle:(int)arg1 graphicStyle:(id)arg2 atPoint:(struct CGPoint { double x1; double x2; })arg3 neighboringCP:(struct CGPoint { double x1; double x2; })arg4 filledPath:(struct CGPath {}**)arg5 strokedPath:(struct CGPath {}**)arg6;
 - (void)addScriptTagToHtml:(id)arg1 state:(id)arg2;

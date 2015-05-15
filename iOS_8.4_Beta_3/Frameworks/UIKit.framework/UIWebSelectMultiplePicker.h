@@ -13,13 +13,13 @@
     long long _textAlignment;
 }
 
-@property(assign,retain) NSArray * _cachedItems;
-@property(assign,retain) DOMHTMLSelectElement * _selectionNode;
-@property(assign,retain) <UIWebSelectedItemPrivate> * _singleSelectionItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSArray *_cachedItems;
+@property (nonatomic, retain) DOMHTMLSelectElement *_selectionNode;
+@property (nonatomic, retain) <UIWebSelectedItemPrivate> *_singleSelectionItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)_cachedItems;
 - (int)_itemIndexForRowIndex:(int)arg1;

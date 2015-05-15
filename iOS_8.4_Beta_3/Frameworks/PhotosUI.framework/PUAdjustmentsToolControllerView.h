@@ -6,7 +6,7 @@
     PUAdjustmentsModeBar *_modeBar;
 }
 
-@property(assign,readwrite) PUAdjustmentsModeBar * modeBar;
+@property (nonatomic) PUAdjustmentsModeBar *modeBar;
 
 - (void).cxx_destruct;
 - (id)hitTest:(struct CGPoint { double x1; double x2; })arg1 withEvent:(id)arg2;

@@ -11,10 +11,10 @@
     ABSteadfastLineView *_shadowLine;
 }
 
-@property(assign,retain) UIColor * defaultColor;
-@property(assign,readwrite) bool disappearsOnHighlight;
-@property(assign,retain) UIColor * shadowColor;
-@property(getter=isVertical,assign,readwrite) bool vertical;
+@property (nonatomic, retain) UIColor *defaultColor;
+@property (nonatomic) bool disappearsOnHighlight;
+@property (nonatomic, retain) UIColor *shadowColor;
+@property (getter=isVertical, nonatomic) bool vertical;
 
 - (void)dealloc;
 - (id)defaultColor;

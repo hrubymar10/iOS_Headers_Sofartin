@@ -8,9 +8,9 @@
     bool _video;
 }
 
-@property(assign,retain) NSString * filePath;
-@property(assign,retain) UIImage * originalImage;
-@property(getter=isVideo,assign,readwrite) bool video;
+@property (nonatomic, retain) NSString *filePath;
+@property (nonatomic, retain) UIImage *originalImage;
+@property (getter=isVideo, nonatomic) bool video;
 
 + (id)mediaUploadItemWithFilePath:(id)arg1 image:(id)arg2 isVideo:(bool)arg3;
 

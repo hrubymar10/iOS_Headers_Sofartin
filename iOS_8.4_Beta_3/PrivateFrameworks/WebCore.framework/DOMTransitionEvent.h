@@ -4,9 +4,9 @@
 
 @interface DOMTransitionEvent : DOMEvent
 
-@property(assign,readonly) double elapsedTime;
-@property(assign,copy) NSString * propertyName;
-@property(assign,copy) NSString * pseudoElement;
+@property (readonly) double elapsedTime;
+@property (readonly, copy) NSString *propertyName;
+@property (readonly, copy) NSString *pseudoElement;
 
 - (double)elapsedTime;
 - (id)propertyName;

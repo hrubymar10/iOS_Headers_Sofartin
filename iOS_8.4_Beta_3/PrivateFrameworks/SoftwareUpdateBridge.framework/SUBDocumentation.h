@@ -11,12 +11,12 @@
     NSData *_releaseNotesSummary;
 }
 
-@property(assign,retain) NSString * currentLanguage;
-@property(assign,retain) NSURL * documentationBundleURL;
-@property(assign,retain) NSString * humanReadableUpdateName;
-@property(assign,retain) NSData * licenseAgreement;
-@property(assign,retain) NSData * releaseNotes;
-@property(assign,retain) NSData * releaseNotesSummary;
+@property (nonatomic, retain) NSString *currentLanguage;
+@property (nonatomic, retain) NSURL *documentationBundleURL;
+@property (nonatomic, retain) NSString *humanReadableUpdateName;
+@property (nonatomic, retain) NSData *licenseAgreement;
+@property (nonatomic, retain) NSData *releaseNotes;
+@property (nonatomic, retain) NSData *releaseNotesSummary;
 
 + (bool)supportsSecureCoding;
 

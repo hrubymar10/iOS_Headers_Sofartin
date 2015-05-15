@@ -7,9 +7,9 @@
     UIButton *_neverButton;
 }
 
-@property(assign,retain) NSDate * date;
-@property(assign,readonly) UIDatePicker * datePicker;
-@property(assign,readonly) UIButton * neverButton;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, readonly) UIDatePicker *datePicker;
+@property (nonatomic, readonly) UIButton *neverButton;
 
 - (void).cxx_destruct;
 - (id)date;

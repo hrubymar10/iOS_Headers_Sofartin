@@ -6,11 +6,11 @@
     IKAppPlaylistBridge *_bridge;
 }
 
-@property(assign,readonly) IKAppPlaylistBridge * bridge;
-@property(assign,readonly) IKJSMediaItem * currentMediaItem;
-@property(assign,readonly) unsigned long long length;
-@property(assign,readonly) IKJSMediaItem * nextMediaItem;
-@property(assign,readonly) IKJSMediaItem * previousMediaItem;
+@property (nonatomic, readonly) IKAppPlaylistBridge *bridge;
+@property (nonatomic, readonly) IKJSMediaItem *currentMediaItem;
+@property (nonatomic, readonly) unsigned long long length;
+@property (nonatomic, readonly) IKJSMediaItem *nextMediaItem;
+@property (nonatomic, readonly) IKJSMediaItem *previousMediaItem;
 
 - (void).cxx_destruct;
 - (id)bridge;

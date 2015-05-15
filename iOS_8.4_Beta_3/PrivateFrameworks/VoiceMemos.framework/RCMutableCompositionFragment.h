@@ -4,10 +4,10 @@
 
 @interface RCMutableCompositionFragment : RCCompositionFragment
 
-@property(assign,retain) NSURL * AVOutputURL;
-@property(assign,readwrite) double contentDuration;
-@property(assign,readwrite) struct { double x1; double x2; } timeRangeInComposition;
-@property(assign,readwrite) struct { double x1; double x2; } timeRangeInContentToUse;
+@property (nonatomic, retain) NSURL *AVOutputURL;
+@property (nonatomic) double contentDuration;
+@property (nonatomic) struct { double x1; double x2; } timeRangeInComposition;
+@property (nonatomic) struct { double x1; double x2; } timeRangeInContentToUse;
 
 - (void)intersectWithTimeRange:(struct { double x1; double x2; })arg1;
 

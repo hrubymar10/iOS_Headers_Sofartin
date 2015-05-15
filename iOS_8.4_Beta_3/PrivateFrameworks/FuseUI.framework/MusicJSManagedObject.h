@@ -9,9 +9,9 @@
     id _owner;
 }
 
-@property(assign,readonly) IKAppContext * appContext;
-@property(assign,readonly) id object;
-@property(assign,readonly) id owner;
+@property (nonatomic, readonly) IKAppContext *appContext;
+@property (nonatomic, readonly) id object;
+@property (nonatomic, readonly) id owner;
 
 - (void).cxx_destruct;
 - (id)appContext;

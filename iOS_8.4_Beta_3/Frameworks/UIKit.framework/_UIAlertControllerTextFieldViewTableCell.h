@@ -6,7 +6,7 @@
     _UIAlertControllerTextFieldView *_textField;
 }
 
-@property(assign,readwrite) _UIAlertControllerTextFieldView * textField;
+@property (nonatomic) _UIAlertControllerTextFieldView *textField;
 
 - (id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2;
 - (void)prepareForReuse;

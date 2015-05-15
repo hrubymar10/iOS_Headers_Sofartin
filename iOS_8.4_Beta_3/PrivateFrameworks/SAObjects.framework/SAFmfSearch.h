@@ -4,12 +4,12 @@
 
 @interface SAFmfSearch : SABaseClientBoundCommand
 
-@property(assign,retain) SALocation * currentLocation;
-@property(assign,copy) NSArray * emailAddresses;
-@property(assign,copy) NSArray * friends;
-@property(assign,copy) NSString * proximity;
-@property(assign,retain) SALocation * requestedLocation;
-@property(assign,copy) NSURL * targetAppId;
+@property (nonatomic, retain) SALocation *currentLocation;
+@property (nonatomic, copy) NSArray *emailAddresses;
+@property (nonatomic, copy) NSArray *friends;
+@property (nonatomic, copy) NSString *proximity;
+@property (nonatomic, retain) SALocation *requestedLocation;
+@property (nonatomic, copy) NSURL *targetAppId;
 
 + (id)search;
 + (id)searchWithDictionary:(id)arg1 context:(id)arg2;

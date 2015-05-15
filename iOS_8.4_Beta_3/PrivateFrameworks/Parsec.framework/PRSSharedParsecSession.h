@@ -14,17 +14,17 @@
     NSString *_userAgent;
 }
 
-@property(assign,readonly) NSString * baseURL;
-@property(assign,readwrite) <PRSSessionController> * client;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * httpsBaseURL;
-@property(assign,readonly) NSOperationQueue * sessionQueue;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSMapTable * taskHandlers;
-@property(assign,readonly) NSURLSession * urlSession;
-@property(assign,readonly) NSString * userAgent;
+@property (readonly) NSString *baseURL;
+@property <PRSSessionController> *client;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSString *httpsBaseURL;
+@property (readonly) NSOperationQueue *sessionQueue;
+@property (readonly) Class superclass;
+@property (readonly) NSMapTable *taskHandlers;
+@property (readonly) NSURLSession *urlSession;
+@property (readonly) NSString *userAgent;
 
 + (id)initializeForClient:(id)arg1;
 + (id)sharedParsecSession;

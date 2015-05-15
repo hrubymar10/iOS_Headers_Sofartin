@@ -8,9 +8,9 @@
     bool _shouldArchive;
 }
 
-@property(assign,retain) NSString * accountId;
-@property(assign,retain) NSString * displayName;
-@property(assign,readwrite) bool shouldArchive;
+@property (nonatomic, retain) NSString *accountId;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic) bool shouldArchive;
 
 + (bool)supportsSecureCoding;
 

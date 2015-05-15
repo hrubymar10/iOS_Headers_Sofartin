@@ -7,8 +7,8 @@
     UIViewController *_viewController;
 }
 
-@property(assign,readonly) UIView * view;
-@property(assign,readonly) UIViewController * viewController;
+@property (nonatomic, readonly) UIView *view;
+@property (nonatomic, readonly) UIViewController *viewController;
 
 + (id)verticalScrollingContainerWithView:(id)arg1;
 + (id)verticalScrollingContainerWithViewController:(id)arg1;

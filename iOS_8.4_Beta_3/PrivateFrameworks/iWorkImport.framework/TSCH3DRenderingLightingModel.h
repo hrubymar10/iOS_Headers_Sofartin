@@ -8,8 +8,8 @@
     NSNumber *mPercentage;
 }
 
-@property(assign,readonly) bool hasTransparency;
-@property(assign,readonly) TSCH3DLightingModel * lightingModel;
+@property (nonatomic, readonly) bool hasTransparency;
+@property (nonatomic, readonly) TSCH3DLightingModel *lightingModel;
 
 + (id)p_lightingModelFromFill:(id)arg1 lightings:(id)arg2 returningTransparency:(bool*)arg3;
 + (id)renderingLightingModelWithFill:(id)arg1 lightings:(id)arg2;

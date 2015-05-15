@@ -4,10 +4,10 @@
 
 @interface SAMPBasicPodcastAppSearch : SADomainCommand
 
-@property(assign,readwrite) bool acceptPodcastCollections;
-@property(assign,readwrite) bool acceptPodcastStations;
-@property(assign,readwrite) long long maxResults;
-@property(assign,copy) NSString * query;
+@property (nonatomic) bool acceptPodcastCollections;
+@property (nonatomic) bool acceptPodcastStations;
+@property (nonatomic) long long maxResults;
+@property (nonatomic, copy) NSString *query;
 
 + (id)basicPodcastAppSearch;
 + (id)basicPodcastAppSearchWithDictionary:(id)arg1 context:(id)arg2;

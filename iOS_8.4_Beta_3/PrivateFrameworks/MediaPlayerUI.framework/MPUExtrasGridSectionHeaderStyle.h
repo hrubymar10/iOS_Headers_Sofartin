@@ -16,12 +16,12 @@
     NSString *_textStyle;
 }
 
-@property(assign,retain) NSDictionary * defaultFontAttributes;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } insets;
-@property(assign,readwrite) double textBaselineDescender;
-@property(assign,readwrite) double textBaselineHeight;
-@property(assign,retain) UIColor * textColor;
-@property(assign,retain) NSString * textStyle;
+@property (nonatomic, retain) NSDictionary *defaultFontAttributes;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } insets;
+@property (nonatomic) double textBaselineDescender;
+@property (nonatomic) double textBaselineHeight;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic, retain) NSString *textStyle;
 
 - (void).cxx_destruct;
 - (id)defaultFontAttributes;

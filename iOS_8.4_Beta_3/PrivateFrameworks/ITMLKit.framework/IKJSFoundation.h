@@ -9,10 +9,10 @@
     NSMutableDictionary *_jsTimers;
 }
 
-@property(assign,readwrite) IKAppContext * appContext;
-@property(assign,retain) NSMutableDictionary * dateFormatterCache;
-@property(assign,readwrite) <IKAppDeviceConfig> * deviceConfig;
-@property(assign,retain) NSMutableDictionary * jsTimers;
+@property (nonatomic) IKAppContext *appContext;
+@property (nonatomic, retain) NSMutableDictionary *dateFormatterCache;
+@property (nonatomic) <IKAppDeviceConfig> *deviceConfig;
+@property (nonatomic, retain) NSMutableDictionary *jsTimers;
 
 - (void).cxx_destruct;
 - (void)_clearTimer:(id)arg1;

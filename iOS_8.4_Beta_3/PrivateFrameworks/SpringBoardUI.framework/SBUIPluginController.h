@@ -7,8 +7,8 @@
     bool _isVisible;
 }
 
-@property(assign,readwrite) <SBUIPluginControllerHost> * host;
-@property(getter=isVisible,assign,readwrite) bool visible;
+@property (nonatomic) <SBUIPluginControllerHost> *host;
+@property (getter=isVisible, nonatomic) bool visible;
 
 - (void)cancelPendingActivationEvent:(int)arg1;
 - (bool)handleActivationEvent:(int)arg1 eventSource:(int)arg2 context:(void*)arg3;

@@ -18,21 +18,21 @@
     bool _safeSaveSuccess;
 }
 
-@property(assign,readonly) bool continueCheckingDownload;
-@property(assign,readonly) bool continueCheckingUpload;
-@property(assign,retain) PFUbiquityLocation * currentLocation;
-@property(assign,readonly) NSError * downloadError;
-@property(assign,readonly) bool downloadSuccess;
-@property(assign,readonly) bool existsAtPermanentLocation;
-@property(assign,readonly) bool existsAtSafeSaveLocation;
-@property(assign,readonly) bool existsInCloud;
-@property(assign,readonly) bool isRegistered;
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,readonly) bool moveAfterSave;
-@property(assign,readonly) PFUbiquityLocation * permanentLocation;
-@property(assign,readonly) NSError * safeSaveError;
-@property(assign,readonly) PFUbiquityLocation * safeSaveLocation;
-@property(assign,readonly) bool safeSaveSuccess;
+@property (nonatomic, readonly) bool continueCheckingDownload;
+@property (nonatomic, readonly) bool continueCheckingUpload;
+@property (nonatomic, retain) PFUbiquityLocation *currentLocation;
+@property (nonatomic, readonly) NSError *downloadError;
+@property (nonatomic, readonly) bool downloadSuccess;
+@property (nonatomic, readonly) bool existsAtPermanentLocation;
+@property (nonatomic, readonly) bool existsAtSafeSaveLocation;
+@property (nonatomic, readonly) bool existsInCloud;
+@property (nonatomic, readonly) bool isRegistered;
+@property (nonatomic, readonly) NSString *localPeerID;
+@property (nonatomic, readonly) bool moveAfterSave;
+@property (nonatomic, readonly) PFUbiquityLocation *permanentLocation;
+@property (nonatomic, readonly) NSError *safeSaveError;
+@property (nonatomic, readonly) PFUbiquityLocation *safeSaveLocation;
+@property (nonatomic, readonly) bool safeSaveSuccess;
 
 - (void)checkFileDownload;
 - (void)checkSafeSaveFileUpload;

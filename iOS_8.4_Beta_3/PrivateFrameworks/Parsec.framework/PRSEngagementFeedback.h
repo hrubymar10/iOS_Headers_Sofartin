@@ -13,14 +13,14 @@
     bool _userReturnedToResultsList;
 }
 
-@property(assign,readwrite) unsigned long long action_area;
-@property(assign,retain) NSString * action_card_type;
-@property(assign,retain) NSURL * action_destination;
-@property(assign,readwrite) unsigned long long action_type;
-@property(assign,retain) NSString * fbr;
-@property(assign,retain) NSString * local_result;
-@property(assign,retain) NSString * parsec_result;
-@property(assign,readwrite) bool userReturnedToResultsList;
+@property unsigned long long action_area;
+@property (nonatomic, retain) NSString *action_card_type;
+@property (nonatomic, retain) NSURL *action_destination;
+@property unsigned long long action_type;
+@property (nonatomic, retain) NSString *fbr;
+@property (nonatomic, retain) NSString *local_result;
+@property (nonatomic, retain) NSString *parsec_result;
+@property bool userReturnedToResultsList;
 
 + (bool)supportsSecureCoding;
 

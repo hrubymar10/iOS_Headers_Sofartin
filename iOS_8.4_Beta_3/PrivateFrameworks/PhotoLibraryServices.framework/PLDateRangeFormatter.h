@@ -27,28 +27,28 @@
     bool _yearOnly;
 }
 
-@property(setter=_setCurrentLocale:,assign,retain) NSLocale * _currentLocale;
-@property(assign,retain) NSDateFormatter * _dayOfTheWeekDateFormatter;
-@property(assign,readonly) struct UDateIntervalFormat { }* _dayOfTheWeekIntervalFormat;
-@property(assign,readonly) struct UDateIntervalFormat { }* _differentMonthDayIntervalFormat;
-@property(assign,readonly) struct UDateIntervalFormat { }* _differentMonthDayNoYearIntervalFormat;
-@property(assign,readonly) struct UDateIntervalFormat { }* _monthDayIntervalFormat;
-@property(assign,readonly) struct UDateIntervalFormat { }* _monthDayNoYearIntervalFormat;
-@property(assign,retain) NSDateFormatter * _relativeDateFormatterDay;
-@property(assign,retain) NSDateFormatter * _sameDayDateFormatter;
-@property(assign,retain) NSDateFormatter * _sameDayNoYearDateFormatter;
-@property(assign,readonly) struct UDateIntervalFormat { }* _timeIntervalFormat;
-@property(assign,retain) NSDateFormatter * _yearDateFormatter;
-@property(assign,readonly) struct UDateIntervalFormat { }* _yearIntervalFormat;
-@property(assign,readwrite) bool autoUpdateOnChanges;
-@property(assign,readwrite) bool includeDayNumbers;
-@property(assign,readwrite) bool includeDayNumbersWhenMonthsDiffer;
-@property(assign,readwrite) bool timeOnly;
-@property(assign,readwrite) bool useRelativeDayFormatting;
-@property(assign,readwrite) bool useShortDaysInRanges;
-@property(assign,readwrite) bool useShortMonths;
-@property(assign,readwrite) bool useTime;
-@property(assign,readwrite) bool yearOnly;
+@property (setter=_setCurrentLocale:, nonatomic, retain) NSLocale *_currentLocale;
+@property (nonatomic, readonly, retain) NSDateFormatter *_dayOfTheWeekDateFormatter;
+@property (nonatomic, readonly) struct UDateIntervalFormat { }*_dayOfTheWeekIntervalFormat;
+@property (nonatomic, readonly) struct UDateIntervalFormat { }*_differentMonthDayIntervalFormat;
+@property (nonatomic, readonly) struct UDateIntervalFormat { }*_differentMonthDayNoYearIntervalFormat;
+@property (nonatomic, readonly) struct UDateIntervalFormat { }*_monthDayIntervalFormat;
+@property (nonatomic, readonly) struct UDateIntervalFormat { }*_monthDayNoYearIntervalFormat;
+@property (nonatomic, readonly, retain) NSDateFormatter *_relativeDateFormatterDay;
+@property (nonatomic, readonly, retain) NSDateFormatter *_sameDayDateFormatter;
+@property (nonatomic, readonly, retain) NSDateFormatter *_sameDayNoYearDateFormatter;
+@property (nonatomic, readonly) struct UDateIntervalFormat { }*_timeIntervalFormat;
+@property (nonatomic, readonly, retain) NSDateFormatter *_yearDateFormatter;
+@property (nonatomic, readonly) struct UDateIntervalFormat { }*_yearIntervalFormat;
+@property (nonatomic) bool autoUpdateOnChanges;
+@property (nonatomic) bool includeDayNumbers;
+@property (nonatomic) bool includeDayNumbersWhenMonthsDiffer;
+@property (nonatomic) bool timeOnly;
+@property (nonatomic) bool useRelativeDayFormatting;
+@property (nonatomic) bool useShortDaysInRanges;
+@property (nonatomic) bool useShortMonths;
+@property (nonatomic) bool useTime;
+@property (nonatomic) bool yearOnly;
 
 + (void)_dumpAllDateCombinationsWithFormatters;
 

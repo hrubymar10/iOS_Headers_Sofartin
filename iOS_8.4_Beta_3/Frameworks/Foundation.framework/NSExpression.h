@@ -11,18 +11,18 @@
     unsigned int reserved;
 }
 
-@property(assign,copy) NSArray * arguments;
-@property(assign,retain) id collection;
-@property(assign,retain) id constantValue;
-@property(assign,copy) id expressionBlock;
-@property(assign,readonly) unsigned long long expressionType;
-@property(assign,copy) NSString * function;
-@property(assign,copy) NSString * keyPath;
-@property(assign,copy) NSExpression * leftExpression;
-@property(assign,copy) NSExpression * operand;
-@property(assign,copy) NSPredicate * predicate;
-@property(assign,copy) NSExpression * rightExpression;
-@property(assign,copy) NSString * variable;
+@property (readonly, copy) NSArray *arguments;
+@property (readonly, retain) id collection;
+@property (readonly, retain) id constantValue;
+@property (readonly, copy) id expressionBlock;
+@property (readonly) unsigned long long expressionType;
+@property (readonly, copy) NSString *function;
+@property (readonly, copy) NSString *keyPath;
+@property (readonly, copy) NSExpression *leftExpression;
+@property (readonly, copy) NSExpression *operand;
+@property (readonly, copy) NSPredicate *predicate;
+@property (readonly, copy) NSExpression *rightExpression;
+@property (readonly, copy) NSString *variable;
 
 + (id)_newKeyPathExpressionForString:(id)arg1;
 + (id)expressionForAggregate:(id)arg1;

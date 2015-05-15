@@ -10,11 +10,11 @@
     NSMutableArray *_visibleCells;
 }
 
-@property(assign,readwrite) <TPStarkPhoneCallContainerDataSource> * dataSource;
-@property(assign,readwrite) <TPStarkPhoneCallContainerDelegate> * delegate;
-@property(getter=isMerging,assign,readwrite) bool merging;
-@property(assign,readwrite) bool shouldMerge;
-@property(assign,retain) NSMutableArray * visibleCells;
+@property (nonatomic) <TPStarkPhoneCallContainerDataSource> *dataSource;
+@property (nonatomic) <TPStarkPhoneCallContainerDelegate> *delegate;
+@property (getter=isMerging) bool merging;
+@property bool shouldMerge;
+@property (retain) NSMutableArray *visibleCells;
 
 - (id)_reloadQueue;
 - (void)addConstraintsForNewCell:(id)arg1;

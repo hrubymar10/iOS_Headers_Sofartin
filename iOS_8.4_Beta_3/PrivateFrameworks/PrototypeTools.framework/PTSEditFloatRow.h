@@ -6,7 +6,7 @@
     unsigned long long _precision;
 }
 
-@property(assign,readwrite) unsigned long long precision;
+@property (nonatomic) unsigned long long precision;
 
 - (id)between:(double)arg1 and:(double)arg2;
 - (id)init;

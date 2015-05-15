@@ -16,17 +16,17 @@
     NSString *_version;
 }
 
-@property(assign,copy) NSString * copyrightText;
-@property(assign,copy) APDNavigationTopic * copyrightTopic;
-@property(assign,copy) NSString * copyrightTopicId;
-@property(assign,copy) NSString * framework;
-@property(assign,readwrite) bool hasSectionIcon;
-@property(assign,copy) NSString * landingTopicID;
-@property(assign,copy) NSArray * sections;
-@property(assign,readwrite) bool showFeedbackLinks;
-@property(assign,copy) NSString * sourceSchema;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * version;
+@property (nonatomic, copy) NSString *copyrightText;
+@property (nonatomic, readonly, copy) APDNavigationTopic *copyrightTopic;
+@property (nonatomic, copy) NSString *copyrightTopicId;
+@property (nonatomic, copy) NSString *framework;
+@property (nonatomic) bool hasSectionIcon;
+@property (nonatomic, copy) NSString *landingTopicID;
+@property (nonatomic, copy) NSArray *sections;
+@property (nonatomic) bool showFeedbackLinks;
+@property (nonatomic, copy) NSString *sourceSchema;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *version;
 
 - (void).cxx_destruct;
 - (id)copyrightText;

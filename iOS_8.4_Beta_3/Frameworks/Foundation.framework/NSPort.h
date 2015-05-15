@@ -4,8 +4,8 @@
 
 @interface NSPort : NSObject <NSCoding, NSCopying>
 
-@property(assign,readonly) unsigned long long reservedSpaceLength;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (readonly) unsigned long long reservedSpaceLength;
+@property (getter=isValid, readonly) bool valid;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)port;

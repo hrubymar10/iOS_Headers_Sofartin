@@ -19,17 +19,17 @@
     SUTabBarController *_tabBarController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) NSString * defaultPNGNameForSuspend;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSURL * launchURL;
-@property(getter=isStoreEnabled,assign,readonly) bool storeEnabled;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) SUTabBarController * tabBarController;
-@property(getter=isTabBarControllerLoaded,assign,readonly) bool tabBarControllerLoaded;
-@property(assign,readonly) UINavigationController * topNavigationController;
-@property(assign,retain) UIWindow * window;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) NSString *defaultPNGNameForSuspend;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSURL *launchURL;
+@property (getter=isStoreEnabled, nonatomic, readonly) bool storeEnabled;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) SUTabBarController *tabBarController;
+@property (getter=isTabBarControllerLoaded, nonatomic, readonly) bool tabBarControllerLoaded;
+@property (nonatomic, readonly) UINavigationController *topNavigationController;
+@property (nonatomic, retain) UIWindow *window;
 
 + (void)setSharedInstance:(id)arg1;
 + (id)sharedInstance;

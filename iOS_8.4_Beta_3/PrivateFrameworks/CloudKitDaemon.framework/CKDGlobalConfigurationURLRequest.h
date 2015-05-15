@@ -6,7 +6,7 @@
     CKDServerConfiguration *_configuration;
 }
 
-@property(assign,retain) CKDServerConfiguration * configuration;
+@property (nonatomic, retain) CKDServerConfiguration *configuration;
 
 - (void).cxx_destruct;
 - (id)additionalHeaderValues;

@@ -8,9 +8,9 @@
     long long _serviceType;
 }
 
-@property(assign,copy) id discoveryHandler;
-@property(assign,readwrite) unsigned long long discoveryIdentifier;
-@property(assign,readonly) long long serviceType;
+@property (nonatomic, copy) id discoveryHandler;
+@property (nonatomic) unsigned long long discoveryIdentifier;
+@property (nonatomic, readonly) long long serviceType;
 
 - (void).cxx_destruct;
 - (id)discoveryHandler;

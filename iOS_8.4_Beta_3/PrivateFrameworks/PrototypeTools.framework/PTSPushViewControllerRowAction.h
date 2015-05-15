@@ -6,7 +6,7 @@
     id _viewControllerCreator;
 }
 
-@property(assign,copy) id viewControllerCreator;
+@property (nonatomic, copy) id viewControllerCreator;
 
 + (id)actionWithViewControllerCreator:(id)arg1;
 

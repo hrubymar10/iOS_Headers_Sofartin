@@ -16,16 +16,16 @@
     NSString *_wellKnownPath;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CoreDAVDiscoveryTaskGroupDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didReceiveAuthenticationError;
-@property(assign,retain) <CoreDAVAccountInfoProvider> * discoveredAccountInfo;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * potentialContextPaths;
-@property(assign,readwrite) bool shouldBailEarly;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * wellKnownPath;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CoreDAVDiscoveryTaskGroupDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool didReceiveAuthenticationError;
+@property (nonatomic, retain) <CoreDAVAccountInfoProvider> *discoveredAccountInfo;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *potentialContextPaths;
+@property (nonatomic) bool shouldBailEarly;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSString *wellKnownPath;
 
 - (void)addToDiscoveryArray:(id*)arg1 discovery:(id)arg2;
 - (id)allDiscoveryPaths:(id)arg1;

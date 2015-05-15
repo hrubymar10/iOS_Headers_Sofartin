@@ -4,7 +4,7 @@
 
 @interface SKUILoadArtworkResourceOperation : SKUILoadResourceOperation
 
-@property(assign,copy) SKUIArtworkRequest * resourceRequest;
+@property (readonly, copy) SKUIArtworkRequest *resourceRequest;
 
 - (id)initWithResourceRequest:(id)arg1;
 - (void)main;

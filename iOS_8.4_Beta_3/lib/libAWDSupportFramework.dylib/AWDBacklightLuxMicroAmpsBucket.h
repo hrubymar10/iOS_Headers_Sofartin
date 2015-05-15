@@ -9,8 +9,8 @@
     } _has;
 }
 
-@property(assign,readwrite) unsigned int bucketDuration;
-@property(assign,readwrite) bool hasBucketDuration;
+@property (nonatomic) unsigned int bucketDuration;
+@property (nonatomic) bool hasBucketDuration;
 
 - (unsigned int)bucketDuration;
 - (void)copyTo:(id)arg1;

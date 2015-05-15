@@ -12,16 +12,16 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) double comparableTime;
-@property(assign,readwrite) double duration;
-@property(assign,readonly) bool hasArtworkAtPlaybackTime;
-@property(assign,readwrite) unsigned long long index;
-@property(assign,readonly) int markerType;
-@property(assign,readonly) double maxTime;
-@property(assign,retain) NSDictionary * metadata;
-@property(assign,readwrite) double time;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSURL * url;
+@property (nonatomic, readonly) double comparableTime;
+@property (nonatomic) double duration;
+@property (nonatomic, readonly) bool hasArtworkAtPlaybackTime;
+@property (nonatomic) unsigned long long index;
+@property (nonatomic, readonly) int markerType;
+@property (nonatomic, readonly) double maxTime;
+@property (nonatomic, retain) NSDictionary *metadata;
+@property (nonatomic) double time;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSURL *url;
 
 - (void).cxx_destruct;
 - (double)comparableTime;

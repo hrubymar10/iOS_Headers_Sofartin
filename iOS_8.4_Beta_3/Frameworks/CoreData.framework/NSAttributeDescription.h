@@ -16,12 +16,12 @@
     NSString *_valueTransformerName;
 }
 
-@property(assign,readwrite) bool allowsExternalBinaryDataStorage;
-@property(assign,readwrite) unsigned long long attributeType;
-@property(assign,copy) NSString * attributeValueClassName;
-@property(assign,retain) id defaultValue;
-@property(assign,copy) NSString * valueTransformerName;
-@property(assign,copy) NSData * versionHash;
+@property bool allowsExternalBinaryDataStorage;
+@property unsigned long long attributeType;
+@property (copy) NSString *attributeValueClassName;
+@property (retain) id defaultValue;
+@property (copy) NSString *valueTransformerName;
+@property (readonly, copy) NSData *versionHash;
 
 + (id)_classNameForType:(unsigned long long)arg1;
 + (void)initialize;

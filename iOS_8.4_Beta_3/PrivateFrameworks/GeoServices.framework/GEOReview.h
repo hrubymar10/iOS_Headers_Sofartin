@@ -14,16 +14,16 @@
     NSString *_uid;
 }
 
-@property(assign,readwrite) bool hasReviewTime;
-@property(assign,readonly) bool hasReviewer;
-@property(assign,readwrite) bool hasScore;
-@property(assign,readonly) bool hasSnippet;
-@property(assign,readonly) bool hasUid;
-@property(assign,readwrite) double reviewTime;
-@property(assign,retain) GEOUser * reviewer;
-@property(assign,readwrite) double score;
-@property(assign,retain) NSString * snippet;
-@property(assign,retain) NSString * uid;
+@property (nonatomic) bool hasReviewTime;
+@property (nonatomic, readonly) bool hasReviewer;
+@property (nonatomic) bool hasScore;
+@property (nonatomic, readonly) bool hasSnippet;
+@property (nonatomic, readonly) bool hasUid;
+@property (nonatomic) double reviewTime;
+@property (nonatomic, retain) GEOUser *reviewer;
+@property (nonatomic) double score;
+@property (nonatomic, retain) NSString *snippet;
+@property (nonatomic, retain) NSString *uid;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

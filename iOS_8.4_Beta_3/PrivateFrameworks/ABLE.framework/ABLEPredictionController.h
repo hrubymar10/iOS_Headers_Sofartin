@@ -11,12 +11,12 @@
     double _rejectionThresholdForMissingData;
 }
 
-@property(assign,readwrite) bool approximateMissingData;
-@property(assign,retain) NSArray * coefficients;
-@property(assign,readonly) ABLECoreDuetController * coreDuetController;
-@property(assign,retain) NSDictionary * currentData;
-@property(assign,readonly) NSArray * dayOffsets;
-@property(assign,readwrite) double rejectionThresholdForMissingData;
+@property bool approximateMissingData;
+@property (retain) NSArray *coefficients;
+@property (readonly) ABLECoreDuetController *coreDuetController;
+@property (retain) NSDictionary *currentData;
+@property (readonly) NSArray *dayOffsets;
+@property double rejectionThresholdForMissingData;
 
 - (void).cxx_destruct;
 - (bool)approximateMissingData;

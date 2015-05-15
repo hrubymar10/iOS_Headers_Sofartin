@@ -18,17 +18,17 @@
     bool _replacingOriginalWithDerivative;
 }
 
-@property(assign,retain) NSArray * assetCollectionInfos;
-@property(assign,retain) NSString * cloudAlbumGUID;
-@property(assign,retain) NSArray * cloudAssetGUIDsToDelete;
-@property(assign,retain) NSString * cloudPersonID;
-@property(assign,retain) MSASAssetCollection * currentCloudAssetCollection;
-@property(assign,retain) NSString * currentCloudAssetGUID;
-@property(assign,readwrite) unsigned long long currentCloudAssetMediaAssetType;
-@property(assign,retain) NSString * currentFilePath;
-@property(assign,readwrite) bool isVideo;
-@property(assign,readwrite) long long jobType;
-@property(assign,retain) NSDictionary * mstreamdInfoDictionary;
+@property (nonatomic, retain) NSArray *assetCollectionInfos;
+@property (nonatomic, retain) NSString *cloudAlbumGUID;
+@property (nonatomic, retain) NSArray *cloudAssetGUIDsToDelete;
+@property (nonatomic, retain) NSString *cloudPersonID;
+@property (nonatomic, retain) MSASAssetCollection *currentCloudAssetCollection;
+@property (nonatomic, retain) NSString *currentCloudAssetGUID;
+@property (nonatomic) unsigned long long currentCloudAssetMediaAssetType;
+@property (nonatomic, retain) NSString *currentFilePath;
+@property (nonatomic) bool isVideo;
+@property (nonatomic) long long jobType;
+@property (nonatomic, retain) NSDictionary *mstreamdInfoDictionary;
 
 + (id)_dcimDirectoryForFileURL:(id)arg1;
 + (bool)_lightweightReimportCacheDirectoryExists;

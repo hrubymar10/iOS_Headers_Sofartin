@@ -7,8 +7,8 @@
     long long _environment;
 }
 
-@property(assign,readonly) NSString * containerIdentifier;
-@property(assign,readonly) long long environment;
+@property (nonatomic, readonly) NSString *containerIdentifier;
+@property (nonatomic, readonly) long long environment;
 
 + (bool)supportsSecureCoding;
 

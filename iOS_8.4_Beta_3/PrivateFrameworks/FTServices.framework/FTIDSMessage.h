@@ -17,18 +17,18 @@
     NSMutableArray *_userIDArray;
 }
 
-@property(assign,copy) NSData * IDCertificate;
-@property(assign,copy) NSMutableArray * certDataArray;
-@property(assign,readwrite) struct __SecKey { }* identityPrivateKey;
-@property(assign,readwrite) struct __SecKey { }* identityPublicKey;
-@property(assign,copy) NSMutableArray * privateKeyArray;
-@property(assign,copy) NSMutableArray * publicKeyArray;
-@property(assign,copy) NSData * pushCertificate;
-@property(assign,readwrite) struct __SecKey { }* pushPrivateKey;
-@property(assign,readwrite) struct __SecKey { }* pushPublicKey;
-@property(assign,copy) NSData * pushToken;
-@property(assign,copy) NSString * selfURI;
-@property(assign,copy) NSMutableArray * userIDArray;
+@property (nonatomic, copy) NSData *IDCertificate;
+@property (nonatomic, copy) NSMutableArray *certDataArray;
+@property (nonatomic) struct __SecKey { }*identityPrivateKey;
+@property (nonatomic) struct __SecKey { }*identityPublicKey;
+@property (nonatomic, copy) NSMutableArray *privateKeyArray;
+@property (nonatomic, copy) NSMutableArray *publicKeyArray;
+@property (nonatomic, copy) NSData *pushCertificate;
+@property (nonatomic) struct __SecKey { }*pushPrivateKey;
+@property (nonatomic) struct __SecKey { }*pushPublicKey;
+@property (nonatomic, copy) NSData *pushToken;
+@property (nonatomic, copy) NSString *selfURI;
+@property (nonatomic, copy) NSMutableArray *userIDArray;
 
 - (id)IDCertificate;
 - (void)addAuthUserID:(id)arg1 certificate:(id)arg2 privateKey:(struct __SecKey { }*)arg3 publicKey:(struct __SecKey { }*)arg4;

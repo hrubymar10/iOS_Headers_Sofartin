@@ -20,15 +20,15 @@
     UITableView *_tableView;
 }
 
-@property(assign,retain) ACAccount * account;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<SLPlaceDataSource> * placeDataSource;
-@property(assign,retain) NSArray * places;
-@property(assign,readwrite) bool searchEnabled;
-@property(assign,readwrite) NSObject<SLSheetPlaceViewControllerDelegate> * selectionDelegate;
-@property(assign,readonly) Class superclass;
+@property (retain) ACAccount *account;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) NSObject<SLPlaceDataSource> *placeDataSource;
+@property (retain) NSArray *places;
+@property (nonatomic) bool searchEnabled;
+@property NSObject<SLSheetPlaceViewControllerDelegate> *selectionDelegate;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_calculatePreferredContentSize;

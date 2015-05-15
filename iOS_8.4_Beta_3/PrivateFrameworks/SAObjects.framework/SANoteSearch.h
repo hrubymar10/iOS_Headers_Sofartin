@@ -4,9 +4,9 @@
 
 @interface SANoteSearch : SADomainCommand
 
-@property(assign,copy) NSString * contentQuery;
-@property(assign,copy) NSDate * fromDate;
-@property(assign,copy) NSDate * toDate;
+@property (nonatomic, copy) NSString *contentQuery;
+@property (nonatomic, copy) NSDate *fromDate;
+@property (nonatomic, copy) NSDate *toDate;
 
 + (id)search;
 + (id)searchWithDictionary:(id)arg1 context:(id)arg2;

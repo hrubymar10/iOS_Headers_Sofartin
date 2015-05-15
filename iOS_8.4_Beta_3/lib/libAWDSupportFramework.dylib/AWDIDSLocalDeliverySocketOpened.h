@@ -20,22 +20,22 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,retain) NSString * guid;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasIsToDefaultPairedDevice;
-@property(assign,readwrite) bool hasOpenError;
-@property(assign,readwrite) bool hasPriority;
-@property(assign,readonly) bool hasService;
-@property(assign,readwrite) bool hasSocketError;
-@property(assign,readonly) bool hasStreamName;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long isToDefaultPairedDevice;
-@property(assign,readwrite) unsigned long long openError;
-@property(assign,readwrite) unsigned long long priority;
-@property(assign,retain) NSString * service;
-@property(assign,readwrite) unsigned long long socketError;
-@property(assign,retain) NSString * streamName;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasIsToDefaultPairedDevice;
+@property (nonatomic) bool hasOpenError;
+@property (nonatomic) bool hasPriority;
+@property (nonatomic, readonly) bool hasService;
+@property (nonatomic) bool hasSocketError;
+@property (nonatomic, readonly) bool hasStreamName;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long isToDefaultPairedDevice;
+@property (nonatomic) unsigned long long openError;
+@property (nonatomic) unsigned long long priority;
+@property (nonatomic, retain) NSString *service;
+@property (nonatomic) unsigned long long socketError;
+@property (nonatomic, retain) NSString *streamName;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

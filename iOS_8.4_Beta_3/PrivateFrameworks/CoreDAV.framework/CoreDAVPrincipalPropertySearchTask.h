@@ -8,9 +8,9 @@
     NSSet *_searchItems;
 }
 
-@property(assign,readwrite) bool applyToPrincipalCollectionSet;
-@property(assign,retain) NSDictionary * extraAttributes;
-@property(assign,retain) NSSet * searchItems;
+@property (nonatomic) bool applyToPrincipalCollectionSet;
+@property (nonatomic, retain) NSDictionary *extraAttributes;
+@property (nonatomic, retain) NSSet *searchItems;
 
 - (bool)applyToPrincipalCollectionSet;
 - (void)dealloc;

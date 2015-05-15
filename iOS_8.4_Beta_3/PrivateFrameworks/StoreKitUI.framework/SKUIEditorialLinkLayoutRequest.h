@@ -7,13 +7,13 @@
     double _width;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class layoutClass;
-@property(assign,copy) NSArray * links;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double width;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) Class layoutClass;
+@property (nonatomic, copy) NSArray *links;
+@property (readonly) Class superclass;
+@property (nonatomic) double width;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

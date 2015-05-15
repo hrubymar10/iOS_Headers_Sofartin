@@ -9,10 +9,10 @@
     int _sockd;
 }
 
-@property(assign,readwrite) <WLOTcpServerDelegate> * delegate;
-@property(assign,retain) NSObject<OS_dispatch_queue> * listenQueue;
-@property(assign,readwrite) int port;
-@property(assign,readwrite) int sockd;
+@property (nonatomic) <WLOTcpServerDelegate> *delegate;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *listenQueue;
+@property (nonatomic) int port;
+@property (nonatomic) int sockd;
 
 - (void).cxx_destruct;
 - (void)_listen:(int)arg1;

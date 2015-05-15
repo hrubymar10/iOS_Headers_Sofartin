@@ -16,15 +16,15 @@
     UIImageView *_zoomView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } imageSize;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } pointToCenterAfterResize;
-@property(assign,readwrite) double scaleToRestoreAfterResize;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIImageView * zoomView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic) struct CGPoint { double x1; double x2; } pointToCenterAfterResize;
+@property (nonatomic) double scaleToRestoreAfterResize;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIImageView *zoomView;
 
 - (void).cxx_destruct;
 - (struct CGPoint { double x1; double x2; })_maximumContentOffset;

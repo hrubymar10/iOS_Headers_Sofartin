@@ -4,12 +4,12 @@
 
 @interface SALocalSearchAceNavigationEta : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) SADistance * distanceEta;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SADuration * timeEta;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) SADistance *distanceEta;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SADuration *timeEta;
 
 + (id)aceNavigationEta;
 + (id)aceNavigationEtaWithDictionary:(id)arg1 context:(id)arg2;

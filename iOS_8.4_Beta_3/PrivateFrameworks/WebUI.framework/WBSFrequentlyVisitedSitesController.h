@@ -8,7 +8,7 @@
     double _timeOfLastFrequentlyVisitedSitesComputation;
 }
 
-@property(assign,readonly) NSArray * frequentlyVisitedSites;
+@property (nonatomic, readonly) NSArray *frequentlyVisitedSites;
 
 + (float)scoreForHistoryItem:(id)arg1 atTime:(double)arg2;
 + (float)scoreForHistoryItem:(id)arg1 atTime:(double)arg2 withMinimumVisitCount:(unsigned long long)arg3;

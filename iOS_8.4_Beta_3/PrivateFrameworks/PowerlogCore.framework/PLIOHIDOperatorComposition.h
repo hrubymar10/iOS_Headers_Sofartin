@@ -10,11 +10,11 @@
     NSString *_serviceName;
 }
 
-@property(assign,readwrite) struct __IOHIDEventSystemClient { }* eventSystemClient;
-@property(assign,retain) PLOperator * operator;
-@property(assign,copy) id operatorBlock;
-@property(assign,retain) NSArray * serviceClients;
-@property(assign,retain) NSString * serviceName;
+@property struct __IOHIDEventSystemClient { }*eventSystemClient;
+@property (retain) PLOperator *operator;
+@property (nonatomic, copy) id operatorBlock;
+@property (retain) NSArray *serviceClients;
+@property (retain) NSString *serviceName;
 
 - (void).cxx_destruct;
 - (void)dealloc;

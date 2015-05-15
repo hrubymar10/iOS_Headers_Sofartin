@@ -17,26 +17,26 @@
     unsigned long long _stepIndex;
 }
 
-@property(assign,readwrite) GEOComposedRoute * composedRoute;
-@property(assign,readonly) unsigned int distance;
-@property(assign,readonly) unsigned int duration;
-@property(assign,readonly) struct { double x1; double x2; } endGeoCoordinate;
-@property(assign,readonly) unsigned int endPointIndex;
-@property(assign,readonly) GEOStep * geoStep;
-@property(assign,readonly) bool hasDuration;
-@property(assign,readonly) bool isUncertainArrival;
-@property(assign,readonly) unsigned int maneuverEndPointIndex;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } maneuverPointRange;
-@property(assign,readonly) unsigned int maneuverStartPointIndex;
-@property(getter=getNextStep,assign,readonly) GEOComposedRouteStep * nextStep;
-@property(assign,readonly) unsigned int pointCount;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } pointRange;
-@property(getter=getPreviousStep,assign,readonly) GEOComposedRouteStep * previousStep;
-@property(assign,readonly) long long routeLegType;
-@property(assign,readonly) struct { double x1; double x2; } startGeoCoordinate;
-@property(assign,readonly) unsigned int startPointIndex;
-@property(assign,readonly) unsigned long long stepIndex;
-@property(assign,readonly) int transportType;
+@property (nonatomic) GEOComposedRoute *composedRoute;
+@property (nonatomic, readonly) unsigned int distance;
+@property (nonatomic, readonly) unsigned int duration;
+@property (nonatomic, readonly) struct { double x1; double x2; } endGeoCoordinate;
+@property (nonatomic, readonly) unsigned int endPointIndex;
+@property (nonatomic, readonly) GEOStep *geoStep;
+@property (nonatomic, readonly) bool hasDuration;
+@property (nonatomic, readonly) bool isUncertainArrival;
+@property (nonatomic, readonly) unsigned int maneuverEndPointIndex;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } maneuverPointRange;
+@property (nonatomic, readonly) unsigned int maneuverStartPointIndex;
+@property (getter=getNextStep, nonatomic, readonly) GEOComposedRouteStep *nextStep;
+@property (nonatomic, readonly) unsigned int pointCount;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } pointRange;
+@property (getter=getPreviousStep, nonatomic, readonly) GEOComposedRouteStep *previousStep;
+@property (nonatomic, readonly) long long routeLegType;
+@property (nonatomic, readonly) struct { double x1; double x2; } startGeoCoordinate;
+@property (nonatomic, readonly) unsigned int startPointIndex;
+@property (nonatomic, readonly) unsigned long long stepIndex;
+@property (nonatomic, readonly) int transportType;
 
 - (id)composedRoute;
 - (void)dealloc;

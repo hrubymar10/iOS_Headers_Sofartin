@@ -22,13 +22,13 @@
     NSMutableSet *_visibleAnnotations;
 }
 
-@property(assign,readonly) NSArray * annotationRepresentations;
-@property(assign,readwrite) bool annotationRepresentationsAreAddedImmediately;
-@property(assign,readonly) NSArray * annotations;
-@property(assign,readwrite) <MKAnnotationMarkerContainer> * container;
-@property(assign,readwrite) <MKAnnotationManagerDelegate> * delegate;
-@property(assign,readwrite) <MKAnnotation> * draggedAnnotation;
-@property(assign,readonly) <MKAnnotationRepresentation> * selectedAnnotationRepresentation;
+@property (nonatomic, readonly) NSArray *annotationRepresentations;
+@property (nonatomic) bool annotationRepresentationsAreAddedImmediately;
+@property (nonatomic, readonly) NSArray *annotations;
+@property (nonatomic) <MKAnnotationMarkerContainer> *container;
+@property (nonatomic) <MKAnnotationManagerDelegate> *delegate;
+@property (nonatomic) <MKAnnotation> *draggedAnnotation;
+@property (nonatomic, readonly) <MKAnnotationRepresentation> *selectedAnnotationRepresentation;
 
 - (void).cxx_destruct;
 - (void)_addAnnotation:(id)arg1 updateVisible:(bool)arg2;

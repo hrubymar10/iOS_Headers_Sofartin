@@ -15,17 +15,17 @@
     bool _suspendTrackFadeOut;
 }
 
-@property(assign,readonly) double _lastInteractionTime;
-@property(assign,retain) UIView * _maxTrackMaskView;
-@property(assign,retain) UIView * _maxTrackView;
-@property(assign,retain) UIView * _minTrackMaskView;
-@property(assign,retain) UIView * _minTrackView;
-@property(assign,retain) CAMExposureBiasSliderThumb * _thumbView;
-@property(assign,readwrite) float exposureBiasMax;
-@property(assign,readwrite) float exposureBiasMin;
-@property(assign,readwrite) float exposureBiasValue;
-@property(assign,readwrite) bool suspendTrackFadeOut;
-@property(assign,readonly) double thumbMaxExtension;
+@property (nonatomic, readonly) double _lastInteractionTime;
+@property (nonatomic, readonly, retain) UIView *_maxTrackMaskView;
+@property (nonatomic, readonly, retain) UIView *_maxTrackView;
+@property (nonatomic, readonly, retain) UIView *_minTrackMaskView;
+@property (nonatomic, readonly, retain) UIView *_minTrackView;
+@property (nonatomic, readonly, retain) CAMExposureBiasSliderThumb *_thumbView;
+@property (nonatomic) float exposureBiasMax;
+@property (nonatomic) float exposureBiasMin;
+@property (nonatomic) float exposureBiasValue;
+@property (nonatomic) bool suspendTrackFadeOut;
+@property (nonatomic, readonly) double thumbMaxExtension;
 
 - (void).cxx_destruct;
 - (void)_animateTrackAlpha:(double)arg1 withDuration:(double)arg2;

@@ -4,7 +4,7 @@
 
 @interface IKActivityIndicatorElement : IKViewElement
 
-@property(assign,retain) IKTextElement * title;
+@property (nonatomic, readonly, retain) IKTextElement *title;
 
 - (id)title;
 

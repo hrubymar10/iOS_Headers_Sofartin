@@ -8,10 +8,10 @@
     UIView *_topDivider;
 }
 
-@property(assign,retain) UIView * bottomDivider;
-@property(assign,readwrite) bool drawsTopDivider;
-@property(assign,retain) EKUIDividedGridViewController * gridViewController;
-@property(assign,retain) UIView * topDivider;
+@property (nonatomic, retain) UIView *bottomDivider;
+@property (nonatomic) bool drawsTopDivider;
+@property (retain) EKUIDividedGridViewController *gridViewController;
+@property (nonatomic, retain) UIView *topDivider;
 
 - (void).cxx_destruct;
 - (bool)_isWiderThanMaximum;

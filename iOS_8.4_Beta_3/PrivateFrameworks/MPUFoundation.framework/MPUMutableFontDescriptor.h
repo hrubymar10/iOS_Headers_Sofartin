@@ -4,11 +4,11 @@
 
 @interface MPUMutableFontDescriptor : MPUFontDescriptor
 
-@property(assign,readwrite) long long leadingAdjustment;
-@property(assign,readwrite) long long textStyle;
-@property(assign,readwrite) bool usesItalic;
-@property(assign,readwrite) bool wantsMonospaceNumbers;
-@property(assign,readwrite) long long weight;
+@property (nonatomic) long long leadingAdjustment;
+@property (nonatomic) long long textStyle;
+@property (nonatomic) bool usesItalic;
+@property (nonatomic) bool wantsMonospaceNumbers;
+@property (nonatomic) long long weight;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setLeadingAdjustment:(long long)arg1;

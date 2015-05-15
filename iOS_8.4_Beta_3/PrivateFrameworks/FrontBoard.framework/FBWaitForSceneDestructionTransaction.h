@@ -7,11 +7,11 @@
     FBScene *_sceneToWaitForDeath;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) FBScene * scene;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) FBScene *scene;
+@property (readonly) Class superclass;
 
 - (void)_begin;
 - (id)_customizedDescriptionProperties;

@@ -13,12 +13,12 @@
     bool _promiscMode;
 }
 
-@property(assign,readonly) unsigned short addressMask;
-@property(assign,readwrite) <CECInterfaceDelegate> * delegate;
-@property(assign,readonly) bool isValid;
-@property(assign,readonly) struct CECFrame { unsigned char x1[16]; unsigned int x2 : 5; unsigned int x3 : 3; } lastReceivedFrame;
-@property(assign,readonly) bool promiscMode;
-@property(assign,readonly) NSDictionary * properties;
+@property (nonatomic, readonly) unsigned short addressMask;
+@property (nonatomic) <CECInterfaceDelegate> *delegate;
+@property (nonatomic, readonly) bool isValid;
+@property (nonatomic, readonly) struct CECFrame { unsigned char x1[16]; unsigned int x2 : 5; unsigned int x3 : 3; } lastReceivedFrame;
+@property (nonatomic, readonly) bool promiscMode;
+@property (nonatomic, readonly) NSDictionary *properties;
 
 - (unsigned short)addressMask;
 - (bool)allocateCECAddress:(unsigned char*)arg1 forDeviceType:(unsigned char)arg2 error:(id*)arg3;

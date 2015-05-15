@@ -24,13 +24,13 @@
     NSMutableDictionary *_visibleButtonByControlType;
 }
 
-@property(assign,copy) NSArray * availableTransportControls;
-@property(assign,readwrite) <MPUTransportControlsViewDataSource> * dataSource;
-@property(assign,readwrite) <MPUTransportControlsViewDelegate> * delegate;
-@property(getter=_insetsForExpandingButtons,setter=_setInsetsForExpandingButtons:,assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } insetsForExpandingButtons;
-@property(assign,readwrite) <MPUTransportControlsViewLayoutDelegate> * layoutDelegate;
-@property(assign,readwrite) unsigned long long minimumNumberOfTransportButtonsForLayout;
-@property(getter=_usesLegacyLayoutHeuristics,setter=_setUsesLegacyLayoutHeuristics:,assign,readwrite) bool usesLegacyLayoutHeuristics;
+@property (nonatomic, copy) NSArray *availableTransportControls;
+@property (nonatomic) <MPUTransportControlsViewDataSource> *dataSource;
+@property (nonatomic) <MPUTransportControlsViewDelegate> *delegate;
+@property (getter=_insetsForExpandingButtons, setter=_setInsetsForExpandingButtons:, nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } insetsForExpandingButtons;
+@property (nonatomic) <MPUTransportControlsViewLayoutDelegate> *layoutDelegate;
+@property (nonatomic) unsigned long long minimumNumberOfTransportButtonsForLayout;
+@property (getter=_usesLegacyLayoutHeuristics, setter=_setUsesLegacyLayoutHeuristics:, nonatomic) bool usesLegacyLayoutHeuristics;
 
 + (id)defaultTransportControls;
 

@@ -6,7 +6,7 @@
     bool isAudioOnly;
 }
 
-@property(assign,readwrite) bool isAudioOnly;
+@property (nonatomic) bool isAudioOnly;
 
 - (id)description;
 - (bool)isAudioOnly;

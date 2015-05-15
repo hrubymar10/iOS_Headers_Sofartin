@@ -9,10 +9,10 @@
     GKComposeHeaderWithStaticRecipients *_toField;
 }
 
-@property(assign,retain) NSString * defaultMessage;
-@property(assign,copy) id doneHandler;
-@property(assign,retain) NSArray * players;
-@property(assign,retain) GKComposeHeaderWithStaticRecipients * toField;
+@property (nonatomic, retain) NSString *defaultMessage;
+@property (nonatomic, copy) id doneHandler;
+@property (nonatomic, retain) NSArray *players;
+@property (nonatomic, retain) GKComposeHeaderWithStaticRecipients *toField;
 
 - (void)dealloc;
 - (id)defaultMessage;

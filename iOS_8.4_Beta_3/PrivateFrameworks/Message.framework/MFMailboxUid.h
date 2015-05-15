@@ -21,8 +21,8 @@
     NSString *uniqueId;
 }
 
-@property(assign,retain) NSArray * extraAttributes;
-@property(assign,retain) NSString * permanentTag;
+@property (nonatomic, retain) NSArray *extraAttributes;
+@property (nonatomic, retain) NSString *permanentTag;
 
 + (bool)isDraftsMailboxType:(int)arg1;
 + (bool)isOutgoingMailboxType:(int)arg1;

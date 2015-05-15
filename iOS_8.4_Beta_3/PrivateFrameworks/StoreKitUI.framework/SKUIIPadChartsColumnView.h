@@ -13,9 +13,9 @@
     long long _selectedViewControllerIndex;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,copy) NSArray * contentViewControllers;
-@property(assign,readonly) UIViewController * selectedViewController;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic, copy) NSArray *contentViewControllers;
+@property (nonatomic, readonly) UIViewController *selectedViewController;
 
 - (void).cxx_destruct;
 - (void)_addSelectedViewController;

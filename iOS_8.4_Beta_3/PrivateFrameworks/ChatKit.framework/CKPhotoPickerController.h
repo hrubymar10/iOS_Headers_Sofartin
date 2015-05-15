@@ -21,17 +21,17 @@
     UITapGestureRecognizer *_tapGestureRecognizer;
 }
 
-@property(assign,retain) UITableView * alertTableView;
-@property(assign,retain) NSString * captureLabelText;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKPhotoPickerControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CKPhotoPickerWindow * photoPickerWindow;
-@property(assign,retain) CKPhotoPickerCollectionViewController * photosCollectionView;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } sourceViewRect;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITapGestureRecognizer * tapGestureRecognizer;
+@property (nonatomic, retain) UITableView *alertTableView;
+@property (nonatomic, retain) NSString *captureLabelText;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKPhotoPickerControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CKPhotoPickerWindow *photoPickerWindow;
+@property (nonatomic, retain) CKPhotoPickerCollectionViewController *photosCollectionView;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } sourceViewRect;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UITapGestureRecognizer *tapGestureRecognizer;
 
 - (id)alertTableView;
 - (id)captureLabelText;

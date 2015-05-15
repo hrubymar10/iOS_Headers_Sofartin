@@ -7,8 +7,8 @@
     NSDictionary *_options;
 }
 
-@property(assign,copy) NSData * advertisementPayload;
-@property(assign,copy) NSDictionary * options;
+@property (copy) NSData *advertisementPayload;
+@property (copy) NSDictionary *options;
 
 - (id)advertisementPayload;
 - (void)dealloc;

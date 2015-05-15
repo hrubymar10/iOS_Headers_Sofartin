@@ -10,8 +10,8 @@
     _UIScreenEdgePanRecognizer *_recognizer;
 }
 
-@property(assign,readwrite) long long maximumVisibleOverlayItems;
-@property(assign,readwrite) _UIScreenEdgePanRecognizer * recognizer;
+@property (nonatomic) long long maximumVisibleOverlayItems;
+@property (nonatomic) _UIScreenEdgePanRecognizer *recognizer;
 
 - (bool)_isWindowServerHostingManaged;
 - (void)dealloc;

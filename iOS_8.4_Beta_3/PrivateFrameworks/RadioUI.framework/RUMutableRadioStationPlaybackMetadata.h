@@ -4,11 +4,11 @@
 
 @interface RUMutableRadioStationPlaybackMetadata : RURadioStationPlaybackMetadata
 
-@property(assign,retain) RadioArtworkCollection * artworkCollection;
-@property(assign,copy) NSString * stationHash;
-@property(assign,readwrite) long long stationID;
-@property(assign,copy) NSString * stationName;
-@property(assign,copy) NSString * stationStringID;
+@property (nonatomic, retain) RadioArtworkCollection *artworkCollection;
+@property (nonatomic, copy) NSString *stationHash;
+@property (nonatomic) long long stationID;
+@property (nonatomic, copy) NSString *stationName;
+@property (nonatomic, copy) NSString *stationStringID;
 
 - (void)setArtworkCollection:(id)arg1;
 - (void)setStationHash:(id)arg1;

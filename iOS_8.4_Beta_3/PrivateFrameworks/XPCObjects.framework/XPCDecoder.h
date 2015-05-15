@@ -11,7 +11,7 @@
     struct __CFSet { } *_requestedDecodedObjects;
 }
 
-@property(assign,copy) NSString * errorDescription;
+@property (nonatomic, copy) NSString *errorDescription;
 
 + (id)rootObjectForEncoding:(id)arg1;
 + (id)rootObjectForEncoding:(id)arg1 allowedClasses:(id)arg2;

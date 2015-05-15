@@ -7,9 +7,9 @@
     bool _wantsContactImageLayout;
 }
 
-@property(assign,copy) NSAttributedString * attributedText;
-@property(assign,retain) UILabel * label;
-@property(assign,readwrite) bool wantsContactImageLayout;
+@property (nonatomic, copy) NSAttributedString *attributedText;
+@property (nonatomic, retain) UILabel *label;
+@property (nonatomic) bool wantsContactImageLayout;
 
 + (id)label;
 

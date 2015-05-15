@@ -4,23 +4,23 @@
 
 @interface SAAppInfo : SADomainObject
 
-@property(assign,copy) NSString * appId;
-@property(assign,copy) NSString * appName;
-@property(assign,copy) NSDictionary * appNameMap;
-@property(assign,copy) NSString * appVersion;
-@property(assign,copy) NSString * carPlayAlternativeDisplayName;
-@property(assign,copy) NSDictionary * carPlayAlternativeDisplayNameMap;
-@property(assign,copy) NSString * displayAppName;
-@property(assign,copy) NSDictionary * displayAppNameMap;
-@property(assign,copy) NSNumber * isNanoApp;
-@property(assign,copy) NSNumber * nowPlayingAppWithBrowsableContent;
-@property(assign,copy) NSString * providerName;
-@property(assign,retain) SASiriSupport * siriSupport;
-@property(assign,copy) NSString * spotlightName;
-@property(assign,copy) NSDictionary * spotlightNameMap;
-@property(assign,retain) SAStarkSupport * starkSupport;
-@property(assign,copy) NSArray * supportedCommands;
-@property(assign,copy) NSArray * supportedSchemes;
+@property (nonatomic, copy) NSString *appId;
+@property (nonatomic, copy) NSString *appName;
+@property (nonatomic, copy) NSDictionary *appNameMap;
+@property (nonatomic, copy) NSString *appVersion;
+@property (nonatomic, copy) NSString *carPlayAlternativeDisplayName;
+@property (nonatomic, copy) NSDictionary *carPlayAlternativeDisplayNameMap;
+@property (nonatomic, copy) NSString *displayAppName;
+@property (nonatomic, copy) NSDictionary *displayAppNameMap;
+@property (nonatomic, copy) NSNumber *isNanoApp;
+@property (nonatomic, copy) NSNumber *nowPlayingAppWithBrowsableContent;
+@property (nonatomic, copy) NSString *providerName;
+@property (nonatomic, retain) SASiriSupport *siriSupport;
+@property (nonatomic, copy) NSString *spotlightName;
+@property (nonatomic, copy) NSDictionary *spotlightNameMap;
+@property (nonatomic, retain) SAStarkSupport *starkSupport;
+@property (nonatomic, copy) NSArray *supportedCommands;
+@property (nonatomic, copy) NSArray *supportedSchemes;
 
 + (id)appInfo;
 + (id)appInfoWithDictionary:(id)arg1 context:(id)arg2;

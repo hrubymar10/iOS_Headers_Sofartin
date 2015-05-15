@@ -8,9 +8,9 @@
     GKUITheme *_theme;
 }
 
-@property(assign,copy) NSString * defaultMessage;
-@property(assign,readwrite) unsigned int rid;
-@property(assign,retain) GKUITheme * theme;
+@property (nonatomic, copy) NSString *defaultMessage;
+@property (nonatomic) unsigned int rid;
+@property (nonatomic, retain) GKUITheme *theme;
 
 + (id)exportedInterface;
 + (id)serviceViewControllerInterface;

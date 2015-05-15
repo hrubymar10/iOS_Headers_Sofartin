@@ -7,8 +7,8 @@
     BOOL _type;
 }
 
-@property(assign,readonly) NSString * UUIDString;
-@property(assign,readonly) NSData * data;
+@property (nonatomic, readonly) NSString *UUIDString;
+@property (nonatomic, readonly) NSData *data;
 
 + (id)UUIDWithCFUUID:(struct __CFUUID { }*)arg1;
 + (id)UUIDWithData:(id)arg1;

@@ -6,7 +6,7 @@
     NSArray *_eventRouters;
 }
 
-@property(assign,retain) NSArray * eventRouters;
+@property (nonatomic, retain) NSArray *eventRouters;
 
 - (id)description;
 - (id)eventRouters;

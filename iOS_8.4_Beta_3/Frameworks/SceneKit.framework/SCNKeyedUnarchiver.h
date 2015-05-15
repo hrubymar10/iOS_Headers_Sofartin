@@ -6,7 +6,7 @@
     NSDictionary *_context;
 }
 
-@property(assign,retain) NSDictionary * context;
+@property (nonatomic, retain) NSDictionary *context;
 
 - (id)context;
 - (void)dealloc;

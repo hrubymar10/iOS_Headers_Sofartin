@@ -7,10 +7,10 @@
     GEORPWatchAuxiliaryControl *_watch;
 }
 
-@property(assign,retain) GEORPCarPlayAuxiliaryControl * car;
-@property(assign,readonly) bool hasCar;
-@property(assign,readonly) bool hasWatch;
-@property(assign,retain) GEORPWatchAuxiliaryControl * watch;
+@property (nonatomic, retain) GEORPCarPlayAuxiliaryControl *car;
+@property (nonatomic, readonly) bool hasCar;
+@property (nonatomic, readonly) bool hasWatch;
+@property (nonatomic, retain) GEORPWatchAuxiliaryControl *watch;
 
 - (id)car;
 - (void)copyTo:(id)arg1;

@@ -10,16 +10,16 @@
     bool _viewed;
 }
 
-@property(assign,retain) NSUUID * UUID;
-@property(assign,readwrite) unsigned long long achievementType;
-@property(assign,retain) NSDate * completedDate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSData * extraData;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSNumber * value;
-@property(getter=isViewed,assign,readwrite) bool viewed;
+@property (nonatomic, retain) NSUUID *UUID;
+@property (nonatomic) unsigned long long achievementType;
+@property (nonatomic, retain) NSDate *completedDate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSData *extraData;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSNumber *value;
+@property (getter=isViewed, nonatomic) bool viewed;
 
 + (unsigned long long)_achievementTypeFromString:(id)arg1;
 + (id)_achievementTypeNameMappings;

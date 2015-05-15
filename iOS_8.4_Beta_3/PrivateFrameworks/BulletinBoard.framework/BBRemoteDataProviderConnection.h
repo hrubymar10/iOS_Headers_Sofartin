@@ -13,13 +13,13 @@
     NSString *_serviceName;
 }
 
-@property(assign,readonly) NSString * bundleID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isConnected;
-@property(assign,readonly) NSString * serviceName;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSString *bundleID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isConnected;
+@property (nonatomic, readonly) NSString *serviceName;
+@property (readonly) Class superclass;
 
 - (void)_queue_removeDataProvider:(id)arg1;
 - (void)addDataProviderWithSectionID:(id)arg1 clientProxy:(id)arg2 identity:(id)arg3 completion:(id)arg4;

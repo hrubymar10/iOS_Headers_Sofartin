@@ -7,8 +7,8 @@
     NSString *_remainderCandidateString;
 }
 
-@property(assign,copy) NSArray * autoconvertedCandidatePointerValues;
-@property(assign,copy) NSString * remainderCandidateString;
+@property (nonatomic, copy) NSArray *autoconvertedCandidatePointerValues;
+@property (nonatomic, copy) NSString *remainderCandidateString;
 
 + (bool)supportsSecureCoding;
 + (int)type;

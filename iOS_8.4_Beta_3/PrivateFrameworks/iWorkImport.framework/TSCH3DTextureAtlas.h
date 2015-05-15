@@ -8,7 +8,7 @@
     NSMutableArray *mTextures;
 }
 
-@property(assign,readonly) float samples;
+@property (nonatomic, readonly) float samples;
 
 + (id)atlas;
 + (id)atlasWithSamples:(float)arg1;

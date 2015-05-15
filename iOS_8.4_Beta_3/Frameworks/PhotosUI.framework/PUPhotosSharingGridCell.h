@@ -18,8 +18,8 @@
     UIView *_zoomingCellSuperview;
 }
 
-@property(assign,readwrite) int currentImageRequestID;
-@property(assign,readonly) PUPhotoView * photoView;
+@property (nonatomic) int currentImageRequestID;
+@property (nonatomic, readonly) PUPhotoView *photoView;
 
 - (void).cxx_destruct;
 - (void)_updateHighlight;

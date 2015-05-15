@@ -6,11 +6,11 @@
     GEOMapItemAttribution *_geoAttribution;
 }
 
-@property(assign,readonly) NSArray * attributionApps;
-@property(assign,readonly) NSArray * attributionURLs;
-@property(assign,readonly) NSString * providerID;
-@property(assign,readonly) NSString * providerName;
-@property(assign,readonly) bool requiresAttributionInCallout;
+@property (nonatomic, readonly) NSArray *attributionApps;
+@property (nonatomic, readonly) NSArray *attributionURLs;
+@property (nonatomic, readonly) NSString *providerID;
+@property (nonatomic, readonly) NSString *providerName;
+@property (nonatomic, readonly) bool requiresAttributionInCallout;
 
 - (void).cxx_destruct;
 - (id)attributionApps;

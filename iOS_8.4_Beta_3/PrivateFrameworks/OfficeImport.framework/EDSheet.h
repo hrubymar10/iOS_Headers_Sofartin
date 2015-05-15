@@ -20,7 +20,7 @@
     EDWorkbook *mWorkbook;
 }
 
-@property(assign,readwrite) bool isDialogSheet;
+@property (nonatomic) bool isDialogSheet;
 
 + (id)sheetWithWorkbook:(id)arg1;
 

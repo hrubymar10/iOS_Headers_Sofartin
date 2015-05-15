@@ -9,8 +9,8 @@
     void *_reserved;
 }
 
-@property(assign,readwrite) <NSNetServiceBrowserDelegate> * delegate;
-@property(assign,readwrite) bool includesPeerToPeer;
+@property <NSNetServiceBrowserDelegate> *delegate;
+@property bool includesPeerToPeer;
 
 - (void)_dispatchCallBack:(void*)arg1 flags:(unsigned long long)arg2 error:(struct { long long x1; int x2; })arg3;
 - (bool)_includesAWDL;

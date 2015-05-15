@@ -14,15 +14,15 @@
     NSNumber *_version;
 }
 
-@property(assign,retain) NSString * hapBaseUUIDSuffix;
-@property(assign,retain) NSArray * hapCharacteristics;
-@property(assign,retain) NSArray * hapProperties;
-@property(assign,retain) NSArray * hapServices;
-@property(assign,retain) NSArray * hapSupportsAuthDataTuples;
-@property(assign,retain) NSArray * hapValueUnits;
-@property(assign,retain) NSMutableArray * parsedUUIDs;
-@property(assign,retain) NSNumber * schemaVersion;
-@property(assign,retain) NSNumber * version;
+@property (nonatomic, retain) NSString *hapBaseUUIDSuffix;
+@property (nonatomic, retain) NSArray *hapCharacteristics;
+@property (nonatomic, retain) NSArray *hapProperties;
+@property (nonatomic, retain) NSArray *hapServices;
+@property (nonatomic, retain) NSArray *hapSupportsAuthDataTuples;
+@property (nonatomic, retain) NSArray *hapValueUnits;
+@property (nonatomic, retain) NSMutableArray *parsedUUIDs;
+@property (nonatomic, retain) NSNumber *schemaVersion;
+@property (nonatomic, retain) NSNumber *version;
 
 + (id)expandHAPType:(id)arg1 baseUUIDSuffix:(id)arg2;
 + (id)getBuiltinInstance;

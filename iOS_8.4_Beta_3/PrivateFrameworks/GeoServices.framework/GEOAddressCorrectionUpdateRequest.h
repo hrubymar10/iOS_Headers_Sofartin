@@ -11,11 +11,11 @@
     NSMutableArray *_significantLocations;
 }
 
-@property(assign,retain) NSString * addressID;
-@property(assign,readwrite) int correctionStatus;
-@property(assign,readonly) bool hasAddressID;
-@property(assign,readwrite) bool hasCorrectionStatus;
-@property(assign,retain) NSMutableArray * significantLocations;
+@property (nonatomic, retain) NSString *addressID;
+@property (nonatomic) int correctionStatus;
+@property (nonatomic, readonly) bool hasAddressID;
+@property (nonatomic) bool hasCorrectionStatus;
+@property (nonatomic, retain) NSMutableArray *significantLocations;
 
 - (void)addSignificantLocation:(id)arg1;
 - (id)addressID;

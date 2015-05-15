@@ -9,10 +9,10 @@
     bool _isInTransaction;
 }
 
-@property(assign,retain) NSMutableDictionary * cachedPreparedStatementsKeyedBySQLPattern;
-@property(assign,readwrite) struct sqlite3 { }* db;
-@property(assign,retain) NSObject<OS_dispatch_queue> * dbQueue;
-@property(assign,readwrite) bool isInTransaction;
+@property (nonatomic, retain) NSMutableDictionary *cachedPreparedStatementsKeyedBySQLPattern;
+@property (nonatomic) struct sqlite3 { }*db;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *dbQueue;
+@property (nonatomic) bool isInTransaction;
 
 + (bool)errorCodeMeansCorruptedDatabase:(int)arg1;
 

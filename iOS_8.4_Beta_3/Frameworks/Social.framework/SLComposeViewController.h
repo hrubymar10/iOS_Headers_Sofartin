@@ -24,9 +24,9 @@
     bool _wasPresented;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,retain) UIViewController * remoteViewController;
-@property(assign,readonly) NSString * serviceType;
+@property (nonatomic, copy) id completionHandler;
+@property (retain) UIViewController *remoteViewController;
+@property (nonatomic, readonly) NSString *serviceType;
 
 + (id)_extensionIdentifierForServiceType:(id)arg1;
 + (bool)_isAvailableForService:(id)arg1;

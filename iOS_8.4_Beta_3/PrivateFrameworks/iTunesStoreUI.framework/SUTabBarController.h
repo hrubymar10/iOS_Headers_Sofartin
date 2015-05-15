@@ -20,16 +20,16 @@
     SUNavigationBarBackgroundView *_tabBarBackdropView;
 }
 
-@property(getter=_previewOverlayViewController,assign,readonly) SUPreviewOverlayViewController * _previewOverlayViewController;
-@property(assign,readonly) SUClientInterface * clientInterface;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SUTabBarControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * moreListTitle;
-@property(assign,retain) NSArray * sections;
-@property(assign,retain) NSString * selectedIdentifier;
-@property(assign,readonly) Class superclass;
+@property (getter=_previewOverlayViewController, nonatomic, readonly) SUPreviewOverlayViewController *_previewOverlayViewController;
+@property (nonatomic, readonly) SUClientInterface *clientInterface;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SUTabBarControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *moreListTitle;
+@property (nonatomic, retain) NSArray *sections;
+@property (nonatomic, retain) NSString *selectedIdentifier;
+@property (readonly) Class superclass;
 
 + (Class)_moreNavigationControllerClass;
 

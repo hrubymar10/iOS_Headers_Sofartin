@@ -12,15 +12,15 @@
     UIWebView *_webView;
 }
 
-@property(assign,retain) PKPaymentCredential * credential;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id learnMorePresentationHandler;
-@property(assign,readwrite) bool preloadLearnMoreWebView;
-@property(assign,readwrite) long long setupContext;
-@property(assign,readwrite) <PKPaymentSetupViewControllerDelegate> * setupDelegate;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) PKPaymentCredential *credential;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id learnMorePresentationHandler;
+@property bool preloadLearnMoreWebView;
+@property (nonatomic) long long setupContext;
+@property (nonatomic) <PKPaymentSetupViewControllerDelegate> *setupDelegate;
+@property (readonly) Class superclass;
 
 - (id)_alertWithLearnMoreURL:(id)arg1 isPreloaded:(bool)arg2;
 - (id)_learnMoreURLForEligibiltyStatus:(long long)arg1;

@@ -4,7 +4,7 @@
 
 @interface TSKAddedToDocumentContext : NSObject
 
-@property(assign,retain) <TSKMultiTableRemapping> * multiTableRemapper;
+@property (retain) <TSKMultiTableRemapping> *multiTableRemapper;
 
 + (id)changeTrackingSubstorageForCopyContext;
 + (id)dragCopyContext;

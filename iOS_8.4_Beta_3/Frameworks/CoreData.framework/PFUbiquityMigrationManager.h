@@ -9,9 +9,9 @@
     NSManagedObjectModel *_sourceModel;
 }
 
-@property(assign,readonly) NSManagedObjectModel * destinationModel;
-@property(assign,readonly) PFUbiquityLocation * rootLocation;
-@property(assign,readonly) NSManagedObjectModel * sourceModel;
+@property (readonly) NSManagedObjectModel *destinationModel;
+@property (readonly) PFUbiquityLocation *rootLocation;
+@property (readonly) NSManagedObjectModel *sourceModel;
 
 - (void)dealloc;
 - (id)destinationModel;

@@ -10,8 +10,8 @@
     bool _useLocalStorage;
 }
 
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,readwrite) bool useLocalStorage;
+@property (nonatomic, readonly) NSString *localPeerID;
+@property (nonatomic) bool useLocalStorage;
 
 - (void)dealloc;
 - (id)description;

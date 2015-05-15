@@ -6,7 +6,7 @@
     <NNMKMessageContentSyncServiceClientDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <NNMKMessageContentSyncServiceClientDelegate> * delegate;
+@property (nonatomic) <NNMKMessageContentSyncServiceClientDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)delegate;

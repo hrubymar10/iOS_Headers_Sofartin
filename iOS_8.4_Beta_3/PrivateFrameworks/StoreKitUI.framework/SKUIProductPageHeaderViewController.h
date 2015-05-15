@@ -26,18 +26,18 @@
     bool _wantsActivityViewController;
 }
 
-@property(assign,readwrite) bool askPermission;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIProductPageHeaderViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) SKUIProductPageHeaderFloatingView * floatingView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIImage * iconImage;
-@property(assign,readonly) SKUIItem * item;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,readwrite) long long selectedSectionIndex;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool askPermission;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIProductPageHeaderViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) SKUIProductPageHeaderFloatingView *floatingView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIImage *iconImage;
+@property (nonatomic, readonly) SKUIItem *item;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic) long long selectedSectionIndex;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_activeItem;

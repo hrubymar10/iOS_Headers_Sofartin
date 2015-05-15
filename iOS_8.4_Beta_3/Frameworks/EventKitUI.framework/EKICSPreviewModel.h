@@ -12,14 +12,14 @@
     NSMutableArray *_unimportedEvents;
 }
 
-@property(assign,readonly) int actionsState;
-@property(assign,readonly) NSArray * allEvents;
-@property(assign,readonly) EKEventStore * eventStore;
-@property(assign,readonly) unsigned long long importedEventCount;
-@property(assign,readonly) NSArray * importedEvents;
-@property(assign,readonly) unsigned long long totalEventCount;
-@property(assign,readonly) unsigned long long unimportedEventCount;
-@property(assign,readonly) NSArray * unimportedEvents;
+@property (nonatomic, readonly) int actionsState;
+@property (nonatomic, readonly) NSArray *allEvents;
+@property (nonatomic, readonly) EKEventStore *eventStore;
+@property (nonatomic, readonly) unsigned long long importedEventCount;
+@property (nonatomic, readonly) NSArray *importedEvents;
+@property (nonatomic, readonly) unsigned long long totalEventCount;
+@property (nonatomic, readonly) unsigned long long unimportedEventCount;
+@property (nonatomic, readonly) NSArray *unimportedEvents;
 
 - (void).cxx_destruct;
 - (int)actionsState;

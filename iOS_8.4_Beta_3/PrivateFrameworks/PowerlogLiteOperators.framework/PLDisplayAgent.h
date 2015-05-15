@@ -15,16 +15,16 @@
     NSDate *_pendingBacklightEntryDate;
 }
 
-@property(assign,readwrite) bool alsOn;
-@property(assign,retain) PLNSTimerOperatorComposition * backlightFilterTimer;
-@property(assign,retain) BrightnessSystemClient * brightnessSystemClient;
-@property(assign,readonly) NSString * displayHardware;
-@property(assign,readonly) NSDictionary * displayPowerModel;
-@property(assign,readonly) PLIOKitOperatorComposition * iokitBacklight;
-@property(assign,readonly) PLIOKitOperatorComposition * iokitDisplay;
-@property(assign,readonly) PLIOKitOperatorComposition * iokitTouch;
-@property(assign,retain) NSDictionary * pendingBacklightEntry;
-@property(assign,retain) NSDate * pendingBacklightEntryDate;
+@property bool alsOn;
+@property (retain) PLNSTimerOperatorComposition *backlightFilterTimer;
+@property (retain) BrightnessSystemClient *brightnessSystemClient;
+@property (readonly) NSString *displayHardware;
+@property (readonly) NSDictionary *displayPowerModel;
+@property (readonly) PLIOKitOperatorComposition *iokitBacklight;
+@property (readonly) PLIOKitOperatorComposition *iokitDisplay;
+@property (readonly) PLIOKitOperatorComposition *iokitTouch;
+@property (retain) NSDictionary *pendingBacklightEntry;
+@property (retain) NSDate *pendingBacklightEntryDate;
 
 + (id)entryEventBackwardDefinitionTouch;
 + (id)entryEventBackwardDefinitions;

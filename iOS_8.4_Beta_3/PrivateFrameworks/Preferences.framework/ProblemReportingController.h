@@ -10,9 +10,9 @@
     PSSpecifier *_spinnerSpecifier;
 }
 
-@property(assign,readonly) NSArray * appActivitySpecifiers;
-@property(assign,readonly) PSSpecifier * filesystemMetadataSnapshotSpecifier;
-@property(assign,readonly) PSSpecifier * spinnerSpecifier;
+@property (readonly) NSArray *appActivitySpecifiers;
+@property (readonly) PSSpecifier *filesystemMetadataSnapshotSpecifier;
+@property (readonly) PSSpecifier *spinnerSpecifier;
 
 + (bool)isProblemReportingEnabled;
 

@@ -9,10 +9,10 @@
     NSDictionary *_options;
 }
 
-@property(assign,retain) ACDClient * client;
-@property(assign,retain) NSSet * grantedPermissions;
-@property(assign,readwrite) bool isGranted;
-@property(assign,copy) NSDictionary * options;
+@property (nonatomic, retain) ACDClient *client;
+@property (nonatomic, retain) NSSet *grantedPermissions;
+@property (nonatomic) bool isGranted;
+@property (nonatomic, copy) NSDictionary *options;
 
 - (void).cxx_destruct;
 - (id)client;

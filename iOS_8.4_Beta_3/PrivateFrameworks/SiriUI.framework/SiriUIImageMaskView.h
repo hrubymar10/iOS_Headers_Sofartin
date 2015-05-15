@@ -6,7 +6,7 @@
     UIImage *_maskImage;
 }
 
-@property(assign,retain) UIImage * maskImage;
+@property (nonatomic, retain) UIImage *maskImage;
 
 + (id)imageMaskViewWithDefaultChevron;
 + (id)imageMaskViewWithImage:(id)arg1;

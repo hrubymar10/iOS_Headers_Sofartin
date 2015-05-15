@@ -40,7 +40,7 @@
     UIPDFPageView *pageView;
 }
 
-@property(assign,readwrite) UIPDFPageView * pageView;
+@property (nonatomic) UIPDFPageView *pageView;
 
 - (void)_show;
 - (void)addBling;

@@ -11,9 +11,9 @@
     NSURL *_destinationURL;
 }
 
-@property(assign,readonly) double destinationCompressionQuality;
-@property(assign,readonly) struct CGSize { double x1; double x2; } destinationSize;
-@property(assign,readonly) NSURL * destinationURL;
+@property (nonatomic, readonly) double destinationCompressionQuality;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } destinationSize;
+@property (nonatomic, readonly) NSURL *destinationURL;
 
 + (id)destinationWithSize:(struct CGSize { double x1; double x2; })arg1 compressionQuality:(double)arg2 url:(id)arg3;
 + (bool)supportsSecureCoding;

@@ -10,10 +10,10 @@
     long long _replacementAnimationType;
 }
 
-@property(assign,retain) SiriUIAceObjectViewController * aceViewController;
-@property(assign,readwrite) long long insertionAnimationType;
-@property(assign,retain) UIView * replacedView;
-@property(assign,readwrite) long long replacementAnimationType;
+@property (nonatomic, retain) SiriUIAceObjectViewController *aceViewController;
+@property (nonatomic) long long insertionAnimationType;
+@property (nonatomic, retain) UIView *replacedView;
+@property (nonatomic) long long replacementAnimationType;
 
 + (id)reuseIdentifier;
 

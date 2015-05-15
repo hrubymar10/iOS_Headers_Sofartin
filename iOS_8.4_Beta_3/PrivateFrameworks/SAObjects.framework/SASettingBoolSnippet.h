@@ -4,8 +4,8 @@
 
 @interface SASettingBoolSnippet : SASettingSnippet
 
-@property(assign,readwrite) bool toggle;
-@property(assign,copy) NSNumber * value;
+@property (nonatomic) bool toggle;
+@property (nonatomic, copy) NSNumber *value;
 
 + (id)boolSnippet;
 + (id)boolSnippetWithDictionary:(id)arg1 context:(id)arg2;

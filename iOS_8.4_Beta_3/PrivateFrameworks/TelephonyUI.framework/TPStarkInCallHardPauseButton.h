@@ -6,7 +6,7 @@
     <TPStarkHardPauseButtonDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <TPStarkHardPauseButtonDelegate> * delegate;
+@property <TPStarkHardPauseButtonDelegate> *delegate;
 
 - (void)dealloc;
 - (id)delegate;

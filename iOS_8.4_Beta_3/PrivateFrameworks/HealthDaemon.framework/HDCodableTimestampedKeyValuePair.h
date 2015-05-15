@@ -16,18 +16,18 @@
     double _timestamp;
 }
 
-@property(assign,retain) NSData * bytesValue;
-@property(assign,readonly) bool hasBytesValue;
-@property(assign,readonly) bool hasKey;
-@property(assign,readwrite) bool hasNumberDoubleValue;
-@property(assign,readwrite) bool hasNumberIntValue;
-@property(assign,readonly) bool hasStringValue;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSString * key;
-@property(assign,readwrite) double numberDoubleValue;
-@property(assign,readwrite) long long numberIntValue;
-@property(assign,retain) NSString * stringValue;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic, retain) NSData *bytesValue;
+@property (nonatomic, readonly) bool hasBytesValue;
+@property (nonatomic, readonly) bool hasKey;
+@property (nonatomic) bool hasNumberDoubleValue;
+@property (nonatomic) bool hasNumberIntValue;
+@property (nonatomic, readonly) bool hasStringValue;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSString *key;
+@property (nonatomic) double numberDoubleValue;
+@property (nonatomic) long long numberIntValue;
+@property (nonatomic, retain) NSString *stringValue;
+@property (nonatomic) double timestamp;
 
 - (void).cxx_destruct;
 - (id)bytesValue;

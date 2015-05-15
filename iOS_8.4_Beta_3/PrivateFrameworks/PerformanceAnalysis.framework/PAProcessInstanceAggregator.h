@@ -9,12 +9,12 @@
     unsigned long long _timestampsDisplayOffset;
 }
 
-@property(assign,readonly) bool hasTargetProcess;
-@property(assign,copy) NSString * headerNote;
-@property(assign,readwrite) unsigned long long idleWorkQueueFrameAddress;
-@property(assign,readwrite) bool printHeavyStacks;
-@property(assign,readwrite) bool printSpinSignatureStack;
-@property(assign,readwrite) unsigned long long stackshotFrameAddress;
+@property (readonly) bool hasTargetProcess;
+@property (copy) NSString *headerNote;
+@property unsigned long long idleWorkQueueFrameAddress;
+@property bool printHeavyStacks;
+@property bool printSpinSignatureStack;
+@property unsigned long long stackshotFrameAddress;
 
 - (void)dealloc;
 - (int)displayTimeIndexForTimestampIndex:(unsigned long long)arg1;

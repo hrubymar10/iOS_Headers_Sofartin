@@ -12,10 +12,10 @@
     bool mTraceLevelSet;
 }
 
-@property(assign,readwrite) unsigned long long bufferSize;
-@property(assign,readonly) NSURL * lastTraceFileURL;
-@property(assign,copy) NSString * tag;
-@property(assign,readwrite) unsigned int traceLevel;
+@property unsigned long long bufferSize;
+@property (readonly) NSURL *lastTraceFileURL;
+@property (copy) NSString *tag;
+@property unsigned int traceLevel;
 
 + (id)_singletonAlloc;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;

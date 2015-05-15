@@ -13,14 +13,14 @@
     UISearchBar *_searchBar;
 }
 
-@property(assign,readwrite) bool appendRadioTabParameter;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicSearchHintsViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UISearchBar * searchBar;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool appendRadioTabParameter;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicSearchHintsViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UISearchBar *searchBar;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_setResponse:(id)arg1 error:(id)arg2;

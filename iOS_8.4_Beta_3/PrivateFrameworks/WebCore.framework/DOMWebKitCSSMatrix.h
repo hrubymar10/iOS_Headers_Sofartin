@@ -4,28 +4,28 @@
 
 @interface DOMWebKitCSSMatrix : DOMObject
 
-@property(assign,readwrite) double a;
-@property(assign,readwrite) double b;
-@property(assign,readwrite) double c;
-@property(assign,readwrite) double d;
-@property(assign,readwrite) double e;
-@property(assign,readwrite) double f;
-@property(assign,readwrite) double m11;
-@property(assign,readwrite) double m12;
-@property(assign,readwrite) double m13;
-@property(assign,readwrite) double m14;
-@property(assign,readwrite) double m21;
-@property(assign,readwrite) double m22;
-@property(assign,readwrite) double m23;
-@property(assign,readwrite) double m24;
-@property(assign,readwrite) double m31;
-@property(assign,readwrite) double m32;
-@property(assign,readwrite) double m33;
-@property(assign,readwrite) double m34;
-@property(assign,readwrite) double m41;
-@property(assign,readwrite) double m42;
-@property(assign,readwrite) double m43;
-@property(assign,readwrite) double m44;
+@property double a;
+@property double b;
+@property double c;
+@property double d;
+@property double e;
+@property double f;
+@property double m11;
+@property double m12;
+@property double m13;
+@property double m14;
+@property double m21;
+@property double m22;
+@property double m23;
+@property double m24;
+@property double m31;
+@property double m32;
+@property double m33;
+@property double m34;
+@property double m41;
+@property double m42;
+@property double m43;
+@property double m44;
 
 - (double)a;
 - (double)b;

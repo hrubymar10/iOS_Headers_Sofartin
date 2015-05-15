@@ -4,13 +4,13 @@
 
 @interface SASportsNewsItem : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * link;
-@property(assign,copy) NSString * summary;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURL *link;
+@property (nonatomic, copy) NSString *summary;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
 
 + (id)newsItem;
 + (id)newsItemWithDictionary:(id)arg1 context:(id)arg2;

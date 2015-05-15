@@ -7,7 +7,7 @@
     bool _useFakeEffectSource;
 }
 
-@property(assign,readwrite) bool useFakeEffectSource;
+@property (nonatomic) bool useFakeEffectSource;
 
 - (void)layoutSubviews;
 - (void)setUseFakeEffectSource:(bool)arg1;

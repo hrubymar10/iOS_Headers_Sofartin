@@ -8,9 +8,9 @@
     id _userInfo;
 }
 
-@property(assign,readwrite) bool enabled;
-@property(assign,retain) NSString * title;
-@property(assign,retain) id userInfo;
+@property bool enabled;
+@property (retain) NSString *title;
+@property (retain) id userInfo;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

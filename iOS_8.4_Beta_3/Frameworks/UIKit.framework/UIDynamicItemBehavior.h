@@ -24,13 +24,13 @@
     bool _useDefaultViewPropertiesApplier;
 }
 
-@property(assign,readwrite) bool allowsRotation;
-@property(assign,readwrite) double angularResistance;
-@property(assign,readwrite) double density;
-@property(assign,readwrite) double elasticity;
-@property(assign,readwrite) double friction;
-@property(assign,copy) NSArray * items;
-@property(assign,readwrite) double resistance;
+@property (nonatomic) bool allowsRotation;
+@property (nonatomic) double angularResistance;
+@property (nonatomic) double density;
+@property (nonatomic) double elasticity;
+@property (nonatomic) double friction;
+@property (nonatomic, readonly, copy) NSArray *items;
+@property (nonatomic) double resistance;
 
 - (double)_angleForItem:(id)arg1;
 - (double)_angularResistanceForItem:(id)arg1;

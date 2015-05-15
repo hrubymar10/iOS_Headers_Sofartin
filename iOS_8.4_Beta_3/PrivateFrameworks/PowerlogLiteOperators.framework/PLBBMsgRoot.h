@@ -13,14 +13,14 @@
     NSNumber *_msgType;
 }
 
-@property(assign,retain) PLAgent * agent;
-@property(assign,retain) NSDate * msgDate;
-@property(assign,retain) NSDictionary * msgEntry;
-@property(assign,retain) NSDictionary * msgKVPairs;
-@property(assign,retain) NSString * msgName;
-@property(assign,retain) NSString * msgPayload;
-@property(assign,retain) NSString * msgProcErr;
-@property(assign,retain) NSNumber * msgType;
+@property (nonatomic, retain) PLAgent *agent;
+@property (nonatomic, retain) NSDate *msgDate;
+@property (nonatomic, retain) NSDictionary *msgEntry;
+@property (nonatomic, retain) NSDictionary *msgKVPairs;
+@property (nonatomic, retain) NSString *msgName;
+@property (nonatomic, retain) NSString *msgPayload;
+@property (nonatomic, retain) NSString *msgProcErr;
+@property (nonatomic, retain) NSNumber *msgType;
 
 - (void).cxx_destruct;
 - (id)agent;

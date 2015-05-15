@@ -6,13 +6,13 @@
     bool _fixed;
 }
 
-@property(assign,retain) IKBackgroundElement * background;
-@property(assign,readonly) UIColor * backgroundColor;
-@property(assign,retain) NSArray * buttons;
-@property(getter=isFixed,assign,readonly) bool fixed;
-@property(assign,retain) IKLockupElement * lockup;
-@property(assign,retain) IKTextElement * subtitle;
-@property(assign,retain) IKTextElement * title;
+@property (nonatomic, readonly, retain) IKBackgroundElement *background;
+@property (nonatomic, readonly) UIColor *backgroundColor;
+@property (nonatomic, readonly, retain) NSArray *buttons;
+@property (getter=isFixed, nonatomic, readonly) bool fixed;
+@property (nonatomic, readonly, retain) IKLockupElement *lockup;
+@property (nonatomic, readonly, retain) IKTextElement *subtitle;
+@property (nonatomic, readonly, retain) IKTextElement *title;
 
 - (id)background;
 - (id)backgroundColor;

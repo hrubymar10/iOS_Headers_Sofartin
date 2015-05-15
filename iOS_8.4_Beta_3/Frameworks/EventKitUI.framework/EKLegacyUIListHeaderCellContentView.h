@@ -8,9 +8,9 @@
     bool _showWeekNumber;
 }
 
-@property(assign,readwrite) double date;
-@property(assign,readwrite) bool indentsForDots;
-@property(assign,readwrite) bool showWeekNumber;
+@property (nonatomic) double date;
+@property (nonatomic) bool indentsForDots;
+@property (nonatomic) bool showWeekNumber;
 
 - (id)_normalTextColor;
 - (id)_normalTextShadowColor;

@@ -7,12 +7,12 @@
     bool valid;
 }
 
-@property(assign,readonly) NSDictionary * currentState;
-@property(assign,readonly) bool enabled;
-@property(assign,readonly) bool expires;
-@property(assign,readonly) NSDate * expiryDate;
-@property(assign,readwrite) unsigned long long priority;
-@property(assign,readwrite) bool valid;
+@property (readonly) NSDictionary *currentState;
+@property (readonly) bool enabled;
+@property (readonly) bool expires;
+@property (readonly) NSDate *expiryDate;
+@property unsigned long long priority;
+@property bool valid;
 
 - (void)calculateBONForCurrentLevel:(float)arg1 andChargeState:(bool)arg2 atDate:(id)arg3 onQueue:(id)arg4 usingHandler:(id)arg5;
 - (id)currentState;

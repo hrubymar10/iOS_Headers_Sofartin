@@ -25,12 +25,12 @@
     GKSimpleTimer *_timeoutTimer;
 }
 
-@property(assign,copy) id connectedHandler;
-@property(assign,copy) NSString * localServiceName;
-@property(assign,copy) id receiveDataHandler;
-@property(assign,copy) NSString * remoteServiceName;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * syncQueue;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * targetQueue;
+@property (nonatomic, copy) id connectedHandler;
+@property (nonatomic, copy) NSString *localServiceName;
+@property (nonatomic, copy) id receiveDataHandler;
+@property (nonatomic, copy) NSString *remoteServiceName;
+@property (nonatomic) NSObject<OS_dispatch_queue> *syncQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> *targetQueue;
 
 + (void)checkConstants;
 + (unsigned long long)receiveDataLimit;

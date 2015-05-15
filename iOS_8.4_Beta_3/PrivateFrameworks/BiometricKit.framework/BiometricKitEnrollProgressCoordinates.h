@@ -8,9 +8,9 @@
     double _y;
 }
 
-@property(assign,readwrite) double angle;
-@property(assign,readwrite) double x;
-@property(assign,readwrite) double y;
+@property (nonatomic) double angle;
+@property (nonatomic) double x;
+@property (nonatomic) double y;
 
 - (double)angle;
 - (void)setAngle:(double)arg1;

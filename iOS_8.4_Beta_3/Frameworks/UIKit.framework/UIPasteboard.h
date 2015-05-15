@@ -6,19 +6,19 @@
     NSString *_name;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,copy) NSArray * URLs;
-@property(assign,readonly) long long changeCount;
-@property(assign,copy) UIColor * color;
-@property(assign,copy) NSArray * colors;
-@property(assign,copy) UIImage * image;
-@property(assign,copy) NSArray * images;
-@property(assign,copy) NSArray * items;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) long long numberOfItems;
-@property(getter=isPersistent,assign,readwrite) bool persistent;
-@property(assign,copy) NSString * string;
-@property(assign,copy) NSArray * strings;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, copy) NSArray *URLs;
+@property (nonatomic, readonly) long long changeCount;
+@property (nonatomic, copy) UIColor *color;
+@property (nonatomic, copy) NSArray *colors;
+@property (nonatomic, copy) UIImage *image;
+@property (nonatomic, copy) NSArray *images;
+@property (nonatomic, copy) NSArray *items;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) long long numberOfItems;
+@property (getter=isPersistent, nonatomic) bool persistent;
+@property (nonatomic, copy) NSString *string;
+@property (nonatomic, copy) NSArray *strings;
 
 + (id)_findPasteboard;
 + (id)_printPasteboard;

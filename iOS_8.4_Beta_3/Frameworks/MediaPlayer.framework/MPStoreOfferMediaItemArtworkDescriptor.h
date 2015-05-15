@@ -14,7 +14,7 @@
     NSDictionary *_screenshotURLs;
 }
 
-@property(assign,readonly) NSString * cacheID;
+@property (nonatomic, readonly) NSString *cacheID;
 
 - (void).cxx_destruct;
 - (id)_availableSizesForArtworkURLs:(id)arg1;

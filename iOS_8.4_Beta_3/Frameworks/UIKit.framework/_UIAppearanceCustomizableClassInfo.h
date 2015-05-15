@@ -11,10 +11,10 @@
     bool _isGuideClassRoot;
 }
 
-@property(assign,readonly) NSString * _appearanceNodeKey;
-@property(assign,readonly) Class _customizableViewClass;
-@property(assign,readonly) Class _guideClass;
-@property(assign,readonly) unsigned long long _hash;
+@property (nonatomic, readonly) NSString *_appearanceNodeKey;
+@property (nonatomic, readonly) Class _customizableViewClass;
+@property (nonatomic, readonly) Class _guideClass;
+@property (nonatomic, readonly) unsigned long long _hash;
 
 + (id)_customizableClassInfoForViewClass:(Class)arg1 withGuideClass:(Class)arg2;
 

@@ -7,8 +7,8 @@
     NSString *_identifier;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_source> * connectionRequestTimer;
-@property(assign,retain) NSString * identifier;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *connectionRequestTimer;
+@property (nonatomic, retain) NSString *identifier;
 
 + (id)connectionRequestTupleWithTimer:(id)arg1 identifier:(id)arg2;
 

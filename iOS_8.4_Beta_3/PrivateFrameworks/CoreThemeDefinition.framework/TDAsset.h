@@ -6,11 +6,11 @@
     unsigned int _scaleFactor;
 }
 
-@property(assign,readonly) NSString * baseName;
-@property(assign,retain) NSString * category;
-@property(assign,retain) NSString * name;
-@property(assign,retain) TDThemeBitSource * source;
-@property(assign,retain) TDTemplateRenderingMode * templateRenderingMode;
+@property (nonatomic, readonly) NSString *baseName;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) TDThemeBitSource *source;
+@property (nonatomic, retain) TDTemplateRenderingMode *templateRenderingMode;
 
 + (id)_filenameRegex;
 + (long long)idiomFromImageFilename:(id)arg1;

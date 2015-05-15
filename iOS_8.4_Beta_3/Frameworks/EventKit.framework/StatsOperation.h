@@ -8,9 +8,9 @@
     int _type;
 }
 
-@property(assign,readwrite) double doubleValue;
-@property(assign,readwrite) long long intValue;
-@property(assign,readwrite) int type;
+@property double doubleValue;
+@property long long intValue;
+@property int type;
 
 - (double)doubleValue;
 - (id)initWithType:(int)arg1 doubleValue:(double)arg2;

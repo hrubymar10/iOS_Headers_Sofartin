@@ -40,14 +40,14 @@
     } _startPoint;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } adjustedPoint;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } currentSelectionPoint;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } initialSelectionPoint;
-@property(assign,readwrite) bool instantHighlightMode;
-@property(assign,readonly) bool isTracking;
-@property(assign,readwrite) UIPDFPageView * pageView;
-@property(assign,readonly) bool rangeMode;
-@property(assign,readonly) <UIPDFSelectionWidget> * selectionWidget;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } adjustedPoint;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } currentSelectionPoint;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } initialSelectionPoint;
+@property (nonatomic) bool instantHighlightMode;
+@property (nonatomic, readonly) bool isTracking;
+@property (nonatomic) UIPDFPageView *pageView;
+@property (nonatomic, readonly) bool rangeMode;
+@property (nonatomic, readonly) <UIPDFSelectionWidget> *selectionWidget;
 
 - (void)addSelectionWidget:(id)arg1;
 - (void)adjustSelection:(struct CGPoint { double x1; double x2; })arg1;

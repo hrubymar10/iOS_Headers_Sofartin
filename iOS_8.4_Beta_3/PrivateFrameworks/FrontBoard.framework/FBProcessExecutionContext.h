@@ -15,16 +15,16 @@
     double _watchdogExtension;
 }
 
-@property(assign,retain) NSArray * arguments;
-@property(assign,readwrite) bool checkForLeaks;
-@property(assign,readwrite) bool disableASLR;
-@property(assign,retain) NSDictionary * environment;
-@property(assign,readwrite) unsigned int launchAssertionFlags;
-@property(assign,readwrite) long long launchIntent;
-@property(assign,retain) NSURL * standardErrorURL;
-@property(assign,retain) NSURL * standardOutputURL;
-@property(assign,readwrite) bool waitForDebugger;
-@property(assign,readwrite) double watchdogExtension;
+@property (nonatomic, retain) NSArray *arguments;
+@property (nonatomic) bool checkForLeaks;
+@property (nonatomic) bool disableASLR;
+@property (nonatomic, retain) NSDictionary *environment;
+@property (nonatomic) unsigned int launchAssertionFlags;
+@property (nonatomic) long long launchIntent;
+@property (nonatomic, retain) NSURL *standardErrorURL;
+@property (nonatomic, retain) NSURL *standardOutputURL;
+@property (nonatomic) bool waitForDebugger;
+@property (nonatomic) double watchdogExtension;
 
 + (double)watchdogIntervalForLaunchIntent:(long long)arg1;
 

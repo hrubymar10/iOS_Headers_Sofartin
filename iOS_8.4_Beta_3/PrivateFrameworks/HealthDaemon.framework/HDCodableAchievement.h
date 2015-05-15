@@ -17,18 +17,18 @@
     NSData *_uuid;
 }
 
-@property(assign,readwrite) long long achievementType;
-@property(assign,readwrite) double completedDate;
-@property(assign,readwrite) double doubleValue;
-@property(assign,retain) NSData * extraData;
-@property(assign,readwrite) bool hasAchievementType;
-@property(assign,readwrite) bool hasCompletedDate;
-@property(assign,readwrite) bool hasDoubleValue;
-@property(assign,readonly) bool hasExtraData;
-@property(assign,readwrite) bool hasIntValue;
-@property(assign,readonly) bool hasUuid;
-@property(assign,readwrite) long long intValue;
-@property(assign,retain) NSData * uuid;
+@property (nonatomic) long long achievementType;
+@property (nonatomic) double completedDate;
+@property (nonatomic) double doubleValue;
+@property (nonatomic, retain) NSData *extraData;
+@property (nonatomic) bool hasAchievementType;
+@property (nonatomic) bool hasCompletedDate;
+@property (nonatomic) bool hasDoubleValue;
+@property (nonatomic, readonly) bool hasExtraData;
+@property (nonatomic) bool hasIntValue;
+@property (nonatomic, readonly) bool hasUuid;
+@property (nonatomic) long long intValue;
+@property (nonatomic, retain) NSData *uuid;
 
 - (void).cxx_destruct;
 - (long long)achievementType;

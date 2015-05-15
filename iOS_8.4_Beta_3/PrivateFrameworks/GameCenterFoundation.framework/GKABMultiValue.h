@@ -4,7 +4,7 @@
 
 @interface GKABMultiValue : GKABObject
 
-@property(assign,readonly) void* ABMultiValue;
+@property (readonly) void*ABMultiValue;
 
 - (void*)ABMultiValue;
 - (id)allValues;

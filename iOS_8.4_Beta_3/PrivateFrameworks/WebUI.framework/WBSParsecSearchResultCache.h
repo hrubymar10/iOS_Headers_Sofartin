@@ -9,8 +9,8 @@
     NSMutableDictionary *_resultSetCache;
 }
 
-@property(assign,readonly) NSArray * allCachedQueries;
-@property(assign,readonly) NSArray * allCachedResultIdentifiers;
+@property (nonatomic, readonly) NSArray *allCachedQueries;
+@property (nonatomic, readonly) NSArray *allCachedResultIdentifiers;
 
 - (void).cxx_destruct;
 - (id)allCachedQueries;

@@ -11,13 +11,13 @@
     void *_reachabilityRef;
 }
 
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * _queue;
-@property(assign,readonly) bool connectionRequired;
-@property(assign,readwrite) <IMReachabilityDelegate> * delegate;
-@property(assign,readwrite) unsigned long long flags;
-@property(assign,readwrite) bool gettingFlags;
-@property(assign,retain) NSString * reachabilityDescription;
-@property(assign,readwrite) void* reachabilityRef;
+@property (nonatomic) NSObject<OS_dispatch_queue> *_queue;
+@property (nonatomic, readonly) bool connectionRequired;
+@property (nonatomic) <IMReachabilityDelegate> *delegate;
+@property (nonatomic) unsigned long long flags;
+@property (nonatomic) bool gettingFlags;
+@property (nonatomic, retain) NSString *reachabilityDescription;
+@property (nonatomic) void*reachabilityRef;
 
 + (id)reachabilityWithHostName:(id)arg1;
 + (id)reachabilityWithLocalAddress:(id)arg1 remoteAddress:(id)arg2;

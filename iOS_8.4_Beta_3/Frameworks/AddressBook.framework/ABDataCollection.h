@@ -20,20 +20,20 @@
     int _totalGroups;
 }
 
-@property(assign,readwrite) bool isLocalSourceOnly;
-@property(assign,readwrite) bool isLocalSourceRemaining;
-@property(assign,readwrite) bool isMeCardHomeAddressSet;
-@property(assign,readwrite) bool isMeCardSet;
-@property(assign,readwrite) bool isMeCardWorkAddressSet;
-@property(assign,retain) NSMutableDictionary * propertyCountForRecordID;
-@property(assign,readwrite) bool runningUnitTests;
-@property(assign,retain) NSCountedSet * sourceTypeScalarKeys;
-@property(assign,readwrite) int totalContacts;
-@property(assign,readwrite) int totalContactsWithAnniversaries;
-@property(assign,readwrite) int totalContactsWithBirthdays;
-@property(assign,readwrite) int totalContactsWithPhotos;
-@property(assign,readwrite) int totalContactsWithYearOnBirthday;
-@property(assign,readwrite) int totalGroups;
+@property (nonatomic) bool isLocalSourceOnly;
+@property (nonatomic) bool isLocalSourceRemaining;
+@property (nonatomic) bool isMeCardHomeAddressSet;
+@property (nonatomic) bool isMeCardSet;
+@property (nonatomic) bool isMeCardWorkAddressSet;
+@property (nonatomic, retain) NSMutableDictionary *propertyCountForRecordID;
+@property (nonatomic) bool runningUnitTests;
+@property (nonatomic, retain) NSCountedSet *sourceTypeScalarKeys;
+@property (nonatomic) int totalContacts;
+@property (nonatomic) int totalContactsWithAnniversaries;
+@property (nonatomic) int totalContactsWithBirthdays;
+@property (nonatomic) int totalContactsWithPhotos;
+@property (nonatomic) int totalContactsWithYearOnBirthday;
+@property (nonatomic) int totalGroups;
 
 + (bool)isEnabled;
 + (void)logContactCreation:(long long)arg1;

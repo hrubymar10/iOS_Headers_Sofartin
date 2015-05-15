@@ -13,16 +13,16 @@
     bool _shouldHandleExternalChangeOnPersonViewControllers;
 }
 
-@property(assign,readonly) _UIAccessDeniedView * accessDeniedView;
-@property(assign,readonly) bool allowsCancel;
-@property(assign,readonly) bool allowsCardEditing;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isSearchingWithNoContactSelected;
-@property(assign,readonly) bool shouldShowGroups;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) CNContact * unsavedContact;
+@property (nonatomic, readonly) _UIAccessDeniedView *accessDeniedView;
+@property (readonly) bool allowsCancel;
+@property (readonly) bool allowsCardEditing;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isSearchingWithNoContactSelected;
+@property (readonly) bool shouldShowGroups;
+@property (readonly) Class superclass;
+@property (readonly) CNContact *unsavedContact;
 
 - (void)_applicationEnteringBackground;
 - (void)_applicationEnteringForeground;

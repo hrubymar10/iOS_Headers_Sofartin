@@ -7,7 +7,7 @@
     UIView *_checkmarkView;
 }
 
-@property(getter=isChecked,assign,readwrite) bool checked;
+@property (getter=isChecked, nonatomic) bool checked;
 
 - (void).cxx_destruct;
 - (id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2;

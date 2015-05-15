@@ -24,20 +24,20 @@
     NSString *_stationStringID;
 }
 
-@property(assign,copy) NSNumber * accountUniqueIdentifier;
-@property(assign,copy) NSDictionary * additionalRequestParameters;
-@property(assign,copy) NSData * heartbeatTokenData;
-@property(assign,readwrite) bool includeCleanTracksOnly;
-@property(assign,readwrite) unsigned long long numberOfTracks;
-@property(assign,copy) NSArray * playActivityFeedEvents;
-@property(assign,copy) RadioPlayEventCollection * playEventCollection;
-@property(assign,copy) RadioPlaybackContext * playbackContext;
-@property(assign,retain) SSVPlaybackLease * playbackLease;
-@property(assign,readwrite) long long reasonType;
-@property(assign,readwrite) bool shouldIncludeAsset;
-@property(assign,readwrite) bool shouldIncludeStationInResponse;
-@property(assign,readwrite) bool skipPromptForSeamlessPlayback;
-@property(assign,retain) RadioStationMatchContext * stationMatchContext;
+@property (nonatomic, readonly, copy) NSNumber *accountUniqueIdentifier;
+@property (nonatomic, copy) NSDictionary *additionalRequestParameters;
+@property (nonatomic, copy) NSData *heartbeatTokenData;
+@property (nonatomic) bool includeCleanTracksOnly;
+@property (nonatomic) unsigned long long numberOfTracks;
+@property (nonatomic, copy) NSArray *playActivityFeedEvents;
+@property (nonatomic, copy) RadioPlayEventCollection *playEventCollection;
+@property (nonatomic, copy) RadioPlaybackContext *playbackContext;
+@property (nonatomic, retain) SSVPlaybackLease *playbackLease;
+@property (nonatomic) long long reasonType;
+@property (nonatomic) bool shouldIncludeAsset;
+@property (nonatomic) bool shouldIncludeStationInResponse;
+@property (nonatomic) bool skipPromptForSeamlessPlayback;
+@property (nonatomic, retain) RadioStationMatchContext *stationMatchContext;
 
 - (void).cxx_destruct;
 - (void)_getPlaybackLeaseRequestParametersWithStoreBag:(id)arg1 leaseRequest:(id)arg2 completionHandler:(id)arg3;

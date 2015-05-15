@@ -8,11 +8,11 @@
     NSObject<OS_xpc_object> *_xpcObject;
 }
 
-@property(assign,readonly) NSArray * arguments;
-@property(assign,copy) NSError * error;
-@property(assign,readonly) NSString * name;
-@property(assign,copy) NSObject<NSCoding><NSCopying> * reply;
-@property(assign,copy) NSError * replyError;
+@property (nonatomic, readonly) NSArray *arguments;
+@property (nonatomic, copy) NSError *error;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, copy) NSObject<NSCoding><NSCopying> *reply;
+@property (nonatomic, copy) NSError *replyError;
 
 + (id)messageWithName:(id)arg1 arguments:(id)arg2;
 

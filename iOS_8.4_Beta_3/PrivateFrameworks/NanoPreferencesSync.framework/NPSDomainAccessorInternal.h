@@ -17,18 +17,18 @@
     unsigned long long _referenceCounter;
 }
 
-@property(assign,retain) NSMutableSet * dirtyKeysForWriting;
-@property(assign,retain) NSString * domain;
-@property(assign,retain) NSURL * domainURL;
-@property(assign,retain) NSObject<OS_dispatch_queue> * externalQueue;
-@property(assign,retain) NPSDomainAccessorFilePresenter * filePresenter;
-@property(assign,readwrite) bool hasReadFromDisk;
-@property(assign,retain) NSObject<OS_dispatch_queue> * internalQueue;
-@property(assign,retain) NSMutableDictionary * map;
-@property(assign,readwrite) bool nanoSettingsDirectoryExists;
-@property(assign,retain) NSUUID * pairingID;
-@property(assign,retain) NSString * pairingStorePath;
-@property(assign,readwrite) unsigned long long referenceCounter;
+@property (nonatomic, retain) NSMutableSet *dirtyKeysForWriting;
+@property (nonatomic, retain) NSString *domain;
+@property (nonatomic, retain) NSURL *domainURL;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *externalQueue;
+@property (nonatomic, retain) NPSDomainAccessorFilePresenter *filePresenter;
+@property (nonatomic) bool hasReadFromDisk;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *internalQueue;
+@property (nonatomic, retain) NSMutableDictionary *map;
+@property (nonatomic) bool nanoSettingsDirectoryExists;
+@property (nonatomic, retain) NSUUID *pairingID;
+@property (nonatomic, retain) NSString *pairingStorePath;
+@property (nonatomic) unsigned long long referenceCounter;
 
 + (void)applicationDidEnterBackground;
 + (void)applicationDidResume;

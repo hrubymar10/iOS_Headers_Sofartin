@@ -20,14 +20,14 @@
     NSMutableDictionary *_userAttributes;
 }
 
-@property(assign,readonly) SCNMaterialProperty * background;
-@property(assign,retain) id fogColor;
-@property(assign,readwrite) double fogDensityExponent;
-@property(assign,readwrite) double fogEndDistance;
-@property(assign,readwrite) double fogStartDistance;
-@property(getter=isPaused,assign,readwrite) bool paused;
-@property(assign,readonly) SCNPhysicsWorld * physicsWorld;
-@property(assign,readonly) SCNNode * rootNode;
+@property (nonatomic, readonly) SCNMaterialProperty *background;
+@property (nonatomic, retain) id fogColor;
+@property (nonatomic) double fogDensityExponent;
+@property (nonatomic) double fogEndDistance;
+@property (nonatomic) double fogStartDistance;
+@property (getter=isPaused, nonatomic) bool paused;
+@property (nonatomic, readonly) SCNPhysicsWorld *physicsWorld;
+@property (nonatomic, readonly) SCNNode *rootNode;
 
 + (id)SCNJSExportProtocol;
 + (SEL)jsConstructor;

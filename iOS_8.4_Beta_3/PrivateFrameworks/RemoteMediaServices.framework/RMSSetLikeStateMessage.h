@@ -15,14 +15,14 @@
     int _sessionIdentifier;
 }
 
-@property(assign,readwrite) unsigned long long databaseID;
-@property(assign,readwrite) bool hasDatabaseID;
-@property(assign,readwrite) bool hasItemID;
-@property(assign,readwrite) bool hasLikeState;
-@property(assign,readwrite) bool hasSessionIdentifier;
-@property(assign,readwrite) unsigned long long itemID;
-@property(assign,readwrite) int likeState;
-@property(assign,readwrite) int sessionIdentifier;
+@property (nonatomic) unsigned long long databaseID;
+@property (nonatomic) bool hasDatabaseID;
+@property (nonatomic) bool hasItemID;
+@property (nonatomic) bool hasLikeState;
+@property (nonatomic) bool hasSessionIdentifier;
+@property (nonatomic) unsigned long long itemID;
+@property (nonatomic) int likeState;
+@property (nonatomic) int sessionIdentifier;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

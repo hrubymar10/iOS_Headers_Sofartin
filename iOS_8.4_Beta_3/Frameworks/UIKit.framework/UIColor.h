@@ -6,10 +6,10 @@
     NSString *_systemColorName;
 }
 
-@property(assign,readonly) struct CGColor { }* CGColor;
-@property(assign,readonly) CIColor * CIColor;
-@property(assign,readonly) double MP_lightness;
-@property(getter=_systemColorName,setter=_setSystemColorName:,assign,retain) NSString * systemColorName;
+@property (nonatomic, readonly) struct CGColor { }*CGColor;
+@property (nonatomic, readonly) CIColor *CIColor;
+@property (nonatomic, readonly) double MP_lightness;
+@property (getter=_systemColorName, setter=_setSystemColorName:, nonatomic, retain) NSString *systemColorName;
 
 + (id)SCNJSExportProtocol;
 + (id)__halfTransparentBlackColor;

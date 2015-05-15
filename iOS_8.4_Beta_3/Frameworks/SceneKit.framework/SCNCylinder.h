@@ -12,10 +12,10 @@
     id _reserved;
 }
 
-@property(assign,readwrite) double height;
-@property(assign,readwrite) long long heightSegmentCount;
-@property(assign,readwrite) long long radialSegmentCount;
-@property(assign,readwrite) double radius;
+@property (nonatomic) double height;
+@property (nonatomic) long long heightSegmentCount;
+@property (nonatomic) long long radialSegmentCount;
+@property (nonatomic) double radius;
 
 + (id)SCNJSExportProtocol;
 + (id)cylinderWithRadius:(double)arg1 height:(double)arg2;

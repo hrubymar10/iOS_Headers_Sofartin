@@ -7,12 +7,12 @@
     IKJSPlaylist *_jsPlaylist;
 }
 
-@property(assign,readonly) <IKAppPlaylist> * appPlaylist;
-@property(assign,readonly) IKAppMediaItemBridge * currentMediaItem;
-@property(assign,readonly) IKJSPlaylist * jsPlaylist;
-@property(assign,readonly) unsigned long long length;
-@property(assign,readonly) IKAppMediaItemBridge * nextMediaItem;
-@property(assign,readonly) IKAppMediaItemBridge * previousMediaItem;
+@property (nonatomic, readonly) <IKAppPlaylist> *appPlaylist;
+@property (nonatomic, readonly) IKAppMediaItemBridge *currentMediaItem;
+@property (nonatomic, readonly) IKJSPlaylist *jsPlaylist;
+@property (readonly) unsigned long long length;
+@property (nonatomic, readonly) IKAppMediaItemBridge *nextMediaItem;
+@property (nonatomic, readonly) IKAppMediaItemBridge *previousMediaItem;
 
 - (void).cxx_destruct;
 - (id)appPlaylist;

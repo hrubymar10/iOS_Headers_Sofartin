@@ -7,10 +7,10 @@
     NSString *_stringValue;
 }
 
-@property(assign,readonly) bool hasLocale;
-@property(assign,readonly) bool hasStringValue;
-@property(assign,retain) NSString * locale;
-@property(assign,retain) NSString * stringValue;
+@property (nonatomic, readonly) bool hasLocale;
+@property (nonatomic, readonly) bool hasStringValue;
+@property (nonatomic, retain) NSString *locale;
+@property (nonatomic, retain) NSString *stringValue;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

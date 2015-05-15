@@ -11,12 +11,12 @@
     NSMutableArray *_traversedRouteIDs;
 }
 
-@property(assign,retain) NSData * directionResponseID;
-@property(assign,readonly) bool hasDirectionResponseID;
-@property(assign,readonly) struct { double x1; unsigned int x2; bool x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; }* stepFeedbacks;
-@property(assign,readonly) unsigned long long stepFeedbacksCount;
-@property(assign,retain) NSMutableArray * trafficRerouteFeedbacks;
-@property(assign,retain) NSMutableArray * traversedRouteIDs;
+@property (nonatomic, retain) NSData *directionResponseID;
+@property (nonatomic, readonly) bool hasDirectionResponseID;
+@property (nonatomic, readonly) struct { double x1; unsigned int x2; bool x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; }*stepFeedbacks;
+@property (nonatomic, readonly) unsigned long long stepFeedbacksCount;
+@property (nonatomic, retain) NSMutableArray *trafficRerouteFeedbacks;
+@property (nonatomic, retain) NSMutableArray *traversedRouteIDs;
 
 - (void)addStepFeedback:(struct { double x1; unsigned int x2; bool x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; })arg1;
 - (void)addTrafficRerouteFeedback:(id)arg1;

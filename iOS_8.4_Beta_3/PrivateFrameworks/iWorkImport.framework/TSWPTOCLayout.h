@@ -11,10 +11,10 @@
     } _maxSize;
 }
 
-@property(assign,readonly) TSWPTOCLayoutHint * hint;
-@property(assign,readonly) unsigned long long initialCharIndex;
-@property(getter=isLastLayoutInTOC,assign,readonly) bool lastLayoutInTOC;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } maxSize;
+@property (nonatomic, readonly) TSWPTOCLayoutHint *hint;
+@property (nonatomic, readonly) unsigned long long initialCharIndex;
+@property (getter=isLastLayoutInTOC, nonatomic, readonly) bool lastLayoutInTOC;
+@property (nonatomic) struct CGSize { double x1; double x2; } maxSize;
 
 - (id).cxx_construct;
 - (struct CGSize { double x1; double x2; })adjustedInsetsForTarget:(id)arg1;

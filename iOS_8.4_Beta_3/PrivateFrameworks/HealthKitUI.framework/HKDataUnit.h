@@ -12,11 +12,11 @@
     NSDictionary *_unitNameOverrides;
 }
 
-@property(assign,readonly) NSPredicate * chartingPredicate;
-@property(assign,readonly) HKObjectType * dataType;
-@property(assign,readwrite) long long keyboardType;
-@property(assign,readonly) NSString * labelDisplayName;
-@property(assign,readonly) double scalarValue;
+@property (nonatomic, readonly) NSPredicate *chartingPredicate;
+@property (nonatomic, readonly) HKObjectType *dataType;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic, readonly) NSString *labelDisplayName;
+@property (nonatomic, readonly) double scalarValue;
 
 - (void).cxx_destruct;
 - (void)_applyChartingProperties:(id)arg1;

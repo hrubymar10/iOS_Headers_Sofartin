@@ -10,9 +10,9 @@
     NSPersistentStore *_store;
 }
 
-@property(assign,readonly) NSManagedObjectContext * managedObjectContext;
-@property(assign,readonly) NSString * path;
-@property(assign,readwrite) long long version;
+@property (nonatomic, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, readonly) NSString *path;
+@property (nonatomic) long long version;
 
 + (bool)_addPersistentStoreWithURL:(id)arg1 toStoreCoordinator:(id)arg2 withOptions:(id)arg3 error:(id*)arg4;
 + (struct __CFString { }*)_copyRootPath;

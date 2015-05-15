@@ -6,8 +6,8 @@
     AVCaptureAudioChannelInternal_FigRecorder *_internal;
 }
 
-@property(assign,readonly) float averagePowerLevel;
-@property(assign,readonly) float peakHoldLevel;
+@property (nonatomic, readonly) float averagePowerLevel;
+@property (nonatomic, readonly) float peakHoldLevel;
 
 - (float)averagePowerLevel;
 - (void)dealloc;

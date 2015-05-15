@@ -6,7 +6,7 @@
     SSAccount *_iTunesAccount;
 }
 
-@property(assign,retain) SSAccount * iTunesAccount;
+@property (nonatomic, retain) SSAccount *iTunesAccount;
 
 + (Class)responseClass;
 

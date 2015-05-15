@@ -9,8 +9,8 @@
     NSArray *_screenshots;
 }
 
-@property(assign,readonly) SKUIScreenshot * primaryScreenshot;
-@property(assign,readonly) NSArray * screenshots;
+@property (nonatomic, readonly) SKUIScreenshot *primaryScreenshot;
+@property (nonatomic, readonly) NSArray *screenshots;
 
 - (void).cxx_destruct;
 - (id)childItemForIdentifier:(id)arg1;

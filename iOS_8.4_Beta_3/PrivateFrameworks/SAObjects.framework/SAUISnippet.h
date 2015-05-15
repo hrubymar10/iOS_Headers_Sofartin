@@ -4,7 +4,7 @@
 
 @interface SAUISnippet : SAAceView
 
-@property(assign,retain) SAUIConfirmationOptions * confirmationOptions;
+@property (nonatomic, retain) SAUIConfirmationOptions *confirmationOptions;
 
 + (id)snippet;
 + (id)snippetWithDictionary:(id)arg1 context:(id)arg2;

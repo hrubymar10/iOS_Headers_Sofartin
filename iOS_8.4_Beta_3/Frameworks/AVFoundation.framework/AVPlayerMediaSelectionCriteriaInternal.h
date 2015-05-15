@@ -13,14 +13,14 @@
     NSArray *_requiredMediaCharacteristics;
 }
 
-@property(assign,readwrite) bool precludeMultichannelAudio;
-@property(assign,retain) NSArray * precludedMediaCharacteristics;
-@property(assign,retain) NSArray * precludedMediaSubTypes;
-@property(assign,readwrite) bool preferMultichannelAudio;
-@property(assign,retain) NSArray * preferredLanguages;
-@property(assign,retain) NSArray * preferredMediaCharacteristics;
-@property(assign,retain) NSArray * preferredMediaSubTypes;
-@property(assign,retain) NSArray * requiredMediaCharacteristics;
+@property (nonatomic) bool precludeMultichannelAudio;
+@property (nonatomic, retain) NSArray *precludedMediaCharacteristics;
+@property (nonatomic, retain) NSArray *precludedMediaSubTypes;
+@property (nonatomic) bool preferMultichannelAudio;
+@property (nonatomic, retain) NSArray *preferredLanguages;
+@property (nonatomic, retain) NSArray *preferredMediaCharacteristics;
+@property (nonatomic, retain) NSArray *preferredMediaSubTypes;
+@property (nonatomic, retain) NSArray *requiredMediaCharacteristics;
 
 - (void)dealloc;
 - (bool)precludeMultichannelAudio;

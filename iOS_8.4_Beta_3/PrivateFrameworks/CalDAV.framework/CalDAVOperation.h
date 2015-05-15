@@ -8,8 +8,8 @@
     <CalDAVPrincipal> *_principal;
 }
 
-@property(assign,readonly) NSMutableSet * outstandingTaskGroups;
-@property(assign,readonly) <CalDAVPrincipal> * principal;
+@property (nonatomic, readonly) NSMutableSet *outstandingTaskGroups;
+@property (nonatomic, readonly) <CalDAVPrincipal> *principal;
 
 - (void)_tearDownAllTaskGroupsWithBlock:(id)arg1;
 - (void)bailWithError:(id)arg1;

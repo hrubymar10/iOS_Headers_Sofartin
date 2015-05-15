@@ -19,17 +19,17 @@
     MPUTransportControlsView *_transportControlsView;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIPanGestureRecognizer * nowPlayingPresentationPanRecognizer;
-@property(assign,readonly) UIView<MusicPlaybackProgressScrubbing> * playbackProgressView;
-@property(assign,retain) MPAVController * player;
-@property(assign,readonly) MPUTransportControlsView * secondaryTransportControlsView;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) MusicNowPlayingTitlesView * titlesView;
-@property(assign,readonly) MPUTransportControlsView * transportControlsView;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIPanGestureRecognizer *nowPlayingPresentationPanRecognizer;
+@property (nonatomic, readonly) UIView<MusicPlaybackProgressScrubbing> *playbackProgressView;
+@property (nonatomic, retain) MPAVController *player;
+@property (nonatomic, readonly) MPUTransportControlsView *secondaryTransportControlsView;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) MusicNowPlayingTitlesView *titlesView;
+@property (nonatomic, readonly) MPUTransportControlsView *transportControlsView;
 
 - (void).cxx_destruct;
 - (void)_currentItemTitlesDidChangeNotification:(id)arg1;

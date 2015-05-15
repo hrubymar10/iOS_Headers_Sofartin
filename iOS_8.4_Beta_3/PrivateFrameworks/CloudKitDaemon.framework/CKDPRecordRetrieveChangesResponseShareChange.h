@@ -11,12 +11,12 @@
     CKDPShareIdentifier *_shareIdentifier;
 }
 
-@property(assign,readwrite) int changeType;
-@property(assign,readwrite) bool hasChangeType;
-@property(assign,readonly) bool hasShare;
-@property(assign,readonly) bool hasShareIdentifier;
-@property(assign,retain) CKDPShare * share;
-@property(assign,retain) CKDPShareIdentifier * shareIdentifier;
+@property (nonatomic) int changeType;
+@property (nonatomic) bool hasChangeType;
+@property (nonatomic, readonly) bool hasShare;
+@property (nonatomic, readonly) bool hasShareIdentifier;
+@property (nonatomic, retain) CKDPShare *share;
+@property (nonatomic, retain) CKDPShareIdentifier *shareIdentifier;
 
 - (void).cxx_destruct;
 - (int)changeType;

@@ -7,8 +7,8 @@
     unsigned long long mSeriesIndex;
 }
 
-@property(assign,readonly) int axisType;
-@property(assign,readonly) unsigned long long seriesIndex;
+@property (nonatomic, readonly) int axisType;
+@property (nonatomic, readonly) unsigned long long seriesIndex;
 
 + (id)seriesDimensionWithSeriesIndex:(unsigned long long)arg1 axisType:(int)arg2;
 

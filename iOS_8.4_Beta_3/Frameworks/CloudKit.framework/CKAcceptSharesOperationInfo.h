@@ -6,7 +6,7 @@
     NSArray *_shareURLsToAccept;
 }
 
-@property(assign,retain) NSArray * shareURLsToAccept;
+@property (nonatomic, retain) NSArray *shareURLsToAccept;
 
 + (bool)supportsSecureCoding;
 

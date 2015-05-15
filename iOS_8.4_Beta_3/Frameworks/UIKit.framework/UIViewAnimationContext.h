@@ -9,10 +9,10 @@
     NSArray *_viewAnimations;
 }
 
-@property(assign,readwrite) long long animationCount;
-@property(assign,readonly) id completionHandler;
-@property(assign,retain) UITableViewCell * swipeToDeleteCell;
-@property(assign,retain) NSArray * viewAnimations;
+@property (nonatomic) long long animationCount;
+@property (nonatomic, readonly) id completionHandler;
+@property (nonatomic, retain) UITableViewCell *swipeToDeleteCell;
+@property (nonatomic, retain) NSArray *viewAnimations;
 
 - (long long)animationCount;
 - (id)completionHandler;

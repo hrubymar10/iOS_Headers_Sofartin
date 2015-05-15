@@ -8,17 +8,17 @@
     PKXPCService *_remoteService;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) NSString * defaultPaymentPassUniqueIdentifier;
-@property(assign,readwrite) <PKPaymentServiceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool paymentDeviceIsAvailable;
-@property(assign,readonly) bool paymentDeviceIsInField;
-@property(assign,readonly) bool paymentDeviceIsInRestrictedMode;
-@property(assign,readonly) NSString * secureElementIdentifier;
-@property(assign,retain) PKPaymentWebServiceContext * sharedPaymentWebServiceContext;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) NSString *defaultPaymentPassUniqueIdentifier;
+@property (nonatomic) <PKPaymentServiceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool paymentDeviceIsAvailable;
+@property (nonatomic, readonly) bool paymentDeviceIsInField;
+@property (nonatomic, readonly) bool paymentDeviceIsInRestrictedMode;
+@property (nonatomic, readonly) NSString *secureElementIdentifier;
+@property (nonatomic, retain) PKPaymentWebServiceContext *sharedPaymentWebServiceContext;
+@property (readonly) Class superclass;
 
 + (bool)paymentServiceIsAvailable;
 

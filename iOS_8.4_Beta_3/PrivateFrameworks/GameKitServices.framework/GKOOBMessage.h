@@ -6,7 +6,7 @@
     unsigned short _type;
 }
 
-@property(assign,readonly) unsigned short type;
+@property (readonly) unsigned short type;
 
 - (bool)_checkSize:(unsigned long long)arg1;
 - (bool)_checkType:(unsigned short)arg1;

@@ -6,8 +6,8 @@
     NSString *_uuid;
 }
 
-@property(assign,readonly) bool hasUuid;
-@property(assign,retain) NSString * uuid;
+@property (nonatomic, readonly) bool hasUuid;
+@property (nonatomic, retain) NSString *uuid;
 
 + (id)options;
 

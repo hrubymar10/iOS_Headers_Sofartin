@@ -13,8 +13,8 @@
     int _type;
 }
 
-@property(assign,readonly) EKCalendarNotification * notification;
-@property(assign,readonly) int type;
+@property (nonatomic, readonly) EKCalendarNotification *notification;
+@property (nonatomic, readonly) int type;
 
 - (long long)_notificationTypeForResourceChange:(id)arg1 notificationType:(int)arg2;
 - (void)dealloc;

@@ -6,7 +6,7 @@
     <NNMKMessagesSyncServiceServerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <NNMKMessagesSyncServiceServerDelegate> * delegate;
+@property (nonatomic) <NNMKMessagesSyncServiceServerDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)addMessages:(id)arg1 notificationPriority:(bool)arg2;

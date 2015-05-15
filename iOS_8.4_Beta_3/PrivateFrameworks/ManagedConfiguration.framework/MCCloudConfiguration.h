@@ -7,9 +7,9 @@
     NSDictionary *_memberQueueDetails;
 }
 
-@property(assign,copy) NSDictionary * details;
-@property(assign,retain) NSObject<OS_dispatch_queue> * memberQueue;
-@property(assign,retain) NSDictionary * memberQueueDetails;
+@property (nonatomic, copy) NSDictionary *details;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *memberQueue;
+@property (nonatomic, retain) NSDictionary *memberQueueDetails;
 
 + (id)sharedConfiguration;
 

@@ -14,16 +14,16 @@
     int _maxManeuverTypeSupported;
 }
 
-@property(assign,retain) NSString * appMajorVersion;
-@property(assign,retain) NSString * appMinorVersion;
-@property(assign,retain) NSString * hardwareModel;
-@property(assign,readonly) bool hasAppMajorVersion;
-@property(assign,readonly) bool hasAppMinorVersion;
-@property(assign,readonly) bool hasHardwareModel;
-@property(assign,readwrite) bool hasInternalInstall;
-@property(assign,readwrite) bool hasMaxManeuverTypeSupported;
-@property(assign,readwrite) bool internalInstall;
-@property(assign,readwrite) int maxManeuverTypeSupported;
+@property (nonatomic, retain) NSString *appMajorVersion;
+@property (nonatomic, retain) NSString *appMinorVersion;
+@property (nonatomic, retain) NSString *hardwareModel;
+@property (nonatomic, readonly) bool hasAppMajorVersion;
+@property (nonatomic, readonly) bool hasAppMinorVersion;
+@property (nonatomic, readonly) bool hasHardwareModel;
+@property (nonatomic) bool hasInternalInstall;
+@property (nonatomic) bool hasMaxManeuverTypeSupported;
+@property (nonatomic) bool internalInstall;
+@property (nonatomic) int maxManeuverTypeSupported;
 
 - (id)appMajorVersion;
 - (id)appMinorVersion;

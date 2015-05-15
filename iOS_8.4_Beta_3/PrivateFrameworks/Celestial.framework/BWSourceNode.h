@@ -6,8 +6,8 @@
     <BWSourceNodeErrorDelegate> *_errorDelegate;
 }
 
-@property(assign,readonly) struct OpaqueCMClock { }* clock;
-@property(assign,readwrite) <BWSourceNodeErrorDelegate> * errorDelegate;
+@property (nonatomic, readonly) struct OpaqueCMClock { }*clock;
+@property (nonatomic) <BWSourceNodeErrorDelegate> *errorDelegate;
 
 - (struct OpaqueCMClock { }*)clock;
 - (id)errorDelegate;

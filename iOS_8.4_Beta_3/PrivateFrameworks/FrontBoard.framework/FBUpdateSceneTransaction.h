@@ -24,19 +24,19 @@
     bool _willCommitUpdateFinished;
 }
 
-@property(assign,retain) id context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool destroyed;
-@property(assign,retain) FBSDisplay * display;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) FBSSceneSettings * newSettings;
-@property(assign,retain) FBScene * scene;
-@property(assign,retain) NSString * sceneIdentifier;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <FBSynchronizedTransactionDelegate> * synchronizationDelegate;
-@property(assign,retain) FBSSceneTransitionContext * transitionContext;
-@property(assign,readwrite) bool waitsForSceneCommit;
+@property (nonatomic, retain) id context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool destroyed;
+@property (nonatomic, readonly, retain) FBSDisplay *display;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) FBSSceneSettings *newSettings;
+@property (nonatomic, readonly, retain) FBScene *scene;
+@property (nonatomic, readonly, retain) NSString *sceneIdentifier;
+@property (readonly) Class superclass;
+@property (nonatomic) <FBSynchronizedTransactionDelegate> *synchronizationDelegate;
+@property (nonatomic, readonly, retain) FBSSceneTransitionContext *transitionContext;
+@property (nonatomic) bool waitsForSceneCommit;
 
 - (void)_begin;
 - (bool)_canBeInterrupted;

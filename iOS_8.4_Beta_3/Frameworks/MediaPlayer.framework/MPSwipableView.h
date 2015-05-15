@@ -12,13 +12,13 @@
     MPTapGestureRecognizer *_tapGestureRecognizer;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long enabledGestureTypes;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long simultaneousGestureTypes;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <MPSwipableViewDelegate> * swipeDelegate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long enabledGestureTypes;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long simultaneousGestureTypes;
+@property (readonly) Class superclass;
+@property (nonatomic) <MPSwipableViewDelegate> *swipeDelegate;
 
 - (void).cxx_destruct;
 - (void)_activityGestureRecognized:(id)arg1;

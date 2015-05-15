@@ -9,7 +9,7 @@
     NSMutableData *_singleShot;
 }
 
-@property(assign,readonly) int lastSecCMSError;
+@property (nonatomic, readonly) int lastSecCMSError;
 
 - (void)_appendBytes:(const void*)arg1 length:(unsigned long long)arg2;
 - (long long)appendData:(id)arg1;

@@ -4,10 +4,10 @@
 
 @interface PLPersonReference : PLManagedObject
 
-@property(assign,retain) PLAdditionalAssetAttributes * assetAttributes;
-@property(assign,retain) PLPerson * person;
-@property(assign,retain) NSData * personData;
-@property(assign,retain) NSString * personUUID;
+@property (nonatomic, retain) PLAdditionalAssetAttributes *assetAttributes;
+@property (nonatomic, retain) PLPerson *person;
+@property (nonatomic, retain) NSData *personData;
+@property (nonatomic, retain) NSString *personUUID;
 
 + (id)entityInManagedObjectContext:(id)arg1;
 + (id)entityName;

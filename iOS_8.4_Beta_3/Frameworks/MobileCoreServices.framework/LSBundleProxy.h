@@ -21,24 +21,24 @@
     NSString *_signerIdentity;
 }
 
-@property(assign,readonly) NSURL * appStoreReceiptURL;
-@property(assign,readonly) NSURL * bundleContainerURL;
-@property(assign,readonly) NSString * bundleExecutable;
-@property(assign,readonly) NSString * bundleIdentifier;
-@property(assign,readonly) NSString * bundleType;
-@property(assign,readonly) NSURL * bundleURL;
-@property(assign,readonly) NSString * bundleVersion;
-@property(assign,readonly) NSUUID * cacheGUID;
-@property(assign,readonly) NSURL * containerURL;
-@property(assign,readonly) NSURL * dataContainerURL;
-@property(assign,readonly) NSDictionary * entitlements;
-@property(assign,readonly) NSDictionary * environmentVariables;
-@property(assign,readonly) bool foundBackingBundle;
-@property(assign,readonly) NSDictionary * groupContainerURLs;
-@property(assign,readonly) NSString * localizedShortName;
-@property(assign,readonly) NSArray * machOUUIDs;
-@property(assign,readonly) unsigned long long sequenceNumber;
-@property(assign,readonly) NSString * signerIdentity;
+@property (nonatomic, readonly) NSURL *appStoreReceiptURL;
+@property (nonatomic, readonly) NSURL *bundleContainerURL;
+@property (nonatomic, readonly) NSString *bundleExecutable;
+@property (nonatomic, readonly) NSString *bundleIdentifier;
+@property (nonatomic, readonly) NSString *bundleType;
+@property (nonatomic, readonly) NSURL *bundleURL;
+@property (nonatomic, readonly) NSString *bundleVersion;
+@property (nonatomic, readonly) NSUUID *cacheGUID;
+@property (nonatomic, readonly) NSURL *containerURL;
+@property (nonatomic, readonly) NSURL *dataContainerURL;
+@property (nonatomic, readonly) NSDictionary *entitlements;
+@property (nonatomic, readonly) NSDictionary *environmentVariables;
+@property (nonatomic, readonly) bool foundBackingBundle;
+@property (nonatomic, readonly) NSDictionary *groupContainerURLs;
+@property (nonatomic, readonly) NSString *localizedShortName;
+@property (nonatomic, readonly) NSArray *machOUUIDs;
+@property (nonatomic, readonly) unsigned long long sequenceNumber;
+@property (nonatomic, readonly) NSString *signerIdentity;
 
 + (id)bundleProxyForIdentifier:(id)arg1;
 + (id)bundleProxyForURL:(id)arg1;

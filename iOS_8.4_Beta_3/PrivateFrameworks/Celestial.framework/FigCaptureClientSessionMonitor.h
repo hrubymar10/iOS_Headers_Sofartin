@@ -18,7 +18,7 @@
     struct OpaqueFigSimpleMutex { } *_stateChangeLock;
 }
 
-@property(assign,readonly) struct opaqueCMSession { }* session;
+@property (readonly) struct opaqueCMSession { }*session;
 
 + (id)_stringForCMSessionState:(unsigned int)arg1;
 + (void)initialize;

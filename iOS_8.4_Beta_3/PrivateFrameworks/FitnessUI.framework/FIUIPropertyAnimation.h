@@ -9,9 +9,9 @@
     double _duration;
 }
 
-@property(assign,readonly) CAMediaTimingFunction * animationTimingFunction;
-@property(assign,readonly) id completionHandler;
-@property(assign,readonly) double duration;
+@property (nonatomic, readonly) CAMediaTimingFunction *animationTimingFunction;
+@property (nonatomic, readonly) id completionHandler;
+@property (nonatomic, readonly) double duration;
 
 + (id)animationWithDuration:(double)arg1 timingFunction:(id)arg2 completion:(id)arg3;
 

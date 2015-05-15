@@ -11,9 +11,9 @@
     NSMutableSet *_uniformsNeedingUpdate;
 }
 
-@property(assign,readonly) bool isActive;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) unsigned int programObject;
+@property (nonatomic, readonly) bool isActive;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, readonly) unsigned int programObject;
 
 - (void)activate;
 - (void)deactivate;

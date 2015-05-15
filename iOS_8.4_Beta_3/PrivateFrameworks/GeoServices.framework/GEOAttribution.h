@@ -11,18 +11,18 @@
     NSString *_url;
 }
 
-@property(assign,retain) NSString * badge;
-@property(assign,retain) NSString * badgeChecksum;
-@property(assign,readonly) bool hasBadge;
-@property(assign,readonly) bool hasBadgeChecksum;
-@property(assign,readonly) bool hasLogo;
-@property(assign,readonly) bool hasLogoChecksum;
-@property(assign,readonly) bool hasName;
-@property(assign,readonly) bool hasUrl;
-@property(assign,retain) NSString * logo;
-@property(assign,retain) NSString * logoChecksum;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * url;
+@property (nonatomic, retain) NSString *badge;
+@property (nonatomic, retain) NSString *badgeChecksum;
+@property (nonatomic, readonly) bool hasBadge;
+@property (nonatomic, readonly) bool hasBadgeChecksum;
+@property (nonatomic, readonly) bool hasLogo;
+@property (nonatomic, readonly) bool hasLogoChecksum;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic, readonly) bool hasUrl;
+@property (nonatomic, retain) NSString *logo;
+@property (nonatomic, retain) NSString *logoChecksum;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *url;
 
 - (id)badge;
 - (id)badgeChecksum;

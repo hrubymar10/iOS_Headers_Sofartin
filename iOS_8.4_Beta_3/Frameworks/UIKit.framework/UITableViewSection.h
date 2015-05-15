@@ -10,11 +10,11 @@
     NSArray *_rows;
 }
 
-@property(assign,copy) NSString * footerTitle;
-@property(assign,retain) UIView * footerView;
-@property(assign,copy) NSString * headerTitle;
-@property(assign,retain) UIView * headerView;
-@property(assign,copy) NSArray * rows;
+@property (nonatomic, copy) NSString *footerTitle;
+@property (nonatomic, retain) UIView *footerView;
+@property (nonatomic, copy) NSString *headerTitle;
+@property (nonatomic, retain) UIView *headerView;
+@property (nonatomic, copy) NSArray *rows;
 
 + (id)sectionWithRows:(id)arg1;
 

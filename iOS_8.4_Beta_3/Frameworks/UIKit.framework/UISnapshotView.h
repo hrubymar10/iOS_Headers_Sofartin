@@ -48,21 +48,21 @@
     UIColor *_statusBarTintColor;
 }
 
-@property(setter=_setStatusBarTintColor:,assign,retain) UIColor * _statusBarTintColor;
-@property(getter=_contentOffset,setter=_setContentOffset:,assign,readwrite) struct CGPoint { double x1; double x2; } contentOffset;
-@property(getter=_contentSize,assign,readonly) struct CGSize { double x1; double x2; } contentSize;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEdgeAntialiasingEnabled,assign,readwrite) bool edgeAntialiasingEnabled;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgePadding;
-@property(assign,retain) UIColor * edgePaddingColor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIView * shadowView;
-@property(getter=_snapshotRect,setter=_setSnapshotRect:,assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } snapshotRect;
-@property(getter=_snapshotView,assign,readonly) UIView * snapshotView;
-@property(assign,readonly) Class superclass;
-@property(getter=isVerticalStretchEnabled,assign,readwrite) bool verticalStretchEnabled;
+@property (setter=_setStatusBarTintColor:, nonatomic, retain) UIColor *_statusBarTintColor;
+@property (getter=_contentOffset, setter=_setContentOffset:, nonatomic) struct CGPoint { double x1; double x2; } contentOffset;
+@property (getter=_contentSize, nonatomic, readonly) struct CGSize { double x1; double x2; } contentSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEdgeAntialiasingEnabled, nonatomic) bool edgeAntialiasingEnabled;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgePadding;
+@property (nonatomic, retain) UIColor *edgePaddingColor;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIView *shadowView;
+@property (getter=_snapshotRect, setter=_setSnapshotRect:, nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } snapshotRect;
+@property (getter=_snapshotView, nonatomic, readonly) UIView *snapshotView;
+@property (readonly) Class superclass;
+@property (getter=isVerticalStretchEnabled, nonatomic) bool verticalStretchEnabled;
 
 - (void)_addEdgePaddingViewInRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 - (struct CGPoint { double x1; double x2; })_contentOffset;

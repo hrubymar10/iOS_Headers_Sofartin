@@ -6,7 +6,7 @@
     HKQuantity *_sumQuantity;
 }
 
-@property(assign,retain) HKQuantity * sumQuantity;
+@property (nonatomic, retain) HKQuantity *sumQuantity;
 
 - (void).cxx_destruct;
 - (id)description;

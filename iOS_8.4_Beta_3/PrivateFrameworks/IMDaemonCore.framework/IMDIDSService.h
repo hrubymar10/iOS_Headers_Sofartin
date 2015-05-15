@@ -8,13 +8,13 @@
     bool _deactivatingAccount;
 }
 
-@property(assign,retain) NSArray * accountsLoadedFromIdentityServices;
-@property(assign,readonly) NSArray * activeAccountsFromIdentityServices;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) IDSAccountController * idsAccountController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, retain) NSArray *accountsLoadedFromIdentityServices;
+@property (nonatomic, readonly) NSArray *activeAccountsFromIdentityServices;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) IDSAccountController *idsAccountController;
+@property (readonly) Class superclass;
 
 - (void)_loadIDSAccountController;
 - (id)_serviceDomain;

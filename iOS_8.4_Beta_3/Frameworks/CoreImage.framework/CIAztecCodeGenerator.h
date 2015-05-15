@@ -8,9 +8,9 @@
     NSNumber *inputLayers;
 }
 
-@property(assign,copy) NSNumber * inputCompactStyle;
-@property(assign,copy) NSNumber * inputCorrectionLevel;
-@property(assign,copy) NSNumber * inputLayers;
+@property (nonatomic, copy) NSNumber *inputCompactStyle;
+@property (nonatomic, copy) NSNumber *inputCorrectionLevel;
+@property (nonatomic, copy) NSNumber *inputLayers;
 
 + (id)customAttributes;
 

@@ -12,22 +12,22 @@
     MSASPendingChanges *_pendingChanges;
 }
 
-@property(assign,readwrite) MSASStateMachine * MSASCounterpartInstance;
-@property(assign,retain) MSASServerSideModelGroupedCommandQueue * commandQueue;
-@property(assign,readwrite) MSAlbumSharingDaemon * daemon;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSObject<OS_dispatch_queue> * eventQueue;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int maxGroupedCallbackEventBatchCount;
-@property(assign,readwrite) double maxGroupedCallbackEventIdleInterval;
-@property(assign,readwrite) double maxGroupedCallbackEventStaleness;
-@property(assign,retain) NSObject<OS_dispatch_queue> * memberQueue;
-@property(assign,retain) NSCountedSet * observers;
-@property(assign,retain) MSASPendingChanges * pendingChanges;
-@property(assign,retain) NSString * personID;
-@property(assign,readonly) MSASStateMachine * stateMachine;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) MSASStateMachine *MSASCounterpartInstance;
+@property (nonatomic, retain) MSASServerSideModelGroupedCommandQueue *commandQueue;
+@property (nonatomic) MSAlbumSharingDaemon *daemon;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *eventQueue;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int maxGroupedCallbackEventBatchCount;
+@property (nonatomic) double maxGroupedCallbackEventIdleInterval;
+@property (nonatomic) double maxGroupedCallbackEventStaleness;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *memberQueue;
+@property (nonatomic, retain) NSCountedSet *observers;
+@property (nonatomic, retain) MSASPendingChanges *pendingChanges;
+@property (nonatomic, readonly, retain) NSString *personID;
+@property (nonatomic, readonly) MSASStateMachine *stateMachine;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)MSASCounterpartInstance;

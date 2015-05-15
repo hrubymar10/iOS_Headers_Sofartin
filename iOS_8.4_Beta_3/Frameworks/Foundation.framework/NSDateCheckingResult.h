@@ -17,13 +17,13 @@
     id _underlyingResult;
 }
 
-@property(assign,readonly) double duration;
-@property(assign,readonly) NSDate * referenceDate;
-@property(assign,readonly) bool timeIsApproximate;
-@property(assign,readonly) bool timeIsPast;
-@property(assign,readonly) bool timeIsSignificant;
-@property(assign,readonly) NSTimeZone * timeZone;
-@property(assign,readonly) void* underlyingResult;
+@property (readonly) double duration;
+@property (readonly) NSDate *referenceDate;
+@property (readonly) bool timeIsApproximate;
+@property (readonly) bool timeIsPast;
+@property (readonly) bool timeIsSignificant;
+@property (readonly) NSTimeZone *timeZone;
+@property (readonly) void*underlyingResult;
 
 - (bool)_adjustRangesWithOffset:(long long)arg1;
 - (id)date;

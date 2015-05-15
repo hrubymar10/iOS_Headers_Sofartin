@@ -19,9 +19,9 @@
     unsigned int _holding;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } alignmentRectInsets;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitRectInsets;
-@property(assign,readwrite) double holdDelayInterval;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } alignmentRectInsets;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitRectInsets;
+@property (nonatomic) double holdDelayInterval;
 
 + (id)easyTouchButtonWithType:(long long)arg1;
 + (double)easyTouchDefaultCharge;

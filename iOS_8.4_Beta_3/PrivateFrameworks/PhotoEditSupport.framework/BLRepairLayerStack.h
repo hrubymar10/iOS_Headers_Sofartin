@@ -18,14 +18,14 @@
     UIImage *_sourceImage;
 }
 
-@property(assign,retain) UIImage * analysisImage;
-@property(assign,readwrite) int mode;
-@property(assign,readwrite) UIImage * redEyeRepairedImage;
-@property(assign,retain) UIImage * redEyeSourceImage;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } redEyeSourceSize;
-@property(assign,retain) UIImage * repairSourceImage;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } repairSourceSize;
-@property(assign,retain) UIImage * sourceImage;
+@property (nonatomic, retain) UIImage *analysisImage;
+@property (nonatomic) int mode;
+@property (nonatomic) UIImage *redEyeRepairedImage;
+@property (nonatomic, retain) UIImage *redEyeSourceImage;
+@property (nonatomic) struct CGSize { double x1; double x2; } redEyeSourceSize;
+@property (nonatomic, retain) UIImage *repairSourceImage;
+@property (nonatomic) struct CGSize { double x1; double x2; } repairSourceSize;
+@property (nonatomic, retain) UIImage *sourceImage;
 
 + (id)addAutoRedEyeCorrection:(id)arg1 toCurrentStrokesDataDictionary:(id)arg2 forSourceSize:(struct CGSize { double x1; double x2; })arg3;
 + (id)layerStack;

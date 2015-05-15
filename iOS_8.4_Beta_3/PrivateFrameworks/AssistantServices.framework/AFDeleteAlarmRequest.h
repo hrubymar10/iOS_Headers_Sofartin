@@ -6,7 +6,7 @@
     NSArray *_alarmIdentifiers;
 }
 
-@property(assign,copy) NSArray * alarmIdentifiers;
+@property (nonatomic, copy) NSArray *alarmIdentifiers;
 
 + (bool)supportsSecureCoding;
 

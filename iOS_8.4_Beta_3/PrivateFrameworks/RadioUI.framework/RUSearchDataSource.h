@@ -10,7 +10,7 @@
     RadioSearchRequest *_queuedRequest;
 }
 
-@property(assign,readwrite) <RUSearchDataSourceDelegate> * delegate;
+@property (nonatomic) <RUSearchDataSourceDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_updateResultForQueuedSearchRequest;

@@ -12,11 +12,11 @@
     NSMutableArray *_spokenStructuredAddress;
 }
 
-@property(assign,readwrite) bool hasKnownAccuracy;
-@property(assign,readwrite) int knownAccuracy;
-@property(assign,retain) NSMutableArray * localizedAddress;
-@property(assign,retain) NSMutableArray * spokenNavigationAddress;
-@property(assign,retain) NSMutableArray * spokenStructuredAddress;
+@property (nonatomic) bool hasKnownAccuracy;
+@property (nonatomic) int knownAccuracy;
+@property (nonatomic, retain) NSMutableArray *localizedAddress;
+@property (nonatomic, retain) NSMutableArray *spokenNavigationAddress;
+@property (nonatomic, retain) NSMutableArray *spokenStructuredAddress;
 
 + (id)addressForPlaceData:(id)arg1;
 

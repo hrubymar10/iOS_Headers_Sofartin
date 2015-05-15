@@ -18,19 +18,19 @@
     NSString *_wifiManufacturer;
 }
 
-@property(assign,readwrite) unsigned long long autoJoinScanDuration;
-@property(assign,retain) PLEntryNotificationOperatorComposition * batteryLevelChanged;
-@property(assign,retain) PLEntryNotificationOperatorComposition * deviceWake;
-@property(assign,readwrite) unsigned long long lastLoggedTimestamp;
-@property(assign,readwrite) unsigned long long locationScanDuration;
-@property(assign,readonly) PLCFNotificationOperatorComposition * notificationWiFiChanged;
-@property(assign,readwrite) unsigned long long pipelineScanDuration;
-@property(assign,readwrite) unsigned long long setupScanDuration;
-@property(assign,readwrite) unsigned long long unknownScanDuration;
-@property(assign,readonly) NSString * wifiChipset;
-@property(assign,readwrite) struct __WiFiDeviceClient { }* wifiDevice;
-@property(assign,readwrite) struct __WiFiManagerClient { }* wifiManager;
-@property(assign,readonly) NSString * wifiManufacturer;
+@property unsigned long long autoJoinScanDuration;
+@property (retain) PLEntryNotificationOperatorComposition *batteryLevelChanged;
+@property (retain) PLEntryNotificationOperatorComposition *deviceWake;
+@property unsigned long long lastLoggedTimestamp;
+@property unsigned long long locationScanDuration;
+@property (readonly) PLCFNotificationOperatorComposition *notificationWiFiChanged;
+@property unsigned long long pipelineScanDuration;
+@property unsigned long long setupScanDuration;
+@property unsigned long long unknownScanDuration;
+@property (readonly) NSString *wifiChipset;
+@property (nonatomic) struct __WiFiDeviceClient { }*wifiDevice;
+@property (nonatomic) struct __WiFiManagerClient { }*wifiManager;
+@property (readonly) NSString *wifiManufacturer;
 
 + (id)accountingGroupDefinitions;
 + (id)entryEventBackwardDefinitionCumulativeBasic;

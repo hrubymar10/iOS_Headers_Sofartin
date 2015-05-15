@@ -15,16 +15,16 @@
     PLXPCListenerOperatorComposition *_xpcHandler;
 }
 
-@property(assign,readonly) PLAccountingGroup * IDSAccountingGroup;
-@property(assign,readonly) PLAccountingGroup * bluetoothAccountingGroup;
-@property(assign,retain) PLXPCListenerOperatorComposition * infraWiFiRequestHandler;
-@property(assign,retain) NSDate * initialEntryDate;
-@property(assign,retain) NSMutableDictionary * lastEntryDatePerCategory;
-@property(assign,retain) NSDate * lastLocalDeliveryLogDate;
-@property(assign,retain) PLXPCListenerOperatorComposition * localLinkTypeHandler;
-@property(assign,retain) PLXPCListenerOperatorComposition * networkStatsHandler;
-@property(assign,retain) NSMutableDictionary * previousStatsByPriority;
-@property(assign,retain) PLXPCListenerOperatorComposition * xpcHandler;
+@property (readonly) PLAccountingGroup *IDSAccountingGroup;
+@property (readonly) PLAccountingGroup *bluetoothAccountingGroup;
+@property (retain) PLXPCListenerOperatorComposition *infraWiFiRequestHandler;
+@property (retain) NSDate *initialEntryDate;
+@property (retain) NSMutableDictionary *lastEntryDatePerCategory;
+@property (retain) NSDate *lastLocalDeliveryLogDate;
+@property (retain) PLXPCListenerOperatorComposition *localLinkTypeHandler;
+@property (retain) PLXPCListenerOperatorComposition *networkStatsHandler;
+@property (retain) NSMutableDictionary *previousStatsByPriority;
+@property (retain) PLXPCListenerOperatorComposition *xpcHandler;
 
 + (id)accountingGroupDefinitions;
 + (id)entryDefinitionIDSLocalLink;

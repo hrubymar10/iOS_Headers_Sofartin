@@ -7,8 +7,8 @@
     NSObject *_object;
 }
 
-@property(assign,readonly) double lastAccessedDate;
-@property(assign,readonly) NSObject * object;
+@property (nonatomic, readonly) double lastAccessedDate;
+@property (nonatomic, readonly) NSObject *object;
 
 + (id)cacheItemWithObject:(id)arg1;
 

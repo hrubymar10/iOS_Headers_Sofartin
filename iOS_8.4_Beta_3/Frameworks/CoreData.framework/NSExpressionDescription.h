@@ -16,8 +16,8 @@
     void *_reservedtype2_3;
 }
 
-@property(assign,retain) NSExpression * expression;
-@property(assign,readwrite) unsigned long long expressionResultType;
+@property (retain) NSExpression *expression;
+@property unsigned long long expressionResultType;
 
 - (unsigned long long)_propertyType;
 - (void)_writeIntoData:(id)arg1 propertiesDict:(id)arg2 uniquedPropertyNames:(id)arg3 uniquedStrings:(id)arg4 uniquedData:(id)arg5 entitiesSlots:(id)arg6 fetchRequests:(id)arg7;

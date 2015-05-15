@@ -4,14 +4,14 @@
 
 @interface SAWeatherObject : SADomainObject
 
-@property(assign,retain) SAWeatherCurrentConditions * currentConditions;
-@property(assign,copy) NSArray * dailyForecasts;
-@property(assign,copy) NSString * extendedForecastUrl;
-@property(assign,copy) NSArray * hourlyForecasts;
-@property(assign,retain) SAWeatherUnits * units;
-@property(assign,copy) NSString * view;
-@property(assign,retain) SAWeatherLocation * weatherLocation;
-@property(assign,copy) NSString * weatherRequest;
+@property (nonatomic, retain) SAWeatherCurrentConditions *currentConditions;
+@property (nonatomic, copy) NSArray *dailyForecasts;
+@property (nonatomic, copy) NSString *extendedForecastUrl;
+@property (nonatomic, copy) NSArray *hourlyForecasts;
+@property (nonatomic, retain) SAWeatherUnits *units;
+@property (nonatomic, copy) NSString *view;
+@property (nonatomic, retain) SAWeatherLocation *weatherLocation;
+@property (nonatomic, copy) NSString *weatherRequest;
 
 + (id)object;
 + (id)objectWithDictionary:(id)arg1 context:(id)arg2;

@@ -10,16 +10,16 @@
     unsigned int character;
 }
 
-@property(assign,readwrite) double alphaOutsideAndInsideRing;
-@property(assign,readwrite) unsigned int character;
-@property(assign,retain) UIColor * color;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) CALayer * glyphLayer;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CALayer * highlightedGlyphLayer;
-@property(assign,readonly) TPRevealingRingView * revealingRingView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) double alphaOutsideAndInsideRing;
+@property unsigned int character;
+@property (nonatomic, retain) UIColor *color;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain) CALayer *glyphLayer;
+@property (readonly) unsigned long long hash;
+@property (retain) CALayer *highlightedGlyphLayer;
+@property (nonatomic, readonly) TPRevealingRingView *revealingRingView;
+@property (readonly) Class superclass;
 
 + (struct CGSize { double x1; double x2; })defaultSize;
 + (double)highlightCrossfadeHighlightBeginTime;

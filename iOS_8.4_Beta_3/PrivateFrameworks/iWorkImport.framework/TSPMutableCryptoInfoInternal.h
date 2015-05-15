@@ -4,14 +4,14 @@
 
 @interface TSPMutableCryptoInfoInternal : TSPCryptoInfoInternal <TSPMutableCryptoInfo>
 
-@property(assign,readonly) NSArray * blockInfos;
-@property(assign,readonly) SFUCryptoKey * cryptoKey;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) unsigned long long decodedLength;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long preferredBlockSize;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *blockInfos;
+@property (nonatomic, readonly) SFUCryptoKey *cryptoKey;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) unsigned long long decodedLength;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long preferredBlockSize;
+@property (readonly) Class superclass;
 
 - (void)addBlockInfo:(id)arg1;
 - (void)incrementDecodedLengthBy:(unsigned long long)arg1;

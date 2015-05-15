@@ -15,16 +15,16 @@
     NSLayoutConstraint *_topInsetConstraint;
 }
 
-@property(assign,readwrite) bool blockLabelUpdates;
-@property(assign,retain) UIView * blur;
-@property(assign,retain) NSLayoutConstraint * bottomInsetConstraint;
-@property(assign,readwrite) <FMFNoLocationViewDelegate> * delegate;
-@property(assign,retain) UILabel * detailsLabel;
-@property(assign,retain) UIView * insetView;
-@property(assign,retain) UIImage * offlineProfileImage;
-@property(assign,retain) UIImageView * offlineProfileImageView;
-@property(assign,retain) UIImageView * personImageView;
-@property(assign,retain) NSLayoutConstraint * topInsetConstraint;
+@property (nonatomic) bool blockLabelUpdates;
+@property (nonatomic, retain) UIView *blur;
+@property (nonatomic, retain) NSLayoutConstraint *bottomInsetConstraint;
+@property (nonatomic) <FMFNoLocationViewDelegate> *delegate;
+@property (nonatomic, retain) UILabel *detailsLabel;
+@property (nonatomic, retain) UIView *insetView;
+@property (nonatomic, retain) UIImage *offlineProfileImage;
+@property (nonatomic, retain) UIImageView *offlineProfileImageView;
+@property (nonatomic, retain) UIImageView *personImageView;
+@property (nonatomic, retain) NSLayoutConstraint *topInsetConstraint;
 
 - (void).cxx_destruct;
 - (void)addLayoutConstraints;

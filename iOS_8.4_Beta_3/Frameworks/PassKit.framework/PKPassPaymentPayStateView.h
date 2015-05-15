@@ -11,16 +11,16 @@
     bool _touchRecognizingHint;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPassPaymentPayStateViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) PKGlyphView * glyph;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UILabel * label;
-@property(assign,readwrite) double labelAlpha;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool touchRecognizingHint;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPassPaymentPayStateViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) PKGlyphView *glyph;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UILabel *label;
+@property (nonatomic) double labelAlpha;
+@property (nonatomic) long long state;
+@property (readonly) Class superclass;
+@property (nonatomic) bool touchRecognizingHint;
 
 - (void)_applyStateWithTextOverride:(id)arg1 completionHandler:(id)arg2;
 - (bool)_canEmphasizeState:(long long)arg1;

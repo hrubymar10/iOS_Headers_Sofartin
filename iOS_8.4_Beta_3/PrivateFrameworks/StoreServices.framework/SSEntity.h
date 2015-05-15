@@ -12,15 +12,15 @@
     long long _pid;
 }
 
-@property(getter=_localExternalValues,setter=_setLocalExternalValues:,assign,copy) NSDictionary * _localExternalValues;
-@property(getter=_localValues,setter=_setLocalValues:,assign,copy) NSDictionary * _localValues;
-@property(getter=_isManaged,assign,readonly) bool _managed;
-@property(assign,readonly) long long _persistentIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool exists;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (getter=_localExternalValues, setter=_setLocalExternalValues:, copy) NSDictionary *_localExternalValues;
+@property (getter=_localValues, setter=_setLocalValues:, copy) NSDictionary *_localValues;
+@property (getter=_isManaged, readonly) bool _managed;
+@property (readonly) long long _persistentIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) bool exists;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (long long)_existsMessage;
 + (long long)_getExternalValuesMessage;

@@ -9,10 +9,10 @@
     NSDictionary *_torchPowerModel;
 }
 
-@property(assign,readonly) PLCFNotificationOperatorComposition * backCameraPowerNotification;
-@property(assign,readonly) PLCFNotificationOperatorComposition * cameraTorchNotification;
-@property(assign,readonly) PLCFNotificationOperatorComposition * frontCameraPowerNotification;
-@property(assign,readonly) NSDictionary * torchPowerModel;
+@property (readonly) PLCFNotificationOperatorComposition *backCameraPowerNotification;
+@property (readonly) PLCFNotificationOperatorComposition *cameraTorchNotification;
+@property (readonly) PLCFNotificationOperatorComposition *frontCameraPowerNotification;
+@property (readonly) NSDictionary *torchPowerModel;
 
 + (id)accountingGroupDefinitions;
 + (id)defaults;

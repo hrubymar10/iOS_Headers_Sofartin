@@ -17,21 +17,21 @@
     NSOrderedSet *_transferredAssets;
 }
 
-@property(assign,copy) id bannerGenerator;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * localizedPrompt;
-@property(assign,retain) PUPhotoSelectionManager * photoSelectionManager;
-@property(assign,readwrite) long long promptLocation;
-@property(getter=isSelectingAssets,assign,readonly) bool selectingAssets;
-@property(getter=isSelectingTargetAlbum,assign,readonly) bool selectingTargetAlbum;
-@property(assign,retain) NSObject<PLAlbumProtocol> * sourceAlbum;
-@property(assign,readwrite) long long status;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSObject<PLAlbumProtocol> * targetAlbum;
-@property(assign,readwrite) bool targetAlbumIsNewLocalAlbum;
-@property(assign,copy) NSOrderedSet * transferredAssets;
+@property (nonatomic, copy) id bannerGenerator;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *localizedPrompt;
+@property (nonatomic, retain) PUPhotoSelectionManager *photoSelectionManager;
+@property (nonatomic) long long promptLocation;
+@property (getter=isSelectingAssets, nonatomic, readonly) bool selectingAssets;
+@property (getter=isSelectingTargetAlbum, nonatomic, readonly) bool selectingTargetAlbum;
+@property (nonatomic, retain) NSObject<PLAlbumProtocol> *sourceAlbum;
+@property (nonatomic) long long status;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSObject<PLAlbumProtocol> *targetAlbum;
+@property (nonatomic) bool targetAlbumIsNewLocalAlbum;
+@property (nonatomic, copy) NSOrderedSet *transferredAssets;
 
 - (void).cxx_destruct;
 - (void)_enumerateObserversWithBlock:(id)arg1;

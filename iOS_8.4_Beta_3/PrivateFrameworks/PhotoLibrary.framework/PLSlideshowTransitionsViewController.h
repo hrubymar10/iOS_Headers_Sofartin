@@ -11,13 +11,13 @@
     NSArray *_transitionKeys;
 }
 
-@property(assign,retain) NSArray * alternateLocalizations;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * selectedTransition;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSArray * transitionKeys;
+@property (nonatomic, retain) NSArray *alternateLocalizations;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *selectedTransition;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSArray *transitionKeys;
 
 - (void)_configureTableCells;
 - (id)alternateLocalizations;

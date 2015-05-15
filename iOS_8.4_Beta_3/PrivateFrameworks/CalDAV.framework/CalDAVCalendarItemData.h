@@ -9,10 +9,10 @@
     CalDAVUpdateOwnerItem *_updatedBy;
 }
 
-@property(assign,retain) CalDAVUpdateOwnerItem * createdBy;
-@property(assign,retain) CalDAVCalendarServerScheduleChangesItem * scheduleChanges;
-@property(assign,retain) NSString * scheduleTag;
-@property(assign,retain) CalDAVUpdateOwnerItem * updatedBy;
+@property (nonatomic, retain) CalDAVUpdateOwnerItem *createdBy;
+@property (nonatomic, retain) CalDAVCalendarServerScheduleChangesItem *scheduleChanges;
+@property (nonatomic, retain) NSString *scheduleTag;
+@property (nonatomic, retain) CalDAVUpdateOwnerItem *updatedBy;
 
 - (id)createdBy;
 - (void)dealloc;

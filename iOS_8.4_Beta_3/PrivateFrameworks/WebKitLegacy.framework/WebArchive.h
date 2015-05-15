@@ -6,10 +6,10 @@
     WebArchivePrivate *_private;
 }
 
-@property(assign,copy) NSData * data;
-@property(assign,readonly) WebResource * mainResource;
-@property(assign,copy) NSArray * subframeArchives;
-@property(assign,copy) NSArray * subresources;
+@property (nonatomic, readonly, copy) NSData *data;
+@property (nonatomic, readonly) WebResource *mainResource;
+@property (nonatomic, readonly, copy) NSArray *subframeArchives;
+@property (nonatomic, readonly, copy) NSArray *subresources;
 
 + (id)bundleForClass;
 

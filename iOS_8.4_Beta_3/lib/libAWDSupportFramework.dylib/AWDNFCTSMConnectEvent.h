@@ -16,16 +16,16 @@
     NSData *_uuidReference;
 }
 
-@property(assign,readwrite) bool connected;
-@property(assign,readwrite) bool hasConnected;
-@property(assign,readwrite) bool hasHttpStatus;
-@property(assign,readwrite) bool hasTimeDeltaFromReference;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readonly) bool hasUuidReference;
-@property(assign,readwrite) unsigned int httpStatus;
-@property(assign,readwrite) unsigned long long timeDeltaFromReference;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,retain) NSData * uuidReference;
+@property (nonatomic) bool connected;
+@property (nonatomic) bool hasConnected;
+@property (nonatomic) bool hasHttpStatus;
+@property (nonatomic) bool hasTimeDeltaFromReference;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, readonly) bool hasUuidReference;
+@property (nonatomic) unsigned int httpStatus;
+@property (nonatomic) unsigned long long timeDeltaFromReference;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic, retain) NSData *uuidReference;
 
 - (bool)connected;
 - (void)copyTo:(id)arg1;

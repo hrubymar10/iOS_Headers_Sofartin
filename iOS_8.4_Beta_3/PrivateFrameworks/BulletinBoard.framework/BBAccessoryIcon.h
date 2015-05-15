@@ -6,7 +6,7 @@
     NSMutableDictionary *_imagesForContentSize;
 }
 
-@property(assign,copy) NSDictionary * imagesForContentSize;
+@property (nonatomic, copy) NSDictionary *imagesForContentSize;
 
 + (bool)supportsSecureCoding;
 

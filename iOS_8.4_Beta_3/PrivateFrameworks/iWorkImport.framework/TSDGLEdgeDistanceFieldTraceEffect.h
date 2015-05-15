@@ -30,12 +30,12 @@
     struct __CFArray { } *_zeroesArray;
 }
 
-@property(assign,readonly) TSDGLTextureInfo * edgeDistanceFieldTextureInfo;
-@property(assign,readonly) bool isValid;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } randomStrokePoint;
-@property(assign,readonly) TSDGLShader * shader;
-@property(assign,readonly) NSArray * strokeLineSegment;
-@property(assign,readonly) TSDGLTextureInfo * traceTextureInfo;
+@property (nonatomic, readonly) TSDGLTextureInfo *edgeDistanceFieldTextureInfo;
+@property (nonatomic, readonly) bool isValid;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } randomStrokePoint;
+@property (nonatomic, readonly) TSDGLShader *shader;
+@property (nonatomic, readonly) NSArray *strokeLineSegment;
+@property (nonatomic, readonly) TSDGLTextureInfo *traceTextureInfo;
 
 + (void)didEndUsingShaders;
 + (void)willBeginUsingShaders;

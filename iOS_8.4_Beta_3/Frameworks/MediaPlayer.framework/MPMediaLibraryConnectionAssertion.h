@@ -7,7 +7,7 @@
     MPMediaLibrary *_library;
 }
 
-@property(assign,readonly) NSString * identifier;
+@property (nonatomic, readonly) NSString *identifier;
 
 - (void).cxx_destruct;
 - (id)_initWithMediaLibrary:(id)arg1 identifier:(id)arg2;

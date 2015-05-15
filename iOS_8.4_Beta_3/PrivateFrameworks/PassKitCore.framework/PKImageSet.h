@@ -7,8 +7,8 @@
     long long _version;
 }
 
-@property(assign,copy) NSURL * originCacheURL;
-@property(assign,readwrite) long long version;
+@property (nonatomic, copy) NSURL *originCacheURL;
+@property (nonatomic) long long version;
 
 + (id)_archiveURL:(id)arg1;
 + (id)_archivedImageSet:(id)arg1 forDisplayProfile:(id)arg2;

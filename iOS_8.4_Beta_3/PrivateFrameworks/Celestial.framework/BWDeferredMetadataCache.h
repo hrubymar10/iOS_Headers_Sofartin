@@ -19,7 +19,7 @@
     struct OpaqueFigCaptureStream { } *_stream;
 }
 
-@property(assign,readwrite) int numberOfExpectedSampleBuffersForEachPTS;
+@property (nonatomic) int numberOfExpectedSampleBuffersForEachPTS;
 
 - (void)addMetadataAttachmentToSampleBuffer:(struct opaqueCMSampleBuffer { }*)arg1 withDutyCycleMetadataCache:(id)arg2;
 - (void)dealloc;

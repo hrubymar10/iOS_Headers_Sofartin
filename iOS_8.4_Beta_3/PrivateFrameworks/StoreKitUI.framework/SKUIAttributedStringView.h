@@ -29,18 +29,18 @@
     UIColor *_treatmentColor;
 }
 
-@property(assign,readonly) double baselineOffset;
-@property(assign,readwrite) bool containsLinks;
-@property(assign,readonly) double firstBaselineOffset;
-@property(assign,readwrite) long long firstLineTopInset;
-@property(assign,retain) SKUIAttributedStringLayout * layout;
-@property(assign,readwrite) <SKUILinkHandler> * linkDelegate;
-@property(assign,copy) NSArray * requiredBadges;
-@property(assign,readwrite) long long stringTreatment;
-@property(assign,retain) UIColor * textColor;
-@property(assign,readwrite) bool textColorFollowsTintColor;
-@property(assign,retain) UIColor * treatmentColor;
-@property(assign,readonly) bool usesTallCharacterSet;
+@property (nonatomic, readonly) double baselineOffset;
+@property (nonatomic) bool containsLinks;
+@property (nonatomic, readonly) double firstBaselineOffset;
+@property (nonatomic) long long firstLineTopInset;
+@property (nonatomic, retain) SKUIAttributedStringLayout *layout;
+@property (nonatomic) <SKUILinkHandler> *linkDelegate;
+@property (nonatomic, copy) NSArray *requiredBadges;
+@property (nonatomic) long long stringTreatment;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic) bool textColorFollowsTintColor;
+@property (nonatomic, retain) UIColor *treatmentColor;
+@property (nonatomic, readonly) bool usesTallCharacterSet;
 
 + (struct CGSize { double x1; double x2; })sizeWithLayout:(id)arg1 treatment:(long long)arg2;
 

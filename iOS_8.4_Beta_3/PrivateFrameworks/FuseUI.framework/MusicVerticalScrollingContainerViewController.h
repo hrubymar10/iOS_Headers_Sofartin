@@ -17,16 +17,16 @@
     NSArray *_verticalScrollingContainerItems;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readonly) UICollectionView * containerCollectionView;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } contentOffset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicVerticalScrollingContainerViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isPerformingLayout,assign,readonly) bool performingLayout;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * verticalScrollingContainerItems;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) UICollectionView *containerCollectionView;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } contentOffset;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicVerticalScrollingContainerViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isPerformingLayout, nonatomic, readonly) bool performingLayout;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *verticalScrollingContainerItems;
 
 - (void).cxx_destruct;
 - (void)_didFinishAnimatedInvalidation;

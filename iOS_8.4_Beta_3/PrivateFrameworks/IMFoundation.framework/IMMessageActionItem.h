@@ -10,11 +10,11 @@
     NSString *_otherUnformattedID;
 }
 
-@property(assign,readwrite) long long actionType;
-@property(assign,retain) NSString * originalMessageGUID;
-@property(assign,retain) NSString * otherCountryCode;
-@property(assign,retain) NSString * otherHandle;
-@property(assign,retain) NSString * otherUnformattedID;
+@property (nonatomic) long long actionType;
+@property (nonatomic, retain) NSString *originalMessageGUID;
+@property (nonatomic, retain) NSString *otherCountryCode;
+@property (nonatomic, retain) NSString *otherHandle;
+@property (nonatomic, retain) NSString *otherUnformattedID;
 
 - (id)_newChatItems;
 - (long long)actionType;

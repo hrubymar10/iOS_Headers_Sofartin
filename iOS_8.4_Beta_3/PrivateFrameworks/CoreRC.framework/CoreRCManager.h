@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_serialQueue;
 }
 
-@property(assign,readonly) NSSet * buses;
-@property(assign,readonly) NSMutableSet * busesInternal;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * serialQueue;
+@property (nonatomic, readonly) NSSet *buses;
+@property (nonatomic, readonly) NSMutableSet *busesInternal;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *serialQueue;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 

@@ -8,13 +8,13 @@
     BPSInternalGlanceManager *_manager;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NGSGlance * glance;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) PSListController * listControllerDelegate;
-@property(assign,retain) BPSInternalGlanceManager * manager;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NGSGlance *glance;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) PSListController *listControllerDelegate;
+@property (nonatomic, retain) BPSInternalGlanceManager *manager;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_logGlanceDescriptions;

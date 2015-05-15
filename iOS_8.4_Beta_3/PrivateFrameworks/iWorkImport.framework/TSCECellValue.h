@@ -7,8 +7,8 @@
     int mValueType;
 }
 
-@property(assign,retain) TSULocale * locale;
-@property(assign,readwrite) int valueType;
+@property (nonatomic, retain) TSULocale *locale;
+@property (nonatomic) int valueType;
 
 - (void)dealloc;
 - (id)displayString;

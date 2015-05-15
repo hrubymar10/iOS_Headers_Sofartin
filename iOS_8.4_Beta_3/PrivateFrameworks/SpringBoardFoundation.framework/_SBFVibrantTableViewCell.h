@@ -6,8 +6,8 @@
     long long _graphicsQuality;
 }
 
-@property(assign,readwrite) long long graphicsQuality;
-@property(assign,readwrite) bool usesVibrantSelection;
+@property (nonatomic) long long graphicsQuality;
+@property (nonatomic) bool usesVibrantSelection;
 
 - (long long)graphicsQuality;
 - (void)setGraphicsQuality:(long long)arg1;

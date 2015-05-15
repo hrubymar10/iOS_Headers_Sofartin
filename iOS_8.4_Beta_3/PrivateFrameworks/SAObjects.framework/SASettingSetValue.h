@@ -4,8 +4,8 @@
 
 @interface SASettingSetValue : SASettingCommand
 
-@property(assign,readwrite) bool dryRun;
-@property(assign,readwrite) bool failOnSiriDisconnectWarnings;
+@property (nonatomic) bool dryRun;
+@property (nonatomic) bool failOnSiriDisconnectWarnings;
 
 + (id)setValue;
 + (id)setValueWithDictionary:(id)arg1 context:(id)arg2;

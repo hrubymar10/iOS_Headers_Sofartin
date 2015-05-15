@@ -4,7 +4,7 @@
 
 @interface DOMFile : DOMBlob
 
-@property(assign,copy) NSString * name;
+@property (readonly, copy) NSString *name;
 
 - (double)lastModifiedDate;
 - (id)name;

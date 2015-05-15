@@ -17,19 +17,19 @@
     NSString *_title;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } containerSize;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) NSObject<WebPDFViewPlaceholderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool didCompleteLayout;
-@property(assign,readonly) struct CGPDFDocument { }* doc;
-@property(assign,readonly) struct CGPDFDocument { }* document;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * pageRects;
-@property(assign,retain) NSArray * pageYOrigins;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * title;
-@property(assign,readonly) unsigned long long totalPages;
+@property struct CGSize { double x1; double x2; } containerSize;
+@property (readonly, copy) NSString *debugDescription;
+@property NSObject<WebPDFViewPlaceholderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool didCompleteLayout;
+@property (readonly) struct CGPDFDocument { }*doc;
+@property (readonly) struct CGPDFDocument { }*document;
+@property (readonly) unsigned long long hash;
+@property (retain) NSArray *pageRects;
+@property (retain) NSArray *pageYOrigins;
+@property (readonly) Class superclass;
+@property (retain) NSString *title;
+@property (readonly) unsigned long long totalPages;
 
 + (Class)_representationClassForWebFrame:(id)arg1;
 + (void)setAsPDFDocRepAndView;

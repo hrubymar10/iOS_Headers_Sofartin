@@ -18,21 +18,21 @@
     int _type;
 }
 
-@property(assign,readwrite) bool hasIsExecutable;
-@property(assign,readwrite) bool hasIsWritable;
-@property(assign,readwrite) bool hasMtime;
-@property(assign,readonly) bool hasPath;
-@property(assign,readonly) bool hasQuarantineInfo;
-@property(assign,readonly) bool hasSignature;
-@property(assign,readonly) bool hasSymlinkContent;
-@property(assign,readwrite) bool isExecutable;
-@property(assign,readwrite) bool isWritable;
-@property(assign,readwrite) long long mtime;
-@property(assign,retain) NSString * path;
-@property(assign,retain) NSData * quarantineInfo;
-@property(assign,retain) NSData * signature;
-@property(assign,retain) NSString * symlinkContent;
-@property(assign,readwrite) int type;
+@property (nonatomic) bool hasIsExecutable;
+@property (nonatomic) bool hasIsWritable;
+@property (nonatomic) bool hasMtime;
+@property (nonatomic, readonly) bool hasPath;
+@property (nonatomic, readonly) bool hasQuarantineInfo;
+@property (nonatomic, readonly) bool hasSignature;
+@property (nonatomic, readonly) bool hasSymlinkContent;
+@property (nonatomic) bool isExecutable;
+@property (nonatomic) bool isWritable;
+@property (nonatomic) long long mtime;
+@property (nonatomic, retain) NSString *path;
+@property (nonatomic, retain) NSData *quarantineInfo;
+@property (nonatomic, retain) NSData *signature;
+@property (nonatomic, retain) NSString *symlinkContent;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (void)clear;

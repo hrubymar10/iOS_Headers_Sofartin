@@ -11,11 +11,11 @@
     UISwitch *_switch;
 }
 
-@property(assign,readwrite) bool centersIcon;
-@property(assign,readwrite) <HKSwitchTableViewCellDelegate> * delegate;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) struct CGSize { double x1; double x2; } iconSize;
-@property(getter=isOn,assign,readwrite) bool on;
+@property (nonatomic) bool centersIcon;
+@property (nonatomic) <HKSwitchTableViewCellDelegate> *delegate;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } iconSize;
+@property (getter=isOn, nonatomic) bool on;
 
 - (void).cxx_destruct;
 - (void)_setupUI;

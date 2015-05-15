@@ -6,7 +6,7 @@
     ABDateField *_dateField;
 }
 
-@property(assign,readonly) NSDate * date;
+@property (nonatomic, readonly) NSDate *date;
 
 + (struct CGSize { double x1; double x2; })layoutSubviewsForView:(id)arg1 usingSize:(struct CGSize { double x1; double x2; })arg2 propertyGroup:(id)arg3 info:(id)arg4 styleProvider:(id)arg5 whenEditing:(bool)arg6;
 

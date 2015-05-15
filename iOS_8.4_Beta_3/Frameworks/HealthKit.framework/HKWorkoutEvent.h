@@ -7,12 +7,12 @@
     long long _type;
 }
 
-@property(assign,copy) NSDate * date;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) long long type;
+@property (readonly, copy) NSDate *date;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (readonly) long long type;
 
 + (id)_newWorkoutEventWithType:(long long)arg1 date:(id)arg2;
 + (id)_workoutEventWithType:(long long)arg1 date:(id)arg2;

@@ -31,22 +31,22 @@
     int wrapMode;
 }
 
-@property(assign,readwrite) unsigned int* alphaMap;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } alphaMapSize;
-@property(assign,readwrite) long long filteringMode;
-@property(assign,readwrite) bool hasAlpha;
-@property(assign,readwrite) bool isLoaded;
-@property(assign,readwrite) bool isPOT;
-@property(getter=getLock,assign,readonly) int* lock;
-@property(assign,readwrite) char * pixelData;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } pixelSize;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readwrite) int state;
-@property(assign,readwrite) unsigned int texFormat;
-@property(assign,readwrite) unsigned int texId;
-@property(assign,readwrite) int texInternalFormat;
-@property(assign,readwrite) unsigned int texType;
-@property(assign,readwrite) int wrapMode;
+@property (nonatomic) unsigned int*alphaMap;
+@property (nonatomic) struct CGSize { double x1; double x2; } alphaMapSize;
+@property (nonatomic) long long filteringMode;
+@property (nonatomic) bool hasAlpha;
+@property (nonatomic) bool isLoaded;
+@property (nonatomic) bool isPOT;
+@property (getter=getLock, nonatomic, readonly) int*lock;
+@property (nonatomic) char *pixelData;
+@property (nonatomic) struct CGSize { double x1; double x2; } pixelSize;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic) int state;
+@property (nonatomic) unsigned int texFormat;
+@property (nonatomic) unsigned int texId;
+@property (nonatomic) int texInternalFormat;
+@property (nonatomic) unsigned int texType;
+@property (nonatomic) int wrapMode;
 
 - (id).cxx_construct;
 - (unsigned int*)alphaMap;

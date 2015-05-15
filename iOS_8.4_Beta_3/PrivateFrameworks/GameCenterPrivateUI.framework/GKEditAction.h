@@ -8,9 +8,9 @@
     SEL _selector;
 }
 
-@property(assign,readwrite) bool destructive;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) SEL selector;
+@property (nonatomic) bool destructive;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) SEL selector;
 
 + (id)actionWithName:(id)arg1 selector:(SEL)arg2;
 + (id)deleteActionWithName:(id)arg1;

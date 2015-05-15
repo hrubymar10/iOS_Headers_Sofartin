@@ -7,8 +7,8 @@
     long long _sectionIndex;
 }
 
-@property(assign,retain) GKCollectionViewDataSource * dataSource;
-@property(assign,readwrite) long long sectionIndex;
+@property (nonatomic, retain) GKCollectionViewDataSource *dataSource;
+@property (nonatomic) long long sectionIndex;
 
 - (id)dataSource;
 - (void)dealloc;

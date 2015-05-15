@@ -34,8 +34,8 @@
     NSString *_yardAbbreviation;
 }
 
-@property(assign,readwrite) double distanceInMeters;
-@property(assign,readwrite) bool useLightText;
+@property (nonatomic) double distanceInMeters;
+@property (nonatomic) bool useLightText;
 
 - (void).cxx_destruct;
 - (void)_calculateSegments;

@@ -23,16 +23,16 @@
     NSString *_virtualCPLTaskIdentifier;
 }
 
-@property(assign,readonly) bool CPLPrefetching;
-@property(assign,readonly) NSObject<OS_dispatch_group> * CPLPrefetchingWaitGroup;
-@property(assign,readwrite) bool CPLPrefetchingWasCancelled;
-@property(assign,readonly) NSString * assetUUID;
-@property(assign,readwrite) int bestFormat;
-@property(assign,readwrite) bool didCompleteCPLPrefetchingWithSuccessOrError;
-@property(assign,readonly) int format;
-@property(assign,readonly) long long imageType;
-@property(assign,readonly) struct CGSize { double x1; double x2; } optimalSourcePixelSize;
-@property(assign,retain) NSString * virtualCPLTaskIdentifier;
+@property (nonatomic, readonly) bool CPLPrefetching;
+@property (nonatomic, readonly) NSObject<OS_dispatch_group> *CPLPrefetchingWaitGroup;
+@property bool CPLPrefetchingWasCancelled;
+@property (nonatomic, readonly) NSString *assetUUID;
+@property (nonatomic) int bestFormat;
+@property bool didCompleteCPLPrefetchingWithSuccessOrError;
+@property (nonatomic, readonly) int format;
+@property (nonatomic, readonly) long long imageType;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } optimalSourcePixelSize;
+@property (retain) NSString *virtualCPLTaskIdentifier;
 
 - (bool)CPLPrefetching;
 - (id)CPLPrefetchingWaitGroup;

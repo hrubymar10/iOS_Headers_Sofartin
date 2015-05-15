@@ -6,11 +6,11 @@
     NSError *_error;
 }
 
-@property(assign,readonly) long long code;
-@property(assign,readonly) NSString * domain;
-@property(assign,readonly) NSString * localizedDescription;
-@property(assign,readonly) NSString * localizedFailureReason;
-@property(assign,readonly) NSString * localizedRecoverySuggestion;
+@property (readonly) long long code;
+@property (readonly) NSString *domain;
+@property (readonly) NSString *localizedDescription;
+@property (readonly) NSString *localizedFailureReason;
+@property (readonly) NSString *localizedRecoverySuggestion;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

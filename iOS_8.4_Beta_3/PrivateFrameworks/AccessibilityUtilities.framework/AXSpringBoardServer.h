@@ -10,11 +10,11 @@
     NSMutableDictionary *_reachabilityHandlers;
 }
 
-@property(assign,retain) AXAccessQueue * accessQueue;
-@property(assign,retain) NSMutableArray * actionHandlers;
-@property(assign,copy) id currentAlertHandler;
-@property(assign,retain) NSMutableArray * gestureOverrides;
-@property(assign,retain) NSMutableDictionary * reachabilityHandlers;
+@property (nonatomic, retain) AXAccessQueue *accessQueue;
+@property (nonatomic, retain) NSMutableArray *actionHandlers;
+@property (nonatomic, copy) id currentAlertHandler;
+@property (nonatomic, retain) NSMutableArray *gestureOverrides;
+@property (nonatomic, retain) NSMutableDictionary *reachabilityHandlers;
 
 + (id)server;
 

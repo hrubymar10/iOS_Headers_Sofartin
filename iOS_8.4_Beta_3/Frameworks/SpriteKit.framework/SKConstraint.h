@@ -7,8 +7,8 @@
     SKNode *_referenceNode;
 }
 
-@property(assign,readwrite) bool enabled;
-@property(assign,retain) SKNode * referenceNode;
+@property bool enabled;
+@property (retain) SKNode *referenceNode;
 
 + (id)distance:(id)arg1 toNode:(id)arg2;
 + (id)distance:(id)arg1 toPoint:(struct CGPoint { double x1; double x2; })arg2;

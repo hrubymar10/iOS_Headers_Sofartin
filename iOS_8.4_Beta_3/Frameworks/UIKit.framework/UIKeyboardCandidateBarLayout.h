@@ -11,8 +11,8 @@
     NSArray *_edgeDummyCellAttributes;
 }
 
-@property(assign,retain) NSMutableArray * allAttributes;
-@property(assign,retain) NSArray * edgeDummyCellAttributes;
+@property (nonatomic, retain) NSMutableArray *allAttributes;
+@property (nonatomic, retain) NSArray *edgeDummyCellAttributes;
 
 + (id)dummyCellCollectionViewKind;
 + (id)layout;

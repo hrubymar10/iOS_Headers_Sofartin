@@ -39,9 +39,9 @@
     double _transitionProgress;
 }
 
-@property(assign,readonly) UICollectionViewLayout * currentLayout;
-@property(assign,readonly) UICollectionViewLayout * nextLayout;
-@property(assign,readwrite) double transitionProgress;
+@property (nonatomic, readonly) UICollectionViewLayout *currentLayout;
+@property (nonatomic, readonly) UICollectionViewLayout *nextLayout;
+@property (nonatomic) double transitionProgress;
 
 - (void)_finalizeLayoutTransition;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_newVisibleBounds;

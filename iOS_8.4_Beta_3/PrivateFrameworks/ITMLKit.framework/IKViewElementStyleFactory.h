@@ -7,8 +7,8 @@
     IKTemplateStyleSheet *_styleSheet;
 }
 
-@property(assign,retain) IKStyleFactory * styleFactory;
-@property(assign,retain) IKTemplateStyleSheet * styleSheet;
+@property (nonatomic, readonly, retain) IKStyleFactory *styleFactory;
+@property (nonatomic, readonly, retain) IKTemplateStyleSheet *styleSheet;
 
 + (id)styleFactoryWithMarkup:(id)arg1 styleSheet:(id)arg2;
 

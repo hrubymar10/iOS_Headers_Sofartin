@@ -24,15 +24,15 @@
     MSObjectQueue *_uploadQueue;
 }
 
-@property(assign,readwrite) MSMediaStreamDaemon * daemon;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MSPublisherDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int publishBatchSize;
-@property(assign,readwrite) long long publishTargetByteCount;
-@property(assign,retain) NSURL * storageProtocolURL;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) MSMediaStreamDaemon *daemon;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MSPublisherDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int publishBatchSize;
+@property (nonatomic) long long publishTargetByteCount;
+@property (nonatomic, retain) NSURL *storageProtocolURL;
+@property (readonly) Class superclass;
 
 + (id)_clearInstantiatedPublishersByPersonID;
 + (void)_setMasterNextActivityDate:(id)arg1 forPersonID:(id)arg2;

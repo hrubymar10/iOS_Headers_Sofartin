@@ -15,17 +15,17 @@
     UIView *_verticalSeparator;
 }
 
-@property(assign,retain) UIImageView * chevron;
-@property(assign,readwrite) <CKLocationShareBalloonViewDelegate> * delegate;
-@property(assign,retain) UIView * horizontalSeparator;
-@property(assign,retain) UIButton * ignoreButton;
-@property(assign,retain) UILabel * locationLabel;
-@property(assign,copy) NSString * locationString;
-@property(assign,readwrite) long long offerState;
-@property(assign,retain) UIButton * startSharingButton;
-@property(assign,retain) UILabel * titleLabel;
-@property(assign,copy) NSString * titleString;
-@property(assign,retain) UIView * verticalSeparator;
+@property (nonatomic, retain) UIImageView *chevron;
+@property (nonatomic) <CKLocationShareBalloonViewDelegate> *delegate;
+@property (nonatomic, retain) UIView *horizontalSeparator;
+@property (nonatomic, retain) UIButton *ignoreButton;
+@property (nonatomic, retain) UILabel *locationLabel;
+@property (nonatomic, copy) NSString *locationString;
+@property (nonatomic) long long offerState;
+@property (nonatomic, retain) UIButton *startSharingButton;
+@property (nonatomic, retain) UILabel *titleLabel;
+@property (nonatomic, copy) NSString *titleString;
+@property (nonatomic, retain) UIView *verticalSeparator;
 
 - (void)_ignoreButtonHit:(id)arg1;
 - (void)_shareButtonHit:(id)arg1;

@@ -12,13 +12,13 @@
     MPUExtrasVideoTimelineEvent *_previous;
 }
 
-@property(assign,readonly) double duration;
-@property(assign,readwrite) bool isFirstEvent;
-@property(assign,readwrite) MPUExtrasVideoTimelineEvent * next;
-@property(assign,readonly) double offset;
-@property(assign,readonly) MPUExtrasVideoTimelineEvent * previous;
-@property(assign,readonly) NSString * subHeader;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic) bool isFirstEvent;
+@property (nonatomic) MPUExtrasVideoTimelineEvent *next;
+@property (nonatomic, readonly) double offset;
+@property (nonatomic, readonly) MPUExtrasVideoTimelineEvent *previous;
+@property (nonatomic, readonly) NSString *subHeader;
+@property (nonatomic, readonly) NSString *title;
 
 - (void).cxx_destruct;
 - (id)description;

@@ -11,7 +11,7 @@
     } _margins;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } margins;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } margins;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })margins;
 - (bool)pointInside:(struct CGPoint { double x1; double x2; })arg1 withEvent:(id)arg2;

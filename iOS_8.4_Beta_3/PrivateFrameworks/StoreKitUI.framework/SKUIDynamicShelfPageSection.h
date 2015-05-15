@@ -12,13 +12,13 @@
     <SKUIScrollViewDelegateObserver> *_scrollViewDelegateObserver;
 }
 
-@property(assign,readonly) SKUIShelfPageSectionConfiguration * configuration;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIShelfPageComponent * pageComponent;
-@property(assign,readwrite) <SKUIScrollViewDelegateObserver> * scrollViewDelegateObserver;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) SKUIShelfPageSectionConfiguration *configuration;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIShelfPageComponent *pageComponent;
+@property (nonatomic) <SKUIScrollViewDelegateObserver> *scrollViewDelegateObserver;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_normalizedShelfItemIndexPathFromActualIndexPath:(id)arg1;

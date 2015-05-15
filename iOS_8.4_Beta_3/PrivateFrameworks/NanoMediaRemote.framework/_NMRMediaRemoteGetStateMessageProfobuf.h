@@ -15,18 +15,18 @@
     double _timestamp;
 }
 
-@property(assign,retain) NSData * applicationInfoDigest;
-@property(assign,readonly) bool hasApplicationInfoDigest;
-@property(assign,readonly) bool hasKnownDigest;
-@property(assign,readonly) bool hasNowPlayingInfoDigest;
-@property(assign,readwrite) bool hasState;
-@property(assign,readonly) bool hasSupportedCommandsDigest;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSData * knownDigest;
-@property(assign,retain) NSData * nowPlayingInfoDigest;
-@property(assign,readwrite) int state;
-@property(assign,retain) NSData * supportedCommandsDigest;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic, retain) NSData *applicationInfoDigest;
+@property (nonatomic, readonly) bool hasApplicationInfoDigest;
+@property (nonatomic, readonly) bool hasKnownDigest;
+@property (nonatomic, readonly) bool hasNowPlayingInfoDigest;
+@property (nonatomic) bool hasState;
+@property (nonatomic, readonly) bool hasSupportedCommandsDigest;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSData *knownDigest;
+@property (nonatomic, retain) NSData *nowPlayingInfoDigest;
+@property (nonatomic) int state;
+@property (nonatomic, retain) NSData *supportedCommandsDigest;
+@property (nonatomic) double timestamp;
 
 - (void).cxx_destruct;
 - (id)applicationInfoDigest;

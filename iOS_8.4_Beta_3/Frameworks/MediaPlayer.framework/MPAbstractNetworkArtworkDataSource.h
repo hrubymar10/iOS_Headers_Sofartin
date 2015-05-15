@@ -9,15 +9,15 @@
     NSMapTable *_catalogTaskMap;
 }
 
-@property(assign,retain) NSURLSession * URLSession;
-@property(assign,readonly) NSURLSessionConfiguration * URLSessionConfiguration;
-@property(assign,retain) NSObject<OS_dispatch_queue> * accessQueue;
-@property(assign,retain) NSCache * artworkRepresentationCache;
-@property(assign,retain) NSMapTable * catalogTaskMap;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSURLSession *URLSession;
+@property (nonatomic, readonly) NSURLSessionConfiguration *URLSessionConfiguration;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *accessQueue;
+@property (nonatomic, retain) NSCache *artworkRepresentationCache;
+@property (nonatomic, retain) NSMapTable *catalogTaskMap;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)URLSession;

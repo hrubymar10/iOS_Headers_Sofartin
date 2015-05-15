@@ -14,15 +14,15 @@
     unsigned long long _size;
 }
 
-@property(assign,readwrite) unsigned int CRC;
-@property(getter=isCompressed,assign,readwrite) bool compressed;
-@property(assign,readwrite) unsigned long long compressedSize;
-@property(assign,readwrite) unsigned short extraFieldsLength;
-@property(assign,readwrite) unsigned long long fileHeaderLength;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) unsigned short nameLength;
-@property(assign,readwrite) unsigned long long offset;
-@property(assign,readwrite) unsigned long long size;
+@property (nonatomic) unsigned int CRC;
+@property (getter=isCompressed, nonatomic) bool compressed;
+@property (nonatomic) unsigned long long compressedSize;
+@property (nonatomic) unsigned short extraFieldsLength;
+@property (nonatomic) unsigned long long fileHeaderLength;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) unsigned short nameLength;
+@property (nonatomic) unsigned long long offset;
+@property (nonatomic) unsigned long long size;
 
 - (void).cxx_destruct;
 - (unsigned int)CRC;

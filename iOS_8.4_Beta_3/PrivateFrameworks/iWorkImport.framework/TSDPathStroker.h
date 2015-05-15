@@ -8,7 +8,7 @@
     double mWidth;
 }
 
-@property(assign,readwrite) double width;
+@property (nonatomic) double width;
 
 - (void)dealloc;
 - (id)initWithProperties:(id)arg1 bundle:(id)arg2 dataManager:(void*)arg3 precedingStroker:(id)arg4;

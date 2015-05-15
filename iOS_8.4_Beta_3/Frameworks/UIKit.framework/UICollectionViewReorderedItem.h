@@ -8,9 +8,9 @@
     NSIndexPath *_targetIndexPath;
 }
 
-@property(assign,readonly) UICollectionViewCell * cell;
-@property(assign,retain) NSIndexPath * originalIndexPath;
-@property(assign,retain) NSIndexPath * targetIndexPath;
+@property (nonatomic, readonly) UICollectionViewCell *cell;
+@property (nonatomic, retain) NSIndexPath *originalIndexPath;
+@property (nonatomic, retain) NSIndexPath *targetIndexPath;
 
 - (id)cell;
 - (void)dealloc;

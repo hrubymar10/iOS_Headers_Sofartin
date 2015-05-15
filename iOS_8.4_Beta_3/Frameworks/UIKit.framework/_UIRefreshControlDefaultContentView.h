@@ -14,11 +14,11 @@
     UILabel *_textLabel;
 }
 
-@property(assign,readwrite) bool areAnimationsValid;
-@property(assign,readonly) UIImageView * arrow;
-@property(assign,readonly) UIImageView * imageView;
-@property(assign,readonly) UIActivityIndicatorView * spinner;
-@property(assign,readonly) UILabel * textLabel;
+@property (nonatomic) bool areAnimationsValid;
+@property (nonatomic, readonly) UIImageView *arrow;
+@property (nonatomic, readonly) UIImageView *imageView;
+@property (nonatomic, readonly) UIActivityIndicatorView *spinner;
+@property (nonatomic, readonly) UILabel *textLabel;
 
 - (double)_currentTimeOffset;
 - (void)_fadeInMagic;

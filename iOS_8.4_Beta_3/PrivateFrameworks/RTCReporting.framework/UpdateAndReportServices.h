@@ -8,9 +8,9 @@
     bool _update;
 }
 
-@property(assign,copy) id block;
-@property(assign,readonly) bool report;
-@property(assign,readonly) bool update;
+@property (copy) id block;
+@property (readonly) bool report;
+@property (readonly) bool update;
 
 - (id)block;
 - (void)dealloc;

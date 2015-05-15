@@ -9,10 +9,10 @@
     bool _shouldUpdateContentOnlyWhenAuthenticated;
 }
 
-@property(assign,retain) GKColorPalette * colorPalette;
-@property(assign,readwrite) long long gkFocusBubbleType;
-@property(assign,retain) GKViewController * rootViewController;
-@property(assign,readwrite) bool shouldUpdateContentOnlyWhenAuthenticated;
+@property (nonatomic, retain) GKColorPalette *colorPalette;
+@property (nonatomic) long long gkFocusBubbleType;
+@property (nonatomic, retain) GKViewController *rootViewController;
+@property (nonatomic) bool shouldUpdateContentOnlyWhenAuthenticated;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 

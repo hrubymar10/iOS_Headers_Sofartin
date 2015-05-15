@@ -9,9 +9,9 @@
     unsigned int _offset;
 }
 
-@property(assign,readonly) unsigned long long dataType;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) unsigned long long offset;
+@property (readonly) unsigned long long dataType;
+@property (readonly) NSString *name;
+@property (readonly) unsigned long long offset;
 
 - (id)arrayType;
 - (unsigned long long)dataType;

@@ -15,16 +15,16 @@
     bool _webSearch;
 }
 
-@property(assign,readwrite) bool canceled;
-@property(assign,retain) NSString * fbq;
-@property(assign,retain) PRSSearchFeedback * feedback;
-@property(assign,retain) <PRSSearchQueryHandler> * handler;
-@property(assign,readwrite) long long queryId;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) id representedObject;
-@property(assign,readwrite) PRSSearchSession * session;
-@property(assign,readwrite) bool started;
-@property(assign,readwrite) bool webSearch;
+@property (nonatomic) bool canceled;
+@property (nonatomic, retain) NSString *fbq;
+@property (retain) PRSSearchFeedback *feedback;
+@property (nonatomic, retain) <PRSSearchQueryHandler> *handler;
+@property long long queryId;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) id representedObject;
+@property (nonatomic) PRSSearchSession *session;
+@property (nonatomic) bool started;
+@property bool webSearch;
 
 + (void)initialize;
 + (void)resumeDecoding;

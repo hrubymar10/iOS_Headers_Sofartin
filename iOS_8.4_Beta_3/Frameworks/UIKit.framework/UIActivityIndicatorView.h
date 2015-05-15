@@ -29,24 +29,24 @@
     double _width;
 }
 
-@property(assign,readwrite) long long activityIndicatorViewStyle;
-@property(assign,readonly) NSString * artBackupKeyString;
-@property(assign,readwrite) bool clockWise;
-@property(assign,retain) UIColor * color;
-@property(assign,readwrite) bool hasShadow;
-@property(assign,readwrite) bool hidesWhenStopped;
-@property(assign,readwrite) double innerRadius;
-@property(assign,readonly) UIImageView * internalView;
-@property(assign,retain) UIColor * shadowColor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } shadowOffset;
-@property(assign,readwrite) bool spinning;
-@property(assign,readwrite) double spinningDuration;
-@property(assign,readwrite) long long spokeCount;
-@property(assign,readwrite) long long spokeFrameRatio;
-@property(assign,readonly) NSArray * spokeImages;
-@property(assign,readwrite) bool useArtwork;
-@property(assign,readwrite) bool useOutlineShadow;
-@property(assign,readwrite) double width;
+@property (nonatomic) long long activityIndicatorViewStyle;
+@property (nonatomic, readonly) NSString *artBackupKeyString;
+@property (nonatomic) bool clockWise;
+@property (nonatomic, retain) UIColor *color;
+@property bool hasShadow;
+@property (nonatomic) bool hidesWhenStopped;
+@property (nonatomic) double innerRadius;
+@property (nonatomic, readonly) UIImageView *internalView;
+@property (nonatomic, retain) UIColor *shadowColor;
+@property (nonatomic) struct CGSize { double x1; double x2; } shadowOffset;
+@property bool spinning;
+@property (nonatomic) double spinningDuration;
+@property (nonatomic) long long spokeCount;
+@property (nonatomic) long long spokeFrameRatio;
+@property (readonly) NSArray *spokeImages;
+@property (nonatomic) bool useArtwork;
+@property (nonatomic) bool useOutlineShadow;
+@property (nonatomic) double width;
 
 + (bool)_isModernStyle:(long long)arg1;
 + (id)_loadResourcesForStyle:(long long)arg1;

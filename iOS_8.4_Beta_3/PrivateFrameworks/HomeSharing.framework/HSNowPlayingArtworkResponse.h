@@ -7,8 +7,8 @@
     NSString *_artworkMIMEType;
 }
 
-@property(assign,retain) NSData * artworkData;
-@property(assign,retain) NSString * artworkMIMEType;
+@property (nonatomic, retain) NSData *artworkData;
+@property (nonatomic, retain) NSString *artworkMIMEType;
 
 - (void).cxx_destruct;
 - (id)artworkData;

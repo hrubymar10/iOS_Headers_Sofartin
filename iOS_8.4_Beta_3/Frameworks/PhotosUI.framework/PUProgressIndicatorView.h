@@ -25,13 +25,13 @@
     bool _wantsImmediateHide;
 }
 
-@property(setter=_setCurrentState:,assign,readwrite) long long _currentState;
-@property(setter=_setTimestampBeganShowing:,assign,readwrite) double _timestampBeganShowing;
-@property(assign,readwrite) double currentProgress;
-@property(setter=setDeterminate:,assign,readwrite) bool isDeterminate;
-@property(assign,copy) NSString * localizedMessage;
-@property(assign,readwrite) bool showsBackground;
-@property(assign,readonly) long long style;
+@property (setter=_setCurrentState:, nonatomic) long long _currentState;
+@property (setter=_setTimestampBeganShowing:, nonatomic) double _timestampBeganShowing;
+@property (nonatomic) double currentProgress;
+@property (setter=setDeterminate:, nonatomic) bool isDeterminate;
+@property (nonatomic, copy) NSString *localizedMessage;
+@property (nonatomic) bool showsBackground;
+@property (nonatomic, readonly) long long style;
 
 - (void).cxx_destruct;
 - (long long)_currentState;

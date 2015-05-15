@@ -28,7 +28,7 @@
     EKEventStore *_store;
 }
 
-@property(assign,readwrite) <CalendarEventLoaderDelegate> * delegate;
+@property (nonatomic) <CalendarEventLoaderDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_enqueueLoadForRangeStart:(double)arg1 end:(double)arg2;

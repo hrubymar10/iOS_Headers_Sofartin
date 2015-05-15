@@ -26,22 +26,22 @@
     long long _userInterfaceIdiomOverride;
 }
 
-@property(assign,readonly) SSURLBag * URLBag;
-@property(getter=_applicationController,setter=_setApplicationController:,assign,readwrite) SKUIApplicationController * _applicationController;
-@property(getter=_scriptAppContext,setter=_setScriptAppContext:,assign,retain) IKAppContext * _scriptAppContext;
-@property(assign,readonly) SUClientInterface * clientInterface;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * metricsConfigurationIdentifier;
-@property(assign,readonly) NSArray * navigationHistory;
-@property(assign,copy) NSString * navigationHistoryPersistenceKey;
-@property(assign,readonly) SSVPlatformContext * platformContext;
-@property(assign,copy) SKUIURL * purchaseReferrerURL;
-@property(assign,readonly) NSString * storeFrontIdentifier;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SSUpdatableAssetController * updatableAssetController;
-@property(assign,readwrite) long long userInterfaceIdiomOverride;
+@property (nonatomic, readonly) SSURLBag *URLBag;
+@property (getter=_applicationController, setter=_setApplicationController:, nonatomic) SKUIApplicationController *_applicationController;
+@property (getter=_scriptAppContext, setter=_setScriptAppContext:, nonatomic, retain) IKAppContext *_scriptAppContext;
+@property (nonatomic, readonly) SUClientInterface *clientInterface;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *metricsConfigurationIdentifier;
+@property (nonatomic, readonly) NSArray *navigationHistory;
+@property (nonatomic, copy) NSString *navigationHistoryPersistenceKey;
+@property (nonatomic, readonly) SSVPlatformContext *platformContext;
+@property (nonatomic, copy) SKUIURL *purchaseReferrerURL;
+@property (nonatomic, readonly) NSString *storeFrontIdentifier;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SSUpdatableAssetController *updatableAssetController;
+@property (nonatomic) long long userInterfaceIdiomOverride;
 
 + (id)_cachePathForStoreFrontIdentifier:(id)arg1;
 + (id)_configurationDictionaryWithBagDictionary:(id)arg1;

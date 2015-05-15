@@ -4,7 +4,7 @@
 
 @interface SAMPSetState : SADomainCommand
 
-@property(assign,readwrite) int state;
+@property (nonatomic) int state;
 
 + (id)setState;
 + (id)setStateWithDictionary:(id)arg1 context:(id)arg2;

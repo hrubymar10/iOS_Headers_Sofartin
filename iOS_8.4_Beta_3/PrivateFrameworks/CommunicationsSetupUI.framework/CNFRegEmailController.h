@@ -13,8 +13,8 @@
     NSTimer *_validationTimeoutTimer;
 }
 
-@property(assign,copy) id alertHandler;
-@property(assign,copy) NSString * pendingAlias;
+@property (nonatomic, copy) id alertHandler;
+@property (nonatomic, copy) NSString *pendingAlias;
 
 - (void)_buildActionGroupSpecifierCache:(id)arg1;
 - (void)_buildCheckMailSpecifierCache:(id)arg1;

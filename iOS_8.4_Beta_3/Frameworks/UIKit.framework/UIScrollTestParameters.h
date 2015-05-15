@@ -12,14 +12,14 @@
     float _startOffset;
 }
 
-@property(assign,readwrite) int axis;
-@property(assign,retain) NSString * currentTest;
-@property(assign,readwrite) int delta;
-@property(assign,retain) CADisplayLink * displayLink;
-@property(assign,readonly) float endOffset;
-@property(assign,readwrite) int iterations;
-@property(assign,readwrite) int scrollLength;
-@property(assign,readwrite) float startOffset;
+@property (nonatomic) int axis;
+@property (nonatomic, retain) NSString *currentTest;
+@property (nonatomic) int delta;
+@property (nonatomic, retain) CADisplayLink *displayLink;
+@property (nonatomic, readonly) float endOffset;
+@property (nonatomic) int iterations;
+@property (nonatomic) int scrollLength;
+@property (nonatomic) float startOffset;
 
 - (int)axis;
 - (id)currentTest;

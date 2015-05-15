@@ -13,11 +13,11 @@
     bool _usesOpaqueColorForTopHairline;
 }
 
-@property(assign,copy) NSString * backdropBarGroupName;
-@property(assign,readwrite) bool showsBackdrop;
-@property(assign,readwrite) bool showsBottomHairline;
-@property(assign,readwrite) bool showsTopHairline;
-@property(assign,readwrite) bool usesOpaqueColorForTopHairline;
+@property (nonatomic, copy) NSString *backdropBarGroupName;
+@property (nonatomic) bool showsBackdrop;
+@property (nonatomic) bool showsBottomHairline;
+@property (nonatomic) bool showsTopHairline;
+@property (nonatomic) bool usesOpaqueColorForTopHairline;
 
 - (void).cxx_destruct;
 - (void)_updateTopHairlineColor;

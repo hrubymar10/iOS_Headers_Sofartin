@@ -7,8 +7,8 @@
     NSString *_authToken;
 }
 
-@property(assign,retain) ACAccount * account;
-@property(assign,copy) NSString * authToken;
+@property (nonatomic, retain) ACAccount *account;
+@property (nonatomic, copy) NSString *authToken;
 
 + (Class)responseClass;
 

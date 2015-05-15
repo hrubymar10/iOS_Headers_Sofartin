@@ -4,22 +4,22 @@
 
 @interface SASUpdateAudioInfo : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * audioSource;
-@property(assign,readwrite) int codec;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * deviceIdentifier;
-@property(assign,copy) NSString * deviceModel;
-@property(assign,copy) NSString * dspStatus;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * headsetAddress;
-@property(assign,copy) NSString * headsetId;
-@property(assign,copy) NSString * headsetName;
-@property(assign,copy) NSNumber * noiseReductionLevel;
-@property(assign,copy) NSString * origin;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic, copy) NSString *audioSource;
+@property (nonatomic) int codec;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *deviceIdentifier;
+@property (nonatomic, copy) NSString *deviceModel;
+@property (nonatomic, copy) NSString *dspStatus;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *headsetAddress;
+@property (nonatomic, copy) NSString *headsetId;
+@property (nonatomic, copy) NSString *headsetName;
+@property (nonatomic, copy) NSNumber *noiseReductionLevel;
+@property (nonatomic, copy) NSString *origin;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
 
 + (id)updateAudioInfo;
 + (id)updateAudioInfoWithDictionary:(id)arg1 context:(id)arg2;

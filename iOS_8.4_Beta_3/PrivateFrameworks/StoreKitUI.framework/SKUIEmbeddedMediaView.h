@@ -13,13 +13,13 @@
     bool _usingInlinePlayback;
 }
 
-@property(assign,readwrite) <SKUIEmbeddedMediaViewDelegate> * delegate;
-@property(assign,readwrite) long long mediaType;
-@property(assign,copy) NSString * mediaURLString;
-@property(assign,readonly) long long playbackState;
-@property(assign,readwrite) bool showsThumbnailReflection;
-@property(assign,readwrite) long long thumbnailContentMode;
-@property(assign,retain) UIImage * thumbnailImage;
+@property (nonatomic) <SKUIEmbeddedMediaViewDelegate> *delegate;
+@property (nonatomic) long long mediaType;
+@property (nonatomic, copy) NSString *mediaURLString;
+@property (nonatomic, readonly) long long playbackState;
+@property (nonatomic) bool showsThumbnailReflection;
+@property (nonatomic) long long thumbnailContentMode;
+@property (nonatomic, retain) UIImage *thumbnailImage;
 
 - (void).cxx_destruct;
 - (void)_didExitFullscreen:(id)arg1;

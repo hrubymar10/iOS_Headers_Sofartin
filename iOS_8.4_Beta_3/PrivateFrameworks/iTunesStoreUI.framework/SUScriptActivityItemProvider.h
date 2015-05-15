@@ -12,16 +12,16 @@
     int _previewLoadState;
 }
 
-@property(assign,readonly) NSString * MIMEType;
-@property(assign,readonly) NSString * activityType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) WebScriptObject * itemFunction;
-@property(assign,readonly) SUActivityItemProvider * nativeActivityItemProvider;
-@property(assign,readwrite) double progress;
-@property(assign,copy) NSString * status;
-@property(assign,readonly) Class superclass;
+@property (readonly) NSString *MIMEType;
+@property (readonly) NSString *activityType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) WebScriptObject *itemFunction;
+@property (readonly) SUActivityItemProvider *nativeActivityItemProvider;
+@property double progress;
+@property (copy) NSString *status;
+@property (readonly) Class superclass;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

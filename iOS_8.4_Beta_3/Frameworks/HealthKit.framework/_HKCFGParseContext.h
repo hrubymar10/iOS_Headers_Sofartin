@@ -9,10 +9,10 @@
     NSScanner *_scanner;
 }
 
-@property(assign,readonly) _HKCFGNodeCache * cache;
-@property(assign,readonly) unsigned long long lengthAllowance;
-@property(assign,readonly) unsigned long long recursiveDepth;
-@property(assign,readonly) NSScanner * scanner;
+@property (nonatomic, readonly) _HKCFGNodeCache *cache;
+@property (nonatomic, readonly) unsigned long long lengthAllowance;
+@property (nonatomic, readonly) unsigned long long recursiveDepth;
+@property (nonatomic, readonly) NSScanner *scanner;
 
 - (void).cxx_destruct;
 - (id)cache;

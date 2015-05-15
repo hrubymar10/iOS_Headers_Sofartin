@@ -6,7 +6,7 @@
     IKAppMenuBarDocument *_menuBarDocument;
 }
 
-@property(assign,readonly) IKAppMenuBarDocument * menuBarDocument;
+@property (nonatomic, readonly) IKAppMenuBarDocument *menuBarDocument;
 
 + (id)supportedFeatures;
 

@@ -6,7 +6,7 @@
     bool _sendCallback;
 }
 
-@property(assign,readwrite) bool sendCallback;
+@property (nonatomic) bool sendCallback;
 
 - (bool)sendCallback;
 - (void)setSendCallback:(bool)arg1;

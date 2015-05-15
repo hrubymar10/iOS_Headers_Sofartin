@@ -23,11 +23,11 @@
     UIView *_topBorderView;
 }
 
-@property(assign,retain) UIColor * separatorColor;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } separatorInsets;
-@property(assign,readwrite) long long separatorStyle;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } separatorWidths;
-@property(assign,readwrite) bool showsCellSeparators;
+@property (nonatomic, retain) UIColor *separatorColor;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } separatorInsets;
+@property (nonatomic) long long separatorStyle;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } separatorWidths;
+@property (nonatomic) bool showsCellSeparators;
 
 - (void).cxx_destruct;
 - (void)_setPosition:(long long)arg1;

@@ -10,10 +10,10 @@
     void *_priv;
 }
 
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,retain) CAValueFunction * function;
-@property(assign,retain) CALayer * layer;
-@property(assign,copy) NSString * name;
+@property (getter=isEnabled) bool enabled;
+@property (retain) CAValueFunction *function;
+@property (retain) CALayer *layer;
+@property (copy) NSString *name;
 
 + (void)CAMLParserStartElement:(id)arg1;
 + (id)defaultValueForKey:(id)arg1;

@@ -13,9 +13,9 @@
     NSString *_text;
 }
 
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } insets;
-@property(assign,readonly) UILabel * label;
-@property(assign,copy) NSString * text;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } insets;
+@property (nonatomic, readonly) UILabel *label;
+@property (nonatomic, copy) NSString *text;
 
 - (void).cxx_destruct;
 - (void)_updateLabel;

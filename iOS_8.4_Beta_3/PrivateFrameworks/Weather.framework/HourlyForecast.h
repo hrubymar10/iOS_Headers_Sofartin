@@ -11,12 +11,12 @@
     NSString *_time;
 }
 
-@property(assign,readwrite) long long conditionCode;
-@property(assign,copy) NSString * detail;
-@property(assign,readwrite) unsigned long long eventType;
-@property(assign,readwrite) long long hourIndex;
-@property(assign,readwrite) float percentPrecipitation;
-@property(assign,copy) NSString * time;
+@property (nonatomic) long long conditionCode;
+@property (nonatomic, copy) NSString *detail;
+@property (nonatomic) unsigned long long eventType;
+@property (nonatomic) long long hourIndex;
+@property (nonatomic) float percentPrecipitation;
+@property (nonatomic, copy) NSString *time;
 
 + (long long)TimeValueFromString:(id)arg1;
 

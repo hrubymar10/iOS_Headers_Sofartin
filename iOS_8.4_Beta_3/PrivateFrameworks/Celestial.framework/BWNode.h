@@ -17,18 +17,18 @@
     bool _supportsLiveReconfiguration;
 }
 
-@property(assign,readwrite) BWGraph * graph;
-@property(assign,readonly) bool hasNonLiveConfigurationChanges;
-@property(assign,readonly) BWNodeInput * input;
-@property(assign,readonly) NSArray * inputs;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) NSString * nodeSubType;
-@property(assign,readonly) NSString * nodeType;
-@property(assign,readonly) BWNodeOutput * output;
-@property(assign,readonly) NSArray * outputs;
-@property(assign,readwrite) <BWNodeRenderDelegate> * renderDelegate;
-@property(assign,readwrite) bool supportsConcurrentLiveInputCallbacks;
-@property(assign,readwrite) bool supportsLiveReconfiguration;
+@property (nonatomic) BWGraph *graph;
+@property (nonatomic, readonly) bool hasNonLiveConfigurationChanges;
+@property (readonly) BWNodeInput *input;
+@property (readonly) NSArray *inputs;
+@property (nonatomic, copy) NSString *name;
+@property (readonly) NSString *nodeSubType;
+@property (readonly) NSString *nodeType;
+@property (readonly) BWNodeOutput *output;
+@property (readonly) NSArray *outputs;
+@property (nonatomic) <BWNodeRenderDelegate> *renderDelegate;
+@property (nonatomic) bool supportsConcurrentLiveInputCallbacks;
+@property (nonatomic) bool supportsLiveReconfiguration;
 
 + (void)initialize;
 

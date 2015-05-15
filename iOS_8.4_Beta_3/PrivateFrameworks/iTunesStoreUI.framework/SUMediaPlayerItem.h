@@ -16,18 +16,18 @@
     NSURL *_url;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,retain) NSURL * backgroundImageURL;
-@property(assign,copy) NSString * bookmarkIdentifier;
-@property(assign,readwrite) double bookmarkedStartTime;
-@property(assign,copy) NSArray * downloadPingURLs;
-@property(assign,readwrite) long long initialOrientation;
-@property(assign,readwrite) unsigned long long itemIdentifier;
-@property(assign,readwrite) long long itemType;
-@property(assign,readwrite) double playableDuration;
-@property(assign,copy) NSArray * playbackPingURLs;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic, retain) NSURL *backgroundImageURL;
+@property (nonatomic, copy) NSString *bookmarkIdentifier;
+@property (nonatomic) double bookmarkedStartTime;
+@property (nonatomic, copy) NSArray *downloadPingURLs;
+@property (nonatomic) long long initialOrientation;
+@property (nonatomic) unsigned long long itemIdentifier;
+@property (nonatomic) long long itemType;
+@property (nonatomic) double playableDuration;
+@property (nonatomic, copy) NSArray *playbackPingURLs;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
 
 - (id)URL;
 - (id)_newPingURLsWithArray:(id)arg1;

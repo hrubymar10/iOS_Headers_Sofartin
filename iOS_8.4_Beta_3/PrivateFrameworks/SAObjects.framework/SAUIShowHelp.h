@@ -4,8 +4,8 @@
 
 @interface SAUIShowHelp : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * speakableText;
-@property(assign,copy) NSString * text;
+@property (nonatomic, copy) NSString *speakableText;
+@property (nonatomic, copy) NSString *text;
 
 + (id)showHelp;
 + (id)showHelpWithDictionary:(id)arg1 context:(id)arg2;

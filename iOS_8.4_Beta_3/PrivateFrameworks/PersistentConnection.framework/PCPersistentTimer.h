@@ -17,14 +17,14 @@
     id _userInfo;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool disableSystemWaking;
-@property(assign,readonly) double fireTime;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * loggingIdentifier;
-@property(assign,readwrite) double minimumEarlyFireProportion;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool disableSystemWaking;
+@property (nonatomic, readonly) double fireTime;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *loggingIdentifier;
+@property (nonatomic) double minimumEarlyFireProportion;
+@property (readonly) Class superclass;
 
 + (id)_backgroundUpdateQueue;
 + (double)_currentGuidanceTime;

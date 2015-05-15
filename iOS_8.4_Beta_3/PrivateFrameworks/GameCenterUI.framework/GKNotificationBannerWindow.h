@@ -10,11 +10,11 @@
     long long _initialInterfaceOrientation;
 }
 
-@property(assign,readwrite) bool bannerAnimating;
-@property(assign,readonly) NSObject<OS_dispatch_semaphore> * bannerSemaphore;
-@property(assign,readwrite) bool bannerVisible;
-@property(assign,retain) GKNotificationBannerView * currentBanner;
-@property(assign,readwrite) long long initialInterfaceOrientation;
+@property (nonatomic) bool bannerAnimating;
+@property (nonatomic, readonly) NSObject<OS_dispatch_semaphore> *bannerSemaphore;
+@property (nonatomic) bool bannerVisible;
+@property (nonatomic, retain) GKNotificationBannerView *currentBanner;
+@property (nonatomic) long long initialInterfaceOrientation;
 
 + (id)bannerWindow;
 + (void)enqueBanner:(id)arg1;

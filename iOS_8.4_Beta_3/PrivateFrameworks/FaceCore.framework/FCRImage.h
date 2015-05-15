@@ -11,9 +11,9 @@
     unsigned long long width;
 }
 
-@property(assign,readwrite) unsigned long long bytesPerRow;
-@property(assign,readwrite) unsigned long long height;
-@property(assign,readwrite) unsigned long long width;
+@property unsigned long long bytesPerRow;
+@property unsigned long long height;
+@property unsigned long long width;
 
 - (unsigned long long)bytesPerRow;
 - (void)dealloc;

@@ -7,8 +7,8 @@
     HKQuantity *_heartRate;
 }
 
-@property(assign,readwrite) long long confidence;
-@property(assign,retain) HKQuantity * heartRate;
+@property (nonatomic) long long confidence;
+@property (nonatomic, retain) HKQuantity *heartRate;
 
 + (id)readingWithHeartRate:(id)arg1 confidence:(long long)arg2;
 + (bool)supportsSecureCoding;

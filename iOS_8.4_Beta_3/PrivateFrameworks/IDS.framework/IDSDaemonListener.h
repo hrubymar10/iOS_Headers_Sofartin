@@ -14,13 +14,13 @@
     NSMutableDictionary *_topicToEnabledAccounts;
 }
 
-@property(setter=_setHidingDisconnect:,assign,readwrite) bool _hidingDisconnect;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasPostedSetupComplete;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isSetupComplete;
-@property(assign,readonly) Class superclass;
+@property (setter=_setHidingDisconnect:, nonatomic) bool _hidingDisconnect;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasPostedSetupComplete;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isSetupComplete;
+@property (readonly) Class superclass;
 
 - (void)_callHandlersAsyncWithBlock:(id)arg1;
 - (void)_callHandlersWithBlock:(id)arg1;

@@ -19,14 +19,14 @@
     ABContactPhotoView *_photoView;
 }
 
-@property(assign,readonly) CNContact * contact;
-@property(assign,retain) CNContactStyle * contactStyle;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentMargins;
-@property(assign,readwrite) <ABPresenterDelegate> * delegate;
-@property(assign,retain) NSMutableArray * headerConstraints;
-@property(assign,readwrite) <ABContactHeaderViewDelegate> * headerDelegate;
-@property(assign,copy) NSDictionary * nameTextAttributes;
-@property(assign,readonly) ABContactPhotoView * photoView;
+@property (nonatomic, readonly) CNContact *contact;
+@property (nonatomic, retain) CNContactStyle *contactStyle;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentMargins;
+@property (nonatomic) <ABPresenterDelegate> *delegate;
+@property (nonatomic, retain) NSMutableArray *headerConstraints;
+@property (nonatomic) <ABContactHeaderViewDelegate> *headerDelegate;
+@property (nonatomic, copy) NSDictionary *nameTextAttributes;
+@property (nonatomic, readonly) ABContactPhotoView *photoView;
 
 - (id)contact;
 - (id)contactStyle;

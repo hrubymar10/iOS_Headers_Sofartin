@@ -4,22 +4,22 @@
 
 @interface SALoadAssistant : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSData * activationToken;
-@property(assign,copy) NSString * assistantId;
-@property(assign,copy) NSString * connectionMode;
-@property(assign,copy) NSString * connectionType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * language;
-@property(assign,copy) NSString * linkedAssistantId;
-@property(assign,copy) NSData * linkedSessionValidationData;
-@property(assign,copy) NSString * linkedSpeechId;
-@property(assign,copy) NSString * refId;
-@property(assign,copy) NSData * sessionValidationData;
-@property(assign,copy) NSString * speechId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic, copy) NSData *activationToken;
+@property (nonatomic, copy) NSString *assistantId;
+@property (nonatomic, copy) NSString *connectionMode;
+@property (nonatomic, copy) NSString *connectionType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *language;
+@property (nonatomic, copy) NSString *linkedAssistantId;
+@property (nonatomic, copy) NSData *linkedSessionValidationData;
+@property (nonatomic, copy) NSString *linkedSpeechId;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic, copy) NSData *sessionValidationData;
+@property (nonatomic, copy) NSString *speechId;
+@property (readonly) Class superclass;
 
 + (id)loadAssistant;
 + (id)loadAssistantWithDictionary:(id)arg1 context:(id)arg2;

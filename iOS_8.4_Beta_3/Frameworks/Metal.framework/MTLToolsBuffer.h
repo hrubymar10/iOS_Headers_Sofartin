@@ -6,15 +6,15 @@
     MTLToolsPointerArray *_textures;
 }
 
-@property(assign,readonly) unsigned long long cpuCacheMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * label;
-@property(assign,readonly) unsigned long long length;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) MTLToolsPointerArray * textures;
+@property (readonly) unsigned long long cpuCacheMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) <MTLDevice> *device;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *label;
+@property (readonly) unsigned long long length;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) MTLToolsPointerArray *textures;
 
 - (void).cxx_destruct;
 - (void)acceptVisitor:(id)arg1;

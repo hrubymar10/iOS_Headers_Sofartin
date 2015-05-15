@@ -11,12 +11,12 @@
     NSData *_persistentReference;
 }
 
-@property(assign,readonly) long long domain;
-@property(assign,copy) NSString * identifier;
-@property(assign,readonly) bool legacy;
-@property(assign,copy) NEKeychainItem * oldItem;
-@property(assign,copy) NSString * password;
-@property(assign,copy) NSData * persistentReference;
+@property (readonly) long long domain;
+@property (copy) NSString *identifier;
+@property (readonly) bool legacy;
+@property (copy) NEKeychainItem *oldItem;
+@property (copy) NSString *password;
+@property (copy) NSData *persistentReference;
 
 + (bool)supportsSecureCoding;
 

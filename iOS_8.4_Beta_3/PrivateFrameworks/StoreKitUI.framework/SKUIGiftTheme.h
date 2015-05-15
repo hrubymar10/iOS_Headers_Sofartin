@@ -12,13 +12,13 @@
     NSString *_themeName;
 }
 
-@property(assign,copy) UIColor * backgroundColor;
-@property(assign,copy) UIColor * bodyTextColor;
-@property(assign,retain) UIImage * headerImage;
-@property(assign,copy) NSURL * headerImageURL;
-@property(assign,copy) UIColor * primaryTextColor;
-@property(assign,readwrite) long long themeIdentifier;
-@property(assign,copy) NSString * themeName;
+@property (nonatomic, copy) UIColor *backgroundColor;
+@property (nonatomic, copy) UIColor *bodyTextColor;
+@property (nonatomic, retain) UIImage *headerImage;
+@property (nonatomic, copy) NSURL *headerImageURL;
+@property (nonatomic, copy) UIColor *primaryTextColor;
+@property (nonatomic) long long themeIdentifier;
+@property (nonatomic, copy) NSString *themeName;
 
 - (void).cxx_destruct;
 - (id)backgroundColor;

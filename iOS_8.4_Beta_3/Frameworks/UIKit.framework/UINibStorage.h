@@ -13,14 +13,14 @@
     UINibDecoder *nibDecoder;
 }
 
-@property(assign,copy) NSData * archiveData;
-@property(assign,retain) NSBundle * bundle;
-@property(assign,copy) NSString * bundleDirectoryName;
-@property(assign,copy) NSString * bundleResourceName;
-@property(assign,readwrite) bool captureImplicitLoadingContextOnDecode;
-@property(assign,copy) NSString * identifierForStringsFile;
-@property(assign,readwrite) bool instantiatingForSimulator;
-@property(assign,retain) UINibDecoder * nibDecoder;
+@property (nonatomic, copy) NSData *archiveData;
+@property (nonatomic, retain) NSBundle *bundle;
+@property (nonatomic, copy) NSString *bundleDirectoryName;
+@property (nonatomic, copy) NSString *bundleResourceName;
+@property bool captureImplicitLoadingContextOnDecode;
+@property (nonatomic, copy) NSString *identifierForStringsFile;
+@property (nonatomic) bool instantiatingForSimulator;
+@property (nonatomic, retain) UINibDecoder *nibDecoder;
 
 - (id)archiveData;
 - (id)bundle;

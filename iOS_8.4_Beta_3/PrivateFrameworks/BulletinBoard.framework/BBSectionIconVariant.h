@@ -11,12 +11,12 @@
     bool _precomposed;
 }
 
-@property(assign,copy) NSString * bundlePath;
-@property(assign,readwrite) long long format;
-@property(assign,copy) NSData * imageData;
-@property(assign,copy) NSString * imageName;
-@property(assign,copy) NSString * imagePath;
-@property(getter=isPrecomposed,assign,readwrite) bool precomposed;
+@property (nonatomic, copy) NSString *bundlePath;
+@property (nonatomic) long long format;
+@property (nonatomic, copy) NSData *imageData;
+@property (nonatomic, copy) NSString *imageName;
+@property (nonatomic, copy) NSString *imagePath;
+@property (getter=isPrecomposed, nonatomic) bool precomposed;
 
 + (id)_variantWithFormat:(long long)arg1;
 + (bool)supportsSecureCoding;

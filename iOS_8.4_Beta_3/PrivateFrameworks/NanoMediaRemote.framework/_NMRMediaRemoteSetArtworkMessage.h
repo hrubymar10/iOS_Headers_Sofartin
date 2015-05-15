@@ -11,12 +11,12 @@
     double _timestamp;
 }
 
-@property(assign,readonly) bool hasJpegData;
-@property(assign,readonly) bool hasOriginalDigest;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSData * jpegData;
-@property(assign,retain) NSData * originalDigest;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic, readonly) bool hasJpegData;
+@property (nonatomic, readonly) bool hasOriginalDigest;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSData *jpegData;
+@property (nonatomic, retain) NSData *originalDigest;
+@property (nonatomic) double timestamp;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

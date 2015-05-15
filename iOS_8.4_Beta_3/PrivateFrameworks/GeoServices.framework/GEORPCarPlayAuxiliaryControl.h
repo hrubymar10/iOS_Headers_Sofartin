@@ -6,8 +6,8 @@
     GEOCarInfo *_carInfo;
 }
 
-@property(assign,retain) GEOCarInfo * carInfo;
-@property(assign,readonly) bool hasCarInfo;
+@property (nonatomic, retain) GEOCarInfo *carInfo;
+@property (nonatomic, readonly) bool hasCarInfo;
 
 - (id)carInfo;
 - (void)copyTo:(id)arg1;

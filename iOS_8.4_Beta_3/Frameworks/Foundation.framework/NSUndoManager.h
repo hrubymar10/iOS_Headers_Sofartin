@@ -13,21 +13,21 @@
     id _undoStack;
 }
 
-@property(assign,readonly) bool canRedo;
-@property(assign,readonly) bool canUndo;
-@property(assign,readonly) long long groupingLevel;
-@property(assign,readwrite) bool groupsByEvent;
-@property(assign,readwrite) unsigned long long levelsOfUndo;
-@property(assign,readonly) bool redoActionIsDiscardable;
-@property(assign,copy) NSString * redoActionName;
-@property(assign,copy) NSString * redoMenuItemTitle;
-@property(getter=isRedoing,assign,readonly) bool redoing;
-@property(assign,copy) NSArray * runLoopModes;
-@property(assign,readonly) bool undoActionIsDiscardable;
-@property(assign,copy) NSString * undoActionName;
-@property(assign,copy) NSString * undoMenuItemTitle;
-@property(getter=isUndoRegistrationEnabled,assign,readonly) bool undoRegistrationEnabled;
-@property(getter=isUndoing,assign,readonly) bool undoing;
+@property (readonly) bool canRedo;
+@property (readonly) bool canUndo;
+@property (readonly) long long groupingLevel;
+@property bool groupsByEvent;
+@property unsigned long long levelsOfUndo;
+@property (readonly) bool redoActionIsDiscardable;
+@property (readonly, copy) NSString *redoActionName;
+@property (readonly, copy) NSString *redoMenuItemTitle;
+@property (getter=isRedoing, readonly) bool redoing;
+@property (copy) NSArray *runLoopModes;
+@property (readonly) bool undoActionIsDiscardable;
+@property (readonly, copy) NSString *undoActionName;
+@property (readonly, copy) NSString *undoMenuItemTitle;
+@property (getter=isUndoRegistrationEnabled, readonly) bool undoRegistrationEnabled;
+@property (getter=isUndoing, readonly) bool undoing;
 
 + (void)_endTopLevelGroupings;
 + (void)_setEndsTopLevelGroupingsAfterRunLoopIterations:(bool)arg1;

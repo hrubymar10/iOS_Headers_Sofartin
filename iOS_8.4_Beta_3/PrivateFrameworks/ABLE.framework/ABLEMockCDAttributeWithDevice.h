@@ -7,8 +7,8 @@
     CDDevice *_device;
 }
 
-@property(assign,readonly) CDAttribute * attribute;
-@property(assign,readonly) CDDevice * device;
+@property (readonly) CDAttribute *attribute;
+@property (readonly) CDDevice *device;
 
 - (void).cxx_destruct;
 - (id)attribute;

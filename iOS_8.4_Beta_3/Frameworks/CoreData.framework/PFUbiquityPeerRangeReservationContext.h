@@ -14,12 +14,12 @@
     NSMutableArray *_unresolvedGlobalObjectIDs;
 }
 
-@property(assign,readonly) NSArray * globalObjectIDs;
-@property(assign,readonly) NSManagedObjectContext * moc;
-@property(assign,readonly) long long numRangesToReserve;
-@property(assign,readonly) NSDictionary * peerEntityNameRangeStartSet;
-@property(assign,readonly) NSPersistentStoreCoordinator * psc;
-@property(assign,readonly) NSPersistentStore * store;
+@property (nonatomic, readonly) NSArray *globalObjectIDs;
+@property (nonatomic, readonly) NSManagedObjectContext *moc;
+@property (nonatomic, readonly) long long numRangesToReserve;
+@property (nonatomic, readonly) NSDictionary *peerEntityNameRangeStartSet;
+@property (nonatomic, readonly) NSPersistentStoreCoordinator *psc;
+@property (nonatomic, readonly) NSPersistentStore *store;
 
 - (id)createLocalIDStringForStoreUUID:(id)arg1 entityName:(id)arg2 andPrimaryKeyString:(id)arg3;
 - (bool)createNewPeerRangesWithCache:(id)arg1 Error:(id*)arg2;

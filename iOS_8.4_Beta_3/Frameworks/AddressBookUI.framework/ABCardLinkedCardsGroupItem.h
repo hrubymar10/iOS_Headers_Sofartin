@@ -6,7 +6,7 @@
     CNContact *_contact;
 }
 
-@property(assign,retain) CNContact * contact;
+@property (nonatomic, retain) CNContact *contact;
 
 - (id)contact;
 - (id)initWithContact:(id)arg1;

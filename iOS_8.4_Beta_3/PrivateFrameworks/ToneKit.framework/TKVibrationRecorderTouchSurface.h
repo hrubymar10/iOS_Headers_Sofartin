@@ -13,14 +13,14 @@
     TLVibrationPattern *_vibrationPatternToReplay;
 }
 
-@property(setter=_setRecordedDataWrapper:,assign,retain) TKVibrationRecorderTouchSurfaceRecordedDataWrapper * _recordedDataWrapper;
-@property(getter=_isRecordingModeEnabled,setter=_setRecordingModeEnabled:,assign,readwrite) bool _recordingModeEnabled;
-@property(getter=_isReplayModeEnabled,setter=_setReplayModeEnabled:,assign,readwrite) bool _replayModeEnabled;
-@property(setter=_setReplayModeWasEnteredStartTime:,assign,readwrite) double _replayModeWasEnteredStartTime;
-@property(setter=_setShouldIgnoreCurrentTouch:,assign,readwrite) bool _shouldIgnoreCurrentTouch;
-@property(setter=_setVibrationPatternMaximumDuration:,assign,readwrite) double _vibrationPatternMaximumDuration;
-@property(setter=_setVibrationPatternToReplay:,assign,retain) TLVibrationPattern * _vibrationPatternToReplay;
-@property(assign,readwrite) <TKVibrationRecorderTouchSurfaceDelegate> * delegate;
+@property (setter=_setRecordedDataWrapper:, nonatomic, retain) TKVibrationRecorderTouchSurfaceRecordedDataWrapper *_recordedDataWrapper;
+@property (getter=_isRecordingModeEnabled, setter=_setRecordingModeEnabled:, nonatomic) bool _recordingModeEnabled;
+@property (getter=_isReplayModeEnabled, setter=_setReplayModeEnabled:, nonatomic) bool _replayModeEnabled;
+@property (setter=_setReplayModeWasEnteredStartTime:, nonatomic) double _replayModeWasEnteredStartTime;
+@property (setter=_setShouldIgnoreCurrentTouch:, nonatomic) bool _shouldIgnoreCurrentTouch;
+@property (setter=_setVibrationPatternMaximumDuration:, nonatomic) double _vibrationPatternMaximumDuration;
+@property (setter=_setVibrationPatternToReplay:, nonatomic, retain) TLVibrationPattern *_vibrationPatternToReplay;
+@property (nonatomic) <TKVibrationRecorderTouchSurfaceDelegate> *delegate;
 
 - (bool)_isRecordingModeEnabled;
 - (bool)_isReplayModeEnabled;

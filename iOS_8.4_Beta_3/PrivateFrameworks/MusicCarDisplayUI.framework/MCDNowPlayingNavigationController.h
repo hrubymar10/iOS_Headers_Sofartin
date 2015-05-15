@@ -6,7 +6,7 @@
     UIViewController *_fakeViewController;
 }
 
-@property(assign,readonly) UIViewController * previousViewController;
+@property (nonatomic, readonly) UIViewController *previousViewController;
 
 - (void).cxx_destruct;
 - (id)initWithRootViewController:(id)arg1;

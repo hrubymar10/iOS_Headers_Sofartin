@@ -30,19 +30,19 @@
     NSCharacterSet *_whitespaceAndNewlineCharacterSet;
 }
 
-@property(assign,readonly) NSArray * conferenceRoomSearchResults;
-@property(assign,readonly) NSArray * contactsSearchResults;
-@property(assign,retain) EKStructuredLocation * currentLocation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <EKUILocationSearchModelDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSArray * eventsSearchResults;
-@property(assign,readonly) NSArray * frequentsSearchResults;
-@property(assign,readonly) NSArray * geocodedSearchResults;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * mapCompletionSearchResults;
-@property(assign,readonly) NSArray * recentsSearchResults;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *conferenceRoomSearchResults;
+@property (nonatomic, readonly) NSArray *contactsSearchResults;
+@property (nonatomic, retain) EKStructuredLocation *currentLocation;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <EKUILocationSearchModelDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSArray *eventsSearchResults;
+@property (nonatomic, readonly) NSArray *frequentsSearchResults;
+@property (nonatomic, readonly) NSArray *geocodedSearchResults;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *mapCompletionSearchResults;
+@property (nonatomic, readonly) NSArray *recentsSearchResults;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)CLLocationForDictionary:(id)arg1;

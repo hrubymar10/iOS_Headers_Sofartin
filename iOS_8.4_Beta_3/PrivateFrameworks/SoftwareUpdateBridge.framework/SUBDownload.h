@@ -7,8 +7,8 @@
     SUBProgress *_progress;
 }
 
-@property(assign,retain) SUBDescriptor * descriptor;
-@property(assign,retain) SUBProgress * progress;
+@property (nonatomic, retain) SUBDescriptor *descriptor;
+@property (nonatomic, retain) SUBProgress *progress;
 
 + (id)downloadWithDescriptor:(id)arg1 andProgress:(id)arg2;
 + (bool)supportsSecureCoding;

@@ -16,16 +16,16 @@
     bool _willTriggerNotification;
 }
 
-@property(assign,readwrite) unsigned long long deltaProcessingTime;
-@property(assign,readwrite) unsigned long long deltaTransitTime;
-@property(assign,readwrite) bool hasDeltaProcessingTime;
-@property(assign,readwrite) bool hasDeltaTransitTime;
-@property(assign,readonly) bool hasReason;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasWillTriggerNotification;
-@property(assign,retain) NSString * reason;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) bool willTriggerNotification;
+@property (nonatomic) unsigned long long deltaProcessingTime;
+@property (nonatomic) unsigned long long deltaTransitTime;
+@property (nonatomic) bool hasDeltaProcessingTime;
+@property (nonatomic) bool hasDeltaTransitTime;
+@property (nonatomic, readonly) bool hasReason;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasWillTriggerNotification;
+@property (nonatomic, retain) NSString *reason;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) bool willTriggerNotification;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

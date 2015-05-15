@@ -12,13 +12,13 @@
     unsigned long long _userPlayCount;
 }
 
-@property(assign,readwrite) double bookmarkTime;
-@property(assign,readwrite) double bookmarkTimestamp;
-@property(assign,readonly) long long foreignDatabaseEntityID;
-@property(assign,readwrite) bool hasBeenPlayed;
-@property(assign,readonly) SBCPlaybackPositionDomain * playbackPositionDomain;
-@property(assign,readonly) NSString * ubiquitousIdentifier;
-@property(assign,readwrite) unsigned long long userPlayCount;
+@property (nonatomic) double bookmarkTime;
+@property (nonatomic) double bookmarkTimestamp;
+@property (nonatomic, readonly) long long foreignDatabaseEntityID;
+@property (nonatomic) bool hasBeenPlayed;
+@property (nonatomic, readonly) SBCPlaybackPositionDomain *playbackPositionDomain;
+@property (nonatomic, readonly) NSString *ubiquitousIdentifier;
+@property (nonatomic) unsigned long long userPlayCount;
 
 + (bool)supportsSecureCoding;
 + (id)ubiquitousIdentifierWithItemTitle:(id)arg1 albumName:(id)arg2 itemArtistName:(id)arg3;

@@ -6,10 +6,10 @@
     GKDiscoveryManager *_manager;
 }
 
-@property(assign,retain) GKDiscoveryManager * manager;
-@property(assign,copy) id playerFoundHandler;
-@property(assign,copy) id playerLostHandler;
-@property(assign,copy) id receiveDataHandler;
+@property (nonatomic, retain) GKDiscoveryManager *manager;
+@property (nonatomic, copy) id playerFoundHandler;
+@property (nonatomic, copy) id playerLostHandler;
+@property (nonatomic, copy) id receiveDataHandler;
 
 - (void)dealloc;
 - (void)forgetParticipant:(id)arg1 deviceID:(id)arg2;

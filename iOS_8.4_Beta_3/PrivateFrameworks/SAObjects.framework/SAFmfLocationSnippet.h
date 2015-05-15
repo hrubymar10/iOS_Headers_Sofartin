@@ -4,10 +4,10 @@
 
 @interface SAFmfLocationSnippet : SAUISnippet
 
-@property(assign,copy) NSNumber * atRequestedLocation;
-@property(assign,copy) NSArray * locations;
-@property(assign,copy) NSString * proximity;
-@property(assign,copy) NSURL * searchContext;
+@property (nonatomic, copy) NSNumber *atRequestedLocation;
+@property (nonatomic, copy) NSArray *locations;
+@property (nonatomic, copy) NSString *proximity;
+@property (nonatomic, copy) NSURL *searchContext;
 
 + (id)locationSnippet;
 + (id)locationSnippetWithDictionary:(id)arg1 context:(id)arg2;

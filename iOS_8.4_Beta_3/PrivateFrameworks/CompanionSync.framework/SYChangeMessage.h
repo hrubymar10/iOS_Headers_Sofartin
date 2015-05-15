@@ -7,8 +7,8 @@
     SYMessageHeader *_header;
 }
 
-@property(assign,retain) NSMutableArray * changes;
-@property(assign,retain) SYMessageHeader * header;
+@property (nonatomic, retain) NSMutableArray *changes;
+@property (nonatomic, retain) SYMessageHeader *header;
 
 - (void).cxx_destruct;
 - (void)addChanges:(id)arg1;

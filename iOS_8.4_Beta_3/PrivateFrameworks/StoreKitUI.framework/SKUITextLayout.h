@@ -17,15 +17,15 @@
     } _truncatedSize;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double lineHeight;
-@property(assign,readonly) bool requiresTruncation;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct __CTFrame { }* textFrame;
-@property(assign,readonly) struct CGSize { double x1; double x2; } textSize;
-@property(assign,readonly) struct CGSize { double x1; double x2; } truncatedSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double lineHeight;
+@property (nonatomic, readonly) bool requiresTruncation;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct __CTFrame { }*textFrame;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } textSize;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } truncatedSize;
 
 + (struct __CFAttributedString { }*)_newAttributedStringWithRequest:(id)arg1;
 + (struct __CFAttributedString { }*)newAttributedStringWithText:(id)arg1;

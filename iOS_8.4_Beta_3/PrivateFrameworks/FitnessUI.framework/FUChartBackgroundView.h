@@ -13,9 +13,9 @@
     NSNumber *_minValue;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } lineInsets;
-@property(assign,retain) NSNumber * maxValue;
-@property(assign,retain) NSNumber * minValue;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } lineInsets;
+@property (nonatomic, retain) NSNumber *maxValue;
+@property (nonatomic, retain) NSNumber *minValue;
 
 - (void).cxx_destruct;
 - (id)initWithFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

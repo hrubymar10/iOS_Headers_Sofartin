@@ -9,7 +9,7 @@
     SimpleSlotSequence *_significantSlots;
 }
 
-@property(assign,readonly) SimpleSlotSequence * significantSlots;
+@property (readonly) SimpleSlotSequence *significantSlots;
 
 + (id)instanceFromPlist:(id)arg1;
 + (id)slotsInContextWithSignificantSlotSequence:(id)arg1;

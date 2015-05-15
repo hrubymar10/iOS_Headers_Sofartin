@@ -15,7 +15,7 @@
     MPUContentSizeLayoutConstraint *_topLabelConstraint;
 }
 
-@property(assign,readonly) UILabel * titleLabel;
+@property (nonatomic, readonly) UILabel *titleLabel;
 
 - (void).cxx_destruct;
 - (void)configureForImage:(id)arg1 title:(id)arg2 subtitle:(id)arg3 style:(id)arg4;

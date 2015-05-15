@@ -13,11 +13,11 @@
     bool _wirelessAccessPointEnabled;
 }
 
-@property(getter=isBluetoothEnabled,assign,readwrite) bool bluetoothEnabled;
-@property(assign,readwrite) <SFWirelessSettingsControllerDelegate> * delegate;
-@property(assign,readonly) bool deviceSupportsWAPI;
-@property(getter=isWifiEnabled,assign,readwrite) bool wifiEnabled;
-@property(getter=isWirelessAccessPointEnabled,assign,readonly) bool wirelessAccessPointEnabled;
+@property (getter=isBluetoothEnabled) bool bluetoothEnabled;
+@property <SFWirelessSettingsControllerDelegate> *delegate;
+@property (readonly) bool deviceSupportsWAPI;
+@property (getter=isWifiEnabled) bool wifiEnabled;
+@property (getter=isWirelessAccessPointEnabled, readonly) bool wirelessAccessPointEnabled;
 
 - (void)dealloc;
 - (id)delegate;

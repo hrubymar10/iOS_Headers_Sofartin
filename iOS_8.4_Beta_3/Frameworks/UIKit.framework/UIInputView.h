@@ -36,20 +36,20 @@
     NSArray *_visibleLayers;
 }
 
-@property(assign,retain) UIImage * _mergedImage;
-@property(assign,retain) NSMutableDictionary * _mergedSliceMap;
-@property(assign,retain) UIImage * _splitImage;
-@property(assign,retain) NSMutableDictionary * _splitSliceMap;
-@property(assign,readwrite) double contentRatio;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long inputViewStyle;
-@property(assign,readonly) UIView * leftContentView;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } leftContentViewSize;
-@property(assign,readonly) UIView * rightContentView;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } rightContentViewSize;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIImage *_mergedImage;
+@property (nonatomic, retain) NSMutableDictionary *_mergedSliceMap;
+@property (nonatomic, retain) UIImage *_splitImage;
+@property (nonatomic, retain) NSMutableDictionary *_splitSliceMap;
+@property (nonatomic) double contentRatio;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long inputViewStyle;
+@property (nonatomic, readonly) UIView *leftContentView;
+@property (nonatomic) struct CGSize { double x1; double x2; } leftContentViewSize;
+@property (nonatomic, readonly) UIView *rightContentView;
+@property (nonatomic) struct CGSize { double x1; double x2; } rightContentViewSize;
+@property (readonly) Class superclass;
 
 + (void)_setupAppearanceIfNecessary;
 

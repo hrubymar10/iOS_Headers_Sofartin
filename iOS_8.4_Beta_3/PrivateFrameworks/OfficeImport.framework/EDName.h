@@ -10,12 +10,12 @@
     unsigned long long _sheetIndex;
 }
 
-@property(assign,readonly) EDFormula * formula;
-@property(assign,readonly) NSString * internalFunctionName;
-@property(assign,readonly) bool isInternalFunction;
-@property(assign,readonly) OITSUPointerKeyDictionary * maxWorksheetReferences;
-@property(assign,retain) EDString * nameString;
-@property(assign,readwrite) unsigned long long sheetIndex;
+@property (nonatomic, readonly) EDFormula *formula;
+@property (nonatomic, readonly) NSString *internalFunctionName;
+@property (nonatomic, readonly) bool isInternalFunction;
+@property (nonatomic, readonly) OITSUPointerKeyDictionary *maxWorksheetReferences;
+@property (nonatomic, retain) EDString *nameString;
+@property (nonatomic) unsigned long long sheetIndex;
 
 + (id)name;
 

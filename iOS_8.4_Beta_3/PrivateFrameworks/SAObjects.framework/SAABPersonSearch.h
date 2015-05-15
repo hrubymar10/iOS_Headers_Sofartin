@@ -4,16 +4,16 @@
 
 @interface SAABPersonSearch : SADomainCommand
 
-@property(assign,copy) NSURL * accountIdentifier;
-@property(assign,retain) SALocation * address;
-@property(assign,copy) NSDate * birthday;
-@property(assign,copy) NSString * company;
-@property(assign,retain) SAEmail * email;
-@property(assign,copy) NSNumber * me;
-@property(assign,copy) NSString * name;
-@property(assign,retain) SAPhone * phone;
-@property(assign,copy) NSString * relationship;
-@property(assign,copy) NSString * scope;
+@property (nonatomic, copy) NSURL *accountIdentifier;
+@property (nonatomic, retain) SALocation *address;
+@property (nonatomic, copy) NSDate *birthday;
+@property (nonatomic, copy) NSString *company;
+@property (nonatomic, retain) SAEmail *email;
+@property (nonatomic, copy) NSNumber *me;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) SAPhone *phone;
+@property (nonatomic, copy) NSString *relationship;
+@property (nonatomic, copy) NSString *scope;
 
 + (id)personSearch;
 + (id)personSearchWithDictionary:(id)arg1 context:(id)arg2;

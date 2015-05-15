@@ -19,11 +19,11 @@
     NSString *_valueString;
 }
 
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } labelRange;
-@property(assign,readonly) unsigned int matchType;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } valueRange;
-@property(assign,readonly) NSString * valueString;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } labelRange;
+@property (nonatomic, readonly) unsigned int matchType;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } valueRange;
+@property (nonatomic, readonly) NSString *valueString;
 
 - (void).cxx_destruct;
 - (id)description;

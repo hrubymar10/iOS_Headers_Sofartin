@@ -12,13 +12,13 @@
     bool _scaleUp;
 }
 
-@property(assign,readwrite) long long copies;
-@property(assign,readwrite) long long duplex;
-@property(assign,copy) NSString * jobName;
-@property(assign,readwrite) long long orientation;
-@property(assign,readwrite) long long outputType;
-@property(assign,copy) NSString * printerID;
-@property(assign,readwrite) bool scaleUp;
+@property (nonatomic) long long copies;
+@property (nonatomic) long long duplex;
+@property (nonatomic, copy) NSString *jobName;
+@property (nonatomic) long long orientation;
+@property (nonatomic) long long outputType;
+@property (nonatomic, copy) NSString *printerID;
+@property (nonatomic) bool scaleUp;
 
 + (id)printInfo;
 + (id)printInfoWithDictionary:(id)arg1;

@@ -34,16 +34,16 @@
     BOOL _viewControllerIsNavigationController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIScrollingTabBarControllerItemContextDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long lastSelectedPageIndex;
-@property(assign,readonly) UIScrollView * nestedPagingScrollView;
-@property(assign,readonly) double nestedPagingScrollViewContentWidth;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIViewController * viewController;
-@property(assign,readonly) bool viewControllerIsNavigationController;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIScrollingTabBarControllerItemContextDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long lastSelectedPageIndex;
+@property (nonatomic, readonly) UIScrollView *nestedPagingScrollView;
+@property (nonatomic, readonly) double nestedPagingScrollViewContentWidth;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UIViewController *viewController;
+@property (nonatomic, readonly) bool viewControllerIsNavigationController;
 
 - (void).cxx_destruct;
 - (id)_appearanceStatusObserver;

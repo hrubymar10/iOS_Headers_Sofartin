@@ -10,11 +10,11 @@
     <MCJobQueueObserver> *_observer;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * executionQueue;
-@property(assign,copy) id executionQueueAbortCompletionBlock;
-@property(assign,retain) NSObject<OS_dispatch_group> * jobGroup;
-@property(assign,retain) NSObject<OS_dispatch_queue> * jobQueue;
-@property(assign,readwrite) <MCJobQueueObserver> * observer;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *executionQueue;
+@property (nonatomic, copy) id executionQueueAbortCompletionBlock;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *jobGroup;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *jobQueue;
+@property (nonatomic) <MCJobQueueObserver> *observer;
 
 - (void).cxx_destruct;
 - (void)abortEnqueuedJobsCompletionBlock:(id)arg1;

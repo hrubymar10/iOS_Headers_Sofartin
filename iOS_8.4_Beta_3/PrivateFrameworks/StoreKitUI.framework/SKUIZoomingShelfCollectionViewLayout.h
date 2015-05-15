@@ -16,15 +16,15 @@
     double _scaledItemWidth;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double focusedItemHorizontalCenterOffset;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double interItemSpacing;
-@property(assign,readwrite) double itemWidth;
-@property(assign,retain) SKUIShelfLayoutData * layoutData;
-@property(assign,readwrite) double scaledItemWidth;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double focusedItemHorizontalCenterOffset;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double interItemSpacing;
+@property (nonatomic) double itemWidth;
+@property (nonatomic, retain) SKUIShelfLayoutData *layoutData;
+@property (nonatomic) double scaledItemWidth;
+@property (readonly) Class superclass;
 
 + (bool)collectionViewCanClipToBounds;
 + (Class)invalidationContextClass;

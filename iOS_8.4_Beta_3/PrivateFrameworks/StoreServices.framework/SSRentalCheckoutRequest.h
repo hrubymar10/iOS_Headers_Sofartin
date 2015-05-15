@@ -10,15 +10,15 @@
     NSArray *_sinfs;
 }
 
-@property(assign,readonly) NSNumber * accountIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) long long downloadIdentifier;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSNumber * rentalKeyIdentifier;
-@property(assign,readwrite) bool shouldValidateRentalInfo;
-@property(assign,readonly) NSArray * sinfs;
-@property(assign,readonly) Class superclass;
+@property (readonly) NSNumber *accountIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) long long downloadIdentifier;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSNumber *rentalKeyIdentifier;
+@property (nonatomic) bool shouldValidateRentalInfo;
+@property (readonly) NSArray *sinfs;
+@property (readonly) Class superclass;
 
 - (id)accountIdentifier;
 - (id)copyXPCEncoding;

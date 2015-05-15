@@ -11,12 +11,12 @@
     MCNearbyDiscoveryPeerConnection *_trialConnection;
 }
 
-@property(assign,retain) MCNearbyDiscoveryPeerConnection * connection;
-@property(assign,retain) NSNetService * netService;
-@property(assign,copy) MCPeerID * peerID;
-@property(assign,retain) NSMutableArray * sendDataBuffer;
-@property(assign,readwrite) int state;
-@property(assign,retain) MCNearbyDiscoveryPeerConnection * trialConnection;
+@property (nonatomic, retain) MCNearbyDiscoveryPeerConnection *connection;
+@property (nonatomic, retain) NSNetService *netService;
+@property (nonatomic, copy) MCPeerID *peerID;
+@property (nonatomic, retain) NSMutableArray *sendDataBuffer;
+@property (nonatomic) int state;
+@property (nonatomic, retain) MCNearbyDiscoveryPeerConnection *trialConnection;
 
 - (void)attachConnection:(id)arg1;
 - (void)closeConnection;

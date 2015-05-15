@@ -6,7 +6,7 @@
     bool _archiveSecureItems;
 }
 
-@property(assign,readwrite) bool archiveSecureItems;
+@property (nonatomic) bool archiveSecureItems;
 
 - (bool)archiveSecureItems;
 - (void)setArchiveSecureItems:(bool)arg1;

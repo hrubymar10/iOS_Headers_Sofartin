@@ -10,12 +10,12 @@
     bool _wantsTraitPropigation;
 }
 
-@property(setter=_setHostTintAdjustmentMode:,assign,readwrite) long long _hostTintAdjustmentMode;
-@property(setter=_setHostTraitCollection:,assign,readwrite) UITraitCollection * _hostTraitCollection;
-@property(setter=_setWantsTraitPropigation:,assign,readwrite) bool _wantsTraitPropigation;
-@property(getter=_fromWindowOrientation,setter=_setFromWindowOrientation:,assign,readwrite) long long fromWindowOrientation;
-@property(assign,readonly) _UIHostedWindowHostingHandle * hostingHandle;
-@property(getter=_toWindowOrientation,setter=_setToWindowOrientation:,assign,readwrite) long long toWindowOrientation;
+@property (setter=_setHostTintAdjustmentMode:, nonatomic) long long _hostTintAdjustmentMode;
+@property (setter=_setHostTraitCollection:, nonatomic) UITraitCollection *_hostTraitCollection;
+@property (setter=_setWantsTraitPropigation:, nonatomic) bool _wantsTraitPropigation;
+@property (getter=_fromWindowOrientation, setter=_setFromWindowOrientation:, nonatomic) long long fromWindowOrientation;
+@property (nonatomic, readonly) _UIHostedWindowHostingHandle *hostingHandle;
+@property (getter=_toWindowOrientation, setter=_setToWindowOrientation:, nonatomic) long long toWindowOrientation;
 
 - (bool)_canPromoteFromKeyWindowStack;
 - (void)_configureContextOptions:(id)arg1;

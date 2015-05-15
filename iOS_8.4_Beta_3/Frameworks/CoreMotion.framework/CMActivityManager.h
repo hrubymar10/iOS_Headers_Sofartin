@@ -6,8 +6,8 @@
     id _internal;
 }
 
-@property(getter=isActivityAvailable,assign,readonly) bool activityAvailable;
-@property(assign,copy) id activityHandler;
+@property (getter=isActivityAvailable, nonatomic, readonly) bool activityAvailable;
+@property (copy) id activityHandler;
 
 - (id)activityHandler;
 - (void)dealloc;

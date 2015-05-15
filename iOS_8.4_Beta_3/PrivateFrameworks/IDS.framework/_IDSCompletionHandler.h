@@ -6,7 +6,7 @@
     id _handler;
 }
 
-@property(assign,copy) id handler;
+@property (nonatomic, copy) id handler;
 
 - (void)dealloc;
 - (id)handler;

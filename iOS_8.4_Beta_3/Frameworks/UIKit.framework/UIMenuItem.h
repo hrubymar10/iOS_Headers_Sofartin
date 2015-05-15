@@ -8,9 +8,9 @@
     NSString *_title;
 }
 
-@property(assign,readwrite) SEL action;
-@property(assign,readwrite) bool dontDismiss;
-@property(assign,copy) NSString * title;
+@property (nonatomic) SEL action;
+@property (nonatomic) bool dontDismiss;
+@property (nonatomic, copy) NSString *title;
 
 - (SEL)action;
 - (void)dealloc;

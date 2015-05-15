@@ -23,14 +23,14 @@
     TSUColor *mTintColor;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } fillSize;
-@property(assign,retain) TSPData * imageData;
-@property(assign,readonly) bool interpretsUntaggedImageDataAsGeneric;
-@property(assign,retain) TSPData * originalImageData;
-@property(assign,readonly) NSString * presetKind;
-@property(assign,readonly) double scale;
-@property(assign,readwrite) int technique;
-@property(assign,copy) TSUColor * tintColor;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } fillSize;
+@property (nonatomic, readonly, retain) TSPData *imageData;
+@property (nonatomic, readonly) bool interpretsUntaggedImageDataAsGeneric;
+@property (nonatomic, readonly, retain) TSPData *originalImageData;
+@property (nonatomic, readonly) NSString *presetKind;
+@property (nonatomic, readonly) double scale;
+@property (nonatomic) int technique;
+@property (nonatomic, readonly, copy) TSUColor *tintColor;
 
 + (void)bootstrapPresetsOfKind:(id)arg1 inTheme:(id)arg2 alternate:(int)arg3;
 + (id)imageFillDataFromURL:(id)arg1 withContext:(id)arg2 error:(id*)arg3;

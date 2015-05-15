@@ -16,15 +16,15 @@
     NSDictionary *_travelTimeLookupErrors;
 }
 
-@property(assign,retain) NSDate * arrivalDate;
-@property(assign,readwrite) <EKTravelRouteEstimationControllerDelegate> * delegate;
-@property(assign,retain) EKStructuredLocation * destinationStructuredLocation;
-@property(assign,retain) EKStructuredLocation * evaluatedOriginLocation;
-@property(assign,readwrite) bool isEstimating;
-@property(assign,readonly) unsigned long long numberOfOutputRows;
-@property(assign,retain) EKStructuredLocation * originStructuredLocation;
-@property(assign,retain) NSDictionary * travelTimeEstimatedValues;
-@property(assign,retain) NSDictionary * travelTimeLookupErrors;
+@property (retain) NSDate *arrivalDate;
+@property (nonatomic) <EKTravelRouteEstimationControllerDelegate> *delegate;
+@property (retain) EKStructuredLocation *destinationStructuredLocation;
+@property (retain) EKStructuredLocation *evaluatedOriginLocation;
+@property bool isEstimating;
+@property (nonatomic, readonly) unsigned long long numberOfOutputRows;
+@property (nonatomic, retain) EKStructuredLocation *originStructuredLocation;
+@property (retain) NSDictionary *travelTimeEstimatedValues;
+@property (retain) NSDictionary *travelTimeLookupErrors;
 
 - (void).cxx_destruct;
 - (void)_beginOriginLocationEstimationCoreRoutineLookup;

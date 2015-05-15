@@ -12,12 +12,12 @@
     UIView *_menuBarView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) <UICollectionViewDelegate> * didSelectDelegate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIView * menuBarView;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) <UICollectionViewDelegate> *didSelectDelegate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIView *menuBarView;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_collectionView:(id)arg1 indexPathShouldDisplayAsSelected:(id)arg2;

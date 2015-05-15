@@ -8,7 +8,7 @@
     <WRMClientDelegate> *_wrmClientDelegate;
 }
 
-@property(assign,readwrite) <WRMClientDelegate> * delegate;
+@property <WRMClientDelegate> *delegate;
 
 - (void)dealloc;
 - (id)delegate;

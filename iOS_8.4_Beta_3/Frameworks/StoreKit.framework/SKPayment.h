@@ -6,14 +6,14 @@
     id _internal;
 }
 
-@property(assign,copy) NSString * applicationUsername;
-@property(assign,copy) NSString * partnerIdentifier;
-@property(assign,copy) NSString * partnerTransactionIdentifier;
-@property(assign,copy) NSString * productIdentifier;
-@property(assign,readonly) long long quantity;
-@property(assign,copy) NSData * requestData;
-@property(assign,copy) NSDictionary * requestParameters;
-@property(assign,readonly) bool simulatesAskToBuyInSandbox;
+@property (nonatomic, readonly, copy) NSString *applicationUsername;
+@property (nonatomic, readonly, copy) NSString *partnerIdentifier;
+@property (nonatomic, readonly, copy) NSString *partnerTransactionIdentifier;
+@property (nonatomic, readonly, copy) NSString *productIdentifier;
+@property (nonatomic, readonly) long long quantity;
+@property (nonatomic, readonly, copy) NSData *requestData;
+@property (nonatomic, readonly, copy) NSDictionary *requestParameters;
+@property (nonatomic, readonly) bool simulatesAskToBuyInSandbox;
 
 + (id)paymentWithProduct:(id)arg1;
 + (id)paymentWithProductIdentifier:(id)arg1;

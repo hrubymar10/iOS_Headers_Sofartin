@@ -10,11 +10,11 @@
     double _timeInterval;
 }
 
-@property(assign,readwrite) double accessibilityFrameAdditionalHeight;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) double previousPauseDuration;
-@property(assign,readwrite) double previousPauseTimeInterval;
-@property(assign,readwrite) double timeInterval;
+@property (nonatomic) double accessibilityFrameAdditionalHeight;
+@property (nonatomic) double duration;
+@property (nonatomic) double previousPauseDuration;
+@property (nonatomic) double previousPauseTimeInterval;
+@property (nonatomic) double timeInterval;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })accessibilityFrame;
 - (double)accessibilityFrameAdditionalHeight;

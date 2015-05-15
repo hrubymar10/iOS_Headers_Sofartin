@@ -13,14 +13,14 @@
     NSString *_spokenName;
 }
 
-@property(assign,readwrite) int addressType;
-@property(assign,readwrite) bool hasAddressType;
-@property(assign,readwrite) bool hasIsMe;
-@property(assign,readonly) bool hasName;
-@property(assign,readonly) bool hasSpokenName;
-@property(assign,readwrite) bool isMe;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * spokenName;
+@property (nonatomic) int addressType;
+@property (nonatomic) bool hasAddressType;
+@property (nonatomic) bool hasIsMe;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic, readonly) bool hasSpokenName;
+@property (nonatomic) bool isMe;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *spokenName;
 
 - (int)addressType;
 - (void)copyTo:(id)arg1;

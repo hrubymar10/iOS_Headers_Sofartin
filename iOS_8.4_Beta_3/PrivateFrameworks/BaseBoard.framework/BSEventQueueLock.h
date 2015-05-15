@@ -8,8 +8,8 @@
     bool _relinquished;
 }
 
-@property(assign,retain) BSEventQueue * eventQueue;
-@property(assign,copy) NSString * reason;
+@property (nonatomic, retain) BSEventQueue *eventQueue;
+@property (nonatomic, copy) NSString *reason;
 
 - (void)dealloc;
 - (id)description;

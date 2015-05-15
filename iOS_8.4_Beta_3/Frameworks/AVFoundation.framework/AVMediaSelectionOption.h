@@ -6,19 +6,19 @@
     AVMediaSelectionOptionInternal *_mediaSelectionOption;
 }
 
-@property(assign,readonly) NSArray * availableMetadataFormats;
-@property(assign,readonly) NSArray * commonMetadata;
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) NSString * extendedLanguageTag;
-@property(assign,readonly) NSLocale * locale;
-@property(assign,readonly) NSString * localizedDisplayName;
-@property(assign,readonly) NSArray * mediaSubTypes;
-@property(assign,readonly) NSString * mediaType;
-@property(assign,readonly) bool mpIsAC3;
-@property(assign,readonly) bool mpIsSDH;
-@property(getter=isPlayable,assign,readonly) bool playable;
-@property(assign,readonly) AVAssetTrack * track;
-@property(assign,readonly) int trackID;
+@property (nonatomic, readonly) NSArray *availableMetadataFormats;
+@property (nonatomic, readonly) NSArray *commonMetadata;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, readonly) NSString *extendedLanguageTag;
+@property (nonatomic, readonly) NSLocale *locale;
+@property (nonatomic, readonly) NSString *localizedDisplayName;
+@property (nonatomic, readonly) NSArray *mediaSubTypes;
+@property (nonatomic, readonly) NSString *mediaType;
+@property (nonatomic, readonly) bool mpIsAC3;
+@property (nonatomic, readonly) bool mpIsSDH;
+@property (getter=isPlayable, nonatomic, readonly) bool playable;
+@property (nonatomic, readonly) AVAssetTrack *track;
+@property (nonatomic, readonly) int trackID;
 
 + (id)mediaSelectionOptionForAsset:(id)arg1 group:(id)arg2 dictionary:(id)arg3 hasUnderlyingTrack:(bool)arg4;
 

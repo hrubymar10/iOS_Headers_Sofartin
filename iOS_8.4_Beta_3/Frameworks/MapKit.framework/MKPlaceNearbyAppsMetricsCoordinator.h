@@ -11,11 +11,11 @@
     SSURLBag *_urlBag;
 }
 
-@property(assign,readonly) NSMutableArray * callbacks;
-@property(assign,readwrite) bool controllerReady;
-@property(assign,copy) NSString * pageContext;
-@property(assign,copy) NSString * topic;
-@property(assign,readonly) SSURLBag * urlBag;
+@property (nonatomic, readonly) NSMutableArray *callbacks;
+@property (nonatomic) bool controllerReady;
+@property (nonatomic, copy) NSString *pageContext;
+@property (nonatomic, copy) NSString *topic;
+@property (nonatomic, readonly) SSURLBag *urlBag;
 
 - (void).cxx_destruct;
 - (id)callbacks;

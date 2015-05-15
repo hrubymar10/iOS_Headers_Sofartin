@@ -8,7 +8,7 @@
     NSString *_suffix;
 }
 
-@property(assign,copy) NSString * suffix;
+@property (nonatomic, copy) NSString *suffix;
 
 + (id)currentPlatform;
 + (id)defaultPlatform;

@@ -14,18 +14,18 @@
     NSString *_singleLineAddressString;
 }
 
-@property(assign,retain) GEOPDAutocompleteEntry * autocompleteEntry;
-@property(assign,retain) GEOLatLng * coordinate;
-@property(assign,readonly) bool hasAutocompleteEntry;
-@property(assign,readonly) bool hasCoordinate;
-@property(assign,readwrite) bool hasOrigin;
-@property(assign,readonly) bool hasPlace;
-@property(assign,readonly) bool hasSearchString;
-@property(assign,readonly) bool hasSingleLineAddressString;
-@property(assign,readwrite) int origin;
-@property(assign,retain) GEOPDPlace * place;
-@property(assign,retain) NSString * searchString;
-@property(assign,retain) NSString * singleLineAddressString;
+@property (nonatomic, retain) GEOPDAutocompleteEntry *autocompleteEntry;
+@property (nonatomic, retain) GEOLatLng *coordinate;
+@property (nonatomic, readonly) bool hasAutocompleteEntry;
+@property (nonatomic, readonly) bool hasCoordinate;
+@property (nonatomic) bool hasOrigin;
+@property (nonatomic, readonly) bool hasPlace;
+@property (nonatomic, readonly) bool hasSearchString;
+@property (nonatomic, readonly) bool hasSingleLineAddressString;
+@property (nonatomic) int origin;
+@property (nonatomic, retain) GEOPDPlace *place;
+@property (nonatomic, retain) NSString *searchString;
+@property (nonatomic, retain) NSString *singleLineAddressString;
 
 - (id)autocompleteEntry;
 - (id)coordinate;

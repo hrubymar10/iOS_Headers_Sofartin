@@ -6,7 +6,7 @@
     NSString *_emailAddress;
 }
 
-@property(assign,readonly) NSString * emailAddress;
+@property (nonatomic, readonly) NSString *emailAddress;
 
 + (id)emailAddress:(id)arg1 label:(id)arg2;
 + (bool)supportsSecureCoding;

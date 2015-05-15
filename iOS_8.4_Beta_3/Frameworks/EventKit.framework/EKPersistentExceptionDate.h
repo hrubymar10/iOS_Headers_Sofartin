@@ -4,8 +4,8 @@
 
 @interface EKPersistentExceptionDate : EKPersistentObject
 
-@property(assign,readonly) NSDate * date;
-@property(assign,retain) EKPersistentCalendarItem * owner;
+@property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, retain) EKPersistentCalendarItem *owner;
 
 + (id)exceptionDateWithDate:(id)arg1;
 + (id)relations;

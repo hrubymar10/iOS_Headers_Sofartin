@@ -8,9 +8,9 @@
     NSIndexSet *_validIndexSet;
 }
 
-@property(assign,readwrite) unsigned long long length;
-@property(assign,readonly) id predicate;
-@property(assign,retain) NSIndexSet * validIndexSet;
+@property unsigned long long length;
+@property (readonly) id predicate;
+@property (retain) NSIndexSet *validIndexSet;
 
 + (id)hygieneNaN;
 

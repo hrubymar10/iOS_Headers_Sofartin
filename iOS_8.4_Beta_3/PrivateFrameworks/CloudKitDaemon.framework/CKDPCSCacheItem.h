@@ -8,9 +8,9 @@
     CKDPCSData *_pcsData;
 }
 
-@property(assign,retain) NSError * fetchError;
-@property(assign,retain) NSObject<OS_dispatch_group> * fetchGroup;
-@property(assign,retain) CKDPCSData * pcsData;
+@property (nonatomic, retain) NSError *fetchError;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *fetchGroup;
+@property (nonatomic, retain) CKDPCSData *pcsData;
 
 - (void).cxx_destruct;
 - (id)fetchError;

@@ -10,13 +10,13 @@
     NSMutableDictionary *_propertyValues;
 }
 
-@property(getter=isBeta,assign,readwrite) bool beta;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isPlaceholder,assign,readwrite) bool placeholder;
-@property(getter=isProfileValidated,assign,readwrite) bool profileValidated;
-@property(assign,readonly) Class superclass;
+@property (getter=isBeta, nonatomic) bool beta;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isPlaceholder, nonatomic) bool placeholder;
+@property (getter=isProfileValidated, nonatomic) bool profileValidated;
+@property (readonly) Class superclass;
 
 - (id)ETagForAssetType:(id)arg1;
 - (id)_initWithITunesMetadata:(id)arg1;

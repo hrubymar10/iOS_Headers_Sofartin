@@ -8,9 +8,9 @@
     long long _year;
 }
 
-@property(assign,readonly) long long day;
-@property(assign,readonly) long long month;
-@property(assign,readonly) long long year;
+@property (readonly) long long day;
+@property (readonly) long long month;
+@property (readonly) long long year;
 
 + (id)dateFromICSString:(id)arg1;
 + (id)dateFromICSUTF8String:(const char *)arg1;

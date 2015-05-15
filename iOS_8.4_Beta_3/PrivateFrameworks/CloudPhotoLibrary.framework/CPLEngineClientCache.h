@@ -4,11 +4,11 @@
 
 @interface CPLEngineClientCache : CPLEngineStorage <CPLAbstractObject>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (readonly) Class superclass;
 
 - (id)_relatedIdentifierForRecordWithIdentifier:(id)arg1;
 - (bool)addRecord:(id)arg1 error:(id*)arg2;

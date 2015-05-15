@@ -7,8 +7,8 @@
     float _progressValue;
 }
 
-@property(assign,readwrite) id owningView;
-@property(assign,readwrite) float progressValue;
+@property (nonatomic) id owningView;
+@property (nonatomic) float progressValue;
 
 + (void)deallocImageCache;
 + (int)initImageCache;

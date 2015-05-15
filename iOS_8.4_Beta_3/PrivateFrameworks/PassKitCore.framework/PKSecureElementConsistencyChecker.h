@@ -8,8 +8,8 @@
     NSObject<OS_dispatch_queue> *_processingQueue;
 }
 
-@property(assign,readwrite) <PKSecureElementConsistencyCheckerDelegate> * delegate;
-@property(assign,retain) PKPaymentWebService * paymentWebService;
+@property (nonatomic) <PKSecureElementConsistencyCheckerDelegate> *delegate;
+@property (nonatomic, retain) PKPaymentWebService *paymentWebService;
 
 - (bool)_downloadPasses;
 - (void)_rescheduleWithBackoff;

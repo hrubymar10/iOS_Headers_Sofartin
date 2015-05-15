@@ -8,8 +8,8 @@
     SUScriptObject *_thisObject;
 }
 
-@property(assign,retain) WebScriptObject * scriptObject;
-@property(assign,readwrite) id thisObject;
+@property (retain) WebScriptObject *scriptObject;
+@property id thisObject;
 
 - (id)_copyAdjustedArgumentsForArguments:(id)arg1;
 - (id)callSynchronouslyWithArguments:(id)arg1;

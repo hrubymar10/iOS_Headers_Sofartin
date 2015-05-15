@@ -21,16 +21,16 @@
     SUWebViewManager *_webViewManager;
 }
 
-@property(getter=_mescalSession,setter=_setMescalSession:,assign,retain) SUMescalSession * _mescalSession;
-@property(getter=_performanceMetrics,setter=_setPerformanceMetrics:,assign,retain) ISURLRequestPerformance * _performanceMetrics;
-@property(assign,copy) SSAuthenticationContext * authenticationContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long style;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool viewIsReady;
-@property(assign,readonly) SUWebView * webView;
+@property (getter=_mescalSession, setter=_setMescalSession:, nonatomic, retain) SUMescalSession *_mescalSession;
+@property (getter=_performanceMetrics, setter=_setPerformanceMetrics:, nonatomic, retain) ISURLRequestPerformance *_performanceMetrics;
+@property (nonatomic, copy) SSAuthenticationContext *authenticationContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long style;
+@property (readonly) Class superclass;
+@property (nonatomic) bool viewIsReady;
+@property (nonatomic, readonly) SUWebView *webView;
 
 - (void)_addPlaceholderBackgroundView;
 - (void)_applySavedScrollOffsetIfPossible;

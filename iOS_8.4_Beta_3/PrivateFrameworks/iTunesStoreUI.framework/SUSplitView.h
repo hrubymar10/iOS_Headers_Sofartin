@@ -11,12 +11,12 @@
     bool _vertical;
 }
 
-@property(assign,retain) UIView * firstView;
-@property(assign,readwrite) long long layoutType;
-@property(assign,readwrite) double minimumPaneSize;
-@property(assign,retain) UIView * secondView;
-@property(assign,readwrite) double splitPosition;
-@property(getter=isVertical,assign,readwrite) bool vertical;
+@property (nonatomic, retain) UIView *firstView;
+@property (nonatomic) long long layoutType;
+@property (nonatomic) double minimumPaneSize;
+@property (nonatomic, retain) UIView *secondView;
+@property (nonatomic) double splitPosition;
+@property (getter=isVertical, nonatomic) bool vertical;
 
 - (double)_minimumPaneSizeForLayout;
 - (void)dealloc;

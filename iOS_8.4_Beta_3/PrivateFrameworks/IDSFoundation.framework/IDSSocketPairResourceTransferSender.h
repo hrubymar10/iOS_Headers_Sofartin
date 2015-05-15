@@ -21,11 +21,11 @@
     bool _wantsAppAck;
 }
 
-@property(assign,readonly) bool isDone;
-@property(assign,readwrite) unsigned int maxChunkSize;
-@property(assign,retain) NSString * messageUUID;
-@property(assign,readonly) bool sentFirstMessage;
-@property(assign,readwrite) unsigned int sequenceNumber;
+@property (nonatomic, readonly) bool isDone;
+@property (nonatomic) unsigned int maxChunkSize;
+@property (nonatomic, readonly, retain) NSString *messageUUID;
+@property (nonatomic, readonly) bool sentFirstMessage;
+@property (nonatomic) unsigned int sequenceNumber;
 
 - (unsigned char)command;
 - (void)dealloc;

@@ -6,7 +6,7 @@
     ABLEBONPostAdjust *_postAdjust;
 }
 
-@property(assign,readonly) ABLEBONPostAdjust * postAdjust;
+@property (readonly) ABLEBONPostAdjust *postAdjust;
 
 - (void).cxx_destruct;
 - (unsigned long long)adjustBON:(unsigned long long)arg1 forLevel:(float)arg2;

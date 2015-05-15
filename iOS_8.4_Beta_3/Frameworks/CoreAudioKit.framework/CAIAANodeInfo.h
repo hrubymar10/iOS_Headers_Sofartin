@@ -7,8 +7,8 @@
     NSMutableArray *nodeList;
 }
 
-@property(assign,retain) UIColor * labelColor;
-@property(assign,readonly) unsigned long long numNodes;
+@property (retain) UIColor *labelColor;
+@property (readonly) unsigned long long numNodes;
 
 - (void)createNodeList;
 - (id)init;

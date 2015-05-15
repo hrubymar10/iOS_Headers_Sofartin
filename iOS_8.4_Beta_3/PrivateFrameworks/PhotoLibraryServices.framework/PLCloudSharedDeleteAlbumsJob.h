@@ -6,7 +6,7 @@
     NSArray *_albumCloudGUIDsToDelete;
 }
 
-@property(assign,retain) NSArray * albumCloudGUIDsToDelete;
+@property (nonatomic, retain) NSArray *albumCloudGUIDsToDelete;
 
 + (void)deleteLocalAlbumsForMSASAlbumGUIDs:(id)arg1;
 

@@ -8,8 +8,8 @@
     bool _showsDeleteButton;
 }
 
-@property(assign,readwrite) <TPSimpleNumberPadDelegate> * delegate;
-@property(assign,readwrite) bool showsDeleteButton;
+@property <TPSimpleNumberPadDelegate> *delegate;
+@property (nonatomic) bool showsDeleteButton;
 
 + (id)_numberPadCharacters;
 

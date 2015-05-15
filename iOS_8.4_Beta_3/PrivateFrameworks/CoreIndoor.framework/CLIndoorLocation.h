@@ -33,10 +33,10 @@
     bool _requestsGpsAssistance;
 }
 
-@property(assign,readwrite) struct { int x1; struct { double x_2_1_1; double x_2_1_2; } x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; double x10; int x11; double x12; int x13; struct { double x_14_1_1; double x_14_1_2; } x14; double x15; int x16; unsigned int x17; } location;
-@property(assign,retain) NSString * locationDescription;
-@property(assign,retain) NSString * locationId;
-@property(assign,readwrite) bool requestsGpsAssistance;
+@property (nonatomic) struct { int x1; struct { double x_2_1_1; double x_2_1_2; } x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; double x10; int x11; double x12; int x13; struct { double x_14_1_1; double x_14_1_2; } x14; double x15; int x16; unsigned int x17; } location;
+@property (nonatomic, retain) NSString *locationDescription;
+@property (nonatomic, retain) NSString *locationId;
+@property (nonatomic) bool requestsGpsAssistance;
 
 + (bool)supportsSecureCoding;
 

@@ -9,13 +9,13 @@
     ABStyleProvider *_styleProvider;
 }
 
-@property(assign,readwrite) ABPersonTableViewDataSource * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) ABPersonPickersDelegate * pickersDelegate;
-@property(assign,retain) ABStyleProvider * styleProvider;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) ABPersonTableViewDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) ABPersonPickersDelegate *pickersDelegate;
+@property (nonatomic, retain) ABStyleProvider *styleProvider;
+@property (readonly) Class superclass;
 
 - (bool)ABTabToNextResponder:(bool)arg1 fromView:(id)arg2;
 - (id)_capitalizedTitleForContentView:(id)arg1;

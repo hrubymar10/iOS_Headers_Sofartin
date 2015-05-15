@@ -14,15 +14,15 @@
     NSNumber *_trackingTimestamp;
 }
 
-@property(assign,copy) NSString * _prettyNameInternal;
-@property(assign,copy) NSArray * aliasServerIds;
-@property(assign,copy) NSDictionary * expiresByGroupId;
-@property(assign,copy) NSString * hashedDSID;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSArray * invitationSentToIds;
-@property(getter=isPending,assign,readwrite) bool pending;
-@property(assign,copy) NSString * serverId;
-@property(assign,copy) NSNumber * trackingTimestamp;
+@property (nonatomic, copy) NSString *_prettyNameInternal;
+@property (nonatomic, copy) NSArray *aliasServerIds;
+@property (nonatomic, copy) NSDictionary *expiresByGroupId;
+@property (nonatomic, copy) NSString *hashedDSID;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSArray *invitationSentToIds;
+@property (getter=isPending, nonatomic) bool pending;
+@property (nonatomic, copy) NSString *serverId;
+@property (nonatomic, copy) NSNumber *trackingTimestamp;
 
 + (id)handleWithId:(id)arg1;
 + (id)handleWithId:(id)arg1 serverId:(id)arg2;

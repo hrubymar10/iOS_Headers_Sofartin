@@ -9,7 +9,7 @@
     UINavigationController *_navigationController;
 }
 
-@property(assign,copy) NSString * bundleID;
+@property (nonatomic, readonly, copy) NSString *bundleID;
 
 - (void).cxx_destruct;
 - (void)_embedAppropriateViewController;

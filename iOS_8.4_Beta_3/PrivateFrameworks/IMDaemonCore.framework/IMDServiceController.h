@@ -6,7 +6,7 @@
     NSMutableDictionary *_services;
 }
 
-@property(assign,readonly) NSArray * allServices;
+@property (nonatomic, readonly) NSArray *allServices;
 
 + (id)sharedInstance;
 

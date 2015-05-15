@@ -7,8 +7,8 @@
     NSString *_openid;
 }
 
-@property(assign,retain) NSURL * objectID;
-@property(assign,copy) NSString * openid;
+@property (nonatomic, retain) NSURL *objectID;
+@property (nonatomic, copy) NSString *openid;
 
 + (bool)supportsSecureCoding;
 + (id)userRecordWithDictionaryRepresentation:(id)arg1;

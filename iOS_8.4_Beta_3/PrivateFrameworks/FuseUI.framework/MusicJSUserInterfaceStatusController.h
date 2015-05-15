@@ -4,8 +4,8 @@
 
 @interface MusicJSUserInterfaceStatusController : IKJSObject <MusicJSUserInterfaceStatusController>
 
-@property(assign,readonly) bool canShowRadio;
-@property(assign,readonly) NSString * tabState;
+@property (nonatomic, readonly) bool canShowRadio;
+@property (nonatomic, readonly) NSString *tabState;
 
 - (bool)canShowRadio;
 - (id)tabState;

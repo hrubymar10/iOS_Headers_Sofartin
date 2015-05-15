@@ -7,9 +7,9 @@
     TKTonePickerViewController *_tonePicker;
 }
 
-@property(assign,retain) CNContactStyle * contactStyle;
-@property(assign,readwrite) <ABPickerControllerDelegate> * delegate;
-@property(assign,retain) TKTonePickerViewController * tonePicker;
+@property (nonatomic, retain) CNContactStyle *contactStyle;
+@property (nonatomic) <ABPickerControllerDelegate> *delegate;
+@property (nonatomic, retain) TKTonePickerViewController *tonePicker;
 
 - (void)cancelButton:(id)arg1;
 - (id)contactStyle;

@@ -7,10 +7,10 @@
     id _reserved;
 }
 
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) double speed;
-@property(assign,readwrite) id timingFunction;
-@property(assign,readwrite) long long timingMode;
+@property (nonatomic) double duration;
+@property (nonatomic) double speed;
+@property (nonatomic) id timingFunction;
+@property (nonatomic) long long timingMode;
 
 + (id)SCNJSExportProtocol;
 + (id)customActionWithDuration:(double)arg1 actionBlock:(id)arg2;

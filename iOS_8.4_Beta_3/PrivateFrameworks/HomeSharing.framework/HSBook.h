@@ -16,17 +16,17 @@
     NSString *_vppOrganizationID;
 }
 
-@property(assign,copy) NSURL * artworkURL;
-@property(assign,copy) NSString * author;
-@property(assign,copy) NSDate * datePurchased;
-@property(assign,copy) NSString * genre;
-@property(assign,readwrite) unsigned long long purchaseHistoryID;
-@property(assign,copy) NSString * redownloadParameters;
-@property(assign,readwrite) unsigned long long storeID;
-@property(assign,copy) NSString * title;
-@property(getter=isVPPLicensed,assign,readwrite) bool vppLicensed;
-@property(assign,copy) NSString * vppOrganizationDisplayName;
-@property(assign,copy) NSString * vppOrganizationID;
+@property (nonatomic, copy) NSURL *artworkURL;
+@property (nonatomic, copy) NSString *author;
+@property (nonatomic, copy) NSDate *datePurchased;
+@property (nonatomic, copy) NSString *genre;
+@property (nonatomic) unsigned long long purchaseHistoryID;
+@property (nonatomic, copy) NSString *redownloadParameters;
+@property (nonatomic) unsigned long long storeID;
+@property (nonatomic, copy) NSString *title;
+@property (getter=isVPPLicensed, nonatomic) bool vppLicensed;
+@property (nonatomic, copy) NSString *vppOrganizationDisplayName;
+@property (nonatomic, copy) NSString *vppOrganizationID;
 
 + (bool)supportsSecureCoding;
 

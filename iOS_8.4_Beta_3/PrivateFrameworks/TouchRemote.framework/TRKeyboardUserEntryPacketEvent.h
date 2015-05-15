@@ -8,9 +8,9 @@
     NSString *_text;
 }
 
-@property(assign,readonly) long long commandType;
-@property(assign,readonly) unsigned long long sessionID;
-@property(assign,readonly) NSString * text;
+@property (nonatomic, readonly) long long commandType;
+@property (nonatomic, readonly) unsigned long long sessionID;
+@property (nonatomic, readonly) NSString *text;
 
 + (unsigned int)_packetEventType;
 

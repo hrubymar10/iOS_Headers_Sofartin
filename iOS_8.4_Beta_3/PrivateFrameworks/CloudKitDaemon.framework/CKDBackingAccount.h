@@ -4,19 +4,19 @@
 
 @interface CKDBackingAccount : NSObject
 
-@property(assign,readonly) bool allowsCellularAccess;
-@property(assign,readonly) NSString * cloudKitAuthToken;
-@property(assign,readonly) bool cloudKitIsEnabled;
-@property(assign,readonly) bool cloudPhotosIsEnabled;
-@property(assign,readonly) NSString * dsid;
-@property(assign,readonly) NSString * iCloudAuthToken;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) bool isFakeAccount;
-@property(assign,readonly) NSString * primaryEmail;
-@property(assign,readonly) NSURL * privateCloudDBURL;
-@property(assign,readonly) NSURL * privateDeviceServiceURL;
-@property(assign,readonly) NSURL * privateShareServiceURL;
-@property(assign,readonly) NSString * serverPreferredPushEnvironment;
+@property (nonatomic, readonly) bool allowsCellularAccess;
+@property (nonatomic, readonly) NSString *cloudKitAuthToken;
+@property (nonatomic, readonly) bool cloudKitIsEnabled;
+@property (nonatomic, readonly) bool cloudPhotosIsEnabled;
+@property (nonatomic, readonly) NSString *dsid;
+@property (nonatomic, readonly) NSString *iCloudAuthToken;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) bool isFakeAccount;
+@property (nonatomic, readonly) NSString *primaryEmail;
+@property (nonatomic, readonly) NSURL *privateCloudDBURL;
+@property (nonatomic, readonly) NSURL *privateDeviceServiceURL;
+@property (nonatomic, readonly) NSURL *privateShareServiceURL;
+@property (nonatomic, readonly) NSString *serverPreferredPushEnvironment;
 
 + (Class)_platformBackingAccountClass;
 + (id)accountWithIdentifier:(id)arg1 inStore:(id)arg2;

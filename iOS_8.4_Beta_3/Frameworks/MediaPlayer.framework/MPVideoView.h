@@ -12,17 +12,17 @@
     double _stopTime;
 }
 
-@property(assign,retain) NSDictionary * AVURLAssetOptions;
-@property(assign,readonly) bool canChangeScaleMode;
-@property(assign,readonly) unsigned long long effectiveScaleMode;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } movieContentFrame;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } movieFrame;
-@property(assign,retain) NSString * movieSubtitle;
-@property(assign,retain) NSString * movieTitle;
-@property(assign,readwrite) MPAVController * player;
-@property(assign,readwrite) unsigned long long scaleMode;
-@property(assign,readwrite) double startTime;
-@property(assign,readwrite) double stopTime;
+@property (nonatomic, retain) NSDictionary *AVURLAssetOptions;
+@property (nonatomic, readonly) bool canChangeScaleMode;
+@property (nonatomic, readonly) unsigned long long effectiveScaleMode;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } movieContentFrame;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } movieFrame;
+@property (nonatomic, retain) NSString *movieSubtitle;
+@property (nonatomic, retain) NSString *movieTitle;
+@property (nonatomic) MPAVController *player;
+@property (nonatomic) unsigned long long scaleMode;
+@property (nonatomic) double startTime;
+@property (nonatomic) double stopTime;
 
 + (Class)layerClass;
 

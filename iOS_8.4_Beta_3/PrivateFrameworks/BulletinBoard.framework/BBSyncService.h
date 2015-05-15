@@ -16,11 +16,11 @@
     IDSService *_service;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <BBSyncServiceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <BBSyncServiceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_addDeferredDismissalForBulletin:(id)arg1 feeds:(unsigned long long)arg2;
 - (void)_clearDeferredTimer;

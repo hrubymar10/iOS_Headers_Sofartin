@@ -6,7 +6,7 @@
     long long _action;
 }
 
-@property(assign,readwrite) long long action;
+@property (nonatomic) long long action;
 
 + (bool)supportsSecureCoding;
 + (id)testInputWithAction:(long long)arg1;

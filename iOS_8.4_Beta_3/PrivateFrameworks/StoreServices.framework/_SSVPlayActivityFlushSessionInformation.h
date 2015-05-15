@@ -9,10 +9,10 @@
     unsigned long long _sessionToken;
 }
 
-@property(assign,copy) NSString * endpointIdentifier;
-@property(assign,copy) NSString * revisionVersionToken;
-@property(assign,retain) NSMutableIndexSet * revisionsIndexSet;
-@property(assign,readwrite) unsigned long long sessionToken;
+@property (nonatomic, copy) NSString *endpointIdentifier;
+@property (nonatomic, copy) NSString *revisionVersionToken;
+@property (nonatomic, retain) NSMutableIndexSet *revisionsIndexSet;
+@property (nonatomic) unsigned long long sessionToken;
 
 - (void).cxx_destruct;
 - (id)endpointIdentifier;

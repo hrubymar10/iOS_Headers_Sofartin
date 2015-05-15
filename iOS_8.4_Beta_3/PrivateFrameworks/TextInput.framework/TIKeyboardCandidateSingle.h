@@ -7,8 +7,8 @@
     NSString *_input;
 }
 
-@property(assign,copy) NSString * candidate;
-@property(assign,copy) NSString * input;
+@property (nonatomic, copy) NSString *candidate;
+@property (nonatomic, copy) NSString *input;
 
 + (id)candidateWithCandidate:(id)arg1 forInput:(id)arg2;
 + (id)candidateWithUnchangedInput:(id)arg1;

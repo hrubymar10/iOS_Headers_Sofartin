@@ -6,7 +6,7 @@
     id _internal;
 }
 
-@property(assign,readonly) struct { double x1; double x2; double x3; } acceleration;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; } acceleration;
 
 + (bool)supportsSecureCoding;
 

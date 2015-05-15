@@ -4,10 +4,10 @@
 
 @interface IKMainTemplate : IKViewElement
 
-@property(assign,retain) IKBackgroundElement * background;
-@property(assign,retain) IKDocumentBannerElement * banner;
-@property(assign,retain) IKButtonElement * button;
-@property(assign,retain) IKMenuBarElement * menuBar;
+@property (nonatomic, readonly, retain) IKBackgroundElement *background;
+@property (nonatomic, readonly, retain) IKDocumentBannerElement *banner;
+@property (nonatomic, readonly, retain) IKButtonElement *button;
+@property (nonatomic, readonly, retain) IKMenuBarElement *menuBar;
 
 - (id)background;
 - (id)banner;

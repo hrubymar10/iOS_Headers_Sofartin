@@ -10,14 +10,14 @@
     UILabel *placeholderLabel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PLPhotoCommentEntryViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UILabel * placeholderLabel;
-@property(assign,retain) UIButton * postButton;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITextView * textView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PLPhotoCommentEntryViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) UILabel *placeholderLabel;
+@property (nonatomic, readonly, retain) UIButton *postButton;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, retain) UITextView *textView;
 
 - (void)clearText;
 - (void)dealloc;

@@ -7,8 +7,8 @@
     long long _generationCount;
 }
 
-@property(assign,readwrite) long long changeCount;
-@property(assign,readwrite) long long generationCount;
+@property (nonatomic) long long changeCount;
+@property (nonatomic) long long generationCount;
 
 - (long long)changeCount;
 - (id)description;

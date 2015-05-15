@@ -12,7 +12,7 @@
     NSMutableSet *_tileCreators;
 }
 
-@property(assign,readonly) unsigned int superTileSize;
+@property (nonatomic, readonly) unsigned int superTileSize;
 
 - (void)_renderRequest:(id)arg1 completion:(id)arg2;
 - (void)dealloc;

@@ -6,7 +6,7 @@
     AlphanumericPINTextField *_pinTextField;
 }
 
-@property(assign,retain) AlphanumericPINTextField * pinTextField;
+@property (nonatomic, retain) AlphanumericPINTextField *pinTextField;
 
 - (void)dealloc;
 - (id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2;

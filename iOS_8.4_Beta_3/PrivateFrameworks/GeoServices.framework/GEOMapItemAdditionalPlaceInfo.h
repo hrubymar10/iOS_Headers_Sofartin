@@ -6,11 +6,11 @@
     GEOPlace *_place;
 }
 
-@property(assign,readonly) double areaInMeters;
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,readonly) GEOMapRegion * mapRegion;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) int placeType;
+@property (nonatomic, readonly) double areaInMeters;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (nonatomic, readonly) GEOMapRegion *mapRegion;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) int placeType;
 
 - (double)areaInMeters;
 - (struct { double x1; double x2; })coordinate;

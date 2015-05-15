@@ -8,12 +8,12 @@
     NSString *_requestedLanguageCode;
 }
 
-@property(assign,readonly) bool hasLanguageCode;
-@property(assign,readonly) bool hasName;
-@property(assign,readonly) bool hasRequestedLanguageCode;
-@property(assign,retain) NSString * languageCode;
-@property(assign,retain) GEONameInfo * name;
-@property(assign,retain) NSString * requestedLanguageCode;
+@property (nonatomic, readonly) bool hasLanguageCode;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic, readonly) bool hasRequestedLanguageCode;
+@property (nonatomic, retain) NSString *languageCode;
+@property (nonatomic, retain) GEONameInfo *name;
+@property (nonatomic, retain) NSString *requestedLanguageCode;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -4,26 +4,26 @@
 
 @interface DOMHTMLImageElement : DOMHTMLElement
 
-@property(assign,copy) NSURL * absoluteImageURL;
-@property(assign,copy) NSString * align;
-@property(assign,copy) NSString * alt;
-@property(assign,copy) NSString * altDisplayString;
-@property(assign,copy) NSString * border;
-@property(assign,readonly) bool complete;
-@property(assign,readwrite) int height;
-@property(assign,readwrite) int hspace;
-@property(assign,readwrite) bool isMap;
-@property(assign,copy) NSString * longDesc;
-@property(assign,copy) NSString * lowsrc;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) int naturalHeight;
-@property(assign,readonly) int naturalWidth;
-@property(assign,copy) NSString * src;
-@property(assign,copy) NSString * useMap;
-@property(assign,readwrite) int vspace;
-@property(assign,readwrite) int width;
-@property(assign,readonly) int x;
-@property(assign,readonly) int y;
+@property (readonly, copy) NSURL *absoluteImageURL;
+@property (copy) NSString *align;
+@property (copy) NSString *alt;
+@property (readonly, copy) NSString *altDisplayString;
+@property (copy) NSString *border;
+@property (readonly) bool complete;
+@property int height;
+@property int hspace;
+@property bool isMap;
+@property (copy) NSString *longDesc;
+@property (copy) NSString *lowsrc;
+@property (copy) NSString *name;
+@property (readonly) int naturalHeight;
+@property (readonly) int naturalWidth;
+@property (copy) NSString *src;
+@property (copy) NSString *useMap;
+@property int vspace;
+@property int width;
+@property (readonly) int x;
+@property (readonly) int y;
 
 + (id)mf_edgeToEdgeImageAttachmentStyle;
 + (double)mf_maxPhotoWidth;

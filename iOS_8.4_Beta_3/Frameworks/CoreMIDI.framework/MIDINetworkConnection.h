@@ -6,7 +6,7 @@
     struct _MIDINetworkConnectionImpl { id x1; } *_impl;
 }
 
-@property(assign,retain) MIDINetworkHost * host;
+@property (nonatomic, readonly, retain) MIDINetworkHost *host;
 
 + (id)connectionWithHost:(id)arg1;
 

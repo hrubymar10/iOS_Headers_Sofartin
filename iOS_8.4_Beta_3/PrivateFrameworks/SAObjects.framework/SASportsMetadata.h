@@ -4,15 +4,15 @@
 
 @interface SASportsMetadata : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSNumber * average;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSNumber * selected;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * value;
+@property (nonatomic, copy) NSNumber *average;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSNumber *selected;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *value;
 
 + (id)metadata;
 + (id)metadataWithDictionary:(id)arg1 context:(id)arg2;

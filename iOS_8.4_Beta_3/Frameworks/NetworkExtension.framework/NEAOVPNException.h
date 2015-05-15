@@ -8,9 +8,9 @@
     NSString *_serviceName;
 }
 
-@property(assign,readwrite) long long action;
-@property(assign,copy) NSString * bundleIdentifier;
-@property(assign,copy) NSString * serviceName;
+@property long long action;
+@property (copy) NSString *bundleIdentifier;
+@property (copy) NSString *serviceName;
 
 + (bool)supportsSecureCoding;
 

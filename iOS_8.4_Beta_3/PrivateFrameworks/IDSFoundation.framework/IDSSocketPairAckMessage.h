@@ -6,7 +6,7 @@
     unsigned int _sequenceNumber;
 }
 
-@property(assign,readonly) unsigned int sequenceNumber;
+@property (nonatomic, readonly) unsigned int sequenceNumber;
 
 - (id)_nonHeaderData;
 - (unsigned char)command;

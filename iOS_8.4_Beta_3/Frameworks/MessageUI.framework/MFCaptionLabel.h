@@ -12,15 +12,15 @@
     NSArray *_toRecipients;
 }
 
-@property(assign,readwrite) void* addressBook;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } baselinePoint;
-@property(assign,retain) NSArray * bccRecipients;
-@property(assign,retain) NSArray * ccRecipients;
-@property(assign,retain) UIFont * font;
-@property(assign,readonly) UIButton * moreButton;
-@property(assign,readonly) UILabel * recipientLabel;
-@property(assign,retain) NSString * text;
-@property(assign,retain) NSArray * toRecipients;
+@property (nonatomic) void*addressBook;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } baselinePoint;
+@property (nonatomic, retain) NSArray *bccRecipients;
+@property (nonatomic, retain) NSArray *ccRecipients;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic, readonly) UIButton *moreButton;
+@property (nonatomic, readonly) UILabel *recipientLabel;
+@property (nonatomic, retain) NSString *text;
+@property (nonatomic, retain) NSArray *toRecipients;
 
 + (id)_propertiesThatNeedLabelUpdates;
 + (id)defaultFont;

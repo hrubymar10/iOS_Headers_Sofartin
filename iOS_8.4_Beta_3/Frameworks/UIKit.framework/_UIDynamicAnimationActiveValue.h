@@ -13,10 +13,10 @@
     double _value;
 }
 
-@property(assign,readwrite) double maximumActiveValue;
-@property(assign,readwrite) double minimumActiveValue;
-@property(assign,readwrite) int type;
-@property(assign,readwrite) double value;
+@property (nonatomic) double maximumActiveValue;
+@property (nonatomic) double minimumActiveValue;
+@property (nonatomic) int type;
+@property (nonatomic) double value;
 
 + (id)activeValue:(double)arg1 ofType:(int)arg2;
 + (id)lowerBoundary:(double)arg1 ofType:(int)arg2;

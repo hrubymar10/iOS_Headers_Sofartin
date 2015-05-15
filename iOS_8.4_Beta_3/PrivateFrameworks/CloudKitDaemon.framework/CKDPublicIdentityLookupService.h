@@ -11,7 +11,7 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readwrite) CKDClientContext * context;
+@property (nonatomic) CKDClientContext *context;
 
 - (void).cxx_destruct;
 - (void)_fetchEmails;

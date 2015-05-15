@@ -6,7 +6,7 @@
     PSSystemPolicyForApp *_systemPolicy;
 }
 
-@property(assign,retain) PSSystemPolicyForApp * systemPolicy;
+@property (nonatomic, retain) PSSystemPolicyForApp *systemPolicy;
 
 + (id)_localizedTitlesFromUnlocalizedTitles:(id)arg1 stringsTable:(id)arg2 parentSpecifier:(id)arg3;
 + (id)childPaneSpecifierFromDictionary:(id)arg1 stringsTable:(id)arg2 parentSpecifier:(id)arg3 target:(id)arg4;

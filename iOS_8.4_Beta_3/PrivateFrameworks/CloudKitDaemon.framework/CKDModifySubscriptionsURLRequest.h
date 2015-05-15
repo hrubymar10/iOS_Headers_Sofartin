@@ -10,11 +10,11 @@
     CKRecordZoneID *_zoneID;
 }
 
-@property(assign,retain) NSMutableDictionary * subscriptionIDByRequestID;
-@property(assign,retain) NSArray * subscriptionIDsToDelete;
-@property(assign,copy) id subscriptionModifiedBlock;
-@property(assign,retain) NSArray * subscriptionsToSave;
-@property(assign,copy) CKRecordZoneID * zoneID;
+@property (nonatomic, retain) NSMutableDictionary *subscriptionIDByRequestID;
+@property (nonatomic, retain) NSArray *subscriptionIDsToDelete;
+@property (nonatomic, copy) id subscriptionModifiedBlock;
+@property (nonatomic, retain) NSArray *subscriptionsToSave;
+@property (nonatomic, copy) CKRecordZoneID *zoneID;
 
 - (void).cxx_destruct;
 - (id)initWithSubscriptionsToSave:(id)arg1 subscriptionIDsToDelete:(id)arg2;

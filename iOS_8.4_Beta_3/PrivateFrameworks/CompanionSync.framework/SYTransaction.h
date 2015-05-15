@@ -10,15 +10,15 @@
     SYStore *_store;
 }
 
-@property(assign,retain) NSMutableArray * changes;
-@property(assign,copy) id completion;
-@property(assign,copy) NSDictionary * contextInfo;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSDictionary * idsOptions;
-@property(assign,retain) SYStore * store;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSMutableArray *changes;
+@property (nonatomic, copy) id completion;
+@property (nonatomic, copy) NSDictionary *contextInfo;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSDictionary *idsOptions;
+@property (nonatomic, retain) SYStore *store;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)addObject:(id)arg1;

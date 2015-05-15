@@ -18,22 +18,22 @@
     NSURLSession *_urlSession;
 }
 
-@property(assign,readonly) ACAccount * account;
-@property(assign,retain) PKPaymentWebServiceBackgroundContext * backgroundContext;
-@property(assign,readwrite) <PKPaymentBackgroundProvisioningServiceDelegate> * backgroundDelegate;
-@property(assign,retain) PKPaymentWebServiceContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPaymentProvisioningServiceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long maxCards;
-@property(assign,readonly) bool needsConfiguration;
-@property(assign,readonly) bool needsRegistration;
-@property(assign,readonly) int paymentSetupSupportedInRegion;
-@property(assign,readonly) NSURL * primaryBrokerURL;
-@property(assign,readonly) NSURLSessionConfiguration * sessionConfiguration;
-@property(assign,readwrite) bool sharedService;
-@property(assign,readonly) Class superclass;
+@property (readonly) ACAccount *account;
+@property (retain) PKPaymentWebServiceBackgroundContext *backgroundContext;
+@property <PKPaymentBackgroundProvisioningServiceDelegate> *backgroundDelegate;
+@property (retain) PKPaymentWebServiceContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property <PKPaymentProvisioningServiceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long maxCards;
+@property (readonly) bool needsConfiguration;
+@property (readonly) bool needsRegistration;
+@property (readonly) int paymentSetupSupportedInRegion;
+@property (readonly) NSURL *primaryBrokerURL;
+@property (readonly) NSURLSessionConfiguration *sessionConfiguration;
+@property (nonatomic) bool sharedService;
+@property (readonly) Class superclass;
 
 + (id)_sharedCookieStorage;
 + (id)sharedService;

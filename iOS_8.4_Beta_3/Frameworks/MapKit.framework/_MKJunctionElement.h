@@ -14,9 +14,9 @@
     } _rightBasePoint;
 }
 
-@property(assign,readwrite) double angle;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } leftBasePoint;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } rightBasePoint;
+@property double angle;
+@property struct CGPoint { double x1; double x2; } leftBasePoint;
+@property struct CGPoint { double x1; double x2; } rightBasePoint;
 
 - (double)angle;
 - (struct CGPoint { double x1; double x2; })leftBasePoint;

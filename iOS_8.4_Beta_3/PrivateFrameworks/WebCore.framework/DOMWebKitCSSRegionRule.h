@@ -4,7 +4,7 @@
 
 @interface DOMWebKitCSSRegionRule : DOMCSSRule
 
-@property(assign,readonly) DOMCSSRuleList * cssRules;
+@property (readonly) DOMCSSRuleList *cssRules;
 
 - (id)cssRules;
 

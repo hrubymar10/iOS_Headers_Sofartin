@@ -15,9 +15,9 @@
     double _verticalPadding;
 }
 
-@property(assign,readwrite) bool backfills;
-@property(assign,readwrite) double horizontalPadding;
-@property(assign,readwrite) double verticalPadding;
+@property (nonatomic) bool backfills;
+@property (nonatomic) double horizontalPadding;
+@property (nonatomic) double verticalPadding;
 
 - (void).cxx_destruct;
 - (bool)backfills;

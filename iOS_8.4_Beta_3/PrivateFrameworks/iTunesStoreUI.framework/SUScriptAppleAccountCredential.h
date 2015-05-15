@@ -6,7 +6,7 @@
     ACAccountCredential *_credential;
 }
 
-@property(assign,readonly) NSString * oauthToken;
+@property (readonly) NSString *oauthToken;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

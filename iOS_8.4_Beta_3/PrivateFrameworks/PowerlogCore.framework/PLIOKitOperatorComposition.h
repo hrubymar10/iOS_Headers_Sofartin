@@ -11,12 +11,12 @@
     NSString *_serviceName;
 }
 
-@property(assign,readwrite) struct IONotificationPort { }* ioNotifyPort;
-@property(assign,readwrite) unsigned int notificationRef;
-@property(assign,retain) PLOperator * operator;
-@property(assign,copy) id operatorBlock;
-@property(assign,readwrite) unsigned int service;
-@property(assign,retain) NSString * serviceName;
+@property struct IONotificationPort { }*ioNotifyPort;
+@property unsigned int notificationRef;
+@property (retain) PLOperator *operator;
+@property (nonatomic, copy) id operatorBlock;
+@property unsigned int service;
+@property (retain) NSString *serviceName;
 
 + (id)snapshotFromIOEntry:(unsigned int)arg1;
 + (id)snapshotFromIOEntry:(unsigned int)arg1 forKey:(id)arg2;

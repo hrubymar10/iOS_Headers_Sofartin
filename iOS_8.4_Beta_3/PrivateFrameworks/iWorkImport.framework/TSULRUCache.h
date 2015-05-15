@@ -10,9 +10,9 @@
     NSMutableArray *mOrderedKeys;
 }
 
-@property(assign,readonly) NSArray * allKeys;
-@property(assign,readonly) NSArray * allValues;
-@property(assign,readonly) unsigned long long maxSize;
+@property (nonatomic, readonly) NSArray *allKeys;
+@property (nonatomic, readonly) NSArray *allValues;
+@property (nonatomic, readonly) unsigned long long maxSize;
 
 - (id)allKeys;
 - (id)allValues;

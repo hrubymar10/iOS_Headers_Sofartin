@@ -9,10 +9,10 @@
     SCRCMathExpression *_operator;
 }
 
-@property(assign,retain) SCRCMathExpression * denominator;
-@property(assign,readwrite) double lineThickness;
-@property(assign,retain) SCRCMathExpression * numerator;
-@property(assign,retain) SCRCMathExpression * operator;
+@property (nonatomic, retain) SCRCMathExpression *denominator;
+@property (nonatomic) double lineThickness;
+@property (nonatomic, retain) SCRCMathExpression *numerator;
+@property (nonatomic, retain) SCRCMathExpression *operator;
 
 - (id)_dollarCodeDescriptionAsBinomialCoefficient:(bool)arg1 orMixedNumberFraction:(bool)arg2 withNumberOfOuterRadicals:(unsigned long long)arg3 treePosition:(id)arg4;
 - (id)_speakableDescriptionWithSpeakingStyle:(int)arg1 arePausesAllowed:(bool)arg2 asBinomialCoefficient:(bool)arg3;

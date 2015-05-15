@@ -7,17 +7,17 @@
     NSMutableArray *mNodes;
 }
 
-@property(assign,readonly) bool allNodesSelected;
-@property(assign,readonly) TSUBezierPath * bezierPath;
-@property(assign,readonly) bool canDeleteSelectedNodes;
-@property(assign,readonly) bool closeIfEndpointsAreEqual;
-@property(getter=isClosed,assign,readwrite) bool closed;
-@property(assign,readonly) TSDBezierNode * firstNode;
-@property(assign,readonly) bool hasSelectedNode;
-@property(assign,readonly) bool isRectangular;
-@property(assign,readonly) TSDBezierNode * lastNode;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } nodeBounds;
-@property(assign,retain) NSMutableArray * nodes;
+@property (nonatomic, readonly) bool allNodesSelected;
+@property (nonatomic, readonly) TSUBezierPath *bezierPath;
+@property (nonatomic, readonly) bool canDeleteSelectedNodes;
+@property (nonatomic, readonly) bool closeIfEndpointsAreEqual;
+@property (getter=isClosed, nonatomic) bool closed;
+@property (nonatomic, readonly) TSDBezierNode *firstNode;
+@property (nonatomic, readonly) bool hasSelectedNode;
+@property (nonatomic, readonly) bool isRectangular;
+@property (nonatomic, readonly) TSDBezierNode *lastNode;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } nodeBounds;
+@property (nonatomic, retain) NSMutableArray *nodes;
 
 - (void)addNode:(id)arg1;
 - (void)addNodesToArray:(id)arg1;

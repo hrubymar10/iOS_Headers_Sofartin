@@ -24,18 +24,18 @@
     UIView *_volumeWarningView;
 }
 
-@property(setter=_setIsOffScreen:,assign,readwrite) bool _isOffScreen;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitRectInsets;
-@property(assign,retain) MPAVController * player;
-@property(assign,readonly) MPAVRoutingController * routingController;
-@property(assign,readonly) long long style;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * volumeAudioCategory;
-@property(assign,retain) UIImage * volumeWarningTrackImage;
-@property(assign,readonly) UIView * volumeWarningView;
+@property (setter=_setIsOffScreen:, nonatomic) bool _isOffScreen;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitRectInsets;
+@property (nonatomic, retain) MPAVController *player;
+@property (nonatomic, readonly) MPAVRoutingController *routingController;
+@property (nonatomic, readonly) long long style;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *volumeAudioCategory;
+@property (nonatomic, retain) UIImage *volumeWarningTrackImage;
+@property (nonatomic, readonly) UIView *volumeWarningView;
 
 - (void).cxx_destruct;
 - (void)_applicationDidEnterBackgroundNotification:(id)arg1;

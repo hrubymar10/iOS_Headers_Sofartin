@@ -4,8 +4,8 @@
 
 @interface TDFontSizeDefinition : NSManagedObject
 
-@property(assign,retain) NSDate * dateOfLastChange;
-@property(assign,retain) NSNumber * pointSize;
-@property(assign,retain) TDMetafontSizeSelector * selector;
+@property (nonatomic, retain) NSDate *dateOfLastChange;
+@property (nonatomic, retain) NSNumber *pointSize;
+@property (nonatomic, retain) TDMetafontSizeSelector *selector;
 
 @end

@@ -9,10 +9,10 @@
     int _status;
 }
 
-@property(assign,readwrite) unsigned long long bytesSent;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) bool isWifi;
-@property(assign,readwrite) int status;
+@property (nonatomic) unsigned long long bytesSent;
+@property (nonatomic) double duration;
+@property (nonatomic) bool isWifi;
+@property (nonatomic) int status;
 
 - (unsigned long long)bytesSent;
 - (id)description;

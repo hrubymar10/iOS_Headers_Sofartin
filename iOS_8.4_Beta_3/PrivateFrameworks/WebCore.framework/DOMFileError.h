@@ -4,7 +4,7 @@
 
 @interface DOMFileError : DOMObject
 
-@property(assign,readonly) unsigned short code;
+@property (readonly) unsigned short code;
 
 - (unsigned short)code;
 - (void)dealloc;

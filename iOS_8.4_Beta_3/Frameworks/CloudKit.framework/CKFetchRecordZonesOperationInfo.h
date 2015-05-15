@@ -8,9 +8,9 @@
     NSArray *_recordZoneIDs;
 }
 
-@property(assign,readwrite) bool ignorePCSFailures;
-@property(assign,readwrite) bool isFetchAllRecordZonesOperation;
-@property(assign,retain) NSArray * recordZoneIDs;
+@property (nonatomic) bool ignorePCSFailures;
+@property (nonatomic) bool isFetchAllRecordZonesOperation;
+@property (nonatomic, retain) NSArray *recordZoneIDs;
 
 + (bool)supportsSecureCoding;
 

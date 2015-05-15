@@ -21,10 +21,10 @@
     float mSlack;
 }
 
-@property(assign,readonly) NSArray * pickedPoints;
-@property(assign,readwrite) struct tvec2<float> { union { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; union { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; } position;
-@property(assign,retain) TSCH3DRayPickPipelineDelegate * sceneObjectDelegate;
-@property(assign,readwrite) float slack;
+@property (nonatomic, readonly) NSArray *pickedPoints;
+@property (nonatomic) struct tvec2<float> { union { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; union { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; } position;
+@property (nonatomic, retain) TSCH3DRayPickPipelineDelegate *sceneObjectDelegate;
+@property (nonatomic) float slack;
 
 - (id).cxx_construct;
 - (void)dealloc;

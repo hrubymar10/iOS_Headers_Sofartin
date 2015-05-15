@@ -8,9 +8,9 @@
     double _radiusStrength;
 }
 
-@property(assign,readwrite) double alphaStrength;
-@property(assign,readwrite) bool on;
-@property(assign,readwrite) double radiusStrength;
+@property (nonatomic) double alphaStrength;
+@property (nonatomic) bool on;
+@property (nonatomic) double radiusStrength;
 
 + (id)archivedSettingsGroup;
 

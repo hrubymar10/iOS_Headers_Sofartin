@@ -4,19 +4,19 @@
 
 @interface TSDMutableTransformGradient : TSDTransformGradient <TSDGradientStopContainer>
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } baseNaturalSize;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } endPoint;
-@property(assign,retain) TSUColor * firstColor;
-@property(assign,retain) NSArray * gradientStops;
-@property(assign,readwrite) unsigned long long gradientType;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isAdvancedGradient;
-@property(assign,retain) TSUColor * lastColor;
-@property(assign,readwrite) double opacity;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } startPoint;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) struct CGSize { double x1; double x2; } baseNaturalSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) struct CGPoint { double x1; double x2; } endPoint;
+@property (nonatomic, retain) TSUColor *firstColor;
+@property (nonatomic, retain) NSArray *gradientStops;
+@property (nonatomic) unsigned long long gradientType;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isAdvancedGradient;
+@property (nonatomic, retain) TSUColor *lastColor;
+@property (nonatomic) double opacity;
+@property (nonatomic) struct CGPoint { double x1; double x2; } startPoint;
+@property (readonly) Class superclass;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)evenlyDistributeStops;

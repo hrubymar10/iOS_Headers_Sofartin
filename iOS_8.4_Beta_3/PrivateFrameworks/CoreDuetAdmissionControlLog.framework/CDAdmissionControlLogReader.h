@@ -8,9 +8,9 @@
     NSMutableDictionary *_invalidKeys;
 }
 
-@property(assign,readwrite) struct __asl_object_s { }* ablemsg;
-@property(assign,readwrite) struct __asl_object_s { }* aslclient;
-@property(assign,retain) NSMutableDictionary * invalidKeys;
+@property struct __asl_object_s { }*ablemsg;
+@property struct __asl_object_s { }*aslclient;
+@property (retain) NSMutableDictionary *invalidKeys;
 
 - (void).cxx_destruct;
 - (struct __asl_object_s { }*)ablemsg;

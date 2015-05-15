@@ -22,18 +22,18 @@
     NSMutableArray *renditionEntries;
 }
 
-@property(assign,retain) NSString * accumulatedErrorDescription;
-@property(assign,readwrite) long long assetStoreVersionNumber;
-@property(assign,copy) NSString * assetStoreVersionString;
-@property(assign,retain) NSThread * callbackThread;
-@property(getter=isCancelled,assign,readwrite) bool cancelled;
-@property(assign,copy) id completionHandler;
-@property(assign,readwrite) int fileCompression;
-@property(getter=isFinished,assign,readwrite) bool finished;
-@property(getter=isIncremental,assign,readwrite) bool incremental;
-@property(assign,retain) TDLogger * logger;
-@property(assign,copy) id oldCompletionHandler;
-@property(getter=isSuccessful,assign,readwrite) bool successful;
+@property (nonatomic, retain) NSString *accumulatedErrorDescription;
+@property long long assetStoreVersionNumber;
+@property (copy) NSString *assetStoreVersionString;
+@property (retain) NSThread *callbackThread;
+@property (getter=isCancelled) bool cancelled;
+@property (copy) id completionHandler;
+@property int fileCompression;
+@property (getter=isFinished) bool finished;
+@property (getter=isIncremental) bool incremental;
+@property (retain) TDLogger *logger;
+@property (copy) id oldCompletionHandler;
+@property (getter=isSuccessful) bool successful;
 
 - (void)_accumulateErrorDescription:(id)arg1;
 - (id)_copyStandardEffectDefinitions;

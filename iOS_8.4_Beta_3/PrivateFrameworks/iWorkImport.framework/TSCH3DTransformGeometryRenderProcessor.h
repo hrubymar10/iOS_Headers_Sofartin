@@ -6,7 +6,7 @@
     TSCH3DDataBuffer *mBuffer;
 }
 
-@property(assign,readonly) TSCH3DDataBuffer * buffer;
+@property (nonatomic, readonly) TSCH3DDataBuffer *buffer;
 
 + (id)processorWithOriginal:(id)arg1;
 

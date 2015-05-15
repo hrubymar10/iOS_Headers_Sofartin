@@ -15,13 +15,13 @@
     NSMutableDictionary *_transferCache;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasActiveAliasWatchers;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,readonly) BRCAccountSession * session;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) bool hasActiveAliasWatchers;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCancelled;
+@property (nonatomic, readonly) BRCAccountSession *session;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)cancel;

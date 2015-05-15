@@ -18,14 +18,14 @@
     bool _showing;
 }
 
-@property(assign,readonly) UIViewController * accessoryViewController;
-@property(assign,copy) id actionHandlerBlock;
-@property(assign,readwrite) bool autoDismissDisabled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) UIViewController *accessoryViewController;
+@property (nonatomic, readonly, copy) id actionHandlerBlock;
+@property (nonatomic) bool autoDismissDisabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_invokeActionHandlerWithActionIndex:(long long)arg1;

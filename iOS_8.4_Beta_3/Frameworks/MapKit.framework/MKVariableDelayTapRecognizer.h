@@ -7,7 +7,7 @@
     <MKVariableDelayTapRecognizerDelegate> *tapDelayDelegate;
 }
 
-@property(assign,readwrite) <MKVariableDelayTapRecognizerDelegate> * tapDelayDelegate;
+@property (nonatomic) <MKVariableDelayTapRecognizerDelegate> *tapDelayDelegate;
 
 - (void).cxx_destruct;
 - (id)initWithTarget:(id)arg1 action:(SEL)arg2;

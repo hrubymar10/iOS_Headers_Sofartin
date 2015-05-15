@@ -4,7 +4,7 @@
 
 @interface _UIVisualEffectSubview : UIView
 
-@property(setter=_setGroupName:,assign,copy) NSString * _groupName;
+@property (setter=_setGroupName:, nonatomic, copy) NSString *_groupName;
 
 - (id)_groupName;
 - (void)_setGroupName:(id)arg1;

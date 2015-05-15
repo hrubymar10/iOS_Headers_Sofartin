@@ -4,10 +4,10 @@
 
 @interface GCControllerButtonInput : GCControllerElement
 
-@property(getter=isPressed,assign,readonly) bool pressed;
-@property(assign,copy) id pressedChangedHandler;
-@property(assign,readonly) float value;
-@property(assign,copy) id valueChangedHandler;
+@property (getter=isPressed, readonly) bool pressed;
+@property (copy) id pressedChangedHandler;
+@property (readonly) float value;
+@property (copy) id valueChangedHandler;
 
 - (bool)_setValue:(float)arg1;
 - (bool)isPressed;

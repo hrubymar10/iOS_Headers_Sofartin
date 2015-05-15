@@ -8,10 +8,10 @@
     NSOperationQueue *_operationQueue;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,retain) SKUIRedeemConfiguration * configuration;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,readonly) bool shouldShowPassbookLearnMore;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, retain) SKUIRedeemConfiguration *configuration;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic, readonly) bool shouldShowPassbookLearnMore;
 
 - (void).cxx_destruct;
 - (id)clientContext;

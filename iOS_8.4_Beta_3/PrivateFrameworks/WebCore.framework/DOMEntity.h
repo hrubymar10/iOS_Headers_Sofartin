@@ -4,9 +4,9 @@
 
 @interface DOMEntity : DOMNode
 
-@property(assign,copy) NSString * notationName;
-@property(assign,copy) NSString * publicId;
-@property(assign,copy) NSString * systemId;
+@property (readonly, copy) NSString *notationName;
+@property (readonly, copy) NSString *publicId;
+@property (readonly, copy) NSString *systemId;
 
 - (id)notationName;
 - (id)publicId;

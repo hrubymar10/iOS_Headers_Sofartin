@@ -9,12 +9,12 @@
     NSMutableArray *_snippetLogoURLs;
 }
 
-@property(assign,retain) NSString * displayName;
-@property(assign,readonly) bool hasDisplayName;
-@property(assign,readonly) bool hasLanguage;
-@property(assign,retain) NSString * language;
-@property(assign,retain) NSMutableArray * logoURLs;
-@property(assign,retain) NSMutableArray * snippetLogoURLs;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, readonly) bool hasDisplayName;
+@property (nonatomic, readonly) bool hasLanguage;
+@property (nonatomic, retain) NSString *language;
+@property (nonatomic, retain) NSMutableArray *logoURLs;
+@property (nonatomic, retain) NSMutableArray *snippetLogoURLs;
 
 - (void)addLogoURLs:(id)arg1;
 - (void)addSnippetLogoURLs:(id)arg1;

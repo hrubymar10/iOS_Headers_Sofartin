@@ -4,7 +4,7 @@
 
 @interface WBSFormAutoFillItem : NSObject
 
-@property(assign,readonly) NSString * completion;
+@property (nonatomic, readonly) NSString *completion;
 
 - (id)completion;
 

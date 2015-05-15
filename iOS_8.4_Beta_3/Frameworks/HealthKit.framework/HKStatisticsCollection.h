@@ -12,8 +12,8 @@
     NSLock *_statisticsLock;
 }
 
-@property(assign,readonly) NSDate * anchorDate;
-@property(assign,readonly) NSDateComponents * statisticsInterval;
+@property (nonatomic, readonly) NSDate *anchorDate;
+@property (nonatomic, readonly) NSDateComponents *statisticsInterval;
 
 - (void).cxx_destruct;
 - (void)_clearSourcesCache;

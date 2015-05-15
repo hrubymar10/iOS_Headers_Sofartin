@@ -8,8 +8,8 @@
     bool _showsCancelButton;
 }
 
-@property(assign,readwrite) bool showsCancelButton;
-@property(assign,readwrite) bool showsLocalLibrary;
+@property (nonatomic) bool showsCancelButton;
+@property (nonatomic) bool showsLocalLibrary;
 
 - (void).cxx_destruct;
 - (void)dismissSharedLibrariesViewController:(bool)arg1;

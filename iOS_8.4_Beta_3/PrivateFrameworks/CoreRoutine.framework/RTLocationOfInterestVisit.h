@@ -7,8 +7,8 @@
     NSDate *_exitTime;
 }
 
-@property(assign,readonly) NSDate * entryTime;
-@property(assign,readonly) NSDate * exitTime;
+@property (nonatomic, readonly) NSDate *entryTime;
+@property (nonatomic, readonly) NSDate *exitTime;
 
 + (bool)supportsSecureCoding;
 

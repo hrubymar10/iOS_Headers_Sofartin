@@ -11,8 +11,8 @@
     NSMutableArray *_values;
 }
 
-@property(assign,readwrite) long long interpolationMode;
-@property(assign,readwrite) long long repeatMode;
+@property (nonatomic) long long interpolationMode;
+@property (nonatomic) long long repeatMode;
 
 - (void).cxx_destruct;
 - (struct SKCKeyframeSequence { int x1; int x2; long long x3; long long x4; float *x5; float *x6; }*)_createSKCKeyframeSequence;

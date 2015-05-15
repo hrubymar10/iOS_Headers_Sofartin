@@ -6,7 +6,7 @@
     NSData *_remoteTokenData;
 }
 
-@property(assign,retain) NSData * remoteTokenData;
+@property (nonatomic, retain) NSData *remoteTokenData;
 
 - (void)_accessibilityCategoryInstalled:(id)arg1;
 - (id)accessibilityHitTest:(struct CGPoint { double x1; double x2; })arg1;

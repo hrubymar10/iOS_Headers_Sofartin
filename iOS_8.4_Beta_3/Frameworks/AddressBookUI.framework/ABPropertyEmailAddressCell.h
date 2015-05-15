@@ -6,7 +6,7 @@
     bool _VIP;
 }
 
-@property(getter=isVIP,assign,readwrite) bool VIP;
+@property (getter=isVIP, nonatomic) bool VIP;
 
 - (bool)isVIP;
 - (void)setVIP:(bool)arg1;

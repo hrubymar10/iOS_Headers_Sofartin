@@ -4,20 +4,20 @@
 
 @interface PFUbiquityStoreMetadata : NSManagedObject
 
-@property(assign,retain) NSString * modelVersionHashString;
-@property(assign,retain) NSSet * peerStates;
-@property(assign,retain) NSSet * primaryKeyRanges;
-@property(assign,retain) NSString * storeIdentifier;
-@property(assign,retain) NSDictionary * storeOptions;
-@property(assign,retain) NSData * storeOptionsBinaryPlistData;
-@property(assign,retain) NSString * storeType;
-@property(assign,retain) NSString * storeURLString;
-@property(assign,retain) NSSet * transactionEntries;
-@property(assign,retain) NSString * ubiquityName;
-@property(assign,retain) NSString * ubiquityRelativePath;
-@property(assign,readonly) PFUbiquityLocation * ubiquityRootLocation;
-@property(assign,readonly) NSURL * ubiquityRootURL;
-@property(assign,retain) NSString * ubiquityRootURLString;
+@property (nonatomic, retain) NSString *modelVersionHashString;
+@property (nonatomic, retain) NSSet *peerStates;
+@property (nonatomic, retain) NSSet *primaryKeyRanges;
+@property (nonatomic, retain) NSString *storeIdentifier;
+@property (nonatomic, retain) NSDictionary *storeOptions;
+@property (nonatomic, retain) NSData *storeOptionsBinaryPlistData;
+@property (nonatomic, retain) NSString *storeType;
+@property (nonatomic, retain) NSString *storeURLString;
+@property (nonatomic, retain) NSSet *transactionEntries;
+@property (nonatomic, retain) NSString *ubiquityName;
+@property (nonatomic, retain) NSString *ubiquityRelativePath;
+@property (readonly) PFUbiquityLocation *ubiquityRootLocation;
+@property (nonatomic, readonly) NSURL *ubiquityRootURL;
+@property (nonatomic, retain) NSString *ubiquityRootURLString;
 
 + (id)allStoreMetadataInManagedObjectContext:(id)arg1;
 + (id)baselineGCModelURLForUbiquityName:(id)arg1 andUbiquityLogURL:(id)arg2;

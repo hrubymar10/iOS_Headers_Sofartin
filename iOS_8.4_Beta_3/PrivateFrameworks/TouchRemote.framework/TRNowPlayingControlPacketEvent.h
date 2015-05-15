@@ -6,7 +6,7 @@
     long long _controlCommand;
 }
 
-@property(assign,readonly) long long controlCommand;
+@property (nonatomic, readonly) long long controlCommand;
 
 + (unsigned int)_packetEventType;
 

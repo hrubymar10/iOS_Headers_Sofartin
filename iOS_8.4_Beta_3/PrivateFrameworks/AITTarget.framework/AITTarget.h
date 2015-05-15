@@ -15,13 +15,13 @@
     AITXPCConnection *_xpcConnection;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * rpcDispatchQueue;
-@property(assign,copy) NSString * rpcSelectorPrefix;
-@property(assign,retain) id rpcTarget;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) NSObject<OS_dispatch_queue> *rpcDispatchQueue;
+@property (nonatomic, copy) NSString *rpcSelectorPrefix;
+@property (nonatomic, retain) id rpcTarget;
+@property (readonly) Class superclass;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)sharedTarget;

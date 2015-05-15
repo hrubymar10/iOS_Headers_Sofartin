@@ -23,19 +23,19 @@
     NSString *_unachievedDescription;
 }
 
-@property(assign,retain) NSString * achievedDescription;
-@property(assign,readwrite) unsigned int attributes;
-@property(assign,retain) NSString * groupIdentifier;
-@property(getter=isHidden,assign,readwrite) bool hidden;
-@property(assign,retain) NSDictionary * icons;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSDate * lastReportedDate;
-@property(assign,readwrite) unsigned short maximumPoints;
-@property(assign,readwrite) double percentComplete;
-@property(assign,retain) GKPlayerInternal * player;
-@property(getter=isReplayable,assign,readwrite) bool replayable;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSString * unachievedDescription;
+@property (nonatomic, retain) NSString *achievedDescription;
+@property (nonatomic) unsigned int attributes;
+@property (nonatomic, retain) NSString *groupIdentifier;
+@property (getter=isHidden, nonatomic) bool hidden;
+@property (nonatomic, retain) NSDictionary *icons;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSDate *lastReportedDate;
+@property (nonatomic) unsigned short maximumPoints;
+@property (nonatomic) double percentComplete;
+@property (nonatomic, retain) GKPlayerInternal *player;
+@property (getter=isReplayable, nonatomic) bool replayable;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *unachievedDescription;
 
 + (id)secureCodedPropertyKeys;
 + (bool)supportsSecureCoding;

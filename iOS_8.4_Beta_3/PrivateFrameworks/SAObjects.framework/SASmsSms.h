@@ -4,17 +4,17 @@
 
 @interface SASmsSms : SADomainObject
 
-@property(assign,copy) NSURL * attachment;
-@property(assign,copy) NSString * chatIdentifier;
-@property(assign,copy) NSDate * dateSent;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSArray * msgRecipients;
-@property(assign,retain) SAPersonAttribute * msgSender;
-@property(assign,copy) NSNumber * outgoing;
-@property(assign,copy) NSArray * recipients;
-@property(assign,copy) NSString * sender;
-@property(assign,copy) NSString * subject;
-@property(assign,copy) NSString * timezoneId;
+@property (nonatomic, copy) NSURL *attachment;
+@property (nonatomic, copy) NSString *chatIdentifier;
+@property (nonatomic, copy) NSDate *dateSent;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSArray *msgRecipients;
+@property (nonatomic, retain) SAPersonAttribute *msgSender;
+@property (nonatomic, copy) NSNumber *outgoing;
+@property (nonatomic, copy) NSArray *recipients;
+@property (nonatomic, copy) NSString *sender;
+@property (nonatomic, copy) NSString *subject;
+@property (nonatomic, copy) NSString *timezoneId;
 
 + (id)sms;
 + (id)smsWithDictionary:(id)arg1 context:(id)arg2;

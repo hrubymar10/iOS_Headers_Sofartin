@@ -57,23 +57,23 @@
     unsigned int _textureTarget;
 }
 
-@property(assign,readonly) unsigned int* alphaMap;
-@property(assign,readonly) struct CGSize { double x1; double x2; } alphaMapSize;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } cropOffset;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } cropScale;
-@property(assign,readwrite) bool disableAlpha;
-@property(assign,readwrite) long long filteringMode;
-@property(assign,readonly) bool hasAlpha;
-@property(assign,readonly) NSString * imageNameOrPath;
-@property(assign,readonly) bool isRepeatable;
-@property(assign,readwrite) bool isRotated;
-@property(assign,copy) NSString * originalAtlasName;
-@property(assign,readonly) struct CGSize { double x1; double x2; } pixelSize;
-@property(assign,copy) NSString * subTextureName;
-@property(assign,readwrite) unsigned int textureTarget;
-@property(assign,readonly) bool useAlpha;
-@property(assign,readwrite) bool usesMipmaps;
-@property(assign,readwrite) int wrapMode;
+@property (nonatomic, readonly) unsigned int*alphaMap;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } alphaMapSize;
+@property (nonatomic) struct CGPoint { double x1; double x2; } cropOffset;
+@property (nonatomic) struct CGPoint { double x1; double x2; } cropScale;
+@property (nonatomic) bool disableAlpha;
+@property (nonatomic) long long filteringMode;
+@property (nonatomic, readonly) bool hasAlpha;
+@property (nonatomic, readonly) NSString *imageNameOrPath;
+@property (nonatomic, readonly) bool isRepeatable;
+@property (nonatomic) bool isRotated;
+@property (nonatomic, copy) NSString *originalAtlasName;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } pixelSize;
+@property (nonatomic, copy) NSString *subTextureName;
+@property (nonatomic) unsigned int textureTarget;
+@property (nonatomic, readonly) bool useAlpha;
+@property (nonatomic) bool usesMipmaps;
+@property (nonatomic) int wrapMode;
 
 + (void)_addTextureToPreloadlist:(id)arg1;
 + (id)_textureByTransferingData:(char *)arg1 size:(struct CGSize { double x1; double x2; })arg2;

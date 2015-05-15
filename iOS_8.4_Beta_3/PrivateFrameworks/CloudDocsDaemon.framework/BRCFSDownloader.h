@@ -7,12 +7,12 @@
     bool _initialKickDone;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) BRCDeadlineScheduler * downloadsDeadlineScheduler;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) BRCDeadlineScheduler *downloadsDeadlineScheduler;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCancelled;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_cancelThrottles:(id)arg1 state:(int)arg2;

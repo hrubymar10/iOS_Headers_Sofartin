@@ -24,7 +24,7 @@
     UILabel *_totalLabel;
 }
 
-@property(assign,readonly) UIButton * termsButton;
+@property (nonatomic, readonly) UIButton *termsButton;
 
 - (void).cxx_destruct;
 - (id)_newBoldLabelWithSize:(double)arg1 white:(double)arg2;

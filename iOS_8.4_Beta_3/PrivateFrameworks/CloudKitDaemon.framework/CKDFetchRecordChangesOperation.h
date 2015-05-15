@@ -18,19 +18,19 @@
     long long _status;
 }
 
-@property(assign,readwrite) long long changeTypes;
-@property(assign,retain) CKServerChangeToken * clientChangeToken;
-@property(assign,retain) NSArray * desiredKeys;
-@property(assign,retain) CKServerChangeToken * previousServerChangeToken;
-@property(assign,copy) id recordChangedBlock;
-@property(assign,retain) CKRecordZoneID * recordZoneID;
-@property(assign,readonly) NSData * resultClientChangeToken;
-@property(assign,retain) NSData * resultClientChangeTokenData;
-@property(assign,retain) CKServerChangeToken * resultServerChangeToken;
-@property(assign,readwrite) unsigned long long resultsLimit;
-@property(assign,copy) id shareChangedBlock;
-@property(assign,readwrite) bool shouldFetchAssetContents;
-@property(assign,readwrite) long long status;
+@property (nonatomic) long long changeTypes;
+@property (nonatomic, retain) CKServerChangeToken *clientChangeToken;
+@property (nonatomic, retain) NSArray *desiredKeys;
+@property (nonatomic, retain) CKServerChangeToken *previousServerChangeToken;
+@property (nonatomic, copy) id recordChangedBlock;
+@property (nonatomic, retain) CKRecordZoneID *recordZoneID;
+@property (nonatomic, readonly) NSData *resultClientChangeToken;
+@property (nonatomic, retain) NSData *resultClientChangeTokenData;
+@property (nonatomic, retain) CKServerChangeToken *resultServerChangeToken;
+@property (nonatomic) unsigned long long resultsLimit;
+@property (nonatomic, copy) id shareChangedBlock;
+@property (nonatomic) bool shouldFetchAssetContents;
+@property (nonatomic) long long status;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

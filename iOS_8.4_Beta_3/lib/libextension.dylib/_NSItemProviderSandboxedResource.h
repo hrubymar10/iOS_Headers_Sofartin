@@ -8,9 +8,9 @@
     NSData *_sandboxExtensionToken;
 }
 
-@property(getter=isAccessingSecurityScopedResource,assign,readwrite) bool accessingSecurityScopedResource;
-@property(assign,copy) NSURL * resourceURL;
-@property(assign,copy) NSData * sandboxExtensionToken;
+@property (getter=isAccessingSecurityScopedResource, nonatomic) bool accessingSecurityScopedResource;
+@property (nonatomic, copy) NSURL *resourceURL;
+@property (nonatomic, copy) NSData *sandboxExtensionToken;
 
 + (bool)supportsSecureCoding;
 

@@ -4,7 +4,7 @@
 
 @interface PFUbiquityBaselineRecoveryOperation : PFUbiquityBaselineOperation
 
-@property(assign,readwrite) NSObject<PFUbiquityBaselineRecoveryOperationDelegate> * delegate;
+@property NSObject<PFUbiquityBaselineRecoveryOperationDelegate> *delegate;
 
 - (bool)conflictsExistForBaseline:(id)arg1;
 - (id)delegate;

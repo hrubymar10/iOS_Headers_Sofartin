@@ -9,10 +9,10 @@
     NSString *_sectionID;
 }
 
-@property(assign,copy) NSString * dismissalID;
-@property(assign,retain) BBDismissalItem * dismissalItem;
-@property(assign,readwrite) unsigned long long feeds;
-@property(assign,copy) NSString * sectionID;
+@property (nonatomic, copy) NSString *dismissalID;
+@property (nonatomic, retain) BBDismissalItem *dismissalItem;
+@property (nonatomic) unsigned long long feeds;
+@property (nonatomic, copy) NSString *sectionID;
 
 - (void)dealloc;
 - (id)description;

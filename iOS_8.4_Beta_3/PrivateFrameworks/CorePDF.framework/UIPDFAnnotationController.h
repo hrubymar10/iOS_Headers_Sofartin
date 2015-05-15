@@ -27,18 +27,18 @@
     bool makeUnderlineAnnotation;
 }
 
-@property(assign,readwrite) bool allowEditing;
-@property(assign,retain) UIPDFAnnotation * currentAnnotation;
-@property(assign,readwrite) UIColor * currentColor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <NSObject><UIPDFAnnotationControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) CALayer * drawingSurface;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool makeUnderlineAnnotation;
-@property(assign,readonly) UIPDFPageView * pageView;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool tracking;
+@property (nonatomic) bool allowEditing;
+@property (nonatomic, retain) UIPDFAnnotation *currentAnnotation;
+@property (nonatomic) UIColor *currentColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <NSObject><UIPDFAnnotationControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) CALayer *drawingSurface;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool makeUnderlineAnnotation;
+@property (nonatomic, readonly) UIPDFPageView *pageView;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool tracking;
 
 + (id)newAnnotation:(struct CGPDFDictionary { }*)arg1 type:(const char *)arg2;
 + (struct CGImage { }*)newMaskImage:(struct CGPDFPage { }*)arg1 size:(struct CGSize { double x1; double x2; })arg2;

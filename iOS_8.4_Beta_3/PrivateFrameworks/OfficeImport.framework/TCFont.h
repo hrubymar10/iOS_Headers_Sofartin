@@ -15,10 +15,10 @@
     } _styling;
 }
 
-@property(assign,readwrite) TCFontFamily * family;
-@property(assign,readonly) NSDictionary * namesByLanguage;
-@property(assign,readonly) NSString * psName;
-@property(assign,readonly) struct TCFontStyling { int x1; unsigned int x2; BOOL x3; bool x4; int x5; } styling;
+@property (nonatomic) TCFontFamily *family;
+@property (nonatomic, readonly) NSDictionary *namesByLanguage;
+@property (nonatomic, readonly) NSString *psName;
+@property (nonatomic, readonly) struct TCFontStyling { int x1; unsigned int x2; BOOL x3; bool x4; int x5; } styling;
 
 - (id).cxx_construct;
 - (void)dealloc;

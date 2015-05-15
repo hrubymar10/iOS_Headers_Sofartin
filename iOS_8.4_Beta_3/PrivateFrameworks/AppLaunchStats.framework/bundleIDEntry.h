@@ -8,9 +8,9 @@
     id handler;
 }
 
-@property(assign,copy) id handler;
-@property(assign,retain) NSMutableArray * netres;
-@property(assign,readwrite) long long seq;
+@property (copy) id handler;
+@property (retain) NSMutableArray *netres;
+@property long long seq;
 
 - (void).cxx_destruct;
 - (id)handler;

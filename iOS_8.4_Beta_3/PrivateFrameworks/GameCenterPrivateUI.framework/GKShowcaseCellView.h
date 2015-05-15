@@ -8,9 +8,9 @@
     GKHairlineView *_underlineView;
 }
 
-@property(assign,retain) UICollectionViewCell * cell;
-@property(assign,readwrite) SEL touchedShowcaseCellAction;
-@property(assign,retain) GKHairlineView * underlineView;
+@property (nonatomic, retain) UICollectionViewCell *cell;
+@property (nonatomic) SEL touchedShowcaseCellAction;
+@property (nonatomic, retain) GKHairlineView *underlineView;
 
 + (bool)requiresConstraintBasedLayout;
 

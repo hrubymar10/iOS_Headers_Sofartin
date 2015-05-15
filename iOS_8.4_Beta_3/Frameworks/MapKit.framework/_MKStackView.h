@@ -7,7 +7,7 @@
     NSArray *_stackedSubviews;
 }
 
-@property(assign,copy) NSArray * stackedSubviews;
+@property (nonatomic, copy) NSArray *stackedSubviews;
 
 - (void).cxx_destruct;
 - (void)setStackedSubviews:(id)arg1;

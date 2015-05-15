@@ -4,10 +4,10 @@
 
 @interface SSMetricsMediaEvent : SSMetricsBaseEvent
 
-@property(assign,retain) NSNumber * itemIdentifier;
-@property(assign,retain) NSString * locationDescription;
-@property(assign,retain) NSString * mediaEventType;
-@property(assign,retain) NSString * mediaURL;
+@property (nonatomic, retain) NSNumber *itemIdentifier;
+@property (nonatomic, retain) NSString *locationDescription;
+@property (nonatomic, retain) NSString *mediaEventType;
+@property (nonatomic, retain) NSString *mediaURL;
 
 - (id)init;
 - (id)itemIdentifier;

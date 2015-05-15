@@ -16,14 +16,14 @@
     UIWindow *window;
 }
 
-@property(assign,readonly) unsigned char _pathIdentity;
-@property(assign,readonly) unsigned char _pathIndex;
-@property(assign,readwrite) float _pathMajorRadius;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } locationInWindow;
-@property(assign,readwrite) long long phase;
-@property(assign,readwrite) unsigned long long tapCount;
-@property(assign,readwrite) double timestamp;
-@property(assign,retain) UIWindow * window;
+@property (nonatomic, readonly) unsigned char _pathIdentity;
+@property (nonatomic, readonly) unsigned char _pathIndex;
+@property (nonatomic) float _pathMajorRadius;
+@property (nonatomic) struct CGPoint { double x1; double x2; } locationInWindow;
+@property (nonatomic) long long phase;
+@property (nonatomic) unsigned long long tapCount;
+@property (nonatomic) double timestamp;
+@property (nonatomic, retain) UIWindow *window;
 
 + (id)syntheticTouchWithPoint:(struct CGPoint { double x1; double x2; })arg1 timestamp:(double)arg2 window:(id)arg3;
 

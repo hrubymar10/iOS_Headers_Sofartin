@@ -6,7 +6,7 @@
     PASampleFrame *_sampleFrame;
 }
 
-@property(assign,readonly) PASampleFrame * sampleFrame;
+@property (readonly) PASampleFrame *sampleFrame;
 
 - (void)dealloc;
 - (id)debugDescription;

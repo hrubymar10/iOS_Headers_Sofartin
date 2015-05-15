@@ -7,8 +7,8 @@
     NSURL *promiseURL;
 }
 
-@property(assign,copy) NSURL * logicalURL;
-@property(assign,copy) NSURL * promiseURL;
+@property (copy) NSURL *logicalURL;
+@property (copy) NSURL *promiseURL;
 
 - (void)dealloc;
 - (id)logicalURL;

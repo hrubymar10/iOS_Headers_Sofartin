@@ -12,13 +12,13 @@
     unsigned char _version;
 }
 
-@property(assign,readwrite) unsigned short checksum;
-@property(assign,retain) NSData * data;
-@property(assign,readwrite) unsigned char packetType;
-@property(assign,readwrite) unsigned int sequenceNumber;
-@property(assign,readwrite) unsigned int totalLength;
-@property(assign,readwrite) bool valid;
-@property(assign,readwrite) unsigned char version;
+@property (nonatomic) unsigned short checksum;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic) unsigned char packetType;
+@property (nonatomic) unsigned int sequenceNumber;
+@property (nonatomic) unsigned int totalLength;
+@property (nonatomic) bool valid;
+@property (nonatomic) unsigned char version;
 
 - (unsigned short)checksum;
 - (id)data;

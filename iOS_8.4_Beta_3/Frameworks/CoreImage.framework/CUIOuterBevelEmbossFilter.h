@@ -12,13 +12,13 @@
     NSNumber *inputSoften;
 }
 
-@property(assign,retain) NSNumber * inputAngle;
-@property(assign,retain) CIColor * inputHighlightColor;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputRadius;
-@property(assign,retain) CIColor * inputShadowColor;
-@property(assign,retain) NSNumber * inputSize;
-@property(assign,retain) NSNumber * inputSoften;
+@property (nonatomic, retain) NSNumber *inputAngle;
+@property (nonatomic, retain) CIColor *inputHighlightColor;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputRadius;
+@property (nonatomic, retain) CIColor *inputShadowColor;
+@property (nonatomic, retain) NSNumber *inputSize;
+@property (nonatomic, retain) NSNumber *inputSoften;
 
 + (id)customAttributes;
 

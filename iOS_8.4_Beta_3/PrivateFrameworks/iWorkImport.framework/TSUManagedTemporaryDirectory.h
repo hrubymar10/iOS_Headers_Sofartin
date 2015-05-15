@@ -6,7 +6,7 @@
     NSURL *_URL;
 }
 
-@property(assign,readonly) NSURL * URL;
+@property (nonatomic, readonly) NSURL *URL;
 
 - (void).cxx_destruct;
 - (id)URL;

@@ -9,8 +9,8 @@
     UIKeyboardTaskExecutionContext *_parentExecutionContext;
 }
 
-@property(assign,readonly) UIKeyboardTaskQueue * executionQueue;
-@property(assign,retain) id info;
+@property (nonatomic, readonly) UIKeyboardTaskQueue *executionQueue;
+@property (nonatomic, retain) id info;
 
 - (id)childWithContinuation:(id)arg1;
 - (void)dealloc;

@@ -9,10 +9,10 @@
     CalLocation *_start;
 }
 
-@property(assign,readwrite) double duration;
-@property(assign,retain) CalLocation * end;
-@property(assign,copy) NSString * route;
-@property(assign,retain) CalLocation * start;
+@property double duration;
+@property (retain) CalLocation *end;
+@property (copy) NSString *route;
+@property (retain) CalLocation *start;
 
 + (bool)supportsSecureCoding;
 

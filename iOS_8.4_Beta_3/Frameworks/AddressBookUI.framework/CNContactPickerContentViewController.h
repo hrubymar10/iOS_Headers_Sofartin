@@ -12,18 +12,18 @@
     NSPredicate *_predicateForSelectionOfProperty;
 }
 
-@property(assign,readwrite) void* addressBook;
-@property(assign,readwrite) bool clientWantsPersons;
-@property(assign,readwrite) bool clientWantsProperties;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CNContactPickerContentDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSArray * displayedKeys;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSPredicate * predicateForEnablingContact;
-@property(assign,copy) NSPredicate * predicateForSelectionOfContact;
-@property(assign,copy) NSPredicate * predicateForSelectionOfProperty;
-@property(assign,readonly) Class superclass;
+@property void*addressBook;
+@property bool clientWantsPersons;
+@property bool clientWantsProperties;
+@property (readonly, copy) NSString *debugDescription;
+@property <CNContactPickerContentDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSArray *displayedKeys;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSPredicate *predicateForEnablingContact;
+@property (nonatomic, copy) NSPredicate *predicateForSelectionOfContact;
+@property (nonatomic, copy) NSPredicate *predicateForSelectionOfProperty;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)clientWantsPersons;

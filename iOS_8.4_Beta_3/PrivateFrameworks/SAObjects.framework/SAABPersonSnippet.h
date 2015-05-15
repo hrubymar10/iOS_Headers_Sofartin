@@ -4,8 +4,8 @@
 
 @interface SAABPersonSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * displayProperties;
-@property(assign,copy) NSArray * persons;
+@property (nonatomic, copy) NSArray *displayProperties;
+@property (nonatomic, copy) NSArray *persons;
 
 + (id)personSnippet;
 + (id)personSnippetWithDictionary:(id)arg1 context:(id)arg2;

@@ -20,7 +20,7 @@
     unsigned int _useCachedPlaybackState;
 }
 
-@property(assign,readwrite) bool inBlockHandlingPlaybackStateChangedMessageFromServer;
+@property bool inBlockHandlingPlaybackStateChangedMessageFromServer;
 
 - (void).cxx_destruct;
 - (id)_bundleIdentifier;

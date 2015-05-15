@@ -7,9 +7,9 @@
     bool _forceNoCache;
 }
 
-@property(assign,retain) id appSpecificDataItemResult;
-@property(assign,readwrite) <CoreDAVTaskDelegate> * delegate;
-@property(assign,readwrite) bool forceNoCache;
+@property (nonatomic, retain) id appSpecificDataItemResult;
+@property (nonatomic) <CoreDAVTaskDelegate> *delegate;
+@property (nonatomic) bool forceNoCache;
 
 - (id)appSpecificDataItemResult;
 - (unsigned long long)cachePolicy;

@@ -8,12 +8,12 @@
     NSString *_threadLocalStorageKey;
 }
 
-@property(assign,readonly) bool behavesAsMainQueue;
-@property(assign,readonly) bool behavesWithoutErrorReporting;
-@property(assign,retain) NSObject<OS_dispatch_queue> * concurrentQueue;
-@property(assign,copy) NSString * label;
-@property(assign,readwrite) unsigned long long specialBehaviors;
-@property(assign,copy) NSString * threadLocalStorageKey;
+@property (nonatomic, readonly) bool behavesAsMainQueue;
+@property (nonatomic, readonly) bool behavesWithoutErrorReporting;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *concurrentQueue;
+@property (nonatomic, readonly, copy) NSString *label;
+@property (nonatomic) unsigned long long specialBehaviors;
+@property (nonatomic, copy) NSString *threadLocalStorageKey;
 
 + (id)backgroundAccessQueue;
 + (id)mainAccessQueue;

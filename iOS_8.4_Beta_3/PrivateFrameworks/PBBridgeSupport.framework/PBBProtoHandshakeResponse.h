@@ -8,9 +8,9 @@
     unsigned int _version;
 }
 
-@property(assign,readwrite) unsigned int position;
-@property(assign,readwrite) unsigned int state;
-@property(assign,readwrite) unsigned int version;
+@property (nonatomic) unsigned int position;
+@property (nonatomic) unsigned int state;
+@property (nonatomic) unsigned int version;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

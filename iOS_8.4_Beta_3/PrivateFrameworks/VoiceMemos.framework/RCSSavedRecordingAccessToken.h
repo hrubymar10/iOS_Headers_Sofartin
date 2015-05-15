@@ -9,10 +9,10 @@
     NSUUID *_identifier;
 }
 
-@property(assign,copy) NSString * accessName;
-@property(assign,readonly) unsigned long long accessType;
-@property(assign,readonly) NSURL * compositionAVURL;
-@property(assign,copy) NSUUID * identifier;
+@property (nonatomic, readonly, copy) NSString *accessName;
+@property (nonatomic, readonly) unsigned long long accessType;
+@property (nonatomic, readonly) NSURL *compositionAVURL;
+@property (nonatomic, readonly, copy) NSUUID *identifier;
 
 + (bool)supportsSecureCoding;
 + (id)tokenWithName:(id)arg1 accessType:(unsigned long long)arg2 compositionAVURL:(id)arg3;

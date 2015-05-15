@@ -4,7 +4,7 @@
 
 @interface SAAlarmSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * alarms;
+@property (nonatomic, copy) NSArray *alarms;
 
 + (id)snippet;
 + (id)snippetWithDictionary:(id)arg1 context:(id)arg2;

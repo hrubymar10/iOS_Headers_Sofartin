@@ -10,10 +10,10 @@
     NSString *_messageId;
 }
 
-@property(assign,readwrite) unsigned int deletionState;
-@property(assign,readwrite) bool hasDeletionState;
-@property(assign,readonly) bool hasMessageId;
-@property(assign,retain) NSString * messageId;
+@property (nonatomic) unsigned int deletionState;
+@property (nonatomic) bool hasDeletionState;
+@property (nonatomic, readonly) bool hasMessageId;
+@property (nonatomic, retain) NSString *messageId;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

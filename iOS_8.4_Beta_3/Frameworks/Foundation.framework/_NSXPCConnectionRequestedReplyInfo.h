@@ -7,8 +7,8 @@
     NSProgress *_progress;
 }
 
-@property(assign,copy) id cleanupBlock;
-@property(assign,retain) NSProgress * progress;
+@property (copy) id cleanupBlock;
+@property (retain) NSProgress *progress;
 
 - (id)cleanupBlock;
 - (void)dealloc;

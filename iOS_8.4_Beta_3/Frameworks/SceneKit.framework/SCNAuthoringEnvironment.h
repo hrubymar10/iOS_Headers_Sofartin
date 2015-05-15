@@ -269,13 +269,13 @@
     } _textInfo;
 }
 
-@property(assign,readonly) <SCNSceneRenderer> * sceneRenderer;
-@property(assign,readwrite) bool showsAllBoundingBoxes;
-@property(assign,readwrite) bool showsAllBoundingSpheres;
-@property(assign,readwrite) bool showsAttributesOfAllCameras;
-@property(assign,readwrite) bool showsAttributesOfAllLights;
-@property(assign,readwrite) bool showsLighting;
-@property(assign,readwrite) bool showsPhysics;
+@property (readonly) <SCNSceneRenderer> *sceneRenderer;
+@property (nonatomic) bool showsAllBoundingBoxes;
+@property (nonatomic) bool showsAllBoundingSpheres;
+@property (nonatomic) bool showsAttributesOfAllCameras;
+@property (nonatomic) bool showsAttributesOfAllLights;
+@property (nonatomic) bool showsLighting;
+@property (nonatomic) bool showsPhysics;
 
 + (id)authoringEnvironmentForSceneRenderer:(id)arg1;
 

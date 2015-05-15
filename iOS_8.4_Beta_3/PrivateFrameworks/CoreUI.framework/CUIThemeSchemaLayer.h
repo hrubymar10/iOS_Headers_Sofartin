@@ -8,9 +8,9 @@
     NSArray *_renditions;
 }
 
-@property(assign,readwrite) unsigned long long index;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSArray * renditions;
+@property (nonatomic) unsigned long long index;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSArray *renditions;
 
 + (id)layerWithRenditions:(id)arg1 name:(id)arg2 index:(unsigned long long)arg3;
 

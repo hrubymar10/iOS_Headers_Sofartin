@@ -6,7 +6,7 @@
     id _target;
 }
 
-@property(assign,retain) id target;
+@property (retain) id target;
 
 - (void)dealloc;
 - (void)forwardInvocation:(id)arg1;

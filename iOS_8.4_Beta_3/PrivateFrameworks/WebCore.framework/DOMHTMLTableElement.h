@@ -4,20 +4,20 @@
 
 @interface DOMHTMLTableElement : DOMHTMLElement
 
-@property(assign,copy) NSString * align;
-@property(assign,copy) NSString * bgColor;
-@property(assign,copy) NSString * border;
-@property(assign,retain) DOMHTMLTableCaptionElement * caption;
-@property(assign,copy) NSString * cellPadding;
-@property(assign,copy) NSString * cellSpacing;
-@property(assign,copy) NSString * frameBorders;
-@property(assign,readonly) DOMHTMLCollection * rows;
-@property(assign,copy) NSString * rules;
-@property(assign,copy) NSString * summary;
-@property(assign,readonly) DOMHTMLCollection * tBodies;
-@property(assign,retain) DOMHTMLTableSectionElement * tFoot;
-@property(assign,retain) DOMHTMLTableSectionElement * tHead;
-@property(assign,copy) NSString * width;
+@property (copy) NSString *align;
+@property (copy) NSString *bgColor;
+@property (copy) NSString *border;
+@property (retain) DOMHTMLTableCaptionElement *caption;
+@property (copy) NSString *cellPadding;
+@property (copy) NSString *cellSpacing;
+@property (copy) NSString *frameBorders;
+@property (readonly) DOMHTMLCollection *rows;
+@property (copy) NSString *rules;
+@property (copy) NSString *summary;
+@property (readonly) DOMHTMLCollection *tBodies;
+@property (retain) DOMHTMLTableSectionElement *tFoot;
+@property (retain) DOMHTMLTableSectionElement *tHead;
+@property (copy) NSString *width;
 
 - (id)align;
 - (id)bgColor;

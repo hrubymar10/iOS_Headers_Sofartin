@@ -7,8 +7,8 @@
     int _overwrite;
 }
 
-@property(assign,retain) NSURL * destinationURL;
-@property(assign,readwrite) int overwrite;
+@property (nonatomic, retain) NSURL *destinationURL;
+@property (nonatomic) int overwrite;
 
 + (id)stringFromOverwriteValue:(int)arg1;
 

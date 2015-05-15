@@ -24,18 +24,18 @@
     NSString *mThumbnailTextForTitlePlaceholder;
 }
 
-@property(assign,copy) NSArray * bodyListStyles;
-@property(assign,copy) NSArray * bodyParagraphStyles;
-@property(assign,readonly) KNClassicStylesheetRecord * classicStylesheetRecord;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } objectRect;
-@property(assign,readwrite) bool slideObjectsLayerWithMaster;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * thumbnailTextForBodyPlaceholder;
-@property(assign,retain) NSString * thumbnailTextForTitlePlaceholder;
+@property (nonatomic, copy) NSArray *bodyListStyles;
+@property (nonatomic, copy) NSArray *bodyParagraphStyles;
+@property (nonatomic, readonly) KNClassicStylesheetRecord *classicStylesheetRecord;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } objectRect;
+@property (nonatomic) bool slideObjectsLayerWithMaster;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSString *thumbnailTextForBodyPlaceholder;
+@property (nonatomic, retain) NSString *thumbnailTextForTitlePlaceholder;
 
 + (void)initialize;
 + (id)masterGuideColor;

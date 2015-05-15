@@ -15,9 +15,9 @@
     unsigned long long _propertyHint;
 }
 
-@property(assign,readonly) NSArray * oids;
-@property(assign,readonly) NSSet * oidsSet;
-@property(assign,readonly) PHPhotoLibrary * photoLibrary;
+@property (readonly) NSArray *oids;
+@property (readonly) NSSet *oidsSet;
+@property (readonly) PHPhotoLibrary *photoLibrary;
 
 + (bool)accessInstanceVariablesDirectly;
 

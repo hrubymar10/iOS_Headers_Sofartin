@@ -6,19 +6,19 @@
     NSMutableDictionary *_dictionary;
 }
 
-@property(assign,readonly) NSDictionary * contentRatingDictionary;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isExplicitContent,assign,readonly) bool explicitContent;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long rank;
-@property(assign,copy) NSString * ratingDescription;
-@property(assign,copy) NSString * ratingLabel;
-@property(assign,readwrite) long long ratingSystem;
-@property(assign,readonly) SSItemArtworkImage * ratingSystemLogo;
-@property(getter=isRestricted,assign,readonly) bool restricted;
-@property(assign,readwrite) bool shouldHideWhenRestricted;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSDictionary *contentRatingDictionary;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isExplicitContent, nonatomic, readonly) bool explicitContent;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long rank;
+@property (nonatomic, copy) NSString *ratingDescription;
+@property (nonatomic, copy) NSString *ratingLabel;
+@property (nonatomic) long long ratingSystem;
+@property (nonatomic, readonly) SSItemArtworkImage *ratingSystemLogo;
+@property (getter=isRestricted, nonatomic, readonly) bool restricted;
+@property (nonatomic) bool shouldHideWhenRestricted;
+@property (readonly) Class superclass;
 
 + (long long)ratingSystemFromString:(id)arg1;
 + (id)stringForRatingSystem:(long long)arg1;

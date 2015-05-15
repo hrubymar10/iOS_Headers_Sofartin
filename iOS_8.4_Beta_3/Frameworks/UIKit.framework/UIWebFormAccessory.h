@@ -15,12 +15,12 @@
     <UIWebFormAccessoryDelegate> *delegate;
 }
 
-@property(assign,retain) UIBarButtonItem * _autofill;
-@property(assign,retain) UIBarButtonItem * _clearButton;
-@property(assign,retain) UISegmentedControl * _tab;
-@property(assign,readwrite) <UIWebFormAccessoryDelegate> * delegate;
-@property(getter=isNextEnabled,assign,readwrite) bool nextEnabled;
-@property(getter=isPreviousEnabled,assign,readwrite) bool previousEnabled;
+@property (nonatomic, retain) UIBarButtonItem *_autofill;
+@property (nonatomic, retain) UIBarButtonItem *_clearButton;
+@property (nonatomic, retain) UISegmentedControl *_tab;
+@property (nonatomic) <UIWebFormAccessoryDelegate> *delegate;
+@property (getter=isNextEnabled, nonatomic) bool nextEnabled;
+@property (getter=isPreviousEnabled, nonatomic) bool previousEnabled;
 
 + (id)toolbarWithItems:(id)arg1;
 

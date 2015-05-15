@@ -4,14 +4,14 @@
 
 @interface RadioMutableStationTreeNode : RadioStationTreeNode
 
-@property(assign,copy) RadioArtworkCollection * artworkCollection;
-@property(assign,readwrite) long long childNodeLoadingStyle;
-@property(assign,copy) NSArray * childNodes;
-@property(assign,readwrite) long long displayStyle;
-@property(assign,readwrite) bool hasAdditionalChildNodes;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) long long nodeID;
-@property(assign,copy) NSDictionary * stationDictionary;
+@property (nonatomic, copy) RadioArtworkCollection *artworkCollection;
+@property (nonatomic) long long childNodeLoadingStyle;
+@property (nonatomic, copy) NSArray *childNodes;
+@property (nonatomic) long long displayStyle;
+@property (nonatomic) bool hasAdditionalChildNodes;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) long long nodeID;
+@property (nonatomic, copy) NSDictionary *stationDictionary;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setArtworkCollection:(id)arg1;

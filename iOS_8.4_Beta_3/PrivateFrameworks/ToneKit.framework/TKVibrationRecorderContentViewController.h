@@ -20,25 +20,25 @@
     bool _waitingForEndOfCurrentVibrationComponent;
 }
 
-@property(setter=_setCancelButton:,assign,retain) UIBarButtonItem * _cancelButton;
-@property(setter=_setCurrentVibrationComponentDidStartTimeStamp:,assign,readwrite) double _currentVibrationComponentDidStartTimeStamp;
-@property(setter=_setCurrentVibrationProgressDidStartTimestamp:,assign,readwrite) double _currentVibrationProgressDidStartTimestamp;
-@property(setter=_setIndefiniteVibrationPattern:,assign,retain) NSDictionary * _indefiniteVibrationPattern;
-@property(setter=_setMode:,assign,readwrite) int _mode;
-@property(setter=_setRecordedVibrationPattern:,assign,retain) TLVibrationPattern * _recordedVibrationPattern;
-@property(setter=_setSaveButton:,assign,retain) UIBarButtonItem * _saveButton;
-@property(setter=_setVibrationNameAlertController:,assign,retain) UIAlertController * _vibrationNameAlertController;
-@property(setter=_setVibrationNameAlertSaveAction:,assign,retain) UIAlertAction * _vibrationNameAlertSaveAction;
-@property(setter=_setVibrationNameAlertTextField:,assign,retain) UITextField * _vibrationNameAlertTextField;
-@property(setter=_setVibrationRecorderView:,assign,retain) TKVibrationRecorderView * _vibrationRecorderView;
-@property(setter=_setVibratorController:,assign,retain) TKVibratorController * _vibratorController;
-@property(getter=_isWaitingForEndOfCurrentVibrationComponent,setter=_setWaitingForEndOfCurrentVibrationComponent:,assign,readwrite) bool _waitingForEndOfCurrentVibrationComponent;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <TKVibrationRecorderViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) TKVibrationRecorderViewController * parentVibrationRecorderViewController;
-@property(assign,readonly) Class superclass;
+@property (setter=_setCancelButton:, nonatomic, retain) UIBarButtonItem *_cancelButton;
+@property (setter=_setCurrentVibrationComponentDidStartTimeStamp:, nonatomic) double _currentVibrationComponentDidStartTimeStamp;
+@property (setter=_setCurrentVibrationProgressDidStartTimestamp:, nonatomic) double _currentVibrationProgressDidStartTimestamp;
+@property (setter=_setIndefiniteVibrationPattern:, nonatomic, retain) NSDictionary *_indefiniteVibrationPattern;
+@property (setter=_setMode:, nonatomic) int _mode;
+@property (setter=_setRecordedVibrationPattern:, nonatomic, retain) TLVibrationPattern *_recordedVibrationPattern;
+@property (setter=_setSaveButton:, nonatomic, retain) UIBarButtonItem *_saveButton;
+@property (setter=_setVibrationNameAlertController:, nonatomic, retain) UIAlertController *_vibrationNameAlertController;
+@property (setter=_setVibrationNameAlertSaveAction:, nonatomic, retain) UIAlertAction *_vibrationNameAlertSaveAction;
+@property (setter=_setVibrationNameAlertTextField:, nonatomic, retain) UITextField *_vibrationNameAlertTextField;
+@property (setter=_setVibrationRecorderView:, nonatomic, retain) TKVibrationRecorderView *_vibrationRecorderView;
+@property (setter=_setVibratorController:, nonatomic, retain) TKVibratorController *_vibratorController;
+@property (getter=_isWaitingForEndOfCurrentVibrationComponent, setter=_setWaitingForEndOfCurrentVibrationComponent:, nonatomic) bool _waitingForEndOfCurrentVibrationComponent;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <TKVibrationRecorderViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) TKVibrationRecorderViewController *parentVibrationRecorderViewController;
+@property (readonly) Class superclass;
 
 - (void)_accessibilityDidEnterRecordingMode;
 - (void)_accessibilityDidEnterReplayMode;

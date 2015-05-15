@@ -59,21 +59,21 @@
     bool _useKeyboardWhenEditing;
 }
 
-@property(assign,retain) TSWPSearchReference * activeSearchReference;
-@property(assign,readonly) NSArray * columns;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } dragRange;
-@property(assign,readwrite) TSWPSelection * dropSelection;
-@property(assign,readwrite) bool findIsShowing;
-@property(assign,readonly) bool isBeingEdited;
-@property(assign,readonly) TSWPLayout * layout;
-@property(assign,retain) NSArray * searchReferences;
-@property(assign,readonly) TSWPSelection * selection;
-@property(assign,readonly) TSWPStorage * storage;
-@property(getter=isSelectionHighlightSuppressed,assign,readwrite) bool suppressSelectionHighlight;
-@property(assign,readonly) TSWPEditingController * textEditor;
-@property(assign,readonly) bool textIsVertical;
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } transformToConvertNaturalToScaledRoot;
-@property(assign,readwrite) bool useKeyboardWhenEditing;
+@property (nonatomic, retain) TSWPSearchReference *activeSearchReference;
+@property (nonatomic, readonly) NSArray *columns;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } dragRange;
+@property (nonatomic) TSWPSelection *dropSelection;
+@property (nonatomic) bool findIsShowing;
+@property (nonatomic, readonly) bool isBeingEdited;
+@property (nonatomic, readonly) TSWPLayout *layout;
+@property (nonatomic, retain) NSArray *searchReferences;
+@property (nonatomic, readonly) TSWPSelection *selection;
+@property (nonatomic, readonly) TSWPStorage *storage;
+@property (getter=isSelectionHighlightSuppressed, nonatomic) bool suppressSelectionHighlight;
+@property (nonatomic, readonly) TSWPEditingController *textEditor;
+@property (nonatomic, readonly) bool textIsVertical;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } transformToConvertNaturalToScaledRoot;
+@property (nonatomic) bool useKeyboardWhenEditing;
 
 - (id).cxx_construct;
 - (id)activeSearchReference;

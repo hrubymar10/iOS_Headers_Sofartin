@@ -4,7 +4,7 @@
 
 @interface SASettingSetNumber : SASettingSetValue
 
-@property(assign,readwrite) bool increment;
+@property (nonatomic) bool increment;
 
 + (id)setNumber;
 + (id)setNumberWithDictionary:(id)arg1 context:(id)arg2;

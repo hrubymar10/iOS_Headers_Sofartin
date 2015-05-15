@@ -9,11 +9,11 @@
     NSDictionary *_samplePredicates;
 }
 
-@property(getter=_behaviorVersion,setter=_setBehaviorVersion:,assign,readwrite) long long behaviorVersion;
-@property(assign,readonly) id completionHandler;
-@property(assign,copy) HKCorrelationType * correlationType;
-@property(assign,readonly) NSDictionary * filterDictionary;
-@property(assign,copy) NSDictionary * samplePredicates;
+@property (getter=_behaviorVersion, setter=_setBehaviorVersion:, nonatomic) long long behaviorVersion;
+@property (nonatomic, readonly) id completionHandler;
+@property (readonly, copy) HKCorrelationType *correlationType;
+@property (nonatomic, readonly) NSDictionary *filterDictionary;
+@property (readonly, copy) NSDictionary *samplePredicates;
 
 + (Class)_queryServerDataObjectClass;
 

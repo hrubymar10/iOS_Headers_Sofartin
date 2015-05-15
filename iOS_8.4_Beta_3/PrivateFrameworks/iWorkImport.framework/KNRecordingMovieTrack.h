@@ -6,7 +6,7 @@
     NSArray *mMovieSegments;
 }
 
-@property(assign,readonly) NSArray * movieSegments;
+@property (nonatomic, readonly) NSArray *movieSegments;
 
 - (void)dealloc;
 - (id)initFromUnarchiver:(id)arg1;

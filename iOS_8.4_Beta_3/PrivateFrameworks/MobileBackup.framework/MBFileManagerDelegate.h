@@ -6,11 +6,11 @@
     id _shouldCopyItemAtPathToPath;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id shouldCopyItemAtPathToPath;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id shouldCopyItemAtPathToPath;
+@property (readonly) Class superclass;
 
 - (bool)fileManager:(id)arg1 shouldCopyItemAtPath:(id)arg2 toPath:(id)arg3;
 - (void)setShouldCopyItemAtPathToPath:(id)arg1;

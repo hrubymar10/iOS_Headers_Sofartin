@@ -11,12 +11,12 @@
     long long _type;
 }
 
-@property(assign,copy) NSString * categoryDescription;
-@property(assign,copy) NSArray * items;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * stationHash;
-@property(assign,readonly) long long stationID;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly, copy) NSString *categoryDescription;
+@property (nonatomic, readonly, copy) NSArray *items;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly, copy) NSString *stationHash;
+@property (nonatomic, readonly) long long stationID;
+@property (nonatomic, readonly) long long type;
 
 - (void).cxx_destruct;
 - (id)categoryDescription;

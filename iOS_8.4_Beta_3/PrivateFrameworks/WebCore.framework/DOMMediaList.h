@@ -4,8 +4,8 @@
 
 @interface DOMMediaList : DOMObject
 
-@property(assign,readonly) unsigned int length;
-@property(assign,copy) NSString * mediaText;
+@property (readonly) unsigned int length;
+@property (copy) NSString *mediaText;
 
 - (void)appendMedium:(id)arg1;
 - (void)dealloc;

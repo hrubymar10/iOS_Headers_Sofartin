@@ -6,7 +6,7 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSString *title;
 
 + (id)_titleFont;
 + (double)preferredHeight;

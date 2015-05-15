@@ -10,11 +10,11 @@
     NSObject<OS_dispatch_queue> *_responseQueue;
 }
 
-@property(assign,retain) NSString * destination;
-@property(assign,retain) NSDictionary * response;
-@property(assign,retain) NSError * responseError;
-@property(assign,copy) id responseHandler;
-@property(assign,retain) NSObject<OS_dispatch_queue> * responseQueue;
+@property (nonatomic, retain) NSString *destination;
+@property (nonatomic, retain) NSDictionary *response;
+@property (nonatomic, retain) NSError *responseError;
+@property (nonatomic, copy) id responseHandler;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *responseQueue;
 
 - (void).cxx_destruct;
 - (id)destination;

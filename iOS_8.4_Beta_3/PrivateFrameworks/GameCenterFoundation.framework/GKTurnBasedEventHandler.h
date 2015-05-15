@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_lookForEventQueue;
 }
 
-@property(assign,readwrite) NSObject<GKTurnBasedEventHandlerDelegate> * delegate;
-@property(assign,readwrite) bool didBecomeActive;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * lookForEventQueue;
+@property (nonatomic) NSObject<GKTurnBasedEventHandlerDelegate> *delegate;
+@property (nonatomic) bool didBecomeActive;
+@property (nonatomic) NSObject<OS_dispatch_queue> *lookForEventQueue;
 
 + (id)sharedTurnBasedEventHandler;
 

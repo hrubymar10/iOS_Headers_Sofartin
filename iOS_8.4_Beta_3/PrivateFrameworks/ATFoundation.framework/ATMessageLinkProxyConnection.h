@@ -9,14 +9,14 @@
     NSMutableSet *_streamReaders;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <ATMessageLink> * messageLink;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSMutableSet * streamReaders;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <ATMessageLink> *messageLink;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSMutableSet *streamReaders;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)addRequestHandler:(id)arg1 forDataClass:(id)arg2 completion:(id)arg3;

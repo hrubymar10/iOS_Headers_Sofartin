@@ -16,20 +16,20 @@
     bool _showAttribution;
 }
 
-@property(assign,retain) _MKPlaceInfoViewControllerRouter * actionsProxy;
-@property(assign,retain) NSArray * businessInfoOrder;
-@property(assign,retain) <MKMapItemVendorDeal> * deal;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSAttributedString * infoAttributionString;
-@property(assign,readwrite) <MKPlaceInfoViewControllerDelegate> * infoDelegate;
-@property(assign,retain) UIImage * inlineMap;
-@property(assign,retain) MKMapItem * mapItem;
-@property(assign,readwrite) _MKPlaceViewController * owner;
-@property(assign,readonly) bool requiresPreferredContentSizeInStackingView;
-@property(assign,readwrite) bool showAttribution;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) _MKPlaceInfoViewControllerRouter *actionsProxy;
+@property (nonatomic, retain) NSArray *businessInfoOrder;
+@property (nonatomic, retain) <MKMapItemVendorDeal> *deal;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSAttributedString *infoAttributionString;
+@property (nonatomic) <MKPlaceInfoViewControllerDelegate> *infoDelegate;
+@property (nonatomic, retain) UIImage *inlineMap;
+@property (nonatomic, retain) MKMapItem *mapItem;
+@property (nonatomic) _MKPlaceViewController *owner;
+@property (nonatomic, readonly) bool requiresPreferredContentSizeInStackingView;
+@property (nonatomic) bool showAttribution;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_directionsFromAddress:(id)arg1;

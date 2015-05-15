@@ -7,12 +7,12 @@
     bool _fetchITunesAccountNames;
 }
 
-@property(assign,readwrite) long long authenticationPromptStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool fetchITunesAccountNames;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long authenticationPromptStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool fetchITunesAccountNames;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (long long)authenticationPromptStyle;
 - (id)copyXPCEncoding;

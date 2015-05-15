@@ -34,19 +34,19 @@
     long long _templateRenderingMode;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } alignmentRect;
-@property(assign,retain) NSObject<TDCustomAssetSource> * customAsset;
-@property(assign,copy) NSString * elementName;
-@property(assign,readwrite) bool isTemplate;
-@property(assign,copy) NSDate * modificationDate;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * partName;
-@property(assign,copy) CUIRenditionKey * renditionKey;
-@property(assign,readwrite) long long renditionType;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } resizableSliceSize;
-@property(assign,readwrite) long long resizingMode;
-@property(assign,readwrite) struct { double x1; double x2; double x3; double x4; } sliceInsets;
-@property(assign,readwrite) long long templateRenderingMode;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } alignmentRect;
+@property (retain) NSObject<TDCustomAssetSource> *customAsset;
+@property (nonatomic, copy) NSString *elementName;
+@property (nonatomic) bool isTemplate;
+@property (nonatomic, copy) NSDate *modificationDate;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *partName;
+@property (nonatomic, copy) CUIRenditionKey *renditionKey;
+@property (nonatomic) long long renditionType;
+@property (nonatomic) struct CGSize { double x1; double x2; } resizableSliceSize;
+@property (nonatomic) long long resizingMode;
+@property (nonatomic) struct { double x1; double x2; double x3; double x4; } sliceInsets;
+@property (nonatomic) long long templateRenderingMode;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })alignmentRect;
 - (id)customAsset;

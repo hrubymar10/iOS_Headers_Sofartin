@@ -25,21 +25,21 @@
     double _scrollContentInsetAdjustY;
 }
 
-@property(assign,retain) UIScrollView * backgroundView;
-@property(assign,retain) NSArray * composeHeaderFields;
-@property(assign,retain) NSLayoutConstraint * contentHeightConstraint;
-@property(assign,retain) NSLayoutConstraint * contentLeadingConstraint;
-@property(assign,retain) UIView * contentView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) GKContiguousContainerView * headerFieldContainer;
-@property(assign,readwrite) UIView * intendedFirstResponder;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } lastKnownKeyboardFrame;
-@property(assign,retain) GKTextView * messageField;
-@property(assign,retain) NSLayoutConstraint * messageFieldTrailingConstraint;
-@property(assign,readwrite) double scrollContentInsetAdjustY;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIScrollView *backgroundView;
+@property (nonatomic, retain) NSArray *composeHeaderFields;
+@property (nonatomic, retain) NSLayoutConstraint *contentHeightConstraint;
+@property (nonatomic, retain) NSLayoutConstraint *contentLeadingConstraint;
+@property (nonatomic, retain) UIView *contentView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) GKContiguousContainerView *headerFieldContainer;
+@property (nonatomic) UIView *intendedFirstResponder;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } lastKnownKeyboardFrame;
+@property (nonatomic, retain) GKTextView *messageField;
+@property (nonatomic, retain) NSLayoutConstraint *messageFieldTrailingConstraint;
+@property (nonatomic) double scrollContentInsetAdjustY;
+@property (readonly) Class superclass;
 
 - (void)_adjustContentInsetForShowingKeyboard:(bool)arg1;
 - (bool)_gkWantsCustomRightBarButtonItemInViewService;

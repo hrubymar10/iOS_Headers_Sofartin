@@ -9,10 +9,10 @@
     NSMutableSet *_updateRunningMetrics;
 }
 
-@property(assign,retain) AWDServerConnection * awdServerConn;
-@property(assign,retain) NSMutableDictionary * classDictionary;
-@property(assign,retain) NSMutableSet * currRunningMetrics;
-@property(assign,retain) NSMutableSet * updateRunningMetrics;
+@property (retain) AWDServerConnection *awdServerConn;
+@property (retain) NSMutableDictionary *classDictionary;
+@property (retain) NSMutableSet *currRunningMetrics;
+@property (retain) NSMutableSet *updateRunningMetrics;
 
 + (id)entryAggregateDefinitions;
 + (id)entryEventNoneDefinitions;

@@ -27,25 +27,25 @@
     bool _usesSessionAlbum;
 }
 
-@property(assign,readonly) UIView * _autorotationCorrectionView;
-@property(assign,readonly) <NSObject> * _cameraRollNotificationToken;
-@property(assign,readonly) UIViewController * _cameraRollViewController;
-@property(assign,readwrite) bool _didApplyConfigurationToCameraView;
-@property(getter=_isDismissingCameraRoll,setter=_setDismissingCameraRoll:,assign,readwrite) bool _dismissingCameraRoll;
-@property(getter=_isDismissingCameraRollForSuspension,setter=_setDismissingCameraRollForSuspension:,assign,readwrite) bool _dismissingCameraRollForSuspension;
-@property(setter=_setHasLockedSinceLastConfigurationChange:,assign,readwrite) bool _hasLockedSinceLastConfigurationChange;
-@property(assign,readonly) int _lockToResetToken;
-@property(assign,readonly) UIView * _rootContainerView;
-@property(assign,readonly) bool _shouldRetryDismissal;
-@property(setter=_setShouldShowCameraRoll:,assign,readwrite) bool _shouldShowCameraRoll;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PLApplicationCameraViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id previewButtonAction;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long testPictureCounter;
-@property(assign,readwrite) double testPictureRepeatDelay;
+@property (nonatomic, readonly) UIView *_autorotationCorrectionView;
+@property (nonatomic, readonly) <NSObject> *_cameraRollNotificationToken;
+@property (nonatomic, readonly) UIViewController *_cameraRollViewController;
+@property (nonatomic) bool _didApplyConfigurationToCameraView;
+@property (getter=_isDismissingCameraRoll, setter=_setDismissingCameraRoll:, nonatomic) bool _dismissingCameraRoll;
+@property (getter=_isDismissingCameraRollForSuspension, setter=_setDismissingCameraRollForSuspension:, nonatomic) bool _dismissingCameraRollForSuspension;
+@property (setter=_setHasLockedSinceLastConfigurationChange:, nonatomic) bool _hasLockedSinceLastConfigurationChange;
+@property (nonatomic, readonly) int _lockToResetToken;
+@property (nonatomic, readonly) UIView *_rootContainerView;
+@property (nonatomic, readonly) bool _shouldRetryDismissal;
+@property (setter=_setShouldShowCameraRoll:, nonatomic) bool _shouldShowCameraRoll;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PLApplicationCameraViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id previewButtonAction;
+@property (readonly) Class superclass;
+@property (nonatomic) long long testPictureCounter;
+@property (nonatomic) double testPictureRepeatDelay;
 
 - (void).cxx_destruct;
 - (void)_applicationDidEnterBackground:(id)arg1;

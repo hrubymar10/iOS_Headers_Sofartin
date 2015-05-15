@@ -43,18 +43,18 @@
     UIView *_wildcatPickerTopView;
 }
 
-@property(assign,readonly) PLCropOverlayBottomBar * _bottomBar;
-@property(assign,readonly) UIButton * _cameraCancelButton;
-@property(assign,retain) CAMBottomBar * cameraBottomBar;
-@property(assign,readonly) PLContactPhotoOverlay * contactPhotoOverlay;
-@property(assign,copy) NSString * defaultOKButtonTitle;
-@property(getter=isDisplayedInPopover,assign,readwrite) bool displayedInPopover;
-@property(assign,readwrite) bool isEditingHomeScreen;
-@property(assign,readwrite) bool isEditingLockScreen;
-@property(assign,readwrite) bool motionToggleHidden;
-@property(assign,readwrite) bool motionToggleIsOn;
-@property(assign,readwrite) bool previewMode;
-@property(assign,readonly) PLCropOverlayWallpaperBottomBar * wallpaperBottomBar;
+@property (nonatomic, readonly) PLCropOverlayBottomBar *_bottomBar;
+@property (nonatomic, readonly) UIButton *_cameraCancelButton;
+@property (nonatomic, retain) CAMBottomBar *cameraBottomBar;
+@property (nonatomic, readonly) PLContactPhotoOverlay *contactPhotoOverlay;
+@property (nonatomic, copy) NSString *defaultOKButtonTitle;
+@property (getter=isDisplayedInPopover, nonatomic) bool displayedInPopover;
+@property (nonatomic) bool isEditingHomeScreen;
+@property (nonatomic) bool isEditingLockScreen;
+@property (nonatomic) bool motionToggleHidden;
+@property (nonatomic) bool motionToggleIsOn;
+@property (nonatomic) bool previewMode;
+@property (nonatomic, readonly) PLCropOverlayWallpaperBottomBar *wallpaperBottomBar;
 
 - (void)_backgroundSavePhoto:(id)arg1;
 - (id)_bottomBar;

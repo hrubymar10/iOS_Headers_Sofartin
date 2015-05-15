@@ -4,13 +4,13 @@
 
 @interface SSMutableSoftwareUpdatesContext : SSSoftwareUpdatesContext <SSXPCCoding>
 
-@property(assign,copy) NSString * clientIdentifierHeader;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isForced,assign,readwrite) bool forced;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * softwareTypes;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *clientIdentifierHeader;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isForced, nonatomic) bool forced;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *softwareTypes;
+@property (readonly) Class superclass;
 
 - (id)copyXPCEncoding;
 - (id)initWithXPCEncoding:(id)arg1;

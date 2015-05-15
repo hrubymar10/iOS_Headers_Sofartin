@@ -7,9 +7,9 @@
     ACAccount *_parentAppleAccount;
 }
 
-@property(assign,readonly) ACAccountStore * accountStore;
-@property(assign,readonly) ACAccount * ckAccount;
-@property(assign,retain) ACAccount * parentAppleAccount;
+@property (nonatomic, readonly) ACAccountStore *accountStore;
+@property (nonatomic, readonly) ACAccount *ckAccount;
+@property (nonatomic, retain) ACAccount *parentAppleAccount;
 
 + (id)accountWithIdentifier:(id)arg1 inStore:(id)arg2;
 + (void)determineCloudKitInfoFromEmail:(id)arg1 password:(id)arg2 completion:(id)arg3;

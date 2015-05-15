@@ -8,13 +8,13 @@
     AFSiriTaskService *_service;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <AFSiriTaskServiceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readwrite) AFSiriTaskService * service;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <AFSiriTaskServiceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic) AFSiriTaskService *service;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)delegate;

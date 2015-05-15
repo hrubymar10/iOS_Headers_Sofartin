@@ -11,10 +11,10 @@
     id _reserved5;
 }
 
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } matrix;
-@property(assign,readonly) double pointSize;
-@property(assign,readonly) NSString * postscriptName;
-@property(assign,readonly) unsigned int symbolicTraits;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } matrix;
+@property (nonatomic, readonly) double pointSize;
+@property (nonatomic, readonly) NSString *postscriptName;
+@property (nonatomic, readonly) unsigned int symbolicTraits;
 
 + (id)_createMungledDictionary:(id)arg1;
 + (id)defaultFontDescriptorWithTextStyle:(id)arg1;

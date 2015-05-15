@@ -7,8 +7,8 @@
     int _hideAnimation;
 }
 
-@property(assign,readwrite) double additionalSlideHeight;
-@property(assign,readwrite) int hideAnimation;
+@property (nonatomic) double additionalSlideHeight;
+@property (nonatomic) int hideAnimation;
 
 - (double)additionalSlideHeight;
 - (int)hideAnimation;

@@ -10,10 +10,10 @@
     NSData *_serverChangeToken;
 }
 
-@property(assign,readwrite) bool hasMaxChanges;
-@property(assign,readonly) bool hasServerChangeToken;
-@property(assign,readwrite) unsigned int maxChanges;
-@property(assign,retain) NSData * serverChangeToken;
+@property (nonatomic) bool hasMaxChanges;
+@property (nonatomic, readonly) bool hasServerChangeToken;
+@property (nonatomic) unsigned int maxChanges;
+@property (nonatomic, retain) NSData *serverChangeToken;
 
 + (id)options;
 

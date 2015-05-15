@@ -15,16 +15,16 @@
     id _writeHandler;
 }
 
-@property(assign,copy) NSUUID * advertiseUUID;
-@property(assign,copy) NSDictionary * configuration;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSObject<OS_dispatch_queue> * dispatchQueue;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct LogCategory { int x1; int x2; char *x3; unsigned int x4; char *x5; char *x6; int x7; struct LogCategory {} *x8; struct LogOutput {} *x9; struct LogOutput {} *x10; unsigned long long x11; unsigned long long x12; unsigned int x13; unsigned int x14; }* logCategory;
-@property(assign,copy) id readHandler;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id writeHandler;
+@property (nonatomic, copy) NSUUID *advertiseUUID;
+@property (nonatomic, copy) NSDictionary *configuration;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *dispatchQueue;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct LogCategory { int x1; int x2; char *x3; unsigned int x4; char *x5; char *x6; int x7; struct LogCategory {} *x8; struct LogOutput {} *x9; struct LogOutput {} *x10; unsigned long long x11; unsigned long long x12; unsigned int x13; unsigned int x14; }*logCategory;
+@property (nonatomic, copy) id readHandler;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id writeHandler;
 
 - (void)_start;
 - (int)_start2;

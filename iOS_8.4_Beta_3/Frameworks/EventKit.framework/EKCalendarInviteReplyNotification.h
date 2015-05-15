@@ -7,8 +7,8 @@
     int _status;
 }
 
-@property(assign,readwrite) unsigned long long allowedEntityTypes;
-@property(assign,readwrite) int status;
+@property (nonatomic) unsigned long long allowedEntityTypes;
+@property (nonatomic) int status;
 
 - (unsigned long long)allowedEntityTypes;
 - (id)initWithType:(long long)arg1;

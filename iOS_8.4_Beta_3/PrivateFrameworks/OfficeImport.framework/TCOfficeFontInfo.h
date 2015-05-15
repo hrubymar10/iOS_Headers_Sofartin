@@ -9,10 +9,10 @@
     bool _isItalic;
 }
 
-@property(assign,retain) NSString * alphaFontName;
-@property(assign,retain) NSString * fontName;
-@property(assign,readwrite) bool isBold;
-@property(assign,readwrite) bool isItalic;
+@property (nonatomic, retain) NSString *alphaFontName;
+@property (nonatomic, retain) NSString *fontName;
+@property (nonatomic) bool isBold;
+@property (nonatomic) bool isItalic;
 
 - (id)alphaFontName;
 - (id)description;

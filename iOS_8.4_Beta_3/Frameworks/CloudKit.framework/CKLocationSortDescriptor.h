@@ -6,7 +6,7 @@
     CLLocation *_relativeLocation;
 }
 
-@property(assign,copy) CLLocation * relativeLocation;
+@property (nonatomic, copy) CLLocation *relativeLocation;
 
 + (bool)supportsSecureCoding;
 

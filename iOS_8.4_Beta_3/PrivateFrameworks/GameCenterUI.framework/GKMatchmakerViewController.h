@@ -14,20 +14,20 @@
     GKRemoteMatchmakerViewController *_remoteViewController;
 }
 
-@property(assign,retain) GKInvite * acceptedInvite;
-@property(assign,retain) UIAlertController * alertController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * defaultInvitationMessage;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isHosted,assign,readwrite) bool hosted;
-@property(assign,retain) NSMutableArray * hostedPlayers;
-@property(assign,retain) GKHostedMatchmakerViewController * hostedViewController;
-@property(assign,retain) GKMatch * match;
-@property(assign,retain) GKMatchRequest * matchRequest;
-@property(assign,readwrite) <GKMatchmakerViewControllerDelegate> * matchmakerDelegate;
-@property(assign,retain) GKRemoteMatchmakerViewController * remoteViewController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) GKInvite *acceptedInvite;
+@property (nonatomic, retain) UIAlertController *alertController;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, copy) NSString *defaultInvitationMessage;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isHosted, nonatomic) bool hosted;
+@property (nonatomic, retain) NSMutableArray *hostedPlayers;
+@property (nonatomic, retain) GKHostedMatchmakerViewController *hostedViewController;
+@property (nonatomic, retain) GKMatch *match;
+@property (nonatomic, readonly, retain) GKMatchRequest *matchRequest;
+@property (nonatomic) <GKMatchmakerViewControllerDelegate> *matchmakerDelegate;
+@property (nonatomic, retain) GKRemoteMatchmakerViewController *remoteViewController;
+@property (readonly) Class superclass;
 
 + (bool)_preventsAppearanceProxyCustomization;
 

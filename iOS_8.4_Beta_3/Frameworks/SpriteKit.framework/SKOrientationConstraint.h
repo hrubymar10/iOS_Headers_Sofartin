@@ -11,9 +11,9 @@
     } _point;
 }
 
-@property(assign,readwrite) SKNode * node;
-@property(assign,copy) SKRange * offset;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } point;
+@property SKNode *node;
+@property (copy) SKRange *offset;
+@property struct CGPoint { double x1; double x2; } point;
 
 + (id)constraintOrientingToNode:(id)arg1 offset:(id)arg2;
 + (id)constraintOrientingToPoint:(struct CGPoint { double x1; double x2; })arg1 inNode:(id)arg2 offset:(id)arg3;

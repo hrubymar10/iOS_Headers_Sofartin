@@ -6,7 +6,7 @@
     <ATMessageLinkListenerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <ATMessageLinkListenerDelegate> * delegate;
+@property (nonatomic) <ATMessageLinkListenerDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)delegate;

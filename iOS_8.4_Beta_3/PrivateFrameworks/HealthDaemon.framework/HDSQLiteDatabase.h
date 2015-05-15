@@ -11,7 +11,7 @@
     long long _transactionType;
 }
 
-@property(assign,readonly) NSURL * fileURL;
+@property (nonatomic, readonly) NSURL *fileURL;
 
 + (bool)_stepStatement:(struct sqlite3_stmt { }*)arg1 hasRow:(bool*)arg2 resultCode:(int*)arg3 error:(id*)arg4;
 + (bool)deleteDatabaseAtPath:(id)arg1;

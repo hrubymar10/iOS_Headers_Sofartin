@@ -13,18 +13,18 @@
     GKLabel *_subLabel;
 }
 
-@property(assign,retain) NSDictionary * attributes;
-@property(assign,retain) GKButton * button;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <GKRemoteUIAuxiliaryViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double height;
-@property(assign,retain) GKLabel * label;
-@property(assign,readwrite) int layoutStyle;
-@property(assign,retain) NSArray * replaceableConstraints;
-@property(assign,retain) GKLabel * subLabel;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSDictionary *attributes;
+@property (nonatomic, retain) GKButton *button;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <GKRemoteUIAuxiliaryViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double height;
+@property (nonatomic, retain) GKLabel *label;
+@property (nonatomic) int layoutStyle;
+@property (nonatomic, retain) NSArray *replaceableConstraints;
+@property (nonatomic, retain) GKLabel *subLabel;
+@property (readonly) Class superclass;
 
 - (void)applyConstraints;
 - (id)attributes;

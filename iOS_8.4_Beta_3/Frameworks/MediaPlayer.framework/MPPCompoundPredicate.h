@@ -6,7 +6,7 @@
     NSMutableArray *_predicates;
 }
 
-@property(assign,retain) NSMutableArray * predicates;
+@property (nonatomic, retain) NSMutableArray *predicates;
 
 - (void).cxx_destruct;
 - (void)addPredicates:(id)arg1;

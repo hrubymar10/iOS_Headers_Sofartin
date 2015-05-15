@@ -10,7 +10,7 @@
     } _textSize;
 }
 
-@property(assign,retain) NSString * text;
+@property (nonatomic, retain) NSString *text;
 
 - (struct CGSize { double x1; double x2; })_textSize;
 - (void)dealloc;

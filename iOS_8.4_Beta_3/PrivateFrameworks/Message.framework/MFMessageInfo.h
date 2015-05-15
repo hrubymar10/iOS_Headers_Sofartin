@@ -17,18 +17,18 @@
     unsigned int _uidIsLibraryID;
 }
 
-@property(assign,readwrite) long long conversationHash;
-@property(assign,readwrite) unsigned int dateReceivedInterval;
-@property(assign,readwrite) unsigned int dateSentInterval;
-@property(assign,readwrite) bool deleted;
-@property(assign,readwrite) bool flagged;
-@property(assign,readonly) long long generationNumber;
-@property(assign,readwrite) bool isVIP;
-@property(getter=isKnownToHaveAttachments,assign,readwrite) bool knownToHaveAttachments;
-@property(assign,readwrite) unsigned int mailboxID;
-@property(assign,readwrite) bool read;
-@property(assign,readwrite) unsigned int uid;
-@property(assign,readwrite) bool uidIsLibraryID;
+@property (nonatomic) long long conversationHash;
+@property (nonatomic) unsigned int dateReceivedInterval;
+@property (nonatomic) unsigned int dateSentInterval;
+@property (nonatomic) bool deleted;
+@property (nonatomic) bool flagged;
+@property (nonatomic, readonly) long long generationNumber;
+@property (nonatomic) bool isVIP;
+@property (getter=isKnownToHaveAttachments, nonatomic) bool knownToHaveAttachments;
+@property (nonatomic) unsigned int mailboxID;
+@property (nonatomic) bool read;
+@property (nonatomic) unsigned int uid;
+@property (nonatomic) bool uidIsLibraryID;
 
 + (long long)newGenerationNumber;
 

@@ -10,27 +10,27 @@
     NSString *_title;
 }
 
-@property(assign,readonly) unsigned long long approximateCount;
-@property(assign,retain) NSOrderedSet * assets;
-@property(assign,readonly) unsigned long long assetsCount;
-@property(assign,readonly) bool canShowAvalancheStacks;
-@property(assign,readonly) bool canShowComments;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSDate * endDate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isEmpty;
-@property(assign,retain) PLManagedAsset * keyAsset;
-@property(assign,copy) NSArray * localizedLocationNames;
-@property(assign,copy) NSString * localizedTitle;
-@property(assign,readonly) unsigned long long photosCount;
-@property(assign,retain) PLManagedAsset * secondaryKeyAsset;
-@property(assign,retain) NSDate * startDate;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) PLManagedAsset * tertiaryKeyAsset;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSString * uuid;
-@property(assign,readonly) unsigned long long videosCount;
+@property (nonatomic, readonly) unsigned long long approximateCount;
+@property (nonatomic, readonly, retain) NSOrderedSet *assets;
+@property (nonatomic, readonly) unsigned long long assetsCount;
+@property (nonatomic, readonly) bool canShowAvalancheStacks;
+@property (nonatomic, readonly) bool canShowComments;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, retain) NSDate *endDate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, retain) PLManagedAsset *keyAsset;
+@property (nonatomic, readonly, copy) NSArray *localizedLocationNames;
+@property (nonatomic, readonly, copy) NSString *localizedTitle;
+@property (nonatomic, readonly) unsigned long long photosCount;
+@property (nonatomic, retain) PLManagedAsset *secondaryKeyAsset;
+@property (nonatomic, readonly, retain) NSDate *startDate;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) PLManagedAsset *tertiaryKeyAsset;
+@property (nonatomic, readonly, retain) NSString *title;
+@property (nonatomic, readonly, retain) NSString *uuid;
+@property (nonatomic, readonly) unsigned long long videosCount;
 
 - (long long)_countOfAssetType:(short)arg1;
 - (unsigned long long)approximateCount;

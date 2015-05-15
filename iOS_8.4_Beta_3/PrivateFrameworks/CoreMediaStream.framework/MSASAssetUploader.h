@@ -13,15 +13,15 @@
     int _state;
 }
 
-@property(assign,retain) NSMutableDictionary * assetCollectionGUIDToRequestorContext;
-@property(assign,retain) NSMutableDictionary * assetCollectionsToItemInFlightMap;
-@property(assign,retain) NSMutableSet * assetCollectionsWithAuthorizationError;
-@property(assign,retain) NSMutableDictionary * assetToAssetCollectionMap;
-@property(assign,readwrite) <MSASAssetUploaderDelegate> * delegate;
-@property(assign,readwrite) bool didEncounterNetworkConditionError;
-@property(assign,retain) NSMutableArray * finishedAssetCollections;
-@property(assign,retain) NSMutableArray * itemsInFlight;
-@property(assign,readwrite) int state;
+@property (nonatomic, retain) NSMutableDictionary *assetCollectionGUIDToRequestorContext;
+@property (nonatomic, retain) NSMutableDictionary *assetCollectionsToItemInFlightMap;
+@property (nonatomic, retain) NSMutableSet *assetCollectionsWithAuthorizationError;
+@property (nonatomic, retain) NSMutableDictionary *assetToAssetCollectionMap;
+@property (nonatomic) <MSASAssetUploaderDelegate> *delegate;
+@property (nonatomic) bool didEncounterNetworkConditionError;
+@property (nonatomic, retain) NSMutableArray *finishedAssetCollections;
+@property (nonatomic, retain) NSMutableArray *itemsInFlight;
+@property (nonatomic) int state;
 
 - (void).cxx_destruct;
 - (void)MMCSEngine:(id)arg1 didCreateRequestorContext:(id)arg2 forAssets:(id)arg3;

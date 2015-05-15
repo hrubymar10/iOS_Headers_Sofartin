@@ -28,24 +28,24 @@
     unsigned long long textFieldType;
 }
 
-@property(assign,retain) IMAccount * CNFRegAccount;
-@property(assign,retain) CNFRegAlias * CNFRegAlias;
-@property(assign,retain) CNFRegAlias * CNFRegCallerIdAlias;
-@property(assign,readwrite) SEL buttonAction;
-@property(assign,readwrite) long long cellType;
-@property(assign,readwrite) SEL confirmationAction;
-@property(assign,readwrite) SEL confirmationCancelAction;
-@property(assign,readwrite) SEL controllerLoadAction;
-@property(assign,readwrite) Class detailControllerClass;
-@property(assign,readwrite) Class editPaneClass;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSDictionary * shortTitleDictionary;
-@property(assign,readwrite) bool showContentString;
-@property(assign,readwrite) id target;
-@property(assign,retain) NSDictionary * titleDictionary;
-@property(assign,retain) id userInfo;
-@property(assign,retain) NSArray * values;
+@property (nonatomic, retain) IMAccount *CNFRegAccount;
+@property (nonatomic, retain) CNFRegAlias *CNFRegAlias;
+@property (nonatomic, retain) CNFRegAlias *CNFRegCallerIdAlias;
+@property (nonatomic) SEL buttonAction;
+@property (nonatomic) long long cellType;
+@property (nonatomic) SEL confirmationAction;
+@property (nonatomic) SEL confirmationCancelAction;
+@property (nonatomic) SEL controllerLoadAction;
+@property (nonatomic) Class detailControllerClass;
+@property (nonatomic) Class editPaneClass;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSDictionary *shortTitleDictionary;
+@property (nonatomic) bool showContentString;
+@property (nonatomic) id target;
+@property (nonatomic, retain) NSDictionary *titleDictionary;
+@property (nonatomic, retain) id userInfo;
+@property (nonatomic, retain) NSArray *values;
 
 + (id)_bundle;
 + (id)_dataclassIconCache;

@@ -7,13 +7,13 @@
     NSString *_transientIdentifier;
 }
 
-@property(assign,readonly) unsigned long long containersCount;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSOrderedSet * sectionInfos;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * transientIdentifier;
+@property (nonatomic, readonly) unsigned long long containersCount;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSOrderedSet *sectionInfos;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *transientIdentifier;
 
 - (void).cxx_destruct;
 - (bool)canEditContainers;

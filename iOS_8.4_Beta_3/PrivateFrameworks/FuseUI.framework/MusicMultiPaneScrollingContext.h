@@ -26,14 +26,14 @@
     double _snapUpContentOffset;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } previousContentInsetAdditions;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } previousContentOffset;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } previousContentScrollInsetAdditions;
-@property(assign,readwrite) double previousStabilizingBottomAdditions;
-@property(assign,readwrite) long long snapDecelerationVeloctiyOverrideState;
-@property(assign,readwrite) double snapDownContentOffset;
-@property(assign,readwrite) long long snapState;
-@property(assign,readwrite) double snapUpContentOffset;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } previousContentInsetAdditions;
+@property (nonatomic) struct CGPoint { double x1; double x2; } previousContentOffset;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } previousContentScrollInsetAdditions;
+@property (nonatomic) double previousStabilizingBottomAdditions;
+@property (nonatomic) long long snapDecelerationVeloctiyOverrideState;
+@property (nonatomic) double snapDownContentOffset;
+@property (nonatomic) long long snapState;
+@property (nonatomic) double snapUpContentOffset;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })previousContentInsetAdditions;
 - (struct CGPoint { double x1; double x2; })previousContentOffset;

@@ -10,8 +10,8 @@
     NSDictionary *_typingAttributesBeforeInsertion;
 }
 
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } attachmentRange;
-@property(assign,copy) NSDictionary * typingAttributesBeforeInsertion;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } attachmentRange;
+@property (nonatomic, copy) NSDictionary *typingAttributesBeforeInsertion;
 
 - (struct _NSRange { unsigned long long x1; unsigned long long x2; })attachmentRange;
 - (void)dealloc;

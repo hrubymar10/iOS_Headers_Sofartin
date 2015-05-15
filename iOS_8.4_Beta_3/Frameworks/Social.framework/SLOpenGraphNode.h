@@ -11,12 +11,12 @@
     unsigned long long _numberOfLikes;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readwrite) int fetchState;
-@property(assign,readonly) unsigned long long friendLikeCount;
-@property(assign,readonly) unsigned long long globalLikeCount;
-@property(assign,readonly) NSArray * likedByFriends;
-@property(assign,readonly) bool likedByMe;
+@property (readonly) NSURL *URL;
+@property (nonatomic) int fetchState;
+@property (readonly) unsigned long long friendLikeCount;
+@property (readonly) unsigned long long globalLikeCount;
+@property (readonly) NSArray *likedByFriends;
+@property (readonly) bool likedByMe;
 
 - (void).cxx_destruct;
 - (id)URL;

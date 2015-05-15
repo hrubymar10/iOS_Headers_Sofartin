@@ -15,26 +15,26 @@
     id _secondItem;
 }
 
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,readwrite) double constant;
-@property(assign,readwrite) id container;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=_encodedConstant,setter=_setEncodedConstant:,assign,readwrite) _NSLayoutConstraintConstant * encodedConstant;
-@property(assign,readwrite) long long firstAttribute;
-@property(assign,readwrite) id firstItem;
-@property(assign,readonly) bool hasBeenLowered;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * identifier;
-@property(getter=_loweredConstantNeedsUpdate,setter=_setLoweredConstantNeedsUpdate:,assign,readwrite) bool loweredConstantNeedsUpdate;
-@property(assign,readwrite) double multiplier;
-@property(assign,readwrite) float priority;
-@property(assign,readwrite) long long relation;
-@property(assign,readwrite) long long secondAttribute;
-@property(assign,readwrite) id secondItem;
-@property(assign,readwrite) bool shouldBeArchived;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * symbolicConstant;
+@property (getter=isActive) bool active;
+@property double constant;
+@property id container;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=_encodedConstant, setter=_setEncodedConstant:) _NSLayoutConstraintConstant *encodedConstant;
+@property long long firstAttribute;
+@property id firstItem;
+@property (readonly) bool hasBeenLowered;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *identifier;
+@property (getter=_loweredConstantNeedsUpdate, setter=_setLoweredConstantNeedsUpdate:, nonatomic) bool loweredConstantNeedsUpdate;
+@property double multiplier;
+@property float priority;
+@property long long relation;
+@property long long secondAttribute;
+@property id secondItem;
+@property bool shouldBeArchived;
+@property (readonly) Class superclass;
+@property (copy) NSString *symbolicConstant;
 
 + (bool)_UIWantsMarginAttributeSupport;
 + (void)_addOrRemoveConstraints:(id)arg1 activate:(bool)arg2;

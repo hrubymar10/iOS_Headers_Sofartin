@@ -21,17 +21,17 @@
     bool _usesCustomPropertyCell;
 }
 
-@property(assign,readwrite) int abCellStyle;
-@property(assign,readwrite) bool allowsEditing;
-@property(assign,readwrite) UITableViewCell * cell;
-@property(getter=isEditing,assign,readwrite) bool editing;
-@property(getter=isEmphasized,assign,readwrite) bool emphasized;
-@property(getter=isImportant,assign,readwrite) bool important;
-@property(assign,readonly) ABAbstractPropertyGroup * propertyGroup;
-@property(assign,retain) id propertyGroupInfo;
-@property(assign,readwrite) bool shouldIgnoreEndEditing;
-@property(assign,readwrite) <ABMultiCellContentViewUpdateDelegate> * updateDelegate;
-@property(assign,readwrite) bool usesCustomPropertyCell;
+@property (nonatomic) int abCellStyle;
+@property (nonatomic) bool allowsEditing;
+@property (nonatomic) UITableViewCell *cell;
+@property (getter=isEditing, nonatomic) bool editing;
+@property (getter=isEmphasized, nonatomic) bool emphasized;
+@property (getter=isImportant, nonatomic) bool important;
+@property (nonatomic, readonly) ABAbstractPropertyGroup *propertyGroup;
+@property (nonatomic, retain) id propertyGroupInfo;
+@property (nonatomic) bool shouldIgnoreEndEditing;
+@property (nonatomic) <ABMultiCellContentViewUpdateDelegate> *updateDelegate;
+@property (nonatomic) bool usesCustomPropertyCell;
 
 + (Class)classForProperty:(int)arg1;
 + (struct CGSize { double x1; double x2; })layoutSubviewsForView:(id)arg1 usingSize:(struct CGSize { double x1; double x2; })arg2 propertyGroup:(id)arg3 info:(id)arg4 styleProvider:(id)arg5 whenEditing:(bool)arg6;

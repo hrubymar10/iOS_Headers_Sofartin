@@ -6,7 +6,7 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *title;
 
 + (id)_titleLabelFont;
 + (double)defaultHeightForTraitCollection:(id)arg1;

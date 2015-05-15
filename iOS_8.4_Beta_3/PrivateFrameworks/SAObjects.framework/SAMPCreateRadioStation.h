@@ -4,8 +4,8 @@
 
 @interface SAMPCreateRadioStation : SABaseClientBoundCommand
 
-@property(assign,copy) NSNumber * startPlaying;
-@property(assign,copy) NSURL * stationUrl;
+@property (nonatomic, copy) NSNumber *startPlaying;
+@property (nonatomic, copy) NSURL *stationUrl;
 
 + (id)createRadioStation;
 + (id)createRadioStationWithDictionary:(id)arg1 context:(id)arg2;

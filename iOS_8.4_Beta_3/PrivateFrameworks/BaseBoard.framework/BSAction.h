@@ -16,11 +16,11 @@
     unsigned long long _timeout;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) BSSettings * info;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) BSSettings *info;
+@property (readonly) Class superclass;
 
 - (long long)UIActionType;
 - (id)_handlerDescription;

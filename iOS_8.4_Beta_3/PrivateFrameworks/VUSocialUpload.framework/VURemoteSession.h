@@ -6,7 +6,7 @@
     ACAccountStore *_accountStore;
 }
 
-@property(assign,retain) ACAccountStore * accountStore;
+@property (nonatomic, retain) ACAccountStore *accountStore;
 
 + (void)decrementPowerAssertion;
 + (void)incrementPowerAssertion;

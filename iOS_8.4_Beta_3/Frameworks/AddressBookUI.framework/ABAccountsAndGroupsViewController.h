@@ -11,12 +11,12 @@
     bool _tableViewNeedsReloadAfterResume;
 }
 
-@property(assign,readonly) ABAccountsAndGroupDataSource * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) ABPeoplePickerNavigationController * peoplePickerNavigationController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) ABAccountsAndGroupDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) ABPeoplePickerNavigationController *peoplePickerNavigationController;
+@property (readonly) Class superclass;
 
 - (void)_updateDisplayedContactsFilterFromSelection;
 - (int)abViewControllerType;

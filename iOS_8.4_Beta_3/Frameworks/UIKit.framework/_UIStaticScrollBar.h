@@ -13,8 +13,8 @@
     UIButton *_upButton;
 }
 
-@property(assign,readwrite) bool isOnLeftSide;
-@property(assign,readwrite) bool shouldInsetButtons;
+@property (nonatomic) bool isOnLeftSide;
+@property (nonatomic) bool shouldInsetButtons;
 
 - (void)_updateButtonConstraints;
 - (void)_updateDividerConstraints;

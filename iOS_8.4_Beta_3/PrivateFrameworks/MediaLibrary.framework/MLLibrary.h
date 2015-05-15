@@ -9,8 +9,8 @@
     } _coreLibrary;
 }
 
-@property(assign,readwrite) struct shared_ptr<mlcore::Library> { struct Library {} *x1; struct __shared_weak_count {} *x2; } coreLibrary;
-@property(assign,readonly) NSString * identifier;
+@property (nonatomic) struct shared_ptr<mlcore::Library> { struct Library {} *x1; struct __shared_weak_count {} *x2; } coreLibrary;
+@property (nonatomic, readonly) NSString *identifier;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

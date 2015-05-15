@@ -8,9 +8,9 @@
     NSArray *_uuids;
 }
 
-@property(assign,copy) NSString * displayTitle;
-@property(assign,copy) NSString * searchString;
-@property(assign,retain) NSArray * uuids;
+@property (nonatomic, copy) NSString *displayTitle;
+@property (nonatomic, copy) NSString *searchString;
+@property (nonatomic, retain) NSArray *uuids;
 
 - (void).cxx_destruct;
 - (id)displayTitle;

@@ -8,9 +8,9 @@
     id _stalenessToken;
 }
 
-@property(assign,readonly) NSArray * constraints;
-@property(assign,readonly) NSString * name;
-@property(assign,copy) id stalenessToken;
+@property (nonatomic, readonly) NSArray *constraints;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly, copy) id stalenessToken;
 
 - (void).cxx_destruct;
 - (id)constraints;

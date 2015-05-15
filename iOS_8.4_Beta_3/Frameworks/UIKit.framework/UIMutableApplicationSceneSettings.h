@@ -4,12 +4,12 @@
 
 @interface UIMutableApplicationSceneSettings : FBSMutableSceneSettings <UIApplicationSceneSettings>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int statusBarStyleOverridesToSuppress;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool underLock;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int statusBarStyleOverridesToSuppress;
+@property (readonly) Class superclass;
+@property (nonatomic) bool underLock;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (bool)isUISubclass;

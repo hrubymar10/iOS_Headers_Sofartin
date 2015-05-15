@@ -4,11 +4,11 @@
 
 @interface SAUIAddViews : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * dialogPhase;
-@property(assign,copy) NSString * displayTarget;
-@property(assign,readwrite) bool scrollToTop;
-@property(assign,readwrite) bool temporary;
-@property(assign,copy) NSArray * views;
+@property (nonatomic, copy) NSString *dialogPhase;
+@property (nonatomic, copy) NSString *displayTarget;
+@property (nonatomic) bool scrollToTop;
+@property (nonatomic) bool temporary;
+@property (nonatomic, copy) NSArray *views;
 
 + (id)addViews;
 + (id)addViewsWithDictionary:(id)arg1 context:(id)arg2;

@@ -8,12 +8,12 @@
     GKTurnBasedParticipant *_recipient;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,retain) GKTurnBasedExchangeReplyInternal * internal;
-@property(assign,readwrite) GKTurnBasedMatch * match;
-@property(assign,readonly) NSString * message;
-@property(assign,retain) GKTurnBasedParticipant * recipient;
-@property(assign,readonly) NSDate * replyDate;
+@property (nonatomic, retain) NSData *data;
+@property (retain) GKTurnBasedExchangeReplyInternal *internal;
+@property (nonatomic) GKTurnBasedMatch *match;
+@property (nonatomic, readonly) NSString *message;
+@property (nonatomic, retain) GKTurnBasedParticipant *recipient;
+@property (nonatomic, readonly) NSDate *replyDate;
 
 + (id)instanceMethodSignatureForSelector:(SEL)arg1;
 + (bool)instancesRespondToSelector:(SEL)arg1;

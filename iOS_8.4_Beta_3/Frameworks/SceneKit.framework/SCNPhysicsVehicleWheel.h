@@ -33,18 +33,18 @@
     int _wheelIndex;
 }
 
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } axle;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } connectionPosition;
-@property(assign,readwrite) double frictionSlip;
-@property(assign,readwrite) double maximumSuspensionForce;
-@property(assign,readwrite) double maximumSuspensionTravel;
-@property(assign,readonly) SCNNode * node;
-@property(assign,readwrite) double radius;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } steeringAxis;
-@property(assign,readwrite) double suspensionCompression;
-@property(assign,readwrite) double suspensionDamping;
-@property(assign,readwrite) double suspensionRestLength;
-@property(assign,readwrite) double suspensionStiffness;
+@property struct SCNVector3 { float x1; float x2; float x3; } axle;
+@property struct SCNVector3 { float x1; float x2; float x3; } connectionPosition;
+@property double frictionSlip;
+@property double maximumSuspensionForce;
+@property double maximumSuspensionTravel;
+@property (readonly) SCNNode *node;
+@property double radius;
+@property struct SCNVector3 { float x1; float x2; float x3; } steeringAxis;
+@property double suspensionCompression;
+@property double suspensionDamping;
+@property double suspensionRestLength;
+@property double suspensionStiffness;
 
 + (id)SCNJSExportProtocol;
 + (bool)supportsSecureCoding;

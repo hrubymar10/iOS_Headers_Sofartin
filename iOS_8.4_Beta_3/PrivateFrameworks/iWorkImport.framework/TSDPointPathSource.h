@@ -14,9 +14,9 @@
     int mType;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } naturalSize;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } point;
-@property(assign,readwrite) int type;
+@property struct CGSize { double x1; double x2; } naturalSize;
+@property struct CGPoint { double x1; double x2; } point;
+@property int type;
 
 + (id)doubleArrowWithPoint:(struct CGPoint { double x1; double x2; })arg1 naturalSize:(struct CGSize { double x1; double x2; })arg2;
 + (id)leftSingleArrowWithPoint:(struct CGPoint { double x1; double x2; })arg1 naturalSize:(struct CGSize { double x1; double x2; })arg2;

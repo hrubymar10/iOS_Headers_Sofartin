@@ -6,7 +6,7 @@
     NSLayoutConstraint *_contentHeightConstraint;
 }
 
-@property(assign,readwrite) double contentHeight;
+@property (nonatomic) double contentHeight;
 
 - (void).cxx_destruct;
 - (double)contentHeight;

@@ -16,15 +16,15 @@
     bool _wantsAppAck;
 }
 
-@property(assign,readwrite) bool compressed;
-@property(assign,retain) NSData * data;
-@property(assign,readonly) bool expectsPeerResponse;
-@property(assign,readwrite) NSDate * expiryDate;
-@property(assign,retain) NSString * messageUUID;
-@property(assign,retain) NSString * peerResponseIdentifier;
-@property(assign,readwrite) unsigned int sequenceNumber;
-@property(assign,readonly) unsigned short streamID;
-@property(assign,readonly) bool wantsAppAck;
+@property (nonatomic) bool compressed;
+@property (nonatomic, readonly, retain) NSData *data;
+@property (nonatomic, readonly) bool expectsPeerResponse;
+@property (nonatomic) NSDate *expiryDate;
+@property (nonatomic, readonly, retain) NSString *messageUUID;
+@property (nonatomic, readonly, retain) NSString *peerResponseIdentifier;
+@property (nonatomic) unsigned int sequenceNumber;
+@property (nonatomic, readonly) unsigned short streamID;
+@property (nonatomic, readonly) bool wantsAppAck;
 
 - (id)_nonHeaderData;
 - (unsigned char)command;

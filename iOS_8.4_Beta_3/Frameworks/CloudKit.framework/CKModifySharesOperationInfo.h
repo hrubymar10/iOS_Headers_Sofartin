@@ -7,8 +7,8 @@
     NSArray *_sharesToSave;
 }
 
-@property(assign,retain) NSArray * shareIDsToDelete;
-@property(assign,retain) NSArray * sharesToSave;
+@property (nonatomic, retain) NSArray *shareIDsToDelete;
+@property (nonatomic, retain) NSArray *sharesToSave;
 
 + (bool)supportsSecureCoding;
 

@@ -9,12 +9,12 @@
     NSString *_value;
 }
 
-@property(assign,retain) NSString * field;
-@property(assign,readonly) bool hasField;
-@property(assign,readonly) bool hasValue;
-@property(assign,retain) NSMutableArray * operands;
-@property(assign,readwrite) int type;
-@property(assign,retain) NSString * value;
+@property (nonatomic, retain) NSString *field;
+@property (nonatomic, readonly) bool hasField;
+@property (nonatomic, readonly) bool hasValue;
+@property (nonatomic, retain) NSMutableArray *operands;
+@property (nonatomic) int type;
+@property (nonatomic, retain) NSString *value;
 
 - (void)addOperands:(id)arg1;
 - (void)clearOperands;

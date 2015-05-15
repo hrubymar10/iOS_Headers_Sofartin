@@ -6,7 +6,7 @@
     unsigned long long _reason;
 }
 
-@property(assign,readwrite) unsigned long long reason;
+@property (nonatomic) unsigned long long reason;
 
 - (void)encodeWithCoder:(id)arg1;
 - (id)initWithCoder:(id)arg1;

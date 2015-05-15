@@ -4,18 +4,18 @@
 
 @interface TSCHMutableNumberFormat : TSCHNumberFormat <TSCHCustomFormatUpdateSupport>
 
-@property(assign,readwrite) unsigned int base;
-@property(assign,readwrite) unsigned int basePlaces;
-@property(assign,readwrite) bool baseUseMinusSign;
-@property(assign,copy) NSString * currencyCode;
-@property(assign,readwrite) unsigned int decimalPlaces;
-@property(assign,readwrite) int formatType;
-@property(assign,readwrite) int fractionAccuracy;
-@property(assign,readwrite) int negativeStyle;
-@property(assign,copy) NSString * prefixString;
-@property(assign,readwrite) bool showThousandsSeparator;
-@property(assign,copy) NSString * suffixString;
-@property(assign,readwrite) bool useAccountingStyle;
+@property (nonatomic) unsigned int base;
+@property (nonatomic) unsigned int basePlaces;
+@property (nonatomic) bool baseUseMinusSign;
+@property (nonatomic, copy) NSString *currencyCode;
+@property (nonatomic) unsigned int decimalPlaces;
+@property (nonatomic) int formatType;
+@property (nonatomic) int fractionAccuracy;
+@property (nonatomic) int negativeStyle;
+@property (nonatomic, copy) NSString *prefixString;
+@property (nonatomic) bool showThousandsSeparator;
+@property (nonatomic, copy) NSString *suffixString;
+@property (nonatomic) bool useAccountingStyle;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)p_formatTypeAffectedPropertyKeys;

@@ -6,7 +6,7 @@
     AVPlayerItemOutputInternal *_outputInternal;
 }
 
-@property(assign,readwrite) bool suppressesPlayerRendering;
+@property (nonatomic) bool suppressesPlayerRendering;
 
 - (bool)_attachToPlayerItem:(id)arg1;
 - (struct OpaqueCMTimebase { }*)_copyTimebase;

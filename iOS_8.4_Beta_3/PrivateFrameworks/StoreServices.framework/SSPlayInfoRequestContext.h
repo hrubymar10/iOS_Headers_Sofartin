@@ -11,16 +11,16 @@
     NSArray *_sinfs;
 }
 
-@property(assign,copy) NSData * SICData;
-@property(assign,copy) NSNumber * accountIdentifier;
-@property(assign,copy) NSNumber * contentIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * playbackType;
-@property(assign,copy) NSString * playerGUID;
-@property(assign,copy) NSArray * sinfs;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSData *SICData;
+@property (nonatomic, copy) NSNumber *accountIdentifier;
+@property (nonatomic, copy) NSNumber *contentIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *playbackType;
+@property (nonatomic, copy) NSString *playerGUID;
+@property (nonatomic, copy) NSArray *sinfs;
+@property (readonly) Class superclass;
 
 - (id)SICData;
 - (id)accountIdentifier;

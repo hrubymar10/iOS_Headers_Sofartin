@@ -17,8 +17,8 @@
     } _hitRectInsets;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } alignmentRectInsets;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitRectInsets;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } alignmentRectInsets;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitRectInsets;
 
 + (id)buttonWithType:(long long)arg1;
 

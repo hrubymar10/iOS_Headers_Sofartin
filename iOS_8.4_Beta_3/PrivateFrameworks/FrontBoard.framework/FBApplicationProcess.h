@@ -33,27 +33,27 @@
     FBApplicationWatchdog *_watchdog;
 }
 
-@property(assign,retain) FBApplicationInfo * applicationInfo;
-@property(getter=isBeingDebugged,assign,readwrite) bool beingDebugged;
-@property(getter=isConnectedToExternalAccessory,assign,readwrite) bool connectedToExternalAccessory;
-@property(getter=_queue_cpuStatistics,assign,retain) FBProcessCPUStatistics * cpuStatistics;
-@property(assign,copy) NSString * debugDescription;
-@property(getter=_queue_defaultSuspendType,assign,readonly) int defaultSuspendType;
-@property(assign,readwrite) <FBApplicationProcessDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=_queue_execTime,assign,readonly) double execTime;
-@property(assign,retain) FBProcessExecutionContext * executionContext;
-@property(assign,retain) FBApplicationProcessExitContext * exitContext;
-@property(getter=_queue_hasFinishedLaunching,assign,readonly) bool hasFinishedLaunching;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=_queue_launchWatchdogTimeRemaining,assign,readonly) double launchWatchdogTimeRemaining;
-@property(getter=isNowPlayingWithAudio,assign,readwrite) bool nowPlayingWithAudio;
-@property(getter=isRecordingAudio,assign,readwrite) bool recordingAudio;
-@property(assign,readonly) Class superclass;
-@property(getter=_queue_supportsBackgroundTaskAssertions,assign,readonly) bool supportsBackgroundTaskAssertions;
-@property(getter=_queue_supportsSuspendOnLock,assign,readonly) bool supportsSuspendOnLock;
-@property(getter=_queue_taskPort,setter=_queue_setTaskPort:,assign,readwrite) BSMachSendRight * taskPort;
-@property(getter=_queue_terminationReason,assign,readonly) long long terminationReason;
+@property (nonatomic, readonly, retain) FBApplicationInfo *applicationInfo;
+@property (getter=isBeingDebugged, nonatomic) bool beingDebugged;
+@property (getter=isConnectedToExternalAccessory, nonatomic) bool connectedToExternalAccessory;
+@property (getter=_queue_cpuStatistics, nonatomic, readonly, retain) FBProcessCPUStatistics *cpuStatistics;
+@property (readonly, copy) NSString *debugDescription;
+@property (getter=_queue_defaultSuspendType, nonatomic, readonly) int defaultSuspendType;
+@property (nonatomic) <FBApplicationProcessDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=_queue_execTime, nonatomic, readonly) double execTime;
+@property (nonatomic, retain) FBProcessExecutionContext *executionContext;
+@property (nonatomic, readonly, retain) FBApplicationProcessExitContext *exitContext;
+@property (getter=_queue_hasFinishedLaunching, nonatomic, readonly) bool hasFinishedLaunching;
+@property (readonly) unsigned long long hash;
+@property (getter=_queue_launchWatchdogTimeRemaining, nonatomic, readonly) double launchWatchdogTimeRemaining;
+@property (getter=isNowPlayingWithAudio, nonatomic) bool nowPlayingWithAudio;
+@property (getter=isRecordingAudio, nonatomic) bool recordingAudio;
+@property (readonly) Class superclass;
+@property (getter=_queue_supportsBackgroundTaskAssertions, nonatomic, readonly) bool supportsBackgroundTaskAssertions;
+@property (getter=_queue_supportsSuspendOnLock, nonatomic, readonly) bool supportsSuspendOnLock;
+@property (getter=_queue_taskPort, setter=_queue_setTaskPort:, nonatomic) BSMachSendRight *taskPort;
+@property (getter=_queue_terminationReason, nonatomic, readonly) long long terminationReason;
 
 + (void)deleteAllJobs;
 

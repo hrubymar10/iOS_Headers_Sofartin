@@ -24,9 +24,9 @@
     unsigned int _voiceOverIsActive;
 }
 
-@property(assign,readwrite) <AFAssistantUIService> * delegate;
-@property(assign,readonly) bool isRecording;
-@property(assign,readwrite) <AFSpeechDelegate> * speechDelegate;
+@property (nonatomic) <AFAssistantUIService> *delegate;
+@property (nonatomic, readonly) bool isRecording;
+@property (nonatomic) <AFSpeechDelegate> *speechDelegate;
 
 + (bool)assistantIsSupported;
 + (bool)assistantIsSupportedForLanguageCode:(id)arg1 error:(id*)arg2;

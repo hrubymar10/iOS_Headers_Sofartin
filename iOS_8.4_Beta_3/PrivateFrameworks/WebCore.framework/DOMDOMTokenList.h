@@ -4,7 +4,7 @@
 
 @interface DOMDOMTokenList : DOMObject
 
-@property(assign,readonly) unsigned int length;
+@property (readonly) unsigned int length;
 
 - (void)add:(id)arg1;
 - (bool)contains:(id)arg1;

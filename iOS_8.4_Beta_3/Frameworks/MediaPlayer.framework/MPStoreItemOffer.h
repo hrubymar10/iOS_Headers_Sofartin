@@ -6,11 +6,11 @@
     NSDictionary *_lookupDictionary;
 }
 
-@property(assign,copy) NSArray * assets;
-@property(assign,copy) NSString * buyParameters;
-@property(assign,copy) NSString * formattedPrice;
-@property(assign,copy) NSString * offerType;
-@property(assign,copy) NSNumber * price;
+@property (nonatomic, readonly, copy) NSArray *assets;
+@property (nonatomic, readonly, copy) NSString *buyParameters;
+@property (nonatomic, readonly, copy) NSString *formattedPrice;
+@property (nonatomic, readonly, copy) NSString *offerType;
+@property (nonatomic, readonly, copy) NSNumber *price;
 
 + (bool)supportsSecureCoding;
 

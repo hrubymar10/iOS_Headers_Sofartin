@@ -6,7 +6,7 @@
     NSObject<BlockableScrollViewDelegate> *_blockableDelegate;
 }
 
-@property(assign,readwrite) NSObject<BlockableScrollViewDelegate> * blockableDelegate;
+@property (nonatomic) NSObject<BlockableScrollViewDelegate> *blockableDelegate;
 
 - (void).cxx_destruct;
 - (id)blockableDelegate;

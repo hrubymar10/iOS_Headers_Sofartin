@@ -4,8 +4,8 @@
 
 @interface TZPreferencesController : NSObject
 
-@property(assign,readonly) long long loggingLevel;
-@property(assign,readonly) bool updatesEnabled;
+@property (nonatomic, readonly) long long loggingLevel;
+@property (nonatomic, readonly) bool updatesEnabled;
 
 + (id)sharedPreferencesController;
 

@@ -8,9 +8,9 @@
     NSArray *_options;
 }
 
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSArray * options;
-@property(assign,readonly) NSDictionary * optionsDictionary;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSArray *options;
+@property (nonatomic, readonly) NSDictionary *optionsDictionary;
 
 - (void).cxx_destruct;
 - (bool)containsOption:(id)arg1;

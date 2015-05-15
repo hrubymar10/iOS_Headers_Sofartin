@@ -6,9 +6,9 @@
     TSUPair *mResourcePair;
 }
 
-@property(assign,readonly) TSCH3DPyramidBlurFBOResource * finalResource;
-@property(assign,readonly) struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; } size;
-@property(assign,readonly) TSCH3DPyramidBlurFBOResource * temporaryResource;
+@property (nonatomic, readonly) TSCH3DPyramidBlurFBOResource *finalResource;
+@property (nonatomic, readonly) struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; } size;
+@property (nonatomic, readonly) TSCH3DPyramidBlurFBOResource *temporaryResource;
 
 + (id)resourcesWithFBOSize:(struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; })arg1;
 

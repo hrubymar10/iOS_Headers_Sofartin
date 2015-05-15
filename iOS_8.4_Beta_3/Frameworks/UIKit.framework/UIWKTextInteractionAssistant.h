@@ -23,8 +23,8 @@
     NSString *_wordBeforeTap;
 }
 
-@property(assign,retain) UILongPressGestureRecognizer * loupeGesture;
-@property(assign,retain) UITapGestureRecognizer * singleTapGesture;
+@property (nonatomic, readonly, retain) UILongPressGestureRecognizer *loupeGesture;
+@property (nonatomic, readonly, retain) UITapGestureRecognizer *singleTapGesture;
 
 - (id)_asText;
 - (bool)containerAllowsSelection;

@@ -4,8 +4,8 @@
 
 @interface TSCHChartValueAxis : TSCHChartAxis
 
-@property(assign,readonly) NSNumber * userMax;
-@property(assign,readonly) NSNumber * userMin;
+@property (nonatomic, readonly) NSNumber *userMax;
+@property (nonatomic, readonly) NSNumber *userMin;
 
 + (id)axisForInfo:(id)arg1;
 + (unsigned char)styleOwnerPathType;

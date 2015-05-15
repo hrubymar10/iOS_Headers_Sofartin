@@ -13,8 +13,8 @@
     double _sum;
 }
 
-@property(assign,retain) HDLastIntervalInfo * lastIntervalInfo;
-@property(assign,retain) HKStatistics * lastStatistics;
+@property (nonatomic, retain) HDLastIntervalInfo *lastIntervalInfo;
+@property (nonatomic, retain) HKStatistics *lastStatistics;
 
 - (void).cxx_destruct;
 - (id)_addToLastBucket:(id)arg1 error:(id*)arg2;

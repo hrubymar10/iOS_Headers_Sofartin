@@ -8,9 +8,9 @@
     CKRecord *_record;
 }
 
-@property(assign,copy) NSMutableSet * edges;
-@property(assign,readwrite) long long indegree;
-@property(assign,retain) CKRecord * record;
+@property (nonatomic, copy) NSMutableSet *edges;
+@property (nonatomic) long long indegree;
+@property (nonatomic, retain) CKRecord *record;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

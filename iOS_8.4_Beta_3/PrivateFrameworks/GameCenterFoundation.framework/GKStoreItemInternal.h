@@ -15,16 +15,16 @@
     NSURL *_viewItemURL;
 }
 
-@property(assign,retain) NSNumber * adamID;
-@property(assign,retain) NSString * artistName;
-@property(assign,readwrite) float averageUserRating;
-@property(assign,retain) NSDate * expirationDate;
-@property(assign,readwrite) unsigned int numberOfUserRatings;
-@property(assign,readwrite) bool owned;
-@property(assign,retain) NSString * priceDisplay;
-@property(assign,retain) NSURL * shortViewItemURL;
-@property(assign,retain) NSURL * tellAFriendMessageContentsUrl;
-@property(assign,retain) NSURL * viewItemURL;
+@property (nonatomic, retain) NSNumber *adamID;
+@property (nonatomic, retain) NSString *artistName;
+@property (nonatomic) float averageUserRating;
+@property (nonatomic, retain) NSDate *expirationDate;
+@property (nonatomic) unsigned int numberOfUserRatings;
+@property (nonatomic) bool owned;
+@property (nonatomic, retain) NSString *priceDisplay;
+@property (nonatomic, retain) NSURL *shortViewItemURL;
+@property (nonatomic, retain) NSURL *tellAFriendMessageContentsUrl;
+@property (nonatomic, retain) NSURL *viewItemURL;
 
 + (id)secureCodedPropertyKeys;
 

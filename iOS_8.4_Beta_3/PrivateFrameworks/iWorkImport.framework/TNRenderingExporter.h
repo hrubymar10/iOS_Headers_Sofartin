@@ -26,7 +26,7 @@
     unsigned long long mTotalPagesCount;
 }
 
-@property(getter=isRenderingAllSheets,assign,readwrite) bool renderingAllSheets;
+@property (getter=isRenderingAllSheets, nonatomic) bool renderingAllSheets;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

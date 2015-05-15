@@ -11,10 +11,10 @@
     double _tolerance;
 }
 
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) double interval;
-@property(assign,readwrite) bool repeats;
-@property(assign,readwrite) double tolerance;
+@property (nonatomic, readonly, copy) NSString *identifier;
+@property (nonatomic) double interval;
+@property (nonatomic) bool repeats;
+@property (nonatomic) double tolerance;
 
 - (void).cxx_destruct;
 - (id)_criteria;

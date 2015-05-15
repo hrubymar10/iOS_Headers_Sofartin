@@ -14,11 +14,11 @@
     id _terminationHandler;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property id delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)exportedInterfaceSupportingDeputyInterfaces:(id)arg1;
 

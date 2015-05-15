@@ -7,12 +7,12 @@
     MKMapView *_hiddenMapView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <FMF3HiddenMapTrackingHandlerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MKMapView * hiddenMapView;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <FMF3HiddenMapTrackingHandlerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MKMapView *hiddenMapView;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)dealloc;

@@ -22,23 +22,23 @@
     NSMutableArray *_visibleButtons;
 }
 
-@property(assign,retain) UIImage * contactImage;
-@property(assign,retain) UIImageView * contactImageView;
-@property(assign,copy) NSString * entityName;
-@property(assign,retain) UIButton * facetimeVideoButton;
-@property(assign,retain) UIButton * infoButton;
-@property(assign,retain) UILabel * locationLabel;
-@property(assign,copy) NSString * locationString;
-@property(assign,retain) UIButton * mailButton;
-@property(assign,readwrite) double margin;
-@property(assign,retain) UILabel * nameLabel;
-@property(assign,retain) UIButton * phoneButton;
-@property(assign,readwrite) bool showFaceTimeVideoButton;
-@property(assign,readwrite) bool showInfoButton;
-@property(assign,readwrite) bool showMailButton;
-@property(assign,readwrite) bool showPhoneButton;
-@property(assign,readwrite) bool showsLocation;
-@property(assign,retain) NSMutableArray * visibleButtons;
+@property (nonatomic, retain) UIImage *contactImage;
+@property (nonatomic, retain) UIImageView *contactImageView;
+@property (nonatomic, copy) NSString *entityName;
+@property (nonatomic, retain) UIButton *facetimeVideoButton;
+@property (nonatomic, retain) UIButton *infoButton;
+@property (nonatomic, retain) UILabel *locationLabel;
+@property (nonatomic, copy) NSString *locationString;
+@property (nonatomic, retain) UIButton *mailButton;
+@property (nonatomic) double margin;
+@property (nonatomic, retain) UILabel *nameLabel;
+@property (nonatomic, retain) UIButton *phoneButton;
+@property (nonatomic) bool showFaceTimeVideoButton;
+@property (nonatomic) bool showInfoButton;
+@property (nonatomic) bool showMailButton;
+@property (nonatomic) bool showPhoneButton;
+@property (nonatomic) bool showsLocation;
+@property (nonatomic, retain) NSMutableArray *visibleButtons;
 
 + (id)identifier;
 + (double)marginWidth;

@@ -6,18 +6,18 @@
     TSWPStorage *_parentStorage;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isAnchored;
-@property(assign,readonly) bool isAttachedToBodyText;
-@property(assign,readonly) bool isDrawable;
-@property(assign,readonly) bool isPartitioned;
-@property(assign,readonly) bool isSearchable;
-@property(assign,readwrite) TSWPStorage * parentStorage;
-@property(assign,readonly) Class positionerClass;
-@property(assign,readonly) bool specifiesEnabledKnobMask;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isAnchored;
+@property (nonatomic, readonly) bool isAttachedToBodyText;
+@property (nonatomic, readonly) bool isDrawable;
+@property (nonatomic, readonly) bool isPartitioned;
+@property (nonatomic, readonly) bool isSearchable;
+@property (nonatomic) TSWPStorage *parentStorage;
+@property (nonatomic, readonly) Class positionerClass;
+@property (nonatomic, readonly) bool specifiesEnabledKnobMask;
+@property (readonly) Class superclass;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (int)attributeArrayKind;

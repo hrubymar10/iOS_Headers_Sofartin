@@ -4,7 +4,7 @@
 
 @interface SAAceDomainSignal : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * domain;
+@property (nonatomic, copy) NSString *domain;
 
 + (id)aceDomainSignal;
 + (id)aceDomainSignalWithDictionary:(id)arg1 context:(id)arg2;

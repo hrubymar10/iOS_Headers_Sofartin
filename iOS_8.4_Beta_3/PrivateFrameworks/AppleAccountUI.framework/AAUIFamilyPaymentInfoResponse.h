@@ -6,7 +6,7 @@
     AAUIFamilyCreditCard *_creditCard;
 }
 
-@property(assign,retain) AAUIFamilyCreditCard * creditCard;
+@property (nonatomic, retain) AAUIFamilyCreditCard *creditCard;
 
 - (void).cxx_destruct;
 - (id)_parsedDateForServerMonth:(long long)arg1 year:(long long)arg2;

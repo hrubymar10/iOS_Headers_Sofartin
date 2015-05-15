@@ -7,9 +7,9 @@
     NSMutableDictionary *_dictionary;
 }
 
-@property(assign,readonly) NSArray * allKeys;
-@property(assign,readonly) unsigned long long count;
-@property(assign,retain) NSMutableDictionary * dictionary;
+@property (nonatomic, readonly) NSArray *allKeys;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, retain) NSMutableDictionary *dictionary;
 
 - (id)allKeys;
 - (unsigned long long)count;

@@ -13,20 +13,20 @@
     NSString *_variantIdentifier;
 }
 
-@property(assign,readonly) NSString * actionParameters;
-@property(assign,readonly) NSString * buttonText;
-@property(assign,readonly) NSMutableDictionary * cacheRepresentation;
-@property(assign,readonly) NSString * confirmationText;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) long long fileSize;
-@property(assign,readonly) NSString * fileSizeText;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSDictionary * lookupDictionary;
-@property(assign,readonly) long long offerType;
-@property(assign,readonly) float price;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * variantIdentifier;
+@property (nonatomic, readonly) NSString *actionParameters;
+@property (nonatomic, readonly) NSString *buttonText;
+@property (nonatomic, readonly) NSMutableDictionary *cacheRepresentation;
+@property (nonatomic, readonly) NSString *confirmationText;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) long long fileSize;
+@property (nonatomic, readonly) NSString *fileSizeText;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSDictionary *lookupDictionary;
+@property (nonatomic, readonly) long long offerType;
+@property (nonatomic, readonly) float price;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *variantIdentifier;
 
 - (void).cxx_destruct;
 - (void)_addActionParameterWithName:(id)arg1 value:(id)arg2;

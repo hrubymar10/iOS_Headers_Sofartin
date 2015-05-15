@@ -11,11 +11,11 @@
     NSArray *_titles;
 }
 
-@property(assign,readonly) UIView * contentView;
-@property(assign,readwrite) unsigned long long marqueeScrollableIndex;
-@property(assign,readwrite) bool marqueeScrollingActive;
-@property(assign,readwrite) bool showingLoadingUI;
-@property(assign,retain) NSArray * titles;
+@property (nonatomic, readonly) UIView *contentView;
+@property (nonatomic) unsigned long long marqueeScrollableIndex;
+@property (nonatomic) bool marqueeScrollingActive;
+@property (nonatomic) bool showingLoadingUI;
+@property (nonatomic, retain) NSArray *titles;
 
 - (void).cxx_destruct;
 - (id)_addLabel:(unsigned long long)arg1;

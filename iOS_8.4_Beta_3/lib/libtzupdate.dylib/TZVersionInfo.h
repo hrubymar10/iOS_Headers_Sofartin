@@ -15,17 +15,17 @@
     NSString *_tzDataVersion;
 }
 
-@property(assign,retain) NSArray * alertZones;
-@property(assign,retain) NSString * bundleVersion;
-@property(assign,retain) NSArray * changedFiles;
-@property(assign,retain) NSURL * diskLocation;
-@property(assign,retain) NSString * icuChecksumBaseline;
-@property(assign,retain) NSString * icuChecksumCurrent;
-@property(assign,retain) NSString * icuNameBaseline;
-@property(assign,retain) NSString * icuNameCurrent;
-@property(assign,retain) NSNumber * shouldAlertAll;
-@property(assign,retain) NSString * tzDataVersion;
-@property(assign,readonly) NSString * versionString;
+@property (retain) NSArray *alertZones;
+@property (retain) NSString *bundleVersion;
+@property (retain) NSArray *changedFiles;
+@property (retain) NSURL *diskLocation;
+@property (retain) NSString *icuChecksumBaseline;
+@property (retain) NSString *icuChecksumCurrent;
+@property (retain) NSString *icuNameBaseline;
+@property (retain) NSString *icuNameCurrent;
+@property (retain) NSNumber *shouldAlertAll;
+@property (retain) NSString *tzDataVersion;
+@property (readonly) NSString *versionString;
 
 + (id)_tzDataVersionFromZoneinfoDirectory:(id)arg1 withError:(id*)arg2;
 + (bool)_verifyVersionInfoDictionary:(id)arg1;

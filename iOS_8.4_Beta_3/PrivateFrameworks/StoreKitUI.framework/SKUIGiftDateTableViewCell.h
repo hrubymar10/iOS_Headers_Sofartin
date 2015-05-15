@@ -12,10 +12,10 @@
     UIView *_topBorderView;
 }
 
-@property(getter=isChecked,assign,readwrite) bool checked;
-@property(assign,copy) NSString * dateString;
-@property(assign,copy) NSString * label;
-@property(assign,copy) NSString * placeholder;
+@property (getter=isChecked, nonatomic) bool checked;
+@property (nonatomic, copy) NSString *dateString;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, copy) NSString *placeholder;
 
 - (void).cxx_destruct;
 - (id)_labelColor;

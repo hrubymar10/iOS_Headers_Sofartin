@@ -14,23 +14,23 @@
     GEOLocation *_userLocation;
 }
 
-@property(assign,retain) NSString * countryCode;
-@property(assign,retain) NSData * devicePushToken;
-@property(assign,readonly) bool hasCountryCode;
-@property(assign,readonly) bool hasDevicePushToken;
-@property(assign,readonly) bool hasHwMachine;
-@property(assign,readonly) bool hasInputLanguage;
-@property(assign,readonly) bool hasOsRelease;
-@property(assign,readonly) bool hasUserCredentials;
-@property(assign,readonly) bool hasUserEmail;
-@property(assign,readonly) bool hasUserLocation;
-@property(assign,retain) NSString * hwMachine;
-@property(assign,retain) NSString * inputLanguage;
-@property(assign,retain) NSString * osRelease;
-@property(assign,retain) NSMutableArray * requestElements;
-@property(assign,retain) GEORPUserCredentials * userCredentials;
-@property(assign,retain) NSString * userEmail;
-@property(assign,retain) GEOLocation * userLocation;
+@property (nonatomic, retain) NSString *countryCode;
+@property (nonatomic, retain) NSData *devicePushToken;
+@property (nonatomic, readonly) bool hasCountryCode;
+@property (nonatomic, readonly) bool hasDevicePushToken;
+@property (nonatomic, readonly) bool hasHwMachine;
+@property (nonatomic, readonly) bool hasInputLanguage;
+@property (nonatomic, readonly) bool hasOsRelease;
+@property (nonatomic, readonly) bool hasUserCredentials;
+@property (nonatomic, readonly) bool hasUserEmail;
+@property (nonatomic, readonly) bool hasUserLocation;
+@property (nonatomic, retain) NSString *hwMachine;
+@property (nonatomic, retain) NSString *inputLanguage;
+@property (nonatomic, retain) NSString *osRelease;
+@property (nonatomic, retain) NSMutableArray *requestElements;
+@property (nonatomic, retain) GEORPUserCredentials *userCredentials;
+@property (nonatomic, retain) NSString *userEmail;
+@property (nonatomic, retain) GEOLocation *userLocation;
 
 - (void)addRequestElement:(id)arg1;
 - (void)clearRequestElements;

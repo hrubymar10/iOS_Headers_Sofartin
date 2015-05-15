@@ -7,8 +7,8 @@
     GEOPhotoInfo *_info;
 }
 
-@property(assign,copy) id imageHandler;
-@property(assign,retain) GEOPhotoInfo * info;
+@property (nonatomic, copy) id imageHandler;
+@property (retain) GEOPhotoInfo *info;
 
 + (id)requestWithMapItem:(id)arg1 info:(id)arg2;
 

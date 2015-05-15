@@ -4,7 +4,7 @@
 
 @interface UISiriTaskAction : BSAction
 
-@property(assign,retain) AFSiriTask * payload;
+@property (nonatomic, readonly, retain) AFSiriTask *payload;
 
 - (long long)UIActionType;
 - (id)initWithInfo:(id)arg1 timeout:(double)arg2 forResponseOnQueue:(id)arg3 withHandler:(id)arg4;

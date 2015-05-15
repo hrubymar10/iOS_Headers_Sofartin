@@ -16,16 +16,16 @@
     unsigned long long _type;
 }
 
-@property(assign,retain) NSString * client;
-@property(assign,readwrite) unsigned long long duration;
-@property(assign,readonly) bool hasClient;
-@property(assign,readwrite) bool hasDuration;
-@property(assign,readwrite) bool hasResult;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) unsigned long long result;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned long long type;
+@property (nonatomic, retain) NSString *client;
+@property (nonatomic) unsigned long long duration;
+@property (nonatomic, readonly) bool hasClient;
+@property (nonatomic) bool hasDuration;
+@property (nonatomic) bool hasResult;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasType;
+@property (nonatomic) unsigned long long result;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned long long type;
 
 - (id)client;
 - (void)copyTo:(id)arg1;

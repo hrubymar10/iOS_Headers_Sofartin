@@ -9,7 +9,7 @@
     NSMutableDictionary *_newRemoteIDsByMessageID;
 }
 
-@property(assign,retain) MFError * error;
+@property (nonatomic, retain) MFError *error;
 
 - (void)dealloc;
 - (id)error;

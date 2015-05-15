@@ -88,12 +88,12 @@
     } _visiblePreviewRect;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PLCameraPanoramaViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CALayer * panoramaPreviewLayer;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PLCameraPanoramaViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CALayer *panoramaPreviewLayer;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_arrowWasTapped:(id)arg1;

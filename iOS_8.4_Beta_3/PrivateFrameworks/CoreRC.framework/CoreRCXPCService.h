@@ -9,16 +9,16 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readonly) NSSet * connections;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CoreRCManagerProvider * manager;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSSet *connections;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CoreRCManagerProvider *manager;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
 
 - (void)addExternalDeviceOnBusAsync:(id)arg1 reply:(id)arg2;
 - (void)bus:(id)arg1 deviceHasBeenAdded:(id)arg2;

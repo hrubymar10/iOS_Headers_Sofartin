@@ -6,7 +6,7 @@
     bool _adjustZoomScaleAfterRotation;
 }
 
-@property(assign,readwrite) bool adjustZoomScaleAfterRotation;
+@property (nonatomic) bool adjustZoomScaleAfterRotation;
 
 - (void)_centerContentIfNecessary;
 - (bool)adjustZoomScaleAfterRotation;

@@ -10,11 +10,11 @@
     UILabel *_writeReviewLabel;
 }
 
-@property(assign,retain) NSAttributedString * checkInTitle;
-@property(assign,readwrite) <MKPlaceReviewsViewCheckInWriteCellDelegate> * delegate;
-@property(assign,retain) NSArray * marginConstraints;
-@property(assign,retain) NSMutableArray * scaledConstraints;
-@property(assign,retain) NSAttributedString * writeReviewTitle;
+@property (nonatomic, retain) NSAttributedString *checkInTitle;
+@property (nonatomic) <MKPlaceReviewsViewCheckInWriteCellDelegate> *delegate;
+@property (nonatomic, retain) NSArray *marginConstraints;
+@property (nonatomic, retain) NSMutableArray *scaledConstraints;
+@property (nonatomic, retain) NSAttributedString *writeReviewTitle;
 
 + (double)intrinsicContentHeight;
 + (id)reuseIdentifier;

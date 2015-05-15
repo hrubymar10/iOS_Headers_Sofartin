@@ -9,12 +9,12 @@
     GEOMapServiceTraits *_traits;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) GEOMapRegion * resultBoundingRegion;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) GEOMapServiceTraits * traits;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) GEOMapRegion *resultBoundingRegion;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) GEOMapServiceTraits *traits;
 
 - (void)_batchReverseGeocodeWithRequest:(id)arg1 handler:(id)arg2 networkActivity:(id)arg3;
 - (void)applyToCorrectedSearch:(id)arg1;

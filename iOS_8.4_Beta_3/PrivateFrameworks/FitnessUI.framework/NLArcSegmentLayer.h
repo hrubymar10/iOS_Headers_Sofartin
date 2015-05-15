@@ -9,10 +9,10 @@
     double _radius;
 }
 
-@property(assign,readwrite) double arcLineWidth;
-@property(assign,readwrite) long long numberOfSegments;
-@property(assign,readwrite) double percentageFull;
-@property(assign,readwrite) double radius;
+@property (nonatomic) double arcLineWidth;
+@property (nonatomic) long long numberOfSegments;
+@property (nonatomic) double percentageFull;
+@property (nonatomic) double radius;
 
 - (void)_regeneratePath;
 - (id)actionForKey:(id)arg1;

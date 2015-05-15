@@ -11,8 +11,8 @@
     bool _realEnabledState;
 }
 
-@property(assign,readwrite) long long AVCaptureState;
-@property(assign,readwrite) bool isForceDisabled;
+@property (nonatomic) long long AVCaptureState;
+@property (nonatomic) bool isForceDisabled;
 
 - (void).cxx_destruct;
 - (long long)AVCaptureState;

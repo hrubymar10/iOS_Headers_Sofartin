@@ -6,7 +6,7 @@
     AVScheduledAudioParametersInternal *_scheduledParametersInternal;
 }
 
-@property(getter=_ramps,setter=_setRamps:,assign,copy) NSArray * ramps;
+@property (getter=_ramps, setter=_setRamps:, nonatomic, copy) NSArray *ramps;
 
 - (id)_audioVolumeCurve;
 - (id)_ramps;

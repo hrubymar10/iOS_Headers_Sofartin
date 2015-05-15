@@ -8,9 +8,9 @@
     unsigned long long _style;
 }
 
-@property(assign,retain) UIImageView * appleLogo;
-@property(assign,readwrite) double currentProgress;
-@property(assign,readwrite) unsigned long long style;
+@property (nonatomic, retain) UIImageView *appleLogo;
+@property (nonatomic) double currentProgress;
+@property (nonatomic) unsigned long long style;
 
 - (void).cxx_destruct;
 - (struct CGSize { double x1; double x2; })_size;

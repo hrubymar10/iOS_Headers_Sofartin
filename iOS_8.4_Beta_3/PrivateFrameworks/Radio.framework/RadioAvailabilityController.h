@@ -8,7 +8,7 @@
     bool _radioAvailable;
 }
 
-@property(getter=isRadioAvailable,assign,readonly) bool radioAvailable;
+@property (getter=isRadioAvailable, nonatomic, readonly) bool radioAvailable;
 
 - (void).cxx_destruct;
 - (id)_currentStoreFrontIdentifier;

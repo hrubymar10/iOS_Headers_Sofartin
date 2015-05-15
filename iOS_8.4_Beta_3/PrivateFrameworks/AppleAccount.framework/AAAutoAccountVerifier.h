@@ -11,11 +11,11 @@
     MSSearch *_search;
 }
 
-@property(assign,retain) ACAccount * account;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) ACAccount *account;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_resendVerificationEmailForAccount:(id)arg1 completion:(id)arg2;

@@ -10,7 +10,7 @@
     bool _loadingAchievements;
 }
 
-@property(assign,readwrite) <FIUIAchievementsModelDelegate> * delegate;
+@property (nonatomic) <FIUIAchievementsModelDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)achievements;

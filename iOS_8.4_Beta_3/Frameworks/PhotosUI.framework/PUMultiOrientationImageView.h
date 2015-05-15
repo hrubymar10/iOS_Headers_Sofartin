@@ -9,8 +9,8 @@
     NSArray *_orientedSubviews;
 }
 
-@property(assign,readwrite) bool allowsEdgeAntialiasing;
-@property(assign,retain) UIImage * image;
+@property (nonatomic) bool allowsEdgeAntialiasing;
+@property (nonatomic, retain) UIImage *image;
 
 - (void).cxx_destruct;
 - (void)_updateLayout;

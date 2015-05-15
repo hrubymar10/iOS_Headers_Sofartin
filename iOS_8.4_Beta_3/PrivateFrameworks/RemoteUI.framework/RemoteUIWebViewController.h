@@ -11,14 +11,14 @@
     UIWebView *_webView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RemoteUIWebViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool scalesPageToFit;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIToolbar * toolbar;
-@property(assign,readonly) UIWebView * webView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RemoteUIWebViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool scalesPageToFit;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UIToolbar *toolbar;
+@property (nonatomic, readonly) UIWebView *webView;
 
 - (void).cxx_destruct;
 - (void)dealloc;

@@ -12,13 +12,13 @@
     NSUUID *_registryPairingUUID;
 }
 
-@property(getter=isActivationFinished,assign,readonly) bool activationFinished;
-@property(assign,readwrite) <HDHealthDaemon> * healthDaemon;
-@property(assign,readonly) NSUUID * healthPairingUUID;
-@property(assign,readonly) NSDate * lastActivationAttempt;
-@property(assign,copy) NSString * pairedStoragePath;
-@property(assign,readonly) NSUUID * persistentPairingUUID;
-@property(assign,readonly) NSUUID * registryPairingUUID;
+@property (getter=isActivationFinished, nonatomic, readonly) bool activationFinished;
+@property (nonatomic) <HDHealthDaemon> *healthDaemon;
+@property (nonatomic, readonly) NSUUID *healthPairingUUID;
+@property (nonatomic, readonly) NSDate *lastActivationAttempt;
+@property (nonatomic, readonly, copy) NSString *pairedStoragePath;
+@property (nonatomic, readonly) NSUUID *persistentPairingUUID;
+@property (nonatomic, readonly) NSUUID *registryPairingUUID;
 
 + (id)_activePairingValuesWithHealthDaemon:(id)arg1 error:(id*)arg2;
 + (id)nanoPairingPersistentInfoWithHealthDaemon:(id)arg1;

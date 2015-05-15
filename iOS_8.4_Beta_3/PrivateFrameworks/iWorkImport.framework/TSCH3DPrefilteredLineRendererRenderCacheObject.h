@@ -7,7 +7,7 @@
     TSCH3DStrokePatternTexture *mStrokeTexture;
 }
 
-@property(assign,readwrite) bool didRenderOnce;
+@property (nonatomic) bool didRenderOnce;
 
 - (void)allocateDynamicResourcesIntoArray:(id)arg1;
 - (void)dealloc;

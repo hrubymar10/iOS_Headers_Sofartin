@@ -31,21 +31,21 @@
     double _unrevealAnimationDuration;
 }
 
-@property(assign,readwrite) double alphaInsideRing;
-@property(assign,readwrite) double alphaOutsideRing;
-@property(assign,readwrite) int animationStyle;
-@property(assign,retain) UIColor * colorInsideRing;
-@property(assign,retain) UIColor * colorOutsideRing;
-@property(assign,readwrite) double cornerRadius;
-@property(assign,readwrite) double defaultRingStrokeWidth;
-@property(assign,readwrite) double gammaBoost;
-@property(assign,readwrite) bool gammaBoostInside;
-@property(assign,readwrite) bool gammaBoostOuterRing;
-@property(assign,readwrite) double minimumRevealingScale;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } paddingOutsideRing;
-@property(assign,readwrite) double revealAnimationDuration;
-@property(assign,readonly) struct CGSize { double x1; double x2; } ringSize;
-@property(assign,readwrite) double unrevealAnimationDuration;
+@property (nonatomic) double alphaInsideRing;
+@property (nonatomic) double alphaOutsideRing;
+@property (nonatomic) int animationStyle;
+@property (nonatomic, retain) UIColor *colorInsideRing;
+@property (nonatomic, retain) UIColor *colorOutsideRing;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) double defaultRingStrokeWidth;
+@property (nonatomic) double gammaBoost;
+@property (nonatomic) bool gammaBoostInside;
+@property (nonatomic) bool gammaBoostOuterRing;
+@property (nonatomic) double minimumRevealingScale;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } paddingOutsideRing;
+@property (nonatomic) double revealAnimationDuration;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } ringSize;
+@property (nonatomic) double unrevealAnimationDuration;
 
 - (void)_adjustGammaBoostIfNecessary;
 - (void)_animateForReveal:(bool)arg1 withDuration:(float)arg2 delay:(double)arg3;

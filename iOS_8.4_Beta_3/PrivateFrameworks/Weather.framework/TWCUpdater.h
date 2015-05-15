@@ -9,8 +9,8 @@
     id _weatherCompletionUpdaterHandler;
 }
 
-@property(assign,readwrite) <WeatherUpdaterDelegate> * delegate;
-@property(assign,copy) id weatherCompletionUpdaterHandler;
+@property (nonatomic) <WeatherUpdaterDelegate> *delegate;
+@property (nonatomic, copy) id weatherCompletionUpdaterHandler;
 
 - (id)_GMTOffsetRegularExpression;
 - (id)_ISO8601Calendar;

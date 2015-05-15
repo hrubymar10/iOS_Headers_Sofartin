@@ -6,8 +6,8 @@
     AVCompositionInternal *_priv;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } naturalSize;
-@property(assign,readonly) NSArray * tracks;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } naturalSize;
+@property (nonatomic, readonly) NSArray *tracks;
 
 + (void)initialize;
 

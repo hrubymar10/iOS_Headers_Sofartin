@@ -14,12 +14,12 @@
     unsigned long long _tileKeysSpace;
 }
 
-@property(assign,readwrite) bool hasIdentifier;
-@property(assign,readwrite) bool hasStyle;
-@property(assign,readwrite) unsigned int identifier;
-@property(assign,readwrite) int style;
-@property(assign,readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; }* tileKeys;
-@property(assign,readonly) unsigned long long tileKeysCount;
+@property (nonatomic) bool hasIdentifier;
+@property (nonatomic) bool hasStyle;
+@property (nonatomic) unsigned int identifier;
+@property (nonatomic) int style;
+@property (nonatomic, readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; }*tileKeys;
+@property (nonatomic, readonly) unsigned long long tileKeysCount;
 
 - (void)addTileKey:(struct { unsigned int x1; unsigned int x2; unsigned int x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; })arg1;
 - (void)clearTileKeys;

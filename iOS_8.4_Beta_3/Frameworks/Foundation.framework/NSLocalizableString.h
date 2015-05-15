@@ -7,8 +7,8 @@
     NSString *_stringsFileKey;
 }
 
-@property(assign,copy) NSString * developmentLanguageString;
-@property(assign,copy) NSString * stringsFileKey;
+@property (readonly, copy) NSString *developmentLanguageString;
+@property (readonly, copy) NSString *stringsFileKey;
 
 + (id)localizableStringWithStringsFileKey:(id)arg1 developmentLanguageString:(id)arg2;
 

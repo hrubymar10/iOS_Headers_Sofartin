@@ -67,26 +67,26 @@
     NSArray *_viewControllers;
 }
 
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } additionalTabBarButtonsContainerPositionOffset;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } additionalTabBarPalettePositionOffset;
-@property(assign,readonly) NSArray * allViewControllers;
-@property(assign,readwrite) bool chargeEnabledOnTabBarButtonsContainer;
-@property(assign,readonly) double contentViewControllerBottomInsetAdjustment;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUITabBarControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) UIViewController * floatingOverlayViewController;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UINavigationController * moreNavigationController;
-@property(assign,readwrite) bool scrollEnabled;
-@property(assign,readwrite) unsigned long long selectedIndex;
-@property(assign,readwrite) UIViewController * selectedViewController;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIView * tabBar;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } tabBarButtonsContainerFrame;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } tabBarPaletteFrame;
-@property(assign,retain) UIViewController * transientViewController;
-@property(assign,copy) NSArray * viewControllers;
+@property (nonatomic) struct UIOffset { double x1; double x2; } additionalTabBarButtonsContainerPositionOffset;
+@property (nonatomic) struct UIOffset { double x1; double x2; } additionalTabBarPalettePositionOffset;
+@property (nonatomic, readonly) NSArray *allViewControllers;
+@property (nonatomic) bool chargeEnabledOnTabBarButtonsContainer;
+@property (nonatomic, readonly) double contentViewControllerBottomInsetAdjustment;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUITabBarControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) UIViewController *floatingOverlayViewController;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UINavigationController *moreNavigationController;
+@property (nonatomic) bool scrollEnabled;
+@property (nonatomic) unsigned long long selectedIndex;
+@property (nonatomic) UIViewController *selectedViewController;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UIView *tabBar;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } tabBarButtonsContainerFrame;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } tabBarPaletteFrame;
+@property (nonatomic, retain) UIViewController *transientViewController;
+@property (nonatomic, copy) NSArray *viewControllers;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 

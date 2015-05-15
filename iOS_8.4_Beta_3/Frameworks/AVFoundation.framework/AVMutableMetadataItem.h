@@ -6,14 +6,14 @@
     AVMutableMetadataItemInternal *_mutablePriv;
 }
 
-@property(assign,copy) NSString * dataType;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } duration;
-@property(assign,copy) NSString * extendedLanguageTag;
-@property(assign,copy) NSDictionary * extraAttributes;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSLocale * locale;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } time;
-@property(assign,copy) <NSObject><NSCopying> * value;
+@property (copy) NSString *dataType;
+@property struct { long long x1; int x2; unsigned int x3; long long x4; } duration;
+@property (copy) NSString *extendedLanguageTag;
+@property (copy) NSDictionary *extraAttributes;
+@property (copy) NSString *identifier;
+@property (copy) NSLocale *locale;
+@property struct { long long x1; int x2; unsigned int x3; long long x4; } time;
+@property (copy) <NSObject><NSCopying> *value;
 
 + (id)keyPathsForValuesAffectingIdentifier;
 + (id)metadataItem;

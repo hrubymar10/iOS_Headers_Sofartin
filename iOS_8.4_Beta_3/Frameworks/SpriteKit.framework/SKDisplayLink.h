@@ -19,11 +19,11 @@
     NSTimer *_timer;
 }
 
-@property(assign,readwrite) bool asynchronous;
-@property(assign,readwrite) long long frameInterval;
-@property(assign,readwrite) unsigned long long maxQueuedFrameCount;
-@property(assign,readwrite) unsigned long long mode;
-@property(getter=isPaused,assign,readwrite) bool paused;
+@property (nonatomic) bool asynchronous;
+@property (nonatomic) long long frameInterval;
+@property unsigned long long maxQueuedFrameCount;
+@property (nonatomic) unsigned long long mode;
+@property (getter=isPaused, nonatomic) bool paused;
 
 + (id)displayLinkWithBlock:(id)arg1 queue:(id)arg2;
 

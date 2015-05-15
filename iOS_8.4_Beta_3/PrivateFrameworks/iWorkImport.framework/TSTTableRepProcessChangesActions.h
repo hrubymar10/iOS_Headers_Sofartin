@@ -39,20 +39,20 @@
     bool _updateEditorRemainders;
 }
 
-@property(assign,readwrite) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } dirtyCellRange;
-@property(assign,readwrite) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } dirtyStrokeRange;
-@property(assign,readwrite) bool hideChromeContextMenuButton;
-@property(assign,readwrite) bool hideStepperHUD;
-@property(assign,readwrite) bool invalidateAllChrome;
-@property(assign,readwrite) bool invalidateAllChromeCaches;
-@property(assign,readwrite) bool invalidateColumnChrome;
-@property(assign,readwrite) bool invalidateKnobs;
-@property(assign,readwrite) bool invalidateRowChrome;
-@property(assign,readwrite) bool invalidateSelection;
-@property(assign,readwrite) bool invalidateTableName;
-@property(assign,readwrite) bool setNeedsDisplay;
-@property(assign,readwrite) bool syncReferenceHighlightState;
-@property(assign,readwrite) bool updateEditorRemainders;
+@property (nonatomic) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } dirtyCellRange;
+@property (nonatomic) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } dirtyStrokeRange;
+@property (nonatomic) bool hideChromeContextMenuButton;
+@property (nonatomic) bool hideStepperHUD;
+@property (nonatomic) bool invalidateAllChrome;
+@property (nonatomic) bool invalidateAllChromeCaches;
+@property (nonatomic) bool invalidateColumnChrome;
+@property (nonatomic) bool invalidateKnobs;
+@property (nonatomic) bool invalidateRowChrome;
+@property (nonatomic) bool invalidateSelection;
+@property (nonatomic) bool invalidateTableName;
+@property (nonatomic) bool setNeedsDisplay;
+@property (nonatomic) bool syncReferenceHighlightState;
+@property (nonatomic) bool updateEditorRemainders;
 
 - (id).cxx_construct;
 - (struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; })dirtyCellRange;

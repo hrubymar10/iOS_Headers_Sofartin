@@ -12,11 +12,11 @@
     unsigned int _resyncID;
 }
 
-@property(assign,readwrite) bool hasLastKnownResyncID;
-@property(assign,readwrite) bool hasResyncID;
-@property(assign,readwrite) unsigned int lastKnownResyncID;
-@property(assign,retain) NPKProtoHash * libraryHash;
-@property(assign,readwrite) unsigned int resyncID;
+@property (nonatomic) bool hasLastKnownResyncID;
+@property (nonatomic) bool hasResyncID;
+@property (nonatomic) unsigned int lastKnownResyncID;
+@property (nonatomic, retain) NPKProtoHash *libraryHash;
+@property (nonatomic) unsigned int resyncID;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

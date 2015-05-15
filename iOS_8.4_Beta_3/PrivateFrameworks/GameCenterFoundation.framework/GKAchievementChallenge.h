@@ -6,7 +6,7 @@
     GKAchievement *_achievement;
 }
 
-@property(assign,retain) GKAchievement * achievement;
+@property (nonatomic, retain) GKAchievement *achievement;
 
 + (bool)instancesRespondToSelector:(SEL)arg1;
 

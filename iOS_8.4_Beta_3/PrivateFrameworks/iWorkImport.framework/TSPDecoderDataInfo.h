@@ -9,14 +9,14 @@
     NSString *_preferredFilename;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) TSPDigest * digest;
-@property(assign,readonly) NSString * externalFilePath;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long identifier;
-@property(assign,readonly) NSString * preferredFilename;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) TSPDigest *digest;
+@property (nonatomic, readonly) NSString *externalFilePath;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long identifier;
+@property (nonatomic, readonly) NSString *preferredFilename;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)digest;

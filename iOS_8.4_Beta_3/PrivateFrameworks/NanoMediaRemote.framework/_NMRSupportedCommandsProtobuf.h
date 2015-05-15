@@ -6,7 +6,7 @@
     NSMutableArray *_supportedCommands;
 }
 
-@property(assign,retain) NSMutableArray * supportedCommands;
+@property (nonatomic, retain) NSMutableArray *supportedCommands;
 
 - (void).cxx_destruct;
 - (void)addSupportedCommand:(id)arg1;

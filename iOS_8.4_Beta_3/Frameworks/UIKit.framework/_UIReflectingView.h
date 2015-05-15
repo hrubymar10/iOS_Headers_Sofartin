@@ -8,9 +8,9 @@
     double _reflectionAlpha;
 }
 
-@property(assign,retain) UIView * containerView;
-@property(assign,readwrite) double reflectionAlpha;
-@property(assign,readwrite) double reflectionFraction;
+@property (nonatomic, readonly, retain) UIView *containerView;
+@property (nonatomic) double reflectionAlpha;
+@property (nonatomic) double reflectionFraction;
 
 - (id)_gradientLayer;
 - (void)_updateGradientColors;

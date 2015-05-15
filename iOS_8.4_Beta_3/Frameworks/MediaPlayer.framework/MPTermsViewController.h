@@ -12,11 +12,11 @@
     UIView *_topSpacerView;
 }
 
-@property(assign,retain) UIActivityIndicatorView * activityIndicatorView;
-@property(assign,retain) UIView * bottomSpacerView;
-@property(assign,readwrite) <MPTermsViewControllerDelegate> * delegate;
-@property(assign,retain) UITextView * termsTextView;
-@property(assign,retain) UIView * topSpacerView;
+@property (nonatomic, retain) UIActivityIndicatorView *activityIndicatorView;
+@property (nonatomic, retain) UIView *bottomSpacerView;
+@property (nonatomic) <MPTermsViewControllerDelegate> *delegate;
+@property (nonatomic, retain) UITextView *termsTextView;
+@property (nonatomic, retain) UIView *topSpacerView;
 
 - (void).cxx_destruct;
 - (void)_acceptAction:(id)arg1;

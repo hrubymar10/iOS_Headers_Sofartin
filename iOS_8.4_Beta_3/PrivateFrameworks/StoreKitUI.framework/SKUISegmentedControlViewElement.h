@@ -7,11 +7,11 @@
     NSString *_moreListTitle;
 }
 
-@property(assign,readonly) SKUIDividerViewElement * bottomDivider;
-@property(assign,readonly) long long initialSelectedItemIndex;
-@property(assign,readonly) long long maximumNumberOfVisibleItems;
-@property(assign,readonly) NSString * moreListTitle;
-@property(assign,readonly) NSArray * segmentItemTitles;
+@property (nonatomic, readonly) SKUIDividerViewElement *bottomDivider;
+@property (nonatomic, readonly) long long initialSelectedItemIndex;
+@property (nonatomic, readonly) long long maximumNumberOfVisibleItems;
+@property (nonatomic, readonly) NSString *moreListTitle;
+@property (nonatomic, readonly) NSArray *segmentItemTitles;
 
 - (void).cxx_destruct;
 - (void)_enumerateItemElementsUsingBlock:(id)arg1;

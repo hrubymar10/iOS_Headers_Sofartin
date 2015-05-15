@@ -9,10 +9,10 @@
     SCRCPhotoEvaluatorResultPeople *_peopleResult;
 }
 
-@property(assign,readonly) SCRCPhotoEvaluatorResult * blurResult;
-@property(assign,readonly) SCRCPhotoEvaluatorResult * colorResult;
-@property(assign,readonly) SCRCPhotoEvaluatorResult * luminanceResult;
-@property(assign,readonly) SCRCPhotoEvaluatorResultPeople * peopleResult;
+@property (nonatomic, readonly) SCRCPhotoEvaluatorResult *blurResult;
+@property (nonatomic, readonly) SCRCPhotoEvaluatorResult *colorResult;
+@property (nonatomic, readonly) SCRCPhotoEvaluatorResult *luminanceResult;
+@property (nonatomic, readonly) SCRCPhotoEvaluatorResultPeople *peopleResult;
 
 - (id)blurResult;
 - (id)colorResult;

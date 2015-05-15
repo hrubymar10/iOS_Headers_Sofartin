@@ -12,8 +12,8 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,copy) NSString * title;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })contentInsets;

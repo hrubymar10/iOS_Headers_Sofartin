@@ -29,21 +29,21 @@
     NSHashTable *_writtenObjects;
 }
 
-@property(assign,readonly) unsigned long long encodedLength;
-@property(assign,readonly) long long identifier;
-@property(assign,readonly) bool isStoredOutsideObjectArchive;
-@property(assign,readonly) bool isTransientComponent;
-@property(assign,readonly) NSString * locator;
-@property(assign,readonly) bool modified;
-@property(assign,readonly) bool needsArchiving;
-@property(assign,readonly) NSDictionary * objectUUIDToIdentifierDictionary;
-@property(assign,readonly) unsigned char packageIdentifier;
-@property(assign,readonly) bool persisted;
-@property(assign,readonly) NSString * preferredLocator;
-@property(assign,readonly) unsigned long long readVersion;
-@property(assign,retain) TSPObject * rootObject;
-@property(assign,readonly) unsigned long long saveToken;
-@property(assign,readonly) unsigned long long writeVersion;
+@property (nonatomic, readonly) unsigned long long encodedLength;
+@property (nonatomic, readonly) long long identifier;
+@property (nonatomic, readonly) bool isStoredOutsideObjectArchive;
+@property (nonatomic, readonly) bool isTransientComponent;
+@property (nonatomic, readonly) NSString *locator;
+@property (readonly) bool modified;
+@property (readonly) bool needsArchiving;
+@property (nonatomic, readonly) NSDictionary *objectUUIDToIdentifierDictionary;
+@property (readonly) unsigned char packageIdentifier;
+@property (readonly) bool persisted;
+@property (nonatomic, readonly) NSString *preferredLocator;
+@property (nonatomic, readonly) unsigned long long readVersion;
+@property (retain) TSPObject *rootObject;
+@property (nonatomic, readonly) unsigned long long saveToken;
+@property (nonatomic, readonly) unsigned long long writeVersion;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

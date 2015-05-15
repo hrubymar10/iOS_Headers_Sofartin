@@ -6,7 +6,7 @@
     UITableViewCell *_tableCell;
 }
 
-@property(assign,readwrite) UITableViewCell * tableCell;
+@property (nonatomic) UITableViewCell *tableCell;
 
 - (void)setTableCell:(id)arg1;
 - (void)setText:(id)arg1;

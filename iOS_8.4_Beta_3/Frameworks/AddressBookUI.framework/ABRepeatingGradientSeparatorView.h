@@ -8,10 +8,10 @@
     UIColor *_startColor;
 }
 
-@property(assign,retain) UIColor * endColor;
-@property(assign,readonly) NSArray * gradientColors;
-@property(assign,readwrite) long long lineCount;
-@property(assign,retain) UIColor * startColor;
+@property (nonatomic, retain) UIColor *endColor;
+@property (nonatomic, readonly) NSArray *gradientColors;
+@property (nonatomic) long long lineCount;
+@property (nonatomic, retain) UIColor *startColor;
 
 - (void)_updateGradients;
 - (void)dealloc;

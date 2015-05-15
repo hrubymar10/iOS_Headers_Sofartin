@@ -14,13 +14,13 @@
     NSString *_tokenType;
 }
 
-@property(assign,retain) NSString * language;
-@property(assign,retain) NSString * lemma;
-@property(assign,retain) NSString * partOfSpeech;
-@property(assign,retain) NSString * string;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } tokenRange;
-@property(assign,retain) NSString * tokenType;
-@property(assign,readonly) NSString * word;
+@property (retain) NSString *language;
+@property (retain) NSString *lemma;
+@property (retain) NSString *partOfSpeech;
+@property (retain) NSString *string;
+@property struct _NSRange { unsigned long long x1; unsigned long long x2; } tokenRange;
+@property (retain) NSString *tokenType;
+@property (readonly) NSString *word;
 
 - (void).cxx_destruct;
 - (id)description;

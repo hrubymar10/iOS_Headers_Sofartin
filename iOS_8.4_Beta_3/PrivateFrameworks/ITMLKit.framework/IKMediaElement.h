@@ -4,9 +4,9 @@
 
 @interface IKMediaElement : IKViewElement
 
-@property(assign,retain) NSArray * assets;
-@property(assign,readonly) IKViewElement * relatedContent;
-@property(assign,readonly) unsigned long long scrubBehavior;
+@property (nonatomic, readonly, retain) NSArray *assets;
+@property (nonatomic, readonly) IKViewElement *relatedContent;
+@property (nonatomic, readonly) unsigned long long scrubBehavior;
 
 - (id)assets;
 - (id)relatedContent;

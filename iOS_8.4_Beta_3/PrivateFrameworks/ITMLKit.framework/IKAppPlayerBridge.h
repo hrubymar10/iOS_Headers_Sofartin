@@ -8,11 +8,11 @@
     long long _state;
 }
 
-@property(assign,readonly) <IKAppPlayer> * appPlayer;
-@property(assign,readonly) IKAppMediaItemBridge * currentMediaItem;
-@property(assign,readonly) IKJSPlayer * jsPlayer;
-@property(assign,readwrite) IKAppPlaylistBridge * playlist;
-@property(assign,readonly) long long state;
+@property (nonatomic, readonly) <IKAppPlayer> *appPlayer;
+@property (nonatomic, readonly) IKAppMediaItemBridge *currentMediaItem;
+@property (nonatomic, readonly) IKJSPlayer *jsPlayer;
+@property (nonatomic) IKAppPlaylistBridge *playlist;
+@property (nonatomic, readonly) long long state;
 
 - (void).cxx_destruct;
 - (id)appPlayer;

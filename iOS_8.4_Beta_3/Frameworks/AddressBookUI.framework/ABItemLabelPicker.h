@@ -23,15 +23,15 @@
     UITableView *_tableView;
 }
 
-@property(getter=isAddLabelDisabled,assign,readwrite) bool addLabelDisabled;
-@property(assign,readwrite) void* addressBook;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didCreateNewLabel;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) ABStyleProvider * styleProvider;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UITableView * tableView;
+@property (getter=isAddLabelDisabled, nonatomic) bool addLabelDisabled;
+@property (nonatomic) void*addressBook;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool didCreateNewLabel;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) ABStyleProvider *styleProvider;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UITableView *tableView;
 
 + (id)_defaultLabelsForProperty:(int)arg1 person:(id)arg2 propertyGroup:(id)arg3 index:(long long)arg4 addressBook:(void*)arg5 outBestLabelIndex:(long long*)arg6 forceIncludeLabels:(id)arg7;
 + (id)builtInLabelsForProperty:(int)arg1;

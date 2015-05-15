@@ -7,8 +7,8 @@
     double _visibleHeight;
 }
 
-@property(assign,retain) UIView * contentView;
-@property(assign,readwrite) double visibleHeight;
+@property (nonatomic, retain) UIView *contentView;
+@property (nonatomic) double visibleHeight;
 
 - (bool)_scrollsToMakeFirstResponderVisible;
 - (id)contentView;

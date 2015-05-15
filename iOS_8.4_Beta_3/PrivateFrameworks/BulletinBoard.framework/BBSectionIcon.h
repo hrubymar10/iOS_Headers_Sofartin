@@ -6,7 +6,7 @@
     NSSet *_variants;
 }
 
-@property(assign,copy) NSSet * variants;
+@property (nonatomic, copy) NSSet *variants;
 
 + (bool)supportsSecureCoding;
 

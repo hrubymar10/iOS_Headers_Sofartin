@@ -8,9 +8,9 @@
     NSString *_unitDescription;
 }
 
-@property(assign,retain) NSString * localizedDescription;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * unitDescription;
+@property (nonatomic, retain) NSString *localizedDescription;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *unitDescription;
 
 + (bool)supportsSecureCoding;
 

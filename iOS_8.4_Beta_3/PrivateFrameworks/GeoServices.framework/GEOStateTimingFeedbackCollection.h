@@ -15,11 +15,11 @@
     NSMutableArray *_stateTransitions;
 }
 
-@property(assign,readwrite) double durationInOldState;
-@property(assign,readwrite) bool hasDurationInOldState;
-@property(assign,readwrite) bool hasSessionID;
-@property(assign,readwrite) struct { unsigned long long x1; unsigned long long x2; } sessionID;
-@property(assign,retain) NSMutableArray * stateTransitions;
+@property (nonatomic) double durationInOldState;
+@property (nonatomic) bool hasDurationInOldState;
+@property (nonatomic) bool hasSessionID;
+@property (nonatomic) struct { unsigned long long x1; unsigned long long x2; } sessionID;
+@property (nonatomic, retain) NSMutableArray *stateTransitions;
 
 - (void)addStateTransition:(id)arg1;
 - (void)clearStateTransitions;

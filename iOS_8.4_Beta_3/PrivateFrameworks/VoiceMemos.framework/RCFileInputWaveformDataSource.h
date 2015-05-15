@@ -9,8 +9,8 @@
     NSObject<OS_dispatch_queue> *_serialQueue;
 }
 
-@property(assign,copy) NSURL * AVFileURL;
-@property(assign,readonly) bool savesGeneratedWaveform;
+@property (nonatomic, readonly, copy) NSURL *AVFileURL;
+@property (nonatomic, readonly) bool savesGeneratedWaveform;
 
 - (void).cxx_destruct;
 - (id)AVFileURL;

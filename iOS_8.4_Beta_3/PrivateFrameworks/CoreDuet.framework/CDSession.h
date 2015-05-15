@@ -16,17 +16,17 @@
     bool _verbose;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * cacheSerializerQ;
-@property(assign,retain) NSMutableDictionary * cachedAttributes;
-@property(assign,retain) NSMutableDictionary * cachedBudgets;
-@property(assign,readonly) CDDClientConnection * cddClientConnection;
-@property(assign,readwrite) unsigned long long clientId;
-@property(assign,readwrite) int deviceChangeToken;
-@property(assign,copy) id deviceHandler;
-@property(assign,retain) NSSet * deviceList;
-@property(assign,readwrite) bool enabledCaching;
-@property(assign,readwrite) bool unlocked;
-@property(assign,readwrite) bool verbose;
+@property (retain) NSObject<OS_dispatch_queue> *cacheSerializerQ;
+@property (retain) NSMutableDictionary *cachedAttributes;
+@property (retain) NSMutableDictionary *cachedBudgets;
+@property (readonly) CDDClientConnection *cddClientConnection;
+@property unsigned long long clientId;
+@property int deviceChangeToken;
+@property (copy) id deviceHandler;
+@property (retain) NSSet *deviceList;
+@property bool enabledCaching;
+@property bool unlocked;
+@property bool verbose;
 
 + (id)sharedSessionWithClientId:(unsigned long long)arg1;
 

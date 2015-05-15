@@ -13,14 +13,14 @@
     long long _workoutState;
 }
 
-@property(assign,retain) NSUUID * UUID;
-@property(getter=isIndoor,assign,readwrite) bool indoor;
-@property(assign,retain) NSDictionary * resumeDataByType;
-@property(assign,readwrite) bool shouldUseDeviceData;
-@property(assign,retain) NSDate * startDate;
-@property(assign,readwrite) unsigned long long workoutActivityType;
-@property(assign,retain) NSArray * workoutEvents;
-@property(assign,readwrite) long long workoutState;
+@property (nonatomic, retain) NSUUID *UUID;
+@property (getter=isIndoor, nonatomic) bool indoor;
+@property (nonatomic, retain) NSDictionary *resumeDataByType;
+@property (nonatomic) bool shouldUseDeviceData;
+@property (nonatomic, retain) NSDate *startDate;
+@property (nonatomic) unsigned long long workoutActivityType;
+@property (nonatomic, retain) NSArray *workoutEvents;
+@property (nonatomic) long long workoutState;
 
 + (bool)supportsSecureCoding;
 

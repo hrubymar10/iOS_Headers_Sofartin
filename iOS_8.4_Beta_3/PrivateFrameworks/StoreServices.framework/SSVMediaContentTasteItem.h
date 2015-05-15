@@ -9,14 +9,14 @@
     unsigned long long _tasteType;
 }
 
-@property(assign,readonly) unsigned long long contentType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * playlistGlobalID;
-@property(assign,readonly) long long storeAdamID;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long tasteType;
+@property (nonatomic, readonly) unsigned long long contentType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) NSString *playlistGlobalID;
+@property (nonatomic, readonly) long long storeAdamID;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long tasteType;
 
 + (bool)supportsSecureCoding;
 

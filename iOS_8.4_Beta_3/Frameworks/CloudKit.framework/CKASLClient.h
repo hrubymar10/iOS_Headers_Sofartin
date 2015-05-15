@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_logQueue;
 }
 
-@property(assign,readwrite) struct __asl_object_s { }* aslClient;
-@property(assign,readwrite) long long logLevel;
-@property(assign,retain) NSObject<OS_dispatch_queue> * logQueue;
+@property (nonatomic) struct __asl_object_s { }*aslClient;
+@property (nonatomic) long long logLevel;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *logQueue;
 
 + (id)ASLClient;
 

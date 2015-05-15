@@ -21,19 +21,19 @@
     unsigned int _renderbuffer;
 }
 
-@property(setter=_setAtomicContext:,assign,retain) EAGLContext * _atomicContext;
-@property(setter=_setAtomicFixedSize:,assign,readwrite) struct CGSize { double x1; double x2; } _atomicFixedSize;
-@property(setter=_setAtomicRetainedBacking:,assign,readwrite) bool _atomicRetainedBacking;
-@property(getter=_isDisabledLayoutForGLLayerInternal,setter=_setDisableLayoutForGLLayerInternal:,assign,readwrite) bool _disableLayoutForGLLayerInternal;
-@property(setter=_setShouldDeleteFramebuffer:,assign,readwrite) bool _shouldDeleteFramebuffer;
-@property(assign,retain) EAGLContext * context;
-@property(getter=isDisabledLayoutForGLLayer,assign,readwrite) bool disableLayoutForGLLayer;
-@property(assign,readwrite) long long drawableHeight;
-@property(assign,readwrite) long long drawableWidth;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } fixedSize;
-@property(assign,retain) CAEAGLLayer * glLayer;
-@property(assign,copy) id renderNotifyBlock;
-@property(assign,readwrite) bool retainedBacking;
+@property (setter=_setAtomicContext:, retain) EAGLContext *_atomicContext;
+@property (setter=_setAtomicFixedSize:) struct CGSize { double x1; double x2; } _atomicFixedSize;
+@property (setter=_setAtomicRetainedBacking:) bool _atomicRetainedBacking;
+@property (getter=_isDisabledLayoutForGLLayerInternal, setter=_setDisableLayoutForGLLayerInternal:, nonatomic) bool _disableLayoutForGLLayerInternal;
+@property (setter=_setShouldDeleteFramebuffer:) bool _shouldDeleteFramebuffer;
+@property (nonatomic, retain) EAGLContext *context;
+@property (getter=isDisabledLayoutForGLLayer, nonatomic) bool disableLayoutForGLLayer;
+@property long long drawableHeight;
+@property long long drawableWidth;
+@property (nonatomic) struct CGSize { double x1; double x2; } fixedSize;
+@property (nonatomic, readonly, retain) CAEAGLLayer *glLayer;
+@property (nonatomic, copy) id renderNotifyBlock;
+@property (nonatomic) bool retainedBacking;
 
 - (void).cxx_destruct;
 - (id)_atomicContext;

@@ -11,14 +11,14 @@
     TSPSupportSaveOperationState *_saveOperationState;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSOperationQueue * presentedItemOperationQueue;
-@property(assign,copy) NSURL * presentedItemURL;
-@property(assign,copy) NSURL * presentedSupportURL;
-@property(assign,copy) NSURL * primaryPresentedItemURL;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly, retain) NSOperationQueue *presentedItemOperationQueue;
+@property (readonly, copy) NSURL *presentedItemURL;
+@property (copy) NSURL *presentedSupportURL;
+@property (readonly, copy) NSURL *primaryPresentedItemURL;
+@property (readonly) Class superclass;
 
 + (id)defaultSupportDirectoryURL;
 + (void)garbageCollectDocumentSupportWithKnownDocumentUUIDs:(id)arg1 delegate:(id)arg2;

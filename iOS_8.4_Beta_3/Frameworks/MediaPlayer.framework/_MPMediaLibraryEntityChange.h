@@ -8,9 +8,9 @@
     MPMediaEntity *_entity;
 }
 
-@property(assign,copy) NSString * anchor;
-@property(assign,readonly) int deletionType;
-@property(assign,readonly) MPMediaEntity * entity;
+@property (nonatomic, readonly, copy) NSString *anchor;
+@property (nonatomic, readonly) int deletionType;
+@property (nonatomic, readonly) MPMediaEntity *entity;
 
 - (void).cxx_destruct;
 - (id)anchor;

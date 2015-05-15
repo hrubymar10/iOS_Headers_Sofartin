@@ -6,7 +6,7 @@
     double _score;
 }
 
-@property(assign,readwrite) double score;
+@property double score;
 
 - (id)description;
 - (id)initWithScore:(double)arg1;

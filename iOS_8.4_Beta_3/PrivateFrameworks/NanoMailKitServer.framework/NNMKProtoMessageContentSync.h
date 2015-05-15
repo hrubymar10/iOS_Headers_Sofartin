@@ -18,21 +18,21 @@
     NSData *_text;
 }
 
-@property(assign,retain) NSMutableArray * attachments;
-@property(assign,retain) NSData * dateSynced;
-@property(assign,readwrite) unsigned int fullSyncVersion;
-@property(assign,readonly) bool hasDateSynced;
-@property(assign,readwrite) bool hasFullSyncVersion;
-@property(assign,readwrite) bool hasMainAlternativeValid;
-@property(assign,readonly) bool hasMessageId;
-@property(assign,readwrite) bool hasPartiallyLoaded;
-@property(assign,readonly) bool hasPreview;
-@property(assign,readonly) bool hasText;
-@property(assign,readwrite) bool mainAlternativeValid;
-@property(assign,retain) NSString * messageId;
-@property(assign,readwrite) bool partiallyLoaded;
-@property(assign,retain) NSData * preview;
-@property(assign,retain) NSData * text;
+@property (nonatomic, retain) NSMutableArray *attachments;
+@property (nonatomic, retain) NSData *dateSynced;
+@property (nonatomic) unsigned int fullSyncVersion;
+@property (nonatomic, readonly) bool hasDateSynced;
+@property (nonatomic) bool hasFullSyncVersion;
+@property (nonatomic) bool hasMainAlternativeValid;
+@property (nonatomic, readonly) bool hasMessageId;
+@property (nonatomic) bool hasPartiallyLoaded;
+@property (nonatomic, readonly) bool hasPreview;
+@property (nonatomic, readonly) bool hasText;
+@property (nonatomic) bool mainAlternativeValid;
+@property (nonatomic, retain) NSString *messageId;
+@property (nonatomic) bool partiallyLoaded;
+@property (nonatomic, retain) NSData *preview;
+@property (nonatomic, retain) NSData *text;
 
 - (void).cxx_destruct;
 - (void)addAttachment:(id)arg1;

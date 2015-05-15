@@ -11,7 +11,7 @@
     } _margins;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } margins;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } margins;
 
 - (id)initWithMargins:(struct UIEdgeInsets { double x1; double x2; double x3; double x4; })arg1;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })margins;

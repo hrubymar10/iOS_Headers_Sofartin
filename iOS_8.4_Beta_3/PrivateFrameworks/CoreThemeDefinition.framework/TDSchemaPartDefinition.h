@@ -9,14 +9,14 @@
     NSArray *renditions;
 }
 
-@property(assign,retain) TDSchemaDefinition * element;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) unsigned long long partFeatures;
-@property(assign,retain) CUIImage * previewImage;
-@property(assign,retain) NSSet * productions;
-@property(assign,retain) NSArray * renditionGroups;
-@property(assign,copy) NSArray * renditions;
-@property(assign,retain) NSString * widgetID;
+@property (nonatomic, retain) TDSchemaDefinition *element;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) unsigned long long partFeatures;
+@property (nonatomic, retain) CUIImage *previewImage;
+@property (nonatomic, retain) NSSet *productions;
+@property (nonatomic, retain) NSArray *renditionGroups;
+@property (nonatomic, copy) NSArray *renditions;
+@property (nonatomic, retain) NSString *widgetID;
 
 - (long long)_renditionKeyValueForTokenIdentifier:(unsigned short)arg1;
 - (id)_schema;

@@ -44,17 +44,17 @@
     double _viewUnitsPerPoint;
 }
 
-@property(assign,readonly) struct { double x1; double x2; double x3; double x4; } bounds;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool hasNewRoadMatches;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool needsUpdate;
-@property(assign,readwrite) VKPolylineOverlay * overlay;
-@property(assign,readwrite) double simplificationEpsilonPoints;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct PolylineCoordinate { unsigned int x1; float x2; }* userLocationIndex;
-@property(assign,readonly) struct fast_shared_ptr<vk::RouteLineSection> { struct _fast_shared_ptr_control {} *x1; } userLocationSection;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; double x4; } bounds;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property bool hasNewRoadMatches;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool needsUpdate;
+@property (nonatomic) VKPolylineOverlay *overlay;
+@property (nonatomic) double simplificationEpsilonPoints;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct PolylineCoordinate { unsigned int x1; float x2; }*userLocationIndex;
+@property (nonatomic, readonly) struct fast_shared_ptr<vk::RouteLineSection> { struct _fast_shared_ptr_control {} *x1; } userLocationSection;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

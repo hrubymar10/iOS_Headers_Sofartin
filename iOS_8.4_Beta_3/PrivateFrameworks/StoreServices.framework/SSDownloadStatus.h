@@ -10,18 +10,18 @@
     bool _paused;
 }
 
-@property(assign,readonly) SSDownloadPhase * activePhase;
-@property(getter=isContentRestricted,assign,readwrite) bool contentRestricted;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSError * error;
-@property(getter=isFailed,assign,readwrite) bool failed;
-@property(getter=isFailedTransient,assign,readonly) bool failedTransient;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isPausable,assign,readwrite) bool pausable;
-@property(getter=isPaused,assign,readwrite) bool paused;
-@property(assign,readonly) float percentComplete;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) SSDownloadPhase *activePhase;
+@property (getter=isContentRestricted, nonatomic) bool contentRestricted;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSError *error;
+@property (getter=isFailed, nonatomic) bool failed;
+@property (getter=isFailedTransient, nonatomic, readonly) bool failedTransient;
+@property (readonly) unsigned long long hash;
+@property (getter=isPausable, nonatomic) bool pausable;
+@property (getter=isPaused, nonatomic) bool paused;
+@property (nonatomic, readonly) float percentComplete;
+@property (readonly) Class superclass;
 
 - (id)activePhase;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

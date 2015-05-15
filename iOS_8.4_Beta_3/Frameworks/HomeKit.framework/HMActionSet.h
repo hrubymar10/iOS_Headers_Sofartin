@@ -12,20 +12,20 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,copy) NSSet * actions;
-@property(assign,retain) NSMutableArray * currentActions;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isExecuting,assign,readonly) bool executing;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) HMHome * home;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * messageReceiveQueue;
-@property(assign,readonly) NSUUID * messageTargetUUID;
-@property(assign,retain) HMMessageDispatcher * msgDispatcher;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSUUID * uuid;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, readonly, copy) NSSet *actions;
+@property (nonatomic, retain) NSMutableArray *currentActions;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isExecuting, nonatomic, readonly) bool executing;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) HMHome *home;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *messageReceiveQueue;
+@property (nonatomic, readonly) NSUUID *messageTargetUUID;
+@property (nonatomic, retain) HMMessageDispatcher *msgDispatcher;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSUUID *uuid;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 + (bool)supportsSecureCoding;
 

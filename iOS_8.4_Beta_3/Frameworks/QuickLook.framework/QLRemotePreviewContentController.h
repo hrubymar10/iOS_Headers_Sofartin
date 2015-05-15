@@ -16,14 +16,14 @@
     bool _statusBarWasHidden;
 }
 
-@property(assign,readwrite) <QLPreviewContentDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <QLPreviewContentDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) QLPreviewController * previewController;
-@property(assign,readwrite) int previewMode;
-@property(assign,readonly) Class superclass;
+@property <QLPreviewContentDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property <QLPreviewContentDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property QLPreviewController *previewController;
+@property int previewMode;
+@property (readonly) Class superclass;
 
 + (id)exportedInterface;
 + (id)serviceViewControllerInterface;

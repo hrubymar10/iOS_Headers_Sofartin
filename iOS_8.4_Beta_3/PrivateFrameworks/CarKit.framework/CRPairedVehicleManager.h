@@ -8,9 +8,9 @@
     NSXPCConnection *_serviceConnection;
 }
 
-@property(assign,retain) NSMutableArray * outstandingSemaphores;
-@property(assign,retain) <CRCarKitService> * service;
-@property(assign,retain) NSXPCConnection * serviceConnection;
+@property (nonatomic, retain) NSMutableArray *outstandingSemaphores;
+@property (nonatomic, retain) <CRCarKitService> *service;
+@property (nonatomic, retain) NSXPCConnection *serviceConnection;
 
 - (void).cxx_destruct;
 - (void)_blockOnServiceSemaphore:(id)arg1;

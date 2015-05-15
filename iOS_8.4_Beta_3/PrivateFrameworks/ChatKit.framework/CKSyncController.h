@@ -8,7 +8,7 @@
     bool _restoring;
 }
 
-@property(getter=isRestoring,assign,readwrite) bool restoring;
+@property (getter=isRestoring, nonatomic) bool restoring;
 
 + (id)sharedInstance;
 

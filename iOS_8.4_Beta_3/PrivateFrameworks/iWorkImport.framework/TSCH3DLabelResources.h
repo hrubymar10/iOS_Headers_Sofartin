@@ -7,7 +7,7 @@
     NSMutableDictionary *mCache;
 }
 
-@property(assign,readonly) TSCH3DTextureAtlas * atlas;
+@property (nonatomic, readonly) TSCH3DTextureAtlas *atlas;
 
 - (id)atlas;
 - (void)dealloc;

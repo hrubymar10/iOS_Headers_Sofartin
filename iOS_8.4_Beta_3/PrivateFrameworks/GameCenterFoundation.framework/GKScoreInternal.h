@@ -14,18 +14,18 @@
     bool _valueSet;
 }
 
-@property(assign,retain) NSString * category;
-@property(assign,readwrite) unsigned long long context;
-@property(assign,retain) NSDate * date;
-@property(assign,retain) NSString * formattedValue;
-@property(assign,retain) NSString * groupCategory;
-@property(assign,retain) NSString * groupLeaderboardIdentifier;
-@property(assign,retain) NSString * leaderboardIdentifier;
-@property(assign,retain) GKPlayerInternal * player;
-@property(assign,readonly) NSString * playerID;
-@property(assign,readwrite) unsigned int rank;
-@property(assign,readwrite) long long value;
-@property(assign,readwrite) bool valueSet;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic) unsigned long long context;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, retain) NSString *formattedValue;
+@property (nonatomic, retain) NSString *groupCategory;
+@property (nonatomic, retain) NSString *groupLeaderboardIdentifier;
+@property (nonatomic, retain) NSString *leaderboardIdentifier;
+@property (nonatomic, retain) GKPlayerInternal *player;
+@property (nonatomic, readonly) NSString *playerID;
+@property (nonatomic) unsigned int rank;
+@property (nonatomic) long long value;
+@property (nonatomic) bool valueSet;
 
 + (id)secureCodedPropertyKeys;
 + (bool)supportsSecureCoding;

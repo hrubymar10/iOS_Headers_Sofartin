@@ -4,21 +4,21 @@
 
 @interface DOMHTMLAreaElement : DOMHTMLElement
 
-@property(assign,copy) NSURL * absoluteLinkURL;
-@property(assign,copy) NSString * accessKey;
-@property(assign,copy) NSString * alt;
-@property(assign,copy) NSString * coords;
-@property(assign,copy) NSString * hashName;
-@property(assign,copy) NSString * host;
-@property(assign,copy) NSString * hostname;
-@property(assign,copy) NSString * href;
-@property(assign,readwrite) bool noHref;
-@property(assign,copy) NSString * pathname;
-@property(assign,copy) NSString * port;
-@property(assign,copy) NSString * protocol;
-@property(assign,copy) NSString * search;
-@property(assign,copy) NSString * shape;
-@property(assign,copy) NSString * target;
+@property (readonly, copy) NSURL *absoluteLinkURL;
+@property (copy) NSString *accessKey;
+@property (copy) NSString *alt;
+@property (copy) NSString *coords;
+@property (readonly, copy) NSString *hashName;
+@property (readonly, copy) NSString *host;
+@property (readonly, copy) NSString *hostname;
+@property (copy) NSString *href;
+@property bool noHref;
+@property (readonly, copy) NSString *pathname;
+@property (readonly, copy) NSString *port;
+@property (readonly, copy) NSString *protocol;
+@property (readonly, copy) NSString *search;
+@property (copy) NSString *shape;
+@property (copy) NSString *target;
 
 - (id)absoluteLinkURL;
 - (struct _WKQuad { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGPoint { double x_2_1_1; double x_2_1_2; } x2; struct CGPoint { double x_3_1_1; double x_3_1_2; } x3; struct CGPoint { double x_4_1_1; double x_4_1_2; } x4; })absoluteQuadWithOwner:(id)arg1;

@@ -14,7 +14,7 @@
     NSObject<OS_dispatch_semaphore> *_xpcSendBarrier;
 }
 
-@property(getter=isSetupOnUIThread,assign,readonly) bool setupOnUIThread;
+@property (getter=isSetupOnUIThread, nonatomic, readonly) bool setupOnUIThread;
 
 - (id)allocXpcArrayWithNSArray:(id)arg1;
 - (id)allocXpcDictionaryWithNSDictionary:(id)arg1;

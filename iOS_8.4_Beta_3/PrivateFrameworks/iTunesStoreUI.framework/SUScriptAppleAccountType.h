@@ -6,10 +6,10 @@
     ACAccountType *_accountType;
 }
 
-@property(assign,readonly) id accessGranted;
-@property(assign,readonly) NSString * accountTypeDescription;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) ACAccountType * nativeAccountType;
+@property (readonly) id accessGranted;
+@property (readonly) NSString *accountTypeDescription;
+@property (readonly) NSString *identifier;
+@property (nonatomic, readonly) ACAccountType *nativeAccountType;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

@@ -14,7 +14,7 @@
     id _significantDatesChangedHandler;
 }
 
-@property(assign,copy) id significantDatesChangedHandler;
+@property (nonatomic, copy) id significantDatesChangedHandler;
 
 - (void).cxx_destruct;
 - (void)_invalidateCaches;

@@ -6,7 +6,7 @@
     bool _hasDeviceBeenUnlockedSinceBoot;
 }
 
-@property(assign,readwrite) bool hasDeviceBeenUnlockedSinceBoot;
+@property bool hasDeviceBeenUnlockedSinceBoot;
 
 + (id)instance;
 

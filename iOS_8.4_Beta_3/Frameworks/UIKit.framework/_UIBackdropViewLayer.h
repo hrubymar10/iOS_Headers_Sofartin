@@ -6,7 +6,7 @@
     _UIBackdropView *_backdropView;
 }
 
-@property(assign,readwrite) _UIBackdropView * backdropView;
+@property (nonatomic) _UIBackdropView *backdropView;
 
 - (id)backdropView;
 - (void)dealloc;

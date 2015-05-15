@@ -10,8 +10,8 @@
     bool _listeningForBestAppSuggestions;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,readwrite) <LSBestAppSuggestionManagerDelegate> * delegate;
+@property (retain) NSXPCConnection *connection;
+@property <LSBestAppSuggestionManagerDelegate> *delegate;
 
 - (id)bestAppSuggestion;
 - (void)bestAppSuggestionLaunchWasCancelled:(id)arg1;

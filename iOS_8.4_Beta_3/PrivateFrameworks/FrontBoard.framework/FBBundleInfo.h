@@ -13,14 +13,14 @@
     LSApplicationProxy *_proxy;
 }
 
-@property(getter=_bundle,assign,retain) BSCFBundle * bundle;
-@property(assign,copy) NSString * bundleIdentifier;
-@property(assign,copy) NSString * bundleType;
-@property(assign,retain) NSURL * bundleURL;
-@property(assign,copy) NSString * bundleVersion;
-@property(assign,copy) NSString * displayName;
-@property(assign,copy) NSDictionary * extendedInfo;
-@property(getter=_proxy,assign,retain) LSApplicationProxy * proxy;
+@property (getter=_bundle, nonatomic, readonly, retain) BSCFBundle *bundle;
+@property (nonatomic, copy) NSString *bundleIdentifier;
+@property (nonatomic, copy) NSString *bundleType;
+@property (nonatomic, retain) NSURL *bundleURL;
+@property (nonatomic, copy) NSString *bundleVersion;
+@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic, copy) NSDictionary *extendedInfo;
+@property (getter=_proxy, nonatomic, readonly, retain) LSApplicationProxy *proxy;
 
 - (id)_bundle;
 - (id)_proxy;

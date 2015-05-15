@@ -4,7 +4,7 @@
 
 @interface SAAISearchCompleted : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * results;
+@property (nonatomic, copy) NSArray *results;
 
 + (id)searchCompleted;
 + (id)searchCompletedWithDictionary:(id)arg1 context:(id)arg2;

@@ -10,8 +10,8 @@
     UIKeyboardCandidatePocketShadow *_pocketShadow;
 }
 
-@property(assign,readwrite) bool drawsBackground;
-@property(assign,readwrite) bool drawsPocketShadow;
+@property (nonatomic) bool drawsBackground;
+@property (nonatomic) bool drawsPocketShadow;
 
 - (void)dealloc;
 - (bool)drawsBackground;

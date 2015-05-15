@@ -17,17 +17,17 @@
     NSString *mYear;
 }
 
-@property(assign,retain) NSMutableArray * authors;
-@property(assign,retain) NSString * number;
-@property(assign,retain) NSString * pages;
-@property(assign,retain) NSString * periodicalTitle;
-@property(assign,retain) NSString * pubDate;
-@property(assign,retain) NSString * section;
-@property(assign,retain) NSString * sourceType;
-@property(assign,retain) NSMutableArray * titles;
-@property(assign,retain) NSMutableArray * urls;
-@property(assign,retain) NSString * volume;
-@property(assign,retain) NSString * year;
+@property (nonatomic, retain) NSMutableArray *authors;
+@property (nonatomic, retain) NSString *number;
+@property (nonatomic, retain) NSString *pages;
+@property (nonatomic, retain) NSString *periodicalTitle;
+@property (nonatomic, retain) NSString *pubDate;
+@property (nonatomic, retain) NSString *section;
+@property (nonatomic, retain) NSString *sourceType;
+@property (nonatomic, retain) NSMutableArray *titles;
+@property (nonatomic, retain) NSMutableArray *urls;
+@property (nonatomic, retain) NSString *volume;
+@property (nonatomic, retain) NSString *year;
 
 + (id)endNoteStringForRefType:(int)arg1;
 + (void)initialize;

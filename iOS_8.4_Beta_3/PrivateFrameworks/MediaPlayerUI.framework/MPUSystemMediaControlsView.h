@@ -17,19 +17,19 @@
     MPUMediaControlsVolumeView *_volumeView;
 }
 
-@property(assign,readonly) MPUSystemBuyButtonConfiguration * buyAlbumConfiguration;
-@property(assign,readonly) MPUSystemBuyButtonConfiguration * buyTrackConfiguration;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPUSystemMediaControlsViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MPUSkipLimitView * skipLimitView;
-@property(assign,readonly) long long style;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) MPUChronologicalProgressView * timeInformationView;
-@property(assign,readonly) MPUMediaControlsTitlesView * trackInformationView;
-@property(assign,readonly) MPUTransportControlsView * transportControlsView;
-@property(assign,readonly) MPUMediaControlsVolumeView * volumeView;
+@property (nonatomic, readonly) MPUSystemBuyButtonConfiguration *buyAlbumConfiguration;
+@property (nonatomic, readonly) MPUSystemBuyButtonConfiguration *buyTrackConfiguration;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPUSystemMediaControlsViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MPUSkipLimitView *skipLimitView;
+@property (nonatomic, readonly) long long style;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) MPUChronologicalProgressView *timeInformationView;
+@property (nonatomic, readonly) MPUMediaControlsTitlesView *trackInformationView;
+@property (nonatomic, readonly) MPUTransportControlsView *transportControlsView;
+@property (nonatomic, readonly) MPUMediaControlsVolumeView *volumeView;
 
 - (void).cxx_destruct;
 - (void)_buyButtonCancelConfirmationAction:(id)arg1;

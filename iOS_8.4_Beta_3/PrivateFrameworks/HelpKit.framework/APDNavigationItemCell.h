@@ -18,18 +18,18 @@
     bool _showFulLSeparator;
 }
 
-@property(getter=isRTL,assign,readwrite) bool RTL;
-@property(assign,retain) UIImageView * accessoryImageView;
-@property(assign,retain) UIImageView * arrowImageView;
-@property(assign,retain) UIColor * cellHighlightedColor;
-@property(assign,readwrite) bool closed;
-@property(assign,retain) APDDataManager * dataManager;
-@property(assign,readwrite) bool indentWithSectionImage;
-@property(assign,retain) UILabel * nameLabel;
-@property(assign,retain) APDNavigationItem * navigationItem;
-@property(assign,retain) UIImageView * sectionImageView;
-@property(assign,readwrite) bool shouldIndent;
-@property(assign,readwrite) bool showFulLSeparator;
+@property (getter=isRTL, nonatomic) bool RTL;
+@property (nonatomic, retain) UIImageView *accessoryImageView;
+@property (nonatomic, retain) UIImageView *arrowImageView;
+@property (nonatomic, retain) UIColor *cellHighlightedColor;
+@property (nonatomic) bool closed;
+@property (nonatomic, retain) APDDataManager *dataManager;
+@property (nonatomic) bool indentWithSectionImage;
+@property (nonatomic, retain) UILabel *nameLabel;
+@property (nonatomic, retain) APDNavigationItem *navigationItem;
+@property (nonatomic, retain) UIImageView *sectionImageView;
+@property (nonatomic) bool shouldIndent;
+@property (nonatomic) bool showFulLSeparator;
 
 - (void).cxx_destruct;
 - (id)accessibilityHint;

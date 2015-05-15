@@ -10,9 +10,9 @@
     struct __SecTrust { } *_trust;
 }
 
-@property(assign,copy) NSString * connectionDisplayName;
-@property(assign,retain) NSString * host;
-@property(assign,retain) NSString * service;
+@property (nonatomic, copy) NSString *connectionDisplayName;
+@property (nonatomic, retain) NSString *host;
+@property (nonatomic, retain) NSString *service;
 
 + (id)promptQueue;
 + (id)stringForResponse:(int)arg1;

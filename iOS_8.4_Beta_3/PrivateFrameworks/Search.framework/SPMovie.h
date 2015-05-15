@@ -4,13 +4,13 @@
 
 @interface SPMovie : SPProxyObject <PRSMovie>
 
-@property(assign,retain) PRSImage * image;
-@property(assign,retain) NSArray * more_glyphs;
-@property(assign,retain) NSURL * punchout_uri;
-@property(assign,retain) PRSImage * rt_glyph;
-@property(assign,retain) NSString * rt_text;
-@property(assign,retain) NSString * subtitle;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSURL * url;
+@property (nonatomic, retain) PRSImage *image;
+@property (nonatomic, retain) NSArray *more_glyphs;
+@property (nonatomic, retain) NSURL *punchout_uri;
+@property (nonatomic, retain) PRSImage *rt_glyph;
+@property (nonatomic, retain) NSString *rt_text;
+@property (nonatomic, retain) NSString *subtitle;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSURL *url;
 
 @end

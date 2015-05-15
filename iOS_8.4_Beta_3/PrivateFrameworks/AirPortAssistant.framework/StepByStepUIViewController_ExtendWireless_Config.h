@@ -9,7 +9,7 @@
     NSString *unlocalizedStatusString;
 }
 
-@property(assign,retain) NSString * personalizedBaseName;
+@property (nonatomic, retain) NSString *personalizedBaseName;
 
 - (id)devicePickerLabel;
 - (id)deviceTableLabel;

@@ -6,8 +6,8 @@
     NSString *_previousETag;
 }
 
-@property(assign,readwrite) <CoreDAVTaskDelegate> * delegate;
-@property(assign,retain) NSString * previousETag;
+@property (nonatomic) <CoreDAVTaskDelegate> *delegate;
+@property (nonatomic, retain) NSString *previousETag;
 
 - (id)additionalHeaderValues;
 - (void)dealloc;

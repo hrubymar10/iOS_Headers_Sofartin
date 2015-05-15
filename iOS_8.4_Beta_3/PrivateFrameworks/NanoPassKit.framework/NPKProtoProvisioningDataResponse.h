@@ -10,10 +10,10 @@
     NSData *_provisioningDataBytes;
 }
 
-@property(assign,readwrite) bool hasPending;
-@property(assign,readonly) bool hasProvisioningDataBytes;
-@property(assign,readwrite) bool pending;
-@property(assign,retain) NSData * provisioningDataBytes;
+@property (nonatomic) bool hasPending;
+@property (nonatomic, readonly) bool hasProvisioningDataBytes;
+@property (nonatomic) bool pending;
+@property (nonatomic, retain) NSData *provisioningDataBytes;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

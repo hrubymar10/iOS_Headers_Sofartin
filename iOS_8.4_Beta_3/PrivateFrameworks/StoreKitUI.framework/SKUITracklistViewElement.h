@@ -7,9 +7,9 @@
     NSMutableArray *_tracks;
 }
 
-@property(assign,readonly) SKUIHeaderViewElement * header;
-@property(assign,readonly) NSArray * sections;
-@property(assign,readonly) NSArray * tracks;
+@property (nonatomic, readonly) SKUIHeaderViewElement *header;
+@property (nonatomic, readonly) NSArray *sections;
+@property (nonatomic, readonly) NSArray *tracks;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

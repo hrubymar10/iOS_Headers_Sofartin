@@ -7,9 +7,9 @@
     double _lng;
 }
 
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,readwrite) double lat;
-@property(assign,readwrite) double lng;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (nonatomic) double lat;
+@property (nonatomic) double lng;
 
 - (struct { double x1; double x2; })coordinate;
 - (void)copyTo:(id)arg1;

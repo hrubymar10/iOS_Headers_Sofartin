@@ -9,9 +9,9 @@
     bool _showsCancelButton;
 }
 
-@property(assign,copy) NSString * cancelButtonTitle;
-@property(assign,readwrite) SKProductPageViewController * productPageViewController;
-@property(assign,readwrite) bool showsCancelButton;
+@property (nonatomic, copy) NSString *cancelButtonTitle;
+@property (nonatomic) SKProductPageViewController *productPageViewController;
+@property (nonatomic) bool showsCancelButton;
 
 - (void).cxx_destruct;
 - (void)_addCancelButtonToNavigationItem:(id)arg1;

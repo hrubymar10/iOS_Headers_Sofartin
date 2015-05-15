@@ -6,7 +6,7 @@
     UIImageView *_imageView;
 }
 
-@property(assign,retain) UIImage * image;
+@property (nonatomic, retain) UIImage *image;
 
 - (void).cxx_destruct;
 - (id)image;

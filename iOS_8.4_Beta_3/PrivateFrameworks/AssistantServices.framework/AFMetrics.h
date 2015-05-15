@@ -8,9 +8,9 @@
     NSString *_originalCommandId;
 }
 
-@property(assign,readwrite) long long category;
-@property(assign,retain) NSNumber * duration;
-@property(assign,copy) NSString * originalCommandId;
+@property (nonatomic) long long category;
+@property (nonatomic, retain) NSNumber *duration;
+@property (nonatomic, copy) NSString *originalCommandId;
 
 + (bool)supportsSecureCoding;
 

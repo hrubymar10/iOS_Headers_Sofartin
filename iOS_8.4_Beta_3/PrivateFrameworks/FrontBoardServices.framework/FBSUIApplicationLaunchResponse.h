@@ -8,9 +8,9 @@
     BSMachSendRight *_taskPort;
 }
 
-@property(assign,readwrite) bool supportsTaskSuspension;
-@property(assign,readwrite) bool supportsTaskSuspensionOnLock;
-@property(assign,retain) BSMachSendRight * taskPort;
+@property (nonatomic) bool supportsTaskSuspension;
+@property (nonatomic) bool supportsTaskSuspensionOnLock;
+@property (nonatomic, retain) BSMachSendRight *taskPort;
 
 - (void)dealloc;
 - (void)encodeWithXPCDictionary:(id)arg1;

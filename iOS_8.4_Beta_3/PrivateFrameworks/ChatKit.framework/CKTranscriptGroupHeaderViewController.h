@@ -4,7 +4,7 @@
 
 @interface CKTranscriptGroupHeaderViewController : CKTranscriptHeaderViewController
 
-@property(assign,retain) UIButton * headerButton;
+@property (nonatomic, readonly, retain) UIButton *headerButton;
 
 - (id)_groupHeaderComposeRecipients;
 - (void)_handleConversationRecipientsChanged:(id)arg1;

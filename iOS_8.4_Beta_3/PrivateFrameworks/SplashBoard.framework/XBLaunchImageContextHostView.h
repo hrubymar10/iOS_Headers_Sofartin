@@ -11,9 +11,9 @@
     bool _saved;
 }
 
-@property(assign,copy) id captureBlock;
-@property(assign,readwrite) double remoteScale;
-@property(getter=isSaved,assign,readwrite) bool saved;
+@property (nonatomic, copy) id captureBlock;
+@property (nonatomic) double remoteScale;
+@property (getter=isSaved, nonatomic) bool saved;
 
 - (id)captureBlock;
 - (void)connectToContextID:(unsigned int)arg1 bundleID:(id)arg2;

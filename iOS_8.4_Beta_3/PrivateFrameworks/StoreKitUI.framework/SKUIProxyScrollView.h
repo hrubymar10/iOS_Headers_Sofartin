@@ -4,7 +4,7 @@
 
 @interface SKUIProxyScrollView : UIScrollView
 
-@property(assign,readwrite) <SKUIProxyScrollViewDelegate> * delegate;
+@property (nonatomic) <SKUIProxyScrollViewDelegate> *delegate;
 
 - (void)didMoveToWindow;
 - (void)setContentInset:(struct UIEdgeInsets { double x1; double x2; double x3; double x4; })arg1;

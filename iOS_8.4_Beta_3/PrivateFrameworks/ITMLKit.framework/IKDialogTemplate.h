@@ -4,10 +4,10 @@
 
 @interface IKDialogTemplate : IKViewElement
 
-@property(assign,retain) NSArray * buttons;
-@property(assign,retain) IKTextElement * descriptionText;
-@property(assign,retain) IKTextElement * title;
-@property(assign,readonly) unsigned long long type;
+@property (nonatomic, readonly, retain) NSArray *buttons;
+@property (nonatomic, readonly, retain) IKTextElement *descriptionText;
+@property (nonatomic, readonly, retain) IKTextElement *title;
+@property (nonatomic, readonly) unsigned long long type;
 
 - (id)buttons;
 - (id)descriptionText;

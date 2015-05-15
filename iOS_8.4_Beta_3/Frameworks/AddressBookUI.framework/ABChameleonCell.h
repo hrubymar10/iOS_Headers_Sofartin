@@ -8,8 +8,8 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,readwrite) int abCellStyle;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
+@property (nonatomic) int abCellStyle;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
 
 - (void)_updateBackgroundViewsForCellStyleAndLocation;
 - (void)_updateTextStylesForCellStyle;

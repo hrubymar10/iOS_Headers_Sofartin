@@ -4,7 +4,7 @@
 
 @interface SKUIRowViewElement : SKUIViewElement
 
-@property(assign,readonly) NSArray * columns;
+@property (nonatomic, readonly) NSArray *columns;
 
 - (id)columns;
 - (long long)pageComponentType;

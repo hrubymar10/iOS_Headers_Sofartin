@@ -11,8 +11,8 @@
     SSXPCConnection *_responseConnection;
 }
 
-@property(assign,readwrite) <SSPurchaseManagerDelegate> * delegate;
-@property(assign,readonly) NSString * managerIdentifier;
+@property <SSPurchaseManagerDelegate> *delegate;
+@property (readonly) NSString *managerIdentifier;
 
 - (void)_connectToDaemon;
 - (void)_handleMessage:(id)arg1 fromConnection:(id)arg2;

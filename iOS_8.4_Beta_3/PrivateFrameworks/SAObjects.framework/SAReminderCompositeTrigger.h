@@ -4,8 +4,8 @@
 
 @interface SAReminderCompositeTrigger : SAReminderTrigger
 
-@property(assign,retain) SAReminderDateTimeTrigger * dateTimeTrigger;
-@property(assign,retain) SAReminderLocationTrigger * locationTrigger;
+@property (nonatomic, retain) SAReminderDateTimeTrigger *dateTimeTrigger;
+@property (nonatomic, retain) SAReminderLocationTrigger *locationTrigger;
 
 + (id)compositeTrigger;
 + (id)compositeTriggerWithDictionary:(id)arg1 context:(id)arg2;

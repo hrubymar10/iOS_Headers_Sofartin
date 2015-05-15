@@ -6,7 +6,7 @@
     bool _alwaysVisible;
 }
 
-@property(assign,readwrite) bool alwaysVisible;
+@property (nonatomic) bool alwaysVisible;
 
 - (bool)alwaysVisible;
 - (id)initWithEvent:(id)arg1 editable:(bool)arg2;

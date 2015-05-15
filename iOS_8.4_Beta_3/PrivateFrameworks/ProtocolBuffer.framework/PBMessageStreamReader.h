@@ -8,8 +8,8 @@
     NSInputStream *_stream;
 }
 
-@property(assign,readwrite) Class classOfNextMessage;
-@property(assign,readonly) unsigned long long position;
+@property Class classOfNextMessage;
+@property (readonly) unsigned long long position;
 
 - (Class)classOfNextMessage;
 - (void)dealloc;

@@ -4,10 +4,10 @@
 
 @interface SKUITemplateDefinitionViewElement : SKUIViewElement
 
-@property(assign,readonly) SKUIViewElement * contentViewElement;
-@property(assign,copy) NSString * definitionMode;
-@property(assign,copy) NSString * definitionType;
-@property(assign,readonly) SKUIPredicateListViewElement * predicateListViewElement;
+@property (nonatomic, readonly) SKUIViewElement *contentViewElement;
+@property (nonatomic, readonly, copy) NSString *definitionMode;
+@property (nonatomic, readonly, copy) NSString *definitionType;
+@property (nonatomic, readonly) SKUIPredicateListViewElement *predicateListViewElement;
 
 - (id)contentViewElement;
 - (id)definitionMode;

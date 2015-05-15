@@ -12,13 +12,13 @@
     PUSizeSettings *_sizeSettings;
 }
 
-@property(assign,retain) PUFeedSettings * feedSettings;
-@property(assign,readwrite) long long imagePickerTestSourceType;
-@property(assign,retain) PUMomentsSettings * momentsSettings;
-@property(assign,retain) PUPhotoEditProtoSettings * photoEditingSettings;
-@property(assign,retain) PUPhotosGridSettings * photosGridSettings;
-@property(assign,readwrite) unsigned long long settingsVersion;
-@property(assign,retain) PUSizeSettings * sizeSettings;
+@property (nonatomic, retain) PUFeedSettings *feedSettings;
+@property (nonatomic) long long imagePickerTestSourceType;
+@property (nonatomic, retain) PUMomentsSettings *momentsSettings;
+@property (nonatomic, retain) PUPhotoEditProtoSettings *photoEditingSettings;
+@property (nonatomic, retain) PUPhotosGridSettings *photosGridSettings;
+@property (nonatomic) unsigned long long settingsVersion;
+@property (nonatomic, retain) PUSizeSettings *sizeSettings;
 
 + (void)_addRandomPhoto;
 + (id)_currentViewControllerStack;

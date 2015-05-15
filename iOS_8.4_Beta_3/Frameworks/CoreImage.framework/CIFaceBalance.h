@@ -10,11 +10,11 @@
     NSNumber *inputWarmth;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputOrigI;
-@property(assign,retain) NSNumber * inputOrigQ;
-@property(assign,retain) NSNumber * inputStrength;
-@property(assign,retain) NSNumber * inputWarmth;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputOrigI;
+@property (nonatomic, retain) NSNumber *inputOrigQ;
+@property (nonatomic, retain) NSNumber *inputStrength;
+@property (nonatomic, retain) NSNumber *inputWarmth;
 
 + (id)customAttributes;
 

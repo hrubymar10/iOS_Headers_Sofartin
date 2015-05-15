@@ -9,8 +9,8 @@
     } _request;
 }
 
-@property(getter=isMainFrame,assign,readonly) bool mainFrame;
-@property(assign,copy) NSURLRequest * request;
+@property (getter=isMainFrame, nonatomic, readonly) bool mainFrame;
+@property (nonatomic, readonly, copy) NSURLRequest *request;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

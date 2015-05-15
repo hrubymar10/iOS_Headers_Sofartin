@@ -4,16 +4,16 @@
 
 @interface SASPronunciationData : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * apgId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSLocale * language;
-@property(assign,copy) NSString * orthography;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long tokenOffset;
-@property(assign,copy) NSArray * ttsPronunciations;
-@property(assign,copy) NSString * ttsVersion;
+@property (nonatomic, copy) NSString *apgId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSLocale *language;
+@property (nonatomic, copy) NSString *orthography;
+@property (readonly) Class superclass;
+@property (nonatomic) long long tokenOffset;
+@property (nonatomic, copy) NSArray *ttsPronunciations;
+@property (nonatomic, copy) NSString *ttsVersion;
 
 + (id)pronunciationData;
 + (id)pronunciationDataWithDictionary:(id)arg1 context:(id)arg2;

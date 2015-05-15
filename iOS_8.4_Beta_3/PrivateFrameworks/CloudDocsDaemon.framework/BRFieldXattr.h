@@ -7,8 +7,8 @@
     NSData *_value;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSData * value;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSData *value;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

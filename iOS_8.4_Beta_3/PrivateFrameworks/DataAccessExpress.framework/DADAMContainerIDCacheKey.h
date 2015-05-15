@@ -7,8 +7,8 @@
     long long _dataclass;
 }
 
-@property(assign,readonly) NSString * accountID;
-@property(assign,readonly) long long dataclass;
+@property (nonatomic, readonly) NSString *accountID;
+@property (nonatomic, readonly) long long dataclass;
 
 - (void).cxx_destruct;
 - (id)accountID;

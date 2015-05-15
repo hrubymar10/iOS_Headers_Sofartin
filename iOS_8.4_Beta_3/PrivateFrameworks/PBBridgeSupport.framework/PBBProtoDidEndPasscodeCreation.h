@@ -10,9 +10,9 @@
     bool _success;
 }
 
-@property(assign,readwrite) bool hasIsLong;
-@property(assign,readwrite) bool isLong;
-@property(assign,readwrite) bool success;
+@property (nonatomic) bool hasIsLong;
+@property (nonatomic) bool isLong;
+@property (nonatomic) bool success;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

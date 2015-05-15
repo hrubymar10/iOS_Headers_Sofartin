@@ -17,13 +17,13 @@
     NSDictionary *_videoSettings;
 }
 
-@property(assign,copy) NSDictionary * audioSettings;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } movieFragmentInterval;
-@property(assign,copy) NSDictionary * movieLevelMetadata;
-@property(assign,readwrite) bool sendThumbnailIOSurface;
-@property(assign,readwrite) bool videoMirrored;
-@property(assign,readwrite) int videoOrientation;
-@property(assign,copy) NSDictionary * videoSettings;
+@property (nonatomic, copy) NSDictionary *audioSettings;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } movieFragmentInterval;
+@property (nonatomic, copy) NSDictionary *movieLevelMetadata;
+@property (nonatomic) bool sendThumbnailIOSurface;
+@property (nonatomic) bool videoMirrored;
+@property (nonatomic) int videoOrientation;
+@property (nonatomic, copy) NSDictionary *videoSettings;
 
 - (id)audioSettings;
 - (void)dealloc;

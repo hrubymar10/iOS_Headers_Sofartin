@@ -7,8 +7,8 @@
     unsigned int _interfaceID;
 }
 
-@property(assign,readonly) NSDictionary * attributes;
-@property(assign,readonly) unsigned int interfaceID;
+@property (nonatomic, readonly) NSDictionary *attributes;
+@property (nonatomic, readonly) unsigned int interfaceID;
 
 + (id)portInfoRequestWithInterfaceID:(unsigned int)arg1 key:(unsigned int)arg2;
 + (id)requestWithInterfaceID:(unsigned int)arg1 attributes:(id)arg2;

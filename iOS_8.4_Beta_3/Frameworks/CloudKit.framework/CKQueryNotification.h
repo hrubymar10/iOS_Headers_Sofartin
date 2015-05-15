@@ -9,11 +9,11 @@
     CKRecordID *_recordID;
 }
 
-@property(assign,readwrite) long long databaseScope;
-@property(assign,readonly) bool isPublicDatabase;
-@property(assign,readwrite) long long queryNotificationReason;
-@property(assign,copy) NSDictionary * recordFields;
-@property(assign,copy) CKRecordID * recordID;
+@property (nonatomic) long long databaseScope;
+@property (nonatomic, readonly) bool isPublicDatabase;
+@property (nonatomic) long long queryNotificationReason;
+@property (nonatomic, copy) NSDictionary *recordFields;
+@property (nonatomic, copy) CKRecordID *recordID;
 
 + (bool)supportsSecureCoding;
 

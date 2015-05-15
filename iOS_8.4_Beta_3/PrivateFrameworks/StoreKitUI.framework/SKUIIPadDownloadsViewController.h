@@ -11,13 +11,13 @@
     _UIContentUnavailableView *_noContentView;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIDownloadsChildViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSArray * downloads;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIDownloadsChildViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSArray *downloads;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_cancelAction:(id)arg1;

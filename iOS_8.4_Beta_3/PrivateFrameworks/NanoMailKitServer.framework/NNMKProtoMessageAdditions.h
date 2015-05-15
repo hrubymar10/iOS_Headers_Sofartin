@@ -14,15 +14,15 @@
     bool _messagesAreNew;
 }
 
-@property(assign,retain) NSData * dateForRequestingMoreMessages;
-@property(assign,retain) NSData * dateSynced;
-@property(assign,readwrite) unsigned int fullSyncVersion;
-@property(assign,readonly) bool hasDateForRequestingMoreMessages;
-@property(assign,readonly) bool hasDateSynced;
-@property(assign,readwrite) bool hasFullSyncVersion;
-@property(assign,readwrite) bool hasMessagesAreNew;
-@property(assign,retain) NSMutableArray * messageAdditions;
-@property(assign,readwrite) bool messagesAreNew;
+@property (nonatomic, retain) NSData *dateForRequestingMoreMessages;
+@property (nonatomic, retain) NSData *dateSynced;
+@property (nonatomic) unsigned int fullSyncVersion;
+@property (nonatomic, readonly) bool hasDateForRequestingMoreMessages;
+@property (nonatomic, readonly) bool hasDateSynced;
+@property (nonatomic) bool hasFullSyncVersion;
+@property (nonatomic) bool hasMessagesAreNew;
+@property (nonatomic, retain) NSMutableArray *messageAdditions;
+@property (nonatomic) bool messagesAreNew;
 
 - (void).cxx_destruct;
 - (void)addMessageAddition:(id)arg1;

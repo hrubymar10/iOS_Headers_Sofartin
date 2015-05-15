@@ -13,10 +13,10 @@
     id result;
 }
 
-@property(assign,retain) NSError * error;
-@property(assign,readwrite) NSObject<OS_dispatch_group> * group;
-@property(getter=isLoggingEnabled,assign,readwrite) bool loggingEnabled;
-@property(assign,retain) id result;
+@property (retain) NSError *error;
+@property NSObject<OS_dispatch_group> *group;
+@property (getter=isLoggingEnabled, nonatomic) bool loggingEnabled;
+@property (retain) id result;
 
 + (id)backgroundConcurrentQueue;
 + (id)defaultConcurrentQueue;

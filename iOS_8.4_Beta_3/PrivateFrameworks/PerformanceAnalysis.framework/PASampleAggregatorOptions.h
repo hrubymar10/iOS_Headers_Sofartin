@@ -19,21 +19,21 @@
     bool _tabDelineateBinaryImageSections;
 }
 
-@property(assign,readwrite) bool binaryImagesBeforeStacks;
-@property(assign,readwrite) bool displayBinaryImageAddresses;
-@property(assign,readwrite) bool displayBinaryImagesLackingNameOrPath;
-@property(assign,readwrite) bool displayFrameAddresses;
-@property(assign,readwrite) bool displayIdleWorkQueueThreads;
-@property(assign,readwrite) bool displayNonRunnableThreads;
-@property(assign,readwrite) bool displayOffsetsFromUnnamedSymbols;
-@property(assign,readwrite) bool displayProcessFirstLastTimes;
-@property(assign,readwrite) bool displayStateChangesOnIdleThreads;
-@property(assign,readwrite) bool displaySub1MsCpuTime;
-@property(assign,readwrite) bool displaySymbolInformation;
-@property(assign,readwrite) bool printHeavyStacks;
-@property(assign,readwrite) bool printSpinSignatureStack;
-@property(assign,readwrite) bool tabDelineateBinaryImageSections;
-@property(assign,readwrite) bool verbose;
+@property bool binaryImagesBeforeStacks;
+@property bool displayBinaryImageAddresses;
+@property bool displayBinaryImagesLackingNameOrPath;
+@property bool displayFrameAddresses;
+@property bool displayIdleWorkQueueThreads;
+@property bool displayNonRunnableThreads;
+@property bool displayOffsetsFromUnnamedSymbols;
+@property bool displayProcessFirstLastTimes;
+@property bool displayStateChangesOnIdleThreads;
+@property bool displaySub1MsCpuTime;
+@property bool displaySymbolInformation;
+@property bool printHeavyStacks;
+@property bool printSpinSignatureStack;
+@property bool tabDelineateBinaryImageSections;
+@property bool verbose;
 
 - (bool)binaryImagesBeforeStacks;
 - (bool)displayBinaryImageAddresses;

@@ -9,8 +9,8 @@
     double _webViewWidth;
 }
 
-@property(assign,retain) NSString * stylesheet;
-@property(assign,readwrite) double webViewWidth;
+@property (nonatomic, retain) NSString *stylesheet;
+@property (nonatomic) double webViewWidth;
 
 - (void)dealloc;
 - (void)setStylesheet:(id)arg1;

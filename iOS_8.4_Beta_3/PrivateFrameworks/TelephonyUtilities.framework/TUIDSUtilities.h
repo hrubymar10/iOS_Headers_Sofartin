@@ -4,10 +4,10 @@
 
 @interface TUIDSUtilities : NSObject <IDSIDQueryControllerDelegate>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_IDSFormattedDestinationsForPerson:(id)arg1;
 + (bool)_anyStatusInResultDictionary:(id)arg1 equalsIDStatus:(long long)arg2;

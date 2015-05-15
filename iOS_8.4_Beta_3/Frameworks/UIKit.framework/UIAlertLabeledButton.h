@@ -7,8 +7,8 @@
     UILabel *_typeLabel;
 }
 
-@property(assign,readwrite) double titleOffset;
-@property(assign,readonly) UILabel * typeLabel;
+@property (nonatomic) double titleOffset;
+@property (nonatomic, readonly) UILabel *typeLabel;
 
 - (void)dealloc;
 - (void)layoutSubviews;

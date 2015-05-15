@@ -14,15 +14,15 @@
     NSObject<OS_xpc_object> *_xpcConnection;
 }
 
-@property(assign,retain) NSArray * clientIDs;
-@property(assign,retain) NSDictionary * clientNames;
-@property(assign,retain) PLNSNotificationOperatorComposition * dailyTaskNotification;
-@property(assign,retain) NSDictionary * permissionCache;
-@property(assign,retain) NSMutableDictionary * registeredListeners;
-@property(assign,retain) NSMutableDictionary * registeredResponders;
-@property(assign,retain) PLNSNotificationOperatorComposition * registrationNotification;
-@property(assign,retain) PLNSTimerOperatorComposition * resetPermissionsForClientsTimer;
-@property(assign,retain) NSObject<OS_xpc_object> * xpcConnection;
+@property (retain) NSArray *clientIDs;
+@property (retain) NSDictionary *clientNames;
+@property (retain) PLNSNotificationOperatorComposition *dailyTaskNotification;
+@property (retain) NSDictionary *permissionCache;
+@property (retain) NSMutableDictionary *registeredListeners;
+@property (retain) NSMutableDictionary *registeredResponders;
+@property (retain) PLNSNotificationOperatorComposition *registrationNotification;
+@property (retain) PLNSTimerOperatorComposition *resetPermissionsForClientsTimer;
+@property (retain) NSObject<OS_xpc_object> *xpcConnection;
 
 + (id)defaults;
 + (id)entryAggregateDefinitionXPCEvent;

@@ -16,12 +16,12 @@
     bool _vertical;
 }
 
-@property(assign,readwrite) bool applyOrthogonalConstraints;
-@property(assign,readwrite) UIView * baselineView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } insets;
-@property(assign,readwrite) double overlap;
-@property(assign,retain) NSArray * replaceableConstraints;
-@property(assign,readwrite) bool vertical;
+@property (nonatomic) bool applyOrthogonalConstraints;
+@property (nonatomic) UIView *baselineView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } insets;
+@property (nonatomic) double overlap;
+@property (nonatomic, retain) NSArray *replaceableConstraints;
+@property (nonatomic) bool vertical;
 
 + (id)containerForViewsFontsLeadings:(id)arg1 options:(long long)arg2;
 + (id)containerViewForViews:(id)arg1 overlap:(double)arg2 vertical:(bool)arg3;

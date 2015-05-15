@@ -9,8 +9,8 @@
     unsigned long long currentPageIndex;
 }
 
-@property(assign,readwrite) unsigned long long currentPageIndex;
-@property(getter=isTimerInstalled,assign,readonly) bool timerInstalled;
+@property (nonatomic) unsigned long long currentPageIndex;
+@property (getter=isTimerInstalled, nonatomic, readonly) bool timerInstalled;
 
 - (void)_fadeOutAnimationDidStop:(id)arg1 finished:(id)arg2;
 - (double)_fadeOutDelay;

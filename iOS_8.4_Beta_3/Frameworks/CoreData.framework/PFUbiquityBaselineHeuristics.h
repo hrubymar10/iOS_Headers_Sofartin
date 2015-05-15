@@ -16,17 +16,17 @@
     PFUbiquityLocation *_ubiquityRootLocation;
 }
 
-@property(assign,retain) PFUbiquityKnowledgeVector * currentBaselineKV;
-@property(assign,retain) PFUbiquityKnowledgeVector * currentKV;
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,readonly) long long logSize;
-@property(assign,readwrite) long double logToStoreSizeRatio;
-@property(assign,readwrite) long long minLogBytes;
-@property(assign,readonly) NSString * modelVersionHash;
-@property(assign,readwrite) long long numRequiredTransactions;
-@property(assign,readonly) NSString * storeName;
-@property(assign,readonly) long long storeSize;
-@property(assign,readonly) PFUbiquityLocation * ubiquityRootLocation;
+@property (nonatomic, retain) PFUbiquityKnowledgeVector *currentBaselineKV;
+@property (nonatomic, retain) PFUbiquityKnowledgeVector *currentKV;
+@property (nonatomic, readonly) NSString *localPeerID;
+@property (nonatomic, readonly) long long logSize;
+@property (nonatomic) long double logToStoreSizeRatio;
+@property (nonatomic) long long minLogBytes;
+@property (nonatomic, readonly) NSString *modelVersionHash;
+@property (nonatomic) long long numRequiredTransactions;
+@property (nonatomic, readonly) NSString *storeName;
+@property (nonatomic, readonly) long long storeSize;
+@property (nonatomic, readonly) PFUbiquityLocation *ubiquityRootLocation;
 
 - (long long)bytesForFileAtPath:(id)arg1;
 - (bool)canRollBaseline:(id*)arg1;

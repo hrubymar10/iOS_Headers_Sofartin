@@ -11,17 +11,17 @@
     NSString *_text;
 }
 
-@property(assign,retain) NSString * actionLocKey;
-@property(assign,readonly) bool hasActionLocKey;
-@property(assign,readonly) bool hasLaunchImage;
-@property(assign,readonly) bool hasLocalizedKey;
-@property(assign,readonly) bool hasSoundName;
-@property(assign,readonly) bool hasText;
-@property(assign,retain) NSString * launchImage;
-@property(assign,retain) NSMutableArray * localizedArguments;
-@property(assign,retain) NSString * localizedKey;
-@property(assign,retain) NSString * soundName;
-@property(assign,retain) NSString * text;
+@property (nonatomic, retain) NSString *actionLocKey;
+@property (nonatomic, readonly) bool hasActionLocKey;
+@property (nonatomic, readonly) bool hasLaunchImage;
+@property (nonatomic, readonly) bool hasLocalizedKey;
+@property (nonatomic, readonly) bool hasSoundName;
+@property (nonatomic, readonly) bool hasText;
+@property (nonatomic, retain) NSString *launchImage;
+@property (nonatomic, retain) NSMutableArray *localizedArguments;
+@property (nonatomic, retain) NSString *localizedKey;
+@property (nonatomic, retain) NSString *soundName;
+@property (nonatomic, retain) NSString *text;
 
 - (void).cxx_destruct;
 - (id)actionLocKey;

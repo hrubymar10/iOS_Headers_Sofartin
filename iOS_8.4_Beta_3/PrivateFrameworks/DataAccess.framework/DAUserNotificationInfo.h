@@ -7,7 +7,7 @@
     id _handler;
 }
 
-@property(assign,copy) NSString * groupIdentifier;
+@property (nonatomic, copy) NSString *groupIdentifier;
 
 - (void).cxx_destruct;
 - (id)groupIdentifier;

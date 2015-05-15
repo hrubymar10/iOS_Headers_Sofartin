@@ -14,13 +14,13 @@
     NSObject<OS_dispatch_queue> *_transferQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id getNextJob;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,readonly) NSArray * operations;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id getNextJob;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCancelled;
+@property (readonly) NSArray *operations;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_addOperation:(id)arg1;

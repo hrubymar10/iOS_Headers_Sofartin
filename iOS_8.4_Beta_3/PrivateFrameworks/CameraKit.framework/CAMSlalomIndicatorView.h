@@ -7,8 +7,8 @@
     long long _framesPerSecond;
 }
 
-@property(assign,readonly) UILabel * _framerateLabel;
-@property(assign,readwrite) long long framesPerSecond;
+@property (nonatomic, readonly) UILabel *_framerateLabel;
+@property (nonatomic) long long framesPerSecond;
 
 - (void).cxx_destruct;
 - (void)_commonCAMSlalomIndicatorViewInitialization;

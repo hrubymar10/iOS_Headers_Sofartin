@@ -6,7 +6,7 @@
     NSData *_passData;
 }
 
-@property(assign,retain) NSData * passData;
+@property (nonatomic, retain) NSData *passData;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

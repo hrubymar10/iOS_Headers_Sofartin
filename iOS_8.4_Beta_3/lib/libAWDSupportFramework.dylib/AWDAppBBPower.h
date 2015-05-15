@@ -12,12 +12,12 @@
     int _rAT;
 }
 
-@property(assign,retain) NSString * bundleName;
-@property(assign,readonly) bool hasBundleName;
-@property(assign,readwrite) bool hasPowerMicroWatt;
-@property(assign,readwrite) bool hasRAT;
-@property(assign,readwrite) unsigned int powerMicroWatt;
-@property(assign,readwrite) int rAT;
+@property (nonatomic, retain) NSString *bundleName;
+@property (nonatomic, readonly) bool hasBundleName;
+@property (nonatomic) bool hasPowerMicroWatt;
+@property (nonatomic) bool hasRAT;
+@property (nonatomic) unsigned int powerMicroWatt;
+@property (nonatomic) int rAT;
 
 - (id)bundleName;
 - (void)copyTo:(id)arg1;

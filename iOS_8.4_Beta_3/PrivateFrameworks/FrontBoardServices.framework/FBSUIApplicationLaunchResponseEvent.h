@@ -6,7 +6,7 @@
     FBSUIApplicationLaunchResponse *_response;
 }
 
-@property(assign,retain) FBSUIApplicationLaunchResponse * response;
+@property (nonatomic, retain) FBSUIApplicationLaunchResponse *response;
 
 - (void)dealloc;
 - (void)encodeWithXPCDictionary:(id)arg1;

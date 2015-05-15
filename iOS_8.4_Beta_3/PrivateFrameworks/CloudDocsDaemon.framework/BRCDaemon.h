@@ -31,26 +31,26 @@
     NSObject<OS_dispatch_group> *_xpcTokenListenerBlockerUntilReady;
 }
 
-@property(assign,readonly) BRCAccountHandler * accountHandler;
-@property(assign,retain) NSString * appSupportDirPath;
-@property(assign,retain) NSString * cacheDirPath;
-@property(assign,retain) Class containerClass;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool disableAccountChangesHandling;
-@property(assign,readwrite) bool disableAppsChangesHandling;
-@property(assign,readonly) NSXPCListenerEndpoint * endpoint;
-@property(assign,readonly) BRCCloudFileProvider * fileProvider;
-@property(assign,readwrite) unsigned long long forceIsGreedyState;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSError * loggedOutError;
-@property(assign,retain) NSString * logsDirPath;
-@property(assign,retain) NSString * rootDirPath;
-@property(assign,retain) BRCAccountSession * session;
-@property(assign,readonly) NSDate * startupDate;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * ubiquityTokenSalt;
-@property(assign,readonly) BRCVersionsFileProvider * versionsProvider;
+@property (nonatomic, readonly) BRCAccountHandler *accountHandler;
+@property (nonatomic, retain) NSString *appSupportDirPath;
+@property (nonatomic, retain) NSString *cacheDirPath;
+@property (nonatomic, retain) Class containerClass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool disableAccountChangesHandling;
+@property (nonatomic) bool disableAppsChangesHandling;
+@property (nonatomic, readonly) NSXPCListenerEndpoint *endpoint;
+@property (nonatomic, readonly) BRCCloudFileProvider *fileProvider;
+@property (nonatomic) unsigned long long forceIsGreedyState;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSError *loggedOutError;
+@property (nonatomic, retain) NSString *logsDirPath;
+@property (nonatomic, retain) NSString *rootDirPath;
+@property (nonatomic, retain) BRCAccountSession *session;
+@property (nonatomic, readonly) NSDate *startupDate;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *ubiquityTokenSalt;
+@property (nonatomic, readonly) BRCVersionsFileProvider *versionsProvider;
 
 + (id)daemon;
 

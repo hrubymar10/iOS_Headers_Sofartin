@@ -9,10 +9,10 @@
     NSString *_universalSectionID;
 }
 
-@property(assign,copy) NSString * displayName;
-@property(assign,retain) NSDictionary * overrides;
-@property(assign,retain) BBSectionInfo * sectionInfo;
-@property(assign,copy) NSString * universalSectionID;
+@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic, retain) NSDictionary *overrides;
+@property (nonatomic, retain) BBSectionInfo *sectionInfo;
+@property (nonatomic, copy) NSString *universalSectionID;
 
 - (void).cxx_destruct;
 - (id)displayName;

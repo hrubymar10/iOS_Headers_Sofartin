@@ -12,9 +12,9 @@
     UIView *_snapshotView;
 }
 
-@property(assign,readwrite) bool limitedUI;
-@property(assign,readwrite) bool shouldHideIndexTitles;
-@property(assign,readwrite) bool showMore;
+@property (nonatomic) bool limitedUI;
+@property (nonatomic) bool shouldHideIndexTitles;
+@property (nonatomic) bool showMore;
 
 + (Class)_tableViewClass;
 

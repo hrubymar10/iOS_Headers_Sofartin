@@ -6,7 +6,7 @@
     NSArray *_data;
 }
 
-@property(assign,retain) NSArray * data;
+@property (retain) NSArray *data;
 
 - (void).cxx_destruct;
 - (id)data;

@@ -7,9 +7,9 @@
     CALayer *_target;
 }
 
-@property(assign,copy) NSString * keyPath;
-@property(assign,retain) CAStateElement * source;
-@property(assign,readwrite) CALayer * target;
+@property (nonatomic, readonly, copy) NSString *keyPath;
+@property (nonatomic, retain) CAStateElement *source;
+@property (nonatomic) CALayer *target;
 
 + (void)CAMLParserStartElement:(id)arg1;
 

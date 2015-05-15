@@ -6,12 +6,12 @@
     unsigned long long _encodedLength;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) unsigned long long decodedLength;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long encodedLength;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) unsigned long long decodedLength;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) unsigned long long encodedLength;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (unsigned long long)decodedLength;
 - (id)description;

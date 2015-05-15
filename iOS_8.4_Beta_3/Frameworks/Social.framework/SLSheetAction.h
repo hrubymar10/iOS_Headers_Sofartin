@@ -4,7 +4,7 @@
 
 @interface SLSheetAction : SLComposeSheetConfigurationItem
 
-@property(assign,copy) id actionBlock;
+@property (nonatomic, copy) id actionBlock;
 
 - (id)actionBlock;
 - (id)initWithTitle:(id)arg1 value:(id)arg2 actionBlock:(id)arg3;

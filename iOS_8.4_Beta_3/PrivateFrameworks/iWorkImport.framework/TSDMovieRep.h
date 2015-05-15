@@ -32,8 +32,8 @@
     CALayer *mReflectionPlayerStrokeMaskLayer;
 }
 
-@property(assign,readwrite) struct CGImage { }* alternatePosterImage;
-@property(assign,readonly) TSDMovieInfo * movieInfo;
+@property (nonatomic) struct CGImage { }*alternatePosterImage;
+@property (nonatomic, readonly) TSDMovieInfo *movieInfo;
 
 + (double)magicMoveAttributeMatchPercentBetweenOutgoingObject:(id)arg1 incomingObject:(id)arg2 mixingTypeContext:(id)arg3;
 

@@ -35,19 +35,19 @@
     unsigned int _unused;
 }
 
-@property(setter=_setBackgroundExtendsBeyondPage:,assign,readwrite) bool _backgroundExtendsBeyondPage;
-@property(setter=_setObscuredInsets:,assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } _obscuredInsets;
-@property(assign,readonly) UIColor * _pageExtendedBackgroundColor;
-@property(assign,readonly) WKBrowsingContextController * browsingContextController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool drawsBackground;
-@property(assign,readwrite) bool drawsTransparentBackground;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } minimumLayoutSizeOverride;
-@property(assign,readonly) struct OpaqueWKPage { }* pageRef;
-@property(assign,readonly) UIScrollView * scrollView;
-@property(assign,readonly) Class superclass;
+@property (setter=_setBackgroundExtendsBeyondPage:, nonatomic) bool _backgroundExtendsBeyondPage;
+@property (setter=_setObscuredInsets:, nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } _obscuredInsets;
+@property (readonly) UIColor *_pageExtendedBackgroundColor;
+@property (readonly) WKBrowsingContextController *browsingContextController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property bool drawsBackground;
+@property bool drawsTransparentBackground;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct CGSize { double x1; double x2; } minimumLayoutSizeOverride;
+@property (readonly) struct OpaqueWKPage { }*pageRef;
+@property (nonatomic, readonly) UIScrollView *scrollView;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

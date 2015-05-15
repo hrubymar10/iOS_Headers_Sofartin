@@ -6,7 +6,7 @@
     NSMutableArray *_clocks;
 }
 
-@property(assign,retain) NSMutableArray * clocks;
+@property (nonatomic, retain) NSMutableArray *clocks;
 
 + (void)initialize;
 

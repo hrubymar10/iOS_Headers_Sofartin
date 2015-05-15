@@ -12,7 +12,7 @@
     UITouch *_trackingTouch;
 }
 
-@property(assign,readonly) long long swipeDirection;
+@property (nonatomic, readonly) long long swipeDirection;
 
 - (void).cxx_destruct;
 - (void)dealloc;

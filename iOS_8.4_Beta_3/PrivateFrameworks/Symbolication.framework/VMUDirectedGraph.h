@@ -19,11 +19,11 @@
     unsigned int _nodeCount;
 }
 
-@property(assign,copy) NSDictionary * additionalProperties;
-@property(assign,readonly) unsigned int edgeCount;
-@property(assign,readonly) unsigned int edgeNamespaceSize;
-@property(assign,readonly) unsigned int nodeCount;
-@property(assign,readonly) unsigned int nodeNamespaceSize;
+@property (nonatomic, copy) NSDictionary *additionalProperties;
+@property (nonatomic, readonly) unsigned int edgeCount;
+@property (nonatomic, readonly) unsigned int edgeNamespaceSize;
+@property (nonatomic, readonly) unsigned int nodeCount;
+@property (nonatomic, readonly) unsigned int nodeNamespaceSize;
 
 + (id)_archivedBytes:(const void*)arg1 length:(unsigned long long)arg2 options:(unsigned long long)arg3;
 + (id)_archivedObject:(id)arg1 options:(unsigned long long)arg2;

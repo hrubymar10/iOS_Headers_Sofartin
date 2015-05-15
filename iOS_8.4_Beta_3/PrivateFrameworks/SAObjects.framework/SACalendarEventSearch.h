@@ -4,16 +4,16 @@
 
 @interface SACalendarEventSearch : SABaseClientBoundCommand
 
-@property(assign,copy) NSDate * endDate;
-@property(assign,copy) NSURL * eventId;
-@property(assign,retain) NSNumber * limit;
-@property(assign,copy) NSString * location;
-@property(assign,copy) NSString * notes;
-@property(assign,copy) NSArray * participants;
-@property(assign,copy) NSDate * startDate;
-@property(assign,copy) NSURL * targetAppId;
-@property(assign,copy) NSString * timeZoneId;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSDate *endDate;
+@property (nonatomic, copy) NSURL *eventId;
+@property (nonatomic, retain) NSNumber *limit;
+@property (nonatomic, copy) NSString *location;
+@property (nonatomic, copy) NSString *notes;
+@property (nonatomic, copy) NSArray *participants;
+@property (nonatomic, copy) NSDate *startDate;
+@property (nonatomic, copy) NSURL *targetAppId;
+@property (nonatomic, copy) NSString *timeZoneId;
+@property (nonatomic, copy) NSString *title;
 
 + (id)eventSearch;
 + (id)eventSearchWithDictionary:(id)arg1 context:(id)arg2;

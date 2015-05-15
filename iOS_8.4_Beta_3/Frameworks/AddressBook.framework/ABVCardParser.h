@@ -47,7 +47,7 @@
     NSMutableArray *_yahoos;
 }
 
-@property(assign,readwrite) void* source;
+@property (nonatomic) void*source;
 
 + (struct __CFArray { }*)supportedProperties;
 

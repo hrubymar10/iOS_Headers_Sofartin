@@ -4,14 +4,14 @@
 
 @interface SACalendarRecurrence : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long endCount;
-@property(assign,copy) NSDate * endDate;
-@property(assign,readwrite) int frequency;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long interval;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long endCount;
+@property (nonatomic, copy) NSDate *endDate;
+@property (nonatomic) int frequency;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long interval;
+@property (readonly) Class superclass;
 
 + (id)recurrence;
 + (id)recurrenceWithDictionary:(id)arg1 context:(id)arg2;

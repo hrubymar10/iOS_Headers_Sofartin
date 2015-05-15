@@ -10,11 +10,11 @@
     NSMutableDictionary *_sharesToSaveByID;
 }
 
-@property(assign,retain) NSMutableDictionary * participantIDByRequestID;
-@property(assign,retain) NSMutableDictionary * shareIDByRequestID;
-@property(assign,copy) id shareModifiedBlock;
-@property(assign,retain) NSArray * sharesToDelete;
-@property(assign,retain) NSMutableDictionary * sharesToSaveByID;
+@property (nonatomic, retain) NSMutableDictionary *participantIDByRequestID;
+@property (nonatomic, retain) NSMutableDictionary *shareIDByRequestID;
+@property (nonatomic, copy) id shareModifiedBlock;
+@property (nonatomic, retain) NSArray *sharesToDelete;
+@property (nonatomic, retain) NSMutableDictionary *sharesToSaveByID;
 
 - (void).cxx_destruct;
 - (id)initWithSharesToSave:(id)arg1 sharesToDelete:(id)arg2;

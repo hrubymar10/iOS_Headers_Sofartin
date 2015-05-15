@@ -6,7 +6,7 @@
     NSString *_entityName;
 }
 
-@property(assign,retain) NSString * entityName;
+@property (retain) NSString *entityName;
 
 - (void).cxx_destruct;
 - (id)entityName;

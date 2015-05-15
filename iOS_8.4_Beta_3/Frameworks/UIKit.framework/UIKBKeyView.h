@@ -28,25 +28,25 @@
     UIKBRenderConfig *m_renderConfig;
 }
 
-@property(assign,readonly) bool cacheDeferable;
-@property(assign,readonly) NSString * cacheKey;
-@property(assign,readonly) long long cachedRenderFlags;
-@property(assign,retain) NSString * cachedTraitsHashString;
-@property(assign,readonly) double cachedWidth;
-@property(assign,readonly) UIKBKeyView * contentsKeyView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } displayInsets;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } drawFrame;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool keepNonPersistent;
-@property(assign,readonly) UIKBTree * key;
-@property(assign,readonly) UIKBTree * keyplane;
-@property(assign,readwrite) UIKeyboardMenuView * popupMenu;
-@property(assign,readwrite) bool renderAsMask;
-@property(assign,retain) UIKBRenderConfig * renderConfig;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } variantFrame;
+@property (nonatomic, readonly) bool cacheDeferable;
+@property (nonatomic, readonly) NSString *cacheKey;
+@property (readonly) long long cachedRenderFlags;
+@property (nonatomic, retain) NSString *cachedTraitsHashString;
+@property (nonatomic, readonly) double cachedWidth;
+@property (nonatomic, readonly) UIKBKeyView *contentsKeyView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } displayInsets;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } drawFrame;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool keepNonPersistent;
+@property (nonatomic, readonly) UIKBTree *key;
+@property (nonatomic, readonly) UIKBTree *keyplane;
+@property (nonatomic) UIKeyboardMenuView *popupMenu;
+@property (nonatomic) bool renderAsMask;
+@property (nonatomic, retain) UIKBRenderConfig *renderConfig;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } variantFrame;
 
 - (void)_applyAppearanceInvocations;
 - (id)_generateBackdropMaskImage;

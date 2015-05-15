@@ -6,7 +6,7 @@
     UILabel *__messageLabel;
 }
 
-@property(assign,readonly) UILabel * _messageLabel;
+@property (nonatomic, readonly) UILabel *_messageLabel;
 
 - (void).cxx_destruct;
 - (id)_messageLabel;

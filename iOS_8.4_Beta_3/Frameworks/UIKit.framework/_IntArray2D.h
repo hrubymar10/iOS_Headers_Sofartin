@@ -9,9 +9,9 @@
     bool _shouldBoundsCheck;
 }
 
-@property(assign,readonly) unsigned long long iSize;
-@property(assign,readonly) unsigned long long jSize;
-@property(assign,readwrite) bool shouldBoundsCheck;
+@property (nonatomic, readonly) unsigned long long iSize;
+@property (nonatomic, readonly) unsigned long long jSize;
+@property (nonatomic) bool shouldBoundsCheck;
 
 + (id)arrayWithISize:(unsigned long long)arg1 jSize:(unsigned long long)arg2;
 

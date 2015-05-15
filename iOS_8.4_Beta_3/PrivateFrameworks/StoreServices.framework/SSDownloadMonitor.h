@@ -9,7 +9,7 @@
     NSObject<OS_dispatch_queue> *_dispatchQueue;
 }
 
-@property(assign,readwrite) <SSDownloadMonitorDelegate> * delegate;
+@property <SSDownloadMonitorDelegate> *delegate;
 
 - (id)_connection;
 - (id)_copyItemsWithReply:(id)arg1 error:(id*)arg2;

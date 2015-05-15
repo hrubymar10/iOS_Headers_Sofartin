@@ -11,10 +11,10 @@
     bool _showWeekNumbers;
 }
 
-@property(assign,readwrite) bool allowsImport;
-@property(assign,readwrite) bool allowsSubitems;
-@property(assign,readwrite) <EKICSPreviewListDelegate> * listDelegate;
-@property(assign,readwrite) bool showWeekNumbers;
+@property (nonatomic) bool allowsImport;
+@property (nonatomic) bool allowsSubitems;
+@property (nonatomic) <EKICSPreviewListDelegate> *listDelegate;
+@property (nonatomic) bool showWeekNumbers;
 
 - (void).cxx_destruct;
 - (void)_showWeekNumbersPreferenceChanged:(id)arg1;

@@ -10,12 +10,12 @@
     NSHashTable *_viewControllers;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isPreviewActive,assign,readonly) bool previewActive;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isPreviewActive, nonatomic, readonly) bool previewActive;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_audioPlayerStatusChangeNotification:(id)arg1;

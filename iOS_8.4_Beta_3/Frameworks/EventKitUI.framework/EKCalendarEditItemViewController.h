@@ -10,12 +10,12 @@
     EKEventStore *_store;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool limitToSource;
-@property(assign,retain) EKCalendar * selectedCalendar;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool limitToSource;
+@property (nonatomic, retain) EKCalendar *selectedCalendar;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)calendarChooserSelectionDidChange:(id)arg1;

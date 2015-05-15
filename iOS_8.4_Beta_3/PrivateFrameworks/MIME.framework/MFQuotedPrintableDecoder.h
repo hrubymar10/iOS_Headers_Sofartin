@@ -9,7 +9,7 @@
     unsigned long long _required;
 }
 
-@property(assign,readwrite) bool forTextPart;
+@property (nonatomic) bool forTextPart;
 
 - (long long)appendData:(id)arg1;
 - (void)done;

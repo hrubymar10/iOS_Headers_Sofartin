@@ -9,10 +9,10 @@
     UIWindow *_window;
 }
 
-@property(assign,retain) <WebAllowDenyPolicyListener> * listener;
-@property(assign,retain) NSURL * requestingURL;
-@property(assign,retain) NSString * token;
-@property(assign,retain) UIWindow * window;
+@property (nonatomic, retain) <WebAllowDenyPolicyListener> *listener;
+@property (nonatomic, retain) NSURL *requestingURL;
+@property (nonatomic, retain) NSString *token;
+@property (nonatomic, retain) UIWindow *window;
 
 - (void)dealloc;
 - (id)listener;

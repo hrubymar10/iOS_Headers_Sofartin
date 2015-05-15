@@ -10,15 +10,15 @@
     NSString *_mainTitle;
 }
 
-@property(assign,retain) NSString * album;
-@property(assign,retain) NSString * artist;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double durationFromExternalMetadata;
-@property(getter=isExplicitTrack,assign,readwrite) bool explicitTrack;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * mainTitle;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSString *album;
+@property (nonatomic, retain) NSString *artist;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double durationFromExternalMetadata;
+@property (getter=isExplicitTrack, nonatomic) bool explicitTrack;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *mainTitle;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)album;

@@ -43,15 +43,15 @@
     CXNamespace *mWXShapeNamespace;
 }
 
-@property(assign,retain) CXNamespace * WXDrawingNamespace;
-@property(assign,retain) CXNamespace * WXGroupNamespace;
-@property(assign,retain) CXNamespace * WXMainNamespace;
-@property(assign,retain) CXNamespace * WXMathNamespace;
-@property(assign,retain) CXNamespace * WXOOBibliographyNamespace;
-@property(assign,retain) CXNamespace * WXRelationshipNamespace;
-@property(assign,retain) CXNamespace * WXShapeNamespace;
-@property(assign,retain) <TCCancelDelegate> * cancelDelegate;
-@property(assign,readwrite) int currentOfficeArtTextType;
+@property (nonatomic, retain) CXNamespace *WXDrawingNamespace;
+@property (nonatomic, retain) CXNamespace *WXGroupNamespace;
+@property (nonatomic, retain) CXNamespace *WXMainNamespace;
+@property (nonatomic, retain) CXNamespace *WXMathNamespace;
+@property (nonatomic, retain) CXNamespace *WXOOBibliographyNamespace;
+@property (nonatomic, retain) CXNamespace *WXRelationshipNamespace;
+@property (nonatomic, retain) CXNamespace *WXShapeNamespace;
+@property (nonatomic, retain) <TCCancelDelegate> *cancelDelegate;
+@property (nonatomic) int currentOfficeArtTextType;
 
 - (id)WXDrawingNamespace;
 - (id)WXGroupNamespace;

@@ -14,16 +14,16 @@
     unsigned long long _widthAlignment;
 }
 
-@property(assign,readwrite) unsigned long long bytesPerRowAlignment;
-@property(assign,readwrite) unsigned long long height;
-@property(assign,readwrite) unsigned long long heightAlignment;
-@property(assign,readonly) NSDictionary * pixelBufferAttributes;
-@property(assign,readwrite) unsigned long long planeAlignment;
-@property(assign,readwrite) bool prewireBuffers;
-@property(assign,copy) NSArray * supportedCacheModes;
-@property(assign,copy) NSArray * supportedPixelFormats;
-@property(assign,readwrite) unsigned long long width;
-@property(assign,readwrite) unsigned long long widthAlignment;
+@property (nonatomic) unsigned long long bytesPerRowAlignment;
+@property (nonatomic) unsigned long long height;
+@property (nonatomic) unsigned long long heightAlignment;
+@property (nonatomic, readonly) NSDictionary *pixelBufferAttributes;
+@property (nonatomic) unsigned long long planeAlignment;
+@property (nonatomic) bool prewireBuffers;
+@property (nonatomic, copy) NSArray *supportedCacheModes;
+@property (nonatomic, copy) NSArray *supportedPixelFormats;
+@property (nonatomic) unsigned long long width;
+@property (nonatomic) unsigned long long widthAlignment;
 
 + (id)cacheModesForCacheProfile:(int)arg1;
 + (id)cacheModesForOptimizedCPUAccess;

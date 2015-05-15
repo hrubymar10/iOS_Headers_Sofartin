@@ -7,18 +7,18 @@
     NSDictionary *_tokens;
 }
 
-@property(assign,readonly) NSString * HSAAction;
-@property(assign,readonly) NSString * HSAData;
-@property(assign,readonly) NSString * altDSID;
-@property(assign,readonly) NSString * authToken;
-@property(assign,readonly) NSString * cloudKitToken;
-@property(assign,readonly) NSString * fmfAppToken;
-@property(assign,readonly) NSString * fmfToken;
-@property(assign,readonly) NSString * fmipLostModeToken;
-@property(assign,readonly) NSString * fmipToken;
-@property(assign,readonly) NSString * hsaToken;
-@property(assign,readonly) NSString * mapsToken;
-@property(assign,readonly) NSString * personID;
+@property (nonatomic, readonly) NSString *HSAAction;
+@property (nonatomic, readonly) NSString *HSAData;
+@property (nonatomic, readonly) NSString *altDSID;
+@property (nonatomic, readonly) NSString *authToken;
+@property (nonatomic, readonly) NSString *cloudKitToken;
+@property (nonatomic, readonly) NSString *fmfAppToken;
+@property (nonatomic, readonly) NSString *fmfToken;
+@property (nonatomic, readonly) NSString *fmipLostModeToken;
+@property (nonatomic, readonly) NSString *fmipToken;
+@property (nonatomic, readonly) NSString *hsaToken;
+@property (nonatomic, readonly) NSString *mapsToken;
+@property (nonatomic, readonly) NSString *personID;
 
 - (void).cxx_destruct;
 - (id)HSAAction;

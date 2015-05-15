@@ -9,9 +9,9 @@
     <EKStyleProvider> *_styleProvider;
 }
 
-@property(assign,readonly) EKCalendar * calendar;
-@property(assign,readwrite) <EKCalendarEditItemDelegate> * delegate;
-@property(assign,retain) <EKStyleProvider> * styleProvider;
+@property (nonatomic, readonly) EKCalendar *calendar;
+@property (nonatomic) <EKCalendarEditItemDelegate> *delegate;
+@property (nonatomic, retain) <EKStyleProvider> *styleProvider;
 
 - (void).cxx_destruct;
 - (void)applyStyleProviderToCell:(id)arg1;

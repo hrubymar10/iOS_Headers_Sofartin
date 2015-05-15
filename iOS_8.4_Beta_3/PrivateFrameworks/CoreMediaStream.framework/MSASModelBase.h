@@ -11,12 +11,12 @@
     struct __CFDictionary { } *_statements;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * dbQueue;
-@property(assign,readonly) struct sqlite3 { }* dbQueueDB;
-@property(assign,readwrite) bool dbWasRecreated;
-@property(assign,readonly) NSString * personID;
-@property(assign,retain) NSObject<OS_dispatch_queue> * statementQueue;
-@property(assign,readwrite) struct __CFDictionary { }* statements;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *dbQueue;
+@property (nonatomic, readonly) struct sqlite3 { }*dbQueueDB;
+@property (nonatomic) bool dbWasRecreated;
+@property (nonatomic, readonly) NSString *personID;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *statementQueue;
+@property (nonatomic) struct __CFDictionary { }*statements;
 
 - (void).cxx_destruct;
 - (void)beginTransaction;

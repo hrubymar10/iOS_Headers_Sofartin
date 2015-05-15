@@ -10,16 +10,16 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSString * body;
-@property(assign,readonly) NSMutableDictionary * cacheRepresentation;
-@property(assign,readonly) NSString * dateString;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) float rating;
-@property(assign,readonly) NSString * reviewer;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSString *body;
+@property (nonatomic, readonly) NSMutableDictionary *cacheRepresentation;
+@property (nonatomic, readonly) NSString *dateString;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) float rating;
+@property (nonatomic, readonly) NSString *reviewer;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *title;
 
 - (void).cxx_destruct;
 - (id)body;

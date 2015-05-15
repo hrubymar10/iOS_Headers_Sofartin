@@ -7,8 +7,8 @@
     bool _debugLoggingEnabled;
 }
 
-@property(assign,readonly) double _enqueueTime;
-@property(getter=isDebugLoggingEnabled,assign,readwrite) bool debugLoggingEnabled;
+@property (nonatomic, readonly) double _enqueueTime;
+@property (getter=isDebugLoggingEnabled, nonatomic) bool debugLoggingEnabled;
 
 - (double)_enqueueTime;
 - (void)didCaptureStillImageForRequest:(id)arg1;

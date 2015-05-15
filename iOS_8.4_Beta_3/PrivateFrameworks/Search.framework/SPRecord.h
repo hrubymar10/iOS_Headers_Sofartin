@@ -4,16 +4,16 @@
 
 @interface SPRecord : NSManagedObject
 
-@property(assign,retain) NSString * actionURL;
-@property(assign,retain) NSString * auxsubtitle;
-@property(assign,retain) NSString * auxtitle;
-@property(assign,retain) NSString * content;
-@property(assign,retain) NSNumber * cxid;
-@property(assign,retain) NSDate * date;
-@property(assign,retain) NSString * extid;
-@property(assign,retain) NSNumber * generation;
-@property(assign,retain) NSString * subtitle;
-@property(assign,retain) NSString * summary;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSString *actionURL;
+@property (nonatomic, retain) NSString *auxsubtitle;
+@property (nonatomic, retain) NSString *auxtitle;
+@property (nonatomic, retain) NSString *content;
+@property (nonatomic, retain) NSNumber *cxid;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, retain) NSString *extid;
+@property (nonatomic, retain) NSNumber *generation;
+@property (nonatomic, retain) NSString *subtitle;
+@property (nonatomic, retain) NSString *summary;
+@property (nonatomic, retain) NSString *title;
 
 @end

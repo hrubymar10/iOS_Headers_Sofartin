@@ -4,11 +4,11 @@
 
 @interface DOMCSSStyleDeclaration : DOMObject
 
-@property(assign,copy) NSString * cssText;
-@property(assign,readonly) unsigned int length;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } mf_margin;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } mf_padding;
-@property(assign,readonly) DOMCSSRule * parentRule;
+@property (copy) NSString *cssText;
+@property (readonly) unsigned int length;
+@property (readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } mf_margin;
+@property (readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } mf_padding;
+@property (readonly) DOMCSSRule *parentRule;
 
 - (id)_fontSizeDelta;
 - (void)_setFontSizeDelta:(id)arg1;

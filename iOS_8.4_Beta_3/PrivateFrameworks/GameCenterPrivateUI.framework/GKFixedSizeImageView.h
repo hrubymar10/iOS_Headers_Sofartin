@@ -6,7 +6,7 @@
     UIImage *_actualImage;
 }
 
-@property(assign,retain) UIImage * actualImage;
+@property (nonatomic, retain) UIImage *actualImage;
 
 - (id)actualImage;
 - (void)dealloc;

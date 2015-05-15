@@ -11,12 +11,12 @@
     UIImageView *_waveformImageView;
 }
 
-@property(assign,retain) UIImageView * balloonImageView;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) unsigned long long maxPowerLevelsCount;
-@property(assign,retain) NSMutableArray * powerLevels;
-@property(assign,retain) UILabel * timeLabel;
-@property(assign,retain) UIImageView * waveformImageView;
+@property (nonatomic, retain) UIImageView *balloonImageView;
+@property (nonatomic) double duration;
+@property (nonatomic) unsigned long long maxPowerLevelsCount;
+@property (nonatomic, retain) NSMutableArray *powerLevels;
+@property (nonatomic, retain) UILabel *timeLabel;
+@property (nonatomic, retain) UIImageView *waveformImageView;
 
 + (id)waveformCurveTransform;
 

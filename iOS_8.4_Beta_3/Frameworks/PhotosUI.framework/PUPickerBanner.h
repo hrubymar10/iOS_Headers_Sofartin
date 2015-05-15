@@ -6,7 +6,7 @@
     UIView *_view;
 }
 
-@property(assign,readonly) PUPickerBannerView * bannerView;
+@property (nonatomic, readonly) PUPickerBannerView *bannerView;
 
 - (void).cxx_destruct;
 - (id)bannerView;

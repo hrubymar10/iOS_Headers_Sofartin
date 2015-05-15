@@ -7,15 +7,15 @@
     SKUIReviewMetadata *_review;
 }
 
-@property(assign,readonly) NSNumber * adamID;
-@property(assign,retain) NSString * body;
-@property(assign,readonly) id hasSavedDraft;
-@property(assign,retain) NSString * infoURL;
-@property(assign,retain) NSString * itemType;
-@property(assign,retain) NSString * nickname;
-@property(assign,retain) id nicknameIsConfirmed;
-@property(assign,retain) NSNumber * rating;
-@property(assign,retain) NSString * title;
+@property (readonly) NSNumber *adamID;
+@property (retain) NSString *body;
+@property (readonly) id hasSavedDraft;
+@property (retain) NSString *infoURL;
+@property (retain) NSString *itemType;
+@property (retain) NSString *nickname;
+@property (retain) id nicknameIsConfirmed;
+@property (retain) NSNumber *rating;
+@property (retain) NSString *title;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

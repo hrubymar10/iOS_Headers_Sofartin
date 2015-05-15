@@ -7,8 +7,8 @@
     CLLocation *_location;
 }
 
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) CLLocation * location;
+@property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) CLLocation *location;
 
 + (bool)supportsSecureCoding;
 

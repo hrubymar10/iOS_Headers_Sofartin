@@ -6,10 +6,10 @@
     MKReverseGeocoderInternal *_internal;
 }
 
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,readwrite) <MKReverseGeocoderDelegate> * delegate;
-@property(assign,readonly) MKPlacemark * placemark;
-@property(getter=isQuerying,assign,readonly) bool querying;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (nonatomic) <MKReverseGeocoderDelegate> *delegate;
+@property (nonatomic, readonly) MKPlacemark *placemark;
+@property (getter=isQuerying, nonatomic, readonly) bool querying;
 
 - (void).cxx_destruct;
 - (void)_notifyError:(id)arg1;

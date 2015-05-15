@@ -46,12 +46,12 @@
     } _totalSize;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentEdgeInsets;
-@property(assign,readwrite) <SKUIIndexBarControlDataSource> * dataSource;
-@property(assign,copy) NSDictionary * defaultTextAttributes;
-@property(assign,readwrite) <SKUIIndexBarControlDelegate> * delegate;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitTestEdgeInsets;
-@property(assign,readonly) long long numberOfSections;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentEdgeInsets;
+@property (nonatomic) <SKUIIndexBarControlDataSource> *dataSource;
+@property (nonatomic, copy) NSDictionary *defaultTextAttributes;
+@property (nonatomic) <SKUIIndexBarControlDelegate> *delegate;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitTestEdgeInsets;
+@property (nonatomic, readonly) long long numberOfSections;
 
 - (void).cxx_destruct;
 - (id)_allEntries;

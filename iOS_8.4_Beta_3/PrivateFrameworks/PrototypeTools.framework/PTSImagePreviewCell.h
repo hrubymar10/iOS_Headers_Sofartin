@@ -11,8 +11,8 @@
     UIImage *_previewImage;
 }
 
-@property(assign,retain) NSString * imageName;
-@property(assign,retain) UIImage * previewImage;
+@property (nonatomic, retain) NSString *imageName;
+@property (nonatomic, retain) UIImage *previewImage;
 
 + (void)_getLeftFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }*)arg1 rightFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }*)arg2 forImage:(id)arg3 inBounds:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg4;
 + (double)heightForImage:(id)arg1;

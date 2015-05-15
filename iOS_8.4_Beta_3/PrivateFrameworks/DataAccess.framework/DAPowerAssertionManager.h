@@ -11,12 +11,12 @@
     NSMutableSet *_heldAsideGroupIdentifiers;
 }
 
-@property(assign,retain) NSMapTable * contextToGroupIdentifier;
-@property(assign,retain) NSMapTable * contextToPowerAssertionRef;
-@property(assign,retain) NSCountedSet * contexts;
-@property(assign,retain) NSMapTable * groupIdentifierToContexts;
-@property(assign,retain) NSCountedSet * heldAsideContexts;
-@property(assign,retain) NSMutableSet * heldAsideGroupIdentifiers;
+@property (nonatomic, retain) NSMapTable *contextToGroupIdentifier;
+@property (nonatomic, retain) NSMapTable *contextToPowerAssertionRef;
+@property (nonatomic, retain) NSCountedSet *contexts;
+@property (nonatomic, retain) NSMapTable *groupIdentifierToContexts;
+@property (nonatomic, retain) NSCountedSet *heldAsideContexts;
+@property (nonatomic, retain) NSMutableSet *heldAsideGroupIdentifiers;
 
 + (id)sharedPowerAssertionManager;
 + (void)vendDaemons:(Class)arg1;

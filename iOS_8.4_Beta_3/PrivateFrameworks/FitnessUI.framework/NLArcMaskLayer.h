@@ -11,9 +11,9 @@
     double _radius;
 }
 
-@property(assign,readwrite) double arcStart;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } center;
-@property(assign,readwrite) double radius;
+@property (nonatomic) double arcStart;
+@property (nonatomic) struct CGPoint { double x1; double x2; } center;
+@property (nonatomic) double radius;
 
 + (bool)needsDisplayForKey:(id)arg1;
 

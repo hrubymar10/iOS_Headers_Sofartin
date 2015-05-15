@@ -9,9 +9,9 @@
     SKUIViewElementText *_text;
 }
 
-@property(assign,readonly) SKUIButtonViewElement * button;
-@property(assign,readonly) long long dividerType;
-@property(assign,readonly) SKUIViewElementText * text;
+@property (nonatomic, readonly) SKUIButtonViewElement *button;
+@property (nonatomic, readonly) long long dividerType;
+@property (nonatomic, readonly) SKUIViewElementText *text;
 
 - (void).cxx_destruct;
 - (id)button;

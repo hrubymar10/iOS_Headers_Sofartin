@@ -21,17 +21,17 @@
     } _styleTransitionState;
 }
 
-@property(assign,copy) id annotationMarkerDeselectionCallback;
-@property(assign,readonly) NSArray * annotationMarkers;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) VKMapModel * mapModel;
-@property(assign,readonly) bool needsLayout;
-@property(assign,readonly) VKAnnotationMarker * selectedAnnotationMarker;
-@property(assign,readonly) VKStyleManager * styleManager;
-@property(assign,readwrite) struct { int x1; int x2; unsigned long long x3; unsigned long long x4; float x5; } styleTransitionState;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id annotationMarkerDeselectionCallback;
+@property (nonatomic, readonly) NSArray *annotationMarkers;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) VKMapModel *mapModel;
+@property (nonatomic, readonly) bool needsLayout;
+@property (nonatomic, readonly) VKAnnotationMarker *selectedAnnotationMarker;
+@property (nonatomic, readonly) VKStyleManager *styleManager;
+@property (nonatomic) struct { int x1; int x2; unsigned long long x3; unsigned long long x4; float x5; } styleTransitionState;
+@property (readonly) Class superclass;
 
 + (bool)reloadOnStylesheetChange;
 

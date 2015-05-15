@@ -9,10 +9,10 @@
     void *_PLLib;
 }
 
-@property(assign,readwrite) int (* PLBatteryLifeMonitorLogCoreDuetAdmissionEvent;
-@property(assign,readwrite) int (* PLBatteryLifeMonitorLogCoreDuetEvent;
-@property(assign,readwrite) int (* PLBatteryLifeMonitorLogCoreDuetPredictionEvents;
-@property(assign,readwrite) void* PLLib;
+@property int (*PLBatteryLifeMonitorLogCoreDuetAdmissionEvent;
+@property int (*PLBatteryLifeMonitorLogCoreDuetEvent;
+@property int (*PLBatteryLifeMonitorLogCoreDuetPredictionEvents;
+@property void*PLLib;
 
 - (int (*)PLBatteryLifeMonitorLogCoreDuetAdmissionEvent;
 - (int (*)PLBatteryLifeMonitorLogCoreDuetEvent;

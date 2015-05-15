@@ -6,7 +6,7 @@
     LSApplicationWorkspace *_lsWorkspace;
 }
 
-@property(assign,retain) LSApplicationWorkspace * lsWorkspace;
+@property (nonatomic, retain) LSApplicationWorkspace *lsWorkspace;
 
 + (id)defaultWorkspace;
 

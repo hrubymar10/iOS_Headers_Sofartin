@@ -8,9 +8,9 @@
     NSString *_localizedLanguageName;
 }
 
-@property(assign,retain) NSString * languageCode;
-@property(assign,retain) NSString * languageName;
-@property(assign,retain) NSString * localizedLanguageName;
+@property (nonatomic, retain) NSString *languageCode;
+@property (nonatomic, retain) NSString *languageName;
+@property (nonatomic, retain) NSString *localizedLanguageName;
 
 + (id)languageWithCode:(id)arg1 name:(id)arg2 localizedName:(id)arg3;
 

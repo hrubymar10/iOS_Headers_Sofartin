@@ -9,14 +9,14 @@
     long long _preparationState;
 }
 
-@property(assign,readwrite) long long backgroundType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MKPlaceHeaderBackgroundViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MKMapItem * mapItem;
-@property(assign,readwrite) long long preparationState;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long backgroundType;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MKPlaceHeaderBackgroundViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MKMapItem *mapItem;
+@property (nonatomic) long long preparationState;
+@property (readonly) Class superclass;
 
 + (long long)backgroundTypeForMapItem:(id)arg1;
 + (id)backgroundViewForBackgroundType:(long long)arg1 mapItem:(id)arg2 headerView:(id)arg3;

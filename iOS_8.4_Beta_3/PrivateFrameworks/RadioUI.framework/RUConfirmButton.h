@@ -21,14 +21,14 @@
     } _touchAllowance;
 }
 
-@property(assign,readwrite) bool attemptsToUseMaximumSize;
-@property(assign,readonly) UILabel * confirmLabel;
-@property(assign,readwrite) Class confirmLabelClass;
-@property(assign,readonly) UILabel * defaultLabel;
-@property(assign,readwrite) Class defaultLabelClass;
-@property(assign,readwrite) <RUConfirmButtonDelegate> * delegate;
-@property(getter=isShowingConfirmation,assign,readwrite) bool showingConfirmation;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } touchAllowance;
+@property (nonatomic) bool attemptsToUseMaximumSize;
+@property (nonatomic, readonly) UILabel *confirmLabel;
+@property (nonatomic) Class confirmLabelClass;
+@property (nonatomic, readonly) UILabel *defaultLabel;
+@property (nonatomic) Class defaultLabelClass;
+@property (nonatomic) <RUConfirmButtonDelegate> *delegate;
+@property (getter=isShowingConfirmation, nonatomic) bool showingConfirmation;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } touchAllowance;
 
 + (id)confirmButton;
 

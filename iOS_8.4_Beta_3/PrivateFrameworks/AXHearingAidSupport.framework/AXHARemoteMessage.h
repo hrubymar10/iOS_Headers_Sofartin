@@ -7,8 +7,8 @@
     id _sendCompletion;
 }
 
-@property(assign,retain) NSString * UUID;
-@property(assign,copy) id sendCompletion;
+@property (nonatomic, retain) NSString *UUID;
+@property (nonatomic, copy) id sendCompletion;
 
 + (id)messageWithPayload:(id)arg1 andSendCompletion:(id)arg2;
 

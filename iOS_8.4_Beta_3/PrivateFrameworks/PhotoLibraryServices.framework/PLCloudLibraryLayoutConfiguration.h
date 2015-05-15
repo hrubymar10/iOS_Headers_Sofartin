@@ -7,8 +7,8 @@
     PLPhotoLibrary *photoLibrary;
 }
 
-@property(assign,retain) NSArray * layoutBuckets;
-@property(assign,retain) PLPhotoLibrary * photoLibrary;
+@property (nonatomic, retain) NSArray *layoutBuckets;
+@property (nonatomic, retain) PLPhotoLibrary *photoLibrary;
 
 - (id)layoutBuckets;
 - (id)photoLibrary;

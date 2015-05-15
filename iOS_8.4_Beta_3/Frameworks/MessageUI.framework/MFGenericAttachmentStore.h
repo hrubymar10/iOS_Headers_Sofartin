@@ -15,8 +15,8 @@
     unsigned int _size;
 }
 
-@property(assign,readonly) NSArray * attachments;
-@property(assign,readwrite) bool scalingThrottled;
+@property (nonatomic, readonly) NSArray *attachments;
+@property (nonatomic) bool scalingThrottled;
 
 + (void)addAttachmentUniqueIdentifierStore:(id)arg1;
 + (void)beginPreventingInlinePDFs;

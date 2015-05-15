@@ -6,7 +6,7 @@
     IMAVChat *_chat;
 }
 
-@property(assign,retain) IMAVChat * chat;
+@property (nonatomic, retain) IMAVChat *chat;
 
 + (id)sourceAccount:(bool)arg1;
 

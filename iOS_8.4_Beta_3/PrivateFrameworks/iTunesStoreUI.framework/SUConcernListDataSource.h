@@ -8,9 +8,9 @@
     SUTextViewCell *_textViewCell;
 }
 
-@property(assign,retain) NSArray * concerns;
-@property(assign,readwrite) long long selectedConcernIndex;
-@property(assign,readonly) SUTextViewCell * textViewCell;
+@property (nonatomic, retain) NSArray *concerns;
+@property (nonatomic) long long selectedConcernIndex;
+@property (nonatomic, readonly) SUTextViewCell *textViewCell;
 
 - (id)_titleCellForIndexPath:(id)arg1;
 - (id)cellForIndexPath:(id)arg1;

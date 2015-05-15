@@ -9,10 +9,10 @@
     int _statusReportToken;
 }
 
-@property(assign,readwrite) CKContainer * container;
-@property(assign,readonly) NSOperationQueue * operationQueue;
-@property(assign,readwrite) long long scope;
-@property(assign,readwrite) int statusReportToken;
+@property (nonatomic) CKContainer *container;
+@property (nonatomic, readonly) NSOperationQueue *operationQueue;
+@property (nonatomic) long long scope;
+@property (nonatomic) int statusReportToken;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

@@ -10,13 +10,13 @@
     SKUIQuicklinksView *_quicklinksView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIQuicklinksViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * indexPathsForVisibleItems;
-@property(assign,copy) NSArray * links;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIQuicklinksViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *indexPathsForVisibleItems;
+@property (nonatomic, copy) NSArray *links;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (long long)_numberOfRows;

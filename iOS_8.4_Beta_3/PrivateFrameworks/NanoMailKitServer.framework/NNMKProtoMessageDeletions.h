@@ -11,11 +11,11 @@
     NSMutableArray *_messageDeletions;
 }
 
-@property(assign,retain) NSData * dateSynced;
-@property(assign,readwrite) unsigned int fullSyncVersion;
-@property(assign,readonly) bool hasDateSynced;
-@property(assign,readwrite) bool hasFullSyncVersion;
-@property(assign,retain) NSMutableArray * messageDeletions;
+@property (nonatomic, retain) NSData *dateSynced;
+@property (nonatomic) unsigned int fullSyncVersion;
+@property (nonatomic, readonly) bool hasDateSynced;
+@property (nonatomic) bool hasFullSyncVersion;
+@property (nonatomic, retain) NSMutableArray *messageDeletions;
 
 - (void).cxx_destruct;
 - (void)addMessageDeletion:(id)arg1;

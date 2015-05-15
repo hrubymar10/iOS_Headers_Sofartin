@@ -9,10 +9,10 @@
     NSString *_superclassDescription;
 }
 
-@property(assign,retain) NSMutableDictionary * descriptionUnderConstruction;
-@property(assign,copy) NSString * keyDelimiter;
-@property(assign,readwrite) bool sortedByKey;
-@property(assign,copy) NSString * superclassDescription;
+@property (nonatomic, retain) NSMutableDictionary *descriptionUnderConstruction;
+@property (nonatomic, copy) NSString *keyDelimiter;
+@property (nonatomic) bool sortedByKey;
+@property (nonatomic, copy) NSString *superclassDescription;
 
 - (void).cxx_destruct;
 - (id)build;

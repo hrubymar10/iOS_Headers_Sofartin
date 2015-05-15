@@ -7,7 +7,7 @@
     NSInputStream *_stream;
 }
 
-@property(assign,readwrite) Class itemClass;
+@property (nonatomic) Class itemClass;
 
 - (void).cxx_destruct;
 - (void)dealloc;

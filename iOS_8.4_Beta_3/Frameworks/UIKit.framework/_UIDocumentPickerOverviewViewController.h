@@ -12,13 +12,13 @@
     <_UIDocumentPickerOverviewDelegate> *_weak_delegate;
 }
 
-@property(assign,retain) NSArray * allPickers;
-@property(assign,retain) NSArray * auxiliaryOptions;
-@property(assign,retain) NSString * currentExtensionIdentifier;
-@property(assign,readwrite) <_UIDocumentPickerOverviewDelegate> * delegate;
-@property(assign,retain) NSArray * fileTypes;
-@property(assign,readwrite) bool manage;
-@property(assign,readwrite) unsigned long long mode;
+@property (nonatomic, retain) NSArray *allPickers;
+@property (nonatomic, retain) NSArray *auxiliaryOptions;
+@property (nonatomic, retain) NSString *currentExtensionIdentifier;
+@property (nonatomic) <_UIDocumentPickerOverviewDelegate> *delegate;
+@property (nonatomic, retain) NSArray *fileTypes;
+@property (nonatomic) bool manage;
+@property (nonatomic) unsigned long long mode;
 
 - (id)allPickers;
 - (id)auxiliaryOptions;

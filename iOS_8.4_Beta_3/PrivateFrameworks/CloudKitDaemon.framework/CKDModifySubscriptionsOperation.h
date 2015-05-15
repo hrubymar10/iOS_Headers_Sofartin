@@ -10,11 +10,11 @@
     NSArray *_subscriptionsToSave;
 }
 
-@property(assign,copy) id deleteCompletionBlock;
-@property(assign,copy) id saveCompletionBlock;
-@property(assign,retain) NSArray * subscriptionIDsToDelete;
-@property(assign,retain) NSMutableDictionary * subscriptionsByServerID;
-@property(assign,retain) NSArray * subscriptionsToSave;
+@property (nonatomic, copy) id deleteCompletionBlock;
+@property (nonatomic, copy) id saveCompletionBlock;
+@property (nonatomic, retain) NSArray *subscriptionIDsToDelete;
+@property (nonatomic, retain) NSMutableDictionary *subscriptionsByServerID;
+@property (nonatomic, retain) NSArray *subscriptionsToSave;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

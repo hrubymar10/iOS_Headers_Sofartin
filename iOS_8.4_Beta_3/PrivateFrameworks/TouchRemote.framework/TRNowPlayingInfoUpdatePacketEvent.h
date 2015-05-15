@@ -6,7 +6,7 @@
     NSDictionary *_nowPlayingInfo;
 }
 
-@property(assign,copy) NSDictionary * nowPlayingInfo;
+@property (nonatomic, readonly, copy) NSDictionary *nowPlayingInfo;
 
 + (unsigned int)_packetEventType;
 

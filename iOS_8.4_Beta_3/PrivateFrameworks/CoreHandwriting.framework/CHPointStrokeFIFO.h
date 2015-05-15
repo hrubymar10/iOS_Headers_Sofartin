@@ -6,7 +6,7 @@
     CHDrawing *_strokes;
 }
 
-@property(assign,retain) CHDrawing * strokes;
+@property (nonatomic, retain) CHDrawing *strokes;
 
 - (void)addPoint:(struct CGPoint { double x1; double x2; })arg1;
 - (void)clear;

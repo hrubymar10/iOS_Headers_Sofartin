@@ -11,15 +11,15 @@
     NSMapTable *_sublayoutToSectionsToIndexRanges;
 }
 
-@property(assign,copy) NSString * backdropGroupName;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * indexPathsForGradientItems;
-@property(assign,readonly) NSArray * indexPathsForPinningItems;
-@property(assign,readwrite) bool rendersWithParallax;
-@property(assign,readwrite) bool rendersWithPerspective;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *backdropGroupName;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *indexPathsForGradientItems;
+@property (nonatomic, readonly) NSArray *indexPathsForPinningItems;
+@property (nonatomic) bool rendersWithParallax;
+@property (nonatomic) bool rendersWithPerspective;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_createSectionsToIndexRangesMapTableIfNeededForSublayout:(id)arg1;

@@ -8,9 +8,9 @@
     VKPStyleProperties *_properties;
 }
 
-@property(assign,readwrite) float maxZ;
-@property(assign,readwrite) float minZ;
-@property(assign,retain) VKPStyleProperties * properties;
+@property (nonatomic) float maxZ;
+@property (nonatomic) float minZ;
+@property (nonatomic, retain) VKPStyleProperties *properties;
 
 - (void)applyTo:(id)arg1 zoom:(float)arg2;
 - (void)copyTo:(id)arg1;

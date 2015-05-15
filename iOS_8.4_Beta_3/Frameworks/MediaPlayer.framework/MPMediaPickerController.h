@@ -13,11 +13,11 @@
     bool _showsCloudItems;
 }
 
-@property(assign,readwrite) bool allowsPickingMultipleItems;
-@property(assign,readwrite) <MPMediaPickerControllerDelegate> * delegate;
-@property(assign,readonly) unsigned long long mediaTypes;
-@property(assign,copy) NSString * prompt;
-@property(assign,readwrite) bool showsCloudItems;
+@property (nonatomic) bool allowsPickingMultipleItems;
+@property (nonatomic) <MPMediaPickerControllerDelegate> *delegate;
+@property (nonatomic, readonly) unsigned long long mediaTypes;
+@property (nonatomic, copy) NSString *prompt;
+@property (nonatomic) bool showsCloudItems;
 
 + (void)preheatMediaPicker;
 

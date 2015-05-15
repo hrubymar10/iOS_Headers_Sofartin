@@ -8,7 +8,7 @@
     unsigned long long _selectedImageIndex;
 }
 
-@property(assign,readwrite) <ABMultipleSourceImagePickerDelegate> * delegate;
+@property (nonatomic) <ABMultipleSourceImagePickerDelegate> *delegate;
 
 - (void)addImageData:(id)arg1 title:(id)arg2 isSelectedImage:(bool)arg3 person:(id)arg4;
 - (void)dealloc;

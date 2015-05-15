@@ -4,8 +4,8 @@
 
 @interface SAMicroblogGetSocialCredential : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * explicitUserPermission;
-@property(assign,copy) NSString * socialNetwork;
+@property (nonatomic, copy) NSString *explicitUserPermission;
+@property (nonatomic, copy) NSString *socialNetwork;
 
 + (id)getSocialCredential;
 + (id)getSocialCredentialWithDictionary:(id)arg1 context:(id)arg2;

@@ -9,10 +9,10 @@
     ABTransportButton *_transportIcon;
 }
 
-@property(assign,readwrite) <ABPropertyCellDelegate> * delegate;
-@property(assign,retain) UILabel * faceTimeLabel;
-@property(assign,copy) NSDictionary * labelTextAttributes;
-@property(assign,readonly) ABTransportButton * transportIcon;
+@property (nonatomic) <ABPropertyCellDelegate> *delegate;
+@property (nonatomic, retain) UILabel *faceTimeLabel;
+@property (nonatomic, copy) NSDictionary *labelTextAttributes;
+@property (nonatomic, readonly) ABTransportButton *transportIcon;
 
 + (bool)requiresConstraintBasedLayout;
 

@@ -7,7 +7,7 @@
     SKUIExpandViewElement *_viewElement;
 }
 
-@property(assign,readonly) SKUIExpandViewElement * viewElement;
+@property (nonatomic, readonly) SKUIExpandViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (id)childComponentForIndex:(long long)arg1;

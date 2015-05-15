@@ -10,11 +10,11 @@
     long long _width;
 }
 
-@property(assign,readwrite) long long bytesPerPixel;
-@property(assign,readwrite) char * data;
-@property(assign,readwrite) long long height;
-@property(assign,retain) struct CGImage { }* imageRef;
-@property(assign,readwrite) long long width;
+@property (nonatomic) long long bytesPerPixel;
+@property (nonatomic) char *data;
+@property (nonatomic) long long height;
+@property (nonatomic, retain) struct CGImage { }*imageRef;
+@property (nonatomic) long long width;
 
 + (id)rawImageForImage:(struct CGImage { }*)arg1;
 

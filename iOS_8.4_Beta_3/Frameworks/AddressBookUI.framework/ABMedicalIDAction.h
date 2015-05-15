@@ -8,14 +8,14 @@
     long long _medicalIDActionType;
 }
 
-@property(assign,retain) CNContact * contact;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) _HKMedicalIDData * healthData;
-@property(assign,retain) HKHealthStore * healthStore;
-@property(assign,readwrite) long long medicalIDActionType;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) CNContact *contact;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) _HKMedicalIDData *healthData;
+@property (nonatomic, retain) HKHealthStore *healthStore;
+@property (nonatomic) long long medicalIDActionType;
+@property (readonly) Class superclass;
 
 - (id)healthData;
 - (id)healthStore;

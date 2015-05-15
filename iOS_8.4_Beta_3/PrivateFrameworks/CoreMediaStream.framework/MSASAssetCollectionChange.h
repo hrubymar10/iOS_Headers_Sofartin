@@ -8,9 +8,9 @@
     bool _wasDeleted;
 }
 
-@property(assign,retain) NSString * GUID;
-@property(assign,retain) NSString * ctag;
-@property(assign,readwrite) bool wasDeleted;
+@property (nonatomic, retain) NSString *GUID;
+@property (nonatomic, retain) NSString *ctag;
+@property (nonatomic) bool wasDeleted;
 
 - (void).cxx_destruct;
 - (id)GUID;

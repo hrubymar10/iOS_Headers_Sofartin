@@ -40,12 +40,12 @@
     double contentBottomInset;
 }
 
-@property(assign,readonly) UIView * contentView;
-@property(assign,readonly) double duration;
-@property(assign,readonly) long long fromOrientation;
-@property(assign,readonly) id rotatingClient;
-@property(assign,readwrite) bool skipClientRotationCallbacks;
-@property(assign,readonly) long long toOrientation;
+@property (nonatomic, readonly) UIView *contentView;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic, readonly) long long fromOrientation;
+@property (nonatomic, readonly) id rotatingClient;
+@property (nonatomic) bool skipClientRotationCallbacks;
+@property (nonatomic, readonly) long long toOrientation;
 
 - (bool)_isFooterTranslucent;
 - (bool)_isHeaderTranslucent;

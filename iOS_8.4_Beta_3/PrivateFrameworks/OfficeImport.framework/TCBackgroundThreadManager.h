@@ -13,9 +13,9 @@
     NSObject<OS_dispatch_queue> *mQueue;
 }
 
-@property(assign,readonly) bool isCancelled;
-@property(assign,retain) TCMessageContext * messageContext;
-@property(assign,retain) TCProgressContext * progressContext;
+@property (readonly) bool isCancelled;
+@property (retain) TCMessageContext *messageContext;
+@property (retain) TCProgressContext *progressContext;
 
 - (void)addASyncBlock:(id)arg1;
 - (void)dealloc;

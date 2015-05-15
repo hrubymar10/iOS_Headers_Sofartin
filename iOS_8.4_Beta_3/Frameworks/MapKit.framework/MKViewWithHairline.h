@@ -9,10 +9,10 @@
     UIView *_topHairline;
 }
 
-@property(getter=isBottomHairlineHidden,assign,readwrite) bool bottomHairlineHidden;
-@property(assign,retain) UIColor * hairlineColor;
-@property(assign,readwrite) double leftHairlineInset;
-@property(getter=isTopHairlineHidden,assign,readwrite) bool topHairlineHidden;
+@property (getter=isBottomHairlineHidden, nonatomic) bool bottomHairlineHidden;
+@property (nonatomic, retain) UIColor *hairlineColor;
+@property (nonatomic) double leftHairlineInset;
+@property (getter=isTopHairlineHidden, nonatomic) bool topHairlineHidden;
 
 - (void).cxx_destruct;
 - (id)hairlineColor;

@@ -8,9 +8,9 @@
     bool _isLocked;
 }
 
-@property(assign,retain) NSObject<OS_xpc_object> * connection;
-@property(assign,copy) NSString * deviceName;
-@property(assign,readonly) bool isLocked;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *connection;
+@property (nonatomic, readonly, copy) NSString *deviceName;
+@property (nonatomic, readonly) bool isLocked;
 
 + (bool)prepareToAccessDeviceName:(id)arg1 error:(id*)arg2;
 + (id)volumeWithDeviceName:(id)arg1 error:(id*)arg2;

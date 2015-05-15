@@ -12,15 +12,15 @@
     long long _style;
 }
 
-@property(assign,readonly) NSData * JSONBodyData;
-@property(assign,copy) NSNumber * accountIdentifier;
-@property(assign,copy) NSArray * applications;
-@property(getter=isBackgroundRequest,assign,readwrite) bool backgroundRequest;
-@property(assign,readonly) NSMutableDictionary * bodyDictionary;
-@property(assign,copy) NSArray * bundleIdentifiers;
-@property(assign,copy) NSArray * itemIdentifiers;
-@property(assign,readonly) NSData * propertyListBodyData;
-@property(assign,readonly) long long requestStyle;
+@property (nonatomic, readonly) NSData *JSONBodyData;
+@property (nonatomic, copy) NSNumber *accountIdentifier;
+@property (nonatomic, copy) NSArray *applications;
+@property (getter=isBackgroundRequest, nonatomic) bool backgroundRequest;
+@property (nonatomic, readonly) NSMutableDictionary *bodyDictionary;
+@property (nonatomic, copy) NSArray *bundleIdentifiers;
+@property (nonatomic, copy) NSArray *itemIdentifiers;
+@property (nonatomic, readonly) NSData *propertyListBodyData;
+@property (nonatomic, readonly) long long requestStyle;
 
 - (void).cxx_destruct;
 - (id)JSONBodyData;

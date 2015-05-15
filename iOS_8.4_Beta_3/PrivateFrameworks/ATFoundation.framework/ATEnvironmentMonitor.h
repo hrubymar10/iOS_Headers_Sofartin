@@ -12,9 +12,9 @@
     struct __SCNetworkReachability { } *_reachability;
 }
 
-@property(getter=isInternetReachable,assign,readonly) bool internetReachable;
-@property(getter=isInternetReachableViaOnlyWWAN,assign,readonly) bool internetReachableViaOnlyWWAN;
-@property(getter=hasPower,assign,readonly) bool power;
+@property (getter=isInternetReachable, nonatomic, readonly) bool internetReachable;
+@property (getter=isInternetReachableViaOnlyWWAN, nonatomic, readonly) bool internetReachableViaOnlyWWAN;
+@property (getter=hasPower, nonatomic, readonly) bool power;
 
 + (id)sharedMonitor;
 

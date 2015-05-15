@@ -17,12 +17,12 @@
     bool _useTemplate;
 }
 
-@property(assign,copy) NSCalendar * calendar;
-@property(assign,readwrite) unsigned long long dateStyle;
-@property(assign,copy) NSString * dateTemplate;
-@property(assign,copy) NSLocale * locale;
-@property(assign,readwrite) unsigned long long timeStyle;
-@property(assign,copy) NSTimeZone * timeZone;
+@property (copy) NSCalendar *calendar;
+@property unsigned long long dateStyle;
+@property (copy) NSString *dateTemplate;
+@property (copy) NSLocale *locale;
+@property unsigned long long timeStyle;
+@property (copy) NSTimeZone *timeZone;
 
 - (id)attributedStringForObjectValue:(id)arg1 withDefaultAttributes:(id)arg2;
 - (id)calendar;

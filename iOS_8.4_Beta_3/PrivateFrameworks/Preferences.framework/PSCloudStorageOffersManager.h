@@ -8,12 +8,12 @@
     unsigned long long _requiredStorageThreshold;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PSCloudStorageOffersManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long requiredStorageThreshold;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PSCloudStorageOffersManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long requiredStorageThreshold;
+@property (readonly) Class superclass;
 
 - (void)beginFlowWithNavigationController:(id)arg1 modally:(bool)arg2;
 - (void)cancelLoad;

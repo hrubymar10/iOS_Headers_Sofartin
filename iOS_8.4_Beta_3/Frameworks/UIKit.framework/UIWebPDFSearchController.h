@@ -16,15 +16,15 @@
     unsigned long long startingPageIndex;
 }
 
-@property(assign,readwrite) double documentScale;
-@property(assign,retain) UIPDFDocument * documentToSearch;
-@property(assign,readonly) bool paused;
-@property(assign,readwrite) unsigned long long resultLimit;
-@property(assign,retain) NSArray * results;
-@property(assign,readwrite) NSObject<UIWebPDFSearchControllerDelegate> * searchDelegate;
-@property(assign,retain) NSString * searchString;
-@property(assign,readonly) bool searching;
-@property(assign,readwrite) unsigned long long startingPageIndex;
+@property (nonatomic) double documentScale;
+@property (nonatomic, retain) UIPDFDocument *documentToSearch;
+@property (nonatomic, readonly) bool paused;
+@property (nonatomic) unsigned long long resultLimit;
+@property (nonatomic, retain) NSArray *results;
+@property (nonatomic) NSObject<UIWebPDFSearchControllerDelegate> *searchDelegate;
+@property (nonatomic, retain) NSString *searchString;
+@property (nonatomic, readonly) bool searching;
+@property (nonatomic) unsigned long long startingPageIndex;
 
 - (unsigned long long)_actualStartingPageIndex;
 - (void)_clearSearchQueue;

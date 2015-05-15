@@ -7,8 +7,8 @@
     double _longitude;
 }
 
-@property(assign,readwrite) double latitude;
-@property(assign,readwrite) double longitude;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
 
 + (bool)supportsSecureCoding;
 

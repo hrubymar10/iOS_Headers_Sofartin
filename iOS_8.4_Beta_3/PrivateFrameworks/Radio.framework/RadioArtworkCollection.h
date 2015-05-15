@@ -6,7 +6,7 @@
     NSArray *_artworks;
 }
 
-@property(assign,readonly) NSArray * artworks;
+@property (nonatomic, readonly) NSArray *artworks;
 
 - (void).cxx_destruct;
 - (id)_artworksBySortingArtworks:(id)arg1;

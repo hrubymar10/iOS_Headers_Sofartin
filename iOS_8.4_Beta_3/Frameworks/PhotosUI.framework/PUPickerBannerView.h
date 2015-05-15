@@ -15,16 +15,16 @@
     NSString *_title;
 }
 
-@property(setter=_setAlignment:,assign,readwrite) long long _alignment;
-@property(setter=_setAnimatingStackView:,assign,readwrite) bool _animatingStackView;
-@property(setter=_setAnimationCompletionHandler:,assign,copy) id _animationCompletionHandler;
-@property(setter=_setLabel:,assign,retain) UILabel * _label;
-@property(setter=_setStackView:,assign,retain) PUStackView * _stackView;
-@property(assign,copy) NSArray * images;
-@property(assign,retain) UIView * leftView;
-@property(assign,retain) UIView * rightView;
-@property(assign,readwrite) unsigned long long style;
-@property(assign,copy) NSString * title;
+@property (setter=_setAlignment:, nonatomic) long long _alignment;
+@property (setter=_setAnimatingStackView:, nonatomic) bool _animatingStackView;
+@property (setter=_setAnimationCompletionHandler:, nonatomic, copy) id _animationCompletionHandler;
+@property (setter=_setLabel:, nonatomic, retain) UILabel *_label;
+@property (setter=_setStackView:, nonatomic, retain) PUStackView *_stackView;
+@property (nonatomic, copy) NSArray *images;
+@property (nonatomic, retain) UIView *leftView;
+@property (nonatomic, retain) UIView *rightView;
+@property (nonatomic) unsigned long long style;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (long long)_alignment;

@@ -4,10 +4,10 @@
 
 @interface HDDataEntity : HDHealthEntity <HDDataEntity>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (bool)_addCodableObjectsToCollections:(id)arg1 healthDaemon:(id)arg2 error:(id*)arg3 queryHandler:(id)arg4;
 + (id)_aggregatedPropertySettersForDataObjectWithOrderedProperties:(id*)arg1;

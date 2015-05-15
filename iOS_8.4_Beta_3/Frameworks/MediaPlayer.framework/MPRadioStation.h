@@ -6,10 +6,10 @@
     RadioStation *_station;
 }
 
-@property(getter=_station,assign,readonly) RadioStation * _station;
-@property(assign,readonly) NSString * localizedDescription;
-@property(assign,readonly) NSString * localizedName;
-@property(assign,readonly) long long uniqueIdentifier;
+@property (getter=_station, nonatomic, readonly) RadioStation *_station;
+@property (nonatomic, readonly) NSString *localizedDescription;
+@property (nonatomic, readonly) NSString *localizedName;
+@property (nonatomic, readonly) long long uniqueIdentifier;
 
 + (bool)supportsSecureCoding;
 

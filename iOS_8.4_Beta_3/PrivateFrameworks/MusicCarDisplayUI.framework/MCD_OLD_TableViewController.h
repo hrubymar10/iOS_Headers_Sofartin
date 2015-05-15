@@ -13,12 +13,12 @@
     bool _viewHasAppeared;
 }
 
-@property(assign,readwrite) bool alwaysShowNavBar;
-@property(assign,readwrite) bool limitedUI;
-@property(assign,readonly) MPAVController * player;
-@property(assign,readonly) MPMediaQuery * query;
-@property(assign,readonly) <MCDCarDisplayServiceProvider> * serviceProvider;
-@property(assign,readwrite) bool viewHasAppeared;
+@property (nonatomic) bool alwaysShowNavBar;
+@property (nonatomic) bool limitedUI;
+@property (nonatomic, readonly) MPAVController *player;
+@property (nonatomic, readonly) MPMediaQuery *query;
+@property (nonatomic, readonly) <MCDCarDisplayServiceProvider> *serviceProvider;
+@property (nonatomic) bool viewHasAppeared;
 
 + (id)addAlbumArtViewFromItem:(id)arg1 toCell:(id)arg2 rowHeight:(double)arg3;
 + (id)addAlbumArtViewWithImage:(id)arg1 toCell:(id)arg2 rowHeight:(double)arg3;

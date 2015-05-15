@@ -11,15 +11,15 @@
     NSMutableArray *_tableViewDataArray;
 }
 
-@property(assign,readwrite) bool RTL;
-@property(assign,retain) APDDataManager * dataManager;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <APDNavigationTableViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIView * tableFooterView;
-@property(assign,readwrite) UITableView * tableView;
+@property (nonatomic) bool RTL;
+@property (nonatomic, retain) APDDataManager *dataManager;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <APDNavigationTableViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIView *tableFooterView;
+@property (nonatomic) UITableView *tableView;
 
 - (void).cxx_destruct;
 - (bool)RTL;

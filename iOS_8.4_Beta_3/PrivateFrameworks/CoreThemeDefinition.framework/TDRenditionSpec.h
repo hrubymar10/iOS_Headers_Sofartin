@@ -4,10 +4,10 @@
 
 @interface TDRenditionSpec : NSManagedObject
 
-@property(assign,retain) NSDate * dateOfLastChange;
-@property(assign,retain) TDRenditionKeySpec * keySpec;
-@property(assign,retain) TDElementProduction * production;
-@property(assign,retain) TDRenditionType * renditionType;
+@property (nonatomic, retain) NSDate *dateOfLastChange;
+@property (nonatomic, retain) TDRenditionKeySpec *keySpec;
+@property (nonatomic, retain) TDElementProduction *production;
+@property (nonatomic, retain) TDRenditionType *renditionType;
 
 - (void)awakeFromInsert;
 - (id)createCSIRepresentationWithCompression:(bool)arg1 colorSpaceID:(unsigned long long)arg2 document:(id)arg3;

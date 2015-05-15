@@ -13,14 +13,14 @@
     bool _shouldUseAllSubviews;
 }
 
-@property(assign,readwrite) int direction;
-@property(assign,readwrite) bool forSpeakScreen;
-@property(assign,readwrite) bool includeHiddenViews;
-@property(assign,copy) id leafNodePredicate;
-@property(assign,readwrite) bool shouldOnlyIncludeElementsWithVisibleFrame;
-@property(assign,readwrite) bool shouldReturnScannerGroups;
-@property(assign,readwrite) bool shouldReturnTouchContainers;
-@property(assign,readwrite) bool shouldUseAllSubviews;
+@property (nonatomic) int direction;
+@property (nonatomic) bool forSpeakScreen;
+@property (nonatomic) bool includeHiddenViews;
+@property (nonatomic, copy) id leafNodePredicate;
+@property (nonatomic) bool shouldOnlyIncludeElementsWithVisibleFrame;
+@property (nonatomic) bool shouldReturnScannerGroups;
+@property (nonatomic) bool shouldReturnTouchContainers;
+@property (nonatomic) bool shouldUseAllSubviews;
 
 + (id)defaultSpeakScreenOptions;
 + (id)defaultSwitchControlOptions;

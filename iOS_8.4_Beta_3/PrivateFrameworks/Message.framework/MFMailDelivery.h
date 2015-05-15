@@ -22,9 +22,9 @@
     unsigned int _useCellDataOnly;
 }
 
-@property(assign,retain) NSDictionary * compositionSpecification;
-@property(assign,readwrite) unsigned long long conversationFlags;
-@property(assign,readwrite) bool isUserRequested;
+@property (nonatomic, retain) NSDictionary *compositionSpecification;
+@property (nonatomic) unsigned long long conversationFlags;
+@property (nonatomic) bool isUserRequested;
 
 + (bool)deliverMessage:(id)arg1;
 + (id)newWithHeaders:(id)arg1 HTML:(id)arg2 plainTextAlternative:(id)arg3 other:(id)arg4 charsets:(id)arg5;

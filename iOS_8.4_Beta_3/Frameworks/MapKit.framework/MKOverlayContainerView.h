@@ -12,9 +12,9 @@
     NSMutableArray *_vkOverlays;
 }
 
-@property(assign,readwrite) <MKOverlayContainerViewDelegate> * delegate;
-@property(assign,readwrite) double mapZoomScale;
-@property(assign,readonly) NSArray * overlays;
+@property (nonatomic) <MKOverlayContainerViewDelegate> *delegate;
+@property (nonatomic) double mapZoomScale;
+@property (nonatomic, readonly) NSArray *overlays;
 
 - (void).cxx_destruct;
 - (void)_configureAndAddDrawable:(id)arg1 forOverlay:(id)arg2 level:(long long)arg3;

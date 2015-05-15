@@ -46,8 +46,8 @@
     } _rectOfInterest;
 }
 
-@property(assign,readonly) BWNodeOutput * boxedMetadataOutput;
-@property(assign,readonly) BWNodeOutput * metadataObjectOutput;
+@property (readonly) BWNodeOutput *boxedMetadataOutput;
+@property (readonly) BWNodeOutput *metadataObjectOutput;
 
 + (void)initialize;
 

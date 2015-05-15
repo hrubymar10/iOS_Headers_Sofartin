@@ -18,14 +18,14 @@
     NSString *_serviceIdentifier;
 }
 
-@property(assign,copy) NSString * cacheDirectoryPath;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <HDIDSMessageCenterDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) IDSService * idsService;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, copy) NSString *cacheDirectoryPath;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <HDIDSMessageCenterDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) IDSService *idsService;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_expireMessages;

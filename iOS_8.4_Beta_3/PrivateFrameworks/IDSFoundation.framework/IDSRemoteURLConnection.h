@@ -14,9 +14,9 @@
     int _retries;
 }
 
-@property(assign,retain) NSString * bundleIdentifierForDataUsage;
-@property(assign,readwrite) bool forceCellularIfPossible;
-@property(assign,readwrite) bool requiresIDSHost;
+@property (retain) NSString *bundleIdentifierForDataUsage;
+@property bool forceCellularIfPossible;
+@property bool requiresIDSHost;
 
 - (bool)_connect;
 - (bool)_disconnect;

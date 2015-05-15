@@ -22,19 +22,19 @@
     UIWebView *_webView;
 }
 
-@property(assign,copy) SSAuthenticationContext * authenticationContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SUWebViewManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) ISURLRequestPerformance * initialRequestPerformance;
-@property(assign,retain) id originalFrameLoadDelegate;
-@property(assign,retain) id originalPolicyDelegate;
-@property(assign,retain) id originalResourceLoadDelegate;
-@property(assign,retain) id originalUIDelegate;
-@property(assign,retain) SUScriptWindowContext * scriptWindowContext;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIWebView * webView;
+@property (nonatomic, copy) SSAuthenticationContext *authenticationContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SUWebViewManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) ISURLRequestPerformance *initialRequestPerformance;
+@property (nonatomic, retain) id originalFrameLoadDelegate;
+@property (nonatomic, retain) id originalPolicyDelegate;
+@property (nonatomic, retain) id originalResourceLoadDelegate;
+@property (nonatomic, retain) id originalUIDelegate;
+@property (nonatomic, retain) SUScriptWindowContext *scriptWindowContext;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UIWebView *webView;
 
 + (id)defaultLocalStoragePath;
 

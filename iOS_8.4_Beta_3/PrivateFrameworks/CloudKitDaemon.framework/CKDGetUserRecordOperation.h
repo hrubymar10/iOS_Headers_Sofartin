@@ -6,7 +6,7 @@
     CKRecord *_userRecord;
 }
 
-@property(assign,retain) CKRecord * userRecord;
+@property (nonatomic, retain) CKRecord *userRecord;
 
 - (void).cxx_destruct;
 - (void)_fetchRecords;

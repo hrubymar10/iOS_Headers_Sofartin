@@ -6,7 +6,7 @@
     SKUICellLayout *_layout;
 }
 
-@property(assign,retain) SKUICellLayout * layout;
+@property (nonatomic, retain) SKUICellLayout *layout;
 
 - (void).cxx_destruct;
 - (id)layout;

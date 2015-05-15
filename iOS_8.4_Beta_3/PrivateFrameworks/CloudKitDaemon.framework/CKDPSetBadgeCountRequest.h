@@ -11,10 +11,10 @@
     } _has;
 }
 
-@property(assign,readwrite) unsigned int badgeCount;
-@property(assign,readwrite) bool forDevice;
-@property(assign,readwrite) bool hasBadgeCount;
-@property(assign,readwrite) bool hasForDevice;
+@property (nonatomic) unsigned int badgeCount;
+@property (nonatomic) bool forDevice;
+@property (nonatomic) bool hasBadgeCount;
+@property (nonatomic) bool hasForDevice;
 
 + (id)options;
 

@@ -18,19 +18,19 @@
     unsigned int _version;
 }
 
-@property(assign,readwrite) unsigned char defaultNumberOfPlayers;
-@property(assign,copy) NSString * inviteMessage;
-@property(assign,retain) NSDictionary * localizableInviteMessage;
-@property(assign,readwrite) unsigned long long matchType;
-@property(assign,readwrite) unsigned char maxPlayers;
-@property(assign,readwrite) unsigned char minPlayers;
-@property(assign,readwrite) unsigned int playerAttributes;
-@property(assign,readwrite) int playerGroup;
-@property(assign,retain) NSArray * recipientPlayerIDs;
-@property(assign,retain) NSArray * recipients;
-@property(assign,retain) NSString * rid;
-@property(assign,retain) NSData * sessionToken;
-@property(assign,readwrite) unsigned int version;
+@property (nonatomic) unsigned char defaultNumberOfPlayers;
+@property (nonatomic, copy) NSString *inviteMessage;
+@property (nonatomic, retain) NSDictionary *localizableInviteMessage;
+@property (nonatomic) unsigned long long matchType;
+@property (nonatomic) unsigned char maxPlayers;
+@property (nonatomic) unsigned char minPlayers;
+@property (nonatomic) unsigned int playerAttributes;
+@property (nonatomic) int playerGroup;
+@property (nonatomic, retain) NSArray *recipientPlayerIDs;
+@property (nonatomic, retain) NSArray *recipients;
+@property (nonatomic, retain) NSString *rid;
+@property (nonatomic, retain) NSData *sessionToken;
+@property (nonatomic) unsigned int version;
 
 + (id)secureCodedPropertyKeys;
 

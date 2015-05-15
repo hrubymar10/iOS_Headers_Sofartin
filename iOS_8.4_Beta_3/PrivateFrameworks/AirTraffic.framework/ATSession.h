@@ -26,23 +26,23 @@
     bool _suspended;
 }
 
-@property(getter=isCancelled,assign,readwrite) bool cancelled;
-@property(assign,retain) NSString * dataClass;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double duration;
-@property(assign,retain) NSXPCListenerEndpoint * endpoint;
-@property(assign,copy) NSError * error;
-@property(getter=isFinished,assign,readwrite) bool finished;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * localizedDescription;
-@property(assign,readwrite) <ATMessageLink> * messageLink;
-@property(assign,readwrite) double progress;
-@property(getter=isRunning,assign,readwrite) bool running;
-@property(assign,retain) NSString * sessionIdentifier;
-@property(assign,retain) NSString * sessionTypeIdentifier;
-@property(assign,readonly) Class superclass;
-@property(getter=isSuspended,assign,readwrite) bool suspended;
+@property (getter=isCancelled) bool cancelled;
+@property (nonatomic, retain) NSString *dataClass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) double duration;
+@property (nonatomic, retain) NSXPCListenerEndpoint *endpoint;
+@property (copy) NSError *error;
+@property (getter=isFinished) bool finished;
+@property (readonly) unsigned long long hash;
+@property (retain) NSString *localizedDescription;
+@property (nonatomic) <ATMessageLink> *messageLink;
+@property double progress;
+@property (getter=isRunning) bool running;
+@property (retain) NSString *sessionIdentifier;
+@property (retain) NSString *sessionTypeIdentifier;
+@property (readonly) Class superclass;
+@property (getter=isSuspended) bool suspended;
 
 + (void)_cancelSessionWithIdentifier:(id)arg1;
 + (id)_remoteSessionsWithTypeIdentifier:(id)arg1;

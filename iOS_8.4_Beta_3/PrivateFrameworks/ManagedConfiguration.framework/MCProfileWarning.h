@@ -8,9 +8,9 @@
     NSString *_localizedTitle;
 }
 
-@property(assign,readwrite) bool isLongForm;
-@property(assign,retain) NSString * localizedBody;
-@property(assign,retain) NSString * localizedTitle;
+@property (nonatomic) bool isLongForm;
+@property (nonatomic, retain) NSString *localizedBody;
+@property (nonatomic, retain) NSString *localizedTitle;
 
 + (bool)supportsSecureCoding;
 + (id)warningWithLocalizedTitle:(id)arg1 localizedBody:(id)arg2 isLongForm:(bool)arg3;

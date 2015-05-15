@@ -37,14 +37,14 @@
     float mScaleMappingStartingHeight;
 }
 
-@property(assign,readonly) float bottomCapScale;
-@property(assign,readwrite) struct BarExtrusionSetting { float x1; bool x2; bool x3; bool x4; bool x5; struct BarExtrusionDetails { struct BarExtrusionCrossSectionDetails { float x_1_2_1; float x_1_2_2; float x_1_2_3; float x_1_2_4; int x_1_2_5; } x_6_1_1; struct BarExtrusionSpineDetails { float x_2_2_1; long long x_2_2_2; long long x_2_2_3; float x_2_2_4; } x_6_1_2; } x6; } extrusionSetting;
-@property(assign,readonly) bool hasBottomBevel;
-@property(assign,readonly) bool hasTopBevel;
-@property(assign,readonly) bool isCylindrical;
-@property(assign,readonly) TSCH3DNormalDirectionMapper * normalDirectionMapper;
-@property(assign,readonly) float scaleMappingStartingHeight;
-@property(assign,readonly) float size;
+@property (nonatomic, readonly) float bottomCapScale;
+@property (nonatomic) struct BarExtrusionSetting { float x1; bool x2; bool x3; bool x4; bool x5; struct BarExtrusionDetails { struct BarExtrusionCrossSectionDetails { float x_1_2_1; float x_1_2_2; float x_1_2_3; float x_1_2_4; int x_1_2_5; } x_6_1_1; struct BarExtrusionSpineDetails { float x_2_2_1; long long x_2_2_2; long long x_2_2_3; float x_2_2_4; } x_6_1_2; } x6; } extrusionSetting;
+@property (nonatomic, readonly) bool hasBottomBevel;
+@property (nonatomic, readonly) bool hasTopBevel;
+@property (nonatomic, readonly) bool isCylindrical;
+@property (nonatomic, readonly) TSCH3DNormalDirectionMapper *normalDirectionMapper;
+@property (nonatomic, readonly) float scaleMappingStartingHeight;
+@property (nonatomic, readonly) float size;
 
 + (id)namedBevelInterpolationShaderFunction;
 

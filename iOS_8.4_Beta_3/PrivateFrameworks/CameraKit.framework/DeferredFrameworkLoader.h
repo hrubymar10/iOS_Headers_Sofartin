@@ -8,9 +8,9 @@
     NSString *_path;
 }
 
-@property(assign,readwrite) void* frameworkHandle;
-@property(assign,readwrite) long long frameworkLoadedToken;
-@property(assign,retain) NSString * path;
+@property (nonatomic) void*frameworkHandle;
+@property (nonatomic) long long frameworkLoadedToken;
+@property (nonatomic, retain) NSString *path;
 
 + (id)PhotosUIFrameworkPath;
 

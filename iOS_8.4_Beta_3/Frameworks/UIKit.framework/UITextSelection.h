@@ -11,13 +11,13 @@
     UITextRange *_selectedRange;
 }
 
-@property(assign,retain) UITextRange * base;
-@property(assign,readonly) UIResponder<UITextInputPrivate> * document;
-@property(getter=_domRange,assign,readonly) DOMRange * domRange;
-@property(assign,readwrite) long long granularity;
-@property(assign,retain) UITextRange * initialExtent;
-@property(assign,readonly) bool isCommitting;
-@property(assign,retain) UITextRange * selectedRange;
+@property (nonatomic, retain) UITextRange *base;
+@property (nonatomic, readonly) UIResponder<UITextInputPrivate> *document;
+@property (getter=_domRange, nonatomic, readonly) DOMRange *domRange;
+@property (nonatomic) long long granularity;
+@property (nonatomic, retain) UITextRange *initialExtent;
+@property (nonatomic, readonly) bool isCommitting;
+@property (nonatomic, retain) UITextRange *selectedRange;
 
 - (id)_domRange;
 - (void)aggressivelyExpandSelectionToWordContainingCaretSelection;

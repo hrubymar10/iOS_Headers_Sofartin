@@ -12,14 +12,14 @@
     NSData *_uuid;
 }
 
-@property(assign,readwrite) double creationDate;
-@property(assign,readwrite) bool hasCreationDate;
-@property(assign,readonly) bool hasMetadataDictionary;
-@property(assign,readonly) bool hasSourceBundleIdentifier;
-@property(assign,readonly) bool hasUuid;
-@property(assign,retain) HDCodableMetadataDictionary * metadataDictionary;
-@property(assign,retain) NSString * sourceBundleIdentifier;
-@property(assign,retain) NSData * uuid;
+@property (nonatomic) double creationDate;
+@property (nonatomic) bool hasCreationDate;
+@property (nonatomic, readonly) bool hasMetadataDictionary;
+@property (nonatomic, readonly) bool hasSourceBundleIdentifier;
+@property (nonatomic, readonly) bool hasUuid;
+@property (nonatomic, retain) HDCodableMetadataDictionary *metadataDictionary;
+@property (nonatomic, retain) NSString *sourceBundleIdentifier;
+@property (nonatomic, retain) NSData *uuid;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

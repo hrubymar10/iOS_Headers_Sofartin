@@ -14,17 +14,17 @@
     PSSpecifier *_specifier;
 }
 
-@property(assign,retain) PSSpecifierAction * action;
-@property(assign,copy) NSString * bundleName;
-@property(assign,retain) NSMutableSet * childEntries;
-@property(assign,retain) PSSpecifier * groupSpecifier;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) NSMutableArray * keywords;
-@property(assign,copy) NSString * manifestBundleName;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) PSSearchEntry * parentEntry;
-@property(assign,copy) NSString * plistName;
-@property(assign,retain) PSSpecifier * specifier;
+@property (nonatomic, retain) PSSpecifierAction *action;
+@property (nonatomic, copy) NSString *bundleName;
+@property (nonatomic, readonly, retain) NSMutableSet *childEntries;
+@property (nonatomic, retain) PSSpecifier *groupSpecifier;
+@property (nonatomic, readonly, copy) NSString *identifier;
+@property (nonatomic, readonly, retain) NSMutableArray *keywords;
+@property (nonatomic, copy) NSString *manifestBundleName;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic) PSSearchEntry *parentEntry;
+@property (nonatomic, copy) NSString *plistName;
+@property (nonatomic, readonly, retain) PSSpecifier *specifier;
 
 - (bool)_hasDetailController:(bool)arg1;
 - (id)action;

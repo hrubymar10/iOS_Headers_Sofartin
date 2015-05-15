@@ -9,10 +9,10 @@
     CoreDAVLeafItem *_status;
 }
 
-@property(assign,retain) CoreDAVErrorItem * errorItem;
-@property(assign,retain) CoreDAVItem * prop;
-@property(assign,retain) CoreDAVLeafItem * responseDescription;
-@property(assign,retain) CoreDAVLeafItem * status;
+@property (nonatomic, retain) CoreDAVErrorItem *errorItem;
+@property (nonatomic, retain) CoreDAVItem *prop;
+@property (nonatomic, retain) CoreDAVLeafItem *responseDescription;
+@property (nonatomic, retain) CoreDAVLeafItem *status;
 
 + (id)copyParseRules;
 

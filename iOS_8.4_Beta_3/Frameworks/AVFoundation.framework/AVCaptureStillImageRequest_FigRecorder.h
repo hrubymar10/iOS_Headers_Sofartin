@@ -20,18 +20,18 @@
     bool _suspendsVideoProcessing;
 }
 
-@property(assign,readwrite) long long HDRMode;
-@property(assign,readwrite) unsigned int imageDataFormatType;
-@property(assign,copy) id iosurfaceCompletionBlock;
-@property(assign,readwrite) float jpegQuality;
-@property(assign,readwrite) bool jpegQualitySpecified;
-@property(assign,readwrite) bool noiseReductionEnabled;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } previewImageSize;
-@property(assign,copy) id sbufCompletionBlock;
-@property(assign,readwrite) unsigned int shutterSoundID;
-@property(getter=isStillImageMirrored,assign,readwrite) bool stillImageMirrored;
-@property(assign,readwrite) long long stillImageOrientation;
-@property(assign,readwrite) bool suspendsVideoProcessing;
+@property long long HDRMode;
+@property unsigned int imageDataFormatType;
+@property (copy) id iosurfaceCompletionBlock;
+@property float jpegQuality;
+@property bool jpegQualitySpecified;
+@property bool noiseReductionEnabled;
+@property struct CGSize { double x1; double x2; } previewImageSize;
+@property (copy) id sbufCompletionBlock;
+@property unsigned int shutterSoundID;
+@property (getter=isStillImageMirrored) bool stillImageMirrored;
+@property long long stillImageOrientation;
+@property bool suspendsVideoProcessing;
 
 + (id)request;
 

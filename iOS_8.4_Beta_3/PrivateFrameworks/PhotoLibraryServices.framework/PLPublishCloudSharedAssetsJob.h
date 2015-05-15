@@ -10,11 +10,11 @@
     NSDictionary *_trimmedVideoPathInfo;
 }
 
-@property(assign,retain) NSString * batchCommentText;
-@property(assign,readwrite) bool isNewAlbum;
-@property(assign,retain) NSArray * originalAssetUUIDs;
-@property(assign,retain) NSString * publishAlbumCloudGUID;
-@property(assign,retain) NSDictionary * trimmedVideoPathInfo;
+@property (nonatomic, retain) NSString *batchCommentText;
+@property (nonatomic) bool isNewAlbum;
+@property (nonatomic, retain) NSArray *originalAssetUUIDs;
+@property (nonatomic, retain) NSString *publishAlbumCloudGUID;
+@property (nonatomic, retain) NSDictionary *trimmedVideoPathInfo;
 
 + (void)publishBatchOfOriginalAssets:(id)arg1 toSharedAlbum:(id)arg2 withTrimmedVideoPathInfo:(id)arg3 isNewAlbum:(bool)arg4 batchCommentText:(id)arg5;
 

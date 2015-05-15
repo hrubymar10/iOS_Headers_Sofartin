@@ -10,8 +10,8 @@
     NSString *_replacementText;
 }
 
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } editRange;
-@property(assign,retain) NSString * replacementText;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } editRange;
+@property (nonatomic, retain) NSString *replacementText;
 
 + (id)atomWithEditRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1 replacementText:(id)arg2;
 

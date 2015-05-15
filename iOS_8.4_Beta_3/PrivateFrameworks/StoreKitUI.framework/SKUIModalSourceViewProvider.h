@@ -10,10 +10,10 @@
     id _userInfo;
 }
 
-@property(assign,readwrite) <SKUIModalSourceViewProviderDelegate> * delegate;
-@property(assign,retain) UIView * originalSourceView;
-@property(assign,retain) UIBarButtonItem * sourceButtonBarItem;
-@property(assign,retain) id userInfo;
+@property (nonatomic) <SKUIModalSourceViewProviderDelegate> *delegate;
+@property (nonatomic, retain) UIView *originalSourceView;
+@property (nonatomic, retain) UIBarButtonItem *sourceButtonBarItem;
+@property (nonatomic, retain) id userInfo;
 
 - (void).cxx_destruct;
 - (id)animationView;

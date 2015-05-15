@@ -13,14 +13,14 @@
     NSString *_name;
 }
 
-@property(assign,readonly) NSNumber * contentVersion;
-@property(assign,readonly) long long footprint;
-@property(assign,readonly) long long gender;
-@property(assign,readwrite) bool isBuiltInVoice;
-@property(assign,readonly) bool isInstalled;
-@property(assign,readonly) NSArray * languages;
-@property(assign,readonly) NSString * masteredVersion;
-@property(assign,readonly) NSString * name;
+@property (nonatomic, readonly) NSNumber *contentVersion;
+@property (nonatomic, readonly) long long footprint;
+@property (nonatomic, readonly) long long gender;
+@property (nonatomic) bool isBuiltInVoice;
+@property (nonatomic, readonly) bool isInstalled;
+@property (nonatomic, readonly) NSArray *languages;
+@property (nonatomic, readonly) NSString *masteredVersion;
+@property (nonatomic, readonly) NSString *name;
 
 + (bool)supportsSecureCoding;
 

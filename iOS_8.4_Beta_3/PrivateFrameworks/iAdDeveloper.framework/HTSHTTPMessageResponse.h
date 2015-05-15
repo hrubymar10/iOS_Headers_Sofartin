@@ -12,13 +12,13 @@
     unsigned long long _written;
 }
 
-@property(assign,retain) HTSHTTPMessageRequest * request;
-@property(assign,readwrite) double sendTime;
-@property(assign,retain) NSMutableData * serializedData;
-@property(assign,readwrite) int statusCode;
-@property(assign,copy) NSString * statusDescription;
-@property(assign,copy) NSString * trackingDescription;
-@property(assign,readwrite) unsigned long long written;
+@property (nonatomic, retain) HTSHTTPMessageRequest *request;
+@property (nonatomic) double sendTime;
+@property (nonatomic, retain) NSMutableData *serializedData;
+@property (nonatomic) int statusCode;
+@property (nonatomic, copy) NSString *statusDescription;
+@property (nonatomic, copy) NSString *trackingDescription;
+@property (nonatomic) unsigned long long written;
 
 - (struct __CFHTTPMessage { }*)copyMessage;
 - (void)dealloc;

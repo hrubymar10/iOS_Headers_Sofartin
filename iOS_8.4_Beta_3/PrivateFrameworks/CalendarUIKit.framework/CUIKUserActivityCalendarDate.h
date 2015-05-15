@@ -7,8 +7,8 @@
     unsigned long long _view;
 }
 
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) unsigned long long view;
+@property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) unsigned long long view;
 
 - (void).cxx_destruct;
 - (id)date;

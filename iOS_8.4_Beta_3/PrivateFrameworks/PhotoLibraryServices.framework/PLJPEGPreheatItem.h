@@ -16,9 +16,9 @@
     NSObject<OS_dispatch_group> *_waitGroup;
 }
 
-@property(setter=_setHasCachedImage:,assign,readwrite) bool _hasCachedImage;
-@property(assign,readonly) NSString * imagePath;
-@property(assign,readonly) unsigned int options;
+@property (setter=_setHasCachedImage:) bool _hasCachedImage;
+@property (nonatomic, readonly) NSString *imagePath;
+@property (nonatomic, readonly) unsigned int options;
 
 + (id)jpegDataLoadSemaphore;
 

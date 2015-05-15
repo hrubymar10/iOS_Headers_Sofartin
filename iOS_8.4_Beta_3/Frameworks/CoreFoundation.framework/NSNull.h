@@ -2,20 +2,20 @@
    Image: /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
  */
 
-@interface NSNull : NSObject <CAAction, NSCopying, NSSecureCoding, PQLBindable, PQLBindable, TSDMixing, TSDPathPainter>
+@interface NSNull : NSObject <CAAction, NSCopying, NSSecureCoding, PQLBindable, TSDMixing, TSDPathPainter>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)null;

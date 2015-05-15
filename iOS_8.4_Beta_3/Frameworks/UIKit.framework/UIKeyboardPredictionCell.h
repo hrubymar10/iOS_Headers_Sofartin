@@ -50,15 +50,15 @@
     UIView *m_maskView;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } activeFrame;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } baseFrame;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } collapsedFrame;
-@property(assign,readwrite) bool isAutocorrection;
-@property(assign,readwrite) bool isCenter;
-@property(assign,readwrite) bool isLongCandidate;
-@property(assign,readwrite) bool isTypedString;
-@property(assign,retain) TIKeyboardCandidate * prediction;
-@property(assign,readwrite) int state;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } activeFrame;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } baseFrame;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } collapsedFrame;
+@property (nonatomic) bool isAutocorrection;
+@property (nonatomic) bool isCenter;
+@property (nonatomic) bool isLongCandidate;
+@property (nonatomic) bool isTypedString;
+@property (nonatomic, readonly, retain) TIKeyboardCandidate *prediction;
+@property (nonatomic) int state;
 
 + (id)initKeyViewWithSize:(struct CGSize { double x1; double x2; })arg1 state:(int)arg2 needsBackground:(bool)arg3;
 

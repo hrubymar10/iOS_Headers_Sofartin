@@ -8,9 +8,9 @@
     bool _logLocationIndicatorSent;
 }
 
-@property(assign,readwrite) bool isInternalBuild;
-@property(assign,readwrite) bool logLevelsMaxedOut;
-@property(assign,readwrite) bool logLocationIndicatorSent;
+@property (nonatomic) bool isInternalBuild;
+@property (nonatomic) bool logLevelsMaxedOut;
+@property (nonatomic) bool logLocationIndicatorSent;
 
 + (id)sharedInstance;
 

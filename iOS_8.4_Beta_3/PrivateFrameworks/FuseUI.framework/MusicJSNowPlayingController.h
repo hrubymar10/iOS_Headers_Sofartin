@@ -7,8 +7,8 @@
     MusicTabBarController *_tabBarController;
 }
 
-@property(assign,retain) MPAVController * player;
-@property(assign,retain) MusicTabBarController * tabBarController;
+@property (nonatomic, retain) MPAVController *player;
+@property (nonatomic, retain) MusicTabBarController *tabBarController;
 
 - (void).cxx_destruct;
 - (id)player;

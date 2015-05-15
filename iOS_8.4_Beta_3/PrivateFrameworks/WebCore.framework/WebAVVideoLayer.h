@@ -26,10 +26,10 @@
     } _videoSublayer;
 }
 
-@property(getter=isReadyForDisplay,assign,readwrite) bool readyForDisplay;
-@property(assign,readwrite) long long videoLayerGravity;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } videoRect;
-@property(assign,retain) CALayer * videoSublayer;
+@property (getter=isReadyForDisplay, nonatomic) bool readyForDisplay;
+@property (nonatomic) long long videoLayerGravity;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } videoRect;
+@property (nonatomic, retain) CALayer *videoSublayer;
 
 + (id)videoLayer;
 

@@ -8,9 +8,9 @@
     CLLocation *_location;
 }
 
-@property(assign,copy) NSDate * dateCreated;
-@property(assign,copy) NSObject<NSCopying> * itemId;
-@property(assign,retain) CLLocation * location;
+@property (nonatomic, copy) NSDate *dateCreated;
+@property (nonatomic, copy) NSObject<NSCopying> *itemId;
+@property (nonatomic, retain) CLLocation *location;
 
 + (id)mapItemSortingComparatorNewestToOldest;
 + (id)mapItemSortingComparatorOldestToNewest;

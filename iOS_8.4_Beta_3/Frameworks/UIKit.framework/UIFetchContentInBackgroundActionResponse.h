@@ -4,7 +4,7 @@
 
 @interface UIFetchContentInBackgroundActionResponse : BSActionResponse
 
-@property(assign,readonly) unsigned long long result;
+@property (nonatomic, readonly) unsigned long long result;
 
 + (id)responseWithResult:(unsigned long long)arg1;
 

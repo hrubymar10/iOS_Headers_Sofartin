@@ -14,10 +14,10 @@
     bool _shouldGetAssetCounts;
 }
 
-@property(assign,retain) <CPLPullFromTransportTaskDelegate> * delegate;
-@property(assign,readonly) bool didGetSomeChanges;
-@property(assign,readwrite) bool isPostPushPhase;
-@property(assign,readwrite) bool shouldGetAssetCounts;
+@property (retain) <CPLPullFromTransportTaskDelegate> *delegate;
+@property (nonatomic, readonly) bool didGetSomeChanges;
+@property (nonatomic) bool isPostPushPhase;
+@property (nonatomic) bool shouldGetAssetCounts;
 
 - (void).cxx_destruct;
 - (void)_finishTaskWithErrorAndCleanupIfNecessary:(id)arg1;

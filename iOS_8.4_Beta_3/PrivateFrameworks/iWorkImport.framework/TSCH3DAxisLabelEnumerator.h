@@ -7,7 +7,7 @@
     TSCH3DAxisLabelKind *mKind;
 }
 
-@property(assign,readonly) TSCH3DAxisLabelKind * kind;
+@property (nonatomic, readonly) TSCH3DAxisLabelKind *kind;
 
 + (id)enumeratorWithAxis:(id)arg1 kind:(id)arg2;
 

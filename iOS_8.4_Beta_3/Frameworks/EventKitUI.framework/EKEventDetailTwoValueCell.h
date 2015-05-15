@@ -10,7 +10,7 @@
     UILabel *_valueView;
 }
 
-@property(assign,readonly) unsigned int visibleItems;
+@property (nonatomic, readonly) unsigned int visibleItems;
 
 - (void).cxx_destruct;
 - (id)initWithEvent:(id)arg1 editable:(bool)arg2 platformStyle:(int)arg3;

@@ -20,10 +20,10 @@
     NSMutableArray *_workoutMixes;
 }
 
-@property(assign,copy) NSString * latestSelectedPlaylistName;
-@property(assign,readwrite) long long musicSelection;
-@property(assign,readonly) bool powersongIsNowPlayingItem;
-@property(assign,readonly) bool shouldControlMusic;
+@property (nonatomic, copy) NSString *latestSelectedPlaylistName;
+@property (nonatomic) long long musicSelection;
+@property (nonatomic, readonly) bool powersongIsNowPlayingItem;
+@property (nonatomic, readonly) bool shouldControlMusic;
 
 + (void)clearCachedDatabaseData;
 + (id)sharedMusicController;

@@ -7,8 +7,8 @@
     int _paperOrientation;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } paperSize;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } printableRect;
+@property (readonly) struct CGSize { double x1; double x2; } paperSize;
+@property (readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } printableRect;
 
 + (id)_defaultPKPaperForOuptutType:(long long)arg1;
 + (id)_defaultPaperForOutputType:(long long)arg1;

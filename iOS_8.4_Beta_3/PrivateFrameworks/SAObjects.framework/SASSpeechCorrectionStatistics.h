@@ -4,18 +4,18 @@
 
 @interface SASSpeechCorrectionStatistics : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,readwrite) long long alternativeSelectCount;
-@property(assign,readwrite) long long characterChangeCount;
-@property(assign,copy) NSString * correctionSource;
-@property(assign,copy) NSString * correctionText;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * interactionId;
-@property(assign,copy) NSString * refId;
-@property(assign,copy) NSString * sessionId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic) long long alternativeSelectCount;
+@property (nonatomic) long long characterChangeCount;
+@property (nonatomic, copy) NSString *correctionSource;
+@property (nonatomic, copy) NSString *correctionText;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *interactionId;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic, copy) NSString *sessionId;
+@property (readonly) Class superclass;
 
 + (id)speechCorrectionStatistics;
 + (id)speechCorrectionStatisticsWithDictionary:(id)arg1 context:(id)arg2;

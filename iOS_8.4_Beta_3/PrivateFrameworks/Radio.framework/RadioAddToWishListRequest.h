@@ -12,8 +12,8 @@
     long long _trackStoreID;
 }
 
-@property(assign,readwrite) long long action;
-@property(assign,readonly) long long trackStoreID;
+@property (nonatomic) long long action;
+@property (nonatomic, readonly) long long trackStoreID;
 
 - (void).cxx_destruct;
 - (long long)action;

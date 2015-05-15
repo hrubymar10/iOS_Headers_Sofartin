@@ -12,14 +12,14 @@
     long long _highlightedControlIndex;
 }
 
-@property(assign,readwrite) float buttonDistributionScalingFactor;
-@property(assign,retain) NSMutableArray * buttonDividerViews;
-@property(assign,retain) NSArray * buttonsArray;
-@property(assign,retain) NSMutableDictionary * buttonsDictionary;
-@property(assign,readwrite) int buttonsMode;
-@property(assign,readwrite) <TPStarkInCallButtonsViewDelegate> * delegate;
-@property(assign,readwrite) long long highlightedControlIndex;
-@property(assign,readonly) long long numberOfControls;
+@property float buttonDistributionScalingFactor;
+@property (retain) NSMutableArray *buttonDividerViews;
+@property (retain) NSArray *buttonsArray;
+@property (retain) NSMutableDictionary *buttonsDictionary;
+@property int buttonsMode;
+@property <TPStarkInCallButtonsViewDelegate> *delegate;
+@property (nonatomic) long long highlightedControlIndex;
+@property (readonly) long long numberOfControls;
 
 - (void)applyHorizontalPositioningConstraintWithFraction:(float)arg1 forButton:(id)arg2;
 - (void)applyHorizontalPositioningConstraintWithFraction:(float)arg1 forDividerView:(id)arg2;

@@ -13,15 +13,15 @@
     NSMutableArray *_snippets;
 }
 
-@property(assign,readonly) bool hasRating;
-@property(assign,readonly) bool hasReviewId;
-@property(assign,readwrite) bool hasReviewTime;
-@property(assign,readonly) bool hasReviewer;
-@property(assign,retain) GEOPDRating * rating;
-@property(assign,retain) NSString * reviewId;
-@property(assign,readwrite) double reviewTime;
-@property(assign,retain) GEOPDUser * reviewer;
-@property(assign,retain) NSMutableArray * snippets;
+@property (nonatomic, readonly) bool hasRating;
+@property (nonatomic, readonly) bool hasReviewId;
+@property (nonatomic) bool hasReviewTime;
+@property (nonatomic, readonly) bool hasReviewer;
+@property (nonatomic, retain) GEOPDRating *rating;
+@property (nonatomic, retain) NSString *reviewId;
+@property (nonatomic) double reviewTime;
+@property (nonatomic, retain) GEOPDUser *reviewer;
+@property (nonatomic, retain) NSMutableArray *snippets;
 
 - (void)addSnippet:(id)arg1;
 - (id)bestLocalizedSnippet;

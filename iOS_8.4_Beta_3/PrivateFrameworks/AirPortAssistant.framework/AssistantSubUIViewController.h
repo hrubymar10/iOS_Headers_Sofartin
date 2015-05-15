@@ -8,9 +8,9 @@
     AssistantUIViewController *_parentController;
 }
 
-@property(assign,retain) NSDictionary * inParamDict;
-@property(assign,readonly) NSDictionary * outResultsDict;
-@property(assign,readwrite) AssistantUIViewController * parentController;
+@property (nonatomic, retain) NSDictionary *inParamDict;
+@property (nonatomic, readonly) NSDictionary *outResultsDict;
+@property (nonatomic) AssistantUIViewController *parentController;
 
 + (id)containerViewWithWidth:(double)arg1;
 + (id)labelViewInContainer:(id*)arg1 width:(double)arg2;

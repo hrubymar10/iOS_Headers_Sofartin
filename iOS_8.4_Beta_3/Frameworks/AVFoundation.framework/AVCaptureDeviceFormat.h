@@ -6,21 +6,21 @@
     AVCaptureDeviceFormatInternal *_internal;
 }
 
-@property(assign,readonly) long long autoFocusSystem;
-@property(assign,readonly) struct opaqueCMFormatDescription { }* formatDescription;
-@property(assign,readonly) struct { int x1; int x2; } highResolutionStillImageDimensions;
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } maxExposureDuration;
-@property(assign,readonly) float maxISO;
-@property(assign,readonly) NSString * mediaType;
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } minExposureDuration;
-@property(assign,readonly) float minISO;
-@property(getter=isVideoBinned,assign,readonly) bool videoBinned;
-@property(assign,readonly) float videoFieldOfView;
-@property(getter=isVideoHDRSupported,assign,readonly) bool videoHDRSupported;
-@property(assign,readonly) double videoMaxZoomFactor;
-@property(getter=isVideoStabilizationSupported,assign,readonly) bool videoStabilizationSupported;
-@property(assign,readonly) NSArray * videoSupportedFrameRateRanges;
-@property(assign,readonly) double videoZoomFactorUpscaleThreshold;
+@property (nonatomic, readonly) long long autoFocusSystem;
+@property (nonatomic, readonly) struct opaqueCMFormatDescription { }*formatDescription;
+@property (nonatomic, readonly) struct { int x1; int x2; } highResolutionStillImageDimensions;
+@property (nonatomic, readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } maxExposureDuration;
+@property (nonatomic, readonly) float maxISO;
+@property (nonatomic, readonly) NSString *mediaType;
+@property (nonatomic, readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } minExposureDuration;
+@property (nonatomic, readonly) float minISO;
+@property (getter=isVideoBinned, nonatomic, readonly) bool videoBinned;
+@property (nonatomic, readonly) float videoFieldOfView;
+@property (getter=isVideoHDRSupported, nonatomic, readonly) bool videoHDRSupported;
+@property (nonatomic, readonly) double videoMaxZoomFactor;
+@property (getter=isVideoStabilizationSupported, nonatomic, readonly) bool videoStabilizationSupported;
+@property (nonatomic, readonly) NSArray *videoSupportedFrameRateRanges;
+@property (nonatomic, readonly) double videoZoomFactorUpscaleThreshold;
 
 + (void)initialize;
 

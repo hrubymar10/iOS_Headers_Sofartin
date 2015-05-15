@@ -9,12 +9,12 @@
     NSURL *_tempFolderURL;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) CPLEngineFileStorage * fileStorage;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) CPLEngineFileStorage *fileStorage;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)compactWithError:(id*)arg1;

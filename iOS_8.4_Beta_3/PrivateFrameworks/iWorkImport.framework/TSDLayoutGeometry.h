@@ -17,8 +17,8 @@
     } mTransform;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } transform;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } transform;
 
 + (id)geometryFromFullTransform:(struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; })arg1;
 

@@ -19,23 +19,23 @@
     long long _tintStyle;
 }
 
-@property(assign,copy) NSString * cancelButtonTitle;
-@property(assign,retain) SUClientInterface * clientInterface;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * items;
-@property(assign,readwrite) long long maximumNumberOfItems;
-@property(assign,readwrite) double maximumWidth;
-@property(assign,copy) NSString * moreListTitle;
-@property(assign,readonly) long long numberOfVisibleSegments;
-@property(assign,readwrite) long long segmentedControlStyle;
-@property(assign,readwrite) long long selectedItemIndex;
-@property(assign,readonly) long long selectedSegmentIndex;
-@property(assign,readwrite) bool showsMoreListAutomatically;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIColor * tintColor;
-@property(assign,readwrite) long long tintStyle;
+@property (nonatomic, copy) NSString *cancelButtonTitle;
+@property (nonatomic, retain) SUClientInterface *clientInterface;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *items;
+@property (nonatomic) long long maximumNumberOfItems;
+@property (nonatomic) double maximumWidth;
+@property (nonatomic, copy) NSString *moreListTitle;
+@property (nonatomic, readonly) long long numberOfVisibleSegments;
+@property (nonatomic) long long segmentedControlStyle;
+@property (nonatomic) long long selectedItemIndex;
+@property (nonatomic, readonly) long long selectedSegmentIndex;
+@property (nonatomic) bool showsMoreListAutomatically;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIColor *tintColor;
+@property (nonatomic) long long tintStyle;
 
 - (void)_applyStyling;
 - (void)_destroyMenuViewController;

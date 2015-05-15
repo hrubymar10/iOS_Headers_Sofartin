@@ -7,8 +7,8 @@
     bool _shouldParseResponse;
 }
 
-@property(assign,readwrite) bool includeHiddenItems;
-@property(assign,readwrite) bool shouldParseResponse;
+@property (nonatomic) bool includeHiddenItems;
+@property (nonatomic) bool shouldParseResponse;
 
 + (id)requestWithDatabaseID:(unsigned int)arg1;
 + (id)requestWithDatabaseID:(unsigned int)arg1 containerID:(unsigned int)arg2;

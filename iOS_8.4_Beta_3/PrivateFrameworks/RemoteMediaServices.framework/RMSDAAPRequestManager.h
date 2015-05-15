@@ -13,13 +13,13 @@
     NSURLSession *_urlSession;
 }
 
-@property(assign,readwrite) <RMSDAAPRequestManagerDelegate> * delegate;
-@property(assign,retain) RMSFairPlaySession * fairPlaySession;
-@property(assign,copy) NSString * homeSharingGroupKey;
-@property(assign,copy) NSString * hostName;
-@property(assign,copy) NSString * pairingGUID;
-@property(assign,readwrite) long long port;
-@property(assign,readwrite) long long sessionIdentifier;
+@property (nonatomic) <RMSDAAPRequestManagerDelegate> *delegate;
+@property (nonatomic, retain) RMSFairPlaySession *fairPlaySession;
+@property (nonatomic, copy) NSString *homeSharingGroupKey;
+@property (nonatomic, copy) NSString *hostName;
+@property (nonatomic, copy) NSString *pairingGUID;
+@property (nonatomic) long long port;
+@property (nonatomic) long long sessionIdentifier;
 
 - (void).cxx_destruct;
 - (id)delegate;

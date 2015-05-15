@@ -9,14 +9,14 @@
     NSMutableSet *_removedItems;
 }
 
-@property(assign,retain) NSMutableSet * addedItems;
-@property(assign,readonly) unsigned long long count;
-@property(assign,retain) NSMutableSet * effectiveItems;
-@property(assign,copy) NSSet * items;
-@property(assign,readonly) bool itemsWereAdded;
-@property(assign,readonly) bool itemsWereRemoved;
-@property(assign,retain) NSMutableSet * loadedItems;
-@property(assign,retain) NSMutableSet * removedItems;
+@property (nonatomic, retain) NSMutableSet *addedItems;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, retain) NSMutableSet *effectiveItems;
+@property (nonatomic, copy) NSSet *items;
+@property (nonatomic, readonly) bool itemsWereAdded;
+@property (nonatomic, readonly) bool itemsWereRemoved;
+@property (nonatomic, retain) NSMutableSet *loadedItems;
+@property (nonatomic, retain) NSMutableSet *removedItems;
 
 - (void)_addRelatedObject:(id)arg1 setInverse:(bool)arg2 dirty:(bool)arg3;
 - (id)_effectiveItems;

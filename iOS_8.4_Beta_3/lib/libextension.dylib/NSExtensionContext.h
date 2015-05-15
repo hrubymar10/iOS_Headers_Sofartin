@@ -14,19 +14,19 @@
     NSArray *_inputItems;
 }
 
-@property(assign,copy) NSUUID * _UUID;
-@property(setter=_setAuxiliaryConnection:,assign,retain) NSXPCConnection * _auxiliaryConnection;
-@property(setter=_setAuxiliaryListener:,assign,retain) NSXPCListener * _auxiliaryListener;
-@property(getter=_isDummyExtension,setter=_setDummyExtension:,assign,readwrite) bool _dummyExtension;
-@property(setter=_setExtensionHostProxy:,assign,retain) <_NSExtensionContextHosting> * _extensionHostProxy;
-@property(setter=_setExtensionVendorProxy:,assign,retain) <_NSExtensionContextVending> * _extensionVendorProxy;
-@property(setter=_setPrincipalObject:,assign,readwrite) id _principalObject;
-@property(setter=_setRequestCleanUpBlock:,assign,copy) id _requestCleanUpBlock;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * inputItems;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSUUID *_UUID;
+@property (setter=_setAuxiliaryConnection:, nonatomic, retain) NSXPCConnection *_auxiliaryConnection;
+@property (setter=_setAuxiliaryListener:, nonatomic, retain) NSXPCListener *_auxiliaryListener;
+@property (getter=_isDummyExtension, setter=_setDummyExtension:, nonatomic) bool _dummyExtension;
+@property (setter=_setExtensionHostProxy:, nonatomic, retain) <_NSExtensionContextHosting> *_extensionHostProxy;
+@property (setter=_setExtensionVendorProxy:, nonatomic, retain) <_NSExtensionContextVending> *_extensionVendorProxy;
+@property (setter=_setPrincipalObject:, nonatomic) id _principalObject;
+@property (setter=_setRequestCleanUpBlock:, nonatomic, copy) id _requestCleanUpBlock;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *inputItems;
+@property (readonly) Class superclass;
 
 + (id)_extensionAuxiliaryHostProtocol;
 + (id)_extensionAuxiliaryVendorProtocol;

@@ -17,18 +17,18 @@
     NSArray *_uuids;
 }
 
-@property(setter=_setApproximateCount:,assign,readwrite) unsigned long long _approximateCount;
-@property(assign,retain) id albumUUID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUSuggestedSearchDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * displaySubtitle;
-@property(assign,copy) NSString * displayTitle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isEmpty;
-@property(assign,copy) NSString * searchString;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSArray * uuids;
+@property (setter=_setApproximateCount:) unsigned long long _approximateCount;
+@property (retain) id albumUUID;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUSuggestedSearchDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *displaySubtitle;
+@property (copy) NSString *displayTitle;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isEmpty;
+@property (copy) NSString *searchString;
+@property (readonly) Class superclass;
+@property (readonly) NSArray *uuids;
 
 - (void).cxx_destruct;
 - (unsigned long long)_approximateCount;

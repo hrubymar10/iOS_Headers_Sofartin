@@ -43,15 +43,15 @@
     struct CGColor { } *_white;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } box;
-@property(assign,retain) UIPDFDocument * document;
-@property(assign,readwrite) struct CGColor { }* highlightColor;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,readwrite) CALayer * owner;
-@property(assign,readwrite) unsigned long long pageIndex;
-@property(assign,readwrite) unsigned long long pageRotation;
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } transform;
-@property(assign,readwrite) UIPDFPageView * view;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } box;
+@property (retain) UIPDFDocument *document;
+@property struct CGColor { }*highlightColor;
+@property bool isCancelled;
+@property CALayer *owner;
+@property unsigned long long pageIndex;
+@property unsigned long long pageRotation;
+@property (readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } transform;
+@property UIPDFPageView *view;
 
 - (void)addRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 toPath:(struct CGPath { }*)arg2 transform:(struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; }*)arg3 view:(id)arg4 owner:(id)arg5;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })box;

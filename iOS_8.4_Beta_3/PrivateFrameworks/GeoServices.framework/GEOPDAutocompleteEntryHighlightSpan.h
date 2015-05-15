@@ -12,11 +12,11 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,readwrite) bool hasLength;
-@property(assign,readwrite) bool hasStartIndex;
-@property(assign,readwrite) unsigned int length;
-@property(assign,readwrite) unsigned int startIndex;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic) bool hasLength;
+@property (nonatomic) bool hasStartIndex;
+@property (nonatomic) unsigned int length;
+@property (nonatomic) unsigned int startIndex;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

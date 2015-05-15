@@ -11,12 +11,12 @@
     NSString *_statusString;
 }
 
-@property(assign,readonly) double backOff;
-@property(assign,readonly) NSArray * completionResultSets;
-@property(assign,readonly) NSString * errorCodeString;
-@property(assign,readonly) double maxAge;
-@property(assign,readonly) long long status;
-@property(assign,readonly) NSString * statusString;
+@property (nonatomic, readonly) double backOff;
+@property (nonatomic, readonly) NSArray *completionResultSets;
+@property (nonatomic, readonly) NSString *errorCodeString;
+@property (nonatomic, readonly) double maxAge;
+@property (nonatomic, readonly) long long status;
+@property (nonatomic, readonly) NSString *statusString;
 
 - (void).cxx_destruct;
 - (double)backOff;

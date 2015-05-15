@@ -6,9 +6,9 @@
     double _period;
 }
 
-@property(assign,readonly) SKUIImageViewElement * image;
-@property(assign,readonly) double period;
-@property(assign,readonly) SKUILabelViewElement * text;
+@property (nonatomic, readonly) SKUIImageViewElement *image;
+@property (nonatomic, readonly) double period;
+@property (nonatomic, readonly) SKUILabelViewElement *text;
 
 - (id)image;
 - (id)initWithDOMElement:(id)arg1 parent:(id)arg2 elementFactory:(id)arg3;

@@ -11,11 +11,11 @@
     FBWorkspace *_workspace;
 }
 
-@property(assign,retain) FBProcess * process;
-@property(assign,readonly) bool processExited;
-@property(assign,readonly) bool processLaunchFailed;
-@property(assign,retain) NSArray * updateSceneTransactions;
-@property(assign,retain) FBWorkspace * workspace;
+@property (nonatomic, readonly, retain) FBProcess *process;
+@property (nonatomic, readonly) bool processExited;
+@property (nonatomic, readonly) bool processLaunchFailed;
+@property (nonatomic, readonly, retain) NSArray *updateSceneTransactions;
+@property (nonatomic, readonly, retain) FBWorkspace *workspace;
 
 - (void)_childTransactionDidComplete:(id)arg1;
 - (void)_didRemoveChildTransaction:(id)arg1;

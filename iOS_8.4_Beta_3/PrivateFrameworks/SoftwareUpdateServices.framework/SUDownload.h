@@ -8,9 +8,9 @@
     SUOperationProgress *_progress;
 }
 
-@property(assign,retain) SUDescriptor * descriptor;
-@property(assign,retain) SUDownloadMetadata * metadata;
-@property(assign,retain) SUOperationProgress * progress;
+@property (nonatomic, retain) SUDescriptor *descriptor;
+@property (nonatomic, retain) SUDownloadMetadata *metadata;
+@property (nonatomic, retain) SUOperationProgress *progress;
 
 + (bool)supportsSecureCoding;
 

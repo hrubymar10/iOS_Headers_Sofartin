@@ -16,14 +16,14 @@
     NSLock *server_lock;
 }
 
-@property(assign,retain) NSString * cachedCellId;
-@property(assign,retain) NSString * cachedCurrentRadioAccessTechnology;
-@property(assign,retain) NSDictionary * cachedSignalStrength;
-@property(assign,retain) NSString * cellId;
-@property(assign,retain) NSString * currentRadioAccessTechnology;
-@property(assign,readwrite) bool monitoringCellId;
-@property(assign,retain) CTCarrier * subscriberCellularProvider;
-@property(assign,copy) id subscriberCellularProviderDidUpdateNotifier;
+@property (retain) NSString *cachedCellId;
+@property (retain) NSString *cachedCurrentRadioAccessTechnology;
+@property (retain) NSDictionary *cachedSignalStrength;
+@property (nonatomic, retain) NSString *cellId;
+@property (nonatomic, readonly, retain) NSString *currentRadioAccessTechnology;
+@property bool monitoringCellId;
+@property (retain) CTCarrier *subscriberCellularProvider;
+@property (nonatomic, copy) id subscriberCellularProviderDidUpdateNotifier;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

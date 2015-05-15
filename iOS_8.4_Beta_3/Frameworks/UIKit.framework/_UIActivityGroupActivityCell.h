@@ -8,9 +8,9 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIImageView * highlightedImageView;
-@property(assign,retain) UIImageView * imageView;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) UIImageView *highlightedImageView;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 - (void)dealloc;
 - (id)draggingView;

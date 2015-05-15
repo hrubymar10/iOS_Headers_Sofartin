@@ -8,8 +8,8 @@
     unsigned int *_timings;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic) unsigned long long timestamp;
 
 - (unsigned long long)count;
 - (void)dealloc;

@@ -7,10 +7,10 @@
     CKDPDate *_modification;
 }
 
-@property(assign,retain) CKDPDate * creation;
-@property(assign,readonly) bool hasCreation;
-@property(assign,readonly) bool hasModification;
-@property(assign,retain) CKDPDate * modification;
+@property (nonatomic, retain) CKDPDate *creation;
+@property (nonatomic, readonly) bool hasCreation;
+@property (nonatomic, readonly) bool hasModification;
+@property (nonatomic, retain) CKDPDate *modification;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

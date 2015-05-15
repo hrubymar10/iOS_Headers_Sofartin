@@ -4,11 +4,11 @@
 
 @interface PUMapViewControllerSpec : NSObject
 
-@property(assign,readonly) bool alwaysFadeRemoves;
-@property(assign,readonly) struct CGSize { double x1; double x2; } annotationSize;
-@property(assign,readonly) double annotationWidth;
-@property(assign,readonly) double borderAnnotationPadding;
-@property(assign,readonly) int thumbnailImageFormat;
+@property (readonly) bool alwaysFadeRemoves;
+@property (readonly) struct CGSize { double x1; double x2; } annotationSize;
+@property (readonly) double annotationWidth;
+@property (readonly) double borderAnnotationPadding;
+@property (readonly) int thumbnailImageFormat;
 
 - (bool)alwaysFadeRemoves;
 - (struct CGSize { double x1; double x2; })annotationSize;

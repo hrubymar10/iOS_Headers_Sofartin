@@ -25,10 +25,10 @@
     float mZeroValue;
 }
 
-@property(assign,readwrite) float maxZ;
-@property(assign,readwrite) float minZ;
-@property(assign,readwrite) bool stacked;
-@property(assign,readwrite) float zeroValue;
+@property (nonatomic) float maxZ;
+@property (nonatomic) float minZ;
+@property (nonatomic) bool stacked;
+@property (nonatomic) float zeroValue;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

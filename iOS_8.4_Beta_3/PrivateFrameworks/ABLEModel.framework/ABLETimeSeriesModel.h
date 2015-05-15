@@ -8,9 +8,9 @@
     ABLEVectorModel *_vectorModel;
 }
 
-@property(assign,readonly) NSArray * filter;
-@property(assign,readonly) double period;
-@property(assign,readonly) ABLEVectorModel * vectorModel;
+@property (readonly) NSArray *filter;
+@property (readonly) double period;
+@property (readonly) ABLEVectorModel *vectorModel;
 
 + (id)modelWithPeriod:(double)arg1 andFilter:(id)arg2;
 

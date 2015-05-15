@@ -9,7 +9,7 @@
     long long _vfsOnce;
 }
 
-@property(assign,readonly) bool isProtectedDatabaseAttached;
+@property (nonatomic, readonly) bool isProtectedDatabaseAttached;
 
 - (const char *)_vfsModuleName;
 - (int)attachProtectedDatabase;

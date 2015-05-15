@@ -7,8 +7,8 @@
     UIKBThemedView *_themedView;
 }
 
-@property(assign,copy) NSString * arrowDirection;
-@property(assign,retain) UIKBThemedView * themedView;
+@property (nonatomic, copy) NSString *arrowDirection;
+@property (nonatomic, retain) UIKBThemedView *themedView;
 
 + (id)arrowImageName;
 

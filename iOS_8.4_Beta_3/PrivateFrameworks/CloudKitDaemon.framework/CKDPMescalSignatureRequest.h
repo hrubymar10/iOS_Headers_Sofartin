@@ -6,8 +6,8 @@
     NSData *_mescalData;
 }
 
-@property(assign,readonly) bool hasMescalData;
-@property(assign,retain) NSData * mescalData;
+@property (nonatomic, readonly) bool hasMescalData;
+@property (nonatomic, retain) NSData *mescalData;
 
 + (id)options;
 

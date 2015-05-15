@@ -18,14 +18,14 @@
     NSDictionary *_sourcesByTrackID;
 }
 
-@property(assign,readwrite) struct OpaqueFigVideoCompositorFrame { }* compositionFrame;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } compositionTime;
-@property(assign,retain) <AVVideoCompositionInstruction> * instruction;
-@property(assign,readwrite) bool isFinished;
-@property(assign,retain) AVVideoCompositionRenderContext * renderContext;
-@property(assign,retain) AVWeakReference * session;
-@property(assign,retain) NSArray * sourceTrackIDsInClientOrder;
-@property(assign,retain) NSDictionary * sourcesByTrackID;
+@property (nonatomic) struct OpaqueFigVideoCompositorFrame { }*compositionFrame;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } compositionTime;
+@property (nonatomic, retain) <AVVideoCompositionInstruction> *instruction;
+@property (nonatomic) bool isFinished;
+@property (nonatomic, retain) AVVideoCompositionRenderContext *renderContext;
+@property (nonatomic, retain) AVWeakReference *session;
+@property (nonatomic, retain) NSArray *sourceTrackIDsInClientOrder;
+@property (nonatomic, retain) NSDictionary *sourcesByTrackID;
 
 - (struct OpaqueFigVideoCompositorFrame { }*)compositionFrame;
 - (struct { long long x1; int x2; unsigned int x3; long long x4; })compositionTime;

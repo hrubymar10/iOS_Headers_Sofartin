@@ -14,14 +14,14 @@
     } _sizeInPixels;
 }
 
-@property(assign,readonly) float averageFPS;
-@property(assign,readonly) double contentScale;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) struct CGSize { double x1; double x2; } sizeInPixels;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) float averageFPS;
+@property (nonatomic, readonly) double contentScale;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } sizeInPixels;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (double)contentScale;

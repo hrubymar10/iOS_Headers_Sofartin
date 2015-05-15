@@ -12,12 +12,12 @@
     NSString *_syncID;
 }
 
-@property(assign,retain) SYErrorInfo * error;
-@property(assign,readwrite) int errorResolution;
-@property(assign,readonly) bool hasError;
-@property(assign,readwrite) bool hasErrorResolution;
-@property(assign,retain) SYMessageHeader * header;
-@property(assign,retain) NSString * syncID;
+@property (nonatomic, retain) SYErrorInfo *error;
+@property (nonatomic) int errorResolution;
+@property (nonatomic, readonly) bool hasError;
+@property (nonatomic) bool hasErrorResolution;
+@property (nonatomic, retain) SYMessageHeader *header;
+@property (nonatomic, retain) NSString *syncID;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

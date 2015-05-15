@@ -30,15 +30,15 @@
     NSString *_underlyingText;
 }
 
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,copy) NSString * moreButtonTitle;
-@property(assign,readwrite) long long numberOfVisibleLines;
-@property(assign,readwrite) double rating;
-@property(assign,copy) NSString * ratingText;
-@property(assign,copy) NSString * subtitle;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } titleInsets;
-@property(assign,readwrite) long long truncationStyle;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic, copy) NSString *moreButtonTitle;
+@property (nonatomic) long long numberOfVisibleLines;
+@property (nonatomic) double rating;
+@property (nonatomic, copy) NSString *ratingText;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } titleInsets;
+@property (nonatomic) long long truncationStyle;
 
 - (void).cxx_destruct;
 - (id)_moreButtonLabel;

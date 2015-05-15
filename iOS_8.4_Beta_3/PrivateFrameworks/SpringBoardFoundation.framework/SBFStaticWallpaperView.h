@@ -10,7 +10,7 @@
     bool _sampleAndDiplayedImageAreSame;
 }
 
-@property(assign,retain) SBFColorBoxes * colorBoxes;
+@property (nonatomic, retain) SBFColorBoxes *colorBoxes;
 
 + (bool)_allowsParallax;
 + (bool)_allowsRasterization;

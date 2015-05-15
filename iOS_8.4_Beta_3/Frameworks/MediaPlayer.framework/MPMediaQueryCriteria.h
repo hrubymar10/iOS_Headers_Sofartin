@@ -16,18 +16,18 @@
     bool _useSections;
 }
 
-@property(assign,copy) NSSet * collectionPropertiesToFetch;
-@property(assign,readwrite) unsigned long long entityLimit;
-@property(assign,readwrite) unsigned long long entityOrder;
-@property(assign,readonly) bool excludesEntitiesWithBlankNames;
-@property(assign,copy) NSSet * filterPredicates;
-@property(assign,readwrite) long long groupingType;
-@property(assign,readwrite) bool ignoreSystemFilterPredicates;
-@property(assign,readwrite) bool includeNonLibraryEntities;
-@property(assign,copy) NSSet * itemPropertiesToFetch;
-@property(assign,copy) NSDictionary * orderingDirectionMappings;
-@property(assign,copy) NSArray * orderingProperties;
-@property(assign,readonly) bool specifiesPlaylistItems;
+@property (nonatomic, copy) NSSet *collectionPropertiesToFetch;
+@property (nonatomic) unsigned long long entityLimit;
+@property (nonatomic) unsigned long long entityOrder;
+@property (nonatomic, readonly) bool excludesEntitiesWithBlankNames;
+@property (nonatomic, copy) NSSet *filterPredicates;
+@property (nonatomic) long long groupingType;
+@property (nonatomic) bool ignoreSystemFilterPredicates;
+@property (nonatomic) bool includeNonLibraryEntities;
+@property (nonatomic, copy) NSSet *itemPropertiesToFetch;
+@property (nonatomic, copy) NSDictionary *orderingDirectionMappings;
+@property (nonatomic, copy) NSArray *orderingProperties;
+@property (nonatomic, readonly) bool specifiesPlaylistItems;
 
 - (void).cxx_destruct;
 - (id)ML3CollectionsQueryInLibrary:(id)arg1;

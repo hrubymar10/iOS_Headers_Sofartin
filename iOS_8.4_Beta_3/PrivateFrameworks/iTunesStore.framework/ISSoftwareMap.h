@@ -6,7 +6,7 @@
     NSArray *_applications;
 }
 
-@property(assign,readonly) NSArray * applications;
+@property (nonatomic, readonly) NSArray *applications;
 
 + (id)_newSoftwareUpdateDictionaryForApplication:(id)arg1;
 + (void)_startWatchingInstallationNotifications;

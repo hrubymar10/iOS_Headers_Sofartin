@@ -8,8 +8,8 @@
     <MFDAStreamingContentConsumer> *_streamConsumer;
 }
 
-@property(assign,retain) MFError * error;
-@property(assign,retain) <MFDAStreamingContentConsumer> * streamConsumer;
+@property (nonatomic, retain) MFError *error;
+@property (nonatomic, retain) <MFDAStreamingContentConsumer> *streamConsumer;
 
 - (void)actionFailed:(long long)arg1 forTask:(id)arg2 error:(id)arg3;
 - (void)consumeData:(char *)arg1 length:(int)arg2 format:(int)arg3 mailMessage:(id)arg4;

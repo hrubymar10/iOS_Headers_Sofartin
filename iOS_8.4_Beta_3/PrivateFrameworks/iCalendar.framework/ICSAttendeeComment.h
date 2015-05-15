@@ -4,8 +4,8 @@
 
 @interface ICSAttendeeComment : ICSProperty
 
-@property(assign,retain) NSString * x_calendarserver_attendee_ref;
-@property(assign,retain) ICSDateValue * x_calendarserver_dtstamp;
+@property (nonatomic, retain) NSString *x_calendarserver_attendee_ref;
+@property (nonatomic, retain) ICSDateValue *x_calendarserver_dtstamp;
 
 - (id)initWithComment:(id)arg1;
 - (id)parametersToObscure;

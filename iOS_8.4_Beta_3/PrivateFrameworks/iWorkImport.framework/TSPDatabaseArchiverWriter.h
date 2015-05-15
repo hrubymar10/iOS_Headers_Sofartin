@@ -13,12 +13,12 @@
     bool _hasFileState;
 }
 
-@property(assign,readwrite) long long dataStateIdentifier;
-@property(assign,retain) NSString * fileStateIdentifier;
-@property(assign,retain) NSString * filenameHint;
-@property(assign,readwrite) bool forceFileStorage;
-@property(assign,readonly) bool hasDataState;
-@property(assign,readonly) bool hasFileState;
+@property (nonatomic) long long dataStateIdentifier;
+@property (nonatomic, retain) NSString *fileStateIdentifier;
+@property (nonatomic, retain) NSString *filenameHint;
+@property (nonatomic) bool forceFileStorage;
+@property (nonatomic, readonly) bool hasDataState;
+@property (nonatomic, readonly) bool hasFileState;
 
 - (void).cxx_destruct;
 - (struct sqlite3_blob { }*)_openDatabaseBlobWithSize:(int)arg1;

@@ -8,9 +8,9 @@
     NSMutableDictionary *_propertyValues;
 }
 
-@property(assign,readwrite) long long databaseID;
-@property(assign,copy) NSDictionary * externalPropertyValues;
-@property(assign,copy) NSDictionary * propertyValues;
+@property (nonatomic) long long databaseID;
+@property (nonatomic, readonly, copy) NSDictionary *externalPropertyValues;
+@property (nonatomic, readonly, copy) NSDictionary *propertyValues;
 
 + (id)anyInDatabase:(id)arg1 predicate:(id)arg2;
 + (Class)databaseEntityClass;

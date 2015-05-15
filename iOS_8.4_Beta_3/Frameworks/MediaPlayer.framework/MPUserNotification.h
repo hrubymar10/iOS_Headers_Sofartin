@@ -13,8 +13,8 @@
     id strongSelf;
 }
 
-@property(assign,readonly) struct __CFUserNotification { }* cfUserNotification;
-@property(assign,copy) id willShowNotificationHandler;
+@property (nonatomic, readonly) struct __CFUserNotification { }*cfUserNotification;
+@property (nonatomic, copy) id willShowNotificationHandler;
 
 + (void)_setUserNotification:(id)arg1 forCFUserNotification:(struct __CFUserNotification { }*)arg2;
 + (id)_userNotificationConversionAccessQueue;

@@ -9,10 +9,10 @@
     bool _isMissingData;
 }
 
-@property(assign,readonly) bool didCopyDataToPackage;
-@property(assign,readonly) <TSPCryptoInfo> * encryptionInfo;
-@property(assign,readonly) NSString * filename;
-@property(assign,readonly) bool isMissingData;
+@property (nonatomic, readonly) bool didCopyDataToPackage;
+@property (nonatomic, readonly) <TSPCryptoInfo> *encryptionInfo;
+@property (nonatomic, readonly) NSString *filename;
+@property (nonatomic, readonly) bool isMissingData;
 
 - (void).cxx_destruct;
 - (bool)didCopyDataToPackage;

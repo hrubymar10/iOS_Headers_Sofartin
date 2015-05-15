@@ -7,7 +7,7 @@
     SUMescalSession *_session;
 }
 
-@property(assign,readonly) SUMescalSession * mescalSession;
+@property (readonly) SUMescalSession *mescalSession;
 
 - (bool)_isMescalEnabled;
 - (id)_setupSAPCertificate:(id*)arg1;

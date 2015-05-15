@@ -7,8 +7,8 @@
     PUSearchViewController *_searchViewController;
 }
 
-@property(assign,retain) PUPhotosGridViewController * searchResultsViewController;
-@property(assign,retain) PUSearchViewController * searchViewController;
+@property (nonatomic, retain) PUPhotosGridViewController *searchResultsViewController;
+@property (nonatomic, retain) PUSearchViewController *searchViewController;
 
 - (void).cxx_destruct;
 - (void)animateDismissTransition;

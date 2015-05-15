@@ -13,25 +13,25 @@
     double _splitHeightDelta;
 }
 
-@property(assign,readonly) bool _inputViewIsSplit;
-@property(assign,retain) UIInputViewController * accessoryViewController;
-@property(getter=isEmpty,assign,readonly) bool empty;
-@property(assign,retain) UIView * inputAccessoryView;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } inputAccessoryViewBounds;
-@property(assign,retain) UIView * inputView;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } inputViewBounds;
-@property(assign,retain) UIInputViewController * inputViewController;
-@property(assign,readonly) bool inputViewKeyboardCanSplit;
-@property(assign,readonly) bool isInputAccessoryViewPlaceholder;
-@property(assign,readonly) bool isInputViewPlaceholder;
-@property(assign,readonly) bool isSplit;
-@property(assign,readonly) UIKeyboard * keyboard;
-@property(assign,readonly) UIView * layeringView;
-@property(assign,readwrite) UIResponder * restorableResponder;
-@property(assign,readwrite) bool restoreUsingBecomeFirstResponder;
-@property(assign,readonly) UIView * splitExemptSubview;
-@property(assign,readwrite) double splitHeightDelta;
-@property(assign,readonly) bool supportsSplit;
+@property (nonatomic, readonly) bool _inputViewIsSplit;
+@property (nonatomic, retain) UIInputViewController *accessoryViewController;
+@property (getter=isEmpty, nonatomic, readonly) bool empty;
+@property (nonatomic, retain) UIView *inputAccessoryView;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } inputAccessoryViewBounds;
+@property (nonatomic, retain) UIView *inputView;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } inputViewBounds;
+@property (nonatomic, retain) UIInputViewController *inputViewController;
+@property (nonatomic, readonly) bool inputViewKeyboardCanSplit;
+@property (nonatomic, readonly) bool isInputAccessoryViewPlaceholder;
+@property (nonatomic, readonly) bool isInputViewPlaceholder;
+@property (nonatomic, readonly) bool isSplit;
+@property (nonatomic, readonly) UIKeyboard *keyboard;
+@property (nonatomic, readonly) UIView *layeringView;
+@property (nonatomic) UIResponder *restorableResponder;
+@property (nonatomic) bool restoreUsingBecomeFirstResponder;
+@property (nonatomic, readonly) UIView *splitExemptSubview;
+@property (nonatomic) double splitHeightDelta;
+@property (nonatomic, readonly) bool supportsSplit;
 
 + (id)emptyInputSet;
 + (id)inputSetWithInputView:(id)arg1 accessoryView:(id)arg2;

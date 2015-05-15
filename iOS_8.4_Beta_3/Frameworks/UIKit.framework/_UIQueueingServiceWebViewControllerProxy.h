@@ -8,8 +8,8 @@
     id _serviceViewControllerProxy;
 }
 
-@property(assign,readwrite) <_UIQueueingServiceWebViewControllerProxyDelegate> * delegate;
-@property(assign,retain) id serviceViewControllerProxy;
+@property (nonatomic) <_UIQueueingServiceWebViewControllerProxyDelegate> *delegate;
+@property (nonatomic, retain) id serviceViewControllerProxy;
 
 - (void)dealloc;
 - (id)delegate;

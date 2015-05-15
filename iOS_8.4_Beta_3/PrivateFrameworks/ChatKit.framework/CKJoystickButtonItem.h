@@ -13,14 +13,14 @@
     UIView *_view;
 }
 
-@property(assign,readwrite) SEL action;
-@property(assign,retain) UIView<CKJoystickButton> * button;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) SEL tapAction;
-@property(assign,readwrite) id target;
-@property(assign,copy) NSString * title;
-@property(assign,retain) UIView * view;
+@property (nonatomic) SEL action;
+@property (nonatomic, retain) UIView<CKJoystickButton> *button;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) SEL tapAction;
+@property (nonatomic) id target;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, retain) UIView *view;
 
 - (SEL)action;
 - (id)button;

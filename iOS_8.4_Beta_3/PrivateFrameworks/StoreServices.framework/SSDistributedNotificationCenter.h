@@ -9,7 +9,7 @@
     SSXPCServer *_server;
 }
 
-@property(assign,readonly) NSString * namedPort;
+@property (readonly) NSString *namedPort;
 
 - (void)_distributedNotificationMessage:(id)arg1 connection:(id)arg2;
 - (void)_sendRegistrationMessage:(long long)arg1 name:(id)arg2;

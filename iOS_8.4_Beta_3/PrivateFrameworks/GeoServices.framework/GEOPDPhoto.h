@@ -7,9 +7,9 @@
     NSMutableArray *_photoVersions;
 }
 
-@property(assign,readonly) bool hasPhotoId;
-@property(assign,retain) NSString * photoId;
-@property(assign,retain) NSMutableArray * photoVersions;
+@property (nonatomic, readonly) bool hasPhotoId;
+@property (nonatomic, retain) NSString *photoId;
+@property (nonatomic, retain) NSMutableArray *photoVersions;
 
 - (void)addPhotoVersion:(id)arg1;
 - (void)clearPhotoVersions;

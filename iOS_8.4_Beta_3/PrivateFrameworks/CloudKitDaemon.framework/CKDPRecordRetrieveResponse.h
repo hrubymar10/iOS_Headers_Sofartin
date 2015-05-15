@@ -10,10 +10,10 @@
     CKDPRecord *_record;
 }
 
-@property(assign,readwrite) bool clientVersionETagMatch;
-@property(assign,readwrite) bool hasClientVersionETagMatch;
-@property(assign,readonly) bool hasRecord;
-@property(assign,retain) CKDPRecord * record;
+@property (nonatomic) bool clientVersionETagMatch;
+@property (nonatomic) bool hasClientVersionETagMatch;
+@property (nonatomic, readonly) bool hasRecord;
+@property (nonatomic, retain) CKDPRecord *record;
 
 - (void).cxx_destruct;
 - (bool)clientVersionETagMatch;

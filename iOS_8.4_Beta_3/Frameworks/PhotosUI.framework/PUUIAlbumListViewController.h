@@ -7,7 +7,7 @@
     UIBarButtonItem *_imagePickerCancelButton;
 }
 
-@property(setter=_setImagePickerMediaTypes:,assign,copy) NSArray * _imagePickerMediaTypes;
+@property (setter=_setImagePickerMediaTypes:, nonatomic, copy) NSArray *_imagePickerMediaTypes;
 
 - (void).cxx_destruct;
 - (int)_defaultAlbumListFilter;

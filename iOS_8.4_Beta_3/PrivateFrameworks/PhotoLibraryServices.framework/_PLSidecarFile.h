@@ -4,16 +4,16 @@
 
 @interface _PLSidecarFile : PLManagedObject
 
-@property(assign,retain) PLManagedAsset * asset;
-@property(assign,retain) NSDate * captureDate;
-@property(assign,retain) NSNumber * compressedSize;
-@property(assign,readwrite) int compressedSizeValue;
-@property(assign,retain) NSString * filename;
-@property(assign,retain) NSNumber * index;
-@property(assign,readwrite) short indexValue;
-@property(assign,retain) NSDate * modificationDate;
-@property(assign,retain) NSString * originalFilename;
-@property(assign,retain) NSString * uniformTypeIdentifier;
+@property (nonatomic, retain) PLManagedAsset *asset;
+@property (nonatomic, retain) NSDate *captureDate;
+@property (nonatomic, retain) NSNumber *compressedSize;
+@property int compressedSizeValue;
+@property (nonatomic, retain) NSString *filename;
+@property (nonatomic, retain) NSNumber *index;
+@property short indexValue;
+@property (nonatomic, retain) NSDate *modificationDate;
+@property (nonatomic, retain) NSString *originalFilename;
+@property (nonatomic, retain) NSString *uniformTypeIdentifier;
 
 + (id)entityInManagedObjectContext:(id)arg1;
 + (id)entityName;

@@ -6,10 +6,10 @@
     CalPreferences *_preferences;
 }
 
-@property(assign,readonly) bool logAutoFlush;
-@property(assign,readonly) bool logEmitUserNotifications;
-@property(assign,readonly) NSString * logFilePath;
-@property(assign,readonly) NSArray * logSimpleConfiguration;
+@property (nonatomic, readonly) bool logAutoFlush;
+@property (nonatomic, readonly) bool logEmitUserNotifications;
+@property (nonatomic, readonly) NSString *logFilePath;
+@property (nonatomic, readonly) NSArray *logSimpleConfiguration;
 
 + (id)shared;
 

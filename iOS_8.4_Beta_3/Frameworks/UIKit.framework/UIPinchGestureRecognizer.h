@@ -27,11 +27,11 @@
     double _velocity;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } anchorPoint;
-@property(getter=_hysteresis,setter=_setHysteresis:,assign,readwrite) double hysteresis;
-@property(assign,readwrite) double scale;
-@property(assign,readwrite) double scaleThreshold;
-@property(assign,readonly) double velocity;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } anchorPoint;
+@property (getter=_hysteresis, setter=_setHysteresis:, nonatomic) double hysteresis;
+@property (nonatomic) double scale;
+@property (nonatomic) double scaleThreshold;
+@property (nonatomic, readonly) double velocity;
 
 - (bool)_endsOnSingleTouch;
 - (double)_hysteresis;

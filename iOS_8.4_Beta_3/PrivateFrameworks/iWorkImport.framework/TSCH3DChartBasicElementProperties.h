@@ -18,7 +18,7 @@
     } mSize;
 }
 
-@property(assign,readonly) struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; } size;
+@property (nonatomic, readonly) struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; } size;
 
 - (id).cxx_construct;
 - (struct GeometryResource { int x1; struct ObjcSharedPtr<TSCH3DResource> { id x_2_1_1; } x2; struct GeometryArrays { unsigned int x_3_1_1; unsigned int x_3_1_2; unsigned int x_3_1_3; unsigned int x_3_1_4; } x3; struct ObjcSharedPtr<TSCH3DGeometry> { id x_4_1_1; } x4; })boundsGeometryForSeries:(id)arg1 index:(const struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; }*)arg2;

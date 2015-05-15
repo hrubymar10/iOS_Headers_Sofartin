@@ -25,14 +25,14 @@
     } swSize;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } hwCenter;
-@property(assign,readwrite) int hwFaceId;
-@property(assign,readwrite) int hwLastFrameSeen;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } hwSize;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } swCenter;
-@property(assign,readwrite) int swFaceId;
-@property(assign,readwrite) int swLastFrameSeen;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } swSize;
+@property struct CGPoint { double x1; double x2; } hwCenter;
+@property int hwFaceId;
+@property int hwLastFrameSeen;
+@property struct CGSize { double x1; double x2; } hwSize;
+@property struct CGPoint { double x1; double x2; } swCenter;
+@property int swFaceId;
+@property int swLastFrameSeen;
+@property struct CGSize { double x1; double x2; } swSize;
 
 - (struct CGPoint { double x1; double x2; })hwCenter;
 - (int)hwFaceId;

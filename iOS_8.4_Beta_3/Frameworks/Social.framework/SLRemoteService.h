@@ -24,24 +24,24 @@
     NSSet *_supportedVideoAssetURLSchemes;
 }
 
-@property(assign,retain) NSString * accountTypeIdentifier;
-@property(assign,retain) NSString * activityImageName;
-@property(assign,retain) NSString * activityViewIconResourceName;
-@property(assign,readwrite) bool addDeviceClassToRequest;
-@property(assign,readwrite) long long authenticationStyle;
-@property(assign,retain) NSString * localizedServiceName;
-@property(assign,readwrite) long long maximumImageCount;
-@property(assign,readwrite) long long maximumImageDataSize;
-@property(assign,readwrite) long long maximumURLCount;
-@property(assign,readwrite) long long maximumVideoCount;
-@property(assign,readwrite) long long maximumVideoDataSize;
-@property(assign,readwrite) long long maximumVideoTimeLimit;
-@property(assign,readonly) NSBundle * serviceBundle;
-@property(assign,retain) NSURL * serviceBundleURL;
-@property(assign,readwrite) bool serviceRegionTargetIsChina;
-@property(assign,retain) NSString * serviceTypeIdentifier;
-@property(assign,retain) NSSet * supportedImageAssetURLSchemes;
-@property(assign,retain) NSSet * supportedVideoAssetURLSchemes;
+@property (retain) NSString *accountTypeIdentifier;
+@property (retain) NSString *activityImageName;
+@property (retain) NSString *activityViewIconResourceName;
+@property bool addDeviceClassToRequest;
+@property long long authenticationStyle;
+@property (retain) NSString *localizedServiceName;
+@property long long maximumImageCount;
+@property long long maximumImageDataSize;
+@property long long maximumURLCount;
+@property (nonatomic) long long maximumVideoCount;
+@property long long maximumVideoDataSize;
+@property long long maximumVideoTimeLimit;
+@property (readonly) NSBundle *serviceBundle;
+@property (retain) NSURL *serviceBundleURL;
+@property bool serviceRegionTargetIsChina;
+@property (retain) NSString *serviceTypeIdentifier;
+@property (retain) NSSet *supportedImageAssetURLSchemes;
+@property (retain) NSSet *supportedVideoAssetURLSchemes;
 
 + (id)_cachedServiceWithType:(id)arg1;
 + (id)_cachedServices;

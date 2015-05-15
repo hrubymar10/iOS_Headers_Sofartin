@@ -6,7 +6,7 @@
     UITextInputController *_inputController;
 }
 
-@property(assign,readwrite) UITextInputController * inputController;
+@property (nonatomic) UITextInputController *inputController;
 
 - (id)inputController;
 - (void)removeAllActions;

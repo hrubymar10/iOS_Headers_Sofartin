@@ -8,9 +8,9 @@
     bool _modal;
 }
 
-@property(assign,copy) NSDictionary * context;
-@property(assign,readwrite) double maximumHeight;
-@property(getter=isModal,assign,readwrite) bool modal;
+@property (nonatomic, copy) NSDictionary *context;
+@property (nonatomic) double maximumHeight;
+@property (getter=isModal, nonatomic) bool modal;
 
 + (id)_exportedInterface;
 + (id)_remoteViewControllerInterface;

@@ -17,19 +17,19 @@
     double _timeoutInterval;
 }
 
-@property(assign,readwrite) <CoreDAVAccountInfoProvider> * accountInfoProvider;
-@property(assign,copy) id completionBlock;
-@property(assign,retain) id context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CoreDAVTaskGroupDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSMutableSet * outstandingTasks;
-@property(assign,copy) id progressBlock;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <CoreDAVTaskManager> * taskManager;
-@property(assign,readwrite) double timeoutInterval;
+@property (nonatomic) <CoreDAVAccountInfoProvider> *accountInfoProvider;
+@property (nonatomic, copy) id completionBlock;
+@property (nonatomic, retain) id context;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CoreDAVTaskGroupDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSMutableSet *outstandingTasks;
+@property (nonatomic, copy) id progressBlock;
+@property (readonly) Class superclass;
+@property (nonatomic) <CoreDAVTaskManager> *taskManager;
+@property (nonatomic) double timeoutInterval;
 
 - (void)_tearDownAllTasks;
 - (id)accountInfoProvider;

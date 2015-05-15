@@ -9,10 +9,10 @@
     unsigned long long _requestedTTL;
 }
 
-@property(assign,readwrite) unsigned long long URLOptions;
-@property(assign,retain) NSDictionary * fileNamesByAssetFieldNames;
-@property(assign,retain) NSArray * recordIDs;
-@property(assign,readwrite) unsigned long long requestedTTL;
+@property (nonatomic) unsigned long long URLOptions;
+@property (nonatomic, retain) NSDictionary *fileNamesByAssetFieldNames;
+@property (nonatomic, retain) NSArray *recordIDs;
+@property (nonatomic) unsigned long long requestedTTL;
 
 + (bool)supportsSecureCoding;
 

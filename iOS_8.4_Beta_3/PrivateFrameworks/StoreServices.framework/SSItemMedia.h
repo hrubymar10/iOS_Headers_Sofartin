@@ -11,12 +11,12 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) long long durationInMilliseconds;
-@property(assign,readonly) long long fullDurationInMilliseconds;
-@property(assign,readonly) long long mediaFileSize;
-@property(assign,copy) NSString * mediaKind;
-@property(getter=isProtectedMedia,assign,readonly) bool protectedMedia;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) long long durationInMilliseconds;
+@property (nonatomic, readonly) long long fullDurationInMilliseconds;
+@property (nonatomic, readonly) long long mediaFileSize;
+@property (nonatomic, copy) NSString *mediaKind;
+@property (getter=isProtectedMedia, nonatomic, readonly) bool protectedMedia;
 
 - (id)URL;
 - (void)dealloc;

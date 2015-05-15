@@ -6,7 +6,7 @@
     CHPointFIFO *_nextFIFO;
 }
 
-@property(assign,retain) CHPointFIFO * nextFIFO;
+@property (nonatomic, retain) CHPointFIFO *nextFIFO;
 
 - (void)addPoint:(struct CGPoint { double x1; double x2; })arg1;
 - (void)clear;

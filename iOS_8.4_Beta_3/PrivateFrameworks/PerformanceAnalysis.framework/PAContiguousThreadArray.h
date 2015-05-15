@@ -8,8 +8,8 @@
     NSMutableArray *_threads;
 }
 
-@property(assign,readonly) unsigned long long dispatchQueueId;
-@property(assign,readonly) unsigned long long threadId;
+@property (readonly) unsigned long long dispatchQueueId;
+@property (readonly) unsigned long long threadId;
 
 - (void)addSampleThread:(id)arg1;
 - (unsigned long long)count;

@@ -12,13 +12,13 @@
     NSArray *_removableConstraints;
 }
 
-@property(assign,retain) UILabel * commentLabel;
-@property(assign,readwrite) double leftInset;
-@property(assign,retain) NSLayoutConstraint * minimumHeightConstraint;
-@property(assign,retain) NSLayoutConstraint * nameBaselineToTopConstraint;
-@property(assign,retain) UILabel * nameLabel;
-@property(assign,retain) NSArray * persistentConstraints;
-@property(assign,retain) NSArray * removableConstraints;
+@property (nonatomic, retain) UILabel *commentLabel;
+@property (nonatomic) double leftInset;
+@property (nonatomic, retain) NSLayoutConstraint *minimumHeightConstraint;
+@property (nonatomic, retain) NSLayoutConstraint *nameBaselineToTopConstraint;
+@property (nonatomic, retain) UILabel *nameLabel;
+@property (nonatomic, retain) NSArray *persistentConstraints;
+@property (nonatomic, retain) NSArray *removableConstraints;
 
 + (id)_commentLabelFont;
 + (id)_nameLabelFont;

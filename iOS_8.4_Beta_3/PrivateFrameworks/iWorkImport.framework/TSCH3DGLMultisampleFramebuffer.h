@@ -7,8 +7,8 @@
     TSCH3DGLFramebufferMultisample *mMultisample;
 }
 
-@property(assign,readwrite) bool disableDestroyAssertion;
-@property(assign,readonly) struct FramebufferAttributes { int x1; long long x2; int x3; int x4; int x5; bool x6; bool x7; } resolveAttributes;
+@property (nonatomic) bool disableDestroyAssertion;
+@property (nonatomic, readonly) struct FramebufferAttributes { int x1; long long x2; int x3; int x4; int x5; bool x6; bool x7; } resolveAttributes;
 
 + (id)multisampleFramebufferWithFramebufferAttributes:(const struct FramebufferAttributes { int x1; long long x2; int x3; int x4; int x5; bool x6; bool x7; }*)arg1;
 + (struct FramebufferAttributes { int x1; long long x2; int x3; int x4; int x5; bool x6; bool x7; })resolveAttributesFromFramebufferAttribute:(const struct FramebufferAttributes { int x1; long long x2; int x3; int x4; int x5; bool x6; bool x7; }*)arg1;

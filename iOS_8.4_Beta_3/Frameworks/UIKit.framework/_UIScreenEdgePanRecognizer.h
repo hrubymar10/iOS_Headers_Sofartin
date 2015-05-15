@@ -40,20 +40,20 @@
     bool _useGrapeFlags;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } _lastTouchLocation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <_UIScreenEdgePanRecognizerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long recognizedRegion;
-@property(assign,readwrite) bool requiresFlatThumb;
-@property(getter=isRequiringLongPress,assign,readonly) bool requiringLongPress;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } screenBounds;
-@property(assign,retain) _UIScreenEdgePanRecognizerSettings * settings;
-@property(assign,readwrite) bool shouldUseGrapeFlags;
-@property(assign,readonly) long long state;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long targetEdges;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } _lastTouchLocation;
+@property (readonly, copy) NSString *debugDescription;
+@property <_UIScreenEdgePanRecognizerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long recognizedRegion;
+@property (nonatomic) bool requiresFlatThumb;
+@property (getter=isRequiringLongPress, nonatomic, readonly) bool requiringLongPress;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } screenBounds;
+@property (nonatomic, retain) _UIScreenEdgePanRecognizerSettings *settings;
+@property (nonatomic) bool shouldUseGrapeFlags;
+@property (nonatomic, readonly) long long state;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned long long targetEdges;
 
 + (bool)_edgeSwipeNavigationGestureEnabled;
 

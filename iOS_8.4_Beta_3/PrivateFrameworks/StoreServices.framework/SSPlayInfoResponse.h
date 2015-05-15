@@ -7,12 +7,12 @@
     NSData *_playInfoData;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSData * playInfoData;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSData *playInfoData;
+@property (readonly) Class superclass;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)copyXPCEncoding;

@@ -24,13 +24,13 @@
     bool _scrolledToNewest;
 }
 
-@property(assign,copy) NSArray * centerAssetFrames;
-@property(assign,copy) NSArray * centerAssetUUIDs;
-@property(assign,copy) NSURL * centerSectionEntryURIRepresentation;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } centerSectionFrame;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } collectionViewSize;
-@property(assign,copy) NSDate * date;
-@property(assign,readwrite) bool scrolledToNewest;
+@property (nonatomic, copy) NSArray *centerAssetFrames;
+@property (nonatomic, copy) NSArray *centerAssetUUIDs;
+@property (nonatomic, copy) NSURL *centerSectionEntryURIRepresentation;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } centerSectionFrame;
+@property (nonatomic) struct CGSize { double x1; double x2; } collectionViewSize;
+@property (nonatomic, copy) NSDate *date;
+@property (nonatomic) bool scrolledToNewest;
 
 - (void).cxx_destruct;
 - (id)centerAssetFrames;

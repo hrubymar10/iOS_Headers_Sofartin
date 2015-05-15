@@ -12,13 +12,13 @@
     unsigned long long _virtualSize;
 }
 
-@property(assign,readonly) unsigned long long dirtySize;
-@property(assign,readonly) NSString * memoryPool;
-@property(assign,readonly) bool pageoffRequired;
-@property(assign,readonly) bool purgeable;
-@property(assign,readonly) unsigned long long residentSize;
-@property(assign,readonly) unsigned long long uniqueIdentifier;
-@property(assign,readonly) unsigned long long virtualSize;
+@property (readonly) unsigned long long dirtySize;
+@property (readonly) NSString *memoryPool;
+@property (readonly) bool pageoffRequired;
+@property (readonly) bool purgeable;
+@property (readonly) unsigned long long residentSize;
+@property (readonly) unsigned long long uniqueIdentifier;
+@property (readonly) unsigned long long virtualSize;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (unsigned long long)dirtySize;

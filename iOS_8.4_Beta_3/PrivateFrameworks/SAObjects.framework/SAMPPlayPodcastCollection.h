@@ -4,8 +4,8 @@
 
 @interface SAMPPlayPodcastCollection : SADomainCommand
 
-@property(assign,copy) NSString * episodePlaybackOrder;
-@property(assign,retain) SAMPPodcastCollection * podcastCollection;
+@property (nonatomic, copy) NSString *episodePlaybackOrder;
+@property (nonatomic, retain) SAMPPodcastCollection *podcastCollection;
 
 + (id)playPodcastCollection;
 + (id)playPodcastCollectionWithDictionary:(id)arg1 context:(id)arg2;

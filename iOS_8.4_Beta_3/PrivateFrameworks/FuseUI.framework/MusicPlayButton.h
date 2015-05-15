@@ -6,7 +6,7 @@
     bool _useLargeImage;
 }
 
-@property(assign,readwrite) bool useLargeImage;
+@property (nonatomic) bool useLargeImage;
 
 - (id)cancelImage;
 - (id)playImage;

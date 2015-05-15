@@ -20,14 +20,14 @@
     double _webKitProgressValue;
 }
 
-@property(assign,readwrite) long long fluidProgressAnimationPhase;
-@property(assign,readwrite) long long fluidProgressType;
-@property(assign,readwrite) bool hasCanceledLoad;
-@property(assign,readwrite) bool hasCommittedLoad;
-@property(assign,readwrite) bool hasCompletedLoad;
-@property(assign,retain) NSString * loadURL;
-@property(assign,readwrite) double minProgressPosition;
-@property(assign,readwrite) bool shouldAnimateUsingInitialPosition;
+@property long long fluidProgressAnimationPhase;
+@property long long fluidProgressType;
+@property bool hasCanceledLoad;
+@property bool hasCommittedLoad;
+@property bool hasCompletedLoad;
+@property (retain) NSString *loadURL;
+@property double minProgressPosition;
+@property bool shouldAnimateUsingInitialPosition;
 
 + (double)_estimatedLoadTimeRemainingFromProgressValue:(double)arg1;
 

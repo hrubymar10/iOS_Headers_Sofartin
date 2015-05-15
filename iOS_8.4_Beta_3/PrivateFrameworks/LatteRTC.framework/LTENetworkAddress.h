@@ -9,10 +9,10 @@
     unsigned short _port;
 }
 
-@property(assign,copy) NSString * interfaceName;
-@property(assign,copy) NSString * ip;
-@property(assign,readwrite) bool isIPv6;
-@property(assign,readwrite) unsigned short port;
+@property (nonatomic, copy) NSString *interfaceName;
+@property (nonatomic, copy) NSString *ip;
+@property (nonatomic) bool isIPv6;
+@property (nonatomic) unsigned short port;
 
 - (void)dealloc;
 - (id)init;

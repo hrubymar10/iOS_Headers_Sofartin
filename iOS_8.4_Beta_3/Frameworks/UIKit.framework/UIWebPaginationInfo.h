@@ -13,9 +13,9 @@
     UIWebDocumentView *_webDocumentView;
 }
 
-@property(assign,readonly) double lastPageHeight;
-@property(assign,readonly) unsigned long long pageCount;
-@property(assign,retain) UIWebDocumentView * webDocumentView;
+@property (nonatomic, readonly) double lastPageHeight;
+@property (nonatomic, readonly) unsigned long long pageCount;
+@property (nonatomic, retain) UIWebDocumentView *webDocumentView;
 
 - (void)dealloc;
 - (id)documentView;

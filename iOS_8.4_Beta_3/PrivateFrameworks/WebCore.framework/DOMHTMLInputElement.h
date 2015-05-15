@@ -4,32 +4,32 @@
 
 @interface DOMHTMLInputElement : DOMHTMLElement
 
-@property(assign,copy) NSURL * absoluteImageURL;
-@property(assign,copy) NSString * accept;
-@property(assign,copy) NSString * accessKey;
-@property(assign,copy) NSString * align;
-@property(assign,copy) NSString * alt;
-@property(assign,copy) NSString * altDisplayString;
-@property(assign,readwrite) bool autofocus;
-@property(assign,readwrite) bool checked;
-@property(assign,readwrite) bool defaultChecked;
-@property(assign,copy) NSString * defaultValue;
-@property(assign,readwrite) bool disabled;
-@property(assign,retain) DOMFileList * files;
-@property(assign,readonly) DOMHTMLFormElement * form;
-@property(assign,readwrite) bool indeterminate;
-@property(assign,readwrite) int maxLength;
-@property(assign,readwrite) bool multiple;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) bool readOnly;
-@property(assign,readwrite) int selectionEnd;
-@property(assign,readwrite) int selectionStart;
-@property(assign,copy) NSString * size;
-@property(assign,copy) NSString * src;
-@property(assign,copy) NSString * type;
-@property(assign,copy) NSString * useMap;
-@property(assign,copy) NSString * value;
-@property(assign,readonly) bool willValidate;
+@property (readonly, copy) NSURL *absoluteImageURL;
+@property (copy) NSString *accept;
+@property (copy) NSString *accessKey;
+@property (copy) NSString *align;
+@property (copy) NSString *alt;
+@property (readonly, copy) NSString *altDisplayString;
+@property bool autofocus;
+@property bool checked;
+@property bool defaultChecked;
+@property (copy) NSString *defaultValue;
+@property bool disabled;
+@property (retain) DOMFileList *files;
+@property (readonly) DOMHTMLFormElement *form;
+@property bool indeterminate;
+@property int maxLength;
+@property bool multiple;
+@property (copy) NSString *name;
+@property bool readOnly;
+@property int selectionEnd;
+@property int selectionStart;
+@property (copy) NSString *size;
+@property (copy) NSString *src;
+@property (copy) NSString *type;
+@property (copy) NSString *useMap;
+@property (copy) NSString *value;
+@property (readonly) bool willValidate;
 
 - (void)_accessoryClear;
 - (int)_autocapitalizeType;

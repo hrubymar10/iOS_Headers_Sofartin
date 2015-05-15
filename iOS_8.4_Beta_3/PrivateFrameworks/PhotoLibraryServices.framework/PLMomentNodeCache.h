@@ -13,14 +13,14 @@
     struct sqlite3_stmt { } *__temporalSelectStatement;
 }
 
-@property(assign,readonly) struct sqlite3 { }* _momentsDatabase;
-@property(assign,readonly) NSMutableDictionary * _nodesByObjectID;
-@property(assign,readonly) NSMutableArray * _nodesByRowID;
-@property(assign,readonly) NSMutableDictionary * _nodesByUserTag;
-@property(assign,readonly) struct sqlite3_stmt { }* _spatialInsertStatement;
-@property(assign,readonly) struct sqlite3_stmt { }* _spatialSelectStatement;
-@property(assign,readonly) struct sqlite3_stmt { }* _temporalInsertStatement;
-@property(assign,readonly) struct sqlite3_stmt { }* _temporalSelectStatement;
+@property (nonatomic, readonly) struct sqlite3 { }*_momentsDatabase;
+@property (nonatomic, readonly) NSMutableDictionary *_nodesByObjectID;
+@property (nonatomic, readonly) NSMutableArray *_nodesByRowID;
+@property (nonatomic, readonly) NSMutableDictionary *_nodesByUserTag;
+@property (nonatomic, readonly) struct sqlite3_stmt { }*_spatialInsertStatement;
+@property (nonatomic, readonly) struct sqlite3_stmt { }*_spatialSelectStatement;
+@property (nonatomic, readonly) struct sqlite3_stmt { }*_temporalInsertStatement;
+@property (nonatomic, readonly) struct sqlite3_stmt { }*_temporalSelectStatement;
 
 - (struct sqlite3 { }*)_momentsDatabase;
 - (id)_nodesByObjectID;

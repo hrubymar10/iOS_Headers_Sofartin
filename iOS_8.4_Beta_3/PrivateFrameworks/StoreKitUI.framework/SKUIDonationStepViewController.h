@@ -8,9 +8,9 @@
     NSOperationQueue *_operationQueue;
 }
 
-@property(assign,readonly) SKUIGiftCharity * charity;
-@property(assign,readonly) SKUIDonationConfiguration * donationConfiguration;
-@property(assign,retain) NSOperationQueue * operationQueue;
+@property (nonatomic, readonly) SKUIGiftCharity *charity;
+@property (nonatomic, readonly) SKUIDonationConfiguration *donationConfiguration;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
 
 - (void).cxx_destruct;
 - (id)charity;

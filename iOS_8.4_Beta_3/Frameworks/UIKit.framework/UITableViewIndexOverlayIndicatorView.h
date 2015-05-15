@@ -8,7 +8,7 @@
     UITapGestureRecognizer *_tapGestureRecognizer;
 }
 
-@property(assign,copy) NSString * currentText;
+@property (nonatomic, copy) NSString *currentText;
 
 - (void)_invalidateTable;
 - (void)_tapGestureChanged:(id)arg1;

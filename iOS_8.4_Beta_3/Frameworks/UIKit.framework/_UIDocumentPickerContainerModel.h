@@ -10,13 +10,13 @@
     NSMutableArray *_updateHandlers;
 }
 
-@property(assign,readonly) bool afterInitialUpdate;
-@property(assign,readonly) NSArray * modelObjects;
-@property(assign,copy) NSArray * pickableTypes;
-@property(assign,readwrite) unsigned long long pickerMode;
-@property(assign,readwrite) int sortOrder;
-@property(assign,retain) NSOperationQueue * thumbnailQueue;
-@property(assign,retain) NSMutableArray * updateHandlers;
+@property (nonatomic, readonly) bool afterInitialUpdate;
+@property (nonatomic, readonly) NSArray *modelObjects;
+@property (nonatomic, copy) NSArray *pickableTypes;
+@property (nonatomic) unsigned long long pickerMode;
+@property (nonatomic) int sortOrder;
+@property (nonatomic, retain) NSOperationQueue *thumbnailQueue;
+@property (nonatomic, retain) NSMutableArray *updateHandlers;
 
 - (id)addUpdateHandler:(id)arg1 weakSelf:(id)arg2;
 - (bool)afterInitialUpdate;

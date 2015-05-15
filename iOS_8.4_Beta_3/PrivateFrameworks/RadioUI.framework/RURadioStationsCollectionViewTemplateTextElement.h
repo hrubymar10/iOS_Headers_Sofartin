@@ -21,19 +21,19 @@
     bool _wantsEmphasizedStationName;
 }
 
-@property(assign,readonly) double defaultFirstBaselineOffset;
-@property(assign,readonly) long long defaultNumberOfLines;
-@property(assign,readwrite) double displayScale;
-@property(assign,readonly) NSString * fontTextStyle;
-@property(assign,readonly) double maximumHeight;
-@property(assign,readonly) MPUTextDrawingCache * nowPlayingTextDrawingCache;
-@property(assign,readonly) long long numberOfLines;
-@property(assign,readonly) double scaledFirstBaselineOffset;
-@property(assign,readonly) UIFont * tallestFont;
-@property(assign,readonly) MPUTextDrawingCache * textDrawingCache;
-@property(assign,copy) UIColor * tintColor;
-@property(assign,readonly) bool wantsAdditionalLineForExtraLargeContentSizes;
-@property(assign,readonly) bool wantsEmphasizedStationName;
+@property (nonatomic, readonly) double defaultFirstBaselineOffset;
+@property (nonatomic, readonly) long long defaultNumberOfLines;
+@property (nonatomic) double displayScale;
+@property (nonatomic, readonly) NSString *fontTextStyle;
+@property (nonatomic, readonly) double maximumHeight;
+@property (nonatomic, readonly) MPUTextDrawingCache *nowPlayingTextDrawingCache;
+@property (nonatomic, readonly) long long numberOfLines;
+@property (nonatomic, readonly) double scaledFirstBaselineOffset;
+@property (nonatomic, readonly) UIFont *tallestFont;
+@property (nonatomic, readonly) MPUTextDrawingCache *textDrawingCache;
+@property (nonatomic, copy) UIColor *tintColor;
+@property (nonatomic, readonly) bool wantsAdditionalLineForExtraLargeContentSizes;
+@property (nonatomic, readonly) bool wantsEmphasizedStationName;
 
 - (void).cxx_destruct;
 - (id)_fontWithEmphasis:(bool)arg1;

@@ -22,28 +22,28 @@
     CKWatchdog *_watchdog;
 }
 
-@property(assign,readonly) struct { unsigned int x1[8]; } auditToken;
-@property(assign,retain) NSOperationQueue * backgroundOperationThrottleQueue;
-@property(assign,retain) NSString * bundleIdentifier;
-@property(assign,retain) NSArray * cachedSandboxExtensions;
-@property(assign,retain) NSString * cachedSourceApplicationBundleIdentifier;
-@property(assign,readwrite) bool canOpenByID;
-@property(assign,readwrite) bool canUsePackages;
-@property(assign,retain) NSObject<OS_dispatch_queue> * cancellationQueue;
-@property(assign,readwrite) NSXPCConnection * connection;
-@property(assign,readonly) CKDClientContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,retain) NSMutableArray * pendingContexts;
-@property(assign,retain) NSMutableSet * pendingOperationIDs;
-@property(assign,readonly) int pid;
-@property(assign,readonly) NSString * procName;
-@property(getter=isSandboxed,assign,readwrite) bool sandboxed;
-@property(assign,retain) NSObject<OS_dispatch_queue> * setupQueue;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) CKWatchdog * watchdog;
+@property (nonatomic, readonly) struct { unsigned int x1[8]; } auditToken;
+@property (nonatomic, retain) NSOperationQueue *backgroundOperationThrottleQueue;
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic, retain) NSArray *cachedSandboxExtensions;
+@property (nonatomic, retain) NSString *cachedSourceApplicationBundleIdentifier;
+@property (nonatomic) bool canOpenByID;
+@property (nonatomic) bool canUsePackages;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *cancellationQueue;
+@property (nonatomic) NSXPCConnection *connection;
+@property (nonatomic, readonly) CKDClientContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic, retain) NSMutableArray *pendingContexts;
+@property (nonatomic, retain) NSMutableSet *pendingOperationIDs;
+@property (nonatomic, readonly) int pid;
+@property (nonatomic, readonly) NSString *procName;
+@property (getter=isSandboxed, nonatomic) bool sandboxed;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *setupQueue;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) CKWatchdog *watchdog;
 
 + (id)sharedClientThrottlingOperationQueue;
 

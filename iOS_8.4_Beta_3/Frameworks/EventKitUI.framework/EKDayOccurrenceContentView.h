@@ -62,27 +62,27 @@
     bool _usesSmallText;
 }
 
-@property(getter=isAllDay,assign,readwrite) bool allDay;
-@property(getter=isAllDayDrawingStyle,assign,readwrite) bool allDayDrawingStyle;
-@property(getter=isBirthday,assign,readwrite) bool birthday;
-@property(getter=isCancelled,assign,readwrite) bool cancelled;
-@property(assign,retain) UIColor * color;
-@property(getter=isDeclined,assign,readwrite) bool declined;
-@property(getter=isFacebook,assign,readwrite) bool facebook;
-@property(assign,readwrite) bool hideText;
-@property(assign,copy) NSString * location;
-@property(assign,readwrite) bool needsReply;
-@property(assign,readwrite) int occurrenceBackgroundStyle;
-@property(assign,readwrite) bool reduceProcessingForAnimation;
-@property(assign,retain) UIColor * secondaryTextColor;
-@property(assign,readwrite) bool selected;
-@property(getter=isTentative,assign,readwrite) bool tentative;
-@property(assign,retain) UIColor * textBackgroundColor;
-@property(assign,copy) NSString * time;
-@property(assign,retain) UIColor * timeTextColor;
-@property(assign,copy) NSString * title;
-@property(assign,retain) UIColor * titleTextColor;
-@property(assign,readwrite) bool usesSmallText;
+@property (getter=isAllDay, nonatomic) bool allDay;
+@property (getter=isAllDayDrawingStyle, nonatomic) bool allDayDrawingStyle;
+@property (getter=isBirthday, nonatomic) bool birthday;
+@property (getter=isCancelled, nonatomic) bool cancelled;
+@property (nonatomic, retain) UIColor *color;
+@property (getter=isDeclined, nonatomic) bool declined;
+@property (getter=isFacebook, nonatomic) bool facebook;
+@property (nonatomic) bool hideText;
+@property (nonatomic, copy) NSString *location;
+@property (nonatomic) bool needsReply;
+@property (nonatomic) int occurrenceBackgroundStyle;
+@property (nonatomic) bool reduceProcessingForAnimation;
+@property (nonatomic, retain) UIColor *secondaryTextColor;
+@property (nonatomic) bool selected;
+@property (getter=isTentative, nonatomic) bool tentative;
+@property (nonatomic, retain) UIColor *textBackgroundColor;
+@property (nonatomic, copy) NSString *time;
+@property (nonatomic, retain) UIColor *timeTextColor;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, retain) UIColor *titleTextColor;
+@property (nonatomic) bool usesSmallText;
 
 + (id)defaultPrimaryTextFont;
 + (id)defaultSecondaryTextFont;

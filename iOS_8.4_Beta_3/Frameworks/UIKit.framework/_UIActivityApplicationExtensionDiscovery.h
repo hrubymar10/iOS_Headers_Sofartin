@@ -10,11 +10,11 @@
     bool _sourceIsManaged;
 }
 
-@property(assign,retain) id extensionMatchingContext;
-@property(assign,copy) NSArray * extensionPointIdentifiers;
-@property(assign,readwrite) bool matchesOnlyUserElectedExtensions;
-@property(assign,readwrite) bool performsInitialMatching;
-@property(assign,readwrite) bool sourceIsManaged;
+@property (retain) id extensionMatchingContext;
+@property (nonatomic, copy) NSArray *extensionPointIdentifiers;
+@property (nonatomic) bool matchesOnlyUserElectedExtensions;
+@property bool performsInitialMatching;
+@property (nonatomic) bool sourceIsManaged;
 
 - (id)activitiesMatchingInputItems:(id)arg1 error:(id*)arg2 updateBlock:(id)arg3;
 - (void)cancelUpdatesIfNeeded;

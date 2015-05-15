@@ -17,19 +17,19 @@
     UITableView *_tableView;
 }
 
-@property(assign,retain) PSLanguage * checkedLanguage;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSArray * deviceLanguages;
-@property(assign,retain) NSArray * filteredDeviceLanguages;
-@property(assign,retain) NSArray * filteredOtherLanguages;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PSLanguageSelector * languageSelector;
-@property(assign,retain) PSLocaleSelector * localeSelector;
-@property(assign,retain) NSArray * otherLanguages;
-@property(assign,retain) NSString * savedSearchTerm;
-@property(assign,readwrite) bool searchIsActive;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) PSLanguage *checkedLanguage;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSArray *deviceLanguages;
+@property (nonatomic, retain) NSArray *filteredDeviceLanguages;
+@property (nonatomic, retain) NSArray *filteredOtherLanguages;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PSLanguageSelector *languageSelector;
+@property (nonatomic, retain) PSLocaleSelector *localeSelector;
+@property (nonatomic, retain) NSArray *otherLanguages;
+@property (nonatomic, retain) NSString *savedSearchTerm;
+@property (nonatomic) bool searchIsActive;
+@property (readonly) Class superclass;
 
 - (id)_mainContentView;
 - (void)_removeBlackFrame;

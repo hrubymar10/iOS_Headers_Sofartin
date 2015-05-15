@@ -9,10 +9,10 @@
     NSString *_propertyType;
 }
 
-@property(assign,retain) NSNumber * bitPosition;
-@property(assign,retain) NSString * localizationKey;
-@property(assign,retain) NSString * propertyDescription;
-@property(assign,retain) NSString * propertyType;
+@property (nonatomic, retain) NSNumber *bitPosition;
+@property (nonatomic, retain) NSString *localizationKey;
+@property (nonatomic, retain) NSString *propertyDescription;
+@property (nonatomic, retain) NSString *propertyType;
 
 + (id)init:(id)arg1 withDictionary:(id)arg2;
 

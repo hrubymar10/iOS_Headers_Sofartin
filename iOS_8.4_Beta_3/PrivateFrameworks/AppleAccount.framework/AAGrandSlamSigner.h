@@ -9,9 +9,9 @@
     ACAccountStore *_store;
 }
 
-@property(assign,readonly) ACAccountStore * accountStore;
-@property(assign,readonly) ACAccount * appleAccount;
-@property(assign,readonly) ACAccount * grandSlamAccount;
+@property (nonatomic, readonly) ACAccountStore *accountStore;
+@property (nonatomic, readonly) ACAccount *appleAccount;
+@property (nonatomic, readonly) ACAccount *grandSlamAccount;
 
 - (void).cxx_destruct;
 - (id)accountStore;

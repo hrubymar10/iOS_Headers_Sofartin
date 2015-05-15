@@ -9,10 +9,10 @@
     NSArray *_orderedStylesOrGroups;
 }
 
-@property(assign,retain) NSIndexSet * groupIndexes;
-@property(assign,retain) NSDictionary * indexedSelectors;
-@property(assign,retain) NSArray * mediaQueryList;
-@property(assign,retain) NSArray * orderedStylesOrGroups;
+@property (nonatomic, readonly, retain) NSIndexSet *groupIndexes;
+@property (nonatomic, readonly, retain) NSDictionary *indexedSelectors;
+@property (nonatomic, readonly, retain) NSArray *mediaQueryList;
+@property (nonatomic, readonly, retain) NSArray *orderedStylesOrGroups;
 
 + (id)stylesGroupWithMarkup:(id)arg1;
 

@@ -6,8 +6,8 @@
     NSArray *_children;
 }
 
-@property(assign,readonly) NSArray * mathMLAttributes;
-@property(assign,readonly) NSString * mathMLTag;
+@property (nonatomic, readonly) NSArray *mathMLAttributes;
+@property (nonatomic, readonly) NSString *mathMLTag;
 
 - (id)childSpeakableSegmentsWithSpeakingStyle:(int)arg1 upToDepth:(unsigned long long)arg2 parentTreePosition:(id)arg3 childIndex:(unsigned long long*)arg4;
 - (id)children;

@@ -6,17 +6,17 @@
     AVVideoCompositionInstructionInternal *_instruction;
 }
 
-@property(assign,retain) struct CGColor { }* backgroundColor;
-@property(assign,readonly) bool containsTweening;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool enablePostProcessing;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * layerInstructions;
-@property(assign,readonly) int passthroughTrackID;
-@property(assign,readonly) NSArray * requiredSourceTrackIDs;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct { struct { long long x_1_1_1; int x_1_1_2; unsigned int x_1_1_3; long long x_1_1_4; } x1; struct { long long x_2_1_1; int x_2_1_2; unsigned int x_2_1_3; long long x_2_1_4; } x2; } timeRange;
+@property (nonatomic, retain) struct CGColor { }*backgroundColor;
+@property (nonatomic, readonly) bool containsTweening;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool enablePostProcessing;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) NSArray *layerInstructions;
+@property (nonatomic, readonly) int passthroughTrackID;
+@property (nonatomic, readonly) NSArray *requiredSourceTrackIDs;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct { struct { long long x_1_1_1; int x_1_1_2; unsigned int x_1_1_3; long long x_1_1_4; } x1; struct { long long x_2_1_1; int x_2_1_2; unsigned int x_2_1_3; long long x_2_1_4; } x2; } timeRange;
 
 + (void)initialize;
 + (bool)supportsSecureCoding;

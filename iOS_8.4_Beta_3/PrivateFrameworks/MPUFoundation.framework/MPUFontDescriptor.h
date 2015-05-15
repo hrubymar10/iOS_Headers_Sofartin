@@ -10,11 +10,11 @@
     long long _weight;
 }
 
-@property(assign,readonly) long long leadingAdjustment;
-@property(assign,readonly) long long textStyle;
-@property(assign,readonly) bool usesItalic;
-@property(assign,readonly) bool wantsMonospaceNumbers;
-@property(assign,readonly) long long weight;
+@property (nonatomic, readonly) long long leadingAdjustment;
+@property (nonatomic, readonly) long long textStyle;
+@property (nonatomic, readonly) bool usesItalic;
+@property (nonatomic, readonly) bool wantsMonospaceNumbers;
+@property (nonatomic, readonly) long long weight;
 
 + (id)_adjustedNativeFontDescriptorWithBaseNativeFontDescriptor:(id)arg1 forCustomTextStyle:(long long)arg2;
 + (id)_baseNativeTextStyleForTextStyle:(long long)arg1;

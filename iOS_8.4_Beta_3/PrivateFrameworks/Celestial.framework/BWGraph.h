@@ -19,9 +19,9 @@
     bool _supportsLiveReconfiguration;
 }
 
-@property(assign,readwrite) int errorStatus;
-@property(assign,readwrite) <BWGraphStatusDelegate> * statusDelegate;
-@property(assign,readonly) bool supportsLiveReconfiguration;
+@property int errorStatus;
+@property (nonatomic) <BWGraphStatusDelegate> *statusDelegate;
+@property (nonatomic, readonly) bool supportsLiveReconfiguration;
 
 + (void)initialize;
 

@@ -8,13 +8,13 @@
     BLTPreviouslySentMessageStore *_sectionSubtypeParametersIconsPreviouslySentMessageStore;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <BLTSettingSyncing> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) BLTPreviouslySentMessageStore * sectionInfoPreviouslySentMessageStore;
-@property(assign,retain) BLTPreviouslySentMessageStore * sectionSubtypeParametersIconsPreviouslySentMessageStore;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <BLTSettingSyncing> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) BLTPreviouslySentMessageStore *sectionInfoPreviouslySentMessageStore;
+@property (nonatomic, retain) BLTPreviouslySentMessageStore *sectionSubtypeParametersIconsPreviouslySentMessageStore;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_handleResponse:(id)arg1;

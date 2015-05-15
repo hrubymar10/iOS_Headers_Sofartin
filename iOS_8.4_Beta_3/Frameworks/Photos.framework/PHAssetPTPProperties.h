@@ -8,9 +8,9 @@
     NSString *_importSessionID;
 }
 
-@property(assign,readonly) PHAsset * asset;
-@property(assign,readonly) NSString * exifTimestampString;
-@property(assign,readonly) NSString * importSessionID;
+@property (nonatomic, readonly) PHAsset *asset;
+@property (nonatomic, readonly) NSString *exifTimestampString;
+@property (nonatomic, readonly) NSString *importSessionID;
 
 - (void).cxx_destruct;
 - (id)asset;

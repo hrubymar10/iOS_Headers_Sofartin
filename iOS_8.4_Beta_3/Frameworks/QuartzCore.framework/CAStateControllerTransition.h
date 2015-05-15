@@ -13,11 +13,11 @@
     CAStateTransition *_transition;
 }
 
-@property(assign,readonly) double beginTime;
-@property(assign,readonly) double duration;
-@property(assign,readonly) CALayer * layer;
-@property(assign,readonly) float speed;
-@property(assign,readonly) CAStateTransition * transition;
+@property (nonatomic, readonly) double beginTime;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic, readonly) CALayer *layer;
+@property (nonatomic, readonly) float speed;
+@property (nonatomic, readonly) CAStateTransition *transition;
 
 - (void)addAnimation:(id)arg1;
 - (void)animationDidStop:(id)arg1 finished:(bool)arg2;

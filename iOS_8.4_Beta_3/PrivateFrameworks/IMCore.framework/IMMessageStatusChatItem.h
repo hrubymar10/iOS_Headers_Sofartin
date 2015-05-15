@@ -11,13 +11,13 @@
     NSDate *_timeStale;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,retain) NSString * errorText;
-@property(assign,readonly) long long expireStatusType;
-@property(assign,readonly) bool isFromMe;
-@property(assign,readonly) long long messageStatusType;
-@property(assign,readonly) long long statusType;
-@property(assign,retain) NSDate * time;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, readonly, retain) NSString *errorText;
+@property (nonatomic, readonly) long long expireStatusType;
+@property (nonatomic, readonly) bool isFromMe;
+@property (nonatomic, readonly) long long messageStatusType;
+@property (nonatomic, readonly) long long statusType;
+@property (nonatomic, readonly, retain) NSDate *time;
 
 - (Class)__ck_chatItemClass;
 - (id)_initWithItem:(id)arg1 expireStatusType:(long long)arg2 count:(unsigned long long)arg3;

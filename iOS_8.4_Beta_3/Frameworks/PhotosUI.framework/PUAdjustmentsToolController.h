@@ -23,12 +23,12 @@
     NSMapTable *_sliderThumbnailsByModeAndIntensity;
 }
 
-@property(setter=_setSnappingController:,assign,retain) PUSnappingController * _snappingController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) PUAdjustmentsToolControllerSpec * spec;
-@property(assign,readonly) Class superclass;
+@property (setter=_setSnappingController:, nonatomic, retain) PUSnappingController *_snappingController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) PUAdjustmentsToolControllerSpec *spec;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (double)_adjustmentScrollViewOffsetForLevel:(double)arg1 inMode:(id)arg2;

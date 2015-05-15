@@ -6,7 +6,7 @@
     NSCountedSet *_holdingUpdatesKeys;
 }
 
-@property(assign,retain) NSCountedSet * holdingUpdatesKeys;
+@property (nonatomic, retain) NSCountedSet *holdingUpdatesKeys;
 
 - (void)beginHoldingUpdatesForKey:(id)arg1;
 - (void)dealloc;

@@ -4,26 +4,26 @@
 
 @interface CDDMAppStateChangeEvent : NSManagedObject
 
-@property(assign,retain) NSNumber * anonymizedBeacon;
-@property(assign,retain) NSNumber * anonymizedLocation;
-@property(assign,retain) NSNumber * appState;
-@property(assign,retain) NSNumber * computeUtilization;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,retain) NSNumber * integerId;
-@property(assign,retain) NSNumber * ioBytes;
-@property(assign,retain) NSNumber * ioBytesRead;
-@property(assign,retain) NSNumber * ioBytesWritten;
-@property(assign,retain) NSNumber * isFront;
-@property(assign,retain) NSNumber * localDaysSinceSunday;
-@property(assign,retain) NSNumber * localTime;
-@property(assign,retain) NSNumber * localTimeQuarterHourSlot;
-@property(assign,retain) NSNumber * memoryPhysicalFootprint;
-@property(assign,retain) NSNumber * networkBytes;
-@property(assign,retain) NSNumber * networkQuality;
-@property(assign,retain) NSNumber * networkRxBytes;
-@property(assign,retain) NSNumber * networkTxBytes;
-@property(assign,retain) NSNumber * runReason;
-@property(assign,retain) NSNumber * usedCellData;
-@property(assign,retain) NSNumber * userId;
+@property (nonatomic, retain) NSNumber *anonymizedBeacon;
+@property (nonatomic, retain) NSNumber *anonymizedLocation;
+@property (nonatomic, retain) NSNumber *appState;
+@property (nonatomic, retain) NSNumber *computeUtilization;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic, retain) NSNumber *integerId;
+@property (nonatomic, retain) NSNumber *ioBytes;
+@property (nonatomic, retain) NSNumber *ioBytesRead;
+@property (nonatomic, retain) NSNumber *ioBytesWritten;
+@property (nonatomic, retain) NSNumber *isFront;
+@property (nonatomic, retain) NSNumber *localDaysSinceSunday;
+@property (nonatomic, retain) NSNumber *localTime;
+@property (nonatomic, retain) NSNumber *localTimeQuarterHourSlot;
+@property (nonatomic, retain) NSNumber *memoryPhysicalFootprint;
+@property (nonatomic, retain) NSNumber *networkBytes;
+@property (nonatomic, retain) NSNumber *networkQuality;
+@property (nonatomic, retain) NSNumber *networkRxBytes;
+@property (nonatomic, retain) NSNumber *networkTxBytes;
+@property (nonatomic, retain) NSNumber *runReason;
+@property (nonatomic, retain) NSNumber *usedCellData;
+@property (nonatomic, retain) NSNumber *userId;
 
 @end

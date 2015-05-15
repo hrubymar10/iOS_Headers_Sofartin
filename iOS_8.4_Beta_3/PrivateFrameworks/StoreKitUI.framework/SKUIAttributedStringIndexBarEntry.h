@@ -9,8 +9,8 @@
     NSAttributedString *_synthesizedAttributedString;
 }
 
-@property(assign,copy) NSAttributedString * attributedString;
-@property(assign,copy) NSDictionary * defaultTextAttributes;
+@property (nonatomic, readonly, copy) NSAttributedString *attributedString;
+@property (nonatomic, copy) NSDictionary *defaultTextAttributes;
 
 - (void).cxx_destruct;
 - (struct CGSize { double x1; double x2; })_calculatedContentSize;

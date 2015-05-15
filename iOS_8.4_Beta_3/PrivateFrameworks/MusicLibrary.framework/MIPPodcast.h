@@ -9,14 +9,14 @@
     MIPSeries *_series;
 }
 
-@property(assign,retain) MIPArtist * artist;
-@property(assign,retain) NSString * externalGuid;
-@property(assign,retain) NSString * feedUrl;
-@property(assign,readonly) bool hasArtist;
-@property(assign,readonly) bool hasExternalGuid;
-@property(assign,readonly) bool hasFeedUrl;
-@property(assign,readonly) bool hasSeries;
-@property(assign,retain) MIPSeries * series;
+@property (nonatomic, retain) MIPArtist *artist;
+@property (nonatomic, retain) NSString *externalGuid;
+@property (nonatomic, retain) NSString *feedUrl;
+@property (nonatomic, readonly) bool hasArtist;
+@property (nonatomic, readonly) bool hasExternalGuid;
+@property (nonatomic, readonly) bool hasFeedUrl;
+@property (nonatomic, readonly) bool hasSeries;
+@property (nonatomic, retain) MIPSeries *series;
 
 - (void).cxx_destruct;
 - (id)artist;

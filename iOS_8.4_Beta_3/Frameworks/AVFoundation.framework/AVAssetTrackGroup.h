@@ -6,7 +6,7 @@
     AVAssetTrackGroupInternal *_assetTrackGroup;
 }
 
-@property(assign,readonly) NSArray * trackIDs;
+@property (nonatomic, readonly) NSArray *trackIDs;
 
 - (id)_assetComparisonToken;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

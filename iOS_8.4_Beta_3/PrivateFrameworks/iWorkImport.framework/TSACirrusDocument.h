@@ -10,27 +10,27 @@
     TSUTemporaryDirectory *_tempDirForSupport;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,readonly) bool areNewExternalReferencesToDataAllowed;
-@property(assign,readonly) NSUUID * baseUUIDForObjectUUID;
-@property(assign,readonly) TSKCollaborationState * collaborationState;
-@property(assign,retain) TSPObjectContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) NSString * defaultDraftName;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * documentCachePath;
-@property(assign,readonly) NSString * documentPasswordHint;
-@property(assign,readonly) TSADocumentRoot * documentRoot;
-@property(assign,readonly) <NSFilePresenter> * filePresenter;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool ignoreDocumentSupport;
-@property(assign,readonly) bool isDocumentSupportTemporary;
-@property(assign,readonly) bool isInCollaborationMode;
-@property(assign,readonly) bool isInReadOnlyMode;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) bool preserveDocumentRevisionIdentifierForSequenceZero;
-@property(assign,readonly) bool skipDocumentUpgrade;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, readonly) bool areNewExternalReferencesToDataAllowed;
+@property (nonatomic, readonly) NSUUID *baseUUIDForObjectUUID;
+@property (nonatomic, readonly) TSKCollaborationState *collaborationState;
+@property (nonatomic, retain) TSPObjectContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) NSString *defaultDraftName;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *documentCachePath;
+@property (nonatomic, readonly) NSString *documentPasswordHint;
+@property (nonatomic, readonly) TSADocumentRoot *documentRoot;
+@property (nonatomic, readonly) <NSFilePresenter> *filePresenter;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool ignoreDocumentSupport;
+@property (nonatomic, readonly) bool isDocumentSupportTemporary;
+@property (nonatomic, readonly) bool isInCollaborationMode;
+@property (nonatomic, readonly) bool isInReadOnlyMode;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) bool preserveDocumentRevisionIdentifierForSequenceZero;
+@property (nonatomic, readonly) bool skipDocumentUpgrade;
+@property (readonly) Class superclass;
 
 - (id)URL;
 - (void)close;

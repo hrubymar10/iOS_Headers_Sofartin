@@ -16,17 +16,17 @@
     int _termsAndConditionsAgreementStatus;
 }
 
-@property(assign,readwrite) int activeDownloadPolicyType;
-@property(getter=isAutoDownload,assign,readwrite) bool autoDownload;
-@property(assign,readwrite) int downloadFeeAgreementStatus;
-@property(getter=isEnabledFor2G,assign,readwrite) bool enabledFor2G;
-@property(getter=isEnabledFor3G,assign,readwrite) bool enabledFor3G;
-@property(getter=isEnabledFor4G,assign,readwrite) bool enabledFor4G;
-@property(getter=isEnabledForCellularRoaming,assign,readwrite) bool enabledForCellularRoaming;
-@property(getter=isEnabledForWifi,assign,readwrite) bool enabledForWifi;
-@property(getter=isEnabledOnBatteryPower,assign,readwrite) bool enabledOnBatteryPower;
-@property(assign,readwrite) bool enforceWifiOnlyOverride;
-@property(assign,readwrite) int termsAndConditionsAgreementStatus;
+@property (nonatomic) int activeDownloadPolicyType;
+@property (getter=isAutoDownload, nonatomic) bool autoDownload;
+@property (nonatomic) int downloadFeeAgreementStatus;
+@property (getter=isEnabledFor2G, nonatomic) bool enabledFor2G;
+@property (getter=isEnabledFor3G, nonatomic) bool enabledFor3G;
+@property (getter=isEnabledFor4G, nonatomic) bool enabledFor4G;
+@property (getter=isEnabledForCellularRoaming, nonatomic) bool enabledForCellularRoaming;
+@property (getter=isEnabledForWifi, nonatomic) bool enabledForWifi;
+@property (getter=isEnabledOnBatteryPower, nonatomic) bool enabledOnBatteryPower;
+@property (nonatomic) bool enforceWifiOnlyOverride;
+@property (nonatomic) int termsAndConditionsAgreementStatus;
 
 + (bool)supportsSecureCoding;
 

@@ -9,7 +9,7 @@
     UILabel *_relationshipLabel;
 }
 
-@property(assign,retain) _HKEmergencyContact * contact;
+@property (nonatomic, retain) _HKEmergencyContact *contact;
 
 - (void).cxx_destruct;
 - (void)_contentSizeCategoryDidChange:(id)arg1;

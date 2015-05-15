@@ -14,9 +14,9 @@
     } _geolocationProvider;
 }
 
-@property(assign,readonly) struct OpaqueWKContext { }* _contextRef;
-@property(assign,readonly) WKGeolocationProviderIOS * _geolocationProvider;
-@property(assign,readwrite) <WKProcessGroupDelegate> * delegate;
+@property (readonly) struct OpaqueWKContext { }*_contextRef;
+@property (readonly) WKGeolocationProviderIOS *_geolocationProvider;
+@property <WKProcessGroupDelegate> *delegate;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

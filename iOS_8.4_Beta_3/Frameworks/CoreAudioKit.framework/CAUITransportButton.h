@@ -17,8 +17,8 @@
     } imageRect;
 }
 
-@property(assign,readwrite) int drawingStyle;
-@property(assign,readwrite) struct CGColor { }* fillColor;
+@property int drawingStyle;
+@property struct CGColor { }*fillColor;
 
 + (Class)layerClass;
 

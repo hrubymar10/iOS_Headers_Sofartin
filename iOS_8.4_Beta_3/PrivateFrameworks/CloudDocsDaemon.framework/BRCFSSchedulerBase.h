@@ -14,15 +14,15 @@
     PQLNameInjection *_tableName;
 }
 
-@property(assign,readonly) bool closed;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool hasActiveWork;
-@property(assign,readwrite) bool hasWork;
-@property(assign,retain) NSObject<OS_dispatch_group> * hasWorkGroup;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,readonly) Class superclass;
+@property (readonly) bool closed;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool hasActiveWork;
+@property (nonatomic) bool hasWork;
+@property (retain) NSObject<OS_dispatch_group> *hasWorkGroup;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCancelled;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_canRetryThrottleID:(long long)arg1 zone:(id)arg2;

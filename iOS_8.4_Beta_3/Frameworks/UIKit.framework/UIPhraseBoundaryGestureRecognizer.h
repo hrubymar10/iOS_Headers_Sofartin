@@ -10,10 +10,10 @@
     id _userData;
 }
 
-@property(assign,readwrite) double secondDelay;
-@property(assign,readonly) bool secondDelayElapsed;
-@property(assign,readwrite) UIResponder<UITextInput> * textInput;
-@property(assign,readwrite) id userData;
+@property (nonatomic) double secondDelay;
+@property (nonatomic, readonly) bool secondDelayElapsed;
+@property (nonatomic) UIResponder<UITextInput> *textInput;
+@property (nonatomic) id userData;
 
 - (void)_resetGestureRecognizer;
 - (void)clearTimer;

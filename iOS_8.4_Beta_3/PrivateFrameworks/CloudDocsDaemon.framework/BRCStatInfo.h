@@ -16,22 +16,22 @@
     NSData *_xattrSignature;
 }
 
-@property(assign,readonly) NSString * _aliasTargetContainerID;
-@property(assign,readonly) BRCItemID * _aliasTargetItemID;
-@property(assign,readonly) NSString * _aliasTargetMangledID;
-@property(assign,readwrite) long long birthtime;
-@property(assign,retain) BRFieldCKInfo * ckInfo;
-@property(assign,readonly) NSString * displayName;
-@property(assign,retain) NSString * filename;
-@property(assign,retain) NSData * finderTags;
-@property(getter=isHiddenExt,assign,readwrite) bool hiddenExt;
-@property(assign,readonly) bool iWorkShareable;
-@property(assign,retain) NSData * lazyXattr;
-@property(assign,readwrite) BOOL mode;
-@property(assign,retain) BRCItemID * parentID;
-@property(assign,readwrite) BOOL state;
-@property(assign,readwrite) BOOL type;
-@property(assign,retain) NSData * xattrSignature;
+@property (nonatomic, readonly) NSString *_aliasTargetContainerID;
+@property (nonatomic, readonly) BRCItemID *_aliasTargetItemID;
+@property (nonatomic, readonly) NSString *_aliasTargetMangledID;
+@property (nonatomic) long long birthtime;
+@property (nonatomic, retain) BRFieldCKInfo *ckInfo;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, retain) NSString *filename;
+@property (nonatomic, retain) NSData *finderTags;
+@property (getter=isHiddenExt, nonatomic) bool hiddenExt;
+@property (nonatomic, readonly) bool iWorkShareable;
+@property (nonatomic, retain) NSData *lazyXattr;
+@property (nonatomic) BOOL mode;
+@property (nonatomic, retain) BRCItemID *parentID;
+@property (nonatomic) BOOL state;
+@property (nonatomic) BOOL type;
+@property (nonatomic, retain) NSData *xattrSignature;
 
 + (bool)supportsSecureCoding;
 

@@ -8,10 +8,10 @@
     UIImage *thumb;
 }
 
-@property(assign,readonly) bool isEmpty;
-@property(assign,retain) UIImage * maxTrack;
-@property(assign,retain) UIImage * minTrack;
-@property(assign,retain) UIImage * thumb;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, retain) UIImage *maxTrack;
+@property (nonatomic, retain) UIImage *minTrack;
+@property (nonatomic, retain) UIImage *thumb;
 
 - (void)dealloc;
 - (bool)isEmpty;

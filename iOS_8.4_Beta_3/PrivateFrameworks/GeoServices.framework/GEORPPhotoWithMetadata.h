@@ -15,16 +15,16 @@
     } _has;
 }
 
-@property(assign,readwrite) double creationDate;
-@property(assign,retain) NSData * data;
-@property(assign,retain) GEOLatLng * geotagCoordinate;
-@property(assign,readwrite) double geotagHorizontalAccuracy;
-@property(assign,readwrite) double geotagTimestamp;
-@property(assign,readwrite) bool hasCreationDate;
-@property(assign,readonly) bool hasData;
-@property(assign,readonly) bool hasGeotagCoordinate;
-@property(assign,readwrite) bool hasGeotagHorizontalAccuracy;
-@property(assign,readwrite) bool hasGeotagTimestamp;
+@property (nonatomic) double creationDate;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic, retain) GEOLatLng *geotagCoordinate;
+@property (nonatomic) double geotagHorizontalAccuracy;
+@property (nonatomic) double geotagTimestamp;
+@property (nonatomic) bool hasCreationDate;
+@property (nonatomic, readonly) bool hasData;
+@property (nonatomic, readonly) bool hasGeotagCoordinate;
+@property (nonatomic) bool hasGeotagHorizontalAccuracy;
+@property (nonatomic) bool hasGeotagTimestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

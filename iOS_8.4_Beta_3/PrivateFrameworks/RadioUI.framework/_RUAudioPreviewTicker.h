@@ -6,7 +6,7 @@
     RUAudioPreviewView *_audioPreviewView;
 }
 
-@property(assign,readwrite) RUAudioPreviewView * audioPreviewView;
+@property (nonatomic) RUAudioPreviewView *audioPreviewView;
 
 - (void).cxx_destruct;
 - (id)audioPreviewView;

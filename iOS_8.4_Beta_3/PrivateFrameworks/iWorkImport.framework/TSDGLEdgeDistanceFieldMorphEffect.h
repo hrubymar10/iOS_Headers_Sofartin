@@ -52,10 +52,10 @@
     } _textureAdjustment;
 }
 
-@property(assign,readonly) TSDGLTextureInfo * incomingTextureInfo;
-@property(assign,readwrite) bool isTextStyleIdenticalExceptSize;
-@property(assign,readonly) TSDGLTextureInfo * outgoingTextureInfo;
-@property(assign,readonly) TSDGLShader * shader;
+@property (nonatomic, readonly) TSDGLTextureInfo *incomingTextureInfo;
+@property (nonatomic) bool isTextStyleIdenticalExceptSize;
+@property (nonatomic, readonly) TSDGLTextureInfo *outgoingTextureInfo;
+@property (nonatomic, readonly) TSDGLShader *shader;
 
 + (void)didEndUsingShaders;
 + (void)willBeginUsingShaders;

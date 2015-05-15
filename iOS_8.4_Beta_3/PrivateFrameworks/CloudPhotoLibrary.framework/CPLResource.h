@@ -10,11 +10,11 @@
     unsigned long long _resourceType;
 }
 
-@property(assign,readwrite) bool canGenerateDerivative;
-@property(assign,readwrite) bool generateDerivative;
-@property(assign,retain) CPLResourceIdentity * identity;
-@property(assign,copy) NSString * itemIdentifier;
-@property(assign,readwrite) unsigned long long resourceType;
+@property (nonatomic) bool canGenerateDerivative;
+@property (nonatomic) bool generateDerivative;
+@property (nonatomic, retain) CPLResourceIdentity *identity;
+@property (nonatomic, copy) NSString *itemIdentifier;
+@property (nonatomic) unsigned long long resourceType;
 
 + (bool)cplShouldIgnorePropertyForEquality:(id)arg1;
 + (float)derivativeGenerationThreshold;

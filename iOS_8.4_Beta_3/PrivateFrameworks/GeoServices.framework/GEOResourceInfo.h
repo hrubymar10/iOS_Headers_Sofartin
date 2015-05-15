@@ -10,11 +10,11 @@
     long long _type;
 }
 
-@property(getter=_allowResumingPartialDownload,setter=_setAllowResumingPartialDownload:,assign,readwrite) bool allowResumingPartialDownload;
-@property(assign,readonly) NSString * checksum;
-@property(assign,copy) NSArray * equivalentResources;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) long long type;
+@property (getter=_allowResumingPartialDownload, setter=_setAllowResumingPartialDownload:, nonatomic) bool allowResumingPartialDownload;
+@property (nonatomic, readonly) NSString *checksum;
+@property (nonatomic, copy) NSArray *equivalentResources;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) long long type;
 
 - (bool)_allowResumingPartialDownload;
 - (void)_setAllowResumingPartialDownload:(bool)arg1;

@@ -12,10 +12,10 @@
     unsigned long long _totalCount;
 }
 
-@property(assign,readonly) unsigned long long currentCount;
-@property(assign,readonly) int progressType;
-@property(assign,readonly) int style;
-@property(assign,readonly) unsigned long long totalCount;
+@property (nonatomic, readonly) unsigned long long currentCount;
+@property (nonatomic, readonly) int progressType;
+@property (nonatomic, readonly) int style;
+@property (nonatomic, readonly) unsigned long long totalCount;
 
 - (id)_progressDescription;
 - (unsigned long long)currentCount;

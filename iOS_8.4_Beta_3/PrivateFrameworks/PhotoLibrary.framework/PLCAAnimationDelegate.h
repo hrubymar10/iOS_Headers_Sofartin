@@ -7,8 +7,8 @@
     id _start;
 }
 
-@property(assign,copy) id completion;
-@property(assign,copy) id start;
+@property (nonatomic, copy) id completion;
+@property (nonatomic, copy) id start;
 
 - (void)animationDidStart:(id)arg1;
 - (void)animationDidStop:(id)arg1 finished:(bool)arg2;

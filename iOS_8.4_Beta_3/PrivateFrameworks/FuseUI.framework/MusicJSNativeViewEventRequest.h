@@ -8,9 +8,9 @@
     long long _nativeViewEventType;
 }
 
-@property(assign,copy) id completion;
-@property(assign,copy) NSDictionary * extraInfo;
-@property(assign,readwrite) long long nativeViewEventType;
+@property (nonatomic, copy) id completion;
+@property (nonatomic, copy) NSDictionary *extraInfo;
+@property (nonatomic) long long nativeViewEventType;
 
 - (void).cxx_destruct;
 - (id)completion;

@@ -10,13 +10,13 @@
     NSString *mThemeIdentifier;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) TSSStylesheet * documentStylesheet;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) TSSStylesheet * legacyStylesheet;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * themeIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) TSSStylesheet *documentStylesheet;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) TSSStylesheet *legacyStylesheet;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSString *themeIdentifier;
 
 + (void)bootstrapPresetsOfKind:(id)arg1 inTheme:(id)arg2 alternate:(int)arg3;
 + (id)presetBootstrapOrder;

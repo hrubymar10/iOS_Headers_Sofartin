@@ -16,16 +16,16 @@
     bool updating;
 }
 
-@property(assign,readonly) <MKAnnotation> * annotation;
-@property(assign,readwrite) double course;
-@property(assign,retain) CLLocation * fixedLocation;
-@property(assign,retain) CLHeading * heading;
-@property(assign,retain) CLLocation * location;
-@property(assign,retain) CLLocation * predictedLocation;
-@property(assign,retain) NSString * subtitle;
-@property(assign,readwrite) double timestamp;
-@property(assign,retain) NSString * title;
-@property(getter=isUpdating,assign,readwrite) bool updating;
+@property (nonatomic, readonly) <MKAnnotation> *annotation;
+@property (nonatomic) double course;
+@property (nonatomic, retain) CLLocation *fixedLocation;
+@property (nonatomic, retain) CLHeading *heading;
+@property (nonatomic, retain) CLLocation *location;
+@property (nonatomic, retain) CLLocation *predictedLocation;
+@property (nonatomic, retain) NSString *subtitle;
+@property (nonatomic) double timestamp;
+@property (nonatomic, retain) NSString *title;
+@property (getter=isUpdating, nonatomic) bool updating;
 
 - (void).cxx_destruct;
 - (id)annotation;

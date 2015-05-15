@@ -43,12 +43,12 @@
     double _topEdgeInset;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * dividerTitle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double topEdgeInset;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *dividerTitle;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) double topEdgeInset;
 
 + (id)_attributedStringForButtonViewElement:(id)arg1 context:(id)arg2;
 + (id)_attributedStringForDividerTitle:(id)arg1 context:(id)arg2;

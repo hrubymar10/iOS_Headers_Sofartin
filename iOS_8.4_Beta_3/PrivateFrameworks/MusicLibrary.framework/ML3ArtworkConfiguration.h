@@ -8,9 +8,9 @@
     NSMutableDictionary *_supportedSizesCache;
 }
 
-@property(assign,retain) NSMutableDictionary * artworkConfigurationDictionary;
-@property(assign,readwrite) double mainScreenScale;
-@property(assign,retain) NSMutableDictionary * supportedSizesCache;
+@property (nonatomic, retain) NSMutableDictionary *artworkConfigurationDictionary;
+@property (nonatomic) double mainScreenScale;
+@property (nonatomic, retain) NSMutableDictionary *supportedSizesCache;
 
 + (id)systemConfiguration;
 

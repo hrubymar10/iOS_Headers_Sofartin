@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(getter=_classesByAceClassNameByGroupIdentifier,assign,readonly) NSMutableDictionary * classesByAceClassNameByGroupIdentifier;
-@property(getter=_queue,assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (getter=_classesByAceClassNameByGroupIdentifier, nonatomic, readonly) NSMutableDictionary *classesByAceClassNameByGroupIdentifier;
+@property (getter=_queue, nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
 
 + (id)sharedClassRegistry;
 

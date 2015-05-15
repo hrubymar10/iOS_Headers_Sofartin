@@ -7,8 +7,8 @@
     NSURL *_requestURL;
 }
 
-@property(assign,copy) NSString * requestMethod;
-@property(assign,copy) NSURL * requestURL;
+@property (nonatomic, copy) NSString *requestMethod;
+@property (nonatomic, copy) NSURL *requestURL;
 
 - (struct __CFHTTPMessage { }*)copyMessage;
 - (void)dealloc;

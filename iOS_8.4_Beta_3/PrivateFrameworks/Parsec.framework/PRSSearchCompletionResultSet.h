@@ -17,19 +17,19 @@
     NSArray *_results;
 }
 
-@property(getter=isCacheable,assign,readonly) bool cacheable;
-@property(assign,readonly) float completionScore;
-@property(assign,readonly) NSString * completionString;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * feedbackQueryIdentifier;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double maxAge;
-@property(assign,readonly) NSArray * patternStrings;
-@property(assign,readonly) NSString * prefix;
-@property(assign,readonly) NSString * resultStatusString;
-@property(assign,readonly) NSArray * results;
-@property(assign,readonly) Class superclass;
+@property (getter=isCacheable, nonatomic, readonly) bool cacheable;
+@property (nonatomic, readonly) float completionScore;
+@property (nonatomic, readonly) NSString *completionString;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *feedbackQueryIdentifier;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double maxAge;
+@property (nonatomic, readonly) NSArray *patternStrings;
+@property (nonatomic, readonly) NSString *prefix;
+@property (nonatomic, readonly) NSString *resultStatusString;
+@property (nonatomic, readonly) NSArray *results;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (Class)classForObjectsAtPropertyPath:(id)arg1 ofObject:(id)arg2 protocol:(id*)arg3;

@@ -18,28 +18,28 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(getter=isBlocked,assign,readwrite) bool blocked;
-@property(getter=isBridged,assign,readonly) bool bridged;
-@property(assign,readwrite) bool bridgedAccessory;
-@property(getter=isConfigured,assign,readonly) bool configured;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <HMAccessoryDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) HMHome * home;
-@property(assign,copy) NSUUID * identifier;
-@property(assign,copy) NSArray * identifiersForBridgedAccessories;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * messageReceiveQueue;
-@property(assign,readonly) NSUUID * messageTargetUUID;
-@property(assign,retain) HMMessageDispatcher * msgDispatcher;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) bool paired;
-@property(getter=isReachable,assign,readwrite) bool reachable;
-@property(assign,readwrite) HMRoom * room;
-@property(assign,copy) NSArray * services;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSUUID * uuid;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (getter=isBlocked, nonatomic) bool blocked;
+@property (getter=isBridged, nonatomic, readonly) bool bridged;
+@property (nonatomic) bool bridgedAccessory;
+@property (getter=isConfigured, nonatomic, readonly) bool configured;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <HMAccessoryDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) HMHome *home;
+@property (nonatomic, readonly, copy) NSUUID *identifier;
+@property (nonatomic, copy) NSArray *identifiersForBridgedAccessories;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *messageReceiveQueue;
+@property (nonatomic, readonly) NSUUID *messageTargetUUID;
+@property (nonatomic, retain) HMMessageDispatcher *msgDispatcher;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) bool paired;
+@property (getter=isReachable, nonatomic) bool reachable;
+@property (nonatomic) HMRoom *room;
+@property (nonatomic, copy) NSArray *services;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSUUID *uuid;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 + (bool)supportsSecureCoding;
 

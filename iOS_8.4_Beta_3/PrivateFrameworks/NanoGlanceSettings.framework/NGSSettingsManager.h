@@ -6,7 +6,7 @@
     <NGSSettingsManagerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <NGSSettingsManagerDelegate> * delegate;
+@property (nonatomic) <NGSSettingsManagerDelegate> *delegate;
 
 + (id)sharedSettingsManager;
 

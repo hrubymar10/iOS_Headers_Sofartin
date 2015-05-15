@@ -8,13 +8,13 @@
     int _targetPID;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned int reason;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * targetBundleIdentifier;
-@property(assign,readwrite) int targetPID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned int reason;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *targetBundleIdentifier;
+@property (nonatomic) int targetPID;
 
 - (void)dealloc;
 - (id)description;

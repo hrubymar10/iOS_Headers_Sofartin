@@ -9,10 +9,10 @@
     <GKChallengeEventHandlerUIDelegate> *_uiDelegate;
 }
 
-@property(assign,readwrite) <GKChallengeEventHandlerDelegate> * delegate;
-@property(assign,retain) GKChallengeInternal * pendingCompletedChallenge;
-@property(assign,retain) GKChallengeInternal * pendingReceivedChallenge;
-@property(assign,retain) <GKChallengeEventHandlerUIDelegate> * uiDelegate;
+@property (nonatomic) <GKChallengeEventHandlerDelegate> *delegate;
+@property (nonatomic, retain) GKChallengeInternal *pendingCompletedChallenge;
+@property (nonatomic, retain) GKChallengeInternal *pendingReceivedChallenge;
+@property (nonatomic, retain) <GKChallengeEventHandlerUIDelegate> *uiDelegate;
 
 + (id)challengeEventHandler;
 + (Class)uiDelegateClass;

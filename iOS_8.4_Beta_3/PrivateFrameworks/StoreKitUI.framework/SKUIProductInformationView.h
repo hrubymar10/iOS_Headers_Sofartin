@@ -18,11 +18,11 @@
     NSMutableArray *_valueLabels;
 }
 
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,readwrite) bool hidesSeparatorView;
-@property(assign,retain) NSArray * informationLines;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic) bool hidesSeparatorView;
+@property (nonatomic, retain) NSArray *informationLines;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (double)_keyWidth;

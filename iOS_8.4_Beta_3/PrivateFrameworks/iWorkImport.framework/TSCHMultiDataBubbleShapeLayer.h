@@ -11,8 +11,8 @@
     double mViewScale;
 }
 
-@property(assign,retain) TSDFill * fill;
-@property(assign,readwrite) double viewScale;
+@property (nonatomic, retain) TSDFill *fill;
+@property (nonatomic) double viewScale;
 
 - (bool)aboveIntercept;
 - (id)chartRep;

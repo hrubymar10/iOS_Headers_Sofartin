@@ -7,13 +7,13 @@
     id _printerInfo;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,copy) NSString * displayLocation;
-@property(assign,copy) NSString * displayName;
-@property(assign,copy) NSString * makeAndModel;
-@property(assign,readonly) long long supportedJobTypes;
-@property(assign,readonly) bool supportsColor;
-@property(assign,readonly) bool supportsDuplex;
+@property (readonly, copy) NSURL *URL;
+@property (readonly, copy) NSString *displayLocation;
+@property (readonly, copy) NSString *displayName;
+@property (readonly, copy) NSString *makeAndModel;
+@property (readonly) long long supportedJobTypes;
+@property (readonly) bool supportsColor;
+@property (readonly) bool supportsDuplex;
 
 + (id)printerWithURL:(id)arg1;
 

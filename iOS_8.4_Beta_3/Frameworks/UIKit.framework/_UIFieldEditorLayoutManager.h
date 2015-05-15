@@ -6,7 +6,7 @@
     bool _needsExtraBulletRendering;
 }
 
-@property(assign,readwrite) bool needsExtraBulletRendering;
+@property bool needsExtraBulletRendering;
 
 - (bool)needsExtraBulletRendering;
 - (void)setNeedsExtraBulletRendering:(bool)arg1;

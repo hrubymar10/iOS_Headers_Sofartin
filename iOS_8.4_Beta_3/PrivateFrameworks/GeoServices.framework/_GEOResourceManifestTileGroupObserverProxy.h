@@ -8,7 +8,7 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic) NSObject<OS_dispatch_queue> *queue;
 
 - (void)addObserver:(id)arg1;
 - (void)dealloc;

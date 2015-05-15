@@ -32,8 +32,8 @@
     double mTopInset;
 }
 
-@property(assign,readonly) bool displayInPicker;
-@property(assign,copy) NSString * frameName;
+@property (nonatomic, readonly) bool displayInPicker;
+@property (nonatomic, readonly, copy) NSString *frameName;
 
 + (id)frameSpecWithName:(id)arg1;
 + (id)frameSpecs;

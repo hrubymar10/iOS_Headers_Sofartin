@@ -8,7 +8,7 @@
     NSMutableArray *_runningAnimations;
 }
 
-@property(assign,copy) NSArray * animations;
+@property (nonatomic, copy) NSArray *animations;
 
 - (bool)_animateForInterval:(double)arg1;
 - (void)_appendSubclassDescription:(id)arg1 atLevel:(int)arg2;

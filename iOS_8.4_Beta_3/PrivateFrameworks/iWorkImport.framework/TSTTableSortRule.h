@@ -7,8 +7,8 @@
     int mDirection;
 }
 
-@property(assign,readonly) unsigned char columnIndex;
-@property(assign,readonly) int direction;
+@property (nonatomic, readonly) unsigned char columnIndex;
+@property (nonatomic, readonly) int direction;
 
 + (id)ruleWithColumnIndex:(unsigned char)arg1 direction:(int)arg2;
 

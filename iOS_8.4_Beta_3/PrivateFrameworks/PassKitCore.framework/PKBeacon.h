@@ -10,11 +10,11 @@
     NSString *_relevantText;
 }
 
-@property(assign,retain) NSNumber * major;
-@property(assign,retain) NSNumber * minor;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSUUID * proximityUUID;
-@property(assign,retain) NSString * relevantText;
+@property (nonatomic, retain) NSNumber *major;
+@property (nonatomic, retain) NSNumber *minor;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSUUID *proximityUUID;
+@property (nonatomic, retain) NSString *relevantText;
 
 + (bool)supportsSecureCoding;
 

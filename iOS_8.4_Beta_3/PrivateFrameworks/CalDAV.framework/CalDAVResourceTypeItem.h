@@ -12,13 +12,13 @@
     CoreDAVItemWithNoChildren *_subscribed;
 }
 
-@property(assign,retain) CoreDAVItemWithNoChildren * calendar;
-@property(assign,retain) CoreDAVItemWithNoChildren * isFamilyCalendar;
-@property(assign,retain) CoreDAVItemWithNoChildren * notification;
-@property(assign,retain) CoreDAVItemWithNoChildren * scheduleInbox;
-@property(assign,retain) CoreDAVItemWithNoChildren * scheduleOutbox;
-@property(assign,retain) CoreDAVItemWithNoChildren * sharedOwner;
-@property(assign,retain) CoreDAVItemWithNoChildren * subscribed;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *calendar;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *isFamilyCalendar;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *notification;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *scheduleInbox;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *scheduleOutbox;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *sharedOwner;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *subscribed;
 
 - (id)calendar;
 - (id)copyParseRules;

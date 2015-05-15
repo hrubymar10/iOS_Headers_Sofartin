@@ -14,13 +14,13 @@
     NSArray *_pendingHistoryCategories;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUHistoryDataSourceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * historyCategories;
-@property(getter=isRefreshing,assign,readonly) bool refreshing;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUHistoryDataSourceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) NSArray *historyCategories;
+@property (getter=isRefreshing, nonatomic, readonly) bool refreshing;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_adIdentifierForHistoryItem:(id)arg1;

@@ -4,9 +4,9 @@
 
 @interface SAUIHtmlView : SAAceView
 
-@property(assign,copy) NSArray * commands;
-@property(assign,copy) NSString * descriptionText;
-@property(assign,copy) NSString * html;
+@property (nonatomic, copy) NSArray *commands;
+@property (nonatomic, copy) NSString *descriptionText;
+@property (nonatomic, copy) NSString *html;
 
 + (id)htmlView;
 + (id)htmlViewWithDictionary:(id)arg1 context:(id)arg2;

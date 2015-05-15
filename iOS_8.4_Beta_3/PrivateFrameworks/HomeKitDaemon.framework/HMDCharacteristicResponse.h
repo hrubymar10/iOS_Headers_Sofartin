@@ -8,9 +8,9 @@
     id _value;
 }
 
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) HMDCharacteristicRequest * request;
-@property(assign,readonly) id value;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) HMDCharacteristicRequest *request;
+@property (nonatomic, readonly) id value;
 
 + (id)responseWithRequest:(id)arg1 error:(id)arg2;
 

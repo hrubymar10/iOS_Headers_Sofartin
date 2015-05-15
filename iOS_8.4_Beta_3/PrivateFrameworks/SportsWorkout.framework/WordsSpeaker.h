@@ -7,7 +7,7 @@
     Player *_player;
 }
 
-@property(assign,readonly) bool isPlaying;
+@property (nonatomic, readonly) bool isPlaying;
 
 - (id)initWithGender:(id)arg1 language:(id)arg2;
 - (bool)isPlaying;

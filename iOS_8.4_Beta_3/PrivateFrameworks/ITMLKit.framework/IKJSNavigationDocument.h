@@ -6,8 +6,8 @@
     <IKAppNavigationController> *_navigationControllerDelegate;
 }
 
-@property(assign,retain) NSArray * documents;
-@property(assign,readonly) <IKAppNavigationController> * navigationControllerDelegate;
+@property (nonatomic, readonly, retain) NSArray *documents;
+@property (nonatomic, readonly) <IKAppNavigationController> *navigationControllerDelegate;
 
 - (void).cxx_destruct;
 - (id)_makeAppDocumentWithDocument:(id)arg1;

@@ -4,11 +4,11 @@
 
 @interface DOMAttr : DOMNode
 
-@property(assign,copy) NSString * name;
-@property(assign,readonly) DOMElement * ownerElement;
-@property(assign,readonly) bool specified;
-@property(assign,readonly) DOMCSSStyleDeclaration * style;
-@property(assign,copy) NSString * value;
+@property (readonly, copy) NSString *name;
+@property (readonly) DOMElement *ownerElement;
+@property (readonly) bool specified;
+@property (readonly) DOMCSSStyleDeclaration *style;
+@property (copy) NSString *value;
 
 - (bool)isId;
 - (id)name;

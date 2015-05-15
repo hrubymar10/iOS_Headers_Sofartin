@@ -12,14 +12,14 @@
     NSString *_watchBundleIdentifier;
 }
 
-@property(assign,retain) NSString * companionBundleIdentifier;
-@property(assign,readonly) bool hasCompanionBundleIdentifier;
-@property(assign,readonly) bool hasLocalizedDisplayName;
-@property(assign,readwrite) bool hasPlaybackState;
-@property(assign,readonly) bool hasWatchBundleIdentifier;
-@property(assign,retain) NSString * localizedDisplayName;
-@property(assign,readwrite) unsigned int playbackState;
-@property(assign,retain) NSString * watchBundleIdentifier;
+@property (nonatomic, retain) NSString *companionBundleIdentifier;
+@property (nonatomic, readonly) bool hasCompanionBundleIdentifier;
+@property (nonatomic, readonly) bool hasLocalizedDisplayName;
+@property (nonatomic) bool hasPlaybackState;
+@property (nonatomic, readonly) bool hasWatchBundleIdentifier;
+@property (nonatomic, retain) NSString *localizedDisplayName;
+@property (nonatomic) unsigned int playbackState;
+@property (nonatomic, retain) NSString *watchBundleIdentifier;
 
 - (void).cxx_destruct;
 - (id)companionBundleIdentifier;

@@ -11,12 +11,12 @@
     NSString *_unmodifiedInput;
 }
 
-@property(assign,readwrite) unsigned short keyCode;
-@property(assign,readwrite) bool keyDown;
-@property(assign,retain) NSString * modifiedInput;
-@property(assign,readwrite) unsigned int modifierState;
-@property(assign,retain) NSString * shiftModifiedInput;
-@property(assign,retain) NSString * unmodifiedInput;
+@property (nonatomic) unsigned short keyCode;
+@property (nonatomic) bool keyDown;
+@property (nonatomic, retain) NSString *modifiedInput;
+@property (nonatomic) unsigned int modifierState;
+@property (nonatomic, retain) NSString *shiftModifiedInput;
+@property (nonatomic, retain) NSString *unmodifiedInput;
 
 + (bool)supportsSecureCoding;
 

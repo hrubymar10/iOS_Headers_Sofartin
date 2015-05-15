@@ -6,7 +6,7 @@
     SKUIAttributedStringView *_delegateView;
 }
 
-@property(assign,readonly) SKUIAttributedStringView * delegateView;
+@property (nonatomic, readonly) SKUIAttributedStringView *delegateView;
 
 - (void).cxx_destruct;
 - (double)baselineOffset;

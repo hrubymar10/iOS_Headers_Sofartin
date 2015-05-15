@@ -12,12 +12,12 @@
     AWDCoreRoutineTransitionMotionType *_transitionHistogram;
 }
 
-@property(assign,readwrite) unsigned int distance;
-@property(assign,readwrite) unsigned int duration;
-@property(assign,readwrite) bool hasDistance;
-@property(assign,readwrite) bool hasDuration;
-@property(assign,readonly) bool hasTransitionHistogram;
-@property(assign,retain) AWDCoreRoutineTransitionMotionType * transitionHistogram;
+@property (nonatomic) unsigned int distance;
+@property (nonatomic) unsigned int duration;
+@property (nonatomic) bool hasDistance;
+@property (nonatomic) bool hasDuration;
+@property (nonatomic, readonly) bool hasTransitionHistogram;
+@property (nonatomic, retain) AWDCoreRoutineTransitionMotionType *transitionHistogram;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

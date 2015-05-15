@@ -8,7 +8,7 @@
     MPAudioVideoRoutingTableViewController *_tableViewController;
 }
 
-@property(assign,readwrite) <MPAudioVideoRoutingViewControllerDelegate> * delegate;
+@property (nonatomic) <MPAudioVideoRoutingViewControllerDelegate> *delegate;
 
 + (bool)hasWirelessDisplayRoutes;
 

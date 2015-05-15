@@ -8,9 +8,9 @@
     NSString *_searchScope;
 }
 
-@property(assign,readwrite) bool includePhotos;
-@property(assign,copy) NSString * searchBase;
-@property(assign,copy) NSString * searchScope;
+@property (nonatomic) bool includePhotos;
+@property (nonatomic, copy) NSString *searchBase;
+@property (nonatomic, copy) NSString *searchScope;
 
 + (id)contactsSearchQueryWithSearchString:(id)arg1 searchBase:(id)arg2 searchScope:(id)arg3 consumer:(id)arg4;
 

@@ -4,7 +4,7 @@
 
 @interface SAStartStructuredDictationRequest : SAStartRequest
 
-@property(assign,copy) NSString * structuredDictationType;
+@property (nonatomic, copy) NSString *structuredDictationType;
 
 + (id)startStructuredDictationRequest;
 + (id)startStructuredDictationRequestWithDictionary:(id)arg1 context:(id)arg2;

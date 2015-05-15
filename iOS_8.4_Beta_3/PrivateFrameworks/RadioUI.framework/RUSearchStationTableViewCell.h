@@ -12,10 +12,10 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readwrite) bool showActivityIndicator;
-@property(assign,readwrite) bool showsArtwork;
-@property(assign,copy) MPUEmphasizedText * stationDescriptionEmphasizedText;
-@property(assign,copy) MPUEmphasizedText * stationNameEmphasizedText;
+@property (nonatomic) bool showActivityIndicator;
+@property (nonatomic) bool showsArtwork;
+@property (nonatomic, copy) MPUEmphasizedText *stationDescriptionEmphasizedText;
+@property (nonatomic, copy) MPUEmphasizedText *stationNameEmphasizedText;
 
 + (id)_emphasizedSubtitleLabelAttributesForTraitCollection:(id)arg1;
 + (id)_emphasizedTextColor;

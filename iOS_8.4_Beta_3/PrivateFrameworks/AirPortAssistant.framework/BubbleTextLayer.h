@@ -71,19 +71,19 @@
     struct CGColor { } *_whiteShadowColor;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } boundsSizeConstraint;
-@property(assign,retain) struct CGColor { }* fillColor;
-@property(assign,retain) struct CGColor { }* fillColor2;
-@property(assign,readwrite) double fontSize;
-@property(assign,retain) struct CGColor { }* foregroundColor;
-@property(assign,retain) struct CGColor { }* frameColor;
-@property(assign,readwrite) double frameWidth;
-@property(assign,retain) struct CGImage { }* image;
-@property(assign,readwrite) id owningView;
-@property(assign,retain) CALayer * rightAccessoryLayer;
-@property(assign,retain) id string;
-@property(assign,readonly) double textBaselineOffset;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } textFrame;
+@property (nonatomic) struct CGSize { double x1; double x2; } boundsSizeConstraint;
+@property (nonatomic, retain) struct CGColor { }*fillColor;
+@property (nonatomic, retain) struct CGColor { }*fillColor2;
+@property (nonatomic) double fontSize;
+@property (nonatomic, retain) struct CGColor { }*foregroundColor;
+@property (nonatomic, retain) struct CGColor { }*frameColor;
+@property (nonatomic) double frameWidth;
+@property (nonatomic, retain) struct CGImage { }*image;
+@property (nonatomic) id owningView;
+@property (nonatomic, retain) CALayer *rightAccessoryLayer;
+@property (nonatomic, retain) id string;
+@property (nonatomic, readonly) double textBaselineOffset;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } textFrame;
 
 + (bool)needsDisplayForKey:(id)arg1;
 

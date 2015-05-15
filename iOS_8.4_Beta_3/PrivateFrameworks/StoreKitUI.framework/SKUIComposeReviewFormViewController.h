@@ -8,12 +8,12 @@
     SKUIReviewMetadata *_review;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIComposeReviewFormDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) SKUIReviewMetadata * editedReviewMetadata;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIComposeReviewFormDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) SKUIReviewMetadata *editedReviewMetadata;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_cancel;

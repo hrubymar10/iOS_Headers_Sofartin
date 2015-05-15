@@ -8,7 +8,7 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readwrite) UINavigationItem * item;
+@property (nonatomic) UINavigationItem *item;
 
 - (id)_currentTextColorForBarStyle:(long long)arg1;
 - (id)_currentTextShadowColorForBarStyle:(long long)arg1;

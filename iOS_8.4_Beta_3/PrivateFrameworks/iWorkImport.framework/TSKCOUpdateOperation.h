@@ -6,7 +6,7 @@
     NSString *mPropertyName;
 }
 
-@property(assign,readonly) NSString * propertyName;
+@property (nonatomic, readonly) NSString *propertyName;
 
 - (int)conflictTypeWithOperation:(id)arg1 hadRun:(bool)arg2;
 - (void)dealloc;

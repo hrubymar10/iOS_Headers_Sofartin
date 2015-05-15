@@ -7,7 +7,7 @@
     UIView *_viewServiceHostView;
 }
 
-@property(assign,readwrite) UIView * viewServiceHostView;
+@property (nonatomic) UIView *viewServiceHostView;
 
 + (id)remoteKeyboardWindowForScreen:(id)arg1 create:(bool)arg2 forViewService:(bool)arg3;
 

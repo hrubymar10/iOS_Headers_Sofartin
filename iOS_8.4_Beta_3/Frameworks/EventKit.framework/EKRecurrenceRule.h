@@ -7,25 +7,25 @@
     bool _usesEndDate;
 }
 
-@property(assign,readonly) NSString * UUID;
-@property(assign,retain) EKRecurrenceEnd * cachedEnd;
-@property(assign,readonly) NSDate * cachedEndDate;
-@property(assign,readonly) NSString * calendarIdentifier;
-@property(assign,readonly) NSArray * daysOfTheMonth;
-@property(assign,readonly) NSArray * daysOfTheWeek;
-@property(assign,readonly) NSArray * daysOfTheYear;
-@property(assign,readonly) bool dirtyStateMayAffectExceptionDates;
-@property(assign,readonly) long long firstDayOfTheWeek;
-@property(assign,readonly) int frequency;
-@property(assign,readonly) struct { int x1; int x2; int x3; int x4; int x5; double x6; } gregorianUnits;
-@property(assign,readonly) long long interval;
-@property(assign,readonly) NSArray * monthsOfTheYear;
-@property(assign,retain) EKCalendarItem * owner;
-@property(assign,copy) EKRecurrenceEnd * recurrenceEnd;
-@property(assign,readonly) NSArray * setPositions;
-@property(assign,readonly) bool shouldPinMonthDays;
-@property(assign,readonly) bool usesEndDate;
-@property(assign,readonly) NSArray * weeksOfTheYear;
+@property (nonatomic, readonly) NSString *UUID;
+@property (nonatomic, retain) EKRecurrenceEnd *cachedEnd;
+@property (nonatomic, readonly) NSDate *cachedEndDate;
+@property (nonatomic, readonly) NSString *calendarIdentifier;
+@property (nonatomic, readonly) NSArray *daysOfTheMonth;
+@property (nonatomic, readonly) NSArray *daysOfTheWeek;
+@property (nonatomic, readonly) NSArray *daysOfTheYear;
+@property (nonatomic, readonly) bool dirtyStateMayAffectExceptionDates;
+@property (nonatomic, readonly) long long firstDayOfTheWeek;
+@property (nonatomic, readonly) int frequency;
+@property (readonly) struct { int x1; int x2; int x3; int x4; int x5; double x6; } gregorianUnits;
+@property (nonatomic, readonly) long long interval;
+@property (nonatomic, readonly) NSArray *monthsOfTheYear;
+@property (nonatomic, retain) EKCalendarItem *owner;
+@property (nonatomic, copy) EKRecurrenceEnd *recurrenceEnd;
+@property (nonatomic, readonly) NSArray *setPositions;
+@property (nonatomic, readonly) bool shouldPinMonthDays;
+@property (readonly) bool usesEndDate;
+@property (nonatomic, readonly) NSArray *weeksOfTheYear;
 
 + (id)iCalendarValueFromDate:(id)arg1 isDateOnly:(bool)arg2 isFloating:(bool)arg3;
 + (id)iCalendarValueFromDayOfTheWeek:(unsigned long long)arg1;

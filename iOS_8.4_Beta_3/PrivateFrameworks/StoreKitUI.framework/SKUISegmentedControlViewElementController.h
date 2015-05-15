@@ -14,16 +14,16 @@
     SKUISegmentedControlViewElement *_viewElement;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) long long defaultMaximumNumberOfVisibleItems;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double desiredSegmentWidth;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIViewController * parentViewController;
-@property(assign,readonly) UIView * segmentedControlView;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) SKUISegmentedControlViewElement * viewElement;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) long long defaultMaximumNumberOfVisibleItems;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double desiredSegmentWidth;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UIViewController *parentViewController;
+@property (nonatomic, readonly) UIView *segmentedControlView;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) SKUISegmentedControlViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (void)_cancelMenuAction:(id)arg1;

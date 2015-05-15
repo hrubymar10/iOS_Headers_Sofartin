@@ -10,12 +10,12 @@
     UIViewController *_viewController;
 }
 
-@property(setter=_setCurlUpRevealedHeight:,assign,readwrite) double _curlUpRevealedHeight;
-@property(assign,readonly) bool animated;
-@property(assign,copy) id completion;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) int transition;
-@property(assign,readwrite) UIViewController * viewController;
+@property (setter=_setCurlUpRevealedHeight:, nonatomic) double _curlUpRevealedHeight;
+@property (nonatomic, readonly) bool animated;
+@property (nonatomic, copy) id completion;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) int transition;
+@property (nonatomic) UIViewController *viewController;
 
 - (double)_curlUpRevealedHeight;
 - (void)_setCurlUpRevealedHeight:(double)arg1;

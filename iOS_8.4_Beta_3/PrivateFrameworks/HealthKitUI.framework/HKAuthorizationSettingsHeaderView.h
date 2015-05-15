@@ -9,10 +9,10 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIImageView * iconImageView;
-@property(assign,copy) NSString * sourceName;
-@property(assign,retain) UILabel * subtitleLabel;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) UIImageView *iconImageView;
+@property (nonatomic, copy) NSString *sourceName;
+@property (nonatomic, retain) UILabel *subtitleLabel;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 - (void).cxx_destruct;
 - (id)_healthIconImage;

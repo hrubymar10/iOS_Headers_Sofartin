@@ -20,21 +20,21 @@
     unsigned int _type;
 }
 
-@property(assign,readwrite) unsigned int M;
-@property(assign,readwrite) double c;
-@property(assign,readwrite) unsigned char* ckeys;
-@property(assign,readwrite) unsigned int factor;
-@property(assign,readwrite) char * g;
-@property(assign,readwrite) unsigned int keyLen;
-@property(assign,readwrite) unsigned short* keys1;
-@property(assign,readwrite) unsigned short* keys2;
-@property(assign,readwrite) unsigned short* keys3;
-@property(assign,readwrite) unsigned int numKey;
-@property(assign,readwrite) void* rankTable;
-@property(assign,readwrite) unsigned int* seeds;
-@property(assign,readwrite) unsigned char select;
-@property(assign,retain) _NSSharedKeySetS * subSharedKeySet;
-@property(assign,readwrite) unsigned int type;
+@property unsigned int M;
+@property double c;
+@property unsigned char*ckeys;
+@property unsigned int factor;
+@property char *g;
+@property unsigned int keyLen;
+@property unsigned short*keys1;
+@property unsigned short*keys2;
+@property unsigned short*keys3;
+@property unsigned int numKey;
+@property void*rankTable;
+@property unsigned int*seeds;
+@property unsigned char select;
+@property (retain) _NSSharedKeySetS *subSharedKeySet;
+@property unsigned int type;
 
 - (unsigned int)M;
 - (id)allKeys;

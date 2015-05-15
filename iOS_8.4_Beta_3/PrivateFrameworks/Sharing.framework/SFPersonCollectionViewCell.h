@@ -56,14 +56,14 @@
     UILabel *_waitingLabel;
 }
 
-@property(assign,readwrite) long long cellState;
-@property(assign,readwrite) bool darkStyleOnLegacyApp;
-@property(assign,readwrite) NSObject<SFPersonCollectionViewCellDelegate> * delegate;
-@property(assign,retain) SFAirDropNode * person;
-@property(assign,retain) NSProgress * progress;
-@property(assign,retain) NSString * sessionID;
-@property(assign,readwrite) bool stateBeingRestored;
-@property(assign,retain) UIColor * textColor;
+@property (nonatomic) long long cellState;
+@property (nonatomic) bool darkStyleOnLegacyApp;
+@property (nonatomic) NSObject<SFPersonCollectionViewCellDelegate> *delegate;
+@property (nonatomic, retain) SFAirDropNode *person;
+@property (nonatomic, retain) NSProgress *progress;
+@property (nonatomic, retain) NSString *sessionID;
+@property (nonatomic) bool stateBeingRestored;
+@property (nonatomic, retain) UIColor *textColor;
 
 - (void).cxx_destruct;
 - (void)addObserverOfValuesForKeyPaths:(id)arg1 ofObject:(id)arg2;

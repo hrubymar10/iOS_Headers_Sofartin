@@ -7,8 +7,8 @@
     bool _success;
 }
 
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) bool success;
+@property (readonly) NSError *error;
+@property (readonly) bool success;
 
 - (void).cxx_destruct;
 - (id)error;

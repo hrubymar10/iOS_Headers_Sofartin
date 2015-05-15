@@ -4,18 +4,18 @@
 
 @interface VKPuckDrawStyle : VKRenderStyle
 
-@property(assign,readonly) float arrowBrightness;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  arrowColor; /* unknown property attribute:  1>=[4f]} */
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  arrowColorStale; /* unknown property attribute:  1>=[4f]} */
-@property(assign,readonly) float circleBrightness;
-@property(assign,readonly) bool hasArrowBrightness;
-@property(assign,readonly) bool hasArrowColor;
-@property(assign,readonly) bool hasArrowColorStale;
-@property(assign,readonly) bool hasCircleBrightness;
-@property(assign,readonly) bool hasOffset;
-@property(assign,readonly) bool hasSize;
-@property(assign,readonly) float offset;
-@property(assign,readonly) float size;
+@property (nonatomic, readonly) float arrowBrightness;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  arrowColor; /* unknown property attribute:  1>=[4f]} */
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  arrowColorStale; /* unknown property attribute:  1>=[4f]} */
+@property (nonatomic, readonly) float circleBrightness;
+@property (nonatomic, readonly) bool hasArrowBrightness;
+@property (nonatomic, readonly) bool hasArrowColor;
+@property (nonatomic, readonly) bool hasArrowColorStale;
+@property (nonatomic, readonly) bool hasCircleBrightness;
+@property (nonatomic, readonly) bool hasOffset;
+@property (nonatomic, readonly) bool hasSize;
+@property (nonatomic, readonly) float offset;
+@property (nonatomic, readonly) float size;
 
 + (int)renderStyleID;
 

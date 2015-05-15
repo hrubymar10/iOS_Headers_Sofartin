@@ -13,12 +13,12 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) int availability;
-@property(assign,readwrite) bool hasAvailability;
-@property(assign,readwrite) bool hasPrecisionRecall;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int precisionRecall;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) int availability;
+@property (nonatomic) bool hasAvailability;
+@property (nonatomic) bool hasPrecisionRecall;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int precisionRecall;
+@property (nonatomic) unsigned long long timestamp;
 
 - (int)availability;
 - (void)copyTo:(id)arg1;

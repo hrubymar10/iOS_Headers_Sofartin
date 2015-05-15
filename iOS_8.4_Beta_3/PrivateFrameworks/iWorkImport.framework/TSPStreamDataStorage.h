@@ -4,22 +4,22 @@
 
 @interface TSPStreamDataStorage : NSObject <TSPDataStorage>
 
-@property(assign,readonly) unsigned int CRC;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) <TSPCryptoInfo> * decryptionInfo;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * documentResourceLocator;
-@property(assign,readonly) unsigned long long encodedLength;
-@property(assign,readwrite) bool gilligan_isRemote;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isMissingData;
-@property(assign,readonly) bool isReadable;
-@property(assign,readonly) unsigned long long length;
-@property(assign,readonly) bool needsDownload;
-@property(assign,readonly) unsigned char packageIdentifier;
-@property(assign,readonly) NSString * packageLocator;
-@property(assign,readonly) bool readOnly;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) unsigned int CRC;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) <TSPCryptoInfo> *decryptionInfo;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *documentResourceLocator;
+@property (nonatomic, readonly) unsigned long long encodedLength;
+@property (nonatomic) bool gilligan_isRemote;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isMissingData;
+@property (nonatomic, readonly) bool isReadable;
+@property (nonatomic, readonly) unsigned long long length;
+@property (nonatomic, readonly) bool needsDownload;
+@property (nonatomic, readonly) unsigned char packageIdentifier;
+@property (nonatomic, readonly) NSString *packageLocator;
+@property (nonatomic, readonly) bool readOnly;
+@property (readonly) Class superclass;
 
 - (id)AVAssetWithOptions:(id)arg1 forData:(id)arg2;
 - (id)AVAssetWithOptions:(id)arg1 usingResourceLoaderForData:(id)arg2;

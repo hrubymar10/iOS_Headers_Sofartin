@@ -9,10 +9,10 @@
     NSString *_urlTemplateStringForSuggestionsInXML;
 }
 
-@property(assign,readonly) NSString * descriptionDocumentURLString;
-@property(assign,readonly) NSString * searchURLTemplateString;
-@property(assign,readonly) NSString * urlTemplateStringForSuggestionsInJSON;
-@property(assign,readonly) NSString * urlTemplateStringForSuggestionsInXML;
+@property (nonatomic, readonly) NSString *descriptionDocumentURLString;
+@property (nonatomic, readonly) NSString *searchURLTemplateString;
+@property (nonatomic, readonly) NSString *urlTemplateStringForSuggestionsInJSON;
+@property (nonatomic, readonly) NSString *urlTemplateStringForSuggestionsInXML;
 
 - (void).cxx_destruct;
 - (id)descriptionDocumentURLString;

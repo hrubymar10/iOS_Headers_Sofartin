@@ -7,8 +7,8 @@
     TSCH3DGLFramebuffer *mBlendTexture;
 }
 
-@property(assign,readwrite) float blendFactor;
-@property(assign,retain) TSCH3DGLFramebuffer * blendTexture;
+@property (nonatomic) float blendFactor;
+@property (nonatomic, retain) TSCH3DGLFramebuffer *blendTexture;
 
 + (id)effectsArray;
 

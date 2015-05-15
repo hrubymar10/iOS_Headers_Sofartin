@@ -7,8 +7,8 @@
     unsigned int _port;
 }
 
-@property(assign,retain) NSString * identifier;
-@property(assign,readwrite) unsigned int port;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic) unsigned int port;
 
 - (void)dealloc;
 - (id)identifier;

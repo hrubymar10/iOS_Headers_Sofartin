@@ -8,9 +8,9 @@
     double _position;
 }
 
-@property(assign,readwrite) int alignment;
-@property(assign,copy) NSString * leader;
-@property(assign,readwrite) double position;
+@property (nonatomic) int alignment;
+@property (nonatomic, copy) NSString *leader;
+@property (nonatomic) double position;
 
 + (id)displayStringFromTabLeader:(id)arg1;
 + (id)stringFromTabAlignment:(int)arg1 isRTL:(bool)arg2;

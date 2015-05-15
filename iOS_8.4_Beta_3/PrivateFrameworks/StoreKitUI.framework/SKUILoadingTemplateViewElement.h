@@ -4,7 +4,7 @@
 
 @interface SKUILoadingTemplateViewElement : SKUIViewElement
 
-@property(assign,readonly) SKUIActivityIndicatorViewElement * activityIndicator;
+@property (nonatomic, readonly) SKUIActivityIndicatorViewElement *activityIndicator;
 
 - (id)activityIndicator;
 

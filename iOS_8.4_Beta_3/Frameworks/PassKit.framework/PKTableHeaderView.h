@@ -14,15 +14,15 @@
     double _topPadding;
 }
 
-@property(assign,retain) UIButton * actionButton;
-@property(assign,retain) UIActivityIndicatorView * activityIndicator;
-@property(assign,readwrite) double bottomPadding;
-@property(getter=isBuddyPad,assign,readwrite) bool buddyPad;
-@property(assign,retain) UIImageView * checkmarkView;
-@property(assign,retain) UIImageView * imageView;
-@property(assign,retain) UILabel * subtitleLabel;
-@property(assign,retain) UILabel * titleLabel;
-@property(assign,readwrite) double topPadding;
+@property (nonatomic, readonly, retain) UIButton *actionButton;
+@property (nonatomic, readonly, retain) UIActivityIndicatorView *activityIndicator;
+@property (nonatomic) double bottomPadding;
+@property (getter=isBuddyPad, nonatomic) bool buddyPad;
+@property (nonatomic, readonly, retain) UIImageView *checkmarkView;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, readonly, retain) UILabel *subtitleLabel;
+@property (nonatomic, readonly, retain) UILabel *titleLabel;
+@property (nonatomic) double topPadding;
 
 - (id)_subtitleFont;
 - (id)_titleFont;

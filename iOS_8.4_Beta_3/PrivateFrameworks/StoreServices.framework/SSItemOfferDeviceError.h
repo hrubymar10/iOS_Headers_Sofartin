@@ -9,10 +9,10 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) NSString * localizedMessage;
-@property(assign,readonly) NSString * localizedTitle;
-@property(assign,readonly) NSString * localizedURLTitle;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) NSString *localizedMessage;
+@property (nonatomic, readonly) NSString *localizedTitle;
+@property (nonatomic, readonly) NSString *localizedURLTitle;
 
 - (id)URL;
 - (id)_initWithMessage:(id)arg1 title:(id)arg2 URLTitle:(id)arg3 URL:(id)arg4;

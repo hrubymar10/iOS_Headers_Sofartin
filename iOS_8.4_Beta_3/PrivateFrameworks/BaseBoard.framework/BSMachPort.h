@@ -11,11 +11,11 @@
     unsigned long long _sendRights;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned int port;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned int port;
+@property (readonly) Class superclass;
 
 + (id)bootstrapLookUpPortWithName:(id)arg1;
 + (id)createReceiveRight;

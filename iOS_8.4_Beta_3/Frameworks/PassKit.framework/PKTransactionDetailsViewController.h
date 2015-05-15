@@ -9,8 +9,8 @@
     NSDictionary *_transactionDetails;
 }
 
-@property(assign,retain) NSDictionary * merchantDetails;
-@property(assign,retain) NSDictionary * transactionDetails;
+@property (nonatomic, retain) NSDictionary *merchantDetails;
+@property (nonatomic, retain) NSDictionary *transactionDetails;
 
 - (id)_cellWithPrimaryText:(id)arg1 infoText:(id)arg2;
 - (void)_didSelectMap;

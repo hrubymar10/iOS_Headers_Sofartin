@@ -10,9 +10,9 @@
     _MusicEntityPlaybackProgressApplierWeakTarget *_weakDisplayLinkTarget;
 }
 
-@property(assign,copy) id handler;
-@property(assign,copy) MusicEntityPlaybackStatus * playbackStatus;
-@property(assign,retain) UIScreen * screen;
+@property (nonatomic, copy) id handler;
+@property (nonatomic, copy) MusicEntityPlaybackStatus *playbackStatus;
+@property (nonatomic, retain) UIScreen *screen;
 
 - (void).cxx_destruct;
 - (void)_displayLinkAction:(id)arg1;

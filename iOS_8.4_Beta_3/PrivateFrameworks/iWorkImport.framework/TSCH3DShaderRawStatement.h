@@ -9,12 +9,12 @@
     NSString *mString;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct TSCH3DShaderType { unsigned long long x1; } linkageType;
-@property(assign,readonly) NSString * string;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct TSCH3DShaderType { unsigned long long x1; } linkageType;
+@property (nonatomic, readonly) NSString *string;
+@property (readonly) Class superclass;
 
 + (id)statementWithString:(id)arg1 linkageType:(struct TSCH3DShaderType { unsigned long long x1; })arg2;
 

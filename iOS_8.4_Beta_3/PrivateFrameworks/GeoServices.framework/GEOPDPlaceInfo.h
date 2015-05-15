@@ -13,14 +13,14 @@
     GEOTimezone *_timezone;
 }
 
-@property(assign,readwrite) double area;
-@property(assign,retain) GEOLatLng * center;
-@property(assign,readwrite) bool hasArea;
-@property(assign,readonly) bool hasCenter;
-@property(assign,readwrite) bool hasIsApproximateCenter;
-@property(assign,readonly) bool hasTimezone;
-@property(assign,readwrite) bool isApproximateCenter;
-@property(assign,retain) GEOTimezone * timezone;
+@property (nonatomic) double area;
+@property (nonatomic, retain) GEOLatLng *center;
+@property (nonatomic) bool hasArea;
+@property (nonatomic, readonly) bool hasCenter;
+@property (nonatomic) bool hasIsApproximateCenter;
+@property (nonatomic, readonly) bool hasTimezone;
+@property (nonatomic) bool isApproximateCenter;
+@property (nonatomic, retain) GEOTimezone *timezone;
 
 + (id)placeInfoForPlaceData:(id)arg1;
 

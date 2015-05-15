@@ -8,12 +8,12 @@
     TSPMemoryComponentWriteChannel *_rootComponentWriteChannel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSObject<OS_dispatch_data> * metadataDispatchData;
-@property(assign,readonly) NSObject<OS_dispatch_data> * rootObjectComponentDispatchData;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSObject<OS_dispatch_data> *metadataDispatchData;
+@property (nonatomic, readonly) NSObject<OS_dispatch_data> *rootObjectComponentDispatchData;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)encodedData;

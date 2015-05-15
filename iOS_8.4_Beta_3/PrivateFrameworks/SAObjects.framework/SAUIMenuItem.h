@@ -4,11 +4,11 @@
 
 @interface SAUIMenuItem : SAAceView
 
-@property(assign,copy) NSArray * commands;
-@property(assign,copy) NSURL * icon;
-@property(assign,copy) NSURL * ref;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSArray *commands;
+@property (nonatomic, copy) NSURL *icon;
+@property (nonatomic, copy) NSURL *ref;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
 
 + (id)menuItem;
 + (id)menuItemWithDictionary:(id)arg1 context:(id)arg2;

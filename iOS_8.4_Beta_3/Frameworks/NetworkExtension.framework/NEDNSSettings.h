@@ -7,8 +7,8 @@
     NSArray *_servers;
 }
 
-@property(assign,readonly) NSArray * searchDomains;
-@property(assign,readonly) NSArray * servers;
+@property (readonly) NSArray *searchDomains;
+@property (readonly) NSArray *servers;
 
 + (bool)supportsSecureCoding;
 

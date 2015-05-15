@@ -10,10 +10,10 @@
     unsigned long long _hash;
 }
 
-@property(assign,copy) NSString * compatibilityName;
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) NSString * familyName;
-@property(assign,copy) NSString * fontName;
+@property (nonatomic, copy) NSString *compatibilityName;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, readonly) NSString *familyName;
+@property (nonatomic, copy) NSString *fontName;
 
 + (id)fontForStyles:(id*)arg1 count:(unsigned long long)arg2;
 + (id)fontWithName:(id)arg1;

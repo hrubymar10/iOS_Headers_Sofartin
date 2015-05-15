@@ -17,18 +17,18 @@
     long long _status;
 }
 
-@property(assign,readwrite) long long changeTypes;
-@property(assign,retain) CKRecordZoneID * recordZoneID;
-@property(assign,retain) NSArray * requestedFields;
-@property(assign,readonly) NSArray * resultChangedRecords;
-@property(assign,readonly) NSArray * resultChangedShares;
-@property(assign,retain) NSData * resultClientChangeTokenData;
-@property(assign,readonly) NSArray * resultDeletedRecordIdentifiers;
-@property(assign,readonly) NSArray * resultDeletedShareIdentifiers;
-@property(assign,retain) NSData * resultServerChangeTokenData;
-@property(assign,readwrite) unsigned long long resultsLimit;
-@property(assign,retain) NSData * serverChangeTokenData;
-@property(assign,readwrite) long long status;
+@property (nonatomic) long long changeTypes;
+@property (nonatomic, retain) CKRecordZoneID *recordZoneID;
+@property (nonatomic, retain) NSArray *requestedFields;
+@property (nonatomic, readonly) NSArray *resultChangedRecords;
+@property (nonatomic, readonly) NSArray *resultChangedShares;
+@property (nonatomic, retain) NSData *resultClientChangeTokenData;
+@property (nonatomic, readonly) NSArray *resultDeletedRecordIdentifiers;
+@property (nonatomic, readonly) NSArray *resultDeletedShareIdentifiers;
+@property (nonatomic, retain) NSData *resultServerChangeTokenData;
+@property (nonatomic) unsigned long long resultsLimit;
+@property (nonatomic, retain) NSData *serverChangeTokenData;
+@property (nonatomic) long long status;
 
 - (void).cxx_destruct;
 - (long long)changeTypes;

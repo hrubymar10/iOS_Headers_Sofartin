@@ -9,11 +9,11 @@
     UITextField *_textField;
 }
 
-@property(assign,readwrite) <ABPropertyEditingTableViewCellDelegate> * delegate;
-@property(assign,copy) NSString * placeholder;
-@property(assign,readwrite) int property;
-@property(assign,readwrite) bool usesLargeFont;
-@property(assign,copy) NSString * value;
+@property (nonatomic) <ABPropertyEditingTableViewCellDelegate> *delegate;
+@property (nonatomic, copy) NSString *placeholder;
+@property (nonatomic) int property;
+@property (nonatomic) bool usesLargeFont;
+@property (nonatomic, copy) NSString *value;
 
 - (void)_resizeAndCenterTextField;
 - (bool)becomeFirstResponder;

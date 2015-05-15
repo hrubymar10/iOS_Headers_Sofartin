@@ -11,12 +11,12 @@
     UIBarButtonItem *_redeemButton;
 }
 
-@property(assign,readonly) long long category;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * initialCode;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) long long category;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *initialCode;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_cancelAction:(id)arg1;

@@ -9,10 +9,10 @@
     NSDate *_expirationDate;
 }
 
-@property(assign,copy) NSString * cardName;
-@property(assign,copy) NSString * cardNumber;
-@property(assign,copy) NSString * cardholderName;
-@property(assign,copy) NSDate * expirationDate;
+@property (nonatomic, copy) NSString *cardName;
+@property (nonatomic, copy) NSString *cardNumber;
+@property (nonatomic, copy) NSString *cardholderName;
+@property (nonatomic, readonly, copy) NSDate *expirationDate;
 
 - (void).cxx_destruct;
 - (id)cardName;

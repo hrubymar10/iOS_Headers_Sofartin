@@ -4,7 +4,7 @@
 
 @interface _UIKBCompatInputView : UIView
 
-@property(assign,readonly) UIView * touchableView;
+@property (nonatomic, readonly) UIView *touchableView;
 
 + (bool)_retroactivelyRequiresConstraintBasedLayout;
 

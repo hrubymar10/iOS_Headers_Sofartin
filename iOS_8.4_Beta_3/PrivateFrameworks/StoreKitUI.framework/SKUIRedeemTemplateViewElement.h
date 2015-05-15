@@ -6,7 +6,7 @@
     NSString *_initialCode;
 }
 
-@property(assign,readonly) NSString * initialCode;
+@property (nonatomic, readonly) NSString *initialCode;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

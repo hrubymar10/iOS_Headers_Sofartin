@@ -9,10 +9,10 @@
     NSURL *_url;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,readwrite) long long linkTarget;
-@property(assign,readwrite) long long linkType;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic) long long linkTarget;
+@property (nonatomic) long long linkType;
+@property (nonatomic, copy) NSString *title;
 
 - (id)URL;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

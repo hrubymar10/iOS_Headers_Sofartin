@@ -13,14 +13,14 @@
     short _originalWidth;
 }
 
-@property(assign,readonly) PHAsset * asset;
-@property(assign,readonly) NSString * originalAssetsUUID;
-@property(assign,readonly) short originalExifOrientation;
-@property(assign,readonly) NSString * originalFilename;
-@property(assign,readonly) int originalFilesize;
-@property(assign,readonly) short originalHeight;
-@property(assign,readonly) NSString * originalPath;
-@property(assign,readonly) short originalWidth;
+@property (nonatomic, readonly) PHAsset *asset;
+@property (nonatomic, readonly) NSString *originalAssetsUUID;
+@property (nonatomic, readonly) short originalExifOrientation;
+@property (nonatomic, readonly) NSString *originalFilename;
+@property (nonatomic, readonly) int originalFilesize;
+@property (nonatomic, readonly) short originalHeight;
+@property (nonatomic, readonly) NSString *originalPath;
+@property (nonatomic, readonly) short originalWidth;
 
 - (void).cxx_destruct;
 - (id)asset;

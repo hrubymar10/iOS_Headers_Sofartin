@@ -10,12 +10,12 @@
     <ABPresenterDelegate> *_presentingDelegate;
 }
 
-@property(assign,readwrite) bool allowsEditing;
-@property(assign,readwrite) <ABPropertyCellDelegate> * delegate;
-@property(assign,readonly) UIResponder * firstResponderItem;
-@property(assign,readwrite) double labelWidth;
-@property(assign,readwrite) <ABPresenterDelegate> * presentingDelegate;
-@property(assign,readonly) ABPropertyGroupItem * propertyItem;
+@property (nonatomic) bool allowsEditing;
+@property (nonatomic) <ABPropertyCellDelegate> *delegate;
+@property (nonatomic, readonly) UIResponder *firstResponderItem;
+@property (nonatomic) double labelWidth;
+@property (nonatomic) <ABPresenterDelegate> *presentingDelegate;
+@property (nonatomic, readonly) ABPropertyGroupItem *propertyItem;
 
 - (bool)allowsEditing;
 - (void)copy:(id)arg1;

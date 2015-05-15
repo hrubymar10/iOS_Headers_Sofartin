@@ -11,10 +11,10 @@
     bool _wifiAvailable;
 }
 
-@property(assign,readwrite) bool hasSessionIdentifier;
-@property(assign,readwrite) bool hasWifiAvailable;
-@property(assign,readwrite) int sessionIdentifier;
-@property(assign,readwrite) bool wifiAvailable;
+@property (nonatomic) bool hasSessionIdentifier;
+@property (nonatomic) bool hasWifiAvailable;
+@property (nonatomic) int sessionIdentifier;
+@property (nonatomic) bool wifiAvailable;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

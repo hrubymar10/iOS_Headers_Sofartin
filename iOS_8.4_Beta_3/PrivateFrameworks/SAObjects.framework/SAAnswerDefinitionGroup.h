@@ -4,14 +4,14 @@
 
 @interface SAAnswerDefinitionGroup : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSArray * definitionEntries;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * origin;
-@property(assign,copy) NSString * partOfSpeech;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * synonyms;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, copy) NSArray *definitionEntries;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *origin;
+@property (nonatomic, copy) NSString *partOfSpeech;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *synonyms;
 
 + (id)definitionGroup;
 + (id)definitionGroupWithDictionary:(id)arg1 context:(id)arg2;

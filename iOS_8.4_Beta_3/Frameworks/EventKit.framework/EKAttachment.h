@@ -4,13 +4,13 @@
 
 @interface EKAttachment : EKObject
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) NSString * UUID;
-@property(assign,readonly) NSString * fileFormat;
-@property(assign,readonly) NSString * fileName;
-@property(assign,readonly) NSNumber * fileSize;
-@property(assign,readonly) bool isBinary;
-@property(assign,readonly) NSURL * localURL;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) NSString *UUID;
+@property (nonatomic, readonly) NSString *fileFormat;
+@property (nonatomic, readonly) NSString *fileName;
+@property (nonatomic, readonly) NSNumber *fileSize;
+@property (nonatomic, readonly) bool isBinary;
+@property (nonatomic, readonly) NSURL *localURL;
 
 - (id)URL;
 - (id)UUID;

@@ -10,13 +10,13 @@
     NSString *_requestSyncID;
 }
 
-@property(assign,readwrite) bool accepted;
-@property(assign,retain) SYErrorInfo * error;
-@property(assign,readonly) bool hasError;
-@property(assign,readonly) bool hasInProgressSyncID;
-@property(assign,retain) SYMessageHeader * header;
-@property(assign,retain) NSString * inProgressSyncID;
-@property(assign,retain) NSString * requestSyncID;
+@property (nonatomic) bool accepted;
+@property (nonatomic, retain) SYErrorInfo *error;
+@property (nonatomic, readonly) bool hasError;
+@property (nonatomic, readonly) bool hasInProgressSyncID;
+@property (nonatomic, retain) SYMessageHeader *header;
+@property (nonatomic, retain) NSString *inProgressSyncID;
+@property (nonatomic, retain) NSString *requestSyncID;
 
 - (void).cxx_destruct;
 - (bool)accepted;

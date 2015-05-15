@@ -8,9 +8,9 @@
     bool _signaled;
 }
 
-@property(assign,readonly) struct __CFRunLoop { }* runLoop;
-@property(assign,readwrite) struct __CFRunLoopSource { }* signalSource;
-@property(assign,readwrite) bool signaled;
+@property (nonatomic, readonly) struct __CFRunLoop { }*runLoop;
+@property (nonatomic) struct __CFRunLoopSource { }*signalSource;
+@property (nonatomic) bool signaled;
 
 + (id)runLoopStateWithRunLoop:(struct __CFRunLoop { }*)arg1;
 

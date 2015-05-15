@@ -10,11 +10,11 @@
     NSString *_relationship;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSNumber * nameRecordID;
-@property(assign,retain) NSString * phoneNumber;
-@property(assign,retain) NSNumber * phoneNumberPropertyID;
-@property(assign,retain) NSString * relationship;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSNumber *nameRecordID;
+@property (nonatomic, retain) NSString *phoneNumber;
+@property (nonatomic, retain) NSNumber *phoneNumberPropertyID;
+@property (nonatomic, retain) NSString *relationship;
 
 + (bool)supportsSecureCoding;
 

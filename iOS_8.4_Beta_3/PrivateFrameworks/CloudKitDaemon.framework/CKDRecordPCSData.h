@@ -8,9 +8,9 @@
     CKDPCSData *_zonePCSData;
 }
 
-@property(assign,retain) CKRecordID * recordID;
-@property(assign,retain) CKDPCSData * sharePCSData;
-@property(assign,retain) CKDPCSData * zonePCSData;
+@property (nonatomic, retain) CKRecordID *recordID;
+@property (nonatomic, retain) CKDPCSData *sharePCSData;
+@property (nonatomic, retain) CKDPCSData *zonePCSData;
 
 + (id)dataWithRecordID:(id)arg1 pcsData:(id)arg2;
 + (bool)supportsSecureCoding;

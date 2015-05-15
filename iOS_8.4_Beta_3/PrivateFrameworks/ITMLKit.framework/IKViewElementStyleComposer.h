@@ -12,13 +12,13 @@
     IKStyleList *_styleList;
 }
 
-@property(assign,retain) IKViewElementStyle * composedSansDefaultStyle;
-@property(assign,retain) IKViewElementStyle * composedStyle;
-@property(assign,retain) IKViewElementStyleComposer * defaultStyleComposer;
-@property(assign,retain) IKViewElementStyle * elementStyleOverrides;
-@property(assign,retain) IKViewElementStyleComposer * parentStyleComposer;
-@property(assign,readonly) bool requiresMediaQueryEvaluation;
-@property(assign,retain) IKStyleList * styleList;
+@property (nonatomic, retain) IKViewElementStyle *composedSansDefaultStyle;
+@property (nonatomic, retain) IKViewElementStyle *composedStyle;
+@property (nonatomic, readonly, retain) IKViewElementStyleComposer *defaultStyleComposer;
+@property (nonatomic, readonly, retain) IKViewElementStyle *elementStyleOverrides;
+@property (nonatomic, readonly, retain) IKViewElementStyleComposer *parentStyleComposer;
+@property (nonatomic, readonly) bool requiresMediaQueryEvaluation;
+@property (nonatomic, readonly, retain) IKStyleList *styleList;
 
 + (id)styleComposerWithDefaultStyleComposer:(id)arg1 parentStyleComposer:(id)arg2 styleList:(id)arg3 elementStyleOverrides:(id)arg4;
 

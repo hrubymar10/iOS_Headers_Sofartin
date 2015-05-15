@@ -7,8 +7,8 @@
     id _responseBlock;
 }
 
-@property(assign,copy) NSString * itemIdentifier;
-@property(assign,copy) id responseBlock;
+@property (copy) NSString *itemIdentifier;
+@property (copy) id responseBlock;
 
 - (void).cxx_destruct;
 - (id)_requestBodyData;

@@ -10,11 +10,11 @@
     GKLabel *_titleLabel;
 }
 
-@property(assign,retain) UIImageView * caretView;
-@property(assign,retain) GKPlayerMultiPhotoView * iconView;
-@property(assign,retain) NSDictionary * metricsOverrides;
-@property(assign,retain) GKLabel * subtitleLabel;
-@property(assign,retain) GKLabel * titleLabel;
+@property (nonatomic, retain) UIImageView *caretView;
+@property (nonatomic, retain) GKPlayerMultiPhotoView *iconView;
+@property (nonatomic, retain) NSDictionary *metricsOverrides;
+@property (nonatomic, retain) GKLabel *subtitleLabel;
+@property (nonatomic, retain) GKLabel *titleLabel;
 
 + (id)padMetrics;
 + (id)phoneMetrics;

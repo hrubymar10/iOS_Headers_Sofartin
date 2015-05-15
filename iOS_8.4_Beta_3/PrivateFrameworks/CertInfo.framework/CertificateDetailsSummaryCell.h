@@ -6,7 +6,7 @@
     NSArray *_details;
 }
 
-@property(assign,retain) NSArray * details;
+@property (nonatomic, retain) NSArray *details;
 
 - (void).cxx_destruct;
 - (id)details;

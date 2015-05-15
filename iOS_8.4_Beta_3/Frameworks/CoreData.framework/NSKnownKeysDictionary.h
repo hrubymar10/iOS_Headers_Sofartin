@@ -4,7 +4,7 @@
 
 @interface NSKnownKeysDictionary : NSMutableDictionary
 
-@property(assign,readonly) NSKnownKeysMappingStrategy * mapping;
+@property (nonatomic, readonly) NSKnownKeysMappingStrategy *mapping;
 
 + (id)alloc;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;

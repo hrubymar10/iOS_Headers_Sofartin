@@ -4,8 +4,8 @@
 
 @interface SADynamiteClientState : SAAceClientState
 
-@property(assign,retain) SACalendar * expirationDate;
-@property(assign,copy) NSString * status;
+@property (nonatomic, retain) SACalendar *expirationDate;
+@property (nonatomic, copy) NSString *status;
 
 + (id)deliveryDeadline;
 + (id)dynamiteClientState;

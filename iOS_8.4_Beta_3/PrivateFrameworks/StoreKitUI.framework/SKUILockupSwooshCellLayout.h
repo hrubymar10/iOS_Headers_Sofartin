@@ -25,15 +25,15 @@
     unsigned long long _visibleFields;
 }
 
-@property(assign,copy) NSString * artistName;
-@property(assign,copy) NSString * category;
-@property(assign,copy) NSString * itemCountString;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } maxImageSize;
-@property(assign,copy) NSString * price;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } videoSize;
-@property(assign,retain) UIImage * videoThumbnailImage;
-@property(assign,readwrite) unsigned long long visibleFields;
+@property (nonatomic, copy) NSString *artistName;
+@property (nonatomic, copy) NSString *category;
+@property (nonatomic, copy) NSString *itemCountString;
+@property (nonatomic) struct CGSize { double x1; double x2; } maxImageSize;
+@property (nonatomic, copy) NSString *price;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) struct CGSize { double x1; double x2; } videoSize;
+@property (nonatomic, retain) UIImage *videoThumbnailImage;
+@property (nonatomic) unsigned long long visibleFields;
 
 - (void).cxx_destruct;
 - (void)_layoutFieldsHorizontal;

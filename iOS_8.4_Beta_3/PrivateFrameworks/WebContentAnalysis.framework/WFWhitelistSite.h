@@ -9,9 +9,9 @@
     NSString *urlString;
 }
 
-@property(assign,readonly) NSString * domainName;
-@property(assign,copy) NSURL * url;
-@property(assign,copy) NSString * urlString;
+@property (readonly) NSString *domainName;
+@property (copy) NSURL *url;
+@property (copy) NSString *urlString;
 
 - (void)dealloc;
 - (id)description;

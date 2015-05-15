@@ -20,17 +20,17 @@
     double _valueImagePadding;
 }
 
-@property(getter=isAdjusting,assign,readwrite) bool adjusting;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool highlightMinimumTrackImage;
-@property(assign,retain) UIImage * maxValueMaskImage;
-@property(assign,retain) UIImage * minValueMaskImage;
-@property(assign,readwrite) bool shouldHighlightValueImagesWhileAdjusting;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } trackCapInsets;
-@property(assign,retain) UIImage * trackMaskImage;
+@property (getter=isAdjusting, nonatomic) bool adjusting;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool highlightMinimumTrackImage;
+@property (retain) UIImage *maxValueMaskImage;
+@property (retain) UIImage *minValueMaskImage;
+@property (nonatomic) bool shouldHighlightValueImagesWhileAdjusting;
+@property (readonly) Class superclass;
+@property struct UIEdgeInsets { double x1; double x2; double x3; double x4; } trackCapInsets;
+@property (retain) UIImage *trackMaskImage;
 
 + (id)_createTrackImageForState:(long long)arg1;
 + (id)_knobImage;

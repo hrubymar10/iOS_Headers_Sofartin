@@ -9,10 +9,10 @@
     long long _maximumLines;
 }
 
-@property(assign,readwrite) double elementSpacing;
-@property(assign,readwrite) double layoutWidth;
-@property(assign,readwrite) long long maximumElementsPerLine;
-@property(assign,readwrite) long long maximumLines;
+@property (nonatomic) double elementSpacing;
+@property (nonatomic) double layoutWidth;
+@property (nonatomic) long long maximumElementsPerLine;
+@property (nonatomic) long long maximumLines;
 
 - (double)elementSpacing;
 - (id)layoutViewElements:(id)arg1 usingSizingBlock:(id)arg2;

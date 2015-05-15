@@ -8,9 +8,9 @@
     CAMCameraRollSpec *_spec;
 }
 
-@property(assign,readwrite) bool isPad;
-@property(assign,retain) DeferredFrameworkLoader * loader;
-@property(assign,retain) CAMCameraRollSpec * spec;
+@property (nonatomic) bool isPad;
+@property (nonatomic, retain) DeferredFrameworkLoader *loader;
+@property (nonatomic, retain) CAMCameraRollSpec *spec;
 
 - (void).cxx_destruct;
 - (void)dealloc;

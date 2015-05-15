@@ -9,10 +9,10 @@
     NSString *_taskIdentifier;
 }
 
-@property(getter=isCancelled,assign,readonly) bool cancelled;
-@property(getter=isHighPriority,assign,readwrite) bool highPriority;
-@property(assign,retain) CPLResource * resource;
-@property(assign,copy) NSString * taskIdentifier;
+@property (getter=isCancelled, nonatomic, readonly) bool cancelled;
+@property (getter=isHighPriority, nonatomic) bool highPriority;
+@property (nonatomic, retain) CPLResource *resource;
+@property (nonatomic, copy) NSString *taskIdentifier;
 
 + (bool)supportsSecureCoding;
 

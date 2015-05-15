@@ -7,14 +7,14 @@
     SSURLRequestProperties *_localProperties;
 }
 
-@property(assign,retain) NSURLRequest * URLRequest;
-@property(assign,readonly) SSURLRequestProperties * URLRequestProperties;
-@property(assign,readonly) NSString * downloadFileName;
-@property(assign,readonly) NSString * downloadPath;
-@property(getter=isExternal,assign,readonly) bool external;
-@property(assign,readonly) long long fileSize;
-@property(assign,readonly) NSString * finalizedPath;
-@property(assign,readonly) NSArray * sinfs;
+@property (readonly, retain) NSURLRequest *URLRequest;
+@property (readonly) SSURLRequestProperties *URLRequestProperties;
+@property (readonly) NSString *downloadFileName;
+@property (readonly) NSString *downloadPath;
+@property (getter=isExternal, readonly) bool external;
+@property (readonly) long long fileSize;
+@property (readonly) NSString *finalizedPath;
+@property (readonly) NSArray *sinfs;
 
 + (long long)_existsMessage;
 + (long long)_getExternalValuesMessage;

@@ -17,22 +17,22 @@
     NSObject<OS_dispatch_source> *_targetedScanTimer;
 }
 
-@property(assign,retain) CBCentralManager * centralManager;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <HAPAccessoryServerBrowserBTLEDelegate> * delegate;
-@property(assign,retain) NSObject<OS_dispatch_queue> * delegateQueue;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMapTable * discoveredPeripheralsWithAccessories;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMapTable * identifersWithReachabilityScanTuples;
-@property(assign,retain) NSObject<OS_dispatch_source> * lostAccessoryServerTimer;
-@property(getter=isPerformingGeneralScan,assign,readwrite) bool performingGeneralScan;
-@property(assign,retain) NSMapTable * peripheralsWithConnectionRequestTuples;
-@property(assign,retain) NSMutableArray * powerOnCentralManagerCompletions;
-@property(assign,copy) id reachabilityCompletion;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableArray * targetedScanAccessoryIdentifiers;
-@property(assign,retain) NSObject<OS_dispatch_source> * targetedScanTimer;
+@property (nonatomic, retain) CBCentralManager *centralManager;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <HAPAccessoryServerBrowserBTLEDelegate> *delegate;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *delegateQueue;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMapTable *discoveredPeripheralsWithAccessories;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMapTable *identifersWithReachabilityScanTuples;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *lostAccessoryServerTimer;
+@property (getter=isPerformingGeneralScan, nonatomic) bool performingGeneralScan;
+@property (nonatomic, retain) NSMapTable *peripheralsWithConnectionRequestTuples;
+@property (nonatomic, retain) NSMutableArray *powerOnCentralManagerCompletions;
+@property (nonatomic, copy) id reachabilityCompletion;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMutableArray *targetedScanAccessoryIdentifiers;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *targetedScanTimer;
 
 - (void).cxx_destruct;
 - (void)_callPowerOnCompletionsWithError:(id)arg1;

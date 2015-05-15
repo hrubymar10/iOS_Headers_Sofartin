@@ -4,7 +4,7 @@
 
 @interface BKSRestartAction : BSAction
 
-@property(assign,readonly) bool shouldShowAppleLogo;
+@property (nonatomic, readonly) bool shouldShowAppleLogo;
 
 + (id)restartActionWithAppleLogoDesired:(bool)arg1;
 

@@ -21,12 +21,12 @@
     MPShuffleController *_shuffleController;
 }
 
-@property(assign,retain) MPMediaItem * cloudDialogAllowedMediaItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) MPMediaQuery * query;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) MPMediaItem *cloudDialogAllowedMediaItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) MPMediaQuery *query;
+@property (readonly) Class superclass;
 
 + (id)audioSessionModeForMediaType:(unsigned long long)arg1;
 

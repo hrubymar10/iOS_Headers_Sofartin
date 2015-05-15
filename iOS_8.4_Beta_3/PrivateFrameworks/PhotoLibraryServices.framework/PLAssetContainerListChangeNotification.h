@@ -6,8 +6,8 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,retain) NSObject<PLAlbumContainer> * albumList;
-@property(assign,retain) <PLAssetContainerList> * assetContainerList;
+@property (nonatomic, readonly, retain) NSObject<PLAlbumContainer> *albumList;
+@property (nonatomic, readonly, retain) <PLAssetContainerList> *assetContainerList;
 
 + (id)notificationWithContainerList:(id)arg1 snapshot:(id)arg2 changedContainers:(id)arg3;
 + (id)notificationWithSimulatedReloadRequestForContainerList:(id)arg1;

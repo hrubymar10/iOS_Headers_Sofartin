@@ -13,21 +13,21 @@
     NSDictionary *_valueTextAttributes;
 }
 
-@property(assign,copy) NSString * ab_text;
-@property(assign,copy) NSDictionary * ab_textAttributes;
-@property(assign,copy) CNPostalAddress * address;
-@property(assign,copy) NSDictionary * addressFormats;
-@property(assign,copy) NSArray * cellsLayout;
-@property(assign,retain) CNContactStyle * contactStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ABPresenterDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long lineCount;
-@property(assign,copy) UIColor * separatorColor;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITableView * tableView;
-@property(assign,copy) NSMutableDictionary * textFields;
+@property (nonatomic, copy) NSString *ab_text;
+@property (nonatomic, copy) NSDictionary *ab_textAttributes;
+@property (nonatomic, copy) CNPostalAddress *address;
+@property (nonatomic, copy) NSDictionary *addressFormats;
+@property (nonatomic, copy) NSArray *cellsLayout;
+@property (nonatomic, retain) CNContactStyle *contactStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ABPresenterDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long lineCount;
+@property (nonatomic, copy) UIColor *separatorColor;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UITableView *tableView;
+@property (nonatomic, copy) NSMutableDictionary *textFields;
 
 - (id)_addressPlaceholderForKey:(id)arg1;
 - (id)_addressValueForKey:(id)arg1;

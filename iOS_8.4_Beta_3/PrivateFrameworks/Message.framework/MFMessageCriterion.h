@@ -20,10 +20,10 @@
     bool _useFlaggedForUnreadCount;
 }
 
-@property(assign,readwrite) bool expressionIsSanitized;
-@property(assign,readwrite) bool includeRelatedMessages;
-@property(assign,retain) NSIndexSet * libraryIdentifiers;
-@property(assign,readwrite) bool useFlaggedForUnreadCount;
+@property (nonatomic) bool expressionIsSanitized;
+@property (nonatomic) bool includeRelatedMessages;
+@property (nonatomic, retain) NSIndexSet *libraryIdentifiers;
+@property (nonatomic) bool useFlaggedForUnreadCount;
 
 + (id)ThreadNotifyMessageCriterion;
 + (id)VIPSenderMessageCriterion;

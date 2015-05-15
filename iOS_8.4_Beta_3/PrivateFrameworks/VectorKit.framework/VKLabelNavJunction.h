@@ -42,42 +42,42 @@
     double _worldUnitsPerMeter;
 }
 
-@property(assign,readwrite) unsigned long long depthFromRoute;
-@property(assign,readwrite) float distanceFromPreviousShieldLabel;
-@property(assign,readonly) const struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; struct { /* ? */ } *x5; }* geoJunction;
-@property(assign,readonly) bool hasSharedRouteDirection;
-@property(assign,readonly) VKLabelNavRoad * incomingRoad;
-@property(assign,readonly) long long intraRoadPriority;
-@property(assign,readonly) bool isAwayFromRoute;
-@property(assign,readonly) bool isGuidanceStepStart;
-@property(assign,readonly) bool isInGuidance;
-@property(assign,readonly) bool isIntersection;
-@property(assign,readonly) bool isIntraRamp;
-@property(assign,readonly) bool isMultiRoadIntersection;
-@property(assign,readonly) bool isOffRouteGraph;
-@property(assign,readwrite) bool isOnDualCarriageway;
-@property(assign,readonly) bool isOnRoute;
-@property(assign,readonly) bool isOverpass;
-@property(assign,readonly) bool isRamp;
-@property(assign,readonly) bool isRoadTerminus;
-@property(assign,readwrite) bool isRouteOverpass;
-@property(assign,readwrite) bool isRouteRefineJunction;
-@property(assign,readonly) bool isStartOfRoadName;
-@property(assign,readonly) bool isTileEdgeJunction;
-@property(assign,readonly) VKLabelNavRoadLabel * junctionSign;
-@property(assign,readonly) int largestRoadClass;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) VKLabelNavRoad * outgoingRoad;
-@property(assign,readwrite) VKLabelNavJunction * overpassJunction;
-@property(assign,readwrite) int preferredLabelPlacement;
-@property(assign,readonly) int requiredLabelPlacement;
-@property(assign,readonly) NSArray * roads;
-@property(assign,readwrite) struct PolylineCoordinate { unsigned int x1; float x2; } routeOffset;
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  sharedRouteDirection; /* unknown property attribute:  1>=[2f]} */
-@property(assign,readonly) NSString * shieldDisplayGroup;
-@property(assign,readonly) VKLabelTile * tile;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  tileCoordinate; /* unknown property attribute:  1>=[2f]} */
-@property(assign,readonly) double worldUnitsPerMeter;
+@property (nonatomic) unsigned long long depthFromRoute;
+@property (nonatomic) float distanceFromPreviousShieldLabel;
+@property (nonatomic, readonly) const struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; struct { /* ? */ } *x5; }*geoJunction;
+@property (nonatomic, readonly) bool hasSharedRouteDirection;
+@property (nonatomic, readonly) VKLabelNavRoad *incomingRoad;
+@property (nonatomic, readonly) long long intraRoadPriority;
+@property (nonatomic, readonly) bool isAwayFromRoute;
+@property (nonatomic, readonly) bool isGuidanceStepStart;
+@property (nonatomic, readonly) bool isInGuidance;
+@property (nonatomic, readonly) bool isIntersection;
+@property (nonatomic, readonly) bool isIntraRamp;
+@property (nonatomic, readonly) bool isMultiRoadIntersection;
+@property (nonatomic, readonly) bool isOffRouteGraph;
+@property (nonatomic) bool isOnDualCarriageway;
+@property (nonatomic, readonly) bool isOnRoute;
+@property (nonatomic, readonly) bool isOverpass;
+@property (nonatomic, readonly) bool isRamp;
+@property (nonatomic, readonly) bool isRoadTerminus;
+@property (nonatomic) bool isRouteOverpass;
+@property (nonatomic) bool isRouteRefineJunction;
+@property (nonatomic, readonly) bool isStartOfRoadName;
+@property (nonatomic, readonly) bool isTileEdgeJunction;
+@property (nonatomic, readonly) VKLabelNavRoadLabel *junctionSign;
+@property (nonatomic, readonly) int largestRoadClass;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) VKLabelNavRoad *outgoingRoad;
+@property (nonatomic) VKLabelNavJunction *overpassJunction;
+@property (nonatomic) int preferredLabelPlacement;
+@property (nonatomic, readonly) int requiredLabelPlacement;
+@property (nonatomic, readonly) NSArray *roads;
+@property (nonatomic) struct PolylineCoordinate { unsigned int x1; float x2; } routeOffset;
+@property (nonatomic) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  sharedRouteDirection; /* unknown property attribute:  1>=[2f]} */
+@property (nonatomic, readonly) NSString *shieldDisplayGroup;
+@property (nonatomic, readonly) VKLabelTile *tile;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  tileCoordinate; /* unknown property attribute:  1>=[2f]} */
+@property (nonatomic, readonly) double worldUnitsPerMeter;
 
 - (id).cxx_construct;
 - (struct VKPoint { double x1; double x2; double x3; })_anchorCoordinateForSignOrientation:(long long)arg1;

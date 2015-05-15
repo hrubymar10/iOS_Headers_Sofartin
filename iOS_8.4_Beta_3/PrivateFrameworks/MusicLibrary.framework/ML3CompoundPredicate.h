@@ -6,8 +6,8 @@
     NSArray *_predicates;
 }
 
-@property(assign,copy) NSString * compoundOperatorJoiner;
-@property(assign,retain) NSArray * predicates;
+@property (nonatomic, readonly, copy) NSString *compoundOperatorJoiner;
+@property (nonatomic, retain) NSArray *predicates;
 
 + (id)predicateMatchingPredicates:(id)arg1;
 

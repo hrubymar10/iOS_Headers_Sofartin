@@ -9,14 +9,14 @@
     void *_person;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * image;
-@property(assign,retain) UIImagePickerController * imagePickerController;
-@property(assign,retain) ABPeoplePickerNavigationController * peoplePicker;
-@property(assign,readwrite) void* person;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) UIImagePickerController *imagePickerController;
+@property (nonatomic, retain) ABPeoplePickerNavigationController *peoplePicker;
+@property (nonatomic) void*person;
+@property (readonly) Class superclass;
 
 - (id)_activityImage;
 - (void)_cleanup;

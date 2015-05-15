@@ -8,17 +8,17 @@
     GKPlayer *_sender;
 }
 
-@property(getter=isCancelled,assign,readwrite) bool cancelled;
-@property(getter=isHosted,assign,readonly) bool hosted;
-@property(assign,retain) GKInviteInternal * internal;
-@property(assign,readonly) NSString * inviteID;
-@property(assign,retain) NSString * inviter;
-@property(assign,readonly) bool isNearby;
-@property(assign,readonly) NSString * message;
-@property(assign,readonly) unsigned int playerAttributes;
-@property(assign,readonly) unsigned long long playerGroup;
-@property(assign,retain) GKPlayer * sender;
-@property(assign,readonly) NSData * sessionToken;
+@property (getter=isCancelled, nonatomic) bool cancelled;
+@property (getter=isHosted, nonatomic, readonly) bool hosted;
+@property (retain) GKInviteInternal *internal;
+@property (nonatomic, readonly) NSString *inviteID;
+@property (nonatomic, readonly, retain) NSString *inviter;
+@property (nonatomic, readonly) bool isNearby;
+@property (nonatomic, readonly) NSString *message;
+@property (nonatomic, readonly) unsigned int playerAttributes;
+@property (nonatomic, readonly) unsigned long long playerGroup;
+@property (nonatomic, readonly, retain) GKPlayer *sender;
+@property (nonatomic, readonly) NSData *sessionToken;
 
 + (id)instanceMethodSignatureForSelector:(SEL)arg1;
 + (bool)instancesRespondToSelector:(SEL)arg1;

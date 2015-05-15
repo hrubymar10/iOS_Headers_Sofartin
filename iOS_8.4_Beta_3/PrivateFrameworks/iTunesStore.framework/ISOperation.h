@@ -19,19 +19,19 @@
     id _threadSafeDelegate;
 }
 
-@property(assign,readwrite) <ISOperationDelegate> * delegate;
-@property(assign,retain) NSError * error;
-@property(assign,retain) NSRunLoop * operationRunLoop;
-@property(assign,retain) ISOperation * parentOperation;
-@property(assign,retain) NSString * powerAssertionIdentifier;
-@property(assign,readonly) SSOperationProgress * progress;
-@property(assign,readonly) long long progressWeight;
-@property(assign,copy) NSArray * serializationLockIdentifiers;
-@property(assign,readwrite) bool shouldMessageMainThread;
-@property(assign,readwrite) bool shouldRunWithBackgroundPriority;
-@property(assign,readwrite) bool success;
-@property(assign,readonly) id threadSafeDelegate;
-@property(assign,readonly) NSString * uniqueKey;
+@property <ISOperationDelegate> *delegate;
+@property (retain) NSError *error;
+@property (retain) NSRunLoop *operationRunLoop;
+@property (retain) ISOperation *parentOperation;
+@property (retain) NSString *powerAssertionIdentifier;
+@property (nonatomic, readonly) SSOperationProgress *progress;
+@property (readonly) long long progressWeight;
+@property (copy) NSArray *serializationLockIdentifiers;
+@property bool shouldMessageMainThread;
+@property bool shouldRunWithBackgroundPriority;
+@property bool success;
+@property (readonly) id threadSafeDelegate;
+@property (readonly) NSString *uniqueKey;
 
 - (void)_addSubOperation:(id)arg1;
 - (void)_failAfterException;

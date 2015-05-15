@@ -6,7 +6,7 @@
     UIButton *_button;
 }
 
-@property(assign,readonly) UIButton * button;
+@property (nonatomic, readonly) UIButton *button;
 
 - (void).cxx_destruct;
 - (id)button;

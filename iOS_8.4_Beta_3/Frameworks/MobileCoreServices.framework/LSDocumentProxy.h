@@ -9,10 +9,10 @@
     NSString *_typeIdentifier;
 }
 
-@property(assign,readonly) NSString * MIMEType;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) bool sourceIsManaged;
-@property(assign,readonly) NSString * typeIdentifier;
+@property (nonatomic, readonly) NSString *MIMEType;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) bool sourceIsManaged;
+@property (nonatomic, readonly) NSString *typeIdentifier;
 
 + (id)documentProxyForName:(id)arg1 type:(id)arg2 MIMEType:(id)arg3;
 + (id)documentProxyForName:(id)arg1 type:(id)arg2 MIMEType:(id)arg3 sourceIsManaged:(bool)arg4;

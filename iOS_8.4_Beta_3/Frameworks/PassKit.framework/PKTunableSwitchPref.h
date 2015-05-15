@@ -6,7 +6,7 @@
     UIView *_view;
 }
 
-@property(assign,retain) UIView * view;
+@property (retain) UIView *view;
 
 - (void)setView:(id)arg1;
 - (void)takeValueFromView:(id)arg1;

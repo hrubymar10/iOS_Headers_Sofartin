@@ -21,12 +21,12 @@
     unsigned long long _subitem;
 }
 
-@property(assign,readwrite) <EKEditItemViewControllerDelegate> * editDelegate;
-@property(assign,readwrite) bool editItemShouldBeAskedForInjectableViewController;
-@property(assign,readwrite) bool modal;
-@property(assign,readwrite) bool presentModally;
-@property(assign,readwrite) bool showsDoneButton;
-@property(assign,readwrite) unsigned long long subitem;
+@property (nonatomic) <EKEditItemViewControllerDelegate> *editDelegate;
+@property (nonatomic) bool editItemShouldBeAskedForInjectableViewController;
+@property (nonatomic) bool modal;
+@property (nonatomic) bool presentModally;
+@property (nonatomic) bool showsDoneButton;
+@property (nonatomic) unsigned long long subitem;
 
 - (void).cxx_destruct;
 - (void)_saveAndDismissWithForce:(bool)arg1;

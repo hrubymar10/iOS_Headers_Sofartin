@@ -4,7 +4,7 @@
 
 @interface SKUIBorderView : UIView
 
-@property(assign,retain) UIColor * color;
+@property (nonatomic, retain) UIColor *color;
 
 - (id)color;
 - (void)setBackgroundColor:(id)arg1;

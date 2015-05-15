@@ -10,7 +10,7 @@
     unsigned long long _options;
 }
 
-@property(assign,readonly) id token;
+@property (readonly) id token;
 
 - (void)cancelObservation;
 - (void)dealloc;

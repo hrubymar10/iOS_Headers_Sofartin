@@ -6,7 +6,7 @@
     BOOL _options;
 }
 
-@property(assign,readonly) BOOL options;
+@property (nonatomic, readonly) BOOL options;
 
 + (bool)supportsSecureCoding;
 

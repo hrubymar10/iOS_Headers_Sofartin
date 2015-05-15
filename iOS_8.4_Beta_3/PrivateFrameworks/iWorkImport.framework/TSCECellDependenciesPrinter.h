@@ -10,9 +10,9 @@
     bool _showCleanCells;
 }
 
-@property(assign,readwrite) unsigned long long numDirtyCells;
-@property(assign,retain) NSString * ownerName;
-@property(assign,readwrite) bool showCleanCells;
+@property (nonatomic) unsigned long long numDirtyCells;
+@property (nonatomic, retain) NSString *ownerName;
+@property (nonatomic) bool showCleanCells;
 
 - (void)addDependencyRow:(id)arg1;
 - (void)dealloc;

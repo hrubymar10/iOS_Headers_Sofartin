@@ -6,7 +6,7 @@
     NSArray *_resendPacketEventClasses;
 }
 
-@property(assign,readonly) NSArray * resendPacketEventClasses;
+@property (nonatomic, readonly) NSArray *resendPacketEventClasses;
 
 + (unsigned int)_packetEventType;
 

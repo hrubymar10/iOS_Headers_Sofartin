@@ -6,7 +6,7 @@
     id _perEntryCompletionBlock;
 }
 
-@property(assign,copy) id perEntryCompletionBlock;
+@property (copy) id perEntryCompletionBlock;
 
 - (void).cxx_destruct;
 - (void)__doneWithEntry:(id)arg1 error:(id)arg2;

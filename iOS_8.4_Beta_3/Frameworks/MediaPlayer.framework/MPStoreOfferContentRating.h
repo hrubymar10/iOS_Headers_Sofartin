@@ -10,14 +10,14 @@
     unsigned long long _ratingSystem;
 }
 
-@property(getter=isExplicitContent,assign,readonly) bool explicitContent;
-@property(assign,readonly) id mediaPropertyContentRatingValue;
-@property(assign,copy) NSString * ratingDescription;
-@property(assign,copy) NSString * ratingLabel;
-@property(assign,readwrite) long long ratingLevel;
-@property(assign,readwrite) unsigned long long ratingSystem;
-@property(getter=isRestrictedContent,assign,readonly) bool restrictedContent;
-@property(getter=isRestrictedPurchase,assign,readonly) bool restrictedPurchase;
+@property (getter=isExplicitContent, nonatomic, readonly) bool explicitContent;
+@property (nonatomic, readonly) id mediaPropertyContentRatingValue;
+@property (nonatomic, copy) NSString *ratingDescription;
+@property (nonatomic, copy) NSString *ratingLabel;
+@property (nonatomic) long long ratingLevel;
+@property (nonatomic) unsigned long long ratingSystem;
+@property (getter=isRestrictedContent, nonatomic, readonly) bool restrictedContent;
+@property (getter=isRestrictedPurchase, nonatomic, readonly) bool restrictedPurchase;
 
 + (unsigned long long)ratingSystemFromString:(id)arg1;
 + (bool)supportsSecureCoding;

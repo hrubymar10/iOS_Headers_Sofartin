@@ -6,9 +6,9 @@
     WebHistoryPrivate *_historyPrivate;
 }
 
-@property(assign,readwrite) int historyAgeInDaysLimit;
-@property(assign,readwrite) int historyItemLimit;
-@property(assign,copy) NSArray * orderedLastVisitedDays;
+@property (nonatomic) int historyAgeInDaysLimit;
+@property (nonatomic) int historyItemLimit;
+@property (nonatomic, readonly, copy) NSArray *orderedLastVisitedDays;
 
 + (void)_removeAllVisitedLinks;
 + (void)_setVisitedLinkTrackingEnabled:(bool)arg1;

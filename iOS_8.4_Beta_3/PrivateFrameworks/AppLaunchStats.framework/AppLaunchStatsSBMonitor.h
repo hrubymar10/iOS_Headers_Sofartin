@@ -16,9 +16,9 @@
     NSMutableDictionary *trendList;
 }
 
-@property(assign,readonly) bool enableAppSwitcherCheck;
-@property(assign,readonly) bool enableWasRecentlyLaunched;
-@property(assign,readonly) NSMutableString * foreGroundApp;
+@property (nonatomic, readonly) bool enableAppSwitcherCheck;
+@property (nonatomic, readonly) bool enableWasRecentlyLaunched;
+@property (nonatomic, readonly) NSMutableString *foreGroundApp;
 
 - (void).cxx_destruct;
 - (void)addToBlackList:(id)arg1;

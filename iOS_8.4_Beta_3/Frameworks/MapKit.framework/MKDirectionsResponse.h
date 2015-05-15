@@ -11,15 +11,15 @@
     MKMapItem *_source;
 }
 
-@property(assign,retain) GEODirectionsResponse * _geoResponse;
-@property(assign,retain) NSString * _incidentDescription;
-@property(assign,readonly) struct CGImage { }* _incidentImage;
-@property(assign,retain) NSURL * _mapsURL;
-@property(assign,retain) GEORoute * _route;
-@property(assign,readonly) double _typicalTrafficRatio;
-@property(assign,readonly) MKMapItem * destination;
-@property(assign,readonly) NSArray * routes;
-@property(assign,readonly) MKMapItem * source;
+@property (nonatomic, readonly, retain) GEODirectionsResponse *_geoResponse;
+@property (nonatomic, readonly, retain) NSString *_incidentDescription;
+@property (nonatomic, readonly) struct CGImage { }*_incidentImage;
+@property (nonatomic, readonly, retain) NSURL *_mapsURL;
+@property (nonatomic, readonly, retain) GEORoute *_route;
+@property (nonatomic, readonly) double _typicalTrafficRatio;
+@property (nonatomic, readonly) MKMapItem *destination;
+@property (nonatomic, readonly) NSArray *routes;
+@property (nonatomic, readonly) MKMapItem *source;
 
 + (id)_responseWithGEOResponse:(id)arg1 request:(id)arg2 origin:(id)arg3 destination:(id)arg4 error:(id*)arg5;
 

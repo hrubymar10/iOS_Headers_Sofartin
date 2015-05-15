@@ -11,15 +11,15 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,retain) UIView * accessoryView;
-@property(assign,readonly) NSString * attribution;
-@property(getter=isAttributionEnabled,assign,readonly) bool attributionEnabled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
-@property(assign,readonly) Class superclass;
-@property(getter=isEditing,assign,readwrite) bool tableEditing;
+@property (nonatomic, retain) UIView *accessoryView;
+@property (nonatomic, readonly) NSString *attribution;
+@property (getter=isAttributionEnabled, nonatomic, readonly) bool attributionEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
+@property (readonly) Class superclass;
+@property (getter=isEditing, nonatomic) bool tableEditing;
 
 - (id)accessoryView;
 - (id)attribution;

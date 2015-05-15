@@ -16,11 +16,11 @@
     double _verticalSpaceNeededForRatingsView;
 }
 
-@property(assign,retain) UIView * providerView;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } providerViewOffset;
-@property(assign,retain) UIView * ratingView;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } ratingViewOffset;
-@property(assign,readwrite) double verticalSpaceNeededForRatingsView;
+@property (nonatomic, retain) UIView *providerView;
+@property (nonatomic) struct UIOffset { double x1; double x2; } providerViewOffset;
+@property (nonatomic, retain) UIView *ratingView;
+@property (nonatomic) struct UIOffset { double x1; double x2; } ratingViewOffset;
+@property (nonatomic) double verticalSpaceNeededForRatingsView;
 
 - (void).cxx_destruct;
 - (double)desiredHeightForWidth:(double)arg1;

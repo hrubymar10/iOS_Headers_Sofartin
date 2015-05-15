@@ -11,16 +11,16 @@
     NSObject<OS_dispatch_queue> *_responseQueue;
 }
 
-@property(assign,readwrite) unsigned long long context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <NPKPaymentWebServiceHelperDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * internalQueue;
-@property(assign,retain) NSMutableDictionary * outstandingRequests;
-@property(assign,retain) IDSService * provisioningService;
-@property(assign,retain) NSObject<OS_dispatch_queue> * responseQueue;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) unsigned long long context;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <NPKPaymentWebServiceHelperDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *internalQueue;
+@property (nonatomic, retain) NSMutableDictionary *outstandingRequests;
+@property (nonatomic, retain) IDSService *provisioningService;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *responseQueue;
+@property (readonly) Class superclass;
 
 + (id)bridgedClientInfoHTTPHeader;
 

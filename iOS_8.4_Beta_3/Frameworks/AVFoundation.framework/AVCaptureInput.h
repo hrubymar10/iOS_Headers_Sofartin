@@ -6,7 +6,7 @@
     AVCaptureInputInternal *_inputInternal;
 }
 
-@property(assign,readonly) NSArray * ports;
+@property (nonatomic, readonly) NSArray *ports;
 
 + (void)initialize;
 

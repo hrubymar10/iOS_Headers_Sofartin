@@ -6,20 +6,20 @@
     TSDCommentStorage *_commentStorage;
 }
 
-@property(assign,readonly) int annotationDisplayStringType;
-@property(assign,readonly) int annotationType;
-@property(assign,readonly) TSKAnnotationAuthor * author;
-@property(assign,readonly) NSString * changeTrackingContentFormatString;
-@property(assign,readonly) NSString * changeTrackingContentString;
-@property(assign,readonly) NSString * changeTrackingTitleString;
-@property(assign,readonly) TSDCommentStorage * commentStorage;
-@property(assign,readonly) NSDate * date;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <TSKModel> * hostingModel;
-@property(assign,copy) TSDCommentStorage * storage;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) int annotationDisplayStringType;
+@property (nonatomic, readonly) int annotationType;
+@property (nonatomic, readonly) TSKAnnotationAuthor *author;
+@property (nonatomic, readonly) NSString *changeTrackingContentFormatString;
+@property (nonatomic, readonly) NSString *changeTrackingContentString;
+@property (nonatomic, readonly) NSString *changeTrackingTitleString;
+@property (nonatomic, readonly) TSDCommentStorage *commentStorage;
+@property (nonatomic, readonly) NSDate *date;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <TSKModel> *hostingModel;
+@property (nonatomic, copy) TSDCommentStorage *storage;
+@property (readonly) Class superclass;
 
 + (id)bezierPathForExportCommentOutline;
 + (id)commentInfoWithContext:(id)arg1 size:(struct CGSize { double x1; double x2; })arg2 storage:(id)arg3;

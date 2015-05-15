@@ -6,9 +6,9 @@
     NSURLProtocolInternal *_internal;
 }
 
-@property(assign,copy) NSCachedURLResponse * cachedResponse;
-@property(assign,retain) <NSURLProtocolClient> * client;
-@property(assign,copy) NSURLRequest * request;
+@property (readonly, copy) NSCachedURLResponse *cachedResponse;
+@property (readonly, retain) <NSURLProtocolClient> *client;
+@property (readonly, copy) NSURLRequest *request;
 
 + (id)_makeRequestCanonicalByMakingRequestURLCanonical:(id)arg1;
 + (Class)_protocolClassForRequest:(id)arg1;

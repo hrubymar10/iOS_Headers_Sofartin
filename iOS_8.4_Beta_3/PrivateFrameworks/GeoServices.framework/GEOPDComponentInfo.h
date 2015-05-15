@@ -18,18 +18,18 @@
     int _urgency;
 }
 
-@property(assign,readwrite) unsigned int count;
-@property(assign,retain) GEOPDComponentFilter * filter;
-@property(assign,readwrite) bool hasCount;
-@property(assign,readonly) bool hasFilter;
-@property(assign,readwrite) bool hasIncludeSource;
-@property(assign,readwrite) bool hasStartIndex;
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) bool hasUrgency;
-@property(assign,readwrite) bool includeSource;
-@property(assign,readwrite) unsigned int startIndex;
-@property(assign,readwrite) int type;
-@property(assign,readwrite) int urgency;
+@property (nonatomic) unsigned int count;
+@property (nonatomic, retain) GEOPDComponentFilter *filter;
+@property (nonatomic) bool hasCount;
+@property (nonatomic, readonly) bool hasFilter;
+@property (nonatomic) bool hasIncludeSource;
+@property (nonatomic) bool hasStartIndex;
+@property (nonatomic) bool hasType;
+@property (nonatomic) bool hasUrgency;
+@property (nonatomic) bool includeSource;
+@property (nonatomic) unsigned int startIndex;
+@property (nonatomic) int type;
+@property (nonatomic) int urgency;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

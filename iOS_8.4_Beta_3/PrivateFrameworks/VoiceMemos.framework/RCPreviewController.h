@@ -20,18 +20,18 @@
     NSHashTable *_weakObservers;
 }
 
-@property(assign,readonly) RCAVPlayer * AVPlayer;
-@property(assign,retain) AVPlayerItem * AVPlayerItem;
-@property(assign,retain) RCAVState * AVState;
-@property(assign,readwrite) double currentTime;
-@property(assign,readwrite) double currentTimeDelegateUpdateRate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct { double x1; double x2; } playableTimeRange;
-@property(assign,readonly) float rate;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useVoiceMemoSettings;
+@property (nonatomic, readonly) RCAVPlayer *AVPlayer;
+@property (nonatomic, retain) AVPlayerItem *AVPlayerItem;
+@property (nonatomic, retain) RCAVState *AVState;
+@property (nonatomic) double currentTime;
+@property (nonatomic) double currentTimeDelegateUpdateRate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct { double x1; double x2; } playableTimeRange;
+@property (nonatomic, readonly) float rate;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useVoiceMemoSettings;
 
 - (void).cxx_destruct;
 - (id)AVPlayer;

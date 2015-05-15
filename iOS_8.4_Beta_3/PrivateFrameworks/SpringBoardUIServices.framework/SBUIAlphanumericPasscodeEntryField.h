@@ -9,7 +9,7 @@
     UIView *_springViewParent;
 }
 
-@property(assign,readonly) UITextInputTraits * textInputTraits;
+@property (nonatomic, readonly) UITextInputTraits *textInputTraits;
 
 - (void)_autofillForMesaWithCompletion:(id)arg1;
 - (void)_resetForFailedPasscode:(bool)arg1 playUnlockFailedSound:(bool)arg2;

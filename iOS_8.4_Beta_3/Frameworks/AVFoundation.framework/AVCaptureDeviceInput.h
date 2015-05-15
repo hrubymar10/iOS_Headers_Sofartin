@@ -6,7 +6,7 @@
     AVCaptureDeviceInputInternal *_internal;
 }
 
-@property(assign,readonly) AVCaptureDevice * device;
+@property (nonatomic, readonly) AVCaptureDevice *device;
 
 + (id)alloc;
 + (id)deviceInputWithDevice:(id)arg1 error:(id*)arg2;

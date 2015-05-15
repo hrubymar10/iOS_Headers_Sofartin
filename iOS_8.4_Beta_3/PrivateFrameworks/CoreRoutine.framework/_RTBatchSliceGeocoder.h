@@ -12,10 +12,10 @@
     <GEOMapServiceTicket> *_ticket;
 }
 
-@property(assign,retain) NSArray * geoMapItems;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,retain) NSObject<OS_dispatch_semaphore> * semaphore;
-@property(assign,retain) <GEOMapServiceTicket> * ticket;
+@property (nonatomic, retain) NSArray *geoMapItems;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic, retain) NSObject<OS_dispatch_semaphore> *semaphore;
+@property (nonatomic, retain) <GEOMapServiceTicket> *ticket;
 
 - (void).cxx_destruct;
 - (void)_cancelTicket:(id)arg1;

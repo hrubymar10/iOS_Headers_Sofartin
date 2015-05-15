@@ -21,7 +21,7 @@
     bool _shouldCancelBTThread;
 }
 
-@property(assign,readonly) BOOL rssi;
+@property (nonatomic, readonly) BOOL rssi;
 
 + (id)newMessageHandler;
 

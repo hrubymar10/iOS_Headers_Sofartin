@@ -6,7 +6,7 @@
     NSMutableArray *_sections;
 }
 
-@property(assign,retain) NSMutableArray * sections;
+@property (nonatomic, retain) NSMutableArray *sections;
 
 - (void)addSections:(id)arg1;
 - (void)clearSections;

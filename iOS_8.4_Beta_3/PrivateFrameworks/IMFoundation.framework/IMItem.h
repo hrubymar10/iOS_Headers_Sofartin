@@ -18,21 +18,21 @@
     NSString *_unformattedID;
 }
 
-@property(assign,retain) NSString * account;
-@property(assign,retain) NSString * accountID;
-@property(assign,retain) id context;
-@property(assign,retain) NSString * countryCode;
-@property(assign,retain) NSString * guid;
-@property(assign,retain) NSString * handle;
-@property(assign,readonly) bool isFromMe;
-@property(assign,readwrite) long long messageID;
-@property(assign,retain) NSString * roomName;
-@property(assign,retain) NSString * sender;
-@property(assign,retain) NSDictionary * senderInfo;
-@property(assign,retain) NSString * service;
-@property(assign,retain) NSDate * time;
-@property(assign,readwrite) long long type;
-@property(assign,retain) NSString * unformattedID;
+@property (nonatomic, retain) NSString *account;
+@property (nonatomic, retain) NSString *accountID;
+@property (nonatomic, retain) id context;
+@property (nonatomic, retain) NSString *countryCode;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic, retain) NSString *handle;
+@property (nonatomic, readonly) bool isFromMe;
+@property (nonatomic) long long messageID;
+@property (nonatomic, retain) NSString *roomName;
+@property (nonatomic, retain) NSString *sender;
+@property (nonatomic, retain) NSDictionary *senderInfo;
+@property (nonatomic, retain) NSString *service;
+@property (nonatomic, retain) NSDate *time;
+@property (nonatomic) long long type;
+@property (nonatomic, retain) NSString *unformattedID;
 
 + (Class)classForIMItemType:(long long)arg1;
 

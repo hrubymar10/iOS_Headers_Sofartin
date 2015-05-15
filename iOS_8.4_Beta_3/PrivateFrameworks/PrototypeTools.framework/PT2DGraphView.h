@@ -31,21 +31,21 @@
     double _yminimum;
 }
 
-@property(assign,retain) NSArray * data;
-@property(assign,retain) UIColor * dataColor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } datumSize;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,retain) UIColor * groundColor;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } origin;
-@property(assign,retain) NSArray * provisionalData;
-@property(assign,retain) UIColor * provisionalDataColor;
-@property(assign,retain) NSMutableArray * provisionalDataSubviews;
-@property(assign,retain) PT2DGraphAxisStyle * xaxisStyle;
-@property(assign,readwrite) double xmaximum;
-@property(assign,readwrite) double xminimum;
-@property(assign,retain) PT2DGraphAxisStyle * yaxisStyle;
-@property(assign,readwrite) double ymaximum;
-@property(assign,readwrite) double yminimum;
+@property (nonatomic, retain) NSArray *data;
+@property (nonatomic, retain) UIColor *dataColor;
+@property (nonatomic) struct CGSize { double x1; double x2; } datumSize;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic, retain) UIColor *groundColor;
+@property (nonatomic) struct CGPoint { double x1; double x2; } origin;
+@property (nonatomic, retain) NSArray *provisionalData;
+@property (nonatomic, retain) UIColor *provisionalDataColor;
+@property (nonatomic, retain) NSMutableArray *provisionalDataSubviews;
+@property (nonatomic, retain) PT2DGraphAxisStyle *xaxisStyle;
+@property (nonatomic) double xmaximum;
+@property (nonatomic) double xminimum;
+@property (nonatomic, retain) PT2DGraphAxisStyle *yaxisStyle;
+@property (nonatomic) double ymaximum;
+@property (nonatomic) double yminimum;
 
 - (void).cxx_destruct;
 - (id)data;

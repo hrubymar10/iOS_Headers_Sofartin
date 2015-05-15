@@ -8,8 +8,8 @@
     PKRemoteAssetManager *_remoteAssetManager;
 }
 
-@property(assign,retain) NSURL * fileURL;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * processingQueue;
+@property (nonatomic, readonly, retain) NSURL *fileURL;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *processingQueue;
 
 - (id)archiveData;
 - (id)bundle;

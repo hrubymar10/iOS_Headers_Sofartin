@@ -6,8 +6,8 @@
     NSDictionary *_responseDictionary;
 }
 
-@property(assign,copy) NSArray * stationDictionaries;
-@property(assign,copy) NSArray * stationGroups;
+@property (nonatomic, readonly, copy) NSArray *stationDictionaries;
+@property (nonatomic, readonly, copy) NSArray *stationGroups;
 
 - (void).cxx_destruct;
 - (id)initWithResponseDictionary:(id)arg1;

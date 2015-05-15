@@ -24,15 +24,15 @@
     double _tableViewWidth;
 }
 
-@property(assign,readwrite) bool estimatesRowHeights;
-@property(assign,readonly) double heightForAutohidingTableHeaderView;
-@property(assign,readonly) double heightForTableHeaderViewHiding;
-@property(assign,readwrite) double minimumRowHeight;
-@property(assign,readonly) NSIndexPath * reorderGapIndexPath;
-@property(assign,readonly) double reorderedRowHeight;
-@property(assign,readwrite) double tableBottomPadding;
-@property(assign,readwrite) double tableSidePadding;
-@property(assign,readwrite) double tableTopPadding;
+@property (nonatomic) bool estimatesRowHeights;
+@property (nonatomic, readonly) double heightForAutohidingTableHeaderView;
+@property (nonatomic, readonly) double heightForTableHeaderViewHiding;
+@property (nonatomic) double minimumRowHeight;
+@property (nonatomic, readonly) NSIndexPath *reorderGapIndexPath;
+@property (nonatomic, readonly) double reorderedRowHeight;
+@property (nonatomic) double tableBottomPadding;
+@property (nonatomic) double tableSidePadding;
+@property (nonatomic) double tableTopPadding;
 
 - (void)_ensureSectionOffsetIsValidForSection:(long long)arg1;
 - (long long)_sectionForPoint:(struct CGPoint { double x1; double x2; })arg1 beginningWithSection:(long long)arg2 numberOfSections:(long long)arg3;

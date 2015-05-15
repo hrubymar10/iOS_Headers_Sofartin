@@ -6,7 +6,7 @@
     bool _isInFrame;
 }
 
-@property(assign,readwrite) bool isInFrame;
+@property (nonatomic) bool isInFrame;
 
 - (id)_createBoundsAnimation;
 - (id)_createContentsAnimation;

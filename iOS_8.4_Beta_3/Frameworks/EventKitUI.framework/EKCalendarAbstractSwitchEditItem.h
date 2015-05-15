@@ -12,11 +12,11 @@
     bool _underlyingCalendarState;
 }
 
-@property(assign,readwrite) bool allowEventAlerts;
-@property(assign,retain) NSMutableArray * cells;
-@property(assign,readwrite) bool switchState;
-@property(assign,retain) UISwitch * toggleSwitch;
-@property(assign,readwrite) bool underlyingCalendarState;
+@property (nonatomic) bool allowEventAlerts;
+@property (nonatomic, retain) NSMutableArray *cells;
+@property (nonatomic) bool switchState;
+@property (nonatomic, retain) UISwitch *toggleSwitch;
+@property (nonatomic) bool underlyingCalendarState;
 
 - (void).cxx_destruct;
 - (void)_applyStyleToUILabel:(id)arg1;

@@ -6,10 +6,10 @@
     void *_impl;
 }
 
-@property(assign,readonly) unsigned int channelLabel;
-@property(assign,readonly) NSString * channelName;
-@property(assign,readonly) unsigned long long channelNumber;
-@property(assign,readonly) NSString * owningPortUID;
+@property (readonly) unsigned int channelLabel;
+@property (readonly) NSString *channelName;
+@property (readonly) unsigned long long channelNumber;
+@property (readonly) NSString *owningPortUID;
 
 + (id)privateCreate:(id)arg1 portUID:(id)arg2 channelNumber:(unsigned int)arg3;
 + (id)privateCreateArray:(id)arg1 portUID:(id)arg2;

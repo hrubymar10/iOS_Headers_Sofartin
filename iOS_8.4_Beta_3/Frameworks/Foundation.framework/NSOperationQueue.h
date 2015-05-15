@@ -7,13 +7,13 @@
     void *_reserved;
 }
 
-@property(assign,readwrite) long long maxConcurrentOperationCount;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) unsigned long long operationCount;
-@property(assign,copy) NSArray * operations;
-@property(assign,readwrite) long long qualityOfService;
-@property(getter=isSuspended,assign,readwrite) bool suspended;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * underlyingQueue;
+@property long long maxConcurrentOperationCount;
+@property (copy) NSString *name;
+@property (readonly) unsigned long long operationCount;
+@property (readonly, copy) NSArray *operations;
+@property long long qualityOfService;
+@property (getter=isSuspended) bool suspended;
+@property NSObject<OS_dispatch_queue> *underlyingQueue;
 
 + (bool)automaticallyNotifiesObserversForKey:(id)arg1;
 + (id)currentQueue;

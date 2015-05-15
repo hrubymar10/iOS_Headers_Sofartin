@@ -9,7 +9,7 @@
     NSString *_shareMessageSubject;
 }
 
-@property(assign,readonly) RUStationShareInformationProvider * shareInformationProvider;
+@property (nonatomic, readonly) RUStationShareInformationProvider *shareInformationProvider;
 
 - (void).cxx_destruct;
 - (bool)_isActivityTypeAllowed:(id)arg1;

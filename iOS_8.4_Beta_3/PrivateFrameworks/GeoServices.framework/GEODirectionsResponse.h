@@ -29,25 +29,25 @@
     } _supportedTransportTypes;
 }
 
-@property(assign,retain) NSData * directionsResponseID;
-@property(assign,readonly) bool hasDirectionsResponseID;
-@property(assign,readwrite) bool hasInstructionSignFillColor;
-@property(assign,readwrite) bool hasIsNavigable;
-@property(assign,readwrite) bool hasLocalDistanceUnits;
-@property(assign,readwrite) bool hasRouteDeviatesFromOriginal;
-@property(assign,retain) NSMutableArray * incidentsOffRoutes;
-@property(assign,retain) NSMutableArray * incidentsOnRoutes;
-@property(assign,readwrite) int instructionSignFillColor;
-@property(assign,readwrite) bool isNavigable;
-@property(assign,readwrite) int localDistanceUnits;
-@property(assign,retain) NSMutableArray * placeSearchResponses;
-@property(assign,readonly) struct { int x1; int x2; struct { unsigned int x_3_1_1 : 1; unsigned int x_3_1_2 : 1; } x3; }* problemDetails;
-@property(assign,readonly) unsigned long long problemDetailsCount;
-@property(assign,readwrite) bool routeDeviatesFromOriginal;
-@property(assign,retain) NSMutableArray * routes;
-@property(assign,readwrite) int status;
-@property(assign,readonly) int* supportedTransportTypes;
-@property(assign,readonly) unsigned long long supportedTransportTypesCount;
+@property (nonatomic, retain) NSData *directionsResponseID;
+@property (nonatomic, readonly) bool hasDirectionsResponseID;
+@property (nonatomic) bool hasInstructionSignFillColor;
+@property (nonatomic) bool hasIsNavigable;
+@property (nonatomic) bool hasLocalDistanceUnits;
+@property (nonatomic) bool hasRouteDeviatesFromOriginal;
+@property (nonatomic, retain) NSMutableArray *incidentsOffRoutes;
+@property (nonatomic, retain) NSMutableArray *incidentsOnRoutes;
+@property (nonatomic) int instructionSignFillColor;
+@property (nonatomic) bool isNavigable;
+@property (nonatomic) int localDistanceUnits;
+@property (nonatomic, retain) NSMutableArray *placeSearchResponses;
+@property (nonatomic, readonly) struct { int x1; int x2; struct { unsigned int x_3_1_1 : 1; unsigned int x_3_1_2 : 1; } x3; }*problemDetails;
+@property (nonatomic, readonly) unsigned long long problemDetailsCount;
+@property (nonatomic) bool routeDeviatesFromOriginal;
+@property (nonatomic, retain) NSMutableArray *routes;
+@property (nonatomic) int status;
+@property (nonatomic, readonly) int*supportedTransportTypes;
+@property (nonatomic, readonly) unsigned long long supportedTransportTypesCount;
 
 - (void)addIncidentsOffRoutes:(id)arg1;
 - (void)addIncidentsOnRoutes:(id)arg1;

@@ -8,9 +8,9 @@
     bool _isShortCode;
 }
 
-@property(assign,readonly) NSString * countryCode;
-@property(assign,readonly) NSString * digits;
-@property(assign,readwrite) bool isShortCode;
+@property (readonly) NSString *countryCode;
+@property (readonly) NSString *digits;
+@property bool isShortCode;
 
 + (bool)isValidPhoneNumber:(id)arg1;
 + (bool)isValidPhoneNumberChar:(unsigned short)arg1;

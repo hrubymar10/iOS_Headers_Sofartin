@@ -9,7 +9,7 @@
     NSOperationQueue *_operationQueue;
 }
 
-@property(assign,readonly) long long identifer;
+@property (nonatomic, readonly) long long identifer;
 
 - (void)dealloc;
 - (long long)identifer;

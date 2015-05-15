@@ -6,10 +6,10 @@
     NSDictionary *_responseDictionary;
 }
 
-@property(assign,copy) NSArray * allFlavors;
-@property(assign,readonly) MPStoreRedownloadProductItemAsset * asset;
-@property(assign,copy) NSString * fileExtension;
-@property(assign,readonly) MPStoreRedownloadProductItemAsset * firstAsset;
+@property (nonatomic, readonly, copy) NSArray *allFlavors;
+@property (nonatomic, readonly) MPStoreRedownloadProductItemAsset *asset;
+@property (nonatomic, readonly, copy) NSString *fileExtension;
+@property (nonatomic, readonly) MPStoreRedownloadProductItemAsset *firstAsset;
 
 - (void).cxx_destruct;
 - (void)_enumerateAssetDictionariesWithBlock:(id)arg1;

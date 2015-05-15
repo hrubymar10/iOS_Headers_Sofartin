@@ -90,18 +90,18 @@
     unsigned long long _writeVersion;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool didRequireUpgrade;
-@property(assign,readonly) TSPDocumentRevision * documentRevision;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isReadingFromDocument;
-@property(assign,readonly) TSPObject * metadataObject;
-@property(assign,readonly) long long preferredPackageType;
-@property(assign,readonly) unsigned long long readVersion;
-@property(assign,readonly) unsigned long long saveToken;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long writeVersion;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool didRequireUpgrade;
+@property (nonatomic, readonly) TSPDocumentRevision *documentRevision;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isReadingFromDocument;
+@property (nonatomic, readonly) TSPObject *metadataObject;
+@property (nonatomic, readonly) long long preferredPackageType;
+@property (nonatomic, readonly) unsigned long long readVersion;
+@property (nonatomic, readonly) unsigned long long saveToken;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long writeVersion;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

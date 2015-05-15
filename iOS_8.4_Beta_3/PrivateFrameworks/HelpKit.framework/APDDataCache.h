@@ -12,14 +12,14 @@
     NSDate *_updatedDate;
 }
 
-@property(assign,readwrite) unsigned long long cacheType;
-@property(assign,readonly) bool expired;
-@property(assign,readwrite) unsigned long long fileSize;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSString * lastModified;
-@property(assign,retain) NSString * locale;
-@property(assign,readwrite) long long maxAge;
-@property(assign,retain) NSDate * updatedDate;
+@property (nonatomic) unsigned long long cacheType;
+@property (nonatomic, readonly) bool expired;
+@property (nonatomic) unsigned long long fileSize;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSString *lastModified;
+@property (nonatomic, retain) NSString *locale;
+@property (nonatomic) long long maxAge;
+@property (nonatomic, retain) NSDate *updatedDate;
 
 - (void).cxx_destruct;
 - (unsigned long long)cacheType;

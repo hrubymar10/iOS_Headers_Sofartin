@@ -8,8 +8,8 @@
     unsigned long long _usedStorage;
 }
 
-@property(assign,readwrite) unsigned long long totalStorage;
-@property(assign,readwrite) unsigned long long usedStorage;
+@property (nonatomic) unsigned long long totalStorage;
+@property (nonatomic) unsigned long long usedStorage;
 
 - (void)dealloc;
 - (id)init;

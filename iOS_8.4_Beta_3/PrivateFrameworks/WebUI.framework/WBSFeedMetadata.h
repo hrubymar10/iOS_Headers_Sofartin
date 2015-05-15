@@ -8,9 +8,9 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSURL * homepageURL;
-@property(assign,readonly) NSURL * imageURL;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSURL *homepageURL;
+@property (nonatomic, readonly) NSURL *imageURL;
+@property (nonatomic, readonly) NSString *title;
 
 + (bool)supportsSecureCoding;
 

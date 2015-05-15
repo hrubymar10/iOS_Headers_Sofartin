@@ -9,8 +9,8 @@
     id _messageBlock;
 }
 
-@property(assign,copy) id disconnectBlock;
-@property(assign,copy) id messageBlock;
+@property (copy) id disconnectBlock;
+@property (copy) id messageBlock;
 
 - (id)_initSKXPCConnection;
 - (void)_reloadEventHandler;

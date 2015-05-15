@@ -10,11 +10,11 @@
     NSString *_subnetMask;
 }
 
-@property(assign,copy) NSString * address;
-@property(assign,readwrite) long long configMethod;
-@property(assign,readwrite) bool overridePrimary;
-@property(assign,copy) NSString * router;
-@property(assign,copy) NSString * subnetMask;
+@property (copy) NSString *address;
+@property long long configMethod;
+@property bool overridePrimary;
+@property (copy) NSString *router;
+@property (copy) NSString *subnetMask;
 
 + (bool)supportsSecureCoding;
 

@@ -17,18 +17,18 @@
     bool _useAllDayAlarms;
 }
 
-@property(assign,readwrite) <CalendarEventAlarmTableDelegate> * alarmTableDelegate;
-@property(assign,readwrite) bool customSelected;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool eventHasTravelTime;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool leaveNowAlarmSelected;
-@property(assign,readwrite) bool shouldAllowAlarmsTriggeringAfterStartDate;
-@property(assign,readwrite) bool shouldShowLeaveNowOption;
-@property(assign,retain) <EKStyleProvider> * styleProvider;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useAllDayAlarms;
+@property (nonatomic) <CalendarEventAlarmTableDelegate> *alarmTableDelegate;
+@property (nonatomic) bool customSelected;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool eventHasTravelTime;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool leaveNowAlarmSelected;
+@property (nonatomic) bool shouldAllowAlarmsTriggeringAfterStartDate;
+@property (nonatomic) bool shouldShowLeaveNowOption;
+@property (nonatomic, retain) <EKStyleProvider> *styleProvider;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useAllDayAlarms;
 
 - (void).cxx_destruct;
 - (id)_indexPathForPresetIdentifier:(long long)arg1;

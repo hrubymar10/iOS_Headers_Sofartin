@@ -15,9 +15,9 @@
     UIView *_editorialContainerView;
 }
 
-@property(assign,copy) NSString * accessibilityLabel;
-@property(assign,retain) UIImage * brickImage;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic, copy) NSString *accessibilityLabel;
+@property (nonatomic, retain) UIImage *brickImage;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
 
 - (void).cxx_destruct;
 - (id)accessibilityLabel;

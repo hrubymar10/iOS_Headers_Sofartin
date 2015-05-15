@@ -12,15 +12,15 @@
     unsigned long long _verificationCodeLength;
 }
 
-@property(assign,retain) NSString * countryCode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * dialingPrefix;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) PSKeychainSyncManager * keychainSyncManager;
-@property(assign,retain) NSString * phoneNumber;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long verificationCodeLength;
+@property (nonatomic, retain) NSString *countryCode;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *dialingPrefix;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) PSKeychainSyncManager *keychainSyncManager;
+@property (nonatomic, retain) NSString *phoneNumber;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned long long verificationCodeLength;
 
 - (void)alertView:(id)arg1 didDismissWithButtonIndex:(long long)arg2;
 - (id)countryCode;

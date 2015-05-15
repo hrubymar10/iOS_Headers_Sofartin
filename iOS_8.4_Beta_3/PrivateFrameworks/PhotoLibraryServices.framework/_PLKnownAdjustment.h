@@ -9,10 +9,10 @@
     NSIndexSet *_supportedVersions;
 }
 
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) id settingsExtractionBlock;
-@property(assign,readwrite) long long supportLevel;
-@property(assign,copy) NSIndexSet * supportedVersions;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) id settingsExtractionBlock;
+@property (nonatomic) long long supportLevel;
+@property (nonatomic, copy) NSIndexSet *supportedVersions;
 
 - (void)dealloc;
 - (id)description;

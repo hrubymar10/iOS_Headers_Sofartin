@@ -13,20 +13,20 @@
     CKWaveformProgressView *_waveformProgressView;
 }
 
-@property(getter=isControlHidden,assign,readwrite) bool controlHidden;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double duration;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isPlayed,assign,readwrite) bool played;
-@property(getter=isPlaying,assign,readwrite) bool playing;
-@property(assign,retain) CKAudioProgressView * progressView;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double time;
-@property(assign,copy) NSString * timeFormat;
-@property(assign,retain) UILabel * timeLabel;
-@property(assign,readwrite) long long waveformContentMode;
-@property(assign,retain) CKWaveformProgressView * waveformProgressView;
+@property (getter=isControlHidden, nonatomic) bool controlHidden;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double duration;
+@property (readonly) unsigned long long hash;
+@property (getter=isPlayed, nonatomic) bool played;
+@property (getter=isPlaying, nonatomic) bool playing;
+@property (nonatomic, retain) CKAudioProgressView *progressView;
+@property (readonly) Class superclass;
+@property (nonatomic) double time;
+@property (nonatomic, copy) NSString *timeFormat;
+@property (nonatomic, retain) UILabel *timeLabel;
+@property (nonatomic) long long waveformContentMode;
+@property (nonatomic, retain) CKWaveformProgressView *waveformProgressView;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })alignmentRectInsets;
 - (void)configureForMediaObject:(id)arg1 previewWidth:(double)arg2 orientation:(BOOL)arg3;

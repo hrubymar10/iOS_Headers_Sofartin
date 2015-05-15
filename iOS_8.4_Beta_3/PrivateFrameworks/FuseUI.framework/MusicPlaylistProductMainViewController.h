@@ -9,11 +9,11 @@
     bool _forPlaylistCreation;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicPlaylistProductMainViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicPlaylistProductMainViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_applyDeleteChangeRecord:(id)arg1 toPlaylist:(id)arg2;

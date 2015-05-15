@@ -9,15 +9,15 @@
     long long _renderer;
 }
 
-@property(assign,readonly) long long device;
-@property(assign,readonly) long long deviceType;
-@property(assign,readonly) bool hasLightningPort;
-@property(assign,readonly) bool isRendererH3OrBelow;
-@property(assign,readonly) bool isRendererH4OrBelow;
-@property(assign,readonly) bool isRendererH5OrBelow;
-@property(assign,readonly) struct CGSize { double x1; double x2; } maximumHardcodedTextureSize;
-@property(assign,readonly) long long platform;
-@property(assign,readonly) long long renderer;
+@property (nonatomic, readonly) long long device;
+@property (nonatomic, readonly) long long deviceType;
+@property (nonatomic, readonly) bool hasLightningPort;
+@property (nonatomic, readonly) bool isRendererH3OrBelow;
+@property (nonatomic, readonly) bool isRendererH4OrBelow;
+@property (nonatomic, readonly) bool isRendererH5OrBelow;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } maximumHardcodedTextureSize;
+@property (nonatomic, readonly) long long platform;
+@property (nonatomic, readonly) long long renderer;
 
 + (id)currentCapabilities;
 

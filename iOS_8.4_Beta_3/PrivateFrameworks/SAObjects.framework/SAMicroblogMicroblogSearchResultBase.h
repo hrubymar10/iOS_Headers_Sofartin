@@ -4,7 +4,7 @@
 
 @interface SAMicroblogMicroblogSearchResultBase : SADomainObject
 
-@property(assign,retain) SAMicroblogTwitterPostAuthor * author;
+@property (nonatomic, retain) SAMicroblogTwitterPostAuthor *author;
 
 + (id)microblogSearchResultBase;
 + (id)microblogSearchResultBaseWithDictionary:(id)arg1 context:(id)arg2;

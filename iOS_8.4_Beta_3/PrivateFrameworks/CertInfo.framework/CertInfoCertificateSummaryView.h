@@ -13,17 +13,17 @@
     NSString *_trustTitle;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) CertInfoCertificateSummaryDescriptionCell * descriptionCell;
-@property(assign,retain) NSDate * expirationDate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CertInfoCertificateHeaderCell * headerCell;
-@property(assign,retain) NSString * purpose;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UITableView * tableView;
-@property(assign,retain) NSString * trustSubtitle;
-@property(assign,retain) NSString * trustTitle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) CertInfoCertificateSummaryDescriptionCell *descriptionCell;
+@property (nonatomic, retain) NSDate *expirationDate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CertInfoCertificateHeaderCell *headerCell;
+@property (nonatomic, retain) NSString *purpose;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UITableView *tableView;
+@property (nonatomic, retain) NSString *trustSubtitle;
+@property (nonatomic, retain) NSString *trustTitle;
 
 - (void).cxx_destruct;
 - (id)_cellForReuseIdentifier:(id)arg1;

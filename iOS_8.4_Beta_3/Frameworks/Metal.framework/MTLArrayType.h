@@ -9,9 +9,9 @@
     unsigned int _stride;
 }
 
-@property(assign,readonly) unsigned long long arrayLength;
-@property(assign,readonly) unsigned long long elementType;
-@property(assign,readonly) unsigned long long stride;
+@property (readonly) unsigned long long arrayLength;
+@property (readonly) unsigned long long elementType;
+@property (readonly) unsigned long long stride;
 
 - (unsigned long long)arrayLength;
 - (void)dealloc;

@@ -10,11 +10,11 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSString * acceptButtonTitle;
-@property(assign,copy) NSString * cancelButtonTitle;
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * title;
+@property (copy) NSString *acceptButtonTitle;
+@property (copy) NSString *cancelButtonTitle;
+@property (copy) id completionHandler;
+@property (copy) NSString *message;
+@property (copy) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_runAsCFUserNotificationDisplayAlert;

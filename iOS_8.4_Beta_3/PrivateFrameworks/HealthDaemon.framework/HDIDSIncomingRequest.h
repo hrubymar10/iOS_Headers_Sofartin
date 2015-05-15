@@ -13,14 +13,14 @@
     HDIDSOutgoingResponse *_response;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,readwrite) bool expectsResponse;
-@property(assign,copy) NSString * idsIdentifier;
-@property(assign,readwrite) HDIDSMessageCenter * messageCenter;
-@property(assign,readwrite) unsigned short messageID;
-@property(assign,retain) id pbRequest;
-@property(assign,readwrite) unsigned long long priority;
-@property(assign,retain) HDIDSOutgoingResponse * response;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic) bool expectsResponse;
+@property (nonatomic, copy) NSString *idsIdentifier;
+@property (nonatomic) HDIDSMessageCenter *messageCenter;
+@property (nonatomic) unsigned short messageID;
+@property (nonatomic, retain) id pbRequest;
+@property (nonatomic) unsigned long long priority;
+@property (nonatomic, retain) HDIDSOutgoingResponse *response;
 
 - (void).cxx_destruct;
 - (void)configureResponse;

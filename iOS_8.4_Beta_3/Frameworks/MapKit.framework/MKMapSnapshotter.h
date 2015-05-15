@@ -11,7 +11,7 @@
     VKMapSnapshotCreator *_snapshotCreator;
 }
 
-@property(getter=isLoading,assign,readonly) bool loading;
+@property (getter=isLoading, nonatomic, readonly) bool loading;
 
 - (void).cxx_destruct;
 - (void)_cancel;

@@ -16,22 +16,22 @@
     HDProcessStateManager *processStateManager;
 }
 
-@property(assign,retain) HDBackgroundTaskScheduler * backgroundTaskScheduler;
-@property(assign,retain) HDContentProtectionManager * contentProtectionManager;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <HDHealthDataCollectionManager> * healthDataCollectionManager;
-@property(assign,retain) <HDHealthDataManager> * healthDataManager;
-@property(assign,retain) <HDHealthDatabase> * healthDatabase;
-@property(assign,retain) <HDDaemonDeviceManager> * healthDeviceManager;
-@property(assign,retain) <HDHealthMetadataManager> * healthMetadataManager;
-@property(assign,retain) <HDHealthSourceManager> * healthSourceManager;
-@property(assign,readonly) NSString * homeDirectoryPath;
-@property(assign,readonly) HDProcessStateManager * processStateManager;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) <HDSyncEngine> * syncEngine;
-@property(assign,retain) HDUserCharacteristicsManager * userCharacteristicsManager;
+@property (retain) HDBackgroundTaskScheduler *backgroundTaskScheduler;
+@property (retain) HDContentProtectionManager *contentProtectionManager;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) <HDHealthDataCollectionManager> *healthDataCollectionManager;
+@property (retain) <HDHealthDataManager> *healthDataManager;
+@property (retain) <HDHealthDatabase> *healthDatabase;
+@property (retain) <HDDaemonDeviceManager> *healthDeviceManager;
+@property (retain) <HDHealthMetadataManager> *healthMetadataManager;
+@property (retain) <HDHealthSourceManager> *healthSourceManager;
+@property (readonly) NSString *homeDirectoryPath;
+@property (readonly) HDProcessStateManager *processStateManager;
+@property (readonly) Class superclass;
+@property (retain) <HDSyncEngine> *syncEngine;
+@property (retain) HDUserCharacteristicsManager *userCharacteristicsManager;
 
 - (void).cxx_destruct;
 - (id)backgroundTaskScheduler;

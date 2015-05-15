@@ -15,16 +15,16 @@
     NSString *_username;
 }
 
-@property(assign,retain) NSString * accountDescription;
-@property(assign,copy) NSString * accountPersistentUUID;
-@property(assign,retain) NSString * hostname;
-@property(assign,copy) NSString * password;
-@property(assign,readonly) int port;
-@property(assign,readonly) NSNumber * portNum;
-@property(assign,retain) NSString * principalURL;
-@property(assign,readonly) bool useSSL;
-@property(assign,readonly) NSNumber * useSSLNum;
-@property(assign,copy) NSString * username;
+@property (nonatomic, readonly, retain) NSString *accountDescription;
+@property (nonatomic, copy) NSString *accountPersistentUUID;
+@property (nonatomic, readonly, retain) NSString *hostname;
+@property (nonatomic, copy) NSString *password;
+@property (nonatomic, readonly) int port;
+@property (nonatomic, readonly) NSNumber *portNum;
+@property (nonatomic, readonly, retain) NSString *principalURL;
+@property (nonatomic, readonly) bool useSSL;
+@property (nonatomic, readonly) NSNumber *useSSLNum;
+@property (nonatomic, copy) NSString *username;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

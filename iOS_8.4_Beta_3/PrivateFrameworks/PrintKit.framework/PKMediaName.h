@@ -13,18 +13,18 @@
     NSString *_widthStr;
 }
 
-@property(assign,retain) NSString * baseName;
-@property(assign,readwrite) double conversionFactor;
-@property(assign,readonly) double height;
-@property(assign,readwrite) double heightInUnits;
-@property(assign,readonly) bool isRoll;
-@property(assign,retain) NSString * mediaClass;
-@property(assign,retain) NSString * mediaName;
-@property(assign,retain) NSString * unitStr;
-@property(assign,readwrite) long long units;
-@property(assign,readonly) double width;
-@property(assign,readwrite) double widthInUnits;
-@property(assign,retain) NSString * widthStr;
+@property (retain) NSString *baseName;
+@property double conversionFactor;
+@property (readonly) double height;
+@property double heightInUnits;
+@property (readonly) bool isRoll;
+@property (retain) NSString *mediaClass;
+@property (retain) NSString *mediaName;
+@property (readonly, retain) NSString *unitStr;
+@property long long units;
+@property (readonly) double width;
+@property double widthInUnits;
+@property (retain) NSString *widthStr;
 
 + (id)pkMediaNameWithString:(id)arg1;
 

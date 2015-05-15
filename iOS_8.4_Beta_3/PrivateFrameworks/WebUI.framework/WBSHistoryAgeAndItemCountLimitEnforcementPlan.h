@@ -12,8 +12,8 @@
     WBSHistorySQLiteStore *_store;
 }
 
-@property(assign,readonly) NSSet * itemsToDiscard;
-@property(assign,readonly) NSSet * itemsToKeep;
+@property (nonatomic, readonly) NSSet *itemsToDiscard;
+@property (nonatomic, readonly) NSSet *itemsToKeep;
 
 - (void).cxx_destruct;
 - (id)_itemsToDiscardFromItemsOrderedByLastVisitTime:(id)arg1;

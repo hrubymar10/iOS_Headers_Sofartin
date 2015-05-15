@@ -18,18 +18,18 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) bool hasIsToDefaultPairedDevice;
-@property(assign,readwrite) bool hasLinkType;
-@property(assign,readwrite) bool hasMessageSize;
-@property(assign,readwrite) bool hasPriority;
-@property(assign,readonly) bool hasService;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long isToDefaultPairedDevice;
-@property(assign,readwrite) unsigned long long linkType;
-@property(assign,readwrite) unsigned long long messageSize;
-@property(assign,readwrite) unsigned long long priority;
-@property(assign,retain) NSString * service;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) bool hasIsToDefaultPairedDevice;
+@property (nonatomic) bool hasLinkType;
+@property (nonatomic) bool hasMessageSize;
+@property (nonatomic) bool hasPriority;
+@property (nonatomic, readonly) bool hasService;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long isToDefaultPairedDevice;
+@property (nonatomic) unsigned long long linkType;
+@property (nonatomic) unsigned long long messageSize;
+@property (nonatomic) unsigned long long priority;
+@property (nonatomic, retain) NSString *service;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -13,8 +13,8 @@
     NSString *objectId;
 }
 
-@property(assign,readonly) CallDBManager * callDBManager;
-@property(assign,readonly) NSString * objectId;
+@property (nonatomic, readonly) CallDBManager *callDBManager;
+@property (nonatomic, readonly) NSString *objectId;
 
 + (id)createForClient;
 + (id)createForServer;

@@ -20,14 +20,14 @@
     float _zThreshold;
 }
 
-@property(assign,readwrite) bool accelerometerEventsEnabled;
-@property(assign,readwrite) <BKSAccelerometerDelegate> * delegate;
-@property(assign,readwrite) bool orientationEventsEnabled;
-@property(assign,readwrite) bool passiveOrientationEvents;
-@property(assign,readwrite) double updateInterval;
-@property(assign,readwrite) float xThreshold;
-@property(assign,readwrite) float yThreshold;
-@property(assign,readwrite) float zThreshold;
+@property (nonatomic) bool accelerometerEventsEnabled;
+@property (nonatomic) <BKSAccelerometerDelegate> *delegate;
+@property (nonatomic) bool orientationEventsEnabled;
+@property (nonatomic) bool passiveOrientationEvents;
+@property (nonatomic) double updateInterval;
+@property (nonatomic) float xThreshold;
+@property (nonatomic) float yThreshold;
+@property (nonatomic) float zThreshold;
 
 - (void)_checkIn;
 - (void)_checkOut;

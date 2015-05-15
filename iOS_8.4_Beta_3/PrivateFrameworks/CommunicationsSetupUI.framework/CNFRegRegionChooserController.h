@@ -13,15 +13,15 @@
     PSSpecifier *_specifier;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CNFRegRegionChooserDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSArray * filteredRegionList;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * regionList;
-@property(assign,retain) UISearchController * searchController;
-@property(assign,retain) NSString * selectedRegionID;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CNFRegRegionChooserDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSArray *filteredRegionList;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *regionList;
+@property (nonatomic, retain) UISearchController *searchController;
+@property (nonatomic, retain) NSString *selectedRegionID;
+@property (readonly) Class superclass;
 
 - (void)_drillDownControllersWithArray:(id)arg1;
 - (void)_hideTableViewCells;

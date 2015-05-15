@@ -11,12 +11,12 @@
     int _type;
 }
 
-@property(assign,readonly) double alphaThreshold;
-@property(assign,readonly) int direction;
-@property(assign,readonly) int fitType;
-@property(assign,readonly) bool isHTMLWrap;
-@property(assign,readonly) double margin;
-@property(assign,readonly) int type;
+@property (nonatomic, readonly) double alphaThreshold;
+@property (nonatomic, readonly) int direction;
+@property (nonatomic, readonly) int fitType;
+@property (nonatomic, readonly) bool isHTMLWrap;
+@property (nonatomic, readonly) double margin;
+@property (nonatomic, readonly) int type;
 
 + (id)exteriorTextWrap;
 + (id)exteriorTextWrapWithIsHTMLWrap:(bool)arg1 type:(int)arg2 direction:(int)arg3 fitType:(int)arg4 margin:(double)arg5 alphaThreshold:(double)arg6;

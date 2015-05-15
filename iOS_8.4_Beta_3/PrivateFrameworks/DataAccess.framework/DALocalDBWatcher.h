@@ -15,8 +15,8 @@
     bool _watchingBookmarks;
 }
 
-@property(assign,readwrite) int lastSavedABSequenceNumber;
-@property(assign,readwrite) int lastSavedCalSequenceNumber;
+@property (nonatomic) int lastSavedABSequenceNumber;
+@property (nonatomic) int lastSavedCalSequenceNumber;
 
 + (id)sharedDBWatcher;
 

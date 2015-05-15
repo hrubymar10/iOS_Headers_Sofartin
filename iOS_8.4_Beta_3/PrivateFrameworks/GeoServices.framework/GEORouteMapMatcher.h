@@ -6,7 +6,7 @@
     GEOComposedRoute *_route;
 }
 
-@property(assign,readonly) GEOComposedRoute * route;
+@property (nonatomic, readonly) GEOComposedRoute *route;
 
 - (bool)_clampSegment:(struct PolylineCoordinate { unsigned int x1; float x2; }*)arg1 endCoord:(struct PolylineCoordinate { unsigned int x1; float x2; }*)arg2 outSegmentLength:(double*)arg3 firstAllowedMatch:(struct PolylineCoordinate { unsigned int x1; float x2; })arg4 maxDistance:(double)arg5;
 - (double)_closestDistanceFromCoordinate:(struct { double x1; double x2; })arg1 alongRoute:(double)arg2;

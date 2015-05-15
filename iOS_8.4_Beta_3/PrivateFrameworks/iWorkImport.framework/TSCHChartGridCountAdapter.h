@@ -7,8 +7,8 @@
     unsigned long long mIndexFactor;
 }
 
-@property(assign,readwrite) bool countFromOne;
-@property(assign,readwrite) unsigned long long indexFactor;
+@property (nonatomic) bool countFromOne;
+@property (nonatomic) unsigned long long indexFactor;
 
 - (unsigned long long)count;
 - (bool)countFromOne;

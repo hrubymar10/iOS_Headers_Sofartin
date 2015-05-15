@@ -7,8 +7,8 @@
     unsigned short _port;
 }
 
-@property(assign,copy) NSString * host;
-@property(assign,readwrite) unsigned short port;
+@property (nonatomic, copy) NSString *host;
+@property (nonatomic) unsigned short port;
 
 - (id)host;
 - (unsigned short)port;

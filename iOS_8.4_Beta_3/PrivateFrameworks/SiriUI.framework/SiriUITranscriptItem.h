@@ -8,9 +8,9 @@
     UIViewController<SiriUIViewController> *_viewController;
 }
 
-@property(assign,retain) AceObject * aceObject;
-@property(assign,copy) NSUUID * itemIdentifier;
-@property(assign,retain) UIViewController<SiriUIViewController> * viewController;
+@property (nonatomic, retain) AceObject *aceObject;
+@property (nonatomic, copy) NSUUID *itemIdentifier;
+@property (nonatomic, retain) UIViewController<SiriUIViewController> *viewController;
 
 + (id)transcriptItemWithAceObject:(id)arg1;
 

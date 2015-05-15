@@ -60,9 +60,9 @@
     } _xRelay;
 }
 
-@property(assign,retain) CDXClient * cdxClient;
-@property(assign,retain) NSMutableDictionary * cdxSessions;
-@property(assign,retain) NSMutableDictionary * pidToConnectTimeoutSource;
+@property (nonatomic, retain) CDXClient *cdxClient;
+@property (retain) NSMutableDictionary *cdxSessions;
+@property (retain) NSMutableDictionary *pidToConnectTimeoutSource;
 
 - (void)CDXClient:(id)arg1 error:(id)arg2;
 - (void)CDXClient:(id)arg1 preblob:(id)arg2;

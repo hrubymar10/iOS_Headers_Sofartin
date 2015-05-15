@@ -6,14 +6,14 @@
     bool _isFirstChatItem;
 }
 
-@property(assign,readonly) unsigned long long balloonCorners;
-@property(assign,readonly) BOOL balloonOrientation;
-@property(assign,readonly) Class balloonViewClass;
-@property(assign,readonly) bool failed;
-@property(getter=isFromMe,assign,readonly) bool fromMe;
-@property(assign,readwrite) bool isFirstChatItem;
-@property(assign,retain) IMHandle * sender;
-@property(assign,retain) NSDate * time;
+@property (nonatomic, readonly) unsigned long long balloonCorners;
+@property (nonatomic, readonly) BOOL balloonOrientation;
+@property (nonatomic, readonly) Class balloonViewClass;
+@property (nonatomic, readonly) bool failed;
+@property (getter=isFromMe, nonatomic, readonly) bool fromMe;
+@property (nonatomic) bool isFirstChatItem;
+@property (nonatomic, readonly, retain) IMHandle *sender;
+@property (nonatomic, readonly, retain) NSDate *time;
 
 - (unsigned long long)balloonCorners;
 - (BOOL)balloonOrientation;

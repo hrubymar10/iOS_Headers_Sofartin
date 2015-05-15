@@ -11,7 +11,7 @@
     bool _useGridSelection;
 }
 
-@property(assign,readonly) UIKBTree * currentKey;
+@property (nonatomic, readonly) UIKBTree *currentKey;
 
 + (id)carKeyboardNameForKeyboard:(id)arg1 screenTraits:(id)arg2;
 + (struct CGSize { double x1; double x2; })keyboardSizeForInputMode:(id)arg1 screenTraits:(id)arg2;

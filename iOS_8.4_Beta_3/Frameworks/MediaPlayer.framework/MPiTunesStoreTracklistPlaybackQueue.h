@@ -7,8 +7,8 @@
     NSArray *_storeIDs;
 }
 
-@property(assign,readonly) unsigned long long shuffleType;
-@property(assign,readonly) NSArray * storeIDs;
+@property (nonatomic, readonly) unsigned long long shuffleType;
+@property (nonatomic, readonly) NSArray *storeIDs;
 
 - (void).cxx_destruct;
 - (id)createPlaybackContext;

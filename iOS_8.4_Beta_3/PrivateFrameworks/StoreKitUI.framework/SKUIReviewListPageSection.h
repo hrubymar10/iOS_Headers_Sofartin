@@ -6,7 +6,7 @@
     SKUIViewElementLayoutContext *_cellLayoutContext;
 }
 
-@property(assign,readonly) SKUIReviewListPageComponent * pageComponent;
+@property (nonatomic, readonly) SKUIReviewListPageComponent *pageComponent;
 
 - (void).cxx_destruct;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })_contentInsetForReviewIndex:(long long)arg1;

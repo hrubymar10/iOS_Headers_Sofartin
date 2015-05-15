@@ -14,10 +14,10 @@
     NSMutableDictionary *_variants;
 }
 
-@property(assign,readwrite) <MPUCompletionQueryDataSourceDelegate> * completionDelegate;
-@property(assign,readwrite) bool shouldAutomaticallyLoadCompletions;
-@property(assign,readonly) bool shouldLoadCompletionArtwork;
-@property(assign,readwrite) bool shouldShowCompletions;
+@property (nonatomic) <MPUCompletionQueryDataSourceDelegate> *completionDelegate;
+@property (nonatomic) bool shouldAutomaticallyLoadCompletions;
+@property (nonatomic, readonly) bool shouldLoadCompletionArtwork;
+@property (nonatomic) bool shouldShowCompletions;
 
 - (void).cxx_destruct;
 - (void)_didInvalidateWithContext:(id)arg1;

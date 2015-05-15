@@ -2,47 +2,47 @@
    Image: /System/Library/Frameworks/Foundation.framework/Foundation
  */
 
-@interface NSNumber : NSValue <CKRecordValue, PQLValuable, PQLValuable, TSCHChartGridValue, TSDMixing>
+@interface NSNumber : NSValue <CKRecordValue, PQLValuable, TSCHChartGridValue, TSDMixing>
 
-@property(assign,readonly) bool boolValue;
-@property(assign,readonly) NSNumber * brc_documentID;
-@property(assign,readonly) NSNumber * brc_folderID;
-@property(assign,readonly) bool brc_isDocumentID;
-@property(assign,readonly) bool brc_isFolderID;
-@property(assign,readonly) unsigned long long brc_rawID;
-@property(assign,readonly) BOOL charValue;
-@property(assign,readonly) int chartGridValueType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) struct { unsigned int x1 : 8; unsigned int x2 : 4; unsigned int x3 : 1; unsigned int x4 : 1; unsigned int x5 : 18; unsigned short x6[8]; } decimalValue;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double doubleValue;
-@property(assign,readonly) float floatValue;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) int intValue;
-@property(assign,readonly) long long integerValue;
-@property(assign,readonly) long long longLongValue;
-@property(assign,readonly) long long longValue;
-@property(assign,readonly) short shortValue;
-@property(assign,copy) NSString * stringValue;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned char unsignedCharValue;
-@property(assign,readonly) unsigned int unsignedIntValue;
-@property(assign,readonly) unsigned long long unsignedIntegerValue;
-@property(assign,readonly) unsigned long long unsignedLongLongValue;
-@property(assign,readonly) unsigned long long unsignedLongValue;
-@property(assign,readonly) unsigned short unsignedShortValue;
+@property (readonly) bool boolValue;
+@property (nonatomic, readonly) NSNumber *brc_documentID;
+@property (nonatomic, readonly) NSNumber *brc_folderID;
+@property (nonatomic, readonly) bool brc_isDocumentID;
+@property (nonatomic, readonly) bool brc_isFolderID;
+@property (nonatomic, readonly) unsigned long long brc_rawID;
+@property (readonly) BOOL charValue;
+@property (nonatomic, readonly) int chartGridValueType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly) struct { unsigned int x1 : 8; unsigned int x2 : 4; unsigned int x3 : 1; unsigned int x4 : 1; unsigned int x5 : 18; unsigned short x6[8]; } decimalValue;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) double doubleValue;
+@property (readonly) float floatValue;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) int intValue;
+@property (readonly) long long integerValue;
+@property (readonly) long long longLongValue;
+@property (readonly) long long longValue;
+@property (readonly) short shortValue;
+@property (readonly, copy) NSString *stringValue;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) unsigned char unsignedCharValue;
+@property (readonly) unsigned int unsignedIntValue;
+@property (readonly) unsigned long long unsignedIntegerValue;
+@property (readonly) unsigned long long unsignedLongLongValue;
+@property (readonly) unsigned long long unsignedLongValue;
+@property (readonly) unsigned short unsignedShortValue;
 
 + (id)_gkServerTimeInterval:(double)arg1;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
@@ -75,10 +75,6 @@
 + (id)numberWithUnsignedLong:(unsigned long long)arg1;
 + (id)numberWithUnsignedLongLong:(unsigned long long)arg1;
 + (id)numberWithUnsignedShort:(unsigned short)arg1;
-+ (bool)parseString:(id)arg1 intoNSInteger:(long long*)arg2;
-+ (bool)parseString:(id)arg1 intoNSUInteger:(unsigned long long*)arg2;
-+ (bool)parseString:(id)arg1 intoSInt64:(long long*)arg2;
-+ (bool)parseString:(id)arg1 intoUInt64:(unsigned long long*)arg2;
 + (bool)supportsSecureCoding;
 + (id)tsch_instanceWithArchive:(const struct ChartsNSNumberDoubleArchive { int (**x1)(); struct UnknownFieldSet { struct vector<google::protobuf::UnknownField, std::__1::allocator<google::protobuf::UnknownField> > {} *x_2_1_1; } x2; unsigned int x3[1]; int x4; double x5; }*)arg1 unarchiver:(id)arg2;
 + (id)tsch_numberWithStyleInt:(int)arg1;

@@ -4,7 +4,7 @@
 
 @interface SAUIDelayedConfirmationView : SAUIConfirmationView
 
-@property(assign,readwrite) long long autoConfirmDelay;
+@property (nonatomic) long long autoConfirmDelay;
 
 + (id)delayedConfirmationView;
 + (id)delayedConfirmationViewWithDictionary:(id)arg1 context:(id)arg2;

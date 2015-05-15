@@ -6,7 +6,7 @@
     long long _currentPage;
 }
 
-@property(assign,readwrite) long long currentPage;
+@property (nonatomic) long long currentPage;
 
 - (long long)currentPage;
 - (void)setCurrentPage:(long long)arg1;

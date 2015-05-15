@@ -9,8 +9,8 @@
     bool _setupComplete;
 }
 
-@property(assign,readonly) NSArray * handlers;
-@property(assign,readonly) bool isSetupComplete;
+@property (nonatomic, readonly) NSArray *handlers;
+@property (nonatomic, readonly) bool isSetupComplete;
 
 - (void)_noteDisconnected;
 - (void)addHandler:(id)arg1;

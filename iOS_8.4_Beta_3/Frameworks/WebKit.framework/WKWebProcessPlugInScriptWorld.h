@@ -10,12 +10,12 @@
     } _world;
 }
 
-@property(assign,readonly) struct Object { int (**x1)(); id x2; }* _apiObject;
-@property(assign,readonly) struct InjectedBundleScriptWorld { int (**x1)(); id x2; struct RefPtr<WebCore::DOMWrapperWorld> { struct DOMWrapperWorld {} *x_3_1_1; } x3; }* _scriptWorld;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly) struct Object { int (**x1)(); id x2; }*_apiObject;
+@property (readonly) struct InjectedBundleScriptWorld { int (**x1)(); id x2; struct RefPtr<WebCore::DOMWrapperWorld> { struct DOMWrapperWorld {} *x_3_1_1; } x3; }*_scriptWorld;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)normalWorld;
 + (id)world;

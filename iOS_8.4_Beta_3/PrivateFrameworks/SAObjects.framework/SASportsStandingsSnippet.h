@@ -4,10 +4,10 @@
 
 @interface SASportsStandingsSnippet : SASportsSnippet
 
-@property(assign,copy) NSArray * columns;
-@property(assign,copy) NSArray * entities;
-@property(assign,copy) NSArray * selectedEntities;
-@property(assign,readwrite) bool showCardinalPositions;
+@property (nonatomic, copy) NSArray *columns;
+@property (nonatomic, copy) NSArray *entities;
+@property (nonatomic, copy) NSArray *selectedEntities;
+@property (nonatomic) bool showCardinalPositions;
 
 + (id)standingsSnippet;
 + (id)standingsSnippetWithDictionary:(id)arg1 context:(id)arg2;

@@ -6,7 +6,7 @@
     id _error;
 }
 
-@property(assign,copy) id error;
+@property (nonatomic, copy) id error;
 
 - (void)cancel;
 - (void)dealloc;

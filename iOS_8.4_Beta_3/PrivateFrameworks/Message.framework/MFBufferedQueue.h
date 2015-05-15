@@ -10,9 +10,9 @@
     double _timeOfLastFlush;
 }
 
-@property(assign,readwrite) double maximumLatency;
-@property(assign,readwrite) unsigned int maximumSize;
-@property(assign,readonly) unsigned int size;
+@property (nonatomic) double maximumLatency;
+@property (nonatomic) unsigned int maximumSize;
+@property (nonatomic, readonly) unsigned int size;
 
 - (bool)_flush;
 - (bool)addItem:(id)arg1;

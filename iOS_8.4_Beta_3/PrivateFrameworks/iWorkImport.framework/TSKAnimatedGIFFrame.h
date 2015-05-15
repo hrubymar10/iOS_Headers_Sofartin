@@ -7,8 +7,8 @@
     double mTime;
 }
 
-@property(assign,readonly) struct CGImage { }* image;
-@property(assign,readonly) double time;
+@property (nonatomic, readonly) struct CGImage { }*image;
+@property (nonatomic, readonly) double time;
 
 - (void)dealloc;
 - (id)description;

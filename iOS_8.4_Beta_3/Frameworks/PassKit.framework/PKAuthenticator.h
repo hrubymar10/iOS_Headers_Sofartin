@@ -10,8 +10,8 @@
     unsigned long long _presentationFlag;
 }
 
-@property(assign,readwrite) <PKAuthenticatorDelegate> * delegate;
-@property(assign,readwrite) bool fingerPresent;
+@property (nonatomic) <PKAuthenticatorDelegate> *delegate;
+@property (nonatomic) bool fingerPresent;
 
 + (unsigned long long)currentStateForPolicy:(long long)arg1;
 + (void)preheatAuthenticator;

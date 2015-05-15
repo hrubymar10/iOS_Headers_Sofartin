@@ -7,7 +7,7 @@
     NSDictionary *_tokens;
 }
 
-@property(assign,readonly) NSString * fmipWipeToken;
+@property (nonatomic, readonly) NSString *fmipWipeToken;
 
 - (void).cxx_destruct;
 - (id)fmipWipeToken;

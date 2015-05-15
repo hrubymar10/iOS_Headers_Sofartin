@@ -22,23 +22,23 @@
     bool _touchInside;
 }
 
-@property(assign,retain) NSMutableArray * allButtonItems;
-@property(assign,readwrite) bool autoDismiss;
-@property(assign,retain) CKJoystickButtonItem * centerButtonItem;
-@property(getter=isCollapsed,assign,readwrite) bool collapsed;
-@property(assign,readwrite) CKJoystickController * controller;
-@property(assign,readwrite) bool delegateCollapsedWillChange;
-@property(assign,retain) UIView * discView;
-@property(getter=isDragging,assign,readwrite) bool dragging;
-@property(assign,readwrite) double endAngle;
-@property(getter=isExpanded,assign,readwrite) bool expanded;
-@property(assign,readwrite) unsigned long long highlightStyle;
-@property(assign,readwrite) CKJoystickButtonItem * highlightedButtonItem;
-@property(assign,readwrite) double incrementAngle;
-@property(assign,copy) NSArray * radialButtonItems;
-@property(assign,readwrite) double startAngle;
-@property(assign,readwrite) unsigned long long style;
-@property(getter=isTouchInside,assign,readwrite) bool touchInside;
+@property (nonatomic, retain) NSMutableArray *allButtonItems;
+@property (nonatomic) bool autoDismiss;
+@property (nonatomic, retain) CKJoystickButtonItem *centerButtonItem;
+@property (getter=isCollapsed, nonatomic) bool collapsed;
+@property (nonatomic) CKJoystickController *controller;
+@property (nonatomic) bool delegateCollapsedWillChange;
+@property (nonatomic, retain) UIView *discView;
+@property (getter=isDragging, nonatomic) bool dragging;
+@property (nonatomic) double endAngle;
+@property (getter=isExpanded, nonatomic) bool expanded;
+@property (nonatomic) unsigned long long highlightStyle;
+@property (nonatomic) CKJoystickButtonItem *highlightedButtonItem;
+@property (nonatomic) double incrementAngle;
+@property (nonatomic, copy) NSArray *radialButtonItems;
+@property (nonatomic) double startAngle;
+@property (nonatomic) unsigned long long style;
+@property (getter=isTouchInside, nonatomic) bool touchInside;
 
 + (void)buttonChangeAnimation:(id)arg1 completion:(id)arg2;
 + (void)buttonRotateAnimation:(id)arg1 completion:(id)arg2;

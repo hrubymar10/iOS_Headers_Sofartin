@@ -7,11 +7,11 @@
     NSArray *_titleViewElements;
 }
 
-@property(assign,retain) SKUIMenuBarViewElementConfiguration * configuration;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIMenuBarViewElementConfiguration *configuration;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (Class)_shelfMenuBarViewElementClass;
 + (Class)_titlesMenuBarViewElementClass;

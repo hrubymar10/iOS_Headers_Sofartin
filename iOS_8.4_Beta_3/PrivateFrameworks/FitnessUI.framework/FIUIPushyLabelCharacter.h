@@ -7,8 +7,8 @@
     NSAttributedString *_sourceText;
 }
 
-@property(assign,retain) UIView * renderedView;
-@property(assign,retain) NSAttributedString * sourceText;
+@property (retain) UIView *renderedView;
+@property (retain) NSAttributedString *sourceText;
 
 - (void).cxx_destruct;
 - (id)renderedView;

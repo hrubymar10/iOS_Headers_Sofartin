@@ -14,13 +14,13 @@
     long long _selectedSegmentIndex;
 }
 
-@property(assign,readwrite) <SKUIFlexibleSegmentedControlDelegate> * delegate;
-@property(assign,readwrite) double desiredSegmentWidth;
-@property(assign,copy) NSArray * itemTitles;
-@property(assign,readwrite) long long maximumNumberOfVisibleItems;
-@property(assign,readonly) long long moreListIndex;
-@property(assign,copy) NSString * moreListTitle;
-@property(assign,readwrite) long long selectedSegmentIndex;
+@property (nonatomic) <SKUIFlexibleSegmentedControlDelegate> *delegate;
+@property (nonatomic) double desiredSegmentWidth;
+@property (nonatomic, copy) NSArray *itemTitles;
+@property (nonatomic) long long maximumNumberOfVisibleItems;
+@property (nonatomic, readonly) long long moreListIndex;
+@property (nonatomic, copy) NSString *moreListTitle;
+@property (nonatomic) long long selectedSegmentIndex;
 
 - (void).cxx_destruct;
 - (void)_configureSegmentedControl:(id)arg1 withTitles:(id)arg2 boundingSize:(struct CGSize { double x1; double x2; })arg3;

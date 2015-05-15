@@ -14,13 +14,13 @@
     NSMutableDictionary *_serviceToOperationalAccountsMap;
 }
 
-@property(assign,readonly) NSMutableArray * _accounts;
-@property(assign,readonly) NSArray * accounts;
-@property(assign,readonly) NSArray * activeAccounts;
-@property(assign,readonly) id bestAccountForStatus;
-@property(assign,readonly) NSArray * connectedAccounts;
-@property(assign,readonly) int numberOfAccounts;
-@property(assign,readonly) NSArray * operationalAccounts;
+@property (nonatomic, readonly) NSMutableArray *_accounts;
+@property (nonatomic, readonly) NSArray *accounts;
+@property (nonatomic, readonly) NSArray *activeAccounts;
+@property (nonatomic, readonly) id bestAccountForStatus;
+@property (nonatomic, readonly) NSArray *connectedAccounts;
+@property (nonatomic, readonly) int numberOfAccounts;
+@property (nonatomic, readonly) NSArray *operationalAccounts;
 
 + (id)bestAccountFromAccounts:(id)arg1;
 + (id)sharedInstance;

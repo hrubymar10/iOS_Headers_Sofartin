@@ -10,19 +10,19 @@
     unsigned long long _type;
 }
 
-@property(assign,readonly) unsigned long long access;
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,readonly) unsigned long long bufferAlignment;
-@property(assign,readonly) unsigned long long bufferDataSize;
-@property(assign,readonly) unsigned long long bufferDataType;
-@property(assign,readonly) MTLStructType * bufferStructType;
-@property(assign,readonly) unsigned long long index;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) unsigned long long textureDataType;
-@property(assign,readonly) unsigned long long textureType;
-@property(assign,readonly) unsigned long long threadgroupMemoryAlignment;
-@property(assign,readonly) unsigned long long threadgroupMemoryDataSize;
-@property(assign,readonly) unsigned long long type;
+@property (readonly) unsigned long long access;
+@property (getter=isActive, readonly) bool active;
+@property (readonly) unsigned long long bufferAlignment;
+@property (readonly) unsigned long long bufferDataSize;
+@property (readonly) unsigned long long bufferDataType;
+@property (readonly) MTLStructType *bufferStructType;
+@property (readonly) unsigned long long index;
+@property (readonly) NSString *name;
+@property (readonly) unsigned long long textureDataType;
+@property (readonly) unsigned long long textureType;
+@property (readonly) unsigned long long threadgroupMemoryAlignment;
+@property (readonly) unsigned long long threadgroupMemoryDataSize;
+@property (readonly) unsigned long long type;
 
 - (unsigned long long)access;
 - (unsigned long long)bufferAlignment;

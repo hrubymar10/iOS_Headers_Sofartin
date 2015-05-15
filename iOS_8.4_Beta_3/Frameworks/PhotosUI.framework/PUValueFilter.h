@@ -6,7 +6,7 @@
     double _currentValue;
 }
 
-@property(assign,readwrite) double currentValue;
+@property (nonatomic) double currentValue;
 
 - (double)currentValue;
 - (double)outputValue;

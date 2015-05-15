@@ -30,14 +30,14 @@
     <CPLEngineStoreUserIdentifier> *_transportUserIdentifier;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) CPLEngineLibrary * engineLibrary;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readwrite) bool shouldTryToMingleImmediately;
-@property(setter=_setState:,assign,readwrite) unsigned long long state;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) CPLEngineLibrary *engineLibrary;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (nonatomic) bool shouldTryToMingleImmediately;
+@property (setter=_setState:, nonatomic) unsigned long long state;
+@property (readonly) Class superclass;
 
 + (id)descriptionForState:(unsigned long long)arg1;
 + (id)platformImplementationProtocol;

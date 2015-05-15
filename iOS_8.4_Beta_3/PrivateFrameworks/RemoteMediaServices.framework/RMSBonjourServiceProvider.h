@@ -9,15 +9,15 @@
     NSMutableDictionary *_services;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RMSServiceProviderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * searchDomain;
-@property(assign,readonly) NSString * searchScope;
-@property(assign,readonly) NSString * searchType;
-@property(assign,readonly) long long serviceDiscoverySource;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RMSServiceProviderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *searchDomain;
+@property (nonatomic, readonly) NSString *searchScope;
+@property (nonatomic, readonly) NSString *searchType;
+@property (nonatomic, readonly) long long serviceDiscoverySource;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_identifierForNetService:(id)arg1;

@@ -14,15 +14,15 @@
     GKLabel *_topLabel;
 }
 
-@property(assign,retain) GKLabel * bottomLabel;
-@property(assign,retain) UIButton * detailButton;
-@property(assign,readwrite) SEL detailPressedAction;
-@property(assign,readwrite) bool isDetail;
-@property(assign,retain) GKTurnBasedMatch * match;
-@property(assign,retain) GKTurnBasedParticipant * participant;
-@property(assign,retain) UIImageView * statusImageView;
-@property(assign,retain) GKContiguousContainerView * textContainerView;
-@property(assign,retain) GKLabel * topLabel;
+@property (nonatomic, retain) GKLabel *bottomLabel;
+@property (nonatomic, retain) UIButton *detailButton;
+@property (nonatomic) SEL detailPressedAction;
+@property (nonatomic) bool isDetail;
+@property (nonatomic, retain) GKTurnBasedMatch *match;
+@property (nonatomic, retain) GKTurnBasedParticipant *participant;
+@property (nonatomic, retain) UIImageView *statusImageView;
+@property (nonatomic, retain) GKContiguousContainerView *textContainerView;
+@property (nonatomic, retain) GKLabel *topLabel;
 
 + (double)defaultRowHeight;
 + (id)itemHeightList;

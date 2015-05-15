@@ -22,19 +22,19 @@
     UIButton *_writeAReviewButton;
 }
 
-@property(assign,readonly) UIControl * appSupportButton;
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,retain) NSArray * histogramValues;
-@property(assign,readwrite) long long numberOfUserRatings;
-@property(assign,readwrite) long long personalStarRating;
-@property(assign,readonly) UIControl * segmentedControl;
-@property(assign,copy) NSArray * segmentedControlTitles;
-@property(assign,readwrite) long long selectedSegmentIndex;
-@property(assign,readonly) UIControl * starRatingControl;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) double userRating;
-@property(assign,copy) NSString * versionString;
-@property(assign,readonly) UIControl * writeAReviewButton;
+@property (nonatomic, readonly) UIControl *appSupportButton;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic, retain) NSArray *histogramValues;
+@property (nonatomic) long long numberOfUserRatings;
+@property (nonatomic) long long personalStarRating;
+@property (nonatomic, readonly) UIControl *segmentedControl;
+@property (nonatomic, copy) NSArray *segmentedControlTitles;
+@property (nonatomic) long long selectedSegmentIndex;
+@property (nonatomic, readonly) UIControl *starRatingControl;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) double userRating;
+@property (nonatomic, copy) NSString *versionString;
+@property (nonatomic, readonly) UIControl *writeAReviewButton;
 
 - (void).cxx_destruct;
 - (id)_countLabelString;

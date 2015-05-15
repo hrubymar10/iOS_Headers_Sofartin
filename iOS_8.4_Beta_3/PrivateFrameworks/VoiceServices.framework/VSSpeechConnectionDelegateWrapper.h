@@ -8,13 +8,13 @@
     VSSpeechRequest *_request;
 }
 
-@property(assign,readwrite) VSSpeechConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <VSSpeechConnectionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) VSSpeechRequest * request;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) VSSpeechConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <VSSpeechConnectionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) VSSpeechRequest *request;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)connection;

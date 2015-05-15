@@ -13,8 +13,8 @@
     } _trafficLayer;
 }
 
-@property(assign,readonly) NSArray * incidents;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{TrafficLayer=^^?{vector<vk::TrafficBatch *' */ struct * trafficLayer; /* unknown property attribute:  std::__1::allocator<ggl::OptimizedTraffic::BaseMesh *> >=^^{BaseMesh}}}[1^{RenderState}]{shared_ptr<ggl::Tile::ViewUniformData>=^{ViewUniformData}^{__shared_weak_count}}[1{shared_ptr<ggl::RenderState>=^{RenderState}^{__shared_weak_count}}]Q^{TrafficManager}@} */
+@property (nonatomic, readonly) NSArray *incidents;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{TrafficLayer=^^?{vector<vk::TrafficBatch *' */ struct *trafficLayer; /* unknown property attribute:  std::__1::allocator<ggl::OptimizedTraffic::BaseMesh *> >=^^{BaseMesh}}}[1^{RenderState}]{shared_ptr<ggl::Tile::ViewUniformData>=^{ViewUniformData}^{__shared_weak_count}}[1{shared_ptr<ggl::RenderState>=^{RenderState}^{__shared_weak_count}}]Q^{TrafficManager}@} */
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -16,12 +16,12 @@
     } _has;
 }
 
-@property(assign,readonly) int* actions;
-@property(assign,readonly) unsigned long long actionsCount;
-@property(assign,readwrite) int component;
-@property(assign,readwrite) bool handleLocally;
-@property(assign,readwrite) bool hasComponent;
-@property(assign,readwrite) bool hasHandleLocally;
+@property (nonatomic, readonly) int*actions;
+@property (nonatomic, readonly) unsigned long long actionsCount;
+@property (nonatomic) int component;
+@property (nonatomic) bool handleLocally;
+@property (nonatomic) bool hasComponent;
+@property (nonatomic) bool hasHandleLocally;
 
 - (int*)actions;
 - (int)actionsAtIndex:(unsigned long long)arg1;

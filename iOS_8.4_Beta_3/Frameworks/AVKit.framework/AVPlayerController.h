@@ -8,11 +8,11 @@
     long long _status;
 }
 
-@property(assign,readwrite) bool CALayerDestinationIsTVOut;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) AVPlayer * player;
-@property(getter=isPlayingOnSecondScreen,assign,readwrite) bool playingOnSecondScreen;
-@property(assign,readonly) long long status;
+@property (nonatomic) bool CALayerDestinationIsTVOut;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) AVPlayer *player;
+@property (getter=isPlayingOnSecondScreen, nonatomic) bool playingOnSecondScreen;
+@property (nonatomic, readonly) long long status;
 
 + (void)initialize;
 

@@ -6,7 +6,7 @@
     PKImage *_iconImage;
 }
 
-@property(assign,retain) PKImage * iconImage;
+@property (nonatomic, retain) PKImage *iconImage;
 
 + (id)archiveName;
 + (long long)currentVersion;

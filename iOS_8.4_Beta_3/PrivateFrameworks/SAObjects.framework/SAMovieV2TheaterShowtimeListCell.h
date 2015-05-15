@@ -4,11 +4,11 @@
 
 @interface SAMovieV2TheaterShowtimeListCell : SADomainObject
 
-@property(assign,readwrite) bool bookable;
-@property(assign,copy) NSArray * displayableShowtimes;
-@property(assign,retain) SADistance * relativeDistance;
-@property(assign,retain) SAMovieV2ShowtimeSnippet * showtimeSnippet;
-@property(assign,copy) NSString * theaterName;
+@property (nonatomic) bool bookable;
+@property (nonatomic, copy) NSArray *displayableShowtimes;
+@property (nonatomic, retain) SADistance *relativeDistance;
+@property (nonatomic, retain) SAMovieV2ShowtimeSnippet *showtimeSnippet;
+@property (nonatomic, copy) NSString *theaterName;
 
 + (id)theaterShowtimeListCell;
 + (id)theaterShowtimeListCellWithDictionary:(id)arg1 context:(id)arg2;

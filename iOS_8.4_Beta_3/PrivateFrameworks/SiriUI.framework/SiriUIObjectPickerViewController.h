@@ -7,8 +7,8 @@
     <SiriUIObjectPickerViewControllerDelegate> *_pickerDelegate;
 }
 
-@property(getter=_picker,assign,readonly) SAUIDomainObjectPicker * picker;
-@property(assign,readwrite) <SiriUIObjectPickerViewControllerDelegate> * pickerDelegate;
+@property (getter=_picker, nonatomic, readonly) SAUIDomainObjectPicker *picker;
+@property (nonatomic) <SiriUIObjectPickerViewControllerDelegate> *pickerDelegate;
 
 + (id)pickerControllerWithPicker:(id)arg1;
 

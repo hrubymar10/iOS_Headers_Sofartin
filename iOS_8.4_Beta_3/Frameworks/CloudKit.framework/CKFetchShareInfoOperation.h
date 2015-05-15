@@ -10,11 +10,11 @@
     NSArray *_shareURLs;
 }
 
-@property(assign,retain) NSMutableDictionary * errorsByURL;
-@property(assign,copy) id fetchShareInfoCompletionBlock;
-@property(assign,copy) id perShareInfoBlock;
-@property(assign,retain) NSMutableDictionary * shareInfoByURL;
-@property(assign,retain) NSArray * shareURLs;
+@property (nonatomic, retain) NSMutableDictionary *errorsByURL;
+@property (nonatomic, copy) id fetchShareInfoCompletionBlock;
+@property (nonatomic, copy) id perShareInfoBlock;
+@property (nonatomic, retain) NSMutableDictionary *shareInfoByURL;
+@property (nonatomic, retain) NSArray *shareURLs;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

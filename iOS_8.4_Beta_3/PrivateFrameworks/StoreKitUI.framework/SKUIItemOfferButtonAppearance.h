@@ -7,8 +7,8 @@
     UIColor *_confirmationColor;
 }
 
-@property(assign,readonly) UIColor * buttonColor;
-@property(assign,readonly) UIColor * confirmationColor;
+@property (nonatomic, readonly) UIColor *buttonColor;
+@property (nonatomic, readonly) UIColor *confirmationColor;
 
 - (void).cxx_destruct;
 - (id)buttonColor;

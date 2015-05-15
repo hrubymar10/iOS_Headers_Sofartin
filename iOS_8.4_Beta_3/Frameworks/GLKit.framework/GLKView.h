@@ -36,29 +36,29 @@
     double _viewContentScaleFactor;
 }
 
-@property(assign,retain) EAGLContext * context;
-@property(assign,readwrite) <GLKViewDelegate> * delegate;
-@property(assign,readwrite) unsigned int depthRenderbuffer;
-@property(assign,readwrite) unsigned int depthStencilRenderbuffer;
-@property(assign,readwrite) int (* drawRectIMP;
-@property(assign,readwrite) int drawableColorFormat;
-@property(assign,readwrite) int drawableDepthFormat;
-@property(assign,readonly) long long drawableHeight;
-@property(assign,readwrite) int drawableMultisample;
-@property(assign,retain) NSMutableDictionary * drawableProperties;
-@property(assign,readwrite) int drawableStencilFormat;
-@property(assign,readonly) long long drawableWidth;
-@property(assign,readwrite) bool enableSetNeedsDisplay;
-@property(assign,readwrite) bool inDraw;
-@property(assign,readwrite) unsigned int multisampleColorRenderbuffer;
-@property(assign,readwrite) unsigned int multisampleFramebuffer;
-@property(assign,readwrite) unsigned int resolveColorRenderbuffer;
-@property(assign,readwrite) unsigned int resolveFramebuffer;
-@property(assign,readwrite) bool shouldDeleteFramebuffer;
-@property(assign,readonly) UIImage * snapshot;
-@property(assign,readwrite) unsigned int stencilRenderbuffer;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } viewBounds;
-@property(assign,readwrite) double viewContentScaleFactor;
+@property (nonatomic, retain) EAGLContext *context;
+@property (nonatomic) <GLKViewDelegate> *delegate;
+@property (nonatomic) unsigned int depthRenderbuffer;
+@property (nonatomic) unsigned int depthStencilRenderbuffer;
+@property (nonatomic) int (*drawRectIMP;
+@property (nonatomic) int drawableColorFormat;
+@property (nonatomic) int drawableDepthFormat;
+@property (nonatomic, readonly) long long drawableHeight;
+@property (nonatomic) int drawableMultisample;
+@property (nonatomic, retain) NSMutableDictionary *drawableProperties;
+@property (nonatomic) int drawableStencilFormat;
+@property (nonatomic, readonly) long long drawableWidth;
+@property (nonatomic) bool enableSetNeedsDisplay;
+@property (nonatomic) bool inDraw;
+@property (nonatomic) unsigned int multisampleColorRenderbuffer;
+@property (nonatomic) unsigned int multisampleFramebuffer;
+@property (nonatomic) unsigned int resolveColorRenderbuffer;
+@property (nonatomic) unsigned int resolveFramebuffer;
+@property (nonatomic) bool shouldDeleteFramebuffer;
+@property (readonly) UIImage *snapshot;
+@property (nonatomic) unsigned int stencilRenderbuffer;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } viewBounds;
+@property (nonatomic) double viewContentScaleFactor;
 
 + (Class)layerClass;
 

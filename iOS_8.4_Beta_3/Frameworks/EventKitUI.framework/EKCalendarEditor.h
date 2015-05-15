@@ -15,15 +15,15 @@
     UITableView *_tableView;
 }
 
-@property(assign,retain) EKCalendar * calendar;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <EKCalendarEditorDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) EKEventStore * eventStore;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isNewCalendar;
-@property(assign,retain) <EKStyleProvider> * styleProvider;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) EKCalendar *calendar;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <EKCalendarEditorDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) EKEventStore *eventStore;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isNewCalendar;
+@property (nonatomic, retain) <EKStyleProvider> *styleProvider;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_deleteCalendar;

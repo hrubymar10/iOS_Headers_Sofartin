@@ -4,11 +4,11 @@
 
 @interface TDEffectParameterValue : NSManagedObject
 
-@property(assign,retain) NSNumber * angleValue;
-@property(assign,retain) NSNumber * colorValue;
-@property(assign,retain) TDEffectComponent * component;
-@property(assign,retain) NSNumber * floatValue;
-@property(assign,retain) NSNumber * intValue;
-@property(assign,retain) TDEffectParameterType * parameterType;
+@property (nonatomic, retain) NSNumber *angleValue;
+@property (nonatomic, retain) NSNumber *colorValue;
+@property (nonatomic, retain) TDEffectComponent *component;
+@property (nonatomic, retain) NSNumber *floatValue;
+@property (nonatomic, retain) NSNumber *intValue;
+@property (nonatomic, retain) TDEffectParameterType *parameterType;
 
 @end

@@ -16,16 +16,16 @@
     AFUIStateMachine *_stateMachine;
 }
 
-@property(getter=_connection,assign,readonly) AFConnection * connection;
-@property(getter=_currentSpeechRequestGroup,setter=_setCurrentSpeechRequestGroup:,assign,retain) NSObject<OS_dispatch_group> * currentSpeechRequestGroup;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) <AFUISiriSessionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=isEyesFree,assign,readwrite) bool eyesFree;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <AFUISiriSessionLocalDataSource> * localDataSource;
-@property(assign,readwrite) <AFUISiriSessionLocalDelegate> * localDelegate;
-@property(assign,readonly) Class superclass;
+@property (getter=_connection, nonatomic, readonly) AFConnection *connection;
+@property (getter=_currentSpeechRequestGroup, setter=_setCurrentSpeechRequestGroup:, nonatomic, retain) NSObject<OS_dispatch_group> *currentSpeechRequestGroup;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) <AFUISiriSessionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=isEyesFree, nonatomic) bool eyesFree;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <AFUISiriSessionLocalDataSource> *localDataSource;
+@property (nonatomic) <AFUISiriSessionLocalDelegate> *localDelegate;
+@property (readonly) Class superclass;
 
 + (unsigned long long)availabilityState;
 + (void)beginMonitoringSiriAvailability;

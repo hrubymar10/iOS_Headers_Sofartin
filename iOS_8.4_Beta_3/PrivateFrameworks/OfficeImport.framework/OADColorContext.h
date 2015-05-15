@@ -8,9 +8,9 @@
     OADColorScheme *mScheme;
 }
 
-@property(assign,readonly) OADColorMap * map;
-@property(assign,readonly) <OADColorPalette> * palette;
-@property(assign,readonly) OADColorScheme * scheme;
+@property (nonatomic, readonly) OADColorMap *map;
+@property (nonatomic, readonly) <OADColorPalette> *palette;
+@property (nonatomic, readonly) OADColorScheme *scheme;
 
 + (id)colorContextWithScheme:(id)arg1 map:(id)arg2 palette:(id)arg3;
 

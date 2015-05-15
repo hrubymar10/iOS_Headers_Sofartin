@@ -14,12 +14,12 @@
     UIColor *_topBackgroundColor;
 }
 
-@property(assign,readwrite) <SUWebViewDelegate> * delegate;
-@property(getter=isScrollingEnabled,assign,readwrite) bool scrollingEnabled;
-@property(assign,readwrite) bool showsTopBackgroundShadow;
-@property(assign,readonly) NSString * title;
-@property(assign,retain) UIColor * topBackgroundColor;
-@property(assign,readonly) id windowScriptObject;
+@property (nonatomic) <SUWebViewDelegate> *delegate;
+@property (getter=isScrollingEnabled, nonatomic) bool scrollingEnabled;
+@property (nonatomic) bool showsTopBackgroundShadow;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, retain) UIColor *topBackgroundColor;
+@property (nonatomic, readonly) id windowScriptObject;
 
 - (void)_setPinnedHeaderView:(id)arg1 withTopInsetAdjustment:(double)arg2;
 - (void)_setRichTextReaderViewportSettings;

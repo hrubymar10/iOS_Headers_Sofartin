@@ -10,15 +10,15 @@
     bool _resumed;
 }
 
-@property(assign,readwrite) bool ATCRunning;
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ATStatusObserverDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int notifyToken;
-@property(assign,readwrite) bool resumed;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool ATCRunning;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ATStatusObserverDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int notifyToken;
+@property (nonatomic) bool resumed;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)ATCRunning;

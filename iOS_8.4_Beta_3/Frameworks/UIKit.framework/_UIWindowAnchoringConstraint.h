@@ -6,7 +6,7 @@
     UIWindow *_window;
 }
 
-@property(assign,readwrite) UIWindow * window;
+@property (nonatomic) UIWindow *window;
 
 - (bool)_addToEngine:(id)arg1 integralizationAdjustment:(double)arg2 mutuallyExclusiveConstraints:(id*)arg3;
 - (void)setWindow:(id)arg1;

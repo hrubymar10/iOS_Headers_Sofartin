@@ -21,13 +21,13 @@
     bool _sitsOnStripImage;
 }
 
-@property(assign,readwrite) long long bucketAlignment;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bucketRect;
-@property(assign,retain) PKPassFieldTemplate * defaultFieldTemplate;
-@property(assign,retain) NSMutableArray * fieldTemplates;
-@property(assign,readwrite) unsigned long long maxFields;
-@property(assign,readwrite) double minFieldPadding;
-@property(assign,readwrite) bool sitsOnStripImage;
+@property (nonatomic) long long bucketAlignment;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bucketRect;
+@property (nonatomic, retain) PKPassFieldTemplate *defaultFieldTemplate;
+@property (nonatomic, retain) NSMutableArray *fieldTemplates;
+@property (nonatomic) unsigned long long maxFields;
+@property (nonatomic) double minFieldPadding;
+@property (nonatomic) bool sitsOnStripImage;
 
 - (void)addFieldTemplate:(id)arg1;
 - (long long)bucketAlignment;

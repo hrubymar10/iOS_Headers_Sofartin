@@ -6,7 +6,7 @@
     NSData *_rewrappedPaymentData;
 }
 
-@property(assign,retain) NSData * rewrappedPaymentData;
+@property (nonatomic, retain) NSData *rewrappedPaymentData;
 
 - (void)dealloc;
 - (id)initWithData:(id)arg1;

@@ -41,15 +41,15 @@
     SFWirelessSettingsController *_wirelessSettings;
 }
 
-@property(assign,readwrite) bool darkStyleOnLegacyApp;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) NSObject<SFAirDropActivityViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool otherActivityViewPresented;
-@property(assign,readwrite) bool sharedItemsAvailable;
-@property(assign,readonly) struct CGSize { double x1; double x2; } suggestedThumbnailSize;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool darkStyleOnLegacyApp;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) NSObject<SFAirDropActivityViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool otherActivityViewPresented;
+@property (nonatomic) bool sharedItemsAvailable;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } suggestedThumbnailSize;
+@property (readonly) Class superclass;
 
 + (bool)airDropActivityCanPerformActivityWithItems:(id)arg1;
 + (id)classesForItem:(id)arg1;

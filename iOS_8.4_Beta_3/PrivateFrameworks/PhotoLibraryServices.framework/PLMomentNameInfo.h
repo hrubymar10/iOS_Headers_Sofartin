@@ -9,9 +9,9 @@
     bool _locationInfoIsValid;
 }
 
-@property(setter=_setOrderedNames:,assign,retain) NSArray * _orderedNames;
-@property(assign,retain) PLRevGeoCompoundNameInfo * _primaryNameInfo;
-@property(assign,retain) PLRevGeoCompoundNameInfo * _secondaryNameInfo;
+@property (setter=_setOrderedNames:, nonatomic, retain) NSArray *_orderedNames;
+@property (nonatomic, retain) PLRevGeoCompoundNameInfo *_primaryNameInfo;
+@property (nonatomic, retain) PLRevGeoCompoundNameInfo *_secondaryNameInfo;
 
 + (id)_localizedNameForName:(id)arg1;
 

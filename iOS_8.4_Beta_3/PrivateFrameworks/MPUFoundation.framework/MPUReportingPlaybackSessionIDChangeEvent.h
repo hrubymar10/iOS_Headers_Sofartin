@@ -7,12 +7,12 @@
     NSString *_playbackSessionID;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) SSVPlayActivityEvent * playActivityEvent;
-@property(assign,copy) NSString * playbackSessionID;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) SSVPlayActivityEvent *playActivityEvent;
+@property (nonatomic, copy) NSString *playbackSessionID;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)description;

@@ -6,7 +6,7 @@
     NSArray *_playerInternals;
 }
 
-@property(assign,copy) NSArray * playerInternals;
+@property (nonatomic, copy) NSArray *playerInternals;
 
 + (bool)supportsSecureCoding;
 

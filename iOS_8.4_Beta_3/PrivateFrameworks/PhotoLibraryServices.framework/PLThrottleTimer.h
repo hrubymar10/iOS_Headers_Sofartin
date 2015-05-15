@@ -15,10 +15,10 @@
     unsigned long long _timeoutId;
 }
 
-@property(assign,readonly) SEL action;
-@property(assign,readonly) double maxTimeout;
-@property(assign,readonly) id target;
-@property(assign,readonly) double timeout;
+@property (nonatomic, readonly) SEL action;
+@property (nonatomic, readonly) double maxTimeout;
+@property (nonatomic, readonly) id target;
+@property (nonatomic, readonly) double timeout;
 
 - (void)_inqFireWithTimeout:(bool)arg1 timeoutId:(unsigned long long)arg2 maxTimeout:(bool)arg3 maxTimeoutId:(unsigned long long)arg4;
 - (void)_inqScheduleTimeout:(bool)arg1 maxTimeout:(bool)arg2;

@@ -6,7 +6,7 @@
     id _completionHandler;
 }
 
-@property(assign,copy) id completionHandler;
+@property (nonatomic, readonly, copy) id completionHandler;
 
 - (void).cxx_destruct;
 - (void)animationDidStop:(id)arg1 finished:(bool)arg2;

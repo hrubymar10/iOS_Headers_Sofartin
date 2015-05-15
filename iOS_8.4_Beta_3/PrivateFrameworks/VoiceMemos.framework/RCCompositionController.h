@@ -10,11 +10,11 @@
     NSMutableArray *_undoableCompositionItemStack;
 }
 
-@property(assign,readonly) RCCaptureSession * activeCaptureSession;
-@property(assign,retain) RCComposition * composition;
-@property(assign,readonly) unsigned long long countOfUndoableCompositions;
-@property(assign,readonly) bool isTopUndoableCompositionFromCapture;
-@property(assign,readonly) NSURL * savedRecordingURI;
+@property (nonatomic, readonly) RCCaptureSession *activeCaptureSession;
+@property (nonatomic, retain) RCComposition *composition;
+@property (nonatomic, readonly) unsigned long long countOfUndoableCompositions;
+@property (nonatomic, readonly) bool isTopUndoableCompositionFromCapture;
+@property (nonatomic, readonly) NSURL *savedRecordingURI;
 
 + (id)compositionControllerForComposedAVURL:(id)arg1;
 

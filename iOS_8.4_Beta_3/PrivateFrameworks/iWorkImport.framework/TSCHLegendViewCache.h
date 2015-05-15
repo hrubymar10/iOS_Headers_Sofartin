@@ -14,9 +14,9 @@
     unsigned long long mNumberOfRows;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } legendSize;
-@property(assign,readonly) unsigned long long numberOfColumns;
-@property(assign,readonly) unsigned long long numberOfRows;
+@property (readonly) struct CGSize { double x1; double x2; } legendSize;
+@property (readonly) unsigned long long numberOfColumns;
+@property (readonly) unsigned long long numberOfRows;
 
 - (void)clearParent;
 - (void)dealloc;

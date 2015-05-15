@@ -12,8 +12,8 @@
     double _thresholdDistance;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } targetPoint;
-@property(assign,readonly) double thresholdDistance;
+@property (nonatomic) struct CGPoint { double x1; double x2; } targetPoint;
+@property (readonly) double thresholdDistance;
 
 - (void)_stopAutoscrollTimer;
 - (void)_updateAutoscrollTimer:(id)arg1;

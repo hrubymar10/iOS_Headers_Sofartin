@@ -6,7 +6,7 @@
     UIColor *_templateColor;
 }
 
-@property(assign,retain) UIColor * templateColor;
+@property (nonatomic, retain) UIColor *templateColor;
 
 - (void).cxx_destruct;
 - (id)objectForData:(id)arg1 response:(id)arg2 error:(id*)arg3;

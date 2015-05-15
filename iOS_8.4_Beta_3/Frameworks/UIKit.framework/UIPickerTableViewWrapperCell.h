@@ -11,7 +11,7 @@
     } _wrappedViewSize;
 }
 
-@property(assign,retain) UIView * wrappedView;
+@property (nonatomic, retain) UIView *wrappedView;
 
 - (id)_anyDateLabel;
 - (void)_setIsCenterCell:(bool)arg1 shouldModifyAlphaOfView:(bool)arg2;

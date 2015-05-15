@@ -18,14 +18,14 @@
     } _size;
 }
 
-@property(assign,readwrite) long long columnCount;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * imageViews;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long columnCount;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *imageViews;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (readonly) Class superclass;
 
 + (struct CGSize { double x1; double x2; })preferredSizeForViewElement:(id)arg1 context:(id)arg2;
 + (bool)prefetchResourcesForViewElement:(id)arg1 reason:(long long)arg2 context:(id)arg3;

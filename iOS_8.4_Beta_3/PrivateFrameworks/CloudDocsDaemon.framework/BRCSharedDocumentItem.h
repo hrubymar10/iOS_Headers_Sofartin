@@ -4,7 +4,7 @@
 
 @interface BRCSharedDocumentItem : BRCDocumentItem
 
-@property(assign,readonly) NSString * enclosurePathRelativeToRoot;
+@property (nonatomic, readonly) NSString *enclosurePathRelativeToRoot;
 
 - (id)aliasItemID;
 - (id)enclosurePathRelativeToRoot;

@@ -12,13 +12,13 @@
     NSNumber *_version;
 }
 
-@property(assign,retain) NSArray * assistantCharacteristics;
-@property(assign,retain) NSDictionary * assistantServices;
-@property(assign,retain) NSDictionary * assistantUnits;
-@property(assign,retain) NSArray * hapCharacteristics;
-@property(assign,retain) NSArray * hapServices;
-@property(assign,retain) NSArray * hapValueUnits;
-@property(assign,retain) NSNumber * version;
+@property (nonatomic, retain) NSArray *assistantCharacteristics;
+@property (nonatomic, retain) NSDictionary *assistantServices;
+@property (nonatomic, retain) NSDictionary *assistantUnits;
+@property (nonatomic, retain) NSArray *hapCharacteristics;
+@property (nonatomic, retain) NSArray *hapServices;
+@property (nonatomic, retain) NSArray *hapValueUnits;
+@property (nonatomic, retain) NSNumber *version;
 
 + (id)getSharedInstance;
 + (void)setSharedInstance:(id)arg1;

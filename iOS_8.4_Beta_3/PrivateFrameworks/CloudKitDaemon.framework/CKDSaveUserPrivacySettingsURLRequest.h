@@ -7,8 +7,8 @@
     long long _discoverableTrinary;
 }
 
-@property(assign,copy) NSString * bundleID;
-@property(assign,readwrite) long long discoverableTrinary;
+@property (nonatomic, copy) NSString *bundleID;
+@property (nonatomic) long long discoverableTrinary;
 
 - (void).cxx_destruct;
 - (id)bundleID;

@@ -4,7 +4,7 @@
 
 @interface MKCircleView : MKOverlayPathView
 
-@property(assign,readonly) MKCircle * circle;
+@property (nonatomic, readonly) MKCircle *circle;
 
 - (id)circle;
 - (void)createPath;

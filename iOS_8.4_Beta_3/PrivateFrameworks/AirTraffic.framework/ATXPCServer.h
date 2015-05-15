@@ -15,11 +15,11 @@
     NSObject<OS_dispatch_queue> *_timerQueue;
 }
 
-@property(assign,readonly) NSSet * connections;
-@property(assign,copy) id defaultMessageHandler;
-@property(assign,copy) id disconnectHandler;
-@property(assign,copy) id lockdownHandler;
-@property(assign,copy) id shutdownHandler;
+@property (nonatomic, readonly) NSSet *connections;
+@property (nonatomic, copy) id defaultMessageHandler;
+@property (nonatomic, copy) id disconnectHandler;
+@property (nonatomic, copy) id lockdownHandler;
+@property (nonatomic, copy) id shutdownHandler;
 
 - (void).cxx_destruct;
 - (id)_connections;

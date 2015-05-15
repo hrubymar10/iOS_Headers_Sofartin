@@ -9,12 +9,12 @@
     NSURLResponse *_response;
 }
 
-@property(assign,copy) id callback;
-@property(assign,retain) NSURLConnection * conn;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id callback;
+@property (nonatomic, retain) NSURLConnection *conn;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)callback;
 - (id)conn;

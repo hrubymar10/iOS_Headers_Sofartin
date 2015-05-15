@@ -45,20 +45,20 @@
     } _width;
 }
 
-@property(assign,readonly) float arrowMinZoom;
-@property(assign,readonly) float brightness;
-@property(assign,readonly) float enlargementMaxScale;
-@property(assign,readonly) float enlargementScale;
-@property(assign,readonly) float enlargementStartZoom;
-@property(assign,readonly) bool hasBrightness;
-@property(assign,readonly) bool hasFillColor;
-@property(assign,readonly) bool hasObscuredTexture;
-@property(assign,readonly) bool hasTexture;
-@property(assign,readonly) bool hasTravelledTexture;
-@property(assign,readonly) NSString * obscuredTexture;
-@property(assign,readonly) float selectedArrowMinZoom;
-@property(assign,readonly) NSString * texture;
-@property(assign,readonly) NSString * travelledTexture;
+@property (nonatomic, readonly) float arrowMinZoom;
+@property (nonatomic, readonly) float brightness;
+@property (nonatomic, readonly) float enlargementMaxScale;
+@property (nonatomic, readonly) float enlargementScale;
+@property (nonatomic, readonly) float enlargementStartZoom;
+@property (nonatomic, readonly) bool hasBrightness;
+@property (nonatomic, readonly) bool hasFillColor;
+@property (nonatomic, readonly) bool hasObscuredTexture;
+@property (nonatomic, readonly) bool hasTexture;
+@property (nonatomic, readonly) bool hasTravelledTexture;
+@property (nonatomic, readonly) NSString *obscuredTexture;
+@property (nonatomic, readonly) float selectedArrowMinZoom;
+@property (nonatomic, readonly) NSString *texture;
+@property (nonatomic, readonly) NSString *travelledTexture;
 
 + (int)renderStyleID;
 

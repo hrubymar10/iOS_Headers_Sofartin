@@ -28,12 +28,12 @@
     } fRegion;
 }
 
-@property(assign,readonly) struct { double x1; double x2; } center;
-@property(assign,readonly) struct { BOOL x1[512]; int x2; bool x3; bool x4; union { struct { BOOL x_1_2_1[512]; unsigned short x_1_2_2; unsigned short x_1_2_3; int x_1_2_4; bool x_1_2_5; } x_5_1_1; struct { struct { double x_1_3_1; double x_1_3_2; } x_2_2_1; double x_2_2_2; double x_2_2_3; } x_5_1_2; } x5; } clientRegion;
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) bool notifyOnEntry;
-@property(assign,readwrite) bool notifyOnExit;
-@property(assign,readonly) double radius;
+@property (nonatomic, readonly) struct { double x1; double x2; } center;
+@property (nonatomic, readonly) struct { BOOL x1[512]; int x2; bool x3; bool x4; union { struct { BOOL x_1_2_1[512]; unsigned short x_1_2_2; unsigned short x_1_2_3; int x_1_2_4; bool x_1_2_5; } x_5_1_1; struct { struct { double x_1_3_1; double x_1_3_2; } x_2_2_1; double x_2_2_2; double x_2_2_3; } x_5_1_2; } x5; } clientRegion;
+@property (nonatomic, readonly, copy) NSString *identifier;
+@property (nonatomic) bool notifyOnEntry;
+@property (nonatomic) bool notifyOnExit;
+@property (nonatomic, readonly) double radius;
 
 + (bool)supportsSecureCoding;
 

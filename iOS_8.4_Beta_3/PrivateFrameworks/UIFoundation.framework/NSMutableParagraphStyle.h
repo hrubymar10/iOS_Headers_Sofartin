@@ -4,21 +4,21 @@
 
 @interface NSMutableParagraphStyle : NSParagraphStyle
 
-@property(assign,readwrite) long long alignment;
-@property(assign,readwrite) long long baseWritingDirection;
-@property(assign,readwrite) double defaultTabInterval;
-@property(assign,readwrite) double firstLineHeadIndent;
-@property(assign,readwrite) double headIndent;
-@property(assign,readwrite) float hyphenationFactor;
-@property(assign,readwrite) long long lineBreakMode;
-@property(assign,readwrite) double lineHeightMultiple;
-@property(assign,readwrite) double lineSpacing;
-@property(assign,readwrite) double maximumLineHeight;
-@property(assign,readwrite) double minimumLineHeight;
-@property(assign,readwrite) double paragraphSpacing;
-@property(assign,readwrite) double paragraphSpacingBefore;
-@property(assign,copy) NSArray * tabStops;
-@property(assign,readwrite) double tailIndent;
+@property long long alignment;
+@property long long baseWritingDirection;
+@property (nonatomic) double defaultTabInterval;
+@property double firstLineHeadIndent;
+@property double headIndent;
+@property float hyphenationFactor;
+@property long long lineBreakMode;
+@property double lineHeightMultiple;
+@property double lineSpacing;
+@property double maximumLineHeight;
+@property double minimumLineHeight;
+@property double paragraphSpacing;
+@property double paragraphSpacingBefore;
+@property (nonatomic, copy) NSArray *tabStops;
+@property double tailIndent;
 
 - (void)_mutateTabStops;
 - (void)addTabStop:(id)arg1;

@@ -20,18 +20,18 @@
     NSString *_windowOrientation;
 }
 
-@property(assign,readonly) NSNumber * accountIdentifier;
-@property(assign,readonly) SKUIMetricsImpressionSession * activeImpressionsSession;
-@property(assign,copy) NSString * applicationIdentifier;
-@property(assign,readonly) double flushInterval;
-@property(assign,readonly) SSMetricsConfiguration * globalConfiguration;
-@property(assign,copy) NSString * hostApplicationIdentifier;
-@property(assign,retain) SSMetricsConfiguration * pageConfiguration;
-@property(assign,copy) NSString * pageContext;
-@property(assign,copy) NSString * pageURL;
-@property(assign,copy) NSString * topic;
-@property(assign,copy) NSString * userAgent;
-@property(assign,copy) NSString * windowOrientation;
+@property (nonatomic, readonly) NSNumber *accountIdentifier;
+@property (nonatomic, readonly) SKUIMetricsImpressionSession *activeImpressionsSession;
+@property (nonatomic, copy) NSString *applicationIdentifier;
+@property (nonatomic, readonly) double flushInterval;
+@property (nonatomic, readonly) SSMetricsConfiguration *globalConfiguration;
+@property (nonatomic, copy) NSString *hostApplicationIdentifier;
+@property (nonatomic, retain) SSMetricsConfiguration *pageConfiguration;
+@property (nonatomic, copy) NSString *pageContext;
+@property (nonatomic, copy) NSString *pageURL;
+@property (nonatomic, copy) NSString *topic;
+@property (nonatomic, copy) NSString *userAgent;
+@property (nonatomic, copy) NSString *windowOrientation;
 
 + (void)flushImmediately;
 

@@ -11,13 +11,13 @@
     NSString *_type;
 }
 
-@property(assign,readwrite) double beginTime;
-@property(assign,retain) NSString * beginningMessage;
-@property(assign,readonly) double elapsedTime;
-@property(assign,readwrite) double endTime;
-@property(assign,retain) NSString * endingMessage;
-@property(assign,retain) NSMutableArray * pauseRecords;
-@property(assign,retain) NSString * type;
+@property (nonatomic) double beginTime;
+@property (nonatomic, retain) NSString *beginningMessage;
+@property (readonly) double elapsedTime;
+@property (nonatomic) double endTime;
+@property (nonatomic, retain) NSString *endingMessage;
+@property (nonatomic, retain) NSMutableArray *pauseRecords;
+@property (nonatomic, retain) NSString *type;
 
 - (void).cxx_destruct;
 - (void)appendStatusReportToString:(id)arg1 withIndent:(unsigned long long)arg2 showingPointers:(bool)arg3;

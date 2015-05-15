@@ -11,8 +11,8 @@
     UILabel *_titleLabel;
 }
 
-@property(getter=isChecked,assign,readwrite) bool checked;
-@property(assign,readonly) UILabel * titleLabel;
+@property (getter=isChecked, nonatomic) bool checked;
+@property (nonatomic, readonly) UILabel *titleLabel;
 
 + (double)_checkmarkOffset;
 

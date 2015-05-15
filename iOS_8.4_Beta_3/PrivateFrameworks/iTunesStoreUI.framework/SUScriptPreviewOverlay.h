@@ -4,12 +4,12 @@
 
 @interface SUScriptPreviewOverlay : SUScriptObject
 
-@property(assign,copy) id height;
-@property(assign,copy) id right;
-@property(assign,copy) id top;
-@property(assign,copy) NSString * userInfo;
-@property(getter=isVisible,assign,readonly) id visible;
-@property(assign,copy) id width;
+@property (copy) id height;
+@property (copy) id right;
+@property (copy) id top;
+@property (copy) NSString *userInfo;
+@property (getter=isVisible, readonly) id visible;
+@property (copy) id width;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

@@ -17,17 +17,17 @@
     double _windowLevelStack;
 }
 
-@property(assign,readonly) UIScreen * _intendedScreen;
-@property(assign,readonly) NSDictionary * _options;
-@property(assign,readonly) unsigned int contextID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) double defaultWindowLevel;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } hostedFrame;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } hostedWindowOffset;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useHostedInstance;
+@property (readonly) UIScreen *_intendedScreen;
+@property (readonly) NSDictionary *_options;
+@property (readonly) unsigned int contextID;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) double defaultWindowLevel;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } hostedFrame;
+@property (nonatomic) struct CGPoint { double x1; double x2; } hostedWindowOffset;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useHostedInstance;
 
 + (bool)_isSystemWindow;
 + (id)_sharedTextEffectsWindowforScreen:(id)arg1 aboveStatusBar:(bool)arg2 allowHosted:(bool)arg3 matchesStatusBarOrientationOnAccess:(bool)arg4;

@@ -4,14 +4,14 @@
 
 @interface SAMicroblogAceMicroblogSearchResult : SADomainObject
 
-@property(assign,retain) SAMicroblogTwitterPostAuthor * globalAuthor;
-@property(assign,retain) SAUIAppPunchOut * punchOut;
-@property(assign,copy) NSString * query;
-@property(assign,copy) NSArray * resultNews;
-@property(assign,copy) NSArray * resultPosts;
-@property(assign,copy) NSArray * resultUsers;
-@property(assign,retain) SADecoratedString * summary;
-@property(assign,copy) NSURL * webAddress;
+@property (nonatomic, retain) SAMicroblogTwitterPostAuthor *globalAuthor;
+@property (nonatomic, retain) SAUIAppPunchOut *punchOut;
+@property (nonatomic, copy) NSString *query;
+@property (nonatomic, copy) NSArray *resultNews;
+@property (nonatomic, copy) NSArray *resultPosts;
+@property (nonatomic, copy) NSArray *resultUsers;
+@property (nonatomic, retain) SADecoratedString *summary;
+@property (nonatomic, copy) NSURL *webAddress;
 
 + (id)aceMicroblogSearchResult;
 + (id)aceMicroblogSearchResultWithDictionary:(id)arg1 context:(id)arg2;

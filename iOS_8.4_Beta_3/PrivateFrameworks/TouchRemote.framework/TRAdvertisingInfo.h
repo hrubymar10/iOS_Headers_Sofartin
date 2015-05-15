@@ -7,8 +7,8 @@
     NSData *_wirelessProximityIdentifier;
 }
 
-@property(assign,copy) NSData * pairingPublicKey;
-@property(assign,copy) NSData * wirelessProximityIdentifier;
+@property (nonatomic, readonly, copy) NSData *pairingPublicKey;
+@property (nonatomic, readonly, copy) NSData *wirelessProximityIdentifier;
 
 + (bool)supportsSecureCoding;
 

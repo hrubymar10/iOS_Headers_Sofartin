@@ -4,9 +4,9 @@
 
 @interface _WKFileUploadItem : NSObject
 
-@property(assign,readonly) UIImage * displayImage;
-@property(assign,readonly) NSURL * fileURL;
-@property(getter=isVideo,assign,readonly) bool video;
+@property (nonatomic, readonly) UIImage *displayImage;
+@property (nonatomic, readonly) NSURL *fileURL;
+@property (getter=isVideo, nonatomic, readonly) bool video;
 
 - (id)displayImage;
 - (id)fileURL;

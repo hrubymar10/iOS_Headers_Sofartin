@@ -8,9 +8,9 @@
     NSArray *_sinfs;
 }
 
-@property(assign,readonly) NSNumber * accountIdentifier;
-@property(assign,readonly) NSNumber * rentalKeyIdentifier;
-@property(assign,readonly) NSArray * sinfs;
+@property (readonly) NSNumber *accountIdentifier;
+@property (readonly) NSNumber *rentalKeyIdentifier;
+@property (readonly) NSArray *sinfs;
 
 - (id)accountIdentifier;
 - (id)copyXPCEncoding;

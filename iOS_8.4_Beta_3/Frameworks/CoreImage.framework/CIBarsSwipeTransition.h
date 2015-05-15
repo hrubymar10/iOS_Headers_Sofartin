@@ -11,12 +11,12 @@
     NSNumber *inputWidth;
 }
 
-@property(assign,retain) NSNumber * inputAngle;
-@property(assign,retain) NSNumber * inputBarOffset;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIImage * inputTargetImage;
-@property(assign,retain) NSNumber * inputTime;
-@property(assign,retain) NSNumber * inputWidth;
+@property (nonatomic, retain) NSNumber *inputAngle;
+@property (nonatomic, retain) NSNumber *inputBarOffset;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIImage *inputTargetImage;
+@property (nonatomic, retain) NSNumber *inputTime;
+@property (nonatomic, retain) NSNumber *inputWidth;
 
 + (id)customAttributes;
 

@@ -11,12 +11,12 @@
     NSData *_registrationDataBytes;
 }
 
-@property(assign,readwrite) bool hasPending;
-@property(assign,readonly) bool hasPushToken;
-@property(assign,readonly) bool hasRegistrationDataBytes;
-@property(assign,readwrite) bool pending;
-@property(assign,retain) NSString * pushToken;
-@property(assign,retain) NSData * registrationDataBytes;
+@property (nonatomic) bool hasPending;
+@property (nonatomic, readonly) bool hasPushToken;
+@property (nonatomic, readonly) bool hasRegistrationDataBytes;
+@property (nonatomic) bool pending;
+@property (nonatomic, retain) NSString *pushToken;
+@property (nonatomic, retain) NSData *registrationDataBytes;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

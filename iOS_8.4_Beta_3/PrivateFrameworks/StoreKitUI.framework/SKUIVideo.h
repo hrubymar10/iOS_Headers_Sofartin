@@ -7,8 +7,8 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) SKUIArtworkList * artworks;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) SKUIArtworkList *artworks;
 
 - (void).cxx_destruct;
 - (id)URL;

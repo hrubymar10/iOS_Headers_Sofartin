@@ -8,24 +8,24 @@
     unsigned long long _symbolOwnerStartAddressInTask;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasSymbol;
-@property(assign,readonly) bool hasSymbolOwner;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long symbolLength;
-@property(assign,readonly) NSString * symbolName;
-@property(assign,readonly) NSString * symbolOwnerBinaryVersion;
-@property(assign,readonly) NSString * symbolOwnerBundleIdentifier;
-@property(assign,readonly) NSString * symbolOwnerBundleShortVersion;
-@property(assign,readonly) NSString * symbolOwnerBundleVersion;
-@property(assign,readonly) NSString * symbolOwnerName;
-@property(assign,retain) NSString * symbolOwnerPath;
-@property(assign,readonly) unsigned long long symbolOwnerStartAddressInTask;
-@property(assign,readonly) unsigned long long symbolOwnerTextSegmentLength;
-@property(assign,readonly) NSUUID * symbolOwnerUUID;
-@property(assign,readonly) unsigned long long symbolStartAddressInTask;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) bool hasSymbol;
+@property (readonly) bool hasSymbolOwner;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (readonly) unsigned long long symbolLength;
+@property (readonly) NSString *symbolName;
+@property (readonly) NSString *symbolOwnerBinaryVersion;
+@property (readonly) NSString *symbolOwnerBundleIdentifier;
+@property (readonly) NSString *symbolOwnerBundleShortVersion;
+@property (readonly) NSString *symbolOwnerBundleVersion;
+@property (readonly) NSString *symbolOwnerName;
+@property (retain) NSString *symbolOwnerPath;
+@property (readonly) unsigned long long symbolOwnerStartAddressInTask;
+@property (readonly) unsigned long long symbolOwnerTextSegmentLength;
+@property (readonly) NSUUID *symbolOwnerUUID;
+@property (readonly) unsigned long long symbolStartAddressInTask;
 
 + (id)classDictionaryKey;
 + (id)getEmptySymbolHandle;

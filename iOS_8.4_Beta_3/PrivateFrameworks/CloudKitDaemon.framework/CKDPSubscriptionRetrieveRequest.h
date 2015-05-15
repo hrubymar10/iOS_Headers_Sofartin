@@ -6,8 +6,8 @@
     CKDPIdentifier *_identifier;
 }
 
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,retain) CKDPIdentifier * identifier;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, retain) CKDPIdentifier *identifier;
 
 + (id)options;
 

@@ -12,9 +12,9 @@
     unsigned long long _maximumProcessCount;
 }
 
-@property(assign,copy) NSArray * cachePartitionedURLSchemes;
-@property(assign,copy) NSURL * injectedBundleURL;
-@property(assign,readwrite) unsigned long long maximumProcessCount;
+@property (nonatomic, copy) NSArray *cachePartitionedURLSchemes;
+@property (nonatomic, copy) NSURL *injectedBundleURL;
+@property (nonatomic) unsigned long long maximumProcessCount;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

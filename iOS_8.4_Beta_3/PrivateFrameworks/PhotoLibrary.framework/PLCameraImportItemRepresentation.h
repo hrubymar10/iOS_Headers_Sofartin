@@ -11,12 +11,12 @@
     NSString *_path;
 }
 
-@property(assign,retain) ICCameraFile * cameraFile;
-@property(assign,readwrite) bool canRequestMetadata;
-@property(assign,readwrite) bool canRequestThumbnail;
-@property(assign,readwrite) bool inDatabase;
-@property(assign,retain) NSDictionary * metadata;
-@property(assign,copy) NSString * path;
+@property (nonatomic, retain) ICCameraFile *cameraFile;
+@property (nonatomic) bool canRequestMetadata;
+@property (nonatomic) bool canRequestThumbnail;
+@property (nonatomic) bool inDatabase;
+@property (nonatomic, retain) NSDictionary *metadata;
+@property (nonatomic, copy) NSString *path;
 
 - (id)cameraFile;
 - (bool)canRequestMetadata;

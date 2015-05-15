@@ -6,8 +6,8 @@
     CKDPSubscription *_subscription;
 }
 
-@property(assign,readonly) bool hasSubscription;
-@property(assign,retain) CKDPSubscription * subscription;
+@property (nonatomic, readonly) bool hasSubscription;
+@property (nonatomic, retain) CKDPSubscription *subscription;
 
 + (id)options;
 

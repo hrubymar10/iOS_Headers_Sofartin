@@ -7,7 +7,7 @@
     NSMutableDictionary *_savedRecords;
 }
 
-@property(assign,readwrite) long long activityIndicatorViewStyle;
+@property (nonatomic) long long activityIndicatorViewStyle;
 
 + (id)sharedSpinnerManager;
 

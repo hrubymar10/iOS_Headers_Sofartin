@@ -9,10 +9,10 @@
     NEVPNProtocol *_protocol;
 }
 
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(getter=isOnDemandEnabled,assign,readwrite) bool onDemandEnabled;
-@property(assign,copy) NSArray * onDemandRules;
-@property(assign,copy) NEVPNProtocol * protocol;
+@property (getter=isEnabled) bool enabled;
+@property (getter=isOnDemandEnabled) bool onDemandEnabled;
+@property (copy) NSArray *onDemandRules;
+@property (copy) NEVPNProtocol *protocol;
 
 + (bool)supportsSecureCoding;
 

@@ -23,22 +23,22 @@
     unsigned int _totalNetworkCount;
 }
 
-@property(assign,readwrite) unsigned int autoProxySetCount;
-@property(assign,readwrite) unsigned int bootpSetCount;
-@property(assign,readwrite) unsigned int customNetworkCount;
-@property(assign,readwrite) unsigned int dhcpSetCount;
-@property(assign,readwrite) bool hasAutoProxySetCount;
-@property(assign,readwrite) bool hasBootpSetCount;
-@property(assign,readwrite) bool hasCustomNetworkCount;
-@property(assign,readwrite) bool hasDhcpSetCount;
-@property(assign,readwrite) bool hasManualProxySetCount;
-@property(assign,readwrite) bool hasStaticSetCount;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasTotalNetworkCount;
-@property(assign,readwrite) unsigned int manualProxySetCount;
-@property(assign,readwrite) unsigned int staticSetCount;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int totalNetworkCount;
+@property (nonatomic) unsigned int autoProxySetCount;
+@property (nonatomic) unsigned int bootpSetCount;
+@property (nonatomic) unsigned int customNetworkCount;
+@property (nonatomic) unsigned int dhcpSetCount;
+@property (nonatomic) bool hasAutoProxySetCount;
+@property (nonatomic) bool hasBootpSetCount;
+@property (nonatomic) bool hasCustomNetworkCount;
+@property (nonatomic) bool hasDhcpSetCount;
+@property (nonatomic) bool hasManualProxySetCount;
+@property (nonatomic) bool hasStaticSetCount;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasTotalNetworkCount;
+@property (nonatomic) unsigned int manualProxySetCount;
+@property (nonatomic) unsigned int staticSetCount;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int totalNetworkCount;
 
 - (unsigned int)autoProxySetCount;
 - (unsigned int)bootpSetCount;

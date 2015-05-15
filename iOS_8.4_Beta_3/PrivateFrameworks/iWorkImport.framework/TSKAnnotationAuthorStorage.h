@@ -6,7 +6,7 @@
     NSMutableSet *mAuthors;
 }
 
-@property(assign,readonly) NSSet * authors;
+@property (nonatomic, readonly) NSSet *authors;
 
 - (void)addAuthor:(id)arg1;
 - (id)authorWithName:(id)arg1;

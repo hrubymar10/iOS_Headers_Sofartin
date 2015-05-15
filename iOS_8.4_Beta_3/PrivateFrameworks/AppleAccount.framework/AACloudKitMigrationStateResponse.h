@@ -6,7 +6,7 @@
     NSString *_name;
 }
 
-@property(assign,readonly) NSString * name;
+@property (nonatomic, readonly) NSString *name;
 
 - (void).cxx_destruct;
 - (id)initWithHTTPResponse:(id)arg1 data:(id)arg2;

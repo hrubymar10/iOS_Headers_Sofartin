@@ -18,27 +18,27 @@
     <GKLeaderboardDelegate> *_weakDelegate;
 }
 
-@property(assign,copy) NSString * category;
-@property(assign,readwrite) <GKLeaderboardDelegate> * delegate;
-@property(assign,readonly) long long friendRank;
-@property(assign,readonly) long long friendRankCount;
-@property(assign,retain) NSString * groupIdentifier;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) GKLeaderboardInternal * internal;
-@property(getter=isLoading,assign,readonly) bool loading;
-@property(assign,readwrite) int loadingCount;
-@property(assign,retain) GKScore * localPlayerScore;
-@property(assign,retain) NSString * localizedTitle;
-@property(assign,readwrite) int lock;
-@property(assign,readonly) unsigned long long maxRange;
-@property(assign,readonly) long long overallRank;
-@property(assign,readonly) long long overallRankCount;
-@property(assign,readwrite) long long playerScope;
-@property(assign,retain) NSArray * players;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,retain) NSArray * scores;
-@property(assign,readwrite) long long timeScope;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *category;
+@property (nonatomic) <GKLeaderboardDelegate> *delegate;
+@property (nonatomic, readonly) long long friendRank;
+@property (nonatomic, readonly) long long friendRankCount;
+@property (nonatomic, readonly, retain) NSString *groupIdentifier;
+@property (nonatomic, copy) NSString *identifier;
+@property (retain) GKLeaderboardInternal *internal;
+@property (getter=isLoading, readonly) bool loading;
+@property (nonatomic) int loadingCount;
+@property (nonatomic, retain) GKScore *localPlayerScore;
+@property (nonatomic, readonly, retain) NSString *localizedTitle;
+@property (nonatomic) int lock;
+@property (nonatomic, readonly) unsigned long long maxRange;
+@property (nonatomic, readonly) long long overallRank;
+@property (nonatomic, readonly) long long overallRankCount;
+@property (nonatomic) long long playerScope;
+@property (nonatomic, retain) NSArray *players;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic, retain) NSArray *scores;
+@property (nonatomic) long long timeScope;
+@property (nonatomic, readonly, copy) NSString *title;
 
 + (id)instanceMethodSignatureForSelector:(SEL)arg1;
 + (bool)instancesRespondToSelector:(SEL)arg1;

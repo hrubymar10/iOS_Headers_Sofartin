@@ -7,8 +7,8 @@
     bool mHasDuration;
 }
 
-@property(assign,readwrite) float duration;
-@property(assign,readwrite) bool hasDuration;
+@property (nonatomic) float duration;
+@property (nonatomic) bool hasDuration;
 
 - (float)duration;
 - (bool)hasDuration;

@@ -7,12 +7,12 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * links;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * title;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *links;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_setLinksWithLinksArray:(id)arg1 context:(id)arg2;

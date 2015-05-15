@@ -21,22 +21,22 @@
     NSArray *_txPwrCnt;
 }
 
-@property(assign,retain) NSArray * actRxTxCnt;
-@property(assign,retain) NSArray * caFreqInfo;
-@property(assign,retain) NSArray * caSCCCnt;
-@property(assign,retain) NSMutableDictionary * commonInfo;
-@property(assign,retain) NSArray * dlC0TBSzCnt;
-@property(assign,retain) NSArray * dlC1TBSzCnt;
-@property(assign,retain) NSNumber * dupMode;
-@property(assign,retain) NSString * error;
-@property(assign,retain) NSMutableArray * groupArrEntries;
-@property(assign,retain) NSString * groupEntryKey;
-@property(assign,retain) NSString * groupID;
-@property(assign,readwrite) unsigned char inited;
-@property(assign,retain) NSMutableDictionary * kvPairs;
-@property(assign,retain) NSNumber * logDuration;
-@property(assign,retain) NSArray * sleepStateCnt;
-@property(assign,retain) NSArray * txPwrCnt;
+@property (retain) NSArray *actRxTxCnt;
+@property (retain) NSArray *caFreqInfo;
+@property (retain) NSArray *caSCCCnt;
+@property (nonatomic, retain) NSMutableDictionary *commonInfo;
+@property (retain) NSArray *dlC0TBSzCnt;
+@property (retain) NSArray *dlC1TBSzCnt;
+@property (retain) NSNumber *dupMode;
+@property (retain) NSString *error;
+@property (retain) NSMutableArray *groupArrEntries;
+@property (retain) NSString *groupEntryKey;
+@property (retain) NSString *groupID;
+@property (nonatomic) unsigned char inited;
+@property (nonatomic, retain) NSMutableDictionary *kvPairs;
+@property (retain) NSNumber *logDuration;
+@property (retain) NSArray *sleepStateCnt;
+@property (retain) NSArray *txPwrCnt;
 
 + (id)entryEventBackwardDefinitionBBMav10HwRfLTE;
 

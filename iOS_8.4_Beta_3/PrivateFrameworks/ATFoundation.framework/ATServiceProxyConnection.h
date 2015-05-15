@@ -7,12 +7,12 @@
     ATService *_service;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) ATService * service;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) ATService *service;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)connectWithCompletion:(id)arg1;

@@ -4,7 +4,7 @@
 
 @interface AAiCloudTermsStringResponse : AAGenericTermsUIResponse
 
-@property(assign,readonly) NSString * termsString;
+@property (nonatomic, readonly) NSString *termsString;
 
 - (id)termsString;
 

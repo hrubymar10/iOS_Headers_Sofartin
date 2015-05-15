@@ -28,12 +28,12 @@
     UIWindow *_rotationDelegate;
 }
 
-@property(assign,retain) _UIModalItem * currentItem;
-@property(assign,readwrite) bool isInTransition;
-@property(assign,retain) _UIModalItem * itemBeingDismissed;
-@property(assign,retain) _UIModalItem * itemBeingPresented;
-@property(assign,copy) id itemsTransitionCompletion;
-@property(assign,retain) UIWindow * rotationDelegate;
+@property (nonatomic, retain) _UIModalItem *currentItem;
+@property (nonatomic) bool isInTransition;
+@property (nonatomic, retain) _UIModalItem *itemBeingDismissed;
+@property (nonatomic, retain) _UIModalItem *itemBeingPresented;
+@property (copy) id itemsTransitionCompletion;
+@property (nonatomic, retain) UIWindow *rotationDelegate;
 
 - (void)_applyDismissingAnimationEndingStateForModalItem:(id)arg1 view:(id)arg2;
 - (void)_applyDismissingAnimationEndingStateForModalItem:(id)arg1 view:(id)arg2 forceCenter:(bool)arg3;

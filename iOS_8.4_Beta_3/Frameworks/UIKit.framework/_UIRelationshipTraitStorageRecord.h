@@ -8,9 +8,9 @@
     UITraitCollection *_traitCollection;
 }
 
-@property(assign,readonly) NSSet * addedObjects;
-@property(assign,readonly) NSSet * removedObjects;
-@property(assign,readonly) UITraitCollection * traitCollection;
+@property (nonatomic, readonly) NSSet *addedObjects;
+@property (nonatomic, readonly) NSSet *removedObjects;
+@property (nonatomic, readonly) UITraitCollection *traitCollection;
 
 - (id)addedObjects;
 - (void)dealloc;

@@ -12,12 +12,12 @@
     NSMutableDictionary *_titleTextAttributes;
 }
 
-@property(assign,retain) UIImage * backgroundImage;
-@property(assign,retain) UIImage * dividerImage;
-@property(assign,retain) UIImage * selectedDividerImage;
-@property(assign,retain) UIImage * selectionIndicatorImage;
-@property(assign,readwrite) double tabBarButtonSpacing;
-@property(assign,readwrite) double tabBarButtonWidth;
+@property (nonatomic, retain) UIImage *backgroundImage;
+@property (nonatomic, retain) UIImage *dividerImage;
+@property (nonatomic, retain) UIImage *selectedDividerImage;
+@property (nonatomic, retain) UIImage *selectionIndicatorImage;
+@property (nonatomic) double tabBarButtonSpacing;
+@property (nonatomic) double tabBarButtonWidth;
 
 - (id)backgroundImage;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

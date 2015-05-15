@@ -6,7 +6,7 @@
     NSMutableArray *_pointCharacteristics;
 }
 
-@property(assign,retain) NSMutableArray * pointCharacteristics;
+@property (nonatomic, retain) NSMutableArray *pointCharacteristics;
 
 - (void)addPointCharacteristic:(id)arg1;
 - (void)clearPointCharacteristics;

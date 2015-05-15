@@ -7,7 +7,7 @@
     bool _selected;
 }
 
-@property(getter=isSelected,assign,readwrite) bool selected;
+@property (getter=isSelected, nonatomic) bool selected;
 
 - (id)applyUpdatesWithElement:(id)arg1;
 - (unsigned long long)elementType;

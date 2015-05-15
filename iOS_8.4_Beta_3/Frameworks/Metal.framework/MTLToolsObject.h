@@ -9,10 +9,10 @@
     MTLToolsObject *_strongParent;
 }
 
-@property(assign,retain) id baseObject;
-@property(assign,readwrite) struct ILayerLockingPolicy { int (**x1)(); }* lockingPolicy;
-@property(assign,readonly) MTLToolsObject * parent;
-@property(assign,readonly) MTLToolsObject * strongParent;
+@property (nonatomic, retain) id baseObject;
+@property (nonatomic) struct ILayerLockingPolicy { int (**x1)(); }*lockingPolicy;
+@property (nonatomic, readonly) MTLToolsObject *parent;
+@property (nonatomic, readonly) MTLToolsObject *strongParent;
 
 + (id)dispatchQueue;
 + (void)visitObjects:(id)arg1 withVisitor:(id)arg2;

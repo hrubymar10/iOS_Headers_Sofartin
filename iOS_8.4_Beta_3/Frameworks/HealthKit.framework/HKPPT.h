@@ -7,8 +7,8 @@
     NSMutableDictionary *_healthStores;
 }
 
-@property(assign,retain) id application;
-@property(assign,retain) NSMutableDictionary * healthStores;
+@property (nonatomic, retain) id application;
+@property (nonatomic, retain) NSMutableDictionary *healthStores;
 
 - (void).cxx_destruct;
 - (id)_createStepSampleWithStepCount:(unsigned long long)arg1 startDate:(id)arg2 endDate:(id)arg3;

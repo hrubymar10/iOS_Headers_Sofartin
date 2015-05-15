@@ -12,13 +12,13 @@
     NSArray *_srvcTypeCnt;
 }
 
-@property(assign,retain) NSMutableDictionary * commonInfo;
-@property(assign,retain) NSString * error;
-@property(assign,readwrite) unsigned char inited;
-@property(assign,retain) NSMutableDictionary * kvPairs;
-@property(assign,retain) NSNumber * logDuration;
-@property(assign,retain) NSArray * rxdStateCnt;
-@property(assign,retain) NSArray * srvcTypeCnt;
+@property (nonatomic, retain) NSMutableDictionary *commonInfo;
+@property (retain) NSString *error;
+@property (nonatomic) unsigned char inited;
+@property (nonatomic, retain) NSMutableDictionary *kvPairs;
+@property (retain) NSNumber *logDuration;
+@property (retain) NSArray *rxdStateCnt;
+@property (retain) NSArray *srvcTypeCnt;
 
 + (id)entryEventBackwardDefinitionBBMavHwRfTDS;
 

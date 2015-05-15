@@ -18,17 +18,17 @@
     NSObject<OS_dispatch_group> *extendInfoGroup;
 }
 
-@property(assign,retain) NSExtension * _extension;
-@property(assign,readwrite) bool allowUserAttachmentSelection;
-@property(assign,retain) NSString * attachmentsName;
-@property(assign,readwrite) bool canEnableLogging;
-@property(assign,readwrite) bool canGenerateNewAttachment;
-@property(assign,retain) NSString * displayName;
-@property(assign,readwrite) bool hasBeenLoaded;
-@property(assign,retain) NSString * identifier;
-@property(assign,readwrite) bool isLoggingEnabled;
-@property(assign,retain) NSString * loggingConsent;
-@property(assign,retain) NSString * ownerBundleID;
+@property (nonatomic, retain) NSExtension *_extension;
+@property (nonatomic) bool allowUserAttachmentSelection;
+@property (nonatomic, retain) NSString *attachmentsName;
+@property (nonatomic) bool canEnableLogging;
+@property (nonatomic) bool canGenerateNewAttachment;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic) bool hasBeenLoaded;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic) bool isLoggingEnabled;
+@property (nonatomic, retain) NSString *loggingConsent;
+@property (nonatomic, retain) NSString *ownerBundleID;
 
 - (void).cxx_destruct;
 - (id)_extension;

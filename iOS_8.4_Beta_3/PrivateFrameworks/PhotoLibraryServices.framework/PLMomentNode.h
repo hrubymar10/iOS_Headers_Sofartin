@@ -14,16 +14,16 @@
     bool _visited;
 }
 
-@property(assign,retain) NSNumber * cacheInsertionIndex;
-@property(assign,readwrite) PLMomentCluster * cluster;
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,readonly) CLLocation * location;
-@property(getter=isMarked,assign,readwrite) bool marked;
-@property(assign,retain) NSObject<NSCopying> * objectID;
-@property(assign,readonly) NSString * userTag;
-@property(assign,readonly) unsigned long long userTagType;
-@property(getter=isVisited,assign,readwrite) bool visited;
+@property (nonatomic, retain) NSNumber *cacheInsertionIndex;
+@property (nonatomic) PLMomentCluster *cluster;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (nonatomic, readonly, retain) NSDate *creationDate;
+@property (nonatomic, readonly) CLLocation *location;
+@property (getter=isMarked, nonatomic) bool marked;
+@property (nonatomic, readonly, retain) NSObject<NSCopying> *objectID;
+@property (nonatomic, readonly) NSString *userTag;
+@property (nonatomic, readonly) unsigned long long userTagType;
+@property (getter=isVisited, nonatomic) bool visited;
 
 - (id)cacheInsertionIndex;
 - (id)cluster;

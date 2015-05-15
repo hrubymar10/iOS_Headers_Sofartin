@@ -6,8 +6,8 @@
     IMHandle *_sender;
 }
 
-@property(assign,retain) IMHandle * sender;
-@property(assign,copy) NSString * title;
+@property (nonatomic, readonly, retain) IMHandle *sender;
+@property (nonatomic, readonly, copy) NSString *title;
 
 - (Class)__ck_chatItemClass;
 - (id)_initWithItem:(id)arg1 sender:(id)arg2;

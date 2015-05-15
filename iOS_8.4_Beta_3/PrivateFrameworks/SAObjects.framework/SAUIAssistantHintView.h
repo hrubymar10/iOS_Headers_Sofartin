@@ -4,8 +4,8 @@
 
 @interface SAUIAssistantHintView : SAUIAssistantUtteranceView
 
-@property(assign,copy) NSArray * commands;
-@property(assign,copy) NSArray * regions;
+@property (nonatomic, copy) NSArray *commands;
+@property (nonatomic, copy) NSArray *regions;
 
 + (id)assistantHintView;
 + (id)assistantHintViewWithDictionary:(id)arg1 context:(id)arg2;

@@ -13,14 +13,14 @@
     bool _togglingFMIPSwitch;
 }
 
-@property(assign,retain) ACAccount * account;
-@property(assign,readwrite) bool activityInProgress;
-@property(assign,readwrite) bool firstTimeSetup;
-@property(assign,retain) PSSpecifier * fmipSpecifier;
-@property(assign,retain) UIProgressHUD * hud;
-@property(assign,retain) RemoteUIController * ruiController;
-@property(assign,retain) PSSpecifier * sendLastLocationSpecifier;
-@property(assign,readwrite) bool togglingFMIPSwitch;
+@property (nonatomic, retain) ACAccount *account;
+@property (nonatomic) bool activityInProgress;
+@property (nonatomic) bool firstTimeSetup;
+@property (nonatomic, retain) PSSpecifier *fmipSpecifier;
+@property (nonatomic, retain) UIProgressHUD *hud;
+@property (nonatomic, retain) RemoteUIController *ruiController;
+@property (nonatomic, retain) PSSpecifier *sendLastLocationSpecifier;
+@property (nonatomic) bool togglingFMIPSwitch;
 
 - (void).cxx_destruct;
 - (id)_clientInfoHeader;

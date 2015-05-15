@@ -6,7 +6,7 @@
     TSDStroke *mStroke;
 }
 
-@property(assign,readonly) TSDStroke * stroke;
+@property (nonatomic, readonly) TSDStroke *stroke;
 
 - (void)dealloc;
 - (id)get;

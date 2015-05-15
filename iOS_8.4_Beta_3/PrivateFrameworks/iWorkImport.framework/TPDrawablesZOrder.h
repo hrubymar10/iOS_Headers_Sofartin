@@ -6,7 +6,7 @@
     NSMutableArray *_drawables;
 }
 
-@property(assign,readonly) unsigned long long drawableCount;
+@property (nonatomic, readonly) unsigned long long drawableCount;
 
 - (unsigned long long)addDrawable:(id)arg1;
 - (void)dealloc;

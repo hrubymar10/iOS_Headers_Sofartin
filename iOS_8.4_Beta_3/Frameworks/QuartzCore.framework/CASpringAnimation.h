@@ -4,10 +4,10 @@
 
 @interface CASpringAnimation : CABasicAnimation
 
-@property(assign,readwrite) double damping;
-@property(assign,readwrite) double mass;
-@property(assign,readwrite) double stiffness;
-@property(assign,readwrite) double velocity;
+@property double damping;
+@property double mass;
+@property double stiffness;
+@property double velocity;
 
 + (id)defaultValueForKey:(id)arg1;
 

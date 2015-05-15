@@ -9,8 +9,8 @@
     bool mShouldUpdateConfinedPushableAnchoring;
 }
 
-@property(assign,copy) NSArray * p_legendConfinementBounds;
-@property(assign,readwrite) bool p_shouldUpdateConfinedPushableAnchoring;
+@property (nonatomic, copy) NSArray *p_legendConfinementBounds;
+@property (nonatomic) bool p_shouldUpdateConfinedPushableAnchoring;
 
 + (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })innerAnchoringFrameFromChartAreaFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 + (id)legendResizerWithInitialFrames:(struct TSCHChartDrawableLayoutLegendResizerFrames { struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_1_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_1_1_2; } x1; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_2_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_2_1_2; } x2; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_3_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_3_1_2; } x3; })arg1;

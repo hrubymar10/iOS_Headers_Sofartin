@@ -21,22 +21,22 @@
     ADVolumeSlider *_volumeSlider;
 }
 
-@property(assign,readwrite) double accumulatedViewingTime;
-@property(assign,retain) ADPrerollButton * actionButton;
-@property(assign,readwrite) <ADPrerollBottomBarDelegate> * delegate;
-@property(assign,readwrite) bool isFullscreen;
-@property(assign,readwrite) double lastViewingStartTime;
-@property(assign,readwrite) bool layoutForExpandedSize;
-@property(assign,retain) UIImage * pauseImage;
-@property(assign,retain) UIImage * playImage;
-@property(assign,retain) ADPrerollButton * playPauseButton;
-@property(assign,retain) UILabel * shortSkipLabel;
-@property(assign,retain) NSTimer * skipAccumulationTimer;
-@property(assign,retain) ADPrerollButton * skipButton;
-@property(assign,readwrite) bool skipButtonCountingDown;
-@property(assign,readwrite) double skipDuration;
-@property(assign,retain) UILabel * skipLabel;
-@property(assign,retain) ADVolumeSlider * volumeSlider;
+@property (nonatomic) double accumulatedViewingTime;
+@property (nonatomic, retain) ADPrerollButton *actionButton;
+@property (nonatomic) <ADPrerollBottomBarDelegate> *delegate;
+@property (nonatomic) bool isFullscreen;
+@property (nonatomic) double lastViewingStartTime;
+@property (nonatomic) bool layoutForExpandedSize;
+@property (nonatomic, retain) UIImage *pauseImage;
+@property (nonatomic, retain) UIImage *playImage;
+@property (nonatomic, retain) ADPrerollButton *playPauseButton;
+@property (nonatomic, retain) UILabel *shortSkipLabel;
+@property (nonatomic, retain) NSTimer *skipAccumulationTimer;
+@property (nonatomic, retain) ADPrerollButton *skipButton;
+@property (nonatomic) bool skipButtonCountingDown;
+@property (nonatomic) double skipDuration;
+@property (nonatomic, retain) UILabel *skipLabel;
+@property (nonatomic, retain) ADVolumeSlider *volumeSlider;
 
 - (void)_accumulateViewingTime;
 - (void)_actionButtonTapped:(id)arg1;

@@ -22,18 +22,18 @@
     BookmarkDAVSyncData *_topLevelSyncData;
 }
 
-@property(assign,readonly) <CoreDAVAccountInfoProvider> * accountInfoProvider;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id getAccountPropertiesHandler;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSURL * homeURL;
-@property(assign,readonly) unsigned long long outstandingActionCount;
-@property(assign,retain) NSString * pushKey;
-@property(assign,retain) NSDictionary * pushTransport;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id syncHandler;
-@property(assign,readonly) BookmarkDAVSyncData * topLevelSyncData;
+@property (nonatomic, readonly) <CoreDAVAccountInfoProvider> *accountInfoProvider;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id getAccountPropertiesHandler;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSURL *homeURL;
+@property (nonatomic, readonly) unsigned long long outstandingActionCount;
+@property (nonatomic, retain) NSString *pushKey;
+@property (nonatomic, retain) NSDictionary *pushTransport;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id syncHandler;
+@property (nonatomic, readonly) BookmarkDAVSyncData *topLevelSyncData;
 
 - (bool)_addChange:(void*)arg1 toData:(id)arg2 numActionsP:(int*)arg3 runningSizeP:(int*)arg4 maxResources:(long long)arg5 maxSize:(long long)arg6 foldersToAddByServerId:(struct __CFDictionary { }*)arg7 parentToArrayOfChildrenFolderChanges:(struct __CFDictionary { }*)arg8 pushedParentToArrayOfChildrenFolders:(struct __CFDictionary { }*)arg9;
 - (bool)_applyReturnedBookmarks:(id)arg1 withPushedBookmarks:(struct __CFArray { }*)arg2;

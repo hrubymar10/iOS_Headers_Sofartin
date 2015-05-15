@@ -23,13 +23,13 @@
     long long _validatedBytes;
 }
 
-@property(assign,retain) NSArray * hashes;
-@property(assign,copy) ISHashError * lastHashError;
-@property(assign,retain) NSString * localFilePath;
-@property(assign,readwrite) long long numberOfBytesToHash;
-@property(assign,readwrite) bool shouldResumeFromLocalBytes;
-@property(assign,readwrite) long long streamedBytes;
-@property(assign,readwrite) long long validatedBytes;
+@property (retain) NSArray *hashes;
+@property (copy) ISHashError *lastHashError;
+@property (retain) NSString *localFilePath;
+@property long long numberOfBytesToHash;
+@property bool shouldResumeFromLocalBytes;
+@property long long streamedBytes;
+@property long long validatedBytes;
 
 - (bool)_checkHashForByteCount:(long long)arg1;
 - (void)_closeFile;

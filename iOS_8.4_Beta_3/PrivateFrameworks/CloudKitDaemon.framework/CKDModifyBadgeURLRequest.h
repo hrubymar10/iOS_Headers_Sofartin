@@ -6,7 +6,7 @@
     unsigned long long _badgeValue;
 }
 
-@property(assign,readonly) unsigned long long badgeValue;
+@property (nonatomic, readonly) unsigned long long badgeValue;
 
 - (unsigned long long)badgeValue;
 - (id)initWithBadgeValue:(unsigned long long)arg1;

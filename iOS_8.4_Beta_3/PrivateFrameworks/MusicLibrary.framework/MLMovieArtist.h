@@ -6,8 +6,8 @@
     NSMutableDictionary *_dictionary;
 }
 
-@property(assign,copy) NSNumber * ITunesStoreIdentifier;
-@property(assign,copy) NSString * artistName;
+@property (nonatomic, copy) NSNumber *ITunesStoreIdentifier;
+@property (nonatomic, copy) NSString *artistName;
 
 - (void).cxx_destruct;
 - (id)ITunesStoreIdentifier;

@@ -17,13 +17,13 @@
     bool _validCTag;
 }
 
-@property(assign,readonly) NSDictionary * hrefToETag;
-@property(assign,readonly) NSDictionary * hrefToErrorItems;
-@property(assign,readonly) NSDictionary * hrefToStatus;
-@property(assign,readonly) NSString * nextCTag;
-@property(assign,readonly) NSDictionary * uuidToErrorItems;
-@property(assign,readonly) NSDictionary * uuidToHREF;
-@property(assign,readonly) NSDictionary * uuidToStatus;
+@property (nonatomic, readonly) NSDictionary *hrefToETag;
+@property (nonatomic, readonly) NSDictionary *hrefToErrorItems;
+@property (nonatomic, readonly) NSDictionary *hrefToStatus;
+@property (nonatomic, readonly) NSString *nextCTag;
+@property (nonatomic, readonly) NSDictionary *uuidToErrorItems;
+@property (nonatomic, readonly) NSDictionary *uuidToHREF;
+@property (nonatomic, readonly) NSDictionary *uuidToStatus;
 
 - (id)additionalHeaderValues;
 - (id)copyDefaultParserForContentType:(id)arg1;

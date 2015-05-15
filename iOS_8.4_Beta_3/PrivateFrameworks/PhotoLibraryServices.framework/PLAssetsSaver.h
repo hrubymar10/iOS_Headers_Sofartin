@@ -6,7 +6,7 @@
     NSMutableArray *__pendingSaveAssetJobs;
 }
 
-@property(assign,retain) NSMutableArray * _pendingSaveAssetJobs;
+@property (nonatomic, retain) NSMutableArray *_pendingSaveAssetJobs;
 
 + (id)publicAssetsLibraryErrorFromPrivateDomain:(id)arg1 withPrivateCode:(long long)arg2;
 + (id)publicAssetsLibraryErrorFromPrivateError:(id)arg1;

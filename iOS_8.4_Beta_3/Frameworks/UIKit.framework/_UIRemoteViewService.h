@@ -7,9 +7,9 @@
     NSExtension *_extension;
 }
 
-@property(assign,copy) NSUUID * contextToken;
-@property(assign,retain) NSExtension * extension;
-@property(assign,retain) <PKPlugIn> * plugin;
+@property (nonatomic, copy) NSUUID *contextToken;
+@property (nonatomic, retain) NSExtension *extension;
+@property (nonatomic, retain) <PKPlugIn> *plugin;
 
 - (id)contextToken;
 - (void)dealloc;

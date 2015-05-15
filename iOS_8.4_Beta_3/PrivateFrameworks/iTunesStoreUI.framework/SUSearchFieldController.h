@@ -14,14 +14,14 @@
     SUScriptTextFieldDelegate *_textFieldDelegate;
 }
 
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UISearchBar * searchBar;
-@property(assign,copy) SUSearchFieldConfiguration * searchFieldConfiguration;
-@property(assign,readwrite) long long searchFieldStyle;
-@property(assign,readonly) Class superclass;
+@property (getter=isActive, nonatomic, readonly) bool active;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UISearchBar *searchBar;
+@property (nonatomic, copy) SUSearchFieldConfiguration *searchFieldConfiguration;
+@property (nonatomic) long long searchFieldStyle;
+@property (readonly) Class superclass;
 
 - (id)_cancelButtonView;
 - (void)_cancelCompletionsOperation;

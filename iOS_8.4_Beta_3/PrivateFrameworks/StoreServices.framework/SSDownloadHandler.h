@@ -14,11 +14,11 @@
     bool _sessionsShouldBlockOtherDownloads;
 }
 
-@property(assign,readwrite) <SSDownloadHandlerDelegate> * delegate;
-@property(assign,copy) NSArray * downloadPhasesToIgnore;
-@property(assign,readonly) long long handlerIdentifier;
-@property(assign,readwrite) bool sessionsNeedPowerAssertion;
-@property(assign,readwrite) bool sessionsShouldBlockOtherDownloads;
+@property <SSDownloadHandlerDelegate> *delegate;
+@property (copy) NSArray *downloadPhasesToIgnore;
+@property (readonly) long long handlerIdentifier;
+@property bool sessionsNeedPowerAssertion;
+@property bool sessionsShouldBlockOtherDownloads;
 
 - (void)_connectToDaemon;
 - (id)_controlConnection;

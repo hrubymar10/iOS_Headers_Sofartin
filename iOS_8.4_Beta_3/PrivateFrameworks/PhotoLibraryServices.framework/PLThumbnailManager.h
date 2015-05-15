@@ -23,9 +23,9 @@
     struct _FigCascadeContext { } *_unicornContextPortrait;
 }
 
-@property(assign,retain) id observerToken;
-@property(assign,readwrite) PLPhotoLibrary * photoLibrary;
-@property(assign,retain) NSMutableDictionary * thumbManagersByFormat;
+@property (nonatomic, retain) id observerToken;
+@property (nonatomic) PLPhotoLibrary *photoLibrary;
+@property (nonatomic, readonly, retain) NSMutableDictionary *thumbManagersByFormat;
 
 + (id)_allPossibleThumbnailFormats;
 + (void)addRebuildThumbnailsRequest;

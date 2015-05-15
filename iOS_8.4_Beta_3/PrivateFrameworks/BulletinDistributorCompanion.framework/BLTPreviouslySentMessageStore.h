@@ -10,7 +10,7 @@
     NSObject<OS_dispatch_source> *_saveTimer;
 }
 
-@property(assign,readwrite) bool dirty;
+@property (nonatomic) bool dirty;
 
 - (void).cxx_destruct;
 - (void)_cancelSave;

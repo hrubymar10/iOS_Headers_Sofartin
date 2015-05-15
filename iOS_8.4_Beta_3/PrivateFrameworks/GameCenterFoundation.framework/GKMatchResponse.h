@@ -15,16 +15,16 @@
     long long _state;
 }
 
-@property(assign,retain) NSData * cdxTicket;
-@property(assign,retain) GKMatchRequestInternal * matchRequest;
-@property(assign,retain) NSArray * matches;
-@property(assign,readwrite) GKDispatchGroup * matchingGroup;
-@property(assign,retain) NSArray * relayPushes;
-@property(assign,retain) NSString * rid;
-@property(assign,readonly) int sequence;
-@property(assign,retain) NSDictionary * serverRequest;
-@property(assign,retain) NSData * sessionToken;
-@property(assign,readwrite) long long state;
+@property (retain) NSData *cdxTicket;
+@property (retain) GKMatchRequestInternal *matchRequest;
+@property (retain) NSArray *matches;
+@property GKDispatchGroup *matchingGroup;
+@property (retain) NSArray *relayPushes;
+@property (retain) NSString *rid;
+@property (readonly) int sequence;
+@property (retain) NSDictionary *serverRequest;
+@property (retain) NSData *sessionToken;
+@property (nonatomic) long long state;
 
 + (id)secureCodedPropertyKeys;
 

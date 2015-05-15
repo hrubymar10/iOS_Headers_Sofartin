@@ -6,7 +6,7 @@
     UIViewController *_contentViewController;
 }
 
-@property(assign,retain) UIViewController * contentViewController;
+@property (nonatomic, retain) UIViewController *contentViewController;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 

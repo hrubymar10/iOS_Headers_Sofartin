@@ -7,7 +7,7 @@
     <PRSDecoderDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <PRSDecoderDelegate> * delegate;
+@property <PRSDecoderDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_addBuiltInConverters;

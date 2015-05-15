@@ -23,11 +23,11 @@
     } _internal;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) unsigned long long firstIndex;
-@property(assign,readonly) bool isSingleContiguousRange;
-@property(assign,readonly) unsigned long long lastIndex;
-@property(assign,readonly) bool tsu_isSingleContiguousRange;
+@property (readonly) unsigned long long count;
+@property (readonly) unsigned long long firstIndex;
+@property (nonatomic, readonly) bool isSingleContiguousRange;
+@property (readonly) unsigned long long lastIndex;
+@property (nonatomic, readonly) bool tsu_isSingleContiguousRange;
 
 + (id)_gkIndexSetWithArray:(id)arg1;
 + (id)indexSet;

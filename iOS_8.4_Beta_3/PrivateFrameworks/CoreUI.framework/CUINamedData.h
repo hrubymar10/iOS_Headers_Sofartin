@@ -8,9 +8,9 @@
     unsigned long long _storageRef;
 }
 
-@property(assign,readonly) NSData * data;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) NSString * utiType;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, readonly) NSString *utiType;
 
 - (id)_rendition;
 - (id)_renditionForSpecificKey:(id)arg1;

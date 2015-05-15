@@ -10,7 +10,7 @@
     long long _priorMigrationVersionKey;
 }
 
-@property(assign,readonly) NSDictionary * achievements;
+@property (nonatomic, readonly) NSDictionary *achievements;
 
 + (id)sharedDataController;
 

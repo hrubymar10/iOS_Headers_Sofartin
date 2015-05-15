@@ -10,30 +10,30 @@
     NSDate *_timeOfLastExternalIdentificationCache;
 }
 
-@property(assign,readonly) NSSet * allCalendars;
-@property(assign,readonly) EKAvailabilityCache * availabilityCache;
-@property(assign,retain) NSString * cachedHost;
-@property(assign,retain) NSSet * cachedOwnerAddresses;
-@property(assign,readwrite) long long cachedPort;
-@property(assign,readonly) NSSet * calendars;
-@property(assign,readonly) EKSourceConstraints * constraints;
-@property(assign,copy) NSNumber * defaultAlarmOffset;
-@property(assign,readonly) int displayOrderForNewCalendar;
-@property(getter=isEnabled,assign,readonly) bool enabled;
-@property(assign,copy) NSString * externalID;
-@property(assign,copy) NSString * externalModificationTag;
-@property(assign,readonly) bool isFacebookSource;
-@property(assign,readwrite) bool onlyCreatorCanModify;
-@property(assign,readonly) NSSet * ownerAddresses;
-@property(assign,readonly) long long preferredEventPrivateValue;
-@property(assign,readonly) NSString * serverHost;
-@property(assign,readonly) long long serverPort;
-@property(assign,readonly) NSString * sourceIdentifier;
-@property(assign,readonly) int sourceType;
-@property(assign,readonly) long long strictestEventPrivateValue;
-@property(assign,retain) NSDate * timeOfLastExternalIdentificationCache;
-@property(assign,copy) NSString * title;
-@property(assign,readonly) bool wantsCommentPromptWhenDeclining;
+@property (nonatomic, readonly) NSSet *allCalendars;
+@property (nonatomic, readonly) EKAvailabilityCache *availabilityCache;
+@property (nonatomic, retain) NSString *cachedHost;
+@property (nonatomic, retain) NSSet *cachedOwnerAddresses;
+@property (nonatomic) long long cachedPort;
+@property (nonatomic, readonly) NSSet *calendars;
+@property (nonatomic, readonly) EKSourceConstraints *constraints;
+@property (nonatomic, copy) NSNumber *defaultAlarmOffset;
+@property (nonatomic, readonly) int displayOrderForNewCalendar;
+@property (getter=isEnabled, nonatomic, readonly) bool enabled;
+@property (nonatomic, copy) NSString *externalID;
+@property (nonatomic, copy) NSString *externalModificationTag;
+@property (nonatomic, readonly) bool isFacebookSource;
+@property (nonatomic) bool onlyCreatorCanModify;
+@property (nonatomic, readonly) NSSet *ownerAddresses;
+@property (nonatomic, readonly) long long preferredEventPrivateValue;
+@property (nonatomic, readonly) NSString *serverHost;
+@property (nonatomic, readonly) long long serverPort;
+@property (nonatomic, readonly) NSString *sourceIdentifier;
+@property (nonatomic, readonly) int sourceType;
+@property (nonatomic, readonly) long long strictestEventPrivateValue;
+@property (nonatomic, retain) NSDate *timeOfLastExternalIdentificationCache;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, readonly) bool wantsCommentPromptWhenDeclining;
 
 + (id)sourceWithEventStore:(id)arg1;
 

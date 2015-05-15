@@ -7,13 +7,13 @@
     CAShapeLayer *_shapeMask;
 }
 
-@property(assign,copy) NSArray * colors;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } endPoint;
-@property(assign,retain) CAGradientLayer * gradient;
-@property(assign,copy) NSArray * locations;
-@property(assign,retain) CAShapeLayer * shapeMask;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } startPoint;
-@property(assign,copy) NSString * type;
+@property (copy) NSArray *colors;
+@property struct CGPoint { double x1; double x2; } endPoint;
+@property (nonatomic, retain) CAGradientLayer *gradient;
+@property (copy) NSArray *locations;
+@property (nonatomic, retain) CAShapeLayer *shapeMask;
+@property struct CGPoint { double x1; double x2; } startPoint;
+@property (copy) NSString *type;
 
 - (id)colors;
 - (void)dealloc;

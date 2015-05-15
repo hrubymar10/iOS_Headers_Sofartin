@@ -9,9 +9,9 @@
     char *_replySignature;
 }
 
-@property(assign,retain) NSMutableArray * arguments;
-@property(assign,retain) NSMutableArray * replyArguments;
-@property(assign,readwrite) int replyPosition;
+@property (retain) NSMutableArray *arguments;
+@property (retain) NSMutableArray *replyArguments;
+@property int replyPosition;
 
 - (id)arguments;
 - (void)dealloc;

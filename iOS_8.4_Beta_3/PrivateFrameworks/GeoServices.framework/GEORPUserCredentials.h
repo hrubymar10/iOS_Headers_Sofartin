@@ -7,10 +7,10 @@
     NSString *_icloudUserPersonId;
 }
 
-@property(assign,readonly) bool hasIcloudUserMapsAuthToken;
-@property(assign,readonly) bool hasIcloudUserPersonId;
-@property(assign,retain) NSString * icloudUserMapsAuthToken;
-@property(assign,retain) NSString * icloudUserPersonId;
+@property (nonatomic, readonly) bool hasIcloudUserMapsAuthToken;
+@property (nonatomic, readonly) bool hasIcloudUserPersonId;
+@property (nonatomic, retain) NSString *icloudUserMapsAuthToken;
+@property (nonatomic, retain) NSString *icloudUserPersonId;
 
 + (id)_credentialsForPrimaryICloudAccount;
 

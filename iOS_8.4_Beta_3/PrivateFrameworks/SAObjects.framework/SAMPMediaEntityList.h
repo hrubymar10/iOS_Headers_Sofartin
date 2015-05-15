@@ -4,8 +4,8 @@
 
 @interface SAMPMediaEntityList : SAAbstractItemList
 
-@property(assign,readwrite) int mediaType;
-@property(assign,retain) SAMPCollection * parentCollection;
+@property (nonatomic) int mediaType;
+@property (nonatomic, retain) SAMPCollection *parentCollection;
 
 + (id)mediaEntityList;
 + (id)mediaEntityListWithDictionary:(id)arg1 context:(id)arg2;

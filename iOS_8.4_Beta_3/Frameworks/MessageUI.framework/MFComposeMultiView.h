@@ -12,8 +12,8 @@
     UILabel *_placeholderImageSizeLabel;
 }
 
-@property(getter=isAccountAutoselected,assign,readwrite) bool accountAutoselected;
-@property(assign,readwrite) bool accountHasUnsafeDomain;
+@property (getter=isAccountAutoselected, nonatomic) bool accountAutoselected;
+@property (nonatomic) bool accountHasUnsafeDomain;
 
 - (bool)accountHasUnsafeDomain;
 - (id)accountLabel;

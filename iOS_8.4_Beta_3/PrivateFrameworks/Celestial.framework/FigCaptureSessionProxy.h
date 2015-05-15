@@ -9,7 +9,7 @@
     struct OpaqueFigCaptureSession { } *_session;
 }
 
-@property(assign,readonly) long long identifier;
+@property (readonly) long long identifier;
 
 + (void)initialize;
 

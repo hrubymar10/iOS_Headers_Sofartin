@@ -18,15 +18,15 @@
     RadioStationMatchContext *_stationMatchContext;
 }
 
-@property(assign,readwrite) unsigned long long numberOfTracks;
-@property(assign,copy) RadioPlaybackContext * playbackContext;
-@property(assign,retain) SSVPlaybackLease * playbackLease;
-@property(assign,readonly) long long reasonType;
-@property(assign,retain) RadioRequestContext * requestContext;
-@property(assign,copy) id responseBlock;
-@property(assign,readwrite) bool shouldIncludeStationInResponse;
-@property(assign,retain) RadioStation * station;
-@property(assign,retain) RadioStationMatchContext * stationMatchContext;
+@property unsigned long long numberOfTracks;
+@property (copy) RadioPlaybackContext *playbackContext;
+@property (retain) SSVPlaybackLease *playbackLease;
+@property (readonly) long long reasonType;
+@property (retain) RadioRequestContext *requestContext;
+@property (copy) id responseBlock;
+@property bool shouldIncludeStationInResponse;
+@property (retain) RadioStation *station;
+@property (retain) RadioStationMatchContext *stationMatchContext;
 
 - (void).cxx_destruct;
 - (id)_heartbeatTokenDataAllowingDelay:(bool)arg1 error:(id*)arg2;

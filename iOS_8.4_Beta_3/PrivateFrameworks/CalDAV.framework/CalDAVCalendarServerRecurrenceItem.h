@@ -8,10 +8,10 @@
     CoreDAVLeafItem *_recurrenceID;
 }
 
-@property(assign,retain) CalDAVCalendarServerChangesItem * changes;
-@property(assign,readonly) bool isMaster;
-@property(assign,retain) CoreDAVItemWithNoChildren * master;
-@property(assign,retain) CoreDAVLeafItem * recurrenceID;
+@property (nonatomic, retain) CalDAVCalendarServerChangesItem *changes;
+@property (nonatomic, readonly) bool isMaster;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *master;
+@property (nonatomic, retain) CoreDAVLeafItem *recurrenceID;
 
 - (id)changes;
 - (id)copyParseRules;

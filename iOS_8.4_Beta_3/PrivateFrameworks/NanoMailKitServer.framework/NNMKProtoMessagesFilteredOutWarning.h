@@ -10,9 +10,9 @@
     NSMutableArray *_removedMessageIds;
 }
 
-@property(assign,readwrite) unsigned int fullSyncVersion;
-@property(assign,readwrite) bool hasFullSyncVersion;
-@property(assign,retain) NSMutableArray * removedMessageIds;
+@property (nonatomic) unsigned int fullSyncVersion;
+@property (nonatomic) bool hasFullSyncVersion;
+@property (nonatomic, retain) NSMutableArray *removedMessageIds;
 
 - (void).cxx_destruct;
 - (void)addRemovedMessageId:(id)arg1;

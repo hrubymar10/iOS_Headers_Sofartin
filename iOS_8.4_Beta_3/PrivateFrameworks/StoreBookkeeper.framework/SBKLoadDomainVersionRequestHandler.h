@@ -9,15 +9,15 @@
     SBKSyncTransaction *_transaction;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long itemCount;
-@property(assign,readwrite) bool loadsRemoteItemCount;
-@property(assign,copy) NSString * responseDomainVersion;
-@property(assign,readonly) unsigned long long responseItemCount;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SBKSyncTransaction * transaction;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property unsigned long long itemCount;
+@property bool loadsRemoteItemCount;
+@property (copy) NSString *responseDomainVersion;
+@property (readonly) unsigned long long responseItemCount;
+@property (readonly) Class superclass;
+@property (retain) SBKSyncTransaction *transaction;
 
 + (long long)conflictDetectionType;
 

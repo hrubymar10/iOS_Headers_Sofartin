@@ -4,8 +4,8 @@
 
 @interface SASettingBooleanEntity : SASettingEntity
 
-@property(assign,copy) NSNumber * previousValue;
-@property(assign,readwrite) bool value;
+@property (nonatomic, copy) NSNumber *previousValue;
+@property (nonatomic) bool value;
 
 + (id)booleanEntity;
 + (id)booleanEntityWithDictionary:(id)arg1 context:(id)arg2;

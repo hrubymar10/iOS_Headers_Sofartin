@@ -7,8 +7,8 @@
     int _writeStyle;
 }
 
-@property(assign,retain) NSURL * baseURL;
-@property(assign,readwrite) int writeStyle;
+@property (nonatomic, retain) NSURL *baseURL;
+@property (nonatomic) int writeStyle;
 
 - (id)baseURL;
 - (void)dealloc;

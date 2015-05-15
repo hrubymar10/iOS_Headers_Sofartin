@@ -22,20 +22,20 @@
     bool _viewAppeared;
 }
 
-@property(assign,retain) PKPassGroupStackView * cardStackView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) PKGroupsController * groupsController;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool haveStartedCardAnimation;
-@property(assign,retain) NSArray * localPassDatas;
-@property(assign,retain) NSMutableArray * localPasses;
-@property(assign,retain) NSMutableArray * minimumCardHeightFromHereToTop;
-@property(assign,retain) UINavigationBar * navigationBar;
-@property(assign,readwrite) long long presentationState;
-@property(assign,retain) UIProgressView * progressView;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool viewAppeared;
+@property (nonatomic, retain) PKPassGroupStackView *cardStackView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) PKGroupsController *groupsController;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool haveStartedCardAnimation;
+@property (nonatomic, retain) NSArray *localPassDatas;
+@property (nonatomic, retain) NSMutableArray *localPasses;
+@property (nonatomic, retain) NSMutableArray *minimumCardHeightFromHereToTop;
+@property (retain) UINavigationBar *navigationBar;
+@property (nonatomic) long long presentationState;
+@property (nonatomic, retain) UIProgressView *progressView;
+@property (readonly) Class superclass;
+@property (nonatomic) bool viewAppeared;
 
 + (id)_exportedInterface;
 + (bool)_preventsAppearanceProxyCustomization;

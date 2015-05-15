@@ -41,8 +41,8 @@
     float _zoomWidthDelta;
 }
 
-@property(assign,readwrite) <UIMovieScrubberTrackViewDataSource> * dataSource;
-@property(assign,readwrite) <UIMovieScrubberTrackViewDelegate> * delegate;
+@property (nonatomic) <UIMovieScrubberTrackViewDataSource> *dataSource;
+@property (nonatomic) <UIMovieScrubberTrackViewDelegate> *delegate;
 
 - (id)_createImageViewForTimestamp:(id)arg1 isSummaryThumbnail:(bool)arg2;
 - (void)_reallyReloadData;

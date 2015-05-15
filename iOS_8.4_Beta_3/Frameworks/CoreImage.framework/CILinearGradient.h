@@ -9,10 +9,10 @@
     CIVector *inputPoint1;
 }
 
-@property(assign,retain) CIColor * inputColor0;
-@property(assign,retain) CIColor * inputColor1;
-@property(assign,retain) CIVector * inputPoint0;
-@property(assign,retain) CIVector * inputPoint1;
+@property (nonatomic, retain) CIColor *inputColor0;
+@property (nonatomic, retain) CIColor *inputColor1;
+@property (nonatomic, retain) CIVector *inputPoint0;
+@property (nonatomic, retain) CIVector *inputPoint1;
 
 + (id)customAttributes;
 

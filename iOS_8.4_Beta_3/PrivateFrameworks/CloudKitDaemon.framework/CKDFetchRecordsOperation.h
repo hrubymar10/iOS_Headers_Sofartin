@@ -25,26 +25,26 @@
     NSDictionary *_webSharingIdentityDataByRecordID;
 }
 
-@property(assign,readwrite) unsigned long long URLOptions;
-@property(assign,retain) NSSet * assetFieldNamesToPublishURLs;
-@property(assign,retain) CKDRecordCache * cache;
-@property(assign,retain) NSMutableDictionary * cachedRecords;
-@property(assign,retain) NSSet * desiredKeySet;
-@property(assign,retain) NSDictionary * desiredPackageFileIndices;
-@property(assign,retain) NSMapTable * downloadTasksByRecordID;
-@property(assign,retain) NSMutableDictionary * errorsByRecordID;
-@property(assign,retain) NSObject<OS_dispatch_group> * fetchRecordsGroup;
-@property(assign,readwrite) bool forcePCSDecrypt;
-@property(assign,retain) NSArray * fullRecordsToFetch;
-@property(assign,copy) id recordFetchCompletionBlock;
-@property(assign,copy) id recordFetchProgressBlock;
-@property(assign,retain) NSArray * recordIDsToFetch;
-@property(assign,retain) NSDictionary * recordIDsToVersionETags;
-@property(assign,readwrite) unsigned long long requestedTTL;
-@property(assign,readwrite) bool shouldFetchAssetContent;
-@property(assign,retain) NSDictionary * signaturesOfAssetsByRecordIDAndKey;
-@property(assign,readwrite) bool useCachedEtags;
-@property(assign,retain) NSDictionary * webSharingIdentityDataByRecordID;
+@property (nonatomic) unsigned long long URLOptions;
+@property (nonatomic, retain) NSSet *assetFieldNamesToPublishURLs;
+@property (nonatomic, retain) CKDRecordCache *cache;
+@property (nonatomic, retain) NSMutableDictionary *cachedRecords;
+@property (nonatomic, retain) NSSet *desiredKeySet;
+@property (nonatomic, retain) NSDictionary *desiredPackageFileIndices;
+@property (nonatomic, retain) NSMapTable *downloadTasksByRecordID;
+@property (nonatomic, retain) NSMutableDictionary *errorsByRecordID;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *fetchRecordsGroup;
+@property (nonatomic) bool forcePCSDecrypt;
+@property (nonatomic, retain) NSArray *fullRecordsToFetch;
+@property (nonatomic, copy) id recordFetchCompletionBlock;
+@property (nonatomic, copy) id recordFetchProgressBlock;
+@property (nonatomic, retain) NSArray *recordIDsToFetch;
+@property (nonatomic, retain) NSDictionary *recordIDsToVersionETags;
+@property (nonatomic) unsigned long long requestedTTL;
+@property (nonatomic) bool shouldFetchAssetContent;
+@property (nonatomic, retain) NSDictionary *signaturesOfAssetsByRecordIDAndKey;
+@property (nonatomic) bool useCachedEtags;
+@property (nonatomic, retain) NSDictionary *webSharingIdentityDataByRecordID;
 
 - (void).cxx_destruct;
 - (unsigned long long)URLOptions;

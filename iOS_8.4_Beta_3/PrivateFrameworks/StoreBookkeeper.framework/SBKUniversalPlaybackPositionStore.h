@@ -24,15 +24,15 @@
     NSTimer *_timer;
 }
 
-@property(assign,readwrite) unsigned long long automaticSynchronizeOptions;
-@property(assign,retain) SBKAsynchronousTask * bagLookupTask;
-@property(assign,retain) SBKAsynchronousTask * currentTask;
-@property(assign,retain) SBKRequestHandler * currentTaskRequestHandler;
-@property(assign,readonly) <SBKUniversalPlaybackPositionDataSource> * dataSource;
-@property(assign,retain) NSDate * dateToFireNextTimer;
-@property(assign,readwrite) bool hasLocalChangesToSync;
-@property(assign,retain) SBKAsynchronousTask * lookupDomainVersionTask;
-@property(assign,retain) NSTimer * timer;
+@property unsigned long long automaticSynchronizeOptions;
+@property (retain) SBKAsynchronousTask *bagLookupTask;
+@property (retain) SBKAsynchronousTask *currentTask;
+@property (retain) SBKRequestHandler *currentTaskRequestHandler;
+@property (readonly) <SBKUniversalPlaybackPositionDataSource> *dataSource;
+@property (retain) NSDate *dateToFireNextTimer;
+@property bool hasLocalChangesToSync;
+@property (retain) SBKAsynchronousTask *lookupDomainVersionTask;
+@property (retain) NSTimer *timer;
 
 + (id)keyValueStoreItemIdentifierForItem:(id)arg1;
 

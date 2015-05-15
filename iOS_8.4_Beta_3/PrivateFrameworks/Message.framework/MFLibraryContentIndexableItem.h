@@ -12,13 +12,13 @@
     NSArray *_to;
 }
 
-@property(assign,copy) NSArray * cc;
-@property(assign,copy) NSString * content;
-@property(assign,readwrite) unsigned int documentIdentifier;
-@property(assign,readwrite) unsigned int mailboxID;
-@property(assign,copy) NSArray * senders;
-@property(assign,copy) NSString * subject;
-@property(assign,copy) NSArray * to;
+@property (nonatomic, copy) NSArray *cc;
+@property (nonatomic, copy) NSString *content;
+@property (nonatomic) unsigned int documentIdentifier;
+@property (nonatomic) unsigned int mailboxID;
+@property (nonatomic, copy) NSArray *senders;
+@property (nonatomic, copy) NSString *subject;
+@property (nonatomic, copy) NSArray *to;
 
 - (id)cc;
 - (long long)compare:(id)arg1;

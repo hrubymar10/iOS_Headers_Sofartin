@@ -9,10 +9,10 @@
     NSString *_keyProfile;
 }
 
-@property(assign,readwrite) <SKUIItemRequestDelegate> * delegate;
-@property(assign,copy) NSString * imageProfile;
-@property(assign,copy) NSArray * itemIdentifiers;
-@property(assign,copy) NSString * keyProfile;
+@property (nonatomic) <SKUIItemRequestDelegate> *delegate;
+@property (nonatomic, copy) NSString *imageProfile;
+@property (nonatomic, copy) NSArray *itemIdentifiers;
+@property (nonatomic, copy) NSString *keyProfile;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

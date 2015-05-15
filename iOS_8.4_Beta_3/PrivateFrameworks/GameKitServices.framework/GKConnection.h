@@ -4,8 +4,8 @@
 
 @interface GKConnection : NSObject
 
-@property(assign,readwrite) id eventDelegate;
-@property(assign,readwrite) struct opaqueRTCReporting { }* reportingAgent;
+@property id eventDelegate;
+@property (nonatomic) struct opaqueRTCReporting { }*reportingAgent;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)externalAddressForCDXSelfConnectionData:(id)arg1;

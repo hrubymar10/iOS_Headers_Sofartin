@@ -4,9 +4,9 @@
 
 @interface CKMessagePartChatItem : CKBalloonChatItem
 
-@property(assign,readonly) BOOL color;
-@property(assign,retain) IMMessage * message;
-@property(assign,copy) NSArray * pasteboardItems;
+@property (nonatomic, readonly) BOOL color;
+@property (nonatomic, readonly, retain) IMMessage *message;
+@property (nonatomic, readonly, copy) NSArray *pasteboardItems;
 
 - (bool)canCopy;
 - (bool)canForward;

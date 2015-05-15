@@ -4,15 +4,15 @@
 
 @interface ICSAvailable : ICSComponent
 
-@property(assign,retain) NSArray * attach;
-@property(assign,retain) NSArray * attendee;
-@property(assign,retain) ICSDate * created;
-@property(assign,retain) ICSDate * dtend;
-@property(assign,retain) ICSDate * dtstamp;
-@property(assign,retain) ICSDate * dtstart;
-@property(assign,retain) ICSDuration * duration;
-@property(assign,retain) NSArray * rrule;
-@property(assign,retain) NSString * uid;
+@property (retain) NSArray *attach;
+@property (retain) NSArray *attendee;
+@property (retain) ICSDate *created;
+@property (retain) ICSDate *dtend;
+@property (retain) ICSDate *dtstamp;
+@property (retain) ICSDate *dtstart;
+@property (retain) ICSDuration *duration;
+@property (retain) NSArray *rrule;
+@property (retain) NSString *uid;
 
 + (id)name;
 

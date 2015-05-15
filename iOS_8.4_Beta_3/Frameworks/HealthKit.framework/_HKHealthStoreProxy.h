@@ -6,7 +6,7 @@
     HKHealthStore *_healthStore;
 }
 
-@property(assign,readwrite) HKHealthStore * healthStore;
+@property (nonatomic) HKHealthStore *healthStore;
 
 - (void).cxx_destruct;
 - (void)forwardInvocation:(id)arg1;

@@ -23,23 +23,23 @@
     PLPreheatItem *_transientPreheatlItem;
 }
 
-@property(assign,retain) PLCPLDownloadContext * CPLDownloadContext;
-@property(assign,readwrite) bool CPLDownloadDegraded;
-@property(assign,retain) NSObject<OS_dispatch_group> * CPLDownloadWaitGroup;
-@property(assign,readonly) <_PLImageLoadingAsset> * asset;
-@property(assign,readonly) NSString * assetUUID;
-@property(assign,copy) id cancellationHandler;
-@property(assign,readonly) long long cloudSharedAssetPlaceholderKind;
-@property(assign,readonly) NSString * debugFilename;
-@property(assign,readonly) id domain;
-@property(assign,readonly) bool isCloudSharedAsset;
-@property(assign,readonly) bool isPartOfBurst;
-@property(assign,readonly) bool isVideo;
-@property(assign,retain) PHImageManagerRequest * nextRequest;
-@property(assign,readonly) NSString * pathForAdjustmentFile;
-@property(assign,readonly) int registrationRefCount;
-@property(assign,readonly) int requestID;
-@property(assign,retain) PLPreheatItem * transientPreheatlItem;
+@property (retain) PLCPLDownloadContext *CPLDownloadContext;
+@property bool CPLDownloadDegraded;
+@property (retain) NSObject<OS_dispatch_group> *CPLDownloadWaitGroup;
+@property (nonatomic, readonly) <_PLImageLoadingAsset> *asset;
+@property (nonatomic, readonly) NSString *assetUUID;
+@property (copy) id cancellationHandler;
+@property (nonatomic, readonly) long long cloudSharedAssetPlaceholderKind;
+@property (nonatomic, readonly) NSString *debugFilename;
+@property (nonatomic, readonly) id domain;
+@property (nonatomic, readonly) bool isCloudSharedAsset;
+@property (nonatomic, readonly) bool isPartOfBurst;
+@property (nonatomic, readonly) bool isVideo;
+@property (retain) PHImageManagerRequest *nextRequest;
+@property (nonatomic, readonly) NSString *pathForAdjustmentFile;
+@property (nonatomic, readonly) int registrationRefCount;
+@property (nonatomic, readonly) int requestID;
+@property (retain) PLPreheatItem *transientPreheatlItem;
 
 - (void).cxx_destruct;
 - (id)CPLDownloadContext;

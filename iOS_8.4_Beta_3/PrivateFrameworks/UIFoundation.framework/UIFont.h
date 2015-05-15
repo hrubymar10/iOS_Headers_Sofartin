@@ -4,16 +4,16 @@
 
 @interface UIFont : NSObject <NSCopying>
 
-@property(assign,readonly) double ascender;
-@property(assign,readonly) double capHeight;
-@property(assign,readonly) double descender;
-@property(assign,retain) NSString * familyName;
-@property(assign,retain) NSString * fontName;
-@property(assign,readonly) double leading;
-@property(assign,readonly) double lineHeight;
-@property(assign,readonly) double pointSize;
-@property(assign,readonly) NSString * rc_textStyle;
-@property(assign,readonly) double xHeight;
+@property (nonatomic, readonly) double ascender;
+@property (nonatomic, readonly) double capHeight;
+@property (nonatomic, readonly) double descender;
+@property (nonatomic, readonly, retain) NSString *familyName;
+@property (nonatomic, readonly, retain) NSString *fontName;
+@property (nonatomic, readonly) double leading;
+@property (nonatomic, readonly) double lineHeight;
+@property (nonatomic, readonly) double pointSize;
+@property (nonatomic, readonly) NSString *rc_textStyle;
+@property (nonatomic, readonly) double xHeight;
 
 + (id)__ck_emphasizedPreferredFontForTextStyle:(id)arg1;
 + (id)__ck_shortDefaultFontForTextStyle:(id)arg1;

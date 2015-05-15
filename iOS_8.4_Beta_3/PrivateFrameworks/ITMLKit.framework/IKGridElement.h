@@ -6,10 +6,10 @@
     bool _paged;
 }
 
-@property(assign,readonly) unsigned long long columnCount;
-@property(getter=isPaged,assign,readonly) bool paged;
-@property(assign,readonly) unsigned long long rowCount;
-@property(assign,readonly) NSString * rowHeight;
+@property (nonatomic, readonly) unsigned long long columnCount;
+@property (getter=isPaged, nonatomic, readonly) bool paged;
+@property (nonatomic, readonly) unsigned long long rowCount;
+@property (nonatomic, readonly) NSString *rowHeight;
 
 - (unsigned long long)columnCount;
 - (id)initWithDOMElement:(id)arg1 parent:(id)arg2 elementFactory:(id)arg3;

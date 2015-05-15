@@ -20,21 +20,21 @@
     CoreDAVItemWithNoChildren *_validTimezone;
 }
 
-@property(assign,retain) CoreDAVItemWithNoChildren * ctagOkay;
-@property(assign,retain) CoreDAVItemWithNoChildren * imageError;
-@property(assign,retain) CoreDAVItemWithNoChildren * invalidImageType;
-@property(assign,retain) CoreDAVItemWithNoChildren * maxAttendees;
-@property(assign,retain) CoreDAVItemWithNoChildren * maxImageSize;
-@property(assign,retain) CoreDAVItemWithNoChildren * maxResourceSize;
-@property(assign,retain) CoreDAVItemWithNoChildren * maxResources;
-@property(assign,retain) CoreDAVItemWithNoChildren * noUIDConflict;
-@property(assign,retain) CoreDAVItemWithNoChildren * numberOfMatchesWithinLimits;
-@property(assign,retain) CoreDAVItemWithNoChildren * quotaExceeded;
-@property(assign,retain) CoreDAVLeafItem * status;
-@property(assign,retain) CoreDAVItemWithNoChildren * uid;
-@property(assign,retain) CoreDAVItemWithNoChildren * validAddressData;
-@property(assign,retain) CoreDAVItemWithNoChildren * validSyncToken;
-@property(assign,retain) CoreDAVItemWithNoChildren * validTimezone;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *ctagOkay;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *imageError;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *invalidImageType;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *maxAttendees;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *maxImageSize;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *maxResourceSize;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *maxResources;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *noUIDConflict;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *numberOfMatchesWithinLimits;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *quotaExceeded;
+@property (nonatomic, retain) CoreDAVLeafItem *status;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *uid;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *validAddressData;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *validSyncToken;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *validTimezone;
 
 + (id)copyParseRules;
 

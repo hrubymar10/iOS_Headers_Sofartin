@@ -19,17 +19,17 @@
     bool _usesPrivateCookieStore;
 }
 
-@property(getter=_loadsHTTPFailures,setter=_setLoadsHTTPFailures:,assign,readwrite) bool _loadsHTTPFailures;
-@property(getter=_shouldSetCookies,setter=_setShouldSetCookies:,assign,readwrite) bool _shouldSetCookies;
-@property(getter=_usesPrivateCookieStore,setter=_setUsesPrivateCookieStore:,assign,readwrite) bool _usesPrivateCookieStore;
-@property(assign,retain) SSAuthenticationContext * authenticationContext;
-@property(assign,retain) ISDataProvider * dataProvider;
-@property(assign,readwrite) <ISURLOperationDelegate> * delegate;
-@property(assign,readonly) ISURLRequestPerformance * performanceMetrics;
-@property(assign,copy) SSURLRequestProperties * requestProperties;
-@property(assign,retain) NSURLResponse * response;
-@property(assign,readwrite) bool tracksPerformanceMetrics;
-@property(getter=isUploadProgressRequested,assign,readwrite) bool uploadProgressRequested;
+@property (getter=_loadsHTTPFailures, setter=_setLoadsHTTPFailures:) bool _loadsHTTPFailures;
+@property (getter=_shouldSetCookies, setter=_setShouldSetCookies:) bool _shouldSetCookies;
+@property (getter=_usesPrivateCookieStore, setter=_setUsesPrivateCookieStore:) bool _usesPrivateCookieStore;
+@property (retain) SSAuthenticationContext *authenticationContext;
+@property (retain) ISDataProvider *dataProvider;
+@property <ISURLOperationDelegate> *delegate;
+@property (readonly) ISURLRequestPerformance *performanceMetrics;
+@property (copy) SSURLRequestProperties *requestProperties;
+@property (retain) NSURLResponse *response;
+@property bool tracksPerformanceMetrics;
+@property (getter=isUploadProgressRequested, nonatomic) bool uploadProgressRequested;
 
 + (id)copyUserAgent;
 + (bool)isSharedCacheStorageSession:(struct __CFURLStorageSession { }*)arg1;

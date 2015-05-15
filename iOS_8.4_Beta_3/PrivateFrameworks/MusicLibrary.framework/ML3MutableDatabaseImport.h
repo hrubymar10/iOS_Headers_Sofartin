@@ -4,18 +4,18 @@
 
 @interface ML3MutableDatabaseImport : ML3DatabaseImport
 
-@property(assign,retain) NSFileHandle * fileHandle;
-@property(assign,readwrite) unsigned int homeSharingBasePlaylistID;
-@property(getter=isLibraryOwnedContent,assign,readwrite) bool libraryOwnedContent;
-@property(assign,copy) NSString * libraryPath;
-@property(getter=isPendingMatch,assign,readwrite) bool pendingMatch;
-@property(assign,copy) NSData * playlistData;
-@property(assign,readwrite) long long preferredVideoQuality;
-@property(getter=isResetSync,assign,readwrite) bool resetSync;
-@property(getter=isSagaEnabled,assign,readwrite) bool sagaEnabled;
-@property(assign,readwrite) long long storeAccountID;
-@property(assign,copy) NSString * syncAnchor;
-@property(assign,copy) NSData * trackData;
+@property (nonatomic, retain) NSFileHandle *fileHandle;
+@property (nonatomic) unsigned int homeSharingBasePlaylistID;
+@property (getter=isLibraryOwnedContent, nonatomic) bool libraryOwnedContent;
+@property (nonatomic, copy) NSString *libraryPath;
+@property (getter=isPendingMatch, nonatomic) bool pendingMatch;
+@property (nonatomic, copy) NSData *playlistData;
+@property (nonatomic) long long preferredVideoQuality;
+@property (getter=isResetSync, nonatomic) bool resetSync;
+@property (getter=isSagaEnabled, nonatomic) bool sagaEnabled;
+@property (nonatomic) long long storeAccountID;
+@property (nonatomic, copy) NSString *syncAnchor;
+@property (nonatomic, copy) NSData *trackData;
 
 - (void)setFileHandle:(id)arg1;
 - (void)setHomeSharingBasePlaylistID:(unsigned int)arg1;

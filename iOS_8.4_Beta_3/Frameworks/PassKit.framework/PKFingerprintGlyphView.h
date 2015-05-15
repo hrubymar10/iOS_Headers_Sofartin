@@ -24,14 +24,14 @@
     bool _transitioning;
 }
 
-@property(assign,readonly) UIView * contentView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) UIColor * primaryColor;
-@property(assign,copy) UIColor * secondaryColor;
-@property(assign,readonly) long long state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) UIView *contentView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) UIColor *primaryColor;
+@property (nonatomic, copy) UIColor *secondaryColor;
+@property (nonatomic, readonly) long long state;
+@property (readonly) Class superclass;
 
 - (void)_continueHoldingStateForPathAtIndex:(unsigned long long)arg1 withTransitionIndex:(unsigned long long)arg2;
 - (void)_endRotationAnimation;

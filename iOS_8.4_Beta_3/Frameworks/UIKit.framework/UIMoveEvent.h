@@ -7,8 +7,8 @@
     long long _moveDirection;
 }
 
-@property(setter=_setFocusHeading:,assign,readwrite) unsigned long long _focusHeading;
-@property(setter=_setMoveDirection:,assign,readwrite) long long _moveDirection;
+@property (setter=_setFocusHeading:, nonatomic) unsigned long long _focusHeading;
+@property (setter=_setMoveDirection:, nonatomic) long long _moveDirection;
 
 - (unsigned long long)_focusHeading;
 - (long long)_moveDirection;

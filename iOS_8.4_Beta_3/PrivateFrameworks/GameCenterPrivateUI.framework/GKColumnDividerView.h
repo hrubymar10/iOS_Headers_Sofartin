@@ -6,7 +6,7 @@
     GKHairlineView *_hairlineView;
 }
 
-@property(assign,retain) GKHairlineView * hairlineView;
+@property (nonatomic, retain) GKHairlineView *hairlineView;
 
 - (void)dealloc;
 - (id)hairlineView;

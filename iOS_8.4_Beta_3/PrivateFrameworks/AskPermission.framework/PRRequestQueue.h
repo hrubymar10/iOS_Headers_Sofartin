@@ -7,8 +7,8 @@
     NSString *_identifier;
 }
 
-@property(assign,readwrite) <PRRequestDelegate> * delegate;
-@property(assign,readonly) NSString * identifier;
+@property (nonatomic) <PRRequestDelegate> *delegate;
+@property (readonly) NSString *identifier;
 
 + (id)_requestQueueForIdentifier:(id)arg1;
 + (id)defaultRequestQueue;

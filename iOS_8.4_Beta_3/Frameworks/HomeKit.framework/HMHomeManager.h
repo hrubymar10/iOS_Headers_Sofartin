@@ -16,24 +16,24 @@
     HMXpcClient *_xpcClient;
 }
 
-@property(assign,retain) NSMutableArray * currentHomes;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <HMHomeManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool fetchInProgress;
-@property(assign,readwrite) unsigned long long generationCounter;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * homes;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * messageReceiveQueue;
-@property(assign,readonly) NSUUID * messageTargetUUID;
-@property(assign,readwrite) unsigned long long metadataVersion;
-@property(assign,retain) HMMessageDispatcher * msgDispatcher;
-@property(assign,retain) HMPendingRequests * pendingRequests;
-@property(assign,retain) HMHome * primaryHome;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSUUID * uuid;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
-@property(assign,retain) HMXpcClient * xpcClient;
+@property (nonatomic, retain) NSMutableArray *currentHomes;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <HMHomeManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool fetchInProgress;
+@property (nonatomic) unsigned long long generationCounter;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) NSArray *homes;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *messageReceiveQueue;
+@property (nonatomic, readonly) NSUUID *messageTargetUUID;
+@property (nonatomic) unsigned long long metadataVersion;
+@property (nonatomic, retain) HMMessageDispatcher *msgDispatcher;
+@property (nonatomic, retain) HMPendingRequests *pendingRequests;
+@property (nonatomic, retain) HMHome *primaryHome;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSUUID *uuid;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
+@property (nonatomic, retain) HMXpcClient *xpcClient;
 
 - (void).cxx_destruct;
 - (void)_fetchHomeConfiguration;

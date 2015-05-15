@@ -14,14 +14,14 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int domain;
-@property(assign,readwrite) unsigned int error;
-@property(assign,readwrite) bool hasDomain;
-@property(assign,readwrite) bool hasError;
-@property(assign,readonly) bool hasTable;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSString * table;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int domain;
+@property (nonatomic) unsigned int error;
+@property (nonatomic) bool hasDomain;
+@property (nonatomic) bool hasError;
+@property (nonatomic, readonly) bool hasTable;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSString *table;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

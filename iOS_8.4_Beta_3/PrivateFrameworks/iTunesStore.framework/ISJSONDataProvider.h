@@ -6,7 +6,7 @@
     unsigned long long _options;
 }
 
-@property(assign,readwrite) unsigned long long parserOptions;
+@property unsigned long long parserOptions;
 
 - (bool)parseData:(id)arg1 returningError:(id*)arg2;
 - (unsigned long long)parserOptions;

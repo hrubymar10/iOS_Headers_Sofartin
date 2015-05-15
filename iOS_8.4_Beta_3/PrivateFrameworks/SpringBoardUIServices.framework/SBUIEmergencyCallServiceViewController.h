@@ -7,8 +7,8 @@
     UIColor *_tintColor;
 }
 
-@property(assign,readwrite) long long backgroundStyle;
-@property(assign,retain) UIColor * tintColor;
+@property (nonatomic) long long backgroundStyle;
+@property (nonatomic, readonly, retain) UIColor *tintColor;
 
 + (id)_exportedInterface;
 + (id)_remoteViewControllerInterface;

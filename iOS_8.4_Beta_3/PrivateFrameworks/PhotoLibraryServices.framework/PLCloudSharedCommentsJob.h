@@ -11,12 +11,12 @@
     NSDictionary *_mstreamdInfoDictionary;
 }
 
-@property(assign,retain) NSString * albumGUID;
-@property(assign,retain) NSString * assetGUID;
-@property(assign,retain) NSString * commentGUID;
-@property(assign,readwrite) long long jobType;
-@property(assign,retain) NSArray * msASComments;
-@property(assign,retain) NSDictionary * mstreamdInfoDictionary;
+@property (nonatomic, retain) NSString *albumGUID;
+@property (nonatomic, retain) NSString *assetGUID;
+@property (nonatomic, retain) NSString *commentGUID;
+@property (nonatomic) long long jobType;
+@property (nonatomic, retain) NSArray *msASComments;
+@property (nonatomic, retain) NSDictionary *mstreamdInfoDictionary;
 
 + (void)deleteSharedCommentFromServer:(id)arg1;
 + (id)directoryPathForInFlightComments:(bool)arg1;

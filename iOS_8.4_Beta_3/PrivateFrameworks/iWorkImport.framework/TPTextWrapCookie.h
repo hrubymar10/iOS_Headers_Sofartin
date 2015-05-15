@@ -18,11 +18,11 @@
     TSUPointerKeyDictionary *_wrapSegmentsInverseTransformInRootDictionary;
 }
 
-@property(assign,retain) TSWPColumn * column;
-@property(assign,retain) NSArray * floatingWrappables;
-@property(assign,retain) TSDWrapSegments * interiorWrapSegments;
-@property(assign,readwrite) TSDLayout<TSWPLayoutTarget> * target;
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } targetInverseTransformInRoot;
+@property (nonatomic, retain) TSWPColumn *column;
+@property (nonatomic, readonly, retain) NSArray *floatingWrappables;
+@property (nonatomic, retain) TSDWrapSegments *interiorWrapSegments;
+@property (nonatomic) TSDLayout<TSWPLayoutTarget> *target;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } targetInverseTransformInRoot;
 
 + (id)textWrapCookieForColumn:(id)arg1 targetLayout:(id)arg2;
 

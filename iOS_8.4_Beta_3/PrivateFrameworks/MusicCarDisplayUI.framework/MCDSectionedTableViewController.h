@@ -6,8 +6,8 @@
     unsigned long long *_offsetOfSection;
 }
 
-@property(assign,readonly) unsigned long long countOfActions;
-@property(assign,readonly) bool isSectioning;
+@property (nonatomic, readonly) unsigned long long countOfActions;
+@property (nonatomic, readonly) bool isSectioning;
 
 - (unsigned long long)countOfActions;
 - (void)dealloc;

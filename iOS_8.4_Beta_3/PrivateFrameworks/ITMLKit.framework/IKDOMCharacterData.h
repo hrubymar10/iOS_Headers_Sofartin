@@ -4,8 +4,8 @@
 
 @interface IKDOMCharacterData : IKDOMNode <IKJSDOMCharacterData>
 
-@property(assign,retain) NSString * data;
-@property(assign,readonly) unsigned long long length;
+@property (nonatomic, retain) NSString *data;
+@property (nonatomic, readonly) unsigned long long length;
 
 - (id)data;
 - (unsigned long long)length;

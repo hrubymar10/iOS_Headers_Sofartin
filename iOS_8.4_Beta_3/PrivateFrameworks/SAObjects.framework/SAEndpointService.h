@@ -4,7 +4,7 @@
 
 @interface SAEndpointService : SAEndpoint
 
-@property(assign,copy) NSString * serverUrl;
+@property (nonatomic, copy) NSString *serverUrl;
 
 + (id)endpointService;
 + (id)endpointServiceWithDictionary:(id)arg1 context:(id)arg2;

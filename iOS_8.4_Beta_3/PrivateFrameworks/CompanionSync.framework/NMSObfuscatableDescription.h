@@ -7,8 +7,8 @@
     NSString *_prefixString;
 }
 
-@property(assign,retain) NSMutableArray * items;
-@property(assign,retain) NSString * prefixString;
+@property (nonatomic, retain) NSMutableArray *items;
+@property (nonatomic, retain) NSString *prefixString;
 
 - (void).cxx_destruct;
 - (id)CPSafeDescription;

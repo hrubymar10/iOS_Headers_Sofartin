@@ -4,8 +4,8 @@
 
 @interface IMExpirableMessageChatItem : IMAttachmentMessagePartChatItem
 
-@property(assign,readonly) bool isPlayed;
-@property(assign,readonly) bool isSaved;
+@property (nonatomic, readonly) bool isPlayed;
+@property (nonatomic, readonly) bool isSaved;
 
 - (Class)__ck_chatItemClass;
 - (bool)isPlayed;

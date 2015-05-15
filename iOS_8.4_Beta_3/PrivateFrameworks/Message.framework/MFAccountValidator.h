@@ -22,13 +22,13 @@
     MFMonitoredInvocation *_validationInvocation;
 }
 
-@property(assign,readonly) MFAccount * account;
-@property(assign,readonly) bool accountIsValid;
-@property(assign,readonly) bool accountSupportsSSL;
-@property(assign,readwrite) id delegate;
-@property(assign,readonly) MFError * error;
-@property(assign,readonly) bool performsValidationInBackground;
-@property(assign,readonly) MFMonitoredInvocation * validationInvocation;
+@property (nonatomic, readonly) MFAccount *account;
+@property (nonatomic, readonly) bool accountIsValid;
+@property (nonatomic, readonly) bool accountSupportsSSL;
+@property (nonatomic) id delegate;
+@property (nonatomic, readonly) MFError *error;
+@property (nonatomic, readonly) bool performsValidationInBackground;
+@property (nonatomic, readonly) MFMonitoredInvocation *validationInvocation;
 
 - (void)_backgroundValidateAccountFinished:(id)arg1 authSchemes:(id)arg2;
 - (bool)_incomingServerValid;

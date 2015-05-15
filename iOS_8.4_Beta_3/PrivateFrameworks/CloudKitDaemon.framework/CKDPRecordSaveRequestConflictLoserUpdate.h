@@ -6,7 +6,7 @@
     NSMutableArray *_conflictLoserEtags;
 }
 
-@property(assign,retain) NSMutableArray * conflictLoserEtags;
+@property (nonatomic, retain) NSMutableArray *conflictLoserEtags;
 
 - (void).cxx_destruct;
 - (void)addConflictLoserEtags:(id)arg1;

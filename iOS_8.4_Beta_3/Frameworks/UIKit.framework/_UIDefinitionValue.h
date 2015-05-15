@@ -10,11 +10,11 @@
     NSString *_term;
 }
 
-@property(assign,readonly) NSAttributedString * definition;
-@property(assign,readonly) NSString * localizedDictionaryName;
-@property(assign,readonly) NSString * longDefinition;
-@property(assign,retain) ASAsset * rawAsset;
-@property(assign,readonly) NSString * term;
+@property (readonly) NSAttributedString *definition;
+@property (readonly) NSString *localizedDictionaryName;
+@property (readonly) NSString *longDefinition;
+@property (nonatomic, retain) ASAsset *rawAsset;
+@property (readonly) NSString *term;
 
 - (void)dealloc;
 - (id)definition;

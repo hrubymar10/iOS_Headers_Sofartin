@@ -11,7 +11,7 @@
     UIView *_separatorView;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } expectedImageSize;
+@property (nonatomic) struct CGSize { double x1; double x2; } expectedImageSize;
 
 - (void).cxx_destruct;
 - (struct CGSize { double x1; double x2; })expectedImageSize;

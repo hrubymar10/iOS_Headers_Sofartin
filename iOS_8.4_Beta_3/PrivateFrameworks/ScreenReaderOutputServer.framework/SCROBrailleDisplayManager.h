@@ -42,12 +42,12 @@
     SCROBrailleDisplay *_stealthBrailleDisplay;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int inputContractionMode;
-@property(assign,readwrite) bool inputEightDotBraille;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int inputContractionMode;
+@property (nonatomic) bool inputEightDotBraille;
+@property (readonly) Class superclass;
 
 + (void)initialize;
 

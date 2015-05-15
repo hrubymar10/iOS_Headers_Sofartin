@@ -10,11 +10,11 @@
     UIView *_topBorderView;
 }
 
-@property(assign,copy) NSString * actionString;
-@property(assign,copy) UIColor * bottomBorderColor;
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,copy) NSString * title;
-@property(assign,copy) UIColor * topBorderColor;
+@property (nonatomic, copy) NSString *actionString;
+@property (nonatomic, copy) UIColor *bottomBorderColor;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) UIColor *topBorderColor;
 
 - (void).cxx_destruct;
 - (id)actionString;

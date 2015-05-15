@@ -9,10 +9,10 @@
     long long _type;
 }
 
-@property(assign,readonly) bool isInBand;
-@property(assign,readonly) NSLocale * locale;
-@property(assign,readwrite) long long tag;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) bool isInBand;
+@property (nonatomic, readonly) NSLocale *locale;
+@property (nonatomic) long long tag;
+@property (nonatomic, readonly) long long type;
 
 + (id)autoTrack;
 + (id)offTrack;

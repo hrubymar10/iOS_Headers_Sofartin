@@ -10,8 +10,8 @@
     } _representationSize;
 }
 
-@property(assign,retain) MPArtworkCatalog * catalog;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } representationSize;
+@property (nonatomic, retain) MPArtworkCatalog *catalog;
+@property (nonatomic) struct CGSize { double x1; double x2; } representationSize;
 
 - (void).cxx_destruct;
 - (id)catalog;

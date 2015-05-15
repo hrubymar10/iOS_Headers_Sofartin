@@ -7,8 +7,8 @@
     NSString *_textFieldValue;
 }
 
-@property(assign,readwrite) long long buttonIndex;
-@property(assign,retain) NSString * textFieldValue;
+@property (nonatomic) long long buttonIndex;
+@property (nonatomic, retain) NSString *textFieldValue;
 
 - (long long)buttonIndex;
 - (void)dealloc;

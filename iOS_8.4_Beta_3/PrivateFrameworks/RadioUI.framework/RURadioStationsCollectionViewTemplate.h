@@ -41,16 +41,16 @@
     UITraitCollection *_traitCollection;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } artworkSize;
-@property(assign,readonly) double horizontalEdgePadding;
-@property(assign,readonly) double horizontalSpacingBetweenItems;
-@property(assign,readonly) struct CGSize { double x1; double x2; } itemSize;
-@property(assign,readonly) RURadioStationsCollectionViewTemplateTextElement * lastTextElement;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } rootViewSize;
-@property(assign,readonly) struct { struct CGSize { double x_1_1_1; double x_1_1_2; } x1; bool x2; bool x3; struct UIOffset { double x_4_1_1; double x_4_1_2; } x4; struct CGSize { double x_5_1_1; double x_5_1_2; } x5; double x6; } stackAttributes;
-@property(assign,retain) MPUBorderDrawingCache * stackItemBorderDrawingCache;
-@property(assign,copy) UIColor * tintColor;
-@property(assign,copy) UITraitCollection * traitCollection;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } artworkSize;
+@property (nonatomic, readonly) double horizontalEdgePadding;
+@property (nonatomic, readonly) double horizontalSpacingBetweenItems;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } itemSize;
+@property (nonatomic, readonly) RURadioStationsCollectionViewTemplateTextElement *lastTextElement;
+@property (nonatomic) struct CGSize { double x1; double x2; } rootViewSize;
+@property (nonatomic, readonly) struct { struct CGSize { double x_1_1_1; double x_1_1_2; } x1; bool x2; bool x3; struct UIOffset { double x_4_1_1; double x_4_1_2; } x4; struct CGSize { double x_5_1_1; double x_5_1_2; } x5; double x6; } stackAttributes;
+@property (nonatomic, retain) MPUBorderDrawingCache *stackItemBorderDrawingCache;
+@property (nonatomic, copy) UIColor *tintColor;
+@property (nonatomic, copy) UITraitCollection *traitCollection;
 
 + (struct { unsigned long long x1; double x2; double x3; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_4_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_4_1_2; } x4; struct CGAffineTransform { double x_5_1_1; double x_5_1_2; double x_5_1_3; double x_5_1_4; double x_5_1_5; double x_5_1_6; } x5; double x6; double x7; double x8; })_attributesForStackItemAtIndex:(long long)arg1 displayScale:(double)arg2;
 + (double)_horizontalEdgePaddingForHorizontalSizeClass:(long long)arg1 displayScale:(double)arg2 rootViewWidth:(double)arg3;

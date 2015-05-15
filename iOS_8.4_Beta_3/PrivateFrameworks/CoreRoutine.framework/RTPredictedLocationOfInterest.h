@@ -11,12 +11,12 @@
     RTSource *_source;
 }
 
-@property(assign,readonly) double confidence;
-@property(assign,readonly) RTLocationOfInterest * locationOfInterest;
-@property(assign,readwrite) long long modeOfTransportation;
-@property(assign,readonly) NSDate * nextEntryTime;
-@property(assign,readonly) RTRoute * route;
-@property(assign,readonly) RTSource * source;
+@property (nonatomic, readonly) double confidence;
+@property (nonatomic, readonly) RTLocationOfInterest *locationOfInterest;
+@property (nonatomic) long long modeOfTransportation;
+@property (nonatomic, readonly) NSDate *nextEntryTime;
+@property (nonatomic, readonly) RTRoute *route;
+@property (nonatomic, readonly) RTSource *source;
 
 + (bool)supportsSecureCoding;
 

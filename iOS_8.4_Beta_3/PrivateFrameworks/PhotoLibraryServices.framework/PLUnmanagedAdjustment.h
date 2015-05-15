@@ -4,15 +4,15 @@
 
 @interface PLUnmanagedAdjustment : PLManagedObject
 
-@property(assign,retain) NSNumber * adjustmentBaseImageFormat;
-@property(assign,retain) NSString * adjustmentFormatIdentifier;
-@property(assign,retain) NSString * adjustmentFormatVersion;
-@property(assign,retain) NSDate * adjustmentTimestamp;
-@property(assign,retain) PLAdditionalAssetAttributes * assetAttributes;
-@property(assign,retain) NSString * editorLocalizedName;
-@property(assign,retain) NSString * otherAdjustmentsFingerprint;
-@property(assign,retain) NSString * similarToOriginalAdjustmentsFingerprint;
-@property(assign,retain) NSString * uuid;
+@property (nonatomic, retain) NSNumber *adjustmentBaseImageFormat;
+@property (nonatomic, retain) NSString *adjustmentFormatIdentifier;
+@property (nonatomic, retain) NSString *adjustmentFormatVersion;
+@property (nonatomic, retain) NSDate *adjustmentTimestamp;
+@property (nonatomic, retain) PLAdditionalAssetAttributes *assetAttributes;
+@property (nonatomic, retain) NSString *editorLocalizedName;
+@property (nonatomic, retain) NSString *otherAdjustmentsFingerprint;
+@property (nonatomic, retain) NSString *similarToOriginalAdjustmentsFingerprint;
+@property (nonatomic, retain) NSString *uuid;
 
 + (id)_convertRedEyeCorrection:(id)arg1 withOrientation:(long long)arg2;
 + (id)_convertRedEyeCorrections:(id)arg1 withOrientation:(long long)arg2;

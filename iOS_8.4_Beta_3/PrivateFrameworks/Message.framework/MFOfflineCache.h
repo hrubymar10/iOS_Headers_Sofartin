@@ -11,7 +11,7 @@
     MFOfflineCacheReplayContext *_replayContext;
 }
 
-@property(assign,readonly) NSString * nextTemporaryMessageID;
+@property (nonatomic, readonly) NSString *nextTemporaryMessageID;
 
 - (void)_applyReplayContextTransformation:(id)arg1;
 - (void)dealloc;

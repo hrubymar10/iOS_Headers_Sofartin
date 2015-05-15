@@ -9,12 +9,12 @@
     UITableView *_table;
 }
 
-@property(assign,readwrite) int availability;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long supportedAvailabilities;
+@property (nonatomic) int availability;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned long long supportedAvailabilities;
 
 - (void).cxx_destruct;
 - (void)_selectRow:(unsigned long long)arg1;

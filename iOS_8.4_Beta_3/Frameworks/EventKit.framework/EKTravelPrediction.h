@@ -11,13 +11,13 @@
     double _validRadius;
 }
 
-@property(assign,readonly) <EKTravelAdvice> * advice;
-@property(assign,readonly) NSDate * arrivalDate;
-@property(assign,readonly) NSDate * departureDate;
-@property(assign,readonly) NSDate * predictionDate;
-@property(assign,readonly) CLLocation * startingLocation;
-@property(assign,readonly) double ttl;
-@property(assign,readonly) double validRadius;
+@property (nonatomic, readonly) <EKTravelAdvice> *advice;
+@property (nonatomic, readonly) NSDate *arrivalDate;
+@property (nonatomic, readonly) NSDate *departureDate;
+@property (nonatomic, readonly) NSDate *predictionDate;
+@property (nonatomic, readonly) CLLocation *startingLocation;
+@property (nonatomic, readonly) double ttl;
+@property (nonatomic, readonly) double validRadius;
 
 + (bool)supportsSecureCoding;
 

@@ -7,8 +7,8 @@
     IDSServiceMonitor *_monitor;
 }
 
-@property(assign,retain) NSMutableSet * listeners;
-@property(assign,retain) IDSServiceMonitor * monitor;
+@property (nonatomic, readonly, retain) NSMutableSet *listeners;
+@property (nonatomic, retain) IDSServiceMonitor *monitor;
 
 - (bool)addListenerID:(id)arg1;
 - (void)dealloc;

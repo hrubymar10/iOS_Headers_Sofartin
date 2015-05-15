@@ -13,13 +13,13 @@
     int _state;
 }
 
-@property(assign,readwrite) int batchSize;
-@property(assign,readwrite) MSMediaStreamDaemon * daemon;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MSDeleterDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) int batchSize;
+@property (nonatomic) MSMediaStreamDaemon *daemon;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MSDeleterDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_clearInstantiatedDeletersByPersonID;
 + (void)_setMasterNextActivityDate:(id)arg1 forPersonID:(id)arg2;

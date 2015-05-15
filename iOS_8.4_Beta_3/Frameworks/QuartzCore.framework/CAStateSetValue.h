@@ -7,8 +7,8 @@
     id _value;
 }
 
-@property(assign,copy) NSString * keyPath;
-@property(assign,retain) id value;
+@property (nonatomic, copy) NSString *keyPath;
+@property (nonatomic, retain) id value;
 
 - (id)CAMLTypeForKey:(id)arg1;
 - (void)apply:(id)arg1;

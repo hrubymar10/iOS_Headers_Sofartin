@@ -7,7 +7,7 @@
     NSArray *_shadows;
 }
 
-@property(assign,retain) UIKeyboardDicationBackgroundGradientView * gradient;
+@property (nonatomic, retain) UIKeyboardDicationBackgroundGradientView *gradient;
 
 - (void)dealloc;
 - (id)gradient;

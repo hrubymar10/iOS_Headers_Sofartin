@@ -7,24 +7,24 @@
     void *_priv;
 }
 
-@property(assign,readwrite) double ambientIntensity;
-@property(assign,readwrite) struct CGColor { }* color;
-@property(assign,readwrite) double coneAngle;
-@property(assign,readwrite) double coneEdgeSoftness;
-@property(assign,readwrite) double diffuseIntensity;
-@property(assign,readwrite) struct CAPoint3D { double x1; double x2; double x3; } direction;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readwrite) double falloff;
-@property(assign,readwrite) double falloffDistance;
-@property(assign,retain) id image;
-@property(assign,copy) NSString * imageBlendMode;
-@property(assign,readwrite) double imageNormalAngle;
-@property(assign,readwrite) double imageRotation;
-@property(assign,readwrite) double intensity;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) struct CAPoint3D { double x1; double x2; double x3; } position;
-@property(assign,readwrite) double specularIntensity;
-@property(assign,copy) NSString * type;
+@property double ambientIntensity;
+@property struct CGColor { }*color;
+@property double coneAngle;
+@property double coneEdgeSoftness;
+@property double diffuseIntensity;
+@property struct CAPoint3D { double x1; double x2; double x3; } direction;
+@property (getter=isEnabled) bool enabled;
+@property double falloff;
+@property double falloffDistance;
+@property (retain) id image;
+@property (copy) NSString *imageBlendMode;
+@property double imageNormalAngle;
+@property double imageRotation;
+@property double intensity;
+@property (copy) NSString *name;
+@property struct CAPoint3D { double x1; double x2; double x3; } position;
+@property double specularIntensity;
+@property (copy) NSString *type;
 
 + (void)CAMLParserStartElement:(id)arg1;
 + (id)CA_CAMLPropertyForKey:(id)arg1;

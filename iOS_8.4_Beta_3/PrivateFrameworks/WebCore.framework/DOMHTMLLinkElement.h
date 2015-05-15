@@ -4,17 +4,17 @@
 
 @interface DOMHTMLLinkElement : DOMHTMLElement
 
-@property(assign,copy) NSURL * absoluteLinkURL;
-@property(assign,copy) NSString * charset;
-@property(assign,readwrite) bool disabled;
-@property(assign,copy) NSString * href;
-@property(assign,copy) NSString * hreflang;
-@property(assign,copy) NSString * media;
-@property(assign,copy) NSString * rel;
-@property(assign,copy) NSString * rev;
-@property(assign,readonly) DOMStyleSheet * sheet;
-@property(assign,copy) NSString * target;
-@property(assign,copy) NSString * type;
+@property (readonly, copy) NSURL *absoluteLinkURL;
+@property (copy) NSString *charset;
+@property bool disabled;
+@property (copy) NSString *href;
+@property (copy) NSString *hreflang;
+@property (copy) NSString *media;
+@property (copy) NSString *rel;
+@property (copy) NSString *rev;
+@property (readonly) DOMStyleSheet *sheet;
+@property (copy) NSString *target;
+@property (copy) NSString *type;
 
 - (bool)_mediaQueryMatches;
 - (bool)_mediaQueryMatchesForOrientation:(int)arg1;

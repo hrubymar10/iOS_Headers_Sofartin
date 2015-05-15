@@ -7,8 +7,8 @@
     IKViewElementStyle *_elementStyleOverrides;
 }
 
-@property(assign,copy) NSDictionary * childNodes;
-@property(assign,copy) IKViewElementStyle * elementStyleOverrides;
+@property (nonatomic, readonly, copy) NSDictionary *childNodes;
+@property (nonatomic, readonly, copy) IKViewElementStyle *elementStyleOverrides;
 
 - (void).cxx_destruct;
 - (id)childNodes;

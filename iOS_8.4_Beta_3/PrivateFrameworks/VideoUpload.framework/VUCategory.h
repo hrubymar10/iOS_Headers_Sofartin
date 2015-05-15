@@ -7,8 +7,8 @@
     id _value;
 }
 
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) id value;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) id value;
 
 + (id)categoryWithDisplayName:(id)arg1 value:(id)arg2;
 

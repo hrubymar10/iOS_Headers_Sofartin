@@ -6,8 +6,8 @@
     double mHeight;
 }
 
-@property(assign,readonly) double height;
-@property(assign,readonly) double perspective;
+@property (nonatomic, readonly) double height;
+@property (nonatomic, readonly) double perspective;
 
 + (id)contactShadowWithOffset:(double)arg1 height:(double)arg2 radius:(double)arg3 opacity:(double)arg4 color:(struct CGColor { }*)arg5 enabled:(bool)arg6;
 + (id)instanceWithArchive:(const struct ShadowArchive { int (**x1)(); struct UnknownFieldSet { struct vector<google::protobuf::UnknownField, std::__1::allocator<google::protobuf::UnknownField> > {} *x_2_1_1; } x2; unsigned int x3[1]; int x4; struct Color {} *x5; float x6; float x7; int x8; float x9; bool x10; int x11; struct DropShadowArchive {} *x12; struct ContactShadowArchive {} *x13; struct CurvedShadowArchive {} *x14; }*)arg1 unarchiver:(id)arg2;

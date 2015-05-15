@@ -6,7 +6,7 @@
     GKUITheme *_theme;
 }
 
-@property(assign,retain) GKUITheme * theme;
+@property (nonatomic, retain) GKUITheme *theme;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

@@ -6,11 +6,11 @@
     TSKSelection<TSDCanvasSelection> *mSelection;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) TSKSelection * selection;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) TSKSelection *selection;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (id)description;

@@ -19,14 +19,14 @@
     bool _wraps;
 }
 
-@property(assign,readwrite) bool autorepeat;
-@property(getter=isContinuous,assign,readwrite) bool continuous;
-@property(assign,readwrite) double maximumValue;
-@property(assign,readwrite) double minimumValue;
-@property(assign,readwrite) double stepValue;
-@property(assign,retain) UIColor * tintColor;
-@property(assign,readwrite) double value;
-@property(assign,readwrite) bool wraps;
+@property (nonatomic) bool autorepeat;
+@property (getter=isContinuous, nonatomic) bool continuous;
+@property (nonatomic) double maximumValue;
+@property (nonatomic) double minimumValue;
+@property (nonatomic) double stepValue;
+@property (nonatomic, retain) UIColor *tintColor;
+@property (nonatomic) double value;
+@property (nonatomic) bool wraps;
 
 - (void)_commonStepperInit;
 - (bool)_contentHuggingDefault_isUsuallyFixedHeight;

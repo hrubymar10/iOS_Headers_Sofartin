@@ -4,12 +4,12 @@
 
 @interface SAFmfGeoFenceSet : SADomainCommand
 
-@property(assign,copy) NSNumber * enable;
-@property(assign,copy) NSString * fenceType;
-@property(assign,retain) SAPerson * friend;
-@property(assign,copy) NSString * geoFenceTrigger;
-@property(assign,copy) NSNumber * oneTimeOnly;
-@property(assign,retain) SALocation * requestedLocation;
+@property (nonatomic, copy) NSNumber *enable;
+@property (nonatomic, copy) NSString *fenceType;
+@property (nonatomic, retain) SAPerson *friend;
+@property (nonatomic, copy) NSString *geoFenceTrigger;
+@property (nonatomic, copy) NSNumber *oneTimeOnly;
+@property (nonatomic, retain) SALocation *requestedLocation;
 
 + (id)geoFenceSet;
 + (id)geoFenceSetWithDictionary:(id)arg1 context:(id)arg2;

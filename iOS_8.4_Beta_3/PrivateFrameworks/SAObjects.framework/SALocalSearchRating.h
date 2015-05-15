@@ -4,14 +4,14 @@
 
 @interface SALocalSearchRating : AceObject <SAAceSerializable>
 
-@property(assign,readwrite) long long count;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double maxValue;
-@property(assign,copy) NSString * providerId;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double value;
+@property (nonatomic) long long count;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double maxValue;
+@property (nonatomic, copy) NSString *providerId;
+@property (readonly) Class superclass;
+@property (nonatomic) double value;
 
 + (id)rating;
 + (id)ratingWithDictionary:(id)arg1 context:(id)arg2;

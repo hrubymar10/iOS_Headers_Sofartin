@@ -7,9 +7,9 @@
     unsigned long long _state;
 }
 
-@property(assign,readonly) NSMutableSet * children;
-@property(assign,readonly) bool isLeafFrame;
-@property(assign,readwrite) unsigned long long state;
+@property (readonly) NSMutableSet *children;
+@property (readonly) bool isLeafFrame;
+@property unsigned long long state;
 
 - (id)children;
 - (void)dealloc;

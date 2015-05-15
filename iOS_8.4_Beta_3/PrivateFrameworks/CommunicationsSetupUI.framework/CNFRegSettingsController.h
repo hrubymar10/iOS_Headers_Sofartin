@@ -28,15 +28,15 @@
     bool _showReceiveRelayCalls;
 }
 
-@property(assign,retain) TUAccountsController * accountsController;
-@property(assign,copy) id alertHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * pendingAddress;
-@property(assign,readwrite) bool showEnableSwitch;
-@property(assign,readonly) bool showReceiveRelayCalls;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) TUAccountsController *accountsController;
+@property (nonatomic, copy) id alertHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *pendingAddress;
+@property (nonatomic) bool showEnableSwitch;
+@property (nonatomic, readonly) bool showReceiveRelayCalls;
+@property (readonly) Class superclass;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 

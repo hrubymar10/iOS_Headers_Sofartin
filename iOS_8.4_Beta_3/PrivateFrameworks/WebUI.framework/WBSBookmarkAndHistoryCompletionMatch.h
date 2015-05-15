@@ -8,8 +8,8 @@
     } _match;
 }
 
-@property(assign,readonly) <WBSURLCompletionMatchData> * data;
-@property(assign,readonly) float weight;
+@property (nonatomic, readonly) <WBSURLCompletionMatchData> *data;
+@property (nonatomic, readonly) float weight;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

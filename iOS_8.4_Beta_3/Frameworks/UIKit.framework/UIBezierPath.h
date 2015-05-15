@@ -17,16 +17,16 @@
     bool _usesEvenOddFillRule;
 }
 
-@property(assign,readwrite) struct CGPath { }* CGPath;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } currentPoint;
-@property(getter=isEmpty,assign,readonly) bool empty;
-@property(assign,readwrite) double flatness;
-@property(assign,readwrite) int lineCapStyle;
-@property(assign,readwrite) int lineJoinStyle;
-@property(assign,readwrite) double lineWidth;
-@property(assign,readwrite) double miterLimit;
-@property(assign,readwrite) bool usesEvenOddFillRule;
+@property (nonatomic) struct CGPath { }*CGPath;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } currentPoint;
+@property (getter=isEmpty, readonly) bool empty;
+@property (nonatomic) double flatness;
+@property (nonatomic) int lineCapStyle;
+@property (nonatomic) int lineJoinStyle;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) double miterLimit;
+@property (nonatomic) bool usesEvenOddFillRule;
 
 + (id)_bezierPathWithArcRoundedRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 cornerRadius:(double)arg2;
 + (id)_bezierPathWithPillRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 cornerRadius:(double)arg2;

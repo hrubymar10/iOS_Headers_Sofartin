@@ -15,14 +15,14 @@
     UIImage *_volumeWarningTrackImage;
 }
 
-@property(assign,readonly) float EUVolumeLimit;
-@property(assign,readwrite) <MPVolumeControllerDelegate> * delegate;
-@property(assign,readwrite) bool muted;
-@property(assign,retain) MPAVController * player;
-@property(assign,copy) NSString * volumeAudioCategory;
-@property(assign,readonly) float volumeValue;
-@property(assign,readonly) bool volumeWarningEnabled;
-@property(assign,readonly) long long volumeWarningState;
+@property (nonatomic, readonly) float EUVolumeLimit;
+@property (nonatomic) <MPVolumeControllerDelegate> *delegate;
+@property (nonatomic) bool muted;
+@property (nonatomic, retain) MPAVController *player;
+@property (nonatomic, copy) NSString *volumeAudioCategory;
+@property (nonatomic, readonly) float volumeValue;
+@property (nonatomic, readonly) bool volumeWarningEnabled;
+@property (nonatomic, readonly) long long volumeWarningState;
 
 - (void).cxx_destruct;
 - (float)EUVolumeLimit;

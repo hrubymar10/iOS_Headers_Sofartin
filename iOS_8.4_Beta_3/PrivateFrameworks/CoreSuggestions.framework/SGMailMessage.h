@@ -6,7 +6,7 @@
     SGSimpleMailMessage *_value;
 }
 
-@property(assign,readonly) SGSimpleMailMessage * value;
+@property (nonatomic, readonly) SGSimpleMailMessage *value;
 
 + (id)mailMessageWithValue:(id)arg1;
 + (bool)supportsSecureCoding;

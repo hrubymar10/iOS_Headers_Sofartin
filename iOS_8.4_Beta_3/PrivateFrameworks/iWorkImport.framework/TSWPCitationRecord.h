@@ -17,19 +17,19 @@
     NSString *_year;
 }
 
-@property(assign,copy) NSString * authorsString;
-@property(assign,readonly) NSString * cacheKey;
-@property(assign,copy) NSString * endNoteXML;
-@property(assign,readwrite) bool hideAuthorNames;
-@property(assign,readwrite) bool hideYear;
-@property(assign,copy) NSString * pageRange;
-@property(assign,copy) NSString * prefix;
-@property(assign,readwrite) bool recordXMLApplied;
-@property(assign,readwrite) bool shouldRemove;
-@property(assign,copy) NSString * suffix;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * type;
-@property(assign,copy) NSString * year;
+@property (nonatomic, copy) NSString *authorsString;
+@property (nonatomic, readonly) NSString *cacheKey;
+@property (nonatomic, copy) NSString *endNoteXML;
+@property (nonatomic) bool hideAuthorNames;
+@property (nonatomic) bool hideYear;
+@property (nonatomic, copy) NSString *pageRange;
+@property (nonatomic, copy) NSString *prefix;
+@property (nonatomic) bool recordXMLApplied;
+@property (nonatomic) bool shouldRemove;
+@property (nonatomic, copy) NSString *suffix;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *type;
+@property (nonatomic, copy) NSString *year;
 
 - (id)authorYearString;
 - (id)authorsString;

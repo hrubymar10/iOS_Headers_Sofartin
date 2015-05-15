@@ -10,7 +10,7 @@
     NSMutableArray *_requests;
 }
 
-@property(assign,readwrite) <SKUILayoutCacheDelegate> * delegate;
+@property (nonatomic) <SKUILayoutCacheDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_addLayoutBatch:(id)arg1;

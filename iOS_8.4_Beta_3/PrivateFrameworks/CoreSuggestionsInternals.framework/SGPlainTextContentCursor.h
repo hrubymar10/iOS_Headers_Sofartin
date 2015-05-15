@@ -25,7 +25,7 @@
     struct __CFString { } *_str;
 }
 
-@property(assign,readwrite) unsigned long long pos;
+@property (nonatomic) unsigned long long pos;
 
 - (void).cxx_destruct;
 - (bool)backward;

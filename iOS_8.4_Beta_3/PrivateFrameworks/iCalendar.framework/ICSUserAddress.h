@@ -4,18 +4,18 @@
 
 @interface ICSUserAddress : ICSProperty
 
-@property(assign,retain) NSString * cn;
-@property(assign,readwrite) int cutype;
-@property(assign,retain) NSString * dir;
-@property(assign,retain) NSString * email;
-@property(assign,readwrite) int partstat;
-@property(assign,retain) ICSDateValue * partstatModified;
-@property(assign,readwrite) int role;
-@property(assign,readwrite) bool rsvp;
-@property(assign,readwrite) int scheduleagent;
-@property(assign,readwrite) int scheduleforcesend;
-@property(assign,readwrite) int schedulestatus;
-@property(assign,readwrite) bool x_apple_self_invited;
+@property (nonatomic, retain) NSString *cn;
+@property (nonatomic) int cutype;
+@property (nonatomic, retain) NSString *dir;
+@property (nonatomic, retain) NSString *email;
+@property (nonatomic) int partstat;
+@property (nonatomic, retain) ICSDateValue *partstatModified;
+@property (nonatomic) int role;
+@property (nonatomic) bool rsvp;
+@property (nonatomic) int scheduleagent;
+@property (nonatomic) int scheduleforcesend;
+@property (nonatomic) int schedulestatus;
+@property (nonatomic) bool x_apple_self_invited;
 
 + (id)ICSStringFromCalendarUser:(int)arg1;
 + (id)ICSStringFromParticipationStatus:(int)arg1;

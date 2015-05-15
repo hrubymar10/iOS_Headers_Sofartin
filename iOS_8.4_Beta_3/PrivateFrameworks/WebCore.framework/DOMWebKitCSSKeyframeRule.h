@@ -4,8 +4,8 @@
 
 @interface DOMWebKitCSSKeyframeRule : DOMCSSRule
 
-@property(assign,copy) NSString * keyText;
-@property(assign,readonly) DOMCSSStyleDeclaration * style;
+@property (copy) NSString *keyText;
+@property (readonly) DOMCSSStyleDeclaration *style;
 
 - (id)keyText;
 - (void)setKeyText:(id)arg1;

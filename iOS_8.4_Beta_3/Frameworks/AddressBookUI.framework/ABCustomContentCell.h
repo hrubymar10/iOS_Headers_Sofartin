@@ -6,7 +6,7 @@
     UIView *_customContentView;
 }
 
-@property(assign,retain) UIView * customContentView;
+@property (nonatomic, retain) UIView *customContentView;
 
 - (id)customContentView;
 - (void)dealloc;

@@ -7,7 +7,7 @@
     unsigned int _isLinking;
 }
 
-@property(assign,readwrite) <STEmpedLinkingManagerDelegate> * delegate;
+@property (nonatomic) <STEmpedLinkingManagerDelegate> *delegate;
 
 + (void)_startLinking;
 + (void)_startRemoteLinking;

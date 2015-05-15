@@ -9,10 +9,10 @@
     NSValue *_frameValue;
 }
 
-@property(getter=isAnimated,assign,readwrite) bool animated;
-@property(assign,copy) id completionHandler;
-@property(assign,retain) NSValue * contentOffsetValue;
-@property(assign,retain) NSValue * frameValue;
+@property (getter=isAnimated, nonatomic) bool animated;
+@property (nonatomic, copy) id completionHandler;
+@property (retain) NSValue *contentOffsetValue;
+@property (retain) NSValue *frameValue;
 
 - (id)completionHandler;
 - (id)contentOffsetValue;

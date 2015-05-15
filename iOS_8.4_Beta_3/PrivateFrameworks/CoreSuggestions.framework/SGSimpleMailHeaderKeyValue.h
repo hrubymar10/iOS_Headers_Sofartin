@@ -7,8 +7,8 @@
     NSString *_value;
 }
 
-@property(assign,readonly) NSString * key;
-@property(assign,readonly) NSString * value;
+@property (nonatomic, readonly) NSString *key;
+@property (nonatomic, readonly) NSString *value;
 
 + (bool)supportsSecureCoding;
 

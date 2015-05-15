@@ -10,11 +10,11 @@
     long long _version;
 }
 
-@property(assign,readwrite) long long deliveryMode;
-@property(getter=isNetworkAccessAllowed,assign,readwrite) bool networkAccessAllowed;
-@property(assign,copy) id progressHandler;
-@property(getter=isStreamingAllowed,assign,readwrite) bool streamingAllowed;
-@property(assign,readwrite) long long version;
+@property (nonatomic) long long deliveryMode;
+@property (getter=isNetworkAccessAllowed, nonatomic) bool networkAccessAllowed;
+@property (nonatomic, copy) id progressHandler;
+@property (getter=isStreamingAllowed, nonatomic) bool streamingAllowed;
+@property (nonatomic) long long version;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

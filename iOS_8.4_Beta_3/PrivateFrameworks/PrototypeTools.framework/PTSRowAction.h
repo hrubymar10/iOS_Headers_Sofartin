@@ -7,8 +7,8 @@
     id _handler;
 }
 
-@property(assign,readwrite) bool deselectRowOnSuccess;
-@property(assign,copy) id handler;
+@property (nonatomic) bool deselectRowOnSuccess;
+@property (nonatomic, copy) id handler;
 
 + (id)action;
 + (id)actionWithHandler:(id)arg1;

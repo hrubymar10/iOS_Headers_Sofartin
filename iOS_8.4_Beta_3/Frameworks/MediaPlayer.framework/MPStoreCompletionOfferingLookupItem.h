@@ -10,12 +10,12 @@
     bool _wantsArtwork;
 }
 
-@property(assign,readonly) MPMediaQuery * albumItemsQuery;
-@property(assign,copy) id responseBlock;
-@property(assign,readonly) NSNumber * storeLookupID;
-@property(assign,readonly) NSString * storeLookupIDString;
-@property(assign,readonly) unsigned long long tokenID;
-@property(assign,readonly) bool wantsArtwork;
+@property (nonatomic, readonly) MPMediaQuery *albumItemsQuery;
+@property (nonatomic, readonly, copy) id responseBlock;
+@property (nonatomic, readonly) NSNumber *storeLookupID;
+@property (nonatomic, readonly) NSString *storeLookupIDString;
+@property (nonatomic, readonly) unsigned long long tokenID;
+@property (nonatomic, readonly) bool wantsArtwork;
 
 + (id)storeLookupIDForAlbumItemsQuery:(id)arg1;
 

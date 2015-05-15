@@ -9,10 +9,10 @@
     NSArray *_subscriptions;
 }
 
-@property(assign,readwrite) bool isFetchAllSubscriptionsOperation;
-@property(assign,copy) id subscriptionFetchedProgressBlock;
-@property(assign,retain) NSArray * subscriptionIDs;
-@property(assign,retain) NSArray * subscriptions;
+@property (nonatomic) bool isFetchAllSubscriptionsOperation;
+@property (nonatomic, copy) id subscriptionFetchedProgressBlock;
+@property (nonatomic, retain) NSArray *subscriptionIDs;
+@property (nonatomic, retain) NSArray *subscriptions;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

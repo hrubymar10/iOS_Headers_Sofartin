@@ -19,23 +19,23 @@
     bool _waitingForAnimation;
 }
 
-@property(assign,readonly) NSArray * dataSources;
-@property(assign,retain) GKSegmentedSectionHeaderView * headerView;
-@property(assign,readwrite) SEL noContentButtonAction;
-@property(assign,readwrite) id noContentButtonTarget;
-@property(assign,retain) NSString * noContentButtonTitle;
-@property(assign,retain) NSString * noContentMessage;
-@property(assign,retain) NSString * noContentTitle;
-@property(assign,retain) GKCollectionViewPlaceholderView * placeholderView;
-@property(assign,retain) GKCollectionViewDataSource * rootDataSource;
-@property(assign,retain) NSMutableArray * segmentInfos;
-@property(assign,readwrite) Class segmentedHeaderClass;
-@property(assign,readwrite) GKCollectionViewDataSource * selectedDataSource;
-@property(assign,readwrite) unsigned long long selectedDataSourceIndex;
-@property(assign,retain) GKSegmentInfo * selectedSegmentInfo;
-@property(assign,readwrite) bool shouldHideSegment;
-@property(assign,readwrite) bool usePlaceholder;
-@property(assign,readwrite) bool waitingForAnimation;
+@property (nonatomic, readonly) NSArray *dataSources;
+@property (nonatomic, retain) GKSegmentedSectionHeaderView *headerView;
+@property (nonatomic) SEL noContentButtonAction;
+@property (nonatomic) id noContentButtonTarget;
+@property (nonatomic, retain) NSString *noContentButtonTitle;
+@property (nonatomic, retain) NSString *noContentMessage;
+@property (nonatomic, retain) NSString *noContentTitle;
+@property (nonatomic, retain) GKCollectionViewPlaceholderView *placeholderView;
+@property (nonatomic, retain) GKCollectionViewDataSource *rootDataSource;
+@property (nonatomic, retain) NSMutableArray *segmentInfos;
+@property (nonatomic) Class segmentedHeaderClass;
+@property (nonatomic) GKCollectionViewDataSource *selectedDataSource;
+@property (nonatomic) unsigned long long selectedDataSourceIndex;
+@property (nonatomic, retain) GKSegmentInfo *selectedSegmentInfo;
+@property (nonatomic) bool shouldHideSegment;
+@property (nonatomic) bool usePlaceholder;
+@property (nonatomic) bool waitingForAnimation;
 
 - (id)_gkDescriptionWithChildren:(int)arg1;
 - (void)addDataSource:(id)arg1;

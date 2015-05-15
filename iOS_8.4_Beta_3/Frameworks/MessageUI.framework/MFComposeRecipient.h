@@ -16,14 +16,14 @@
     int _recordID;
 }
 
-@property(assign,retain) NSString * countryCode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MFComposeRecipientOriginContext * originContext;
-@property(getter=isRemovableFromSearchResults,assign,readonly) bool removableFromSearchResults;
-@property(assign,readonly) bool showsAccessoryButton;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSString *countryCode;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MFComposeRecipientOriginContext *originContext;
+@property (getter=isRemovableFromSearchResults, nonatomic, readonly) bool removableFromSearchResults;
+@property (nonatomic, readonly) bool showsAccessoryButton;
+@property (readonly) Class superclass;
 
 + (id)mf_recipientWithGALResult:(id)arg1;
 + (id)recipientWithProperty:(int)arg1 address:(id)arg2;

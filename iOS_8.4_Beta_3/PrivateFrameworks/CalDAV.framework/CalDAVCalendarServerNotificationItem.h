@@ -7,8 +7,8 @@
     CoreDAVLeafItem *_dtstamp;
 }
 
-@property(assign,retain) CoreDAVItem * content;
-@property(assign,retain) CoreDAVLeafItem * dtstamp;
+@property (nonatomic, retain) CoreDAVItem *content;
+@property (nonatomic, retain) CoreDAVLeafItem *dtstamp;
 
 - (id)content;
 - (id)copyParseRules;

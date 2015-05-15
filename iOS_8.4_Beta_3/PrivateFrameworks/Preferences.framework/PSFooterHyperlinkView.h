@@ -14,15 +14,15 @@
     UITextView *_textView;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,readwrite) SEL action;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } linkRange;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) id target;
-@property(assign,retain) NSString * text;
+@property (retain) NSURL *URL;
+@property SEL action;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property struct _NSRange { unsigned long long x1; unsigned long long x2; } linkRange;
+@property (readonly) Class superclass;
+@property id target;
+@property (retain) NSString *text;
 
 - (id)URL;
 - (void)_linkify;

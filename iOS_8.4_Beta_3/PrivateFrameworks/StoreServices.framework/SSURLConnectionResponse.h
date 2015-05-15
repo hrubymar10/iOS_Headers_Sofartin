@@ -8,21 +8,21 @@
     NSHTTPURLResponse *_urlResponse;
 }
 
-@property(assign,readonly) NSString * MIMEType;
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) NSHTTPURLResponse * URLResponse;
-@property(assign,readonly) NSData * bodyData;
-@property(assign,readonly) NSData * databaseEncoding;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) long long expectedContentLength;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SSMetricsPageEvent * metricsPageEvent;
-@property(assign,readonly) NSData * radio_decompressedBodyData;
-@property(assign,readonly) bool ssv_isExpiredResponse;
-@property(assign,readonly) NSString * suggestedFilename;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * textEncodingName;
+@property (nonatomic, readonly) NSString *MIMEType;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) NSHTTPURLResponse *URLResponse;
+@property (nonatomic, readonly) NSData *bodyData;
+@property (nonatomic, readonly) NSData *databaseEncoding;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) long long expectedContentLength;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SSMetricsPageEvent *metricsPageEvent;
+@property (nonatomic, readonly) NSData *radio_decompressedBodyData;
+@property (nonatomic, readonly) bool ssv_isExpiredResponse;
+@property (nonatomic, readonly) NSString *suggestedFilename;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *textEncodingName;
 
 - (id)MIMEType;
 - (id)URL;

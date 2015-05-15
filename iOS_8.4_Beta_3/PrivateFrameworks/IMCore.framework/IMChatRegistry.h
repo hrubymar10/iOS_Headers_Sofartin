@@ -27,11 +27,11 @@
     bool _wantsHistoryReload;
 }
 
-@property(setter=_setDefaultNumberOfMessagesToLoad:,assign,readwrite) unsigned long long _defaultNumberOfMessagesToLoad;
-@property(assign,readonly) bool _isLoading;
-@property(setter=_setPostMessageSentNotifications:,assign,readwrite) bool _postMessageSentNotifications;
-@property(assign,readonly) NSArray * allExistingChats;
-@property(assign,readonly) unsigned long long numberOfExistingChats;
+@property (setter=_setDefaultNumberOfMessagesToLoad:, nonatomic) unsigned long long _defaultNumberOfMessagesToLoad;
+@property (nonatomic, readonly) bool _isLoading;
+@property (setter=_setPostMessageSentNotifications:, nonatomic) bool _postMessageSentNotifications;
+@property (nonatomic, readonly) NSArray *allExistingChats;
+@property (nonatomic, readonly) unsigned long long numberOfExistingChats;
 
 + (Class)chatClass;
 + (Class)chatRegistryClass;

@@ -4,7 +4,7 @@
 
 @interface NSAttributedString : NSObject <NSCopying, NSMutableCopying, NSSecureCoding>
 
-@property(assign,copy) NSString * string;
+@property (readonly, copy) NSString *string;
 
 + (id)_documentTypeForFileType:(id)arg1;
 + (id)_mapkit_attributedStringWithBindingFormat:(id)arg1 replacements:(id)arg2 attributes:(id)arg3;

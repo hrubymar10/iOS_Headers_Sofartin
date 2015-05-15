@@ -6,7 +6,7 @@
     bool _parked;
 }
 
-@property(getter=isParked,assign,readonly) bool parked;
+@property (getter=isParked, nonatomic, readonly) bool parked;
 
 - (void)dealloc;
 - (id)init;

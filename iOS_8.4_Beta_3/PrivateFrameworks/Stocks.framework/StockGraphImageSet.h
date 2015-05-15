@@ -8,9 +8,9 @@
     UIImage *_volumeGraphImage;
 }
 
-@property(assign,retain) UIImage * highlightOverlayImage;
-@property(assign,retain) UIImage * lineGraphImage;
-@property(assign,retain) UIImage * volumeGraphImage;
+@property (nonatomic, retain) UIImage *highlightOverlayImage;
+@property (nonatomic, retain) UIImage *lineGraphImage;
+@property (nonatomic, retain) UIImage *volumeGraphImage;
 
 - (void).cxx_destruct;
 - (id)highlightOverlayImage;

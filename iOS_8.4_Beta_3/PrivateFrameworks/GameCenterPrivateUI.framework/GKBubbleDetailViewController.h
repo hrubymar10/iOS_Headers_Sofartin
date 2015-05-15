@@ -19,20 +19,20 @@
     GKLabel *_titleLabel;
 }
 
-@property(assign,retain) NSArray * activeConstraints;
-@property(assign,retain) GKHorizontalBubbleControlsView * bubblesView;
-@property(assign,retain) GKLabel * descriptionLabel;
-@property(assign,readwrite) bool didFloatInBubbles;
-@property(assign,readwrite) bool didTransition;
-@property(assign,retain) GKLabel * disabledFunctionalityLabel;
-@property(assign,retain) UIImageView * iconView;
-@property(assign,retain) NSArray * landscapeConstraints;
-@property(assign,retain) GKPlayerWithSpeechBalloonView * playerWithSpeechView;
-@property(assign,retain) NSArray * portraitConstraints;
-@property(assign,readwrite) bool showDescriptionView;
-@property(assign,readwrite) bool showPlayerWithSpeechView;
-@property(assign,retain) GKLabel * subtitleLabel;
-@property(assign,retain) GKLabel * titleLabel;
+@property (nonatomic, retain) NSArray *activeConstraints;
+@property (nonatomic, retain) GKHorizontalBubbleControlsView *bubblesView;
+@property (nonatomic, retain) GKLabel *descriptionLabel;
+@property (nonatomic) bool didFloatInBubbles;
+@property (nonatomic) bool didTransition;
+@property (nonatomic, retain) GKLabel *disabledFunctionalityLabel;
+@property (nonatomic, retain) UIImageView *iconView;
+@property (nonatomic, retain) NSArray *landscapeConstraints;
+@property (nonatomic, retain) GKPlayerWithSpeechBalloonView *playerWithSpeechView;
+@property (nonatomic, retain) NSArray *portraitConstraints;
+@property (nonatomic) bool showDescriptionView;
+@property (nonatomic) bool showPlayerWithSpeechView;
+@property (nonatomic, retain) GKLabel *subtitleLabel;
+@property (nonatomic, retain) GKLabel *titleLabel;
 
 + (Class)iconViewClass;
 

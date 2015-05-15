@@ -46,16 +46,16 @@
     unsigned long long _options;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } beginCenter;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } beginFrame;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
-@property(assign,readwrite) bool changedAccessoryOnly;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } endCenter;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endFrame;
-@property(assign,readwrite) unsigned long long options;
-@property(assign,readonly) NSDictionary * privateUserInfo;
-@property(assign,readonly) NSDictionary * userInfo;
+@property (nonatomic) struct CGPoint { double x1; double x2; } beginCenter;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } beginFrame;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
+@property (nonatomic) bool changedAccessoryOnly;
+@property (nonatomic) double duration;
+@property (nonatomic) struct CGPoint { double x1; double x2; } endCenter;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endFrame;
+@property (nonatomic) unsigned long long options;
+@property (nonatomic, readonly) NSDictionary *privateUserInfo;
+@property (nonatomic, readonly) NSDictionary *userInfo;
 
 + (id)info;
 

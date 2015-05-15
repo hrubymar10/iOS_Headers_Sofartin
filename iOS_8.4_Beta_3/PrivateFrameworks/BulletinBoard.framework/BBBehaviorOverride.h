@@ -8,9 +8,9 @@
     unsigned long long _overrideType;
 }
 
-@property(assign,copy) NSArray * effectiveIntervals;
-@property(assign,readwrite) unsigned long long mode;
-@property(assign,readwrite) unsigned long long overrideType;
+@property (nonatomic, copy) NSArray *effectiveIntervals;
+@property (nonatomic) unsigned long long mode;
+@property (nonatomic) unsigned long long overrideType;
 
 + (bool)supportsSecureCoding;
 

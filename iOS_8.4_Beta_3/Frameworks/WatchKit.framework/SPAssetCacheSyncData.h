@@ -8,9 +8,9 @@
     SPAssetCacheAssets *_transientCache;
 }
 
-@property(assign,retain) NSString * cacheIdentifier;
-@property(assign,retain) SPAssetCacheAssets * permanentCache;
-@property(assign,retain) SPAssetCacheAssets * transientCache;
+@property (nonatomic, retain) NSString *cacheIdentifier;
+@property (nonatomic, retain) SPAssetCacheAssets *permanentCache;
+@property (nonatomic, retain) SPAssetCacheAssets *transientCache;
 
 + (id)fromProto:(id)arg1;
 + (id)toProto:(id)arg1;

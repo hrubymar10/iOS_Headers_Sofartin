@@ -7,8 +7,8 @@
     CKRecord *_record;
 }
 
-@property(assign,retain) NSError * error;
-@property(assign,retain) CKRecord * record;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, retain) CKRecord *record;
 
 + (id)infoWithRecord:(id)arg1;
 + (id)infoWithRecord:(id)arg1 error:(id)arg2;

@@ -6,7 +6,7 @@
     bool _drawsStrikethrough;
 }
 
-@property(assign,readwrite) bool drawsStrikethrough;
+@property (nonatomic) bool drawsStrikethrough;
 
 - (bool)drawsStrikethrough;
 - (void)setDrawsStrikethrough:(bool)arg1;

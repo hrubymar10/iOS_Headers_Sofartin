@@ -2,30 +2,30 @@
    Image: /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
  */
 
-@interface NSData : NSObject <CKRecordValue, NSCopying, NSMutableCopying, NSSecureCoding, PQLValuable, PQLValuable, TSPSplitableData>
+@interface NSData : NSObject <CKRecordValue, NSCopying, NSMutableCopying, NSSecureCoding, PQLValuable, TSPSplitableData>
 
-@property(assign,readonly) NSData * SHA1Data;
-@property(assign,readonly) NSString * SHA1HexString;
-@property(assign,readonly) unsigned int br_qtnFlags;
-@property(assign,readonly) NSString * brc_hexadecimalString;
-@property(assign,readonly) NSData * brc_signature;
-@property(assign,readonly) bool brc_signatureIsPackage;
-@property(assign,readonly) bool brc_signatureIsPendingPlaceHolder;
-@property(assign,readonly) bool brc_signatureIsValid;
-@property(assign,readonly) const void* bytes;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long length;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSData *SHA1Data;
+@property (nonatomic, readonly) NSString *SHA1HexString;
+@property (nonatomic, readonly) unsigned int br_qtnFlags;
+@property (nonatomic, readonly) NSString *brc_hexadecimalString;
+@property (nonatomic, readonly) NSData *brc_signature;
+@property (nonatomic, readonly) bool brc_signatureIsPackage;
+@property (nonatomic, readonly) bool brc_signatureIsPendingPlaceHolder;
+@property (nonatomic, readonly) bool brc_signatureIsValid;
+@property (readonly) const void*bytes;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long length;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
 
 + (id)CKDataFromBase64URLSafeString:(id)arg1;
 + (id)CKDataWithHexString:(id)arg1;
@@ -148,8 +148,6 @@
 - (bool)abIsUTF16EntourageVCard;
 - (id)abStringAtRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1 inEncoding:(unsigned long long)arg2;
 - (id)afui_dataByCompressingWithGzip;
-- (id)base64Decoded;
-- (id)base64Encoded;
 - (id)base64EncodedDataWithOptions:(unsigned long long)arg1;
 - (id)base64EncodedStringWithOptions:(unsigned long long)arg1;
 - (id)base64Encoding;
@@ -183,7 +181,6 @@
 - (id)hexRepresentationWithSpaces_AS:(bool)arg1;
 - (id)hexString;
 - (id)hexString;
-- (id)hexStringValue;
 - (unsigned long long)hk_countOfUUIDs;
 - (void)hk_enumerateUUIDsUsingBlock:(id)arg1;
 - (id)initWithBase64EncodedData:(id)arg1 options:(unsigned long long)arg2;
@@ -211,7 +208,6 @@
 - (bool)isNSData__;
 - (unsigned long long)length;
 - (id)lowercaseHexStringWithoutSpaces;
-- (id)md5Digest;
 - (id)mf_MD5Digest;
 - (id)mf_attachmentWithFilename:(id)arg1 UTIType:(id)arg2 fromManager:(id)arg3 contextID:(id)arg4;
 - (id)mf_copyHexString;
@@ -253,7 +249,6 @@
 - (bool)safari_dataAppearsToBeCompressed;
 - (id)safari_dataByCompressingData;
 - (id)safari_dataByDecompressingData;
-- (id)sha1Digest;
 - (id)shortDescription;
 - (id)shortDescription;
 - (struct sockaddr { unsigned char x1; unsigned char x2; BOOL x3[14]; }*)sockAddr;

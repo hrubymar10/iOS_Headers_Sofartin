@@ -4,11 +4,11 @@
 
 @interface IKShowcaseTemplate : IKViewElement
 
-@property(assign,retain) IKBackgroundElement * background;
-@property(assign,retain) IKCarouselElement * carousel;
-@property(assign,retain) IKDocumentBannerElement * documentBanner;
-@property(assign,retain) NSArray * modes;
-@property(assign,readonly) unsigned long long transition;
+@property (nonatomic, readonly, retain) IKBackgroundElement *background;
+@property (nonatomic, readonly, retain) IKCarouselElement *carousel;
+@property (nonatomic, readonly, retain) IKDocumentBannerElement *documentBanner;
+@property (nonatomic, readonly, retain) NSArray *modes;
+@property (nonatomic, readonly) unsigned long long transition;
 
 - (id)background;
 - (id)carousel;

@@ -7,7 +7,7 @@
     UIButton *_zoomButton;
 }
 
-@property(assign,readonly) UIWindow * window;
+@property (nonatomic, readonly) UIWindow *window;
 
 - (void)_applicationDidFinishLaunching:(id)arg1;
 - (void)_changeZoom:(id)arg1;

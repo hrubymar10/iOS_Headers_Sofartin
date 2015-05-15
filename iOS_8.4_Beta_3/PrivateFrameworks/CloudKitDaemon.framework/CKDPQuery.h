@@ -14,13 +14,13 @@
     NSMutableArray *_types;
 }
 
-@property(assign,readwrite) bool distinct;
-@property(assign,retain) NSMutableArray * filters;
-@property(assign,readwrite) bool hasDistinct;
-@property(assign,readwrite) bool hasQueryOperator;
-@property(assign,readwrite) int queryOperator;
-@property(assign,retain) NSMutableArray * sorts;
-@property(assign,retain) NSMutableArray * types;
+@property (nonatomic) bool distinct;
+@property (nonatomic, retain) NSMutableArray *filters;
+@property (nonatomic) bool hasDistinct;
+@property (nonatomic) bool hasQueryOperator;
+@property (nonatomic) int queryOperator;
+@property (nonatomic, retain) NSMutableArray *sorts;
+@property (nonatomic, retain) NSMutableArray *types;
 
 - (void).cxx_destruct;
 - (void)addFilters:(id)arg1;

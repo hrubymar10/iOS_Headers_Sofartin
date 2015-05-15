@@ -8,13 +8,13 @@
     NSHashTable *_observers;
 }
 
-@property(assign,retain) <SFContinuityScannerProtocol><NSXPCProxyCreating> * connectionProxy;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableSet * foundDevices;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSHashTable * observers;
-@property(assign,readonly) Class superclass;
+@property (retain) <SFContinuityScannerProtocol><NSXPCProxyCreating> *connectionProxy;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain) NSMutableSet *foundDevices;
+@property (readonly) unsigned long long hash;
+@property (retain) NSHashTable *observers;
+@property (readonly) Class superclass;
 
 + (id)sharedManager;
 

@@ -8,11 +8,11 @@
     NSString *_url;
 }
 
-@property(assign,retain) NSString * etag;
-@property(assign,readonly) bool hasEtag;
-@property(assign,readonly) bool hasUrl;
-@property(assign,readwrite) double timestamp;
-@property(assign,retain) NSString * url;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, readonly) bool hasEtag;
+@property (nonatomic, readonly) bool hasUrl;
+@property (nonatomic) double timestamp;
+@property (nonatomic, retain) NSString *url;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -18,16 +18,16 @@
     PFUbiquityLocation *_ubiquityRootLocation;
 }
 
-@property(assign,retain) PFUbiquityKnowledgeVector * baselineKV;
-@property(assign,readonly) PFUbiquityGlobalObjectIDCache * globalIDCache;
-@property(assign,retain) PFUbiquityKnowledgeVector * kv;
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,readonly) PFUbiquityPeerRangeCache * peerRangeCache;
-@property(assign,readonly) PFUbiquityPeerReceipt * peerReceipt;
-@property(assign,readonly) NSString * storeName;
-@property(assign,readonly) PFUbiquityTransactionHistoryCache * transactionHistoryCache;
-@property(assign,readonly) PFUbiquityTransactionLogCache * transactionLogCache;
-@property(assign,retain) PFUbiquityLocation * ubiquityRootLocation;
+@property (retain) PFUbiquityKnowledgeVector *baselineKV;
+@property (nonatomic, readonly) PFUbiquityGlobalObjectIDCache *globalIDCache;
+@property (retain) PFUbiquityKnowledgeVector *kv;
+@property (nonatomic, readonly) NSString *localPeerID;
+@property (nonatomic, readonly) PFUbiquityPeerRangeCache *peerRangeCache;
+@property (nonatomic, readonly) PFUbiquityPeerReceipt *peerReceipt;
+@property (nonatomic, readonly) NSString *storeName;
+@property (nonatomic, readonly) PFUbiquityTransactionHistoryCache *transactionHistoryCache;
+@property (nonatomic, readonly) PFUbiquityTransactionLogCache *transactionLogCache;
+@property (nonatomic, retain) PFUbiquityLocation *ubiquityRootLocation;
 
 - (void)_appWillResignActive:(id)arg1;
 - (id)baselineKV;

@@ -9,14 +9,14 @@
     VMVoicemail *_voicemailObject;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <AFUIVoicemailPlayerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=_player,setter=_setPlayer:,assign,retain) AVAudioPlayer * player;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SAPhonePlayVoiceMail * voicemail;
-@property(getter=_voicemailObject,setter=_setVoicemailObject:,assign,retain) VMVoicemail * voicemailObject;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <AFUIVoicemailPlayerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=_player, setter=_setPlayer:, nonatomic, retain) AVAudioPlayer *player;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SAPhonePlayVoiceMail *voicemail;
+@property (getter=_voicemailObject, setter=_setVoicemailObject:, nonatomic, retain) VMVoicemail *voicemailObject;
 
 - (void).cxx_destruct;
 - (id)_player;

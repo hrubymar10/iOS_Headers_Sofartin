@@ -11,11 +11,11 @@
     bool _showsClearButtonWhenEmpty;
 }
 
-@property(setter=abSetHighlightedTextColor:,assign,retain) UIColor * abHighlightedTextColor;
-@property(setter=abSetHighlighted:,assign,readwrite) bool abIsHighlighted;
-@property(setter=abSetHighlightingEnabled:,assign,readwrite) bool abIsHighlightingEnabled;
-@property(assign,readwrite) <ABResponderDelegate> * responderDelegate;
-@property(assign,readwrite) bool showsClearButtonWhenEmpty;
+@property (setter=abSetHighlightedTextColor:, nonatomic, retain) UIColor *abHighlightedTextColor;
+@property (setter=abSetHighlighted:, nonatomic) bool abIsHighlighted;
+@property (setter=abSetHighlightingEnabled:, nonatomic) bool abIsHighlightingEnabled;
+@property (nonatomic) <ABResponderDelegate> *responderDelegate;
+@property (nonatomic) bool showsClearButtonWhenEmpty;
 
 - (id)_nextKeyResponder;
 - (id)_previousKeyResponder;

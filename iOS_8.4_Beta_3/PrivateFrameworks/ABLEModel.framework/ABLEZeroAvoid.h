@@ -8,9 +8,9 @@
     double _minimumLevel;
 }
 
-@property(assign,readonly) double decayRate;
-@property(assign,readonly) double maximumLevel;
-@property(assign,readonly) double minimumLevel;
+@property (readonly) double decayRate;
+@property (readonly) double maximumLevel;
+@property (readonly) double minimumLevel;
 
 - (double)decayRate;
 - (id)initWithDecayRatePerEntry:(double)arg1 minimumLevel:(double)arg2 maximumLevel:(double)arg3;

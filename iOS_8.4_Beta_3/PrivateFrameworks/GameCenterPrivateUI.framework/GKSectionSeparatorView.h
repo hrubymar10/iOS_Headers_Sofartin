@@ -6,7 +6,7 @@
     UIView *_underlineView;
 }
 
-@property(assign,retain) UIView * underlineView;
+@property (nonatomic, retain) UIView *underlineView;
 
 + (bool)requiresConstraintBasedLayout;
 

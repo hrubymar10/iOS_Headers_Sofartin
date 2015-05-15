@@ -7,8 +7,8 @@
     NSString *_passcode;
 }
 
-@property(assign,readonly) NSString * deviceIdentifier;
-@property(assign,readonly) NSString * passcode;
+@property (nonatomic, readonly) NSString *deviceIdentifier;
+@property (nonatomic, readonly) NSString *passcode;
 
 + (unsigned int)_packetEventType;
 

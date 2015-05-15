@@ -10,8 +10,8 @@
     double _stemWidth;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } stemLocation;
-@property(assign,readonly) double stemWidth;
+@property (readonly) struct CGPoint { double x1; double x2; } stemLocation;
+@property (readonly) double stemWidth;
 
 - (id).cxx_construct;
 - (id)initWithString:(id)arg1 score:(double)arg2 rotation:(double)arg3 center:(struct CGPoint { double x1; double x2; })arg4 size:(struct CGSize { double x1; double x2; })arg5 stemLocation:(struct CGPoint { double x1; double x2; })arg6 stemWidth:(double)arg7;

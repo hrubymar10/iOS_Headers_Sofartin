@@ -6,7 +6,7 @@
     bool _success;
 }
 
-@property(assign,readwrite) bool success;
+@property (nonatomic) bool success;
 
 - (id)description;
 - (void)encodeWithXPCDictionary:(id)arg1;

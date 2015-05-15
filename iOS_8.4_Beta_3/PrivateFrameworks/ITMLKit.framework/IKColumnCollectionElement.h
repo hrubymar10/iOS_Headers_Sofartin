@@ -6,7 +6,7 @@
     NSArray *_columns;
 }
 
-@property(assign,retain) NSArray * columns;
+@property (nonatomic, readonly, retain) NSArray *columns;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

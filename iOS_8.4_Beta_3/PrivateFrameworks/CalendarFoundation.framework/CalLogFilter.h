@@ -11,12 +11,12 @@
     int _minimumLevel;
 }
 
-@property(assign,copy) NSArray * excludes;
-@property(assign,retain) NSArray * excludesAsRegexes;
-@property(assign,copy) NSArray * includes;
-@property(assign,retain) NSArray * includesAsRegexes;
-@property(assign,copy) NSSet * includesRegardlessOfLevel;
-@property(assign,readwrite) int minimumLevel;
+@property (nonatomic, copy) NSArray *excludes;
+@property (nonatomic, retain) NSArray *excludesAsRegexes;
+@property (nonatomic, copy) NSArray *includes;
+@property (nonatomic, retain) NSArray *includesAsRegexes;
+@property (nonatomic, copy) NSSet *includesRegardlessOfLevel;
+@property (nonatomic) int minimumLevel;
 
 - (void).cxx_destruct;
 - (id)description;

@@ -7,7 +7,7 @@
     bool _accountsValid;
 }
 
-@property(assign,copy) NSArray * accounts;
+@property (copy) NSArray *accounts;
 
 - (id)_accountWithUniqueIdentifier:(id)arg1;
 - (id)_addAccount:(id)arg1 asActiveAccount:(bool)arg2 activeLockerAccount:(bool)arg3;

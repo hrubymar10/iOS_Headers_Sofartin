@@ -9,11 +9,11 @@
     ASAsset *_rawAsset;
 }
 
-@property(assign,readwrite) bool activated;
-@property(assign,readonly) NSString * definitionLanguage;
-@property(assign,readonly) NSString * localizedDictionaryName;
-@property(assign,readonly) NSString * localizedLanguageName;
-@property(assign,readonly) ASAsset * rawAsset;
+@property bool activated;
+@property (readonly) NSString *definitionLanguage;
+@property (readonly) NSString *localizedDictionaryName;
+@property (readonly) NSString *localizedLanguageName;
+@property (readonly) ASAsset *rawAsset;
 
 + (id)_normalizedLanguageStringForLanguageCode:(id)arg1;
 

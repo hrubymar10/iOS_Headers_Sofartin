@@ -4,7 +4,7 @@
 
 @interface MSVArtworkServiceRequest : NSObject <NSSecureCoding>
 
-@property(assign,readonly) Class operationClass;
+@property (nonatomic, readonly) Class operationClass;
 
 + (bool)supportsSecureCoding;
 

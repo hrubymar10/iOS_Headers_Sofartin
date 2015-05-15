@@ -7,7 +7,7 @@
     NSRegularExpression *_regularExpression;
 }
 
-@property(assign,readonly) long long patternLength;
+@property (readonly) long long patternLength;
 
 + (id)_nextTokenInResultSetPattern:(id)arg1 optional:(bool*)arg2;
 + (id)_regularExpressionPatternForResultSetPatternSuffix:(id)arg1 tokenCount:(long long*)arg2;

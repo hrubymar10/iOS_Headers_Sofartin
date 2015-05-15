@@ -7,11 +7,11 @@
     IKViewElement *_viewElement;
 }
 
-@property(assign,readwrite) bool embedded;
-@property(assign,readonly) bool matchParentHeight;
-@property(assign,readonly) long long preferredLayoutAttribute;
-@property(assign,readonly) id preferredLayoutGuide;
-@property(assign,retain) IKViewElement * viewElement;
+@property (nonatomic) bool embedded;
+@property (nonatomic, readonly) bool matchParentHeight;
+@property (nonatomic, readonly) long long preferredLayoutAttribute;
+@property (nonatomic, readonly) id preferredLayoutGuide;
+@property (nonatomic, retain) IKViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (bool)embedded;

@@ -12,13 +12,13 @@
     int _ordinalValue;
 }
 
-@property(assign,readwrite) unsigned long long count;
-@property(assign,retain) NSArray * dayNumbers;
-@property(assign,readwrite) int days;
-@property(assign,readwrite) int frequency;
-@property(assign,readwrite) long long interval;
-@property(assign,retain) NSArray * monthNumbers;
-@property(assign,readwrite) int ordinalValue;
+@property unsigned long long count;
+@property (retain) NSArray *dayNumbers;
+@property int days;
+@property int frequency;
+@property long long interval;
+@property (retain) NSArray *monthNumbers;
+@property int ordinalValue;
 
 - (void).cxx_destruct;
 - (int)_frequencyToUse;

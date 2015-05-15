@@ -11,12 +11,12 @@
     NSDictionary *_vendorInfo;
 }
 
-@property(assign,readwrite) long long authenticationMethod;
-@property(assign,copy) NSString * authenticationPluginType;
-@property(assign,readonly) NSString * pluginType;
-@property(assign,readwrite) int reassertTimeout;
-@property(assign,copy) NSDictionary * vendorConfiguration;
-@property(assign,copy) NSDictionary * vendorInfo;
+@property long long authenticationMethod;
+@property (copy) NSString *authenticationPluginType;
+@property (readonly) NSString *pluginType;
+@property int reassertTimeout;
+@property (copy) NSDictionary *vendorConfiguration;
+@property (copy) NSDictionary *vendorInfo;
 
 + (bool)supportsSecureCoding;
 

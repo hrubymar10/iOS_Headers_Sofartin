@@ -19,13 +19,13 @@
     NSMutableDictionary *_validSecurityTokens;
 }
 
-@property(assign,copy) id clientInvalidationCallback;
-@property(assign,copy) id defaultHandler;
-@property(assign,retain) NSMutableDictionary * handlers;
-@property(assign,readonly) unsigned int machPort;
-@property(assign,readwrite) bool perPidService;
-@property(getter=isRunning,assign,readwrite) bool running;
-@property(assign,retain) NSString * serviceName;
+@property (nonatomic, copy) id clientInvalidationCallback;
+@property (nonatomic, copy) id defaultHandler;
+@property (nonatomic, retain) NSMutableDictionary *handlers;
+@property (nonatomic, readonly) unsigned int machPort;
+@property (nonatomic) bool perPidService;
+@property (getter=isRunning, nonatomic) bool running;
+@property (nonatomic, retain) NSString *serviceName;
 
 - (id)_clientIdentificationForAuditToken:(struct { unsigned int x1[8]; })arg1;
 - (bool)_clientWithPort:(unsigned int)arg1 auditToken:(struct { unsigned int x1[8]; })arg2 hasAnyEntitlementRequiredForMessage:(id)arg3;

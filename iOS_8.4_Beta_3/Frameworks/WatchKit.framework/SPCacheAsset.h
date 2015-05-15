@@ -9,10 +9,10 @@
     unsigned long long _state;
 }
 
-@property(assign,readwrite) double accessDate;
-@property(assign,retain) NSString * key;
-@property(assign,readwrite) unsigned long long size;
-@property(assign,readwrite) unsigned long long state;
+@property (nonatomic) double accessDate;
+@property (nonatomic, retain) NSString *key;
+@property (nonatomic) unsigned long long size;
+@property (nonatomic) unsigned long long state;
 
 + (id)fromProto:(id)arg1;
 + (id)toProto:(id)arg1;

@@ -9,10 +9,10 @@
     NSObject<OS_dispatch_source> *_timeoutTimer;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,copy) id errorHandler;
-@property(assign,copy) NSString * messageIdentifier;
-@property(assign,retain) NSObject<OS_dispatch_source> * timeoutTimer;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic, copy) id errorHandler;
+@property (nonatomic, copy) NSString *messageIdentifier;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *timeoutTimer;
 
 - (void).cxx_destruct;
 - (id)completionHandler;

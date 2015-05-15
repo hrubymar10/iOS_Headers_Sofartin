@@ -10,11 +10,11 @@
     long long _state;
 }
 
-@property(assign,retain) NSString * deviceID;
-@property(assign,retain) GKDiscovery * discovery;
-@property(assign,retain) NSDictionary * pendingInvite;
-@property(assign,retain) GKPlayer * player;
-@property(assign,readwrite) long long state;
+@property (nonatomic, retain) NSString *deviceID;
+@property (nonatomic, retain) GKDiscovery *discovery;
+@property (nonatomic, retain) NSDictionary *pendingInvite;
+@property (nonatomic, retain) GKPlayer *player;
+@property (nonatomic) long long state;
 
 + (id)nearbyDeviceWithID:(id)arg1 discovery:(id)arg2;
 

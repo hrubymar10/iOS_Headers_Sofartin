@@ -6,8 +6,8 @@
     struct MTLComputePipelineDescriptorPrivate { id x1; unsigned long long x2; unsigned long long x3; id x4; } *_private;
 }
 
-@property(assign,retain) <MTLFunction> * computeFunction;
-@property(assign,copy) NSString * label;
+@property (nonatomic, retain) <MTLFunction> *computeFunction;
+@property (nonatomic, copy) NSString *label;
 
 - (const struct MTLComputePipelineDescriptorPrivate { id x1; unsigned long long x2; unsigned long long x3; id x4; }*)_descriptorPrivate;
 - (id)computeFunction;

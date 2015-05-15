@@ -7,9 +7,9 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,copy) NSArray * filters;
-@property(assign,retain) NSMutableArray * messageFilters;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, readonly, copy) NSArray *filters;
+@property (nonatomic, retain) NSMutableArray *messageFilters;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)_executeChainForMessage:(id)arg1 queue:(id)arg2 target:(id)arg3 completionHandler:(id)arg4;

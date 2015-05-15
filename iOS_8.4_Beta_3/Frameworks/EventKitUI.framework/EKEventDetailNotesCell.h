@@ -8,7 +8,7 @@
     UITextView *_notesView;
 }
 
-@property(assign,readonly) bool isTruncatingNotes;
+@property (nonatomic, readonly) bool isTruncatingNotes;
 
 - (void).cxx_destruct;
 - (id)_notesTitleView;

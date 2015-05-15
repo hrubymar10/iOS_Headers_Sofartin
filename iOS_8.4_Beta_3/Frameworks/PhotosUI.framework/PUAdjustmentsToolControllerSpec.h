@@ -4,9 +4,9 @@
 
 @interface PUAdjustmentsToolControllerSpec : PUPhotoEditToolControllerSpec
 
-@property(assign,readonly) long long visualSliderThumbnailCount;
-@property(assign,readonly) double visualSliderThumbnailLongSide;
-@property(assign,readonly) double visualSliderThumbnailShortSide;
+@property (nonatomic, readonly) long long visualSliderThumbnailCount;
+@property (nonatomic, readonly) double visualSliderThumbnailLongSide;
+@property (nonatomic, readonly) double visualSliderThumbnailShortSide;
 
 - (id)newModeBarView;
 - (long long)visualSliderThumbnailCount;

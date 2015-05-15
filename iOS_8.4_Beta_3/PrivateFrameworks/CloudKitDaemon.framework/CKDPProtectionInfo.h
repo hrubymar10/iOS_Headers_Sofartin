@@ -7,10 +7,10 @@
     NSString *_protectionInfoTag;
 }
 
-@property(assign,readonly) bool hasProtectionInfo;
-@property(assign,readonly) bool hasProtectionInfoTag;
-@property(assign,retain) NSData * protectionInfo;
-@property(assign,retain) NSString * protectionInfoTag;
+@property (nonatomic, readonly) bool hasProtectionInfo;
+@property (nonatomic, readonly) bool hasProtectionInfoTag;
+@property (nonatomic, retain) NSData *protectionInfo;
+@property (nonatomic, retain) NSString *protectionInfoTag;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

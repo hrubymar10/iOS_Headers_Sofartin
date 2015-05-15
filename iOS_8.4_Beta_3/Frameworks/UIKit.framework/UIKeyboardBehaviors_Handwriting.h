@@ -6,7 +6,7 @@
     bool _usesCandidateSelection;
 }
 
-@property(assign,readwrite) bool usesCandidateSelection;
+@property (nonatomic) bool usesCandidateSelection;
 
 - (id)keyBehaviorsForState:(id)arg1;
 - (void)setUsesCandidateSelection:(bool)arg1;

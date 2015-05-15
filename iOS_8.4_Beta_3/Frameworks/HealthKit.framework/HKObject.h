@@ -10,11 +10,11 @@
     NSString *_sourceBundleIdentifier;
 }
 
-@property(assign,readonly) NSUUID * UUID;
-@property(getter=_creationDate,setter=_setCreationDate:,assign,copy) NSDate * creationDate;
-@property(assign,copy) NSDictionary * metadata;
-@property(assign,readonly) HKSource * source;
-@property(getter=_sourceBundleIdentifier,setter=_setSourceBundleIdentifier:,assign,copy) NSString * sourceBundleIdentifier;
+@property (readonly) NSUUID *UUID;
+@property (getter=_creationDate, setter=_setCreationDate:, nonatomic, copy) NSDate *creationDate;
+@property (readonly, copy) NSDictionary *metadata;
+@property (readonly) HKSource *source;
+@property (getter=_sourceBundleIdentifier, setter=_setSourceBundleIdentifier:, nonatomic, copy) NSString *sourceBundleIdentifier;
 
 + (bool)_isConcreteObjectClass;
 + (id)_newDataObjectWithMetadata:(id)arg1 config:(id)arg2;

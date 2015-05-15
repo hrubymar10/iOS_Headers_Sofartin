@@ -12,9 +12,9 @@
     bool _treatSectionEntriesAsRegularEntries;
 }
 
-@property(assign,copy) id entryComparator;
-@property(assign,copy) id sectionComparator;
-@property(assign,readwrite) bool treatSectionEntriesAsRegularEntries;
+@property (nonatomic, copy) id entryComparator;
+@property (nonatomic, copy) id sectionComparator;
+@property (nonatomic) bool treatSectionEntriesAsRegularEntries;
 
 - (id)_initForCopyWithSectionEntries:(id)arg1 entriesBySection:(id)arg2 explicitlyAddedSectionEntries:(id)arg3;
 - (void)addEntries:(id)arg1;

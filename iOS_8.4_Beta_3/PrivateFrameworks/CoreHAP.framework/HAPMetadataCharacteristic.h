@@ -13,14 +13,14 @@
     HAPMetadataCharacteristicValue *_valueMetadata;
 }
 
-@property(assign,retain) NSString * chrDescription;
-@property(assign,retain) NSString * format;
-@property(assign,retain) NSString * localizationKey;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSNumber * properties;
-@property(assign,retain) NSString * units;
-@property(assign,retain) NSString * uuidStr;
-@property(assign,retain) HAPMetadataCharacteristicValue * valueMetadata;
+@property (nonatomic, retain) NSString *chrDescription;
+@property (nonatomic, retain) NSString *format;
+@property (nonatomic, retain) NSString *localizationKey;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSNumber *properties;
+@property (nonatomic, retain) NSString *units;
+@property (nonatomic, retain) NSString *uuidStr;
+@property (nonatomic, retain) HAPMetadataCharacteristicValue *valueMetadata;
 
 - (void).cxx_destruct;
 - (id)chrDescription;

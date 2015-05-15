@@ -4,10 +4,10 @@
 
 @interface DOMHTMLStyleElement : DOMHTMLElement
 
-@property(assign,readwrite) bool disabled;
-@property(assign,copy) NSString * media;
-@property(assign,readonly) DOMStyleSheet * sheet;
-@property(assign,copy) NSString * type;
+@property bool disabled;
+@property (copy) NSString *media;
+@property (readonly) DOMStyleSheet *sheet;
+@property (copy) NSString *type;
 
 - (bool)disabled;
 - (id)media;

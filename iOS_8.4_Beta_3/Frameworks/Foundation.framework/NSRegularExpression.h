@@ -11,9 +11,9 @@
     int _reserved2;
 }
 
-@property(assign,readonly) unsigned long long numberOfCaptureGroups;
-@property(assign,readonly) unsigned long long options;
-@property(assign,copy) NSString * pattern;
+@property (readonly) unsigned long long numberOfCaptureGroups;
+@property (readonly) unsigned long long options;
+@property (readonly, copy) NSString *pattern;
 
 + (id)escapedPatternForString:(id)arg1;
 + (id)escapedTemplateForString:(id)arg1;

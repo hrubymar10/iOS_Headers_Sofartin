@@ -12,13 +12,13 @@
     int _videoStabilizationMethod;
 }
 
-@property(assign,readwrite) bool mirroringEnabled;
-@property(assign,readwrite) int orientation;
-@property(assign,readwrite) int outputFormat;
-@property(assign,readwrite) int outputHeight;
-@property(assign,readwrite) int outputWidth;
-@property(assign,readwrite) int retainedBufferCount;
-@property(assign,readwrite) int videoStabilizationMethod;
+@property (nonatomic) bool mirroringEnabled;
+@property (nonatomic) int orientation;
+@property (nonatomic) int outputFormat;
+@property (nonatomic) int outputHeight;
+@property (nonatomic) int outputWidth;
+@property (nonatomic) int retainedBufferCount;
+@property (nonatomic) int videoStabilizationMethod;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)copyXPCEncoding;

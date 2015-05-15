@@ -4,8 +4,8 @@
 
 @interface DOMHTMLLIElement : DOMHTMLElement
 
-@property(assign,copy) NSString * type;
-@property(assign,readwrite) int value;
+@property (copy) NSString *type;
+@property int value;
 
 - (void)setType:(id)arg1;
 - (void)setValue:(int)arg1;

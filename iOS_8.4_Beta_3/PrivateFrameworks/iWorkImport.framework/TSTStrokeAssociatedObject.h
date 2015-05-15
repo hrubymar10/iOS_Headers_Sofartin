@@ -6,7 +6,7 @@
     bool dontClearBackground;
 }
 
-@property(assign,readwrite) bool dontClearBackground;
+@property (nonatomic) bool dontClearBackground;
 
 - (bool)dontClearBackground;
 - (void)setDontClearBackground:(bool)arg1;

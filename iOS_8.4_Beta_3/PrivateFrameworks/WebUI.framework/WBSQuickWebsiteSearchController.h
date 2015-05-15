@@ -15,8 +15,8 @@
     } _writer;
 }
 
-@property(assign,readonly) NSArray * quickWebsiteSearchHosts;
-@property(assign,readwrite) bool quickWebsiteSearchProvidersLoadedFromDisk;
+@property (nonatomic, readonly) NSArray *quickWebsiteSearchHosts;
+@property bool quickWebsiteSearchProvidersLoadedFromDisk;
 
 + (id)sharedController;
 

@@ -24,18 +24,18 @@
     } _sizeForLayoutMetrics;
 }
 
-@property(getter=_cellClass,assign,readonly) Class _cellClass;
-@property(getter=_cellReuseIdentifier,assign,copy) NSString * _cellReuseIdentifier;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readonly) UICollectionView * collectionView;
-@property(assign,readonly) UICollectionViewFlowLayout * collectionViewFlowLayout;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicLibraryBrowseCollectionViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) MusicEntityCollectionViewDescriptor * entityViewDescriptor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MusicLibraryBrowseCollectionViewConfiguration * libraryViewConfiguration;
-@property(assign,readonly) Class superclass;
+@property (getter=_cellClass, nonatomic, readonly) Class _cellClass;
+@property (getter=_cellReuseIdentifier, nonatomic, readonly, copy) NSString *_cellReuseIdentifier;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) UICollectionView *collectionView;
+@property (nonatomic, readonly) UICollectionViewFlowLayout *collectionViewFlowLayout;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicLibraryBrowseCollectionViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) MusicEntityCollectionViewDescriptor *entityViewDescriptor;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MusicLibraryBrowseCollectionViewConfiguration *libraryViewConfiguration;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (Class)_cellClass;

@@ -8,7 +8,7 @@
     bool _scansForDestinationsWhenEnteringForeground;
 }
 
-@property(assign,readwrite) bool scansForDestinationsWhenEnteringForeground;
+@property (nonatomic) bool scansForDestinationsWhenEnteringForeground;
 
 - (void).cxx_destruct;
 - (void)_beginScanningForDestinationsNotification:(id)arg1;

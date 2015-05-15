@@ -8,7 +8,7 @@
     int _foldersLock;
 }
 
-@property(assign,readonly) NSArray * contents;
+@property (readonly) NSArray *contents;
 
 - (void)addFile:(id)arg1;
 - (void)addFolder:(id)arg1;

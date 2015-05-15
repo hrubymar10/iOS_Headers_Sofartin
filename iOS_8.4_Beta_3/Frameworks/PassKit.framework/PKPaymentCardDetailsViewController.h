@@ -18,17 +18,17 @@
     PKPaymentWebService *_webService;
 }
 
-@property(getter=isComplete,assign,readonly) bool complete;
-@property(assign,retain) UITextField * cscField;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hideSetupLaterButton;
-@property(assign,retain) PKPaymentCredential * paymentCredential;
-@property(assign,readwrite) <PKPaymentSetupViewControllerDelegate> * setupDelegate;
-@property(assign,readonly) Class superclass;
-@property(getter=isVerifying,assign,readonly) bool verifying;
-@property(assign,retain) PKPaymentWebService * webService;
+@property (getter=isComplete, nonatomic, readonly) bool complete;
+@property (nonatomic, retain) UITextField *cscField;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hideSetupLaterButton;
+@property (nonatomic, retain) PKPaymentCredential *paymentCredential;
+@property (nonatomic) <PKPaymentSetupViewControllerDelegate> *setupDelegate;
+@property (readonly) Class superclass;
+@property (getter=isVerifying, nonatomic, readonly) bool verifying;
+@property (nonatomic, retain) PKPaymentWebService *webService;
 
 + (void)handleDownloadedPasses:(id)arg1 fromViewController:(id)arg2 withCompletion:(id)arg3;
 + (void)handlePassAlreadyProvisionedError;

@@ -34,13 +34,13 @@
     SLFacebookVideoOptionsViewController *_videoOptionsViewController;
 }
 
-@property(assign,retain) ACAccountStore * accountStore;
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) ACAccount * privilegedAccount;
-@property(assign,readonly) Class superclass;
+@property (retain) ACAccountStore *accountStore;
+@property (nonatomic, copy) id completionHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) ACAccount *privilegedAccount;
+@property (readonly) Class superclass;
 
 + (id)serviceBundle;
 

@@ -4,8 +4,8 @@
 
 @interface TDEffectRenditionSpec : TDRenditionSpec
 
-@property(assign,retain) NSSet * components;
-@property(assign,retain) NSNumber * effectScale;
+@property (nonatomic, retain) NSSet *components;
+@property (nonatomic, retain) NSNumber *effectScale;
 
 - (id)createCSIRepresentationWithCompression:(bool)arg1 colorSpaceID:(unsigned long long)arg2 document:(id)arg3;
 - (id)effectPreset;

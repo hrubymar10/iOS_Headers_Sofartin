@@ -11,18 +11,18 @@
     NSString *_path;
 }
 
-@property(assign,retain) CKDPCommentContent * commentContent;
-@property(assign,retain) CKDPIdentifier * commentId;
-@property(assign,retain) CKDPDate * createdAt;
-@property(assign,retain) CKDPIdentifier * from;
-@property(assign,readonly) bool hasCommentContent;
-@property(assign,readonly) bool hasCommentId;
-@property(assign,readonly) bool hasCreatedAt;
-@property(assign,readonly) bool hasFrom;
-@property(assign,readonly) bool hasLikeInfo;
-@property(assign,readonly) bool hasPath;
-@property(assign,retain) CKDPLikeInfo * likeInfo;
-@property(assign,retain) NSString * path;
+@property (nonatomic, retain) CKDPCommentContent *commentContent;
+@property (nonatomic, retain) CKDPIdentifier *commentId;
+@property (nonatomic, retain) CKDPDate *createdAt;
+@property (nonatomic, retain) CKDPIdentifier *from;
+@property (nonatomic, readonly) bool hasCommentContent;
+@property (nonatomic, readonly) bool hasCommentId;
+@property (nonatomic, readonly) bool hasCreatedAt;
+@property (nonatomic, readonly) bool hasFrom;
+@property (nonatomic, readonly) bool hasLikeInfo;
+@property (nonatomic, readonly) bool hasPath;
+@property (nonatomic, retain) CKDPLikeInfo *likeInfo;
+@property (nonatomic, retain) NSString *path;
 
 - (void).cxx_destruct;
 - (id)commentContent;

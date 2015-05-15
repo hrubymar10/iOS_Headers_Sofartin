@@ -20,17 +20,17 @@
     GEOLocation *_userLocation;
 }
 
-@property(assign,readwrite) bool allowRequests;
-@property(assign,readwrite) double debugTimeWindowDuration;
-@property(assign,readwrite) <GEOETAUpdaterDelegate> * delegate;
-@property(assign,retain) GEOComposedWaypoint * destination;
-@property(assign,retain) NSData * directionsResponseID;
-@property(assign,readwrite) double requestInterval;
-@property(assign,retain) GEOComposedRoute * route;
-@property(assign,retain) GEORouteAttributes * routeAttributes;
-@property(assign,retain) GEORouteMatch * routeMatch;
-@property(assign,readwrite) bool shouldUseConditionalRequest;
-@property(assign,retain) GEOLocation * userLocation;
+@property (nonatomic) bool allowRequests;
+@property (nonatomic) double debugTimeWindowDuration;
+@property (nonatomic) <GEOETAUpdaterDelegate> *delegate;
+@property (nonatomic, retain) GEOComposedWaypoint *destination;
+@property (nonatomic, retain) NSData *directionsResponseID;
+@property (nonatomic) double requestInterval;
+@property (nonatomic, retain) GEOComposedRoute *route;
+@property (nonatomic, retain) GEORouteAttributes *routeAttributes;
+@property (nonatomic, retain) GEORouteMatch *routeMatch;
+@property (nonatomic) bool shouldUseConditionalRequest;
+@property (nonatomic, retain) GEOLocation *userLocation;
 
 - (double)_calculateNextTransitionTime;
 - (void)_clearCurrentETARequest;

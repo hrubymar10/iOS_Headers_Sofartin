@@ -35,15 +35,15 @@
     bool _zoomed;
 }
 
-@property(assign,readwrite) <PLSlalomRegionEditorDelegate> * delegate;
-@property(assign,readwrite) double endValue;
-@property(assign,readwrite) double maxValue;
-@property(assign,readwrite) double minValue;
-@property(assign,readwrite) double startValue;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } trackInsets;
-@property(assign,readwrite) double trimHandleWidth;
-@property(getter=isZoomAnimating,setter=setZoomAnimating:,assign,readwrite) bool zoomAnimating;
-@property(assign,readwrite) double zoomDelay;
+@property (nonatomic) <PLSlalomRegionEditorDelegate> *delegate;
+@property (nonatomic) double endValue;
+@property (nonatomic) double maxValue;
+@property (nonatomic) double minValue;
+@property (nonatomic) double startValue;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } trackInsets;
+@property (nonatomic) double trimHandleWidth;
+@property (getter=isZoomAnimating, setter=setZoomAnimating:, nonatomic) bool zoomAnimating;
+@property (nonatomic) double zoomDelay;
 
 - (void)_beginTrackingZoomWithTouch:(id)arg1;
 - (void)_cancelTrackingZoom;

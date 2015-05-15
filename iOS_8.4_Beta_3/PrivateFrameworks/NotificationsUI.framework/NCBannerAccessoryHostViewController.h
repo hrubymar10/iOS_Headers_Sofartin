@@ -6,7 +6,7 @@
     <NCBannerAccessoryHostViewControllerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <NCBannerAccessoryHostViewControllerDelegate> * delegate;
+@property (nonatomic) <NCBannerAccessoryHostViewControllerDelegate> *delegate;
 
 + (id)exportedInterface;
 + (void)requestBannerAccessoryViewControllerWithName:(id)arg1 bundleIdentifier:(id)arg2 context:(id)arg3 completion:(id)arg4;

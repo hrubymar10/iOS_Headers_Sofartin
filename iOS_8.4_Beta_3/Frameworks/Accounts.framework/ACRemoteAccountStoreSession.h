@@ -9,8 +9,8 @@
     NSString *_spoofedBundleID;
 }
 
-@property(assign,readwrite) bool notificationsEnabled;
-@property(assign,copy) NSString * spoofedBundleID;
+@property (nonatomic) bool notificationsEnabled;
+@property (nonatomic, copy) NSString *spoofedBundleID;
 
 - (void).cxx_destruct;
 - (void)_configureRemoteAccountStoreIfNecessary;

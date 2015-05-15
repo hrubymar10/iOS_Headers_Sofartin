@@ -6,7 +6,7 @@
     NSArray *_annotations;
 }
 
-@property(assign,copy) NSArray * annotations;
+@property (nonatomic, copy) NSArray *annotations;
 
 - (id)annotations;
 - (void)dealloc;

@@ -6,7 +6,7 @@
     TSCH3DTexturePool *mPool;
 }
 
-@property(assign,readonly) TSCH3DTexturePool * pool;
+@property (nonatomic, readonly) TSCH3DTexturePool *pool;
 
 + (id)properties;
 

@@ -4,20 +4,20 @@
 
 @interface SSMetricsPageEvent : SSMetricsBaseEvent
 
-@property(getter=isCachedResponse,assign,readwrite) bool cachedResponse;
-@property(assign,retain) NSString * navigationType;
-@property(assign,retain) NSString * pageHistoryDescription;
-@property(assign,readwrite) double pageRenderTime;
-@property(assign,retain) NSString * referringAppName;
-@property(assign,retain) NSString * referringURL;
-@property(assign,readwrite) double requestEndTime;
-@property(assign,readwrite) double requestStartTime;
-@property(assign,readwrite) double responseEndTime;
-@property(assign,readwrite) double responseStartTime;
-@property(assign,retain) NSString * searchTerm;
-@property(assign,retain) NSString * serverApplicationInstance;
-@property(assign,retain) NSString * serverTiming;
-@property(getter=isUbered,assign,readwrite) bool ubered;
+@property (getter=isCachedResponse, nonatomic) bool cachedResponse;
+@property (nonatomic, retain) NSString *navigationType;
+@property (nonatomic, retain) NSString *pageHistoryDescription;
+@property (nonatomic) double pageRenderTime;
+@property (nonatomic, retain) NSString *referringAppName;
+@property (nonatomic, retain) NSString *referringURL;
+@property (nonatomic) double requestEndTime;
+@property (nonatomic) double requestStartTime;
+@property (nonatomic) double responseEndTime;
+@property (nonatomic) double responseStartTime;
+@property (nonatomic, retain) NSString *searchTerm;
+@property (nonatomic, retain) NSString *serverApplicationInstance;
+@property (nonatomic, retain) NSString *serverTiming;
+@property (getter=isUbered, nonatomic) bool ubered;
 
 - (id)description;
 - (id)init;

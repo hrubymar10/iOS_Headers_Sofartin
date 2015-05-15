@@ -6,8 +6,8 @@
     ATPError *_error;
 }
 
-@property(assign,retain) ATPError * error;
-@property(assign,readonly) bool hasError;
+@property (nonatomic, retain) ATPError *error;
+@property (nonatomic, readonly) bool hasError;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

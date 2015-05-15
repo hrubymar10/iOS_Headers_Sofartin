@@ -6,7 +6,7 @@
     NSString *_transactionToken;
 }
 
-@property(assign,copy) NSString * transactionToken;
+@property (nonatomic, copy) NSString *transactionToken;
 
 + (id)_fileManager;
 + (id)_outstandingTransactionPaths;

@@ -8,10 +8,10 @@
     NSString *_sourceVersion;
 }
 
-@property(assign,readonly) bool hasSourceVersion;
-@property(assign,retain) NSString * sourceId;
-@property(assign,retain) NSString * sourceName;
-@property(assign,retain) NSString * sourceVersion;
+@property (nonatomic, readonly) bool hasSourceVersion;
+@property (nonatomic, retain) NSString *sourceId;
+@property (nonatomic, retain) NSString *sourceName;
+@property (nonatomic, retain) NSString *sourceVersion;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

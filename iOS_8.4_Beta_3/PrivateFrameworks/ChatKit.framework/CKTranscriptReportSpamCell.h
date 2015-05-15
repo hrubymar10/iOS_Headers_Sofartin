@@ -6,8 +6,8 @@
     UIButton *_reportSpamButton;
 }
 
-@property(assign,copy) NSAttributedString * attributedButtonText;
-@property(assign,retain) UIButton * reportSpamButton;
+@property (nonatomic, copy) NSAttributedString *attributedButtonText;
+@property (nonatomic, retain) UIButton *reportSpamButton;
 
 + (id)reportSpamButton;
 

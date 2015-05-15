@@ -11,10 +11,10 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) int btState;
-@property(assign,readwrite) bool hasBtState;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) int btState;
+@property (nonatomic) bool hasBtState;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long timestamp;
 
 - (int)btState;
 - (void)copyTo:(id)arg1;

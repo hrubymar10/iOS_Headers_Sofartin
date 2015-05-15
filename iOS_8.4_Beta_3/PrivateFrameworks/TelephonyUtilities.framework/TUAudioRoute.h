@@ -6,14 +6,14 @@
     NSDictionary *_route;
 }
 
-@property(getter=isAirTunes,assign,readonly) bool airTunes;
-@property(getter=isBluetooth,assign,readonly) bool bluetooth;
-@property(assign,readonly) long long bluetoothEndpointType;
-@property(getter=isCarAudio,assign,readonly) bool carAudio;
-@property(getter=isReceiver,assign,readonly) bool receiver;
-@property(assign,retain) NSDictionary * route;
-@property(getter=isSpeaker,assign,readonly) bool speaker;
-@property(getter=isWirelessHeadset,assign,readonly) bool wirelessHeadset;
+@property (getter=isAirTunes, nonatomic, readonly) bool airTunes;
+@property (getter=isBluetooth, nonatomic, readonly) bool bluetooth;
+@property (nonatomic, readonly) long long bluetoothEndpointType;
+@property (getter=isCarAudio, nonatomic, readonly) bool carAudio;
+@property (getter=isReceiver, nonatomic, readonly) bool receiver;
+@property (nonatomic, retain) NSDictionary *route;
+@property (getter=isSpeaker, nonatomic, readonly) bool speaker;
+@property (getter=isWirelessHeadset, nonatomic, readonly) bool wirelessHeadset;
 
 - (bool)_routeNameEqualTo:(id)arg1;
 - (long long)bluetoothEndpointType;

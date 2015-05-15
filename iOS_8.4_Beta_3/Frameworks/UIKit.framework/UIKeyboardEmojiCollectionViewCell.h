@@ -7,8 +7,8 @@
     UILabel *_emojiLabel;
 }
 
-@property(assign,copy) UIKeyboardEmoji * emoji;
-@property(assign,readwrite) long long emojiFontSize;
+@property (nonatomic, copy) UIKeyboardEmoji *emoji;
+@property (nonatomic) long long emojiFontSize;
 
 - (void)dealloc;
 - (id)debugDescription;

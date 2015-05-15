@@ -4,9 +4,9 @@
 
 @interface AVAudioUnitSampler : AVAudioUnitMIDIInstrument
 
-@property(assign,readwrite) float globalTuning;
-@property(assign,readwrite) float masterGain;
-@property(assign,readwrite) float stereoPan;
+@property (nonatomic) float globalTuning;
+@property (nonatomic) float masterGain;
+@property (nonatomic) float stereoPan;
 
 - (float)globalTuning;
 - (id)init;

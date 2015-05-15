@@ -9,7 +9,7 @@
     } _imageOffset;
 }
 
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } imageOffset;
+@property (nonatomic) struct UIOffset { double x1; double x2; } imageOffset;
 
 + (id)_textLabelFont;
 + (double)defaultHeightForTraitCollection:(id)arg1;

@@ -8,7 +8,7 @@
     float _exposure;
 }
 
-@property(assign,readwrite) float exposure;
+@property (nonatomic) float exposure;
 
 + (id)layerWithExposure:(float)arg1;
 

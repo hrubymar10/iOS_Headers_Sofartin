@@ -15,12 +15,12 @@
     UIImage *_modeIcon;
 }
 
-@property(assign,copy) id buttonAction;
-@property(assign,readwrite) long long buttonType;
-@property(assign,copy) NSString * currentDisplayValue;
-@property(assign,readwrite) bool isSubMode;
-@property(assign,copy) NSString * localizedModeName;
-@property(assign,retain) UIImage * modeIcon;
+@property (nonatomic, copy) id buttonAction;
+@property (nonatomic) long long buttonType;
+@property (nonatomic, copy) NSString *currentDisplayValue;
+@property (nonatomic) bool isSubMode;
+@property (nonatomic, copy) NSString *localizedModeName;
+@property (nonatomic, retain) UIImage *modeIcon;
 
 + (void)configureModePickerCellLabel:(id)arg1;
 

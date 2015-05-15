@@ -8,9 +8,9 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSOrderedSet * candidates;
-@property(assign,retain) NSArray * nonExtensionCandidates;
-@property(assign,copy) NSString * title;
+@property (copy) NSOrderedSet *candidates;
+@property (retain) NSArray *nonExtensionCandidates;
+@property (copy) NSString *title;
 
 + (bool)supportsSecureCoding;
 

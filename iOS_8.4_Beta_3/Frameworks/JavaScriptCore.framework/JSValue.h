@@ -7,7 +7,7 @@
     struct OpaqueJSValue { } *m_value;
 }
 
-@property(assign,readonly) JSContext * context;
+@property (readonly) JSContext *context;
 
 + (SEL)selectorForStructToValue:(const char *)arg1;
 + (SEL)selectorForValueToStruct:(const char *)arg1;

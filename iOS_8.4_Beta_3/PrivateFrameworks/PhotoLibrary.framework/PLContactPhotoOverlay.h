@@ -7,9 +7,9 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readonly) UIImageView * _avatarPreview;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } overlayEdgeInsets;
-@property(assign,readonly) UILabel * titleLabel;
+@property (nonatomic, readonly) UIImageView *_avatarPreview;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } overlayEdgeInsets;
+@property (nonatomic, readonly) UILabel *titleLabel;
 
 - (id)_avatarPreview;
 - (void)_commonPLContactPhotoOverlayInitialization;

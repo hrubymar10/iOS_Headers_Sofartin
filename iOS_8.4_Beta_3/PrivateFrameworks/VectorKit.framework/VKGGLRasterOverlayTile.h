@@ -39,8 +39,8 @@
     unsigned long long _size;
 }
 
-@property(assign,readonly) struct shared_ptr<ggl::Texture2D> { struct Texture2D {} *x1; struct __shared_weak_count {} *x2; } gglTexture;
-@property(assign,readonly) struct RenderItem { int (**x1)(); char *x2; struct RenderState {} *x3; struct ShaderSetup {} *x4; unsigned int x5; unsigned int x6; float x7; struct Mesh {} *x8; struct Range { unsigned long long x_9_1_1; unsigned long long x_9_1_2; } x9; struct Range {} *x10; unsigned long long x11; }* renderItem;
+@property (nonatomic, readonly) struct shared_ptr<ggl::Texture2D> { struct Texture2D {} *x1; struct __shared_weak_count {} *x2; } gglTexture;
+@property (nonatomic, readonly) struct RenderItem { int (**x1)(); char *x2; struct RenderState {} *x3; struct ShaderSetup {} *x4; unsigned int x5; unsigned int x6; float x7; struct Mesh {} *x8; struct Range { unsigned long long x_9_1_1; unsigned long long x_9_1_2; } x9; struct Range {} *x10; unsigned long long x11; }*renderItem;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

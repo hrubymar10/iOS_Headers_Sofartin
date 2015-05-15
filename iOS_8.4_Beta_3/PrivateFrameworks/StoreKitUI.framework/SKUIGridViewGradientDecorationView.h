@@ -7,7 +7,7 @@
     IKColor *_kolor;
 }
 
-@property(assign,readonly) UIView * backgroundView;
+@property (nonatomic, readonly) UIView *backgroundView;
 
 - (void).cxx_destruct;
 - (void)_createGradient:(id)arg1 withGradientType:(long long)arg2;

@@ -6,7 +6,7 @@
     _UIRemoteViewController *_remoteViewController;
 }
 
-@property(assign,readwrite) _UIRemoteViewController * remoteViewController;
+@property (nonatomic) _UIRemoteViewController *remoteViewController;
 
 + (bool)_requiresWindowTouches;
 

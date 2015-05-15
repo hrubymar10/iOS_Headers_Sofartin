@@ -12,12 +12,12 @@
     int _source;
 }
 
-@property(assign,retain) NSString * appIdentifier;
-@property(assign,readonly) bool hasAppIdentifier;
-@property(assign,readwrite) bool hasPurpose;
-@property(assign,readwrite) bool hasSource;
-@property(assign,readwrite) int purpose;
-@property(assign,readwrite) int source;
+@property (nonatomic, retain) NSString *appIdentifier;
+@property (nonatomic, readonly) bool hasAppIdentifier;
+@property (nonatomic) bool hasPurpose;
+@property (nonatomic) bool hasSource;
+@property (nonatomic) int purpose;
+@property (nonatomic) int source;
 
 - (id)appIdentifier;
 - (void)copyTo:(id)arg1;

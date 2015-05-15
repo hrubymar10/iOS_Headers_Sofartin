@@ -7,9 +7,9 @@
     GEOURLOptions *_options;
 }
 
-@property(assign,readonly) bool hasOptions;
-@property(assign,retain) NSMutableArray * items;
-@property(assign,retain) GEOURLOptions * options;
+@property (nonatomic, readonly) bool hasOptions;
+@property (nonatomic, retain) NSMutableArray *items;
+@property (nonatomic, retain) GEOURLOptions *options;
 
 - (void)addItem:(id)arg1;
 - (void)clearItems;

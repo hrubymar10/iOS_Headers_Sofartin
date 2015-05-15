@@ -4,8 +4,8 @@
 
 @interface CALayerHost : CALayer
 
-@property(assign,readwrite) unsigned int contextId;
-@property(assign,readwrite) bool inheritsSecurity;
+@property unsigned int contextId;
+@property bool inheritsSecurity;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (bool)_hasRenderLayerSubclass;

@@ -8,8 +8,8 @@
     NSString *_label;
 }
 
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,copy) NSString * label;
+@property (nonatomic, readonly) <MTLDevice> *device;
+@property (copy) NSString *label;
 
 - (id)commandBuffer;
 - (void)dealloc;

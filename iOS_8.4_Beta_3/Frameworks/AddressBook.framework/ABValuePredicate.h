@@ -10,9 +10,9 @@
     <NSObject> *_value;
 }
 
-@property(assign,readwrite) long long comparison;
-@property(assign,readwrite) int property;
-@property(assign,copy) NSObject * value;
+@property (nonatomic) long long comparison;
+@property (nonatomic) int property;
+@property (nonatomic, copy) NSObject *value;
 
 + (id)stringForComparison:(id)arg1 withComparision:(long long)arg2;
 

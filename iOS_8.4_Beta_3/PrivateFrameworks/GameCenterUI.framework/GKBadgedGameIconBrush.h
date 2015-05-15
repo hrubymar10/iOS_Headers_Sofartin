@@ -6,7 +6,7 @@
     GKThemeBrush *_badgeBrush;
 }
 
-@property(assign,retain) GKThemeBrush * badgeBrush;
+@property (nonatomic, retain) GKThemeBrush *badgeBrush;
 
 - (id)badgeBrush;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

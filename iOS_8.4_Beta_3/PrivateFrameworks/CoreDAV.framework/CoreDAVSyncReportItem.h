@@ -6,7 +6,7 @@
     NSString *_syncToken;
 }
 
-@property(assign,readonly) NSString * syncToken;
+@property (nonatomic, readonly) NSString *syncToken;
 
 + (id)copyParseRules;
 

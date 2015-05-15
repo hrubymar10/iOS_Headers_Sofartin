@@ -11,8 +11,8 @@
     unsigned int _showsDoneButton;
 }
 
-@property(assign,readwrite) <CertInfoTrustSummaryControllerDelegate> * delegate;
-@property(assign,readwrite) bool showsDoneButton;
+@property (nonatomic) <CertInfoTrustSummaryControllerDelegate> *delegate;
+@property (nonatomic) bool showsDoneButton;
 
 - (void).cxx_destruct;
 - (void)_actionButtonPressed:(id)arg1;

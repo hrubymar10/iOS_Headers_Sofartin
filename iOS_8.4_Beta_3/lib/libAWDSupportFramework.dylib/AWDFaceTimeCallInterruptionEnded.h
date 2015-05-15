@@ -22,22 +22,22 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,retain) NSString * guid;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasInterruptionDuration;
-@property(assign,readwrite) bool hasIsAudioResumed;
-@property(assign,readwrite) bool hasIsVideo;
-@property(assign,readwrite) bool hasIsVideoResumed;
-@property(assign,readwrite) bool hasLinkQuality;
-@property(assign,readwrite) bool hasOnLockScreen;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int interruptionDuration;
-@property(assign,readwrite) unsigned int isAudioResumed;
-@property(assign,readwrite) unsigned int isVideo;
-@property(assign,readwrite) unsigned int isVideoResumed;
-@property(assign,readwrite) int linkQuality;
-@property(assign,readwrite) unsigned int onLockScreen;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasInterruptionDuration;
+@property (nonatomic) bool hasIsAudioResumed;
+@property (nonatomic) bool hasIsVideo;
+@property (nonatomic) bool hasIsVideoResumed;
+@property (nonatomic) bool hasLinkQuality;
+@property (nonatomic) bool hasOnLockScreen;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int interruptionDuration;
+@property (nonatomic) unsigned int isAudioResumed;
+@property (nonatomic) unsigned int isVideo;
+@property (nonatomic) unsigned int isVideoResumed;
+@property (nonatomic) int linkQuality;
+@property (nonatomic) unsigned int onLockScreen;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

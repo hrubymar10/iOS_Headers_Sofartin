@@ -9,10 +9,10 @@
     NSString *_guid;
 }
 
-@property(assign,readonly) unsigned char attachmentContiguousType;
-@property(getter=isContiguous,assign,readonly) bool contiguous;
-@property(assign,readonly) unsigned char contiguousType;
-@property(assign,copy) NSString * guid;
+@property (nonatomic, readonly) unsigned char attachmentContiguousType;
+@property (getter=isContiguous, nonatomic, readonly) bool contiguous;
+@property (nonatomic, readonly) unsigned char contiguousType;
+@property (nonatomic, copy) NSString *guid;
 
 - (Class)__ck_chatItemClass;
 - (bool)_isContiguousLoaded;

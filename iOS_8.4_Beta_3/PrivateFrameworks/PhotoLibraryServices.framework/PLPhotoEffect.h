@@ -8,10 +8,10 @@
     NSString *_filterIdentifier;
 }
 
-@property(assign,copy) NSString * CIFilterName;
-@property(assign,copy) NSString * displayName;
-@property(assign,copy) NSString * filterIdentifier;
-@property(assign,readonly) long long latestVersion;
+@property (nonatomic, readonly, copy) NSString *CIFilterName;
+@property (nonatomic, readonly, copy) NSString *displayName;
+@property (nonatomic, readonly, copy) NSString *filterIdentifier;
+@property (nonatomic, readonly) long long latestVersion;
 
 + (id)_effectWithIdentifier:(id)arg1 CIFilterName:(id)arg2 displayName:(id)arg3;
 + (id)allEffects;

@@ -12,7 +12,7 @@
     bool _usesWifi;
 }
 
-@property(assign,readonly) double secondsToRun;
+@property (nonatomic, readonly) double secondsToRun;
 
 - (void)_doPingWithSocket:(int)arg1 address:(struct sockaddr_in { unsigned char x1; unsigned char x2; unsigned short x3; struct in_addr { unsigned int x_4_1_1; } x4; BOOL x5[8]; })arg2 timeToRunTestInSeconds:(double)arg3 pingTimeout:(double)arg4 queue:(id)arg5 completionHandler:(id)arg6;
 - (int)_setupAndPerformPing:(double)arg1 queue:(id)arg2 completionHandler:(id)arg3;

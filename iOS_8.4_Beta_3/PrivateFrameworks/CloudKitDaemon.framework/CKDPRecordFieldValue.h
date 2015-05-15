@@ -21,27 +21,27 @@
     int _type;
 }
 
-@property(assign,retain) CKDPAsset * assetValue;
-@property(assign,retain) NSData * bytesValue;
-@property(assign,retain) CKDPDate * dateValue;
-@property(assign,readwrite) double doubleValue;
-@property(assign,readonly) bool hasAssetValue;
-@property(assign,readonly) bool hasBytesValue;
-@property(assign,readonly) bool hasDateValue;
-@property(assign,readwrite) bool hasDoubleValue;
-@property(assign,readonly) bool hasLocationValue;
-@property(assign,readonly) bool hasPackageValue;
-@property(assign,readonly) bool hasReferenceValue;
-@property(assign,readwrite) bool hasSignedValue;
-@property(assign,readonly) bool hasStringValue;
-@property(assign,readwrite) bool hasType;
-@property(assign,retain) NSMutableArray * listValues;
-@property(assign,retain) CKDPLocationCoordinate * locationValue;
-@property(assign,retain) CKDPPackage * packageValue;
-@property(assign,retain) CKDPRecordReference * referenceValue;
-@property(assign,readwrite) long long signedValue;
-@property(assign,retain) NSString * stringValue;
-@property(assign,readwrite) int type;
+@property (nonatomic, retain) CKDPAsset *assetValue;
+@property (nonatomic, retain) NSData *bytesValue;
+@property (nonatomic, retain) CKDPDate *dateValue;
+@property (nonatomic) double doubleValue;
+@property (nonatomic, readonly) bool hasAssetValue;
+@property (nonatomic, readonly) bool hasBytesValue;
+@property (nonatomic, readonly) bool hasDateValue;
+@property (nonatomic) bool hasDoubleValue;
+@property (nonatomic, readonly) bool hasLocationValue;
+@property (nonatomic, readonly) bool hasPackageValue;
+@property (nonatomic, readonly) bool hasReferenceValue;
+@property (nonatomic) bool hasSignedValue;
+@property (nonatomic, readonly) bool hasStringValue;
+@property (nonatomic) bool hasType;
+@property (nonatomic, retain) NSMutableArray *listValues;
+@property (nonatomic, retain) CKDPLocationCoordinate *locationValue;
+@property (nonatomic, retain) CKDPPackage *packageValue;
+@property (nonatomic, retain) CKDPRecordReference *referenceValue;
+@property (nonatomic) long long signedValue;
+@property (nonatomic, retain) NSString *stringValue;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (id)_descriptionForType:(int)arg1;

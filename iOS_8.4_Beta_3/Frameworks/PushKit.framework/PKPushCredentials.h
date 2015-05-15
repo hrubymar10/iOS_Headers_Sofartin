@@ -7,8 +7,8 @@
     NSString *_type;
 }
 
-@property(assign,copy) NSData * token;
-@property(assign,copy) NSString * type;
+@property (copy) NSData *token;
+@property (copy) NSString *type;
 
 - (void).cxx_destruct;
 - (void)setToken:(id)arg1;

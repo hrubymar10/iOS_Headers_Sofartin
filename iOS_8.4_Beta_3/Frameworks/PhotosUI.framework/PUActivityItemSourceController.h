@@ -12,12 +12,12 @@
     int _taskId;
 }
 
-@property(setter=_setActiveItemSources:,assign,retain) NSArray * _activeItemSources;
-@property(setter=_setError:,assign,retain) NSError * _error;
-@property(assign,readwrite) PUActivityViewController * activityViewController;
-@property(assign,copy) NSOrderedSet * assetItemSources;
-@property(assign,copy) NSOrderedSet * assets;
-@property(assign,copy) id progressHandler;
+@property (setter=_setActiveItemSources:, retain) NSArray *_activeItemSources;
+@property (setter=_setError:, retain) NSError *_error;
+@property (nonatomic) PUActivityViewController *activityViewController;
+@property (nonatomic, readonly, copy) NSOrderedSet *assetItemSources;
+@property (nonatomic, copy) NSOrderedSet *assets;
+@property (nonatomic, copy) id progressHandler;
 
 - (void).cxx_destruct;
 - (id)_activeItemSources;

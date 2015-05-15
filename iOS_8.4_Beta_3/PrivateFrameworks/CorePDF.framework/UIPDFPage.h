@@ -14,13 +14,13 @@
     NSString *_stringInReadingOrder;
 }
 
-@property(assign,readonly) struct CGPDFPage { }* CGPage;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cropBox;
-@property(assign,readonly) UIPDFDocument * document;
-@property(assign,retain) UIImage * pageImage;
-@property(assign,readonly) unsigned long long pageIndex;
-@property(assign,readonly) unsigned long long pageNumber;
-@property(assign,retain) UIPDFSelection * selection;
+@property (readonly) struct CGPDFPage { }*CGPage;
+@property (readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cropBox;
+@property (readonly) UIPDFDocument *document;
+@property (retain) UIImage *pageImage;
+@property (readonly) unsigned long long pageIndex;
+@property (readonly) unsigned long long pageNumber;
+@property (retain) UIPDFSelection *selection;
 
 - (struct CGPDFPage { }*)CGPage;
 - (void)addAnnotation:(id)arg1;

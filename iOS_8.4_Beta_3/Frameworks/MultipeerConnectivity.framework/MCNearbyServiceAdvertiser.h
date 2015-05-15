@@ -18,23 +18,23 @@
     bool _wasAdvertising;
 }
 
-@property(assign,retain) NSData * TXTRecordData;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MCNearbyServiceAdvertiserDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSDictionary * discoveryInfo;
-@property(assign,copy) NSString * formattedServiceType;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableDictionary * invites;
-@property(assign,readwrite) bool isAdvertising;
-@property(assign,readonly) MCPeerID * myPeerID;
-@property(assign,retain) NSNetService * networkServer;
-@property(assign,readwrite) long long outgoingInviteID;
-@property(assign,retain) NSMutableDictionary * peers;
-@property(assign,copy) NSString * serviceType;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSObject<OS_dispatch_queue> * syncQueue;
-@property(assign,readwrite) bool wasAdvertising;
+@property (nonatomic, retain) NSData *TXTRecordData;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MCNearbyServiceAdvertiserDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSDictionary *discoveryInfo;
+@property (nonatomic, copy) NSString *formattedServiceType;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableDictionary *invites;
+@property (nonatomic) bool isAdvertising;
+@property (nonatomic, readonly) MCPeerID *myPeerID;
+@property (nonatomic, retain) NSNetService *networkServer;
+@property (nonatomic) long long outgoingInviteID;
+@property (nonatomic, retain) NSMutableDictionary *peers;
+@property (nonatomic, copy) NSString *serviceType;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *syncQueue;
+@property (nonatomic) bool wasAdvertising;
 
 - (id)TXTRecordData;
 - (void)applicationDidEnterBackgroundNotification:(id)arg1;

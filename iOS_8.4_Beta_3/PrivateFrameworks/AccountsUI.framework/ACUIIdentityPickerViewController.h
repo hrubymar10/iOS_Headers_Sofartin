@@ -10,7 +10,7 @@
     NSString *_property;
 }
 
-@property(assign,readonly) NSString * property;
+@property (nonatomic, readonly) NSString *property;
 
 - (void).cxx_destruct;
 - (bool)_allowIdentitySelection;

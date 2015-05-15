@@ -7,9 +7,9 @@
     NSData *_voicemailRecording;
 }
 
-@property(assign,readonly) bool hasVoicemailRecording;
-@property(assign,readwrite) long long voicemailNumber;
-@property(assign,retain) NSData * voicemailRecording;
+@property (nonatomic, readonly) bool hasVoicemailRecording;
+@property (nonatomic) long long voicemailNumber;
+@property (nonatomic, retain) NSData *voicemailRecording;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

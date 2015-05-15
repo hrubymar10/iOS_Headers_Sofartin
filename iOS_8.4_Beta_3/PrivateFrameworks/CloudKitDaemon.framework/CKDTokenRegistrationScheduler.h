@@ -10,15 +10,15 @@
     NSObject<OS_dispatch_source> *_scheduleTimer;
 }
 
-@property(assign,retain) NSMutableDictionary * callbackBlocks;
-@property(assign,retain) NSMutableDictionary * callbackTimers;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSMutableSet * requests;
-@property(assign,retain) NSObject<OS_dispatch_source> * scheduleTimer;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSMutableDictionary *callbackBlocks;
+@property (nonatomic, retain) NSMutableDictionary *callbackTimers;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSMutableSet *requests;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *scheduleTimer;
+@property (readonly) Class superclass;
 
 + (id)sharedScheduler;
 

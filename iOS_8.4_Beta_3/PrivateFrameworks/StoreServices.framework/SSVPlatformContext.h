@@ -10,12 +10,12 @@
     NSString *_unpersonalizedLookupURLString;
 }
 
-@property(assign,retain) <SSVSAPContext> * SAPContext;
-@property(assign,readonly) NSDictionary * bagDictionary;
-@property(assign,readonly) NSString * lookupURLString;
-@property(assign,readonly) NSArray * signedHeaders;
-@property(assign,readonly) NSArray * signedQueryParameters;
-@property(assign,readonly) NSString * unpersonalizedLookupURLString;
+@property (nonatomic, retain) <SSVSAPContext> *SAPContext;
+@property (nonatomic, readonly) NSDictionary *bagDictionary;
+@property (nonatomic, readonly) NSString *lookupURLString;
+@property (nonatomic, readonly) NSArray *signedHeaders;
+@property (nonatomic, readonly) NSArray *signedQueryParameters;
+@property (nonatomic, readonly) NSString *unpersonalizedLookupURLString;
 
 - (void).cxx_destruct;
 - (id)SAPContext;

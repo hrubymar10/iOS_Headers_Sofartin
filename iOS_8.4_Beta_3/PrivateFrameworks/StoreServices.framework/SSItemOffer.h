@@ -9,23 +9,23 @@
     NSArray *_supportedDevices;
 }
 
-@property(getter=_offerItem,setter=_setOfferItem:,assign,readwrite) SSItem * _offerItem;
-@property(assign,readonly) NSSet * accountIdentifiers;
-@property(assign,readonly) NSString * actionDisplayName;
-@property(assign,readonly) NSString * actionType;
-@property(assign,readonly) NSString * buyParameters;
-@property(assign,readonly) SSDialog * confirmationDialog;
-@property(assign,readonly) long long estimatedDiskSpaceNeeded;
-@property(assign,readonly) SSNetworkConstraints * networkConstraints;
-@property(assign,readonly) NSString * offerIdentifier;
-@property(assign,readonly) SSItemMedia * offerMedia;
-@property(getter=isOneTapOffer,assign,readonly) bool oneTapOffer;
-@property(getter=isPreorder,assign,readonly) bool preorder;
-@property(assign,readonly) NSString * priceDisplay;
-@property(assign,readonly) id requiredSoftwareCapabilities;
-@property(assign,readonly) bool shouldShowPlusIcon;
-@property(assign,readonly) SSDialog * successDialog;
-@property(assign,readonly) NSArray * supportedDevices;
+@property (getter=_offerItem, setter=_setOfferItem:, nonatomic) SSItem *_offerItem;
+@property (nonatomic, readonly) NSSet *accountIdentifiers;
+@property (nonatomic, readonly) NSString *actionDisplayName;
+@property (nonatomic, readonly) NSString *actionType;
+@property (nonatomic, readonly) NSString *buyParameters;
+@property (nonatomic, readonly) SSDialog *confirmationDialog;
+@property (nonatomic, readonly) long long estimatedDiskSpaceNeeded;
+@property (nonatomic, readonly) SSNetworkConstraints *networkConstraints;
+@property (nonatomic, readonly) NSString *offerIdentifier;
+@property (nonatomic, readonly) SSItemMedia *offerMedia;
+@property (getter=isOneTapOffer, nonatomic, readonly) bool oneTapOffer;
+@property (getter=isPreorder, nonatomic, readonly) bool preorder;
+@property (nonatomic, readonly) NSString *priceDisplay;
+@property (nonatomic, readonly) id requiredSoftwareCapabilities;
+@property (nonatomic, readonly) bool shouldShowPlusIcon;
+@property (nonatomic, readonly) SSDialog *successDialog;
+@property (nonatomic, readonly) NSArray *supportedDevices;
 
 + (id)_preferredOfferIdentifiers;
 

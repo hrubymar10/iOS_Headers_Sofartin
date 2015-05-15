@@ -32,18 +32,18 @@
     NSArray *_servicesToDeny;
 }
 
-@property(setter=_setAutoReconnect:,assign,readwrite) bool _autoReconnect;
-@property(setter=_setBlocksConnectionAtResume:,assign,readwrite) bool _blocksConnectionAtResume;
-@property(setter=__setCapabilities:,assign,readwrite) unsigned int _capabilities;
-@property(setter=_setListenerID:,assign,retain) NSString * _listenerID;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * _remoteMessageQueue;
-@property(setter=_setServicesToAllow:,assign,retain) NSArray * _servicesToAllow;
-@property(setter=_setServicesToDeny:,assign,retain) NSArray * _servicesToDeny;
-@property(assign,readonly) unsigned int capabilities;
-@property(assign,readwrite) id delegate;
-@property(assign,readonly) bool isConnected;
-@property(assign,readonly) bool isConnecting;
-@property(assign,readonly) IMDaemonListener * listener;
+@property (setter=_setAutoReconnect:) bool _autoReconnect;
+@property (setter=_setBlocksConnectionAtResume:, nonatomic) bool _blocksConnectionAtResume;
+@property (setter=__setCapabilities:) unsigned int _capabilities;
+@property (setter=_setListenerID:, nonatomic, retain) NSString *_listenerID;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *_remoteMessageQueue;
+@property (setter=_setServicesToAllow:, retain) NSArray *_servicesToAllow;
+@property (setter=_setServicesToDeny:, retain) NSArray *_servicesToDeny;
+@property (nonatomic, readonly) unsigned int capabilities;
+@property (nonatomic) id delegate;
+@property (nonatomic, readonly) bool isConnected;
+@property (nonatomic, readonly) bool isConnecting;
+@property (nonatomic, readonly) IMDaemonListener *listener;
 
 + (bool)_applicationWillTerminate;
 + (void)_blockUntilSendQueueIsEmpty;

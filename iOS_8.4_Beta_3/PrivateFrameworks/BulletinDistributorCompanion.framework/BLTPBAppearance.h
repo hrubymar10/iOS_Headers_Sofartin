@@ -11,12 +11,12 @@
     NSString *_title;
 }
 
-@property(assign,readwrite) bool destructive;
-@property(assign,readwrite) bool hasDestructive;
-@property(assign,readonly) bool hasImage;
-@property(assign,readonly) bool hasTitle;
-@property(assign,retain) BLTPBImage * image;
-@property(assign,retain) NSString * title;
+@property (nonatomic) bool destructive;
+@property (nonatomic) bool hasDestructive;
+@property (nonatomic, readonly) bool hasImage;
+@property (nonatomic, readonly) bool hasTitle;
+@property (nonatomic, retain) BLTPBImage *image;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

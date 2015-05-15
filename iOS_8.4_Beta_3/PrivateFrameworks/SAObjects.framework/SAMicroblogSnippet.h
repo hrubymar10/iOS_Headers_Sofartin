@@ -4,7 +4,7 @@
 
 @interface SAMicroblogSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * microblogs;
+@property (nonatomic, copy) NSArray *microblogs;
 
 + (id)snippet;
 + (id)snippetWithDictionary:(id)arg1 context:(id)arg2;

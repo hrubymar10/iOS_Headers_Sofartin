@@ -51,18 +51,18 @@
     double mViewScale;
 }
 
-@property(assign,readonly) CALayer * baseLayer;
-@property(getter=isBaseLayerVisible,assign,readonly) bool baseLayerVisible;
-@property(assign,readonly) TSDCapabilities * capabilities;
-@property(assign,readwrite) struct CGColorSpace { }* colorSpace;
-@property(assign,readonly) double fieldOfViewInRadians;
-@property(assign,readwrite) double pixelAspectRatio;
-@property(assign,readonly) KNAnimationRegistryWithFallbacks * registry;
-@property(assign,readonly) double showScale;
-@property(assign,readonly) struct CATransform3D { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; double x10; double x11; double x12; double x13; double x14; double x15; double x16; } slideProjectionMatrix;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } slideRect;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } unscaledSlideRect;
-@property(assign,readonly) double viewScale;
+@property (nonatomic, readonly) CALayer *baseLayer;
+@property (getter=isBaseLayerVisible, nonatomic, readonly) bool baseLayerVisible;
+@property (nonatomic, readonly) TSDCapabilities *capabilities;
+@property (nonatomic) struct CGColorSpace { }*colorSpace;
+@property (nonatomic, readonly) double fieldOfViewInRadians;
+@property (nonatomic) double pixelAspectRatio;
+@property (nonatomic, readonly) KNAnimationRegistryWithFallbacks *registry;
+@property (nonatomic, readonly) double showScale;
+@property (nonatomic, readonly) struct CATransform3D { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; double x10; double x11; double x12; double x13; double x14; double x15; double x16; } slideProjectionMatrix;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } slideRect;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } unscaledSlideRect;
+@property (nonatomic, readonly) double viewScale;
 
 - (id)baseLayer;
 - (id)capabilities;

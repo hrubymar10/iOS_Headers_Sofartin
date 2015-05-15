@@ -17,19 +17,19 @@
     int _wheelOrientation;
 }
 
-@property(setter=_setNeedsDataReload:,assign,readwrite) bool _needsDataReload;
-@property(setter=_setPanPreviousPoint:,assign,readwrite) struct CGPoint { double x1; double x2; } _panPreviousPoint;
-@property(setter=_setSnappingController:,assign,retain) PUSnappingController * _snappingController;
-@property(setter=_setTiltWheel:,assign,retain) PUTiltWheel * _tiltWheel;
-@property(setter=_setTriangleView:,assign,retain) PUTiltWheelTriangleView * _triangleView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double maxTiltAngle;
-@property(assign,readwrite) double minTiltAngle;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double tiltAngle;
-@property(assign,readwrite) int wheelOrientation;
+@property (setter=_setNeedsDataReload:, nonatomic) bool _needsDataReload;
+@property (setter=_setPanPreviousPoint:, nonatomic) struct CGPoint { double x1; double x2; } _panPreviousPoint;
+@property (setter=_setSnappingController:, nonatomic, retain) PUSnappingController *_snappingController;
+@property (setter=_setTiltWheel:, nonatomic, retain) PUTiltWheel *_tiltWheel;
+@property (setter=_setTriangleView:, nonatomic, retain) PUTiltWheelTriangleView *_triangleView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double maxTiltAngle;
+@property (nonatomic) double minTiltAngle;
+@property (readonly) Class superclass;
+@property (nonatomic) double tiltAngle;
+@property (nonatomic) int wheelOrientation;
 
 - (void).cxx_destruct;
 - (double)_angleBetweenPoint:(struct CGPoint { double x1; double x2; })arg1 andPoint:(struct CGPoint { double x1; double x2; })arg2 measuredFrom:(struct CGPoint { double x1; double x2; })arg3;

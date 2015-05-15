@@ -9,11 +9,11 @@
     NSDictionary *_secureElementCardStateByAID;
 }
 
-@property(assign,readwrite) unsigned long long backoffLevel;
-@property(assign,retain) NSDictionary * cleanupActionsByAID;
-@property(assign,readonly) NSDictionary * dictionary;
-@property(assign,retain) NSDictionary * passStateByAID;
-@property(assign,retain) NSDictionary * secureElementCardStateByAID;
+@property (nonatomic) unsigned long long backoffLevel;
+@property (nonatomic, retain) NSDictionary *cleanupActionsByAID;
+@property (nonatomic, readonly) NSDictionary *dictionary;
+@property (nonatomic, retain) NSDictionary *passStateByAID;
+@property (nonatomic, retain) NSDictionary *secureElementCardStateByAID;
 
 + (id)consistencyDataWithPaymentApplications:(id)arg1 secureElementCards:(id)arg2 cleanupActions:(id)arg3;
 

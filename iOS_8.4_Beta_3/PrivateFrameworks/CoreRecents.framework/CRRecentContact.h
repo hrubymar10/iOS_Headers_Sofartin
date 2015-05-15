@@ -21,26 +21,26 @@
     NSNumber *_weight;
 }
 
-@property(assign,copy) NSString * address;
-@property(assign,readwrite) long long contactID;
-@property(assign,readonly) unsigned long long countOfRecents;
-@property(assign,retain) NSNumber * decayedWeight;
-@property(assign,copy) NSString * displayName;
-@property(getter=isGroup,assign,readonly) bool group;
-@property(assign,readwrite) unsigned long long groupKind;
-@property(assign,copy) NSString * groupName;
-@property(assign,copy) NSString * kind;
-@property(assign,copy) NSString * lastSendingAddress;
-@property(assign,copy) NSDate * leastRecentDate;
-@property(assign,copy) NSArray * members;
-@property(assign,copy) NSDictionary * metadata;
-@property(assign,copy) NSDate * mostRecentDate;
-@property(assign,copy) NSString * originalSource;
-@property(assign,copy) NSString * rawAddress;
-@property(assign,copy) NSArray * recentDates;
-@property(assign,readwrite) long long recentID;
-@property(assign,copy) NSString * recentsDomain;
-@property(assign,retain) NSNumber * weight;
+@property (nonatomic, copy) NSString *address;
+@property (nonatomic) long long contactID;
+@property (nonatomic, readonly) unsigned long long countOfRecents;
+@property (nonatomic, retain) NSNumber *decayedWeight;
+@property (nonatomic, copy) NSString *displayName;
+@property (getter=isGroup, nonatomic, readonly) bool group;
+@property (nonatomic) unsigned long long groupKind;
+@property (nonatomic, copy) NSString *groupName;
+@property (nonatomic, copy) NSString *kind;
+@property (nonatomic, copy) NSString *lastSendingAddress;
+@property (nonatomic, readonly, copy) NSDate *leastRecentDate;
+@property (nonatomic, copy) NSArray *members;
+@property (nonatomic, copy) NSDictionary *metadata;
+@property (nonatomic, readonly, copy) NSDate *mostRecentDate;
+@property (nonatomic, copy) NSString *originalSource;
+@property (nonatomic, copy) NSString *rawAddress;
+@property (nonatomic, copy) NSArray *recentDates;
+@property (nonatomic) long long recentID;
+@property (nonatomic, copy) NSString *recentsDomain;
+@property (nonatomic, retain) NSNumber *weight;
 
 + (bool)supportsSecureCoding;
 

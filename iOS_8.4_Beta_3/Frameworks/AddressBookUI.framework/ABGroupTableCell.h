@@ -7,12 +7,12 @@
     ABStyleProvider *_styleProvider;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) ABGroupWrapper * groupWrapper;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) ABStyleProvider * styleProvider;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) ABGroupWrapper *groupWrapper;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) ABStyleProvider *styleProvider;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (id)groupWrapper;

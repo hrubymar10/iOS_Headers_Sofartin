@@ -16,19 +16,19 @@
     ABPersonTableTinyActionCell *_tinyActionCell;
 }
 
-@property(assign,readwrite) <ABFMFActionButtonsDelegate> * FMFActionButtonsDelegate;
-@property(assign,readonly) ABPersonTableActionDataSource * actionDataSource;
-@property(assign,readwrite) bool actionShouldPickHighlightedValue;
-@property(assign,readwrite) ABPersonTableViewDataSource * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int highlightedValueIdentifier;
-@property(assign,retain) ABUIPerson * highlightedValuePerson;
-@property(assign,readwrite) int highlightedValueProperty;
-@property(assign,retain) ABStyleProvider * styleProvider;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) ABPersonTableTinyActionCell * tinyActionCell;
+@property (nonatomic) <ABFMFActionButtonsDelegate> *FMFActionButtonsDelegate;
+@property (nonatomic, readonly) ABPersonTableActionDataSource *actionDataSource;
+@property (nonatomic) bool actionShouldPickHighlightedValue;
+@property (nonatomic) ABPersonTableViewDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int highlightedValueIdentifier;
+@property (nonatomic, retain) ABUIPerson *highlightedValuePerson;
+@property (nonatomic) int highlightedValueProperty;
+@property (nonatomic, retain) ABStyleProvider *styleProvider;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) ABPersonTableTinyActionCell *tinyActionCell;
 
 - (id)FMFActionButtonsDelegate;
 - (unsigned long long)_sectionForAction:(id)arg1;

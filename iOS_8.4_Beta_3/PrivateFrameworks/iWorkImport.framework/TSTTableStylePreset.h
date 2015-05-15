@@ -7,13 +7,13 @@
     unsigned long long _tempUpgradePresetID;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long presetID;
-@property(assign,readonly) NSString * presetKind;
-@property(assign,copy) TSTTableStyleNetwork * styleNetwork;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long presetID;
+@property (nonatomic, readonly) NSString *presetKind;
+@property (nonatomic, copy) TSTTableStyleNetwork *styleNetwork;
+@property (readonly) Class superclass;
 
 + (bool)needsObjectUUID;
 

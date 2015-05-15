@@ -6,8 +6,8 @@
     CKDPRecord *_user;
 }
 
-@property(assign,readonly) bool hasUser;
-@property(assign,retain) CKDPRecord * user;
+@property (nonatomic, readonly) bool hasUser;
+@property (nonatomic, retain) CKDPRecord *user;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

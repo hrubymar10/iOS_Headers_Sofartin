@@ -15,12 +15,12 @@
     TSURetainedPointerKeyDictionary *_proxyObjectMap;
 }
 
-@property(assign,readonly) TSPObjectContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSURL * relativeURLForExternalData;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) TSPObjectContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSURL *relativeURLForExternalData;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)addDataFinalizeHandlerForSuccessfulSave:(id)arg1;

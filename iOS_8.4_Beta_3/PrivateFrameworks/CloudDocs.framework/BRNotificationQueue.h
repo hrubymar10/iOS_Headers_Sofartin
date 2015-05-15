@@ -9,7 +9,7 @@
     NSMutableDictionary *_index;
 }
 
-@property(assign,readonly) unsigned long long count;
+@property (nonatomic, readonly) unsigned long long count;
 
 - (void)_filterIndex:(id)arg1;
 - (void)addDequeueCallback:(id)arg1;

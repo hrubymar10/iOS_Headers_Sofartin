@@ -9,8 +9,8 @@
     bool _suppressDrawingBackground;
 }
 
-@property(assign,readonly) UIImageView * shadowView;
-@property(assign,readwrite) bool suppressDrawingBackground;
+@property (readonly) UIImageView *shadowView;
+@property (nonatomic) bool suppressDrawingBackground;
 
 + (id)_backgroundImage;
 + (double)defaultHeight;

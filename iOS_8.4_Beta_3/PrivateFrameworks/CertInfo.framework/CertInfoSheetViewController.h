@@ -12,13 +12,13 @@
     NSString *_trustTitle;
 }
 
-@property(assign,readwrite) <CertInfoSheetViewControllerDelegate> * delegate;
-@property(assign,retain) NSString * serviceName;
-@property(assign,retain) NSDate * trustExpiration;
-@property(assign,retain) NSArray * trustProperties;
-@property(assign,retain) NSString * trustPurpose;
-@property(assign,retain) NSString * trustSubtitle;
-@property(assign,retain) NSString * trustTitle;
+@property (nonatomic) <CertInfoSheetViewControllerDelegate> *delegate;
+@property (nonatomic, retain) NSString *serviceName;
+@property (nonatomic, retain) NSDate *trustExpiration;
+@property (nonatomic, retain) NSArray *trustProperties;
+@property (nonatomic, retain) NSString *trustPurpose;
+@property (nonatomic, retain) NSString *trustSubtitle;
+@property (nonatomic, retain) NSString *trustTitle;
 
 - (void).cxx_destruct;
 - (void)_accept;

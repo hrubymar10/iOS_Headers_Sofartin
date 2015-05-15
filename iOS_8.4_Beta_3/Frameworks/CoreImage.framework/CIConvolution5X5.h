@@ -8,9 +8,9 @@
     CIVector *inputWeights;
 }
 
-@property(assign,retain) NSNumber * inputBias;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIVector * inputWeights;
+@property (nonatomic, retain) NSNumber *inputBias;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIVector *inputWeights;
 
 + (id)customAttributes;
 

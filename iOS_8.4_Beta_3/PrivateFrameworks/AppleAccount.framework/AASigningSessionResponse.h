@@ -6,7 +6,7 @@
     NSData *_sessionData;
 }
 
-@property(assign,retain) NSData * sessionData;
+@property (nonatomic, retain) NSData *sessionData;
 
 - (void).cxx_destruct;
 - (id)initWithHTTPResponse:(id)arg1 data:(id)arg2;

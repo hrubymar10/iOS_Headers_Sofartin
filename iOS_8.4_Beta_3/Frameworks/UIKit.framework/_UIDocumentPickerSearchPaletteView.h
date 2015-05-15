@@ -11,16 +11,16 @@
     _UIDocumentPickerSearchContainerModel *_searchModel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) _UINavigationControllerPalette * palette;
-@property(assign,retain) _UIDocumentPickerContainerViewController * resultsController;
-@property(assign,retain) UISearchController * searchController;
-@property(assign,retain) NSLayoutConstraint * searchFieldLeftConstraint;
-@property(assign,retain) NSLayoutConstraint * searchFieldRightConstraint;
-@property(assign,retain) _UIDocumentPickerSearchContainerModel * searchModel;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) _UINavigationControllerPalette *palette;
+@property (nonatomic, retain) _UIDocumentPickerContainerViewController *resultsController;
+@property (nonatomic, retain) UISearchController *searchController;
+@property (nonatomic, retain) NSLayoutConstraint *searchFieldLeftConstraint;
+@property (nonatomic, retain) NSLayoutConstraint *searchFieldRightConstraint;
+@property (nonatomic, retain) _UIDocumentPickerSearchContainerModel *searchModel;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (id)initWithFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

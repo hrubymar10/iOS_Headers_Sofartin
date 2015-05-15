@@ -9,11 +9,11 @@
     long long _preferredStoreOfferVariant;
 }
 
-@property(assign,readonly) MPStoreOfferMediaItemCollection * itemsWithCompletionsCollection;
-@property(assign,readonly) NSArray * localItems;
-@property(assign,readonly) MPStoreOfferMediaItemCollection * mergedCollection;
-@property(assign,readonly) MPStoreOfferMediaItemCollection * offeredCollection;
-@property(assign,readonly) long long preferredStoreOfferVariant;
+@property (nonatomic, readonly) MPStoreOfferMediaItemCollection *itemsWithCompletionsCollection;
+@property (nonatomic, readonly) NSArray *localItems;
+@property (nonatomic, readonly) MPStoreOfferMediaItemCollection *mergedCollection;
+@property (nonatomic, readonly) MPStoreOfferMediaItemCollection *offeredCollection;
+@property (nonatomic, readonly) long long preferredStoreOfferVariant;
 
 - (void).cxx_destruct;
 - (id)initWithOfferedCollection:(id)arg1 localItemsQuery:(id)arg2 preferredStoreOfferVariant:(long long)arg3;

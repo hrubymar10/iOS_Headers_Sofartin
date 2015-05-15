@@ -4,15 +4,15 @@
 
 @interface GCGamepad : NSObject
 
-@property(assign,readonly) GCControllerButtonInput * buttonA;
-@property(assign,readonly) GCControllerButtonInput * buttonB;
-@property(assign,readonly) GCControllerButtonInput * buttonX;
-@property(assign,readonly) GCControllerButtonInput * buttonY;
-@property(assign,readonly) GCController * controller;
-@property(assign,readonly) GCControllerDirectionPad * dpad;
-@property(assign,readonly) GCControllerButtonInput * leftShoulder;
-@property(assign,readonly) GCControllerButtonInput * rightShoulder;
-@property(assign,copy) id valueChangedHandler;
+@property (readonly) GCControllerButtonInput *buttonA;
+@property (readonly) GCControllerButtonInput *buttonB;
+@property (readonly) GCControllerButtonInput *buttonX;
+@property (readonly) GCControllerButtonInput *buttonY;
+@property (readonly) GCController *controller;
+@property (readonly) GCControllerDirectionPad *dpad;
+@property (readonly) GCControllerButtonInput *leftShoulder;
+@property (readonly) GCControllerButtonInput *rightShoulder;
+@property (copy) id valueChangedHandler;
 
 + (bool)supportsUSBInterfaceProtocol:(unsigned char)arg1;
 

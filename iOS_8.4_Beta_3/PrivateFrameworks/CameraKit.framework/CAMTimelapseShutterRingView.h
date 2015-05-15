@@ -12,13 +12,13 @@
     bool _animating;
 }
 
-@property(assign,readonly) CALayer * _largeTickLayer;
-@property(assign,readonly) CAReplicatorLayer * _largeTickReplicatorLayer;
-@property(assign,readonly) CALayer * _smallTickLayer;
-@property(assign,readonly) CAReplicatorLayer * _smallTickReplicatorLayer;
-@property(assign,readonly) CALayer * _timerHandLayer;
-@property(assign,readonly) CALayer * _timerHandParentLayer;
-@property(getter=isAnimating,assign,readwrite) bool animating;
+@property (nonatomic, readonly) CALayer *_largeTickLayer;
+@property (nonatomic, readonly) CAReplicatorLayer *_largeTickReplicatorLayer;
+@property (nonatomic, readonly) CALayer *_smallTickLayer;
+@property (nonatomic, readonly) CAReplicatorLayer *_smallTickReplicatorLayer;
+@property (nonatomic, readonly) CALayer *_timerHandLayer;
+@property (nonatomic, readonly) CALayer *_timerHandParentLayer;
+@property (getter=isAnimating, nonatomic) bool animating;
 
 - (void).cxx_destruct;
 - (void)_addStartAnimations;

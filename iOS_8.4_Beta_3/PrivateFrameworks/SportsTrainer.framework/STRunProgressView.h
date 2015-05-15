@@ -9,8 +9,8 @@
     bool _reverseFilledGradient;
 }
 
-@property(assign,readwrite) float progress;
-@property(assign,readwrite) bool reverseFilledGradient;
+@property (nonatomic) float progress;
+@property (nonatomic) bool reverseFilledGradient;
 
 - (id)_flatGradientImageWithImage:(id)arg1 startColor:(id)arg2 startPoint:(struct CGPoint { double x1; double x2; })arg3 endColor:(id)arg4 endPoint:(struct CGPoint { double x1; double x2; })arg5;
 - (id)_progressBarFilledImage;

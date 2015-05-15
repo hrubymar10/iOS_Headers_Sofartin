@@ -4,10 +4,10 @@
 
 @interface ACDManagedDataclass : NSManagedObject
 
-@property(assign,retain) NSSet * enabledAccounts;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSSet * provisionedAccounts;
-@property(assign,retain) NSSet * supportedTypes;
-@property(assign,retain) NSSet * syncableTypes;
+@property (nonatomic, retain) NSSet *enabledAccounts;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSSet *provisionedAccounts;
+@property (nonatomic, retain) NSSet *supportedTypes;
+@property (nonatomic, retain) NSSet *syncableTypes;
 
 @end

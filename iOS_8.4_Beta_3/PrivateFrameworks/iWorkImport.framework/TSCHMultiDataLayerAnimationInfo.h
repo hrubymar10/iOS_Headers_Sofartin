@@ -37,20 +37,20 @@
     CAMediaTimingFunction *mTimingFunction;
 }
 
-@property(assign,readwrite) bool aboveIntercept;
-@property(assign,readwrite) bool atIntercept;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } chartBodyFrameInRepElementSpace;
-@property(assign,readwrite) bool crossesIntercept;
-@property(assign,readwrite) bool currentAboveIntercept;
-@property(assign,readwrite) bool currentAtIntercept;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) bool elementUndefined;
-@property(assign,readwrite) bool horizontalChart;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } interceptRect;
-@property(assign,copy) NSArray * keyTimes;
-@property(assign,readonly) NSArray * layerAnimationValues;
-@property(assign,readwrite) bool shouldAnimate;
-@property(assign,retain) CAMediaTimingFunction * timingFunction;
+@property (nonatomic) bool aboveIntercept;
+@property (nonatomic) bool atIntercept;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } chartBodyFrameInRepElementSpace;
+@property (nonatomic) bool crossesIntercept;
+@property (nonatomic) bool currentAboveIntercept;
+@property (nonatomic) bool currentAtIntercept;
+@property (nonatomic) double duration;
+@property (nonatomic) bool elementUndefined;
+@property (nonatomic) bool horizontalChart;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } interceptRect;
+@property (nonatomic, copy) NSArray *keyTimes;
+@property (nonatomic, readonly) NSArray *layerAnimationValues;
+@property (nonatomic) bool shouldAnimate;
+@property (nonatomic, retain) CAMediaTimingFunction *timingFunction;
 
 + (id)animationInfo;
 

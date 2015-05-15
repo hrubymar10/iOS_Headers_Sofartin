@@ -8,9 +8,9 @@
     long long _mode;
 }
 
-@property(assign,readwrite) bool authenticatePlayerOnCompletion;
-@property(assign,retain) NSArray * availableExternalServices;
-@property(assign,readwrite) long long mode;
+@property (nonatomic) bool authenticatePlayerOnCompletion;
+@property (nonatomic, retain) NSArray *availableExternalServices;
+@property (nonatomic) long long mode;
 
 + (void)accountRemoteUIControllerForMode:(long long)arg1 completionHandler:(id)arg2;
 

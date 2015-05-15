@@ -28,11 +28,11 @@
     UIView *_startView;
 }
 
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endFrame;
-@property(assign,readonly) UIView * endView;
-@property(assign,readwrite) bool scaleSize;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } startFrame;
-@property(assign,readonly) UIView * startView;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endFrame;
+@property (nonatomic, readonly) UIView *endView;
+@property (nonatomic) bool scaleSize;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } startFrame;
+@property (nonatomic, readonly) UIView *startView;
 
 - (void).cxx_destruct;
 - (void)animateToEndStateWithDuration:(double)arg1 completion:(id)arg2;

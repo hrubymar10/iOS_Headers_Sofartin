@@ -16,14 +16,14 @@
     UIColor *_topColor;
 }
 
-@property(assign,readonly) long long categoryID;
-@property(assign,readonly) UIImage * dashboardIcon;
-@property(assign,readonly) NSArray * dataUnitGroups;
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) bool isMeCategory;
-@property(assign,readonly) UIImage * listIcon;
-@property(assign,readonly) NSString * listIconName;
-@property(assign,readonly) UIImage * shareIcon;
+@property (nonatomic, readonly) long long categoryID;
+@property (nonatomic, readonly) UIImage *dashboardIcon;
+@property (nonatomic, readonly) NSArray *dataUnitGroups;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, readonly) bool isMeCategory;
+@property (nonatomic, readonly) UIImage *listIcon;
+@property (nonatomic, readonly) NSString *listIconName;
+@property (nonatomic, readonly) UIImage *shareIcon;
 
 - (void).cxx_destruct;
 - (id)_generateGradientOfHeight:(double)arg1;

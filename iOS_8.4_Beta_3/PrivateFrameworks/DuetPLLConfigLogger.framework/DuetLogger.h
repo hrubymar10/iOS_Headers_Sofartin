@@ -18,7 +18,7 @@
     struct __asl_object_s { } *log_msg;
 }
 
-@property(assign,readonly) bool canWriteToFile;
+@property (nonatomic, readonly) bool canWriteToFile;
 
 + (id)instance;
 + (id)instance:(int)arg1;

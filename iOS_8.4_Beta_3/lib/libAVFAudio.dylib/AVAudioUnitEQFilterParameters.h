@@ -6,11 +6,11 @@
     void *_impl;
 }
 
-@property(assign,readwrite) float bandwidth;
-@property(assign,readwrite) bool bypass;
-@property(assign,readwrite) long long filterType;
-@property(assign,readwrite) float frequency;
-@property(assign,readwrite) float gain;
+@property (nonatomic) float bandwidth;
+@property (nonatomic) bool bypass;
+@property (nonatomic) long long filterType;
+@property (nonatomic) float frequency;
+@property (nonatomic) float gain;
 
 - (float)bandwidth;
 - (bool)bypass;

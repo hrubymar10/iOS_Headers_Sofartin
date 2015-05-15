@@ -6,7 +6,7 @@
     SKUIModalDocumentController *_modalDocumentController;
 }
 
-@property(assign,retain) NSArray * documents;
+@property (nonatomic, readonly, retain) NSArray *documents;
 
 - (void).cxx_destruct;
 - (id)_adjustedOptionsWithOptions:(id)arg1;

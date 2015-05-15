@@ -6,7 +6,7 @@
     RUWelcomeViewController *_welcomeViewController;
 }
 
-@property(assign,readwrite) RUWelcomeViewController * welcomeViewController;
+@property (nonatomic) RUWelcomeViewController *welcomeViewController;
 
 - (void).cxx_destruct;
 - (void)_displayLinkAction:(id)arg1;

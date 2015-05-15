@@ -12,13 +12,13 @@
     int _updatePlan;
 }
 
-@property(assign,copy) NSDate * date;
-@property(assign,readwrite) long long dateStyle;
-@property(assign,copy) NSString * format;
-@property(assign,copy) NSString * localeIdentifier;
-@property(assign,readwrite) bool needsUpdate;
-@property(assign,readwrite) long long timeStyle;
-@property(assign,readwrite) int updatePlan;
+@property (nonatomic, copy) NSDate *date;
+@property (nonatomic) long long dateStyle;
+@property (nonatomic, copy) NSString *format;
+@property (nonatomic, copy) NSString *localeIdentifier;
+@property (nonatomic) bool needsUpdate;
+@property (nonatomic) long long timeStyle;
+@property (nonatomic) int updatePlan;
 
 + (id)dateStringFromTime:(double)arg1 withFormat:(id)arg2 localeIdentifier:(id)arg3 dateStyle:(long long)arg4 timeStyle:(long long)arg5;
 + (id)newDateFormatWithLocaleIdentifier:(id)arg1 dateStyle:(long long)arg2 timeStyle:(long long)arg3;

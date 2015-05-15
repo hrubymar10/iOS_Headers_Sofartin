@@ -9,10 +9,10 @@
     bool _partial;
 }
 
-@property(getter=isComplete,assign,readwrite) bool complete;
-@property(assign,retain) NSData * data;
-@property(assign,retain) NSString * partName;
-@property(getter=isPartial,assign,readwrite) bool partial;
+@property (getter=isComplete, nonatomic) bool complete;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic, retain) NSString *partName;
+@property (getter=isPartial, nonatomic) bool partial;
 
 - (id)data;
 - (void)dealloc;

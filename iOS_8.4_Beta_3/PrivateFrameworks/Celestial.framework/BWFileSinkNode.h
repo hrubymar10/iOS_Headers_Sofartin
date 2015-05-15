@@ -6,9 +6,9 @@
     <BWNodeFileWriterStatusDelegate> *_recordingStatusDelegate;
 }
 
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } lastFileDuration;
-@property(assign,readonly) unsigned long long lastFileSize;
-@property(assign,readwrite) <BWNodeFileWriterStatusDelegate> * recordingStatusDelegate;
+@property (nonatomic, readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } lastFileDuration;
+@property (nonatomic, readonly) unsigned long long lastFileSize;
+@property (nonatomic) <BWNodeFileWriterStatusDelegate> *recordingStatusDelegate;
 
 - (id)init;
 - (struct { long long x1; int x2; unsigned int x3; long long x4; })lastFileDuration;

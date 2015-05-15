@@ -9,10 +9,10 @@
     struct __CTLine { } *_lineRef;
 }
 
-@property(assign,readwrite) TSWPAttachment * attachment;
-@property(assign,retain) TSDLayout * layout;
-@property(assign,readwrite) bool layoutNeedsRevalidation;
-@property(assign,readonly) struct __CTLine { }* lineRef;
+@property (nonatomic) TSWPAttachment *attachment;
+@property (nonatomic, retain) TSDLayout *layout;
+@property (nonatomic) bool layoutNeedsRevalidation;
+@property (nonatomic, readonly) struct __CTLine { }*lineRef;
 
 + (id)mapWithAttachment:(id)arg1 layout:(id)arg2 pageNumber:(unsigned long long)arg3 pageCount:(unsigned long long)arg4 footnoteMarkProvider:(id)arg5 styleProvider:(id)arg6 colorOverride:(id)arg7 textScalePercent:(unsigned long long)arg8;
 

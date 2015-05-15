@@ -7,8 +7,8 @@
     NSDictionary *_avAudioSettings;
 }
 
-@property(assign,readonly) NSDictionary * audioCompressionSBPOptions;
-@property(assign,readonly) struct opaqueCMFormatDescription { }* audioFormatDescription;
+@property (readonly) NSDictionary *audioCompressionSBPOptions;
+@property (readonly) struct opaqueCMFormatDescription { }*audioFormatDescription;
 
 + (id)formatForAVAudioSettings:(id)arg1 inputFormat:(id)arg2;
 + (id)formatWithAudioFormatDescription:(struct opaqueCMFormatDescription { }*)arg1;

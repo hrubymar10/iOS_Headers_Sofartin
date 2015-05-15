@@ -7,8 +7,8 @@
     id _userInfo;
 }
 
-@property(assign,retain) BluetoothDevice * device;
-@property(assign,retain) id userInfo;
+@property (nonatomic, retain) BluetoothDevice *device;
+@property (nonatomic, retain) id userInfo;
 
 - (void)dealloc;
 - (id)device;

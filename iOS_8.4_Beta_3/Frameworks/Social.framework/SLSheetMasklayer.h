@@ -34,8 +34,8 @@
     CALayer *_topLayer;
 }
 
-@property(assign,retain) UIColor * clipBackgroundColor;
-@property(assign,readwrite) double clipCornerRadius;
+@property (nonatomic, retain) UIColor *clipBackgroundColor;
+@property (nonatomic) double clipCornerRadius;
 
 - (void).cxx_destruct;
 - (void)animateSheetMaskFromOldSheetFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 toSheetFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg2 duration:(double)arg3;

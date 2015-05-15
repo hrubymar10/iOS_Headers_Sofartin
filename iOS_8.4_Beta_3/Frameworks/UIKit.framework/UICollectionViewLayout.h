@@ -51,17 +51,17 @@
     UICollectionViewLayout *_transitioningToLayout;
 }
 
-@property(assign,readonly) UICollectionView * collectionView;
-@property(getter=_compositionLayout,setter=_setCompositionLayout:,assign,readwrite) _UICollectionViewCompositionLayout * compositionLayout;
-@property(getter=_elementKinds,setter=_setElementKinds:,assign,copy) NSArray * elementKinds;
-@property(getter=_frame,setter=_setFrame:,assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
-@property(getter=_items,setter=_setItems:,assign,copy) NSIndexSet * items;
-@property(getter=_layoutOffset,setter=_setLayoutOffset:,assign,readwrite) struct CGPoint { double x1; double x2; } layoutOffset;
-@property(getter=_layoutOffsetEdges,setter=_setLayoutOffsetEdges:,assign,readwrite) unsigned long long layoutOffsetEdges;
-@property(getter=_isPrepared,setter=_setPrepared:,assign,readwrite) bool prepared;
-@property(getter=_sections,setter=_setSections:,assign,copy) NSIndexSet * sections;
-@property(getter=_siblingLayout,setter=_setSiblingLayout:,assign,readwrite) UICollectionViewLayout * siblingLayout;
-@property(getter=_sublayoutType,setter=_setSublayoutType:,assign,readwrite) long long sublayoutType;
+@property (nonatomic, readonly) UICollectionView *collectionView;
+@property (getter=_compositionLayout, setter=_setCompositionLayout:, nonatomic) _UICollectionViewCompositionLayout *compositionLayout;
+@property (getter=_elementKinds, setter=_setElementKinds:, nonatomic, copy) NSArray *elementKinds;
+@property (getter=_frame, setter=_setFrame:, nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
+@property (getter=_items, setter=_setItems:, nonatomic, copy) NSIndexSet *items;
+@property (getter=_layoutOffset, setter=_setLayoutOffset:, nonatomic) struct CGPoint { double x1; double x2; } layoutOffset;
+@property (getter=_layoutOffsetEdges, setter=_setLayoutOffsetEdges:, nonatomic) unsigned long long layoutOffsetEdges;
+@property (getter=_isPrepared, setter=_setPrepared:, nonatomic) bool prepared;
+@property (getter=_sections, setter=_setSections:, nonatomic, copy) NSIndexSet *sections;
+@property (getter=_siblingLayout, setter=_setSiblingLayout:, nonatomic) UICollectionViewLayout *siblingLayout;
+@property (getter=_sublayoutType, setter=_setSublayoutType:, nonatomic) long long sublayoutType;
 
 + (Class)invalidationContextClass;
 + (Class)layoutAttributesClass;

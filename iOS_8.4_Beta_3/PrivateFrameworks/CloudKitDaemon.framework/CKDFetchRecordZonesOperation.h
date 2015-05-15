@@ -9,10 +9,10 @@
     NSArray *_recordZoneIDs;
 }
 
-@property(assign,readwrite) bool ignorePCSFailures;
-@property(assign,readwrite) bool isFetchAllRecordZonesOperation;
-@property(assign,copy) id recordZoneFetchedProgressBlock;
-@property(assign,retain) NSArray * recordZoneIDs;
+@property (nonatomic) bool ignorePCSFailures;
+@property (nonatomic) bool isFetchAllRecordZonesOperation;
+@property (nonatomic, copy) id recordZoneFetchedProgressBlock;
+@property (nonatomic, retain) NSArray *recordZoneIDs;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

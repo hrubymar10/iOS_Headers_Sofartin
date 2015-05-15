@@ -12,10 +12,10 @@
     double _radius;
 }
 
-@property(assign,readwrite) double bufferSize;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } center;
-@property(assign,retain) PKPhysicsBody * physicsBody;
-@property(assign,readwrite) double radius;
+@property (nonatomic) double bufferSize;
+@property (nonatomic) struct CGPoint { double x1; double x2; } center;
+@property (nonatomic, retain) PKPhysicsBody *physicsBody;
+@property (nonatomic) double radius;
 
 - (void).cxx_destruct;
 - (double)bufferSize;

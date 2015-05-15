@@ -8,9 +8,9 @@
     UIButton *_rightButton;
 }
 
-@property(assign,readonly) UIButton * leftButton;
-@property(assign,retain) SKUIOnboardingProgressView * progressView;
-@property(assign,readonly) UIButton * rightButton;
+@property (nonatomic, readonly) UIButton *leftButton;
+@property (nonatomic, retain) SKUIOnboardingProgressView *progressView;
+@property (nonatomic, readonly) UIButton *rightButton;
 
 - (void).cxx_destruct;
 - (void)_hideButton:(id)arg1 withAnimation:(long long)arg2;

@@ -7,7 +7,7 @@
     UITouch *candidateEndpoint;
 }
 
-@property(assign,retain) UITouch * candidateEndpoint;
+@property (nonatomic, retain) UITouch *candidateEndpoint;
 
 - (id)candidateEndpoint;
 - (void)dealloc;

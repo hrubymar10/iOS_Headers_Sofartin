@@ -8,13 +8,13 @@
     NSMutableArray *_policyRules;
 }
 
-@property(assign,readonly) long long URLBagType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * downloadKind;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * policyRules;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) long long URLBagType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *downloadKind;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *policyRules;
+@property (readonly) Class superclass;
 
 - (long long)URLBagType;
 - (id)_policyRuleForSizeLimit:(long long)arg1;

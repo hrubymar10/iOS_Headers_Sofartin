@@ -17,21 +17,21 @@
     NSURL *_webServiceURL;
 }
 
-@property(assign,retain) NSData * archiveData;
-@property(assign,copy) NSString * authenticationToken;
-@property(assign,retain) PKContent * content;
-@property(assign,retain) PKDataAccessor * dataAccessor;
-@property(assign,retain) PKDisplayProfile * displayProfile;
-@property(assign,copy) NSData * manifestHash;
-@property(assign,retain) NSDate * modificationDate;
-@property(assign,readwrite) double preferredImageScale;
-@property(assign,retain) NSString * preferredImageSuffix;
-@property(assign,readonly) bool remoteAssetsDownloaded;
-@property(assign,retain) NSData * serializedFileWrapper;
-@property(assign,readwrite) long long settings;
-@property(assign,readwrite) long long shareCount;
-@property(assign,copy) NSString * uniqueID;
-@property(assign,copy) NSURL * webServiceURL;
+@property (nonatomic, readonly, retain) NSData *archiveData;
+@property (nonatomic, copy) NSString *authenticationToken;
+@property (nonatomic, retain) PKContent *content;
+@property (nonatomic, retain) PKDataAccessor *dataAccessor;
+@property (nonatomic, retain) PKDisplayProfile *displayProfile;
+@property (nonatomic, copy) NSData *manifestHash;
+@property (nonatomic, readonly, retain) NSDate *modificationDate;
+@property (nonatomic) double preferredImageScale;
+@property (nonatomic, retain) NSString *preferredImageSuffix;
+@property (nonatomic, readonly) bool remoteAssetsDownloaded;
+@property (nonatomic, readonly, retain) NSData *serializedFileWrapper;
+@property (nonatomic) long long settings;
+@property (nonatomic) long long shareCount;
+@property (nonatomic, copy) NSString *uniqueID;
+@property (nonatomic, copy) NSURL *webServiceURL;
 
 + (bool)isValidObjectWithFileURL:(id)arg1 warnings:(id*)arg2 orError:(id*)arg3;
 + (bool)supportsSecureCoding;

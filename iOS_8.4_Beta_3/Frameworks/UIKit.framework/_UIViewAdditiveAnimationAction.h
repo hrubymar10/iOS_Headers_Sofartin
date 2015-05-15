@@ -6,7 +6,7 @@
     CAAnimation *_pendingAnimation;
 }
 
-@property(assign,retain) CAAnimation * pendingAnimation;
+@property (nonatomic, readonly, retain) CAAnimation *pendingAnimation;
 
 - (void)dealloc;
 - (id)initWithPendingAnimation:(id)arg1;

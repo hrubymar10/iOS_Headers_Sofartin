@@ -7,8 +7,8 @@
     bool _isLeaveNowAlarm;
 }
 
-@property(assign,readonly) EKAlarm * alarm;
-@property(assign,readonly) bool isLeaveNowAlarm;
+@property (nonatomic, readonly) EKAlarm *alarm;
+@property (nonatomic, readonly) bool isLeaveNowAlarm;
 
 - (void).cxx_destruct;
 - (id)alarm;

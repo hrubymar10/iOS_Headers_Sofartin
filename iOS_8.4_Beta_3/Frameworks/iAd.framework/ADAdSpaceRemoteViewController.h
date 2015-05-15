@@ -6,7 +6,7 @@
     <ADAdSpaceRemoteViewControllerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <ADAdSpaceRemoteViewControllerDelegate> * delegate;
+@property (nonatomic) <ADAdSpaceRemoteViewControllerDelegate> *delegate;
 
 + (void)adSpaceRemoteViewControllerWithCompletionHandler:(id)arg1;
 + (id)serviceViewControllerInterface;

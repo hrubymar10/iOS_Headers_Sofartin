@@ -12,16 +12,16 @@
     int _sharingTheirStream;
 }
 
-@property(assign,retain) NSString * UUID;
-@property(assign,retain) NSString * emailAddress;
-@property(assign,retain) NSString * firstName;
-@property(assign,retain) NSString * fullName;
-@property(assign,retain) NSString * lastName;
-@property(assign,retain) NSString * personID;
-@property(assign,readwrite) int sharingOurPhotostream;
-@property(assign,readwrite) int sharingOurStream;
-@property(assign,readwrite) int sharingTheirPhotostream;
-@property(assign,readwrite) int sharingTheirStream;
+@property (nonatomic, retain) NSString *UUID;
+@property (nonatomic, retain) NSString *emailAddress;
+@property (nonatomic, retain) NSString *firstName;
+@property (nonatomic, retain) NSString *fullName;
+@property (nonatomic, retain) NSString *lastName;
+@property (nonatomic, retain) NSString *personID;
+@property (nonatomic) int sharingOurPhotostream;
+@property (nonatomic) int sharingOurStream;
+@property (nonatomic) int sharingTheirPhotostream;
+@property (nonatomic) int sharingTheirStream;
 
 + (id)share;
 

@@ -12,15 +12,15 @@
     NSProgress *_queue_progress;
 }
 
-@property(getter=isCancellable,assign,readonly) bool cancellable;
-@property(assign,readonly) unsigned long long installPhase;
-@property(assign,readonly) unsigned long long installState;
-@property(assign,readonly) unsigned long long installType;
-@property(getter=isNewsstand,assign,readonly) bool newsstand;
-@property(getter=isPausable,assign,readonly) bool pausable;
-@property(assign,readonly) double percentComplete;
-@property(getter=_proxy,setter=_setProxy:,assign,retain) LSApplicationProxy * proxy;
-@property(getter=isRestricted,assign,readonly) bool restricted;
+@property (getter=isCancellable, nonatomic, readonly) bool cancellable;
+@property (nonatomic, readonly) unsigned long long installPhase;
+@property (nonatomic, readonly) unsigned long long installState;
+@property (nonatomic, readonly) unsigned long long installType;
+@property (getter=isNewsstand, nonatomic, readonly) bool newsstand;
+@property (getter=isPausable, nonatomic, readonly) bool pausable;
+@property (nonatomic, readonly) double percentComplete;
+@property (getter=_proxy, setter=_setProxy:, nonatomic, retain) LSApplicationProxy *proxy;
+@property (getter=isRestricted, nonatomic, readonly) bool restricted;
 
 - (void)_dispatchToObservers:(id)arg1 block:(id)arg2;
 - (id)_iconDictionary;

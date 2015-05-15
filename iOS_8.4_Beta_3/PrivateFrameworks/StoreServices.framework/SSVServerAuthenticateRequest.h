@@ -7,12 +7,12 @@
     NSObject<OS_xpc_object> *_dialog;
 }
 
-@property(assign,copy) SSAuthenticationContext * authenticationContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSObject<OS_xpc_object> * encodedDialog;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) SSAuthenticationContext *authenticationContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSObject<OS_xpc_object> *encodedDialog;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)authenticationContext;

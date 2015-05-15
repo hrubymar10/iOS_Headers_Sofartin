@@ -7,12 +7,12 @@
     NSString *_localizedSectionHeader;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * items;
-@property(assign,readonly) NSString * localizedSectionHeader;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic, readonly) NSString *localizedSectionHeader;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (id)initWithSection:(id)arg1 traits:(id)arg2 entryListIndex:(int)arg3;

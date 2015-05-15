@@ -9,10 +9,10 @@
     long long _selectedSectionHeaderViewIndex;
 }
 
-@property(assign,readwrite) <MusicTableViewDelegate> * delegate;
-@property(assign,readwrite) bool enforcesMinimumLayoutMargin;
-@property(assign,readonly) long long indexForSelectedSectionHeader;
-@property(assign,readwrite) bool rightSeparatorInsetFollowsLayoutMargin;
+@property (nonatomic) <MusicTableViewDelegate> *delegate;
+@property (nonatomic) bool enforcesMinimumLayoutMargin;
+@property (nonatomic, readonly) long long indexForSelectedSectionHeader;
+@property (nonatomic) bool rightSeparatorInsetFollowsLayoutMargin;
 
 - (void)_clearHeaderViewHighlightAnimated:(bool)arg1;
 - (void)_clearHeaderViewSelectionAnimated:(bool)arg1;

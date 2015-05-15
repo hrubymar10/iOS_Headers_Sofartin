@@ -17,18 +17,18 @@
     NSString *_uuid;
 }
 
-@property(assign,readonly) NSMutableDictionary * _assets;
-@property(assign,readonly) CIBurstImageSet * _burstImageSet;
-@property(setter=_setExpirationDate:,assign,retain) NSDate * _expirationDate;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * _expirationQueue;
-@property(assign,readonly) NSObject<OS_dispatch_source> * _expirationTimer;
-@property(assign,copy) id completionHandler;
-@property(assign,readwrite) <CAMAvalancheSessionDelegate> * delegate;
-@property(assign,readonly) unsigned long long numberOfPhotos;
-@property(assign,retain) CAMInflightAsset * possibleAvalancheAsset;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) long long type;
-@property(assign,copy) NSString * uuid;
+@property (nonatomic, readonly) NSMutableDictionary *_assets;
+@property (nonatomic, readonly) CIBurstImageSet *_burstImageSet;
+@property (setter=_setExpirationDate:, nonatomic, retain) NSDate *_expirationDate;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *_expirationQueue;
+@property (nonatomic, readonly) NSObject<OS_dispatch_source> *_expirationTimer;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic) <CAMAvalancheSessionDelegate> *delegate;
+@property (nonatomic, readonly) unsigned long long numberOfPhotos;
+@property (nonatomic, retain) CAMInflightAsset *possibleAvalancheAsset;
+@property (nonatomic) long long state;
+@property (nonatomic, readonly) long long type;
+@property (nonatomic, readonly, copy) NSString *uuid;
 
 - (void).cxx_destruct;
 - (id)_assets;

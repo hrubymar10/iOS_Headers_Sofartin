@@ -13,18 +13,18 @@
     long long _storeID;
 }
 
-@property(assign,copy) NSString * buyParameters;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPUExtrasContextDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) MPUExtrasRootViewController * extrasRootViewController;
-@property(assign,retain) MPPlaybackContext * featurePlaybackContext;
-@property(assign,retain) UIViewController * featurePlaybackViewController;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * javascriptURL;
-@property(assign,readonly) MPMediaItem * mediaItem;
-@property(assign,readonly) long long storeID;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, copy) NSString *buyParameters;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPUExtrasContextDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) MPUExtrasRootViewController *extrasRootViewController;
+@property (nonatomic, retain) MPPlaybackContext *featurePlaybackContext;
+@property (nonatomic, retain) UIViewController *featurePlaybackViewController;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) NSURL *javascriptURL;
+@property (nonatomic, readonly) MPMediaItem *mediaItem;
+@property (nonatomic, readonly) long long storeID;
+@property (readonly) Class superclass;
 
 + (Class)extrasRootViewControllerClass;
 + (id)overriddenJavascriptURL;

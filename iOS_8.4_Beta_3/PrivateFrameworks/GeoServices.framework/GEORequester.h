@@ -10,8 +10,8 @@
     bool _usePersistentConnection;
 }
 
-@property(assign,retain) NSString * debugRequestName;
-@property(assign,readwrite) bool disableReplay;
+@property (nonatomic, retain) NSString *debugRequestName;
+@property bool disableReplay;
 
 + (id)_logRequestResponseDirectory;
 + (void)enablePersistentConnection;

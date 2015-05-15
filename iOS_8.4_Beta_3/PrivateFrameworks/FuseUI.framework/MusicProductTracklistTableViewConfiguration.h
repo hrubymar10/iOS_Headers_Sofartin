@@ -10,11 +10,11 @@
     bool _wantsCompleteOffer;
 }
 
-@property(assign,copy) NSString * completeOfferLocalizedTitle;
-@property(assign,readonly) <MusicEntityProviding> * entityProvider;
-@property(assign,readwrite) bool wantsArtistName;
-@property(assign,readwrite) bool wantsArtwork;
-@property(assign,readwrite) bool wantsCompleteOffer;
+@property (nonatomic, copy) NSString *completeOfferLocalizedTitle;
+@property (nonatomic, readonly) <MusicEntityProviding> *entityProvider;
+@property (nonatomic) bool wantsArtistName;
+@property (nonatomic) bool wantsArtwork;
+@property (nonatomic) bool wantsCompleteOffer;
 
 + (Class)tracklistItemContentDescriptorClass;
 

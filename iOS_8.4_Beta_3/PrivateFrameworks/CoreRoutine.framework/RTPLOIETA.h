@@ -10,7 +10,7 @@
     unsigned int _responseETASeconds;
 }
 
-@property(assign,readonly) RTPredictedLocationOfInterest * ploi;
+@property (nonatomic, readonly) RTPredictedLocationOfInterest *ploi;
 
 - (void).cxx_destruct;
 - (id)_displayInfoForDate:(id)arg1;

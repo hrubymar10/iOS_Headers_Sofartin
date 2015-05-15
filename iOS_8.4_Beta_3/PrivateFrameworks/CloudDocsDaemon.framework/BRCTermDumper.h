@@ -13,8 +13,8 @@
     unsigned long long _usedTermWidth;
 }
 
-@property(assign,readonly) bool isatty;
-@property(assign,readonly) bool useColor;
+@property (nonatomic, readonly) bool isatty;
+@property (nonatomic, readonly) bool useColor;
 
 + (void)execPagerOnFileFd:(int)arg1;
 + (void)setupPagerForFd:(int)arg1;

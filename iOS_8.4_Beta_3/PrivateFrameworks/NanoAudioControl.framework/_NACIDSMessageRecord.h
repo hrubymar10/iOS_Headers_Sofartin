@@ -9,10 +9,10 @@
     long long _type;
 }
 
-@property(assign,retain) PBCodable * message;
-@property(assign,copy) NSString * queueOne;
-@property(assign,readwrite) double timeout;
-@property(assign,readwrite) long long type;
+@property (nonatomic, retain) PBCodable *message;
+@property (nonatomic, copy) NSString *queueOne;
+@property (nonatomic) double timeout;
+@property (nonatomic) long long type;
 
 - (void).cxx_destruct;
 - (id)message;

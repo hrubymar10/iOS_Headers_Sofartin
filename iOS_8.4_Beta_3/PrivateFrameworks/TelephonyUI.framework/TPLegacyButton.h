@@ -11,7 +11,7 @@
     bool _useStandardSizing;
 }
 
-@property(assign,readwrite) bool useStandardSizing;
+@property bool useStandardSizing;
 
 + (id)acceptVideoButtonImage;
 + (id)answerButtonImage;

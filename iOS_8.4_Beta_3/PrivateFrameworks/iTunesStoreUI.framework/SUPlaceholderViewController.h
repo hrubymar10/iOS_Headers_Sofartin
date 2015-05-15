@@ -10,10 +10,10 @@
     SULoadingView *_loadingView;
 }
 
-@property(assign,copy) SUGradient * backgroundGradient;
-@property(assign,copy) SUGradient * defaultBackgroundGradient;
-@property(assign,readonly) SULoadingView * loadingView;
-@property(assign,readwrite) bool shouldShowLoadingView;
+@property (nonatomic, copy) SUGradient *backgroundGradient;
+@property (nonatomic, copy) SUGradient *defaultBackgroundGradient;
+@property (nonatomic, readonly) SULoadingView *loadingView;
+@property (nonatomic) bool shouldShowLoadingView;
 
 - (void)_bagDidLoadNotification:(id)arg1;
 - (id)_copyActiveGradient;

@@ -9,10 +9,10 @@
     id _queue;
 }
 
-@property(assign,readwrite) long long count;
-@property(assign,copy) NSArray * downloadKinds;
-@property(assign,copy) SSDownloadManagerOptions * managerOptions;
-@property(assign,retain) id queue;
+@property (nonatomic) long long count;
+@property (nonatomic, copy) NSArray *downloadKinds;
+@property (nonatomic, copy) SSDownloadManagerOptions *managerOptions;
+@property (nonatomic, retain) id queue;
 
 - (long long)count;
 - (void)dealloc;

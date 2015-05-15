@@ -14,17 +14,17 @@
     struct z_stream_s { char *x1; unsigned int x2; unsigned long long x3; char *x4; unsigned int x5; unsigned long long x6; char *x7; struct internal_state {} *x8; int (*x9)(); int (*x10)(); void *x11; int x12; unsigned long long x13; unsigned long long x14; } *_zstreamp;
 }
 
-@property(getter=shouldCompress,assign,readwrite) bool compress;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id didEncounterErrorBlock;
-@property(assign,copy) id didFinishReadingBlock;
-@property(assign,copy) id didReadDataBlock;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long maximumBufferSize;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSInputStream * stream;
-@property(assign,readonly) Class superclass;
+@property (getter=shouldCompress, nonatomic) bool compress;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id didEncounterErrorBlock;
+@property (nonatomic, copy) id didFinishReadingBlock;
+@property (nonatomic, copy) id didReadDataBlock;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long maximumBufferSize;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSInputStream *stream;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_compressedDataForData:(id)arg1;

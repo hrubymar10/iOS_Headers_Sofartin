@@ -16,12 +16,12 @@
     bool _allowsMultiPassEncoding;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } alignmentRect;
-@property(assign,retain) NSString * alignmentRectString;
-@property(assign,readwrite) bool allowsMultiPassEncoding;
-@property(assign,retain) TDPNGAsset * asset;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } primitiveAlignmentRect;
-@property(assign,retain) NSOrderedSet * slices;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } alignmentRect;
+@property (nonatomic, retain) NSString *alignmentRectString;
+@property (nonatomic) bool allowsMultiPassEncoding;
+@property (nonatomic, retain) TDPNGAsset *asset;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } primitiveAlignmentRect;
+@property (nonatomic, retain) NSOrderedSet *slices;
 
 + (void)initialize;
 

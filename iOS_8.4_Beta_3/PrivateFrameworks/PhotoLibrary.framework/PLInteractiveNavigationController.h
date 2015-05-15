@@ -28,16 +28,16 @@
     <PLInteractiveNavigationControllerDelegate> *delegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PLInteractiveNavigationControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIView * footerView;
-@property(getter=footerViewIsHidden,assign,readwrite) bool footerViewHidden;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIView * headerView;
-@property(getter=headerViewIsHidden,assign,readwrite) bool headerViewHidden;
-@property(assign,readwrite) bool shouldPropagateEditingMode;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PLInteractiveNavigationControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIView *footerView;
+@property (getter=footerViewIsHidden, nonatomic) bool footerViewHidden;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIView *headerView;
+@property (getter=headerViewIsHidden, nonatomic) bool headerViewHidden;
+@property (nonatomic) bool shouldPropagateEditingMode;
+@property (readonly) Class superclass;
 
 - (void)_addViewController:(id)arg1;
 - (id)_contentView;

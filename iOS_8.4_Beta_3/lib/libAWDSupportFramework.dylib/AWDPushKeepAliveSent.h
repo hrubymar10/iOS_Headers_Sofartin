@@ -22,22 +22,22 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int connectionType;
-@property(assign,readwrite) unsigned int dualChannelState;
-@property(assign,retain) NSString * guid;
-@property(assign,readwrite) bool hasConnectionType;
-@property(assign,readwrite) bool hasDualChannelState;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasKeepAliveACKDuration;
-@property(assign,readwrite) bool hasLinkQuality;
-@property(assign,readwrite) bool hasNextKeepAliveInterval;
-@property(assign,readwrite) bool hasTimeSinceLastKeepAlive;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int keepAliveACKDuration;
-@property(assign,readwrite) int linkQuality;
-@property(assign,readwrite) unsigned int nextKeepAliveInterval;
-@property(assign,readwrite) unsigned int timeSinceLastKeepAlive;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int connectionType;
+@property (nonatomic) unsigned int dualChannelState;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic) bool hasConnectionType;
+@property (nonatomic) bool hasDualChannelState;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasKeepAliveACKDuration;
+@property (nonatomic) bool hasLinkQuality;
+@property (nonatomic) bool hasNextKeepAliveInterval;
+@property (nonatomic) bool hasTimeSinceLastKeepAlive;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int keepAliveACKDuration;
+@property (nonatomic) int linkQuality;
+@property (nonatomic) unsigned int nextKeepAliveInterval;
+@property (nonatomic) unsigned int timeSinceLastKeepAlive;
+@property (nonatomic) unsigned long long timestamp;
 
 - (unsigned int)connectionType;
 - (void)copyTo:(id)arg1;

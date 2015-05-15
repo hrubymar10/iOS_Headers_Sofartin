@@ -28,30 +28,30 @@
     NSData *_trackInfo;
 }
 
-@property(getter=isSBEnabled,assign,readonly) bool SBEnabled;
-@property(assign,copy) NSString * containerID;
-@property(assign,readonly) unsigned long long containerType;
-@property(assign,copy) NSData * dataRepresentation;
-@property(assign,copy) NSString * deviceName;
-@property(assign,readonly) unsigned long long endReasonType;
-@property(assign,copy) NSDate * eventDate;
-@property(assign,copy) NSTimeZone * eventTimeZone;
-@property(assign,copy) NSString * externalID;
-@property(assign,copy) NSString * featureName;
-@property(assign,readonly) double itemDuration;
-@property(assign,readonly) double itemEndTime;
-@property(assign,readonly) double itemStartTime;
-@property(assign,readonly) unsigned long long itemType;
-@property(assign,readonly) unsigned long long mediaType;
-@property(getter=isOffline,assign,readonly) bool offline;
-@property(assign,readonly) long long persistentID;
-@property(assign,copy) NSString * personalizedContainerID;
-@property(assign,copy) NSData * recommendationData;
-@property(assign,readonly) unsigned long long sourceType;
-@property(assign,readonly) unsigned long long storeAccountID;
-@property(assign,copy) NSString * storeID;
-@property(assign,copy) NSData * timedMetadata;
-@property(assign,copy) NSData * trackInfo;
+@property (getter=isSBEnabled, nonatomic, readonly) bool SBEnabled;
+@property (nonatomic, readonly, copy) NSString *containerID;
+@property (nonatomic, readonly) unsigned long long containerType;
+@property (nonatomic, readonly, copy) NSData *dataRepresentation;
+@property (nonatomic, readonly, copy) NSString *deviceName;
+@property (nonatomic, readonly) unsigned long long endReasonType;
+@property (nonatomic, readonly, copy) NSDate *eventDate;
+@property (nonatomic, readonly, copy) NSTimeZone *eventTimeZone;
+@property (nonatomic, readonly, copy) NSString *externalID;
+@property (nonatomic, readonly, copy) NSString *featureName;
+@property (nonatomic, readonly) double itemDuration;
+@property (nonatomic, readonly) double itemEndTime;
+@property (nonatomic, readonly) double itemStartTime;
+@property (nonatomic, readonly) unsigned long long itemType;
+@property (nonatomic, readonly) unsigned long long mediaType;
+@property (getter=isOffline, nonatomic, readonly) bool offline;
+@property (nonatomic, readonly) long long persistentID;
+@property (nonatomic, readonly, copy) NSString *personalizedContainerID;
+@property (nonatomic, readonly, copy) NSData *recommendationData;
+@property (nonatomic, readonly) unsigned long long sourceType;
+@property (nonatomic, readonly) unsigned long long storeAccountID;
+@property (nonatomic, readonly, copy) NSString *storeID;
+@property (nonatomic, readonly, copy) NSData *timedMetadata;
+@property (nonatomic, readonly, copy) NSData *trackInfo;
 
 + (bool)supportsSecureCoding;
 

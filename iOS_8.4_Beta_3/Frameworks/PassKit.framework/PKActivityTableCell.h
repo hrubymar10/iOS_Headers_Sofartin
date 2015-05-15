@@ -6,7 +6,7 @@
     UIActivityIndicatorView *_activityIndicator;
 }
 
-@property(assign,readonly) UIActivityIndicatorView * activityIndicator;
+@property (nonatomic, readonly) UIActivityIndicatorView *activityIndicator;
 
 - (id)activityIndicator;
 - (id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2;

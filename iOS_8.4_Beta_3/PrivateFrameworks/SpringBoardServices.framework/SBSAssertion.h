@@ -12,8 +12,8 @@
     NSString *_reason;
 }
 
-@property(assign,readonly) NSString * assertionName;
-@property(assign,readonly) NSString * reason;
+@property (nonatomic, readonly) NSString *assertionName;
+@property (nonatomic, readonly) NSString *reason;
 
 - (id)assertionName;
 - (void)dealloc;

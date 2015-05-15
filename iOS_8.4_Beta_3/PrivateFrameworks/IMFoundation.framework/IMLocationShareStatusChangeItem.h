@@ -12,13 +12,13 @@
     long long _status;
 }
 
-@property(assign,readwrite) bool actionable;
-@property(assign,readwrite) long long direction;
-@property(assign,readwrite) bool expired;
-@property(assign,retain) NSString * otherCountryCode;
-@property(assign,retain) NSString * otherHandle;
-@property(assign,retain) NSString * otherUnformattedID;
-@property(assign,readwrite) long long status;
+@property (nonatomic) bool actionable;
+@property (nonatomic) long long direction;
+@property (nonatomic) bool expired;
+@property (nonatomic, retain) NSString *otherCountryCode;
+@property (nonatomic, retain) NSString *otherHandle;
+@property (nonatomic, retain) NSString *otherUnformattedID;
+@property (nonatomic) long long status;
 
 - (bool)_hasMessageChatItem;
 - (id)_newChatItems;

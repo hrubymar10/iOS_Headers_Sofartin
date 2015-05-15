@@ -14,16 +14,16 @@
     } _eventCacheTimeRange;
 }
 
-@property(assign,retain) NSString * accountingGroupName;
-@property(assign,readonly) short accountingGroupType;
-@property(assign,readwrite) bool closeAllAccountingEventsAtBoot;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool eventCacheOn;
-@property(assign,retain) NSArray * eventCacheResults;
-@property(assign,readwrite) struct _PLTimeIntervalRange { double x1; double x2; } eventCacheTimeRange;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, retain) NSString *accountingGroupName;
+@property (readonly) short accountingGroupType;
+@property bool closeAllAccountingEventsAtBoot;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property bool eventCacheOn;
+@property (retain) NSArray *eventCacheResults;
+@property struct _PLTimeIntervalRange { double x1; double x2; } eventCacheTimeRange;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)accountingGroupFromAGName:(id)arg1;
 + (id)entryEventNoneDefinitionAccountingGroup;

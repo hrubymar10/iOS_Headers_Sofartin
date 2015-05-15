@@ -10,10 +10,10 @@
     NSURL *_url;
 }
 
-@property(assign,readwrite) QLZipArchive * archive;
-@property(assign,readwrite) NSData * data;
-@property(assign,readwrite) struct archive_entry { }* entry;
-@property(assign,readwrite) NSURL * url;
+@property QLZipArchive *archive;
+@property NSData *data;
+@property struct archive_entry { }*entry;
+@property (nonatomic) NSURL *url;
 
 - (id)archive;
 - (id)data;

@@ -7,10 +7,10 @@
     GEOTileCacheReserved *_reserved;
 }
 
-@property(assign,readonly) unsigned long long currentCost;
-@property(assign,readonly) unsigned long long currentCount;
-@property(assign,readwrite) unsigned long long maxCapacity;
-@property(assign,readwrite) unsigned long long maxCost;
+@property (readonly) unsigned long long currentCost;
+@property (readonly) unsigned long long currentCount;
+@property unsigned long long maxCapacity;
+@property unsigned long long maxCost;
 
 - (id)_description;
 - (void)_enteredBackground:(id)arg1;

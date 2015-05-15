@@ -20,22 +20,22 @@
     NSDate *_subscriptionDate;
 }
 
-@property(assign,retain) NSString * GUID;
-@property(assign,retain) NSString * URLString;
-@property(assign,retain) id context;
-@property(assign,retain) NSString * ctag;
-@property(assign,retain) NSString * foreignCtag;
-@property(assign,readwrite) bool isFamilySharedAlbum;
-@property(assign,retain) NSDictionary * metadata;
-@property(assign,retain) NSString * ownerEmail;
-@property(assign,retain) NSString * ownerFirstName;
-@property(assign,retain) NSString * ownerFullName;
-@property(assign,retain) NSString * ownerLastName;
-@property(assign,retain) NSString * ownerPersonID;
-@property(assign,retain) NSString * publicURLString;
-@property(assign,readwrite) int relationshipState;
-@property(assign,retain) NSDate * subscriptionDate;
-@property(assign,readonly) bool useForeignCtag;
+@property (nonatomic, retain) NSString *GUID;
+@property (nonatomic, retain) NSString *URLString;
+@property (nonatomic, retain) id context;
+@property (nonatomic, retain) NSString *ctag;
+@property (nonatomic, retain) NSString *foreignCtag;
+@property (nonatomic) bool isFamilySharedAlbum;
+@property (nonatomic, retain) NSDictionary *metadata;
+@property (nonatomic, retain) NSString *ownerEmail;
+@property (nonatomic, retain) NSString *ownerFirstName;
+@property (nonatomic, retain) NSString *ownerFullName;
+@property (nonatomic, retain) NSString *ownerLastName;
+@property (nonatomic, retain) NSString *ownerPersonID;
+@property (nonatomic, retain) NSString *publicURLString;
+@property (nonatomic) int relationshipState;
+@property (nonatomic, retain) NSDate *subscriptionDate;
+@property (nonatomic, readonly) bool useForeignCtag;
 
 + (id)album;
 + (id)albumWithAlbum:(id)arg1;

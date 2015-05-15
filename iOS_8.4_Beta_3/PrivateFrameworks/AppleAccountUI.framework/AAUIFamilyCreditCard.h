@@ -12,13 +12,13 @@
     NSString *_usageNotice;
 }
 
-@property(assign,copy) NSDate * expirationDate;
-@property(assign,retain) UIImage * image;
-@property(assign,copy) NSURL * imageURL;
-@property(assign,copy) NSString * lastFourDigits;
-@property(assign,copy) NSString * providerDescription;
-@property(assign,copy) NSString * type;
-@property(assign,copy) NSString * usageNotice;
+@property (nonatomic, copy) NSDate *expirationDate;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, copy) NSURL *imageURL;
+@property (nonatomic, copy) NSString *lastFourDigits;
+@property (nonatomic, copy) NSString *providerDescription;
+@property (nonatomic, copy) NSString *type;
+@property (nonatomic, copy) NSString *usageNotice;
 
 - (void).cxx_destruct;
 - (id)expirationDate;

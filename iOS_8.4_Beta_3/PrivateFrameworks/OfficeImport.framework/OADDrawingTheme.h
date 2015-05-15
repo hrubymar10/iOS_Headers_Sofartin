@@ -13,14 +13,14 @@
     OADDefaultProperties *mTextDefaults;
 }
 
-@property(assign,readonly) OADColorMap * colorMap;
-@property(assign,retain) <OADColorPalette> * colorPalette;
-@property(assign,retain) OADColorScheme * colorScheme;
-@property(assign,readonly) OADFontScheme * fontScheme;
-@property(assign,readonly) OADDefaultProperties * lineDefaults;
-@property(assign,readonly) OADDefaultProperties * shapeDefaults;
-@property(assign,readonly) OADStyleMatrix * styleMatrix;
-@property(assign,readonly) OADDefaultProperties * textDefaults;
+@property (nonatomic, readonly) OADColorMap *colorMap;
+@property (nonatomic, retain) <OADColorPalette> *colorPalette;
+@property (nonatomic, retain) OADColorScheme *colorScheme;
+@property (nonatomic, readonly) OADFontScheme *fontScheme;
+@property (nonatomic, readonly) OADDefaultProperties *lineDefaults;
+@property (nonatomic, readonly) OADDefaultProperties *shapeDefaults;
+@property (nonatomic, readonly) OADStyleMatrix *styleMatrix;
+@property (nonatomic, readonly) OADDefaultProperties *textDefaults;
 
 - (void)applyThemeOverrides:(id)arg1 colorMapOverride:(id)arg2;
 - (id)colorMap;

@@ -13,10 +13,10 @@
     bool _showsAdvancedSettings;
 }
 
-@property(assign,retain) NSString * firstPasscodeEntry;
-@property(assign,readwrite) int mode;
-@property(assign,readwrite) int securityCodeType;
-@property(assign,readwrite) bool showsAdvancedSettings;
+@property (nonatomic, retain) NSString *firstPasscodeEntry;
+@property (nonatomic) int mode;
+@property (nonatomic) int securityCodeType;
+@property (nonatomic) bool showsAdvancedSettings;
 
 - (void)animatePasscodeFieldLeft:(bool)arg1;
 - (void)dealloc;

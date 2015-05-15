@@ -6,7 +6,7 @@
     CALayer *_layer;
 }
 
-@property(assign,retain) CALayer * layer;
+@property (nonatomic, retain) CALayer *layer;
 
 - (void)dealloc;
 - (bool)isOpaque;

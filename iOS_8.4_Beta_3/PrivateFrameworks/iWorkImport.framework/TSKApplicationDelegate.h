@@ -6,22 +6,22 @@
     <TSKCompatibilityDelegate> *_compatibilityDelegate;
 }
 
-@property(getter=isActivating,assign,readonly) bool activating;
-@property(assign,readonly) NSString * applicationName;
-@property(assign,retain) <TSKCompatibilityDelegate> * compatibilityDelegate;
-@property(assign,readonly) bool designModeEnabled;
-@property(assign,readonly) NSString * documentTypeDisplayName;
-@property(assign,readwrite) unsigned long long iWorkAuthorColorIndex;
-@property(assign,copy) NSString * iWorkAuthorName;
-@property(getter=isInBackground,assign,readonly) bool inBackground;
-@property(assign,readonly) bool isCanvasFullScreen;
-@property(assign,readonly) bool performanceModeEnabled;
-@property(assign,readonly) bool tableCellInspectorShowsNaturalAlignment;
-@property(assign,readonly) bool tableHeaderInspectorShowsFreezeHeaderColumnsSwitch;
-@property(assign,readonly) bool tableHeaderInspectorShowsFreezeHeaderRowsSwitch;
-@property(assign,readonly) bool tableHeaderInspectorShowsRepeatHeaderRowsSwitch;
-@property(assign,readonly) NSString * templateTypeDisplayName;
-@property(assign,readonly) bool textInspectorShowsMoreSubpane;
+@property (getter=isActivating, readonly) bool activating;
+@property (nonatomic, readonly) NSString *applicationName;
+@property (nonatomic, retain) <TSKCompatibilityDelegate> *compatibilityDelegate;
+@property (nonatomic, readonly) bool designModeEnabled;
+@property (nonatomic, readonly) NSString *documentTypeDisplayName;
+@property (nonatomic) unsigned long long iWorkAuthorColorIndex;
+@property (nonatomic, copy) NSString *iWorkAuthorName;
+@property (getter=isInBackground, readonly) bool inBackground;
+@property (nonatomic, readonly) bool isCanvasFullScreen;
+@property (nonatomic, readonly) bool performanceModeEnabled;
+@property (nonatomic, readonly) bool tableCellInspectorShowsNaturalAlignment;
+@property (nonatomic, readonly) bool tableHeaderInspectorShowsFreezeHeaderColumnsSwitch;
+@property (nonatomic, readonly) bool tableHeaderInspectorShowsFreezeHeaderRowsSwitch;
+@property (nonatomic, readonly) bool tableHeaderInspectorShowsRepeatHeaderRowsSwitch;
+@property (nonatomic, readonly) NSString *templateTypeDisplayName;
+@property (nonatomic, readonly) bool textInspectorShowsMoreSubpane;
 
 + (id)documentDirectoryPath;
 + (id)platform_sharedDelegate;

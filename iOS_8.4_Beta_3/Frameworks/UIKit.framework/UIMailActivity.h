@@ -11,18 +11,18 @@
     bool _sourceIsManaged;
 }
 
-@property(assign,retain) NSString * autosaveIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool hasAnyAccount;
-@property(assign,readwrite) bool hasFilteredAccount;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool keyboardVisible;
-@property(assign,retain) MFMailComposeViewController * mailComposeViewController;
-@property(assign,readonly) Class objectRestorationClass;
-@property(assign,readonly) <UIStateRestoring> * restorationParent;
-@property(assign,readwrite) bool sourceIsManaged;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSString *autosaveIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool hasAnyAccount;
+@property (nonatomic) bool hasFilteredAccount;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool keyboardVisible;
+@property (nonatomic, retain) MFMailComposeViewController *mailComposeViewController;
+@property (nonatomic, readonly) Class objectRestorationClass;
+@property (nonatomic, readonly) <UIStateRestoring> *restorationParent;
+@property (nonatomic) bool sourceIsManaged;
+@property (readonly) Class superclass;
 
 + (long long)activityCategory;
 

@@ -7,8 +7,8 @@
     NSMutableArray *_targets;
 }
 
-@property(assign,retain) NSLock * _lock;
-@property(assign,retain) NSMutableArray * _targets;
+@property (nonatomic, retain) NSLock *_lock;
+@property (nonatomic, retain) NSMutableArray *_targets;
 
 - (id)_lock;
 - (id)_targets;

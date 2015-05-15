@@ -18,11 +18,11 @@
     unsigned long long _storeAccountID;
 }
 
-@property(getter=isSBEnabled,assign,readwrite) bool SBEnabled;
-@property(getter=isOffline,assign,readwrite) bool offline;
-@property(assign,readonly) MPAVController * player;
-@property(assign,readonly) MPUReportingController * reportingController;
-@property(assign,readwrite) unsigned long long storeAccountID;
+@property (getter=isSBEnabled, nonatomic) bool SBEnabled;
+@property (getter=isOffline, nonatomic) bool offline;
+@property (nonatomic, readonly) MPAVController *player;
+@property (nonatomic, readonly) MPUReportingController *reportingController;
+@property (nonatomic) unsigned long long storeAccountID;
 
 - (void).cxx_destruct;
 - (double)_itemEndTimeForItem:(id)arg1 withProposedEndTime:(double)arg2;

@@ -9,7 +9,7 @@
     NSDictionary *_urlsToResults;
 }
 
-@property(assign,retain) NSDictionary * urlsToResults;
+@property (nonatomic, readonly, retain) NSDictionary *urlsToResults;
 
 - (id)copyDefaultParserForContentType:(id)arg1;
 - (void)dealloc;

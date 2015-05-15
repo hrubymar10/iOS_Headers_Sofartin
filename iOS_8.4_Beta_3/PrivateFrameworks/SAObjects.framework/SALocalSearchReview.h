@@ -4,17 +4,17 @@
 
 @interface SALocalSearchReview : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * author;
-@property(assign,copy) NSString * comment;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) SACalendar * lastUpdated;
-@property(assign,copy) NSString * publication;
-@property(assign,retain) SAUIAppPunchOut * reviewPunchOut;
-@property(assign,retain) SALocalSearchRating * reviewRating;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *author;
+@property (nonatomic, copy) NSString *comment;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, retain) SACalendar *lastUpdated;
+@property (nonatomic, copy) NSString *publication;
+@property (nonatomic, retain) SAUIAppPunchOut *reviewPunchOut;
+@property (nonatomic, retain) SALocalSearchRating *reviewRating;
+@property (readonly) Class superclass;
 
 + (id)review;
 + (id)reviewWithDictionary:(id)arg1 context:(id)arg2;

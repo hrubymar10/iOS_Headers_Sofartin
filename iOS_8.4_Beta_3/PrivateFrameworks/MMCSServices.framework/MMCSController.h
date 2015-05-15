@@ -16,8 +16,8 @@
     NSMutableDictionary *_transfers;
 }
 
-@property(assign,readwrite) long long connectionBehavior;
-@property(assign,readonly) bool isActive;
+@property long long connectionBehavior;
+@property (readonly) bool isActive;
 
 - (struct __MMCSEngine { }*)_engine;
 - (void)_getItemCompleted:(id)arg1 path:(id)arg2 error:(id)arg3;

@@ -8,9 +8,9 @@
     XPCRequest *_request;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,retain) <NSCoding> * message;
-@property(assign,retain) XPCRequest * request;
+@property (nonatomic, readonly, retain) NSData *data;
+@property (nonatomic, readonly, retain) <NSCoding> *message;
+@property (nonatomic, readonly, retain) XPCRequest *request;
 
 - (void).cxx_destruct;
 - (id)data;

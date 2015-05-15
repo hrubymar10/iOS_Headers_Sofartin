@@ -17,18 +17,18 @@
     PFUbiquityTransactionLog *_transactionLog;
 }
 
-@property(assign,readonly) PFUbiquityPeer * actingPeer;
-@property(assign,retain) PFUbiquitySwitchboardCacheWrapper * cacheWrapper;
-@property(assign,retain) PFUbiquityKnowledgeVector * currentKnowledgeVector;
-@property(assign,retain) NSString * exportingPeerID;
-@property(assign,readonly) NSMutableDictionary * globalIDToFetchedObject;
-@property(assign,retain) NSDictionary * globalIDToLocalIDURICache;
-@property(assign,retain) PFUbiquityBaselineHeuristics * heuristics;
-@property(assign,retain) PFUbiquityKnowledgeVector * knowledgeVector;
-@property(assign,retain) _PFUbiquityStack * stack;
-@property(assign,retain) PFUbiquityStoreMetadata * storeMetadata;
-@property(assign,retain) PFUbiquityStoreSaveSnapshot * storeSaveSnapshot;
-@property(assign,retain) PFUbiquityTransactionLog * transactionLog;
+@property (nonatomic, readonly) PFUbiquityPeer *actingPeer;
+@property (nonatomic, retain) PFUbiquitySwitchboardCacheWrapper *cacheWrapper;
+@property (nonatomic, retain) PFUbiquityKnowledgeVector *currentKnowledgeVector;
+@property (nonatomic, retain) NSString *exportingPeerID;
+@property (nonatomic, readonly) NSMutableDictionary *globalIDToFetchedObject;
+@property (nonatomic, retain) NSDictionary *globalIDToLocalIDURICache;
+@property (nonatomic, retain) PFUbiquityBaselineHeuristics *heuristics;
+@property (nonatomic, retain) PFUbiquityKnowledgeVector *knowledgeVector;
+@property (nonatomic, retain) _PFUbiquityStack *stack;
+@property (nonatomic, retain) PFUbiquityStoreMetadata *storeMetadata;
+@property (nonatomic, retain) PFUbiquityStoreSaveSnapshot *storeSaveSnapshot;
+@property (nonatomic, retain) PFUbiquityTransactionLog *transactionLog;
 
 - (id)actingPeer;
 - (id)cacheWrapper;

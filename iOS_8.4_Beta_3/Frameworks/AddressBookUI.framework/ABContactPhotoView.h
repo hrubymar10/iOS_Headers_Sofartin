@@ -19,24 +19,24 @@
     UIGestureRecognizer *_tapGesture;
 }
 
-@property(assign,retain) UILabel * addPhotoLabel;
-@property(assign,retain) UIImageView * attributionImageView;
-@property(assign,retain) CNContact * contact;
-@property(assign,retain) UIImageView * contactImageView;
-@property(assign,retain) UIImage * currentImage;
-@property(assign,retain) UIImage * currentThumbnailImage;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ABPresenterDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UILabel * editPhotoLabel;
-@property(getter=isEditing,assign,readwrite) bool editing;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isAnimatingBounce;
-@property(assign,readwrite) bool modified;
-@property(assign,retain) NSDictionary * photoPickerInfo;
-@property(assign,readwrite) <ABContactPhotoViewDelegate> * photoViewDelegate;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIGestureRecognizer * tapGesture;
+@property (nonatomic, retain) UILabel *addPhotoLabel;
+@property (nonatomic, retain) UIImageView *attributionImageView;
+@property (nonatomic, retain) CNContact *contact;
+@property (nonatomic, retain) UIImageView *contactImageView;
+@property (nonatomic, retain) UIImage *currentImage;
+@property (nonatomic, retain) UIImage *currentThumbnailImage;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ABPresenterDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UILabel *editPhotoLabel;
+@property (getter=isEditing, nonatomic) bool editing;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isAnimatingBounce;
+@property (nonatomic) bool modified;
+@property (nonatomic, retain) NSDictionary *photoPickerInfo;
+@property (nonatomic) <ABContactPhotoViewDelegate> *photoViewDelegate;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIGestureRecognizer *tapGesture;
 
 + (id)supportedPasteboardTypes;
 

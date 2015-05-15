@@ -8,9 +8,9 @@
     long long _position;
 }
 
-@property(assign,copy) NSString * containerIdentifier;
-@property(getter=isKeyAsset,assign,readwrite) bool keyAsset;
-@property(assign,readwrite) long long position;
+@property (nonatomic, copy) NSString *containerIdentifier;
+@property (getter=isKeyAsset, nonatomic) bool keyAsset;
+@property (nonatomic) long long position;
 
 + (bool)supportsSecureCoding;
 

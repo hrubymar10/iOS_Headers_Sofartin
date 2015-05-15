@@ -7,21 +7,21 @@
     SSDownload *_download;
 }
 
-@property(assign,readonly) NSString * artistName;
-@property(assign,readonly) long long bytesDownloaded;
-@property(assign,readonly) long long bytesTotal;
-@property(getter=isContentRestricted,assign,readonly) bool contentRestricted;
-@property(assign,readonly) double estimatedSecondsRemaining;
-@property(assign,retain) SSDownload * managedDownload;
-@property(getter=isPausable,assign,readonly) bool pausable;
-@property(assign,readonly) double percentComplete;
-@property(assign,readonly) NSString * phaseIdentifier;
-@property(getter=isPurchase,assign,readonly) bool purchase;
-@property(assign,readonly) NSString * statusDescription;
-@property(assign,readonly) NSNumber * storeItemIdentifier;
-@property(assign,readonly) NSNumber * storePreorderIdentifier;
-@property(assign,readonly) NSURL * thumbnailImageURL;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSString *artistName;
+@property (nonatomic, readonly) long long bytesDownloaded;
+@property (nonatomic, readonly) long long bytesTotal;
+@property (getter=isContentRestricted, nonatomic, readonly) bool contentRestricted;
+@property (nonatomic, readonly) double estimatedSecondsRemaining;
+@property (nonatomic, retain) SSDownload *managedDownload;
+@property (getter=isPausable, nonatomic, readonly) bool pausable;
+@property (nonatomic, readonly) double percentComplete;
+@property (nonatomic, readonly) NSString *phaseIdentifier;
+@property (getter=isPurchase, nonatomic, readonly) bool purchase;
+@property (nonatomic, readonly) NSString *statusDescription;
+@property (nonatomic, readonly) NSNumber *storeItemIdentifier;
+@property (nonatomic, readonly) NSNumber *storePreorderIdentifier;
+@property (nonatomic, readonly) NSURL *thumbnailImageURL;
+@property (nonatomic, readonly) NSString *title;
 
 + (id)downloadExternalProperties;
 + (id)downloadProperties;

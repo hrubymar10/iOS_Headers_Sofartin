@@ -13,12 +13,12 @@
     double _wifidBootTimeDiff;
 }
 
-@property(assign,readwrite) bool hasPid;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasWifidBootTimeDiff;
-@property(assign,readwrite) unsigned int pid;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) double wifidBootTimeDiff;
+@property (nonatomic) bool hasPid;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasWifidBootTimeDiff;
+@property (nonatomic) unsigned int pid;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) double wifidBootTimeDiff;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

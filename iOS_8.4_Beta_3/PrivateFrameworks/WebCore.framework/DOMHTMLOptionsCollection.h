@@ -4,8 +4,8 @@
 
 @interface DOMHTMLOptionsCollection : DOMObject
 
-@property(assign,readwrite) unsigned int length;
-@property(assign,readwrite) int selectedIndex;
+@property unsigned int length;
+@property int selectedIndex;
 
 - (void)add:(id)arg1 index:(unsigned int)arg2;
 - (void)dealloc;

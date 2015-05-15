@@ -13,14 +13,14 @@
     NSMutableSet *_weakRelations;
 }
 
-@property(assign,retain) NSMutableDictionary * cachedProperties;
-@property(assign,retain) NSMutableDictionary * dirtyProperties;
-@property(assign,readwrite) unsigned int flags;
-@property(assign,readwrite) EKObjectRelation * owningRelation;
-@property(assign,retain) EKPersistentObject * persistentObject;
-@property(assign,copy) NSString * propertyName;
-@property(assign,retain) NSMutableDictionary * relations;
-@property(assign,retain) NSMutableSet * weakRelations;
+@property (nonatomic, retain) NSMutableDictionary *cachedProperties;
+@property (nonatomic, retain) NSMutableDictionary *dirtyProperties;
+@property (nonatomic) unsigned int flags;
+@property (nonatomic) EKObjectRelation *owningRelation;
+@property (nonatomic, retain) EKPersistentObject *persistentObject;
+@property (nonatomic, copy) NSString *propertyName;
+@property (nonatomic, retain) NSMutableDictionary *relations;
+@property (nonatomic, retain) NSMutableSet *weakRelations;
 
 - (void)addWeakRelation:(id)arg1;
 - (bool)boolPropertyForKey:(id)arg1 withPersistentFallback:(id)arg2;

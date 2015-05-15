@@ -16,17 +16,17 @@
     NSString *_soundName;
 }
 
-@property(assign,copy) NSString * alertActionLocalizationKey;
-@property(assign,copy) NSString * alertBody;
-@property(assign,copy) NSString * alertLaunchImage;
-@property(assign,copy) NSArray * alertLocalizationArgs;
-@property(assign,copy) NSString * alertLocalizationKey;
-@property(assign,copy) NSNumber * badge;
-@property(assign,copy) NSString * containerIdentifier;
-@property(assign,readwrite) bool isPruned;
-@property(assign,copy) CKNotificationID * notificationID;
-@property(assign,readwrite) long long notificationType;
-@property(assign,copy) NSString * soundName;
+@property (nonatomic, copy) NSString *alertActionLocalizationKey;
+@property (nonatomic, copy) NSString *alertBody;
+@property (nonatomic, copy) NSString *alertLaunchImage;
+@property (nonatomic, copy) NSArray *alertLocalizationArgs;
+@property (nonatomic, copy) NSString *alertLocalizationKey;
+@property (nonatomic, copy) NSNumber *badge;
+@property (nonatomic, copy) NSString *containerIdentifier;
+@property (nonatomic) bool isPruned;
+@property (nonatomic, copy) CKNotificationID *notificationID;
+@property (nonatomic) long long notificationType;
+@property (nonatomic, copy) NSString *soundName;
 
 + (id)_realNotificationFromRemoteNotificationDictionary:(id)arg1;
 + (id)notificationFromRemoteNotificationDictionary:(id)arg1;

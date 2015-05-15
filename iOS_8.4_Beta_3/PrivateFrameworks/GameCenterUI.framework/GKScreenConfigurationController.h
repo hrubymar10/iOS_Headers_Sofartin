@@ -7,8 +7,8 @@
     double _greatestScreenScale;
 }
 
-@property(assign,retain) GKEventEmitter * emitter;
-@property(assign,readonly) double greatestScreenScale;
+@property (nonatomic, retain) GKEventEmitter *emitter;
+@property (readonly) double greatestScreenScale;
 
 + (double)_scaleForCurrentDisplayConfiguration;
 + (id)sharedController;

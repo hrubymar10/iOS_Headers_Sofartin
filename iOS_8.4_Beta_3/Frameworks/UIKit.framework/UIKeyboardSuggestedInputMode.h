@@ -6,7 +6,7 @@
     bool enabled;
 }
 
-@property(assign,readwrite) bool enabled;
+@property (nonatomic) bool enabled;
 
 - (id)description;
 - (bool)enabled;

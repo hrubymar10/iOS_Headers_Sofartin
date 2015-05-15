@@ -4,14 +4,14 @@
 
 @interface SASportsMatchupPlaySummary : AceObject <SAAceSerializable>
 
-@property(assign,readwrite) bool appliesToAwayTeam;
-@property(assign,readwrite) bool appliesToHomeTeam;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * summaryDescription;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * time;
+@property (nonatomic) bool appliesToAwayTeam;
+@property (nonatomic) bool appliesToHomeTeam;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *summaryDescription;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *time;
 
 + (id)matchupPlaySummary;
 + (id)matchupPlaySummaryWithDictionary:(id)arg1 context:(id)arg2;

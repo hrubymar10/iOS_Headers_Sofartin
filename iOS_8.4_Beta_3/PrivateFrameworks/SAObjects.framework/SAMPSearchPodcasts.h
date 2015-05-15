@@ -4,8 +4,8 @@
 
 @interface SAMPSearchPodcasts : SADomainCommand
 
-@property(assign,readwrite) long long maxResults;
-@property(assign,copy) NSString * podcastName;
+@property (nonatomic) long long maxResults;
+@property (nonatomic, copy) NSString *podcastName;
 
 + (id)searchPodcasts;
 + (id)searchPodcastsWithDictionary:(id)arg1 context:(id)arg2;

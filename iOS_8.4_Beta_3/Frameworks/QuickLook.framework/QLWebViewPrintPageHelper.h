@@ -13,12 +13,12 @@
     NSURLRequest *_request;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) QLPreviewConverter * previewConverter;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } printableSize;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) QLPreviewConverter *previewConverter;
+@property (nonatomic) struct CGSize { double x1; double x2; } printableSize;
+@property (readonly) Class superclass;
 
 + (bool)_isXPathType:(id)arg1;
 + (id)printPageRendererWithBrowserView:(id)arg1 request:(id)arg2 documentType:(id)arg3;

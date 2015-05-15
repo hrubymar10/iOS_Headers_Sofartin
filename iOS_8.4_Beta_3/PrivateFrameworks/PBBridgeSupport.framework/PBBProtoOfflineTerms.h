@@ -11,17 +11,17 @@
     NSData *_warranty;
 }
 
-@property(assign,retain) NSMutableArray * appleLanguages;
-@property(assign,retain) NSString * countryCode;
-@property(assign,readonly) bool hasCountryCode;
-@property(assign,readonly) bool hasLanguageCode;
-@property(assign,readonly) bool hasLicense;
-@property(assign,readonly) bool hasMultiterms;
-@property(assign,readonly) bool hasWarranty;
-@property(assign,retain) NSString * languageCode;
-@property(assign,retain) NSData * license;
-@property(assign,retain) NSData * multiterms;
-@property(assign,retain) NSData * warranty;
+@property (nonatomic, retain) NSMutableArray *appleLanguages;
+@property (nonatomic, retain) NSString *countryCode;
+@property (nonatomic, readonly) bool hasCountryCode;
+@property (nonatomic, readonly) bool hasLanguageCode;
+@property (nonatomic, readonly) bool hasLicense;
+@property (nonatomic, readonly) bool hasMultiterms;
+@property (nonatomic, readonly) bool hasWarranty;
+@property (nonatomic, retain) NSString *languageCode;
+@property (nonatomic, retain) NSData *license;
+@property (nonatomic, retain) NSData *multiterms;
+@property (nonatomic, retain) NSData *warranty;
 
 - (void).cxx_destruct;
 - (void)addAppleLanguages:(id)arg1;

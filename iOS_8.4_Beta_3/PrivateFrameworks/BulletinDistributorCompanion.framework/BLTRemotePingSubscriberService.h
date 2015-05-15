@@ -10,15 +10,15 @@
     NSString *_machServiceName;
 }
 
-@property(assign,retain) NSXPCConnection * connectionFromServer;
-@property(assign,retain) NSXPCConnection * connectionToServer;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <BLTPingSubscribing> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSXPCListener * listener;
-@property(assign,copy) NSString * machServiceName;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSXPCConnection *connectionFromServer;
+@property (nonatomic, retain) NSXPCConnection *connectionToServer;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <BLTPingSubscribing> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSXPCListener *listener;
+@property (nonatomic, copy) NSString *machServiceName;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_connect;

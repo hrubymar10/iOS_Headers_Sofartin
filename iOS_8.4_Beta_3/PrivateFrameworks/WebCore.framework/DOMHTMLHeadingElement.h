@@ -4,7 +4,7 @@
 
 @interface DOMHTMLHeadingElement : DOMHTMLElement
 
-@property(assign,copy) NSString * align;
+@property (copy) NSString *align;
 
 - (id)align;
 - (void)setAlign:(id)arg1;

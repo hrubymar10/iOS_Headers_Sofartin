@@ -14,14 +14,14 @@
     SKUIWishlistViewController *_wishlistViewController;
 }
 
-@property(assign,readonly) SKUIIPadSearchController * IPadSearchController;
-@property(assign,readonly) UIBarButtonItem * _wishlistButtonItem;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) SKUIIPadSearchController *IPadSearchController;
+@property (nonatomic, readonly) UIBarButtonItem *_wishlistButtonItem;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)IPadSearchController;

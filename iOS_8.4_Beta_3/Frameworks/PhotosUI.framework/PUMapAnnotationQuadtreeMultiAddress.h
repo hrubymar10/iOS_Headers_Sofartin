@@ -6,7 +6,7 @@
     NSMutableSet *_alternativeAddresses;
 }
 
-@property(assign,readonly) NSArray * alternativeAddresses;
+@property (nonatomic, readonly) NSArray *alternativeAddresses;
 
 - (void).cxx_destruct;
 - (void)addAlternativeAddress:(id)arg1;

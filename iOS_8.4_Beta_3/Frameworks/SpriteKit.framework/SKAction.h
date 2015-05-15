@@ -6,11 +6,11 @@
     struct SKCAction { int (**x1)(); unsigned int x2; float x3; id x4; /* Warning: Unrecognized filer type: '?' using 'void*' */ void*x5; id x6; bool x7; double x8; double x9; float x10; float x11; double x12; bool x13; bool x14; id x15; void*x16; long long x17; float x18; float x19; float x20; float x21; } *_caction;
 }
 
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) bool finished;
-@property(assign,readwrite) double speed;
-@property(assign,readwrite) id timingFunction;
-@property(assign,readwrite) long long timingMode;
+@property (nonatomic) double duration;
+@property (nonatomic) bool finished;
+@property (nonatomic) double speed;
+@property (nonatomic) id timingFunction;
+@property (nonatomic) long long timingMode;
 
 + (id)animateWithTextures:(id)arg1 timePerFrame:(double)arg2;
 + (id)animateWithTextures:(id)arg1 timePerFrame:(double)arg2 resize:(bool)arg3 restore:(bool)arg4;

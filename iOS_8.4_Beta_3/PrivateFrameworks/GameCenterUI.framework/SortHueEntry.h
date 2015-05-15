@@ -7,8 +7,8 @@
     long long _hue;
 }
 
-@property(assign,readwrite) long long count;
-@property(assign,readwrite) long long hue;
+@property (nonatomic) long long count;
+@property (nonatomic) long long hue;
 
 - (long long)count;
 - (id)description;

@@ -4,9 +4,9 @@
 
 @interface NSMapTable : NSObject <NSCoding, NSCopying, NSFastEnumeration>
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,copy) NSPointerFunctions * keyPointerFunctions;
-@property(assign,copy) NSPointerFunctions * valuePointerFunctions;
+@property (readonly) unsigned long long count;
+@property (readonly, copy) NSPointerFunctions *keyPointerFunctions;
+@property (readonly, copy) NSPointerFunctions *valuePointerFunctions;
 
 + (id)alloc;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;

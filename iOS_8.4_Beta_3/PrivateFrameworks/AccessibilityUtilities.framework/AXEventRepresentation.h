@@ -31,26 +31,26 @@
     } _windowLocation;
 }
 
-@property(assign,retain) NSData * HIDAttributeData;
-@property(assign,readwrite) unsigned long long HIDTime;
-@property(assign,readwrite) unsigned long long additionalFlags;
-@property(assign,retain) NSString * clientId;
-@property(assign,readwrite) unsigned int contextId;
-@property(assign,retain) NSData * data;
-@property(assign,readwrite) int flags;
-@property(assign,retain) AXEventHandInfoRepresentation * handInfo;
-@property(assign,readwrite) bool isBuiltIn;
-@property(assign,readwrite) bool isGeneratedEvent;
-@property(assign,retain) AXEventKeyInfoRepresentation * keyInfo;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } location;
-@property(assign,readwrite) int pid;
-@property(assign,readwrite) unsigned long long senderID;
-@property(assign,readwrite) int subtype;
-@property(assign,readwrite) unsigned int taskPort;
-@property(assign,readwrite) unsigned long long time;
-@property(assign,readwrite) unsigned int type;
-@property(assign,readwrite) void* window;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } windowLocation;
+@property (nonatomic, retain) NSData *HIDAttributeData;
+@property (nonatomic) unsigned long long HIDTime;
+@property (nonatomic) unsigned long long additionalFlags;
+@property (nonatomic, retain) NSString *clientId;
+@property (nonatomic) unsigned int contextId;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic) int flags;
+@property (nonatomic, retain) AXEventHandInfoRepresentation *handInfo;
+@property (nonatomic) bool isBuiltIn;
+@property (nonatomic) bool isGeneratedEvent;
+@property (nonatomic, retain) AXEventKeyInfoRepresentation *keyInfo;
+@property (nonatomic) struct CGPoint { double x1; double x2; } location;
+@property (nonatomic) int pid;
+@property (nonatomic) unsigned long long senderID;
+@property (nonatomic) int subtype;
+@property (nonatomic) unsigned int taskPort;
+@property (nonatomic) unsigned long long time;
+@property (nonatomic) unsigned int type;
+@property (nonatomic) void*window;
+@property (nonatomic) struct CGPoint { double x1; double x2; } windowLocation;
 
 + (id)_digitizerRepresentation:(struct __IOHIDEvent { }*)arg1 hidStreamIdentifier:(id)arg2;
 + (id)_keyboardButtonEvent:(struct __IOHIDEvent { }*)arg1;

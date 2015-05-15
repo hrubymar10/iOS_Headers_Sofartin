@@ -7,13 +7,13 @@
     NSMutableDictionary *_properties;
 }
 
-@property(assign,retain) UIImage * artworkImage;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) MusicProductDescription * productDescription;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) UIImage *artworkImage;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) MusicProductDescription *productDescription;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)artworkImage;

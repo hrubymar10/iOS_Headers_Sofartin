@@ -6,16 +6,16 @@
     NSDictionary *_icloud;
 }
 
-@property(assign,readonly) NSString * appleID;
-@property(assign,readonly) NSArray * appleIDAliases;
-@property(assign,readonly) NSDictionary * dataclassProperties;
-@property(assign,readonly) NSString * firstName;
-@property(assign,readonly) NSString * fmipAuthToken;
-@property(assign,readonly) NSString * iCloudAuthToken;
-@property(assign,readonly) NSString * lastName;
-@property(assign,readonly) NSString * primaryEmail;
-@property(assign,readonly) NSNumber * primaryEmailVerified;
-@property(assign,readonly) NSArray * provisionedDataclasses;
+@property (nonatomic, readonly) NSString *appleID;
+@property (nonatomic, readonly) NSArray *appleIDAliases;
+@property (nonatomic, readonly) NSDictionary *dataclassProperties;
+@property (nonatomic, readonly) NSString *firstName;
+@property (nonatomic, readonly) NSString *fmipAuthToken;
+@property (nonatomic, readonly) NSString *iCloudAuthToken;
+@property (nonatomic, readonly) NSString *lastName;
+@property (nonatomic, readonly) NSString *primaryEmail;
+@property (nonatomic, readonly) NSNumber *primaryEmailVerified;
+@property (nonatomic, readonly) NSArray *provisionedDataclasses;
 
 - (void).cxx_destruct;
 - (id)appleID;

@@ -8,9 +8,9 @@
     NSLayoutConstraint *_widthConstraint;
 }
 
-@property(assign,retain) UISegmentedControl * segmentedControl;
-@property(assign,readwrite) id target;
-@property(assign,retain) NSLayoutConstraint * widthConstraint;
+@property (nonatomic, retain) UISegmentedControl *segmentedControl;
+@property (nonatomic) id target;
+@property (nonatomic, retain) NSLayoutConstraint *widthConstraint;
 
 - (void)applyLayoutAttributes:(id)arg1;
 - (void)dealloc;

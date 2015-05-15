@@ -10,15 +10,15 @@
     bool _registeredForAchievementNotifications;
 }
 
-@property(assign,retain) HDClient * client;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <HDHealthExtensionsServerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <HDHealthDaemon> * healthDaemon;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readwrite) bool registeredForAchievementNotifications;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) HDClient *client;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <HDHealthExtensionsServerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <HDHealthDaemon> *healthDaemon;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic) bool registeredForAchievementNotifications;
+@property (readonly) Class superclass;
 
 + (bool)_shouldAcceptConnectionForClient:(id)arg1 error:(id*)arg2;
 + (id)serverWithClient:(id)arg1 healthDaemon:(id)arg2 delegate:(id)arg3 error:(id*)arg4;

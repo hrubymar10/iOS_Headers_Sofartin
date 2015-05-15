@@ -11,12 +11,12 @@
     NSSet *_toHandles;
 }
 
-@property(assign,retain) NSDate * endDate;
-@property(assign,retain) FMFHandle * fromHandle;
-@property(assign,retain) NSString * groupId;
-@property(assign,retain) NSString * requestId;
-@property(assign,readwrite) long long requestType;
-@property(assign,retain) NSSet * toHandles;
+@property (nonatomic, retain) NSDate *endDate;
+@property (nonatomic, retain) FMFHandle *fromHandle;
+@property (nonatomic, retain) NSString *groupId;
+@property (nonatomic, retain) NSString *requestId;
+@property (nonatomic) long long requestType;
+@property (nonatomic, retain) NSSet *toHandles;
 
 + (id)friendshipRequestToHandles:(id)arg1 fromHandle:(id)arg2 withType:(long long)arg3 groupId:(id)arg4 withEndDate:(id)arg5;
 + (bool)supportsSecureCoding;

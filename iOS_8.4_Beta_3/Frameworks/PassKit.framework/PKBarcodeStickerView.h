@@ -14,8 +14,8 @@
     long long _validity;
 }
 
-@property(assign,readonly) UIView * matteView;
-@property(assign,readwrite) long long validity;
+@property (nonatomic, readonly) UIView *matteView;
+@property (nonatomic) long long validity;
 
 + (struct PKBarcodeQuietZone { double x1; double x2; double x3; double x4; })_quiteZoneForBarcode:(id)arg1;
 + (struct CGSize { double x1; double x2; })_sizeForBarcode:(id)arg1;

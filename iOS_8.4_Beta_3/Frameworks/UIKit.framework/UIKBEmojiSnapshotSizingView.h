@@ -10,7 +10,7 @@
     UIView *_snapshotView;
 }
 
-@property(assign,readonly) UIView * snapshotView;
+@property (nonatomic, readonly) UIView *snapshotView;
 
 - (void)dealloc;
 - (id)initWithSnapshotView:(id)arg1;

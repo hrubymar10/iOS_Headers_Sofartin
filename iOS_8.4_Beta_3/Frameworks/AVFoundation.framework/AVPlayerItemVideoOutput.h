@@ -6,8 +6,8 @@
     AVPlayerItemVideoOutputInternal *_videoOutputInternal;
 }
 
-@property(assign,readonly) <AVPlayerItemOutputPullDelegate> * delegate;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * delegateQueue;
+@property (nonatomic, readonly) <AVPlayerItemOutputPullDelegate> *delegate;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *delegateQueue;
 
 - (bool)_attachToPlayerItem:(id)arg1;
 - (void)_detachFromPlayerItem;

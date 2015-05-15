@@ -4,8 +4,8 @@
 
 @interface NSKnownKeysMappingStrategy : NSObject <NSFastEnumeration, NSSecureCoding>
 
-@property(assign,readonly) id* keys;
-@property(assign,readonly) unsigned long long length;
+@property (nonatomic, readonly) id*keys;
+@property (nonatomic, readonly) unsigned long long length;
 
 + (id)alloc;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;

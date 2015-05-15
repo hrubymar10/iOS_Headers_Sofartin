@@ -4,7 +4,7 @@
 
 @interface CASmoothedTextLayer : CATextLayer
 
-@property(assign,readwrite) unsigned int fontSmoothingStyle;
+@property unsigned int fontSmoothingStyle;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (bool)_hasRenderLayerSubclass;

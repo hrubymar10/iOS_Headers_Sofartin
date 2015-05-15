@@ -12,7 +12,7 @@
     double _rss;
 }
 
-@property(assign,readonly) NSArray * intervals;
+@property (nonatomic, readonly) NSArray *intervals;
 
 - (unsigned int)_determineHistBucketForValue:(double)arg1;
 - (void)calculateSummaryStatisticsWithEnumerator:(id)arg1;

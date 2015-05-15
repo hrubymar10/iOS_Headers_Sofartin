@@ -11,12 +11,12 @@
     NSString *_version;
 }
 
-@property(assign,readwrite) bool hasResultProviderId;
-@property(assign,readonly) bool hasSourceId;
-@property(assign,readonly) bool hasVersion;
-@property(assign,readwrite) int resultProviderId;
-@property(assign,retain) NSString * sourceId;
-@property(assign,retain) NSString * version;
+@property (nonatomic) bool hasResultProviderId;
+@property (nonatomic, readonly) bool hasSourceId;
+@property (nonatomic, readonly) bool hasVersion;
+@property (nonatomic) int resultProviderId;
+@property (nonatomic, retain) NSString *sourceId;
+@property (nonatomic, retain) NSString *version;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

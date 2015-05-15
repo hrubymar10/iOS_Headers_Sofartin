@@ -17,9 +17,9 @@
     } rect;
 }
 
-@property(assign,readwrite) bool containsEnd;
-@property(assign,readwrite) bool containsStart;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rect;
+@property (nonatomic) bool containsEnd;
+@property (nonatomic) bool containsStart;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rect;
 
 - (bool)containsEnd;
 - (bool)containsStart;

@@ -6,7 +6,7 @@
     AVCaptureDeviceInputInternal_FigRecorder *_internal;
 }
 
-@property(assign,readonly) AVCaptureDevice_FigRecorder * device;
+@property (nonatomic, readonly) AVCaptureDevice_FigRecorder *device;
 
 + (id)deviceInputWithDevice:(id)arg1 error:(id*)arg2;
 + (void)initialize;

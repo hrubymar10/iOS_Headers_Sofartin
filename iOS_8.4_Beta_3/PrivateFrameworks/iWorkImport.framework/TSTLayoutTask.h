@@ -7,7 +7,7 @@
     TSTMasterLayout *mMasterLayout;
 }
 
-@property(assign,readonly) unsigned long long numberOfCellStates;
+@property (nonatomic, readonly) unsigned long long numberOfCellStates;
 
 - (void)addCellState:(id)arg1;
 - (void)clear;

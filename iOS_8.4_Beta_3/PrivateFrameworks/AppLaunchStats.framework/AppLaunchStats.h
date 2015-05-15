@@ -78,10 +78,10 @@
     int whiteListAppToken;
 }
 
-@property(assign,readonly) AppLaunchStatsState * aplsState;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * appLaunchStatDQueue;
-@property(assign,readonly) NSObject<OS_xpc_object> * conn;
-@property(assign,readonly) id pendingHandler;
+@property (nonatomic, readonly) AppLaunchStatsState *aplsState;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *appLaunchStatDQueue;
+@property (nonatomic, readonly) NSObject<OS_xpc_object> *conn;
+@property (nonatomic, readonly) id pendingHandler;
 
 - (void).cxx_destruct;
 - (void)ableAdmissionForTopic:(id)arg1 attribute:(id)arg2 value:(id)arg3 withHandler:(id)arg4;

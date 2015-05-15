@@ -7,8 +7,8 @@
     PLCFNotificationOperatorComposition *_techStatusChangedNotification;
 }
 
-@property(assign,retain) PLCFNotificationOperatorComposition * appStatusChangedNotification;
-@property(assign,retain) PLCFNotificationOperatorComposition * techStatusChangedNotification;
+@property (retain) PLCFNotificationOperatorComposition *appStatusChangedNotification;
+@property (retain) PLCFNotificationOperatorComposition *techStatusChangedNotification;
 
 + (id)accountingGroupDefinitions;
 + (id)bundleIdFromBundlePath:(id)arg1;

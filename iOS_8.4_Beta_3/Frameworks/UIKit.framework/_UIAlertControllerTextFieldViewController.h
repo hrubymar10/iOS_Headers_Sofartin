@@ -9,9 +9,9 @@
     NSMutableArray *textFields;
 }
 
-@property(assign,readwrite) <_UIAlertControllerTextFieldViewControllerContaining> * container;
-@property(assign,readonly) NSArray * textFields;
-@property(assign,readwrite) bool textFieldsCanBecomeFirstResponder;
+@property (nonatomic) <_UIAlertControllerTextFieldViewControllerContaining> *container;
+@property (readonly) NSArray *textFields;
+@property (nonatomic) bool textFieldsCanBecomeFirstResponder;
 
 - (double)_bottomMarginForTextFields;
 - (void)_returnKeyPressedInTextField:(id)arg1;

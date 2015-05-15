@@ -8,9 +8,9 @@
     NSString *_name;
 }
 
-@property(assign,readonly) id block;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * dispatchQueue;
-@property(assign,readonly) NSString * name;
+@property (nonatomic, readonly) id block;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *dispatchQueue;
+@property (nonatomic, readonly) NSString *name;
 
 - (id)block;
 - (void)dealloc;

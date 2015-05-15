@@ -8,9 +8,9 @@
     id _target;
 }
 
-@property(assign,readonly) SEL action;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) id target;
+@property (nonatomic, readonly) SEL action;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, readonly) id target;
 
 - (void).cxx_destruct;
 - (SEL)action;

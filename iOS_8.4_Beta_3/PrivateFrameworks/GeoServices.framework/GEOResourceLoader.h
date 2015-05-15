@@ -22,8 +22,8 @@
     NSMutableArray *_resourcesToLoad;
 }
 
-@property(assign,retain) NSData * auditToken;
-@property(assign,readonly) NSArray * loadedResources;
+@property (nonatomic, retain) NSData *auditToken;
+@property (nonatomic, readonly) NSArray *loadedResources;
 
 - (void)_cleanup;
 - (bool)_establishHardLinkIfPossibleForResource:(id)arg1 toResource:(id)arg2 error:(id*)arg3;

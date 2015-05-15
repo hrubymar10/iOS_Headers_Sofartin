@@ -13,18 +13,18 @@
     NSString *_userAgent;
 }
 
-@property(assign,readonly) NSArray * allMessages;
-@property(assign,readonly) bool busy;
-@property(assign,readonly) IDSBaseMessage * currentMessage;
-@property(assign,readonly) bool hasQueuedItems;
-@property(assign,readwrite) bool logToRegistration;
-@property(assign,readwrite) unsigned long long maxConcurrentMessages;
-@property(assign,readonly) long long maxLargeMessageSize;
-@property(assign,readonly) long long maxMessageSize;
-@property(assign,copy) NSNumber * protocolVersion;
-@property(assign,readonly) NSArray * queuedMessages;
-@property(assign,readwrite) bool retryInAirplaneMode;
-@property(assign,copy) NSString * userAgent;
+@property (readonly) NSArray *allMessages;
+@property (readonly) bool busy;
+@property (readonly) IDSBaseMessage *currentMessage;
+@property (readonly) bool hasQueuedItems;
+@property bool logToRegistration;
+@property unsigned long long maxConcurrentMessages;
+@property (readonly) long long maxLargeMessageSize;
+@property (readonly) long long maxMessageSize;
+@property (copy) NSNumber *protocolVersion;
+@property (readonly) NSArray *queuedMessages;
+@property bool retryInAirplaneMode;
+@property (copy) NSString *userAgent;
 
 + (Class)APNSMessageDeliveryClass;
 + (Class)HTTPMessageDeliveryClass;

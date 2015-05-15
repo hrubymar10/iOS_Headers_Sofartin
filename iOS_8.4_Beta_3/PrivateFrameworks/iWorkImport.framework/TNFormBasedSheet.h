@@ -8,8 +8,8 @@
     TSTTableInfo *mTableInfo;
 }
 
-@property(assign,readwrite) struct __CFUUID { }* tableID;
-@property(assign,readonly) TSTTableInfo * tableInfo;
+@property struct __CFUUID { }*tableID;
+@property (readonly) TSTTableInfo *tableInfo;
 
 - (void)clearTableInfoCache;
 - (double)contentScale;

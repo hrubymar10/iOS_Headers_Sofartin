@@ -8,8 +8,8 @@
     AXHAAccessQueue *_securityQueue;
 }
 
-@property(assign,retain) NSArray * certificateDescription;
-@property(assign,retain) AXHAAccessQueue * securityQueue;
+@property (nonatomic, retain) NSArray *certificateDescription;
+@property (nonatomic, retain) AXHAAccessQueue *securityQueue;
 
 + (id)sharedHelper;
 

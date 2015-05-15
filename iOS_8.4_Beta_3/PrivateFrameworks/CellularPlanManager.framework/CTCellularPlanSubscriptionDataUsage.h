@@ -8,9 +8,9 @@
     double _dataUsed;
 }
 
-@property(assign,readonly) double dataCapacity;
-@property(assign,readonly) NSString * dataCategory;
-@property(assign,readonly) double dataUsed;
+@property (nonatomic, readonly) double dataCapacity;
+@property (nonatomic, readonly) NSString *dataCategory;
+@property (nonatomic, readonly) double dataUsed;
 
 + (bool)supportsSecureCoding;
 

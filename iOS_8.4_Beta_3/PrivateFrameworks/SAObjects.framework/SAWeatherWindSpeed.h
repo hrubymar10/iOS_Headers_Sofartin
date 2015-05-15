@@ -4,13 +4,13 @@
 
 @interface SAWeatherWindSpeed : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * value;
-@property(assign,copy) NSString * windDirection;
-@property(assign,copy) NSNumber * windDirectionDegree;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *value;
+@property (nonatomic, copy) NSString *windDirection;
+@property (nonatomic, copy) NSNumber *windDirectionDegree;
 
 + (id)windSpeed;
 + (id)windSpeedWithDictionary:(id)arg1 context:(id)arg2;

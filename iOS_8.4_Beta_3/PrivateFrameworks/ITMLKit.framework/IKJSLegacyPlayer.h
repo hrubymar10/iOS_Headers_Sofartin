@@ -6,8 +6,8 @@
     <IKJSPlayerAppBridge> *_appBridge;
 }
 
-@property(assign,readwrite) <IKJSPlayerAppBridge> * appBridge;
-@property(assign,readonly) IKDOMElement * currentAVMediaElement;
+@property (nonatomic) <IKJSPlayerAppBridge> *appBridge;
+@property (nonatomic, readonly) IKDOMElement *currentAVMediaElement;
 
 - (void).cxx_destruct;
 - (id)appBridge;

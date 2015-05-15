@@ -6,7 +6,7 @@
     NSDate *_day;
 }
 
-@property(assign,retain) NSDate * day;
+@property (nonatomic, retain) NSDate *day;
 
 + (id)predicateForScheduledRemindersInCalendars:(id)arg1 onDay:(id)arg2;
 + (bool)supportsSecureCoding;

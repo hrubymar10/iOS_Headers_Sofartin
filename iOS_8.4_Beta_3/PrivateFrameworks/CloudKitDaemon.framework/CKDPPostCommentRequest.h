@@ -8,12 +8,12 @@
     NSString *_path;
 }
 
-@property(assign,retain) CKDPCommentContent * commentContent;
-@property(assign,readonly) bool hasCommentContent;
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,readonly) bool hasPath;
-@property(assign,retain) CKDPCommentedOnId * identifier;
-@property(assign,retain) NSString * path;
+@property (nonatomic, retain) CKDPCommentContent *commentContent;
+@property (nonatomic, readonly) bool hasCommentContent;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, readonly) bool hasPath;
+@property (nonatomic, retain) CKDPCommentedOnId *identifier;
+@property (nonatomic, retain) NSString *path;
 
 + (id)options;
 

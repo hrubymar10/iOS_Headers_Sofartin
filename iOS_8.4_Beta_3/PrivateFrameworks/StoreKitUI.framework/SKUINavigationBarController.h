@@ -16,16 +16,16 @@
     SKUINavigationBarViewElement *_viewElement;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUINavigationBarControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSArray * existingSearchBarControllers;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUINavigationBarViewElement * navigationBarViewElement;
-@property(assign,readonly) UIView * navigationPaletteView;
-@property(assign,readwrite) UIViewController * parentViewController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUINavigationBarControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSArray *existingSearchBarControllers;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUINavigationBarViewElement *navigationBarViewElement;
+@property (nonatomic, readonly) UIView *navigationPaletteView;
+@property (nonatomic) UIViewController *parentViewController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_addSearchBarControllerWithViewElement:(id)arg1;

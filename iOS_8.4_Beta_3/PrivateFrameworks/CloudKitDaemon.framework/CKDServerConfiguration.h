@@ -8,13 +8,13 @@
     NSMutableDictionary *_values;
 }
 
-@property(assign,retain) NSMutableDictionary * allowedAppVersionsCache;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSDate * expiry;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableDictionary * values;
+@property (nonatomic, retain) NSMutableDictionary *allowedAppVersionsCache;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSDate *expiry;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMutableDictionary *values;
 
 - (void).cxx_destruct;
 - (id)allowedAppVersionsCache;

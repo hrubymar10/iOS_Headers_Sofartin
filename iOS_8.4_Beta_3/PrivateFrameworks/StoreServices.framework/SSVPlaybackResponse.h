@@ -7,9 +7,9 @@
     NSHTTPURLResponse *_urlResponse;
 }
 
-@property(assign,readonly) NSHTTPURLResponse * URLResponse;
-@property(assign,readonly) NSArray * items;
-@property(assign,copy) NSDictionary * responseDictionary;
+@property (nonatomic, readonly) NSHTTPURLResponse *URLResponse;
+@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic, readonly, copy) NSDictionary *responseDictionary;
 
 - (void).cxx_destruct;
 - (id)URLResponse;

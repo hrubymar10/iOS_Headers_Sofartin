@@ -19,21 +19,21 @@
     long long _status;
 }
 
-@property(assign,copy) NSArray * desiredKeys;
-@property(assign,copy) id fetchRecordChangesCompletionBlock;
-@property(assign,readonly) bool moreComing;
-@property(assign,copy) CKServerChangeToken * previousServerChangeToken;
-@property(assign,copy) id recordChangedBlock;
-@property(assign,retain) NSMutableDictionary * recordErrors;
-@property(assign,copy) id recordWithIDWasDeletedBlock;
-@property(assign,copy) CKRecordZoneID * recordZoneID;
-@property(assign,retain) NSData * resultClientChangeTokenData;
-@property(assign,retain) CKServerChangeToken * resultServerChangeToken;
-@property(assign,readwrite) unsigned long long resultsLimit;
-@property(assign,copy) id shareChangedBlock;
-@property(assign,copy) id shareWithIDWasDeletedBlock;
-@property(assign,readwrite) bool shouldFetchAssetContents;
-@property(assign,readwrite) long long status;
+@property (nonatomic, copy) NSArray *desiredKeys;
+@property (nonatomic, copy) id fetchRecordChangesCompletionBlock;
+@property (nonatomic, readonly) bool moreComing;
+@property (nonatomic, copy) CKServerChangeToken *previousServerChangeToken;
+@property (nonatomic, copy) id recordChangedBlock;
+@property (nonatomic, retain) NSMutableDictionary *recordErrors;
+@property (nonatomic, copy) id recordWithIDWasDeletedBlock;
+@property (nonatomic, copy) CKRecordZoneID *recordZoneID;
+@property (nonatomic, retain) NSData *resultClientChangeTokenData;
+@property (nonatomic, retain) CKServerChangeToken *resultServerChangeToken;
+@property (nonatomic) unsigned long long resultsLimit;
+@property (nonatomic, copy) id shareChangedBlock;
+@property (nonatomic, copy) id shareWithIDWasDeletedBlock;
+@property (nonatomic) bool shouldFetchAssetContents;
+@property (nonatomic) long long status;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

@@ -4,11 +4,11 @@
 
 @interface NSHashTable : NSObject <NSCoding, NSCopying, NSFastEnumeration>
 
-@property(assign,copy) NSArray * allObjects;
-@property(assign,readonly) id anyObject;
-@property(assign,readonly) unsigned long long count;
-@property(assign,copy) NSPointerFunctions * pointerFunctions;
-@property(assign,copy) NSSet * setRepresentation;
+@property (readonly, copy) NSArray *allObjects;
+@property (nonatomic, readonly) id anyObject;
+@property (readonly) unsigned long long count;
+@property (readonly, copy) NSPointerFunctions *pointerFunctions;
+@property (readonly, copy) NSSet *setRepresentation;
 
 + (id)alloc;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;

@@ -6,15 +6,15 @@
     bool _infiniteDuration;
 }
 
-@property(assign,retain) NSString * actionParams;
-@property(assign,retain) NSString * adamID;
-@property(assign,retain) NSString * bookmarkID;
-@property(assign,retain) NSString * contentID;
-@property(getter=isInfiniteDuration,assign,readonly) bool infiniteDuration;
-@property(assign,readonly) long long keyDelivery;
-@property(assign,retain) NSString * serviceID;
-@property(assign,readonly) long long type;
-@property(assign,retain) NSURL * url;
+@property (nonatomic, readonly, retain) NSString *actionParams;
+@property (nonatomic, readonly, retain) NSString *adamID;
+@property (nonatomic, readonly, retain) NSString *bookmarkID;
+@property (nonatomic, readonly, retain) NSString *contentID;
+@property (getter=isInfiniteDuration, nonatomic, readonly) bool infiniteDuration;
+@property (nonatomic, readonly) long long keyDelivery;
+@property (nonatomic, readonly, retain) NSString *serviceID;
+@property (nonatomic, readonly) long long type;
+@property (nonatomic, readonly, retain) NSURL *url;
 
 + (bool)shouldParseChildDOMElements;
 

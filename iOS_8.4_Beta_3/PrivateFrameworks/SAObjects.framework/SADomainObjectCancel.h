@@ -4,11 +4,11 @@
 
 @interface SADomainObjectCancel : SABaseClientBoundCommand <SADomainObjectCommand>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SADomainObject * identifier;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SADomainObject *identifier;
+@property (readonly) Class superclass;
 
 + (id)domainObjectCancel;
 + (id)domainObjectCancelWithDictionary:(id)arg1 context:(id)arg2;

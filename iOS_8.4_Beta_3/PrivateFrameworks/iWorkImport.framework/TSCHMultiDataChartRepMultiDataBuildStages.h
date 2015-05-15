@@ -13,8 +13,8 @@
     double mTotalDuration;
 }
 
-@property(assign,readonly) unsigned long long currentStage;
-@property(assign,readonly) double duration;
+@property (nonatomic, readonly) unsigned long long currentStage;
+@property (nonatomic, readonly) double duration;
 
 + (id)buildStagesWithRep:(id)arg1 stages:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg2 totalDuration:(double)arg3;
 + (unsigned long long)dataSetIndexForRep:(id)arg1 buildStage:(unsigned long long)arg2;

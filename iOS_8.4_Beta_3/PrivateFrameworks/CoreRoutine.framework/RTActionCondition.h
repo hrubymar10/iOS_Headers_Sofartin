@@ -9,10 +9,10 @@
     long long _locationOfInterestState;
 }
 
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) NSString * depiction;
-@property(assign,readonly) RTLocationOfInterest * locationOfInterest;
-@property(assign,readonly) long long locationOfInterestState;
+@property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) NSString *depiction;
+@property (nonatomic, readonly) RTLocationOfInterest *locationOfInterest;
+@property (nonatomic, readonly) long long locationOfInterestState;
 
 + (id)locationOfInterestStateToString:(long long)arg1;
 + (bool)supportsSecureCoding;

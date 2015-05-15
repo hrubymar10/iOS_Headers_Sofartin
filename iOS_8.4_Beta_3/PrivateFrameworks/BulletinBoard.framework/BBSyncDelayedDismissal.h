@@ -7,8 +7,8 @@
     unsigned long long _feeds;
 }
 
-@property(assign,retain) BBBulletin * bulletin;
-@property(assign,readwrite) unsigned long long feeds;
+@property (nonatomic, retain) BBBulletin *bulletin;
+@property (nonatomic) unsigned long long feeds;
 
 - (id)bulletin;
 - (void)dealloc;

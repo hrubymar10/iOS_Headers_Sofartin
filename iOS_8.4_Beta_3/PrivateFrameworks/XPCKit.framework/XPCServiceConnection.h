@@ -11,12 +11,12 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,readonly) NSObject<OS_xpc_object> * client;
-@property(assign,retain) <NSObject> * context;
-@property(assign,readwrite) <XPCServiceConnectionDelegate> * delegate;
-@property(assign,readwrite) XPCServiceListener * serviceListener;
-@property(assign,retain) NSString * serviceName;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, readonly) NSObject<OS_xpc_object> *client;
+@property (nonatomic, retain) <NSObject> *context;
+@property (nonatomic) <XPCServiceConnectionDelegate> *delegate;
+@property (nonatomic) XPCServiceListener *serviceListener;
+@property (nonatomic, readonly, retain) NSString *serviceName;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (id)client;

@@ -13,12 +13,12 @@
     int _sessionIdentifier;
 }
 
-@property(assign,readwrite) int direction;
-@property(assign,readwrite) bool hasDirection;
-@property(assign,readwrite) bool hasRepeatCount;
-@property(assign,readwrite) bool hasSessionIdentifier;
-@property(assign,readwrite) unsigned int repeatCount;
-@property(assign,readwrite) int sessionIdentifier;
+@property (nonatomic) int direction;
+@property (nonatomic) bool hasDirection;
+@property (nonatomic) bool hasRepeatCount;
+@property (nonatomic) bool hasSessionIdentifier;
+@property (nonatomic) unsigned int repeatCount;
+@property (nonatomic) int sessionIdentifier;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

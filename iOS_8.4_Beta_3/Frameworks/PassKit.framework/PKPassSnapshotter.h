@@ -9,7 +9,7 @@
     UIWindow *_snapshotWindow;
 }
 
-@property(assign,readwrite) bool runsInBackgroundProcess;
+@property (nonatomic) bool runsInBackgroundProcess;
 
 + (void)purgeCacheOfPassSnapshotsWithUinqueID:(id)arg1;
 

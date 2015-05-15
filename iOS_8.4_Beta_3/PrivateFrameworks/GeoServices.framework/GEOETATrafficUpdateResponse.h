@@ -10,9 +10,9 @@
     int _status;
 }
 
-@property(assign,readwrite) bool hasStatus;
-@property(assign,retain) NSMutableArray * routes;
-@property(assign,readwrite) int status;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic, retain) NSMutableArray *routes;
+@property (nonatomic) int status;
 
 - (void)addRoute:(id)arg1;
 - (void)clearRoutes;

@@ -4,7 +4,7 @@
 
 @interface GKBubblePathAnimator : NSObject
 
-@property(assign,readonly) long long animatorType;
+@property (nonatomic, readonly) long long animatorType;
 
 + (id)hiTimingFunction;
 + (id)sharedBubblePathAnimator;

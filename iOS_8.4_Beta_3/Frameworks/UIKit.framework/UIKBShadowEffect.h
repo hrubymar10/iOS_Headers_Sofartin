@@ -23,17 +23,17 @@
     double _weight;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } concaveInsets;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } insets;
-@property(assign,readonly) bool isValid;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } offset;
-@property(assign,readonly) SEL renderSelector;
-@property(assign,readonly) bool renderUnder;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double weight;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } concaveInsets;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } insets;
+@property (nonatomic, readonly) bool isValid;
+@property (nonatomic) struct CGSize { double x1; double x2; } offset;
+@property (nonatomic, readonly) SEL renderSelector;
+@property (nonatomic, readonly) bool renderUnder;
+@property (readonly) Class superclass;
+@property (nonatomic) double weight;
 
 + (id)effectWithColor:(id)arg1 offset:(struct CGSize { double x1; double x2; })arg2 insets:(struct UIEdgeInsets { double x1; double x2; double x3; double x4; })arg3 weight:(double)arg4;
 

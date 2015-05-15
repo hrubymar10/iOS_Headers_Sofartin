@@ -7,8 +7,8 @@
     double _upperAngleLimit;
 }
 
-@property(assign,readwrite) double lowerAngleLimit;
-@property(assign,readwrite) double upperAngleLimit;
+@property (nonatomic) double lowerAngleLimit;
+@property (nonatomic) double upperAngleLimit;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)encodeWithCoder:(id)arg1;

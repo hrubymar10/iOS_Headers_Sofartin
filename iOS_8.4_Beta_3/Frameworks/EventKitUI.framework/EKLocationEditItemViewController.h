@@ -20,15 +20,15 @@
     UITableView *_tableView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool needsSave;
-@property(assign,readwrite) bool onlyDisplayMapLocations;
-@property(assign,retain) EKUIConferenceRoom * selectedConferenceRoom;
-@property(assign,retain) EKStructuredLocation * selectedLocation;
-@property(assign,retain) EKStructuredLocation * structuredLocation;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool needsSave;
+@property (nonatomic) bool onlyDisplayMapLocations;
+@property (nonatomic, retain) EKUIConferenceRoom *selectedConferenceRoom;
+@property (nonatomic, retain) EKStructuredLocation *selectedLocation;
+@property (nonatomic, retain) EKStructuredLocation *structuredLocation;
+@property (readonly) Class superclass;
 
 + (id)_sectionNameForSection:(unsigned long long)arg1;
 

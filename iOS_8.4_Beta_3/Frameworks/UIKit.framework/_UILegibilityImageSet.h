@@ -7,8 +7,8 @@
     UIImage *_shadowImage;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,retain) UIImage * shadowImage;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) UIImage *shadowImage;
 
 + (id)imageFromImage:(id)arg1 withShadowImage:(id)arg2;
 

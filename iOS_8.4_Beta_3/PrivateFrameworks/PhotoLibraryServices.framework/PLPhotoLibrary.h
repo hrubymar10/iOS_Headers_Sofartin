@@ -32,23 +32,23 @@
     PLManagedObjectContext *managedObjectContext;
 }
 
-@property(assign,copy) NSArray * albums;
-@property(assign,copy) NSArray * eventAlbums;
-@property(assign,copy) NSArray * faceAlbums;
-@property(assign,copy) NSArray * imagePickerAlbums;
-@property(assign,copy) NSArray * importAlbums;
-@property(assign,retain) NSObject<PLAlbumProtocol> * inFlightAssetsAlbum;
-@property(assign,retain) PLManagedObjectContext * managedObjectContext;
-@property(assign,copy) NSArray * photoStreamAlbums;
-@property(assign,copy) NSArray * photoStreamAlbumsForPreferences;
-@property(assign,copy) NSArray * placeAlbums;
-@property(assign,retain) PLManagedAlbumList * rootAlbumList;
-@property(assign,retain) PLManagedFolder * rootFolder;
-@property(assign,retain) NSObject<PLAlbumProtocol> * savedPhotosAlbum;
-@property(assign,retain) PLThumbnailManager * thumbnailManager;
-@property(assign,copy) NSArray * userAlbums;
-@property(assign,retain) NSObject<PLAlbumProtocol> * userLibraryAlbum;
-@property(assign,copy) NSArray * wallpaperAlbums;
+@property (nonatomic, readonly, copy) NSArray *albums;
+@property (nonatomic, readonly, copy) NSArray *eventAlbums;
+@property (nonatomic, readonly, copy) NSArray *faceAlbums;
+@property (nonatomic, readonly, copy) NSArray *imagePickerAlbums;
+@property (nonatomic, readonly, copy) NSArray *importAlbums;
+@property (nonatomic, readonly, retain) NSObject<PLAlbumProtocol> *inFlightAssetsAlbum;
+@property (nonatomic, retain) PLManagedObjectContext *managedObjectContext;
+@property (nonatomic, readonly, copy) NSArray *photoStreamAlbums;
+@property (nonatomic, readonly, copy) NSArray *photoStreamAlbumsForPreferences;
+@property (nonatomic, readonly, copy) NSArray *placeAlbums;
+@property (nonatomic, readonly, retain) PLManagedAlbumList *rootAlbumList;
+@property (nonatomic, readonly, retain) PLManagedFolder *rootFolder;
+@property (nonatomic, readonly, retain) NSObject<PLAlbumProtocol> *savedPhotosAlbum;
+@property (nonatomic, readonly, retain) PLThumbnailManager *thumbnailManager;
+@property (nonatomic, readonly, copy) NSArray *userAlbums;
+@property (nonatomic, readonly, retain) NSObject<PLAlbumProtocol> *userLibraryAlbum;
+@property (nonatomic, readonly, copy) NSArray *wallpaperAlbums;
 
 + (unsigned long long)CloudPhotoLibrarySize;
 + (void)_assetsLibrary_disableSharedPhotoStreamsSupport;

@@ -7,8 +7,8 @@
     double _upperLimit;
 }
 
-@property(assign,readwrite) double lowerLimit;
-@property(assign,readwrite) double upperLimit;
+@property double lowerLimit;
+@property double upperLimit;
 
 + (id)rangeWithConstantValue:(double)arg1;
 + (id)rangeWithLowerLimit:(double)arg1;

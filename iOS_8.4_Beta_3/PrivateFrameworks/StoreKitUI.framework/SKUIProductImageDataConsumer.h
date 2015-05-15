@@ -11,10 +11,10 @@
     } _iconSize;
 }
 
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,readonly) struct CGSize { double x1; double x2; } iconSize;
-@property(assign,readonly) struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } iconSize;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } imageSize;
 
 + (id)cardConsumer;
 + (id)chartsConsumer;

@@ -13,11 +13,11 @@
     NSString *_selectedText;
 }
 
-@property(assign,copy) NSString * contextAfterSelection;
-@property(assign,copy) NSString * contextBeforeSelection;
-@property(assign,copy) NSString * markedText;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } rangeInMarkedText;
-@property(assign,copy) NSString * selectedText;
+@property (nonatomic, copy) NSString *contextAfterSelection;
+@property (nonatomic, copy) NSString *contextBeforeSelection;
+@property (nonatomic, copy) NSString *markedText;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } rangeInMarkedText;
+@property (nonatomic, copy) NSString *selectedText;
 
 - (id)contextAfterSelection;
 - (id)contextBeforeSelection;

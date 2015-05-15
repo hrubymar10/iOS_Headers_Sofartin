@@ -10,9 +10,9 @@
     float sumSqScores;
 }
 
-@property(assign,readwrite) float maxScore;
-@property(assign,readwrite) float minScore;
-@property(assign,readwrite) int numScores;
+@property float maxScore;
+@property float minScore;
+@property int numScores;
 
 - (void)addScore:(float)arg1;
 - (float)computeAverage;

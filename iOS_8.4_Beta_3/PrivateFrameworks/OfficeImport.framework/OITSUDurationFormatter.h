@@ -7,8 +7,8 @@
     NSString *mFormat;
 }
 
-@property(assign,readwrite) int compactStyleStartUnit;
-@property(assign,copy) NSString * format;
+@property (nonatomic) int compactStyleStartUnit;
+@property (nonatomic, copy) NSString *format;
 
 - (int)compactStyleStartUnit;
 - (void)dealloc;

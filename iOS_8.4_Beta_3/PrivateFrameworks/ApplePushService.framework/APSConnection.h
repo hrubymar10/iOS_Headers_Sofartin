@@ -28,13 +28,13 @@
     bool _usesAppLaunchStats;
 }
 
-@property(assign,readwrite) <APSConnectionDelegate> * delegate;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * delegateQueue;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * ivarQueue;
-@property(assign,readwrite) unsigned long long largeMessageSize;
-@property(assign,readwrite) unsigned long long messageSize;
-@property(assign,retain) NSData * publicToken;
-@property(assign,readwrite) bool usesAppLaunchStats;
+@property (nonatomic) <APSConnectionDelegate> *delegate;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *delegateQueue;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *ivarQueue;
+@property (nonatomic) unsigned long long largeMessageSize;
+@property (nonatomic) unsigned long long messageSize;
+@property (nonatomic, readonly, retain) NSData *publicToken;
+@property (nonatomic) bool usesAppLaunchStats;
 
 + (void)_blockingXPCCallWithArgumentBlock:(id)arg1 resultHandler:(id)arg2;
 + (void)_safelyCancelAndReleaseAfterBarrierConnection:(id)arg1;

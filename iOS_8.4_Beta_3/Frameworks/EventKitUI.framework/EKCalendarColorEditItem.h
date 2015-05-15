@@ -7,7 +7,7 @@
     unsigned long long _checkedRow;
 }
 
-@property(assign,readonly) NSMutableArray * cells;
+@property (nonatomic, readonly) NSMutableArray *cells;
 
 - (void).cxx_destruct;
 - (id)_cellForColor:(id)arg1;

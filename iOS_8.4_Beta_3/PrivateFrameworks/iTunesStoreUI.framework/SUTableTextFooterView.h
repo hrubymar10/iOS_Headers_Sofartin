@@ -10,11 +10,11 @@
     NSArray *_textLines;
 }
 
-@property(assign,retain) UIFont * font;
-@property(assign,retain) UIColor * shadowColor;
-@property(assign,readwrite) long long textAlignment;
-@property(assign,retain) UIColor * textColor;
-@property(assign,retain) NSArray * textLines;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic, retain) UIColor *shadowColor;
+@property (nonatomic) long long textAlignment;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic, retain) NSArray *textLines;
 
 - (void)dealloc;
 - (void)drawRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

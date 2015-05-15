@@ -16,20 +16,20 @@
     GEOPDViewportInfo *_viewportInfo;
 }
 
-@property(assign,readwrite) bool hasMaxResults;
-@property(assign,readonly) bool hasSearchString;
-@property(assign,readwrite) bool hasSortOrder;
-@property(assign,readonly) bool hasSuggestionEntry;
-@property(assign,readonly) bool hasSuggestionEntryMetadata;
-@property(assign,readonly) bool hasSuggestionMetadata;
-@property(assign,readonly) bool hasViewportInfo;
-@property(assign,readwrite) unsigned int maxResults;
-@property(assign,retain) NSString * searchString;
-@property(assign,readwrite) int sortOrder;
-@property(assign,retain) GEOPDAutocompleteEntry * suggestionEntry;
-@property(assign,retain) NSData * suggestionEntryMetadata;
-@property(assign,retain) NSData * suggestionMetadata;
-@property(assign,retain) GEOPDViewportInfo * viewportInfo;
+@property (nonatomic) bool hasMaxResults;
+@property (nonatomic, readonly) bool hasSearchString;
+@property (nonatomic) bool hasSortOrder;
+@property (nonatomic, readonly) bool hasSuggestionEntry;
+@property (nonatomic, readonly) bool hasSuggestionEntryMetadata;
+@property (nonatomic, readonly) bool hasSuggestionMetadata;
+@property (nonatomic, readonly) bool hasViewportInfo;
+@property (nonatomic) unsigned int maxResults;
+@property (nonatomic, retain) NSString *searchString;
+@property (nonatomic) int sortOrder;
+@property (nonatomic, retain) GEOPDAutocompleteEntry *suggestionEntry;
+@property (nonatomic, retain) NSData *suggestionEntryMetadata;
+@property (nonatomic, retain) NSData *suggestionMetadata;
+@property (nonatomic, retain) GEOPDViewportInfo *viewportInfo;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

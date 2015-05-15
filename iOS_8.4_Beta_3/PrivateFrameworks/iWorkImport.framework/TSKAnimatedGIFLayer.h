@@ -6,7 +6,7 @@
     TSKAnimatedGIFController *mController;
 }
 
-@property(assign,readwrite) TSKAnimatedGIFController * controller;
+@property (nonatomic) TSKAnimatedGIFController *controller;
 
 + (id)defaultActionForKey:(id)arg1;
 

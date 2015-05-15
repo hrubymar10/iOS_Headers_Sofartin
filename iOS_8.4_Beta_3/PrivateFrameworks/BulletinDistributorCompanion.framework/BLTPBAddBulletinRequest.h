@@ -14,14 +14,14 @@
     unsigned int _updateType;
 }
 
-@property(assign,retain) BLTPBBulletin * bulletin;
-@property(assign,readwrite) double date;
-@property(assign,readonly) bool hasBulletin;
-@property(assign,readwrite) bool hasDate;
-@property(assign,readwrite) bool hasShouldPlayLightsAndSirens;
-@property(assign,readwrite) bool hasUpdateType;
-@property(assign,readwrite) bool shouldPlayLightsAndSirens;
-@property(assign,readwrite) unsigned int updateType;
+@property (nonatomic, retain) BLTPBBulletin *bulletin;
+@property (nonatomic) double date;
+@property (nonatomic, readonly) bool hasBulletin;
+@property (nonatomic) bool hasDate;
+@property (nonatomic) bool hasShouldPlayLightsAndSirens;
+@property (nonatomic) bool hasUpdateType;
+@property (nonatomic) bool shouldPlayLightsAndSirens;
+@property (nonatomic) unsigned int updateType;
 
 - (void).cxx_destruct;
 - (id)bulletin;

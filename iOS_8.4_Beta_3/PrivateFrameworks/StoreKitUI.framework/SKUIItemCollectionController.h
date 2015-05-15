@@ -21,19 +21,19 @@
     NSMutableDictionary *_screenshotArtworkRequestIDs;
 }
 
-@property(assign,retain) SKUIItemArtworkContext * artworkContext;
-@property(assign,retain) SKUIResourceLoader * artworkLoader;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIItemCollectionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIStyledImageDataConsumer * iconDataConsumer;
-@property(assign,copy) NSArray * items;
-@property(assign,retain) SKUIScreenshotDataConsumer * landscapeScreenshotDataConsumer;
-@property(assign,readwrite) long long numberOfItemsPerPage;
-@property(assign,readwrite) double numberOfPagesToCacheAhead;
-@property(assign,retain) SKUIScreenshotDataConsumer * portraitScreenshotDataConsumer;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIItemArtworkContext *artworkContext;
+@property (nonatomic, retain) SKUIResourceLoader *artworkLoader;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIItemCollectionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIStyledImageDataConsumer *iconDataConsumer;
+@property (nonatomic, copy) NSArray *items;
+@property (nonatomic, retain) SKUIScreenshotDataConsumer *landscapeScreenshotDataConsumer;
+@property (nonatomic) long long numberOfItemsPerPage;
+@property (nonatomic) double numberOfPagesToCacheAhead;
+@property (nonatomic, retain) SKUIScreenshotDataConsumer *portraitScreenshotDataConsumer;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_artworkLoader;

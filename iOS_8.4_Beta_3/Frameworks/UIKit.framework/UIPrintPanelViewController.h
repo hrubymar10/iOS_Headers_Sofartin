@@ -16,23 +16,23 @@
     UIWindow *_window;
 }
 
-@property(assign,readwrite) long long copies;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool duplex;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long pageCount;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } pageRange;
-@property(assign,retain) UIPrintPaper * paper;
-@property(assign,readonly) NSArray * paperList;
-@property(assign,retain) PKPrinter * printer;
-@property(assign,readonly) bool showCopies;
-@property(assign,readonly) bool showDuplex;
-@property(assign,readonly) bool showPageRange;
-@property(assign,readonly) bool showPaper;
-@property(assign,readonly) bool showPaperSelection;
-@property(assign,readonly) bool showPrinterWarning;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long copies;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool duplex;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long pageCount;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } pageRange;
+@property (nonatomic, retain) UIPrintPaper *paper;
+@property (nonatomic, readonly) NSArray *paperList;
+@property (nonatomic, retain) PKPrinter *printer;
+@property (nonatomic, readonly) bool showCopies;
+@property (nonatomic, readonly) bool showDuplex;
+@property (nonatomic, readonly) bool showPageRange;
+@property (nonatomic, readonly) bool showPaper;
+@property (nonatomic, readonly) bool showPaperSelection;
+@property (nonatomic, readonly) bool showPrinterWarning;
+@property (readonly) Class superclass;
 
 - (void)_keyWindowWillRotate:(id)arg1;
 - (void)_presentInParentAnimated:(bool)arg1;

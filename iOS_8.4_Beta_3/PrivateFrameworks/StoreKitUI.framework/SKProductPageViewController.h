@@ -30,22 +30,22 @@
     long long _urlBagType;
 }
 
-@property(assign,readwrite) long long URLBagType;
-@property(assign,copy) NSString * additionalPurchaseParameters;
-@property(assign,copy) NSString * affiliateIdentifier;
-@property(assign,readwrite) bool askToBuy;
-@property(assign,copy) NSString * cancelButtonTitle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKProductPageViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long productPageStyle;
-@property(assign,copy) NSString * promptString;
-@property(assign,copy) NSString * rightBarButtonTitle;
-@property(assign,copy) NSDictionary * scriptContextDictionary;
-@property(assign,readwrite) bool showsRightBarButton;
-@property(assign,readwrite) bool showsStoreButton;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long URLBagType;
+@property (nonatomic, copy) NSString *additionalPurchaseParameters;
+@property (nonatomic, copy) NSString *affiliateIdentifier;
+@property (nonatomic) bool askToBuy;
+@property (nonatomic, copy) NSString *cancelButtonTitle;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKProductPageViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long productPageStyle;
+@property (nonatomic, copy) NSString *promptString;
+@property (nonatomic, copy) NSString *rightBarButtonTitle;
+@property (nonatomic, copy) NSDictionary *scriptContextDictionary;
+@property (nonatomic) bool showsRightBarButton;
+@property (nonatomic) bool showsStoreButton;
+@property (readonly) Class superclass;
 
 + (id)_defaultClientIdentifier;
 + (id)_defaultClientInterface;

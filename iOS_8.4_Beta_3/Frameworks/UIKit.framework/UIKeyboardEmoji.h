@@ -7,8 +7,8 @@
     unsigned long long _variantMask;
 }
 
-@property(assign,retain) NSString * emojiString;
-@property(assign,readwrite) unsigned long long variantMask;
+@property (nonatomic, retain) NSString *emojiString;
+@property unsigned long long variantMask;
 
 + (id)emojiWithString:(id)arg1 withVariantMask:(unsigned long long)arg2;
 

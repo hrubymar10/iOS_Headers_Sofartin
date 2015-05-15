@@ -4,9 +4,9 @@
 
 @interface SAStockSearch : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * companyNameList;
-@property(assign,copy) NSArray * stockReferences;
-@property(assign,copy) NSURL * targetAppId;
+@property (nonatomic, copy) NSArray *companyNameList;
+@property (nonatomic, copy) NSArray *stockReferences;
+@property (nonatomic, copy) NSURL *targetAppId;
 
 + (id)search;
 + (id)searchWithDictionary:(id)arg1 context:(id)arg2;

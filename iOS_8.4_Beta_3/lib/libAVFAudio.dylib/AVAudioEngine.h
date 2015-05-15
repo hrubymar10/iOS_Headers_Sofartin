@@ -6,11 +6,11 @@
     void *_impl;
 }
 
-@property(assign,readonly) AVAudioInputNode * inputNode;
-@property(assign,readonly) AVAudioMixerNode * mainMixerNode;
-@property(assign,readwrite) struct OpaqueMusicSequence { }* musicSequence;
-@property(assign,readonly) AVAudioOutputNode * outputNode;
-@property(getter=isRunning,assign,readonly) bool running;
+@property (nonatomic, readonly) AVAudioInputNode *inputNode;
+@property (nonatomic, readonly) AVAudioMixerNode *mainMixerNode;
+@property (nonatomic) struct OpaqueMusicSequence { }*musicSequence;
+@property (nonatomic, readonly) AVAudioOutputNode *outputNode;
+@property (getter=isRunning, nonatomic, readonly) bool running;
 
 - (void)attachNode:(id)arg1;
 - (void)connect:(id)arg1 to:(id)arg2 format:(id)arg3;

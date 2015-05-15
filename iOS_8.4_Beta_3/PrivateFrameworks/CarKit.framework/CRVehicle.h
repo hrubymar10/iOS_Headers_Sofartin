@@ -11,13 +11,13 @@
     NSString *_vehicleName;
 }
 
-@property(assign,retain) NSString * bluetoothAddress;
-@property(assign,retain) NSString * carplayWiFiUUID;
-@property(assign,retain) NSData * certificateSerialNumber;
-@property(assign,retain) NSUUID * identifier;
-@property(assign,readonly) bool isPaired;
-@property(assign,readwrite) unsigned long long pairingStatus;
-@property(assign,retain) NSString * vehicleName;
+@property (nonatomic, retain) NSString *bluetoothAddress;
+@property (nonatomic, retain) NSString *carplayWiFiUUID;
+@property (nonatomic, retain) NSData *certificateSerialNumber;
+@property (nonatomic, retain) NSUUID *identifier;
+@property (nonatomic, readonly) bool isPaired;
+@property (nonatomic) unsigned long long pairingStatus;
+@property (nonatomic, retain) NSString *vehicleName;
 
 + (bool)supportsSecureCoding;
 + (id)vehicleForVehicleAccessory:(id)arg1;

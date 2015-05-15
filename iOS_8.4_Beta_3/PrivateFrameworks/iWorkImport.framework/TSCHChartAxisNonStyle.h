@@ -4,7 +4,7 @@
 
 @interface TSCHChartAxisNonStyle : TSCHBaseStyle
 
-@property(assign,copy) TSSPropertyMap * overrideMapForSameAsSource;
+@property (nonatomic, copy) TSSPropertyMap *overrideMapForSameAsSource;
 
 + (float)defaultFloatValueForProperty:(int)arg1;
 + (int)defaultIntValueForProperty:(int)arg1;

@@ -13,13 +13,13 @@
     NSArray *_sortDescriptors;
 }
 
-@property(assign,readwrite) struct shared_ptr<mlcore::Query> { struct Query {} *x1; struct __shared_weak_count {} *x2; } coreQuery;
-@property(assign,readonly) Class entityClass;
-@property(assign,readwrite) long long limit;
-@property(assign,readwrite) long long offset;
-@property(assign,readonly) NSPredicate * predicate;
-@property(assign,copy) NSArray * propertiesToFetch;
-@property(assign,copy) NSArray * sortDescriptors;
+@property (nonatomic) struct shared_ptr<mlcore::Query> { struct Query {} *x1; struct __shared_weak_count {} *x2; } coreQuery;
+@property (nonatomic, readonly) Class entityClass;
+@property (nonatomic) long long limit;
+@property (nonatomic) long long offset;
+@property (nonatomic, readonly) NSPredicate *predicate;
+@property (nonatomic, copy) NSArray *propertiesToFetch;
+@property (nonatomic, copy) NSArray *sortDescriptors;
 
 + (id)albumQueryWithPredicate:(id)arg1;
 + (id)artistQueryWithPredicate:(id)arg1;

@@ -33,24 +33,24 @@
     int temporalOrder;
 }
 
-@property(assign,readwrite) CIBurstActionClassifier * actionClassifier;
-@property(assign,readwrite) NSMutableArray * allImageIdentifiers;
-@property(assign,readwrite) NSArray * bestImageIdentifiersArray;
-@property(assign,readwrite) NSString * burstCoverSelection;
-@property(assign,retain) NSString * burstId;
-@property(assign,readwrite) NSString * burstLogFileName;
-@property(assign,readwrite) NSMutableArray * clusterArray;
-@property(assign,readwrite) NSMutableDictionary * clusterByImageIdentifier;
-@property(assign,readwrite) int dummyAnalysisCount;
-@property(assign,readwrite) bool enableAnalysis;
-@property(assign,readwrite) bool enableDumpYUV;
-@property(assign,readwrite) bool enableFaceCore;
-@property(assign,readwrite) NSCountedSet * faceIDCounts;
-@property(assign,readwrite) int maxNumPendingFrames;
-@property(assign,readwrite) NSMutableDictionary * statsByImageIdentifier;
-@property(assign,readwrite) int temporalOrder;
-@property(assign,readwrite) int version;
-@property(assign,readwrite) NSString * versionString;
+@property CIBurstActionClassifier *actionClassifier;
+@property NSMutableArray *allImageIdentifiers;
+@property NSArray *bestImageIdentifiersArray;
+@property NSString *burstCoverSelection;
+@property (nonatomic, retain) NSString *burstId;
+@property NSString *burstLogFileName;
+@property NSMutableArray *clusterArray;
+@property NSMutableDictionary *clusterByImageIdentifier;
+@property int dummyAnalysisCount;
+@property bool enableAnalysis;
+@property bool enableDumpYUV;
+@property bool enableFaceCore;
+@property NSCountedSet *faceIDCounts;
+@property int maxNumPendingFrames;
+@property NSMutableDictionary *statsByImageIdentifier;
+@property int temporalOrder;
+@property int version;
+@property NSString *versionString;
 
 + (id)defaultVersionString;
 

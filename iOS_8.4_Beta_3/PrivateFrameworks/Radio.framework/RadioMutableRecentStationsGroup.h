@@ -4,9 +4,9 @@
 
 @interface RadioMutableRecentStationsGroup : RadioRecentStationsGroup
 
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,copy) NSString * localizedTitle;
-@property(assign,copy) NSArray * stations;
+@property (getter=isActive, nonatomic) bool active;
+@property (nonatomic, copy) NSString *localizedTitle;
+@property (nonatomic, copy) NSArray *stations;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setActive:(bool)arg1;

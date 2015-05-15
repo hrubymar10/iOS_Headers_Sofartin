@@ -8,13 +8,13 @@
     bool _usesFallbackCache;
 }
 
-@property(assign,retain) MPArtworkResizeUtility * artworkResizeUtility;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSCache * fallbackCache;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool usesFallbackCache;
+@property (nonatomic, retain) MPArtworkResizeUtility *artworkResizeUtility;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSCache *fallbackCache;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) bool usesFallbackCache;
 
 - (void).cxx_destruct;
 - (void)_cacheRepresentation:(id)arg1 forCatalog:(id)arg2;

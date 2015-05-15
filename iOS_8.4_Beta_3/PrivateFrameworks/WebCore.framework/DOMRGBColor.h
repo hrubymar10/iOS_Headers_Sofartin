@@ -4,10 +4,10 @@
 
 @interface DOMRGBColor : DOMObject
 
-@property(assign,readonly) DOMCSSPrimitiveValue * alpha;
-@property(assign,readonly) DOMCSSPrimitiveValue * blue;
-@property(assign,readonly) DOMCSSPrimitiveValue * green;
-@property(assign,readonly) DOMCSSPrimitiveValue * red;
+@property (readonly) DOMCSSPrimitiveValue *alpha;
+@property (readonly) DOMCSSPrimitiveValue *blue;
+@property (readonly) DOMCSSPrimitiveValue *green;
+@property (readonly) DOMCSSPrimitiveValue *red;
 
 - (id)alpha;
 - (id)blue;

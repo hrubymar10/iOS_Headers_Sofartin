@@ -9,11 +9,11 @@
     } _outputSize;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } outputSize;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct CGSize { double x1; double x2; } outputSize;
+@property (readonly) Class superclass;
 
 - (struct CGSize { double x1; double x2; })outputSize;
 - (id)renderedImageIdentifier;

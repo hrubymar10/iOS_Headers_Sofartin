@@ -16,14 +16,14 @@
     unsigned long long _types;
 }
 
-@property(assign,retain) id container;
-@property(assign,retain) NSDictionary * context;
-@property(assign,readwrite) unsigned long long detectionTypes;
-@property(assign,readwrite) int generationNumber;
-@property(assign,readwrite) bool isDiscarded;
-@property(assign,readwrite) bool needContinuation;
-@property(assign,retain) NSArray * results;
-@property(assign,readwrite) int tryCount;
+@property (nonatomic, retain) id container;
+@property (nonatomic, retain) NSDictionary *context;
+@property (nonatomic) unsigned long long detectionTypes;
+@property int generationNumber;
+@property bool isDiscarded;
+@property bool needContinuation;
+@property (nonatomic, retain) NSArray *results;
+@property int tryCount;
 
 + (bool)_needsFullScannerForDetectionTypes:(unsigned long long)arg1;
 + (struct __DDScanner { }*)_sharedScannerForTypes:(unsigned long long)arg1;

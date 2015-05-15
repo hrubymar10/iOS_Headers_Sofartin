@@ -4,7 +4,7 @@
 
 @interface SUScriptMediaItem : SUScriptObject
 
-@property(assign,readonly) MPMediaItem * nativeItem;
+@property (nonatomic, readonly) MPMediaItem *nativeItem;
 
 + (id)copyScriptMediaTypesForNativeMediaTypes:(unsigned long long)arg1;
 + (void)initialize;

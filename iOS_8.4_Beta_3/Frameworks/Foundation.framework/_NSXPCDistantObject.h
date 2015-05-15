@@ -12,11 +12,11 @@
     int _selectorLock;
 }
 
-@property(assign,retain) NSXPCConnection * _connection;
-@property(assign,readwrite) bool _exported;
-@property(assign,readwrite) unsigned long long _generationCount;
-@property(assign,readwrite) unsigned long long _proxyNumber;
-@property(assign,retain) NSXPCInterface * _remoteInterface;
+@property (retain) NSXPCConnection *_connection;
+@property bool _exported;
+@property unsigned long long _generationCount;
+@property unsigned long long _proxyNumber;
+@property (retain) NSXPCInterface *_remoteInterface;
 
 + (bool)supportsSecureCoding;
 

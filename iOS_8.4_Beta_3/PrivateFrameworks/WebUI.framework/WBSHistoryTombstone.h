@@ -9,11 +9,11 @@
     NSString *_urlString;
 }
 
-@property(assign,readonly) NSDictionary * dictionaryRepresentation;
-@property(assign,readonly) double endTime;
-@property(assign,readonly) long long generation;
-@property(assign,readonly) double startTime;
-@property(assign,readonly) NSString * urlString;
+@property (nonatomic, readonly) NSDictionary *dictionaryRepresentation;
+@property (nonatomic, readonly) double endTime;
+@property (nonatomic, readonly) long long generation;
+@property (nonatomic, readonly) double startTime;
+@property (nonatomic, readonly) NSString *urlString;
 
 - (void).cxx_destruct;
 - (id)description;

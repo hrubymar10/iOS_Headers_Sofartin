@@ -14,19 +14,19 @@
     bool _sent;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSDictionary * extraIDSOptions;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * idsIdentifier;
-@property(assign,retain) id pbResponse;
-@property(assign,retain) NSDictionary * persistentUserInfo;
-@property(assign,readwrite) unsigned long long priority;
-@property(assign,readwrite) NMSIncomingRequest * request;
-@property(assign,readwrite) double sendTimeout;
-@property(getter=isSent,assign,readwrite) bool sent;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSData *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSDictionary *extraIDSOptions;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *idsIdentifier;
+@property (nonatomic, retain) id pbResponse;
+@property (nonatomic, retain) NSDictionary *persistentUserInfo;
+@property (nonatomic) unsigned long long priority;
+@property (nonatomic) NMSIncomingRequest *request;
+@property (nonatomic) double sendTimeout;
+@property (getter=isSent) bool sent;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)CPObfuscatedDescriptionObject;

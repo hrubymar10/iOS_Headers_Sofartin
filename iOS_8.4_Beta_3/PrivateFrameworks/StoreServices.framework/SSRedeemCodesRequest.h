@@ -9,14 +9,14 @@
     NSArray *_redeemCodes;
 }
 
-@property(assign,copy) SSAuthenticationContext * authenticationContext;
-@property(assign,readwrite) bool cameraRecognized;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool headless;
-@property(assign,readonly) NSArray * redeemCodes;
-@property(assign,readonly) Class superclass;
+@property (copy) SSAuthenticationContext *authenticationContext;
+@property bool cameraRecognized;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property bool headless;
+@property (readonly) NSArray *redeemCodes;
+@property (readonly) Class superclass;
 
 - (id)authenticationContext;
 - (bool)cameraRecognized;

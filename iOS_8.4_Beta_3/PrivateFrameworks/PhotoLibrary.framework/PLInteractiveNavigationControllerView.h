@@ -18,17 +18,17 @@
     UIView *_top;
 }
 
-@property(assign,retain) UIView * bottomView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIView * footerView;
-@property(getter=footerViewIsHidden,assign,readwrite) bool footerViewHidden;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIView * headerView;
-@property(getter=headerViewIsHidden,assign,readwrite) bool headerViewHidden;
-@property(assign,readonly) UINavigationBar * navigationBar;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIView * topView;
+@property (nonatomic, retain) UIView *bottomView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIView *footerView;
+@property (getter=footerViewIsHidden, nonatomic) bool footerViewHidden;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIView *headerView;
+@property (getter=headerViewIsHidden, nonatomic) bool headerViewHidden;
+@property (nonatomic, readonly) UINavigationBar *navigationBar;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIView *topView;
 
 - (void)_adjustViewFrame:(id)arg1;
 - (id)bottomView;

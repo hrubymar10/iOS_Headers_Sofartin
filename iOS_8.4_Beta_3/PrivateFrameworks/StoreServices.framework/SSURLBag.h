@@ -13,7 +13,7 @@
     NSString *_storeFrontIdentifier;
 }
 
-@property(assign,readonly) SSURLBagContext * URLBagContext;
+@property (readonly) SSURLBagContext *URLBagContext;
 
 + (id)URLBagForContext:(id)arg1;
 + (void)setURLBag:(id)arg1 forContext:(id)arg2;

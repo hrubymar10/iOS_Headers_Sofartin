@@ -4,7 +4,7 @@
 
 @interface MTLRenderPassDepthAttachmentDescriptor : MTLRenderPassAttachmentDescriptor
 
-@property(assign,readwrite) double clearDepth;
+@property (nonatomic) double clearDepth;
 
 - (double)clearDepth;
 - (id)description;

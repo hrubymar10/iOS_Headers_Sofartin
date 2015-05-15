@@ -7,8 +7,8 @@
     NSString *_styleName;
 }
 
-@property(assign,readonly) NSString * fullName;
-@property(assign,readonly) NSString * styleName;
+@property (nonatomic, readonly) NSString *fullName;
+@property (nonatomic, readonly) NSString *styleName;
 
 - (void)dealloc;
 - (id)description;

@@ -9,26 +9,26 @@
     TIKeyboardOutput *_keyboardOutput;
 }
 
-@property(assign,readwrite) long long autocapitalizationType;
-@property(assign,readwrite) long long autocorrectionType;
-@property(getter=_controllerOutput,assign,retain) _UIInputViewControllerOutput * controllerOutput;
-@property(getter=_controllerState,assign,retain) _UIInputViewControllerState * controllerState;
-@property(assign,copy) NSString * debugDescription;
-@property(getter=_delegate,assign,readwrite) <_UITextDocumentInterfaceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * documentContextAfterInput;
-@property(assign,readonly) NSString * documentContextBeforeInput;
-@property(getter=_documentState,assign,readonly) TIDocumentState * documentState;
-@property(assign,readwrite) bool enablesReturnKeyAutomatically;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long keyboardAppearance;
-@property(getter=_keyboardOutput,assign,readonly) TIKeyboardOutput * keyboardOutput;
-@property(assign,readwrite) long long keyboardType;
-@property(assign,readwrite) long long returnKeyType;
-@property(getter=isSecureTextEntry,assign,readwrite) bool secureTextEntry;
-@property(assign,readwrite) long long spellCheckingType;
-@property(assign,readonly) Class superclass;
-@property(getter=_textInputTraits,assign,readonly) TITextInputTraits * textInputTraits;
+@property (nonatomic) long long autocapitalizationType;
+@property (nonatomic) long long autocorrectionType;
+@property (getter=_controllerOutput, nonatomic, retain) _UIInputViewControllerOutput *controllerOutput;
+@property (getter=_controllerState, nonatomic, retain) _UIInputViewControllerState *controllerState;
+@property (readonly, copy) NSString *debugDescription;
+@property (getter=_delegate, nonatomic) <_UITextDocumentInterfaceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *documentContextAfterInput;
+@property (nonatomic, readonly) NSString *documentContextBeforeInput;
+@property (getter=_documentState, nonatomic, readonly) TIDocumentState *documentState;
+@property (nonatomic) bool enablesReturnKeyAutomatically;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long keyboardAppearance;
+@property (getter=_keyboardOutput, nonatomic, readonly) TIKeyboardOutput *keyboardOutput;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic) long long returnKeyType;
+@property (getter=isSecureTextEntry, nonatomic) bool secureTextEntry;
+@property (nonatomic) long long spellCheckingType;
+@property (readonly) Class superclass;
+@property (getter=_textInputTraits, nonatomic, readonly) TITextInputTraits *textInputTraits;
 
 - (id)_controllerOutput;
 - (id)_controllerState;

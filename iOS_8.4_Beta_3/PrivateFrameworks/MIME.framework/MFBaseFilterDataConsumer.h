@@ -7,12 +7,12 @@
     bool _serialAppend;
 }
 
-@property(assign,readonly) NSArray * consumers;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isSerialAppend,assign,readwrite) bool serialAppend;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *consumers;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isSerialAppend, nonatomic) bool serialAppend;
+@property (readonly) Class superclass;
 
 + (id)filterWithConsumer:(id)arg1;
 + (id)filterWithConsumers:(id)arg1;

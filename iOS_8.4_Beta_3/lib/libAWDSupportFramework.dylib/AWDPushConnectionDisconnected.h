@@ -20,20 +20,20 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int connectionType;
-@property(assign,readwrite) unsigned int error;
-@property(assign,readwrite) int genericError;
-@property(assign,retain) NSString * guid;
-@property(assign,readwrite) bool hasConnectionType;
-@property(assign,readwrite) bool hasError;
-@property(assign,readwrite) bool hasGenericError;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasLinkQuality;
-@property(assign,readwrite) bool hasSslError;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) int linkQuality;
-@property(assign,readwrite) unsigned int sslError;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int connectionType;
+@property (nonatomic) unsigned int error;
+@property (nonatomic) int genericError;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic) bool hasConnectionType;
+@property (nonatomic) bool hasError;
+@property (nonatomic) bool hasGenericError;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasLinkQuality;
+@property (nonatomic) bool hasSslError;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) int linkQuality;
+@property (nonatomic) unsigned int sslError;
+@property (nonatomic) unsigned long long timestamp;
 
 - (unsigned int)connectionType;
 - (void)copyTo:(id)arg1;

@@ -8,9 +8,9 @@
     UIImage *_tableIcon;
 }
 
-@property(assign,readonly) UIImageView * checkmarkView;
-@property(assign,retain) UIImage * highlightedTableIcon;
-@property(assign,retain) UIImage * tableIcon;
+@property (nonatomic, readonly) UIImageView *checkmarkView;
+@property (nonatomic, retain) UIImage *highlightedTableIcon;
+@property (nonatomic, retain) UIImage *tableIcon;
 
 - (id)checkmarkView;
 - (void)dealloc;

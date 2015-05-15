@@ -18,12 +18,12 @@
     UIWindow *_window;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PKPrinter * printer;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool userSelectedPrinter;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PKPrinter *printer;
+@property (readonly) Class superclass;
+@property bool userSelectedPrinter;
 
 - (void)_keyWindowWillRotate:(id)arg1;
 - (void)_presentInParentAnimated:(bool)arg1;

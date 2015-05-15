@@ -10,14 +10,14 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSMutableArray * allSections;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableArray * enabledSections;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) _UISettings * settings;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSMutableArray *allSections;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMutableArray *enabledSections;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) _UISettings *settings;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSString *title;
 
 + (id)moduleWithSettings:(id)arg1;
 + (id)moduleWithTitle:(id)arg1 contents:(id)arg2;

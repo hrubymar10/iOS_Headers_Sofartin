@@ -14,18 +14,18 @@
     int _type;
 }
 
-@property(assign,retain) MPPCompoundPredicate * compoundPredicate;
-@property(assign,retain) MPPConditionalPredicate * conditionalPredicate;
-@property(assign,readonly) bool hasCompoundPredicate;
-@property(assign,readonly) bool hasConditionalPredicate;
-@property(assign,readonly) bool hasPersistentIDsPredicate;
-@property(assign,readonly) bool hasPropertyPredicate;
-@property(assign,readonly) bool hasSearchStringPredicate;
-@property(assign,readwrite) bool hasType;
-@property(assign,retain) MPPPersistentIDsPredicate * persistentIDsPredicate;
-@property(assign,retain) MPPPropertyPredicate * propertyPredicate;
-@property(assign,retain) MPPSearchStringPredicate * searchStringPredicate;
-@property(assign,readwrite) int type;
+@property (nonatomic, retain) MPPCompoundPredicate *compoundPredicate;
+@property (nonatomic, retain) MPPConditionalPredicate *conditionalPredicate;
+@property (nonatomic, readonly) bool hasCompoundPredicate;
+@property (nonatomic, readonly) bool hasConditionalPredicate;
+@property (nonatomic, readonly) bool hasPersistentIDsPredicate;
+@property (nonatomic, readonly) bool hasPropertyPredicate;
+@property (nonatomic, readonly) bool hasSearchStringPredicate;
+@property (nonatomic) bool hasType;
+@property (nonatomic, retain) MPPPersistentIDsPredicate *persistentIDsPredicate;
+@property (nonatomic, retain) MPPPropertyPredicate *propertyPredicate;
+@property (nonatomic, retain) MPPSearchStringPredicate *searchStringPredicate;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (id)compoundPredicate;

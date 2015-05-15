@@ -12,13 +12,13 @@
     NSData *_selfPushToken;
 }
 
-@property(assign,copy) NSArray * canonicalizedPeers;
-@property(assign,copy) NSArray * peers;
-@property(assign,copy) NSDictionary * regionInformation;
-@property(assign,copy) NSData * selfBlob;
-@property(assign,copy) NSNumber * selfNATType;
-@property(assign,copy) NSData * selfNatIP;
-@property(assign,copy) NSData * selfPushToken;
+@property (copy) NSArray *canonicalizedPeers;
+@property (copy) NSArray *peers;
+@property (copy) NSDictionary *regionInformation;
+@property (copy) NSData *selfBlob;
+@property (copy) NSNumber *selfNATType;
+@property (copy) NSData *selfNatIP;
+@property (copy) NSData *selfPushToken;
 
 - (id)bagKey;
 - (id)canonicalizedPeers;

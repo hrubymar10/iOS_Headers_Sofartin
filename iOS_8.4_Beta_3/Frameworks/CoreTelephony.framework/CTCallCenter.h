@@ -8,8 +8,8 @@
     void *_server;
 }
 
-@property(assign,copy) id callEventHandler;
-@property(assign,retain) NSSet * currentCalls;
+@property (nonatomic, copy) id callEventHandler;
+@property (retain) NSSet *currentCalls;
 
 - (void)broadcastCallStateChangesIfNeededWithFailureLogMessage:(id)arg1;
 - (bool)calculateCallStateChanges:(id)arg1;

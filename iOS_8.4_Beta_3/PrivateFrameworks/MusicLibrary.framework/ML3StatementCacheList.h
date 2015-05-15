@@ -7,9 +7,9 @@
     ML3StatementCacheNode *_lastNode;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) ML3StatementCacheNode * firstNode;
-@property(assign,readonly) ML3StatementCacheNode * lastNode;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, readonly) ML3StatementCacheNode *firstNode;
+@property (nonatomic, readonly) ML3StatementCacheNode *lastNode;
 
 - (void).cxx_destruct;
 - (void)appendNode:(id)arg1;

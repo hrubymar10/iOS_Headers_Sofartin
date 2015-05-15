@@ -22,27 +22,27 @@
     NSString *_userAgentHeader;
 }
 
-@property(assign,retain) NSString * accountID;
-@property(assign,retain) <CoreDAVAccountInfoProvider> * backingAccountInfoProvider;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * host;
-@property(assign,retain) NSData * identityPersist;
-@property(assign,retain) NSString * password;
-@property(assign,readwrite) long long port;
-@property(assign,retain) NSURL * principalURL;
-@property(assign,retain) NSString * scheme;
-@property(assign,retain) NSSet * serverComplianceClasses;
-@property(assign,retain) NSDictionary * serverHeaders;
-@property(assign,retain) NSString * serverRoot;
-@property(assign,readwrite) bool shouldFailAllTasks;
-@property(assign,readwrite) bool started;
-@property(assign,readwrite) bool success;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * user;
-@property(assign,retain) NSString * userAgentHeader;
+@property (nonatomic, retain) NSString *accountID;
+@property (nonatomic, retain) <CoreDAVAccountInfoProvider> *backingAccountInfoProvider;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *host;
+@property (nonatomic, retain) NSData *identityPersist;
+@property (nonatomic, retain) NSString *password;
+@property (nonatomic) long long port;
+@property (nonatomic, retain) NSURL *principalURL;
+@property (nonatomic, retain) NSString *scheme;
+@property (nonatomic, retain) NSSet *serverComplianceClasses;
+@property (nonatomic, retain) NSDictionary *serverHeaders;
+@property (nonatomic, retain) NSString *serverRoot;
+@property (nonatomic) bool shouldFailAllTasks;
+@property (nonatomic) bool started;
+@property (nonatomic) bool success;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSString *user;
+@property (nonatomic, retain) NSString *userAgentHeader;
 
 - (id)accountID;
 - (id)additionalHeaderValues;

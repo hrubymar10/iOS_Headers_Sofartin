@@ -43,27 +43,27 @@
     bool mWantsPreviewLayout;
 }
 
-@property(assign,retain) TSCHSelectionPath * activeTextEditingPath;
-@property(assign,readonly) NSString * animationFilter;
-@property(assign,readonly) unsigned long long chartDeliveryStyle;
-@property(assign,readonly) TSCHChartDrawableInfo * chartInfo;
-@property(assign,readonly) TSCHChartLayout * chartLayout;
-@property(assign,readonly) bool chartRepGoingAway;
-@property(assign,readwrite) bool chunkTexturesValid;
-@property(assign,readonly) double contentsScale;
-@property(assign,readonly) long long currentChunk;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id drawingOpEndBlock;
-@property(assign,copy) id drawingOpStartBlock;
-@property(assign,readonly) bool drawingSearchReference;
-@property(assign,retain) TSCHLegendMoveKnob * dynamicLegendKnob;
-@property(assign,readonly) bool forceRenderBlankBackground;
-@property(assign,readwrite) bool forceSeparateLegendLayer;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) TSCHSearchSelection * selection;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) double viewScale;
+@property (nonatomic, readonly, retain) TSCHSelectionPath *activeTextEditingPath;
+@property (nonatomic, readonly) NSString *animationFilter;
+@property (nonatomic, readonly) unsigned long long chartDeliveryStyle;
+@property (nonatomic, readonly) TSCHChartDrawableInfo *chartInfo;
+@property (nonatomic, readonly) TSCHChartLayout *chartLayout;
+@property (nonatomic, readonly) bool chartRepGoingAway;
+@property (nonatomic) bool chunkTexturesValid;
+@property (nonatomic, readonly) double contentsScale;
+@property (nonatomic, readonly) long long currentChunk;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id drawingOpEndBlock;
+@property (nonatomic, copy) id drawingOpStartBlock;
+@property (nonatomic, readonly) bool drawingSearchReference;
+@property (nonatomic, retain) TSCHLegendMoveKnob *dynamicLegendKnob;
+@property (nonatomic, readonly) bool forceRenderBlankBackground;
+@property (nonatomic) bool forceSeparateLegendLayer;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) TSCHSearchSelection *selection;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) double viewScale;
 
 + (double)magicMoveAttributeMatchPercentBetweenOutgoingObject:(id)arg1 incomingObject:(id)arg2 mixingTypeContext:(id)arg3;
 

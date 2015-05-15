@@ -9,11 +9,11 @@
     NSDictionary *_rowDescriptions;
 }
 
-@property(assign,readwrite) <SPInterfaceController> * controller;
-@property(assign,readonly) long long numberOfRows;
-@property(assign,retain) NSArray * rowControllerProperties;
-@property(assign,copy) NSArray * rowControllers;
-@property(assign,copy) NSDictionary * rowDescriptions;
+@property (nonatomic) <SPInterfaceController> *controller;
+@property (nonatomic, readonly) long long numberOfRows;
+@property (nonatomic, retain) NSArray *rowControllerProperties;
+@property (nonatomic, copy) NSArray *rowControllers;
+@property (nonatomic, copy) NSDictionary *rowDescriptions;
 
 - (void).cxx_destruct;
 - (void)_setupWithDescription:(id)arg1 forController:(id)arg2;

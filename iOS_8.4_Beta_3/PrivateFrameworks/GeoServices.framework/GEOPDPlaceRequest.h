@@ -17,19 +17,19 @@
     bool _suppressResultsRequiringAttribution;
 }
 
-@property(assign,retain) GEOPDAnalyticMetadata * analyticMetadata;
-@property(assign,retain) GEOPDClientMetadata * clientMetadata;
-@property(assign,retain) NSMutableArray * displayLocales;
-@property(assign,readonly) bool hasAnalyticMetadata;
-@property(assign,readonly) bool hasClientMetadata;
-@property(assign,readonly) bool hasPlaceRequestParameters;
-@property(assign,readwrite) bool hasRequestType;
-@property(assign,readwrite) bool hasSuppressResultsRequiringAttribution;
-@property(assign,retain) GEOPDPlaceRequestParameters * placeRequestParameters;
-@property(assign,readwrite) int requestType;
-@property(assign,retain) NSMutableArray * requestedComponents;
-@property(assign,retain) NSMutableArray * spokenLocales;
-@property(assign,readwrite) bool suppressResultsRequiringAttribution;
+@property (nonatomic, retain) GEOPDAnalyticMetadata *analyticMetadata;
+@property (nonatomic, retain) GEOPDClientMetadata *clientMetadata;
+@property (nonatomic, retain) NSMutableArray *displayLocales;
+@property (nonatomic, readonly) bool hasAnalyticMetadata;
+@property (nonatomic, readonly) bool hasClientMetadata;
+@property (nonatomic, readonly) bool hasPlaceRequestParameters;
+@property (nonatomic) bool hasRequestType;
+@property (nonatomic) bool hasSuppressResultsRequiringAttribution;
+@property (nonatomic, retain) GEOPDPlaceRequestParameters *placeRequestParameters;
+@property (nonatomic) int requestType;
+@property (nonatomic, retain) NSMutableArray *requestedComponents;
+@property (nonatomic, retain) NSMutableArray *spokenLocales;
+@property (nonatomic) bool suppressResultsRequiringAttribution;
 
 - (void)addDisplayLocale:(id)arg1;
 - (void)addRequestedComponent:(id)arg1;

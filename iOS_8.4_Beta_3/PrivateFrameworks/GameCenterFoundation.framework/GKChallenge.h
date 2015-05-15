@@ -6,20 +6,20 @@
     GKChallengeInternal *_internal;
 }
 
-@property(assign,copy) NSString * bundleID;
-@property(assign,copy) NSString * challengeID;
-@property(assign,copy) NSOrderedSet * compatibleBundleIDs;
-@property(assign,retain) NSDate * completionDate;
-@property(assign,readonly) bool detailsLoaded;
-@property(assign,readonly) GKGame * game;
-@property(assign,retain) GKChallengeInternal * internal;
-@property(assign,retain) NSDate * issueDate;
-@property(assign,copy) GKPlayer * issuingPlayer;
-@property(assign,copy) NSString * issuingPlayerID;
-@property(assign,copy) NSString * message;
-@property(assign,copy) GKPlayer * receivingPlayer;
-@property(assign,copy) NSString * receivingPlayerID;
-@property(assign,readonly) long long state;
+@property (nonatomic, readonly, copy) NSString *bundleID;
+@property (nonatomic, readonly, copy) NSString *challengeID;
+@property (nonatomic, readonly, copy) NSOrderedSet *compatibleBundleIDs;
+@property (nonatomic, readonly, retain) NSDate *completionDate;
+@property (nonatomic, readonly) bool detailsLoaded;
+@property (nonatomic, readonly) GKGame *game;
+@property (retain) GKChallengeInternal *internal;
+@property (nonatomic, readonly, retain) NSDate *issueDate;
+@property (nonatomic, readonly, copy) GKPlayer *issuingPlayer;
+@property (nonatomic, readonly, copy) NSString *issuingPlayerID;
+@property (nonatomic, readonly, copy) NSString *message;
+@property (nonatomic, readonly, copy) GKPlayer *receivingPlayer;
+@property (nonatomic, readonly, copy) NSString *receivingPlayerID;
+@property (nonatomic, readonly) long long state;
 
 + (id)challengeForGame:(id)arg1 andPlayer:(id)arg2 withAchievement:(id)arg3;
 + (id)challengeForGame:(id)arg1 andPlayer:(id)arg2 withScore:(id)arg3;

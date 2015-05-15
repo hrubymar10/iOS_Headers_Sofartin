@@ -7,7 +7,7 @@
     NSCountedSet *_retainedObjects;
 }
 
-@property(assign,readwrite) <MSMediaStreamDaemonDelegate> * delegate;
+@property (nonatomic) <MSMediaStreamDaemonDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)_boundDeleterForPersonID:(id)arg1;

@@ -6,7 +6,7 @@
     unsigned long long _activityType;
 }
 
-@property(assign,readonly) unsigned long long activityType;
+@property (nonatomic, readonly) unsigned long long activityType;
 
 + (bool)supportsSecureCoding;
 

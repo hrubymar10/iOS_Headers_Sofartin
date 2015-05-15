@@ -4,9 +4,9 @@
 
 @interface SAWebImageResult : SAWebWebResult
 
-@property(assign,copy) NSNumber * fileSize;
-@property(assign,retain) SAWebAcePicture * picture;
-@property(assign,copy) NSArray * thumbNails;
+@property (nonatomic, copy) NSNumber *fileSize;
+@property (nonatomic, retain) SAWebAcePicture *picture;
+@property (nonatomic, copy) NSArray *thumbNails;
 
 + (id)imageResult;
 + (id)imageResultWithDictionary:(id)arg1 context:(id)arg2;

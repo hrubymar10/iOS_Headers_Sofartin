@@ -6,10 +6,10 @@
     SLTwitterRequest *_request;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,retain) ACAccount * account;
-@property(assign,readonly) NSDictionary * parameters;
-@property(assign,readonly) long long requestMethod;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, retain) ACAccount *account;
+@property (nonatomic, readonly) NSDictionary *parameters;
+@property (nonatomic, readonly) long long requestMethod;
 
 - (id)URL;
 - (id)account;

@@ -9,9 +9,9 @@
     NSString *userVisibleURLString;
 }
 
-@property(assign,retain) NSString * formActionURLString;
-@property(assign,readonly) NSURL * pageTemplateURL;
-@property(assign,retain) NSString * userVisibleURLString;
+@property (retain) NSString *formActionURLString;
+@property (readonly) NSURL *pageTemplateURL;
+@property (retain) NSString *userVisibleURLString;
 
 - (id)_blockpage;
 - (id)_css;

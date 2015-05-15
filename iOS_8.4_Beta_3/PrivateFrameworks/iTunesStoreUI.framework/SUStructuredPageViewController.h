@@ -8,12 +8,12 @@
     SUStructuredPage *_structuredPage;
 }
 
-@property(assign,retain) Class dataSourceClass;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SUStructuredPage * structuredPage;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) Class dataSourceClass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SUStructuredPage *structuredPage;
+@property (readonly) Class superclass;
 
 - (bool)_gotoURLForItem:(id)arg1 withURLIndex:(long long)arg2;
 - (bool)_handleLoadMoreForIndexPath:(id)arg1;

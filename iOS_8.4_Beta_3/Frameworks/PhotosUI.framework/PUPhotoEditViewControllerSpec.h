@@ -4,11 +4,11 @@
 
 @interface PUPhotoEditViewControllerSpec : PUViewControllerSpec
 
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } previewViewInsetsLandscape;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } previewViewInsetsPortrait;
-@property(assign,readonly) bool shouldDisplayExtensionButtonInMainToolbar;
-@property(assign,readonly) bool shouldDisplaySecondaryToolButtonsInMainToolbar;
-@property(assign,readonly) double toolbarLongSideMargin;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } previewViewInsetsLandscape;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } previewViewInsetsPortrait;
+@property (nonatomic, readonly) bool shouldDisplayExtensionButtonInMainToolbar;
+@property (nonatomic, readonly) bool shouldDisplaySecondaryToolButtonsInMainToolbar;
+@property (nonatomic, readonly) double toolbarLongSideMargin;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })previewViewInsetsLandscape;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })previewViewInsetsPortrait;

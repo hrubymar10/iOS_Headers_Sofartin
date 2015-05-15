@@ -8,9 +8,9 @@
     NSString *_logFileName;
 }
 
-@property(assign,retain) NSMutableDictionary * deviceInfoDictionary;
-@property(assign,retain) NSData * logData;
-@property(assign,retain) NSString * logFileName;
+@property (retain) NSMutableDictionary *deviceInfoDictionary;
+@property (retain) NSData *logData;
+@property (retain) NSString *logFileName;
 
 - (bool)archiveLogFile:(id)arg1 toFile:(id)arg2 atDir:(id)arg3;
 - (id)collectAggdData;

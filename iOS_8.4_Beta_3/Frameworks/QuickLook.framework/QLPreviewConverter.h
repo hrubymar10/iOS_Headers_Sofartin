@@ -7,11 +7,11 @@
     QLPreviewParts *_previewParts;
 }
 
-@property(assign,readonly) NSString * previewFileName;
-@property(assign,readonly) QLPreviewParts * previewParts;
-@property(assign,readonly) NSURLRequest * previewRequest;
-@property(assign,readonly) NSURLResponse * previewResponse;
-@property(assign,readonly) NSString * previewUTI;
+@property (nonatomic, readonly) NSString *previewFileName;
+@property (nonatomic, readonly) QLPreviewParts *previewParts;
+@property (nonatomic, readonly) NSURLRequest *previewRequest;
+@property (nonatomic, readonly) NSURLResponse *previewResponse;
+@property (nonatomic, readonly) NSString *previewUTI;
 
 + (id)_csvUTIs;
 + (id)_iWorkUTIs;

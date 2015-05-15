@@ -19,20 +19,20 @@
     NSDictionary *_sumQuantityBySource;
 }
 
-@property(assign,retain) HKQuantity * averageQuantity;
-@property(assign,retain) NSDictionary * averageQuantityBySource;
-@property(assign,readwrite) unsigned long long dataCount;
-@property(assign,retain) NSDictionary * dataCountBySource;
-@property(assign,readonly) NSDate * endDate;
-@property(assign,retain) HKQuantity * maximumQuantity;
-@property(assign,retain) NSDictionary * maximumQuantityBySource;
-@property(assign,retain) HKQuantity * minimumQuantity;
-@property(assign,retain) NSDictionary * minimumQuantityBySource;
-@property(assign,readonly) HKQuantityType * quantityType;
-@property(assign,readonly) NSArray * sources;
-@property(assign,readonly) NSDate * startDate;
-@property(assign,retain) HKQuantity * sumQuantity;
-@property(assign,retain) NSDictionary * sumQuantityBySource;
+@property (nonatomic, retain) HKQuantity *averageQuantity;
+@property (nonatomic, retain) NSDictionary *averageQuantityBySource;
+@property (nonatomic) unsigned long long dataCount;
+@property (nonatomic, retain) NSDictionary *dataCountBySource;
+@property (readonly) NSDate *endDate;
+@property (nonatomic, retain) HKQuantity *maximumQuantity;
+@property (nonatomic, retain) NSDictionary *maximumQuantityBySource;
+@property (nonatomic, retain) HKQuantity *minimumQuantity;
+@property (nonatomic, retain) NSDictionary *minimumQuantityBySource;
+@property (readonly) HKQuantityType *quantityType;
+@property (readonly) NSArray *sources;
+@property (readonly) NSDate *startDate;
+@property (nonatomic, retain) HKQuantity *sumQuantity;
+@property (nonatomic, retain) NSDictionary *sumQuantityBySource;
 
 + (void)_validateOptions:(unsigned long long)arg1 forDataType:(id)arg2;
 + (bool)supportsSecureCoding;

@@ -9,7 +9,7 @@
     } _coordinate;
 }
 
-@property(assign,readwrite) struct { double x1; double x2; } coordinate;
+@property (nonatomic) struct { double x1; double x2; } coordinate;
 
 + (id)UTITypes;
 

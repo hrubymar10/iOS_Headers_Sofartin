@@ -6,10 +6,10 @@
     NSDictionary *_dictionary;
 }
 
-@property(assign,readonly) unsigned long long friendLikeCount;
-@property(assign,readonly) NSArray * friends;
-@property(assign,readonly) unsigned long long globalLikeCount;
-@property(getter=isLikedByMe,assign,readonly) id likedByMe;
+@property (readonly) unsigned long long friendLikeCount;
+@property (readonly) NSArray *friends;
+@property (readonly) unsigned long long globalLikeCount;
+@property (getter=isLikedByMe, readonly) id likedByMe;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

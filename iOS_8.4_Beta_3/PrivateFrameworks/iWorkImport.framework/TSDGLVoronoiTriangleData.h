@@ -20,10 +20,10 @@
     unsigned long long *_triangleIndexToCellTriangleIndexMappingTable;
 }
 
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
-@property(assign,readonly) unsigned long long cellCount;
-@property(assign,readonly) NSArray * cells;
-@property(assign,readonly) unsigned long long triangleCount;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
+@property (nonatomic, readonly) unsigned long long cellCount;
+@property (nonatomic, readonly) NSArray *cells;
+@property (nonatomic, readonly) unsigned long long triangleCount;
 
 - (id).cxx_construct;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })bounds;

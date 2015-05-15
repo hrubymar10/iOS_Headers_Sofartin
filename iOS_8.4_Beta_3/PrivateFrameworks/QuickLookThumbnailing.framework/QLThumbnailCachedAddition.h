@@ -7,7 +7,7 @@
     unsigned long long _fileID;
 }
 
-@property(assign,retain) GSAddition * addition;
+@property (retain) GSAddition *addition;
 
 - (id)addition;
 - (void)dealloc;

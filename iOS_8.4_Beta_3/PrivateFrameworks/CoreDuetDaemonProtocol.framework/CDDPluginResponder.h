@@ -6,7 +6,7 @@
     CDDebug *_debug;
 }
 
-@property(assign,readonly) CDDebug * debug;
+@property (readonly) CDDebug *debug;
 
 - (void).cxx_destruct;
 - (id)debug;

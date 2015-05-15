@@ -52,27 +52,27 @@
     } _transforms;
 }
 
-@property(setter=_setBackgroundView:,assign,retain) UIView * _backgroundView;
-@property(assign,readonly) NSPointerArray * _imageSizes;
-@property(assign,readonly) long long _numberOfViews;
-@property(setter=_setPhotoDecorationVariants:,assign,copy) NSArray * _photoDecorationVariants;
-@property(assign,readonly) NSArray * _photoViews;
-@property(assign,readwrite) bool combinesPhotoDecorations;
-@property(assign,retain) UIImage * emptyPlaceholderImage;
-@property(assign,retain) UIColor * gridBackgroundColor;
-@property(assign,readwrite) double gridBackgroundCornerRadius;
-@property(assign,readwrite) double gridItemSpacing;
-@property(assign,readwrite) double gridMargin;
-@property(assign,readwrite) long long numberOfVisibleItems;
-@property(assign,retain) PUPhotoDecoration * photoDecoration;
-@property(assign,readonly) NSArray * stackItemViews;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } stackOffset;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } stackPerspectiveFactor;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } stackPerspectiveInsets;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } stackPerspectiveOffset;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } stackSize;
-@property(assign,readwrite) unsigned long long style;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } topLeftCornerOfFrontStackItem;
+@property (setter=_setBackgroundView:, nonatomic, retain) UIView *_backgroundView;
+@property (nonatomic, readonly) NSPointerArray *_imageSizes;
+@property (nonatomic, readonly) long long _numberOfViews;
+@property (setter=_setPhotoDecorationVariants:, nonatomic, copy) NSArray *_photoDecorationVariants;
+@property (nonatomic, readonly) NSArray *_photoViews;
+@property (nonatomic) bool combinesPhotoDecorations;
+@property (nonatomic, retain) UIImage *emptyPlaceholderImage;
+@property (nonatomic, retain) UIColor *gridBackgroundColor;
+@property (nonatomic) double gridBackgroundCornerRadius;
+@property (nonatomic) double gridItemSpacing;
+@property (nonatomic) double gridMargin;
+@property (nonatomic) long long numberOfVisibleItems;
+@property (nonatomic, retain) PUPhotoDecoration *photoDecoration;
+@property (nonatomic, readonly) NSArray *stackItemViews;
+@property (nonatomic) struct UIOffset { double x1; double x2; } stackOffset;
+@property (nonatomic) struct CGPoint { double x1; double x2; } stackPerspectiveFactor;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } stackPerspectiveInsets;
+@property (nonatomic) struct UIOffset { double x1; double x2; } stackPerspectiveOffset;
+@property (nonatomic) struct CGSize { double x1; double x2; } stackSize;
+@property (nonatomic) unsigned long long style;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } topLeftCornerOfFrontStackItem;
 
 + (long long)maximumNumberOfVisibleImagesForStyle:(unsigned long long)arg1;
 + (long long)maximumNumberOfVisibleItemsForStyle:(unsigned long long)arg1;

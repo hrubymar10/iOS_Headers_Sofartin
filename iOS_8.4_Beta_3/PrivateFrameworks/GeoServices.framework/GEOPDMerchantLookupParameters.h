@@ -15,18 +15,18 @@
     double _transactionTimestamp;
 }
 
-@property(assign,readonly) bool hasMerchantCode;
-@property(assign,readonly) bool hasPaymentNetwork;
-@property(assign,readonly) bool hasRawMerchantCode;
-@property(assign,readonly) bool hasTransactionLocation;
-@property(assign,readwrite) bool hasTransactionLocationAge;
-@property(assign,readwrite) bool hasTransactionTimestamp;
-@property(assign,retain) NSString * merchantCode;
-@property(assign,retain) NSString * paymentNetwork;
-@property(assign,retain) NSString * rawMerchantCode;
-@property(assign,retain) GEOLocation * transactionLocation;
-@property(assign,readwrite) double transactionLocationAge;
-@property(assign,readwrite) double transactionTimestamp;
+@property (nonatomic, readonly) bool hasMerchantCode;
+@property (nonatomic, readonly) bool hasPaymentNetwork;
+@property (nonatomic, readonly) bool hasRawMerchantCode;
+@property (nonatomic, readonly) bool hasTransactionLocation;
+@property (nonatomic) bool hasTransactionLocationAge;
+@property (nonatomic) bool hasTransactionTimestamp;
+@property (nonatomic, retain) NSString *merchantCode;
+@property (nonatomic, retain) NSString *paymentNetwork;
+@property (nonatomic, retain) NSString *rawMerchantCode;
+@property (nonatomic, retain) GEOLocation *transactionLocation;
+@property (nonatomic) double transactionLocationAge;
+@property (nonatomic) double transactionTimestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

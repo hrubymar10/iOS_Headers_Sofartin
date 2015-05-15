@@ -12,14 +12,14 @@
     CALayer *_overflowGlyphLayer;
 }
 
-@property(assign,readonly) TSWPRep * containedRep;
-@property(assign,readonly) NSObject<TSDContainerInfo> * containerInfo;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isShapeInvisible;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) TSWPStorage * textStorageForTexture;
+@property (nonatomic, readonly) TSWPRep *containedRep;
+@property (nonatomic, readonly) NSObject<TSDContainerInfo> *containerInfo;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isShapeInvisible;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) TSWPStorage *textStorageForTexture;
 
 + (id)magicMoveAnimationMatchesFromMatches:(id)arg1;
 + (double)magicMoveAttributeMatchPercentBetweenOutgoingObject:(id)arg1 incomingObject:(id)arg2 mixingTypeContext:(id)arg3;

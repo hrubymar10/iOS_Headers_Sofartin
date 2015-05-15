@@ -7,8 +7,8 @@
     UILabel *_statsLabel;
 }
 
-@property(assign,retain) UILabel * dateLabel;
-@property(assign,retain) UILabel * statsLabel;
+@property (nonatomic, retain) UILabel *dateLabel;
+@property (nonatomic, retain) UILabel *statsLabel;
 
 - (id)achievementsStringWithGameRecord:(id)arg1;
 - (id)dateLabel;

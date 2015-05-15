@@ -28,16 +28,16 @@
     struct opaqueCMSimpleQueue { } *_stillImageRequestQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) BWNodeOutput * defaultOutput;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) BWNodeOutput * hdrOutput;
-@property(assign,readonly) BWNodeOutput * sisOutput;
-@property(assign,readwrite) <BWStillImageCaptureStatusDelegate> * stillImageCaptureStatusDelegate;
-@property(assign,readonly) BWNodeInput * stillImageInput;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) int worstCaseInitialMaxBracketedCaptureBufferCount;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) BWNodeOutput *defaultOutput;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) BWNodeOutput *hdrOutput;
+@property (nonatomic, readonly) BWNodeOutput *sisOutput;
+@property (nonatomic) <BWStillImageCaptureStatusDelegate> *stillImageCaptureStatusDelegate;
+@property (nonatomic, readonly) BWNodeInput *stillImageInput;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) int worstCaseInitialMaxBracketedCaptureBufferCount;
 
 + (void)initialize;
 

@@ -21,12 +21,12 @@
     } _shadowOffset;
 }
 
-@property(assign,readwrite) bool disallowsSetContentOffset;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,retain) UIColor * highlightedTextColor;
-@property(assign,readwrite) ABSwellTextView * parent;
-@property(assign,retain) UIColor * shadowColor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } shadowOffset;
+@property (nonatomic) bool disallowsSetContentOffset;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic, retain) UIColor *highlightedTextColor;
+@property (nonatomic) ABSwellTextView *parent;
+@property (nonatomic, retain) UIColor *shadowColor;
+@property (nonatomic) struct CGSize { double x1; double x2; } shadowOffset;
 
 - (void)_beginPinningInputViews;
 - (void)_endPinningInputViews;

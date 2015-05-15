@@ -7,8 +7,8 @@
     GKListNode *_tailNode;
 }
 
-@property(assign,readwrite) GKListNode * headNode;
-@property(assign,readwrite) GKListNode * tailNode;
+@property (nonatomic) GKListNode *headNode;
+@property (nonatomic) GKListNode *tailNode;
 
 - (void)dealloc;
 - (id)description;

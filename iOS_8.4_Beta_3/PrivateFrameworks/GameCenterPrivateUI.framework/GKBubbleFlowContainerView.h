@@ -17,9 +17,9 @@
     long long _supportedBubbles;
 }
 
-@property(assign,readonly) NSArray * bubbleSets;
-@property(assign,readonly) GKBubbleSet * primaryBubbleControls;
-@property(assign,readonly) long long supportedBubbles;
+@property (nonatomic, readonly) NSArray *bubbleSets;
+@property (nonatomic, readonly) GKBubbleSet *primaryBubbleControls;
+@property (nonatomic, readonly) long long supportedBubbles;
 
 - (void)addBubbleSet:(id)arg1;
 - (id)bubbleSets;

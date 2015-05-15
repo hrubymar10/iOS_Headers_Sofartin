@@ -16,17 +16,17 @@
     double _travelStateScore;
 }
 
-@property(assign,readonly) unsigned long long currentTrafficDensity;
-@property(assign,readonly) NSDate * estimatedArrivalDate;
-@property(assign,readonly) bool hasTrafficIncidentOnRoute;
-@property(assign,readonly) unsigned long long historicTrafficDensity;
-@property(assign,retain) GEOLocation * lastLocation;
-@property(assign,readonly) int routeIncidentSignificance;
-@property(assign,readonly) NSString * routeIncidentStreetName;
-@property(assign,readonly) int routeIncidentType;
-@property(assign,readonly) NSDate * suggestedDepartureDate;
-@property(assign,readonly) unsigned long long travelState;
-@property(assign,readonly) double travelStateScore;
+@property (nonatomic, readonly) unsigned long long currentTrafficDensity;
+@property (nonatomic, readonly) NSDate *estimatedArrivalDate;
+@property (nonatomic, readonly) bool hasTrafficIncidentOnRoute;
+@property (nonatomic, readonly) unsigned long long historicTrafficDensity;
+@property (nonatomic, retain) GEOLocation *lastLocation;
+@property (nonatomic, readonly) int routeIncidentSignificance;
+@property (nonatomic, readonly) NSString *routeIncidentStreetName;
+@property (nonatomic, readonly) int routeIncidentType;
+@property (nonatomic, readonly) NSDate *suggestedDepartureDate;
+@property (nonatomic, readonly) unsigned long long travelState;
+@property (nonatomic, readonly) double travelStateScore;
 
 - (unsigned long long)currentTrafficDensity;
 - (void)dealloc;

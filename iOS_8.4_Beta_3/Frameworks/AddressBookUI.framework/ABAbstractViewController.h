@@ -7,8 +7,8 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,retain) ABModel * model;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
+@property (nonatomic, retain) ABModel *model;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
 
 - (bool)_allowsAutorotation;
 - (void)_getRotationContentSettings:(struct { bool x1; bool x2; bool x3; bool x4; bool x5; double x6; int x7; }*)arg1;

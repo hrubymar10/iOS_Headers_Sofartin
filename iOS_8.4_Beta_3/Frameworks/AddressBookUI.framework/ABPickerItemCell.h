@@ -7,8 +7,8 @@
     UITextField *_textField;
 }
 
-@property(assign,retain) CNContactStyle * contactStyle;
-@property(assign,retain) UITextField * textField;
+@property (nonatomic, retain) CNContactStyle *contactStyle;
+@property (nonatomic, retain) UITextField *textField;
 
 - (void)beginEditing;
 - (id)contactStyle;

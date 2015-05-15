@@ -21,7 +21,7 @@
     id _tmpRefObjMap;
 }
 
-@property(assign,readwrite) <NSKeyedUnarchiverDelegate> * delegate;
+@property <NSKeyedUnarchiverDelegate> *delegate;
 
 + (id)MSSafeUnarchiveObjectWithData:(id)arg1;
 + (id)MSSafeUnarchiveObjectWithData:(id)arg1 outError:(id*)arg2;

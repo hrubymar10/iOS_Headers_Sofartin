@@ -9,7 +9,7 @@
     bool _isLoading;
 }
 
-@property(assign,readonly) NSArray * chats;
+@property (nonatomic, readonly) NSArray *chats;
 
 + (id)sharedInstance;
 

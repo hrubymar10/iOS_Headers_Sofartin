@@ -8,18 +8,18 @@
     int _private1b;
 }
 
-@property(getter=isAsynchronous,assign,readonly) bool asynchronous;
-@property(getter=isCancelled,assign,readonly) bool cancelled;
-@property(assign,copy) id completionBlock;
-@property(getter=isConcurrent,assign,readonly) bool concurrent;
-@property(assign,copy) NSArray * dependencies;
-@property(getter=isExecuting,assign,readonly) bool executing;
-@property(getter=isFinished,assign,readonly) bool finished;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) long long qualityOfService;
-@property(assign,readwrite) long long queuePriority;
-@property(getter=isReady,assign,readonly) bool ready;
-@property(assign,readwrite) double threadPriority;
+@property (getter=isAsynchronous, readonly) bool asynchronous;
+@property (getter=isCancelled, readonly) bool cancelled;
+@property (copy) id completionBlock;
+@property (getter=isConcurrent, readonly) bool concurrent;
+@property (readonly, copy) NSArray *dependencies;
+@property (getter=isExecuting, readonly) bool executing;
+@property (getter=isFinished, readonly) bool finished;
+@property (copy) NSString *name;
+@property long long qualityOfService;
+@property long long queuePriority;
+@property (getter=isReady, readonly) bool ready;
+@property double threadPriority;
 
 + (bool)automaticallyNotifiesObserversForKey:(id)arg1;
 + (id)currentOperation;

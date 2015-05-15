@@ -13,11 +13,11 @@
     SEL _showAllAction;
 }
 
-@property(assign,retain) NSPredicate * filterPredicate;
-@property(assign,copy) NSArray * items;
-@property(assign,readwrite) unsigned long long pageSize;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } preloadedRange;
-@property(assign,readwrite) SEL showAllAction;
+@property (nonatomic, retain) NSPredicate *filterPredicate;
+@property (nonatomic, copy) NSArray *items;
+@property (nonatomic) unsigned long long pageSize;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } preloadedRange;
+@property (nonatomic) SEL showAllAction;
 
 - (id)_gkDescriptionWithChildren:(int)arg1;
 - (long long)collectionView:(id)arg1 numberOfItemsInSection:(long long)arg2;

@@ -33,19 +33,19 @@
     NSMutableSet *_streamWriters;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) int endpointType;
-@property(assign,copy) NSString * guid;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInitialized,assign,readwrite) bool initialized;
-@property(assign,readwrite) double lastActivityTime;
-@property(assign,copy) NSString * libraryIdentifier;
-@property(assign,retain) NSHashTable * observers;
-@property(getter=isOpen,assign,readonly) bool open;
-@property(assign,retain) ATSignatureProvider * signatureProvider;
-@property(assign,readonly) ATSocket * socket;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) int endpointType;
+@property (nonatomic, readonly, copy) NSString *guid;
+@property (readonly) unsigned long long hash;
+@property (getter=isInitialized, nonatomic) bool initialized;
+@property (nonatomic) double lastActivityTime;
+@property (nonatomic, copy) NSString *libraryIdentifier;
+@property (nonatomic, retain) NSHashTable *observers;
+@property (getter=isOpen, nonatomic, readonly) bool open;
+@property (nonatomic, retain) ATSignatureProvider *signatureProvider;
+@property (nonatomic, readonly) ATSocket *socket;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_invokeCompletionHandlerForResponseID:(unsigned long long)arg1 withError:(id)arg2;

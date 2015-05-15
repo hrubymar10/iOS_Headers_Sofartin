@@ -7,8 +7,8 @@
     NSArray *_triggers;
 }
 
-@property(assign,retain) <PLCloudScenarioConsumer> * consumer;
-@property(assign,retain) NSArray * triggers;
+@property (nonatomic, retain) <PLCloudScenarioConsumer> *consumer;
+@property (nonatomic, retain) NSArray *triggers;
 
 - (void)activate;
 - (id)consumer;

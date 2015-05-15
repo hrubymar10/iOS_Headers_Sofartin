@@ -12,9 +12,9 @@
     long long _spheresegmentCount;
 }
 
-@property(getter=isGeodesic,assign,readwrite) bool geodesic;
-@property(assign,readwrite) double radius;
-@property(assign,readwrite) long long segmentCount;
+@property (getter=isGeodesic, nonatomic) bool geodesic;
+@property (nonatomic) double radius;
+@property (nonatomic) long long segmentCount;
 
 + (id)SCNJSExportProtocol;
 + (id)sphereWithRadius:(double)arg1;

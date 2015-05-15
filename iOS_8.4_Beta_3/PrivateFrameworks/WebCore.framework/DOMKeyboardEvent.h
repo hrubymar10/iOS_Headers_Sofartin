@@ -4,16 +4,16 @@
 
 @interface DOMKeyboardEvent : DOMUIEvent
 
-@property(assign,readonly) bool altGraphKey;
-@property(assign,readonly) bool altKey;
-@property(assign,readonly) int charCode;
-@property(assign,readonly) bool ctrlKey;
-@property(assign,readonly) int keyCode;
-@property(assign,copy) NSString * keyIdentifier;
-@property(assign,readonly) unsigned int keyLocation;
-@property(assign,readonly) unsigned int location;
-@property(assign,readonly) bool metaKey;
-@property(assign,readonly) bool shiftKey;
+@property (readonly) bool altGraphKey;
+@property (readonly) bool altKey;
+@property (readonly) int charCode;
+@property (readonly) bool ctrlKey;
+@property (readonly) int keyCode;
+@property (readonly, copy) NSString *keyIdentifier;
+@property (readonly) unsigned int keyLocation;
+@property (readonly) unsigned int location;
+@property (readonly) bool metaKey;
+@property (readonly) bool shiftKey;
 
 - (bool)altGraphKey;
 - (bool)altKey;

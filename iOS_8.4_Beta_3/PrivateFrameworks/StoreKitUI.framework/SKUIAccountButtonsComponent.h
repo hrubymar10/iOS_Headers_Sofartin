@@ -7,9 +7,9 @@
     bool _hidesTermsAndConditions;
 }
 
-@property(assign,retain) SKUILink * ECommerceLink;
-@property(assign,readwrite) bool hidesTermsAndConditions;
-@property(assign,readonly) SKUIAccountButtonsViewElement * viewElement;
+@property (nonatomic, retain) SKUILink *ECommerceLink;
+@property (nonatomic) bool hidesTermsAndConditions;
+@property (nonatomic, readonly) SKUIAccountButtonsViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (id)ECommerceLink;

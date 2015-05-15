@@ -26,19 +26,19 @@
     double _startWaitTime;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) float decoderLatency;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double endWaitTime;
-@property(assign,readwrite) int endpointMode;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) float heuristicTransitionRatio;
-@property(assign,readwrite) float heuristicWindowSec;
-@property(assign,readwrite) unsigned int inMaxSamplesPerBuffer;
-@property(assign,readwrite) double interspeechWaitTime;
-@property(assign,readwrite) float speechPaddingFactor;
-@property(assign,readwrite) double startWaitTime;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) float decoderLatency;
+@property (readonly, copy) NSString *description;
+@property double endWaitTime;
+@property int endpointMode;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) float heuristicTransitionRatio;
+@property (nonatomic) float heuristicWindowSec;
+@property (nonatomic) unsigned int inMaxSamplesPerBuffer;
+@property double interspeechWaitTime;
+@property (nonatomic) float speechPaddingFactor;
+@property double startWaitTime;
+@property (readonly) Class superclass;
 
 + (void)initialize;
 

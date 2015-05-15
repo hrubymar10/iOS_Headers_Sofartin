@@ -4,9 +4,9 @@
 
 @interface SASetConnectionHeader : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * aceHostHeader;
-@property(assign,retain) SAConnectionPolicy * connectionPolicy;
-@property(assign,readwrite) bool reconnectNow;
+@property (nonatomic, copy) NSString *aceHostHeader;
+@property (nonatomic, retain) SAConnectionPolicy *connectionPolicy;
+@property (nonatomic) bool reconnectNow;
 
 + (id)setConnectionHeader;
 + (id)setConnectionHeaderWithDictionary:(id)arg1 context:(id)arg2;

@@ -12,14 +12,14 @@
     NSString *_titleText;
 }
 
-@property(assign,readwrite) bool buttonEnabled;
-@property(assign,retain) NSString * buttonLabel;
-@property(assign,retain) NSString * descriptionText;
-@property(assign,readwrite) bool hasButtonEnabled;
-@property(assign,readonly) bool hasButtonLabel;
-@property(assign,readonly) bool hasDescriptionText;
-@property(assign,readonly) bool hasTitleText;
-@property(assign,retain) NSString * titleText;
+@property (nonatomic) bool buttonEnabled;
+@property (nonatomic, retain) NSString *buttonLabel;
+@property (nonatomic, retain) NSString *descriptionText;
+@property (nonatomic) bool hasButtonEnabled;
+@property (nonatomic, readonly) bool hasButtonLabel;
+@property (nonatomic, readonly) bool hasDescriptionText;
+@property (nonatomic, readonly) bool hasTitleText;
+@property (nonatomic, retain) NSString *titleText;
 
 + (id)businessClaimForPlaceData:(id)arg1;
 

@@ -9,10 +9,10 @@
     NSObject<OS_dispatch_queue> *_hostQueue;
 }
 
-@property(assign,retain) NSMutableDictionary * activePlugIns;
-@property(assign,retain) PKDaemonClient * client;
-@property(assign,readonly) NSDictionary * hostInfoPlist;
-@property(assign,retain) NSObject<OS_dispatch_queue> * hostQueue;
+@property (retain) NSMutableDictionary *activePlugIns;
+@property (retain) PKDaemonClient *client;
+@property (readonly) NSDictionary *hostInfoPlist;
+@property (retain) NSObject<OS_dispatch_queue> *hostQueue;
 
 + (id)defaultHost;
 

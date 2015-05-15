@@ -9,9 +9,9 @@
     unsigned long long _options;
 }
 
-@property(getter=_curve,assign,readonly) long long curve;
-@property(getter=_delay,assign,readonly) double delay;
-@property(getter=_duration,assign,readonly) double duration;
+@property (getter=_curve, nonatomic, readonly) long long curve;
+@property (getter=_delay, nonatomic, readonly) double delay;
+@property (getter=_duration, nonatomic, readonly) double duration;
 
 + (bool)supportsSecureCoding;
 

@@ -8,7 +8,7 @@
     unsigned long long _selectedFilterIndex;
 }
 
-@property(assign,readwrite) unsigned long long filterIndex;
+@property unsigned long long filterIndex;
 
 - (void).cxx_destruct;
 - (void)_layoutGLLayer;

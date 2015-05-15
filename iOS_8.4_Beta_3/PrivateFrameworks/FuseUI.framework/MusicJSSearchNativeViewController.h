@@ -9,10 +9,10 @@
     IKDOMDocument *_storeSearchResultsJSDocument;
 }
 
-@property(assign,readwrite) <MusicJSSearchNativeViewControllerDelegate> * delegate;
-@property(assign,readonly) IKJSNavigationDocument * navigationDocument;
-@property(assign,readonly) IKAppDocument * storeSearchResultsDocument;
-@property(assign,readonly) NSDictionary * storeSearchResultsDocumentOptions;
+@property (nonatomic) <MusicJSSearchNativeViewControllerDelegate> *delegate;
+@property (nonatomic, readonly) IKJSNavigationDocument *navigationDocument;
+@property (nonatomic, readonly) IKAppDocument *storeSearchResultsDocument;
+@property (nonatomic, readonly) NSDictionary *storeSearchResultsDocumentOptions;
 
 - (void).cxx_destruct;
 - (id)delegate;

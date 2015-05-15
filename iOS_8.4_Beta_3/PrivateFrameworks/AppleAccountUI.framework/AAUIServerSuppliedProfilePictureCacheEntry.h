@@ -9,10 +9,10 @@
     bool _updating;
 }
 
-@property(assign,readonly) bool expired;
-@property(assign,retain) UIImage * picture;
-@property(assign,copy) NSString * serverCacheTag;
-@property(assign,readwrite) bool updating;
+@property (nonatomic, readonly) bool expired;
+@property (nonatomic, retain) UIImage *picture;
+@property (nonatomic, copy) NSString *serverCacheTag;
+@property (nonatomic) bool updating;
 
 - (void).cxx_destruct;
 - (id)description;

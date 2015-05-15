@@ -11,12 +11,12 @@
     NSData *_token;
 }
 
-@property(assign,readwrite) int apnsEnv;
-@property(assign,retain) NSString * bundleIdentifier;
-@property(assign,readwrite) bool hasApnsEnv;
-@property(assign,readonly) bool hasBundleIdentifier;
-@property(assign,readonly) bool hasToken;
-@property(assign,retain) NSData * token;
+@property (nonatomic) int apnsEnv;
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic) bool hasApnsEnv;
+@property (nonatomic, readonly) bool hasBundleIdentifier;
+@property (nonatomic, readonly) bool hasToken;
+@property (nonatomic, retain) NSData *token;
 
 - (void).cxx_destruct;
 - (int)apnsEnv;

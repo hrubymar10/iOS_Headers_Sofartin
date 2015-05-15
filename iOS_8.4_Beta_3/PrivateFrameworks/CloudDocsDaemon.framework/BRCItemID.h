@@ -7,15 +7,15 @@
     unsigned char _uuid;
 }
 
-@property(assign,readonly) const char * UTF8String;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isDocuments;
-@property(assign,readonly) bool isRoot;
-@property(assign,readonly) NSString * itemIDString;
-@property(assign,readonly) NSString * shortItemIDString;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) const char *UTF8String;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isDocuments;
+@property (nonatomic, readonly) bool isRoot;
+@property (nonatomic, readonly) NSString *itemIDString;
+@property (nonatomic, readonly) NSString *shortItemIDString;
+@property (readonly) Class superclass;
 
 + (id)documentsItemID;
 + (void)initialize;

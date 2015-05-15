@@ -23,18 +23,18 @@
     SUTouchCaptureView *_touchCaptureView;
 }
 
-@property(getter=isActiveOverlay,assign,readonly) bool activeOverlay;
-@property(assign,readonly) UIViewController * activeViewController;
-@property(assign,retain) UIViewController * backViewController;
-@property(assign,readwrite) bool canSwipeToDismiss;
-@property(assign,retain) UIViewController * frontViewController;
-@property(assign,retain) SUMaskProvider * maskProvider;
-@property(getter=isOnFront,assign,readonly) bool onFront;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } overlaySize;
-@property(assign,retain) SUOverlayTransition * presentationTransition;
-@property(assign,readwrite) double shadowOpacity;
-@property(assign,readwrite) double shadowRadius;
-@property(assign,retain) SUScriptFunction * shouldDismissFunction;
+@property (getter=isActiveOverlay, nonatomic, readonly) bool activeOverlay;
+@property (nonatomic, readonly) UIViewController *activeViewController;
+@property (nonatomic, retain) UIViewController *backViewController;
+@property (nonatomic) bool canSwipeToDismiss;
+@property (nonatomic, retain) UIViewController *frontViewController;
+@property (nonatomic, retain) SUMaskProvider *maskProvider;
+@property (getter=isOnFront, nonatomic, readonly) bool onFront;
+@property (nonatomic) struct CGSize { double x1; double x2; } overlaySize;
+@property (nonatomic, retain) SUOverlayTransition *presentationTransition;
+@property (nonatomic) double shadowOpacity;
+@property (nonatomic) double shadowRadius;
+@property (nonatomic, retain) SUScriptFunction *shouldDismissFunction;
 
 + (struct CGSize { double x1; double x2; })defaultOverlaySize;
 

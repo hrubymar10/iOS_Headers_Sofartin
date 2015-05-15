@@ -28,25 +28,25 @@
     NSMutableDictionary *_updatedObjects;
 }
 
-@property(assign,readonly) NSDictionary * deletedObjects;
-@property(assign,readonly) NSDictionary * entityNameToIndex;
-@property(assign,readonly) NSArray * entityNames;
-@property(assign,retain) NSString * exportingPeerID;
-@property(assign,retain) PFUbiquityGlobalObjectIDCache * globalObjectIDCache;
-@property(assign,readonly) NSDictionary * globalObjectIDToIndex;
-@property(assign,readonly) NSDictionary * globalObjectIDToPermanentManagedObjectID;
-@property(assign,readonly) NSArray * globalObjectIDs;
-@property(assign,readonly) NSDictionary * insertedObjects;
-@property(assign,retain) NSString * localPeerID;
-@property(assign,readonly) NSDictionary * managedObjectIDToGlobalObjectID;
-@property(assign,readonly) NSDictionary * peerIDToIndex;
-@property(assign,readonly) NSArray * peerIDs;
-@property(assign,readonly) NSDictionary * peerStates;
-@property(assign,readonly) NSDictionary * primaryKeyToIndex;
-@property(assign,readonly) NSArray * primaryKeys;
-@property(assign,retain) PFUbiquityKnowledgeVector * storeKV;
-@property(assign,retain) NSNumber * transactionNumber;
-@property(assign,readonly) NSDictionary * updatedObjects;
+@property (nonatomic, readonly) NSDictionary *deletedObjects;
+@property (nonatomic, readonly) NSDictionary *entityNameToIndex;
+@property (nonatomic, readonly) NSArray *entityNames;
+@property (nonatomic, retain) NSString *exportingPeerID;
+@property (nonatomic, retain) PFUbiquityGlobalObjectIDCache *globalObjectIDCache;
+@property (nonatomic, readonly) NSDictionary *globalObjectIDToIndex;
+@property (nonatomic, readonly) NSDictionary *globalObjectIDToPermanentManagedObjectID;
+@property (nonatomic, readonly) NSArray *globalObjectIDs;
+@property (nonatomic, readonly) NSDictionary *insertedObjects;
+@property (nonatomic, retain) NSString *localPeerID;
+@property (nonatomic, readonly) NSDictionary *managedObjectIDToGlobalObjectID;
+@property (nonatomic, readonly) NSDictionary *peerIDToIndex;
+@property (nonatomic, readonly) NSArray *peerIDs;
+@property (nonatomic, readonly) NSDictionary *peerStates;
+@property (nonatomic, readonly) NSDictionary *primaryKeyToIndex;
+@property (nonatomic, readonly) NSArray *primaryKeys;
+@property (nonatomic, retain) PFUbiquityKnowledgeVector *storeKV;
+@property (nonatomic, retain) NSNumber *transactionNumber;
+@property (nonatomic, readonly) NSDictionary *updatedObjects;
 
 - (void)_setFilesDeletedInTransaction:(id)arg1;
 - (id)addManagedObject:(id)arg1 withTransactionType:(int)arg2 andStoreExportContext:(id)arg3 withError:(id*)arg4;

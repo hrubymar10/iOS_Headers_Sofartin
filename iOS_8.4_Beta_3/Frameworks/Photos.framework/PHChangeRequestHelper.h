@@ -13,13 +13,13 @@
     NSString *_uuidSaveToken;
 }
 
-@property(assign,readwrite) id changeRequest;
-@property(getter=isMutated,assign,readwrite) bool mutated;
-@property(assign,readonly) NSMutableDictionary * mutations;
-@property(getter=isNew,assign,readwrite) bool new;
-@property(assign,retain) NSManagedObjectID * objectID;
-@property(assign,readonly) NSString * uuid;
-@property(assign,readonly) NSString * uuidSaveToken;
+@property (nonatomic) id changeRequest;
+@property (getter=isMutated, nonatomic) bool mutated;
+@property (nonatomic, readonly) NSMutableDictionary *mutations;
+@property (getter=isNew, nonatomic) bool new;
+@property (nonatomic, retain) NSManagedObjectID *objectID;
+@property (nonatomic, readonly) NSString *uuid;
+@property (nonatomic, readonly) NSString *uuidSaveToken;
 
 + (id)changeRequestForObject:(id)arg1;
 + (id)changeRequestWithXPCDict:(id)arg1 entitled:(bool)arg2 clientName:(id)arg3 clientBundleID:(id)arg4 clientProcessID:(int)arg5;

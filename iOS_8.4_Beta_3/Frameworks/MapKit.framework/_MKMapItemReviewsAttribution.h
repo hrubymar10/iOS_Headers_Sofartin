@@ -6,7 +6,7 @@
     GEOMapItemReviewsAttribution *_geoReviewsAttribution;
 }
 
-@property(assign,readonly) NSArray * addReviewURLs;
+@property (nonatomic, readonly) NSArray *addReviewURLs;
 
 - (void).cxx_destruct;
 - (id)addReviewURLs;

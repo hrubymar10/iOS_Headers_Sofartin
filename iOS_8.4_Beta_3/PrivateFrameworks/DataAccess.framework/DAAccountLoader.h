@@ -9,10 +9,10 @@
     NSMutableDictionary *_acParentAccountTypeToChildAccountTypes;
 }
 
-@property(assign,retain) NSMutableDictionary * acAccountTypeToAccountDaemonBundleSubpath;
-@property(assign,retain) NSMutableDictionary * acAccountTypeToAccountFrameworkSubpath;
-@property(assign,retain) NSMutableDictionary * acAccountTypeToClassNames;
-@property(assign,retain) NSMutableDictionary * acParentAccountTypeToChildAccountTypes;
+@property (nonatomic, retain) NSMutableDictionary *acAccountTypeToAccountDaemonBundleSubpath;
+@property (nonatomic, retain) NSMutableDictionary *acAccountTypeToAccountFrameworkSubpath;
+@property (nonatomic, retain) NSMutableDictionary *acAccountTypeToClassNames;
+@property (nonatomic, retain) NSMutableDictionary *acParentAccountTypeToChildAccountTypes;
 
 + (id)sharedInstance;
 

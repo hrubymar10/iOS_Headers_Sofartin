@@ -17,16 +17,16 @@
     bool _validationInProgress;
 }
 
-@property(assign,readwrite) <ACUIViewControllerAccountChangeObserver> * accountChangeObserver;
-@property(assign,retain) ACUIAccountOperationsHelper * accountOperationsHelper;
-@property(assign,retain) ACAccountStore * accountStore;
-@property(assign,retain) UIBarButtonItem * cancelButton;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIBarButtonItem * doneButton;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool validationInProgress;
+@property (nonatomic) <ACUIViewControllerAccountChangeObserver> *accountChangeObserver;
+@property (nonatomic, retain) ACUIAccountOperationsHelper *accountOperationsHelper;
+@property (nonatomic, retain) ACAccountStore *accountStore;
+@property (nonatomic, retain) UIBarButtonItem *cancelButton;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIBarButtonItem *doneButton;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) bool validationInProgress;
 
 + (id)acuiAccountStore;
 + (bool)shouldPresentAsModalSheet;

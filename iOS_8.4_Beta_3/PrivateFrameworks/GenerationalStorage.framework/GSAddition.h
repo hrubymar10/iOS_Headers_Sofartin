@@ -13,20 +13,20 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,readonly) NSString * br_lastEditorDeviceName;
-@property(assign,readonly) NSString * br_lastEditorName;
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) bool isSavedConflict;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSString * nameSpace;
-@property(assign,readonly) unsigned long long options;
-@property(assign,readonly) NSString * originalPOSIXName;
-@property(assign,readonly) <NSCopying><NSSecureCoding> * persistentIdentifier;
-@property(assign,readonly) NSData * sandboxExtension;
-@property(assign,readonly) NSNumber * size;
-@property(assign,readonly) NSObject<GSAdditionStoring> * storage;
-@property(assign,readonly) NSURL * url;
-@property(assign,readonly) NSDictionary * userInfo;
+@property (nonatomic, readonly) NSString *br_lastEditorDeviceName;
+@property (nonatomic, readonly) NSString *br_lastEditorName;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, readonly) bool isSavedConflict;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSString *nameSpace;
+@property (nonatomic, readonly) unsigned long long options;
+@property (nonatomic, readonly) NSString *originalPOSIXName;
+@property (nonatomic, readonly) <NSCopying><NSSecureCoding> *persistentIdentifier;
+@property (nonatomic, readonly) NSData *sandboxExtension;
+@property (nonatomic, readonly) NSNumber *size;
+@property (nonatomic, readonly) NSObject<GSAdditionStoring> *storage;
+@property (nonatomic, readonly) NSURL *url;
+@property (nonatomic, readonly) NSDictionary *userInfo;
 
 + (id)additionURLForName:(id)arg1 storagePrefix:(id)arg2 inConflictNamespace:(bool)arg3;
 + (bool)brc_parseAdditionFilename:(id)arg1 mangledContainerID:(id*)arg2 itemID:(id*)arg3 etag:(id*)arg4;

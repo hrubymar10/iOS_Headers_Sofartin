@@ -19,31 +19,31 @@
     unsigned long long _referent;
 }
 
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,readonly) unsigned long long activeIndexOnSlide;
-@property(getter=isAutomatic,assign,readwrite) bool automatic;
-@property(getter=isAutomaticWithPreviousChunk,assign,readonly) bool automaticWithPreviousChunk;
-@property(getter=isAutomaticWithPreviousChunkOnSameDrawable,assign,readonly) bool automaticWithPreviousChunkOnSameDrawable;
-@property(assign,readonly) NSArray * availableEventTriggers;
-@property(assign,readonly) KNBuild * build;
-@property(assign,readonly) bool canEditAnimations;
-@property(assign,readonly) KNBuildChunkIdentifier * chunkIdentifier;
-@property(assign,readwrite) double delay;
-@property(assign,readonly) unsigned long long deliveryGroupIndex;
-@property(assign,readwrite) double duration;
-@property(assign,readonly) unsigned long long eventTrigger;
-@property(assign,readonly) bool hasComplement;
-@property(assign,readonly) NSUUID * i_buildId;
-@property(assign,readonly) unsigned long long indexInBuild;
-@property(assign,readonly) unsigned long long indexOnSlide;
-@property(assign,readonly) NSSet * inspectableAttributes;
-@property(assign,readonly) bool isFirstInBuild;
-@property(assign,readonly) bool isFirstInDeliveryGroup;
-@property(assign,readonly) bool isFirstOnSlide;
-@property(assign,readwrite) unsigned long long referent;
-@property(assign,readonly) KNSlide * slide;
-@property(assign,readonly) bool supportsWithStart;
-@property(assign,readonly) NSString * title;
+@property (getter=isActive, nonatomic, readonly) bool active;
+@property (nonatomic, readonly) unsigned long long activeIndexOnSlide;
+@property (getter=isAutomatic, nonatomic) bool automatic;
+@property (getter=isAutomaticWithPreviousChunk, nonatomic, readonly) bool automaticWithPreviousChunk;
+@property (getter=isAutomaticWithPreviousChunkOnSameDrawable, nonatomic, readonly) bool automaticWithPreviousChunkOnSameDrawable;
+@property (nonatomic, readonly) NSArray *availableEventTriggers;
+@property (nonatomic, readonly) KNBuild *build;
+@property (nonatomic, readonly) bool canEditAnimations;
+@property (nonatomic, readonly) KNBuildChunkIdentifier *chunkIdentifier;
+@property (nonatomic) double delay;
+@property (nonatomic, readonly) unsigned long long deliveryGroupIndex;
+@property (nonatomic) double duration;
+@property (nonatomic, readonly) unsigned long long eventTrigger;
+@property (nonatomic, readonly) bool hasComplement;
+@property (nonatomic, readonly) NSUUID *i_buildId;
+@property (nonatomic, readonly) unsigned long long indexInBuild;
+@property (nonatomic, readonly) unsigned long long indexOnSlide;
+@property (nonatomic, readonly) NSSet *inspectableAttributes;
+@property (nonatomic, readonly) bool isFirstInBuild;
+@property (nonatomic, readonly) bool isFirstInDeliveryGroup;
+@property (nonatomic, readonly) bool isFirstOnSlide;
+@property (nonatomic) unsigned long long referent;
+@property (nonatomic, readonly) KNSlide *slide;
+@property (nonatomic, readonly) bool supportsWithStart;
+@property (nonatomic, readonly) NSString *title;
 
 + (bool)needsObjectUUID;
 

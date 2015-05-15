@@ -6,10 +6,10 @@
     WebFrameViewPrivate *_private;
 }
 
-@property(assign,readwrite) bool allowsScrolling;
-@property(assign,readonly) WAKView<WebDocumentView> * documentView;
-@property(assign,readonly) bool documentViewShouldHandlePrint;
-@property(assign,readonly) WebFrame * webFrame;
+@property (nonatomic) bool allowsScrolling;
+@property (nonatomic, readonly) WAKView<WebDocumentView> *documentView;
+@property (nonatomic, readonly) bool documentViewShouldHandlePrint;
+@property (nonatomic, readonly) WebFrame *webFrame;
 
 + (bool)_canShowMIMETypeAsHTML:(id)arg1;
 + (Class)_viewClassForMIMEType:(id)arg1 allowingPlugins:(bool)arg2;

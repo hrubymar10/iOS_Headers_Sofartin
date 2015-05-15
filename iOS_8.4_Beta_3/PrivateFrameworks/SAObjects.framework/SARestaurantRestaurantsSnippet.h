@@ -4,10 +4,10 @@
 
 @interface SARestaurantRestaurantsSnippet : SAUISirilandSnippet
 
-@property(assign,copy) NSArray * attributionOrder;
-@property(assign,copy) NSArray * contributingProviderIds;
-@property(assign,copy) NSDictionary * providerPunchOutMap;
-@property(assign,copy) NSArray * restaurants;
+@property (nonatomic, copy) NSArray *attributionOrder;
+@property (nonatomic, copy) NSArray *contributingProviderIds;
+@property (nonatomic, copy) NSDictionary *providerPunchOutMap;
+@property (nonatomic, copy) NSArray *restaurants;
 
 + (id)restaurantsSnippet;
 + (id)restaurantsSnippetWithDictionary:(id)arg1 context:(id)arg2;

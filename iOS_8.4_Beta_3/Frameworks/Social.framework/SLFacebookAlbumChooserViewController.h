@@ -10,10 +10,10 @@
     UIButton *_flipBackButton;
 }
 
-@property(assign,retain) SLFacebookAlbumManager * albumManager;
-@property(assign,retain) NSArray * albums;
-@property(assign,readwrite) <SLFacebookAlbumChooserViewControllerDelegate> * delegate;
-@property(assign,retain) UIButton * flipBackButton;
+@property (retain) SLFacebookAlbumManager *albumManager;
+@property (retain) NSArray *albums;
+@property <SLFacebookAlbumChooserViewControllerDelegate> *delegate;
+@property (retain) UIButton *flipBackButton;
 
 + (id)_blankSurrogateAlbumImage;
 + (id)_squareImageFromAlbumImage:(id)arg1;

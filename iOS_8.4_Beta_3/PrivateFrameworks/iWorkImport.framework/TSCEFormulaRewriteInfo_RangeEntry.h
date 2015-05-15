@@ -17,9 +17,9 @@
     } _range;
 }
 
-@property(assign,readwrite) unsigned short offset;
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{vector<TSU::UUIDData<TSP::UUIDData>' */ struct * orderedUuids; /* unknown property attribute:  std::__1::allocator<TSU::UUIDData<TSP::UUIDData> > >=^{UUIDData<TSP::UUIDData>}}} */
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property unsigned short offset;
+@property (readonly) const /* Warning: unhandled struct encoding: '{vector<TSU::UUIDData<TSP::UUIDData>' */ struct *orderedUuids; /* unknown property attribute:  std::__1::allocator<TSU::UUIDData<TSP::UUIDData> > >=^{UUIDData<TSP::UUIDData>}}} */
+@property (readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

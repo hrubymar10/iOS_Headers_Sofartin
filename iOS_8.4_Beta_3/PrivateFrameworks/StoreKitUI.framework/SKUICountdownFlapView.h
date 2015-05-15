@@ -19,11 +19,11 @@
     UIColor *_textColor;
 }
 
-@property(assign,readonly) UIColor * flapBottomColor;
-@property(assign,readonly) UIColor * flapTopColor;
-@property(assign,readonly) long long position;
-@property(assign,retain) NSString * string;
-@property(assign,retain) UIColor * textColor;
+@property (nonatomic, readonly) UIColor *flapBottomColor;
+@property (nonatomic, readonly) UIColor *flapTopColor;
+@property (nonatomic, readonly) long long position;
+@property (nonatomic, retain) NSString *string;
+@property (nonatomic, retain) UIColor *textColor;
 
 - (void).cxx_destruct;
 - (id)_newBackgroundImageForTop:(int)arg1;

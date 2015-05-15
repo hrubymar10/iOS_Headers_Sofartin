@@ -17,10 +17,10 @@
     NSURLConnection *_urlConnection;
 }
 
-@property(getter=isCanceled,assign,readwrite) bool canceled;
-@property(getter=isFinished,assign,readwrite) bool finished;
-@property(assign,retain) NSObject<OS_dispatch_queue> * handlerQueue;
-@property(getter=isExecuting,assign,readwrite) bool isExecuting;
+@property (getter=isCanceled) bool canceled;
+@property (getter=isFinished) bool finished;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *handlerQueue;
+@property (getter=isExecuting, nonatomic) bool isExecuting;
 
 - (void).cxx_destruct;
 - (void)_callHandler;

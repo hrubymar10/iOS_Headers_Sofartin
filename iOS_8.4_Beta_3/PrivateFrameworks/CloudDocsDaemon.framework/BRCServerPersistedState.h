@@ -8,12 +8,12 @@
     BRCServerChangeState *_sharedDatabaseChangeState;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long nextRank;
-@property(assign,retain) BRCServerChangeState * sharedDatabaseChangeState;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long nextRank;
+@property (retain) BRCServerChangeState *sharedDatabaseChangeState;
+@property (readonly) Class superclass;
 
 + (bool)supportsSecureCoding;
 

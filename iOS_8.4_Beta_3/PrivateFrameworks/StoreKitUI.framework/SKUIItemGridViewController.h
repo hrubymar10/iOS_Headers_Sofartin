@@ -21,20 +21,20 @@
     SKUIUber *_uber;
 }
 
-@property(assign,retain) SKUIItemArtworkContext * artworkContext;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } contentOffset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIItemGridDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIStyledImageDataConsumer * iconDataConsumer;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } imageBoundingSize;
-@property(assign,copy) NSArray * items;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,readonly) double rowHeight;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SKUIUber * uber;
+@property (nonatomic, retain) SKUIItemArtworkContext *artworkContext;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic) struct CGPoint { double x1; double x2; } contentOffset;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIItemGridDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIStyledImageDataConsumer *iconDataConsumer;
+@property (nonatomic) struct CGSize { double x1; double x2; } imageBoundingSize;
+@property (nonatomic, copy) NSArray *items;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic, readonly) double rowHeight;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SKUIUber *uber;
 
 - (void).cxx_destruct;
 - (id)_collectionView;

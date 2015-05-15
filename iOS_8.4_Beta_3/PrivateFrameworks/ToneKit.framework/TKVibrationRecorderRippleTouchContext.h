@@ -10,9 +10,9 @@
     } _location;
 }
 
-@property(setter=_setCreationTimestamp:,assign,readwrite) double _creationTimestamp;
-@property(setter=_setLocation:,assign,readwrite) struct CGPoint { double x1; double x2; } _location;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } location;
+@property (setter=_setCreationTimestamp:, nonatomic) double _creationTimestamp;
+@property (setter=_setLocation:, nonatomic) struct CGPoint { double x1; double x2; } _location;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } location;
 
 - (double)_creationTimestamp;
 - (struct CGPoint { double x1; double x2; })_location;

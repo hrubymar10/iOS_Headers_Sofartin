@@ -11,7 +11,7 @@
     unsigned long long _size;
 }
 
-@property(assign,readonly) unsigned long long count;
+@property (nonatomic, readonly) unsigned long long count;
 
 - (void).cxx_destruct;
 - (void)_moveDown:(id)arg1 index:(unsigned long long)arg2;

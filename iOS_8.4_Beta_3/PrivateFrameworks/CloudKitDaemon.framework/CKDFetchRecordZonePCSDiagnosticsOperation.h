@@ -10,11 +10,11 @@
     NSDictionary *_validPCSByZoneID;
 }
 
-@property(assign,retain) NSString * identityStatus;
-@property(assign,retain) NSDictionary * invalidPCSByZoneID;
-@property(assign,retain) CKPCSDiagnosticInformation * pcsDiagnosticInfo;
-@property(assign,retain) NSArray * recordZoneIDs;
-@property(assign,retain) NSDictionary * validPCSByZoneID;
+@property (nonatomic, retain) NSString *identityStatus;
+@property (nonatomic, retain) NSDictionary *invalidPCSByZoneID;
+@property (nonatomic, retain) CKPCSDiagnosticInformation *pcsDiagnosticInfo;
+@property (nonatomic, retain) NSArray *recordZoneIDs;
+@property (nonatomic, retain) NSDictionary *validPCSByZoneID;
 
 - (void).cxx_destruct;
 - (void)_handleRecordZoneFetch:(id)arg1 zoneID:(id)arg2 responseCode:(id)arg3;

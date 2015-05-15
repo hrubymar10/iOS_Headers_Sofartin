@@ -18,19 +18,19 @@
     NSMutableDictionary *_urlBagKeys;
 }
 
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,copy) SUClientInterface * clientInterface;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SUImageCache * imageCache;
-@property(assign,retain) ISURLOperationPool * imageOperationPool;
-@property(assign,retain) UIViewController * rootViewController;
-@property(assign,readonly) SUScriptExecutionContext * scriptExecutionContext;
-@property(assign,readonly) NSString * storeContentLanguage;
-@property(getter=isStoreEnabled,assign,readonly) bool storeEnabled;
-@property(assign,readonly) bool storeFrontDidChangeSinceLastSuspend;
-@property(assign,readonly) Class superclass;
+@property (getter=isActive, nonatomic, readonly) bool active;
+@property (copy) SUClientInterface *clientInterface;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SUImageCache *imageCache;
+@property (nonatomic, retain) ISURLOperationPool *imageOperationPool;
+@property (nonatomic, retain) UIViewController *rootViewController;
+@property (nonatomic, readonly) SUScriptExecutionContext *scriptExecutionContext;
+@property (nonatomic, readonly) NSString *storeContentLanguage;
+@property (getter=isStoreEnabled, nonatomic, readonly) bool storeEnabled;
+@property (nonatomic, readonly) bool storeFrontDidChangeSinceLastSuspend;
+@property (readonly) Class superclass;
 
 + (void)setSharedController:(id)arg1;
 + (id)sharedController;

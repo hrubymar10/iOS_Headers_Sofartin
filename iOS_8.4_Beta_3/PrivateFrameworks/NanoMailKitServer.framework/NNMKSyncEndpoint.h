@@ -9,10 +9,10 @@
     NSObject<OS_dispatch_queue> *_resendingQueue;
 }
 
-@property(assign,retain) NSMutableDictionary * datesForIDSIdentifiersScheduledToBeResent;
-@property(assign,retain) NSObject<OS_dispatch_queue> * endpointQueue;
-@property(assign,retain) NSMutableDictionary * lastResendIntervalKeyedByIDSIdentifier;
-@property(assign,retain) NSObject<OS_dispatch_queue> * resendingQueue;
+@property (nonatomic, retain) NSMutableDictionary *datesForIDSIdentifiersScheduledToBeResent;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *endpointQueue;
+@property (nonatomic, retain) NSMutableDictionary *lastResendIntervalKeyedByIDSIdentifier;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *resendingQueue;
 
 - (void).cxx_destruct;
 - (id)datesForIDSIdentifiersScheduledToBeResent;

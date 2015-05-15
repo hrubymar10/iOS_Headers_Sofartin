@@ -6,9 +6,9 @@
     NSArray *_groups;
 }
 
-@property(assign,readonly) NSString * bundleDir;
-@property(assign,readonly) NSDictionary * entitlements;
-@property(assign,retain) NSArray * groups;
+@property (nonatomic, readonly) NSString *bundleDir;
+@property (nonatomic, readonly) NSDictionary *entitlements;
+@property (nonatomic, retain) NSArray *groups;
 
 + (id)appPluginWithPropertyList:(id)arg1;
 

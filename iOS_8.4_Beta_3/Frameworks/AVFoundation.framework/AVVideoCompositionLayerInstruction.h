@@ -6,7 +6,7 @@
     AVVideoCompositionLayerInstructionInternal *_layerInstruction;
 }
 
-@property(assign,readonly) int trackID;
+@property (nonatomic, readonly) int trackID;
 
 + (void)initialize;
 + (bool)supportsSecureCoding;

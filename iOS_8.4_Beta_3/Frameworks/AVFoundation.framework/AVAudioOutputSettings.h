@@ -4,7 +4,7 @@
 
 @interface AVAudioOutputSettings : AVOutputSettings
 
-@property(assign,readonly) NSDictionary * audioSettingsDictionary;
+@property (nonatomic, readonly) NSDictionary *audioSettingsDictionary;
 
 + (id)_audioOutputSettingsWithAudioSettingsDictionary:(id)arg1 exceptionReason:(id*)arg2;
 + (id)_outputSettingsWithOutputSettingsDictionary:(id)arg1 exceptionReason:(id*)arg2;

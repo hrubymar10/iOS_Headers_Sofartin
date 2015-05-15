@@ -9,15 +9,15 @@
     bool _observingStorage;
 }
 
-@property(assign,readonly) bool alwaysStartsNewTarget;
-@property(assign,readonly) bool autosizes;
-@property(assign,readonly) unsigned long long columnCount;
-@property(assign,readonly) bool columnsAreLeftToRight;
-@property(assign,readonly) TSWPLayout * containedLayout;
-@property(assign,readwrite) <TSWPShapeLayoutDelegate> * delegate;
-@property(assign,readonly) TSWPPadding * layoutMargins;
-@property(assign,readonly) bool shrinkTextToFit;
-@property(assign,readonly) double textScaleFactor;
+@property (nonatomic, readonly) bool alwaysStartsNewTarget;
+@property (nonatomic, readonly) bool autosizes;
+@property (nonatomic, readonly) unsigned long long columnCount;
+@property (nonatomic, readonly) bool columnsAreLeftToRight;
+@property (nonatomic, readonly) TSWPLayout *containedLayout;
+@property <TSWPShapeLayoutDelegate> *delegate;
+@property (nonatomic, readonly) TSWPPadding *layoutMargins;
+@property (nonatomic, readonly) bool shrinkTextToFit;
+@property (nonatomic, readonly) double textScaleFactor;
 
 - (void)addChild:(id)arg1;
 - (struct CGSize { double x1; double x2; })adjustedInsetsForTarget:(id)arg1;

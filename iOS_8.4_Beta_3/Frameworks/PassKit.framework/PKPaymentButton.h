@@ -11,10 +11,10 @@
     long long _type;
 }
 
-@property(assign,retain) UILabel * buyLabel;
-@property(assign,retain) UIView * container;
-@property(assign,retain) UIView * highlightView;
-@property(assign,retain) PKPaymentButtonPDFView * pdfView;
+@property (nonatomic, retain) UILabel *buyLabel;
+@property (nonatomic, retain) UIView *container;
+@property (nonatomic, retain) UIView *highlightView;
+@property (nonatomic, retain) PKPaymentButtonPDFView *pdfView;
 
 + (id)buttonWithType:(long long)arg1 style:(long long)arg2;
 

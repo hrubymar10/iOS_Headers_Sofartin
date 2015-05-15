@@ -12,8 +12,8 @@
     UIImageView *_vignetteView;
 }
 
-@property(assign,readonly) NSArray * backgroundElements;
-@property(assign,readwrite) unsigned long long vignetteType;
+@property (nonatomic, readonly) NSArray *backgroundElements;
+@property (nonatomic) unsigned long long vignetteType;
 
 + (id)vignetteImageForType:(unsigned long long)arg1;
 

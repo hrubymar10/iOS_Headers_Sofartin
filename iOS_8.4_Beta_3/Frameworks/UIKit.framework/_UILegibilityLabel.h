@@ -8,10 +8,10 @@
     bool _usesSecondaryColor;
 }
 
-@property(assign,readonly) double baselineOffset;
-@property(assign,retain) UIFont * font;
-@property(assign,copy) NSString * string;
-@property(assign,readonly) bool usesSecondaryColor;
+@property (nonatomic, readonly) double baselineOffset;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic, copy) NSString *string;
+@property (nonatomic, readonly) bool usesSecondaryColor;
 
 - (double)baselineOffset;
 - (void)dealloc;

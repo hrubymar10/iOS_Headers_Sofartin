@@ -6,8 +6,8 @@
     LTEAudioDeviceList *deviceList;
 }
 
-@property(assign,readwrite) id changeListener;
-@property(assign,retain) LTEAudioDeviceList * deviceList;
+@property (nonatomic) id changeListener;
+@property (nonatomic, retain) LTEAudioDeviceList *deviceList;
 
 + (id)currentInputDevice;
 + (id)defaultInputDevice;

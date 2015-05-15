@@ -19,14 +19,14 @@
     AVWeakReference *_weakReference;
 }
 
-@property(getter=isAboveHighWaterLevel,assign,readonly) bool aboveHighWaterLevel;
-@property(assign,readonly) bool encoderSupportsMultiPass;
-@property(assign,readonly) struct OpaqueFigAssetWriter { }* figAssetWriter;
-@property(assign,readonly) AVMediaFileType * mediaFileType;
-@property(assign,readonly) NSString * mediaType;
-@property(assign,readonly) struct __CVPixelBufferPool { }* pixelBufferPool;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } sampleBufferCoalescingInterval;
-@property(assign,readonly) int trackID;
+@property (getter=isAboveHighWaterLevel, readonly) bool aboveHighWaterLevel;
+@property (nonatomic, readonly) bool encoderSupportsMultiPass;
+@property (nonatomic, readonly) struct OpaqueFigAssetWriter { }*figAssetWriter;
+@property (nonatomic, readonly) AVMediaFileType *mediaFileType;
+@property (nonatomic, readonly) NSString *mediaType;
+@property (nonatomic, readonly) struct __CVPixelBufferPool { }*pixelBufferPool;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } sampleBufferCoalescingInterval;
+@property (nonatomic, readonly) int trackID;
 
 + (id)assetWriterTrackWithFigAssetWriter:(struct OpaqueFigAssetWriter { }*)arg1 mediaType:(id)arg2 mediaFileType:(id)arg3 formatSpecification:(id)arg4 sourcePixelBufferAttributes:(id)arg5 multiPass:(bool)arg6 error:(id*)arg7;
 

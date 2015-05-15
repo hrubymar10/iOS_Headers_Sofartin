@@ -18,19 +18,19 @@
     NSArray *_variantDisplayContents;
 }
 
-@property(assign,readwrite) long long displayPathType;
-@property(assign,retain) NSString * displayString;
-@property(assign,retain) NSString * displayStringImage;
-@property(assign,retain) UIKBKeyDisplayContents * fallbackContents;
-@property(assign,readwrite) bool fillPath;
-@property(assign,readwrite) bool force1xImages;
-@property(assign,retain) NSArray * highlightedVariantsList;
-@property(assign,readwrite) bool isCustomGlyph;
-@property(assign,retain) NSString * secondaryDisplayString;
-@property(assign,retain) NSString * secondaryDisplayStringImage;
-@property(assign,readwrite) bool secondaryIsCustomGlyph;
-@property(assign,readwrite) bool stringKeycapOverImage;
-@property(assign,retain) NSArray * variantDisplayContents;
+@property (nonatomic) long long displayPathType;
+@property (nonatomic, retain) NSString *displayString;
+@property (nonatomic, retain) NSString *displayStringImage;
+@property (nonatomic, retain) UIKBKeyDisplayContents *fallbackContents;
+@property (nonatomic) bool fillPath;
+@property (nonatomic) bool force1xImages;
+@property (nonatomic, retain) NSArray *highlightedVariantsList;
+@property (nonatomic) bool isCustomGlyph;
+@property (nonatomic, retain) NSString *secondaryDisplayString;
+@property (nonatomic, retain) NSString *secondaryDisplayStringImage;
+@property (nonatomic) bool secondaryIsCustomGlyph;
+@property (nonatomic) bool stringKeycapOverImage;
+@property (nonatomic, retain) NSArray *variantDisplayContents;
 
 + (id)displayContents;
 

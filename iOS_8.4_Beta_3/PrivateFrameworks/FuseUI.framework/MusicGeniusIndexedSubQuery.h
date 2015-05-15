@@ -7,8 +7,8 @@
     MPMediaQuery *_itemsQuery;
 }
 
-@property(assign,readonly) unsigned long long index;
-@property(assign,readonly) MPMediaQuery * itemsQuery;
+@property (nonatomic, readonly) unsigned long long index;
+@property (nonatomic, readonly) MPMediaQuery *itemsQuery;
 
 - (void).cxx_destruct;
 - (unsigned long long)index;

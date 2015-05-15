@@ -4,11 +4,11 @@
 
 @interface UIMutableUserNotificationAction : UIUserNotificationAction
 
-@property(assign,readwrite) unsigned long long activationMode;
-@property(getter=isAuthenticationRequired,assign,readwrite) bool authenticationRequired;
-@property(getter=isDestructive,assign,readwrite) bool destructive;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * title;
+@property (nonatomic) unsigned long long activationMode;
+@property (getter=isAuthenticationRequired, nonatomic) bool authenticationRequired;
+@property (getter=isDestructive, nonatomic) bool destructive;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSString *title;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 

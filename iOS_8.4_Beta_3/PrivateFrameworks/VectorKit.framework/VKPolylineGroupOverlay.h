@@ -9,14 +9,14 @@
     VKPolylineOverlay *_selectedPolyline;
 }
 
-@property(assign,readonly) GEOMapRegion * boundingMapRegion;
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSSet * polylines;
-@property(assign,retain) VKPolylineOverlay * selectedPolyline;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) GEOMapRegion *boundingMapRegion;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSSet *polylines;
+@property (nonatomic, retain) VKPolylineOverlay *selectedPolyline;
+@property (readonly) Class superclass;
 
 - (void)_updateBoundingMapRegion;
 - (void)addObserver:(id)arg1;

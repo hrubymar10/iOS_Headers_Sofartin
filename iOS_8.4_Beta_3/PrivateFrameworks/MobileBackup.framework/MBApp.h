@@ -8,15 +8,15 @@
     NSArray *_plugins;
 }
 
-@property(assign,retain) NSString * bundleDir;
-@property(assign,readonly) NSString * bundleID;
-@property(assign,readonly) NSString * bundleVersion;
-@property(assign,readonly) NSArray * containers;
-@property(assign,retain) NSDictionary * entitlements;
-@property(assign,retain) NSArray * groups;
-@property(assign,readonly) bool isPlaceholder;
-@property(assign,readonly) bool isSystemApp;
-@property(assign,retain) NSArray * plugins;
+@property (nonatomic, retain) NSString *bundleDir;
+@property (nonatomic, readonly) NSString *bundleID;
+@property (nonatomic, readonly) NSString *bundleVersion;
+@property (nonatomic, readonly) NSArray *containers;
+@property (nonatomic, retain) NSDictionary *entitlements;
+@property (nonatomic, retain) NSArray *groups;
+@property (nonatomic, readonly) bool isPlaceholder;
+@property (nonatomic, readonly) bool isSystemApp;
+@property (nonatomic, retain) NSArray *plugins;
 
 + (id)appWithBundleID:(id)arg1;
 + (id)appWithPropertyList:(id)arg1;

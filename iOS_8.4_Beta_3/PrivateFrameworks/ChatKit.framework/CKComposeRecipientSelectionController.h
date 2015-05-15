@@ -6,14 +6,14 @@
     id _sendBlock;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKComposeRecipientSelectionControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSArray * expandedRecipients;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * proposedRecipients;
-@property(assign,copy) id sendBlock;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKComposeRecipientSelectionControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, retain) NSArray *expandedRecipients;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) NSArray *proposedRecipients;
+@property (nonatomic, copy) id sendBlock;
+@property (readonly) Class superclass;
 
 - (void)_updateBackfillForNewRecipients;
 - (void)addRecipient:(id)arg1;

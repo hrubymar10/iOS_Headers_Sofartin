@@ -7,8 +7,8 @@
     NSString *_webAuthToken;
 }
 
-@property(assign,copy) id fetchWebAuthTokenCompletionBlock;
-@property(assign,copy) NSString * webAuthToken;
+@property (nonatomic, copy) id fetchWebAuthTokenCompletionBlock;
+@property (nonatomic, copy) NSString *webAuthToken;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

@@ -19,7 +19,7 @@
     unsigned int _saturationSpread;
 }
 
-@property(assign,retain) NSArray * bubbleColors;
+@property (retain) NSArray *bubbleColors;
 
 - (bool)analyzeImage:(struct CGImage { }*)arg1;
 - (id)bubbleColors;

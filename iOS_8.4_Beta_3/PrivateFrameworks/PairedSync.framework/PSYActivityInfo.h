@@ -11,12 +11,12 @@
     NSNumber *_timeoutSeconds;
 }
 
-@property(assign,copy) NSString * backboardPrelaunchBundleIdentifier;
-@property(assign,copy) NSArray * dependencies;
-@property(assign,copy) NSString * label;
-@property(assign,copy) NSString * machServiceName;
-@property(assign,copy) NSString * priority;
-@property(assign,copy) NSNumber * timeoutSeconds;
+@property (nonatomic, copy) NSString *backboardPrelaunchBundleIdentifier;
+@property (nonatomic, copy) NSArray *dependencies;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, copy) NSString *machServiceName;
+@property (nonatomic, copy) NSString *priority;
+@property (nonatomic, copy) NSNumber *timeoutSeconds;
 
 + (id)activityWithPlist:(id)arg1;
 + (bool)supportsSecureCoding;

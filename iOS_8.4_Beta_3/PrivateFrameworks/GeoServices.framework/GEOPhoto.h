@@ -11,11 +11,11 @@
     NSString *_uid;
 }
 
-@property(assign,readwrite) bool hasPhotoType;
-@property(assign,readonly) bool hasUid;
-@property(assign,retain) NSMutableArray * photoInfos;
-@property(assign,readwrite) int photoType;
-@property(assign,retain) NSString * uid;
+@property (nonatomic) bool hasPhotoType;
+@property (nonatomic, readonly) bool hasUid;
+@property (nonatomic, retain) NSMutableArray *photoInfos;
+@property (nonatomic) int photoType;
+@property (nonatomic, retain) NSString *uid;
 
 - (id)_bestURLForSize:(int)arg1;
 - (id)_photoInfoForSize:(int)arg1 includeSmallerSizes:(bool)arg2;

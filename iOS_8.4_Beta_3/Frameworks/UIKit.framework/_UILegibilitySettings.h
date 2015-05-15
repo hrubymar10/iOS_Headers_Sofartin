@@ -15,16 +15,16 @@
     long long _style;
 }
 
-@property(assign,retain) UIColor * contentColor;
-@property(assign,readwrite) double imageOutset;
-@property(assign,readwrite) double minFillHeight;
-@property(assign,retain) UIColor * primaryColor;
-@property(assign,retain) UIColor * secondaryColor;
-@property(assign,readwrite) double shadowAlpha;
-@property(assign,retain) UIColor * shadowColor;
-@property(assign,copy) NSString * shadowCompositingFilterName;
-@property(assign,readwrite) double shadowRadius;
-@property(assign,readwrite) long long style;
+@property (nonatomic, retain) UIColor *contentColor;
+@property (nonatomic) double imageOutset;
+@property (nonatomic) double minFillHeight;
+@property (nonatomic, retain) UIColor *primaryColor;
+@property (nonatomic, retain) UIColor *secondaryColor;
+@property (nonatomic) double shadowAlpha;
+@property (nonatomic, retain) UIColor *shadowColor;
+@property (nonatomic, copy) NSString *shadowCompositingFilterName;
+@property (nonatomic) double shadowRadius;
+@property (nonatomic) long long style;
 
 + (id)sharedInstanceForStyle:(long long)arg1;
 

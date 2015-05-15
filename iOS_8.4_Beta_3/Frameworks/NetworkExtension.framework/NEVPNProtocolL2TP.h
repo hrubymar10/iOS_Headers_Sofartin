@@ -11,14 +11,14 @@
     NEKeychainItem *_sharedSecretKeychainItem;
 }
 
-@property(assign,copy) NSString * localIdentifier;
-@property(assign,readwrite) long long machineAuthenticationMethod;
-@property(assign,retain) NEIdentityKeychainItem * machineIdentity;
-@property(assign,readwrite) bool machineIdentityDataImported;
-@property(assign,copy) NSData * machineIdentityDataInternal;
-@property(assign,copy) NSData * machineIdentityReference;
-@property(assign,copy) NEKeychainItem * sharedSecretKeychainItem;
-@property(assign,copy) NSData * sharedSecretReference;
+@property (copy) NSString *localIdentifier;
+@property long long machineAuthenticationMethod;
+@property (retain) NEIdentityKeychainItem *machineIdentity;
+@property bool machineIdentityDataImported;
+@property (copy) NSData *machineIdentityDataInternal;
+@property (copy) NSData *machineIdentityReference;
+@property (copy) NEKeychainItem *sharedSecretKeychainItem;
+@property (copy) NSData *sharedSecretReference;
 
 + (bool)supportsSecureCoding;
 

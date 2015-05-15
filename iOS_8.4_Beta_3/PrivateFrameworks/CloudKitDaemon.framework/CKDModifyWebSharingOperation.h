@@ -13,14 +13,14 @@
     NSMutableDictionary *_recordsToSaveByID;
 }
 
-@property(assign,retain) NSMutableSet * fetchedRecordIDs;
-@property(assign,readwrite) int numSaveAttempts;
-@property(assign,retain) NSArray * recordIDsToShare;
-@property(assign,retain) NSArray * recordIDsToShareReadWrite;
-@property(assign,retain) NSArray * recordIDsToUnshare;
-@property(assign,copy) id recordWebSharedBlock;
-@property(assign,copy) id recordWebUnsharedBlock;
-@property(assign,retain) NSMutableDictionary * recordsToSaveByID;
+@property (nonatomic, retain) NSMutableSet *fetchedRecordIDs;
+@property (nonatomic) int numSaveAttempts;
+@property (nonatomic, retain) NSArray *recordIDsToShare;
+@property (nonatomic, retain) NSArray *recordIDsToShareReadWrite;
+@property (nonatomic, retain) NSArray *recordIDsToUnshare;
+@property (nonatomic, copy) id recordWebSharedBlock;
+@property (nonatomic, copy) id recordWebUnsharedBlock;
+@property (nonatomic, retain) NSMutableDictionary *recordsToSaveByID;
 
 - (void).cxx_destruct;
 - (struct _PCSIdentityData { }*)_copyShareProtectionFromRecord:(id)arg1 error:(id*)arg2;

@@ -6,7 +6,7 @@
     id _alphaUpdatingBlock;
 }
 
-@property(assign,copy) id alphaUpdatingBlock;
+@property (nonatomic, copy) id alphaUpdatingBlock;
 
 - (void).cxx_destruct;
 - (id)alphaUpdatingBlock;

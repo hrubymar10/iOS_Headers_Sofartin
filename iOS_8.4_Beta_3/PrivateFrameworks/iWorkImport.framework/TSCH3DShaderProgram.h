@@ -20,9 +20,9 @@
     NSString *mVertex;
 }
 
-@property(assign,readonly) NSString * fragment;
-@property(assign,readonly) TSCH3DGLVersion * version;
-@property(assign,readonly) NSString * vertex;
+@property (nonatomic, readonly) NSString *fragment;
+@property (nonatomic, readonly) TSCH3DGLVersion *version;
+@property (nonatomic, readonly) NSString *vertex;
 
 - (void)accumulateSection:(id)arg1 intoArray:(id)arg2;
 - (void)addAttributeVariable:(id)arg1;

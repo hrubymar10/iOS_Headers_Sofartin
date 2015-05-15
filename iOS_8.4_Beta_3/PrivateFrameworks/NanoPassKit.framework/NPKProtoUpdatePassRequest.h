@@ -15,17 +15,17 @@
     unsigned int _resyncID;
 }
 
-@property(assign,retain) NPKProtoCatalog * catalog;
-@property(assign,readonly) bool hasCatalog;
-@property(assign,readwrite) bool hasLastKnownResyncID;
-@property(assign,readonly) bool hasLibraryHash;
-@property(assign,readonly) bool hasPreviousManifestHash;
-@property(assign,readwrite) bool hasResyncID;
-@property(assign,readwrite) unsigned int lastKnownResyncID;
-@property(assign,retain) NPKProtoHash * libraryHash;
-@property(assign,retain) NPKProtoPass * pass;
-@property(assign,retain) NSData * previousManifestHash;
-@property(assign,readwrite) unsigned int resyncID;
+@property (nonatomic, retain) NPKProtoCatalog *catalog;
+@property (nonatomic, readonly) bool hasCatalog;
+@property (nonatomic) bool hasLastKnownResyncID;
+@property (nonatomic, readonly) bool hasLibraryHash;
+@property (nonatomic, readonly) bool hasPreviousManifestHash;
+@property (nonatomic) bool hasResyncID;
+@property (nonatomic) unsigned int lastKnownResyncID;
+@property (nonatomic, retain) NPKProtoHash *libraryHash;
+@property (nonatomic, retain) NPKProtoPass *pass;
+@property (nonatomic, retain) NSData *previousManifestHash;
+@property (nonatomic) unsigned int resyncID;
 
 - (void).cxx_destruct;
 - (id)catalog;

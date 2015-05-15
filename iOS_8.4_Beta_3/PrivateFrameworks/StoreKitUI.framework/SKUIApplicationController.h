@@ -41,24 +41,24 @@
     NSMutableArray *_whenLoadedBlocks;
 }
 
-@property(assign,readonly) long long _applicationMode;
-@property(setter=_setHidesTabBar:,assign,readwrite) bool _hidesTabBar;
-@property(assign,readonly) NSArray * _navigationControllers;
-@property(assign,readonly) SKUIPreviewDocumentController * _previewOverlayDocumentController;
-@property(setter=_setSelectedTabBarIndex:,assign,readwrite) long long _selectedTabBarIndex;
-@property(assign,readonly) SKUINavigationDocumentController * _transientNavigationController;
-@property(assign,readonly) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIApplicationDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIModalDocumentController * modalDocumentController;
-@property(assign,readonly) UIViewController * rootViewController;
-@property(assign,readonly) SKUIScrollingTabBarController * scrollingTabBarController;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UITabBarController * tabBarController;
-@property(assign,readonly) long long tabBarControllerStyle;
-@property(assign,copy) NSArray * tabBarItems;
+@property (nonatomic, readonly) long long _applicationMode;
+@property (setter=_setHidesTabBar:, nonatomic) bool _hidesTabBar;
+@property (nonatomic, readonly) NSArray *_navigationControllers;
+@property (nonatomic, readonly) SKUIPreviewDocumentController *_previewOverlayDocumentController;
+@property (setter=_setSelectedTabBarIndex:, nonatomic) long long _selectedTabBarIndex;
+@property (nonatomic, readonly) SKUINavigationDocumentController *_transientNavigationController;
+@property (nonatomic, readonly) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIApplicationDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIModalDocumentController *modalDocumentController;
+@property (nonatomic, readonly) UIViewController *rootViewController;
+@property (nonatomic, readonly) SKUIScrollingTabBarController *scrollingTabBarController;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UITabBarController *tabBarController;
+@property (nonatomic, readonly) long long tabBarControllerStyle;
+@property (nonatomic, copy) NSArray *tabBarItems;
 
 + (id)applicationOptionsWithLaunchOptions:(id)arg1;
 

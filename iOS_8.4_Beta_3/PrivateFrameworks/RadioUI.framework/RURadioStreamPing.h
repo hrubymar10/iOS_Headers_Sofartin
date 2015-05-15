@@ -8,9 +8,9 @@
     NSData *_value;
 }
 
-@property(assign,readonly) double timestamp;
-@property(assign,readonly) long long type;
-@property(assign,copy) NSData * value;
+@property (nonatomic, readonly) double timestamp;
+@property (nonatomic, readonly) long long type;
+@property (nonatomic, readonly, copy) NSData *value;
 
 - (void).cxx_destruct;
 - (id)description;

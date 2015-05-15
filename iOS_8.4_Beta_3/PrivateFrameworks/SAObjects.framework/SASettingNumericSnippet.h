@@ -4,7 +4,7 @@
 
 @interface SASettingNumericSnippet : SASettingSnippet
 
-@property(assign,readwrite) bool increment;
+@property (nonatomic) bool increment;
 
 + (id)numericSnippet;
 + (id)numericSnippetWithDictionary:(id)arg1 context:(id)arg2;

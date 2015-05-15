@@ -26,11 +26,11 @@
     bool _transitioning;
 }
 
-@property(assign,retain) UIImage * customImage;
-@property(assign,readwrite) <PKGlyphViewDelegate> * delegate;
-@property(assign,copy) UIColor * primaryColor;
-@property(assign,copy) UIColor * secondaryColor;
-@property(assign,readonly) long long state;
+@property (nonatomic, retain) UIImage *customImage;
+@property (nonatomic) <PKGlyphViewDelegate> *delegate;
+@property (nonatomic, copy) UIColor *primaryColor;
+@property (nonatomic, copy) UIColor *secondaryColor;
+@property (nonatomic, readonly) long long state;
 
 - (void)_endPhoneWiggle;
 - (void)_executeAfterMinimumAnimationDurationForStateTransition:(id)arg1;

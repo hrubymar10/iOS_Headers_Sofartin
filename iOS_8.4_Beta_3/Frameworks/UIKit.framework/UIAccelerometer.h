@@ -12,8 +12,8 @@
     double _updateInterval;
 }
 
-@property(assign,readwrite) <UIAccelerometerDelegate> * delegate;
-@property(assign,readwrite) double updateInterval;
+@property (nonatomic) <UIAccelerometerDelegate> *delegate;
+@property (nonatomic) double updateInterval;
 
 + (id)sharedAccelerometer;
 

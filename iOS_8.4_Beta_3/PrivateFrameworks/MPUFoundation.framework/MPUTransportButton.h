@@ -14,20 +14,20 @@
     UIImage *_transportButtonImage;
 }
 
-@property(assign,readwrite) bool adjustsImageWhenHighlighted;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIColor * disabledColor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIColor * highlightedColor;
-@property(assign,retain) UIColor * regularColor;
-@property(assign,retain) UIColor * selectedColor;
-@property(assign,readwrite) bool shouldInferColorsFromTintColor;
-@property(assign,readwrite) bool shouldShowBackgroundForSelectedState;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) MPUTransportButtonEventHandler * transportButtonEventHandler;
-@property(assign,retain) UIImage * transportButtonImage;
-@property(assign,readwrite) long long transportButtonImageViewContentMode;
+@property (nonatomic) bool adjustsImageWhenHighlighted;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIColor *disabledColor;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIColor *highlightedColor;
+@property (nonatomic, retain) UIColor *regularColor;
+@property (nonatomic, retain) UIColor *selectedColor;
+@property (nonatomic) bool shouldInferColorsFromTintColor;
+@property (nonatomic) bool shouldShowBackgroundForSelectedState;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) MPUTransportButtonEventHandler *transportButtonEventHandler;
+@property (nonatomic, retain) UIImage *transportButtonImage;
+@property (nonatomic) long long transportButtonImageViewContentMode;
 
 + (id)_stringForDisplayedSkipInterval:(double)arg1;
 + (id)defaultDisabledColor;

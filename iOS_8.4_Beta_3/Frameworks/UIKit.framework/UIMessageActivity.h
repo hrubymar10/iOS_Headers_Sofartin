@@ -7,8 +7,8 @@
     bool _sourceIsManaged;
 }
 
-@property(assign,retain) MFMessageComposeViewController * messageComposeViewController;
-@property(assign,readwrite) bool sourceIsManaged;
+@property (nonatomic, retain) MFMessageComposeViewController *messageComposeViewController;
+@property (nonatomic) bool sourceIsManaged;
 
 + (long long)activityCategory;
 

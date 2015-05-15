@@ -11,16 +11,16 @@
     bool _pending;
 }
 
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,readwrite) bool automaticallyCancelPendingBlockUponSchedulingNewBlock;
-@property(getter=isCancelled,assign,readwrite) bool cancelled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSObject<OS_dispatch_queue> * dispatchQueue;
-@property(assign,retain) NSObject<OS_dispatch_source> * dispatchTimer;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isPending,assign,readwrite) bool pending;
-@property(assign,readonly) Class superclass;
+@property (getter=isActive, nonatomic) bool active;
+@property (nonatomic) bool automaticallyCancelPendingBlockUponSchedulingNewBlock;
+@property (getter=isCancelled, nonatomic) bool cancelled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *dispatchQueue;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *dispatchTimer;
+@property (readonly) unsigned long long hash;
+@property (getter=isPending, nonatomic) bool pending;
+@property (readonly) Class superclass;
 
 - (void)_reallyCancel;
 - (void)afterDelay:(double)arg1 processBlock:(id)arg2;

@@ -21,12 +21,12 @@
     NSString *_namedCornerStyle;
 }
 
-@property(assign,copy) IKColor * borderColor;
-@property(assign,readwrite) double borderWidth;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,readwrite) struct IKCornerRadii { double x1; double x2; double x3; double x4; } cornerRadii;
-@property(assign,copy) IKColor * fillColor;
-@property(assign,copy) NSString * namedCornerStyle;
+@property (nonatomic, copy) IKColor *borderColor;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic) struct IKCornerRadii { double x1; double x2; double x3; double x4; } cornerRadii;
+@property (nonatomic, copy) IKColor *fillColor;
+@property (nonatomic, copy) NSString *namedCornerStyle;
 
 - (void).cxx_destruct;
 - (bool)_usesBackgroundWithAlpha:(id)arg1;

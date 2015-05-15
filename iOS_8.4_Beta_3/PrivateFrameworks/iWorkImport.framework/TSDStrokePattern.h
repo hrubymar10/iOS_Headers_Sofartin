@@ -9,12 +9,12 @@
     int mType;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) bool isDash;
-@property(assign,readonly) bool isRoundDash;
-@property(assign,readonly) double* pattern;
-@property(assign,readonly) int patternType;
-@property(assign,readonly) double phase;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, readonly) bool isDash;
+@property (nonatomic, readonly) bool isRoundDash;
+@property (nonatomic, readonly) double*pattern;
+@property (nonatomic, readonly) int patternType;
+@property (nonatomic, readonly) double phase;
 
 + (id)dashPatternWithSpacing:(double)arg1;
 + (id)emptyPattern;

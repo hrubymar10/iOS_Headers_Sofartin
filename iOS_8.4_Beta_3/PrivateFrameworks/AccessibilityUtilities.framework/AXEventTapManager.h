@@ -15,9 +15,9 @@
     bool _shouldReorderEventTaps;
 }
 
-@property(assign,copy) id installationEventRepPost;
-@property(assign,copy) id installationGSCallback;
-@property(assign,copy) id installationHIDCallback;
+@property (nonatomic, copy) id installationEventRepPost;
+@property (nonatomic, copy) id installationGSCallback;
+@property (nonatomic, copy) id installationHIDCallback;
 
 + (id)sharedManager;
 

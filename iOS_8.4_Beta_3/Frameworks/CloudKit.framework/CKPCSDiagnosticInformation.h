@@ -9,10 +9,10 @@
     NSString *_serviceIdentityInfo;
 }
 
-@property(assign,retain) NSString * identityInfo;
-@property(assign,retain) NSMutableArray * notFoundZoneIDs;
-@property(assign,retain) NSMutableDictionary * pcsInfoByZoneID;
-@property(assign,retain) NSString * serviceIdentityInfo;
+@property (nonatomic, retain) NSString *identityInfo;
+@property (nonatomic, retain) NSMutableArray *notFoundZoneIDs;
+@property (nonatomic, retain) NSMutableDictionary *pcsInfoByZoneID;
+@property (nonatomic, retain) NSString *serviceIdentityInfo;
 
 + (bool)supportsSecureCoding;
 

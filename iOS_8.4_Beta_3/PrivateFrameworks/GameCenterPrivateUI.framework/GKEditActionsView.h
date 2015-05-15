@@ -10,15 +10,15 @@
     double _visibleWidth;
 }
 
-@property(assign,retain) NSArray * actionButtons;
-@property(assign,readwrite) GKCollectionViewCell * cell;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSArray * editActionConstraints;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CALayer * maskLayer;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double visibleWidth;
+@property (nonatomic, retain) NSArray *actionButtons;
+@property (nonatomic) GKCollectionViewCell *cell;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSArray *editActionConstraints;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CALayer *maskLayer;
+@property (readonly) Class superclass;
+@property (nonatomic) double visibleWidth;
 
 - (id)actionButtons;
 - (void)actionSheet:(id)arg1 clickedButtonAtIndex:(long long)arg2;

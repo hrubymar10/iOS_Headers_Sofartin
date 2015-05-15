@@ -11,22 +11,22 @@
     PHCollectionList *_originalCollectionList;
 }
 
-@property(assign,readonly) NSString * clientName;
-@property(assign,readonly) int clientProcessID;
-@property(assign,readonly) PHCollectionChangeRequestHelper * collectionsHelper;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEntitled,assign,readonly) bool entitled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) PHChangeRequestHelper * helper;
-@property(assign,readonly) NSString * managedEntityName;
-@property(getter=isMutated,assign,readonly) bool mutated;
-@property(getter=isNew,assign,readonly) bool new;
-@property(assign,readonly) NSManagedObjectID * objectID;
-@property(assign,readonly) PHObjectPlaceholder * placeholderForCreatedCollectionList;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * title;
-@property(assign,readonly) NSString * uuid;
+@property (nonatomic, readonly) NSString *clientName;
+@property (nonatomic, readonly) int clientProcessID;
+@property (nonatomic, readonly) PHCollectionChangeRequestHelper *collectionsHelper;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEntitled, nonatomic, readonly) bool entitled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) PHChangeRequestHelper *helper;
+@property (nonatomic, readonly) NSString *managedEntityName;
+@property (getter=isMutated, readonly) bool mutated;
+@property (getter=isNew, readonly) bool new;
+@property (nonatomic, readonly) NSManagedObjectID *objectID;
+@property (nonatomic, readonly) PHObjectPlaceholder *placeholderForCreatedCollectionList;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, readonly) NSString *uuid;
 
 + (id)changeRequestForCollectionList:(id)arg1;
 + (id)changeRequestForCollectionList:(id)arg1 childCollections:(id)arg2;

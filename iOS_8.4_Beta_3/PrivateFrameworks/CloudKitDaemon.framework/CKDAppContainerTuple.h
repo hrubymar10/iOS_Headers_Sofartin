@@ -7,8 +7,8 @@
     CKContainerID *_containerID;
 }
 
-@property(assign,retain) NSString * applicationBundleID;
-@property(assign,retain) CKContainerID * containerID;
+@property (nonatomic, retain) NSString *applicationBundleID;
+@property (nonatomic, retain) CKContainerID *containerID;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

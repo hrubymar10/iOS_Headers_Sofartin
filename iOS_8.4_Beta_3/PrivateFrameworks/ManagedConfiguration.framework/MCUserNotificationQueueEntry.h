@@ -15,16 +15,16 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSString * alternateButtonText;
-@property(assign,copy) id completionBlock;
-@property(assign,retain) NSString * defaultButtonText;
-@property(assign,readwrite) double dismissAfterTimeInterval;
-@property(assign,readwrite) bool displayInAppWhitelistModes;
-@property(assign,readwrite) bool displayOnLockScreen;
-@property(assign,retain) NSString * message;
-@property(assign,retain) id notification;
-@property(assign,retain) NSString * otherButtonText;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSString *alternateButtonText;
+@property (nonatomic, copy) id completionBlock;
+@property (nonatomic, retain) NSString *defaultButtonText;
+@property (nonatomic) double dismissAfterTimeInterval;
+@property (nonatomic) bool displayInAppWhitelistModes;
+@property (nonatomic) bool displayOnLockScreen;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic, retain) id notification;
+@property (nonatomic, retain) NSString *otherButtonText;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (id)alternateButtonText;

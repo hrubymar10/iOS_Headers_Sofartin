@@ -6,8 +6,8 @@
     GKLabel *_label;
 }
 
-@property(assign,retain) GKLabel * label;
-@property(assign,retain) NSString * text;
+@property (nonatomic, retain) GKLabel *label;
+@property (nonatomic, retain) NSString *text;
 
 + (double)defaultHeight;
 + (bool)requiresConstraintBasedLayout;

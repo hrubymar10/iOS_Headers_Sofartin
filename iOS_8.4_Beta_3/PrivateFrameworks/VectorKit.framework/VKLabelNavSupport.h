@@ -56,14 +56,14 @@
     NSMutableDictionary *_visibleLabelsByName;
 }
 
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{vector<std::__1::shared_ptr<vk::NavLabel>' */ struct * activeSigns; /* unknown property attribute:  std::__1::allocator<std::__1::shared_ptr<vk::NavLabel> > >=^{shared_ptr<vk::NavLabel>}}} */
-@property(assign,retain) NSString * currentLocationText;
-@property(assign,retain) NSString * currentRoadName;
-@property(assign,retain) NSString * currentShieldGroup;
-@property(assign,readwrite) bool drawRoadSigns;
-@property(assign,readonly) bool needsLayout;
-@property(assign,retain) VKPolylineOverlayPainter * route;
-@property(assign,readwrite) struct PolylineCoordinate { unsigned int x1; float x2; } routeUserOffset;
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{vector<std::__1::shared_ptr<vk::NavLabel>' */ struct *activeSigns; /* unknown property attribute:  std::__1::allocator<std::__1::shared_ptr<vk::NavLabel> > >=^{shared_ptr<vk::NavLabel>}}} */
+@property (nonatomic, retain) NSString *currentLocationText;
+@property (nonatomic, retain) NSString *currentRoadName;
+@property (nonatomic, retain) NSString *currentShieldGroup;
+@property (nonatomic) bool drawRoadSigns;
+@property (nonatomic, readonly) bool needsLayout;
+@property (nonatomic, retain) VKPolylineOverlayPainter *route;
+@property (nonatomic) struct PolylineCoordinate { unsigned int x1; float x2; } routeUserOffset;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

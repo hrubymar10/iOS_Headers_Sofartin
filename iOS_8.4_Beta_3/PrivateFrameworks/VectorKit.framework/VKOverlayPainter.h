@@ -9,9 +9,9 @@
     <VKOverlay> *_overlay;
 }
 
-@property(assign,readwrite) unsigned int applicationState;
-@property(assign,readwrite) VKOverlayContainerModel * containerModel;
-@property(assign,readonly) <VKOverlay> * overlay;
+@property (nonatomic) unsigned int applicationState;
+@property (nonatomic) VKOverlayContainerModel *containerModel;
+@property (nonatomic, readonly) <VKOverlay> *overlay;
 
 - (unsigned int)applicationState;
 - (id)containerModel;

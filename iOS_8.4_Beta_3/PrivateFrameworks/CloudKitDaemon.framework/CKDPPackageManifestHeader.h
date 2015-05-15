@@ -10,10 +10,10 @@
     int _version;
 }
 
-@property(assign,readonly) bool hasSignature;
-@property(assign,readwrite) bool hasVersion;
-@property(assign,retain) NSData * signature;
-@property(assign,readwrite) int version;
+@property (nonatomic, readonly) bool hasSignature;
+@property (nonatomic) bool hasVersion;
+@property (nonatomic, retain) NSData *signature;
+@property (nonatomic) int version;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

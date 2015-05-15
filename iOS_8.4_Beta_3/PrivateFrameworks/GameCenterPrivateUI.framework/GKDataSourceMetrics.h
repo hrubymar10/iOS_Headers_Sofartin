@@ -17,12 +17,12 @@
     NSMutableDictionary *_sectionToMetrics;
 }
 
-@property(assign,retain) NSString * cachedKey;
-@property(assign,retain) NSArray * childMetrics;
-@property(assign,retain) GKCollectionViewDataSource * dataSource;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } globalSectionRange;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } localSectionRange;
-@property(assign,retain) NSMutableDictionary * sectionToMetrics;
+@property (nonatomic, retain) NSString *cachedKey;
+@property (nonatomic, retain) NSArray *childMetrics;
+@property (nonatomic, retain) GKCollectionViewDataSource *dataSource;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } globalSectionRange;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } localSectionRange;
+@property (nonatomic, retain) NSMutableDictionary *sectionToMetrics;
 
 + (id)dataSourceMetricsWithMetrics:(id)arg1 dataSource:(id)arg2;
 

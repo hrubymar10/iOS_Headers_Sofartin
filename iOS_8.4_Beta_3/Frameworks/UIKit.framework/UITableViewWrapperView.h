@@ -6,7 +6,7 @@
     NSMutableArray *_stuckToBackViews;
 }
 
-@property(assign,readonly) NSArray * stuckToBackViews;
+@property (nonatomic, readonly) NSArray *stuckToBackViews;
 
 - (bool)_forwardsToParentScroller;
 - (void)_stickViewToBack:(id)arg1;

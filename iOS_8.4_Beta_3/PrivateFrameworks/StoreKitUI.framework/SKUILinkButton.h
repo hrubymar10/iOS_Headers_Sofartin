@@ -6,7 +6,7 @@
     long long _arrowStyle;
 }
 
-@property(assign,readonly) long long arrowStyle;
+@property (nonatomic, readonly) long long arrowStyle;
 
 + (id)buttonWithArrowStyle:(long long)arg1;
 

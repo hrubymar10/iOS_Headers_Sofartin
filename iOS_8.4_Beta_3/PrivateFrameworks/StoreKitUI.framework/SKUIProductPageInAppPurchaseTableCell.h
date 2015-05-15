@@ -15,11 +15,11 @@
     UILabel *_priceLabel;
 }
 
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,copy) NSString * indexString;
-@property(assign,copy) NSString * priceString;
-@property(assign,copy) NSString * productName;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic, copy) NSString *indexString;
+@property (nonatomic, copy) NSString *priceString;
+@property (nonatomic, copy) NSString *productName;
 
 - (void).cxx_destruct;
 - (id)colorScheme;

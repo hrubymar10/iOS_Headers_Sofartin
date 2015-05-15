@@ -4,13 +4,13 @@
 
 @interface KNMacMutableUILayout : KNMacUILayout
 
-@property(assign,readwrite) long long inspectorPaneViewMode;
-@property(getter=isShowingInspectorPane,assign,readwrite) bool showingInspectorPane;
-@property(getter=isShowingLightTable,assign,readwrite) bool showingLightTable;
-@property(getter=isShowingMasterSlides,assign,readwrite) bool showingMasterSlides;
-@property(getter=isShowingPresenterNotes,assign,readwrite) bool showingPresenterNotes;
-@property(getter=isShowingSidebar,assign,readwrite) bool showingSidebar;
-@property(assign,readwrite) long long sidebarViewMode;
+@property (nonatomic) long long inspectorPaneViewMode;
+@property (getter=isShowingInspectorPane, nonatomic) bool showingInspectorPane;
+@property (getter=isShowingLightTable, nonatomic) bool showingLightTable;
+@property (getter=isShowingMasterSlides, nonatomic) bool showingMasterSlides;
+@property (getter=isShowingPresenterNotes, nonatomic) bool showingPresenterNotes;
+@property (getter=isShowingSidebar, nonatomic) bool showingSidebar;
+@property (nonatomic) long long sidebarViewMode;
 
 - (void)setInspectorPaneViewMode:(long long)arg1;
 - (void)setShowingInspectorPane:(bool)arg1;

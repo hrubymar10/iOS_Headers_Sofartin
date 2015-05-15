@@ -9,7 +9,7 @@
     int _unclippableCorners;
 }
 
-@property(assign,readwrite) int _unclippableCorners;
+@property (nonatomic) int _unclippableCorners;
 
 - (struct CGSize { double x1; double x2; })_contentSize;
 - (bool)_isToolbar;

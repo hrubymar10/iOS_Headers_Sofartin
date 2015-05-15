@@ -10,11 +10,11 @@
     NSSet *_rootEntries;
 }
 
-@property(assign,copy) PSSearchResults * currentResults;
-@property(assign,readwrite) <PSSearchOperationDelegate> * delegate;
-@property(getter=isNewQuery,assign,readwrite) bool newQuery;
-@property(assign,copy) NSString * query;
-@property(assign,copy) NSSet * rootEntries;
+@property (readonly, copy) PSSearchResults *currentResults;
+@property (nonatomic) <PSSearchOperationDelegate> *delegate;
+@property (getter=isNewQuery, nonatomic) bool newQuery;
+@property (nonatomic, readonly, copy) NSString *query;
+@property (nonatomic, readonly, copy) NSSet *rootEntries;
 
 + (struct __CFStringTokenizer { }*)_wordBoundaryTokenizer;
 

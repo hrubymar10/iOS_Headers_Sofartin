@@ -7,7 +7,7 @@
     <MSPauseManagerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <MSPauseManagerDelegate> * delegate;
+@property (nonatomic) <MSPauseManagerDelegate> *delegate;
 
 + (id)sharedManager;
 

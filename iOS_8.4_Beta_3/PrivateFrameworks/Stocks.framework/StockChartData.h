@@ -24,21 +24,21 @@
     NSMutableDictionary *_yAxisLabelInfoCache;
 }
 
-@property(assign,readwrite) long long chartInterval;
-@property(assign,readwrite) double expirationTime;
-@property(assign,readwrite) bool hasVolume;
-@property(assign,retain) NSArray * interestingIndexes;
-@property(assign,readwrite) bool isUnavailable;
-@property(assign,retain) NSDate * marketCloseDate;
-@property(assign,retain) NSDate * marketOpenDate;
-@property(assign,retain) NSTimeZone * marketTimeZone;
-@property(assign,readwrite) struct { double x1; double x2; unsigned long long x3; }* maxValue;
-@property(assign,readwrite) struct { double x1; double x2; unsigned long long x3; }* minValue;
-@property(assign,readwrite) float previousClosePrice;
-@property(assign,readwrite) Stock * stock;
-@property(assign,readonly) unsigned int stockValueCount;
-@property(assign,readonly) struct { double x1; double x2; unsigned long long x3; }* stockValues;
-@property(assign,readwrite) int yAxisFractionDigits;
+@property (nonatomic) long long chartInterval;
+@property (nonatomic) double expirationTime;
+@property (nonatomic) bool hasVolume;
+@property (nonatomic, retain) NSArray *interestingIndexes;
+@property (nonatomic) bool isUnavailable;
+@property (nonatomic, retain) NSDate *marketCloseDate;
+@property (nonatomic, retain) NSDate *marketOpenDate;
+@property (nonatomic, retain) NSTimeZone *marketTimeZone;
+@property (nonatomic) struct { double x1; double x2; unsigned long long x3; }*maxValue;
+@property (nonatomic) struct { double x1; double x2; unsigned long long x3; }*minValue;
+@property (nonatomic) float previousClosePrice;
+@property (nonatomic) Stock *stock;
+@property (readonly) unsigned int stockValueCount;
+@property (readonly) struct { double x1; double x2; unsigned long long x3; }*stockValues;
+@property (nonatomic) int yAxisFractionDigits;
 
 - (void).cxx_destruct;
 - (struct { double x1; double x2; unsigned long long x3; }*)allocateStockValuesWithCount:(unsigned int)arg1;

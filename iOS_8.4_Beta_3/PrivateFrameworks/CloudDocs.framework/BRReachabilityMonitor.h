@@ -9,7 +9,7 @@
     struct __SCNetworkReachability { } *_reachabilityRef;
 }
 
-@property(assign,readwrite) bool isNetworkReachable;
+@property (nonatomic) bool isNetworkReachable;
 
 + (id)sharedReachabilityMonitor;
 

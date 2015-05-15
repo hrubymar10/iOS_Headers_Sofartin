@@ -4,12 +4,12 @@
 
 @interface TSDMutableImageFill : TSDImageFill <NSCopying>
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } fillSize;
-@property(assign,retain) TSPData * imageData;
-@property(assign,readwrite) bool interpretsUntaggedImageDataAsGeneric;
-@property(assign,readwrite) double scale;
-@property(assign,readwrite) int technique;
-@property(assign,copy) TSUColor * tintColor;
+@property (nonatomic) struct CGSize { double x1; double x2; } fillSize;
+@property (nonatomic, retain) TSPData *imageData;
+@property (nonatomic) bool interpretsUntaggedImageDataAsGeneric;
+@property (nonatomic) double scale;
+@property (nonatomic) int technique;
+@property (nonatomic, copy) TSUColor *tintColor;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setFillSize:(struct CGSize { double x1; double x2; })arg1;

@@ -4,7 +4,7 @@
 
 @interface SAUIUpdateViews : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * views;
+@property (nonatomic, copy) NSArray *views;
 
 + (id)updateViews;
 + (id)updateViewsWithDictionary:(id)arg1 context:(id)arg2;

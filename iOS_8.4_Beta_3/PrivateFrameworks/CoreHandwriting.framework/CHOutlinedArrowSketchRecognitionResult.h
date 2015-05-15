@@ -17,9 +17,9 @@
     } _size;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } center;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } controlPoint;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (readonly) struct CGPoint { double x1; double x2; } center;
+@property (readonly) struct CGPoint { double x1; double x2; } controlPoint;
+@property (readonly) struct CGSize { double x1; double x2; } size;
 
 - (id).cxx_construct;
 - (struct CGPoint { double x1; double x2; })center;

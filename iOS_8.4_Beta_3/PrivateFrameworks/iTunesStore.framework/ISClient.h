@@ -11,11 +11,11 @@
     NSString *_userAgent;
 }
 
-@property(assign,copy) NSString * appleClientApplication;
-@property(assign,readonly) NSString * appleClientVersions;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * partnerHeader;
-@property(assign,copy) NSString * userAgent;
+@property (copy) NSString *appleClientApplication;
+@property (readonly) NSString *appleClientVersions;
+@property (copy) NSString *identifier;
+@property (copy) NSString *partnerHeader;
+@property (copy) NSString *userAgent;
 
 + (id)currentClient;
 

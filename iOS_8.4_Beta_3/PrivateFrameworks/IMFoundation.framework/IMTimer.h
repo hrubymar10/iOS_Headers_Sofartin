@@ -12,8 +12,8 @@
     bool _wakeDevice;
 }
 
-@property(assign,retain) NSDate * fireDate;
-@property(assign,retain) id userInfo;
+@property (nonatomic, readonly, retain) NSDate *fireDate;
+@property (nonatomic, readonly, retain) id userInfo;
 
 - (void)dealloc;
 - (id)fireDate;

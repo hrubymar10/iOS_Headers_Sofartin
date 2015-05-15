@@ -32,22 +32,22 @@
     bool _scaleFactorsAreValid;
 }
 
-@property(assign,retain) PUAdjustmentsMode * adjustmentsMode;
-@property(assign,readwrite) double baseValue;
-@property(getter=isBaseValueIndicatorHidden,assign,readwrite) bool baseValueIndicatorHidden;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } contentSize;
-@property(assign,readwrite) double currentValue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isDirectionReversed,assign,readwrite) bool directionReversed;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double identityOffset;
-@property(assign,readwrite) double identityValue;
-@property(assign,readonly) long long layoutOrientation;
-@property(assign,readwrite) double maxValue;
-@property(assign,readwrite) double minValue;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool wantsLevelIndicator;
+@property (nonatomic, retain) PUAdjustmentsMode *adjustmentsMode;
+@property (nonatomic) double baseValue;
+@property (getter=isBaseValueIndicatorHidden, nonatomic) bool baseValueIndicatorHidden;
+@property (nonatomic) struct CGSize { double x1; double x2; } contentSize;
+@property (nonatomic) double currentValue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isDirectionReversed, nonatomic) bool directionReversed;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double identityOffset;
+@property (nonatomic) double identityValue;
+@property (nonatomic, readonly) long long layoutOrientation;
+@property (nonatomic) double maxValue;
+@property (nonatomic) double minValue;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool wantsLevelIndicator;
 
 - (void).cxx_destruct;
 - (double)_baseValueIndicatorOffset;

@@ -4,14 +4,14 @@
 
 @interface SAWeatherUnits : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * distanceUnits;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * pressureUnits;
-@property(assign,copy) NSString * speedUnits;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * temperatureUnits;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *distanceUnits;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *pressureUnits;
+@property (nonatomic, copy) NSString *speedUnits;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *temperatureUnits;
 
 + (id)units;
 + (id)unitsWithDictionary:(id)arg1 context:(id)arg2;

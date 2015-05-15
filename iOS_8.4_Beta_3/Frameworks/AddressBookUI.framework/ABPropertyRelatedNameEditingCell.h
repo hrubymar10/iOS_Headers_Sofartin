@@ -4,10 +4,10 @@
 
 @interface ABPropertyRelatedNameEditingCell : ABPropertySimpleEditingCell <ABPeoplePickerNavigationControllerDelegate>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2;
 - (bool)peoplePickerNavigationController:(id)arg1 shouldContinueAfterSelectingPerson:(void*)arg2;

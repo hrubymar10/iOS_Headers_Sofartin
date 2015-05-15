@@ -18,19 +18,19 @@
     NSMutableArray *_viewControllers;
 }
 
-@property(assign,readwrite) bool askPermission;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIProductPageChildViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIProductPageHeaderViewController * headerViewController;
-@property(assign,retain) SKUIMetricsController * metricsController;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,readonly) UIScrollView * scrollView;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * swooshComponents;
+@property (nonatomic) bool askPermission;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIProductPageChildViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIProductPageHeaderViewController *headerViewController;
+@property (nonatomic, retain) SKUIMetricsController *metricsController;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic, readonly) UIScrollView *scrollView;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *swooshComponents;
 
 - (void).cxx_destruct;
 - (void)_addHeaderView;

@@ -12,12 +12,12 @@
     bool _suspended;
 }
 
-@property(getter=isCancelled,assign,readwrite) bool cancelled;
-@property(assign,retain) NSObject<OS_dispatch_queue> * dispatchQueue;
-@property(assign,retain) NSMutableDictionary * dispatchQueueBlocks;
-@property(assign,retain) struct __CFBinaryHeap { }* heap;
-@property(assign,retain) NSObject<OS_dispatch_queue> * lockQueue;
-@property(getter=isSuspended,assign,readwrite) bool suspended;
+@property (getter=isCancelled, nonatomic) bool cancelled;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *dispatchQueue;
+@property (nonatomic, retain) NSMutableDictionary *dispatchQueueBlocks;
+@property (nonatomic, retain) struct __CFBinaryHeap { }*heap;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *lockQueue;
+@property (getter=isSuspended, nonatomic) bool suspended;
 
 + (id)concurrentQueueWithDispatchPriority:(long long)arg1;
 + (id)serialQueueWithDispatchPriority:(long long)arg1;

@@ -9,9 +9,9 @@
     NSURL *_videoFileURL;
 }
 
-@property(assign,retain) AVPlayer * _player;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } anchorPoint;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, retain) AVPlayer *_player;
+@property (nonatomic) struct CGPoint { double x1; double x2; } anchorPoint;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
 
 + (id)videoNodeWithAVPlayer:(id)arg1;
 + (id)videoNodeWithVideoFileNamed:(id)arg1;

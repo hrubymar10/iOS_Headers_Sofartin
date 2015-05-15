@@ -6,19 +6,19 @@
     NSCache *_resourceCache;
 }
 
-@property(assign,readonly) double formSheetCornerRadius;
-@property(assign,readonly) struct CGSize { double x1; double x2; } formSheetSize;
-@property(assign,retain) GKNetworkImageSource * iconLeaderboardListSource;
-@property(assign,retain) GKNetworkImageSource * iconLeaderboardSetListSource;
-@property(assign,retain) UIImage * interactiveRatingStarsBackground;
-@property(assign,retain) UIImage * interactiveRatingStarsForeground;
-@property(assign,retain) GKNetworkImageSource * macGameIconSource;
-@property(assign,retain) GKNetworkImageSource * photoDetailSource;
-@property(assign,retain) GKNetworkImageSource * photoListSource;
-@property(assign,retain) UIImage * ratingStarsBackgroundImage;
-@property(assign,retain) UIImage * ratingStarsForegroundImage;
-@property(assign,retain) NSCache * resourceCache;
-@property(assign,readonly) GKNetworkImageSource * untreatedAchievementImageSource;
+@property (nonatomic, readonly) double formSheetCornerRadius;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } formSheetSize;
+@property (nonatomic, readonly, retain) GKNetworkImageSource *iconLeaderboardListSource;
+@property (nonatomic, readonly, retain) GKNetworkImageSource *iconLeaderboardSetListSource;
+@property (nonatomic, readonly, retain) UIImage *interactiveRatingStarsBackground;
+@property (nonatomic, readonly, retain) UIImage *interactiveRatingStarsForeground;
+@property (nonatomic, readonly, retain) GKNetworkImageSource *macGameIconSource;
+@property (nonatomic, readonly, retain) GKNetworkImageSource *photoDetailSource;
+@property (nonatomic, readonly, retain) GKNetworkImageSource *photoListSource;
+@property (nonatomic, readonly, retain) UIImage *ratingStarsBackgroundImage;
+@property (nonatomic, readonly, retain) UIImage *ratingStarsForegroundImage;
+@property (nonatomic, retain) NSCache *resourceCache;
+@property (nonatomic, readonly) GKNetworkImageSource *untreatedAchievementImageSource;
 
 + (id)sharedTheme;
 

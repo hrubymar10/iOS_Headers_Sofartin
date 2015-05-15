@@ -29,17 +29,17 @@
     unsigned long long _placeholderVersion;
 }
 
-@property(getter=isDisplayingPlaceholder,assign,readonly) bool displayingPlaceholder;
-@property(assign,readwrite) bool drawsArtworkAsynchronously;
-@property(assign,retain) UIColor * placeholderBackgroundColor;
-@property(assign,readwrite) long long placeholderContentMode;
-@property(assign,retain) UIImage * placeholderImage;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } placeholderSize;
-@property(assign,retain) UIColor * placeholderStrokeColor;
-@property(assign,readwrite) double placeholderStrokeLineWidth;
-@property(assign,readwrite) long long placeholderStyle;
-@property(assign,copy) NSString * placeholderSubtitle;
-@property(assign,copy) NSString * placeholderTitle;
+@property (getter=isDisplayingPlaceholder, nonatomic, readonly) bool displayingPlaceholder;
+@property (nonatomic) bool drawsArtworkAsynchronously;
+@property (nonatomic, retain) UIColor *placeholderBackgroundColor;
+@property (nonatomic) long long placeholderContentMode;
+@property (nonatomic, retain) UIImage *placeholderImage;
+@property (nonatomic) struct CGSize { double x1; double x2; } placeholderSize;
+@property (nonatomic, retain) UIColor *placeholderStrokeColor;
+@property (nonatomic) double placeholderStrokeLineWidth;
+@property (nonatomic) long long placeholderStyle;
+@property (nonatomic, copy) NSString *placeholderSubtitle;
+@property (nonatomic, copy) NSString *placeholderTitle;
 
 - (void).cxx_destruct;
 - (void)_drawPlaceholderWithBounds:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 displayScale:(double)arg2;

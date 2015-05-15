@@ -4,7 +4,7 @@
 
 @interface UIHandleStatusBarTapAction : BSAction
 
-@property(assign,readonly) long long statusBarStyle;
+@property (nonatomic, readonly) long long statusBarStyle;
 
 - (long long)UIActionType;
 - (id)initWithInfo:(id)arg1 timeout:(double)arg2 forResponseOnQueue:(id)arg3 withHandler:(id)arg4;

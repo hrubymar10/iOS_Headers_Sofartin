@@ -10,11 +10,11 @@
     NSString *_title;
 }
 
-@property(assign,readonly) SKUIImageViewElement * decorationImage;
-@property(assign,readwrite) long long index;
-@property(assign,readwrite) bool showTopBorder;
-@property(assign,readonly) NSString * subtitle;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) SKUIImageViewElement *decorationImage;
+@property (nonatomic) long long index;
+@property (nonatomic) bool showTopBorder;
+@property (nonatomic, readonly) NSString *subtitle;
+@property (nonatomic, readonly) NSString *title;
 
 - (void).cxx_destruct;
 - (long long)componentType;

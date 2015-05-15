@@ -22,10 +22,10 @@
     VKTile *_tiles;
 }
 
-@property(assign,readwrite) struct shared_ptr<vk::LabelMapTile> { struct LabelMapTile {} *x1; struct __shared_weak_count {} *x2; } labelMapTile;
-@property(assign,readonly) float maximumStyleZ;
-@property(assign,readwrite) bool needsRasterization;
-@property(assign,retain) VKRasterTile * rasterized;
+@property (nonatomic) struct shared_ptr<vk::LabelMapTile> { struct LabelMapTile {} *x1; struct __shared_weak_count {} *x2; } labelMapTile;
+@property (nonatomic, readonly) float maximumStyleZ;
+@property (nonatomic) bool needsRasterization;
+@property (nonatomic, retain) VKRasterTile *rasterized;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

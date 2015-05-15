@@ -16,20 +16,20 @@
     NSString *_trendingSearchURLString;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readonly) UIViewController * contentsController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUISearchFieldDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool displaysSearchBarInNavigationBar;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long numberOfSearchResults;
-@property(assign,readonly) UISearchBar * searchBar;
-@property(assign,copy) NSString * searchBarAccessoryText;
-@property(assign,copy) NSString * searchHintsURLString;
-@property(assign,readwrite) bool showsResultsForEmptyField;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * trendingSearchURLString;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) UIViewController *contentsController;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUISearchFieldDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool displaysSearchBarInNavigationBar;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long numberOfSearchResults;
+@property (nonatomic, readonly) UISearchBar *searchBar;
+@property (nonatomic, copy) NSString *searchBarAccessoryText;
+@property (nonatomic, copy) NSString *searchHintsURLString;
+@property (nonatomic) bool showsResultsForEmptyField;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *trendingSearchURLString;
 
 - (void).cxx_destruct;
 - (id)URLForTrendingSearchPageView:(id)arg1;

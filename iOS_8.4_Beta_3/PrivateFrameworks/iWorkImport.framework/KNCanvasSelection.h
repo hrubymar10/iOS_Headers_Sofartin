@@ -7,8 +7,8 @@
     TSUPointerKeyDictionary *mDrawableToSelectedActionGhostIndexesMap;
 }
 
-@property(assign,readonly) NSSet * buildChunks;
-@property(assign,readonly) NSSet * unlockedDrawableInfos;
+@property (nonatomic, readonly) NSSet *buildChunks;
+@property (nonatomic, readonly) NSSet *unlockedDrawableInfos;
 
 + (Class)archivedSelectionClass;
 

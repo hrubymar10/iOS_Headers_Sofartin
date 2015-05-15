@@ -11,12 +11,12 @@
     NSDictionary *_stateInformation;
 }
 
-@property(assign,readwrite) bool devSigned;
-@property(assign,copy) NSString * deviceSerialNumber;
-@property(assign,copy) NSString * productType;
-@property(assign,copy) NSString * secureElementIdentifier;
-@property(assign,copy) NSString * signedAuthToken;
-@property(assign,copy) NSDictionary * stateInformation;
+@property (nonatomic) bool devSigned;
+@property (nonatomic, copy) NSString *deviceSerialNumber;
+@property (nonatomic, copy) NSString *productType;
+@property (nonatomic, copy) NSString *secureElementIdentifier;
+@property (nonatomic, copy) NSString *signedAuthToken;
+@property (nonatomic, copy) NSDictionary *stateInformation;
 
 + (bool)supportsSecureCoding;
 

@@ -10,9 +10,9 @@
     int _vertexIndex;
 }
 
-@property(assign,readwrite) int featureIndex;
-@property(assign,readwrite) bool hasVertexIndex;
-@property(assign,readwrite) int vertexIndex;
+@property (nonatomic) int featureIndex;
+@property (nonatomic) bool hasVertexIndex;
+@property (nonatomic) int vertexIndex;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

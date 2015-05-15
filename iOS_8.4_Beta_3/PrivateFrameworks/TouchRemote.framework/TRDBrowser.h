@@ -11,12 +11,12 @@
     NSMapTable *_netServiceToService;
 }
 
-@property(getter=isBrowsing,assign,readonly) bool browsing;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * services;
-@property(assign,readonly) Class superclass;
+@property (getter=isBrowsing, nonatomic, readonly) bool browsing;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) NSArray *services;
+@property (readonly) Class superclass;
 
 + (id)sharedBrowser;
 

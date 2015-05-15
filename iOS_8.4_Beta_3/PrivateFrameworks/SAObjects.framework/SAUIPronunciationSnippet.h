@@ -4,12 +4,12 @@
 
 @interface SAUIPronunciationSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * cancelCommands;
-@property(assign,copy) NSString * interactionId;
-@property(assign,copy) NSString * orthography;
-@property(assign,copy) NSArray * pronunciations;
-@property(assign,copy) NSArray * selectNoneCommands;
-@property(assign,copy) NSString * selectNoneText;
+@property (nonatomic, copy) NSArray *cancelCommands;
+@property (nonatomic, copy) NSString *interactionId;
+@property (nonatomic, copy) NSString *orthography;
+@property (nonatomic, copy) NSArray *pronunciations;
+@property (nonatomic, copy) NSArray *selectNoneCommands;
+@property (nonatomic, copy) NSString *selectNoneText;
 
 + (id)pronunciationSnippet;
 + (id)pronunciationSnippetWithDictionary:(id)arg1 context:(id)arg2;

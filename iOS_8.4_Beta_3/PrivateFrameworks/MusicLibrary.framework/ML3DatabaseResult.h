@@ -10,8 +10,8 @@
     ML3DatabaseStatement *_statement;
 }
 
-@property(assign,copy) NSString * limitProperty;
-@property(assign,readwrite) long long limitValue;
+@property (nonatomic, copy) NSString *limitProperty;
+@property (nonatomic) long long limitValue;
 
 - (void).cxx_destruct;
 - (id)_statement;

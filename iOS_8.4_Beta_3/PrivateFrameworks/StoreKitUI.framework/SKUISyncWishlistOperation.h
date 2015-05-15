@@ -8,7 +8,7 @@
     id _resultBlock;
 }
 
-@property(assign,copy) id resultBlock;
+@property (copy) id resultBlock;
 
 - (void).cxx_destruct;
 - (bool)_loadRemoteItemsForWishlist:(id)arg1 didChange:(bool*)arg2 error:(id*)arg3;

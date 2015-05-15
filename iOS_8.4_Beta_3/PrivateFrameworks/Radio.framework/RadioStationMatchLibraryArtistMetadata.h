@@ -8,9 +8,9 @@
     NSNumber *_representativeCloudID;
 }
 
-@property(assign,copy) NSString * artistName;
-@property(assign,copy) NSNumber * artistStoreID;
-@property(assign,copy) NSNumber * representativeCloudID;
+@property (nonatomic, copy) NSString *artistName;
+@property (nonatomic, copy) NSNumber *artistStoreID;
+@property (nonatomic, copy) NSNumber *representativeCloudID;
 
 + (id)metadataKey;
 

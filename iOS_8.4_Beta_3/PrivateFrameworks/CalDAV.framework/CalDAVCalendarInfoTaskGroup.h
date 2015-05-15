@@ -6,7 +6,7 @@
     bool _fetchSharees;
 }
 
-@property(assign,readwrite) bool fetchSharees;
+@property (nonatomic) bool fetchSharees;
 
 - (id)_copyContainerParserMappings;
 - (id)_copyContainerWithURL:(id)arg1 andProperties:(id)arg2;

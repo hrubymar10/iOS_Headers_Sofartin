@@ -6,7 +6,7 @@
     NSMutableArray *_publicKeys;
 }
 
-@property(assign,retain) NSMutableArray * publicKeys;
+@property (nonatomic, retain) NSMutableArray *publicKeys;
 
 - (void).cxx_destruct;
 - (void)addPublicKey:(id)arg1;

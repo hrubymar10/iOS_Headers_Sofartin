@@ -30,12 +30,12 @@
     long long _targetDisplay;
 }
 
-@property(getter=isFinishedDecoding,assign,readonly) bool finishedDecoding;
-@property(assign,readonly) bool isDevResource;
-@property(assign,readonly) long long rasterPolygonChangeoverZ;
-@property(assign,readonly) NSString * sheetName;
-@property(assign,readonly) VKPGlobalProperties * styleGlobalProperties;
-@property(assign,readonly) bool supportsNightMode;
+@property (getter=isFinishedDecoding, nonatomic, readonly) bool finishedDecoding;
+@property (nonatomic, readonly) bool isDevResource;
+@property (nonatomic, readonly) long long rasterPolygonChangeoverZ;
+@property (nonatomic, readonly) NSString *sheetName;
+@property (nonatomic, readonly) VKPGlobalProperties *styleGlobalProperties;
+@property (nonatomic, readonly) bool supportsNightMode;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

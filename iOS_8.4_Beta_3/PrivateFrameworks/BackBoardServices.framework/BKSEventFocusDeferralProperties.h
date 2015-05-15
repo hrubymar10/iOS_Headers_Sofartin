@@ -9,10 +9,10 @@
     int _pid;
 }
 
-@property(assign,readonly) NSString * clientID;
-@property(assign,readonly) unsigned int contextID;
-@property(assign,readonly) NSString * displayUUID;
-@property(assign,readonly) int pid;
+@property (nonatomic, readonly) NSString *clientID;
+@property (nonatomic, readonly) unsigned int contextID;
+@property (nonatomic, readonly) NSString *displayUUID;
+@property (nonatomic, readonly) int pid;
 
 + (id)propertiesWithClientID:(id)arg1 displayUUID:(id)arg2 contextID:(unsigned int)arg3;
 + (id)propertiesWithClientID:(id)arg1 pid:(int)arg2 displayUUID:(id)arg3 contextID:(unsigned int)arg4;

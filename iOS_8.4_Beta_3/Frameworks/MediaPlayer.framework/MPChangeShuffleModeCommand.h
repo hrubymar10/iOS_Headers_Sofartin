@@ -6,7 +6,7 @@
     unsigned long long _currentShuffleType;
 }
 
-@property(assign,readwrite) unsigned long long currentShuffleType;
+@property (nonatomic) unsigned long long currentShuffleType;
 
 - (id)_mediaRemoteCommandInfoOptions;
 - (unsigned long long)currentShuffleType;

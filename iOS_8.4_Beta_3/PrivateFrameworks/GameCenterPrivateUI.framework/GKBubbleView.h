@@ -22,21 +22,21 @@
     bool _touchAnimationRunning;
 }
 
-@property(assign,readwrite) bool animating;
-@property(assign,readwrite) double animationAngle;
-@property(assign,readwrite) double animationRadiansPerSecond;
-@property(assign,readwrite) long long bubbleType;
-@property(assign,retain) UIImageView * highlightView;
-@property(assign,retain) UIImageView * imageView;
-@property(assign,readwrite) double moveAnimationAngle;
-@property(assign,readwrite) double moveAnimationRadiansPerSecond;
-@property(assign,readwrite) double moveAnimationScale;
-@property(assign,readwrite) long long numFaces;
-@property(assign,readwrite) long long numVertices;
-@property(assign,readwrite) double touchAnimationAngle;
-@property(assign,readwrite) bool touchAnimationCanEnd;
-@property(assign,readwrite) double touchAnimationElapsed;
-@property(assign,readwrite) bool touchAnimationRunning;
+@property (nonatomic) bool animating;
+@property (nonatomic) double animationAngle;
+@property (nonatomic) double animationRadiansPerSecond;
+@property (nonatomic) long long bubbleType;
+@property (nonatomic, retain) UIImageView *highlightView;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic) double moveAnimationAngle;
+@property (nonatomic) double moveAnimationRadiansPerSecond;
+@property (nonatomic) double moveAnimationScale;
+@property (nonatomic) long long numFaces;
+@property (nonatomic) long long numVertices;
+@property (nonatomic) double touchAnimationAngle;
+@property (nonatomic) bool touchAnimationCanEnd;
+@property (nonatomic) double touchAnimationElapsed;
+@property (nonatomic) bool touchAnimationRunning;
 
 - (bool)animating;
 - (double)animationAngle;

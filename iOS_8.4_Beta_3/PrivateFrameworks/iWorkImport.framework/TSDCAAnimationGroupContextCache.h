@@ -7,8 +7,8 @@
     NSArray *_animations;
 }
 
-@property(assign,readonly) NSArray * animationContextCaches;
-@property(assign,readonly) NSArray * animations;
+@property (nonatomic, readonly) NSArray *animationContextCaches;
+@property (nonatomic, readonly) NSArray *animations;
 
 - (id)animationContextCaches;
 - (id)animations;

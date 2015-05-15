@@ -6,7 +6,7 @@
     _HKEmergencyContact *_contact;
 }
 
-@property(assign,retain) _HKEmergencyContact * contact;
+@property (nonatomic, retain) _HKEmergencyContact *contact;
 
 - (void).cxx_destruct;
 - (void)_labelTapped:(id)arg1;

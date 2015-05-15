@@ -12,12 +12,12 @@
     bool _manuallyTriggered;
 }
 
-@property(assign,retain) NSString * conversationId;
-@property(assign,readwrite) unsigned int fullSyncVersion;
-@property(assign,readonly) bool hasConversationId;
-@property(assign,readwrite) bool hasFullSyncVersion;
-@property(assign,readwrite) bool hasManuallyTriggered;
-@property(assign,readwrite) bool manuallyTriggered;
+@property (nonatomic, retain) NSString *conversationId;
+@property (nonatomic) unsigned int fullSyncVersion;
+@property (nonatomic, readonly) bool hasConversationId;
+@property (nonatomic) bool hasFullSyncVersion;
+@property (nonatomic) bool hasManuallyTriggered;
+@property (nonatomic) bool manuallyTriggered;
 
 - (void).cxx_destruct;
 - (id)conversationId;

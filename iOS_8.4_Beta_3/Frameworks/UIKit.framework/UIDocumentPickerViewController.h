@@ -11,12 +11,12 @@
     <UIDocumentPickerDelegate> *_weak_delegate;
 }
 
-@property(assign,readwrite) <UIDocumentPickerDelegate> * delegate;
-@property(assign,readwrite) unsigned long long documentPickerMode;
-@property(getter=_remoteViewController,setter=_setRemoteViewController:,assign,retain) _UIDocumentPickerRemoteViewController * remoteViewController;
-@property(assign,retain) _UIRemoteViewService * remoteViewService;
-@property(assign,retain) NSMutableArray * stitchingTokens;
-@property(assign,copy) NSURL * uploadURL;
+@property (nonatomic) <UIDocumentPickerDelegate> *delegate;
+@property (nonatomic) unsigned long long documentPickerMode;
+@property (getter=_remoteViewController, setter=_setRemoteViewController:, nonatomic, retain) _UIDocumentPickerRemoteViewController *remoteViewController;
+@property (nonatomic, retain) _UIRemoteViewService *remoteViewService;
+@property (nonatomic, retain) NSMutableArray *stitchingTokens;
+@property (nonatomic, copy) NSURL *uploadURL;
 
 + (id)_extension;
 + (id)_identifier;

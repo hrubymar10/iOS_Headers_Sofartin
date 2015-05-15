@@ -12,14 +12,14 @@
     _UIKeyboardLayoutAlignmentView *keyboardLayoutAlignmentView;
 }
 
-@property(getter=_isChromeHidden,setter=_setChromeHidden:,assign,readwrite) bool _chromeHidden;
-@property(assign,readonly) UIView * _dimmingView;
-@property(setter=_setIsCurrentContext:,assign,readwrite) bool _isCurrentContext;
-@property(setter=_setShouldRespectNearestCurrentContextPresenter:,assign,readwrite) bool _shouldRespectNearestCurrentContextPresenter;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (getter=_isChromeHidden, setter=_setChromeHidden:, nonatomic) bool _chromeHidden;
+@property (readonly) UIView *_dimmingView;
+@property (setter=_setIsCurrentContext:) bool _isCurrentContext;
+@property (setter=_setShouldRespectNearestCurrentContextPresenter:) bool _shouldRespectNearestCurrentContextPresenter;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_containerViewWillLayoutSubviews;
 - (id)_dimmingView;

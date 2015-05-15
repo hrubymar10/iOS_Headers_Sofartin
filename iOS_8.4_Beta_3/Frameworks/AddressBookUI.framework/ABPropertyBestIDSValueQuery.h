@@ -9,11 +9,11 @@
     NSMutableArray *_validIDSItems;
 }
 
-@property(assign,readonly) ABPropertyGroupItem * bestIDSProperty;
-@property(assign,readwrite) <ABPropertyBestIDSValueQueryDelegate> * delegate;
-@property(assign,retain) ABPropertyIDSRequest * idsRequest;
-@property(assign,retain) NSArray * propertyItems;
-@property(assign,retain) NSMutableArray * validIDSItems;
+@property (readonly) ABPropertyGroupItem *bestIDSProperty;
+@property (nonatomic) <ABPropertyBestIDSValueQueryDelegate> *delegate;
+@property (nonatomic, retain) ABPropertyIDSRequest *idsRequest;
+@property (nonatomic, retain) NSArray *propertyItems;
+@property (retain) NSMutableArray *validIDSItems;
 
 - (id)bestIDSProperty;
 - (void)cancel;

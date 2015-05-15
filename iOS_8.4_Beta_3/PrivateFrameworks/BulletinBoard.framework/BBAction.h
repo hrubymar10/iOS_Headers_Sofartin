@@ -20,21 +20,21 @@
     bool _shouldDismissBulletin;
 }
 
-@property(assign,readwrite) long long actionType;
-@property(assign,copy) NSDictionary * activatePluginContext;
-@property(assign,copy) NSString * activatePluginName;
-@property(assign,readwrite) unsigned long long activationMode;
-@property(assign,copy) BBAppearance * appearance;
-@property(getter=isAuthenticationRequired,assign,readwrite) bool authenticationRequired;
-@property(assign,readwrite) bool canBypassPinLock;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) id internalBlock;
-@property(assign,copy) NSString * launchBundleID;
-@property(assign,readwrite) bool launchCanBypassPinLock;
-@property(assign,copy) NSURL * launchURL;
-@property(assign,copy) NSString * remoteServiceBundleIdentifier;
-@property(assign,copy) NSString * remoteViewControllerClassName;
-@property(assign,readwrite) bool shouldDismissBulletin;
+@property (nonatomic) long long actionType;
+@property (nonatomic, copy) NSDictionary *activatePluginContext;
+@property (nonatomic, copy) NSString *activatePluginName;
+@property (nonatomic) unsigned long long activationMode;
+@property (nonatomic, copy) BBAppearance *appearance;
+@property (getter=isAuthenticationRequired, nonatomic) bool authenticationRequired;
+@property (nonatomic) bool canBypassPinLock;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) id internalBlock;
+@property (nonatomic, copy) NSString *launchBundleID;
+@property (nonatomic) bool launchCanBypassPinLock;
+@property (nonatomic, copy) NSURL *launchURL;
+@property (nonatomic, copy) NSString *remoteServiceBundleIdentifier;
+@property (nonatomic, copy) NSString *remoteViewControllerClassName;
+@property (nonatomic) bool shouldDismissBulletin;
 
 + (id)action;
 + (id)actionWithActivatePluginName:(id)arg1 activationContext:(id)arg2;

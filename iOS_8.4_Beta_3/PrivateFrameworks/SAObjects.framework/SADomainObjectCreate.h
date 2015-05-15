@@ -4,11 +4,11 @@
 
 @interface SADomainObjectCreate : SADomainCommand <SADomainObjectCommand>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SADomainObject * object;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SADomainObject *object;
+@property (readonly) Class superclass;
 
 + (id)domainObjectCreate;
 + (id)domainObjectCreateWithDictionary:(id)arg1 context:(id)arg2;

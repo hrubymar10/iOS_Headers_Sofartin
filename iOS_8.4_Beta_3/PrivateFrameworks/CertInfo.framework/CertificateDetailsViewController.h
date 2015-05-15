@@ -8,9 +8,9 @@
     NSArray *_keyValueSections;
 }
 
-@property(assign,retain) id certificateTrust;
-@property(assign,retain) NSArray * keyValueSectionTitles;
-@property(assign,retain) NSArray * keyValueSections;
+@property (nonatomic, retain) id certificateTrust;
+@property (nonatomic, retain) NSArray *keyValueSectionTitles;
+@property (nonatomic, retain) NSArray *keyValueSections;
 
 - (void).cxx_destruct;
 - (void)_setup;

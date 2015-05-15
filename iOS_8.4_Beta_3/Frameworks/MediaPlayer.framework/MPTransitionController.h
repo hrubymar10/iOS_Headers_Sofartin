@@ -17,13 +17,13 @@
     NSMutableSet *_viewsToFadeOut;
 }
 
-@property(assign,readwrite) float duration;
-@property(assign,readwrite) long long fromInterfaceOrientation;
-@property(assign,retain) MPViewController * fromViewController;
-@property(assign,retain) UIView * rootView;
-@property(assign,retain) UIViewController * toContainerViewController;
-@property(assign,readwrite) long long toInterfaceOrientation;
-@property(assign,retain) MPViewController * toViewController;
+@property (nonatomic) float duration;
+@property (nonatomic) long long fromInterfaceOrientation;
+@property (nonatomic, retain) MPViewController *fromViewController;
+@property (nonatomic, retain) UIView *rootView;
+@property (nonatomic, retain) UIViewController *toContainerViewController;
+@property (nonatomic) long long toInterfaceOrientation;
+@property (nonatomic, retain) MPViewController *toViewController;
 
 - (void).cxx_destruct;
 - (void)addObserver:(id)arg1 didEndSelector:(SEL)arg2;

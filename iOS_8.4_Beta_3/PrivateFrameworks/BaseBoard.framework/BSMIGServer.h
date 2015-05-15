@@ -11,8 +11,8 @@
     struct _opaque_pthread_t { long long x1; struct __darwin_pthread_handler_rec {} *x2; BOOL x3[8176]; } *_thread;
 }
 
-@property(assign,readonly) NSString * threadName;
-@property(assign,readwrite) int threadPriority;
+@property (nonatomic, readonly) NSString *threadName;
+@property (nonatomic) int threadPriority;
 
 - (unsigned int)_createPortNamed:(id)arg1;
 - (void)_installAutoreleasePoolsIfNecessaryForMode:(struct __CFString { }*)arg1;

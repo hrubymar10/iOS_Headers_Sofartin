@@ -15,13 +15,13 @@
     id _regionListChangeObserver;
 }
 
-@property(assign,copy) NSString * currentPhoneValue;
-@property(assign,copy) NSString * currentRegionID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * regionData;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *currentPhoneValue;
+@property (nonatomic, copy) NSString *currentRegionID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *regionData;
+@property (readonly) Class superclass;
 
 - (void)_buildCountryFieldSpecifierCache:(id)arg1;
 - (void)_buildPhoneNumberSpecifierCache:(id)arg1;

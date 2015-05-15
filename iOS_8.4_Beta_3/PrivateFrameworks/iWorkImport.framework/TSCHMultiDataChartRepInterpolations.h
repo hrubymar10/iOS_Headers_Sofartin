@@ -7,8 +7,8 @@
     CAMediaTimingFunction *mOverallTimingFunction;
 }
 
-@property(assign,readonly) CAMediaTimingFunction * individual;
-@property(assign,readonly) CAMediaTimingFunction * overall;
+@property (nonatomic, readonly) CAMediaTimingFunction *individual;
+@property (nonatomic, readonly) CAMediaTimingFunction *overall;
 
 + (id)interpolationsWithOverallTimingFunction:(id)arg1 individualTimingFunction:(id)arg2;
 

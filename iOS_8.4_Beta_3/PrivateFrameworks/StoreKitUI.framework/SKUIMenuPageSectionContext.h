@@ -7,7 +7,7 @@
     long long _selectedIndex;
 }
 
-@property(assign,readwrite) long long selectedIndex;
+@property (nonatomic) long long selectedIndex;
 
 - (void).cxx_destruct;
 - (id)sectionsForIndex:(long long)arg1;

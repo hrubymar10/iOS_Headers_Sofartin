@@ -10,15 +10,15 @@
     unsigned long long _offsetIntoSymbolOwner;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long length;
-@property(assign,readonly) unsigned long long offsetIntoSymbolOwner;
-@property(assign,readonly) unsigned int sourceFileColumnNumber;
-@property(assign,readonly) unsigned int sourceFileLineNumber;
-@property(assign,readonly) NSString * sourceFileName;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long length;
+@property (readonly) unsigned long long offsetIntoSymbolOwner;
+@property (readonly) unsigned int sourceFileColumnNumber;
+@property (readonly) unsigned int sourceFileLineNumber;
+@property (readonly) NSString *sourceFileName;
+@property (readonly) Class superclass;
 
 + (id)classDictionaryKey;
 + (id)newInstanceWithoutReferencesFromBufferPosition:(const void*)arg1;

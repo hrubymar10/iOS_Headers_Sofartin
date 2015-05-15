@@ -13,19 +13,19 @@
     NSNumber *_shouldResetUserOrdering;
 }
 
-@property(assign,readonly) NSArray * allSections;
-@property(getter=isCacheable,assign,readwrite) bool cacheable;
-@property(assign,retain) UIImage * moreListImage;
-@property(assign,readonly) SSItemImageCollection * moreListImageCollection;
-@property(assign,retain) UIImage * moreListSelectedImage;
-@property(assign,readonly) NSString * moreListTitle;
-@property(assign,copy) NSDictionary * rawResponseDictionary;
-@property(assign,readonly) long long responseType;
-@property(assign,readonly) NSArray * sections;
-@property(assign,readonly) NSDictionary * sectionsDictionary;
-@property(assign,readwrite) bool shouldResetUserOrdering;
-@property(assign,copy) NSString * storeFrontIdentifier;
-@property(assign,readonly) NSString * versionString;
+@property (nonatomic, readonly) NSArray *allSections;
+@property (getter=isCacheable, nonatomic) bool cacheable;
+@property (nonatomic, retain) UIImage *moreListImage;
+@property (nonatomic, readonly) SSItemImageCollection *moreListImageCollection;
+@property (nonatomic, retain) UIImage *moreListSelectedImage;
+@property (nonatomic, readonly) NSString *moreListTitle;
+@property (nonatomic, readonly, copy) NSDictionary *rawResponseDictionary;
+@property (nonatomic, readonly) long long responseType;
+@property (nonatomic, readonly) NSArray *sections;
+@property (nonatomic, readonly) NSDictionary *sectionsDictionary;
+@property (nonatomic) bool shouldResetUserOrdering;
+@property (nonatomic, copy) NSString *storeFrontIdentifier;
+@property (nonatomic, readonly) NSString *versionString;
 
 + (id)lastCachedVersionIdentifier;
 + (id)sectionsCacheDirectory;

@@ -34,16 +34,16 @@
     } _readIdentifiers;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool didFinishResolvingReferences;
-@property(assign,readonly) unsigned long long fileFormatVersion;
-@property(assign,readonly) bool hasDocumentVersionUUID;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isCrossAppPaste;
-@property(assign,readonly) bool isCrossDocumentPaste;
-@property(assign,readonly) bool isFromCopy;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool didFinishResolvingReferences;
+@property (nonatomic, readonly) unsigned long long fileFormatVersion;
+@property (nonatomic, readonly) bool hasDocumentVersionUUID;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isCrossAppPaste;
+@property (nonatomic, readonly) bool isCrossDocumentPaste;
+@property (nonatomic, readonly) bool isFromCopy;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -9,10 +9,10 @@
     bool _useWelcomeSpringValues;
 }
 
-@property(assign,readwrite) double additionalDelay;
-@property(assign,readwrite) double delayIncrement;
-@property(assign,readwrite) long long focusBubbleType;
-@property(assign,readwrite) bool useWelcomeSpringValues;
+@property (nonatomic) double additionalDelay;
+@property (nonatomic) double delayIncrement;
+@property (nonatomic) long long focusBubbleType;
+@property (nonatomic) bool useWelcomeSpringValues;
 
 - (double)additionalDelay;
 - (void)animateTransition:(id)arg1;

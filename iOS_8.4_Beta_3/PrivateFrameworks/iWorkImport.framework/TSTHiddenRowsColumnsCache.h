@@ -11,19 +11,19 @@
     TSTHiddenStateIndexSet *_rowsVisible;
 }
 
-@property(assign,retain) NSMutableIndexSet * columnsInvalid;
-@property(assign,retain) TSTHiddenStateIndexSet * columnsVisible;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long rowMarkIndex;
-@property(assign,retain) NSMutableIndexSet * rowsInvalid;
-@property(assign,retain) TSTHiddenStateIndexSet * rowsUserVisible;
-@property(assign,retain) TSTHiddenStateIndexSet * rowsVisible;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSIndexSet * userVisibleRowIndices;
-@property(assign,readonly) NSIndexSet * visibleColumnIndices;
-@property(assign,readonly) NSIndexSet * visibleRowIndices;
+@property (nonatomic, retain) NSMutableIndexSet *columnsInvalid;
+@property (nonatomic, retain) TSTHiddenStateIndexSet *columnsVisible;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long rowMarkIndex;
+@property (nonatomic, retain) NSMutableIndexSet *rowsInvalid;
+@property (nonatomic, retain) TSTHiddenStateIndexSet *rowsUserVisible;
+@property (nonatomic, retain) TSTHiddenStateIndexSet *rowsVisible;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSIndexSet *userVisibleRowIndices;
+@property (nonatomic, readonly) NSIndexSet *visibleColumnIndices;
+@property (nonatomic, readonly) NSIndexSet *visibleRowIndices;
 
 - (bool)anyColumnsHiddenInCellRange:(struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; })arg1;
 - (bool)anyRowsHiddenInCellRange:(struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; })arg1;

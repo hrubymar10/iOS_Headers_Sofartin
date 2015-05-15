@@ -10,15 +10,15 @@
     PHAssetCollection *_assetCollection;
 }
 
-@property(setter=_setHasAccurateCounts:,assign,readwrite) bool _hasAccurateCounts;
-@property(setter=_setCountingAssetTypes:,assign,readwrite) bool _isCountingAssetTypes;
-@property(assign,retain) NSObject<PLAlbumProtocol> * album;
-@property(assign,readonly) PHAssetCollection * assetCollection;
-@property(assign,readonly) PHFetchResult * assetCollectionAssets;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (setter=_setHasAccurateCounts:, nonatomic) bool _hasAccurateCounts;
+@property (setter=_setCountingAssetTypes:, nonatomic) bool _isCountingAssetTypes;
+@property (nonatomic, retain) NSObject<PLAlbumProtocol> *album;
+@property (nonatomic, readonly) PHAssetCollection *assetCollection;
+@property (nonatomic, readonly) PHFetchResult *assetCollectionAssets;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_countAssetTypesIfNeeded;

@@ -26,27 +26,27 @@
     unsigned int _turnNumber;
 }
 
-@property(assign,retain) NSString * bundleID;
-@property(assign,retain) NSString * bundleVersion;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,readwrite) BOOL currentParticipant;
-@property(assign,retain) GKPlayerInternal * currentPlayer;
-@property(assign,retain) NSDate * deletionDate;
-@property(assign,retain) NSArray * exchanges;
-@property(assign,retain) GKGameInternal * game;
-@property(assign,retain) NSDate * lastTurnDate;
-@property(assign,retain) NSString * lastTurnPlayerID;
-@property(assign,retain) NSDictionary * localizableMessage;
-@property(assign,retain) NSData * matchData;
-@property(assign,retain) NSString * matchDataVersion;
-@property(assign,retain) NSString * matchID;
-@property(assign,readwrite) unsigned char maxPlayers;
-@property(assign,retain) NSString * message;
-@property(assign,readwrite) unsigned char minPlayers;
-@property(assign,retain) NSArray * participants;
-@property(assign,retain) NSString * reason;
-@property(assign,retain) NSString * status;
-@property(assign,readwrite) unsigned int turnNumber;
+@property (nonatomic, retain) NSString *bundleID;
+@property (nonatomic, retain) NSString *bundleVersion;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic) BOOL currentParticipant;
+@property (nonatomic, retain) GKPlayerInternal *currentPlayer;
+@property (nonatomic, retain) NSDate *deletionDate;
+@property (nonatomic, retain) NSArray *exchanges;
+@property (nonatomic, retain) GKGameInternal *game;
+@property (nonatomic, retain) NSDate *lastTurnDate;
+@property (nonatomic, retain) NSString *lastTurnPlayerID;
+@property (nonatomic, retain) NSDictionary *localizableMessage;
+@property (nonatomic, retain) NSData *matchData;
+@property (nonatomic, retain) NSString *matchDataVersion;
+@property (nonatomic, retain) NSString *matchID;
+@property (nonatomic) unsigned char maxPlayers;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic) unsigned char minPlayers;
+@property (nonatomic, retain) NSArray *participants;
+@property (nonatomic, retain) NSString *reason;
+@property (nonatomic, retain) NSString *status;
+@property (nonatomic) unsigned int turnNumber;
 
 + (id)secureCodedPropertyKeys;
 

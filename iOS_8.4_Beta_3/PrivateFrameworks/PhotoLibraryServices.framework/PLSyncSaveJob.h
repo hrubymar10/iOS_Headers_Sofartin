@@ -19,20 +19,20 @@
     NSString *uuid;
 }
 
-@property(assign,copy) NSSet * albumURIs;
-@property(assign,copy) NSDate * cleanupBeforeDate;
-@property(assign,readwrite) bool cleanupSyncState;
-@property(assign,copy) NSDate * creationDate;
-@property(assign,retain) NSArray * facesInfo;
-@property(assign,copy) id finishedBlock;
-@property(assign,readwrite) bool isSyncComplete;
-@property(assign,readwrite) bool isVideo;
-@property(assign,copy) CLLocation * location;
-@property(assign,copy) NSDate * modificationDate;
-@property(assign,retain) NSURL * originalAssetURL;
-@property(assign,retain) NSString * originalFileName;
-@property(assign,retain) NSNumber * sortToken;
-@property(assign,copy) NSString * uuid;
+@property (nonatomic, copy) NSSet *albumURIs;
+@property (nonatomic, copy) NSDate *cleanupBeforeDate;
+@property (nonatomic) bool cleanupSyncState;
+@property (nonatomic, copy) NSDate *creationDate;
+@property (nonatomic, retain) NSArray *facesInfo;
+@property (nonatomic, copy) id finishedBlock;
+@property (nonatomic) bool isSyncComplete;
+@property (nonatomic) bool isVideo;
+@property (nonatomic, copy) CLLocation *location;
+@property (nonatomic, copy) NSDate *modificationDate;
+@property (nonatomic, retain) NSURL *originalAssetURL;
+@property (nonatomic, retain) NSString *originalFileName;
+@property (nonatomic, retain) NSNumber *sortToken;
+@property (nonatomic, copy) NSString *uuid;
 
 - (id)albumURIs;
 - (id)cleanupBeforeDate;

@@ -6,7 +6,7 @@
     IMHandle *_handle;
 }
 
-@property(assign,retain) IMHandle * handle;
+@property (nonatomic, readonly, retain) IMHandle *handle;
 
 - (Class)__ck_chatItemClass;
 - (id)_initWithItem:(id)arg1 handle:(id)arg2;

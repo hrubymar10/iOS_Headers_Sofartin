@@ -9,10 +9,10 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readonly) UIButton * giftAgainButton;
-@property(assign,retain) UIImage * image;
-@property(assign,retain) SKUIGiftItemView * itemView;
-@property(assign,copy) NSString * title;
+@property (nonatomic, readonly) UIButton *giftAgainButton;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) SKUIGiftItemView *itemView;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)giftAgainButton;

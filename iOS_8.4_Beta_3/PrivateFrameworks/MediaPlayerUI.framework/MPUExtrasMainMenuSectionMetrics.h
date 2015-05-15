@@ -21,15 +21,15 @@
     } _totalFittingSize;
 }
 
-@property(assign,readwrite) <MPUExtrasMainMenuSectionMetricsDataSource> * dataSource;
-@property(assign,readwrite) double desiredCellSpacing;
-@property(assign,retain) UIFontDescriptor * desiredFontDescriptor;
-@property(assign,readwrite) double desiredWidth;
-@property(assign,readonly) double fittingCellSpacing;
-@property(assign,readonly) UIFontDescriptor * fittingFontDescriptor;
-@property(assign,readwrite) double minimumCellSpacing;
-@property(assign,retain) UIFontDescriptor * minimumFontDescriptor;
-@property(assign,readonly) struct CGSize { double x1; double x2; } totalFittingSize;
+@property (nonatomic) <MPUExtrasMainMenuSectionMetricsDataSource> *dataSource;
+@property (nonatomic) double desiredCellSpacing;
+@property (nonatomic, retain) UIFontDescriptor *desiredFontDescriptor;
+@property (nonatomic) double desiredWidth;
+@property (nonatomic, readonly) double fittingCellSpacing;
+@property (nonatomic, readonly) UIFontDescriptor *fittingFontDescriptor;
+@property (nonatomic) double minimumCellSpacing;
+@property (nonatomic, retain) UIFontDescriptor *minimumFontDescriptor;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } totalFittingSize;
 
 - (void).cxx_destruct;
 - (struct CGSize { double x1; double x2; })_horizontalFittingSizeForFontDescriptor:(id)arg1 gutterSize:(double)arg2 itemCount:(long long)arg3 itemSizes:(out struct CGSize { double x1; double x2; }*)arg4;

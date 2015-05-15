@@ -6,12 +6,12 @@
     NSMutableDictionary *_dictionary;
 }
 
-@property(assign,copy) NSArray * castMembers;
-@property(assign,copy) NSString * copyrightWarning;
-@property(assign,copy) NSArray * directors;
-@property(assign,copy) NSArray * producers;
-@property(assign,copy) NSArray * screenwriters;
-@property(assign,copy) NSString * studioName;
+@property (nonatomic, copy) NSArray *castMembers;
+@property (nonatomic, copy) NSString *copyrightWarning;
+@property (nonatomic, copy) NSArray *directors;
+@property (nonatomic, copy) NSArray *producers;
+@property (nonatomic, copy) NSArray *screenwriters;
+@property (nonatomic, copy) NSString *studioName;
 
 - (void).cxx_destruct;
 - (void)_setValue:(id)arg1 forKey:(id)arg2;

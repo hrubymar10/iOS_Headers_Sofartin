@@ -7,8 +7,8 @@
     NSString *_text;
 }
 
-@property(assign,retain) <IKAppKeyboardBridge> * appBridge;
-@property(assign,copy) NSString * text;
+@property (nonatomic, retain) <IKAppKeyboardBridge> *appBridge;
+@property (nonatomic, copy) NSString *text;
 
 - (void).cxx_destruct;
 - (id)appBridge;

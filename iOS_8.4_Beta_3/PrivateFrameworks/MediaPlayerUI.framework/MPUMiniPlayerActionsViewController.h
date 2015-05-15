@@ -8,8 +8,8 @@
     MPAVItem *_item;
 }
 
-@property(assign,readwrite) <MPUMiniPlayerActionsViewControllerDelegate> * delegate;
-@property(assign,readonly) MPAVItem * item;
+@property (nonatomic) <MPUMiniPlayerActionsViewControllerDelegate> *delegate;
+@property (nonatomic, readonly) MPAVItem *item;
 
 + (id)_actionsForItem:(id)arg1;
 + (id)_imageForAction:(long long)arg1;

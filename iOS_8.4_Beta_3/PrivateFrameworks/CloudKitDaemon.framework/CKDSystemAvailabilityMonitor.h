@@ -8,9 +8,9 @@
     NSMutableSet *_watchers;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * availabilityQueue;
-@property(assign,readwrite) bool systemIsAvailable;
-@property(assign,retain) NSMutableSet * watchers;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *availabilityQueue;
+@property bool systemIsAvailable;
+@property (nonatomic, retain) NSMutableSet *watchers;
 
 + (id)sharedMonitor;
 

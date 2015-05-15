@@ -32,12 +32,12 @@
     } mTiming;
 }
 
-@property(assign,readwrite) double goalTime;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) bool passed;
-@property(assign,readwrite) double precision;
-@property(assign,readwrite) bool quiet;
-@property(assign,readwrite) struct TSUOpstat_s { bool x1; unsigned long long x2; struct timeval { long long x_3_1_1; int x_3_1_2; } x3; struct timeval { long long x_4_1_1; int x_4_1_2; } x4; struct timeval { long long x_5_1_1; int x_5_1_2; } x5; struct timeval { long long x_6_1_1; int x_6_1_2; } x6; } timing;
+@property (nonatomic) double goalTime;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) bool passed;
+@property (nonatomic) double precision;
+@property (nonatomic) bool quiet;
+@property (nonatomic) struct TSUOpstat_s { bool x1; unsigned long long x2; struct timeval { long long x_3_1_1; int x_3_1_2; } x3; struct timeval { long long x_4_1_1; int x_4_1_2; } x4; struct timeval { long long x_5_1_1; int x_5_1_2; } x5; struct timeval { long long x_6_1_1; int x_6_1_2; } x6; } timing;
 
 + (id)csvHeader;
 

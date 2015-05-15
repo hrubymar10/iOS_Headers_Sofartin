@@ -15,11 +15,11 @@
     NSString *_typeIdentifier;
 }
 
-@property(assign,copy) NSURL * destinationURL;
-@property(assign,readonly) NSArray * failedIdentifiers;
-@property(assign,copy) NSArray * localIdentifiers;
-@property(assign,copy) NSString * progressIdentifier;
-@property(assign,copy) NSString * typeIdentifier;
+@property (nonatomic, copy) NSURL *destinationURL;
+@property (nonatomic, readonly) NSArray *failedIdentifiers;
+@property (nonatomic, copy) NSArray *localIdentifiers;
+@property (nonatomic, copy) NSString *progressIdentifier;
+@property (nonatomic, copy) NSString *typeIdentifier;
 
 + (bool)shouldCoalesceTasks;
 + (id)taskIdentifier;

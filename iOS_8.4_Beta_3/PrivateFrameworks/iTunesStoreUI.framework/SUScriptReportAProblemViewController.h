@@ -4,7 +4,7 @@
 
 @interface SUScriptReportAProblemViewController : SUScriptViewController
 
-@property(assign,readonly) NSNumber * adamID;
+@property (readonly) NSNumber *adamID;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

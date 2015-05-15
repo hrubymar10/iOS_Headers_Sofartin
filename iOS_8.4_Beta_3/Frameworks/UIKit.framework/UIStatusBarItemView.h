@@ -14,11 +14,11 @@
     bool _visible;
 }
 
-@property(assign,readwrite) bool allowsUpdates;
-@property(assign,readonly) UIStatusBarForegroundStyleAttributes * foregroundStyle;
-@property(assign,readonly) UIStatusBarItem * item;
-@property(assign,readwrite) UIStatusBarLayoutManager * layoutManager;
-@property(getter=isVisible,assign,readwrite) bool visible;
+@property (nonatomic) bool allowsUpdates;
+@property (nonatomic, readonly) UIStatusBarForegroundStyleAttributes *foregroundStyle;
+@property (nonatomic, readonly) UIStatusBarItem *item;
+@property (nonatomic) UIStatusBarLayoutManager *layoutManager;
+@property (getter=isVisible, nonatomic) bool visible;
 
 + (id)createViewForItem:(id)arg1 withData:(id)arg2 actions:(int)arg3 foregroundStyle:(id)arg4;
 

@@ -21,22 +21,22 @@
     NSLayoutConstraint *_topPaddingCn;
 }
 
-@property(assign,copy) RCAVState * AVState;
-@property(assign,readonly) UIColor * bottomSeparatorLineColor;
-@property(assign,readwrite) bool canEnableCaptureButton;
-@property(assign,readwrite) bool canEnableDoneButton;
-@property(assign,readwrite) bool canEnablePreviewButton;
-@property(assign,readwrite) bool canRecord;
-@property(assign,readwrite) long long controlsConfiguration;
-@property(assign,readwrite) <RCControlsViewDelegate> * delegate;
-@property(assign,readonly) UIButton * doneButton;
-@property(assign,retain) RCLayoutMetrics * layoutMetrics;
-@property(assign,readonly) UIButton * leftPlayStateButton;
-@property(assign,readonly) UIAlertController * noMicAlertViewController;
-@property(assign,readonly) RCRecorderStateButton * recordingStateButton;
-@property(assign,readwrite) bool showsBottomSeparatorLine;
-@property(assign,readwrite) double topPadding;
-@property(assign,readonly) NSLayoutConstraint * topPaddingCn;
+@property (nonatomic, copy) RCAVState *AVState;
+@property (nonatomic, readonly) UIColor *bottomSeparatorLineColor;
+@property (nonatomic) bool canEnableCaptureButton;
+@property (nonatomic) bool canEnableDoneButton;
+@property (nonatomic) bool canEnablePreviewButton;
+@property (nonatomic) bool canRecord;
+@property (nonatomic) long long controlsConfiguration;
+@property (nonatomic) <RCControlsViewDelegate> *delegate;
+@property (nonatomic, readonly) UIButton *doneButton;
+@property (nonatomic, retain) RCLayoutMetrics *layoutMetrics;
+@property (nonatomic, readonly) UIButton *leftPlayStateButton;
+@property (nonatomic, readonly) UIAlertController *noMicAlertViewController;
+@property (nonatomic, readonly) RCRecorderStateButton *recordingStateButton;
+@property (nonatomic) bool showsBottomSeparatorLine;
+@property (nonatomic) double topPadding;
+@property (nonatomic, readonly) NSLayoutConstraint *topPaddingCn;
 
 - (void).cxx_destruct;
 - (id)AVState;

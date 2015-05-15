@@ -7,7 +7,7 @@
     TPDocumentRoot *_documentRoot;
 }
 
-@property(assign,readonly) <TSWPFootnoteMarkProvider> * footnoteMarkProvider;
+@property (nonatomic, readonly) <TSWPFootnoteMarkProvider> *footnoteMarkProvider;
 
 - (struct _NSRange { unsigned long long x1; unsigned long long x2; })endnoteRangeForSectionCharRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1 isLastSection:(bool)arg2;
 - (struct _NSRange { unsigned long long x1; unsigned long long x2; })footnoteLayoutRangeForPageCharRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1;

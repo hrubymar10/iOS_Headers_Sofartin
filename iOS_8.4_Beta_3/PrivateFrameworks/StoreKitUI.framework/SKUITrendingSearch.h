@@ -7,8 +7,8 @@
     NSString *_term;
 }
 
-@property(assign,retain) NSString * URLString;
-@property(assign,retain) NSString * term;
+@property (nonatomic, retain) NSString *URLString;
+@property (nonatomic, retain) NSString *term;
 
 - (void).cxx_destruct;
 - (id)URLString;

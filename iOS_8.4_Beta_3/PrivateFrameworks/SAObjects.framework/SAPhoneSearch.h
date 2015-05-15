@@ -4,16 +4,16 @@
 
 @interface SAPhoneSearch : SADomainCommand
 
-@property(assign,copy) NSArray * contacts;
-@property(assign,copy) NSDate * end;
-@property(assign,copy) NSNumber * faceTime;
-@property(assign,copy) NSNumber * faceTimeAudio;
-@property(assign,copy) NSNumber * isNew;
-@property(assign,copy) NSNumber * last;
-@property(assign,copy) NSNumber * missed;
-@property(assign,copy) NSNumber * outgoing;
-@property(assign,copy) NSDate * start;
-@property(assign,copy) NSNumber * voiceMail;
+@property (nonatomic, copy) NSArray *contacts;
+@property (nonatomic, copy) NSDate *end;
+@property (nonatomic, copy) NSNumber *faceTime;
+@property (nonatomic, copy) NSNumber *faceTimeAudio;
+@property (nonatomic, copy) NSNumber *isNew;
+@property (nonatomic, copy) NSNumber *last;
+@property (nonatomic, copy) NSNumber *missed;
+@property (nonatomic, copy) NSNumber *outgoing;
+@property (nonatomic, copy) NSDate *start;
+@property (nonatomic, copy) NSNumber *voiceMail;
 
 + (id)search;
 + (id)searchWithDictionary:(id)arg1 context:(id)arg2;

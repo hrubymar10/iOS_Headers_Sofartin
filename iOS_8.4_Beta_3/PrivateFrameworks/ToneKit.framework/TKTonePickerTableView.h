@@ -6,7 +6,7 @@
     <TKTonePickerTableViewLayoutMarginsObserver> *_layoutMarginsObserver;
 }
 
-@property(assign,readwrite) <TKTonePickerTableViewLayoutMarginsObserver> * layoutMarginsObserver;
+@property (nonatomic) <TKTonePickerTableViewLayoutMarginsObserver> *layoutMarginsObserver;
 
 - (void)layoutMarginsDidChange;
 - (id)layoutMarginsObserver;

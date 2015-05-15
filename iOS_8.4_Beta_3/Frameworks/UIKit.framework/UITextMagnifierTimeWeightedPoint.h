@@ -13,7 +13,7 @@
     } m_points;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } weightedPoint;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } weightedPoint;
 
 - (void)addPoint:(struct CGPoint { double x1; double x2; })arg1;
 - (void)clearHistory;

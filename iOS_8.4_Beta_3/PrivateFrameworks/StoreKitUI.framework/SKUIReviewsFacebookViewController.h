@@ -9,9 +9,9 @@
     SKUIReviewsFacebookView *_facebookView;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readwrite) <SKUIReviewsFacebookViewControllerDelegate> * delegate;
-@property(assign,copy) SKUIFacebookLikeStatus * facebookLikeStatus;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic) <SKUIReviewsFacebookViewControllerDelegate> *delegate;
+@property (nonatomic, copy) SKUIFacebookLikeStatus *facebookLikeStatus;
 
 - (void).cxx_destruct;
 - (void)_changeStatusToUserLiked:(bool)arg1;

@@ -12,13 +12,13 @@
     CKIMComposeRecipient *_matchingRecipient;
 }
 
-@property(assign,retain) NSArray * composeRecipients;
-@property(assign,retain) NSString * conversationGUID;
-@property(assign,retain) NSString * detailsString;
-@property(assign,retain) NSString * displayString;
-@property(assign,retain) NSArray * handles;
-@property(assign,retain) NSDate * lastMessageDate;
-@property(assign,retain) CKIMComposeRecipient * matchingRecipient;
+@property (nonatomic, retain) NSArray *composeRecipients;
+@property (nonatomic, retain) NSString *conversationGUID;
+@property (nonatomic, retain) NSString *detailsString;
+@property (nonatomic, retain) NSString *displayString;
+@property (nonatomic, retain) NSArray *handles;
+@property (nonatomic, retain) NSDate *lastMessageDate;
+@property (nonatomic, retain) CKIMComposeRecipient *matchingRecipient;
 
 + (id)composeRecipientWithConversation:(id)arg1 searchTerm:(id)arg2 matchingRecipient:(id)arg3;
 

@@ -7,8 +7,8 @@
     long long _type;
 }
 
-@property(assign,retain) ABPropertyBestIDSValueQuery * bestFaceTimeQuery;
-@property(assign,readwrite) long long type;
+@property (nonatomic, retain) ABPropertyBestIDSValueQuery *bestFaceTimeQuery;
+@property (nonatomic) long long type;
 
 - (void)_queryFaceTimeStatus;
 - (id)bestFaceTimeQuery;

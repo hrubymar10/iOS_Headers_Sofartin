@@ -7,8 +7,8 @@
     NSMutableArray *_searchAttributionSources;
 }
 
-@property(assign,retain) NSMutableArray * actionComponentMapEntries;
-@property(assign,retain) NSMutableArray * searchAttributionSources;
+@property (nonatomic, retain) NSMutableArray *actionComponentMapEntries;
+@property (nonatomic, retain) NSMutableArray *searchAttributionSources;
 
 - (id)actionComponentMapEntries;
 - (id)actionComponentMapEntriesAtIndex:(unsigned long long)arg1;

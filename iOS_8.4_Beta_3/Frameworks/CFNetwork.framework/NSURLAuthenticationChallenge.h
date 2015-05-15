@@ -6,12 +6,12 @@
     NSURLAuthenticationChallengeInternal *_internal;
 }
 
-@property(assign,copy) NSError * error;
-@property(assign,copy) NSURLResponse * failureResponse;
-@property(assign,readonly) long long previousFailureCount;
-@property(assign,copy) NSURLCredential * proposedCredential;
-@property(assign,copy) NSURLProtectionSpace * protectionSpace;
-@property(assign,retain) <NSURLAuthenticationChallengeSender> * sender;
+@property (readonly, copy) NSError *error;
+@property (readonly, copy) NSURLResponse *failureResponse;
+@property (readonly) long long previousFailureCount;
+@property (readonly, copy) NSURLCredential *proposedCredential;
+@property (readonly, copy) NSURLProtectionSpace *protectionSpace;
+@property (readonly, retain) <NSURLAuthenticationChallengeSender> *sender;
 
 + (id)_authenticationChallengeForCFAuthChallenge:(struct _CFURLAuthChallenge { }*)arg1 sender:(id)arg2;
 + (id)_createAuthenticationChallengeForCFAuthChallenge:(struct _CFURLAuthChallenge { }*)arg1 sender:(id)arg2;

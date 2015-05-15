@@ -11,12 +11,12 @@
     NSString *thingToResolve;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * cacheAccessQueue;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * callbackQueue;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * resolveQueue;
-@property(assign,readwrite) int resolveType;
-@property(assign,readwrite) bool startedResolving;
-@property(assign,retain) NSString * thingToResolve;
+@property (readonly) NSObject<OS_dispatch_queue> *cacheAccessQueue;
+@property (readonly) NSObject<OS_dispatch_queue> *callbackQueue;
+@property (readonly) NSObject<OS_dispatch_queue> *resolveQueue;
+@property (nonatomic) int resolveType;
+@property bool startedResolving;
+@property (nonatomic, retain) NSString *thingToResolve;
 
 - (id)cacheAccessQueue;
 - (id)callbackQueue;

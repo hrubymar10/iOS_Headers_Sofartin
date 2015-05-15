@@ -8,7 +8,7 @@
     NSMutableDictionary *mVariables;
 }
 
-@property(assign,readonly) unsigned long long arraySize;
+@property (nonatomic, readonly) unsigned long long arraySize;
 
 + (id)variablesWithPrefix:(id)arg1 arraySize:(unsigned long long)arg2;
 

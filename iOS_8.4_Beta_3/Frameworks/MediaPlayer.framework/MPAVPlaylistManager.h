@@ -20,26 +20,26 @@
     bool _updatedAudioSessionMode;
 }
 
-@property(assign,readonly) bool allowsUserVisibleUpcomingItems;
-@property(assign,retain) NSString * audioSessionModeOverride;
-@property(assign,readwrite) MPAVController * avController;
-@property(assign,readonly) bool canSeek;
-@property(assign,readonly) bool canSkipToPreviousItem;
-@property(getter=isChangingPlayer,assign,readonly) bool changingPlayer;
-@property(getter=isChangingPlaylistFeeder,assign,readonly) bool changingPlaylistFeeder;
-@property(assign,readonly) long long currentIndex;
-@property(assign,readonly) MPAVItem * currentItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPAVPlaylistManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long playbackMode;
-@property(assign,readonly) MPQueuePlayer * player;
-@property(assign,readonly) MPQueueFeeder * playlistFeeder;
-@property(assign,readonly) MPAVQueueCoordinator * queueCoordinator;
-@property(assign,readwrite) long long repeatMode;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool userCanChangeShuffleAndRepeatType;
+@property (nonatomic, readonly) bool allowsUserVisibleUpcomingItems;
+@property (nonatomic, retain) NSString *audioSessionModeOverride;
+@property (nonatomic) MPAVController *avController;
+@property (nonatomic, readonly) bool canSeek;
+@property (nonatomic, readonly) bool canSkipToPreviousItem;
+@property (getter=isChangingPlayer, nonatomic, readonly) bool changingPlayer;
+@property (getter=isChangingPlaylistFeeder, nonatomic, readonly) bool changingPlaylistFeeder;
+@property (readonly) long long currentIndex;
+@property (readonly) MPAVItem *currentItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPAVPlaylistManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long playbackMode;
+@property (readonly) MPQueuePlayer *player;
+@property (nonatomic, readonly) MPQueueFeeder *playlistFeeder;
+@property (readonly) MPAVQueueCoordinator *queueCoordinator;
+@property long long repeatMode;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool userCanChangeShuffleAndRepeatType;
 
 - (void).cxx_destruct;
 - (void)_awakeFromCoder:(id)arg1;

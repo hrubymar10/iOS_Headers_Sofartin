@@ -10,10 +10,10 @@
     PKPaymentWebService *_webService;
 }
 
-@property(assign,readwrite) long long context;
-@property(assign,readwrite) <PKPaymentSetupViewControllerDelegate> * delegate;
-@property(assign,retain) NSArray * eligibleCards;
-@property(assign,retain) PKPaymentWebService * webService;
+@property (nonatomic) long long context;
+@property (nonatomic) <PKPaymentSetupViewControllerDelegate> *delegate;
+@property (nonatomic, retain) NSArray *eligibleCards;
+@property (nonatomic, retain) PKPaymentWebService *webService;
 
 - (id)_contextSpecificStringForAggdKey:(id)arg1;
 - (id)_deviceSpecificLocalizedStringKeyForKey:(id)arg1;

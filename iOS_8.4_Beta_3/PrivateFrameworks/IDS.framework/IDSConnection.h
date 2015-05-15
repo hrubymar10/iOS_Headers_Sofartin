@@ -6,9 +6,9 @@
     _IDSConnection *_internal;
 }
 
-@property(assign,retain) _IDSConnection * _internal;
-@property(assign,retain) IDSAccount * account;
-@property(assign,readonly) bool isActive;
+@property (nonatomic, readonly, retain) _IDSConnection *_internal;
+@property (nonatomic, readonly, retain) IDSAccount *account;
+@property (nonatomic, readonly) bool isActive;
 
 - (id)_initWithAccount:(id)arg1 commands:(id)arg2 indirectDelegateCallouts:(bool)arg3;
 - (id)_internal;

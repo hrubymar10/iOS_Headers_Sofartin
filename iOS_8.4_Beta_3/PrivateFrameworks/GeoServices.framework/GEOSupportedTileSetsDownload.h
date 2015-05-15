@@ -7,8 +7,8 @@
     GEOSupportedTileSets *_tileSets;
 }
 
-@property(assign,retain) GEODownloadMetadata * metadata;
-@property(assign,retain) GEOSupportedTileSets * tileSets;
+@property (nonatomic, retain) GEODownloadMetadata *metadata;
+@property (nonatomic, retain) GEOSupportedTileSets *tileSets;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

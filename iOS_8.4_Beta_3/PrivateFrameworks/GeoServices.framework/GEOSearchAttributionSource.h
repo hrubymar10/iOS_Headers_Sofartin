@@ -16,15 +16,15 @@
     NSString *_webBaseActionURL;
 }
 
-@property(assign,retain) NSMutableArray * attributionApps;
-@property(assign,readonly) int* attributionRequirements;
-@property(assign,readonly) unsigned long long attributionRequirementsCount;
-@property(assign,readonly) bool hasWebBaseActionURL;
-@property(assign,retain) NSMutableArray * localizedAttributions;
-@property(assign,retain) NSString * sourceIdentifier;
-@property(assign,readwrite) unsigned int sourceVersion;
-@property(assign,retain) NSMutableArray * supportedComponentActions;
-@property(assign,retain) NSString * webBaseActionURL;
+@property (nonatomic, retain) NSMutableArray *attributionApps;
+@property (nonatomic, readonly) int*attributionRequirements;
+@property (nonatomic, readonly) unsigned long long attributionRequirementsCount;
+@property (nonatomic, readonly) bool hasWebBaseActionURL;
+@property (nonatomic, retain) NSMutableArray *localizedAttributions;
+@property (nonatomic, retain) NSString *sourceIdentifier;
+@property (nonatomic) unsigned int sourceVersion;
+@property (nonatomic, retain) NSMutableArray *supportedComponentActions;
+@property (nonatomic, retain) NSString *webBaseActionURL;
 
 - (void)addAttributionApps:(id)arg1;
 - (void)addAttributionRequirements:(int)arg1;

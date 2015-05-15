@@ -174,8 +174,8 @@
     } mTransformStack;
 }
 
-@property(assign,readonly) bool projectionChanged;
-@property(assign,readonly) bool transformChanged;
+@property (nonatomic, readonly) bool projectionChanged;
+@property (nonatomic, readonly) bool transformChanged;
 
 + (id)processorWithOriginal:(id)arg1 enableTypes:(id)arg2;
 

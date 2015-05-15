@@ -4,13 +4,13 @@
 
 @interface AVAudioMixerNode : AVAudioNode <AVAudioMixing>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long nextAvailableInputBus;
-@property(assign,readwrite) float outputVolume;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) float volume;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long nextAvailableInputBus;
+@property (nonatomic) float outputVolume;
+@property (readonly) Class superclass;
+@property (nonatomic) float volume;
 
 - (void)didAttachToEngine:(id)arg1;
 - (id)init;

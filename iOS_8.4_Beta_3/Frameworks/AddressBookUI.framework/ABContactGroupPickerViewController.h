@@ -9,12 +9,12 @@
     UITableView *_tableView;
 }
 
-@property(assign,retain) CNContactStyle * contactStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) <ABContactGroupPickerDelegate> * groupPickerDelegate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) CNContactStyle *contactStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) <ABContactGroupPickerDelegate> *groupPickerDelegate;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)pickableGroupsWithPickedGroups:(id)arg1;
 + (bool)propertiesLeftToPickWithPickedGroups:(id)arg1;

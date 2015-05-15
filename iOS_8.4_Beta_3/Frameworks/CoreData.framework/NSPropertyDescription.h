@@ -29,19 +29,19 @@
     NSString *_versionHashModifier;
 }
 
-@property(assign,readonly) NSEntityDescription * entity;
-@property(getter=isIndexed,assign,readwrite) bool indexed;
-@property(getter=isIndexedBySpotlight,assign,readwrite) bool indexedBySpotlight;
-@property(assign,copy) NSString * name;
-@property(getter=isOptional,assign,readwrite) bool optional;
-@property(assign,copy) NSString * renamingIdentifier;
-@property(getter=isStoredInExternalRecord,assign,readwrite) bool storedInExternalRecord;
-@property(getter=isTransient,assign,readwrite) bool transient;
-@property(assign,retain) NSDictionary * userInfo;
-@property(assign,readonly) NSArray * validationPredicates;
-@property(assign,readonly) NSArray * validationWarnings;
-@property(assign,copy) NSData * versionHash;
-@property(assign,copy) NSString * versionHashModifier;
+@property (nonatomic, readonly) NSEntityDescription *entity;
+@property (getter=isIndexed) bool indexed;
+@property (getter=isIndexedBySpotlight) bool indexedBySpotlight;
+@property (nonatomic, copy) NSString *name;
+@property (getter=isOptional) bool optional;
+@property (copy) NSString *renamingIdentifier;
+@property (getter=isStoredInExternalRecord) bool storedInExternalRecord;
+@property (getter=isTransient) bool transient;
+@property (nonatomic, retain) NSDictionary *userInfo;
+@property (readonly) NSArray *validationPredicates;
+@property (readonly) NSArray *validationWarnings;
+@property (readonly, copy) NSData *versionHash;
+@property (copy) NSString *versionHashModifier;
 
 + (void)initialize;
 

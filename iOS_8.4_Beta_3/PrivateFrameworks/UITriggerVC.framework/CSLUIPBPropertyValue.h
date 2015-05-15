@@ -12,19 +12,19 @@
     NSData *_uUIDValue;
 }
 
-@property(assign,retain) NSMutableArray * arrayValues;
-@property(assign,retain) NSData * dataValue;
-@property(assign,retain) CSLUIPBPropertyValue * dictionaryKey;
-@property(assign,readonly) bool hasDataValue;
-@property(assign,readonly) bool hasDictionaryKey;
-@property(assign,readonly) bool hasNumberValue;
-@property(assign,readonly) bool hasSizeValue;
-@property(assign,readonly) bool hasStringValue;
-@property(assign,readonly) bool hasUUIDValue;
-@property(assign,retain) CSLUIPBNumber * numberValue;
-@property(assign,retain) CSLUIPBSize * sizeValue;
-@property(assign,retain) NSString * stringValue;
-@property(assign,retain) NSData * uUIDValue;
+@property (nonatomic, retain) NSMutableArray *arrayValues;
+@property (nonatomic, retain) NSData *dataValue;
+@property (nonatomic, retain) CSLUIPBPropertyValue *dictionaryKey;
+@property (nonatomic, readonly) bool hasDataValue;
+@property (nonatomic, readonly) bool hasDictionaryKey;
+@property (nonatomic, readonly) bool hasNumberValue;
+@property (nonatomic, readonly) bool hasSizeValue;
+@property (nonatomic, readonly) bool hasStringValue;
+@property (nonatomic, readonly) bool hasUUIDValue;
+@property (nonatomic, retain) CSLUIPBNumber *numberValue;
+@property (nonatomic, retain) CSLUIPBSize *sizeValue;
+@property (nonatomic, retain) NSString *stringValue;
+@property (nonatomic, retain) NSData *uUIDValue;
 
 - (void).cxx_destruct;
 - (void)addArrayValues:(id)arg1;

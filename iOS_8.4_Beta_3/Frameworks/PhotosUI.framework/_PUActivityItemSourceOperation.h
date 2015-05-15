@@ -9,9 +9,9 @@
     NSObject<OS_dispatch_semaphore> *_semaphore;
 }
 
-@property(getter=_pu_isCancelled,setter=_pu_setCancelled:,assign,readwrite) bool _pu_cancelled;
-@property(getter=pu_isCancelled,assign,readonly) bool pu_cancelled;
-@property(assign,readonly) NSObject<OS_dispatch_semaphore> * semaphore;
+@property (getter=_pu_isCancelled, setter=_pu_setCancelled:) bool _pu_cancelled;
+@property (getter=pu_isCancelled, readonly) bool pu_cancelled;
+@property (nonatomic, readonly) NSObject<OS_dispatch_semaphore> *semaphore;
 
 - (void).cxx_destruct;
 - (bool)_pu_isCancelled;

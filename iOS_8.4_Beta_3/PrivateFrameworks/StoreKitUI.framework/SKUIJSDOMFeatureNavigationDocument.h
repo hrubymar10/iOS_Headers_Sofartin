@@ -10,13 +10,13 @@
     NSMutableArray *_stackItems;
 }
 
-@property(assign,readonly) IKAppContext * appContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * featureName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUINavigationDocumentController * navigationDocumentController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) IKAppContext *appContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSString *featureName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUINavigationDocumentController *navigationDocumentController;
+@property (readonly) Class superclass;
 
 + (id)makeFeatureJSObjectForFeature:(id)arg1;
 + (id)possibleFeatureNames;

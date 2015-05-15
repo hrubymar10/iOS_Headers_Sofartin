@@ -47,20 +47,20 @@
     SKUILayoutCache *_textLayoutCache;
 }
 
-@property(assign,retain) SKUIMetricsImpressionSession * activeMetricsImpressionSession;
-@property(assign,readonly) UICollectionView * collectionView;
-@property(assign,copy) SKUIColorScheme * colorScheme;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIStorePageSectionsDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=isDisplayingOverlays,assign,readonly) bool displayingOverlays;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIIndexBarControl * indexBarControl;
-@property(assign,retain) SKUIMetricsController * metricsController;
-@property(assign,readwrite) long long pinningTransitionStyle;
-@property(assign,readwrite) <SKUICollectionViewPullToRefreshDelegate> * pullToRefreshDelegate;
-@property(assign,readonly) NSArray * sections;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIMetricsImpressionSession *activeMetricsImpressionSession;
+@property (nonatomic, readonly) UICollectionView *collectionView;
+@property (nonatomic, copy) SKUIColorScheme *colorScheme;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIStorePageSectionsDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=isDisplayingOverlays, nonatomic, readonly) bool displayingOverlays;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIIndexBarControl *indexBarControl;
+@property (nonatomic, retain) SKUIMetricsController *metricsController;
+@property (nonatomic) long long pinningTransitionStyle;
+@property (nonatomic) <SKUICollectionViewPullToRefreshDelegate> *pullToRefreshDelegate;
+@property (nonatomic, readonly) NSArray *sections;
+@property (readonly) Class superclass;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 + (id)viewControllerWithRestorationIdentifierPath:(id)arg1 coder:(id)arg2;

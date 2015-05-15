@@ -8,8 +8,8 @@
     UITextView *_textView;
 }
 
-@property(assign,retain) NSString * descriptionText;
-@property(assign,retain) NSString * headerText;
+@property (nonatomic, retain) NSString *descriptionText;
+@property (nonatomic, retain) NSString *headerText;
 
 - (void)dealloc;
 - (id)descriptionText;

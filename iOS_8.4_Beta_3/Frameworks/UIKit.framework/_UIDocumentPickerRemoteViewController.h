@@ -9,14 +9,14 @@
     UIViewController<_UIDocumentPickerRemoteViewControllerContaining> *_publicController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSExtension * extension;
-@property(assign,copy) <NSCopying><NSObject> * extensionRequestIdentifier;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * identifier;
-@property(assign,readwrite) UIViewController<_UIDocumentPickerRemoteViewControllerContaining> * publicController;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSExtension *extension;
+@property (nonatomic, copy) <NSCopying><NSObject> *extensionRequestIdentifier;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic) UIViewController<_UIDocumentPickerRemoteViewControllerContaining> *publicController;
+@property (readonly) Class superclass;
 
 + (id)exportedInterface;
 + (id)serviceViewControllerInterface;

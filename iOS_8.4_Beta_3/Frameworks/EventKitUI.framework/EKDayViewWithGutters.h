@@ -12,11 +12,11 @@
     UIView *_rightGutter;
 }
 
-@property(assign,readwrite) double allDayHeight;
-@property(assign,retain) EKDayView * dayView;
-@property(assign,readwrite) double gutterWidth;
-@property(assign,readonly) UIView * leftGutter;
-@property(assign,readonly) UIView * rightGutter;
+@property (nonatomic) double allDayHeight;
+@property (nonatomic, retain) EKDayView *dayView;
+@property (nonatomic) double gutterWidth;
+@property (nonatomic, readonly) UIView *leftGutter;
+@property (nonatomic, readonly) UIView *rightGutter;
 
 - (void).cxx_destruct;
 - (id)_createAllDayView;

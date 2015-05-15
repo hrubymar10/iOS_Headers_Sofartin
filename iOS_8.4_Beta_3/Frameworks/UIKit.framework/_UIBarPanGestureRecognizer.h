@@ -7,8 +7,8 @@
     double _bias;
 }
 
-@property(assign,readonly) long long barAction;
-@property(assign,readonly) double bias;
+@property (nonatomic, readonly) long long barAction;
+@property (nonatomic, readonly) double bias;
 
 - (void)_setDelegate:(id)arg1;
 - (long long)barAction;

@@ -4,14 +4,14 @@
 
 @interface SAUIConfirmationOption : AceObject <SAAceSerializable>
 
-@property(assign,readwrite) bool active;
-@property(assign,copy) NSArray * commands;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * label;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * type;
+@property (nonatomic) bool active;
+@property (nonatomic, copy) NSArray *commands;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *label;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *type;
 
 + (id)confirmationOption;
 + (id)confirmationOptionWithDictionary:(id)arg1 context:(id)arg2;

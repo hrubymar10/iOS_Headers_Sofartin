@@ -8,10 +8,10 @@
     UIView *_nameBottomSeparator;
 }
 
-@property(assign,readonly) UIButton * editPhotoButton;
-@property(assign,readonly) UIButton * editPhotoLabelButton;
-@property(assign,retain) NSString * name;
-@property(assign,retain) UIImage * photo;
+@property (nonatomic, readonly) UIButton *editPhotoButton;
+@property (nonatomic, readonly) UIButton *editPhotoLabelButton;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) UIImage *photo;
 
 + (bool)showsLabelAndValue;
 

@@ -25,27 +25,27 @@
     CPLEngineTransport *_transport;
 }
 
-@property(assign,copy) NSURL * clientLibraryBaseURL;
-@property(assign,copy) NSURL * cloudLibraryResourceStorageURL;
-@property(assign,copy) NSURL * cloudLibraryStateStorageURL;
-@property(assign,readonly) CPLConfiguration * configuration;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSDate * exitDeleteTime;
-@property(assign,readwrite) bool hasChangesToProcess;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool iCloudLibraryExists;
-@property(assign,readwrite) bool iCloudLibraryHasBeenWiped;
-@property(assign,readwrite) bool isExceedingQuota;
-@property(assign,copy) NSString * libraryIdentifier;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readonly) CPLEngineScheduler * scheduler;
-@property(assign,readonly) CPLStatistics * statistics;
-@property(assign,readonly) CPLEngineStore * store;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) CPLEngineSyncManager * syncManager;
-@property(assign,readonly) CPLEngineSystemMonitor * systemMonitor;
-@property(assign,readonly) CPLEngineTransport * transport;
+@property (nonatomic, readonly, copy) NSURL *clientLibraryBaseURL;
+@property (nonatomic, readonly, copy) NSURL *cloudLibraryResourceStorageURL;
+@property (nonatomic, readonly, copy) NSURL *cloudLibraryStateStorageURL;
+@property (nonatomic, readonly) CPLConfiguration *configuration;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSDate *exitDeleteTime;
+@property (nonatomic) bool hasChangesToProcess;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool iCloudLibraryExists;
+@property (nonatomic) bool iCloudLibraryHasBeenWiped;
+@property (nonatomic) bool isExceedingQuota;
+@property (nonatomic, readonly, copy) NSString *libraryIdentifier;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (nonatomic, readonly) CPLEngineScheduler *scheduler;
+@property (nonatomic, readonly) CPLStatistics *statistics;
+@property (nonatomic, readonly) CPLEngineStore *store;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) CPLEngineSyncManager *syncManager;
+@property (nonatomic, readonly) CPLEngineSystemMonitor *systemMonitor;
+@property (nonatomic, readonly) CPLEngineTransport *transport;
 
 + (id)platformImplementationProtocol;
 

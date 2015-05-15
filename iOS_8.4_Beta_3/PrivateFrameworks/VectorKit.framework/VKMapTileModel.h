@@ -14,16 +14,16 @@
     NSMutableSet *_tilesWillExitScene;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) VKMapModel * mapModel;
-@property(assign,readonly) unsigned char maximumZ;
-@property(assign,readonly) unsigned char minimumZ;
-@property(assign,readonly) VKStyleManager * styleManager;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSSet * tilesInScene;
-@property(assign,readonly) NSSet * tilesInScenePlusExitingTiles;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) VKMapModel *mapModel;
+@property (nonatomic, readonly) unsigned char maximumZ;
+@property (nonatomic, readonly) unsigned char minimumZ;
+@property (nonatomic, readonly) VKStyleManager *styleManager;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSSet *tilesInScene;
+@property (nonatomic, readonly) NSSet *tilesInScenePlusExitingTiles;
 
 + (bool)reloadOnActiveTileGroupChange;
 + (bool)reloadOnStylesheetChange;

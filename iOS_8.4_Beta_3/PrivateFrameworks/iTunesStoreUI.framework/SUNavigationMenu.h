@@ -12,13 +12,13 @@
     NSString *_openTitle;
 }
 
-@property(assign,readonly) NSString * cancelTitle;
-@property(assign,readonly) NSString * closedTitle;
-@property(assign,readonly) long long initialSelectedIndex;
-@property(assign,readwrite) long long location;
-@property(assign,readonly) NSArray * menuItems;
-@property(assign,readonly) NSArray * navigationButtons;
-@property(assign,readonly) NSString * openTitle;
+@property (nonatomic, readonly) NSString *cancelTitle;
+@property (nonatomic, readonly) NSString *closedTitle;
+@property (nonatomic, readonly) long long initialSelectedIndex;
+@property (nonatomic) long long location;
+@property (nonatomic, readonly) NSArray *menuItems;
+@property (nonatomic, readonly) NSArray *navigationButtons;
+@property (nonatomic, readonly) NSString *openTitle;
 
 - (void)_loadFromDictionary:(id)arg1;
 - (long long)_locationForString:(id)arg1;

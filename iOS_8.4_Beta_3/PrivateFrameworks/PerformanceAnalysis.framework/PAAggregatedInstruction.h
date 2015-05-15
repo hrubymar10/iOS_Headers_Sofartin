@@ -8,10 +8,10 @@
     unsigned long long _offsetInBinary;
 }
 
-@property(assign,readonly) NSUUID * binaryUuid;
-@property(assign,retain) NSMutableSet * children;
-@property(assign,readonly) bool isKernel;
-@property(assign,readonly) unsigned long long offsetInBinary;
+@property (readonly) NSUUID *binaryUuid;
+@property (retain) NSMutableSet *children;
+@property (readonly) bool isKernel;
+@property (readonly) unsigned long long offsetInBinary;
 
 - (id)binaryUuid;
 - (id)children;

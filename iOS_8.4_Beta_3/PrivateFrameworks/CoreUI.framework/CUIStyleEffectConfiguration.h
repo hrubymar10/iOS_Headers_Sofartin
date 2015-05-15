@@ -10,11 +10,11 @@
     long long _value;
 }
 
-@property(assign,readwrite) bool foregroundColorShouldTintEffects;
-@property(assign,readwrite) long long presentationState;
-@property(assign,readwrite) long long state;
-@property(assign,readwrite) bool useSimplifiedEffect;
-@property(assign,readwrite) long long value;
+@property (nonatomic) bool foregroundColorShouldTintEffects;
+@property (nonatomic) long long presentationState;
+@property (nonatomic) long long state;
+@property (nonatomic) bool useSimplifiedEffect;
+@property (nonatomic) long long value;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)description;

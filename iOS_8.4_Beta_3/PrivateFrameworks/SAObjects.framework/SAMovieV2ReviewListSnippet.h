@@ -4,8 +4,8 @@
 
 @interface SAMovieV2ReviewListSnippet : SAUISnippet
 
-@property(assign,copy) NSString * movieName;
-@property(assign,retain) SALocalSearchReviewList * reviewList;
+@property (nonatomic, copy) NSString *movieName;
+@property (nonatomic, retain) SALocalSearchReviewList *reviewList;
 
 + (id)reviewListSnippet;
 + (id)reviewListSnippetWithDictionary:(id)arg1 context:(id)arg2;

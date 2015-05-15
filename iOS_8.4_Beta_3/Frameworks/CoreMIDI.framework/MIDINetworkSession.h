@@ -6,11 +6,11 @@
     struct _MIDINetworkSessionImpl { unsigned int x1; unsigned int x2; unsigned int x3; id x4; id x5; struct ContactOrConnectionSet { bool x_6_1_1; id x_6_1_2; } x6; } *_impl;
 }
 
-@property(assign,readwrite) unsigned long long connectionPolicy;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) NSString * localName;
-@property(assign,readonly) NSString * networkName;
-@property(assign,readonly) unsigned long long networkPort;
+@property (nonatomic) unsigned long long connectionPolicy;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic, readonly) NSString *localName;
+@property (nonatomic, readonly) NSString *networkName;
+@property (nonatomic, readonly) unsigned long long networkPort;
 
 + (id)defaultSession;
 

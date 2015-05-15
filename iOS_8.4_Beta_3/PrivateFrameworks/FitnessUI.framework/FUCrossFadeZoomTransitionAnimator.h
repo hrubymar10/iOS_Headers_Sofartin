@@ -11,14 +11,14 @@
     bool _zoomingUp;
 }
 
-@property(assign,retain) id context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIView * largeView;
-@property(assign,retain) UIView * smallView;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool zoomingUp;
+@property (nonatomic, retain) id context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIView *largeView;
+@property (nonatomic, retain) UIView *smallView;
+@property (readonly) Class superclass;
+@property (nonatomic) bool zoomingUp;
 
 - (void).cxx_destruct;
 - (void)animateTransition:(id)arg1;

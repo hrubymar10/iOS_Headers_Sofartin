@@ -10,11 +10,11 @@
     UILabel *_userRatingLabel;
 }
 
-@property(assign,retain) UILabel * indexNumberLabel;
-@property(assign,retain) UILabel * subtitleLabel;
-@property(assign,retain) UILabel * titleLabel;
-@property(assign,retain) SKUICellImageView * userRatingImageView;
-@property(assign,retain) UILabel * userRatingLabel;
+@property (nonatomic, retain) UILabel *indexNumberLabel;
+@property (nonatomic, retain) UILabel *subtitleLabel;
+@property (nonatomic, retain) UILabel *titleLabel;
+@property (nonatomic, retain) SKUICellImageView *userRatingImageView;
+@property (nonatomic, retain) UILabel *userRatingLabel;
 
 - (void).cxx_destruct;
 - (void)drawRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

@@ -23,23 +23,23 @@
     unsigned int _shouldSeparateText;
 }
 
-@property(assign,readwrite) bool isMagicMove;
-@property(assign,readwrite) <TSDAnimationSession> * session;
-@property(assign,readwrite) bool shouldAddFinal;
-@property(assign,readwrite) bool shouldAddMagicMoveObjectOnly;
-@property(assign,readwrite) bool shouldAddMasks;
-@property(assign,readwrite) bool shouldAddReversedFinal;
-@property(assign,readwrite) bool shouldDistortToFit;
-@property(assign,readwrite) bool shouldForceTextureGeneration;
-@property(assign,readwrite) bool shouldIgnoreScaleInSourceImage;
-@property(assign,readwrite) bool shouldNotAddContainedReps;
-@property(assign,readwrite) bool shouldNotAddShapeAttributes;
-@property(assign,readwrite) bool shouldNotAddText;
-@property(assign,readwrite) bool shouldNotCacheTexture;
-@property(assign,readwrite) bool shouldSeparateReflection;
-@property(assign,readwrite) bool shouldSeparateShadow;
-@property(assign,readwrite) bool shouldSeparateStroke;
-@property(assign,readwrite) bool shouldSeparateText;
+@property (nonatomic) bool isMagicMove;
+@property (nonatomic) <TSDAnimationSession> *session;
+@property (nonatomic) bool shouldAddFinal;
+@property (nonatomic) bool shouldAddMagicMoveObjectOnly;
+@property (nonatomic) bool shouldAddMasks;
+@property (nonatomic) bool shouldAddReversedFinal;
+@property (nonatomic) bool shouldDistortToFit;
+@property (nonatomic) bool shouldForceTextureGeneration;
+@property (nonatomic) bool shouldIgnoreScaleInSourceImage;
+@property (nonatomic) bool shouldNotAddContainedReps;
+@property (nonatomic) bool shouldNotAddShapeAttributes;
+@property (nonatomic) bool shouldNotAddText;
+@property (nonatomic) bool shouldNotCacheTexture;
+@property (nonatomic) bool shouldSeparateReflection;
+@property (nonatomic) bool shouldSeparateShadow;
+@property (nonatomic) bool shouldSeparateStroke;
+@property (nonatomic) bool shouldSeparateText;
 
 + (id)context;
 + (id)contextWithSession:(id)arg1;

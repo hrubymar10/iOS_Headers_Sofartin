@@ -16,10 +16,10 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readwrite) bool allowsSelection;
-@property(assign,readwrite) <MusicContextualActionsHeaderViewDelegate> * delegate;
-@property(assign,readonly) MusicEntityValueContext * entityValueContext;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
+@property (nonatomic) bool allowsSelection;
+@property (nonatomic) <MusicContextualActionsHeaderViewDelegate> *delegate;
+@property (nonatomic, readonly) MusicEntityValueContext *entityValueContext;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
 
 + (double)defaultHeight;
 

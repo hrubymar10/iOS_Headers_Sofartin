@@ -21,9 +21,9 @@
     NSURLSessionDataTask *_volumeRequest;
 }
 
-@property(assign,retain) RMSControlInterface * controlInterface;
-@property(assign,readwrite) <RMSDAAPNowPlayingManagerDelegate> * delegate;
-@property(getter=isObserving,assign,readonly) bool observing;
+@property (nonatomic, retain) RMSControlInterface *controlInterface;
+@property (nonatomic) <RMSDAAPNowPlayingManagerDelegate> *delegate;
+@property (getter=isObserving, nonatomic, readonly) bool observing;
 
 - (void).cxx_destruct;
 - (bool)_audioRoutes:(id)arg1 equalAudioRoutes:(id)arg2;

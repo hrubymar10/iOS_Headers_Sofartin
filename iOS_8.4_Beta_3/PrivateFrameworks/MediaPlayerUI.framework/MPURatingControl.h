@@ -16,9 +16,9 @@
     UITapGestureRecognizer *_tapGestureRecognizer;
 }
 
-@property(assign,readwrite) <MPURatingControlDelegate> * delegate;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitTestEdgeInsets;
-@property(assign,readwrite) double rating;
+@property (nonatomic) <MPURatingControlDelegate> *delegate;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitTestEdgeInsets;
+@property (nonatomic) double rating;
 
 + (id)ratingDotImage;
 + (id)ratingStarImage;

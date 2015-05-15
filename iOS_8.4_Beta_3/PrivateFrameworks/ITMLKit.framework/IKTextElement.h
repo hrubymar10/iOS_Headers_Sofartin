@@ -9,12 +9,12 @@
     unsigned long long _textStyle;
 }
 
-@property(assign,readonly) unsigned long long alignment;
-@property(assign,readonly) NSArray * badges;
-@property(assign,readonly) UIColor * color;
-@property(assign,readonly) long long maxLines;
-@property(assign,retain) NSAttributedString * text;
-@property(assign,readonly) unsigned long long textStyle;
+@property (nonatomic, readonly) unsigned long long alignment;
+@property (nonatomic, readonly) NSArray *badges;
+@property (nonatomic, readonly) UIColor *color;
+@property (nonatomic, readonly) long long maxLines;
+@property (nonatomic, readonly, retain) NSAttributedString *text;
+@property (nonatomic, readonly) unsigned long long textStyle;
 
 + (bool)shouldParseChildDOMElements;
 

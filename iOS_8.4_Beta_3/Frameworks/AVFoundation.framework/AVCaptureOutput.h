@@ -6,7 +6,7 @@
     AVCaptureOutputInternal *_outputInternal;
 }
 
-@property(assign,readonly) NSArray * connections;
+@property (nonatomic, readonly) NSArray *connections;
 
 + (void)initialize;
 

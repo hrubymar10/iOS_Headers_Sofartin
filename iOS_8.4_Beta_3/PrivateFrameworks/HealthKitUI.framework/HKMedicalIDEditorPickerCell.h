@@ -8,12 +8,12 @@
     NSArray *_possibleValues;
 }
 
-@property(assign,readwrite) long long chosenValueIndex;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * possibleValues;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long chosenValueIndex;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *possibleValues;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_hidePicker;

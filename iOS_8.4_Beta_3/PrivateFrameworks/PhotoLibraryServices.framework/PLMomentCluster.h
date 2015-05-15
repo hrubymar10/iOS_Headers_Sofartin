@@ -15,17 +15,17 @@
     short _generationType;
 }
 
-@property(setter=_setMergeTags:,assign,retain) NSCountedSet * _mergeTags;
-@property(setter=_setNodes:,assign,copy) NSMutableArray * _mutableNodes;
-@property(assign,readonly) NSMutableSet * _nodesWithLocation;
-@property(setter=_setSplitTags:,assign,retain) NSCountedSet * _splitTags;
-@property(assign,readonly) CLLocation * approximateLocation;
-@property(assign,retain) NSDate * endingDate;
-@property(assign,readwrite) short generationType;
-@property(assign,copy) NSArray * nodes;
-@property(assign,readonly) NSObject<NSCopying> * objectID;
-@property(assign,retain) NSDate * startingDate;
-@property(assign,retain) NSString * title;
+@property (setter=_setMergeTags:, nonatomic, retain) NSCountedSet *_mergeTags;
+@property (setter=_setNodes:, nonatomic, copy) NSMutableArray *_mutableNodes;
+@property (nonatomic, readonly) NSMutableSet *_nodesWithLocation;
+@property (setter=_setSplitTags:, nonatomic, retain) NSCountedSet *_splitTags;
+@property (nonatomic, readonly) CLLocation *approximateLocation;
+@property (nonatomic, retain) NSDate *endingDate;
+@property (nonatomic) short generationType;
+@property (nonatomic, readonly, copy) NSArray *nodes;
+@property (nonatomic, readonly) NSObject<NSCopying> *objectID;
+@property (nonatomic, retain) NSDate *startingDate;
+@property (nonatomic, retain) NSString *title;
 
 + (double)nameOccurrenceCutoff;
 

@@ -7,8 +7,8 @@
     long long _limitValue;
 }
 
-@property(assign,copy) NSString * entityTypeString;
-@property(assign,readonly) long long limitValue;
+@property (nonatomic, readonly, copy) NSString *entityTypeString;
+@property (nonatomic, readonly) long long limitValue;
 
 + (bool)shouldParseChildDOMElements;
 

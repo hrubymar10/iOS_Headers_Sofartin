@@ -9,11 +9,11 @@
     long long _state;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long state;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) long long state;
+@property (readonly) Class superclass;
 
 - (void)_callDelegateWithBlock:(id)arg1;
 - (void)_daemonDied:(id)arg1;

@@ -9,14 +9,14 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readonly) NSString * dataClass;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * linkIdentifier;
-@property(assign,readonly) ATConcreteMessageLink * messageLink;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSString *dataClass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *linkIdentifier;
+@property (nonatomic, readonly) ATConcreteMessageLink *messageLink;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)dataClass;

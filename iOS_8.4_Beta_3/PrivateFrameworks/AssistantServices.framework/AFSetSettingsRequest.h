@@ -7,8 +7,8 @@
     NSArray *_settings;
 }
 
-@property(assign,readwrite) bool applyChanges;
-@property(assign,copy) NSArray * settings;
+@property (nonatomic) bool applyChanges;
+@property (nonatomic, copy) NSArray *settings;
 
 + (bool)supportsSecureCoding;
 

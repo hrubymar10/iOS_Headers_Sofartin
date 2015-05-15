@@ -4,32 +4,32 @@
 
 @interface AVAssetInspector : AVFigObjectInspector <NSCopying>
 
-@property(assign,readonly) NSData * SHA1Digest;
-@property(assign,readonly) NSArray * alternateTrackGroups;
-@property(assign,readonly) NSArray * availableMetadataFormats;
-@property(assign,readonly) bool canContainMovieFragments;
-@property(assign,readonly) NSArray * commonMetadata;
-@property(getter=isCompatibleWithSavedPhotosAlbum,assign,readonly) bool compatibleWithSavedPhotosAlbum;
-@property(getter=isComposable,assign,readonly) bool composable;
-@property(assign,readonly) bool containsMovieFragments;
-@property(assign,readonly) AVMetadataItem * creationDate;
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } duration;
-@property(getter=isExportable,assign,readonly) bool exportable;
-@property(assign,readonly) NSString * lyrics;
-@property(assign,readonly) NSArray * mediaSelectionGroups;
-@property(assign,readonly) struct CGSize { double x1; double x2; } naturalSize;
-@property(assign,readonly) int naturalTimeScale;
-@property(getter=isPlayable,assign,readonly) bool playable;
-@property(assign,readonly) float preferredRate;
-@property(assign,readonly) float preferredSoundCheckVolumeNormalization;
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } preferredTransform;
-@property(assign,readonly) float preferredVolume;
-@property(assign,readonly) id propertyListForProxy;
-@property(assign,readonly) bool providesPreciseDurationAndTiming;
-@property(getter=isReadable,assign,readonly) bool readable;
-@property(assign,readonly) long long trackCount;
-@property(assign,readonly) NSArray * trackIDs;
-@property(assign,readonly) NSDictionary * trackReferences;
+@property (nonatomic, readonly) NSData *SHA1Digest;
+@property (nonatomic, readonly) NSArray *alternateTrackGroups;
+@property (nonatomic, readonly) NSArray *availableMetadataFormats;
+@property (nonatomic, readonly) bool canContainMovieFragments;
+@property (nonatomic, readonly) NSArray *commonMetadata;
+@property (getter=isCompatibleWithSavedPhotosAlbum, nonatomic, readonly) bool compatibleWithSavedPhotosAlbum;
+@property (getter=isComposable, nonatomic, readonly) bool composable;
+@property (nonatomic, readonly) bool containsMovieFragments;
+@property (nonatomic, readonly) AVMetadataItem *creationDate;
+@property (nonatomic, readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } duration;
+@property (getter=isExportable, nonatomic, readonly) bool exportable;
+@property (nonatomic, readonly) NSString *lyrics;
+@property (nonatomic, readonly) NSArray *mediaSelectionGroups;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } naturalSize;
+@property (nonatomic, readonly) int naturalTimeScale;
+@property (getter=isPlayable, nonatomic, readonly) bool playable;
+@property (nonatomic, readonly) float preferredRate;
+@property (nonatomic, readonly) float preferredSoundCheckVolumeNormalization;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } preferredTransform;
+@property (nonatomic, readonly) float preferredVolume;
+@property (nonatomic, readonly) id propertyListForProxy;
+@property (nonatomic, readonly) bool providesPreciseDurationAndTiming;
+@property (getter=isReadable, nonatomic, readonly) bool readable;
+@property (nonatomic, readonly) long long trackCount;
+@property (nonatomic, readonly) NSArray *trackIDs;
+@property (nonatomic, readonly) NSDictionary *trackReferences;
 
 - (id)SHA1Digest;
 - (id)alternateTrackGroups;

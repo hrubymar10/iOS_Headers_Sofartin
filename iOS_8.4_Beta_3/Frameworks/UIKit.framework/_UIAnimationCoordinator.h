@@ -34,20 +34,20 @@
     UIViewController *_viewController;
 }
 
-@property(assign,copy) id animator;
-@property(assign,copy) id completion;
-@property(assign,retain) UIView * containerView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endFrame;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id preperation;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } startFrame;
-@property(assign,retain) NSMutableDictionary * stash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) _UIViewControllerOneToOneTransitionContext * transitionContext;
-@property(assign,retain) UIViewController * viewController;
+@property (nonatomic, copy) id animator;
+@property (nonatomic, copy) id completion;
+@property (nonatomic, retain) UIView *containerView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double duration;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endFrame;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id preperation;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } startFrame;
+@property (nonatomic, readonly, retain) NSMutableDictionary *stash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, retain) _UIViewControllerOneToOneTransitionContext *transitionContext;
+@property (nonatomic, retain) UIViewController *viewController;
 
 - (void)_updateTransitionContext;
 - (void)animate;

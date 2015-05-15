@@ -10,7 +10,7 @@
     bool _valid;
 }
 
-@property(assign,readonly) CMNetworkActivityMonitor * activityMonitor;
+@property (nonatomic, readonly) CMNetworkActivityMonitor *activityMonitor;
 
 + (id)registeredObserverForActivityMonitor:(id)arg1;
 

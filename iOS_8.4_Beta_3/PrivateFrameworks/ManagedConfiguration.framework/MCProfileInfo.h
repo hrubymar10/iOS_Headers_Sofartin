@@ -11,12 +11,12 @@
     NSString *_profileDescription;
 }
 
-@property(assign,retain) NSString * UUID;
-@property(assign,retain) NSDate * expiryDate;
-@property(assign,retain) NSString * friendlyName;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSString * organization;
-@property(assign,retain) NSString * profileDescription;
+@property (nonatomic, retain) NSString *UUID;
+@property (nonatomic, retain) NSDate *expiryDate;
+@property (nonatomic, retain) NSString *friendlyName;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSString *organization;
+@property (nonatomic, retain) NSString *profileDescription;
 
 + (bool)supportsSecureCoding;
 

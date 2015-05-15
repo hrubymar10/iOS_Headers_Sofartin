@@ -13,7 +13,7 @@
     bool _suspended;
 }
 
-@property(getter=isSuspended,assign,readonly) bool suspended;
+@property (getter=isSuspended, nonatomic, readonly) bool suspended;
 
 - (id)_connection;
 - (id)_connectionInstanceUUID;

@@ -4,13 +4,13 @@
 
 @interface SASTUserReviewItem : AceObject <SASTTemplateItem>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUIDecoratedText * reviewDate;
-@property(assign,retain) SAUIDecoratedText * reviewText;
-@property(assign,retain) SAUIDecoratedText * reviewer;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUIDecoratedText *reviewDate;
+@property (nonatomic, retain) SAUIDecoratedText *reviewText;
+@property (nonatomic, retain) SAUIDecoratedText *reviewer;
+@property (readonly) Class superclass;
 
 + (id)userReviewItem;
 + (id)userReviewItemWithDictionary:(id)arg1 context:(id)arg2;

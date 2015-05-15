@@ -20,21 +20,21 @@
     bool _valid;
 }
 
-@property(setter=_setBoundsDelegate:,assign,readwrite) <FBSceneBoundsDelegate> * _boundsDelegate;
-@property(setter=_setLockedForMutation:,assign,readwrite) bool _lockedForMutation;
-@property(assign,readonly) unsigned long long _transactionID;
-@property(assign,retain) <FBSceneClient> * client;
-@property(assign,retain) FBProcess * clientProcess;
-@property(assign,retain) <FBSceneClientProvider> * clientProvider;
-@property(assign,retain) FBSSceneClientSettings * clientSettings;
-@property(assign,retain) FBWindowContextHostManager * contextHostManager;
-@property(assign,retain) FBWindowContextManager * contextManager;
-@property(assign,readwrite) <FBSceneDelegate> * delegate;
-@property(assign,retain) FBSDisplay * display;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) FBSMutableSceneSettings * mutableSettings;
-@property(assign,retain) FBSSceneSettings * settings;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (setter=_setBoundsDelegate:, nonatomic) <FBSceneBoundsDelegate> *_boundsDelegate;
+@property (setter=_setLockedForMutation:, nonatomic) bool _lockedForMutation;
+@property (nonatomic, readonly) unsigned long long _transactionID;
+@property (nonatomic, readonly, retain) <FBSceneClient> *client;
+@property (nonatomic, readonly, retain) FBProcess *clientProcess;
+@property (nonatomic, readonly, retain) <FBSceneClientProvider> *clientProvider;
+@property (nonatomic, readonly, retain) FBSSceneClientSettings *clientSettings;
+@property (nonatomic, readonly, retain) FBWindowContextHostManager *contextHostManager;
+@property (nonatomic, readonly, retain) FBWindowContextManager *contextManager;
+@property (nonatomic) <FBSceneDelegate> *delegate;
+@property (nonatomic, readonly, retain) FBSDisplay *display;
+@property (nonatomic, readonly, copy) NSString *identifier;
+@property (nonatomic, readonly, retain) FBSMutableSceneSettings *mutableSettings;
+@property (nonatomic, readonly, retain) FBSSceneSettings *settings;
+@property (getter=isValid, nonatomic, readonly) bool valid;
 
 - (void)_applyMutableSettings:(id)arg1 withTransitionContext:(id)arg2 completion:(id)arg3;
 - (id)_boundsDelegate;

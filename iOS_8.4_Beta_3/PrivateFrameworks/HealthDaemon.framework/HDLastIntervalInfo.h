@@ -9,10 +9,10 @@
     NSMutableDictionary *_sumsBySource;
 }
 
-@property(assign,readwrite) long long lastInterval;
-@property(assign,retain) NSArray * orderedSourceIds;
-@property(assign,readwrite) double startTimeInBucket;
-@property(assign,retain) NSMutableDictionary * sumsBySource;
+@property (nonatomic) long long lastInterval;
+@property (nonatomic, retain) NSArray *orderedSourceIds;
+@property (nonatomic) double startTimeInBucket;
+@property (nonatomic, retain) NSMutableDictionary *sumsBySource;
 
 - (void).cxx_destruct;
 - (id)initWithSources:(id)arg1;

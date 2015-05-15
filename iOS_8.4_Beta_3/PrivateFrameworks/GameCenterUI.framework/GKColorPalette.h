@@ -4,31 +4,31 @@
 
 @interface GKColorPalette : NSObject
 
-@property(assign,readonly) UIColor * activityIndicatorColor;
-@property(assign,readonly) UIColor * bubbleTextColor;
-@property(assign,readonly) UIColor * cellActionColor;
-@property(assign,readonly) UIColor * cellActionDestructiveColor;
-@property(assign,readonly) UIColor * challengesTintColor;
-@property(assign,readonly) UIColor * disabledButtonTitleColor;
-@property(assign,readonly) UIColor * emphasizedTextColor;
-@property(assign,readonly) UIColor * emphasizedTextOnDarkBackgroundColor;
-@property(assign,readonly) UIColor * floatingHeaderViewBackgroundColor;
-@property(assign,readonly) UIColor * friendRequestCaptionTintColor;
-@property(assign,readonly) UIColor * friendRequestTintColor;
-@property(assign,readonly) UIColor * friendTintColor;
-@property(assign,readonly) UIColor * localPlayerTintColor;
-@property(assign,readonly) UIColor * monogramBackgroundColor;
-@property(assign,readonly) UIColor * pinnedHeaderViewBackgroundColor;
-@property(assign,readonly) UIColor * removeItemTextColor;
-@property(assign,readonly) UIColor * selectedCellBackgroundColor;
-@property(assign,readonly) UIColor * selectedTextColor;
-@property(assign,readonly) UIColor * separatorLineColor;
-@property(assign,readonly) UIColor * shareTintColor;
-@property(assign,readonly) UIColor * standardTextColor;
-@property(assign,readonly) UIColor * systemInteractionColor;
-@property(assign,readonly) UIColor * textOnDarkBackgroundColor;
-@property(assign,readonly) UIColor * viewBackgroundColor;
-@property(assign,readonly) UIColor * windowBackgroundColor;
+@property (readonly) UIColor *activityIndicatorColor;
+@property (readonly) UIColor *bubbleTextColor;
+@property (readonly) UIColor *cellActionColor;
+@property (readonly) UIColor *cellActionDestructiveColor;
+@property (readonly) UIColor *challengesTintColor;
+@property (readonly) UIColor *disabledButtonTitleColor;
+@property (readonly) UIColor *emphasizedTextColor;
+@property (readonly) UIColor *emphasizedTextOnDarkBackgroundColor;
+@property (readonly) UIColor *floatingHeaderViewBackgroundColor;
+@property (readonly) UIColor *friendRequestCaptionTintColor;
+@property (readonly) UIColor *friendRequestTintColor;
+@property (readonly) UIColor *friendTintColor;
+@property (readonly) UIColor *localPlayerTintColor;
+@property (readonly) UIColor *monogramBackgroundColor;
+@property (readonly) UIColor *pinnedHeaderViewBackgroundColor;
+@property (readonly) UIColor *removeItemTextColor;
+@property (readonly) UIColor *selectedCellBackgroundColor;
+@property (readonly) UIColor *selectedTextColor;
+@property (readonly) UIColor *separatorLineColor;
+@property (readonly) UIColor *shareTintColor;
+@property (readonly) UIColor *standardTextColor;
+@property (readonly) UIColor *systemInteractionColor;
+@property (readonly) UIColor *textOnDarkBackgroundColor;
+@property (readonly) UIColor *viewBackgroundColor;
+@property (readonly) UIColor *windowBackgroundColor;
 
 + (id)paletteFromImage:(id)arg1;
 + (id)sharedPalette;

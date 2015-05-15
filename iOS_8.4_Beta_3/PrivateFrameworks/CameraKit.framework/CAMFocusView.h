@@ -16,8 +16,8 @@
     long long _suspendCount;
 }
 
-@property(assign,retain) UIColor * color;
-@property(assign,readonly) double lastFadeOutTime;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic, readonly) double lastFadeOutTime;
 
 + (double)minimumTimeBeforeFadeOut;
 

@@ -6,10 +6,10 @@
     long long _dialogType;
 }
 
-@property(assign,readonly) NSArray * buttons;
-@property(assign,readonly) long long dialogType;
-@property(assign,readonly) SKUILabelViewElement * message;
-@property(assign,readonly) SKUILabelViewElement * title;
+@property (nonatomic, readonly) NSArray *buttons;
+@property (nonatomic, readonly) long long dialogType;
+@property (nonatomic, readonly) SKUILabelViewElement *message;
+@property (nonatomic, readonly) SKUILabelViewElement *title;
 
 - (id)applyUpdatesWithElement:(id)arg1;
 - (id)buttons;

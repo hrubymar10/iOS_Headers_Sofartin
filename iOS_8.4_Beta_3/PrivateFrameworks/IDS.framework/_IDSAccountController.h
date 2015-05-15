@@ -14,13 +14,13 @@
     NSMutableDictionary *_transactionIDToHandlersMap;
 }
 
-@property(assign,retain) NSSet * accounts;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSSet * enabledAccounts;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * serviceName;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, retain) NSSet *accounts;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, retain) NSSet *enabledAccounts;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) NSString *serviceName;
+@property (readonly) Class superclass;
 
 - (void)_callDelegatesWithBlock:(id)arg1;
 - (void)_callDelegatesWithBlock:(id)arg1 group:(id)arg2;

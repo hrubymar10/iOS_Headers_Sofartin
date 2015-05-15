@@ -7,7 +7,7 @@
     NSString *_string;
 }
 
-@property(assign,readonly) NSString * name;
+@property (readonly) NSString *name;
 
 + (void)CAMLParserEndElement:(id)arg1 content:(id)arg2;
 + (void)CAMLParserStartElement:(id)arg1;

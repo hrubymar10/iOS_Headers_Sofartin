@@ -6,7 +6,7 @@
     NSString *_folderID;
 }
 
-@property(assign,copy) NSString * folderID;
+@property (copy) NSString *folderID;
 
 - (id)URLStringWithAccount:(id)arg1;
 - (id)_folderID;

@@ -6,8 +6,8 @@
     CKMediaObject *_mediaObject;
 }
 
-@property(assign,retain) CKMediaObject * mediaObject;
-@property(assign,copy) NSString * transferGUID;
+@property (nonatomic, retain) CKMediaObject *mediaObject;
+@property (nonatomic, readonly, copy) NSString *transferGUID;
 
 - (unsigned long long)balloonCorners;
 - (Class)balloonViewClass;

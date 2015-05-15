@@ -8,10 +8,10 @@
     NSString *_sourceDescription;
 }
 
-@property(assign,readwrite) long long identifier;
-@property(assign,readonly) NSString * localizedSourceDescription;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * sourceDescription;
+@property (nonatomic) long long identifier;
+@property (nonatomic, readonly) NSString *localizedSourceDescription;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *sourceDescription;
 
 - (void).cxx_destruct;
 - (id)archiveDictionary;

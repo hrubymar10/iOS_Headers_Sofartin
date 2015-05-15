@@ -22,16 +22,16 @@
     long long _sizeClass;
 }
 
-@property(assign,copy) NSArray * achievements;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <FUAchievementsViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool pagingEnabled;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } scrollViewContentInset;
-@property(assign,readwrite) bool showsAchievementTitles;
-@property(assign,readwrite) long long sizeClass;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSArray *achievements;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <FUAchievementsViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool pagingEnabled;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } scrollViewContentInset;
+@property (nonatomic) bool showsAchievementTitles;
+@property (nonatomic) long long sizeClass;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_achievementAtScrollViewPoint:(struct CGPoint { double x1; double x2; })arg1;

@@ -4,15 +4,15 @@
 
 @interface CAMatchMoveAnimation : CAAnimation
 
-@property(getter=isAdditive,assign,readwrite) bool additive;
-@property(assign,readwrite) bool appliesRotation;
-@property(assign,readwrite) bool appliesScale;
-@property(assign,readwrite) bool appliesX;
-@property(assign,readwrite) bool appliesY;
-@property(assign,copy) NSString * keyPath;
-@property(assign,readwrite) CALayer * sourceLayer;
-@property(assign,copy) NSArray * sourcePoints;
-@property(assign,readwrite) bool targetsSuperlayer;
+@property (getter=isAdditive) bool additive;
+@property bool appliesRotation;
+@property bool appliesScale;
+@property bool appliesX;
+@property bool appliesY;
+@property (copy) NSString *keyPath;
+@property CALayer *sourceLayer;
+@property (copy) NSArray *sourcePoints;
+@property bool targetsSuperlayer;
 
 + (id)defaultValueForKey:(id)arg1;
 

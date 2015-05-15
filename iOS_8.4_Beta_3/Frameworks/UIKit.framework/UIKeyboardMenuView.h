@@ -38,16 +38,16 @@
     int m_visibleRows;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIKeyboardLayoutStar * layout;
-@property(assign,readwrite) int mode;
-@property(assign,readwrite) UIKBTree * referenceKey;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool usesDarkTheme;
-@property(assign,readwrite) bool usesStraightLeftEdge;
-@property(assign,readonly) bool usesTable;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UIKeyboardLayoutStar *layout;
+@property (nonatomic) int mode;
+@property (nonatomic) UIKBTree *referenceKey;
+@property (readonly) Class superclass;
+@property (nonatomic) bool usesDarkTheme;
+@property (nonatomic) bool usesStraightLeftEdge;
+@property (readonly) bool usesTable;
 
 + (id)viewThatContainsBaseKey;
 

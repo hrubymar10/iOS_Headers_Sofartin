@@ -100,8 +100,8 @@
     } mTailPoint;
 }
 
-@property(assign,retain) TSDFill * dynamicFill;
-@property(assign,readonly) TSDFill * fill;
+@property (nonatomic, retain) TSDFill *dynamicFill;
+@property (nonatomic, readonly) TSDFill *fill;
 
 - (void)aliasPathForScale:(double)arg1 adjustedStroke:(id*)arg2 adjustedPath:(id*)arg3 startDelta:(struct CGPoint { double x1; double x2; }*)arg4 endDelta:(struct CGPoint { double x1; double x2; }*)arg5;
 - (void)aliasPathForScale:(double)arg1 originalStroke:(id)arg2 adjustedStroke:(id*)arg3 adjustedPath:(id*)arg4 startDelta:(struct CGPoint { double x1; double x2; }*)arg5 endDelta:(struct CGPoint { double x1; double x2; }*)arg6;

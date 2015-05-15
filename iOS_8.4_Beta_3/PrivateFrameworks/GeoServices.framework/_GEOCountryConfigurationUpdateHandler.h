@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_callbackQueue;
 }
 
-@property(assign,copy) id callback;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * callbackQueue;
+@property (nonatomic, copy) id callback;
+@property (nonatomic) NSObject<OS_dispatch_queue> *callbackQueue;
 
 - (id)callback;
 - (id)callbackQueue;

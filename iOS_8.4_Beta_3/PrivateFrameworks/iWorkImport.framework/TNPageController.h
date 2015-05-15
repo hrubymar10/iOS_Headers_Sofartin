@@ -30,20 +30,20 @@
     double mUserViewScale;
 }
 
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } contentFrame;
-@property(assign,readonly) double contentScale;
-@property(assign,readwrite) NSObject<TNPageControllerDelegate> * delegate;
-@property(assign,readwrite) TNDocumentRoot * documentRoot;
-@property(assign,readwrite) double footerTextHeight;
-@property(assign,readwrite) double headerTextHeight;
-@property(assign,readonly) bool inDynamicContentScaleChange;
-@property(assign,readonly) unsigned long long numPages;
-@property(assign,readonly) struct CGSize { double x1; double x2; } pageSize;
-@property(assign,readonly) struct CGSize { double x1; double x2; } pageSizeWithGutter;
-@property(getter=isPortrait,assign,readonly) bool portrait;
-@property(assign,readonly) TNPrintProperties * printProperties;
-@property(assign,readwrite) TNSheet * sheet;
-@property(assign,readwrite) double userViewScale;
+@property (readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } contentFrame;
+@property (readonly) double contentScale;
+@property (nonatomic) NSObject<TNPageControllerDelegate> *delegate;
+@property (nonatomic) TNDocumentRoot *documentRoot;
+@property (nonatomic) double footerTextHeight;
+@property (nonatomic) double headerTextHeight;
+@property (nonatomic, readonly) bool inDynamicContentScaleChange;
+@property (readonly) unsigned long long numPages;
+@property (readonly) struct CGSize { double x1; double x2; } pageSize;
+@property (readonly) struct CGSize { double x1; double x2; } pageSizeWithGutter;
+@property (getter=isPortrait, readonly) bool portrait;
+@property (readonly) TNPrintProperties *printProperties;
+@property (nonatomic) TNSheet *sheet;
+@property (nonatomic) double userViewScale;
 
 + (double)autoFitContentScaleForSheet:(id)arg1;
 + (id)p_cachedAutoFitContentScaleDictionary;

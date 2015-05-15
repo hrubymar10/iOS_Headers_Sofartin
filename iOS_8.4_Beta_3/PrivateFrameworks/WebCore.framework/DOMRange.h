@@ -4,19 +4,19 @@
 
 @interface DOMRange : DOMObject <UIWebSelectionBlock>
 
-@property(assign,readonly) bool collapsed;
-@property(assign,readonly) DOMNode * commonAncestorContainer;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) DOMNode * endContainer;
-@property(assign,readonly) int endOffset;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * markupString;
-@property(assign,readonly) DOMNode * startContainer;
-@property(assign,readonly) int startOffset;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
-@property(assign,readonly) WebArchive * webArchive;
+@property (readonly) bool collapsed;
+@property (readonly) DOMNode *commonAncestorContainer;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) DOMNode *endContainer;
+@property (readonly) int endOffset;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) NSString *markupString;
+@property (readonly) DOMNode *startContainer;
+@property (readonly) int startOffset;
+@property (readonly) Class superclass;
+@property (readonly, copy) NSString *text;
+@property (nonatomic, readonly) WebArchive *webArchive;
 
 + (id)rangeForFirstPosition:(id)arg1 second:(id)arg2;
 

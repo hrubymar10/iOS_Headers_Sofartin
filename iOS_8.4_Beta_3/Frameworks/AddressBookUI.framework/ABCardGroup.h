@@ -12,14 +12,14 @@
     bool _useSplitActions;
 }
 
-@property(assign,readonly) NSArray * actionItems;
-@property(assign,readonly) NSArray * actions;
-@property(assign,readwrite) bool addSpacerFromPreviousGroup;
-@property(assign,retain) CNContact * contact;
-@property(assign,readonly) NSArray * displayItems;
-@property(assign,readonly) NSArray * editingItems;
-@property(assign,readonly) NSString * title;
-@property(assign,readwrite) bool useSplitActions;
+@property (nonatomic, readonly) NSArray *actionItems;
+@property (nonatomic, readonly) NSArray *actions;
+@property (nonatomic) bool addSpacerFromPreviousGroup;
+@property (nonatomic, retain) CNContact *contact;
+@property (nonatomic, readonly) NSArray *displayItems;
+@property (nonatomic, readonly) NSArray *editingItems;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic) bool useSplitActions;
 
 + (id)groupForContact:(id)arg1;
 

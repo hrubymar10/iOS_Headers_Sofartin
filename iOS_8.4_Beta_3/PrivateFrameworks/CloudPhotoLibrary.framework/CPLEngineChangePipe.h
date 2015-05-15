@@ -4,12 +4,12 @@
 
 @interface CPLEngineChangePipe : CPLEngineStorage <CPLAbstractObject>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isLocked,assign,readwrite) bool locked;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isLocked, nonatomic) bool locked;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (readonly) Class superclass;
 
 - (id)allChangeBatches;
 - (bool)appendChangeBatch:(id)arg1 error:(id*)arg2;

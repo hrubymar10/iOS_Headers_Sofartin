@@ -4,7 +4,7 @@
 
 @interface SASessionValidationFailed : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * errorCode;
+@property (nonatomic, copy) NSString *errorCode;
 
 + (id)sessionValidationFailed;
 + (id)sessionValidationFailedWithDictionary:(id)arg1 context:(id)arg2;

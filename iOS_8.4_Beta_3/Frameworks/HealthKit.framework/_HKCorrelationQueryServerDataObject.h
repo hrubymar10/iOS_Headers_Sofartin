@@ -7,8 +7,8 @@
     long long _version;
 }
 
-@property(assign,retain) NSDictionary * filterDictionary;
-@property(assign,readwrite) long long version;
+@property (nonatomic, retain) NSDictionary *filterDictionary;
+@property (nonatomic) long long version;
 
 + (bool)supportsSecureCoding;
 

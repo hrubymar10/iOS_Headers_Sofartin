@@ -31,22 +31,22 @@
     NSMutableSet *_visibleOverlays;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <VKOverlayContainerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInRealisticMode,assign,readonly) bool inRealisticMode;
-@property(assign,readonly) bool isShowingRouteInStandardMode;
-@property(assign,readonly) NSSet * persistentOverlays;
-@property(assign,readonly) struct { struct VKPoint { double x_1_1_1; double x_1_1_2; double x_1_1_3; } x1; double x2; bool x3; } puckPosition;
-@property(assign,readwrite) <VKOverlayContainerRouteDelegate> * routeDelegate;
-@property(assign,retain) <VKRouteMatchedAnnotationPresentation> * routeLineSplitAnnotation;
-@property(assign,readwrite) bool shouldCheckForOcclusion;
-@property(assign,readwrite) bool shouldOccludeTraffic;
-@property(assign,readwrite) bool shouldShowTraffic;
-@property(assign,retain) VKSkyModel * skyModel;
-@property(assign,readonly) VKStyleManager * styleManager;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <VKOverlayContainerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isInRealisticMode, nonatomic, readonly) bool inRealisticMode;
+@property (nonatomic, readonly) bool isShowingRouteInStandardMode;
+@property (nonatomic, readonly) NSSet *persistentOverlays;
+@property (nonatomic, readonly) struct { struct VKPoint { double x_1_1_1; double x_1_1_2; double x_1_1_3; } x1; double x2; bool x3; } puckPosition;
+@property (nonatomic) <VKOverlayContainerRouteDelegate> *routeDelegate;
+@property (nonatomic, retain) <VKRouteMatchedAnnotationPresentation> *routeLineSplitAnnotation;
+@property (nonatomic) bool shouldCheckForOcclusion;
+@property (nonatomic) bool shouldOccludeTraffic;
+@property (nonatomic) bool shouldShowTraffic;
+@property (nonatomic, retain) VKSkyModel *skyModel;
+@property (nonatomic, readonly) VKStyleManager *styleManager;
+@property (readonly) Class superclass;
 
 + (bool)reloadOnStylesheetChange;
 

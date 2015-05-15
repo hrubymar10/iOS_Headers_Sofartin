@@ -24,12 +24,12 @@
     UITextMagnifierTimeWeightedPoint *_weightedPoint;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } animationPoint;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } magnificationPoint;
-@property(assign,retain) UIView * target;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } terminalPoint;
-@property(assign,readonly) bool terminalPointPlacedCarefully;
-@property(assign,retain) UIResponder<UITextInput> * text;
+@property (nonatomic) struct CGPoint { double x1; double x2; } animationPoint;
+@property (nonatomic) struct CGPoint { double x1; double x2; } magnificationPoint;
+@property (nonatomic, retain) UIView *target;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } terminalPoint;
+@property (nonatomic, readonly) bool terminalPointPlacedCarefully;
+@property (nonatomic, retain) UIResponder<UITextInput> *text;
 
 + (id)getLoupeBackgroundColor:(id)arg1;
 

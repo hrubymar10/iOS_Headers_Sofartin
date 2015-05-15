@@ -4,9 +4,9 @@
 
 @interface ABMultiCellContentView_SocialProfile : ABMultiCellContentView_DisplayAlternate
 
-@property(assign,readonly) NSString * placeholder;
-@property(assign,readonly) NSString * service;
-@property(assign,readonly) NSString * username;
+@property (readonly) NSString *placeholder;
+@property (readonly) NSString *service;
+@property (readonly) NSString *username;
 
 - (id)placeholder;
 - (void)reloadFromModelIncludingRows:(bool)arg1;

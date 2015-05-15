@@ -23,15 +23,15 @@
     bool _usesSmallText;
 }
 
-@property(assign,readwrite) bool allowsOccurrenceSelection;
-@property(assign,readwrite) <EKDayAllDayViewDelegate> * delegate;
-@property(assign,retain) EKEvent * dimmedOccurrence;
-@property(assign,readwrite) double fixedHeight;
-@property(assign,readwrite) int maxVisibleRows;
-@property(assign,readonly) double naturalHeight;
-@property(assign,readwrite) bool showsBorderLines;
-@property(assign,readwrite) bool showsLabel;
-@property(assign,readwrite) bool showsSelection;
+@property (nonatomic) bool allowsOccurrenceSelection;
+@property (nonatomic) <EKDayAllDayViewDelegate> *delegate;
+@property (nonatomic, retain) EKEvent *dimmedOccurrence;
+@property (nonatomic) double fixedHeight;
+@property (nonatomic) int maxVisibleRows;
+@property (nonatomic, readonly) double naturalHeight;
+@property (nonatomic) bool showsBorderLines;
+@property (nonatomic) bool showsLabel;
+@property (nonatomic) bool showsSelection;
 
 + (id)allDayLabelBoldFont;
 + (id)allDayLabelFont;

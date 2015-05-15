@@ -10,9 +10,9 @@
     bool _wantsPlusDLayer;
 }
 
-@property(assign,copy) NSString * backdropGroupName;
-@property(assign,readwrite) long long graphicsQuality;
-@property(assign,readwrite) bool wantsPlusDLayer;
+@property (nonatomic, copy) NSString *backdropGroupName;
+@property (nonatomic) long long graphicsQuality;
+@property (nonatomic) bool wantsPlusDLayer;
 
 + (id)defaultBackgroundColorForGraphicsQuality:(long long)arg1;
 

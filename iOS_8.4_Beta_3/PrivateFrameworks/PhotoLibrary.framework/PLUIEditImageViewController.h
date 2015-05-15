@@ -8,8 +8,8 @@
     int _saveOptions;
 }
 
-@property(assign,readwrite) id delegate;
-@property(assign,readwrite) int mode;
+@property (nonatomic) id delegate;
+@property (nonatomic) int mode;
 
 - (unsigned long long)_contentAutoresizingMask;
 - (unsigned long long)_tileAutoresizingMask;

@@ -10,11 +10,11 @@
     TSCH3DShaderHandle *mVertexShader;
 }
 
-@property(assign,readonly) NSMutableDictionary * attributeLocations;
-@property(assign,readonly) TSCH3DShaderEffectsStates * currentEffectsStates;
-@property(assign,readonly) TSCH3DShaderHandle * fragmentShader;
-@property(assign,readonly) NSMutableDictionary * uniformLocations;
-@property(assign,readonly) TSCH3DShaderHandle * vertexShader;
+@property (nonatomic, readonly) NSMutableDictionary *attributeLocations;
+@property (nonatomic, readonly) TSCH3DShaderEffectsStates *currentEffectsStates;
+@property (nonatomic, readonly) TSCH3DShaderHandle *fragmentShader;
+@property (nonatomic, readonly) NSMutableDictionary *uniformLocations;
+@property (nonatomic, readonly) TSCH3DShaderHandle *vertexShader;
 
 - (id)attributeLocations;
 - (id)currentEffectsStates;

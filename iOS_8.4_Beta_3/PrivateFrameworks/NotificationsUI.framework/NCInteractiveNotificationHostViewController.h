@@ -13,17 +13,17 @@
     bool _showsKeyboard;
 }
 
-@property(assign,retain) NCViewServiceDescriptor * accessoryViewService;
-@property(assign,readwrite) double bottomOverhangHeight;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <NCInteractiveNotificationHostDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NCViewServiceDescriptor * inlayViewService;
-@property(assign,readwrite) double maximumHeight;
-@property(getter=isModal,assign,readwrite) bool modal;
-@property(assign,readwrite) bool showsKeyboard;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NCViewServiceDescriptor *accessoryViewService;
+@property (nonatomic) double bottomOverhangHeight;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <NCInteractiveNotificationHostDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NCViewServiceDescriptor *inlayViewService;
+@property (nonatomic) double maximumHeight;
+@property (getter=isModal, nonatomic) bool modal;
+@property (nonatomic) bool showsKeyboard;
+@property (readonly) Class superclass;
 
 + (id)exportedInterface;
 + (void)initialize;

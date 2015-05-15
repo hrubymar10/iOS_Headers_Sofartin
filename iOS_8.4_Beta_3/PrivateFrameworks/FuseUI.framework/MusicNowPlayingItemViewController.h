@@ -17,14 +17,14 @@
     bool _wantsVideoLayer;
 }
 
-@property(assign,readwrite) bool canShowOverlayControls;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicNowPlayingItemViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MPAVItem * item;
-@property(assign,readwrite) bool overlayVideoControlsHidden;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool canShowOverlayControls;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicNowPlayingItemViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MPAVItem *item;
+@property (nonatomic) bool overlayVideoControlsHidden;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_applicationDidEnterBackground:(id)arg1;

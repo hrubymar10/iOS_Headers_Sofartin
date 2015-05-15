@@ -11,12 +11,12 @@
     NSMutableData *_value;
 }
 
-@property(assign,retain) CBCentral * central;
-@property(assign,retain) CBCharacteristic * characteristic;
-@property(assign,readwrite) bool ignoreResponse;
-@property(assign,readonly) unsigned long long offset;
-@property(assign,readonly) NSNumber * transactionID;
-@property(assign,copy) NSData * value;
+@property (nonatomic, readonly, retain) CBCentral *central;
+@property (nonatomic, retain) CBCharacteristic *characteristic;
+@property (nonatomic) bool ignoreResponse;
+@property (nonatomic, readonly) unsigned long long offset;
+@property (nonatomic, readonly) NSNumber *transactionID;
+@property (copy) NSData *value;
 
 - (void)appendValueData:(id)arg1;
 - (id)central;

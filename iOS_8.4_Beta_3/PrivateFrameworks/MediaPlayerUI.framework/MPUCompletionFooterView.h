@@ -29,28 +29,28 @@
     UISegmentedControl *_variantSegmentedControl;
 }
 
-@property(assign,retain) UIView * bottomSeparatorView;
-@property(assign,copy) NSString * completeMyCollectionTitle;
-@property(assign,copy) NSString * completeSubtitleFormat;
-@property(assign,copy) NSString * completeTitleFormat;
-@property(assign,retain) MPStoreCompletionOffering * completionOffering;
-@property(assign,copy) NSString * completionTotalFormat;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPUCompletionFooterViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPUItemOfferButton * itemOfferButton;
-@property(assign,readwrite) long long preferredVariant;
-@property(getter=isPurchasing,assign,readwrite) bool purchasing;
-@property(assign,readwrite) bool showsVariants;
-@property(assign,readwrite) long long style;
-@property(assign,retain) UILabel * subtitleLabel;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
-@property(assign,retain) UILabel * titleLabel;
-@property(assign,retain) UIView * topSeparatorView;
-@property(assign,retain) UISegmentedControl * variantSegmentedControl;
+@property (nonatomic, retain) UIView *bottomSeparatorView;
+@property (nonatomic, copy) NSString *completeMyCollectionTitle;
+@property (nonatomic, copy) NSString *completeSubtitleFormat;
+@property (nonatomic, copy) NSString *completeTitleFormat;
+@property (nonatomic, retain) MPStoreCompletionOffering *completionOffering;
+@property (nonatomic, copy) NSString *completionTotalFormat;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPUCompletionFooterViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPUItemOfferButton *itemOfferButton;
+@property (nonatomic) long long preferredVariant;
+@property (getter=isPurchasing, nonatomic) bool purchasing;
+@property (nonatomic) bool showsVariants;
+@property (nonatomic) long long style;
+@property (nonatomic, retain) UILabel *subtitleLabel;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, retain) UILabel *titleLabel;
+@property (nonatomic, retain) UIView *topSeparatorView;
+@property (nonatomic, retain) UISegmentedControl *variantSegmentedControl;
 
 + (double)defaultHeight;
 

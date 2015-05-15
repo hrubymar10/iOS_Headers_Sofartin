@@ -17,23 +17,23 @@
     NSString *_shortTokenRoutingKey;
 }
 
-@property(assign,retain) NSString * etag;
-@property(assign,readonly) bool hasEtag;
-@property(assign,readonly) bool hasInternalAppSpecificMetadata;
-@property(assign,readonly) bool hasInvitedPcs;
-@property(assign,readwrite) bool hasPublicAccess;
-@property(assign,readonly) bool hasSelfAddedPcs;
-@property(assign,readonly) bool hasShareId;
-@property(assign,readonly) bool hasShortTokenHash;
-@property(assign,readonly) bool hasShortTokenRoutingKey;
-@property(assign,retain) NSData * internalAppSpecificMetadata;
-@property(assign,retain) CKDPProtectionInfo * invitedPcs;
-@property(assign,retain) NSMutableArray * participants;
-@property(assign,readwrite) int publicAccess;
-@property(assign,retain) CKDPProtectionInfo * selfAddedPcs;
-@property(assign,retain) CKDPShareIdentifier * shareId;
-@property(assign,retain) NSData * shortTokenHash;
-@property(assign,retain) NSString * shortTokenRoutingKey;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, readonly) bool hasEtag;
+@property (nonatomic, readonly) bool hasInternalAppSpecificMetadata;
+@property (nonatomic, readonly) bool hasInvitedPcs;
+@property (nonatomic) bool hasPublicAccess;
+@property (nonatomic, readonly) bool hasSelfAddedPcs;
+@property (nonatomic, readonly) bool hasShareId;
+@property (nonatomic, readonly) bool hasShortTokenHash;
+@property (nonatomic, readonly) bool hasShortTokenRoutingKey;
+@property (nonatomic, retain) NSData *internalAppSpecificMetadata;
+@property (nonatomic, retain) CKDPProtectionInfo *invitedPcs;
+@property (nonatomic, retain) NSMutableArray *participants;
+@property (nonatomic) int publicAccess;
+@property (nonatomic, retain) CKDPProtectionInfo *selfAddedPcs;
+@property (nonatomic, retain) CKDPShareIdentifier *shareId;
+@property (nonatomic, retain) NSData *shortTokenHash;
+@property (nonatomic, retain) NSString *shortTokenRoutingKey;
 
 - (void).cxx_destruct;
 - (void)addParticipant:(id)arg1;

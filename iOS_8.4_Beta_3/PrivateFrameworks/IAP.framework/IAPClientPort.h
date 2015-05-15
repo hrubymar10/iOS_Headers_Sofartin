@@ -9,10 +9,10 @@
     NSString *_uuid;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * clientPortEventQueue;
-@property(assign,readwrite) id sendDataHandler;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * sendDataHandlerQueue;
-@property(assign,readonly) NSString * uuid;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *clientPortEventQueue;
+@property (nonatomic) id sendDataHandler;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *sendDataHandlerQueue;
+@property (nonatomic, readonly) NSString *uuid;
 
 - (id)clientPortEventQueue;
 - (void)dealloc;

@@ -6,9 +6,9 @@
     _IDSService *_internal;
 }
 
-@property(assign,retain) _IDSService * _internal;
-@property(assign,copy) NSSet * accounts;
-@property(assign,copy) NSArray * devices;
+@property (nonatomic, readonly, retain) _IDSService *_internal;
+@property (nonatomic, readonly, copy) NSSet *accounts;
+@property (nonatomic, readonly, copy) NSArray *devices;
 
 + (bool)checkMessageSize:(unsigned long long)arg1 priority:(long long)arg2;
 

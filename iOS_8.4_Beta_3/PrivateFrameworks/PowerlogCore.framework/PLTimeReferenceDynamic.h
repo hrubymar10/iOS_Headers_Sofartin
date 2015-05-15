@@ -11,12 +11,12 @@
     double _tooFarInPastDistance;
 }
 
-@property(assign,readwrite) double accumulatedError;
-@property(assign,retain) NSDate * lastQueryTime;
-@property(assign,retain) NSMutableArray * offsetHistory;
-@property(assign,retain) NSMutableDictionary * timeChangeBlocks;
-@property(assign,readwrite) double tooFarInFutureDistance;
-@property(assign,readwrite) double tooFarInPastDistance;
+@property double accumulatedError;
+@property (retain) NSDate *lastQueryTime;
+@property (retain) NSMutableArray *offsetHistory;
+@property (retain) NSMutableDictionary *timeChangeBlocks;
+@property double tooFarInFutureDistance;
+@property double tooFarInPastDistance;
 
 + (double)nearestDistanceFromDate:(id)arg1 toRegionWithStartDate:(id)arg2 andEndDate:(id)arg3;
 

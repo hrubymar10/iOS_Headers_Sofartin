@@ -8,9 +8,9 @@
     NSString *_sourceApplicationBundleIdentifier;
 }
 
-@property(assign,retain) CKAccountInfo * accountInfoOverride;
-@property(assign,retain) CKContainerID * containerID;
-@property(assign,retain) NSString * sourceApplicationBundleIdentifier;
+@property (nonatomic, retain) CKAccountInfo *accountInfoOverride;
+@property (nonatomic, retain) CKContainerID *containerID;
+@property (nonatomic, retain) NSString *sourceApplicationBundleIdentifier;
 
 + (bool)supportsSecureCoding;
 

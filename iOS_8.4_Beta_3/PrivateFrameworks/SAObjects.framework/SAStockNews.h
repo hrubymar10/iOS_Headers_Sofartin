@@ -4,9 +4,9 @@
 
 @interface SAStockNews : SADomainObject
 
-@property(assign,copy) NSDate * timeStamp;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * url;
+@property (nonatomic, copy) NSDate *timeStamp;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *url;
 
 + (id)news;
 + (id)newsWithDictionary:(id)arg1 context:(id)arg2;

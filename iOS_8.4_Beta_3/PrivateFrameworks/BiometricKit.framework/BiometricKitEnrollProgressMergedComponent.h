@@ -7,8 +7,8 @@
     BiometricKitEnrollProgressCoordinates *_transformationCoordinates;
 }
 
-@property(assign,readwrite) long long componentID;
-@property(assign,retain) BiometricKitEnrollProgressCoordinates * transformationCoordinates;
+@property (nonatomic) long long componentID;
+@property (nonatomic, retain) BiometricKitEnrollProgressCoordinates *transformationCoordinates;
 
 - (long long)componentID;
 - (void)dealloc;

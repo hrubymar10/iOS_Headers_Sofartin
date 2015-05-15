@@ -10,8 +10,8 @@
     } _graphPoint;
 }
 
-@property(assign,retain) UIColor * color;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } graphPoint;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic) struct CGPoint { double x1; double x2; } graphPoint;
 
 + (id)datumWithPoint:(struct CGPoint { double x1; double x2; })arg1;
 

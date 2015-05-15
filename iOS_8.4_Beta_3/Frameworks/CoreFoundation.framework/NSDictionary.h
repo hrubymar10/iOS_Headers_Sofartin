@@ -2,37 +2,37 @@
    Image: /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
  */
 
-@interface NSDictionary : NSObject <NSCopying, NSFastEnumeration, NSMutableCopying, NSSecureCoding, PQLBindable, PQLBindable>
+@interface NSDictionary : NSObject <NSCopying, NSFastEnumeration, NSMutableCopying, NSSecureCoding, PQLBindable>
 
-@property(assign,readonly) float averageRating;
-@property(assign,readonly) NSString * bundleId;
-@property(assign,readonly) NSArray * categories;
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) NSString * creator;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned short fileHFSFlags;
-@property(assign,readonly) unsigned long long fileHFSResourceForkSize;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isInstalled;
-@property(assign,readonly) bool isOfficialApp;
-@property(assign,readwrite) unsigned long long lastClientRevision;
-@property(assign,readwrite) unsigned long long lastServerRevision;
-@property(assign,readwrite) unsigned long long newRevision;
-@property(assign,readonly) NSString * npkRelevancyRelevantText;
-@property(assign,readonly) NSString * npkRelevancyUniqueID;
-@property(assign,readonly) NSString * priceFormatted;
-@property(assign,readonly) unsigned long long ratingCount;
-@property(assign,readonly) NSNumber * storeID;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * title;
-@property(assign,readonly) NSArray * transitModeKeys;
-@property(assign,readonly) NSString * url;
-@property(assign,copy) NSString * versionToken;
+@property (nonatomic, readonly) float averageRating;
+@property (nonatomic, readonly) NSString *bundleId;
+@property (nonatomic, readonly) NSArray *categories;
+@property (readonly) unsigned long long count;
+@property (nonatomic, readonly) NSString *creator;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) unsigned short fileHFSFlags;
+@property (nonatomic, readonly) unsigned long long fileHFSResourceForkSize;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isInstalled;
+@property (nonatomic, readonly) bool isOfficialApp;
+@property (nonatomic) unsigned long long lastClientRevision;
+@property (nonatomic) unsigned long long lastServerRevision;
+@property (nonatomic) unsigned long long newRevision;
+@property (readonly) NSString *npkRelevancyRelevantText;
+@property (readonly) NSString *npkRelevancyUniqueID;
+@property (nonatomic, readonly) NSString *priceFormatted;
+@property (nonatomic, readonly) unsigned long long ratingCount;
+@property (nonatomic, readonly) NSNumber *storeID;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) NSArray *transitModeKeys;
+@property (nonatomic, readonly) NSString *url;
+@property (nonatomic, copy) NSString *versionToken;
 
 + (id)SLDictionaryWithOAuthAccessTokenResponseData:(id)arg1;
 + (id)_dictionaryWithData:(id)arg1 isPlist:(bool)arg2 allowedClasses:(id)arg3;

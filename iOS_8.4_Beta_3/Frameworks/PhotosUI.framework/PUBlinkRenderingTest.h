@@ -7,8 +7,8 @@
     UIImageView *_imageView;
 }
 
-@property(assign,retain) PLManagedAsset * asset;
-@property(assign,retain) UIImageView * imageView;
+@property (nonatomic, retain) PLManagedAsset *asset;
+@property (nonatomic, retain) UIImageView *imageView;
 
 - (void).cxx_destruct;
 - (id)asset;

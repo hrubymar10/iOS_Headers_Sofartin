@@ -6,7 +6,7 @@
     NSString *_imageDirectoryPath;
 }
 
-@property(assign,copy) NSString * imageDirectoryPath;
+@property (nonatomic, copy) NSString *imageDirectoryPath;
 
 + (id)actionWithImageDirectoryPath:(id)arg1;
 

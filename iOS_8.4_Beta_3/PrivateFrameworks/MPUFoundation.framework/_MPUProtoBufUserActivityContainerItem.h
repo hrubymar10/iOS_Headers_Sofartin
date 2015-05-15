@@ -11,12 +11,12 @@
     MIPMultiverseIdentifier *_visualReferenceMultiverseIdentifier;
 }
 
-@property(assign,readwrite) int containerItemType;
-@property(assign,readwrite) bool hasContainerItemType;
-@property(assign,readonly) bool hasSelectedMultiverseIdentifier;
-@property(assign,readonly) bool hasVisualReferenceMultiverseIdentifier;
-@property(assign,retain) MIPMultiverseIdentifier * selectedMultiverseIdentifier;
-@property(assign,retain) MIPMultiverseIdentifier * visualReferenceMultiverseIdentifier;
+@property (nonatomic) int containerItemType;
+@property (nonatomic) bool hasContainerItemType;
+@property (nonatomic, readonly) bool hasSelectedMultiverseIdentifier;
+@property (nonatomic, readonly) bool hasVisualReferenceMultiverseIdentifier;
+@property (nonatomic, retain) MIPMultiverseIdentifier *selectedMultiverseIdentifier;
+@property (nonatomic, retain) MIPMultiverseIdentifier *visualReferenceMultiverseIdentifier;
 
 - (void).cxx_destruct;
 - (int)containerItemType;

@@ -11,12 +11,12 @@
     float _rate;
 }
 
-@property(assign,readwrite) MPAVItem * currentItem;
-@property(assign,retain) id periodicTimeObserver;
-@property(assign,readwrite) MPAVController * player;
-@property(assign,retain) SKUIMediaPlayerItemStatus * playerItem;
-@property(assign,readwrite) bool playing;
-@property(assign,readwrite) float rate;
+@property (nonatomic) MPAVItem *currentItem;
+@property (nonatomic, retain) id periodicTimeObserver;
+@property (nonatomic) MPAVController *player;
+@property (nonatomic, retain) SKUIMediaPlayerItemStatus *playerItem;
+@property (nonatomic) bool playing;
+@property (nonatomic) float rate;
 
 - (void).cxx_destruct;
 - (id)currentItem;

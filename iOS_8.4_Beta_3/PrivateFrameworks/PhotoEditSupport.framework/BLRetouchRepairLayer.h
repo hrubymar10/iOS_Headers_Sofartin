@@ -25,11 +25,11 @@
     int _totalStrokeArea;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } brushStrokeRect;
-@property(assign,retain) UIImage * repairAnalysisImage;
-@property(assign,retain) BLImagePatchList * repairPatchList;
-@property(assign,retain) UIImage * repairSourceImage;
-@property(assign,readwrite) int totalStrokeArea;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } brushStrokeRect;
+@property (nonatomic, retain) UIImage *repairAnalysisImage;
+@property (nonatomic, retain) BLImagePatchList *repairPatchList;
+@property (nonatomic, retain) UIImage *repairSourceImage;
+@property (nonatomic) int totalStrokeArea;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })brushStrokeRect;
 - (void)dealloc;

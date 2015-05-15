@@ -9,10 +9,10 @@
     CalDAVCalendarServerUpdateItem *_update;
 }
 
-@property(assign,retain) CalDAVCalendarServerCancelItem * cancel;
-@property(assign,retain) CoreDAVItemWithNoChildren * create;
-@property(assign,retain) CalDAVCalendarServerReplyItem * reply;
-@property(assign,retain) CalDAVCalendarServerUpdateItem * update;
+@property (nonatomic, retain) CalDAVCalendarServerCancelItem *cancel;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *create;
+@property (nonatomic, retain) CalDAVCalendarServerReplyItem *reply;
+@property (nonatomic, retain) CalDAVCalendarServerUpdateItem *update;
 
 - (id)cancel;
 - (id)copyParseRules;

@@ -6,8 +6,8 @@
     NSMutableString *_passcodeMutableString;
 }
 
-@property(assign,retain) NSMutableString * passcodeMutableString;
-@property(assign,readonly) NSString * passcodeString;
+@property (retain) NSMutableString *passcodeMutableString;
+@property (readonly) NSString *passcodeString;
 
 - (void)appendCharacter:(id)arg1;
 - (void)clear;

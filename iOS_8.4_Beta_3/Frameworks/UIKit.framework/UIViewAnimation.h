@@ -28,20 +28,20 @@
     UIView *_view;
 }
 
-@property(assign,readonly) bool animateFromCurrentPosition;
-@property(assign,readonly) int curve;
-@property(assign,readonly) bool editing;
-@property(assign,readonly) double endAlpha;
-@property(assign,readonly) double endFraction;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endRect;
-@property(assign,readonly) NSIndexPath * indexPath;
-@property(assign,readwrite) bool shouldAllowGroupOpacityAfterAnimation;
-@property(assign,readwrite) bool shouldAnimateShadow;
-@property(assign,readwrite) bool shouldClipToBoundsAfterAnimation;
-@property(assign,readonly) bool shouldDeleteAfterAnimation;
-@property(assign,readwrite) bool shouldResetGroupOpacityAfterAnimation;
-@property(assign,readonly) double startFraction;
-@property(assign,readonly) UIView * view;
+@property (nonatomic, readonly) bool animateFromCurrentPosition;
+@property (nonatomic, readonly) int curve;
+@property (nonatomic, readonly) bool editing;
+@property (nonatomic, readonly) double endAlpha;
+@property (nonatomic, readonly) double endFraction;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endRect;
+@property (nonatomic, readonly) NSIndexPath *indexPath;
+@property (nonatomic) bool shouldAllowGroupOpacityAfterAnimation;
+@property (nonatomic) bool shouldAnimateShadow;
+@property (nonatomic) bool shouldClipToBoundsAfterAnimation;
+@property (nonatomic, readonly) bool shouldDeleteAfterAnimation;
+@property (nonatomic) bool shouldResetGroupOpacityAfterAnimation;
+@property (nonatomic, readonly) double startFraction;
+@property (nonatomic, readonly) UIView *view;
 
 - (bool)animateFromCurrentPosition;
 - (int)curve;

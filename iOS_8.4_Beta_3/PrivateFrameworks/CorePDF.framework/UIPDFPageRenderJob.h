@@ -20,12 +20,12 @@
     id _userData;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) UIPDFPageRenderOperation * operation;
-@property(assign,readonly) unsigned long long pageIndex;
-@property(assign,readonly) long long priority;
-@property(assign,readwrite) bool releaseWhenDone;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (readonly, retain) UIImage *image;
+@property UIPDFPageRenderOperation *operation;
+@property (readonly) unsigned long long pageIndex;
+@property (readonly) long long priority;
+@property bool releaseWhenDone;
+@property (readonly) struct CGSize { double x1; double x2; } size;
 
 - (void)cancel;
 - (void)cancelOperation;

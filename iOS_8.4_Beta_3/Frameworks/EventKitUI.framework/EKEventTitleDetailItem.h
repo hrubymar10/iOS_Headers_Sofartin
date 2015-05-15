@@ -10,7 +10,7 @@
     bool _showDot;
 }
 
-@property(assign,readwrite) NSObject<EKEventTitleDetailItemDelegate> * editDelegate;
+@property (nonatomic) NSObject<EKEventTitleDetailItemDelegate> *editDelegate;
 
 - (void).cxx_destruct;
 - (void)_updateCellIfNeededForWidth:(double)arg1;

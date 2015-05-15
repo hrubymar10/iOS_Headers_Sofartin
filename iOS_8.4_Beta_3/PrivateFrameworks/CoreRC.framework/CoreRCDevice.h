@@ -9,9 +9,9 @@
     NSUUID *_uniqueID;
 }
 
-@property(assign,readonly) NSUUID * busUniqueID;
-@property(assign,readonly) bool isLocalDevice;
-@property(assign,readonly) NSUUID * uniqueID;
+@property (nonatomic, readonly) NSUUID *busUniqueID;
+@property (nonatomic, readonly) bool isLocalDevice;
+@property (nonatomic, readonly) NSUUID *uniqueID;
 
 + (bool)supportsSecureCoding;
 

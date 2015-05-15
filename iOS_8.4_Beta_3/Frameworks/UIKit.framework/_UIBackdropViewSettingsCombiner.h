@@ -10,11 +10,11 @@
     double _weighting;
 }
 
-@property(assign,retain) _UIBackdropViewSettings * inputSettingsA;
-@property(assign,retain) _UIBackdropViewSettings * inputSettingsB;
-@property(assign,retain) _UIBackdropViewSettings * outputSettingsA;
-@property(assign,retain) _UIBackdropViewSettings * outputSettingsB;
-@property(assign,readwrite) double weighting;
+@property (nonatomic, retain) _UIBackdropViewSettings *inputSettingsA;
+@property (nonatomic, retain) _UIBackdropViewSettings *inputSettingsB;
+@property (nonatomic, retain) _UIBackdropViewSettings *outputSettingsA;
+@property (nonatomic, retain) _UIBackdropViewSettings *outputSettingsB;
+@property (nonatomic) double weighting;
 
 - (void)computeOutputSettingsUsingModel:(id)arg1;
 - (void)dealloc;

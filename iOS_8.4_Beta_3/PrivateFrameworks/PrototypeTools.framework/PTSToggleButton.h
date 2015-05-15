@@ -9,18 +9,18 @@
     id _valueForOnState;
 }
 
-@property(assign,readwrite) int alignment;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) _UISettings * settings;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * titleForOffState;
-@property(assign,copy) NSString * titleForOnState;
-@property(assign,copy) id valueForOffState;
-@property(assign,copy) id valueForOnState;
-@property(assign,copy) NSString * valueKeyPath;
+@property (nonatomic) int alignment;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) _UISettings *settings;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *titleForOffState;
+@property (nonatomic, copy) NSString *titleForOnState;
+@property (nonatomic, copy) id valueForOffState;
+@property (nonatomic, copy) id valueForOnState;
+@property (nonatomic, copy) NSString *valueKeyPath;
 
 + (id)toggleButtonForSettings:(id)arg1 valueKeyPath:(id)arg2 titleForOnState:(id)arg3 titleForOffState:(id)arg4;
 

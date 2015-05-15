@@ -4,8 +4,8 @@
 
 @interface SAGKNewsLinkedAnswer : SAGKLinkedAnswer
 
-@property(assign,copy) NSDate * publicationDate;
-@property(assign,copy) NSString * source;
+@property (nonatomic, copy) NSDate *publicationDate;
+@property (nonatomic, copy) NSString *source;
 
 + (id)newsLinkedAnswer;
 + (id)newsLinkedAnswerWithDictionary:(id)arg1 context:(id)arg2;

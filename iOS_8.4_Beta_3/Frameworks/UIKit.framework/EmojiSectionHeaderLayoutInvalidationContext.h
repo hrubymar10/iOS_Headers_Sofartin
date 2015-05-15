@@ -7,7 +7,7 @@
     NSMutableIndexSet *_invalidatedSections;
 }
 
-@property(assign,readonly) NSIndexSet * invalidatedSections;
+@property (nonatomic, readonly) NSIndexSet *invalidatedSections;
 
 - (void)dealloc;
 - (void)invalidateSectionHeaderInSection:(long long)arg1 withPreferredWidth:(double)arg2;

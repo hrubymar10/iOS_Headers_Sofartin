@@ -7,8 +7,8 @@
     NSString *mEffect;
 }
 
-@property(assign,readonly) NSDictionary * attributes;
-@property(assign,readonly) NSString * effect;
+@property (nonatomic, readonly) NSDictionary *attributes;
+@property (nonatomic, readonly) NSString *effect;
 
 + (id)attributesWithEffect:(id)arg1 attributes:(id)arg2;
 + (bool)customAttributeKeyIsValid:(id)arg1;

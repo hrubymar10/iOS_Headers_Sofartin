@@ -4,22 +4,22 @@
 
 @interface UIMutableApplicationSceneClientSettings : FBSMutableSceneClientSettings <UIApplicationSceneClientSettings>
 
-@property(assign,readwrite) long long compatibilityMode;
-@property(assign,readwrite) long long controlCenterRevealMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) double defaultPNGExpirationTime;
-@property(assign,copy) NSString * defaultPNGName;
-@property(assign,readwrite) bool defaultStatusBarHidden;
-@property(assign,readwrite) long long defaultStatusBarStyle;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool idleTimerDisabled;
-@property(assign,readwrite) long long notificationCenterRevealMode;
-@property(assign,readwrite) bool orientationEnabled;
-@property(assign,readwrite) unsigned long long proximityDetectionModes;
-@property(assign,readwrite) bool statusBarHidden;
-@property(assign,readwrite) long long statusBarStyle;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long compatibilityMode;
+@property (nonatomic) long long controlCenterRevealMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) double defaultPNGExpirationTime;
+@property (nonatomic, copy) NSString *defaultPNGName;
+@property (nonatomic) bool defaultStatusBarHidden;
+@property (nonatomic) long long defaultStatusBarStyle;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool idleTimerDisabled;
+@property (nonatomic) long long notificationCenterRevealMode;
+@property (nonatomic) bool orientationEnabled;
+@property (nonatomic) unsigned long long proximityDetectionModes;
+@property (nonatomic) bool statusBarHidden;
+@property (nonatomic) long long statusBarStyle;
+@property (readonly) Class superclass;
 
 - (long long)compatibilityMode;
 - (long long)controlCenterRevealMode;

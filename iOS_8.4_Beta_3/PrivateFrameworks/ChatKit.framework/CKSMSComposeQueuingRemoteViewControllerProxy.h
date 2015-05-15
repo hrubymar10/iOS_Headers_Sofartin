@@ -7,8 +7,8 @@
     <CKSMSCompose> *_serviceViewControllerProxy;
 }
 
-@property(assign,retain) NSMutableArray * queuedInvocations;
-@property(assign,retain) <CKSMSCompose> * serviceViewControllerProxy;
+@property (nonatomic, retain) NSMutableArray *queuedInvocations;
+@property (nonatomic, retain) <CKSMSCompose> *serviceViewControllerProxy;
 
 - (void)dealloc;
 - (void)forwardInvocation:(id)arg1;

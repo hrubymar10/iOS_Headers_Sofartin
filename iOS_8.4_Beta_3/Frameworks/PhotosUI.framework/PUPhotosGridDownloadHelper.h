@@ -9,7 +9,7 @@
     PUPhotosGridViewController *_gridViewController;
 }
 
-@property(assign,readonly) PUPhotosGridViewController * gridViewController;
+@property (nonatomic, readonly) PUPhotosGridViewController *gridViewController;
 
 - (void).cxx_destruct;
 - (void)_downloadForRequest:(id)arg1 didCompleteWithSuccess:(bool)arg2 canceled:(bool)arg3 error:(id)arg4;

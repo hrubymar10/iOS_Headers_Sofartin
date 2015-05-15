@@ -6,8 +6,8 @@
     IKDOMNode *_parentNode;
 }
 
-@property(assign,readonly) unsigned long long length;
-@property(assign,readwrite) IKDOMNode * parentNode;
+@property (readonly) unsigned long long length;
+@property (nonatomic) IKDOMNode *parentNode;
 
 - (void).cxx_destruct;
 - (id)initWithAppContext:(id)arg1 node:(id)arg2;

@@ -7,8 +7,8 @@
     NSDate *_startDate;
 }
 
-@property(assign,retain) NSDate * endDate;
-@property(assign,retain) NSDate * startDate;
+@property (nonatomic, retain) NSDate *endDate;
+@property (nonatomic, retain) NSDate *startDate;
 
 + (bool)supportsSecureCoding;
 

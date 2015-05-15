@@ -4,8 +4,8 @@
 
 @interface IKColumnElement : IKCollectionElement
 
-@property(assign,readonly) NSString * columnType;
-@property(assign,readonly) IKImageElement * headerImage;
+@property (nonatomic, readonly) NSString *columnType;
+@property (nonatomic, readonly) IKImageElement *headerImage;
 
 - (id)columnType;
 - (id)headerImage;

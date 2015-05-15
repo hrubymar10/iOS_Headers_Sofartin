@@ -7,9 +7,9 @@
     CKDPUserPrivacySettings *_userPrivacySettings;
 }
 
-@property(assign,retain) NSMutableArray * applicationBundles;
-@property(assign,readonly) bool hasUserPrivacySettings;
-@property(assign,retain) CKDPUserPrivacySettings * userPrivacySettings;
+@property (nonatomic, retain) NSMutableArray *applicationBundles;
+@property (nonatomic, readonly) bool hasUserPrivacySettings;
+@property (nonatomic, retain) CKDPUserPrivacySettings *userPrivacySettings;
 
 - (void).cxx_destruct;
 - (void)addApplicationBundle:(id)arg1;

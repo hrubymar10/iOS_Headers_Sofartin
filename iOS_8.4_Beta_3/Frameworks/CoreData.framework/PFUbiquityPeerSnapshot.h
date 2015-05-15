@@ -11,12 +11,12 @@
     NSNumber *_transactionNumber;
 }
 
-@property(assign,readonly) NSDictionary * diffFromPrevious;
-@property(assign,readonly) NSString * exportingPeerID;
-@property(assign,readonly) PFUbiquityKnowledgeVector * knowledgeVector;
-@property(assign,readonly) NSDictionary * logSnapshot;
-@property(assign,readonly) NSDate * transactionDate;
-@property(assign,readonly) NSNumber * transactionNumber;
+@property (nonatomic, readonly) NSDictionary *diffFromPrevious;
+@property (nonatomic, readonly) NSString *exportingPeerID;
+@property (nonatomic, readonly) PFUbiquityKnowledgeVector *knowledgeVector;
+@property (nonatomic, readonly) NSDictionary *logSnapshot;
+@property (nonatomic, readonly) NSDate *transactionDate;
+@property (nonatomic, readonly) NSNumber *transactionNumber;
 
 - (long long)compare:(id)arg1;
 - (void)computeDiffToPreviousSnapshot:(id)arg1;

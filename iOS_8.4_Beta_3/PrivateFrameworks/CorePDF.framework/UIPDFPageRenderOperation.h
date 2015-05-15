@@ -8,7 +8,7 @@
     bool finished;
 }
 
-@property(assign,retain) UIPDFPageRenderJob * job;
+@property (retain) UIPDFPageRenderJob *job;
 
 - (void)completeOperation;
 - (void)dealloc;

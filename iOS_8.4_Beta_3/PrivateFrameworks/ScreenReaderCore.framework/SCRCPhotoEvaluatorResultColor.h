@@ -8,9 +8,9 @@
     double _redLevel;
 }
 
-@property(assign,readonly) double blueLevel;
-@property(assign,readonly) double greenLevel;
-@property(assign,readonly) double redLevel;
+@property (nonatomic, readonly) double blueLevel;
+@property (nonatomic, readonly) double greenLevel;
+@property (nonatomic, readonly) double redLevel;
 
 - (double)blueLevel;
 - (double)greenLevel;

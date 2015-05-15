@@ -4,9 +4,9 @@
 
 @interface PBContext : NSObject
 
-@property(assign,retain) struct __CVPixelBufferPool { }* largePool;
-@property(assign,readwrite) struct _CAImageQueue { }* outputImageQueue;
-@property(assign,retain) struct __CVPixelBufferPool { }* smallPool;
+@property (nonatomic, retain) struct __CVPixelBufferPool { }*largePool;
+@property (nonatomic) struct _CAImageQueue { }*outputImageQueue;
+@property (nonatomic, retain) struct __CVPixelBufferPool { }*smallPool;
 
 + (id)openCLContext;
 + (id)openGLContext;

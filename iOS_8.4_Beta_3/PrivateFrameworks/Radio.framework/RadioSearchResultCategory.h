@@ -10,11 +10,11 @@
     NSArray *_stationResults;
 }
 
-@property(assign,readonly) long long categoryType;
-@property(assign,readonly) bool hasMoreResults;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSDictionary * responseDictionary;
-@property(assign,copy) NSArray * stationResults;
+@property (nonatomic, readonly) long long categoryType;
+@property (nonatomic, readonly) bool hasMoreResults;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly, copy) NSDictionary *responseDictionary;
+@property (nonatomic, readonly, copy) NSArray *stationResults;
 
 - (void).cxx_destruct;
 - (id)_initWithResponseDictionary:(id)arg1;

@@ -8,11 +8,11 @@
     bool _watchingLibrary;
 }
 
-@property(assign,readonly) long long count;
-@property(assign,readonly) NSArray * items;
-@property(assign,readonly) NSArray * mediaTypes;
-@property(assign,readonly) MPMediaItemCollection * nativeCollection;
-@property(assign,readonly) SUScriptMediaItem * representativeItem;
+@property (readonly) long long count;
+@property (readonly) NSArray *items;
+@property (readonly) NSArray *mediaTypes;
+@property (nonatomic, readonly) MPMediaItemCollection *nativeCollection;
+@property (readonly) SUScriptMediaItem *representativeItem;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

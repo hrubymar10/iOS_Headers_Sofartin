@@ -6,26 +6,26 @@
     NSDictionary *_dictionary;
 }
 
-@property(assign,readonly) unsigned long long age;
-@property(assign,copy) NSString * appleID;
-@property(assign,copy) NSDictionary * dictionary;
-@property(assign,copy) NSNumber * dsid;
-@property(assign,copy) NSString * firstName;
-@property(assign,readonly) bool hasAskToBuyEnabled;
-@property(assign,readonly) bool hasLinkediTunesAccount;
-@property(assign,readonly) bool hasParentalControlsEnabled;
-@property(assign,copy) NSString * hashedDSID;
-@property(assign,readonly) NSNumber * iTunesAccountDSID;
-@property(assign,copy) NSString * iTunesAccountUsername;
-@property(assign,copy) NSString * inviteEmail;
-@property(assign,readonly) bool isChildAccount;
-@property(assign,readonly) bool isMe;
-@property(assign,readonly) bool isParent;
-@property(assign,copy) NSDate * joinedDate;
-@property(assign,copy) NSString * lastName;
-@property(assign,copy) NSString * memberTypeDisplayString;
-@property(assign,copy) NSString * memberTypeString;
-@property(assign,copy) NSString * statusString;
+@property (nonatomic, readonly) unsigned long long age;
+@property (nonatomic, readonly, copy) NSString *appleID;
+@property (nonatomic, readonly, copy) NSDictionary *dictionary;
+@property (nonatomic, readonly, copy) NSNumber *dsid;
+@property (nonatomic, readonly, copy) NSString *firstName;
+@property (nonatomic, readonly) bool hasAskToBuyEnabled;
+@property (nonatomic, readonly) bool hasLinkediTunesAccount;
+@property (nonatomic, readonly) bool hasParentalControlsEnabled;
+@property (nonatomic, readonly, copy) NSString *hashedDSID;
+@property (nonatomic, readonly) NSNumber *iTunesAccountDSID;
+@property (nonatomic, readonly, copy) NSString *iTunesAccountUsername;
+@property (nonatomic, readonly, copy) NSString *inviteEmail;
+@property (nonatomic, readonly) bool isChildAccount;
+@property (nonatomic, readonly) bool isMe;
+@property (nonatomic, readonly) bool isParent;
+@property (nonatomic, readonly, copy) NSDate *joinedDate;
+@property (nonatomic, readonly, copy) NSString *lastName;
+@property (nonatomic, readonly, copy) NSString *memberTypeDisplayString;
+@property (nonatomic, readonly, copy) NSString *memberTypeString;
+@property (nonatomic, readonly, copy) NSString *statusString;
 
 + (bool)supportsSecureCoding;
 

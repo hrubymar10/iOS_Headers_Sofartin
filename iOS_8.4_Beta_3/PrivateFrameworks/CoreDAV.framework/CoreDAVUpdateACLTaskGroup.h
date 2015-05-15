@@ -9,14 +9,14 @@
     NSURL *_url;
 }
 
-@property(assign,retain) NSSet * aceItems;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) CoreDAVPropFindTask * fetchTask;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int state;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSURL * url;
+@property (nonatomic, retain) NSSet *aceItems;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) CoreDAVPropFindTask *fetchTask;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int state;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSURL *url;
 
 - (void)_finishWithError:(id)arg1 state:(int)arg2;
 - (void)_startGetACL;

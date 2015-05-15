@@ -7,7 +7,7 @@
     _UIPhysicalButton *_triggeringPhysicalButton;
 }
 
-@property(assign,retain) _UIPhysicalButton * _triggeringPhysicalButton;
+@property (nonatomic, retain) _UIPhysicalButton *_triggeringPhysicalButton;
 
 - (void)_addPhysicalButton:(id)arg1;
 - (id)_allPhysicalButtons;

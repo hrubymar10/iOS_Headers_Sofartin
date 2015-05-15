@@ -7,9 +7,9 @@
     UILabel *__textLabel;
 }
 
-@property(assign,readonly) UIView * _backgroundView;
-@property(assign,readonly) UILabel * _textLabel;
-@property(assign,copy) NSString * text;
+@property (nonatomic, readonly) UIView *_backgroundView;
+@property (nonatomic, readonly) UILabel *_textLabel;
+@property (nonatomic, copy) NSString *text;
 
 - (id)_backgroundView;
 - (void)_commonPLEditOverlayTextViewInitialization;

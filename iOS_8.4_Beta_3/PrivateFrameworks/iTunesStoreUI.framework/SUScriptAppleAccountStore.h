@@ -7,17 +7,17 @@
     NSString *_effectiveBundleID;
 }
 
-@property(assign,readonly) NSString * accessPurposeRead;
-@property(assign,readonly) NSString * accessPurposeReadWrite;
-@property(assign,readonly) NSString * accessPurposeWrite;
-@property(assign,readonly) NSString * accountTypeIdentifierFacebook;
-@property(assign,readonly) NSString * accountTypeIdentifierSinaWeibo;
-@property(assign,readonly) NSString * accountTypeIdentifierTwitter;
-@property(assign,readonly) NSString * effectiveBundleID;
-@property(assign,readonly) SUScriptAppleAccount * primaryAppleAccount;
-@property(assign,readonly) long long renewResultFailed;
-@property(assign,readonly) long long renewResultRejected;
-@property(assign,readonly) long long renewResultRenewed;
+@property (readonly) NSString *accessPurposeRead;
+@property (readonly) NSString *accessPurposeReadWrite;
+@property (readonly) NSString *accessPurposeWrite;
+@property (readonly) NSString *accountTypeIdentifierFacebook;
+@property (readonly) NSString *accountTypeIdentifierSinaWeibo;
+@property (readonly) NSString *accountTypeIdentifierTwitter;
+@property (readonly) NSString *effectiveBundleID;
+@property (readonly) SUScriptAppleAccount *primaryAppleAccount;
+@property (readonly) long long renewResultFailed;
+@property (readonly) long long renewResultRejected;
+@property (readonly) long long renewResultRenewed;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

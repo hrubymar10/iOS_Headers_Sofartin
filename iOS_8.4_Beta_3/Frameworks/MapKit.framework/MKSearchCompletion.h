@@ -8,11 +8,11 @@
     NSString *_sourceID;
 }
 
-@property(assign,readonly) NSArray * displayLines;
-@property(assign,readonly) <GEOCompletionItem> * geoCompletionItem;
-@property(assign,copy) NSString * localizedSectionHeader;
-@property(assign,readonly) MKMapItem * mapItem;
-@property(assign,copy) NSString * sourceID;
+@property (nonatomic, readonly) NSArray *displayLines;
+@property (nonatomic, readonly) <GEOCompletionItem> *geoCompletionItem;
+@property (nonatomic, copy) NSString *localizedSectionHeader;
+@property (nonatomic, readonly) MKMapItem *mapItem;
+@property (nonatomic, copy) NSString *sourceID;
 
 - (void).cxx_destruct;
 - (id)calloutTitle;

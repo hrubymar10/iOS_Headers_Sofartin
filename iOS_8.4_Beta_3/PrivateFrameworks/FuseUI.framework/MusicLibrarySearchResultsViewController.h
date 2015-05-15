@@ -13,12 +13,12 @@
     MusicSectionEntityValueContext *_sectionEntityValueContext;
 }
 
-@property(assign,readonly) bool hasResults;
-@property(assign,readonly) MusicLibrarySearchResultsEntityProviderConfiguration * libraryViewConfiguration;
-@property(assign,readwrite) unsigned long long maximumNumberOfSectionResults;
-@property(getter=isResultsViewVisible,assign,readonly) bool resultsViewVisible;
-@property(assign,readwrite) <MusicLibrarySearchResultsViewControllerDelegate> * searchResultsDelegate;
-@property(assign,copy) NSString * searchTerm;
+@property (nonatomic, readonly) bool hasResults;
+@property (nonatomic, readonly) MusicLibrarySearchResultsEntityProviderConfiguration *libraryViewConfiguration;
+@property (nonatomic) unsigned long long maximumNumberOfSectionResults;
+@property (getter=isResultsViewVisible, nonatomic, readonly) bool resultsViewVisible;
+@property (nonatomic) <MusicLibrarySearchResultsViewControllerDelegate> *searchResultsDelegate;
+@property (nonatomic, copy) NSString *searchTerm;
 
 - (void).cxx_destruct;
 - (id)_collectionViewDescriptorForSection:(unsigned long long)arg1 traitCollection:(id)arg2;

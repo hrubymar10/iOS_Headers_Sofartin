@@ -29,19 +29,19 @@
     bool _wasUsingBackgroundNetwork;
 }
 
-@property(assign,copy) NSArray * allPreparedAdSlotRadioTracks;
-@property(assign,readonly) bool allowsUserVisibleUpcomingItems;
-@property(assign,readonly) bool canSeek;
-@property(assign,readonly) bool canSkipToPreviousItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long playbackMode;
-@property(assign,retain) RadioStation * station;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * tracks;
-@property(assign,readonly) NSArray * tracksForNextPlaybackGroup;
-@property(assign,readonly) bool userCanChangeShuffleAndRepeatType;
+@property (nonatomic, readonly, copy) NSArray *allPreparedAdSlotRadioTracks;
+@property (nonatomic, readonly) bool allowsUserVisibleUpcomingItems;
+@property (nonatomic, readonly) bool canSeek;
+@property (nonatomic, readonly) bool canSkipToPreviousItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long playbackMode;
+@property (nonatomic, retain) RadioStation *station;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *tracks;
+@property (nonatomic, readonly) NSArray *tracksForNextPlaybackGroup;
+@property (nonatomic, readonly) bool userCanChangeShuffleAndRepeatType;
 
 + (void)_explicitContentAllowedDidChangeNotification:(id)arg1;
 + (id)_tracksByRemovingPromotionalContentFromTracks:(id)arg1;

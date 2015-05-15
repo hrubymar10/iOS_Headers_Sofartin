@@ -18,10 +18,10 @@
     NSMutableSet *_removedDownloads;
 }
 
-@property(assign,readonly) NSArray * activeDownloads;
-@property(assign,readonly) NSArray * downloads;
-@property(assign,readonly) SSDownloadManagerOptions * managerOptions;
-@property(getter=isUsingNetwork,assign,readonly) bool usingNetwork;
+@property (readonly) NSArray *activeDownloads;
+@property (readonly) NSArray *downloads;
+@property (readonly) SSDownloadManagerOptions *managerOptions;
+@property (getter=isUsingNetwork, readonly) bool usingNetwork;
 
 + (id)EBookDownloadKinds;
 + (id)EBookDownloadManager;

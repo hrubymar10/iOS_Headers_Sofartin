@@ -17,15 +17,15 @@
     unsigned long long startingPageIndex;
 }
 
-@property(assign,readonly) unsigned long long currentPageIndex;
-@property(assign,readonly) unsigned long long currentPageResultCount;
-@property(assign,readwrite) double documentScale;
-@property(assign,retain) UIPDFDocument * documentToSearch;
-@property(assign,readwrite) unsigned long long numberOfResultsToSkip;
-@property(assign,readwrite) unsigned long long resultLimit;
-@property(assign,readwrite) NSObject<UIWebPDFSearchOperationDelegate> * searchDelegate;
-@property(assign,retain) NSString * searchString;
-@property(assign,readwrite) unsigned long long startingPageIndex;
+@property (nonatomic, readonly) unsigned long long currentPageIndex;
+@property (nonatomic, readonly) unsigned long long currentPageResultCount;
+@property (nonatomic) double documentScale;
+@property (retain) UIPDFDocument *documentToSearch;
+@property (nonatomic) unsigned long long numberOfResultsToSkip;
+@property (nonatomic) unsigned long long resultLimit;
+@property NSObject<UIWebPDFSearchOperationDelegate> *searchDelegate;
+@property (nonatomic, retain) NSString *searchString;
+@property (nonatomic) unsigned long long startingPageIndex;
 
 - (struct __CTFont { }*)_fontWithPDFFont:(struct CGPDFFont { }*)arg1 size:(double)arg2;
 - (bool)_hitSearchLimit;

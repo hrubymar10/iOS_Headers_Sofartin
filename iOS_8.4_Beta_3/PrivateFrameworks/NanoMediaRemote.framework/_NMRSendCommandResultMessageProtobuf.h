@@ -16,12 +16,12 @@
     double _timestamp;
 }
 
-@property(assign,readwrite) unsigned int errorCode;
-@property(assign,readonly) unsigned int* handlerReturnStatus;
-@property(assign,readonly) unsigned long long handlerReturnStatusCount;
-@property(assign,readwrite) bool hasErrorCode;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic) unsigned int errorCode;
+@property (nonatomic, readonly) unsigned int*handlerReturnStatus;
+@property (nonatomic, readonly) unsigned long long handlerReturnStatusCount;
+@property (nonatomic) bool hasErrorCode;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) double timestamp;
 
 - (void)addHandlerReturnStatus:(unsigned int)arg1;
 - (void)clearHandlerReturnStatus;

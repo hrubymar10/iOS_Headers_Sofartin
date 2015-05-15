@@ -7,8 +7,8 @@
     NSString *_secondFactorToken;
 }
 
-@property(assign,readonly) NSData * buddyML;
-@property(assign,readonly) NSString * secondFactorToken;
+@property (nonatomic, readonly) NSData *buddyML;
+@property (nonatomic, readonly) NSString *secondFactorToken;
 
 - (void).cxx_destruct;
 - (id)buddyML;

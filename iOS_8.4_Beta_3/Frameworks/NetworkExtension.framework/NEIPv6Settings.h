@@ -9,10 +9,10 @@
     NSString *_router;
 }
 
-@property(assign,copy) NSString * address;
-@property(assign,readwrite) long long configMethod;
-@property(assign,readwrite) int prefixLength;
-@property(assign,copy) NSString * router;
+@property (copy) NSString *address;
+@property long long configMethod;
+@property int prefixLength;
+@property (copy) NSString *router;
 
 + (bool)supportsSecureCoding;
 

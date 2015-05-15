@@ -4,9 +4,9 @@
 
 @interface SAGetRequestOrigin : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * desiredAccuracy;
-@property(assign,copy) NSNumber * maxAge;
-@property(assign,copy) NSNumber * searchTimeout;
+@property (nonatomic, copy) NSString *desiredAccuracy;
+@property (nonatomic, copy) NSNumber *maxAge;
+@property (nonatomic, copy) NSNumber *searchTimeout;
 
 + (id)getRequestOrigin;
 + (id)getRequestOriginWithDictionary:(id)arg1 context:(id)arg2;

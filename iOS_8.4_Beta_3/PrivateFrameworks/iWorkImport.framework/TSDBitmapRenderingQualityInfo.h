@@ -8,7 +8,7 @@
     int mQuality;
 }
 
-@property(assign,readonly) int quality;
+@property (nonatomic, readonly) int quality;
 
 - (void)cacheProvider:(id)arg1 ofSize:(struct CGSize { double x1; double x2; })arg2;
 - (void)dealloc;

@@ -9,10 +9,10 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSString * feedURLString;
-@property(assign,copy) NSURL * homepageURL;
-@property(assign,copy) NSString * originatorProfileImageURLString;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *feedURLString;
+@property (nonatomic, copy) NSURL *homepageURL;
+@property (nonatomic, copy) NSString *originatorProfileImageURLString;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)biggerOriginatorProfileImageURL;

@@ -8,16 +8,16 @@
     QLPreviewThumbnailGenerator *_thumbnailGenerator;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIImage * icon;
-@property(assign,readonly) bool isFolder;
-@property(assign,readonly) long long level;
-@property(assign,readonly) long long previewItemIndex;
-@property(assign,readonly) NSString * previewItemTitle;
-@property(assign,readonly) NSURL * previewItemURL;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) UIImage *icon;
+@property (readonly) bool isFolder;
+@property (readonly) long long level;
+@property (readonly) long long previewItemIndex;
+@property (readonly) NSString *previewItemTitle;
+@property (readonly) NSURL *previewItemURL;
+@property (readonly) Class superclass;
 
 + (id)genericIconForPreviewItem:(id)arg1;
 + (id)uiItemForPreviewItem:(id)arg1 index:(long long)arg2;

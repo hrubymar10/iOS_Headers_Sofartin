@@ -18,7 +18,7 @@
     bool _wantsAppAck;
 }
 
-@property(assign,readonly) unsigned long long totalBytesReceived;
+@property (nonatomic, readonly) unsigned long long totalBytesReceived;
 
 - (void)abortTransfer;
 - (bool)appendMessage:(id)arg1;

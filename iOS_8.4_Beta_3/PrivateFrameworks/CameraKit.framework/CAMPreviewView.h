@@ -55,24 +55,24 @@
     CAMVideoPreviewView *_videoPreviewView;
 }
 
-@property(assign,readonly) int _exposureBiasSide;
-@property(assign,readwrite) CAMCaptureController * _sharedCameraController;
-@property(setter=_setShowExposureBiasSlider:,assign,readwrite) bool _showExposureBiasSlider;
-@property(assign,readwrite) double dimmingStrength;
-@property(assign,readwrite) float exposureBiasMax;
-@property(assign,readwrite) float exposureBiasMin;
-@property(assign,readwrite) float exposureBiasValue;
-@property(assign,readwrite) bool hideExposureBiasSlider;
-@property(assign,readonly) double lastExposureFadeOutTime;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } lastExposureFrame;
-@property(assign,readonly) double lastFocusFadeOutTime;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } lastFocusFrame;
-@property(assign,readwrite) bool showExposureBiasSliderOnChange;
-@property(assign,readwrite) bool showLockFocusAttachment;
-@property(assign,readwrite) bool showSplitFocusAndExposureAttachment;
-@property(assign,readwrite) bool splitFocusAndExposure;
-@property(getter=isSquare,assign,readwrite) bool square;
-@property(assign,retain) CAMVideoPreviewView * videoPreviewView;
+@property (nonatomic, readonly) int _exposureBiasSide;
+@property (nonatomic) CAMCaptureController *_sharedCameraController;
+@property (setter=_setShowExposureBiasSlider:, nonatomic) bool _showExposureBiasSlider;
+@property (nonatomic) double dimmingStrength;
+@property (nonatomic) float exposureBiasMax;
+@property (nonatomic) float exposureBiasMin;
+@property (nonatomic) float exposureBiasValue;
+@property (nonatomic) bool hideExposureBiasSlider;
+@property (nonatomic, readonly) double lastExposureFadeOutTime;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } lastExposureFrame;
+@property (nonatomic, readonly) double lastFocusFadeOutTime;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } lastFocusFrame;
+@property (nonatomic) bool showExposureBiasSliderOnChange;
+@property (nonatomic) bool showLockFocusAttachment;
+@property (nonatomic) bool showSplitFocusAndExposureAttachment;
+@property (nonatomic) bool splitFocusAndExposure;
+@property (getter=isSquare, nonatomic) bool square;
+@property (nonatomic, readonly, retain) CAMVideoPreviewView *videoPreviewView;
 
 - (void).cxx_destruct;
 - (bool)_allowDismissFocusAttachment;

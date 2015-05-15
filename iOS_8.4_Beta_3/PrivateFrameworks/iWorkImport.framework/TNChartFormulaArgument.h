@@ -7,14 +7,14 @@
     int mType;
 }
 
-@property(assign,readonly) struct { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct __CFUUID {} *x2; } cellReference;
-@property(assign,readonly) bool isCellReference;
-@property(assign,readonly) bool isRangeReference;
-@property(assign,readonly) bool isReference;
-@property(assign,readonly) bool isStaticValue;
-@property(assign,readonly) struct { struct TSCERangeCoordinate { struct { unsigned short x_1_2_1; unsigned char x_1_2_2; unsigned char x_1_2_3; } x_1_1_1; struct { unsigned short x_2_2_1; unsigned char x_2_2_2; unsigned char x_2_2_3; } x_1_1_2; } x1; struct __CFUUID {} *x2; } rangeReference;
-@property(assign,readonly) struct TSCEValue { unsigned long long x1[80]; int x2; }* staticValue;
-@property(assign,readonly) int type;
+@property (readonly) struct { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct __CFUUID {} *x2; } cellReference;
+@property (readonly) bool isCellReference;
+@property (readonly) bool isRangeReference;
+@property (readonly) bool isReference;
+@property (readonly) bool isStaticValue;
+@property (readonly) struct { struct TSCERangeCoordinate { struct { unsigned short x_1_2_1; unsigned char x_1_2_2; unsigned char x_1_2_3; } x_1_1_1; struct { unsigned short x_2_2_1; unsigned char x_2_2_2; unsigned char x_2_2_3; } x_1_1_2; } x1; struct __CFUUID {} *x2; } rangeReference;
+@property (readonly) struct TSCEValue { unsigned long long x1[80]; int x2; }*staticValue;
+@property (readonly) int type;
 
 - (struct { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct __CFUUID {} *x2; })cellReference;
 - (void)dealloc;

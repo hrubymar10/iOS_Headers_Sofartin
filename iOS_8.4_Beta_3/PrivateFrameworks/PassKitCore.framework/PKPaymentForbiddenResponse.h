@@ -8,9 +8,9 @@
     NSString *_localizedTitle;
 }
 
-@property(assign,retain) NSNumber * errorCode;
-@property(assign,retain) NSString * localizedDescription;
-@property(assign,retain) NSString * localizedTitle;
+@property (nonatomic, retain) NSNumber *errorCode;
+@property (nonatomic, retain) NSString *localizedDescription;
+@property (nonatomic, retain) NSString *localizedTitle;
 
 - (void)dealloc;
 - (id)errorCode;

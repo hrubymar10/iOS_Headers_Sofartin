@@ -7,8 +7,8 @@
     unsigned long long _remoteSupportedInterfaceOrientations;
 }
 
-@property(assign,readwrite) bool hasBeenDismissed;
-@property(assign,readwrite) unsigned long long remoteSupportedInterfaceOrientations;
+@property (nonatomic) bool hasBeenDismissed;
+@property (nonatomic) unsigned long long remoteSupportedInterfaceOrientations;
 
 + (id)serviceViewControllerInterface;
 

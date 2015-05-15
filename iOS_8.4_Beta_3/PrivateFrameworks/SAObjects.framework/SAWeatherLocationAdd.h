@@ -4,7 +4,7 @@
 
 @interface SAWeatherLocationAdd : SADomainCommand
 
-@property(assign,retain) SAWeatherLocation * weatherLocation;
+@property (nonatomic, retain) SAWeatherLocation *weatherLocation;
 
 + (id)locationAdd;
 + (id)locationAddWithDictionary:(id)arg1 context:(id)arg2;

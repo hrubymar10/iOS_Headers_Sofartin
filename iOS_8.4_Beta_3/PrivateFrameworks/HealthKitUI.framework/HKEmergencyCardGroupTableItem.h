@@ -8,8 +8,8 @@
     NSArray *_subitems;
 }
 
-@property(assign,readwrite) bool enabled;
-@property(assign,retain) NSArray * subitems;
+@property (nonatomic) bool enabled;
+@property (nonatomic, retain) NSArray *subitems;
 
 - (void).cxx_destruct;
 - (void)_getSubitem:(id*)arg1 andSubitemRow:(long long*)arg2 forTableViewRow:(long long)arg3;

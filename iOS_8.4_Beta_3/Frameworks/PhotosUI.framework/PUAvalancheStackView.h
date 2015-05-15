@@ -8,9 +8,9 @@
     CALayer *_stackLayer1;
 }
 
-@property(assign,retain) CALayer * imageLayer;
-@property(assign,retain) CALayer * stackLayer0;
-@property(assign,retain) CALayer * stackLayer1;
+@property (nonatomic, retain) CALayer *imageLayer;
+@property (nonatomic, retain) CALayer *stackLayer0;
+@property (nonatomic, retain) CALayer *stackLayer1;
 
 - (void).cxx_destruct;
 - (id)imageLayer;

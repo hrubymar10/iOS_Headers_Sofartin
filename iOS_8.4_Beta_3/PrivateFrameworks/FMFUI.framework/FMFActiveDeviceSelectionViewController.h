@@ -10,15 +10,15 @@
     long long _specifierStartIndex;
 }
 
-@property(assign,retain) FMFDevice * currentActiveDevice;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableArray * deviceList;
-@property(assign,retain) FMFSession * fmfSession;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) FMFDevice * nowActiveDevice;
-@property(assign,readwrite) long long specifierStartIndex;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) FMFDevice *currentActiveDevice;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMutableArray *deviceList;
+@property (nonatomic, retain) FMFSession *fmfSession;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) FMFDevice *nowActiveDevice;
+@property (nonatomic) long long specifierStartIndex;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_hasActiveDeviceAtIndex:(unsigned long long)arg1;

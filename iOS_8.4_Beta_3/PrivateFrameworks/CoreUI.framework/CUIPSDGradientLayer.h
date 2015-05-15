@@ -6,7 +6,7 @@
     CUIPSDGradient *_gradient;
 }
 
-@property(assign,readonly) CUIPSDGradient * gradient;
+@property (nonatomic, readonly) CUIPSDGradient *gradient;
 
 - (void)dealloc;
 - (id)gradient;

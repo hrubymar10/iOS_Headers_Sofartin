@@ -6,7 +6,7 @@
     <MFMailComposeRemoteViewControllerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <MFMailComposeRemoteViewControllerDelegate> * delegate;
+@property (nonatomic) <MFMailComposeRemoteViewControllerDelegate> *delegate;
 
 + (id)exportedInterface;
 + (id)requestViewControllerWithConnectionHandler:(id)arg1;

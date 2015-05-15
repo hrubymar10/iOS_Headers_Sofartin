@@ -4,10 +4,10 @@
 
 @interface TSDAnnotationController : NSObject
 
-@property(assign,readonly) unsigned long long annotationCount;
-@property(assign,readonly) NSString * annotationNavigationString;
-@property(assign,readonly) bool hasAnnotations;
-@property(assign,readwrite) bool textSelectionChangeShouldDismissAnnotations;
+@property (nonatomic, readonly) unsigned long long annotationCount;
+@property (nonatomic, readonly) NSString *annotationNavigationString;
+@property (nonatomic, readonly) bool hasAnnotations;
+@property (nonatomic) bool textSelectionChangeShouldDismissAnnotations;
 
 + (double)commentFontSize;
 

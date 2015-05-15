@@ -9,10 +9,10 @@
     UIResponder *responder;
 }
 
-@property(assign,readwrite) long long autocompletedPhase;
-@property(assign,readwrite) UIResponder * fromResponder;
-@property(assign,readwrite) long long recordedPhase;
-@property(assign,readwrite) UIResponder * responder;
+@property (nonatomic) long long autocompletedPhase;
+@property (nonatomic) UIResponder *fromResponder;
+@property (nonatomic) long long recordedPhase;
+@property (nonatomic) UIResponder *responder;
 
 - (long long)autocompletedPhase;
 - (id)description;

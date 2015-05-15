@@ -8,9 +8,9 @@
     CDSession *_session;
 }
 
-@property(assign,retain) <ABLEMockCDAttributeProtocol> * batteryLevelAttribute;
-@property(assign,readonly) CDDevice * device;
-@property(assign,readonly) CDSession * session;
+@property (retain) <ABLEMockCDAttributeProtocol> *batteryLevelAttribute;
+@property (readonly) CDDevice *device;
+@property (readonly) CDSession *session;
 
 - (void).cxx_destruct;
 - (id)batteryLevelAttribute;

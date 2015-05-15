@@ -17,18 +17,18 @@
     id _token;
 }
 
-@property(assign,readonly) long long MP_artworkType;
-@property(assign,readonly) NSCache * cache;
-@property(assign,copy) NSString * cacheIdentifier;
-@property(assign,copy) id configurationBlock;
-@property(assign,readwrite) <MPArtworkDataSource> * dataSource;
-@property(assign,readwrite) id destination;
-@property(assign,readwrite) double destinationScale;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } fittingSize;
-@property(getter=isLoadingRepresentation,assign,readwrite) bool loadingRepresentation;
-@property(assign,readwrite) id requestingContext;
-@property(assign,readonly) struct CGSize { double x1; double x2; } scaledFittingSize;
-@property(assign,retain) id token;
+@property (nonatomic, readonly) long long MP_artworkType;
+@property (nonatomic, readonly) NSCache *cache;
+@property (nonatomic, copy) NSString *cacheIdentifier;
+@property (nonatomic, copy) id configurationBlock;
+@property (nonatomic) <MPArtworkDataSource> *dataSource;
+@property (nonatomic) id destination;
+@property (nonatomic) double destinationScale;
+@property (nonatomic) struct CGSize { double x1; double x2; } fittingSize;
+@property (getter=isLoadingRepresentation) bool loadingRepresentation;
+@property (nonatomic) id requestingContext;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } scaledFittingSize;
+@property (nonatomic, retain) id token;
 
 + (id)_artworkCacheForIdentifier:(id)arg1 requestingContext:(id)arg2;
 + (void)setCacheLimit:(unsigned long long)arg1 forCacheIdentifier:(id)arg2 requestingContext:(id)arg3;

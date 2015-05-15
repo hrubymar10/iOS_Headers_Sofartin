@@ -7,8 +7,8 @@
     NSString *_objectUniqueID;
 }
 
-@property(assign,retain) PKPassLibrary * library;
-@property(assign,retain) NSString * objectUniqueID;
+@property (nonatomic, readonly, retain) PKPassLibrary *library;
+@property (nonatomic, readonly, retain) NSString *objectUniqueID;
 
 - (id)archiveData;
 - (void)contentWithCompletion:(id)arg1;

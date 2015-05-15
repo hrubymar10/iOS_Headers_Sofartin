@@ -6,7 +6,7 @@
     NSString *_region;
 }
 
-@property(assign,retain) NSString * region;
+@property (nonatomic, retain) NSString *region;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

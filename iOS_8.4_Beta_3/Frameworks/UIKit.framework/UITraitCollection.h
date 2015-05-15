@@ -14,16 +14,16 @@
     NSDictionary *_clientDefinedTraits;
 }
 
-@property(assign,readonly) bool MPU_hasCompactHeight;
-@property(assign,readonly) bool MPU_hasCompactWidth;
-@property(assign,readonly) bool MPU_hasRegularHeight;
-@property(assign,readonly) bool MPU_hasRegularWidth;
-@property(assign,readonly) double displayScale;
-@property(assign,readonly) long long horizontalSizeClass;
-@property(getter=music_isContainedWithinSplitViewDetail,assign,readonly) bool music_containedWithinSplitViewDetail;
-@property(getter=music_isContainedWithinSplitViewPrimary,assign,readonly) bool music_containedWithinSplitViewPrimary;
-@property(assign,readonly) long long userInterfaceIdiom;
-@property(assign,readonly) long long verticalSizeClass;
+@property (nonatomic, readonly) bool MPU_hasCompactHeight;
+@property (nonatomic, readonly) bool MPU_hasCompactWidth;
+@property (nonatomic, readonly) bool MPU_hasRegularHeight;
+@property (nonatomic, readonly) bool MPU_hasRegularWidth;
+@property (nonatomic, readonly) double displayScale;
+@property (nonatomic, readonly) long long horizontalSizeClass;
+@property (getter=music_isContainedWithinSplitViewDetail, nonatomic, readonly) bool music_containedWithinSplitViewDetail;
+@property (getter=music_isContainedWithinSplitViewPrimary, nonatomic, readonly) bool music_containedWithinSplitViewPrimary;
+@property (nonatomic, readonly) long long userInterfaceIdiom;
+@property (nonatomic, readonly) long long verticalSizeClass;
 
 + (id)_emptyTraitCollection;
 + (id)_traitCollectionWithValue:(id)arg1 forTraitNamed:(id)arg2;

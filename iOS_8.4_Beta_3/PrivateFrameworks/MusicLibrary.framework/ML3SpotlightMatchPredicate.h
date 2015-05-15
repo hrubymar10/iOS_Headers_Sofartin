@@ -8,7 +8,7 @@
     NSString *_searchString;
 }
 
-@property(assign,readonly) NSString * searchString;
+@property (nonatomic, readonly) NSString *searchString;
 
 + (id)predicateWithProperties:(id)arg1 searchString:(id)arg2;
 

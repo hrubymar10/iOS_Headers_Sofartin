@@ -15,10 +15,10 @@
     SKUIBorderView *_topBorderView;
 }
 
-@property(assign,readwrite) double borderPaddingLeft;
-@property(assign,copy) UIColor * bottomBorderColor;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textLabelInsets;
-@property(assign,copy) UIColor * topBorderColor;
+@property (nonatomic) double borderPaddingLeft;
+@property (nonatomic, copy) UIColor *bottomBorderColor;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textLabelInsets;
+@property (nonatomic, copy) UIColor *topBorderColor;
 
 - (void).cxx_destruct;
 - (void)_reloadBorderVisibility;

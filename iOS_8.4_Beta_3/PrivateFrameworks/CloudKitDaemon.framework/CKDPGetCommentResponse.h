@@ -6,8 +6,8 @@
     CKDPComment *_comment;
 }
 
-@property(assign,retain) CKDPComment * comment;
-@property(assign,readonly) bool hasComment;
+@property (nonatomic, retain) CKDPComment *comment;
+@property (nonatomic, readonly) bool hasComment;
 
 - (void).cxx_destruct;
 - (id)comment;

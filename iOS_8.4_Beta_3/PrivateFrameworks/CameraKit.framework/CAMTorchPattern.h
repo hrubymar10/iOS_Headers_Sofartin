@@ -10,11 +10,11 @@
     float _torchLevel;
 }
 
-@property(assign,readonly) CAAnimationGroup * _animationGroup;
-@property(assign,readonly) double _lastUpdateTime;
-@property(assign,readonly) long long _type;
-@property(assign,readwrite) double startTime;
-@property(assign,readonly) float torchLevel;
+@property (nonatomic, readonly) CAAnimationGroup *_animationGroup;
+@property (nonatomic, readonly) double _lastUpdateTime;
+@property (nonatomic, readonly) long long _type;
+@property (nonatomic) double startTime;
+@property (nonatomic, readonly) float torchLevel;
 
 - (void).cxx_destruct;
 - (id)_animationGroup;

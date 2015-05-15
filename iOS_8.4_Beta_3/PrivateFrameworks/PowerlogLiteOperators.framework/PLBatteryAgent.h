@@ -21,22 +21,22 @@
     PLEntryNotificationOperatorComposition *_wakeEntryNotifications;
 }
 
-@property(assign,readwrite) struct __IOHIDEventSystemClient { }* accessoryCurrentHIDRef;
-@property(assign,retain) NSArray * accessoryCurrentMatchingSensors;
-@property(assign,readwrite) struct __IOHIDEventSystemClient { }* accessoryVoltageHIDRef;
-@property(assign,retain) NSArray * accessoryVoltageMatchingSensors;
-@property(assign,readwrite) bool allowGasGaugeRead;
-@property(assign,retain) PLXPCResponderOperatorComposition * batteryInfoResponder;
-@property(assign,readwrite) double batteryLevelPercent;
-@property(assign,readonly) PLEntryNotificationOperatorComposition * canSleepEntryNotifications;
-@property(assign,retain) PLSemaphore * canSleepSemaphore;
-@property(assign,readwrite) bool deviceIsPluggedIn;
-@property(assign,readwrite) struct ggcontext { }* gasGagueConnection;
-@property(assign,readwrite) int gasGaugeConsecutiveEmptyEntriesCount;
-@property(assign,retain) PLNSTimerOperatorComposition * gasGaugeTimer;
-@property(assign,readonly) PLIOKitOperatorComposition * iokit;
-@property(assign,readwrite) double rawBatteryVoltageVolt;
-@property(assign,readonly) PLEntryNotificationOperatorComposition * wakeEntryNotifications;
+@property struct __IOHIDEventSystemClient { }*accessoryCurrentHIDRef;
+@property (retain) NSArray *accessoryCurrentMatchingSensors;
+@property struct __IOHIDEventSystemClient { }*accessoryVoltageHIDRef;
+@property (retain) NSArray *accessoryVoltageMatchingSensors;
+@property bool allowGasGaugeRead;
+@property (retain) PLXPCResponderOperatorComposition *batteryInfoResponder;
+@property double batteryLevelPercent;
+@property (readonly) PLEntryNotificationOperatorComposition *canSleepEntryNotifications;
+@property (retain) PLSemaphore *canSleepSemaphore;
+@property bool deviceIsPluggedIn;
+@property struct ggcontext { }*gasGagueConnection;
+@property int gasGaugeConsecutiveEmptyEntriesCount;
+@property (retain) PLNSTimerOperatorComposition *gasGaugeTimer;
+@property (readonly) PLIOKitOperatorComposition *iokit;
+@property double rawBatteryVoltageVolt;
+@property (readonly) PLEntryNotificationOperatorComposition *wakeEntryNotifications;
 
 + (id)defaults;
 + (id)entryEventBackwardDefinitionBattery;

@@ -9,10 +9,10 @@
     NSArray *_needUpgradeDevices;
 }
 
-@property(assign,readonly) NSArray * incompatibleDeviceNames;
-@property(assign,readonly) NSArray * incompatibleDevices;
-@property(assign,readonly) NSArray * needUpgradeDeviceNames;
-@property(assign,readonly) NSArray * needUpgradeDevices;
+@property (nonatomic, readonly) NSArray *incompatibleDeviceNames;
+@property (nonatomic, readonly) NSArray *incompatibleDevices;
+@property (nonatomic, readonly) NSArray *needUpgradeDeviceNames;
+@property (nonatomic, readonly) NSArray *needUpgradeDevices;
 
 - (void).cxx_destruct;
 - (id)incompatibleDeviceNames;

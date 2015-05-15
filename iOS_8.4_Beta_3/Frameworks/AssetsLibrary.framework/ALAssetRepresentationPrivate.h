@@ -11,16 +11,16 @@
     PLSidecarFile *_sidecar;
 }
 
-@property(assign,retain) PLPhotoLibrary * _photoLibrary;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * extension;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isValid;
-@property(assign,readwrite) ALAssetsLibrary * library;
-@property(assign,retain) PLManagedAsset * photo;
-@property(assign,retain) PLSidecarFile * sidecar;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) PLPhotoLibrary *_photoLibrary;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *extension;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isValid;
+@property (nonatomic) ALAssetsLibrary *library;
+@property (nonatomic, retain) PLManagedAsset *photo;
+@property (nonatomic, retain) PLSidecarFile *sidecar;
+@property (readonly) Class superclass;
 
 + (void)_clearFileDescriptorQueue;
 + (int)_fileDescriptorForPersistentURL:(id)arg1;

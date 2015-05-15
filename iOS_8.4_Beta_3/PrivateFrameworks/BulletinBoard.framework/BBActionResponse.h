@@ -12,13 +12,13 @@
     NSDictionary *_context;
 }
 
-@property(assign,copy) NSString * actionID;
-@property(assign,readwrite) long long actionType;
-@property(assign,copy) NSString * bulletinButtonID;
-@property(assign,copy) NSDictionary * bulletinContext;
-@property(assign,copy) NSString * bulletinPublisherID;
-@property(assign,copy) NSString * bulletinRecordID;
-@property(assign,copy) NSDictionary * context;
+@property (nonatomic, copy) NSString *actionID;
+@property (nonatomic) long long actionType;
+@property (nonatomic, copy) NSString *bulletinButtonID;
+@property (nonatomic, copy) NSDictionary *bulletinContext;
+@property (nonatomic, copy) NSString *bulletinPublisherID;
+@property (nonatomic, copy) NSString *bulletinRecordID;
+@property (nonatomic, copy) NSDictionary *context;
 
 + (id)actionResponseForResponse:(id)arg1 bulletinRequest:(id)arg2;
 + (bool)supportsSecureCoding;

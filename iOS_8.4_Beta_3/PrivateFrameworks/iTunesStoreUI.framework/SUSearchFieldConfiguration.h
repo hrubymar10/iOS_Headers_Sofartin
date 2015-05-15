@@ -16,12 +16,12 @@
     double _widthPortrait;
 }
 
-@property(assign,readonly) NSString * cancelString;
-@property(assign,readonly) long long location;
-@property(assign,readonly) NSString * placeholderString;
-@property(getter=isRootViewOnly,assign,readonly) bool rootViewOnly;
-@property(assign,readonly) NSString * userDefaultsKey;
-@property(assign,readonly) double width;
+@property (nonatomic, readonly) NSString *cancelString;
+@property (nonatomic, readonly) long long location;
+@property (nonatomic, readonly) NSString *placeholderString;
+@property (getter=isRootViewOnly, nonatomic, readonly) bool rootViewOnly;
+@property (nonatomic, readonly) NSString *userDefaultsKey;
+@property (nonatomic, readonly) double width;
 
 + (id)defaultConfiguration;
 + (id)defaultConfigurationWithClientInterface:(id)arg1;

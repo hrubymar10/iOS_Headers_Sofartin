@@ -9,8 +9,8 @@
     } _has;
 }
 
-@property(assign,readwrite) bool accept;
-@property(assign,readwrite) bool hasAccept;
+@property (nonatomic) bool accept;
+@property (nonatomic) bool hasAccept;
 
 - (bool)accept;
 - (void)copyTo:(id)arg1;

@@ -6,7 +6,7 @@
     CUIImage *_image;
 }
 
-@property(assign,readonly) struct CGImage { }* cgImageRef;
+@property (nonatomic, readonly) struct CGImage { }*cgImageRef;
 
 - (struct CGImage { }*)cgImageRef;
 - (void)dealloc;

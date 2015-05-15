@@ -12,7 +12,7 @@
     UITouch *_trackingTouch;
 }
 
-@property(assign,readwrite) unsigned long long tapCount;
+@property unsigned long long tapCount;
 
 - (void).cxx_destruct;
 - (void)_delayedHandleTaps:(id)arg1;

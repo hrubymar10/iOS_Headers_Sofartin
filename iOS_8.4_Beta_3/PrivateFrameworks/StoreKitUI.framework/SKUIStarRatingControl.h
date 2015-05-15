@@ -11,11 +11,11 @@
     long long _userRating;
 }
 
-@property(assign,retain) UIImage * emptyStarsImage;
-@property(assign,retain) UIImage * filledStarsImage;
-@property(assign,readwrite) float starSpacing;
-@property(assign,readwrite) float starWidth;
-@property(assign,readwrite) long long userRating;
+@property (nonatomic, retain) UIImage *emptyStarsImage;
+@property (nonatomic, retain) UIImage *filledStarsImage;
+@property (nonatomic) float starSpacing;
+@property (nonatomic) float starWidth;
+@property (nonatomic) long long userRating;
 
 - (void).cxx_destruct;
 - (void)_updateUserRatingWithTouch:(id)arg1;

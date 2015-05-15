@@ -8,9 +8,9 @@
     int mType;
 }
 
-@property(assign,readwrite) double outsetFrom;
-@property(assign,readwrite) double outsetTo;
-@property(assign,readwrite) int type;
+@property (nonatomic) double outsetFrom;
+@property (nonatomic) double outsetTo;
+@property (nonatomic) int type;
 
 + (id)pathSourceAtAngleOfSize:(struct CGSize { double x1; double x2; })arg1 forType:(int)arg2;
 + (id)pathSourceOfLength:(double)arg1;

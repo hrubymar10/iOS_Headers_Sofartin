@@ -6,7 +6,7 @@
     long long _artworkSize;
 }
 
-@property(assign,readonly) SKUIBrickSwooshViewController * swooshViewController;
+@property (nonatomic, readonly) SKUIBrickSwooshViewController *swooshViewController;
 
 - (id)cachedImageForBrick:(id)arg1;
 - (id)initWithArtworkLoader:(id)arg1 swoosh:(id)arg2;

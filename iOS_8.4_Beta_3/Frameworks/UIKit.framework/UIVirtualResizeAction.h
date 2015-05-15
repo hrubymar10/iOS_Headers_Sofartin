@@ -4,9 +4,9 @@
 
 @interface UIVirtualResizeAction : BSAction
 
-@property(assign,readonly) long long virtualHorizontalSizeClass;
-@property(assign,readonly) struct CGSize { double x1; double x2; } virtualSize;
-@property(assign,readonly) long long virtualVerticalSizeClass;
+@property (nonatomic, readonly) long long virtualHorizontalSizeClass;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } virtualSize;
+@property (nonatomic, readonly) long long virtualVerticalSizeClass;
 
 - (long long)UIActionType;
 - (id)initWithInfo:(id)arg1 timeout:(double)arg2 forResponseOnQueue:(id)arg3 withHandler:(id)arg4;

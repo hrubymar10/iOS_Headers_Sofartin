@@ -9,14 +9,14 @@
     long long _state;
 }
 
-@property(assign,retain) XPCClient * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <WPAWDLDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_xpc_object> * server;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) XPCClient *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <WPAWDLDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) NSObject<OS_xpc_object> *server;
+@property long long state;
+@property (readonly) Class superclass;
 
 + (id)generateDataFromEmails:(id)arg1;
 + (id)hashEmail:(id)arg1;

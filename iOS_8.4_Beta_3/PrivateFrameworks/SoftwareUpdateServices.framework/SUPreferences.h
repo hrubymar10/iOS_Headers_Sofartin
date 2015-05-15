@@ -11,12 +11,12 @@
     int _logLevel;
 }
 
-@property(assign,readonly) bool allowSameBuildUpdates;
-@property(getter=isAutoDownloadDisabled,assign,readonly) bool disableAutoDownload;
-@property(assign,readonly) bool disableAvailabilityAlerts;
-@property(assign,readonly) bool disableBuildNumberComparison;
-@property(assign,readonly) bool disableUserWiFiOnlyPeriod;
-@property(assign,readonly) int logLevel;
+@property (nonatomic, readonly) bool allowSameBuildUpdates;
+@property (getter=isAutoDownloadDisabled, nonatomic, readonly) bool disableAutoDownload;
+@property (nonatomic, readonly) bool disableAvailabilityAlerts;
+@property (nonatomic, readonly) bool disableBuildNumberComparison;
+@property (nonatomic, readonly) bool disableUserWiFiOnlyPeriod;
+@property (nonatomic, readonly) int logLevel;
 
 + (id)sharedInstance;
 

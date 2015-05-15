@@ -10,14 +10,14 @@
     id weatherInfoCompletion;
 }
 
-@property(assign,copy) id currentLocationCompletion;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CLLocationManager * locationManager;
-@property(assign,copy) id searchCompletion;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id weatherInfoCompletion;
+@property (nonatomic, copy) id currentLocationCompletion;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CLLocationManager *locationManager;
+@property (nonatomic, copy) id searchCompletion;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id weatherInfoCompletion;
 
 + (id)sharedWeatherUpdateController;
 

@@ -8,9 +8,9 @@
     unsigned long long _vertexFormat;
 }
 
-@property(assign,readwrite) unsigned long long bufferIndex;
-@property(assign,readwrite) unsigned long long format;
-@property(assign,readwrite) unsigned long long offset;
+@property (nonatomic) unsigned long long bufferIndex;
+@property (nonatomic) unsigned long long format;
+@property (nonatomic) unsigned long long offset;
 
 - (unsigned long long)bufferIndex;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

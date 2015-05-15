@@ -4,13 +4,13 @@
 
 @interface SAWatchData : AceObject <SAAceSerializable>
 
-@property(assign,readwrite) bool configuredForLeftWrist;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * interfaceOrientation;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool wristDetected;
+@property (nonatomic) bool configuredForLeftWrist;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *interfaceOrientation;
+@property (readonly) Class superclass;
+@property (nonatomic) bool wristDetected;
 
 + (id)watchData;
 + (id)watchDataWithDictionary:(id)arg1 context:(id)arg2;

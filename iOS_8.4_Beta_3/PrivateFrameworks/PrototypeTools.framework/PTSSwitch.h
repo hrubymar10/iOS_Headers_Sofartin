@@ -15,20 +15,20 @@
     NSString *_valueKeyPath;
 }
 
-@property(assign,readwrite) SEL action;
-@property(assign,readwrite) int alignment;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double height;
-@property(assign,readwrite) _UISettings * settings;
-@property(assign,retain) NSArray * subviewConstraints;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UISwitch * switchControl;
-@property(assign,readwrite) id target;
-@property(assign,retain) UILabel * titleLabel;
-@property(assign,copy) NSString * valueKeyPath;
+@property (nonatomic) SEL action;
+@property (nonatomic) int alignment;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double height;
+@property (nonatomic) _UISettings *settings;
+@property (nonatomic, retain) NSArray *subviewConstraints;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UISwitch *switchControl;
+@property (nonatomic) id target;
+@property (nonatomic, retain) UILabel *titleLabel;
+@property (nonatomic, copy) NSString *valueKeyPath;
 
 + (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })defaultFrame;
 + (id)switch;

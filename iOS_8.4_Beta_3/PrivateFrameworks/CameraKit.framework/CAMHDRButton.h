@@ -7,9 +7,9 @@
     bool _allowsAutomaticHDR;
 }
 
-@property(assign,readwrite) int HDRMode;
-@property(assign,readonly) CAMButtonLabel * _headerLabel;
-@property(assign,readwrite) bool allowsAutomaticHDR;
+@property (nonatomic) int HDRMode;
+@property (nonatomic, readonly) CAMButtonLabel *_headerLabel;
+@property (nonatomic) bool allowsAutomaticHDR;
 
 - (void).cxx_destruct;
 - (int)HDRMode;

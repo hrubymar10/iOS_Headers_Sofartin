@@ -16,14 +16,14 @@
     NSDictionary *_textFieldMetadata;
 }
 
-@property(assign,readwrite) WBUFormDataController * dataController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <WBUFormAutoFillFrameHandle> * frame;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * textFieldValue;
-@property(assign,readonly) UIView<WBUFormAutoFillWebView> * webView;
+@property (nonatomic) WBUFormDataController *dataController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) <WBUFormAutoFillFrameHandle> *frame;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *textFieldValue;
+@property (nonatomic, readonly) UIView<WBUFormAutoFillWebView> *webView;
 
 + (bool)_shouldSaveCredentialsInProtectionSpace:(id)arg1;
 

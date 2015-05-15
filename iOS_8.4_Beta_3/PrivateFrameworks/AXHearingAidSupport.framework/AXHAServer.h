@@ -11,16 +11,16 @@
     NSObject<OS_xpc_object> *_xpcConnection;
 }
 
-@property(assign,retain) NSArray * availableControllers;
-@property(assign,retain) NSArray * availableHearingAids;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <AXHAServerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hearingAidReachable;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableDictionary * updates;
-@property(assign,retain) NSObject<OS_xpc_object> * xpcConnection;
+@property (nonatomic, retain) NSArray *availableControllers;
+@property (nonatomic, retain) NSArray *availableHearingAids;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <AXHAServerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hearingAidReachable;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMutableDictionary *updates;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *xpcConnection;
 
 + (id)sharedInstance;
 

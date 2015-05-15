@@ -17,11 +17,11 @@
     NSAttributedString *_transcriptButtonText;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } buttonSize;
-@property(getter=isButtonSizeLoaded,assign,readwrite) bool buttonSizeLoaded;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } buttonTextAlignmentInsets;
-@property(assign,readonly) long long buttonType;
-@property(assign,copy) NSAttributedString * transcriptButtonText;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } buttonSize;
+@property (getter=isButtonSizeLoaded, nonatomic) bool buttonSizeLoaded;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } buttonTextAlignmentInsets;
+@property (nonatomic, readonly) long long buttonType;
+@property (nonatomic, copy) NSAttributedString *transcriptButtonText;
 
 + (id)thePastDateFormatter;
 + (id)thisWeekRelativeDateFormatter;

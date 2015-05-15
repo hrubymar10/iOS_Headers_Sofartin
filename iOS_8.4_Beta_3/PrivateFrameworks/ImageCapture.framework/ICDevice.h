@@ -6,20 +6,20 @@
     void *_deviceProperties;
 }
 
-@property(assign,copy) NSString * UUIDString;
-@property(assign,readwrite) bool autoOpenSession;
-@property(assign,readwrite) bool closeSessionPending;
-@property(assign,readwrite) <ICDeviceDelegate> * delegate;
-@property(assign,readwrite) DeviceManager * deviceManager;
-@property(assign,readwrite) bool hasOpenSession;
-@property(assign,readonly) struct CGImage { }* icon;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) bool openSessionPending;
-@property(assign,copy) NSString * productKind;
-@property(assign,copy) NSString * transportType;
-@property(assign,readwrite) int usbLocationID;
-@property(assign,readwrite) int usbProductID;
-@property(assign,readwrite) int usbVendorID;
+@property (copy) NSString *UUIDString;
+@property bool autoOpenSession;
+@property bool closeSessionPending;
+@property <ICDeviceDelegate> *delegate;
+@property DeviceManager *deviceManager;
+@property bool hasOpenSession;
+@property (readonly) struct CGImage { }*icon;
+@property (copy) NSString *name;
+@property bool openSessionPending;
+@property (copy) NSString *productKind;
+@property (copy) NSString *transportType;
+@property int usbLocationID;
+@property int usbProductID;
+@property int usbVendorID;
 
 - (id)UUIDString;
 - (bool)autoOpenSession;

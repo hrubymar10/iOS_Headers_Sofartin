@@ -9,15 +9,15 @@
     NSMutableSet *_urlsToExamine;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool didReceiveAuthenticationError;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableSet * principalURLs;
-@property(assign,readonly) NSSet * resultPrincipalURLs;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSURL * urlBeingExamined;
-@property(assign,retain) NSMutableSet * urlsToExamine;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool didReceiveAuthenticationError;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableSet *principalURLs;
+@property (nonatomic, readonly) NSSet *resultPrincipalURLs;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSURL *urlBeingExamined;
+@property (nonatomic, retain) NSMutableSet *urlsToExamine;
 
 - (void)_fetchNextURL;
 - (void)_finishWithError:(id)arg1;

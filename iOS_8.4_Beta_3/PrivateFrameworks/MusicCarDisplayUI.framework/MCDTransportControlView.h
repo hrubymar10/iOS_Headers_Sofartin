@@ -11,14 +11,14 @@
     bool _progressActive;
 }
 
-@property(assign,readonly) UIImage * defaultFastForwardButtonImage;
-@property(assign,readonly) UIImage * defaultLeftButtonImage;
-@property(assign,readonly) UIButton * fastForwardButton;
-@property(assign,readonly) UIButton * leftButton;
-@property(assign,readwrite) int mode;
-@property(assign,retain) UIImage * pauseImage;
-@property(assign,readonly) UIButton * playPauseButton;
-@property(assign,readwrite) bool progressActive;
+@property (nonatomic, readonly) UIImage *defaultFastForwardButtonImage;
+@property (nonatomic, readonly) UIImage *defaultLeftButtonImage;
+@property (nonatomic, readonly) UIButton *fastForwardButton;
+@property (nonatomic, readonly) UIButton *leftButton;
+@property (nonatomic) int mode;
+@property (nonatomic, retain) UIImage *pauseImage;
+@property (nonatomic, readonly) UIButton *playPauseButton;
+@property (nonatomic) bool progressActive;
 
 - (void).cxx_destruct;
 - (void)_createSubviews;

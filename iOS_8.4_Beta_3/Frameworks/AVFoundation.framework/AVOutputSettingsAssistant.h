@@ -6,9 +6,9 @@
     AVOutputSettingsAssistantInternal *_internal;
 }
 
-@property(assign,readonly) NSDictionary * audioSettings;
-@property(assign,readonly) NSString * outputFileType;
-@property(assign,readonly) NSDictionary * videoSettings;
+@property (nonatomic, readonly) NSDictionary *audioSettings;
+@property (nonatomic, readonly) NSString *outputFileType;
+@property (nonatomic, readonly) NSDictionary *videoSettings;
 
 + (id)_allOutputSettingsPresets;
 + (id)availableOutputSettingsPresets;

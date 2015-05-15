@@ -11,7 +11,7 @@
     NSObject<OS_dispatch_queue> *_userQueue;
 }
 
-@property(assign,readwrite) <AirPlayRemoteSlideshowDelegate> * delegate;
+@property (nonatomic) <AirPlayRemoteSlideshowDelegate> *delegate;
 
 - (void)_configureEventHandler;
 - (void)dealloc;

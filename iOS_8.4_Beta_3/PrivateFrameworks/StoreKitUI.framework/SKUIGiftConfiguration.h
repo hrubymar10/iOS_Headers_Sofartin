@@ -25,19 +25,19 @@
     NSArray *_themes;
 }
 
-@property(assign,readonly) SKUIClientContext * clientContext;
-@property(assign,readonly) NSString * currencySymbol;
-@property(assign,readonly) long long currencySymbolPosition;
-@property(assign,readonly) NSArray * fixedGiftAmountLabels;
-@property(assign,readonly) NSArray * fixedGiftAmountValues;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } giftAmountRange;
-@property(assign,readonly) NSURL * giftPurchaseURL;
-@property(assign,readonly) NSURL * giftValidationURL;
-@property(assign,readonly) long long maximumMessageLength;
-@property(assign,readonly) NSString * senderEmailAddress;
-@property(assign,readonly) NSString * senderName;
-@property(assign,readonly) NSString * storeFrontName;
-@property(assign,readonly) NSArray * themes;
+@property (nonatomic, readonly) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) NSString *currencySymbol;
+@property (nonatomic, readonly) long long currencySymbolPosition;
+@property (nonatomic, readonly) NSArray *fixedGiftAmountLabels;
+@property (nonatomic, readonly) NSArray *fixedGiftAmountValues;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } giftAmountRange;
+@property (nonatomic, readonly) NSURL *giftPurchaseURL;
+@property (nonatomic, readonly) NSURL *giftValidationURL;
+@property (nonatomic, readonly) long long maximumMessageLength;
+@property (nonatomic, readonly) NSString *senderEmailAddress;
+@property (nonatomic, readonly) NSString *senderName;
+@property (nonatomic, readonly) NSString *storeFrontName;
+@property (nonatomic, readonly) NSArray *themes;
 
 - (void).cxx_destruct;
 - (void)_finishLoadAccountInfoWithResponse:(id)arg1 error:(id)arg2 block:(id)arg3;

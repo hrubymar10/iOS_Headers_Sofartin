@@ -49,14 +49,14 @@
     NSArray *_viewElements;
 }
 
-@property(assign,retain) SKUIViewElementLayoutContext * cellLayoutContext;
-@property(assign,readonly) double columnContentWidth;
-@property(assign,readonly) double columnWidth;
-@property(assign,readwrite) <SKUIGridViewElementPageSectionConfigurationDataSource> * dataSource;
-@property(assign,readwrite) long long numberOfColumns;
-@property(assign,retain) SKUIStorePageSectionContext * pageSectionContext;
-@property(assign,readwrite) bool rendersWithPerspective;
-@property(assign,readonly) bool showsEditMode;
+@property (nonatomic, retain) SKUIViewElementLayoutContext *cellLayoutContext;
+@property (nonatomic, readonly) double columnContentWidth;
+@property (nonatomic, readonly) double columnWidth;
+@property (nonatomic) <SKUIGridViewElementPageSectionConfigurationDataSource> *dataSource;
+@property (nonatomic) long long numberOfColumns;
+@property (nonatomic, retain) SKUIStorePageSectionContext *pageSectionContext;
+@property (nonatomic) bool rendersWithPerspective;
+@property (nonatomic, readonly) bool showsEditMode;
 
 - (void).cxx_destruct;
 - (id)_cardArtworkBoundingSizeForIndexPath:(id)arg1;

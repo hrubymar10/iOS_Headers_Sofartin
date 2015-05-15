@@ -7,8 +7,8 @@
     NSNumber *inputLevels;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputLevels;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputLevels;
 
 + (id)customAttributes;
 

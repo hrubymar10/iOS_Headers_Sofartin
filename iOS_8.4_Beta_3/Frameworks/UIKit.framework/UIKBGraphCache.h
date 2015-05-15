@@ -7,13 +7,13 @@
     UIScreen *_screen;
 }
 
-@property(assign,readonly) UIScreen * _intendedScreen;
-@property(assign,readonly) NSDictionary * _options;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSMutableDictionary * graphCache;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly) UIScreen *_intendedScreen;
+@property (readonly) NSDictionary *_options;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSMutableDictionary *graphCache;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)graphCacheForScreen:(id)arg1;
 

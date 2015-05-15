@@ -6,7 +6,7 @@
     unsigned long long _iTunes_action_target;
 }
 
-@property(assign,readwrite) unsigned long long iTunes_action_target;
+@property unsigned long long iTunes_action_target;
 
 - (unsigned long long)iTunes_action_target;
 - (void)setITunes_action_target:(unsigned long long)arg1;

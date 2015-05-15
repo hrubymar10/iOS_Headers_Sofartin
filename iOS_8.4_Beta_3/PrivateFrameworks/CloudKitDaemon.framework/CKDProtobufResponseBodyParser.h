@@ -18,19 +18,19 @@
     NSMutableData *_tailParserData;
 }
 
-@property(assign,readwrite) unsigned long long curObjectLength;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isParsing;
-@property(assign,readwrite) struct CC_SHA256state_st { unsigned int x1[2]; unsigned int x2[8]; unsigned int x3[16]; } mescalSignature;
-@property(assign,readwrite) Class messageClass;
-@property(assign,copy) id objectParsedBlock;
-@property(assign,retain) NSObject<OS_dispatch_queue> * parseQueue;
-@property(assign,retain) NSData * parserData;
-@property(assign,retain) NSError * parserError;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableData * tailParserData;
+@property (nonatomic) unsigned long long curObjectLength;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isParsing;
+@property (nonatomic) struct CC_SHA256state_st { unsigned int x1[2]; unsigned int x2[8]; unsigned int x3[16]; } mescalSignature;
+@property (nonatomic) Class messageClass;
+@property (nonatomic, copy) id objectParsedBlock;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *parseQueue;
+@property (nonatomic, retain) NSData *parserData;
+@property (nonatomic, retain) NSError *parserError;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMutableData *tailParserData;
 
 - (void).cxx_destruct;
 - (bool)_parseObjectFromData:(id)arg1 rawData:(id)arg2;

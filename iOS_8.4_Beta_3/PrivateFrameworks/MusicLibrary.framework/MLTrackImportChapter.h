@@ -11,12 +11,12 @@
     NSString *_urlTitle;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,copy) NSString * URLTitle;
-@property(assign,copy) NSString * imageCacheKey;
-@property(assign,copy) NSData * imageData;
-@property(assign,readwrite) unsigned long long startTimeInMilliseconds;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, copy) NSString *URLTitle;
+@property (nonatomic, copy) NSString *imageCacheKey;
+@property (nonatomic, copy) NSData *imageData;
+@property (nonatomic) unsigned long long startTimeInMilliseconds;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)URL;

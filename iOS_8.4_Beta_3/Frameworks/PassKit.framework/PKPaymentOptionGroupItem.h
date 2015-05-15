@@ -10,14 +10,14 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSString * detail;
-@property(getter=isEditable,assign,readwrite) bool editable;
-@property(assign,readonly) NSString * groupType;
-@property(assign,readonly) bool isDeletable;
-@property(assign,readonly) bool isSelectable;
-@property(assign,readonly) id referenceObject;
-@property(assign,readonly) Class tableViewCellClass;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSString *detail;
+@property (getter=isEditable, nonatomic) bool editable;
+@property (nonatomic, readonly) NSString *groupType;
+@property (nonatomic, readonly) bool isDeletable;
+@property (nonatomic, readonly) bool isSelectable;
+@property (nonatomic, readonly) id referenceObject;
+@property (nonatomic, readonly) Class tableViewCellClass;
+@property (nonatomic, readonly) NSString *title;
 
 + (id)_singleLineGroupTypes;
 

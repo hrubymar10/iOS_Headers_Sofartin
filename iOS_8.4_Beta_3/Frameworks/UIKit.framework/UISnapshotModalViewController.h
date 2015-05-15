@@ -8,7 +8,7 @@
     UINavigationController *_parentController;
 }
 
-@property(assign,retain) UIViewController * disappearingViewController;
+@property (nonatomic, retain) UIViewController *disappearingViewController;
 
 - (bool)_isSupportedInterfaceOrientation:(long long)arg1;
 - (void)dealloc;

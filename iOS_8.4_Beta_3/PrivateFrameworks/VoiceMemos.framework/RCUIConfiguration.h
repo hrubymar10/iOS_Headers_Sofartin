@@ -24,25 +24,25 @@
     UIColor *_waveformHighlightColor;
 }
 
-@property(assign,readwrite) double acousticAnnotationVerticalMargin;
-@property(assign,retain) UIColor * acousticGradientMaskEndColor;
-@property(assign,retain) UIColor * acousticValueColor;
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,retain) NSString * debugIdentifier;
-@property(assign,readwrite) float maximumDecibelDisplayRange;
-@property(assign,readwrite) float minimumDecibelDisplayRange;
-@property(assign,retain) UIColor * playbackPositionBarColor;
-@property(assign,retain) UIColor * playbackPositionTimeColor;
-@property(assign,retain) UIColor * selectionOverlayColor;
-@property(assign,retain) UIColor * selectionOverlayEndpointBarColor;
-@property(assign,retain) UIColor * selectionOverlayEndpointTimeColor;
-@property(assign,readwrite) bool showsWaveformCenterline;
-@property(assign,retain) UIColor * timeLineMarkerColor;
-@property(assign,retain) UIColor * timeLineTimeColor;
-@property(assign,retain) UIColor * waveformBoundaryLineColor;
-@property(assign,readwrite) bool waveformBoundaryLineDimInSelectionMode;
-@property(assign,retain) UIColor * waveformColor;
-@property(assign,retain) UIColor * waveformHighlightColor;
+@property (nonatomic) double acousticAnnotationVerticalMargin;
+@property (nonatomic, retain) UIColor *acousticGradientMaskEndColor;
+@property (nonatomic, retain) UIColor *acousticValueColor;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic, retain) NSString *debugIdentifier;
+@property (nonatomic) float maximumDecibelDisplayRange;
+@property (nonatomic) float minimumDecibelDisplayRange;
+@property (nonatomic, retain) UIColor *playbackPositionBarColor;
+@property (nonatomic, retain) UIColor *playbackPositionTimeColor;
+@property (nonatomic, retain) UIColor *selectionOverlayColor;
+@property (nonatomic, retain) UIColor *selectionOverlayEndpointBarColor;
+@property (nonatomic, retain) UIColor *selectionOverlayEndpointTimeColor;
+@property (nonatomic) bool showsWaveformCenterline;
+@property (nonatomic, retain) UIColor *timeLineMarkerColor;
+@property (nonatomic, retain) UIColor *timeLineTimeColor;
+@property (nonatomic, retain) UIColor *waveformBoundaryLineColor;
+@property (nonatomic) bool waveformBoundaryLineDimInSelectionMode;
+@property (nonatomic, retain) UIColor *waveformColor;
+@property (nonatomic, retain) UIColor *waveformHighlightColor;
 
 + (id)defaultConfiguration;
 

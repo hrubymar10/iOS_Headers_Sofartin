@@ -11,9 +11,9 @@
     } offset;
 }
 
-@property(assign,readwrite) struct CGPath { }* borderPath;
-@property(assign,readwrite) struct CGPath { }* clipPath;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } offset;
+@property (nonatomic) struct CGPath { }*borderPath;
+@property (nonatomic) struct CGPath { }*clipPath;
+@property (nonatomic) struct CGPoint { double x1; double x2; } offset;
 
 - (struct CGPath { }*)borderPath;
 - (struct CGPath { }*)clipPath;

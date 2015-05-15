@@ -9,8 +9,8 @@
     SSURLConnectionRequest *_request;
 }
 
-@property(assign,retain) SSMetricsConfiguration * metricsConfiguration;
-@property(assign,copy) SSMetricsPageEvent * metricsPageEvent;
+@property (nonatomic, readonly, retain) SSMetricsConfiguration *metricsConfiguration;
+@property (nonatomic, readonly, copy) SSMetricsPageEvent *metricsPageEvent;
 
 + (id)cacheKeyForGenreWithNodeID:(unsigned long long)arg1;
 + (id)fallbackRequestPath;

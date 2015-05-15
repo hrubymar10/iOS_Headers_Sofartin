@@ -6,7 +6,7 @@
     NSData *_restrictions;
 }
 
-@property(assign,retain) NSData * restrictions;
+@property (nonatomic, retain) NSData *restrictions;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

@@ -9,9 +9,9 @@
     struct __CFMessagePort { } *remotePort;
 }
 
-@property(assign,readwrite) bool cachingEnabled;
-@property(assign,readwrite) <PLBasebandLogChannelDelegate> * delegate;
-@property(assign,readonly) bool isValid;
+@property (nonatomic) bool cachingEnabled;
+@property (nonatomic) <PLBasebandLogChannelDelegate> *delegate;
+@property (nonatomic, readonly) bool isValid;
 
 - (bool)cachingEnabled;
 - (void)close;

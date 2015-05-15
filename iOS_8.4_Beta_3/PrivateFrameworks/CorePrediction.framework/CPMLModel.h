@@ -8,7 +8,7 @@
     CPMLModelEvaluate *cpModelEvaluate;
 }
 
-@property(assign,retain) CPMLModelEvaluate * cpModelEvaluate;
+@property (nonatomic, retain) CPMLModelEvaluate *cpModelEvaluate;
 
 - (void).cxx_destruct;
 - (void)boundResult:(id)arg1;

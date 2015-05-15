@@ -8,9 +8,9 @@
     NSArray *_optionalCharacteristics;
 }
 
-@property(assign,retain) HAPMetadataService * hapServiceMetadata;
-@property(assign,retain) NSArray * mandatoryCharacteristics;
-@property(assign,retain) NSArray * optionalCharacteristics;
+@property (nonatomic, retain) HAPMetadataService *hapServiceMetadata;
+@property (nonatomic, retain) NSArray *mandatoryCharacteristics;
+@property (nonatomic, retain) NSArray *optionalCharacteristics;
 
 + (bool)supportsSecureCoding;
 

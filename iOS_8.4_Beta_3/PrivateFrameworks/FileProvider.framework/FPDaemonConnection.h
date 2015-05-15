@@ -7,9 +7,9 @@
     NSXPCConnection<FPDaemon> *_connectionQueueConnection;
 }
 
-@property(assign,readonly) NSXPCConnection<FPDaemon> * connection;
-@property(assign,retain) NSObject<OS_dispatch_queue> * connectionQueue;
-@property(assign,retain) NSXPCConnection<FPDaemon> * connectionQueueConnection;
+@property (nonatomic, readonly) NSXPCConnection<FPDaemon> *connection;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *connectionQueue;
+@property (nonatomic, retain) NSXPCConnection<FPDaemon> *connectionQueueConnection;
 
 + (id)sharedConnection;
 

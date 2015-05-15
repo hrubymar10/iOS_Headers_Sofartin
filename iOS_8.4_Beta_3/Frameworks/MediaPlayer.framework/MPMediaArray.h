@@ -4,6 +4,6 @@
 
 @interface MPMediaArray : NSArray
 
-@property(assign,copy) MPMediaQuerySectionInfo * sectionInfo;
+@property (nonatomic, readonly, copy) MPMediaQuerySectionInfo *sectionInfo;
 
 @end

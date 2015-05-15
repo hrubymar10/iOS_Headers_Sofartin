@@ -4,7 +4,7 @@
 
 @interface SAHAFloatValue : SAHAAttributeValue
 
-@property(assign,readwrite) float value;
+@property (nonatomic) float value;
 
 + (id)floatValue;
 + (id)floatValueWithDictionary:(id)arg1 context:(id)arg2;

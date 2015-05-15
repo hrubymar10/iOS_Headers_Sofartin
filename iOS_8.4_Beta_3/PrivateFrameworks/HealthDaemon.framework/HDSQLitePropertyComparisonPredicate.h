@@ -8,9 +8,9 @@
     NSString *_rhObjectPropertyName;
 }
 
-@property(assign,readonly) long long comparisonType;
-@property(assign,readonly) NSString * lhObjectPropertyName;
-@property(assign,readonly) NSString * rhObjectPropertyName;
+@property (nonatomic, readonly) long long comparisonType;
+@property (nonatomic, readonly) NSString *lhObjectPropertyName;
+@property (nonatomic, readonly) NSString *rhObjectPropertyName;
 
 + (id)predicateWithLeftHandObjectPropertyName:(id)arg1 rightHandObjectPropertyName:(id)arg2 comparisonType:(long long)arg3;
 

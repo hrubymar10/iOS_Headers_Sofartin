@@ -8,8 +8,8 @@
     struct __CFArray { } *paragraphs;
 }
 
-@property(assign,retain) CPList * list;
-@property(assign,readwrite) int number;
+@property (nonatomic, retain) CPList *list;
+@property (nonatomic) int number;
 
 - (void)addParagraph:(id)arg1;
 - (void)dealloc;

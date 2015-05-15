@@ -25,19 +25,19 @@
     NSMapTable *_specifierDataSources;
 }
 
-@property(assign,retain) PSSearchOperation * activeSearchOperation;
-@property(assign,copy) NSString * currentQuery;
-@property(assign,readonly) PSSearchResults * currentResults;
-@property(assign,readwrite) <PSSearchModelDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasCompletedIndexing;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isIndexing,assign,readonly) bool indexing;
-@property(getter=isLoadingResults,assign,readonly) bool loadingResults;
-@property(assign,readonly) long long observerType;
-@property(assign,readonly) NSArray * rootEntries;
-@property(assign,readonly) Class superclass;
+@property (retain) PSSearchOperation *activeSearchOperation;
+@property (copy) NSString *currentQuery;
+@property (readonly) PSSearchResults *currentResults;
+@property (nonatomic) <PSSearchModelDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasCompletedIndexing;
+@property (readonly) unsigned long long hash;
+@property (getter=isIndexing, nonatomic, readonly) bool indexing;
+@property (getter=isLoadingResults, nonatomic, readonly) bool loadingResults;
+@property (nonatomic, readonly) long long observerType;
+@property (nonatomic, readonly) NSArray *rootEntries;
+@property (readonly) Class superclass;
 
 + (id)sharedInstance;
 

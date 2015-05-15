@@ -6,7 +6,7 @@
     RCCompositionController *_compositionController;
 }
 
-@property(assign,readonly) RCCompositionController * compositionController;
+@property (nonatomic, readonly) RCCompositionController *compositionController;
 
 + (id)_newPresentedPrepareAlertControllerForComposition:(id)arg1 dismissHandler:(id)arg2;
 + (id)_newPresentedPrepareFailureAlertControllerForComposition:(id)arg1;

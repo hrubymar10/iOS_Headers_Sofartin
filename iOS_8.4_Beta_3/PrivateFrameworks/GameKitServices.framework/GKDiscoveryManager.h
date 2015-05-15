@@ -13,13 +13,13 @@
     id _receiveDataHandler;
 }
 
-@property(assign,retain) GKDiscoveryBonjour * bonjour;
-@property(assign,copy) NSString * deviceID;
-@property(assign,retain) NSMutableDictionary * peers;
-@property(assign,copy) id playerFoundHandler;
-@property(assign,copy) NSString * playerID;
-@property(assign,copy) id playerLostHandler;
-@property(assign,copy) id receiveDataHandler;
+@property (nonatomic, retain) GKDiscoveryBonjour *bonjour;
+@property (nonatomic, copy) NSString *deviceID;
+@property (nonatomic, retain) NSMutableDictionary *peers;
+@property (nonatomic, copy) id playerFoundHandler;
+@property (nonatomic, copy) NSString *playerID;
+@property (nonatomic, copy) id playerLostHandler;
+@property (nonatomic, copy) id receiveDataHandler;
 
 + (id)parseDeviceIDFromServiceName:(id)arg1;
 

@@ -21,7 +21,7 @@
     double _topHeight;
 }
 
-@property(assign,readwrite) bool supportsHardPause;
+@property bool supportsHardPause;
 
 + (void)_delayedDeactivate;
 + (bool)launchFieldTestIfNeeded:(id)arg1;

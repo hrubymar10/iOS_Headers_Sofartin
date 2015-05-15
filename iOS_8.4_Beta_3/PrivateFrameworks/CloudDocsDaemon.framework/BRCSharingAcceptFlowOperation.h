@@ -20,11 +20,11 @@
     BRCXPCClient *_xpcClient;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *identifier;
+@property (readonly) Class superclass;
 
 + (void)_openAppStoreForShareURL:(id)arg1;
 + (void)_openShareURLInWebBrowser:(id)arg1 withReason:(id)arg2;

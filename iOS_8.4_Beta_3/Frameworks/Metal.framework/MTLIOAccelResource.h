@@ -31,21 +31,21 @@
     } _res;
 }
 
-@property(assign,readonly) MTLResourceAllocationInfo * cachedAllocationInfo;
-@property(assign,readonly) unsigned long long cpuCacheMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,readonly) unsigned long long gpuAddress;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * label;
-@property(assign,readonly) unsigned int resourceID;
-@property(assign,readonly) struct __IOAccelResource { }* resourceRef;
-@property(assign,readonly) unsigned int resourceSize;
-@property(assign,readwrite) int responsibleProcess;
-@property(assign,readonly) MTLResourceAllocationInfo * sharedAllocationInfo;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) void* virtualAddress;
+@property (readonly) MTLResourceAllocationInfo *cachedAllocationInfo;
+@property (readonly) unsigned long long cpuCacheMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) <MTLDevice> *device;
+@property (nonatomic, readonly) unsigned long long gpuAddress;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *label;
+@property (nonatomic, readonly) unsigned int resourceID;
+@property (readonly) struct __IOAccelResource { }*resourceRef;
+@property (nonatomic, readonly) unsigned int resourceSize;
+@property int responsibleProcess;
+@property (readonly) MTLResourceAllocationInfo *sharedAllocationInfo;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) void*virtualAddress;
 
 - (void)annotateResource:(struct __CFDictionary { }*)arg1;
 - (id)cachedAllocationInfo;

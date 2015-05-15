@@ -4,7 +4,7 @@
 
 @interface SAUIOpenLink : SABaseClientBoundCommand
 
-@property(assign,copy) NSURL * ref;
+@property (nonatomic, copy) NSURL *ref;
 
 + (id)openLink;
 + (id)openLinkWithDictionary:(id)arg1 context:(id)arg2;

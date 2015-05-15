@@ -4,7 +4,7 @@
 
 @interface TNAppDelegateBase : TSABaseApplicationDelegate
 
-@property(assign,readonly) NSArray * excelDocumentTypes;
+@property (nonatomic, readonly) NSArray *excelDocumentTypes;
 
 - (id)appChartPropertyOverrides;
 - (void)applicationDidFinishLaunching:(id)arg1;

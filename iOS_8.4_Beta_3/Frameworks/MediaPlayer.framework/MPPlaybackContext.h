@@ -10,13 +10,13 @@
     long long _startIndex;
 }
 
-@property(setter=mpuReporting_setFeatureName:,assign,copy) NSString * mpuReporting_featureName;
-@property(setter=mpuReporting_setRecommendationData:,assign,copy) NSData * mpuReporting_recommendationData;
-@property(assign,readwrite) unsigned long long repeatType;
-@property(assign,readwrite) bool shouldRestartPlayback;
-@property(assign,readwrite) bool shouldStartPlayback;
-@property(assign,readwrite) unsigned long long shuffleType;
-@property(assign,readwrite) long long startIndex;
+@property (setter=mpuReporting_setFeatureName:, nonatomic, copy) NSString *mpuReporting_featureName;
+@property (setter=mpuReporting_setRecommendationData:, nonatomic, copy) NSData *mpuReporting_recommendationData;
+@property (nonatomic) unsigned long long repeatType;
+@property (nonatomic) bool shouldRestartPlayback;
+@property (nonatomic) bool shouldStartPlayback;
+@property (nonatomic) unsigned long long shuffleType;
+@property (nonatomic) long long startIndex;
 
 + (Class)queueFeederClass;
 

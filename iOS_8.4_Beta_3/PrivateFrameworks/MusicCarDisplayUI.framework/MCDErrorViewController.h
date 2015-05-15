@@ -10,8 +10,8 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) NSString * errorMessage;
-@property(assign,retain) NSString * errorTitle;
+@property (nonatomic, retain) NSString *errorMessage;
+@property (nonatomic, retain) NSString *errorTitle;
 
 - (void).cxx_destruct;
 - (void)dealloc;

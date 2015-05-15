@@ -10,19 +10,19 @@
     float _weightInLbs;
 }
 
-@property(assign,readonly) bool canBeUsedForRunCalibration;
-@property(assign,readonly) bool canBeUsedForWalkCalibration;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCalibration;
-@property(assign,readonly) bool isWalk;
-@property(assign,readonly) float maximumCalibrationDistanceMiles;
-@property(assign,readonly) float minimumCalibrationDistanceMiles;
-@property(assign,copy) NSData * paceModelParameters;
-@property(assign,readonly) SWRunSensor * sensor;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) float weightInLbs;
+@property (nonatomic, readonly) bool canBeUsedForRunCalibration;
+@property (nonatomic, readonly) bool canBeUsedForWalkCalibration;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCalibration;
+@property (nonatomic, readonly) bool isWalk;
+@property (nonatomic, readonly) float maximumCalibrationDistanceMiles;
+@property (nonatomic, readonly) float minimumCalibrationDistanceMiles;
+@property (nonatomic, copy) NSData *paceModelParameters;
+@property (nonatomic, readonly) SWRunSensor *sensor;
+@property (readonly) Class superclass;
+@property (nonatomic) float weightInLbs;
 
 + (id)workoutWithSensor:(id)arg1;
 

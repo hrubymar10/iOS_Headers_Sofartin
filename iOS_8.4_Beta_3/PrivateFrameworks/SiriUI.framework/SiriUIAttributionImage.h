@@ -18,16 +18,16 @@
     NSURL *_remoteURL;
 }
 
-@property(assign,copy) NSString * localPressedResourceName;
-@property(assign,retain) SAUIAppPunchOut * localPunchOut;
-@property(assign,retain) NSBundle * localResourceBundle;
-@property(assign,copy) NSString * localResourceName;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } logoSize;
-@property(assign,readwrite) double remotePressedScale;
-@property(assign,copy) NSURL * remotePressedURL;
-@property(assign,retain) SAUIAppPunchOut * remotePunchOut;
-@property(assign,readwrite) double remoteScale;
-@property(assign,copy) NSURL * remoteURL;
+@property (nonatomic, copy) NSString *localPressedResourceName;
+@property (nonatomic, retain) SAUIAppPunchOut *localPunchOut;
+@property (nonatomic, retain) NSBundle *localResourceBundle;
+@property (nonatomic, copy) NSString *localResourceName;
+@property (nonatomic) struct CGSize { double x1; double x2; } logoSize;
+@property (nonatomic) double remotePressedScale;
+@property (nonatomic, copy) NSURL *remotePressedURL;
+@property (nonatomic, retain) SAUIAppPunchOut *remotePunchOut;
+@property (nonatomic) double remoteScale;
+@property (nonatomic, copy) NSURL *remoteURL;
 
 + (id)attributionImageFromAppPunchOut:(id)arg1;
 + (id)attributionImageFromKey:(id)arg1 pressedKey:(id)arg2 punchOut:(id)arg3;

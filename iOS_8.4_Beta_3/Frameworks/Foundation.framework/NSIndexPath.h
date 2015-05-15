@@ -8,14 +8,14 @@
     void *_reserved;
 }
 
-@property(assign,readonly) long long ab_group;
-@property(assign,readonly) long long ab_item;
-@property(assign,readonly) long long item;
-@property(assign,readonly) unsigned long long length;
-@property(assign,readonly) long long row;
-@property(assign,readonly) long long section;
-@property(assign,readonly) long long tk_row;
-@property(assign,readonly) long long tk_section;
+@property (nonatomic, readonly) long long ab_group;
+@property (nonatomic, readonly) long long ab_item;
+@property (nonatomic, readonly) long long item;
+@property (readonly) unsigned long long length;
+@property (nonatomic, readonly) long long row;
+@property (nonatomic, readonly) long long section;
+@property (nonatomic, readonly) long long tk_row;
+@property (nonatomic, readonly) long long tk_section;
 
 + (id)indexPath;
 + (id)indexPathForItem:(long long)arg1 inGroup:(long long)arg2;

@@ -34,21 +34,21 @@
     NSDictionary *_titleTextAttributes;
 }
 
-@property(assign,copy) NSString * albumText;
-@property(assign,copy) NSString * artistText;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } detailMarqueeEdgeInsets;
-@property(assign,retain) NSDictionary * detailTextAttributes;
-@property(getter=isExplicit,assign,readwrite) bool explicit;
-@property(assign,retain) UIImage * explicitImage;
-@property(getter=isMarqueeEnabled,assign,readwrite) bool marqueeEnabled;
-@property(assign,copy) NSString * stationNameText;
-@property(assign,readwrite) long long style;
-@property(assign,readwrite) double textMargin;
-@property(assign,readonly) double titleBaselineOffsetFromBottom;
-@property(assign,readwrite) double titleLeading;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } titleMarqueeEdgeInsets;
-@property(assign,copy) NSString * titleText;
-@property(assign,retain) NSDictionary * titleTextAttributes;
+@property (nonatomic, copy) NSString *albumText;
+@property (nonatomic, copy) NSString *artistText;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } detailMarqueeEdgeInsets;
+@property (nonatomic, retain) NSDictionary *detailTextAttributes;
+@property (getter=isExplicit, nonatomic) bool explicit;
+@property (nonatomic, retain) UIImage *explicitImage;
+@property (getter=isMarqueeEnabled, nonatomic) bool marqueeEnabled;
+@property (nonatomic, copy) NSString *stationNameText;
+@property (nonatomic) long long style;
+@property (nonatomic) double textMargin;
+@property (nonatomic, readonly) double titleBaselineOffsetFromBottom;
+@property (nonatomic) double titleLeading;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } titleMarqueeEdgeInsets;
+@property (nonatomic, copy) NSString *titleText;
+@property (nonatomic, retain) NSDictionary *titleTextAttributes;
 
 + (Class)labelClass;
 

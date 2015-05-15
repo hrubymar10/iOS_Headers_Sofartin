@@ -12,18 +12,18 @@
     id _transport;
 }
 
-@property(getter=isAuthorizedForHomeDataAccess,assign,readonly) bool authorizedForHomeDataAccess;
-@property(getter=isEntitledForAPIAccess,assign,readonly) bool entitledForAPIAccess;
-@property(getter=isEntitledForBackgroundMode,assign,readonly) bool entitledForBackgroundMode;
-@property(getter=isEntitledForSPIAccess,assign,readonly) bool entitledForSPIAccess;
-@property(assign,readonly) NSUUID * identifier;
-@property(getter=isInternalMessage,assign,readonly) bool internalMessage;
-@property(assign,readonly) NSDictionary * messagePayload;
-@property(assign,readonly) NSString * name;
-@property(getter=isRemoteSource,assign,readonly) bool remoteSource;
-@property(assign,readonly) id responseHandler;
-@property(assign,readonly) int sourcePid;
-@property(assign,readonly) id transport;
+@property (getter=isAuthorizedForHomeDataAccess, nonatomic, readonly) bool authorizedForHomeDataAccess;
+@property (getter=isEntitledForAPIAccess, nonatomic, readonly) bool entitledForAPIAccess;
+@property (getter=isEntitledForBackgroundMode, nonatomic, readonly) bool entitledForBackgroundMode;
+@property (getter=isEntitledForSPIAccess, nonatomic, readonly) bool entitledForSPIAccess;
+@property (nonatomic, readonly) NSUUID *identifier;
+@property (getter=isInternalMessage, nonatomic, readonly) bool internalMessage;
+@property (nonatomic, readonly) NSDictionary *messagePayload;
+@property (nonatomic, readonly) NSString *name;
+@property (getter=isRemoteSource, nonatomic, readonly) bool remoteSource;
+@property (nonatomic, readonly) id responseHandler;
+@property (nonatomic, readonly) int sourcePid;
+@property (nonatomic, readonly) id transport;
 
 + (id)internalMessageWithName:(id)arg1 messagePayload:(id)arg2;
 + (id)internalMessageWithName:(id)arg1 messagePayload:(id)arg2 responseHandler:(id)arg3;

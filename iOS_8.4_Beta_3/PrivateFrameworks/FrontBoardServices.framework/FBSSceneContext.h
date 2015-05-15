@@ -10,10 +10,10 @@
     bool _shouldObserveContext;
 }
 
-@property(assign,retain) CAContext * CAContext;
-@property(assign,readwrite) <FBSSceneContextDelegate> * delegate;
-@property(assign,readonly) unsigned int identifier;
-@property(assign,readwrite) double level;
+@property (nonatomic, readonly, retain) CAContext *CAContext;
+@property (nonatomic) <FBSSceneContextDelegate> *delegate;
+@property (nonatomic, readonly) unsigned int identifier;
+@property (nonatomic) double level;
 
 + (id)contextWithCAContext:(id)arg1;
 

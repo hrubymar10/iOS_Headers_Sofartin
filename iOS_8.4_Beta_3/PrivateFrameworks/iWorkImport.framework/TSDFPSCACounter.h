@@ -9,7 +9,7 @@
     NSTimer *mTimer;
 }
 
-@property(assign,readwrite) bool shouldRunTimer;
+@property (nonatomic) bool shouldRunTimer;
 
 - (id)init;
 - (void)p_updateFrameCount;

@@ -4,16 +4,16 @@
 
 @interface SAAnswerDictionaryStructuredAnswer : AceObject <SAAnswerStructuredAnswer>
 
-@property(assign,copy) NSString * category;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSArray * definitionGroups;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * phoneticPronunciation;
-@property(assign,copy) NSURL * sound;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * syllables;
-@property(assign,copy) NSString * word;
+@property (nonatomic, copy) NSString *category;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, copy) NSArray *definitionGroups;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *phoneticPronunciation;
+@property (nonatomic, copy) NSURL *sound;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *syllables;
+@property (nonatomic, copy) NSString *word;
 
 + (id)dictionaryStructuredAnswer;
 + (id)dictionaryStructuredAnswerWithDictionary:(id)arg1 context:(id)arg2;

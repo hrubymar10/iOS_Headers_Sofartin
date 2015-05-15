@@ -7,8 +7,8 @@
     double _screenWidth;
 }
 
-@property(assign,readwrite) double screenScale;
-@property(assign,readwrite) double screenWidth;
+@property (nonatomic) double screenScale;
+@property (nonatomic) double screenWidth;
 
 + (id)pairedDeviceInfoWithScreenWidth:(double)arg1 screenScale:(double)arg2;
 

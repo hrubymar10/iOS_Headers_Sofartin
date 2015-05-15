@@ -11,16 +11,16 @@
     bool _success;
 }
 
-@property(assign,readwrite) IKAppContext * appContext;
-@property(assign,retain) JSManagedValue * callback;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isJingleRequest;
-@property(assign,retain) NSMutableArray * records;
-@property(assign,retain) NSArray * scripts;
-@property(assign,readwrite) bool success;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) IKAppContext *appContext;
+@property (nonatomic, retain) JSManagedValue *callback;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isJingleRequest;
+@property (nonatomic, retain) NSMutableArray *records;
+@property (nonatomic, retain) NSArray *scripts;
+@property (nonatomic) bool success;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_operation:(id)arg1 finishedWithResult:(id)arg2 error:(id)arg3;

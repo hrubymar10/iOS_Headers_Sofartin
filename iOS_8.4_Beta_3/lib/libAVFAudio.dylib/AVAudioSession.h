@@ -6,14 +6,14 @@
     void *_impl;
 }
 
-@property(assign,readonly) NSArray * availableInputs;
-@property(assign,readonly) NSString * category;
-@property(assign,readonly) unsigned long long categoryOptions;
-@property(assign,readonly) AVAudioSessionRouteDescription * currentRoute;
-@property(assign,readonly) NSString * mode;
-@property(getter=isOtherAudioPlaying,assign,readonly) bool otherAudioPlaying;
-@property(assign,readonly) AVAudioSessionPortDescription * preferredInput;
-@property(assign,readonly) bool secondaryAudioShouldBeSilencedHint;
+@property (readonly) NSArray *availableInputs;
+@property (readonly) NSString *category;
+@property (readonly) unsigned long long categoryOptions;
+@property (readonly) AVAudioSessionRouteDescription *currentRoute;
+@property (readonly) NSString *mode;
+@property (getter=isOtherAudioPlaying, readonly) bool otherAudioPlaying;
+@property (readonly) AVAudioSessionPortDescription *preferredInput;
+@property (readonly) bool secondaryAudioShouldBeSilencedHint;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (void)privateAllocInitSingleton;

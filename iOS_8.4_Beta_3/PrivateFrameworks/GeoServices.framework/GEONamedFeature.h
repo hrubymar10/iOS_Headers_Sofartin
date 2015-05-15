@@ -7,8 +7,8 @@
     double _value;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) double value;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) double value;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -4,7 +4,7 @@
 
 @interface SASetContextConfiguration : SABaseClientBoundCommand
 
-@property(assign,readwrite) long long contextTimeoutSeconds;
+@property (nonatomic) long long contextTimeoutSeconds;
 
 + (id)setContextConfiguration;
 + (id)setContextConfigurationWithDictionary:(id)arg1 context:(id)arg2;

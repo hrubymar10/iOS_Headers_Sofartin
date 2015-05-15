@@ -13,8 +13,8 @@
     } _walkStatus;
 }
 
-@property(assign,retain) PLPhotoLibrary * localLibrary;
-@property(assign,retain) PLCloudPhotoLibraryManager * remoteLibrary;
+@property (retain) PLPhotoLibrary *localLibrary;
+@property (retain) PLCloudPhotoLibraryManager *remoteLibrary;
 
 - (void)_beginPruningResourcesOfType:(unsigned long long)arg1 withFetchRequest:(id)arg2 startingAtOffset:(unsigned long long)arg3 then:(id)arg4;
 - (void)activate;

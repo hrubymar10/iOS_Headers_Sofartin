@@ -21,22 +21,22 @@
     GKDiscoveryPeerConnection *_trialConnection;
 }
 
-@property(assign,retain) NSMutableArray * attemptedInterfaces;
-@property(assign,retain) NSNumber * chosenInterface;
-@property(assign,retain) GKDiscoveryPeerConnection * connection;
-@property(assign,copy) NSString * deviceID;
-@property(assign,readwrite) double discoveryTimeStamp;
-@property(assign,retain) NSMutableSet * interfaces;
-@property(assign,retain) NSMutableArray * orderedInterfaces;
-@property(assign,copy) NSString * playerID;
-@property(assign,copy) id resolveTimeoutHandler;
-@property(assign,retain) GKSimpleTimer * resolveTimer;
-@property(assign,retain) NSMutableArray * sendDataBuffer;
-@property(assign,copy) NSString * serviceName;
-@property(assign,readwrite) bool shouldSignalDiscovery;
-@property(assign,readwrite) int state;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * syncQueue;
-@property(assign,retain) GKDiscoveryPeerConnection * trialConnection;
+@property (nonatomic, retain) NSMutableArray *attemptedInterfaces;
+@property (nonatomic, retain) NSNumber *chosenInterface;
+@property (nonatomic, retain) GKDiscoveryPeerConnection *connection;
+@property (nonatomic, copy) NSString *deviceID;
+@property (nonatomic) double discoveryTimeStamp;
+@property (nonatomic, retain) NSMutableSet *interfaces;
+@property (nonatomic, retain) NSMutableArray *orderedInterfaces;
+@property (nonatomic, copy) NSString *playerID;
+@property (nonatomic, copy) id resolveTimeoutHandler;
+@property (nonatomic, retain) GKSimpleTimer *resolveTimer;
+@property (nonatomic, retain) NSMutableArray *sendDataBuffer;
+@property (nonatomic, copy) NSString *serviceName;
+@property (nonatomic) bool shouldSignalDiscovery;
+@property (nonatomic) int state;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *syncQueue;
+@property (nonatomic, retain) GKDiscoveryPeerConnection *trialConnection;
 
 - (id)attemptedInterfaces;
 - (id)chosenInterface;

@@ -7,9 +7,9 @@
     FigDelegateStorage *_delegateStorage;
 }
 
-@property(assign,readonly) <FigCameraViewfinderDelegate><FigCameraViewfinderSessionDelegate> * delegate;
-@property(assign,retain) FigCameraViewfinderSession * delegateActiveViewfinderSession;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (readonly) <FigCameraViewfinderDelegate><FigCameraViewfinderSessionDelegate> *delegate;
+@property (nonatomic, retain) FigCameraViewfinderSession *delegateActiveViewfinderSession;
+@property (readonly) NSObject<OS_dispatch_queue> *queue;
 
 + (id)cameraViewfinder;
 

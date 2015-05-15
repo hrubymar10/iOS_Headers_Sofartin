@@ -12,11 +12,11 @@
     unsigned int _resyncID;
 }
 
-@property(assign,retain) NPKProtoCatalog * catalog;
-@property(assign,readwrite) bool hasLastKnownResyncID;
-@property(assign,readwrite) bool hasResyncID;
-@property(assign,readwrite) unsigned int lastKnownResyncID;
-@property(assign,readwrite) unsigned int resyncID;
+@property (nonatomic, retain) NPKProtoCatalog *catalog;
+@property (nonatomic) bool hasLastKnownResyncID;
+@property (nonatomic) bool hasResyncID;
+@property (nonatomic) unsigned int lastKnownResyncID;
+@property (nonatomic) unsigned int resyncID;
 
 - (void).cxx_destruct;
 - (id)catalog;

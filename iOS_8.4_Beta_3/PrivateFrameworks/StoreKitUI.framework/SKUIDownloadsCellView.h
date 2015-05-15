@@ -14,13 +14,13 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) NSAttributedString * attributedTitle;
-@property(assign,readonly) UIButton * button;
-@property(assign,readwrite) long long buttonType;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) bool isPad;
-@property(assign,readwrite) double progress;
-@property(assign,retain) NSString * subtitle;
+@property (nonatomic, retain) NSAttributedString *attributedTitle;
+@property (nonatomic, readonly) UIButton *button;
+@property (nonatomic) long long buttonType;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) bool isPad;
+@property (nonatomic) double progress;
+@property (nonatomic, retain) NSString *subtitle;
 
 - (void).cxx_destruct;
 - (id)attributedTitle;

@@ -7,8 +7,8 @@
     id _previousCompleteHandler;
 }
 
-@property(assign,readwrite) bool isAnimationCompleting;
-@property(assign,copy) id previousCompleteHandler;
+@property (nonatomic) bool isAnimationCompleting;
+@property (nonatomic, copy) id previousCompleteHandler;
 
 - (void)dealloc;
 - (bool)isAnimationCompleting;

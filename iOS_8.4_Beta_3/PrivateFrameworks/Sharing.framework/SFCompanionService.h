@@ -12,13 +12,13 @@
     NSString *_serviceType;
 }
 
-@property(assign,copy) NSString * deviceID;
-@property(assign,copy) NSString * deviceName;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * ipAddress;
-@property(assign,copy) NSString * managerID;
-@property(assign,copy) NSNumber * nsxpcVersion;
-@property(assign,copy) NSString * serviceType;
+@property (copy) NSString *deviceID;
+@property (copy) NSString *deviceName;
+@property (copy) NSString *identifier;
+@property (copy) NSString *ipAddress;
+@property (copy) NSString *managerID;
+@property (copy) NSNumber *nsxpcVersion;
+@property (copy) NSString *serviceType;
 
 + (id)serviceFromAuthorData:(id)arg1;
 + (id)serviceFromDictionary:(id)arg1;

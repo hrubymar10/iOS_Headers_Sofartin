@@ -16,13 +16,13 @@
     NSArray *_textureParameters;
 }
 
-@property(assign,readonly) unsigned int GLFormat;
-@property(assign,readonly) int GLInternalFormat;
-@property(assign,readonly) unsigned int GLType;
-@property(assign,readonly) unsigned int attachment;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) NSArray * textureParameters;
+@property (nonatomic, readonly) unsigned int GLFormat;
+@property (nonatomic, readonly) int GLInternalFormat;
+@property (nonatomic, readonly) unsigned int GLType;
+@property (nonatomic, readonly) unsigned int attachment;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) NSArray *textureParameters;
 
 + (id)textureConfigWithSize:(struct CGSize { double x1; double x2; })arg1 attachment:(unsigned int)arg2 textureParameters:(id)arg3 name:(id)arg4;
 + (id)textureConfigWithSize:(struct CGSize { double x1; double x2; })arg1 internalFormat:(int)arg2 format:(unsigned int)arg3 type:(unsigned int)arg4 attachment:(unsigned int)arg5 textureParameters:(id)arg6 name:(id)arg7;

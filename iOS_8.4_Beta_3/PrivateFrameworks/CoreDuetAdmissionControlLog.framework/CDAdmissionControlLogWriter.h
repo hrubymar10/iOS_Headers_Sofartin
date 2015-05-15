@@ -10,11 +10,11 @@
     WeakPowerLogInterface *_powerLog;
 }
 
-@property(assign,readwrite) struct __asl_object_s { }* ablemsg;
-@property(assign,readwrite) struct __asl_object_s { }* aslclient;
-@property(assign,readwrite) const char * facility;
-@property(assign,retain) NSString * logfile;
-@property(assign,retain) WeakPowerLogInterface * powerLog;
+@property struct __asl_object_s { }*ablemsg;
+@property struct __asl_object_s { }*aslclient;
+@property const char *facility;
+@property (retain) NSString *logfile;
+@property (retain) WeakPowerLogInterface *powerLog;
 
 - (void).cxx_destruct;
 - (struct __asl_object_s { }*)ablemsg;

@@ -6,11 +6,11 @@
     int _format;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) int format;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) int format;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (int)format;
 - (id)initWithFormat:(int)arg1;

@@ -26,27 +26,27 @@
     UILocalNotification *_weeklyNotifications;
 }
 
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,readonly) NSString * alarmId;
-@property(assign,readonly) NSURL * alarmIdUrl;
-@property(assign,readwrite) bool allowsSnooze;
-@property(assign,readwrite) unsigned int daySetting;
-@property(assign,readwrite) <AlarmDelegate> * delegate;
-@property(assign,readonly) Alarm * editingProxy;
-@property(assign,readwrite) unsigned int hour;
-@property(assign,readonly) NSDate * lastModified;
-@property(assign,readwrite) unsigned int minute;
-@property(assign,readonly) NSString * rawTitle;
-@property(assign,readonly) NSArray * repeatDays;
-@property(assign,readonly) bool repeats;
-@property(assign,readonly) unsigned int revision;
-@property(assign,readonly) NSDictionary * settings;
-@property(assign,readonly) NSString * snapshotSound;
-@property(assign,readonly) long long snapshotSoundType;
-@property(getter=isSnoozed,assign,readonly) bool snoozed;
-@property(assign,readonly) NSString * sound;
-@property(assign,readonly) long long soundType;
-@property(assign,readonly) NSString * uiTitle;
+@property (getter=isActive, nonatomic, readonly) bool active;
+@property (nonatomic, readonly) NSString *alarmId;
+@property (nonatomic, readonly) NSURL *alarmIdUrl;
+@property (nonatomic) bool allowsSnooze;
+@property (nonatomic) unsigned int daySetting;
+@property (nonatomic) <AlarmDelegate> *delegate;
+@property (nonatomic, readonly) Alarm *editingProxy;
+@property (nonatomic) unsigned int hour;
+@property (nonatomic, readonly) NSDate *lastModified;
+@property (nonatomic) unsigned int minute;
+@property (nonatomic, readonly) NSString *rawTitle;
+@property (nonatomic, readonly) NSArray *repeatDays;
+@property (nonatomic, readonly) bool repeats;
+@property (nonatomic, readonly) unsigned int revision;
+@property (nonatomic, readonly) NSDictionary *settings;
+@property (nonatomic, readonly) NSString *snapshotSound;
+@property (nonatomic, readonly) long long snapshotSoundType;
+@property (getter=isSnoozed, nonatomic, readonly) bool snoozed;
+@property (nonatomic, readonly) NSString *sound;
+@property (nonatomic, readonly) long long soundType;
+@property (nonatomic, readonly) NSString *uiTitle;
 
 + (id)_newSettingsFromNotification:(id)arg1;
 + (bool)_verifyNotificationSettings:(id)arg1 againstAlarmSettings:(id)arg2;

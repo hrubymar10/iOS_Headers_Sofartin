@@ -16,17 +16,17 @@
     CKUserIdentity *_userIdentity;
 }
 
-@property(assign,readwrite) long long acceptanceStatus;
-@property(assign,readwrite) bool isCurrentUser;
-@property(assign,readwrite) long long originalAcceptanceStatus;
-@property(assign,readwrite) long long originalParticipantType;
-@property(assign,readwrite) long long originalPermission;
-@property(assign,retain) CKUserIdentity * originalUserIdentity;
-@property(assign,retain) NSString * participantID;
-@property(assign,readwrite) long long permission;
-@property(assign,retain) CKShareID * shareID;
-@property(assign,readwrite) long long type;
-@property(assign,retain) CKUserIdentity * userIdentity;
+@property (nonatomic) long long acceptanceStatus;
+@property (nonatomic) bool isCurrentUser;
+@property (nonatomic) long long originalAcceptanceStatus;
+@property (nonatomic) long long originalParticipantType;
+@property (nonatomic) long long originalPermission;
+@property (nonatomic, retain) CKUserIdentity *originalUserIdentity;
+@property (nonatomic, retain) NSString *participantID;
+@property (nonatomic) long long permission;
+@property (nonatomic, retain) CKShareID *shareID;
+@property (nonatomic) long long type;
+@property (nonatomic, retain) CKUserIdentity *userIdentity;
 
 + (bool)supportsSecureCoding;
 

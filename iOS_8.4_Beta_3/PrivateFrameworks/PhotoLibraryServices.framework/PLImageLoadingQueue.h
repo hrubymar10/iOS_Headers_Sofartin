@@ -8,7 +8,7 @@
     NSLock *_lock;
 }
 
-@property(assign,readwrite) <PLImageLoadingQueueDelegate> * delegate;
+@property (nonatomic) <PLImageLoadingQueueDelegate> *delegate;
 
 - (void)cancelLoadFromSource:(id)arg1 forAsset:(id)arg2;
 - (void)dealloc;

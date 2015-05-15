@@ -8,9 +8,9 @@
     NSString *_title;
 }
 
-@property(getter=isDefaultConcern,assign,readwrite) bool defaultConcern;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSString * title;
+@property (getter=isDefaultConcern, nonatomic) bool defaultConcern;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSString *title;
 
 - (void)dealloc;
 - (id)identifier;

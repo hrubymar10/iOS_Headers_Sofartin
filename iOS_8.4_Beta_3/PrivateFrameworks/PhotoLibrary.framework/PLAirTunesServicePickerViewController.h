@@ -9,12 +9,12 @@
     UITableView *_table;
 }
 
-@property(assign,retain) NSArray * availableRoutes;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PLAirTunesServicePickerViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSArray *availableRoutes;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PLAirTunesServicePickerViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (long long)_indexofRouteWithRouteID:(id)arg1;
 - (void)_setCell:(id)arg1 checked:(bool)arg2;

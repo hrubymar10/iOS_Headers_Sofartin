@@ -9,7 +9,7 @@
     double _lastLaidOutWidth;
 }
 
-@property(assign,readonly) bool isEditable;
+@property (nonatomic, readonly) bool isEditable;
 
 + (id)_bodyFontAtDefaultSize;
 + (double)_scaledDistanceCalculatedFromBottomToBaseline:(double)arg1;

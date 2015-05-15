@@ -15,20 +15,20 @@
     bool _shouldIgnoreHomeSetOnDifferentHost;
 }
 
-@property(assign,readonly) NSSet * collections;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CoreDAVGetAccountPropertiesTaskGroupDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) NSSet * emailAddresses;
-@property(assign,readwrite) bool fetchPrincipalSearchProperties;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isExpandPropertyReportSupported;
-@property(assign,readonly) NSSet * principalSearchProperties;
-@property(assign,readonly) NSURL * principalURL;
-@property(assign,readonly) NSURL * resourceID;
-@property(assign,readwrite) bool shouldIgnoreHomeSetOnDifferentHost;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSSet *collections;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CoreDAVGetAccountPropertiesTaskGroupDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, readonly) NSSet *emailAddresses;
+@property (nonatomic) bool fetchPrincipalSearchProperties;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isExpandPropertyReportSupported;
+@property (nonatomic, readonly) NSSet *principalSearchProperties;
+@property (nonatomic, readonly) NSURL *principalURL;
+@property (nonatomic, readonly) NSURL *resourceID;
+@property (nonatomic) bool shouldIgnoreHomeSetOnDifferentHost;
+@property (readonly) Class superclass;
 
 - (id)_copyAccountPropertiesPropFindElements;
 - (void)_setPropertiesFromParsedResponses:(id)arg1;

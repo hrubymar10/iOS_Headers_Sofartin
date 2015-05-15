@@ -6,11 +6,11 @@
     UINavigationController *_navController;
 }
 
-@property(assign,readonly) SUScriptNavigationBar * navigationBar;
-@property(assign,readwrite) bool navigationBarHidden;
-@property(assign,copy) id toolbarHidden;
-@property(assign,readonly) SUScriptViewController * topViewController;
-@property(assign,retain) id viewControllers;
+@property (readonly) SUScriptNavigationBar *navigationBar;
+@property bool navigationBarHidden;
+@property (copy) id toolbarHidden;
+@property (readonly) SUScriptViewController *topViewController;
+@property (retain) id viewControllers;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

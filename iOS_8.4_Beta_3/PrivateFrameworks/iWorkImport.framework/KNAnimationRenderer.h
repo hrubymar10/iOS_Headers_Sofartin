@@ -13,11 +13,11 @@
     KNPlaybackSession *mSession;
 }
 
-@property(assign,readwrite) unsigned long long direction;
-@property(assign,readwrite) double duration;
-@property(assign,readonly) id plugin;
-@property(assign,readonly) Class pluginClass;
-@property(assign,readonly) <KNAnimationPluginContext> * pluginContext;
+@property (nonatomic) unsigned long long direction;
+@property (nonatomic) double duration;
+@property (nonatomic, readonly) id plugin;
+@property (nonatomic, readonly) Class pluginClass;
+@property (nonatomic, readonly) <KNAnimationPluginContext> *pluginContext;
 
 - (void)dealloc;
 - (unsigned long long)direction;

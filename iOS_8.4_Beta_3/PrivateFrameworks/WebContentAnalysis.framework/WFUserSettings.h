@@ -10,17 +10,17 @@
     WFWhitelistSiteBuffer *_whiteListedSitesBuffer;
 }
 
-@property(assign,readonly) bool canEditContentFilterOverriddenBlackListedSites;
-@property(assign,readonly) bool canEditContentFilterOverriddenWhiteListedSites;
-@property(assign,readonly) bool canEditOverridesAllowed;
-@property(assign,readonly) bool canEditRestrictionType;
-@property(assign,readonly) bool canEditWhiteListAllowedSites;
-@property(assign,retain) NSArray * contentFilterOverriddenBlackListedSites;
-@property(assign,retain) NSArray * contentFilterOverriddenWhiteListedSites;
-@property(assign,readwrite) bool overridesAllowed;
-@property(assign,readwrite) long long restrictionType;
-@property(assign,copy) NSString * userName;
-@property(assign,retain) NSArray * whiteListAllowedSites;
+@property (nonatomic, readonly) bool canEditContentFilterOverriddenBlackListedSites;
+@property (nonatomic, readonly) bool canEditContentFilterOverriddenWhiteListedSites;
+@property (nonatomic, readonly) bool canEditOverridesAllowed;
+@property (nonatomic, readonly) bool canEditRestrictionType;
+@property (nonatomic, readonly) bool canEditWhiteListAllowedSites;
+@property (nonatomic, retain) NSArray *contentFilterOverriddenBlackListedSites;
+@property (nonatomic, retain) NSArray *contentFilterOverriddenWhiteListedSites;
+@property (nonatomic) bool overridesAllowed;
+@property (nonatomic) long long restrictionType;
+@property (nonatomic, copy) NSString *userName;
+@property (nonatomic, retain) NSArray *whiteListAllowedSites;
 
 + (id)_arrayByConvertingLinesInStringsAtPath:(id)arg1;
 + (bool)_isURLMetasite:(id)arg1;

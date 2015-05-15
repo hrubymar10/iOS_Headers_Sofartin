@@ -12,13 +12,13 @@
     NSString *_str;
 }
 
-@property(assign,readonly) int numArguments;
-@property(assign,readonly) int replyBlockIndex;
-@property(assign,readonly) int returnAddressIndex;
-@property(assign,readonly) int returnValueSize;
-@property(assign,readonly) SEL sel;
-@property(assign,retain) NSMethodSignature * sig;
-@property(assign,retain) NSString * str;
+@property (nonatomic, readonly) int numArguments;
+@property (nonatomic, readonly) int replyBlockIndex;
+@property (nonatomic, readonly) int returnAddressIndex;
+@property (nonatomic, readonly) int returnValueSize;
+@property (nonatomic, readonly) SEL sel;
+@property (nonatomic, readonly, retain) NSMethodSignature *sig;
+@property (nonatomic, readonly, retain) NSString *str;
 
 - (void).cxx_destruct;
 - (id)description;

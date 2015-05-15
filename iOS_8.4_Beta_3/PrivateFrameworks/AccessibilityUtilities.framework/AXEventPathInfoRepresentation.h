@@ -22,20 +22,20 @@
     unsigned int _pathWindowContextID;
 }
 
-@property(assign,readwrite) float pathDensity;
-@property(assign,readwrite) unsigned int pathEventMask;
-@property(assign,readwrite) unsigned char pathIdentity;
-@property(assign,readwrite) unsigned char pathIndex;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } pathLocation;
-@property(assign,readwrite) float pathMajorRadius;
-@property(assign,readwrite) float pathMajorRadiusTolerance;
-@property(assign,readwrite) float pathMinorRadius;
-@property(assign,readwrite) float pathPressure;
-@property(assign,readwrite) unsigned char pathProximity;
-@property(assign,readwrite) float pathQuality;
-@property(assign,readwrite) float pathTwist;
-@property(assign,readwrite) void* pathWindow;
-@property(assign,readwrite) unsigned int pathWindowContextID;
+@property (nonatomic) float pathDensity;
+@property (nonatomic) unsigned int pathEventMask;
+@property (nonatomic) unsigned char pathIdentity;
+@property (nonatomic) unsigned char pathIndex;
+@property (nonatomic) struct CGPoint { double x1; double x2; } pathLocation;
+@property (nonatomic) float pathMajorRadius;
+@property (nonatomic) float pathMajorRadiusTolerance;
+@property (nonatomic) float pathMinorRadius;
+@property (nonatomic) float pathPressure;
+@property (nonatomic) unsigned char pathProximity;
+@property (nonatomic) float pathQuality;
+@property (nonatomic) float pathTwist;
+@property (nonatomic) void*pathWindow;
+@property (nonatomic) unsigned int pathWindowContextID;
 
 + (id)representationWithPathInfo:(struct { unsigned char x1; unsigned char x2; unsigned char x3; float x4; float x5; struct CGPoint { double x_6_1_1; double x_6_1_2; } x6; unsigned int x7; void *x8; }*)arg1;
 + (bool)supportsSecureCoding;

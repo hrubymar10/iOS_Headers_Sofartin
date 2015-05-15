@@ -9,9 +9,9 @@
     NSUUID *_streamUUID;
 }
 
-@property(assign,readwrite) unsigned long long latestEventID;
-@property(assign,readwrite) unsigned long long rootID;
-@property(assign,retain) NSUUID * streamUUID;
+@property (nonatomic) unsigned long long latestEventID;
+@property (nonatomic) unsigned long long rootID;
+@property (nonatomic, retain) NSUUID *streamUUID;
 
 + (id)loadFromClientStateInSession:(id)arg1;
 + (bool)supportsSecureCoding;

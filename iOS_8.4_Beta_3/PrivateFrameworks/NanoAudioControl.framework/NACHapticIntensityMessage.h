@@ -9,8 +9,8 @@
     float _intensity;
 }
 
-@property(assign,readwrite) bool hasIntensity;
-@property(assign,readwrite) float intensity;
+@property (nonatomic) bool hasIntensity;
+@property (nonatomic) float intensity;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -8,9 +8,9 @@
     NSNumber *inputScale;
 }
 
-@property(assign,retain) NSNumber * inputAspectRatio;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputScale;
+@property (nonatomic, retain) NSNumber *inputAspectRatio;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputScale;
 
 + (id)customAttributes;
 

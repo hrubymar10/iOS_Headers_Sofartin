@@ -9,9 +9,9 @@
     double _viewScale;
 }
 
-@property(assign,readwrite) bool flipShadows;
-@property(assign,retain) TSUBezierPath * interiorClippingPath;
-@property(assign,readwrite) double viewScale;
+@property (nonatomic) bool flipShadows;
+@property (nonatomic, retain) TSUBezierPath *interiorClippingPath;
+@property (nonatomic) double viewScale;
 
 + (struct __CTFont { }*)invisiblesFont;
 

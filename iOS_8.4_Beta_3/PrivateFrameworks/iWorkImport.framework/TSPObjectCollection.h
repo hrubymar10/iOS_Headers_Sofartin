@@ -6,7 +6,7 @@
     NSArray *_objects;
 }
 
-@property(assign,readonly) NSArray * objects;
+@property (nonatomic, readonly) NSArray *objects;
 
 - (void).cxx_destruct;
 - (id)initFromUnarchiver:(id)arg1;

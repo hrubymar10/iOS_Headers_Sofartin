@@ -6,14 +6,14 @@
     void *_impl;
 }
 
-@property(assign,copy) NSArray * channelAssignments;
-@property(assign,readonly) double currentTime;
-@property(assign,readwrite) <AVAudioRecorderDelegate> * delegate;
-@property(assign,readonly) double deviceCurrentTime;
-@property(getter=isMeteringEnabled,assign,readwrite) bool meteringEnabled;
-@property(getter=isRecording,assign,readonly) bool recording;
-@property(assign,readonly) NSDictionary * settings;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, copy) NSArray *channelAssignments;
+@property (readonly) double currentTime;
+@property <AVAudioRecorderDelegate> *delegate;
+@property (readonly) double deviceCurrentTime;
+@property (getter=isMeteringEnabled) bool meteringEnabled;
+@property (getter=isRecording, readonly) bool recording;
+@property (readonly) NSDictionary *settings;
+@property (readonly) NSURL *url;
 
 - (float)averagePowerForChannel:(unsigned long long)arg1;
 - (id)baseInit;

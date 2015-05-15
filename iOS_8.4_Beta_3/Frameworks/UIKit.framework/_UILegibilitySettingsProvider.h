@@ -18,19 +18,19 @@
     double _nextChangeBarrier;
 }
 
-@property(assign,readwrite) double accumulatedBrightness;
-@property(assign,readwrite) double accumulatedContrast;
-@property(assign,readwrite) double accumulatedLuminance;
-@property(assign,readwrite) double accumulatedSaturation;
-@property(assign,readwrite) bool accumulatorIsPrimed;
-@property(assign,retain) UIColor * contentColor;
-@property(assign,readwrite) long long currentStyle;
-@property(assign,readwrite) bool hasContrast;
-@property(assign,readwrite) double mostRecentBrightness;
-@property(assign,readwrite) double mostRecentContrast;
-@property(assign,readwrite) double mostRecentLuminance;
-@property(assign,readwrite) double mostRecentSaturation;
-@property(assign,readwrite) double nextChangeBarrier;
+@property (nonatomic) double accumulatedBrightness;
+@property (nonatomic) double accumulatedContrast;
+@property (nonatomic) double accumulatedLuminance;
+@property (nonatomic) double accumulatedSaturation;
+@property (nonatomic) bool accumulatorIsPrimed;
+@property (nonatomic, retain) UIColor *contentColor;
+@property (nonatomic) long long currentStyle;
+@property (nonatomic) bool hasContrast;
+@property (nonatomic) double mostRecentBrightness;
+@property (nonatomic) double mostRecentContrast;
+@property (nonatomic) double mostRecentLuminance;
+@property (nonatomic) double mostRecentSaturation;
+@property (nonatomic) double nextChangeBarrier;
 
 + (long long)styleForContentColor:(id)arg1;
 + (long long)styleForContentColor:(id)arg1 contrast:(double)arg2;

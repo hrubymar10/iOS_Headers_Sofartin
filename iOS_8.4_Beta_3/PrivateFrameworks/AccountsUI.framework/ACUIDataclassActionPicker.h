@@ -8,12 +8,12 @@
     NSMutableArray *_affectedDataclasses;
 }
 
-@property(assign,readonly) NSArray * actions;
-@property(assign,readonly) ACAccount * affectedAccount;
-@property(assign,copy) NSArray * affectedDataclasses;
-@property(assign,readonly) ACDataclassAction * firstDestructiveAction;
-@property(assign,readonly) bool hasDestructiveActions;
-@property(assign,readonly) long long priorityIndex;
+@property (nonatomic, readonly) NSArray *actions;
+@property (nonatomic, readonly) ACAccount *affectedAccount;
+@property (nonatomic, copy) NSArray *affectedDataclasses;
+@property (nonatomic, readonly) ACDataclassAction *firstDestructiveAction;
+@property (nonatomic, readonly) bool hasDestructiveActions;
+@property (nonatomic, readonly) long long priorityIndex;
 
 - (void).cxx_destruct;
 - (id)actions;

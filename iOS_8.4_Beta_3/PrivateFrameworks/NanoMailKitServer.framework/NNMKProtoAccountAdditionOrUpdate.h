@@ -11,12 +11,12 @@
     bool _shouldArchive;
 }
 
-@property(assign,retain) NSString * accountId;
-@property(assign,retain) NSString * displayName;
-@property(assign,readonly) bool hasAccountId;
-@property(assign,readonly) bool hasDisplayName;
-@property(assign,readwrite) bool hasShouldArchive;
-@property(assign,readwrite) bool shouldArchive;
+@property (nonatomic, retain) NSString *accountId;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, readonly) bool hasAccountId;
+@property (nonatomic, readonly) bool hasDisplayName;
+@property (nonatomic) bool hasShouldArchive;
+@property (nonatomic) bool shouldArchive;
 
 - (void).cxx_destruct;
 - (id)accountId;

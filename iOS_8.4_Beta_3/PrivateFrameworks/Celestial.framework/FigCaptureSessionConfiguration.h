@@ -9,16 +9,16 @@
     bool _usesAppAudioSession;
 }
 
-@property(assign,readwrite) long long configurationID;
-@property(assign,readwrite) bool configuresAppAudioSession;
-@property(assign,readonly) NSArray * connectionConfigurations;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * sinkConfigurations;
-@property(assign,readonly) NSArray * sourceConfigurations;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool usesAppAudioSession;
+@property (nonatomic) long long configurationID;
+@property (nonatomic) bool configuresAppAudioSession;
+@property (nonatomic, readonly) NSArray *connectionConfigurations;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *sinkConfigurations;
+@property (nonatomic, readonly) NSArray *sourceConfigurations;
+@property (readonly) Class superclass;
+@property (nonatomic) bool usesAppAudioSession;
 
 + (void)initialize;
 

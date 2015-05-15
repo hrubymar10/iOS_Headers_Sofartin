@@ -11,10 +11,10 @@
     NSArray *_payloads;
 }
 
-@property(assign,retain) MCProfileServiceProfile * OTAProfile;
-@property(assign,readwrite) bool isCloudLocked;
-@property(assign,readwrite) bool isCloudProfile;
-@property(assign,readwrite) bool isMDMProfile;
+@property (nonatomic, retain) MCProfileServiceProfile *OTAProfile;
+@property (nonatomic) bool isCloudLocked;
+@property (nonatomic) bool isCloudProfile;
+@property (nonatomic) bool isMDMProfile;
 
 - (void).cxx_destruct;
 - (id)OTAProfile;

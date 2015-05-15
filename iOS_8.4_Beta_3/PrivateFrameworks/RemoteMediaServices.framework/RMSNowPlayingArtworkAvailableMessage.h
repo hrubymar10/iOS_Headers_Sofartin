@@ -10,10 +10,10 @@
     int _sessionIdentifier;
 }
 
-@property(assign,retain) NSString * artworkIdentifier;
-@property(assign,readonly) bool hasArtworkIdentifier;
-@property(assign,readwrite) bool hasSessionIdentifier;
-@property(assign,readwrite) int sessionIdentifier;
+@property (nonatomic, retain) NSString *artworkIdentifier;
+@property (nonatomic, readonly) bool hasArtworkIdentifier;
+@property (nonatomic) bool hasSessionIdentifier;
+@property (nonatomic) int sessionIdentifier;
 
 - (void).cxx_destruct;
 - (id)artworkIdentifier;

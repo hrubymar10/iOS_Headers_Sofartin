@@ -21,11 +21,11 @@
     double _vehicleHeading;
 }
 
-@property(assign,readwrite) unsigned long long behavior;
-@property(assign,readwrite) <VKPuckAnimatorDelegate> * delegate;
-@property(assign,retain) GEORouteMatch * lastProjectedLocation;
-@property(assign,retain) <VKPuckAnimatorTarget> * target;
-@property(assign,readwrite) double tracePlaybackSpeedMultiplier;
+@property (nonatomic) unsigned long long behavior;
+@property (nonatomic) <VKPuckAnimatorDelegate> *delegate;
+@property (nonatomic, retain) GEORouteMatch *lastProjectedLocation;
+@property (nonatomic, retain) <VKPuckAnimatorTarget> *target;
+@property (nonatomic) double tracePlaybackSpeedMultiplier;
 
 - (id).cxx_construct;
 - (void)_step;

@@ -10,11 +10,11 @@
     NSMutableDictionary *_identifierToRunLoopSourcesMap;
 }
 
-@property(assign,retain) NSMutableDictionary * identifierToBlockQueueMap;
-@property(assign,retain) NSMutableDictionary * identifierToCFUserNotificationMap;
-@property(assign,retain) NSMutableDictionary * identifierToIMUserNotificationQueueMap;
-@property(assign,retain) NSMutableDictionary * identifierToListenerQueueMap;
-@property(assign,retain) NSMutableDictionary * identifierToRunLoopSourcesMap;
+@property (nonatomic, retain) NSMutableDictionary *identifierToBlockQueueMap;
+@property (nonatomic, retain) NSMutableDictionary *identifierToCFUserNotificationMap;
+@property (nonatomic, retain) NSMutableDictionary *identifierToIMUserNotificationQueueMap;
+@property (nonatomic, retain) NSMutableDictionary *identifierToListenerQueueMap;
+@property (nonatomic, retain) NSMutableDictionary *identifierToRunLoopSourcesMap;
 
 + (id)sharedInstance;
 

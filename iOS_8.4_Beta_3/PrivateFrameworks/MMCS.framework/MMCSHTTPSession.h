@@ -12,17 +12,17 @@
     NSURLSessionConfiguration *_urlSessionConfiguration;
 }
 
-@property(assign,retain) NSMutableDictionary * contextsForTasks;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isBackground;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,retain) NSString * sessionConfigurationId;
-@property(assign,retain) NSString * sessionName;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSURLSession * urlSession;
-@property(assign,retain) NSURLSessionConfiguration * urlSessionConfiguration;
+@property (nonatomic, retain) NSMutableDictionary *contextsForTasks;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property bool isBackground;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic, retain) NSString *sessionConfigurationId;
+@property (nonatomic, retain) NSString *sessionName;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSURLSession *urlSession;
+@property (nonatomic, retain) NSURLSessionConfiguration *urlSessionConfiguration;
 
 - (void).cxx_destruct;
 - (void)URLSession:(id)arg1 _willRetryBackgroundDataTask:(id)arg2 withError:(id)arg3;

@@ -13,12 +13,12 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int countCellular;
-@property(assign,readwrite) unsigned int countWifi;
-@property(assign,readwrite) bool hasCountCellular;
-@property(assign,readwrite) bool hasCountWifi;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int countCellular;
+@property (nonatomic) unsigned int countWifi;
+@property (nonatomic) bool hasCountCellular;
+@property (nonatomic) bool hasCountWifi;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

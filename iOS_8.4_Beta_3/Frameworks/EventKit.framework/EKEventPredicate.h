@@ -11,16 +11,16 @@
     NSString *_uuid;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSDate * endDate;
-@property(assign,readonly) NSString * eventUUID;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool shouldLoadDefaultProperties;
-@property(assign,readonly) NSDate * startDate;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSTimeZone * timeZone;
-@property(assign,readonly) NSString * title;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSDate *endDate;
+@property (nonatomic, readonly) NSString *eventUUID;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool shouldLoadDefaultProperties;
+@property (nonatomic, readonly) NSDate *startDate;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSTimeZone *timeZone;
+@property (nonatomic, readonly) NSString *title;
 
 + (id)predicateWithStartDate:(id)arg1 endDate:(id)arg2 timeZone:(id)arg3 calendars:(id)arg4;
 + (id)predicateWithStartDate:(id)arg1 endDate:(id)arg2 timeZone:(id)arg3 calendars:(id)arg4 loadDefaultProperties:(bool)arg5;

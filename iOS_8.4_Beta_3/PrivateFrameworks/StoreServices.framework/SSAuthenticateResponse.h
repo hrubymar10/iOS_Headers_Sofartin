@@ -9,14 +9,14 @@
     long long _responseType;
 }
 
-@property(assign,readwrite) long long authenticateResponseType;
-@property(assign,retain) SSAccount * authenticatedAccount;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSDictionary * responseDictionary;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long authenticateResponseType;
+@property (nonatomic, retain) SSAccount *authenticatedAccount;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSDictionary *responseDictionary;
+@property (readonly) Class superclass;
 
 - (void)_setError:(id)arg1;
 - (long long)authenticateResponseType;

@@ -20,20 +20,20 @@
     long long _numNotifications;
 }
 
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) bool isDeleted;
-@property(assign,readonly) bool isDownloaded;
-@property(assign,readwrite) bool isDownloading;
-@property(assign,readonly) bool isExported;
-@property(assign,readonly) bool isFailed;
-@property(assign,readonly) bool isImported;
-@property(assign,readonly) bool isLive;
-@property(assign,readonly) bool isScheduled;
-@property(assign,readonly) bool isUploaded;
-@property(assign,readonly) bool isUploading;
-@property(assign,readonly) PFUbiquityLocation * location;
-@property(assign,readonly) long long numBytes;
-@property(assign,readonly) long long numNotifications;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) bool isDeleted;
+@property (nonatomic, readonly) bool isDownloaded;
+@property (nonatomic) bool isDownloading;
+@property (nonatomic, readonly) bool isExported;
+@property (nonatomic, readonly) bool isFailed;
+@property (nonatomic, readonly) bool isImported;
+@property (nonatomic, readonly) bool isLive;
+@property (nonatomic, readonly) bool isScheduled;
+@property (nonatomic, readonly) bool isUploaded;
+@property (nonatomic, readonly) bool isUploading;
+@property (nonatomic, readonly) PFUbiquityLocation *location;
+@property (nonatomic, readonly) long long numBytes;
+@property (nonatomic, readonly) long long numNotifications;
 
 - (void)checkFileURLState;
 - (void)dealloc;

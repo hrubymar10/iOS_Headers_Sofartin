@@ -11,10 +11,10 @@
     UIKBRenderConfig *_renderConfig;
 }
 
-@property(assign,readonly) UIKeyboardCornerView * cornerViewLeft;
-@property(assign,readonly) UIKeyboardCornerView * cornerViewRight;
-@property(assign,readonly) UIKBInputBackdropView * inputAccessoryBackdropView;
-@property(assign,readonly) UIKBInputBackdropView * inputBackdropView;
+@property (nonatomic, readonly) UIKeyboardCornerView *cornerViewLeft;
+@property (nonatomic, readonly) UIKeyboardCornerView *cornerViewRight;
+@property (nonatomic, readonly) UIKBInputBackdropView *inputAccessoryBackdropView;
+@property (nonatomic, readonly) UIKBInputBackdropView *inputBackdropView;
 
 - (int)_clipCornersOfView:(id)arg1;
 - (id)_inheritedRenderConfig;

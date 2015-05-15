@@ -15,9 +15,9 @@
     UIView *_separatorView;
 }
 
-@property(assign,readonly) SKUIGiftCharity * charity;
-@property(assign,retain) UIImage * logoImage;
-@property(assign,readonly) SKUIGiftAmount * selectedAmount;
+@property (nonatomic, readonly) SKUIGiftCharity *charity;
+@property (nonatomic, retain) UIImage *logoImage;
+@property (nonatomic, readonly) SKUIGiftAmount *selectedAmount;
 
 - (void).cxx_destruct;
 - (void)_amountButtonDown:(id)arg1;

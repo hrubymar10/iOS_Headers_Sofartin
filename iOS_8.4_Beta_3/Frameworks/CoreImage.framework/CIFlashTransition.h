@@ -15,16 +15,16 @@
     NSNumber *inputTime;
 }
 
-@property(assign,retain) CIVector * inputCenter;
-@property(assign,retain) CIColor * inputColor;
-@property(assign,retain) CIVector * inputExtent;
-@property(assign,retain) NSNumber * inputFadeThreshold;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputMaxStriationRadius;
-@property(assign,retain) NSNumber * inputStriationContrast;
-@property(assign,retain) NSNumber * inputStriationStrength;
-@property(assign,retain) CIImage * inputTargetImage;
-@property(assign,retain) NSNumber * inputTime;
+@property (nonatomic, retain) CIVector *inputCenter;
+@property (nonatomic, retain) CIColor *inputColor;
+@property (nonatomic, retain) CIVector *inputExtent;
+@property (nonatomic, retain) NSNumber *inputFadeThreshold;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputMaxStriationRadius;
+@property (nonatomic, retain) NSNumber *inputStriationContrast;
+@property (nonatomic, retain) NSNumber *inputStriationStrength;
+@property (nonatomic, retain) CIImage *inputTargetImage;
+@property (nonatomic, retain) NSNumber *inputTime;
 
 + (id)customAttributes;
 

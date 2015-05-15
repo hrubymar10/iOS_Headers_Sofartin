@@ -6,7 +6,7 @@
     unsigned long long _types;
 }
 
-@property(assign,readonly) unsigned long long checkingTypes;
+@property (readonly) unsigned long long checkingTypes;
 
 + (id)dataDetectorWithTypes:(unsigned long long)arg1 error:(id*)arg2;
 + (void)initialize;

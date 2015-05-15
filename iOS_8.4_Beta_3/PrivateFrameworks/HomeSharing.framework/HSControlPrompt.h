@@ -14,15 +14,15 @@
     unsigned int _version;
 }
 
-@property(assign,readwrite) unsigned int keyboardType;
-@property(assign,readwrite) unsigned int messageType;
-@property(assign,readwrite) unsigned int promptID;
-@property(getter=isSecureText,assign,readwrite) bool secureText;
-@property(assign,readwrite) unsigned long long sessionID;
-@property(assign,copy) NSString * string;
-@property(assign,copy) NSString * subText;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) unsigned int version;
+@property (nonatomic) unsigned int keyboardType;
+@property (nonatomic) unsigned int messageType;
+@property (nonatomic) unsigned int promptID;
+@property (getter=isSecureText, nonatomic) bool secureText;
+@property (nonatomic) unsigned long long sessionID;
+@property (nonatomic, copy) NSString *string;
+@property (nonatomic, copy) NSString *subText;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) unsigned int version;
 
 - (void).cxx_destruct;
 - (id)description;

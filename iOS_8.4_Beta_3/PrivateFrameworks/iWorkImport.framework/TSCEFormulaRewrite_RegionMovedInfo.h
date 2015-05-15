@@ -59,20 +59,20 @@
     } _srcUidForDstUid;
 }
 
-@property(assign,readonly) TSCEFormulaRewrite_Uids * dstColumnUids;
-@property(assign,readonly) TSCEFormulaRewrite_RegionInfo * dstRegion;
-@property(assign,readonly) TSCEFormulaRewrite_Uids * dstRowUids;
-@property(assign,readonly) struct __CFUUID { }* dstTableID;
-@property(assign,readonly) struct UUIDData<TSP::UUIDData> { union { unsigned char x_1_1_1[16]; struct { unsigned char x_2_2_1; unsigned char x_2_2_2; unsigned char x_2_2_3; unsigned char x_2_2_4; unsigned char x_2_2_5; unsigned char x_2_2_6; unsigned char x_2_2_7; unsigned char x_2_2_8; unsigned char x_2_2_9; unsigned char x_2_2_10; unsigned char x_2_2_11; unsigned char x_2_2_12; unsigned char x_2_2_13; unsigned char x_2_2_14; unsigned char x_2_2_15; unsigned char x_2_2_16; } x_1_1_2; struct { unsigned long long x_3_2_1; unsigned long long x_3_2_2; } x_1_1_3; } x1; } dstTableUID;
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{TSUUuidMap={__hash_table<std::__1::__hash_value_type<TSU::UUIDData<TSP::UUIDData>' */ struct * dstUidForSrcUid; /* unknown property attribute:  true> >=f}}} */
-@property(assign,readwrite) bool spanningColumns;
-@property(assign,readwrite) bool spanningRows;
-@property(assign,readonly) TSCEFormulaRewrite_Uids * srcColumnUids;
-@property(assign,readonly) TSCEFormulaRewrite_RegionInfo * srcRegion;
-@property(assign,readonly) TSCEFormulaRewrite_Uids * srcRowUids;
-@property(assign,readonly) struct __CFUUID { }* srcTableID;
-@property(assign,readonly) struct UUIDData<TSP::UUIDData> { union { unsigned char x_1_1_1[16]; struct { unsigned char x_2_2_1; unsigned char x_2_2_2; unsigned char x_2_2_3; unsigned char x_2_2_4; unsigned char x_2_2_5; unsigned char x_2_2_6; unsigned char x_2_2_7; unsigned char x_2_2_8; unsigned char x_2_2_9; unsigned char x_2_2_10; unsigned char x_2_2_11; unsigned char x_2_2_12; unsigned char x_2_2_13; unsigned char x_2_2_14; unsigned char x_2_2_15; unsigned char x_2_2_16; } x_1_1_2; struct { unsigned long long x_3_2_1; unsigned long long x_3_2_2; } x_1_1_3; } x1; } srcTableUID;
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{TSUUuidMap={__hash_table<std::__1::__hash_value_type<TSU::UUIDData<TSP::UUIDData>' */ struct * srcUidForDstUid; /* unknown property attribute:  true> >=f}}} */
+@property (nonatomic, readonly) TSCEFormulaRewrite_Uids *dstColumnUids;
+@property (nonatomic, readonly) TSCEFormulaRewrite_RegionInfo *dstRegion;
+@property (nonatomic, readonly) TSCEFormulaRewrite_Uids *dstRowUids;
+@property (nonatomic, readonly) struct __CFUUID { }*dstTableID;
+@property (nonatomic, readonly) struct UUIDData<TSP::UUIDData> { union { unsigned char x_1_1_1[16]; struct { unsigned char x_2_2_1; unsigned char x_2_2_2; unsigned char x_2_2_3; unsigned char x_2_2_4; unsigned char x_2_2_5; unsigned char x_2_2_6; unsigned char x_2_2_7; unsigned char x_2_2_8; unsigned char x_2_2_9; unsigned char x_2_2_10; unsigned char x_2_2_11; unsigned char x_2_2_12; unsigned char x_2_2_13; unsigned char x_2_2_14; unsigned char x_2_2_15; unsigned char x_2_2_16; } x_1_1_2; struct { unsigned long long x_3_2_1; unsigned long long x_3_2_2; } x_1_1_3; } x1; } dstTableUID;
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{TSUUuidMap={__hash_table<std::__1::__hash_value_type<TSU::UUIDData<TSP::UUIDData>' */ struct *dstUidForSrcUid; /* unknown property attribute:  true> >=f}}} */
+@property (nonatomic) bool spanningColumns;
+@property (nonatomic) bool spanningRows;
+@property (nonatomic, readonly) TSCEFormulaRewrite_Uids *srcColumnUids;
+@property (nonatomic, readonly) TSCEFormulaRewrite_RegionInfo *srcRegion;
+@property (nonatomic, readonly) TSCEFormulaRewrite_Uids *srcRowUids;
+@property (nonatomic, readonly) struct __CFUUID { }*srcTableID;
+@property (nonatomic, readonly) struct UUIDData<TSP::UUIDData> { union { unsigned char x_1_1_1[16]; struct { unsigned char x_2_2_1; unsigned char x_2_2_2; unsigned char x_2_2_3; unsigned char x_2_2_4; unsigned char x_2_2_5; unsigned char x_2_2_6; unsigned char x_2_2_7; unsigned char x_2_2_8; unsigned char x_2_2_9; unsigned char x_2_2_10; unsigned char x_2_2_11; unsigned char x_2_2_12; unsigned char x_2_2_13; unsigned char x_2_2_14; unsigned char x_2_2_15; unsigned char x_2_2_16; } x_1_1_2; struct { unsigned long long x_3_2_1; unsigned long long x_3_2_2; } x_1_1_3; } x1; } srcTableUID;
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{TSUUuidMap={__hash_table<std::__1::__hash_value_type<TSU::UUIDData<TSP::UUIDData>' */ struct *srcUidForDstUid; /* unknown property attribute:  true> >=f}}} */
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

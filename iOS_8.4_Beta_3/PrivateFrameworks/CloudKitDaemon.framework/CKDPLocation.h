@@ -7,10 +7,10 @@
     CKDPLocationCoordinate *_coordinate;
 }
 
-@property(assign,retain) CKDPLocationBound * bounds;
-@property(assign,retain) CKDPLocationCoordinate * coordinate;
-@property(assign,readonly) bool hasBounds;
-@property(assign,readonly) bool hasCoordinate;
+@property (nonatomic, retain) CKDPLocationBound *bounds;
+@property (nonatomic, retain) CKDPLocationCoordinate *coordinate;
+@property (nonatomic, readonly) bool hasBounds;
+@property (nonatomic, readonly) bool hasCoordinate;
 
 - (void).cxx_destruct;
 - (id)bounds;

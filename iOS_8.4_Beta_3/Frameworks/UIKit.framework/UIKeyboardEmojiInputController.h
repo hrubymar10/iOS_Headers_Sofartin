@@ -10,7 +10,7 @@
     NSMutableDictionary *_usageHistory;
 }
 
-@property(assign,readwrite) int lastViewedCategory;
+@property int lastViewedCategory;
 
 + (id)activeInputView;
 + (Class)classForInputView;

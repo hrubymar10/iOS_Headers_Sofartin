@@ -8,9 +8,9 @@
     NSString *_phoneticCountryName;
 }
 
-@property(assign,copy) NSString * countryCode;
-@property(assign,copy) NSString * countryName;
-@property(assign,copy) NSString * phoneticCountryName;
+@property (nonatomic, copy) NSString *countryCode;
+@property (nonatomic, copy) NSString *countryName;
+@property (nonatomic, copy) NSString *phoneticCountryName;
 
 - (id)countryCode;
 - (id)countryName;

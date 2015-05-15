@@ -14,21 +14,21 @@
     CAMTimelapseState *__state;
 }
 
-@property(setter=_setBackendRecoveryNeeded:,assign,readwrite) bool _backendRecoveryNeeded;
-@property(assign,readonly) NSObject<OS_dispatch_source> * _captureTimer;
-@property(assign,readonly) CAMLowDiskSpaceAlertView * _diskSpaceAlert;
-@property(assign,readonly) bool _ignoringTimerCallbacksForTearDown;
-@property(assign,readonly) bool _ignoringTimerCallbacksWaitingForCaptureResponse;
-@property(assign,readonly) NSCountedSet * _inFlightTimelapseUUIDs;
-@property(assign,readonly) NSMutableSet * _pendingCompletedStates;
-@property(setter=_setPreviewStarted:,assign,readwrite) bool _previewStarted;
-@property(assign,readonly) CAMTimelapseState * _state;
-@property(assign,readonly) NSDate * captureStartTime;
-@property(getter=isCapturing,assign,readonly) bool capturing;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (setter=_setBackendRecoveryNeeded:, nonatomic) bool _backendRecoveryNeeded;
+@property (nonatomic, readonly) NSObject<OS_dispatch_source> *_captureTimer;
+@property (nonatomic, readonly) CAMLowDiskSpaceAlertView *_diskSpaceAlert;
+@property (nonatomic, readonly) bool _ignoringTimerCallbacksForTearDown;
+@property (nonatomic, readonly) bool _ignoringTimerCallbacksWaitingForCaptureResponse;
+@property (nonatomic, readonly) NSCountedSet *_inFlightTimelapseUUIDs;
+@property (nonatomic, readonly) NSMutableSet *_pendingCompletedStates;
+@property (setter=_setPreviewStarted:, nonatomic) bool _previewStarted;
+@property (nonatomic, readonly) CAMTimelapseState *_state;
+@property (nonatomic, readonly) NSDate *captureStartTime;
+@property (getter=isCapturing, nonatomic, readonly) bool capturing;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_videoPreviewImageForTimelapseState:(id)arg1;
 + (id)createPlaceholderAssetResponseForTimelapseState:(id)arg1;

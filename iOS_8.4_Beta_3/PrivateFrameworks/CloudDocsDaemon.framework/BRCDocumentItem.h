@@ -9,24 +9,24 @@
     NSMutableSet *_resolvedConflictLoserEtags;
 }
 
-@property(assign,readonly) BRCItemID * aliasItemID;
-@property(assign,readonly) BRCAliasItem * asAlias;
-@property(assign,readonly) BRCDirectoryItem * asDirectory;
-@property(assign,readonly) BRCDocumentItem * asDocument;
-@property(assign,readonly) NSString * bookmarkData;
-@property(assign,readonly) NSDictionary * conflictLoserState;
-@property(assign,readonly) BRCLocalVersion * currentVersion;
-@property(assign,readonly) BRCDesiredVersion * desiredVersion;
-@property(assign,readonly) unsigned int downloadStatus;
-@property(assign,readonly) bool hasLocalContent;
-@property(assign,readonly) bool isDownloadRequested;
-@property(assign,readonly) bool isInTransfer;
-@property(assign,readonly) bool isOfEvictableSize;
-@property(assign,retain) NSSet * liveConflictLoserEtags;
-@property(assign,readonly) unsigned int queryItemStatus;
-@property(assign,readonly) NSSet * resolvedConflictLoserEtags;
-@property(assign,readonly) NSString * unsaltedBookmarkData;
-@property(assign,readonly) unsigned int uploadStatus;
+@property (nonatomic, readonly) BRCItemID *aliasItemID;
+@property (nonatomic, readonly) BRCAliasItem *asAlias;
+@property (nonatomic, readonly) BRCDirectoryItem *asDirectory;
+@property (nonatomic, readonly) BRCDocumentItem *asDocument;
+@property (nonatomic, readonly) NSString *bookmarkData;
+@property (nonatomic, readonly) NSDictionary *conflictLoserState;
+@property (nonatomic, readonly) BRCLocalVersion *currentVersion;
+@property (nonatomic, readonly) BRCDesiredVersion *desiredVersion;
+@property (nonatomic, readonly) unsigned int downloadStatus;
+@property (nonatomic, readonly) bool hasLocalContent;
+@property (nonatomic, readonly) bool isDownloadRequested;
+@property (nonatomic, readonly) bool isInTransfer;
+@property (nonatomic, readonly) bool isOfEvictableSize;
+@property (nonatomic, retain) NSSet *liveConflictLoserEtags;
+@property (nonatomic, readonly) unsigned int queryItemStatus;
+@property (nonatomic, readonly) NSSet *resolvedConflictLoserEtags;
+@property (nonatomic, readonly) NSString *unsaltedBookmarkData;
+@property (nonatomic, readonly) unsigned int uploadStatus;
 
 + (id)bookmarkDataWithItemResolutionString:(id)arg1 serverZone:(id)arg2;
 + (id)bookmarkDataWithRelativePath:(id)arg1;

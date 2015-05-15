@@ -12,10 +12,10 @@
     bool _usesRoundedCorners;
 }
 
-@property(assign,readwrite) id delegate;
-@property(assign,readwrite) bool forwardMoveToWindowCallbacks;
-@property(assign,readwrite) bool usesInnerShadow;
-@property(assign,readwrite) bool usesRoundedCorners;
+@property (nonatomic) id delegate;
+@property (nonatomic) bool forwardMoveToWindowCallbacks;
+@property (nonatomic) bool usesInnerShadow;
+@property (nonatomic) bool usesRoundedCorners;
 
 - (void)_installShadowViews;
 - (void)_tearDownShadowViews;

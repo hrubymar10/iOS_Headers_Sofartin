@@ -11,14 +11,14 @@
     NSObject<OS_dispatch_source> *_sleepFailSafeTimer;
 }
 
-@property(assign,readwrite) long long connectionState;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RDBridgeDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) RDMulticastService * multicastService;
-@property(assign,retain) IDSService * remoteService;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long connectionState;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RDBridgeDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) RDMulticastService *multicastService;
+@property (retain) IDSService *remoteService;
+@property (readonly) Class superclass;
 
 + (id)descriptionForConnectionState:(long long)arg1;
 + (id)statusStringForConnectionState:(long long)arg1;

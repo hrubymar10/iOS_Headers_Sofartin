@@ -15,13 +15,13 @@
     id _reachabilityBlock;
 }
 
-@property(assign,readonly) void* _addressBook;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSManagedObjectContext * managedObjectContext;
-@property(assign,retain) PLPhotoLibrary * momentGenerationLibrary;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) void*_addressBook;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) PLPhotoLibrary *momentGenerationLibrary;
+@property (readonly) Class superclass;
 
 + (bool)isManagedObjectContextMomentarilyBlessed:(id)arg1;
 + (bool)isManagerMomentarilyBlessed:(id)arg1;

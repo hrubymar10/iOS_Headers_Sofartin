@@ -9,10 +9,10 @@
     UIColor *_selectionTintColor;
 }
 
-@property(getter=isMultiselect,assign,readwrite) bool multiselect;
-@property(assign,retain) UIColor * multiselectBackgroundColor;
-@property(assign,readwrite) long long selectionStyle;
-@property(assign,retain) UIColor * selectionTintColor;
+@property (getter=isMultiselect, nonatomic) bool multiselect;
+@property (nonatomic, retain) UIColor *multiselectBackgroundColor;
+@property (nonatomic) long long selectionStyle;
+@property (nonatomic, retain) UIColor *selectionTintColor;
 
 - (void)dealloc;
 - (void)drawRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

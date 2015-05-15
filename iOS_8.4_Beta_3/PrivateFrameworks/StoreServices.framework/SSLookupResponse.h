@@ -9,16 +9,16 @@
     NSDictionary *_response;
 }
 
-@property(assign,readonly) NSArray * allItems;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSDate * expirationDate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SSMetricsConfiguration * metricsConfiguration;
-@property(assign,retain) SSMetricsPageEvent * metricsPageEvent;
-@property(assign,readonly) bool mpIsPersonalizedOffer;
-@property(assign,readonly) NSDictionary * responseDictionary;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *allItems;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSDate *expirationDate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SSMetricsConfiguration *metricsConfiguration;
+@property (nonatomic, retain) SSMetricsPageEvent *metricsPageEvent;
+@property (nonatomic, readonly) bool mpIsPersonalizedOffer;
+@property (nonatomic, readonly) NSDictionary *responseDictionary;
+@property (readonly) Class superclass;
 
 + (bool)mpFakeCompletionDataForBuys;
 + (id)mpLoadDebugCompletionsResponseWithStoreLookupID:(id)arg1;

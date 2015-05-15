@@ -6,11 +6,11 @@
     void *_impl;
 }
 
-@property(assign,readonly) AVAudioFormat * fileFormat;
-@property(assign,readwrite) long long framePosition;
-@property(assign,readonly) long long length;
-@property(assign,readonly) AVAudioFormat * processingFormat;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, readonly) AVAudioFormat *fileFormat;
+@property (nonatomic) long long framePosition;
+@property (nonatomic, readonly) long long length;
+@property (nonatomic, readonly) AVAudioFormat *processingFormat;
+@property (nonatomic, readonly) NSURL *url;
 
 - (void)dealloc;
 - (id)fileFormat;

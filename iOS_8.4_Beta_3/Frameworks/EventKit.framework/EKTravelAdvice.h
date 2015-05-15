@@ -10,15 +10,15 @@
     double _travelStateScore;
 }
 
-@property(assign,readonly) unsigned long long accidentState;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSDate * predictedDepartureTime;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long trafficLevel;
-@property(assign,readonly) unsigned long long travelState;
-@property(assign,readonly) double travelStateScore;
+@property (nonatomic, readonly) unsigned long long accidentState;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSDate *predictedDepartureTime;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long trafficLevel;
+@property (nonatomic, readonly) unsigned long long travelState;
+@property (nonatomic, readonly) double travelStateScore;
 
 - (unsigned long long)accidentState;
 - (void)dealloc;

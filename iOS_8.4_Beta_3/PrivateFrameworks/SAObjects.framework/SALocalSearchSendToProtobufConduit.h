@@ -4,10 +4,10 @@
 
 @interface SALocalSearchSendToProtobufConduit : SADomainCommand
 
-@property(assign,copy) NSArray * attributes;
-@property(assign,copy) NSURL * endpoint;
-@property(assign,copy) NSData * rawRequest;
-@property(assign,readwrite) long long timeoutInSeconds;
+@property (nonatomic, copy) NSArray *attributes;
+@property (nonatomic, copy) NSURL *endpoint;
+@property (nonatomic, copy) NSData *rawRequest;
+@property (nonatomic) long long timeoutInSeconds;
 
 + (id)sendToProtobufConduit;
 + (id)sendToProtobufConduitWithDictionary:(id)arg1 context:(id)arg2;

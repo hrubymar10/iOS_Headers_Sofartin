@@ -6,7 +6,7 @@
     long long _style;
 }
 
-@property(assign,readonly) long long _style;
+@property (nonatomic, readonly) long long _style;
 
 + (id)effectWithStyle:(long long)arg1;
 + (bool)supportsSecureCoding;

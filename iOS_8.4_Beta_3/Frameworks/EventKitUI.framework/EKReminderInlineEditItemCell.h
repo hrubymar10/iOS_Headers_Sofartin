@@ -8,9 +8,9 @@
     double _verticalPadding;
 }
 
-@property(assign,copy) NSString * placeholder;
-@property(assign,readonly) EKExpandingTextView * textView;
-@property(assign,readwrite) double verticalPadding;
+@property (nonatomic, copy) NSString *placeholder;
+@property (nonatomic, readonly) EKExpandingTextView *textView;
+@property (nonatomic) double verticalPadding;
 
 - (void).cxx_destruct;
 - (double)_textViewWidthForContentWidth:(double)arg1;

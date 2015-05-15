@@ -7,11 +7,11 @@
     SKUIGallerySwooshViewController *_swooshViewController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUISwooshPageComponent * pageComponent;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUISwooshPageComponent *pageComponent;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_addImpressionForIndex:(long long)arg1 toSession:(id)arg2;

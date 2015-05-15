@@ -4,10 +4,10 @@
 
 @interface SAUIButton : SAAceView
 
-@property(assign,copy) NSArray * commands;
-@property(assign,retain) SAUIImageResource * image;
-@property(assign,copy) NSString * secondaryText;
-@property(assign,copy) NSString * text;
+@property (nonatomic, copy) NSArray *commands;
+@property (nonatomic, retain) SAUIImageResource *image;
+@property (nonatomic, copy) NSString *secondaryText;
+@property (nonatomic, copy) NSString *text;
 
 + (id)button;
 + (id)buttonWithDictionary:(id)arg1 context:(id)arg2;

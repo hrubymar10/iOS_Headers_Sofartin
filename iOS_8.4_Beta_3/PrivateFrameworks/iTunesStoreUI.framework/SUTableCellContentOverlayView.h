@@ -6,7 +6,7 @@
     SUCellConfiguration *_configuration;
 }
 
-@property(assign,retain) SUCellConfiguration * configuration;
+@property (nonatomic, retain) SUCellConfiguration *configuration;
 
 - (id)configuration;
 - (void)dealloc;

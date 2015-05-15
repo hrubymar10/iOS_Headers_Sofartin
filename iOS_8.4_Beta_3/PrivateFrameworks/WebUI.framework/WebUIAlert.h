@@ -16,7 +16,7 @@
     int _type;
 }
 
-@property(assign,copy) id actionHandler;
+@property (nonatomic, copy) id actionHandler;
 
 - (void).cxx_destruct;
 - (id)_buttonTitleForAction:(int)arg1;

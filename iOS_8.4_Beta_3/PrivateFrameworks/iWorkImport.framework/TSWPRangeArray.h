@@ -6,10 +6,10 @@
     void *_rangeVectorOpaque;
 }
 
-@property(assign,readonly) unsigned long long finish;
-@property(assign,readonly) bool isEmpty;
-@property(assign,readonly) unsigned long long rangeCount;
-@property(assign,readonly) unsigned long long start;
+@property (nonatomic, readonly) unsigned long long finish;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, readonly) unsigned long long rangeCount;
+@property (nonatomic, readonly) unsigned long long start;
 
 - (void)addRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

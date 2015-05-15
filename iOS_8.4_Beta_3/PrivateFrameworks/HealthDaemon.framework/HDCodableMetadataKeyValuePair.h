@@ -15,16 +15,16 @@
     NSString *_stringValue;
 }
 
-@property(assign,readwrite) double dateValue;
-@property(assign,readwrite) bool hasDateValue;
-@property(assign,readonly) bool hasKey;
-@property(assign,readwrite) bool hasNumberDoubleValue;
-@property(assign,readwrite) bool hasNumberIntValue;
-@property(assign,readonly) bool hasStringValue;
-@property(assign,retain) NSString * key;
-@property(assign,readwrite) double numberDoubleValue;
-@property(assign,readwrite) long long numberIntValue;
-@property(assign,retain) NSString * stringValue;
+@property (nonatomic) double dateValue;
+@property (nonatomic) bool hasDateValue;
+@property (nonatomic, readonly) bool hasKey;
+@property (nonatomic) bool hasNumberDoubleValue;
+@property (nonatomic) bool hasNumberIntValue;
+@property (nonatomic, readonly) bool hasStringValue;
+@property (nonatomic, retain) NSString *key;
+@property (nonatomic) double numberDoubleValue;
+@property (nonatomic) long long numberIntValue;
+@property (nonatomic, retain) NSString *stringValue;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

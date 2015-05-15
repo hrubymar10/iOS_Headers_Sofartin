@@ -20,7 +20,7 @@
     unsigned long long requestedImageCount;
 }
 
-@property(assign,readwrite) unsigned long long maxJPEGSize;
+@property unsigned long long maxJPEGSize;
 
 + (struct __IOSurfaceAccelerator { }*)_createAccelerator;
 + (struct __IOSurfaceAccelerator { }*)_getPooledSurfaceAccelerator;

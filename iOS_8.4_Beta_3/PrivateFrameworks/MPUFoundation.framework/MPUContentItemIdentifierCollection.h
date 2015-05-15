@@ -7,8 +7,8 @@
     unsigned long long _itemType;
 }
 
-@property(assign,readonly) unsigned long long identifierCount;
-@property(assign,readonly) unsigned long long itemType;
+@property (nonatomic, readonly) unsigned long long identifierCount;
+@property (nonatomic, readonly) unsigned long long itemType;
 
 - (void).cxx_destruct;
 - (id)_copyWithZone:(struct _NSZone { }*)arg1 class:(Class)arg2;

@@ -10,8 +10,8 @@
     unsigned int _stationCount;
 }
 
-@property(assign,readwrite) bool disableArtworkLoading;
-@property(assign,readwrite) bool disableCachedResponses;
+@property (nonatomic) bool disableArtworkLoading;
+@property (nonatomic) bool disableCachedResponses;
 
 - (void).cxx_destruct;
 - (id)_importFeaturedStationWithDictionary:(id)arg1 inModel:(id)arg2 loadArtworkSynchronously:(bool)arg3;

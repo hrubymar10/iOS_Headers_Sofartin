@@ -4,9 +4,9 @@
 
 @interface SAUIAssistantUtteranceView : SAAceView
 
-@property(assign,copy) NSString * dialogIdentifier;
-@property(assign,copy) NSNumber * postDialogDelayInMilliseconds;
-@property(assign,copy) NSString * text;
+@property (nonatomic, copy) NSString *dialogIdentifier;
+@property (nonatomic, copy) NSNumber *postDialogDelayInMilliseconds;
+@property (nonatomic, copy) NSString *text;
 
 + (id)assistantUtteranceView;
 + (id)assistantUtteranceViewWithDictionary:(id)arg1 context:(id)arg2;

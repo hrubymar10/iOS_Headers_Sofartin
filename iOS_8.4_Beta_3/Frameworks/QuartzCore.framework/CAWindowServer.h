@@ -6,10 +6,10 @@
     struct CAWindowServerImpl { struct __CFArray {} *x1; unsigned int x2; } *_impl;
 }
 
-@property(assign,readonly) NSArray * displays;
-@property(getter=isMirroringEnabled,assign,readwrite) bool mirroringEnabled;
-@property(assign,readwrite) unsigned int rendererFlags;
-@property(getter=isSecure,assign,readwrite) bool secure;
+@property (readonly) NSArray *displays;
+@property (getter=isMirroringEnabled) bool mirroringEnabled;
+@property unsigned int rendererFlags;
+@property (getter=isSecure) bool secure;
 
 + (id)context;
 + (id)contextWithOptions:(id)arg1;

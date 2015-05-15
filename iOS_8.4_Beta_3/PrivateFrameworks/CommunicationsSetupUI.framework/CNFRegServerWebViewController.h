@@ -23,17 +23,17 @@
     UIWebView *_webView;
 }
 
-@property(assign,retain) UIAlertView * alert;
-@property(assign,copy) id alertHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isLoaded;
-@property(assign,readonly) bool isLoading;
-@property(assign,retain) CNFRegController * regController;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool timedOut;
-@property(assign,retain) UIWebView * webView;
+@property (nonatomic, retain) UIAlertView *alert;
+@property (nonatomic, copy) id alertHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isLoaded;
+@property (nonatomic, readonly) bool isLoading;
+@property (nonatomic, retain) CNFRegController *regController;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool timedOut;
+@property (nonatomic, retain) UIWebView *webView;
 
 - (void)_cleanupLoader;
 - (void)_handleTimeout;

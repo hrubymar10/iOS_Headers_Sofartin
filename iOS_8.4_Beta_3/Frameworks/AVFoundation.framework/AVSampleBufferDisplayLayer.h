@@ -6,24 +6,24 @@
     AVSampleBufferDisplayLayerInternal *_sampleBufferDisplayLayerInternal;
 }
 
-@property(assign,retain) struct OpaqueCMTimebase { }* controlTimebase;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool outputObscuredDueToInsufficientExternalProtection;
-@property(getter=isReadyForMoreMediaData,assign,readonly) bool readyForMoreMediaData;
-@property(getter=isReadyForMoreMediaData,assign,readonly) bool readyForMoreMediaData;
-@property(assign,readonly) long long status;
-@property(assign,readonly) long long status;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) struct OpaqueCMTimebase { }* timebase;
-@property(assign,copy) NSString * videoGravity;
+@property (retain) struct OpaqueCMTimebase { }*controlTimebase;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool outputObscuredDueToInsufficientExternalProtection;
+@property (getter=isReadyForMoreMediaData, readonly) bool readyForMoreMediaData;
+@property (getter=isReadyForMoreMediaData, readonly) bool readyForMoreMediaData;
+@property (nonatomic, readonly) long long status;
+@property (nonatomic, readonly) long long status;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly, retain) struct OpaqueCMTimebase { }*timebase;
+@property (copy) NSString *videoGravity;
 
 + (bool)automaticallyNotifiesObserversOfError;
 + (bool)automaticallyNotifiesObserversOfStatus;

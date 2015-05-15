@@ -4,17 +4,17 @@
 
 @interface DOMHTMLAppletElement : DOMHTMLElement
 
-@property(assign,copy) NSString * align;
-@property(assign,copy) NSString * alt;
-@property(assign,copy) NSString * archive;
-@property(assign,copy) NSString * code;
-@property(assign,copy) NSString * codeBase;
-@property(assign,copy) NSString * height;
-@property(assign,readwrite) int hspace;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * object;
-@property(assign,readwrite) int vspace;
-@property(assign,copy) NSString * width;
+@property (copy) NSString *align;
+@property (copy) NSString *alt;
+@property (copy) NSString *archive;
+@property (copy) NSString *code;
+@property (copy) NSString *codeBase;
+@property (copy) NSString *height;
+@property int hspace;
+@property (copy) NSString *name;
+@property (copy) NSString *object;
+@property int vspace;
+@property (copy) NSString *width;
 
 - (id)align;
 - (id)alt;

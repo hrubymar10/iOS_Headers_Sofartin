@@ -8,14 +8,14 @@
     NSString *_valueKeyPath;
 }
 
-@property(assign,readwrite) int alignment;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) _UISettings * settings;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * valueKeyPath;
+@property (nonatomic) int alignment;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) _UISettings *settings;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *valueKeyPath;
 
 + (id)addSettingsButton;
 + (id)button;

@@ -9,10 +9,10 @@
     NSString *_type;
 }
 
-@property(assign,copy) NSString * bsdName;
-@property(assign,retain) NSNumber * index;
-@property(assign,readwrite) unsigned int priority;
-@property(assign,copy) NSString * type;
+@property (nonatomic, copy) NSString *bsdName;
+@property (nonatomic, retain) NSNumber *index;
+@property (nonatomic) unsigned int priority;
+@property (nonatomic, copy) NSString *type;
 
 + (id)bsdNameForIndex:(id)arg1;
 + (id)interfaceWithInterfaceIndex:(id)arg1;

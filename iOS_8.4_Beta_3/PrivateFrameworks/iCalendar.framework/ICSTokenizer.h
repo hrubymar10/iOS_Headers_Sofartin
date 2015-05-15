@@ -14,8 +14,8 @@
     int _tokenType;
 }
 
-@property(assign,readwrite) int logCount;
-@property(assign,readwrite) bool printedICS;
+@property int logCount;
+@property bool printedICS;
 
 - (bool)consumeEOL;
 - (bool)consumeEscaped:(const char *)arg1;

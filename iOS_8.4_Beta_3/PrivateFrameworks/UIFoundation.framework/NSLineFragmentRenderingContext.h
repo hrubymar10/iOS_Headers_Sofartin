@@ -33,9 +33,9 @@
     CUIStyleEffectConfiguration *_styleEffects;
 }
 
-@property(assign,retain) CUICatalog * cuiCatalog;
-@property(assign,retain) CUIStyleEffectConfiguration * cuiStyleEffects;
-@property(getter=_usesSimpleTextEffects,setter=_setUsesSimpleTextEffects:,assign,readwrite) bool usesSimpleTextEffects;
+@property (nonatomic, retain) CUICatalog *cuiCatalog;
+@property (nonatomic, retain) CUIStyleEffectConfiguration *cuiStyleEffects;
+@property (getter=_usesSimpleTextEffects, setter=_setUsesSimpleTextEffects:, nonatomic) bool usesSimpleTextEffects;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (void)initialize;

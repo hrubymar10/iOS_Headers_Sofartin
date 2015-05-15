@@ -7,14 +7,14 @@
     ACAccountStore *_accountStore;
 }
 
-@property(assign,readonly) NSString * accountDescription;
-@property(assign,readonly) SUScriptAppleAccountType * accountType;
-@property(assign,readonly) SUScriptAppleAccountCredential * credential;
-@property(assign,readonly) NSString * dsID;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) ACAccount * nativeAccount;
-@property(assign,readonly) ACAccountStore * nativeAccountStore;
-@property(assign,readonly) NSString * username;
+@property (readonly) NSString *accountDescription;
+@property (readonly) SUScriptAppleAccountType *accountType;
+@property (readonly) SUScriptAppleAccountCredential *credential;
+@property (readonly) NSString *dsID;
+@property (readonly) NSString *identifier;
+@property (readonly) ACAccount *nativeAccount;
+@property (readonly) ACAccountStore *nativeAccountStore;
+@property (readonly) NSString *username;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

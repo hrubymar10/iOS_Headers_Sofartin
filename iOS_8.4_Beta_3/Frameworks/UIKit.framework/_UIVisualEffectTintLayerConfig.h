@@ -6,7 +6,7 @@
     UIColor *_tintColor;
 }
 
-@property(assign,readonly) UIColor * tintColor;
+@property (nonatomic, readonly) UIColor *tintColor;
 
 + (id)layerWithTintColor:(id)arg1;
 

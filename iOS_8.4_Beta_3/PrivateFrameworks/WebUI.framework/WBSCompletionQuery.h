@@ -21,14 +21,14 @@
     } _timestamp;
 }
 
-@property(assign,readwrite) unsigned long long indexInFeedbackArray;
-@property(assign,copy) NSString * parsecFeedbackQueryIdentifier;
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{duration<long long' */ struct  parsecLatency; /* unknown property attribute:  1000> >=q} */
-@property(assign,copy) NSURLRequest * parsecSearchRequest;
-@property(assign,readonly) NSString * queryString;
-@property(assign,copy) NSString * searchSuggestionProviderIdentifier;
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{duration<long long' */ struct  searchSuggestionProviderLatency; /* unknown property attribute:  1000> >=q} */
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{time_point<std::__1::chrono::steady_clock' */ struct  timestamp; /* unknown property attribute:  1000000000> >=q}} */
+@property (nonatomic) unsigned long long indexInFeedbackArray;
+@property (nonatomic, copy) NSString *parsecFeedbackQueryIdentifier;
+@property (nonatomic) /* Warning: unhandled struct encoding: '{duration<long long' */ struct  parsecLatency; /* unknown property attribute:  1000> >=q} */
+@property (nonatomic, copy) NSURLRequest *parsecSearchRequest;
+@property (nonatomic, readonly) NSString *queryString;
+@property (nonatomic, copy) NSString *searchSuggestionProviderIdentifier;
+@property (nonatomic) /* Warning: unhandled struct encoding: '{duration<long long' */ struct  searchSuggestionProviderLatency; /* unknown property attribute:  1000> >=q} */
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{time_point<std::__1::chrono::steady_clock' */ struct  timestamp; /* unknown property attribute:  1000000000> >=q}} */
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -6,7 +6,7 @@
     _UIAlertControllerActionView *_actionView;
 }
 
-@property(assign,retain) _UIAlertControllerActionView * actionView;
+@property (nonatomic, retain) _UIAlertControllerActionView *actionView;
 
 - (id)actionView;
 - (void)applyLayoutAttributes:(id)arg1;

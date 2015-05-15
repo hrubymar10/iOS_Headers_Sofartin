@@ -6,14 +6,14 @@
     <IKAppDeviceConfig> *_deviceConfig;
 }
 
-@property(assign,readonly) IKJSRestrictions * Restrictions;
-@property(assign,readonly) struct CGSize { double x1; double x2; } Screen;
-@property(assign,readwrite) <IKAppDeviceConfig> * deviceConfig;
-@property(assign,retain) NSString * language;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * preferredVideoFormat;
-@property(assign,retain) NSString * preferredVideoPreviewFormat;
-@property(assign,retain) NSString * storefrontCountryCode;
+@property (nonatomic, readonly) IKJSRestrictions *Restrictions;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } Screen;
+@property (nonatomic) <IKAppDeviceConfig> *deviceConfig;
+@property (nonatomic, readonly, retain) NSString *language;
+@property (nonatomic, readonly, retain) NSString *name;
+@property (nonatomic, readonly, retain) NSString *preferredVideoFormat;
+@property (nonatomic, readonly, retain) NSString *preferredVideoPreviewFormat;
+@property (nonatomic, readonly, retain) NSString *storefrontCountryCode;
 
 - (void).cxx_destruct;
 - (id)Restrictions;

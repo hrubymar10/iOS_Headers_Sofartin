@@ -17,14 +17,14 @@
     } fState;
 }
 
-@property(assign,readonly) bool automotive;
-@property(assign,readonly) long long confidence;
-@property(assign,readonly) bool cycling;
-@property(assign,readonly) bool running;
-@property(assign,readonly) NSDate * startDate;
-@property(assign,readonly) bool stationary;
-@property(assign,readonly) bool unknown;
-@property(assign,readonly) bool walking;
+@property (nonatomic, readonly) bool automotive;
+@property (nonatomic, readonly) long long confidence;
+@property (nonatomic, readonly) bool cycling;
+@property (nonatomic, readonly) bool running;
+@property (nonatomic, readonly) NSDate *startDate;
+@property (nonatomic, readonly) bool stationary;
+@property (nonatomic, readonly) bool unknown;
+@property (nonatomic, readonly) bool walking;
 
 + (bool)supportsSecureCoding;
 

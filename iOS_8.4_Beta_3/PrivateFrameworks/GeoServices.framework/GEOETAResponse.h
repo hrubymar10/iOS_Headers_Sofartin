@@ -14,13 +14,13 @@
     int _status;
 }
 
-@property(assign,retain) NSMutableArray * etaResults;
-@property(assign,readonly) bool hasOriginPlaceSearchResponse;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,retain) GEOPlaceSearchResponse * originPlaceSearchResponse;
-@property(assign,readonly) struct { int x1; int x2; struct { unsigned int x_3_1_1 : 1; unsigned int x_3_1_2 : 1; } x3; }* problemDetails;
-@property(assign,readonly) unsigned long long problemDetailsCount;
-@property(assign,readwrite) int status;
+@property (nonatomic, retain) NSMutableArray *etaResults;
+@property (nonatomic, readonly) bool hasOriginPlaceSearchResponse;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic, retain) GEOPlaceSearchResponse *originPlaceSearchResponse;
+@property (nonatomic, readonly) struct { int x1; int x2; struct { unsigned int x_3_1_1 : 1; unsigned int x_3_1_2 : 1; } x3; }*problemDetails;
+@property (nonatomic, readonly) unsigned long long problemDetailsCount;
+@property (nonatomic) int status;
 
 - (void)addEtaResult:(id)arg1;
 - (void)addProblemDetail:(struct { int x1; int x2; struct { unsigned int x_3_1_1 : 1; unsigned int x_3_1_2 : 1; } x3; })arg1;

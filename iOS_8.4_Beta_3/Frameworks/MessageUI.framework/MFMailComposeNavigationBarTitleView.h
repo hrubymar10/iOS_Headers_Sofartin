@@ -8,7 +8,7 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *title;
 
 - (id)_subtitleTextColor;
 - (double)_verticalOffsetForSubtitleWhenMini:(bool)arg1;

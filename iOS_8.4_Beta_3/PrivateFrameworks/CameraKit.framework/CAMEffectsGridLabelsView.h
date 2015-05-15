@@ -12,13 +12,13 @@
     long long _orientation;
 }
 
-@property(assign,retain) _UIBackdropView * _backdropView;
-@property(assign,retain) _UILegibilitySettingsProvider * _legibilitySettingsProvider;
-@property(getter=isDisabledLayoutForLabels,assign,readwrite) bool disableLayoutForLabels;
-@property(assign,retain) NSArray * filterIndices;
-@property(assign,retain) NSArray * filterLabelViews;
-@property(assign,retain) CAMEffectsGridView * gridView;
-@property(assign,readwrite) long long orientation;
+@property (nonatomic, retain) _UIBackdropView *_backdropView;
+@property (nonatomic, retain) _UILegibilitySettingsProvider *_legibilitySettingsProvider;
+@property (getter=isDisabledLayoutForLabels, nonatomic) bool disableLayoutForLabels;
+@property (nonatomic, retain) NSArray *filterIndices;
+@property (nonatomic, retain) NSArray *filterLabelViews;
+@property (nonatomic, retain) CAMEffectsGridView *gridView;
+@property (nonatomic) long long orientation;
 
 - (void).cxx_destruct;
 - (id)_backdropView;

@@ -6,7 +6,7 @@
     SUNavigationMenu *_navigationMenu;
 }
 
-@property(assign,readonly) SUNavigationMenu * navigationMenu;
+@property (nonatomic, readonly) SUNavigationMenu *navigationMenu;
 
 - (void)_cancelAction:(id)arg1;
 - (void)_protocolButtonAction:(id)arg1;

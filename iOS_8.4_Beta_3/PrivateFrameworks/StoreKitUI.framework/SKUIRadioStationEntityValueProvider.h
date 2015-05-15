@@ -6,11 +6,11 @@
     RadioStation *_station;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) RadioStation * station;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) RadioStation *station;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)entityUniqueIdentifier;

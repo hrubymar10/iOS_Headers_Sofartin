@@ -8,10 +8,10 @@
     int _flags;
 }
 
-@property(assign,readwrite) unsigned int domain;
-@property(assign,retain) NSString * fbr;
-@property(assign,readwrite) int flags;
-@property(assign,readonly) NSString * parsecString;
+@property (nonatomic) unsigned int domain;
+@property (nonatomic, retain) NSString *fbr;
+@property (nonatomic) int flags;
+@property (readonly) NSString *parsecString;
 
 + (bool)supportsSecureCoding;
 

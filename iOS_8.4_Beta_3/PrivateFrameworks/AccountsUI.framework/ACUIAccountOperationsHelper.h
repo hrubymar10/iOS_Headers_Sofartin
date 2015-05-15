@@ -10,9 +10,9 @@
     bool _isSavingAccount;
 }
 
-@property(assign,readwrite) <ACUIAccountOperationsDelegate> * delegate;
-@property(assign,readwrite) bool isRemovingAccount;
-@property(assign,readwrite) bool isSavingAccount;
+@property (nonatomic) <ACUIAccountOperationsDelegate> *delegate;
+@property bool isRemovingAccount;
+@property bool isSavingAccount;
 
 - (void).cxx_destruct;
 - (id)_desiredDataclassActionsFromPossibleActions:(id)arg1 forAccount:(id)arg2;

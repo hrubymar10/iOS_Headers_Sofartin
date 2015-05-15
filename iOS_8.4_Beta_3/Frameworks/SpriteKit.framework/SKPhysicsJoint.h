@@ -13,11 +13,11 @@
     double reactionTorque;
 }
 
-@property(assign,readwrite) bool _implicit;
-@property(assign,retain) SKPhysicsBody * bodyA;
-@property(assign,retain) SKPhysicsBody * bodyB;
-@property(assign,readonly) struct CGVector { double x1; double x2; } reactionForce;
-@property(assign,readonly) double reactionTorque;
+@property (nonatomic) bool _implicit;
+@property (nonatomic, retain) SKPhysicsBody *bodyA;
+@property (nonatomic, retain) SKPhysicsBody *bodyB;
+@property (nonatomic, readonly) struct CGVector { double x1; double x2; } reactionForce;
+@property (nonatomic, readonly) double reactionTorque;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 

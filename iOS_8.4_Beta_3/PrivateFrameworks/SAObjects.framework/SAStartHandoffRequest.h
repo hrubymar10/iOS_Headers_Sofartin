@@ -4,7 +4,7 @@
 
 @interface SAStartHandoffRequest : SAStartRequest
 
-@property(assign,copy) NSData * handoffData;
+@property (nonatomic, copy) NSData *handoffData;
 
 + (id)startHandoffRequest;
 + (id)startHandoffRequestWithDictionary:(id)arg1 context:(id)arg2;

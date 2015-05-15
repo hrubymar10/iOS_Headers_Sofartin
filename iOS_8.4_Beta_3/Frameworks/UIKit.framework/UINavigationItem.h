@@ -35,30 +35,30 @@
     UIView *_titleView;
 }
 
-@property(setter=_setAbbreviatedBackButtonTitles:,assign,copy) NSArray * _abbreviatedBackButtonTitles;
-@property(assign,readonly) NSMutableDictionary * _backgroundImages;
-@property(getter=_isBarStyleIndependent,setter=_setBarStyleIndependent:,assign,readwrite) bool _barStyleIndependent;
-@property(setter=_setFontScaleAdjustment:,assign,readwrite) double _fontScaleAdjustment;
-@property(setter=_setIdealCustomTitleWidth:,assign,readwrite) double _idealCustomTitleWidth;
-@property(setter=_setIndependentBarStyle:,assign,readwrite) long long _independentBarStyle;
-@property(setter=_setLeftFlexibleSpaceCount:,assign,readwrite) unsigned long long _leftFlexibleSpaceCount;
-@property(setter=_setLeftItemSpaceList:,assign,copy) NSArray * _leftItemSpaceList;
-@property(getter=_owningNavigationBar,setter=_setOwningNavigationBar:,assign,readwrite) UINavigationBar * _owningNavigationBar;
-@property(setter=_setPendingTitle:,assign,copy) NSString * _pendingTitle;
-@property(setter=_setRightFlexibleSpaceCount:,assign,readwrite) unsigned long long _rightFlexibleSpaceCount;
-@property(setter=_setRightItemSpaceList:,assign,copy) NSArray * _rightItemSpaceList;
-@property(assign,readwrite) double _titleViewWidthForAnimations;
-@property(assign,retain) UIBarButtonItem * backBarButtonItem;
-@property(assign,readwrite) bool hidesBackButton;
-@property(assign,retain) UIBarButtonItem * leftBarButtonItem;
-@property(assign,copy) NSArray * leftBarButtonItems;
-@property(assign,readwrite) bool leftItemsSupplementBackButton;
-@property(assign,copy) NSString * prompt;
-@property(setter=pu_setBanner:,assign,retain) PUAbstractNavigationBanner * pu_banner;
-@property(assign,retain) UIBarButtonItem * rightBarButtonItem;
-@property(assign,copy) NSArray * rightBarButtonItems;
-@property(assign,copy) NSString * title;
-@property(assign,retain) UIView * titleView;
+@property (setter=_setAbbreviatedBackButtonTitles:, nonatomic, copy) NSArray *_abbreviatedBackButtonTitles;
+@property (nonatomic, readonly) NSMutableDictionary *_backgroundImages;
+@property (getter=_isBarStyleIndependent, setter=_setBarStyleIndependent:, nonatomic) bool _barStyleIndependent;
+@property (setter=_setFontScaleAdjustment:, nonatomic) double _fontScaleAdjustment;
+@property (setter=_setIdealCustomTitleWidth:, nonatomic) double _idealCustomTitleWidth;
+@property (setter=_setIndependentBarStyle:, nonatomic) long long _independentBarStyle;
+@property (setter=_setLeftFlexibleSpaceCount:, nonatomic) unsigned long long _leftFlexibleSpaceCount;
+@property (setter=_setLeftItemSpaceList:, nonatomic, copy) NSArray *_leftItemSpaceList;
+@property (getter=_owningNavigationBar, setter=_setOwningNavigationBar:, nonatomic) UINavigationBar *_owningNavigationBar;
+@property (setter=_setPendingTitle:, nonatomic, copy) NSString *_pendingTitle;
+@property (setter=_setRightFlexibleSpaceCount:, nonatomic) unsigned long long _rightFlexibleSpaceCount;
+@property (setter=_setRightItemSpaceList:, nonatomic, copy) NSArray *_rightItemSpaceList;
+@property (nonatomic) double _titleViewWidthForAnimations;
+@property (nonatomic, retain) UIBarButtonItem *backBarButtonItem;
+@property (nonatomic) bool hidesBackButton;
+@property (nonatomic, retain) UIBarButtonItem *leftBarButtonItem;
+@property (nonatomic, copy) NSArray *leftBarButtonItems;
+@property (nonatomic) bool leftItemsSupplementBackButton;
+@property (nonatomic, copy) NSString *prompt;
+@property (setter=pu_setBanner:, nonatomic, retain) PUAbstractNavigationBanner *pu_banner;
+@property (nonatomic, retain) UIBarButtonItem *rightBarButtonItem;
+@property (nonatomic, copy) NSArray *rightBarButtonItems;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, retain) UIView *titleView;
 
 + (id)defaultFont;
 

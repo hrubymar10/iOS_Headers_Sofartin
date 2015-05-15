@@ -14,23 +14,23 @@
     int _transportType;
 }
 
-@property(assign,retain) NSArray * branchNames;
-@property(assign,retain) NSString * destinationName;
-@property(assign,retain) NSString * exitNumber;
-@property(assign,readonly) bool hasName;
-@property(assign,retain) NSString * intersectionName;
-@property(assign,readonly) bool isExitManeuver;
-@property(assign,readwrite) int junctionAngle;
-@property(assign,readwrite) int maneuverType;
-@property(assign,readonly) NSString * primaryName;
-@property(assign,retain) NSString * roadName;
-@property(assign,readwrite) bool toFreeway;
-@property(assign,retain) NSArray * towardNames;
-@property(assign,readwrite) int transportType;
-@property(assign,readonly) bool useDestinationName;
-@property(assign,readonly) bool useIntersectionName;
-@property(assign,readonly) bool useRoadName;
-@property(assign,readonly) bool useTowardNames;
+@property (nonatomic, retain) NSArray *branchNames;
+@property (nonatomic, retain) NSString *destinationName;
+@property (nonatomic, retain) NSString *exitNumber;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic, retain) NSString *intersectionName;
+@property (nonatomic, readonly) bool isExitManeuver;
+@property (nonatomic) int junctionAngle;
+@property (nonatomic) int maneuverType;
+@property (nonatomic, readonly) NSString *primaryName;
+@property (nonatomic, retain) NSString *roadName;
+@property (nonatomic) bool toFreeway;
+@property (nonatomic, retain) NSArray *towardNames;
+@property (nonatomic) int transportType;
+@property (nonatomic, readonly) bool useDestinationName;
+@property (nonatomic, readonly) bool useIntersectionName;
+@property (nonatomic, readonly) bool useRoadName;
+@property (nonatomic, readonly) bool useTowardNames;
 
 + (id)contentsWithManeuverType:(int)arg1 transportType:(int)arg2;
 + (id)contentsWithStep:(id)arg1 transportType:(int)arg2;

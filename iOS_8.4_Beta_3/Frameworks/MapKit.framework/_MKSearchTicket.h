@@ -4,16 +4,16 @@
 
 @interface _MKSearchTicket : _MKTicket <MKMapServiceSearchTicket>
 
-@property(assign,readonly) GEOMapRegion * boundingRegion;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) NSArray * exactMapItems;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * refinedMapItems;
-@property(assign,readonly) NSString * searchQuery;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) GEOMapServiceTraits * traits;
+@property (nonatomic, readonly) GEOMapRegion *boundingRegion;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) NSArray *exactMapItems;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *refinedMapItems;
+@property (nonatomic, readonly) NSString *searchQuery;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) GEOMapServiceTraits *traits;
 
 - (id)initWithSearchTicket:(id)arg1;
 - (id)searchQuery;

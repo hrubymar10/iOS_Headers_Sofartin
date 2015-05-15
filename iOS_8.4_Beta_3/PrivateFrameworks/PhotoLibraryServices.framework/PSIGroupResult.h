@@ -17,16 +17,16 @@
     float _score;
 }
 
-@property(assign,retain) struct __CFArray { }* assetIds;
-@property(assign,readonly) NSArray * assetUUIDs;
-@property(assign,retain) struct __CFArray { }* categories;
-@property(assign,retain) NSArray * contentStrings;
-@property(assign,readwrite) PSIDatabase * idx;
-@property(assign,readonly) unsigned long long matchCount;
-@property(assign,retain) NSArray * matchRanges;
-@property(assign,readonly) NSString * owningContentString;
-@property(assign,retain) struct __CFArray { }* owningGroupIds;
-@property(assign,readwrite) float score;
+@property (nonatomic, retain) struct __CFArray { }*assetIds;
+@property (readonly) NSArray *assetUUIDs;
+@property (nonatomic, retain) struct __CFArray { }*categories;
+@property (nonatomic, retain) NSArray *contentStrings;
+@property (nonatomic) PSIDatabase *idx;
+@property (nonatomic, readonly) unsigned long long matchCount;
+@property (nonatomic, retain) NSArray *matchRanges;
+@property (readonly) NSString *owningContentString;
+@property (nonatomic, retain) struct __CFArray { }*owningGroupIds;
+@property (nonatomic) float score;
 
 - (id)_prepareForFetchWithCount:(unsigned long long)arg1 outRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; }*)arg2 outFetchOwningContentString:(bool*)arg3;
 - (struct __CFArray { }*)assetIds;

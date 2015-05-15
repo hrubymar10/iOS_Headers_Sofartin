@@ -16,17 +16,17 @@
     CKRecordZoneID *_zoneID;
 }
 
-@property(assign,readwrite) long long assetQuotaUsage;
-@property(assign,readwrite) unsigned long long capabilities;
-@property(assign,retain) NSData * clientChangeToken;
-@property(assign,copy) CKContainerID * containerID;
-@property(assign,retain) NSData * currentServerContinuationToken;
-@property(assign,readwrite) int deviceCount;
-@property(assign,readwrite) long long metadataQuotaUsage;
-@property(assign,retain) NSString * previousProtectionEtag;
-@property(assign,retain) NSData * protectionData;
-@property(assign,retain) NSString * protectionEtag;
-@property(assign,retain) CKRecordZoneID * zoneID;
+@property (nonatomic) long long assetQuotaUsage;
+@property (nonatomic) unsigned long long capabilities;
+@property (nonatomic, retain) NSData *clientChangeToken;
+@property (nonatomic, copy) CKContainerID *containerID;
+@property (nonatomic, retain) NSData *currentServerContinuationToken;
+@property (nonatomic) int deviceCount;
+@property (nonatomic) long long metadataQuotaUsage;
+@property (nonatomic, retain) NSString *previousProtectionEtag;
+@property (nonatomic, retain) NSData *protectionData;
+@property (nonatomic, retain) NSString *protectionEtag;
+@property (nonatomic, retain) CKRecordZoneID *zoneID;
 
 + (id)defaultRecordZone;
 + (bool)supportsSecureCoding;

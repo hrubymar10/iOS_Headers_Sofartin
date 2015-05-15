@@ -17,19 +17,19 @@
     unsigned int _subtype;
 }
 
-@property(assign,retain) TDThemeDirection * direction;
-@property(assign,retain) TDThemeElement * element;
-@property(assign,retain) TDThemeIdiom * idiom;
-@property(assign,retain) TDThemeDrawingLayer * layer;
-@property(assign,retain) TDThemePart * part;
-@property(assign,retain) TDThemePresentationState * presentationState;
-@property(assign,retain) TDThemeState * previousState;
-@property(assign,retain) TDThemeValue * previousValue;
-@property(assign,retain) TDThemeSize * size;
-@property(assign,retain) TDThemeUISizeClass * sizeClassHorizontal;
-@property(assign,retain) TDThemeUISizeClass * sizeClassVertical;
-@property(assign,retain) TDThemeState * state;
-@property(assign,retain) TDThemeValue * value;
+@property (nonatomic, retain) TDThemeDirection *direction;
+@property (nonatomic, retain) TDThemeElement *element;
+@property (nonatomic, retain) TDThemeIdiom *idiom;
+@property (nonatomic, retain) TDThemeDrawingLayer *layer;
+@property (nonatomic, retain) TDThemePart *part;
+@property (nonatomic, retain) TDThemePresentationState *presentationState;
+@property (nonatomic, retain) TDThemeState *previousState;
+@property (nonatomic, retain) TDThemeValue *previousValue;
+@property (nonatomic, retain) TDThemeSize *size;
+@property (nonatomic, retain) TDThemeUISizeClass *sizeClassHorizontal;
+@property (nonatomic, retain) TDThemeUISizeClass *sizeClassVertical;
+@property (nonatomic, retain) TDThemeState *state;
+@property (nonatomic, retain) TDThemeValue *value;
 
 + (id)keyPathsForValuesAffectingValueForKey:(id)arg1;
 

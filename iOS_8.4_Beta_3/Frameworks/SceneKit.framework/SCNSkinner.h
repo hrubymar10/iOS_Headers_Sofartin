@@ -7,13 +7,13 @@
     struct __C3DSkinner { } *_skinner;
 }
 
-@property(assign,retain) SCNGeometry * baseGeometry;
-@property(assign,readwrite) struct SCNMatrix4 { float x1; float x2; float x3; float x4; float x5; float x6; float x7; float x8; float x9; float x10; float x11; float x12; float x13; float x14; float x15; float x16; } baseGeometryBindTransform;
-@property(assign,readonly) SCNGeometrySource * boneIndices;
-@property(assign,readonly) NSArray * boneInverseBindTransforms;
-@property(assign,readonly) SCNGeometrySource * boneWeights;
-@property(assign,readonly) NSArray * bones;
-@property(assign,retain) SCNNode * skeleton;
+@property (nonatomic, retain) SCNGeometry *baseGeometry;
+@property (nonatomic) struct SCNMatrix4 { float x1; float x2; float x3; float x4; float x5; float x6; float x7; float x8; float x9; float x10; float x11; float x12; float x13; float x14; float x15; float x16; } baseGeometryBindTransform;
+@property (nonatomic, readonly) SCNGeometrySource *boneIndices;
+@property (nonatomic, readonly) NSArray *boneInverseBindTransforms;
+@property (nonatomic, readonly) SCNGeometrySource *boneWeights;
+@property (nonatomic, readonly) NSArray *bones;
+@property (nonatomic, retain) SCNNode *skeleton;
 
 + (struct __C3DSkinner { }*)createSkinnerWithBaseGeometry:(id)arg1 bones:(id)arg2 boneWeights:(id)arg3 boneIndices:(id)arg4;
 + (id)skinnerWithBaseGeometry:(id)arg1 bones:(id)arg2 boneInverseBindTransforms:(id)arg3 boneWeights:(id)arg4 boneIndices:(id)arg5;

@@ -9,10 +9,10 @@
     NSTimeZone *_timeZone;
 }
 
-@property(assign,copy) NSDate * fireDate;
-@property(assign,copy) NSDateComponents * recurrence;
-@property(assign,copy) NSCalendar * recurrenceCalendar;
-@property(assign,copy) NSTimeZone * timeZone;
+@property (nonatomic, copy) NSDate *fireDate;
+@property (nonatomic, copy) NSDateComponents *recurrence;
+@property (nonatomic, copy) NSCalendar *recurrenceCalendar;
+@property (nonatomic, copy) NSTimeZone *timeZone;
 
 + (bool)supportsSecureCoding;
 

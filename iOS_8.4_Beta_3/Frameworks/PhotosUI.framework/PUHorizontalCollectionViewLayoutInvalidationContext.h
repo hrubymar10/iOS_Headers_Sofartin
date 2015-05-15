@@ -6,7 +6,7 @@
     bool _invalidateCachedLayout;
 }
 
-@property(assign,readwrite) bool invalidateCachedLayout;
+@property (nonatomic) bool invalidateCachedLayout;
 
 - (void)_setInvalidateCachedLayout:(bool)arg1;
 - (bool)invalidateCachedLayout;

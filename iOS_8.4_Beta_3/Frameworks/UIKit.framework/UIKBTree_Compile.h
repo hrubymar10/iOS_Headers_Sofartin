@@ -7,10 +7,10 @@
     NSMutableDictionary *symbols;
 }
 
-@property(assign,readonly) NSArray * refList;
-@property(assign,retain) NSMutableDictionary * refs;
-@property(assign,retain) NSMutableDictionary * symbols;
-@property(assign,readwrite) bool variable;
+@property (nonatomic, readonly) NSArray *refList;
+@property (nonatomic, retain) NSMutableDictionary *refs;
+@property (nonatomic, retain) NSMutableDictionary *symbols;
+@property (nonatomic) bool variable;
 
 + (id)stringEnumForType:(int)arg1;
 + (id)treeOfType:(int)arg1;

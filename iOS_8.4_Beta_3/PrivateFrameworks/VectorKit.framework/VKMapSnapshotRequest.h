@@ -23,12 +23,12 @@
     unsigned int _tileGroupID;
 }
 
-@property(assign,retain) NSLocale * locale;
-@property(assign,readwrite) long long mapType;
-@property(assign,readwrite) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } region;
-@property(assign,readwrite) unsigned int scale;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readwrite) unsigned int tileGroupID;
+@property (nonatomic, retain) NSLocale *locale;
+@property (nonatomic) long long mapType;
+@property (nonatomic) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } region;
+@property (nonatomic) unsigned int scale;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic) unsigned int tileGroupID;
 
 - (id).cxx_construct;
 - (struct VKRequestKey { struct { struct { double x_1_2_1; double x_1_2_2; } x_1_1_1; struct { double x_2_2_1; double x_2_2_2; } x_1_1_2; } x1; long long x2; struct CGSize { double x_3_1_1; double x_3_1_2; } x3; unsigned int x4; unsigned short x5; })_requestKey;

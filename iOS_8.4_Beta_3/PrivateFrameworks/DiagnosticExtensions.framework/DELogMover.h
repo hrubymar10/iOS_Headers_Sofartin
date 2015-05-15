@@ -7,7 +7,7 @@
     NSString *_serviceName;
 }
 
-@property(assign,readonly) NSString * serviceName;
+@property (nonatomic, readonly) NSString *serviceName;
 
 + (void)moveSystemLogsWithExtensions:(id)arg1;
 

@@ -7,12 +7,12 @@
     MPStoreItemMetadataContext *_storeItemMetadataContext;
 }
 
-@property(assign,copy) MPUContentItemIdentifierCollection * contentItemIdentifierCollection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MPStoreItemMetadataContext * storeItemMetadataContext;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, copy) MPUContentItemIdentifierCollection *contentItemIdentifierCollection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MPStoreItemMetadataContext *storeItemMetadataContext;
+@property (readonly) Class superclass;
 
 + (id)_entityValueHandlerForProperty:(id)arg1;
 + (void)_registerEntityValueHandler:(id)arg1 forProperty:(id)arg2;

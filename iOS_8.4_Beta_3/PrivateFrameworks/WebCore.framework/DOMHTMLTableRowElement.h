@@ -4,14 +4,14 @@
 
 @interface DOMHTMLTableRowElement : DOMHTMLElement
 
-@property(assign,copy) NSString * align;
-@property(assign,copy) NSString * bgColor;
-@property(assign,readonly) DOMHTMLCollection * cells;
-@property(assign,copy) NSString * ch;
-@property(assign,copy) NSString * chOff;
-@property(assign,readonly) int rowIndex;
-@property(assign,readonly) int sectionRowIndex;
-@property(assign,copy) NSString * vAlign;
+@property (copy) NSString *align;
+@property (copy) NSString *bgColor;
+@property (readonly) DOMHTMLCollection *cells;
+@property (copy) NSString *ch;
+@property (copy) NSString *chOff;
+@property (readonly) int rowIndex;
+@property (readonly) int sectionRowIndex;
+@property (copy) NSString *vAlign;
 
 - (id)align;
 - (id)bgColor;

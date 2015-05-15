@@ -10,15 +10,15 @@
     NSString *_reason;
 }
 
-@property(assign,readwrite) bool authenticatesIfNecessary;
-@property(assign,copy) SSAuthenticationContext * authenticationContext;
-@property(assign,readwrite) long long carrierBundleProvisioningStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * localizedAuthenticationReason;
-@property(assign,copy) NSString * reason;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool authenticatesIfNecessary;
+@property (nonatomic, copy) SSAuthenticationContext *authenticationContext;
+@property (nonatomic) long long carrierBundleProvisioningStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *localizedAuthenticationReason;
+@property (nonatomic, copy) NSString *reason;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)authenticatesIfNecessary;

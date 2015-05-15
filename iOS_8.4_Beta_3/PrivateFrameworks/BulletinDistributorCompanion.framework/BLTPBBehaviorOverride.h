@@ -12,11 +12,11 @@
     } _has;
 }
 
-@property(assign,readwrite) unsigned long long behaviorOverrideMode;
-@property(assign,readwrite) unsigned long long behaviorOverrideType;
-@property(assign,retain) NSMutableArray * effectiveIntervals;
-@property(assign,readwrite) bool hasBehaviorOverrideMode;
-@property(assign,readwrite) bool hasBehaviorOverrideType;
+@property (nonatomic) unsigned long long behaviorOverrideMode;
+@property (nonatomic) unsigned long long behaviorOverrideType;
+@property (nonatomic, retain) NSMutableArray *effectiveIntervals;
+@property (nonatomic) bool hasBehaviorOverrideMode;
+@property (nonatomic) bool hasBehaviorOverrideType;
 
 - (void).cxx_destruct;
 - (void)addEffectiveIntervals:(id)arg1;

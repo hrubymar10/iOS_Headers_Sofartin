@@ -26,20 +26,20 @@
     NSURL *_updateBundleURL;
 }
 
-@property(assign,retain) EAAccessory * accessory;
-@property(assign,retain) NSString * appProtocol;
-@property(assign,copy) id applyCompletion;
-@property(assign,retain) NSString * bootloaderProtocol;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * firmwareBundleFilename;
-@property(assign,retain) NSURL * firmwareBundleURL;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned int productIDCode;
-@property(assign,retain) NSString * protocolString;
-@property(assign,retain) iAUPServer * server;
-@property(assign,retain) EASession * session;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) EAAccessory *accessory;
+@property (nonatomic, retain) NSString *appProtocol;
+@property (nonatomic, copy) id applyCompletion;
+@property (nonatomic, retain) NSString *bootloaderProtocol;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *firmwareBundleFilename;
+@property (nonatomic, retain) NSURL *firmwareBundleURL;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned int productIDCode;
+@property (nonatomic, retain) NSString *protocolString;
+@property (nonatomic, retain) iAUPServer *server;
+@property (nonatomic, retain) EASession *session;
+@property (readonly) Class superclass;
 
 + (id)appProtocolStringWithProductIDCode:(unsigned int)arg1;
 + (id)bootloaderProtocolStringWithProductIDCode:(unsigned int)arg1;

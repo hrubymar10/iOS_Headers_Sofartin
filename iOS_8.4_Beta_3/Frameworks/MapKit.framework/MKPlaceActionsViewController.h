@@ -15,21 +15,21 @@
     bool _showSimulateLocation;
 }
 
-@property(assign,readwrite) <MKPlaceActionsViewControllerDelegate> * actionDelegate;
-@property(assign,retain) NSArray * actions;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MKMapItem * mapItem;
-@property(assign,readonly) bool requiresPreferredContentSizeInStackingView;
-@property(assign,readwrite) bool showContactActions;
-@property(assign,readwrite) bool showCreateReminder;
-@property(assign,readwrite) bool showOpenInSkyline;
-@property(assign,readwrite) bool showRemovePin;
-@property(assign,readwrite) bool showReportAProblem;
-@property(assign,readwrite) bool showSharing;
-@property(assign,readwrite) bool showSimulateLocation;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) <MKPlaceActionsViewControllerDelegate> *actionDelegate;
+@property (nonatomic, retain) NSArray *actions;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MKMapItem *mapItem;
+@property (nonatomic, readonly) bool requiresPreferredContentSizeInStackingView;
+@property (nonatomic) bool showContactActions;
+@property (nonatomic) bool showCreateReminder;
+@property (nonatomic) bool showOpenInSkyline;
+@property (nonatomic) bool showRemovePin;
+@property (nonatomic) bool showReportAProblem;
+@property (nonatomic) bool showSharing;
+@property (nonatomic) bool showSimulateLocation;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)actionDelegate;

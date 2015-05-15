@@ -15,14 +15,14 @@
     bool _shouldStartDayAtNoon;
 }
 
-@property(assign,readonly) long long defaultChartStyle;
-@property(assign,retain) NSArray * defaultYAxisChartBoundsRules;
-@property(assign,retain) NSDictionary * defaultYAxisChartBoundsRulesByUnit;
-@property(assign,readwrite) bool shouldAllowDecimalPrecision;
-@property(assign,readwrite) bool shouldHideAverageLine;
-@property(assign,readwrite) bool shouldOverrideMinYValue;
-@property(assign,readwrite) bool shouldPadMinMaxValues;
-@property(assign,readwrite) bool shouldStartDayAtNoon;
+@property (nonatomic, readonly) long long defaultChartStyle;
+@property (nonatomic, retain) NSArray *defaultYAxisChartBoundsRules;
+@property (nonatomic, retain) NSDictionary *defaultYAxisChartBoundsRulesByUnit;
+@property (nonatomic) bool shouldAllowDecimalPrecision;
+@property (nonatomic) bool shouldHideAverageLine;
+@property (nonatomic) bool shouldOverrideMinYValue;
+@property (nonatomic) bool shouldPadMinMaxValues;
+@property (nonatomic) bool shouldStartDayAtNoon;
 
 - (void).cxx_destruct;
 - (id)_ruleForKey:(id)arg1 timeScope:(long long)arg2;

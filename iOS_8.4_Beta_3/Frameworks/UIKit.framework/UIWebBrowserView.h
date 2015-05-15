@@ -65,27 +65,27 @@
     UIWebTouchEventsGestureRecognizer *_webTouchEventsGestureRecognizer;
 }
 
-@property(assign,retain) UIWebFormAccessory * _accessory;
-@property(assign,retain) DOMNode * _currentAssistedNode;
-@property(assign,readwrite) UIResponder * _editingDelegateForEverythingExceptForms;
-@property(assign,retain) NSObject<UIFormPeripheral> * _input;
-@property(getter=isAccessoryEnabled,assign,readwrite) bool accessoryEnabled;
-@property(assign,readwrite) bool allowDOMFocusRedirects;
-@property(assign,readwrite) bool allowsInlineMediaPlayback;
-@property(assign,readwrite) bool alwaysDispatchesScrollEvents;
-@property(assign,readwrite) unsigned int audioSessionCategoryOverride;
-@property(assign,readwrite) <UIWebAutoFillDelegate> * autoFillDelegate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasEditedTextField;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool inputViewObeysDOMFocus;
-@property(assign,readonly) bool isDispatchingTouchEvents;
-@property(assign,readwrite) bool mediaPlaybackRequiresUserAction;
-@property(assign,readwrite) NSString * networkInterfaceName;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool webui_privateBrowsingEnabled;
-@property(assign,readonly) UIView * webui_viewForAutoFillPrompt;
+@property (nonatomic, retain) UIWebFormAccessory *_accessory;
+@property (nonatomic, retain) DOMNode *_currentAssistedNode;
+@property (nonatomic) UIResponder *_editingDelegateForEverythingExceptForms;
+@property (nonatomic, retain) NSObject<UIFormPeripheral> *_input;
+@property (getter=isAccessoryEnabled, nonatomic) bool accessoryEnabled;
+@property (nonatomic) bool allowDOMFocusRedirects;
+@property (nonatomic) bool allowsInlineMediaPlayback;
+@property (nonatomic) bool alwaysDispatchesScrollEvents;
+@property (nonatomic) unsigned int audioSessionCategoryOverride;
+@property (nonatomic) <UIWebAutoFillDelegate> *autoFillDelegate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasEditedTextField;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool inputViewObeysDOMFocus;
+@property (nonatomic, readonly) bool isDispatchingTouchEvents;
+@property (nonatomic) bool mediaPlaybackRequiresUserAction;
+@property (nonatomic) NSString *networkInterfaceName;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool webui_privateBrowsingEnabled;
+@property (nonatomic, readonly) UIView *webui_viewForAutoFillPrompt;
 
 + (id)getUIWebBrowserViewForWebFrame:(id)arg1;
 + (void)initialize;

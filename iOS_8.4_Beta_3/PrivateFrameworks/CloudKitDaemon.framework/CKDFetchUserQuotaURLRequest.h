@@ -6,7 +6,7 @@
     id _quotaFetchedBlock;
 }
 
-@property(assign,copy) id quotaFetchedBlock;
+@property (nonatomic, copy) id quotaFetchedBlock;
 
 - (void).cxx_destruct;
 - (int)operationType;

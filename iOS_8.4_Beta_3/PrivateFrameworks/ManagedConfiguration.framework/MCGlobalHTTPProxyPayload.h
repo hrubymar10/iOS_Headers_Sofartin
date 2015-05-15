@@ -16,17 +16,17 @@
     NSString *_proxyUsername;
 }
 
-@property(assign,retain) NSString * credentialUUID;
-@property(assign,readwrite) bool proxyCaptiveLoginAllowed;
-@property(assign,retain) NSNumber * proxyCaptiveLoginAllowedNum;
-@property(assign,readwrite) bool proxyPACFallbackAllowed;
-@property(assign,retain) NSNumber * proxyPACFallbackAllowedNum;
-@property(assign,retain) NSString * proxyPACURLString;
-@property(assign,retain) NSString * proxyPassword;
-@property(assign,retain) NSString * proxyServer;
-@property(assign,retain) NSNumber * proxyServerPort;
-@property(assign,readwrite) int proxyType;
-@property(assign,retain) NSString * proxyUsername;
+@property (nonatomic, retain) NSString *credentialUUID;
+@property (nonatomic) bool proxyCaptiveLoginAllowed;
+@property (nonatomic, retain) NSNumber *proxyCaptiveLoginAllowedNum;
+@property (nonatomic) bool proxyPACFallbackAllowed;
+@property (nonatomic, retain) NSNumber *proxyPACFallbackAllowedNum;
+@property (nonatomic, retain) NSString *proxyPACURLString;
+@property (nonatomic, retain) NSString *proxyPassword;
+@property (nonatomic, retain) NSString *proxyServer;
+@property (nonatomic, retain) NSNumber *proxyServerPort;
+@property (nonatomic) int proxyType;
+@property (nonatomic, retain) NSString *proxyUsername;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

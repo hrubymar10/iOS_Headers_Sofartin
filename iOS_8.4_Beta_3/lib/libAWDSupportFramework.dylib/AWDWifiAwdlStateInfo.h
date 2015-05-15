@@ -11,10 +11,10 @@
     } _has;
 }
 
-@property(assign,readwrite) unsigned int count;
-@property(assign,readwrite) unsigned long long duration;
-@property(assign,readwrite) bool hasCount;
-@property(assign,readwrite) bool hasDuration;
+@property (nonatomic) unsigned int count;
+@property (nonatomic) unsigned long long duration;
+@property (nonatomic) bool hasCount;
+@property (nonatomic) bool hasDuration;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

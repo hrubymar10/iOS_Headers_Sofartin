@@ -9,14 +9,14 @@
     SUNetworkMonitor *_networkMonitor;
 }
 
-@property(assign,retain) SUCarrierDownloadPolicyProperties * carrierPolicy;
-@property(getter=isCellularCapable,assign,readwrite) bool cellularCapable;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) SUDescriptor * descriptor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SUNetworkMonitor * networkMonitor;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SUCarrierDownloadPolicyProperties *carrierPolicy;
+@property (getter=isCellularCapable, nonatomic) bool cellularCapable;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) SUDescriptor *descriptor;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SUNetworkMonitor *networkMonitor;
+@property (readonly) Class superclass;
 
 - (bool)_isCellularCapable;
 - (bool)_isDownloadableForNetworkType:(int)arg1 error:(long long*)arg2 cellularFeesApply:(bool*)arg3 powerRequired:(bool*)arg4;

@@ -20,20 +20,20 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int declineCode;
-@property(assign,readwrite) int errorCode;
-@property(assign,retain) NSString * guid;
-@property(assign,readwrite) bool hasDeclineCode;
-@property(assign,readwrite) bool hasErrorCode;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasIsVideo;
-@property(assign,readwrite) bool hasOnLockScreen;
-@property(assign,readwrite) bool hasSendDuration;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int isVideo;
-@property(assign,readwrite) unsigned int onLockScreen;
-@property(assign,readwrite) unsigned int sendDuration;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int declineCode;
+@property (nonatomic) int errorCode;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic) bool hasDeclineCode;
+@property (nonatomic) bool hasErrorCode;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasIsVideo;
+@property (nonatomic) bool hasOnLockScreen;
+@property (nonatomic) bool hasSendDuration;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int isVideo;
+@property (nonatomic) unsigned int onLockScreen;
+@property (nonatomic) unsigned int sendDuration;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

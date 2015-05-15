@@ -11,14 +11,14 @@
     FBWindowContextHostWrapperView *_wrapperView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableSet * hiddenContexts;
-@property(assign,retain) NSDictionary * realContextHostViewChangedProperties;
-@property(assign,retain) NSDictionary * realContextHostViewOriginalProperties;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) FBWindowContextHostWrapperView * wrapperView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) NSMutableSet *hiddenContexts;
+@property (nonatomic, retain) NSDictionary *realContextHostViewChangedProperties;
+@property (nonatomic, retain) NSDictionary *realContextHostViewOriginalProperties;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, retain) FBWindowContextHostWrapperView *wrapperView;
 
 - (void)dealloc;
 - (id)hiddenContexts;

@@ -13,14 +13,14 @@
     NSString *_vibrationIdentifier;
 }
 
-@property(setter=_setCompletionFallbackTimer:,assign,retain) NSTimer * _completionFallbackTimer;
-@property(setter=_setCompletionHandler:,assign,copy) id _completionHandler;
-@property(setter=_setShouldOverrideMasterSwitches:,assign,readwrite) bool _shouldOverrideMasterSwitches;
-@property(setter=_setTargetQueue:,assign,readwrite) NSObject<OS_dispatch_queue> * _targetQueue;
-@property(assign,copy) NSString * accountIdentifier;
-@property(assign,copy) NSString * toneIdentifier;
-@property(assign,readwrite) int type;
-@property(assign,copy) NSString * vibrationIdentifier;
+@property (setter=_setCompletionFallbackTimer:, nonatomic, retain) NSTimer *_completionFallbackTimer;
+@property (setter=_setCompletionHandler:, nonatomic, copy) id _completionHandler;
+@property (setter=_setShouldOverrideMasterSwitches:, nonatomic) bool _shouldOverrideMasterSwitches;
+@property (setter=_setTargetQueue:, nonatomic) NSObject<OS_dispatch_queue> *_targetQueue;
+@property (nonatomic, copy) NSString *accountIdentifier;
+@property (nonatomic, copy) NSString *toneIdentifier;
+@property (nonatomic) int type;
+@property (nonatomic, copy) NSString *vibrationIdentifier;
 
 + (void)_playToneAndVibrationForType:(int)arg1 toneIdentifier:(id)arg2 vibrationIdentifier:(id)arg3 shouldOverrideMasterSwitches:(bool)arg4;
 + (void)_setWatchPrefersSalientToneAndVibration:(bool)arg1;

@@ -11,11 +11,11 @@
     NSString *_title;
 }
 
-@property(assign,copy) UIColor * backgroundColor;
-@property(assign,copy) UIVisualEffect * backgroundEffect;
-@property(getter=_handler,assign,readonly) id handler;
-@property(assign,readonly) long long style;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) UIColor *backgroundColor;
+@property (nonatomic, copy) UIVisualEffect *backgroundEffect;
+@property (getter=_handler, nonatomic, readonly) id handler;
+@property (nonatomic, readonly) long long style;
+@property (nonatomic, copy) NSString *title;
 
 + (id)rowActionWithStyle:(long long)arg1 title:(id)arg2 handler:(id)arg3;
 

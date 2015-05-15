@@ -11,10 +11,10 @@
     UILabel *_label;
 }
 
-@property(assign,retain) NSAttributedString * attributedMessage;
-@property(assign,readwrite) <SKUIMessageBannerDelegate> * delegate;
-@property(assign,retain) NSString * message;
-@property(assign,readwrite) bool showsClearButton;
+@property (nonatomic, retain) NSAttributedString *attributedMessage;
+@property (nonatomic) <SKUIMessageBannerDelegate> *delegate;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic) bool showsClearButton;
 
 - (void).cxx_destruct;
 - (void)_buttonAction:(id)arg1;

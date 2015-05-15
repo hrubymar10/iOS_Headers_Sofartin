@@ -4,17 +4,17 @@
 
 @interface SAMPQueueState : AceObject <SABackgroundContextObject>
 
-@property(assign,copy) NSString * applicationIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAMPMediaItem * listeningToItem;
-@property(assign,retain) SANPCommandInfo * nowPlayingCommandInfo;
-@property(assign,retain) SAMPNowPlayingQueuePosition * playbackQueuePosition;
-@property(assign,copy) NSNumber * playbackRate;
-@property(assign,copy) NSString * source;
-@property(assign,readwrite) int state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *applicationIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAMPMediaItem *listeningToItem;
+@property (nonatomic, retain) SANPCommandInfo *nowPlayingCommandInfo;
+@property (nonatomic, retain) SAMPNowPlayingQueuePosition *playbackQueuePosition;
+@property (nonatomic, copy) NSNumber *playbackRate;
+@property (nonatomic, copy) NSString *source;
+@property (nonatomic) int state;
+@property (readonly) Class superclass;
 
 + (id)queueState;
 + (id)queueStateWithDictionary:(id)arg1 context:(id)arg2;

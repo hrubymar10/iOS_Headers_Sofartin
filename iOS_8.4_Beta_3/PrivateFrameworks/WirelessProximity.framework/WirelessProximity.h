@@ -8,13 +8,13 @@
     int _state;
 }
 
-@property(assign,retain) XPCClient * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <WirelessProximityDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) XPCClient *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <WirelessProximityDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int state;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)connection;

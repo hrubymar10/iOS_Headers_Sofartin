@@ -12,13 +12,13 @@
     NSMutableArray *_viewControllers;
 }
 
-@property(assign,readonly) UIControl * backstopControl;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIOverlayContainerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * viewControllers;
+@property (nonatomic, readonly) UIControl *backstopControl;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIOverlayContainerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, copy) NSArray *viewControllers;
 
 - (void).cxx_destruct;
 - (void)_fadeInViewController:(id)arg1 withCompletionBlock:(id)arg2;

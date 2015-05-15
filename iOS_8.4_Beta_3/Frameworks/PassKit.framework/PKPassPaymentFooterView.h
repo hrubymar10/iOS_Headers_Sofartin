@@ -10,8 +10,8 @@
     long long _state;
 }
 
-@property(assign,retain) PKPassView * passView;
-@property(assign,readonly) long long state;
+@property (nonatomic, retain) PKPassView *passView;
+@property (nonatomic, readonly) long long state;
 
 - (void)_configureForState:(long long)arg1 withPassView:(id)arg2;
 - (void)_deleteButtonTapped;

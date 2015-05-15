@@ -26,20 +26,20 @@
     double _verticalSpaceNeededForRatingView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * providerName;
-@property(assign,retain) UIView * providerView;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } providerViewOffset;
-@property(assign,readwrite) long long reviewCharacterLimit;
-@property(assign,retain) SALocalSearchReviewList * reviewList;
-@property(assign,readwrite) <SiriUIReviewsViewControllerDelegate> * reviewsDelegate;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIView * totalRatingView;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } totalRatingViewOffset;
-@property(assign,readwrite) double verticalSpaceNeededForRatingView;
-@property(assign,retain) UICollectionView * view;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *providerName;
+@property (nonatomic, retain) UIView *providerView;
+@property (nonatomic) struct UIOffset { double x1; double x2; } providerViewOffset;
+@property (nonatomic) long long reviewCharacterLimit;
+@property (nonatomic, retain) SALocalSearchReviewList *reviewList;
+@property (nonatomic) <SiriUIReviewsViewControllerDelegate> *reviewsDelegate;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIView *totalRatingView;
+@property (nonatomic) struct UIOffset { double x1; double x2; } totalRatingViewOffset;
+@property (nonatomic) double verticalSpaceNeededForRatingView;
+@property (nonatomic, retain) UICollectionView *view;
 
 - (void).cxx_destruct;
 - (id)_displayStringForReviewCount:(long long)arg1 providerName:(id)arg2 providerView:(id)arg3;

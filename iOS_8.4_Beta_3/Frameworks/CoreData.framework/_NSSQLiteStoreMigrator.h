@@ -20,7 +20,7 @@
     NSMutableDictionary *_transformedEntityMigrations;
 }
 
-@property(assign,readonly) NSSQLAdapter * adapter;
+@property (readonly) NSSQLAdapter *adapter;
 
 + (bool)_annotatesMigrationMetadata;
 + (void)_setAnnotatesMigrationMetadata:(bool)arg1;

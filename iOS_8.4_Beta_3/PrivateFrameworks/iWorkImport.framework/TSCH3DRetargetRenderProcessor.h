@@ -6,7 +6,7 @@
     TSCH3DRenderProcessor *mOriginal;
 }
 
-@property(assign,retain) TSCH3DRenderProcessor * original;
+@property (nonatomic, retain) TSCH3DRenderProcessor *original;
 
 + (id)processorWithOriginal:(id)arg1;
 

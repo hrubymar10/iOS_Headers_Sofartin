@@ -11,10 +11,10 @@
     } _size;
 }
 
-@property(assign,readonly) struct CGContext { }* CGContext;
-@property(assign,readonly) UIImage * image;
-@property(assign,readonly) double scale;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) struct CGContext { }*CGContext;
+@property (nonatomic, readonly) UIImage *image;
+@property (nonatomic, readonly) double scale;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
 
 + (id)drawWithSize:(struct CGSize { double x1; double x2; })arg1 scale:(double)arg2 options:(unsigned int)arg3 usingBlock:(id)arg4;
 + (id)imageFromRawPixelsAtURL:(id)arg1;

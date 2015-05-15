@@ -6,8 +6,8 @@
     NSString *_title;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) NSString *title;
 
 + (id)_backgroundImage;
 + (id)_highlightedBackgroundImage;

@@ -6,7 +6,7 @@
     NSUUID *_objectUUID;
 }
 
-@property(assign,retain) NSUUID * objectUUID;
+@property (nonatomic, retain) NSUUID *objectUUID;
 
 - (void).cxx_destruct;
 - (id)objectUUID;

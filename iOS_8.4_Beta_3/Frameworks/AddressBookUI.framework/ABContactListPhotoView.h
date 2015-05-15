@@ -8,9 +8,9 @@
     ABStyleProvider *_styleProvider;
 }
 
-@property(assign,retain) ABUIPerson * person;
-@property(assign,readwrite) void* record;
-@property(assign,retain) ABStyleProvider * styleProvider;
+@property (nonatomic, retain) ABUIPerson *person;
+@property (nonatomic) void*record;
+@property (nonatomic, retain) ABStyleProvider *styleProvider;
 
 - (id)_framedPhoto;
 - (void)dealloc;

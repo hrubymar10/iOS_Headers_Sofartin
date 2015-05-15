@@ -8,8 +8,8 @@
     TKVibrationPickerViewController *_vibrationPickerViewController;
 }
 
-@property(setter=_setSaveButton:,assign,retain) UIBarButtonItem * _saveButton;
-@property(assign,retain) TKVibrationPickerViewController * vibrationPickerViewController;
+@property (setter=_setSaveButton:, nonatomic, retain) UIBarButtonItem *_saveButton;
+@property (nonatomic, readonly, retain) TKVibrationPickerViewController *vibrationPickerViewController;
 
 - (void)_getRotationContentSettings:(struct { bool x1; bool x2; bool x3; bool x4; bool x5; double x6; int x7; }*)arg1;
 - (id)_saveButton;

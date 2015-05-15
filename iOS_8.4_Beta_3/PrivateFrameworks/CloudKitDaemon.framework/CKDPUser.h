@@ -10,16 +10,16 @@
     CKDPProtectionInfo *_protectionInfo;
 }
 
-@property(assign,retain) CKDPUserAlias * alias;
-@property(assign,retain) NSString * firstName;
-@property(assign,readonly) bool hasAlias;
-@property(assign,readonly) bool hasFirstName;
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,readonly) bool hasLastName;
-@property(assign,readonly) bool hasProtectionInfo;
-@property(assign,retain) CKDPIdentifier * identifier;
-@property(assign,retain) NSString * lastName;
-@property(assign,retain) CKDPProtectionInfo * protectionInfo;
+@property (nonatomic, retain) CKDPUserAlias *alias;
+@property (nonatomic, retain) NSString *firstName;
+@property (nonatomic, readonly) bool hasAlias;
+@property (nonatomic, readonly) bool hasFirstName;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, readonly) bool hasLastName;
+@property (nonatomic, readonly) bool hasProtectionInfo;
+@property (nonatomic, retain) CKDPIdentifier *identifier;
+@property (nonatomic, retain) NSString *lastName;
+@property (nonatomic, retain) CKDPProtectionInfo *protectionInfo;
 
 - (void).cxx_destruct;
 - (id)alias;

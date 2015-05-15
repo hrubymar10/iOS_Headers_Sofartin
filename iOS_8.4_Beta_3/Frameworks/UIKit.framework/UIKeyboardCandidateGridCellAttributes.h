@@ -27,19 +27,19 @@
     } _visualStyling;
 }
 
-@property(assign,retain) NSIndexPath * candidateIndexPath;
-@property(assign,readwrite) unsigned long long candidateNumber;
-@property(assign,readwrite) int candidatesVisualStyle;
-@property(assign,readwrite) bool dummy;
-@property(assign,readwrite) unsigned long long edges;
-@property(assign,readwrite) bool emphasizedAppearance;
-@property(assign,readwrite) bool groupHeader;
-@property(assign,readwrite) bool groupShowsAlternativeText;
-@property(assign,readwrite) bool needsPaddingForIndexScrubber;
-@property(assign,readwrite) unsigned long long rowIndex;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } rowSize;
-@property(assign,readwrite) bool secondaryCandidateAppearance;
-@property(assign,readwrite) struct { unsigned int x1 : 6; unsigned int x2 : 1; unsigned int x3 : 1; unsigned int x4 : 8; unsigned int x5 : 16; } visualStyling;
+@property (nonatomic, retain) NSIndexPath *candidateIndexPath;
+@property (nonatomic) unsigned long long candidateNumber;
+@property (nonatomic) int candidatesVisualStyle;
+@property (nonatomic) bool dummy;
+@property (nonatomic) unsigned long long edges;
+@property (nonatomic) bool emphasizedAppearance;
+@property (nonatomic) bool groupHeader;
+@property (nonatomic) bool groupShowsAlternativeText;
+@property (nonatomic) bool needsPaddingForIndexScrubber;
+@property (nonatomic) unsigned long long rowIndex;
+@property (nonatomic) struct CGSize { double x1; double x2; } rowSize;
+@property (nonatomic) bool secondaryCandidateAppearance;
+@property (nonatomic) struct { unsigned int x1 : 6; unsigned int x2 : 1; unsigned int x3 : 1; unsigned int x4 : 8; unsigned int x5 : 16; } visualStyling;
 
 - (id)candidateIndexPath;
 - (unsigned long long)candidateNumber;

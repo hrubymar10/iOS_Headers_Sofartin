@@ -14,13 +14,13 @@
     NSMutableOrderedSet *_uncommittedContainers;
 }
 
-@property(assign,readonly) NSSet * assetUUIDs;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUSearchResultDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=isFinished,assign,readonly) bool finished;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSSet *assetUUIDs;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUSearchResultDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=isFinished, nonatomic, readonly) bool finished;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_inqClearPendingChanges;

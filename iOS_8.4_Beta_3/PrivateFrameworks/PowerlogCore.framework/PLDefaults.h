@@ -9,10 +9,10 @@
     NSMutableDictionary *_userPrefsCache;
 }
 
-@property(assign,readwrite) bool debugEnabled;
-@property(assign,retain) NSMutableDictionary * instancePrefsCache;
-@property(assign,retain) NSMutableDictionary * managedPrefsCache;
-@property(assign,retain) NSMutableDictionary * userPrefsCache;
+@property bool debugEnabled;
+@property (retain) NSMutableDictionary *instancePrefsCache;
+@property (retain) NSMutableDictionary *managedPrefsCache;
+@property (retain) NSMutableDictionary *userPrefsCache;
 
 + (bool)boolForKey:(id)arg1;
 + (bool)boolForKey:(id)arg1 ifNotSet:(bool)arg2;

@@ -10,11 +10,11 @@
     NSArray *_prefetchedDownloadProperties;
 }
 
-@property(assign,copy) NSArray * downloadKinds;
-@property(assign,copy) NSString * persistenceIdentifier;
-@property(assign,copy) NSArray * prefetchedDownloadExternalProperties;
-@property(assign,copy) NSArray * prefetchedDownloadProperties;
-@property(assign,readwrite) bool shouldFilterExternalOriginatedDownloads;
+@property (nonatomic, copy) NSArray *downloadKinds;
+@property (nonatomic, copy) NSString *persistenceIdentifier;
+@property (nonatomic, copy) NSArray *prefetchedDownloadExternalProperties;
+@property (nonatomic, copy) NSArray *prefetchedDownloadProperties;
+@property (nonatomic) bool shouldFilterExternalOriginatedDownloads;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

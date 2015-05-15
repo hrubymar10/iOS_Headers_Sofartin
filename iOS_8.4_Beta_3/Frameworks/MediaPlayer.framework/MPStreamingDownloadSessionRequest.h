@@ -12,14 +12,14 @@
     long long _storeAdamID;
 }
 
-@property(assign,copy) NSString * buyParameters;
-@property(assign,readonly) long long endpointType;
-@property(assign,retain) MPMediaPlaybackItemMetadata * playbackItemMetadata;
-@property(assign,readwrite) unsigned long long preferredAssetQuality;
-@property(assign,readwrite) bool shouldStartLeaseSession;
-@property(assign,readwrite) bool shouldUseAccountLessStreaming;
-@property(assign,readonly) long long storeAdamID;
-@property(assign,readonly) bool usesSubscriptionLease;
+@property (nonatomic, readonly, copy) NSString *buyParameters;
+@property (nonatomic, readonly) long long endpointType;
+@property (nonatomic, retain) MPMediaPlaybackItemMetadata *playbackItemMetadata;
+@property (nonatomic) unsigned long long preferredAssetQuality;
+@property (nonatomic) bool shouldStartLeaseSession;
+@property (nonatomic) bool shouldUseAccountLessStreaming;
+@property (nonatomic, readonly) long long storeAdamID;
+@property (nonatomic, readonly) bool usesSubscriptionLease;
 
 - (void).cxx_destruct;
 - (id)buyParameters;

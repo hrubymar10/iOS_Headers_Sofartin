@@ -9,10 +9,10 @@
     long long _priority;
 }
 
-@property(assign,copy) NSDictionary * extendedAttributes;
-@property(assign,readwrite) bool isDirectory;
-@property(assign,copy) NSString * path;
-@property(assign,readwrite) long long priority;
+@property (nonatomic, copy) NSDictionary *extendedAttributes;
+@property (nonatomic) bool isDirectory;
+@property (nonatomic, copy) NSString *path;
+@property (nonatomic) long long priority;
 
 + (id)fileInfoWithPath:(id)arg1 extendedAttributes:(id)arg2;
 

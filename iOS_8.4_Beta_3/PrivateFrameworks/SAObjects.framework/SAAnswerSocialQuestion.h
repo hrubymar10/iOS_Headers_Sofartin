@@ -4,7 +4,7 @@
 
 @interface SAAnswerSocialQuestion : SAAnswerAbstractSocialPost
 
-@property(assign,copy) NSArray * socialAnswers;
+@property (nonatomic, copy) NSArray *socialAnswers;
 
 + (id)socialQuestion;
 + (id)socialQuestionWithDictionary:(id)arg1 context:(id)arg2;

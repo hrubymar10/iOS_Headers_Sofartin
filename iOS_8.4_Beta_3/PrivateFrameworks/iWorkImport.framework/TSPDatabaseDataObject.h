@@ -6,7 +6,7 @@
     TSPData *_data;
 }
 
-@property(assign,readonly) TSPData * data;
+@property (nonatomic, readonly) TSPData *data;
 
 - (void).cxx_destruct;
 - (id)data;

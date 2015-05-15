@@ -10,7 +10,7 @@
     UIWindow *_window;
 }
 
-@property(assign,readonly) UIWindow * window;
+@property (nonatomic, readonly) UIWindow *window;
 
 + (double)statusBarOrientationAnimationDurationFrom:(long long)arg1 to:(long long)arg2;
 

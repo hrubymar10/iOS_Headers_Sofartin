@@ -14,15 +14,15 @@
     id _webShareRecordsCompletionBlock;
 }
 
-@property(assign,retain) NSMutableDictionary * recordErrors;
-@property(assign,retain) NSArray * recordIDsToShare;
-@property(assign,retain) NSArray * recordIDsToShareReadWrite;
-@property(assign,retain) NSArray * recordIDsToUnshare;
-@property(assign,copy) id recordSharedBlock;
-@property(assign,copy) id recordUnsharedBlock;
-@property(assign,retain) NSMutableArray * sharedRecordIDs;
-@property(assign,retain) NSMutableArray * unsharedRecordIDs;
-@property(assign,copy) id webShareRecordsCompletionBlock;
+@property (nonatomic, retain) NSMutableDictionary *recordErrors;
+@property (nonatomic, retain) NSArray *recordIDsToShare;
+@property (nonatomic, retain) NSArray *recordIDsToShareReadWrite;
+@property (nonatomic, retain) NSArray *recordIDsToUnshare;
+@property (nonatomic, copy) id recordSharedBlock;
+@property (nonatomic, copy) id recordUnsharedBlock;
+@property (nonatomic, retain) NSMutableArray *sharedRecordIDs;
+@property (nonatomic, retain) NSMutableArray *unsharedRecordIDs;
+@property (nonatomic, copy) id webShareRecordsCompletionBlock;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

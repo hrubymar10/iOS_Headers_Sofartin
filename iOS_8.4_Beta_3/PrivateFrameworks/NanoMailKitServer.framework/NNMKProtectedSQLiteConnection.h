@@ -8,9 +8,9 @@
     NSString *_protectedDatabasePath;
 }
 
-@property(assign,readonly) bool protectedDatabaseAttached;
-@property(assign,retain) NSString * protectedDatabaseName;
-@property(assign,retain) NSString * protectedDatabasePath;
+@property (nonatomic, readonly) bool protectedDatabaseAttached;
+@property (nonatomic, retain) NSString *protectedDatabaseName;
+@property (nonatomic, retain) NSString *protectedDatabasePath;
 
 - (void).cxx_destruct;
 - (id)_vfsModuleName;

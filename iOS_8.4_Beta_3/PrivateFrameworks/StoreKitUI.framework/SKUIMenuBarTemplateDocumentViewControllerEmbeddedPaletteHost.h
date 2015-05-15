@@ -6,7 +6,7 @@
     UIView *_titleView;
 }
 
-@property(assign,retain) UIView * titleView;
+@property (nonatomic, retain) UIView *titleView;
 
 - (void).cxx_destruct;
 - (void)layoutSubviews;

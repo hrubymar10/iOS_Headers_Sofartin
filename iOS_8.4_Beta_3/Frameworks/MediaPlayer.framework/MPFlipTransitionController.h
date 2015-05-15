@@ -17,9 +17,9 @@
     double _topMargin;
 }
 
-@property(assign,retain) UIView * fromView;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } toFrame;
-@property(assign,readwrite) double topMargin;
+@property (nonatomic, retain) UIView *fromView;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } toFrame;
+@property (nonatomic) double topMargin;
 
 - (void).cxx_destruct;
 - (id)_subtypeForTransitionType:(unsigned long long)arg1;

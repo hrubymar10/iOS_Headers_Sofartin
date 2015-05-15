@@ -6,13 +6,13 @@
     MusicEntityHorizontalLockupView *_lockupView;
 }
 
-@property(assign,retain) MusicEntityViewContentDescriptor * contentDescriptor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) <MusicEntityValueProviding> * entityValueProvider;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MusicEntityHorizontalLockupView * lockupView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) MusicEntityViewContentDescriptor *contentDescriptor;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) <MusicEntityValueProviding> *entityValueProvider;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MusicEntityHorizontalLockupView *lockupView;
+@property (readonly) Class superclass;
 
 + (Class)horizontalLockupViewClass;
 + (double)maximumHeightForContentDescriptor:(id)arg1 width:(double)arg2 traitCollection:(id)arg3;

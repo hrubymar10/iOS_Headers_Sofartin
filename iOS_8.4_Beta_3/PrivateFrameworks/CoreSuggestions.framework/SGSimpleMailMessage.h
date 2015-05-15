@@ -18,21 +18,21 @@
     NSArray *_to;
 }
 
-@property(assign,copy) NSArray * bcc;
-@property(assign,copy) NSString * body;
-@property(assign,copy) NSArray * cc;
-@property(assign,copy) NSDate * date;
-@property(assign,copy) SGSimpleNamedEmailAddress * from;
-@property(assign,readonly) NSArray * headers;
-@property(assign,copy) NSString * htmlBody;
-@property(assign,readwrite) bool isInhuman;
-@property(assign,readonly) SGSimpleNamedEmailAddress * mailingList;
-@property(assign,copy) NSString * messageId;
-@property(assign,copy) NSNumber * received;
-@property(assign,copy) SGSimpleNamedEmailAddress * replyTo;
-@property(assign,copy) NSString * subject;
-@property(assign,copy) NSArray * to;
-@property(assign,readonly) NSString * uniqueId;
+@property (nonatomic, copy) NSArray *bcc;
+@property (nonatomic, copy) NSString *body;
+@property (nonatomic, copy) NSArray *cc;
+@property (nonatomic, copy) NSDate *date;
+@property (nonatomic, copy) SGSimpleNamedEmailAddress *from;
+@property (nonatomic, readonly) NSArray *headers;
+@property (nonatomic, copy) NSString *htmlBody;
+@property (nonatomic) bool isInhuman;
+@property (nonatomic, readonly) SGSimpleNamedEmailAddress *mailingList;
+@property (nonatomic, copy) NSString *messageId;
+@property (nonatomic, copy) NSNumber *received;
+@property (nonatomic, copy) SGSimpleNamedEmailAddress *replyTo;
+@property (nonatomic, copy) NSString *subject;
+@property (nonatomic, copy) NSArray *to;
+@property (nonatomic, readonly) NSString *uniqueId;
 
 + (id)fromDictionary:(id)arg1;
 + (id)parseRfc822Headers:(id)arg1 htmlContent:(id)arg2;

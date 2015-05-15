@@ -11,12 +11,12 @@
     bool _tabBarBackgroundExtendsBehindPalette;
 }
 
-@property(getter=isAttached,assign,readwrite) bool attached;
-@property(getter=_backgroundView,assign,readonly) SKUIScrollingTabBarBackgroundView * backgroundView;
-@property(assign,readonly) UIView * contentView;
-@property(getter=_delegate,setter=_setDelegate:,assign,readwrite) <SKUIScrollingTabBarPaletteDelegate> * delegate;
-@property(assign,readonly) double paletteHeight;
-@property(assign,readwrite) bool tabBarBackgroundExtendsBehindPalette;
+@property (getter=isAttached, nonatomic) bool attached;
+@property (getter=_backgroundView, nonatomic, readonly) SKUIScrollingTabBarBackgroundView *backgroundView;
+@property (nonatomic, readonly) UIView *contentView;
+@property (getter=_delegate, setter=_setDelegate:, nonatomic) <SKUIScrollingTabBarPaletteDelegate> *delegate;
+@property (nonatomic, readonly) double paletteHeight;
+@property (nonatomic) bool tabBarBackgroundExtendsBehindPalette;
 
 - (void).cxx_destruct;
 - (id)_backgroundView;

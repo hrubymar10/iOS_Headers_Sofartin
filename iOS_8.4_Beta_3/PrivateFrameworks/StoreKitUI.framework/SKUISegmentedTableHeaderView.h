@@ -8,9 +8,9 @@
     UIView *_segmentedControl;
 }
 
-@property(assign,readonly) _UIBackdropView * backdropView;
-@property(assign,readwrite) bool hidesBorderView;
-@property(assign,retain) UIView * segmentedControl;
+@property (nonatomic, readonly) _UIBackdropView *backdropView;
+@property (nonatomic) bool hidesBorderView;
+@property (nonatomic, retain) UIView *segmentedControl;
 
 - (void).cxx_destruct;
 - (id)_borderView;

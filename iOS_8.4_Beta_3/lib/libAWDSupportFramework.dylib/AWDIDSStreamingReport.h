@@ -24,26 +24,26 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned long long bytesReceived;
-@property(assign,readwrite) unsigned long long bytesSent;
-@property(assign,retain) NSString * guid;
-@property(assign,readwrite) bool hasBytesReceived;
-@property(assign,readwrite) bool hasBytesSent;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasPacketsReceived;
-@property(assign,readwrite) bool hasPacketsSent;
-@property(assign,readwrite) bool hasPriority;
-@property(assign,readwrite) bool hasSamplingInterval;
-@property(assign,readonly) bool hasService;
-@property(assign,readonly) bool hasStreamName;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long packetsReceived;
-@property(assign,readwrite) unsigned long long packetsSent;
-@property(assign,readwrite) unsigned long long priority;
-@property(assign,readwrite) unsigned long long samplingInterval;
-@property(assign,retain) NSString * service;
-@property(assign,retain) NSString * streamName;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned long long bytesReceived;
+@property (nonatomic) unsigned long long bytesSent;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic) bool hasBytesReceived;
+@property (nonatomic) bool hasBytesSent;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasPacketsReceived;
+@property (nonatomic) bool hasPacketsSent;
+@property (nonatomic) bool hasPriority;
+@property (nonatomic) bool hasSamplingInterval;
+@property (nonatomic, readonly) bool hasService;
+@property (nonatomic, readonly) bool hasStreamName;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long packetsReceived;
+@property (nonatomic) unsigned long long packetsSent;
+@property (nonatomic) unsigned long long priority;
+@property (nonatomic) unsigned long long samplingInterval;
+@property (nonatomic, retain) NSString *service;
+@property (nonatomic, retain) NSString *streamName;
+@property (nonatomic) unsigned long long timestamp;
 
 - (unsigned long long)bytesReceived;
 - (unsigned long long)bytesSent;

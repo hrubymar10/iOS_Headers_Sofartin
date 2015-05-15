@@ -11,7 +11,7 @@
     NSObject<OS_xpc_object> *_responseListener;
 }
 
-@property(getter=isCanceled,assign,readonly) bool canceled;
+@property (getter=isCanceled, readonly) bool canceled;
 
 - (void)_callServicesMethod:(id)arg1 arguments:(id)arg2 callback:(id)arg3;
 - (void)_callServicesMethod:(id)arg1 arguments:(id)arg2 replyHandler:(id)arg3;

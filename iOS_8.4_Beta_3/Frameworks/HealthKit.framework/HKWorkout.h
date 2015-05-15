@@ -12,17 +12,17 @@
     NSArray *_workoutEvents;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double duration;
-@property(getter=_goal,setter=_setGoal:,assign,retain) HKQuantity * goal;
-@property(getter=_goalType,setter=_setGoalType:,assign,readwrite) unsigned long long goalType;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) HKQuantity * totalDistance;
-@property(assign,readonly) HKQuantity * totalEnergyBurned;
-@property(assign,readonly) unsigned long long workoutActivityType;
-@property(assign,copy) NSArray * workoutEvents;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) double duration;
+@property (getter=_goal, setter=_setGoal:, nonatomic, retain) HKQuantity *goal;
+@property (getter=_goalType, setter=_setGoalType:, nonatomic) unsigned long long goalType;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (readonly) HKQuantity *totalDistance;
+@property (readonly) HKQuantity *totalEnergyBurned;
+@property (readonly) unsigned long long workoutActivityType;
+@property (readonly, copy) NSArray *workoutEvents;
 
 + (unsigned long long)FU_associatedMetricForGoalType:(unsigned long long)arg1;
 + (bool)FU_isHeartRateSupportedForActivityType:(unsigned long long)arg1 isIndoor:(bool)arg2;

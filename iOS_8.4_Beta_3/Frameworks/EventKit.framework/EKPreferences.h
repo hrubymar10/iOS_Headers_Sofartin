@@ -6,8 +6,8 @@
     CalPreferences *_preferences;
 }
 
-@property(assign,readwrite) bool enableTravelAdvisoriesForAutomaticBehavior;
-@property(assign,readwrite) double travelEngineThrottlePeriod;
+@property (nonatomic) bool enableTravelAdvisoriesForAutomaticBehavior;
+@property (nonatomic) double travelEngineThrottlePeriod;
 
 + (id)shared;
 

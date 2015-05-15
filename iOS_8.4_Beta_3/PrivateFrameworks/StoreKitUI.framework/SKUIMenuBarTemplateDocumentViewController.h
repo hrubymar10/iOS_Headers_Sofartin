@@ -20,13 +20,13 @@
     SKUIMenuBarTemplateElement *_templateElement;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIScrollView * scrollingTabNestedPagingScrollView;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIView * titleView;
-@property(assign,readonly) double titleViewHeight;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIScrollView *scrollingTabNestedPagingScrollView;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UIView *titleView;
+@property (nonatomic, readonly) double titleViewHeight;
 
 - (void).cxx_destruct;
 - (void)_addContentViewController:(id)arg1;

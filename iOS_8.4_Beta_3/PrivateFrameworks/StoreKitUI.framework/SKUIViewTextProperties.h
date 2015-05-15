@@ -8,9 +8,9 @@
     double _firstBaselineOffset;
 }
 
-@property(assign,readwrite) double baselineOffsetFromBottom;
-@property(assign,readwrite) double desiredOffsetTop;
-@property(assign,readwrite) double firstBaselineOffset;
+@property (nonatomic) double baselineOffsetFromBottom;
+@property (nonatomic) double desiredOffsetTop;
+@property (nonatomic) double firstBaselineOffset;
 
 - (double)baselineOffsetFromBottom;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

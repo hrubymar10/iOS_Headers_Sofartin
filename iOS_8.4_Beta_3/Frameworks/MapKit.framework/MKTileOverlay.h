@@ -16,20 +16,20 @@
     } _tileSize;
 }
 
-@property(assign,readonly) NSString * URLTemplate;
-@property(assign,readonly) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } boundingMapRect;
-@property(assign,readwrite) bool canReplaceMapContent;
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isGeometryFlipped,assign,readwrite) bool geometryFlipped;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long maximumZ;
-@property(assign,readwrite) long long minimumZ;
-@property(assign,copy) NSString * subtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } tileSize;
-@property(assign,copy) NSString * title;
+@property (readonly) NSString *URLTemplate;
+@property (nonatomic, readonly) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } boundingMapRect;
+@property (nonatomic) bool canReplaceMapContent;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isGeometryFlipped) bool geometryFlipped;
+@property (readonly) unsigned long long hash;
+@property long long maximumZ;
+@property long long minimumZ;
+@property (nonatomic, readonly, copy) NSString *subtitle;
+@property (readonly) Class superclass;
+@property struct CGSize { double x1; double x2; } tileSize;
+@property (nonatomic, readonly, copy) NSString *title;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

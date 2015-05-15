@@ -8,12 +8,12 @@
     MPPMediaPredicate *_thenPredicate;
 }
 
-@property(assign,retain) MPPMediaPredicate * conditionalPredicate;
-@property(assign,retain) MPPMediaPredicate * elsePredicate;
-@property(assign,readonly) bool hasConditionalPredicate;
-@property(assign,readonly) bool hasElsePredicate;
-@property(assign,readonly) bool hasThenPredicate;
-@property(assign,retain) MPPMediaPredicate * thenPredicate;
+@property (nonatomic, retain) MPPMediaPredicate *conditionalPredicate;
+@property (nonatomic, retain) MPPMediaPredicate *elsePredicate;
+@property (nonatomic, readonly) bool hasConditionalPredicate;
+@property (nonatomic, readonly) bool hasElsePredicate;
+@property (nonatomic, readonly) bool hasThenPredicate;
+@property (nonatomic, retain) MPPMediaPredicate *thenPredicate;
 
 - (void).cxx_destruct;
 - (id)conditionalPredicate;

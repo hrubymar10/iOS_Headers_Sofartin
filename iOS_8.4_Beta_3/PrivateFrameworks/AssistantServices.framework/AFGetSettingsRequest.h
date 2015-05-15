@@ -6,7 +6,7 @@
     NSArray *_settings;
 }
 
-@property(assign,copy) NSArray * settings;
+@property (nonatomic, copy) NSArray *settings;
 
 + (bool)supportsSecureCoding;
 

@@ -17,8 +17,8 @@
     } _timer;
 }
 
-@property(assign,readwrite) unsigned int currentPageNumber;
-@property(assign,readwrite) unsigned int pageCount;
+@property (nonatomic) unsigned int currentPageNumber;
+@property (nonatomic) unsigned int pageCount;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

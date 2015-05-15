@@ -6,7 +6,7 @@
     NSData *_data;
 }
 
-@property(assign,retain) NSData * data;
+@property (nonatomic, retain) NSData *data;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

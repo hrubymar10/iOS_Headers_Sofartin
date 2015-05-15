@@ -26,15 +26,15 @@
     WebFrame *_webFrame;
 }
 
-@property(assign,retain) NSString * URLString;
-@property(assign,retain) UIWebBrowserView * browserView;
-@property(assign,retain) UIPrintFormatter * contentFormatter;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool printFooter;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) WebFrame * webFrame;
+@property (nonatomic, retain) NSString *URLString;
+@property (nonatomic, retain) UIWebBrowserView *browserView;
+@property (nonatomic, retain) UIPrintFormatter *contentFormatter;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool printFooter;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) WebFrame *webFrame;
 
 - (void).cxx_destruct;
 - (id)URLString;

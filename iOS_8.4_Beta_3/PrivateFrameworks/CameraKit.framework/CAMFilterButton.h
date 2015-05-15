@@ -12,9 +12,9 @@
     } _tappableEdgeInsets;
 }
 
-@property(assign,readonly) UIImageView * _circlesImageView;
-@property(getter=isOn,assign,readwrite) bool on;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } tappableEdgeInsets;
+@property (nonatomic, readonly) UIImageView *_circlesImageView;
+@property (getter=isOn, nonatomic) bool on;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } tappableEdgeInsets;
 
 + (id)filterButton;
 

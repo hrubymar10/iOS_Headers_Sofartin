@@ -32,20 +32,20 @@
     UISwitch *_wantsPublicWebsiteSwitch;
 }
 
-@property(setter=_setLastMultiContributorsSectionFooterTitle:,assign,copy) NSString * _lastMultiContributorsSectionFooterTitle;
-@property(setter=_setLastPublicURLSectionFooterTitle:,assign,copy) NSString * _lastPublicURLSectionFooterTitle;
-@property(setter=_setSelectedSubscriberInvitationRecord:,assign,retain) PLCloudSharedAlbumInvitationRecord * _selectedSubscriberInvitationRecord;
-@property(setter=_setShouldScrollToTopOnNextViewLayout:,assign,readwrite) bool _shouldScrollToTopOnNextViewLayout;
-@property(assign,retain) PLCloudSharedAlbum * album;
-@property(assign,readwrite) bool albumIsFamilyStream;
-@property(assign,copy) NSString * albumName;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PLAlbumStreamingOptionsViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isPresentedModally;
-@property(assign,readwrite) bool streamOwner;
-@property(assign,readonly) Class superclass;
+@property (setter=_setLastMultiContributorsSectionFooterTitle:, nonatomic, copy) NSString *_lastMultiContributorsSectionFooterTitle;
+@property (setter=_setLastPublicURLSectionFooterTitle:, nonatomic, copy) NSString *_lastPublicURLSectionFooterTitle;
+@property (setter=_setSelectedSubscriberInvitationRecord:, nonatomic, retain) PLCloudSharedAlbumInvitationRecord *_selectedSubscriberInvitationRecord;
+@property (setter=_setShouldScrollToTopOnNextViewLayout:, nonatomic) bool _shouldScrollToTopOnNextViewLayout;
+@property (nonatomic, retain) PLCloudSharedAlbum *album;
+@property (nonatomic) bool albumIsFamilyStream;
+@property (nonatomic, copy) NSString *albumName;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PLAlbumStreamingOptionsViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isPresentedModally;
+@property (nonatomic) bool streamOwner;
+@property (readonly) Class superclass;
 
 - (bool)_appAllowsSupressionOfAlerts;
 - (void)_cancelAction:(id)arg1;

@@ -16,18 +16,18 @@
     NSUUID *_uuid;
 }
 
-@property(assign,readonly) NSString * binaryVersion;
-@property(assign,readonly) NSString * bundleIdentifier;
-@property(assign,readonly) NSString * bundleShortVersion;
-@property(assign,readonly) NSString * bundleVersion;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * name;
-@property(assign,retain) NSString * path;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long textSegmentLength;
-@property(assign,readonly) NSUUID * uuid;
+@property (readonly) NSString *binaryVersion;
+@property (readonly) NSString *bundleIdentifier;
+@property (readonly) NSString *bundleShortVersion;
+@property (readonly) NSString *bundleVersion;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSString *name;
+@property (retain) NSString *path;
+@property (readonly) Class superclass;
+@property (readonly) unsigned long long textSegmentLength;
+@property (readonly) NSUUID *uuid;
 
 + (id)classDictionaryKey;
 + (id)newInstanceWithoutReferencesFromBufferPosition:(const void*)arg1;

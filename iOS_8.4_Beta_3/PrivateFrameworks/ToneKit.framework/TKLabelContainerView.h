@@ -12,13 +12,13 @@
     } _labelPaddingInsets;
 }
 
-@property(setter=_setLabel:,assign,retain) UILabel * _label;
-@property(assign,retain) UIFont * labelFont;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } labelPaddingInsets;
-@property(assign,retain) UIColor * labelShadowColor;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } labelShadowOffset;
-@property(assign,copy) NSString * labelText;
-@property(assign,retain) UIColor * labelTextColor;
+@property (setter=_setLabel:, nonatomic, retain) UILabel *_label;
+@property (nonatomic, retain) UIFont *labelFont;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } labelPaddingInsets;
+@property (nonatomic, retain) UIColor *labelShadowColor;
+@property (nonatomic) struct UIOffset { double x1; double x2; } labelShadowOffset;
+@property (nonatomic, copy) NSString *labelText;
+@property (nonatomic, retain) UIColor *labelTextColor;
 
 - (id)_label;
 - (void)_setLabel:(id)arg1;

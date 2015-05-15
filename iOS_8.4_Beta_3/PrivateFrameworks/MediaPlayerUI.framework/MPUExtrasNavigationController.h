@@ -9,12 +9,12 @@
     MPUExtrasLoadingView *_loadingView;
 }
 
-@property(assign,readonly) MPUExtrasContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MPUExtrasMainTemplateViewController * mainTemplateViewController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) MPUExtrasContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) MPUExtrasMainTemplateViewController *mainTemplateViewController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_dismissViewController:(id)arg1;

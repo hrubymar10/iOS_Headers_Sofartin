@@ -8,8 +8,8 @@
     UIImageView *_borderImageView;
 }
 
-@property(assign,copy) MPUBorderConfiguration * borderConfiguration;
-@property(assign,retain) MPUBorderDrawingCache * borderDrawingCache;
+@property (nonatomic, copy) MPUBorderConfiguration *borderConfiguration;
+@property (nonatomic, retain) MPUBorderDrawingCache *borderDrawingCache;
 
 - (void).cxx_destruct;
 - (void)_borderDrawingCacheWasInvalidated:(id)arg1;

@@ -6,7 +6,7 @@
     NSString *_failureDescription;
 }
 
-@property(assign,retain) NSString * failureDescription;
+@property (nonatomic, retain) NSString *failureDescription;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

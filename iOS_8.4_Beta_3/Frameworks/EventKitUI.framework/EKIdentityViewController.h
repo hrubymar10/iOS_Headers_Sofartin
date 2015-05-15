@@ -7,13 +7,13 @@
     ABPersonViewController *_personViewController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) <EKEditItemViewControllerDelegate> * editDelegate;
-@property(assign,readwrite) bool editItemShouldBeAskedForInjectableViewController;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool presentModally;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) <EKEditItemViewControllerDelegate> *editDelegate;
+@property (nonatomic) bool editItemShouldBeAskedForInjectableViewController;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool presentModally;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)initWithIdentity:(id)arg1;

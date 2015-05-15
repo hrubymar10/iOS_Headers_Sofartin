@@ -8,9 +8,9 @@
     CNMutableContact *_linkedContact;
 }
 
-@property(assign,retain) ABContactViewController * contactController;
-@property(assign,readwrite) <ABContactViewControllerDelegate> * contactDelegate;
-@property(assign,retain) CNMutableContact * linkedContact;
+@property (retain) ABContactViewController *contactController;
+@property <ABContactViewControllerDelegate> *contactDelegate;
+@property (retain) CNMutableContact *linkedContact;
 
 - (id)contactController;
 - (id)contactDelegate;

@@ -13,14 +13,14 @@
     UIView *_vibrantContainer;
 }
 
-@property(assign,retain) UIImageView * blurImageView;
-@property(assign,readonly) UIView * contentView;
-@property(assign,retain) NSMapTable * layerPinningViewMap;
-@property(assign,retain) MPUPinningView * maskedView;
-@property(assign,retain) UIView * plusDView;
-@property(assign,retain) UIView * tintingView;
-@property(assign,readwrite) bool vibrancyEnabled;
-@property(assign,retain) UIView * vibrantContainer;
+@property (nonatomic, retain) UIImageView *blurImageView;
+@property (nonatomic, readonly) UIView *contentView;
+@property (nonatomic, retain) NSMapTable *layerPinningViewMap;
+@property (nonatomic, retain) MPUPinningView *maskedView;
+@property (nonatomic, retain) UIView *plusDView;
+@property (nonatomic, retain) UIView *tintingView;
+@property (nonatomic) bool vibrancyEnabled;
+@property (nonatomic, retain) UIView *vibrantContainer;
 
 - (void).cxx_destruct;
 - (id)_layersNotWantingVibrancyForSubviewsOfView:(id)arg1;

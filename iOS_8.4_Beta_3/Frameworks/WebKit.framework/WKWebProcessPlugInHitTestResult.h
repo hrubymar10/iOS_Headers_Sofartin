@@ -10,12 +10,12 @@
     } _hitTestResult;
 }
 
-@property(assign,readonly) struct Object { int (**x1)(); id x2; }* _apiObject;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) WKWebProcessPlugInNodeHandle * nodeHandle;
-@property(assign,readonly) Class superclass;
+@property (readonly) struct Object { int (**x1)(); id x2; }*_apiObject;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) WKWebProcessPlugInNodeHandle *nodeHandle;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (struct Object { int (**x1)(); id x2; }*)_apiObject;

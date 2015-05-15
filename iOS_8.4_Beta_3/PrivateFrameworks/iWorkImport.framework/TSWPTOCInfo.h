@@ -10,11 +10,11 @@
     TSWPTOCSettings *_tocSettings;
 }
 
-@property(assign,retain) NSArray * pageNumberRanges;
-@property(assign,readonly) NSSet * paragraphStylesShownInTOC;
-@property(assign,readwrite) <TSWPTOCController> * tocController;
-@property(setter=setTOCEntries:,assign,retain) NSArray * tocEntries;
-@property(setter=setTOCSettings:,assign,retain) TSWPTOCSettings * tocSettings;
+@property (nonatomic, retain) NSArray *pageNumberRanges;
+@property (nonatomic, readonly) NSSet *paragraphStylesShownInTOC;
+@property (nonatomic) <TSWPTOCController> *tocController;
+@property (setter=setTOCEntries:, nonatomic, retain) NSArray *tocEntries;
+@property (setter=setTOCSettings:, nonatomic, retain) TSWPTOCSettings *tocSettings;
 
 + (bool)canPartition;
 

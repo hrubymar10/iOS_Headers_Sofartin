@@ -10,11 +10,11 @@
     PUZoomableGridViewControllerSpec *_zoomableGridViewControllerSpec;
 }
 
-@property(assign,readonly) PUAlbumListViewControllerSpec * albumListViewControllerSpec;
-@property(assign,readonly) PUAlbumListViewController * createAlbumListViewController;
-@property(assign,readonly) PUAlbumListViewController * createSharedAlbumListViewController;
-@property(assign,readonly) PUFeedViewControllerSpec * feedViewControllerSpec;
-@property(assign,readonly) PUZoomableGridViewControllerSpec * zoomableGridViewControllerSpec;
+@property (nonatomic, readonly) PUAlbumListViewControllerSpec *albumListViewControllerSpec;
+@property (nonatomic, readonly) PUAlbumListViewController *createAlbumListViewController;
+@property (nonatomic, readonly) PUAlbumListViewController *createSharedAlbumListViewController;
+@property (nonatomic, readonly) PUFeedViewControllerSpec *feedViewControllerSpec;
+@property (nonatomic, readonly) PUZoomableGridViewControllerSpec *zoomableGridViewControllerSpec;
 
 - (void).cxx_destruct;
 - (id)albumListViewControllerSpec;

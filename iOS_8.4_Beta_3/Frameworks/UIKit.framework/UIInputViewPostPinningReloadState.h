@@ -6,7 +6,7 @@
     UIResponder *_responderPreventedFromSettingInputViews;
 }
 
-@property(assign,retain) UIResponder * responderToReload;
+@property (nonatomic, retain) UIResponder *responderToReload;
 
 + (id)stateWithResponder:(id)arg1;
 

@@ -8,9 +8,9 @@
     id mObject;
 }
 
-@property(assign,retain) NSMutableArray * children;
-@property(assign,retain) id dataObject;
-@property(assign,retain) NSString * name;
+@property (nonatomic, retain) NSMutableArray *children;
+@property (nonatomic, retain) id dataObject;
+@property (nonatomic, retain) NSString *name;
 
 - (void)addChildWithName:(id)arg1 object:(id)arg2;
 - (void)addNode:(id)arg1 atIndex:(unsigned long long)arg2;

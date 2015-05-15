@@ -6,13 +6,13 @@
     AVVideoCompositionRenderContextInternal *_internal;
 }
 
-@property(assign,readonly) struct { double x1; double x2; double x3; double x4; } edgeWidths;
-@property(assign,readonly) bool highQualityRendering;
-@property(assign,readonly) struct { long long x1; long long x2; } pixelAspectRatio;
-@property(assign,readonly) float renderScale;
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } renderTransform;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) AVVideoComposition * videoComposition;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; double x4; } edgeWidths;
+@property (nonatomic, readonly) bool highQualityRendering;
+@property (nonatomic, readonly) struct { long long x1; long long x2; } pixelAspectRatio;
+@property (nonatomic, readonly) float renderScale;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } renderTransform;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) AVVideoComposition *videoComposition;
 
 + (id)renderContextPropertiesFromFigCompositor:(struct OpaqueFigVideoCompositor { }*)arg1;
 

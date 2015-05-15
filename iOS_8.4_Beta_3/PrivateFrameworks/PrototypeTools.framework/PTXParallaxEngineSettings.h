@@ -22,23 +22,23 @@
     double _sigmoidDegree;
 }
 
-@property(assign,readwrite) double delayBeforeIdle;
-@property(assign,readwrite) bool directionalLockEnabled;
-@property(assign,readwrite) double directionalLockSharpness;
-@property(assign,readwrite) double directionalLockStickiness;
-@property(assign,readwrite) double directionalLockThreshold;
-@property(assign,readwrite) unsigned long long frameInterval;
-@property(assign,readwrite) double idleLeeway;
-@property(assign,readwrite) double inputSmoothing;
-@property(assign,readwrite) bool jumpEnabled;
-@property(assign,readwrite) double jumpThreshold;
-@property(assign,readwrite) bool playJumpSound;
-@property(assign,readwrite) double shiftDistanceDependence;
-@property(assign,readwrite) bool shiftEnabled;
-@property(assign,readwrite) double shiftSpeed;
-@property(assign,readwrite) bool showDirectionalLockIndicators;
-@property(assign,readwrite) bool showIdleIndicator;
-@property(assign,readwrite) double sigmoidDegree;
+@property double delayBeforeIdle;
+@property bool directionalLockEnabled;
+@property double directionalLockSharpness;
+@property double directionalLockStickiness;
+@property double directionalLockThreshold;
+@property unsigned long long frameInterval;
+@property double idleLeeway;
+@property double inputSmoothing;
+@property bool jumpEnabled;
+@property double jumpThreshold;
+@property bool playJumpSound;
+@property double shiftDistanceDependence;
+@property bool shiftEnabled;
+@property double shiftSpeed;
+@property bool showDirectionalLockIndicators;
+@property bool showIdleIndicator;
+@property double sigmoidDegree;
 
 + (id)settingsControllerModule;
 

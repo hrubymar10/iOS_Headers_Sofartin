@@ -9,9 +9,9 @@
     UIImage *_repairedImage;
 }
 
-@property(assign,copy) NSMutableArray * eyePoints;
-@property(assign,retain) UIImage * repairSourceImage;
-@property(assign,retain) UIImage * repairedImage;
+@property (nonatomic, copy) NSMutableArray *eyePoints;
+@property (nonatomic, retain) UIImage *repairSourceImage;
+@property (nonatomic, retain) UIImage *repairedImage;
 
 + (id)addAutoRedEyeCorrection:(id)arg1 toLayerData:(id)arg2 maskSize:(struct CGSize { double x1; double x2; })arg3 newTimestampIncrement:(double*)arg4;
 + (long long)indexOfPointNear:(struct CGPoint { double x1; double x2; })arg1 inEyePoints:(id)arg2 andMaskSize:(struct CGSize { double x1; double x2; })arg3;

@@ -7,9 +7,9 @@
     unsigned int _resultCode;
 }
 
-@property(assign,readonly) bool hasResponseDictionary;
-@property(assign,retain) NSData * responseDictionary;
-@property(assign,readwrite) unsigned int resultCode;
+@property (nonatomic, readonly) bool hasResponseDictionary;
+@property (nonatomic, retain) NSData *responseDictionary;
+@property (nonatomic) unsigned int resultCode;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

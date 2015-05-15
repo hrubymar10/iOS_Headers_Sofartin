@@ -6,7 +6,7 @@
     NSData *_activationData;
 }
 
-@property(assign,retain) NSData * activationData;
+@property (nonatomic, retain) NSData *activationData;
 
 - (void).cxx_destruct;
 - (id)activationData;

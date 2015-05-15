@@ -9,10 +9,10 @@
     id _referencedObject;
 }
 
-@property(assign,readwrite) bool didScheduleDealloc;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) unsigned long long referenceCount;
-@property(assign,retain) id referencedObject;
+@property (nonatomic) bool didScheduleDealloc;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) unsigned long long referenceCount;
+@property (nonatomic, retain) id referencedObject;
 
 - (void).cxx_destruct;
 - (bool)didScheduleDealloc;

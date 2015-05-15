@@ -6,11 +6,11 @@
     _IDSSession *_internal;
 }
 
-@property(assign,readwrite) long long invitationTimeOut;
-@property(assign,readwrite) bool isAudioEnabled;
-@property(assign,readwrite) bool isMuted;
-@property(assign,readonly) unsigned int sessionEndedReason;
-@property(assign,readonly) int socket;
+@property (nonatomic) long long invitationTimeOut;
+@property (nonatomic) bool isAudioEnabled;
+@property (nonatomic) bool isMuted;
+@property (nonatomic, readonly) unsigned int sessionEndedReason;
+@property (nonatomic, readonly) int socket;
 
 - (id)_initWithAccount:(id)arg1 destinations:(id)arg2 transportType:(long long)arg3 uniqueID:(id)arg4;
 - (id)_internal;

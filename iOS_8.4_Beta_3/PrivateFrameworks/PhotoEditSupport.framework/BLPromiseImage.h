@@ -25,7 +25,7 @@
     BLCropModel *_userCropModel;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } sourceSize;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } sourceSize;
 
 + (void)convertXMP:(id)arg1 toAdjustments:(id)arg2 andAnalysis:(id)arg3 size:(struct CGSize { double x1; double x2; })arg4 image:(id)arg5 needsHistogram:(bool*)arg6;
 + (id)imageWithImage:(id)arg1;

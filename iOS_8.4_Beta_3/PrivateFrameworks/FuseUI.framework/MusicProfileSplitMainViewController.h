@@ -47,15 +47,15 @@
     bool _shouldShowStoreSegments;
 }
 
-@property(assign,retain) NSArray * allowedSegments;
-@property(assign,retain) MusicClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicProfileSplitMainViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool shouldAutomaticallySelectMyMusicSegment;
-@property(assign,readwrite) bool shouldShowStoreSegments;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSArray *allowedSegments;
+@property (nonatomic, retain) MusicClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicProfileSplitMainViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool shouldAutomaticallySelectMyMusicSegment;
+@property (nonatomic) bool shouldShowStoreSegments;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (struct CGPoint { double x1; double x2; })_adjustContentOffsetForBounds:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 inScrollView:(id)arg2;

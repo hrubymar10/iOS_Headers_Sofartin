@@ -6,7 +6,7 @@
     <GEOMapServiceTicket> *_ticket;
 }
 
-@property(assign,retain) <GEOMapServiceTicket> * ticket;
+@property (nonatomic, retain) <GEOMapServiceTicket> *ticket;
 
 - (void).cxx_destruct;
 - (void)_cancelTicket:(id)arg1;

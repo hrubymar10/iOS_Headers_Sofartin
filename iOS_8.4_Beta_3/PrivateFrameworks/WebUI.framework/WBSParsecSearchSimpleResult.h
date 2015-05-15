@@ -13,13 +13,13 @@
     NSNumber *_titleMaximumNumberOfLines;
 }
 
-@property(assign,readonly) NSString * descriptionLeadInText;
-@property(assign,readonly) NSNumber * descriptionMaximumNumberOfLines;
-@property(assign,readonly) bool descriptionTextCanWrap;
-@property(assign,readonly) NSString * footnote;
-@property(assign,readonly) bool hasMoreIcons;
-@property(assign,readonly) bool hasSingleLineDescriptionAndTitle;
-@property(assign,readonly) NSNumber * titleMaximumNumberOfLines;
+@property (nonatomic, readonly) NSString *descriptionLeadInText;
+@property (nonatomic, readonly) NSNumber *descriptionMaximumNumberOfLines;
+@property (nonatomic, readonly) bool descriptionTextCanWrap;
+@property (nonatomic, readonly) NSString *footnote;
+@property (nonatomic, readonly) bool hasMoreIcons;
+@property (nonatomic, readonly) bool hasSingleLineDescriptionAndTitle;
+@property (nonatomic, readonly) NSNumber *titleMaximumNumberOfLines;
 
 - (void).cxx_destruct;
 - (id)descriptionLeadInText;

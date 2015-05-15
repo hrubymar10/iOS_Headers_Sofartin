@@ -2,41 +2,41 @@
    Image: /System/Library/Frameworks/Foundation.framework/Foundation
  */
 
-@interface NSString : NSObject <CKRecordValue, CKShortDescription, NSCopying, NSMutableCopying, NSSecureCoding, PASerializable, PQLValuable, PQLValuable>
+@interface NSString : NSObject <CKRecordValue, CKShortDescription, NSCopying, NSMutableCopying, NSSecureCoding, PASerializable, PQLValuable>
 
-@property(assign,readonly) NSData * _FTDataFromBase64String;
-@property(assign,readonly) NSData * _FTDataFromHexString;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasMobileMeSuffix;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isAllCaps;
-@property(assign,readonly) unsigned long long length;
-@property(assign,readonly) NSString * mobileMeDomain;
-@property(assign,readonly) bool npkHasContent;
-@property(assign,copy) NSString * stringByRemovingPercentEncoding;
-@property(assign,readonly) NSString * stripMobileMSuffixIfPresent;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * tsu_UTIFilenameExtension;
-@property(assign,readonly) NSString * tsu_UTIFilenameExtension;
-@property(assign,readonly) NSString * tsu_pathUTI;
-@property(assign,readonly) NSString * tsu_pathUTI;
+@property (nonatomic, readonly) NSData *_FTDataFromBase64String;
+@property (nonatomic, readonly) NSData *_FTDataFromHexString;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasMobileMeSuffix;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isAllCaps;
+@property (readonly) unsigned long long length;
+@property (nonatomic, readonly) NSString *mobileMeDomain;
+@property (readonly) bool npkHasContent;
+@property (readonly, copy) NSString *stringByRemovingPercentEncoding;
+@property (nonatomic, readonly) NSString *stripMobileMSuffixIfPresent;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *tsu_UTIFilenameExtension;
+@property (nonatomic, readonly) NSString *tsu_UTIFilenameExtension;
+@property (nonatomic, readonly) NSString *tsu_pathUTI;
+@property (nonatomic, readonly) NSString *tsu_pathUTI;
 
 + (id)CDVPreconditionHeaderValueWithCTag:(id)arg1;
 + (id)CDVPreconditionHeaderValueWithCTag:(id)arg1 pathTag:(id)arg2;

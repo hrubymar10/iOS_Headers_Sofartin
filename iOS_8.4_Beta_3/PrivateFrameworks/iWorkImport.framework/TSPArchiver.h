@@ -20,23 +20,23 @@
     NSArray *_unknownMessages;
 }
 
-@property(assign,readonly) NSHashTable * aggregatedCommandToModelReferences;
-@property(assign,readonly) NSHashTable * aggregatedDataReferences;
-@property(assign,readonly) NSHashTable * aggregatedLazyReferences;
-@property(assign,readonly) NSHashTable * aggregatedStrongReferences;
-@property(assign,readonly) NSHashTable * aggregatedWeakReferences;
-@property(assign,readonly) NSHashTable * alternates;
-@property(assign,readonly) NSObject<OS_dispatch_group> * archiveGroup;
-@property(assign,readonly) unsigned long long documentReadVersion;
-@property(assign,readonly) unsigned long long documentWriteVersion;
-@property(assign,readonly) TSPObject * explicitComponentRootObject;
-@property(assign,readwrite) unsigned long long messageVersion;
-@property(assign,readonly) bool needsArchive;
-@property(assign,readonly) NSUUID * objectUUID;
-@property(assign,readonly) NSObject<OS_dispatch_group> * serializeGroup;
-@property(assign,readonly) NSObject<OS_dispatch_data> * serializedData;
-@property(assign,readonly) bool shouldSaveAlternates;
-@property(assign,readonly) bool success;
+@property (nonatomic, readonly) NSHashTable *aggregatedCommandToModelReferences;
+@property (nonatomic, readonly) NSHashTable *aggregatedDataReferences;
+@property (nonatomic, readonly) NSHashTable *aggregatedLazyReferences;
+@property (nonatomic, readonly) NSHashTable *aggregatedStrongReferences;
+@property (nonatomic, readonly) NSHashTable *aggregatedWeakReferences;
+@property (nonatomic, readonly) NSHashTable *alternates;
+@property (nonatomic, readonly) NSObject<OS_dispatch_group> *archiveGroup;
+@property (nonatomic, readonly) unsigned long long documentReadVersion;
+@property (nonatomic, readonly) unsigned long long documentWriteVersion;
+@property (nonatomic, readonly) TSPObject *explicitComponentRootObject;
+@property (nonatomic) unsigned long long messageVersion;
+@property (nonatomic, readonly) bool needsArchive;
+@property (nonatomic, readonly) NSUUID *objectUUID;
+@property (nonatomic, readonly) NSObject<OS_dispatch_group> *serializeGroup;
+@property (nonatomic, readonly) NSObject<OS_dispatch_data> *serializedData;
+@property (nonatomic, readonly) bool shouldSaveAlternates;
+@property (nonatomic, readonly) bool success;
 
 - (void).cxx_destruct;
 - (id)addAlternateForMessageVersion:(unsigned long long)arg1;

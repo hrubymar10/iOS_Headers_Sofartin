@@ -4,14 +4,14 @@
 
 @interface SASTPropertyListItem : AceObject <SASTTemplateItem>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) SAUIDecoratedText * decoratedTitle;
-@property(assign,copy) NSArray * decoratedValues;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSArray * values;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) SAUIDecoratedText *decoratedTitle;
+@property (nonatomic, copy) NSArray *decoratedValues;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSArray *values;
 
 + (id)propertyListItem;
 + (id)propertyListItemWithDictionary:(id)arg1 context:(id)arg2;

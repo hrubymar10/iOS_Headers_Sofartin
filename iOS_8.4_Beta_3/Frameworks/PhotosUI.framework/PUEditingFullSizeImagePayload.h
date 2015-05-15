@@ -8,9 +8,9 @@
     NSURL *_url;
 }
 
-@property(assign,readwrite) long long imageOrientation;
-@property(assign,retain) NSString * sandboxExtensionToken;
-@property(setter=setURL:,assign,retain) NSURL * url;
+@property (nonatomic) long long imageOrientation;
+@property (nonatomic, retain) NSString *sandboxExtensionToken;
+@property (setter=setURL:, nonatomic, retain) NSURL *url;
 
 + (bool)supportsSecureCoding;
 

@@ -17,16 +17,16 @@
     long long _int64Value;
 }
 
-@property(assign,readwrite) bool boolValue;
-@property(assign,readwrite) double doubleValue;
-@property(assign,readwrite) float floatValue;
-@property(assign,readwrite) bool hasBoolValue;
-@property(assign,readwrite) bool hasDoubleValue;
-@property(assign,readwrite) bool hasFloatValue;
-@property(assign,readwrite) bool hasInt32Value;
-@property(assign,readwrite) bool hasInt64Value;
-@property(assign,readwrite) int int32Value;
-@property(assign,readwrite) long long int64Value;
+@property (nonatomic) bool boolValue;
+@property (nonatomic) double doubleValue;
+@property (nonatomic) float floatValue;
+@property (nonatomic) bool hasBoolValue;
+@property (nonatomic) bool hasDoubleValue;
+@property (nonatomic) bool hasFloatValue;
+@property (nonatomic) bool hasInt32Value;
+@property (nonatomic) bool hasInt64Value;
+@property (nonatomic) int int32Value;
+@property (nonatomic) long long int64Value;
 
 - (bool)boolValue;
 - (void)copyTo:(id)arg1;

@@ -8,9 +8,9 @@
     NSString *_password;
 }
 
-@property(assign,retain) NSNumber * channel;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * password;
+@property (retain) NSNumber *channel;
+@property (copy) NSString *name;
+@property (copy) NSString *password;
 
 + (bool)supportsSecureCoding;
 

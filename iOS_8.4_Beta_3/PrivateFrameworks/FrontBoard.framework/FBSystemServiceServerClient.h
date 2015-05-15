@@ -9,11 +9,11 @@
     bool _uiApp;
 }
 
-@property(getter=isUIApp,assign,readwrite) bool UIApp;
-@property(assign,retain) NSString * bundleID;
-@property(assign,retain) NSString * bundlePath;
-@property(getter=isExtension,assign,readwrite) bool extension;
-@property(assign,readonly) int pid;
+@property (getter=isUIApp, nonatomic) bool UIApp;
+@property (nonatomic, readonly, retain) NSString *bundleID;
+@property (nonatomic, retain) NSString *bundlePath;
+@property (getter=isExtension, nonatomic) bool extension;
+@property (nonatomic, readonly) int pid;
 
 - (id)bundleID;
 - (id)bundlePath;

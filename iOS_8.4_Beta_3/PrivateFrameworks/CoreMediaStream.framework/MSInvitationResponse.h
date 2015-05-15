@@ -7,8 +7,8 @@
     MSShare *_invitation;
 }
 
-@property(assign,readwrite) bool accept;
-@property(assign,retain) MSShare * invitation;
+@property (nonatomic) bool accept;
+@property (nonatomic, retain) MSShare *invitation;
 
 + (id)responseWithInvitation:(id)arg1 accept:(bool)arg2;
 

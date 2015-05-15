@@ -14,7 +14,7 @@
     UIImage *_thumbnailImage;
 }
 
-@property(assign,readonly) UIImage * thumbnailImage;
+@property (readonly) UIImage *thumbnailImage;
 
 + (bool)canGenerateThumbnailForPreviewItem:(id)arg1;
 + (id)generatorForPreviewItem:(id)arg1 size:(struct CGSize { double x1; double x2; })arg2;

@@ -4,13 +4,13 @@
 
 @interface SANotificationObject : SADomainObject
 
-@property(assign,copy) NSString * applicationId;
-@property(assign,copy) NSDate * date;
-@property(assign,copy) NSNumber * dateIsAllDay;
-@property(assign,copy) NSDate * endDate;
-@property(assign,copy) NSDate * recencyDate;
-@property(assign,copy) NSString * timeZoneId;
-@property(assign,copy) NSString * type;
+@property (nonatomic, copy) NSString *applicationId;
+@property (nonatomic, copy) NSDate *date;
+@property (nonatomic, copy) NSNumber *dateIsAllDay;
+@property (nonatomic, copy) NSDate *endDate;
+@property (nonatomic, copy) NSDate *recencyDate;
+@property (nonatomic, copy) NSString *timeZoneId;
+@property (nonatomic, copy) NSString *type;
 
 + (id)object;
 + (id)objectWithDictionary:(id)arg1 context:(id)arg2;

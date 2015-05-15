@@ -19,20 +19,20 @@
     unsigned long long _totalItemCount;
 }
 
-@property(getter=isCancelled,assign,readwrite) bool cancelled;
-@property(assign,readwrite) unsigned long long completedItemCount;
-@property(assign,copy) NSArray * currentItemDescriptions;
-@property(assign,copy) NSArray * currentItems;
-@property(assign,copy) NSError * error;
-@property(getter=isFinished,assign,readwrite) bool finished;
-@property(assign,copy) NSString * localizedDescription;
-@property(assign,readwrite) double progress;
-@property(assign,copy) NSDictionary * properties;
-@property(getter=isRunning,assign,readwrite) bool running;
-@property(assign,readwrite) ATSession * session;
-@property(assign,copy) NSString * sessionGroupingKey;
-@property(assign,copy) NSString * sessionTaskIdentifier;
-@property(assign,readwrite) unsigned long long totalItemCount;
+@property (getter=isCancelled) bool cancelled;
+@property unsigned long long completedItemCount;
+@property (copy) NSArray *currentItemDescriptions;
+@property (copy) NSArray *currentItems;
+@property (copy) NSError *error;
+@property (getter=isFinished) bool finished;
+@property (copy) NSString *localizedDescription;
+@property double progress;
+@property (copy) NSDictionary *properties;
+@property (getter=isRunning) bool running;
+@property ATSession *session;
+@property (copy) NSString *sessionGroupingKey;
+@property (copy) NSString *sessionTaskIdentifier;
+@property unsigned long long totalItemCount;
 
 + (bool)supportsSecureCoding;
 

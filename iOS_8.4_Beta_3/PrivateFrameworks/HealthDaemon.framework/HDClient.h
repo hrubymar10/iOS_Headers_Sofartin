@@ -10,12 +10,12 @@
     NSString *_sourceBundleIdentifier;
 }
 
-@property(assign,readonly) NSString * applicationIdentifier;
-@property(assign,readonly) NSXPCConnection * connection;
-@property(assign,readonly) _HKEntitlements * entitlements;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) int processIdentifier;
-@property(assign,readonly) NSString * sourceBundleIdentifier;
+@property (readonly) NSString *applicationIdentifier;
+@property (readonly) NSXPCConnection *connection;
+@property (readonly) _HKEntitlements *entitlements;
+@property (readonly) NSString *name;
+@property (readonly) int processIdentifier;
+@property (readonly) NSString *sourceBundleIdentifier;
 
 - (void).cxx_destruct;
 - (id)_initWithConnection:(id)arg1 entitlements:(id)arg2;

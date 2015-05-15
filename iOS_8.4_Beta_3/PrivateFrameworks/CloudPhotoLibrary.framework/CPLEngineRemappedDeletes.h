@@ -4,11 +4,11 @@
 
 @interface CPLEngineRemappedDeletes : CPLEngineStorage <CPLAbstractObject>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (readonly) Class superclass;
 
 - (void)discardDeleteForRemappedRecordWithIdentifier:(id)arg1;
 - (bool)resetWithError:(id*)arg1;

@@ -7,8 +7,8 @@
     UIView *_separatorView;
 }
 
-@property(assign,retain) _UIBackdropView * backdropView;
-@property(assign,retain) UIView * separatorView;
+@property (nonatomic, retain) _UIBackdropView *backdropView;
+@property (nonatomic, retain) UIView *separatorView;
 
 - (id)backdropView;
 - (void)dealloc;

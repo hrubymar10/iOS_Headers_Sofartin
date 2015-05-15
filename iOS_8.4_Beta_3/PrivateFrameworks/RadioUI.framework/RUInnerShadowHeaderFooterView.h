@@ -13,8 +13,8 @@
     UIView *_shadowView;
 }
 
-@property(assign,retain) UIColor * shadowBackgroundColor;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } shadowEdgeInsets;
+@property (nonatomic, retain) UIColor *shadowBackgroundColor;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } shadowEdgeInsets;
 
 + (double)defaultInnerShadowRadius;
 

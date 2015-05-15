@@ -9,8 +9,8 @@
     PDMediaNode *mediaNode;
 }
 
-@property(assign,retain) PDAnimationInfoData * mediaData;
-@property(assign,retain) PDMediaNode * mediaNode;
+@property (nonatomic, retain) PDAnimationInfoData *mediaData;
+@property (nonatomic, retain) PDMediaNode *mediaNode;
 
 - (void)dealloc;
 - (id)entranceData;

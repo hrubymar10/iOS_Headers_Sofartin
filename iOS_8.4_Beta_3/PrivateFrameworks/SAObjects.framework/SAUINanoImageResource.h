@@ -4,10 +4,10 @@
 
 @interface SAUINanoImageResource : SAUIImageResource
 
-@property(assign,readwrite) bool backgroundNeeded;
-@property(assign,copy) NSString * imageDownloadType;
-@property(assign,retain) SAUIDecoratedText * monogram;
-@property(assign,copy) NSString * placeholderImage;
+@property (nonatomic) bool backgroundNeeded;
+@property (nonatomic, copy) NSString *imageDownloadType;
+@property (nonatomic, retain) SAUIDecoratedText *monogram;
+@property (nonatomic, copy) NSString *placeholderImage;
 
 + (id)nanoImageResource;
 + (id)nanoImageResourceWithDictionary:(id)arg1 context:(id)arg2;

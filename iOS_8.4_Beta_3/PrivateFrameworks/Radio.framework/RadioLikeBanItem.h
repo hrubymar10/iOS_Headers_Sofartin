@@ -11,12 +11,12 @@
     long long _type;
 }
 
-@property(assign,readonly) long long albumID;
-@property(assign,readonly) RadioArtworkCollection * artworkCollection;
-@property(assign,readonly) bool isSeed;
-@property(assign,copy) RadioSeedMetadata * seedMetadata;
-@property(assign,readonly) long long storeID;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) long long albumID;
+@property (nonatomic, readonly) RadioArtworkCollection *artworkCollection;
+@property (nonatomic, readonly) bool isSeed;
+@property (nonatomic, readonly, copy) RadioSeedMetadata *seedMetadata;
+@property (nonatomic, readonly) long long storeID;
+@property (nonatomic, readonly) long long type;
 
 - (void).cxx_destruct;
 - (long long)albumID;

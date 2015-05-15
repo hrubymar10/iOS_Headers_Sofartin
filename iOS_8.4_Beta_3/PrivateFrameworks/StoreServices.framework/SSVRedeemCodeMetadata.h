@@ -7,11 +7,11 @@
     NSString *_inputCode;
 }
 
-@property(assign,readonly) NSString * code;
-@property(assign,readonly) NSString * codeType;
-@property(assign,copy) NSString * inputCode;
-@property(assign,readonly) NSArray * items;
-@property(assign,readonly) NSDictionary * redeemCodeDictionary;
+@property (nonatomic, readonly) NSString *code;
+@property (nonatomic, readonly) NSString *codeType;
+@property (nonatomic, copy) NSString *inputCode;
+@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic, readonly) NSDictionary *redeemCodeDictionary;
 
 - (void).cxx_destruct;
 - (id)code;

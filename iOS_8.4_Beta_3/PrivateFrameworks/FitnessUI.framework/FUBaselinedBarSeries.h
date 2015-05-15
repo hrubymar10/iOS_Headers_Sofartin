@@ -13,14 +13,14 @@
     NSArray *_plotPoints;
 }
 
-@property(assign,retain) UIColor * barColor;
-@property(assign,retain) NSArray * barViews;
-@property(assign,readwrite) double barWidth;
-@property(assign,retain) NSNumber * baselineAbsoluteYPos;
-@property(assign,readwrite) double baselineGraphHeightPercent;
-@property(assign,readwrite) double baselineValue;
-@property(assign,readwrite) bool hideBarsBelowThreshold;
-@property(assign,retain) NSArray * plotPoints;
+@property (nonatomic, retain) UIColor *barColor;
+@property (nonatomic, retain) NSArray *barViews;
+@property (nonatomic) double barWidth;
+@property (nonatomic, retain) NSNumber *baselineAbsoluteYPos;
+@property (nonatomic) double baselineGraphHeightPercent;
+@property (nonatomic) double baselineValue;
+@property (nonatomic) bool hideBarsBelowThreshold;
+@property (nonatomic, retain) NSArray *plotPoints;
 
 - (void).cxx_destruct;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_baselinedRectBoundsForYValue:(double)arg1;

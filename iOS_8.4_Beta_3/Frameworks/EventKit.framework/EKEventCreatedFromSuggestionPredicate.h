@@ -6,11 +6,11 @@
     NSString *_opaqueKey;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * opaqueKey;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *opaqueKey;
+@property (readonly) Class superclass;
 
 + (bool)supportsSecureCoding;
 

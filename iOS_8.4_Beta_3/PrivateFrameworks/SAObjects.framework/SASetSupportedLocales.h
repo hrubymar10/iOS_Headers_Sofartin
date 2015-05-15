@@ -4,7 +4,7 @@
 
 @interface SASetSupportedLocales : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * locales;
+@property (nonatomic, copy) NSArray *locales;
 
 + (id)setSupportedLocales;
 + (id)setSupportedLocalesWithDictionary:(id)arg1 context:(id)arg2;

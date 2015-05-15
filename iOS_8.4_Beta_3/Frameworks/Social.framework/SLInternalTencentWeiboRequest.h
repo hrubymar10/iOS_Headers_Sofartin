@@ -6,7 +6,7 @@
     bool _shouldSign;
 }
 
-@property(assign,readwrite) bool shouldSign;
+@property bool shouldSign;
 
 - (void)_addAuthenticationParameters:(id)arg1;
 - (void)performRequestWithHandler:(id)arg1;

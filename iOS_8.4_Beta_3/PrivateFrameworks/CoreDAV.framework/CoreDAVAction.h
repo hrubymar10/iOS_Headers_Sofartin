@@ -8,9 +8,9 @@
     id _context;
 }
 
-@property(assign,readonly) int action;
-@property(assign,retain) id changeContext;
-@property(assign,readonly) id context;
+@property (nonatomic, readonly) int action;
+@property (nonatomic, retain) id changeContext;
+@property (nonatomic, readonly) id context;
 
 - (int)action;
 - (id)changeContext;

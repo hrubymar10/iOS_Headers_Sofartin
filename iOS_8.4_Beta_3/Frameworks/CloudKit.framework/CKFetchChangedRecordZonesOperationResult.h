@@ -7,8 +7,8 @@
     NSNumber *_status;
 }
 
-@property(assign,retain) CKServerChangeToken * serverChangeToken;
-@property(assign,retain) NSNumber * status;
+@property (nonatomic, retain) CKServerChangeToken *serverChangeToken;
+@property (nonatomic, retain) NSNumber *status;
 
 + (bool)supportsSecureCoding;
 

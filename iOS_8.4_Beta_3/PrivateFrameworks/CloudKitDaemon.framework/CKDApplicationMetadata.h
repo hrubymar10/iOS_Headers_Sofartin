@@ -7,8 +7,8 @@
     long long _isApplication;
 }
 
-@property(assign,retain) NSString * apsEnvironmentString;
-@property(assign,readwrite) long long isApplication;
+@property (nonatomic, retain) NSString *apsEnvironmentString;
+@property (nonatomic) long long isApplication;
 
 - (void).cxx_destruct;
 - (id)apsEnvironmentString;

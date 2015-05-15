@@ -8,13 +8,13 @@
     NSObject<OS_xpc_object> *_xpcReply;
 }
 
-@property(assign,readonly) bool clientWantsReply;
-@property(assign,retain) NSObject<OS_xpc_object> * connection;
-@property(assign,retain) NSObject<OS_xpc_object> * connection;
-@property(assign,retain) NSError * replyError;
-@property(assign,readonly) bool replyIsError;
-@property(assign,readwrite) NSObject<OS_xpc_object> * xpcReply;
-@property(assign,readwrite) NSObject<OS_xpc_object> * xpcReply;
+@property (nonatomic, readonly) bool clientWantsReply;
+@property (nonatomic, readonly, retain) NSObject<OS_xpc_object> *connection;
+@property (nonatomic, readonly, retain) NSObject<OS_xpc_object> *connection;
+@property (nonatomic, readonly, retain) NSError *replyError;
+@property (nonatomic, readonly) bool replyIsError;
+@property (nonatomic) NSObject<OS_xpc_object> *xpcReply;
+@property (nonatomic) NSObject<OS_xpc_object> *xpcReply;
 
 + (void)runDaemonSideWithXPCEvent:(id)arg1 connection:(id)arg2;
 

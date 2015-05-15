@@ -4,8 +4,8 @@
 
 @interface NSMutableData : NSData
 
-@property(assign,readwrite) unsigned long long length;
-@property(assign,readonly) void* mutableBytes;
+@property unsigned long long length;
+@property (readonly) void*mutableBytes;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)dataWithCapacity:(unsigned long long)arg1;

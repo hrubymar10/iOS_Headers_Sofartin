@@ -8,9 +8,9 @@
     GKBrush *_yesBrush;
 }
 
-@property(assign,retain) GKBrush * noBrush;
-@property(assign,retain) NSPredicate * predicate;
-@property(assign,retain) GKBrush * yesBrush;
+@property (nonatomic, retain) GKBrush *noBrush;
+@property (nonatomic, retain) NSPredicate *predicate;
+@property (nonatomic, retain) GKBrush *yesBrush;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

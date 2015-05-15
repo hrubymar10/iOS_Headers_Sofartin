@@ -10,8 +10,8 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *title;
 
 - (id)_textColor;
 - (void)dealloc;

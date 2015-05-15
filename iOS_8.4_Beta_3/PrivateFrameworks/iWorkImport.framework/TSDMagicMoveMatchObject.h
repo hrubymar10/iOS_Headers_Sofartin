@@ -18,13 +18,13 @@
     long long _zOrder;
 }
 
-@property(assign,retain) NSMutableDictionary * attributes;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } position;
-@property(assign,retain) TSDRep * rep;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } stringRange;
-@property(assign,retain) NSString * stringValue;
-@property(assign,readwrite) long long zOrder;
+@property (nonatomic, retain) NSMutableDictionary *attributes;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) struct CGPoint { double x1; double x2; } position;
+@property (nonatomic, retain) TSDRep *rep;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } stringRange;
+@property (nonatomic, retain) NSString *stringValue;
+@property (nonatomic) long long zOrder;
 
 + (id)matchObjectWithRep:(id)arg1 position:(struct CGPoint { double x1; double x2; })arg2;
 + (id)matchObjectWithTextRep:(id)arg1 position:(struct CGPoint { double x1; double x2; })arg2 stringValue:(id)arg3 stringRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg4;

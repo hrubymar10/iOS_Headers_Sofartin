@@ -20,13 +20,13 @@
     int mType;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } inControlPoint;
-@property(assign,readonly) bool isCollapsed;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } nodePoint;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } outControlPoint;
-@property(assign,readwrite) int reflectedState;
-@property(getter=isSelected,assign,readwrite) bool selected;
-@property(assign,readwrite) int type;
+@property (nonatomic) struct CGPoint { double x1; double x2; } inControlPoint;
+@property (nonatomic, readonly) bool isCollapsed;
+@property (nonatomic) struct CGPoint { double x1; double x2; } nodePoint;
+@property (nonatomic) struct CGPoint { double x1; double x2; } outControlPoint;
+@property (nonatomic) int reflectedState;
+@property (getter=isSelected, nonatomic) bool selected;
+@property (nonatomic) int type;
 
 + (id)bezierNodeWithPoint:(struct CGPoint { double x1; double x2; })arg1;
 + (id)bezierNodeWithPoint:(struct CGPoint { double x1; double x2; })arg1 inControlPoint:(struct CGPoint { double x1; double x2; })arg2 outControlPoint:(struct CGPoint { double x1; double x2; })arg3;

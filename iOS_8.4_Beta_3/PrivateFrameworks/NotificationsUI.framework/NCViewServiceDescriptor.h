@@ -7,8 +7,8 @@
     NSString *_viewControllerClassName;
 }
 
-@property(assign,copy) NSString * bundleIdentifier;
-@property(assign,copy) NSString * viewControllerClassName;
+@property (nonatomic, readonly, copy) NSString *bundleIdentifier;
+@property (nonatomic, readonly, copy) NSString *viewControllerClassName;
 
 + (id)descriptorWithViewControllerClassName:(id)arg1 bundleIdentifier:(id)arg2;
 + (bool)supportsSecureCoding;

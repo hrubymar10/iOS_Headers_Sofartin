@@ -6,8 +6,8 @@
     AVMutableCompositionInternal *_mutablePriv;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } naturalSize;
-@property(assign,readonly) NSArray * tracks;
+@property (nonatomic) struct CGSize { double x1; double x2; } naturalSize;
+@property (nonatomic, readonly) NSArray *tracks;
 
 + (id)composition;
 

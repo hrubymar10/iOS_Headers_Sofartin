@@ -19,9 +19,9 @@
     double _usageSessionIDGenerationTime;
 }
 
-@property(assign,retain) GEOUserSessionEntity * mapsUserSessionEntity;
-@property(assign,readwrite) bool shareSessionWithMaps;
-@property(assign,readonly) struct { unsigned long long x1; unsigned long long x2; } usageCollectionSessionID;
+@property (nonatomic, retain) GEOUserSessionEntity *mapsUserSessionEntity;
+@property bool shareSessionWithMaps;
+@property (readonly) struct { unsigned long long x1; unsigned long long x2; } usageCollectionSessionID;
 
 + (void)setIsGeod;
 + (id)sharedInstance;

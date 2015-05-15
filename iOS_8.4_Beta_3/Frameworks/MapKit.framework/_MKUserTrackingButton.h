@@ -10,14 +10,14 @@
     bool _selectsWhenTracking;
 }
 
-@property(assign,readonly) _MKUserTrackingButtonController * controller;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MKMapView * mapView;
-@property(getter=_selectsWhenTracking,setter=_setSelectsWhenTracking:,assign,readwrite) bool selectsWhenTracking;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) <MKUserTrackingView> * userTrackingView;
+@property (nonatomic, readonly) _MKUserTrackingButtonController *controller;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MKMapView *mapView;
+@property (getter=_selectsWhenTracking, setter=_setSelectsWhenTracking:, nonatomic) bool selectsWhenTracking;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) <MKUserTrackingView> *userTrackingView;
 
 + (Class)_activityIndicatorClass;
 + (id)buttonWithMapView:(id)arg1;

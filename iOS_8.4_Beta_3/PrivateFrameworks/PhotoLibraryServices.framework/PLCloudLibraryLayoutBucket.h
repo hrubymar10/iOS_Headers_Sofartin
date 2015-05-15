@@ -12,11 +12,11 @@
     id predicate;
 }
 
-@property(assign,readwrite) unsigned long long budgetShare;
-@property(assign,readonly) unsigned short category;
-@property(assign,readonly) NSString * name;
-@property(assign,copy) id predicate;
-@property(assign,readonly) unsigned long long totalAssetsCount;
+@property (nonatomic) unsigned long long budgetShare;
+@property (nonatomic, readonly) unsigned short category;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, copy) id predicate;
+@property (nonatomic, readonly) unsigned long long totalAssetsCount;
 
 - (unsigned long long)budgetShare;
 - (unsigned short)category;

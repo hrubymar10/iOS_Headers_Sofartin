@@ -6,7 +6,7 @@
     SKProductPageViewController *_parentProductPageViewController;
 }
 
-@property(assign,readwrite) SKProductPageViewController * parentProductPageViewController;
+@property (nonatomic) SKProductPageViewController *parentProductPageViewController;
 
 + (void)initialize;
 + (id)webScriptNameForSelector:(SEL)arg1;

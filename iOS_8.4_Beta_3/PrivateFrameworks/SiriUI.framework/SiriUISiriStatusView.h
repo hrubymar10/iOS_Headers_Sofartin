@@ -18,15 +18,15 @@
     double _waveyViewWidth;
 }
 
-@property(assign,readwrite) <SiriUISiriStatusViewAnimationDelegate> * animationDelegate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SiriUISiriStatusViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double disabledMicOpacity;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long mode;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double waveyViewWidth;
+@property (nonatomic) <SiriUISiriStatusViewAnimationDelegate> *animationDelegate;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SiriUISiriStatusViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double disabledMicOpacity;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long mode;
+@property (readonly) Class superclass;
+@property (nonatomic) double waveyViewWidth;
 
 + (double)statusViewHeightForWidthSizeClass:(bool)arg1;
 

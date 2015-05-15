@@ -6,7 +6,7 @@
     UIResponder<UITextInput> *_textView;
 }
 
-@property(assign,readwrite) UIResponder<UITextInput> * textView;
+@property UIResponder<UITextInput> *textView;
 
 - (bool)isCloseToSelection;
 - (void)setState:(long long)arg1;

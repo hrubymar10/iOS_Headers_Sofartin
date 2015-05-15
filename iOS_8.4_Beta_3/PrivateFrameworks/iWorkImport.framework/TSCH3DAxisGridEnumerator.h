@@ -6,8 +6,8 @@
     TSCHChartAxis *mAxis;
 }
 
-@property(assign,readonly) TSCHChartAxis * axis;
-@property(assign,readonly) int type;
+@property (nonatomic, readonly) TSCHChartAxis *axis;
+@property (nonatomic, readonly) int type;
 
 + (id)enumeratorWithAxis:(id)arg1;
 

@@ -13,14 +13,14 @@
     NSString *_textToCommit;
 }
 
-@property(assign,retain) TIKeyboardCandidate * acceptedCandidate;
-@property(assign,readwrite) unsigned long long deletionCount;
-@property(assign,readwrite) unsigned long long forwardDeletionCount;
-@property(assign,copy) NSIndexSet * handwritingStrokesToDelete;
-@property(assign,copy) NSString * insertionText;
-@property(assign,copy) NSString * insertionTextAfterSelection;
-@property(assign,retain) TIKeyboardCandidate * shortcutConversion;
-@property(assign,copy) NSString * textToCommit;
+@property (nonatomic, retain) TIKeyboardCandidate *acceptedCandidate;
+@property (nonatomic) unsigned long long deletionCount;
+@property (nonatomic) unsigned long long forwardDeletionCount;
+@property (nonatomic, copy) NSIndexSet *handwritingStrokesToDelete;
+@property (nonatomic, copy) NSString *insertionText;
+@property (nonatomic, copy) NSString *insertionTextAfterSelection;
+@property (nonatomic, retain) TIKeyboardCandidate *shortcutConversion;
+@property (nonatomic, copy) NSString *textToCommit;
 
 + (bool)supportsSecureCoding;
 

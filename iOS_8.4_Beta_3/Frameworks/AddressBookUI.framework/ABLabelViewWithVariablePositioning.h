@@ -9,9 +9,9 @@
     double _topPadding;
 }
 
-@property(assign,readwrite) double bottomPadding;
-@property(assign,readwrite) double horizontalPadding;
-@property(assign,readwrite) double topPadding;
+@property (nonatomic) double bottomPadding;
+@property (nonatomic) double horizontalPadding;
+@property (nonatomic) double topPadding;
 
 - (double)bottomPadding;
 - (void)dealloc;

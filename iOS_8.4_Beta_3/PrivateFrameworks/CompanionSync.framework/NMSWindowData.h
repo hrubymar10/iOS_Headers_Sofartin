@@ -20,11 +20,11 @@
     NSObject<OS_dispatch_queue> *_syncQ;
 }
 
-@property(assign,readonly) unsigned long long countOfAllMessagesInFlight;
-@property(assign,readonly) unsigned long long countOfPendingMessages;
-@property(assign,readonly) NSDate * dateOfNextMessageExpiry;
-@property(assign,readonly) NSArray * expiredMessageIDs;
-@property(assign,readonly) unsigned long long lengthOfAllMessagesInFlight;
+@property (nonatomic, readonly) unsigned long long countOfAllMessagesInFlight;
+@property (nonatomic, readonly) unsigned long long countOfPendingMessages;
+@property (nonatomic, readonly) NSDate *dateOfNextMessageExpiry;
+@property (nonatomic, readonly) NSArray *expiredMessageIDs;
+@property (nonatomic, readonly) unsigned long long lengthOfAllMessagesInFlight;
 
 - (void).cxx_destruct;
 - (int)_getSchemaVersion;

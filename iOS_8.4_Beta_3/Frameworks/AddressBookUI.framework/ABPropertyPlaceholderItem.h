@@ -6,8 +6,8 @@
     NSString *_property;
 }
 
-@property(assign,retain) NSString * property;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, retain) NSString *property;
+@property (nonatomic, readonly) NSString *title;
 
 - (id)initWithProperty:(id)arg1;
 - (id)property;

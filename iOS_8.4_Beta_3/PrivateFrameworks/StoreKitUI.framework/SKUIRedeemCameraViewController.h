@@ -14,13 +14,13 @@
     SKUIRedeem *_successfulRedeem;
 }
 
-@property(assign,readonly) long long category;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIRedeemCameraViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * initialCode;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) long long category;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIRedeemCameraViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *initialCode;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)SKUIRedeemCameraView:(id)arg1 textFieldDidChange:(id)arg2;

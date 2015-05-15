@@ -16,8 +16,8 @@
     } _textSize;
 }
 
-@property(assign,readwrite) long long count;
-@property(assign,readwrite) id owningView;
+@property (nonatomic) long long count;
+@property (nonatomic) id owningView;
 
 + (void)deallocImageCache;
 + (id)imageBadgeForCount:(long long)arg1;

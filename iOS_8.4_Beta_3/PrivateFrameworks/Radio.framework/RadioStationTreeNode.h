@@ -14,15 +14,15 @@
     NSDictionary *_stationTreeNodeDictionary;
 }
 
-@property(assign,copy) RadioArtworkCollection * artworkCollection;
-@property(assign,readonly) long long childNodeLoadingStyle;
-@property(assign,copy) NSArray * childNodes;
-@property(assign,readonly) long long displayStyle;
-@property(assign,readonly) bool hasAdditionalChildNodes;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) long long nodeID;
-@property(assign,copy) NSDictionary * stationDictionary;
-@property(assign,copy) NSDictionary * stationTreeNodeDictionary;
+@property (nonatomic, readonly, copy) RadioArtworkCollection *artworkCollection;
+@property (nonatomic, readonly) long long childNodeLoadingStyle;
+@property (nonatomic, readonly, copy) NSArray *childNodes;
+@property (nonatomic, readonly) long long displayStyle;
+@property (nonatomic, readonly) bool hasAdditionalChildNodes;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly) long long nodeID;
+@property (nonatomic, readonly, copy) NSDictionary *stationDictionary;
+@property (nonatomic, readonly, copy) NSDictionary *stationTreeNodeDictionary;
 
 - (void).cxx_destruct;
 - (id)artworkCollection;

@@ -8,8 +8,8 @@
     UIActivityIndicatorView *_progressIndicator;
 }
 
-@property(assign,readwrite) int backgroundColorType;
-@property(assign,copy) NSString * loadingText;
+@property int backgroundColorType;
+@property (copy) NSString *loadingText;
 
 - (void)_update;
 - (int)backgroundColorType;

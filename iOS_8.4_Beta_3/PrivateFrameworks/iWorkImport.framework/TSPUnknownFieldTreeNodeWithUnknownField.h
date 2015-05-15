@@ -6,7 +6,7 @@
     TSPUnknownField *_unknownField;
 }
 
-@property(assign,retain) TSPUnknownField * unknownField;
+@property (nonatomic, retain) TSPUnknownField *unknownField;
 
 - (void).cxx_destruct;
 - (void)setUnknownField:(id)arg1;

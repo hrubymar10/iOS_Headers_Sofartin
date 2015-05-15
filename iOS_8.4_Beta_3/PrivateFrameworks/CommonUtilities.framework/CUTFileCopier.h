@@ -14,15 +14,15 @@
     bool _shouldCancel;
 }
 
-@property(assign,readwrite) void* _BOMCopier;
-@property(assign,readwrite) <CUTFileCopierDelegate> * delegate;
-@property(assign,readonly) bool didErrorOccur;
-@property(assign,readonly) id identifier;
-@property(assign,readwrite) bool inProgress;
-@property(assign,readonly) NSURL * inputURL;
-@property(assign,readwrite) unsigned int operation;
-@property(assign,readonly) NSURL * outputURL;
-@property(assign,readonly) bool wasCancelled;
+@property void*_BOMCopier;
+@property <CUTFileCopierDelegate> *delegate;
+@property (nonatomic, readonly) bool didErrorOccur;
+@property (readonly) id identifier;
+@property bool inProgress;
+@property (readonly) NSURL *inputURL;
+@property unsigned int operation;
+@property (readonly) NSURL *outputURL;
+@property (nonatomic, readonly) bool wasCancelled;
 
 - (void*)_BOMCopier;
 - (void)_fillOutputURLFromInputURL;

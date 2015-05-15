@@ -4,9 +4,9 @@
 
 @interface IKGalleryTemplate : IKViewElement
 
-@property(assign,retain) IKBackgroundElement * background;
-@property(assign,retain) IKDocumentBannerElement * documentBanner;
-@property(assign,retain) IKGridElement * grid;
+@property (nonatomic, readonly, retain) IKBackgroundElement *background;
+@property (nonatomic, readonly, retain) IKDocumentBannerElement *documentBanner;
+@property (nonatomic, readonly, retain) IKGridElement *grid;
 
 - (id)background;
 - (id)documentBanner;

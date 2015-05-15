@@ -4,7 +4,7 @@
 
 @interface CKLocatingChatItem : CKBalloonChatItem
 
-@property(assign,copy) NSString * locationText;
+@property (nonatomic, readonly, copy) NSString *locationText;
 
 - (Class)balloonViewClass;
 - (void)configureBalloonView:(id)arg1;

@@ -10,12 +10,12 @@
     bool _useYardsForShortDistances;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) GEOPlace * place;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id updateHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) GEOPlace *place;
+@property (readonly) Class superclass;
+@property (copy) id updateHandler;
 
 + (bool)infoAvailable;
 

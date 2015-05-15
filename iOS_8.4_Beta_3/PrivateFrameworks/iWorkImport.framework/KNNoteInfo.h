@@ -18,24 +18,24 @@
     bool mShrinkTextForPrinting;
 }
 
-@property(getter=isAnchoredToText,assign,readonly) bool anchoredToText;
-@property(getter=isAttachedToBodyText,assign,readonly) bool attachedToBodyText;
-@property(assign,retain) TSWPStorage * containedStorage;
-@property(assign,readonly) long long contentWritingDirection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isFloatingAboveText,assign,readonly) bool floatingAboveText;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frameForPrinting;
-@property(assign,copy) TSDInfoGeometry * geometry;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInlineWithText,assign,readonly) bool inlineWithText;
-@property(assign,readwrite) bool matchesObjectPlaceholderGeometry;
-@property(assign,readwrite) TSPObject<TSDOwningAttachment> * owningAttachment;
-@property(assign,readonly) TSPObject<TSDOwningAttachment> * owningAttachmentNoRecurse;
-@property(assign,readwrite) NSObject<TSDContainerInfo> * parentInfo;
-@property(assign,readwrite) bool shrinkTextForPrinting;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) int verticalAlignment;
+@property (getter=isAnchoredToText, nonatomic, readonly) bool anchoredToText;
+@property (getter=isAttachedToBodyText, nonatomic, readonly) bool attachedToBodyText;
+@property (nonatomic, retain) TSWPStorage *containedStorage;
+@property (nonatomic, readonly) long long contentWritingDirection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isFloatingAboveText, nonatomic, readonly) bool floatingAboveText;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frameForPrinting;
+@property (nonatomic, copy) TSDInfoGeometry *geometry;
+@property (readonly) unsigned long long hash;
+@property (getter=isInlineWithText, nonatomic, readonly) bool inlineWithText;
+@property (nonatomic) bool matchesObjectPlaceholderGeometry;
+@property (nonatomic) TSPObject<TSDOwningAttachment> *owningAttachment;
+@property (nonatomic, readonly) TSPObject<TSDOwningAttachment> *owningAttachmentNoRecurse;
+@property (nonatomic) NSObject<TSDContainerInfo> *parentInfo;
+@property (nonatomic) bool shrinkTextForPrinting;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) int verticalAlignment;
 
 + (bool)needsObjectUUID;
 

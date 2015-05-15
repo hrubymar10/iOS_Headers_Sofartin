@@ -7,12 +7,12 @@
     NSDictionary *_redeemedCodes;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSArray * failedCodes;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * redeemedCodes;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSArray *failedCodes;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) NSArray *redeemedCodes;
+@property (readonly) Class superclass;
 
 - (id)copyXPCEncoding;
 - (void)dealloc;

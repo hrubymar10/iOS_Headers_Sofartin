@@ -6,13 +6,13 @@
     TSUColor *mColor;
 }
 
-@property(assign,readonly) struct CGColor { }* CGColor;
-@property(assign,readonly) double brightness;
-@property(assign,copy) TSUColor * color;
-@property(assign,readonly) double hue;
-@property(assign,readonly) double luminance;
-@property(assign,readonly) double opacity;
-@property(assign,readonly) double saturation;
+@property (nonatomic, readonly) struct CGColor { }*CGColor;
+@property (nonatomic, readonly) double brightness;
+@property (nonatomic, readonly, copy) TSUColor *color;
+@property (nonatomic, readonly) double hue;
+@property (nonatomic, readonly) double luminance;
+@property (nonatomic, readonly) double opacity;
+@property (nonatomic, readonly) double saturation;
 
 + (id)blackColor;
 + (id)blueColor;

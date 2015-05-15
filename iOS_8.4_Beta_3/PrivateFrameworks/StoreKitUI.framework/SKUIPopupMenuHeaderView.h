@@ -14,15 +14,15 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIPopupMenuDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * menuItemTitles;
-@property(assign,copy) NSString * menuLabelTitle;
-@property(assign,readwrite) long long selectedMenuItemIndex;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIPopupMenuDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *menuItemTitles;
+@property (nonatomic, copy) NSString *menuLabelTitle;
+@property (nonatomic) long long selectedMenuItemIndex;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_menuButtonAction:(id)arg1;

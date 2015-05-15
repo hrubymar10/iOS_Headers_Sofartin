@@ -6,7 +6,7 @@
     WebVisiblePosition *_webVisiblePosition;
 }
 
-@property(assign,retain) WebVisiblePosition * webVisiblePosition;
+@property (nonatomic, retain) WebVisiblePosition *webVisiblePosition;
 
 + (id)wrapWebVisiblePosition:(id)arg1;
 

@@ -7,8 +7,8 @@
     NSDictionary *_userInfo;
 }
 
-@property(getter=isRequestingImmediatePlayback,assign,readonly) bool requestingImmediatePlayback;
-@property(assign,readonly) NSDictionary * userInfo;
+@property (getter=isRequestingImmediatePlayback, nonatomic, readonly) bool requestingImmediatePlayback;
+@property (nonatomic, readonly) NSDictionary *userInfo;
 
 + (id)queueWithMediaRemotePlaybackQueue:(struct _MRSystemAppPlaybackQueue { }*)arg1;
 

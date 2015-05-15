@@ -38,23 +38,23 @@
     NSArray *_tileLayoutAttributes;
 }
 
-@property(assign,readwrite) long long firstJoinedSection;
-@property(assign,retain) NSArray * fixedLayoutAttributes;
-@property(assign,retain) NSArray * floatingLayoutAttributes;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } footerSize;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
-@property(assign,retain) id groupID;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } headerSize;
-@property(getter=isHidden,assign,readwrite) bool hidden;
-@property(assign,readwrite) long long lastJoinedSection;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } margins;
-@property(assign,readwrite) long long nextVisibleSection;
-@property(assign,readwrite) long long numberOfTilesOmitted;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } origin;
-@property(assign,readwrite) long long previousVisibleSection;
-@property(assign,readwrite) long long sectionType;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,retain) NSArray * tileLayoutAttributes;
+@property (nonatomic) long long firstJoinedSection;
+@property (nonatomic, retain) NSArray *fixedLayoutAttributes;
+@property (nonatomic, retain) NSArray *floatingLayoutAttributes;
+@property (nonatomic) struct CGSize { double x1; double x2; } footerSize;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
+@property (nonatomic, retain) id groupID;
+@property (nonatomic) struct CGSize { double x1; double x2; } headerSize;
+@property (getter=isHidden, nonatomic) bool hidden;
+@property (nonatomic) long long lastJoinedSection;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } margins;
+@property (nonatomic) long long nextVisibleSection;
+@property (nonatomic) long long numberOfTilesOmitted;
+@property (nonatomic) struct CGPoint { double x1; double x2; } origin;
+@property (nonatomic) long long previousVisibleSection;
+@property (nonatomic) long long sectionType;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, retain) NSArray *tileLayoutAttributes;
 
 - (void).cxx_destruct;
 - (long long)firstJoinedSection;

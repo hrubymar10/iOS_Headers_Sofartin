@@ -17,12 +17,12 @@
     } _unscaledPageSize;
 }
 
-@property(assign,readwrite) double footerInset;
-@property(assign,readwrite) double headerInset;
-@property(assign,readonly) double pageHeight;
-@property(assign,readonly) double pageWidth;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } printMargins;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } unscaledPageSize;
+@property (nonatomic) double footerInset;
+@property (nonatomic) double headerInset;
+@property (readonly) double pageHeight;
+@property (readonly) double pageWidth;
+@property struct UIEdgeInsets { double x1; double x2; double x3; double x4; } printMargins;
+@property struct CGSize { double x1; double x2; } unscaledPageSize;
 
 + (id)a4SizePrintProperties;
 + (id)legacyExportPrintProperties;

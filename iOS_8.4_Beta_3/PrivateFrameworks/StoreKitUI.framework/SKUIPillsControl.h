@@ -16,13 +16,13 @@
     NSArray *_titles;
 }
 
-@property(assign,copy) SKUIColorScheme * colorScheme;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,readwrite) long long maximumNumberOfVisiblePills;
-@property(assign,copy) NSString * moreListTitle;
-@property(assign,readwrite) long long selectedIndex;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } selectedPillFrame;
-@property(assign,copy) NSArray * titles;
+@property (nonatomic, copy) SKUIColorScheme *colorScheme;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic) long long maximumNumberOfVisiblePills;
+@property (nonatomic, copy) NSString *moreListTitle;
+@property (nonatomic) long long selectedIndex;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } selectedPillFrame;
+@property (nonatomic, copy) NSArray *titles;
 
 - (void).cxx_destruct;
 - (void)_segmentedControlAction:(id)arg1;

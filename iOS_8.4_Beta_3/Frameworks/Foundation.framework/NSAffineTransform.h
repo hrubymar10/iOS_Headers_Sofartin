@@ -13,7 +13,7 @@
     } _transformStruct;
 }
 
-@property(assign,readwrite) struct { double x1; double x2; double x3; double x4; double x5; double x6; } transformStruct;
+@property struct { double x1; double x2; double x3; double x4; double x5; double x6; } transformStruct;
 
 + (id)transform;
 

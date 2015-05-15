@@ -4,14 +4,14 @@
 
 @interface SADomainObjectUpdate : SABaseClientBoundCommand <SADomainObjectCommand>
 
-@property(assign,retain) SADomainObject * addFields;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SADomainObject * identifier;
-@property(assign,retain) SADomainObject * removeFields;
-@property(assign,retain) SADomainObject * setFields;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SADomainObject *addFields;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SADomainObject *identifier;
+@property (nonatomic, retain) SADomainObject *removeFields;
+@property (nonatomic, retain) SADomainObject *setFields;
+@property (readonly) Class superclass;
 
 + (id)domainObjectUpdate;
 + (id)domainObjectUpdateWithDictionary:(id)arg1 context:(id)arg2;

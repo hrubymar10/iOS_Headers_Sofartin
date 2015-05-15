@@ -6,7 +6,7 @@
     TSCH3DTextureResource *mTextureResource;
 }
 
-@property(assign,readonly) TSCH3DResource * resource;
+@property (nonatomic, readonly) TSCH3DResource *resource;
 
 - (bool)canLoadCachedFullMipmapBufferForDataCache:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -6,8 +6,8 @@
     CKDPIdentifier *_commentId;
 }
 
-@property(assign,retain) CKDPIdentifier * commentId;
-@property(assign,readonly) bool hasCommentId;
+@property (nonatomic, retain) CKDPIdentifier *commentId;
+@property (nonatomic, readonly) bool hasCommentId;
 
 + (id)options;
 

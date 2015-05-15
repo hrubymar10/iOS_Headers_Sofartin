@@ -16,27 +16,27 @@
     NSMutableArray *_signposts;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool hasJunctionType;
-@property(assign,readwrite) bool hasJunctionType;
-@property(assign,readwrite) bool hasManeuverType;
-@property(assign,readwrite) bool hasManeuverType;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct { int x1; int x2; int x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; }* junctionElements;
-@property(assign,readonly) struct { int x1; int x2; int x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; }* junctionElements;
-@property(assign,readonly) unsigned long long junctionElementsCount;
-@property(assign,readonly) unsigned long long junctionElementsCount;
-@property(assign,readwrite) int junctionType;
-@property(assign,readwrite) int junctionType;
-@property(assign,retain) NSMutableArray * maneuverNames;
-@property(assign,retain) NSMutableArray * maneuverNames;
-@property(assign,readwrite) int maneuverType;
-@property(assign,readwrite) int maneuverType;
-@property(assign,retain) NSMutableArray * signposts;
-@property(assign,retain) NSMutableArray * signposts;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) int transportType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool hasJunctionType;
+@property (nonatomic) bool hasJunctionType;
+@property (nonatomic) bool hasManeuverType;
+@property (nonatomic) bool hasManeuverType;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct { int x1; int x2; int x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; }*junctionElements;
+@property (nonatomic, readonly) struct { int x1; int x2; int x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; }*junctionElements;
+@property (nonatomic, readonly) unsigned long long junctionElementsCount;
+@property (nonatomic, readonly) unsigned long long junctionElementsCount;
+@property (nonatomic) int junctionType;
+@property (nonatomic) int junctionType;
+@property (nonatomic, retain) NSMutableArray *maneuverNames;
+@property (nonatomic, retain) NSMutableArray *maneuverNames;
+@property (nonatomic) int maneuverType;
+@property (nonatomic) int maneuverType;
+@property (nonatomic, retain) NSMutableArray *signposts;
+@property (nonatomic, retain) NSMutableArray *signposts;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) int transportType;
 
 - (void)addJunctionElement:(struct { int x1; int x2; int x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; })arg1;
 - (void)addManeuverName:(id)arg1;

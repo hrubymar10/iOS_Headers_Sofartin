@@ -13,19 +13,19 @@
     Class _viewSubclass;
 }
 
-@property(assign,retain) NSNumber * boxedSuppressesEmptyLabel;
-@property(assign,retain) NSNumber * boxedSuppressesLabel;
-@property(assign,retain) NSNumber * boxedTextAlignment;
-@property(assign,retain) NSNumber * boxedValueCanWrap;
-@property(assign,retain) NSNumber * boxedVerticalPadding;
-@property(assign,retain) UIFont * labelFont;
-@property(assign,readwrite) bool suppressesEmptyLabel;
-@property(assign,readwrite) bool suppressesLabel;
-@property(assign,readwrite) long long textAlignment;
-@property(assign,readwrite) bool valueCanWrap;
-@property(assign,retain) UIFont * valueFont;
-@property(assign,readwrite) double verticalPadding;
-@property(assign,retain) Class viewSubclass;
+@property (nonatomic, retain) NSNumber *boxedSuppressesEmptyLabel;
+@property (nonatomic, retain) NSNumber *boxedSuppressesLabel;
+@property (nonatomic, retain) NSNumber *boxedTextAlignment;
+@property (nonatomic, retain) NSNumber *boxedValueCanWrap;
+@property (nonatomic, retain) NSNumber *boxedVerticalPadding;
+@property (nonatomic, retain) UIFont *labelFont;
+@property (nonatomic) bool suppressesEmptyLabel;
+@property (nonatomic) bool suppressesLabel;
+@property (nonatomic) long long textAlignment;
+@property (nonatomic) bool valueCanWrap;
+@property (nonatomic, retain) UIFont *valueFont;
+@property (nonatomic) double verticalPadding;
+@property (nonatomic, retain) Class viewSubclass;
 
 + (id)_templateByResolvingTemplate:(id)arg1 withDefault:(id)arg2;
 + (id)fieldTemplateWithTextAlignment:(long long)arg1;

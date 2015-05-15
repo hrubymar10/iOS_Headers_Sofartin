@@ -7,7 +7,7 @@
     bool _statusBarWasHidden;
 }
 
-@property(assign,readonly) MPMoviePlayerController * moviePlayer;
+@property (nonatomic, readonly) MPMoviePlayerController *moviePlayer;
 
 - (void).cxx_destruct;
 - (bool)_canReloadView;

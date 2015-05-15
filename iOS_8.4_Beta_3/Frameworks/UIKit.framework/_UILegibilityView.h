@@ -15,18 +15,18 @@
     double _strength;
 }
 
-@property(assign,readwrite) bool hidesImage;
-@property(assign,retain) UIImage * image;
-@property(assign,retain) CAFilter * imageColorFilter;
-@property(assign,retain) UIImageView * imageView;
-@property(assign,readwrite) long long options;
-@property(assign,retain) _UILegibilitySettings * settings;
-@property(assign,retain) UIImage * shadowImage;
-@property(assign,retain) CAFilter * shadowImageColorFilter;
-@property(assign,retain) UIImageView * shadowImageView;
-@property(assign,readwrite) double strength;
-@property(assign,readonly) long long style;
-@property(assign,readonly) bool usesColorFilters;
+@property (nonatomic) bool hidesImage;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) CAFilter *imageColorFilter;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic) long long options;
+@property (nonatomic, retain) _UILegibilitySettings *settings;
+@property (nonatomic, retain) UIImage *shadowImage;
+@property (nonatomic, retain) CAFilter *shadowImageColorFilter;
+@property (nonatomic, retain) UIImageView *shadowImageView;
+@property (nonatomic) double strength;
+@property (nonatomic, readonly) long long style;
+@property (nonatomic, readonly) bool usesColorFilters;
 
 - (void)dealloc;
 - (id)drawingColor;

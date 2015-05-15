@@ -6,7 +6,7 @@
     GEOMapItemPhotosAttribution *_geoPhotosAttribution;
 }
 
-@property(assign,readonly) NSArray * addPhotoURLs;
+@property (nonatomic, readonly) NSArray *addPhotoURLs;
 
 - (void).cxx_destruct;
 - (id)addPhotoURLs;

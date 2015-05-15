@@ -8,7 +8,7 @@
     <HKEmergencyCardRowHeightChangeDelegate> *_rowHeightChangeDelegate;
 }
 
-@property(assign,readwrite) <HKEmergencyCardRowHeightChangeDelegate> * rowHeightChangeDelegate;
+@property (nonatomic) <HKEmergencyCardRowHeightChangeDelegate> *rowHeightChangeDelegate;
 
 - (void).cxx_destruct;
 - (id)_cell;

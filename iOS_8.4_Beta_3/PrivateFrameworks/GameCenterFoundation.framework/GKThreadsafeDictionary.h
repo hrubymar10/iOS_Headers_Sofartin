@@ -7,7 +7,7 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,retain) NSMutableDictionary * dictionary;
+@property (nonatomic, retain) NSMutableDictionary *dictionary;
 
 - (id)allKeys;
 - (id)allObjects;

@@ -4,20 +4,20 @@
 
 @interface SWRunWorkoutProxy : NSObject
 
-@property(assign,readonly) NSString * currentAlbumName;
-@property(assign,readonly) NSString * currentArtistName;
-@property(assign,readonly) NSString * currentSongName;
-@property(assign,readonly) float goal;
-@property(assign,readonly) NSString * goalType;
-@property(assign,readonly) bool hasEverStarted;
-@property(assign,readonly) bool hasPowerSong;
-@property(assign,readonly) long long musicSelection;
-@property(assign,readonly) NSString * powerSongName;
-@property(assign,readonly) NSString * presetGoal;
-@property(assign,readonly) NSString * sensorSearchState;
-@property(assign,readonly) bool shouldControlMusic;
-@property(assign,readonly) NSDictionary * workoutData;
-@property(assign,readonly) NSString * workoutState;
+@property (nonatomic, readonly) NSString *currentAlbumName;
+@property (nonatomic, readonly) NSString *currentArtistName;
+@property (nonatomic, readonly) NSString *currentSongName;
+@property (nonatomic, readonly) float goal;
+@property (nonatomic, readonly) NSString *goalType;
+@property (nonatomic, readonly) bool hasEverStarted;
+@property (nonatomic, readonly) bool hasPowerSong;
+@property (nonatomic, readonly) long long musicSelection;
+@property (nonatomic, readonly) NSString *powerSongName;
+@property (nonatomic, readonly) NSString *presetGoal;
+@property (nonatomic, readonly) NSString *sensorSearchState;
+@property (nonatomic, readonly) bool shouldControlMusic;
+@property (nonatomic, readonly) NSDictionary *workoutData;
+@property (nonatomic, readonly) NSString *workoutState;
 
 + (void)initialize;
 + (id)newProxy;

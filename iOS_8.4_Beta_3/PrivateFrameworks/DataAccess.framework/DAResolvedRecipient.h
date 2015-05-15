@@ -10,12 +10,12 @@
     long long _status;
 }
 
-@property(assign,readwrite) long long availabilityStatus;
-@property(assign,readwrite) long long certificatesStatus;
-@property(assign,retain) NSMutableDictionary * mResolvedEmailToX509Certs;
-@property(assign,retain) NSString * mergedFreeBusy;
-@property(assign,readonly) NSDictionary * resolvedEmailToX509Certs;
-@property(assign,readwrite) long long status;
+@property (nonatomic) long long availabilityStatus;
+@property (nonatomic) long long certificatesStatus;
+@property (nonatomic, retain) NSMutableDictionary *mResolvedEmailToX509Certs;
+@property (nonatomic, retain) NSString *mergedFreeBusy;
+@property (nonatomic, readonly) NSDictionary *resolvedEmailToX509Certs;
+@property (nonatomic) long long status;
 
 - (void).cxx_destruct;
 - (void)addCert:(id)arg1 forEmailAddress:(id)arg2;

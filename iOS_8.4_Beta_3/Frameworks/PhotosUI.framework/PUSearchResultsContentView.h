@@ -28,14 +28,14 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSString * auxSubtitle;
-@property(assign,readwrite) double clippingOffsetY;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,readwrite) double draggingOffsetX;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } imageSize;
-@property(assign,readwrite) unsigned long long maxImageCount;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSAttributedString * title;
+@property (nonatomic, copy) NSString *auxSubtitle;
+@property (nonatomic) double clippingOffsetY;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic) double draggingOffsetX;
+@property (nonatomic) struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic) unsigned long long maxImageCount;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSAttributedString *title;
 
 + (id)defaultAttributes;
 + (id)highlightedAttributes;

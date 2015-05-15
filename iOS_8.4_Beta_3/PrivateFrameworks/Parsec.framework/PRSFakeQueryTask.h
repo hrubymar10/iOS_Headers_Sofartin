@@ -6,7 +6,7 @@
     PRSSearchCompletionResultSet *_results;
 }
 
-@property(assign,retain) PRSSearchCompletionResultSet * results;
+@property (nonatomic, retain) PRSSearchCompletionResultSet *results;
 
 - (void).cxx_destruct;
 - (id)initWithSession:(id)arg1 handler:(id)arg2 queue:(id)arg3;

@@ -12,12 +12,12 @@
     unsigned int _verticalArrangement;
 }
 
-@property(assign,readwrite) double labelSpacing;
-@property(assign,readonly) UILabel * leftLabel;
-@property(assign,readwrite) bool reversesLabels;
-@property(assign,readonly) UILabel * rightLabel;
-@property(assign,readwrite) long long textAlignment;
-@property(assign,readwrite) bool verticalArrangement;
+@property (nonatomic) double labelSpacing;
+@property (nonatomic, readonly) UILabel *leftLabel;
+@property (nonatomic) bool reversesLabels;
+@property (nonatomic, readonly) UILabel *rightLabel;
+@property (nonatomic) long long textAlignment;
+@property (nonatomic) bool verticalArrangement;
 
 - (bool)_labelsNeedSizing;
 - (void)_sizeLabelsToFit;

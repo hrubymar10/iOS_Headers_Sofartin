@@ -6,10 +6,10 @@
     _IDSDeviceConnection *_internal;
 }
 
-@property(assign,retain) _IDSDeviceConnection * _internal;
-@property(assign,retain) NSInputStream * inputStream;
-@property(assign,retain) NSOutputStream * outputStream;
-@property(assign,readonly) int socket;
+@property (nonatomic, readonly, retain) _IDSDeviceConnection *_internal;
+@property (nonatomic, readonly, retain) NSInputStream *inputStream;
+@property (nonatomic, readonly, retain) NSOutputStream *outputStream;
+@property (nonatomic, readonly) int socket;
 
 - (id)_internal;
 - (void)close;

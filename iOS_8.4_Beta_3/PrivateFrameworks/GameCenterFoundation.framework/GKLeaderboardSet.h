@@ -6,11 +6,11 @@
     GKLeaderboardSetInternal *_internal;
 }
 
-@property(assign,retain) NSString * groupIdentifier;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) GKLeaderboardSetInternal * internal;
-@property(assign,retain) NSArray * leaderboardIdentifiers;
-@property(assign,copy) NSString * title;
+@property (nonatomic, readonly, retain) NSString *groupIdentifier;
+@property (nonatomic, copy) NSString *identifier;
+@property (retain) GKLeaderboardSetInternal *internal;
+@property (nonatomic, readonly, retain) NSArray *leaderboardIdentifiers;
+@property (nonatomic, copy) NSString *title;
 
 + (id)instanceMethodSignatureForSelector:(SEL)arg1;
 + (bool)instancesRespondToSelector:(SEL)arg1;

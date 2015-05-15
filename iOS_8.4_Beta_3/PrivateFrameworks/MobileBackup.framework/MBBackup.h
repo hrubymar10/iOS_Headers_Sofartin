@@ -12,13 +12,13 @@
     NSArray *_snapshots;
 }
 
-@property(assign,readonly) NSString * backupUDID;
-@property(assign,readonly) NSString * deviceClass;
-@property(assign,readonly) NSString * hardwareModel;
-@property(assign,readonly) NSString * marketingName;
-@property(assign,readonly) NSString * productType;
-@property(getter=canRestoreSystemFiles,assign,readonly) bool restoreSystemFiles;
-@property(assign,readonly) NSArray * snapshots;
+@property (nonatomic, readonly) NSString *backupUDID;
+@property (nonatomic, readonly) NSString *deviceClass;
+@property (nonatomic, readonly) NSString *hardwareModel;
+@property (nonatomic, readonly) NSString *marketingName;
+@property (nonatomic, readonly) NSString *productType;
+@property (getter=canRestoreSystemFiles, nonatomic, readonly) bool restoreSystemFiles;
+@property (nonatomic, readonly) NSArray *snapshots;
 
 - (id)backupUDID;
 - (bool)canRestoreSystemFiles;

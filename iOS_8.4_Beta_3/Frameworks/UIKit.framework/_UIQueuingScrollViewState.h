@@ -8,8 +8,8 @@
     UIViewController *_viewController;
 }
 
-@property(getter=isManual,assign,readonly) bool manual;
-@property(assign,readonly) UIView * view;
+@property (getter=isManual, nonatomic, readonly) bool manual;
+@property (nonatomic, readonly) UIView *view;
 
 - (void)dealloc;
 - (id)description;

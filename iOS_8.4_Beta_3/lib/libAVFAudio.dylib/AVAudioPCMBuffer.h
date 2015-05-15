@@ -4,12 +4,12 @@
 
 @interface AVAudioPCMBuffer : AVAudioBuffer
 
-@property(assign,readonly) float** floatChannelData;
-@property(assign,readonly) unsigned int frameCapacity;
-@property(assign,readwrite) unsigned int frameLength;
-@property(assign,readonly) short** int16ChannelData;
-@property(assign,readonly) int** int32ChannelData;
-@property(assign,readonly) unsigned long long stride;
+@property (nonatomic, readonly) float**floatChannelData;
+@property (nonatomic, readonly) unsigned int frameCapacity;
+@property (nonatomic) unsigned int frameLength;
+@property (nonatomic, readonly) short**int16ChannelData;
+@property (nonatomic, readonly) int**int32ChannelData;
+@property (nonatomic, readonly) unsigned long long stride;
 
 - (void)_initChannelPtrs;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

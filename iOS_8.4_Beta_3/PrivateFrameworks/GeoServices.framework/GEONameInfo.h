@@ -17,20 +17,20 @@
     int _signType;
 }
 
-@property(assign,readonly) bool hasLocale;
-@property(assign,readonly) bool hasName;
-@property(assign,readonly) bool hasPhoneticName;
-@property(assign,readwrite) bool hasPhoneticType;
-@property(assign,readonly) bool hasShield;
-@property(assign,readwrite) bool hasShieldType;
-@property(assign,readwrite) bool hasSignType;
-@property(assign,retain) NSString * locale;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * phoneticName;
-@property(assign,readwrite) int phoneticType;
-@property(assign,retain) NSString * shield;
-@property(assign,readwrite) int shieldType;
-@property(assign,readwrite) int signType;
+@property (nonatomic, readonly) bool hasLocale;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic, readonly) bool hasPhoneticName;
+@property (nonatomic) bool hasPhoneticType;
+@property (nonatomic, readonly) bool hasShield;
+@property (nonatomic) bool hasShieldType;
+@property (nonatomic) bool hasSignType;
+@property (nonatomic, retain) NSString *locale;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *phoneticName;
+@property (nonatomic) int phoneticType;
+@property (nonatomic, retain) NSString *shield;
+@property (nonatomic) int shieldType;
+@property (nonatomic) int signType;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

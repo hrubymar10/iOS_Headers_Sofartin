@@ -10,11 +10,11 @@
     NSNumber *_stepValue;
 }
 
-@property(assign,retain) NSNumber * maxLength;
-@property(assign,retain) NSNumber * maximumValue;
-@property(assign,retain) NSNumber * minLength;
-@property(assign,retain) NSNumber * minimumValue;
-@property(assign,retain) NSNumber * stepValue;
+@property (nonatomic, retain) NSNumber *maxLength;
+@property (nonatomic, retain) NSNumber *maximumValue;
+@property (nonatomic, retain) NSNumber *minLength;
+@property (nonatomic, retain) NSNumber *minimumValue;
+@property (nonatomic, retain) NSNumber *stepValue;
 
 - (void).cxx_destruct;
 - (id)description;

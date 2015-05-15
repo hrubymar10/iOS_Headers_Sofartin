@@ -8,9 +8,9 @@
     NSString *_deviceIdentifier;
 }
 
-@property(assign,copy) NSString * CASDECCCertificate;
-@property(assign,copy) NSString * CASDRSACertificate;
-@property(assign,copy) NSString * deviceIdentifier;
+@property (nonatomic, copy) NSString *CASDECCCertificate;
+@property (nonatomic, copy) NSString *CASDRSACertificate;
+@property (nonatomic, copy) NSString *deviceIdentifier;
 
 + (bool)supportsSecureCoding;
 

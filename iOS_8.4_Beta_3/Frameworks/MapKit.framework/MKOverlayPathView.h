@@ -14,15 +14,15 @@
     UIColor *_strokeColor;
 }
 
-@property(assign,retain) UIColor * fillColor;
-@property(assign,readwrite) int lineCap;
-@property(assign,copy) NSArray * lineDashPattern;
-@property(assign,readwrite) double lineDashPhase;
-@property(assign,readwrite) int lineJoin;
-@property(assign,readwrite) double lineWidth;
-@property(assign,readwrite) double miterLimit;
-@property(assign,readwrite) struct CGPath { }* path;
-@property(assign,retain) UIColor * strokeColor;
+@property (retain) UIColor *fillColor;
+@property int lineCap;
+@property (copy) NSArray *lineDashPattern;
+@property double lineDashPhase;
+@property int lineJoin;
+@property double lineWidth;
+@property double miterLimit;
+@property struct CGPath { }*path;
+@property (retain) UIColor *strokeColor;
 
 - (void).cxx_destruct;
 - (void)applyFillPropertiesToContext:(struct CGContext { }*)arg1 atZoomScale:(double)arg2;

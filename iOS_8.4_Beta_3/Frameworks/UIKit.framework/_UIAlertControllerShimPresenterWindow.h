@@ -6,7 +6,7 @@
     UIAlertController *_alertController;
 }
 
-@property(assign,retain) UIAlertController * alertController;
+@property (nonatomic, readonly, retain) UIAlertController *alertController;
 
 + (bool)_isSystemWindow;
 

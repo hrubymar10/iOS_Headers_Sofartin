@@ -9,10 +9,10 @@
     struct sqlite3_stmt { } *_handle;
 }
 
-@property(assign,readonly) NSArray * columnNames;
-@property(assign,readonly) NSDictionary * columnNamesToIndexes;
-@property(assign,readonly) WBSSQLiteDatabase * database;
-@property(assign,readonly) struct sqlite3_stmt { }* handle;
+@property (nonatomic, readonly) NSArray *columnNames;
+@property (nonatomic, readonly) NSDictionary *columnNamesToIndexes;
+@property (nonatomic, readonly) WBSSQLiteDatabase *database;
+@property (nonatomic, readonly) struct sqlite3_stmt { }*handle;
 
 - (void).cxx_destruct;
 - (bool)_isValid;

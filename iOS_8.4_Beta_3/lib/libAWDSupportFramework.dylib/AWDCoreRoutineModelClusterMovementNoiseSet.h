@@ -10,9 +10,9 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSMutableArray * instances;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSMutableArray *instances;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)addInstance:(id)arg1;
 - (void)clearInstances;

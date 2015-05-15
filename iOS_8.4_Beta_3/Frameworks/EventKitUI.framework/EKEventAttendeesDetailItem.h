@@ -9,8 +9,8 @@
     int _status;
 }
 
-@property(assign,retain) NSArray * attendees;
-@property(assign,readwrite) int status;
+@property (nonatomic, retain) NSArray *attendees;
+@property (nonatomic) int status;
 
 - (void).cxx_destruct;
 - (id)attendees;

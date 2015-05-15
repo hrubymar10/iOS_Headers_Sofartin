@@ -36,11 +36,11 @@
     bool willReconfigureShortly_;
 }
 
-@property(assign,readwrite) <CDXClientDelegate> * delegate;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) NSData * preblob;
-@property(assign,copy) id preblobCallback;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic) <CDXClientDelegate> *delegate;
+@property (nonatomic, readonly) NSError *error;
+@property (readonly) NSData *preblob;
+@property (nonatomic, copy) id preblobCallback;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
 
 + (id)sharedClient;
 

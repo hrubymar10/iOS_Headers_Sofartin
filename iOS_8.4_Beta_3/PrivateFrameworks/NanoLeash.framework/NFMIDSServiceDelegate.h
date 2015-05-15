@@ -7,12 +7,12 @@
     NSMutableDictionary *_pendingMessages;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableDictionary * inflightMessages;
-@property(assign,retain) NSMutableDictionary * pendingMessages;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableDictionary *inflightMessages;
+@property (nonatomic, retain) NSMutableDictionary *pendingMessages;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_enqueueMessage:(id)arg1 service:(id)arg2 priority:(long long)arg3 responseIdentifier:(id)arg4 expectsResponse:(bool)arg5 retryCount:(long long)arg6 retryInterval:(double)arg7 idsIdentifier:(id)arg8;

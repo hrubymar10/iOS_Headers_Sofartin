@@ -6,8 +6,8 @@
     NSMutableSet *_comps;
 }
 
-@property(assign,readonly) NSSet * compNames;
-@property(assign,retain) NSMutableSet * comps;
+@property (nonatomic, readonly) NSSet *compNames;
+@property (nonatomic, retain) NSMutableSet *comps;
 
 - (void)addComp:(id)arg1;
 - (id)childrenToWrite;

@@ -8,9 +8,9 @@
     NSString *_password;
 }
 
-@property(assign,retain) NSString * deviceID;
-@property(assign,retain) NSString * deviceName;
-@property(assign,retain) NSString * password;
+@property (nonatomic, retain) NSString *deviceID;
+@property (nonatomic, retain) NSString *deviceName;
+@property (nonatomic, retain) NSString *password;
 
 - (void).cxx_destruct;
 - (id)deviceID;

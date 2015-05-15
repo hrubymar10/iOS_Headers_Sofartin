@@ -11,12 +11,12 @@
     long long _pairingState;
 }
 
-@property(assign,readonly) struct __CFUUID { }* UUID;
-@property(assign,readwrite) long long hostState;
-@property(assign,readonly) NSUUID * identifier;
-@property(assign,readwrite) bool isLinkEncrypted;
-@property(assign,readwrite) unsigned long long mtuLength;
-@property(assign,readwrite) long long pairingState;
+@property (nonatomic, readonly) struct __CFUUID { }*UUID;
+@property (nonatomic) long long hostState;
+@property (nonatomic, readonly) NSUUID *identifier;
+@property (nonatomic) bool isLinkEncrypted;
+@property (nonatomic) unsigned long long mtuLength;
+@property (nonatomic) long long pairingState;
 
 - (struct __CFUUID { }*)UUID;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

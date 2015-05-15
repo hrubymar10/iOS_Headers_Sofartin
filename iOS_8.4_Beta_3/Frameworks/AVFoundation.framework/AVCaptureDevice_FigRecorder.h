@@ -6,14 +6,14 @@
     AVCaptureDeviceInternal_FigRecorder *_internal;
 }
 
-@property(assign,retain) AVCaptureDeviceFormat_FigRecorder * activeFormat;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } activeVideoMaxFrameDuration;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } activeVideoMinFrameDuration;
-@property(getter=isConnected,assign,readonly) bool connected;
-@property(assign,readonly) NSArray * formats;
-@property(assign,readonly) NSString * localizedName;
-@property(assign,readonly) NSString * modelID;
-@property(assign,readonly) NSString * uniqueID;
+@property (nonatomic, retain) AVCaptureDeviceFormat_FigRecorder *activeFormat;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } activeVideoMaxFrameDuration;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } activeVideoMinFrameDuration;
+@property (getter=isConnected, nonatomic, readonly) bool connected;
+@property (nonatomic, readonly) NSArray *formats;
+@property (nonatomic, readonly) NSString *localizedName;
+@property (nonatomic, readonly) NSString *modelID;
+@property (nonatomic, readonly) NSString *uniqueID;
 
 + (id)_devices;
 + (long long)authorizationStatusForMediaType:(id)arg1;

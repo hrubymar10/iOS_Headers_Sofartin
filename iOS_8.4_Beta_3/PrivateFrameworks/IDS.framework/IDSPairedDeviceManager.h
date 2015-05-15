@@ -10,11 +10,11 @@
     _IDSCompletionHandler *_pairedCompletion;
 }
 
-@property(assign,retain) NSSet * allowedTrafficClassifiers;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSSet *allowedTrafficClassifiers;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)sharedInstance;
 

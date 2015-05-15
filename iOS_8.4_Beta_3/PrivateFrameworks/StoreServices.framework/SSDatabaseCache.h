@@ -13,7 +13,7 @@
     NSObject<OS_dispatch_queue> *_serialQueue;
 }
 
-@property(assign,readwrite) unsigned long long maximumInlineBlobSize;
+@property (nonatomic) unsigned long long maximumInlineBlobSize;
 
 - (bool)_setupDatabase;
 - (id)cacheEntryForLookupKey:(id)arg1;

@@ -23,14 +23,14 @@
     bool _wantsToLaunchNowPlayingApp;
 }
 
-@property(assign,readonly) UIView * artworkView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPUSystemMediaControlsDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool persistentUpdatesEnabled;
-@property(assign,readonly) long long style;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) UIView *artworkView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPUSystemMediaControlsDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool persistentUpdatesEnabled;
+@property (nonatomic, readonly) long long style;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_backlightLevelChangedNotification:(id)arg1;

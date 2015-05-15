@@ -9,10 +9,10 @@
     SKUIJSColor *_textSecondaryColor;
 }
 
-@property(assign,readonly) SKUIJSColor * backgroundColor;
-@property(assign,readonly) bool isBackgroundLight;
-@property(assign,readonly) SKUIJSColor * textPrimaryColor;
-@property(assign,readonly) SKUIJSColor * textSecondaryColor;
+@property (nonatomic, readonly) SKUIJSColor *backgroundColor;
+@property (nonatomic, readonly) bool isBackgroundLight;
+@property (nonatomic, readonly) SKUIJSColor *textPrimaryColor;
+@property (nonatomic, readonly) SKUIJSColor *textSecondaryColor;
 
 - (void).cxx_destruct;
 - (id)backgroundColor;

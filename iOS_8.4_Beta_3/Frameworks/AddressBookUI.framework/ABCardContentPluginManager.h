@@ -6,7 +6,7 @@
     NSString *_pluginsDirectory;
 }
 
-@property(assign,readonly) NSString * pluginsDirectory;
+@property (nonatomic, readonly) NSString *pluginsDirectory;
 
 - (id)bundleNameForLabel:(id)arg1;
 - (Class)contentProviderClassForPerson:(void*)arg1;

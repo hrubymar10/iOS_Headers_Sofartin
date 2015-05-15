@@ -4,8 +4,8 @@
 
 @interface SASetActivationToken : SABaseClientBoundCommand
 
-@property(assign,copy) NSData * activationToken;
-@property(assign,copy) NSString * language;
+@property (nonatomic, copy) NSData *activationToken;
+@property (nonatomic, copy) NSString *language;
 
 + (id)setActivationToken;
 + (id)setActivationTokenWithDictionary:(id)arg1 context:(id)arg2;

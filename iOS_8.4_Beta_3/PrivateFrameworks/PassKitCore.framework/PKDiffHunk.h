@@ -9,10 +9,10 @@
     id _oldValue;
 }
 
-@property(assign,retain) NSString * key;
-@property(assign,retain) NSString * message;
-@property(assign,retain) id valueNew;
-@property(assign,retain) id valueOld;
+@property (nonatomic, retain) NSString *key;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic, retain) id valueNew;
+@property (nonatomic, retain) id valueOld;
 
 + (id)hunkWithKey:(id)arg1 oldValue:(id)arg2 newValue:(id)arg3 message:(id)arg4;
 + (bool)supportsSecureCoding;

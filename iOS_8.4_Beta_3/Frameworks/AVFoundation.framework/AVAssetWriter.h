@@ -6,16 +6,16 @@
     AVAssetWriterInternal *_internal;
 }
 
-@property(assign,readonly) NSArray * availableMediaTypes;
-@property(assign,copy) NSURL * directoryForTemporaryFiles;
-@property(assign,readonly) NSError * error;
-@property(getter=_helper,assign,retain) AVAssetWriterHelper * helper;
-@property(assign,readonly) NSArray * inputs;
-@property(assign,copy) NSArray * metadata;
-@property(assign,copy) NSString * outputFileType;
-@property(assign,copy) NSURL * outputURL;
-@property(assign,readwrite) bool shouldOptimizeForNetworkUse;
-@property(assign,readonly) long long status;
+@property (nonatomic, readonly) NSArray *availableMediaTypes;
+@property (nonatomic, copy) NSURL *directoryForTemporaryFiles;
+@property (readonly) NSError *error;
+@property (getter=_helper, readonly, retain) AVAssetWriterHelper *helper;
+@property (nonatomic, readonly) NSArray *inputs;
+@property (nonatomic, copy) NSArray *metadata;
+@property (nonatomic, readonly, copy) NSString *outputFileType;
+@property (nonatomic, readonly, copy) NSURL *outputURL;
+@property (nonatomic) bool shouldOptimizeForNetworkUse;
+@property (readonly) long long status;
 
 + (id)_errorForOSStatus:(int)arg1;
 + (id)assetWriterWithURL:(id)arg1 fileType:(id)arg2 error:(id*)arg3;

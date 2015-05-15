@@ -13,23 +13,23 @@
     struct __CFArray { } *_weakSessionRoutingAssertions;
 }
 
-@property(assign,readonly) NSString * activeInputRouteName;
-@property(assign,readonly) unsigned long long availableRoutesMask;
-@property(assign,readonly) NSArray * cachedPickableRoutes;
-@property(assign,readonly) MPAVRoute * cachedPickedRoute;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool expectsFaceContactWhenHandsetSelected;
-@property(assign,readonly) bool hasAppliedUserDefaultForRouteSetting;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isRoutingToPhoneCall;
-@property(assign,readonly) _RCMPRoutingController * routingController;
-@property(assign,readonly) NSString * selectedRouteName;
-@property(assign,readonly) long long selectedRouteType;
-@property(assign,readonly) bool shouldReportUserDefaultForRouteSetting;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useVoiceMemoSettings;
-@property(assign,readonly) struct __CFArray { }* weakSessionRoutingAssertions;
+@property (nonatomic, readonly) NSString *activeInputRouteName;
+@property (nonatomic, readonly) unsigned long long availableRoutesMask;
+@property (nonatomic, readonly) NSArray *cachedPickableRoutes;
+@property (nonatomic, readonly) MPAVRoute *cachedPickedRoute;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool expectsFaceContactWhenHandsetSelected;
+@property (nonatomic, readonly) bool hasAppliedUserDefaultForRouteSetting;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isRoutingToPhoneCall;
+@property (nonatomic, readonly) _RCMPRoutingController *routingController;
+@property (nonatomic, readonly) NSString *selectedRouteName;
+@property (nonatomic, readonly) long long selectedRouteType;
+@property (nonatomic, readonly) bool shouldReportUserDefaultForRouteSetting;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useVoiceMemoSettings;
+@property (nonatomic, readonly) struct __CFArray { }*weakSessionRoutingAssertions;
 
 + (id)sharedRouteController;
 

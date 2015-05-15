@@ -12,7 +12,7 @@
     PLPhotoEditModel *_stashedPreviousManualModel;
 }
 
-@property(getter=isBusy,assign,readwrite) bool busy;
+@property (getter=isBusy, nonatomic) bool busy;
 
 - (void).cxx_destruct;
 - (void)_applyAutoValuesOnModel:(id)arg1 whiteBalanceSettings:(id)arg2 redEyeCorrections:(id)arg3 smartToneLevel:(double)arg4 smartColorLevel:(double)arg5 valuesCalculator:(id)arg6 animated:(bool)arg7;

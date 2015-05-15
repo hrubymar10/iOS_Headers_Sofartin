@@ -12,10 +12,10 @@
     NSString *_string;
 }
 
-@property(assign,readonly) bool immutable;
-@property(assign,readwrite) double position;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,retain) NSString * string;
+@property (nonatomic, readonly) bool immutable;
+@property (nonatomic) double position;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, retain) NSString *string;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

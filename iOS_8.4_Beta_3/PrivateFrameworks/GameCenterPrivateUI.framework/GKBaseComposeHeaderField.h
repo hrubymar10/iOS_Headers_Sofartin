@@ -9,13 +9,13 @@
     GKHairlineView *_separatorView;
 }
 
-@property(assign,readwrite) SEL actionWhenTouched;
-@property(assign,readwrite) unsigned long long maxLineCount;
-@property(assign,retain) GKLabel * nameLabel;
-@property(assign,retain) NSString * nameText;
-@property(assign,retain) GKHairlineView * separatorView;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } valueFrame;
-@property(assign,retain) NSString * valueText;
+@property (nonatomic) SEL actionWhenTouched;
+@property (nonatomic) unsigned long long maxLineCount;
+@property (nonatomic, retain) GKLabel *nameLabel;
+@property (nonatomic, retain) NSString *nameText;
+@property (nonatomic, retain) GKHairlineView *separatorView;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } valueFrame;
+@property (nonatomic, retain) NSString *valueText;
 
 - (SEL)actionWhenTouched;
 - (void)addConstraintsForValueView:(id)arg1;

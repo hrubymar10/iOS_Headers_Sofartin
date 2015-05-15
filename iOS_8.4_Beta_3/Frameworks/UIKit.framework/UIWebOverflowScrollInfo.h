@@ -11,9 +11,9 @@
     } _offset;
 }
 
-@property(assign,readwrite) bool isUserScroll;
-@property(assign,retain) DOMNode * node;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } offset;
+@property (nonatomic) bool isUserScroll;
+@property (nonatomic, retain) DOMNode *node;
+@property (nonatomic) struct CGPoint { double x1; double x2; } offset;
 
 - (bool)coalesceScrollForNode:(id)arg1 offset:(struct CGPoint { double x1; double x2; })arg2 isUserScroll:(bool)arg3;
 - (void)dealloc;

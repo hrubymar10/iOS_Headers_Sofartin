@@ -4,9 +4,9 @@
 
 @interface SAGKWebSearchDomainObject : SAGKDomainObject
 
-@property(assign,copy) NSArray * image;
-@property(assign,copy) NSArray * linkedAnswerGroups;
-@property(assign,copy) NSString * query;
+@property (nonatomic, copy) NSArray *image;
+@property (nonatomic, copy) NSArray *linkedAnswerGroups;
+@property (nonatomic, copy) NSString *query;
 
 + (id)webSearchDomainObject;
 + (id)webSearchDomainObjectWithDictionary:(id)arg1 context:(id)arg2;

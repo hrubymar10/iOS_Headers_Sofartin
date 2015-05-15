@@ -9,10 +9,10 @@
     GKGameRecentPlayersDataSource *_recentPlayersDataSource;
 }
 
-@property(assign,retain) GKFriendsSplittingDataSource * friendsSplittingDataSource;
-@property(assign,retain) NSSet * hiddenPlayers;
-@property(assign,retain) GKNearbyPlayersDataSource * nearbyPlayersDataSource;
-@property(assign,retain) GKGameRecentPlayersDataSource * recentPlayersDataSource;
+@property (nonatomic, retain) GKFriendsSplittingDataSource *friendsSplittingDataSource;
+@property (nonatomic, retain) NSSet *hiddenPlayers;
+@property (nonatomic, retain) GKNearbyPlayersDataSource *nearbyPlayersDataSource;
+@property (nonatomic, retain) GKGameRecentPlayersDataSource *recentPlayersDataSource;
 
 - (bool)canSelectIndexPath:(id)arg1;
 - (id)collectionView:(id)arg1 cellForItemAtIndexPath:(id)arg2;

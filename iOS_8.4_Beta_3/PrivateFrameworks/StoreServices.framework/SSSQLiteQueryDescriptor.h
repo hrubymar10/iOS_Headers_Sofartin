@@ -13,14 +13,14 @@
     bool _returnsDistinctEntities;
 }
 
-@property(assign,readwrite) Class entityClass;
-@property(assign,readwrite) long long limitCount;
-@property(assign,readwrite) Class memoryEntityClass;
-@property(assign,copy) NSString * orderingClause;
-@property(assign,copy) NSArray * orderingDirections;
-@property(assign,copy) NSArray * orderingProperties;
-@property(assign,copy) SSSQLitePredicate * predicate;
-@property(assign,readwrite) bool returnsDistinctEntities;
+@property (nonatomic) Class entityClass;
+@property (nonatomic) long long limitCount;
+@property (nonatomic) Class memoryEntityClass;
+@property (nonatomic, copy) NSString *orderingClause;
+@property (nonatomic, copy) NSArray *orderingDirections;
+@property (nonatomic, copy) NSArray *orderingProperties;
+@property (nonatomic, copy) SSSQLitePredicate *predicate;
+@property (nonatomic) bool returnsDistinctEntities;
 
 - (id)_newSelectSQLWithProperties:(const id*)arg1 count:(unsigned long long)arg2 columns:(id)arg3;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

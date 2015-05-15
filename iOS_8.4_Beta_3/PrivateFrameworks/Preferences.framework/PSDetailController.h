@@ -6,7 +6,7 @@
     PSEditingPane *_pane;
 }
 
-@property(assign,readwrite) PSEditingPane * pane;
+@property (nonatomic) PSEditingPane *pane;
 
 - (void)dealloc;
 - (void)didRotateFromInterfaceOrientation:(long long)arg1;

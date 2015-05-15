@@ -15,7 +15,7 @@
     bool _suspendCallbacks;
 }
 
-@property(assign,readwrite) <PKXPCServiceDelegate> * delegate;
+@property (nonatomic) <PKXPCServiceDelegate> *delegate;
 
 + (void)setCallbacksSuspendedEvaluator:(id)arg1;
 

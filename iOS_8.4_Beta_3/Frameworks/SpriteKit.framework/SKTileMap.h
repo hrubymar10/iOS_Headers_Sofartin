@@ -29,12 +29,12 @@
     NSString *_tilesetName;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct CGSize { double x1; double x2; } mapSize;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct CGSize { double x1; double x2; } tileSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } mapSize;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } tileSize;
 
 + (id)tileMapWithName:(id)arg1;
 

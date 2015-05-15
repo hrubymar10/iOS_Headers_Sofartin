@@ -53,20 +53,20 @@
     AVVideoLayerView *_videoLayerView;
 }
 
-@property(assign,readonly) UIView * contentOverlayView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <AVPlayerViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIView * iAdPrerollView;
-@property(assign,retain) AVPlayer * player;
-@property(assign,retain) AVPlayerController * playerController;
-@property(getter=isReadyForDisplay,assign,readonly) bool readyForDisplay;
-@property(assign,readwrite) bool showsExitFullScreenButton;
-@property(assign,readwrite) bool showsPlaybackControls;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } videoBounds;
-@property(assign,copy) NSString * videoGravity;
+@property (nonatomic, readonly) UIView *contentOverlayView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <AVPlayerViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIView *iAdPrerollView;
+@property (nonatomic, retain) AVPlayer *player;
+@property (nonatomic, retain) AVPlayerController *playerController;
+@property (getter=isReadyForDisplay, nonatomic, readonly) bool readyForDisplay;
+@property (nonatomic) bool showsExitFullScreenButton;
+@property (nonatomic) bool showsPlaybackControls;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } videoBounds;
+@property (nonatomic, copy) NSString *videoGravity;
 
 + (void)initialize;
 + (id)keyPathsForValuesAffectingPlayer;

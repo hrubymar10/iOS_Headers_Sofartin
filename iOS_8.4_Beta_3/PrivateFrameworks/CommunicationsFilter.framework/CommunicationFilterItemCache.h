@@ -7,7 +7,7 @@
     long long _isInList;
 }
 
-@property(assign,readwrite) long long isInList;
+@property (nonatomic) long long isInList;
 
 - (void)dealloc;
 - (id)initWithFilterItem:(id)arg1 isInList:(long long)arg2;

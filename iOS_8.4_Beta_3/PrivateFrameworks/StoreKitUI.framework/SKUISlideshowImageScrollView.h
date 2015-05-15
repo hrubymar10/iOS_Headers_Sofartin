@@ -12,8 +12,8 @@
     double _scaleBeforeResize;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) UIImageView * imageView;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, readonly) UIImageView *imageView;
 
 - (void).cxx_destruct;
 - (void)_prepareToResize;

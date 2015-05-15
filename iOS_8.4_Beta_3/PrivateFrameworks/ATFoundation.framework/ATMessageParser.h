@@ -14,9 +14,9 @@
     unsigned long long _varIntDataLen;
 }
 
-@property(assign,readonly) Class messageClass;
-@property(assign,copy) id objectParsedBlock;
-@property(assign,readonly) NSError * parserError;
+@property (nonatomic, readonly) Class messageClass;
+@property (nonatomic, copy) id objectParsedBlock;
+@property (nonatomic, readonly) NSError *parserError;
 
 - (void).cxx_destruct;
 - (bool)_parseObjectFromData:(id)arg1;

@@ -43,16 +43,16 @@
     BiometricKitXPCClient *_xpcClient;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <BiometricKitDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) int enrollProgressConfigRenderMode;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } enrollProgressConfigRenderViewSize;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool inUse;
-@property(assign,readwrite) float opacity;
-@property(assign,readwrite) int renderMode;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <BiometricKitDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) int enrollProgressConfigRenderMode;
+@property (nonatomic) struct CGSize { double x1; double x2; } enrollProgressConfigRenderViewSize;
+@property (readonly) unsigned long long hash;
+@property bool inUse;
+@property (nonatomic) float opacity;
+@property (nonatomic) int renderMode;
+@property (readonly) Class superclass;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (long long)getSensorPatchVersion;

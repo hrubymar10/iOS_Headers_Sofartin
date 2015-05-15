@@ -4,10 +4,10 @@
 
 @interface HDAchievementEntity : HDHealthEntity <HDNanoSyncEntity, HDSyncEntity>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_achievementWithProperties:(id)arg1 values:(id*)arg2 propertySetters:(id)arg3;
 + (bool)_enumerateAchievementsWithPredicate:(id)arg1 healthDatabase:(id)arg2 error:(id*)arg3 usingBlock:(id)arg4;

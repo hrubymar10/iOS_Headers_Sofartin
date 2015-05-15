@@ -8,9 +8,9 @@
     NSArray *_traitStorages;
 }
 
-@property(assign,readonly) NSSet * descendants;
-@property(assign,readonly) id topLevelObject;
-@property(assign,readonly) NSArray * traitStorages;
+@property (nonatomic, readonly) NSSet *descendants;
+@property (nonatomic, readonly) id topLevelObject;
+@property (nonatomic, readonly) NSArray *traitStorages;
 
 - (void)dealloc;
 - (id)descendants;

@@ -9,8 +9,8 @@
     unsigned int _version;
 }
 
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) unsigned int version;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) unsigned int version;
 
 - (void)addCompletionHandler:(id)arg1 errorHandler:(id)arg2;
 - (void)dealloc;

@@ -9,10 +9,10 @@
     bool _invalidatePlaceholderVisibility;
 }
 
-@property(assign,readwrite) bool invalidateBoundsChange;
-@property(assign,readwrite) bool invalidateIncrementalReveal;
-@property(assign,readwrite) bool invalidatePinnableAreas;
-@property(assign,readwrite) bool invalidatePlaceholderVisibility;
+@property (nonatomic) bool invalidateBoundsChange;
+@property (nonatomic) bool invalidateIncrementalReveal;
+@property (nonatomic) bool invalidatePinnableAreas;
+@property (nonatomic) bool invalidatePlaceholderVisibility;
 
 - (bool)invalidateBoundsChange;
 - (bool)invalidateIncrementalReveal;

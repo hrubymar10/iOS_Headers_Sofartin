@@ -9,10 +9,10 @@
     NSArray *_useDNSServers;
 }
 
-@property(assign,readonly) long long action;
-@property(assign,readonly) NSArray * matchDomains;
-@property(assign,copy) NSURL * probeURL;
-@property(assign,copy) NSArray * useDNSServers;
+@property (readonly) long long action;
+@property (readonly) NSArray *matchDomains;
+@property (copy) NSURL *probeURL;
+@property (copy) NSArray *useDNSServers;
 
 + (bool)supportsSecureCoding;
 

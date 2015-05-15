@@ -67,13 +67,13 @@
     } _textureCircle;
 }
 
-@property(assign,readwrite) struct { float x1; float x2; float x3; float x4; } innerColor;
-@property(assign,readwrite) double presentationCourse;
-@property(assign,readwrite) float scale;
-@property(assign,readwrite) bool shouldBillboard;
-@property(assign,readwrite) bool shouldShowCourse;
-@property(getter=isStale,assign,readwrite) bool stale;
-@property(assign,readwrite) int style;
+@property (nonatomic) struct { float x1; float x2; float x3; float x4; } innerColor;
+@property (nonatomic) double presentationCourse;
+@property (nonatomic) float scale;
+@property (nonatomic) bool shouldBillboard;
+@property (nonatomic) bool shouldShowCourse;
+@property (getter=isStale, nonatomic) bool stale;
+@property (nonatomic) int style;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

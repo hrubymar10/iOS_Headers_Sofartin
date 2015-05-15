@@ -8,9 +8,9 @@
     GKPlayerInternal *_player;
 }
 
-@property(assign,readwrite) unsigned int concernID;
-@property(assign,copy) NSString * message;
-@property(assign,retain) GKPlayerInternal * player;
+@property (nonatomic) unsigned int concernID;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, retain) GKPlayerInternal *player;
 
 + (id)secureCodedPropertyKeys;
 

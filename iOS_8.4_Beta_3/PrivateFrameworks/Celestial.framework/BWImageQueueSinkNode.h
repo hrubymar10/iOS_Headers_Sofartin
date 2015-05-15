@@ -14,9 +14,9 @@
     bool _syncedWithDisplay;
 }
 
-@property(assign,readonly) struct _CAImageQueue { }* imageQueue;
-@property(assign,readonly) unsigned int imageQueueSlot;
-@property(assign,readwrite) <BWImageQueueSinkNodePreviewTapDelegate> * previewTapDelegate;
+@property (nonatomic, readonly) struct _CAImageQueue { }*imageQueue;
+@property (nonatomic, readonly) unsigned int imageQueueSlot;
+@property (nonatomic) <BWImageQueueSinkNodePreviewTapDelegate> *previewTapDelegate;
 
 + (void)initialize;
 

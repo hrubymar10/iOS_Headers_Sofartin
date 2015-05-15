@@ -11,10 +11,10 @@
     id _signature;
 }
 
-@property(assign,readonly) bool argumentsRetained;
-@property(assign,retain) NSMethodSignature * methodSignature;
-@property(assign,readwrite) SEL selector;
-@property(assign,readwrite) id target;
+@property (readonly) bool argumentsRetained;
+@property (readonly, retain) NSMethodSignature *methodSignature;
+@property SEL selector;
+@property id target;
 
 + (id)_gkInvocationWithBlock:(id)arg1;
 + (id)_invocationWithMethodSignature:(id)arg1 frame:(void*)arg2;

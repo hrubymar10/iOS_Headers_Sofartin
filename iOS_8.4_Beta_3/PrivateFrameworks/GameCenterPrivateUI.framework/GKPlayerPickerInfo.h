@@ -15,17 +15,17 @@
     NSDate *_sortDate;
 }
 
-@property(assign,retain) NSAttributedString * achievementString;
-@property(assign,readonly) bool canSelectPlayer;
-@property(assign,retain) GKGameMatch * gameMatch;
-@property(assign,readwrite) bool hasAchievement;
-@property(assign,readwrite) bool hasRank;
-@property(assign,readwrite) bool nearby;
-@property(assign,readonly) bool playedGame;
-@property(assign,retain) GKPlayer * player;
-@property(assign,retain) NSAttributedString * rankString;
-@property(assign,readonly) unsigned long long selectionStatus;
-@property(assign,retain) NSDate * sortDate;
+@property (nonatomic, retain) NSAttributedString *achievementString;
+@property (nonatomic, readonly) bool canSelectPlayer;
+@property (nonatomic, retain) GKGameMatch *gameMatch;
+@property (nonatomic) bool hasAchievement;
+@property (nonatomic) bool hasRank;
+@property (nonatomic) bool nearby;
+@property (nonatomic, readonly) bool playedGame;
+@property (nonatomic, retain) GKPlayer *player;
+@property (nonatomic, retain) NSAttributedString *rankString;
+@property (nonatomic, readonly) unsigned long long selectionStatus;
+@property (nonatomic, retain) NSDate *sortDate;
 
 - (void)_setSelectionStatus:(unsigned long long)arg1;
 - (id)achievementString;

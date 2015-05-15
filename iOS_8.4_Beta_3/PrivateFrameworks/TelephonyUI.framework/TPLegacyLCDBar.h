@@ -7,8 +7,8 @@
     UIImageView *_shadowView;
 }
 
-@property(assign,retain) UIImage * barBackground;
-@property(assign,readonly) UIImageView * shadowView;
+@property (nonatomic, retain) UIImage *barBackground;
+@property (readonly) UIImageView *shadowView;
 
 + (id)backgroundImage;
 + (double)defaultHeight;

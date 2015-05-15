@@ -8,9 +8,9 @@
     struct sqlite3_stmt { } *_stmt;
 }
 
-@property(assign,readwrite) struct sqlite3 { }* db;
-@property(assign,copy) id stepBlock;
-@property(assign,readwrite) struct sqlite3_stmt { }* stmt;
+@property (nonatomic) struct sqlite3 { }*db;
+@property (nonatomic, copy) id stepBlock;
+@property (nonatomic) struct sqlite3_stmt { }*stmt;
 
 + (id)enumeratorWithDatabase:(struct sqlite3 { }*)arg1 query:(id)arg2 stepBlock:(id)arg3;
 

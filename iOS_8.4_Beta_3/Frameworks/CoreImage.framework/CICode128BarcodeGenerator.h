@@ -6,7 +6,7 @@
     NSNumber *inputQuietSpace;
 }
 
-@property(assign,copy) NSNumber * inputQuietSpace;
+@property (nonatomic, copy) NSNumber *inputQuietSpace;
 
 + (id)customAttributes;
 

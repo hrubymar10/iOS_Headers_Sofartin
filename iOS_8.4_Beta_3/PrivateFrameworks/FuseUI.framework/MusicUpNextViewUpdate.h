@@ -7,8 +7,8 @@
     unsigned long long _type;
 }
 
-@property(assign,retain) NSArray * indexPaths;
-@property(assign,readwrite) unsigned long long type;
+@property (nonatomic, retain) NSArray *indexPaths;
+@property (nonatomic) unsigned long long type;
 
 - (void).cxx_destruct;
 - (id)_stringForUpdateType:(unsigned long long)arg1;

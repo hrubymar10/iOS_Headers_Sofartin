@@ -15,20 +15,20 @@
     unsigned long long _visibleImageIndex;
 }
 
-@property(getter=isAnimatingTransition,assign,readwrite) bool animatingTransition;
-@property(assign,readwrite) <MPUExtrasSlideshowViewControllerDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) MPUExtrasConstrainedArtworkContainerView * disappearingImageContainerView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPUExtrasConstrainedArtworkContainerView * imageContainerView;
-@property(assign,retain) UIImage * nextImage;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double transitionInterval;
-@property(assign,readwrite) unsigned long long transitionStyle;
-@property(assign,retain) NSTimer * transitionTimer;
-@property(getter=isViewVisible,assign,readwrite) bool viewVisible;
-@property(assign,readwrite) unsigned long long visibleImageIndex;
+@property (getter=isAnimatingTransition, nonatomic) bool animatingTransition;
+@property (nonatomic) <MPUExtrasSlideshowViewControllerDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) MPUExtrasConstrainedArtworkContainerView *disappearingImageContainerView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPUExtrasConstrainedArtworkContainerView *imageContainerView;
+@property (nonatomic, retain) UIImage *nextImage;
+@property (readonly) Class superclass;
+@property (nonatomic) double transitionInterval;
+@property (nonatomic) unsigned long long transitionStyle;
+@property (nonatomic, retain) NSTimer *transitionTimer;
+@property (getter=isViewVisible, nonatomic) bool viewVisible;
+@property (nonatomic) unsigned long long visibleImageIndex;
 
 - (void).cxx_destruct;
 - (void)_invalidateTransitionTimer;

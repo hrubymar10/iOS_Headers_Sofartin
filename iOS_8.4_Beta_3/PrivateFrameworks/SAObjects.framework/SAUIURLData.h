@@ -4,12 +4,12 @@
 
 @interface SAUIURLData : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSData * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSURL * uri;
+@property (nonatomic, copy) NSData *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSURL *uri;
 
 + (id)uRLData;
 + (id)uRLDataWithDictionary:(id)arg1 context:(id)arg2;

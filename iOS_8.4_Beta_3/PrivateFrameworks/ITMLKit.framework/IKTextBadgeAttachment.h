@@ -6,7 +6,7 @@
     IKBadgeElement *_badge;
 }
 
-@property(assign,retain) IKBadgeElement * badge;
+@property (nonatomic, readonly, retain) IKBadgeElement *badge;
 
 - (void).cxx_destruct;
 - (id)badge;

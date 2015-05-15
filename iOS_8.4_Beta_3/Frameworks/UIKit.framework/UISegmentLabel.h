@@ -6,7 +6,7 @@
     UILabel *_associatedLabel;
 }
 
-@property(assign,readwrite) UILabel * associatedLabel;
+@property (nonatomic) UILabel *associatedLabel;
 
 - (id)_associatedScalingLabel;
 - (id)_disabledFontColor;

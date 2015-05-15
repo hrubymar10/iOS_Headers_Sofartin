@@ -4,7 +4,7 @@
 
 @interface RCMutableComposition : RCComposition
 
-@property(assign,retain) NSArray * decomposedFragments;
+@property (nonatomic, retain) NSArray *decomposedFragments;
 
 - (void)recacheComposedDuration;
 

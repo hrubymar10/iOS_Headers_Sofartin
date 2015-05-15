@@ -9,10 +9,10 @@
     bool _visible;
 }
 
-@property(assign,retain) EDString * author;
-@property(assign,readwrite) int columnIndex;
-@property(assign,readwrite) int rowIndex;
-@property(assign,readwrite) bool visible;
+@property (nonatomic, retain) EDString *author;
+@property (nonatomic) int columnIndex;
+@property (nonatomic) int rowIndex;
+@property (nonatomic) bool visible;
 
 - (id)author;
 - (int)columnIndex;

@@ -4,8 +4,8 @@
 
 @interface SAAnswerObject : SADomainObject
 
-@property(assign,copy) NSArray * lines;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSArray *lines;
+@property (nonatomic, copy) NSString *title;
 
 + (id)object;
 + (id)objectWithDictionary:(id)arg1 context:(id)arg2;

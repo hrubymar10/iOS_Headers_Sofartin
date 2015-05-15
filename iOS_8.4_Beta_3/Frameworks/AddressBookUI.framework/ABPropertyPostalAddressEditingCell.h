@@ -6,8 +6,8 @@
     ABPostalAddressEditorView *_addressEditor;
 }
 
-@property(assign,retain) ABPostalAddressEditorView * addressEditor;
-@property(assign,copy) UIColor * editorSeparatorColor;
+@property (nonatomic, retain) ABPostalAddressEditorView *addressEditor;
+@property (nonatomic, copy) UIColor *editorSeparatorColor;
 
 - (id)addressEditor;
 - (id)constantConstraints;

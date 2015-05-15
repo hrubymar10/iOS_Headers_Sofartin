@@ -14,13 +14,13 @@
     id _userInteractionDisabledToken;
 }
 
-@property(setter=_setPhotoPinchGestureRecognizer:,assign,retain) PUPhotoPinchGestureRecognizer * _photoPinchGestureRecognizer;
-@property(setter=_setTransitionViewAnimator:,assign,retain) PUTransitionViewAnimator * _transitionViewAnimator;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUPhotoBrowserZoomTransitionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (setter=_setPhotoPinchGestureRecognizer:, nonatomic, retain) PUPhotoPinchGestureRecognizer *_photoPinchGestureRecognizer;
+@property (setter=_setTransitionViewAnimator:, nonatomic, retain) PUTransitionViewAnimator *_transitionViewAnimator;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUPhotoBrowserZoomTransitionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_animationTransitionForOperation:(long long)arg1 betweenViewController:(id)arg2 andPhotoBrowserController:(id)arg3;

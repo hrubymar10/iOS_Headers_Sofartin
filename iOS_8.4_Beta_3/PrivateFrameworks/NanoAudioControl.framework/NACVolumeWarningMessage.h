@@ -10,10 +10,10 @@
     bool _volumeWarningEnabled;
 }
 
-@property(assign,retain) NSString * category;
-@property(assign,readonly) bool hasCategory;
-@property(assign,readwrite) bool hasVolumeWarningEnabled;
-@property(assign,readwrite) bool volumeWarningEnabled;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic, readonly) bool hasCategory;
+@property (nonatomic) bool hasVolumeWarningEnabled;
+@property (nonatomic) bool volumeWarningEnabled;
 
 - (void).cxx_destruct;
 - (id)category;

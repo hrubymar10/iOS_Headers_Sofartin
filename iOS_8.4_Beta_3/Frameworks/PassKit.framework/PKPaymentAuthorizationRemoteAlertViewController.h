@@ -12,15 +12,15 @@
     PKPaymentRequest *_paymentRequest;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) PKPaymentAuthorizationRemoteAlertViewControllerExportedObject * exportedObject;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSXPCConnection * hostConnection;
-@property(assign,retain) PKInAppPaymentService * inAppPaymentService;
-@property(assign,retain) PKPaymentAuthorizationServiceNavigationController * navigationController;
-@property(assign,retain) PKPaymentRequest * paymentRequest;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) PKPaymentAuthorizationRemoteAlertViewControllerExportedObject *exportedObject;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSXPCConnection *hostConnection;
+@property (nonatomic, retain) PKInAppPaymentService *inAppPaymentService;
+@property (nonatomic, retain) PKPaymentAuthorizationServiceNavigationController *navigationController;
+@property (nonatomic, retain) PKPaymentRequest *paymentRequest;
+@property (readonly) Class superclass;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 

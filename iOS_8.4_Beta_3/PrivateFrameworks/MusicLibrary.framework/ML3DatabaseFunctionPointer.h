@@ -7,8 +7,8 @@
     void *_userData;
 }
 
-@property(assign,readwrite) int (* functionPointer;
-@property(assign,readwrite) void* userData;
+@property (nonatomic) int (*functionPointer;
+@property (nonatomic) void*userData;
 
 - (int (*)functionPointer;
 - (bool)registerWithConnection:(id)arg1;

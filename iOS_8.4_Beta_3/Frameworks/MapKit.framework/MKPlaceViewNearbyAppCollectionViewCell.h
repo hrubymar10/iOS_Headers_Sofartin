@@ -10,7 +10,7 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) NSDictionary * storeData;
+@property (nonatomic, retain) NSDictionary *storeData;
 
 + (double)heightWithIconSize:(struct CGSize { double x1; double x2; })arg1;
 + (id)reuseIdentifier;

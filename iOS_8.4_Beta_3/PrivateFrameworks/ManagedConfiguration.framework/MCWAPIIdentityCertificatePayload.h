@@ -6,7 +6,7 @@
     NSData *_pemData;
 }
 
-@property(assign,retain) NSData * pemData;
+@property (nonatomic, readonly, retain) NSData *pemData;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

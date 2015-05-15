@@ -6,8 +6,8 @@
     _UIContentUnavailableView *_view;
 }
 
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2;

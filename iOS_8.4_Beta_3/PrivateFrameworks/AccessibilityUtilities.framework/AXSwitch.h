@@ -15,16 +15,16 @@
     NSUUID *_uuid;
 }
 
-@property(assign,readwrite) long long action;
-@property(assign,readwrite) long long buttonNumber;
-@property(assign,readwrite) long long headSwitch;
-@property(assign,readwrite) unsigned short keyCode;
-@property(assign,copy) NSString * manufacturerName;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * productName;
-@property(assign,retain) NSString * source;
-@property(assign,retain) NSString * type;
-@property(assign,retain) NSUUID * uuid;
+@property (nonatomic) long long action;
+@property (nonatomic) long long buttonNumber;
+@property (nonatomic) long long headSwitch;
+@property (nonatomic) unsigned short keyCode;
+@property (nonatomic, copy) NSString *manufacturerName;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *productName;
+@property (nonatomic, retain) NSString *source;
+@property (nonatomic, retain) NSString *type;
+@property (nonatomic, retain) NSUUID *uuid;
 
 + (bool)supportsSecureCoding;
 + (id)switchWithAction:(long long)arg1 name:(id)arg2 source:(struct NSString { Class x1; }*)arg3 type:(struct NSString { Class x1; }*)arg4;

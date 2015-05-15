@@ -7,8 +7,8 @@
     NSError *_error;
 }
 
-@property(assign,readonly) HMCharacteristic * characteristic;
-@property(assign,readonly) NSError * error;
+@property (nonatomic, readonly) HMCharacteristic *characteristic;
+@property (nonatomic, readonly) NSError *error;
 
 + (id)tupleWithCharacteristic:(id)arg1 error:(id)arg2;
 

@@ -9,15 +9,15 @@
     NSURL *_sharedAs;
 }
 
-@property(assign,readwrite) bool acceptInvitation;
-@property(assign,retain) NSURL * calendarHomeURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CoreDAVTaskGroupDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CalDAVCalendarServerInviteNotificationItem * invitation;
-@property(assign,retain) NSURL * sharedAs;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool acceptInvitation;
+@property (nonatomic, retain) NSURL *calendarHomeURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CoreDAVTaskGroupDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CalDAVCalendarServerInviteNotificationItem *invitation;
+@property (nonatomic, retain) NSURL *sharedAs;
+@property (readonly) Class superclass;
 
 - (bool)acceptInvitation;
 - (id)calendarHomeURL;

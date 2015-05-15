@@ -4,16 +4,16 @@
 
 @interface SAPhone : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSNumber * favoriteFacetime;
-@property(assign,copy) NSNumber * favoriteFacetimeAudio;
-@property(assign,copy) NSNumber * favoriteVoice;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * label;
-@property(assign,copy) NSString * number;
-@property(assign,copy) NSNumber * pseudo;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSNumber *favoriteFacetime;
+@property (nonatomic, copy) NSNumber *favoriteFacetimeAudio;
+@property (nonatomic, copy) NSNumber *favoriteVoice;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, copy) NSString *number;
+@property (nonatomic, copy) NSNumber *pseudo;
+@property (readonly) Class superclass;
 
 + (id)phone;
 + (id)phoneWithDictionary:(id)arg1 context:(id)arg2;

@@ -8,12 +8,12 @@
     CKDPShareIdentifier *_shareIdentifier;
 }
 
-@property(assign,retain) CKDPIdentifier * commentIdentifier;
-@property(assign,readonly) bool hasCommentIdentifier;
-@property(assign,readonly) bool hasItemId;
-@property(assign,readonly) bool hasShareIdentifier;
-@property(assign,retain) NSData * itemId;
-@property(assign,retain) CKDPShareIdentifier * shareIdentifier;
+@property (nonatomic, retain) CKDPIdentifier *commentIdentifier;
+@property (nonatomic, readonly) bool hasCommentIdentifier;
+@property (nonatomic, readonly) bool hasItemId;
+@property (nonatomic, readonly) bool hasShareIdentifier;
+@property (nonatomic, retain) NSData *itemId;
+@property (nonatomic, retain) CKDPShareIdentifier *shareIdentifier;
 
 - (void).cxx_destruct;
 - (id)commentIdentifier;

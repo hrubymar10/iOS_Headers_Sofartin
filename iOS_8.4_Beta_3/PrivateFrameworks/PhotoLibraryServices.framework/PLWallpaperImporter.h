@@ -8,9 +8,9 @@
     PLPhotoLibrary *photoLibrary;
 }
 
-@property(assign,retain) NSArray * allWallpaperURLs;
-@property(assign,retain) PLManagedObjectContext * managedObjectContext;
-@property(assign,retain) PLPhotoLibrary * photoLibrary;
+@property (nonatomic, readonly, retain) NSArray *allWallpaperURLs;
+@property (nonatomic, readonly, retain) PLManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) PLPhotoLibrary *photoLibrary;
 
 + (void)importWallpaperAssetsIntoPhotoLibrary:(id)arg1;
 + (id)posterImageURL;

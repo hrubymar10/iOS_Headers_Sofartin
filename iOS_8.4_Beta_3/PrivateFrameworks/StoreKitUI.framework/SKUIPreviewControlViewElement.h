@@ -8,8 +8,8 @@
     NSString *_mediaURLString;
 }
 
-@property(assign,readonly) long long itemIdentifier;
-@property(assign,readonly) NSString * mediaURLString;
+@property (nonatomic, readonly) long long itemIdentifier;
+@property (nonatomic, readonly) NSString *mediaURLString;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

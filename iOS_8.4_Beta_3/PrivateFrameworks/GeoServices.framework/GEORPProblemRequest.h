@@ -9,14 +9,14 @@
     GEORPUserCredentials *_userCredentials;
 }
 
-@property(assign,retain) GEOPDAnalyticMetadata * analyticMetadata;
-@property(assign,retain) GEOPDClientMetadata * clientMetadata;
-@property(assign,readonly) bool hasAnalyticMetadata;
-@property(assign,readonly) bool hasClientMetadata;
-@property(assign,readonly) bool hasProblem;
-@property(assign,readonly) bool hasUserCredentials;
-@property(assign,retain) GEORPProblem * problem;
-@property(assign,retain) GEORPUserCredentials * userCredentials;
+@property (nonatomic, retain) GEOPDAnalyticMetadata *analyticMetadata;
+@property (nonatomic, retain) GEOPDClientMetadata *clientMetadata;
+@property (nonatomic, readonly) bool hasAnalyticMetadata;
+@property (nonatomic, readonly) bool hasClientMetadata;
+@property (nonatomic, readonly) bool hasProblem;
+@property (nonatomic, readonly) bool hasUserCredentials;
+@property (nonatomic, retain) GEORPProblem *problem;
+@property (nonatomic, retain) GEORPUserCredentials *userCredentials;
 
 - (id)analyticMetadata;
 - (id)clientMetadata;

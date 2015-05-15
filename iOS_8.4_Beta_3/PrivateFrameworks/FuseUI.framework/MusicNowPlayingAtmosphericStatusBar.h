@@ -11,12 +11,12 @@
     MusicStatusBar *_statusBar;
 }
 
-@property(assign,readonly) MPUPinningView * atmosphericContentView;
-@property(assign,copy) NSString * backdropGroupName;
-@property(assign,retain) _UIBackdropView * backdropView;
-@property(assign,retain) UIView * blendModeTintView;
-@property(assign,retain) UIView * colorTintView;
-@property(assign,readwrite) <MusicNowPlayingAtmosphericStatusBarDelegate> * delegate;
+@property (nonatomic, readonly) MPUPinningView *atmosphericContentView;
+@property (nonatomic, copy) NSString *backdropGroupName;
+@property (nonatomic, retain) _UIBackdropView *backdropView;
+@property (nonatomic, retain) UIView *blendModeTintView;
+@property (nonatomic, retain) UIView *colorTintView;
+@property (nonatomic) <MusicNowPlayingAtmosphericStatusBarDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)atmosphericContentView;

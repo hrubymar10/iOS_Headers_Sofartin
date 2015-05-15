@@ -4,10 +4,10 @@
 
 @interface SKUIReviewCollectionViewCell : SKUIViewReuseCollectionViewCell <SKUIViewElementView>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_attributedStringForTitleLabel:(id)arg1 context:(id)arg2;
 + (id)expandableLabelElementForViewElement:(id)arg1 width:(double)arg2 context:(id)arg3;

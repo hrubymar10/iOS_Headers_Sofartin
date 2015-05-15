@@ -7,7 +7,7 @@
     MPVideoViewController *_videoController;
 }
 
-@property(assign,readwrite) MPVideoViewController * videoController;
+@property (nonatomic) MPVideoViewController *videoController;
 
 - (void).cxx_destruct;
 - (void)performTransition:(unsigned long long)arg1;

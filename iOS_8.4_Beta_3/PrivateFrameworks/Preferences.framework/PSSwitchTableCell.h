@@ -6,7 +6,7 @@
     UIActivityIndicatorView *_activityIndicator;
 }
 
-@property(assign,readwrite) bool loading;
+@property (nonatomic) bool loading;
 
 - (bool)canReload;
 - (id)controlValue;

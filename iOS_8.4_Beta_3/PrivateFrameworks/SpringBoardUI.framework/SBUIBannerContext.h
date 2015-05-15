@@ -11,13 +11,13 @@
     <SBUIBannerTarget> *_target;
 }
 
-@property(assign,readonly) SBUIBannerAction * interactiveAction;
-@property(assign,retain) SBUIBannerItem * item;
-@property(assign,copy) NSString * presentingActionIdentifier;
-@property(assign,readwrite) bool requestsModalPresentation;
-@property(assign,retain) <SBUIBannerSource> * source;
-@property(assign,retain) <SBUIBannerTarget> * target;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (nonatomic, readonly) SBUIBannerAction *interactiveAction;
+@property (nonatomic, readonly, retain) SBUIBannerItem *item;
+@property (nonatomic, copy) NSString *presentingActionIdentifier;
+@property (nonatomic) bool requestsModalPresentation;
+@property (nonatomic, readonly, retain) <SBUIBannerSource> *source;
+@property (nonatomic, readonly, retain) <SBUIBannerTarget> *target;
+@property (getter=isValid, nonatomic, readonly) bool valid;
 
 - (void)dealloc;
 - (id)description;

@@ -12,13 +12,13 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,readwrite) bool isStateRequired;
-@property(assign,readwrite) bool listeningForNotifications;
-@property(assign,retain) NSString * notificationName;
-@property(assign,readwrite) PLOperator * operator;
-@property(assign,copy) id operatorBlock;
-@property(assign,readwrite) int stateToken;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property bool isStateRequired;
+@property bool listeningForNotifications;
+@property (retain) NSString *notificationName;
+@property PLOperator *operator;
+@property (nonatomic, copy) id operatorBlock;
+@property int stateToken;
+@property (retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)dealloc;

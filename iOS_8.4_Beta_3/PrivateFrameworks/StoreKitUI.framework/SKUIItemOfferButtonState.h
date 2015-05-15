@@ -9,10 +9,10 @@
     bool _showingConfirmation;
 }
 
-@property(assign,readwrite) bool hasImage;
-@property(assign,readwrite) bool highlighted;
-@property(assign,readwrite) long long progressType;
-@property(assign,readwrite) bool showingConfirmation;
+@property (nonatomic) bool hasImage;
+@property (nonatomic) bool highlighted;
+@property (nonatomic) long long progressType;
+@property (nonatomic) bool showingConfirmation;
 
 - (bool)hasImage;
 - (bool)highlighted;

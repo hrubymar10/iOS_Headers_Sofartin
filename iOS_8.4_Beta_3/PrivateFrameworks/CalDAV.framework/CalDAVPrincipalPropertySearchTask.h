@@ -9,10 +9,10 @@
     CalDAVPrincipalSearchPropertySet *_serverSupportSet;
 }
 
-@property(assign,retain) id searchContext;
-@property(assign,retain) NSSet * searchStrings;
-@property(assign,retain) NSSet * searchTypes;
-@property(assign,retain) CalDAVPrincipalSearchPropertySet * serverSupportSet;
+@property (nonatomic, retain) id searchContext;
+@property (nonatomic, retain) NSSet *searchStrings;
+@property (nonatomic, retain) NSSet *searchTypes;
+@property (nonatomic, retain) CalDAVPrincipalSearchPropertySet *serverSupportSet;
 
 - (void)dealloc;
 - (id)extraAttributes;

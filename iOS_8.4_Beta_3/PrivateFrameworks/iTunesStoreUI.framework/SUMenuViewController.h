@@ -8,12 +8,12 @@
     UITableView *_tableView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SUMenuViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long selectedIndex;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SUMenuViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long selectedIndex;
+@property (readonly) Class superclass;
 
 - (bool)_sendDidCancel;
 - (id)_tableView;

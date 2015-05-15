@@ -11,12 +11,12 @@
     UIView *_topTapView;
 }
 
-@property(assign,retain) UIView * bottomWhitePane;
-@property(assign,readwrite) <FMFMapOptionsViewControllerDelegate> * delegate;
-@property(assign,retain) MKMapAttribution * mapAttribution;
-@property(assign,retain) UIButton * mapAttributionButton;
-@property(assign,retain) UISegmentedControl * segmentedControl;
-@property(assign,retain) UIView * topTapView;
+@property (nonatomic, retain) UIView *bottomWhitePane;
+@property (nonatomic) <FMFMapOptionsViewControllerDelegate> *delegate;
+@property (nonatomic, retain) MKMapAttribution *mapAttribution;
+@property (nonatomic, retain) UIButton *mapAttributionButton;
+@property (nonatomic, retain) UISegmentedControl *segmentedControl;
+@property (nonatomic, retain) UIView *topTapView;
 
 - (void).cxx_destruct;
 - (void)_dismiss:(id)arg1;

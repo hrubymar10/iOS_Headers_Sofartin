@@ -19,14 +19,14 @@
     long long _targetRetrievalByteCount;
 }
 
-@property(assign,readwrite) MSMediaStreamDaemon * daemon;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MSSubscriberDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int retrievalBatchSize;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long targetRetrievalByteCount;
+@property (nonatomic) MSMediaStreamDaemon *daemon;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MSSubscriberDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int retrievalBatchSize;
+@property (readonly) Class superclass;
+@property (nonatomic) long long targetRetrievalByteCount;
 
 + (id)_clearInstantiatedSubscribersByPersonID;
 + (id)_descriptionForRetrievalState:(int)arg1;

@@ -8,9 +8,9 @@
     unsigned long long type;
 }
 
-@property(assign,readwrite) unsigned int callID;
-@property(assign,readwrite) long long nonce;
-@property(assign,readonly) unsigned int originalCallID;
+@property unsigned int callID;
+@property long long nonce;
+@property (readonly) unsigned int originalCallID;
 
 + (id)dictionaryFromData:(id)arg1;
 + (id)inviteDictionaryToParticipantID:(id)arg1 fromParticipantID:(id)arg2 connectionData:(id)arg3 callID:(unsigned int)arg4 focus:(bool)arg5;

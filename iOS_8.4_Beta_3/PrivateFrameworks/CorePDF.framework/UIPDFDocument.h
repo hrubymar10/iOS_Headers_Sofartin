@@ -18,12 +18,12 @@
     int _thumbnailLock;
 }
 
-@property(assign,readonly) struct CGPDFDocument { }* CGDocument;
-@property(assign,readwrite) <NSObject><UIPDFDocumentDelegate> * delegate;
-@property(assign,readonly) NSString * documentID;
-@property(assign,readonly) unsigned long long numberOfPages;
-@property(assign,retain) UIPDFPageImageCache * pageImageCache;
-@property(assign,retain) UIPDFPageImageCache * thumbnailCache;
+@property (readonly) struct CGPDFDocument { }*CGDocument;
+@property (nonatomic) <NSObject><UIPDFDocumentDelegate> *delegate;
+@property (readonly) NSString *documentID;
+@property (readonly) unsigned long long numberOfPages;
+@property (retain) UIPDFPageImageCache *pageImageCache;
+@property (retain) UIPDFPageImageCache *thumbnailCache;
 
 + (id)documentNamed:(id)arg1;
 

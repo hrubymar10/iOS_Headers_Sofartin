@@ -4,15 +4,15 @@
 
 @interface CDDMStatisticString : NSManagedObject
 
-@property(assign,retain) NSNumber * attributeId;
-@property(assign,retain) NSNumber * clientId;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,retain) NSNumber * integerId;
-@property(assign,retain) NSNumber * localDaysSinceSunday;
-@property(assign,retain) NSNumber * localTime;
-@property(assign,retain) NSNumber * localTimeQuarterHourSlot;
-@property(assign,retain) NSNumber * statisticKind;
-@property(assign,retain) NSNumber * userId;
-@property(assign,retain) NSString * value;
+@property (nonatomic, retain) NSNumber *attributeId;
+@property (nonatomic, retain) NSNumber *clientId;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic, retain) NSNumber *integerId;
+@property (nonatomic, retain) NSNumber *localDaysSinceSunday;
+@property (nonatomic, retain) NSNumber *localTime;
+@property (nonatomic, retain) NSNumber *localTimeQuarterHourSlot;
+@property (nonatomic, retain) NSNumber *statisticKind;
+@property (nonatomic, retain) NSNumber *userId;
+@property (nonatomic, retain) NSString *value;
 
 @end

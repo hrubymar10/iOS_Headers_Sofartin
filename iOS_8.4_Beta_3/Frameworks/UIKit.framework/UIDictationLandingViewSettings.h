@@ -12,13 +12,13 @@
     bool _useBlackWave;
 }
 
-@property(assign,readwrite) double circleRPM;
-@property(assign,readwrite) double colorTransitionInDuration;
-@property(assign,readwrite) double colorTransitionOutDuration;
-@property(assign,readwrite) double fadeInDuration;
-@property(assign,readwrite) double fadeOutDuration;
-@property(assign,readwrite) double shrinkDuration;
-@property(assign,readwrite) bool useBlackWave;
+@property (nonatomic) double circleRPM;
+@property (nonatomic) double colorTransitionInDuration;
+@property (nonatomic) double colorTransitionOutDuration;
+@property (nonatomic) double fadeInDuration;
+@property (nonatomic) double fadeOutDuration;
+@property (nonatomic) double shrinkDuration;
+@property (nonatomic) bool useBlackWave;
 
 + (id)sharedInstance;
 

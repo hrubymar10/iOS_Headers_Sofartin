@@ -4,7 +4,7 @@
 
 @interface BKSInsecureDrawingAction : BSAction
 
-@property(assign,readonly) NSArray * processIds;
+@property (nonatomic, readonly) NSArray *processIds;
 
 - (id)initWithInfo:(id)arg1 timeout:(double)arg2 forResponseOnQueue:(id)arg3 withHandler:(id)arg4;
 - (id)initWithInsecureProcessIds:(id)arg1;

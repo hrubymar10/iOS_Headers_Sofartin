@@ -6,7 +6,7 @@
     CKRecordZoneID *_recordZoneID;
 }
 
-@property(assign,copy) CKRecordZoneID * recordZoneID;
+@property (nonatomic, copy) CKRecordZoneID *recordZoneID;
 
 + (bool)supportsSecureCoding;
 

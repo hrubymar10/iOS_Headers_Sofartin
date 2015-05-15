@@ -23,24 +23,24 @@
     <NSCoding> *_userInfo;
 }
 
-@property(assign,retain) NSString * GUID;
-@property(assign,retain) NSString * albumGUID;
-@property(assign,retain) NSArray * assets;
-@property(assign,retain) NSString * ctag;
-@property(assign,retain) NSString * email;
-@property(assign,retain) NSString * fileName;
-@property(assign,retain) NSString * firstName;
-@property(assign,retain) NSString * fullName;
-@property(assign,readwrite) bool hasComments;
-@property(assign,readwrite) bool isDeletable;
-@property(assign,readwrite) bool isMine;
-@property(assign,retain) NSString * lastName;
-@property(assign,retain) NSDictionary * metadata;
-@property(assign,retain) NSString * path;
-@property(assign,retain) NSString * personID;
-@property(assign,readwrite) long long photoNumber;
-@property(assign,retain) NSDate * timestamp;
-@property(assign,retain) <NSCoding> * userInfo;
+@property (nonatomic, retain) NSString *GUID;
+@property (nonatomic, retain) NSString *albumGUID;
+@property (nonatomic, retain) NSArray *assets;
+@property (nonatomic, retain) NSString *ctag;
+@property (nonatomic, retain) NSString *email;
+@property (nonatomic, retain) NSString *fileName;
+@property (nonatomic, retain) NSString *firstName;
+@property (nonatomic, retain) NSString *fullName;
+@property (nonatomic) bool hasComments;
+@property (nonatomic) bool isDeletable;
+@property (nonatomic) bool isMine;
+@property (nonatomic, retain) NSString *lastName;
+@property (nonatomic, retain) NSDictionary *metadata;
+@property (nonatomic, retain) NSString *path;
+@property (nonatomic, retain) NSString *personID;
+@property (nonatomic) long long photoNumber;
+@property (nonatomic, retain) NSDate *timestamp;
+@property (nonatomic, retain) <NSCoding> *userInfo;
 
 + (id)MSASPAssetCollectionFromProtocolDictionary:(id)arg1;
 + (id)assetCollectionWithAssetCollection:(id)arg1;

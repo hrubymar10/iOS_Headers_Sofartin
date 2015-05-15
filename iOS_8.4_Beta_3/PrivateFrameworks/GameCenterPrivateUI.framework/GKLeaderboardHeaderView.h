@@ -8,13 +8,13 @@
     GKButton *_timeScopeButton;
 }
 
-@property(assign,copy) NSString * currentLeaderboardTitle;
-@property(assign,readonly) UIView * leaderboardButton;
-@property(assign,readwrite) bool leaderboardButtonEnabled;
-@property(assign,readwrite) GKButton * leaderboardsButton;
-@property(assign,readonly) UIView * timeButton;
-@property(assign,readwrite) long long timeScope;
-@property(assign,readwrite) GKButton * timeScopeButton;
+@property (nonatomic, copy) NSString *currentLeaderboardTitle;
+@property (nonatomic, readonly) UIView *leaderboardButton;
+@property (nonatomic) bool leaderboardButtonEnabled;
+@property GKButton *leaderboardsButton;
+@property (nonatomic, readonly) UIView *timeButton;
+@property (nonatomic) long long timeScope;
+@property GKButton *timeScopeButton;
 
 - (id)currentLeaderboardTitle;
 - (id)initWithFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

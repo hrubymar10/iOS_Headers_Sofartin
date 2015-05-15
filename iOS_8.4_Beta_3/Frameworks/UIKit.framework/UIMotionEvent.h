@@ -20,7 +20,7 @@
     int notifyToken;
 }
 
-@property(assign,readwrite) int shakeState;
+@property (nonatomic) int shakeState;
 
 - (void)_accelerometerDidDetectMovementWithTimestamp:(double)arg1;
 - (bool)_detectWhenNotActive;

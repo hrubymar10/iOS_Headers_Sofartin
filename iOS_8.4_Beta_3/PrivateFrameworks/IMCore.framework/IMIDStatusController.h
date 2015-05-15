@@ -7,8 +7,8 @@
     NSMutableSet *_servicesRegistered;
 }
 
-@property(assign,retain) NSRecursiveLock * _servicesLock;
-@property(assign,retain) NSMutableSet * _servicesRegistered;
+@property (nonatomic, retain) NSRecursiveLock *_servicesLock;
+@property (nonatomic, retain) NSMutableSet *_servicesRegistered;
 
 + (id)sharedInstance;
 

@@ -46,24 +46,24 @@
     double _thumbnailSpacing;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } captionPadding;
-@property(assign,readwrite) unsigned long long compositeLayoutSection;
-@property(assign,readwrite) <CKFeedCollectionViewLayoutDatasource> * feedDatasource;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } floatPadding;
-@property(assign,readwrite) double floatingBottomDecorationHeight;
-@property(assign,readwrite) long long flowDirection;
-@property(assign,readonly) unsigned int flowDirectionEdge;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } interTileSpacing;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } noCaptionSpacing;
-@property(assign,readwrite) double sectionHeaderBackgroundHeight;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } sectionReferenceSize;
-@property(assign,readwrite) bool shouldDisplayCaptionsBelowBatches;
-@property(assign,readwrite) bool shouldDisplaySectionHeadersBelowSections;
-@property(assign,readwrite) bool shouldFloatOverShortDistances;
-@property(assign,readwrite) bool shouldFloatSectionHeaders;
-@property(assign,readwrite) bool shouldFloatThumbnails;
-@property(assign,readwrite) bool shouldFloatWithEase;
-@property(assign,readwrite) double thumbnailSpacing;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } captionPadding;
+@property (nonatomic) unsigned long long compositeLayoutSection;
+@property (nonatomic) <CKFeedCollectionViewLayoutDatasource> *feedDatasource;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } floatPadding;
+@property (nonatomic) double floatingBottomDecorationHeight;
+@property (nonatomic) long long flowDirection;
+@property (nonatomic, readonly) unsigned int flowDirectionEdge;
+@property (nonatomic) struct CGSize { double x1; double x2; } interTileSpacing;
+@property (nonatomic) struct CGSize { double x1; double x2; } noCaptionSpacing;
+@property (nonatomic) double sectionHeaderBackgroundHeight;
+@property (nonatomic) struct CGSize { double x1; double x2; } sectionReferenceSize;
+@property (nonatomic) bool shouldDisplayCaptionsBelowBatches;
+@property (nonatomic) bool shouldDisplaySectionHeadersBelowSections;
+@property (nonatomic) bool shouldFloatOverShortDistances;
+@property (nonatomic) bool shouldFloatSectionHeaders;
+@property (nonatomic) bool shouldFloatThumbnails;
+@property (nonatomic) bool shouldFloatWithEase;
+@property (nonatomic) double thumbnailSpacing;
 
 - (void).cxx_destruct;
 - (void)_adjustFloatingLayoutAttributes:(id)arg1 inSection:(long long)arg2;

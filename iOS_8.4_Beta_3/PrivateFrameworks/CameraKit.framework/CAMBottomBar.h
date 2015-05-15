@@ -30,31 +30,31 @@
     CAMTimerButton *_timerButton;
 }
 
-@property(assign,retain) CAMHDRButton * HDRButton;
-@property(getter=_isHDRButtonExpanded,setter=_setHDRButtonExpanded:,assign,readwrite) bool _HDRButtonExpanded;
-@property(assign,readonly) UIView * _elapsedTimeViewCenteringLayoutSpacer;
-@property(setter=_setExpandedMenuButton:,assign,retain) CAMExpandableMenuButton * _expandedMenuButton;
-@property(assign,readonly) UIView * _filterButtonBottomLayoutSpacer;
-@property(assign,readonly) UIView * _hdrButtonCenteringLayoutSpacer;
-@property(assign,readonly) UIView * _imageWellBottomLayoutSpacer;
-@property(assign,readonly) UIView * _shutterButtomBottomLayoutSpacer;
-@property(assign,readonly) UIView * _slalomIndicatorBottomLayoutSpacer;
-@property(assign,readonly) UIView * _stillDuringVideoButtonBottomLayoutSpacer;
-@property(getter=_isTimerButtonExpanded,setter=_setTimerButtonExpanded:,assign,readwrite) bool _timerButtonExpanded;
-@property(assign,readwrite) long long backgroundStyle;
-@property(assign,readonly) UIView * backgroundView;
-@property(assign,retain) UIButton * cancelButton;
-@property(assign,readwrite) <CAMBottomBarDelegate> * delegate;
-@property(assign,retain) CAMElapsedTimeView * elapsedTimeView;
-@property(assign,retain) CAMFilterButton * filterButton;
-@property(assign,retain) CAMFlipButton * flipButton;
-@property(assign,retain) CAMImageWell * imageWell;
-@property(assign,retain) CAMModeDial * modeDial;
-@property(assign,readwrite) long long orientation;
-@property(assign,retain) CAMShutterButton * shutterButton;
-@property(assign,retain) CAMSlalomIndicatorView * slalomIndicatorView;
-@property(assign,retain) CAMShutterButton * stillDuringVideoButton;
-@property(assign,retain) CAMTimerButton * timerButton;
+@property (nonatomic, retain) CAMHDRButton *HDRButton;
+@property (getter=_isHDRButtonExpanded, setter=_setHDRButtonExpanded:, nonatomic) bool _HDRButtonExpanded;
+@property (nonatomic, readonly) UIView *_elapsedTimeViewCenteringLayoutSpacer;
+@property (setter=_setExpandedMenuButton:, nonatomic, retain) CAMExpandableMenuButton *_expandedMenuButton;
+@property (nonatomic, readonly) UIView *_filterButtonBottomLayoutSpacer;
+@property (nonatomic, readonly) UIView *_hdrButtonCenteringLayoutSpacer;
+@property (nonatomic, readonly) UIView *_imageWellBottomLayoutSpacer;
+@property (nonatomic, readonly) UIView *_shutterButtomBottomLayoutSpacer;
+@property (nonatomic, readonly) UIView *_slalomIndicatorBottomLayoutSpacer;
+@property (nonatomic, readonly) UIView *_stillDuringVideoButtonBottomLayoutSpacer;
+@property (getter=_isTimerButtonExpanded, setter=_setTimerButtonExpanded:, nonatomic) bool _timerButtonExpanded;
+@property (nonatomic) long long backgroundStyle;
+@property (nonatomic, readonly) UIView *backgroundView;
+@property (nonatomic, retain) UIButton *cancelButton;
+@property (nonatomic) <CAMBottomBarDelegate> *delegate;
+@property (nonatomic, retain) CAMElapsedTimeView *elapsedTimeView;
+@property (nonatomic, retain) CAMFilterButton *filterButton;
+@property (nonatomic, retain) CAMFlipButton *flipButton;
+@property (nonatomic, retain) CAMImageWell *imageWell;
+@property (nonatomic, retain) CAMModeDial *modeDial;
+@property (nonatomic) long long orientation;
+@property (nonatomic, retain) CAMShutterButton *shutterButton;
+@property (nonatomic, retain) CAMSlalomIndicatorView *slalomIndicatorView;
+@property (nonatomic, retain) CAMShutterButton *stillDuringVideoButton;
+@property (nonatomic, retain) CAMTimerButton *timerButton;
 
 + (bool)requiresConstraintBasedLayout;
 

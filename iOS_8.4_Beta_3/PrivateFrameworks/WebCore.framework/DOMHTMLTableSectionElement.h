@@ -4,11 +4,11 @@
 
 @interface DOMHTMLTableSectionElement : DOMHTMLElement
 
-@property(assign,copy) NSString * align;
-@property(assign,copy) NSString * ch;
-@property(assign,copy) NSString * chOff;
-@property(assign,readonly) DOMHTMLCollection * rows;
-@property(assign,copy) NSString * vAlign;
+@property (copy) NSString *align;
+@property (copy) NSString *ch;
+@property (copy) NSString *chOff;
+@property (readonly) DOMHTMLCollection *rows;
+@property (copy) NSString *vAlign;
 
 - (id)align;
 - (id)ch;

@@ -14,19 +14,19 @@
     NSArray *_uuids;
 }
 
-@property(assign,retain) id albumUUID;
-@property(assign,readwrite) unsigned long long approximateCount;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUSearchResultsValueDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * displaySubtitle;
-@property(assign,copy) NSString * displayTitle;
-@property(setter=_setGroupResult:,assign,retain) PSIGroupResult * groupResult;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double score;
-@property(assign,copy) NSString * searchString;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSArray * uuids;
+@property (retain) id albumUUID;
+@property unsigned long long approximateCount;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUSearchResultsValueDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *displaySubtitle;
+@property (readonly, copy) NSString *displayTitle;
+@property (setter=_setGroupResult:, retain) PSIGroupResult *groupResult;
+@property (readonly) unsigned long long hash;
+@property (readonly) double score;
+@property (readonly, copy) NSString *searchString;
+@property (readonly) Class superclass;
+@property (retain) NSArray *uuids;
 
 - (void).cxx_destruct;
 - (void)_computeScoreWithMaxGroupedResultsCount:(unsigned long long)arg1;

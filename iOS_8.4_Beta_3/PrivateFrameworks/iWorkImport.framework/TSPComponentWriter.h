@@ -46,9 +46,9 @@
     unsigned long long _writeVersion;
 }
 
-@property(assign,readonly) TSPComponent * component;
-@property(assign,readonly) unsigned long long readVersion;
-@property(assign,readonly) unsigned long long writeVersion;
+@property (nonatomic, readonly) TSPComponent *component;
+@property (nonatomic, readonly) unsigned long long readVersion;
+@property (nonatomic, readonly) unsigned long long writeVersion;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

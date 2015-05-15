@@ -7,12 +7,12 @@
     <CRCarPlayPreferencesDelegate> *_preferencesDelegate;
 }
 
-@property(assign,readwrite) bool cachedCarPlayAllowed;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <CRCarPlayPreferencesDelegate> * preferencesDelegate;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool cachedCarPlayAllowed;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <CRCarPlayPreferencesDelegate> *preferencesDelegate;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_isCarPlayAllowed;

@@ -7,8 +7,8 @@
     TSCHChartAxisID *axisID;
 }
 
-@property(assign,retain) TSCHChartGridAdapter * adapter;
-@property(assign,retain) TSCHChartAxisID * axisID;
+@property (nonatomic, retain) TSCHChartGridAdapter *adapter;
+@property (nonatomic, retain) TSCHChartAxisID *axisID;
 
 - (id)adapter;
 - (id)axisID;

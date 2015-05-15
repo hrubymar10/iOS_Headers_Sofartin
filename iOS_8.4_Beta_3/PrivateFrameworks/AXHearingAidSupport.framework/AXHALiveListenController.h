@@ -9,10 +9,10 @@
     struct OpaqueAudioComponentInstance { } *rioUnit;
 }
 
-@property(assign,readwrite) bool didInitializeAudioUnit;
-@property(assign,readwrite) bool isListening;
-@property(assign,readonly) struct OpaqueAudioComponentInstance { }* mixerUnit;
-@property(assign,readonly) struct OpaqueAudioComponentInstance { }* rioUnit;
+@property (nonatomic) bool didInitializeAudioUnit;
+@property (nonatomic) bool isListening;
+@property (nonatomic, readonly) struct OpaqueAudioComponentInstance { }*mixerUnit;
+@property (nonatomic, readonly) struct OpaqueAudioComponentInstance { }*rioUnit;
 
 - (float)audioLevel;
 - (void)audioRouteDidChange:(id)arg1;

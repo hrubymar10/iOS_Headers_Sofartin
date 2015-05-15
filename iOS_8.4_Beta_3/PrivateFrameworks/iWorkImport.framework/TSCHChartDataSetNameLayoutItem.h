@@ -4,7 +4,7 @@
 
 @interface TSCHChartDataSetNameLayoutItem : TSCHChartTitleLayoutItem
 
-@property(assign,readonly) bool isAboveChartBody;
+@property (nonatomic, readonly) bool isAboveChartBody;
 
 - (struct CGSize { double x1; double x2; })calcMinSize;
 - (bool)isAboveChartBody;

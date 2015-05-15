@@ -36,11 +36,11 @@
     float _volume;
 }
 
-@property(assign,readwrite) <VSSpeechSynthesizerDelegate> * delegate;
-@property(assign,readwrite) float pitch;
-@property(assign,readwrite) float rate;
-@property(assign,retain) NSString * voice;
-@property(assign,readwrite) float volume;
+@property (nonatomic) <VSSpeechSynthesizerDelegate> *delegate;
+@property (nonatomic) float pitch;
+@property (nonatomic) float rate;
+@property (nonatomic, retain) NSString *voice;
+@property (nonatomic) float volume;
 
 + (id)availableFootprintsForVoice:(id)arg1 languageCode:(id)arg2;
 + (id)availableLanguageCodes;

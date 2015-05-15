@@ -12,9 +12,9 @@
     UIRefreshControl *_refreshControl;
 }
 
-@property(assign,retain) SKUIIndexBarControl * indexBarControl;
-@property(assign,readwrite) double overrideBoundsWidth;
-@property(assign,retain) UIRefreshControl * refreshControl;
+@property (nonatomic, retain) SKUIIndexBarControl *indexBarControl;
+@property (nonatomic) double overrideBoundsWidth;
+@property (nonatomic, retain) UIRefreshControl *refreshControl;
 
 - (void).cxx_destruct;
 - (double)_offsetForRubberBandOffset:(double)arg1 maxOffset:(double)arg2 minOffset:(double)arg3 range:(double)arg4;

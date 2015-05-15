@@ -6,7 +6,7 @@
     NSMutableArray *_passRelevancyTuples;
 }
 
-@property(assign,retain) NSMutableArray * passRelevancyTuples;
+@property (nonatomic, retain) NSMutableArray *passRelevancyTuples;
 
 - (void).cxx_destruct;
 - (void)addPassRelevancyTuples:(id)arg1;

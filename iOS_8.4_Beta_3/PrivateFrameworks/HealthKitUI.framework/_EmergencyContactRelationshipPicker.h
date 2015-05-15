@@ -8,7 +8,7 @@
     NSArray *_tokens;
 }
 
-@property(assign,readwrite) <_EmergencyContactRelationshipPickerDelegate> * delegate;
+@property (nonatomic) <_EmergencyContactRelationshipPickerDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_cancelTapped:(id)arg1;

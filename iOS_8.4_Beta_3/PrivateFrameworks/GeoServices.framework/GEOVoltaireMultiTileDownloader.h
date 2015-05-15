@@ -27,16 +27,16 @@
     NSString *_userAgent;
 }
 
-@property(assign,retain) NSData * auditToken;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <GEOVoltaireMultiTileDownloaderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSURL * requestURL;
-@property(assign,readwrite) bool requireWiFi;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useStatusCodes;
-@property(assign,retain) NSString * userAgent;
+@property (nonatomic, retain) NSData *auditToken;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <GEOVoltaireMultiTileDownloaderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSURL *requestURL;
+@property (nonatomic) bool requireWiFi;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useStatusCodes;
+@property (nonatomic, retain) NSString *userAgent;
 
 - (void)_cancelWithError:(id)arg1;
 - (void)_cleanupConnection;

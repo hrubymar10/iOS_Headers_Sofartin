@@ -10,11 +10,11 @@
     void *_suspendDormancyAssertion;
 }
 
-@property(assign,readwrite) struct __CTServerConnection { }* _serverConnection;
-@property(assign,readwrite) void* _suspendDormancyAssertion;
-@property(assign,retain) NSMutableSet * disableFastDormancyTokens;
-@property(assign,retain) NSRecursiveLock * lock;
-@property(assign,readwrite) bool registered;
+@property (nonatomic) struct __CTServerConnection { }*_serverConnection;
+@property (nonatomic) void*_suspendDormancyAssertion;
+@property (nonatomic, retain) NSMutableSet *disableFastDormancyTokens;
+@property (nonatomic, retain) NSRecursiveLock *lock;
+@property (nonatomic) bool registered;
 
 + (id)sharedInstance;
 

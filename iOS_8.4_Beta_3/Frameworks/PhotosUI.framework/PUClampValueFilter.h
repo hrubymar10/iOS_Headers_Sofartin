@@ -7,8 +7,8 @@
     double _minimumValue;
 }
 
-@property(assign,readwrite) double maximumValue;
-@property(assign,readwrite) double minimumValue;
+@property (nonatomic) double maximumValue;
+@property (nonatomic) double minimumValue;
 
 - (double)maximumValue;
 - (double)minimumValue;

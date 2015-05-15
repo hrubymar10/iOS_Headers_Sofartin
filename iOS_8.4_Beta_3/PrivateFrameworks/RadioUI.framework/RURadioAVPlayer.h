@@ -10,9 +10,9 @@
     NSObject<OS_dispatch_queue> *_radioUIAccessQueue;
 }
 
-@property(assign,readwrite) bool banningCurrentItemShouldSkipToNextItem;
-@property(assign,readonly) RadioStation * currentStation;
-@property(assign,retain) RURadioStationPlaybackMetadata * lastPlayedStationMetadata;
+@property (nonatomic) bool banningCurrentItemShouldSkipToNextItem;
+@property (nonatomic, readonly) RadioStation *currentStation;
+@property (nonatomic, retain) RURadioStationPlaybackMetadata *lastPlayedStationMetadata;
 
 - (void).cxx_destruct;
 - (void)_feederContentsDidChangeNotification:(id)arg1;

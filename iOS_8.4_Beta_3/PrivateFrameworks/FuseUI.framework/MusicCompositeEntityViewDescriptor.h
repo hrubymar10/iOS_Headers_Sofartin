@@ -6,7 +6,7 @@
     NSArray *_entityViewDescriptors;
 }
 
-@property(assign,copy) NSArray * entityViewDescriptors;
+@property (nonatomic, copy) NSArray *entityViewDescriptors;
 
 - (void).cxx_destruct;
 - (id)_entityViewDescriptorForEntityProvider:(id)arg1;

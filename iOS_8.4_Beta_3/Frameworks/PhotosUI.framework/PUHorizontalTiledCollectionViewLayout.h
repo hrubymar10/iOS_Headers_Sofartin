@@ -15,10 +15,10 @@
     } _itemsContentInset;
 }
 
-@property(assign,readwrite) <PUHorizontalTiledCollectionViewLayoutDelegate> * delegate;
-@property(assign,readonly) bool hasReferenceIndexPath;
-@property(assign,readwrite) double interitemSpacing;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } itemsContentInset;
+@property (nonatomic) <PUHorizontalTiledCollectionViewLayoutDelegate> *delegate;
+@property (nonatomic, readonly) bool hasReferenceIndexPath;
+@property (nonatomic) double interitemSpacing;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } itemsContentInset;
 
 + (Class)invalidationContextClass;
 

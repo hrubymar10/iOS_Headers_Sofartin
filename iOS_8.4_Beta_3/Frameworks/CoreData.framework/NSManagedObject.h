@@ -16,15 +16,15 @@
     unsigned long long _cd_stateFlags;
 }
 
-@property(getter=isDeleted,assign,readonly) bool deleted;
-@property(assign,readonly) NSEntityDescription * entity;
-@property(getter=isFault,assign,readonly) bool fault;
-@property(assign,readonly) unsigned long long faultingState;
-@property(assign,readonly) bool hasChanges;
-@property(getter=isInserted,assign,readonly) bool inserted;
-@property(assign,readonly) NSManagedObjectContext * managedObjectContext;
-@property(assign,readonly) NSManagedObjectID * objectID;
-@property(getter=isUpdated,assign,readonly) bool updated;
+@property (getter=isDeleted, nonatomic, readonly) bool deleted;
+@property (nonatomic, readonly) NSEntityDescription *entity;
+@property (getter=isFault, nonatomic, readonly) bool fault;
+@property (nonatomic, readonly) unsigned long long faultingState;
+@property (nonatomic, readonly) bool hasChanges;
+@property (getter=isInserted, nonatomic, readonly) bool inserted;
+@property (nonatomic, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, readonly) NSManagedObjectID *objectID;
+@property (getter=isUpdated, nonatomic, readonly) bool updated;
 
 + (struct { int x1; void *x2; unsigned long long x3; unsigned char x4; unsigned long long x5; void *x6; id x7; char *x8; struct _moFactoryClassFlags { unsigned int x_9_1_1 : 1; unsigned int x_9_1_2 : 1; unsigned int x_9_1_3 : 1; unsigned int x_9_1_4 : 1; unsigned int x_9_1_5 : 1; unsigned int x_9_1_6 : 1; unsigned int x_9_1_7 : 26; } x9; }*)_PFMOClassFactoryData;
 + (id)_PFPlaceHolderSingleton;

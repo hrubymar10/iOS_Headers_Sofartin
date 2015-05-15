@@ -10,11 +10,11 @@
     double _influenceFactor;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double influenceFactor;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double influenceFactor;
+@property (readonly) Class superclass;
 
 + (id)SCNJSExportProtocol;
 + (bool)supportsSecureCoding;

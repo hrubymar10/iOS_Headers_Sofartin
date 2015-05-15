@@ -9,7 +9,7 @@
     NSMutableArray *_titles;
 }
 
-@property(assign,retain) SKUIColorScheme * colorScheme;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
 
 - (void).cxx_destruct;
 - (id)colorScheme;

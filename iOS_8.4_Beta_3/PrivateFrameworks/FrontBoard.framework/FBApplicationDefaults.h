@@ -10,11 +10,11 @@
     long long _statusBarStyle;
 }
 
-@property(assign,readwrite) long long backgroundStyle;
-@property(assign,readwrite) long long interfaceOrientation;
-@property(assign,readwrite) bool statusBarHidden;
-@property(assign,readwrite) bool statusBarHiddenWhenVerticallyCompact;
-@property(assign,readwrite) long long statusBarStyle;
+@property (nonatomic) long long backgroundStyle;
+@property (nonatomic) long long interfaceOrientation;
+@property (nonatomic) bool statusBarHidden;
+@property (nonatomic) bool statusBarHiddenWhenVerticallyCompact;
+@property (nonatomic) long long statusBarStyle;
 
 - (long long)backgroundStyle;
 - (id)init;

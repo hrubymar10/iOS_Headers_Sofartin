@@ -4,20 +4,20 @@
 
 @interface DOMHTMLFrameElement : DOMHTMLElement
 
-@property(assign,readonly) DOMDocument * contentDocument;
-@property(assign,readonly) WebFrame * contentFrame;
-@property(assign,readonly) DOMAbstractView * contentWindow;
-@property(assign,copy) NSString * frameBorder;
-@property(assign,readonly) int height;
-@property(assign,copy) NSString * location;
-@property(assign,copy) NSString * longDesc;
-@property(assign,copy) NSString * marginHeight;
-@property(assign,copy) NSString * marginWidth;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) bool noResize;
-@property(assign,copy) NSString * scrolling;
-@property(assign,copy) NSString * src;
-@property(assign,readonly) int width;
+@property (readonly) DOMDocument *contentDocument;
+@property (nonatomic, readonly) WebFrame *contentFrame;
+@property (readonly) DOMAbstractView *contentWindow;
+@property (copy) NSString *frameBorder;
+@property (readonly) int height;
+@property (copy) NSString *location;
+@property (copy) NSString *longDesc;
+@property (copy) NSString *marginHeight;
+@property (copy) NSString *marginWidth;
+@property (copy) NSString *name;
+@property bool noResize;
+@property (copy) NSString *scrolling;
+@property (copy) NSString *src;
+@property (readonly) int width;
 
 - (id)contentDocument;
 - (id)contentFrame;

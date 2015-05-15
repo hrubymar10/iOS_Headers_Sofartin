@@ -7,16 +7,16 @@
     GKAchievementInternal *_internal;
 }
 
-@property(assign,copy) NSString * achievedDescription;
-@property(assign,retain) NSString * groupIdentifier;
-@property(getter=isHidden,assign,readonly) bool hidden;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) UIImage * image;
-@property(assign,retain) GKAchievementInternal * internal;
-@property(assign,readonly) long long maximumPoints;
-@property(getter=isReplayable,assign,readonly) bool replayable;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * unachievedDescription;
+@property (nonatomic, readonly, copy) NSString *achievedDescription;
+@property (nonatomic, readonly, retain) NSString *groupIdentifier;
+@property (getter=isHidden, nonatomic, readonly) bool hidden;
+@property (nonatomic, readonly, copy) NSString *identifier;
+@property (nonatomic, retain) UIImage *image;
+@property (retain) GKAchievementInternal *internal;
+@property (nonatomic, readonly) long long maximumPoints;
+@property (getter=isReplayable, nonatomic, readonly) bool replayable;
+@property (nonatomic, readonly, copy) NSString *title;
+@property (nonatomic, readonly, copy) NSString *unachievedDescription;
 
 + (id)incompleteAchievementImage;
 + (id)instanceMethodSignatureForSelector:(SEL)arg1;

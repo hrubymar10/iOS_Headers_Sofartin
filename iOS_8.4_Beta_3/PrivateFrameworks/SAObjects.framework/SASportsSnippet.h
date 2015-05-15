@@ -4,9 +4,9 @@
 
 @interface SASportsSnippet : SAUISnippet
 
-@property(assign,retain) SASportsLeague * league;
-@property(assign,retain) SAUIAppPunchOut * leagueAppPunchOut;
-@property(assign,retain) SAUIAppPunchOut * punchOut;
+@property (nonatomic, retain) SASportsLeague *league;
+@property (nonatomic, retain) SAUIAppPunchOut *leagueAppPunchOut;
+@property (nonatomic, retain) SAUIAppPunchOut *punchOut;
 
 + (id)snippet;
 + (id)snippetWithDictionary:(id)arg1 context:(id)arg2;

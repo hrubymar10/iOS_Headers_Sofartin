@@ -23,10 +23,10 @@
     double _scale;
 }
 
-@property(assign,readwrite) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } frame;
-@property(assign,retain) NSData * image;
-@property(assign,readwrite) struct { long long x1; long long x2; long long x3; double x4; } path;
-@property(assign,readwrite) double scale;
+@property (nonatomic) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } frame;
+@property (nonatomic, retain) NSData *image;
+@property (nonatomic) struct { long long x1; long long x2; long long x3; double x4; } path;
+@property (nonatomic) double scale;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

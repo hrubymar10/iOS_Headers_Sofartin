@@ -6,7 +6,7 @@
     int fOrientation;
 }
 
-@property(assign,readonly) int orientation;
+@property (nonatomic, readonly) int orientation;
 
 + (bool)supportsSecureCoding;
 

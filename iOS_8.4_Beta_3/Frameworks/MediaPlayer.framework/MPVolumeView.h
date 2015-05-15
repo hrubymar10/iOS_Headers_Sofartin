@@ -28,23 +28,23 @@
     bool _wirelessRoutesAvailable;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hidesRouteLabelWhenNoRouteChoice;
-@property(assign,readonly) bool isShowingRouteButton;
-@property(assign,readonly) bool isVisible;
-@property(assign,readwrite) bool routeButtonShowsTouchWhenHighlighted;
-@property(assign,readwrite) unsigned long long routePopoverPermittedArrowDirections;
-@property(assign,readwrite) bool showsRouteButton;
-@property(assign,readwrite) bool showsVolumeSlider;
-@property(assign,readonly) long long style;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) MPVolumeSlider * volumeSlider;
-@property(assign,readwrite) bool volumeSliderShrinksFromBothEnds;
-@property(assign,retain) UIImage * volumeWarningSliderImage;
-@property(getter=isWirelessRouteActive,assign,readonly) bool wirelessRouteActive;
-@property(getter=areWirelessRoutesAvailable,assign,readonly) bool wirelessRoutesAvailable;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hidesRouteLabelWhenNoRouteChoice;
+@property (nonatomic, readonly) bool isShowingRouteButton;
+@property (nonatomic, readonly) bool isVisible;
+@property (nonatomic) bool routeButtonShowsTouchWhenHighlighted;
+@property (nonatomic) unsigned long long routePopoverPermittedArrowDirections;
+@property (nonatomic) bool showsRouteButton;
+@property (nonatomic) bool showsVolumeSlider;
+@property (nonatomic, readonly) long long style;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) MPVolumeSlider *volumeSlider;
+@property (nonatomic) bool volumeSliderShrinksFromBothEnds;
+@property (nonatomic, retain) UIImage *volumeWarningSliderImage;
+@property (getter=isWirelessRouteActive, nonatomic, readonly) bool wirelessRouteActive;
+@property (getter=areWirelessRoutesAvailable, nonatomic, readonly) bool wirelessRoutesAvailable;
 
 - (void).cxx_destruct;
 - (void)_applicationDidEnterBackgroundNotification:(id)arg1;

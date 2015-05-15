@@ -11,10 +11,10 @@
     unsigned int _value;
 }
 
-@property(assign,readwrite) bool hasKey;
-@property(assign,readwrite) bool hasValue;
-@property(assign,readwrite) unsigned int key;
-@property(assign,readwrite) unsigned int value;
+@property (nonatomic) bool hasKey;
+@property (nonatomic) bool hasValue;
+@property (nonatomic) unsigned int key;
+@property (nonatomic) unsigned int value;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

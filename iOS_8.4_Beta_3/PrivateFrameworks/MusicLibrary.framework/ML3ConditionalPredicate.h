@@ -8,9 +8,9 @@
     ML3Predicate *_thenPredicate;
 }
 
-@property(assign,copy) ML3Predicate * conditionPredicate;
-@property(assign,copy) ML3Predicate * elsePredicate;
-@property(assign,copy) ML3Predicate * thenPredicate;
+@property (nonatomic, readonly, copy) ML3Predicate *conditionPredicate;
+@property (nonatomic, readonly, copy) ML3Predicate *elsePredicate;
+@property (nonatomic, readonly, copy) ML3Predicate *thenPredicate;
 
 + (id)predicateWithConditionPredicate:(id)arg1 thenPredicate:(id)arg2 elsePredicate:(id)arg3;
 

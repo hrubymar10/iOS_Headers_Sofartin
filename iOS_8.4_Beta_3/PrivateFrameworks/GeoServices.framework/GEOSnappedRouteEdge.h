@@ -36,16 +36,16 @@
     } _routeOffsets;
 }
 
-@property(assign,readonly) bool clippedBack;
-@property(assign,readonly) bool clippedFront;
-@property(assign,readonly) struct { struct { id x_1_1_1; char *x_1_1_2; unsigned long long x_1_1_3; unsigned long long x_1_1_4; unsigned long long x_1_1_5; unsigned long long x_1_1_6; unsigned int x_1_1_7; unsigned long long x_1_1_8; bool x_1_1_9; unsigned long long x_1_1_10; float x_1_1_11; unsigned long long x_1_1_12; id x_1_1_13; int x_1_1_14; } x1; unsigned long long x2; unsigned long long x3; int x4; int x5; int x6; unsigned long long x7; unsigned long long x8; union { struct { struct { float x_1_3_1; float x_1_3_2; } x_1_2_1; struct { float x_2_3_1; float x_2_3_2; } x_1_2_2; } x_9_1_1; struct { float x_2_2_1; float x_2_2_2; float x_2_2_3; float x_2_2_4; } x_9_1_2; } x9; struct { /* ? */ } *x10; struct { unsigned short x_11_1_1[2]; unsigned short x_11_1_2[2]; } x11; unsigned char x12; }* feature;
-@property(assign,readonly) struct shared_ptr<geo::MapEdgeRoad> { struct MapEdgeRoad {} *x1; struct __shared_weak_count {} *x2; } mapEdge;
-@property(assign,readonly) unsigned long long mapEdgeOffset;
-@property(assign,readonly) unsigned long long pointCount;
-@property(assign,readonly) struct { float x1; float x2; }* points;
-@property(assign,readonly) struct PolylineCoordinate { unsigned int x1; float x2; } routeOffsetA;
-@property(assign,readonly) struct PolylineCoordinate { unsigned int x1; float x2; } routeOffsetB;
-@property(assign,readonly) struct PolylineCoordinate { unsigned int x1; float x2; }* routeOffsets;
+@property (nonatomic, readonly) bool clippedBack;
+@property (nonatomic, readonly) bool clippedFront;
+@property (nonatomic, readonly) struct { struct { id x_1_1_1; char *x_1_1_2; unsigned long long x_1_1_3; unsigned long long x_1_1_4; unsigned long long x_1_1_5; unsigned long long x_1_1_6; unsigned int x_1_1_7; unsigned long long x_1_1_8; bool x_1_1_9; unsigned long long x_1_1_10; float x_1_1_11; unsigned long long x_1_1_12; id x_1_1_13; int x_1_1_14; } x1; unsigned long long x2; unsigned long long x3; int x4; int x5; int x6; unsigned long long x7; unsigned long long x8; union { struct { struct { float x_1_3_1; float x_1_3_2; } x_1_2_1; struct { float x_2_3_1; float x_2_3_2; } x_1_2_2; } x_9_1_1; struct { float x_2_2_1; float x_2_2_2; float x_2_2_3; float x_2_2_4; } x_9_1_2; } x9; struct { /* ? */ } *x10; struct { unsigned short x_11_1_1[2]; unsigned short x_11_1_2[2]; } x11; unsigned char x12; }*feature;
+@property (nonatomic, readonly) struct shared_ptr<geo::MapEdgeRoad> { struct MapEdgeRoad {} *x1; struct __shared_weak_count {} *x2; } mapEdge;
+@property (nonatomic, readonly) unsigned long long mapEdgeOffset;
+@property (nonatomic, readonly) unsigned long long pointCount;
+@property (nonatomic, readonly) struct { float x1; float x2; }*points;
+@property (nonatomic, readonly) struct PolylineCoordinate { unsigned int x1; float x2; } routeOffsetA;
+@property (nonatomic, readonly) struct PolylineCoordinate { unsigned int x1; float x2; } routeOffsetB;
+@property (nonatomic, readonly) struct PolylineCoordinate { unsigned int x1; float x2; }*routeOffsets;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

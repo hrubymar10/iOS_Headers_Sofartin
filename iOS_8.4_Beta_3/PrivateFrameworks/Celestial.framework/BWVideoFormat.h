@@ -15,16 +15,16 @@
     unsigned long long _width;
 }
 
-@property(assign,readwrite) unsigned long long bytesPerRowAlignment;
-@property(assign,readwrite) unsigned int cacheMode;
-@property(assign,readwrite) unsigned long long extendedHeight;
-@property(assign,readwrite) unsigned long long extendedWidth;
-@property(assign,readwrite) unsigned long long height;
-@property(assign,readonly) NSDictionary * pixelBufferAttributes;
-@property(assign,readwrite) unsigned int pixelFormat;
-@property(assign,readwrite) unsigned long long planeAlignment;
-@property(assign,readwrite) bool prewireBuffers;
-@property(assign,readwrite) unsigned long long width;
+@property (nonatomic) unsigned long long bytesPerRowAlignment;
+@property (nonatomic) unsigned int cacheMode;
+@property (nonatomic) unsigned long long extendedHeight;
+@property (nonatomic) unsigned long long extendedWidth;
+@property (nonatomic) unsigned long long height;
+@property (nonatomic, readonly) NSDictionary *pixelBufferAttributes;
+@property (nonatomic) unsigned int pixelFormat;
+@property (nonatomic) unsigned long long planeAlignment;
+@property (nonatomic) bool prewireBuffers;
+@property (nonatomic) unsigned long long width;
 
 + (id)_formatRequirementsByResolvingFormatRequirements:(id)arg1 withFormatRequirements:(id)arg2;
 + (id)formatByResolvingRequirements:(id)arg1;

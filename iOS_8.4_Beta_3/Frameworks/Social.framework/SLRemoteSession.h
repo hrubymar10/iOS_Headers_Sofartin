@@ -7,8 +7,8 @@
     SLDatabase *_database;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,retain) SLDatabase * database;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (nonatomic, retain) SLDatabase *database;
 
 - (void).cxx_destruct;
 - (bool)clientHasEntitlement:(id)arg1;

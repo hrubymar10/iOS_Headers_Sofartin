@@ -19,8 +19,8 @@
     NSObject<OS_dispatch_source> *_writeSource;
 }
 
-@property(assign,retain) NSFileHandle * fileHandleForReading;
-@property(assign,retain) NSFileHandle * fileHandleForWriting;
+@property (readonly, retain) NSFileHandle *fileHandleForReading;
+@property (readonly, retain) NSFileHandle *fileHandleForWriting;
 
 + (id)pipe;
 

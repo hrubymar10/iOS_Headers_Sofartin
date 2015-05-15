@@ -8,9 +8,9 @@
     TSCHMultiDataAnimatingFrameLayer *mLabelLayer;
 }
 
-@property(assign,readonly) CALayer<TSCHMultiDataElementShapeLayer> * elementLayer;
-@property(assign,readwrite) bool elementUndefined;
-@property(assign,readonly) TSCHMultiDataAnimatingFrameLayer * labelLayer;
+@property (nonatomic, readonly) CALayer<TSCHMultiDataElementShapeLayer> *elementLayer;
+@property (nonatomic) bool elementUndefined;
+@property (nonatomic, readonly) TSCHMultiDataAnimatingFrameLayer *labelLayer;
 
 + (id)elementWithElementLayer:(id)arg1;
 

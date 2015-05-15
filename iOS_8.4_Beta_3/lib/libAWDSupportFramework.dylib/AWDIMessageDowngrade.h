@@ -14,14 +14,14 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int durationBeforeDowngrade;
-@property(assign,retain) NSString * guid;
-@property(assign,readwrite) bool hasDurationBeforeDowngrade;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasIsManualDowngrade;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int isManualDowngrade;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int durationBeforeDowngrade;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic) bool hasDurationBeforeDowngrade;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasIsManualDowngrade;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int isManualDowngrade;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -11,12 +11,12 @@
     NSSet *_normalizedPhones;
 }
 
-@property(assign,readonly) NSSet * addresses;
-@property(assign,readonly) NSString * compositeName;
-@property(assign,readonly) NSString * firstName;
-@property(assign,readonly) NSString * lastName;
-@property(assign,readonly) NSSet * normalizedEmails;
-@property(assign,readonly) NSSet * normalizedPhones;
+@property (nonatomic, readonly) NSSet *addresses;
+@property (nonatomic, readonly) NSString *compositeName;
+@property (nonatomic, readonly) NSString *firstName;
+@property (nonatomic, readonly) NSString *lastName;
+@property (nonatomic, readonly) NSSet *normalizedEmails;
+@property (nonatomic, readonly) NSSet *normalizedPhones;
 
 + (void)clearCache;
 + (id)fetch;

@@ -18,15 +18,15 @@
     UITableView *_tableView;
 }
 
-@property(assign,copy) NSIndexSet * allowedMetadataItems;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicProductAdditionalMetadataViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double effectiveContentHeight;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) MusicProductDescription * productDescription;
-@property(assign,readwrite) long long productDescriptionMaximumLengthForTextInput;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSIndexSet *allowedMetadataItems;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicProductAdditionalMetadataViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double effectiveContentHeight;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) MusicProductDescription *productDescription;
+@property (nonatomic) long long productDescriptionMaximumLengthForTextInput;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_didFinishContentHeightAnimation;

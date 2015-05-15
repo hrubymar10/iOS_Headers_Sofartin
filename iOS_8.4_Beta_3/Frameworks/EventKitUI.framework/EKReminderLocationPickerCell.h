@@ -12,7 +12,7 @@
     <EKStyleProvider> *_styleProvider;
 }
 
-@property(assign,readwrite) int locationPickerCellAccessoryType;
+@property (nonatomic) int locationPickerCellAccessoryType;
 
 - (void).cxx_destruct;
 - (id)_exclamationGlyphImage;

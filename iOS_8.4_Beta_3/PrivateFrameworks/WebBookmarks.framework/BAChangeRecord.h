@@ -8,9 +8,9 @@
     WebBookmarkCollection *_collection;
 }
 
-@property(assign,readonly) WebBookmark * bookmark;
-@property(assign,readonly) int changeType;
-@property(assign,readonly) WebBookmarkCollection * collection;
+@property (nonatomic, readonly) WebBookmark *bookmark;
+@property (nonatomic, readonly) int changeType;
+@property (nonatomic, readonly) WebBookmarkCollection *collection;
 
 - (id)bookmark;
 - (int)changeType;

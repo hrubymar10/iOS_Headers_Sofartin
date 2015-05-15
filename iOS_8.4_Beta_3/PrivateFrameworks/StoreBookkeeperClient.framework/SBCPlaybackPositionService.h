@@ -7,12 +7,12 @@
     bool _usingPlaybackPositions;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SBCPlaybackPositionDomain * playbackPositionDomain;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool usingPlaybackPositions;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SBCPlaybackPositionDomain *playbackPositionDomain;
+@property (readonly) Class superclass;
+@property (readonly) bool usingPlaybackPositions;
 
 + (Class)XPCServiceInterfaceClass;
 + (id)_serviceForPlaybackPositionDomain:(id)arg1;

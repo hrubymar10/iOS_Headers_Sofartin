@@ -15,16 +15,16 @@
     NSString *_validationTargetName;
 }
 
-@property(assign,retain) NSMutableArray * consoleErrorMessages;
-@property(getter=isDebugBuild,assign,readwrite) bool debugBuild;
-@property(assign,readwrite) bool forceDoNotReport;
-@property(assign,readwrite) unsigned long long numberOfValidationErrors;
-@property(assign,copy) NSString * overrideProcessName;
-@property(assign,readwrite) bool shouldCrashOnError;
-@property(assign,readwrite) bool shouldLogToConsole;
-@property(assign,readwrite) bool shouldReportToServer;
-@property(assign,retain) <AXValidationReportingServices> * validateionReportingServices;
-@property(assign,copy) NSString * validationTargetName;
+@property (nonatomic, retain) NSMutableArray *consoleErrorMessages;
+@property (getter=isDebugBuild, nonatomic) bool debugBuild;
+@property (nonatomic) bool forceDoNotReport;
+@property (nonatomic) unsigned long long numberOfValidationErrors;
+@property (nonatomic, copy) NSString *overrideProcessName;
+@property (nonatomic) bool shouldCrashOnError;
+@property (nonatomic) bool shouldLogToConsole;
+@property (nonatomic) bool shouldReportToServer;
+@property (nonatomic, retain) <AXValidationReportingServices> *validateionReportingServices;
+@property (nonatomic, copy) NSString *validationTargetName;
 
 + (id)sharedInstance;
 

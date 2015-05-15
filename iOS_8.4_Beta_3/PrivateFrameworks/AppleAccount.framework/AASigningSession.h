@@ -9,7 +9,7 @@
     NSString *_sessionURL;
 }
 
-@property(assign,readonly) int error;
+@property (nonatomic, readonly) int error;
 
 - (void).cxx_destruct;
 - (void)dealloc;

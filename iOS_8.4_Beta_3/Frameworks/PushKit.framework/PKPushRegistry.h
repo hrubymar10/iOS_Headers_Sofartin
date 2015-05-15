@@ -10,11 +10,11 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readwrite) <PKPushRegistryDelegate> * delegate;
-@property(assign,copy) NSSet * desiredPushTypes;
-@property(assign,retain) NSMutableDictionary * pushTypeToConnection;
-@property(assign,retain) NSMutableDictionary * pushTypeToToken;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property <PKPushRegistryDelegate> *delegate;
+@property (copy) NSSet *desiredPushTypes;
+@property (nonatomic, retain) NSMutableDictionary *pushTypeToConnection;
+@property (nonatomic, retain) NSMutableDictionary *pushTypeToToken;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 + (id)pushTypeToMachServiceName;
 

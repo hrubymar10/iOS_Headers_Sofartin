@@ -16,16 +16,16 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int duration;
-@property(assign,readwrite) bool hasDuration;
-@property(assign,readwrite) bool hasInitiator;
-@property(assign,readwrite) bool hasReason;
-@property(assign,readonly) bool hasSessionUUID;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int initiator;
-@property(assign,readwrite) int reason;
-@property(assign,retain) NSString * sessionUUID;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int duration;
+@property (nonatomic) bool hasDuration;
+@property (nonatomic) bool hasInitiator;
+@property (nonatomic) bool hasReason;
+@property (nonatomic, readonly) bool hasSessionUUID;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int initiator;
+@property (nonatomic) int reason;
+@property (nonatomic, retain) NSString *sessionUUID;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

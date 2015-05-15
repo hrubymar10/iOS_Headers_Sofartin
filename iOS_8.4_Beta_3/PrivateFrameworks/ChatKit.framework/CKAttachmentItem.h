@@ -12,16 +12,16 @@
     } _size;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSURL * fileURL;
-@property(assign,copy) NSString * guid;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * previewItemTitle;
-@property(assign,readonly) NSURL * previewItemURL;
-@property(assign,retain) NSURL * previewURL;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSURL *fileURL;
+@property (nonatomic, copy) NSString *guid;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSString *previewItemTitle;
+@property (readonly) NSURL *previewItemURL;
+@property (nonatomic, retain) NSURL *previewURL;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (readonly) Class superclass;
 
 + (id)UTITypes;
 + (struct CGSize { double x1; double x2; })defaultSize;

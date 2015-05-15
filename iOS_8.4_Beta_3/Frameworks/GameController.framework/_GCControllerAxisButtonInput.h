@@ -7,8 +7,8 @@
     bool _positive;
 }
 
-@property(assign,readwrite) _GCControllerAxisInput * axis;
-@property(getter=isPositive,assign,readonly) bool positive;
+@property _GCControllerAxisInput *axis;
+@property (getter=isPositive, readonly) bool positive;
 
 - (void).cxx_destruct;
 - (bool)_setValue:(float)arg1;

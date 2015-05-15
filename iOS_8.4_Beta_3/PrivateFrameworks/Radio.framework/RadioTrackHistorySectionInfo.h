@@ -9,10 +9,10 @@
     NSArray *_objects;
 }
 
-@property(assign,readonly) NSString * indexTitle;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) unsigned long long numberOfObjects;
-@property(assign,readonly) NSArray * objects;
+@property (nonatomic, readonly) NSString *indexTitle;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) unsigned long long numberOfObjects;
+@property (nonatomic, readonly) NSArray *objects;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

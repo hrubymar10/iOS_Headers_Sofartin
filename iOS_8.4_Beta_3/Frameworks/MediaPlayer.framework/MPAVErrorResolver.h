@@ -6,7 +6,7 @@
     <MPAVErrorResolverDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <MPAVErrorResolverDelegate> * delegate;
+@property (nonatomic) <MPAVErrorResolverDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)delegate;

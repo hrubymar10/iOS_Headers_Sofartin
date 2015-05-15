@@ -6,7 +6,7 @@
     <PLAssetContainerList> *_containerList;
 }
 
-@property(assign,retain) <PLAssetContainerList> * containerList;
+@property (nonatomic, readonly, retain) <PLAssetContainerList> *containerList;
 
 - (void)_enumerateAssetsAtIndexes:(id)arg1 options:(unsigned long long)arg2 usingBlock:(id)arg3;
 - (id)containerList;

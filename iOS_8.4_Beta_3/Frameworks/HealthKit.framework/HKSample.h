@@ -8,9 +8,9 @@
     NSDate *_startDate;
 }
 
-@property(assign,readonly) NSDate * endDate;
-@property(assign,readonly) HKSampleType * sampleType;
-@property(assign,readonly) NSDate * startDate;
+@property (readonly) NSDate *endDate;
+@property (readonly) HKSampleType *sampleType;
+@property (readonly) NSDate *startDate;
 
 + (id)_newSampleWithType:(id)arg1 startDate:(id)arg2 endDate:(id)arg3 metadata:(id)arg4 config:(id)arg5;
 + (id)_sampleWithUUID:(id)arg1 metadata:(id)arg2 sourceBundleIdentifier:(id)arg3 creationDate:(id)arg4 sampleType:(id)arg5 startDate:(id)arg6 endDate:(id)arg7;

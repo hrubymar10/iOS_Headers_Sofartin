@@ -6,7 +6,7 @@
     NSData *_sessionToken;
 }
 
-@property(assign,copy) NSData * sessionToken;
+@property (copy) NSData *sessionToken;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

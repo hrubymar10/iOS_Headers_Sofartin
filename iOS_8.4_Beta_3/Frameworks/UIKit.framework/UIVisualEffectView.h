@@ -13,9 +13,9 @@
     UIView *_maskView;
 }
 
-@property(setter=_setGroupName:,assign,copy) NSString * _groupName;
-@property(assign,retain) UIView * contentView;
-@property(assign,copy) UIVisualEffect * effect;
+@property (setter=_setGroupName:, nonatomic, copy) NSString *_groupName;
+@property (nonatomic, retain) UIView *contentView;
+@property (nonatomic, copy) UIVisualEffect *effect;
 
 + (bool)supportsSecureCoding;
 

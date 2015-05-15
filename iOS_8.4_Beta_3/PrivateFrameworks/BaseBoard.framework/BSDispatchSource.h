@@ -10,9 +10,9 @@
     NSObject<OS_dispatch_source> *_source;
 }
 
-@property(assign,copy) id cancelHandler;
-@property(assign,copy) id eventHandler;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, copy) id cancelHandler;
+@property (nonatomic, copy) id eventHandler;
+@property (nonatomic, readonly, retain) NSObject<OS_dispatch_queue> *queue;
 
 - (id)cancelHandler;
 - (void)dealloc;

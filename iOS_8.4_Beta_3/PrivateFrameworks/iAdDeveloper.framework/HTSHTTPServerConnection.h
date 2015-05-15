@@ -21,13 +21,13 @@
     NSObject<OS_dispatch_source> *_writeSource;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * identifier;
-@property(assign,retain) NSTimer * idleTimer;
-@property(assign,readwrite) double lastActivity;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, retain) NSTimer *idleTimer;
+@property (nonatomic) double lastActivity;
+@property (readonly) Class superclass;
 
 - (void)_closeInputStream;
 - (void)_closeOutputStream;

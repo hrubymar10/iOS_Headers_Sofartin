@@ -4,11 +4,11 @@
 
 @interface APSIncomingMessage : APSMessage
 
-@property(getter=wasFromStorage,assign,readwrite) bool fromStorage;
-@property(getter=wasLastMessageFromStorage,assign,readwrite) bool lastMessageFromStorage;
-@property(assign,readwrite) long long priority;
-@property(assign,copy) NSDate * timestamp;
-@property(assign,copy) NSData * token;
+@property (getter=wasFromStorage, nonatomic) bool fromStorage;
+@property (getter=wasLastMessageFromStorage, nonatomic) bool lastMessageFromStorage;
+@property (nonatomic) long long priority;
+@property (nonatomic, copy) NSDate *timestamp;
+@property (nonatomic, copy) NSData *token;
 
 - (long long)priority;
 - (void)setFromStorage:(bool)arg1;

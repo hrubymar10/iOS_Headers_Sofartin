@@ -45,27 +45,27 @@
     unsigned long long _uploadPayloadSize;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,retain) NSArray * clientCertificates;
-@property(assign,retain) NSURLConnection * connection;
-@property(assign,retain) NSRunLoop * connectionRunLoop;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PBRequesterDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long downloadPayloadSize;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSDictionary * httpRequestHeaders;
-@property(assign,retain) NSDictionary * httpResponseHeaders;
-@property(assign,readwrite) bool ignoresResponse;
-@property(assign,retain) NSString * logRequestToFile;
-@property(assign,retain) NSString * logResponseToFile;
-@property(assign,readwrite) bool needsCancel;
-@property(assign,readonly) unsigned long long requestResponseTime;
-@property(assign,readonly) NSArray * requests;
-@property(assign,readwrite) bool shouldHandleCookies;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double timeoutSeconds;
-@property(assign,readonly) unsigned long long uploadPayloadSize;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic, retain) NSArray *clientCertificates;
+@property (nonatomic, retain) NSURLConnection *connection;
+@property (nonatomic, retain) NSRunLoop *connectionRunLoop;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PBRequesterDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) unsigned long long downloadPayloadSize;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSDictionary *httpRequestHeaders;
+@property (nonatomic, retain) NSDictionary *httpResponseHeaders;
+@property (nonatomic) bool ignoresResponse;
+@property (nonatomic, retain) NSString *logRequestToFile;
+@property (nonatomic, retain) NSString *logResponseToFile;
+@property bool needsCancel;
+@property (nonatomic, readonly) unsigned long long requestResponseTime;
+@property (nonatomic, readonly) NSArray *requests;
+@property (nonatomic) bool shouldHandleCookies;
+@property (readonly) Class superclass;
+@property (nonatomic) double timeoutSeconds;
+@property (nonatomic, readonly) unsigned long long uploadPayloadSize;
 
 + (bool)usesEncodedMessages;
 

@@ -18,21 +18,21 @@
     NSData *_xattrSignature;
 }
 
-@property(assign,retain) BRFieldCKInfo * ckInfo;
-@property(assign,retain) NSSet * conflictLoserEtags;
-@property(assign,retain) NSData * contentSignature;
-@property(assign,readonly) bool hasThumbnail;
-@property(assign,readonly) bool isPackage;
-@property(assign,retain) NSString * lastEditorDeviceName;
-@property(assign,retain) NSNumber * lastEditorDeviceOrOwnerKey;
-@property(assign,retain) NSData * lazyXattr;
-@property(assign,readwrite) long long mtime;
-@property(assign,retain) NSString * originalPOSIXName;
-@property(assign,retain) NSData * quarantineInfo;
-@property(assign,readwrite) long long size;
-@property(assign,retain) NSData * thumbnailSignature;
-@property(assign,readwrite) long long thumbnailSize;
-@property(assign,retain) NSData * xattrSignature;
+@property (nonatomic, retain) BRFieldCKInfo *ckInfo;
+@property (nonatomic, retain) NSSet *conflictLoserEtags;
+@property (nonatomic, retain) NSData *contentSignature;
+@property (nonatomic, readonly) bool hasThumbnail;
+@property (nonatomic, readonly) bool isPackage;
+@property (nonatomic, retain) NSString *lastEditorDeviceName;
+@property (nonatomic, retain) NSNumber *lastEditorDeviceOrOwnerKey;
+@property (nonatomic, retain) NSData *lazyXattr;
+@property (nonatomic) long long mtime;
+@property (nonatomic, retain) NSString *originalPOSIXName;
+@property (nonatomic, retain) NSData *quarantineInfo;
+@property (nonatomic) long long size;
+@property (nonatomic, retain) NSData *thumbnailSignature;
+@property (nonatomic) long long thumbnailSize;
+@property (nonatomic, retain) NSData *xattrSignature;
 
 + (bool)supportsSecureCoding;
 

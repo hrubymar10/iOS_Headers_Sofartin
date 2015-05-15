@@ -13,13 +13,13 @@
     int _status;
 }
 
-@property(assign,retain) GEOPDPlaceGlobalResult * globalResult;
-@property(assign,readonly) bool hasGlobalResult;
-@property(assign,readwrite) bool hasRequestType;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,retain) NSMutableArray * placeResults;
-@property(assign,readwrite) int requestType;
-@property(assign,readwrite) int status;
+@property (nonatomic, retain) GEOPDPlaceGlobalResult *globalResult;
+@property (nonatomic, readonly) bool hasGlobalResult;
+@property (nonatomic) bool hasRequestType;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic, retain) NSMutableArray *placeResults;
+@property (nonatomic) int requestType;
+@property (nonatomic) int status;
 
 - (id)_disambiguationLabels;
 - (void)addPlaceResult:(id)arg1;

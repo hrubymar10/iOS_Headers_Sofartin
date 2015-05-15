@@ -8,9 +8,9 @@
     NSURL *_url;
 }
 
-@property(assign,readwrite) bool createSandbox;
-@property(assign,copy) NSData * scope;
-@property(assign,copy) NSURL * url;
+@property (nonatomic) bool createSandbox;
+@property (nonatomic, copy) NSData *scope;
+@property (nonatomic, copy) NSURL *url;
 
 + (void)assembleURL:(id)arg1 sandbox:(id)arg2 physicalURL:(id)arg3 physicalSandbox:(id)arg4;
 + (bool)supportsSecureCoding;

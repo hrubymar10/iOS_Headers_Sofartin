@@ -4,7 +4,7 @@
 
 @interface SANoteSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * notes;
+@property (nonatomic, copy) NSArray *notes;
 
 + (id)snippet;
 + (id)snippetWithDictionary:(id)arg1 context:(id)arg2;

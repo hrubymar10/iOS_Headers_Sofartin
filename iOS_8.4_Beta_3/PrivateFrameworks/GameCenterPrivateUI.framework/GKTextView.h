@@ -8,11 +8,11 @@
     GKLabel *_placeholderLabel;
 }
 
-@property(assign,retain) GKTextStyle * _baseStyle;
-@property(assign,retain) GKTextStyle * appliedStyle;
-@property(assign,retain) NSAttributedString * attributedPlaceholderText;
-@property(assign,readwrite) GKLabel * placeholderLabel;
-@property(assign,retain) NSString * placeholderText;
+@property (nonatomic, retain) GKTextStyle *_baseStyle;
+@property (nonatomic, retain) GKTextStyle *appliedStyle;
+@property (nonatomic, retain) NSAttributedString *attributedPlaceholderText;
+@property (nonatomic) GKLabel *placeholderLabel;
+@property (nonatomic, retain) NSString *placeholderText;
 
 + (void)initialize;
 

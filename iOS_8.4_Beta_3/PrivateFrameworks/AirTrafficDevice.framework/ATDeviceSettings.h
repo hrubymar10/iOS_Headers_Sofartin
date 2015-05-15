@@ -7,17 +7,17 @@
     NSUserDefaults *_userDefaults;
 }
 
-@property(assign,copy) NSArray * dataClassesNeedingSync;
-@property(assign,readonly) bool fairPlayEnabled;
-@property(assign,readonly) bool grappaEnabled;
-@property(assign,copy) NSString * interfaceName;
-@property(assign,readonly) bool isDeviceLinkClient;
-@property(assign,copy) NSString * libraryIdentifier;
-@property(assign,readonly) double pairingSyncCompletionTime;
-@property(assign,copy) NSString * serviceDomain;
-@property(assign,copy) NSString * serviceName;
-@property(assign,copy) NSString * serviceType;
-@property(assign,readonly) bool useNetServicesConnection;
+@property (nonatomic, readonly, copy) NSArray *dataClassesNeedingSync;
+@property (nonatomic, readonly) bool fairPlayEnabled;
+@property (nonatomic, readonly) bool grappaEnabled;
+@property (nonatomic, readonly, copy) NSString *interfaceName;
+@property (nonatomic, readonly) bool isDeviceLinkClient;
+@property (nonatomic, readonly, copy) NSString *libraryIdentifier;
+@property (nonatomic, readonly) double pairingSyncCompletionTime;
+@property (nonatomic, readonly, copy) NSString *serviceDomain;
+@property (nonatomic, readonly, copy) NSString *serviceName;
+@property (nonatomic, readonly, copy) NSString *serviceType;
+@property (nonatomic, readonly) bool useNetServicesConnection;
 
 + (id)sharedInstance;
 

@@ -6,9 +6,9 @@
     double mStartTime;
 }
 
-@property(assign,readonly) bool canPrecedeDiscontinuity;
-@property(getter=isIgnoredWhenSeeking,assign,readonly) bool ignoredWhenSeeking;
-@property(assign,readonly) double startTime;
+@property (nonatomic, readonly) bool canPrecedeDiscontinuity;
+@property (getter=isIgnoredWhenSeeking, nonatomic, readonly) bool ignoredWhenSeeking;
+@property (nonatomic, readonly) double startTime;
 
 - (bool)canPrecedeDiscontinuity;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

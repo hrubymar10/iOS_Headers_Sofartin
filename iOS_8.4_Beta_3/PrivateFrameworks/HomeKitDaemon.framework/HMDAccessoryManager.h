@@ -19,24 +19,24 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) NSMutableArray * accessoryServerBrowsers;
-@property(assign,retain) NSMapTable * addAccessoryCompletionHandlersForAccessoryServers;
-@property(assign,retain) HAPAccessoryServerBrowserBTLE * btleAccessoryServerBrowser;
-@property(assign,retain) NSHashTable * currentlyPairingAccessories;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) NSMapTable * delegates;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) HAPAccessoryServerBrowserIP * ipAccessoryServerBrowser;
-@property(assign,retain) NSMutableSet * pairedAccessories;
-@property(assign,retain) NSMapTable * pairingRetryTimersForAccessoryServers;
-@property(assign,retain) NSObject<OS_dispatch_source> * reachabilityTimerForBTLE;
-@property(assign,retain) NSHashTable * removeAccessoryInProgressForHMDAccessories;
-@property(assign,retain) NSMapTable * retrievalCompletionTuplesForAccessories;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableSet * unpairedAccessories;
-@property(assign,retain) NSHashTable * unpairedSecondaryHAPAccessories;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) NSMutableArray *accessoryServerBrowsers;
+@property (nonatomic, retain) NSMapTable *addAccessoryCompletionHandlersForAccessoryServers;
+@property (nonatomic, retain) HAPAccessoryServerBrowserBTLE *btleAccessoryServerBrowser;
+@property (nonatomic, retain) NSHashTable *currentlyPairingAccessories;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) NSMapTable *delegates;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) HAPAccessoryServerBrowserIP *ipAccessoryServerBrowser;
+@property (nonatomic, retain) NSMutableSet *pairedAccessories;
+@property (nonatomic, retain) NSMapTable *pairingRetryTimersForAccessoryServers;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *reachabilityTimerForBTLE;
+@property (nonatomic, retain) NSHashTable *removeAccessoryInProgressForHMDAccessories;
+@property (nonatomic, retain) NSMapTable *retrievalCompletionTuplesForAccessories;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMutableSet *unpairedAccessories;
+@property (nonatomic, retain) NSHashTable *unpairedSecondaryHAPAccessories;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (bool)_accessoryServerIsBlocked:(id)arg1;

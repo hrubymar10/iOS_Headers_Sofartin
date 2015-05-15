@@ -8,10 +8,10 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,readonly) bool hasLine;
-@property(assign,retain) NSString * line;
-@property(assign,retain) NSMutableArray * spans;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, readonly) bool hasLine;
+@property (nonatomic, retain) NSString *line;
+@property (nonatomic, retain) NSMutableArray *spans;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (void)addSpan:(id)arg1;
 - (void)clearSpans;

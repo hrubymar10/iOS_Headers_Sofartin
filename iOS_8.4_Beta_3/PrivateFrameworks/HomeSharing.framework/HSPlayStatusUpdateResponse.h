@@ -11,12 +11,12 @@
     NSDictionary *_playStatusInformation;
 }
 
-@property(assign,readwrite) unsigned int nextRevisionID;
-@property(assign,readwrite) unsigned long long nowPlayingContainerID;
-@property(assign,readwrite) unsigned long long nowPlayingContainerItemID;
-@property(assign,readwrite) unsigned long long nowPlayingDatabaseID;
-@property(assign,readwrite) unsigned long long nowPlayingItemID;
-@property(assign,copy) NSDictionary * playStatusInformation;
+@property (nonatomic) unsigned int nextRevisionID;
+@property (nonatomic) unsigned long long nowPlayingContainerID;
+@property (nonatomic) unsigned long long nowPlayingContainerItemID;
+@property (nonatomic) unsigned long long nowPlayingDatabaseID;
+@property (nonatomic) unsigned long long nowPlayingItemID;
+@property (nonatomic, copy) NSDictionary *playStatusInformation;
 
 - (void).cxx_destruct;
 - (id)description;

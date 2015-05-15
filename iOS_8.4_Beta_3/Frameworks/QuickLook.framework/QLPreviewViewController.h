@@ -55,21 +55,21 @@
     bool _visible;
 }
 
-@property(assign,readonly) int airPlayMode;
-@property(assign,readonly) UIView * airPlayView;
-@property(assign,readwrite) struct { long long x1; struct { unsigned int x_2_1_1[8]; } x2; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_3_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_3_1_2; } x3; } clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) QLDisplayBundle * displayBundle;
-@property(assign,readwrite) <QLPreviewItemInteractionDelegate> * displayBundleDelegate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long index;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } initialFrame;
-@property(assign,retain) <QLPreviewItem> * previewItem;
-@property(assign,readwrite) int previewMode;
-@property(assign,readonly) UIView * snapshotView;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool visible;
+@property (readonly) int airPlayMode;
+@property (readonly) UIView *airPlayView;
+@property struct { long long x1; struct { unsigned int x_2_1_1[8]; } x2; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_3_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_3_1_2; } x3; } clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) QLDisplayBundle *displayBundle;
+@property <QLPreviewItemInteractionDelegate> *displayBundleDelegate;
+@property (readonly) unsigned long long hash;
+@property long long index;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } initialFrame;
+@property (retain) <QLPreviewItem> *previewItem;
+@property int previewMode;
+@property (readonly) UIView *snapshotView;
+@property (readonly) Class superclass;
+@property (nonatomic) bool visible;
 
 - (void)_cancelScheduledShowProgressiveUI;
 - (void)_hidePasswordView;

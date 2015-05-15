@@ -19,9 +19,9 @@
     NSObject<OS_dispatch_queue> *_timerQueue;
 }
 
-@property(assign,copy) id defaultMessageHandler;
-@property(assign,copy) id disconnectHandler;
-@property(assign,copy) id shutdownHandler;
+@property (nonatomic, copy) id defaultMessageHandler;
+@property (nonatomic, copy) id disconnectHandler;
+@property (nonatomic, copy) id shutdownHandler;
 
 - (bool)_doingWork;
 - (void)_handleNewConnection:(id)arg1;

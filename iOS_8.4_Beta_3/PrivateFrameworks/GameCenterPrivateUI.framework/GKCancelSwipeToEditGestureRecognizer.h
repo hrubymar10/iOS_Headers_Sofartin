@@ -6,7 +6,7 @@
     GKCollectionViewCell *_currentEditingCell;
 }
 
-@property(assign,retain) GKCollectionViewCell * currentEditingCell;
+@property (nonatomic, retain) GKCollectionViewCell *currentEditingCell;
 
 - (id)currentEditingCell;
 - (void)dealloc;

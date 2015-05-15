@@ -6,7 +6,7 @@
     int _type;
 }
 
-@property(assign,readonly) int type;
+@property (nonatomic, readonly) int type;
 
 + (id)stringForType:(int)arg1;
 

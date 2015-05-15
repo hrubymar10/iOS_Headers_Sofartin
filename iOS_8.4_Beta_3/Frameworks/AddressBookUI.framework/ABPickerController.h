@@ -14,20 +14,20 @@
     UITableViewController *_tableViewController;
 }
 
-@property(assign,readwrite) bool allowsCustomItems;
-@property(assign,copy) NSArray * builtinItems;
-@property(assign,retain) CNContactStyle * contactStyle;
-@property(assign,copy) NSArray * customItems;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ABPickerControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id itemLocalizationBlock;
-@property(assign,copy) NSString * itemLocalizationKey;
-@property(assign,retain) NSIndexPath * selectedIndexPath;
-@property(assign,retain) NSString * selectedItem;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITableViewController * tableViewController;
+@property (nonatomic) bool allowsCustomItems;
+@property (nonatomic, copy) NSArray *builtinItems;
+@property (nonatomic, retain) CNContactStyle *contactStyle;
+@property (nonatomic, copy) NSArray *customItems;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ABPickerControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id itemLocalizationBlock;
+@property (nonatomic, copy) NSString *itemLocalizationKey;
+@property (nonatomic, retain) NSIndexPath *selectedIndexPath;
+@property (nonatomic, retain) NSString *selectedItem;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UITableViewController *tableViewController;
 
 - (id)_itemAtIndexPath:(id)arg1;
 - (void)_updateRightButtonItem;

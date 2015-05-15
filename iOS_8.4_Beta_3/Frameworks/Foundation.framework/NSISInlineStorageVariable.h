@@ -8,13 +8,13 @@
     int _valueRestriction;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) bool shouldBeMinimized;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) int valueRestriction;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *name;
+@property bool shouldBeMinimized;
+@property (readonly) Class superclass;
+@property int valueRestriction;
 
 - (oneway void)dealloc;
 - (id)markedConstraint;

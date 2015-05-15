@@ -4,7 +4,7 @@
 
 @interface TSTMutableStrokeLayer : TSTStrokeLayer
 
-@property(assign,readwrite) unsigned short columnOrRowIndex;
+@property (nonatomic) unsigned short columnOrRowIndex;
 
 - (void)appendStroke:(id)arg1 inRange:(struct TSTSimpleRange { long long x1; unsigned long long x2; })arg2 order:(int)arg3;
 - (void)flattenStrokeOrder;

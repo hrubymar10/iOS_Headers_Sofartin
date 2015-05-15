@@ -4,7 +4,7 @@
 
 @interface BWFormatRequirements : NSObject
 
-@property(assign,readonly) unsigned int mediaType;
+@property (readonly) unsigned int mediaType;
 
 - (Class)formatClass;
 - (id)init;

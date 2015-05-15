@@ -7,8 +7,8 @@
     NSString *_searchString;
 }
 
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) NSString * searchString;
+@property (readonly) NSDate *date;
+@property (readonly) NSString *searchString;
 
 - (void).cxx_destruct;
 - (id)date;

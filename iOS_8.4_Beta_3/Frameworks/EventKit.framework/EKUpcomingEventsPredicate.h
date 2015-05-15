@@ -6,7 +6,7 @@
     int _limit;
 }
 
-@property(assign,readonly) int limit;
+@property (nonatomic, readonly) int limit;
 
 + (id)predicateWithLimit:(int)arg1;
 + (bool)supportsSecureCoding;

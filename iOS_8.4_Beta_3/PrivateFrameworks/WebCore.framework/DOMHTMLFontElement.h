@@ -4,9 +4,9 @@
 
 @interface DOMHTMLFontElement : DOMHTMLElement
 
-@property(assign,copy) NSString * color;
-@property(assign,copy) NSString * face;
-@property(assign,copy) NSString * size;
+@property (copy) NSString *color;
+@property (copy) NSString *face;
+@property (copy) NSString *size;
 
 - (id)color;
 - (id)face;

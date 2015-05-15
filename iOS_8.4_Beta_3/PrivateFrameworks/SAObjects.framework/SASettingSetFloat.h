@@ -4,7 +4,7 @@
 
 @interface SASettingSetFloat : SASettingSetNumber
 
-@property(assign,readwrite) float value;
+@property (nonatomic) float value;
 
 + (id)setFloat;
 + (id)setFloatWithDictionary:(id)arg1 context:(id)arg2;

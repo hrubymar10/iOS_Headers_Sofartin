@@ -4,11 +4,11 @@
 
 @interface PLCloudFeedCommentsEntry : PLCloudFeedEntry
 
-@property(assign,retain) NSString * entryCloudAssetGUID;
-@property(assign,retain) NSOrderedSet * entryComments;
-@property(assign,retain) NSOrderedSet * entryLikeComments;
-@property(assign,readonly) NSMutableOrderedSet * mutableEntryComments;
-@property(assign,readonly) NSMutableOrderedSet * mutableEntryLikeComments;
+@property (nonatomic, retain) NSString *entryCloudAssetGUID;
+@property (nonatomic, retain) NSOrderedSet *entryComments;
+@property (nonatomic, retain) NSOrderedSet *entryLikeComments;
+@property (nonatomic, readonly) NSMutableOrderedSet *mutableEntryComments;
+@property (nonatomic, readonly) NSMutableOrderedSet *mutableEntryLikeComments;
 
 + (id)entityName;
 

@@ -11,14 +11,14 @@
     bool _shuffleAlbum;
 }
 
-@property(assign,retain) NSObject<PLAlbumProtocol> * album;
-@property(assign,retain) NSArray * albumAssets;
-@property(assign,readonly) PLManagedAsset * currentPhoto;
-@property(assign,readwrite) <PLSlideshowPluginDelegate> * delegate;
-@property(assign,readonly) NSArray * displayedPhotos;
-@property(assign,readwrite) double secondsPerSlide;
-@property(assign,readwrite) bool shouldRepeat;
-@property(assign,readwrite) bool shuffleAlbum;
+@property (nonatomic, retain) NSObject<PLAlbumProtocol> *album;
+@property (nonatomic, retain) NSArray *albumAssets;
+@property (nonatomic, readonly) PLManagedAsset *currentPhoto;
+@property (nonatomic) <PLSlideshowPluginDelegate> *delegate;
+@property (nonatomic, readonly) NSArray *displayedPhotos;
+@property (nonatomic) double secondsPerSlide;
+@property (nonatomic) bool shouldRepeat;
+@property (nonatomic) bool shuffleAlbum;
 
 - (struct NSObject { Class x1; }*)album;
 - (id)albumAssets;

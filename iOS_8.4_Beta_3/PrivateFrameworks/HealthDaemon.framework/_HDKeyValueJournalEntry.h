@@ -11,12 +11,12 @@
     <NSSecureCoding> *_value;
 }
 
-@property(assign,readonly) long long category;
-@property(assign,readonly) NSString * domain;
-@property(assign,readonly) NSString * key;
-@property(assign,readonly) NSDate * modificationDate;
-@property(assign,readonly) long long provenance;
-@property(assign,readonly) <NSSecureCoding> * value;
+@property (nonatomic, readonly) long long category;
+@property (nonatomic, readonly) NSString *domain;
+@property (nonatomic, readonly) NSString *key;
+@property (nonatomic, readonly) NSDate *modificationDate;
+@property (nonatomic, readonly) long long provenance;
+@property (nonatomic, readonly) <NSSecureCoding> *value;
 
 + (void)applyEntries:(id)arg1 withDaemon:(id)arg2;
 + (long long)behavior;

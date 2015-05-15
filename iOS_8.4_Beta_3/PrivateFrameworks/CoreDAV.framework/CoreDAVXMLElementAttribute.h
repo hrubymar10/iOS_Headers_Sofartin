@@ -8,9 +8,9 @@
     NSString *_value;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * nameSpace;
-@property(assign,retain) NSString * value;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *nameSpace;
+@property (nonatomic, retain) NSString *value;
 
 - (void)dealloc;
 - (id)description;

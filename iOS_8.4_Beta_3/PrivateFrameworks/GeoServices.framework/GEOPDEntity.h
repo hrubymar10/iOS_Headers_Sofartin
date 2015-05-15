@@ -22,24 +22,24 @@
     NSString *_url;
 }
 
-@property(assign,retain) NSMutableArray * altFaxs;
-@property(assign,retain) NSMutableArray * altTelephones;
-@property(assign,retain) NSMutableArray * altUrls;
-@property(assign,retain) NSString * fax;
-@property(assign,readonly) bool hasFax;
-@property(assign,readwrite) bool hasIsDisputed;
-@property(assign,readwrite) bool hasIsPermanentlyClosed;
-@property(assign,readonly) bool hasTelephone;
-@property(assign,readwrite) bool hasType;
-@property(assign,readonly) bool hasUrl;
-@property(assign,readwrite) bool isDisputed;
-@property(assign,readwrite) bool isPermanentlyClosed;
-@property(assign,retain) NSMutableArray * localizedCategorys;
-@property(assign,retain) NSMutableArray * names;
-@property(assign,retain) NSMutableArray * spokenNames;
-@property(assign,retain) NSString * telephone;
-@property(assign,readwrite) int type;
-@property(assign,retain) NSString * url;
+@property (nonatomic, retain) NSMutableArray *altFaxs;
+@property (nonatomic, retain) NSMutableArray *altTelephones;
+@property (nonatomic, retain) NSMutableArray *altUrls;
+@property (nonatomic, retain) NSString *fax;
+@property (nonatomic, readonly) bool hasFax;
+@property (nonatomic) bool hasIsDisputed;
+@property (nonatomic) bool hasIsPermanentlyClosed;
+@property (nonatomic, readonly) bool hasTelephone;
+@property (nonatomic) bool hasType;
+@property (nonatomic, readonly) bool hasUrl;
+@property (nonatomic) bool isDisputed;
+@property (nonatomic) bool isPermanentlyClosed;
+@property (nonatomic, retain) NSMutableArray *localizedCategorys;
+@property (nonatomic, retain) NSMutableArray *names;
+@property (nonatomic, retain) NSMutableArray *spokenNames;
+@property (nonatomic, retain) NSString *telephone;
+@property (nonatomic) int type;
+@property (nonatomic, retain) NSString *url;
 
 + (id)entityForPlaceData:(id)arg1;
 

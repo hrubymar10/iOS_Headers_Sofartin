@@ -10,9 +10,9 @@
     NSMutableArray *_versionDomains;
 }
 
-@property(assign,readwrite) bool hasMinimumVersion;
-@property(assign,readwrite) unsigned int minimumVersion;
-@property(assign,retain) NSMutableArray * versionDomains;
+@property (nonatomic) bool hasMinimumVersion;
+@property (nonatomic) unsigned int minimumVersion;
+@property (nonatomic, retain) NSMutableArray *versionDomains;
 
 - (void)addVersionDomain:(id)arg1;
 - (void)clearVersionDomains;

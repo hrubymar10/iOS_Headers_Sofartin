@@ -7,7 +7,7 @@
     bool _ignoreAccessibilitySizes;
 }
 
-@property(assign,readwrite) bool ignoreAccessibilitySizes;
+@property bool ignoreAccessibilitySizes;
 
 + (id)constraintWithItem:(id)arg1 attribute:(long long)arg2 relatedBy:(long long)arg3 toItem:(id)arg4 attribute:(long long)arg5 textAttributesObject:(id)arg6 keyPath:(id)arg7 baselineConstant:(double)arg8;
 

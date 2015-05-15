@@ -6,7 +6,7 @@
     SlotSequence *_slots;
 }
 
-@property(assign,readonly) SlotSequence * slots;
+@property (readonly) SlotSequence *slots;
 
 - (void)dealloc;
 - (id)description;

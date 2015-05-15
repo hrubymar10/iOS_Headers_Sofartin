@@ -7,7 +7,7 @@
     _UITextServiceSession *_learnSession;
 }
 
-@property(assign,readonly) UILongPressGestureRecognizer * selectionLongPressRecognizer;
+@property (nonatomic, readonly) UILongPressGestureRecognizer *selectionLongPressRecognizer;
 
 - (void)blockSelectionChangedWithTouch:(long long)arg1 withFlags:(long long)arg2 growThreshold:(double)arg3 shrinkThreshold:(double)arg4;
 - (bool)gestureRecognizer:(id)arg1 shouldReceiveTouch:(id)arg2;

@@ -13,16 +13,16 @@
     NSMapTable *_userActivitiesByUUID;
 }
 
-@property(assign,copy) NSUUID * activeUserActivityUUID;
-@property(assign,readonly) bool activityContinuationIsEnabled;
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * serverQ;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool supportsActivityContinuation;
-@property(assign,retain) NSMapTable * userActivitiesByUUID;
+@property (copy) NSUUID *activeUserActivityUUID;
+@property (readonly) bool activityContinuationIsEnabled;
+@property (readonly, retain) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSObject<OS_dispatch_queue> *serverQ;
+@property (readonly) Class superclass;
+@property (readonly) bool supportsActivityContinuation;
+@property (retain) NSMapTable *userActivitiesByUUID;
 
 + (id)defaultManager;
 + (bool)shouldSupportActivityContinuation;

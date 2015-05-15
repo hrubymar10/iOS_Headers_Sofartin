@@ -19,14 +19,14 @@
     void *_reserved;
 }
 
-@property(assign,readonly) unsigned int channelCount;
-@property(assign,readonly) AVAudioChannelLayout * channelLayout;
-@property(assign,readonly) unsigned long long commonFormat;
-@property(getter=isInterleaved,assign,readonly) bool interleaved;
-@property(assign,readonly) double sampleRate;
-@property(assign,readonly) NSDictionary * settings;
-@property(getter=isStandard,assign,readonly) bool standard;
-@property(assign,readonly) const struct AudioStreamBasicDescription { double x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; unsigned int x6; unsigned int x7; unsigned int x8; unsigned int x9; }* streamDescription;
+@property (nonatomic, readonly) unsigned int channelCount;
+@property (nonatomic, readonly) AVAudioChannelLayout *channelLayout;
+@property (nonatomic, readonly) unsigned long long commonFormat;
+@property (getter=isInterleaved, nonatomic, readonly) bool interleaved;
+@property (nonatomic, readonly) double sampleRate;
+@property (nonatomic, readonly) NSDictionary *settings;
+@property (getter=isStandard, nonatomic, readonly) bool standard;
+@property (nonatomic, readonly) const struct AudioStreamBasicDescription { double x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; unsigned int x6; unsigned int x7; unsigned int x8; unsigned int x9; }*streamDescription;
 
 + (id)settingsFromASBD:(const struct AudioStreamBasicDescription { double x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; unsigned int x6; unsigned int x7; unsigned int x8; unsigned int x9; }*)arg1 channelLayout:(id)arg2;
 

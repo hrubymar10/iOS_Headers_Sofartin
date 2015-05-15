@@ -4,13 +4,13 @@
 
 @interface SASportsAthleteComparisonSnippetItemDetails : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUIAppPunchOut * leagueAppPunchOut;
-@property(assign,retain) SASportsMetadata * metadata;
-@property(assign,retain) SAUIAppPunchOut * providerPunchOut;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUIAppPunchOut *leagueAppPunchOut;
+@property (nonatomic, retain) SASportsMetadata *metadata;
+@property (nonatomic, retain) SAUIAppPunchOut *providerPunchOut;
+@property (readonly) Class superclass;
 
 + (id)athleteComparisonSnippetItemDetails;
 + (id)athleteComparisonSnippetItemDetailsWithDictionary:(id)arg1 context:(id)arg2;

@@ -33,7 +33,7 @@
     } m_weakValue;
 }
 
-@property(assign,readonly) JSValue * value;
+@property (readonly) JSValue *value;
 
 + (id)managedValueWithValue:(id)arg1;
 + (id)managedValueWithValue:(id)arg1 andOwner:(id)arg2;

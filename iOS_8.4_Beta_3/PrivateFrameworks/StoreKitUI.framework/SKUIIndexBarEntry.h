@@ -19,12 +19,12 @@
     long long _visibilityPriority;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentEdgeInsets;
-@property(assign,readonly) struct CGSize { double x1; double x2; } contentSize;
-@property(assign,readwrite) long long entryType;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,copy) UIColor * tintColor;
-@property(assign,readwrite) long long visibilityPriority;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentEdgeInsets;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } contentSize;
+@property (nonatomic) long long entryType;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, copy) UIColor *tintColor;
+@property (nonatomic) long long visibilityPriority;
 
 + (id)entryWithAttributedString:(id)arg1;
 + (id)entryWithImage:(id)arg1;

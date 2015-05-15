@@ -21,16 +21,16 @@
     UITouch *_touch;
 }
 
-@property(assign,readwrite) bool dragged;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } initialDragPoint;
-@property(assign,readwrite) int initialKeyState;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } initialPoint;
-@property(assign,retain) UIKBTree * key;
-@property(assign,retain) UIKBTree * keyplane;
-@property(assign,readwrite) bool maySuppressUpAction;
-@property(assign,retain) UIKBTree * slidOffKey;
-@property(assign,readwrite) int stage;
-@property(assign,retain) UITouch * touch;
+@property (nonatomic) bool dragged;
+@property (nonatomic) struct CGPoint { double x1; double x2; } initialDragPoint;
+@property (nonatomic) int initialKeyState;
+@property (nonatomic) struct CGPoint { double x1; double x2; } initialPoint;
+@property (nonatomic, retain) UIKBTree *key;
+@property (nonatomic, retain) UIKBTree *keyplane;
+@property (nonatomic) bool maySuppressUpAction;
+@property (nonatomic, retain) UIKBTree *slidOffKey;
+@property (nonatomic) int stage;
+@property (nonatomic, retain) UITouch *touch;
 
 - (void)dealloc;
 - (bool)dragged;

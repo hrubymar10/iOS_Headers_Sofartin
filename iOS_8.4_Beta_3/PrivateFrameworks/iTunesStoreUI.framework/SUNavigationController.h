@@ -10,13 +10,13 @@
     long long _storeBarStyle;
 }
 
-@property(assign,retain) SUClientInterface * clientInterface;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isLoading,assign,readwrite) bool loading;
-@property(assign,retain) SUSection * section;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SUClientInterface *clientInterface;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isLoading, nonatomic) bool loading;
+@property (nonatomic, retain) SUSection *section;
+@property (readonly) Class superclass;
 
 - (long long)ITunesStoreUIBarStyle;
 - (void)_loadingDidChangeNotification:(id)arg1;

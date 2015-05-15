@@ -7,8 +7,8 @@
     NSURL *fileURL;
 }
 
-@property(assign,retain) NSMutableDictionary * attributes;
-@property(assign,retain) NSURL * fileURL;
+@property (nonatomic, retain) NSMutableDictionary *attributes;
+@property (nonatomic, retain) NSURL *fileURL;
 
 - (id)attributes;
 - (void)dealloc;

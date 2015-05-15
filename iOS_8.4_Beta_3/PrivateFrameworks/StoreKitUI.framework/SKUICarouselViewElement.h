@@ -6,8 +6,8 @@
     double _displayInterval;
 }
 
-@property(assign,readonly) double displayInterval;
-@property(assign,readonly) SKUIProgressIndicatorViewElement * progressIndicatorElement;
+@property (nonatomic, readonly) double displayInterval;
+@property (nonatomic, readonly) SKUIProgressIndicatorViewElement *progressIndicatorElement;
 
 - (id)applyUpdatesWithElement:(id)arg1;
 - (double)displayInterval;

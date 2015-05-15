@@ -11,11 +11,11 @@
     NSDictionary *_userInfoForLocalNotification;
 }
 
-@property(assign,readwrite) <MSVDistributedNotificationObserverDelegate> * delegate;
-@property(assign,readonly) NSString * distributedName;
-@property(assign,readonly) NSString * localName;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,copy) NSDictionary * userInfoForLocalNotification;
+@property (nonatomic) <MSVDistributedNotificationObserverDelegate> *delegate;
+@property (nonatomic, readonly) NSString *distributedName;
+@property (nonatomic, readonly) NSString *localName;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, copy) NSDictionary *userInfoForLocalNotification;
 
 + (id)observerWithDistributedName:(id)arg1 localName:(id)arg2 queue:(id)arg3;
 

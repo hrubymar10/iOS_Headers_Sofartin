@@ -7,8 +7,8 @@
     NSMutableArray *_laneConnections;
 }
 
-@property(assign,retain) NSMutableArray * connectingRoads;
-@property(assign,retain) NSMutableArray * laneConnections;
+@property (nonatomic, retain) NSMutableArray *connectingRoads;
+@property (nonatomic, retain) NSMutableArray *laneConnections;
 
 - (void)addConnectingRoad:(id)arg1;
 - (void)addLaneConnections:(id)arg1;

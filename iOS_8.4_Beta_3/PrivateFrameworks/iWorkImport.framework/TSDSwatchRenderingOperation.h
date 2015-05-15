@@ -28,17 +28,17 @@
     UIView *mView;
 }
 
-@property(assign,readonly) struct CGImage { }* deliveredImage;
-@property(assign,readonly) TSKDocumentRoot * documentRoot;
-@property(assign,copy) NSString * identifier;
-@property(assign,readonly) double imageScale;
-@property(assign,readonly) struct CGSize { double x1; double x2; } imageSize;
-@property(assign,readwrite) unsigned long long insertPopoverPageNumber;
-@property(assign,readwrite) unsigned long long insertPopoverPageType;
-@property(assign,readonly) NSObject<TSSPreset> * preset;
-@property(assign,retain) NSObject * renderingTicket;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } swatchFrame;
-@property(assign,retain) UIView * view;
+@property (nonatomic, readonly) struct CGImage { }*deliveredImage;
+@property (readonly) TSKDocumentRoot *documentRoot;
+@property (copy) NSString *identifier;
+@property (readonly) double imageScale;
+@property (readonly) struct CGSize { double x1; double x2; } imageSize;
+@property unsigned long long insertPopoverPageNumber;
+@property unsigned long long insertPopoverPageType;
+@property (readonly) NSObject<TSSPreset> *preset;
+@property (retain) NSObject *renderingTicket;
+@property (readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } swatchFrame;
+@property (retain) UIView *view;
 
 - (void)dealloc;
 - (void)deliverCGImage:(struct CGImage { }*)arg1;

@@ -9,14 +9,14 @@
     NSXPCConnection *_serverConnection;
 }
 
-@property(assign,readwrite) bool connectionIsValid;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SPDeviceConnectionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSHashTable * observers;
-@property(assign,retain) NSXPCConnection * serverConnection;
-@property(assign,readonly) Class superclass;
+@property bool connectionIsValid;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SPDeviceConnectionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) NSHashTable *observers;
+@property (retain) NSXPCConnection *serverConnection;
+@property (readonly) Class superclass;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)sharedDeviceConnection;

@@ -11,8 +11,8 @@
     double _targetEntryFieldFillerAlpha;
 }
 
-@property(assign,copy) NSString * statusSubtitle;
-@property(assign,copy) NSString * statusTitle;
+@property (nonatomic, copy) NSString *statusSubtitle;
+@property (nonatomic, copy) NSString *statusTitle;
 
 - (double)_distanceFromLastLineBaselineToTextFieldBoundsHeight:(id)arg1;
 - (double)_distanceToFirstLineBaseline:(id)arg1;

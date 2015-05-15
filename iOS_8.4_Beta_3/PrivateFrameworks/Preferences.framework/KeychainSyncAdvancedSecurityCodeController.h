@@ -9,11 +9,11 @@
     bool _showsDisableRecoveryOption;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool showsDisableRecoveryOption;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool showsDisableRecoveryOption;
+@property (readonly) Class superclass;
 
 - (void)_finishedWithSpecifier:(id)arg1;
 - (void)alertView:(id)arg1 didDismissWithButtonIndex:(long long)arg2;

@@ -19,24 +19,24 @@
     MPQueueFeeder *_softQueueFeeder;
 }
 
-@property(assign,readonly) bool allowsUserVisibleUpcomingItems;
-@property(assign,readonly) bool canSeek;
-@property(assign,readonly) bool canSkipToPreviousItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long hardQueueInsertionIndex;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } hardQueuePlaylistIndexRange;
-@property(assign,retain) NSMutableArray * hardQueueSourceContexts;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableDictionary * iterationIndexToQueueModifications;
-@property(assign,retain) MPAVItem * lastPlayedSoftQueueItem;
-@property(assign,readwrite) long long nextCurrentIndex;
-@property(assign,readonly) long long playbackMode;
-@property(assign,readwrite) long long repeatStartIndex;
-@property(assign,retain) MPQueueFeeder * softQueueFeeder;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } softQueuePlaylistIndexRange;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool userCanChangeShuffleAndRepeatType;
+@property (nonatomic, readonly) bool allowsUserVisibleUpcomingItems;
+@property (nonatomic, readonly) bool canSeek;
+@property (nonatomic, readonly) bool canSkipToPreviousItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long hardQueueInsertionIndex;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } hardQueuePlaylistIndexRange;
+@property (nonatomic, retain) NSMutableArray *hardQueueSourceContexts;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableDictionary *iterationIndexToQueueModifications;
+@property (nonatomic, retain) MPAVItem *lastPlayedSoftQueueItem;
+@property (nonatomic) long long nextCurrentIndex;
+@property (nonatomic, readonly) long long playbackMode;
+@property (nonatomic) long long repeatStartIndex;
+@property (nonatomic, retain) MPQueueFeeder *softQueueFeeder;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } softQueuePlaylistIndexRange;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool userCanChangeShuffleAndRepeatType;
 
 - (void).cxx_destruct;
 - (void)_findPlaylistIterationForPlaybackIndex:(unsigned long long)arg1 createIfNecessary:(bool)arg2 completionHandler:(id)arg3;

@@ -16,12 +16,12 @@
     int _terminationStateLock;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct { unsigned int x1[8]; } serviceAuditToken;
-@property(assign,readonly) int servicePID;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct { unsigned int x1[8]; } serviceAuditToken;
+@property (nonatomic, readonly) int servicePID;
+@property (readonly) Class superclass;
 
 + (id)connectToViewService:(id)arg1 deputyInterfaces:(id)arg2 connectionHandler:(id)arg3;
 + (id)connectToViewServiceWithBundleIdentifier:(id)arg1 deputyInterfaces:(id)arg2 connectionHandler:(id)arg3;

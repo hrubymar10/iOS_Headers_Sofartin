@@ -32,19 +32,19 @@
     PKPassFaceView *_visibleFace;
 }
 
-@property(assign,readwrite) bool backFaceIsTall;
-@property(assign,readwrite) long long contentMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <WLCardViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool frontFaceBodyContentCreated;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isFrontmostPassView;
-@property(assign,retain) PKPass * pass;
-@property(assign,readonly) bool showingFront;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long suppressedContent;
-@property(assign,readonly) NSString * uniqueID;
+@property (nonatomic) bool backFaceIsTall;
+@property (nonatomic) long long contentMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <WLCardViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool frontFaceBodyContentCreated;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isFrontmostPassView;
+@property (nonatomic, readonly, retain) PKPass *pass;
+@property (nonatomic, readonly) bool showingFront;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned long long suppressedContent;
+@property (nonatomic, readonly) NSString *uniqueID;
 
 - (void)_applyContentMode:(bool)arg1;
 - (void)_flipPass:(bool)arg1 fromLeft:(bool)arg2 notify:(bool)arg3;

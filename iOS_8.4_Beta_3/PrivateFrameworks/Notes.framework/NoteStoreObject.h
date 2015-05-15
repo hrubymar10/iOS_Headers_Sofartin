@@ -4,11 +4,11 @@
 
 @interface NoteStoreObject : NoteCollectionObject
 
-@property(assign,retain) NoteAccountObject * account;
-@property(assign,retain) NSSet * changes;
-@property(assign,retain) NSString * externalIdentifier;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * syncAnchor;
+@property (nonatomic, retain) NoteAccountObject *account;
+@property (nonatomic, retain) NSSet *changes;
+@property (nonatomic, retain) NSString *externalIdentifier;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *syncAnchor;
 
 - (id)basicAccountIdentifier;
 - (id)collectionInfo;

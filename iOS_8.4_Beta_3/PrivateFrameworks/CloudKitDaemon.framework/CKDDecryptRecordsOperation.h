@@ -10,11 +10,11 @@
     NSDictionary *_webSharingIdentityDataByRecordID;
 }
 
-@property(assign,readwrite) bool forcePCSDecrypt;
-@property(assign,retain) NSObject<OS_dispatch_group> * recordDecryptGroup;
-@property(assign,copy) id recordDecryptedBlock;
-@property(assign,retain) NSArray * recordsToDecrypt;
-@property(assign,retain) NSDictionary * webSharingIdentityDataByRecordID;
+@property (nonatomic) bool forcePCSDecrypt;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *recordDecryptGroup;
+@property (nonatomic, copy) id recordDecryptedBlock;
+@property (nonatomic, retain) NSArray *recordsToDecrypt;
+@property (nonatomic, retain) NSDictionary *webSharingIdentityDataByRecordID;
 
 - (void).cxx_destruct;
 - (void)_decryptRecord:(id)arg1;

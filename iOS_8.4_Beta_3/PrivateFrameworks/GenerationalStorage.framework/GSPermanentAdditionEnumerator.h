@@ -14,7 +14,7 @@
     unsigned long long _withoutOptions;
 }
 
-@property(assign,readonly) NSError * error;
+@property (nonatomic, readonly) NSError *error;
 
 - (void)_fetchNextBatch;
 - (void)dealloc;

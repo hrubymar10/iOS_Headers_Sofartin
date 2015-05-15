@@ -15,19 +15,19 @@
     long long _version;
 }
 
-@property(assign,retain) NSString * UUID;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSString * friendlyName;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSArray * installationWarnings;
-@property(assign,readwrite) bool mustInstallNonInteractively;
-@property(assign,retain) NSString * organization;
-@property(assign,retain) NSString * payloadDescription;
-@property(assign,retain) NSString * persistentResourceID;
-@property(assign,readonly) MCProfile * profile;
-@property(assign,readonly) NSDictionary * restrictions;
-@property(assign,retain) NSString * type;
-@property(assign,readonly) long long version;
+@property (nonatomic, readonly, retain) NSString *UUID;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, readonly, retain) NSString *friendlyName;
+@property (nonatomic, readonly, retain) NSString *identifier;
+@property (nonatomic, readonly, retain) NSArray *installationWarnings;
+@property (nonatomic) bool mustInstallNonInteractively;
+@property (nonatomic, readonly, retain) NSString *organization;
+@property (nonatomic, readonly, retain) NSString *payloadDescription;
+@property (nonatomic, retain) NSString *persistentResourceID;
+@property (nonatomic, readonly) MCProfile *profile;
+@property (nonatomic, readonly) NSDictionary *restrictions;
+@property (nonatomic, readonly, retain) NSString *type;
+@property (nonatomic, readonly) long long version;
 
 + (id)badFieldTypeErrorWithField:(id)arg1;
 + (id)badFieldValueErrorWithField:(id)arg1;

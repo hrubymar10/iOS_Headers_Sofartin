@@ -15,16 +15,16 @@
     NSSharedKeySet *_subSharedKeySet;
 }
 
-@property(assign,readwrite) unsigned int M;
-@property(assign,readwrite) double c;
-@property(assign,readwrite) unsigned int factor;
-@property(assign,readwrite) char * g;
-@property(assign,readwrite) id* keys;
-@property(assign,readwrite) unsigned int numKey;
-@property(assign,readwrite) void* rankTable;
-@property(assign,readwrite) unsigned int* seeds;
-@property(assign,readwrite) unsigned char select;
-@property(assign,retain) NSSharedKeySet * subSharedKeySet;
+@property unsigned int M;
+@property double c;
+@property unsigned int factor;
+@property char *g;
+@property id*keys;
+@property unsigned int numKey;
+@property void*rankTable;
+@property unsigned int*seeds;
+@property unsigned char select;
+@property (retain) NSSharedKeySet *subSharedKeySet;
 
 + (id)keySetWithKeys:(id)arg1;
 

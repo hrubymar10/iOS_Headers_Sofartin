@@ -9,12 +9,12 @@
     struct __CVPixelBufferPool { } *_pixelBufferPool;
 }
 
-@property(getter=_assetWriterTrack,assign,readonly) AVFigAssetWriterTrack * assetWriterTrack;
-@property(assign,retain) AVAssetWriterInputPassDescription * currentPassDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (getter=_assetWriterTrack, nonatomic, readonly) AVFigAssetWriterTrack *assetWriterTrack;
+@property (nonatomic, retain) AVAssetWriterInputPassDescription *currentPassDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)keyPathsForValuesAffectingReadyForMoreMediaData;
 

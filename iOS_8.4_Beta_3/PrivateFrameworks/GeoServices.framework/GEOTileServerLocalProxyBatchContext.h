@@ -10,11 +10,11 @@
     GEOTileRequester *_tileRequester;
 }
 
-@property(assign,retain) GEOTileKeyList * fullList;
-@property(assign,retain) GEOTileKeyList * interestList;
-@property(assign,retain) GEOTileKeyList * networkList;
-@property(assign,retain) GEOTileKeyList * pendingNetworkList;
-@property(assign,retain) GEOTileRequester * tileRequester;
+@property (nonatomic, retain) GEOTileKeyList *fullList;
+@property (nonatomic, retain) GEOTileKeyList *interestList;
+@property (nonatomic, retain) GEOTileKeyList *networkList;
+@property (nonatomic, retain) GEOTileKeyList *pendingNetworkList;
+@property (nonatomic, retain) GEOTileRequester *tileRequester;
 
 - (void)dealloc;
 - (id)fullList;

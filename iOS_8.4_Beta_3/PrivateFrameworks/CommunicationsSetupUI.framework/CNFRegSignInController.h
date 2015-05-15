@@ -17,15 +17,15 @@
     PSSpecifier *_usernameSpecifier;
 }
 
-@property(assign,copy) id alertHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hideLearnMoreButton;
-@property(assign,copy) NSString * pendingPassword;
-@property(assign,copy) NSString * pendingUsername;
-@property(assign,readwrite) unsigned long long signinFailureCount;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id alertHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hideLearnMoreButton;
+@property (nonatomic, copy) NSString *pendingPassword;
+@property (nonatomic, copy) NSString *pendingUsername;
+@property (nonatomic) unsigned long long signinFailureCount;
+@property (readonly) Class superclass;
 
 - (void)__userTappedTextField;
 - (void)_buildCreateAccountButtonSpecifierCache:(id)arg1;

@@ -9,7 +9,7 @@
     UIView *_topBorderView;
 }
 
-@property(assign,readwrite) bool backdropBackground;
+@property (nonatomic) bool backdropBackground;
 
 - (void).cxx_destruct;
 - (bool)backdropBackground;

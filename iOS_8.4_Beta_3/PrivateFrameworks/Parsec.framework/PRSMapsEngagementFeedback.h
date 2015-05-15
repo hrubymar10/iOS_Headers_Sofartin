@@ -6,7 +6,7 @@
     unsigned long long _maps_action_target;
 }
 
-@property(assign,readwrite) unsigned long long maps_action_target;
+@property unsigned long long maps_action_target;
 
 - (id)action_target;
 - (unsigned long long)maps_action_target;

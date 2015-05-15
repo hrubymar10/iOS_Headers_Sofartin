@@ -25,20 +25,20 @@
     bool _usingPlaceholderArt;
 }
 
-@property(getter=_currentTextLabelAlpha,assign,readonly) double _currentTextLabelAlpha;
-@property(assign,retain) UIImage * artworkOverrideImage;
-@property(getter=_artworkView,assign,readonly) UIImageView * artworkView;
-@property(getter=_contentDescriptor,setter=_setContentDescriptor:,assign,retain) MusicEntityViewContentDescriptor * contentDescriptor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEntityDisabled,assign,readwrite) bool entityDisabled;
-@property(assign,retain) <MusicEntityValueProviding> * entityValueProvider;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isHighlighted,assign,readonly) bool highlighted;
-@property(getter=_playButton,assign,readonly) MusicPlayButton * playButton;
-@property(assign,copy) MusicEntityPlaybackStatus * playbackStatus;
-@property(assign,readonly) Class superclass;
-@property(getter=isUsingPlaceholderArt,assign,readonly) bool usingPlaceholderArt;
+@property (getter=_currentTextLabelAlpha, nonatomic, readonly) double _currentTextLabelAlpha;
+@property (nonatomic, retain) UIImage *artworkOverrideImage;
+@property (getter=_artworkView, nonatomic, readonly) UIImageView *artworkView;
+@property (getter=_contentDescriptor, setter=_setContentDescriptor:, nonatomic, retain) MusicEntityViewContentDescriptor *contentDescriptor;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEntityDisabled, nonatomic) bool entityDisabled;
+@property (nonatomic, retain) <MusicEntityValueProviding> *entityValueProvider;
+@property (readonly) unsigned long long hash;
+@property (getter=isHighlighted, nonatomic, readonly) bool highlighted;
+@property (getter=_playButton, nonatomic, readonly) MusicPlayButton *playButton;
+@property (nonatomic, copy) MusicEntityPlaybackStatus *playbackStatus;
+@property (readonly) Class superclass;
+@property (getter=isUsingPlaceholderArt, nonatomic, readonly) bool usingPlaceholderArt;
 
 + (double)_maximumTextHeightForTextDescriptors:(id)arg1 traitCollection:(id)arg2;
 

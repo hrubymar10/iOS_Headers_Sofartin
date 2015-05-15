@@ -13,12 +13,12 @@
     long long _widthSegmentCount;
 }
 
-@property(assign,readwrite) double cornerRadius;
-@property(assign,readwrite) long long cornerSegmentCount;
-@property(assign,readwrite) double height;
-@property(assign,readwrite) long long heightSegmentCount;
-@property(assign,readwrite) double width;
-@property(assign,readwrite) long long widthSegmentCount;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) long long cornerSegmentCount;
+@property (nonatomic) double height;
+@property (nonatomic) long long heightSegmentCount;
+@property (nonatomic) double width;
+@property (nonatomic) long long widthSegmentCount;
 
 + (id)SCNJSExportProtocol;
 + (id)planeWithWidth:(double)arg1 height:(double)arg2;

@@ -7,7 +7,7 @@
     SKNode *_mask;
 }
 
-@property(assign,retain) SKNode * maskNode;
+@property (nonatomic, retain) SKNode *maskNode;
 
 - (void).cxx_destruct;
 - (void)encodeWithCoder:(id)arg1;

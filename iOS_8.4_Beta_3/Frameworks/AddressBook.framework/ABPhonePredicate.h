@@ -8,9 +8,9 @@
     NSString *_phoneNumber;
 }
 
-@property(assign,copy) NSString * country;
-@property(assign,readonly) NSString * dbCountry;
-@property(assign,copy) NSString * phoneNumber;
+@property (nonatomic, copy) NSString *country;
+@property (nonatomic, readonly) NSString *dbCountry;
+@property (nonatomic, copy) NSString *phoneNumber;
 
 - (void)ab_bindStatement:(struct CPSqliteStatement { struct CPSqliteConnection {} *x1; struct sqlite3_stmt {} *x2; }*)arg1 withBindingOffset:(int*)arg2 predicateIdentifier:(int)arg3;
 - (id)country;

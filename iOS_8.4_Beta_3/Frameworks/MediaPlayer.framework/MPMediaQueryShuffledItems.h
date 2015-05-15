@@ -14,10 +14,10 @@
     NSArray *_sourceMediaQueryItems;
 }
 
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } focusedRange;
-@property(assign,copy) NSArray * items;
-@property(assign,readonly) unsigned long long realShuffleType;
-@property(assign,readonly) MPMediaQuery * sourceMediaQuery;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } focusedRange;
+@property (nonatomic, readonly, copy) NSArray *items;
+@property (nonatomic, readonly) unsigned long long realShuffleType;
+@property (nonatomic, readonly) MPMediaQuery *sourceMediaQuery;
 
 + (bool)supportsSecureCoding;
 

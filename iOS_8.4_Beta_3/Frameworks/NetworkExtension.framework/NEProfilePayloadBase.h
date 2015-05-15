@@ -7,8 +7,8 @@
     NSMutableDictionary *_pendingCertificates;
 }
 
-@property(assign,retain) NSDictionary * payloadAtom;
-@property(assign,copy) NSMutableDictionary * pendingCertificates;
+@property (nonatomic, retain) NSDictionary *payloadAtom;
+@property (nonatomic, copy) NSMutableDictionary *pendingCertificates;
 
 - (void).cxx_destruct;
 - (bool)addCertificatePending:(id)arg1 certificateTag:(id)arg2;

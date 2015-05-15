@@ -17,18 +17,18 @@
     UIColor *_topBorderColor;
 }
 
-@property(assign,retain) UIColor * bottomBorderColor;
-@property(assign,readwrite) int clipCorners;
-@property(assign,readonly) UIBezierPath * clippingPath;
-@property(assign,retain) SUCellConfiguration * configuration;
-@property(assign,readwrite) bool drawAsDisabled;
-@property(assign,readwrite) long long editState;
-@property(assign,readwrite) bool highlightsOnlyContentView;
-@property(assign,retain) SUItemOfferButton * itemOfferButton;
-@property(assign,readwrite) struct { unsigned long long x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; } position;
-@property(assign,readwrite) bool showHighlight;
-@property(assign,retain) UIColor * topBorderColor;
-@property(assign,readwrite) bool usesSubviews;
+@property (nonatomic, retain) UIColor *bottomBorderColor;
+@property (nonatomic) int clipCorners;
+@property (nonatomic, readonly) UIBezierPath *clippingPath;
+@property (nonatomic, retain) SUCellConfiguration *configuration;
+@property (nonatomic) bool drawAsDisabled;
+@property (nonatomic) long long editState;
+@property (nonatomic) bool highlightsOnlyContentView;
+@property (nonatomic, readonly, retain) SUItemOfferButton *itemOfferButton;
+@property (nonatomic) struct { unsigned long long x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; } position;
+@property (nonatomic) bool showHighlight;
+@property (nonatomic, retain) UIColor *topBorderColor;
+@property (nonatomic) bool usesSubviews;
 
 - (bool)_canDrawContent;
 - (id)bottomBorderColor;

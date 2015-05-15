@@ -14,9 +14,9 @@
     } _tapLocation;
 }
 
-@property(assign,readonly) NSSet * disabledSubviews;
-@property(assign,readwrite) bool shouldScrollToFirstResponder;
-@property(assign,readwrite) bool subviewsDisabled;
+@property (nonatomic, readonly) NSSet *disabledSubviews;
+@property (nonatomic) bool shouldScrollToFirstResponder;
+@property (nonatomic) bool subviewsDisabled;
 
 - (bool)_scrollsToMakeFirstResponderVisible;
 - (void)beginBlockingScroll;

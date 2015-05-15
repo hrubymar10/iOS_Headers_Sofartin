@@ -10,14 +10,14 @@
     bool _sourceIsManaged;
 }
 
-@property(assign,retain) EKAttachment * attachment;
-@property(assign,readonly) EKEventAttachmentCell * cell;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <EKEventAttachmentCellControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool sourceIsManaged;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) EKAttachment *attachment;
+@property (readonly) EKEventAttachmentCell *cell;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <EKEventAttachmentCellControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool sourceIsManaged;
+@property (readonly) Class superclass;
 
 + (bool)_attachmentIsViewable:(id)arg1;
 + (id)cellControllersForAttachments:(id)arg1 givenExistingControllers:(id)arg2;

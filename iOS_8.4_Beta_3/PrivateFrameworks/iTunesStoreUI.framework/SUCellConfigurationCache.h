@@ -7,7 +7,7 @@
     NSMutableArray *_configurations;
 }
 
-@property(assign,retain) id cellContext;
+@property (nonatomic, retain) id cellContext;
 
 - (id)cellContext;
 - (id)configurationForRow:(unsigned long long)arg1;

@@ -11,11 +11,11 @@
     unsigned long long _tileRangesSpace;
 }
 
-@property(assign,retain) NSMutableArray * attributions;
-@property(assign,retain) NSMutableArray * iconChecksums;
-@property(assign,retain) NSMutableArray * icons;
-@property(assign,readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; unsigned int x6; }* tileRanges;
-@property(assign,readonly) unsigned long long tileRangesCount;
+@property (nonatomic, retain) NSMutableArray *attributions;
+@property (nonatomic, retain) NSMutableArray *iconChecksums;
+@property (nonatomic, retain) NSMutableArray *icons;
+@property (nonatomic, readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; unsigned int x6; }*tileRanges;
+@property (nonatomic, readonly) unsigned long long tileRangesCount;
 
 - (void)addAttribution:(id)arg1;
 - (void)addIcon:(id)arg1;

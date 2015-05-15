@@ -10,13 +10,13 @@
     int _objectType;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool hasObjectType;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableArray * objectDatas;
-@property(assign,readwrite) int objectType;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool hasObjectType;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableArray *objectDatas;
+@property (nonatomic) int objectType;
+@property (readonly) Class superclass;
 
 + (id)restoreWithNanoSyncEntityClass:(Class)arg1;
 

@@ -7,8 +7,8 @@
     NSString *_spokenLanguageCode;
 }
 
-@property(getter=_delegate,assign,readonly) <AFUISiriLanguageDelegate> * delegate;
-@property(assign,copy) NSString * spokenLanguageCode;
+@property (getter=_delegate, nonatomic, readonly) <AFUISiriLanguageDelegate> *delegate;
+@property (nonatomic, copy) NSString *spokenLanguageCode;
 
 - (void).cxx_destruct;
 - (id)_computeSpokenLanguageCode;

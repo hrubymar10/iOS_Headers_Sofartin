@@ -9,10 +9,10 @@
     unsigned int _usesExternalDataStore;
 }
 
-@property(assign,readwrite) <IKAppDataStoring> * appStorage;
-@property(assign,readonly) unsigned long long length;
-@property(assign,retain) NSMutableDictionary * storageDict;
-@property(assign,retain) NSObject<OS_dispatch_queue> * storageQueue;
+@property (nonatomic) <IKAppDataStoring> *appStorage;
+@property (nonatomic, readonly) unsigned long long length;
+@property (nonatomic, retain) NSMutableDictionary *storageDict;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *storageQueue;
 
 - (void).cxx_destruct;
 - (void)_verifyExternalDataStoreForKey:(id)arg1;

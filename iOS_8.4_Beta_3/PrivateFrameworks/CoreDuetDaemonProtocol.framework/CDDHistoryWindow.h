@@ -9,10 +9,10 @@
     NSDate *_start;
 }
 
-@property(assign,readonly) double duration;
-@property(assign,readonly) double recurrenceDelta;
-@property(assign,readonly) double recurrenceWidth;
-@property(assign,readonly) NSDate * start;
+@property (readonly) double duration;
+@property (readonly) double recurrenceDelta;
+@property (readonly) double recurrenceWidth;
+@property (readonly) NSDate *start;
 
 + (id)allTimeHistoryWindow;
 + (id)dailyHistoryWindowWithWidth:(double)arg1 endingOnDate:(id)arg2 historyLengthInDays:(int)arg3;

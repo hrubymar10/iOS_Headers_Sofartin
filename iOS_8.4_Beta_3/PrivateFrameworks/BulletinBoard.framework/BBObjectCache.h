@@ -11,7 +11,7 @@
     NSString *_identifier;
 }
 
-@property(assign,copy) NSString * identifier;
+@property (nonatomic, copy) NSString *identifier;
 
 + (id)description;
 + (id)objectCacheForIdentifier:(id)arg1;

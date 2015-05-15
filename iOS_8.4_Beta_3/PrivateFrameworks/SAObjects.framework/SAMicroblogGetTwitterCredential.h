@@ -4,8 +4,8 @@
 
 @interface SAMicroblogGetTwitterCredential : SAMicroblogGetSocialCredential
 
-@property(assign,copy) NSString * consumerKey;
-@property(assign,copy) NSString * consumerSecret;
+@property (nonatomic, copy) NSString *consumerKey;
+@property (nonatomic, copy) NSString *consumerSecret;
 
 + (id)getTwitterCredential;
 + (id)getTwitterCredentialWithDictionary:(id)arg1 context:(id)arg2;

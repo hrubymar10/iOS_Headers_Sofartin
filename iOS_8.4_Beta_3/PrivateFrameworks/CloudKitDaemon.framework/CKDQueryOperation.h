@@ -13,14 +13,14 @@
     CKRecordZoneID *_zoneID;
 }
 
-@property(assign,readonly) CKQueryCursor * cursor;
-@property(assign,retain) NSSet * desiredKeySet;
-@property(assign,readonly) CKQuery * query;
-@property(assign,copy) id recordFetchedBlock;
-@property(assign,retain) CKQueryCursor * resultsCursor;
-@property(assign,readonly) unsigned long long resultsLimit;
-@property(assign,readwrite) bool shouldFetchAssetContent;
-@property(assign,retain) CKRecordZoneID * zoneID;
+@property (nonatomic, readonly) CKQueryCursor *cursor;
+@property (nonatomic, retain) NSSet *desiredKeySet;
+@property (nonatomic, readonly) CKQuery *query;
+@property (nonatomic, copy) id recordFetchedBlock;
+@property (nonatomic, retain) CKQueryCursor *resultsCursor;
+@property (nonatomic, readonly) unsigned long long resultsLimit;
+@property (nonatomic) bool shouldFetchAssetContent;
+@property (nonatomic, retain) CKRecordZoneID *zoneID;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

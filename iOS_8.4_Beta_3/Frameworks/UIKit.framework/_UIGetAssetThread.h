@@ -9,8 +9,8 @@
     NSURL *_url;
 }
 
-@property(assign,retain) ALAsset * asset;
-@property(assign,retain) NSCondition * condition;
+@property (retain) ALAsset *asset;
+@property (retain) NSCondition *condition;
 
 - (id)asset;
 - (id)condition;

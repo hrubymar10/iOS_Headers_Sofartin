@@ -7,8 +7,8 @@
     id _updateHandler;
 }
 
-@property(assign,retain) HKActivityCache * lastActivityCache;
-@property(assign,copy) id updateHandler;
+@property (nonatomic, retain) HKActivityCache *lastActivityCache;
+@property (nonatomic, copy) id updateHandler;
 
 - (void).cxx_destruct;
 - (void)_queue_cleanupAfterDeactivation;

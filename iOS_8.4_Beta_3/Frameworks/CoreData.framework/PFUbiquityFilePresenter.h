@@ -15,17 +15,17 @@
     PFUbiquityLocation *_ubiquityRootLocation;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,readonly) NSDictionary * locationToSafeSaveFile;
-@property(assign,readonly) NSDictionary * locationToStatus;
-@property(assign,readonly) NSOperationQueue * presentedItemOperationQueue;
-@property(assign,copy) NSURL * presentedItemURL;
-@property(assign,copy) NSURL * primaryPresentedItemURL;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) PFUbiquityLocation * ubiquityRootLocation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSString *localPeerID;
+@property (nonatomic, readonly) NSDictionary *locationToSafeSaveFile;
+@property (nonatomic, readonly) NSDictionary *locationToStatus;
+@property (readonly) NSOperationQueue *presentedItemOperationQueue;
+@property (readonly, copy) NSURL *presentedItemURL;
+@property (readonly, copy) NSURL *primaryPresentedItemURL;
+@property (readonly) Class superclass;
+@property (readonly) PFUbiquityLocation *ubiquityRootLocation;
 
 + (id)cloudDocsRootFolder;
 + (void)initialize;

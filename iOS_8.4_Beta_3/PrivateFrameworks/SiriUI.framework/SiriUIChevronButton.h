@@ -12,11 +12,11 @@
     UIView *_subview;
 }
 
-@property(assign,readwrite) double chevronRightInset;
-@property(assign,readwrite) bool hasChevron;
-@property(assign,readwrite) long long keylineType;
-@property(assign,readwrite) double leftSubviewInset;
-@property(assign,retain) UIView * subview;
+@property (nonatomic) double chevronRightInset;
+@property (nonatomic) bool hasChevron;
+@property (nonatomic) long long keylineType;
+@property (nonatomic) double leftSubviewInset;
+@property (nonatomic, retain) UIView *subview;
 
 - (void).cxx_destruct;
 - (double)chevronRightInset;

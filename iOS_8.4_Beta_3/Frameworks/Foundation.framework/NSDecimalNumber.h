@@ -13,9 +13,9 @@
     unsigned int _reserved;
 }
 
-@property(assign,readonly) struct { unsigned int x1 : 8; unsigned int x2 : 4; unsigned int x3 : 1; unsigned int x4 : 1; unsigned int x5 : 18; unsigned short x6[8]; } decimalValue;
-@property(assign,readonly) double doubleValue;
-@property(assign,readonly) const char * objCType;
+@property (readonly) struct { unsigned int x1 : 8; unsigned int x2 : 4; unsigned int x3 : 1; unsigned int x4 : 1; unsigned int x5 : 18; unsigned short x6[8]; } decimalValue;
+@property (readonly) double doubleValue;
+@property (readonly) const char *objCType;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)decimalNumberWithDecimal:(struct { unsigned int x1 : 8; unsigned int x2 : 4; unsigned int x3 : 1; unsigned int x4 : 1; unsigned int x5 : 18; unsigned short x6[8]; })arg1;

@@ -8,9 +8,9 @@
     unsigned long long _purchaserAccountIdentifier;
 }
 
-@property(assign,readonly) unsigned long long downloaderAccountIdentifier;
-@property(assign,readonly) unsigned long long familyIdentifier;
-@property(assign,readonly) unsigned long long purchaserAccountIdentifier;
+@property (nonatomic, readonly) unsigned long long downloaderAccountIdentifier;
+@property (nonatomic, readonly) unsigned long long familyIdentifier;
+@property (nonatomic, readonly) unsigned long long purchaserAccountIdentifier;
 
 - (unsigned long long)downloaderAccountIdentifier;
 - (unsigned long long)familyIdentifier;

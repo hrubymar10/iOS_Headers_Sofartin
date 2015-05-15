@@ -10,11 +10,11 @@
     id _viewController;
 }
 
-@property(assign,retain) NSString * configuredSSID;
-@property(assign,retain) id context;
-@property(assign,readwrite) <AirPortAssistantControllerDelegate> * delegate;
-@property(assign,retain) NSDictionary * unconfiguredWACDevices;
-@property(assign,retain) id viewController;
+@property (retain) NSString *configuredSSID;
+@property (retain) id context;
+@property (nonatomic) <AirPortAssistantControllerDelegate> *delegate;
+@property (retain) NSDictionary *unconfiguredWACDevices;
+@property (retain) id viewController;
 
 + (id)assistantUIViewControllerWithParameters:(id)arg1;
 + (void)cancelAirPortAssistantController;

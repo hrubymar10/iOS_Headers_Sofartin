@@ -10,9 +10,9 @@
     NSDictionary *_thumbnailDataDictionary;
 }
 
-@property(assign,retain) NSURL * additionURL;
-@property(assign,retain) NSDictionary * metadata;
-@property(assign,retain) NSDictionary * thumbnailDataDictionary;
+@property (retain) NSURL *additionURL;
+@property (retain) NSDictionary *metadata;
+@property (retain) NSDictionary *thumbnailDataDictionary;
 
 + (id)_additionCreationInfo;
 + (bool)_hitAdditionsOnURL:(id)arg1 error:(id*)arg2;

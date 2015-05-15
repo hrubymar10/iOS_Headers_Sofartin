@@ -7,10 +7,10 @@
     NSString *_token;
 }
 
-@property(assign,retain) CKDPAsset * asset;
-@property(assign,readonly) bool hasAsset;
-@property(assign,readonly) bool hasToken;
-@property(assign,retain) NSString * token;
+@property (nonatomic, retain) CKDPAsset *asset;
+@property (nonatomic, readonly) bool hasAsset;
+@property (nonatomic, readonly) bool hasToken;
+@property (nonatomic, retain) NSString *token;
 
 - (void).cxx_destruct;
 - (id)asset;

@@ -37,22 +37,22 @@
     NSString *_versionHashModifier;
 }
 
-@property(getter=isAbstract,assign,readwrite) bool abstract;
-@property(assign,copy) NSDictionary * attributesByName;
-@property(assign,retain) NSArray * compoundIndexes;
-@property(assign,copy) NSString * managedObjectClassName;
-@property(assign,readonly) NSManagedObjectModel * managedObjectModel;
-@property(assign,copy) NSString * name;
-@property(assign,retain) NSArray * properties;
-@property(assign,copy) NSDictionary * propertiesByName;
-@property(assign,copy) NSDictionary * relationshipsByName;
-@property(assign,copy) NSString * renamingIdentifier;
-@property(assign,retain) NSArray * subentities;
-@property(assign,copy) NSDictionary * subentitiesByName;
-@property(assign,readonly) NSEntityDescription * superentity;
-@property(assign,retain) NSDictionary * userInfo;
-@property(assign,copy) NSData * versionHash;
-@property(assign,copy) NSString * versionHashModifier;
+@property (getter=isAbstract) bool abstract;
+@property (readonly, copy) NSDictionary *attributesByName;
+@property (retain) NSArray *compoundIndexes;
+@property (copy) NSString *managedObjectClassName;
+@property (readonly) NSManagedObjectModel *managedObjectModel;
+@property (copy) NSString *name;
+@property (retain) NSArray *properties;
+@property (readonly, copy) NSDictionary *propertiesByName;
+@property (readonly, copy) NSDictionary *relationshipsByName;
+@property (copy) NSString *renamingIdentifier;
+@property (retain) NSArray *subentities;
+@property (readonly, copy) NSDictionary *subentitiesByName;
+@property (readonly) NSEntityDescription *superentity;
+@property (nonatomic, retain) NSDictionary *userInfo;
+@property (readonly, copy) NSData *versionHash;
+@property (copy) NSString *versionHashModifier;
 
 + (id)_MOClassName;
 + (id)entityForName:(id)arg1 inManagedObjectContext:(id)arg2;

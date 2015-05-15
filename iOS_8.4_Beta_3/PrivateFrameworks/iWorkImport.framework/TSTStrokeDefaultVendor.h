@@ -16,17 +16,17 @@
     unsigned int _topBorderRow;
 }
 
-@property(assign,readwrite) unsigned int bodySideBorderColumn;
-@property(assign,readwrite) unsigned int bottomBorderRow;
-@property(assign,readwrite) unsigned int footerRowSeparatorRow;
-@property(assign,readwrite) unsigned int headerColumnSeparatorColumn;
-@property(assign,readwrite) unsigned int headerRowSeparatorRow;
-@property(assign,readwrite) unsigned int headerSideBorderColumn;
-@property(assign,readwrite) bool isValid;
-@property(assign,readwrite) TSTMasterLayout * masterLayout;
-@property(assign,readwrite) <TSTTableStrokeProviding> * strokeProvider;
-@property(assign,retain) NSPointerArray * strokeTypeToLayerMap;
-@property(assign,readwrite) unsigned int topBorderRow;
+@property (nonatomic) unsigned int bodySideBorderColumn;
+@property (nonatomic) unsigned int bottomBorderRow;
+@property (nonatomic) unsigned int footerRowSeparatorRow;
+@property (nonatomic) unsigned int headerColumnSeparatorColumn;
+@property (nonatomic) unsigned int headerRowSeparatorRow;
+@property (nonatomic) unsigned int headerSideBorderColumn;
+@property (nonatomic) bool isValid;
+@property (nonatomic) TSTMasterLayout *masterLayout;
+@property (nonatomic) <TSTTableStrokeProviding> *strokeProvider;
+@property (nonatomic, retain) NSPointerArray *strokeTypeToLayerMap;
+@property (nonatomic) unsigned int topBorderRow;
 
 - (unsigned int)bodySideBorderColumn;
 - (unsigned int)bottomBorderRow;

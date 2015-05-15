@@ -8,9 +8,9 @@
     UIView *_verticalDivider;
 }
 
-@property(assign,retain) NSArray * alternativesButtons;
-@property(assign,retain) UIView * horizontalDivider;
-@property(assign,retain) UIView * verticalDivider;
+@property (nonatomic, retain) NSArray *alternativesButtons;
+@property (nonatomic, retain) UIView *horizontalDivider;
+@property (nonatomic, retain) UIView *verticalDivider;
 
 - (id)alternativesButtons;
 - (void)dealloc;

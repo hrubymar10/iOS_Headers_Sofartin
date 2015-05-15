@@ -19,16 +19,16 @@
     NSArray *_tableItems;
 }
 
-@property(assign,readwrite) bool allowsEditing;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <HKMedicalIDViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) HKHealthStore * healthStore;
-@property(assign,retain) _HKMedicalIDData * medicalID;
-@property(assign,readwrite) bool showsDeleteButton;
-@property(assign,readwrite) bool showsDismissButton;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool allowsEditing;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <HKMedicalIDViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) HKHealthStore *healthStore;
+@property (nonatomic, retain) _HKMedicalIDData *medicalID;
+@property (nonatomic) bool showsDeleteButton;
+@property (nonatomic) bool showsDismissButton;
+@property (readonly) Class superclass;
 
 + (bool)isSupportedOnThisDevice;
 

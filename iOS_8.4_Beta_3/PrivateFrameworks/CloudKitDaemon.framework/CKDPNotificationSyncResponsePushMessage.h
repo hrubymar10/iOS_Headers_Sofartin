@@ -17,20 +17,20 @@
     NSString *_uuid;
 }
 
-@property(assign,readwrite) int badgeCount;
-@property(assign,retain) NSString * dialog;
-@property(assign,readwrite) bool hasBadgeCount;
-@property(assign,readonly) bool hasDialog;
-@property(assign,readwrite) bool hasIsRead;
-@property(assign,readonly) bool hasPayload;
-@property(assign,readonly) bool hasSound;
-@property(assign,readwrite) bool hasSource;
-@property(assign,readonly) bool hasUuid;
-@property(assign,readwrite) bool isRead;
-@property(assign,retain) NSData * payload;
-@property(assign,retain) NSString * sound;
-@property(assign,readwrite) int source;
-@property(assign,retain) NSString * uuid;
+@property (nonatomic) int badgeCount;
+@property (nonatomic, retain) NSString *dialog;
+@property (nonatomic) bool hasBadgeCount;
+@property (nonatomic, readonly) bool hasDialog;
+@property (nonatomic) bool hasIsRead;
+@property (nonatomic, readonly) bool hasPayload;
+@property (nonatomic, readonly) bool hasSound;
+@property (nonatomic) bool hasSource;
+@property (nonatomic, readonly) bool hasUuid;
+@property (nonatomic) bool isRead;
+@property (nonatomic, retain) NSData *payload;
+@property (nonatomic, retain) NSString *sound;
+@property (nonatomic) int source;
+@property (nonatomic, retain) NSString *uuid;
 
 - (void).cxx_destruct;
 - (int)badgeCount;

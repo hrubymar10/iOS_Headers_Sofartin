@@ -9,10 +9,10 @@
     long long _tileSize;
 }
 
-@property(assign,readwrite) bool bootstrap;
-@property(assign,readwrite) double lodBias;
-@property(assign,readwrite) unsigned long long maxZ;
-@property(assign,readwrite) long long tileSize;
+@property (nonatomic) bool bootstrap;
+@property (nonatomic) double lodBias;
+@property (nonatomic) unsigned long long maxZ;
+@property (nonatomic) long long tileSize;
 
 - (bool)bootstrap;
 - (id)init;

@@ -7,8 +7,8 @@
     NSMutableDictionary *_addressBookCache;
 }
 
-@property(assign,readwrite) void* addressBook;
-@property(assign,retain) NSMutableDictionary * addressBookCache;
+@property void*addressBook;
+@property (retain) NSMutableDictionary *addressBookCache;
 
 + (id)get;
 

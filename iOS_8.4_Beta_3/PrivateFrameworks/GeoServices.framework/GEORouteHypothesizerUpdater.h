@@ -23,13 +23,13 @@
     GEOComposedWaypoint *_source;
 }
 
-@property(assign,readwrite) <GEORouteHypothesizerUpdaterDelegate> * delegate;
-@property(assign,retain) GEODirectionsRequestFeedback * feedback;
-@property(assign,readonly) bool hasArrived;
-@property(assign,readonly) bool isTraveling;
-@property(assign,readonly) GEOComposedRoute * route;
-@property(assign,readonly) GEORouteMatch * routeMatch;
-@property(assign,readonly) double score;
+@property (nonatomic) <GEORouteHypothesizerUpdaterDelegate> *delegate;
+@property (nonatomic, retain) GEODirectionsRequestFeedback *feedback;
+@property (nonatomic, readonly) bool hasArrived;
+@property (nonatomic, readonly) bool isTraveling;
+@property (nonatomic, readonly) GEOComposedRoute *route;
+@property (nonatomic, readonly) GEORouteMatch *routeMatch;
+@property (nonatomic, readonly) double score;
 
 - (bool)_checkForArrival:(id)arg1 routeMatch:(id)arg2;
 - (void)_requestNewRouteFromLocation:(id)arg1 usualRouteData:(id)arg2;

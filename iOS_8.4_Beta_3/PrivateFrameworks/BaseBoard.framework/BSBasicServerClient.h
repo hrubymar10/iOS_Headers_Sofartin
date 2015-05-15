@@ -6,11 +6,11 @@
     NSObject<OS_xpc_object> *_connection;
 }
 
-@property(assign,retain) NSObject<OS_xpc_object> * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)wrapperWithConnection:(id)arg1;
 

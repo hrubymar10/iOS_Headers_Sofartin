@@ -15,16 +15,16 @@
     bool _useFallback;
 }
 
-@property(assign,readonly) NSMutableDictionary * destinationEntityETags;
-@property(assign,readonly) NSURL * destinationURL;
-@property(assign,readonly) NSMutableSet * destinationURLs;
-@property(assign,retain) NSMutableArray * outstandingSourceURLsToMove;
-@property(assign,readonly) int overwrite;
-@property(assign,readonly) NSDictionary * sourceEntityDataContentTypes;
-@property(assign,readonly) NSDictionary * sourceEntityDataPayloads;
-@property(assign,readonly) NSDictionary * sourceEntityETags;
-@property(assign,readonly) NSSet * sourceURLs;
-@property(assign,readonly) bool useFallback;
+@property (nonatomic, readonly) NSMutableDictionary *destinationEntityETags;
+@property (nonatomic, readonly) NSURL *destinationURL;
+@property (nonatomic, readonly) NSMutableSet *destinationURLs;
+@property (nonatomic, retain) NSMutableArray *outstandingSourceURLsToMove;
+@property (nonatomic, readonly) int overwrite;
+@property (nonatomic, readonly) NSDictionary *sourceEntityDataContentTypes;
+@property (nonatomic, readonly) NSDictionary *sourceEntityDataPayloads;
+@property (nonatomic, readonly) NSDictionary *sourceEntityETags;
+@property (nonatomic, readonly) NSSet *sourceURLs;
+@property (nonatomic, readonly) bool useFallback;
 
 - (void)_completedMoveTask:(id)arg1 sourceURL:(id)arg2;
 - (void)_completedPutTask:(id)arg1 sourceURL:(id)arg2;

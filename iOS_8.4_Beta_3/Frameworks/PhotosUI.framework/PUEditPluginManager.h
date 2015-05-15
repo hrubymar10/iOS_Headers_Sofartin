@@ -7,8 +7,8 @@
     long long _mediaType;
 }
 
-@property(setter=_setPlugins:,assign,copy) NSArray * _plugins;
-@property(assign,readonly) long long mediaType;
+@property (setter=_setPlugins:, nonatomic, copy) NSArray *_plugins;
+@property (readonly) long long mediaType;
 
 + (id)sharedManagerForMediaType:(long long)arg1;
 

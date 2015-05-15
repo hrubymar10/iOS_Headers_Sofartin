@@ -18,22 +18,22 @@
     NSURL *_transactionServiceURL;
 }
 
-@property(assign,readonly) unsigned long long activationState;
-@property(assign,copy) NSString * appURLScheme;
-@property(assign,copy) NSSet * associatedApplicationIdentifiers;
-@property(assign,readonly) NSString * deviceAccountIdentifier;
-@property(assign,readonly) NSString * deviceAccountNumberSuffix;
-@property(assign,retain) PKPaymentApplication * devicePaymentApplication;
-@property(assign,copy) NSString * messagePushTopic;
-@property(assign,copy) NSURL * messageServiceURL;
-@property(assign,copy) NSSet * paymentApplications;
-@property(assign,copy) NSString * primaryAccountIdentifier;
-@property(assign,copy) NSString * primaryAccountNumberSuffix;
-@property(assign,copy) NSString * sanitizedPrimaryAccountNumber;
-@property(assign,readwrite) bool supportsDPANNotifications;
-@property(assign,readwrite) bool supportsFPANNotifications;
-@property(assign,copy) NSString * transactionPushTopic;
-@property(assign,copy) NSURL * transactionServiceURL;
+@property (nonatomic, readonly) unsigned long long activationState;
+@property (nonatomic, copy) NSString *appURLScheme;
+@property (nonatomic, copy) NSSet *associatedApplicationIdentifiers;
+@property (readonly) NSString *deviceAccountIdentifier;
+@property (readonly) NSString *deviceAccountNumberSuffix;
+@property (nonatomic, retain) PKPaymentApplication *devicePaymentApplication;
+@property (nonatomic, copy) NSString *messagePushTopic;
+@property (nonatomic, copy) NSURL *messageServiceURL;
+@property (nonatomic, copy) NSSet *paymentApplications;
+@property (nonatomic, copy) NSString *primaryAccountIdentifier;
+@property (nonatomic, copy) NSString *primaryAccountNumberSuffix;
+@property (nonatomic, copy) NSString *sanitizedPrimaryAccountNumber;
+@property (nonatomic) bool supportsDPANNotifications;
+@property (nonatomic) bool supportsFPANNotifications;
+@property (nonatomic, copy) NSString *transactionPushTopic;
+@property (nonatomic, copy) NSURL *transactionServiceURL;
 
 + (bool)supportsSecureCoding;
 

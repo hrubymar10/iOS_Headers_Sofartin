@@ -8,9 +8,9 @@
     long long _orderValue;
 }
 
-@property(assign,retain) NSManagedObjectContext * moc;
-@property(assign,retain) NSManagedObjectID * objectID;
-@property(assign,readwrite) long long orderValue;
+@property (nonatomic, retain) NSManagedObjectContext *moc;
+@property (nonatomic, retain) NSManagedObjectID *objectID;
+@property (nonatomic) long long orderValue;
 
 - (id)childManagedObject;
 - (void)dealloc;

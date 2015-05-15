@@ -8,9 +8,9 @@
     IMService *_previousSendingService;
 }
 
-@property(assign,readwrite) IMService * composeSendingService;
-@property(assign,readwrite) bool noAvailableServices;
-@property(assign,readwrite) IMService * previousSendingService;
+@property (nonatomic) IMService *composeSendingService;
+@property (nonatomic) bool noAvailableServices;
+@property (nonatomic) IMService *previousSendingService;
 
 - (id)composeSendingService;
 - (bool)noAvailableServices;

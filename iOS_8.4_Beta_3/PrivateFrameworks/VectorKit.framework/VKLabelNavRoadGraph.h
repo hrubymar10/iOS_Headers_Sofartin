@@ -73,7 +73,7 @@
     } _unitHeading;
 }
 
-@property(assign,retain) NSMutableArray * junctions;
+@property (nonatomic, retain) NSMutableArray *junctions;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

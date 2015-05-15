@@ -18,10 +18,10 @@
     bool _useTemporaryFitnessLevel;
 }
 
-@property(assign,retain) CUIKSingleDayTimelineLayoutPartition * correspondingPartition;
-@property(assign,retain) NSMutableArray * currentOccurrences;
-@property(assign,readwrite) bool isOnlyBucket;
-@property(assign,readonly) NSArray * occurrences;
+@property (nonatomic, retain) CUIKSingleDayTimelineLayoutPartition *correspondingPartition;
+@property (nonatomic, retain) NSMutableArray *currentOccurrences;
+@property (nonatomic) bool isOnlyBucket;
+@property (nonatomic, readonly) NSArray *occurrences;
 
 - (void).cxx_destruct;
 - (id)_occurrencesForFitnessLevel;

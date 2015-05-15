@@ -6,7 +6,7 @@
     bool _devSigned;
 }
 
-@property(assign,readwrite) bool devSigned;
+@property (nonatomic) bool devSigned;
 
 + (bool)supportsSecureCoding;
 

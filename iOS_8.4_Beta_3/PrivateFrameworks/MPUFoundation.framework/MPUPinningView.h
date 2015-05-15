@@ -10,9 +10,9 @@
     UIView *_pinningSourceView;
 }
 
-@property(assign,retain) UIView * contentView;
-@property(assign,retain) CALayer * pinningSourceLayer;
-@property(assign,retain) UIView * pinningSourceView;
+@property (nonatomic, retain) UIView *contentView;
+@property (nonatomic, retain) CALayer *pinningSourceLayer;
+@property (nonatomic, retain) UIView *pinningSourceView;
 
 - (void).cxx_destruct;
 - (void)_applicationDidBecomeActiveNotification:(id)arg1;

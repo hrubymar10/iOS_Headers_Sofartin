@@ -17,20 +17,20 @@
     CKDPShareIdentifier *_shareId;
 }
 
-@property(assign,readwrite) int apnsEnv;
-@property(assign,retain) NSString * etag;
-@property(assign,readwrite) bool hasApnsEnv;
-@property(assign,readonly) bool hasEtag;
-@property(assign,readwrite) bool hasLookbackWindowMillis;
-@property(assign,readonly) bool hasPulseData;
-@property(assign,readonly) bool hasPushToken;
-@property(assign,readwrite) bool hasReset;
-@property(assign,readonly) bool hasShareId;
-@property(assign,readwrite) long long lookbackWindowMillis;
-@property(assign,retain) CKDPPulseData * pulseData;
-@property(assign,retain) NSData * pushToken;
-@property(assign,readwrite) bool reset;
-@property(assign,retain) CKDPShareIdentifier * shareId;
+@property (nonatomic) int apnsEnv;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic) bool hasApnsEnv;
+@property (nonatomic, readonly) bool hasEtag;
+@property (nonatomic) bool hasLookbackWindowMillis;
+@property (nonatomic, readonly) bool hasPulseData;
+@property (nonatomic, readonly) bool hasPushToken;
+@property (nonatomic) bool hasReset;
+@property (nonatomic, readonly) bool hasShareId;
+@property (nonatomic) long long lookbackWindowMillis;
+@property (nonatomic, retain) CKDPPulseData *pulseData;
+@property (nonatomic, retain) NSData *pushToken;
+@property (nonatomic) bool reset;
+@property (nonatomic, retain) CKDPShareIdentifier *shareId;
 
 + (id)options;
 

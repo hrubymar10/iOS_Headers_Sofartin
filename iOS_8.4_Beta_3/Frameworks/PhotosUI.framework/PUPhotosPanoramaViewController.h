@@ -7,9 +7,9 @@
     PHAssetCollection *_userPanoAlbum;
 }
 
-@property(assign,readonly) PUSectionedGridLayout * mainGridLayout;
-@property(assign,retain) PUPhotosPanoramaViewControllerSpec * panoramaSpec;
-@property(assign,retain) PHAssetCollection * userPanoAlbum;
+@property (nonatomic, readonly) PUSectionedGridLayout *mainGridLayout;
+@property (nonatomic, retain) PUPhotosPanoramaViewControllerSpec *panoramaSpec;
+@property (nonatomic, retain) PHAssetCollection *userPanoAlbum;
 
 - (void).cxx_destruct;
 - (bool)_hasScrollableContent;

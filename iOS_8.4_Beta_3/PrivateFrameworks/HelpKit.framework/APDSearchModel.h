@@ -10,11 +10,11 @@
     NSString *_searchText;
 }
 
-@property(assign,retain) NSString * copyrightTopicId;
-@property(assign,retain) NSArray * currentSearchResults;
-@property(assign,retain) NSDictionary * searchIndex;
-@property(assign,retain) NSArray * searchTerms;
-@property(assign,retain) NSString * searchText;
+@property (nonatomic, retain) NSString *copyrightTopicId;
+@property (nonatomic, retain) NSArray *currentSearchResults;
+@property (nonatomic, retain) NSDictionary *searchIndex;
+@property (nonatomic, retain) NSArray *searchTerms;
+@property (nonatomic, retain) NSString *searchText;
 
 - (void).cxx_destruct;
 - (void)clearData;

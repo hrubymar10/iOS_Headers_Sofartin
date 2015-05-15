@@ -11,7 +11,7 @@
     NSMutableDictionary *mShapeIdMap;
 }
 
-@property(assign,readwrite) int groupDepth;
+@property (nonatomic) int groupDepth;
 
 - (Class)client;
 - (id)colorPalette;

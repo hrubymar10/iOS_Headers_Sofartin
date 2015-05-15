@@ -12,13 +12,13 @@
     bool _hasFaceTimeFavorite;
 }
 
-@property(assign,readwrite) bool allowFaceTimeAudioFavorites;
-@property(assign,readwrite) bool allowFaceTimeFavorites;
-@property(assign,readwrite) bool allowPhoneFavorites;
-@property(assign,retain) ABPropertyBestIDSValueQuery * bestFaceTimeQuery;
-@property(assign,retain) NSArray * filteredPhoneItems;
-@property(assign,readwrite) bool hasFaceTimeAudioFavorite;
-@property(assign,readwrite) bool hasFaceTimeFavorite;
+@property (nonatomic) bool allowFaceTimeAudioFavorites;
+@property (nonatomic) bool allowFaceTimeFavorites;
+@property (nonatomic) bool allowPhoneFavorites;
+@property (nonatomic, retain) ABPropertyBestIDSValueQuery *bestFaceTimeQuery;
+@property (nonatomic, retain) NSArray *filteredPhoneItems;
+@property (nonatomic) bool hasFaceTimeAudioFavorite;
+@property (nonatomic) bool hasFaceTimeFavorite;
 
 - (void)_filterFavoritedItems;
 - (void)_queryFaceTimeStatus;

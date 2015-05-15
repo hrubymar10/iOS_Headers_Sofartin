@@ -18,17 +18,17 @@
     NSString *_storagePathPrefix;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool includeCachedVersions;
-@property(assign,readonly) NSURL * logicalURL;
-@property(assign,readonly) NSURL * physicalURL;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool includeCachedVersions;
+@property (nonatomic, readonly) NSURL *logicalURL;
+@property (nonatomic, readonly) NSURL *physicalURL;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
 
 + (id)senderWithLookup:(id)arg1 client:(id)arg2 XPCReceiver:(id)arg3 error:(id*)arg4;
 

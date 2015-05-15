@@ -6,7 +6,7 @@
     NSString *mTemporaryDirectory;
 }
 
-@property(assign,retain) NSString * temporaryDirectory;
+@property (nonatomic, retain) NSString *temporaryDirectory;
 
 - (void)dealloc;
 - (id)defaultPassphrase;

@@ -10,14 +10,14 @@
     NSMutableDictionary *mSlideNodesForUniqueIdentifiersCache;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) KNSlideNode * defaultSlideNodeForNewSelection;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSArray * displayedSlideNodes;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * slideNodes;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSArray * visibleSlideNodes;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) KNSlideNode *defaultSlideNodeForNewSelection;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSArray *displayedSlideNodes;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *slideNodes;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *visibleSlideNodes;
 
 + (id)slideNodeDepthMapToCleanUpSlideNodes:(id)arg1 atDepths:(id)arg2 minimumValidDepth:(unsigned long long)arg3;
 + (id)slideNodeDepthMapToCleanUpSlideNodes:(id)arg1 minimumValidDepth:(unsigned long long)arg2;

@@ -14,8 +14,8 @@
     bool _usesVerticalLayout;
 }
 
-@property(assign,readonly) UIStatusBarForegroundStyleAttributes * foregroundStyle;
-@property(assign,readwrite) long long idiom;
+@property (nonatomic, readonly) UIStatusBarForegroundStyleAttributes *foregroundStyle;
+@property (nonatomic) long long idiom;
 
 - (void)_cleanUpAfterDataChange;
 - (void)_cleanUpAfterSimpleReflow;

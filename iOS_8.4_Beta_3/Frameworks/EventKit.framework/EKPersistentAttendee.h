@@ -4,13 +4,13 @@
 
 @interface EKPersistentAttendee : EKPersistentParticipant
 
-@property(assign,readwrite) bool commentChanged;
-@property(assign,copy) NSDate * lastModified;
-@property(assign,readwrite) int participantRole;
-@property(assign,readwrite) int participantStatus;
-@property(assign,readwrite) int participantType;
-@property(assign,readwrite) int pendingStatus;
-@property(assign,readwrite) bool statusChanged;
+@property (nonatomic) bool commentChanged;
+@property (nonatomic, copy) NSDate *lastModified;
+@property (nonatomic) int participantRole;
+@property (nonatomic) int participantStatus;
+@property (nonatomic) int participantType;
+@property (nonatomic) int pendingStatus;
+@property (nonatomic) bool statusChanged;
 
 + (id)attendeeWithEmailAddress:(id)arg1 name:(id)arg2;
 + (id)attendeeWithName:(id)arg1 emailAddress:(id)arg2 address:(id)arg3;

@@ -4,24 +4,24 @@
 
 @interface _PLGenericAlbum : PLManagedObject
 
-@property(assign,retain) NSMutableSet * albumLists;
-@property(assign,readwrite) long long albumToFolderOrderKey;
-@property(assign,readwrite) int cachedCount;
-@property(assign,readwrite) int cachedPhotosCount;
-@property(assign,readwrite) int cachedVideosCount;
-@property(assign,retain) PLManagedAsset * customKeyAsset;
-@property(assign,readwrite) bool customSortAscending;
-@property(assign,readwrite) int customSortKey;
-@property(assign,retain) PLManagedAsset * keyAsset;
-@property(assign,retain) NSNumber * kind;
-@property(assign,retain) PLManagedFolder * parentFolder;
-@property(assign,readwrite) int pendingItemsCount;
-@property(assign,readwrite) int pendingItemsType;
-@property(assign,retain) PLManagedAsset * secondaryKeyAsset;
-@property(assign,retain) NSDictionary * slideshowSettings;
-@property(assign,retain) PLManagedAsset * tertiaryKeyAsset;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSString * uuid;
+@property (nonatomic, retain) NSMutableSet *albumLists;
+@property (nonatomic) long long albumToFolderOrderKey;
+@property (nonatomic) int cachedCount;
+@property (nonatomic) int cachedPhotosCount;
+@property (nonatomic) int cachedVideosCount;
+@property (nonatomic, retain) PLManagedAsset *customKeyAsset;
+@property (nonatomic) bool customSortAscending;
+@property (nonatomic) int customSortKey;
+@property (nonatomic, retain) PLManagedAsset *keyAsset;
+@property (nonatomic, retain) NSNumber *kind;
+@property (nonatomic, retain) PLManagedFolder *parentFolder;
+@property (nonatomic) int pendingItemsCount;
+@property (nonatomic) int pendingItemsType;
+@property (nonatomic, retain) PLManagedAsset *secondaryKeyAsset;
+@property (nonatomic, retain) NSDictionary *slideshowSettings;
+@property (nonatomic, retain) PLManagedAsset *tertiaryKeyAsset;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *uuid;
 
 + (id)entityInManagedObjectContext:(id)arg1;
 + (id)entityName;

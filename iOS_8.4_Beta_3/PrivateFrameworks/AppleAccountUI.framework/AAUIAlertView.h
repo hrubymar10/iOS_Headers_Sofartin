@@ -9,7 +9,7 @@
     long long _chosenButtonIndex;
 }
 
-@property(assign,readonly) long long chosenButtonIndex;
+@property (readonly) long long chosenButtonIndex;
 
 - (void).cxx_destruct;
 - (void)alertView:(id)arg1 didDismissWithButtonIndex:(long long)arg2;

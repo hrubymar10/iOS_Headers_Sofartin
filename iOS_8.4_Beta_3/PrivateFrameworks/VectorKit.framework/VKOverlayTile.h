@@ -9,9 +9,9 @@
     NSMapTable *_tileForOverlay;
 }
 
-@property(assign,readonly) float maximumStyleZ;
-@property(assign,readonly) NSArray * overlays;
-@property(assign,retain) VKVectorTile * roadTile;
+@property (nonatomic, readonly) float maximumStyleZ;
+@property (nonatomic, readonly) NSArray *overlays;
+@property (nonatomic, retain) VKVectorTile *roadTile;
 
 - (void)addOverlay:(id)arg1;
 - (void)dealloc;

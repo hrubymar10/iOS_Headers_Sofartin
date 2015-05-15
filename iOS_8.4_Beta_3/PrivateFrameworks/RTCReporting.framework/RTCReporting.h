@@ -13,7 +13,7 @@
     NSObject<OS_dispatch_source> *_timer;
 }
 
-@property(assign,copy) id messageLoggingBlock;
+@property (nonatomic, copy) id messageLoggingBlock;
 
 + (id)getPersistentIdentifierForDNU:(bool)arg1;
 + (bool)sendMsgToServer:(int)arg1 serverStoreBagName:(id)arg2 defaultSvrIP:(id)arg3 defaultSvrPort:(unsigned short)arg4 componentType:(int)arg5 version:(unsigned short)arg6 sessionID:(unsigned int)arg7 eventID:(unsigned short)arg8 method:(unsigned short)arg9 respCode:(unsigned short)arg10 dict:(id)arg11;

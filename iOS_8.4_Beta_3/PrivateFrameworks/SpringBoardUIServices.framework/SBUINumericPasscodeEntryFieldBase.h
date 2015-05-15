@@ -9,9 +9,9 @@
     NSMutableCharacterSet *_numericTrimmingSet;
 }
 
-@property(assign,readwrite) bool allowsNewlineAcceptance;
-@property(assign,readwrite) bool autoAcceptWhenMaxNumbersMet;
-@property(assign,readwrite) unsigned long long maxNumbersAllowed;
+@property (nonatomic) bool allowsNewlineAcceptance;
+@property (nonatomic) bool autoAcceptWhenMaxNumbersMet;
+@property (nonatomic) unsigned long long maxNumbersAllowed;
 
 - (void)_appendString:(id)arg1;
 - (void)_deleteLastCharacter;

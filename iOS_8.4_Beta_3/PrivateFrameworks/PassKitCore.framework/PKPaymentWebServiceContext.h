@@ -22,24 +22,24 @@
     long long _version;
 }
 
-@property(assign,readonly) NSDictionary * TSMURLStringByPushTopic;
-@property(assign,copy) NSArray * certificates;
-@property(assign,retain) PKPaymentWebServiceConfiguration * configuration;
-@property(assign,copy) NSDate * configurationDate;
-@property(assign,readwrite) long long consistencyCheckBackoffLevel;
-@property(assign,readwrite) bool devSigned;
-@property(assign,copy) NSString * deviceID;
-@property(assign,copy) NSString * lastUpdatedTag;
-@property(assign,readwrite) bool messageServiceDisabled;
-@property(assign,readonly) PKPaymentWebServiceRegion * primaryRegion;
-@property(assign,copy) NSString * primaryRegionIdentifier;
-@property(assign,copy) NSString * pushToken;
-@property(assign,retain) NSDictionary * regions;
-@property(assign,copy) NSDate * registrationDate;
-@property(assign,copy) NSString * secureElementID;
-@property(assign,readwrite) bool transactionServiceDisabled;
-@property(assign,retain) NSMutableDictionary * verificationRequestsByPassUniqueID;
-@property(assign,readwrite) long long version;
+@property (readonly) NSDictionary *TSMURLStringByPushTopic;
+@property (copy) NSArray *certificates;
+@property (retain) PKPaymentWebServiceConfiguration *configuration;
+@property (copy) NSDate *configurationDate;
+@property long long consistencyCheckBackoffLevel;
+@property bool devSigned;
+@property (copy) NSString *deviceID;
+@property (copy) NSString *lastUpdatedTag;
+@property bool messageServiceDisabled;
+@property (readonly) PKPaymentWebServiceRegion *primaryRegion;
+@property (copy) NSString *primaryRegionIdentifier;
+@property (copy) NSString *pushToken;
+@property (retain) NSDictionary *regions;
+@property (copy) NSDate *registrationDate;
+@property (copy) NSString *secureElementID;
+@property bool transactionServiceDisabled;
+@property (retain) NSMutableDictionary *verificationRequestsByPassUniqueID;
+@property long long version;
 
 + (void)_migrateContext:(id)arg1;
 + (void)_migrateFrom0To1:(id)arg1;

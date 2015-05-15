@@ -9,8 +9,8 @@
     bool _timerOn;
 }
 
-@property(setter=_setButtonType:,assign,readwrite) long long _buttonType;
-@property(assign,readwrite) unsigned long long numberOfTouchesRequired;
+@property (setter=_setButtonType:, nonatomic) long long _buttonType;
+@property (nonatomic) unsigned long long numberOfTouchesRequired;
 
 + (double)delayForRepeatNumber:(long long)arg1;
 

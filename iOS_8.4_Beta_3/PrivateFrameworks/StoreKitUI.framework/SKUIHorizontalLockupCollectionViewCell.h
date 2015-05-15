@@ -19,12 +19,12 @@
     UIColor *_lockupViewBackgroundColor;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isScrollingCellToHideActionButton,assign,readonly) bool scrollingCellToHideActionButton;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isScrollingCellToHideActionButton, nonatomic, readonly) bool scrollingCellToHideActionButton;
+@property (readonly) Class superclass;
 
 + (double)maximumPerspectiveHeightForSize:(struct CGSize { double x1; double x2; })arg1;
 + (struct CGSize { double x1; double x2; })preferredSizeForViewElement:(id)arg1 context:(id)arg2;

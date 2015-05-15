@@ -9,10 +9,10 @@
     long long _cloudFeedContent;
 }
 
-@property(assign,readwrite) long long actionType;
-@property(assign,copy) NSString * albumUUID;
-@property(assign,retain) NSArray * assetUUIDs;
-@property(assign,readwrite) long long cloudFeedContent;
+@property long long actionType;
+@property (nonatomic, copy) NSString *albumUUID;
+@property (nonatomic, retain) NSArray *assetUUIDs;
+@property (nonatomic) long long cloudFeedContent;
 
 + (void)userDidDeleteSharedAlbum:(id)arg1;
 + (void)userDidDeleteSharedAssets:(id)arg1;

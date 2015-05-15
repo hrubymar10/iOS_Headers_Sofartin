@@ -7,11 +7,11 @@
     <HKEmergencyCardDeletionDelegate> *_deletionDelegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <HKEmergencyCardDeletionDelegate> * deletionDelegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <HKEmergencyCardDeletionDelegate> *deletionDelegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)actionSheet:(id)arg1 clickedButtonAtIndex:(long long)arg2;

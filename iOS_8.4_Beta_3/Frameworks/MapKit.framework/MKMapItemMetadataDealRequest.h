@@ -6,7 +6,7 @@
     id _dealHandler;
 }
 
-@property(assign,copy) id dealHandler;
+@property (nonatomic, copy) id dealHandler;
 
 + (id)requestWithMapItem:(id)arg1;
 

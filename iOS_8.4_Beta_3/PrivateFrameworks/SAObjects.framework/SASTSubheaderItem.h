@@ -4,12 +4,12 @@
 
 @interface SASTSubheaderItem : AceObject <SASTTemplateItem>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUIDecoratedText * leftText;
-@property(assign,retain) SAUIDecoratedText * rightText;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUIDecoratedText *leftText;
+@property (nonatomic, retain) SAUIDecoratedText *rightText;
+@property (readonly) Class superclass;
 
 + (id)subheaderItem;
 + (id)subheaderItemWithDictionary:(id)arg1 context:(id)arg2;

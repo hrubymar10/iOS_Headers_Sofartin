@@ -9,10 +9,10 @@
     NSObject<OS_dispatch_queue> *_journalQueue;
 }
 
-@property(assign,retain) NSMutableData * currentFileData;
-@property(assign,retain) NSString * directoryPath;
-@property(assign,readwrite) unsigned long long filesCount;
-@property(assign,retain) NSObject<OS_dispatch_queue> * journalQueue;
+@property (nonatomic, retain) NSMutableData *currentFileData;
+@property (nonatomic, retain) NSString *directoryPath;
+@property (nonatomic) unsigned long long filesCount;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *journalQueue;
 
 - (void).cxx_destruct;
 - (unsigned long long)_currentFilesCount;

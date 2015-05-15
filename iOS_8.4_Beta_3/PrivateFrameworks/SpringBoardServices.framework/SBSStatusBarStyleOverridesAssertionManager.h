@@ -8,13 +8,13 @@
     NSXPCConnection *_sbXPCConnection;
 }
 
-@property(assign,retain) NSHashTable * assertions;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * internalQueue;
-@property(assign,retain) NSXPCConnection * sbXPCConnection;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSHashTable *assertions;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *internalQueue;
+@property (nonatomic, retain) NSXPCConnection *sbXPCConnection;
+@property (readonly) Class superclass;
 
 + (id)sharedInstance;
 

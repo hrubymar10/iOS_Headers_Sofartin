@@ -14,15 +14,15 @@
     NSNumber *_valueHandle;
 }
 
-@property(assign,retain) NSArray * descriptors;
-@property(assign,readonly) NSNumber * handle;
-@property(assign,readonly) bool isBroadcasted;
-@property(assign,readwrite) bool isNotifying;
-@property(assign,readonly) CBPeripheral * peripheral;
-@property(assign,readonly) unsigned long long properties;
-@property(assign,readwrite) CBService * service;
-@property(assign,retain) NSData * value;
-@property(assign,readonly) NSNumber * valueHandle;
+@property (retain) NSArray *descriptors;
+@property (nonatomic, readonly) NSNumber *handle;
+@property (readonly) bool isBroadcasted;
+@property bool isNotifying;
+@property (nonatomic, readonly) CBPeripheral *peripheral;
+@property (nonatomic, readonly) unsigned long long properties;
+@property (nonatomic) CBService *service;
+@property (retain) NSData *value;
+@property (nonatomic, readonly) NSNumber *valueHandle;
 
 - (void)dealloc;
 - (id)description;

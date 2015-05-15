@@ -64,7 +64,7 @@
     NSObject<OS_dispatch_queue> *_temporaryDirectoryQueue;
 }
 
-@property(assign,readonly) TSPObjectContext * context;
+@property (nonatomic, readonly) TSPObjectContext *context;
 
 + (void)readWithChannel:(id)arg1 handler:(id)arg2;
 + (void)readWithChannelImpl:(id)arg1 handler:(id)arg2;

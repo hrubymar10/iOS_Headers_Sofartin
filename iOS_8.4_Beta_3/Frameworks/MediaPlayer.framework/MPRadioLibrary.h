@@ -6,9 +6,9 @@
     MPRadioController *_radioController;
 }
 
-@property(assign,readonly) bool isEnabled;
-@property(assign,readonly) unsigned long long stationCount;
-@property(assign,readonly) NSArray * stations;
+@property (nonatomic, readonly) bool isEnabled;
+@property (nonatomic, readonly) unsigned long long stationCount;
+@property (nonatomic, readonly) NSArray *stations;
 
 + (id)defaultRadioLibrary;
 

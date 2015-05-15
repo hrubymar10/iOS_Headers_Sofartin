@@ -34,21 +34,21 @@
     UIKeyboardCandidateSortControl *_sortSelectionBar;
 }
 
-@property(assign,readwrite) <UIKeyboardCandidateListDelegate> * candidateListDelegate;
-@property(assign,retain) TIKeyboardCandidateResultSet * candidateSet;
-@property(assign,readonly) UIKeyboardCandidateGridCollectionViewController * collectionViewController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } inlineRect;
-@property(assign,copy) NSString * inlineText;
-@property(assign,readwrite) double maxX;
-@property(assign,readwrite) int position;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } previousCollapsedFrame;
-@property(getter=isReducedWidth,assign,readonly) bool reducedWidth;
-@property(assign,readwrite) bool showHiddenCandidatesOnly;
-@property(assign,readonly) UIKeyboardCandidateSortControl * sortSelectionBar;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) <UIKeyboardCandidateListDelegate> *candidateListDelegate;
+@property (nonatomic, retain) TIKeyboardCandidateResultSet *candidateSet;
+@property (nonatomic, readonly) UIKeyboardCandidateGridCollectionViewController *collectionViewController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } inlineRect;
+@property (nonatomic, copy) NSString *inlineText;
+@property (nonatomic) double maxX;
+@property (nonatomic) int position;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } previousCollapsedFrame;
+@property (getter=isReducedWidth, nonatomic, readonly) bool reducedWidth;
+@property (nonatomic) bool showHiddenCandidatesOnly;
+@property (nonatomic, readonly) UIKeyboardCandidateSortControl *sortSelectionBar;
+@property (readonly) Class superclass;
 
 - (id)_inheritedRenderConfig;
 - (id)activeCandidateList;

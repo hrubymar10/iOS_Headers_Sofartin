@@ -10,15 +10,15 @@
     _UIViewControllerTransitionContext *__mainContext;
 }
 
-@property(setter=_setAlongsideAnimationViews:,assign,retain) NSMutableArray * _alongsideAnimationViews;
-@property(setter=_setAlongsideAnimations:,assign,retain) NSMutableArray * _alongsideAnimations;
-@property(setter=_setAlongsideCompletions:,assign,retain) NSMutableArray * _alongsideCompletions;
-@property(setter=_setInteractiveChangeHandlers:,assign,retain) NSMutableArray * _interactiveChangeHandlers;
-@property(setter=_setMainContext:,assign,readwrite) _UIViewControllerTransitionContext * _mainContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (setter=_setAlongsideAnimationViews:, nonatomic, retain) NSMutableArray *_alongsideAnimationViews;
+@property (setter=_setAlongsideAnimations:, nonatomic, retain) NSMutableArray *_alongsideAnimations;
+@property (setter=_setAlongsideCompletions:, nonatomic, retain) NSMutableArray *_alongsideCompletions;
+@property (setter=_setInteractiveChangeHandlers:, nonatomic, retain) NSMutableArray *_interactiveChangeHandlers;
+@property (setter=_setMainContext:, nonatomic) _UIViewControllerTransitionContext *_mainContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)_alongsideAnimationViews;
 - (id)_alongsideAnimations;

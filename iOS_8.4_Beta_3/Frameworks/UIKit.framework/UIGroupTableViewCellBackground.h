@@ -23,13 +23,13 @@
     UIView *_topSeparatorView;
 }
 
-@property(assign,readwrite) double sectionBorderWidth;
-@property(assign,readwrite) int sectionLocation;
-@property(getter=isSelected,assign,readwrite) bool selected;
-@property(assign,readwrite) long long selectionStyle;
-@property(assign,retain) UIColor * selectionTintColor;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } separatorInset;
-@property(assign,readwrite) long long separatorStyle;
+@property (nonatomic) double sectionBorderWidth;
+@property (nonatomic) int sectionLocation;
+@property (getter=isSelected, nonatomic) bool selected;
+@property (nonatomic) long long selectionStyle;
+@property (nonatomic, retain) UIColor *selectionTintColor;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } separatorInset;
+@property (nonatomic) long long separatorStyle;
 
 + (void)_flushCacheOnNotification:(id)arg1;
 + (void)initialize;

@@ -9,8 +9,8 @@
     TSUScaledProgressStorage *mStorage;
 }
 
-@property(assign,readwrite) double maxValue;
-@property(assign,retain) TSUProgress * progress;
+@property double maxValue;
+@property (retain) TSUProgress *progress;
 
 - (id)addProgressObserverWithValueInterval:(double)arg1 queue:(id)arg2 handler:(id)arg3;
 - (void)dealloc;

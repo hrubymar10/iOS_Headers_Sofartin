@@ -7,11 +7,11 @@
     double _strength;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double strength;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double strength;
+@property (readonly) Class superclass;
 
 - (id)_imageNameForCurrentContentSize:(id)arg1;
 - (id)_newDialViewForSettings:(id)arg1;

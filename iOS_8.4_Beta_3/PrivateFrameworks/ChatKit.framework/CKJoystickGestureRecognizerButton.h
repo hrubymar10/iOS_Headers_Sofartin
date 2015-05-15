@@ -9,10 +9,10 @@
     CKJoystickGestureRecognizer *_gestureRecognizer;
 }
 
-@property(assign,retain) UIButton * button;
-@property(assign,readwrite) <CKJoystickGestureRecognizerButtonDelegate> * delegate;
-@property(assign,retain) NSDate * gestureDidBeginDate;
-@property(assign,retain) CKJoystickGestureRecognizer * gestureRecognizer;
+@property (nonatomic, retain) UIButton *button;
+@property (nonatomic) <CKJoystickGestureRecognizerButtonDelegate> *delegate;
+@property (nonatomic, retain) NSDate *gestureDidBeginDate;
+@property (nonatomic, retain) CKJoystickGestureRecognizer *gestureRecognizer;
 
 + (id)joystickGestureRecognizerButtonWithButton:(id)arg1;
 

@@ -7,8 +7,8 @@
     id _target;
 }
 
-@property(assign,readonly) SEL action;
-@property(assign,readonly) id target;
+@property (nonatomic, readonly) SEL action;
+@property (nonatomic, readonly) id target;
 
 - (void).cxx_destruct;
 - (SEL)action;

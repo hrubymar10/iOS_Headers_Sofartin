@@ -6,7 +6,7 @@
     <IKEntityValueProviding> *_entityValueProvider;
 }
 
-@property(assign,retain) <IKEntityValueProviding> * entityValueProvider;
+@property (nonatomic, retain) <IKEntityValueProviding> *entityValueProvider;
 
 - (void).cxx_destruct;
 - (id)_valueForEntityProperty:(id)arg1;

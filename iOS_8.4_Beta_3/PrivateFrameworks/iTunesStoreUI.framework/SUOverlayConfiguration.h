@@ -14,10 +14,10 @@
     NSRegularExpression *_urlPattern;
 }
 
-@property(assign,readonly) long long cornerRadius;
-@property(assign,readonly) bool shouldShowNavigationBar;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) NSString * transitionName;
+@property (nonatomic, readonly) long long cornerRadius;
+@property (nonatomic, readonly) bool shouldShowNavigationBar;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) NSString *transitionName;
 
 - (long long)cornerRadius;
 - (void)dealloc;

@@ -10,11 +10,11 @@
     NSString *_youTubeUsername;
 }
 
-@property(assign,copy) NSString * displayName;
-@property(assign,copy) NSString * refreshToken;
-@property(assign,copy) NSString * token;
-@property(assign,copy) NSString * username;
-@property(assign,copy) NSString * youTubeUsername;
+@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic, copy) NSString *refreshToken;
+@property (nonatomic, copy) NSString *token;
+@property (nonatomic, copy) NSString *username;
+@property (nonatomic, copy) NSString *youTubeUsername;
 
 - (void).cxx_destruct;
 - (id)displayName;

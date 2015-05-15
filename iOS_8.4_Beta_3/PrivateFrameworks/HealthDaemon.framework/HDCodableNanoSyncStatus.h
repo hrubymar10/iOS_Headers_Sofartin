@@ -10,17 +10,17 @@
     int _statusCode;
 }
 
-@property(assign,retain) NSMutableArray * anchors;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool hasStatusCode;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int statusCode;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSMutableArray *anchors;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool hasStatusCode;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int statusCode;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
 
 + (id)persistentUserInfoKey;
 + (id)retreiveFromPersistentUserInfo:(id)arg1;

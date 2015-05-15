@@ -6,7 +6,7 @@
     NSString *directionSelector;
 }
 
-@property(assign,retain) NSString * directionSelector;
+@property (nonatomic, retain) NSString *directionSelector;
 
 - (id)_generateBackdropMaskViewForFlag:(long long)arg1;
 - (bool)_shouldAnimatePropertyWithKey:(id)arg1;

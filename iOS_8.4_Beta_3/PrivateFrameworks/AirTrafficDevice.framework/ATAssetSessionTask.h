@@ -17,16 +17,16 @@
     bool _waitingForRetry;
 }
 
-@property(assign,retain) ATAssetLinkController * assetLinkController;
-@property(assign,copy) NSString * dataClass;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long failedAssetsCount;
-@property(assign,copy) NSPredicate * filterPredicate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool retryUntilFinished;
-@property(assign,copy) id shouldRetryAssetBlock;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) ATAssetLinkController *assetLinkController;
+@property (nonatomic, readonly, copy) NSString *dataClass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) unsigned long long failedAssetsCount;
+@property (nonatomic, copy) NSPredicate *filterPredicate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool retryUntilFinished;
+@property (nonatomic, copy) id shouldRetryAssetBlock;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_finishAsset:(id)arg1 withError:(id)arg2;

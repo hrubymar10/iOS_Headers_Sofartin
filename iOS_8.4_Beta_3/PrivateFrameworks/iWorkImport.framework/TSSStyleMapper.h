@@ -11,14 +11,14 @@
     TSSStylesheet *_targetStylesheet;
 }
 
-@property(assign,readwrite) bool clientsMustRemap;
-@property(assign,readonly) NSSet * createdStyles;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool forceMatchStyle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) TSSStylesheet * targetStylesheet;
+@property (nonatomic) bool clientsMustRemap;
+@property (nonatomic, readonly) NSSet *createdStyles;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool forceMatchStyle;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) TSSStylesheet *targetStylesheet;
 
 - (id)_mappedStyleForStyle:(id)arg1 depth:(unsigned long long)arg2;
 - (bool)clientsMustRemap;

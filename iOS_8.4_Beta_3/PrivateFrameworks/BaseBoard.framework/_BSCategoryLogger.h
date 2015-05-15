@@ -7,12 +7,12 @@
     NSString *_name;
 }
 
-@property(assign,retain) NSString * category;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * name;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSString *category;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *name;
+@property (readonly) Class superclass;
 
 - (id)category;
 - (void)dealloc;

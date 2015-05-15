@@ -14,15 +14,15 @@
     <NSCopying> *_selectedEntityUniqueIdentifier;
 }
 
-@property(assign,readonly) IKAppContext * appContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <IKAppMenuBarDocumentDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * featureName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) IKViewElement * menuBarElement;
-@property(assign,readonly) IKViewElement * selectedMenuItem;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) IKAppContext *appContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <IKAppMenuBarDocumentDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSString *featureName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) IKViewElement *menuBarElement;
+@property (nonatomic, readonly) IKViewElement *selectedMenuItem;
+@property (readonly) Class superclass;
 
 + (id)makeFeatureJSObjectForFeature:(id)arg1;
 

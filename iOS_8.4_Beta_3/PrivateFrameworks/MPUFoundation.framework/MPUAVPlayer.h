@@ -4,7 +4,7 @@
 
 @interface MPUAVPlayer : MPAVController
 
-@property(getter=_playlistManager,assign,retain) MPUAVPlaylistManager * playlistManager;
+@property (getter=_playlistManager, nonatomic, retain) MPUAVPlaylistManager *playlistManager;
 
 + (Class)playlistManagerClass;
 

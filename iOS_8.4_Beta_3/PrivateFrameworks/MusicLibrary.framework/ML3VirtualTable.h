@@ -14,15 +14,15 @@
     NSString *_virtualTableName;
 }
 
-@property(assign,readonly) ML3DatabaseConnection * connection;
-@property(assign,readwrite) struct shared_ptr<ML3VirtualTableDataSource> { struct ML3VirtualTableDataSource {} *x1; struct __shared_weak_count {} *x2; } dataSource;
-@property(assign,readonly) ML3DatabaseTable * databaseTable;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ML3VirtualTableDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) ML3DatabaseConnection *connection;
+@property (nonatomic) struct shared_ptr<ML3VirtualTableDataSource> { struct ML3VirtualTableDataSource {} *x1; struct __shared_weak_count {} *x2; } dataSource;
+@property (nonatomic, readonly) ML3DatabaseTable *databaseTable;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ML3VirtualTableDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *name;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

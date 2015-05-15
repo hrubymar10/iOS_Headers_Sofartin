@@ -13,10 +13,10 @@
     long long _purchaseAlbumViewStyle;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } alignmentRectInsets;
-@property(assign,readonly) SKUIItemOfferButton * itemOfferButton;
-@property(assign,readwrite) long long purchaseAlbumViewStyle;
-@property(assign,copy) NSString * title;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } alignmentRectInsets;
+@property (nonatomic, readonly) SKUIItemOfferButton *itemOfferButton;
+@property (nonatomic) long long purchaseAlbumViewStyle;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_updateForStyle:(long long)arg1 animated:(bool)arg2;

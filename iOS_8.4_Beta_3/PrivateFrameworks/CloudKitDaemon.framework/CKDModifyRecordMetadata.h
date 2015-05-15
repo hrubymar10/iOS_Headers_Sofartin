@@ -13,14 +13,14 @@
     unsigned long long _uploadState;
 }
 
-@property(assign,retain) NSError * error;
-@property(assign,retain) NSString * etag;
-@property(assign,readwrite) bool isDelete;
-@property(assign,retain) CKDProgressTracker * progressTracker;
-@property(assign,retain) CKRecord * record;
-@property(assign,retain) CKRecordID * recordID;
-@property(assign,retain) CKRecord * serverRecord;
-@property(assign,readwrite) unsigned long long uploadState;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic) bool isDelete;
+@property (nonatomic, retain) CKDProgressTracker *progressTracker;
+@property (nonatomic, retain) CKRecord *record;
+@property (nonatomic, retain) CKRecordID *recordID;
+@property (nonatomic, retain) CKRecord *serverRecord;
+@property (nonatomic) unsigned long long uploadState;
 
 + (id)_stringForUploadState:(unsigned long long)arg1;
 + (id)modifyMetadataForDeleteWithRecordID:(id)arg1;

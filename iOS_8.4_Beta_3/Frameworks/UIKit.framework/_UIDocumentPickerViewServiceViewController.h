@@ -13,21 +13,21 @@
     NSURL *_uploadURL;
 }
 
-@property(setter=_setAuxiliaryOptions:,assign,retain) NSArray * auxiliaryOptions;
-@property(assign,retain) NSString * currentPickerIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long displayMode;
-@property(assign,readwrite) bool displayedAsMenu;
-@property(assign,readwrite) bool hasBeenDismissed;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) <_UIDocumentPickerViewControllerHost> * hostingViewController;
-@property(assign,copy) NSArray * pickableTypes;
-@property(assign,readwrite) unsigned long long pickerMode;
-@property(assign,readwrite) bool showingSpinner;
-@property(assign,readwrite) int sortOrder;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSURL * uploadURL;
+@property (setter=_setAuxiliaryOptions:, nonatomic, retain) NSArray *auxiliaryOptions;
+@property (nonatomic, retain) NSString *currentPickerIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long displayMode;
+@property (nonatomic) bool displayedAsMenu;
+@property (nonatomic) bool hasBeenDismissed;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) <_UIDocumentPickerViewControllerHost> *hostingViewController;
+@property (nonatomic, copy) NSArray *pickableTypes;
+@property (nonatomic) unsigned long long pickerMode;
+@property (nonatomic) bool showingSpinner;
+@property (nonatomic) int sortOrder;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSURL *uploadURL;
 
 + (id)_exportedInterface;
 + (id)_remoteViewControllerInterface;

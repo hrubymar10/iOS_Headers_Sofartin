@@ -45,20 +45,20 @@
     unsigned int _updateStamp;
 }
 
-@property(assign,readonly) unsigned long long activeMapDisplayStyle;
-@property(assign,readwrite) float blendingFactor;
-@property(assign,readwrite) bool canSelectIcons;
-@property(assign,readonly) VKGenericShieldDrawStyle * defaultGenericShieldStyle;
-@property(getter=isFinishedDecoding,assign,readonly) bool finishedDecoding;
-@property(assign,readonly) bool isDevResource;
-@property(assign,readwrite) unsigned long long mapDisplayStyle;
-@property(assign,readwrite) unsigned long long mapDisplayStyleVariant;
-@property(assign,readwrite) long long mapMode;
-@property(assign,readonly) NSString * sheetName;
-@property(assign,readonly) VKPGlobalProperties * styleGlobalProperties;
-@property(assign,readonly) bool supportsNightMode;
-@property(assign,readonly) long long targetDisplay;
-@property(assign,readonly) unsigned int updateStamp;
+@property (nonatomic, readonly) unsigned long long activeMapDisplayStyle;
+@property (nonatomic) float blendingFactor;
+@property (nonatomic) bool canSelectIcons;
+@property (nonatomic, readonly) VKGenericShieldDrawStyle *defaultGenericShieldStyle;
+@property (getter=isFinishedDecoding, nonatomic, readonly) bool finishedDecoding;
+@property (nonatomic, readonly) bool isDevResource;
+@property (nonatomic) unsigned long long mapDisplayStyle;
+@property (nonatomic) unsigned long long mapDisplayStyleVariant;
+@property (nonatomic) long long mapMode;
+@property (nonatomic, readonly) NSString *sheetName;
+@property (nonatomic, readonly) VKPGlobalProperties *styleGlobalProperties;
+@property (nonatomic, readonly) bool supportsNightMode;
+@property (nonatomic, readonly) long long targetDisplay;
+@property (readonly) unsigned int updateStamp;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

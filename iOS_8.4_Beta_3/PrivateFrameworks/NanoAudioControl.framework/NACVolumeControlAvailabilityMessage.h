@@ -10,10 +10,10 @@
     bool _volumeControlAvailable;
 }
 
-@property(assign,retain) NSString * category;
-@property(assign,readonly) bool hasCategory;
-@property(assign,readwrite) bool hasVolumeControlAvailable;
-@property(assign,readwrite) bool volumeControlAvailable;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic, readonly) bool hasCategory;
+@property (nonatomic) bool hasVolumeControlAvailable;
+@property (nonatomic) bool volumeControlAvailable;
 
 - (void).cxx_destruct;
 - (id)category;

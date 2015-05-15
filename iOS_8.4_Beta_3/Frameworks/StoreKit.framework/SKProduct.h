@@ -6,15 +6,15 @@
     id _internal;
 }
 
-@property(getter=_localeIdentifier,setter=_setLocaleIdentifier:,assign,copy) NSString * _localeIdentifier;
-@property(assign,readonly) NSArray * downloadContentLengths;
-@property(assign,readonly) NSString * downloadContentVersion;
-@property(getter=isDownloadable,assign,readonly) bool downloadable;
-@property(assign,readonly) NSString * localizedDescription;
-@property(assign,readonly) NSString * localizedTitle;
-@property(assign,readonly) NSDecimalNumber * price;
-@property(assign,readonly) NSLocale * priceLocale;
-@property(assign,readonly) NSString * productIdentifier;
+@property (getter=_localeIdentifier, setter=_setLocaleIdentifier:, nonatomic, copy) NSString *_localeIdentifier;
+@property (nonatomic, readonly) NSArray *downloadContentLengths;
+@property (nonatomic, readonly) NSString *downloadContentVersion;
+@property (getter=isDownloadable, nonatomic, readonly) bool downloadable;
+@property (nonatomic, readonly) NSString *localizedDescription;
+@property (nonatomic, readonly) NSString *localizedTitle;
+@property (nonatomic, readonly) NSDecimalNumber *price;
+@property (nonatomic, readonly) NSLocale *priceLocale;
+@property (nonatomic, readonly) NSString *productIdentifier;
 
 - (id)_localeIdentifier;
 - (void)_setContentVersion:(id)arg1;

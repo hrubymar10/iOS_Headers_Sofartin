@@ -6,7 +6,7 @@
     HKExtendedHealthStore *_extendedHealthStore;
 }
 
-@property(assign,readwrite) HKExtendedHealthStore * extendedHealthStore;
+@property (nonatomic) HKExtendedHealthStore *extendedHealthStore;
 
 - (void).cxx_destruct;
 - (id)extendedHealthStore;

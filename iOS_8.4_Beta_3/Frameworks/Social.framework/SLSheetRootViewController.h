@@ -13,15 +13,15 @@
     SLSheetTitleView *_titleView;
 }
 
-@property(assign,copy) NSArray * configurationItems;
-@property(assign,retain) UIView * contentView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) SLComposeServiceViewController * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * serviceIconImage;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UITableView * tableView;
+@property (nonatomic, copy) NSArray *configurationItems;
+@property (nonatomic, retain) UIView *contentView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) SLComposeServiceViewController *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *serviceIconImage;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UITableView *tableView;
 
 - (void).cxx_destruct;
 - (double)_preferredTableViewHeight;

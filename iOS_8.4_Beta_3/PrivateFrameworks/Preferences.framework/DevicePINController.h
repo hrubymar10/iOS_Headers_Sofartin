@@ -18,8 +18,8 @@
     bool _success;
 }
 
-@property(assign,readwrite) bool hidesNavigationButtons;
-@property(assign,readwrite) <DevicePINControllerDelegate> * pinDelegate;
+@property (nonatomic) bool hidesNavigationButtons;
+@property (nonatomic) <DevicePINControllerDelegate> *pinDelegate;
 
 + (bool)settingEnabled;
 

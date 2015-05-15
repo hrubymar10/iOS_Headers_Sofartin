@@ -11,15 +11,15 @@
     NSMutableDictionary *_subscriptions;
 }
 
-@property(assign,retain) <BLTPingSubscribing> * client;
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <BLTBulletinDistributorSubscriberDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * machServiceName;
-@property(assign,readonly) NSSet * sectionIDs;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) <BLTPingSubscribing> *client;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property <BLTBulletinDistributorSubscriberDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *machServiceName;
+@property (nonatomic, readonly) NSSet *sectionIDs;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_connectIfNecessary;

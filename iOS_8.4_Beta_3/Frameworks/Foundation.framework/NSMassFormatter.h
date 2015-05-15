@@ -8,9 +8,9 @@
     void *_reserved;
 }
 
-@property(getter=isForPersonMassUse,assign,readwrite) bool forPersonMassUse;
-@property(assign,copy) NSNumberFormatter * numberFormatter;
-@property(assign,readwrite) long long unitStyle;
+@property (getter=isForPersonMassUse) bool forPersonMassUse;
+@property (copy) NSNumberFormatter *numberFormatter;
+@property long long unitStyle;
 
 - (id)attributedStringForObjectValue:(id)arg1 withDefaultAttributes:(id)arg2;
 - (void)dealloc;

@@ -6,7 +6,7 @@
     TSCHChartAxisID *mAxisID;
 }
 
-@property(assign,retain) TSCHChartAxisID * axisID;
+@property (nonatomic, retain) TSCHChartAxisID *axisID;
 
 - (id)axisID;
 - (struct CGSize { double x1; double x2; })calcMinSize;

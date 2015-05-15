@@ -4,7 +4,7 @@
 
 @interface SASyncGetAnchorsResponse : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * anchors;
+@property (nonatomic, copy) NSArray *anchors;
 
 + (id)getAnchorsResponse;
 + (id)getAnchorsResponseWithDictionary:(id)arg1 context:(id)arg2;

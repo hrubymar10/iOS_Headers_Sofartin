@@ -11,13 +11,13 @@
     NSObject<OS_dispatch_queue> *_serverQueue;
 }
 
-@property(assign,retain) NSMutableDictionary * dataProvidersBySectionID;
-@property(assign,retain) NSMutableDictionary * dataProvidersByUniversalSectionID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableArray * localFactories;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSMutableDictionary *dataProvidersBySectionID;
+@property (nonatomic, retain) NSMutableDictionary *dataProvidersByUniversalSectionID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableArray *localFactories;
+@property (readonly) Class superclass;
 
 + (id)localDataProviderStoreWithDelegate:(id)arg1 dataProviderQueue:(id)arg2;
 

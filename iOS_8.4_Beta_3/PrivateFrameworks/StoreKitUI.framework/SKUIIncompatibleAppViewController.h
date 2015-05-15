@@ -13,15 +13,15 @@
     NSOperationQueue *_operationQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIProductPageChildViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIProductPageHeaderViewController * headerViewController;
-@property(assign,readonly) SKUIProductPageItem * incompatibleItem;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,readonly) UIScrollView * scrollView;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIProductPageChildViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIProductPageHeaderViewController *headerViewController;
+@property (nonatomic, readonly) SKUIProductPageItem *incompatibleItem;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic, readonly) UIScrollView *scrollView;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_artworkContext;

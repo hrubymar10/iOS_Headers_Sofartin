@@ -6,7 +6,7 @@
     HAPMetadataCharacteristicValue *_hapValueMetadata;
 }
 
-@property(assign,retain) HAPMetadataCharacteristicValue * hapValueMetadata;
+@property (nonatomic, retain) HAPMetadataCharacteristicValue *hapValueMetadata;
 
 + (bool)supportsSecureCoding;
 

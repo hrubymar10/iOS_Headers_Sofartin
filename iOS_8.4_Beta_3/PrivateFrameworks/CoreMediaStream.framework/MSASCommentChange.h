@@ -8,9 +8,9 @@
     int _type;
 }
 
-@property(assign,retain) MSASComment * comment;
-@property(assign,readwrite) int deletionIndex;
-@property(assign,readwrite) int type;
+@property (nonatomic, retain) MSASComment *comment;
+@property (nonatomic) int deletionIndex;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (id)comment;

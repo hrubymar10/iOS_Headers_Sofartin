@@ -7,12 +7,12 @@
     NSNumber *_yValue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSDate * xValue;
-@property(assign,retain) NSNumber * yValue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSDate *xValue;
+@property (nonatomic, retain) NSNumber *yValue;
 
 + (id)chartPointWithXValue:(id)arg1 yValue:(id)arg2;
 

@@ -6,7 +6,7 @@
     UIBarButtonItem *_dismissButton;
 }
 
-@property(assign,retain) UIBarButtonItem * dismissButton;
+@property (nonatomic, retain) UIBarButtonItem *dismissButton;
 
 - (void).cxx_destruct;
 - (id)_defaultDismissButton;

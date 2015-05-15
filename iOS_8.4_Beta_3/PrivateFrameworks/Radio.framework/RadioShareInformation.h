@@ -10,11 +10,11 @@
     NSString *_subject;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,copy) RadioArtworkCollection * artworkCollection;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * messageMIMEType;
-@property(assign,copy) NSString * subject;
+@property (nonatomic, readonly, retain) NSURL *URL;
+@property (nonatomic, readonly, copy) RadioArtworkCollection *artworkCollection;
+@property (nonatomic, readonly, copy) NSString *message;
+@property (nonatomic, readonly, copy) NSString *messageMIMEType;
+@property (nonatomic, readonly, copy) NSString *subject;
 
 - (void).cxx_destruct;
 - (id)URL;

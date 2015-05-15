@@ -10,12 +10,12 @@
     int _vOffsetType;
 }
 
-@property(assign,readonly) double descent;
-@property(assign,retain) TSDDrawableInfo * drawable;
-@property(assign,readwrite) double hOffset;
-@property(assign,readwrite) int hOffsetType;
-@property(assign,readwrite) double vOffset;
-@property(assign,readwrite) int vOffsetType;
+@property (nonatomic, readonly) double descent;
+@property (nonatomic, readonly, retain) TSDDrawableInfo *drawable;
+@property (nonatomic) double hOffset;
+@property (nonatomic) int hOffsetType;
+@property (nonatomic) double vOffset;
+@property (nonatomic) int vOffsetType;
 
 + (void)setPositionerClass:(Class)arg1;
 

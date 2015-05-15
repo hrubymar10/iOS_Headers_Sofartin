@@ -10,11 +10,11 @@
     bool _volumeWarningEnabled;
 }
 
-@property(assign,readwrite) float EUVolumeLimit;
-@property(getter=isMuted,assign,readwrite) bool muted;
-@property(getter=isVolumeControlAvailable,assign,readwrite) bool volumeControlAvailable;
-@property(assign,readwrite) float volumeValue;
-@property(getter=isVolumeWarningEnabled,assign,readwrite) bool volumeWarningEnabled;
+@property (nonatomic) float EUVolumeLimit;
+@property (getter=isMuted, nonatomic) bool muted;
+@property (getter=isVolumeControlAvailable, nonatomic) bool volumeControlAvailable;
+@property (nonatomic) float volumeValue;
+@property (getter=isVolumeWarningEnabled, nonatomic) bool volumeWarningEnabled;
 
 - (float)EUVolumeLimit;
 - (void)encodeWithCoder:(id)arg1;

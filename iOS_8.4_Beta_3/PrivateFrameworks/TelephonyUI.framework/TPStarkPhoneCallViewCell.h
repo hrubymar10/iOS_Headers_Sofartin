@@ -9,10 +9,10 @@
     UILabel *_subtitleLabel;
 }
 
-@property(assign,retain) NSLayoutConstraint * containerSpecificLeftConstraint;
-@property(assign,retain) NSLayoutConstraint * containerSpecificRightConstraint;
-@property(assign,retain) UILabel * mainLabel;
-@property(assign,retain) UILabel * subtitleLabel;
+@property (retain) NSLayoutConstraint *containerSpecificLeftConstraint;
+@property (retain) NSLayoutConstraint *containerSpecificRightConstraint;
+@property (retain) UILabel *mainLabel;
+@property (retain) UILabel *subtitleLabel;
 
 - (id)containerSpecificLeftConstraint;
 - (id)containerSpecificRightConstraint;

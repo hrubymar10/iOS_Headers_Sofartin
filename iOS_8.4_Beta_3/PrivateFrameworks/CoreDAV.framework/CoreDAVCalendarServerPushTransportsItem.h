@@ -6,7 +6,7 @@
     NSMutableSet *_transports;
 }
 
-@property(assign,retain) NSMutableSet * transports;
+@property (nonatomic, retain) NSMutableSet *transports;
 
 + (id)copyParseRules;
 

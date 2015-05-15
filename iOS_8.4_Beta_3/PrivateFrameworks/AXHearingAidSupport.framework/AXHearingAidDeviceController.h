@@ -22,18 +22,18 @@
     NSMutableArray *centralRequestBlocks;
 }
 
-@property(assign,retain) NSMutableArray * availablePeripherals;
-@property(assign,retain) NSMutableArray * availableSearchBlocks;
-@property(assign,retain) NSMutableArray * centralRequestBlocks;
-@property(assign,retain) NSMutableArray * connectedDevices;
-@property(assign,retain) NSMutableArray * connectedSearchBlocks;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableArray * loadedDevices;
-@property(assign,retain) NSMutableArray * persistentDevices;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableArray * updateDeviceBlocks;
+@property (nonatomic, retain) NSMutableArray *availablePeripherals;
+@property (nonatomic, retain) NSMutableArray *availableSearchBlocks;
+@property (nonatomic, retain) NSMutableArray *centralRequestBlocks;
+@property (nonatomic, retain) NSMutableArray *connectedDevices;
+@property (nonatomic, retain) NSMutableArray *connectedSearchBlocks;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) NSMutableArray *loadedDevices;
+@property (nonatomic, retain) NSMutableArray *persistentDevices;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMutableArray *updateDeviceBlocks;
 
 + (id)sharedController;
 

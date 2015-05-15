@@ -6,7 +6,7 @@
     PLManagedAsset *_asset;
 }
 
-@property(assign,retain) PLManagedAsset * asset;
+@property (nonatomic, retain) PLManagedAsset *asset;
 
 - (void).cxx_destruct;
 - (id)asset;

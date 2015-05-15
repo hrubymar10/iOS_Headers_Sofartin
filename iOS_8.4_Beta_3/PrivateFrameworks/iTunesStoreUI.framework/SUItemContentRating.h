@@ -12,14 +12,14 @@
     bool _shouldHideWhenRestricted;
 }
 
-@property(getter=isExplicitContent,assign,readonly) bool explicitContent;
-@property(assign,readwrite) long long rank;
-@property(assign,copy) NSString * ratingDescription;
-@property(assign,copy) NSString * ratingLabel;
-@property(assign,readwrite) long long ratingSystem;
-@property(assign,copy) SSItemArtworkImage * ratingSystemLogo;
-@property(getter=isRestricted,assign,readonly) bool restricted;
-@property(assign,readwrite) bool shouldHideWhenRestricted;
+@property (getter=isExplicitContent, nonatomic, readonly) bool explicitContent;
+@property (nonatomic) long long rank;
+@property (nonatomic, copy) NSString *ratingDescription;
+@property (nonatomic, copy) NSString *ratingLabel;
+@property (nonatomic) long long ratingSystem;
+@property (nonatomic, copy) SSItemArtworkImage *ratingSystemLogo;
+@property (getter=isRestricted, nonatomic, readonly) bool restricted;
+@property (nonatomic) bool shouldHideWhenRestricted;
 
 + (long long)ratingSystemFromString:(id)arg1;
 

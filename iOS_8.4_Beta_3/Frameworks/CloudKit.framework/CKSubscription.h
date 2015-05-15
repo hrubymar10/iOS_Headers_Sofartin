@@ -12,13 +12,13 @@
     CKRecordZoneID *_zoneID;
 }
 
-@property(assign,copy) CKNotificationInfo * notificationInfo;
-@property(assign,copy) NSPredicate * predicate;
-@property(assign,copy) NSString * recordType;
-@property(assign,copy) NSString * subscriptionID;
-@property(assign,readwrite) unsigned long long subscriptionOptions;
-@property(assign,readwrite) long long subscriptionType;
-@property(assign,copy) CKRecordZoneID * zoneID;
+@property (nonatomic, copy) CKNotificationInfo *notificationInfo;
+@property (nonatomic, copy) NSPredicate *predicate;
+@property (nonatomic, copy) NSString *recordType;
+@property (nonatomic, copy) NSString *subscriptionID;
+@property (nonatomic) unsigned long long subscriptionOptions;
+@property (nonatomic) long long subscriptionType;
+@property (nonatomic, copy) CKRecordZoneID *zoneID;
 
 + (bool)supportsSecureCoding;
 

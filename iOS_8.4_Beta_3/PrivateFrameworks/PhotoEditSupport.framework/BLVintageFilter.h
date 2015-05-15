@@ -13,11 +13,11 @@
     bool _needsReprocess;
 }
 
-@property(assign,retain) CIFilter * colorCubeFilter;
-@property(assign,copy) NSNumber * inputAmount;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,copy) NSNumber * inputStrength;
-@property(assign,retain) CIFilter * maskFilter;
+@property (nonatomic, retain) CIFilter *colorCubeFilter;
+@property (nonatomic, copy) NSNumber *inputAmount;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, copy) NSNumber *inputStrength;
+@property (nonatomic, retain) CIFilter *maskFilter;
 
 - (void).cxx_destruct;
 - (id)colorCubeFilter;

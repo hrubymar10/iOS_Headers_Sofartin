@@ -17,19 +17,19 @@
     long long _units;
 }
 
-@property(assign,readwrite) bool canPause;
-@property(assign,readwrite) double changeRate;
-@property(assign,readwrite) long long currentValue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double estimatedTimeRemaining;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long maxValue;
-@property(assign,readwrite) long long normalizedCurrentValue;
-@property(assign,readwrite) long long normalizedMaxValue;
-@property(assign,readwrite) long long operationType;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long units;
+@property bool canPause;
+@property double changeRate;
+@property long long currentValue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property double estimatedTimeRemaining;
+@property (readonly) unsigned long long hash;
+@property long long maxValue;
+@property long long normalizedCurrentValue;
+@property long long normalizedMaxValue;
+@property long long operationType;
+@property (readonly) Class superclass;
+@property long long units;
 
 - (void)_updateStatisticsFromSnapshots;
 - (bool)canPause;

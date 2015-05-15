@@ -8,9 +8,9 @@
     PSSpecifierUpdates *_specifierUpdates;
 }
 
-@property(assign,readwrite) bool invalidatedSpecifiers;
-@property(assign,retain) NSMutableSet * searchEntries;
-@property(assign,retain) PSSpecifierUpdates * specifierUpdates;
+@property (nonatomic) bool invalidatedSpecifiers;
+@property (nonatomic, retain) NSMutableSet *searchEntries;
+@property (nonatomic, retain) PSSpecifierUpdates *specifierUpdates;
 
 + (id)deferredInvalidationUpdatesWithEntries:(id)arg1;
 + (id)deferredUpdatesWithEntries:(id)arg1 specifierUpdates:(id)arg2;

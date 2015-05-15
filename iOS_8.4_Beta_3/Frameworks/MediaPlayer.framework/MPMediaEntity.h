@@ -6,19 +6,19 @@
     MIPMultiverseIdentifier *_multiverseIdentifier;
 }
 
-@property(assign,readonly) MPUContentItemIdentifierCollection * MPU_contentItemIdentifierCollection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isDownloadable;
-@property(assign,readonly) bool isDownloadableStoreOffer;
-@property(assign,readonly) bool isPurchasableStoreOffer;
-@property(assign,readonly) MPMediaLibrary * mediaLibrary;
-@property(assign,readonly) MIPMultiverseIdentifier * multiverseIdentifier;
-@property(assign,readonly) unsigned long long persistentID;
-@property(assign,readonly) long long preferredStoreOfferVariant;
-@property(assign,readonly) MPMediaItem * representativeItem;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) MPUContentItemIdentifierCollection *MPU_contentItemIdentifierCollection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isDownloadable;
+@property (nonatomic, readonly) bool isDownloadableStoreOffer;
+@property (nonatomic, readonly) bool isPurchasableStoreOffer;
+@property (nonatomic, readonly) MPMediaLibrary *mediaLibrary;
+@property (nonatomic, readonly) MIPMultiverseIdentifier *multiverseIdentifier;
+@property (nonatomic, readonly) unsigned long long persistentID;
+@property (nonatomic, readonly) long long preferredStoreOfferVariant;
+@property (nonatomic, readonly) MPMediaItem *representativeItem;
+@property (readonly) Class superclass;
 
 + (id)_customPropertyHandlersCollection;
 + (bool)canFilterByProperty:(id)arg1;

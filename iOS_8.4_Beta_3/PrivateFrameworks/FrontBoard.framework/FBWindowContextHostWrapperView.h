@@ -9,17 +9,17 @@
     FBWindowContextHostManager *_manager;
 }
 
-@property(assign,readwrite) unsigned long long appearanceStyle;
-@property(assign,retain) UIColor * backgroundColorWhileHosting;
-@property(assign,retain) UIColor * backgroundColorWhileNotHosting;
-@property(getter=isContextHosted,assign,readonly) bool contextHosted;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double level;
-@property(assign,readonly) FBWindowContextHostManager * manager;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } referenceFrame;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) unsigned long long appearanceStyle;
+@property (nonatomic, retain) UIColor *backgroundColorWhileHosting;
+@property (nonatomic, retain) UIColor *backgroundColorWhileNotHosting;
+@property (getter=isContextHosted, nonatomic, readonly) bool contextHosted;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double level;
+@property (nonatomic, readonly) FBWindowContextHostManager *manager;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } referenceFrame;
+@property (readonly) Class superclass;
 
 - (id)_backgroundColorWhileHosting;
 - (id)_backgroundColorWhileNotHosting;

@@ -7,8 +7,8 @@
     id _setter;
 }
 
-@property(assign,copy) id getter;
-@property(assign,copy) id setter;
+@property (nonatomic, copy) id getter;
+@property (nonatomic, copy) id setter;
 
 + (id)actionWithBoolDetailClass:(Class)arg1;
 + (id)actionWithGetter:(id)arg1 setter:(id)arg2;

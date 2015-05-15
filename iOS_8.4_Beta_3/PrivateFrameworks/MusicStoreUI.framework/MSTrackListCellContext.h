@@ -7,8 +7,8 @@
     bool _showSubtitle;
 }
 
-@property(assign,readwrite) bool shouldHideContentRating;
-@property(assign,readwrite) bool showSubtitle;
+@property (nonatomic) bool shouldHideContentRating;
+@property (nonatomic) bool showSubtitle;
 
 - (void)setShouldHideContentRating:(bool)arg1;
 - (void)setShowSubtitle:(bool)arg1;

@@ -11,8 +11,8 @@
     id _tokenArray;
 }
 
-@property(assign,retain) NSString * string;
-@property(assign,copy) NSArray * tagSchemes;
+@property (retain) NSString *string;
+@property (readonly, copy) NSArray *tagSchemes;
 
 + (id)availableTagSchemesForLanguage:(id)arg1;
 + (bool)supportsLanguage:(id)arg1;

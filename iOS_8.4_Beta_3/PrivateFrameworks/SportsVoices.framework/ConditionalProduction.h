@@ -8,9 +8,9 @@
     NSArray *_signature;
 }
 
-@property(assign,readonly) NSString * delimiter;
-@property(assign,readonly) NSDictionary * expansions;
-@property(assign,readonly) NSArray * signature;
+@property (readonly) NSString *delimiter;
+@property (readonly) NSDictionary *expansions;
+@property (readonly) NSArray *signature;
 
 - (void)dealloc;
 - (id)delimiter;

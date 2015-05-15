@@ -11,10 +11,10 @@
     NSMutableArray *_items;
 }
 
-@property(setter=_isPrimitiveBehavior:,assign,readwrite) bool _isPrimitiveBehavior;
-@property(assign,copy) id action;
-@property(assign,copy) NSArray * childBehaviors;
-@property(assign,readonly) UIDynamicAnimator * dynamicAnimator;
+@property (setter=_isPrimitiveBehavior:, nonatomic) bool _isPrimitiveBehavior;
+@property (nonatomic, copy) id action;
+@property (nonatomic, readonly, copy) NSArray *childBehaviors;
+@property (nonatomic, readonly) UIDynamicAnimator *dynamicAnimator;
 
 + (void)initialize;
 

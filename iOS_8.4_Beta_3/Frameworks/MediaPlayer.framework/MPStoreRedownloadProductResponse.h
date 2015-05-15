@@ -6,8 +6,8 @@
     NSDictionary *_responseDictionary;
 }
 
-@property(assign,readonly) MPStoreRedownloadProductItem * item;
-@property(assign,copy) NSDictionary * responseDictionary;
+@property (nonatomic, readonly) MPStoreRedownloadProductItem *item;
+@property (nonatomic, readonly, copy) NSDictionary *responseDictionary;
 
 - (void).cxx_destruct;
 - (id)initWithResponseDictionary:(id)arg1;

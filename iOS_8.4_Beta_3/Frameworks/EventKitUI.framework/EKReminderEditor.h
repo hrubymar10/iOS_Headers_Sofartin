@@ -7,9 +7,9 @@
     <EKStyleProvider> *_styleProvider;
 }
 
-@property(assign,retain) EKReminder * reminder;
-@property(assign,readwrite) <EKReminderEditorDelegate> * reminderEditorDelegate;
-@property(assign,retain) <EKStyleProvider> * styleProvider;
+@property (nonatomic, retain) EKReminder *reminder;
+@property (nonatomic) <EKReminderEditorDelegate> *reminderEditorDelegate;
+@property (nonatomic, retain) <EKStyleProvider> *styleProvider;
 
 - (void).cxx_destruct;
 - (bool)_canDetachSingleOccurrence;

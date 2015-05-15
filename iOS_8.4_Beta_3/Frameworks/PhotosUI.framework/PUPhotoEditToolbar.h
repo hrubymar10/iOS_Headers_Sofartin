@@ -18,16 +18,16 @@
     bool _useTranslucentBackground;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long layoutOrientation;
-@property(assign,readwrite) double longSideMargin;
-@property(assign,readonly) UIButton * mainActionButton;
-@property(assign,readonly) UIButton * secondaryActionButton;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * toolButtons;
-@property(assign,readwrite) bool useTranslucentBackground;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long layoutOrientation;
+@property (nonatomic) double longSideMargin;
+@property (nonatomic, readonly) UIButton *mainActionButton;
+@property (nonatomic, readonly) UIButton *secondaryActionButton;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, copy) NSArray *toolButtons;
+@property (nonatomic) bool useTranslucentBackground;
 
 - (void).cxx_destruct;
 - (void)_updateBackgroundAnimated:(bool)arg1;

@@ -4,7 +4,7 @@
 
 @interface FBSWorkspaceCreateSceneResponseEvent : FBSWorkspaceSceneUpdateResponseEvent
 
-@property(assign,retain) FBSWorkspaceCreateSceneResponse * response;
+@property (nonatomic, retain) FBSWorkspaceCreateSceneResponse *response;
 
 - (void)dealloc;
 - (void)encodeWithXPCDictionary:(id)arg1;

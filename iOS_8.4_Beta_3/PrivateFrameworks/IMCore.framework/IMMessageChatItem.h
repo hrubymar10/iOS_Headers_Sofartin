@@ -4,15 +4,15 @@
 
 @interface IMMessageChatItem : IMTranscriptChatItem <IMMessageChatItem>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool failed;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isFromMe;
-@property(assign,retain) IMMessage * message;
-@property(assign,retain) IMHandle * sender;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSDate * time;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool failed;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isFromMe;
+@property (nonatomic, readonly, retain) IMMessage *message;
+@property (nonatomic, readonly, retain) IMHandle *sender;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, retain) NSDate *time;
 
 - (bool)failed;
 - (bool)isFromMe;

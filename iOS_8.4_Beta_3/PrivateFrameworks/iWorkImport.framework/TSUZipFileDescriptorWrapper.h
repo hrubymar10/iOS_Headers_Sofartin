@@ -8,8 +8,8 @@
     <TSUReadChannel> *_readChannel;
 }
 
-@property(assign,readonly) int fileDescriptor;
-@property(assign,readonly) <TSUReadChannel> * readChannel;
+@property (nonatomic, readonly) int fileDescriptor;
+@property (nonatomic, readonly) <TSUReadChannel> *readChannel;
 
 - (void).cxx_destruct;
 - (void)beginAccess;

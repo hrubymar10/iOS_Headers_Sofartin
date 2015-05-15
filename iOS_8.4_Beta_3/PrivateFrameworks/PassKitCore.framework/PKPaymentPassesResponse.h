@@ -8,9 +8,9 @@
     NSArray *_passURLs;
 }
 
-@property(assign,retain) NSArray * devicePassSerialNumbers;
-@property(assign,retain) NSString * lastUpdatedTag;
-@property(assign,retain) NSArray * passURLs;
+@property (nonatomic, retain) NSArray *devicePassSerialNumbers;
+@property (nonatomic, retain) NSString *lastUpdatedTag;
+@property (nonatomic, retain) NSArray *passURLs;
 
 - (void)dealloc;
 - (id)devicePassSerialNumbers;

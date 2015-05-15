@@ -6,7 +6,7 @@
     NSString *_code;
 }
 
-@property(assign,readonly) NSString * code;
+@property (readonly) NSString *code;
 
 - (void).cxx_destruct;
 - (id)code;

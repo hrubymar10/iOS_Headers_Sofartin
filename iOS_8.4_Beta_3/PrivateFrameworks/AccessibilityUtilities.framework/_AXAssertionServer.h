@@ -8,9 +8,9 @@
     NSMutableDictionary *_healdAssertionMap;
 }
 
-@property(assign,copy) id assertionWasAcquiredHandler;
-@property(assign,copy) id assertionWasReleasedHandler;
-@property(assign,retain) NSMutableDictionary * healdAssertionMap;
+@property (nonatomic, copy) id assertionWasAcquiredHandler;
+@property (nonatomic, copy) id assertionWasReleasedHandler;
+@property (nonatomic, retain) NSMutableDictionary *healdAssertionMap;
 
 - (void)addHeldAssertionOfType:(id)arg1 byClient:(id)arg2;
 - (id)assertionWasAcquiredHandler;

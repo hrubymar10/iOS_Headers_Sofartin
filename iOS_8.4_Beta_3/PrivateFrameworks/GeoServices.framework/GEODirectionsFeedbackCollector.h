@@ -8,9 +8,9 @@
     NSMutableSet *_routeIDs;
 }
 
-@property(assign,retain) GEODirectionsFeedback * currentDirectionsFeedback;
-@property(assign,retain) GEODirectionsFeedbackCollection * currentFeedbackCollection;
-@property(assign,retain) NSMutableSet * routeIDs;
+@property (nonatomic, retain) GEODirectionsFeedback *currentDirectionsFeedback;
+@property (nonatomic, retain) GEODirectionsFeedbackCollection *currentFeedbackCollection;
+@property (nonatomic, retain) NSMutableSet *routeIDs;
 
 - (void)_updateFeedbackSessionWithResponseID:(id)arg1;
 - (void)addRouteID:(id)arg1 stepID:(unsigned int)arg2 completeStep:(bool)arg3;

@@ -34,10 +34,10 @@
     int mValueType;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (bool)needToSuppressMinusSignForFormatString:(struct __CFString { }*)arg1;
 + (id)numberFormatWithValueType:(int)arg1 formatString:(id)arg2 decimalPlaces:(unsigned short)arg3 currencyCode:(id)arg4 useAccountingStyle:(bool)arg5 negativeStyle:(int)arg6 showThousandsSeparator:(bool)arg7 fractionAccuracy:(int)arg8 suffixString:(struct __CFString { }*)arg9;

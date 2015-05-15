@@ -9,10 +9,10 @@
     NSString *_contentRatingSystemName;
 }
 
-@property(assign,readonly) NSString * contentRank;
-@property(assign,readonly) NSArray * contentRatingAdvisories;
-@property(assign,readonly) NSString * contentRatingName;
-@property(assign,readonly) NSString * contentRatingSystemName;
+@property (nonatomic, readonly) NSString *contentRank;
+@property (nonatomic, readonly) NSArray *contentRatingAdvisories;
+@property (nonatomic, readonly) NSString *contentRatingName;
+@property (nonatomic, readonly) NSString *contentRatingSystemName;
 
 - (void).cxx_destruct;
 - (id)contentRank;

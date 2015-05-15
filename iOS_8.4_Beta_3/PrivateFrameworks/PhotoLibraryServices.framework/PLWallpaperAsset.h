@@ -4,10 +4,10 @@
 
 @interface PLWallpaperAsset : PLManagedAsset
 
-@property(assign,readonly) NSString * imageName;
-@property(assign,retain) NSURL * imageURL;
-@property(assign,retain) NSURL * thumbnailURL;
-@property(assign,retain) NSDictionary * wallpaperOptions;
+@property (nonatomic, readonly) NSString *imageName;
+@property (nonatomic, retain) NSURL *imageURL;
+@property (nonatomic, retain) NSURL *thumbnailURL;
+@property (nonatomic, retain) NSDictionary *wallpaperOptions;
 
 + (id)entityInManagedObjectContext:(id)arg1;
 + (id)entityName;

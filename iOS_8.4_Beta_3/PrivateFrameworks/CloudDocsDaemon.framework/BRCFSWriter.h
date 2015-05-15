@@ -9,12 +9,12 @@
     int _suspendCount;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * serialQueue;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCancelled;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *serialQueue;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_applyChangesForServerAlias:(id)arg1 localAlias:(id)arg2 throttleID:(long long)arg3 zone:(id)arg4 diffs:(unsigned long long)arg5;

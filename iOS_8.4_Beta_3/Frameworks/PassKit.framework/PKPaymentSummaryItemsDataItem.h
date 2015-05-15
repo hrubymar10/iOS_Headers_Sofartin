@@ -4,8 +4,8 @@
 
 @interface PKPaymentSummaryItemsDataItem : PKPaymentDataItem
 
-@property(assign,readonly) NSString * currencyCode;
-@property(assign,readonly) NSArray * paymentSummaryItems;
+@property (nonatomic, readonly) NSString *currencyCode;
+@property (nonatomic, readonly) NSArray *paymentSummaryItems;
 
 + (long long)dataType;
 

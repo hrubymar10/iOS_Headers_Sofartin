@@ -14,8 +14,8 @@
     NSMutableArray *_valueViews;
 }
 
-@property(assign,copy) NSString * label;
-@property(assign,copy) NSString * value;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, copy) NSString *value;
 
 - (void)_createSubviews;
 - (id)_createValueView;

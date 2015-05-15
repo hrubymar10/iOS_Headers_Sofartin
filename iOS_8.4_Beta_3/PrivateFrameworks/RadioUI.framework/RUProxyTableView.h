@@ -6,7 +6,7 @@
     UIScrollView *_targetScrollView;
 }
 
-@property(assign,readwrite) UIScrollView * targetScrollView;
+@property (nonatomic) UIScrollView *targetScrollView;
 
 - (void).cxx_destruct;
 - (void)setContentSize:(struct CGSize { double x1; double x2; })arg1;

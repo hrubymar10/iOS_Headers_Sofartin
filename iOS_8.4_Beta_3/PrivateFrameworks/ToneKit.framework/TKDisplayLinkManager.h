@@ -11,18 +11,18 @@
     unsigned long long _warmUpModeRequirementsCount;
 }
 
-@property(setter=_setActiveTargetActions:,assign,retain) NSMutableSet * _activeTargetActions;
-@property(setter=_setDisplayLink:,assign,retain) CADisplayLink * _displayLink;
-@property(getter=_isHandlingDisplayRefresh,setter=_setHandlingDisplayRefresh:,assign,readwrite) bool _handlingDisplayRefresh;
-@property(setter=_setHasUpdatedTargetActions:,assign,readwrite) bool _hasUpdatedTargetActions;
-@property(setter=_setStoredDisplayLink:,assign,retain) CADisplayLink * _storedDisplayLink;
-@property(setter=_setUpdatedTargetActions:,assign,retain) NSMutableSet * _updatedTargetActions;
-@property(getter=_isWarmUpModeEnabled,assign,readonly) bool _warmUpModeEnabled;
-@property(setter=_setWarmUpModeRequirementsCount:,assign,readwrite) unsigned long long _warmUpModeRequirementsCount;
-@property(assign,readonly) double duration;
-@property(assign,readonly) unsigned long long frameInterval;
-@property(getter=isPaused,assign,readonly) bool paused;
-@property(assign,readonly) double timestamp;
+@property (setter=_setActiveTargetActions:, nonatomic, retain) NSMutableSet *_activeTargetActions;
+@property (setter=_setDisplayLink:, nonatomic, retain) CADisplayLink *_displayLink;
+@property (getter=_isHandlingDisplayRefresh, setter=_setHandlingDisplayRefresh:, nonatomic) bool _handlingDisplayRefresh;
+@property (setter=_setHasUpdatedTargetActions:, nonatomic) bool _hasUpdatedTargetActions;
+@property (setter=_setStoredDisplayLink:, nonatomic, retain) CADisplayLink *_storedDisplayLink;
+@property (setter=_setUpdatedTargetActions:, nonatomic, retain) NSMutableSet *_updatedTargetActions;
+@property (getter=_isWarmUpModeEnabled, nonatomic, readonly) bool _warmUpModeEnabled;
+@property (setter=_setWarmUpModeRequirementsCount:, nonatomic) unsigned long long _warmUpModeRequirementsCount;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic, readonly) unsigned long long frameInterval;
+@property (getter=isPaused, nonatomic, readonly) bool paused;
+@property (nonatomic, readonly) double timestamp;
 
 + (void)_releaseCurrentDisplayLinkManager;
 + (id)currentDisplayLinkManager;

@@ -45,23 +45,23 @@
     bool _wasRebuild;
 }
 
-@property(setter=_setNumberOfOtherItemsDownloaded:,assign,retain) NSNumber * _numberOfOtherItemsDownloaded;
-@property(setter=_setNumberOfOtherItemsToPush:,assign,retain) NSNumber * _numberOfOtherItemsToPush;
-@property(setter=_setNumberOfPhotosDownloaded:,assign,retain) NSNumber * _numberOfPhotosDownloaded;
-@property(setter=_setNumberOfPhotosToPush:,assign,retain) NSNumber * _numberOfPhotosToPush;
-@property(setter=_setNumberOfVideosDownloaded:,assign,retain) NSNumber * _numberOfVideosDownloaded;
-@property(setter=_setNumberOfVideosToPush:,assign,retain) NSNumber * _numberOfVideosToPush;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long numberOfOtherItemsToDownload;
-@property(assign,readonly) unsigned long long numberOfOtherItemsToUpload;
-@property(assign,readonly) unsigned long long numberOfPhotosToDownload;
-@property(assign,readonly) unsigned long long numberOfPhotosToUpload;
-@property(assign,readonly) unsigned long long numberOfPushedItems;
-@property(assign,readonly) unsigned long long numberOfVideosToDownload;
-@property(assign,readonly) unsigned long long numberOfVideosToUpload;
-@property(assign,readonly) Class superclass;
+@property (setter=_setNumberOfOtherItemsDownloaded:, nonatomic, retain) NSNumber *_numberOfOtherItemsDownloaded;
+@property (setter=_setNumberOfOtherItemsToPush:, nonatomic, retain) NSNumber *_numberOfOtherItemsToPush;
+@property (setter=_setNumberOfPhotosDownloaded:, nonatomic, retain) NSNumber *_numberOfPhotosDownloaded;
+@property (setter=_setNumberOfPhotosToPush:, nonatomic, retain) NSNumber *_numberOfPhotosToPush;
+@property (setter=_setNumberOfVideosDownloaded:, nonatomic, retain) NSNumber *_numberOfVideosDownloaded;
+@property (setter=_setNumberOfVideosToPush:, nonatomic, retain) NSNumber *_numberOfVideosToPush;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long numberOfOtherItemsToDownload;
+@property (nonatomic, readonly) unsigned long long numberOfOtherItemsToUpload;
+@property (nonatomic, readonly) unsigned long long numberOfPhotosToDownload;
+@property (nonatomic, readonly) unsigned long long numberOfPhotosToUpload;
+@property (nonatomic, readonly) unsigned long long numberOfPushedItems;
+@property (nonatomic, readonly) unsigned long long numberOfVideosToDownload;
+@property (nonatomic, readonly) unsigned long long numberOfVideosToUpload;
+@property (readonly) Class superclass;
 
 + (id)descriptionForResourceType:(unsigned long long)arg1;
 

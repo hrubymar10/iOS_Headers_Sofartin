@@ -10,10 +10,10 @@
     PKPaymentRequest *_paymentRequest;
 }
 
-@property(assign,retain) NSData * credential;
-@property(assign,retain) NSData * nonceData;
-@property(assign,retain) NSString * passUniqueIdentifier;
-@property(assign,retain) PKPaymentRequest * paymentRequest;
+@property (nonatomic, retain) NSData *credential;
+@property (nonatomic, retain) NSData *nonceData;
+@property (nonatomic, retain) NSString *passUniqueIdentifier;
+@property (nonatomic, retain) PKPaymentRequest *paymentRequest;
 
 + (bool)supportsSecureCoding;
 

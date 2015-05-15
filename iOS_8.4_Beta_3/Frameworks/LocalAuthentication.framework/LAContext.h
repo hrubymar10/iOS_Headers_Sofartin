@@ -11,12 +11,12 @@
     NSNumber *_maxBiometryFailures;
 }
 
-@property(getter=isCancelButtonVisible,assign,readwrite) bool cancelButtonVisible;
-@property(assign,readonly) NSString * creatorDisplayName;
-@property(assign,retain) NSData * externalizedContext;
-@property(getter=isFallbackButtonVisible,assign,readwrite) bool fallbackButtonVisible;
-@property(assign,copy) NSString * localizedFallbackTitle;
-@property(assign,retain) NSNumber * maxBiometryFailures;
+@property (getter=isCancelButtonVisible, nonatomic) bool cancelButtonVisible;
+@property (readonly) NSString *creatorDisplayName;
+@property (retain) NSData *externalizedContext;
+@property (getter=isFallbackButtonVisible, nonatomic) bool fallbackButtonVisible;
+@property (nonatomic, copy) NSString *localizedFallbackTitle;
+@property (nonatomic, retain) NSNumber *maxBiometryFailures;
 
 - (void).cxx_destruct;
 - (bool)canEvaluatePolicy:(long long)arg1 error:(id*)arg2;

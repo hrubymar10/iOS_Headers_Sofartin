@@ -12,13 +12,13 @@
     NSString *_urlString;
 }
 
-@property(assign,copy) NSString * content;
-@property(assign,copy) NSDate * datePublished;
-@property(assign,copy) NSDate * dateUpdated;
-@property(assign,copy) NSString * entryDescription;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * urlString;
+@property (nonatomic, copy) NSString *content;
+@property (nonatomic, copy) NSDate *datePublished;
+@property (nonatomic, copy) NSDate *dateUpdated;
+@property (nonatomic, copy) NSString *entryDescription;
+@property (nonatomic, readonly, copy) NSString *identifier;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, readonly, copy) NSString *urlString;
 
 + (id)dateFromAtomDateString:(id)arg1;
 + (id)dateFromRSSDateString:(id)arg1;

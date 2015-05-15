@@ -8,9 +8,9 @@
     UILabel *_title;
 }
 
-@property(assign,retain) UIView * selectedCircle;
-@property(assign,retain) UIImageView * symbol;
-@property(assign,retain) UILabel * title;
+@property (nonatomic, retain) UIView *selectedCircle;
+@property (nonatomic, retain) UIImageView *symbol;
+@property (nonatomic, retain) UILabel *title;
 
 - (void)dealloc;
 - (id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2;

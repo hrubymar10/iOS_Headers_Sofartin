@@ -8,13 +8,13 @@
     CoreCECOverride *_standardOverride;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CoreRCInterfaceController * interfaceController;
-@property(assign,retain) CoreCECOverride * pluginOverride;
-@property(assign,retain) CoreCECOverride * standardOverride;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CoreRCInterfaceController *interfaceController;
+@property (nonatomic, retain) CoreCECOverride *pluginOverride;
+@property (nonatomic, retain) CoreCECOverride *standardOverride;
+@property (readonly) Class superclass;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 

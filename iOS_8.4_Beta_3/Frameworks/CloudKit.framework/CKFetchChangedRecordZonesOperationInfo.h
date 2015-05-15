@@ -7,8 +7,8 @@
     unsigned long long _resultsLimit;
 }
 
-@property(assign,retain) CKServerChangeToken * previousServerChangeToken;
-@property(assign,readwrite) unsigned long long resultsLimit;
+@property (nonatomic, retain) CKServerChangeToken *previousServerChangeToken;
+@property (nonatomic) unsigned long long resultsLimit;
 
 + (bool)supportsSecureCoding;
 

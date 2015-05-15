@@ -16,16 +16,16 @@
     double _retrievalTime;
 }
 
-@property(assign,readonly) long long artworkType;
-@property(assign,copy) NSString * availableArtworkToken;
-@property(assign,readonly) long long entityType;
-@property(assign,copy) NSNumber * fetchableArtworkSource;
-@property(assign,copy) NSString * fetchableArtworkToken;
-@property(assign,readonly) ML3MusicLibrary * library;
-@property(assign,retain) MPMediaLibraryArtwork * libraryArtwork;
-@property(assign,readonly) unsigned long long libraryID;
-@property(assign,readonly) unsigned long long mediaType;
-@property(assign,readwrite) double retrievalTime;
+@property (nonatomic, readonly) long long artworkType;
+@property (nonatomic, copy) NSString *availableArtworkToken;
+@property (nonatomic, readonly) long long entityType;
+@property (nonatomic, copy) NSNumber *fetchableArtworkSource;
+@property (nonatomic, copy) NSString *fetchableArtworkToken;
+@property (nonatomic, readonly) ML3MusicLibrary *library;
+@property (nonatomic, retain) MPMediaLibraryArtwork *libraryArtwork;
+@property (nonatomic, readonly) unsigned long long libraryID;
+@property (nonatomic, readonly) unsigned long long mediaType;
+@property (nonatomic) double retrievalTime;
 
 - (void).cxx_destruct;
 - (void)_updateTokens;

@@ -9,10 +9,10 @@
     NSNumber *_externalVersion;
 }
 
-@property(assign,retain) NSNumber * adamID;
-@property(assign,copy) NSString * bundleIdentifier;
-@property(assign,copy) NSString * bundleVersion;
-@property(assign,retain) NSNumber * externalVersion;
+@property (nonatomic, retain) NSNumber *adamID;
+@property (nonatomic, copy) NSString *bundleIdentifier;
+@property (nonatomic, copy) NSString *bundleVersion;
+@property (nonatomic, retain) NSNumber *externalVersion;
 
 + (id)gameDescriptorWithBundleID:(id)arg1;
 + (id)gameDescriptorWithBundleID:(id)arg1 adamID:(id)arg2;

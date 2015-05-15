@@ -11,14 +11,14 @@
     UIView *_topBorderView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * label;
-@property(assign,readwrite) long long maximumCharacterCount;
-@property(assign,copy) NSString * placeholder;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITextView * textView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic) long long maximumCharacterCount;
+@property (nonatomic, copy) NSString *placeholder;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UITextView *textView;
 
 + (id)newTextView;
 

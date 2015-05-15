@@ -10,12 +10,12 @@
     NSString *_unitString;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) _HKBaseDimension * dimension;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double proportionalSize;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) _HKBaseDimension *dimension;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double proportionalSize;
+@property (readonly) Class superclass;
 
 + (id)_rootUnitWithDefinition:(struct { char *x1; bool x2; char *x3; double x4; double x5; })arg1;
 + (id)_uniquedRootUnit:(id)arg1;

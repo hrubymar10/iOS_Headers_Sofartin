@@ -14,13 +14,13 @@
     struct CGPath { } *mWrapPath;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } endPoint;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) bool isFilled;
-@property(assign,readonly) bool isNone;
-@property(assign,readonly) int lineJoin;
-@property(assign,readonly) struct CGPath { }* path;
-@property(assign,readonly) struct CGPath { }* wrapPath;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } endPoint;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) bool isFilled;
+@property (nonatomic, readonly) bool isNone;
+@property (nonatomic, readonly) int lineJoin;
+@property (nonatomic, readonly) struct CGPath { }*path;
+@property (nonatomic, readonly) struct CGPath { }*wrapPath;
 
 + (id)filledArrow;
 + (id)filledCircle;

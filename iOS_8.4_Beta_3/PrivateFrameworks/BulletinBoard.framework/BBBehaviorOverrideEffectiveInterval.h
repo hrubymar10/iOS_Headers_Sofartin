@@ -11,16 +11,16 @@
     NSDateComponents *_startComponents;
 }
 
-@property(assign,copy) NSCalendar * calendar;
-@property(assign,copy) NSString * calendarIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSDateComponents * endComponents;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSUUID * identifier;
-@property(assign,readwrite) unsigned long long repeatInterval;
-@property(assign,copy) NSDateComponents * startComponents;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSCalendar *calendar;
+@property (nonatomic, copy) NSString *calendarIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSDateComponents *endComponents;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSUUID *identifier;
+@property (nonatomic) unsigned long long repeatInterval;
+@property (nonatomic, copy) NSDateComponents *startComponents;
+@property (readonly) Class superclass;
 
 + (long long)_dateComponentWithProvidedComponent:(long long)arg1 andBaseComponent:(long long)arg2;
 + (id)adjustComponentsForRepeatInterval:(unsigned long long)arg1 earlier:(bool)arg2;

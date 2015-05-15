@@ -10,11 +10,11 @@
     unsigned int _usageTrackingMask;
 }
 
-@property(assign,readonly) NSString * menuTitle;
-@property(assign,readonly) NSString * originalText;
-@property(assign,readonly) UITextRange * range;
-@property(assign,readonly) NSString * replacementText;
-@property(assign,readwrite) unsigned int usageTrackingMask;
+@property (nonatomic, readonly) NSString *menuTitle;
+@property (nonatomic, readonly) NSString *originalText;
+@property (nonatomic, readonly) UITextRange *range;
+@property (nonatomic, readonly) NSString *replacementText;
+@property (nonatomic) unsigned int usageTrackingMask;
 
 + (id)replacementWithRange:(id)arg1 original:(id)arg2 replacement:(id)arg3 menuTitle:(id)arg4;
 

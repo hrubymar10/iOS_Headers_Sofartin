@@ -11,17 +11,17 @@
     SKUIComposeTextFieldListView *_textFieldListView;
 }
 
-@property(assign,readonly) long long composeReviewStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIComposeReviewHeaderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIResponder * initialFirstResponder;
-@property(assign,readonly) NSString * nickname;
-@property(assign,readwrite) float rating;
-@property(assign,retain) SKUIReviewMetadata * review;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) long long composeReviewStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIComposeReviewHeaderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIResponder *initialFirstResponder;
+@property (nonatomic, readonly) NSString *nickname;
+@property (nonatomic) float rating;
+@property (nonatomic, retain) SKUIReviewMetadata *review;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *title;
 
 - (void).cxx_destruct;
 - (long long)composeReviewStyle;

@@ -10,8 +10,8 @@
     NSMutableSet *_terminals;
 }
 
-@property(assign,readonly) id emptyStringEvaluator;
-@property(assign,readonly) _HKCFGNonTerminal * rootNonTerminal;
+@property (nonatomic, readonly) id emptyStringEvaluator;
+@property (nonatomic, readonly) _HKCFGNonTerminal *rootNonTerminal;
 
 + (id)grammarWithRootNonTerminal:(id)arg1;
 + (id)grammarWithRootNonTerminal:(id)arg1 emptyStringEvaluator:(id)arg2;

@@ -8,8 +8,8 @@
     NSString *_rawAddress;
 }
 
-@property(assign,readonly) NSString * address;
-@property(assign,readonly) NSString * rawAddress;
+@property (nonatomic, readonly) NSString *address;
+@property (nonatomic, readonly) NSString *rawAddress;
 
 + (id)address:(id)arg1 label:(id)arg2;
 + (id)postalAddress:(id)arg1 label:(id)arg2;

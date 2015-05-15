@@ -6,16 +6,16 @@
     EAAccessoryInternal *_internal;
 }
 
-@property(getter=isConnected,assign,readonly) bool connected;
-@property(assign,readonly) unsigned long long connectionID;
-@property(assign,readwrite) <EAAccessoryDelegate> * delegate;
-@property(assign,readonly) NSString * firmwareRevision;
-@property(assign,readonly) NSString * hardwareRevision;
-@property(assign,readonly) NSString * manufacturer;
-@property(assign,readonly) NSString * modelNumber;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSArray * protocolStrings;
-@property(assign,readonly) NSString * serialNumber;
+@property (getter=isConnected, nonatomic, readonly) bool connected;
+@property (nonatomic, readonly) unsigned long long connectionID;
+@property (nonatomic) <EAAccessoryDelegate> *delegate;
+@property (nonatomic, readonly) NSString *firmwareRevision;
+@property (nonatomic, readonly) NSString *hardwareRevision;
+@property (nonatomic, readonly) NSString *manufacturer;
+@property (nonatomic, readonly) NSString *modelNumber;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSArray *protocolStrings;
+@property (nonatomic, readonly) NSString *serialNumber;
 
 - (void)_addSession:(id)arg1;
 - (id)_createWakeToken;

@@ -9,10 +9,10 @@
     NSURL *_url;
 }
 
-@property(assign,copy) NSString * displayTitle;
-@property(assign,retain) NSArray * modelObjects;
-@property(assign,retain) _UIDocumentPickerDirectoryObserver * observer;
-@property(assign,retain) NSURL * url;
+@property (nonatomic, copy) NSString *displayTitle;
+@property (nonatomic, retain) NSArray *modelObjects;
+@property (nonatomic, retain) _UIDocumentPickerDirectoryObserver *observer;
+@property (nonatomic, retain) NSURL *url;
 
 + (id)_tagBlipColors;
 + (void)_tagColorsDidChange;

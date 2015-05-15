@@ -12,10 +12,10 @@
     NSOperationQueue *_operationQueue;
 }
 
-@property(assign,readonly) NSArray * allCharities;
-@property(assign,readonly) SKUIClientContext * clientContext;
-@property(assign,readonly) NSURL * donationPurchaseURL;
-@property(assign,readonly) NSURL * donationValidationURL;
+@property (nonatomic, readonly) NSArray *allCharities;
+@property (nonatomic, readonly) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) NSURL *donationPurchaseURL;
+@property (nonatomic, readonly) NSURL *donationValidationURL;
 
 - (void).cxx_destruct;
 - (void)_finishLoadWithResponse:(id)arg1 error:(id)arg2 block:(id)arg3;

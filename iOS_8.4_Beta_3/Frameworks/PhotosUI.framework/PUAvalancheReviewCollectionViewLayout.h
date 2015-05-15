@@ -10,9 +10,9 @@
     NSIndexPath *_zoomingCellIndexPath;
 }
 
-@property(assign,readwrite) <PUAvalancheReviewCollectionViewLayoutDelegate> * delegate;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } sharingBadgeOffset;
-@property(assign,retain) NSIndexPath * zoomingCellIndexPath;
+@property (nonatomic) <PUAvalancheReviewCollectionViewLayoutDelegate> *delegate;
+@property (nonatomic) struct UIOffset { double x1; double x2; } sharingBadgeOffset;
+@property (nonatomic, retain) NSIndexPath *zoomingCellIndexPath;
 
 - (void).cxx_destruct;
 - (id)_badgeLayoutAttributesForItemLayoutAttributes:(id)arg1;

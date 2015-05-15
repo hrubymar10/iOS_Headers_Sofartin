@@ -9,10 +9,10 @@
     NSString *_version;
 }
 
-@property(assign,retain) NSURL * cacheURL;
-@property(assign,copy) NSString * name;
-@property(assign,retain) NSURL * serverURL;
-@property(assign,copy) NSString * version;
+@property (nonatomic, retain) NSURL *cacheURL;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) NSURL *serverURL;
+@property (nonatomic, copy) NSString *version;
 
 - (void).cxx_destruct;
 - (void)_setCacheURL:(id)arg1;

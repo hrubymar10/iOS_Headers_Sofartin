@@ -12,12 +12,12 @@
     bool _sendOrder;
 }
 
-@property(assign,readwrite) int absoluteOrder;
-@property(assign,readwrite) bool forceToServer;
-@property(assign,retain) NSString * previousETag;
-@property(assign,retain) NSURL * priorOrderedURL;
-@property(assign,retain) NSString * requestDataContentType;
-@property(assign,retain) NSData * requestDataPayload;
+@property (nonatomic) int absoluteOrder;
+@property (nonatomic) bool forceToServer;
+@property (nonatomic, retain) NSString *previousETag;
+@property (nonatomic, retain) NSURL *priorOrderedURL;
+@property (nonatomic, retain) NSString *requestDataContentType;
+@property (nonatomic, retain) NSData *requestDataPayload;
 
 - (int)absoluteOrder;
 - (id)additionalHeaderValues;

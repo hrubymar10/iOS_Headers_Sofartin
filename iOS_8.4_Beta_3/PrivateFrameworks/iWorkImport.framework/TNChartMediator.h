@@ -22,19 +22,19 @@
     bool mShouldFixAreaFormula;
 }
 
-@property(assign,readonly) TSCECalculationEngine * calculationEngine;
-@property(assign,readonly) bool categoryLabelFormulasAreAllStatic;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) int direction;
-@property(assign,readonly) struct __CFUUID { }* entityID;
-@property(assign,readonly) bool hasBlittedSinceConditionVarSet;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isEditing;
-@property(assign,readonly) bool labelFormulasAreAllStatic;
-@property(assign,readonly) int scatterFormat;
-@property(assign,readonly) bool seriesLabelFormulasAreAllStatic;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) TSCECalculationEngine *calculationEngine;
+@property (nonatomic, readonly) bool categoryLabelFormulasAreAllStatic;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) int direction;
+@property (nonatomic, readonly) struct __CFUUID { }*entityID;
+@property (nonatomic, readonly) bool hasBlittedSinceConditionVarSet;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isEditing;
+@property (nonatomic, readonly) bool labelFormulasAreAllStatic;
+@property (nonatomic, readonly) int scatterFormat;
+@property (nonatomic, readonly) bool seriesLabelFormulasAreAllStatic;
+@property (readonly) Class superclass;
 
 + (id)defaultErrorBarFormulaWrapper;
 + (id)propertiesThatInvalidateMediator;

@@ -9,10 +9,10 @@
     NSString *_string;
 }
 
-@property(assign,copy) id hitBlock;
-@property(assign,readwrite) bool isComplete;
-@property(assign,readwrite) unsigned long long options;
-@property(assign,copy) NSString * string;
+@property (nonatomic, copy) id hitBlock;
+@property (nonatomic) bool isComplete;
+@property (nonatomic) unsigned long long options;
+@property (nonatomic, copy) NSString *string;
 
 - (void)dealloc;
 - (id)hitBlock;

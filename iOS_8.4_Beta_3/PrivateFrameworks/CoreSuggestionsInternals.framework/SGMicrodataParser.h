@@ -6,7 +6,7 @@
     SGMicrodataParserStackItem *_stackItem;
 }
 
-@property(assign,readonly) SGMicrodataParserStackItem * stackItem;
+@property (nonatomic, readonly) SGMicrodataParserStackItem *stackItem;
 
 + (id)parse:(id)arg1;
 + (id)whitespaceSplit:(id)arg1;

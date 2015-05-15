@@ -7,9 +7,9 @@
     bool _squareImage;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) UIImageView * imageView;
-@property(assign,readwrite) bool squareImage;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, readonly) UIImageView *imageView;
+@property (nonatomic) bool squareImage;
 
 + (double)defaultReflectionHeight;
 

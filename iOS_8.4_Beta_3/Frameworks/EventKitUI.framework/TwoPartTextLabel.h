@@ -13,8 +13,8 @@
     bool _strikethroughPart2;
 }
 
-@property(assign,readwrite) bool strikethroughPart1;
-@property(assign,readwrite) bool strikethroughPart2;
+@property (nonatomic) bool strikethroughPart1;
+@property (nonatomic) bool strikethroughPart2;
 
 - (void).cxx_destruct;
 - (id)description;

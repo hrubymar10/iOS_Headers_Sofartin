@@ -18,14 +18,14 @@
     NSString *_titleText;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIButton * headerAreaButton;
-@property(assign,readwrite) long long keylineType;
-@property(assign,readwrite) SiriUISnippetViewController * snippetViewController;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * titleText;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIButton *headerAreaButton;
+@property (nonatomic) long long keylineType;
+@property (nonatomic) SiriUISnippetViewController *snippetViewController;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *titleText;
 
 + (double)defaultHeight;
 + (id)elementKind;

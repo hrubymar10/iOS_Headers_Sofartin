@@ -7,7 +7,7 @@
     SKUIViewElementLayoutContext *_layoutContext;
 }
 
-@property(assign,readonly) SKUIBrowseItemComponent * pageComponent;
+@property (nonatomic, readonly) SKUIBrowseItemComponent *pageComponent;
 
 - (void).cxx_destruct;
 - (id)_imageForImageViewElement:(id)arg1 styleColor:(id)arg2;

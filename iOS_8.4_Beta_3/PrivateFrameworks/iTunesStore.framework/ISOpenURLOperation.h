@@ -6,7 +6,7 @@
     ISOpenURLRequest *_request;
 }
 
-@property(assign,readonly) ISOpenURLRequest * openURLRequest;
+@property (readonly) ISOpenURLRequest *openURLRequest;
 
 - (id)_newSortedTargetsArray;
 - (bool)_openURL:(id)arg1;

@@ -23,26 +23,26 @@
     GEOCompanionWalkStep *_walkStep;
 }
 
-@property(assign,readwrite) unsigned int distance;
-@property(assign,retain) GEOCompanionDriveStep * driveStep;
-@property(assign,readwrite) unsigned int endCoordinateIndex;
-@property(assign,retain) GEOCompanionFerryStep * ferryStep;
-@property(assign,readwrite) bool hasDistance;
-@property(assign,readonly) bool hasDriveStep;
-@property(assign,readwrite) bool hasEndCoordinateIndex;
-@property(assign,readonly) bool hasFerryStep;
-@property(assign,readwrite) bool hasManeuverStartCoordinateIndex;
-@property(assign,readonly) bool hasRoadName;
-@property(assign,readwrite) bool hasStartCoordinateIndex;
-@property(assign,readwrite) bool hasStepID;
-@property(assign,readwrite) bool hasTime;
-@property(assign,readonly) bool hasWalkStep;
-@property(assign,readwrite) unsigned int maneuverStartCoordinateIndex;
-@property(assign,retain) NSString * roadName;
-@property(assign,readwrite) unsigned int startCoordinateIndex;
-@property(assign,readwrite) unsigned int stepID;
-@property(assign,readwrite) unsigned int time;
-@property(assign,retain) GEOCompanionWalkStep * walkStep;
+@property (nonatomic) unsigned int distance;
+@property (nonatomic, retain) GEOCompanionDriveStep *driveStep;
+@property (nonatomic) unsigned int endCoordinateIndex;
+@property (nonatomic, retain) GEOCompanionFerryStep *ferryStep;
+@property (nonatomic) bool hasDistance;
+@property (nonatomic, readonly) bool hasDriveStep;
+@property (nonatomic) bool hasEndCoordinateIndex;
+@property (nonatomic, readonly) bool hasFerryStep;
+@property (nonatomic) bool hasManeuverStartCoordinateIndex;
+@property (nonatomic, readonly) bool hasRoadName;
+@property (nonatomic) bool hasStartCoordinateIndex;
+@property (nonatomic) bool hasStepID;
+@property (nonatomic) bool hasTime;
+@property (nonatomic, readonly) bool hasWalkStep;
+@property (nonatomic) unsigned int maneuverStartCoordinateIndex;
+@property (nonatomic, retain) NSString *roadName;
+@property (nonatomic) unsigned int startCoordinateIndex;
+@property (nonatomic) unsigned int stepID;
+@property (nonatomic) unsigned int time;
+@property (nonatomic, retain) GEOCompanionWalkStep *walkStep;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

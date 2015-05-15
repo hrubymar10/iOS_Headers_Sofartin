@@ -4,7 +4,7 @@
 
 @interface CKAudioMediaObject : CKAVMediaObject
 
-@property(assign,retain) NSArray * powerLevels;
+@property (nonatomic, retain) NSArray *powerLevels;
 
 + (id)UTITypes;
 + (Class)__ck_attachmentItemClass;

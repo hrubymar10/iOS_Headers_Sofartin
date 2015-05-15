@@ -7,7 +7,7 @@
     struct OCCStreamer { int (**x1)(); struct OCCCryptoKey {} *x2; char *x3; } *mStreamer;
 }
 
-@property(assign,readonly) NSString * outputFilename;
+@property (nonatomic, readonly) NSString *outputFilename;
 
 + (id)allocTempFileWithBase:(id)arg1 filename:(id*)arg2;
 

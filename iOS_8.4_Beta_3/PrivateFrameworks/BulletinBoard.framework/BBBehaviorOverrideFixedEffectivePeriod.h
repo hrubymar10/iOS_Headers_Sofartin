@@ -8,13 +8,13 @@
     NSDate *_startDate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double effectiveInterval;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSUUID * identifier;
-@property(assign,copy) NSDate * startDate;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double effectiveInterval;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSUUID *identifier;
+@property (nonatomic, copy) NSDate *startDate;
+@property (readonly) Class superclass;
 
 + (bool)supportsSecureCoding;
 

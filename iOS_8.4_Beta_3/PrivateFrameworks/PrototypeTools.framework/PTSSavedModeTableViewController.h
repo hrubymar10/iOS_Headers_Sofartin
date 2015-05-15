@@ -8,13 +8,13 @@
     UITableView *_tableView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long modalEditingIndex;
-@property(assign,readwrite) _UISettingsGroup * settingsGroup;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITableView * tableView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long modalEditingIndex;
+@property (nonatomic) _UISettingsGroup *settingsGroup;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UITableView *tableView;
 
 + (id)sharedInstance;
 + (id)sharedInstanceIfExists;

@@ -7,8 +7,8 @@
     SPAssetCacheClientCache *_transientCache;
 }
 
-@property(assign,retain) SPAssetCacheClientCache * permanentCache;
-@property(assign,retain) SPAssetCacheClientCache * transientCache;
+@property (nonatomic, retain) SPAssetCacheClientCache *permanentCache;
+@property (nonatomic, retain) SPAssetCacheClientCache *transientCache;
 
 + (id)sharedInstance;
 

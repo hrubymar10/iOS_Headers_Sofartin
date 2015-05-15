@@ -6,9 +6,9 @@
     MPMusicPlayerControllerInternal *_internal;
 }
 
-@property(assign,readwrite) float currentPlaybackRate;
-@property(assign,readwrite) double currentPlaybackTime;
-@property(assign,readonly) bool isPreparedToPlay;
+@property (nonatomic) float currentPlaybackRate;
+@property (nonatomic) double currentPlaybackTime;
+@property (nonatomic, readonly) bool isPreparedToPlay;
 
 + (id)applicationMusicPlayer;
 + (id)iPodMusicPlayer;

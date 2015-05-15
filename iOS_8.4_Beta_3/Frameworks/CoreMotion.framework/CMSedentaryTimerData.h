@@ -9,10 +9,10 @@
     double fStartDate;
 }
 
-@property(assign,readonly) long long alarmType;
-@property(assign,readonly) bool didWake;
-@property(assign,readonly) NSDate * firedDate;
-@property(assign,readonly) NSDate * startDate;
+@property (nonatomic, readonly) long long alarmType;
+@property (nonatomic, readonly) bool didWake;
+@property (nonatomic, readonly) NSDate *firedDate;
+@property (nonatomic, readonly) NSDate *startDate;
 
 + (bool)supportsSecureCoding;
 

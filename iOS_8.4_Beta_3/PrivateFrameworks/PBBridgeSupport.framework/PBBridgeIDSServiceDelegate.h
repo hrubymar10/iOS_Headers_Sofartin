@@ -10,15 +10,15 @@
     NSTimer *_transportReachabilityTimer;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableDictionary * inflightMessages;
-@property(assign,retain) NSMutableDictionary * pendingMessages;
-@property(assign,retain) IDSService * service;
-@property(assign,readwrite) bool shouldSuppressTransportReachabilityTimeout;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSTimer * transportReachabilityTimer;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableDictionary *inflightMessages;
+@property (nonatomic, retain) NSMutableDictionary *pendingMessages;
+@property (nonatomic, retain) IDSService *service;
+@property (nonatomic) bool shouldSuppressTransportReachabilityTimeout;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSTimer *transportReachabilityTimer;
 
 - (void).cxx_destruct;
 - (id)_sendProtoBuf:(id)arg1 service:(id)arg2 priority:(long long)arg3 responseIdentifier:(id)arg4 expectsResponse:(bool)arg5;

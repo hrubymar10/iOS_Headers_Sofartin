@@ -13,12 +13,12 @@
     double _weekdayWidth;
 }
 
-@property(assign,readonly) UILabel * dateLabel;
-@property(assign,copy) NSString * formattedDateString;
-@property(assign,readwrite) bool isModern;
-@property(assign,readonly) UILabel * weekdayLabel;
-@property(assign,readwrite) bool weekdayLast;
-@property(assign,readwrite) double weekdayWidth;
+@property (nonatomic, readonly) UILabel *dateLabel;
+@property (nonatomic, copy) NSString *formattedDateString;
+@property (nonatomic) bool isModern;
+@property (nonatomic, readonly) UILabel *weekdayLabel;
+@property (nonatomic) bool weekdayLast;
+@property (nonatomic) double weekdayWidth;
 
 - (bool)_canBeReusedInPickerView;
 - (id)dateLabel;

@@ -13,8 +13,8 @@
     TPLegacyLCDTextView *_textView;
 }
 
-@property(assign,retain) UIView * backgroundGradientView;
-@property(assign,readwrite) bool hasBackgroundGradient;
+@property (nonatomic, retain) UIView *backgroundGradientView;
+@property (nonatomic) bool hasBackgroundGradient;
 
 + (double)labelFontSize;
 + (double)textFontSize;

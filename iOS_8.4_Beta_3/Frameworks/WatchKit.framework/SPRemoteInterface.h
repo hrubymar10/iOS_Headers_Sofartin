@@ -15,20 +15,20 @@
     id _textInputCompletion;
 }
 
-@property(assign,retain) NSMutableArray * activeComplicationsConnections;
-@property(assign,retain) <SPRemoteInterfaceDataDelegateProtocol> * dataDelegate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableDictionary * interfaceControllers;
-@property(assign,retain) NSObject<OS_dispatch_queue> * interfaceControllersAccessQueue;
-@property(assign,retain) NSMutableDictionary * interfaceControllersOwners;
-@property(assign,retain) NSString * navigatingViewControllerID;
-@property(assign,retain) NSMutableArray * openParentRequests;
-@property(assign,retain) NSString * rootViewControllerID;
-@property(assign,retain) id runLoopObserver;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id textInputCompletion;
+@property (nonatomic, retain) NSMutableArray *activeComplicationsConnections;
+@property (nonatomic, retain) <SPRemoteInterfaceDataDelegateProtocol> *dataDelegate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableDictionary *interfaceControllers;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *interfaceControllersAccessQueue;
+@property (nonatomic, retain) NSMutableDictionary *interfaceControllersOwners;
+@property (nonatomic, retain) NSString *navigatingViewControllerID;
+@property (nonatomic, retain) NSMutableArray *openParentRequests;
+@property (nonatomic, retain) NSString *rootViewControllerID;
+@property (nonatomic, retain) id runLoopObserver;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id textInputCompletion;
 
 + (id)SerializablePropertyValue:(id)arg1;
 + (void)_logDuplicate:(id)arg1 controller:(id)arg2 key:(id)arg3 property:(id)arg4 value:(id)arg5;

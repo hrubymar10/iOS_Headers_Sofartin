@@ -6,8 +6,8 @@
     struct _CAPackageData { id x1; id x2; id x3; bool x4; bool x5; id x6; id x7; } *_data;
 }
 
-@property(getter=isGeometryFlipped,assign,readonly) bool geometryFlipped;
-@property(assign,readonly) CALayer * rootLayer;
+@property (getter=isGeometryFlipped, readonly) bool geometryFlipped;
+@property (readonly) CALayer *rootLayer;
 
 + (id)packageWithContentsOfURL:(id)arg1 type:(id)arg2 options:(id)arg3 error:(id*)arg4;
 + (id)packageWithData:(id)arg1 type:(id)arg2 options:(id)arg3 error:(id*)arg4;

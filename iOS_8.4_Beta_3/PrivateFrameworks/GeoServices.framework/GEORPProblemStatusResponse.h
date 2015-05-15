@@ -10,9 +10,9 @@
     int _statusCode;
 }
 
-@property(assign,readwrite) bool hasStatusCode;
-@property(assign,retain) NSMutableArray * problemStatus;
-@property(assign,readwrite) int statusCode;
+@property (nonatomic) bool hasStatusCode;
+@property (nonatomic, retain) NSMutableArray *problemStatus;
+@property (nonatomic) int statusCode;
 
 - (void)addProblemStatus:(id)arg1;
 - (void)clearProblemStatus;

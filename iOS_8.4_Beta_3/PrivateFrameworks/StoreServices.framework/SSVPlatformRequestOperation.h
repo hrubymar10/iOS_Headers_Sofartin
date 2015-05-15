@@ -17,13 +17,13 @@
     NSString *_userAgent;
 }
 
-@property(assign,copy) NSString * imageProfile;
-@property(assign,copy) NSArray * itemIdentifiers;
-@property(assign,copy) NSString * keyProfile;
-@property(assign,readwrite) long long personalizationStyle;
-@property(assign,copy) id responseBlock;
-@property(assign,copy) NSString * storeFrontSuffix;
-@property(assign,copy) NSNumber * timeoutInterval;
+@property (copy) NSString *imageProfile;
+@property (copy) NSArray *itemIdentifiers;
+@property (copy) NSString *keyProfile;
+@property long long personalizationStyle;
+@property (copy) id responseBlock;
+@property (copy) NSString *storeFrontSuffix;
+@property (copy) NSNumber *timeoutInterval;
 
 - (void).cxx_destruct;
 - (id)_URLBagContext;

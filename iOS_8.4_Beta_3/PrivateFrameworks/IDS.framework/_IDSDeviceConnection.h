@@ -17,13 +17,13 @@
     NSString *_streamName;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSInputStream * inputStream;
-@property(assign,retain) NSOutputStream * outputStream;
-@property(assign,readonly) int socket;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) NSInputStream *inputStream;
+@property (nonatomic, readonly, retain) NSOutputStream *outputStream;
+@property (nonatomic, readonly) int socket;
+@property (readonly) Class superclass;
 
 - (void)_cleanupCompletionBlock;
 - (void)_close;

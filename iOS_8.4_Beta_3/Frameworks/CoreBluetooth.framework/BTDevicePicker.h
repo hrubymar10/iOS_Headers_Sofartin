@@ -20,11 +20,11 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <BTDevicePickerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <BTDevicePickerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_btSSPConfirmationHandler:(id)arg1;
 - (void)_btSSPNumericComparisonHandler:(id)arg1;

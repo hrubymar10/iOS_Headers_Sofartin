@@ -7,8 +7,8 @@
     CIVector *inputRectangle;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIVector * inputRectangle;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIVector *inputRectangle;
 
 + (id)customAttributes;
 

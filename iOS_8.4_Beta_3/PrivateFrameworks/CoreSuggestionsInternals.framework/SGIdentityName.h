@@ -11,12 +11,12 @@
     NSString *_surname;
 }
 
-@property(assign,readonly) NSString * firstname;
-@property(assign,readonly) NSString * fullName;
-@property(assign,readonly) NSString * middlename;
-@property(assign,readonly) NSString * prefix;
-@property(assign,readonly) NSString * suffix;
-@property(assign,readonly) NSString * surname;
+@property (nonatomic, readonly) NSString *firstname;
+@property (nonatomic, readonly) NSString *fullName;
+@property (nonatomic, readonly) NSString *middlename;
+@property (nonatomic, readonly) NSString *prefix;
+@property (nonatomic, readonly) NSString *suffix;
+@property (nonatomic, readonly) NSString *surname;
 
 + (void)initialize;
 + (id)nameWithString:(id)arg1;

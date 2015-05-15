@@ -6,7 +6,7 @@
     NSMutableArray *_keys;
 }
 
-@property(assign,retain) NSMutableArray * keys;
+@property (nonatomic, retain) NSMutableArray *keys;
 
 - (void)addKey:(id)arg1;
 - (void)clearKeys;

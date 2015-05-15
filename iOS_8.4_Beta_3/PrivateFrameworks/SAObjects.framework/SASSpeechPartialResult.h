@@ -4,7 +4,7 @@
 
 @interface SASSpeechPartialResult : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * tokens;
+@property (nonatomic, copy) NSArray *tokens;
 
 + (id)speechPartialResult;
 + (id)speechPartialResultWithDictionary:(id)arg1 context:(id)arg2;

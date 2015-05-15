@@ -8,9 +8,9 @@
     NSArray *_zoneIDs;
 }
 
-@property(assign,copy) id shareFetchedProgressBlock;
-@property(assign,retain) NSArray * shareIDs;
-@property(assign,retain) NSArray * zoneIDs;
+@property (nonatomic, copy) id shareFetchedProgressBlock;
+@property (nonatomic, retain) NSArray *shareIDs;
+@property (nonatomic, retain) NSArray *zoneIDs;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

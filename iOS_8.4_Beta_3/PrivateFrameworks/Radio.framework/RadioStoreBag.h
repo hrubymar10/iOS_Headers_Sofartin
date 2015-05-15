@@ -16,16 +16,16 @@
     NSDictionary *_tiltDictionary;
 }
 
-@property(assign,copy) NSDictionary * URLBagDictionary;
-@property(getter=isAdFreeRadioEnabled,assign,readonly) bool adFreeRadioEnabled;
-@property(assign,readonly) NSURL * baseURL;
-@property(assign,readonly) NSString * leaseCertificateURLString;
-@property(assign,readonly) NSString * mescalCertificateURLString;
-@property(assign,readonly) NSString * mescalSetupURLString;
-@property(assign,readonly) NSString * platformLookupURLString;
-@property(assign,readonly) NSDictionary * radioConfigurationDictionary;
-@property(assign,readonly) bool shouldSendKBSyncData;
-@property(assign,readonly) NSString * streamingDownloadURLString;
+@property (nonatomic, readonly, copy) NSDictionary *URLBagDictionary;
+@property (getter=isAdFreeRadioEnabled, nonatomic, readonly) bool adFreeRadioEnabled;
+@property (nonatomic, readonly) NSURL *baseURL;
+@property (nonatomic, readonly) NSString *leaseCertificateURLString;
+@property (nonatomic, readonly) NSString *mescalCertificateURLString;
+@property (nonatomic, readonly) NSString *mescalSetupURLString;
+@property (nonatomic, readonly) NSString *platformLookupURLString;
+@property (nonatomic, readonly) NSDictionary *radioConfigurationDictionary;
+@property (nonatomic, readonly) bool shouldSendKBSyncData;
+@property (nonatomic, readonly) NSString *streamingDownloadURLString;
 
 - (void).cxx_destruct;
 - (id)URLBagDictionary;

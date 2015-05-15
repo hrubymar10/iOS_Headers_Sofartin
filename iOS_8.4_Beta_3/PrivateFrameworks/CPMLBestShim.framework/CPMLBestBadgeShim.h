@@ -11,12 +11,12 @@
     NSMutableString *weightsPath;
 }
 
-@property(assign,retain) CDAttribute * cdBundleIdAttribute;
-@property(assign,retain) CDSession * cdSession;
-@property(assign,retain) NSDictionary * configPList;
-@property(assign,retain) NSMutableDictionary * hysteresis;
-@property(assign,retain) NSMutableDictionary * learnedWeights;
-@property(assign,retain) NSMutableString * weightsPath;
+@property (retain) CDAttribute *cdBundleIdAttribute;
+@property (retain) CDSession *cdSession;
+@property (retain) NSDictionary *configPList;
+@property (retain) NSMutableDictionary *hysteresis;
+@property (retain) NSMutableDictionary *learnedWeights;
+@property (retain) NSMutableString *weightsPath;
 
 + (id)bestShim;
 + (id)bestShimWithDBPath:(id)arg1 withModelPath:(id)arg2 withPListPath:(id)arg3;

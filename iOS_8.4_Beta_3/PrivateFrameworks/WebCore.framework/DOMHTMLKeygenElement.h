@@ -4,17 +4,17 @@
 
 @interface DOMHTMLKeygenElement : DOMHTMLElement
 
-@property(assign,readwrite) bool autofocus;
-@property(assign,copy) NSString * challenge;
-@property(assign,readwrite) bool disabled;
-@property(assign,readonly) DOMHTMLFormElement * form;
-@property(assign,copy) NSString * keytype;
-@property(assign,readonly) DOMNodeList * labels;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * type;
-@property(assign,copy) NSString * validationMessage;
-@property(assign,readonly) DOMValidityState * validity;
-@property(assign,readonly) bool willValidate;
+@property bool autofocus;
+@property (copy) NSString *challenge;
+@property bool disabled;
+@property (readonly) DOMHTMLFormElement *form;
+@property (copy) NSString *keytype;
+@property (readonly) DOMNodeList *labels;
+@property (copy) NSString *name;
+@property (readonly, copy) NSString *type;
+@property (readonly, copy) NSString *validationMessage;
+@property (readonly) DOMValidityState *validity;
+@property (readonly) bool willValidate;
 
 - (bool)autofocus;
 - (id)challenge;

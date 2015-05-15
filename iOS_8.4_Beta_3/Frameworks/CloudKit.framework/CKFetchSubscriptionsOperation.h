@@ -11,12 +11,12 @@
     NSMutableDictionary *_subscriptionsBySubscriptionID;
 }
 
-@property(assign,copy) id fetchSubscriptionCompletionBlock;
-@property(assign,readwrite) bool isFetchAllSubscriptionsOperation;
-@property(assign,retain) NSMutableDictionary * subscriptionErrors;
-@property(assign,copy) NSArray * subscriptionIDs;
-@property(assign,retain) NSArray * subscriptions;
-@property(assign,retain) NSMutableDictionary * subscriptionsBySubscriptionID;
+@property (nonatomic, copy) id fetchSubscriptionCompletionBlock;
+@property (nonatomic) bool isFetchAllSubscriptionsOperation;
+@property (nonatomic, retain) NSMutableDictionary *subscriptionErrors;
+@property (nonatomic, copy) NSArray *subscriptionIDs;
+@property (nonatomic, retain) NSArray *subscriptions;
+@property (nonatomic, retain) NSMutableDictionary *subscriptionsBySubscriptionID;
 
 + (id)fetchAllSubscriptionsOperation;
 

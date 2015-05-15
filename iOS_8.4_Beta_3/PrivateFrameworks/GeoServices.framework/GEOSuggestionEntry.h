@@ -15,20 +15,20 @@
     unsigned long long _textHighlightsSpace;
 }
 
-@property(assign,retain) NSString * calloutTitle;
-@property(assign,retain) NSMutableArray * displayLines;
-@property(assign,readonly) bool hasCalloutTitle;
-@property(assign,readonly) bool hasIconID;
-@property(assign,readonly) bool hasLatlng;
-@property(assign,readonly) bool hasSearchQueryDisplayString;
-@property(assign,readonly) bool hasSuggestionEntryMetadata;
-@property(assign,retain) NSString * iconID;
-@property(assign,retain) GEOLatLng * latlng;
-@property(assign,retain) NSMutableArray * namedFeatures;
-@property(assign,retain) NSString * searchQueryDisplayString;
-@property(assign,retain) NSData * suggestionEntryMetadata;
-@property(assign,readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; }* textHighlights;
-@property(assign,readonly) unsigned long long textHighlightsCount;
+@property (nonatomic, retain) NSString *calloutTitle;
+@property (nonatomic, retain) NSMutableArray *displayLines;
+@property (nonatomic, readonly) bool hasCalloutTitle;
+@property (nonatomic, readonly) bool hasIconID;
+@property (nonatomic, readonly) bool hasLatlng;
+@property (nonatomic, readonly) bool hasSearchQueryDisplayString;
+@property (nonatomic, readonly) bool hasSuggestionEntryMetadata;
+@property (nonatomic, retain) NSString *iconID;
+@property (nonatomic, retain) GEOLatLng *latlng;
+@property (nonatomic, retain) NSMutableArray *namedFeatures;
+@property (nonatomic, retain) NSString *searchQueryDisplayString;
+@property (nonatomic, retain) NSData *suggestionEntryMetadata;
+@property (nonatomic, readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; }*textHighlights;
+@property (nonatomic, readonly) unsigned long long textHighlightsCount;
 
 - (void)addDisplayLine:(id)arg1;
 - (void)addNamedFeature:(id)arg1;

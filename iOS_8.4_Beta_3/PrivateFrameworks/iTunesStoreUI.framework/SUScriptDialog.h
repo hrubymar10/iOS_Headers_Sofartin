@@ -11,12 +11,12 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSString * body;
-@property(assign,retain) id buttons;
-@property(assign,retain) NSNumber * cancelButtonIndex;
-@property(assign,retain) NSNumber * destructiveButtonIndex;
-@property(assign,retain) id textFields;
-@property(assign,retain) NSString * title;
+@property (retain) NSString *body;
+@property (retain) id buttons;
+@property (retain) NSNumber *cancelButtonIndex;
+@property (retain) NSNumber *destructiveButtonIndex;
+@property (retain) id textFields;
+@property (retain) NSString *title;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

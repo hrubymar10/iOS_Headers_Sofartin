@@ -10,11 +10,11 @@
     NSString *_trendingSearchURLString;
 }
 
-@property(assign,readonly) NSString * accessoryText;
-@property(assign,readonly) SKUIViewElementText * defaultText;
-@property(assign,readonly) NSString * placeholderString;
-@property(assign,readonly) NSString * searchHintsURLString;
-@property(assign,readonly) NSString * trendingSearchURLString;
+@property (nonatomic, readonly) NSString *accessoryText;
+@property (nonatomic, readonly) SKUIViewElementText *defaultText;
+@property (nonatomic, readonly) NSString *placeholderString;
+@property (nonatomic, readonly) NSString *searchHintsURLString;
+@property (nonatomic, readonly) NSString *trendingSearchURLString;
 
 - (void).cxx_destruct;
 - (id)accessoryText;

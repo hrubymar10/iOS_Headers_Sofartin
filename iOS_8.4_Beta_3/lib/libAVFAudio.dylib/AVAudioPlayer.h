@@ -6,22 +6,22 @@
     id _impl;
 }
 
-@property(assign,copy) NSArray * channelAssignments;
-@property(assign,readwrite) double currentTime;
-@property(assign,readonly) NSData * data;
-@property(assign,readwrite) <AVAudioPlayerDelegate> * delegate;
-@property(assign,readonly) double deviceCurrentTime;
-@property(assign,readonly) double duration;
-@property(assign,readwrite) bool enableRate;
-@property(getter=isMeteringEnabled,assign,readwrite) bool meteringEnabled;
-@property(assign,readonly) unsigned long long numberOfChannels;
-@property(assign,readwrite) long long numberOfLoops;
-@property(assign,readwrite) float pan;
-@property(getter=isPlaying,assign,readonly) bool playing;
-@property(assign,readwrite) float rate;
-@property(assign,readonly) NSDictionary * settings;
-@property(assign,readonly) NSURL * url;
-@property(assign,readwrite) float volume;
+@property (nonatomic, copy) NSArray *channelAssignments;
+@property double currentTime;
+@property (readonly) NSData *data;
+@property <AVAudioPlayerDelegate> *delegate;
+@property (readonly) double deviceCurrentTime;
+@property (readonly) double duration;
+@property bool enableRate;
+@property (getter=isMeteringEnabled) bool meteringEnabled;
+@property (readonly) unsigned long long numberOfChannels;
+@property long long numberOfLoops;
+@property float pan;
+@property (getter=isPlaying, readonly) bool playing;
+@property float rate;
+@property (readonly) NSDictionary *settings;
+@property (readonly) NSURL *url;
+@property float volume;
 
 - (float)averagePowerForChannel:(unsigned long long)arg1;
 - (void)beginInterruption;

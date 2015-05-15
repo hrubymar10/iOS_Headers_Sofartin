@@ -6,7 +6,7 @@
     NSObject<OS_dispatch_queue> *_serialLoggingQueue;
 }
 
-@property(setter=_setSerialLoggingQueue:,assign,readwrite) NSObject<OS_dispatch_queue> * _serialLoggingQueue;
+@property (setter=_setSerialLoggingQueue:, nonatomic) NSObject<OS_dispatch_queue> *_serialLoggingQueue;
 
 + (id)sharedFileLoggingController;
 

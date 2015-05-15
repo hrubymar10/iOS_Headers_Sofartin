@@ -11,9 +11,9 @@
     } _translation;
 }
 
-@property(assign,readwrite) double rotation;
-@property(assign,readwrite) double scale;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } translation;
+@property (nonatomic) double rotation;
+@property (nonatomic) double scale;
+@property (nonatomic) struct CGPoint { double x1; double x2; } translation;
 
 - (id)description;
 - (double)rotation;

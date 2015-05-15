@@ -4,7 +4,7 @@
 
 @interface CoreDAVOptionsTask : CoreDAVTask
 
-@property(assign,readwrite) <CoreDAVOptionsTaskDelegate> * delegate;
+@property (nonatomic) <CoreDAVOptionsTaskDelegate> *delegate;
 
 - (void)finishCoreDAVTaskWithError:(id)arg1;
 - (id)httpMethod;

@@ -7,8 +7,8 @@
     FBSDisplay *_display;
 }
 
-@property(assign,retain) FBSSceneClientSettingsDiff * clientSettingsDiff;
-@property(assign,retain) FBSDisplay * display;
+@property (nonatomic, retain) FBSSceneClientSettingsDiff *clientSettingsDiff;
+@property (nonatomic, retain) FBSDisplay *display;
 
 - (id)clientSettingsDiff;
 - (void)dealloc;

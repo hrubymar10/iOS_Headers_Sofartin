@@ -8,9 +8,9 @@
     unsigned long long _timeOutInterval;
 }
 
-@property(getter=isConnecting,assign,readwrite) bool connecting;
-@property(assign,retain) AMSBTLEPeripheral * peripheral;
-@property(assign,readwrite) unsigned long long timeOutInterval;
+@property (getter=isConnecting) bool connecting;
+@property (nonatomic, retain) AMSBTLEPeripheral *peripheral;
+@property unsigned long long timeOutInterval;
 
 - (id)initWithPeripheral:(id)arg1 isConnecting:(bool)arg2;
 - (bool)isConnecting;

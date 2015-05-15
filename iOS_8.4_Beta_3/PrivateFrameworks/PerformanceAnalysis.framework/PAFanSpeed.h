@@ -7,13 +7,13 @@
     double _machTimestamp;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) int fanSpeed;
-@property(assign,readonly) bool fanSpeedIsValid;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double machTimesamp;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) int fanSpeed;
+@property (readonly) bool fanSpeedIsValid;
+@property (readonly) unsigned long long hash;
+@property (readonly) double machTimesamp;
+@property (readonly) Class superclass;
 
 + (id)classDictionaryKey;
 + (id)newInstanceWithoutReferencesFromBufferPosition:(const void*)arg1;

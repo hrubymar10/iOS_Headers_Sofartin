@@ -7,8 +7,8 @@
     NSArray *_emailAddresses;
 }
 
-@property(assign,retain) ACAccount * account;
-@property(assign,retain) NSArray * emailAddresses;
+@property (nonatomic, retain) ACAccount *account;
+@property (nonatomic, retain) NSArray *emailAddresses;
 
 + (Class)responseClass;
 

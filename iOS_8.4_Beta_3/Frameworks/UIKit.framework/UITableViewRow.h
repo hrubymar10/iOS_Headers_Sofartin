@@ -8,8 +8,8 @@
     long long _indentationLevel;
 }
 
-@property(assign,retain) UITableViewCell * cell;
-@property(assign,readwrite) double height;
+@property (nonatomic, retain) UITableViewCell *cell;
+@property (nonatomic) double height;
 
 + (id)row;
 

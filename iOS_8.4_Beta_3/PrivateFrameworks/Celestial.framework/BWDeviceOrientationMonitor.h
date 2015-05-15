@@ -11,8 +11,8 @@
     struct OpaqueFigSimpleMutex { } *_stateMutex;
 }
 
-@property(assign,readonly) unsigned int mostRecentPortraitLandscapeOrientation;
-@property(assign,readwrite) <BWDeviceOrientationMonitorPortraitLandscapeUpdateDelegate> * portraitLandscapeUpdateDelegate;
+@property (nonatomic, readonly) unsigned int mostRecentPortraitLandscapeOrientation;
+@property (nonatomic) <BWDeviceOrientationMonitorPortraitLandscapeUpdateDelegate> *portraitLandscapeUpdateDelegate;
 
 + (void)initialize;
 

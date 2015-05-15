@@ -21,21 +21,21 @@
     long long _storeId;
 }
 
-@property(assign,readwrite) long long accountId;
-@property(assign,readwrite) bool hasAccountId;
-@property(assign,readwrite) bool hasMediaObjectType;
-@property(assign,readwrite) bool hasMediaType;
-@property(assign,readonly) bool hasName;
-@property(assign,readwrite) bool hasPurchaseHistoryId;
-@property(assign,readwrite) bool hasSagaId;
-@property(assign,readwrite) bool hasStoreId;
-@property(assign,retain) NSMutableArray * libraryIdentifiers;
-@property(assign,readwrite) int mediaObjectType;
-@property(assign,readwrite) int mediaType;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) long long purchaseHistoryId;
-@property(assign,readwrite) long long sagaId;
-@property(assign,readwrite) long long storeId;
+@property (nonatomic) long long accountId;
+@property (nonatomic) bool hasAccountId;
+@property (nonatomic) bool hasMediaObjectType;
+@property (nonatomic) bool hasMediaType;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic) bool hasPurchaseHistoryId;
+@property (nonatomic) bool hasSagaId;
+@property (nonatomic) bool hasStoreId;
+@property (nonatomic, retain) NSMutableArray *libraryIdentifiers;
+@property (nonatomic) int mediaObjectType;
+@property (nonatomic) int mediaType;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) long long purchaseHistoryId;
+@property (nonatomic) long long sagaId;
+@property (nonatomic) long long storeId;
 
 - (void).cxx_destruct;
 - (long long)accountId;

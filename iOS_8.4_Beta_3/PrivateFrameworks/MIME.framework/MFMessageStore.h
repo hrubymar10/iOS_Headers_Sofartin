@@ -7,8 +7,8 @@
     NSMutableSet *_uniqueStrings;
 }
 
-@property(assign,retain) MFMessageStoreObjectCache * objectCache;
-@property(assign,copy) NSString * storagePath;
+@property (nonatomic, readonly, retain) MFMessageStoreObjectCache *objectCache;
+@property (nonatomic, copy) NSString *storagePath;
 
 + (Class)classForMimePart;
 + (Class)headersClass;

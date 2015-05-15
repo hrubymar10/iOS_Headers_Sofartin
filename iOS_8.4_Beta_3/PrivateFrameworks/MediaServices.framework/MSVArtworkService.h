@@ -7,8 +7,8 @@
     NSOperationQueue *_serviceThrottlingOperationQueue;
 }
 
-@property(assign,retain) NSXPCConnection * serverConnection;
-@property(assign,retain) NSOperationQueue * serviceThrottlingOperationQueue;
+@property (nonatomic, retain) NSXPCConnection *serverConnection;
+@property (nonatomic, retain) NSOperationQueue *serviceThrottlingOperationQueue;
 
 + (id)sharedService;
 

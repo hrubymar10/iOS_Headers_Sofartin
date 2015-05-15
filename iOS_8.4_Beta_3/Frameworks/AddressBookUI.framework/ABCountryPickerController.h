@@ -11,17 +11,17 @@
     UITableViewController *_tableViewController;
 }
 
-@property(assign,retain) UILocalizedIndexedCollation * collation;
-@property(assign,retain) CNContactStyle * contactStyle;
-@property(assign,copy) NSArray * countries;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ABCountryPickerControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * sections;
-@property(assign,copy) NSString * selectedCountryCode;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITableViewController * tableViewController;
+@property (nonatomic, retain) UILocalizedIndexedCollation *collation;
+@property (nonatomic, retain) CNContactStyle *contactStyle;
+@property (nonatomic, copy) NSArray *countries;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ABCountryPickerControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *sections;
+@property (nonatomic, copy) NSString *selectedCountryCode;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UITableViewController *tableViewController;
 
 - (void)_configureSections;
 - (void)_loadCountryCodes;

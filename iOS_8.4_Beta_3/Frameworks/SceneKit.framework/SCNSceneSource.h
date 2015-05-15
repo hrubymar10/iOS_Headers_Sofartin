@@ -12,8 +12,8 @@
     NSDictionary *_sceneSourceOptions;
 }
 
-@property(assign,readonly) NSData * data;
-@property(assign,readonly) NSURL * url;
+@property (readonly) NSData *data;
+@property (readonly) NSURL *url;
 
 + (id)SCNJSExportProtocol;
 + (void)_cacheSceneSource:(id)arg1 forURL:(id)arg2 options:(id)arg3;

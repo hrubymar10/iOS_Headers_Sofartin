@@ -10,8 +10,8 @@
     } _size;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
 
 - (void)dealloc;
 - (id)image;

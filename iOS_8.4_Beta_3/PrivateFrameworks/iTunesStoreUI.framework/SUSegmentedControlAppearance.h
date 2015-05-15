@@ -9,7 +9,7 @@
     NSMutableDictionary *_titleTextAttributes;
 }
 
-@property(assign,retain) UIImage * optionsBackgroundImage;
+@property (nonatomic, retain) UIImage *optionsBackgroundImage;
 
 + (id)defaultBarAppearance;
 + (id)defaultOptionsAppearanceForTintStyle:(long long)arg1;

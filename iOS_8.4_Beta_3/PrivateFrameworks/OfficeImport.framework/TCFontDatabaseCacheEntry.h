@@ -9,10 +9,10 @@
     NSString *_name;
 }
 
-@property(assign,readonly) bool bold;
-@property(assign,readonly) int fontClass;
-@property(assign,readonly) bool italic;
-@property(assign,readonly) NSString * name;
+@property (nonatomic, readonly) bool bold;
+@property (nonatomic, readonly) int fontClass;
+@property (nonatomic, readonly) bool italic;
+@property (nonatomic, readonly) NSString *name;
 
 + (id)newFontDatabaseCacheEntryWithName:(id)arg1 fontClass:(int)arg2 bold:(bool)arg3 italic:(bool)arg4;
 

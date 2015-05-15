@@ -9,10 +9,10 @@
     UIColor *_separatorColor;
 }
 
-@property(assign,readwrite) double leftMarginWidth;
-@property(assign,retain) UIColor * marginColor;
-@property(assign,readwrite) double rightMarginWidth;
-@property(assign,retain) UIColor * separatorColor;
+@property (nonatomic) double leftMarginWidth;
+@property (nonatomic, retain) UIColor *marginColor;
+@property (nonatomic) double rightMarginWidth;
+@property (nonatomic, retain) UIColor *separatorColor;
 
 - (void).cxx_destruct;
 - (void)drawRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

@@ -13,17 +13,17 @@
     double _urlAuthenticationTimeToLive;
 }
 
-@property(assign,copy) NSString * countryCode;
-@property(assign,readonly) bool currentCountrySupportsCarIntegration;
-@property(assign,readonly) bool currentCountrySupportsDirections;
-@property(assign,readonly) bool currentCountrySupportsNavigation;
-@property(assign,readonly) bool currentCountrySupportsRouteGenius;
-@property(assign,readonly) bool currentCountrySupportsTraffic;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) double urlAuthenticationTimeToLive;
+@property (nonatomic, copy) NSString *countryCode;
+@property (nonatomic, readonly) bool currentCountrySupportsCarIntegration;
+@property (nonatomic, readonly) bool currentCountrySupportsDirections;
+@property (nonatomic, readonly) bool currentCountrySupportsNavigation;
+@property (nonatomic, readonly) bool currentCountrySupportsRouteGenius;
+@property (nonatomic, readonly) bool currentCountrySupportsTraffic;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) double urlAuthenticationTimeToLive;
 
 + (void)disableServerConnection;
 + (void)setUseLocalProxy:(bool)arg1;

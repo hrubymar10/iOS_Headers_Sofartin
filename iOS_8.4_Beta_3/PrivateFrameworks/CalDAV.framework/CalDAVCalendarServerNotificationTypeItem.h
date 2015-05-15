@@ -8,12 +8,12 @@
     CoreDAVItemWithNoChildren *_resourceChanged;
 }
 
-@property(assign,retain) CoreDAVItemWithNoChildren * inviteNotification;
-@property(assign,retain) CoreDAVItemWithNoChildren * inviteReply;
-@property(assign,readonly) bool isInviteNotification;
-@property(assign,readonly) bool isInviteReply;
-@property(assign,readonly) bool isResourceChanged;
-@property(assign,retain) CoreDAVItemWithNoChildren * resourceChanged;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *inviteNotification;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *inviteReply;
+@property (nonatomic, readonly) bool isInviteNotification;
+@property (nonatomic, readonly) bool isInviteReply;
+@property (nonatomic, readonly) bool isResourceChanged;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *resourceChanged;
 
 - (id)copyParseRules;
 - (void)dealloc;

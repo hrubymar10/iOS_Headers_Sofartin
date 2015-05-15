@@ -10,11 +10,11 @@
     bool _useDefaultModalTransitionStyle;
 }
 
-@property(assign,readwrite) bool animates;
-@property(assign,readwrite) long long modalPresentationStyle;
-@property(assign,readwrite) long long modalTransitionStyle;
-@property(assign,readwrite) bool useDefaultModalPresentationStyle;
-@property(assign,readwrite) bool useDefaultModalTransitionStyle;
+@property (nonatomic) bool animates;
+@property (nonatomic) long long modalPresentationStyle;
+@property (nonatomic) long long modalTransitionStyle;
+@property (nonatomic) bool useDefaultModalPresentationStyle;
+@property (nonatomic) bool useDefaultModalTransitionStyle;
 
 - (bool)animates;
 - (id)defaultSegueClassName;

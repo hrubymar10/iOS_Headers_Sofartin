@@ -6,7 +6,7 @@
     NSXPCConnection *_connection;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
+@property (nonatomic, retain) NSXPCConnection *connection;
 
 + (bool)instancesRespondToSelector:(SEL)arg1;
 

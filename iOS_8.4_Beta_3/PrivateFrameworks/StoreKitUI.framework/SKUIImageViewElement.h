@@ -24,14 +24,14 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) id resourceCacheKey;
-@property(assign,readonly) NSString * resourceName;
-@property(assign,retain) UIColor * shadowColor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } shadowOffset;
-@property(assign,readwrite) double shadowRadius;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) id transientResourceCacheKey;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) id resourceCacheKey;
+@property (nonatomic, readonly) NSString *resourceName;
+@property (nonatomic, retain) UIColor *shadowColor;
+@property (nonatomic) struct CGSize { double x1; double x2; } shadowOffset;
+@property (nonatomic) double shadowRadius;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) id transientResourceCacheKey;
 
 - (void).cxx_destruct;
 - (id)URL;

@@ -25,27 +25,27 @@
     long long _transitionSafetyCount;
 }
 
-@property(getter=_cachedScriptProperties,assign,readonly) SUViewControllerScriptProperties * _cachedScriptProperties;
-@property(getter=_isEnteringForeground,assign,readonly) bool _enteringForeground;
-@property(getter=_pendingDialogs,assign,readonly) NSArray * _pendingDialogs;
-@property(getter=_restoredContext,assign,readonly) SUViewControllerContext * _restoredContext;
-@property(assign,retain) SUClientInterface * clientInterface;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) double defaultPNGExpirationTime;
-@property(assign,readonly) NSString * defaultPNGName;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) UIViewController * footerViewController;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIViewController * inputAccessoryViewController;
-@property(getter=isLoading,assign,readwrite) bool loading;
-@property(assign,retain) SUNavigationItem * navigationItem;
-@property(assign,readwrite) bool shouldAdjustContentOffsets;
-@property(assign,readwrite) bool shouldExcludeFromNavigationHistory;
-@property(assign,readwrite) bool shouldInvalidateForMemoryPurge;
-@property(assign,readwrite) bool showsLibraryButton;
-@property(assign,readonly) Class superclass;
-@property(getter=isVisible,assign,readonly) bool visible;
-@property(getter=isVisibleAndFrontmost,assign,readonly) bool visibleAndFrontmost;
+@property (getter=_cachedScriptProperties, nonatomic, readonly) SUViewControllerScriptProperties *_cachedScriptProperties;
+@property (getter=_isEnteringForeground, nonatomic, readonly) bool _enteringForeground;
+@property (getter=_pendingDialogs, nonatomic, readonly) NSArray *_pendingDialogs;
+@property (getter=_restoredContext, nonatomic, readonly) SUViewControllerContext *_restoredContext;
+@property (nonatomic, retain) SUClientInterface *clientInterface;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) double defaultPNGExpirationTime;
+@property (nonatomic, readonly) NSString *defaultPNGName;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) UIViewController *footerViewController;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIViewController *inputAccessoryViewController;
+@property (getter=isLoading, nonatomic) bool loading;
+@property (nonatomic, readonly, retain) SUNavigationItem *navigationItem;
+@property (nonatomic) bool shouldAdjustContentOffsets;
+@property (nonatomic) bool shouldExcludeFromNavigationHistory;
+@property (nonatomic) bool shouldInvalidateForMemoryPurge;
+@property (nonatomic) bool showsLibraryButton;
+@property (readonly) Class superclass;
+@property (getter=isVisible, nonatomic, readonly) bool visible;
+@property (getter=isVisibleAndFrontmost, nonatomic, readonly) bool visibleAndFrontmost;
 
 - (long long)ITunesStoreUIBarStyle;
 - (void)_applicationDidEnterBackgroundNotification:(id)arg1;

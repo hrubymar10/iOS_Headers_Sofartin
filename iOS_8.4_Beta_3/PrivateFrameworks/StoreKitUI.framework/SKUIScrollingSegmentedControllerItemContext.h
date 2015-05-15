@@ -20,8 +20,8 @@
     UIViewController *_viewController;
 }
 
-@property(assign,readwrite) <SKUIScrollingSegmentedControllerItemContextDelegate> * delegate;
-@property(assign,readonly) UIViewController * viewController;
+@property (nonatomic) <SKUIScrollingSegmentedControllerItemContextDelegate> *delegate;
+@property (nonatomic, readonly) UIViewController *viewController;
 
 - (void).cxx_destruct;
 - (void)_applyNewContentInset:(struct UIEdgeInsets { double x1; double x2; double x3; double x4; })arg1 withOldContentInset:(struct UIEdgeInsets { double x1; double x2; double x3; double x4; })arg2 toContentScrollView:(id)arg3;

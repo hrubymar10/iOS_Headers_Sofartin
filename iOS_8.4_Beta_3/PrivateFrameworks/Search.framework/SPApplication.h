@@ -9,11 +9,11 @@
     NSString *_longDisplayName;
 }
 
-@property(assign,retain) NSString * displayIdentifier;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSMutableArray * keywords;
-@property(assign,retain) NSString * longDisplayName;
-@property(assign,readonly) SPSearchResult * searchResult;
+@property (nonatomic, retain) NSString *displayIdentifier;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSMutableArray *keywords;
+@property (nonatomic, retain) NSString *longDisplayName;
+@property (nonatomic, readonly) SPSearchResult *searchResult;
 
 - (void)dealloc;
 - (id)description;

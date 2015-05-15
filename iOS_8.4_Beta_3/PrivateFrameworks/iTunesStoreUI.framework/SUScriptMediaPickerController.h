@@ -4,9 +4,9 @@
 
 @interface SUScriptMediaPickerController : SUScriptViewController
 
-@property(assign,readwrite) bool allowsPickingMultipleItems;
-@property(assign,readonly) NSArray * mediaTypes;
-@property(assign,retain) NSString * prompt;
+@property bool allowsPickingMultipleItems;
+@property (readonly) NSArray *mediaTypes;
+@property (retain) NSString *prompt;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

@@ -8,8 +8,8 @@
     struct StepByStepContext { } *_stepByStepContext;
 }
 
-@property(assign,readwrite) <StepByStepUIDelegate> * delegate;
-@property(assign,retain) NSDictionary * restoreRecommendation;
+@property <StepByStepUIDelegate> *delegate;
+@property (retain) NSDictionary *restoreRecommendation;
 
 + (id)stepByStepController;
 

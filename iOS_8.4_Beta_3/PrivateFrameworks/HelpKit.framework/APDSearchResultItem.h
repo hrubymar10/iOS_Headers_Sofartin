@@ -8,9 +8,9 @@
     long long _weight;
 }
 
-@property(assign,retain) NSString * identifier;
-@property(assign,readwrite) long long matchCount;
-@property(assign,readwrite) long long weight;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic) long long matchCount;
+@property (nonatomic) long long weight;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

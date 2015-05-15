@@ -13,14 +13,14 @@
     long long _type;
 }
 
-@property(assign,copy) NSDictionary * _parameterStorage;
-@property(assign,copy) NSDictionary * additionalInformation;
-@property(assign,retain) CAMInflightAsset * asset;
-@property(getter=isCompleted,assign,readwrite) bool completed;
-@property(assign,copy) NSDictionary * diagnostics;
-@property(assign,retain) NSMutableDictionary * metadata;
-@property(assign,copy) CAMCaptureRequest * request;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly, copy) NSDictionary *_parameterStorage;
+@property (nonatomic, copy) NSDictionary *additionalInformation;
+@property (nonatomic, retain) CAMInflightAsset *asset;
+@property (getter=isCompleted, nonatomic) bool completed;
+@property (nonatomic, copy) NSDictionary *diagnostics;
+@property (nonatomic, retain) NSMutableDictionary *metadata;
+@property (nonatomic, copy) CAMCaptureRequest *request;
+@property (nonatomic, readonly) long long type;
 
 - (void).cxx_destruct;
 - (id)_parameterStorage;

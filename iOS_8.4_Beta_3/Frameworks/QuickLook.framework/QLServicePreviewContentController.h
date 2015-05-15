@@ -18,14 +18,14 @@
     long long _sourceUUID;
 }
 
-@property(assign,readwrite) <QLPreviewContentDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <QLPreviewContentDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int previewMode;
-@property(assign,readonly) long long sourceUUID;
-@property(assign,readonly) Class superclass;
+@property <QLPreviewContentDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property <QLPreviewContentDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property int previewMode;
+@property (readonly) long long sourceUUID;
+@property (readonly) Class superclass;
 
 + (id)_exportedInterface;
 + (id)_remoteViewControllerInterface;

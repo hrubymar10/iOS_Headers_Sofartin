@@ -10,8 +10,8 @@
     NSMutableDictionary *_parametersDict;
 }
 
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSArray * parameterArray;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSArray *parameterArray;
 
 + (id)easeInEaseOutPath;
 + (id)easeInPath;

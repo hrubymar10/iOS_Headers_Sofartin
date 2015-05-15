@@ -34,17 +34,17 @@
     } _private;
 }
 
-@property(getter=isAlphaToCoverageEnabled,assign,readwrite) bool alphaToCoverageEnabled;
-@property(getter=isAlphaToOneEnabled,assign,readwrite) bool alphaToOneEnabled;
-@property(assign,readonly) MTLRenderPipelineColorAttachmentDescriptorArray * colorAttachments;
-@property(assign,readwrite) unsigned long long depthAttachmentPixelFormat;
-@property(assign,retain) <MTLFunction> * fragmentFunction;
-@property(assign,copy) NSString * label;
-@property(getter=isRasterizationEnabled,assign,readwrite) bool rasterizationEnabled;
-@property(assign,readwrite) unsigned long long sampleCount;
-@property(assign,readwrite) unsigned long long stencilAttachmentPixelFormat;
-@property(assign,copy) MTLVertexDescriptor * vertexDescriptor;
-@property(assign,retain) <MTLFunction> * vertexFunction;
+@property (getter=isAlphaToCoverageEnabled, nonatomic) bool alphaToCoverageEnabled;
+@property (getter=isAlphaToOneEnabled, nonatomic) bool alphaToOneEnabled;
+@property (readonly) MTLRenderPipelineColorAttachmentDescriptorArray *colorAttachments;
+@property (nonatomic) unsigned long long depthAttachmentPixelFormat;
+@property (nonatomic, retain) <MTLFunction> *fragmentFunction;
+@property (nonatomic, copy) NSString *label;
+@property (getter=isRasterizationEnabled, nonatomic) bool rasterizationEnabled;
+@property (nonatomic) unsigned long long sampleCount;
+@property (nonatomic) unsigned long long stencilAttachmentPixelFormat;
+@property (nonatomic, copy) MTLVertexDescriptor *vertexDescriptor;
+@property (nonatomic, retain) <MTLFunction> *vertexFunction;
 
 - (id).cxx_construct;
 - (const struct MTLRenderPipelineDescriptorPrivate { id x1; unsigned long long x2[8]; unsigned long long x3; unsigned long long x4; unsigned long long x5; unsigned long long x6; union { unsigned int x_7_1_1; float x_7_1_2; } x7; union { unsigned int x_8_1_1; struct { unsigned int x_2_2_1 : 1; unsigned int x_2_2_2 : 1; unsigned int x_2_2_3 : 1; unsigned int x_2_2_4 : 29; } x_8_1_2; } x8; id x9; unsigned long long x10; unsigned long long x11; unsigned long long x12; unsigned long long x13; id x14; id x15; id x16; }*)_descriptorPrivate;

@@ -6,17 +6,17 @@
     long long _type;
 }
 
-@property(assign,readonly) NSString * aceDialogPhaseValue;
-@property(getter=isCancelledDialogPhase,assign,readonly) bool cancelledDialogPhase;
-@property(getter=isClarificationDialogPhase,assign,readonly) bool clarificationDialogPhase;
-@property(getter=isConfirmationDialogPhase,assign,readonly) bool confirmationDialogPhase;
-@property(getter=isConfirmedDialogPhase,assign,readonly) bool confirmedDialogPhase;
-@property(getter=isErrorDialogPhase,assign,readonly) bool errorDialogPhase;
-@property(getter=isExpository,assign,readonly) bool expository;
-@property(getter=isReflectionDialogPhase,assign,readonly) bool reflectionDialogPhase;
-@property(getter=isTemporary,assign,readonly) bool temporary;
-@property(getter=_type,assign,readonly) long long type;
-@property(getter=isUserRequestDialogPhase,assign,readonly) bool userRequestDialogPhase;
+@property (nonatomic, readonly) NSString *aceDialogPhaseValue;
+@property (getter=isCancelledDialogPhase, nonatomic, readonly) bool cancelledDialogPhase;
+@property (getter=isClarificationDialogPhase, nonatomic, readonly) bool clarificationDialogPhase;
+@property (getter=isConfirmationDialogPhase, nonatomic, readonly) bool confirmationDialogPhase;
+@property (getter=isConfirmedDialogPhase, nonatomic, readonly) bool confirmedDialogPhase;
+@property (getter=isErrorDialogPhase, nonatomic, readonly) bool errorDialogPhase;
+@property (getter=isExpository, nonatomic, readonly) bool expository;
+@property (getter=isReflectionDialogPhase, nonatomic, readonly) bool reflectionDialogPhase;
+@property (getter=isTemporary, nonatomic, readonly) bool temporary;
+@property (getter=_type, nonatomic, readonly) long long type;
+@property (getter=isUserRequestDialogPhase, nonatomic, readonly) bool userRequestDialogPhase;
 
 + (id)_dialogPhaseWithType:(long long)arg1;
 + (id)acknowledgementDialogPhase;

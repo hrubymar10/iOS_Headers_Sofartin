@@ -7,8 +7,8 @@
     PSSearchEntry *_searchEntry;
 }
 
-@property(assign,readwrite) <PSSearchIndexOperationDelegate> * delegate;
-@property(assign,readonly) PSSearchEntry * searchEntry;
+@property (nonatomic) <PSSearchIndexOperationDelegate> *delegate;
+@property (nonatomic, readonly) PSSearchEntry *searchEntry;
 
 + (id)_bundleForSearchEntry:(id)arg1 thirdPartyApp:(bool*)arg2 checkManifest:(bool*)arg3;
 + (id)_loadSearchEntriesFromPlistForEntry:(id)arg1 bundle:(id)arg2;

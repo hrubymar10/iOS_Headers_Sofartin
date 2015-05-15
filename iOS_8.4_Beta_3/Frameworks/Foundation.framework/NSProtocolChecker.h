@@ -4,8 +4,8 @@
 
 @interface NSProtocolChecker : NSProxy
 
-@property(assign,readonly) Protocol * protocol;
-@property(assign,retain) NSObject * target;
+@property (readonly) Protocol *protocol;
+@property (readonly, retain) NSObject *target;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)protocolCheckerWithTarget:(id)arg1 protocol:(id)arg2;

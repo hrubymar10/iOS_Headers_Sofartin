@@ -9,10 +9,10 @@
     NSString *_minimumProductVersion;
 }
 
-@property(assign,readonly) long long deviceIdentifier;
-@property(assign,readonly) SSItemOfferDeviceError * incompatibleDeviceError;
-@property(assign,readonly) SSItemOfferDeviceError * incompatibleSystemError;
-@property(assign,readonly) NSString * minimumProductVersion;
+@property (nonatomic, readonly) long long deviceIdentifier;
+@property (nonatomic, readonly) SSItemOfferDeviceError *incompatibleDeviceError;
+@property (nonatomic, readonly) SSItemOfferDeviceError *incompatibleSystemError;
+@property (nonatomic, readonly) NSString *minimumProductVersion;
 
 - (void)dealloc;
 - (long long)deviceIdentifier;

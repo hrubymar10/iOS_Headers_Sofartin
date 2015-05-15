@@ -6,7 +6,7 @@
     NSArray *_itemImages;
 }
 
-@property(assign,readonly) NSArray * itemImages;
+@property (nonatomic, readonly) NSArray *itemImages;
 
 - (id)_imagesForSize:(struct CGSize { double x1; double x2; })arg1 scale:(double)arg2;
 - (id)_newImagesForDictionary:(id)arg1;

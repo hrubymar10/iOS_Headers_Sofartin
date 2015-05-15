@@ -11,16 +11,16 @@
     bool _rotationLocked;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool disablesSignIn;
-@property(assign,copy) id dismissCompletionHandler;
-@property(assign,retain) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long mode;
-@property(getter=isRotationLocked,assign,readwrite) bool rotationLocked;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id completionHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool disablesSignIn;
+@property (nonatomic, copy) id dismissCompletionHandler;
+@property (nonatomic, retain) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long mode;
+@property (getter=isRotationLocked, nonatomic) bool rotationLocked;
+@property (readonly) Class superclass;
 
 + (bool)_preventsAppearanceProxyCustomization;
 

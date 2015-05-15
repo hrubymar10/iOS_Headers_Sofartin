@@ -16,7 +16,7 @@
     UIWebSelectionGraph *_sharedGraph;
 }
 
-@property(assign,retain) UIWebSelection * selection;
+@property (retain) UIWebSelection *selection;
 
 - (void)dealloc;
 - (id)initWithSelection:(id)arg1 inGraph:(id)arg2;

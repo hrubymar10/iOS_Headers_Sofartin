@@ -22,26 +22,26 @@
     NSData *_zilchPoints;
 }
 
-@property(assign,retain) GEOAddress * address;
-@property(assign,retain) NSMutableArray * businessCategoryFilters;
-@property(assign,readonly) bool hasAddress;
-@property(assign,readonly) bool hasIndexFilter;
-@property(assign,readwrite) bool hasIsStrictMapRegion;
-@property(assign,readwrite) bool hasMaxResultCount;
-@property(assign,readonly) bool hasSearchString;
-@property(assign,readwrite) bool hasSortOrder;
-@property(assign,readwrite) bool hasStructuredSearch;
-@property(assign,readonly) bool hasViewportInfo;
-@property(assign,readonly) bool hasZilchPoints;
-@property(assign,retain) GEOPDIndexQueryNode * indexFilter;
-@property(assign,readwrite) bool isStrictMapRegion;
-@property(assign,readwrite) unsigned int maxResultCount;
-@property(assign,retain) NSString * searchString;
-@property(assign,retain) NSMutableArray * searchSubstringDescriptors;
-@property(assign,readwrite) int sortOrder;
-@property(assign,readwrite) bool structuredSearch;
-@property(assign,retain) GEOPDViewportInfo * viewportInfo;
-@property(assign,retain) NSData * zilchPoints;
+@property (nonatomic, retain) GEOAddress *address;
+@property (nonatomic, retain) NSMutableArray *businessCategoryFilters;
+@property (nonatomic, readonly) bool hasAddress;
+@property (nonatomic, readonly) bool hasIndexFilter;
+@property (nonatomic) bool hasIsStrictMapRegion;
+@property (nonatomic) bool hasMaxResultCount;
+@property (nonatomic, readonly) bool hasSearchString;
+@property (nonatomic) bool hasSortOrder;
+@property (nonatomic) bool hasStructuredSearch;
+@property (nonatomic, readonly) bool hasViewportInfo;
+@property (nonatomic, readonly) bool hasZilchPoints;
+@property (nonatomic, retain) GEOPDIndexQueryNode *indexFilter;
+@property (nonatomic) bool isStrictMapRegion;
+@property (nonatomic) unsigned int maxResultCount;
+@property (nonatomic, retain) NSString *searchString;
+@property (nonatomic, retain) NSMutableArray *searchSubstringDescriptors;
+@property (nonatomic) int sortOrder;
+@property (nonatomic) bool structuredSearch;
+@property (nonatomic, retain) GEOPDViewportInfo *viewportInfo;
+@property (nonatomic, retain) NSData *zilchPoints;
 
 - (void)addBusinessCategoryFilter:(id)arg1;
 - (void)addSearchSubstringDescriptor:(id)arg1;

@@ -4,18 +4,18 @@
 
 @interface SUScriptNavigationBar : SUScriptObject
 
-@property(assign,readonly) SUScriptNavigationItem * backNavigationItem;
-@property(assign,readwrite) long long barStyle;
-@property(assign,readonly) long long barStyleBlack;
-@property(assign,readonly) long long barStyleDefault;
-@property(assign,retain) SUScriptButton * leftButton;
-@property(assign,retain) <SUScriptNavigationItem> * leftItem;
-@property(assign,readonly) NSArray * navigationItems;
-@property(assign,retain) NSString * prompt;
-@property(assign,retain) SUScriptButton * rightButton;
-@property(assign,retain) <SUScriptNavigationItem> * rightItem;
-@property(assign,readonly) SUScriptNavigationItem * topNavigationItem;
-@property(assign,copy) id translucent;
+@property (readonly) SUScriptNavigationItem *backNavigationItem;
+@property long long barStyle;
+@property (readonly) long long barStyleBlack;
+@property (readonly) long long barStyleDefault;
+@property (retain) SUScriptButton *leftButton;
+@property (retain) <SUScriptNavigationItem> *leftItem;
+@property (readonly) NSArray *navigationItems;
+@property (retain) NSString *prompt;
+@property (retain) SUScriptButton *rightButton;
+@property (retain) <SUScriptNavigationItem> *rightItem;
+@property (readonly) SUScriptNavigationItem *topNavigationItem;
+@property (copy) id translucent;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

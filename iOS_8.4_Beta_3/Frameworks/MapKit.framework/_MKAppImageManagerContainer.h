@@ -8,9 +8,9 @@
     NSString *_urlString;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,retain) NSMutableData * data;
-@property(assign,copy) NSString * urlString;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic, retain) NSMutableData *data;
+@property (nonatomic, copy) NSString *urlString;
 
 - (void).cxx_destruct;
 - (id)completionHandler;

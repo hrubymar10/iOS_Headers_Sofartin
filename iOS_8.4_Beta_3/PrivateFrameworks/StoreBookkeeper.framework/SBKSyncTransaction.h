@@ -13,13 +13,13 @@
     long long _type;
 }
 
-@property(assign,readonly) long long conflictDetectionType;
-@property(assign,readonly) NSArray * keysToDelete;
-@property(assign,readonly) NSArray * keysToUpdate;
-@property(assign,copy) NSString * syncAnchor;
-@property(assign,readonly) NSURL * syncRequestURL;
-@property(assign,readwrite) <SBKSyncTransactionProcessing> * transactionProcessor;
-@property(assign,readonly) long long type;
+@property (readonly) long long conflictDetectionType;
+@property (readonly) NSArray *keysToDelete;
+@property (readonly) NSArray *keysToUpdate;
+@property (readonly, copy) NSString *syncAnchor;
+@property (readonly) NSURL *syncRequestURL;
+@property <SBKSyncTransactionProcessing> *transactionProcessor;
+@property (readonly) long long type;
 
 - (void).cxx_destruct;
 - (void)_validateTransactionProcessor:(id)arg1;

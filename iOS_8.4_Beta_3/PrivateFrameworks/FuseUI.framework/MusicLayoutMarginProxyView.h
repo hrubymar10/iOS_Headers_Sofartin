@@ -6,7 +6,7 @@
     <MusicLayoutMarginProxyViewDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <MusicLayoutMarginProxyViewDelegate> * delegate;
+@property (nonatomic) <MusicLayoutMarginProxyViewDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)delegate;

@@ -6,7 +6,7 @@
     UIWebDateTimePopoverViewController *_webDateTimeViewController;
 }
 
-@property(assign,retain) UIWebDateTimePopoverViewController * _webDateTimeViewController;
+@property (nonatomic, retain) UIWebDateTimePopoverViewController *_webDateTimeViewController;
 
 - (id)_webDateTimeViewController;
 - (void)clear:(id)arg1;

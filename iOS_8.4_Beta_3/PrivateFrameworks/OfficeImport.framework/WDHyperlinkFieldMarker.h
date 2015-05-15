@@ -8,9 +8,9 @@
     NSString *mLink;
 }
 
-@property(assign,retain) NSString * fragment;
-@property(assign,readwrite) bool internalLink;
-@property(assign,retain) NSString * link;
+@property (nonatomic, retain) NSString *fragment;
+@property (nonatomic) bool internalLink;
+@property (nonatomic, retain) NSString *link;
 
 - (void)dealloc;
 - (id)fragment;

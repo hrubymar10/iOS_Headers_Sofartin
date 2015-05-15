@@ -6,9 +6,9 @@
     NSArray *_propertyItems;
 }
 
-@property(assign,readonly) bool canPerformAction;
-@property(assign,readwrite) <ABPropertyActionDelegate> * delegate;
-@property(assign,copy) NSArray * propertyItems;
+@property (nonatomic, readonly) bool canPerformAction;
+@property (nonatomic) <ABPropertyActionDelegate> *delegate;
+@property (nonatomic, copy) NSArray *propertyItems;
 
 + (void)performDefaultActionForItem:(id)arg1 sender:(id)arg2;
 

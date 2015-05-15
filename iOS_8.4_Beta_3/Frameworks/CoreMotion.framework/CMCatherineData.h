@@ -7,8 +7,8 @@
     double _confidence;
 }
 
-@property(assign,readonly) double catherine;
-@property(assign,readonly) double confidence;
+@property (nonatomic, readonly) double catherine;
+@property (nonatomic, readonly) double confidence;
 
 + (bool)supportsSecureCoding;
 

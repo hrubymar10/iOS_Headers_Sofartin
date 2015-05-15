@@ -15,22 +15,22 @@
     bool _showMorePhotosButton;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool hasAttribution;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MKMapItem * mapItem;
-@property(assign,readwrite) _MKPlaceViewController * owner;
-@property(assign,retain) _MKPlacePhotosCollectionView * photoGrid;
-@property(assign,readwrite) double photoWidth;
-@property(assign,readwrite) <MKPlaceCardPhotosControllerDelegate> * photosControllerDelegate;
-@property(assign,readwrite) unsigned long long photosCount;
-@property(assign,readonly) bool requiresPreferredContentSizeInStackingView;
-@property(assign,readwrite) bool showAddPhotoButton;
-@property(assign,readwrite) bool showAttribution;
-@property(assign,readonly) bool showAttributionButtons;
-@property(assign,readwrite) bool showMorePhotosButton;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool hasAttribution;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MKMapItem *mapItem;
+@property (nonatomic) _MKPlaceViewController *owner;
+@property (nonatomic, retain) _MKPlacePhotosCollectionView *photoGrid;
+@property (nonatomic) double photoWidth;
+@property (nonatomic) <MKPlaceCardPhotosControllerDelegate> *photosControllerDelegate;
+@property (nonatomic) unsigned long long photosCount;
+@property (nonatomic, readonly) bool requiresPreferredContentSizeInStackingView;
+@property (nonatomic) bool showAddPhotoButton;
+@property (nonatomic) bool showAttribution;
+@property (nonatomic, readonly) bool showAttributionButtons;
+@property (nonatomic) bool showMorePhotosButton;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_addPhoto;

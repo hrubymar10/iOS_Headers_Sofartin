@@ -18,9 +18,9 @@
     unsigned int _transfersTrackingFromParentScrollView;
 }
 
-@property(getter=_caughtDeceleratingScrollView,assign,readonly) bool caughtDeceleratingScrollView;
-@property(getter=isDirectionalLockEnabled,assign,readwrite) bool directionalLockEnabled;
-@property(assign,readwrite) UIScrollView * scrollView;
+@property (getter=_caughtDeceleratingScrollView, nonatomic, readonly) bool caughtDeceleratingScrollView;
+@property (getter=isDirectionalLockEnabled, nonatomic) bool directionalLockEnabled;
+@property (nonatomic) UIScrollView *scrollView;
 
 - (struct CGPoint { double x1; double x2; })_adjustSceneReferenceLocation:(struct CGPoint { double x1; double x2; })arg1;
 - (bool)_canTransferTrackingFromParentPagingScrollView;

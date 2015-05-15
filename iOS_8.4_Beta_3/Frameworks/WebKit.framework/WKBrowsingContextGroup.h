@@ -10,15 +10,15 @@
     } _pageGroup;
 }
 
-@property(assign,readonly) struct Object { int (**x1)(); id x2; }* _apiObject;
-@property(assign,readonly) struct OpaqueWKPageGroup { }* _pageGroupRef;
-@property(assign,readwrite) bool allowsJavaScript;
-@property(assign,readwrite) bool allowsPlugIns;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool privateBrowsingEnabled;
-@property(assign,readonly) Class superclass;
+@property (readonly) struct Object { int (**x1)(); id x2; }*_apiObject;
+@property (readonly) struct OpaqueWKPageGroup { }*_pageGroupRef;
+@property bool allowsJavaScript;
+@property bool allowsPlugIns;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property bool privateBrowsingEnabled;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (struct Object { int (**x1)(); id x2; }*)_apiObject;

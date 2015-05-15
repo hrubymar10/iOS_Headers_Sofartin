@@ -17,18 +17,18 @@
     bool _stopMMCSThread;
 }
 
-@property(assign,readwrite) CKDMMCS * MMCS;
-@property(assign,readwrite) struct __MMCSEngine { }* MMCSEngine;
-@property(assign,retain) NSString * applicationBundleID;
-@property(assign,readwrite) unsigned int maxChunkCountForSection;
-@property(assign,retain) NSString * path;
-@property(assign,retain) NSString * protocolVersion;
-@property(assign,readwrite) long long refCount;
-@property(assign,retain) NSRunLoop * runLoop;
-@property(assign,retain) NSString * runLoopMode;
-@property(assign,retain) NSObject<OS_dispatch_semaphore> * semaphore;
-@property(assign,readwrite) long long state;
-@property(assign,readwrite) bool stopMMCSThread;
+@property (nonatomic) CKDMMCS *MMCS;
+@property (nonatomic) struct __MMCSEngine { }*MMCSEngine;
+@property (nonatomic, retain) NSString *applicationBundleID;
+@property (nonatomic) unsigned int maxChunkCountForSection;
+@property (nonatomic, retain) NSString *path;
+@property (nonatomic, retain) NSString *protocolVersion;
+@property (nonatomic) long long refCount;
+@property (nonatomic, retain) NSRunLoop *runLoop;
+@property (nonatomic, retain) NSString *runLoopMode;
+@property (nonatomic, retain) NSObject<OS_dispatch_semaphore> *semaphore;
+@property (nonatomic) long long state;
+@property (nonatomic) bool stopMMCSThread;
 
 + (id)_appID;
 + (id)setupMMCSEngineWithApplicationBundleID:(id)arg1 path:(id)arg2 error:(id*)arg3;

@@ -24,12 +24,12 @@
     unsigned int usedGraphicCount;
 }
 
-@property(assign,readonly) unsigned int backgroundGraphicCount;
-@property(assign,readwrite) unsigned int columnCount;
-@property(assign,readonly) double* columnX;
-@property(assign,readwrite) unsigned int rowCount;
-@property(assign,readonly) double* rowY;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } tableBounds;
+@property (nonatomic, readonly) unsigned int backgroundGraphicCount;
+@property (nonatomic) unsigned int columnCount;
+@property (nonatomic, readonly) double*columnX;
+@property (nonatomic) unsigned int rowCount;
+@property (nonatomic, readonly) double*rowY;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } tableBounds;
 
 - (struct CGColor { }*)backgroundColor;
 - (id)backgroundGraphicAtIndex:(unsigned int)arg1;

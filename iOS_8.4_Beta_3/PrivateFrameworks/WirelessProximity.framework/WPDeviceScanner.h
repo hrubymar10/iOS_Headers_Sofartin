@@ -11,14 +11,14 @@
     XPCClient *_xpcClient;
 }
 
-@property(assign,retain) NSMutableDictionary * activeScans;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableArray * liveDevices;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSMutableDictionary *activeScans;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableArray *liveDevices;
+@property (retain) NSObject<OS_dispatch_queue> *queue;
+@property long long state;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)activeScans;

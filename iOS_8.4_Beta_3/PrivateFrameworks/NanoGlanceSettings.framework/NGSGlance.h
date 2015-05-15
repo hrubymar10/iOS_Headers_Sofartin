@@ -14,16 +14,16 @@
     NSString *_sockPuppetIdentifier;
 }
 
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,copy) NSString * appBundleIdentifier;
-@property(assign,readwrite) bool cannotBeDisabled;
-@property(getter=isDefaultGlance,assign,readwrite) bool defaultGlance;
-@property(assign,copy) NSString * glanceBundleIdentifier;
-@property(assign,readonly) NSString * glanceIdentifier;
-@property(getter=isInstalled,assign,readwrite) bool installed;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) bool prelaunch;
-@property(assign,copy) NSString * sockPuppetIdentifier;
+@property (getter=isActive, nonatomic) bool active;
+@property (nonatomic, copy) NSString *appBundleIdentifier;
+@property (nonatomic) bool cannotBeDisabled;
+@property (getter=isDefaultGlance, nonatomic) bool defaultGlance;
+@property (nonatomic, copy) NSString *glanceBundleIdentifier;
+@property (nonatomic, readonly) NSString *glanceIdentifier;
+@property (getter=isInstalled, nonatomic) bool installed;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) bool prelaunch;
+@property (nonatomic, copy) NSString *sockPuppetIdentifier;
 
 - (void).cxx_destruct;
 - (id)appBundleIdentifier;

@@ -6,7 +6,7 @@
     <TSPProxyObjectMapping> *_proxyObjectMapping;
 }
 
-@property(assign,readwrite) <TSPProxyObjectMapping> * proxyObjectMapping;
+@property (nonatomic) <TSPProxyObjectMapping> *proxyObjectMapping;
 
 - (void).cxx_destruct;
 - (bool)isForCopy;

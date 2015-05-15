@@ -7,10 +7,10 @@
     CKDPLikeInfo *_likeInfo;
 }
 
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,readonly) bool hasLikeInfo;
-@property(assign,retain) CKDPCommentedOnId * identifier;
-@property(assign,retain) CKDPLikeInfo * likeInfo;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, readonly) bool hasLikeInfo;
+@property (nonatomic, retain) CKDPCommentedOnId *identifier;
+@property (nonatomic, retain) CKDPLikeInfo *likeInfo;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

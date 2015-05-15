@@ -15,15 +15,15 @@
     MusicUpNextQueueDataSource *_queueDataSource;
 }
 
-@property(assign,readonly) NSArray * compositeDataSources;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicUpNextAggregateDataSourceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hidesNowPlaying;
-@property(assign,retain) MPUAVPlayer * player;
-@property(assign,readwrite) UIViewController * presentingViewController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *compositeDataSources;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicUpNextAggregateDataSourceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hidesNowPlaying;
+@property (nonatomic, retain) MPUAVPlayer *player;
+@property (nonatomic) UIViewController *presentingViewController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_dataSourceForSection:(long long)arg1;

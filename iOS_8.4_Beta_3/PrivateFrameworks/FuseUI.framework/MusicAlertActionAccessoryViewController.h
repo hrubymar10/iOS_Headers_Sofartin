@@ -12,10 +12,10 @@
     UIAlertControllerVisualStyle *_visualStyle;
 }
 
-@property(assign,retain) UIView * accessoryView;
-@property(assign,copy) NSString * actionDescriptiveText;
-@property(assign,copy) NSString * actionTitle;
-@property(assign,retain) UIColor * actionTitleTextColor;
+@property (nonatomic, retain) UIView *accessoryView;
+@property (nonatomic, copy) NSString *actionDescriptiveText;
+@property (nonatomic, copy) NSString *actionTitle;
+@property (nonatomic, retain) UIColor *actionTitleTextColor;
 
 - (void).cxx_destruct;
 - (void)_configureActionDescriptiveLabel;

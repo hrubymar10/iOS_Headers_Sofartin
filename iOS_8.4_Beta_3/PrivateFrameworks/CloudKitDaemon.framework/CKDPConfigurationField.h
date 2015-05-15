@@ -7,10 +7,10 @@
     CKDPConfigurationFieldValue *_value;
 }
 
-@property(assign,readonly) bool hasName;
-@property(assign,readonly) bool hasValue;
-@property(assign,retain) NSString * name;
-@property(assign,retain) CKDPConfigurationFieldValue * value;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic, readonly) bool hasValue;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) CKDPConfigurationFieldValue *value;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

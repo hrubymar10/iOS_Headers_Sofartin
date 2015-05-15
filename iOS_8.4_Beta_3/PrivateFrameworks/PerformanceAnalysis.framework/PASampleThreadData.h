@@ -21,24 +21,24 @@
     unsigned long long waitEvent;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasDispatchQueue;
-@property(assign,readonly) bool hasDispatchSerial;
-@property(assign,readonly) bool hasValidPowerstatsFlags;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isAbortingInterruptibleWaits;
-@property(assign,readonly) bool isAbortingInterruptibleWaitsAtSafePoints;
-@property(assign,readonly) bool isDarwinBG;
-@property(assign,readonly) bool isHaltedAtTermination;
-@property(assign,readonly) bool isProcessorIdleThread;
-@property(assign,readonly) bool isRunning;
-@property(assign,readonly) bool isStopped;
-@property(assign,readonly) bool isWaiting;
-@property(assign,readonly) bool isWaitingUninterruptibly;
-@property(assign,readonly) unsigned int powerstatsFlags;
-@property(assign,readonly) bool stackTracesHaveNoFramePointers;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) bool hasDispatchQueue;
+@property (readonly) bool hasDispatchSerial;
+@property (readonly) bool hasValidPowerstatsFlags;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isAbortingInterruptibleWaits;
+@property (readonly) bool isAbortingInterruptibleWaitsAtSafePoints;
+@property (readonly) bool isDarwinBG;
+@property (readonly) bool isHaltedAtTermination;
+@property (readonly) bool isProcessorIdleThread;
+@property (readonly) bool isRunning;
+@property (readonly) bool isStopped;
+@property (readonly) bool isWaiting;
+@property (readonly) bool isWaitingUninterruptibly;
+@property (readonly) unsigned int powerstatsFlags;
+@property (readonly) bool stackTracesHaveNoFramePointers;
+@property (readonly) Class superclass;
 
 + (id)classDictionaryKey;
 + (id)newInstanceWithoutReferencesFromBufferPosition:(const void*)arg1;

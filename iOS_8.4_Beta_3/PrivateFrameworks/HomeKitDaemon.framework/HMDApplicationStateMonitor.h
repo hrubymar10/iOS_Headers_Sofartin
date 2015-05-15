@@ -9,10 +9,10 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) BKSApplicationStateMonitor * bkAppStateMonitor;
-@property(assign,copy) id notificationHandler;
-@property(assign,retain) NSObject<OS_dispatch_queue> * notificationQueue;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) BKSApplicationStateMonitor *bkAppStateMonitor;
+@property (nonatomic, copy) id notificationHandler;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *notificationQueue;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 + (id)applicationStateDescription:(unsigned long long)arg1;
 

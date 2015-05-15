@@ -6,7 +6,7 @@
     bool _showingTagline;
 }
 
-@property(assign,readwrite) bool showingTagline;
+@property (nonatomic) bool showingTagline;
 
 - (void)layoutAnimated:(bool)arg1;
 - (void)setShowingTagline:(bool)arg1;

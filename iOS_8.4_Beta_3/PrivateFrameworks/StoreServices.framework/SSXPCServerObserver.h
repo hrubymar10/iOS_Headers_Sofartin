@@ -7,8 +7,8 @@
     SEL _selector;
 }
 
-@property(assign,readwrite) id observer;
-@property(assign,readwrite) SEL selector;
+@property (nonatomic) id observer;
+@property (nonatomic) SEL selector;
 
 - (unsigned long long)hash;
 - (bool)isEqual:(id)arg1;

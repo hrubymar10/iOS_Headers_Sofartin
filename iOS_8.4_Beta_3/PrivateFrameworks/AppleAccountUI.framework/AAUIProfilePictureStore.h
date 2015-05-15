@@ -13,8 +13,8 @@
     long long _pictureStyle;
 }
 
-@property(assign,readwrite) double pictureDiameter;
-@property(assign,readwrite) long long pictureStyle;
+@property (nonatomic) double pictureDiameter;
+@property (nonatomic) long long pictureStyle;
 
 - (void).cxx_destruct;
 - (id)_correctlySizedImageFromImage:(id)arg1;

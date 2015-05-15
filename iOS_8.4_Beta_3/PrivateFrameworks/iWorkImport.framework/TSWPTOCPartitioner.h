@@ -6,7 +6,7 @@
     TSWPTOCInfo *_info;
 }
 
-@property(assign,readonly) TSWPTOCInfo * info;
+@property (nonatomic, readonly) TSWPTOCInfo *info;
 
 - (bool)didHint:(id)arg1 syncWithNextHint:(id)arg2 horizontally:(bool)arg3 delta:(int)arg4;
 - (id)hintForLayout:(id)arg1;

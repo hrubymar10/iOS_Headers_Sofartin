@@ -9,9 +9,9 @@
     int remoteDataNotificationToken;
 }
 
-@property(assign,readonly) unsigned int identifier;
-@property(assign,readonly) NSString * modelIdentifier;
-@property(assign,readonly) CDSession * session;
+@property (readonly) unsigned int identifier;
+@property (readonly) NSString *modelIdentifier;
+@property (readonly) CDSession *session;
 
 - (void).cxx_destruct;
 - (void)dealloc;

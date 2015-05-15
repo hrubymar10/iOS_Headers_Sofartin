@@ -8,13 +8,13 @@
     long long _missingItemCount;
 }
 
-@property(assign,readonly) NSArray * carouselItems;
-@property(assign,readonly) double cycleInterval;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) SKUICarouselViewElement * viewElement;
+@property (nonatomic, readonly) NSArray *carouselItems;
+@property (nonatomic, readonly) double cycleInterval;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) SKUICarouselViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (id)carouselItems;

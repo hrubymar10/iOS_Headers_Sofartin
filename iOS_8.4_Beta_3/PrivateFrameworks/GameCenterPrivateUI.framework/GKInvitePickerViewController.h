@@ -7,8 +7,8 @@
     GKInvitePickerDataSource *_invitePickerDataSource;
 }
 
-@property(assign,retain) NSSet * hiddenPlayers;
-@property(assign,retain) GKInvitePickerDataSource * invitePickerDataSource;
+@property (nonatomic, retain) NSSet *hiddenPlayers;
+@property (nonatomic, retain) GKInvitePickerDataSource *invitePickerDataSource;
 
 - (void)configureDataSource;
 - (void)configureNearbyDataSource;

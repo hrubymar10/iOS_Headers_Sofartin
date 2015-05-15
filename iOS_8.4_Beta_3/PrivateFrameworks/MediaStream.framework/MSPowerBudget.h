@@ -19,23 +19,23 @@
     MSPBTimerContext *_workQueuePushTimerContext;
 }
 
-@property(assign,readwrite) <MSPowerBudgetDelegate> * delegate;
-@property(getter=isFileTransferAllowed,assign,readonly) bool fileTransferAllowed;
-@property(assign,retain) NSString * focusAlbumGUID;
-@property(assign,retain) NSString * focusAssetCollectionGUID;
-@property(getter=hasForegroundFocus,assign,readonly) bool foregroundFocus;
-@property(assign,readonly) bool hasActiveTimers;
-@property(assign,readwrite) double maxActiveTimeAfterGlobalResetSync;
-@property(assign,readwrite) double maxActiveTimeAfterLossOfForeground;
-@property(assign,readwrite) double maxActiveTimeAfterPush;
-@property(assign,retain) NSString * personID;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
-@property(assign,retain) MSPBTimerContext * workQueueGlobalResetSyncTimerContext;
-@property(setter=workQueueSetExternalPowered:,assign,readwrite) bool workQueueIsExternalPowered;
-@property(setter=workQueueSetFileTransferAllowed:,assign,readwrite) bool workQueueIsFileTransferAllowed;
-@property(setter=workQueueSetForeground:,assign,readwrite) bool workQueueIsForeground;
-@property(assign,retain) MSPBTimerContext * workQueuePostForegroundTimerContext;
-@property(assign,retain) MSPBTimerContext * workQueuePushTimerContext;
+@property (nonatomic) <MSPowerBudgetDelegate> *delegate;
+@property (getter=isFileTransferAllowed, nonatomic, readonly) bool fileTransferAllowed;
+@property (nonatomic, retain) NSString *focusAlbumGUID;
+@property (nonatomic, retain) NSString *focusAssetCollectionGUID;
+@property (getter=hasForegroundFocus, nonatomic, readonly) bool foregroundFocus;
+@property (nonatomic, readonly) bool hasActiveTimers;
+@property (nonatomic) double maxActiveTimeAfterGlobalResetSync;
+@property (nonatomic) double maxActiveTimeAfterLossOfForeground;
+@property (nonatomic) double maxActiveTimeAfterPush;
+@property (nonatomic, retain) NSString *personID;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
+@property (nonatomic, retain) MSPBTimerContext *workQueueGlobalResetSyncTimerContext;
+@property (setter=workQueueSetExternalPowered:, nonatomic) bool workQueueIsExternalPowered;
+@property (setter=workQueueSetFileTransferAllowed:, nonatomic) bool workQueueIsFileTransferAllowed;
+@property (setter=workQueueSetForeground:, nonatomic) bool workQueueIsForeground;
+@property (nonatomic, retain) MSPBTimerContext *workQueuePostForegroundTimerContext;
+@property (nonatomic, retain) MSPBTimerContext *workQueuePushTimerContext;
 
 - (void).cxx_destruct;
 - (void)_globalResetSyncTimerDidExpire:(id)arg1;

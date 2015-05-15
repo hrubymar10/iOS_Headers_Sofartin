@@ -18,23 +18,23 @@
     bool _useFamilyCirclePhotosLoaded;
 }
 
-@property(assign,readwrite) void* addressBook;
-@property(assign,retain) NSArray * allFollowersHandles;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableDictionary * dsidToFamilyPhoto;
-@property(assign,retain) NSArray * familyMembers;
-@property(assign,retain) NSArray * familySpecifiers;
-@property(assign,retain) NSArray * followersHandles;
-@property(assign,retain) NSArray * followersSpecifiers;
-@property(assign,retain) UIAlertView * genericErrorAlert;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * hashedFamilyDsids;
-@property(assign,readwrite) bool isMyLocationEnabled;
-@property(assign,retain) FMFHandle * lastSelectedHandle;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useFamilyCirclePhotos;
-@property(assign,readwrite) bool useFamilyCirclePhotosLoaded;
+@property (nonatomic) void*addressBook;
+@property (nonatomic, retain) NSArray *allFollowersHandles;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMutableDictionary *dsidToFamilyPhoto;
+@property (nonatomic, retain) NSArray *familyMembers;
+@property (nonatomic, retain) NSArray *familySpecifiers;
+@property (nonatomic, retain) NSArray *followersHandles;
+@property (nonatomic, retain) NSArray *followersSpecifiers;
+@property (nonatomic, retain) UIAlertView *genericErrorAlert;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *hashedFamilyDsids;
+@property (nonatomic) bool isMyLocationEnabled;
+@property (nonatomic, retain) FMFHandle *lastSelectedHandle;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useFamilyCirclePhotos;
+@property (nonatomic) bool useFamilyCirclePhotosLoaded;
 
 - (void).cxx_destruct;
 - (id)_followerHandleWithHashedDSID:(id)arg1;

@@ -12,7 +12,7 @@
     bool _usesAnonymousConnection;
 }
 
-@property(getter=usesAnonymousConnection,assign,readwrite) bool usesAnonymousConnection;
+@property (getter=usesAnonymousConnection, nonatomic) bool usesAnonymousConnection;
 
 - (void)_addClientConnection:(id)arg1;
 - (id)_clients;

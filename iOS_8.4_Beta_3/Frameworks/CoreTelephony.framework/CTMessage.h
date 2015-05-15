@@ -19,19 +19,19 @@
     NSUUID *_uuid;
 }
 
-@property(assign,copy) NSString * contentType;
-@property(assign,copy) NSString * countryCode;
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) NSArray * items;
-@property(assign,readwrite) unsigned int messageId;
-@property(assign,readwrite) int messageType;
-@property(assign,readonly) NSDictionary * rawHeaders;
-@property(assign,readonly) NSArray * recipients;
-@property(assign,readonly) unsigned int replaceMessage;
-@property(assign,copy) NSObject<CTMessageAddress><NSCopying> * sender;
-@property(assign,copy) CTPhoneNumber * serviceCenter;
-@property(assign,copy) NSString * subject;
-@property(assign,retain) NSUUID * uniqueIdentifier;
+@property (nonatomic, copy) NSString *contentType;
+@property (nonatomic, readonly, copy) NSString *countryCode;
+@property (readonly) NSDate *date;
+@property (readonly) NSArray *items;
+@property (nonatomic) unsigned int messageId;
+@property (nonatomic) int messageType;
+@property (readonly) NSDictionary *rawHeaders;
+@property (readonly) NSArray *recipients;
+@property (readonly) unsigned int replaceMessage;
+@property (nonatomic, copy) NSObject<CTMessageAddress><NSCopying> *sender;
+@property (nonatomic, copy) CTPhoneNumber *serviceCenter;
+@property (nonatomic, copy) NSString *subject;
+@property (nonatomic, retain) NSUUID *uniqueIdentifier;
 
 - (void)addContentTypeParameterWithName:(id)arg1 value:(id)arg2;
 - (id)addData:(id)arg1 withContentType:(id)arg2;

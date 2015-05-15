@@ -6,7 +6,7 @@
     bool _allowsCachingHighQualityImages;
 }
 
-@property(assign,readwrite) bool allowsCachingHighQualityImages;
+@property (nonatomic) bool allowsCachingHighQualityImages;
 
 - (id)_fireCloudDownloadOfImageForAsset:(id)arg1 format:(int)arg2 optimalSourcePixelSize:(struct CGSize { double x1; double x2; })arg3 completionHandler:(id)arg4;
 - (id)_highPriorityRequestWaitGroup;

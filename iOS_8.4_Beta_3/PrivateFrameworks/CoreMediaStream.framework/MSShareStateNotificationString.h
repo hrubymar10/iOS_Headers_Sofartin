@@ -8,9 +8,9 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSString * body;
-@property(assign,retain) NSString * sourcePersonID;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSString *body;
+@property (nonatomic, retain) NSString *sourcePersonID;
+@property (nonatomic, retain) NSString *title;
 
 + (id)notificationStringsWithTitle:(id)arg1 body:(id)arg2 sourcePersonID:(id)arg3;
 

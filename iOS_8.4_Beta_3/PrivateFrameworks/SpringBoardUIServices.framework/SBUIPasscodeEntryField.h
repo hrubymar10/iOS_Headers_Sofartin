@@ -11,14 +11,14 @@
     UITextField *_textField;
 }
 
-@property(assign,retain) UIColor * customBackgroundColor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SBUIPasscodeEntryFieldDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * stringValue;
-@property(assign,readonly) Class superclass;
-@property(getter=_textField,assign,readonly) UITextField * textField;
+@property (nonatomic, retain) UIColor *customBackgroundColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SBUIPasscodeEntryFieldDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *stringValue;
+@property (readonly) Class superclass;
+@property (getter=_textField, nonatomic, readonly) UITextField *textField;
 
 - (void)_appendString:(id)arg1;
 - (void)_autofillForMesaWithCompletion:(id)arg1;

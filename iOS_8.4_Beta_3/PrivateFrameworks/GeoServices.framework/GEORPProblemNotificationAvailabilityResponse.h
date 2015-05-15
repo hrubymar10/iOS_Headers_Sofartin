@@ -14,10 +14,10 @@
     } _supportedProblemTypes;
 }
 
-@property(assign,readwrite) bool hasStatusCode;
-@property(assign,readwrite) int statusCode;
-@property(assign,readonly) int* supportedProblemTypes;
-@property(assign,readonly) unsigned long long supportedProblemTypesCount;
+@property (nonatomic) bool hasStatusCode;
+@property (nonatomic) int statusCode;
+@property (nonatomic, readonly) int*supportedProblemTypes;
+@property (nonatomic, readonly) unsigned long long supportedProblemTypesCount;
 
 - (void)addSupportedProblemType:(int)arg1;
 - (void)clearSupportedProblemTypes;

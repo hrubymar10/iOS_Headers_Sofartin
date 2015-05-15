@@ -4,7 +4,7 @@
 
 @interface SAAssistantDestroyed : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * assistantId;
+@property (nonatomic, copy) NSString *assistantId;
 
 + (id)assistantDestroyed;
 + (id)assistantDestroyedWithDictionary:(id)arg1 context:(id)arg2;

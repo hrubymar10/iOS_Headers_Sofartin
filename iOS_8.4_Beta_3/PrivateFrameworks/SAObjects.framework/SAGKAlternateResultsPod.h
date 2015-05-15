@@ -4,7 +4,7 @@
 
 @interface SAGKAlternateResultsPod : SAGKPodView
 
-@property(assign,copy) NSArray * alternateResults;
+@property (nonatomic, copy) NSArray *alternateResults;
 
 + (id)alternateResultsPod;
 + (id)alternateResultsPodWithDictionary:(id)arg1 context:(id)arg2;

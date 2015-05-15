@@ -4,16 +4,16 @@
 
 @interface MTLToolsResource : MTLToolsObject <MTLResourceSPI>
 
-@property(assign,readonly) MTLResourceAllocationInfo * cachedAllocationInfo;
-@property(assign,readonly) unsigned long long cpuCacheMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * label;
-@property(assign,readwrite) int responsibleProcess;
-@property(assign,readonly) MTLResourceAllocationInfo * sharedAllocationInfo;
-@property(assign,readonly) Class superclass;
+@property (readonly) MTLResourceAllocationInfo *cachedAllocationInfo;
+@property (readonly) unsigned long long cpuCacheMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) <MTLDevice> *device;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *label;
+@property int responsibleProcess;
+@property (readonly) MTLResourceAllocationInfo *sharedAllocationInfo;
+@property (readonly) Class superclass;
 
 - (id)cachedAllocationInfo;
 - (unsigned long long)cpuCacheMode;

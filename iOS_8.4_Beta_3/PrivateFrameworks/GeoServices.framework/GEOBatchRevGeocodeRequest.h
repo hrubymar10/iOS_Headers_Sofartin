@@ -16,12 +16,12 @@
     bool _splitIntoClusters;
 }
 
-@property(assign,readonly) int* additionalPlaceTypes;
-@property(assign,readonly) unsigned long long additionalPlaceTypesCount;
-@property(assign,readwrite) bool hasSplitIntoClusters;
-@property(assign,retain) NSMutableArray * locations;
-@property(assign,retain) NSMutableArray * serviceTags;
-@property(assign,readwrite) bool splitIntoClusters;
+@property (nonatomic, readonly) int*additionalPlaceTypes;
+@property (nonatomic, readonly) unsigned long long additionalPlaceTypesCount;
+@property (nonatomic) bool hasSplitIntoClusters;
+@property (nonatomic, retain) NSMutableArray *locations;
+@property (nonatomic, retain) NSMutableArray *serviceTags;
+@property (nonatomic) bool splitIntoClusters;
 
 - (void)addAdditionalPlaceType:(int)arg1;
 - (void)addLocation:(id)arg1;

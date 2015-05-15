@@ -22,27 +22,27 @@
     bool _waitingForEndOfCurrentVibrationComponent;
 }
 
-@property(getter=_isAnimatingProgress,setter=_setAnimatingProgress:,assign,readwrite) bool _animatingProgress;
-@property(setter=_setControlsToolbar:,assign,retain) UIToolbar * _controlsToolbar;
-@property(setter=_setControlsToolbarTopConstraint:,assign,retain) NSLayoutConstraint * _controlsToolbarTopConstraint;
-@property(setter=_setCurrentVibrationComponentDidStartTimestamp:,assign,readwrite) double _currentVibrationComponentDidStartTimestamp;
-@property(setter=_setCurrentVibrationProgressDidStartTimestamp:,assign,readwrite) double _currentVibrationProgressDidStartTimestamp;
-@property(setter=_setInstructionsLabel:,assign,retain) UILabel * _instructionsLabel;
-@property(setter=_setLeftButtonIdentifier:,assign,readwrite) int _leftButtonIdentifier;
-@property(setter=_setProgressToolbarBottomConstraint:,assign,retain) NSLayoutConstraint * _progressToolbarBottomConstraint;
-@property(setter=_setProgressView:,assign,retain) TKVibrationRecorderProgressView * _progressView;
-@property(getter=_isReplayModeEnabled,setter=_setReplayModeEnabled:,assign,readwrite) bool _replayModeEnabled;
-@property(setter=_setRightButtonIdentifier:,assign,readwrite) int _rightButtonIdentifier;
-@property(setter=_setStyleProvider:,assign,retain) <TKVibrationRecorderStyleProvider> * _styleProvider;
-@property(setter=_setTouchSurface:,assign,retain) TKVibrationRecorderTouchSurface * _touchSurface;
-@property(setter=_setTouchSurfaceTopConstraint:,assign,retain) NSLayoutConstraint * _touchSurfaceTopConstraint;
-@property(setter=_setVibrationPatternMaximumDuration:,assign,readwrite) double _vibrationPatternMaximumDuration;
-@property(getter=_isWaitingForEndOfCurrentVibrationComponent,setter=_setWaitingForEndOfCurrentVibrationComponent:,assign,readwrite) bool _waitingForEndOfCurrentVibrationComponent;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <TKVibrationRecorderViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (getter=_isAnimatingProgress, setter=_setAnimatingProgress:, nonatomic) bool _animatingProgress;
+@property (setter=_setControlsToolbar:, nonatomic, retain) UIToolbar *_controlsToolbar;
+@property (setter=_setControlsToolbarTopConstraint:, nonatomic, retain) NSLayoutConstraint *_controlsToolbarTopConstraint;
+@property (setter=_setCurrentVibrationComponentDidStartTimestamp:, nonatomic) double _currentVibrationComponentDidStartTimestamp;
+@property (setter=_setCurrentVibrationProgressDidStartTimestamp:, nonatomic) double _currentVibrationProgressDidStartTimestamp;
+@property (setter=_setInstructionsLabel:, nonatomic, retain) UILabel *_instructionsLabel;
+@property (setter=_setLeftButtonIdentifier:, nonatomic) int _leftButtonIdentifier;
+@property (setter=_setProgressToolbarBottomConstraint:, nonatomic, retain) NSLayoutConstraint *_progressToolbarBottomConstraint;
+@property (setter=_setProgressView:, nonatomic, retain) TKVibrationRecorderProgressView *_progressView;
+@property (getter=_isReplayModeEnabled, setter=_setReplayModeEnabled:, nonatomic) bool _replayModeEnabled;
+@property (setter=_setRightButtonIdentifier:, nonatomic) int _rightButtonIdentifier;
+@property (setter=_setStyleProvider:, nonatomic, retain) <TKVibrationRecorderStyleProvider> *_styleProvider;
+@property (setter=_setTouchSurface:, nonatomic, retain) TKVibrationRecorderTouchSurface *_touchSurface;
+@property (setter=_setTouchSurfaceTopConstraint:, nonatomic, retain) NSLayoutConstraint *_touchSurfaceTopConstraint;
+@property (setter=_setVibrationPatternMaximumDuration:, nonatomic) double _vibrationPatternMaximumDuration;
+@property (getter=_isWaitingForEndOfCurrentVibrationComponent, setter=_setWaitingForEndOfCurrentVibrationComponent:, nonatomic) bool _waitingForEndOfCurrentVibrationComponent;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <TKVibrationRecorderViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)_controlsToolbar;
 - (id)_controlsToolbarTopConstraint;

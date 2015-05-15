@@ -19,22 +19,22 @@
     } _remoteObjectRegistry;
 }
 
-@property(assign,readonly) struct Object { int (**x1)(); id x2; }* _apiObject;
-@property(assign,readonly) struct OpaqueWKBundlePage { }* _bundlePageRef;
-@property(setter=_setDefersLoading:,assign,readwrite) bool _defersLoading;
-@property(setter=_setFormDelegate:,assign,readwrite) <WKWebProcessPlugInFormDelegatePrivate> * _formDelegate;
-@property(assign,readonly) _WKRemoteObjectRegistry * _remoteObjectRegistry;
-@property(assign,readonly) bool _usesNonPersistentWebsiteDataStore;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) WKBrowsingContextHandle * handle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <WKWebProcessPlugInLoadDelegate> * loadDelegate;
-@property(assign,readonly) WKWebProcessPlugInFrame * mainFrame;
-@property(assign,readonly) WKDOMDocument * mainFrameDocument;
-@property(assign,readonly) WKWebProcessPlugInPageGroup * pageGroup;
-@property(assign,readonly) WKDOMRange * selectedRange;
-@property(assign,readonly) Class superclass;
+@property (readonly) struct Object { int (**x1)(); id x2; }*_apiObject;
+@property (nonatomic, readonly) struct OpaqueWKBundlePage { }*_bundlePageRef;
+@property (setter=_setDefersLoading:, nonatomic) bool _defersLoading;
+@property (setter=_setFormDelegate:) <WKWebProcessPlugInFormDelegatePrivate> *_formDelegate;
+@property (nonatomic, readonly) _WKRemoteObjectRegistry *_remoteObjectRegistry;
+@property (nonatomic, readonly) bool _usesNonPersistentWebsiteDataStore;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) WKBrowsingContextHandle *handle;
+@property (readonly) unsigned long long hash;
+@property <WKWebProcessPlugInLoadDelegate> *loadDelegate;
+@property (readonly) WKWebProcessPlugInFrame *mainFrame;
+@property (readonly) WKDOMDocument *mainFrameDocument;
+@property (readonly) WKWebProcessPlugInPageGroup *pageGroup;
+@property (readonly) WKDOMRange *selectedRange;
+@property (readonly) Class superclass;
 
 + (id)lookUpBrowsingContextFromHandle:(id)arg1;
 

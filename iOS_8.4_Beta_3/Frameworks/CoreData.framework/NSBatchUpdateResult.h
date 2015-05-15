@@ -7,8 +7,8 @@
     unsigned long long _resultType;
 }
 
-@property(assign,readonly) id result;
-@property(assign,readonly) unsigned long long resultType;
+@property (readonly) id result;
+@property (readonly) unsigned long long resultType;
 
 - (void)dealloc;
 - (id)initWithResult:(id)arg1 type:(unsigned long long)arg2;

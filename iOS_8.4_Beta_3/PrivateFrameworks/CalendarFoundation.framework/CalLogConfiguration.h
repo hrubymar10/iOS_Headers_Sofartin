@@ -7,8 +7,8 @@
     NSMutableArray *_nodes;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSMutableArray * nodes;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSMutableArray *nodes;
 
 - (void).cxx_destruct;
 - (id)description;

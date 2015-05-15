@@ -8,9 +8,9 @@
     NSString *_podcastFeedURLIdentifier;
 }
 
-@property(assign,readonly) long long identiferType;
-@property(assign,readonly) NSNumber * itemIdentifier;
-@property(assign,retain) NSString * podcastFeedURLIdentifier;
+@property (nonatomic, readonly) long long identiferType;
+@property (nonatomic, readonly) NSNumber *itemIdentifier;
+@property (nonatomic, retain) NSString *podcastFeedURLIdentifier;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

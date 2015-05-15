@@ -52,11 +52,11 @@
     long long _zoomStyle;
 }
 
-@property(assign,readonly) <VKTrackableAnnotation> * annotation;
-@property(assign,readwrite) struct VKEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,readwrite) long long headingAnimationDisplayRate;
-@property(getter=isTrackingHeading,assign,readonly) bool trackingHeading;
-@property(assign,readwrite) long long zoomStyle;
+@property (nonatomic, readonly) <VKTrackableAnnotation> *annotation;
+@property (nonatomic) struct VKEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic) long long headingAnimationDisplayRate;
+@property (getter=isTrackingHeading, nonatomic, readonly) bool trackingHeading;
+@property (nonatomic) long long zoomStyle;
 
 - (id).cxx_construct;
 - (void)_goToAnnotationAnimated:(bool)arg1 duration:(double)arg2 isInitial:(bool)arg3;

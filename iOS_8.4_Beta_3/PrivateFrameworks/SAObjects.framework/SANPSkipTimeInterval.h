@@ -4,7 +4,7 @@
 
 @interface SANPSkipTimeInterval : SADomainCommand
 
-@property(assign,copy) NSNumber * adjustmentInMilliseconds;
+@property (nonatomic, copy) NSNumber *adjustmentInMilliseconds;
 
 + (id)skipTimeInterval;
 + (id)skipTimeIntervalWithDictionary:(id)arg1 context:(id)arg2;

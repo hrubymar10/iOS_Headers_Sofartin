@@ -14,16 +14,16 @@
     NSMutableArray *_updatedPlaces;
 }
 
-@property(assign,retain) GEOMapRegion * displayRegion;
-@property(assign,readonly) bool hasDisplayRegion;
-@property(assign,readonly) bool hasLocalizedAlertText;
-@property(assign,readonly) bool hasLocalizedDescription;
-@property(assign,readwrite) bool hasResolutionDate;
-@property(assign,retain) NSString * localizedAlertText;
-@property(assign,retain) NSMutableArray * localizedChangeLists;
-@property(assign,retain) NSString * localizedDescription;
-@property(assign,readwrite) double resolutionDate;
-@property(assign,retain) NSMutableArray * updatedPlaces;
+@property (nonatomic, retain) GEOMapRegion *displayRegion;
+@property (nonatomic, readonly) bool hasDisplayRegion;
+@property (nonatomic, readonly) bool hasLocalizedAlertText;
+@property (nonatomic, readonly) bool hasLocalizedDescription;
+@property (nonatomic) bool hasResolutionDate;
+@property (nonatomic, retain) NSString *localizedAlertText;
+@property (nonatomic, retain) NSMutableArray *localizedChangeLists;
+@property (nonatomic, retain) NSString *localizedDescription;
+@property (nonatomic) double resolutionDate;
+@property (nonatomic, retain) NSMutableArray *updatedPlaces;
 
 - (void)addLocalizedChangeList:(id)arg1;
 - (void)addUpdatedPlace:(id)arg1;

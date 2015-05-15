@@ -9,10 +9,10 @@
     bool _sectioningIsPreserved;
 }
 
-@property(assign,readwrite) bool invalidateForVerticalScroll;
-@property(assign,readwrite) bool invalidationHasBeenRedispatched;
-@property(assign,readwrite) bool samplingIsPreserved;
-@property(assign,readwrite) bool sectioningIsPreserved;
+@property (nonatomic) bool invalidateForVerticalScroll;
+@property (nonatomic) bool invalidationHasBeenRedispatched;
+@property (nonatomic) bool samplingIsPreserved;
+@property (nonatomic) bool sectioningIsPreserved;
 
 - (id)description;
 - (bool)invalidateForVerticalScroll;

@@ -6,21 +6,21 @@
     <CKFileTransfer> *_transfer;
 }
 
-@property(assign,copy) NSString * UTIType;
-@property(assign,copy) NSData * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSURL * fileURL;
-@property(assign,copy) NSString * filename;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) int mediaType;
-@property(assign,copy) NSString * mimeType;
-@property(assign,readonly) NSString * previewItemTitle;
-@property(assign,readonly) NSURL * previewItemURL;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSDictionary * transcoderUserInfo;
-@property(assign,retain) <CKFileTransfer> * transfer;
-@property(assign,copy) NSString * transferGUID;
+@property (nonatomic, readonly, copy) NSString *UTIType;
+@property (nonatomic, readonly, copy) NSData *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSURL *fileURL;
+@property (nonatomic, readonly, copy) NSString *filename;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) int mediaType;
+@property (nonatomic, readonly, copy) NSString *mimeType;
+@property (readonly) NSString *previewItemTitle;
+@property (readonly) NSURL *previewItemURL;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, copy) NSDictionary *transcoderUserInfo;
+@property (nonatomic, retain) <CKFileTransfer> *transfer;
+@property (nonatomic, readonly, copy) NSString *transferGUID;
 
 + (id)UTITypes;
 + (Class)__ck_attachmentItemClass;

@@ -6,17 +6,17 @@
     SSOperationProgress *_operationProgress;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double estimatedSecondsRemaining;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SSOperationProgress * operationProgress;
-@property(assign,readonly) long long phaseType;
-@property(assign,readonly) float progressChangeRate;
-@property(assign,readonly) long long progressUnits;
-@property(assign,readonly) long long progressValue;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) long long totalProgressValue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) double estimatedSecondsRemaining;
+@property (readonly) unsigned long long hash;
+@property (readonly) SSOperationProgress *operationProgress;
+@property (readonly) long long phaseType;
+@property (readonly) float progressChangeRate;
+@property (readonly) long long progressUnits;
+@property (readonly) long long progressValue;
+@property (readonly) Class superclass;
+@property (readonly) long long totalProgressValue;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)copyXPCEncoding;

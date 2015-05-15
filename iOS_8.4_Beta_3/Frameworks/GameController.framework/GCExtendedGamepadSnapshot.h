@@ -6,7 +6,7 @@
     NSData *snapshotData;
 }
 
-@property(assign,copy) NSData * snapshotData;
+@property (copy) NSData *snapshotData;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 

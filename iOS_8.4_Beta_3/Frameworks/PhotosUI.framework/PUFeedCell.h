@@ -10,15 +10,15 @@
     bool _tappable;
 }
 
-@property(setter=_setTapGestureRecognizer:,assign,retain) UITapGestureRecognizer * _tapGestureRecognizer;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUFeedCellDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSIndexPath * indexPath;
-@property(assign,retain) NSString * representedElementKind;
-@property(assign,readonly) Class superclass;
-@property(getter=isTappable,assign,readwrite) bool tappable;
+@property (setter=_setTapGestureRecognizer:, nonatomic, retain) UITapGestureRecognizer *_tapGestureRecognizer;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUFeedCellDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSIndexPath *indexPath;
+@property (nonatomic, retain) NSString *representedElementKind;
+@property (readonly) Class superclass;
+@property (getter=isTappable, nonatomic) bool tappable;
 
 - (void).cxx_destruct;
 - (void)_handleTap:(id)arg1;

@@ -8,7 +8,7 @@
     TSUPointerKeyDictionary *mSet;
 }
 
-@property(assign,readonly) unsigned long long count;
+@property (nonatomic, readonly) unsigned long long count;
 
 - (void)addObject:(id)arg1;
 - (unsigned long long)count;

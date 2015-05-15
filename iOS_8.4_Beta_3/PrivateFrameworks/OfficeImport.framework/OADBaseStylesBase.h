@@ -8,9 +8,9 @@
     OADStyleMatrix *mStyleMatrix;
 }
 
-@property(assign,retain) OADColorScheme * colorScheme;
-@property(assign,retain) OADFontScheme * fontScheme;
-@property(assign,retain) OADStyleMatrix * styleMatrix;
+@property (nonatomic, retain) OADColorScheme *colorScheme;
+@property (nonatomic, retain) OADFontScheme *fontScheme;
+@property (nonatomic, retain) OADStyleMatrix *styleMatrix;
 
 - (id)colorScheme;
 - (void)dealloc;

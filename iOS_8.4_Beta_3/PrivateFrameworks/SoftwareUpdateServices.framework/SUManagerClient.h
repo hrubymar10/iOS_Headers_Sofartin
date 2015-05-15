@@ -12,9 +12,9 @@
     bool _serverIsExiting;
 }
 
-@property(assign,readwrite) int clientType;
-@property(assign,readwrite) <SUManagerClientDelegate> * delegate;
-@property(assign,retain) SUDescriptor * installDescriptor;
+@property (nonatomic) int clientType;
+@property (nonatomic) <SUManagerClientDelegate> *delegate;
+@property (nonatomic, retain) SUDescriptor *installDescriptor;
 
 + (bool)_shouldDisallowAvailabilityNotifications;
 

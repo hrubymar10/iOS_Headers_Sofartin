@@ -15,18 +15,18 @@
     int _shouldDeactivate;
 }
 
-@property(assign,readonly) <NSXPCProxyCreating> * clientProxy;
-@property(assign,readonly) <HDHealthDaemon> * daemon;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) <HDQueryServerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) _HKFilter * filter;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queryQueue;
-@property(assign,readwrite) long long queryState;
-@property(assign,readonly) NSUUID * queryUUID;
-@property(assign,readonly) HKSampleType * sampleType;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) <NSXPCProxyCreating> *clientProxy;
+@property (nonatomic, readonly) <HDHealthDaemon> *daemon;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) <HDQueryServerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) _HKFilter *filter;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queryQueue;
+@property (nonatomic) long long queryState;
+@property (nonatomic, readonly) NSUUID *queryUUID;
+@property (nonatomic, readonly) HKSampleType *sampleType;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_activationTransactionString;

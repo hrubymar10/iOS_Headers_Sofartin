@@ -7,8 +7,8 @@
     NACRunAssertion *_runAssertion;
 }
 
-@property(assign,retain) MPAVRoutingController * routingController;
-@property(assign,retain) NACRunAssertion * runAssertion;
+@property (nonatomic, retain) MPAVRoutingController *routingController;
+@property (nonatomic, retain) NACRunAssertion *runAssertion;
 
 - (void).cxx_destruct;
 - (id)routingController;

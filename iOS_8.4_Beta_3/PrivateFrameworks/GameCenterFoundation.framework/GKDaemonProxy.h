@@ -15,13 +15,13 @@
     NSObject<OS_dispatch_semaphore> *_serviceSemaphore;
 }
 
-@property(assign,readwrite) NSXPCConnection * connection;
-@property(assign,readwrite) <GKDaemonProxyDataUpdateDelegate> * dataUpdateDelegate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <GKDaemonProxyNetworkActivityIndicatorDelegate> * networkActivityIndicatorDelegate;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) NSXPCConnection *connection;
+@property (nonatomic) <GKDaemonProxyDataUpdateDelegate> *dataUpdateDelegate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <GKDaemonProxyNetworkActivityIndicatorDelegate> *networkActivityIndicatorDelegate;
+@property (readonly) Class superclass;
 
 + (id)accountServicePrivateProxy;
 + (id)accountServiceProxy;

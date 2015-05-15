@@ -10,9 +10,9 @@
     BSMutableSettings *_transientLocalClientSettings;
 }
 
-@property(assign,copy) NSSet * actions;
-@property(assign,copy) BSMachSendRight * animationFencePort;
-@property(assign,copy) BSAnimationSettings * animationSettings;
+@property (nonatomic, copy) NSSet *actions;
+@property (nonatomic, copy) BSMachSendRight *animationFencePort;
+@property (nonatomic, copy) BSAnimationSettings *animationSettings;
 
 + (id)transitionContext;
 

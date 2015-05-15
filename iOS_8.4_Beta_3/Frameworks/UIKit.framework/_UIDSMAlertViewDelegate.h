@@ -6,11 +6,11 @@
     id _completionHandler;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (copy) id completionHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)alertView:(id)arg1 didDismissWithButtonIndex:(long long)arg2;
 - (id)completionHandler;

@@ -13,7 +13,7 @@
     MFMimeTextAttachment *_original;
 }
 
-@property(assign,readwrite) bool displayableAsIcon;
+@property bool displayableAsIcon;
 
 + (unsigned long long)precedenceLevel;
 

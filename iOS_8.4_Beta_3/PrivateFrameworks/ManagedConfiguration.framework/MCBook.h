@@ -16,17 +16,17 @@
     NSString *_version;
 }
 
-@property(assign,copy) NSString * author;
-@property(assign,copy) NSString * buyParams;
-@property(assign,retain) NSNumber * downloadIdentifier;
-@property(assign,copy) NSString * fullPath;
-@property(assign,retain) NSNumber * iTunesStoreID;
-@property(assign,copy) NSString * kind;
-@property(assign,copy) NSString * persistentID;
-@property(assign,retain) MCBook * previousVersion;
-@property(assign,retain) NSString * state;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * version;
+@property (nonatomic, copy) NSString *author;
+@property (nonatomic, copy) NSString *buyParams;
+@property (nonatomic, retain) NSNumber *downloadIdentifier;
+@property (nonatomic, copy) NSString *fullPath;
+@property (nonatomic, retain) NSNumber *iTunesStoreID;
+@property (nonatomic, copy) NSString *kind;
+@property (nonatomic, copy) NSString *persistentID;
+@property (nonatomic, retain) MCBook *previousVersion;
+@property (nonatomic, retain) NSString *state;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *version;
 
 - (void).cxx_destruct;
 - (id)author;

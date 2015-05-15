@@ -11,12 +11,12 @@
     long long _type;
 }
 
-@property(assign,retain) NSString * container;
-@property(assign,retain) NSString * containerPath;
-@property(assign,retain) NSString * domain;
-@property(assign,readwrite) bool hasChangesToWrite;
-@property(assign,retain) NPSDomainAccessor * nanoDomainAccessor;
-@property(assign,readwrite) long long type;
+@property (nonatomic, retain) NSString *container;
+@property (nonatomic, retain) NSString *containerPath;
+@property (nonatomic, retain) NSString *domain;
+@property (nonatomic) bool hasChangesToWrite;
+@property (nonatomic, retain) NPSDomainAccessor *nanoDomainAccessor;
+@property (nonatomic) long long type;
 
 + (id)serializeObject:(id)arg1 error:(id*)arg2;
 + (id)unserializeObject:(id)arg1 error:(id*)arg2;

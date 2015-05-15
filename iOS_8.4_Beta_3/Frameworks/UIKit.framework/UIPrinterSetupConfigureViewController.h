@@ -11,16 +11,16 @@
     PKPrinter *_printer;
 }
 
-@property(assign,readwrite) bool addToNetwork;
-@property(assign,retain) UIPrinterSetupConnectingView * connectingView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * directPasscode;
-@property(assign,readwrite) bool directPrinting;
-@property(assign,retain) UIButton * finishButton;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PKPrinter * printer;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool addToNetwork;
+@property (nonatomic, retain) UIPrinterSetupConnectingView *connectingView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *directPasscode;
+@property (nonatomic) bool directPrinting;
+@property (nonatomic, retain) UIButton *finishButton;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PKPrinter *printer;
+@property (readonly) Class superclass;
 
 - (bool)addToNetwork;
 - (id)connectingView;

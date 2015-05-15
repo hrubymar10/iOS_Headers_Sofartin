@@ -8,14 +8,14 @@
     long long _type;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) PKPaymentAuthorizationDataModel * model;
-@property(getter=isRejected,assign,readonly) bool rejected;
-@property(assign,readwrite) long long status;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long type;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) PKPaymentAuthorizationDataModel *model;
+@property (getter=isRejected, nonatomic, readonly) bool rejected;
+@property (nonatomic) long long status;
+@property (readonly) Class superclass;
+@property (nonatomic) long long type;
 
 + (long long)dataType;
 

@@ -43,19 +43,19 @@
     unsigned long long mTextureStage;
 }
 
-@property(assign,readonly) TSDCanvas * canvas;
-@property(assign,readonly) NSArray * hyperlinkRegions;
-@property(assign,readonly) TSDLayout * layout;
-@property(assign,readwrite) TSDRep<TSDContainerRep> * parentRep;
-@property(assign,retain) TSDLayout * temporaryMixingLayout;
-@property(assign,retain) TSDTextureSet * texture;
-@property(assign,readwrite) NSDictionary * textureActionAttributes;
-@property(assign,readonly) double textureAngle;
-@property(assign,retain) NSDictionary * textureAnimationInfo;
-@property(assign,readwrite) int textureByGlyphStyle;
-@property(assign,copy) TSDTextureContext * textureContext;
-@property(assign,readwrite) unsigned long long textureDeliveryStyle;
-@property(assign,readwrite) unsigned long long textureStage;
+@property (nonatomic, readonly) TSDCanvas *canvas;
+@property (nonatomic, readonly) NSArray *hyperlinkRegions;
+@property (nonatomic, readonly) TSDLayout *layout;
+@property (nonatomic) TSDRep<TSDContainerRep> *parentRep;
+@property (nonatomic, retain) TSDLayout *temporaryMixingLayout;
+@property (retain) TSDTextureSet *texture;
+@property (nonatomic) NSDictionary *textureActionAttributes;
+@property (nonatomic, readonly) double textureAngle;
+@property (nonatomic, retain) NSDictionary *textureAnimationInfo;
+@property (nonatomic) int textureByGlyphStyle;
+@property (copy) TSDTextureContext *textureContext;
+@property (nonatomic) unsigned long long textureDeliveryStyle;
+@property (nonatomic) unsigned long long textureStage;
 
 - (void)addBitmapsToRenderingQualityInfo:(id)arg1 inContext:(struct CGContext { }*)arg2;
 - (void)addToSet:(id)arg1;

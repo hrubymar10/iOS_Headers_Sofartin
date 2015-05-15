@@ -4,7 +4,7 @@
 
 @interface SASportsScheduleSnippet : SASportsSnippet
 
-@property(assign,copy) NSArray * matchups;
+@property (nonatomic, copy) NSArray *matchups;
 
 + (id)scheduleSnippet;
 + (id)scheduleSnippetWithDictionary:(id)arg1 context:(id)arg2;

@@ -12,10 +12,10 @@
     NSObject<OS_xpc_object> *_superarbitrationServer;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_addPresenter:(id)arg1 ofItemAtURL:(id)arg2 watchingFile:(bool)arg3 withLastEventID:(id)arg4;
 - (void)_addProvider:(id)arg1 ofItemsAtURL:(id)arg2;

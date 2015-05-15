@@ -10,10 +10,10 @@
     int _status;
 }
 
-@property(assign,readonly) bool hasSessionInfo;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,retain) NSData * sessionInfo;
-@property(assign,readwrite) int status;
+@property (nonatomic, readonly) bool hasSessionInfo;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic, retain) NSData *sessionInfo;
+@property (nonatomic) int status;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

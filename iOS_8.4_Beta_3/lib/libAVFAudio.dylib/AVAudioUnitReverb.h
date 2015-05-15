@@ -4,7 +4,7 @@
 
 @interface AVAudioUnitReverb : AVAudioUnitEffect
 
-@property(assign,readwrite) float wetDryMix;
+@property (nonatomic) float wetDryMix;
 
 - (id)init;
 - (void)loadFactoryPreset:(long long)arg1;

@@ -15,16 +15,16 @@
     double _timeStarted;
 }
 
-@property(assign,retain) NSString * activityType;
-@property(assign,readonly) bool hasActivityType;
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,readwrite) bool hasTimeDelta;
-@property(assign,readwrite) bool hasTimeEnded;
-@property(assign,readwrite) bool hasTimeStarted;
-@property(assign,retain) NSString * identifier;
-@property(assign,readwrite) double timeDelta;
-@property(assign,readwrite) double timeEnded;
-@property(assign,readwrite) double timeStarted;
+@property (nonatomic, retain) NSString *activityType;
+@property (nonatomic, readonly) bool hasActivityType;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic) bool hasTimeDelta;
+@property (nonatomic) bool hasTimeEnded;
+@property (nonatomic) bool hasTimeStarted;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic) double timeDelta;
+@property (nonatomic) double timeEnded;
+@property (nonatomic) double timeStarted;
 
 - (void).cxx_destruct;
 - (id)activityType;

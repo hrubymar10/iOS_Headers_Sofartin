@@ -39,32 +39,32 @@
     bool _textViewExclusionPathsAreValid;
 }
 
-@property(assign,readonly) UIButton * addButton;
-@property(assign,copy) NSArray * addresses;
-@property(assign,readwrite) bool allowsDragAndDrop;
-@property(assign,readonly) UIView * atomContainerView;
-@property(assign,retain) UIFont * baseFont;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MFComposeRecipientTextViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool didIgnoreFirstResponderResign;
-@property(assign,readwrite) bool editable;
-@property(assign,readwrite) bool expanded;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int hideLastAtomComma;
-@property(assign,retain) UIColor * inactiveTextColor;
-@property(assign,readwrite) bool indicatesUnsafeRecipientsWhenCollapsed;
-@property(assign,readwrite) double inputDelay;
-@property(assign,readwrite) long long maxRecipients;
-@property(assign,readonly) unsigned long long numberOfRowsOfTextInField;
-@property(assign,readonly) double offsetForRowWithTextField;
-@property(assign,retain) _MFAtomTextAttachment * placeholderAttachment;
-@property(assign,copy) NSArray * recipients;
-@property(getter=isSeparatorHidden,assign,readwrite) bool separatorHidden;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * text;
-@property(assign,readonly) UITextView * textView;
-@property(assign,copy) NSArray * uncommentedAddresses;
+@property (nonatomic, readonly) UIButton *addButton;
+@property (nonatomic, copy) NSArray *addresses;
+@property (nonatomic) bool allowsDragAndDrop;
+@property (nonatomic, readonly) UIView *atomContainerView;
+@property (nonatomic, retain) UIFont *baseFont;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MFComposeRecipientTextViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool didIgnoreFirstResponderResign;
+@property (nonatomic) bool editable;
+@property (nonatomic) bool expanded;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int hideLastAtomComma;
+@property (nonatomic, retain) UIColor *inactiveTextColor;
+@property (nonatomic) bool indicatesUnsafeRecipientsWhenCollapsed;
+@property (nonatomic) double inputDelay;
+@property (nonatomic) long long maxRecipients;
+@property (nonatomic, readonly) unsigned long long numberOfRowsOfTextInField;
+@property (nonatomic, readonly) double offsetForRowWithTextField;
+@property (nonatomic, retain) _MFAtomTextAttachment *placeholderAttachment;
+@property (nonatomic, copy) NSArray *recipients;
+@property (getter=isSeparatorHidden, nonatomic) bool separatorHidden;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *text;
+@property (nonatomic, readonly) UITextView *textView;
+@property (nonatomic, readonly, copy) NSArray *uncommentedAddresses;
 
 + (id)defaultFont;
 

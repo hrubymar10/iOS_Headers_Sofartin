@@ -10,11 +10,11 @@
     id _target;
 }
 
-@property(setter=_setActionSelector:,assign,readwrite) SEL _actionSelector;
-@property(setter=_setActionSelectorName:,assign,copy) NSString * _actionSelectorName;
-@property(setter=_setDisplayDidRefreshCount:,assign,readwrite) unsigned long long _displayDidRefreshCount;
-@property(setter=_setFrameInterval:,assign,readwrite) unsigned long long _frameInterval;
-@property(setter=_setTarget:,assign,retain) id _target;
+@property (setter=_setActionSelector:, nonatomic) SEL _actionSelector;
+@property (setter=_setActionSelectorName:, nonatomic, copy) NSString *_actionSelectorName;
+@property (setter=_setDisplayDidRefreshCount:, nonatomic) unsigned long long _displayDidRefreshCount;
+@property (setter=_setFrameInterval:, nonatomic) unsigned long long _frameInterval;
+@property (setter=_setTarget:, nonatomic, retain) id _target;
 
 - (SEL)_actionSelector;
 - (id)_actionSelectorName;

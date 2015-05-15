@@ -15,14 +15,14 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int cameraBackOnDuration;
-@property(assign,readwrite) unsigned int cameraFrontOnDuration;
-@property(assign,readwrite) unsigned int cameraTorchOnDuration;
-@property(assign,readwrite) bool hasCameraBackOnDuration;
-@property(assign,readwrite) bool hasCameraFrontOnDuration;
-@property(assign,readwrite) bool hasCameraTorchOnDuration;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int cameraBackOnDuration;
+@property (nonatomic) unsigned int cameraFrontOnDuration;
+@property (nonatomic) unsigned int cameraTorchOnDuration;
+@property (nonatomic) bool hasCameraBackOnDuration;
+@property (nonatomic) bool hasCameraFrontOnDuration;
+@property (nonatomic) bool hasCameraTorchOnDuration;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long timestamp;
 
 - (unsigned int)cameraBackOnDuration;
 - (unsigned int)cameraFrontOnDuration;

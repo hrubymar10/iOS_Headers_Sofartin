@@ -13,13 +13,13 @@
     UIView *_warningView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UISlider * slider;
-@property(assign,readonly) long long style;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) MPVolumeController * volumeController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UISlider *slider;
+@property (nonatomic, readonly) long long style;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) MPVolumeController *volumeController;
 
 - (void).cxx_destruct;
 - (void)_beginBlinkingWarningView;

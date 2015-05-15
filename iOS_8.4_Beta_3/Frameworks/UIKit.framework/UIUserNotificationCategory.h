@@ -7,8 +7,8 @@
     NSString *_identifier;
 }
 
-@property(assign,copy) NSDictionary * actionsByContext;
-@property(assign,copy) NSString * identifier;
+@property (nonatomic, copy) NSDictionary *actionsByContext;
+@property (nonatomic, copy) NSString *identifier;
 
 + (bool)supportsSecureCoding;
 

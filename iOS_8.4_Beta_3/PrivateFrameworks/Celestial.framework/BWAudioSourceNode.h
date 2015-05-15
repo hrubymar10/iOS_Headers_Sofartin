@@ -41,11 +41,11 @@
     bool _usesVideoCMSessionAudioMode;
 }
 
-@property(assign,readonly) NSArray * audioLevels;
-@property(assign,readwrite) bool interrupted;
-@property(assign,readwrite) bool levelMeteringEnabled;
-@property(assign,readwrite) bool selectsMicForFrontCamera;
-@property(assign,readwrite) bool usesVideoCMSessionAudioMode;
+@property (nonatomic, readonly) NSArray *audioLevels;
+@property (nonatomic) bool interrupted;
+@property (nonatomic) bool levelMeteringEnabled;
+@property (nonatomic) bool selectsMicForFrontCamera;
+@property (nonatomic) bool usesVideoCMSessionAudioMode;
 
 + (double)_desiredSampleRate;
 + (void)initialize;

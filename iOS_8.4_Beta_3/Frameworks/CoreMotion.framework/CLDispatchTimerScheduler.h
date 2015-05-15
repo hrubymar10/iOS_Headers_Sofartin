@@ -7,8 +7,8 @@
     CLTimer *timer;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_source> * source;
-@property(assign,readwrite) CLTimer * timer;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *source;
+@property (nonatomic) CLTimer *timer;
 
 - (void).cxx_destruct;
 - (void)dealloc;

@@ -34,17 +34,17 @@
     double _verticalGroundspanScale;
 }
 
-@property(assign,readonly) bool allowVerticalPanning;
-@property(assign,readonly) bool animated;
-@property(assign,readwrite) bool applied;
-@property(assign,readwrite) long long courseSource;
-@property(assign,readwrite) struct { double x1; double x2; } courseTargetLocation;
-@property(assign,readwrite) int focusStyle;
-@property(assign,readonly) double heading;
-@property(assign,readonly) struct { double x1; double x2; } pointOfFocus;
-@property(assign,readonly) struct { double x1; double x2; } pointOfReference;
-@property(assign,readwrite) int style;
-@property(assign,readonly) double verticalGroundspanScale;
+@property (nonatomic, readonly) bool allowVerticalPanning;
+@property (nonatomic, readonly) bool animated;
+@property (nonatomic) bool applied;
+@property (nonatomic) long long courseSource;
+@property (nonatomic) struct { double x1; double x2; } courseTargetLocation;
+@property (nonatomic) int focusStyle;
+@property (nonatomic, readonly) double heading;
+@property (nonatomic, readonly) struct { double x1; double x2; } pointOfFocus;
+@property (nonatomic, readonly) struct { double x1; double x2; } pointOfReference;
+@property (nonatomic) int style;
+@property (nonatomic, readonly) double verticalGroundspanScale;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

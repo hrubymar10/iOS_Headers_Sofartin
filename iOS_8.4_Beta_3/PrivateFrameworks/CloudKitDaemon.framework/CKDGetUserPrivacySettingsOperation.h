@@ -6,7 +6,7 @@
     long long _discoverable;
 }
 
-@property(assign,readwrite) long long discoverable;
+@property (nonatomic) long long discoverable;
 
 - (void)_handleRetrievedPrivacySettings:(id)arg1;
 - (long long)discoverable;

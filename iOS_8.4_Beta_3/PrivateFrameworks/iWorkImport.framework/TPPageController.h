@@ -38,17 +38,17 @@
     bool _shouldUpdatePageCount;
 }
 
-@property(assign,readwrite) bool backgroundLayoutEnabled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long firstPageIndexNeedingLayout;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long pageCount;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool backgroundLayoutEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) unsigned long long firstPageIndexNeedingLayout;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long pageCount;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

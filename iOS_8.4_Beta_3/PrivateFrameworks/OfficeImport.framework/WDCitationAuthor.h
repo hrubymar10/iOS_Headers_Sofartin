@@ -7,8 +7,8 @@
     NSString *mLast;
 }
 
-@property(assign,retain) NSString * first;
-@property(assign,retain) NSString * last;
+@property (nonatomic, retain) NSString *first;
+@property (nonatomic, retain) NSString *last;
 
 - (void)dealloc;
 - (id)first;

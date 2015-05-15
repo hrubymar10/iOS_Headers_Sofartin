@@ -7,9 +7,9 @@
     CKDPRecordFieldIdentifier *_field;
 }
 
-@property(assign,retain) NSMutableArray * assets;
-@property(assign,retain) CKDPRecordFieldIdentifier * field;
-@property(assign,readonly) bool hasField;
+@property (nonatomic, retain) NSMutableArray *assets;
+@property (nonatomic, retain) CKDPRecordFieldIdentifier *field;
+@property (nonatomic, readonly) bool hasField;
 
 - (void).cxx_destruct;
 - (void)addAssets:(id)arg1;

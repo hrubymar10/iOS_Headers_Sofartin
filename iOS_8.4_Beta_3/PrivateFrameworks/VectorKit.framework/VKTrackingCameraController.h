@@ -184,20 +184,20 @@
     bool _zooming;
 }
 
-@property(assign,readonly) bool canZoomIn;
-@property(assign,readonly) bool canZoomOut;
-@property(assign,readwrite) VKMapCanvas * mapCanvas;
-@property(assign,retain) VKMapModel * mapModel;
-@property(assign,readwrite) int panStyle;
-@property(assign,readwrite) float puckSize;
-@property(assign,readwrite) bool shouldLimitTopDownHeight;
-@property(assign,readwrite) double tracePlaybackSpeedMultiplier;
-@property(assign,readwrite) <VKTrackingCameraControllerDelegate> * trackingDelegate;
-@property(assign,readwrite) double userZoomFocusStyleGroundspanMeters;
-@property(assign,readwrite) double userZoomFocusStyleMaxGroundspanMeters;
-@property(assign,readwrite) double userZoomFocusStyleMinGroundspanMeters;
-@property(assign,readwrite) double verticalGroundspanScale;
-@property(assign,readwrite) double zoomScale;
+@property (nonatomic, readonly) bool canZoomIn;
+@property (nonatomic, readonly) bool canZoomOut;
+@property (nonatomic) VKMapCanvas *mapCanvas;
+@property (nonatomic, retain) VKMapModel *mapModel;
+@property (nonatomic) int panStyle;
+@property (nonatomic) float puckSize;
+@property (nonatomic) bool shouldLimitTopDownHeight;
+@property (nonatomic) double tracePlaybackSpeedMultiplier;
+@property (nonatomic) <VKTrackingCameraControllerDelegate> *trackingDelegate;
+@property (nonatomic) double userZoomFocusStyleGroundspanMeters;
+@property (nonatomic) double userZoomFocusStyleMaxGroundspanMeters;
+@property (nonatomic) double userZoomFocusStyleMinGroundspanMeters;
+@property (nonatomic) double verticalGroundspanScale;
+@property (nonatomic) double zoomScale;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

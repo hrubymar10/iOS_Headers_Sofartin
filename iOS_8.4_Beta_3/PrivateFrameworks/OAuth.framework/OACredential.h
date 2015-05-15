@@ -9,10 +9,10 @@
     NSString *_oauthTokenSecret;
 }
 
-@property(assign,copy) NSString * consumerKey;
-@property(assign,copy) NSString * consumerSecret;
-@property(assign,copy) NSString * oauthToken;
-@property(assign,copy) NSString * oauthTokenSecret;
+@property (nonatomic, copy) NSString *consumerKey;
+@property (nonatomic, copy) NSString *consumerSecret;
+@property (nonatomic, copy) NSString *oauthToken;
+@property (nonatomic, copy) NSString *oauthTokenSecret;
 
 - (id)consumerKey;
 - (id)consumerSecret;

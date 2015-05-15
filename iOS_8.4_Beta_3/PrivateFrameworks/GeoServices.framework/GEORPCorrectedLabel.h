@@ -16,19 +16,19 @@
     unsigned long long _uid;
 }
 
-@property(assign,retain) GEOLatLng * coordinate;
-@property(assign,retain) NSString * correctedValue;
-@property(assign,retain) NSMutableArray * featureHandles;
-@property(assign,retain) GEOMapRegion * featureRegion;
-@property(assign,readonly) bool hasCoordinate;
-@property(assign,readonly) bool hasCorrectedValue;
-@property(assign,readonly) bool hasFeatureRegion;
-@property(assign,readwrite) bool hasLocalizedLabels;
-@property(assign,readonly) bool hasOriginalValue;
-@property(assign,readwrite) bool hasUid;
-@property(assign,readwrite) bool localizedLabels;
-@property(assign,retain) NSString * originalValue;
-@property(assign,readwrite) unsigned long long uid;
+@property (nonatomic, retain) GEOLatLng *coordinate;
+@property (nonatomic, retain) NSString *correctedValue;
+@property (nonatomic, retain) NSMutableArray *featureHandles;
+@property (nonatomic, retain) GEOMapRegion *featureRegion;
+@property (nonatomic, readonly) bool hasCoordinate;
+@property (nonatomic, readonly) bool hasCorrectedValue;
+@property (nonatomic, readonly) bool hasFeatureRegion;
+@property (nonatomic) bool hasLocalizedLabels;
+@property (nonatomic, readonly) bool hasOriginalValue;
+@property (nonatomic) bool hasUid;
+@property (nonatomic) bool localizedLabels;
+@property (nonatomic, retain) NSString *originalValue;
+@property (nonatomic) unsigned long long uid;
 
 - (void)addFeatureHandle:(id)arg1;
 - (void)clearFeatureHandles;

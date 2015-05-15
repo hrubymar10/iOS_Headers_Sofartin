@@ -12,12 +12,12 @@
     CIVector *inputPoint4;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,copy) CIVector * inputPoint0;
-@property(assign,copy) CIVector * inputPoint1;
-@property(assign,copy) CIVector * inputPoint2;
-@property(assign,copy) CIVector * inputPoint3;
-@property(assign,copy) CIVector * inputPoint4;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, copy) CIVector *inputPoint0;
+@property (nonatomic, copy) CIVector *inputPoint1;
+@property (nonatomic, copy) CIVector *inputPoint2;
+@property (nonatomic, copy) CIVector *inputPoint3;
+@property (nonatomic, copy) CIVector *inputPoint4;
 
 + (id)curveImageFromPoints:(const struct CGPoint { double x1; double x2; }*)arg1;
 + (id)curveImageFromPoints:(const struct CGPoint { double x1; double x2; }*)arg1 linear:(bool)arg2;

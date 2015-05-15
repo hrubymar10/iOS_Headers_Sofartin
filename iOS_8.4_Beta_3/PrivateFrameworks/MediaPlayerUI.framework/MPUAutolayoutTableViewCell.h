@@ -36,22 +36,22 @@
     NSString *_textLabelFontStyle;
 }
 
-@property(assign,readwrite) bool alignsSeparatorInsetsWithLabels;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } artworkInsets;
-@property(assign,readonly) id artworkLayoutGuide;
-@property(assign,readwrite) double artworkMaxWidth;
-@property(assign,readonly) MPUArtworkView * artworkView;
-@property(assign,readonly) id contentLayoutGuide;
-@property(assign,readonly) UILabel * detailTextLabel;
-@property(assign,readwrite) double detailTextLabelFirstLineLeading;
-@property(assign,copy) NSString * detailTextLabelFontStyle;
-@property(getter=isExpanded,assign,readwrite) bool expanded;
-@property(assign,readonly) UIView * expansionView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } labelContentViewInsets;
-@property(assign,readonly) id labelLayoutGuide;
-@property(assign,readwrite) bool skipSeparatorInsetUpdates;
-@property(assign,readonly) UILabel * textLabel;
-@property(assign,copy) NSString * textLabelFontStyle;
+@property (nonatomic) bool alignsSeparatorInsetsWithLabels;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } artworkInsets;
+@property (nonatomic, readonly) id artworkLayoutGuide;
+@property (nonatomic) double artworkMaxWidth;
+@property (nonatomic, readonly) MPUArtworkView *artworkView;
+@property (nonatomic, readonly) id contentLayoutGuide;
+@property (nonatomic, readonly) UILabel *detailTextLabel;
+@property (nonatomic) double detailTextLabelFirstLineLeading;
+@property (nonatomic, copy) NSString *detailTextLabelFontStyle;
+@property (getter=isExpanded, nonatomic) bool expanded;
+@property (nonatomic, readonly) UIView *expansionView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } labelContentViewInsets;
+@property (nonatomic, readonly) id labelLayoutGuide;
+@property (nonatomic) bool skipSeparatorInsetUpdates;
+@property (nonatomic, readonly) UILabel *textLabel;
+@property (nonatomic, copy) NSString *textLabelFontStyle;
 
 + (Class)artworkViewClass;
 + (Class)labelClass;

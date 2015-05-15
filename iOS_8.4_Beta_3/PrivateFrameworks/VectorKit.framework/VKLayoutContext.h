@@ -74,16 +74,16 @@
     float _z;
 }
 
-@property(assign,retain) VKAnchorContext * anchorContext;
-@property(assign,retain) VKCamera * defaultTrackingCamera;
-@property(assign,readonly) bool hasOverlayInStencil;
-@property(assign,readwrite) struct VKEdgeInsets { double x1; double x2; double x3; double x4; } labelEdgeInsets;
-@property(assign,readonly) unsigned char stencilEnd;
-@property(assign,readonly) unsigned char stencilStart;
-@property(assign,readwrite) double timestamp;
-@property(assign,retain) VKCamera * transitionCamera;
-@property(assign,readwrite) long long transitionMapMode;
-@property(assign,retain) VKViewTransform * viewTransform;
+@property (nonatomic, retain) VKAnchorContext *anchorContext;
+@property (nonatomic, retain) VKCamera *defaultTrackingCamera;
+@property (nonatomic, readonly) bool hasOverlayInStencil;
+@property (nonatomic) struct VKEdgeInsets { double x1; double x2; double x3; double x4; } labelEdgeInsets;
+@property (nonatomic, readonly) unsigned char stencilEnd;
+@property (nonatomic, readonly) unsigned char stencilStart;
+@property (nonatomic) double timestamp;
+@property (nonatomic, retain) VKCamera *transitionCamera;
+@property (nonatomic) long long transitionMapMode;
+@property (nonatomic, retain) VKViewTransform *viewTransform;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -4,13 +4,13 @@
 
 @interface SASPhrase : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * interpretations;
-@property(assign,readwrite) bool lowConfidence;
-@property(assign,readwrite) bool speechRepairApplied;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *interpretations;
+@property (nonatomic) bool lowConfidence;
+@property (nonatomic) bool speechRepairApplied;
+@property (readonly) Class superclass;
 
 + (id)phrase;
 + (id)phraseWithDictionary:(id)arg1 context:(id)arg2;

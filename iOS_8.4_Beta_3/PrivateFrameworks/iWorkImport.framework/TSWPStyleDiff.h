@@ -10,9 +10,9 @@
     TSSStyle *_style;
 }
 
-@property(assign,retain) TSSStylePropertyChangeSet * changeSet;
-@property(assign,retain) TSSStylePropertyChangeSet * previouslyAppliedChangeSet;
-@property(assign,retain) TSSStyle * style;
+@property (nonatomic, retain) TSSStylePropertyChangeSet *changeSet;
+@property (nonatomic, retain) TSSStylePropertyChangeSet *previouslyAppliedChangeSet;
+@property (nonatomic, retain) TSSStyle *style;
 
 - (id)changeSet;
 - (id)changedPropertyNames;

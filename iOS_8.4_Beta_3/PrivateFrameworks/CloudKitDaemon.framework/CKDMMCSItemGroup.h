@@ -9,14 +9,14 @@
     NSArray *_tuple;
 }
 
-@property(assign,readwrite) bool complete;
-@property(assign,readonly) NSURL * contentBaseURL;
-@property(assign,retain) NSError * error;
-@property(assign,readonly) NSArray * items;
-@property(assign,readonly) NSString * owner;
-@property(assign,readonly) NSString * requestor;
-@property(assign,retain) NSArray * tuple;
-@property(assign,readonly) bool useAuthRequests;
+@property (nonatomic) bool complete;
+@property (nonatomic, readonly) NSURL *contentBaseURL;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic, readonly) NSString *owner;
+@property (nonatomic, readonly) NSString *requestor;
+@property (nonatomic, retain) NSArray *tuple;
+@property (nonatomic, readonly) bool useAuthRequests;
 
 + (id)tupleForItem:(id)arg1;
 

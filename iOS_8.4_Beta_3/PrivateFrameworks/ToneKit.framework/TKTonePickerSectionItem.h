@@ -9,14 +9,14 @@
     unsigned long long _sectionHeader;
 }
 
-@property(setter=_setParentTonePickerController:,assign,readwrite) TKTonePickerController * _parentTonePickerController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long numberOfChildren;
-@property(assign,readwrite) unsigned long long regularToneSectionIndex;
-@property(assign,readwrite) unsigned long long sectionHeader;
-@property(assign,readonly) Class superclass;
+@property (setter=_setParentTonePickerController:, nonatomic) TKTonePickerController *_parentTonePickerController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long numberOfChildren;
+@property (nonatomic) unsigned long long regularToneSectionIndex;
+@property (nonatomic) unsigned long long sectionHeader;
+@property (readonly) Class superclass;
 
 - (void)_appendDescriptionOfAttributesToString:(id)arg1;
 - (id)_parentTonePickerController;

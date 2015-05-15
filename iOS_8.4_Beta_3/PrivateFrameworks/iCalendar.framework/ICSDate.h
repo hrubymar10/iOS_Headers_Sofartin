@@ -4,7 +4,7 @@
 
 @interface ICSDate : ICSProperty
 
-@property(assign,retain) NSString * tzid;
+@property (nonatomic, retain) NSString *tzid;
 
 - (id)components;
 - (id)description;

@@ -4,14 +4,14 @@
 
 @interface SARestaurantOpening : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSURL * bookingId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUIAppPunchOut * makeReservationPunchOut;
-@property(assign,copy) NSNumber * partySize;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SACalendar * timeSlot;
+@property (nonatomic, copy) NSURL *bookingId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUIAppPunchOut *makeReservationPunchOut;
+@property (nonatomic, copy) NSNumber *partySize;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SACalendar *timeSlot;
 
 + (id)opening;
 + (id)openingWithDictionary:(id)arg1 context:(id)arg2;

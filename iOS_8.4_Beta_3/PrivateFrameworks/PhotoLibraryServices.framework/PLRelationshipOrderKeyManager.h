@@ -12,7 +12,7 @@
     PLPhotoLibrary *_photoLibrary;
 }
 
-@property(assign,readonly) bool hasStashedLocationValues;
+@property (nonatomic, readonly) bool hasStashedLocationValues;
 
 + (id)sharedManager;
 

@@ -4,7 +4,7 @@
 
 @interface SASetClientData : SABaseClientBoundCommand
 
-@property(assign,copy) NSNumber * holdToTalkThresholdInMilliseconds;
+@property (nonatomic, copy) NSNumber *holdToTalkThresholdInMilliseconds;
 
 + (id)setClientData;
 + (id)setClientDataWithDictionary:(id)arg1 context:(id)arg2;

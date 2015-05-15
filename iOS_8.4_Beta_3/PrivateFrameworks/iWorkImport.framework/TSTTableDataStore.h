@@ -28,7 +28,7 @@
     TSTTileIDKeyDict *mTileStorage;
 }
 
-@property(assign,readonly) bool hasPasteboardCustomFormats;
+@property (nonatomic, readonly) bool hasPasteboardCustomFormats;
 
 - (id)addPasteboardCustomFormat:(id)arg1 toDocument:(id)arg2 updatingPasteboardFormat:(bool)arg3;
 - (void)clearPasteboardCustomFormatMap;

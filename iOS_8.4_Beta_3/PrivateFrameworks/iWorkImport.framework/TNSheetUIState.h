@@ -31,16 +31,16 @@
     } mVisibleRect;
 }
 
-@property(assign,readwrite) int archivedDeviceIdiom;
-@property(assign,readwrite) bool hasPreviousVisibleRect;
-@property(assign,readwrite) bool hasVisibleRect;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } previousScrollPosition;
-@property(assign,readwrite) float previousViewScale;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } previousVisibleRect;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } scrollPosition;
-@property(assign,retain) TSKSelectionPath * selectionPath;
-@property(assign,readwrite) float viewScale;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } visibleRect;
+@property (nonatomic) int archivedDeviceIdiom;
+@property (nonatomic) bool hasPreviousVisibleRect;
+@property (nonatomic) bool hasVisibleRect;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } previousScrollPosition;
+@property (nonatomic) float previousViewScale;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } previousVisibleRect;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } scrollPosition;
+@property (nonatomic, retain) TSKSelectionPath *selectionPath;
+@property (nonatomic) float viewScale;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } visibleRect;
 
 + (int)currentDeviceIdiom;
 + (id)sheetUIState;

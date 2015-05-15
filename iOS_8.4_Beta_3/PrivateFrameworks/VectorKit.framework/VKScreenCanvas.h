@@ -53,24 +53,24 @@
     VKWorld *_world;
 }
 
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  bgColor; /* unknown property attribute:  1>=[4f]} */
-@property(assign,readonly) VKCamera * camera;
-@property(assign,readonly) NSArray * cameraControllers;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) float debugFramesPerSecond;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) struct VKEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,readwrite) struct VKEdgeInsets { double x1; double x2; double x3; double x4; } fullyOccludedEdgeInsets;
-@property(getter=isGesturing,assign,readwrite) bool gesturing;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool iconsShouldAlignToPixels;
-@property(assign,readwrite) struct VKEdgeInsets { double x1; double x2; double x3; double x4; } labelEdgeInsets;
-@property(assign,readwrite) <MDMapControllerDelegate> * mapDelegate;
-@property(assign,readonly) bool needsInitialization;
-@property(assign,readwrite) bool rendersInBackground;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long targetDisplay;
-@property(assign,readonly) VKWorld * world;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  bgColor; /* unknown property attribute:  1>=[4f]} */
+@property (nonatomic, readonly) VKCamera *camera;
+@property (nonatomic, readonly) NSArray *cameraControllers;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) float debugFramesPerSecond;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) struct VKEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic) struct VKEdgeInsets { double x1; double x2; double x3; double x4; } fullyOccludedEdgeInsets;
+@property (getter=isGesturing, nonatomic) bool gesturing;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool iconsShouldAlignToPixels;
+@property (nonatomic) struct VKEdgeInsets { double x1; double x2; double x3; double x4; } labelEdgeInsets;
+@property (nonatomic) <MDMapControllerDelegate> *mapDelegate;
+@property (nonatomic, readonly) bool needsInitialization;
+@property (nonatomic) bool rendersInBackground;
+@property (readonly) Class superclass;
+@property (nonatomic) long long targetDisplay;
+@property (nonatomic, readonly) VKWorld *world;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

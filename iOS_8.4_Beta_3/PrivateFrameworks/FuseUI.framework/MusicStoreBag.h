@@ -6,8 +6,8 @@
     NSDictionary *_bagDictionary;
 }
 
-@property(assign,readonly) NSDictionary * bagDictionary;
-@property(assign,readonly) NSDictionary * tabConfigurations;
+@property (nonatomic, readonly) NSDictionary *bagDictionary;
+@property (nonatomic, readonly) NSDictionary *tabConfigurations;
 
 - (void).cxx_destruct;
 - (id)bagDictionary;

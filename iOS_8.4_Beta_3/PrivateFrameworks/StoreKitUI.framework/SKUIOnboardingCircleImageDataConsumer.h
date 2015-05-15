@@ -11,9 +11,9 @@
     bool _usesSaturationFilter;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } outputSize;
-@property(assign,copy) UIColor * tintColor;
-@property(assign,readwrite) bool usesSaturationFilter;
+@property (nonatomic) struct CGSize { double x1; double x2; } outputSize;
+@property (nonatomic, copy) UIColor *tintColor;
+@property (nonatomic) bool usesSaturationFilter;
 
 - (void).cxx_destruct;
 - (id)_saturationBackgroundImageWithSize:(struct CGSize { double x1; double x2; })arg1;

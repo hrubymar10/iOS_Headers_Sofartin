@@ -7,8 +7,8 @@
     NSNumber *inputSharpness;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputSharpness;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputSharpness;
 
 + (id)customAttributes;
 

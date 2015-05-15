@@ -10,8 +10,8 @@
     bool _wantsDebugCallbacks;
 }
 
-@property(assign,copy) NSArray * groupSpecifiers;
-@property(assign,copy) NSArray * specifiers;
+@property (nonatomic, readonly, copy) NSArray *groupSpecifiers;
+@property (nonatomic, readonly, copy) NSArray *specifiers;
 
 + (bool)_wantsDebuggingCallbacks;
 + (id)groupIndexWithSpecifiers:(id)arg1;

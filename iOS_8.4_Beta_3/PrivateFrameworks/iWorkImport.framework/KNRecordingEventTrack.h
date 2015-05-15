@@ -7,8 +7,8 @@
     NSString *mType;
 }
 
-@property(assign,readonly) NSArray * events;
-@property(assign,readonly) NSString * type;
+@property (nonatomic, readonly) NSArray *events;
+@property (nonatomic, readonly) NSString *type;
 
 - (void)dealloc;
 - (id)eventTrackByReplacingSegmentAfterTime:(double)arg1 withEventTrack:(id)arg2;

@@ -4,7 +4,7 @@
 
 @interface NSOutputStream : NSStream
 
-@property(assign,readonly) bool hasSpaceAvailable;
+@property (readonly) bool hasSpaceAvailable;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)outputStreamToBuffer:(char *)arg1 capacity:(unsigned long long)arg2;

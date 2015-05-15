@@ -6,9 +6,9 @@
     <IRInterfaceDelegate> *_delegate;
 }
 
-@property(assign,readonly) NSArray * buttons;
-@property(assign,readwrite) <IRInterfaceDelegate> * delegate;
-@property(assign,readonly) unsigned long long maxStoredCommands;
+@property (nonatomic, readonly) NSArray *buttons;
+@property (nonatomic) <IRInterfaceDelegate> *delegate;
+@property (nonatomic, readonly) unsigned long long maxStoredCommands;
 
 - (id)buttons;
 - (bool)clearAllStoredCommands:(id*)arg1;

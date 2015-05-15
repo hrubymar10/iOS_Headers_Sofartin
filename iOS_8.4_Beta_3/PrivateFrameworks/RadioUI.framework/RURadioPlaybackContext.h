@@ -13,13 +13,13 @@
     bool _transitioningPlaybackModes;
 }
 
-@property(assign,copy) NSArray * allPreparedAdSlotRadioTracks;
-@property(assign,retain) SSVPlaybackLease * playbackLease;
-@property(assign,retain) MPAVItem * prefixItem;
-@property(assign,retain) RadioStation * station;
-@property(assign,retain) RadioStationMatchContext * stationMatchContext;
-@property(assign,copy) NSArray * tracks;
-@property(getter=isTransitioningPlaybackModes,assign,readwrite) bool transitioningPlaybackModes;
+@property (nonatomic, readonly, copy) NSArray *allPreparedAdSlotRadioTracks;
+@property (nonatomic, retain) SSVPlaybackLease *playbackLease;
+@property (nonatomic, retain) MPAVItem *prefixItem;
+@property (nonatomic, retain) RadioStation *station;
+@property (nonatomic, retain) RadioStationMatchContext *stationMatchContext;
+@property (nonatomic, copy) NSArray *tracks;
+@property (getter=isTransitioningPlaybackModes, nonatomic) bool transitioningPlaybackModes;
 
 + (Class)queueFeederClass;
 + (void)setDefaultPlaybackLease:(id)arg1;

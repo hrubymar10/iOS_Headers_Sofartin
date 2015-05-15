@@ -15,8 +15,8 @@
     bool _supportsPhotoCaching;
 }
 
-@property(assign,readwrite) <PLAirPlaySessionDataSource> * dataSource;
-@property(assign,readwrite) bool streamingLocalSlideShow;
+@property (nonatomic) <PLAirPlaySessionDataSource> *dataSource;
+@property (nonatomic) bool streamingLocalSlideShow;
 
 + (void)beginNetworkAssertion;
 + (bool)canDisplayMedia:(id)arg1;

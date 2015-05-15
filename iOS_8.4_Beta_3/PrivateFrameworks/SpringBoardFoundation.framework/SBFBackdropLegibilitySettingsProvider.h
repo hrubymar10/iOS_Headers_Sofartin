@@ -8,12 +8,12 @@
     _UILegibilitySettings *_legibilitySettings;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SBFLegibilitySettingsProviderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) _UILegibilitySettings * legibilitySettings;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SBFLegibilitySettingsProviderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) _UILegibilitySettings *legibilitySettings;
+@property (readonly) Class superclass;
 
 - (void)backdropViewDidChange:(id)arg1;
 - (void)dealloc;

@@ -6,12 +6,12 @@
     NSDictionary *_exportSettings;
 }
 
-@property(assign,readonly) NSDictionary * baseAudioSettings;
-@property(assign,readonly) NSDictionary * baseVideoSettings;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSDictionary *baseAudioSettings;
+@property (nonatomic, readonly) NSDictionary *baseVideoSettings;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)baseAudioSettings;
 - (id)baseVideoSettings;

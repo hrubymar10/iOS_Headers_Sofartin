@@ -12,12 +12,12 @@
     NSArray *_variableConstraints;
 }
 
-@property(assign,retain) ABCardGroupItem * cardGroupItem;
-@property(assign,retain) CNContactStyle * contactStyle;
-@property(assign,readwrite) bool hasBeenDisplayed;
-@property(assign,readwrite) double leftContentMargin;
-@property(assign,readwrite) double rightContentMargin;
-@property(assign,readwrite) bool showSeparator;
+@property (nonatomic, retain) ABCardGroupItem *cardGroupItem;
+@property (nonatomic, retain) CNContactStyle *contactStyle;
+@property (nonatomic) bool hasBeenDisplayed;
+@property (nonatomic) double leftContentMargin;
+@property (nonatomic) double rightContentMargin;
+@property (nonatomic) bool showSeparator;
 
 - (id)cardGroupItem;
 - (id)constantConstraints;

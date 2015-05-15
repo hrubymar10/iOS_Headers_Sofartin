@@ -12,14 +12,14 @@
     double _timestamp;
 }
 
-@property(assign,retain) NSString * bundleIdentifier;
-@property(assign,retain) GEOLatLng * destination;
-@property(assign,readonly) bool hasBundleIdentifier;
-@property(assign,readonly) bool hasDestination;
-@property(assign,readonly) bool hasSource;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) GEOLatLng * source;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic, retain) GEOLatLng *destination;
+@property (nonatomic, readonly) bool hasBundleIdentifier;
+@property (nonatomic, readonly) bool hasDestination;
+@property (nonatomic, readonly) bool hasSource;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) GEOLatLng *source;
+@property (nonatomic) double timestamp;
 
 - (id)bundleIdentifier;
 - (void)copyTo:(id)arg1;

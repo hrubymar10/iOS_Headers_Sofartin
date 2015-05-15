@@ -6,7 +6,7 @@
     AVAssetWriterInputPassDescriptionInternal *_internal;
 }
 
-@property(assign,readonly) NSArray * sourceTimeRanges;
+@property (nonatomic, readonly) NSArray *sourceTimeRanges;
 
 - (void)dealloc;
 - (id)description;

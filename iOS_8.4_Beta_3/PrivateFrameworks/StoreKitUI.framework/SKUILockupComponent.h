@@ -13,12 +13,12 @@
     } _lockupStyle;
 }
 
-@property(assign,readonly) bool _needsItemData;
-@property(assign,readonly) SKUIEditorialComponent * editorial;
-@property(assign,readonly) SKUIItem * item;
-@property(assign,readonly) long long itemIdentifier;
-@property(assign,readonly) struct SKUILockupStyle { long long x1; long long x2; unsigned long long x3; } lockupStyle;
-@property(assign,readonly) SKUILockupViewElement * viewElement;
+@property (nonatomic, readonly) bool _needsItemData;
+@property (nonatomic, readonly) SKUIEditorialComponent *editorial;
+@property (nonatomic, readonly) SKUIItem *item;
+@property (nonatomic, readonly) long long itemIdentifier;
+@property (nonatomic, readonly) struct SKUILockupStyle { long long x1; long long x2; unsigned long long x3; } lockupStyle;
+@property (nonatomic, readonly) SKUILockupViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (bool)_needsItemData;

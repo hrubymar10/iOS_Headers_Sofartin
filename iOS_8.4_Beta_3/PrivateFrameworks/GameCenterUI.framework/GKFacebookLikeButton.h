@@ -15,16 +15,16 @@
     GKStoreItemInternal *_storeItem;
 }
 
-@property(assign,retain) GKButton * button;
-@property(assign,retain) UIView * containerSpacerLeft;
-@property(assign,retain) UIView * containerSpacerRight;
-@property(assign,retain) UIView * containerView;
-@property(assign,retain) GKLabel * labelView;
-@property(assign,retain) UIImageView * logoView;
-@property(assign,retain) GKOpenGraphNode * openGraphNode;
-@property(assign,retain) NSArray * replaceableConstraints;
-@property(assign,retain) UIActivityIndicatorView * spinner;
-@property(assign,retain) GKStoreItemInternal * storeItem;
+@property (nonatomic, retain) GKButton *button;
+@property (nonatomic, retain) UIView *containerSpacerLeft;
+@property (nonatomic, retain) UIView *containerSpacerRight;
+@property (nonatomic, retain) UIView *containerView;
+@property (nonatomic, retain) GKLabel *labelView;
+@property (nonatomic, retain) UIImageView *logoView;
+@property (nonatomic, retain) GKOpenGraphNode *openGraphNode;
+@property (nonatomic, retain) NSArray *replaceableConstraints;
+@property (nonatomic, retain) UIActivityIndicatorView *spinner;
+@property (nonatomic, retain) GKStoreItemInternal *storeItem;
 
 - (void)applyConstraints;
 - (id)button;

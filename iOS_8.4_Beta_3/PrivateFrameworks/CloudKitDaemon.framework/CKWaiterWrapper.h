@@ -8,9 +8,9 @@
     NSArray *_zoneIDs;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,retain) id waiter;
-@property(assign,retain) NSArray * zoneIDs;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic, retain) id waiter;
+@property (nonatomic, retain) NSArray *zoneIDs;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

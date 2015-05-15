@@ -4,8 +4,8 @@
 
 @interface SLFacebookRequest : SLRequest
 
-@property(assign,retain) NSString * accessToken;
-@property(assign,readwrite) int responseDataFormat;
+@property (retain) NSString *accessToken;
+@property int responseDataFormat;
 
 - (id)accessToken;
 - (id)initWithURL:(id)arg1 parameters:(id)arg2 requestMethod:(long long)arg3;

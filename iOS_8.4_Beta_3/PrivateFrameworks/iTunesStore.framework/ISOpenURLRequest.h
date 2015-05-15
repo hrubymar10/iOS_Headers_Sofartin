@@ -10,11 +10,11 @@
     NSString *_urlBagKey;
 }
 
-@property(getter=isITunesStoreURL,assign,readwrite) bool ITunesStoreURL;
-@property(assign,retain) NSURL * URL;
-@property(assign,copy) NSString * URLBagKey;
-@property(assign,readwrite) bool interruptsKeybagRefresh;
-@property(assign,copy) NSString * targetIdentifier;
+@property (getter=isITunesStoreURL, nonatomic) bool ITunesStoreURL;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic, copy) NSString *URLBagKey;
+@property (nonatomic) bool interruptsKeybagRefresh;
+@property (nonatomic, copy) NSString *targetIdentifier;
 
 + (id)openURLRequestWithURL:(id)arg1;
 

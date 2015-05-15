@@ -10,16 +10,16 @@
     NSURL *_urlToAdd;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CoreDAVTaskGroupDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) CoreDAVPropFindTask * fetchTask;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSURL * inboxURL;
-@property(assign,readwrite) int state;
-@property(assign,retain) NSString * suffixToFilterOut;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSURL * urlToAdd;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CoreDAVTaskGroupDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) CoreDAVPropFindTask *fetchTask;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSURL *inboxURL;
+@property (nonatomic) int state;
+@property (nonatomic, retain) NSString *suffixToFilterOut;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSURL *urlToAdd;
 
 - (void)_finishWithError:(id)arg1 state:(int)arg2;
 - (void)_startFetchFreeBusySet;

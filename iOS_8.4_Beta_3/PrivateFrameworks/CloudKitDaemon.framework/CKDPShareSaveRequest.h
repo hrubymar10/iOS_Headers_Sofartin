@@ -8,12 +8,12 @@
     NSData *_shortTokenHash;
 }
 
-@property(assign,readonly) bool hasProtectedFullToken;
-@property(assign,readonly) bool hasShare;
-@property(assign,readonly) bool hasShortTokenHash;
-@property(assign,retain) NSData * protectedFullToken;
-@property(assign,retain) CKDPShare * share;
-@property(assign,retain) NSData * shortTokenHash;
+@property (nonatomic, readonly) bool hasProtectedFullToken;
+@property (nonatomic, readonly) bool hasShare;
+@property (nonatomic, readonly) bool hasShortTokenHash;
+@property (nonatomic, retain) NSData *protectedFullToken;
+@property (nonatomic, retain) CKDPShare *share;
+@property (nonatomic, retain) NSData *shortTokenHash;
 
 + (id)options;
 

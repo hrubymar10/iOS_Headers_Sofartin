@@ -7,8 +7,8 @@
     NSString *_regionName;
 }
 
-@property(assign,retain) NSString * regionCode;
-@property(assign,retain) NSString * regionName;
+@property (nonatomic, retain) NSString *regionCode;
+@property (nonatomic, retain) NSString *regionName;
 
 + (id)regionWithName:(id)arg1 code:(id)arg2;
 

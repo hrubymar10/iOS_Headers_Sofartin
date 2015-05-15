@@ -14,11 +14,11 @@
     NSDictionary *_resultingOverrideBagDictionary;
 }
 
-@property(assign,readwrite) bool disableArtworkLoading;
-@property(assign,readwrite) bool includeCleanTracksOnly;
-@property(assign,readwrite) bool isAutomaticUpdate;
-@property(assign,copy) NSString * referer;
-@property(assign,copy) NSDictionary * resultingOverrideBagDictionary;
+@property (nonatomic) bool disableArtworkLoading;
+@property (nonatomic) bool includeCleanTracksOnly;
+@property (nonatomic) bool isAutomaticUpdate;
+@property (nonatomic, copy) NSString *referer;
+@property (nonatomic, readonly, copy) NSDictionary *resultingOverrideBagDictionary;
 
 - (void).cxx_destruct;
 - (id)_sortedChangesByType:(id)arg1;

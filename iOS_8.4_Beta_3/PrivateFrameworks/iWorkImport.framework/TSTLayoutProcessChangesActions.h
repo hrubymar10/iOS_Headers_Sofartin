@@ -13,14 +13,14 @@
     bool mLayoutUpdateChildren;
 }
 
-@property(assign,readwrite) bool layoutInvalidate;
-@property(assign,readwrite) bool layoutInvalidateChildren;
-@property(assign,readwrite) bool layoutInvalidateProvider;
-@property(assign,readwrite) bool layoutInvalidateSize;
-@property(assign,readwrite) bool layoutInvalidateTableNameVisibility;
-@property(assign,readwrite) bool layoutSpacesInvalidateCoordinates;
-@property(assign,readwrite) bool layoutSpacesInvalidateTableOffsets;
-@property(assign,readwrite) bool layoutUpdateChildren;
+@property (nonatomic) bool layoutInvalidate;
+@property (nonatomic) bool layoutInvalidateChildren;
+@property (nonatomic) bool layoutInvalidateProvider;
+@property (nonatomic) bool layoutInvalidateSize;
+@property (nonatomic) bool layoutInvalidateTableNameVisibility;
+@property (nonatomic) bool layoutSpacesInvalidateCoordinates;
+@property (nonatomic) bool layoutSpacesInvalidateTableOffsets;
+@property (nonatomic) bool layoutUpdateChildren;
 
 - (bool)layoutInvalidate;
 - (bool)layoutInvalidateChildren;

@@ -17,13 +17,13 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UILabel * bodyLabel;
-@property(assign,readwrite) <PUCloudPhotoWelcomeViewDelegate> * delegate;
-@property(assign,retain) UILabel * finePrintLabel;
-@property(assign,retain) UIButton * goButton;
-@property(getter=goButtonIsEnabled,assign,readwrite) bool goButtonEnabled;
-@property(assign,retain) UIImageView * graphicImageView;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) UILabel *bodyLabel;
+@property (nonatomic) <PUCloudPhotoWelcomeViewDelegate> *delegate;
+@property (nonatomic, retain) UILabel *finePrintLabel;
+@property (nonatomic, retain) UIButton *goButton;
+@property (getter=goButtonIsEnabled, nonatomic) bool goButtonEnabled;
+@property (nonatomic, retain) UIImageView *graphicImageView;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 + (void)initialize;
 

@@ -10,10 +10,10 @@
     } _has;
 }
 
-@property(assign,retain) NSData * comment;
-@property(assign,readwrite) bool encrypted;
-@property(assign,readonly) bool hasComment;
-@property(assign,readwrite) bool hasEncrypted;
+@property (nonatomic, retain) NSData *comment;
+@property (nonatomic) bool encrypted;
+@property (nonatomic, readonly) bool hasComment;
+@property (nonatomic) bool hasEncrypted;
 
 - (void).cxx_destruct;
 - (id)comment;

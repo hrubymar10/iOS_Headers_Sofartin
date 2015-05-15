@@ -4,10 +4,10 @@
 
 @interface NSValue : NSObject <NSCopying, NSSecureCoding, TSDMixing>
 
-@property(assign,readonly) struct CATransform3D { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; double x10; double x11; double x12; double x13; double x14; double x15; double x16; } CATransform3DValue;
-@property(assign,readonly) struct { double x1; double x2; } MKCoordinateSpanValue;
-@property(assign,readonly) struct { double x1; double x2; } MKCoordinateValue;
-@property(assign,readonly) const char * objCType;
+@property (readonly) struct CATransform3D { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; double x10; double x11; double x12; double x13; double x14; double x15; double x16; } CATransform3DValue;
+@property (readonly) struct { double x1; double x2; } MKCoordinateSpanValue;
+@property (readonly) struct { double x1; double x2; } MKCoordinateValue;
+@property (readonly) const char *objCType;
 
 + (id)SCN_valueWithCGPoint:(struct CGPoint { double x1; double x2; })arg1;
 + (id)_gkValueWithGLKVector3:(union _GLKVector3 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; struct { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; struct { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; float x4[3]; })arg1;
@@ -34,7 +34,6 @@
 + (id)valueWithCMTime:(struct { long long x1; int x2; unsigned int x3; long long x4; })arg1;
 + (id)valueWithCMTimeMapping:(struct { struct { struct { long long x_1_2_1; int x_1_2_2; unsigned int x_1_2_3; long long x_1_2_4; } x_1_1_1; struct { long long x_2_2_1; int x_2_2_2; unsigned int x_2_2_3; long long x_2_2_4; } x_1_1_2; } x1; struct { struct { long long x_1_2_1; int x_1_2_2; unsigned int x_1_2_3; long long x_1_2_4; } x_2_1_1; struct { long long x_2_2_1; int x_2_2_2; unsigned int x_2_2_3; long long x_2_2_4; } x_2_1_2; } x2; })arg1;
 + (id)valueWithCMTimeRange:(struct { struct { long long x_1_1_1; int x_1_1_2; unsigned int x_1_1_3; long long x_1_1_4; } x1; struct { long long x_2_1_1; int x_2_1_2; unsigned int x_2_1_3; long long x_2_1_4; } x2; })arg1;
-+ (id)valueWithDDRange:(struct _DDRange { unsigned long long x1; unsigned long long x2; })arg1;
 + (id)valueWithEdgeInsets:(struct NSEdgeInsets { double x1; double x2; double x3; double x4; })arg1;
 + (id)valueWithMKCoordinate:(struct { double x1; double x2; })arg1;
 + (id)valueWithMKCoordinateSpan:(struct { double x1; double x2; })arg1;
@@ -101,8 +100,6 @@
 - (Class)classForCoder;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)cplFullDescription;
-- (long long)ddrangeCompare:(id)arg1;
-- (struct _DDRange { unsigned long long x1; unsigned long long x2; })ddrangeValue;
 - (id)description;
 - (struct NSEdgeInsets { double x1; double x2; double x3; double x4; })edgeInsetsValue;
 - (void)encodeWithCAMLWriter:(id)arg1;

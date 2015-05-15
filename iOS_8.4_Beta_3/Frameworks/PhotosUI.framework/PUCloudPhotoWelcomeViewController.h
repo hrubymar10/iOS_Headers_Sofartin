@@ -11,12 +11,12 @@
     PUCloudPhotoWelcomeView *_welcomeView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIBarButtonItem * skipBarButtonItem;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) PUCloudPhotoWelcomeView * welcomeView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIBarButtonItem *skipBarButtonItem;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) PUCloudPhotoWelcomeView *welcomeView;
 
 + (void)_enablePhotoStream;
 + (bool)_isPhotoStreamEnabled;

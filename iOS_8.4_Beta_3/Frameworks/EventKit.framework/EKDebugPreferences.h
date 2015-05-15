@@ -6,8 +6,8 @@
     CalPreferences *_preferences;
 }
 
-@property(assign,readwrite) double availabilityFreshnessWindow;
-@property(assign,readwrite) double travelLookaheadInterval;
+@property (nonatomic) double availabilityFreshnessWindow;
+@property (nonatomic) double travelLookaheadInterval;
 
 + (id)shared;
 

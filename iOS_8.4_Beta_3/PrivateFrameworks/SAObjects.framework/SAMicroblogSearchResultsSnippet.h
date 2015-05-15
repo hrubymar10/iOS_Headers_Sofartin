@@ -4,7 +4,7 @@
 
 @interface SAMicroblogSearchResultsSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * searches;
+@property (nonatomic, copy) NSArray *searches;
 
 + (id)searchResultsSnippet;
 + (id)searchResultsSnippetWithDictionary:(id)arg1 context:(id)arg2;

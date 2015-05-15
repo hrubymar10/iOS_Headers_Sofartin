@@ -6,8 +6,8 @@
     GSTemporaryStorage *_ts;
 }
 
-@property(assign,readonly) NSString * nameSpace;
-@property(assign,readonly) NSObject<GSAdditionStoring> * storage;
+@property (nonatomic, readonly) NSString *nameSpace;
+@property (nonatomic, readonly) NSObject<GSAdditionStoring> *storage;
 
 - (void)dealloc;
 - (bool)generationsRemove:(id)arg1 error:(id*)arg2;

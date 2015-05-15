@@ -11,16 +11,16 @@
     UICollectionViewLayout *_toLayout;
 }
 
-@property(assign,readwrite) bool crossFadeBottomBars;
-@property(assign,readwrite) bool crossFadeNavigationBar;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool interactionAborted;
-@property(assign,readwrite) UIPercentDrivenInteractiveTransition * interactionController;
-@property(assign,readwrite) long long operation;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UICollectionViewLayout * toLayout;
+@property (nonatomic) bool crossFadeBottomBars;
+@property (nonatomic) bool crossFadeNavigationBar;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool interactionAborted;
+@property (nonatomic) UIPercentDrivenInteractiveTransition *interactionController;
+@property (nonatomic) long long operation;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UICollectionViewLayout *toLayout;
 
 + (id)transitionForOperation:(long long)arg1 fromViewController:(id)arg2 toViewController:(id)arg3;
 

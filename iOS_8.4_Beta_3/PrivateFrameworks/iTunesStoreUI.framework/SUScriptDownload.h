@@ -6,9 +6,9 @@
     ISUDownload *_download;
 }
 
-@property(assign,readonly) NSNumber * adamID;
-@property(assign,readonly) NSString * phase;
-@property(assign,readonly) float progress;
+@property (readonly) NSNumber *adamID;
+@property (readonly) NSString *phase;
+@property (readonly) float progress;
 
 + (void)initialize;
 + (id)phaseStringForDownload:(id)arg1;

@@ -13,15 +13,15 @@
     ABModel *_model;
 }
 
-@property(assign,retain) ACAccountStore * accountStore;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isDirty,assign,readwrite) bool dirty;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hidesGlobalGroupWrapper;
-@property(assign,readwrite) bool hidesSearchableSources;
-@property(assign,retain) ABModel * model;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) ACAccountStore *accountStore;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isDirty, nonatomic) bool dirty;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hidesGlobalGroupWrapper;
+@property (nonatomic) bool hidesSearchableSources;
+@property (nonatomic, retain) ABModel *model;
+@property (readonly) Class superclass;
 
 - (id)accountDisplayNameAtIndex:(long long)arg1;
 - (id)accountStore;

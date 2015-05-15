@@ -11,8 +11,8 @@
     UIView *_lineView;
 }
 
-@property(assign,retain) UIColor * lineColor;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } lineOffset;
+@property (nonatomic, retain) UIColor *lineColor;
+@property (nonatomic) struct UIOffset { double x1; double x2; } lineOffset;
 
 - (void).cxx_destruct;
 - (void)layoutMarginsDidChange;

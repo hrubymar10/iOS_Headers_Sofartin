@@ -10,9 +10,9 @@
     bool _showingBlockedMessage;
 }
 
-@property(assign,retain) UIKeyboard * disabledKeyboard;
-@property(assign,retain) NSString * enterPasscodeReason;
-@property(assign,retain) NSString * enterPasscodeTitle;
+@property (nonatomic, retain) UIKeyboard *disabledKeyboard;
+@property (nonatomic, retain) NSString *enterPasscodeReason;
+@property (nonatomic, retain) NSString *enterPasscodeTitle;
 
 - (void)dealloc;
 - (void)didFinishEnteringText:(id)arg1;

@@ -8,11 +8,11 @@
     ISDialog *_dialog;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) ISDialog * dialog;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) ISDialog *dialog;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)_alertView;
 - (void)_completeWithButtonIndex:(long long)arg1;

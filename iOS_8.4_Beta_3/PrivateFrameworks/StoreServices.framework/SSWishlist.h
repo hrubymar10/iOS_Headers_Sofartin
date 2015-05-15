@@ -7,8 +7,8 @@
     SSSQLiteDatabase *_database;
 }
 
-@property(assign,readonly) long long accountIdentifier;
-@property(assign,copy) NSNumber * lastSyncTime;
+@property (nonatomic, readonly) long long accountIdentifier;
+@property (nonatomic, copy) NSNumber *lastSyncTime;
 
 + (bool)existsForAccountIdentifier:(long long)arg1;
 

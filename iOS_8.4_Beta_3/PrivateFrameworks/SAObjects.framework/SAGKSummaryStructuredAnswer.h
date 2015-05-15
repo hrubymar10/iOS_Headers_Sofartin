@@ -4,17 +4,17 @@
 
 @interface SAGKSummaryStructuredAnswer : AceObject <SAGKStructuredAnswer>
 
-@property(assign,copy) NSArray * answerPropertyGroups;
-@property(assign,copy) NSString * category;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * image;
-@property(assign,copy) NSString * imageCaption;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * titleAnnotation;
+@property (nonatomic, copy) NSArray *answerPropertyGroups;
+@property (nonatomic, copy) NSString *category;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURL *image;
+@property (nonatomic, copy) NSString *imageCaption;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *titleAnnotation;
 
 + (id)summaryStructuredAnswer;
 + (id)summaryStructuredAnswerWithDictionary:(id)arg1 context:(id)arg2;

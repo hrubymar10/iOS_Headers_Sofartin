@@ -9,14 +9,14 @@
     NSString *_selectedChatGUID;
 }
 
-@property(assign,retain) CKSpotlightQuery * currentQuery;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKConversationResultsControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * searchResults;
-@property(assign,retain) NSString * selectedChatGUID;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) CKSpotlightQuery *currentQuery;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKConversationResultsControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *searchResults;
+@property (nonatomic, retain) NSString *selectedChatGUID;
+@property (readonly) Class superclass;
 
 - (void)_contentSizeCategoryDidChange:(id)arg1;
 - (void)_selectChatGUID:(id)arg1;

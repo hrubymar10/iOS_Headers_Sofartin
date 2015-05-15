@@ -4,12 +4,12 @@
 
 @interface DOMHTMLBodyElement : DOMHTMLElement
 
-@property(assign,copy) NSString * aLink;
-@property(assign,copy) NSString * background;
-@property(assign,copy) NSString * bgColor;
-@property(assign,copy) NSString * link;
-@property(assign,copy) NSString * text;
-@property(assign,copy) NSString * vLink;
+@property (copy) NSString *aLink;
+@property (copy) NSString *background;
+@property (copy) NSString *bgColor;
+@property (copy) NSString *link;
+@property (copy) NSString *text;
+@property (copy) NSString *vLink;
 
 - (id)aLink;
 - (id)background;

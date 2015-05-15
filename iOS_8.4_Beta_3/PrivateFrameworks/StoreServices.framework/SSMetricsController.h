@@ -11,7 +11,7 @@
     NSObject<OS_dispatch_queue> *_serialQueue;
 }
 
-@property(getter=isFlushTimerEnabled,assign,readwrite) bool flushTimerEnabled;
+@property (getter=isFlushTimerEnabled, nonatomic) bool flushTimerEnabled;
 
 - (id)_connection;
 - (id)_cookieValuesForConfiguration:(id)arg1;

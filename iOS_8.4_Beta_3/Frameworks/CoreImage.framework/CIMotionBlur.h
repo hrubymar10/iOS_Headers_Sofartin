@@ -6,7 +6,7 @@
     NSNumber *inputAngle;
 }
 
-@property(assign,retain) NSNumber * inputAngle;
+@property (nonatomic, retain) NSNumber *inputAngle;
 
 + (id)customAttributes;
 

@@ -18,11 +18,11 @@
     <UIKeyboardKeyplaneTransitionDelegate> *_transitionDelegate;
 }
 
-@property(assign,copy) id completionBlock;
-@property(assign,readonly) double endHeight;
-@property(assign,readwrite) bool initiallyAtEnd;
-@property(assign,readonly) double startHeight;
-@property(assign,readwrite) <UIKeyboardKeyplaneTransitionDelegate> * transitionDelegate;
+@property (copy) id completionBlock;
+@property (nonatomic, readonly) double endHeight;
+@property (nonatomic) bool initiallyAtEnd;
+@property (nonatomic, readonly) double startHeight;
+@property (nonatomic) <UIKeyboardKeyplaneTransitionDelegate> *transitionDelegate;
 
 - (bool)canDisplayTransitionFromKeyplane:(id)arg1 toKeyplane:(id)arg2;
 - (void)commitTransitionRebuild;

@@ -15,16 +15,16 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) MSTimerGate * idleTimerGate;
-@property(assign,readonly) bool isAssertingBusyAssertion;
-@property(assign,readwrite) bool isShuttingDown;
-@property(assign,readwrite) int maxGroupedCallbackEventBatchCount;
-@property(assign,readwrite) double maxGroupedCallbackEventIdleInterval;
-@property(assign,readwrite) double maxGroupedCallbackEventStaleness;
-@property(assign,retain) NSObject<OS_dispatch_queue> * memberQueue;
-@property(assign,readwrite) MSASServerSideModel * model;
-@property(assign,retain) MSTimerGate * stalenessTimerGate;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) MSTimerGate *idleTimerGate;
+@property (nonatomic, readonly) bool isAssertingBusyAssertion;
+@property (nonatomic) bool isShuttingDown;
+@property (nonatomic) int maxGroupedCallbackEventBatchCount;
+@property (nonatomic) double maxGroupedCallbackEventIdleInterval;
+@property (nonatomic) double maxGroupedCallbackEventStaleness;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *memberQueue;
+@property (nonatomic) MSASServerSideModel *model;
+@property (nonatomic, retain) MSTimerGate *stalenessTimerGate;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)assertBusyAssertion;

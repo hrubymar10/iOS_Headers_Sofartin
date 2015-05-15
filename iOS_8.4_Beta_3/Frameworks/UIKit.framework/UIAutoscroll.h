@@ -16,13 +16,13 @@
     NSTimer *m_timer;
 }
 
-@property(assign,readwrite) bool active;
-@property(assign,readwrite) unsigned long long count;
-@property(assign,readwrite) int directions;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } point;
-@property(assign,readwrite) double repeatInterval;
-@property(assign,retain) UIView<UIAutoscrollContainer> * scrollContainer;
-@property(assign,retain) id target;
+@property (nonatomic) bool active;
+@property (nonatomic) unsigned long long count;
+@property (nonatomic) int directions;
+@property (nonatomic) struct CGPoint { double x1; double x2; } point;
+@property (nonatomic) double repeatInterval;
+@property (nonatomic, retain) UIView<UIAutoscrollContainer> *scrollContainer;
+@property (nonatomic, retain) id target;
 
 - (bool)active;
 - (unsigned long long)count;

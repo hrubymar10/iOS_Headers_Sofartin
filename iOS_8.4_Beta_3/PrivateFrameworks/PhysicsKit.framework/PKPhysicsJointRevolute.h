@@ -32,12 +32,12 @@
     } _jointDef;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } anchor;
-@property(assign,readwrite) double frictionTorque;
-@property(assign,readwrite) double lowerAngleLimit;
-@property(assign,readwrite) double rotationSpeed;
-@property(assign,readwrite) bool shouldEnableLimits;
-@property(assign,readwrite) double upperAngleLimit;
+@property (readonly) struct CGPoint { double x1; double x2; } anchor;
+@property (nonatomic) double frictionTorque;
+@property (nonatomic) double lowerAngleLimit;
+@property (nonatomic) double rotationSpeed;
+@property (nonatomic) bool shouldEnableLimits;
+@property (nonatomic) double upperAngleLimit;
 
 + (id)jointWithBodyA:(id)arg1 bodyB:(id)arg2 anchor:(struct CGPoint { double x1; double x2; })arg3;
 

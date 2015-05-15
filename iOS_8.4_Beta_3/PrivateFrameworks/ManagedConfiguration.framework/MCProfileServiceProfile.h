@@ -11,11 +11,11 @@
     NSData *_enrollmentIdentityPersistentID;
 }
 
-@property(assign,retain) NSString * URLString;
-@property(assign,retain) id challenge;
-@property(assign,readonly) bool confirmInstallation;
-@property(assign,retain) NSArray * deviceAttributes;
-@property(assign,retain) NSData * enrollmentIdentityPersistentID;
+@property (nonatomic, retain) NSString *URLString;
+@property (nonatomic, readonly, retain) id challenge;
+@property (nonatomic, readonly) bool confirmInstallation;
+@property (nonatomic, readonly, retain) NSArray *deviceAttributes;
+@property (nonatomic, retain) NSData *enrollmentIdentityPersistentID;
 
 - (void).cxx_destruct;
 - (id)URLString;

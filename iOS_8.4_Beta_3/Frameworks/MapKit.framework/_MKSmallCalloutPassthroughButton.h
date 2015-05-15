@@ -8,8 +8,8 @@
     UIControl *_targetControl;
 }
 
-@property(assign,readwrite) double leftHighlightInset;
-@property(assign,retain) UIControl * targetControl;
+@property (nonatomic) double leftHighlightInset;
+@property (nonatomic, retain) UIControl *targetControl;
 
 - (void).cxx_destruct;
 - (void)handleTap:(id)arg1;

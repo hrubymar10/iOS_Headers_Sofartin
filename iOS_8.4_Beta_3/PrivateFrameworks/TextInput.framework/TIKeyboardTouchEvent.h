@@ -14,12 +14,12 @@
     double _timestamp;
 }
 
-@property(assign,readonly) long long forcedKeyCode;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } location;
-@property(assign,readonly) long long pathIndex;
-@property(assign,readonly) double radius;
-@property(assign,readonly) int stage;
-@property(assign,readonly) double timestamp;
+@property (nonatomic, readonly) long long forcedKeyCode;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } location;
+@property (nonatomic, readonly) long long pathIndex;
+@property (nonatomic, readonly) double radius;
+@property (nonatomic, readonly) int stage;
+@property (nonatomic, readonly) double timestamp;
 
 + (bool)supportsSecureCoding;
 + (id)touchEventWithStage:(int)arg1 location:(struct CGPoint { double x1; double x2; })arg2 radius:(double)arg3 timestamp:(double)arg4 pathIndex:(long long)arg5 forcedKeyCode:(long long)arg6;

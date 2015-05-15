@@ -11,9 +11,9 @@
     UISnapshotView *_snapshotView;
 }
 
-@property(assign,readwrite) int mode;
-@property(assign,retain) QLPreviewViewController * previewViewController;
-@property(assign,retain) UIScreen * screen;
+@property int mode;
+@property (retain) QLPreviewViewController *previewViewController;
+@property (retain) UIScreen *screen;
 
 - (void)_createAirPlayWindowIfNeeded;
 - (void)_removeAirPlayWindow;

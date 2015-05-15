@@ -11,12 +11,12 @@
     CoreDAVItemWithNoChildren *_unauthenticated;
 }
 
-@property(assign,retain) CoreDAVItemWithNoChildren * all;
-@property(assign,retain) CoreDAVItemWithNoChildren * authenticated;
-@property(assign,retain) CoreDAVHrefItem * href;
-@property(assign,retain) CoreDAVItem * property;
-@property(assign,retain) CoreDAVItemWithNoChildren * selfItem;
-@property(assign,retain) CoreDAVItemWithNoChildren * unauthenticated;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *all;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *authenticated;
+@property (nonatomic, retain) CoreDAVHrefItem *href;
+@property (nonatomic, retain) CoreDAVItem *property;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *selfItem;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *unauthenticated;
 
 + (id)copyParseRules;
 

@@ -11,7 +11,7 @@
     void *_reserved;
 }
 
-@property(assign,copy) NSDictionary * dictionaryRepresentation;
+@property (readonly, copy) NSDictionary *dictionaryRepresentation;
 
 + (void)_appWillActivate;
 + (void)_appWillDeactivate;

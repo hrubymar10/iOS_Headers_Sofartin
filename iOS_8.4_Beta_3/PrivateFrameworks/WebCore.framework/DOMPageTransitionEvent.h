@@ -4,7 +4,7 @@
 
 @interface DOMPageTransitionEvent : DOMEvent
 
-@property(assign,readonly) bool persisted;
+@property (readonly) bool persisted;
 
 - (bool)persisted;
 

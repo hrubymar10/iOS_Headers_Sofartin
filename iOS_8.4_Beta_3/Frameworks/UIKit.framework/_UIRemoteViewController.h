@@ -47,16 +47,16 @@
     id _viewControllerOperatorProxy;
 }
 
-@property(setter=_setIsUpdatingSize:,assign,readwrite) bool _isUpdatingSize;
-@property(setter=_setTouchDeliveryPolicyAssertion:,assign,retain) BKSTouchDeliveryPolicyAssertion * _touchDeliveryPolicyAssertion;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct { unsigned int x1[8]; } serviceAuditToken;
-@property(assign,readonly) NSString * serviceBundleIdentifier;
-@property(assign,readonly) int serviceProcessIdentifier;
-@property(assign,readwrite) bool serviceViewShouldShareTouchesWithHost;
-@property(assign,readonly) Class superclass;
+@property (setter=_setIsUpdatingSize:, nonatomic) bool _isUpdatingSize;
+@property (setter=_setTouchDeliveryPolicyAssertion:, nonatomic, retain) BKSTouchDeliveryPolicyAssertion *_touchDeliveryPolicyAssertion;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct { unsigned int x1[8]; } serviceAuditToken;
+@property (nonatomic, readonly) NSString *serviceBundleIdentifier;
+@property (nonatomic, readonly) int serviceProcessIdentifier;
+@property (nonatomic) bool serviceViewShouldShareTouchesWithHost;
+@property (readonly) Class superclass;
 
 + (bool)__shouldAllowHostProcessToTakeFocus;
 + (bool)__shouldHostRemoteTextEffectsWindow;

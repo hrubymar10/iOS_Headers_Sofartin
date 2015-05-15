@@ -8,9 +8,9 @@
     unsigned long long _playlistsFilterType;
 }
 
-@property(assign,copy) NSSet * additionalQueryFilterPredicates;
-@property(assign,readwrite) unsigned long long playlistsConfigurationOptions;
-@property(assign,readwrite) unsigned long long playlistsFilterType;
+@property (nonatomic, readonly, copy) NSSet *additionalQueryFilterPredicates;
+@property (nonatomic) unsigned long long playlistsConfigurationOptions;
+@property (nonatomic) unsigned long long playlistsFilterType;
 
 + (void)getDetailViewController:(id*)arg1 playbackContext:(id*)arg2 forEntityValueContext:(id)arg3 sourceViewController:(id)arg4;
 

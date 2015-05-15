@@ -4,7 +4,7 @@
 
 @interface UIResignActiveAction : BSAction
 
-@property(assign,readonly) long long reason;
+@property (nonatomic, readonly) long long reason;
 
 - (long long)UIActionType;
 - (id)initWithInfo:(id)arg1 timeout:(double)arg2 forResponseOnQueue:(id)arg3 withHandler:(id)arg4;

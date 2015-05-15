@@ -13,11 +13,11 @@
     UIColor *_subTextLabelColor;
 }
 
-@property(assign,readwrite) UIColor * highlightColor;
-@property(assign,retain) UIColor * mainLabelColor;
-@property(assign,retain) PKPassSnapshotter * passSnapshotter;
-@property(assign,readwrite) bool showBillingAddress;
-@property(assign,retain) UIColor * subTextLabelColor;
+@property (nonatomic) UIColor *highlightColor;
+@property (nonatomic, retain) UIColor *mainLabelColor;
+@property (nonatomic, retain) PKPassSnapshotter *passSnapshotter;
+@property (nonatomic) bool showBillingAddress;
+@property (nonatomic, retain) UIColor *subTextLabelColor;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_cardArtFrame;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_censoredPANLabelFrame;

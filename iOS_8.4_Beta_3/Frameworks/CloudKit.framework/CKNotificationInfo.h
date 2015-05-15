@@ -14,15 +14,15 @@
     NSString *_soundName;
 }
 
-@property(assign,copy) NSString * alertActionLocalizationKey;
-@property(assign,copy) NSString * alertBody;
-@property(assign,copy) NSString * alertLaunchImage;
-@property(assign,copy) NSArray * alertLocalizationArgs;
-@property(assign,copy) NSString * alertLocalizationKey;
-@property(assign,copy) NSArray * desiredKeys;
-@property(assign,readwrite) bool shouldBadge;
-@property(assign,readwrite) bool shouldSendContentAvailable;
-@property(assign,copy) NSString * soundName;
+@property (nonatomic, copy) NSString *alertActionLocalizationKey;
+@property (nonatomic, copy) NSString *alertBody;
+@property (nonatomic, copy) NSString *alertLaunchImage;
+@property (nonatomic, copy) NSArray *alertLocalizationArgs;
+@property (nonatomic, copy) NSString *alertLocalizationKey;
+@property (nonatomic, copy) NSArray *desiredKeys;
+@property (nonatomic) bool shouldBadge;
+@property (nonatomic) bool shouldSendContentAvailable;
+@property (nonatomic, copy) NSString *soundName;
 
 + (id)notificationInfo;
 + (bool)supportsSecureCoding;

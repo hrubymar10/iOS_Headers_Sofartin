@@ -16,9 +16,9 @@
     NSMutableArray *_workoutFilesToSync;
 }
 
-@property(assign,readwrite) bool shouldMoveFilesToSynchedDirectoryWhenDone;
-@property(assign,readwrite) <SWSyncControllerDelegate> * syncDelegate;
-@property(assign,readwrite) long long uploadCount;
+@property (nonatomic) bool shouldMoveFilesToSynchedDirectoryWhenDone;
+@property (nonatomic) <SWSyncControllerDelegate> *syncDelegate;
+@property (nonatomic) long long uploadCount;
 
 + (void)releaseSyncInProgressFileLock;
 + (bool)takeSyncInProgressFileLock:(bool)arg1;

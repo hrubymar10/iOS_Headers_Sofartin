@@ -9,10 +9,10 @@
     UIScrollView *_scrollView;
 }
 
-@property(assign,retain) UIPrinterSetupPINView * PINView;
-@property(assign,retain) UIPrinterSetupConnectingView * connectingView;
-@property(assign,retain) PKPrinter * printer;
-@property(assign,retain) UIScrollView * scrollView;
+@property (nonatomic, retain) UIPrinterSetupPINView *PINView;
+@property (nonatomic, retain) UIPrinterSetupConnectingView *connectingView;
+@property (nonatomic, retain) PKPrinter *printer;
+@property (nonatomic, retain) UIScrollView *scrollView;
 
 - (id)PINView;
 - (void)connectToPrinter;

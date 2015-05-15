@@ -8,8 +8,8 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIView * contentChildView;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) UIView *contentChildView;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)contentChildView;

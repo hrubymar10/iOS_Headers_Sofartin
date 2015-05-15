@@ -31,16 +31,16 @@
     VKTrafficIncidentImageManager *_trafficIncidentImageManager;
 }
 
-@property(assign,readonly) struct AlphaAtlas { unsigned int x1; bool x2; unsigned int x3; unsigned int x4; unsigned int x5; float x6; struct Texture2D {} *x7; }* alphaAtlas;
-@property(assign,readonly) struct Device { int (**x1)(); int x2; }* device;
-@property(assign,readonly) VKGGLTextureManager * gglTextureManager;
-@property(assign,readonly) struct IsoAlphaAtlas { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; float x5; struct Texture2D {} *x6; }* highInflationAlphaAtlas;
-@property(assign,readonly) VKIconManager * iconManager;
-@property(assign,readonly) struct IsoAlphaAtlas { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; float x5; struct Texture2D {} *x6; }* isoAlphaAtlas;
-@property(assign,readonly) VKResourceManager * resourceManager;
-@property(assign,readonly) VKShieldManager * shieldManager;
-@property(assign,readonly) VKStylesheetVendor * stylesheetVendor;
-@property(assign,readonly) VKTrafficIncidentImageManager * trafficIncidentImageManager;
+@property (nonatomic, readonly) struct AlphaAtlas { unsigned int x1; bool x2; unsigned int x3; unsigned int x4; unsigned int x5; float x6; struct Texture2D {} *x7; }*alphaAtlas;
+@property (nonatomic, readonly) struct Device { int (**x1)(); int x2; }*device;
+@property (nonatomic, readonly) VKGGLTextureManager *gglTextureManager;
+@property (nonatomic, readonly) struct IsoAlphaAtlas { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; float x5; struct Texture2D {} *x6; }*highInflationAlphaAtlas;
+@property (nonatomic, readonly) VKIconManager *iconManager;
+@property (nonatomic, readonly) struct IsoAlphaAtlas { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; float x5; struct Texture2D {} *x6; }*isoAlphaAtlas;
+@property (nonatomic, readonly) VKResourceManager *resourceManager;
+@property (nonatomic, readonly) VKShieldManager *shieldManager;
+@property (nonatomic, readonly) VKStylesheetVendor *stylesheetVendor;
+@property (nonatomic, readonly) VKTrafficIncidentImageManager *trafficIncidentImageManager;
 
 + (id)sharedResourcesForTileGroupIdentifier:(unsigned int)arg1;
 

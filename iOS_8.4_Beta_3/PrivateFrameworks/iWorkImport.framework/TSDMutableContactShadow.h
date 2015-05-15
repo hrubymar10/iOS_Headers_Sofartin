@@ -4,13 +4,13 @@
 
 @interface TSDMutableContactShadow : TSDContactShadow
 
-@property(assign,copy) TSUColor * TSUColor;
-@property(assign,readwrite) struct CGColor { }* color;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readwrite) double height;
-@property(assign,readwrite) double offset;
-@property(assign,readwrite) double perspective;
-@property(assign,readwrite) double radius;
+@property (nonatomic, copy) TSUColor *TSUColor;
+@property (nonatomic) struct CGColor { }*color;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic) double height;
+@property (nonatomic) double offset;
+@property (nonatomic) double perspective;
+@property (nonatomic) double radius;
 
 - (void)setColor:(struct CGColor { }*)arg1;
 - (void)setHeight:(double)arg1;

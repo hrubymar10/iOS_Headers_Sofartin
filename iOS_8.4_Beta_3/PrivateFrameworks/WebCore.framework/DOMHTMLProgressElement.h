@@ -4,10 +4,10 @@
 
 @interface DOMHTMLProgressElement : DOMHTMLElement
 
-@property(assign,readonly) DOMNodeList * labels;
-@property(assign,readwrite) double max;
-@property(assign,readonly) double position;
-@property(assign,readwrite) double value;
+@property (readonly) DOMNodeList *labels;
+@property double max;
+@property (readonly) double position;
+@property double value;
 
 - (id)labels;
 - (double)max;

@@ -15,10 +15,10 @@
     } _upconvertedText;
 }
 
-@property(assign,readonly) bool atEnd;
-@property(assign,readonly) WKDOMRange * currentRange;
-@property(assign,readonly) unsigned long long currentTextLength;
-@property(assign,readonly) const unsigned short* currentTextPointer;
+@property (readonly) bool atEnd;
+@property (readonly) WKDOMRange *currentRange;
+@property (readonly) unsigned long long currentTextLength;
+@property (readonly) const unsigned short*currentTextPointer;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

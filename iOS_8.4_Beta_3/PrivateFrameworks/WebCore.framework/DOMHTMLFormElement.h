@@ -4,15 +4,15 @@
 
 @interface DOMHTMLFormElement : DOMHTMLElement
 
-@property(assign,copy) NSString * acceptCharset;
-@property(assign,copy) NSString * action;
-@property(assign,readonly) DOMHTMLCollection * elements;
-@property(assign,copy) NSString * encoding;
-@property(assign,copy) NSString * enctype;
-@property(assign,readonly) int length;
-@property(assign,copy) NSString * method;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * target;
+@property (copy) NSString *acceptCharset;
+@property (copy) NSString *action;
+@property (readonly) DOMHTMLCollection *elements;
+@property (copy) NSString *encoding;
+@property (copy) NSString *enctype;
+@property (readonly) int length;
+@property (copy) NSString *method;
+@property (copy) NSString *name;
+@property (copy) NSString *target;
 
 - (id)acceptCharset;
 - (id)action;

@@ -9,10 +9,10 @@
     CIImage *inputTexture;
 }
 
-@property(assign,retain) CIVector * inputCenter;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputScale;
-@property(assign,retain) CIImage * inputTexture;
+@property (nonatomic, retain) CIVector *inputCenter;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputScale;
+@property (nonatomic, retain) CIImage *inputTexture;
 
 + (id)customAttributes;
 

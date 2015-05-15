@@ -15,14 +15,14 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int confidence;
-@property(assign,readwrite) bool hasConfidence;
-@property(assign,readwrite) bool hasImpossibleTransitions;
-@property(assign,readwrite) bool hasNearbyLocations;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int impossibleTransitions;
-@property(assign,readwrite) unsigned int nearbyLocations;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int confidence;
+@property (nonatomic) bool hasConfidence;
+@property (nonatomic) bool hasImpossibleTransitions;
+@property (nonatomic) bool hasNearbyLocations;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int impossibleTransitions;
+@property (nonatomic) unsigned int nearbyLocations;
+@property (nonatomic) unsigned long long timestamp;
 
 - (unsigned int)confidence;
 - (void)copyTo:(id)arg1;

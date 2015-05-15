@@ -21,14 +21,14 @@
     unsigned int _styleReference;
 }
 
-@property(assign,readonly) unsigned long long* attributeValues;
-@property(assign,readonly) unsigned long long attributeValuesCount;
-@property(assign,readwrite) bool hasStyleReference;
-@property(assign,readwrite) unsigned int key;
-@property(assign,readonly) unsigned int* nodeIndices;
-@property(assign,readonly) unsigned long long nodeIndicesCount;
-@property(assign,readwrite) unsigned int score;
-@property(assign,readwrite) unsigned int styleReference;
+@property (nonatomic, readonly) unsigned long long*attributeValues;
+@property (nonatomic, readonly) unsigned long long attributeValuesCount;
+@property (nonatomic) bool hasStyleReference;
+@property (nonatomic) unsigned int key;
+@property (nonatomic, readonly) unsigned int*nodeIndices;
+@property (nonatomic, readonly) unsigned long long nodeIndicesCount;
+@property (nonatomic) unsigned int score;
+@property (nonatomic) unsigned int styleReference;
 
 - (void)addAttributeValues:(unsigned long long)arg1;
 - (void)addNodeIndices:(unsigned int)arg1;

@@ -8,8 +8,8 @@
     long long _productItemIdentifier;
 }
 
-@property(assign,readonly) long long giftType;
-@property(assign,readonly) SKUIItem * productItem;
+@property (nonatomic, readonly) long long giftType;
+@property (nonatomic, readonly) SKUIItem *productItem;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

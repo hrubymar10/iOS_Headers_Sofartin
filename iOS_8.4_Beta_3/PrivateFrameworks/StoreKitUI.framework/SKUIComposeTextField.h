@@ -11,16 +11,16 @@
     UITextField *_textField;
 }
 
-@property(assign,readonly) long long composeReviewStyle;
-@property(assign,readonly) SKUIComposeTextFieldConfiguration * configuration;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
-@property(assign,readonly) UITextField * textField;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (nonatomic, readonly) long long composeReviewStyle;
+@property (nonatomic, readonly) SKUIComposeTextFieldConfiguration *configuration;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) id delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, readonly) UITextField *textField;
+@property (getter=isValid, nonatomic, readonly) bool valid;
 
 + (id)labelColorForStyle:(long long)arg1;
 + (id)labelFontForStyle:(long long)arg1;

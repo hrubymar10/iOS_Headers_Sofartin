@@ -26,26 +26,26 @@
     int _zLevel;
 }
 
-@property(assign,readwrite) bool brunnelEntry;
-@property(assign,readwrite) bool castShadow;
-@property(assign,readwrite) bool cropped;
-@property(assign,readwrite) bool hasBrunnelEntry;
-@property(assign,readwrite) bool hasCastShadow;
-@property(assign,readwrite) bool hasCropped;
-@property(assign,readonly) bool hasLaneCharacteristic;
-@property(assign,readwrite) bool hasRoadLaneCount;
-@property(assign,readwrite) bool hasRoadOffset;
-@property(assign,readwrite) bool hasSectionIndex;
-@property(assign,readwrite) bool hasShouldDrawLanes;
-@property(assign,readwrite) bool hasVertexIndex;
-@property(assign,readwrite) bool hasZLevel;
-@property(assign,retain) GEOVLaneCharacteristic * laneCharacteristic;
-@property(assign,readwrite) int roadLaneCount;
-@property(assign,readwrite) int roadOffset;
-@property(assign,readwrite) int sectionIndex;
-@property(assign,readwrite) bool shouldDrawLanes;
-@property(assign,readwrite) int vertexIndex;
-@property(assign,readwrite) int zLevel;
+@property (nonatomic) bool brunnelEntry;
+@property (nonatomic) bool castShadow;
+@property (nonatomic) bool cropped;
+@property (nonatomic) bool hasBrunnelEntry;
+@property (nonatomic) bool hasCastShadow;
+@property (nonatomic) bool hasCropped;
+@property (nonatomic, readonly) bool hasLaneCharacteristic;
+@property (nonatomic) bool hasRoadLaneCount;
+@property (nonatomic) bool hasRoadOffset;
+@property (nonatomic) bool hasSectionIndex;
+@property (nonatomic) bool hasShouldDrawLanes;
+@property (nonatomic) bool hasVertexIndex;
+@property (nonatomic) bool hasZLevel;
+@property (nonatomic, retain) GEOVLaneCharacteristic *laneCharacteristic;
+@property (nonatomic) int roadLaneCount;
+@property (nonatomic) int roadOffset;
+@property (nonatomic) int sectionIndex;
+@property (nonatomic) bool shouldDrawLanes;
+@property (nonatomic) int vertexIndex;
+@property (nonatomic) int zLevel;
 
 - (bool)brunnelEntry;
 - (bool)castShadow;

@@ -10,12 +10,12 @@
     double _trafficStartTime;
 }
 
-@property(getter=isChangingViewSize,assign,readonly) bool changingViewSize;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,readwrite) double mapModeStartTime;
-@property(assign,readonly) VKMapView * mapView;
-@property(assign,readwrite) bool rendersInBackground;
-@property(assign,readwrite) double trafficStartTime;
+@property (getter=isChangingViewSize, nonatomic, readonly) bool changingViewSize;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic) double mapModeStartTime;
+@property (nonatomic, readonly) VKMapView *mapView;
+@property (nonatomic) bool rendersInBackground;
+@property (nonatomic) double trafficStartTime;
 
 - (void).cxx_destruct;
 - (void)_animateCanvasForBounds:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

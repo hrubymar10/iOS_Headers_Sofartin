@@ -10,11 +10,11 @@
     id _tapTarget;
 }
 
-@property(assign,readonly) UIButton * button;
-@property(assign,readonly) UILabel * label;
-@property(assign,readwrite) double rightMargin;
-@property(assign,copy) NSString * text;
-@property(assign,readwrite) long long textAlignment;
+@property (readonly) UIButton *button;
+@property (readonly) UILabel *label;
+@property (nonatomic) double rightMargin;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic) long long textAlignment;
 
 - (void)applyLayoutAttributes:(id)arg1;
 - (id)button;

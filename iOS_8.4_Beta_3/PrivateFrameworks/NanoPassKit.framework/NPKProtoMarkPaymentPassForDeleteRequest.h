@@ -6,7 +6,7 @@
     NSString *_passID;
 }
 
-@property(assign,retain) NSString * passID;
+@property (nonatomic, retain) NSString *passID;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

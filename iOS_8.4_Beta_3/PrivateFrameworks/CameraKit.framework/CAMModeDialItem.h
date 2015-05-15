@@ -10,11 +10,11 @@
     NSString *_title;
 }
 
-@property(assign,readonly) UILabel * _selectedTitleLabel;
-@property(assign,readonly) UILabel * _titleLabel;
-@property(assign,retain) UIFont * font;
-@property(getter=isSelected,assign,readwrite) bool selected;
-@property(assign,copy) NSString * title;
+@property (nonatomic, readonly) UILabel *_selectedTitleLabel;
+@property (nonatomic, readonly) UILabel *_titleLabel;
+@property (nonatomic, retain) UIFont *font;
+@property (getter=isSelected, nonatomic) bool selected;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_commonCAMModeDialItemInitialization;

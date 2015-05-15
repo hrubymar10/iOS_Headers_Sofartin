@@ -4,13 +4,13 @@
 
 @interface SAGetResultObjects : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * objectIdentifiers;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *objectIdentifiers;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
 
 + (id)getResultObjects;
 + (id)getResultObjectsWithDictionary:(id)arg1 context:(id)arg2;

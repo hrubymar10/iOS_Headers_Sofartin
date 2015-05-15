@@ -9,10 +9,10 @@
     NSNumber *_toIndex;
 }
 
-@property(assign,retain) NSNumber * index;
-@property(assign,readonly) long long operation;
-@property(assign,retain) PSSpecifier * specifier;
-@property(assign,retain) NSNumber * toIndex;
+@property (nonatomic, retain) NSNumber *index;
+@property (nonatomic, readonly) long long operation;
+@property (nonatomic, retain) PSSpecifier *specifier;
+@property (nonatomic, retain) NSNumber *toIndex;
 
 + (id)insertOperationWithSpecifier:(id)arg1 atIndex:(unsigned long long)arg2;
 + (id)moveOperationWithSpecifier:(id)arg1 fromIndex:(unsigned long long)arg2 toIndex:(unsigned long long)arg3;

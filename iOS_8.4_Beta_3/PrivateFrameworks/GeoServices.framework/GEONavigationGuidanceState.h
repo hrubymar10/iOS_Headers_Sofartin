@@ -11,10 +11,10 @@
     int _trackedTransportType;
 }
 
-@property(assign,readwrite) bool hasNavigationState;
-@property(assign,readwrite) bool hasTrackedTransportType;
-@property(assign,readwrite) int navigationState;
-@property(assign,readwrite) int trackedTransportType;
+@property (nonatomic) bool hasNavigationState;
+@property (nonatomic) bool hasTrackedTransportType;
+@property (nonatomic) int navigationState;
+@property (nonatomic) int trackedTransportType;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -4,17 +4,17 @@
 
 @interface SAGKLinkedAnswer : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * descriptionText;
-@property(assign,copy) NSString * displayLink;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * link;
-@property(assign,copy) NSString * name;
-@property(assign,retain) SAUIAppPunchOut * punchOut;
-@property(assign,copy) NSString * query;
-@property(assign,copy) NSURL * searchUri;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *descriptionText;
+@property (nonatomic, copy) NSString *displayLink;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURL *link;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) SAUIAppPunchOut *punchOut;
+@property (nonatomic, copy) NSString *query;
+@property (nonatomic, copy) NSURL *searchUri;
+@property (readonly) Class superclass;
 
 + (id)linkedAnswer;
 + (id)linkedAnswerWithDictionary:(id)arg1 context:(id)arg2;

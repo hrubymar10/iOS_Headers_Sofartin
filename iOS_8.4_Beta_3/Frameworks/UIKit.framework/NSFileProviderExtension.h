@@ -9,13 +9,13 @@
     NSString *_memberQueueProviderIdentifier;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * memberQueue;
-@property(assign,retain) NSURL * memberQueueDocumentStorageURL;
-@property(assign,copy) NSString * memberQueueProviderIdentifier;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *memberQueue;
+@property (nonatomic, retain) NSURL *memberQueueDocumentStorageURL;
+@property (nonatomic, copy) NSString *memberQueueProviderIdentifier;
+@property (readonly) Class superclass;
 
 + (id)_relativeComponentsOfURL:(id)arg1 fromBaseURL:(id)arg2;
 + (id)_resourceIDOfURL:(id)arg1 outError:(id*)arg2;

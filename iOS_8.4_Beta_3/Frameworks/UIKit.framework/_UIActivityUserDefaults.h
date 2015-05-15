@@ -7,8 +7,8 @@
     NSUserDefaults *_userDefaults;
 }
 
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) NSUserDefaults * userDefaults;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, retain) NSUserDefaults *userDefaults;
 
 + (id)updatedActivityIdentifiersUserOrderWithPreviousOrder:(id)arg1 someSortedActivityIdentifiers:(id)arg2;
 

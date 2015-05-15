@@ -17,18 +17,18 @@
     NSString *_uniqueIdentifier;
 }
 
-@property(assign,readwrite) bool hasPicked;
-@property(assign,readonly) bool hasRouteName;
-@property(assign,readwrite) bool hasRouteSubtype;
-@property(assign,readwrite) bool hasRouteType;
-@property(assign,readwrite) bool hasSupportsVolumeControl;
-@property(assign,readonly) bool hasUniqueIdentifier;
-@property(assign,readwrite) bool picked;
-@property(assign,retain) NSString * routeName;
-@property(assign,readwrite) int routeSubtype;
-@property(assign,readwrite) int routeType;
-@property(assign,readwrite) bool supportsVolumeControl;
-@property(assign,retain) NSString * uniqueIdentifier;
+@property (nonatomic) bool hasPicked;
+@property (nonatomic, readonly) bool hasRouteName;
+@property (nonatomic) bool hasRouteSubtype;
+@property (nonatomic) bool hasRouteType;
+@property (nonatomic) bool hasSupportsVolumeControl;
+@property (nonatomic, readonly) bool hasUniqueIdentifier;
+@property (nonatomic) bool picked;
+@property (nonatomic, retain) NSString *routeName;
+@property (nonatomic) int routeSubtype;
+@property (nonatomic) int routeType;
+@property (nonatomic) bool supportsVolumeControl;
+@property (nonatomic, retain) NSString *uniqueIdentifier;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

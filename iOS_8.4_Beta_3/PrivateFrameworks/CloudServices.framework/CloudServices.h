@@ -7,7 +7,7 @@
     NSObject<OS_dispatch_queue> *replyQueue;
 }
 
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * replyQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> *replyQueue;
 
 + (id)_CreateLakituConnection;
 

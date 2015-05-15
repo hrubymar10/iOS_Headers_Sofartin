@@ -11,12 +11,12 @@
     id _recordVersionFetchedBlock;
 }
 
-@property(assign,retain) NSArray * desiredKeys;
-@property(assign,retain) NSObject<OS_dispatch_group> * fetchVersionsGroup;
-@property(assign,readwrite) bool isDeleted;
-@property(assign,retain) NSString * minimumVersionETag;
-@property(assign,retain) NSArray * recordIDs;
-@property(assign,copy) id recordVersionFetchedBlock;
+@property (nonatomic, retain) NSArray *desiredKeys;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *fetchVersionsGroup;
+@property (nonatomic) bool isDeleted;
+@property (nonatomic, retain) NSString *minimumVersionETag;
+@property (nonatomic, retain) NSArray *recordIDs;
+@property (nonatomic, copy) id recordVersionFetchedBlock;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

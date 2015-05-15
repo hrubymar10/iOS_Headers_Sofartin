@@ -6,7 +6,7 @@
     UIWindow *_rotationDelegate;
 }
 
-@property(assign,retain) UIWindow * rotationDelegate;
+@property (nonatomic, retain) UIWindow *rotationDelegate;
 
 - (void)dealloc;
 - (long long)preferredInterfaceOrientationForPresentation;

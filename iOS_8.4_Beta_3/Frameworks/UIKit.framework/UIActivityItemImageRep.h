@@ -8,9 +8,9 @@
     id _thumbnailProvider;
 }
 
-@property(assign,retain) id asset;
-@property(assign,copy) id dataProvider;
-@property(assign,copy) id thumbnailProvider;
+@property (nonatomic, retain) id asset;
+@property (nonatomic, copy) id dataProvider;
+@property (nonatomic, copy) id thumbnailProvider;
 
 + (id)activityItemImageRepWithAsset:(id)arg1 thumbnailProvider:(id)arg2 dataProvider:(id)arg3;
 

@@ -11,15 +11,15 @@
     UILabel *_updateStatusLabel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIImage * gearBackgroundImage;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIProgressView * progressBar;
-@property(assign,readwrite) int progressDisplayStyle;
-@property(assign,retain) PSWebContainerView * releaseNotesSummaryView;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UILabel * updateStatusLabel;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, retain) UIImage *gearBackgroundImage;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIProgressView *progressBar;
+@property (nonatomic) int progressDisplayStyle;
+@property (nonatomic, retain) PSWebContainerView *releaseNotesSummaryView;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UILabel *updateStatusLabel;
 
 + (long long)cellStyle;
 

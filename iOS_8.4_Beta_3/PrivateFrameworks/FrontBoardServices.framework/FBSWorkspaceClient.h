@@ -11,12 +11,12 @@
     NSMutableDictionary *_sceneIDToSceneHandlerMap;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * callOutQueue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) <FBSWorkspaceClientDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *callOutQueue;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) <FBSWorkspaceClientDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_debugLog:(id)arg1;
 - (id)_handlerForSceneID:(id)arg1;

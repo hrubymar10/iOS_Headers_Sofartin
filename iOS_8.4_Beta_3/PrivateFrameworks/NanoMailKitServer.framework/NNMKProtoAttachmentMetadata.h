@@ -19,20 +19,20 @@
     unsigned int _type;
 }
 
-@property(assign,retain) NSString * contentId;
-@property(assign,retain) NSString * fileName;
-@property(assign,readwrite) unsigned int fileSize;
-@property(assign,readonly) bool hasContentId;
-@property(assign,readonly) bool hasFileName;
-@property(assign,readwrite) bool hasFileSize;
-@property(assign,readwrite) bool hasImageHeight;
-@property(assign,readwrite) bool hasImageWidth;
-@property(assign,readwrite) bool hasRenderOnClient;
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) float imageHeight;
-@property(assign,readwrite) float imageWidth;
-@property(assign,readwrite) bool renderOnClient;
-@property(assign,readwrite) unsigned int type;
+@property (nonatomic, retain) NSString *contentId;
+@property (nonatomic, retain) NSString *fileName;
+@property (nonatomic) unsigned int fileSize;
+@property (nonatomic, readonly) bool hasContentId;
+@property (nonatomic, readonly) bool hasFileName;
+@property (nonatomic) bool hasFileSize;
+@property (nonatomic) bool hasImageHeight;
+@property (nonatomic) bool hasImageWidth;
+@property (nonatomic) bool hasRenderOnClient;
+@property (nonatomic) bool hasType;
+@property (nonatomic) float imageHeight;
+@property (nonatomic) float imageWidth;
+@property (nonatomic) bool renderOnClient;
+@property (nonatomic) unsigned int type;
 
 - (void).cxx_destruct;
 - (id)contentId;

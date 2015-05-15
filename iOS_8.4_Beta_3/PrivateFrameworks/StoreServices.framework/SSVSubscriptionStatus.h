@@ -18,25 +18,25 @@
     double _subscriptionExpirationTime;
 }
 
-@property(assign,readonly) unsigned long long MP_capabilities;
-@property(assign,copy) NSNumber * accountIdentifier;
-@property(assign,copy) NSArray * accountPermissions;
-@property(assign,readwrite) long long accountStatus;
-@property(assign,readwrite) long long carrierBundlingStatus;
-@property(assign,copy) NSString * cellularOperatorName;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isDiscoveryModeEligible,assign,readwrite) bool discoveryModeEligible;
-@property(getter=isFamilyOrganizer,assign,readwrite) bool familyOrganizer;
-@property(getter=isFamilySubscription,assign,readwrite) bool familySubscription;
-@property(assign,readwrite) bool hasFamily;
-@property(assign,readwrite) bool hasFamilyMembers;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * phoneNumber;
-@property(assign,copy) NSString * sessionIdentifier;
-@property(getter=isSubscribed,assign,readwrite) bool subscribed;
-@property(assign,copy) NSDate * subscriptionExpirationDate;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long MP_capabilities;
+@property (nonatomic, copy) NSNumber *accountIdentifier;
+@property (nonatomic, copy) NSArray *accountPermissions;
+@property (nonatomic) long long accountStatus;
+@property (nonatomic) long long carrierBundlingStatus;
+@property (nonatomic, copy) NSString *cellularOperatorName;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isDiscoveryModeEligible, nonatomic) bool discoveryModeEligible;
+@property (getter=isFamilyOrganizer, nonatomic) bool familyOrganizer;
+@property (getter=isFamilySubscription, nonatomic) bool familySubscription;
+@property (nonatomic) bool hasFamily;
+@property (nonatomic) bool hasFamilyMembers;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *phoneNumber;
+@property (nonatomic, copy) NSString *sessionIdentifier;
+@property (getter=isSubscribed, nonatomic) bool subscribed;
+@property (nonatomic, copy) NSDate *subscriptionExpirationDate;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (unsigned long long)MP_capabilities;

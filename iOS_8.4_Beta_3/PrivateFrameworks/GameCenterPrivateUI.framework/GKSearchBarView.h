@@ -11,16 +11,16 @@
     NSNumber *_usePadConstraints;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UISearchBarDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double leadingMargin;
-@property(assign,retain) GKSearchBar * searchBar;
-@property(assign,retain) NSArray * searchBarConstraints;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double trailingMargin;
-@property(assign,readwrite) NSNumber * usePadConstraints;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UISearchBarDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double leadingMargin;
+@property (nonatomic, retain) GKSearchBar *searchBar;
+@property (nonatomic, retain) NSArray *searchBarConstraints;
+@property (readonly) Class superclass;
+@property (nonatomic) double trailingMargin;
+@property (nonatomic) NSNumber *usePadConstraints;
 
 + (double)defaultHeight;
 + (void)initialize;

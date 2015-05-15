@@ -9,14 +9,14 @@
     NSString *_lastName;
 }
 
-@property(assign,retain) NSString * containerScopedUserId;
-@property(assign,retain) NSString * emailAddress;
-@property(assign,retain) NSString * firstName;
-@property(assign,readonly) bool hasContainerScopedUserId;
-@property(assign,readonly) bool hasEmailAddress;
-@property(assign,readonly) bool hasFirstName;
-@property(assign,readonly) bool hasLastName;
-@property(assign,retain) NSString * lastName;
+@property (nonatomic, retain) NSString *containerScopedUserId;
+@property (nonatomic, retain) NSString *emailAddress;
+@property (nonatomic, retain) NSString *firstName;
+@property (nonatomic, readonly) bool hasContainerScopedUserId;
+@property (nonatomic, readonly) bool hasEmailAddress;
+@property (nonatomic, readonly) bool hasFirstName;
+@property (nonatomic, readonly) bool hasLastName;
+@property (nonatomic, retain) NSString *lastName;
 
 - (void).cxx_destruct;
 - (id)containerScopedUserId;

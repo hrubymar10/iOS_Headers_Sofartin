@@ -6,11 +6,11 @@
     NSDictionary *_assetDictionary;
 }
 
-@property(assign,readonly) NSString * URLString;
-@property(assign,copy) NSDictionary * assetDictionary;
-@property(assign,readonly) NSString * downloadKey;
-@property(assign,readonly) NSString * flavor;
-@property(assign,readonly) NSArray * sinfs;
+@property (nonatomic, readonly) NSString *URLString;
+@property (nonatomic, readonly, copy) NSDictionary *assetDictionary;
+@property (nonatomic, readonly) NSString *downloadKey;
+@property (nonatomic, readonly) NSString *flavor;
+@property (nonatomic, readonly) NSArray *sinfs;
 
 - (void).cxx_destruct;
 - (id)URLString;

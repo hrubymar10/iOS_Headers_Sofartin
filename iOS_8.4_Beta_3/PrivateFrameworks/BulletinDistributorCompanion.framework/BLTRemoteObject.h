@@ -15,14 +15,14 @@
     IDSService *_service;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * clientQueue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) IDSDevice * defaultPairedDevice;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) BLTPBProtobufSequenceNumberManager * sequenceNumberManager;
-@property(assign,readonly) IDSService * service;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *clientQueue;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) IDSDevice *defaultPairedDevice;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) BLTPBProtobufSequenceNumberManager *sequenceNumberManager;
+@property (nonatomic, readonly) IDSService *service;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_queueSendMessage:(id)arg1 type:(unsigned short)arg2 responseToRequest:(id)arg3 withTimeout:(id)arg4 withDescription:(id)arg5 onlyOneFor:(id)arg6 didSend:(id)arg7 andResponse:(id)arg8;

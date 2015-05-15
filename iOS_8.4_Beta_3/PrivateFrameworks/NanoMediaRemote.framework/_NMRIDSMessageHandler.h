@@ -8,9 +8,9 @@
     id _target;
 }
 
-@property(assign,readwrite) SEL action;
-@property(assign,readwrite) unsigned short messageType;
-@property(assign,readwrite) id target;
+@property (nonatomic) SEL action;
+@property (nonatomic) unsigned short messageType;
+@property (nonatomic) id target;
 
 - (void).cxx_destruct;
 - (SEL)action;

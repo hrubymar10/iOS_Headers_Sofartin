@@ -6,11 +6,11 @@
     bool _usesSplits;
 }
 
-@property(assign,readonly) NSArray * childViewElements;
-@property(assign,readonly) SKUIViewElement * leftSplit;
-@property(assign,readonly) SKUINavigationBarViewElement * navigationBarElement;
-@property(assign,readonly) SKUIViewElement * rightSplit;
-@property(assign,readonly) bool usesSplits;
+@property (nonatomic, readonly) NSArray *childViewElements;
+@property (nonatomic, readonly) SKUIViewElement *leftSplit;
+@property (nonatomic, readonly) SKUINavigationBarViewElement *navigationBarElement;
+@property (nonatomic, readonly) SKUIViewElement *rightSplit;
+@property (nonatomic, readonly) bool usesSplits;
 
 - (void)_getLeftSplit:(id*)arg1 rightSplit:(id*)arg2;
 - (id)childViewElements;

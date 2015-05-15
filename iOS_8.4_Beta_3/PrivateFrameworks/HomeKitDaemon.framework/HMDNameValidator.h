@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) NSUUID * homeManagerUUID;
-@property(assign,copy) NSMutableDictionary * namespaceList;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) NSUUID *homeManagerUUID;
+@property (nonatomic, copy) NSMutableDictionary *namespaceList;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (id)_addName:(id)arg1 namespace:(id)arg2;

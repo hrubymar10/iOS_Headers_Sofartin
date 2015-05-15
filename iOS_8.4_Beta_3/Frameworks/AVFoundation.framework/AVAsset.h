@@ -6,16 +6,16 @@
     AVAssetInternal *_asset;
 }
 
-@property(getter=MP_canAffectNetworkPlayability,setter=MP_setCanAffectNetworkPlayability:,assign,readwrite) bool MP_canAffectNetworkPlayability;
-@property(assign,readonly) NSArray * availableChapterLocales;
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } duration;
-@property(assign,readonly) bool isProxy;
-@property(assign,readonly) struct CGSize { double x1; double x2; } naturalSize;
-@property(assign,readonly) struct CGSize { double x1; double x2; } naturalSizeWithPreferredTransforms;
-@property(assign,readonly) float preferredRate;
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } preferredTransform;
-@property(assign,readonly) float preferredVolume;
-@property(assign,readonly) id propertyListForProxy;
+@property (getter=MP_canAffectNetworkPlayability, setter=MP_setCanAffectNetworkPlayability:, nonatomic) bool MP_canAffectNetworkPlayability;
+@property (readonly) NSArray *availableChapterLocales;
+@property (nonatomic, readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } duration;
+@property (nonatomic, readonly) bool isProxy;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } naturalSize;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } naturalSizeWithPreferredTransforms;
+@property (nonatomic, readonly) float preferredRate;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } preferredTransform;
+@property (nonatomic, readonly) float preferredVolume;
+@property (nonatomic, readonly) id propertyListForProxy;
 
 + (id)assetProxyWithPropertyList:(id)arg1;
 + (id)assetWithURL:(id)arg1;

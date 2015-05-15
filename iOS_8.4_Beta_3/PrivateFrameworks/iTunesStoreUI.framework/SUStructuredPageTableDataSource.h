@@ -11,10 +11,10 @@
     long long _style;
 }
 
-@property(assign,retain) SUItem * activeLoadMoreItem;
-@property(assign,retain) SUClientInterface * clientInterface;
-@property(assign,retain) SUStructuredPage * structuredPage;
-@property(assign,readwrite) long long style;
+@property (nonatomic, retain) SUItem *activeLoadMoreItem;
+@property (nonatomic, retain) SUClientInterface *clientInterface;
+@property (nonatomic, retain) SUStructuredPage *structuredPage;
+@property (nonatomic) long long style;
 
 - (void)_configureLoadMoreCell:(id)arg1 forItem:(id)arg2;
 - (id)_itemOfferButtonForCell:(id)arg1 item:(id)arg2;

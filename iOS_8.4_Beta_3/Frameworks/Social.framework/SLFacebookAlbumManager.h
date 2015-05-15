@@ -10,9 +10,9 @@
     NSOperationQueue *photoQueue;
 }
 
-@property(assign,retain) ACAccount * account;
-@property(assign,readwrite) <SLFacebookAlbumManagerDelegate> * delegate;
-@property(assign,retain) SLFacebookAlbum * selectedAlbum;
+@property (retain) ACAccount *account;
+@property <SLFacebookAlbumManagerDelegate> *delegate;
+@property (retain) SLFacebookAlbum *selectedAlbum;
 
 - (void).cxx_destruct;
 - (id)account;

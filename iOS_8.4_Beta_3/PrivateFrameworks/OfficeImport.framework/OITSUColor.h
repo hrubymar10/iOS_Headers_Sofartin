@@ -6,7 +6,7 @@
     struct CGColor { } *mCGColor;
 }
 
-@property(assign,readonly) struct CGColor { }* CGColor;
+@property (readonly) struct CGColor { }*CGColor;
 
 + (id)blackColor;
 + (id)blueColor;

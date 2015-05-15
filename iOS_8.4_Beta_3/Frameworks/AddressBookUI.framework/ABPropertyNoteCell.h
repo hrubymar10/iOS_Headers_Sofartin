@@ -7,8 +7,8 @@
     UITextView *_textView;
 }
 
-@property(assign,readonly) UILabel * labelLabel;
-@property(assign,retain) UITextView * textView;
+@property (nonatomic, readonly) UILabel *labelLabel;
+@property (nonatomic, retain) UITextView *textView;
 
 - (double)bottomBaselineConstant;
 - (void)dealloc;

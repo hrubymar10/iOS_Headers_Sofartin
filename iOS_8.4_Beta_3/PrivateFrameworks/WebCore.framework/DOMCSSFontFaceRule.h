@@ -4,7 +4,7 @@
 
 @interface DOMCSSFontFaceRule : DOMCSSRule
 
-@property(assign,readonly) DOMCSSStyleDeclaration * style;
+@property (readonly) DOMCSSStyleDeclaration *style;
 
 - (id)style;
 

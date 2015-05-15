@@ -8,8 +8,8 @@
     } _digestData;
 }
 
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{array<unsigned char' */ struct * digestData; /* unknown property attribute:  20>=[20C]} */
-@property(assign,readonly) NSString * digestString;
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{array<unsigned char' */ struct *digestData; /* unknown property attribute:  20>=[20C]} */
+@property (nonatomic, readonly) NSString *digestString;
 
 + (id)digestFromNSData:(id)arg1;
 + (id)digestWithDigestString:(id)arg1;

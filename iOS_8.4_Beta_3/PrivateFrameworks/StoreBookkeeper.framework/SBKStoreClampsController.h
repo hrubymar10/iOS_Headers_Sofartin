@@ -15,16 +15,16 @@
     double _userCancelledSignInBackOffUntil;
 }
 
-@property(assign,readwrite) double accountIdentifierCheckTimestamp;
-@property(assign,readwrite) double authenticationNeededTimestamp;
-@property(assign,readwrite) double backOffUntil;
-@property(assign,readwrite) double networkingBlockedUntil;
-@property(assign,readwrite) double nextUserCancelBackOffInterval;
-@property(assign,retain) NSData * pendingUserDefaultArchivedData;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSDictionary * transactionClamps;
-@property(assign,readwrite) double userAcceptedSyncTimestamp;
-@property(assign,readwrite) double userCancelledSignInBackOffUntil;
+@property double accountIdentifierCheckTimestamp;
+@property double authenticationNeededTimestamp;
+@property double backOffUntil;
+@property double networkingBlockedUntil;
+@property double nextUserCancelBackOffInterval;
+@property (retain) NSData *pendingUserDefaultArchivedData;
+@property (retain) NSObject<OS_dispatch_queue> *queue;
+@property (retain) NSDictionary *transactionClamps;
+@property double userAcceptedSyncTimestamp;
+@property double userCancelledSignInBackOffUntil;
 
 + (id)sharedClampsController;
 

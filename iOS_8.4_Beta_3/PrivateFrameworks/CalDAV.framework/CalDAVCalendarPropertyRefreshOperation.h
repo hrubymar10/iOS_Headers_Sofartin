@@ -19,13 +19,13 @@
     bool _useCalendarHomeSyncReport;
 }
 
-@property(assign,retain) NSString * calendarHomeSyncToken;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CalDAVCalendarPropertyRefreshDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useCalendarHomeSyncReport;
+@property (nonatomic, retain) NSString *calendarHomeSyncToken;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CalDAVCalendarPropertyRefreshDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useCalendarHomeSyncReport;
 
 - (void)_continueHandleContainerInfoTask:(id)arg1 completedWithContainers:(id)arg2 error:(id)arg3;
 - (void)_finishRefresh;

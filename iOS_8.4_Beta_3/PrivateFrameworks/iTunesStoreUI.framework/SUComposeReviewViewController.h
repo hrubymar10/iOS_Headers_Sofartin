@@ -7,11 +7,11 @@
     SKComposeReviewViewController *_remoteViewController;
 }
 
-@property(assign,readonly) NSURL * compositionURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSURL *compositionURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_showRemoteView;
 - (bool)automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers;

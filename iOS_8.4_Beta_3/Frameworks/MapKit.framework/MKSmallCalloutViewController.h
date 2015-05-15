@@ -7,19 +7,19 @@
     MKSmallCalloutView *_smallCalloutView;
 }
 
-@property(assign,retain) MKCalloutBackgroundView * calloutBackgroundView;
-@property(assign,copy) NSString * calloutSubtitle;
-@property(assign,copy) NSString * calloutTitle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MKSmallCalloutViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIView * detailView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIView * leftView;
-@property(assign,readwrite) unsigned long long mapDisplayStyle;
-@property(assign,readwrite) double maximumWidth;
-@property(assign,retain) UIView * rightView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) MKCalloutBackgroundView *calloutBackgroundView;
+@property (nonatomic, copy) NSString *calloutSubtitle;
+@property (nonatomic, copy) NSString *calloutTitle;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MKSmallCalloutViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIView *detailView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIView *leftView;
+@property (nonatomic) unsigned long long mapDisplayStyle;
+@property (nonatomic) double maximumWidth;
+@property (nonatomic, retain) UIView *rightView;
+@property (readonly) Class superclass;
 
 + (struct CGSize { double x1; double x2; })defaultSize;
 

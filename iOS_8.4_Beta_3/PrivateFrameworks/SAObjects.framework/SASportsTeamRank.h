@@ -4,13 +4,13 @@
 
 @interface SASportsTeamRank : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSNumber * position;
-@property(assign,copy) NSNumber * primary;
-@property(assign,copy) NSString * source;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSNumber *position;
+@property (nonatomic, copy) NSNumber *primary;
+@property (nonatomic, copy) NSString *source;
+@property (readonly) Class superclass;
 
 + (id)teamRank;
 + (id)teamRankWithDictionary:(id)arg1 context:(id)arg2;

@@ -11,12 +11,12 @@
     bool _secondaryTextColorLight;
 }
 
-@property(assign,readonly) UIColor * backgroundColor;
-@property(getter=isBackgroundColorLight,assign,readonly) bool backgroundColorLight;
-@property(assign,readonly) UIColor * primaryTextColor;
-@property(getter=isPrimaryTextColorLight,assign,readonly) bool primaryTextColorLight;
-@property(assign,readonly) UIColor * secondaryTextColor;
-@property(getter=isSecondaryTextColorLight,assign,readonly) bool secondaryTextColorLight;
+@property (nonatomic, readonly) UIColor *backgroundColor;
+@property (getter=isBackgroundColorLight, nonatomic, readonly) bool backgroundColorLight;
+@property (nonatomic, readonly) UIColor *primaryTextColor;
+@property (getter=isPrimaryTextColorLight, nonatomic, readonly) bool primaryTextColorLight;
+@property (nonatomic, readonly) UIColor *secondaryTextColor;
+@property (getter=isSecondaryTextColorLight, nonatomic, readonly) bool secondaryTextColorLight;
 
 + (bool)supportsSecureCoding;
 

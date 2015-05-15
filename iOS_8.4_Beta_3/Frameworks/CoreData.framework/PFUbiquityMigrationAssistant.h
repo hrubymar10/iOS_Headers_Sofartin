@@ -14,8 +14,8 @@
     PFUbiquityLocation *_ubiquityRootLocation;
 }
 
-@property(assign,readonly) NSString * currentModelVersionHash;
-@property(assign,readonly) NSString * previousModelVersionHash;
+@property (nonatomic, readonly) NSString *currentModelVersionHash;
+@property (nonatomic, readonly) NSString *previousModelVersionHash;
 
 - (void)_populateBaselineAndTransactionLogLocations;
 - (id)baselineLocationsByModelVersionHash;

@@ -7,8 +7,8 @@
     NSValue *inputTransform;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSValue * inputTransform;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSValue *inputTransform;
 
 + (id)customAttributes;
 

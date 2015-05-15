@@ -22,16 +22,16 @@
     double _timeInformationUpdateInterval;
 }
 
-@property(assign,readonly) double currentDuration;
-@property(assign,readonly) double currentElapsed;
-@property(assign,readonly) UIImage * currentNowPlayingArtwork;
-@property(assign,readonly) NSDictionary * currentNowPlayingInfo;
-@property(assign,readwrite) <MPUNowPlayingDelegate> * delegate;
-@property(assign,readonly) bool isPlaying;
-@property(assign,readonly) NSString * nowPlayingAppDisplayID;
-@property(assign,readonly) bool nowPlayingAppIsSystemMediaApp;
-@property(assign,readwrite) bool shouldUpdateNowPlayingArtwork;
-@property(assign,readwrite) double timeInformationUpdateInterval;
+@property (nonatomic, readonly) double currentDuration;
+@property (nonatomic, readonly) double currentElapsed;
+@property (nonatomic, readonly) UIImage *currentNowPlayingArtwork;
+@property (nonatomic, readonly) NSDictionary *currentNowPlayingInfo;
+@property (nonatomic) <MPUNowPlayingDelegate> *delegate;
+@property (nonatomic, readonly) bool isPlaying;
+@property (nonatomic, readonly) NSString *nowPlayingAppDisplayID;
+@property (nonatomic, readonly) bool nowPlayingAppIsSystemMediaApp;
+@property (nonatomic) bool shouldUpdateNowPlayingArtwork;
+@property (nonatomic) double timeInformationUpdateInterval;
 
 - (void).cxx_destruct;
 - (void)_registerForNotifications;

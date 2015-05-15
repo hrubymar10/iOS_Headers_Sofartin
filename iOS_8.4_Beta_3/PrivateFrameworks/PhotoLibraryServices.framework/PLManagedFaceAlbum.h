@@ -4,8 +4,8 @@
 
 @interface PLManagedFaceAlbum : PLManagedAlbum
 
-@property(assign,readwrite) short keyAssetFaceIdentifier;
-@property(assign,readwrite) int keyAssetFaceThumbnailIndex;
+@property (nonatomic) short keyAssetFaceIdentifier;
+@property (nonatomic) int keyAssetFaceThumbnailIndex;
 
 + (id)entityInManagedObjectContext:(id)arg1;
 + (id)entityName;

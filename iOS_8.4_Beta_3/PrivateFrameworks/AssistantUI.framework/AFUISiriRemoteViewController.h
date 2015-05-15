@@ -7,12 +7,12 @@
     <AFUISiriRemoteViewControllerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <AFUISiriRemoteViewControllerDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <AFUISiriRemoteViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) <AFUISiriRemoteViewControllerDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <AFUISiriRemoteViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)exportedInterface;
 + (id)requestViewControllerWithConnectionHandler:(id)arg1;

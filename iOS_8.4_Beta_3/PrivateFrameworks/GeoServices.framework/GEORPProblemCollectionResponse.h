@@ -10,10 +10,10 @@
     int _statusCode;
 }
 
-@property(assign,readonly) bool hasProblemId;
-@property(assign,readwrite) bool hasStatusCode;
-@property(assign,retain) NSString * problemId;
-@property(assign,readwrite) int statusCode;
+@property (nonatomic, readonly) bool hasProblemId;
+@property (nonatomic) bool hasStatusCode;
+@property (nonatomic, retain) NSString *problemId;
+@property (nonatomic) int statusCode;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

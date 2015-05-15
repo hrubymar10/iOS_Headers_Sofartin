@@ -7,9 +7,9 @@
     NSObject<OS_dispatch_semaphore> *_callManagementStateSemaphore;
 }
 
-@property(assign,retain) NSDictionary * callManagementState;
-@property(assign,retain) NSObject<OS_dispatch_semaphore> * callManagementStateSemaphore;
-@property(getter=isWiFiCallingCurrentlyAvailable,assign,readonly) bool wiFiCallingCurrentlyAvailable;
+@property (nonatomic, retain) NSDictionary *callManagementState;
+@property (nonatomic, retain) NSObject<OS_dispatch_semaphore> *callManagementStateSemaphore;
+@property (getter=isWiFiCallingCurrentlyAvailable, nonatomic, readonly) bool wiFiCallingCurrentlyAvailable;
 
 + (id)sharedInstance;
 

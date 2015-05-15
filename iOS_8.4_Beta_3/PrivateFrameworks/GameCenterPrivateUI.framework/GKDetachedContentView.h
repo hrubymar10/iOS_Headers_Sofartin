@@ -6,7 +6,7 @@
     GKStaticRenderContentView *_renderView;
 }
 
-@property(assign,readwrite) GKStaticRenderContentView * renderView;
+@property (nonatomic) GKStaticRenderContentView *renderView;
 
 - (id)renderView;
 - (void)setRenderView:(id)arg1;

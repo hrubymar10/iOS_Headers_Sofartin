@@ -10,24 +10,24 @@
     long long _transferState;
 }
 
-@property(assign,retain) IMMessage * IMMessage;
-@property(assign,readonly) unsigned long long currentBytes;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isDownloadable,assign,readonly) bool downloadable;
-@property(getter=isDownloading,assign,readonly) bool downloading;
-@property(assign,copy) NSError * error;
-@property(getter=isFileDataReady,assign,readonly) bool fileDataReady;
-@property(assign,copy) NSURL * fileURL;
-@property(getter=isFileURLFinalized,assign,readonly) bool fileURLFinalized;
-@property(assign,copy) NSString * filename;
-@property(assign,copy) NSString * guid;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isRestoring,assign,readonly) bool restoring;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long totalBytes;
-@property(assign,copy) NSDictionary * transcoderUserInfo;
-@property(assign,readwrite) long long transferState;
+@property (nonatomic, retain) IMMessage *IMMessage;
+@property (nonatomic, readonly) unsigned long long currentBytes;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isDownloadable, nonatomic, readonly) bool downloadable;
+@property (getter=isDownloading, nonatomic, readonly) bool downloading;
+@property (nonatomic, readonly, copy) NSError *error;
+@property (getter=isFileDataReady, nonatomic, readonly) bool fileDataReady;
+@property (nonatomic, readonly, copy) NSURL *fileURL;
+@property (getter=isFileURLFinalized, nonatomic, readonly) bool fileURLFinalized;
+@property (nonatomic, copy) NSString *filename;
+@property (nonatomic, readonly, copy) NSString *guid;
+@property (readonly) unsigned long long hash;
+@property (getter=isRestoring, nonatomic, readonly) bool restoring;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long totalBytes;
+@property (nonatomic, readonly, copy) NSDictionary *transcoderUserInfo;
+@property (nonatomic) long long transferState;
 
 - (unsigned long long)currentBytes;
 - (void)dealloc;

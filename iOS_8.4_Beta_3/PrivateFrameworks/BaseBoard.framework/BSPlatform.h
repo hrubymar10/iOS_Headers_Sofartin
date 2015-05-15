@@ -15,16 +15,16 @@
     NSString *_uniqueDeviceIdentifier;
 }
 
-@property(assign,readonly) bool hasGasGauge;
-@property(getter=isInternalInstall,assign,readonly) bool internalInstall;
-@property(assign,copy) NSString * localizedProductName;
-@property(getter=isMultiCore,assign,readonly) bool multiCore;
-@property(assign,copy) NSString * productBuildVersion;
-@property(assign,copy) NSString * productClass;
-@property(assign,copy) NSString * productHardwareModel;
-@property(assign,copy) NSString * productType;
-@property(assign,copy) NSString * productVersion;
-@property(assign,copy) NSString * uniqueDeviceIdentifier;
+@property (nonatomic, readonly) bool hasGasGauge;
+@property (getter=isInternalInstall, nonatomic, readonly) bool internalInstall;
+@property (nonatomic, readonly, copy) NSString *localizedProductName;
+@property (getter=isMultiCore, nonatomic, readonly) bool multiCore;
+@property (nonatomic, readonly, copy) NSString *productBuildVersion;
+@property (nonatomic, readonly, copy) NSString *productClass;
+@property (nonatomic, readonly, copy) NSString *productHardwareModel;
+@property (nonatomic, readonly, copy) NSString *productType;
+@property (nonatomic, readonly, copy) NSString *productVersion;
+@property (nonatomic, readonly, copy) NSString *uniqueDeviceIdentifier;
 
 + (id)sharedInstance;
 

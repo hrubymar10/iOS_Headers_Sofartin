@@ -15,14 +15,14 @@
     NSMutableArray *_photoOptions;
 }
 
-@property(assign,retain) NSMutableArray * attributeKeys;
-@property(assign,readwrite) bool hasIncludeBusinessHours;
-@property(assign,readwrite) bool hasIncludeCenter;
-@property(assign,readwrite) bool hasMaxBusinessResults;
-@property(assign,readwrite) bool includeBusinessHours;
-@property(assign,readwrite) bool includeCenter;
-@property(assign,readwrite) int maxBusinessResults;
-@property(assign,retain) NSMutableArray * photoOptions;
+@property (nonatomic, retain) NSMutableArray *attributeKeys;
+@property (nonatomic) bool hasIncludeBusinessHours;
+@property (nonatomic) bool hasIncludeCenter;
+@property (nonatomic) bool hasMaxBusinessResults;
+@property (nonatomic) bool includeBusinessHours;
+@property (nonatomic) bool includeCenter;
+@property (nonatomic) int maxBusinessResults;
+@property (nonatomic, retain) NSMutableArray *photoOptions;
 
 - (void)addAttributeKey:(id)arg1;
 - (void)addPhotoOptions:(id)arg1;

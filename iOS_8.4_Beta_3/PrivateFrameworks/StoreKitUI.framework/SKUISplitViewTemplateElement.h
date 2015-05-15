@@ -8,12 +8,12 @@
     SKUIJSDOMFeatureNavigationDocument *_rightNavigationDocument;
 }
 
-@property(assign,readonly) SKUIJSDOMFeatureNavigationDocument * leftNavigationDocument;
-@property(assign,readonly) SKUIViewElement * leftSplitElement;
-@property(assign,readonly) long long preferredDisplayMode;
-@property(assign,readonly) SKUIJSDOMFeatureNavigationDocument * rightNavigationDocument;
-@property(assign,readonly) SKUIViewElement * rightSplitElement;
-@property(assign,readonly) bool usesInlineSplitContent;
+@property (readonly) SKUIJSDOMFeatureNavigationDocument *leftNavigationDocument;
+@property (nonatomic, readonly) SKUIViewElement *leftSplitElement;
+@property (nonatomic, readonly) long long preferredDisplayMode;
+@property (readonly) SKUIJSDOMFeatureNavigationDocument *rightNavigationDocument;
+@property (nonatomic, readonly) SKUIViewElement *rightSplitElement;
+@property (nonatomic, readonly) bool usesInlineSplitContent;
 
 + (id)supportedFeatures;
 

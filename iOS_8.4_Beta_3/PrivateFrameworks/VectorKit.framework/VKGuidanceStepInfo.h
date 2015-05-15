@@ -7,8 +7,8 @@
     int _routePoint;
 }
 
-@property(assign,retain) NSString * roadName;
-@property(assign,readonly) int routePoint;
+@property (nonatomic, readonly, retain) NSString *roadName;
+@property (nonatomic, readonly) int routePoint;
 
 - (void)dealloc;
 - (id)initWithRoadName:(id)arg1 point:(int)arg2;

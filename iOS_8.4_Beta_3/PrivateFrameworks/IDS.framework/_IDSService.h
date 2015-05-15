@@ -17,15 +17,15 @@
     NSMutableDictionary *_uniqueIDToConnection;
 }
 
-@property(assign,copy) NSSet * accounts;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSArray * devices;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) IDSAccount * iCloudAccount;
-@property(getter=isPretendingToBeFull,assign,readwrite) bool pretendingToBeFull;
-@property(assign,copy) NSString * serviceDomain;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, copy) NSSet *accounts;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSArray *devices;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) IDSAccount *iCloudAccount;
+@property (getter=isPretendingToBeFull, nonatomic) bool pretendingToBeFull;
+@property (nonatomic, readonly, copy) NSString *serviceDomain;
+@property (readonly) Class superclass;
 
 - (void)_callDelegatesWithBlock:(id)arg1;
 - (void)_callDelegatesWithBlock:(id)arg1 group:(id)arg2;

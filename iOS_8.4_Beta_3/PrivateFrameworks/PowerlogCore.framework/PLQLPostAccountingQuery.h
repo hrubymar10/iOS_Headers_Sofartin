@@ -10,11 +10,11 @@
     NSDictionary *_skipProcess;
 }
 
-@property(assign,retain) NSArray * additionalAccountingGroups;
-@property(assign,retain) NSString * daemonToBreak;
-@property(assign,retain) NSString * parentAccountingQueryToRunOn;
-@property(assign,retain) NSMutableArray * postpostAccountingQueries;
-@property(assign,retain) NSDictionary * skipProcess;
+@property (readonly, retain) NSArray *additionalAccountingGroups;
+@property (readonly, retain) NSString *daemonToBreak;
+@property (readonly, retain) NSString *parentAccountingQueryToRunOn;
+@property (retain) NSMutableArray *postpostAccountingQueries;
+@property (readonly, retain) NSDictionary *skipProcess;
 
 - (void).cxx_destruct;
 - (void)addPostPostAccountingChildren:(id)arg1;

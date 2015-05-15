@@ -6,7 +6,7 @@
     PKRegion *_region;
 }
 
-@property(assign,readonly) struct CGPath { }* path;
+@property (nonatomic, readonly) struct CGPath { }*path;
 
 + (id)infiniteRegion;
 

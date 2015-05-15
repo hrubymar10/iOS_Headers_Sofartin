@@ -10,8 +10,8 @@
     unsigned int _reachabilityFlags;
 }
 
-@property(assign,readwrite) <CPLNetworkWatcherDelegate> * delegate;
-@property(assign,readonly) unsigned long long networkState;
+@property (nonatomic) <CPLNetworkWatcherDelegate> *delegate;
+@property (nonatomic, readonly) unsigned long long networkState;
 
 + (id)_descriptionForNetworkState:(unsigned long long)arg1;
 

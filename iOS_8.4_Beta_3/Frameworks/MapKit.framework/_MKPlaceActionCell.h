@@ -8,9 +8,9 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) NSArray * marginConstraints;
-@property(assign,retain) NSMutableArray * scaledConstraints;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) NSArray *marginConstraints;
+@property (nonatomic, retain) NSMutableArray *scaledConstraints;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 + (id)fontForLabel;
 + (double)intrinsicContentHeight;

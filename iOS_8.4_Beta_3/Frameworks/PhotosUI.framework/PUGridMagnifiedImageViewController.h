@@ -55,21 +55,21 @@
     } _trackingWindFrame;
 }
 
-@property(assign,readonly) bool canShowFullScreen;
-@property(assign,readwrite) id delegate;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } gestureWindLocation;
-@property(assign,readwrite) int imageFormat;
-@property(assign,retain) NSIndexPath * itemIndexPath;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } itemWindFrame;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } lastLocation;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } magnifiedDragEdgeInsets;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } magnifiedSize;
-@property(assign,retain) PUGridMagnifiedView * magnifiedView;
-@property(assign,readwrite) double magnifiedYOffset;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } shadowOffset;
-@property(assign,readwrite) double shadowOpacity;
-@property(assign,readwrite) double shadowRadius;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } trackingWindFrame;
+@property (nonatomic, readonly) bool canShowFullScreen;
+@property (nonatomic) id delegate;
+@property (nonatomic) struct CGPoint { double x1; double x2; } gestureWindLocation;
+@property (nonatomic) int imageFormat;
+@property (nonatomic, retain) NSIndexPath *itemIndexPath;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } itemWindFrame;
+@property (nonatomic) struct CGPoint { double x1; double x2; } lastLocation;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } magnifiedDragEdgeInsets;
+@property (nonatomic) struct CGSize { double x1; double x2; } magnifiedSize;
+@property (nonatomic, retain) PUGridMagnifiedView *magnifiedView;
+@property (nonatomic) double magnifiedYOffset;
+@property (nonatomic) struct CGSize { double x1; double x2; } shadowOffset;
+@property (nonatomic) double shadowOpacity;
+@property (nonatomic) double shadowRadius;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } trackingWindFrame;
 
 - (void).cxx_destruct;
 - (void)beginMagnification;

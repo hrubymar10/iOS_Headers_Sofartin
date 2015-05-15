@@ -6,17 +6,17 @@
     bool hadRecurrences;
 }
 
-@property(assign,copy) NSURL * action;
-@property(assign,readonly) EKAlarm * bestDisplayAlarm;
-@property(getter=isCompleted,assign,readwrite) bool completed;
-@property(assign,copy) NSDate * completionDate;
-@property(assign,readwrite) unsigned long long displayOrder;
-@property(assign,readonly) NSDate * dueDate;
-@property(assign,copy) NSDateComponents * dueDateComponents;
-@property(assign,readwrite) bool hadRecurrences;
-@property(assign,readonly) EKObjectID * parentID;
-@property(assign,readwrite) long long priority;
-@property(assign,copy) NSDateComponents * startDateComponents;
+@property (nonatomic, copy) NSURL *action;
+@property (nonatomic, readonly) EKAlarm *bestDisplayAlarm;
+@property (getter=isCompleted, nonatomic) bool completed;
+@property (nonatomic, copy) NSDate *completionDate;
+@property (nonatomic) unsigned long long displayOrder;
+@property (nonatomic, readonly) NSDate *dueDate;
+@property (nonatomic, copy) NSDateComponents *dueDateComponents;
+@property (nonatomic) bool hadRecurrences;
+@property (nonatomic, readonly) EKObjectID *parentID;
+@property (nonatomic) long long priority;
+@property (nonatomic, copy) NSDateComponents *startDateComponents;
 
 + (void)_removeSnoozedAlarmsFromReminder:(id)arg1 usingDueDate:(id)arg2;
 + (id)reminderWithEventStore:(id)arg1;

@@ -21,14 +21,14 @@
     NSArray *_updateItems;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } contentOffsetAdjustment;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } contentSizeAdjustment;
-@property(assign,readwrite) bool invalidateDataSourceCounts;
-@property(assign,readwrite) bool invalidateEverything;
-@property(assign,readonly) NSDictionary * invalidatedDecorationIndexPaths;
-@property(assign,readonly) NSArray * invalidatedItemIndexPaths;
-@property(assign,readonly) NSDictionary * invalidatedSupplementaryIndexPaths;
-@property(getter=_updateItems,setter=_setUpdateItems:,assign,readwrite) NSArray * updateItems;
+@property (nonatomic) struct CGPoint { double x1; double x2; } contentOffsetAdjustment;
+@property (nonatomic) struct CGSize { double x1; double x2; } contentSizeAdjustment;
+@property (nonatomic) bool invalidateDataSourceCounts;
+@property (nonatomic) bool invalidateEverything;
+@property (nonatomic, readonly) NSDictionary *invalidatedDecorationIndexPaths;
+@property (nonatomic, readonly) NSArray *invalidatedItemIndexPaths;
+@property (nonatomic, readonly) NSDictionary *invalidatedSupplementaryIndexPaths;
+@property (getter=_updateItems, setter=_setUpdateItems:, nonatomic) NSArray *updateItems;
 
 - (void)_invalidateSupplementaryElementsOfKind:(id)arg1 atIndexPaths:(id)arg2;
 - (id)_invalidatedSupplementaryViews;

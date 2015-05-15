@@ -16,11 +16,11 @@
     } _contactPoint;
 }
 
-@property(assign,readonly) SKPhysicsBody * bodyA;
-@property(assign,readonly) SKPhysicsBody * bodyB;
-@property(assign,readonly) double collisionImpulse;
-@property(assign,readonly) struct CGVector { double x1; double x2; } contactNormal;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } contactPoint;
+@property (nonatomic, readonly) SKPhysicsBody *bodyA;
+@property (nonatomic, readonly) SKPhysicsBody *bodyB;
+@property (nonatomic, readonly) double collisionImpulse;
+@property (nonatomic, readonly) struct CGVector { double x1; double x2; } contactNormal;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } contactPoint;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)copyWithZone:(struct _NSZone { }*)arg1;

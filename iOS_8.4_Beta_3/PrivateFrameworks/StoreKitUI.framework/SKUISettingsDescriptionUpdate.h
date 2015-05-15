@@ -8,9 +8,9 @@
     long long _updateType;
 }
 
-@property(assign,retain) NSArray * indexPaths;
-@property(assign,retain) NSIndexSet * indexSet;
-@property(assign,readonly) long long updateType;
+@property (nonatomic, retain) NSArray *indexPaths;
+@property (nonatomic, retain) NSIndexSet *indexSet;
+@property (nonatomic, readonly) long long updateType;
 
 - (void).cxx_destruct;
 - (id)indexPaths;

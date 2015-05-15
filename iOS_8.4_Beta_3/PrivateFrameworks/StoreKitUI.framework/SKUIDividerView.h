@@ -7,9 +7,9 @@
     double _dividerSize;
 }
 
-@property(assign,retain) UIColor * dividerColor;
-@property(assign,readwrite) long long dividerOrientation;
-@property(assign,readwrite) double dividerSize;
+@property (nonatomic, retain) UIColor *dividerColor;
+@property (nonatomic) long long dividerOrientation;
+@property (nonatomic) double dividerSize;
 
 - (id)dividerColor;
 - (long long)dividerOrientation;

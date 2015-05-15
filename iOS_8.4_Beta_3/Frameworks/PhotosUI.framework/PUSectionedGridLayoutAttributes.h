@@ -9,10 +9,10 @@
     double _interactiveTransitionProgress;
 }
 
-@property(assign,readwrite) bool exists;
-@property(assign,readwrite) bool extendsTopContent;
-@property(assign,readwrite) bool floating;
-@property(assign,readwrite) double interactiveTransitionProgress;
+@property (nonatomic) bool exists;
+@property (nonatomic) bool extendsTopContent;
+@property (nonatomic) bool floating;
+@property (nonatomic) double interactiveTransitionProgress;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)description;

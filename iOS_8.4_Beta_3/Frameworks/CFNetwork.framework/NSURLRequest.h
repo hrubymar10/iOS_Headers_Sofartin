@@ -6,19 +6,19 @@
     NSURLRequestInternal *_internal;
 }
 
-@property(assign,copy) NSData * HTTPBody;
-@property(assign,retain) NSInputStream * HTTPBodyStream;
-@property(assign,copy) NSString * HTTPMethod;
-@property(assign,readonly) bool HTTPShouldHandleCookies;
-@property(assign,readonly) bool HTTPShouldUsePipelining;
-@property(assign,copy) NSURL * URL;
-@property(getter=_gkSAPSession,setter=_gkSetSAPSession:,assign,retain) GKFairPlaySAPSession * _gkSAPSession;
-@property(assign,copy) NSDictionary * allHTTPHeaderFields;
-@property(assign,readonly) bool allowsCellularAccess;
-@property(assign,readonly) unsigned long long cachePolicy;
-@property(assign,copy) NSURL * mainDocumentURL;
-@property(assign,readonly) unsigned long long networkServiceType;
-@property(assign,readonly) double timeoutInterval;
+@property (readonly, copy) NSData *HTTPBody;
+@property (readonly, retain) NSInputStream *HTTPBodyStream;
+@property (readonly, copy) NSString *HTTPMethod;
+@property (readonly) bool HTTPShouldHandleCookies;
+@property (readonly) bool HTTPShouldUsePipelining;
+@property (readonly, copy) NSURL *URL;
+@property (getter=_gkSAPSession, setter=_gkSetSAPSession:, nonatomic, retain) GKFairPlaySAPSession *_gkSAPSession;
+@property (readonly, copy) NSDictionary *allHTTPHeaderFields;
+@property (readonly) bool allowsCellularAccess;
+@property (readonly) unsigned long long cachePolicy;
+@property (readonly, copy) NSURL *mainDocumentURL;
+@property (readonly) unsigned long long networkServiceType;
+@property (readonly) double timeoutInterval;
 
 + (bool)allowsAnyHTTPSCertificateForHost:(id)arg1;
 + (id)allowsSpecificHTTPSCertificateForHost:(id)arg1;

@@ -6,7 +6,7 @@
     NSString *_secondaryAuthToken;
 }
 
-@property(assign,copy) NSString * secondaryAuthToken;
+@property (nonatomic, copy) NSString *secondaryAuthToken;
 
 + (Class)responseClass;
 

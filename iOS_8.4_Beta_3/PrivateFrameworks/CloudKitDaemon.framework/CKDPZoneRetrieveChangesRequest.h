@@ -10,10 +10,10 @@
     NSData *_syncContinuationToken;
 }
 
-@property(assign,readwrite) bool hasMaxChangedZones;
-@property(assign,readonly) bool hasSyncContinuationToken;
-@property(assign,readwrite) unsigned int maxChangedZones;
-@property(assign,retain) NSData * syncContinuationToken;
+@property (nonatomic) bool hasMaxChangedZones;
+@property (nonatomic, readonly) bool hasSyncContinuationToken;
+@property (nonatomic) unsigned int maxChangedZones;
+@property (nonatomic, retain) NSData *syncContinuationToken;
 
 + (id)options;
 

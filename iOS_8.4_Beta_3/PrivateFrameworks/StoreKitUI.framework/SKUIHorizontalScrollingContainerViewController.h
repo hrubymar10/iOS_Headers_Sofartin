@@ -23,15 +23,15 @@
     NSArray *_viewControllers;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIHorizontalScrollingContainerViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSIndexPath * indexPathOfFocusedItem;
-@property(assign,readonly) bool initialScrollWasPerformed;
-@property(assign,retain) UICollectionView * menuBarCollectionView;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * viewControllers;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIHorizontalScrollingContainerViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSIndexPath *indexPathOfFocusedItem;
+@property (nonatomic, readonly) bool initialScrollWasPerformed;
+@property (nonatomic, retain) UICollectionView *menuBarCollectionView;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *viewControllers;
 
 - (void).cxx_destruct;
 - (void)_applyNewContentInset:(struct UIEdgeInsets { double x1; double x2; double x3; double x4; })arg1 toViewController:(id)arg2;

@@ -29,16 +29,16 @@
     bool _shouldIgnoreArtworkImageChanges;
 }
 
-@property(assign,readwrite) long long addToLibraryButtonState;
-@property(assign,readonly) UIButton * contextualActionsButton;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicEntityProductHeaderLockupViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * editableText;
-@property(getter=isEditing,assign,readwrite) bool editing;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MusicEntityViewProductHeaderLockupContentDescriptor * productHeaderLockupContentDescriptor;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long addToLibraryButtonState;
+@property (nonatomic, readonly) UIButton *contextualActionsButton;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicEntityProductHeaderLockupViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *editableText;
+@property (getter=isEditing, nonatomic) bool editing;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MusicEntityViewProductHeaderLockupContentDescriptor *productHeaderLockupContentDescriptor;
+@property (readonly) Class superclass;
 
 + (double)_buttonHeight;
 + (double)maximumRowHeightForHorizontalLockupContentDescriptor:(id)arg1 traitCollection:(id)arg2;

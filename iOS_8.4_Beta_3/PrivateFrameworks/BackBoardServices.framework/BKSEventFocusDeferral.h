@@ -7,8 +7,8 @@
     BKSEventFocusDeferralProperties *_properties;
 }
 
-@property(assign,readonly) BKSEventFocusDeferralProperties * deferredProperties;
-@property(assign,readonly) BKSEventFocusDeferralProperties * properties;
+@property (nonatomic, readonly) BKSEventFocusDeferralProperties *deferredProperties;
+@property (nonatomic, readonly) BKSEventFocusDeferralProperties *properties;
 
 + (bool)supportsSecureCoding;
 

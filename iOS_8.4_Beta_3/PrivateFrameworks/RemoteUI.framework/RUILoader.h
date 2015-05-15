@@ -9,8 +9,8 @@
     NSURL *_url;
 }
 
-@property(assign,readwrite) bool allowNonSecureHTTP;
-@property(assign,readwrite) <RUIParserDelegate> * parserDelegate;
+@property (nonatomic) bool allowNonSecureHTTP;
+@property (nonatomic) <RUIParserDelegate> *parserDelegate;
 
 - (void).cxx_destruct;
 - (id)URL;

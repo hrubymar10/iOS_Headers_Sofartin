@@ -4,9 +4,9 @@
 
 @interface NSStream : NSObject
 
-@property(assign,readwrite) <NSStreamDelegate> * delegate;
-@property(assign,copy) NSError * streamError;
-@property(assign,readonly) unsigned long long streamStatus;
+@property <NSStreamDelegate> *delegate;
+@property (readonly, copy) NSError *streamError;
+@property (readonly) unsigned long long streamStatus;
 
 + (void)createBoundInputStream:(id*)arg1 outputStream:(id*)arg2 bufferSize:(unsigned long long)arg3;
 + (void)getBoundStreamsWithBufferSize:(unsigned long long)arg1 inputStream:(id*)arg2 outputStream:(id*)arg3;

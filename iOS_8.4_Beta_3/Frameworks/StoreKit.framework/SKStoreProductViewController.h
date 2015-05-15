@@ -23,21 +23,21 @@
     bool _showsStoreButton;
 }
 
-@property(assign,copy) id _gkCompletionHandler;
-@property(assign,retain) GKGame * _gkGame;
-@property(assign,copy) NSString * additionalBuyParameters;
-@property(assign,copy) NSString * affiliateIdentifier;
-@property(assign,readwrite) bool askToBuy;
-@property(assign,readwrite) bool automaticallyDismisses;
-@property(assign,copy) NSString * cancelButtonTitle;
-@property(assign,copy) NSString * clientIdentifier;
-@property(assign,readwrite) <SKStoreProductViewControllerDelegate> * delegate;
-@property(assign,readwrite) long long productPageStyle;
-@property(assign,copy) NSString * promptString;
-@property(assign,copy) NSString * rightBarButtonTitle;
-@property(assign,copy) NSDictionary * scriptContextDictionary;
-@property(assign,readwrite) bool showsRightBarButton;
-@property(assign,readwrite) bool showsStoreButton;
+@property (nonatomic, copy) id _gkCompletionHandler;
+@property (nonatomic, retain) GKGame *_gkGame;
+@property (nonatomic, copy) NSString *additionalBuyParameters;
+@property (nonatomic, copy) NSString *affiliateIdentifier;
+@property (nonatomic) bool askToBuy;
+@property (nonatomic) bool automaticallyDismisses;
+@property (nonatomic, copy) NSString *cancelButtonTitle;
+@property (nonatomic, copy) NSString *clientIdentifier;
+@property (nonatomic) <SKStoreProductViewControllerDelegate> *delegate;
+@property (nonatomic) long long productPageStyle;
+@property (nonatomic, copy) NSString *promptString;
+@property (nonatomic, copy) NSString *rightBarButtonTitle;
+@property (nonatomic, copy) NSDictionary *scriptContextDictionary;
+@property (nonatomic) bool showsRightBarButton;
+@property (nonatomic) bool showsStoreButton;
 
 + (id)_defaultIXStoreSheetDictionary;
 + (void)_validateURL:(id)arg1 withSheetInfo:(id)arg2 completionBlock:(id)arg3;

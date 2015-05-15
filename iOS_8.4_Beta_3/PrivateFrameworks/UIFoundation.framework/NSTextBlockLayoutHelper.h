@@ -48,7 +48,7 @@
     double _width;
 }
 
-@property(assign,readonly) NSTextTableBlock * block;
+@property (readonly) NSTextTableBlock *block;
 
 - (id)block;
 - (void)dealloc;

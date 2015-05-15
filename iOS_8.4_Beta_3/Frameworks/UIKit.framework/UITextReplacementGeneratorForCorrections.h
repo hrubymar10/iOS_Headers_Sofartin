@@ -13,14 +13,14 @@
     UITextChecker *_textChecker;
 }
 
-@property(assign,retain) TIKeyboardCandidate * autocorrectionRecord;
-@property(assign,readwrite) bool forceAutocorrectionGuesses;
-@property(assign,readwrite) bool forceHistoryReplacement;
-@property(assign,readwrite) bool forceSpellingGuesses;
-@property(assign,readwrite) unsigned long long maxCountAfterAutocorrectionGuesses;
-@property(assign,readwrite) unsigned long long maxCountAfterSpellingGuesses;
-@property(assign,readwrite) unsigned long long maxEditDistance;
-@property(assign,retain) UITextChecker * textChecker;
+@property (nonatomic, retain) TIKeyboardCandidate *autocorrectionRecord;
+@property (nonatomic) bool forceAutocorrectionGuesses;
+@property (nonatomic) bool forceHistoryReplacement;
+@property (nonatomic) bool forceSpellingGuesses;
+@property (nonatomic) unsigned long long maxCountAfterAutocorrectionGuesses;
+@property (nonatomic) unsigned long long maxCountAfterSpellingGuesses;
+@property (nonatomic) unsigned long long maxEditDistance;
+@property (nonatomic, retain) UITextChecker *textChecker;
 
 - (void)addAutocorrectionGuessesToReplacements:(id)arg1;
 - (void)addPreviouslySuggestedAutocorrectionToReplacements:(id)arg1;

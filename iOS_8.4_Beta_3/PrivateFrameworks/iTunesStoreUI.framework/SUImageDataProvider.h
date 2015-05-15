@@ -12,10 +12,10 @@
     SUImageModifier *_modifier;
 }
 
-@property(assign,retain) UIColor * fillColor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } finalSize;
-@property(assign,readwrite) double inputImageScale;
-@property(assign,retain) SUImageModifier * modifier;
+@property (retain) UIColor *fillColor;
+@property struct CGSize { double x1; double x2; } finalSize;
+@property double inputImageScale;
+@property (retain) SUImageModifier *modifier;
 
 - (void)_getFinalSize:(struct CGSize { double x1; double x2; }*)arg1 imageFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }*)arg2 forImage:(id)arg3 withModifier:(id)arg4;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -27,19 +27,19 @@
     long long _templateRenderingMode;
 }
 
-@property(assign,readwrite) struct { double x1; double x2; double x3; double x4; } alignmentEdgeInsets;
-@property(assign,readwrite) int blendMode;
-@property(assign,readwrite) struct { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,readwrite) int exifOrientation;
-@property(assign,readwrite) long long idiom;
-@property(assign,readwrite) long long imageType;
-@property(assign,readwrite) bool isTemplate;
-@property(assign,readwrite) long long resizingMode;
-@property(assign,readwrite) double scale;
-@property(assign,readwrite) long long sizeClassHorizontal;
-@property(assign,readwrite) long long sizeClassVertical;
-@property(assign,readwrite) long long subtype;
-@property(assign,readwrite) long long templateRenderingMode;
+@property (nonatomic) struct { double x1; double x2; double x3; double x4; } alignmentEdgeInsets;
+@property (nonatomic) int blendMode;
+@property (nonatomic) struct { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic) int exifOrientation;
+@property (nonatomic) long long idiom;
+@property (nonatomic) long long imageType;
+@property (nonatomic) bool isTemplate;
+@property (nonatomic) long long resizingMode;
+@property (nonatomic) double scale;
+@property (nonatomic) long long sizeClassHorizontal;
+@property (nonatomic) long long sizeClassVertical;
+@property (nonatomic) long long subtype;
+@property (nonatomic) long long templateRenderingMode;
 
 - (struct { double x1; double x2; double x3; double x4; })alignmentEdgeInsets;
 - (int)blendMode;

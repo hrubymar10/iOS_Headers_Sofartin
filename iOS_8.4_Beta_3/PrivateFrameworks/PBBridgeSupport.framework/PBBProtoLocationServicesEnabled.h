@@ -6,7 +6,7 @@
     bool _enabled;
 }
 
-@property(assign,readwrite) bool enabled;
+@property (nonatomic) bool enabled;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

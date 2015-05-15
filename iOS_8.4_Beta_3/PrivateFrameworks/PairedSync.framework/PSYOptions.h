@@ -12,13 +12,13 @@
     NSArray *_testInputs;
 }
 
-@property(assign,copy) NSURL * activityInfoDirectory;
-@property(assign,readwrite) bool dryRun;
-@property(assign,copy) NSArray * jobs;
-@property(getter=shouldResetDeviceSyncState,assign,readwrite) bool resetDeviceSyncState;
-@property(getter=shouldResumePendingJobs,assign,readwrite) bool resumePendingJobs;
-@property(assign,readwrite) unsigned long long terminationJobCount;
-@property(assign,copy) NSArray * testInputs;
+@property (nonatomic, copy) NSURL *activityInfoDirectory;
+@property (nonatomic) bool dryRun;
+@property (nonatomic, copy) NSArray *jobs;
+@property (getter=shouldResetDeviceSyncState, nonatomic) bool resetDeviceSyncState;
+@property (getter=shouldResumePendingJobs, nonatomic) bool resumePendingJobs;
+@property (nonatomic) unsigned long long terminationJobCount;
+@property (nonatomic, copy) NSArray *testInputs;
 
 + (bool)supportsSecureCoding;
 

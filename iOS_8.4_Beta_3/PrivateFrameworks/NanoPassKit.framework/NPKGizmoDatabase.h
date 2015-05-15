@@ -22,17 +22,17 @@
     struct sqlite3_stmt { } *_updateDeletePendingStatment;
 }
 
-@property(assign,readonly) struct sqlite3 { }* database;
-@property(assign,readonly) struct sqlite3_stmt { }* deleteStatement;
-@property(assign,readonly) struct sqlite3_stmt { }* insertDiffStatement;
-@property(assign,readonly) struct sqlite3_stmt { }* insertStatement;
-@property(assign,readonly) NSData * libraryHash;
-@property(assign,readonly) NSDictionary * manifestHashes;
-@property(assign,readwrite) bool passDBIsAvailable;
-@property(assign,readonly) NSArray * passDescriptions;
-@property(assign,readonly) struct sqlite3_stmt { }* selectPassDataStatement;
-@property(assign,readonly) struct sqlite3_stmt { }* selectPassDiffStatement;
-@property(assign,readonly) struct sqlite3_stmt { }* updateDeletePendingStatement;
+@property (readonly) struct sqlite3 { }*database;
+@property (readonly) struct sqlite3_stmt { }*deleteStatement;
+@property (readonly) struct sqlite3_stmt { }*insertDiffStatement;
+@property (readonly) struct sqlite3_stmt { }*insertStatement;
+@property (readonly) NSData *libraryHash;
+@property (readonly) NSDictionary *manifestHashes;
+@property (nonatomic) bool passDBIsAvailable;
+@property (readonly) NSArray *passDescriptions;
+@property (readonly) struct sqlite3_stmt { }*selectPassDataStatement;
+@property (readonly) struct sqlite3_stmt { }*selectPassDiffStatement;
+@property (readonly) struct sqlite3_stmt { }*updateDeletePendingStatement;
 
 + (long long)maxDatabaseVersion;
 + (id)sharedDatabase;

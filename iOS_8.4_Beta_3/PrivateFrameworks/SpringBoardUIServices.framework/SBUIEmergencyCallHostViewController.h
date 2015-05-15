@@ -10,10 +10,10 @@
     UIColor *_tintColor;
 }
 
-@property(assign,readwrite) long long backgroundStyle;
-@property(assign,readwrite) double blurRadius;
-@property(assign,readwrite) bool blursSelf;
-@property(assign,retain) UIColor * tintColor;
+@property (nonatomic) long long backgroundStyle;
+@property (nonatomic) double blurRadius;
+@property (nonatomic) bool blursSelf;
+@property (nonatomic, retain) UIColor *tintColor;
 
 + (id)exportedInterface;
 + (void)requestEmergencyCallControllerWithCompletion:(id)arg1;

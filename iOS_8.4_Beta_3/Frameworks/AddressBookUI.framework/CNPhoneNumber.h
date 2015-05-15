@@ -8,10 +8,10 @@
     NSString *_stringValue;
 }
 
-@property(assign,copy) NSString * countryCode;
-@property(assign,copy) NSString * formattedStringValue;
-@property(assign,copy) NSString * normalizedStringValue;
-@property(assign,copy) NSString * stringValue;
+@property (readonly, copy) NSString *countryCode;
+@property (readonly, copy) NSString *formattedStringValue;
+@property (readonly, copy) NSString *normalizedStringValue;
+@property (readonly, copy) NSString *stringValue;
 
 + (id)phoneNumberWithStringValue:(id)arg1;
 

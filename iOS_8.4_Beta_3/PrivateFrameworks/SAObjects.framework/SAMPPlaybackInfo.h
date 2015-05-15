@@ -4,14 +4,14 @@
 
 @interface SAMPPlaybackInfo : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SACalendar * lastPlayedDate;
-@property(assign,readwrite) long long playbackPositionMillis;
-@property(assign,readwrite) long long plays;
-@property(assign,readwrite) bool rememberPlaybackPosition;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SACalendar *lastPlayedDate;
+@property (nonatomic) long long playbackPositionMillis;
+@property (nonatomic) long long plays;
+@property (nonatomic) bool rememberPlaybackPosition;
+@property (readonly) Class superclass;
 
 + (id)playbackInfo;
 + (id)playbackInfoWithDictionary:(id)arg1 context:(id)arg2;

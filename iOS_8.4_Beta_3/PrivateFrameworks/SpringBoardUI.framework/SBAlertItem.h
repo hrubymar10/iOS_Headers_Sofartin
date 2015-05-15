@@ -17,17 +17,17 @@
     bool _preventLockOver;
 }
 
-@property(assign,readwrite) bool allowInCar;
-@property(assign,readwrite) bool allowInSetup;
-@property(assign,readwrite) bool allowMessageInCar;
-@property(assign,retain) NSArray * allowedBundleIDs;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool ignoreIfAlreadyDisplaying;
-@property(assign,readwrite) bool pendInSetupIfNotAllowed;
-@property(assign,readwrite) bool pendWhileKeyBagLocked;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool allowInCar;
+@property (nonatomic) bool allowInSetup;
+@property (nonatomic) bool allowMessageInCar;
+@property (nonatomic, retain) NSArray *allowedBundleIDs;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool ignoreIfAlreadyDisplaying;
+@property (nonatomic) bool pendInSetupIfNotAllowed;
+@property (nonatomic) bool pendWhileKeyBagLocked;
+@property (readonly) Class superclass;
 
 + (id)_alertItemsController;
 + (void)activateAlertItem:(id)arg1;

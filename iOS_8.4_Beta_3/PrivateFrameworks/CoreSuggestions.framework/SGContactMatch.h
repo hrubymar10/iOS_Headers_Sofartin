@@ -7,8 +7,8 @@
     long long _matchingFieldType;
 }
 
-@property(assign,readonly) SGContact * contact;
-@property(assign,readonly) <SGObject> * matchingField;
+@property (nonatomic, readonly) SGContact *contact;
+@property (nonatomic, readonly) <SGObject> *matchingField;
 
 + (bool)supportsSecureCoding;
 

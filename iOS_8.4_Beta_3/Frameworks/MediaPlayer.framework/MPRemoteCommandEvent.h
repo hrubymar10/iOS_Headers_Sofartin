@@ -8,8 +8,8 @@
     double _timestamp;
 }
 
-@property(assign,readonly) MPRemoteCommand * command;
-@property(assign,readonly) double timestamp;
+@property (nonatomic, readonly) MPRemoteCommand *command;
+@property (nonatomic, readonly) double timestamp;
 
 + (id)eventWithCommand:(id)arg1 mediaRemoteType:(unsigned int)arg2 options:(id)arg3;
 

@@ -16,18 +16,18 @@
     int _state;
 }
 
-@property(assign,retain) NSMutableDictionary * assetToItemInFlightMap;
-@property(assign,retain) NSString * currentFocusAlbumGUID;
-@property(assign,retain) NSString * currentFocusAssetCollectionGUID;
-@property(assign,readwrite) <MSASAssetDownloaderDelegate> * delegate;
-@property(assign,readwrite) bool didEncounterNetworkConditionError;
-@property(assign,retain) NSString * downloadBatchPerfGUID;
-@property(assign,retain) NSMutableArray * finishedAssets;
-@property(assign,readwrite) bool isDownloadingThumbnails;
-@property(assign,readwrite) bool isWaitingForFirstDownloadEvent;
-@property(assign,retain) NSMutableArray * itemsInFlight;
-@property(assign,retain) NSString * objectGUID;
-@property(assign,readwrite) int state;
+@property (nonatomic, retain) NSMutableDictionary *assetToItemInFlightMap;
+@property (nonatomic, retain) NSString *currentFocusAlbumGUID;
+@property (nonatomic, retain) NSString *currentFocusAssetCollectionGUID;
+@property (nonatomic) <MSASAssetDownloaderDelegate> *delegate;
+@property (nonatomic) bool didEncounterNetworkConditionError;
+@property (nonatomic, retain) NSString *downloadBatchPerfGUID;
+@property (nonatomic, retain) NSMutableArray *finishedAssets;
+@property (nonatomic) bool isDownloadingThumbnails;
+@property (nonatomic) bool isWaitingForFirstDownloadEvent;
+@property (nonatomic, retain) NSMutableArray *itemsInFlight;
+@property (nonatomic, retain) NSString *objectGUID;
+@property (nonatomic) int state;
 
 - (void).cxx_destruct;
 - (void)MMCSEngine:(id)arg1 didCreateRequestorContext:(id)arg2 forAssets:(id)arg3;

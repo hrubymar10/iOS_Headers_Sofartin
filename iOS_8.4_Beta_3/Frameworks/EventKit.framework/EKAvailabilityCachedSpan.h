@@ -7,8 +7,8 @@
     EKAvailabilitySpan *_span;
 }
 
-@property(assign,retain) NSDate * creationDate;
-@property(assign,retain) EKAvailabilitySpan * span;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic, retain) EKAvailabilitySpan *span;
 
 - (id)creationDate;
 - (void)dealloc;

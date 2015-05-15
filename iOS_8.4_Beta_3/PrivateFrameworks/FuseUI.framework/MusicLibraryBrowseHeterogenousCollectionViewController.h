@@ -8,7 +8,7 @@
     MusicSectionEntityValueContext *_sectionEntityValueContext;
 }
 
-@property(assign,readonly) MusicLibraryBrowseHeterogenousCollectionViewConfiguration * libraryViewConfiguration;
+@property (nonatomic, readonly) MusicLibraryBrowseHeterogenousCollectionViewConfiguration *libraryViewConfiguration;
 
 - (void).cxx_destruct;
 - (void)_configureEntityValueContextOutput:(id)arg1 forIndexPath:(id)arg2;

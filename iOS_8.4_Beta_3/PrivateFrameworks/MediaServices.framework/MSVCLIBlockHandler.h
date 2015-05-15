@@ -6,7 +6,7 @@
     id _block;
 }
 
-@property(assign,readonly) id block;
+@property (nonatomic, readonly) id block;
 
 - (void).cxx_destruct;
 - (id)block;

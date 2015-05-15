@@ -8,9 +8,9 @@
     NSString *mPreferredFormat;
 }
 
-@property(assign,readwrite) bool isDateOnly;
-@property(assign,readwrite) bool isTimeOnly;
-@property(assign,retain) NSString * preferredFormat;
+@property (nonatomic) bool isDateOnly;
+@property (nonatomic) bool isTimeOnly;
+@property (nonatomic, retain) NSString *preferredFormat;
 
 - (void)dealloc;
 - (bool)getObjectValue:(out id*)arg1 forString:(id)arg2 errorDescription:(out id*)arg3;

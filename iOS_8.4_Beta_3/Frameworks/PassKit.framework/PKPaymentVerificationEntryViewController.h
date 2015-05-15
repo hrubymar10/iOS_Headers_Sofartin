@@ -12,13 +12,13 @@
     PKActivityTableCell *_verificationCodeCell;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * descriptionText;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * passSnapshot;
-@property(assign,readwrite) <PKPaymentVerificationEntryDelegate> * setupDelegate;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *descriptionText;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *passSnapshot;
+@property (nonatomic) <PKPaymentVerificationEntryDelegate> *setupDelegate;
+@property (readonly) Class superclass;
 
 - (void)_disableUI;
 - (void)_enableUI;

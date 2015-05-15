@@ -4,11 +4,11 @@
 
 @interface AVAudioUnit : AVAudioNode
 
-@property(assign,readonly) struct AudioComponentDescription { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; } audioComponentDescription;
-@property(assign,readonly) struct OpaqueAudioComponentInstance { }* audioUnit;
-@property(assign,readonly) NSString * manufacturerName;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) unsigned long long version;
+@property (nonatomic, readonly) struct AudioComponentDescription { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; } audioComponentDescription;
+@property (nonatomic, readonly) struct OpaqueAudioComponentInstance { }*audioUnit;
+@property (nonatomic, readonly) NSString *manufacturerName;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) unsigned long long version;
 
 - (struct AudioComponentDescription { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; })audioComponentDescription;
 - (struct OpaqueAudioComponentInstance { }*)audioUnit;

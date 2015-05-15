@@ -7,8 +7,8 @@
     <CNFRegChangeAccountPasswordDelegate> *_delegate;
 }
 
-@property(assign,copy) NSString * appleID;
-@property(assign,readwrite) <CNFRegChangeAccountPasswordDelegate> * delegate;
+@property (nonatomic, copy) NSString *appleID;
+@property (nonatomic) <CNFRegChangeAccountPasswordDelegate> *delegate;
 
 - (id)appleID;
 - (id)bagKey;

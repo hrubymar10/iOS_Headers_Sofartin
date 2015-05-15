@@ -6,7 +6,7 @@
     <EKLayoutContainerViewDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <EKLayoutContainerViewDelegate> * delegate;
+@property (nonatomic) <EKLayoutContainerViewDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)delegate;

@@ -6,7 +6,7 @@
     NSObject *_object;
 }
 
-@property(assign,readwrite) NSObject * object;
+@property (nonatomic) NSObject *object;
 
 - (void).cxx_destruct;
 - (id)object;

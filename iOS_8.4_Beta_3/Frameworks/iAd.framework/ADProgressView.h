@@ -8,9 +8,9 @@
     ADPrerollSlider *_slider;
 }
 
-@property(assign,retain) UILabel * elapsedTimeLabel;
-@property(assign,retain) UILabel * remainingTimeLabel;
-@property(assign,retain) ADPrerollSlider * slider;
+@property (nonatomic, retain) UILabel *elapsedTimeLabel;
+@property (nonatomic, retain) UILabel *remainingTimeLabel;
+@property (nonatomic, retain) ADPrerollSlider *slider;
 
 - (void)dealloc;
 - (id)elapsedTimeLabel;

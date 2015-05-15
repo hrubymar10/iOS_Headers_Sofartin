@@ -52,19 +52,19 @@
     int _veryLargeTileQualityImageFormat;
 }
 
-@property(assign,readonly) PUPhotosGridViewControllerSpec * gridSpec;
-@property(assign,readonly) long long largeNumberOfSubjectsForLikes;
-@property(assign,readonly) struct CGSize { double x1; double x2; } minimumVideoTileSize;
-@property(assign,readonly) PUPhotoBrowserControllerSpec * photoBrowserSpec;
-@property(assign,readonly) PUPhotosPickerViewControllerSpec * photosPickerSpec;
-@property(assign,readonly) PUFeedViewControllerSpec * popoverFeedViewControllerSpec;
-@property(assign,readonly) long long promptStyle;
-@property(assign,copy) NSIndexSet * qualityImageFormats;
-@property(assign,readonly) bool shouldHideBarsInLandscape;
-@property(assign,readonly) bool shouldShowInvitationsInPopover;
-@property(assign,readonly) bool shouldUseAspectThumbnails;
-@property(assign,readonly) bool shouldUseFullscreenLayout;
-@property(assign,readonly) struct CGSize { double x1; double x2; } thumbnailSize;
+@property (nonatomic, readonly) PUPhotosGridViewControllerSpec *gridSpec;
+@property (nonatomic, readonly) long long largeNumberOfSubjectsForLikes;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } minimumVideoTileSize;
+@property (nonatomic, readonly) PUPhotoBrowserControllerSpec *photoBrowserSpec;
+@property (nonatomic, readonly) PUPhotosPickerViewControllerSpec *photosPickerSpec;
+@property (nonatomic, readonly) PUFeedViewControllerSpec *popoverFeedViewControllerSpec;
+@property (nonatomic, readonly) long long promptStyle;
+@property (nonatomic, copy) NSIndexSet *qualityImageFormats;
+@property (nonatomic, readonly) bool shouldHideBarsInLandscape;
+@property (nonatomic, readonly) bool shouldShowInvitationsInPopover;
+@property (nonatomic, readonly) bool shouldUseAspectThumbnails;
+@property (nonatomic, readonly) bool shouldUseFullscreenLayout;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } thumbnailSize;
 
 - (void).cxx_destruct;
 - (void)_setQualityImageFormats:(id)arg1;

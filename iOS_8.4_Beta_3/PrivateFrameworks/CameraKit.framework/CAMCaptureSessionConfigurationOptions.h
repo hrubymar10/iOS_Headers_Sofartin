@@ -9,10 +9,10 @@
     bool _useAlternateSlomoRear;
 }
 
-@property(assign,readonly) bool HDRDetectionEnabled;
-@property(assign,readonly) bool use60FPSVideo;
-@property(assign,readonly) bool useAlternateSlomoFront;
-@property(assign,readonly) bool useAlternateSlomoRear;
+@property (nonatomic, readonly) bool HDRDetectionEnabled;
+@property (nonatomic, readonly) bool use60FPSVideo;
+@property (nonatomic, readonly) bool useAlternateSlomoFront;
+@property (nonatomic, readonly) bool useAlternateSlomoRear;
 
 - (bool)HDRDetectionEnabled;
 - (id)init;

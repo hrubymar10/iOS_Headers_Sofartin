@@ -15,7 +15,7 @@
     EDResources *mResources;
 }
 
-@property(assign,readwrite) bool ignoreFormulas;
+@property (nonatomic) bool ignoreFormulas;
 
 - (id)autoStyling;
 - (id)chart;

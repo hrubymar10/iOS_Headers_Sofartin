@@ -29,24 +29,24 @@
     GKStoreItemInternal *_storeItem;
 }
 
-@property(assign,retain) NSString * defaultLeaderboardIdentifier;
-@property(assign,readwrite) unsigned int flags;
-@property(assign,readwrite) bool hasAggregateLeaderboard;
-@property(assign,retain) NSDictionary * icons;
-@property(assign,readwrite) unsigned short maxAchievementPoints;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) unsigned short numberOfAchievements;
-@property(assign,readwrite) unsigned short numberOfLeaderboardSets;
-@property(assign,readwrite) unsigned short numberOfLeaderboards;
-@property(assign,readwrite) unsigned char platform;
-@property(getter=isPrerendered,assign,readwrite) bool prerendered;
-@property(assign,retain) GKStoreItemInternal * storeItem;
-@property(assign,readwrite) bool supportsAchievements;
-@property(assign,readwrite) bool supportsLeaderboardSets;
-@property(assign,readwrite) bool supportsLeaderboards;
-@property(assign,readwrite) bool supportsMultiplayer;
-@property(assign,readwrite) bool supportsTurnBasedMultiplayer;
-@property(getter=isValid,assign,readwrite) bool valid;
+@property (nonatomic, retain) NSString *defaultLeaderboardIdentifier;
+@property (nonatomic) unsigned int flags;
+@property (nonatomic) bool hasAggregateLeaderboard;
+@property (nonatomic, retain) NSDictionary *icons;
+@property (nonatomic) unsigned short maxAchievementPoints;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) unsigned short numberOfAchievements;
+@property (nonatomic) unsigned short numberOfLeaderboardSets;
+@property (nonatomic) unsigned short numberOfLeaderboards;
+@property (nonatomic) unsigned char platform;
+@property (getter=isPrerendered, nonatomic) bool prerendered;
+@property (nonatomic, retain) GKStoreItemInternal *storeItem;
+@property (nonatomic) bool supportsAchievements;
+@property (nonatomic) bool supportsLeaderboardSets;
+@property (nonatomic) bool supportsLeaderboards;
+@property (nonatomic) bool supportsMultiplayer;
+@property (nonatomic) bool supportsTurnBasedMultiplayer;
+@property (getter=isValid, nonatomic) bool valid;
 
 + (id)secureCodedPropertyKeys;
 

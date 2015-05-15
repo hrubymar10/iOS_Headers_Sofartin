@@ -8,8 +8,8 @@
     UIImage *_thumbnail;
 }
 
-@property(assign,retain) CKImageData * imageData;
-@property(assign,retain) UIImage * thumbnail;
+@property (nonatomic, readonly, retain) CKImageData *imageData;
+@property (nonatomic, retain) UIImage *thumbnail;
 
 + (id)UTITypes;
 + (Class)__ck_attachmentItemClass;

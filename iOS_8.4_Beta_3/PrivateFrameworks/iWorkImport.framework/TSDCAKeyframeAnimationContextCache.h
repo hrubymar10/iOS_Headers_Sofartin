@@ -9,10 +9,10 @@
     NSArray *_values;
 }
 
-@property(assign,readonly) bool isObjectTypeCGColor;
-@property(assign,readonly) NSArray * keyTimes;
-@property(assign,readonly) NSArray * timingFunctions;
-@property(assign,readonly) NSArray * values;
+@property (nonatomic, readonly) bool isObjectTypeCGColor;
+@property (nonatomic, readonly) NSArray *keyTimes;
+@property (nonatomic, readonly) NSArray *timingFunctions;
+@property (nonatomic, readonly) NSArray *values;
 
 - (id)initWithAnimation:(id)arg1;
 - (bool)isObjectTypeCGColor;

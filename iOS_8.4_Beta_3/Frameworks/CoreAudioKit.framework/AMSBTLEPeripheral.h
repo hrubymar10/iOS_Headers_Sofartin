@@ -15,15 +15,15 @@
     NSString *uuid;
 }
 
-@property(getter=isAvailable,assign,readwrite) bool available;
-@property(getter=isChangingState,assign,readwrite) bool changingState;
-@property(assign,readwrite) bool inputAvailable;
-@property(assign,readwrite) double lastSeen;
-@property(assign,retain) NSString * name;
-@property(getter=isOnline,assign,readwrite) bool online;
-@property(assign,readwrite) bool outputAvailable;
-@property(assign,readonly) CBPeripheral * peripheral;
-@property(assign,retain) NSString * uuid;
+@property (getter=isAvailable) bool available;
+@property (getter=isChangingState) bool changingState;
+@property bool inputAvailable;
+@property double lastSeen;
+@property (retain) NSString *name;
+@property (getter=isOnline) bool online;
+@property bool outputAvailable;
+@property (readonly) CBPeripheral *peripheral;
+@property (readonly, retain) NSString *uuid;
 
 - (bool)canConnect;
 - (bool)connect;

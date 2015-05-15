@@ -16,17 +16,17 @@
     id _target;
 }
 
-@property(assign,readwrite) SEL action;
-@property(assign,retain) NSArray * marginConstraints;
-@property(assign,retain) NSMutableArray * scaledConstraints;
-@property(assign,retain) UILabel * sectionHeaderLabel;
-@property(assign,copy) NSString * sectionHeaderText;
-@property(assign,retain) _MKRightImageButton * seeMoreButton;
-@property(assign,retain) NSArray * seeMoreButtonConstraints;
-@property(assign,retain) UIView * separator;
-@property(assign,readwrite) bool showSeeMoreButton;
-@property(assign,readwrite) bool showSeparator;
-@property(assign,readwrite) id target;
+@property (nonatomic) SEL action;
+@property (nonatomic, retain) NSArray *marginConstraints;
+@property (nonatomic, retain) NSMutableArray *scaledConstraints;
+@property (nonatomic, retain) UILabel *sectionHeaderLabel;
+@property (nonatomic, copy) NSString *sectionHeaderText;
+@property (nonatomic, retain) _MKRightImageButton *seeMoreButton;
+@property (nonatomic, retain) NSArray *seeMoreButtonConstraints;
+@property (nonatomic, retain) UIView *separator;
+@property (nonatomic) bool showSeeMoreButton;
+@property (nonatomic) bool showSeparator;
+@property (nonatomic) id target;
 
 + (double)intrinsicContentHeight;
 

@@ -7,8 +7,8 @@
     bool _pullRequest;
 }
 
-@property(assign,copy) id completion;
-@property(getter=isPullRequest,assign,readonly) bool pullRequest;
+@property (nonatomic, readonly, copy) id completion;
+@property (getter=isPullRequest, nonatomic, readonly) bool pullRequest;
 
 + (id)requestContextWithCompletion:(id)arg1 pullRequest:(bool)arg2;
 

@@ -9,11 +9,11 @@
     NSMutableDictionary *_messageHandlers;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <NMRIDSMessageCenterDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <NMRIDSMessageCenterDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_sendMessageWithProtobufData:(id)arg1 messageType:(unsigned short)arg2 priority:(unsigned long long)arg3 timeout:(double)arg4 bypassDuet:(bool)arg5 skipStorage:(bool)arg6 isResponse:(bool)arg7 additionalOptions:(id)arg8 resultingMessageIdentifier:(id*)arg9 error:(id*)arg10;

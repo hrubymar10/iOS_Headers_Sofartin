@@ -9,7 +9,7 @@
     } drawingOffset;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } drawingOffset;
+@property (nonatomic) struct CGPoint { double x1; double x2; } drawingOffset;
 
 - (struct CGPoint { double x1; double x2; })drawingOffset;
 - (void)setDrawingOffset:(struct CGPoint { double x1; double x2; })arg1;

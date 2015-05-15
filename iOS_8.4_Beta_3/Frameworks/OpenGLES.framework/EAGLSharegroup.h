@@ -7,7 +7,7 @@
     NSString *debugLabel;
 }
 
-@property(assign,copy) NSString * debugLabel;
+@property (nonatomic, copy) NSString *debugLabel;
 
 - (unsigned long long)APIs;
 - (void)dealloc;

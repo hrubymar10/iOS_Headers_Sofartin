@@ -10,11 +10,11 @@
     unsigned long long _size;
 }
 
-@property(assign,readonly) struct { /* ? */ }** colorBoxes;
-@property(assign,readonly) unsigned long long columnCount;
-@property(assign,readonly) double contrast;
-@property(assign,readonly) unsigned long long rowCount;
-@property(assign,readonly) unsigned long long size;
+@property (nonatomic, readonly) struct { /* ? */ }**colorBoxes;
+@property (nonatomic, readonly) unsigned long long columnCount;
+@property (nonatomic, readonly) double contrast;
+@property (nonatomic, readonly) unsigned long long rowCount;
+@property (nonatomic, readonly) unsigned long long size;
 
 - (void)_freeColorBoxes;
 - (struct { /* ? */ }**)colorBoxes;

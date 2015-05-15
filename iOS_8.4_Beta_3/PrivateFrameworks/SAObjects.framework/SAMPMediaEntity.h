@@ -4,8 +4,8 @@
 
 @interface SAMPMediaEntity : SADomainObject
 
-@property(assign,copy) NSString * sortTitle;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *sortTitle;
+@property (nonatomic, copy) NSString *title;
 
 + (id)mediaEntity;
 + (id)mediaEntityWithDictionary:(id)arg1 context:(id)arg2;

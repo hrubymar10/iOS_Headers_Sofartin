@@ -18,12 +18,12 @@
     bool _wasInvalidatedWithoutNotifyingObservers;
 }
 
-@property(assign,copy) id attributedTextProvider;
-@property(assign,readwrite) double displayScale;
-@property(assign,readwrite) unsigned long long maximumNumberOfLines;
-@property(getter=_isOpaque,setter=_setOpaque:,assign,readwrite) bool opaque;
-@property(assign,copy) NSDictionary * textAttributes;
-@property(getter=_usesImageCachingInsteadOfStringDrawingContextCaching,setter=_setUsesImageCachingInsteadOfStringDrawingContextCaching:,assign,readwrite) bool usesImageCachingInsteadOfStringDrawingContextCaching;
+@property (nonatomic, copy) id attributedTextProvider;
+@property (nonatomic) double displayScale;
+@property (nonatomic) unsigned long long maximumNumberOfLines;
+@property (getter=_isOpaque, setter=_setOpaque:, nonatomic) bool opaque;
+@property (nonatomic, copy) NSDictionary *textAttributes;
+@property (getter=_usesImageCachingInsteadOfStringDrawingContextCaching, setter=_setUsesImageCachingInsteadOfStringDrawingContextCaching:, nonatomic) bool usesImageCachingInsteadOfStringDrawingContextCaching;
 
 + (id)_drawingContextForText:(id)arg1 allowedSize:(struct CGSize { double x1; double x2; })arg2 fromCache:(id)arg3 usingReusableStringDrawingContext:(id)arg4 reusableTextDrawingCacheKey:(id)arg5 textAttributes:(id)arg6 maximumNumberOfLines:(unsigned long long)arg7 opaque:(bool)arg8 displayScale:(double)arg9 attributedTextProvider:(id)arg10;
 + (void)_updateStringDrawingContext:(id)arg1 withMaximumNumberOfLines:(unsigned long long)arg2;

@@ -28,8 +28,8 @@
     } _stencilStates;
 }
 
-@property(assign,readwrite) bool needsTileStencil;
-@property(assign,readwrite) int sourceTileZtoStencilOffset;
+@property (nonatomic) bool needsTileStencil;
+@property (nonatomic) int sourceTileZtoStencilOffset;
 
 + (bool)reloadOnActiveTileGroupChange;
 + (bool)reloadOnStylesheetChange;

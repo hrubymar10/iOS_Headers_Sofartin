@@ -23,21 +23,21 @@
     bool shouldRegisterCallbackSourceOnMainRunloop;
 }
 
-@property(assign,readonly) unsigned int clientCallbackPort;
-@property(assign,readonly) struct __CFRunLoopSource { }* clientCallbackSource;
-@property(assign,copy) NSString * clientIdentifier;
-@property(getter=isConnected,assign,readwrite) bool connected;
-@property(assign,retain) AXAccessQueue * connectionQueue;
-@property(assign,readwrite) int pid;
-@property(assign,retain) AXAccessQueue * portDeathAccessQueue;
-@property(assign,copy) id portDeathHandler;
-@property(assign,retain) NSMutableArray * postConnectionTasks;
-@property(assign,readwrite) struct __CFMachPort { }* serverPort;
-@property(assign,readonly) unsigned int serviceMachPort;
-@property(assign,copy) NSString * serviceName;
-@property(assign,readwrite) bool shouldRegisterCallbackSourceOnMainRunloop;
-@property(assign,readwrite) float timeout;
-@property(assign,readwrite) bool usesPerPidLookup;
+@property (nonatomic, readonly) unsigned int clientCallbackPort;
+@property (nonatomic, readonly) struct __CFRunLoopSource { }*clientCallbackSource;
+@property (nonatomic, copy) NSString *clientIdentifier;
+@property (getter=isConnected, nonatomic) bool connected;
+@property (nonatomic, retain) AXAccessQueue *connectionQueue;
+@property (nonatomic) int pid;
+@property (nonatomic, retain) AXAccessQueue *portDeathAccessQueue;
+@property (nonatomic, copy) id portDeathHandler;
+@property (nonatomic, retain) NSMutableArray *postConnectionTasks;
+@property (nonatomic) struct __CFMachPort { }*serverPort;
+@property (nonatomic, readonly) unsigned int serviceMachPort;
+@property (nonatomic, copy) NSString *serviceName;
+@property (nonatomic) bool shouldRegisterCallbackSourceOnMainRunloop;
+@property (nonatomic) float timeout;
+@property (nonatomic) bool usesPerPidLookup;
 
 + (id)allClients;
 + (void)initialize;

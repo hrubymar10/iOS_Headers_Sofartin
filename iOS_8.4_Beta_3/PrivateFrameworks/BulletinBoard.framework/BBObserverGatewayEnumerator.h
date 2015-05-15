@@ -11,11 +11,11 @@
     NSMutableSet *_gatewaysPlayedLightsAndSirens;
 }
 
-@property(assign,retain) BBBulletin * bulletin;
-@property(assign,readwrite) unsigned long long feeds;
-@property(assign,readwrite) double gatewayTimeout;
-@property(assign,copy) NSArray * gateways;
-@property(assign,copy) NSMutableSet * gatewaysPlayedLightsAndSirens;
+@property (nonatomic, retain) BBBulletin *bulletin;
+@property (nonatomic) unsigned long long feeds;
+@property (nonatomic) double gatewayTimeout;
+@property (nonatomic, copy) NSArray *gateways;
+@property (nonatomic, copy) NSMutableSet *gatewaysPlayedLightsAndSirens;
 
 - (void)attemptNextGatewayInEnumerator:(id)arg1 playLightsAndSirens:(bool)arg2 completion:(id)arg3;
 - (id)bulletin;

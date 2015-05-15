@@ -8,7 +8,7 @@
     NSString *_tableName;
 }
 
-@property(assign,copy) NSString * tableName;
+@property (nonatomic, copy) NSString *tableName;
 
 + (id)SQLToAddColumnWithSQL:(id)arg1 toTableNamed:(id)arg2;
 + (id)SQLToDropTableNamed:(id)arg1;

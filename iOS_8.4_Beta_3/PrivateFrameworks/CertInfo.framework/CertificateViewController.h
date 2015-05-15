@@ -18,19 +18,19 @@
     bool _showCertificateButton;
 }
 
-@property(assign,readwrite) int certUIAction;
-@property(assign,copy) id certificateButtonActionHandler;
-@property(assign,retain) NSString * certificateButtonDescription;
-@property(assign,readwrite) bool certificateButtonIsDestructiveAction;
-@property(assign,retain) NSString * certificateButtonTitle;
-@property(assign,retain) NSDate * certificateExpiration;
-@property(assign,readwrite) bool certificateIsRoot;
-@property(assign,retain) NSString * certificateIssuer;
-@property(assign,retain) NSArray * certificateProperties;
-@property(assign,retain) NSString * certificatePurpose;
-@property(assign,retain) NSString * certificateTitle;
-@property(assign,retain) id certificateTrust;
-@property(assign,readwrite) bool showCertificateButton;
+@property (nonatomic) int certUIAction;
+@property (nonatomic, copy) id certificateButtonActionHandler;
+@property (nonatomic, retain) NSString *certificateButtonDescription;
+@property (nonatomic) bool certificateButtonIsDestructiveAction;
+@property (nonatomic, retain) NSString *certificateButtonTitle;
+@property (nonatomic, retain) NSDate *certificateExpiration;
+@property (nonatomic) bool certificateIsRoot;
+@property (nonatomic, retain) NSString *certificateIssuer;
+@property (nonatomic, retain) NSArray *certificateProperties;
+@property (nonatomic, retain) NSString *certificatePurpose;
+@property (nonatomic, retain) NSString *certificateTitle;
+@property (nonatomic, retain) id certificateTrust;
+@property (nonatomic) bool showCertificateButton;
 
 - (void).cxx_destruct;
 - (int)certUIAction;

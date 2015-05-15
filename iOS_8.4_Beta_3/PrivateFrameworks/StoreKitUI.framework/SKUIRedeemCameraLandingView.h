@@ -10,9 +10,9 @@
     long long _spacingStyle;
 }
 
-@property(assign,readonly) UIButton * button;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) long long spacingStyle;
+@property (nonatomic, readonly) UIButton *button;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) long long spacingStyle;
 
 - (void).cxx_destruct;
 - (id)button;

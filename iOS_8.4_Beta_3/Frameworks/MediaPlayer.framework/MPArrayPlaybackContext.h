@@ -6,7 +6,7 @@
     NSArray *_items;
 }
 
-@property(assign,readonly) NSArray * items;
+@property (nonatomic, readonly) NSArray *items;
 
 + (Class)queueFeederClass;
 

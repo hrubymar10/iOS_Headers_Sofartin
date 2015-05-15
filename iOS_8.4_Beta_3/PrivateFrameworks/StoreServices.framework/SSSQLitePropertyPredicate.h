@@ -6,7 +6,7 @@
     NSString *_property;
 }
 
-@property(assign,readonly) NSString * property;
+@property (nonatomic, readonly) NSString *property;
 
 - (id)SQLJoinClausesForEntityClass:(Class)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

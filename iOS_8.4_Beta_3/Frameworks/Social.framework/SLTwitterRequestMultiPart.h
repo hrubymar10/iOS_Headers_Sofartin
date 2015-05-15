@@ -8,9 +8,9 @@
     NSString *_type;
 }
 
-@property(assign,copy) NSString * name;
-@property(assign,retain) NSData * payload;
-@property(assign,copy) NSString * type;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) NSData *payload;
+@property (nonatomic, copy) NSString *type;
 
 + (id)multiPartWithName:(id)arg1 payload:(id)arg2 type:(id)arg3;
 + (id)multipartBoundary;

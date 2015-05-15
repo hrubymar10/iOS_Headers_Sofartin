@@ -7,8 +7,8 @@
     id _value;
 }
 
-@property(assign,readwrite) long long type;
-@property(assign,retain) id value;
+@property (nonatomic) long long type;
+@property (nonatomic, retain) id value;
 
 + (bool)supportsSecureCoding;
 

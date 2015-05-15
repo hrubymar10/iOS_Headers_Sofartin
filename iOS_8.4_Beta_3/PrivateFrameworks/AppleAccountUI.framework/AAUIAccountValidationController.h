@@ -12,11 +12,11 @@
     ACUIViewController *_presentingViewController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <AAUIAccountValidationControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <AAUIAccountValidationControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)attemptHSALoginWithCompletion:(id)arg1;

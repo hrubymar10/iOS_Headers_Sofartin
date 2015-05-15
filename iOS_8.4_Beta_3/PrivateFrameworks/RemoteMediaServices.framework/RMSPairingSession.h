@@ -11,15 +11,15 @@
     NSString *_passcode;
 }
 
-@property(assign,retain) NSString * advertisedAppName;
-@property(assign,retain) NSString * advertisedDeviceModel;
-@property(assign,retain) NSString * advertisedDeviceName;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RMSPairingSessionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * passcode;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSString *advertisedAppName;
+@property (nonatomic, retain) NSString *advertisedDeviceModel;
+@property (nonatomic, retain) NSString *advertisedDeviceName;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RMSPairingSessionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *passcode;
+@property (readonly) Class superclass;
 
 + (id)localPairingSession;
 + (id)proxyPairingSession;

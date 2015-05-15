@@ -61,18 +61,18 @@
     SKUIVideoImageDataConsumer *_videoImageConsumer;
 }
 
-@property(assign,readonly) SKUIItemArtworkContext * artworkContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * items;
-@property(assign,copy) NSArray * lockups;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } seeAllButtonFrame;
-@property(getter=isSeeAllHidden,assign,readwrite) bool seeAllHidden;
-@property(assign,readonly) NSURL * seeAllURL;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long swooshType;
-@property(assign,readonly) SKUIVideoImageDataConsumer * videoImageConsumer;
+@property (nonatomic, readonly) SKUIItemArtworkContext *artworkContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic, copy) NSArray *lockups;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } seeAllButtonFrame;
+@property (getter=isSeeAllHidden, nonatomic) bool seeAllHidden;
+@property (nonatomic, readonly) NSURL *seeAllURL;
+@property (readonly) Class superclass;
+@property (nonatomic) long long swooshType;
+@property (nonatomic, readonly) SKUIVideoImageDataConsumer *videoImageConsumer;
 
 + (long long)_swooshTypeForLockups:(id)arg1;
 

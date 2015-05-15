@@ -7,11 +7,11 @@
     NSObject<OS_dispatch_queue> *_identityQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) BBDataProviderIdentity * identity;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) BBDataProviderIdentity *identity;
+@property (readonly) Class superclass;
 
 - (void)attachmentAspectRatioForRecordID:(id)arg1 completion:(id)arg2;
 - (void)attachmentPNGDataForRecordID:(id)arg1 sizeConstraints:(id)arg2 completion:(id)arg3;

@@ -19,11 +19,11 @@
     NSMutableDictionary *_serverSearchResultsByAddress;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSArray * enteredRecipients;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSArray *enteredRecipients;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_addBestRecipientsForRecipients:(id)arg1 excluding:(id)arg2 toArray:(id)arg3;
 - (void)_addResults:(id)arg1 ofType:(unsigned long long)arg2;

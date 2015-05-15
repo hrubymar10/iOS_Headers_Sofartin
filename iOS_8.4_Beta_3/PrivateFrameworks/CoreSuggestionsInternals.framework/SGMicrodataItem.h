@@ -7,8 +7,8 @@
     NSSet *_itemType;
 }
 
-@property(assign,readonly) NSArray * itemRef;
-@property(assign,readonly) NSSet * itemType;
+@property (nonatomic, readonly) NSArray *itemRef;
+@property (nonatomic, readonly) NSSet *itemType;
 
 - (void).cxx_destruct;
 - (id)initWithItemType:(id)arg1 itemRef:(id)arg2;

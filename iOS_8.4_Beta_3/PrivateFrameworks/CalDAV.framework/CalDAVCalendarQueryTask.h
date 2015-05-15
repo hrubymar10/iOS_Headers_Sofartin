@@ -11,12 +11,12 @@
     NSDateComponents *_todoFilterStartDate;
 }
 
-@property(assign,retain) NSDateComponents * eventFilterEndDate;
-@property(assign,retain) NSDateComponents * eventFilterStartDate;
-@property(assign,readwrite) bool syncEvents;
-@property(assign,readwrite) bool syncTodos;
-@property(assign,retain) NSDateComponents * todoFilterEndDate;
-@property(assign,retain) NSDateComponents * todoFilterStartDate;
+@property (nonatomic, retain) NSDateComponents *eventFilterEndDate;
+@property (nonatomic, retain) NSDateComponents *eventFilterStartDate;
+@property (nonatomic) bool syncEvents;
+@property (nonatomic) bool syncTodos;
+@property (nonatomic, retain) NSDateComponents *todoFilterEndDate;
+@property (nonatomic, retain) NSDateComponents *todoFilterStartDate;
 
 - (void)_appendComponentFiltersToXMLData:(id)arg1;
 - (void)_appendTimeRangeFilterToXMLData:(id)arg1 startDate:(id)arg2 endDate:(id)arg3;

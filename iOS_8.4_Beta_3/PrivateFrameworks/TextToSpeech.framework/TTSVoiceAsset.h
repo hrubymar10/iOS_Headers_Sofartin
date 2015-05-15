@@ -10,11 +10,11 @@
     NSString *_name;
 }
 
-@property(assign,readonly) long long footprint;
-@property(assign,readonly) long long gender;
-@property(assign,readonly) bool isInstalled;
-@property(assign,readonly) NSArray * languages;
-@property(assign,readonly) NSString * name;
+@property (nonatomic, readonly) long long footprint;
+@property (nonatomic, readonly) long long gender;
+@property (nonatomic, readonly) bool isInstalled;
+@property (nonatomic, readonly) NSArray *languages;
+@property (nonatomic, readonly) NSString *name;
 
 + (bool)supportsSecureCoding;
 

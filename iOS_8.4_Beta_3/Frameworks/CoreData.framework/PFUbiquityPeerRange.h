@@ -4,13 +4,13 @@
 
 @interface PFUbiquityPeerRange : NSManagedObject
 
-@property(assign,retain) NSNumber * end;
-@property(assign,retain) PFUbiquityPeer * peer;
-@property(assign,retain) NSNumber * peerEnd;
-@property(assign,retain) NSString * peerEntityName;
-@property(assign,retain) NSNumber * peerStart;
-@property(assign,retain) NSNumber * start;
-@property(assign,retain) PFUbiquityStoreMetadata * storeMetadata;
+@property (nonatomic, retain) NSNumber *end;
+@property (nonatomic, retain) PFUbiquityPeer *peer;
+@property (nonatomic, retain) NSNumber *peerEnd;
+@property (nonatomic, retain) NSString *peerEntityName;
+@property (nonatomic, retain) NSNumber *peerStart;
+@property (nonatomic, retain) NSNumber *start;
+@property (nonatomic, retain) PFUbiquityStoreMetadata *storeMetadata;
 
 - (void)loadFromBaselineDictionary:(id)arg1;
 

@@ -14,14 +14,14 @@
     bool _rendersWithPerspective;
 }
 
-@property(assign,retain) UICollectionView * collectionView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool rendersWithParallax;
-@property(assign,readwrite) bool rendersWithPerspective;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UICollectionView *collectionView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool rendersWithParallax;
+@property (nonatomic) bool rendersWithPerspective;
+@property (readonly) Class superclass;
 
 + (double)maximumPerspectiveHeightForSize:(struct CGSize { double x1; double x2; })arg1;
 

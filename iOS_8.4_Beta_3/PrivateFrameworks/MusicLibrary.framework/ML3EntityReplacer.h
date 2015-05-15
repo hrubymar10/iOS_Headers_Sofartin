@@ -9,7 +9,7 @@
     struct __CFDictionary { } *_propertyToIndexPair;
 }
 
-@property(getter=isOpen,assign,readonly) bool open;
+@property (getter=isOpen, nonatomic, readonly) bool open;
 
 - (void).cxx_destruct;
 - (void)bindDouble:(double)arg1 forProperty:(id)arg2;

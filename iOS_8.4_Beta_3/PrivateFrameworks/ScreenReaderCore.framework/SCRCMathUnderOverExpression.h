@@ -8,9 +8,9 @@
     SCRCMathExpression *_under;
 }
 
-@property(assign,retain) SCRCMathExpression * base;
-@property(assign,retain) SCRCMathExpression * over;
-@property(assign,retain) SCRCMathExpression * under;
+@property (nonatomic, retain) SCRCMathExpression *base;
+@property (nonatomic, retain) SCRCMathExpression *over;
+@property (nonatomic, retain) SCRCMathExpression *under;
 
 - (id)base;
 - (void)dealloc;

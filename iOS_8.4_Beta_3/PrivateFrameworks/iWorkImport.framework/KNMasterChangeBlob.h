@@ -11,12 +11,12 @@
     KNTitlePlaceholderInfo *mTitlePlaceholder;
 }
 
-@property(assign,retain) KNBodyPlaceholderInfo * bodyPlaceholder;
-@property(assign,retain) NSArray * childInfos;
-@property(assign,retain) KNMasterSlide * master;
-@property(assign,retain) KNSlide * slide;
-@property(assign,retain) KNSlideStyle * slideStyle;
-@property(assign,retain) KNTitlePlaceholderInfo * titlePlaceholder;
+@property (nonatomic, retain) KNBodyPlaceholderInfo *bodyPlaceholder;
+@property (nonatomic, retain) NSArray *childInfos;
+@property (nonatomic, retain) KNMasterSlide *master;
+@property (nonatomic, retain) KNSlide *slide;
+@property (nonatomic, retain) KNSlideStyle *slideStyle;
+@property (nonatomic, retain) KNTitlePlaceholderInfo *titlePlaceholder;
 
 + (id)blobWithSlide:(id)arg1;
 

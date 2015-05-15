@@ -15,17 +15,17 @@
     long long _state;
 }
 
-@property(assign,retain) NSString * bundleID;
-@property(assign,retain) NSString * challengeID;
-@property(assign,retain) NSOrderedSet * compatibleBundleIDs;
-@property(assign,retain) NSDate * completionDate;
-@property(assign,retain) GKGameInternal * game;
-@property(assign,retain) NSDate * issueDate;
-@property(assign,retain) GKPlayerInternal * issuingPlayer;
-@property(assign,retain) NSString * message;
-@property(assign,retain) GKPlayerInternal * receivingPlayer;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) unsigned long long type;
+@property (nonatomic, retain) NSString *bundleID;
+@property (nonatomic, retain) NSString *challengeID;
+@property (nonatomic, retain) NSOrderedSet *compatibleBundleIDs;
+@property (nonatomic, retain) NSDate *completionDate;
+@property (nonatomic, retain) GKGameInternal *game;
+@property (nonatomic, retain) NSDate *issueDate;
+@property (nonatomic, retain) GKPlayerInternal *issuingPlayer;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic, retain) GKPlayerInternal *receivingPlayer;
+@property (nonatomic) long long state;
+@property (nonatomic, readonly) unsigned long long type;
 
 + (id)internalRepresentation;
 + (id)secureCodedPropertyKeys;

@@ -16,11 +16,11 @@
     unsigned long long _tokenRangesCount;
 }
 
-@property(assign,retain) struct __CFArray { }* assetIds;
-@property(assign,readwrite) short category;
-@property(assign,retain) NSString * contentString;
-@property(assign,readwrite) unsigned long long groupId;
-@property(assign,readwrite) unsigned long long owningGroupId;
+@property (nonatomic, retain) struct __CFArray { }*assetIds;
+@property (nonatomic) short category;
+@property (nonatomic, readonly, retain) NSString *contentString;
+@property (nonatomic) unsigned long long groupId;
+@property (nonatomic) unsigned long long owningGroupId;
 
 + (void)_getTokenRanges:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1 fromCompressedRanges:(unsigned long long)arg2;
 + (void)getCompressedRanges:(unsigned long long)arg1 fromTokenRanges:(struct { long long x1; long long x2; }*)arg2 count:(long long)arg3;

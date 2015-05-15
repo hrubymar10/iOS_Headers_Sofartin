@@ -6,7 +6,7 @@
     AVMutableVideoCompositionLayerInstructionInternal *_mutableLayerInstruction;
 }
 
-@property(assign,readwrite) int trackID;
+@property (nonatomic) int trackID;
 
 + (id)videoCompositionLayerInstruction;
 + (id)videoCompositionLayerInstructionWithAssetTrack:(id)arg1;

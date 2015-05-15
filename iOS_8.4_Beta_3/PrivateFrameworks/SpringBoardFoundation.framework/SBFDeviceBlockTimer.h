@@ -12,13 +12,13 @@
     NSString *_titleText;
 }
 
-@property(assign,copy) NSString * cachedLocalizedPlatformName;
-@property(assign,retain) SBFDeviceLockController * deviceLockController;
-@property(assign,readwrite) bool enabled;
-@property(assign,copy) id handler;
-@property(assign,copy) NSString * subtitleText;
-@property(assign,retain) NSTimer * timer;
-@property(assign,copy) NSString * titleText;
+@property (nonatomic, copy) NSString *cachedLocalizedPlatformName;
+@property (nonatomic, retain) SBFDeviceLockController *deviceLockController;
+@property (nonatomic) bool enabled;
+@property (nonatomic, copy) id handler;
+@property (nonatomic, copy) NSString *subtitleText;
+@property (nonatomic, retain) NSTimer *timer;
+@property (nonatomic, copy) NSString *titleText;
 
 - (void)_clearTimer;
 - (id)_localizedPlatformName;

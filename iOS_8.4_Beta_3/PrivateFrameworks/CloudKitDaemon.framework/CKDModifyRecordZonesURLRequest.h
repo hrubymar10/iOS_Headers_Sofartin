@@ -10,11 +10,11 @@
     NSArray *_recordZonesToSave;
 }
 
-@property(assign,readwrite) bool markZonesAsUserPurged;
-@property(assign,retain) NSMutableDictionary * recordZoneIDByRequestID;
-@property(assign,retain) NSArray * recordZoneIDsToDelete;
-@property(assign,copy) id recordZoneModifiedBlock;
-@property(assign,retain) NSArray * recordZonesToSave;
+@property (nonatomic) bool markZonesAsUserPurged;
+@property (nonatomic, retain) NSMutableDictionary *recordZoneIDByRequestID;
+@property (nonatomic, retain) NSArray *recordZoneIDsToDelete;
+@property (nonatomic, copy) id recordZoneModifiedBlock;
+@property (nonatomic, retain) NSArray *recordZonesToSave;
 
 - (void).cxx_destruct;
 - (id)initWithRecordZonesToSave:(id)arg1 recordZoneIDsToDelete:(id)arg2;

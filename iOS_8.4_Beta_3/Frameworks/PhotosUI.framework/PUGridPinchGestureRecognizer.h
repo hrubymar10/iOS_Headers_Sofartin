@@ -15,10 +15,10 @@
     unsigned long long _transitionDirection;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } centerOffset;
-@property(assign,readonly) unsigned long long transitionDirection;
-@property(assign,readonly) double transitionProgress;
-@property(assign,readonly) bool transitionShouldFinish;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } centerOffset;
+@property (nonatomic, readonly) unsigned long long transitionDirection;
+@property (nonatomic, readonly) double transitionProgress;
+@property (nonatomic, readonly) bool transitionShouldFinish;
 
 - (void)_resetTransitionState;
 - (struct CGSize { double x1; double x2; })centerOffset;

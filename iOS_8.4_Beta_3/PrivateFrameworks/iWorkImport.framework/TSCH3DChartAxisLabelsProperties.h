@@ -12,13 +12,13 @@
     unsigned long long mStyleIndex;
 }
 
-@property(assign,readwrite) float cachedTextFactor;
-@property(assign,readonly) TSULRUCache * categoryStridingCache;
-@property(assign,readwrite) bool hidden;
-@property(assign,readonly) TSCHChartInfo * info;
-@property(assign,readonly) TSCH3DLabelResources * labels;
-@property(assign,retain) TSCHSelectionPath * selectionPath;
-@property(assign,readonly) unsigned long long styleIndex;
+@property (nonatomic) float cachedTextFactor;
+@property (nonatomic, readonly) TSULRUCache *categoryStridingCache;
+@property (nonatomic) bool hidden;
+@property (nonatomic, readonly) TSCHChartInfo *info;
+@property (nonatomic, readonly) TSCH3DLabelResources *labels;
+@property (nonatomic, retain) TSCHSelectionPath *selectionPath;
+@property (nonatomic, readonly) unsigned long long styleIndex;
 
 + (id)propertiesWithInfo:(id)arg1 labels:(id)arg2 styleIndex:(unsigned long long)arg3;
 

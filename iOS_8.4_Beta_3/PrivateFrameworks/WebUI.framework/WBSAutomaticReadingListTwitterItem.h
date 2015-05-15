@@ -10,11 +10,11 @@
     NSDate *_retweetCreationDate;
 }
 
-@property(assign,copy) NSString * displayURLString;
-@property(assign,copy) NSString * expandedURLString;
-@property(assign,copy) NSString * originatorProfileImageURLString;
-@property(assign,copy) NSString * originatorScreenName;
-@property(assign,copy) NSDate * retweetCreationDate;
+@property (nonatomic, copy) NSString *displayURLString;
+@property (nonatomic, copy) NSString *expandedURLString;
+@property (nonatomic, copy) NSString *originatorProfileImageURLString;
+@property (nonatomic, copy) NSString *originatorScreenName;
+@property (nonatomic, copy) NSDate *retweetCreationDate;
 
 - (void).cxx_destruct;
 - (id)_profileImageURLStringWithSuffix:(id)arg1;

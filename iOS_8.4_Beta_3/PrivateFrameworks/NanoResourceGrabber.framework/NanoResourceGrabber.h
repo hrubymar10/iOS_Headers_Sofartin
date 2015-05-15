@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readwrite) bool connectionMayBeValid;
-@property(assign,retain) NSXPCConnection * nrgdConnection;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic) bool connectionMayBeValid;
+@property (nonatomic, retain) NSXPCConnection *nrgdConnection;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 + (id)sharedInstance;
 

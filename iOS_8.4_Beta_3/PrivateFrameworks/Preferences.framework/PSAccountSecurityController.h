@@ -19,12 +19,12 @@
     int _securityCodeType;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * securityCode;
-@property(assign,readwrite) int securityCodeType;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *securityCode;
+@property (nonatomic) int securityCodeType;
+@property (readonly) Class superclass;
 
 - (void)_setShowsDoneButton:(bool)arg1;
 - (void)_showSecurityCodeChangeSheetOnSpecifier:(id)arg1;

@@ -8,8 +8,8 @@
     bool _useOOBMode;
 }
 
-@property(assign,readwrite) <CBPairingAgentDelegate> * delegate;
-@property(assign,readwrite) bool useOOBMode;
+@property (nonatomic) <CBPairingAgentDelegate> *delegate;
+@property (nonatomic) bool useOOBMode;
 
 - (id)delegate;
 - (void)handlePairingCompleted:(id)arg1;

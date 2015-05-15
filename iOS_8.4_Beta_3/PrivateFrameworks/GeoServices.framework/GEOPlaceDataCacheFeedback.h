@@ -7,10 +7,10 @@
     GEOPDPlaceRequest *_request;
 }
 
-@property(assign,retain) NSString * bundleIdentifier;
-@property(assign,readonly) bool hasBundleIdentifier;
-@property(assign,readonly) bool hasRequest;
-@property(assign,retain) GEOPDPlaceRequest * request;
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic, readonly) bool hasBundleIdentifier;
+@property (nonatomic, readonly) bool hasRequest;
+@property (nonatomic, retain) GEOPDPlaceRequest *request;
 
 - (id)bundleIdentifier;
 - (void)copyTo:(id)arg1;

@@ -7,15 +7,15 @@
     NSIndexPath *_indexPath;
 }
 
-@property(assign,readonly) NSData * artworkData;
-@property(assign,readwrite) struct _MRContentItem { }* contentItem;
-@property(assign,readonly) NSString * identifier;
-@property(assign,retain) NSIndexPath * indexPath;
-@property(assign,readonly) bool isContainer;
-@property(assign,readonly) bool isPlayable;
-@property(assign,readonly) float playbackProgress;
-@property(assign,readonly) NSString * subtitle;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSData *artworkData;
+@property (nonatomic) struct _MRContentItem { }*contentItem;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, retain) NSIndexPath *indexPath;
+@property (nonatomic, readonly) bool isContainer;
+@property (nonatomic, readonly) bool isPlayable;
+@property (nonatomic, readonly) float playbackProgress;
+@property (nonatomic, readonly) NSString *subtitle;
+@property (nonatomic, readonly) NSString *title;
 
 - (void).cxx_destruct;
 - (id)artworkData;

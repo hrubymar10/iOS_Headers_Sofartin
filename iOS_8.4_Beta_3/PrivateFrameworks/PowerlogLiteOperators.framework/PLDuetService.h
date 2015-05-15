@@ -16,17 +16,17 @@
     PLXPCResponderOperatorComposition *_xpcResponderDuetEnergyQuery;
 }
 
-@property(assign,readonly) CDDClientConnection * clouddocClientConnection;
-@property(assign,retain) PLQLDuetQuery * coreDuetAccountingQuery;
-@property(assign,retain) PLQLDuetQuery * duetAccountingQuery;
-@property(assign,retain) NSMutableDictionary * duetBudgetKeys;
-@property(assign,retain) NSMutableDictionary * duetEventsCache;
-@property(assign,readonly) CDDClientConnection * gCddClientConnection;
-@property(assign,readwrite) int leafCount;
-@property(assign,retain) PLNSTimerOperatorComposition * queryDuetBudgetTimer;
-@property(assign,retain) PLNSTimerOperatorComposition * runQueryTimer;
-@property(assign,retain) PLXPCListenerOperatorComposition * xpcListenerDuetEvent;
-@property(assign,retain) PLXPCResponderOperatorComposition * xpcResponderDuetEnergyQuery;
+@property (readonly) CDDClientConnection *clouddocClientConnection;
+@property (retain) PLQLDuetQuery *coreDuetAccountingQuery;
+@property (retain) PLQLDuetQuery *duetAccountingQuery;
+@property (retain) NSMutableDictionary *duetBudgetKeys;
+@property (retain) NSMutableDictionary *duetEventsCache;
+@property (readonly) CDDClientConnection *gCddClientConnection;
+@property int leafCount;
+@property (retain) PLNSTimerOperatorComposition *queryDuetBudgetTimer;
+@property (retain) PLNSTimerOperatorComposition *runQueryTimer;
+@property (retain) PLXPCListenerOperatorComposition *xpcListenerDuetEvent;
+@property (retain) PLXPCResponderOperatorComposition *xpcResponderDuetEnergyQuery;
 
 + (id)accountingGroupDefinitions;
 + (id)aggregateNameCoreDuetEventEnergyBreakdown;

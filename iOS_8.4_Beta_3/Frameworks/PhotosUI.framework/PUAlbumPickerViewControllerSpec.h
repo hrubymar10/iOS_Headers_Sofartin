@@ -7,9 +7,9 @@
     unsigned long long _supportedInterfaceOrientations;
 }
 
-@property(assign,readonly) PUAlbumListViewControllerSpec * albumListViewControllerSpec;
-@property(assign,readonly) PUAlbumListViewController * newAlbumListViewController;
-@property(assign,readonly) unsigned long long supportedInterfaceOrientations;
+@property (nonatomic, readonly) PUAlbumListViewControllerSpec *albumListViewControllerSpec;
+@property (nonatomic, readonly) PUAlbumListViewController *newAlbumListViewController;
+@property (nonatomic, readonly) unsigned long long supportedInterfaceOrientations;
 
 - (void).cxx_destruct;
 - (id)albumListViewControllerSpec;

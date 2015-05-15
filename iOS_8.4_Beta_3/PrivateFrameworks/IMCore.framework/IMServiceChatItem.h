@@ -7,8 +7,8 @@
     IMServiceImpl *_service;
 }
 
-@property(assign,retain) IMHandle * handle;
-@property(assign,retain) IMServiceImpl * service;
+@property (nonatomic, readonly, retain) IMHandle *handle;
+@property (nonatomic, readonly, retain) IMServiceImpl *service;
 
 - (Class)__ck_chatItemClass;
 - (id)_initWithItem:(id)arg1 service:(id)arg2 handle:(id)arg3;

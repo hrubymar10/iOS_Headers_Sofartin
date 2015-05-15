@@ -8,9 +8,9 @@
     NSString *_text;
 }
 
-@property(assign,readonly) SKUIArtworkList * artworkList;
-@property(assign,readonly) SKUIColorScheme * colorScheme;
-@property(assign,readonly) NSString * text;
+@property (nonatomic, readonly) SKUIArtworkList *artworkList;
+@property (nonatomic, readonly) SKUIColorScheme *colorScheme;
+@property (nonatomic, readonly) NSString *text;
 
 - (void).cxx_destruct;
 - (id)artworkList;

@@ -8,13 +8,13 @@
     XPCServiceConnection *_serviceConnection;
 }
 
-@property(assign,retain) <NSObject> * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <XPCNSServiceConnectionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * serviceName;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) <NSObject> *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <XPCNSServiceConnectionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) NSString *serviceName;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)XPCServiceConnection:(id)arg1 didReceiveRequest:(id)arg2 sequenceNumber:(unsigned long long)arg3;

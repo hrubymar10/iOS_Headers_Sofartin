@@ -8,14 +8,14 @@
     NSArray *_nodes;
 }
 
-@property(assign,retain) IKDOMNode * contextNode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id evaluationBlock;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long length;
-@property(assign,copy) NSArray * nodes;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) IKDOMNode *contextNode;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) id evaluationBlock;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long length;
+@property (nonatomic, copy) NSArray *nodes;
+@property (readonly) Class superclass;
 
 + (id)nodeListWithAppContext:(id)arg1 contextNode:(id)arg2 xpath:(id)arg3;
 

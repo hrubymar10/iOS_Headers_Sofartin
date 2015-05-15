@@ -27,7 +27,7 @@
     bool _white;
 }
 
-@property(assign,readonly) CALayer * layer;
+@property (nonatomic, readonly) CALayer *layer;
 
 + (bool)_usesPreBoardAppearance;
 + (void)setUsesPreBoardAppearance;

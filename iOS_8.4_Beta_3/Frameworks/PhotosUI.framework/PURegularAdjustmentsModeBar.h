@@ -17,11 +17,11 @@
     NSMapTable *_supermodeTitleBackgroundByMode;
 }
 
-@property(assign,readonly) PUAdjustmentsMode * _expandedSupermode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) PUAdjustmentsMode *_expandedSupermode;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_availableSupermodes;

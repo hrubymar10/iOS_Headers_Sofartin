@@ -9,10 +9,10 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSString * otherCountryCode;
-@property(assign,retain) NSString * otherHandle;
-@property(assign,retain) NSString * otherUnformattedID;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSString *otherCountryCode;
+@property (nonatomic, retain) NSString *otherHandle;
+@property (nonatomic, retain) NSString *otherUnformattedID;
+@property (nonatomic, retain) NSString *title;
 
 - (id)_newChatItems;
 - (id)copyDictionaryRepresentation;

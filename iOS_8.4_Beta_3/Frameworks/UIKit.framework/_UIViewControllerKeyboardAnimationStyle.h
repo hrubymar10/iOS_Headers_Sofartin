@@ -9,10 +9,10 @@
     _UIViewControllerKeyboardAnimationStyleInfo *_info;
 }
 
-@property(assign,readwrite) bool allowCustomTransition;
-@property(assign,readonly) _UIViewControllerTransitionContext * context;
-@property(assign,readwrite) bool disableAlongsideView;
-@property(assign,readonly) _UIViewControllerKeyboardAnimationStyleInfo * info;
+@property (nonatomic) bool allowCustomTransition;
+@property (nonatomic, readonly) _UIViewControllerTransitionContext *context;
+@property (nonatomic) bool disableAlongsideView;
+@property (nonatomic, readonly) _UIViewControllerKeyboardAnimationStyleInfo *info;
 
 + (id)animationStyleWithContext:(id)arg1;
 + (id)animationStyleWithContext:(id)arg1 useCustomTransition:(bool)arg2;

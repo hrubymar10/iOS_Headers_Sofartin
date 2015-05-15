@@ -6,7 +6,7 @@
     <IKJSMenuBarDocumentAppBridge> *_appBridge;
 }
 
-@property(assign,readwrite) <IKJSMenuBarDocumentAppBridge> * appBridge;
+@property (nonatomic) <IKJSMenuBarDocumentAppBridge> *appBridge;
 
 - (void).cxx_destruct;
 - (id)_entityUniqueIdentifierForObject:(id)arg1;

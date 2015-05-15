@@ -6,7 +6,7 @@
     IKAppKeyboard *_keyboard;
 }
 
-@property(assign,readonly) IKAppKeyboard * keyboard;
+@property (nonatomic, readonly) IKAppKeyboard *keyboard;
 
 + (id)supportedFeatures;
 

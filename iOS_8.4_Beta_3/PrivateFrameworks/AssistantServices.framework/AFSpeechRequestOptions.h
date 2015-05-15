@@ -18,19 +18,19 @@
     bool _useStreamingDictation;
 }
 
-@property(assign,readwrite) bool acousticIdEnabled;
-@property(assign,readwrite) long long activationEvent;
-@property(assign,readwrite) double activationEventTime;
-@property(assign,readwrite) long long audioFileType;
-@property(assign,copy) NSString * btDeviceAddress;
-@property(assign,readwrite) double expectedActivationEventTime;
-@property(assign,copy) NSNumber * homeButtonUpFromBeep;
-@property(assign,readwrite) bool isEyesFree;
-@property(assign,readwrite) bool isInitialBringUp;
-@property(assign,copy) NSString * serverCommandId;
-@property(assign,readwrite) bool useAutomaticEndpointing;
-@property(assign,readwrite) bool useBorealisBuffer;
-@property(assign,readwrite) bool useStreamingDictation;
+@property (nonatomic) bool acousticIdEnabled;
+@property (nonatomic) long long activationEvent;
+@property (nonatomic) double activationEventTime;
+@property (nonatomic) long long audioFileType;
+@property (nonatomic, copy) NSString *btDeviceAddress;
+@property (nonatomic) double expectedActivationEventTime;
+@property (nonatomic, copy) NSNumber *homeButtonUpFromBeep;
+@property (nonatomic) bool isEyesFree;
+@property (nonatomic) bool isInitialBringUp;
+@property (nonatomic, copy) NSString *serverCommandId;
+@property (nonatomic) bool useAutomaticEndpointing;
+@property (nonatomic) bool useBorealisBuffer;
+@property (nonatomic) bool useStreamingDictation;
 
 + (bool)supportsSecureCoding;
 

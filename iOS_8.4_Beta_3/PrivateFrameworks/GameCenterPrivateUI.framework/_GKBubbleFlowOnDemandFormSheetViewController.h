@@ -7,8 +7,8 @@
     _GKBubbleFlowPseudoModalViewController *_pseudoModalViewController;
 }
 
-@property(assign,readwrite) bool falseDismissSkippedOrCompleted;
-@property(assign,retain) _GKBubbleFlowPseudoModalViewController * pseudoModalViewController;
+@property (nonatomic) bool falseDismissSkippedOrCompleted;
+@property (nonatomic, retain) _GKBubbleFlowPseudoModalViewController *pseudoModalViewController;
 
 - (void)_cleanUpOurPresentedModalSetupRootViewControllerIfNecessaryAnimated:(bool)arg1;
 - (void)_ensureWeHaveAPresentedModalSetupRootViewControllerToPresent:(id)arg1 andThen:(id)arg2 animated:(bool)arg3;

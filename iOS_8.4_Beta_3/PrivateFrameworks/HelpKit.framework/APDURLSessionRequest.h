@@ -7,8 +7,8 @@
     NSURLSessionTask *_sessionTask;
 }
 
-@property(assign,retain) NSMutableArray * completionHandlers;
-@property(assign,retain) NSURLSessionTask * sessionTask;
+@property (nonatomic, retain) NSMutableArray *completionHandlers;
+@property (nonatomic, retain) NSURLSessionTask *sessionTask;
 
 + (id)urlSessionRequestWithSessionTask:(id)arg1 completionHandler:(id)arg2;
 

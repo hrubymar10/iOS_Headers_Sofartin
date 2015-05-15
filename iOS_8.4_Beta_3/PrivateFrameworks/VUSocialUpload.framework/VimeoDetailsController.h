@@ -16,20 +16,20 @@
     NSMutableArray *_videoSizes;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <VimeoComposeOptionViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSIndexPath * indexPathForPendingFirstResponder;
-@property(assign,retain) NSArray * privacyLevels;
-@property(assign,readonly) long long privacySetting;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSArray * tags;
-@property(assign,readonly) NSString * videoDescription;
-@property(assign,readonly) long long videoSize;
-@property(assign,retain) NSArray * videoSizeFormatStrings;
-@property(assign,retain) NSArray * videoSizeStrings;
-@property(assign,readonly) NSMutableArray * videoSizes;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <VimeoComposeOptionViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSIndexPath *indexPathForPendingFirstResponder;
+@property (nonatomic, retain) NSArray *privacyLevels;
+@property (nonatomic, readonly) long long privacySetting;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *tags;
+@property (nonatomic, readonly) NSString *videoDescription;
+@property (nonatomic, readonly) long long videoSize;
+@property (nonatomic, retain) NSArray *videoSizeFormatStrings;
+@property (nonatomic, retain) NSArray *videoSizeStrings;
+@property (nonatomic, readonly) NSMutableArray *videoSizes;
 
 + (long long)defaultVideoSize;
 

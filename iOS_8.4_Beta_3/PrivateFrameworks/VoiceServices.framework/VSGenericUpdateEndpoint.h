@@ -9,14 +9,14 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSXPCListenerEndpoint * endpoint;
-@property(assign,copy) id handler;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSXPCListener * listener;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSXPCListenerEndpoint *endpoint;
+@property (nonatomic, copy) id handler;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSXPCListener *listener;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) Class superclass;
 
 + (id)configuredEndpointWithUpdateHandler:(id)arg1 withConnection:(id)arg2;
 + (id)remoteUpdateHanderForEndpoint:(id)arg1;

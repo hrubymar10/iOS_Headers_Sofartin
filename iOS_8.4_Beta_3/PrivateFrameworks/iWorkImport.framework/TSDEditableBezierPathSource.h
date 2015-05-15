@@ -16,21 +16,21 @@
     NSMutableArray *mSubpaths;
 }
 
-@property(assign,readonly) bool allNodesSelected;
-@property(assign,readonly) bool canDeleteSelectedNodes;
-@property(assign,readonly) bool closeIfEndpointsAreEqual;
-@property(getter=isClosed,assign,readwrite) bool closed;
-@property(assign,readonly) bool deletingSelectedNodesWillDeleteShape;
-@property(assign,readonly) TSDBezierNode * firstNode;
-@property(assign,readonly) bool hasSelectedNode;
-@property(assign,readonly) bool isCompound;
-@property(assign,readonly) bool isOpen;
-@property(assign,readonly) TSDBezierNode * lastNode;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } nodeBounds;
-@property(assign,retain) NSArray * nodeTypes;
-@property(assign,retain) NSMutableArray * nodes;
-@property(assign,readonly) struct CGPath { }* subpathForSelection;
-@property(assign,retain) NSMutableArray * subpaths;
+@property (nonatomic, readonly) bool allNodesSelected;
+@property (nonatomic, readonly) bool canDeleteSelectedNodes;
+@property (nonatomic, readonly) bool closeIfEndpointsAreEqual;
+@property (getter=isClosed, nonatomic) bool closed;
+@property (nonatomic, readonly) bool deletingSelectedNodesWillDeleteShape;
+@property (nonatomic, readonly) TSDBezierNode *firstNode;
+@property (nonatomic, readonly) bool hasSelectedNode;
+@property (nonatomic, readonly) bool isCompound;
+@property (nonatomic, readonly) bool isOpen;
+@property (nonatomic, readonly) TSDBezierNode *lastNode;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } nodeBounds;
+@property (nonatomic, retain) NSArray *nodeTypes;
+@property (nonatomic, retain) NSMutableArray *nodes;
+@property (nonatomic, readonly) struct CGPath { }*subpathForSelection;
+@property (nonatomic, retain) NSMutableArray *subpaths;
 
 + (id)editableBezierPathSource;
 + (id)editableBezierPathSourceWithBezierPath:(id)arg1;

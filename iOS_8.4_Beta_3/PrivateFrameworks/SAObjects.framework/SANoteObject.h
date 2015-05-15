@@ -4,10 +4,10 @@
 
 @interface SANoteObject : SADomainObject
 
-@property(assign,copy) NSString * contents;
-@property(assign,copy) NSDate * createdDate;
-@property(assign,copy) NSDate * lastModifiedDate;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *contents;
+@property (nonatomic, copy) NSDate *createdDate;
+@property (nonatomic, copy) NSDate *lastModifiedDate;
+@property (nonatomic, copy) NSString *title;
 
 + (id)object;
 + (id)objectWithDictionary:(id)arg1 context:(id)arg2;

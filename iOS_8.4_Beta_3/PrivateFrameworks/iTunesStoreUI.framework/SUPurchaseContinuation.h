@@ -7,8 +7,8 @@
     SUPurchaseManager *_purchaseManager;
 }
 
-@property(assign,readonly) id purchase;
-@property(assign,readwrite) SUPurchaseManager * purchaseManager;
+@property (nonatomic, readonly) id purchase;
+@property (nonatomic) SUPurchaseManager *purchaseManager;
 
 - (void)cancel;
 - (void)dealloc;

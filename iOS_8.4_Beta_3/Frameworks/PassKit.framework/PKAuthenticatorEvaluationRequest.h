@@ -8,9 +8,9 @@
     long long _policy;
 }
 
-@property(assign,copy) NSNumber * PINLength;
-@property(assign,copy) NSString * PINTitle;
-@property(assign,readonly) long long policy;
+@property (nonatomic, copy) NSNumber *PINLength;
+@property (nonatomic, copy) NSString *PINTitle;
+@property (nonatomic, readonly) long long policy;
 
 - (id)PINLength;
 - (id)PINTitle;

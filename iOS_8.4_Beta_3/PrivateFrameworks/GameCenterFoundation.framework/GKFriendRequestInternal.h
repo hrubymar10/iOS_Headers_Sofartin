@@ -7,8 +7,8 @@
     NSString *_message;
 }
 
-@property(assign,retain) NSDate * date;
-@property(assign,retain) NSString * message;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, retain) NSString *message;
 
 + (id)secureCodedPropertyKeys;
 

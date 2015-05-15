@@ -10,13 +10,13 @@
     AVCaptureVideoPreviewLayer *_previewLayer;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKCaptureDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isRunning;
-@property(assign,readonly) AVCaptureVideoPreviewLayer * previewLayer;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKCaptureDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isRunning;
+@property (nonatomic, readonly) AVCaptureVideoPreviewLayer *previewLayer;
+@property (readonly) Class superclass;
 
 - (void)_changeCameraConfiguration;
 - (void)autoExposeAtPoint:(struct CGPoint { double x1; double x2; })arg1;

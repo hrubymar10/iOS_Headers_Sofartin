@@ -8,9 +8,9 @@
     double _rotatingSphereRadius;
 }
 
-@property(assign,readwrite) double maximumHorizontalTiltAngle;
-@property(assign,readwrite) double maximumVerticalTiltAngle;
-@property(assign,readwrite) double rotatingSphereRadius;
+@property (nonatomic) double maximumHorizontalTiltAngle;
+@property (nonatomic) double maximumVerticalTiltAngle;
+@property (nonatomic) double rotatingSphereRadius;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)description;

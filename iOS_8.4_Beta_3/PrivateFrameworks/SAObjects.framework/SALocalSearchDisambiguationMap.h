@@ -4,7 +4,7 @@
 
 @interface SALocalSearchDisambiguationMap : SAUISnippet
 
-@property(assign,copy) NSArray * items;
+@property (nonatomic, copy) NSArray *items;
 
 + (id)disambiguationMap;
 + (id)disambiguationMapWithDictionary:(id)arg1 context:(id)arg2;

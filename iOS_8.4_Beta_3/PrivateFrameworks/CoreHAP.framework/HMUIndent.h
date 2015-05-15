@@ -8,9 +8,9 @@
     NSString *_step;
 }
 
-@property(assign,readonly) unsigned long long factor;
-@property(assign,readonly) NSString * level;
-@property(assign,readonly) NSString * step;
+@property (nonatomic, readonly) unsigned long long factor;
+@property (nonatomic, readonly) NSString *level;
+@property (nonatomic, readonly) NSString *step;
 
 + (id)indentWithLevel:(id)arg1;
 + (id)indentWithLevel:(id)arg1 step:(id)arg2 factor:(unsigned long long)arg3;

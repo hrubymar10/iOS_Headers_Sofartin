@@ -10,15 +10,15 @@
     unsigned long long _pu_supportedInterfaceOrientations;
 }
 
-@property(setter=_setBanner:,assign,retain) PUAbstractNavigationBanner * _banner;
-@property(setter=_setPalette:,assign,retain) _UINavigationControllerPalette * _palette;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(setter=ppt_setOnDidShowViewControllerBlock:,assign,copy) id ppt_onDidShowViewControllerBlock;
-@property(assign,readwrite) bool pu_preventsAutorotation;
-@property(assign,readwrite) unsigned long long pu_supportedInterfaceOrientations;
-@property(assign,readonly) Class superclass;
+@property (setter=_setBanner:, nonatomic, retain) PUAbstractNavigationBanner *_banner;
+@property (setter=_setPalette:, nonatomic, retain) _UINavigationControllerPalette *_palette;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (setter=ppt_setOnDidShowViewControllerBlock:, nonatomic, copy) id ppt_onDidShowViewControllerBlock;
+@property (nonatomic) bool pu_preventsAutorotation;
+@property (nonatomic) unsigned long long pu_supportedInterfaceOrientations;
+@property (readonly) Class superclass;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 

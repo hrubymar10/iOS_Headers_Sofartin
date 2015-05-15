@@ -28,14 +28,14 @@
     unsigned int _unitTests;
 }
 
-@property(assign,readwrite) unsigned long long bottomReplyLastQuoteLevel;
-@property(assign,retain) DOMRange * bottomReplyRange;
-@property(assign,readwrite) bool hasUnloadedRemoteImages;
-@property(assign,copy) NSString * originalHTMLString;
-@property(assign,readwrite) bool prePrintDataDetectionPending;
-@property(assign,retain) MFMessageReformattingContext * reformattingContext;
-@property(assign,readwrite) bool shouldAttemptToReformatMessage;
-@property(assign,readwrite) bool showRemoteImages;
+@property unsigned long long bottomReplyLastQuoteLevel;
+@property (retain) DOMRange *bottomReplyRange;
+@property bool hasUnloadedRemoteImages;
+@property (copy) NSString *originalHTMLString;
+@property bool prePrintDataDetectionPending;
+@property (retain) MFMessageReformattingContext *reformattingContext;
+@property bool shouldAttemptToReformatMessage;
+@property bool showRemoteImages;
 
 + (void)beginBlockingRemoteImagesExceptForMessageWebLayer:(id)arg1;
 + (void)clearMessageContentCache;

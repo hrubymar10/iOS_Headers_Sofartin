@@ -6,7 +6,7 @@
     OISFUZipEntry *mEntry;
 }
 
-@property(assign,readonly) OISFUZipEntry * zipEntry;
+@property (nonatomic, readonly) OISFUZipEntry *zipEntry;
 
 - (void)copyToFile:(id)arg1;
 - (id)data;

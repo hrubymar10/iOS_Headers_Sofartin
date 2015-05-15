@@ -10,11 +10,11 @@
     <PUTiltWheelDataSource> *_dataSource;
 }
 
-@property(setter=_setDotsByDegree:,assign,copy) NSDictionary * _dotsByDegree;
-@property(setter=_setLabelsByDegree:,assign,copy) NSDictionary * _labelsByDegree;
-@property(setter=_setNumericIndicatorDegreeStep:,assign,readwrite) unsigned long long _numericIndicatorDegreeStep;
-@property(setter=_setTiltWheelOrientation:,assign,readwrite) int _tiltWheelOrientation;
-@property(assign,readwrite) <PUTiltWheelDataSource> * dataSource;
+@property (setter=_setDotsByDegree:, nonatomic, copy) NSDictionary *_dotsByDegree;
+@property (setter=_setLabelsByDegree:, nonatomic, copy) NSDictionary *_labelsByDegree;
+@property (setter=_setNumericIndicatorDegreeStep:, nonatomic) unsigned long long _numericIndicatorDegreeStep;
+@property (setter=_setTiltWheelOrientation:, nonatomic) int _tiltWheelOrientation;
+@property (nonatomic) <PUTiltWheelDataSource> *dataSource;
 
 - (void).cxx_destruct;
 - (struct CGPoint { double x1; double x2; })_baseViewCenterForRadius:(double)arg1 aroundCenter:(struct CGPoint { double x1; double x2; })arg2;

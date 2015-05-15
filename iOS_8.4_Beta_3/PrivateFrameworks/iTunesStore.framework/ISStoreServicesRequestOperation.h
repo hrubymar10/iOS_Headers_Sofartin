@@ -6,7 +6,7 @@
     SSRequest *_request;
 }
 
-@property(assign,readonly) SSRequest * request;
+@property (readonly) SSRequest *request;
 
 - (void)cancel;
 - (void)dealloc;

@@ -15,21 +15,21 @@
     bool _isModelInitialized;
 }
 
-@property(assign,retain) NSMutableDictionary * cachedCanShareLocationWithHandleByHandle;
-@property(assign,retain) NSSet * cachedGetHandlesFollowingMyLocation;
-@property(assign,retain) NSSet * cachedGetHandlesSharingLocationsWithMe;
-@property(assign,retain) NSMutableDictionary * cachedLocationForHandleByHandle;
-@property(assign,retain) NSMutableDictionary * cachedOfferExpirationForHandleByHandle;
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <FMFSessionDelegate> * delegate;
-@property(assign,retain) NSOperationQueue * delegateQueue;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSSet * handles;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableSet * internalHandles;
-@property(assign,readwrite) bool isModelInitialized;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSMutableDictionary *cachedCanShareLocationWithHandleByHandle;
+@property (nonatomic, retain) NSSet *cachedGetHandlesFollowingMyLocation;
+@property (nonatomic, retain) NSSet *cachedGetHandlesSharingLocationsWithMe;
+@property (nonatomic, retain) NSMutableDictionary *cachedLocationForHandleByHandle;
+@property (nonatomic, retain) NSMutableDictionary *cachedOfferExpirationForHandleByHandle;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <FMFSessionDelegate> *delegate;
+@property (nonatomic, retain) NSOperationQueue *delegateQueue;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSSet *handles;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableSet *internalHandles;
+@property (nonatomic) bool isModelInitialized;
+@property (readonly) Class superclass;
 
 + (bool)FMFAllowed;
 + (bool)FMFRestricted;

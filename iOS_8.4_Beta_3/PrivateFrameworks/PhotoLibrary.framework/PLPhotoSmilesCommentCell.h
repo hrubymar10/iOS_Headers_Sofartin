@@ -10,11 +10,11 @@
     NSOrderedSet *_userLikes;
 }
 
-@property(assign,readwrite) bool isVideo;
-@property(assign,readwrite) bool showUserLikes;
-@property(assign,retain) UILabel * smileContentLabel;
-@property(assign,retain) UIButton * smileImageButton;
-@property(assign,copy) NSOrderedSet * userLikes;
+@property (nonatomic) bool isVideo;
+@property (nonatomic) bool showUserLikes;
+@property (nonatomic, readonly, retain) UILabel *smileContentLabel;
+@property (nonatomic, readonly, retain) UIButton *smileImageButton;
+@property (nonatomic, copy) NSOrderedSet *userLikes;
 
 + (id)_attributedStringForComments:(id)arg1 color:(id)arg2 isVideo:(bool)arg3;
 + (id)_smileStringForComments:(id)arg1;

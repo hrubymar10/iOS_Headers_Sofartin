@@ -7,9 +7,9 @@
     double _machTime;
 }
 
-@property(assign,readonly) unsigned long long activityId;
-@property(assign,readonly) double machTime;
-@property(assign,readonly) NSString * message;
+@property (readonly) unsigned long long activityId;
+@property (readonly) double machTime;
+@property (readonly) NSString *message;
 
 - (unsigned long long)activityId;
 - (long long)compareToOtherMessage:(id)arg1;

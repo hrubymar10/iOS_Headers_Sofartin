@@ -6,9 +6,9 @@
     bool _expands;
 }
 
-@property(assign,readonly) SKUIImageViewElement * decorationImage;
-@property(assign,readonly) bool expands;
-@property(assign,readonly) NSArray * metadata;
+@property (nonatomic, readonly) SKUIImageViewElement *decorationImage;
+@property (nonatomic, readonly) bool expands;
+@property (nonatomic, readonly) NSArray *metadata;
 
 - (id)applyUpdatesWithElement:(id)arg1;
 - (id)decorationImage;

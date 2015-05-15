@@ -20,11 +20,11 @@
     int type;
 }
 
-@property(assign,readwrite) unsigned int ordinalPrefixLength;
-@property(assign,readwrite) unsigned int ordinalSuffixLength;
-@property(assign,retain) CPListItem * parentItem;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } spacer;
-@property(assign,readwrite) int type;
+@property (nonatomic) unsigned int ordinalPrefixLength;
+@property (nonatomic) unsigned int ordinalSuffixLength;
+@property (nonatomic, retain) CPListItem *parentItem;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } spacer;
+@property (nonatomic) int type;
 
 - (void)addItem:(id)arg1;
 - (bool)containsParagraph:(id)arg1;

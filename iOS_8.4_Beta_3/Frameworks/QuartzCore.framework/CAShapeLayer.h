@@ -4,18 +4,18 @@
 
 @interface CAShapeLayer : CALayer
 
-@property(assign,readwrite) struct CGColor { }* fillColor;
-@property(assign,copy) NSString * fillRule;
-@property(assign,copy) NSString * lineCap;
-@property(assign,copy) NSArray * lineDashPattern;
-@property(assign,readwrite) double lineDashPhase;
-@property(assign,copy) NSString * lineJoin;
-@property(assign,readwrite) double lineWidth;
-@property(assign,readwrite) double miterLimit;
-@property(assign,readwrite) struct CGPath { }* path;
-@property(assign,readwrite) struct CGColor { }* strokeColor;
-@property(assign,readwrite) double strokeEnd;
-@property(assign,readwrite) double strokeStart;
+@property struct CGColor { }*fillColor;
+@property (copy) NSString *fillRule;
+@property (copy) NSString *lineCap;
+@property (copy) NSArray *lineDashPattern;
+@property double lineDashPhase;
+@property (copy) NSString *lineJoin;
+@property double lineWidth;
+@property double miterLimit;
+@property struct CGPath { }*path;
+@property struct CGColor { }*strokeColor;
+@property double strokeEnd;
+@property double strokeStart;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (bool)_hasRenderLayerSubclass;

@@ -7,14 +7,14 @@
     bool _newlyAdded;
 }
 
-@property(assign,readwrite) bool enabled;
-@property(assign,retain) NSExtension * extension;
-@property(assign,retain) NSString * fileProviderDocumentGroup;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * localizedName;
-@property(getter=isNewlyAdded,assign,readwrite) bool newlyAdded;
-@property(assign,copy) NSString * nonUIIdentifier;
-@property(assign,copy) NSArray * supportedContentTypes;
+@property (nonatomic) bool enabled;
+@property (nonatomic, retain) NSExtension *extension;
+@property (nonatomic, readonly, retain) NSString *fileProviderDocumentGroup;
+@property (nonatomic, readonly, copy) NSString *identifier;
+@property (nonatomic, readonly, copy) NSString *localizedName;
+@property (getter=isNewlyAdded, nonatomic) bool newlyAdded;
+@property (nonatomic, readonly, copy) NSString *nonUIIdentifier;
+@property (nonatomic, readonly, copy) NSArray *supportedContentTypes;
 
 + (id)allPickers;
 + (id)allPickersForMode:(unsigned long long)arg1 documentTypes:(id)arg2;

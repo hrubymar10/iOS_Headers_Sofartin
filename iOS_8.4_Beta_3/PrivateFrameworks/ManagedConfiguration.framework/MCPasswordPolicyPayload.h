@@ -16,17 +16,17 @@
     NSNumber *_passcodeHistoryCount;
 }
 
-@property(assign,retain) NSNumber * isAlphanumericPasscodeRequired;
-@property(assign,retain) NSNumber * isManualFetchingWhenRoaming;
-@property(assign,retain) NSNumber * isPasscodeRequired;
-@property(assign,retain) NSNumber * isSimplePasscodeAllowed;
-@property(assign,retain) NSNumber * maxFailedAttempts;
-@property(assign,retain) NSNumber * maxGracePeriodMinutes;
-@property(assign,retain) NSNumber * maxInactivityMinutes;
-@property(assign,retain) NSNumber * maxPasscodeAgeDays;
-@property(assign,retain) NSNumber * minComplexCharacters;
-@property(assign,retain) NSNumber * minLength;
-@property(assign,retain) NSNumber * passcodeHistoryCount;
+@property (nonatomic, readonly, retain) NSNumber *isAlphanumericPasscodeRequired;
+@property (nonatomic, readonly, retain) NSNumber *isManualFetchingWhenRoaming;
+@property (nonatomic, readonly, retain) NSNumber *isPasscodeRequired;
+@property (nonatomic, readonly, retain) NSNumber *isSimplePasscodeAllowed;
+@property (nonatomic, readonly, retain) NSNumber *maxFailedAttempts;
+@property (nonatomic, readonly, retain) NSNumber *maxGracePeriodMinutes;
+@property (nonatomic, readonly, retain) NSNumber *maxInactivityMinutes;
+@property (nonatomic, readonly, retain) NSNumber *maxPasscodeAgeDays;
+@property (nonatomic, readonly, retain) NSNumber *minComplexCharacters;
+@property (nonatomic, readonly, retain) NSNumber *minLength;
+@property (nonatomic, readonly, retain) NSNumber *passcodeHistoryCount;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

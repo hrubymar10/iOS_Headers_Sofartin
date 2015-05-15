@@ -11,12 +11,12 @@
     CIVector *inputRVector;
 }
 
-@property(assign,retain) CIVector * inputAVector;
-@property(assign,retain) CIVector * inputBVector;
-@property(assign,retain) CIVector * inputBiasVector;
-@property(assign,retain) CIVector * inputGVector;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIVector * inputRVector;
+@property (nonatomic, retain) CIVector *inputAVector;
+@property (nonatomic, retain) CIVector *inputBVector;
+@property (nonatomic, retain) CIVector *inputBiasVector;
+@property (nonatomic, retain) CIVector *inputGVector;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIVector *inputRVector;
 
 + (id)customAttributes;
 

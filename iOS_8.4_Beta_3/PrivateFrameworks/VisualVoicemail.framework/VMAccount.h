@@ -8,7 +8,7 @@
     NSMutableArray *_voicemailSummaries;
 }
 
-@property(assign,readonly) NSString * identifier;
+@property (readonly) NSString *identifier;
 
 - (id)_bucketSummary;
 - (void)_forceUpdateCache;

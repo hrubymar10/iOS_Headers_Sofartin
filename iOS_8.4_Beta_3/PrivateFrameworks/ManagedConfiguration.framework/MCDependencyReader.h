@@ -7,9 +7,9 @@
     NSMutableDictionary *_memberQueueDomainsDict;
 }
 
-@property(assign,readonly) NSDictionary * domainsDict;
-@property(assign,retain) NSObject<OS_dispatch_queue> * memberQueue;
-@property(assign,retain) NSMutableDictionary * memberQueueDomainsDict;
+@property (nonatomic, readonly) NSDictionary *domainsDict;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *memberQueue;
+@property (nonatomic, retain) NSMutableDictionary *memberQueueDomainsDict;
 
 + (void)setStoragePath:(id)arg1;
 + (id)sharedReader;

@@ -14,12 +14,12 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) NSAttributedString * attributedString;
-@property(assign,readonly) long long badgeType;
-@property(assign,readonly) UIImage * fallbackImage;
-@property(assign,readonly) NSString * resourceName;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) NSAttributedString *attributedString;
+@property (nonatomic, readonly) long long badgeType;
+@property (nonatomic, readonly) UIImage *fallbackImage;
+@property (nonatomic, readonly) NSString *resourceName;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
 
 - (void).cxx_destruct;
 - (id)URL;

@@ -16,15 +16,15 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,retain) NSURL * certificateURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSURL * keyURL;
-@property(assign,readonly) SUPlayerStatus * playerStatus;
-@property(assign,readwrite) long long storeItemIdentifier;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, retain) NSURL *certificateURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSURL *keyURL;
+@property (nonatomic, readonly) SUPlayerStatus *playerStatus;
+@property (nonatomic) long long storeItemIdentifier;
+@property (readonly) Class superclass;
 
 - (id)URL;
 - (void)_applyNowPlayingInfo;

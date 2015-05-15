@@ -6,7 +6,7 @@
     NSString *_queryString;
 }
 
-@property(assign,copy) NSString * queryString;
+@property (nonatomic, copy) NSString *queryString;
 
 - (void)_updateObserverForQuery;
 - (void)dealloc;

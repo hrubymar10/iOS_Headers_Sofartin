@@ -6,8 +6,8 @@
     GKScore *_score;
 }
 
-@property(assign,readonly) GKLeaderboard * leaderboard;
-@property(assign,retain) GKScore * score;
+@property (nonatomic, readonly) GKLeaderboard *leaderboard;
+@property (nonatomic, retain) GKScore *score;
 
 + (bool)instancesRespondToSelector:(SEL)arg1;
 

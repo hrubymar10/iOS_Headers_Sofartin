@@ -4,7 +4,7 @@
 
 @interface UIWatchKitExtensionRequestActionResponse : BSActionResponse
 
-@property(assign,readonly) NSDictionary * result;
+@property (nonatomic, readonly) NSDictionary *result;
 
 + (id)responseWithWatchKitExtensionResult:(id)arg1;
 

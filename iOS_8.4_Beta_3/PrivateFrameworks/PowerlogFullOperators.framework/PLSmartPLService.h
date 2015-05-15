@@ -6,7 +6,7 @@
     NSMutableDictionary *_smartPLHelpers;
 }
 
-@property(assign,retain) NSMutableDictionary * smartPLHelpers;
+@property (retain) NSMutableDictionary *smartPLHelpers;
 
 + (id)entryEventPointDefinitionSmartTrigger;
 + (id)entryEventPointDefinitions;

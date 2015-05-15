@@ -4,18 +4,18 @@
 
 @interface NSMutableURLRequest : NSURLRequest
 
-@property(assign,copy) NSData * HTTPBody;
-@property(assign,retain) NSInputStream * HTTPBodyStream;
-@property(assign,copy) NSString * HTTPMethod;
-@property(assign,readwrite) bool HTTPShouldHandleCookies;
-@property(assign,readwrite) bool HTTPShouldUsePipelining;
-@property(assign,copy) NSURL * URL;
-@property(assign,copy) NSDictionary * allHTTPHeaderFields;
-@property(assign,readwrite) bool allowsCellularAccess;
-@property(assign,readwrite) unsigned long long cachePolicy;
-@property(assign,copy) NSURL * mainDocumentURL;
-@property(assign,readwrite) unsigned long long networkServiceType;
-@property(assign,readwrite) double timeoutInterval;
+@property (copy) NSData *HTTPBody;
+@property (retain) NSInputStream *HTTPBodyStream;
+@property (copy) NSString *HTTPMethod;
+@property bool HTTPShouldHandleCookies;
+@property bool HTTPShouldUsePipelining;
+@property (copy) NSURL *URL;
+@property (copy) NSDictionary *allHTTPHeaderFields;
+@property bool allowsCellularAccess;
+@property unsigned long long cachePolicy;
+@property (copy) NSURL *mainDocumentURL;
+@property unsigned long long networkServiceType;
+@property double timeoutInterval;
 
 + (id)_gkHTTPRequestWithURL:(id)arg1 method:(id)arg2 postData:(id)arg3;
 + (int)hashForPlayerID:(id)arg1;

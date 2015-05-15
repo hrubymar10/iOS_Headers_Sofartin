@@ -8,9 +8,9 @@
     bool speaking;
 }
 
-@property(assign,readwrite) <AVSpeechSynthesizerDelegate> * delegate;
-@property(getter=isPaused,assign,readonly) bool paused;
-@property(getter=isSpeaking,assign,readonly) bool speaking;
+@property (nonatomic) <AVSpeechSynthesizerDelegate> *delegate;
+@property (getter=isPaused, nonatomic, readonly) bool paused;
+@property (getter=isSpeaking, nonatomic, readonly) bool speaking;
 
 + (void)initialize;
 

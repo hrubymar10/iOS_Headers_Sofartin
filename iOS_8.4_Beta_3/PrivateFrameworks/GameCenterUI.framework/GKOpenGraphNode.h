@@ -10,11 +10,11 @@
     NSURL *_url;
 }
 
-@property(assign,retain) NSError * error;
-@property(assign,readwrite) bool liked;
-@property(assign,readwrite) unsigned long long numberOfFriendLikes;
-@property(assign,readwrite) unsigned long long numberOfLikes;
-@property(assign,readonly) NSURL * url;
+@property (retain) NSError *error;
+@property bool liked;
+@property unsigned long long numberOfFriendLikes;
+@property unsigned long long numberOfLikes;
+@property (readonly) NSURL *url;
 
 + (id)openGraphNodeAccessQueue;
 + (void)openGraphNodeForURL:(id)arg1 handler:(id)arg2;

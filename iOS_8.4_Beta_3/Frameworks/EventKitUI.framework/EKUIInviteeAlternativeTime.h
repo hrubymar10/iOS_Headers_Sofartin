@@ -8,9 +8,9 @@
     NSDate *_startDate;
 }
 
-@property(assign,retain) NSArray * conflictedParticipants;
-@property(assign,retain) NSDate * endDate;
-@property(assign,retain) NSDate * startDate;
+@property (nonatomic, retain) NSArray *conflictedParticipants;
+@property (nonatomic, retain) NSDate *endDate;
+@property (nonatomic, retain) NSDate *startDate;
 
 - (void).cxx_destruct;
 - (id)conflictedParticipants;

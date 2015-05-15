@@ -4,8 +4,8 @@
 
 @interface SANoteUpdate : SADomainCommand
 
-@property(assign,copy) NSString * contentsToAppend;
-@property(assign,copy) NSURL * identifier;
+@property (nonatomic, copy) NSString *contentsToAppend;
+@property (nonatomic, copy) NSURL *identifier;
 
 + (id)update;
 + (id)updateWithDictionary:(id)arg1 context:(id)arg2;

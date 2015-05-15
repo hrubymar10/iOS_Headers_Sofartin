@@ -11,12 +11,12 @@
     bool _monitoringCourse;
 }
 
-@property(assign,readwrite) int compassPoint;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double heading;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) int compassPoint;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double heading;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_createSubviews;

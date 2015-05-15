@@ -9,10 +9,10 @@
     double _velocity;
 }
 
-@property(assign,readwrite) double damping;
-@property(assign,readwrite) double mass;
-@property(assign,readwrite) double stiffness;
-@property(assign,readwrite) double velocity;
+@property (nonatomic) double damping;
+@property (nonatomic) double mass;
+@property (nonatomic) double stiffness;
+@property (nonatomic) double velocity;
 
 + (void)animateUsingSpringWithDamping:(double)arg1 mass:(double)arg2 stiffness:(double)arg3 velocity:(double)arg4 animations:(id)arg5 options:(unsigned long long)arg6 completion:(id)arg7;
 

@@ -27,26 +27,26 @@
     float _textBaseline;
 }
 
-@property(assign,retain) NSString * fontName;
-@property(assign,readwrite) float fontSize;
-@property(assign,readonly) bool hasFontName;
-@property(assign,readwrite) bool hasFontSize;
-@property(assign,readwrite) bool hasLeftCapWidth;
-@property(assign,readwrite) bool hasLeftPadding;
-@property(assign,readwrite) bool hasLineSpacing;
-@property(assign,readwrite) bool hasNumberOfLines;
-@property(assign,readwrite) bool hasRightCapWidth;
-@property(assign,readwrite) bool hasRightPadding;
-@property(assign,readwrite) bool hasTextBaseline;
-@property(assign,readonly) struct { unsigned int x1; float x2; unsigned int x3; unsigned int x4; int x5; struct { unsigned int x_6_1_1 : 1; unsigned int x_6_1_2 : 1; unsigned int x_6_1_3 : 1; unsigned int x_6_1_4 : 1; unsigned int x_6_1_5 : 1; } x6; }* layers;
-@property(assign,readonly) unsigned long long layersCount;
-@property(assign,readwrite) float leftCapWidth;
-@property(assign,readwrite) float leftPadding;
-@property(assign,readwrite) float lineSpacing;
-@property(assign,readwrite) unsigned int numberOfLines;
-@property(assign,readwrite) float rightCapWidth;
-@property(assign,readwrite) float rightPadding;
-@property(assign,readwrite) float textBaseline;
+@property (nonatomic, retain) NSString *fontName;
+@property (nonatomic) float fontSize;
+@property (nonatomic, readonly) bool hasFontName;
+@property (nonatomic) bool hasFontSize;
+@property (nonatomic) bool hasLeftCapWidth;
+@property (nonatomic) bool hasLeftPadding;
+@property (nonatomic) bool hasLineSpacing;
+@property (nonatomic) bool hasNumberOfLines;
+@property (nonatomic) bool hasRightCapWidth;
+@property (nonatomic) bool hasRightPadding;
+@property (nonatomic) bool hasTextBaseline;
+@property (nonatomic, readonly) struct { unsigned int x1; float x2; unsigned int x3; unsigned int x4; int x5; struct { unsigned int x_6_1_1 : 1; unsigned int x_6_1_2 : 1; unsigned int x_6_1_3 : 1; unsigned int x_6_1_4 : 1; unsigned int x_6_1_5 : 1; } x6; }*layers;
+@property (nonatomic, readonly) unsigned long long layersCount;
+@property (nonatomic) float leftCapWidth;
+@property (nonatomic) float leftPadding;
+@property (nonatomic) float lineSpacing;
+@property (nonatomic) unsigned int numberOfLines;
+@property (nonatomic) float rightCapWidth;
+@property (nonatomic) float rightPadding;
+@property (nonatomic) float textBaseline;
 
 - (struct CGSize { double x1; double x2; })_imageSizeWithTextureAtlases:(id)arg1;
 - (void)addLayer:(struct { unsigned int x1; float x2; unsigned int x3; unsigned int x4; int x5; struct { unsigned int x_6_1_1 : 1; unsigned int x_6_1_2 : 1; unsigned int x_6_1_3 : 1; unsigned int x_6_1_4 : 1; unsigned int x_6_1_5 : 1; } x6; })arg1;

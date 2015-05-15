@@ -10,11 +10,11 @@
     NSData *_serverChangeTokenData;
 }
 
-@property(assign,readwrite) bool moreComing;
-@property(assign,readonly) NSArray * resultChangedNotifications;
-@property(assign,retain) NSData * resultServerChangeTokenData;
-@property(assign,readwrite) unsigned long long resultsLimit;
-@property(assign,retain) NSData * serverChangeTokenData;
+@property (nonatomic) bool moreComing;
+@property (nonatomic, readonly) NSArray *resultChangedNotifications;
+@property (nonatomic, retain) NSData *resultServerChangeTokenData;
+@property (nonatomic) unsigned long long resultsLimit;
+@property (nonatomic, retain) NSData *serverChangeTokenData;
 
 - (void).cxx_destruct;
 - (id)initWithServerChangeTokenData:(id)arg1;

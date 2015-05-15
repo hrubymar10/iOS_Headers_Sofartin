@@ -18,15 +18,15 @@
     unsigned int _timeToLiveSeconds;
 }
 
-@property(assign,readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; unsigned int x6; }* availableTiles;
-@property(assign,readonly) unsigned long long availableTilesCount;
-@property(assign,readonly) struct { unsigned int x1; int x2; struct { unsigned int x_3_1_1 : 1; unsigned int x_3_1_2 : 1; } x3; }* genericTiles;
-@property(assign,readonly) unsigned long long genericTilesCount;
-@property(assign,readwrite) bool hasSupportedLanguagesVersion;
-@property(assign,readwrite) bool hasTimeToLiveSeconds;
-@property(assign,readwrite) unsigned int identifier;
-@property(assign,readwrite) unsigned int supportedLanguagesVersion;
-@property(assign,readwrite) unsigned int timeToLiveSeconds;
+@property (nonatomic, readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; unsigned int x6; }*availableTiles;
+@property (nonatomic, readonly) unsigned long long availableTilesCount;
+@property (nonatomic, readonly) struct { unsigned int x1; int x2; struct { unsigned int x_3_1_1 : 1; unsigned int x_3_1_2 : 1; } x3; }*genericTiles;
+@property (nonatomic, readonly) unsigned long long genericTilesCount;
+@property (nonatomic) bool hasSupportedLanguagesVersion;
+@property (nonatomic) bool hasTimeToLiveSeconds;
+@property (nonatomic) unsigned int identifier;
+@property (nonatomic) unsigned int supportedLanguagesVersion;
+@property (nonatomic) unsigned int timeToLiveSeconds;
 
 - (void)addAvailableTiles:(struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; unsigned int x6; })arg1;
 - (void)addGenericTile:(struct { unsigned int x1; int x2; struct { unsigned int x_3_1_1 : 1; unsigned int x_3_1_2 : 1; } x3; })arg1;

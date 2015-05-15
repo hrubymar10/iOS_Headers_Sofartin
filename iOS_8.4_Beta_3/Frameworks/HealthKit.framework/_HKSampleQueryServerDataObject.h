@@ -7,8 +7,8 @@
     NSArray *_sortDescriptors;
 }
 
-@property(assign,readwrite) unsigned long long limit;
-@property(assign,retain) NSArray * sortDescriptors;
+@property (nonatomic) unsigned long long limit;
+@property (nonatomic, retain) NSArray *sortDescriptors;
 
 + (bool)supportsSecureCoding;
 

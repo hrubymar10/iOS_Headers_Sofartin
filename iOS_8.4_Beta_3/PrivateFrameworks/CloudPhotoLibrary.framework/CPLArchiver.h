@@ -9,7 +9,7 @@
     id _rootObject;
 }
 
-@property(assign,readonly) bool forDisplay;
+@property (nonatomic, readonly) bool forDisplay;
 
 + (id)archivedDataWithRootObject:(id)arg1;
 + (id)archivedDataWithRootObject:(id)arg1 usingBlock:(id)arg2;

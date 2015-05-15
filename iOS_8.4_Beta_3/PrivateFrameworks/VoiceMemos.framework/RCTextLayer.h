@@ -15,11 +15,11 @@
     UIColor *_textColor;
 }
 
-@property(assign,retain) UIFont * font;
-@property(assign,readwrite) long long preferredAlignment;
-@property(assign,copy) NSString * text;
-@property(assign,readwrite) long long textAlignment;
-@property(assign,retain) UIColor * textColor;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic) long long preferredAlignment;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic) long long textAlignment;
+@property (nonatomic, retain) UIColor *textColor;
 
 - (void).cxx_destruct;
 - (id)_attributes;

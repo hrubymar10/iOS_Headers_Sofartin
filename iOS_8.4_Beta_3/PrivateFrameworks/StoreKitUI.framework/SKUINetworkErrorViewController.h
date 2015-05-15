@@ -8,15 +8,15 @@
     NSError *_error;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIProductPageHeaderViewController * headerViewController;
-@property(assign,readonly) UIScrollView * scrollView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) id delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIProductPageHeaderViewController *headerViewController;
+@property (nonatomic, readonly) UIScrollView *scrollView;
+@property (readonly) Class superclass;
 
 + (bool)canDisplayError:(id)arg1;
 

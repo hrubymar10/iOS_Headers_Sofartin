@@ -9,8 +9,8 @@
     } _has;
 }
 
-@property(assign,readwrite) unsigned int fullSyncVersion;
-@property(assign,readwrite) bool hasFullSyncVersion;
+@property (nonatomic) unsigned int fullSyncVersion;
+@property (nonatomic) bool hasFullSyncVersion;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

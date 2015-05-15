@@ -34,10 +34,10 @@
     id _velocitySample;
 }
 
-@property(getter=_previousVelocitySample,assign,readonly) UIPanGestureVelocitySample * _previousVelocitySample;
-@property(getter=_velocitySample,assign,readonly) UIPanGestureVelocitySample * _velocitySample;
-@property(assign,readwrite) unsigned long long maximumNumberOfTouches;
-@property(assign,readwrite) unsigned long long minimumNumberOfTouches;
+@property (getter=_previousVelocitySample, readonly) UIPanGestureVelocitySample *_previousVelocitySample;
+@property (getter=_velocitySample, readonly) UIPanGestureVelocitySample *_velocitySample;
+@property (nonatomic) unsigned long long maximumNumberOfTouches;
+@property (nonatomic) unsigned long long minimumNumberOfTouches;
 
 + (void)_setPanGestureRecognizersEnabled:(bool)arg1;
 

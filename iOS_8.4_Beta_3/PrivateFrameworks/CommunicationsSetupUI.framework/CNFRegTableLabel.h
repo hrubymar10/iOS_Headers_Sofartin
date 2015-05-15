@@ -12,10 +12,10 @@
     CNFRegLearnMoreButton *_urlButton;
 }
 
-@property(assign,copy) NSURL * URLTarget;
-@property(assign,copy) NSString * URLText;
-@property(assign,readwrite) UITableView * cnfreg_tableView;
-@property(assign,readwrite) bool isTopmostHeader;
+@property (nonatomic, copy) NSURL *URLTarget;
+@property (nonatomic, copy) NSString *URLText;
+@property (nonatomic) UITableView *cnfreg_tableView;
+@property (nonatomic) bool isTopmostHeader;
 
 - (id)URLTarget;
 - (id)URLText;

@@ -13,15 +13,15 @@
     MCProfileConnection *_connection;
 }
 
-@property(assign,readonly) bool allowsAccountModification;
-@property(assign,readonly) bool allowsDeletion;
-@property(assign,readonly) bool allowsExplicitContent;
-@property(assign,readonly) bool allowsRadioPurchases;
-@property(assign,readonly) bool allowsStorePurchases;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) bool allowsAccountModification;
+@property (nonatomic, readonly) bool allowsDeletion;
+@property (nonatomic, readonly) bool allowsExplicitContent;
+@property (nonatomic, readonly) bool allowsRadioPurchases;
+@property (nonatomic, readonly) bool allowsStorePurchases;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)sharedRestrictionsMonitor;
 

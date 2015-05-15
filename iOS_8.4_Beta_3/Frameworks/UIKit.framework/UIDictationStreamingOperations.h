@@ -9,7 +9,7 @@
     double _timeAfterSelectRange;
 }
 
-@property(assign,retain) NSMutableArray * operations;
+@property (nonatomic, retain) NSMutableArray *operations;
 
 - (void)_performReplaceSelectedText:(id)arg1;
 - (void)clearOperations;

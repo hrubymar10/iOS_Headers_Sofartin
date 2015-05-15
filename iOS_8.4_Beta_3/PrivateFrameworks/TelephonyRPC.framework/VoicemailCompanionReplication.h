@@ -19,11 +19,11 @@
     NSObject<OS_dispatch_semaphore> *waitForFirstSyncCompleteSemaphore;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SYStore * syncStore;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SYStore *syncStore;
 
 - (void).cxx_destruct;
 - (void)_deltaSync;

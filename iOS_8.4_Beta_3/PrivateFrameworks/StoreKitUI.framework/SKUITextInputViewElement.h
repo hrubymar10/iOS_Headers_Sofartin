@@ -9,11 +9,11 @@
     bool _secure;
 }
 
-@property(assign,readonly) SKUIAnimatorDOMFeature * animationInterface;
-@property(assign,readonly) long long keyboardType;
-@property(assign,readonly) long long maximumLength;
-@property(assign,readonly) NSString * placeholderText;
-@property(getter=isSecure,assign,readonly) bool secure;
+@property (nonatomic, readonly) SKUIAnimatorDOMFeature *animationInterface;
+@property (nonatomic, readonly) long long keyboardType;
+@property (nonatomic, readonly) long long maximumLength;
+@property (nonatomic, readonly) NSString *placeholderText;
+@property (getter=isSecure, nonatomic, readonly) bool secure;
 
 + (bool)isTextInputType:(id)arg1;
 + (id)supportedFeatures;

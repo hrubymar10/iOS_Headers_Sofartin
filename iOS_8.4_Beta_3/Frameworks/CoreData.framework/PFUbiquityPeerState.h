@@ -4,11 +4,11 @@
 
 @interface PFUbiquityPeerState : NSManagedObject
 
-@property(assign,retain) NSString * lastProcessedTransactionLogURL;
-@property(assign,retain) PFUbiquityPeer * peer;
-@property(assign,retain) PFUbiquityStoreMetadata * storeMetadata;
-@property(assign,retain) NSString * storeName;
-@property(assign,retain) NSNumber * transactionNumber;
+@property (nonatomic, retain) NSString *lastProcessedTransactionLogURL;
+@property (nonatomic, retain) PFUbiquityPeer *peer;
+@property (nonatomic, retain) PFUbiquityStoreMetadata *storeMetadata;
+@property (nonatomic, retain) NSString *storeName;
+@property (nonatomic, retain) NSNumber *transactionNumber;
 
 + (id)peerStateForStoreName:(id)arg1 andPeerID:(id)arg2 inManagedObjectContext:(id)arg3;
 + (id)peerStateForStoreName:(id)arg1 andPeerID:(id)arg2 inManagedObjectContext:(id)arg3 createIfMissing:(bool)arg4;

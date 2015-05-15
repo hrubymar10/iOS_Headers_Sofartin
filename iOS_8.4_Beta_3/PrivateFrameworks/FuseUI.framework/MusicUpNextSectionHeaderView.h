@@ -13,11 +13,11 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readwrite) <MusicUpNextSectionHeaderDelegate> * delegate;
-@property(assign,copy) NSString * headerText;
-@property(assign,readwrite) long long section;
-@property(assign,readwrite) bool showsAddButton;
-@property(assign,readwrite) bool showsClearButton;
+@property (nonatomic) <MusicUpNextSectionHeaderDelegate> *delegate;
+@property (nonatomic, copy) NSString *headerText;
+@property (nonatomic) long long section;
+@property (nonatomic) bool showsAddButton;
+@property (nonatomic) bool showsClearButton;
 
 + (double)heightForTraitCollection:(id)arg1;
 

@@ -15,11 +15,11 @@
     UIImageView *_shadowView;
 }
 
-@property(assign,readwrite) long long barStyle;
-@property(assign,retain) UIColor * barTintColor;
-@property(assign,readwrite) bool paletteWantsAdaptiveBackdrop;
-@property(getter=_shadowView,setter=_setShadowView:,assign,retain) UIView * shadowView;
-@property(getter=isTranslucent,assign,readwrite) bool translucent;
+@property (nonatomic) long long barStyle;
+@property (nonatomic, retain) UIColor *barTintColor;
+@property (nonatomic) bool paletteWantsAdaptiveBackdrop;
+@property (getter=_shadowView, setter=_setShadowView:, nonatomic, retain) UIView *shadowView;
+@property (getter=isTranslucent, nonatomic) bool translucent;
 
 - (void)_didMoveFromWindow:(id)arg1 toWindow:(id)arg2;
 - (void)_setFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 forceUpdateBackgroundImage:(bool)arg2;

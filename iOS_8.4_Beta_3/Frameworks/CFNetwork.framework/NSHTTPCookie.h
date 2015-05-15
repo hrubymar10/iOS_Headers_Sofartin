@@ -6,19 +6,19 @@
     NSHTTPCookieInternal *_cookiePrivate;
 }
 
-@property(getter=isHTTPOnly,assign,readonly) bool HTTPOnly;
-@property(assign,copy) NSString * comment;
-@property(assign,copy) NSURL * commentURL;
-@property(assign,copy) NSString * domain;
-@property(assign,copy) NSDate * expiresDate;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * path;
-@property(assign,copy) NSArray * portList;
-@property(assign,copy) NSDictionary * properties;
-@property(getter=isSecure,assign,readonly) bool secure;
-@property(getter=isSessionOnly,assign,readonly) bool sessionOnly;
-@property(assign,copy) NSString * value;
-@property(assign,readonly) unsigned long long version;
+@property (getter=isHTTPOnly, readonly) bool HTTPOnly;
+@property (readonly, copy) NSString *comment;
+@property (readonly, copy) NSURL *commentURL;
+@property (readonly, copy) NSString *domain;
+@property (readonly, copy) NSDate *expiresDate;
+@property (readonly, copy) NSString *name;
+@property (readonly, copy) NSString *path;
+@property (readonly, copy) NSArray *portList;
+@property (readonly, copy) NSDictionary *properties;
+@property (getter=isSecure, readonly) bool secure;
+@property (getter=isSessionOnly, readonly) bool sessionOnly;
+@property (readonly, copy) NSString *value;
+@property (readonly) unsigned long long version;
 
 + (id)_cf2nsCookies:(struct __CFArray { }*)arg1;
 + (struct __CFArray { }*)_ns2cfCookies:(id)arg1;

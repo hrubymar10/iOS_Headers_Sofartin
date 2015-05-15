@@ -6,7 +6,7 @@
     int _version;
 }
 
-@property(assign,readwrite) int version;
+@property (nonatomic) int version;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

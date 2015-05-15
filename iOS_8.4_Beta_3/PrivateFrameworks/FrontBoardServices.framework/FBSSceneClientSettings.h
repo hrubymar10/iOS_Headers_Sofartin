@@ -9,9 +9,9 @@
     double _preferredLevel;
 }
 
-@property(assign,copy) NSSet * occlusions;
-@property(assign,readonly) long long preferredInterfaceOrientation;
-@property(assign,readonly) double preferredLevel;
+@property (nonatomic, readonly, copy) NSSet *occlusions;
+@property (nonatomic, readonly) long long preferredInterfaceOrientation;
+@property (nonatomic, readonly) double preferredLevel;
 
 + (bool)_isMutable;
 + (id)settings;

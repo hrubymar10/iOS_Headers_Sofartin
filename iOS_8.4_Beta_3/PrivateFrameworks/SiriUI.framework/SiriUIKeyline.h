@@ -11,11 +11,11 @@
     bool _veritical;
 }
 
-@property(assign,retain) UIColor * customBackgroundColor;
-@property(assign,readwrite) double customLeftPadding;
-@property(assign,readwrite) double customRightPadding;
-@property(assign,readwrite) long long keylineType;
-@property(getter=_isVeritical,setter=_setVertical:,assign,readwrite) bool veritical;
+@property (nonatomic, retain) UIColor *customBackgroundColor;
+@property (nonatomic) double customLeftPadding;
+@property (nonatomic) double customRightPadding;
+@property (nonatomic) long long keylineType;
+@property (getter=_isVeritical, setter=_setVertical:, nonatomic) bool veritical;
 
 + (id)keyline;
 + (id)keylineForSelectableRow;

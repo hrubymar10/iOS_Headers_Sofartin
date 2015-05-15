@@ -9,9 +9,9 @@
     NSString *_text;
 }
 
-@property(assign,retain) UIFont * font;
-@property(assign,retain) UIImage * gradient;
-@property(assign,retain) NSString * text;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic, retain) UIImage *gradient;
+@property (nonatomic, retain) NSString *text;
 
 - (void).cxx_destruct;
 - (struct CGColor { }*)_patternColor;

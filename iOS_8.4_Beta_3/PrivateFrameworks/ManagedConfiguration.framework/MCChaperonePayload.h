@@ -8,9 +8,9 @@
     NSData *_pairingCertificateData;
 }
 
-@property(assign,readonly) bool nonChaperonePairingAllowed;
-@property(assign,readonly) NSNumber * nonChaperonePairingAllowedNum;
-@property(assign,retain) NSData * pairingCertificateData;
+@property (nonatomic, readonly) bool nonChaperonePairingAllowed;
+@property (nonatomic, readonly) NSNumber *nonChaperonePairingAllowedNum;
+@property (nonatomic, readonly, retain) NSData *pairingCertificateData;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

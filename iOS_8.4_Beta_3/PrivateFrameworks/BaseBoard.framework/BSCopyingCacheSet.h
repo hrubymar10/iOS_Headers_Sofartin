@@ -7,7 +7,7 @@
     NSMutableSet *_mutable;
 }
 
-@property(assign,readonly) unsigned long long count;
+@property (readonly) unsigned long long count;
 
 - (void)addObject:(id)arg1;
 - (bool)containsObject:(id)arg1;

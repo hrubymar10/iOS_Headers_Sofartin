@@ -9,15 +9,15 @@
     bool _hasLoaded;
 }
 
-@property(assign,copy) NEConfiguration * configuration;
-@property(assign,readonly) NEConfigurationManager * configurationManager;
-@property(assign,readonly) NEVPNConnection * connection;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readwrite) bool hasLoaded;
-@property(assign,copy) NSString * localizedDescription;
-@property(getter=isOnDemandEnabled,assign,readwrite) bool onDemandEnabled;
-@property(assign,copy) NSArray * onDemandRules;
-@property(assign,retain) NEVPNProtocol * protocol;
+@property (copy) NEConfiguration *configuration;
+@property (readonly) NEConfigurationManager *configurationManager;
+@property (readonly) NEVPNConnection *connection;
+@property (getter=isEnabled) bool enabled;
+@property bool hasLoaded;
+@property (copy) NSString *localizedDescription;
+@property (getter=isOnDemandEnabled) bool onDemandEnabled;
+@property (copy) NSArray *onDemandRules;
+@property (retain) NEVPNProtocol *protocol;
 
 + (id)sharedManager;
 

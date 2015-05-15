@@ -7,8 +7,8 @@
     <TSCHStyleOwning> *mStyleOwner;
 }
 
-@property(assign,readonly) NSDictionary * mutations;
-@property(assign,readonly) <TSCHStyleOwning> * styleOwner;
+@property (readonly) NSDictionary *mutations;
+@property (readonly) <TSCHStyleOwning> *styleOwner;
 
 - (void)dealloc;
 - (id)description;

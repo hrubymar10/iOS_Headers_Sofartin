@@ -15,8 +15,8 @@
     unsigned long long _videoCount;
 }
 
-@property(assign,readwrite) long long style;
-@property(assign,retain) NSString * subtitle;
+@property (nonatomic) long long style;
+@property (nonatomic, retain) NSString *subtitle;
 
 - (void).cxx_destruct;
 - (void)_updateSubviews;

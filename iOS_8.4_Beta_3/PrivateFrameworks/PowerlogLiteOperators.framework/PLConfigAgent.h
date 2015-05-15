@@ -6,7 +6,7 @@
     PLNSTimerOperatorComposition *_timedTrigger;
 }
 
-@property(assign,retain) PLNSTimerOperatorComposition * timedTrigger;
+@property (retain) PLNSTimerOperatorComposition *timedTrigger;
 
 + (id)accountingGroupDefinitions;
 + (id)entryEventBackwardDefinitions;

@@ -12,13 +12,13 @@
     long long _outgoingZIndex;
 }
 
-@property(assign,readonly) TSDMagicMoveAnimationMatch * animationMatch;
-@property(assign,readonly) TSDTextureSet * incomingTexture;
-@property(assign,readwrite) long long incomingZIndex;
-@property(assign,readonly) bool isIncomingZIndexUnmatched;
-@property(assign,readonly) bool isOutgoingZIndexUnmatched;
-@property(assign,readonly) TSDTextureSet * outgoingTexture;
-@property(assign,readwrite) long long outgoingZIndex;
+@property (nonatomic, readonly) TSDMagicMoveAnimationMatch *animationMatch;
+@property (nonatomic, readonly) TSDTextureSet *incomingTexture;
+@property (nonatomic) long long incomingZIndex;
+@property (nonatomic, readonly) bool isIncomingZIndexUnmatched;
+@property (nonatomic, readonly) bool isOutgoingZIndexUnmatched;
+@property (nonatomic, readonly) TSDTextureSet *outgoingTexture;
+@property (nonatomic) long long outgoingZIndex;
 
 - (id)animationMatch;
 - (void)dealloc;

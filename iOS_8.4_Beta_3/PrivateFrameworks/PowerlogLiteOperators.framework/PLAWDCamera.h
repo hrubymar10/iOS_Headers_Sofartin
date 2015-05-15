@@ -15,18 +15,18 @@
     double _torchCameraTimestamp;
 }
 
-@property(assign,readwrite) double backCameraTimestamp;
-@property(assign,retain) PLEntryNotificationOperatorComposition * cameraEventCallbackBack;
-@property(assign,retain) PLEntryNotificationOperatorComposition * cameraEventCallbackFront;
-@property(assign,retain) PLEntryNotificationOperatorComposition * cameraEventCallbackTorch;
-@property(assign,readwrite) long long cameraSubmitCnt;
-@property(assign,readwrite) double frontCameraTimestamp;
-@property(assign,readwrite) PLOperator * operator;
-@property(assign,readwrite) bool prevBackCameraState;
-@property(assign,readwrite) bool prevFrontCameraState;
-@property(assign,readwrite) bool prevTorchCameraState;
-@property(assign,retain) NSMutableSet * runningMetrics;
-@property(assign,readwrite) double torchCameraTimestamp;
+@property double backCameraTimestamp;
+@property (retain) PLEntryNotificationOperatorComposition *cameraEventCallbackBack;
+@property (retain) PLEntryNotificationOperatorComposition *cameraEventCallbackFront;
+@property (retain) PLEntryNotificationOperatorComposition *cameraEventCallbackTorch;
+@property long long cameraSubmitCnt;
+@property double frontCameraTimestamp;
+@property PLOperator *operator;
+@property bool prevBackCameraState;
+@property bool prevFrontCameraState;
+@property bool prevTorchCameraState;
+@property (nonatomic, retain) NSMutableSet *runningMetrics;
+@property double torchCameraTimestamp;
 
 + (id)entryAggregateDefinitionAwdCamera;
 + (id)entryAggregateDefinitions;

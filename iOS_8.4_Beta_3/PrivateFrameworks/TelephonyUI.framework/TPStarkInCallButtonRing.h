@@ -10,11 +10,11 @@
     bool _toggledOn;
 }
 
-@property(assign,readwrite) bool dimmed;
-@property(assign,retain) UIColor * fillColor;
-@property(assign,readwrite) bool highlighted;
-@property(assign,readwrite) bool selected;
-@property(assign,readwrite) bool toggledOn;
+@property (nonatomic) bool dimmed;
+@property (nonatomic, retain) UIColor *fillColor;
+@property (nonatomic) bool highlighted;
+@property (nonatomic) bool selected;
+@property (nonatomic) bool toggledOn;
 
 - (bool)dimmed;
 - (void)drawRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

@@ -50,11 +50,11 @@
     PKExtendedPhysicsWorld *_world;
 }
 
-@property(assign,copy) NSArray * behaviors;
-@property(assign,readwrite) <UIDynamicAnimatorDelegate> * delegate;
-@property(assign,readonly) UIView * referenceView;
-@property(getter=isRunning,assign,readonly) bool running;
-@property(assign,retain) UIDynamicAnimatorTicker * ticker;
+@property (nonatomic, readonly, copy) NSArray *behaviors;
+@property (nonatomic) <UIDynamicAnimatorDelegate> *delegate;
+@property (nonatomic, readonly) UIView *referenceView;
+@property (getter=isRunning, nonatomic, readonly) bool running;
+@property (nonatomic, retain) UIDynamicAnimatorTicker *ticker;
 
 + (id)_allDynamicAnimators;
 + (void)_clearReferenceViewFromAnimators:(id)arg1;

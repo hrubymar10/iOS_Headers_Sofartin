@@ -6,7 +6,7 @@
     UIActivityIndicatorView *_activityIndicator;
 }
 
-@property(assign,readwrite) bool showActive;
+@property (nonatomic) bool showActive;
 
 - (void)dealloc;
 - (id)initWithReuseIdentifier:(id)arg1;

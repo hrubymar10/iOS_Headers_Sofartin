@@ -15,10 +15,10 @@
     TSCH3DChartElementSceneObject *mSceneObject;
 }
 
-@property(assign,readonly) bool geometryOnly;
-@property(assign,readonly) TSCH3DRenderProcessor * processor;
-@property(assign,readonly) bool pushStates;
-@property(assign,readonly) bool useBoundsGeometry;
+@property (nonatomic, readonly) bool geometryOnly;
+@property (nonatomic, readonly) TSCH3DRenderProcessor *processor;
+@property (nonatomic, readonly) bool pushStates;
+@property (nonatomic, readonly) bool useBoundsGeometry;
 
 + (id)processItemsWithSceneObject:(id)arg1 properties:(id)arg2 pipeline:(id)arg3;
 

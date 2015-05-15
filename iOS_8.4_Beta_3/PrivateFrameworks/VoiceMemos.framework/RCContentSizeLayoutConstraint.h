@@ -14,11 +14,11 @@
     double _textStyleDefaultBodyLeading;
 }
 
-@property(assign,readwrite) double additionalConstant;
-@property(assign,readwrite) bool autoUpdatingConstantShrinks;
-@property(assign,copy) id constantLoadingBlock;
-@property(assign,readwrite) double defaultConstant;
-@property(assign,copy) NSString * textStyle;
+@property (nonatomic) double additionalConstant;
+@property (nonatomic) bool autoUpdatingConstantShrinks;
+@property (nonatomic, copy) id constantLoadingBlock;
+@property (nonatomic) double defaultConstant;
+@property (nonatomic, copy) NSString *textStyle;
 
 + (id)_constraintForAutoitem:(id)arg1 constrainedItem:(id)arg2 attribute:(long long)arg3 relatedBy:(long long)arg4 toItem:(id)arg5 attribute:(long long)arg6 multiplier:(double)arg7 defaultConstant:(double)arg8 additionalConstant:(double)arg9 initialize:(bool)arg10;
 + (double)_maximumWidthOfStrings:(id)arg1 withFont:(id)arg2;

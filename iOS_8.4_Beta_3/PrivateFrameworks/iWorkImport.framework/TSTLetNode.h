@@ -9,10 +9,10 @@
     NSString *_whitespaceAfterLet;
 }
 
-@property(assign,retain) NSString * whitespaceAfterDelimiter;
-@property(assign,retain) NSString * whitespaceAfterEquals;
-@property(assign,retain) NSString * whitespaceAfterIdentifier;
-@property(assign,retain) NSString * whitespaceAfterLet;
+@property (nonatomic, retain) NSString *whitespaceAfterDelimiter;
+@property (nonatomic, retain) NSString *whitespaceAfterEquals;
+@property (nonatomic, retain) NSString *whitespaceAfterIdentifier;
+@property (nonatomic, retain) NSString *whitespaceAfterLet;
 
 + (id)defaultNameWithIndex:(unsigned int)arg1;
 + (id)letString;

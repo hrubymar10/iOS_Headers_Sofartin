@@ -12,13 +12,13 @@
     bool _wantsSmallSuggestionIndicators;
 }
 
-@property(assign,readonly) UIImageView * _checkmarkImageView;
-@property(assign,readonly) UIImageView * _suggestedImageView;
-@property(assign,readonly) UIImageView * _thumbnailImageView;
-@property(getter=isFavorite,assign,readwrite) bool favorite;
-@property(assign,retain) UIImage * image;
-@property(getter=isSuggested,assign,readwrite) bool suggested;
-@property(assign,readwrite) bool wantsSmallSuggestionIndicators;
+@property (nonatomic, readonly) UIImageView *_checkmarkImageView;
+@property (nonatomic, readonly) UIImageView *_suggestedImageView;
+@property (nonatomic, readonly) UIImageView *_thumbnailImageView;
+@property (getter=isFavorite, nonatomic) bool favorite;
+@property (nonatomic, retain) UIImage *image;
+@property (getter=isSuggested, nonatomic) bool suggested;
+@property (nonatomic) bool wantsSmallSuggestionIndicators;
 
 - (void).cxx_destruct;
 - (id)_checkmarkImageView;

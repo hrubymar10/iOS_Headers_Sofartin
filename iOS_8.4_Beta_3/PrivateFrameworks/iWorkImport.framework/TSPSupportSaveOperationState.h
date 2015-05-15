@@ -14,17 +14,17 @@
     long long _updateType;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,readwrite) bool didWriteSupportBundleSuccessfuly;
-@property(assign,copy) NSUUID * documentUUID;
-@property(assign,readonly) NSUUID * originalDocumentUUID;
-@property(assign,readonly) NSURL * originalURL;
-@property(assign,readonly) NSUUID * originalVersionUUID;
-@property(assign,readonly) bool preserveDocumentUUID;
-@property(assign,retain) TSUSafeSaveAssistant * safeSaveAssistant;
-@property(assign,readwrite) bool shouldLeavePendingEndSave;
-@property(assign,readonly) bool shouldUpdate;
-@property(assign,readonly) long long updateType;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic) bool didWriteSupportBundleSuccessfuly;
+@property (nonatomic, copy) NSUUID *documentUUID;
+@property (nonatomic, readonly) NSUUID *originalDocumentUUID;
+@property (nonatomic, readonly) NSURL *originalURL;
+@property (nonatomic, readonly) NSUUID *originalVersionUUID;
+@property (nonatomic, readonly) bool preserveDocumentUUID;
+@property (nonatomic, retain) TSUSafeSaveAssistant *safeSaveAssistant;
+@property (nonatomic) bool shouldLeavePendingEndSave;
+@property (nonatomic, readonly) bool shouldUpdate;
+@property (nonatomic, readonly) long long updateType;
 
 - (void).cxx_destruct;
 - (id)URL;

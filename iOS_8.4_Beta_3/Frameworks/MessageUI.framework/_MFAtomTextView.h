@@ -7,8 +7,8 @@
     unsigned long long _textStorageEditingDepth;
 }
 
-@property(assign,readonly) NSArray * atoms;
-@property(assign,readwrite) MFComposeRecipientTextView * hostRecipientView;
+@property (readonly) NSArray *atoms;
+@property MFComposeRecipientTextView *hostRecipientView;
 
 - (bool)_delegateSupportsKeyboardEvents;
 - (void)_handleKeyUIEvent:(id)arg1;

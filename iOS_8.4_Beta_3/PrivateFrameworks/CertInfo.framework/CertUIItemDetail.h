@@ -12,13 +12,13 @@
     bool _showCheckmarkView;
 }
 
-@property(assign,retain) UIColor * checkmarkHighlightColor;
-@property(assign,retain) NSString * checkmarkText;
-@property(assign,retain) NSString * detail;
-@property(assign,retain) UIColor * detailHighlightColor;
-@property(assign,retain) NSString * detailTitle;
-@property(assign,readwrite) bool showCheckmark;
-@property(assign,readwrite) bool showCheckmarkView;
+@property (nonatomic, retain) UIColor *checkmarkHighlightColor;
+@property (nonatomic, retain) NSString *checkmarkText;
+@property (nonatomic, retain) NSString *detail;
+@property (nonatomic, retain) UIColor *detailHighlightColor;
+@property (nonatomic, retain) NSString *detailTitle;
+@property (nonatomic) bool showCheckmark;
+@property (nonatomic) bool showCheckmarkView;
 
 + (id)itemDetailWithDetailTitle:(id)arg1 detail:(id)arg2;
 + (id)itemDetailWithDetailTitle:(id)arg1 detail:(id)arg2 detailHighlightColor:(id)arg3;

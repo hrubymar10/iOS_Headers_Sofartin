@@ -12,10 +12,10 @@
     NSURL *_outputURL;
 }
 
-@property(assign,readwrite) long long assetStoreVersionNumber;
-@property(assign,copy) NSString * assetStoreVersionString;
-@property(assign,retain) TDLogger * logger;
-@property(assign,copy) NSURL * outputURL;
+@property long long assetStoreVersionNumber;
+@property (copy) NSString *assetStoreVersionString;
+@property (nonatomic, retain) TDLogger *logger;
+@property (nonatomic, copy) NSURL *outputURL;
 
 - (bool)_isDistillUnnecessaryForDocument:(id)arg1;
 - (void)_moveScratchToOutputPath;

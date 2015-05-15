@@ -6,7 +6,7 @@
     NSData *_messageDigest;
 }
 
-@property(assign,retain) NSData * messageDigest;
+@property (nonatomic, retain) NSData *messageDigest;
 
 - (void).cxx_destruct;
 - (void)encodeWithCoder:(id)arg1;

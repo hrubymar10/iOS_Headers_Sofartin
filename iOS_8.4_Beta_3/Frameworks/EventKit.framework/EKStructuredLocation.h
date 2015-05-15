@@ -4,13 +4,13 @@
 
 @interface EKStructuredLocation : EKObject <NSCopying>
 
-@property(assign,retain) NSString * address;
-@property(assign,copy) NSString * addressBookEntityID;
-@property(assign,retain) CLLocation * geoLocation;
-@property(assign,readonly) bool isStructured;
-@property(assign,readwrite) double radius;
-@property(assign,retain) NSString * routing;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSString *address;
+@property (nonatomic, copy) NSString *addressBookEntityID;
+@property (nonatomic, retain) CLLocation *geoLocation;
+@property (nonatomic, readonly) bool isStructured;
+@property (nonatomic) double radius;
+@property (nonatomic, retain) NSString *routing;
+@property (nonatomic, retain) NSString *title;
 
 + (id)locationWithTitle:(id)arg1;
 

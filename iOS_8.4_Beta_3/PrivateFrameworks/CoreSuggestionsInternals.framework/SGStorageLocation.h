@@ -12,13 +12,13 @@
     double _quality;
 }
 
-@property(assign,readonly) double accuracy;
-@property(assign,readonly) NSString * address;
-@property(assign,readonly) NSString * label;
-@property(assign,readonly) double latitude;
-@property(assign,readonly) unsigned long long locationType;
-@property(assign,readonly) double longitude;
-@property(assign,readonly) double quality;
+@property (nonatomic, readonly) double accuracy;
+@property (nonatomic, readonly) NSString *address;
+@property (nonatomic, readonly) NSString *label;
+@property (nonatomic, readonly) double latitude;
+@property (nonatomic, readonly) unsigned long long locationType;
+@property (nonatomic, readonly) double longitude;
+@property (nonatomic, readonly) double quality;
 
 + (bool)supportsSecureCoding;
 

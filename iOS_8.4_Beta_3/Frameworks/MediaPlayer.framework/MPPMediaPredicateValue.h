@@ -18,19 +18,19 @@
     int _type;
 }
 
-@property(assign,readwrite) bool boolPredicateValue;
-@property(assign,retain) NSData * bytesPredicateValue;
-@property(assign,readwrite) double doublePredicateValue;
-@property(assign,readwrite) float floatPredicateValue;
-@property(assign,readwrite) bool hasBoolPredicateValue;
-@property(assign,readonly) bool hasBytesPredicateValue;
-@property(assign,readwrite) bool hasDoublePredicateValue;
-@property(assign,readwrite) bool hasFloatPredicateValue;
-@property(assign,readwrite) bool hasIntegerPredicateValue;
-@property(assign,readonly) bool hasStringPredicateValue;
-@property(assign,readwrite) long long integerPredicateValue;
-@property(assign,retain) NSString * stringPredicateValue;
-@property(assign,readwrite) int type;
+@property (nonatomic) bool boolPredicateValue;
+@property (nonatomic, retain) NSData *bytesPredicateValue;
+@property (nonatomic) double doublePredicateValue;
+@property (nonatomic) float floatPredicateValue;
+@property (nonatomic) bool hasBoolPredicateValue;
+@property (nonatomic, readonly) bool hasBytesPredicateValue;
+@property (nonatomic) bool hasDoublePredicateValue;
+@property (nonatomic) bool hasFloatPredicateValue;
+@property (nonatomic) bool hasIntegerPredicateValue;
+@property (nonatomic, readonly) bool hasStringPredicateValue;
+@property (nonatomic) long long integerPredicateValue;
+@property (nonatomic, retain) NSString *stringPredicateValue;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (bool)boolPredicateValue;

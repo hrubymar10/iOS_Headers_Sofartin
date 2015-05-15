@@ -10,12 +10,12 @@
     double _timestamp;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <HSControlConnectionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned int protocolVersion;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <HSControlConnectionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned int protocolVersion;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_newDataForControlEventMessage:(struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; })arg1;

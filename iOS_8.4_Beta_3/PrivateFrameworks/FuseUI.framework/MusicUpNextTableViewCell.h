@@ -6,7 +6,7 @@
     <MusicUpNextReorderLayoutDelegate> *_layoutDelegate;
 }
 
-@property(assign,readwrite) <MusicUpNextReorderLayoutDelegate> * layoutDelegate;
+@property (nonatomic) <MusicUpNextReorderLayoutDelegate> *layoutDelegate;
 
 - (void).cxx_destruct;
 - (void)horizontalLockupViewDidLayoutSubviews:(id)arg1;

@@ -11,8 +11,8 @@
     } _mergeSource;
 }
 
-@property(assign,readonly) TSCEFormulaRewrite_RegionInfo * mergeRegion;
-@property(assign,readwrite) const struct { unsigned short x1; unsigned char x2; unsigned char x3; }* mergeSource;
+@property (nonatomic, readonly) TSCEFormulaRewrite_RegionInfo *mergeRegion;
+@property (nonatomic) const struct { unsigned short x1; unsigned char x2; unsigned char x3; }*mergeSource;
 
 - (id).cxx_construct;
 - (void)dealloc;

@@ -4,11 +4,11 @@
 
 @interface TDColorDefinition : NSManagedObject <TDElementAttributes>
 
-@property(assign,retain) NSManagedObject * colorStatus;
-@property(assign,retain) NSDate * dateOfLastChange;
-@property(assign,retain) TDThemeLook * look;
-@property(assign,retain) TDColorName * name;
-@property(assign,retain) NSNumber * physicalColor;
+@property (nonatomic, retain) NSManagedObject *colorStatus;
+@property (nonatomic, retain) NSDate *dateOfLastChange;
+@property (nonatomic, retain) TDThemeLook *look;
+@property (nonatomic, retain) TDColorName *name;
+@property (nonatomic, retain) NSNumber *physicalColor;
 
 - (id)colorAsString;
 - (void)copyAttributesInto:(id)arg1;

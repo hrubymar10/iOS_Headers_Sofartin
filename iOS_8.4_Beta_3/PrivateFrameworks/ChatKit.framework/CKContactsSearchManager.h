@@ -15,20 +15,20 @@
     bool _suppressGroupSuggestions;
 }
 
-@property(assign,copy) NSArray * conversationCache;
-@property(assign,retain) NSNumber * currentSearchTaskID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKContactsSearchManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSArray * enteredRecipients;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long pendingSearchTypes;
-@property(assign,retain) NSMutableDictionary * recentsDateMap;
-@property(assign,retain) MFContactsSearchManager * searchManager;
-@property(assign,retain) MFContactsSearchResultsModel * searchResultsModel;
-@property(assign,retain) NSString * searchText;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool suppressGroupSuggestions;
+@property (nonatomic, copy) NSArray *conversationCache;
+@property (nonatomic, retain) NSNumber *currentSearchTaskID;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKContactsSearchManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSArray *enteredRecipients;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long pendingSearchTypes;
+@property (nonatomic, retain) NSMutableDictionary *recentsDateMap;
+@property (nonatomic, retain) MFContactsSearchManager *searchManager;
+@property (nonatomic, retain) MFContactsSearchResultsModel *searchResultsModel;
+@property (nonatomic, retain) NSString *searchText;
+@property (readonly) Class superclass;
+@property (nonatomic) bool suppressGroupSuggestions;
 
 - (void)_generateConversationCache;
 - (void)_sortSearchResultsWithCoreRecentsResults:(id)arg1 namedSearchResults:(id)arg2;

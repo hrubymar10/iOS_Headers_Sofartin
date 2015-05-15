@@ -6,7 +6,7 @@
     NSSet *_UUIDs;
 }
 
-@property(assign,readonly) NSSet * UUIDs;
+@property (nonatomic, readonly) NSSet *UUIDs;
 
 + (id)_filterForComparisonWithKeyPath:(id)arg1 value:(id)arg2 dataTypes:(id)arg3;
 + (id)_filterForInOperatorWithKeyPath:(id)arg1 value:(id)arg2 dataTypes:(id)arg3;

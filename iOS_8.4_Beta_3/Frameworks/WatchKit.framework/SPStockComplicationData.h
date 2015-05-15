@@ -12,13 +12,13 @@
     NSString *_tickerSymbolText;
 }
 
-@property(assign,readwrite) unsigned long long changeDirection;
-@property(assign,retain) NSString * changeInPercentText;
-@property(assign,retain) NSString * changeInPointsText;
-@property(assign,retain) NSString * changeText;
-@property(assign,retain) NSString * marketCapText;
-@property(assign,retain) NSString * priceText;
-@property(assign,retain) NSString * tickerSymbolText;
+@property (nonatomic) unsigned long long changeDirection;
+@property (nonatomic, retain) NSString *changeInPercentText;
+@property (nonatomic, retain) NSString *changeInPointsText;
+@property (nonatomic, retain) NSString *changeText;
+@property (nonatomic, retain) NSString *marketCapText;
+@property (nonatomic, retain) NSString *priceText;
+@property (nonatomic, retain) NSString *tickerSymbolText;
 
 + (bool)supportsSecureCoding;
 

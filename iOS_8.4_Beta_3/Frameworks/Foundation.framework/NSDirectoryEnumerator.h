@@ -4,9 +4,9 @@
 
 @interface NSDirectoryEnumerator : NSEnumerator
 
-@property(assign,copy) NSDictionary * directoryAttributes;
-@property(assign,copy) NSDictionary * fileAttributes;
-@property(assign,readonly) unsigned long long level;
+@property (readonly, copy) NSDictionary *directoryAttributes;
+@property (readonly, copy) NSDictionary *fileAttributes;
+@property (readonly) unsigned long long level;
 
 - (id)directoryAttributes;
 - (id)fileAttributes;

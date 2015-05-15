@@ -6,7 +6,7 @@
     SUGradient *_nativeGradient;
 }
 
-@property(assign,readonly) NSString * type;
+@property (readonly) NSString *type;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

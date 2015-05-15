@@ -7,8 +7,8 @@
     NSNumber *_unlockEnabled;
 }
 
-@property(assign,readonly) NSNumber * remotePasscodeEnabled;
-@property(assign,readonly) NSNumber * unlockEnabled;
+@property (readonly) NSNumber *remotePasscodeEnabled;
+@property (readonly) NSNumber *unlockEnabled;
 
 + (bool)supportsSecureCoding;
 

@@ -6,7 +6,7 @@
     id _onViewDidDisappearBlock;
 }
 
-@property(assign,copy) id onViewDidDisappearBlock;
+@property (nonatomic, copy) id onViewDidDisappearBlock;
 
 - (void).cxx_destruct;
 - (id)onViewDidDisappearBlock;

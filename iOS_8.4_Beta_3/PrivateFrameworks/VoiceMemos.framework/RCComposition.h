@@ -14,21 +14,21 @@
     NSURL *_savedRecordingURI;
 }
 
-@property(assign,readwrite) double cachedComposedAVURLDuration;
-@property(assign,readwrite) bool cachedComposedAVURLDurationIsValid;
-@property(assign,readonly) NSURL * composedAVURL;
-@property(assign,readonly) double composedDuration;
-@property(assign,readonly) NSArray * composedFragments;
-@property(assign,readonly) NSURL * composedWaveformURL;
-@property(assign,readonly) NSDate * creationDate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) NSArray * decomposedFragments;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool readonly;
-@property(assign,retain) NSURL * savedRecordingURI;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * title;
+@property (nonatomic) double cachedComposedAVURLDuration;
+@property (nonatomic) bool cachedComposedAVURLDurationIsValid;
+@property (nonatomic, readonly) NSURL *composedAVURL;
+@property (nonatomic, readonly) double composedDuration;
+@property (nonatomic, readonly) NSArray *composedFragments;
+@property (nonatomic, readonly) NSURL *composedWaveformURL;
+@property (nonatomic, readonly) NSDate *creationDate;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) NSArray *decomposedFragments;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool readonly;
+@property (nonatomic, retain) NSURL *savedRecordingURI;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *title;
 
 + (id)_compositionFragmentsFolderForComposedAVURL:(id)arg1;
 + (id)_compositionLoadedFromMetadataURL:(id)arg1 composedAVURL:(id)arg2 savedRecordingURI:(id)arg3 createIfNeeded:(bool)arg4;

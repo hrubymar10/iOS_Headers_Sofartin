@@ -14,9 +14,9 @@
     } calorieFeature;
 }
 
-@property(assign,retain) NSTimer * calorieComputeTimer;
-@property(assign,readwrite) <CoreActivityActivityDelegate> * delegate;
-@property(assign,readwrite) int epoch_count;
+@property (nonatomic, retain) NSTimer *calorieComputeTimer;
+@property (nonatomic) <CoreActivityActivityDelegate> *delegate;
+@property (nonatomic) int epoch_count;
 
 - (void).cxx_destruct;
 - (id)calorieComputeTimer;

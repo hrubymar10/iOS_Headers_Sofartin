@@ -15,14 +15,14 @@
     unsigned int _wifi;
 }
 
-@property(assign,readwrite) unsigned int bt;
-@property(assign,readwrite) bool hasBt;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasUsb;
-@property(assign,readwrite) bool hasWifi;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int usb;
-@property(assign,readwrite) unsigned int wifi;
+@property (nonatomic) unsigned int bt;
+@property (nonatomic) bool hasBt;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasUsb;
+@property (nonatomic) bool hasWifi;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int usb;
+@property (nonatomic) unsigned int wifi;
 
 - (unsigned int)bt;
 - (void)copyTo:(id)arg1;

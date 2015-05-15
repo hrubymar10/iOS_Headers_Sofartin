@@ -17,11 +17,11 @@
     NSMutableDictionary *_uploadTasks;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) Class superclass;
 
 + (id)clientProtocolInterface;
 + (id)daemonProtocolInterface;

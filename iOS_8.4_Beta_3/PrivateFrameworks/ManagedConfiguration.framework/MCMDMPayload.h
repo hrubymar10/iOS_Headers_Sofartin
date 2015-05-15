@@ -17,19 +17,19 @@
     NSNumber *_useDevelopmentAPNSNum;
 }
 
-@property(assign,readonly) int accessRights;
-@property(assign,retain) NSString * checkInURLString;
-@property(assign,readonly) bool checkOutWhenRemoved;
-@property(assign,readonly) NSNumber * checkOutWhenRemovedNum;
-@property(assign,retain) NSData * identityPersistentID;
-@property(assign,retain) NSString * identityUUID;
-@property(assign,retain) NSArray * localizedAccessRightDescriptions;
-@property(assign,retain) NSString * serverURLString;
-@property(assign,readonly) bool signMessage;
-@property(assign,readonly) NSNumber * signMessageNum;
-@property(assign,retain) NSString * topic;
-@property(assign,readonly) bool useDevelopmentAPNS;
-@property(assign,readonly) NSNumber * useDevelopmentAPNSNum;
+@property (nonatomic, readonly) int accessRights;
+@property (nonatomic, readonly, retain) NSString *checkInURLString;
+@property (nonatomic, readonly) bool checkOutWhenRemoved;
+@property (nonatomic, readonly) NSNumber *checkOutWhenRemovedNum;
+@property (nonatomic, retain) NSData *identityPersistentID;
+@property (nonatomic, readonly, retain) NSString *identityUUID;
+@property (nonatomic, readonly, retain) NSArray *localizedAccessRightDescriptions;
+@property (nonatomic, readonly, retain) NSString *serverURLString;
+@property (nonatomic, readonly) bool signMessage;
+@property (nonatomic, readonly) NSNumber *signMessageNum;
+@property (nonatomic, readonly, retain) NSString *topic;
+@property (nonatomic, readonly) bool useDevelopmentAPNS;
+@property (nonatomic, readonly) NSNumber *useDevelopmentAPNSNum;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

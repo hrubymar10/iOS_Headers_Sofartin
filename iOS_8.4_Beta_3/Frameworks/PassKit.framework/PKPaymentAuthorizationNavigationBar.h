@@ -14,8 +14,8 @@
     long long _style;
 }
 
-@property(assign,readwrite) PKPaymentAuthorizationLayout * layout;
-@property(assign,readwrite) long long style;
+@property (nonatomic) PKPaymentAuthorizationLayout *layout;
+@property (nonatomic) long long style;
 
 - (id)_buttonAttributedStringWithString:(id)arg1;
 - (void)_createSubviewsWithFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

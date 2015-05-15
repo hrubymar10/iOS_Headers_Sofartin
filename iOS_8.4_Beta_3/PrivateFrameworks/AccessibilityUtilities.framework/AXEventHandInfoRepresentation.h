@@ -18,16 +18,16 @@
     unsigned char _systemGesturePossible;
 }
 
-@property(assign,readwrite) unsigned short currentFingerCount;
-@property(assign,readwrite) unsigned int eventType;
-@property(assign,readwrite) unsigned int handEventMask;
-@property(assign,readwrite) unsigned int handIdentity;
-@property(assign,readwrite) unsigned int handIndex;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } handPosition;
-@property(assign,readwrite) unsigned short initialFingerCount;
-@property(assign,retain) NSArray * paths;
-@property(assign,readwrite) unsigned char swipe;
-@property(assign,readwrite) unsigned char systemGesturePossible;
+@property (nonatomic) unsigned short currentFingerCount;
+@property (nonatomic) unsigned int eventType;
+@property (nonatomic) unsigned int handEventMask;
+@property (nonatomic) unsigned int handIdentity;
+@property (nonatomic) unsigned int handIndex;
+@property (nonatomic) struct CGPoint { double x1; double x2; } handPosition;
+@property (nonatomic) unsigned short initialFingerCount;
+@property (nonatomic, retain) NSArray *paths;
+@property (nonatomic) unsigned char swipe;
+@property (nonatomic) unsigned char systemGesturePossible;
 
 + (id)representationWithHandInfo:(struct { int x1; unsigned short x2; unsigned short x3; float x4; float x5; float x6; float x7; float x8; float x9; unsigned char x10; unsigned char x11; unsigned char x12; struct { unsigned char x_13_1_1; unsigned char x_13_1_2; unsigned char x_13_1_3; float x_13_1_4; float x_13_1_5; struct CGPoint { double x_6_2_1; double x_6_2_2; } x_13_1_6; unsigned int x_13_1_7; void *x_13_1_8; } x13[0]; }*)arg1;
 + (bool)supportsSecureCoding;

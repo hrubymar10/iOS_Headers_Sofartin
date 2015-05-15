@@ -4,7 +4,7 @@
 
 @interface PLImageSource : NSObject
 
-@property(assign,readonly) unsigned short sourceIdentifier;
+@property (nonatomic, readonly) unsigned short sourceIdentifier;
 
 - (id)newImageForAsset:(id)arg1 createMetadata:(id*)arg2;
 - (unsigned short)sourceIdentifier;

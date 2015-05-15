@@ -12,8 +12,8 @@
     } _trafficManager;
 }
 
-@property(assign,readwrite) bool enabled;
-@property(assign,retain) VKRoadMapModel * roadModel;
+@property (nonatomic) bool enabled;
+@property (nonatomic, retain) VKRoadMapModel *roadModel;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

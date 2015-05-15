@@ -4,8 +4,8 @@
 
 @interface DOMNotation : DOMNode
 
-@property(assign,copy) NSString * publicId;
-@property(assign,copy) NSString * systemId;
+@property (readonly, copy) NSString *publicId;
+@property (readonly, copy) NSString *systemId;
 
 - (id)publicId;
 - (id)systemId;

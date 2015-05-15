@@ -6,7 +6,7 @@
     SSFamilyCircle *_familyCircle;
 }
 
-@property(assign,retain) SSFamilyCircle * familyCircle;
+@property (nonatomic, retain) SSFamilyCircle *familyCircle;
 
 - (id)familyCircle;
 - (void)setFamilyCircle:(id)arg1;

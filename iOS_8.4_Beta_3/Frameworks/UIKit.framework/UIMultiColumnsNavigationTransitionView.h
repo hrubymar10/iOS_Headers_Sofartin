@@ -20,9 +20,9 @@
     NSArray *_viewsToRemove;
 }
 
-@property(assign,readwrite) int columnCount;
-@property(assign,readwrite) double columnWidth;
-@property(assign,readwrite) id delegate;
+@property (nonatomic) int columnCount;
+@property (nonatomic) double columnWidth;
+@property (nonatomic) id delegate;
 
 + (double)defaultDurationForTransition:(long long)arg1;
 

@@ -4,23 +4,23 @@
 
 @interface NSURLComponents : NSObject <NSCopying>
 
-@property(assign,copy) NSURL * URL;
-@property(assign,copy) NSString * fragment;
-@property(assign,copy) NSString * host;
-@property(assign,copy) NSString * password;
-@property(assign,copy) NSString * path;
-@property(assign,copy) NSString * percentEncodedFragment;
-@property(assign,copy) NSString * percentEncodedHost;
-@property(assign,copy) NSString * percentEncodedPassword;
-@property(assign,copy) NSString * percentEncodedPath;
-@property(assign,copy) NSString * percentEncodedQuery;
-@property(assign,copy) NSString * percentEncodedUser;
-@property(assign,copy) NSNumber * port;
-@property(assign,copy) NSString * query;
-@property(assign,copy) NSArray * queryItems;
-@property(assign,copy) NSString * scheme;
-@property(assign,copy) NSString * string;
-@property(assign,copy) NSString * user;
+@property (readonly, copy) NSURL *URL;
+@property (copy) NSString *fragment;
+@property (copy) NSString *host;
+@property (copy) NSString *password;
+@property (copy) NSString *path;
+@property (copy) NSString *percentEncodedFragment;
+@property (copy) NSString *percentEncodedHost;
+@property (copy) NSString *percentEncodedPassword;
+@property (copy) NSString *percentEncodedPath;
+@property (copy) NSString *percentEncodedQuery;
+@property (copy) NSString *percentEncodedUser;
+@property (copy) NSNumber *port;
+@property (copy) NSString *query;
+@property (copy) NSArray *queryItems;
+@property (copy) NSString *scheme;
+@property (readonly, copy) NSString *string;
+@property (copy) NSString *user;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)componentsWithString:(id)arg1;

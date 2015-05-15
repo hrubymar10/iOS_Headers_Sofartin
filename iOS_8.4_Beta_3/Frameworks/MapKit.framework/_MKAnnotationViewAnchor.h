@@ -6,7 +6,7 @@
     MKAnnotationView *_annotationView;
 }
 
-@property(assign,readwrite) MKAnnotationView * annotationView;
+@property (nonatomic) MKAnnotationView *annotationView;
 
 - (void).cxx_destruct;
 - (id)annotationView;

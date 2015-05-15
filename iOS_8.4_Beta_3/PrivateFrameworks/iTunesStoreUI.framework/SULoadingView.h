@@ -12,10 +12,10 @@
     UIColor *_textShadowColor;
 }
 
-@property(assign,retain) UIColor * activityIndicatorColor;
-@property(assign,readwrite) long long activityIndicatorStyle;
-@property(assign,retain) UIColor * textColor;
-@property(assign,retain) UIColor * textShadowColor;
+@property (nonatomic, retain) UIColor *activityIndicatorColor;
+@property (nonatomic) long long activityIndicatorStyle;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic, retain) UIColor *textShadowColor;
 
 - (void)_setupSubviews;
 - (id)activityIndicatorColor;

@@ -8,7 +8,7 @@
     bool mLayerNeedsUpdate;
 }
 
-@property(assign,readonly) KNSlideBackgroundInfo * slideBackgroundInfo;
+@property (readonly) KNSlideBackgroundInfo *slideBackgroundInfo;
 
 + (id)magicMoveMatchesBetweenOutgoingObjects:(id)arg1 andIncomingObjects:(id)arg2 textureContext:(id)arg3;
 

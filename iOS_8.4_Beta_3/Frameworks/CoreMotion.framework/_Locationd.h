@@ -6,7 +6,7 @@
     bool _valid;
 }
 
-@property(assign,readwrite) bool valid;
+@property (nonatomic) bool valid;
 
 + (void)becameFatallyBlocked:(id)arg1;
 + (id)getSilo;

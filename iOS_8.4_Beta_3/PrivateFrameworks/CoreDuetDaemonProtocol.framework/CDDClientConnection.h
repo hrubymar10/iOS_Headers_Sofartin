@@ -8,9 +8,9 @@
     CDDebug *_debug;
 }
 
-@property(assign,readonly) unsigned long long clientId;
-@property(assign,readonly) CDDXPCConnection * connection;
-@property(assign,readonly) CDDebug * debug;
+@property (readonly) unsigned long long clientId;
+@property (readonly) CDDXPCConnection *connection;
+@property (readonly) CDDebug *debug;
 
 - (void).cxx_destruct;
 - (bool)appsLaunchedSince:(id)arg1 butNotPrewarmedSince:(id)arg2 error:(id*)arg3 replyHandler:(id)arg4;

@@ -17,17 +17,17 @@
     NSArray *_totals;
 }
 
-@property(assign,readwrite) double dataSetModelMax;
-@property(assign,readwrite) double dataSetModelMin;
-@property(assign,copy) NSArray * majorGridLocations;
-@property(assign,readwrite) double max;
-@property(assign,readwrite) double min;
-@property(assign,copy) NSArray * minorGridLocations;
-@property(assign,readwrite) double modelAverage;
-@property(assign,readwrite) double modelMax;
-@property(assign,readwrite) double modelMedian;
-@property(assign,readwrite) double modelMin;
-@property(assign,copy) NSArray * totals;
+@property (nonatomic) double dataSetModelMax;
+@property (nonatomic) double dataSetModelMin;
+@property (nonatomic, copy) NSArray *majorGridLocations;
+@property (nonatomic) double max;
+@property (nonatomic) double min;
+@property (nonatomic, copy) NSArray *minorGridLocations;
+@property (nonatomic) double modelAverage;
+@property (nonatomic) double modelMax;
+@property (nonatomic) double modelMedian;
+@property (nonatomic) double modelMin;
+@property (nonatomic, copy) NSArray *totals;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 

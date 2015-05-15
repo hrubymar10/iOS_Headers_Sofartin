@@ -12,10 +12,10 @@
     NSOperationQueue *_opQueue;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readonly) SSFamilyCircle * familyCircle;
-@property(assign,readonly) bool hasLoaded;
-@property(assign,readonly) FAFamilyCircle * iCloudFamily;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) SSFamilyCircle *familyCircle;
+@property (nonatomic, readonly) bool hasLoaded;
+@property (nonatomic, readonly) FAFamilyCircle *iCloudFamily;
 
 + (id)sharedController;
 

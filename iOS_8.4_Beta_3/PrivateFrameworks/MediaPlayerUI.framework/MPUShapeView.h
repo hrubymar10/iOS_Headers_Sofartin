@@ -4,7 +4,7 @@
 
 @interface MPUShapeView : UIView
 
-@property(assign,readonly) CAShapeLayer * shapeLayer;
+@property (nonatomic, readonly) CAShapeLayer *shapeLayer;
 
 + (Class)layerClass;
 

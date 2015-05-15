@@ -7,8 +7,8 @@
     unsigned long long _sectionIndex;
 }
 
-@property(assign,readwrite) unsigned long long pageIndex;
-@property(assign,readwrite) unsigned long long sectionIndex;
+@property (nonatomic) unsigned long long pageIndex;
+@property (nonatomic) unsigned long long sectionIndex;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)description;

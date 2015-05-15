@@ -8,9 +8,9 @@
     NSString *_stringValue;
 }
 
-@property(assign,readonly) SGMicrodataItem * itemValue;
-@property(assign,readonly) NSString * propertyName;
-@property(assign,readonly) NSString * stringValue;
+@property (nonatomic, readonly) SGMicrodataItem *itemValue;
+@property (nonatomic, readonly) NSString *propertyName;
+@property (nonatomic, readonly) NSString *stringValue;
 
 - (void).cxx_destruct;
 - (id)initWithName:(id)arg1 value:(id)arg2;

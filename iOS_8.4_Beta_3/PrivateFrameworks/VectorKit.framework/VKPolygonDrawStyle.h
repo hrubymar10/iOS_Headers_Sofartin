@@ -6,8 +6,8 @@
     NSString *_name;
 }
 
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  casingColor; /* unknown property attribute:  1>=[4f]} */
-@property(assign,retain) NSString * name;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  casingColor; /* unknown property attribute:  1>=[4f]} */
+@property (nonatomic, retain) NSString *name;
 
 + (int)renderStyleID;
 

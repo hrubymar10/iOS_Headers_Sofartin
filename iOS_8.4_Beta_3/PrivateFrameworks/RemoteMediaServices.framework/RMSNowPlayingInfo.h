@@ -23,26 +23,26 @@
     NSString *_trackName;
 }
 
-@property(assign,retain) NSString * albumName;
-@property(assign,retain) NSString * artistName;
-@property(assign,readonly) NSString * artworkIdentifier;
-@property(assign,readwrite) bool canSkipNext;
-@property(assign,readwrite) bool canSkipPrevious;
-@property(assign,readwrite) bool canWishlist;
-@property(assign,readwrite) unsigned long long databaseID;
-@property(assign,readwrite) bool hasChapterData;
-@property(assign,readwrite) unsigned long long itemID;
-@property(getter=isLikeable,assign,readwrite) bool likeable;
-@property(assign,readwrite) long long likedState;
-@property(assign,readwrite) long long mediaKind;
-@property(assign,readwrite) long long playbackState;
-@property(getter=isPlaying,assign,readonly) bool playing;
-@property(assign,readwrite) int revisionNumber;
-@property(assign,readwrite) long long scrubbableState;
-@property(assign,readwrite) double timeRemaining;
-@property(assign,readwrite) double timestamp;
-@property(assign,readwrite) double totalDuration;
-@property(assign,retain) NSString * trackName;
+@property (nonatomic, retain) NSString *albumName;
+@property (nonatomic, retain) NSString *artistName;
+@property (nonatomic, readonly) NSString *artworkIdentifier;
+@property (nonatomic) bool canSkipNext;
+@property (nonatomic) bool canSkipPrevious;
+@property (nonatomic) bool canWishlist;
+@property (nonatomic) unsigned long long databaseID;
+@property (nonatomic) bool hasChapterData;
+@property (nonatomic) unsigned long long itemID;
+@property (getter=isLikeable, nonatomic) bool likeable;
+@property (nonatomic) long long likedState;
+@property (nonatomic) long long mediaKind;
+@property (nonatomic) long long playbackState;
+@property (getter=isPlaying, nonatomic, readonly) bool playing;
+@property (nonatomic) int revisionNumber;
+@property (nonatomic) long long scrubbableState;
+@property (nonatomic) double timeRemaining;
+@property (nonatomic) double timestamp;
+@property (nonatomic) double totalDuration;
+@property (nonatomic, retain) NSString *trackName;
 
 - (void).cxx_destruct;
 - (id)albumName;

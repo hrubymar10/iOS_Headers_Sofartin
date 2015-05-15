@@ -4,13 +4,13 @@
 
 @interface SASportsMetadataGroup : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * groupTitle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * metadata;
-@property(assign,copy) NSNumber * selected;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *groupTitle;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *metadata;
+@property (nonatomic, copy) NSNumber *selected;
+@property (readonly) Class superclass;
 
 + (id)metadataGroup;
 + (id)metadataGroupWithDictionary:(id)arg1 context:(id)arg2;

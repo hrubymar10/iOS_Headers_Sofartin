@@ -8,9 +8,9 @@
     NSArray *_items;
 }
 
-@property(assign,retain) MusicClientContext * clientContext;
-@property(assign,copy) MusicEntityValueContext * containerEntityValueContext;
-@property(assign,copy) NSArray * items;
+@property (nonatomic, retain) MusicClientContext *clientContext;
+@property (nonatomic, copy) MusicEntityValueContext *containerEntityValueContext;
+@property (nonatomic, copy) NSArray *items;
 
 + (Class)queueFeederClass;
 + (void)setDefaultClientContext:(id)arg1;

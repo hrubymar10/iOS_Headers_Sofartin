@@ -9,10 +9,10 @@
     double _thresholdForDeterminingEqualSize;
 }
 
-@property(assign,readwrite) unsigned long long maximumGroupSize;
-@property(assign,readwrite) unsigned long long minimumGroupSize;
-@property(assign,readwrite) unsigned long long preferredGroupSize;
-@property(assign,readwrite) double thresholdForDeterminingEqualSize;
+@property (nonatomic) unsigned long long maximumGroupSize;
+@property (nonatomic) unsigned long long minimumGroupSize;
+@property (nonatomic) unsigned long long preferredGroupSize;
+@property (nonatomic) double thresholdForDeterminingEqualSize;
 
 - (id)_buildHierarchyForGroup:(id)arg1 indexOfKeyboard:(unsigned long long*)arg2;
 - (id)_flattenHierarchyForGroup:(id)arg1 rootLevel:(bool)arg2;

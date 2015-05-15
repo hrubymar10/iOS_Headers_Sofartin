@@ -11,12 +11,12 @@
     bool _replySent;
 }
 
-@property(assign,retain) NSDate * bulletinPublicationDate;
-@property(assign,readwrite) bool didLogAggd;
-@property(assign,readwrite) unsigned long long didPlayLightsAndSirens;
-@property(assign,retain) NSDate * expiration;
-@property(assign,copy) id reply;
-@property(assign,readonly) bool replySent;
+@property (nonatomic, retain) NSDate *bulletinPublicationDate;
+@property (nonatomic) bool didLogAggd;
+@property (nonatomic) unsigned long long didPlayLightsAndSirens;
+@property (nonatomic, retain) NSDate *expiration;
+@property (nonatomic, copy) id reply;
+@property (nonatomic, readonly) bool replySent;
 
 - (void).cxx_destruct;
 - (id)bulletinPublicationDate;

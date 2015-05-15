@@ -6,8 +6,8 @@
     NSArray *_accessControlEntities;
 }
 
-@property(assign,retain) NSArray * accessControlEntities;
-@property(assign,readwrite) <CoreDAVACLTaskDelegate> * delegate;
+@property (nonatomic, retain) NSArray *accessControlEntities;
+@property (nonatomic) <CoreDAVACLTaskDelegate> *delegate;
 
 - (id)accessControlEntities;
 - (void)dealloc;

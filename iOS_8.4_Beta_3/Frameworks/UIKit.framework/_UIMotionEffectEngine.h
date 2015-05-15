@@ -62,8 +62,8 @@
     int _thermalNotificationToken;
 }
 
-@property(setter=_setTargetInterfaceOrientation:,assign,readwrite) long long _targetInterfaceOrientation;
-@property(assign,readonly) NSArray * suspensionReasons;
+@property (setter=_setTargetInterfaceOrientation:, nonatomic) long long _targetInterfaceOrientation;
+@property (nonatomic, readonly) NSArray *suspensionReasons;
 
 + (bool)_motionEffectsEnabled;
 + (bool)_motionEffectsSupported;

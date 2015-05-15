@@ -9,7 +9,7 @@
     NSDictionary *_queuedNowPlayingInfo;
 }
 
-@property(assign,copy) NSDictionary * nowPlayingInfo;
+@property (copy) NSDictionary *nowPlayingInfo;
 
 + (id)defaultCenter;
 

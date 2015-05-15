@@ -6,7 +6,7 @@
     AVAssetReaderOutputMetadataAdaptorInternal *_internal;
 }
 
-@property(assign,readonly) AVAssetReaderTrackOutput * assetReaderTrackOutput;
+@property (nonatomic, readonly) AVAssetReaderTrackOutput *assetReaderTrackOutput;
 
 + (id)assetReaderOutputMetadataAdaptorWithAssetReaderTrackOutput:(id)arg1;
 

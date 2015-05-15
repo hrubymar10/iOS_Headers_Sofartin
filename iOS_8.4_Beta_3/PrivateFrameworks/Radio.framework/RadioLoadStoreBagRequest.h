@@ -6,7 +6,7 @@
     bool _ignoresRadioDiskCache;
 }
 
-@property(assign,readwrite) bool ignoresRadioDiskCache;
+@property (nonatomic) bool ignoresRadioDiskCache;
 
 + (id)_accessQueue;
 + (id)_cachedBagFilenameForActiveAccount;

@@ -8,9 +8,9 @@
     id _syncHelperReadyNotificationRef;
 }
 
-@property(assign,retain) NSXPCConnection * helperConnection;
-@property(assign,readwrite) long long retryCount;
-@property(assign,retain) id syncHelperReadyNotificationRef;
+@property (retain) NSXPCConnection *helperConnection;
+@property long long retryCount;
+@property (retain) id syncHelperReadyNotificationRef;
 
 - (void).cxx_destruct;
 - (void)createHelperConnection;

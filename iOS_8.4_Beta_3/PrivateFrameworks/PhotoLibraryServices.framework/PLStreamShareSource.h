@@ -9,10 +9,10 @@
     NSURL *_mediaURL;
 }
 
-@property(assign,retain) NSString * fileExtension;
-@property(assign,retain) NSData * mediaData;
-@property(assign,readwrite) long long mediaType;
-@property(assign,retain) NSURL * mediaURL;
+@property (nonatomic, retain) NSString *fileExtension;
+@property (nonatomic, retain) NSData *mediaData;
+@property (nonatomic) long long mediaType;
+@property (nonatomic, retain) NSURL *mediaURL;
 
 - (id)fileExtension;
 - (id)initWithDictionary:(id)arg1;

@@ -7,8 +7,8 @@
     NSString *_message;
 }
 
-@property(assign,readwrite) bool called;
-@property(assign,retain) NSString * message;
+@property (nonatomic) bool called;
+@property (nonatomic, retain) NSString *message;
 
 - (bool)called;
 - (void)dealloc;

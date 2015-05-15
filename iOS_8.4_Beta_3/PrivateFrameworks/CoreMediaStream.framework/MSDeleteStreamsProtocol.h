@@ -30,7 +30,7 @@
     } _context;
 }
 
-@property(assign,readwrite) <MSDeleteStreamsProtocolDelegate> * delegate;
+@property (nonatomic) <MSDeleteStreamsProtocolDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_coreProtocolDidFailAuthenticationError:(id)arg1;

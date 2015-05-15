@@ -10,16 +10,16 @@
     UIViewController *_viewController;
 }
 
-@property(getter=isAnimated,assign,readonly) bool animated;
-@property(assign,readonly) IKAppDocument * document;
-@property(assign,retain) SKUINavigationDocumentController * navigationDocumentController;
-@property(assign,readonly) NSString * overlayType;
-@property(assign,readonly) NSDictionary * presentationOptions;
-@property(assign,readonly) NSString * presentationType;
-@property(assign,readonly) NSString * sheetType;
-@property(assign,readonly) NSString * sourceElementIdentifier;
-@property(assign,readwrite) bool usesNavigationControllerForModalPresentation;
-@property(assign,retain) UIViewController * viewController;
+@property (getter=isAnimated, nonatomic, readonly) bool animated;
+@property (nonatomic, readonly) IKAppDocument *document;
+@property (nonatomic, retain) SKUINavigationDocumentController *navigationDocumentController;
+@property (nonatomic, readonly) NSString *overlayType;
+@property (nonatomic, readonly) NSDictionary *presentationOptions;
+@property (nonatomic, readonly) NSString *presentationType;
+@property (nonatomic, readonly) NSString *sheetType;
+@property (nonatomic, readonly) NSString *sourceElementIdentifier;
+@property (nonatomic) bool usesNavigationControllerForModalPresentation;
+@property (nonatomic, retain) UIViewController *viewController;
 
 - (void).cxx_destruct;
 - (void)_setDocument:(id)arg1;

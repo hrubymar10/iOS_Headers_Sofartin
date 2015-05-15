@@ -12,9 +12,9 @@
     bool _success;
 }
 
-@property(assign,readonly) bool createWaveform;
-@property(assign,copy) NSURL * destinationURL;
-@property(assign,copy) NSURL * sourceURL;
+@property (nonatomic, readonly) bool createWaveform;
+@property (nonatomic, readonly, copy) NSURL *destinationURL;
+@property (nonatomic, readonly, copy) NSURL *sourceURL;
 
 + (id)exportableAudioFormatPathExtensionWithSourceURL:(id)arg1;
 

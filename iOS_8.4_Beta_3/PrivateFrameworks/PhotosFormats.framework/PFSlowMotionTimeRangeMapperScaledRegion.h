@@ -10,11 +10,11 @@
     float _rate;
 }
 
-@property(assign,readwrite) float rampInEndTime;
-@property(assign,readwrite) float rampInStartTime;
-@property(assign,readwrite) float rampOutEndTime;
-@property(assign,readwrite) float rampOutStartTime;
-@property(assign,readwrite) float rate;
+@property (nonatomic) float rampInEndTime;
+@property (nonatomic) float rampInStartTime;
+@property (nonatomic) float rampOutEndTime;
+@property (nonatomic) float rampOutStartTime;
+@property (nonatomic) float rate;
 
 - (float)rampInEndTime;
 - (float)rampInStartTime;

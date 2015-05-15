@@ -6,20 +6,20 @@
     TSDPathSource *mPathSource;
 }
 
-@property(getter=isAnchoredToText,assign,readonly) bool anchoredToText;
-@property(getter=isAttachedToBodyText,assign,readonly) bool attachedToBodyText;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isFloatingAboveText,assign,readonly) bool floatingAboveText;
-@property(assign,copy) TSDInfoGeometry * geometry;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInlineWithText,assign,readonly) bool inlineWithText;
-@property(assign,readwrite) bool matchesObjectPlaceholderGeometry;
-@property(assign,readwrite) TSPObject<TSDOwningAttachment> * owningAttachment;
-@property(assign,readonly) TSPObject<TSDOwningAttachment> * owningAttachmentNoRecurse;
-@property(assign,readwrite) NSObject<TSDContainerInfo> * parentInfo;
-@property(assign,copy) TSDPathSource * pathSource;
-@property(assign,readonly) Class superclass;
+@property (getter=isAnchoredToText, nonatomic, readonly) bool anchoredToText;
+@property (getter=isAttachedToBodyText, nonatomic, readonly) bool attachedToBodyText;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isFloatingAboveText, nonatomic, readonly) bool floatingAboveText;
+@property (nonatomic, copy) TSDInfoGeometry *geometry;
+@property (readonly) unsigned long long hash;
+@property (getter=isInlineWithText, nonatomic, readonly) bool inlineWithText;
+@property (nonatomic) bool matchesObjectPlaceholderGeometry;
+@property (nonatomic) TSPObject<TSDOwningAttachment> *owningAttachment;
+@property (nonatomic, readonly) TSPObject<TSDOwningAttachment> *owningAttachmentNoRecurse;
+@property (nonatomic) NSObject<TSDContainerInfo> *parentInfo;
+@property (nonatomic, copy) TSDPathSource *pathSource;
+@property (readonly) Class superclass;
 
 - (id)copyWithContext:(id)arg1;
 - (void)dealloc;

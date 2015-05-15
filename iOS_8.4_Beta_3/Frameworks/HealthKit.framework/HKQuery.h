@@ -15,19 +15,19 @@
     <NSXPCProxyCreating> *_serverProxy;
 }
 
-@property(assign,readonly) NSUUID * activationUUID;
-@property(assign,retain) NSObject<OS_dispatch_queue> * clientQueue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) <HKQueryDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=_filter,assign,retain) _HKFilter * filter;
-@property(assign,readonly) bool hasBeenExecuted;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSPredicate * predicate;
-@property(getter=_hasReceivedInitialResults,assign,readonly) bool receivedInitialResults;
-@property(assign,readonly) HKSampleType * sampleType;
-@property(assign,retain) <NSXPCProxyCreating> * serverProxy;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSUUID *activationUUID;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *clientQueue;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) <HKQueryDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=_filter, nonatomic, retain) _HKFilter *filter;
+@property (nonatomic, readonly) bool hasBeenExecuted;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSPredicate *predicate;
+@property (getter=_hasReceivedInitialResults, nonatomic, readonly) bool receivedInitialResults;
+@property (readonly) HKSampleType *sampleType;
+@property (nonatomic, retain) <NSXPCProxyCreating> *serverProxy;
+@property (readonly) Class superclass;
 
 + (id)FU_predicateForWorkoutsWithMetadataIndoor:(bool)arg1;
 + (id)_clientInterfaceProtocol;

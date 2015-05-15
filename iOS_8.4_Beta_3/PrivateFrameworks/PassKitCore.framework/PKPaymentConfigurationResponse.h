@@ -9,10 +9,10 @@
     NSString *_version;
 }
 
-@property(assign,readonly) NSDictionary * configuration;
-@property(assign,readonly) NSData * data;
-@property(assign,readonly) NSData * signature;
-@property(assign,readonly) NSString * version;
+@property (nonatomic, readonly) NSDictionary *configuration;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic, readonly) NSData *signature;
+@property (nonatomic, readonly) NSString *version;
 
 - (id)configuration;
 - (id)data;

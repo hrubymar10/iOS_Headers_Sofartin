@@ -11,12 +11,12 @@
     bool _ubiquityUnavailable;
 }
 
-@property(assign,retain) NSMutableDictionary * documents;
-@property(assign,retain) NSMutableArray * fetchHandlers;
-@property(assign,retain) NSMetadataQuery * query;
-@property(assign,readwrite) long long queryDisableCount;
-@property(assign,retain) NSURL * ubiquityURL;
-@property(assign,readwrite) bool ubiquityUnavailable;
+@property (nonatomic, retain) NSMutableDictionary *documents;
+@property (nonatomic, retain) NSMutableArray *fetchHandlers;
+@property (nonatomic, retain) NSMetadataQuery *query;
+@property (nonatomic) long long queryDisableCount;
+@property (nonatomic, retain) NSURL *ubiquityURL;
+@property (nonatomic) bool ubiquityUnavailable;
 
 + (id)sharedManager;
 

@@ -17,11 +17,11 @@
     int mWidth;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * passphrase;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *passphrase;
+@property (readonly) Class superclass;
 
 + (int)blipTypeToResourceType:(int)arg1;
 + (id)resourceTypeToExtension:(int)arg1;

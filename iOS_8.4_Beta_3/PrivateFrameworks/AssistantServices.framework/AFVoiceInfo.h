@@ -9,10 +9,10 @@
     bool _wasInitalizedFromDictionaryRepresentation;
 }
 
-@property(assign,readwrite) long long gender;
-@property(assign,readwrite) bool isCustom;
-@property(assign,readonly) NSString * languageCode;
-@property(assign,readonly) bool wasInitalizedFromDictionaryRepresentation;
+@property (nonatomic) long long gender;
+@property (nonatomic) bool isCustom;
+@property (nonatomic, readonly) NSString *languageCode;
+@property (nonatomic, readonly) bool wasInitalizedFromDictionaryRepresentation;
 
 + (bool)supportsSecureCoding;
 

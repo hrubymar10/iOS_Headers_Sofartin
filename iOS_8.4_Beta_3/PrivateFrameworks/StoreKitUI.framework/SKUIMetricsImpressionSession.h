@@ -9,9 +9,9 @@
     NSMutableString *_impressionsString;
 }
 
-@property(assign,copy) NSArray * impressionIdentifiers;
-@property(assign,copy) NSArray * impressionableViewElements;
-@property(assign,copy) NSString * impressionsString;
+@property (nonatomic, readonly, copy) NSArray *impressionIdentifiers;
+@property (nonatomic, readonly, copy) NSArray *impressionableViewElements;
+@property (nonatomic, readonly, copy) NSString *impressionsString;
 
 - (void).cxx_destruct;
 - (id)_allViewElementsInTimerMap;

@@ -11,12 +11,12 @@
     double _zoomingImageWidth;
 }
 
-@property(assign,copy) UIColor * backgroundColor;
-@property(assign,readwrite) long long position;
-@property(assign,readwrite) double zoomingImageAlpha;
-@property(assign,readwrite) double zoomingImageImposedAlphaOfOtherViews;
-@property(getter=_zoomingImageLambda,setter=_setZoomingImageLambda:,assign,readwrite) double zoomingImageLambda;
-@property(assign,readwrite) double zoomingImageWidth;
+@property (nonatomic, copy) UIColor *backgroundColor;
+@property (nonatomic) long long position;
+@property (nonatomic) double zoomingImageAlpha;
+@property (nonatomic) double zoomingImageImposedAlphaOfOtherViews;
+@property (getter=_zoomingImageLambda, setter=_setZoomingImageLambda:, nonatomic) double zoomingImageLambda;
+@property (nonatomic) double zoomingImageWidth;
 
 - (void).cxx_destruct;
 - (void)_setZoomingImageLambda:(double)arg1;

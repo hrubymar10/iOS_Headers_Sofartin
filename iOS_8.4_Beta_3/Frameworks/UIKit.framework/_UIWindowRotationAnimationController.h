@@ -9,10 +9,10 @@
     bool _updateStatusBarIfNecessary;
 }
 
-@property(assign,copy) id animations;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) bool skipCallbacks;
-@property(assign,readwrite) bool updateStatusBarIfNecessary;
+@property (nonatomic, copy) id animations;
+@property (nonatomic) double duration;
+@property (nonatomic) bool skipCallbacks;
+@property (nonatomic) bool updateStatusBarIfNecessary;
 
 - (void)animateTransition:(id)arg1;
 - (id)animations;

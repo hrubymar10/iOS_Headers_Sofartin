@@ -12,7 +12,7 @@
     bool _needsHistoricalFetch;
 }
 
-@property(assign,readwrite) double maxDatumDuration;
+@property double maxDatumDuration;
 
 - (void).cxx_destruct;
 - (double)_queue_aggregationInterval;

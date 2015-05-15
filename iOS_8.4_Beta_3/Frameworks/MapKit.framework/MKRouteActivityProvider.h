@@ -6,8 +6,8 @@
     MKMapItem *_sourceMapItem;
 }
 
-@property(assign,retain) MKMapItem * destinationMapItem;
-@property(assign,retain) MKMapItem * sourceMapItem;
+@property (nonatomic, retain) MKMapItem *destinationMapItem;
+@property (nonatomic, retain) MKMapItem *sourceMapItem;
 
 - (void).cxx_destruct;
 - (id)activitySourceTitle;

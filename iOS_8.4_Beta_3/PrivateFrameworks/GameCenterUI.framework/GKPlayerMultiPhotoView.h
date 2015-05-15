@@ -7,8 +7,8 @@
     NSArray *_players;
 }
 
-@property(assign,retain) NSMutableDictionary * photoImages;
-@property(assign,retain) NSArray * players;
+@property (nonatomic, retain) NSMutableDictionary *photoImages;
+@property (nonatomic, retain) NSArray *players;
 
 - (void)dealloc;
 - (id)photoImages;

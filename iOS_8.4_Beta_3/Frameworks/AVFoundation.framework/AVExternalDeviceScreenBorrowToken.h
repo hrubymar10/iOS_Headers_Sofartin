@@ -8,8 +8,8 @@
     NSString *_reason;
 }
 
-@property(assign,readonly) NSString * client;
-@property(assign,readonly) NSString * reason;
+@property (nonatomic, readonly) NSString *client;
+@property (nonatomic, readonly) NSString *reason;
 
 - (id)client;
 - (void)dealloc;

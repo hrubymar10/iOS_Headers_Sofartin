@@ -6,7 +6,7 @@
     NSObject<OS_dispatch_queue> *_cacheQueue;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * cacheQueue;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *cacheQueue;
 
 + (id)dbFileName;
 + (id)sharedCache;

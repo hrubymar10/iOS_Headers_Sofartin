@@ -23,26 +23,26 @@
     bool mReferenceForGeometryOnly;
 }
 
-@property(assign,readonly) int accessorMode;
-@property(assign,readonly) int argumentContext;
-@property(assign,readonly) short defaultModeIndex;
-@property(assign,readonly) bool disallowCurrency;
-@property(assign,readonly) bool disallowDuration;
-@property(assign,readonly) NSArray * disallowedTypes;
-@property(assign,readonly) bool forceArrayMode;
-@property(assign,readwrite) TSCEFunctionSpec * functionSpec;
-@property(assign,readonly) short index;
-@property(assign,readonly) bool isInteger;
-@property(assign,readonly) bool isMode;
-@property(assign,readonly) bool isOptional;
-@property(assign,readonly) bool maxInclusive;
-@property(assign,readonly) double maxValue;
-@property(assign,readonly) bool minInclusive;
-@property(assign,readonly) double minValue;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{vector<TSCEValue' */ struct * modeValues; /* unknown property attribute:  std::__1::allocator<TSCEValue> >=^{TSCEValue}}} */
-@property(assign,readonly) short numModes;
-@property(assign,readwrite) int rangeContext;
-@property(assign,readonly) bool referenceForGeometryOnly;
+@property (nonatomic, readonly) int accessorMode;
+@property (nonatomic, readonly) int argumentContext;
+@property (nonatomic, readonly) short defaultModeIndex;
+@property (nonatomic, readonly) bool disallowCurrency;
+@property (nonatomic, readonly) bool disallowDuration;
+@property (nonatomic, readonly) NSArray *disallowedTypes;
+@property (nonatomic, readonly) bool forceArrayMode;
+@property (nonatomic) TSCEFunctionSpec *functionSpec;
+@property (nonatomic, readonly) short index;
+@property (nonatomic, readonly) bool isInteger;
+@property (nonatomic, readonly) bool isMode;
+@property (nonatomic, readonly) bool isOptional;
+@property (nonatomic, readonly) bool maxInclusive;
+@property (nonatomic, readonly) double maxValue;
+@property (nonatomic, readonly) bool minInclusive;
+@property (nonatomic, readonly) double minValue;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{vector<TSCEValue' */ struct *modeValues; /* unknown property attribute:  std::__1::allocator<TSCEValue> >=^{TSCEValue}}} */
+@property (nonatomic, readonly) short numModes;
+@property (nonatomic) int rangeContext;
+@property (nonatomic, readonly) bool referenceForGeometryOnly;
 
 + (id)argumentSpecWithIndex:(short)arg1 type:(int)arg2 accessorMode:(int)arg3 disallowedTypes:(id)arg4 argumentContext:(int)arg5 rangeContext:(int)arg6 minValue:(double)arg7 minInclusive:(bool)arg8 maxValue:(double)arg9 maxInclusive:(bool)arg10 isInteger:(bool)arg11 disallowDuration:(bool)arg12 disallowCurrency:(bool)arg13 modeValues:(struct vector<TSCEValue, std::__1::allocator<TSCEValue> > { struct TSCEValue {} *x1; struct TSCEValue {} *x2; struct __compressed_pair<TSCEValue *, std::__1::allocator<TSCEValue> > { struct TSCEValue {} *x_3_1_1; } x3; }*)arg14 defaultModeIndex:(short)arg15 referenceForGeometryOnly:(bool)arg16 forceArrayMode:(bool)arg17;
 

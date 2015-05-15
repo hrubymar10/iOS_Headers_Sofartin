@@ -9,9 +9,9 @@
     NSURL *_stagingURL;
 }
 
-@property(assign,retain) NSURL * documentURL;
-@property(assign,readonly) NSURL * libraryURL;
-@property(assign,readonly) <NSCopying><NSSecureCoding> * persistentIdentifier;
+@property (retain) NSURL *documentURL;
+@property (nonatomic, readonly) NSURL *libraryURL;
+@property (nonatomic, readonly) <NSCopying><NSSecureCoding> *persistentIdentifier;
 
 - (id)URLforReplacingItemWithError:(id*)arg1;
 - (id)_URLForNameSpace:(id)arg1 createIfNeeded:(bool)arg2 allowMissing:(bool)arg3 error:(id*)arg4;

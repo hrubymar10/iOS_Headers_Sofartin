@@ -11,11 +11,11 @@
     int _type;
 }
 
-@property(assign,retain) NSMutableArray * entries;
-@property(assign,readonly) bool hasName;
-@property(assign,readwrite) bool hasType;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) int type;
+@property (nonatomic, retain) NSMutableArray *entries;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic) bool hasType;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) int type;
 
 - (void)addEntries:(id)arg1;
 - (void)clearEntries;

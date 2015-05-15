@@ -12,13 +12,13 @@
     RUTrackDownloadView *_trackDownloadView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isShowingCreateLoadingIndicator,assign,readwrite) bool showingCreateLoadingIndicator;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIView * viewForPresentingStationActions;
-@property(assign,readonly) UIView * viewForPresentingTrackActions;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isShowingCreateLoadingIndicator, nonatomic) bool showingCreateLoadingIndicator;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UIView *viewForPresentingStationActions;
+@property (nonatomic, readonly) UIView *viewForPresentingTrackActions;
 
 + (unsigned long long)defaultVisibleParts;
 

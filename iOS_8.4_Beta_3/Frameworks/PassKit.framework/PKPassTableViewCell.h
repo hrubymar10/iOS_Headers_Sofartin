@@ -6,7 +6,7 @@
     PKPaymentPass *_paymentPass;
 }
 
-@property(assign,retain) PKPaymentPass * paymentPass;
+@property (nonatomic, retain) PKPaymentPass *paymentPass;
 
 - (void)dealloc;
 - (id)paymentPass;

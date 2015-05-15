@@ -6,7 +6,7 @@
     IDSAccount *_idsAccount;
 }
 
-@property(assign,retain) IDSAccount * idsAccount;
+@property (nonatomic, readonly, retain) IDSAccount *idsAccount;
 
 - (id)accountDefaults;
 - (void)dealloc;

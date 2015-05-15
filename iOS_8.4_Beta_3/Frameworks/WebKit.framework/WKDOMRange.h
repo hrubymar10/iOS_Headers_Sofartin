@@ -8,13 +8,13 @@
     } _impl;
 }
 
-@property(assign,retain) WKDOMNode * endContainer;
-@property(assign,readonly) long long endOffset;
-@property(assign,readonly) bool isCollapsed;
-@property(assign,retain) WKDOMNode * startContainer;
-@property(assign,readonly) long long startOffset;
-@property(assign,copy) NSString * text;
-@property(assign,readonly) NSArray * textRects;
+@property (readonly, retain) WKDOMNode *endContainer;
+@property (readonly) long long endOffset;
+@property (readonly) bool isCollapsed;
+@property (readonly, retain) WKDOMNode *startContainer;
+@property (readonly) long long startOffset;
+@property (readonly, copy) NSString *text;
+@property (readonly) NSArray *textRects;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

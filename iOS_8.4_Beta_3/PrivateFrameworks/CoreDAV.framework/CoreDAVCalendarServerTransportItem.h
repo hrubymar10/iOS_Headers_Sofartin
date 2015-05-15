@@ -13,14 +13,14 @@
     CoreDAVLeafItem *_xmppURI;
 }
 
-@property(assign,retain) CoreDAVLeafItem * apsBundleID;
-@property(assign,retain) CoreDAVLeafItem * apsEnv;
-@property(assign,retain) CoreDAVLeafItem * courierServer;
-@property(assign,retain) CoreDAVLeafItem * refreshInterval;
-@property(assign,retain) CoreDAVItemWithHrefChildItem * subscriptionURL;
-@property(assign,retain) CoreDAVItemWithHrefChildItem * tokenURL;
-@property(assign,retain) CoreDAVLeafItem * xmppServer;
-@property(assign,retain) CoreDAVLeafItem * xmppURI;
+@property (nonatomic, retain) CoreDAVLeafItem *apsBundleID;
+@property (nonatomic, retain) CoreDAVLeafItem *apsEnv;
+@property (nonatomic, retain) CoreDAVLeafItem *courierServer;
+@property (nonatomic, retain) CoreDAVLeafItem *refreshInterval;
+@property (nonatomic, retain) CoreDAVItemWithHrefChildItem *subscriptionURL;
+@property (nonatomic, retain) CoreDAVItemWithHrefChildItem *tokenURL;
+@property (nonatomic, retain) CoreDAVLeafItem *xmppServer;
+@property (nonatomic, retain) CoreDAVLeafItem *xmppURI;
 
 + (id)copyParseRules;
 

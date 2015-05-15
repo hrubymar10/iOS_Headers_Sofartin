@@ -14,16 +14,16 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,copy) id _connBlock;
-@property(assign,readwrite) bool _isSharedSession;
-@property(assign,retain) NSURLSessionConfiguration * _local_immutable_configuration;
-@property(assign,copy) NSURLSessionConfiguration * configuration;
-@property(assign,retain) <NSURLSessionDelegate> * delegate;
-@property(assign,retain) NSOperationQueue * delegateQueue;
-@property(assign,readwrite) bool invalid;
-@property(assign,retain) NSOperationQueue * realDelegateQueue;
-@property(assign,copy) NSString * sessionDescription;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * workQueue;
+@property (copy) id _connBlock;
+@property bool _isSharedSession;
+@property (retain) NSURLSessionConfiguration *_local_immutable_configuration;
+@property (readonly, copy) NSURLSessionConfiguration *configuration;
+@property (retain) <NSURLSessionDelegate> *delegate;
+@property (retain) NSOperationQueue *delegateQueue;
+@property bool invalid;
+@property (retain) NSOperationQueue *realDelegateQueue;
+@property (copy) NSString *sessionDescription;
+@property NSObject<OS_dispatch_queue> *workQueue;
 
 + (void)_getActiveSessionIdentifiersWithCompletionHandler:(id)arg1;
 + (void)_obliterateAllBackgroundSessionsWithCompletionHandler:(id)arg1;

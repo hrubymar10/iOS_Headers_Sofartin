@@ -26,9 +26,9 @@
     bool _useLargeImages;
 }
 
-@property(assign,retain) NSObject<PLAlbumProtocol> * album;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,readwrite) int filter;
+@property (nonatomic, retain) NSObject<PLAlbumProtocol> *album;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic) int filter;
 
 - (id)_emptyRollImageForAlbum:(struct NSObject { Class x1; }*)arg1 interfaceOrientation:(long long)arg2;
 - (void)_longPressGesture:(id)arg1;

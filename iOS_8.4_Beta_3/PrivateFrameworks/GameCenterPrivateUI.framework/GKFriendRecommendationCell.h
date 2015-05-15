@@ -6,7 +6,7 @@
     UILabel *_reasonLabel;
 }
 
-@property(assign,retain) UILabel * reasonLabel;
+@property (nonatomic, retain) UILabel *reasonLabel;
 
 - (void)dealloc;
 - (void)didUpdateModel;

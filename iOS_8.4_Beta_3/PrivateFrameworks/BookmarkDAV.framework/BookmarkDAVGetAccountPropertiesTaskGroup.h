@@ -6,7 +6,7 @@
     NSSet *_bookmarkHomes;
 }
 
-@property(assign,readonly) NSSet * bookmarkHomes;
+@property (nonatomic, readonly) NSSet *bookmarkHomes;
 
 - (id)_copyAccountPropertiesPropFindElements;
 - (void)_setPropertiesFromParsedResponses:(id)arg1;

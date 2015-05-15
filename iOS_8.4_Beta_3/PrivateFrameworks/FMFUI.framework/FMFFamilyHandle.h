@@ -6,7 +6,7 @@
     NSNumber *_dsid;
 }
 
-@property(assign,copy) NSNumber * dsid;
+@property (nonatomic, copy) NSNumber *dsid;
 
 - (void).cxx_destruct;
 - (id)dsid;

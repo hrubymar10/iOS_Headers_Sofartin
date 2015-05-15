@@ -8,13 +8,13 @@
     NSString *_productURL;
 }
 
-@property(assign,readwrite) long long productPageStyle;
-@property(assign,readonly) long long productPageStyleAutomatic;
-@property(assign,readonly) long long productPageStyleBanner;
-@property(assign,readonly) long long productPageStylePad;
-@property(assign,readonly) long long productPageStylePhone;
-@property(assign,retain) WebScriptObject * productParameters;
-@property(assign,retain) NSString * productURL;
+@property long long productPageStyle;
+@property (readonly) long long productPageStyleAutomatic;
+@property (readonly) long long productPageStyleBanner;
+@property (readonly) long long productPageStylePad;
+@property (readonly) long long productPageStylePhone;
+@property (retain) WebScriptObject *productParameters;
+@property (retain) NSString *productURL;
 
 + (void)initialize;
 + (id)webScriptNameForKey:(const char *)arg1;

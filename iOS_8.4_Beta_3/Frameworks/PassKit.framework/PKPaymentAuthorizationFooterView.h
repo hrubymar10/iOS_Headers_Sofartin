@@ -16,9 +16,9 @@
     NSString *_title;
 }
 
-@property(assign,readwrite) PKPaymentAuthorizationLayout * layout;
-@property(assign,readonly) UIButton * payWithPasscodeButton;
-@property(assign,readwrite) long long state;
+@property (nonatomic) PKPaymentAuthorizationLayout *layout;
+@property (nonatomic, readonly) UIButton *payWithPasscodeButton;
+@property (nonatomic) long long state;
 
 - (void)_createSubviews;
 - (void)_prepareConstraints;

@@ -7,7 +7,7 @@
     NSMutableArray *_placeTypeInfoMap;
 }
 
-@property(assign,readwrite) bool isHome;
+@property (nonatomic) bool isHome;
 
 + (id)sortedAdditionalPlaceInfoComparator;
 

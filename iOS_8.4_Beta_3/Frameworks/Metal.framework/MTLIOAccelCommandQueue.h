@@ -7,7 +7,7 @@
     MTLIOAccelDevice<MTLDevice> *_device;
 }
 
-@property(assign,readonly) <MTLDevice> * device;
+@property (readonly) <MTLDevice> *device;
 
 - (void)dealloc;
 - (id)device;

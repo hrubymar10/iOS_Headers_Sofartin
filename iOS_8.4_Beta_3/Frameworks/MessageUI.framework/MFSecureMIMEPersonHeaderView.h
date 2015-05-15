@@ -12,12 +12,12 @@
     UIView *_warningLabel;
 }
 
-@property(assign,copy) NSArray * buttons;
-@property(assign,readwrite) bool editing;
-@property(assign,copy) NSString * explanationText;
-@property(assign,copy) NSString * secureLabelText;
-@property(assign,copy) NSString * signedLabelText;
-@property(assign,copy) NSString * warningLabelText;
+@property (nonatomic, copy) NSArray *buttons;
+@property (nonatomic) bool editing;
+@property (nonatomic, copy) NSString *explanationText;
+@property (nonatomic, copy) NSString *secureLabelText;
+@property (nonatomic, copy) NSString *signedLabelText;
+@property (nonatomic, copy) NSString *warningLabelText;
 
 + (id)_explanationLabelDefaultAttributes;
 

@@ -10,17 +10,17 @@
     } _nodeHandle;
 }
 
-@property(assign,readwrite) bool HTMLInputElementIsAutoFilled;
-@property(assign,readonly) bool HTMLInputElementIsUserEdited;
-@property(assign,readonly) WKWebProcessPlugInNodeHandle * HTMLTableCellElementCellAbove;
-@property(assign,readonly) bool HTMLTextAreaElementIsUserEdited;
-@property(assign,readonly) struct Object { int (**x1)(); id x2; }* _apiObject;
-@property(assign,readonly) struct InjectedBundleNodeHandle { int (**x1)(); id x2; struct RefPtr<WebCore::Node> { struct Node {} *x_3_1_1; } x3; }* _nodeHandle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } elementBounds;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool HTMLInputElementIsAutoFilled;
+@property (nonatomic, readonly) bool HTMLInputElementIsUserEdited;
+@property (nonatomic, readonly) WKWebProcessPlugInNodeHandle *HTMLTableCellElementCellAbove;
+@property (nonatomic, readonly) bool HTMLTextAreaElementIsUserEdited;
+@property (readonly) struct Object { int (**x1)(); id x2; }*_apiObject;
+@property (readonly) struct InjectedBundleNodeHandle { int (**x1)(); id x2; struct RefPtr<WebCore::Node> { struct Node {} *x_3_1_1; } x3; }*_nodeHandle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } elementBounds;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)nodeHandleWithJSValue:(id)arg1 inContext:(id)arg2;
 

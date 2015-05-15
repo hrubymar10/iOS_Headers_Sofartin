@@ -8,7 +8,7 @@
     bool mIsHigherPriority;
 }
 
-@property(assign,readwrite) TSPObject * delegate;
+@property (nonatomic) TSPObject *delegate;
 
 - (void)appendOperation:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

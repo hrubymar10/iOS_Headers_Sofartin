@@ -9,13 +9,13 @@
     NSDictionary *_options;
 }
 
-@property(assign,readonly) MPUExtrasContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) IKAppDocument * document;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool showsPlaceholder;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) MPUExtrasContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) IKAppDocument *document;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool showsPlaceholder;
+@property (readonly) Class superclass;
 
 + (id)templateViewControllerWithDocument:(id)arg1 options:(id)arg2 context:(id)arg3;
 

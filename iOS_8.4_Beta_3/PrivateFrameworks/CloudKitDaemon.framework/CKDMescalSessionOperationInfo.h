@@ -7,8 +7,8 @@
     CKDMescalSession *_session;
 }
 
-@property(assign,readwrite) int serverVersion;
-@property(assign,retain) CKDMescalSession * session;
+@property (nonatomic) int serverVersion;
+@property (nonatomic, retain) CKDMescalSession *session;
 
 - (void).cxx_destruct;
 - (int)serverVersion;

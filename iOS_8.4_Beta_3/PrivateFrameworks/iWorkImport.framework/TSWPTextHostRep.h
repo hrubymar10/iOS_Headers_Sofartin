@@ -9,14 +9,14 @@
     bool _useFindOverlayers;
 }
 
-@property(assign,retain) NSObject<TSKSearchReference> * activeSearchReference;
-@property(assign,readonly) NSObject<TSDContainerInfo> * containerInfo;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * searchReferences;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool useFindOverlayers;
+@property (nonatomic, retain) NSObject<TSKSearchReference> *activeSearchReference;
+@property (nonatomic, readonly) NSObject<TSDContainerInfo> *containerInfo;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *searchReferences;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool useFindOverlayers;
 
 - (id)activeSearchReference;
 - (void)addAdditionalChildLayersToArray:(id)arg1;

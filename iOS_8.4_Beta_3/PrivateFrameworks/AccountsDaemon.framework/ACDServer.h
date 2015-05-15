@@ -21,15 +21,15 @@
     ACRemoteDeviceProxy *_remoteDeviceProxy;
 }
 
-@property(assign,retain) ACDAccessPluginManager * accessPluginManager;
-@property(assign,retain) ACDAuthenticationDialogManager * authenticationDialogManager;
-@property(assign,retain) ACDAuthenticationPluginManager * authenticationPluginManager;
-@property(assign,retain) ACDDataclassOwnersManager * dataclassOwnersManager;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) ACRemoteDeviceProxy * remoteDeviceProxy;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) ACDAccessPluginManager *accessPluginManager;
+@property (nonatomic, retain) ACDAuthenticationDialogManager *authenticationDialogManager;
+@property (nonatomic, retain) ACDAuthenticationPluginManager *authenticationPluginManager;
+@property (nonatomic, retain) ACDDataclassOwnersManager *dataclassOwnersManager;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) ACRemoteDeviceProxy *remoteDeviceProxy;
+@property (readonly) Class superclass;
 
 + (id)sharedServer;
 

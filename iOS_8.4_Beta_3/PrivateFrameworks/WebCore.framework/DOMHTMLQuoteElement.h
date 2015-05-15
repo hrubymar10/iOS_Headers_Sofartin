@@ -4,7 +4,7 @@
 
 @interface DOMHTMLQuoteElement : DOMHTMLElement
 
-@property(assign,copy) NSString * cite;
+@property (copy) NSString *cite;
 
 - (id)cite;
 - (void)setCite:(id)arg1;

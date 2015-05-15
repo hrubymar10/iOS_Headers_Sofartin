@@ -7,8 +7,8 @@
     NSMutableDictionary *keychainItemData;
 }
 
-@property(assign,retain) NSMutableDictionary * genericPasswordQuery;
-@property(assign,retain) NSMutableDictionary * keychainItemData;
+@property (nonatomic, retain) NSMutableDictionary *genericPasswordQuery;
+@property (nonatomic, retain) NSMutableDictionary *keychainItemData;
 
 - (void)dealloc;
 - (id)dictionaryToSecItemFormat:(id)arg1;

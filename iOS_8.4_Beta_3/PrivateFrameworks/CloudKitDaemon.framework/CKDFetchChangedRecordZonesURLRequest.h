@@ -12,13 +12,13 @@
     long long _status;
 }
 
-@property(assign,readonly) NSArray * changedZoneIDs;
-@property(assign,readonly) NSArray * deletedZoneIDs;
-@property(assign,retain) NSData * previousServerChangeTokenData;
-@property(assign,retain) CKRecordZoneID * recordZoneID;
-@property(assign,readwrite) unsigned long long resultsLimit;
-@property(assign,retain) NSData * serverChangeTokenData;
-@property(assign,readwrite) long long status;
+@property (nonatomic, readonly) NSArray *changedZoneIDs;
+@property (nonatomic, readonly) NSArray *deletedZoneIDs;
+@property (nonatomic, retain) NSData *previousServerChangeTokenData;
+@property (nonatomic, retain) CKRecordZoneID *recordZoneID;
+@property (nonatomic) unsigned long long resultsLimit;
+@property (nonatomic, retain) NSData *serverChangeTokenData;
+@property (nonatomic) long long status;
 
 - (void).cxx_destruct;
 - (id)changedZoneIDs;

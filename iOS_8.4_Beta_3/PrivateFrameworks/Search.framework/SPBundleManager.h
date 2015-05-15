@@ -8,7 +8,7 @@
     NSArray *_searchBundles;
 }
 
-@property(assign,readonly) NSArray * searchBundles;
+@property (nonatomic, readonly) NSArray *searchBundles;
 
 + (id)sharedManager;
 

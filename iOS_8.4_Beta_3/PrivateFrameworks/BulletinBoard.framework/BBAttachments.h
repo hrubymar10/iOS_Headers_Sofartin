@@ -8,9 +8,9 @@
     long long primaryType;
 }
 
-@property(assign,retain) NSCountedSet * additionalAttachments;
-@property(assign,retain) NSMutableDictionary * clientSideComposedImageInfos;
-@property(assign,readwrite) long long primaryType;
+@property (nonatomic, retain) NSCountedSet *additionalAttachments;
+@property (nonatomic, retain) NSMutableDictionary *clientSideComposedImageInfos;
+@property (nonatomic) long long primaryType;
 
 + (bool)supportsSecureCoding;
 

@@ -16,17 +16,17 @@
     NSString *_xmlAttribute;
 }
 
-@property(assign,readonly) bool bubbles;
-@property(assign,readonly) bool cancelable;
-@property(assign,retain) IKDOMNode * currentTarget;
-@property(assign,readwrite) bool defaultPrevented;
-@property(assign,readwrite) long long dispatchState;
-@property(assign,readwrite) long long eventPhase;
-@property(getter=isInUse,assign,readwrite) bool inUse;
-@property(assign,retain) IKDOMNode * target;
-@property(assign,readonly) NSDate * timeStamp;
-@property(assign,retain) NSString * type;
-@property(assign,retain) NSString * xmlAttribute;
+@property (nonatomic, readonly) bool bubbles;
+@property (nonatomic, readonly) bool cancelable;
+@property (nonatomic, retain) IKDOMNode *currentTarget;
+@property (nonatomic) bool defaultPrevented;
+@property (nonatomic) long long dispatchState;
+@property (nonatomic) long long eventPhase;
+@property (getter=isInUse, nonatomic) bool inUse;
+@property (nonatomic, retain) IKDOMNode *target;
+@property (nonatomic, readonly) NSDate *timeStamp;
+@property (nonatomic, readonly, retain) NSString *type;
+@property (nonatomic, readonly, retain) NSString *xmlAttribute;
 
 - (void).cxx_destruct;
 - (bool)bubbles;

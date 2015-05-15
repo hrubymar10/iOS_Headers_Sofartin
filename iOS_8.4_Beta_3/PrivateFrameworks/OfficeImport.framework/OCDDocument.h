@@ -14,14 +14,14 @@
     OCDWriter *mWriter;
 }
 
-@property(assign,readonly) OADBlipCollection * blips;
-@property(assign,readonly) NSMutableArray * charts;
-@property(assign,readonly) OADTextListStyle * defaultTextStyle;
-@property(assign,readonly) OITSUPointerKeyDictionary * dualDrawableMap;
-@property(assign,retain) OADGraphicStyleCache * graphicStyleCache;
-@property(assign,retain) OCDReader * reader;
-@property(assign,readonly) OCDSummary * summary;
-@property(assign,retain) OCDWriter * writer;
+@property (nonatomic, readonly) OADBlipCollection *blips;
+@property (nonatomic, readonly) NSMutableArray *charts;
+@property (nonatomic, readonly) OADTextListStyle *defaultTextStyle;
+@property (nonatomic, readonly) OITSUPointerKeyDictionary *dualDrawableMap;
+@property (nonatomic, retain) OADGraphicStyleCache *graphicStyleCache;
+@property (nonatomic, retain) OCDReader *reader;
+@property (nonatomic, readonly) OCDSummary *summary;
+@property (nonatomic, retain) OCDWriter *writer;
 
 - (id)blips;
 - (id)charts;

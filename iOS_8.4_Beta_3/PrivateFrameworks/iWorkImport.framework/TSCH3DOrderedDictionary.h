@@ -7,7 +7,7 @@
     NSMutableDictionary *mStore;
 }
 
-@property(assign,readonly) unsigned long long count;
+@property (nonatomic, readonly) unsigned long long count;
 
 + (id)dictionary;
 + (id)dictionaryWithMutableDictionaryStore:(id)arg1;

@@ -8,9 +8,9 @@
     NSString *_text;
 }
 
-@property(assign,retain) UIColor * labelColor;
-@property(assign,retain) id location;
-@property(assign,retain) NSString * text;
+@property (nonatomic, retain) UIColor *labelColor;
+@property (nonatomic, retain) id location;
+@property (nonatomic, retain) NSString *text;
 
 - (void).cxx_destruct;
 - (id)description;

@@ -14,15 +14,15 @@
     NSString *_name;
 }
 
-@property(assign,readwrite) unsigned long long bufferOffset;
-@property(assign,readonly) unsigned int bufferUsage;
-@property(assign,readonly) int componentCount;
-@property(assign,readwrite) TSDGLDataArrayBuffer * dataArrayBuffer;
-@property(assign,readwrite) TSDGLDataBuffer * dataBuffer;
-@property(assign,readonly) long long dataType;
-@property(assign,readonly) bool isNormalized;
-@property(assign,readwrite) int locationInShader;
-@property(assign,copy) NSString * name;
+@property (nonatomic) unsigned long long bufferOffset;
+@property (nonatomic, readonly) unsigned int bufferUsage;
+@property (nonatomic, readonly) int componentCount;
+@property (nonatomic) TSDGLDataArrayBuffer *dataArrayBuffer;
+@property (nonatomic) TSDGLDataBuffer *dataBuffer;
+@property (nonatomic, readonly) long long dataType;
+@property (nonatomic, readonly) bool isNormalized;
+@property (nonatomic) int locationInShader;
+@property (nonatomic, copy) NSString *name;
 
 + (id)attributeWithName:(id)arg1 bufferUsage:(unsigned int)arg2 dataType:(long long)arg3 normalized:(bool)arg4 componentCount:(unsigned long long)arg5;
 

@@ -9,10 +9,10 @@
     struct __CFArray { } *_properties;
 }
 
-@property(assign,readwrite) void* addressBook;
-@property(assign,retain) ABUIPerson * person;
-@property(assign,retain) NSArray * policies;
-@property(assign,readwrite) struct __CFArray { }* properties;
+@property (nonatomic) void*addressBook;
+@property (nonatomic, retain) ABUIPerson *person;
+@property (nonatomic, retain) NSArray *policies;
+@property (nonatomic) struct __CFArray { }*properties;
 
 - (void)_getRotationContentSettings:(struct { bool x1; bool x2; bool x3; bool x4; bool x5; double x6; int x7; }*)arg1;
 - (double)ab_heightToFitForViewInPopoverView;

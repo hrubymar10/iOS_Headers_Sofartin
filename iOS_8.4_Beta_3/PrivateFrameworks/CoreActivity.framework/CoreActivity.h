@@ -11,12 +11,12 @@
     StepHandler *_stepHandler;
 }
 
-@property(assign,retain) ActivityCounts * aCounts;
-@property(assign,readwrite) int accelRate;
-@property(assign,retain) CMMotionManager * motionManager;
-@property(assign,retain) NSOperationQueue * opQueue;
-@property(assign,readwrite) bool pedometerIsOn;
-@property(assign,retain) StepHandler * stepHandler;
+@property (nonatomic, retain) ActivityCounts *aCounts;
+@property (nonatomic) int accelRate;
+@property (nonatomic, retain) CMMotionManager *motionManager;
+@property (nonatomic, retain) NSOperationQueue *opQueue;
+@property (nonatomic) bool pedometerIsOn;
+@property (nonatomic, retain) StepHandler *stepHandler;
 
 + (int)activityCountThresholdForActivityLevel:(int)arg1 epochDuration:(int)arg2;
 

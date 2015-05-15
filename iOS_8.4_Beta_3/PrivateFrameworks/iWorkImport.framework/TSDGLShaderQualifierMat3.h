@@ -21,8 +21,8 @@
     } _proposedAffineTransform;
 }
 
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } affineTransform;
-@property(assign,readwrite) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } proposedAffineTransform;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } affineTransform;
+@property (nonatomic) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } proposedAffineTransform;
 
 - (struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; })affineTransform;
 - (id)description;

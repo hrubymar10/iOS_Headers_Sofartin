@@ -18,13 +18,13 @@
     NSSet *_versionIdentifiers;
 }
 
-@property(assign,readonly) NSArray * configurations;
-@property(assign,retain) NSArray * entities;
-@property(assign,copy) NSDictionary * entitiesByName;
-@property(assign,copy) NSDictionary * entityVersionHashesByName;
-@property(assign,copy) NSDictionary * fetchRequestTemplatesByName;
-@property(assign,retain) NSDictionary * localizationDictionary;
-@property(assign,copy) NSSet * versionIdentifiers;
+@property (readonly) NSArray *configurations;
+@property (retain) NSArray *entities;
+@property (readonly, copy) NSDictionary *entitiesByName;
+@property (readonly, copy) NSDictionary *entityVersionHashesByName;
+@property (readonly, copy) NSDictionary *fetchRequestTemplatesByName;
+@property (retain) NSDictionary *localizationDictionary;
+@property (copy) NSSet *versionIdentifiers;
 
 + (void)_deepCollectEntitiesInArray:(id)arg1 entity:(id)arg2;
 + (id)_modelPathsFromBundles:(id)arg1;

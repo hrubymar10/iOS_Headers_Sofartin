@@ -7,7 +7,7 @@
     id _completionBlock;
 }
 
-@property(assign,readwrite) long long animationType;
+@property (nonatomic) long long animationType;
 
 - (void).cxx_destruct;
 - (void)_setCompletionBlock:(id)arg1;

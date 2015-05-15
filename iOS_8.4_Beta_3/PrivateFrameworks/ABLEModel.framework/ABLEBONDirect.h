@@ -7,8 +7,8 @@
     ABLEStaticMapInclusiveDomainVectorRange *_bonDoubleMap;
 }
 
-@property(assign,readonly) NSArray * bonArray;
-@property(assign,retain) ABLEStaticMapInclusiveDomainVectorRange * bonDoubleMap;
+@property (readonly) NSArray *bonArray;
+@property (retain) ABLEStaticMapInclusiveDomainVectorRange *bonDoubleMap;
 
 + (id)bonDirect;
 + (id)bonDirectWithArray:(id)arg1;

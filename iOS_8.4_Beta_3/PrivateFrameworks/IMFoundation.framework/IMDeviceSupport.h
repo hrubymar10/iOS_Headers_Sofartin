@@ -10,12 +10,12 @@
     NSString *_productVersion;
 }
 
-@property(assign,readonly) NSString * deviceInformationString;
-@property(assign,readonly) NSString * model;
-@property(assign,readonly) NSString * productBuildVersion;
-@property(assign,readonly) NSString * productName;
-@property(assign,readonly) NSString * productVersion;
-@property(assign,readonly) NSString * userAgentString;
+@property (nonatomic, readonly) NSString *deviceInformationString;
+@property (nonatomic, readonly) NSString *model;
+@property (nonatomic, readonly) NSString *productBuildVersion;
+@property (nonatomic, readonly) NSString *productName;
+@property (nonatomic, readonly) NSString *productVersion;
+@property (nonatomic, readonly) NSString *userAgentString;
 
 + (id)marketingNameForModel:(id)arg1;
 + (id)sharedInstance;

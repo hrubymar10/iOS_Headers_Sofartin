@@ -7,12 +7,12 @@
     NSError *_parserError;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableData * octetStreamData;
-@property(assign,readonly) NSError * parserError;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableData *octetStreamData;
+@property (readonly) NSError *parserError;
+@property (readonly) Class superclass;
 
 + (bool)canHandleContentType:(id)arg1;
 

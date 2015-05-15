@@ -27,29 +27,29 @@
     <_MKResultViewDelegate> *delegate;
 }
 
-@property(assign,readwrite) bool alwaysUsesBusinessLayout;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <_MKResultViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double fallbackDistance;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int iconFormat;
-@property(assign,retain) UIImageView * imageView;
-@property(assign,retain) MKMapItem * mapItem;
-@property(assign,retain) NSArray * mapItems;
-@property(assign,retain) UILabel * nameLabel;
-@property(assign,readonly) double preferredHeight;
-@property(assign,retain) NSString * primaryLabelText;
-@property(assign,retain) UIColor * primaryTextColor;
-@property(assign,retain) CLLocation * referenceLocation;
-@property(assign,retain) UILabel * secondaryLabel;
-@property(assign,retain) NSString * secondaryLabelText;
-@property(assign,retain) UIColor * secondaryTextColor;
-@property(assign,readwrite) bool selected;
-@property(assign,readwrite) bool showsDistance;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UILabel * tertiaryLabel;
-@property(assign,readwrite) bool useSpotlightVibrancy;
+@property (nonatomic) bool alwaysUsesBusinessLayout;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <_MKResultViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double fallbackDistance;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int iconFormat;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, retain) MKMapItem *mapItem;
+@property (nonatomic, retain) NSArray *mapItems;
+@property (nonatomic, retain) UILabel *nameLabel;
+@property (nonatomic, readonly) double preferredHeight;
+@property (nonatomic, retain) NSString *primaryLabelText;
+@property (nonatomic, retain) UIColor *primaryTextColor;
+@property (nonatomic, retain) CLLocation *referenceLocation;
+@property (nonatomic, retain) UILabel *secondaryLabel;
+@property (nonatomic, retain) NSString *secondaryLabelText;
+@property (nonatomic, retain) UIColor *secondaryTextColor;
+@property (nonatomic) bool selected;
+@property (nonatomic) bool showsDistance;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UILabel *tertiaryLabel;
+@property (nonatomic) bool useSpotlightVibrancy;
 
 + (bool)requiresConstraintBasedLayout;
 

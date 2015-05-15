@@ -7,8 +7,8 @@
     long long _stationID;
 }
 
-@property(assign,copy) NSString * stationHash;
-@property(assign,readwrite) long long stationID;
+@property (nonatomic, copy) NSString *stationHash;
+@property (nonatomic) long long stationID;
 
 - (void).cxx_destruct;
 - (unsigned long long)hash;

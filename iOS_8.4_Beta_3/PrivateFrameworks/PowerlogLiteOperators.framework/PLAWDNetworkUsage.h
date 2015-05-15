@@ -9,12 +9,12 @@
     NSTimer *_snapshotTimer;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * nameConnectionCallback;
-@property(assign,retain) PLEntryNotificationOperatorComposition * netEventCallback;
-@property(assign,readwrite) unsigned int netState;
-@property(assign,readwrite) PLOperator * operator;
-@property(assign,retain) NSMutableSet * runningMetrics;
-@property(assign,retain) NSTimer * snapshotTimer;
+@property (retain) PLEntryNotificationOperatorComposition *nameConnectionCallback;
+@property (retain) PLEntryNotificationOperatorComposition *netEventCallback;
+@property unsigned int netState;
+@property PLOperator *operator;
+@property (nonatomic, retain) NSMutableSet *runningMetrics;
+@property (retain) NSTimer *snapshotTimer;
 
 + (id)entryAggregateDefinitions;
 + (id)entryEventPointDefinitions;

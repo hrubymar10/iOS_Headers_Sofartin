@@ -56,10 +56,10 @@
     PLMomentAnalyzerQueue *_yearMomentProcessingQueue;
 }
 
-@property(assign,retain) CLLocation * _homeLocation;
-@property(assign,retain) <PLMomentGenerationDataManagement> * _momentDataManager;
-@property(assign,readwrite) <PLMomentGenerationDataManagement> * momentGenerationDataManager;
-@property(assign,readwrite) bool throttlesCollectionListAnalysis;
+@property (nonatomic, readonly, retain) CLLocation *_homeLocation;
+@property (nonatomic, readonly, retain) <PLMomentGenerationDataManagement> *_momentDataManager;
+@property (nonatomic) <PLMomentGenerationDataManagement> *momentGenerationDataManager;
+@property bool throttlesCollectionListAnalysis;
 
 - (void)_addOrUpdateNameInfo:(id)arg1 inPlaceInfoMap:(id)arg2;
 - (void)_addRevGeoPlacesAndUserTitlesFromAssets:(id)arg1 toPlacesArray:(id)arg2 toMomentTitles:(id)arg3 toCollectionTitles:(id)arg4;

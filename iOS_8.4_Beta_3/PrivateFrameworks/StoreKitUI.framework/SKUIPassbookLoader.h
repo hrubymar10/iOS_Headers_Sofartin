@@ -9,12 +9,12 @@
     NSOperationQueue *_operationQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIPassbookLoaderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIPassbookLoaderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_didLoadWithPass:(id)arg1 error:(id)arg2;

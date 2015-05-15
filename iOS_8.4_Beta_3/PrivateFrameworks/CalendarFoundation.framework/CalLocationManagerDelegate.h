@@ -10,13 +10,13 @@
     NSObject<OS_dispatch_source> *_timer;
 }
 
-@property(assign,copy) id completionBlock;
-@property(assign,retain) CLLocation * currentLocation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didFinish;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (copy) id completionBlock;
+@property (retain) CLLocation *currentLocation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property bool didFinish;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)completionBlock;

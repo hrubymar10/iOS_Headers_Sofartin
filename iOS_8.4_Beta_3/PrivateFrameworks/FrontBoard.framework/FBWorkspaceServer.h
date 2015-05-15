@@ -13,7 +13,7 @@
     bool _triedToSendMessageInTransaction;
 }
 
-@property(assign,readwrite) <FBWorkspaceServerDelegate> * delegate;
+@property (nonatomic) <FBWorkspaceServerDelegate> *delegate;
 
 - (id)_handlerForSceneID:(id)arg1;
 - (id)_queue;

@@ -52,14 +52,14 @@
     } vpioFormat;
 }
 
-@property(assign,readwrite) int clientPID;
-@property(getter=isSpeakerPhoneEnabled,assign,readwrite) bool enableSpeakerPhone;
-@property(assign,readwrite) bool isGKVoiceChat;
-@property(assign,readwrite) bool isUsingSuppression;
-@property(getter=isMicrophoneMuted,assign,readwrite) bool microphoneMuted;
-@property(assign,readwrite) bool shouldSetupAudioSession;
-@property(assign,retain) LTEAudioDevice * targetInputDevice;
-@property(assign,readonly) bool usingFloat;
+@property (nonatomic) int clientPID;
+@property (getter=isSpeakerPhoneEnabled) bool enableSpeakerPhone;
+@property (nonatomic) bool isGKVoiceChat;
+@property (nonatomic) bool isUsingSuppression;
+@property (getter=isMicrophoneMuted, nonatomic) bool microphoneMuted;
+@property bool shouldSetupAudioSession;
+@property (retain) LTEAudioDevice *targetInputDevice;
+@property (nonatomic, readonly) bool usingFloat;
 
 + (id)defaultLTEAudioManager;
 

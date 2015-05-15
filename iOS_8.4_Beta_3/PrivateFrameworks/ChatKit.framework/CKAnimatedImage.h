@@ -7,9 +7,9 @@
     UIImage *_image;
 }
 
-@property(assign,copy) NSArray * durations;
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, copy) NSArray *durations;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
 
 + (id)animatedImageWithContentsOfCPBitmapURL:(id)arg1;
 

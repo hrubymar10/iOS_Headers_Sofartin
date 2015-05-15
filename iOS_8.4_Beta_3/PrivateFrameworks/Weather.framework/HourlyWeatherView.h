@@ -15,12 +15,12 @@
     long long _viewSize;
 }
 
-@property(assign,copy) UIView * centerView;
-@property(assign,readwrite) bool disableCenterViewOffset;
-@property(assign,readwrite) bool drawCurrentTime;
-@property(assign,readonly) unsigned int hour;
-@property(assign,readonly) unsigned int minutes;
-@property(assign,copy) NSArray * outerViews;
+@property (nonatomic, readonly, copy) UIView *centerView;
+@property (nonatomic) bool disableCenterViewOffset;
+@property (nonatomic) bool drawCurrentTime;
+@property (nonatomic, readonly) unsigned int hour;
+@property (nonatomic, readonly) unsigned int minutes;
+@property (nonatomic, readonly, copy) NSArray *outerViews;
 
 + (id)lookupHourlyConditionGlyph:(long long)arg1;
 

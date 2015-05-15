@@ -7,11 +7,11 @@
     UIView *_plusDView;
 }
 
-@property(assign,readwrite) double cornerRadius;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property double cornerRadius;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_blendingPressedView;
 + (id)_blendingSeparatorView;

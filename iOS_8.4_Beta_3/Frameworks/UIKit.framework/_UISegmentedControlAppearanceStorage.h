@@ -19,7 +19,7 @@
     NSMutableDictionary *_textAttributesForState;
 }
 
-@property(assign,retain) UIImage * optionsBackgroundImage;
+@property (nonatomic, retain) UIImage *optionsBackgroundImage;
 
 - (id)anyDividerImage;
 - (id)anyDividerImageForMini:(bool)arg1;

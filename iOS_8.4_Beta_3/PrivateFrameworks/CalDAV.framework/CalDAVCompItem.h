@@ -6,7 +6,7 @@
     NSString *_nameAttribute;
 }
 
-@property(assign,retain) NSString * nameAttribute;
+@property (nonatomic, retain) NSString *nameAttribute;
 
 - (void)dealloc;
 - (id)init;

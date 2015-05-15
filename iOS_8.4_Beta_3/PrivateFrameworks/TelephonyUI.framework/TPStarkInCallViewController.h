@@ -18,23 +18,23 @@
     NSTimer *_viewUpdateClockTickTimer;
 }
 
-@property(assign,retain) TPStarkInCallButtonsView * buttonsView;
-@property(assign,retain) TUCall * callToDecline;
-@property(assign,copy) NSArray * conferenceParticipants;
-@property(assign,readwrite) unsigned short currentMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <TPStarkInCallViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) TUCall * failedCall;
-@property(assign,retain) UIView * flippyView;
-@property(assign,retain) TPStarkPhoneCallGalleryView * galleryView;
-@property(assign,retain) TPStarkInCallHardPauseButton * hardPauseButton;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) TUCall * incomingPhoneCall;
-@property(assign,readonly) bool isDismissable;
-@property(assign,copy) NSArray * primaryPhoneCalls;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSTimer * viewUpdateClockTickTimer;
+@property (retain) TPStarkInCallButtonsView *buttonsView;
+@property (retain) TUCall *callToDecline;
+@property (copy) NSArray *conferenceParticipants;
+@property unsigned short currentMode;
+@property (readonly, copy) NSString *debugDescription;
+@property <TPStarkInCallViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (retain) TUCall *failedCall;
+@property (retain) UIView *flippyView;
+@property (retain) TPStarkPhoneCallGalleryView *galleryView;
+@property (retain) TPStarkInCallHardPauseButton *hardPauseButton;
+@property (readonly) unsigned long long hash;
+@property (retain) TUCall *incomingPhoneCall;
+@property (readonly) bool isDismissable;
+@property (copy) NSArray *primaryPhoneCalls;
+@property (readonly) Class superclass;
+@property (retain) NSTimer *viewUpdateClockTickTimer;
 
 - (id)__sanitizedPrimaryPhoneCallOrdering:(id)arg1;
 - (void)_invalidateIntrinsicContentSizeForLabelsInView:(id)arg1;

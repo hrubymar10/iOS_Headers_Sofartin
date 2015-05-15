@@ -15,17 +15,17 @@
     unsigned int _tileGroupIdentifier;
 }
 
-@property(assign,copy) NSString * applicationIdentifier;
-@property(assign,copy) NSString * applicationVersion;
-@property(assign,copy) NSString * countryCode;
-@property(assign,copy) NSString * dataDirectory;
-@property(assign,readonly) NSString * directorySuffix;
-@property(assign,copy) NSString * environment;
-@property(assign,copy) NSString * hardwareIdentifier;
-@property(assign,copy) NSString * os;
-@property(assign,copy) NSString * osBuild;
-@property(assign,copy) NSString * osVersion;
-@property(assign,readwrite) unsigned int tileGroupIdentifier;
+@property (nonatomic, copy) NSString *applicationIdentifier;
+@property (nonatomic, copy) NSString *applicationVersion;
+@property (nonatomic, copy) NSString *countryCode;
+@property (nonatomic, copy) NSString *dataDirectory;
+@property (nonatomic, readonly) NSString *directorySuffix;
+@property (nonatomic, copy) NSString *environment;
+@property (nonatomic, copy) NSString *hardwareIdentifier;
+@property (nonatomic, copy) NSString *os;
+@property (nonatomic, copy) NSString *osBuild;
+@property (nonatomic, copy) NSString *osVersion;
+@property (nonatomic) unsigned int tileGroupIdentifier;
 
 - (id)applicationIdentifier;
 - (id)applicationVersion;

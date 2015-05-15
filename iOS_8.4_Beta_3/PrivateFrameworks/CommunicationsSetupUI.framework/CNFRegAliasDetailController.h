@@ -10,8 +10,8 @@
     NSArray *_resendValidationSpecifierGroup;
 }
 
-@property(assign,copy) id alertHandler;
-@property(assign,retain) CNFRegAlias * alias;
+@property (nonatomic, copy) id alertHandler;
+@property (nonatomic, retain) CNFRegAlias *alias;
 
 - (void)_buildSpecifierCache:(id)arg1;
 - (void)_setupEventHandlers;

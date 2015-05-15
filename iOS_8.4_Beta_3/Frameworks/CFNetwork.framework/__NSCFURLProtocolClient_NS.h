@@ -9,10 +9,10 @@
     struct URLProtocol { int (**x1)(); int (**x2)(); struct CoreSchedulingSet {} *x3; double x4; unsigned char x5; unsigned char x6; unsigned char x7; unsigned char x8; unsigned char x9; unsigned char x10; unsigned char x11; unsigned char x12; long long x13; long long x14; long long x15; unsigned char x16; int x17; long long x18; id x19; struct URLProtocolClient {} *x20; struct _CFCachedURLResponse {} *x21; } *_prot;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)URLProtocol:(id)arg1 cachedResponseIsValid:(id)arg2;
 - (void)URLProtocol:(id)arg1 didCancelAuthenticationChallenge:(id)arg2;

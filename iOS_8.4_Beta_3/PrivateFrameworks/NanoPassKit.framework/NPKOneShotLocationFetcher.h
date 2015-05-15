@@ -8,13 +8,13 @@
     CLLocationManager *_locationManager;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_source> * locationFixTimeout;
-@property(assign,retain) CLLocationManager * locationManager;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id completionHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *locationFixTimeout;
+@property (nonatomic, retain) CLLocationManager *locationManager;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_finishLocationFixWithLocation:(id)arg1;

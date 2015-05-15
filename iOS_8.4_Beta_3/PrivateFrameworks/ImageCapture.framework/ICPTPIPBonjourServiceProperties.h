@@ -18,18 +18,18 @@
     NSDictionary *_txtRecordsDict;
 }
 
-@property(assign,retain) NSMutableArray * clients;
-@property(assign,readwrite) int clientsSpinLock;
-@property(assign,readwrite) id delegate;
-@property(assign,retain) NSString * hostGUID;
-@property(assign,readwrite) unsigned int hostMaxConnections;
-@property(assign,retain) NSString * hostName;
-@property(assign,readwrite) unsigned short hostPort;
-@property(assign,readwrite) int hostSecurityLevel;
-@property(assign,readwrite) struct __CFSocket { }* hostSocket;
-@property(assign,readwrite) struct __CFNetService { }* publishedService;
-@property(assign,retain) NSString * serviceType;
-@property(assign,retain) NSDictionary * txtRecordsDict;
+@property (retain) NSMutableArray *clients;
+@property int clientsSpinLock;
+@property id delegate;
+@property (retain) NSString *hostGUID;
+@property unsigned int hostMaxConnections;
+@property (retain) NSString *hostName;
+@property unsigned short hostPort;
+@property int hostSecurityLevel;
+@property struct __CFSocket { }*hostSocket;
+@property struct __CFNetService { }*publishedService;
+@property (retain) NSString *serviceType;
+@property (retain) NSDictionary *txtRecordsDict;
 
 - (id)clients;
 - (int)clientsSpinLock;

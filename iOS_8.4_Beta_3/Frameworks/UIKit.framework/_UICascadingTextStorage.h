@@ -6,14 +6,14 @@
     NSMutableDictionary *_defaultAttributes;
 }
 
-@property(assign,copy) NSDictionary * defaultAttributes;
-@property(assign,retain) UIFont * font;
-@property(assign,readwrite) long long lineBreakMode;
-@property(assign,readwrite) double shadowBlur;
-@property(assign,retain) UIColor * shadowColor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } shadowOffset;
-@property(assign,readwrite) long long textAlignment;
-@property(assign,retain) UIColor * textColor;
+@property (nonatomic, copy) NSDictionary *defaultAttributes;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic) long long lineBreakMode;
+@property (nonatomic) double shadowBlur;
+@property (nonatomic, retain) UIColor *shadowColor;
+@property (nonatomic) struct CGSize { double x1; double x2; } shadowOffset;
+@property (nonatomic) long long textAlignment;
+@property (nonatomic, retain) UIColor *textColor;
 
 + (id)defaultFont;
 

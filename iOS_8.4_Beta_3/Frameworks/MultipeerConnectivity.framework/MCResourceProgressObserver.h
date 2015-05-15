@@ -8,9 +8,9 @@
     NSProgress *_progress;
 }
 
-@property(assign,copy) id cancelHandler;
-@property(assign,copy) NSString * name;
-@property(assign,retain) NSProgress * progress;
+@property (nonatomic, copy) id cancelHandler;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) NSProgress *progress;
 
 - (id)cancelHandler;
 - (void)dealloc;

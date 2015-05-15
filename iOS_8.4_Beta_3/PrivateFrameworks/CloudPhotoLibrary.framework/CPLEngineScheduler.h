@@ -22,13 +22,13 @@
     NSDate *_unavailabilityLimitDate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) CPLEngineLibrary * engineLibrary;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readonly) bool shouldDoSecondNormalPullPhase;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) CPLEngineLibrary *engineLibrary;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (nonatomic, readonly) bool shouldDoSecondNormalPullPhase;
+@property (readonly) Class superclass;
 
 + (id)platformImplementationProtocol;
 

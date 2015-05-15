@@ -4,8 +4,8 @@
 
 @interface TPPaginatedPageInfo : TPPageInfo
 
-@property(assign,readonly) NSArray * floatingDrawableInfos;
-@property(assign,readonly) bool isDocumentSetupPage;
+@property (nonatomic, readonly) NSArray *floatingDrawableInfos;
+@property (nonatomic, readonly) bool isDocumentSetupPage;
 
 - (id)floatingDrawableInfos;
 - (bool)isDocumentSetupPage;

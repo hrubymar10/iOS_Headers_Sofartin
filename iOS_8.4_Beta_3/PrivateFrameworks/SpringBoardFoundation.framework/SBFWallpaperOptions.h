@@ -20,13 +20,13 @@
     double _zoomScale;
 }
 
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cropRect;
-@property(assign,readonly) bool isPortrait;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) bool parallaxEnabled;
-@property(assign,readonly) double parallaxFactor;
-@property(assign,readonly) bool supportsCropping;
-@property(assign,readonly) double zoomScale;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cropRect;
+@property (nonatomic, readonly) bool isPortrait;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly) bool parallaxEnabled;
+@property (nonatomic, readonly) double parallaxFactor;
+@property (nonatomic, readonly) bool supportsCropping;
+@property (nonatomic, readonly) double zoomScale;
 
 + (id)optionsWithName:(id)arg1 parallaxFactor:(double)arg2 zoomScale:(double)arg3 supportsCropping:(bool)arg4 cropRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg5 portrait:(bool)arg6;
 

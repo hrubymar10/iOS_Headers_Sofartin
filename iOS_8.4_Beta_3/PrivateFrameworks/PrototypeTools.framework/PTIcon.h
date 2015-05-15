@@ -23,14 +23,14 @@
     NSString *_title;
 }
 
-@property(assign,retain) _UILegibilityView * iconLegibilityView;
-@property(assign,retain) PTIconSettings * iconSettings;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) struct { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; } imageStatistics;
-@property(assign,retain) UIImageView * imageView;
-@property(assign,retain) _UILegibilityLabel * label;
-@property(assign,readwrite) struct __CFRunLoopObserver { }* runLoopObserver;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) _UILegibilityView *iconLegibilityView;
+@property (nonatomic, retain) PTIconSettings *iconSettings;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) struct { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; } imageStatistics;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, retain) _UILegibilityLabel *label;
+@property (nonatomic) struct __CFRunLoopObserver { }*runLoopObserver;
+@property (nonatomic, copy) NSString *title;
 
 + (id)iconWithImage:(id)arg1 title:(id)arg2;
 + (id)iconWithImageName:(id)arg1 title:(id)arg2;

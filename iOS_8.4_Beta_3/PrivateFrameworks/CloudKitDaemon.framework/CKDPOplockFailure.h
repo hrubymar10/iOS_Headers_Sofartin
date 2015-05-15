@@ -6,8 +6,8 @@
     CKDPRecord *_recordForOplockFailure;
 }
 
-@property(assign,readonly) bool hasRecordForOplockFailure;
-@property(assign,retain) CKDPRecord * recordForOplockFailure;
+@property (nonatomic, readonly) bool hasRecordForOplockFailure;
+@property (nonatomic, retain) CKDPRecord *recordForOplockFailure;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

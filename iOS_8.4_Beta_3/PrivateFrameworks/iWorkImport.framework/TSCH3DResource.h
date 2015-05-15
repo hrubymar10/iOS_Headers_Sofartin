@@ -19,13 +19,13 @@
     int mUpdate;
 }
 
-@property(assign,readonly) TSCH3DDataBuffer * buffer;
-@property(assign,readonly) struct DataBufferInfo { int x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; unsigned long long x5; unsigned long long x6; } bufferInfo;
-@property(assign,readwrite) int caching;
-@property(assign,readwrite) bool changed;
-@property(assign,readonly) bool isTexturable;
-@property(assign,readonly) unsigned long long uniqueIdentifier;
-@property(assign,readwrite) int update;
+@property (nonatomic, readonly) TSCH3DDataBuffer *buffer;
+@property (nonatomic, readonly) struct DataBufferInfo { int x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; unsigned long long x5; unsigned long long x6; } bufferInfo;
+@property (nonatomic) int caching;
+@property (nonatomic) bool changed;
+@property (nonatomic, readonly) bool isTexturable;
+@property (nonatomic, readonly) unsigned long long uniqueIdentifier;
+@property (nonatomic) int update;
 
 + (unsigned long long)allocateResourceUniqueIdentifier;
 + (void)deallocateResourceUniqueIdentifier:(unsigned long long)arg1;

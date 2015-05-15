@@ -14,13 +14,13 @@
     long long _savedStatusBarStyle;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CKSMSComposeRemoteViewController * remoteViewController;
-@property(assign,retain) CKSMSComposeQueuingRemoteViewControllerProxy * remoteViewControllerProxy;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) id delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CKSMSComposeRemoteViewController *remoteViewController;
+@property (nonatomic, retain) CKSMSComposeQueuingRemoteViewControllerProxy *remoteViewControllerProxy;
+@property (readonly) Class superclass;
 
 + (bool)acceptsMIMEType:(id)arg1;
 + (bool)canSendPhotos:(int)arg1 videos:(int)arg2 audioClips:(int)arg3;

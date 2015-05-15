@@ -14,16 +14,16 @@
     bool _waitingForAdSheet;
 }
 
-@property(assign,readwrite) <ADAdSheetProxyDelegate> * delegate;
-@property(assign,readwrite) double lastLaunchTimestamp;
-@property(assign,retain) NSMutableSet * launchAssertions;
-@property(assign,readwrite) double nextScheduledLaunch;
-@property(assign,readwrite) bool openApplicationInProgress;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * proxyQueue;
-@property(assign,readonly) double remainingLaunchBackoff;
-@property(assign,readonly) bool serviceLaunchThrottled;
-@property(assign,readwrite) long long unexpectedTerminationCount;
-@property(assign,readwrite) bool waitingForAdSheet;
+@property (nonatomic) <ADAdSheetProxyDelegate> *delegate;
+@property (nonatomic) double lastLaunchTimestamp;
+@property (nonatomic, retain) NSMutableSet *launchAssertions;
+@property (nonatomic) double nextScheduledLaunch;
+@property (nonatomic) bool openApplicationInProgress;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *proxyQueue;
+@property (nonatomic, readonly) double remainingLaunchBackoff;
+@property (nonatomic, readonly) bool serviceLaunchThrottled;
+@property (nonatomic) long long unexpectedTerminationCount;
+@property (nonatomic) bool waitingForAdSheet;
 
 + (id)sharedInstance;
 

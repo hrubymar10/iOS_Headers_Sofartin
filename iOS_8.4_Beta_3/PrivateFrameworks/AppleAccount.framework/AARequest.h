@@ -11,12 +11,12 @@
     NSString *_oneTimePassword;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool flushCache;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSURLRequest * urlRequest;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool flushCache;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (readonly) NSURLRequest *urlRequest;
 
 + (id)protocolVersion;
 + (Class)responseClass;

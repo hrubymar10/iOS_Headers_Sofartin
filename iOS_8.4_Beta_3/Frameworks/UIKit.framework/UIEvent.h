@@ -6,9 +6,9 @@
     double _timestamp;
 }
 
-@property(assign,readonly) long long subtype;
-@property(assign,readonly) double timestamp;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) long long subtype;
+@property (nonatomic, readonly) double timestamp;
+@property (nonatomic, readonly) long long type;
 
 - (id)_allPhysicalButtons;
 - (struct CGPoint { double x1; double x2; })_digitizerLocation;

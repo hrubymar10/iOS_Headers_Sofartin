@@ -4,7 +4,7 @@
 
 @interface SKUILoadItemResourceOperation : SKUILoadResourceOperation
 
-@property(assign,copy) SKUIItemResourceRequest * resourceRequest;
+@property (readonly, copy) SKUIItemResourceRequest *resourceRequest;
 
 - (id)initWithResourceRequest:(id)arg1;
 - (void)main;

@@ -6,7 +6,7 @@
     NSDictionary *mIdentifierToStyleMap;
 }
 
-@property(assign,retain) NSDictionary * identifierToStyleMap;
+@property (nonatomic, retain) NSDictionary *identifierToStyleMap;
 
 - (void)adoptStylesheet:(id)arg1 withMapper:(id)arg2;
 - (void)dealloc;

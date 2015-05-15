@@ -10,11 +10,11 @@
     MKMapItem *_source;
 }
 
-@property(assign,readonly) MKMapItem * destination;
-@property(getter=_distance,assign,readonly) double distance;
-@property(assign,readonly) double expectedTravelTime;
-@property(getter=_sortedETAs,assign,readonly) NSArray * sortedETAs;
-@property(assign,readonly) MKMapItem * source;
+@property (nonatomic, readonly) MKMapItem *destination;
+@property (getter=_distance, nonatomic, readonly) double distance;
+@property (nonatomic, readonly) double expectedTravelTime;
+@property (getter=_sortedETAs, nonatomic, readonly) NSArray *sortedETAs;
+@property (nonatomic, readonly) MKMapItem *source;
 
 - (void).cxx_destruct;
 - (double)_distance;

@@ -8,14 +8,14 @@
     double _machTimestampWhenMeasured;
 }
 
-@property(assign,readonly) NSArray * blockedThreadIDs;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isUnresponsive;
-@property(assign,readonly) double machTimestampOfLastResponse;
-@property(assign,readonly) double machTimestampWhenMeasured;
-@property(assign,readonly) Class superclass;
+@property (readonly) NSArray *blockedThreadIDs;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isUnresponsive;
+@property (readonly) double machTimestampOfLastResponse;
+@property (readonly) double machTimestampWhenMeasured;
+@property (readonly) Class superclass;
 
 + (id)classDictionaryKey;
 + (id)newInstanceWithoutReferencesFromBufferPosition:(const void*)arg1;

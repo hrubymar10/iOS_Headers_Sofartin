@@ -13,14 +13,14 @@
     NSString *_unknownTypeName;
 }
 
-@property(assign,readonly) NSDate * arrival;
-@property(assign,readonly) NSDate * deparature;
-@property(assign,readonly) double eta;
-@property(assign,readonly) <GEOMapItem> * geoMapItem;
-@property(assign,readonly) long long modeOfTransportation;
-@property(assign,readonly) int style;
-@property(assign,readonly) long long type;
-@property(assign,readonly) NSString * unknownTypeName;
+@property (nonatomic, readonly) NSDate *arrival;
+@property (nonatomic, readonly) NSDate *deparature;
+@property (nonatomic, readonly) double eta;
+@property (nonatomic, readonly) <GEOMapItem> *geoMapItem;
+@property (nonatomic, readonly) long long modeOfTransportation;
+@property (nonatomic, readonly) int style;
+@property (nonatomic, readonly) long long type;
+@property (nonatomic, readonly) NSString *unknownTypeName;
 
 - (void).cxx_destruct;
 - (id)arrival;

@@ -6,7 +6,7 @@
     SBCPlaybackPositionDomain *_playbackPositionDomain;
 }
 
-@property(assign,readonly) SBCPlaybackPositionDomain * playbackPositionDomain;
+@property (nonatomic, readonly) SBCPlaybackPositionDomain *playbackPositionDomain;
 
 + (bool)supportsSecureCoding;
 

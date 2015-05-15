@@ -6,7 +6,7 @@
     bool dead;
 }
 
-@property(getter=isDead,assign,readwrite) bool dead;
+@property (getter=isDead) bool dead;
 
 - (bool)isDead;
 - (void)setDead:(bool)arg1;

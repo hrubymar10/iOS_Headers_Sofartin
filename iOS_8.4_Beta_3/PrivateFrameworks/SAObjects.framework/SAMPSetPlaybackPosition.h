@@ -4,7 +4,7 @@
 
 @interface SAMPSetPlaybackPosition : SADomainCommand
 
-@property(assign,readwrite) int position;
+@property (nonatomic) int position;
 
 + (id)setPlaybackPosition;
 + (id)setPlaybackPositionWithDictionary:(id)arg1 context:(id)arg2;

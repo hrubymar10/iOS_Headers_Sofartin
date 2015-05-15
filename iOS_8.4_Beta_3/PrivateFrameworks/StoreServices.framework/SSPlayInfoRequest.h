@@ -7,13 +7,13 @@
     SSPlayInfoResponse *_response;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SSPlayInfoRequestDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SSPlayInfoRequestContext * playInfoContext;
-@property(assign,readonly) SSPlayInfoResponse * playInfoResponse;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SSPlayInfoRequestDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) SSPlayInfoRequestContext *playInfoContext;
+@property (readonly) SSPlayInfoResponse *playInfoResponse;
+@property (readonly) Class superclass;
 
 - (id)copyXPCEncoding;
 - (void)dealloc;

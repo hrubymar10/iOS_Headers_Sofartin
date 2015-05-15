@@ -9,8 +9,8 @@
     NSDictionary *_preservedLayerValues;
 }
 
-@property(assign,readwrite) UIView * contentView;
-@property(assign,readwrite) double cornerRadius;
+@property (nonatomic) UIView *contentView;
+@property double cornerRadius;
 
 - (id)contentView;
 - (double)cornerRadius;

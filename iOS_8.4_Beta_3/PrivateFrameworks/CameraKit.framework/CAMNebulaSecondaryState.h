@@ -10,11 +10,11 @@
     NSDate *_stopTime;
 }
 
-@property(assign,readwrite) long long failedStateReadAttemptsCount;
-@property(assign,readonly) NSDate * lastMovieWriteAttemptTime;
-@property(assign,readonly) long long movieWriteAttemptsCount;
-@property(assign,readwrite) long long stopReasons;
-@property(assign,retain) NSDate * stopTime;
+@property (nonatomic) long long failedStateReadAttemptsCount;
+@property (nonatomic, readonly) NSDate *lastMovieWriteAttemptTime;
+@property (nonatomic, readonly) long long movieWriteAttemptsCount;
+@property (nonatomic) long long stopReasons;
+@property (nonatomic, retain) NSDate *stopTime;
 
 + (id)secondaryStateWithContentsOfFile:(id)arg1;
 

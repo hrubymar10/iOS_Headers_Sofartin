@@ -7,9 +7,9 @@
     NPKPaymentService *_paymentService;
 }
 
-@property(assign,retain) NPKPaymentServiceCard * paymentCard;
-@property(assign,readwrite) NPKPaymentService * paymentService;
-@property(assign,readonly) NSString * uniqueID;
+@property (nonatomic, retain) NPKPaymentServiceCard *paymentCard;
+@property (nonatomic) NPKPaymentService *paymentService;
+@property (nonatomic, readonly) NSString *uniqueID;
 
 - (void).cxx_destruct;
 - (void)dealloc;

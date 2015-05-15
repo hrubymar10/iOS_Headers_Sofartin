@@ -4,26 +4,26 @@
 
 @interface DOMHTMLAnchorElement : DOMHTMLElement
 
-@property(assign,copy) NSURL * absoluteLinkURL;
-@property(assign,copy) NSString * accessKey;
-@property(assign,copy) NSString * charset;
-@property(assign,copy) NSString * coords;
-@property(assign,copy) NSString * hashName;
-@property(assign,copy) NSString * host;
-@property(assign,copy) NSString * hostname;
-@property(assign,copy) NSString * href;
-@property(assign,copy) NSString * hreflang;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * pathname;
-@property(assign,copy) NSString * port;
-@property(assign,copy) NSString * protocol;
-@property(assign,copy) NSString * rel;
-@property(assign,copy) NSString * rev;
-@property(assign,copy) NSString * search;
-@property(assign,copy) NSString * shape;
-@property(assign,copy) NSString * target;
-@property(assign,copy) NSString * text;
-@property(assign,copy) NSString * type;
+@property (readonly, copy) NSURL *absoluteLinkURL;
+@property (copy) NSString *accessKey;
+@property (copy) NSString *charset;
+@property (copy) NSString *coords;
+@property (readonly, copy) NSString *hashName;
+@property (readonly, copy) NSString *host;
+@property (readonly, copy) NSString *hostname;
+@property (copy) NSString *href;
+@property (copy) NSString *hreflang;
+@property (copy) NSString *name;
+@property (readonly, copy) NSString *pathname;
+@property (readonly, copy) NSString *port;
+@property (readonly, copy) NSString *protocol;
+@property (copy) NSString *rel;
+@property (copy) NSString *rev;
+@property (readonly, copy) NSString *search;
+@property (copy) NSString *shape;
+@property (copy) NSString *target;
+@property (readonly, copy) NSString *text;
+@property (copy) NSString *type;
 
 - (id)absoluteLinkURL;
 - (id)accessKey;

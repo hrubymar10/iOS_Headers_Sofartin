@@ -6,7 +6,7 @@
     UIDocumentInteractionController *_documentInteractionController;
 }
 
-@property(assign,readwrite) UIDocumentInteractionController * documentInteractionController;
+@property UIDocumentInteractionController *documentInteractionController;
 
 - (id)activityViewController:(id)arg1 itemForActivityType:(id)arg2;
 - (id)activityViewControllerPlaceholderItem:(id)arg1;

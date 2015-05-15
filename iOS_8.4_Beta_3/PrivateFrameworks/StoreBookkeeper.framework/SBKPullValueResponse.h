@@ -9,10 +9,10 @@
     NSString *_itemVersion;
 }
 
-@property(assign,readonly) NSString * domainVersion;
-@property(assign,readonly) NSString * itemKey;
-@property(assign,readonly) NSData * itemValuePayload;
-@property(assign,readonly) NSString * itemVersion;
+@property (readonly) NSString *domainVersion;
+@property (readonly) NSString *itemKey;
+@property (readonly) NSData *itemValuePayload;
+@property (readonly) NSString *itemVersion;
 
 + (id)responseWithResponse:(id)arg1 transaction:(id)arg2;
 

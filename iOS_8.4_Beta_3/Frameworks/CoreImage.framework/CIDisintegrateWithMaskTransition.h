@@ -12,13 +12,13 @@
     NSNumber *inputTime;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIImage * inputMaskImage;
-@property(assign,retain) NSNumber * inputShadowDensity;
-@property(assign,retain) CIVector * inputShadowOffset;
-@property(assign,retain) NSNumber * inputShadowRadius;
-@property(assign,retain) CIImage * inputTargetImage;
-@property(assign,retain) NSNumber * inputTime;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIImage *inputMaskImage;
+@property (nonatomic, retain) NSNumber *inputShadowDensity;
+@property (nonatomic, retain) CIVector *inputShadowOffset;
+@property (nonatomic, retain) NSNumber *inputShadowRadius;
+@property (nonatomic, retain) CIImage *inputTargetImage;
+@property (nonatomic, retain) NSNumber *inputTime;
 
 + (id)customAttributes;
 

@@ -7,8 +7,8 @@
     id _defaultQueryCreationHandler;
 }
 
-@property(assign,readonly) NSDictionary * attributes;
-@property(assign,readonly) id defaultQueryCreationHandler;
+@property (nonatomic, readonly) NSDictionary *attributes;
+@property (nonatomic, readonly) id defaultQueryCreationHandler;
 
 - (void).cxx_destruct;
 - (id)attributes;

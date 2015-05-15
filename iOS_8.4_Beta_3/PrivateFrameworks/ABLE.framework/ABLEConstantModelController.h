@@ -7,7 +7,7 @@
     bool valid;
 }
 
-@property(assign,readonly) unsigned long long constantValue;
+@property (readonly) unsigned long long constantValue;
 
 - (void)calculateBONForCurrentLevel:(float)arg1 andChargeState:(bool)arg2 atDate:(id)arg3 onQueue:(id)arg4 usingHandler:(id)arg5;
 - (unsigned long long)constantValue;

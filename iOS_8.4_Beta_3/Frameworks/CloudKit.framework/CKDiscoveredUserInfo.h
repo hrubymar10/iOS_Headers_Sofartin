@@ -9,10 +9,10 @@
     CKRecordID *_userRecordID;
 }
 
-@property(assign,copy) NSString * firstName;
-@property(assign,copy) NSString * lastName;
-@property(assign,readonly) void* oldDisplayContact;
-@property(assign,copy) CKRecordID * userRecordID;
+@property (nonatomic, copy) NSString *firstName;
+@property (nonatomic, copy) NSString *lastName;
+@property (nonatomic, readonly) void*oldDisplayContact;
+@property (nonatomic, copy) CKRecordID *userRecordID;
 
 + (bool)supportsSecureCoding;
 

@@ -8,7 +8,7 @@
     bool _shouldIncludeRecentlyAddedOverview;
 }
 
-@property(assign,readwrite) bool shouldIncludeRecentlyAddedOverview;
+@property (nonatomic) bool shouldIncludeRecentlyAddedOverview;
 
 - (void).cxx_destruct;
 - (id)_artistsEntityViewDescriptor;

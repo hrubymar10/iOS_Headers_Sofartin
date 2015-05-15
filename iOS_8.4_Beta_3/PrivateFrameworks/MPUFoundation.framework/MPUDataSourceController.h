@@ -11,12 +11,12 @@
     MPUNotificationObserver *_willInvalidateObserver;
 }
 
-@property(assign,readonly) MPUDataSource * dataSource;
-@property(assign,readwrite) <MPUDataSourceControllerDelegate> * delegate;
-@property(assign,retain) MPUNotificationObserver * didInvalidateObserver;
-@property(assign,readwrite) bool shouldReloadWhenViewControllerIsVisible;
-@property(assign,readwrite) bool viewControllerIsVisible;
-@property(assign,retain) MPUNotificationObserver * willInvalidateObserver;
+@property (nonatomic, readonly) MPUDataSource *dataSource;
+@property (nonatomic) <MPUDataSourceControllerDelegate> *delegate;
+@property (nonatomic, retain) MPUNotificationObserver *didInvalidateObserver;
+@property (nonatomic) bool shouldReloadWhenViewControllerIsVisible;
+@property (nonatomic) bool viewControllerIsVisible;
+@property (nonatomic, retain) MPUNotificationObserver *willInvalidateObserver;
 
 - (void).cxx_destruct;
 - (void)_didInvalidate;

@@ -9,11 +9,11 @@
     bool _transitionIsInFlight;
 }
 
-@property(assign,readwrite) UIView * containerView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) UIView *containerView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)_alongsideAnimations:(bool)arg1;
 - (id)_alongsideCompletions:(bool)arg1;

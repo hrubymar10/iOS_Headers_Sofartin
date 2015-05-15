@@ -11,11 +11,11 @@
     bool _sharedZone;
 }
 
-@property(assign,readonly) NSIndexSet * desiredIndices;
-@property(assign,readonly) unsigned int liveDocumentID;
-@property(assign,readonly) unsigned long long liveFileID;
-@property(assign,readonly) bool liveItemIsPackage;
-@property(assign,readonly) bool requiresSecondPhase;
+@property (nonatomic, readonly) NSIndexSet *desiredIndices;
+@property (nonatomic, readonly) unsigned int liveDocumentID;
+@property (nonatomic, readonly) unsigned long long liveFileID;
+@property (nonatomic, readonly) bool liveItemIsPackage;
+@property (nonatomic, readonly) bool requiresSecondPhase;
 
 - (void).cxx_destruct;
 - (bool)_prepareSecondStageWithSession:(id)arg1 manifest:(id)arg2 package:(id)arg3 error:(id*)arg4;

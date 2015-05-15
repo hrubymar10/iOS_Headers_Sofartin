@@ -8,8 +8,8 @@
     unsigned int _hostContextId;
 }
 
-@property(assign,readonly) unsigned int childContextId;
-@property(assign,readonly) unsigned int hostContextId;
+@property (nonatomic, readonly) unsigned int childContextId;
+@property (nonatomic, readonly) unsigned int hostContextId;
 
 + (bool)supportsSecureCoding;
 

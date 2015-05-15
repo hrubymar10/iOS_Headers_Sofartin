@@ -9,14 +9,14 @@
     CNContact *_selectedContact;
 }
 
-@property(assign,retain) CNContact * chosenContact;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) NSObject<ABContactAddLinkedCardActionDelegate> * linkedCardActionDelegate;
-@property(assign,retain) ABPeoplePickerNavigationController * peoplePicker;
-@property(assign,retain) CNContact * selectedContact;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) CNContact *chosenContact;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) NSObject<ABContactAddLinkedCardActionDelegate> *linkedCardActionDelegate;
+@property (nonatomic, retain) ABPeoplePickerNavigationController *peoplePicker;
+@property (nonatomic, retain) CNContact *selectedContact;
+@property (readonly) Class superclass;
 
 - (id)chosenContact;
 - (void)dealloc;

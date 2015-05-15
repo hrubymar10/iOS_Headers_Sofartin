@@ -8,7 +8,7 @@
     struct OpaqueFigNeroid { } *_neroid;
 }
 
-@property(assign,readwrite) <FigNeroLayerDelegate> * neroDelegate;
+@property (nonatomic) <FigNeroLayerDelegate> *neroDelegate;
 
 - (void)_dispatchNotification:(id)arg1 value:(id)arg2;
 - (void)_start;

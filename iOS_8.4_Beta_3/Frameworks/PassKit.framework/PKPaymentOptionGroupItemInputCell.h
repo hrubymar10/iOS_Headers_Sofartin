@@ -6,7 +6,7 @@
     UITextField *_textField;
 }
 
-@property(assign,retain) UITextField * textField;
+@property (nonatomic, retain) UITextField *textField;
 
 - (void)_updateCellContent;
 - (void)dealloc;

@@ -4,8 +4,8 @@
 
 @interface SAABMultiPersonSearch : SADomainCommand
 
-@property(assign,copy) NSArray * personSearches;
-@property(assign,copy) NSNumber * resultsLimit;
+@property (nonatomic, copy) NSArray *personSearches;
+@property (nonatomic, copy) NSNumber *resultsLimit;
 
 + (id)multiPersonSearch;
 + (id)multiPersonSearchWithDictionary:(id)arg1 context:(id)arg2;

@@ -23,17 +23,17 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,retain) NSArray * attributeMappings;
-@property(assign,copy) NSString * destinationEntityName;
-@property(assign,copy) NSData * destinationEntityVersionHash;
-@property(assign,copy) NSString * entityMigrationPolicyClassName;
-@property(assign,readwrite) unsigned long long mappingType;
-@property(assign,copy) NSString * name;
-@property(assign,retain) NSArray * relationshipMappings;
-@property(assign,copy) NSString * sourceEntityName;
-@property(assign,copy) NSData * sourceEntityVersionHash;
-@property(assign,retain) NSExpression * sourceExpression;
-@property(assign,retain) NSDictionary * userInfo;
+@property (retain) NSArray *attributeMappings;
+@property (copy) NSString *destinationEntityName;
+@property (copy) NSData *destinationEntityVersionHash;
+@property (copy) NSString *entityMigrationPolicyClassName;
+@property unsigned long long mappingType;
+@property (copy) NSString *name;
+@property (retain) NSArray *relationshipMappings;
+@property (copy) NSString *sourceEntityName;
+@property (copy) NSData *sourceEntityVersionHash;
+@property (retain) NSExpression *sourceExpression;
+@property (nonatomic, retain) NSDictionary *userInfo;
 
 + (void)initialize;
 

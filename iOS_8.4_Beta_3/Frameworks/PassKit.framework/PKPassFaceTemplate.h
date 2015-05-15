@@ -12,10 +12,10 @@
     PKPassFieldTemplate *_defaultFieldTemplate;
 }
 
-@property(assign,readwrite) double barcodeBottomInset;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } barcodeMaxSize;
-@property(assign,retain) NSMutableArray * bucketTemplates;
-@property(assign,retain) PKPassFieldTemplate * defaultFieldTemplate;
+@property (nonatomic) double barcodeBottomInset;
+@property (nonatomic) struct CGSize { double x1; double x2; } barcodeMaxSize;
+@property (nonatomic, retain) NSMutableArray *bucketTemplates;
+@property (nonatomic, retain) PKPassFieldTemplate *defaultFieldTemplate;
 
 - (void)addBucketTemplate:(id)arg1;
 - (double)barcodeBottomInset;

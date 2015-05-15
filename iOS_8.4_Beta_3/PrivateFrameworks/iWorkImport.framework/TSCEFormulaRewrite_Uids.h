@@ -63,8 +63,8 @@
     } _uidsForIndexes;
 }
 
-@property(assign,readonly) NSIndexSet * indexes;
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{vector<TSU::UUIDData<TSP::UUIDData>' */ struct * uids; /* unknown property attribute:  std::__1::allocator<TSU::UUIDData<TSP::UUIDData> > >=^{UUIDData<TSP::UUIDData>}}} */
+@property (readonly) NSIndexSet *indexes;
+@property (readonly) const /* Warning: unhandled struct encoding: '{vector<TSU::UUIDData<TSP::UUIDData>' */ struct *uids; /* unknown property attribute:  std::__1::allocator<TSU::UUIDData<TSP::UUIDData> > >=^{UUIDData<TSP::UUIDData>}}} */
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

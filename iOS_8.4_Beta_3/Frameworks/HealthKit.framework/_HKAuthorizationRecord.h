@@ -7,8 +7,8 @@
     long long _status;
 }
 
-@property(assign,readonly) long long request;
-@property(assign,readonly) long long status;
+@property (readonly) long long request;
+@property (readonly) long long status;
 
 + (bool)supportsSecureCoding;
 

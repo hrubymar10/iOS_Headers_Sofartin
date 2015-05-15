@@ -11,12 +11,12 @@
     double _timestamp;
 }
 
-@property(assign,readwrite) unsigned int domain;
-@property(assign,copy) NSString * fbq;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSString * input;
-@property(assign,retain) NSArray * results;
-@property(assign,readonly) double timestamp;
+@property (nonatomic) unsigned int domain;
+@property (nonatomic, copy) NSString *fbq;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSString *input;
+@property (nonatomic, retain) NSArray *results;
+@property (nonatomic, readonly) double timestamp;
 
 + (id)feedback;
 + (id)feedbackForSearchResult:(id)arg1 section:(id)arg2;

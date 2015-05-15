@@ -22,17 +22,17 @@
     double _textOpacity;
 }
 
-@property(assign,retain) NSString * etchColor;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } etchOffset;
-@property(assign,retain) NSString * fontName;
-@property(assign,readwrite) double fontSize;
-@property(assign,readwrite) double kerning;
-@property(assign,readwrite) double minFontSize;
-@property(assign,readwrite) double pathWeight;
-@property(assign,readwrite) long long selector;
-@property(assign,retain) NSString * textColor;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } textOffset;
-@property(assign,readwrite) double textOpacity;
+@property (nonatomic, retain) NSString *etchColor;
+@property (nonatomic) struct CGPoint { double x1; double x2; } etchOffset;
+@property (nonatomic, retain) NSString *fontName;
+@property (nonatomic) double fontSize;
+@property (nonatomic) double kerning;
+@property (nonatomic) double minFontSize;
+@property (nonatomic) double pathWeight;
+@property (nonatomic) long long selector;
+@property (nonatomic, retain) NSString *textColor;
+@property (nonatomic) struct CGPoint { double x1; double x2; } textOffset;
+@property (nonatomic) double textOpacity;
 
 + (id)styleWithFontName:(id)arg1 withFontSize:(double)arg2;
 + (id)styleWithTextColor:(id)arg1;

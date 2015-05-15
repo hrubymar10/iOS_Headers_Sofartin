@@ -6,7 +6,7 @@
     NetTopoMiniStaticLayout *netTopoMiniStaticLayout;
 }
 
-@property(assign,retain) NetTopoMiniStaticLayout * netTopoMiniStaticLayout;
+@property (nonatomic, retain) NetTopoMiniStaticLayout *netTopoMiniStaticLayout;
 
 - (void)dealloc;
 - (struct CGSize { double x1; double x2; })intrinsicContentSize;

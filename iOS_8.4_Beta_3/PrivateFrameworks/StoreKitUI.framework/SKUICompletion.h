@@ -8,14 +8,14 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSString * URLString;
-@property(assign,readonly) NSString * alternateTitle;
-@property(assign,readonly) NSMutableDictionary * cacheRepresentation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSString *URLString;
+@property (nonatomic, readonly) NSString *alternateTitle;
+@property (nonatomic, readonly) NSMutableDictionary *cacheRepresentation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *title;
 
 - (void).cxx_destruct;
 - (id)URLString;

@@ -19,18 +19,18 @@
     BLModalPresenterRootViewController *_rootViewController;
 }
 
-@property(assign,readwrite) long long autocapitalizationType;
-@property(assign,readwrite) long long autocorrectionType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enablesReturnKeyAutomatically;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long keyboardAppearance;
-@property(assign,readwrite) long long keyboardType;
-@property(assign,readwrite) long long returnKeyType;
-@property(getter=isSecureTextEntry,assign,readwrite) bool secureTextEntry;
-@property(assign,readwrite) long long spellCheckingType;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long autocapitalizationType;
+@property (nonatomic) long long autocorrectionType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enablesReturnKeyAutomatically;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long keyboardAppearance;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic) long long returnKeyType;
+@property (getter=isSecureTextEntry, nonatomic) bool secureTextEntry;
+@property (nonatomic) long long spellCheckingType;
+@property (readonly) Class superclass;
 
 + (id)presenter;
 

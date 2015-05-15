@@ -11,11 +11,11 @@
     NSLayoutConstraint *_topViewHeightConstraint;
 }
 
-@property(assign,readonly) UIView * behindView;
-@property(assign,readonly) UIView * bottomView;
-@property(assign,readonly) UIView * topView;
-@property(assign,retain) NSLayoutConstraint * topViewAttributeTopConstraint;
-@property(assign,retain) NSLayoutConstraint * topViewHeightConstraint;
+@property (nonatomic, readonly) UIView *behindView;
+@property (nonatomic, readonly) UIView *bottomView;
+@property (nonatomic, readonly) UIView *topView;
+@property (nonatomic, retain) NSLayoutConstraint *topViewAttributeTopConstraint;
+@property (nonatomic, retain) NSLayoutConstraint *topViewHeightConstraint;
 
 - (void)_didMoveFromWindow:(id)arg1 toWindow:(id)arg2;
 - (void)adjustTopAttributeConstantByDelta:(double)arg1;

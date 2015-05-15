@@ -8,7 +8,7 @@
     UIColor *_textColor;
 }
 
-@property(assign,retain) UIColor * textColor;
+@property (nonatomic, retain) UIColor *textColor;
 
 - (void).cxx_destruct;
 - (id)initWithPlaceholderString:(id)arg1 isPad:(bool)arg2;

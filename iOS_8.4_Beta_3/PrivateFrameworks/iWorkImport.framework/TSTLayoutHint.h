@@ -34,19 +34,19 @@
     NSNumber *mPartitioningPass;
 }
 
-@property(assign,readwrite) struct { unsigned short x1; unsigned char x2; unsigned char x3; } cacheHintID;
-@property(assign,readwrite) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } cellRange;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } effectiveSize;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool horizontal;
-@property(assign,readwrite) bool isValid;
-@property(assign,readwrite) TSTLayout * layout;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } maximumSize;
-@property(assign,readwrite) unsigned int partitionPosition;
-@property(assign,retain) NSNumber * partitioningPass;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) struct { unsigned short x1; unsigned char x2; unsigned char x3; } cacheHintID;
+@property (nonatomic) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } cellRange;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) struct CGSize { double x1; double x2; } effectiveSize;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool horizontal;
+@property (nonatomic) bool isValid;
+@property (nonatomic) TSTLayout *layout;
+@property (nonatomic) struct CGSize { double x1; double x2; } maximumSize;
+@property (nonatomic) unsigned int partitionPosition;
+@property (nonatomic, retain) NSNumber *partitioningPass;
+@property (readonly) Class superclass;
 
 + (Class)archivedHintClass;
 

@@ -21,10 +21,10 @@
     bool _textPartsAreHTML;
 }
 
-@property(assign,retain) NSDictionary * compositionSpecification;
-@property(assign,readwrite) unsigned long long conversationFlags;
-@property(assign,readwrite) bool isUserRequested;
-@property(assign,readwrite) long long originalConversationId;
+@property (nonatomic, retain) NSDictionary *compositionSpecification;
+@property (nonatomic) unsigned long long conversationFlags;
+@property (nonatomic) bool isUserRequested;
+@property (nonatomic) long long originalConversationId;
 
 + (id)newWithHeaders:(id)arg1 HTML:(id)arg2 plainTextAlternative:(id)arg3 other:(id)arg4 charsets:(id)arg5;
 + (id)newWithHeaders:(id)arg1 mixedContent:(id)arg2 textPartsAreHTML:(bool)arg3;

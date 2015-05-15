@@ -11,13 +11,13 @@
     NSMutableDictionary *_userManifest;
 }
 
-@property(assign,retain) NSMutableDictionary * _userManifest;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool hasDeactivated;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * personID;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSMutableDictionary *_userManifest;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool hasDeactivated;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *personID;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_abort;

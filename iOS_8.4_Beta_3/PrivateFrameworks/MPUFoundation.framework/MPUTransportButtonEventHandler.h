@@ -11,9 +11,9 @@
     bool _supportsTapWhenDisabled;
 }
 
-@property(assign,readwrite) UIControl * button;
-@property(assign,readwrite) double minimumLongPressDuration;
-@property(assign,readwrite) bool supportsTapWhenDisabled;
+@property (nonatomic) UIControl *button;
+@property (nonatomic) double minimumLongPressDuration;
+@property (nonatomic) bool supportsTapWhenDisabled;
 
 - (void).cxx_destruct;
 - (void)_clearLongPressTimer;

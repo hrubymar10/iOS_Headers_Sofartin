@@ -8,10 +8,10 @@
     bool _success;
 }
 
-@property(assign,retain) NSData * errorData;
-@property(assign,readonly) bool hasErrorData;
-@property(assign,readwrite) unsigned int messageID;
-@property(assign,readwrite) bool success;
+@property (nonatomic, retain) NSData *errorData;
+@property (nonatomic, readonly) bool hasErrorData;
+@property (nonatomic) unsigned int messageID;
+@property (nonatomic) bool success;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

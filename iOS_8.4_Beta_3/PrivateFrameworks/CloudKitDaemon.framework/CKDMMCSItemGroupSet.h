@@ -6,8 +6,8 @@
     NSMutableDictionary *_itemsByGroupTuple;
 }
 
-@property(assign,readonly) NSError * error;
-@property(assign,retain) NSMutableDictionary * itemsByGroupTuple;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, retain) NSMutableDictionary *itemsByGroupTuple;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

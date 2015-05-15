@@ -11,12 +11,12 @@
     NSArray *_zoneIDs;
 }
 
-@property(assign,copy) id fetchSharesCompletionBlock;
-@property(assign,retain) NSMutableDictionary * shareIDErrors;
-@property(assign,readonly) NSArray * shareIDs;
-@property(assign,retain) NSMutableDictionary * sharesByShareID;
-@property(assign,retain) NSMutableDictionary * zoneIDErrors;
-@property(assign,readonly) NSArray * zoneIDs;
+@property (nonatomic, copy) id fetchSharesCompletionBlock;
+@property (nonatomic, retain) NSMutableDictionary *shareIDErrors;
+@property (nonatomic, readonly) NSArray *shareIDs;
+@property (nonatomic, retain) NSMutableDictionary *sharesByShareID;
+@property (nonatomic, retain) NSMutableDictionary *zoneIDErrors;
+@property (nonatomic, readonly) NSArray *zoneIDs;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

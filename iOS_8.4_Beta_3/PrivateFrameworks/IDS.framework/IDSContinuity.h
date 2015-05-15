@@ -6,7 +6,7 @@
     _IDSContinuity *_internal;
 }
 
-@property(assign,readonly) long long state;
+@property (readonly) long long state;
 
 - (void)connectToPeer:(id)arg1;
 - (void)dealloc;

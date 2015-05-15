@@ -27,12 +27,12 @@
     bool _trafficEnabled;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <VKGlobeLineContainerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <VKRouteMatchedAnnotationPresentation> * routeLineSplitAnnotation;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <VKGlobeLineContainerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <VKRouteMatchedAnnotationPresentation> *routeLineSplitAnnotation;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

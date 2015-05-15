@@ -29,22 +29,22 @@
     long long _visualSectionIndex;
 }
 
-@property(setter=_setNeedsRendering:,assign,readwrite) bool _needsRendering;
-@property(assign,readonly) UIView * _sideExtendedContentView;
-@property(assign,readwrite) int backgroundColorValue;
-@property(assign,readwrite) unsigned long long contentExtenderType;
-@property(assign,readwrite) <PUGridRenderedStripDataSource> * dataSource;
-@property(assign,readwrite) bool extendsToTop;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } interItemSpacing;
-@property(assign,readwrite) double itemContentScale;
-@property(assign,retain) NSArray * itemIndexPaths;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } itemSize;
-@property(assign,readwrite) PUSectionedGridLayout * layout;
-@property(assign,readwrite) double leftContentInset;
-@property(assign,readonly) long long numberOfColumns;
-@property(assign,readonly) UIView * topContentView;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } visualItemRange;
-@property(assign,readonly) long long visualSectionIndex;
+@property (setter=_setNeedsRendering:, nonatomic) bool _needsRendering;
+@property (nonatomic, readonly) UIView *_sideExtendedContentView;
+@property (nonatomic) int backgroundColorValue;
+@property (nonatomic) unsigned long long contentExtenderType;
+@property (nonatomic) <PUGridRenderedStripDataSource> *dataSource;
+@property (nonatomic) bool extendsToTop;
+@property (nonatomic) struct CGSize { double x1; double x2; } interItemSpacing;
+@property (nonatomic) double itemContentScale;
+@property (nonatomic, retain) NSArray *itemIndexPaths;
+@property (nonatomic) struct CGSize { double x1; double x2; } itemSize;
+@property (nonatomic) PUSectionedGridLayout *layout;
+@property (nonatomic) double leftContentInset;
+@property (nonatomic, readonly) long long numberOfColumns;
+@property (nonatomic, readonly) UIView *topContentView;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } visualItemRange;
+@property (nonatomic, readonly) long long visualSectionIndex;
 
 - (void).cxx_destruct;
 - (bool)_disableRasterizeInAnimations;

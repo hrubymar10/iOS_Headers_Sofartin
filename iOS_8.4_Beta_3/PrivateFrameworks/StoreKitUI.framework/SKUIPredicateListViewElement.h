@@ -6,8 +6,8 @@
     NSPredicate *_compoundEntityValuePredicate;
 }
 
-@property(assign,readonly) NSPredicate * compoundEntityValuePredicate;
-@property(assign,copy) NSArray * predicateViewElements;
+@property (nonatomic, readonly) NSPredicate *compoundEntityValuePredicate;
+@property (nonatomic, readonly, copy) NSArray *predicateViewElements;
 
 - (void).cxx_destruct;
 - (void)_enumeratePredicateViewElementsUsingBlock:(id)arg1;

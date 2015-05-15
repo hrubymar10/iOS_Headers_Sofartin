@@ -10,11 +10,11 @@
     NSString *_username;
 }
 
-@property(assign,retain) NSString * apnName;
-@property(assign,retain) NSString * password;
-@property(assign,retain) NSString * proxy;
-@property(assign,retain) NSNumber * proxyPort;
-@property(assign,retain) NSString * username;
+@property (nonatomic, retain) NSString *apnName;
+@property (nonatomic, retain) NSString *password;
+@property (nonatomic, retain) NSString *proxy;
+@property (nonatomic, retain) NSNumber *proxyPort;
+@property (nonatomic, retain) NSString *username;
 
 - (void).cxx_destruct;
 - (id)apnName;

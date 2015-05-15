@@ -20,21 +20,21 @@
     bool _showIdleIndicator;
 }
 
-@property(assign,readwrite) double delayBeforeIdle;
-@property(assign,readwrite) bool directionalLockEnabled;
-@property(assign,readwrite) double directionalLockSharpness;
-@property(assign,readwrite) double directionalLockStickiness;
-@property(assign,readwrite) double directionalLockThreshold;
-@property(assign,readwrite) double idleLeeway;
-@property(assign,readwrite) double inputSmoothingFactor;
-@property(assign,readwrite) bool jumpEnabled;
-@property(assign,readwrite) double jumpThreshold;
-@property(assign,readwrite) bool playJumpSound;
-@property(assign,readwrite) double referenceShiftDistanceDependence;
-@property(assign,readwrite) bool referenceShiftEnabled;
-@property(assign,readwrite) double referenceShiftSpeed;
-@property(assign,readwrite) bool showDirectionalLockIndicators;
-@property(assign,readwrite) bool showIdleIndicator;
+@property double delayBeforeIdle;
+@property bool directionalLockEnabled;
+@property double directionalLockSharpness;
+@property double directionalLockStickiness;
+@property double directionalLockThreshold;
+@property double idleLeeway;
+@property double inputSmoothingFactor;
+@property bool jumpEnabled;
+@property double jumpThreshold;
+@property bool playJumpSound;
+@property double referenceShiftDistanceDependence;
+@property bool referenceShiftEnabled;
+@property double referenceShiftSpeed;
+@property bool showDirectionalLockIndicators;
+@property bool showIdleIndicator;
 
 - (double)delayBeforeIdle;
 - (bool)directionalLockEnabled;

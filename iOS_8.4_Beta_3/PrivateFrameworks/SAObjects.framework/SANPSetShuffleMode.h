@@ -4,7 +4,7 @@
 
 @interface SANPSetShuffleMode : SADomainCommand
 
-@property(assign,copy) NSString * shuffleMode;
+@property (nonatomic, copy) NSString *shuffleMode;
 
 + (id)setShuffleMode;
 + (id)setShuffleModeWithDictionary:(id)arg1 context:(id)arg2;

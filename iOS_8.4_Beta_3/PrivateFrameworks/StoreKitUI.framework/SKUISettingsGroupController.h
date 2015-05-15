@@ -8,9 +8,9 @@
     SKUISettingsGroupDescription *_settingsGroupDescription;
 }
 
-@property(assign,readwrite) <SKUISettingsGroupControllerDelegate> * delegate;
-@property(assign,retain) NSMutableArray * settingDescriptions;
-@property(assign,retain) SKUISettingsGroupDescription * settingsGroupDescription;
+@property (nonatomic) <SKUISettingsGroupControllerDelegate> *delegate;
+@property (nonatomic, retain) NSMutableArray *settingDescriptions;
+@property (nonatomic, retain) SKUISettingsGroupDescription *settingsGroupDescription;
 
 - (void).cxx_destruct;
 - (void)_reloadSettingDescription:(id)arg1;

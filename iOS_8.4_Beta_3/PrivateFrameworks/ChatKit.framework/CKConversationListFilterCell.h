@@ -6,7 +6,7 @@
     UISegmentedControl *_filterControl;
 }
 
-@property(assign,retain) UISegmentedControl * filterControl;
+@property (nonatomic, retain) UISegmentedControl *filterControl;
 
 + (double)defaultHeight;
 + (id)identifier;

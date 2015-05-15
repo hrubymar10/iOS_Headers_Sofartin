@@ -23,21 +23,21 @@
     UIImageView *_vignette;
 }
 
-@property(assign,readwrite) long long backgroundTypeOverride;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MKPlaceHeaderViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * labelWidthConstraints;
-@property(assign,retain) MKMapItem * mapItem;
-@property(assign,readwrite) bool needsToUpdateTitleLabel;
-@property(assign,readwrite) double rating;
-@property(assign,copy) NSString * subTitle;
-@property(assign,readonly) UIFont * subtitleFont;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
-@property(assign,retain) NSLayoutConstraint * titleLabelBaselineConstraint;
-@property(assign,retain) NSMutableArray * viewDidAppearBlocks;
+@property (nonatomic) long long backgroundTypeOverride;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MKPlaceHeaderViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *labelWidthConstraints;
+@property (nonatomic, retain) MKMapItem *mapItem;
+@property (nonatomic) bool needsToUpdateTitleLabel;
+@property (nonatomic) double rating;
+@property (nonatomic, copy) NSString *subTitle;
+@property (nonatomic, readonly) UIFont *subtitleFont;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, retain) NSLayoutConstraint *titleLabelBaselineConstraint;
+@property (nonatomic, retain) NSMutableArray *viewDidAppearBlocks;
 
 - (void).cxx_destruct;
 - (void)_configureLabelForHeader:(id)arg1;

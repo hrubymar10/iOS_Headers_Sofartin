@@ -6,7 +6,7 @@
     UIColor *_color;
 }
 
-@property(assign,retain) UIColor * color;
+@property (nonatomic, retain) UIColor *color;
 
 - (void).cxx_destruct;
 - (id)color;

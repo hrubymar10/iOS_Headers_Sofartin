@@ -21,7 +21,7 @@
     UIKBCacheToken *_startKeyplaneToken;
 }
 
-@property(getter=isShowingFrontFace,assign,readwrite) bool showingFrontFace;
+@property (getter=isShowingFrontFace, nonatomic) bool showingFrontFace;
 
 - (void)_delayedUpdateTransition;
 - (void)_flipToFront:(bool)arg1 animated:(bool)arg2;

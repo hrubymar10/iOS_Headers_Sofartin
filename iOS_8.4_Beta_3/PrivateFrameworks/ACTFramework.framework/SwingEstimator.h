@@ -22,15 +22,15 @@
     unsigned long long stopTime;
 }
 
-@property(assign,readwrite) float LA;
-@property(assign,readwrite) float LOmega;
-@property(assign,readwrite) float RA;
-@property(assign,readwrite) float ROmega;
-@property(assign,readwrite) bool estimate;
-@property(assign,readwrite) int numberOfSamples;
-@property(assign,readwrite) int numberOfValidSamplesAngularVelocity;
-@property(assign,readwrite) int numberOfValidSamplesLinearAcceleration;
-@property(assign,readonly) NSOperationQueue * operationQueue;
+@property float LA;
+@property float LOmega;
+@property float RA;
+@property float ROmega;
+@property bool estimate;
+@property int numberOfSamples;
+@property int numberOfValidSamplesAngularVelocity;
+@property int numberOfValidSamplesLinearAcceleration;
+@property (readonly) NSOperationQueue *operationQueue;
 
 - (float)LA;
 - (float)LOmega;

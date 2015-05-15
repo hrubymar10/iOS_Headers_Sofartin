@@ -32,25 +32,25 @@
     UIResponder<UITextInput> *_view;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } autoscrollUntransformedExtentPoint;
-@property(assign,readwrite) bool autoscrolled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIGestureRecognizer * doubleTapGesture;
-@property(getter=isExperimentalUIEnabled,assign,readonly) bool experimentalUIEnabled;
-@property(assign,readonly) bool externalTextInput;
-@property(assign,readonly) UIFieldEditor * fieldEditor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool inGesture;
-@property(assign,retain) UILongPressGestureRecognizer * loupeGesture;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } loupeGestureEndPoint;
-@property(assign,readonly) UIView * scrollView;
-@property(assign,readonly) UITextSelectionView * selectionView;
-@property(assign,retain) UITapGestureRecognizer * singleTapGesture;
-@property(assign,retain) UITapGestureRecognizer * singleTapGesture;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIResponder<UITextInput> * textDocument;
-@property(assign,readonly) UIResponder<UITextInput> * view;
+@property (nonatomic) struct CGPoint { double x1; double x2; } autoscrollUntransformedExtentPoint;
+@property (nonatomic) bool autoscrolled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIGestureRecognizer *doubleTapGesture;
+@property (getter=isExperimentalUIEnabled, nonatomic, readonly) bool experimentalUIEnabled;
+@property (nonatomic, readonly) bool externalTextInput;
+@property (nonatomic, readonly) UIFieldEditor *fieldEditor;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool inGesture;
+@property (nonatomic, retain) UILongPressGestureRecognizer *loupeGesture;
+@property (nonatomic) struct CGPoint { double x1; double x2; } loupeGestureEndPoint;
+@property (nonatomic, readonly) UIView *scrollView;
+@property (nonatomic, readonly) UITextSelectionView *selectionView;
+@property (nonatomic, readonly, retain) UITapGestureRecognizer *singleTapGesture;
+@property (nonatomic, retain) UITapGestureRecognizer *singleTapGesture;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UIResponder<UITextInput> *textDocument;
+@property (nonatomic, readonly) UIResponder<UITextInput> *view;
 
 - (id)_asText;
 - (id)_scrollable;

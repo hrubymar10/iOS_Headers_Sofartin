@@ -50,15 +50,15 @@
     } _unmergeUIDRanges;
 }
 
-@property(assign,readwrite) bool appliesToHidden;
-@property(assign,retain) NSMutableArray * cellLists;
-@property(assign,retain) TSTCellUIDList * cellUIDs;
-@property(assign,readwrite) bool mayModifyFormulasInCells;
-@property(assign,readwrite) bool mayModifyValuesReferencedByFormulas;
-@property(getter=isOneToMany,assign,readonly) bool oneToMany;
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{unordered_map<TSUColumnRowCoordinate' */ struct * searchableIDMap; /* unknown property attribute:  true> >=f}}} */
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{unordered_map<TSTCellUID' */ struct * searchableUIDMap; /* unknown property attribute:  true> >=f}}} */
-@property(getter=isUIDBased,assign,readwrite) bool uidBased;
+@property (nonatomic) bool appliesToHidden;
+@property (nonatomic, retain) NSMutableArray *cellLists;
+@property (nonatomic, retain) TSTCellUIDList *cellUIDs;
+@property (nonatomic) bool mayModifyFormulasInCells;
+@property (nonatomic) bool mayModifyValuesReferencedByFormulas;
+@property (getter=isOneToMany, nonatomic, readonly) bool oneToMany;
+@property (nonatomic) /* Warning: unhandled struct encoding: '{unordered_map<TSUColumnRowCoordinate' */ struct *searchableIDMap; /* unknown property attribute:  true> >=f}}} */
+@property (nonatomic) /* Warning: unhandled struct encoding: '{unordered_map<TSTCellUID' */ struct *searchableUIDMap; /* unknown property attribute:  true> >=f}}} */
+@property (getter=isUIDBased, nonatomic) bool uidBased;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

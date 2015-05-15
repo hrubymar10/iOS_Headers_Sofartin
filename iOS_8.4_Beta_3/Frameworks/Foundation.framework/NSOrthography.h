@@ -4,8 +4,8 @@
 
 @interface NSOrthography : NSObject <NSCoding, NSCopying>
 
-@property(assign,copy) NSString * dominantScript;
-@property(assign,copy) NSDictionary * languageMap;
+@property (readonly, copy) NSString *dominantScript;
+@property (readonly, copy) NSDictionary *languageMap;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (void)initialize;

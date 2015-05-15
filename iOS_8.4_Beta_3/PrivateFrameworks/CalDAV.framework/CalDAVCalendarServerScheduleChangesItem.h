@@ -7,8 +7,8 @@
     CoreDAVLeafItem *_dtstamp;
 }
 
-@property(assign,retain) CalDAVCalendarServerActionItem * action;
-@property(assign,retain) CoreDAVLeafItem * dtstamp;
+@property (nonatomic, retain) CalDAVCalendarServerActionItem *action;
+@property (nonatomic, retain) CoreDAVLeafItem *dtstamp;
 
 - (id)action;
 - (id)copyParseRules;

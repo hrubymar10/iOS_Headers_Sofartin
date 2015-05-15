@@ -13,16 +13,16 @@
     SBKTransactionController *_transactionController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * responseConflictedKeys;
-@property(assign,readonly) SBKSyncResponseData * responseData;
-@property(assign,readonly) NSArray * responseDeletedKeys;
-@property(assign,copy) NSString * responseDomainVersion;
-@property(assign,readonly) NSArray * responseUpdatedKeys;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) SBKTransactionController * transactionController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSArray *responseConflictedKeys;
+@property (readonly) SBKSyncResponseData *responseData;
+@property (readonly) NSArray *responseDeletedKeys;
+@property (copy) NSString *responseDomainVersion;
+@property (readonly) NSArray *responseUpdatedKeys;
+@property (readonly) Class superclass;
+@property (readonly) SBKTransactionController *transactionController;
 
 + (long long)conflictDetectionType;
 

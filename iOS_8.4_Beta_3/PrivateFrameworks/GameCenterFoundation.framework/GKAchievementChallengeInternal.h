@@ -6,7 +6,7 @@
     GKAchievementInternal *_achievement;
 }
 
-@property(assign,copy) GKAchievementInternal * achievement;
+@property (nonatomic, copy) GKAchievementInternal *achievement;
 
 + (id)internalRepresentation;
 + (id)secureCodedPropertyKeys;

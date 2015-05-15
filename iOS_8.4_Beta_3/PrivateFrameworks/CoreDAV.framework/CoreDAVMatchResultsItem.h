@@ -9,10 +9,10 @@
     CoreDAVLeafItem *_region;
 }
 
-@property(assign,retain) CoreDAVLeafItem * calendarDescription;
-@property(assign,retain) CoreDAVLeafItem * language;
-@property(assign,retain) CoreDAVLeafItem * rank;
-@property(assign,retain) CoreDAVLeafItem * region;
+@property (nonatomic, retain) CoreDAVLeafItem *calendarDescription;
+@property (nonatomic, retain) CoreDAVLeafItem *language;
+@property (nonatomic, retain) CoreDAVLeafItem *rank;
+@property (nonatomic, retain) CoreDAVLeafItem *region;
 
 + (id)copyParseRules;
 

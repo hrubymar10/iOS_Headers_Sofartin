@@ -9,7 +9,7 @@
     const char *mUri;
 }
 
-@property(assign,retain) CXNamespace * fallbackNamespace;
+@property (nonatomic, retain) CXNamespace *fallbackNamespace;
 
 + (void)clearRegisteredNamespaces;
 + (bool)isNamespaceSupported:(const char *)arg1;

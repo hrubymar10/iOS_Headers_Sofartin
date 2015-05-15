@@ -13,14 +13,14 @@
     id trendHandler;
 }
 
-@property(assign,copy) id budgetHandler;
-@property(assign,copy) id forecastHandler;
-@property(assign,copy) id messageStatusHandler;
-@property(assign,copy) id noprewarmHandler;
-@property(assign,copy) id olderHandler;
-@property(assign,copy) id queryHandler;
-@property(assign,copy) id scoreHandler;
-@property(assign,copy) id trendHandler;
+@property (copy) id budgetHandler;
+@property (copy) id forecastHandler;
+@property (copy) id messageStatusHandler;
+@property (copy) id noprewarmHandler;
+@property (copy) id olderHandler;
+@property (copy) id queryHandler;
+@property (copy) id scoreHandler;
+@property (copy) id trendHandler;
 
 - (void).cxx_destruct;
 - (id)budgetHandler;

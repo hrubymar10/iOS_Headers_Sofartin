@@ -8,7 +8,7 @@
     NSUUID *_transitionUUID;
 }
 
-@property(assign,retain) NSArray * persistentAnimationLayers;
+@property (nonatomic, retain) NSArray *persistentAnimationLayers;
 
 - (void).cxx_destruct;
 - (void)_cleanup;

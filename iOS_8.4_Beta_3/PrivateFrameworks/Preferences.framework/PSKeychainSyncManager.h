@@ -45,25 +45,25 @@
     UIAlertView *_verificationCodeLimitAlert;
 }
 
-@property(assign,retain) NSString * appleIDPassword;
-@property(assign,retain) NSString * appleIDUsername;
-@property(assign,retain) PSRootController * buddyNavigationController;
-@property(assign,copy) id changeSecurityCodeCompletion;
-@property(assign,copy) id circleJoinCompletion;
-@property(assign,readwrite) bool circleWasReset;
-@property(assign,copy) id completion;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id passwordPromptCompletion;
-@property(assign,copy) id resetCompletion;
-@property(assign,retain) UIViewController * resetPromptControllerHost;
-@property(getter=isRunningInBuddy,assign,readonly) bool runningInBuddy;
-@property(assign,retain) NSString * securityCodeRecoveryAttempt;
-@property(assign,retain) PSSetupController * settingsSetupController;
-@property(assign,retain) NSString * stagedSecurityCode;
-@property(assign,readonly) int stagedSecurityCodeType;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSString *appleIDPassword;
+@property (nonatomic, retain) NSString *appleIDUsername;
+@property (nonatomic, retain) PSRootController *buddyNavigationController;
+@property (nonatomic, copy) id changeSecurityCodeCompletion;
+@property (nonatomic, copy) id circleJoinCompletion;
+@property (nonatomic) bool circleWasReset;
+@property (nonatomic, copy) id completion;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id passwordPromptCompletion;
+@property (nonatomic, copy) id resetCompletion;
+@property (nonatomic, retain) UIViewController *resetPromptControllerHost;
+@property (getter=isRunningInBuddy, nonatomic, readonly) bool runningInBuddy;
+@property (nonatomic, retain) NSString *securityCodeRecoveryAttempt;
+@property (nonatomic, retain) PSSetupController *settingsSetupController;
+@property (nonatomic, readonly, retain) NSString *stagedSecurityCode;
+@property (nonatomic, readonly) int stagedSecurityCodeType;
+@property (readonly) Class superclass;
 
 + (void)getStatusWithCompletion:(id)arg1;
 + (id)sharedManager;

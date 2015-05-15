@@ -17,17 +17,17 @@
     NSMutableArray *_stackItems;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readwrite) <SKUIModalDocumentDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIModalDocumentDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSArray * documents;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <SKUIModalSourceViewProvider> * modalSourceViewProvider;
-@property(assign,readwrite) <UINavigationControllerDelegate> * navigationControllerDelegate;
-@property(assign,retain) UIViewController * rootViewController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic) <SKUIModalDocumentDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIModalDocumentDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSArray *documents;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <SKUIModalSourceViewProvider> *modalSourceViewProvider;
+@property (nonatomic) <UINavigationControllerDelegate> *navigationControllerDelegate;
+@property (nonatomic, retain) UIViewController *rootViewController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_dismissOverlayControllerWithStackItem:(id)arg1 animated:(bool)arg2;

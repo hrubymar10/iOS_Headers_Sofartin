@@ -10,9 +10,9 @@
     MPUPinningView *_pinningView;
 }
 
-@property(assign,readwrite) long long backdropViewPrivateStyle;
-@property(assign,retain) UIView * backgroundView;
-@property(assign,retain) UIViewController * contentViewController;
+@property (nonatomic) long long backdropViewPrivateStyle;
+@property (nonatomic, retain) UIView *backgroundView;
+@property (nonatomic, retain) UIViewController *contentViewController;
 
 - (void).cxx_destruct;
 - (void)_embedBackgroundView;

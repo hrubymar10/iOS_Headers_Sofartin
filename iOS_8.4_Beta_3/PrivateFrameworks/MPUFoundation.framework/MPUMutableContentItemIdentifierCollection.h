@@ -4,7 +4,7 @@
 
 @interface MPUMutableContentItemIdentifierCollection : MPUContentItemIdentifierCollection
 
-@property(assign,readwrite) unsigned long long itemType;
+@property (nonatomic) unsigned long long itemType;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)mutableCopyWithZone:(struct _NSZone { }*)arg1;

@@ -13,19 +13,19 @@
     bool _usesCachedBagsOnly;
 }
 
-@property(assign,copy) NSDictionary * allHTTPHeaders;
-@property(assign,readwrite) long long allowedRetryCount;
-@property(assign,readwrite) bool allowsBootstrapCellularData;
-@property(assign,readwrite) bool allowsExpiredBags;
-@property(assign,readwrite) long long bagType;
-@property(assign,readonly) NSString * cacheKey;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool ignoresCaches;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSNumber * userIdentifier;
-@property(assign,readwrite) bool usesCachedBagsOnly;
+@property (nonatomic, copy) NSDictionary *allHTTPHeaders;
+@property (nonatomic) long long allowedRetryCount;
+@property (nonatomic) bool allowsBootstrapCellularData;
+@property (nonatomic) bool allowsExpiredBags;
+@property (nonatomic) long long bagType;
+@property (nonatomic, readonly) NSString *cacheKey;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool ignoresCaches;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSNumber *userIdentifier;
+@property (nonatomic) bool usesCachedBagsOnly;
 
 + (id)contextWithBagType:(long long)arg1;
 

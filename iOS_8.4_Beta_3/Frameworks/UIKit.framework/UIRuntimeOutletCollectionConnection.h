@@ -7,8 +7,8 @@
     NSString *runtimeCollectionClassName;
 }
 
-@property(assign,readwrite) bool addsContentToExistingCollection;
-@property(assign,copy) NSString * runtimeCollectionClassName;
+@property bool addsContentToExistingCollection;
+@property (copy) NSString *runtimeCollectionClassName;
 
 - (bool)addsContentToExistingCollection;
 - (void)connect;

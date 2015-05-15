@@ -15,14 +15,14 @@
     long long _tableViewStyle;
 }
 
-@property(assign,readwrite) bool clearsSelectionOnViewWillAppear;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIRefreshControl * refreshControl;
-@property(getter=_staticDataSource,setter=_setStaticDataSource:,assign,retain) UITableViewDataSource * staticDataSource;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITableView * tableView;
+@property (nonatomic) bool clearsSelectionOnViewWillAppear;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIRefreshControl *refreshControl;
+@property (getter=_staticDataSource, setter=_setStaticDataSource:, nonatomic, retain) UITableViewDataSource *staticDataSource;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UITableView *tableView;
 
 - (void)_adjustTableForKeyboardInfo:(id)arg1;
 - (void)_applyDefaultDataSourceToTable:(id)arg1;

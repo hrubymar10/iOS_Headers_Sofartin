@@ -17,11 +17,11 @@
     id _willDeleteHandler;
 }
 
-@property(setter=_setReferenceBarButtonItem:,assign,retain) UIBarButtonItem * _referenceBarButtonItem;
-@property(assign,readonly) long long action;
-@property(assign,readonly) NSArray * assets;
-@property(assign,readonly) bool handlesDuplicates;
-@property(assign,readonly) PLPhotoLibrary * photoLibrary;
+@property (setter=_setReferenceBarButtonItem:, nonatomic, retain) UIBarButtonItem *_referenceBarButtonItem;
+@property (nonatomic, readonly) long long action;
+@property (nonatomic, readonly) NSArray *assets;
+@property (nonatomic, readonly) bool handlesDuplicates;
+@property (nonatomic, readonly) PLPhotoLibrary *photoLibrary;
 
 - (void)_actionSheetDeletePressed:(bool)arg1;
 - (void)_didCompleteWithDestructiveAction:(bool)arg1;

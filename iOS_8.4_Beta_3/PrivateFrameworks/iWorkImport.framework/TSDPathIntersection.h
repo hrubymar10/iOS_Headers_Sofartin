@@ -13,11 +13,11 @@
     double mTB;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } point;
-@property(assign,readonly) long long segment;
-@property(assign,readonly) long long segmentB;
-@property(assign,readonly) double t;
-@property(assign,readonly) double tB;
+@property (nonatomic) struct CGPoint { double x1; double x2; } point;
+@property (nonatomic, readonly) long long segment;
+@property (nonatomic, readonly) long long segmentB;
+@property (nonatomic, readonly) double t;
+@property (nonatomic, readonly) double tB;
 
 - (long long)compareSegmentAndT:(id)arg1;
 - (long long)compareT:(id)arg1;

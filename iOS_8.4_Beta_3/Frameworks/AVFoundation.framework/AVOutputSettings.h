@@ -6,9 +6,9 @@
     NSDictionary *_outputSettingsDictionary;
 }
 
-@property(assign,readonly) NSSet * compatibleMediaTypes;
-@property(assign,readonly) NSDictionary * outputSettingsDictionary;
-@property(assign,readonly) bool willYieldCompressedSamples;
+@property (nonatomic, readonly) NSSet *compatibleMediaTypes;
+@property (nonatomic, readonly) NSDictionary *outputSettingsDictionary;
+@property (nonatomic, readonly) bool willYieldCompressedSamples;
 
 + (id)_outputSettingsWithOutputSettingsDictionary:(id)arg1 exceptionReason:(id*)arg2;
 + (unsigned long long)_validateOutputSettingsDictionary:(id)arg1 compatibilityDescription:(id*)arg2;

@@ -19,16 +19,16 @@
     bool _useLightStyle;
 }
 
-@property(assign,readonly) NSArray * buttons;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SBUIPasscodeLockNumberPadDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIControl<SBUIPasscodeNumberPadButton> * downButton;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool showsBackspaceButton;
-@property(assign,readwrite) bool showsCancelButton;
-@property(assign,readwrite) bool showsEmergencyCallButton;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *buttons;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SBUIPasscodeLockNumberPadDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIControl<SBUIPasscodeNumberPadButton> *downButton;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool showsBackspaceButton;
+@property (nonatomic) bool showsCancelButton;
+@property (nonatomic) bool showsEmergencyCallButton;
+@property (readonly) Class superclass;
 
 + (id)_buttonForCharacter:(unsigned int)arg1 withLightStyle:(bool)arg2;
 + (struct CGSize { double x1; double x2; })_inputButtonCircleSize;

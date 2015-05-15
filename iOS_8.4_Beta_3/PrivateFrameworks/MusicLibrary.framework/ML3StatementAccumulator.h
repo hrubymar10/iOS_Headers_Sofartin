@@ -13,12 +13,12 @@
     MLMediaLibraryService *_xpcService;
 }
 
-@property(assign,readonly) ML3DatabaseConnection * connection;
-@property(assign,readonly) NSString * databasePath;
-@property(assign,retain) NSUUID * existingTransactionIdentifier;
-@property(assign,readwrite) unsigned long long priorityLevel;
-@property(assign,readonly) NSMutableArray * statementQueue;
-@property(assign,readwrite) unsigned long long statementThreshold;
+@property (nonatomic, readonly) ML3DatabaseConnection *connection;
+@property (nonatomic, readonly) NSString *databasePath;
+@property (nonatomic, retain) NSUUID *existingTransactionIdentifier;
+@property (nonatomic) unsigned long long priorityLevel;
+@property (nonatomic, readonly) NSMutableArray *statementQueue;
+@property (nonatomic) unsigned long long statementThreshold;
 
 - (void).cxx_destruct;
 - (bool)_onQueueFlushAndWait:(bool)arg1;

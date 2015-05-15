@@ -4,8 +4,8 @@
 
 @interface DOMCSSStyleRule : DOMCSSRule
 
-@property(assign,copy) NSString * selectorText;
-@property(assign,readonly) DOMCSSStyleDeclaration * style;
+@property (copy) NSString *selectorText;
+@property (readonly) DOMCSSStyleDeclaration *style;
 
 - (id)selectorText;
 - (void)setSelectorText:(id)arg1;

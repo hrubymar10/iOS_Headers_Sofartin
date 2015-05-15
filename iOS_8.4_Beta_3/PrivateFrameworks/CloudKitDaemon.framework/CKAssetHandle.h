@@ -12,13 +12,13 @@
     NSString *_path;
 }
 
-@property(assign,retain) NSString * UUID;
-@property(assign,retain) NSNumber * deviceID;
-@property(assign,retain) NSNumber * fileID;
-@property(assign,retain) NSNumber * generationID;
-@property(assign,retain) NSNumber * itemID;
-@property(assign,retain) NSNumber * lastUsedTime;
-@property(assign,retain) NSString * path;
+@property (nonatomic, retain) NSString *UUID;
+@property (nonatomic, retain) NSNumber *deviceID;
+@property (nonatomic, retain) NSNumber *fileID;
+@property (nonatomic, retain) NSNumber *generationID;
+@property (nonatomic, retain) NSNumber *itemID;
+@property (nonatomic, retain) NSNumber *lastUsedTime;
+@property (nonatomic, retain) NSString *path;
 
 + (bool)getDeviceID:(id*)arg1 fileID:(id*)arg2 generationID:(id*)arg3 forPath:(id)arg4 error:(id*)arg5;
 

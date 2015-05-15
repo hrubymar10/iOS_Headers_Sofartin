@@ -20,12 +20,12 @@
     NSArray *strings;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } boundingBox;
-@property(assign,readwrite) unsigned long long pageIndex;
-@property(assign,retain) NSArray * rects;
-@property(assign,retain) NSArray * rotationAngles;
-@property(assign,retain) NSString * string;
-@property(assign,retain) NSArray * strings;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } boundingBox;
+@property (nonatomic) unsigned long long pageIndex;
+@property (nonatomic, retain) NSArray *rects;
+@property (nonatomic, retain) NSArray *rotationAngles;
+@property (nonatomic, retain) NSString *string;
+@property (nonatomic, retain) NSArray *strings;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })boundingBox;
 - (void)dealloc;

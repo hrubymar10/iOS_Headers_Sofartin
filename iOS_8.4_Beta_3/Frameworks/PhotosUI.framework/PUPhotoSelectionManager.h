@@ -11,11 +11,11 @@
     NSMutableSet *_uniqueAssetSelection;
 }
 
-@property(assign,readwrite) <PHAssetCollectionDataSource> * dataSource;
-@property(assign,readwrite) <PUPhotoSelectionManagerDelegate> * delegate;
-@property(assign,readonly) long long options;
-@property(assign,readonly) NSOrderedSet * orderedSelectedAssets;
-@property(assign,readonly) NSSet * selectedAssets;
+@property (nonatomic) <PHAssetCollectionDataSource> *dataSource;
+@property (nonatomic) <PUPhotoSelectionManagerDelegate> *delegate;
+@property (nonatomic, readonly) long long options;
+@property (nonatomic, readonly) NSOrderedSet *orderedSelectedAssets;
+@property (nonatomic, readonly) NSSet *selectedAssets;
 
 - (void).cxx_destruct;
 - (void)_beginSelectionChange;

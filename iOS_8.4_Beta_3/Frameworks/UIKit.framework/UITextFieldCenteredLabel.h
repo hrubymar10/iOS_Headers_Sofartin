@@ -7,8 +7,8 @@
     double _textXPosition;
 }
 
-@property(assign,readwrite) double textWidth;
-@property(assign,readwrite) double textXPosition;
+@property (nonatomic) double textWidth;
+@property (nonatomic) double textXPosition;
 
 - (bool)_isTextFieldCenteredLabel;
 - (void)setTextWidth:(double)arg1;

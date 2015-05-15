@@ -10,8 +10,8 @@
     float _progress;
 }
 
-@property(getter=isIndeterminate,assign,readonly) bool indeterminate;
-@property(assign,readwrite) float progress;
+@property (getter=isIndeterminate, nonatomic, readonly) bool indeterminate;
+@property (nonatomic) float progress;
 
 - (void).cxx_destruct;
 - (void)_beginIndeterminateAnimation;

@@ -23,13 +23,13 @@
     BRCServerItem *_serverItem;
 }
 
-@property(assign,retain) BRCDocumentItem * byDocumentID;
-@property(assign,retain) BRCLocalItem * byFileID;
-@property(assign,readonly) BRCLocalItem * byPath;
-@property(assign,readonly) BRCItemID * parentID;
-@property(assign,readonly) BRCRelativePath * relpathOfFSEvent;
-@property(assign,readonly) BRCRelativePath * relpathOfItem;
-@property(assign,readonly) BRCServerItem * serverByPath;
+@property (nonatomic, retain) BRCDocumentItem *byDocumentID;
+@property (nonatomic, retain) BRCLocalItem *byFileID;
+@property (nonatomic, readonly) BRCLocalItem *byPath;
+@property (nonatomic, readonly) BRCItemID *parentID;
+@property (nonatomic, readonly) BRCRelativePath *relpathOfFSEvent;
+@property (nonatomic, readonly) BRCRelativePath *relpathOfItem;
+@property (nonatomic, readonly) BRCServerItem *serverByPath;
 
 + (id)lookupForRelativePath:(id)arg1;
 

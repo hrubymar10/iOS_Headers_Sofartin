@@ -7,8 +7,8 @@
     NSString *_username;
 }
 
-@property(assign,copy) NSString * service;
-@property(assign,copy) NSString * username;
+@property (readonly, copy) NSString *service;
+@property (readonly, copy) NSString *username;
 
 + (id)instantMessageAddressWithUsername:(id)arg1 service:(id)arg2;
 

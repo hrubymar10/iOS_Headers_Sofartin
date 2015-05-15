@@ -9,10 +9,10 @@
     long long _timeReferenceType;
 }
 
-@property(assign,retain) NSString * entryDefinitionKey;
-@property(assign,readwrite) double offset;
-@property(assign,retain) <PLTimeReferenceManager> * timeManager;
-@property(assign,readwrite) long long timeReferenceType;
+@property (retain) NSString *entryDefinitionKey;
+@property (nonatomic) double offset;
+@property (retain) <PLTimeReferenceManager> *timeManager;
+@property long long timeReferenceType;
 
 + (id)defaultsKeyFromEntryDefinitionKey:(id)arg1;
 

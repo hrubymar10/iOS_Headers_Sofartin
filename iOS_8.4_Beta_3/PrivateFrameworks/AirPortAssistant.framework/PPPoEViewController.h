@@ -10,14 +10,14 @@
     UIView *tableHeaderContainerView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIView * justTextContainerView;
-@property(assign,readwrite) UILabel * justTextLabel;
-@property(assign,retain) PPPoEConnectionUIViewController * pppoeConnectionUIViewController;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIView * tableHeaderContainerView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIView *justTextContainerView;
+@property (nonatomic) UILabel *justTextLabel;
+@property (retain) PPPoEConnectionUIViewController *pppoeConnectionUIViewController;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIView *tableHeaderContainerView;
 
 - (void)dealloc;
 - (id)justTextContainerView;

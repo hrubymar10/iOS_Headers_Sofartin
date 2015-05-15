@@ -6,7 +6,7 @@
     MPMediaPlaylist *_assetSyncPlaylist;
 }
 
-@property(assign,retain) MPMediaPlaylist * assetSyncPlaylist;
+@property (nonatomic, retain) MPMediaPlaylist *assetSyncPlaylist;
 
 - (void).cxx_destruct;
 - (void)_mediaLibraryDidChangeNotification:(id)arg1;

@@ -4,10 +4,10 @@
 
 @interface SAMovieV2MovieListSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * movieListCells;
-@property(assign,copy) NSString * subtitle;
-@property(assign,retain) SALocalSearchBusiness2 * theater;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSArray *movieListCells;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, retain) SALocalSearchBusiness2 *theater;
+@property (nonatomic, copy) NSString *title;
 
 + (id)movieListSnippet;
 + (id)movieListSnippetWithDictionary:(id)arg1 context:(id)arg2;

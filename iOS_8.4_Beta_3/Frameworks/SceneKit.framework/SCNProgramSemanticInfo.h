@@ -7,8 +7,8 @@
     NSString *_semantic;
 }
 
-@property(assign,retain) NSDictionary * options;
-@property(assign,copy) NSString * semantic;
+@property (nonatomic, retain) NSDictionary *options;
+@property (nonatomic, copy) NSString *semantic;
 
 + (id)infoWithSemantic:(id)arg1 options:(id)arg2;
 + (bool)supportsSecureCoding;

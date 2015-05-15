@@ -6,13 +6,13 @@
     bool _shiftLocationsIfNeeded;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) GEOMapRegion * resultBoundingRegion;
-@property(assign,readonly) NSString * searchQuery;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) GEOMapServiceTraits * traits;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) GEOMapRegion *resultBoundingRegion;
+@property (nonatomic, readonly) NSString *searchQuery;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) GEOMapServiceTraits *traits;
 
 - (id)initWithRequest:(id)arg1 shiftLocationsIfNeeded:(bool)arg2 traits:(id)arg3;
 - (id)searchQuery;

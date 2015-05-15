@@ -8,13 +8,13 @@
     bool _shouldContain;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) const long long* persistentIDs;
-@property(assign,readonly) bool shouldContain;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long count;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) const long long*persistentIDs;
+@property (nonatomic, readonly) bool shouldContain;
+@property (readonly) Class superclass;
 
 + (id)predicateWithPersistentIDs:(const long long*)arg1 count:(unsigned long long)arg2 shouldContain:(bool)arg3;
 

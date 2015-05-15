@@ -4,7 +4,7 @@
 
 @interface DOMCSSCharsetRule : DOMCSSRule
 
-@property(assign,copy) NSString * encoding;
+@property (readonly, copy) NSString *encoding;
 
 - (id)encoding;
 

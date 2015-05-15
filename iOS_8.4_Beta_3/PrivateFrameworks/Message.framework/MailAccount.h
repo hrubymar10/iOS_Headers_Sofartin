@@ -31,8 +31,8 @@
     MFMailboxUid *_trashMailboxUid;
 }
 
-@property(assign,readonly) bool shouldArchiveByDefault;
-@property(assign,readonly) bool sourceIsManaged;
+@property (readonly) bool shouldArchiveByDefault;
+@property (readonly) bool sourceIsManaged;
 
 + (id)URLForInfo:(id)arg1;
 + (id)_accountContainingEmailAddress:(id)arg1 matchingAddress:(id*)arg2 fullUserName:(id*)arg3 includingInactive:(bool)arg4;

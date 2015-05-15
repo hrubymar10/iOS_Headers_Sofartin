@@ -9,8 +9,8 @@
     id _interruptionHandler;
 }
 
-@property(assign,readwrite) <BiometricKitDelegateXpcProtocol> * delegate;
-@property(assign,copy) id interruptionHandler;
+@property (nonatomic) <BiometricKitDelegateXpcProtocol> *delegate;
+@property (nonatomic, copy) id interruptionHandler;
 
 - (void)cancel;
 - (void)connect;

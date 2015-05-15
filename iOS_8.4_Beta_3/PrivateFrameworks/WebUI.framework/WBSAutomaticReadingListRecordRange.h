@@ -9,10 +9,10 @@
     NSDate *_oldestCreationDate;
 }
 
-@property(assign,copy) id newest;
-@property(assign,copy) NSDate * newestCreationDate;
-@property(assign,copy) id oldest;
-@property(assign,copy) NSDate * oldestCreationDate;
+@property (nonatomic, copy) id newest;
+@property (nonatomic, copy) NSDate *newestCreationDate;
+@property (nonatomic, copy) id oldest;
+@property (nonatomic, copy) NSDate *oldestCreationDate;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

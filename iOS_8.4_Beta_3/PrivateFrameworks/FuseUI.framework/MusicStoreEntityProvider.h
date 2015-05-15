@@ -12,14 +12,14 @@
     MPStoreItemMetadataContext *_storeItemMetadataContext;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,retain) <MusicEntityProviding> * containerEntityProvider;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * storeEntityProviderData;
-@property(assign,readonly) Class storeEntityValueProviderClass;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, retain) <MusicEntityProviding> *containerEntityProvider;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *storeEntityProviderData;
+@property (nonatomic, readonly) Class storeEntityValueProviderClass;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_configureEntityValueContextOutput:(id)arg1 forGlobalIndex:(unsigned long long)arg2;

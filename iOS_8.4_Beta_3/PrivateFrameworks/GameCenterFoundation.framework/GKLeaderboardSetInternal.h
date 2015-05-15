@@ -10,12 +10,12 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSString * groupIdentifier;
-@property(assign,retain) NSDictionary * icons;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSDictionary * leaderboardIdentifiers;
-@property(assign,retain) NSString * setIdentifier;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSString *groupIdentifier;
+@property (nonatomic, retain) NSDictionary *icons;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSDictionary *leaderboardIdentifiers;
+@property (nonatomic, retain) NSString *setIdentifier;
+@property (nonatomic, retain) NSString *title;
 
 + (id)secureCodedPropertyKeys;
 

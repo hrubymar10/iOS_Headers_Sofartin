@@ -4,8 +4,8 @@
 
 @interface SAABContactGroup : SADomainObject
 
-@property(assign,copy) NSString * groupName;
-@property(assign,retain) SASource * groupSource;
+@property (nonatomic, copy) NSString *groupName;
+@property (nonatomic, retain) SASource *groupSource;
 
 + (id)contactGroup;
 + (id)contactGroupWithDictionary:(id)arg1 context:(id)arg2;

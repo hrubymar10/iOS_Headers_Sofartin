@@ -13,12 +13,12 @@
     int _transportType;
 }
 
-@property(assign,readwrite) unsigned int distance;
-@property(assign,readwrite) bool hasDistance;
-@property(assign,readwrite) bool hasTime;
-@property(assign,readwrite) bool hasTransportType;
-@property(assign,readwrite) unsigned int time;
-@property(assign,readwrite) int transportType;
+@property (nonatomic) unsigned int distance;
+@property (nonatomic) bool hasDistance;
+@property (nonatomic) bool hasTime;
+@property (nonatomic) bool hasTransportType;
+@property (nonatomic) unsigned int time;
+@property (nonatomic) int transportType;
 
 + (id)etaForPlaceData:(id)arg1 transportType:(int)arg2;
 + (int)recommendedTransportTypeForPlaceData:(id)arg1;

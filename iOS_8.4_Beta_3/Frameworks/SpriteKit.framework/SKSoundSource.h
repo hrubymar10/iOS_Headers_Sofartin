@@ -7,12 +7,12 @@
     unsigned int _sourceId;
 }
 
-@property(assign,readonly) int completedBufferCount;
-@property(assign,readwrite) double gain;
-@property(assign,readonly) bool isPlaying;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } position;
-@property(assign,readonly) int queuedBufferCount;
-@property(assign,readwrite) bool shouldLoop;
+@property (nonatomic, readonly) int completedBufferCount;
+@property (nonatomic) double gain;
+@property (nonatomic, readonly) bool isPlaying;
+@property (nonatomic) struct CGPoint { double x1; double x2; } position;
+@property (nonatomic, readonly) int queuedBufferCount;
+@property (nonatomic) bool shouldLoop;
 
 + (id)source;
 + (id)sourceWithBuffer:(id)arg1;

@@ -14,10 +14,10 @@
     bool _wantsSwitchAccessoryView;
 }
 
-@property(assign,readwrite) <MusicProductMetadataTableViewCellDelegate> * delegate;
-@property(getter=isSwitchOn,assign,readwrite) bool switchOn;
-@property(assign,readwrite) bool textLabelColorFollowsTintColor;
-@property(assign,readwrite) bool wantsSwitchAccessoryView;
+@property (nonatomic) <MusicProductMetadataTableViewCellDelegate> *delegate;
+@property (getter=isSwitchOn, nonatomic) bool switchOn;
+@property (nonatomic) bool textLabelColorFollowsTintColor;
+@property (nonatomic) bool wantsSwitchAccessoryView;
 
 + (double)defaultHeightForTraitCollection:(id)arg1;
 

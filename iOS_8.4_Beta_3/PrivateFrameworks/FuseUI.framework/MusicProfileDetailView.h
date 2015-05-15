@@ -13,11 +13,11 @@
     bool _titleShouldAllowSelection;
 }
 
-@property(assign,readonly) UIButton * contextualActionsButton;
-@property(assign,readwrite) <MusicProfileDetailViewDelegate> * delegate;
-@property(assign,readwrite) long long tintStyle;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) bool titleShouldAllowSelection;
+@property (nonatomic, readonly) UIButton *contextualActionsButton;
+@property (nonatomic) <MusicProfileDetailViewDelegate> *delegate;
+@property (nonatomic) long long tintStyle;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) bool titleShouldAllowSelection;
 
 - (void).cxx_destruct;
 - (void)_contextualActionsButtonTapped:(id)arg1;

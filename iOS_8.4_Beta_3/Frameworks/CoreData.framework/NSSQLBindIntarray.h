@@ -8,9 +8,9 @@
     id _value;
 }
 
-@property(assign,readwrite) unsigned int index;
-@property(assign,retain) NSString * tableName;
-@property(assign,retain) id value;
+@property unsigned int index;
+@property (retain) NSString *tableName;
+@property (retain) id value;
 
 - (void)dealloc;
 - (unsigned int)index;

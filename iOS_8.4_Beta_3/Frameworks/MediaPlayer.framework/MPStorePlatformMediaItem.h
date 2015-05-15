@@ -6,7 +6,7 @@
     MPStoreItemMetadata *_storeItemMetadata;
 }
 
-@property(assign,retain) MPStoreItemMetadata * storeItemMetadata;
+@property (nonatomic, retain) MPStoreItemMetadata *storeItemMetadata;
 
 + (id)defaultPropertyValues;
 

@@ -4,8 +4,8 @@
 
 @interface VKVegetationDrawStyle : VKRenderStyle
 
-@property(assign,readonly) float brightness;
-@property(assign,readonly) bool visible;
+@property (nonatomic, readonly) float brightness;
+@property (nonatomic, readonly) bool visible;
 
 + (int)renderStyleID;
 

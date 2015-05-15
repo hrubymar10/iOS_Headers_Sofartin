@@ -7,8 +7,8 @@
     long long _roundingValue;
 }
 
-@property(assign,readwrite) unsigned long long calendarUnit;
-@property(assign,readwrite) long long roundingValue;
+@property (nonatomic) unsigned long long calendarUnit;
+@property (nonatomic) long long roundingValue;
 
 - (id)_anchorDiffComponents;
 - (bool)_componentsSuccessful:(id)arg1;

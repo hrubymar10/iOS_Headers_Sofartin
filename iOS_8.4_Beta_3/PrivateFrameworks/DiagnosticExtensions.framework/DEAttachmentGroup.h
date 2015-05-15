@@ -7,8 +7,8 @@
     NSURL *_rootURL;
 }
 
-@property(assign,retain) NSArray * attachmentItems;
-@property(assign,retain) NSURL * rootURL;
+@property (nonatomic, retain) NSArray *attachmentItems;
+@property (nonatomic, retain) NSURL *rootURL;
 
 + (id)createWithName:(id)arg1 rootURL:(id)arg2 attachmentItems:(id)arg3;
 + (bool)supportsSecureCoding;

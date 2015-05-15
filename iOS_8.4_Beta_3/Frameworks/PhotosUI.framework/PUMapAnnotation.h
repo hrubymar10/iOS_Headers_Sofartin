@@ -16,21 +16,21 @@
     unsigned long long _relativeOrder;
 }
 
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,readonly) unsigned long long count;
-@property(assign,retain) NSDate * dateCreated;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject * itemId;
-@property(assign,retain) PUMapItem * mapItem;
-@property(assign,readonly) NSArray * mapItems;
-@property(assign,readonly) struct { double x1; double x2; } originalCoordinate;
-@property(assign,readwrite) unsigned long long relativeOrder;
-@property(assign,retain) NSMutableSet * subAnnotations;
-@property(assign,copy) NSString * subtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, readonly, retain) NSDate *dateCreated;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) NSObject *itemId;
+@property (nonatomic, retain) PUMapItem *mapItem;
+@property (nonatomic, readonly) NSArray *mapItems;
+@property (nonatomic, readonly) struct { double x1; double x2; } originalCoordinate;
+@property (nonatomic) unsigned long long relativeOrder;
+@property (nonatomic, readonly, retain) NSMutableSet *subAnnotations;
+@property (nonatomic, readonly, copy) NSString *subtitle;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, copy) NSString *title;
 
 + (id)annotationSortingComparatorNewestToOldest;
 + (id)annotationSortingComparatorOldestToNewest;

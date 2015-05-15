@@ -13,7 +13,7 @@
     NSURL *_url2;
 }
 
-@property(assign,readwrite) bool isUpdateForReconnecting;
+@property (nonatomic) bool isUpdateForReconnecting;
 
 + (void)itemAtPath:(id)arg1 didBounceToName:(id)arg2;
 + (void)itemAtPath:(id)arg1 logicalFilename:(id)arg2 didMoveToPath:(id)arg3 logicalFilename:(id)arg4 hasContentUpdate:(bool)arg5;

@@ -4,7 +4,7 @@
 
 @interface SAAddResultObjects : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * objects;
+@property (nonatomic, copy) NSArray *objects;
 
 + (id)addResultObjects;
 + (id)addResultObjectsWithDictionary:(id)arg1 context:(id)arg2;

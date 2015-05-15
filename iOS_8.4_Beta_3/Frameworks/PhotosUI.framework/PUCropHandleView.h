@@ -12,22 +12,22 @@
     bool _overlayHidden;
 }
 
-@property(setter=_setLayoutReferenceView:,assign,retain) UIView * _layoutReferenceView;
-@property(setter=_setLineViews:,assign,retain) NSArray * _lineViews;
-@property(setter=_setLineWidthConstraint:,assign,retain) NSLayoutConstraint * _lineWidthConstraint;
-@property(setter=_setOverlayViews:,assign,retain) NSArray * _overlayViews;
-@property(assign,readonly) NSArray * adjacentHandles;
-@property(getter=isBottom,assign,readonly) bool bottom;
-@property(getter=isCorner,assign,readonly) bool corner;
-@property(assign,readonly) unsigned long long handle;
-@property(getter=isLateral,assign,readonly) bool lateral;
-@property(assign,readonly) id layoutReferenceItem;
-@property(getter=isLeft,assign,readonly) bool left;
-@property(getter=isLineWeightHeavy,assign,readwrite) bool lineWeightHeavy;
-@property(assign,readonly) unsigned long long oppositeHandle;
-@property(getter=isOverlayHidden,assign,readwrite) bool overlayHidden;
-@property(getter=isRight,assign,readonly) bool right;
-@property(getter=isTop,assign,readonly) bool top;
+@property (setter=_setLayoutReferenceView:, nonatomic, retain) UIView *_layoutReferenceView;
+@property (setter=_setLineViews:, nonatomic, retain) NSArray *_lineViews;
+@property (setter=_setLineWidthConstraint:, nonatomic, retain) NSLayoutConstraint *_lineWidthConstraint;
+@property (setter=_setOverlayViews:, nonatomic, retain) NSArray *_overlayViews;
+@property (nonatomic, readonly) NSArray *adjacentHandles;
+@property (getter=isBottom, nonatomic, readonly) bool bottom;
+@property (getter=isCorner, nonatomic, readonly) bool corner;
+@property (nonatomic, readonly) unsigned long long handle;
+@property (getter=isLateral, nonatomic, readonly) bool lateral;
+@property (nonatomic, readonly) id layoutReferenceItem;
+@property (getter=isLeft, nonatomic, readonly) bool left;
+@property (getter=isLineWeightHeavy, nonatomic) bool lineWeightHeavy;
+@property (nonatomic, readonly) unsigned long long oppositeHandle;
+@property (getter=isOverlayHidden, nonatomic) bool overlayHidden;
+@property (getter=isRight, nonatomic, readonly) bool right;
+@property (getter=isTop, nonatomic, readonly) bool top;
 
 + (id)allHandles;
 

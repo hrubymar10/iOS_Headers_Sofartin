@@ -13,18 +13,18 @@
     <_UIDocumentPickerServiceViewController> *_weak_serviceViewController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIActivityIndicatorView * initialActivityView;
-@property(assign,retain) _UIDocumentPickerContainerModel * model;
-@property(assign,copy) NSArray * modelObjects;
-@property(assign,retain) id monitoringToken;
-@property(assign,readwrite) <_UIDocumentPickerServiceViewController> * serviceViewController;
-@property(assign,readwrite) bool shouldHideSortBar;
-@property(assign,retain) _UIDocumentPickerSortOrderView * sortView;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool updatesMayAnimate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIActivityIndicatorView *initialActivityView;
+@property (nonatomic, retain) _UIDocumentPickerContainerModel *model;
+@property (nonatomic, copy) NSArray *modelObjects;
+@property (nonatomic, retain) id monitoringToken;
+@property (nonatomic) <_UIDocumentPickerServiceViewController> *serviceViewController;
+@property (nonatomic) bool shouldHideSortBar;
+@property (nonatomic, retain) _UIDocumentPickerSortOrderView *sortView;
+@property (readonly) Class superclass;
+@property (nonatomic) bool updatesMayAnimate;
 
 - (void)_dynamicTypeSizeChanged:(id)arg1;
 - (void)_unlockAnimations;

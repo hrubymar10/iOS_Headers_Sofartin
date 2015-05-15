@@ -26,15 +26,15 @@
     NSMutableArray *_yearsWithNames;
 }
 
-@property(assign,retain) NSDate * date;
-@property(assign,retain) FUScrollWheel * dateWheel;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <FUDatePickerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) FUScrollWheel * monthWheel;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) FUScrollWheel * yearWheel;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, retain) FUScrollWheel *dateWheel;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <FUDatePickerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) FUScrollWheel *monthWheel;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) FUScrollWheel *yearWheel;
 
 - (void).cxx_destruct;
 - (void)_updateDateRange:(bool)arg1;

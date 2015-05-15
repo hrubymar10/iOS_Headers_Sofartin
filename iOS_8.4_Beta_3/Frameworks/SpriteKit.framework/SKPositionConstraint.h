@@ -7,8 +7,8 @@
     SKRange *_yRange;
 }
 
-@property(assign,copy) SKRange * xRange;
-@property(assign,copy) SKRange * yRange;
+@property (copy) SKRange *xRange;
+@property (copy) SKRange *yRange;
 
 + (id)constraintWithXRange:(id)arg1;
 + (id)constraintWithXRange:(id)arg1 YRange:(id)arg2;

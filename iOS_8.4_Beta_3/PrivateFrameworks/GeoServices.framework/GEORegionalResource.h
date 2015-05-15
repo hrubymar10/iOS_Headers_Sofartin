@@ -24,19 +24,19 @@
     unsigned int _z;
 }
 
-@property(assign,retain) NSMutableArray * attributions;
-@property(assign,readwrite) bool hasX;
-@property(assign,readwrite) bool hasY;
-@property(assign,readwrite) bool hasZ;
-@property(assign,retain) NSMutableArray * iconChecksums;
-@property(assign,retain) NSMutableArray * icons;
-@property(assign,readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; unsigned int x6; }* tileRanges;
-@property(assign,readonly) unsigned long long tileRangesCount;
-@property(assign,readonly) unsigned int* validSubManifestVersions;
-@property(assign,readonly) unsigned long long validSubManifestVersionsCount;
-@property(assign,readwrite) unsigned int x;
-@property(assign,readwrite) unsigned int y;
-@property(assign,readwrite) unsigned int z;
+@property (nonatomic, retain) NSMutableArray *attributions;
+@property (nonatomic) bool hasX;
+@property (nonatomic) bool hasY;
+@property (nonatomic) bool hasZ;
+@property (nonatomic, retain) NSMutableArray *iconChecksums;
+@property (nonatomic, retain) NSMutableArray *icons;
+@property (nonatomic, readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; unsigned int x6; }*tileRanges;
+@property (nonatomic, readonly) unsigned long long tileRangesCount;
+@property (nonatomic, readonly) unsigned int*validSubManifestVersions;
+@property (nonatomic, readonly) unsigned long long validSubManifestVersionsCount;
+@property (nonatomic) unsigned int x;
+@property (nonatomic) unsigned int y;
+@property (nonatomic) unsigned int z;
 
 - (void)addAttribution:(id)arg1;
 - (void)addIcon:(id)arg1;

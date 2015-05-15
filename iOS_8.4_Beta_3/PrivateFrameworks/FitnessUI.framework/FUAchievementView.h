@@ -8,8 +8,8 @@
     long long _sizeClass;
 }
 
-@property(assign,retain) HKAchievement * achievement;
-@property(assign,readwrite) long long sizeClass;
+@property (nonatomic, retain) HKAchievement *achievement;
+@property (nonatomic) long long sizeClass;
 
 - (void).cxx_destruct;
 - (id)achievement;

@@ -6,7 +6,7 @@
     NSArray *_stockList;
 }
 
-@property(assign,retain) NSArray * stockList;
+@property (nonatomic, retain) NSArray *stockList;
 
 + (bool)supportsSecureCoding;
 

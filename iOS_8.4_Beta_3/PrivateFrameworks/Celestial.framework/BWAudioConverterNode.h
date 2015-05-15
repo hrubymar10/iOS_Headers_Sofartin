@@ -7,7 +7,7 @@
     NSDictionary *_settings;
 }
 
-@property(assign,readonly) NSDictionary * gaplessPlaybackInfo;
+@property (nonatomic, readonly) NSDictionary *gaplessPlaybackInfo;
 
 + (void)initialize;
 

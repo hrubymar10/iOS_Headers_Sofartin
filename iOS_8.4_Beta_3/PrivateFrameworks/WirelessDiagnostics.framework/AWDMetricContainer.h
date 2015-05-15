@@ -7,8 +7,8 @@
     unsigned int _metricId;
 }
 
-@property(assign,retain) PBCodable * metric;
-@property(assign,readonly) unsigned int metricId;
+@property (nonatomic, retain) PBCodable *metric;
+@property (nonatomic, readonly) unsigned int metricId;
 
 - (void)dealloc;
 - (id)initWithMetricId:(unsigned int)arg1;

@@ -4,16 +4,16 @@
 
 @interface DOMValidityState : DOMObject
 
-@property(assign,readonly) bool badInput;
-@property(assign,readonly) bool customError;
-@property(assign,readonly) bool patternMismatch;
-@property(assign,readonly) bool rangeOverflow;
-@property(assign,readonly) bool rangeUnderflow;
-@property(assign,readonly) bool stepMismatch;
-@property(assign,readonly) bool tooLong;
-@property(assign,readonly) bool typeMismatch;
-@property(assign,readonly) bool valid;
-@property(assign,readonly) bool valueMissing;
+@property (readonly) bool badInput;
+@property (readonly) bool customError;
+@property (readonly) bool patternMismatch;
+@property (readonly) bool rangeOverflow;
+@property (readonly) bool rangeUnderflow;
+@property (readonly) bool stepMismatch;
+@property (readonly) bool tooLong;
+@property (readonly) bool typeMismatch;
+@property (readonly) bool valid;
+@property (readonly) bool valueMissing;
 
 - (bool)badInput;
 - (bool)customError;

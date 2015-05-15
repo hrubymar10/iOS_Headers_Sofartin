@@ -13,19 +13,19 @@
     bool _zoomed;
 }
 
-@property(assign,retain) PHFetchResult * assets;
-@property(assign,retain) NSArray * assetsToSend;
-@property(assign,retain) UICollectionView * collectionView;
-@property(assign,retain) CKPhotoPickerCollectionViewLayout * collectionViewLayout;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKPhotoPickerCollectionViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PHCachingImageManager * imageManager;
-@property(assign,readwrite) long long maxAssetsToDisplay;
-@property(assign,retain) NSMutableDictionary * selectedFullAssets;
-@property(assign,readonly) Class superclass;
-@property(getter=isZoomed,assign,readwrite) bool zoomed;
+@property (nonatomic, retain) PHFetchResult *assets;
+@property (nonatomic, readonly, retain) NSArray *assetsToSend;
+@property (nonatomic, retain) UICollectionView *collectionView;
+@property (nonatomic, retain) CKPhotoPickerCollectionViewLayout *collectionViewLayout;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKPhotoPickerCollectionViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PHCachingImageManager *imageManager;
+@property (nonatomic) long long maxAssetsToDisplay;
+@property (nonatomic, retain) NSMutableDictionary *selectedFullAssets;
+@property (readonly) Class superclass;
+@property (getter=isZoomed, nonatomic) bool zoomed;
 
 - (id)_imageRequestOptions;
 - (void)_populatePreviewForSendingItem:(id)arg1 withAsset:(id)arg2;

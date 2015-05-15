@@ -6,7 +6,7 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,retain) <ABStyleProvider> * styleProvider;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
 
 - (void)dealloc;
 - (void)layoutSubviews;

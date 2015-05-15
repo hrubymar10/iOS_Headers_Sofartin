@@ -4,7 +4,7 @@
 
 @interface SAMPRateMediaEntity : SABaseClientBoundCommand
 
-@property(assign,readwrite) long long rating;
+@property (nonatomic) long long rating;
 
 + (id)rateMediaEntity;
 + (id)rateMediaEntityWithDictionary:(id)arg1 context:(id)arg2;

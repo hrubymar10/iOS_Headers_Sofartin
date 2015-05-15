@@ -33,22 +33,22 @@
     unsigned long long _visibleSectionToRestoreOnAppearence;
 }
 
-@property(assign,retain) _UIAccessDeniedView * accessDeniedView;
-@property(assign,retain) EKCalendarItem * calendarItem;
-@property(assign,readwrite) bool canHideDoneAndCancelButtons;
-@property(assign,readonly) EKCalendarItemEditItem * currentEditItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) <EKCalendarItemEditorDelegate> * editorDelegate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double navBarLeftContentInset;
-@property(assign,readwrite) double navBarRightContentInset;
-@property(assign,retain) UIResponder * responderToRestoreOnAppearence;
-@property(assign,readwrite) bool scrollToNotes;
-@property(assign,readwrite) bool showsTimeZone;
-@property(assign,retain) EKEventStore * store;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long visibleSectionToRestoreOnAppearence;
+@property (nonatomic, retain) _UIAccessDeniedView *accessDeniedView;
+@property (nonatomic, retain) EKCalendarItem *calendarItem;
+@property (nonatomic) bool canHideDoneAndCancelButtons;
+@property (readonly) EKCalendarItemEditItem *currentEditItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) <EKCalendarItemEditorDelegate> *editorDelegate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double navBarLeftContentInset;
+@property (nonatomic) double navBarRightContentInset;
+@property (nonatomic, retain) UIResponder *responderToRestoreOnAppearence;
+@property (nonatomic) bool scrollToNotes;
+@property (nonatomic) bool showsTimeZone;
+@property (nonatomic, retain) EKEventStore *store;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned long long visibleSectionToRestoreOnAppearence;
 
 - (void).cxx_destruct;
 - (bool)_canDetachSingleOccurrence;

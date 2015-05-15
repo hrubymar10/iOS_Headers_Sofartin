@@ -4,8 +4,8 @@
 
 @interface IKProgressIndicatorElement : IKViewElement
 
-@property(assign,readonly) unsigned long long percentage;
-@property(assign,readonly) NSString * type;
+@property (nonatomic, readonly) unsigned long long percentage;
+@property (nonatomic, readonly) NSString *type;
 
 + (bool)shouldParseChildDOMElements;
 

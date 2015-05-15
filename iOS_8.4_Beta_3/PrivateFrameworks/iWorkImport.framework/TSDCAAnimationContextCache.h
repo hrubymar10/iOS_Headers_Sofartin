@@ -10,15 +10,15 @@
     CAMediaTimingFunction *_timingFunction;
 }
 
-@property(assign,readonly) double beginTime;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double duration;
-@property(assign,readonly) NSString * fillMode;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) double timeOffset;
-@property(assign,readonly) CAMediaTimingFunction * timingFunction;
+@property (nonatomic, readonly) double beginTime;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic, readonly) NSString *fillMode;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) double timeOffset;
+@property (nonatomic, readonly) CAMediaTimingFunction *timingFunction;
 
 - (double)beginTime;
 - (double)duration;

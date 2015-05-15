@@ -16,17 +16,17 @@
     bool _wirelessSync;
 }
 
-@property(getter=isAutomaticSync,assign,readwrite) bool automaticSync;
-@property(assign,readwrite) unsigned long long completedAssetCount;
-@property(assign,copy) NSString * dataClass;
-@property(assign,copy) NSString * libraryID;
-@property(assign,copy) NSString * localizedDescription;
-@property(assign,readwrite) float progress;
-@property(assign,readwrite) unsigned int syncStage;
-@property(assign,readwrite) unsigned int syncType;
-@property(assign,readwrite) unsigned long long totalAssetCount;
-@property(assign,readwrite) unsigned long long totalItemCount;
-@property(getter=isWirelessSync,assign,readwrite) bool wirelessSync;
+@property (getter=isAutomaticSync, nonatomic) bool automaticSync;
+@property (nonatomic) unsigned long long completedAssetCount;
+@property (nonatomic, copy) NSString *dataClass;
+@property (nonatomic, copy) NSString *libraryID;
+@property (nonatomic, copy) NSString *localizedDescription;
+@property (nonatomic) float progress;
+@property (nonatomic) unsigned int syncStage;
+@property (nonatomic) unsigned int syncType;
+@property (nonatomic) unsigned long long totalAssetCount;
+@property (nonatomic) unsigned long long totalItemCount;
+@property (getter=isWirelessSync, nonatomic) bool wirelessSync;
 
 + (bool)supportsSecureCoding;
 

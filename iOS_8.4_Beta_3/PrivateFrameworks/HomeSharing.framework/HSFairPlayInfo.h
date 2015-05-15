@@ -8,7 +8,7 @@
     void *_session;
 }
 
-@property(assign,readonly) NSString * deviceGUID;
+@property (nonatomic, readonly) NSString *deviceGUID;
 
 - (void).cxx_destruct;
 - (bool)_getHardwareInfo:(struct FairPlayHWInfo_ { unsigned int x1; unsigned char x2[20]; }*)arg1;

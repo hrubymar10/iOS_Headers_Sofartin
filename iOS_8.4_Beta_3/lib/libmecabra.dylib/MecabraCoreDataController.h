@@ -16,16 +16,16 @@
     NSString *_type;
 }
 
-@property(assign,readonly) NSEntityDescription * entityDescription;
-@property(assign,readonly) NSURL * localInfoPlistURL;
-@property(assign,retain) NSURL * localStoreURL;
-@property(assign,retain) NSURL * localURL;
-@property(assign,retain) NSManagedObjectContext * managedObjectContext;
-@property(assign,retain) NSManagedObjectModel * managedObjectModel;
-@property(assign,retain) NSPersistentStoreCoordinator * persistentStoreCoordinator;
-@property(assign,retain) NSURL * storeURL;
-@property(assign,retain) NSArray * storedElementsForMerge;
-@property(assign,retain) NSString * type;
+@property (nonatomic, readonly) NSEntityDescription *entityDescription;
+@property (nonatomic, readonly) NSURL *localInfoPlistURL;
+@property (nonatomic, retain) NSURL *localStoreURL;
+@property (nonatomic, retain) NSURL *localURL;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (nonatomic, retain) NSURL *storeURL;
+@property (nonatomic, retain) NSArray *storedElementsForMerge;
+@property (nonatomic, retain) NSString *type;
 
 + (void)resetDatabaseWithType:(id)arg1 URL:(id)arg2;
 

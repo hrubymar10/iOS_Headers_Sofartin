@@ -17,14 +17,14 @@
     NSData *_xmlData;
 }
 
-@property(assign,retain) NSURL * baseURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUIParserDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool succeeded;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSData * xmlData;
+@property (nonatomic, retain) NSURL *baseURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUIParserDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool succeeded;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSData *xmlData;
 
 + (long long)textAlignmentForString:(id)arg1;
 

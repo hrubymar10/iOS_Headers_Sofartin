@@ -14,15 +14,15 @@
     bool _sentinelExists;
 }
 
-@property(assign,retain) NSMutableArray * appleLanguages;
-@property(assign,retain) NSString * appleLocale;
-@property(assign,retain) NSString * deviceName;
-@property(assign,readonly) bool hasAppleLocale;
-@property(assign,readonly) bool hasDeviceName;
-@property(assign,readwrite) bool hasRemoveSentinel;
-@property(assign,readwrite) bool hasSentinelExists;
-@property(assign,readwrite) bool removeSentinel;
-@property(assign,readwrite) bool sentinelExists;
+@property (nonatomic, retain) NSMutableArray *appleLanguages;
+@property (nonatomic, retain) NSString *appleLocale;
+@property (nonatomic, retain) NSString *deviceName;
+@property (nonatomic, readonly) bool hasAppleLocale;
+@property (nonatomic, readonly) bool hasDeviceName;
+@property (nonatomic) bool hasRemoveSentinel;
+@property (nonatomic) bool hasSentinelExists;
+@property (nonatomic) bool removeSentinel;
+@property (nonatomic) bool sentinelExists;
 
 - (void).cxx_destruct;
 - (void)addAppleLanguages:(id)arg1;

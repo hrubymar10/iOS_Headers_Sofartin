@@ -7,12 +7,12 @@
     unsigned long long _order;
 }
 
-@property(assign,readwrite) bool allowCollectionInfluence;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long order;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool allowCollectionInfluence;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long order;
+@property (readonly) Class superclass;
 
 + (void)_clearSelection;
 + (id)_currentlySelectedAssets;

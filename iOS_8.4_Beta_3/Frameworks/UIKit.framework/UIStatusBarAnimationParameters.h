@@ -10,11 +10,11 @@
     double _startTime;
 }
 
-@property(assign,retain) <_UIBasicAnimationFactory> * animationFactory;
-@property(assign,readwrite) long long curve;
-@property(assign,readwrite) double delay;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) double startTime;
+@property (nonatomic, retain) <_UIBasicAnimationFactory> *animationFactory;
+@property (nonatomic) long long curve;
+@property (nonatomic) double delay;
+@property (nonatomic) double duration;
+@property (nonatomic) double startTime;
 
 + (void)animateWithParameters:(id)arg1 animations:(id)arg2 completion:(id)arg3;
 + (void)animateWithParameters:(id)arg1 fromCurrentState:(bool)arg2 animations:(id)arg3 completion:(id)arg4;

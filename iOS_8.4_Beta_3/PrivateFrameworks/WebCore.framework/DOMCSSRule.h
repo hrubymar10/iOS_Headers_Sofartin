@@ -4,10 +4,10 @@
 
 @interface DOMCSSRule : DOMObject
 
-@property(assign,copy) NSString * cssText;
-@property(assign,readonly) DOMCSSRule * parentRule;
-@property(assign,readonly) DOMCSSStyleSheet * parentStyleSheet;
-@property(assign,readonly) unsigned short type;
+@property (copy) NSString *cssText;
+@property (readonly) DOMCSSRule *parentRule;
+@property (readonly) DOMCSSStyleSheet *parentStyleSheet;
+@property (readonly) unsigned short type;
 
 - (id)cssText;
 - (void)dealloc;

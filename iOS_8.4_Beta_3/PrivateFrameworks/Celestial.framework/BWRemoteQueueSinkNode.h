@@ -21,7 +21,7 @@
     NSDictionary *_videoColorInfo;
 }
 
-@property(assign,readwrite) <BWRemoteQueueSinkNodeDelegate> * delegate;
+@property (nonatomic) <BWRemoteQueueSinkNodeDelegate> *delegate;
 
 + (void)initialize;
 

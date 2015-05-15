@@ -21,11 +21,11 @@
     double _tickHorizontalSpacing;
 }
 
-@property(assign,retain) UIFont * labelFont;
-@property(assign,readwrite) double majorTickHeight;
-@property(assign,readwrite) double minorTickHeight;
-@property(assign,readwrite) unsigned long long minorTicksPerSection;
-@property(assign,readwrite) double tickHorizontalSpacing;
+@property (nonatomic, retain) UIFont *labelFont;
+@property (nonatomic) double majorTickHeight;
+@property (nonatomic) double minorTickHeight;
+@property (nonatomic) unsigned long long minorTicksPerSection;
+@property (nonatomic) double tickHorizontalSpacing;
 
 - (void)dealloc;
 - (id)graduatedSection;

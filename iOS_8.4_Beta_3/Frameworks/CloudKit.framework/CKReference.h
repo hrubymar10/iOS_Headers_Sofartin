@@ -7,12 +7,12 @@
     unsigned long long _referenceAction;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) CKRecordID * recordID;
-@property(assign,readonly) unsigned long long referenceAction;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) CKRecordID *recordID;
+@property (nonatomic, readonly) unsigned long long referenceAction;
+@property (readonly) Class superclass;
 
 + (bool)supportsSecureCoding;
 

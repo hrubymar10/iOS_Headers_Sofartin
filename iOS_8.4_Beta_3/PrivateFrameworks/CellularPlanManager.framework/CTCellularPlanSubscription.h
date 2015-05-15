@@ -19,20 +19,20 @@
     double _timestamp;
 }
 
-@property(assign,readonly) int accountStatus;
-@property(assign,readonly) NSString * accountURL;
-@property(assign,readonly) bool autoRenew;
-@property(assign,readonly) double billingEndDate;
-@property(assign,readonly) double billingStartDate;
-@property(assign,readonly) NSString * carrierName;
-@property(assign,readonly) NSArray * dataUsage;
-@property(assign,readonly) NSArray * homeCountryList;
-@property(assign,readonly) NSString * iccid;
-@property(assign,readonly) NSString * planDescription;
-@property(assign,readonly) int planStatus;
-@property(assign,readonly) int planType;
-@property(assign,readwrite) int subscriptionResult;
-@property(assign,readonly) double timestamp;
+@property (nonatomic, readonly) int accountStatus;
+@property (nonatomic, readonly) NSString *accountURL;
+@property (nonatomic, readonly) bool autoRenew;
+@property (nonatomic, readonly) double billingEndDate;
+@property (nonatomic, readonly) double billingStartDate;
+@property (nonatomic, readonly) NSString *carrierName;
+@property (nonatomic, readonly) NSArray *dataUsage;
+@property (nonatomic, readonly) NSArray *homeCountryList;
+@property (nonatomic, readonly) NSString *iccid;
+@property (nonatomic, readonly) NSString *planDescription;
+@property (nonatomic, readonly) int planStatus;
+@property (nonatomic, readonly) int planType;
+@property (nonatomic) int subscriptionResult;
+@property (nonatomic, readonly) double timestamp;
 
 + (bool)supportsSecureCoding;
 

@@ -16,14 +16,14 @@
     unsigned int _routeDiscoveryMode;
 }
 
-@property(assign,readwrite) bool canBeNowPlayingApp;
-@property(assign,copy) NSArray * commandHandlerBlocks;
-@property(assign,readwrite) bool isOverrideApp;
-@property(assign,readwrite) bool keepAlive;
-@property(assign,retain) MRNowPlayingArtwork * nowPlayingArtwork;
-@property(assign,retain) NSDictionary * nowPlayingInfo;
-@property(assign,readonly) struct _MROrigin { }* origin;
-@property(assign,readwrite) unsigned int routeDiscoveryMode;
+@property (nonatomic) bool canBeNowPlayingApp;
+@property (nonatomic, readonly, copy) NSArray *commandHandlerBlocks;
+@property (nonatomic) bool isOverrideApp;
+@property (nonatomic) bool keepAlive;
+@property (nonatomic, retain) MRNowPlayingArtwork *nowPlayingArtwork;
+@property (nonatomic, retain) NSDictionary *nowPlayingInfo;
+@property (nonatomic, readonly) struct _MROrigin { }*origin;
+@property (nonatomic) unsigned int routeDiscoveryMode;
 
 - (void)_avSystemControllerServerConnectionDiedNotification:(id)arg1;
 - (void)addCommandHandlerBlock:(id)arg1 forKey:(id)arg2;

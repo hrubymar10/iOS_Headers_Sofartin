@@ -13,12 +13,12 @@
     id _reserved;
 }
 
-@property(assign,readwrite) double height;
-@property(assign,readwrite) long long heightSegmentCount;
-@property(assign,readwrite) double length;
-@property(assign,readwrite) long long lengthSegmentCount;
-@property(assign,readwrite) double width;
-@property(assign,readwrite) long long widthSegmentCount;
+@property (nonatomic) double height;
+@property (nonatomic) long long heightSegmentCount;
+@property (nonatomic) double length;
+@property (nonatomic) long long lengthSegmentCount;
+@property (nonatomic) double width;
+@property (nonatomic) long long widthSegmentCount;
 
 + (id)SCNJSExportProtocol;
 + (id)pyramidWithWidth:(double)arg1 height:(double)arg2 length:(double)arg3;

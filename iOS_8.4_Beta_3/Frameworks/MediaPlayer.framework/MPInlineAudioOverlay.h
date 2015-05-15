@@ -12,9 +12,9 @@
     <MPVideoControllerProtocol> *_videoViewController;
 }
 
-@property(assign,copy) NSString * playbackErrorDescription;
-@property(assign,readwrite) long long style;
-@property(assign,readwrite) <MPVideoControllerProtocol> * videoViewController;
+@property (nonatomic, copy) NSString *playbackErrorDescription;
+@property (nonatomic) long long style;
+@property (nonatomic) <MPVideoControllerProtocol> *videoViewController;
 
 - (void).cxx_destruct;
 - (void)_availableRoutesDidChangeNotification:(id)arg1;

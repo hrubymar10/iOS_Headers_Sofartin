@@ -8,9 +8,9 @@
     CKSQLiteStatement *_statement;
 }
 
-@property(assign,copy) id block;
-@property(assign,readwrite) bool closed;
-@property(assign,retain) CKSQLiteStatement * statement;
+@property (nonatomic, copy) id block;
+@property (nonatomic) bool closed;
+@property (nonatomic, retain) CKSQLiteStatement *statement;
 
 - (void).cxx_destruct;
 - (id)block;

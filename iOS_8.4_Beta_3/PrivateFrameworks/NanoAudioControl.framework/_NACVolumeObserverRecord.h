@@ -12,13 +12,13 @@
     bool _volumeWarningEnabled;
 }
 
-@property(assign,readwrite) float EUVolumeLimit;
-@property(getter=isMuted,assign,readwrite) bool muted;
-@property(assign,retain) MPAVRoutingController * routingController;
-@property(assign,retain) NACEventThrottler * throttler;
-@property(getter=isVolumeControlAvailable,assign,readwrite) bool volumeControlAvailable;
-@property(assign,retain) MPVolumeController * volumeController;
-@property(getter=isVolumeWarningEnabled,assign,readwrite) bool volumeWarningEnabled;
+@property (nonatomic) float EUVolumeLimit;
+@property (getter=isMuted, nonatomic) bool muted;
+@property (nonatomic, retain) MPAVRoutingController *routingController;
+@property (nonatomic, retain) NACEventThrottler *throttler;
+@property (getter=isVolumeControlAvailable, nonatomic) bool volumeControlAvailable;
+@property (nonatomic, retain) MPVolumeController *volumeController;
+@property (getter=isVolumeWarningEnabled, nonatomic) bool volumeWarningEnabled;
 
 - (void).cxx_destruct;
 - (float)EUVolumeLimit;

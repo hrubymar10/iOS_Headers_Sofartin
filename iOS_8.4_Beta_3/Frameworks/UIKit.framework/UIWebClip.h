@@ -31,26 +31,26 @@
     NSString *title;
 }
 
-@property(assign,readwrite) bool classicMode;
-@property(assign,readwrite) id delegate;
-@property(assign,readwrite) bool fullScreen;
-@property(assign,retain) UIImage * iconImage;
-@property(assign,readonly) NSString * iconImagePath;
-@property(assign,readonly) bool iconIsPrecomposed;
-@property(assign,readonly) bool iconIsPrerendered;
-@property(assign,readonly) bool iconIsScreenShotBased;
-@property(assign,retain) NSArray * icons;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) UIImage * initialLaunchImage;
-@property(assign,retain) NSURL * pageURL;
-@property(assign,readwrite) bool removalDisallowed;
-@property(assign,retain) UIImage * startupImage;
-@property(assign,retain) NSURL * startupImageURL;
-@property(assign,retain) UIImage * startupLandscapeImage;
-@property(assign,retain) NSURL * startupLandscapeImageURL;
-@property(assign,readwrite) long long statusBarStyle;
-@property(assign,readwrite) unsigned long long supportedOrientations;
-@property(assign,copy) NSString * title;
+@property bool classicMode;
+@property id delegate;
+@property bool fullScreen;
+@property (nonatomic, readonly, retain) UIImage *iconImage;
+@property (readonly) NSString *iconImagePath;
+@property (readonly) bool iconIsPrecomposed;
+@property (readonly) bool iconIsPrerendered;
+@property (readonly) bool iconIsScreenShotBased;
+@property (retain) NSArray *icons;
+@property (copy) NSString *identifier;
+@property (nonatomic, retain) UIImage *initialLaunchImage;
+@property (nonatomic, retain) NSURL *pageURL;
+@property bool removalDisallowed;
+@property (nonatomic, retain) UIImage *startupImage;
+@property (retain) NSURL *startupImageURL;
+@property (nonatomic, retain) UIImage *startupLandscapeImage;
+@property (retain) NSURL *startupLandscapeImageURL;
+@property long long statusBarStyle;
+@property unsigned long long supportedOrientations;
+@property (nonatomic, copy) NSString *title;
 
 + (id)_contentForMetaName:(id)arg1 inWebDocumentView:(id)arg2;
 + (bool)_webClipFullScreenValueForMetaTagContent:(id)arg1;

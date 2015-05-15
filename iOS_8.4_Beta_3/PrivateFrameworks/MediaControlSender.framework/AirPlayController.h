@@ -8,7 +8,7 @@
     NSString *_xpcName;
 }
 
-@property(assign,copy) NSString * xpcName;
+@property (nonatomic, copy) NSString *xpcName;
 
 - (id)_setupConnection;
 - (void)dealloc;

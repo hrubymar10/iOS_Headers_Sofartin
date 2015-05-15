@@ -7,8 +7,8 @@
     NSArray *_sections;
 }
 
-@property(assign,retain) NSArray * sectionTitles;
-@property(assign,retain) NSArray * sections;
+@property (nonatomic, retain) NSArray *sectionTitles;
+@property (nonatomic, retain) NSArray *sections;
 
 - (void).cxx_destruct;
 - (id)_cellInfosForSection:(id)arg1;

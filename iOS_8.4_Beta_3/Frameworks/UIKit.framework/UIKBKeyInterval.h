@@ -7,8 +7,8 @@
     UIKBTree *_key;
 }
 
-@property(assign,readwrite) double interval;
-@property(assign,retain) UIKBTree * key;
+@property (nonatomic) double interval;
+@property (nonatomic, retain) UIKBTree *key;
 
 - (void)dealloc;
 - (id)initWithKey:(id)arg1 interval:(double)arg2;

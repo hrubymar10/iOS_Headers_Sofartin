@@ -12,15 +12,15 @@
     long long _style;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIProductPageChildViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIProductPageHeaderViewController * headerViewController;
-@property(assign,readonly) UIScrollView * scrollView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIProductPageChildViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIProductPageHeaderViewController *headerViewController;
+@property (nonatomic, readonly) UIScrollView *scrollView;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_addHeaderView;

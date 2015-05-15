@@ -8,7 +8,7 @@
     NSMutableDictionary *_statementsDictionary;
 }
 
-@property(assign,readonly) unsigned long long cacheSize;
+@property (nonatomic, readonly) unsigned long long cacheSize;
 
 - (void).cxx_destruct;
 - (id)allStatements;

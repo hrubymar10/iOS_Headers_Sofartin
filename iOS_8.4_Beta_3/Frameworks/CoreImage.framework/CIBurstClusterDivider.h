@@ -11,12 +11,12 @@
     int trueLocalMaximum;
 }
 
-@property(assign,readwrite) float actionAmount;
-@property(assign,readwrite) float dividerScore;
-@property(assign,readwrite) float highNoiseThreshold;
-@property(assign,readwrite) int leftImage;
-@property(assign,readwrite) float noiseThreshold;
-@property(assign,readwrite) int trueLocalMaximum;
+@property float actionAmount;
+@property float dividerScore;
+@property float highNoiseThreshold;
+@property int leftImage;
+@property float noiseThreshold;
+@property int trueLocalMaximum;
 
 - (float)actionAmount;
 - (long long)compareActionAmounts:(id)arg1;

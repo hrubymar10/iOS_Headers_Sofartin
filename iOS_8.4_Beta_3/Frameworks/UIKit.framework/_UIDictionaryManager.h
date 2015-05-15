@@ -6,7 +6,7 @@
     NSArray *_availableDefinitionDictionaries;
 }
 
-@property(assign,readonly) NSArray * availableDefinitionDictionaries;
+@property (readonly) NSArray *availableDefinitionDictionaries;
 
 + (id)_filteredDictionaryIDs;
 + (id)assetManager;

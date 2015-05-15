@@ -6,12 +6,12 @@
     AVMutableVideoCompositionInternal *_mutableVideoComposition;
 }
 
-@property(assign,retain) AVVideoCompositionCoreAnimationTool * animationTool;
-@property(assign,retain) Class customVideoCompositorClass;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } frameDuration;
-@property(assign,copy) NSArray * instructions;
-@property(assign,readwrite) float renderScale;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } renderSize;
+@property (nonatomic, retain) AVVideoCompositionCoreAnimationTool *animationTool;
+@property (nonatomic, retain) Class customVideoCompositorClass;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } frameDuration;
+@property (nonatomic, copy) NSArray *instructions;
+@property (nonatomic) float renderScale;
+@property (nonatomic) struct CGSize { double x1; double x2; } renderSize;
 
 + (id)videoComposition;
 + (id)videoCompositionWithPropertiesOfAsset:(id)arg1;

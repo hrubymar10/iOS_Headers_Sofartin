@@ -16,18 +16,18 @@
     NSString *_scheme;
 }
 
-@property(assign,retain) NSString * category;
-@property(assign,retain) NSString * displayIdentifier;
-@property(assign,readwrite) unsigned int domain;
-@property(assign,readwrite) int flags;
-@property(assign,readonly) bool hasCategory;
-@property(assign,readonly) bool hasDisplayIdentifier;
-@property(assign,readwrite) bool hasDomain;
-@property(assign,readwrite) bool hasFlags;
-@property(assign,readonly) bool hasIcon;
-@property(assign,readonly) bool hasScheme;
-@property(assign,retain) NSString * icon;
-@property(assign,retain) NSString * scheme;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic, retain) NSString *displayIdentifier;
+@property (nonatomic) unsigned int domain;
+@property (nonatomic) int flags;
+@property (nonatomic, readonly) bool hasCategory;
+@property (nonatomic, readonly) bool hasDisplayIdentifier;
+@property (nonatomic) bool hasDomain;
+@property (nonatomic) bool hasFlags;
+@property (nonatomic, readonly) bool hasIcon;
+@property (nonatomic, readonly) bool hasScheme;
+@property (nonatomic, retain) NSString *icon;
+@property (nonatomic, retain) NSString *scheme;
 
 - (void)addResults:(id)arg1;
 - (void)addResults:(id)arg1 atIndex:(unsigned long long)arg2;

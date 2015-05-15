@@ -4,10 +4,10 @@
 
 @interface MusicMutableEntityPlaybackStatus : MusicEntityPlaybackStatus
 
-@property(assign,readwrite) double playbackCurrentTime;
-@property(assign,readwrite) long long playbackDisplayState;
-@property(assign,readwrite) double playbackDuration;
-@property(assign,readwrite) float playbackRate;
+@property (nonatomic) double playbackCurrentTime;
+@property (nonatomic) long long playbackDisplayState;
+@property (nonatomic) double playbackDuration;
+@property (nonatomic) float playbackRate;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)mutableCopyWithZone:(struct _NSZone { }*)arg1;

@@ -14,14 +14,14 @@
     NSDate *_registrationDate;
 }
 
-@property(assign,readonly) LSBundleProxy * containingBundle;
-@property(assign,readonly) NSDictionary * infoPlist;
-@property(assign,readonly) bool isOnSystemPartition;
-@property(assign,readonly) NSString * pluginIdentifier;
-@property(assign,readonly) NSDictionary * pluginKitDictionary;
-@property(assign,readonly) NSUUID * pluginUUID;
-@property(assign,readonly) NSString * protocol;
-@property(assign,readonly) NSDate * registrationDate;
+@property (nonatomic, readonly) LSBundleProxy *containingBundle;
+@property (nonatomic, readonly) NSDictionary *infoPlist;
+@property (nonatomic, readonly) bool isOnSystemPartition;
+@property (nonatomic, readonly) NSString *pluginIdentifier;
+@property (nonatomic, readonly) NSDictionary *pluginKitDictionary;
+@property (nonatomic, readonly) NSUUID *pluginUUID;
+@property (nonatomic, readonly) NSString *protocol;
+@property (nonatomic, readonly) NSDate *registrationDate;
 
 + (id)plugInKitProxyForPlugin:(unsigned int)arg1;
 + (id)plugInKitProxyForUUID:(id)arg1 bundleIdentifier:(id)arg2 pluginIdentifier:(id)arg3 version:(id)arg4 bundleURL:(id)arg5;

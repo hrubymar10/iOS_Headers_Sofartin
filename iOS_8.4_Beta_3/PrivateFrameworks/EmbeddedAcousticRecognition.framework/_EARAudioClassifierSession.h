@@ -42,7 +42,7 @@
     double _frameDuration;
 }
 
-@property(assign,readonly) double frameDuration;
+@property (nonatomic, readonly) double frameDuration;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

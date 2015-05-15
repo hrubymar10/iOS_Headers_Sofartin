@@ -4,8 +4,8 @@
 
 @interface SASSpeechRecognized : SABaseClientBoundCommand
 
-@property(assign,retain) SASRecognition * recognition;
-@property(assign,copy) NSString * sessionId;
+@property (nonatomic, retain) SASRecognition *recognition;
+@property (nonatomic, copy) NSString *sessionId;
 
 + (id)speechRecognized;
 + (id)speechRecognizedWithDictionary:(id)arg1 context:(id)arg2;

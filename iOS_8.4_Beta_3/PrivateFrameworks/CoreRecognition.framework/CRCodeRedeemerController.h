@@ -6,21 +6,21 @@
     <CRCodeRedeemerControllerDelegate> *_delegate;
 }
 
-@property(assign,copy) NSString * cameraMode;
-@property(assign,readwrite) long long cameraPosition;
-@property(assign,readwrite) unsigned long long captureCount;
-@property(getter=isCaptureMode,assign,readwrite) bool captureMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CRCodeRedeemerControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long exposureMode;
-@property(assign,readwrite) long long focusMode;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double sessionTimeout;
-@property(assign,readwrite) bool showDiagnosticHUD;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long torchMode;
-@property(assign,readwrite) long long whiteBalanceMode;
+@property (copy) NSString *cameraMode;
+@property long long cameraPosition;
+@property unsigned long long captureCount;
+@property (getter=isCaptureMode) bool captureMode;
+@property (readonly, copy) NSString *debugDescription;
+@property <CRCodeRedeemerControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property long long exposureMode;
+@property long long focusMode;
+@property (readonly) unsigned long long hash;
+@property double sessionTimeout;
+@property bool showDiagnosticHUD;
+@property (readonly) Class superclass;
+@property long long torchMode;
+@property long long whiteBalanceMode;
 
 + (id)findCodeInImage:(struct vImage_Buffer { void *x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; })arg1 maxStage:(unsigned long long)arg2;
 + (id)findCodeInImage:(struct vImage_Buffer { void *x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; })arg1 maxStage:(unsigned long long)arg2 roi:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg3;

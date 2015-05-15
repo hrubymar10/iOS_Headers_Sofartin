@@ -7,8 +7,8 @@
     bool _invalidateEverything;
 }
 
-@property(assign,readonly) bool invalidateDataSourceCounts;
-@property(assign,readonly) bool invalidateEverything;
+@property (nonatomic, readonly) bool invalidateDataSourceCounts;
+@property (nonatomic, readonly) bool invalidateEverything;
 
 - (bool)invalidateDataSourceCounts;
 - (bool)invalidateEverything;

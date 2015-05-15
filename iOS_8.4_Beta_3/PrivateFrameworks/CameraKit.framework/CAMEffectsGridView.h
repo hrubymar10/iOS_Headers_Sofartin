@@ -15,11 +15,11 @@
     bool _square;
 }
 
-@property(getter=_isAtomicBlackAndWhite,setter=_setAtomicBlackAndWhite:,assign,readwrite) bool _atomicBlackAndWhite;
-@property(setter=_setFetchingGridFilters:,assign,readwrite) bool _fetchingGridFilters;
-@property(setter=_setGridFilters:,assign,retain) NSDictionary * _gridFilters;
-@property(getter=isBlackAndWhite,assign,readwrite) bool blackAndWhite;
-@property(getter=isSquare,assign,readwrite) bool square;
+@property (getter=_isAtomicBlackAndWhite, setter=_setAtomicBlackAndWhite:) bool _atomicBlackAndWhite;
+@property (setter=_setFetchingGridFilters:) bool _fetchingGridFilters;
+@property (setter=_setGridFilters:, retain) NSDictionary *_gridFilters;
+@property (getter=isBlackAndWhite) bool blackAndWhite;
+@property (getter=isSquare) bool square;
 
 - (void).cxx_destruct;
 - (unsigned long long)_cellCount;

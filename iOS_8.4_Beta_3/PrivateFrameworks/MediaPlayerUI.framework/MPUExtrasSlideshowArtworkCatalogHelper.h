@@ -6,7 +6,7 @@
     MPArtworkCatalog *_artworkCatalog;
 }
 
-@property(assign,retain) MPArtworkCatalog * artworkCatalog;
+@property (nonatomic, retain) MPArtworkCatalog *artworkCatalog;
 
 - (void).cxx_destruct;
 - (id)artworkCatalog;

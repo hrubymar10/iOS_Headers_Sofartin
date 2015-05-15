@@ -4,14 +4,14 @@
 
 @interface SARestartRequest : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * lastResponseId;
-@property(assign,copy) NSString * refId;
-@property(assign,copy) NSString * requestId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *lastResponseId;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic, copy) NSString *requestId;
+@property (readonly) Class superclass;
 
 + (id)restartRequest;
 + (id)restartRequestWithDictionary:(id)arg1 context:(id)arg2;

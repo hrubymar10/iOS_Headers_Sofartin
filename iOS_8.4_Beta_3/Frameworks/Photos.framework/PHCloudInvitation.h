@@ -16,20 +16,20 @@
     bool _isMine;
 }
 
-@property(assign,readonly) NSString * albumGUID;
-@property(assign,readonly) NSString * cloudGUID;
-@property(assign,readonly) int invitationState;
-@property(assign,readonly) NSString * invitationStateDescription;
-@property(assign,readonly) int invitationStateLocal;
-@property(assign,readonly) NSNumber * inviteeEmailKey;
-@property(assign,readonly) NSArray * inviteeEmails;
-@property(assign,readonly) NSString * inviteeFirstName;
-@property(assign,readonly) NSString * inviteeFullName;
-@property(assign,readonly) NSString * inviteeHashedPersonID;
-@property(assign,readonly) NSString * inviteeLastName;
-@property(assign,readonly) NSArray * inviteePhones;
-@property(assign,readonly) NSDate * inviteeSubscriptionDate;
-@property(assign,readonly) bool isMine;
+@property (nonatomic, readonly) NSString *albumGUID;
+@property (nonatomic, readonly) NSString *cloudGUID;
+@property (nonatomic, readonly) int invitationState;
+@property (nonatomic, readonly) NSString *invitationStateDescription;
+@property (nonatomic, readonly) int invitationStateLocal;
+@property (nonatomic, readonly) NSNumber *inviteeEmailKey;
+@property (nonatomic, readonly) NSArray *inviteeEmails;
+@property (nonatomic, readonly) NSString *inviteeFirstName;
+@property (nonatomic, readonly) NSString *inviteeFullName;
+@property (nonatomic, readonly) NSString *inviteeHashedPersonID;
+@property (nonatomic, readonly) NSString *inviteeLastName;
+@property (nonatomic, readonly) NSArray *inviteePhones;
+@property (nonatomic, readonly) NSDate *inviteeSubscriptionDate;
+@property (nonatomic, readonly) bool isMine;
 
 + (id)managedEntityName;
 + (id)propertiesToFetchWithHint:(unsigned long long)arg1;

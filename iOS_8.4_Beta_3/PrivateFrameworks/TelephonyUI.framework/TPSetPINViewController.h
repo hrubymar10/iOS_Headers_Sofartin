@@ -21,22 +21,22 @@
     NSString *_unconfirmedPIN;
 }
 
-@property(assign,readwrite) bool confirmPIN;
-@property(assign,retain) UIView * customBackgroundView;
-@property(assign,readwrite) <TPSetPINViewControllerDelegate> * delegate;
-@property(assign,readwrite) int initialState;
-@property(assign,readwrite) unsigned int maxPINLength;
-@property(assign,readwrite) unsigned int minPINLength;
-@property(assign,retain) TPSimpleNumberPad * numberPad;
-@property(assign,retain) NSString * oldPIN;
-@property(assign,retain) TPPasscodeView * passcodeView;
-@property(assign,retain) NSString * promptTextForConfirmingNewPIN;
-@property(assign,retain) NSString * promptTextForNewPIN;
-@property(assign,retain) NSString * promptTextForOldPIN;
-@property(assign,retain) NSString * promptTextForSavingPIN;
-@property(assign,readwrite) int state;
-@property(assign,retain) UILabel * statusLabel;
-@property(assign,retain) NSString * unconfirmedPIN;
+@property bool confirmPIN;
+@property (retain) UIView *customBackgroundView;
+@property <TPSetPINViewControllerDelegate> *delegate;
+@property int initialState;
+@property unsigned int maxPINLength;
+@property unsigned int minPINLength;
+@property (retain) TPSimpleNumberPad *numberPad;
+@property (retain) NSString *oldPIN;
+@property (retain) TPPasscodeView *passcodeView;
+@property (nonatomic, retain) NSString *promptTextForConfirmingNewPIN;
+@property (nonatomic, retain) NSString *promptTextForNewPIN;
+@property (nonatomic, retain) NSString *promptTextForOldPIN;
+@property (nonatomic, retain) NSString *promptTextForSavingPIN;
+@property (nonatomic) int state;
+@property (retain) UILabel *statusLabel;
+@property (retain) NSString *unconfirmedPIN;
 
 - (void)_cancelButtonTapped;
 - (void)_doneButtonTapped;

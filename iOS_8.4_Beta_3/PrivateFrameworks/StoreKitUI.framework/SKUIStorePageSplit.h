@@ -10,11 +10,11 @@
     double _widthFraction;
 }
 
-@property(assign,copy) UIColor * dividerColor;
-@property(assign,readwrite) long long numberOfPageSections;
-@property(assign,copy) NSArray * pageComponents;
-@property(assign,retain) SKUIStorePageSectionContext * sectionContext;
-@property(assign,readwrite) double widthFraction;
+@property (nonatomic, copy) UIColor *dividerColor;
+@property (nonatomic) long long numberOfPageSections;
+@property (nonatomic, copy) NSArray *pageComponents;
+@property (nonatomic, retain) SKUIStorePageSectionContext *sectionContext;
+@property (nonatomic) double widthFraction;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

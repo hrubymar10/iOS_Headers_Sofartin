@@ -8,13 +8,13 @@
     BWPipelineStage *_pipelineStage;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) BWNodeInput * input;
-@property(assign,readonly) BWNodeOutput * output;
-@property(assign,readonly) BWPipelineStage * pipelineStage;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) BWNodeInput *input;
+@property (readonly) BWNodeOutput *output;
+@property (readonly) BWPipelineStage *pipelineStage;
+@property (readonly) Class superclass;
 
 + (id)_requirementsArrayForInputByResolvingPassthroughTree:(id)arg1;
 + (void)initialize;

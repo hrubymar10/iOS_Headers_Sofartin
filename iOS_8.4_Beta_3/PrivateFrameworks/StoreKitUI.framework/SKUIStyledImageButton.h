@@ -14,9 +14,9 @@
     SKUIImageView *_imageView;
 }
 
-@property(assign,readonly) SKUIImageView * additionalImageView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitRectInsets;
-@property(assign,readonly) SKUIImageView * imageView;
+@property (nonatomic, readonly) SKUIImageView *additionalImageView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } hitRectInsets;
+@property (nonatomic, readonly) SKUIImageView *imageView;
 
 - (void).cxx_destruct;
 - (id)additionalImageView;

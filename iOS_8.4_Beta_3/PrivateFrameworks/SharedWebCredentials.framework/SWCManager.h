@@ -13,10 +13,10 @@
     NSMutableArray *_xpcRequests;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (int)_addService:(id)arg1 app:(id)arg2 domain:(id)arg3;
 - (id)_appEntitlementsByID:(id)arg1;

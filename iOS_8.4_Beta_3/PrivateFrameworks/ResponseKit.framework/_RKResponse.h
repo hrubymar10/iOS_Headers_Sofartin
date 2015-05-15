@@ -7,8 +7,8 @@
     unsigned long long _type;
 }
 
-@property(assign,retain) NSString * text;
-@property(assign,readwrite) unsigned long long type;
+@property (retain) NSString *text;
+@property unsigned long long type;
 
 - (void).cxx_destruct;
 - (id)description;

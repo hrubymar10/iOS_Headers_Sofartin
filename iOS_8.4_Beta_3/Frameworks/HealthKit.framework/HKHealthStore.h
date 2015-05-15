@@ -18,12 +18,12 @@
     NSMutableSet *_workouts;
 }
 
-@property(assign,copy) id bluetoothStatusHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=_queries,assign,readonly) NSSet * queries;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id bluetoothStatusHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=_queries, nonatomic, readonly) NSSet *queries;
+@property (readonly) Class superclass;
 
 + (bool)isHealthDataAvailable;
 

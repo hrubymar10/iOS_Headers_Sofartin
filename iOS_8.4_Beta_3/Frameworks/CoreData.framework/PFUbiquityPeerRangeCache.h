@@ -12,10 +12,10 @@
     NSMutableDictionary *_translatedGlobalIDs;
 }
 
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,readonly) NSPersistentStore * privateStore;
-@property(assign,readonly) NSString * storeName;
-@property(assign,readonly) NSDictionary * translatedGlobalIDs;
+@property (nonatomic, readonly) NSString *localPeerID;
+@property (nonatomic, readonly) NSPersistentStore *privateStore;
+@property (nonatomic, readonly) NSString *storeName;
+@property (nonatomic, readonly) NSDictionary *translatedGlobalIDs;
 
 + (void)initialize;
 + (long long)integerFromPrimaryKeyString:(id)arg1;

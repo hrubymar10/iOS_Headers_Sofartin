@@ -9,15 +9,15 @@
     NSThread *_thread;
 }
 
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,readwrite) bool automaticallyCancelPendingBlockUponSchedulingNewBlock;
-@property(getter=isCancelled,assign,readonly) bool cancelled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isPending,assign,readonly) bool pending;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) AXThreadTimerTask * task;
+@property (getter=isActive, nonatomic, readonly) bool active;
+@property (nonatomic) bool automaticallyCancelPendingBlockUponSchedulingNewBlock;
+@property (getter=isCancelled, nonatomic, readonly) bool cancelled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isPending, nonatomic, readonly) bool pending;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) AXThreadTimerTask *task;
 
 - (void)_runAfterDelay:(id)arg1;
 - (void)afterDelay:(double)arg1 processBlock:(id)arg2;

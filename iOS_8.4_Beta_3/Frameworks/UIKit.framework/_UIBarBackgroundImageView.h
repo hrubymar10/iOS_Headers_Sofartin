@@ -8,7 +8,7 @@
     bool _translucent;
 }
 
-@property(getter=isTranslucent,assign,readwrite) bool translucent;
+@property (getter=isTranslucent, nonatomic) bool translucent;
 
 - (id)image;
 - (bool)isTranslucent;

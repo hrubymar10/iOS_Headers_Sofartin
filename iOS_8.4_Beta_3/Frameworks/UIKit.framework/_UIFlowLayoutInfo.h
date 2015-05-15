@@ -37,16 +37,16 @@
     } _visibleBounds;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } contentSize;
-@property(assign,readwrite) double dimension;
-@property(assign,readwrite) bool estimatesSizes;
-@property(assign,readwrite) bool horizontal;
-@property(assign,readonly) NSArray * invalidatedIndexPaths;
-@property(assign,readwrite) UICollectionViewFlowLayout * layout;
-@property(assign,readwrite) bool leftToRight;
-@property(assign,readwrite) struct { int x1; int x2; int x3; } rowAlignmentOptions;
-@property(assign,readonly) NSMutableArray * sections;
-@property(assign,readwrite) bool usesFloatingHeaderFooter;
+@property (nonatomic) struct CGSize { double x1; double x2; } contentSize;
+@property (nonatomic) double dimension;
+@property (nonatomic) bool estimatesSizes;
+@property (nonatomic) bool horizontal;
+@property (nonatomic, readonly) NSArray *invalidatedIndexPaths;
+@property (nonatomic) UICollectionViewFlowLayout *layout;
+@property (nonatomic) bool leftToRight;
+@property (nonatomic) struct { int x1; int x2; int x3; } rowAlignmentOptions;
+@property (nonatomic, readonly) NSMutableArray *sections;
+@property (nonatomic) bool usesFloatingHeaderFooter;
 
 - (id)addSection;
 - (struct CGSize { double x1; double x2; })contentSize;

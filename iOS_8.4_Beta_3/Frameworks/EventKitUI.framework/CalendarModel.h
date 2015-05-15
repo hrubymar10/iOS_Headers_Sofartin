@@ -21,16 +21,16 @@
     NSArray *_visibleCalendars;
 }
 
-@property(assign,copy) NSCalendar * calendar;
-@property(assign,readonly) EKEventStore * eventStore;
-@property(assign,readwrite) unsigned long long firstVisibleSecond;
-@property(assign,readonly) long long readWriteCalendarCount;
-@property(assign,retain) NSString * searchString;
-@property(assign,retain) NSSet * selectedCalendars;
-@property(assign,copy) EKCalendarDate * selectedDate;
-@property(assign,readonly) EKCalendarDate * selectedDay;
-@property(assign,retain) EKEvent * selectedOccurrence;
-@property(assign,readonly) long long visibleCalendarCount;
+@property (nonatomic, copy) NSCalendar *calendar;
+@property (nonatomic, readonly) EKEventStore *eventStore;
+@property (nonatomic) unsigned long long firstVisibleSecond;
+@property (nonatomic, readonly) long long readWriteCalendarCount;
+@property (nonatomic, retain) NSString *searchString;
+@property (nonatomic, retain) NSSet *selectedCalendars;
+@property (nonatomic, copy) EKCalendarDate *selectedDate;
+@property (nonatomic, readonly) EKCalendarDate *selectedDay;
+@property (nonatomic, retain) EKEvent *selectedOccurrence;
+@property (nonatomic, readonly) long long visibleCalendarCount;
 
 - (void).cxx_destruct;
 - (void)_createOccurrenceCacheDataSources;

@@ -18,9 +18,9 @@
     } _lastContentScrollViewPositionAdditions;
 }
 
-@property(assign,retain) UIScrollView * contentScrollView;
-@property(assign,retain) UIView * contentView;
-@property(assign,readwrite) <MusicContainerScrollViewDelegate> * delegate;
+@property (nonatomic, retain) UIScrollView *contentScrollView;
+@property (nonatomic, retain) UIView *contentView;
+@property (nonatomic) <MusicContainerScrollViewDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_getCurrentContentViewFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }*)arg1 contentScrollViewContentOffset:(struct CGPoint { double x1; double x2; }*)arg2;

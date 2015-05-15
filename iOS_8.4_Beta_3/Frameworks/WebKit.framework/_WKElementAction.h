@@ -11,9 +11,9 @@
     long long _type;
 }
 
-@property(assign,copy) id dismissalHandler;
-@property(assign,readonly) NSString * title;
-@property(assign,readonly) long long type;
+@property (nonatomic, copy) id dismissalHandler;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) long long type;
 
 + (id)elementActionWithTitle:(id)arg1 actionHandler:(id)arg2;
 + (id)elementActionWithType:(long long)arg1;

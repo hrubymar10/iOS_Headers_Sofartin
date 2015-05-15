@@ -13,11 +13,11 @@
     bool shouldSetupAnimationInDidMoveToWindow;
 }
 
-@property(assign,readwrite) id irisAnimationDelegate;
-@property(assign,readwrite) SEL irisAnimationDidStopSelector;
-@property(assign,readwrite) double irisAnimationDuration;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } irisAnimationPosition;
-@property(assign,readwrite) bool shouldSetupAnimationInDidMoveToWindow;
+@property (nonatomic) id irisAnimationDelegate;
+@property (nonatomic) SEL irisAnimationDidStopSelector;
+@property (nonatomic) double irisAnimationDuration;
+@property (nonatomic) struct CGPoint { double x1; double x2; } irisAnimationPosition;
+@property (nonatomic) bool shouldSetupAnimationInDidMoveToWindow;
 
 - (void)animateIrisOpen;
 - (void)dealloc;

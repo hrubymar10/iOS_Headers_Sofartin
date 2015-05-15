@@ -17,10 +17,10 @@
     double _textViewTopMargin;
 }
 
-@property(assign,retain) UIView * accessoryView;
-@property(assign,readonly) UILabel * placeholderLabel;
-@property(assign,retain) UIView * previewView;
-@property(assign,readonly) UITextView * textView;
+@property (nonatomic, retain) UIView *accessoryView;
+@property (nonatomic, readonly) UILabel *placeholderLabel;
+@property (nonatomic, retain) UIView *previewView;
+@property (nonatomic, readonly) UITextView *textView;
 
 - (void).cxx_destruct;
 - (double)_previewMarginForContentSize:(struct CGSize { double x1; double x2; })arg1;

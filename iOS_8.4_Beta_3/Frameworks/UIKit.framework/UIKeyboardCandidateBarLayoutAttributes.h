@@ -7,8 +7,8 @@
     bool _endsLastPage;
 }
 
-@property(assign,readwrite) bool beginsFirstPage;
-@property(assign,readwrite) bool endsLastPage;
+@property (nonatomic) bool beginsFirstPage;
+@property (nonatomic) bool endsLastPage;
 
 - (bool)beginsFirstPage;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

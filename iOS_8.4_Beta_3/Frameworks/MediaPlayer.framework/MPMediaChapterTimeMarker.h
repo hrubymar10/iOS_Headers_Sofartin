@@ -8,9 +8,9 @@
     bool _hasArtworkAtPlaybackTime;
 }
 
-@property(assign,readwrite) unsigned long long chapterIndex;
-@property(assign,retain) NSArray * chapters;
-@property(assign,readwrite) bool hasArtworkAtPlaybackTime;
+@property (nonatomic) unsigned long long chapterIndex;
+@property (nonatomic, retain) NSArray *chapters;
+@property (nonatomic) bool hasArtworkAtPlaybackTime;
 
 - (void).cxx_destruct;
 - (unsigned long long)chapterIndex;

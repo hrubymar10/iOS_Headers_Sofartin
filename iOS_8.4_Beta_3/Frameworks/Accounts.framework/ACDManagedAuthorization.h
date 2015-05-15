@@ -4,9 +4,9 @@
 
 @interface ACDManagedAuthorization : NSManagedObject
 
-@property(assign,retain) ACDManagedAccountType * accountType;
-@property(assign,retain) NSString * bundleID;
-@property(assign,retain) NSString * grantedPermissions;
-@property(assign,retain) id options;
+@property (nonatomic, retain) ACDManagedAccountType *accountType;
+@property (nonatomic, retain) NSString *bundleID;
+@property (nonatomic, retain) NSString *grantedPermissions;
+@property (nonatomic, retain) id options;
 
 @end

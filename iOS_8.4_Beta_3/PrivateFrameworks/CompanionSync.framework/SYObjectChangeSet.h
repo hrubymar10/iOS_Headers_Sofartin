@@ -8,9 +8,9 @@
     NSMutableSet *_updated;
 }
 
-@property(assign,copy) NSMutableSet * added;
-@property(assign,copy) NSMutableSet * deleted;
-@property(assign,copy) NSMutableSet * updated;
+@property (nonatomic, copy) NSMutableSet *added;
+@property (nonatomic, copy) NSMutableSet *deleted;
+@property (nonatomic, copy) NSMutableSet *updated;
 
 - (void).cxx_destruct;
 - (id)added;

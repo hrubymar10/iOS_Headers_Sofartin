@@ -10,11 +10,11 @@
     NSString *_statusText;
 }
 
-@property(assign,retain) NSArray * imageAssetURLs;
-@property(assign,retain) NSArray * imageData;
-@property(assign,retain) NSString * inReplyToStatusID;
-@property(assign,retain) NSString * maskedApplicationID;
-@property(assign,retain) NSString * statusText;
+@property (nonatomic, retain) NSArray *imageAssetURLs;
+@property (nonatomic, retain) NSArray *imageData;
+@property (nonatomic, retain) NSString *inReplyToStatusID;
+@property (nonatomic, retain) NSString *maskedApplicationID;
+@property (nonatomic, retain) NSString *statusText;
 
 + (bool)supportsSecureCoding;
 

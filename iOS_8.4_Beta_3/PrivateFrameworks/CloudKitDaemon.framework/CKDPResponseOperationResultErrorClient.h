@@ -11,12 +11,12 @@
     CKDPUniqueFieldFailure *_uniqueFieldFailure;
 }
 
-@property(assign,readonly) bool hasOplockFailure;
-@property(assign,readwrite) bool hasType;
-@property(assign,readonly) bool hasUniqueFieldFailure;
-@property(assign,retain) CKDPOplockFailure * oplockFailure;
-@property(assign,readwrite) int type;
-@property(assign,retain) CKDPUniqueFieldFailure * uniqueFieldFailure;
+@property (nonatomic, readonly) bool hasOplockFailure;
+@property (nonatomic) bool hasType;
+@property (nonatomic, readonly) bool hasUniqueFieldFailure;
+@property (nonatomic, retain) CKDPOplockFailure *oplockFailure;
+@property (nonatomic) int type;
+@property (nonatomic, retain) CKDPUniqueFieldFailure *uniqueFieldFailure;
 
 - (void).cxx_destruct;
 - (id)_prettyDictionaryRepresentation;

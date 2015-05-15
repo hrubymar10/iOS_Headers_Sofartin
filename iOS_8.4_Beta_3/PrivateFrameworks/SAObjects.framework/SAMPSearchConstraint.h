@@ -4,12 +4,12 @@
 
 @interface SAMPSearchConstraint : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * query;
-@property(assign,copy) NSArray * searchProperties;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *query;
+@property (nonatomic, copy) NSArray *searchProperties;
+@property (readonly) Class superclass;
 
 + (id)searchConstraint;
 + (id)searchConstraintWithDictionary:(id)arg1 context:(id)arg2;

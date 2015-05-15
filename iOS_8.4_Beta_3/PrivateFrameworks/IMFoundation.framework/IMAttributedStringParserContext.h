@@ -6,10 +6,10 @@
     NSAttributedString *_inString;
 }
 
-@property(assign,retain) NSAttributedString * inString;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSArray * resultsForLogging;
-@property(assign,readonly) bool shouldPreprocess;
+@property (readonly, retain) NSAttributedString *inString;
+@property (readonly, retain) NSString *name;
+@property (readonly, retain) NSArray *resultsForLogging;
+@property (readonly) bool shouldPreprocess;
 
 - (void)dealloc;
 - (id)inString;

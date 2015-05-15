@@ -18,11 +18,11 @@
     long long _vectorType;
 }
 
-@property(assign,readwrite) double contentScale;
-@property(assign,retain) GEOVectorTile * modelTile;
-@property(assign,copy) NSArray * objectGroups;
-@property(assign,retain) VKSharedResources * sharedResources;
-@property(assign,retain) VKStyleManager * styleManager;
+@property (nonatomic) double contentScale;
+@property (nonatomic, retain) GEOVectorTile *modelTile;
+@property (nonatomic, copy) NSArray *objectGroups;
+@property (nonatomic, retain) VKSharedResources *sharedResources;
+@property (nonatomic, retain) VKStyleManager *styleManager;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -4,10 +4,10 @@
 
 @interface DOMHTMLHRElement : DOMHTMLElement
 
-@property(assign,copy) NSString * align;
-@property(assign,readwrite) bool noShade;
-@property(assign,copy) NSString * size;
-@property(assign,copy) NSString * width;
+@property (copy) NSString *align;
+@property bool noShade;
+@property (copy) NSString *size;
+@property (copy) NSString *width;
 
 - (id)align;
 - (bool)noShade;

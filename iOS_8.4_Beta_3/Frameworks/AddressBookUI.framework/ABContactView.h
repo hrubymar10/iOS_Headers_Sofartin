@@ -19,20 +19,20 @@
     NSDictionary *_valueTextAttributes;
 }
 
-@property(assign,copy) NSDictionary * actionTextAttributes;
-@property(assign,retain) UIColor * backgroundColor;
-@property(getter=isCellsLayoutCachingEnabled,assign,readwrite) bool cellsLayoutCachingEnabled;
-@property(assign,retain) CNContact * contact;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentMargins;
-@property(assign,retain) UIView * customHeaderView;
-@property(assign,readwrite) <ABContactViewDataSource> * dataSource;
-@property(assign,readonly) ABContactHeaderView * defaultHeaderView;
-@property(assign,readwrite) <ABContactViewDelegate> * delegate;
-@property(assign,copy) NSDictionary * labelTextAttributes;
-@property(assign,retain) UIColor * sectionBackgroundColor;
-@property(assign,retain) UIColor * selectedCellBackgroundColor;
-@property(assign,retain) UIColor * separatorColor;
-@property(assign,copy) NSDictionary * valueTextAttributes;
+@property (nonatomic, copy) NSDictionary *actionTextAttributes;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (getter=isCellsLayoutCachingEnabled, nonatomic) bool cellsLayoutCachingEnabled;
+@property (nonatomic, retain) CNContact *contact;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentMargins;
+@property (nonatomic, retain) UIView *customHeaderView;
+@property (nonatomic) <ABContactViewDataSource> *dataSource;
+@property (nonatomic, readonly) ABContactHeaderView *defaultHeaderView;
+@property (nonatomic) <ABContactViewDelegate> *delegate;
+@property (nonatomic, copy) NSDictionary *labelTextAttributes;
+@property (nonatomic, retain) UIColor *sectionBackgroundColor;
+@property (nonatomic, retain) UIColor *selectedCellBackgroundColor;
+@property (nonatomic, retain) UIColor *separatorColor;
+@property (nonatomic, copy) NSDictionary *valueTextAttributes;
 
 + (id)allCardProperties;
 + (id)cellIdentifierForActions;

@@ -8,9 +8,9 @@
     bool _opaque;
 }
 
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,readwrite) bool highlighted;
-@property(assign,readwrite) bool opaque;
+@property (retain) UIColor *backgroundColor;
+@property bool highlighted;
+@property bool opaque;
 
 - (id)backgroundColor;
 - (void)dealloc;

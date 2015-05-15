@@ -4,8 +4,8 @@
 
 @interface SAWebSiteSearch : SADomainCommand
 
-@property(assign,copy) NSString * provider;
-@property(assign,copy) NSString * query;
+@property (nonatomic, copy) NSString *provider;
+@property (nonatomic, copy) NSString *query;
 
 + (id)siteSearch;
 + (id)siteSearchWithDictionary:(id)arg1 context:(id)arg2;

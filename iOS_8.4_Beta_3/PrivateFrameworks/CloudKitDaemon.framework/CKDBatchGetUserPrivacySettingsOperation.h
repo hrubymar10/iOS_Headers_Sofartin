@@ -6,7 +6,7 @@
     NSArray *_containerPrivacySettings;
 }
 
-@property(assign,copy) NSArray * containerPrivacySettings;
+@property (nonatomic, copy) NSArray *containerPrivacySettings;
 
 + (id)appPermissionGroupsFromContainerPrivacySettings:(id)arg1;
 

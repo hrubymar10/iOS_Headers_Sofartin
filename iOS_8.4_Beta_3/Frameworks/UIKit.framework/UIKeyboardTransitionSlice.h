@@ -30,13 +30,13 @@
     UIKBCacheToken *_startToken;
 }
 
-@property(assign,readwrite) bool delayCrossfade;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endRect;
-@property(assign,retain) UIKBCacheToken * endToken;
-@property(assign,readonly) bool hasGeometry;
-@property(assign,readwrite) int normalization;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } startRect;
-@property(assign,retain) UIKBCacheToken * startToken;
+@property bool delayCrossfade;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endRect;
+@property (retain) UIKBCacheToken *endToken;
+@property (readonly) bool hasGeometry;
+@property int normalization;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } startRect;
+@property (retain) UIKBCacheToken *startToken;
 
 + (id)sliceWithStart:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 end:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg2;
 

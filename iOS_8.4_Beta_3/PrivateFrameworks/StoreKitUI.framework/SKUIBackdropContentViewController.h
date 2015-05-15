@@ -7,8 +7,8 @@
     UIViewController *_contentViewController;
 }
 
-@property(assign,readwrite) long long backdropViewPrivateStyle;
-@property(assign,retain) UIViewController * contentViewController;
+@property (nonatomic) long long backdropViewPrivateStyle;
+@property (nonatomic, retain) UIViewController *contentViewController;
 
 - (void).cxx_destruct;
 - (long long)backdropViewPrivateStyle;

@@ -11,12 +11,12 @@
     GEOLocation *_sourceLocation;
 }
 
-@property(assign,readonly) unsigned int baselineETASeconds;
-@property(assign,readonly) GEOLocation * destinationLocation;
-@property(assign,readonly) double distance;
-@property(assign,readonly) unsigned int responseETASeconds;
-@property(assign,readonly) NSMutableArray * sortedETAs;
-@property(assign,readonly) GEOLocation * sourceLocation;
+@property (nonatomic, readonly) unsigned int baselineETASeconds;
+@property (nonatomic, readonly) GEOLocation *destinationLocation;
+@property (nonatomic, readonly) double distance;
+@property (nonatomic, readonly) unsigned int responseETASeconds;
+@property (nonatomic, readonly) NSMutableArray *sortedETAs;
+@property (nonatomic, readonly) GEOLocation *sourceLocation;
 
 - (unsigned int)baselineETASeconds;
 - (void)dealloc;

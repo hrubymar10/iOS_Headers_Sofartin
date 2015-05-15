@@ -8,10 +8,10 @@
     unsigned long long _length;
 }
 
-@property(assign,retain) NSObject<OS_xpc_object> * connection;
-@property(assign,retain) UserFSItem * item;
-@property(assign,readwrite) unsigned long long length;
-@property(assign,readonly) bool writable;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *connection;
+@property (nonatomic, retain) UserFSItem *item;
+@property (nonatomic) unsigned long long length;
+@property (nonatomic, readonly) bool writable;
 
 - (void).cxx_destruct;
 - (void)_cancelConnection;

@@ -4,8 +4,8 @@
 
 @interface DOMProcessingInstruction : DOMCharacterData
 
-@property(assign,readonly) DOMStyleSheet * sheet;
-@property(assign,copy) NSString * target;
+@property (readonly) DOMStyleSheet *sheet;
+@property (readonly, copy) NSString *target;
 
 - (id)sheet;
 - (id)target;

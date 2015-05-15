@@ -6,14 +6,14 @@
     long long _type;
 }
 
-@property(assign,readonly) bool allowSelfSignedCertificates;
-@property(assign,readonly) bool allowUnsignedBags;
-@property(assign,retain) NSString * apsEnvironmentName;
-@property(assign,retain) NSURL * bagURL;
-@property(assign,readonly) bool isInDebilitatedMode;
-@property(assign,readonly) bool isLoaded;
-@property(assign,readonly) bool isLoading;
-@property(assign,readonly) bool isServerAvailable;
+@property (readonly) bool allowSelfSignedCertificates;
+@property (readonly) bool allowUnsignedBags;
+@property (readonly, retain) NSString *apsEnvironmentName;
+@property (readonly, retain) NSURL *bagURL;
+@property (readonly) bool isInDebilitatedMode;
+@property (readonly) bool isLoaded;
+@property (readonly) bool isLoading;
+@property (readonly) bool isServerAvailable;
 
 + (id)_sharedInstance;
 + (id)_sharedInstanceForType:(long long)arg1;

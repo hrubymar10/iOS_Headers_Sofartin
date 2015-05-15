@@ -12,28 +12,28 @@
     NSPredicate *predicate;
 }
 
-@property(assign,retain) NSMutableOrderedSet * _albums;
-@property(assign,retain) NSString * _prettyDescription;
-@property(assign,retain) NSString * _typeDescription;
-@property(assign,readonly) short albumListType;
-@property(assign,retain) NSMutableOrderedSet * albums;
-@property(assign,readonly) unsigned long long albumsCount;
-@property(assign,copy) id albumsSortingComparator;
-@property(assign,retain) PLManagedAlbumList * backingAlbumList;
-@property(assign,copy) <NSObject><NSCopying> * cachedIndexMapState;
-@property(assign,readonly) bool canEditAlbums;
-@property(assign,readonly) unsigned long long containersCount;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) int filter;
-@property(assign,copy) NSIndexSet * filteredIndexes;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PLIndexMapper * indexMapper;
-@property(assign,readonly) bool isFolder;
-@property(assign,retain) PLPhotoLibrary * photoLibrary;
-@property(assign,retain) NSPredicate * predicate;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long unreadAlbumsCount;
+@property (nonatomic, retain) NSMutableOrderedSet *_albums;
+@property (nonatomic, readonly, retain) NSString *_prettyDescription;
+@property (nonatomic, readonly, retain) NSString *_typeDescription;
+@property (nonatomic, readonly) short albumListType;
+@property (nonatomic, readonly, retain) NSMutableOrderedSet *albums;
+@property (nonatomic, readonly) unsigned long long albumsCount;
+@property (nonatomic, readonly, copy) id albumsSortingComparator;
+@property (nonatomic, retain) PLManagedAlbumList *backingAlbumList;
+@property (nonatomic, readonly, copy) <NSObject><NSCopying> *cachedIndexMapState;
+@property (nonatomic, readonly) bool canEditAlbums;
+@property (nonatomic, readonly) unsigned long long containersCount;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) int filter;
+@property (nonatomic, readonly, copy) NSIndexSet *filteredIndexes;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) PLIndexMapper *indexMapper;
+@property (nonatomic, readonly) bool isFolder;
+@property (nonatomic, readonly, retain) PLPhotoLibrary *photoLibrary;
+@property (nonatomic, retain) NSPredicate *predicate;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long unreadAlbumsCount;
 
 + (id)filteredAlbumList:(id)arg1 filter:(int)arg2;
 

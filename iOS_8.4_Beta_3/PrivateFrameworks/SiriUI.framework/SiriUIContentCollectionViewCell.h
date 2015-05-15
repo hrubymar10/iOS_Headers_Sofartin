@@ -26,15 +26,15 @@
     long long _verticalAlignment;
 }
 
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } accessoryOffset;
-@property(assign,retain) UIView * accessoryView;
-@property(assign,readwrite) bool hasChevron;
-@property(assign,readonly) SiriUIKeyline * keyline;
-@property(assign,readwrite) long long keylineType;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textAndAccessoryInsets;
-@property(assign,retain) UILabel * textLabel;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } textOffset;
-@property(assign,readwrite) long long verticalAlignment;
+@property (nonatomic) struct UIOffset { double x1; double x2; } accessoryOffset;
+@property (nonatomic, retain) UIView *accessoryView;
+@property (nonatomic) bool hasChevron;
+@property (nonatomic, readonly) SiriUIKeyline *keyline;
+@property (nonatomic) long long keylineType;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textAndAccessoryInsets;
+@property (nonatomic, retain) UILabel *textLabel;
+@property (nonatomic) struct UIOffset { double x1; double x2; } textOffset;
+@property (nonatomic) long long verticalAlignment;
 
 + (id)reuseIdentifier;
 

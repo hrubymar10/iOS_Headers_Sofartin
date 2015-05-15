@@ -4,11 +4,11 @@
 
 @interface CNMutableSocialProfile : CNSocialProfile
 
-@property(assign,copy) NSString * displayname;
-@property(assign,copy) NSString * service;
-@property(assign,copy) NSString * urlString;
-@property(assign,copy) NSString * userIdentifier;
-@property(assign,copy) NSString * username;
+@property (copy) NSString *displayname;
+@property (copy) NSString *service;
+@property (copy) NSString *urlString;
+@property (copy) NSString *userIdentifier;
+@property (copy) NSString *username;
 
 - (void)setDisplayname:(id)arg1;
 - (void)setService:(id)arg1;

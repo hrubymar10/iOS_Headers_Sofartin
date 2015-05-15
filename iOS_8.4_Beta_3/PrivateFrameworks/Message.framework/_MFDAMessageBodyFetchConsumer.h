@@ -9,14 +9,14 @@
     bool _succeeded;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) MFError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <MFDAStreamingContentConsumer> * streamConsumer;
-@property(assign,readonly) bool succeeded;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSData *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) MFError *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <MFDAStreamingContentConsumer> *streamConsumer;
+@property (nonatomic, readonly) bool succeeded;
+@property (readonly) Class superclass;
 
 - (id)data;
 - (void)dealloc;

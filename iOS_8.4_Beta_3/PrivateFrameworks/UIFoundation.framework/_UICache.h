@@ -11,8 +11,8 @@
     id _noteObserver;
 }
 
-@property(assign,readwrite) bool clearsCacheOnApplicationBackground;
-@property(assign,readwrite) bool clearsCacheOnLowMemoryWarnings;
+@property (nonatomic) bool clearsCacheOnApplicationBackground;
+@property (nonatomic) bool clearsCacheOnLowMemoryWarnings;
 
 - (bool)clearsCacheOnApplicationBackground;
 - (bool)clearsCacheOnLowMemoryWarnings;

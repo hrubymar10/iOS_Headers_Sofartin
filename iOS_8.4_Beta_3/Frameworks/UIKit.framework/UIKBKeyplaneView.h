@@ -20,18 +20,18 @@
     NSMutableDictionary *_subviewIndex;
 }
 
-@property(assign,readonly) bool cacheDeferable;
-@property(assign,readonly) NSString * cacheKey;
-@property(assign,retain) UIKBCacheToken * cacheToken;
-@property(assign,readonly) double cachedWidth;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) UIKBTree * defaultKeyplane;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool keepNonPersistent;
-@property(assign,retain) UIKBTree * keyplane;
-@property(assign,retain) UIKBRenderConfig * renderConfig;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) bool cacheDeferable;
+@property (nonatomic, readonly) NSString *cacheKey;
+@property (nonatomic, retain) UIKBCacheToken *cacheToken;
+@property (nonatomic, readonly) double cachedWidth;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) UIKBTree *defaultKeyplane;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool keepNonPersistent;
+@property (nonatomic, retain) UIKBTree *keyplane;
+@property (nonatomic, retain) UIKBRenderConfig *renderConfig;
+@property (readonly) Class superclass;
 
 - (bool)_shouldAllowKey:(id)arg1;
 - (void)activateKeys;

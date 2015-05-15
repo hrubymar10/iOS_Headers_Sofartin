@@ -9,10 +9,10 @@
     bool _usesImage;
 }
 
-@property(assign,readwrite) bool alwaysUnderline;
-@property(assign,copy) NSString * buttonText;
-@property(assign,readwrite) long long style;
-@property(assign,readwrite) bool usesImage;
+@property (nonatomic) bool alwaysUnderline;
+@property (nonatomic, copy) NSString *buttonText;
+@property (nonatomic) long long style;
+@property (nonatomic) bool usesImage;
 
 + (id)roundedButtonWithText:(id)arg1 color:(id)arg2;
 

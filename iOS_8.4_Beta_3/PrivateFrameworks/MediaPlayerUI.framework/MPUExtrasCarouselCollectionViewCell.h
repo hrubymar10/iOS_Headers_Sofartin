@@ -22,25 +22,25 @@
     NSString *_zoomingImageTransitionIdentifier;
 }
 
-@property(assign,readwrite) bool allowsPinchingThumbnailImageForInteractiveZoomingImageTransition;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UILabel * descriptionLabel;
-@property(assign,retain) MPUContentSizeLayoutConstraint * descriptionLabelBaselineConstraint;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPUExtrasZoomingImageInteractiveTransitionSourceContext * interactiveTransitionSourceContext;
-@property(assign,readwrite) unsigned long long itemIndex;
-@property(assign,retain) UIPinchGestureRecognizer * pinchGestureRecognizer;
-@property(assign,retain) MPUContentSizeLayoutConstraint * subtitleBaselineConstraint;
-@property(assign,retain) UILabel * subtitleLabel;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIView * textContainer;
-@property(assign,readonly) double thumbnailImageContainerHeight;
-@property(assign,retain) MPUExtrasConstrainedArtworkContainerView * thumbnailImageContainerView;
-@property(assign,retain) NSLayoutConstraint * thumbnailImageContainerViewHeightConstraint;
-@property(assign,retain) UILabel * titleLabel;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } windowSize;
-@property(assign,copy) NSString * zoomingImageTransitionIdentifier;
+@property (nonatomic) bool allowsPinchingThumbnailImageForInteractiveZoomingImageTransition;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UILabel *descriptionLabel;
+@property (nonatomic, retain) MPUContentSizeLayoutConstraint *descriptionLabelBaselineConstraint;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPUExtrasZoomingImageInteractiveTransitionSourceContext *interactiveTransitionSourceContext;
+@property (nonatomic) unsigned long long itemIndex;
+@property (nonatomic, retain) UIPinchGestureRecognizer *pinchGestureRecognizer;
+@property (nonatomic, retain) MPUContentSizeLayoutConstraint *subtitleBaselineConstraint;
+@property (nonatomic, retain) UILabel *subtitleLabel;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIView *textContainer;
+@property (nonatomic, readonly) double thumbnailImageContainerHeight;
+@property (nonatomic, retain) MPUExtrasConstrainedArtworkContainerView *thumbnailImageContainerView;
+@property (nonatomic, retain) NSLayoutConstraint *thumbnailImageContainerViewHeightConstraint;
+@property (nonatomic, retain) UILabel *titleLabel;
+@property (nonatomic) struct CGSize { double x1; double x2; } windowSize;
+@property (nonatomic, copy) NSString *zoomingImageTransitionIdentifier;
 
 - (void).cxx_destruct;
 - (double)_descriptionLabelTopInset;

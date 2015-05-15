@@ -15,16 +15,16 @@
     TSPObject *_weakObject;
 }
 
-@property(assign,readwrite) TSPComponent * component;
-@property(assign,readwrite) <TSPLazyReferenceDelegate> * delegate;
-@property(assign,readonly) long long identifier;
-@property(assign,readwrite) bool isExternal;
-@property(assign,readonly) bool isWeak;
-@property(assign,readonly) id object;
-@property(assign,readonly) id objectIfLoaded;
-@property(assign,readonly) NSUUID * objectUUID;
-@property(assign,retain) TSPObject * strongObject;
-@property(assign,readonly) TSPObject * weakObject;
+@property (nonatomic) TSPComponent *component;
+@property (nonatomic) <TSPLazyReferenceDelegate> *delegate;
+@property (nonatomic, readonly) long long identifier;
+@property (nonatomic) bool isExternal;
+@property (nonatomic, readonly) bool isWeak;
+@property (nonatomic, readonly) id object;
+@property (nonatomic, readonly) id objectIfLoaded;
+@property (nonatomic, readonly) NSUUID *objectUUID;
+@property (nonatomic, retain) TSPObject *strongObject;
+@property (nonatomic, readonly) TSPObject *weakObject;
 
 + (id)referenceForObject:(id)arg1;
 + (id)weakReferenceForObject:(id)arg1;

@@ -19,20 +19,20 @@
     int state;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,readwrite) int fd;
-@property(assign,retain) NSMutableData * incomingBuffer;
-@property(assign,copy) NSString * name;
-@property(assign,retain) MCResourceProgressObserver * observer;
-@property(assign,readwrite) MCPeerID * peerID;
-@property(assign,retain) NSProgress * progress;
-@property(assign,readwrite) bool progressUnbounded;
-@property(assign,readwrite) NSObject<OS_dispatch_source> * source;
-@property(assign,readwrite) bool sourceSuspended;
-@property(assign,readwrite) int state;
-@property(assign,readwrite) unsigned int streamID;
-@property(assign,copy) NSURL * url;
-@property(assign,retain) MCResourceDownloader * urlDownloader;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic) int fd;
+@property (nonatomic, retain) NSMutableData *incomingBuffer;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) MCResourceProgressObserver *observer;
+@property (nonatomic) MCPeerID *peerID;
+@property (nonatomic, retain) NSProgress *progress;
+@property (nonatomic) bool progressUnbounded;
+@property (nonatomic) NSObject<OS_dispatch_source> *source;
+@property (nonatomic) bool sourceSuspended;
+@property (nonatomic) int state;
+@property (nonatomic) unsigned int streamID;
+@property (nonatomic, copy) NSURL *url;
+@property (nonatomic, retain) MCResourceDownloader *urlDownloader;
 
 - (id)completionHandler;
 - (void)dealloc;

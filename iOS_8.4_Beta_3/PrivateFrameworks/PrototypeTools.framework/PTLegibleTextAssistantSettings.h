@@ -21,12 +21,12 @@
     NSArray *_shadowRadii;
 }
 
-@property(assign,readwrite) bool drawingShadowDrawsText;
-@property(assign,retain) UIColor * foregroundColor;
-@property(assign,readwrite) struct { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; } imageStatistics;
-@property(assign,copy) NSArray * shadowAlphas;
-@property(assign,copy) NSString * shadowCompositingFilterName;
-@property(assign,copy) NSArray * shadowRadii;
+@property (nonatomic) bool drawingShadowDrawsText;
+@property (nonatomic, retain) UIColor *foregroundColor;
+@property (nonatomic) struct { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; } imageStatistics;
+@property (nonatomic, copy) NSArray *shadowAlphas;
+@property (nonatomic, copy) NSString *shadowCompositingFilterName;
+@property (nonatomic, copy) NSArray *shadowRadii;
 
 + (id)settingsWithImageStatistics:(struct { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; })arg1;
 

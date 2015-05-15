@@ -7,13 +7,13 @@
     bool showing;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) QLPreviewController * previewController;
-@property(assign,readwrite) bool showing;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <UIViewControllerContextTransitioning> * transitionContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) QLPreviewController *previewController;
+@property bool showing;
+@property (readonly) Class superclass;
+@property <UIViewControllerContextTransitioning> *transitionContext;
 
 - (long long)_transitionStateForAnimationEnding:(bool)arg1;
 - (void)animateTransition:(id)arg1;

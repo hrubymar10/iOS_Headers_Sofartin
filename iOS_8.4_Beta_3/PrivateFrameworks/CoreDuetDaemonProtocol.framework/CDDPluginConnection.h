@@ -8,9 +8,9 @@
     CDDebug *_debug;
 }
 
-@property(assign,readonly) unsigned long long clientId;
-@property(assign,readonly) CDDXPCConnection * connection;
-@property(assign,readonly) CDDebug * debug;
+@property (readonly) unsigned long long clientId;
+@property (readonly) CDDXPCConnection *connection;
+@property (readonly) CDDebug *debug;
 
 - (void).cxx_destruct;
 - (bool)admissionSignoffConditionsChanged:(id)arg1 error:(id*)arg2 replyHandler:(id)arg3;

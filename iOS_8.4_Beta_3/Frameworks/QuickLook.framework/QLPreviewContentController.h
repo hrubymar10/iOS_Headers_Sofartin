@@ -44,15 +44,15 @@
     } clientContext;
 }
 
-@property(assign,copy) UIColor * backgroundColor;
-@property(assign,readwrite) struct { long long x1; struct { unsigned int x_2_1_1[8]; } x2; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_3_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_3_1_2; } x3; } clientContext;
-@property(assign,readwrite) <QLPreviewContentDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <QLPreviewContentDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int previewMode;
-@property(assign,readonly) Class superclass;
+@property (copy) UIColor *backgroundColor;
+@property struct { long long x1; struct { unsigned int x_2_1_1[8]; } x2; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_3_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_3_1_2; } x3; } clientContext;
+@property <QLPreviewContentDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property <QLPreviewContentDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property int previewMode;
+@property (readonly) Class superclass;
 
 - (void)_activateAirPlayOnRemoteScreen:(id)arg1;
 - (void)_cachePreviewViewController:(id)arg1;

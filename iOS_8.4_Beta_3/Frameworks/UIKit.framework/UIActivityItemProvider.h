@@ -10,15 +10,15 @@
     NSString *_status;
 }
 
-@property(assign,readonly) NSString * activityType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) id placeholderItem;
-@property(assign,readwrite) float progress;
-@property(assign,retain) id providedItem;
-@property(assign,copy) NSString * status;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSString *activityType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) id placeholderItem;
+@property (nonatomic) float progress;
+@property (nonatomic, retain) id providedItem;
+@property (nonatomic, copy) NSString *status;
+@property (readonly) Class superclass;
 
 - (void)_setActivityType:(id)arg1;
 - (id)activityType;

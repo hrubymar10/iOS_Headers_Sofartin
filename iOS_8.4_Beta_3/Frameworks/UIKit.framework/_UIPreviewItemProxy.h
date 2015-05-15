@@ -11,11 +11,11 @@
     NSURL *_previewURLOverride;
 }
 
-@property(assign,copy) NSURL * URLToDeleteOnDealloc;
-@property(assign,copy) NSString * previewItemContentType;
-@property(assign,copy) NSString * previewItemTitle;
-@property(assign,copy) NSURL * previewItemURL;
-@property(assign,copy) NSURL * previewItemURLOverride;
+@property (nonatomic, copy) NSURL *URLToDeleteOnDealloc;
+@property (nonatomic, copy) NSString *previewItemContentType;
+@property (nonatomic, copy) NSString *previewItemTitle;
+@property (nonatomic, copy) NSURL *previewItemURL;
+@property (nonatomic, copy) NSURL *previewItemURLOverride;
 
 - (id)URLToDeleteOnDealloc;
 - (id)_primitive_previewItemContentType;

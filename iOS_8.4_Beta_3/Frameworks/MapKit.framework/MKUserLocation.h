@@ -8,24 +8,24 @@
     MKUserLocationInternal *_internal;
 }
 
-@property(assign,readonly) double accuracy;
-@property(assign,readwrite) struct { double x1; double x2; } coordinate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double expectedCoordinateUpdateInterval;
-@property(assign,readwrite) double expectedHeadingUpdateInterval;
-@property(assign,retain) CLLocation * fixedLocation;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CLHeading * heading;
-@property(assign,readonly) double headingDegrees;
-@property(assign,retain) CLLocation * location;
-@property(assign,retain) CLLocation * predictedLocation;
-@property(assign,readonly) NSString * shortDescription;
-@property(assign,copy) NSString * subtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double timestamp;
-@property(assign,copy) NSString * title;
-@property(getter=isUpdating,assign,readwrite) bool updating;
+@property (nonatomic, readonly) double accuracy;
+@property (nonatomic) struct { double x1; double x2; } coordinate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double expectedCoordinateUpdateInterval;
+@property (nonatomic) double expectedHeadingUpdateInterval;
+@property (nonatomic, retain) CLLocation *fixedLocation;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CLHeading *heading;
+@property (nonatomic, readonly) double headingDegrees;
+@property (nonatomic, retain) CLLocation *location;
+@property (nonatomic, retain) CLLocation *predictedLocation;
+@property (nonatomic, readonly) NSString *shortDescription;
+@property (nonatomic, copy) NSString *subtitle;
+@property (readonly) Class superclass;
+@property (nonatomic) double timestamp;
+@property (nonatomic, copy) NSString *title;
+@property (getter=isUpdating, nonatomic) bool updating;
 
 + (void)_setAnnotationClass:(Class)arg1;
 + (id)keyPathsForValuesAffectingSubtitle;

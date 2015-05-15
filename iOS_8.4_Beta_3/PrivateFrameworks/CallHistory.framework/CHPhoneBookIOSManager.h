@@ -10,15 +10,15 @@
     unsigned int _recordIsSuggested;
 }
 
-@property(assign,readwrite) bool callerIdIsEmail;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int multiValueId;
-@property(assign,readwrite) void* record;
-@property(assign,readwrite) int recordId;
-@property(assign,readwrite) unsigned int recordIsSuggested;
-@property(assign,readonly) Class superclass;
+@property bool callerIdIsEmail;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property int multiValueId;
+@property (nonatomic) void*record;
+@property int recordId;
+@property unsigned int recordIsSuggested;
+@property (readonly) Class superclass;
 
 - (bool)callerIdIsEmail;
 - (void)dealloc;

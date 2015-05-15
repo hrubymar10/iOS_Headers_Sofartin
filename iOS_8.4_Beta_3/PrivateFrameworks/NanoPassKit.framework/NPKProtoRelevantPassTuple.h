@@ -7,9 +7,9 @@
     NSString *_relevantText;
 }
 
-@property(assign,readonly) bool hasRelevantText;
-@property(assign,retain) NSString * passID;
-@property(assign,retain) NSString * relevantText;
+@property (nonatomic, readonly) bool hasRelevantText;
+@property (nonatomic, retain) NSString *passID;
+@property (nonatomic, retain) NSString *relevantText;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

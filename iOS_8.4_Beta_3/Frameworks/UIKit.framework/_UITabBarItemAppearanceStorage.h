@@ -6,7 +6,7 @@
     NSValue *titleOffset;
 }
 
-@property(assign,retain) NSValue * titleOffset;
+@property (nonatomic, retain) NSValue *titleOffset;
 
 - (void)dealloc;
 - (void)setTitleOffset:(id)arg1;

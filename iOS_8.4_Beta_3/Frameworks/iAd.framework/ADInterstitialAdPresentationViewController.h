@@ -7,8 +7,8 @@
     ADInterstitialAd *_interstitialAd;
 }
 
-@property(assign,retain) ADCountdownButton * closeButton;
-@property(assign,readonly) ADInterstitialAd * interstitialAd;
+@property (nonatomic, retain) ADCountdownButton *closeButton;
+@property (nonatomic, readonly) ADInterstitialAd *interstitialAd;
 
 - (id)closeButton;
 - (void)dealloc;

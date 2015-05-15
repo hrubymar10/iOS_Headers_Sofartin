@@ -9,10 +9,10 @@
     bool _valid;
 }
 
-@property(assign,readonly) NSString * errorString;
-@property(assign,readonly) NSString * giftKey;
-@property(assign,readonly) NSString * totalGiftAmountString;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (nonatomic, readonly) NSString *errorString;
+@property (nonatomic, readonly) NSString *giftKey;
+@property (nonatomic, readonly) NSString *totalGiftAmountString;
+@property (getter=isValid, nonatomic, readonly) bool valid;
 
 - (void).cxx_destruct;
 - (id)errorString;

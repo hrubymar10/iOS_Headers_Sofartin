@@ -6,8 +6,8 @@
     SSWishlist *_database;
 }
 
-@property(assign,readonly) long long accountIdentifier;
-@property(assign,copy) NSArray * items;
+@property (nonatomic, readonly) long long accountIdentifier;
+@property (nonatomic, readonly, copy) NSArray *items;
 
 + (id)activeWishlist;
 

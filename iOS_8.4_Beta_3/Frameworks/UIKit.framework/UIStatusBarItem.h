@@ -7,12 +7,12 @@
     int _type;
 }
 
-@property(assign,readonly) NSString * indicatorName;
-@property(assign,readonly) int leftOrder;
-@property(assign,readonly) int priority;
-@property(assign,readonly) int rightOrder;
-@property(assign,readonly) int type;
-@property(assign,readonly) Class viewClass;
+@property (nonatomic, readonly) NSString *indicatorName;
+@property (nonatomic, readonly) int leftOrder;
+@property (nonatomic, readonly) int priority;
+@property (nonatomic, readonly) int rightOrder;
+@property (nonatomic, readonly) int type;
+@property (nonatomic, readonly) Class viewClass;
 
 + (bool)isItemWithTypeExclusive:(int)arg1;
 + (bool)itemType:(int)arg1 idiom:(long long)arg2 appearsInRegion:(int)arg3;

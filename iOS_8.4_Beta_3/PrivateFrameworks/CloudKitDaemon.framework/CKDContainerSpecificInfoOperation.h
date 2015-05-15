@@ -8,9 +8,9 @@
     bool _needUserID;
 }
 
-@property(assign,copy) CKDContainerInfo * containerInfo;
-@property(assign,readonly) NSObject<OS_dispatch_group> * infoFetchedGroup;
-@property(assign,readwrite) bool needUserID;
+@property (nonatomic, copy) CKDContainerInfo *containerInfo;
+@property (nonatomic, readonly) NSObject<OS_dispatch_group> *infoFetchedGroup;
+@property (nonatomic) bool needUserID;
 
 - (void).cxx_destruct;
 - (id)containerInfo;

@@ -95,22 +95,22 @@
     UIView *_zoomView;
 }
 
-@property(setter=_setToolbarHidden:,assign,readwrite) bool _toolbarHidden;
-@property(setter=_setViewAnimationEnabledCount:,assign,readwrite) long long _viewAnimationEnabledCount;
-@property(assign,copy) id actionCompletionBlock;
-@property(assign,readwrite) bool autoAdjustmentEnabled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) PLManagedAsset * editedPhoto;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UINavigationBar * navigationBar;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } normalizedCropRect;
-@property(assign,readonly) PLManagedAsset * pendingPhoto;
-@property(assign,readwrite) double rotationAngle;
-@property(assign,readonly) UIScrollView * scrollView;
-@property(assign,readonly) double straightenAngle;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIToolbar * toolbar;
+@property (setter=_setToolbarHidden:, nonatomic) bool _toolbarHidden;
+@property (setter=_setViewAnimationEnabledCount:, nonatomic) long long _viewAnimationEnabledCount;
+@property (nonatomic, copy) id actionCompletionBlock;
+@property (nonatomic) bool autoAdjustmentEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) PLManagedAsset *editedPhoto;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UINavigationBar *navigationBar;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } normalizedCropRect;
+@property (nonatomic, readonly) PLManagedAsset *pendingPhoto;
+@property (nonatomic) double rotationAngle;
+@property (nonatomic, readonly) UIScrollView *scrollView;
+@property (nonatomic, readonly) double straightenAngle;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIToolbar *toolbar;
 
 + (void)initialize;
 

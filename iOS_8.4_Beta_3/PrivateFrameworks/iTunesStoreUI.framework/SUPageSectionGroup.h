@@ -10,11 +10,11 @@
     long long _tintStyle;
 }
 
-@property(assign,readwrite) long long defaultSectionIndex;
-@property(assign,retain) NSArray * sections;
-@property(assign,readwrite) long long style;
-@property(assign,retain) UIColor * tintColor;
-@property(assign,readwrite) long long tintStyle;
+@property (nonatomic) long long defaultSectionIndex;
+@property (nonatomic, retain) NSArray *sections;
+@property (nonatomic) long long style;
+@property (nonatomic, retain) UIColor *tintColor;
+@property (nonatomic) long long tintStyle;
 
 - (long long)_sectionStyleForString:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

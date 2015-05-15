@@ -14,15 +14,15 @@
     bool _systemWideServer;
 }
 
-@property(assign,copy) id applicationElementCallback;
-@property(assign,copy) id attributeCallback;
-@property(assign,copy) id clientObserverCallback;
-@property(assign,copy) id hitTestCallback;
-@property(assign,copy) id outgoingValuePreprocessor;
-@property(assign,copy) id parameterizedAttributeCallback;
-@property(assign,copy) id performActionCallback;
-@property(assign,copy) id setAttributeCallback;
-@property(assign,readwrite) bool systemWideServer;
+@property (nonatomic, copy) id applicationElementCallback;
+@property (nonatomic, copy) id attributeCallback;
+@property (nonatomic, copy) id clientObserverCallback;
+@property (nonatomic, copy) id hitTestCallback;
+@property (nonatomic, copy) id outgoingValuePreprocessor;
+@property (nonatomic, copy) id parameterizedAttributeCallback;
+@property (nonatomic, copy) id performActionCallback;
+@property (nonatomic, copy) id setAttributeCallback;
+@property (nonatomic) bool systemWideServer;
 
 + (id)sharedManager;
 

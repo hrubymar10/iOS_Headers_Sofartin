@@ -4,19 +4,19 @@
 
 @interface NSTask : NSObject
 
-@property(assign,copy) NSArray * arguments;
-@property(assign,copy) NSString * currentDirectoryPath;
-@property(assign,copy) NSDictionary * environment;
-@property(assign,copy) NSString * launchPath;
-@property(assign,readonly) int processIdentifier;
-@property(assign,readwrite) long long qualityOfService;
-@property(getter=isRunning,assign,readonly) bool running;
-@property(assign,retain) id standardError;
-@property(assign,retain) id standardInput;
-@property(assign,retain) id standardOutput;
-@property(assign,copy) id terminationHandler;
-@property(assign,readonly) long long terminationReason;
-@property(assign,readonly) int terminationStatus;
+@property (copy) NSArray *arguments;
+@property (copy) NSString *currentDirectoryPath;
+@property (copy) NSDictionary *environment;
+@property (copy) NSString *launchPath;
+@property (readonly) int processIdentifier;
+@property long long qualityOfService;
+@property (getter=isRunning, readonly) bool running;
+@property (retain) id standardError;
+@property (retain) id standardInput;
+@property (retain) id standardOutput;
+@property (copy) id terminationHandler;
+@property (readonly) long long terminationReason;
+@property (readonly) int terminationStatus;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)currentTaskDictionary;

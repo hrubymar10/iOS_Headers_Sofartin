@@ -12,13 +12,13 @@
     BBSettingsGateway *_settingsGateway;
 }
 
-@property(assign,readonly) NSString * allowedGroupName;
-@property(assign,retain) NSArray * bbSections;
-@property(assign,readonly) NSDateComponents * dndFromComponents;
-@property(assign,readonly) NSDateComponents * dndToComponents;
-@property(assign,readonly) bool isScheduled;
-@property(assign,readonly) unsigned long long privilegedSenderType;
-@property(assign,retain) BBSettingsGateway * settingsGateway;
+@property (nonatomic, readonly) NSString *allowedGroupName;
+@property (nonatomic, retain) NSArray *bbSections;
+@property (nonatomic, readonly) NSDateComponents *dndFromComponents;
+@property (nonatomic, readonly) NSDateComponents *dndToComponents;
+@property (nonatomic, readonly) bool isScheduled;
+@property (nonatomic, readonly) unsigned long long privilegedSenderType;
+@property (nonatomic, retain) BBSettingsGateway *settingsGateway;
 
 + (id)sharedManager;
 

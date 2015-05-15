@@ -8,9 +8,9 @@
     bool _replaceBlurs;
 }
 
-@property(assign,readwrite) long long blurReplacementMode;
-@property(assign,readwrite) unsigned long long colorBoxSize;
-@property(assign,readwrite) bool replaceBlurs;
+@property (nonatomic) long long blurReplacementMode;
+@property (nonatomic) unsigned long long colorBoxSize;
+@property (nonatomic) bool replaceBlurs;
 
 + (id)settingsControllerModule;
 

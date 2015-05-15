@@ -9,10 +9,10 @@
     TSKWarning *_warning;
 }
 
-@property(assign,readwrite) int bold;
-@property(assign,readwrite) int italic;
-@property(assign,retain) NSString * mappedName;
-@property(assign,retain) TSKWarning * warning;
+@property (nonatomic) int bold;
+@property (nonatomic) int italic;
+@property (nonatomic, retain) NSString *mappedName;
+@property (nonatomic, retain) TSKWarning *warning;
 
 - (int)bold;
 - (void)dealloc;

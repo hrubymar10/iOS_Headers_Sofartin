@@ -13,7 +13,7 @@
     NSArray *_windowsWithDisabledRotation;
 }
 
-@property(assign,copy) id dismissCompletionHandler;
+@property (nonatomic, copy) id dismissCompletionHandler;
 
 + (Class)remoteViewControllerClass;
 + (id)serviceViewControllerClassName;

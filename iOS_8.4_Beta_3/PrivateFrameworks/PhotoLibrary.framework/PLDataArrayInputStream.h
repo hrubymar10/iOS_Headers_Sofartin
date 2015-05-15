@@ -26,7 +26,7 @@
     unsigned long long _streamStatus;
 }
 
-@property(assign,readwrite) <PLDataArrayInputStreamProgressDelegate> * progressDelegate;
+@property (nonatomic) <PLDataArrayInputStreamProgressDelegate> *progressDelegate;
 
 - (void)_scheduleCallback;
 - (void)_scheduleInCFRunLoop:(struct __CFRunLoop { }*)arg1 forMode:(struct __CFString { }*)arg2;

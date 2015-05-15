@@ -7,8 +7,8 @@
     long long _options;
 }
 
-@property(assign,readonly) NSString * stringA;
-@property(assign,readonly) NSString * stringB;
+@property (nonatomic, readonly) NSString *stringA;
+@property (nonatomic, readonly) NSString *stringB;
 
 + (id)editScriptForSmallestSingleEditFromString:(id)arg1 toString:(id)arg2;
 + (id)editScriptFromString:(id)arg1 toString:(id)arg2;

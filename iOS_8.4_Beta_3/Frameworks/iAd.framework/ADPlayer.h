@@ -12,18 +12,18 @@
     ADBannerView *_videoAd;
 }
 
-@property(assign,retain) AVPlayer * avPlayer;
-@property(assign,retain) AVPlayerItem * avPlayerItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ADPlayerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool playbackHasBegun;
-@property(assign,readonly) float playbackRate;
-@property(assign,readwrite) unsigned long long playbackState;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) id timeObserver;
-@property(assign,retain) ADBannerView * videoAd;
+@property (nonatomic, retain) AVPlayer *avPlayer;
+@property (nonatomic, retain) AVPlayerItem *avPlayerItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ADPlayerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool playbackHasBegun;
+@property (nonatomic, readonly) float playbackRate;
+@property (nonatomic) unsigned long long playbackState;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) id timeObserver;
+@property (nonatomic, retain) ADBannerView *videoAd;
 
 - (id)_networkOptimalVideoURLForAd:(id)arg1;
 - (void)applicationDidBecomeActive;

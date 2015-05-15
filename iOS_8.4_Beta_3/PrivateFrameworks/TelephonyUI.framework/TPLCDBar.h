@@ -6,7 +6,7 @@
     UIImageView *_shadowView;
 }
 
-@property(assign,readonly) UIImageView * shadowView;
+@property (readonly) UIImageView *shadowView;
 
 + (id)backgroundImage;
 + (double)defaultHeight;

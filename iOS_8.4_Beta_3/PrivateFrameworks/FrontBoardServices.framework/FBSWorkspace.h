@@ -11,13 +11,13 @@
     NSObject<OS_dispatch_queue> *_scenesQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <FBSWorkspaceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) FBSSerialQueue * queue;
-@property(assign,copy) NSArray * scenes;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <FBSWorkspaceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) FBSSerialQueue *queue;
+@property (nonatomic, readonly, copy) NSArray *scenes;
+@property (readonly) Class superclass;
 
 - (id)_client;
 - (Class)_clientClass;

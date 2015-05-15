@@ -13,18 +13,18 @@
     UIWindow *_window;
 }
 
-@property(setter=_setForwardablePhase:,assign,readwrite) long long _forwardablePhase;
-@property(setter=_setResponder:,assign,retain) UIResponder * _responder;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSArray * gestureRecognizers;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long phase;
-@property(assign,retain) UIResponder * responder;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double timestamp;
-@property(assign,readwrite) long long type;
-@property(assign,retain) UIWindow * window;
+@property (setter=_setForwardablePhase:, nonatomic) long long _forwardablePhase;
+@property (setter=_setResponder:, nonatomic, retain) UIResponder *_responder;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSArray *gestureRecognizers;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long phase;
+@property (nonatomic, retain) UIResponder *responder;
+@property (readonly) Class superclass;
+@property (nonatomic) double timestamp;
+@property (nonatomic) long long type;
+@property (nonatomic, retain) UIWindow *window;
 
 - (void)_abandonForwardingRecord;
 - (long long)_forwardablePhase;

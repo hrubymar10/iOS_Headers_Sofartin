@@ -17,22 +17,22 @@
     id _tableViewCellHook;
 }
 
-@property(assign,retain) EKUIInviteeAlternativeTimeSearcher * availabilitySearcher;
-@property(assign,retain) NSArray * busyParticipants;
-@property(assign,retain) NSString * cachedCellReuseIdentifier;
-@property(assign,readwrite) bool checked;
-@property(assign,readwrite) bool conflictFound;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSDate * endDate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id newTimeChosen;
-@property(assign,readwrite) unsigned long long reuseIdentifierVersion;
-@property(assign,retain) NSMutableSet * rowsShowingAllParticipants;
-@property(assign,copy) id showPreviewOfEventAtTime;
-@property(assign,retain) NSDate * startDate;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id tableViewCellHook;
+@property (nonatomic, retain) EKUIInviteeAlternativeTimeSearcher *availabilitySearcher;
+@property (nonatomic, retain) NSArray *busyParticipants;
+@property (nonatomic, retain) NSString *cachedCellReuseIdentifier;
+@property (nonatomic) bool checked;
+@property (nonatomic) bool conflictFound;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSDate *endDate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id newTimeChosen;
+@property (nonatomic) unsigned long long reuseIdentifierVersion;
+@property (nonatomic, retain) NSMutableSet *rowsShowingAllParticipants;
+@property (nonatomic, copy) id showPreviewOfEventAtTime;
+@property (nonatomic, retain) NSDate *startDate;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id tableViewCellHook;
 
 - (void).cxx_destruct;
 - (bool)_isValidRow:(long long)arg1;

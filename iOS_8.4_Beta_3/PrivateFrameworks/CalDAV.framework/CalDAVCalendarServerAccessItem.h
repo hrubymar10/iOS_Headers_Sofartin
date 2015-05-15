@@ -6,7 +6,7 @@
     CoreDAVItemWithNoChildren *_accessLevel;
 }
 
-@property(assign,retain) CoreDAVItemWithNoChildren * accessLevel;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *accessLevel;
 
 - (id)accessLevel;
 - (id)copyParseRules;

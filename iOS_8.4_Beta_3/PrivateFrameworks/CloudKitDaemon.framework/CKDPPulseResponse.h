@@ -7,9 +7,9 @@
     NSMutableArray *_userDatas;
 }
 
-@property(assign,retain) NSString * currentEtag;
-@property(assign,readonly) bool hasCurrentEtag;
-@property(assign,retain) NSMutableArray * userDatas;
+@property (nonatomic, retain) NSString *currentEtag;
+@property (nonatomic, readonly) bool hasCurrentEtag;
+@property (nonatomic, retain) NSMutableArray *userDatas;
 
 - (void).cxx_destruct;
 - (void)addUserData:(id)arg1;

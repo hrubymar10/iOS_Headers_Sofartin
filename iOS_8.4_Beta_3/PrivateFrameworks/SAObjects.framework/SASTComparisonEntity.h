@@ -4,13 +4,13 @@
 
 @interface SASTComparisonEntity : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) SAUIDecoratedText * decoratedTitle;
-@property(assign,retain) SAUIDecoratedText * decoratedValue;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUINanoImageResource * imageResource;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) SAUIDecoratedText *decoratedTitle;
+@property (nonatomic, retain) SAUIDecoratedText *decoratedValue;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUINanoImageResource *imageResource;
+@property (readonly) Class superclass;
 
 + (id)comparisonEntity;
 + (id)comparisonEntityWithDictionary:(id)arg1 context:(id)arg2;

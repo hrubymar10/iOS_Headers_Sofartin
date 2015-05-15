@@ -6,7 +6,7 @@
     NSString *_property;
 }
 
-@property(assign,readonly) NSString * property;
+@property (nonatomic, readonly) NSString *property;
 
 - (void).cxx_destruct;
 - (id)SQLJoinClausesForEntityClass:(Class)arg1;

@@ -17,10 +17,10 @@
     } _webView;
 }
 
-@property(assign,copy) id body;
-@property(assign,copy) WKFrameInfo * frameInfo;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) WKWebView * webView;
+@property (nonatomic, readonly, copy) id body;
+@property (nonatomic, readonly, copy) WKFrameInfo *frameInfo;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly) WKWebView *webView;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -29,24 +29,24 @@
     double _zoomFactor;
 }
 
-@property(assign,retain) UIView * contentView;
-@property(assign,readwrite) bool continuousColorSamplingEnabled;
-@property(assign,readwrite) double contrast;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool filtersAverageColor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <SBFWallpaperViewInternalObserver> * internalObserver;
-@property(assign,readwrite) <SBFWallpaperViewLegibilityObserver> * legibilityObserver;
-@property(assign,retain) _UILegibilitySettings * legibilitySettings;
-@property(assign,readwrite) double parallaxAxisAdjustmentAngle;
-@property(assign,readwrite) bool parallaxEnabled;
-@property(assign,readwrite) double parallaxFactor;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long variant;
-@property(assign,readwrite) bool wallpaperAnimationEnabled;
-@property(assign,readonly) UIImage * wallpaperImage;
-@property(assign,readwrite) double zoomFactor;
+@property (nonatomic, retain) UIView *contentView;
+@property (nonatomic) bool continuousColorSamplingEnabled;
+@property (nonatomic) double contrast;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool filtersAverageColor;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <SBFWallpaperViewInternalObserver> *internalObserver;
+@property (nonatomic) <SBFWallpaperViewLegibilityObserver> *legibilityObserver;
+@property (nonatomic, retain) _UILegibilitySettings *legibilitySettings;
+@property (nonatomic) double parallaxAxisAdjustmentAngle;
+@property (nonatomic) bool parallaxEnabled;
+@property (nonatomic) double parallaxFactor;
+@property (readonly) Class superclass;
+@property (nonatomic) long long variant;
+@property (nonatomic) bool wallpaperAnimationEnabled;
+@property (nonatomic, readonly) UIImage *wallpaperImage;
+@property (nonatomic) double zoomFactor;
 
 + (bool)_allowsParallax;
 + (bool)_allowsRasterization;

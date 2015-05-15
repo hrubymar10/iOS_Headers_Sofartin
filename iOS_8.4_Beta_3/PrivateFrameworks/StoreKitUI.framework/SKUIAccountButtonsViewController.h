@@ -9,15 +9,15 @@
     SKUILink *_ecommerceLink;
 }
 
-@property(assign,retain) SKUILink * ECommerceLink;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIAccountButtonsDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=isGiftingHidden,assign,readwrite) bool giftingHidden;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(getter=isTermsAndConditionsHidden,assign,readwrite) bool termsAndConditionsHidden;
+@property (nonatomic, retain) SKUILink *ECommerceLink;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIAccountButtonsDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=isGiftingHidden, nonatomic) bool giftingHidden;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (getter=isTermsAndConditionsHidden, nonatomic) bool termsAndConditionsHidden;
 
 - (void).cxx_destruct;
 - (id)ECommerceLink;

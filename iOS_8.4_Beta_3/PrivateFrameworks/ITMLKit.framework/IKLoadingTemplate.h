@@ -4,7 +4,7 @@
 
 @interface IKLoadingTemplate : IKViewElement
 
-@property(assign,retain) IKViewElement * activityElement;
+@property (nonatomic, readonly, retain) IKViewElement *activityElement;
 
 - (id)activityElement;
 

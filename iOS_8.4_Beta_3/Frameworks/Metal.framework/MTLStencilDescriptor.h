@@ -13,12 +13,12 @@
     } _private;
 }
 
-@property(assign,readwrite) unsigned long long depthFailureOperation;
-@property(assign,readwrite) unsigned long long depthStencilPassOperation;
-@property(assign,readwrite) unsigned int readMask;
-@property(assign,readwrite) unsigned long long stencilCompareFunction;
-@property(assign,readwrite) unsigned long long stencilFailureOperation;
-@property(assign,readwrite) unsigned int writeMask;
+@property (nonatomic) unsigned long long depthFailureOperation;
+@property (nonatomic) unsigned long long depthStencilPassOperation;
+@property (nonatomic) unsigned int readMask;
+@property (nonatomic) unsigned long long stencilCompareFunction;
+@property (nonatomic) unsigned long long stencilFailureOperation;
+@property (nonatomic) unsigned int writeMask;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (unsigned long long)depthFailureOperation;

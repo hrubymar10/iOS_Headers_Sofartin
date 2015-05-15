@@ -33,24 +33,24 @@
     bool _wantsLetterpressContent;
 }
 
-@property(getter=_isAdaptiveToolbarDisabled,setter=_setAdaptiveToolbarDisabled:,assign,readwrite) bool _adaptiveToolbarDisabled;
-@property(getter=_isLocked,setter=_setLocked:,assign,readwrite) bool _locked;
-@property(setter=_setShadowView:,assign,retain) UIView * _shadowView;
-@property(setter=_setWantsLetterpressContent:,assign,readwrite) bool _wantsLetterpressContent;
-@property(getter=_backdropViewLayerGroupName,setter=_setBackdropViewLayerGroupName:,assign,retain) NSString * backdropViewLayerGroupName;
-@property(assign,readonly) long long barPosition;
-@property(assign,readwrite) long long barStyle;
-@property(assign,retain) UIColor * barTintColor;
-@property(assign,readwrite) bool centerTextButtons;
-@property(getter=isCollapsed,assign,readwrite) bool collapsed;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UIToolbarDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * items;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIColor * tintColor;
-@property(getter=isTranslucent,assign,readwrite) bool translucent;
+@property (getter=_isAdaptiveToolbarDisabled, setter=_setAdaptiveToolbarDisabled:, nonatomic) bool _adaptiveToolbarDisabled;
+@property (getter=_isLocked, setter=_setLocked:, nonatomic) bool _locked;
+@property (setter=_setShadowView:, nonatomic, retain) UIView *_shadowView;
+@property (setter=_setWantsLetterpressContent:, nonatomic) bool _wantsLetterpressContent;
+@property (getter=_backdropViewLayerGroupName, setter=_setBackdropViewLayerGroupName:, nonatomic, retain) NSString *backdropViewLayerGroupName;
+@property (nonatomic, readonly) long long barPosition;
+@property (nonatomic) long long barStyle;
+@property (nonatomic, retain) UIColor *barTintColor;
+@property (nonatomic) bool centerTextButtons;
+@property (getter=isCollapsed, nonatomic) bool collapsed;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UIToolbarDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *items;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIColor *tintColor;
+@property (getter=isTranslucent, nonatomic) bool translucent;
 
 + (float)_buttonGap;
 + (Class)defaultButtonClass;

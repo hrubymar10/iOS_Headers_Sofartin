@@ -16,9 +16,9 @@
     NSMutableDictionary *_referencers;
 }
 
-@property(assign,retain) NSMutableDictionary * committedProperties;
-@property(assign,readonly) int entityType;
-@property(assign,readonly) EKEventStore * eventStore;
+@property (nonatomic, retain) NSMutableDictionary *committedProperties;
+@property (nonatomic, readonly) int entityType;
+@property (nonatomic, readonly) EKEventStore *eventStore;
 
 + (id)defaultPropertiesToLoad;
 + (id)relations;

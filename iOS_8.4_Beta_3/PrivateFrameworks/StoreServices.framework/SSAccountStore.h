@@ -9,11 +9,11 @@
     NSMutableArray *_notifyTokens;
 }
 
-@property(assign,copy) NSArray * accounts;
-@property(assign,readonly) SSAccount * activeAccount;
-@property(assign,readonly) SSAccount * activeLockerAccount;
-@property(getter=isAuthenticationActive,assign,readonly) bool authenticationActive;
-@property(getter=isExpired,assign,readonly) bool expired;
+@property (readonly, copy) NSArray *accounts;
+@property (readonly) SSAccount *activeAccount;
+@property (readonly) SSAccount *activeLockerAccount;
+@property (getter=isAuthenticationActive, readonly) bool authenticationActive;
+@property (getter=isExpired, readonly) bool expired;
 
 + (id)defaultStore;
 + (id)existingDefaultStore;

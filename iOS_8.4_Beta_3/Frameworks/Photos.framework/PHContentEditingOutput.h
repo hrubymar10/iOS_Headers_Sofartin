@@ -14,15 +14,15 @@
     NSURL *_renderedContentURL;
 }
 
-@property(assign,retain) PHAdjustmentData * adjustmentData;
-@property(assign,readwrite) long long baseVersion;
-@property(assign,retain) NSURL * editorBundleURL;
-@property(assign,readwrite) long long fullSizeRenderHeight;
-@property(assign,readwrite) long long fullSizeRenderWidth;
-@property(assign,readwrite) bool isSubstandardRender;
-@property(assign,readonly) long long mediaType;
-@property(assign,retain) NSData * penultimateRenderedJPEGData;
-@property(assign,copy) NSURL * renderedContentURL;
+@property (retain) PHAdjustmentData *adjustmentData;
+@property long long baseVersion;
+@property (retain) NSURL *editorBundleURL;
+@property (nonatomic) long long fullSizeRenderHeight;
+@property (nonatomic) long long fullSizeRenderWidth;
+@property (nonatomic) bool isSubstandardRender;
+@property (readonly) long long mediaType;
+@property (retain) NSData *penultimateRenderedJPEGData;
+@property (copy) NSURL *renderedContentURL;
 
 + (unsigned long long)maximumAdjustmentDataLength;
 + (bool)supportsSecureCoding;

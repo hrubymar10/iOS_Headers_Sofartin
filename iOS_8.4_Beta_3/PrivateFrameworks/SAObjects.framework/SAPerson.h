@@ -4,30 +4,30 @@
 
 @interface SAPerson : SADomainObject
 
-@property(assign,copy) NSArray * addresses;
-@property(assign,copy) NSDate * birthday;
-@property(assign,copy) NSString * company;
-@property(assign,copy) NSArray * emails;
-@property(assign,copy) NSString * firstName;
-@property(assign,copy) NSDictionary * firstNameAPGs;
-@property(assign,copy) NSString * firstNamePhonetic;
-@property(assign,copy) NSString * fullName;
-@property(assign,copy) NSString * internalGUID;
-@property(assign,copy) NSNumber * isBlocked;
-@property(assign,copy) NSString * lastName;
-@property(assign,copy) NSDictionary * lastNameAPGs;
-@property(assign,copy) NSString * lastNamePhonetic;
-@property(assign,copy) NSNumber * me;
-@property(assign,copy) NSString * middleName;
-@property(assign,copy) NSString * nickName;
-@property(assign,copy) NSDictionary * nickNameAPGs;
-@property(assign,copy) NSString * phonemeData;
-@property(assign,copy) NSArray * phones;
-@property(assign,copy) NSString * prefix;
-@property(assign,copy) NSNumber * pseudo;
-@property(assign,copy) NSArray * relatedNames;
-@property(assign,copy) NSArray * socialProfiles;
-@property(assign,copy) NSString * suffix;
+@property (nonatomic, copy) NSArray *addresses;
+@property (nonatomic, copy) NSDate *birthday;
+@property (nonatomic, copy) NSString *company;
+@property (nonatomic, copy) NSArray *emails;
+@property (nonatomic, copy) NSString *firstName;
+@property (nonatomic, copy) NSDictionary *firstNameAPGs;
+@property (nonatomic, copy) NSString *firstNamePhonetic;
+@property (nonatomic, copy) NSString *fullName;
+@property (nonatomic, copy) NSString *internalGUID;
+@property (nonatomic, copy) NSNumber *isBlocked;
+@property (nonatomic, copy) NSString *lastName;
+@property (nonatomic, copy) NSDictionary *lastNameAPGs;
+@property (nonatomic, copy) NSString *lastNamePhonetic;
+@property (nonatomic, copy) NSNumber *me;
+@property (nonatomic, copy) NSString *middleName;
+@property (nonatomic, copy) NSString *nickName;
+@property (nonatomic, copy) NSDictionary *nickNameAPGs;
+@property (nonatomic, copy) NSString *phonemeData;
+@property (nonatomic, copy) NSArray *phones;
+@property (nonatomic, copy) NSString *prefix;
+@property (nonatomic, copy) NSNumber *pseudo;
+@property (nonatomic, copy) NSArray *relatedNames;
+@property (nonatomic, copy) NSArray *socialProfiles;
+@property (nonatomic, copy) NSString *suffix;
 
 + (id)person;
 + (id)personWithDictionary:(id)arg1 context:(id)arg2;

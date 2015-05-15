@@ -12,12 +12,12 @@
     UIColor *_textColor;
 }
 
-@property(assign,retain) NSString * contentRating;
-@property(assign,readwrite) bool isPad;
-@property(assign,retain) UIColor * ratingColor;
-@property(assign,retain) NSArray * secondaryContentRatingImages;
-@property(assign,copy) NSString * text;
-@property(assign,retain) UIColor * textColor;
+@property (nonatomic, retain) NSString *contentRating;
+@property (nonatomic) bool isPad;
+@property (nonatomic, retain) UIColor *ratingColor;
+@property (nonatomic, retain) NSArray *secondaryContentRatingImages;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, retain) UIColor *textColor;
 
 - (void).cxx_destruct;
 - (id)_imageForContentRating:(id)arg1;

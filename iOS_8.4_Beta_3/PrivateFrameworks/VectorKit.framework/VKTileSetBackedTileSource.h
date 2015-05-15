@@ -27,7 +27,7 @@
     } _zoomLevelRange;
 }
 
-@property(assign,retain) GEOActiveTileSet * tileSet;
+@property (nonatomic, retain) GEOActiveTileSet *tileSet;
 
 - (id).cxx_construct;
 - (double)_expirationInterval;

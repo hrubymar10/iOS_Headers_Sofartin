@@ -7,9 +7,9 @@
     HDSQLiteQueryDescriptor *_descriptor;
 }
 
-@property(assign,readonly) long long countOfEntities;
-@property(assign,readonly) HDSQLiteDatabase * database;
-@property(assign,readonly) HDSQLiteQueryDescriptor * queryDescriptor;
+@property (readonly) long long countOfEntities;
+@property (readonly) HDSQLiteDatabase *database;
+@property (readonly) HDSQLiteQueryDescriptor *queryDescriptor;
 
 - (void)bindToSelectStatement:(struct sqlite3_stmt { }*)arg1 bindingIndex:(inout int*)arg2;
 - (id)copyEntityIdentifiers;

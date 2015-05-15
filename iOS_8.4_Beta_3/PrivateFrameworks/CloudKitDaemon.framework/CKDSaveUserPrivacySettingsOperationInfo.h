@@ -7,8 +7,8 @@
     long long _discoverable;
 }
 
-@property(assign,copy) NSString * applicationBundleID;
-@property(assign,readwrite) long long discoverable;
+@property (nonatomic, copy) NSString *applicationBundleID;
+@property (nonatomic) long long discoverable;
 
 - (void).cxx_destruct;
 - (id)applicationBundleID;

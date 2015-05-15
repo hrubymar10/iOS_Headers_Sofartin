@@ -40,17 +40,17 @@
     bool mVisibleLine;
 }
 
-@property(assign,readwrite) TSDLayout * connectedFrom;
-@property(assign,readwrite) NSObject<TSDInfo> * connectedFromInfo;
-@property(assign,readonly) TSDConnectionLinePathSource * connectedPathSource;
-@property(assign,readwrite) TSDLayout * connectedTo;
-@property(assign,readwrite) NSObject<TSDInfo> * connectedToInfo;
-@property(assign,readwrite) double dynamicOutsetFrom;
-@property(assign,readwrite) double dynamicOutsetTo;
-@property(assign,readonly) double outsetFrom;
-@property(assign,readonly) double outsetTo;
-@property(assign,readwrite) bool useDynamicOutsets;
-@property(assign,readonly) bool validLine;
+@property (nonatomic) TSDLayout *connectedFrom;
+@property (nonatomic) NSObject<TSDInfo> *connectedFromInfo;
+@property (nonatomic, readonly) TSDConnectionLinePathSource *connectedPathSource;
+@property (nonatomic) TSDLayout *connectedTo;
+@property (nonatomic) NSObject<TSDInfo> *connectedToInfo;
+@property (nonatomic) double dynamicOutsetFrom;
+@property (nonatomic) double dynamicOutsetTo;
+@property (nonatomic, readonly) double outsetFrom;
+@property (nonatomic, readonly) double outsetTo;
+@property (nonatomic) bool useDynamicOutsets;
+@property (nonatomic, readonly) bool validLine;
 
 - (id)additionalLayoutsForRepCreation;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })boundsForStandardKnobs;

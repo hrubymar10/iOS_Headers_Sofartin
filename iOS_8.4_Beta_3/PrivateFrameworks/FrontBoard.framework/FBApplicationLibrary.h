@@ -17,11 +17,11 @@
     bool _workQueue_usingNetwork;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(getter=isUsingNetwork,assign,readonly) bool usingNetwork;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (getter=isUsingNetwork, nonatomic, readonly) bool usingNetwork;
 
 + (void)setBundleExtendedInfoGenerationHandler:(id)arg1;
 + (id)sharedInstance;

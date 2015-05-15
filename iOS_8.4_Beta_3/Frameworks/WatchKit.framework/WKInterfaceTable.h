@@ -9,11 +9,11 @@
     NSDictionary *_rowDescriptions;
 }
 
-@property(assign,readwrite) WKInterfaceController * controller;
-@property(assign,readonly) long long numberOfRows;
-@property(assign,retain) NSMutableArray * rowControllerProperties;
-@property(assign,retain) NSMutableArray * rowControllers;
-@property(assign,copy) NSDictionary * rowDescriptions;
+@property (nonatomic) WKInterfaceController *controller;
+@property (nonatomic, readonly) long long numberOfRows;
+@property (nonatomic, retain) NSMutableArray *rowControllerProperties;
+@property (nonatomic, retain) NSMutableArray *rowControllers;
+@property (nonatomic, copy) NSDictionary *rowDescriptions;
 
 - (void).cxx_destruct;
 - (void)_getRowControllers:(id)arg1 rowControllerProperties:(id)arg2 forRowTypes:(id)arg3;

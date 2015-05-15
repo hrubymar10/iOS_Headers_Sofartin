@@ -29,16 +29,16 @@
     UICollectionViewUpdateItem *_lastUpdateItem;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } beginningRect;
-@property(assign,readonly) NSArray * deleteItems;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endingRect;
-@property(assign,retain) UICollectionViewUpdateItem * firstUpdateItem;
-@property(assign,readonly) bool hasInserts;
-@property(assign,readonly) NSArray * insertItems;
-@property(assign,readonly) bool isDeleteBasedGap;
-@property(assign,readonly) bool isSectionBasedGap;
-@property(assign,retain) UICollectionViewUpdateItem * lastUpdateItem;
-@property(assign,readonly) NSArray * updateItems;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } beginningRect;
+@property (nonatomic, readonly) NSArray *deleteItems;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endingRect;
+@property (nonatomic, retain) UICollectionViewUpdateItem *firstUpdateItem;
+@property (nonatomic, readonly) bool hasInserts;
+@property (nonatomic, readonly) NSArray *insertItems;
+@property (nonatomic, readonly) bool isDeleteBasedGap;
+@property (nonatomic, readonly) bool isSectionBasedGap;
+@property (nonatomic, retain) UICollectionViewUpdateItem *lastUpdateItem;
+@property (nonatomic, readonly) NSArray *updateItems;
 
 + (id)gapWithUpdateItem:(id)arg1;
 

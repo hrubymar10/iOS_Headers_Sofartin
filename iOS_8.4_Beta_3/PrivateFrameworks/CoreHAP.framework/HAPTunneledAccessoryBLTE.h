@@ -22,26 +22,26 @@
     NSMutableData *_writeNonce;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <HAPKeyStore> * keyStore;
-@property(assign,readonly) NSOperationQueue * operationQueue;
-@property(assign,readwrite) HAPCharacteristic * pairVerifyCharacteristic;
-@property(getter=isPairVerifyComplete,assign,readwrite) bool pairVerifyComplete;
-@property(assign,readwrite) HAPService * pairingService;
-@property(assign,readwrite) HAPCharacteristic * pairingsCharacteristic;
-@property(getter=isPerformingPairVerify,assign,readwrite) bool performingPairVerify;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSMutableData * readNonce;
-@property(assign,retain) NSNumber * sessionLifetimeTimeout;
-@property(assign,retain) NSObject<OS_dispatch_source> * sessionLifetimeTimer;
-@property(assign,retain) NSData * sessionReadKey;
-@property(assign,retain) NSData * sessionWriteKey;
-@property(assign,copy) NSNumber * stateNumber;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) HAPService * tunneledBTLEAccessoryService;
-@property(assign,retain) NSMutableData * writeNonce;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <HAPKeyStore> *keyStore;
+@property (nonatomic, readonly) NSOperationQueue *operationQueue;
+@property (nonatomic) HAPCharacteristic *pairVerifyCharacteristic;
+@property (getter=isPairVerifyComplete, nonatomic) bool pairVerifyComplete;
+@property (nonatomic) HAPService *pairingService;
+@property (nonatomic) HAPCharacteristic *pairingsCharacteristic;
+@property (getter=isPerformingPairVerify, nonatomic) bool performingPairVerify;
+@property (retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSMutableData *readNonce;
+@property (nonatomic, retain) NSNumber *sessionLifetimeTimeout;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *sessionLifetimeTimer;
+@property (nonatomic, retain) NSData *sessionReadKey;
+@property (nonatomic, retain) NSData *sessionWriteKey;
+@property (nonatomic, copy) NSNumber *stateNumber;
+@property (readonly) Class superclass;
+@property (nonatomic) HAPService *tunneledBTLEAccessoryService;
+@property (nonatomic, retain) NSMutableData *writeNonce;
 
 - (void).cxx_destruct;
 - (void)_cancelAllQueuedOperationsWithError:(id)arg1;

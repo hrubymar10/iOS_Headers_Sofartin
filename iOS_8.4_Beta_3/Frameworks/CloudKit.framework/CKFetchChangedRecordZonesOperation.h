@@ -12,14 +12,14 @@
     long long _status;
 }
 
-@property(assign,copy) id fetchChangedRecordZonesCompletionBlock;
-@property(assign,readonly) bool moreComing;
-@property(assign,copy) CKServerChangeToken * previousServerChangeToken;
-@property(assign,copy) id recordZoneWithIDChangedBlock;
-@property(assign,copy) id recordZoneWithIDWasDeletedBlock;
-@property(assign,readwrite) unsigned long long resultsLimit;
-@property(assign,retain) CKServerChangeToken * serverChangeToken;
-@property(assign,readwrite) long long status;
+@property (nonatomic, copy) id fetchChangedRecordZonesCompletionBlock;
+@property (nonatomic, readonly) bool moreComing;
+@property (nonatomic, copy) CKServerChangeToken *previousServerChangeToken;
+@property (nonatomic, copy) id recordZoneWithIDChangedBlock;
+@property (nonatomic, copy) id recordZoneWithIDWasDeletedBlock;
+@property (nonatomic) unsigned long long resultsLimit;
+@property (nonatomic, retain) CKServerChangeToken *serverChangeToken;
+@property (nonatomic) long long status;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

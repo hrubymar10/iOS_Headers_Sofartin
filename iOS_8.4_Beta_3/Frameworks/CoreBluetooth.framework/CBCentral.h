@@ -4,7 +4,7 @@
 
 @interface CBCentral : CBPeer
 
-@property(assign,readonly) unsigned long long maximumUpdateValueLength;
+@property (nonatomic, readonly) unsigned long long maximumUpdateValueLength;
 
 - (id)description;
 - (unsigned long long)maximumUpdateValueLength;

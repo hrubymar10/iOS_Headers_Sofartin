@@ -4,7 +4,7 @@
 
 @interface SKUIShareTemplateViewElement : SKUIViewElement
 
-@property(assign,readonly) NSArray * activities;
+@property (nonatomic, readonly) NSArray *activities;
 
 - (id)activities;
 - (id)activityForShareSheetActivityType:(id)arg1;

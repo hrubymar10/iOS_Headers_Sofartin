@@ -6,12 +6,12 @@
     NSDictionary *_lookupDictionary;
 }
 
-@property(assign,readonly) double duration;
-@property(assign,copy) NSString * flavor;
-@property(assign,copy) NSDictionary * lookupDictionary;
-@property(assign,readonly) double previewDuration;
-@property(assign,copy) NSURL * previewURL;
-@property(assign,readonly) long long size;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic, readonly, copy) NSString *flavor;
+@property (nonatomic, readonly, copy) NSDictionary *lookupDictionary;
+@property (nonatomic, readonly) double previewDuration;
+@property (nonatomic, readonly, copy) NSURL *previewURL;
+@property (nonatomic, readonly) long long size;
 
 - (void).cxx_destruct;
 - (double)duration;

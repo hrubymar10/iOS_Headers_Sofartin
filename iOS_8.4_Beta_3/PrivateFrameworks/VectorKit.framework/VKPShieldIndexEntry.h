@@ -16,12 +16,12 @@
     } _shieldTypes;
 }
 
-@property(assign,retain) NSString * artworkIdentifier;
-@property(assign,readonly) int* defaultForFeatureTypes;
-@property(assign,readonly) unsigned long long defaultForFeatureTypesCount;
-@property(assign,readonly) bool hasArtworkIdentifier;
-@property(assign,readonly) int* shieldTypes;
-@property(assign,readonly) unsigned long long shieldTypesCount;
+@property (nonatomic, retain) NSString *artworkIdentifier;
+@property (nonatomic, readonly) int*defaultForFeatureTypes;
+@property (nonatomic, readonly) unsigned long long defaultForFeatureTypesCount;
+@property (nonatomic, readonly) bool hasArtworkIdentifier;
+@property (nonatomic, readonly) int*shieldTypes;
+@property (nonatomic, readonly) unsigned long long shieldTypesCount;
 
 - (void)addDefaultForFeatureType:(int)arg1;
 - (void)addShieldTypes:(int)arg1;

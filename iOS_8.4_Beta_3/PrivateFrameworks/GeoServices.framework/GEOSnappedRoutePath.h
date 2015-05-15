@@ -20,14 +20,14 @@
     struct { float x1; float x2; } *_unsnappedPoints;
 }
 
-@property(assign,readonly) NSArray * edges;
-@property(assign,readonly) bool hasCompletedMapMatching;
-@property(assign,readonly) bool isMapMatched;
-@property(assign,readonly) bool isMapMatching;
-@property(assign,readonly) const struct RouteMapMatchingSection { int (**x1)(); }* mapMatchingSection;
-@property(assign,readonly) unsigned int routeEndIndex;
-@property(assign,readonly) unsigned int routeStartIndex;
-@property(assign,readonly) GEOComposedRouteSection * section;
+@property (readonly) NSArray *edges;
+@property (readonly) bool hasCompletedMapMatching;
+@property (readonly) bool isMapMatched;
+@property (readonly) bool isMapMatching;
+@property (readonly) const struct RouteMapMatchingSection { int (**x1)(); }*mapMatchingSection;
+@property (readonly) unsigned int routeEndIndex;
+@property (readonly) unsigned int routeStartIndex;
+@property (readonly) GEOComposedRouteSection *section;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

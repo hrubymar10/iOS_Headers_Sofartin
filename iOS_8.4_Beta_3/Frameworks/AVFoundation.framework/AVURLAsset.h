@@ -6,13 +6,13 @@
     AVURLAssetInternal *_URLAsset;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,readonly) AVAssetCache * assetCache;
-@property(assign,readonly) NSString * cacheKey;
-@property(assign,readonly) double rc_durationInSeconds;
-@property(assign,readonly) AVAssetResourceLoader * resourceLoader;
-@property(assign,readonly) bool shouldMatchDataInCacheByURLPathComponentOnly;
-@property(assign,readonly) bool shouldMatchDataInCacheByURLWithoutQueryComponent;
+@property (nonatomic, readonly, copy) NSURL *URL;
+@property (nonatomic, readonly) AVAssetCache *assetCache;
+@property (nonatomic, readonly) NSString *cacheKey;
+@property (nonatomic, readonly) double rc_durationInSeconds;
+@property (nonatomic, readonly) AVAssetResourceLoader *resourceLoader;
+@property (nonatomic, readonly) bool shouldMatchDataInCacheByURLPathComponentOnly;
+@property (nonatomic, readonly) bool shouldMatchDataInCacheByURLWithoutQueryComponent;
 
 + (id)URLAssetWithURL:(id)arg1 options:(id)arg2;
 + (id)_UTTypes;

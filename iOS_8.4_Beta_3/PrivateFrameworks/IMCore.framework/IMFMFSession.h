@@ -8,15 +8,15 @@
     FMFSession *_session;
 }
 
-@property(assign,retain) FMFDevice * activeDevice;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool disableLocationSharing;
-@property(assign,retain) NSString * establishingAccountID;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool restrictLocationSharing;
-@property(assign,retain) FMFSession * session;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) FMFDevice *activeDevice;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool disableLocationSharing;
+@property (nonatomic, retain) NSString *establishingAccountID;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool restrictLocationSharing;
+@property (nonatomic, retain) FMFSession *session;
+@property (readonly) Class superclass;
 
 + (id)sharedInstance;
 

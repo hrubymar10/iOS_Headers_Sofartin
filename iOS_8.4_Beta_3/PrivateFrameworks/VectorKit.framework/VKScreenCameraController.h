@@ -34,19 +34,19 @@
     VKAnimation *_zoomAnimation;
 }
 
-@property(getter=isAnimatingToTrackAnnotation,assign,readonly) bool animatingToTrackAnnotation;
-@property(assign,readwrite) long long annotationTrackingHeadingAnimationDisplayRate;
-@property(assign,readwrite) long long annotationTrackingZoomStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) struct VKEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isPitchable;
-@property(assign,readwrite) bool staysCenteredDuringPinch;
-@property(assign,readwrite) bool staysCenteredDuringRotation;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) <VKTrackableAnnotation> * trackingAnnotation;
-@property(getter=isTrackingHeading,assign,readonly) bool trackingHeading;
+@property (getter=isAnimatingToTrackAnnotation, nonatomic, readonly) bool animatingToTrackAnnotation;
+@property (nonatomic) long long annotationTrackingHeadingAnimationDisplayRate;
+@property (nonatomic) long long annotationTrackingZoomStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) struct VKEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isPitchable;
+@property (nonatomic) bool staysCenteredDuringPinch;
+@property (nonatomic) bool staysCenteredDuringRotation;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) <VKTrackableAnnotation> *trackingAnnotation;
+@property (getter=isTrackingHeading, nonatomic, readonly) bool trackingHeading;
 
 - (id).cxx_construct;
 - (long long)annotationTrackingHeadingAnimationDisplayRate;

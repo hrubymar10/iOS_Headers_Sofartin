@@ -23,20 +23,20 @@
     unsigned long long _vcCapabilities;
 }
 
-@property(assign,retain) NSMutableDictionary * _contexts;
-@property(setter=_setHidingDisconnect:,assign,readwrite) bool _hidingDisconnect;
-@property(assign,readonly) NSArray * allServices;
-@property(assign,readonly) NSArray * handlers;
-@property(assign,readonly) bool hasPostedSetupComplete;
-@property(assign,readonly) bool isHoldingChatMessages;
-@property(assign,readonly) bool isSetupComplete;
-@property(assign,readonly) unsigned int myIdleTime;
-@property(assign,readonly) unsigned long long myStatus;
-@property(assign,readonly) NSString * myStatusMessage;
-@property(assign,readonly) NSDictionary * persistentProperties;
-@property(assign,readonly) NSDictionary * properties;
-@property(assign,readonly) bool shouldHoldChatMessages;
-@property(assign,readonly) unsigned long long vcCapabilities;
+@property (nonatomic, readonly, retain) NSMutableDictionary *_contexts;
+@property (setter=_setHidingDisconnect:, nonatomic) bool _hidingDisconnect;
+@property (nonatomic, readonly) NSArray *allServices;
+@property (nonatomic, readonly) NSArray *handlers;
+@property (nonatomic, readonly) bool hasPostedSetupComplete;
+@property (nonatomic, readonly) bool isHoldingChatMessages;
+@property (nonatomic, readonly) bool isSetupComplete;
+@property (nonatomic, readonly) unsigned int myIdleTime;
+@property (nonatomic, readonly) unsigned long long myStatus;
+@property (nonatomic, readonly) NSString *myStatusMessage;
+@property (nonatomic, readonly) NSDictionary *persistentProperties;
+@property (nonatomic, readonly) NSDictionary *properties;
+@property (nonatomic, readonly) bool shouldHoldChatMessages;
+@property (nonatomic, readonly) unsigned long long vcCapabilities;
 
 - (void)_cacheValue:(id)arg1 forPersistentProperty:(id)arg2;
 - (void)_cacheValue:(id)arg1 forProperty:(id)arg2;

@@ -20,21 +20,21 @@
     HKQuantity *_weight;
 }
 
-@property(assign,retain) NSString * allergyInfo;
-@property(assign,retain) NSDate * birthdate;
-@property(assign,readwrite) long long bloodType;
-@property(assign,retain) NSDate * dateSaved;
-@property(assign,retain) NSArray * emergencyContacts;
-@property(assign,retain) HKQuantity * height;
-@property(assign,readwrite) bool isDisabled;
-@property(assign,retain) NSNumber * isOrganDonor;
-@property(assign,retain) NSString * medicalConditions;
-@property(assign,retain) NSString * medicalNotes;
-@property(assign,retain) NSString * medicationInfo;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSData * pictureData;
-@property(assign,readwrite) long long schemaVersion;
-@property(assign,retain) HKQuantity * weight;
+@property (nonatomic, retain) NSString *allergyInfo;
+@property (nonatomic, retain) NSDate *birthdate;
+@property (nonatomic) long long bloodType;
+@property (nonatomic, retain) NSDate *dateSaved;
+@property (nonatomic, retain) NSArray *emergencyContacts;
+@property (nonatomic, retain) HKQuantity *height;
+@property (nonatomic) bool isDisabled;
+@property (nonatomic, retain) NSNumber *isOrganDonor;
+@property (nonatomic, retain) NSString *medicalConditions;
+@property (nonatomic, retain) NSString *medicalNotes;
+@property (nonatomic, retain) NSString *medicationInfo;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSData *pictureData;
+@property (nonatomic) long long schemaVersion;
+@property (nonatomic, retain) HKQuantity *weight;
 
 + (bool)supportsSecureCoding;
 

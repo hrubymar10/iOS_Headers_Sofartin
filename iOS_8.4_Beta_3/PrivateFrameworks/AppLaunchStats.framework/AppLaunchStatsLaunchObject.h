@@ -7,8 +7,8 @@
     NSString *bundleID;
 }
 
-@property(assign,copy) id aplsLaunchQueueBlock;
-@property(assign,retain) NSString * bundleID;
+@property (copy) id aplsLaunchQueueBlock;
+@property (nonatomic, retain) NSString *bundleID;
 
 - (void).cxx_destruct;
 - (id)aplsLaunchQueueBlock;

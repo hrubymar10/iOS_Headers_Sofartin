@@ -14,18 +14,18 @@
     double _zOrderDistance;
 }
 
-@property(assign,readwrite) double attributeMatchPercent;
-@property(assign,readwrite) double distance;
-@property(assign,readonly) id incomingMatchObject;
-@property(assign,readonly) TSDMagicMoveMatchObject * incomingObject;
-@property(assign,readonly) bool isTextMatch;
-@property(assign,readonly) long long matchCost;
-@property(assign,readwrite) long long matchType;
-@property(assign,retain) NSString * name;
-@property(assign,readonly) id outgoingMatchObject;
-@property(assign,readonly) TSDMagicMoveMatchObject * outgoingObject;
-@property(assign,retain) TSDTextureContext * textureContext;
-@property(assign,readwrite) double zOrderDistance;
+@property (nonatomic) double attributeMatchPercent;
+@property (nonatomic) double distance;
+@property (nonatomic, readonly) id incomingMatchObject;
+@property (nonatomic, readonly) TSDMagicMoveMatchObject *incomingObject;
+@property (nonatomic, readonly) bool isTextMatch;
+@property (nonatomic, readonly) long long matchCost;
+@property (nonatomic) long long matchType;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, readonly) id outgoingMatchObject;
+@property (nonatomic, readonly) TSDMagicMoveMatchObject *outgoingObject;
+@property (nonatomic, retain) TSDTextureContext *textureContext;
+@property (nonatomic) double zOrderDistance;
 
 + (id)matchWithOutgoingObject:(id)arg1 incomingObject:(id)arg2 matchType:(long long)arg3 attributeMatchPercent:(double)arg4 textureContext:(id)arg5;
 

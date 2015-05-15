@@ -11,13 +11,13 @@
     bool _toggledOriginal;
 }
 
-@property(setter=_setAutoCropAdjusted:,assign,readwrite) bool _autoCropAdjusted;
-@property(assign,readonly) NSArray * _autoCropKeys;
-@property(setter=_setAutoCropReset:,assign,readwrite) bool _autoCropReset;
-@property(setter=_setHasCropSuggestion:,assign,readwrite) bool _hasCropSuggestion;
-@property(assign,readwrite) bool pluginSaved;
-@property(assign,readwrite) bool pluginStarted;
-@property(assign,readwrite) bool toggledOriginal;
+@property (setter=_setAutoCropAdjusted:, nonatomic) bool _autoCropAdjusted;
+@property (nonatomic, readonly) NSArray *_autoCropKeys;
+@property (setter=_setAutoCropReset:, nonatomic) bool _autoCropReset;
+@property (setter=_setHasCropSuggestion:, nonatomic) bool _hasCropSuggestion;
+@property (nonatomic) bool pluginSaved;
+@property (nonatomic) bool pluginStarted;
+@property (nonatomic) bool toggledOriginal;
 
 + (struct __CFString { }*)_keyForSessionEnd:(long long)arg1;
 

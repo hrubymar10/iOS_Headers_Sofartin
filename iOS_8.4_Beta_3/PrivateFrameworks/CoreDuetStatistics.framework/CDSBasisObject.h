@@ -15,16 +15,16 @@
     long long _type;
 }
 
-@property(assign,readwrite) unsigned long long attributeId;
-@property(assign,readwrite) double basisDoubleValue;
-@property(assign,readwrite) unsigned long long basisUint64Value;
-@property(assign,retain) NSString * basisValueString;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) bool fallingEdge;
-@property(assign,readwrite) unsigned long long localTime;
-@property(assign,readwrite) bool risingEdge;
-@property(assign,readwrite) long long type;
+@property (nonatomic) unsigned long long attributeId;
+@property (nonatomic) double basisDoubleValue;
+@property (nonatomic) unsigned long long basisUint64Value;
+@property (nonatomic, retain) NSString *basisValueString;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic) double duration;
+@property (nonatomic) bool fallingEdge;
+@property (nonatomic) unsigned long long localTime;
+@property (nonatomic) bool risingEdge;
+@property (nonatomic) long long type;
 
 - (void).cxx_destruct;
 - (unsigned long long)attributeId;

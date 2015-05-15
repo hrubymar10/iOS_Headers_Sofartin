@@ -6,10 +6,10 @@
     AVAssetReaderVideoCompositionOutputInternal *_videoCompositionOutputInternal;
 }
 
-@property(assign,readonly) <AVVideoCompositing> * customVideoCompositor;
-@property(assign,copy) AVVideoComposition * videoComposition;
-@property(assign,readonly) NSDictionary * videoSettings;
-@property(assign,readonly) NSArray * videoTracks;
+@property (nonatomic, readonly) <AVVideoCompositing> *customVideoCompositor;
+@property (nonatomic, copy) AVVideoComposition *videoComposition;
+@property (nonatomic, readonly) NSDictionary *videoSettings;
+@property (nonatomic, readonly) NSArray *videoTracks;
 
 + (id)assetReaderVideoCompositionOutputWithVideoTracks:(id)arg1 videoSettings:(id)arg2;
 

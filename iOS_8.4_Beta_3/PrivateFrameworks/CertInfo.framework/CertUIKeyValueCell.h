@@ -8,9 +8,9 @@
     UILabel *_valueLabel;
 }
 
-@property(assign,retain) NSArray * constraints;
-@property(assign,retain) UILabel * keyLabel;
-@property(assign,retain) UILabel * valueLabel;
+@property (nonatomic, retain) NSArray *constraints;
+@property (nonatomic, retain) UILabel *keyLabel;
+@property (nonatomic, retain) UILabel *valueLabel;
 
 - (void).cxx_destruct;
 - (void)_setup;

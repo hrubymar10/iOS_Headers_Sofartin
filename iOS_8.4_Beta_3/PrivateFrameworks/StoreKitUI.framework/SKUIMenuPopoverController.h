@@ -8,12 +8,12 @@
     UIPopoverController *_popoverController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIMenuPopoverDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * menuTitles;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIMenuPopoverDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *menuTitles;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_destroyPopoverController;

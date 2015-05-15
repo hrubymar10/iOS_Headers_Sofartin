@@ -31,22 +31,22 @@
     NSString *_utiType;
 }
 
-@property(assign,readwrite) bool allowsMultiPassEncoding;
-@property(assign,readwrite) int blendMode;
-@property(assign,readwrite) short colorSpaceID;
-@property(assign,retain) CUIShapeEffectPreset * effectPreset;
-@property(getter=isExcludedFromContrastFilter,assign,readwrite) bool excludedFromContrastFilter;
-@property(assign,readwrite) int exifOrientation;
-@property(assign,retain) CUIPSDGradient * gradient;
-@property(assign,readwrite) bool isRenditionFPO;
-@property(assign,readwrite) bool isVectorBased;
-@property(assign,copy) NSDate * modtime;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) double opacity;
-@property(assign,readwrite) unsigned int pixelFormat;
-@property(assign,readwrite) unsigned int scaleFactor;
-@property(assign,readwrite) long long templateRenderingMode;
-@property(assign,copy) NSString * utiType;
+@property (nonatomic) bool allowsMultiPassEncoding;
+@property (nonatomic) int blendMode;
+@property (nonatomic) short colorSpaceID;
+@property (nonatomic, retain) CUIShapeEffectPreset *effectPreset;
+@property (getter=isExcludedFromContrastFilter, nonatomic) bool excludedFromContrastFilter;
+@property (nonatomic) int exifOrientation;
+@property (nonatomic, retain) CUIPSDGradient *gradient;
+@property (nonatomic) bool isRenditionFPO;
+@property (nonatomic) bool isVectorBased;
+@property (nonatomic, copy) NSDate *modtime;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) double opacity;
+@property (nonatomic) unsigned int pixelFormat;
+@property (nonatomic) unsigned int scaleFactor;
+@property (nonatomic) long long templateRenderingMode;
+@property (nonatomic, copy) NSString *utiType;
 
 + (int)fileCompression;
 + (void)initialize;

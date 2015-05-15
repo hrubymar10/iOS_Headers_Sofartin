@@ -13,14 +13,14 @@
     unsigned long long _statisticsOptions;
 }
 
-@property(assign,readonly) _HKFilter * filter;
-@property(assign,readonly) <HDHealthDaemon> * healthDaemon;
-@property(assign,readonly) unsigned long long mergeStrategy;
-@property(assign,readonly) NSArray * orderedSources;
-@property(assign,readonly) HDSQLitePredicate * predicate;
-@property(assign,readonly) HKQuantityType * quantityType;
-@property(assign,readonly) NSNumber * restrictedSourceIdentifier;
-@property(assign,readonly) unsigned long long statisticsOptions;
+@property (nonatomic, readonly) _HKFilter *filter;
+@property (nonatomic, readonly) <HDHealthDaemon> *healthDaemon;
+@property (nonatomic, readonly) unsigned long long mergeStrategy;
+@property (nonatomic, readonly) NSArray *orderedSources;
+@property (nonatomic, readonly) HDSQLitePredicate *predicate;
+@property (nonatomic, readonly) HKQuantityType *quantityType;
+@property (nonatomic, readonly) NSNumber *restrictedSourceIdentifier;
+@property (nonatomic, readonly) unsigned long long statisticsOptions;
 
 + (id)_predicateWithSampleType:(id)arg1 sourceIdentifier:(id)arg2 predicate:(id)arg3;
 + (id)statisticsBuilderWithQuantityType:(id)arg1 filter:(id)arg2 statisticsOptions:(unsigned long long)arg3 mergeStrategy:(unsigned long long)arg4 restrictedSourceIdentifier:(id)arg5 healthDaemon:(id)arg6;

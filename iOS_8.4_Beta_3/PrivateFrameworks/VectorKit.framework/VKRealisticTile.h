@@ -89,20 +89,20 @@
     float _waterZ;
 }
 
-@property(assign,readwrite) float alpha;
-@property(assign,readonly) struct RealisticMesh { int (**x1)(); char *x2; int (**x3)(); struct ResourceManager {} *x4; struct RenderResource {} *x5; struct shared_ptr<ggl::VertexData> { struct VertexData {} *x_6_1_1; struct __shared_weak_count {} *x_6_1_2; } x6; struct shared_ptr<ggl::IndexData> { struct IndexData {} *x_7_1_1; struct __shared_weak_count {} *x_7_1_2; } x7; struct shared_ptr<ggl::RealisticCasingFacade::RealisticVertexData> { struct RealisticVertexData {} *x_8_1_1; struct __shared_weak_count {} *x_8_1_2; } x8; }* coastlineMesh;
-@property(assign,readonly) struct shared_ptr<ggl::Texture2D> { struct Texture2D {} *x1; struct __shared_weak_count {} *x2; } defaultLandTexture;
-@property(assign,readonly) struct shared_ptr<ggl::Texture2D> { struct Texture2D {} *x1; struct __shared_weak_count {} *x2; } defaultLandTextureVariant;
-@property(assign,readonly) struct FogInfo { struct shared_ptr<ggl::Fog::FogUniformData> { struct FogUniformData {} *x_1_1_1; struct __shared_weak_count {} *x_1_1_2; } x1; }* fogInfo;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{vector<std::__1::unique_ptr<md::TexturedDrawable' */ struct * landDrawables; /* unknown property attribute:  std::__1::default_delete<md::TexturedDrawable> >}}} */
-@property(assign,readonly) float landZ;
-@property(assign,readonly) NSArray * realisticRoadGroups;
-@property(assign,readonly) struct shared_ptr<ggl::RealisticTexture::RealisticUniformData> { struct RealisticUniformData {} *x1; struct __shared_weak_count {} *x2; } realisticTextureUniformData;
-@property(assign,readonly) float roadZ;
-@property(assign,readwrite) bool shouldBlend;
-@property(assign,retain) VKAnimation * startDrawingAnimation;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{vector<std::__1::unique_ptr<md::TexturedDrawable' */ struct * waterDrawables; /* unknown property attribute:  std::__1::default_delete<md::TexturedDrawable> >}}} */
-@property(assign,readonly) float waterZ;
+@property (nonatomic) float alpha;
+@property (nonatomic, readonly) struct RealisticMesh { int (**x1)(); char *x2; int (**x3)(); struct ResourceManager {} *x4; struct RenderResource {} *x5; struct shared_ptr<ggl::VertexData> { struct VertexData {} *x_6_1_1; struct __shared_weak_count {} *x_6_1_2; } x6; struct shared_ptr<ggl::IndexData> { struct IndexData {} *x_7_1_1; struct __shared_weak_count {} *x_7_1_2; } x7; struct shared_ptr<ggl::RealisticCasingFacade::RealisticVertexData> { struct RealisticVertexData {} *x_8_1_1; struct __shared_weak_count {} *x_8_1_2; } x8; }*coastlineMesh;
+@property (nonatomic, readonly) struct shared_ptr<ggl::Texture2D> { struct Texture2D {} *x1; struct __shared_weak_count {} *x2; } defaultLandTexture;
+@property (nonatomic, readonly) struct shared_ptr<ggl::Texture2D> { struct Texture2D {} *x1; struct __shared_weak_count {} *x2; } defaultLandTextureVariant;
+@property (nonatomic, readonly) struct FogInfo { struct shared_ptr<ggl::Fog::FogUniformData> { struct FogUniformData {} *x_1_1_1; struct __shared_weak_count {} *x_1_1_2; } x1; }*fogInfo;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{vector<std::__1::unique_ptr<md::TexturedDrawable' */ struct *landDrawables; /* unknown property attribute:  std::__1::default_delete<md::TexturedDrawable> >}}} */
+@property (nonatomic, readonly) float landZ;
+@property (nonatomic, readonly) NSArray *realisticRoadGroups;
+@property (nonatomic, readonly) struct shared_ptr<ggl::RealisticTexture::RealisticUniformData> { struct RealisticUniformData {} *x1; struct __shared_weak_count {} *x2; } realisticTextureUniformData;
+@property (nonatomic, readonly) float roadZ;
+@property (nonatomic) bool shouldBlend;
+@property (nonatomic, retain) VKAnimation *startDrawingAnimation;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{vector<std::__1::unique_ptr<md::TexturedDrawable' */ struct *waterDrawables; /* unknown property attribute:  std::__1::default_delete<md::TexturedDrawable> >}}} */
+@property (nonatomic, readonly) float waterZ;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

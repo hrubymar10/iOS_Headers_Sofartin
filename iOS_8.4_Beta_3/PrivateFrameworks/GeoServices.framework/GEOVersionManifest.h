@@ -6,7 +6,7 @@
     NSMutableArray *_serviceVersions;
 }
 
-@property(assign,retain) NSMutableArray * serviceVersions;
+@property (nonatomic, retain) NSMutableArray *serviceVersions;
 
 - (void)addServiceVersion:(id)arg1;
 - (void)clearServiceVersions;

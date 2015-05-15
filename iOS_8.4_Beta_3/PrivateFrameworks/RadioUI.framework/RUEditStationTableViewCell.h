@@ -10,14 +10,14 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIView * perspectiveTargetView;
-@property(assign,retain) MPUBorderDrawingCache * stackItemBorderDrawingCache;
-@property(assign,copy) NSString * stationName;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } vanishingPoint;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UIView *perspectiveTargetView;
+@property (nonatomic, retain) MPUBorderDrawingCache *stackItemBorderDrawingCache;
+@property (nonatomic, copy) NSString *stationName;
+@property (readonly) Class superclass;
+@property (nonatomic) struct CGPoint { double x1; double x2; } vanishingPoint;
 
 + (id)_titleLabelFontWithEmphasis:(bool)arg1;
 + (double)artworkMidXForTraitCollection:(id)arg1;

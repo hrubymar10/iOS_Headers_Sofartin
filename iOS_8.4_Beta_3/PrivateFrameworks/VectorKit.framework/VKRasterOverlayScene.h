@@ -6,7 +6,7 @@
     unsigned long long _overlayLevel;
 }
 
-@property(assign,readwrite) unsigned long long overlayLevel;
+@property (nonatomic) unsigned long long overlayLevel;
 
 - (unsigned long long)overlayLevel;
 - (void)setOverlayLevel:(unsigned long long)arg1;

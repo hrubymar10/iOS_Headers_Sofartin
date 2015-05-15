@@ -18,19 +18,19 @@
     double _timestamp;
 }
 
-@property(assign,retain) NSMutableArray * assignments;
-@property(assign,readwrite) bool hasInvalidatePoiCache;
-@property(assign,readwrite) bool hasInvalidateTileCache;
-@property(assign,readwrite) bool hasRefreshIntervalSeconds;
-@property(assign,readonly) bool hasRequestGuid;
-@property(assign,readonly) bool hasSourceURL;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool invalidatePoiCache;
-@property(assign,readwrite) bool invalidateTileCache;
-@property(assign,readwrite) unsigned long long refreshIntervalSeconds;
-@property(assign,retain) NSString * requestGuid;
-@property(assign,retain) NSString * sourceURL;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic, retain) NSMutableArray *assignments;
+@property (nonatomic) bool hasInvalidatePoiCache;
+@property (nonatomic) bool hasInvalidateTileCache;
+@property (nonatomic) bool hasRefreshIntervalSeconds;
+@property (nonatomic, readonly) bool hasRequestGuid;
+@property (nonatomic, readonly) bool hasSourceURL;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool invalidatePoiCache;
+@property (nonatomic) bool invalidateTileCache;
+@property (nonatomic) unsigned long long refreshIntervalSeconds;
+@property (nonatomic, retain) NSString *requestGuid;
+@property (nonatomic, retain) NSString *sourceURL;
+@property (nonatomic) double timestamp;
 
 - (id)_querySubstringForServiceType:(int)arg1 placeRequestType:(int)arg2;
 - (void)addAssignment:(id)arg1;

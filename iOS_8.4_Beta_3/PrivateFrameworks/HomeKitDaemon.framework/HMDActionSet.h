@@ -12,20 +12,20 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,readonly) NSArray * actions;
-@property(assign,retain) NSMutableArray * currentActions;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool executionInProgress;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) HMDHome * home;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * messageReceiveQueue;
-@property(assign,readonly) NSUUID * messageTargetUUID;
-@property(assign,retain) HMMessageDispatcher * msgDispatcher;
-@property(assign,retain) NSString * name;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSUUID * uuid;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, readonly) NSArray *actions;
+@property (nonatomic, retain) NSMutableArray *currentActions;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool executionInProgress;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) HMDHome *home;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *messageReceiveQueue;
+@property (nonatomic, readonly) NSUUID *messageTargetUUID;
+@property (nonatomic, retain) HMMessageDispatcher *msgDispatcher;
+@property (nonatomic, retain) NSString *name;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSUUID *uuid;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 + (bool)supportsSecureCoding;
 

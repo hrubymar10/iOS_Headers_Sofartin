@@ -9,12 +9,12 @@
     CALayer *_target;
 }
 
-@property(assign,retain) CAAnimation * animation;
-@property(assign,readwrite) double beginTime;
-@property(assign,readwrite) double duration;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,copy) NSString * key;
-@property(assign,readwrite) CALayer * target;
+@property (nonatomic, retain) CAAnimation *animation;
+@property (nonatomic) double beginTime;
+@property (nonatomic) double duration;
+@property (getter=isEnabled) bool enabled;
+@property (nonatomic, copy) NSString *key;
+@property (nonatomic) CALayer *target;
 
 + (void)CAMLParserStartElement:(id)arg1;
 

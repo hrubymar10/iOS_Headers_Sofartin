@@ -6,7 +6,7 @@
     NSMutableArray *_itemProps;
 }
 
-@property(assign,readonly) NSArray * itemProps;
+@property (nonatomic, readonly) NSArray *itemProps;
 
 - (void).cxx_destruct;
 - (void)addItemProp:(id)arg1;

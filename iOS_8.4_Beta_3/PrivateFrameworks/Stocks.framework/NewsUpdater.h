@@ -11,7 +11,7 @@
     id _updateCompletionHandler;
 }
 
-@property(assign,readwrite) <NewsUpdaterDelegate> * delegate;
+@property (nonatomic) <NewsUpdaterDelegate> *delegate;
 
 + (id)_newsItemCollectionCache;
 + (id)sharedNewsUpdater;

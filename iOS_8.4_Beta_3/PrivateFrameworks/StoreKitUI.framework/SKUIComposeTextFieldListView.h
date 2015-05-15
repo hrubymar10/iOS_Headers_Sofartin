@@ -9,10 +9,10 @@
     long long _style;
 }
 
-@property(assign,readonly) long long composeReviewStyle;
-@property(assign,readwrite) <SKUIComposeTextFieldListViewDelegate> * delegate;
-@property(assign,readonly) double height;
-@property(assign,readonly) UIResponder * initialFirstResponder;
+@property (nonatomic, readonly) long long composeReviewStyle;
+@property (nonatomic) <SKUIComposeTextFieldListViewDelegate> *delegate;
+@property (nonatomic, readonly) double height;
+@property (nonatomic, readonly) UIResponder *initialFirstResponder;
 
 - (void).cxx_destruct;
 - (void)_updateValidity;

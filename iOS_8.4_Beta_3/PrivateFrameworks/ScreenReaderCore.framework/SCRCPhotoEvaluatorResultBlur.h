@@ -6,7 +6,7 @@
     double _blurLevel;
 }
 
-@property(assign,readonly) double blurLevel;
+@property (nonatomic, readonly) double blurLevel;
 
 - (double)blurLevel;
 - (id)humanReadableResult;

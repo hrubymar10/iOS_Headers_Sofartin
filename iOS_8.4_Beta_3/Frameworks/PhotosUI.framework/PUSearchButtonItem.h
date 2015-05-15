@@ -22,11 +22,11 @@
     bool _wantsShowingSearchBar;
 }
 
-@property(assign,readwrite) double maxSearchBarWidth;
-@property(assign,readonly) UINavigationItem * navigationItem;
-@property(assign,readwrite) bool nudgesSearchIcon;
-@property(assign,readonly) UISearchBar * searchBar;
-@property(assign,readonly) bool showingSearchBar;
+@property (nonatomic) double maxSearchBarWidth;
+@property (nonatomic, readonly) UINavigationItem *navigationItem;
+@property (nonatomic) bool nudgesSearchIcon;
+@property (nonatomic, readonly) UISearchBar *searchBar;
+@property (nonatomic, readonly) bool showingSearchBar;
 
 - (void).cxx_destruct;
 - (id)_allNavigationButtonItems;

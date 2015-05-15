@@ -15,10 +15,10 @@
     NSDictionary *persistentStoreOptions;
 }
 
-@property(assign,retain) NSManagedObjectContext * managedObjectContext;
-@property(assign,retain) NSManagedObjectModel * managedObjectModel;
-@property(assign,copy) NSString * modelConfiguration;
-@property(assign,copy) NSDictionary * persistentStoreOptions;
+@property (nonatomic, readonly, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, readonly, retain) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, copy) NSString *modelConfiguration;
+@property (nonatomic, copy) NSDictionary *persistentStoreOptions;
 
 + (id)additionalContentPathComponent;
 + (void)initialize;

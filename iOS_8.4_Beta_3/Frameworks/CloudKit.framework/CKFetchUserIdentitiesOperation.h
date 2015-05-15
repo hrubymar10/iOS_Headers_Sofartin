@@ -11,12 +11,12 @@
     NSMutableDictionary *_lookupInfoToUserIdentities;
 }
 
-@property(assign,retain) NSMutableSet * discoveredUserIdentities;
-@property(assign,copy) id fetchIdentitiesCompletionBlock;
-@property(assign,retain) NSArray * identities;
-@property(assign,copy) id identityFetchedBlock;
-@property(assign,retain) NSMutableDictionary * lookupErrors;
-@property(assign,retain) NSMutableDictionary * lookupInfoToUserIdentities;
+@property (nonatomic, retain) NSMutableSet *discoveredUserIdentities;
+@property (nonatomic, copy) id fetchIdentitiesCompletionBlock;
+@property (nonatomic, retain) NSArray *identities;
+@property (nonatomic, copy) id identityFetchedBlock;
+@property (nonatomic, retain) NSMutableDictionary *lookupErrors;
+@property (nonatomic, retain) NSMutableDictionary *lookupInfoToUserIdentities;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

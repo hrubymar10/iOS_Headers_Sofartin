@@ -19,16 +19,16 @@
     UIImageView *_userRatingStarImageView;
 }
 
-@property(assign,copy) NSString * artistName;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readonly) UIControl * closeButton;
-@property(assign,retain) UIImage * iconImage;
-@property(assign,retain) SSLookupItemOffer * itemOffer;
-@property(assign,readonly) UIControl * itemOfferButton;
-@property(assign,retain) SKUIItemState * itemState;
-@property(assign,copy) NSArray * screenshotImages;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) float userRating;
+@property (nonatomic, copy) NSString *artistName;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) UIControl *closeButton;
+@property (nonatomic, retain) UIImage *iconImage;
+@property (nonatomic, retain) SSLookupItemOffer *itemOffer;
+@property (nonatomic, readonly) UIControl *itemOfferButton;
+@property (nonatomic, retain) SKUIItemState *itemState;
+@property (nonatomic, copy) NSArray *screenshotImages;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) float userRating;
 
 - (void).cxx_destruct;
 - (id)_newDefaultLabel;

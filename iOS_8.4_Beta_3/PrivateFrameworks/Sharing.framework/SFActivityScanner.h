@@ -8,13 +8,13 @@
     bool _receiving;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SFActivityScannerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSUUID * identifier;
-@property(assign,readwrite) bool receiving;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property <SFActivityScannerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) NSUUID *identifier;
+@property bool receiving;
+@property (readonly) Class superclass;
 
 - (void)activityPayloadFromDevice:(id)arg1 forAdvertisementPayload:(id)arg2 withCompletionHandler:(id)arg3;
 - (void)activityPayloadFromDeviceIdentifier:(id)arg1 forAdvertisementPayload:(id)arg2 withCompletionHandler:(id)arg3;

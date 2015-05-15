@@ -6,7 +6,7 @@
     double _timeout;
 }
 
-@property(assign,readwrite) double timeout;
+@property (nonatomic) double timeout;
 
 - (void)dealloc;
 - (void)didMoveToWindow;

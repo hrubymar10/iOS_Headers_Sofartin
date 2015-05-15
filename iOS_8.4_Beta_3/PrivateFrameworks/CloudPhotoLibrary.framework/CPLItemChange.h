@@ -6,7 +6,7 @@
     NSArray *_containerRelations;
 }
 
-@property(assign,copy) NSArray * containerRelations;
+@property (nonatomic, copy) NSArray *containerRelations;
 
 + (bool)cplShouldIgnorePropertyForCoding:(id)arg1;
 

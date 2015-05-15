@@ -8,8 +8,8 @@
     bool _invalidateEverything;
 }
 
-@property(assign,readwrite) bool flushEverything;
-@property(assign,readwrite) bool invalidateEverything;
+@property (nonatomic) bool flushEverything;
+@property (nonatomic) bool invalidateEverything;
 
 - (void)addTileset:(unsigned int)arg1 edition:(unsigned int)arg2 provider:(unsigned int)arg3 invalidateOnly:(bool)arg4;
 - (void)dealloc;

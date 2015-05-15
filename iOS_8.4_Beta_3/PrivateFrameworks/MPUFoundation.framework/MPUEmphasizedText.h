@@ -7,8 +7,8 @@
     NSString *_string;
 }
 
-@property(assign,copy) NSArray * emphasisRanges;
-@property(assign,copy) NSString * string;
+@property (nonatomic, readonly, copy) NSArray *emphasisRanges;
+@property (nonatomic, readonly, copy) NSString *string;
 
 + (void)_enumerateEmphasisRangesInString:(id)arg1 withEmphasisDelimiter:(id)arg2 usingBlock:(id)arg3;
 + (void)_enumerateEmphasisRangesInString:(id)arg1 withEmphasisSubstring:(id)arg2 options:(unsigned long long)arg3 usingBlock:(id)arg4;

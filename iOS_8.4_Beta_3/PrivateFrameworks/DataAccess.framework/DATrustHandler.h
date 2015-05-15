@@ -7,8 +7,8 @@
     NSMutableDictionary *_haveWarnedAboutCertDict;
 }
 
-@property(assign,readwrite) <DATrustHandlerDelegate> * delegate;
-@property(assign,retain) NSMutableDictionary * haveWarnedAboutCertDict;
+@property (nonatomic) <DATrustHandlerDelegate> *delegate;
+@property (nonatomic, retain) NSMutableDictionary *haveWarnedAboutCertDict;
 
 - (void).cxx_destruct;
 - (int)_actionForTrust:(struct __SecTrust { }*)arg1 host:(id)arg2 service:(id)arg3;

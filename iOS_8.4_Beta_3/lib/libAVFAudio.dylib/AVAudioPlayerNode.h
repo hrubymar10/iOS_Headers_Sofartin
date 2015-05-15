@@ -4,12 +4,12 @@
 
 @interface AVAudioPlayerNode : AVAudioNode <AVAudioMixing>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isPlaying,assign,readonly) bool playing;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) float volume;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isPlaying, nonatomic, readonly) bool playing;
+@property (readonly) Class superclass;
+@property (nonatomic) float volume;
 
 - (void)didAttachToEngine:(id)arg1;
 - (id)init;

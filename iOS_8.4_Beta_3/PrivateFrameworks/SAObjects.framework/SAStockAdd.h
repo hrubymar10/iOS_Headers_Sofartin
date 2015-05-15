@@ -4,11 +4,11 @@
 
 @interface SAStockAdd : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * companyName;
-@property(assign,copy) NSArray * stockReferences;
-@property(assign,copy) NSArray * stocks;
-@property(assign,copy) NSURL * targetAppId;
-@property(assign,copy) NSString * tickerSymbol;
+@property (nonatomic, copy) NSString *companyName;
+@property (nonatomic, copy) NSArray *stockReferences;
+@property (nonatomic, copy) NSArray *stocks;
+@property (nonatomic, copy) NSURL *targetAppId;
+@property (nonatomic, copy) NSString *tickerSymbol;
 
 + (id)add;
 + (id)addWithDictionary:(id)arg1 context:(id)arg2;

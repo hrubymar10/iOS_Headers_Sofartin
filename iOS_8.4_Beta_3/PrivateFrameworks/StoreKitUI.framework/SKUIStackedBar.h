@@ -18,14 +18,14 @@
     bool _zeroHeightWhenFirstChildExpanded;
 }
 
-@property(assign,readwrite) bool alwaysShowsBackButton;
-@property(assign,readwrite) <SKUIStackedBarDelegate> * delegate;
-@property(assign,readwrite) bool hidesStatusBar;
-@property(assign,retain) NSArray * items;
-@property(assign,readwrite) bool lastItemExpanded;
-@property(assign,readwrite) double offset;
-@property(assign,readwrite) bool splitViewStyle;
-@property(assign,readwrite) bool zeroHeightWhenFirstChildExpanded;
+@property (nonatomic) bool alwaysShowsBackButton;
+@property <SKUIStackedBarDelegate> *delegate;
+@property (nonatomic) bool hidesStatusBar;
+@property (nonatomic, retain) NSArray *items;
+@property (nonatomic) bool lastItemExpanded;
+@property (nonatomic) double offset;
+@property (nonatomic) bool splitViewStyle;
+@property (nonatomic) bool zeroHeightWhenFirstChildExpanded;
 
 - (void).cxx_destruct;
 - (void)_backAction:(id)arg1;

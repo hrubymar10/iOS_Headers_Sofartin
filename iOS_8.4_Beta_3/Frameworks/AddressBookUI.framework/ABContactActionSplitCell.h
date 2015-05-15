@@ -7,8 +7,8 @@
     UIButton *_rightLabel;
 }
 
-@property(assign,readonly) UIButton * leftLabel;
-@property(assign,readonly) UIButton * rightLabel;
+@property (nonatomic, readonly) UIButton *leftLabel;
+@property (nonatomic, readonly) UIButton *rightLabel;
 
 - (void)_setupButton:(id)arg1 forAction:(id)arg2;
 - (id)constantConstraints;

@@ -7,7 +7,7 @@
     struct sqlite3_stmt { } *_stmt;
 }
 
-@property(assign,readonly) ML3DatabaseResult * parentResult;
+@property (nonatomic, readonly) ML3DatabaseResult *parentResult;
 
 - (void).cxx_destruct;
 - (id)arrayRepresentation;

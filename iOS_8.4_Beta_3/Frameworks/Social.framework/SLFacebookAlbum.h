@@ -11,12 +11,12 @@
     NSString *_name;
 }
 
-@property(assign,readwrite) bool canUpload;
-@property(assign,readwrite) long long count;
-@property(assign,retain) NSString * coverPhotoIdentifier;
-@property(assign,retain) NSString * identifier;
-@property(assign,readwrite) bool isDefaultAlbum;
-@property(assign,retain) NSString * name;
+@property bool canUpload;
+@property long long count;
+@property (retain) NSString *coverPhotoIdentifier;
+@property (retain) NSString *identifier;
+@property bool isDefaultAlbum;
+@property (retain) NSString *name;
 
 + (id)albumWithDataDictionary:(id)arg1;
 + (id)albumsWithAlbumDataDictionaries:(id)arg1;

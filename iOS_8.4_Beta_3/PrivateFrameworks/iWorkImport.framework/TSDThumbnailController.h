@@ -20,16 +20,16 @@
     bool _tornDown;
 }
 
-@property(assign,readwrite) struct CGColor { }* backgroundColor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) double delayBeforeRedraw;
-@property(assign,readwrite) <TSDThumbnailControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSSet * dirtySet;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <TSDThumbnailProducer> * producer;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) struct CGColor { }*backgroundColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) double delayBeforeRedraw;
+@property (nonatomic) <TSDThumbnailControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSSet *dirtySet;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <TSDThumbnailProducer> *producer;
+@property (readonly) Class superclass;
 
 - (struct CGColor { }*)backgroundColor;
 - (id)cachedThumbnail:(id)arg1;

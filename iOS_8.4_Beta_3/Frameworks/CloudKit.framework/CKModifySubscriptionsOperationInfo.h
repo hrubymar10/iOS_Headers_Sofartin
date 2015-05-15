@@ -7,8 +7,8 @@
     NSArray *_subscriptionsToSave;
 }
 
-@property(assign,retain) NSArray * subscriptionIDsToDelete;
-@property(assign,retain) NSArray * subscriptionsToSave;
+@property (nonatomic, retain) NSArray *subscriptionIDsToDelete;
+@property (nonatomic, retain) NSArray *subscriptionsToSave;
 
 + (bool)supportsSecureCoding;
 

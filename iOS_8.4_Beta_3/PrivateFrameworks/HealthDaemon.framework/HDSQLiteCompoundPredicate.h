@@ -9,7 +9,7 @@
     bool _unary;
 }
 
-@property(assign,readonly) NSArray * predicates;
+@property (nonatomic, readonly) NSArray *predicates;
 
 + (id)negatedPredicate:(id)arg1;
 + (id)predicateMatchingAllPredicates:(id)arg1;

@@ -13,9 +13,9 @@
     NSObject<OS_dispatch_queue> *_serialLoggingQueue;
 }
 
-@property(assign,copy) NSString * defaultCategory;
-@property(assign,readwrite) bool masterLoggingSwitchEnabled;
-@property(assign,copy) NSArray * registeredConfigurations;
+@property (nonatomic, readonly, copy) NSString *defaultCategory;
+@property (nonatomic) bool masterLoggingSwitchEnabled;
+@property (nonatomic, readonly, copy) NSArray *registeredConfigurations;
 
 + (id)sharedController;
 

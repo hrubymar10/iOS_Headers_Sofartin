@@ -10,11 +10,11 @@
     int _language;
 }
 
-@property(assign,copy) NSString * analysisString;
-@property(assign,retain) NSArray * characterInformation;
-@property(assign,retain) NSArray * codeLookupInformation;
-@property(getter=isEmoji,assign,readwrite) bool emoji;
-@property(assign,readwrite) int language;
+@property (nonatomic, copy) NSString *analysisString;
+@property (nonatomic, retain) NSArray *characterInformation;
+@property (nonatomic, retain) NSArray *codeLookupInformation;
+@property (getter=isEmoji, nonatomic) bool emoji;
+@property (nonatomic) int language;
 
 + (struct __IDXIndex { }*)characterInformationDictionary;
 + (struct __IDXIndex { }*)codeLookupInformationDictionary;

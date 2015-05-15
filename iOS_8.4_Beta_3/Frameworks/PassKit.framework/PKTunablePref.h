@@ -8,9 +8,9 @@
     id _prefValue;
 }
 
-@property(assign,retain) NSMapTable * handlers;
-@property(assign,retain) NSString * prefName;
-@property(assign,retain) id prefValue;
+@property (retain) NSMapTable *handlers;
+@property (retain) NSString *prefName;
+@property (retain) id prefValue;
 
 - (void)addObserver:(id)arg1 handler:(id)arg2;
 - (id)codeDescription;

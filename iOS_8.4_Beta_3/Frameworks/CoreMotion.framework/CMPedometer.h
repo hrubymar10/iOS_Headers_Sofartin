@@ -6,7 +6,7 @@
     CMPedometerProxy *_pedometerProxy;
 }
 
-@property(assign,readonly) CMPedometerProxy * pedometerProxy;
+@property (nonatomic, readonly) CMPedometerProxy *pedometerProxy;
 
 + (bool)isDistanceAvailable;
 + (bool)isFloorCountingAvailable;

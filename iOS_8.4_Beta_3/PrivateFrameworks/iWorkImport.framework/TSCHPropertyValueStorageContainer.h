@@ -20,31 +20,31 @@
     NSMutableArray *mValueAxisStyles;
 }
 
-@property(setter=p_setCategoryAxisNonStyles:,assign,copy) NSArray * p_categoryAxisNonStyles;
-@property(setter=p_setCategoryAxisStyles:,assign,copy) NSArray * p_categoryAxisStyles;
-@property(setter=p_setChartNonStyle:,assign,retain) <TSCHStyleActAlike> * p_chartNonStyle;
-@property(setter=p_setChartStyle:,assign,retain) <TSCHStyleActAlike> * p_chartStyle;
-@property(setter=p_setLegendNonStyle:,assign,retain) <TSCHStyleActAlike> * p_legendNonStyle;
-@property(setter=p_setLegendStyle:,assign,retain) <TSCHStyleActAlike> * p_legendStyle;
-@property(setter=p_setMutableCategoryAxisNonStyles:,assign,retain) NSMutableArray * p_mutableCategoryAxisNonStyles;
-@property(setter=p_setMutableCategoryAxisStyles:,assign,retain) NSMutableArray * p_mutableCategoryAxisStyles;
-@property(setter=p_setMutableParagraphStyles:,assign,retain) NSMutableArray * p_mutableParagraphStyles;
-@property(setter=p_setMutableRefLineNonStyles:,assign,retain) NSMutableDictionary * p_mutableRefLineNonStyles;
-@property(setter=p_setMutableRefLineStyles:,assign,retain) NSMutableDictionary * p_mutableRefLineStyles;
-@property(setter=p_setMutableSeriesNonStyles:,assign,retain) NSMutableArray * p_mutableSeriesNonStyles;
-@property(setter=p_setMutableSeriesPrivateStyles:,assign,retain) NSMutableArray * p_mutableSeriesPrivateStyles;
-@property(setter=p_setMutableSeriesThemeStyles:,assign,retain) NSMutableArray * p_mutableSeriesThemeStyles;
-@property(setter=p_setMutableValueAxisNonStyles:,assign,retain) NSMutableArray * p_mutableValueAxisNonStyles;
-@property(setter=p_setMutableValueAxisStyles:,assign,retain) NSMutableArray * p_mutableValueAxisStyles;
-@property(setter=p_setParagraphStyles:,assign,copy) NSArray * p_paragraphStyles;
-@property(setter=p_setReferenceLineNonStyles:,assign,copy) NSDictionary * p_referenceLineNonStyles;
-@property(setter=p_setReferenceLineStyles:,assign,copy) NSDictionary * p_referenceLineStyles;
-@property(setter=p_setReferenceLineThemeStyle:,assign,retain) <TSCHStyleActAlike> * p_referenceLineThemeStyle;
-@property(setter=p_setSeriesNonStyles:,assign,copy) NSArray * p_seriesNonStyles;
-@property(setter=p_setSeriesPrivateStyles:,assign,copy) NSArray * p_seriesPrivateStyles;
-@property(setter=p_setSeriesThemeStyles:,assign,copy) NSArray * p_seriesThemeStyles;
-@property(setter=p_setValueAxisNonStyles:,assign,copy) NSArray * p_valueAxisNonStyles;
-@property(setter=p_setValueAxisStyles:,assign,copy) NSArray * p_valueAxisStyles;
+@property (setter=p_setCategoryAxisNonStyles:, nonatomic, copy) NSArray *p_categoryAxisNonStyles;
+@property (setter=p_setCategoryAxisStyles:, nonatomic, copy) NSArray *p_categoryAxisStyles;
+@property (setter=p_setChartNonStyle:, nonatomic, retain) <TSCHStyleActAlike> *p_chartNonStyle;
+@property (setter=p_setChartStyle:, nonatomic, retain) <TSCHStyleActAlike> *p_chartStyle;
+@property (setter=p_setLegendNonStyle:, nonatomic, retain) <TSCHStyleActAlike> *p_legendNonStyle;
+@property (setter=p_setLegendStyle:, nonatomic, retain) <TSCHStyleActAlike> *p_legendStyle;
+@property (setter=p_setMutableCategoryAxisNonStyles:, nonatomic, retain) NSMutableArray *p_mutableCategoryAxisNonStyles;
+@property (setter=p_setMutableCategoryAxisStyles:, nonatomic, retain) NSMutableArray *p_mutableCategoryAxisStyles;
+@property (setter=p_setMutableParagraphStyles:, nonatomic, retain) NSMutableArray *p_mutableParagraphStyles;
+@property (setter=p_setMutableRefLineNonStyles:, nonatomic, retain) NSMutableDictionary *p_mutableRefLineNonStyles;
+@property (setter=p_setMutableRefLineStyles:, nonatomic, retain) NSMutableDictionary *p_mutableRefLineStyles;
+@property (setter=p_setMutableSeriesNonStyles:, nonatomic, retain) NSMutableArray *p_mutableSeriesNonStyles;
+@property (setter=p_setMutableSeriesPrivateStyles:, nonatomic, retain) NSMutableArray *p_mutableSeriesPrivateStyles;
+@property (setter=p_setMutableSeriesThemeStyles:, nonatomic, retain) NSMutableArray *p_mutableSeriesThemeStyles;
+@property (setter=p_setMutableValueAxisNonStyles:, nonatomic, retain) NSMutableArray *p_mutableValueAxisNonStyles;
+@property (setter=p_setMutableValueAxisStyles:, nonatomic, retain) NSMutableArray *p_mutableValueAxisStyles;
+@property (setter=p_setParagraphStyles:, nonatomic, copy) NSArray *p_paragraphStyles;
+@property (setter=p_setReferenceLineNonStyles:, nonatomic, copy) NSDictionary *p_referenceLineNonStyles;
+@property (setter=p_setReferenceLineStyles:, nonatomic, copy) NSDictionary *p_referenceLineStyles;
+@property (setter=p_setReferenceLineThemeStyle:, nonatomic, retain) <TSCHStyleActAlike> *p_referenceLineThemeStyle;
+@property (setter=p_setSeriesNonStyles:, nonatomic, copy) NSArray *p_seriesNonStyles;
+@property (setter=p_setSeriesPrivateStyles:, nonatomic, copy) NSArray *p_seriesPrivateStyles;
+@property (setter=p_setSeriesThemeStyles:, nonatomic, copy) NSArray *p_seriesThemeStyles;
+@property (setter=p_setValueAxisNonStyles:, nonatomic, copy) NSArray *p_valueAxisNonStyles;
+@property (setter=p_setValueAxisStyles:, nonatomic, copy) NSArray *p_valueAxisStyles;
 
 + (id)keyPathsForValuesAffectingValueForKey:(id)arg1;
 

@@ -7,8 +7,8 @@
     NSSet *_propertiesToFind;
 }
 
-@property(assign,retain) CoreDAVMultiStatusItem * multiStatus;
-@property(assign,retain) NSSet * propertiesToFind;
+@property (nonatomic, retain) CoreDAVMultiStatusItem *multiStatus;
+@property (nonatomic, retain) NSSet *propertiesToFind;
 
 - (id)additionalHeaderValues;
 - (id)copyDefaultParserForContentType:(id)arg1;

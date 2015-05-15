@@ -6,7 +6,7 @@
     NSInvocation *_invocation;
 }
 
-@property(assign,retain) NSInvocation * invocation;
+@property (nonatomic, retain) NSInvocation *invocation;
 
 + (id)actionWhenIdleWithTarget:(id)arg1 selector:(SEL)arg2 object:(id)arg3;
 

@@ -6,7 +6,7 @@
     DOMHTMLOptGroupElement *_node;
 }
 
-@property(assign,retain) DOMHTMLOptGroupElement * _node;
+@property (nonatomic, retain) DOMHTMLOptGroupElement *_node;
 
 - (id)_node;
 - (void)dealloc;

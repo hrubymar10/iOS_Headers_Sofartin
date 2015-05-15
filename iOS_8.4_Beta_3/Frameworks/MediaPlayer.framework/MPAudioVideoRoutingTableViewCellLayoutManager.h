@@ -11,7 +11,7 @@
     } imageViewEdgeInsets;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } imageViewEdgeInsets;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } imageViewEdgeInsets;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })imageViewEdgeInsets;
 - (void)layoutSubviewsOfCell:(id)arg1;

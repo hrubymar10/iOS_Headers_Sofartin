@@ -9,10 +9,10 @@
     id _timeoutHandler;
 }
 
-@property(assign,retain) NSString * bulletinID;
-@property(assign,retain) NSString * sectionID;
-@property(assign,retain) NSDate * timeout;
-@property(assign,copy) id timeoutHandler;
+@property (nonatomic, retain) NSString *bulletinID;
+@property (nonatomic, retain) NSString *sectionID;
+@property (nonatomic, retain) NSDate *timeout;
+@property (nonatomic, copy) id timeoutHandler;
 
 - (id)bulletinID;
 - (void)dealloc;

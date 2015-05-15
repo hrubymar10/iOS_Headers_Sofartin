@@ -19,10 +19,10 @@
     TSCH3DChartMeshSharedResource *mVertex;
 }
 
-@property(assign,readonly) TSCH3DResource * bounds;
-@property(assign,readonly) TSCH3DResource * normal;
-@property(assign,readonly) TSCH3DResource * texcoord;
-@property(assign,readonly) TSCH3DResource * vertex;
+@property (nonatomic, readonly) TSCH3DResource *bounds;
+@property (nonatomic, readonly) TSCH3DResource *normal;
+@property (nonatomic, readonly) TSCH3DResource *texcoord;
+@property (nonatomic, readonly) TSCH3DResource *vertex;
 
 + (id)nullBuffer;
 + (id)resourcesWithSeries:(id)arg1 creator:(id)arg2;

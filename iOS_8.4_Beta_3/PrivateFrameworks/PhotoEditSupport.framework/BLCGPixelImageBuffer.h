@@ -8,7 +8,7 @@
     unsigned long long _rowBytes;
 }
 
-@property(assign,retain) NSMutableData * bitmapData;
+@property (nonatomic, retain) NSMutableData *bitmapData;
 
 - (void)accessPixelsByAddressInBlock:(id)arg1;
 - (void)accessPixelsByContextInBlock:(id)arg1;

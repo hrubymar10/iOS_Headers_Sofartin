@@ -17,23 +17,23 @@
     GKPlaceholderView *_placeholderView;
 }
 
-@property(assign,readwrite) long long alignment;
-@property(assign,retain) NSArray * cachedConstraints;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * errorMessage;
-@property(assign,retain) NSString * errorTitle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIActivityIndicatorView * loadingIndicatorView;
-@property(assign,retain) GKPlaceholderContentStateMachine * loadingMachine;
-@property(assign,retain) NSString * loadingState;
-@property(assign,readwrite) SEL noContentButtonAction;
-@property(assign,readwrite) id noContentButtonTarget;
-@property(assign,retain) NSString * noContentButtonTitle;
-@property(assign,retain) NSString * noContentMessage;
-@property(assign,retain) NSString * noContentTitle;
-@property(assign,retain) GKPlaceholderView * placeholderView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long alignment;
+@property (nonatomic, retain) NSArray *cachedConstraints;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *errorMessage;
+@property (nonatomic, retain) NSString *errorTitle;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIActivityIndicatorView *loadingIndicatorView;
+@property (nonatomic, retain) GKPlaceholderContentStateMachine *loadingMachine;
+@property (nonatomic, retain) NSString *loadingState;
+@property (nonatomic) SEL noContentButtonAction;
+@property (nonatomic) id noContentButtonTarget;
+@property (nonatomic, retain) NSString *noContentButtonTitle;
+@property (nonatomic, retain) NSString *noContentMessage;
+@property (nonatomic, retain) NSString *noContentTitle;
+@property (nonatomic, retain) GKPlaceholderView *placeholderView;
+@property (readonly) Class superclass;
 
 - (long long)alignment;
 - (void)buttonPressed;

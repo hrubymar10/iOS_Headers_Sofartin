@@ -14,17 +14,17 @@
     bool _syncing;
 }
 
-@property(assign,retain) id activeSyncSessionIdentifier;
-@property(assign,readwrite) unsigned long long aggregateAssetPlaylistItemBytes;
-@property(getter=hasAssetPlaylistItemsPendingDownload,assign,readwrite) bool assetPlaylistItemsPendingDownload;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) float estimatedSyncProgress;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long numberOfAssetPlaylistItems;
-@property(assign,readonly) Class superclass;
-@property(getter=isSyncPending,assign,readwrite) bool syncPending;
-@property(getter=isSyncing,assign,readwrite) bool syncing;
+@property (nonatomic, retain) id activeSyncSessionIdentifier;
+@property (nonatomic) unsigned long long aggregateAssetPlaylistItemBytes;
+@property (getter=hasAssetPlaylistItemsPendingDownload, nonatomic) bool assetPlaylistItemsPendingDownload;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) float estimatedSyncProgress;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long numberOfAssetPlaylistItems;
+@property (readonly) Class superclass;
+@property (getter=isSyncPending, nonatomic) bool syncPending;
+@property (getter=isSyncing, nonatomic) bool syncing;
 
 + (id)sharedManager;
 

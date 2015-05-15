@@ -13,15 +13,15 @@
     double _threadRecycleTimeout;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long invocationCount;
-@property(assign,readwrite) unsigned long long maxThreadCount;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long threadCount;
-@property(assign,readwrite) int threadPriorityTrigger;
-@property(assign,readwrite) double threadRecycleTimeout;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long invocationCount;
+@property (nonatomic) unsigned long long maxThreadCount;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long threadCount;
+@property (nonatomic) int threadPriorityTrigger;
+@property (nonatomic) double threadRecycleTimeout;
 
 + (void)flushAllInvocationQueues;
 + (id)sharedInvocationQueue;

@@ -9,14 +9,14 @@
     <PKPaymentAuthorizationServiceProtocol> *_serviceProxy;
 }
 
-@property(assign,readwrite) PKPaymentAuthorizationController * controller;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPaymentAuthorizationControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <PKPaymentAuthorizationControllerPrivateDelegate> * privateDelegate;
-@property(assign,retain) <PKPaymentAuthorizationServiceProtocol> * serviceProxy;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) PKPaymentAuthorizationController *controller;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPaymentAuthorizationControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <PKPaymentAuthorizationControllerPrivateDelegate> *privateDelegate;
+@property (nonatomic, retain) <PKPaymentAuthorizationServiceProtocol> *serviceProxy;
+@property (readonly) Class superclass;
 
 - (void)authorizationDidAuthorizePayment:(id)arg1;
 - (void)authorizationDidFinishWithError:(id)arg1;

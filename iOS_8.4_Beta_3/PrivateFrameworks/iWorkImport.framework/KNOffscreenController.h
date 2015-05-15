@@ -16,18 +16,18 @@
     unsigned long long mSlideIndex;
 }
 
-@property(assign,readonly) KNAnimatedSlideView * animatedSlideView;
-@property(assign,readonly) CALayer * baseLayer;
-@property(assign,readonly) KNSlide * currentSlide;
-@property(assign,readonly) KNSlideNode * currentSlideNode;
-@property(assign,readonly) unsigned long long eventCount;
-@property(assign,readonly) unsigned long long eventIndex;
-@property(assign,readonly) struct CGSize { double x1; double x2; } outputSize;
-@property(assign,readonly) int playMode;
-@property(assign,readonly) KNPlaybackSession * playbackSession;
-@property(assign,readonly) KNShow * show;
-@property(assign,readonly) unsigned long long slideCount;
-@property(assign,readonly) unsigned long long slideIndex;
+@property (nonatomic, readonly) KNAnimatedSlideView *animatedSlideView;
+@property (nonatomic, readonly) CALayer *baseLayer;
+@property (nonatomic, readonly) KNSlide *currentSlide;
+@property (nonatomic, readonly) KNSlideNode *currentSlideNode;
+@property (nonatomic, readonly) unsigned long long eventCount;
+@property (nonatomic, readonly) unsigned long long eventIndex;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } outputSize;
+@property (nonatomic, readonly) int playMode;
+@property (nonatomic, readonly) KNPlaybackSession *playbackSession;
+@property (nonatomic, readonly) KNShow *show;
+@property (nonatomic, readonly) unsigned long long slideCount;
+@property (nonatomic, readonly) unsigned long long slideIndex;
 
 - (id)animatedSlideView;
 - (id)baseLayer;

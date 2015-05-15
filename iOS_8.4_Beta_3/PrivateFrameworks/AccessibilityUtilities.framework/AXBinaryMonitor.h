@@ -8,9 +8,9 @@
     NSMutableDictionary *_frameworkHandlerMap;
 }
 
-@property(assign,retain) NSMutableDictionary * bundleHandlerMap;
-@property(assign,retain) NSMutableDictionary * dylibHandlerMap;
-@property(assign,retain) NSMutableDictionary * frameworkHandlerMap;
+@property (nonatomic, retain) NSMutableDictionary *bundleHandlerMap;
+@property (nonatomic, retain) NSMutableDictionary *dylibHandlerMap;
+@property (nonatomic, retain) NSMutableDictionary *frameworkHandlerMap;
 
 + (void)initialize;
 + (id)sharedInstance;

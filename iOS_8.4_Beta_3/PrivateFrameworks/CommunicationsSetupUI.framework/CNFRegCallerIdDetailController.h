@@ -6,7 +6,7 @@
     CNFRegController *_regController;
 }
 
-@property(assign,retain) CNFRegController * regController;
+@property (nonatomic, readonly, retain) CNFRegController *regController;
 
 - (void)_setupAccountHandlers;
 - (void)dealloc;

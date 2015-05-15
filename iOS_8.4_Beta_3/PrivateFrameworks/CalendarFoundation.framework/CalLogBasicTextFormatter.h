@@ -18,23 +18,23 @@
     bool _useTinyEnvelopePartNames;
 }
 
-@property(assign,retain) NSDateFormatter * dateFormatter;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool includeEnvelopePartNames;
-@property(assign,readwrite) bool includeFunction;
-@property(assign,readwrite) bool includeLevel;
-@property(assign,readwrite) bool includeLogName;
-@property(assign,readwrite) bool includeMachPort;
-@property(assign,readwrite) bool includeMessage;
-@property(assign,readwrite) bool includeProcessID;
-@property(assign,readwrite) bool includeProcessName;
-@property(assign,readwrite) bool includeTimestamp;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useCompactForm;
-@property(assign,readwrite) bool usePrettyTimestamp;
-@property(assign,readwrite) bool useTinyEnvelopePartNames;
+@property (nonatomic, retain) NSDateFormatter *dateFormatter;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool includeEnvelopePartNames;
+@property (nonatomic) bool includeFunction;
+@property (nonatomic) bool includeLevel;
+@property (nonatomic) bool includeLogName;
+@property (nonatomic) bool includeMachPort;
+@property (nonatomic) bool includeMessage;
+@property (nonatomic) bool includeProcessID;
+@property (nonatomic) bool includeProcessName;
+@property (nonatomic) bool includeTimestamp;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useCompactForm;
+@property (nonatomic) bool usePrettyTimestamp;
+@property (nonatomic) bool useTinyEnvelopePartNames;
 
 - (void).cxx_destruct;
 - (id)dateFormatter;

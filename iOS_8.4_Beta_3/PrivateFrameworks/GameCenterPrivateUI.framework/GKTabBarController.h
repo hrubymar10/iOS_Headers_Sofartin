@@ -7,10 +7,10 @@
     unsigned long long _deferedRotationCount;
 }
 
-@property(assign,retain) GKBubbleFlowRootViewController * bubbleFlowRootViewController;
-@property(assign,readwrite) unsigned long long deferedRotationCount;
-@property(assign,readonly) NSArray * modalChildViewControllers;
-@property(assign,readonly) bool tabBarCovered;
+@property (nonatomic, retain) GKBubbleFlowRootViewController *bubbleFlowRootViewController;
+@property (nonatomic) unsigned long long deferedRotationCount;
+@property (nonatomic, readonly) NSArray *modalChildViewControllers;
+@property (nonatomic, readonly) bool tabBarCovered;
 
 - (void)_ensureWeHaveAPresentedBubbleFlowRootViewController;
 - (bool)_hasBubbleFlowRootViewController;

@@ -41,8 +41,8 @@
     } _tileKeysSeen;
 }
 
-@property(assign,copy) id edgeHandler;
-@property(assign,readonly) GEOMapAccess * map;
+@property (nonatomic, copy) id edgeHandler;
+@property (nonatomic, readonly) GEOMapAccess *map;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -16,11 +16,11 @@
     UIView *_previewOverlayView;
 }
 
-@property(assign,retain) UIView * backdropView;
-@property(assign,retain) UIView * contentView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentViewInsets;
-@property(assign,retain) UIView * headerView;
-@property(assign,retain) UIView * previewOverlayView;
+@property (nonatomic, retain) UIView *backdropView;
+@property (nonatomic, retain) UIView *contentView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentViewInsets;
+@property (nonatomic, retain) UIView *headerView;
+@property (nonatomic, retain) UIView *previewOverlayView;
 
 - (id)backdropView;
 - (id)contentView;

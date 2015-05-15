@@ -8,7 +8,7 @@
     UIImageView *_sashImageView;
 }
 
-@property(assign,readwrite) UIColor * deviceTintColor;
+@property (nonatomic) UIColor *deviceTintColor;
 
 + (id)sashViewForDeviceType:(long long)arg1;
 + (id)sashViewForRunningDeviceType;

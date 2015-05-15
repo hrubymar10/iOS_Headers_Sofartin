@@ -20,13 +20,13 @@
     NSMutableArray *_offerButtonViews;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIOfferViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long metadataPosition;
-@property(getter=isShowingConfirmation,assign,readonly) bool showingConfirmation;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIOfferViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long metadataPosition;
+@property (getter=isShowingConfirmation, nonatomic, readonly) bool showingConfirmation;
+@property (readonly) Class superclass;
 
 + (id)_attributedStringForButton:(id)arg1 context:(id)arg2;
 + (id)_attributedStringForLabel:(id)arg1 context:(id)arg2;

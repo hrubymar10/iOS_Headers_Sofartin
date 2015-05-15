@@ -12,16 +12,16 @@
     bool _wasCached;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * etag;
-@property(assign,readonly) bool hasEtag;
-@property(assign,readwrite) bool hasKnownToServer;
-@property(assign,readwrite) bool hasWasCached;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool knownToServer;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool wasCached;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, readonly) bool hasEtag;
+@property (nonatomic) bool hasKnownToServer;
+@property (nonatomic) bool hasWasCached;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool knownToServer;
+@property (readonly) Class superclass;
+@property (nonatomic) bool wasCached;
 
 + (id)newFromSqliteValue:(struct Mem { }*)arg1;
 

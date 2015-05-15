@@ -23,27 +23,27 @@
     unsigned long long _unreadCount;
 }
 
-@property(assign,retain) IMDAccount * account;
-@property(assign,copy) NSString * accountID;
-@property(assign,copy) NSString * chatIdentifier;
-@property(assign,retain) NSDictionary * chatProperties;
-@property(assign,retain) NSDictionary * dictionaryRepresentation;
-@property(assign,copy) NSString * displayName;
-@property(assign,copy) NSString * groupID;
-@property(assign,copy) NSString * guid;
-@property(assign,readonly) bool isArchived;
-@property(assign,copy) NSString * lastAddressedLocalHandle;
-@property(assign,retain) IMMessageItem * lastMessage;
-@property(assign,copy) NSArray * participants;
-@property(assign,retain) NSDictionary * properties;
-@property(assign,copy) NSString * roomName;
-@property(assign,readwrite) long long rowID;
-@property(assign,retain) IMDService * service;
-@property(assign,copy) NSString * serviceName;
-@property(assign,retain) IMDServiceSession * serviceSession;
-@property(assign,readwrite) long long state;
-@property(assign,readwrite) unsigned char style;
-@property(assign,readwrite) unsigned long long unreadCount;
+@property (readonly, retain) IMDAccount *account;
+@property (copy) NSString *accountID;
+@property (copy) NSString *chatIdentifier;
+@property (readonly, retain) NSDictionary *chatProperties;
+@property (readonly, retain) NSDictionary *dictionaryRepresentation;
+@property (copy) NSString *displayName;
+@property (copy) NSString *groupID;
+@property (copy) NSString *guid;
+@property (readonly) bool isArchived;
+@property (copy) NSString *lastAddressedLocalHandle;
+@property (retain) IMMessageItem *lastMessage;
+@property (copy) NSArray *participants;
+@property (retain) NSDictionary *properties;
+@property (copy) NSString *roomName;
+@property long long rowID;
+@property (readonly, retain) IMDService *service;
+@property (copy) NSString *serviceName;
+@property (readonly, retain) IMDServiceSession *serviceSession;
+@property long long state;
+@property unsigned char style;
+@property unsigned long long unreadCount;
 
 - (void)_setRowID:(long long)arg1;
 - (void)_setUnreadCount:(unsigned long long)arg1;

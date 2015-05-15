@@ -4,13 +4,13 @@
 
 @interface DOMStyleSheet : DOMObject
 
-@property(assign,readwrite) bool disabled;
-@property(assign,copy) NSString * href;
-@property(assign,readonly) DOMMediaList * media;
-@property(assign,readonly) DOMNode * ownerNode;
-@property(assign,readonly) DOMStyleSheet * parentStyleSheet;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * type;
+@property bool disabled;
+@property (readonly, copy) NSString *href;
+@property (readonly) DOMMediaList *media;
+@property (readonly) DOMNode *ownerNode;
+@property (readonly) DOMStyleSheet *parentStyleSheet;
+@property (readonly, copy) NSString *title;
+@property (readonly, copy) NSString *type;
 
 - (void)dealloc;
 - (bool)disabled;

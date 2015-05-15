@@ -7,8 +7,8 @@
     NSTimeZone *_tz;
 }
 
-@property(assign,readonly) NSDate * nsDate;
-@property(assign,retain) NSTimeZone * timeZone;
+@property (nonatomic, readonly) NSDate *nsDate;
+@property (nonatomic, retain) NSTimeZone *timeZone;
 
 + (id)dateWithNSDate:(id)arg1;
 

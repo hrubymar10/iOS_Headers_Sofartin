@@ -9,7 +9,7 @@
     NSObject<OS_dispatch_source> *_reloadTimer;
 }
 
-@property(assign,readwrite) <SKUIMediaQueryDelegate> * delegate;
+@property (nonatomic) <SKUIMediaQueryDelegate> *delegate;
 
 + (void)initialize;
 + (void)registerFeatureClass:(Class)arg1;

@@ -6,7 +6,7 @@
     NSURLRequest *_request;
 }
 
-@property(assign,readonly) NSURLRequest * request;
+@property (nonatomic, readonly) NSURLRequest *request;
 
 + (id)keyWithRequest:(id)arg1;
 

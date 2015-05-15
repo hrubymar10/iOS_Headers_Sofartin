@@ -20,14 +20,14 @@
     UITextView *_textView;
 }
 
-@property(assign,readwrite) double bottomInset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIEditorTemplateViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=isDisabled,assign,readwrite) bool disabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * text;
+@property (nonatomic) double bottomInset;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIEditorTemplateViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=isDisabled, nonatomic) bool disabled;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *text;
 
 + (struct CGSize { double x1; double x2; })preferredSizeForViewElement:(id)arg1 context:(id)arg2;
 + (bool)prefetchResourcesForViewElement:(id)arg1 reason:(long long)arg2 context:(id)arg3;

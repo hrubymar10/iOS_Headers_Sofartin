@@ -9,7 +9,7 @@
     GrammarPart *_theGrammar;
 }
 
-@property(assign,readonly) NSMutableArray * productionRules;
+@property (readonly) NSMutableArray *productionRules;
 
 + (bool)insertStatementsFromOriginal:(id)arg1 intoBranch:(id)arg2;
 + (id)loadGrammarsFromPlistAtPath:(id)arg1;

@@ -6,7 +6,7 @@
     ABLEStaticMapInclusiveDomainVectorRange *_bonDoubleMap;
 }
 
-@property(assign,retain) ABLEStaticMapInclusiveDomainVectorRange * bonDoubleMap;
+@property (retain) ABLEStaticMapInclusiveDomainVectorRange *bonDoubleMap;
 
 + (id)bonPredict;
 + (id)bonPredictWithArray:(id)arg1;

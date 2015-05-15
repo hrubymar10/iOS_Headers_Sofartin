@@ -4,17 +4,17 @@
 
 @interface PFUbiquityTransactionEntry : NSManagedObject
 
-@property(assign,retain) PFUbiquityPeer * actingPeer;
-@property(assign,retain) NSString * globalIDStr;
-@property(assign,retain) NSString * knowledgeVectorString;
-@property(assign,retain) NSString * localIDStr;
-@property(assign,retain) PFUbiquityStoreMetadata * storeMetadata;
-@property(assign,retain) NSDate * transactionDate;
-@property(assign,retain) NSString * transactionLogFilename;
-@property(assign,readonly) NSURL * transactionLogURL;
-@property(assign,retain) NSNumber * transactionNumber;
-@property(assign,readwrite) int transactionType;
-@property(assign,retain) NSNumber * transactionTypeNum;
+@property (nonatomic, retain) PFUbiquityPeer *actingPeer;
+@property (nonatomic, retain) NSString *globalIDStr;
+@property (nonatomic, retain) NSString *knowledgeVectorString;
+@property (nonatomic, retain) NSString *localIDStr;
+@property (nonatomic, retain) PFUbiquityStoreMetadata *storeMetadata;
+@property (nonatomic, retain) NSDate *transactionDate;
+@property (nonatomic, retain) NSString *transactionLogFilename;
+@property (readonly) NSURL *transactionLogURL;
+@property (nonatomic, retain) NSNumber *transactionNumber;
+@property int transactionType;
+@property (nonatomic, retain) NSNumber *transactionTypeNum;
 
 + (id)createTransactionEntriesForCompressedObjectIDs:(id)arg1 withTransactionType:(int)arg2 withImportContext:(id)arg3;
 + (id)deleteTransactionEntriesAfterPeerState:(id)arg1 forStoreName:(id)arg2 inManagedObjectContext:(id)arg3;

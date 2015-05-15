@@ -13,9 +13,9 @@
     NSManagedObject *_source;
 }
 
-@property(getter=isFault,assign,readonly) bool fault;
-@property(assign,readonly) NSPropertyDescription * relationship;
-@property(assign,readonly) NSManagedObject * source;
+@property (getter=isFault, nonatomic, readonly) bool fault;
+@property (nonatomic, readonly) NSPropertyDescription *relationship;
+@property (nonatomic, readonly) NSManagedObject *source;
 
 + (bool)accessInstanceVariablesDirectly;
 + (id)alloc;

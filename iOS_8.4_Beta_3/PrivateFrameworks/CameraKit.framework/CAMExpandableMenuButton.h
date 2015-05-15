@@ -20,16 +20,16 @@
     } _tappableEdgeInsets;
 }
 
-@property(assign,readonly) UIView * _headerView;
-@property(assign,copy) NSIndexSet * _hiddenIndexesWhileCollapsed;
-@property(assign,copy) NSMutableIndexSet * _highlightedIndexesWhileCollapsed;
-@property(assign,readonly) NSMutableArray * _menuItems;
-@property(assign,readwrite) <CAMExpandableMenuButtonDelegate> * expandableMenuDelegate;
-@property(getter=isExpanded,assign,readonly) bool expanded;
-@property(assign,readwrite) long long expansionOrientation;
-@property(assign,readwrite) long long orientation;
-@property(assign,readwrite) long long selectedIndex;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } tappableEdgeInsets;
+@property (nonatomic, readonly) UIView *_headerView;
+@property (nonatomic, readonly, copy) NSIndexSet *_hiddenIndexesWhileCollapsed;
+@property (nonatomic, readonly, copy) NSMutableIndexSet *_highlightedIndexesWhileCollapsed;
+@property (nonatomic, readonly) NSMutableArray *_menuItems;
+@property (nonatomic) <CAMExpandableMenuButtonDelegate> *expandableMenuDelegate;
+@property (getter=isExpanded, nonatomic, readonly) bool expanded;
+@property (nonatomic) long long expansionOrientation;
+@property (nonatomic) long long orientation;
+@property (nonatomic) long long selectedIndex;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } tappableEdgeInsets;
 
 + (double)expansionDuration;
 

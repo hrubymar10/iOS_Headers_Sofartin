@@ -7,8 +7,8 @@
     float _width;
 }
 
-@property(assign,readwrite) float height;
-@property(assign,readwrite) float width;
+@property (nonatomic) float height;
+@property (nonatomic) float width;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

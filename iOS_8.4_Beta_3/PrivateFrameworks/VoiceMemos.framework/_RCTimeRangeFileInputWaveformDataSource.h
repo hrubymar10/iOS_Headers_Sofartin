@@ -11,9 +11,9 @@
     } _sourceTimeRange;
 }
 
-@property(assign,readwrite) double destinationBeginTime;
-@property(assign,readwrite) bool isDecomposedFragment;
-@property(assign,readwrite) struct { double x1; double x2; } sourceTimeRange;
+@property (nonatomic) double destinationBeginTime;
+@property (nonatomic) bool isDecomposedFragment;
+@property (nonatomic) struct { double x1; double x2; } sourceTimeRange;
 
 - (double)destinationBeginTime;
 - (bool)isDecomposedFragment;

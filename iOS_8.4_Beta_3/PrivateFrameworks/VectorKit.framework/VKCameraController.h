@@ -11,11 +11,11 @@
     unsigned long long _regionChangeCount;
 }
 
-@property(getter=isAnimating,assign,readonly) bool animating;
-@property(assign,retain) VKCamera * camera;
-@property(assign,readwrite) <MDRenderTarget> * canvas;
-@property(assign,readwrite) <VKCameraControllerDelegate> * delegate;
-@property(getter=isGesturing,assign,readwrite) bool gesturing;
+@property (getter=isAnimating, nonatomic, readonly) bool animating;
+@property (nonatomic, retain) VKCamera *camera;
+@property (nonatomic) <MDRenderTarget> *canvas;
+@property (nonatomic) <VKCameraControllerDelegate> *delegate;
+@property (getter=isGesturing, nonatomic) bool gesturing;
 
 - (void)beginRegionChange:(bool)arg1;
 - (id)camera;

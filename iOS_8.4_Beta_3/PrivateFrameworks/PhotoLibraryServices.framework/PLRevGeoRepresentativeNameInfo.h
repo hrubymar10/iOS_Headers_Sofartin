@@ -13,15 +13,15 @@
     unsigned long long _type;
 }
 
-@property(assign,readwrite) bool addCountyIfNeeded;
-@property(assign,readwrite) bool allEntriesAtHome;
-@property(assign,readwrite) bool allEntriesMatchHomeForOrderType;
-@property(assign,readonly) NSMutableOrderedSet * geoPlaces;
-@property(assign,copy) NSString * localizedName;
-@property(assign,readwrite) unsigned long long matchingCount;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) NSMutableOrderedSet * remainingGeoPlaces;
-@property(assign,readwrite) unsigned long long type;
+@property (nonatomic) bool addCountyIfNeeded;
+@property (nonatomic) bool allEntriesAtHome;
+@property (nonatomic) bool allEntriesMatchHomeForOrderType;
+@property (nonatomic, readonly) NSMutableOrderedSet *geoPlaces;
+@property (nonatomic, readonly, copy) NSString *localizedName;
+@property (nonatomic) unsigned long long matchingCount;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, readonly) NSMutableOrderedSet *remainingGeoPlaces;
+@property (nonatomic) unsigned long long type;
 
 - (void)_addResourceKeys:(id)arg1 toTypeMap:(id)arg2 forOrderType:(unsigned long long)arg3 countryCode:(id)arg4;
 - (bool)_administrativeAreaCode:(id)arg1 supportedForOrderType:(unsigned long long)arg2;

@@ -22,22 +22,22 @@
     double _verticalAccuracy;
 }
 
-@property(assign,readwrite) double altitude;
-@property(assign,readwrite) double course;
-@property(assign,readwrite) bool hasAltitude;
-@property(assign,readwrite) bool hasCourse;
-@property(assign,readwrite) bool hasHorizontalAccuracy;
-@property(assign,readwrite) bool hasLatitude;
-@property(assign,readwrite) bool hasLongitude;
-@property(assign,readwrite) bool hasSpeed;
-@property(assign,readonly) bool hasTimestamp;
-@property(assign,readwrite) bool hasVerticalAccuracy;
-@property(assign,readwrite) double horizontalAccuracy;
-@property(assign,readwrite) double latitude;
-@property(assign,readwrite) double longitude;
-@property(assign,readwrite) double speed;
-@property(assign,retain) CKDPDate * timestamp;
-@property(assign,readwrite) double verticalAccuracy;
+@property (nonatomic) double altitude;
+@property (nonatomic) double course;
+@property (nonatomic) bool hasAltitude;
+@property (nonatomic) bool hasCourse;
+@property (nonatomic) bool hasHorizontalAccuracy;
+@property (nonatomic) bool hasLatitude;
+@property (nonatomic) bool hasLongitude;
+@property (nonatomic) bool hasSpeed;
+@property (nonatomic, readonly) bool hasTimestamp;
+@property (nonatomic) bool hasVerticalAccuracy;
+@property (nonatomic) double horizontalAccuracy;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic) double speed;
+@property (nonatomic, retain) CKDPDate *timestamp;
+@property (nonatomic) double verticalAccuracy;
 
 - (void).cxx_destruct;
 - (double)altitude;

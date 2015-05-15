@@ -9,10 +9,10 @@
     NSString *_ubiquitousDatabasePath;
 }
 
-@property(assign,readonly) NSString * domainIdentifier;
-@property(assign,readonly) NSString * foreignDatabasePath;
-@property(assign,readwrite) bool supportsSyncProtocol;
-@property(assign,retain) NSString * ubiquitousDatabasePath;
+@property (nonatomic, readonly) NSString *domainIdentifier;
+@property (nonatomic, readonly) NSString *foreignDatabasePath;
+@property (nonatomic) bool supportsSyncProtocol;
+@property (nonatomic, retain) NSString *ubiquitousDatabasePath;
 
 + (id)allSyncingDomains;
 + (id)domainForExtrasValues;

@@ -33,22 +33,22 @@
     unsigned int talkingPeersLimit;
 }
 
-@property(getter=isActiveSession,assign,readwrite) bool activeSession;
-@property(assign,readonly) unsigned int conferenceID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <GKVoiceChatSessionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isUsingSuppression;
-@property(assign,readonly) NSArray * peerList;
-@property(assign,readonly) NSString * sessionName;
-@property(assign,readwrite) float sessionVolume;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned int talkingPeersLimit;
+@property (getter=isActiveSession) bool activeSession;
+@property (nonatomic, readonly) unsigned int conferenceID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property <GKVoiceChatSessionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property bool isUsingSuppression;
+@property (readonly) NSArray *peerList;
+@property (nonatomic, readonly) NSString *sessionName;
+@property float sessionVolume;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property unsigned int talkingPeersLimit;
 
 + (void)brokenHash:(id)arg1 response:(char *)arg2;
 

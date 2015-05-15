@@ -4,14 +4,14 @@
 
 @interface SAWeatherForecast : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSNumber * chanceOfPrecipitation;
-@property(assign,retain) SAWeatherCondition * condition;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSNumber * isUserRequested;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSNumber * timeIndex;
+@property (nonatomic, copy) NSNumber *chanceOfPrecipitation;
+@property (nonatomic, retain) SAWeatherCondition *condition;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSNumber *isUserRequested;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSNumber *timeIndex;
 
 + (id)forecast;
 + (id)forecastWithDictionary:(id)arg1 context:(id)arg2;

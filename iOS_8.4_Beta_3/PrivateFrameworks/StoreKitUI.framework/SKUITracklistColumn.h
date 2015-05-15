@@ -13,14 +13,14 @@
     double _width;
 }
 
-@property(assign,readwrite) long long columnIdentifier;
-@property(assign,readwrite) long long contentAlignment;
-@property(assign,readwrite) long long headerAlignment;
-@property(assign,readwrite) double maximumWidthFraction;
-@property(assign,readwrite) double preferredWidth;
-@property(assign,readwrite) bool showsPreviewControl;
-@property(assign,readwrite) bool sizesToFit;
-@property(assign,readwrite) double width;
+@property (nonatomic) long long columnIdentifier;
+@property (nonatomic) long long contentAlignment;
+@property (nonatomic) long long headerAlignment;
+@property (nonatomic) double maximumWidthFraction;
+@property (nonatomic) double preferredWidth;
+@property (nonatomic) bool showsPreviewControl;
+@property (nonatomic) bool sizesToFit;
+@property (nonatomic) double width;
 
 - (long long)columnIdentifier;
 - (long long)contentAlignment;

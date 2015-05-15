@@ -11,10 +11,10 @@
     PLImageSource *_source;
 }
 
-@property(assign,readonly) NSArray * completionBlocks;
-@property(assign,retain) PLLoadRequestKey * key;
-@property(assign,readwrite) int priority;
-@property(assign,retain) PLImageSource * source;
+@property (nonatomic, readonly) NSArray *completionBlocks;
+@property (nonatomic, readonly, retain) PLLoadRequestKey *key;
+@property (nonatomic) int priority;
+@property (nonatomic, readonly, retain) PLImageSource *source;
 
 + (id)requestWithAsset:(id)arg1 source:(id)arg2 priority:(int)arg3 completion:(id)arg4 loadingQueue:(id)arg5;
 

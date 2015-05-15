@@ -11,19 +11,19 @@
     unsigned long long _startLocation;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long endLocation;
-@property(assign,readonly) _MFParsedHTMLNode * firstChild;
-@property(assign,readonly) bool hasChildNodes;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * htmlString;
-@property(assign,readonly) _MFParsedHTMLNode * lastChild;
-@property(assign,readwrite) _MFParsedHTMLNode * nextSibling;
-@property(assign,readwrite) _MFParsedHTMLNode * parentNode;
-@property(assign,readwrite) unsigned long long startLocation;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * tagName;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) unsigned long long endLocation;
+@property (nonatomic, readonly) _MFParsedHTMLNode *firstChild;
+@property (nonatomic, readonly) bool hasChildNodes;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *htmlString;
+@property (nonatomic, readonly) _MFParsedHTMLNode *lastChild;
+@property (nonatomic) _MFParsedHTMLNode *nextSibling;
+@property (nonatomic) _MFParsedHTMLNode *parentNode;
+@property (nonatomic) unsigned long long startLocation;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *tagName;
 
 - (void)addRecursiveDescriptionWithLevel:(unsigned long long)arg1 toString:(id)arg2;
 - (void)appendChild:(id)arg1;

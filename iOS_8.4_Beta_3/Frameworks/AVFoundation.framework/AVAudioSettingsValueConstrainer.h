@@ -36,12 +36,12 @@
     unsigned int _outputDataRate;
 }
 
-@property(assign,readwrite) unsigned int outputBitsPerChannel;
-@property(assign,readwrite) unsigned int outputChannelCount;
-@property(assign,readwrite) unsigned int outputDataRate;
-@property(assign,readwrite) unsigned int outputFormat;
-@property(assign,readwrite) unsigned int outputFormatFlags;
-@property(assign,readwrite) float outputSampleRate;
+@property (nonatomic) unsigned int outputBitsPerChannel;
+@property (nonatomic) unsigned int outputChannelCount;
+@property (nonatomic) unsigned int outputDataRate;
+@property (nonatomic) unsigned int outputFormat;
+@property (nonatomic) unsigned int outputFormatFlags;
+@property (nonatomic) float outputSampleRate;
 
 - (void)_bringUpToDate;
 - (void)_buildApplicableDataRatesForSampleRates;

@@ -16,20 +16,20 @@
     NSNetService *_service;
 }
 
-@property(assign,retain) AXHATimer * communicationTimer;
-@property(assign,retain) AXHARemoteMessage * currentMessageInFlight;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <AXHARemoteControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didValidateHIID;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableData * inputBuffer;
-@property(assign,retain) NSInputStream * inputStream;
-@property(assign,retain) NSMutableData * outputBuffer;
-@property(assign,retain) NSMutableArray * outputDataQueue;
-@property(assign,retain) NSOutputStream * outputStream;
-@property(assign,retain) NSNetService * service;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) AXHATimer *communicationTimer;
+@property (nonatomic, retain) AXHARemoteMessage *currentMessageInFlight;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <AXHARemoteControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool didValidateHIID;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableData *inputBuffer;
+@property (nonatomic, retain) NSInputStream *inputStream;
+@property (nonatomic, retain) NSMutableData *outputBuffer;
+@property (nonatomic, retain) NSMutableArray *outputDataQueue;
+@property (nonatomic, retain) NSOutputStream *outputStream;
+@property (nonatomic, retain) NSNetService *service;
+@property (readonly) Class superclass;
 
 - (void)acceptConnection:(int)arg1;
 - (void)clearMessageQueue;

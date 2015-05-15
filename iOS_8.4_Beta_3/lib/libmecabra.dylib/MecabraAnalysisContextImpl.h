@@ -10,13 +10,13 @@
     NSString *_stringContext;
 }
 
-@property(assign,retain) NSMutableArray * candidateContext;
-@property(assign,readonly) NSArray * candidateContextForAnalysis;
-@property(assign,retain) NSMutableString * candidateContextString;
-@property(assign,readwrite) bool rebuildCandidateContextString;
-@property(assign,retain) NSString * stringBeforeCaret;
-@property(assign,retain) NSString * stringContext;
-@property(assign,readonly) NSString * stringContextForAnalysis;
+@property (nonatomic, retain) NSMutableArray *candidateContext;
+@property (nonatomic, readonly) NSArray *candidateContextForAnalysis;
+@property (nonatomic, retain) NSMutableString *candidateContextString;
+@property (nonatomic) bool rebuildCandidateContextString;
+@property (nonatomic, retain) NSString *stringBeforeCaret;
+@property (nonatomic, retain) NSString *stringContext;
+@property (nonatomic, readonly) NSString *stringContextForAnalysis;
 
 - (void)addCandidate:(id)arg1;
 - (void)adjustCandidateContext;

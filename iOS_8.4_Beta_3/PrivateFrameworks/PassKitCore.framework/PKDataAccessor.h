@@ -6,12 +6,12 @@
     NSObject<OS_dispatch_queue> *_processingQueue;
 }
 
-@property(assign,retain) NSData * archiveData;
-@property(assign,retain) NSBundle * bundle;
-@property(assign,retain) NSData * manifestHash;
-@property(assign,retain) PKRemoteAssetManager * remoteAssetManager;
-@property(assign,readonly) bool remoteAssetsDownloaded;
-@property(assign,retain) NSData * serializedFileWrapper;
+@property (nonatomic, readonly, retain) NSData *archiveData;
+@property (nonatomic, readonly, retain) NSBundle *bundle;
+@property (nonatomic, readonly, retain) NSData *manifestHash;
+@property (nonatomic, readonly, retain) PKRemoteAssetManager *remoteAssetManager;
+@property (nonatomic, readonly) bool remoteAssetsDownloaded;
+@property (nonatomic, readonly, retain) NSData *serializedFileWrapper;
 
 - (id)archiveData;
 - (id)bundle;

@@ -10,13 +10,13 @@
     NSUUID *_uuid;
 }
 
-@property(assign,readonly) NSDictionary * dictionaryRepresentation;
-@property(assign,readonly) NSDictionary * dictionaryRepresentationForUserActivityUserInfo;
-@property(assign,readwrite) bool isShowingReader;
-@property(assign,copy) NSDictionary * readerScrollPositionDictionary;
-@property(assign,copy) NSString * title;
-@property(assign,retain) NSURL * url;
-@property(assign,retain) NSUUID * uuid;
+@property (nonatomic, readonly) NSDictionary *dictionaryRepresentation;
+@property (nonatomic, readonly) NSDictionary *dictionaryRepresentationForUserActivityUserInfo;
+@property (nonatomic) bool isShowingReader;
+@property (nonatomic, copy) NSDictionary *readerScrollPositionDictionary;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, retain) NSURL *url;
+@property (nonatomic, retain) NSUUID *uuid;
 
 + (id)_dictionaryWithURL:(id)arg1 uuid:(id)arg2 title:(id)arg3 isShowingReader:(bool)arg4 readerScrollPosition:(id)arg5;
 

@@ -9,10 +9,10 @@
     double _stopTime;
 }
 
-@property(assign,readonly) MPAVItem * item;
-@property(assign,copy) NSString * path;
-@property(assign,readwrite) double startTime;
-@property(assign,readwrite) double stopTime;
+@property (nonatomic, readonly) MPAVItem *item;
+@property (nonatomic, copy) NSString *path;
+@property (nonatomic) double startTime;
+@property (nonatomic) double stopTime;
 
 - (void).cxx_destruct;
 - (id)init;

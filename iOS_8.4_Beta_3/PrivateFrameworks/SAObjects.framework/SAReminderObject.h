@@ -4,16 +4,16 @@
 
 @interface SAReminderObject : SADomainObject
 
-@property(assign,copy) NSString * alternateSubject;
-@property(assign,readwrite) bool completed;
-@property(assign,copy) NSDate * dueDate;
-@property(assign,copy) NSString * dueDateTimeZoneId;
-@property(assign,readwrite) bool important;
-@property(assign,copy) NSArray * lists;
-@property(assign,retain) <SAReminderPayload> * payload;
-@property(assign,retain) SAReminderRecurrence * recurrence;
-@property(assign,copy) NSString * subject;
-@property(assign,retain) SAReminderTrigger * trigger;
+@property (nonatomic, copy) NSString *alternateSubject;
+@property (nonatomic) bool completed;
+@property (nonatomic, copy) NSDate *dueDate;
+@property (nonatomic, copy) NSString *dueDateTimeZoneId;
+@property (nonatomic) bool important;
+@property (nonatomic, copy) NSArray *lists;
+@property (nonatomic, retain) <SAReminderPayload> *payload;
+@property (nonatomic, retain) SAReminderRecurrence *recurrence;
+@property (nonatomic, copy) NSString *subject;
+@property (nonatomic, retain) SAReminderTrigger *trigger;
 
 + (id)object;
 + (id)objectWithDictionary:(id)arg1 context:(id)arg2;

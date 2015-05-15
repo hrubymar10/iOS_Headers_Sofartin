@@ -4,9 +4,9 @@
 
 @interface MPUMutableUserActivityContainerItem : MPUUserActivityContainerItem
 
-@property(assign,readwrite) long long containerItemType;
-@property(assign,retain) MPMediaEntity * selectedMediaEntity;
-@property(assign,retain) MPMediaEntity * visualReferenceMediaEntity;
+@property (nonatomic) long long containerItemType;
+@property (nonatomic, retain) MPMediaEntity *selectedMediaEntity;
+@property (nonatomic, retain) MPMediaEntity *visualReferenceMediaEntity;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setContainerItemType:(long long)arg1;

@@ -9,8 +9,8 @@
     } _has;
 }
 
-@property(assign,readwrite) bool assert;
-@property(assign,readwrite) bool hasAssert;
+@property (nonatomic) bool assert;
+@property (nonatomic) bool hasAssert;
 
 - (bool)assert;
 - (void)copyTo:(id)arg1;

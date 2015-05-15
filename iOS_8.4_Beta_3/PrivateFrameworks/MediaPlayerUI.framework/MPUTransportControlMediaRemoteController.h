@@ -22,22 +22,22 @@
     MPUTransportControlsView *_transportControlsView;
 }
 
-@property(getter=isAdvertisement,assign,readonly) bool advertisement;
-@property(assign,copy) NSArray * allowedTransportControlTypes;
-@property(getter=isAlwaysLive,assign,readonly) bool alwaysLive;
-@property(assign,readwrite) <MPUTransportControlMediaRemoteControllerDelegate> * delegate;
-@property(assign,readonly) double displayedSkipBackwardInterval;
-@property(assign,readonly) double displayedSkipForwardInterval;
-@property(assign,readonly) long long likeControlPresentationStyle;
-@property(assign,readonly) long long likedState;
-@property(assign,copy) NSDictionary * nowPlayingInfo;
-@property(getter=isPlaying,assign,readwrite) bool playing;
-@property(assign,readonly) unsigned long long repeatType;
-@property(getter=isSharingEnabled,assign,readonly) bool sharingEnabled;
-@property(assign,readonly) unsigned long long shuffleType;
-@property(assign,copy) NSArray * supportedCommands;
-@property(assign,readwrite) unsigned long long transportControlsCount;
-@property(assign,readonly) MPUTransportControlsView * transportControlsView;
+@property (getter=isAdvertisement, nonatomic, readonly) bool advertisement;
+@property (nonatomic, copy) NSArray *allowedTransportControlTypes;
+@property (getter=isAlwaysLive, nonatomic, readonly) bool alwaysLive;
+@property (nonatomic) <MPUTransportControlMediaRemoteControllerDelegate> *delegate;
+@property (nonatomic, readonly) double displayedSkipBackwardInterval;
+@property (nonatomic, readonly) double displayedSkipForwardInterval;
+@property (nonatomic, readonly) long long likeControlPresentationStyle;
+@property (nonatomic, readonly) long long likedState;
+@property (nonatomic, copy) NSDictionary *nowPlayingInfo;
+@property (getter=isPlaying, nonatomic) bool playing;
+@property (nonatomic, readonly) unsigned long long repeatType;
+@property (getter=isSharingEnabled, nonatomic, readonly) bool sharingEnabled;
+@property (nonatomic, readonly) unsigned long long shuffleType;
+@property (nonatomic, copy) NSArray *supportedCommands;
+@property (nonatomic) unsigned long long transportControlsCount;
+@property (nonatomic, readonly) MPUTransportControlsView *transportControlsView;
 
 - (void).cxx_destruct;
 - (id)_commandOptionsForFeedbackOrPurchase;

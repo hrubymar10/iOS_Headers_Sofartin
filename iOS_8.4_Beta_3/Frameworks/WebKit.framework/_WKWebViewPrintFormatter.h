@@ -12,8 +12,8 @@
     double _totalScaleFactor;
 }
 
-@property(assign,retain) _WKFrameHandle * frameToPrint;
-@property(assign,readonly) WKWebView * webView;
+@property (nonatomic, retain) _WKFrameHandle *frameToPrint;
+@property (nonatomic, readonly) WKWebView *webView;
 
 - (id).cxx_construct;
 - (long long)_recalcPageCount;

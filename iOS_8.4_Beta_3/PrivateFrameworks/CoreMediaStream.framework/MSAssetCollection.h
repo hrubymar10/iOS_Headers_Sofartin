@@ -13,15 +13,15 @@
     bool _wasDeleted;
 }
 
-@property(assign,retain) NSString * assetCollectionID;
-@property(assign,retain) NSString * ctag;
-@property(assign,retain) NSArray * derivedAssets;
-@property(assign,retain) NSString * fileName;
-@property(assign,readwrite) long long initialFailureDate;
-@property(assign,retain) MSAsset * masterAsset;
-@property(assign,readonly) NSData * masterAssetHash;
-@property(assign,retain) NSDate * serverUploadedDate;
-@property(assign,readwrite) bool wasDeleted;
+@property (nonatomic, retain) NSString *assetCollectionID;
+@property (nonatomic, retain) NSString *ctag;
+@property (nonatomic, retain) NSArray *derivedAssets;
+@property (nonatomic, retain) NSString *fileName;
+@property (nonatomic) long long initialFailureDate;
+@property (nonatomic, retain) MSAsset *masterAsset;
+@property (nonatomic, readonly) NSData *masterAssetHash;
+@property (nonatomic, retain) NSDate *serverUploadedDate;
+@property (nonatomic) bool wasDeleted;
 
 + (id)collectionWithMasterAsset:(id)arg1 fileName:(id)arg2;
 + (id)collectionWithMasterAsset:(id)arg1 fileName:(id)arg2 derivedAssets:(id)arg3;

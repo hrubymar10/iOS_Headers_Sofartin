@@ -51,14 +51,14 @@
     UIViewController *_toViewController;
 }
 
-@property(setter=_setFromEndFrame:,assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } fromEndFrame;
-@property(setter=_setFromStartFrame:,assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } fromStartFrame;
-@property(getter=_fromView,setter=_setFromView:,assign,retain) UIView * fromView;
-@property(setter=_setFromViewController:,assign,retain) UIViewController * fromViewController;
-@property(setter=_setToEndFrame:,assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } toEndFrame;
-@property(setter=_setToStartFrame:,assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } toStartFrame;
-@property(getter=_toView,setter=_setToView:,assign,retain) UIView * toView;
-@property(setter=_setToViewController:,assign,retain) UIViewController * toViewController;
+@property (setter=_setFromEndFrame:, nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } fromEndFrame;
+@property (setter=_setFromStartFrame:, nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } fromStartFrame;
+@property (getter=_fromView, setter=_setFromView:, nonatomic, retain) UIView *fromView;
+@property (setter=_setFromViewController:, nonatomic, retain) UIViewController *fromViewController;
+@property (setter=_setToEndFrame:, nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } toEndFrame;
+@property (setter=_setToStartFrame:, nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } toStartFrame;
+@property (getter=_toView, setter=_setToView:, nonatomic, retain) UIView *toView;
+@property (setter=_setToViewController:, nonatomic, retain) UIViewController *toViewController;
 
 - (id)_fromView;
 - (void)_setFromEndFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

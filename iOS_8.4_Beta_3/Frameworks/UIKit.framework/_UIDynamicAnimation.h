@@ -12,7 +12,7 @@
     unsigned int _yield;
 }
 
-@property(assign,readonly) int state;
+@property (nonatomic, readonly) int state;
 
 + (void)_updateAnimations:(id)arg1;
 + (void)_updateAnimations:(id)arg1 timer:(id)arg2;

@@ -9,9 +9,9 @@
     float _maximumStyleZ;
 }
 
-@property(assign,readonly) float maximumStyleZ;
-@property(assign,readonly) unsigned long long numTiles;
-@property(assign,readonly) id* tileList;
+@property (nonatomic, readonly) float maximumStyleZ;
+@property (nonatomic, readonly) unsigned long long numTiles;
+@property (nonatomic, readonly) id*tileList;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

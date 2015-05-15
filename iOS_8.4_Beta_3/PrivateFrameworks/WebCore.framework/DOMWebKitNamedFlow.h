@@ -4,9 +4,9 @@
 
 @interface DOMWebKitNamedFlow : DOMObject
 
-@property(assign,readonly) int firstEmptyRegionIndex;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) bool overset;
+@property (readonly) int firstEmptyRegionIndex;
+@property (readonly, copy) NSString *name;
+@property (readonly) bool overset;
 
 - (void)addEventListener:(id)arg1 listener:(id)arg2 useCapture:(bool)arg3;
 - (void)dealloc;

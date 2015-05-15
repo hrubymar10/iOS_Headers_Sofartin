@@ -15,11 +15,11 @@
     double _timeout;
 }
 
-@property(assign,readonly) SEL action;
-@property(assign,readonly) unsigned long long maxPingCount;
-@property(assign,readonly) unsigned long long pingCount;
-@property(assign,readonly) id target;
-@property(assign,readonly) double timeout;
+@property (nonatomic, readonly) SEL action;
+@property (nonatomic, readonly) unsigned long long maxPingCount;
+@property (nonatomic, readonly) unsigned long long pingCount;
+@property (nonatomic, readonly) id target;
+@property (nonatomic, readonly) double timeout;
 
 - (void).cxx_destruct;
 - (void)_inqFireWithScheduleId:(unsigned long long)arg1;

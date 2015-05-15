@@ -12,8 +12,8 @@
     UIView *_childContentView;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } childContentInsets;
-@property(assign,retain) UIView * childContentView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } childContentInsets;
+@property (nonatomic, retain) UIView *childContentView;
 
 - (void).cxx_destruct;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })childContentInsets;

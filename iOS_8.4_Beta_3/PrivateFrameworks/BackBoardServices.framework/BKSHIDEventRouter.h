@@ -7,8 +7,8 @@
     NSSet *_hidEventDescriptors;
 }
 
-@property(assign,readonly) long long destination;
-@property(assign,readonly) NSSet * hidEventDescriptors;
+@property (readonly) long long destination;
+@property (readonly) NSSet *hidEventDescriptors;
 
 + (id)defaultEventRouters;
 + (id)defaultFocusedAppEventRouter;

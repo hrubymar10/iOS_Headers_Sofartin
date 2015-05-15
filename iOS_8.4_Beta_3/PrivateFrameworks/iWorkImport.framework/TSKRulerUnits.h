@@ -13,10 +13,10 @@
     bool _showRulerAsPercentage;
 }
 
-@property(assign,readwrite) bool centerRulerOrigin;
-@property(assign,readwrite) int preferredPixelUnit;
-@property(assign,readwrite) int rulerUnits;
-@property(assign,readwrite) bool showRulerAsPercentage;
+@property (nonatomic) bool centerRulerOrigin;
+@property (nonatomic) int preferredPixelUnit;
+@property (nonatomic) int rulerUnits;
+@property (nonatomic) bool showRulerAsPercentage;
 
 + (id)formatterForRulerUnits:(int)arg1 decimalPlaces:(int)arg2 trailingZeros:(bool)arg3 lenient:(bool)arg4;
 + (id)instance;

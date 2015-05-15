@@ -12,10 +12,10 @@
     NSArray *_unmergedStoreMediaItems;
 }
 
-@property(assign,readonly) bool isCollectionOfferPresentable;
-@property(assign,readonly) NSArray * items;
-@property(assign,readonly) NSArray * itemsByRemovingLocalItems;
-@property(assign,readonly) NSArray * itemsByRemovingStoreOffers;
+@property (nonatomic, readonly) bool isCollectionOfferPresentable;
+@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic, readonly) NSArray *itemsByRemovingLocalItems;
+@property (nonatomic, readonly) NSArray *itemsByRemovingStoreOffers;
 
 + (id)albumOrderedChildItemIDsForLookupCollectionPropertyValues:(id)arg1;
 + (id)collectionLookupKeyForMediaProperty:(id)arg1;

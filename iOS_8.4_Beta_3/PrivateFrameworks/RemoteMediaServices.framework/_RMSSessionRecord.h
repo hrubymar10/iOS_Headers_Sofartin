@@ -10,11 +10,11 @@
     int _timeout;
 }
 
-@property(assign,retain) RMSPowerAssertion * powerAssertion;
-@property(assign,readwrite) int refreshCount;
-@property(assign,retain) RMSRunAssertion * runAssertion;
-@property(assign,retain) id session;
-@property(assign,readwrite) int timeout;
+@property (nonatomic, retain) RMSPowerAssertion *powerAssertion;
+@property (nonatomic) int refreshCount;
+@property (nonatomic, retain) RMSRunAssertion *runAssertion;
+@property (nonatomic, retain) id session;
+@property (nonatomic) int timeout;
 
 - (void).cxx_destruct;
 - (id)powerAssertion;

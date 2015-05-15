@@ -9,7 +9,7 @@
     void *_reserved6;
 }
 
-@property(assign,retain) NSFetchRequest * fetchRequest;
+@property (retain) NSFetchRequest *fetchRequest;
 
 - (void)_createCachesAndOptimizeState;
 - (unsigned long long)_propertyType;

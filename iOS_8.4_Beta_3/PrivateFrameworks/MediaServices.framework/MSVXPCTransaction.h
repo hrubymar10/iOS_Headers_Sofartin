@@ -7,8 +7,8 @@
     NSString *_name;
 }
 
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,readonly) NSString * name;
+@property (getter=isActive, nonatomic, readonly) bool active;
+@property (nonatomic, readonly) NSString *name;
 
 + (id)activeTransactions;
 

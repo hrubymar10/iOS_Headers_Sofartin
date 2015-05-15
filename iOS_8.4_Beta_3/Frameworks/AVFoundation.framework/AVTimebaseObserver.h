@@ -12,9 +12,9 @@
     AVWeakReference *_weakReference;
 }
 
-@property(assign,readonly) bool invalidated;
-@property(assign,readonly) struct OpaqueCMTimebase { }* timebase;
-@property(getter=_weakReference,assign,readonly) AVWeakReference * weakReference;
+@property (nonatomic, readonly) bool invalidated;
+@property (readonly) struct OpaqueCMTimebase { }*timebase;
+@property (getter=_weakReference, nonatomic, readonly) AVWeakReference *weakReference;
 
 - (void)_attachTimerSourceToTimebase;
 - (void)_effectiveRateChanged;

@@ -25,8 +25,8 @@
     unsigned long long _streamStatus;
 }
 
-@property(assign,readwrite) <NSStreamDelegate> * delegate;
-@property(assign,readonly) unsigned long long totalBytes;
+@property (nonatomic) <NSStreamDelegate> *delegate;
+@property (readonly) unsigned long long totalBytes;
 
 - (void).cxx_destruct;
 - (void)_scheduleCallback;

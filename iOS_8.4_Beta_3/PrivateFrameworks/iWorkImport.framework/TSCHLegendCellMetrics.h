@@ -12,13 +12,13 @@
     float mTrueTitleHeight;
 }
 
-@property(assign,readonly) float badgeSize;
-@property(assign,readonly) float baseline;
-@property(assign,readonly) struct __CTFont { }* font;
-@property(assign,readonly) float lineGap;
-@property(assign,readonly) TSWPParagraphStyle * paragraphStyle;
-@property(assign,readonly) float symbolGap;
-@property(assign,readonly) float titleHeight;
+@property (nonatomic, readonly) float badgeSize;
+@property (nonatomic, readonly) float baseline;
+@property (nonatomic, readonly) struct __CTFont { }*font;
+@property (nonatomic, readonly) float lineGap;
+@property (nonatomic, readonly) TSWPParagraphStyle *paragraphStyle;
+@property (nonatomic, readonly) float symbolGap;
+@property (nonatomic, readonly) float titleHeight;
 
 - (float)badgeSize;
 - (float)baseline;

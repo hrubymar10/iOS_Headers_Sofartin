@@ -25,9 +25,9 @@
     SKUICountdownViewTimerTarget *_timerTarget;
 }
 
-@property(assign,retain) UIImage * backgroundImage;
-@property(assign,readonly) SKUIClientContext * clientContext;
-@property(assign,readonly) SKUICountdown * countdown;
+@property (nonatomic, retain) UIImage *backgroundImage;
+@property (nonatomic, readonly) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) SKUICountdown *countdown;
 
 - (void).cxx_destruct;
 - (void)_currentRemainingDays:(long long*)arg1 hours:(long long*)arg2 minutes:(long long*)arg3 seconds:(long long*)arg4;

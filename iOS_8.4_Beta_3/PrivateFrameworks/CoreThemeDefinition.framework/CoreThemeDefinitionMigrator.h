@@ -10,7 +10,7 @@
     NSString *temporaryMigrationPath;
 }
 
-@property(assign,copy) NSString * temporaryMigrationPath;
+@property (copy) NSString *temporaryMigrationPath;
 
 - (bool)_checkDiskSpace:(id*)arg1;
 - (bool)_updateMetadata:(id*)arg1;

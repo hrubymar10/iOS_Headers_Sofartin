@@ -4,10 +4,10 @@
 
 @interface DOMRect : DOMObject
 
-@property(assign,readonly) DOMCSSPrimitiveValue * bottom;
-@property(assign,readonly) DOMCSSPrimitiveValue * left;
-@property(assign,readonly) DOMCSSPrimitiveValue * right;
-@property(assign,readonly) DOMCSSPrimitiveValue * top;
+@property (readonly) DOMCSSPrimitiveValue *bottom;
+@property (readonly) DOMCSSPrimitiveValue *left;
+@property (readonly) DOMCSSPrimitiveValue *right;
+@property (readonly) DOMCSSPrimitiveValue *top;
 
 - (id)bottom;
 - (void)dealloc;

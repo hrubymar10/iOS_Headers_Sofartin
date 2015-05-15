@@ -32,10 +32,10 @@
     } _jointDef;
 }
 
-@property(assign,readwrite) bool collideConnected;
-@property(assign,readwrite) double damping;
-@property(assign,readwrite) double frequency;
-@property(assign,readwrite) double length;
+@property (nonatomic) bool collideConnected;
+@property (nonatomic) double damping;
+@property (nonatomic) double frequency;
+@property (nonatomic) double length;
 
 + (id)jointWithBodyA:(id)arg1 bodyB:(id)arg2 anchorA:(struct CGPoint { double x1; double x2; })arg3 anchorB:(struct CGPoint { double x1; double x2; })arg4;
 + (id)jointWithBodyA:(id)arg1 bodyB:(id)arg2 localAnchorA:(struct CGPoint { double x1; double x2; })arg3 localAnchorB:(struct CGPoint { double x1; double x2; })arg4;

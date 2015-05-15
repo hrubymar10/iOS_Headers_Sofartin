@@ -13,14 +13,14 @@
     UITextSelection *_textSelection;
 }
 
-@property(assign,retain) <UIWebSelectionBlock> * base;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } boundingRect;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } desiredSize;
-@property(assign,readonly) UIWebDocumentView * documentView;
-@property(assign,retain) <UIWebSelectionBlock> * extent;
-@property(getter=isTextOnly,assign,readonly) bool textOnly;
-@property(assign,readonly) UITextSelection * textSelection;
-@property(assign,readonly) bool valid;
+@property (nonatomic, retain) <UIWebSelectionBlock> *base;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } boundingRect;
+@property (nonatomic) struct CGSize { double x1; double x2; } desiredSize;
+@property (nonatomic, readonly) UIWebDocumentView *documentView;
+@property (nonatomic, retain) <UIWebSelectionBlock> *extent;
+@property (getter=isTextOnly, nonatomic, readonly) bool textOnly;
+@property (nonatomic, readonly) UITextSelection *textSelection;
+@property (nonatomic, readonly) bool valid;
 
 - (void)adjustSelectionFromPoint:(struct CGPoint { double x1; double x2; })arg1 towardsPoint:(struct CGPoint { double x1; double x2; })arg2 withNewRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg3;
 - (void)applySelectionToWebDocumentView;

@@ -15,16 +15,16 @@
     NSString *_vpnType;
 }
 
-@property(assign,retain) NSMutableDictionary * configurationDictionary;
-@property(assign,retain) <NEProfilePayloadBaseDelegate> * nePayloadBase;
-@property(assign,retain) NSString * passwordKey;
-@property(assign,retain) NSString * pinKey;
-@property(assign,retain) NSString * proxyPasswordKey;
-@property(assign,retain) NSString * proxyUserNameKey;
-@property(assign,copy) NSString * serviceName;
-@property(assign,retain) NSString * sharedSecretKey;
-@property(assign,retain) NSString * userNameKey;
-@property(assign,copy) NSString * vpnType;
+@property (nonatomic, retain) NSMutableDictionary *configurationDictionary;
+@property (nonatomic, retain) <NEProfilePayloadBaseDelegate> *nePayloadBase;
+@property (nonatomic, retain) NSString *passwordKey;
+@property (nonatomic, retain) NSString *pinKey;
+@property (nonatomic, retain) NSString *proxyPasswordKey;
+@property (nonatomic, retain) NSString *proxyUserNameKey;
+@property (nonatomic, copy) NSString *serviceName;
+@property (nonatomic, retain) NSString *sharedSecretKey;
+@property (nonatomic, retain) NSString *userNameKey;
+@property (nonatomic, copy) NSString *vpnType;
 
 + (id)NEAlwaysOnVPNPayloadBaseDelegateWithConfigurationDict:(id)arg1;
 + (id)NEVPNPayloadBaseDelegateWithConfigurationDict:(id)arg1;

@@ -9,8 +9,8 @@
     bool _pending;
 }
 
-@property(assign,readwrite) bool hasPending;
-@property(assign,readwrite) bool pending;
+@property (nonatomic) bool hasPending;
+@property (nonatomic) bool pending;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

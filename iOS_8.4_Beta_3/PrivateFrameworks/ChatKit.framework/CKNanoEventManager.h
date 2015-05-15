@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readwrite) bool accessToEventsGranted;
-@property(assign,retain) EKEventStore * eventStore;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic) bool accessToEventsGranted;
+@property (nonatomic, retain) EKEventStore *eventStore;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 + (id)sharedInstance;
 

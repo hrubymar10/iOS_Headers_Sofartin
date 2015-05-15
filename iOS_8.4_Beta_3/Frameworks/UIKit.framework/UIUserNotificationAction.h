@@ -11,12 +11,12 @@
     NSString *_title;
 }
 
-@property(assign,readwrite) unsigned long long activationMode;
-@property(assign,readonly) NSString * activationModeString;
-@property(getter=isAuthenticationRequired,assign,readwrite) bool authenticationRequired;
-@property(getter=isDestructive,assign,readwrite) bool destructive;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * title;
+@property (nonatomic) unsigned long long activationMode;
+@property (nonatomic, readonly) NSString *activationModeString;
+@property (getter=isAuthenticationRequired, nonatomic) bool authenticationRequired;
+@property (getter=isDestructive, nonatomic) bool destructive;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSString *title;
 
 + (id)actionWithIdentifier:(id)arg1 title:(id)arg2 activationMode:(unsigned long long)arg3 isAuthenticationRequired:(bool)arg4;
 + (bool)supportsSecureCoding;

@@ -18,19 +18,19 @@
     NSString *_uRL;
 }
 
-@property(assign,readwrite) bool hasMaxScore;
-@property(assign,readwrite) bool hasNumberOfRatings;
-@property(assign,readwrite) bool hasNumberOfReviews;
-@property(assign,readonly) bool hasProvider;
-@property(assign,readwrite) bool hasScore;
-@property(assign,readonly) bool hasURL;
-@property(assign,readwrite) double maxScore;
-@property(assign,readwrite) int numberOfRatings;
-@property(assign,readwrite) int numberOfReviews;
-@property(assign,retain) NSString * provider;
-@property(assign,retain) NSMutableArray * reviews;
-@property(assign,readwrite) double score;
-@property(assign,retain) NSString * uRL;
+@property (nonatomic) bool hasMaxScore;
+@property (nonatomic) bool hasNumberOfRatings;
+@property (nonatomic) bool hasNumberOfReviews;
+@property (nonatomic, readonly) bool hasProvider;
+@property (nonatomic) bool hasScore;
+@property (nonatomic, readonly) bool hasURL;
+@property (nonatomic) double maxScore;
+@property (nonatomic) int numberOfRatings;
+@property (nonatomic) int numberOfReviews;
+@property (nonatomic, retain) NSString *provider;
+@property (nonatomic, retain) NSMutableArray *reviews;
+@property (nonatomic) double score;
+@property (nonatomic, retain) NSString *uRL;
 
 - (void)addReview:(id)arg1;
 - (void)clearReviews;

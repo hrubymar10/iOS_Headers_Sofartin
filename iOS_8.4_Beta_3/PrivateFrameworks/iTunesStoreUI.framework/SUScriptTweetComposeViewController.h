@@ -4,7 +4,7 @@
 
 @interface SUScriptTweetComposeViewController : SUScriptViewController
 
-@property(assign,readonly) id canSendTweet;
+@property (readonly) id canSendTweet;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

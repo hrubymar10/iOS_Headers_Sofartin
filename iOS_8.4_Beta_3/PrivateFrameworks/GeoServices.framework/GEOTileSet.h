@@ -19,21 +19,21 @@
     NSMutableArray *_validVersions;
 }
 
-@property(assign,retain) NSString * baseURL;
-@property(assign,readonly) bool hasBaseURL;
-@property(assign,readonly) bool hasLocalizationURL;
-@property(assign,readonly) bool hasMultiTileURL;
-@property(assign,readwrite) bool hasMultiTileURLUsesStatusCodes;
-@property(assign,readwrite) bool hasUpdateBehavior;
-@property(assign,retain) NSString * localizationURL;
-@property(assign,retain) NSString * multiTileURL;
-@property(assign,readwrite) bool multiTileURLUsesStatusCodes;
-@property(assign,readwrite) int scale;
-@property(assign,readwrite) int size;
-@property(assign,readwrite) int style;
-@property(assign,retain) NSMutableArray * supportedLanguages;
-@property(assign,readwrite) int updateBehavior;
-@property(assign,retain) NSMutableArray * validVersions;
+@property (nonatomic, retain) NSString *baseURL;
+@property (nonatomic, readonly) bool hasBaseURL;
+@property (nonatomic, readonly) bool hasLocalizationURL;
+@property (nonatomic, readonly) bool hasMultiTileURL;
+@property (nonatomic) bool hasMultiTileURLUsesStatusCodes;
+@property (nonatomic) bool hasUpdateBehavior;
+@property (nonatomic, retain) NSString *localizationURL;
+@property (nonatomic, retain) NSString *multiTileURL;
+@property (nonatomic) bool multiTileURLUsesStatusCodes;
+@property (nonatomic) int scale;
+@property (nonatomic) int size;
+@property (nonatomic) int style;
+@property (nonatomic, retain) NSMutableArray *supportedLanguages;
+@property (nonatomic) int updateBehavior;
+@property (nonatomic, retain) NSMutableArray *validVersions;
 
 - (void)addSupportedLanguage:(id)arg1;
 - (void)addValidVersion:(id)arg1;

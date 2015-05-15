@@ -10,9 +10,9 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSMutableArray * statRecords;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSMutableArray *statRecords;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)addStatRecord:(id)arg1;
 - (void)clearStatRecords;

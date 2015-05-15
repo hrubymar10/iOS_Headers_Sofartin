@@ -6,7 +6,7 @@
     unsigned long long _customProtocolID;
 }
 
-@property(assign,readonly) unsigned long long customProtocolID;
+@property (nonatomic, readonly) unsigned long long customProtocolID;
 
 + (bool)canInitWithRequest:(id)arg1;
 + (id)canonicalRequestForRequest:(id)arg1;

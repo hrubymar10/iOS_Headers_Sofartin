@@ -17,22 +17,22 @@
     bool _wasBrowsing;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MCNearbyServiceBrowserDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * formattedServiceType;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableDictionary * invites;
-@property(assign,readwrite) bool isBrowsing;
-@property(assign,readonly) MCPeerID * myPeerID;
-@property(assign,retain) NSMutableDictionary * netServices;
-@property(assign,retain) NSNetServiceBrowser * networkBrowser;
-@property(assign,readwrite) long long outgoingInviteID;
-@property(assign,retain) NSMutableDictionary * peers;
-@property(assign,copy) NSString * serviceType;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSObject<OS_dispatch_queue> * syncQueue;
-@property(assign,readwrite) bool wasBrowsing;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MCNearbyServiceBrowserDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *formattedServiceType;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableDictionary *invites;
+@property (nonatomic) bool isBrowsing;
+@property (nonatomic, readonly) MCPeerID *myPeerID;
+@property (nonatomic, retain) NSMutableDictionary *netServices;
+@property (nonatomic, retain) NSNetServiceBrowser *networkBrowser;
+@property (nonatomic) long long outgoingInviteID;
+@property (nonatomic, retain) NSMutableDictionary *peers;
+@property (nonatomic, copy) NSString *serviceType;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *syncQueue;
+@property (nonatomic) bool wasBrowsing;
 
 - (void)applicationDidEnterBackgroundNotification:(id)arg1;
 - (void)applicationWillEnterForegroundNotification:(id)arg1;

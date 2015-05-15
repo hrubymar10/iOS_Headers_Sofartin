@@ -7,8 +7,8 @@
     NSString *_callState;
 }
 
-@property(assign,copy) NSString * callID;
-@property(assign,copy) NSString * callState;
+@property (nonatomic, copy) NSString *callID;
+@property (nonatomic, copy) NSString *callState;
 
 + (id)callForCTCallRef:(struct __CTCall { }*)arg1;
 

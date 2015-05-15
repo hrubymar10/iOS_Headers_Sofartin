@@ -13,7 +13,7 @@
     WebBookmarkTitleWordTokenizer *_wordTokenizer;
 }
 
-@property(getter=isMerging,assign,readwrite) bool merging;
+@property (getter=isMerging, nonatomic) bool merging;
 
 + (id)_currentProcessContainerPath;
 + (void)_postBookmarksChangedSyncNotification;

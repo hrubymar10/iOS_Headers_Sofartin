@@ -8,19 +8,19 @@
     NSSet *mInfos;
 }
 
-@property(assign,readonly) int canvasSelectionKind;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long infoCount;
-@property(assign,readonly) NSSet * infos;
-@property(assign,readonly) bool isEmpty;
-@property(assign,readonly) NSSet * rawAdditionalInfos;
-@property(assign,readonly) NSSet * rawExcludedInfos;
-@property(assign,readonly) NSSet * rawInfos;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long unlockedInfoCount;
-@property(assign,readonly) NSSet * unlockedInfos;
+@property (nonatomic, readonly) int canvasSelectionKind;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long infoCount;
+@property (nonatomic, readonly) NSSet *infos;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, readonly) NSSet *rawAdditionalInfos;
+@property (nonatomic, readonly) NSSet *rawExcludedInfos;
+@property (nonatomic, readonly) NSSet *rawInfos;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long unlockedInfoCount;
+@property (nonatomic, readonly) NSSet *unlockedInfos;
 
 + (Class)archivedSelectionClass;
 + (id)canvasSelectionFromCanvasSelection:(id)arg1 withToggledInfo:(id)arg2;

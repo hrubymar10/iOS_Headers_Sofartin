@@ -9,7 +9,7 @@
     long long _style;
 }
 
-@property(assign,readwrite) bool shouldDrawUnderline;
+@property (nonatomic) bool shouldDrawUnderline;
 
 - (id)_label;
 - (void)_updateLabel;

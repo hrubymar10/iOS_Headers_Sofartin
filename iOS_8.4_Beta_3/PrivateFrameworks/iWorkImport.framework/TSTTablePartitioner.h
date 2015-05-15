@@ -15,12 +15,12 @@
     TSTTableInfo *mTableInfo;
 }
 
-@property(assign,copy) TSDInfoGeometry * infoGeometry;
-@property(assign,readonly) double inlineTableWidth;
-@property(assign,readonly) bool scaleIsValid;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } scaleToFit;
-@property(assign,readonly) TSTLayout * scaledLayout;
-@property(assign,readonly) TSTTableInfo * tableInfo;
+@property (nonatomic, copy) TSDInfoGeometry *infoGeometry;
+@property (nonatomic, readonly) double inlineTableWidth;
+@property (nonatomic, readonly) bool scaleIsValid;
+@property (nonatomic) struct CGSize { double x1; double x2; } scaleToFit;
+@property (nonatomic, readonly) TSTLayout *scaledLayout;
+@property (nonatomic, readonly) TSTTableInfo *tableInfo;
 
 - (void)dealloc;
 - (bool)didHint:(id)arg1 syncWithNextHint:(id)arg2 horizontally:(bool)arg3 delta:(int)arg4;

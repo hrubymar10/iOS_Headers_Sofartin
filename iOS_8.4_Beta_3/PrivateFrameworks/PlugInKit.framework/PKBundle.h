@@ -7,14 +7,14 @@
     NSString *_supportPath;
 }
 
-@property(assign,retain) NSObject<OS_xpc_object> * _bundle;
-@property(assign,readonly) NSString * bundleIdentifier;
-@property(assign,readonly) NSString * executablePath;
-@property(assign,readonly) NSDictionary * infoDictionary;
-@property(assign,readonly) NSString * path;
-@property(assign,readonly) NSString * plugInsPath;
-@property(assign,readonly) NSString * supportPath;
-@property(assign,readonly) NSURL * url;
+@property (retain) NSObject<OS_xpc_object> *_bundle;
+@property (readonly) NSString *bundleIdentifier;
+@property (readonly) NSString *executablePath;
+@property (readonly) NSDictionary *infoDictionary;
+@property (readonly) NSString *path;
+@property (readonly) NSString *plugInsPath;
+@property (readonly) NSString *supportPath;
+@property (readonly) NSURL *url;
 
 - (void).cxx_destruct;
 - (id)_bundle;

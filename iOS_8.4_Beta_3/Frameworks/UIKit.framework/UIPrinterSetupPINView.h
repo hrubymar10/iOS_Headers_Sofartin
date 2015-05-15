@@ -12,17 +12,17 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UILabel * enterLabel;
-@property(assign,readwrite) long long failedAttemptCount;
-@property(assign,retain) UIImageView * failedBackground;
-@property(assign,retain) UILabel * failedLabel;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIPasscodeField * passcodeField;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITextField * textEntryField;
-@property(assign,retain) UILabel * titleLabel;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UILabel *enterLabel;
+@property (nonatomic) long long failedAttemptCount;
+@property (nonatomic, retain) UIImageView *failedBackground;
+@property (nonatomic, retain) UILabel *failedLabel;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIPasscodeField *passcodeField;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UITextField *textEntryField;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 - (id)PIN;
 - (void)dealloc;

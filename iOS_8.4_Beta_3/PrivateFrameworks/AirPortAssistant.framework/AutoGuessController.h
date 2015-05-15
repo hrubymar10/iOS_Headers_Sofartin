@@ -27,20 +27,20 @@
     NSDictionary *unconfiguredDeviceThatIsBeingSetup;
 }
 
-@property(assign,retain) NSTimer * _browseReadyTimer;
-@property(assign,retain) NSMutableDictionary * _browsedBases;
-@property(assign,retain) NSArray * _wifiScanInfos;
-@property(assign,readwrite) int currentAutoGuessUISelector;
-@property(assign,retain) NSString * currentParamString;
-@property(assign,readwrite) <AutoGuessUIDelegate> * delegate;
-@property(assign,retain) NSDictionary * guessCompletionDict;
-@property(assign,readwrite) int lastAutoGuessUISelector;
-@property(assign,retain) NSDictionary * lastInstrumentation;
-@property(assign,retain) NSString * lastParamString;
-@property(assign,retain) NSDictionary * targetBrowseRecord;
-@property(assign,retain) NSString * targetMACAddress;
-@property(assign,retain) NSDictionary * targetScanRecord;
-@property(assign,retain) NSDictionary * unconfiguredDeviceThatIsBeingSetup;
+@property (retain) NSTimer *_browseReadyTimer;
+@property (retain) NSMutableDictionary *_browsedBases;
+@property (retain) NSArray *_wifiScanInfos;
+@property int currentAutoGuessUISelector;
+@property (retain) NSString *currentParamString;
+@property <AutoGuessUIDelegate> *delegate;
+@property (nonatomic, retain) NSDictionary *guessCompletionDict;
+@property int lastAutoGuessUISelector;
+@property (retain) NSDictionary *lastInstrumentation;
+@property (retain) NSString *lastParamString;
+@property (retain) NSDictionary *targetBrowseRecord;
+@property (retain) NSString *targetMACAddress;
+@property (retain) NSDictionary *targetScanRecord;
+@property (retain) NSDictionary *unconfiguredDeviceThatIsBeingSetup;
 
 + (id)fullAutoGuessDictionaryFromCompletionDict:(id)arg1;
 + (bool)isRestoreAnOptionForTheRecommendations:(id)arg1;

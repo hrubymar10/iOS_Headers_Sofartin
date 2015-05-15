@@ -13,7 +13,7 @@
     NSMutableArray *_topRightViewElements;
 }
 
-@property(assign,readonly) long long bottomLeftLayoutStyle;
+@property (nonatomic, readonly) long long bottomLeftLayoutStyle;
 
 - (void).cxx_destruct;
 - (struct CGSize { double x1; double x2; })_sizeForSegmentedControl:(id)arg1 width:(double)arg2;

@@ -19,14 +19,14 @@
     NSMutableArray *_thumbnailImages;
 }
 
-@property(assign,readonly) unsigned int bitmapInfo;
-@property(assign,readonly) int bitsPerComponent;
-@property(assign,readonly) int bytesPerPixel;
-@property(assign,readonly) int format;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } imageRect;
-@property(assign,retain) NSMutableDictionary * options;
-@property(assign,retain) NSData * optionsData;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) unsigned int bitmapInfo;
+@property (nonatomic, readonly) int bitsPerComponent;
+@property (nonatomic, readonly) int bytesPerPixel;
+@property (nonatomic, readonly) int format;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } imageRect;
+@property (nonatomic, readonly, retain) NSMutableDictionary *options;
+@property (nonatomic, readonly, retain) NSData *optionsData;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
 
 + (bool)saveBakedThumbnailsOfImages:(id)arg1 toFile:(id)arg2 format:(int)arg3 orientation:(int*)arg4 options:(id)arg5 delegate:(id)arg6;
 + (id)thumbnailsWithContentsOfFile:(id)arg1 format:(int)arg2;

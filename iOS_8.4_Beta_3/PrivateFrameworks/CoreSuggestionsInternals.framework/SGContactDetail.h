@@ -10,11 +10,11 @@
     NSString *_value;
 }
 
-@property(assign,readonly) NSString * context;
-@property(assign,readonly) SGDuplicateKey * duplicateKey;
-@property(assign,readonly) NSString * label;
-@property(assign,readonly) NSString * sourceKey;
-@property(assign,readonly) NSString * value;
+@property (nonatomic, readonly) NSString *context;
+@property (nonatomic, readonly) SGDuplicateKey *duplicateKey;
+@property (nonatomic, readonly) NSString *label;
+@property (nonatomic, readonly) NSString *sourceKey;
+@property (nonatomic, readonly) NSString *value;
 
 + (id)contactDetail:(id)arg1 label:(id)arg2 duplicateKey:(id)arg3 sourceKey:(id)arg4 context:(id)arg5;
 

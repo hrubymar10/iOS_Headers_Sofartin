@@ -13,13 +13,13 @@
     NSArray *mSelection;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) TSCH3DGeometry * geometry;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableArray * projectedPoints;
-@property(assign,readonly) bool shouldMerge;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) TSCH3DGeometry *geometry;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableArray *projectedPoints;
+@property (nonatomic, readonly) bool shouldMerge;
+@property (readonly) Class superclass;
 
 - (void)addLabelBoundsForMerging:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 - (void)clearParent;

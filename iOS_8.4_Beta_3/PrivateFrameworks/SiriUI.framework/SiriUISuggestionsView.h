@@ -25,13 +25,13 @@
     NSTimer *_updateSuggestionsTimer;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } contentOffset;
-@property(assign,readwrite) <SiriUISuggestionsViewDelegate> * delegate;
-@property(assign,copy) NSString * headerText;
-@property(assign,copy) NSString * largeSubheaderText;
-@property(assign,readwrite) long long orientation;
-@property(assign,copy) NSString * subheaderText;
-@property(assign,copy) UIColor * textColor;
+@property (nonatomic) struct CGPoint { double x1; double x2; } contentOffset;
+@property (nonatomic) <SiriUISuggestionsViewDelegate> *delegate;
+@property (nonatomic, copy) NSString *headerText;
+@property (nonatomic, copy) NSString *largeSubheaderText;
+@property (nonatomic) long long orientation;
+@property (nonatomic, copy) NSString *subheaderText;
+@property (nonatomic, copy) UIColor *textColor;
 
 - (void).cxx_destruct;
 - (void)_animateHeaderIn;

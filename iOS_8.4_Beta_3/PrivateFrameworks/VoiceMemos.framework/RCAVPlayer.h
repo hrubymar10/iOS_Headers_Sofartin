@@ -10,9 +10,9 @@
     bool _valid;
 }
 
-@property(assign,readwrite) <RCAVPlayerDelegate> * delegate;
-@property(assign,readonly) bool isReadyToPlay;
-@property(assign,readwrite) double updateRate;
+@property (nonatomic) <RCAVPlayerDelegate> *delegate;
+@property (nonatomic, readonly) bool isReadyToPlay;
+@property (nonatomic) double updateRate;
 
 - (void).cxx_destruct;
 - (void)_AVAudioSessionMediaServicesWereLostNotification:(id)arg1;

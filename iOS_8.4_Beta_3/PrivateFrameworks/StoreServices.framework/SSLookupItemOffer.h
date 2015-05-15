@@ -6,11 +6,11 @@
     NSDictionary *_dictionary;
 }
 
-@property(assign,readonly) NSString * buyParameters;
-@property(assign,readonly) NSString * formattedPrice;
-@property(assign,readonly) NSDictionary * lookupDictionary;
-@property(assign,readonly) NSString * offerType;
-@property(assign,readonly) NSNumber * price;
+@property (nonatomic, readonly) NSString *buyParameters;
+@property (nonatomic, readonly) NSString *formattedPrice;
+@property (nonatomic, readonly) NSDictionary *lookupDictionary;
+@property (nonatomic, readonly) NSString *offerType;
+@property (nonatomic, readonly) NSNumber *price;
 
 - (id)actionTextForType:(id)arg1;
 - (id)buyParameters;

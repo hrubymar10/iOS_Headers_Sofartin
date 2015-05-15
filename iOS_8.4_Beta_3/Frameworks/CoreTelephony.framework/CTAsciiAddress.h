@@ -6,7 +6,7 @@
     NSString *_address;
 }
 
-@property(assign,readonly) NSString * address;
+@property (readonly) NSString *address;
 
 + (id)asciiAddressWithString:(id)arg1;
 

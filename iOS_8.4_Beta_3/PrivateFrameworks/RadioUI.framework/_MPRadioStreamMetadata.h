@@ -12,13 +12,13 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSString * album;
-@property(assign,copy) NSString * albumBuyButtonText;
-@property(assign,readwrite) long long albumBuyButtonType;
-@property(assign,copy) NSString * artist;
-@property(assign,retain) RadioArtworkCollection * artworkCollection;
-@property(getter=isExplicit,assign,retain) NSNumber * explicit;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *album;
+@property (nonatomic, copy) NSString *albumBuyButtonText;
+@property (nonatomic) long long albumBuyButtonType;
+@property (nonatomic, copy) NSString *artist;
+@property (nonatomic, retain) RadioArtworkCollection *artworkCollection;
+@property (getter=isExplicit, nonatomic, retain) NSNumber *explicit;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)album;

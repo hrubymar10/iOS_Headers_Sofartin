@@ -14,18 +14,18 @@
     WBSParsecSearchSession *_parsecSearchSession;
 }
 
-@property(assign,readonly) NSArray * additionalMapItems;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) WBSParsecSearchMapsResultExtraCompletionItem * extraCompletionItem;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) WBSParsecSearchResult * hiddenParsecResult;
-@property(assign,readonly) MKMapItem * mapItem;
-@property(assign,readonly) NSData * mapsData;
-@property(assign,readonly) NSString * mapsResultType;
-@property(assign,readonly) NSURL * moreURL;
-@property(assign,retain) WBSParsecSearchSession * parsecSearchSession;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *additionalMapItems;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) WBSParsecSearchMapsResultExtraCompletionItem *extraCompletionItem;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) WBSParsecSearchResult *hiddenParsecResult;
+@property (nonatomic, readonly) MKMapItem *mapItem;
+@property (nonatomic, readonly) NSData *mapsData;
+@property (nonatomic, readonly) NSString *mapsResultType;
+@property (nonatomic, readonly) NSURL *moreURL;
+@property (nonatomic, retain) WBSParsecSearchSession *parsecSearchSession;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)additionalMapItems;

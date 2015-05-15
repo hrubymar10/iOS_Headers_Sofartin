@@ -6,11 +6,11 @@
     AVCaptureInputPortInternal *_internal;
 }
 
-@property(assign,readonly) struct OpaqueCMClock { }* clock;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) struct opaqueCMFormatDescription { }* formatDescription;
-@property(assign,readonly) AVCaptureInput * input;
-@property(assign,readonly) NSString * mediaType;
+@property (nonatomic, readonly) struct OpaqueCMClock { }*clock;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic, readonly) struct opaqueCMFormatDescription { }*formatDescription;
+@property (nonatomic, readonly) AVCaptureInput *input;
+@property (nonatomic, readonly) NSString *mediaType;
 
 + (id)alloc;
 + (bool)automaticallyNotifiesObserversOfClock;

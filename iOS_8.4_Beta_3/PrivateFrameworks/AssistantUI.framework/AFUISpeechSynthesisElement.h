@@ -16,17 +16,17 @@
     NSString *_text;
 }
 
-@property(assign,readonly) NSString * animationIdentifier;
-@property(getter=_completion,assign,readonly) id completion;
-@property(assign,readwrite) <AFUISpeechSynthesisElementDelegate> * delegate;
-@property(setter=_setDurationHasElapsed:,assign,readwrite) bool durationHasElapsed;
-@property(getter=isEligibleForSynthesis,assign,readwrite) bool eligibleForSynthesis;
-@property(assign,readwrite) bool isPhonetic;
-@property(setter=_setPreparationBlockCompleted:,assign,readwrite) bool preprationBlockCompleted;
-@property(getter=isProvisional,assign,readonly) bool provisional;
-@property(assign,retain) VSSpeechRequest * speechRequest;
-@property(assign,readwrite) long long synthesisResult;
-@property(assign,copy) NSString * text;
+@property (nonatomic, readonly) NSString *animationIdentifier;
+@property (getter=_completion, nonatomic, readonly) id completion;
+@property (nonatomic) <AFUISpeechSynthesisElementDelegate> *delegate;
+@property (setter=_setDurationHasElapsed:) bool durationHasElapsed;
+@property (getter=isEligibleForSynthesis, nonatomic) bool eligibleForSynthesis;
+@property (nonatomic) bool isPhonetic;
+@property (setter=_setPreparationBlockCompleted:) bool preprationBlockCompleted;
+@property (getter=isProvisional, nonatomic, readonly) bool provisional;
+@property (nonatomic, retain) VSSpeechRequest *speechRequest;
+@property (nonatomic) long long synthesisResult;
+@property (nonatomic, copy) NSString *text;
 
 - (void).cxx_destruct;
 - (id)_completion;

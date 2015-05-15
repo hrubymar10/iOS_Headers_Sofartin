@@ -10,12 +10,12 @@
     NSLocale *_userLocale;
 }
 
-@property(assign,retain) NSCharacterSet * commonCharacters;
-@property(assign,readwrite) AXDialectMap * dialectForCurrentLocale;
-@property(assign,readwrite) AXDialectMap * dialectForSystemLanguage;
-@property(assign,retain) NSArray * langMaps;
-@property(assign,readonly) NSString * systemLanguageID;
-@property(assign,copy) NSLocale * userLocale;
+@property (nonatomic, retain) NSCharacterSet *commonCharacters;
+@property (nonatomic) AXDialectMap *dialectForCurrentLocale;
+@property (nonatomic) AXDialectMap *dialectForSystemLanguage;
+@property (nonatomic, retain) NSArray *langMaps;
+@property (nonatomic, readonly) NSString *systemLanguageID;
+@property (nonatomic, copy) NSLocale *userLocale;
 
 + (id)commonPunctuationCharacters;
 + (id)dialectForAlternativeVoiceIdentifier:(id)arg1;

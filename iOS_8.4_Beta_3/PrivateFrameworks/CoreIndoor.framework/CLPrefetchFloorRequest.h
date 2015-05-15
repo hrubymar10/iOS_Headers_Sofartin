@@ -8,9 +8,9 @@
     NSString *_venueUuid;
 }
 
-@property(assign,retain) NSString * floorUuid;
-@property(assign,retain) NSDate * relevancy;
-@property(assign,retain) NSString * venueUuid;
+@property (nonatomic, retain) NSString *floorUuid;
+@property (nonatomic, retain) NSDate *relevancy;
+@property (nonatomic, retain) NSString *venueUuid;
 
 + (bool)supportsSecureCoding;
 

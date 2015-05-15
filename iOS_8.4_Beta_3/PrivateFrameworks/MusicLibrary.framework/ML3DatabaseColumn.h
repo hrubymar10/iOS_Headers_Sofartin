@@ -9,10 +9,10 @@
     NSString *_name;
 }
 
-@property(assign,readonly) unsigned long long columnConstraints;
-@property(assign,readonly) unsigned long long datatype;
-@property(assign,readonly) id defaultValue;
-@property(assign,readonly) NSString * name;
+@property (nonatomic, readonly) unsigned long long columnConstraints;
+@property (nonatomic, readonly) unsigned long long datatype;
+@property (nonatomic, readonly) id defaultValue;
+@property (nonatomic, readonly) NSString *name;
 
 + (id)columnWithName:(id)arg1 datatype:(unsigned long long)arg2 constraints:(unsigned long long)arg3 defaultValue:(id)arg4;
 

@@ -12,13 +12,13 @@
     NSString *_syncObject;
 }
 
-@property(assign,retain) NSMutableArray * boundObjects;
-@property(assign,readwrite) struct sqlite3 { }* dbConnection;
-@property(assign,readonly) bool isDelete;
-@property(assign,readonly) bool isInsert;
-@property(assign,retain) NSString * sqlQuery;
-@property(assign,readwrite) struct sqlite3_stmt { }* statement;
-@property(assign,retain) NSString * syncObject;
+@property (retain) NSMutableArray *boundObjects;
+@property struct sqlite3 { }*dbConnection;
+@property (readonly) bool isDelete;
+@property (readonly) bool isInsert;
+@property (retain) NSString *sqlQuery;
+@property struct sqlite3_stmt { }*statement;
+@property (retain) NSString *syncObject;
 
 - (void).cxx_destruct;
 - (int)bindValue:(id)arg1 withFormater:(short)arg2 atPosition:(int)arg3;

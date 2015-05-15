@@ -29,16 +29,16 @@
     bool _wrapped;
 }
 
-@property(assign,copy) NSString * alignmentMode;
-@property(assign,copy) UIBezierPath * chamferProfile;
-@property(assign,readwrite) double chamferRadius;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } containerFrame;
-@property(assign,readwrite) double extrusionDepth;
-@property(assign,readwrite) double flatness;
-@property(assign,retain) UIFont * font;
-@property(assign,copy) id string;
-@property(assign,copy) NSString * truncationMode;
-@property(getter=isWrapped,assign,readwrite) bool wrapped;
+@property (nonatomic, copy) NSString *alignmentMode;
+@property (nonatomic, copy) UIBezierPath *chamferProfile;
+@property (nonatomic) double chamferRadius;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } containerFrame;
+@property (nonatomic) double extrusionDepth;
+@property (nonatomic) double flatness;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic, copy) id string;
+@property (nonatomic, copy) NSString *truncationMode;
+@property (getter=isWrapped, nonatomic) bool wrapped;
 
 + (id)SCNJSExportProtocol;
 + (bool)supportsSecureCoding;

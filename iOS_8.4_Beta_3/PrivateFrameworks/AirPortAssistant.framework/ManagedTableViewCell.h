@@ -22,12 +22,12 @@
     TableViewManager *_parentTableManager;
 }
 
-@property(assign,retain) NSMutableDictionary * cellDict;
-@property(assign,readonly) double computedRightmostEditTextInset;
-@property(assign,retain) NSIndexPath * currentIndexPath;
-@property(assign,readwrite) double forcedRightmostEditTextInset;
-@property(assign,readonly) double neededContentHeight;
-@property(assign,readwrite) TableViewManager * parentTableManager;
+@property (nonatomic, retain) NSMutableDictionary *cellDict;
+@property (nonatomic, readonly) double computedRightmostEditTextInset;
+@property (nonatomic, retain) NSIndexPath *currentIndexPath;
+@property (nonatomic) double forcedRightmostEditTextInset;
+@property (nonatomic, readonly) double neededContentHeight;
+@property (nonatomic) TableViewManager *parentTableManager;
 
 - (id)accessibilityValue;
 - (double)calculateFrameSizeForView:(id)arg1 forItem:(id)arg2 atItemIndex:(unsigned long long)arg3 withRemainingContentWidth:(double)arg4;

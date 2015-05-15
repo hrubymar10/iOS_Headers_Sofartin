@@ -4,7 +4,7 @@
 
 @interface SAAppsCheckRestriction : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * launchId;
+@property (nonatomic, copy) NSString *launchId;
 
 + (id)checkRestriction;
 + (id)checkRestrictionWithDictionary:(id)arg1 context:(id)arg2;

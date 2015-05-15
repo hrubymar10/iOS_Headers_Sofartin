@@ -12,13 +12,13 @@
     NSString *_title;
 }
 
-@property(setter=_setAcceptButton:,assign,retain) UIButton * _acceptButon;
-@property(setter=_setBottomSeparatorView:,assign,retain) UIView * _bottomSeparatorView;
-@property(setter=_setDeclineButton:,assign,retain) UIButton * _declineButton;
-@property(setter=_setSubtitleLabel:,assign,retain) UILabel * _subtitleLabel;
-@property(setter=_setTitleLabel:,assign,retain) UILabel * _titleLabel;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
+@property (setter=_setAcceptButton:, nonatomic, retain) UIButton *_acceptButon;
+@property (setter=_setBottomSeparatorView:, nonatomic, retain) UIView *_bottomSeparatorView;
+@property (setter=_setDeclineButton:, nonatomic, retain) UIButton *_declineButton;
+@property (setter=_setSubtitleLabel:, nonatomic, retain) UILabel *_subtitleLabel;
+@property (setter=_setTitleLabel:, nonatomic, retain) UILabel *_titleLabel;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)_acceptButon;

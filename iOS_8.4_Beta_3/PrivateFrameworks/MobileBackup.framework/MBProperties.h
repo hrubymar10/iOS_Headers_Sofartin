@@ -8,24 +8,24 @@
     bool _protected;
 }
 
-@property(assign,retain) NSString * activeAppleID;
-@property(assign,readonly) NSDictionary * appleIDs;
-@property(assign,readonly) NSString * buildVersion;
-@property(assign,readonly) NSDictionary * containers;
-@property(assign,retain) NSDate * date;
-@property(assign,readonly) NSString * deviceID;
-@property(assign,readonly) NSString * deviceName;
-@property(getter=isEncrypted,assign,readwrite) bool encrypted;
-@property(assign,readonly) bool hasCorruptSQLiteDBs;
-@property(assign,retain) NSData * keybagData;
-@property(assign,retain) NSDictionary * lockdownKeys;
-@property(getter=wasPasscodeSet,assign,readwrite) bool passcodeSet;
-@property(assign,readonly) NSString * productType;
-@property(assign,readonly) id propertyList;
-@property(getter=isProtected,assign,readwrite) bool protected;
-@property(assign,readonly) NSString * serialNumber;
-@property(assign,readwrite) double systemDomainsVersion;
-@property(assign,readwrite) double version;
+@property (nonatomic, retain) NSString *activeAppleID;
+@property (nonatomic, readonly) NSDictionary *appleIDs;
+@property (nonatomic, readonly) NSString *buildVersion;
+@property (nonatomic, readonly) NSDictionary *containers;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, readonly) NSString *deviceID;
+@property (nonatomic, readonly) NSString *deviceName;
+@property (getter=isEncrypted, nonatomic) bool encrypted;
+@property (nonatomic, readonly) bool hasCorruptSQLiteDBs;
+@property (nonatomic, retain) NSData *keybagData;
+@property (nonatomic, retain) NSDictionary *lockdownKeys;
+@property (getter=wasPasscodeSet, nonatomic) bool passcodeSet;
+@property (nonatomic, readonly) NSString *productType;
+@property (nonatomic, readonly) id propertyList;
+@property (getter=isProtected, nonatomic) bool protected;
+@property (nonatomic, readonly) NSString *serialNumber;
+@property (nonatomic) double systemDomainsVersion;
+@property (nonatomic) double version;
 
 + (id)properties;
 + (id)propertiesWithFile:(id)arg1 error:(id*)arg2;

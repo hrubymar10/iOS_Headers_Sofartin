@@ -6,7 +6,7 @@
     NSString *_displayString;
 }
 
-@property(assign,retain) NSString * displayString;
+@property (nonatomic, retain) NSString *displayString;
 
 - (id)displayString;
 - (void)setDisplayString:(id)arg1;

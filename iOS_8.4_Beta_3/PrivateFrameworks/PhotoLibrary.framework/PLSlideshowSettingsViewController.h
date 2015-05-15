@@ -20,14 +20,14 @@
     PLSlideshowTransitionsViewController *_transitionsController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PLSlideshowSettingsViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * selectedTransition;
-@property(assign,retain) MPMediaItemCollection * slideshowMusicCollection;
-@property(assign,readwrite) bool slideshowShouldPlayMusic;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PLSlideshowSettingsViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *selectedTransition;
+@property (nonatomic, retain) MPMediaItemCollection *slideshowMusicCollection;
+@property (nonatomic) bool slideshowShouldPlayMusic;
+@property (readonly) Class superclass;
 
 + (id)AppleTVPushTransitions;
 + (id)TVOutTransitions;

@@ -10,7 +10,7 @@
     unsigned long long _serverMessageCount;
 }
 
-@property(assign,retain) NSDate * earliestReceivedDate;
+@property (nonatomic, retain) NSDate *earliestReceivedDate;
 
 + (bool)createEmptyStoreForPath:(id)arg1;
 + (unsigned int)defaultLoadOptions;

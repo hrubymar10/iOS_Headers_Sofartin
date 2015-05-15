@@ -4,12 +4,12 @@
 
 @interface BRCAliasItem : BRCLocalItem
 
-@property(assign,readonly) BRCAliasItem * asAlias;
-@property(assign,readonly) BRCDirectoryItem * asDirectory;
-@property(assign,readonly) BRCDocumentItem * asDocument;
-@property(assign,readonly) NSString * targetContainerID;
-@property(assign,readonly) BRCItemID * targetItemID;
-@property(assign,readonly) BRCLocalContainer * targetLocalContainer;
+@property (nonatomic, readonly) BRCAliasItem *asAlias;
+@property (nonatomic, readonly) BRCDirectoryItem *asDirectory;
+@property (nonatomic, readonly) BRCDocumentItem *asDocument;
+@property (nonatomic, readonly) NSString *targetContainerID;
+@property (nonatomic, readonly) BRCItemID *targetItemID;
+@property (nonatomic, readonly) BRCLocalContainer *targetLocalContainer;
 
 - (bool)_insertInDB:(id)arg1 dbRowID:(unsigned long long)arg2;
 - (bool)_updateInDB:(id)arg1 diffs:(unsigned long long)arg2;

@@ -12,9 +12,9 @@
     } _windowSize;
 }
 
-@property(assign,retain) UIView * containingView;
-@property(assign,retain) NSMutableArray * mapEntries;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } windowSize;
+@property (nonatomic, retain) UIView *containingView;
+@property (nonatomic, retain) NSMutableArray *mapEntries;
+@property (nonatomic) struct CGSize { double x1; double x2; } windowSize;
 
 + (bool)supportsSecureCoding;
 

@@ -8,10 +8,10 @@
     SKUIViewElementLayoutContext *_layoutContext;
 }
 
-@property(assign,readonly) SKUICardViewElement * cardViewElement;
-@property(assign,readonly) double horizontalContentInset;
-@property(assign,readonly) SKUIViewElementLayoutContext * layoutContext;
-@property(assign,readonly) long long layoutStyle;
+@property (nonatomic, readonly) SKUICardViewElement *cardViewElement;
+@property (nonatomic, readonly) double horizontalContentInset;
+@property (nonatomic, readonly) SKUIViewElementLayoutContext *layoutContext;
+@property (nonatomic, readonly) long long layoutStyle;
 
 + (bool)allowsViewElement:(id)arg1;
 + (id)layoutWithCardViewElement:(id)arg1 context:(id)arg2;

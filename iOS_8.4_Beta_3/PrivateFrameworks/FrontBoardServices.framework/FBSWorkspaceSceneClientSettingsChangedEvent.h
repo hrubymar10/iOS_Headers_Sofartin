@@ -7,8 +7,8 @@
     FBSSceneTransitionContext *_transition;
 }
 
-@property(assign,retain) FBSSceneClientSettingsDiff * clientSettingsDiff;
-@property(assign,retain) FBSSceneTransitionContext * transitionContext;
+@property (nonatomic, retain) FBSSceneClientSettingsDiff *clientSettingsDiff;
+@property (nonatomic, retain) FBSSceneTransitionContext *transitionContext;
 
 - (id)clientSettingsDiff;
 - (void)dealloc;

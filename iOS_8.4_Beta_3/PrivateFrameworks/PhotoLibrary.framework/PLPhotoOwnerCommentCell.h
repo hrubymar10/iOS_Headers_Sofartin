@@ -8,9 +8,9 @@
     UIView *_styledSeparatorView;
 }
 
-@property(assign,retain) UILabel * ownerContentLabel;
-@property(assign,copy) NSAttributedString * ownerString;
-@property(assign,retain) UIView * styledSeparatorView;
+@property (nonatomic, readonly, retain) UILabel *ownerContentLabel;
+@property (nonatomic, copy) NSAttributedString *ownerString;
+@property (nonatomic, readonly, retain) UIView *styledSeparatorView;
 
 + (id)_ownerStringForAsset:(id)arg1;
 + (double)heightOfOwnerCellWithAsset:(id)arg1 forWidth:(double)arg2 forInterfaceOrientation:(long long)arg3;

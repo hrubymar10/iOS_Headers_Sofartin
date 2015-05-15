@@ -4,16 +4,16 @@
 
 @interface SASportsLeague : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * diplayedText;
-@property(assign,copy) NSNumber * displayTeamLocationOverName;
-@property(assign,copy) NSString * displayedText;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) SASportsSeason * season;
-@property(assign,copy) NSString * sport;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *diplayedText;
+@property (nonatomic, copy) NSNumber *displayTeamLocationOverName;
+@property (nonatomic, copy) NSString *displayedText;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, retain) SASportsSeason *season;
+@property (nonatomic, copy) NSString *sport;
+@property (readonly) Class superclass;
 
 + (id)league;
 + (id)leagueWithDictionary:(id)arg1 context:(id)arg2;

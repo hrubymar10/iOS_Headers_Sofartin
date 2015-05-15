@@ -8,9 +8,9 @@
     GKPlayerInternal *_player;
 }
 
-@property(assign,retain) NSDate * date;
-@property(assign,retain) GKGameRecordInternal * game;
-@property(assign,retain) GKPlayerInternal * player;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, retain) GKGameRecordInternal *game;
+@property (nonatomic, retain) GKPlayerInternal *player;
 
 + (id)secureCodedPropertyKeys;
 

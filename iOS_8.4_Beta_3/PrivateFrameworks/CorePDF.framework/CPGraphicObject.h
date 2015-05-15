@@ -21,8 +21,8 @@
     int zoneGraphicType;
 }
 
-@property(assign,retain) CPParagraph * anchoringParagraph;
-@property(assign,readwrite) unsigned int clipIndex;
+@property (nonatomic, retain) CPParagraph *anchoringParagraph;
+@property (nonatomic) unsigned int clipIndex;
 
 - (id)anchoringParagraph;
 - (id)anchoringTextLine;

@@ -4,7 +4,7 @@
 
 @interface SAAnswerSearchResults : SADomainSearchResults
 
-@property(assign,copy) NSArray * results;
+@property (nonatomic, copy) NSArray *results;
 
 + (id)searchResults;
 + (id)searchResultsWithDictionary:(id)arg1 context:(id)arg2;

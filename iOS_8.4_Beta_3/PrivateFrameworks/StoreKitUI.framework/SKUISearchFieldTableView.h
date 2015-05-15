@@ -12,9 +12,9 @@
     bool _trendingSearchesVisible;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readwrite) <SKUITrendingSearchPageViewDelegate> * trendingSearchDelegate;
-@property(assign,readwrite) bool trendingSearchesVisible;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic) <SKUITrendingSearchPageViewDelegate> *trendingSearchDelegate;
+@property (nonatomic) bool trendingSearchesVisible;
 
 - (void).cxx_destruct;
 - (void)_reloadData;

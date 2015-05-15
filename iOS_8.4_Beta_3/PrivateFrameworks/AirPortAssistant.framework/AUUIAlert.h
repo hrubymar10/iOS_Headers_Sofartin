@@ -27,26 +27,26 @@
     id viewController;
 }
 
-@property(assign,retain) id alert;
-@property(assign,retain) UIAlertAction * alternateAction;
-@property(assign,retain) NSString * alternateButtonTitle;
-@property(assign,retain) UIAlertAction * cancelAction;
-@property(assign,retain) NSString * cancelButtonTitle;
-@property(assign,retain) id context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <AUUIAlertDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIAlertAction * destructiveAction;
-@property(assign,retain) NSString * destructiveButtonTitle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * message;
-@property(assign,retain) UIAlertAction * okAction;
-@property(assign,retain) NSString * okButtonTitle;
-@property(assign,readwrite) bool stackButtons;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long tag;
-@property(assign,retain) NSString * title;
-@property(assign,retain) id viewController;
+@property (nonatomic, retain) id alert;
+@property (nonatomic, retain) UIAlertAction *alternateAction;
+@property (nonatomic, retain) NSString *alternateButtonTitle;
+@property (nonatomic, retain) UIAlertAction *cancelAction;
+@property (nonatomic, retain) NSString *cancelButtonTitle;
+@property (nonatomic, retain) id context;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <AUUIAlertDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIAlertAction *destructiveAction;
+@property (nonatomic, retain) NSString *destructiveButtonTitle;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic, retain) UIAlertAction *okAction;
+@property (nonatomic, retain) NSString *okButtonTitle;
+@property (nonatomic) bool stackButtons;
+@property (readonly) Class superclass;
+@property (nonatomic) long long tag;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) id viewController;
 
 - (id)alert;
 - (void)alertView:(id)arg1 didDismissWithButtonIndex:(long long)arg2;

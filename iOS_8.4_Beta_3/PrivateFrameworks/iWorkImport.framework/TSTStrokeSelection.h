@@ -6,7 +6,7 @@
     unsigned int _mask;
 }
 
-@property(assign,readonly) unsigned int mask;
+@property (nonatomic, readonly) unsigned int mask;
 
 + (Class)archivedSelectionClass;
 + (id)strokeSelectionWithMask:(unsigned int)arg1;

@@ -6,7 +6,7 @@
     PKPassLibrary *_passLibrary;
 }
 
-@property(assign,readonly) NSArray * passes;
+@property (readonly) NSArray *passes;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

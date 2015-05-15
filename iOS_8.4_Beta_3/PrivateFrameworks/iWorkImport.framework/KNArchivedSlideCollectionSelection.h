@@ -6,12 +6,12 @@
     KNSlideCollectionSelection *mSelection;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) TSKSelection * selection;
-@property(assign,readonly) KNSlideCollectionSelection * slideCollectionSelection;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) TSKSelection *selection;
+@property (nonatomic, readonly) KNSlideCollectionSelection *slideCollectionSelection;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (id)initFromUnarchiver:(id)arg1;

@@ -9,11 +9,11 @@
     bool _unavailable;
 }
 
-@property(assign,readonly) UIImageView * _glyphView;
-@property(assign,readonly) UIImageView * _warningIndicatorView;
-@property(assign,readwrite) bool allowsAutomaticFlash;
-@property(assign,readwrite) long long flashMode;
-@property(getter=isUnavailable,assign,readwrite) bool unavailable;
+@property (nonatomic, readonly) UIImageView *_glyphView;
+@property (nonatomic, readonly) UIImageView *_warningIndicatorView;
+@property (nonatomic) bool allowsAutomaticFlash;
+@property (nonatomic) long long flashMode;
+@property (getter=isUnavailable, nonatomic) bool unavailable;
 
 - (void).cxx_destruct;
 - (void)_commonCAMFlashButtonInitialization;

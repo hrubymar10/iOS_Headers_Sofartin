@@ -7,8 +7,8 @@
     long long _videoCount;
 }
 
-@property(assign,readwrite) long long imageCount;
-@property(assign,readwrite) long long videoCount;
+@property (nonatomic) long long imageCount;
+@property (nonatomic) long long videoCount;
 
 - (id)_activityImage;
 - (id)activityTitle;

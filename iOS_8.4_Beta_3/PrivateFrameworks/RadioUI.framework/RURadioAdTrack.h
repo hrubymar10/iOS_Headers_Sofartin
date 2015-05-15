@@ -9,22 +9,22 @@
     NSDictionary *_loudnessInfo;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) long long actionType;
-@property(assign,readonly) long long adType;
-@property(assign,readonly) ADBannerView * adView;
-@property(assign,readonly) NSURL * artworkURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasAction;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSDictionary * loudnessInfo;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * uniqueIdentifier;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) long long actionType;
+@property (nonatomic, readonly) long long adType;
+@property (nonatomic, readonly) ADBannerView *adView;
+@property (nonatomic, readonly) NSURL *artworkURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasAction;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) NSDictionary *loudnessInfo;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, copy) NSString *uniqueIdentifier;
 
 - (void).cxx_destruct;
 - (id)URL;

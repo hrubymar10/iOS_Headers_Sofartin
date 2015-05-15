@@ -6,8 +6,8 @@
     UIImageView *_newlyAddedView;
 }
 
-@property(assign,retain) UIImageView * newlyAddedView;
-@property(assign,readwrite) bool showNewlyAdded;
+@property (nonatomic, retain) UIImageView *newlyAddedView;
+@property (nonatomic) bool showNewlyAdded;
 
 - (id)_dotImage;
 - (void)dealloc;

@@ -10,15 +10,15 @@
     CAMediaTimingFunction *_timingFunction;
 }
 
-@property(assign,copy) NSArray * allowedKeyPaths;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * fillMode;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isRemovedOnCompletion,assign,readwrite) bool removedOnCompletion;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double timeOffset;
-@property(assign,retain) CAMediaTimingFunction * timingFunction;
+@property (nonatomic, copy) NSArray *allowedKeyPaths;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *fillMode;
+@property (readonly) unsigned long long hash;
+@property (getter=isRemovedOnCompletion, nonatomic) bool removedOnCompletion;
+@property (readonly) Class superclass;
+@property (nonatomic) double timeOffset;
+@property (nonatomic, retain) CAMediaTimingFunction *timingFunction;
 
 - (void).cxx_destruct;
 - (id)_basicAnimationForView:(id)arg1 withKeyPath:(id)arg2;

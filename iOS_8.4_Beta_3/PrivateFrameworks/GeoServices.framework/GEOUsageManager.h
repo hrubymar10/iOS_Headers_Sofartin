@@ -14,12 +14,12 @@
     NSTimer *_updateTimer;
 }
 
-@property(assign,copy) id backgroundTaskEnd;
-@property(assign,copy) id backgroundTaskStart;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id backgroundTaskEnd;
+@property (nonatomic, copy) id backgroundTaskStart;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)sharedManager;
 

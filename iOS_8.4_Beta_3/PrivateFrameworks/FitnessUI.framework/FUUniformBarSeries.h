@@ -11,12 +11,12 @@
     double _roundedCornerRadius;
 }
 
-@property(assign,readwrite) struct CGGradient { }* barGradient;
-@property(assign,readwrite) double barHeight;
-@property(assign,readwrite) double barWidth;
-@property(assign,readwrite) NSDate * minDate;
-@property(assign,retain) NSArray * plotPoints;
-@property(assign,readwrite) double roundedCornerRadius;
+@property (nonatomic) struct CGGradient { }*barGradient;
+@property (nonatomic) double barHeight;
+@property (nonatomic) double barWidth;
+@property (nonatomic) NSDate *minDate;
+@property (nonatomic, retain) NSArray *plotPoints;
+@property (nonatomic) double roundedCornerRadius;
 
 - (void).cxx_destruct;
 - (double)_getXValueForPointFromChartPoint:(id)arg1;

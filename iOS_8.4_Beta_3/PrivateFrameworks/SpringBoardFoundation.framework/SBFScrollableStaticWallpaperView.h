@@ -16,11 +16,11 @@
     SBFSubject *_scrollViewObserver;
 }
 
-@property(assign,readonly) UIColor * averageColor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly) UIColor *averageColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (bool)_shouldScaleForParallax;
 

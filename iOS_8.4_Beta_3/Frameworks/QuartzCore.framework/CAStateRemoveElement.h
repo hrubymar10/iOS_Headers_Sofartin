@@ -7,8 +7,8 @@
     id _object;
 }
 
-@property(assign,copy) NSString * keyPath;
-@property(assign,retain) id object;
+@property (nonatomic, copy) NSString *keyPath;
+@property (nonatomic, retain) id object;
 
 - (void)CAMLParser:(id)arg1 setValue:(id)arg2 forKey:(id)arg3;
 - (id)CAMLTypeForKey:(id)arg1;

@@ -7,9 +7,9 @@
     SKUIViewElement *_viewElement;
 }
 
-@property(assign,readonly) bool allowsSelection;
-@property(assign,readwrite) SKUISettingsGroupDescription * parent;
-@property(assign,retain) SKUIViewElement * viewElement;
+@property (nonatomic, readonly) bool allowsSelection;
+@property (nonatomic) SKUISettingsGroupDescription *parent;
+@property (nonatomic, retain) SKUIViewElement *viewElement;
 
 + (Class)_viewClassForSettingDescription:(id)arg1;
 + (bool)allowsEdit;

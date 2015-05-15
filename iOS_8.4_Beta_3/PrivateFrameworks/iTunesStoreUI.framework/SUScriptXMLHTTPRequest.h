@@ -14,17 +14,17 @@
     unsigned long long _timeout;
 }
 
-@property(assign,retain) WebScriptObject * onabort;
-@property(assign,retain) WebScriptObject * onerror;
-@property(assign,retain) WebScriptObject * onload;
-@property(assign,retain) WebScriptObject * onloadend;
-@property(assign,retain) WebScriptObject * onreadystatechange;
-@property(assign,retain) WebScriptObject * ontimeout;
-@property(assign,readonly) unsigned long long readyState;
-@property(assign,copy) NSString * responseText;
-@property(assign,readonly) unsigned long long status;
-@property(assign,copy) NSString * statusText;
-@property(assign,readwrite) unsigned long long timeout;
+@property (retain) WebScriptObject *onabort;
+@property (retain) WebScriptObject *onerror;
+@property (retain) WebScriptObject *onload;
+@property (retain) WebScriptObject *onloadend;
+@property (retain) WebScriptObject *onreadystatechange;
+@property (retain) WebScriptObject *ontimeout;
+@property (readonly) unsigned long long readyState;
+@property (readonly, copy) NSString *responseText;
+@property (readonly) unsigned long long status;
+@property (readonly, copy) NSString *statusText;
+@property unsigned long long timeout;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

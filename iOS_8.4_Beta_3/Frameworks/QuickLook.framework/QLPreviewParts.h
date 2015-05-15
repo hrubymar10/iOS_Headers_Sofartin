@@ -36,24 +36,24 @@
     long long representedObjectProtection;
 }
 
-@property(assign,readonly) NSSet * attachmentURLs;
-@property(getter=isCancelled,assign,readonly) bool cancelled;
-@property(getter=isComputed,assign,readonly) bool computed;
-@property(assign,retain) NSURLConnection * connection;
-@property(assign,retain) NSData * data;
-@property(assign,readwrite) id delegate;
-@property(assign,retain) NSString * fileName;
-@property(assign,readwrite) bool htmlErrorDisabled;
-@property(assign,readonly) long long pageCount;
-@property(assign,readonly) float pageHeight;
-@property(assign,readonly) float pageWidth;
-@property(assign,retain) NSString * password;
-@property(assign,readonly) NSURLRequest * previewRequest;
-@property(assign,readonly) NSURLResponse * previewResponse;
-@property(assign,readonly) NSURL * previewURL;
-@property(assign,readwrite) bool progressive;
-@property(assign,retain) NSURL * url;
-@property(assign,retain) NSString * uti;
+@property (nonatomic, readonly) NSSet *attachmentURLs;
+@property (getter=isCancelled, readonly) bool cancelled;
+@property (getter=isComputed, readonly) bool computed;
+@property (nonatomic, retain) NSURLConnection *connection;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic) id delegate;
+@property (nonatomic, retain) NSString *fileName;
+@property bool htmlErrorDisabled;
+@property (readonly) long long pageCount;
+@property (readonly) float pageHeight;
+@property (readonly) float pageWidth;
+@property (nonatomic, retain) NSString *password;
+@property (nonatomic, readonly) NSURLRequest *previewRequest;
+@property (nonatomic, readonly) NSURLResponse *previewResponse;
+@property (nonatomic, readonly) NSURL *previewURL;
+@property (nonatomic) bool progressive;
+@property (nonatomic, retain) NSURL *url;
+@property (nonatomic, retain) NSString *uti;
 
 + (bool)isSafeRequest:(id)arg1;
 + (bool)isSafeURL:(id)arg1;

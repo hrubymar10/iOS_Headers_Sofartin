@@ -9,9 +9,9 @@
     NSString *_unitString;
 }
 
-@property(assign,readonly) long long aggregationStyle;
-@property(assign,readonly) HKUnit * canonicalUnit;
-@property(assign,readonly) _HKDimension * dimension;
+@property (readonly) long long aggregationStyle;
+@property (nonatomic, readonly) HKUnit *canonicalUnit;
+@property (nonatomic, readonly) _HKDimension *dimension;
 
 + (void)_insertCode:(long long)arg1 forIdentifier:(id)arg2;
 + (id)_quantityTypeWithCode:(long long)arg1;

@@ -7,8 +7,8 @@
     NSIndexPath *_keyAssetIndexPath;
 }
 
-@property(assign,retain) <PHAssetCollectionDataSource> * assetCollectionsDataSource;
-@property(assign,retain) NSIndexPath * keyAssetIndexPath;
+@property (nonatomic, retain) <PHAssetCollectionDataSource> *assetCollectionsDataSource;
+@property (nonatomic, retain) NSIndexPath *keyAssetIndexPath;
 
 - (void).cxx_destruct;
 - (id)assetCollectionsDataSource;

@@ -9,11 +9,11 @@
     unsigned long long _physicalAddress;
 }
 
-@property(assign,readonly) NSArray * children;
-@property(assign,readonly) NSSet * logicalDevices;
-@property(assign,readwrite) CoreCECPhysicalDevice * parent;
-@property(assign,readonly) unsigned long long physicalAddress;
-@property(assign,readonly) id propertyList;
+@property (nonatomic, readonly) NSArray *children;
+@property (nonatomic, readonly) NSSet *logicalDevices;
+@property (nonatomic) CoreCECPhysicalDevice *parent;
+@property (nonatomic, readonly) unsigned long long physicalAddress;
+@property (nonatomic, readonly) id propertyList;
 
 + (id)physicalDeviceTreeWithLogicalDevices:(id)arg1;
 

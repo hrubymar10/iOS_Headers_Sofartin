@@ -8,13 +8,13 @@
     id _mailPopoverManager;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isRotating;
-@property(assign,readwrite) <MFMailPopoverManagerDelegate> * mailDelegate;
-@property(assign,readwrite) id mailPopoverManager;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isRotating;
+@property (nonatomic) <MFMailPopoverManagerDelegate> *mailDelegate;
+@property (nonatomic) id mailPopoverManager;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (void)dismissPopoverAnimated:(bool)arg1;

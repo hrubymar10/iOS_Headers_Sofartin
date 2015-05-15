@@ -8,16 +8,16 @@
     PASampleFrame *_parentFrame;
 }
 
-@property(assign,readwrite) unsigned long long address;
-@property(assign,readonly) NSSet * childFrames;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isKernel;
-@property(assign,readonly) bool isRootFrame;
-@property(assign,readonly) PASampleFrame * parentFrame;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long symbolicationAddress;
+@property unsigned long long address;
+@property (readonly) NSSet *childFrames;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isKernel;
+@property (readonly) bool isRootFrame;
+@property (readonly) PASampleFrame *parentFrame;
+@property (readonly) Class superclass;
+@property (readonly) unsigned long long symbolicationAddress;
 
 + (id)_newSampleFrameFromSerializedSampleFrame:(const struct { unsigned long long x1; unsigned long long x2; BOOL x3; BOOL x4; unsigned long long x5; long long x6; }*)arg1;
 + (id)addStack:(id)arg1 toSetOfRootFrames:(id)arg2;

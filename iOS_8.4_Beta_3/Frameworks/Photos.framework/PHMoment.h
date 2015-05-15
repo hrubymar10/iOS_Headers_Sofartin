@@ -10,8 +10,8 @@
     bool _reverseLocationDataIsValid;
 }
 
-@property(assign,readonly) short generationType;
-@property(assign,readonly) NSDate * representativeDate;
+@property (nonatomic, readonly) short generationType;
+@property (nonatomic, readonly) NSDate *representativeDate;
 
 + (id)_transformValueExpression:(id)arg1 forKeyPath:(id)arg2;
 + (id)entityKeyForPropertyKey:(id)arg1;

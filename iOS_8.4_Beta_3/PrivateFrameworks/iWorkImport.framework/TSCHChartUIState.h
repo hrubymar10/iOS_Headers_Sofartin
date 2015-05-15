@@ -11,12 +11,12 @@
     bool _useFullKeyboard;
 }
 
-@property(assign,readonly) unsigned long long lastColCountInCDE;
-@property(assign,readonly) unsigned long long lastColSelectedInCDE;
-@property(assign,readonly) unsigned long long lastRowCountInCDE;
-@property(assign,readonly) unsigned long long lastRowSelectedInCDE;
-@property(assign,readonly) unsigned long long multiDataSetIndex;
-@property(assign,readonly) bool useFullKeyboard;
+@property (nonatomic, readonly) unsigned long long lastColCountInCDE;
+@property (nonatomic, readonly) unsigned long long lastColSelectedInCDE;
+@property (nonatomic, readonly) unsigned long long lastRowCountInCDE;
+@property (nonatomic, readonly) unsigned long long lastRowSelectedInCDE;
+@property (nonatomic, readonly) unsigned long long multiDataSetIndex;
+@property (nonatomic, readonly) bool useFullKeyboard;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)description;

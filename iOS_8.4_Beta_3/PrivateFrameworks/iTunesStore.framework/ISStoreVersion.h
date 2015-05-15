@@ -6,7 +6,7 @@
     NSURL *_redirectURL;
 }
 
-@property(assign,retain) NSURL * redirectURL;
+@property (nonatomic, retain) NSURL *redirectURL;
 
 - (void)dealloc;
 - (id)initWithDictionary:(id)arg1;

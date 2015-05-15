@@ -7,10 +7,10 @@
     NSString *_href;
 }
 
-@property(assign,retain) NSArray * categories;
-@property(getter=isCopyright,assign,readonly) bool copyright;
-@property(getter=isGlossary,assign,readonly) bool glossary;
-@property(assign,copy) NSString * href;
+@property (nonatomic, retain) NSArray *categories;
+@property (getter=isCopyright, nonatomic, readonly) bool copyright;
+@property (getter=isGlossary, nonatomic, readonly) bool glossary;
+@property (nonatomic, copy) NSString *href;
 
 - (void).cxx_destruct;
 - (id)categories;

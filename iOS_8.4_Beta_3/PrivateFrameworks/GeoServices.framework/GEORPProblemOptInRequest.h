@@ -13,16 +13,16 @@
     NSString *_userEmail;
 }
 
-@property(assign,retain) NSData * devicePushToken;
-@property(assign,readwrite) bool didOptIn;
-@property(assign,readonly) bool hasDevicePushToken;
-@property(assign,readwrite) bool hasDidOptIn;
-@property(assign,readonly) bool hasProblemId;
-@property(assign,readonly) bool hasUserCredentials;
-@property(assign,readonly) bool hasUserEmail;
-@property(assign,retain) NSString * problemId;
-@property(assign,retain) GEORPUserCredentials * userCredentials;
-@property(assign,retain) NSString * userEmail;
+@property (nonatomic, retain) NSData *devicePushToken;
+@property (nonatomic) bool didOptIn;
+@property (nonatomic, readonly) bool hasDevicePushToken;
+@property (nonatomic) bool hasDidOptIn;
+@property (nonatomic, readonly) bool hasProblemId;
+@property (nonatomic, readonly) bool hasUserCredentials;
+@property (nonatomic, readonly) bool hasUserEmail;
+@property (nonatomic, retain) NSString *problemId;
+@property (nonatomic, retain) GEORPUserCredentials *userCredentials;
+@property (nonatomic, retain) NSString *userEmail;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -9,7 +9,7 @@
     NSMutableArray *_valueViews;
 }
 
-@property(assign,readwrite) PKPaymentAuthorizationLayout * layout;
+@property (nonatomic) PKPaymentAuthorizationLayout *layout;
 
 - (id)_labelAttributedStringWithString:(id)arg1;
 - (id)_valueAttributedStringWithString:(id)arg1;

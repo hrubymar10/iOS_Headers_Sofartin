@@ -67,19 +67,19 @@
     unsigned int _userInteractionCounter;
 }
 
-@property(assign,readwrite) <PKPassGroupStackViewDatasource> * datasource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPassGroupStackViewDelegate><UIScrollViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isPresentingPassViewFront;
-@property(assign,readonly) bool isReordering;
-@property(assign,readonly) PKPass * modalGroupFrontmostPass;
-@property(assign,readwrite) unsigned long long modalGroupIndex;
-@property(assign,readwrite) bool paymentFooterSuppressed;
-@property(assign,readonly) double pileHeight;
-@property(assign,readwrite) long long presentationState;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) <PKPassGroupStackViewDatasource> *datasource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPassGroupStackViewDelegate><UIScrollViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isPresentingPassViewFront;
+@property (nonatomic, readonly) bool isReordering;
+@property (nonatomic, readonly) PKPass *modalGroupFrontmostPass;
+@property (nonatomic) unsigned long long modalGroupIndex;
+@property (nonatomic) bool paymentFooterSuppressed;
+@property (nonatomic, readonly) double pileHeight;
+@property (nonatomic) long long presentationState;
+@property (readonly) Class superclass;
 
 - (void)_addDimmingToPileWithAnimation:(bool)arg1;
 - (void)_addGroupViewAsSubview:(id)arg1 forIndex:(unsigned long long)arg2;

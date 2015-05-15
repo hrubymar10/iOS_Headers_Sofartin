@@ -15,20 +15,20 @@
     NSString *mUUID;
 }
 
-@property(assign,retain) NSString * UUID;
-@property(assign,retain) NSArray * classicThemeRecords;
-@property(assign,readonly) double cornerRadius;
-@property(assign,copy) NSDictionary * customEffectTimingCurves;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) KNSlideNode * defaultMasterSlideNode;
-@property(assign,readonly) bool defaultMasterSlideNodeIsOurBestGuess;
-@property(assign,readonly) TSWPParagraphStyle * defaultPresenterNotesParagraphStyle;
-@property(assign,readonly) KNSlideNode * defaultSlideNodeForNewSelection;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * masters;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct CGSize { double x1; double x2; } thumbnailSize;
+@property (nonatomic, retain) NSString *UUID;
+@property (nonatomic, retain) NSArray *classicThemeRecords;
+@property (nonatomic, readonly) double cornerRadius;
+@property (nonatomic, copy) NSDictionary *customEffectTimingCurves;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) KNSlideNode *defaultMasterSlideNode;
+@property (nonatomic, readonly) bool defaultMasterSlideNodeIsOurBestGuess;
+@property (nonatomic, readonly) TSWPParagraphStyle *defaultPresenterNotesParagraphStyle;
+@property (nonatomic, readonly) KNSlideNode *defaultSlideNodeForNewSelection;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *masters;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } thumbnailSize;
 
 + (void)bootstrapPresetsOfKind:(id)arg1 inTheme:(id)arg2 alternate:(int)arg3;
 + (id)classicThemeNameFromTheme:(id)arg1;

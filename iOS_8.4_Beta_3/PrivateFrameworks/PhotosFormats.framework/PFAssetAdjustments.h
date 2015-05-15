@@ -6,11 +6,11 @@
     NSDictionary *_propertyListDictionary;
 }
 
-@property(assign,readonly) long long adjustmentBaseVersion;
-@property(assign,readonly) NSData * adjustmentData;
-@property(assign,copy) NSString * adjustmentFormatIdentifier;
-@property(assign,copy) NSString * adjustmentFormatVersion;
-@property(assign,retain) NSDictionary * propertyListDictionary;
+@property (nonatomic, readonly) long long adjustmentBaseVersion;
+@property (nonatomic, readonly) NSData *adjustmentData;
+@property (nonatomic, readonly, copy) NSString *adjustmentFormatIdentifier;
+@property (nonatomic, readonly, copy) NSString *adjustmentFormatVersion;
+@property (nonatomic, retain) NSDictionary *propertyListDictionary;
 
 - (void).cxx_destruct;
 - (long long)adjustmentBaseVersion;

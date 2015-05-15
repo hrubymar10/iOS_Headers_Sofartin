@@ -8,7 +8,7 @@
     long long _type;
 }
 
-@property(assign,readonly) long long serviceType;
+@property (nonatomic, readonly) long long serviceType;
 
 - (void)_postAvailability:(long long)arg1;
 - (void)_updateAvailability;

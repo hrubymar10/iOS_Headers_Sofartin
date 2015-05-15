@@ -11,12 +11,12 @@
     <GKTurnBasedMatchmakerViewControllerDelegate> *_turnBasedMatchmakerDelegateWeak;
 }
 
-@property(assign,retain) UIAlertController * alertController;
-@property(assign,retain) GKHostedTurnBasedViewController * hostedViewController;
-@property(assign,retain) GKMatchRequest * matchRequest;
-@property(assign,retain) GKRemoteTurnBasedViewController * remoteViewController;
-@property(assign,readwrite) bool showExistingMatches;
-@property(assign,readwrite) <GKTurnBasedMatchmakerViewControllerDelegate> * turnBasedMatchmakerDelegate;
+@property (nonatomic, retain) UIAlertController *alertController;
+@property (nonatomic, retain) GKHostedTurnBasedViewController *hostedViewController;
+@property (nonatomic, retain) GKMatchRequest *matchRequest;
+@property (nonatomic, retain) GKRemoteTurnBasedViewController *remoteViewController;
+@property (nonatomic) bool showExistingMatches;
+@property (nonatomic) <GKTurnBasedMatchmakerViewControllerDelegate> *turnBasedMatchmakerDelegate;
 
 + (bool)_preventsAppearanceProxyCustomization;
 

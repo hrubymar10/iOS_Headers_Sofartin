@@ -10,8 +10,8 @@
     UIView *_view;
 }
 
-@property(assign,readwrite) RUIObjectModel * objectModel;
-@property(assign,retain) UIColor * spinnerColor;
+@property (nonatomic) RUIObjectModel *objectModel;
+@property (nonatomic, retain) UIColor *spinnerColor;
 
 - (void).cxx_destruct;
 - (id)objectModel;

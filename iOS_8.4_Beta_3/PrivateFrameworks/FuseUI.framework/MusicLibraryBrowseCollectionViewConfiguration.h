@@ -7,8 +7,8 @@
     bool _wantsEdgeToEdgeLayout;
 }
 
-@property(assign,readonly) MusicEntityCollectionViewDescriptor * entityViewDescriptor;
-@property(assign,readwrite) bool wantsEdgeToEdgeLayout;
+@property (nonatomic, readonly) MusicEntityCollectionViewDescriptor *entityViewDescriptor;
+@property (nonatomic) bool wantsEdgeToEdgeLayout;
 
 - (void).cxx_destruct;
 - (id)entityViewDescriptor;

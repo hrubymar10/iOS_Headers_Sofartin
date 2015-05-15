@@ -4,7 +4,7 @@
 
 @interface SACalendarAceUiCalendarEvent : SACalendarEvent
 
-@property(assign,copy) NSNumber * durationInMinutes;
+@property (nonatomic, copy) NSNumber *durationInMinutes;
 
 + (id)aceUiCalendarEvent;
 + (id)aceUiCalendarEventWithDictionary:(id)arg1 context:(id)arg2;

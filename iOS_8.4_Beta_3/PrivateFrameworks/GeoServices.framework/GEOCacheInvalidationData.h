@@ -9,10 +9,10 @@
     NSArray *_versionDomains;
 }
 
-@property(assign,readonly) double timestamp;
-@property(assign,readonly) double ttl;
-@property(assign,readonly) unsigned int version;
-@property(assign,readonly) NSArray * versionDomains;
+@property (nonatomic, readonly) double timestamp;
+@property (nonatomic, readonly) double ttl;
+@property (nonatomic, readonly) unsigned int version;
+@property (nonatomic, readonly) NSArray *versionDomains;
 
 - (void)dealloc;
 - (id)initWithTimestamp:(double)arg1 ttl:(double)arg2 version:(unsigned int)arg3 domains:(id)arg4;

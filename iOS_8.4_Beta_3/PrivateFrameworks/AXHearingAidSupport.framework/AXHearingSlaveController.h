@@ -11,12 +11,12 @@
     id _searchCompletion;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) AXRemoteHearingAidDevice * device;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id searchCompletion;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) AXRemoteHearingAidDevice *device;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id searchCompletion;
+@property (readonly) Class superclass;
 
 - (void)acceptConnection:(int)arg1;
 - (void)closeConnectionWithError:(id)arg1;

@@ -7,8 +7,8 @@
     DOMHTMLSelectElement *_selectionNode;
 }
 
-@property(assign,retain) <UIWebFormControl> * _selectControl;
-@property(assign,retain) DOMHTMLSelectElement * _selectionNode;
+@property (nonatomic, retain) <UIWebFormControl> *_selectControl;
+@property (nonatomic, retain) DOMHTMLSelectElement *_selectionNode;
 
 + (id)createPeripheralWithDOMHTMLSelectElement:(id)arg1;
 

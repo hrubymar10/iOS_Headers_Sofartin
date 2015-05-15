@@ -78,23 +78,23 @@
     bool _votedOffIsland;
 }
 
-@property(assign,readwrite) bool abortSetup;
-@property(assign,readonly) NSURL * actualStoreFileURL;
-@property(assign,readwrite) bool cacheFilePresenterForUbiquityRoot;
-@property(assign,readonly) PFUbiquityContainerIdentifier * containerIdentifier;
-@property(assign,readwrite) bool failSetup;
-@property(assign,retain) NSError * failSetupError;
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,readonly) PFUbiquityLocation * localRootLocation;
-@property(assign,readonly) bool needsMetadataRecovery;
-@property(assign,readonly) NSDictionary * options;
-@property(assign,readwrite) unsigned long long retryDelaySec;
-@property(assign,readonly) PFUbiquityKnowledgeVector * storeKV;
-@property(assign,readwrite) bool storeWasMigrated;
-@property(assign,readonly) bool ubiquityEnabled;
-@property(assign,readonly) PFUbiquityLocation * ubiquityRootLocation;
-@property(assign,readonly) NSURL * ubiquityRootURL;
-@property(assign,readonly) bool useLocalAccount;
+@property (nonatomic) bool abortSetup;
+@property (nonatomic, readonly) NSURL *actualStoreFileURL;
+@property (nonatomic) bool cacheFilePresenterForUbiquityRoot;
+@property (nonatomic, readonly) PFUbiquityContainerIdentifier *containerIdentifier;
+@property (nonatomic) bool failSetup;
+@property (nonatomic, retain) NSError *failSetupError;
+@property (nonatomic, readonly) NSString *localPeerID;
+@property (nonatomic, readonly) PFUbiquityLocation *localRootLocation;
+@property (nonatomic, readonly) bool needsMetadataRecovery;
+@property (nonatomic, readonly) NSDictionary *options;
+@property (nonatomic) unsigned long long retryDelaySec;
+@property (nonatomic, readonly) PFUbiquityKnowledgeVector *storeKV;
+@property (nonatomic) bool storeWasMigrated;
+@property (nonatomic, readonly) bool ubiquityEnabled;
+@property (nonatomic, readonly) PFUbiquityLocation *ubiquityRootLocation;
+@property (nonatomic, readonly) NSURL *ubiquityRootURL;
+@property (nonatomic, readonly) bool useLocalAccount;
 
 + (void)cleanUserDefaultsForStore:(id)arg1;
 + (id)createActualStoreURLForStoreURL:(id)arg1 localPeerID:(id)arg2 containerIdentifier:(id)arg3 andStoreName:(id)arg4;

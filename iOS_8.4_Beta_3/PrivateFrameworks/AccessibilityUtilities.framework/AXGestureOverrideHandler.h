@@ -8,9 +8,9 @@
     unsigned long long _type;
 }
 
-@property(assign,copy) id handler;
-@property(assign,retain) NSString * identifier;
-@property(assign,readwrite) unsigned long long type;
+@property (nonatomic, copy) id handler;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic) unsigned long long type;
 
 - (void)dealloc;
 - (id)handler;

@@ -8,7 +8,7 @@
     NSMutableSet *_signatures;
 }
 
-@property(assign,readonly) bool isSigned;
+@property (nonatomic, readonly) bool isSigned;
 
 + (id)sharedPact;
 

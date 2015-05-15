@@ -11,12 +11,12 @@
     NSObject<OS_dispatch_source> *_timerSource;
 }
 
-@property(assign,readwrite) CKDClientContext * context;
-@property(assign,retain) NSObject<OS_dispatch_queue> * opQueue;
-@property(assign,retain) NSOperationQueue * queue;
-@property(assign,retain) NSMutableArray * queuedFetches;
-@property(assign,retain) NSMutableArray * runningFetches;
-@property(assign,retain) NSObject<OS_dispatch_source> * timerSource;
+@property (nonatomic) CKDClientContext *context;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *opQueue;
+@property (nonatomic, retain) NSOperationQueue *queue;
+@property (nonatomic, retain) NSMutableArray *queuedFetches;
+@property (nonatomic, retain) NSMutableArray *runningFetches;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *timerSource;
 
 - (void).cxx_destruct;
 - (void)_lockedFireReadyQueuedFetches;

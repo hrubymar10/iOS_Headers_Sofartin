@@ -6,8 +6,8 @@
     CKDPShareIdentifier *_shareId;
 }
 
-@property(assign,readonly) bool hasShareId;
-@property(assign,retain) CKDPShareIdentifier * shareId;
+@property (nonatomic, readonly) bool hasShareId;
+@property (nonatomic, retain) CKDPShareIdentifier *shareId;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

@@ -11,12 +11,12 @@
     double _updateLastQueuedTime;
 }
 
-@property(assign,readwrite) bool completed;
-@property(assign,retain) NSError * error;
-@property(assign,readwrite) double progress;
-@property(assign,retain) NSString * resourceTypeDescription;
-@property(assign,retain) NSString * taskIdentifier;
-@property(assign,readwrite) double updateLastQueuedTime;
+@property bool completed;
+@property (retain) NSError *error;
+@property double progress;
+@property (retain) NSString *resourceTypeDescription;
+@property (retain) NSString *taskIdentifier;
+@property double updateLastQueuedTime;
 
 - (bool)completed;
 - (void)dealloc;

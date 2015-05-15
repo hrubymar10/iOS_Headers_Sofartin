@@ -6,10 +6,10 @@
     AVAssetReaderAudioMixOutputInternal *_audioMixOutputInternal;
 }
 
-@property(assign,copy) AVAudioMix * audioMix;
-@property(assign,readonly) NSDictionary * audioSettings;
-@property(assign,copy) NSString * audioTimePitchAlgorithm;
-@property(assign,readonly) NSArray * audioTracks;
+@property (nonatomic, copy) AVAudioMix *audioMix;
+@property (nonatomic, readonly) NSDictionary *audioSettings;
+@property (nonatomic, copy) NSString *audioTimePitchAlgorithm;
+@property (nonatomic, readonly) NSArray *audioTracks;
 
 + (id)assetReaderAudioMixOutputWithAudioTracks:(id)arg1 audioSettings:(id)arg2;
 

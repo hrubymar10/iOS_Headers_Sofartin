@@ -4,10 +4,10 @@
 
 @interface SUScriptActivityNativeObject : SUScriptNativeObject <SUActivityDelegate>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (bool)activity:(id)arg1 canPerformWithActivityItems:(id)arg2;
 - (void)activity:(id)arg1 prepareWithActivityItems:(id)arg2;

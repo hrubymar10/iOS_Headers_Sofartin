@@ -9,10 +9,10 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,readwrite) bool hasChanges;
-@property(assign,retain) NSArray * people;
-@property(assign,retain) ABUIPerson * preinsertedPerson;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
+@property (nonatomic) bool hasChanges;
+@property (nonatomic, retain) NSArray *people;
+@property (nonatomic, retain) ABUIPerson *preinsertedPerson;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
 
 - (bool)canSave;
 - (void)dealloc;

@@ -11,12 +11,12 @@
     PLCloudScenario *_scenario;
 }
 
-@property(assign,readonly) PLCloudPhotoLibraryManager * connection;
-@property(assign,readonly) unsigned long long cost;
-@property(assign,readonly) long long createdAt;
-@property(assign,retain) PLCloudOperationResource * operationResource;
-@property(assign,readwrite) bool running;
-@property(assign,readonly) PLCloudScenario * scenario;
+@property (nonatomic, readonly) PLCloudPhotoLibraryManager *connection;
+@property (nonatomic, readonly) unsigned long long cost;
+@property (nonatomic, readonly) long long createdAt;
+@property (nonatomic, retain) PLCloudOperationResource *operationResource;
+@property bool running;
+@property (nonatomic, readonly) PLCloudScenario *scenario;
 
 - (id)connection;
 - (unsigned long long)cost;

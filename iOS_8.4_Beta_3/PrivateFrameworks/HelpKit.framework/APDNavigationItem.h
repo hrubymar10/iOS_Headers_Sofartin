@@ -11,12 +11,12 @@
     APDNavigationItem *_parent;
 }
 
-@property(assign,readwrite) bool hasRead;
-@property(assign,copy) NSString * icon;
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) long long level;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) APDNavigationItem * parent;
+@property (nonatomic) bool hasRead;
+@property (nonatomic, copy) NSString *icon;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic) long long level;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) APDNavigationItem *parent;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

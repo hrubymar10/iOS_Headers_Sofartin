@@ -46,10 +46,10 @@
     OCPPackagePart *mWorkbookPart;
 }
 
-@property(assign,retain) CXNamespace * EXSpreadsheetDrawingNamespace;
-@property(assign,retain) CXNamespace * EXSpreadsheetMLNamespace;
-@property(assign,retain) CXNamespace * EXSpreadsheetRelationsNamespace;
-@property(assign,readonly) <TCCancelDelegate> * cancelDelegate;
+@property (nonatomic, retain) CXNamespace *EXSpreadsheetDrawingNamespace;
+@property (nonatomic, retain) CXNamespace *EXSpreadsheetMLNamespace;
+@property (nonatomic, retain) CXNamespace *EXSpreadsheetRelationsNamespace;
+@property (nonatomic, readonly) <TCCancelDelegate> *cancelDelegate;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

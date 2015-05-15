@@ -16,8 +16,8 @@
     Protocol *_protocol;
 }
 
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) Protocol * protocol;
+@property (readonly) NSString *identifier;
+@property (readonly) Protocol *protocol;
 
 + (id)remoteObjectInterfaceWithProtocol:(id)arg1;
 

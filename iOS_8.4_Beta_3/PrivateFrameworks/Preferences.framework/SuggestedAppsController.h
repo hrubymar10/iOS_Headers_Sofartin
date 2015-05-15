@@ -6,7 +6,7 @@
     NSArray *_specifiers;
 }
 
-@property(assign,retain) NSArray * specifiers;
+@property (nonatomic, readonly, retain) NSArray *specifiers;
 
 - (id)appStore:(id)arg1;
 - (void)dealloc;

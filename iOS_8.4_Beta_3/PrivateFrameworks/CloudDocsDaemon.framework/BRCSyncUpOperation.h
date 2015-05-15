@@ -16,20 +16,20 @@
     id _syncUpCompletionBlock;
 }
 
-@property(assign,retain) NSMutableDictionary * conflictLosersToResolveByRecordID;
-@property(assign,readonly) float cost;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) NSMutableArray * deletedRecordIDs;
-@property(assign,retain) NSMutableArray * deletedShareIDs;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableDictionary * recordIDsToDeleteToEtags;
-@property(assign,retain) NSMutableArray * recordsNeedingSharingInfo;
-@property(assign,retain) NSMutableArray * recordsToSave;
-@property(assign,retain) BRCServerZone * serverZone;
-@property(assign,retain) NSString * stageID;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id syncUpCompletionBlock;
+@property (nonatomic, retain) NSMutableDictionary *conflictLosersToResolveByRecordID;
+@property (nonatomic, readonly) float cost;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) NSMutableArray *deletedRecordIDs;
+@property (nonatomic, retain) NSMutableArray *deletedShareIDs;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableDictionary *recordIDsToDeleteToEtags;
+@property (nonatomic, retain) NSMutableArray *recordsNeedingSharingInfo;
+@property (nonatomic, retain) NSMutableArray *recordsToSave;
+@property (nonatomic, retain) BRCServerZone *serverZone;
+@property (nonatomic, retain) NSString *stageID;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id syncUpCompletionBlock;
 
 + (id)syncUpOperationForZone:(id)arg1 maxCost:(float)arg2 retryAfter:(unsigned long long*)arg3;
 

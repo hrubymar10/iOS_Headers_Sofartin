@@ -7,8 +7,8 @@
     long long mErrorIterations;
 }
 
-@property(assign,readwrite) double errorDistance;
-@property(assign,readwrite) long long errorIterations;
+@property (nonatomic) double errorDistance;
+@property (nonatomic) long long errorIterations;
 
 + (id)curveFitter;
 

@@ -10,8 +10,8 @@
     unsigned long long _width;
 }
 
-@property(assign,readonly) struct CGImage { }* image;
-@property(assign,readonly) double scale;
+@property (nonatomic, readonly) struct CGImage { }*image;
+@property (nonatomic, readonly) double scale;
 
 - (id)_initWithImage:(struct CGImage { }*)arg1 scale:(double)arg2 camera:(id)arg3;
 - (struct { double x1; double x2; })coordinateForPoint:(struct CGPoint { double x1; double x2; })arg1;

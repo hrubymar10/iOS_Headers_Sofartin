@@ -6,8 +6,8 @@
     CALayer *_contentsLayer;
 }
 
-@property(assign,retain) CALayer * contentsLayer;
-@property(assign,readwrite) struct CGColor { }* tintColor;
+@property (nonatomic, retain) CALayer *contentsLayer;
+@property struct CGColor { }*tintColor;
 
 - (id)contents;
 - (id)contentsLayer;

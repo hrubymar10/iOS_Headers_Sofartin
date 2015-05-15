@@ -16,17 +16,17 @@
     UIImage *_renderedActivitySettingsImage;
 }
 
-@property(assign,retain) NSExtensionItem * _injectedExtensionItem;
-@property(assign,retain) _UIActivityBundleHelper * activityBundleHelper;
-@property(assign,retain) NSExtension * applicationExtension;
-@property(assign,copy) id extensionContextIdentifier;
-@property(assign,copy) id extensionRequestCleanupCompletion;
-@property(assign,retain) UIViewController * extensionViewController;
-@property(assign,copy) NSString * localizedExtensionBundleName;
-@property(assign,copy) id presenterCompletion;
-@property(assign,readwrite) UIViewController * presenterViewController;
-@property(assign,retain) UIImage * renderedActivityImage;
-@property(assign,retain) UIImage * renderedActivitySettingsImage;
+@property (nonatomic, retain) NSExtensionItem *_injectedExtensionItem;
+@property (nonatomic, retain) _UIActivityBundleHelper *activityBundleHelper;
+@property (nonatomic, retain) NSExtension *applicationExtension;
+@property (nonatomic, copy) id extensionContextIdentifier;
+@property (nonatomic, copy) id extensionRequestCleanupCompletion;
+@property (nonatomic, retain) UIViewController *extensionViewController;
+@property (nonatomic, copy) NSString *localizedExtensionBundleName;
+@property (nonatomic, copy) id presenterCompletion;
+@property (nonatomic) UIViewController *presenterViewController;
+@property (nonatomic, retain) UIImage *renderedActivityImage;
+@property (nonatomic, retain) UIImage *renderedActivitySettingsImage;
 
 + (id)_applicationExtensionActivitiesForItems:(id)arg1;
 + (long long)activityCategory;

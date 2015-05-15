@@ -6,7 +6,7 @@
     UIViewController *_viewController;
 }
 
-@property(assign,readwrite) UIViewController * viewController;
+@property (nonatomic) UIViewController *viewController;
 
 - (void).cxx_destruct;
 - (void)commonInit;

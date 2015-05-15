@@ -10,11 +10,11 @@
     long long _estimatedVideosCount;
 }
 
-@property(assign,readonly) NSDictionary * assetCollectionToSection;
-@property(assign,readonly) PHFetchResult * collectionListFetchResult;
-@property(assign,readonly) long long estimatedOtherCount;
-@property(assign,readonly) long long estimatedPhotosCount;
-@property(assign,readonly) long long estimatedVideosCount;
+@property (nonatomic, readonly) NSDictionary *assetCollectionToSection;
+@property (nonatomic, readonly) PHFetchResult *collectionListFetchResult;
+@property (nonatomic, readonly) long long estimatedOtherCount;
+@property (nonatomic, readonly) long long estimatedPhotosCount;
+@property (nonatomic, readonly) long long estimatedVideosCount;
 
 - (void).cxx_destruct;
 - (id)assetCollectionToSection;

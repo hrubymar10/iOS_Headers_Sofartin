@@ -10,9 +10,9 @@
     PKPaymentSetupPrivacyFooterView *_privacyFooter;
 }
 
-@property(assign,retain) UIActivityIndicatorView * activityIndicatorView;
-@property(assign,readwrite) long long context;
-@property(assign,retain) PKPaymentSetupPrivacyFooterView * privacyFooter;
+@property (nonatomic, retain) UIActivityIndicatorView *activityIndicatorView;
+@property (nonatomic) long long context;
+@property (nonatomic, retain) PKPaymentSetupPrivacyFooterView *privacyFooter;
 
 - (id)_bodyFont;
 - (id)_titleFont;

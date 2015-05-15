@@ -8,9 +8,9 @@
     UIViewController *_viewController;
 }
 
-@property(assign,readonly) NSIndexPath * indexPath;
-@property(assign,readwrite) bool managesViewControllerViewLayout;
-@property(assign,retain) UIViewController * viewController;
+@property (nonatomic, readonly) NSIndexPath *indexPath;
+@property (nonatomic) bool managesViewControllerViewLayout;
+@property (nonatomic, retain) UIViewController *viewController;
 
 - (void).cxx_destruct;
 - (void)applyLayoutAttributes:(id)arg1;

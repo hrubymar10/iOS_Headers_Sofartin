@@ -4,24 +4,24 @@
 
 @interface SALocation : SADomainObject
 
-@property(assign,copy) NSNumber * accuracy;
-@property(assign,copy) NSString * city;
-@property(assign,copy) NSString * countryCode;
-@property(assign,copy) NSArray * entryPoints;
-@property(assign,copy) NSData * forwardGeoData;
-@property(assign,copy) NSString * label;
-@property(assign,copy) NSNumber * latitude;
-@property(assign,copy) NSNumber * longitude;
-@property(assign,copy) NSString * postalCode;
-@property(assign,copy) NSString * regionType;
-@property(assign,retain) SADistance * relativeDistance;
-@property(assign,copy) NSString * stateCode;
-@property(assign,copy) NSString * street;
-@property(assign,copy) NSString * subThoroughfare;
-@property(assign,copy) NSString * thoroughfare;
-@property(assign,copy) NSString * timezoneId;
-@property(assign,copy) NSNumber * travelDistance;
-@property(assign,copy) NSNumber * travelTime;
+@property (nonatomic, copy) NSNumber *accuracy;
+@property (nonatomic, copy) NSString *city;
+@property (nonatomic, copy) NSString *countryCode;
+@property (nonatomic, copy) NSArray *entryPoints;
+@property (nonatomic, copy) NSData *forwardGeoData;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, copy) NSNumber *latitude;
+@property (nonatomic, copy) NSNumber *longitude;
+@property (nonatomic, copy) NSString *postalCode;
+@property (nonatomic, copy) NSString *regionType;
+@property (nonatomic, retain) SADistance *relativeDistance;
+@property (nonatomic, copy) NSString *stateCode;
+@property (nonatomic, copy) NSString *street;
+@property (nonatomic, copy) NSString *subThoroughfare;
+@property (nonatomic, copy) NSString *thoroughfare;
+@property (nonatomic, copy) NSString *timezoneId;
+@property (nonatomic, copy) NSNumber *travelDistance;
+@property (nonatomic, copy) NSNumber *travelTime;
 
 + (id)location;
 + (id)locationWithDictionary:(id)arg1 context:(id)arg2;

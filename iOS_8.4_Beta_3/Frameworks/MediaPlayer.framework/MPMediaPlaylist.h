@@ -7,10 +7,10 @@
     MPMediaQuery *_seedTracksQuery;
 }
 
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) unsigned long long persistentID;
-@property(assign,readonly) unsigned long long playlistAttributes;
-@property(assign,readonly) NSArray * seedItems;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) unsigned long long persistentID;
+@property (nonatomic, readonly) unsigned long long playlistAttributes;
+@property (nonatomic, readonly) NSArray *seedItems;
 
 + (void)_createFilterableDictionary;
 + (bool)_isValidPlaylistProperty:(id)arg1;

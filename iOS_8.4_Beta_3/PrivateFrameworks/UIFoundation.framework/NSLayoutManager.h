@@ -77,20 +77,20 @@
     NSTypesetter *_typesetter;
 }
 
-@property(assign,readwrite) bool allowsNonContiguousLayout;
-@property(assign,readwrite) bool allowsOriginalFontMetricsOverride;
-@property(assign,readwrite) <NSLayoutManagerDelegate> * delegate;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } extraLineFragmentRect;
-@property(assign,readonly) NSTextContainer * extraLineFragmentTextContainer;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } extraLineFragmentUsedRect;
-@property(assign,readonly) bool hasNonContiguousLayout;
-@property(assign,readwrite) double hyphenationFactor;
-@property(assign,readonly) unsigned long long numberOfGlyphs;
-@property(assign,readwrite) bool showsControlCharacters;
-@property(assign,readwrite) bool showsInvisibleCharacters;
-@property(assign,readonly) NSArray * textContainers;
-@property(assign,readwrite) NSTextStorage * textStorage;
-@property(assign,readwrite) bool usesFontLeading;
+@property (nonatomic) bool allowsNonContiguousLayout;
+@property bool allowsOriginalFontMetricsOverride;
+@property (nonatomic) <NSLayoutManagerDelegate> *delegate;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } extraLineFragmentRect;
+@property (nonatomic, readonly) NSTextContainer *extraLineFragmentTextContainer;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } extraLineFragmentUsedRect;
+@property (nonatomic, readonly) bool hasNonContiguousLayout;
+@property (nonatomic) double hyphenationFactor;
+@property (nonatomic, readonly) unsigned long long numberOfGlyphs;
+@property (nonatomic) bool showsControlCharacters;
+@property (nonatomic) bool showsInvisibleCharacters;
+@property (nonatomic, readonly) NSArray *textContainers;
+@property (nonatomic) NSTextStorage *textStorage;
+@property (nonatomic) bool usesFontLeading;
 
 + (id)_defaultLinkAttributes;
 + (bool)_ignoresViewTransformations;

@@ -10,12 +10,12 @@
     NSString *_sizes;
 }
 
-@property(assign,copy) NSString * href;
-@property(assign,readonly) NSURL * hrefURL;
-@property(assign,readwrite) bool mediaMatchesLandscapeOrientation;
-@property(assign,readwrite) bool mediaMatchesPortraitOrientation;
-@property(assign,copy) NSString * rel;
-@property(assign,copy) NSString * sizes;
+@property (nonatomic, copy) NSString *href;
+@property (nonatomic, readonly) NSURL *hrefURL;
+@property (nonatomic) bool mediaMatchesLandscapeOrientation;
+@property (nonatomic) bool mediaMatchesPortraitOrientation;
+@property (nonatomic, copy) NSString *rel;
+@property (nonatomic, copy) NSString *sizes;
 
 - (void)dealloc;
 - (id)href;

@@ -11,12 +11,12 @@
     unsigned long long _traceId;
 }
 
-@property(assign,readonly) unsigned int binaryOffset;
-@property(assign,readonly) NSUUID * binaryUuid;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly) unsigned int binaryOffset;
+@property (readonly) NSUUID *binaryUuid;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)classDictionaryKey;
 + (id)newInstanceWithoutReferencesFromBufferPosition:(const void*)arg1;

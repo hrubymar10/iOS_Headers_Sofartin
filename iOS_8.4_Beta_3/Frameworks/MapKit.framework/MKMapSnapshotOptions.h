@@ -37,16 +37,16 @@
     bool _usingRect;
 }
 
-@property(assign,copy) MKMapCamera * camera;
-@property(assign,readwrite) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } mapRect;
-@property(assign,readwrite) unsigned long long mapType;
-@property(assign,readwrite) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } region;
-@property(getter=_rendersInBackground,setter=_setRendersInBackground:,assign,readwrite) bool rendersInBackground;
-@property(assign,readwrite) double scale;
-@property(assign,readwrite) bool showsBuildings;
-@property(assign,readwrite) bool showsPointsOfInterest;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) bool usingRect;
+@property (nonatomic, copy) MKMapCamera *camera;
+@property (nonatomic) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } mapRect;
+@property (nonatomic) unsigned long long mapType;
+@property (nonatomic) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } region;
+@property (getter=_rendersInBackground, setter=_setRendersInBackground:, nonatomic) bool rendersInBackground;
+@property (nonatomic) double scale;
+@property (nonatomic) bool showsBuildings;
+@property (nonatomic) bool showsPointsOfInterest;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) bool usingRect;
 
 - (void).cxx_destruct;
 - (bool)_rendersInBackground;

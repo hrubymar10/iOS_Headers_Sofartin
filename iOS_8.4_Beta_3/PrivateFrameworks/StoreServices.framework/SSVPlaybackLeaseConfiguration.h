@@ -12,13 +12,13 @@
     NSURL *_syncMachineURL;
 }
 
-@property(assign,copy) NSURL * beginLeaseURL;
-@property(assign,copy) NSURL * certificateURL;
-@property(assign,copy) NSURL * getAssetURL;
-@property(assign,copy) NSURL * provisionMachineURL;
-@property(assign,copy) NSURL * refreshLeaseURL;
-@property(assign,copy) NSString * storeFrontSuffix;
-@property(assign,copy) NSURL * syncMachineURL;
+@property (nonatomic, copy) NSURL *beginLeaseURL;
+@property (nonatomic, copy) NSURL *certificateURL;
+@property (nonatomic, copy) NSURL *getAssetURL;
+@property (nonatomic, copy) NSURL *provisionMachineURL;
+@property (nonatomic, copy) NSURL *refreshLeaseURL;
+@property (nonatomic, copy) NSString *storeFrontSuffix;
+@property (nonatomic, copy) NSURL *syncMachineURL;
 
 - (void).cxx_destruct;
 - (id)beginLeaseURL;

@@ -7,27 +7,27 @@
     GKGameInternal *_internal;
 }
 
-@property(assign,readonly) NSNumber * adamID;
-@property(assign,readonly) NSString * bundleIdentifier;
-@property(assign,readonly) NSString * bundleVersion;
-@property(assign,readonly) NSString * cacheKey;
-@property(assign,readonly) NSString * defaultCategory;
-@property(getter=isDownloading,assign,readonly) bool downloading;
-@property(assign,retain) NSString * engineID;
-@property(assign,readwrite) long long environment;
-@property(assign,readonly) NSNumber * externalVersion;
-@property(assign,readonly) NSDictionary * gameDescriptor;
-@property(assign,readonly) struct GKGameInfo { bool x1; bool x2; bool x3; bool x4; bool x5; bool x6; unsigned long long x7; unsigned long long x8; unsigned long long x9; unsigned long long x10; } gameInfo;
-@property(getter=isInstalled,assign,readonly) bool installedGame;
-@property(assign,retain) GKGameInternal * internal;
-@property(assign,readonly) bool isGameRecommendation;
-@property(assign,readonly) NSString * name;
-@property(assign,readwrite) unsigned char platform;
-@property(getter=isPrerendered,assign,readwrite) bool prerendered;
-@property(assign,retain) NSString * reason;
-@property(assign,retain) GKStoreItemInternal * storeItem;
-@property(assign,readonly) bool supportsMultiplayer;
-@property(assign,readonly) bool supportsTurnBasedMultiplayer;
+@property (nonatomic, readonly) NSNumber *adamID;
+@property (nonatomic, readonly) NSString *bundleIdentifier;
+@property (nonatomic, readonly) NSString *bundleVersion;
+@property (nonatomic, readonly) NSString *cacheKey;
+@property (nonatomic, readonly) NSString *defaultCategory;
+@property (getter=isDownloading, nonatomic, readonly) bool downloading;
+@property (nonatomic, retain) NSString *engineID;
+@property (nonatomic) long long environment;
+@property (nonatomic, readonly) NSNumber *externalVersion;
+@property (nonatomic, readonly) NSDictionary *gameDescriptor;
+@property (nonatomic, readonly) struct GKGameInfo { bool x1; bool x2; bool x3; bool x4; bool x5; bool x6; unsigned long long x7; unsigned long long x8; unsigned long long x9; unsigned long long x10; } gameInfo;
+@property (getter=isInstalled, nonatomic, readonly) bool installedGame;
+@property (retain) GKGameInternal *internal;
+@property (nonatomic, readonly) bool isGameRecommendation;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic) unsigned char platform;
+@property (getter=isPrerendered, nonatomic) bool prerendered;
+@property (nonatomic, retain) NSString *reason;
+@property (nonatomic, retain) GKStoreItemInternal *storeItem;
+@property (nonatomic, readonly) bool supportsMultiplayer;
+@property (nonatomic, readonly) bool supportsTurnBasedMultiplayer;
 
 + (id)currentGame;
 + (id)currentGameIncludingGameCenter:(bool)arg1;

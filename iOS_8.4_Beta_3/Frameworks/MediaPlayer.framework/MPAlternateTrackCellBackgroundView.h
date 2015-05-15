@@ -8,7 +8,7 @@
     UIBezierPath *_strokePath;
 }
 
-@property(assign,readwrite) int sectionLocation;
+@property (nonatomic) int sectionLocation;
 
 - (void).cxx_destruct;
 - (void)_createBezierPathWithCornerRadius:(double)arg1 bottomRadius:(double)arg2 animating:(bool)arg3;

@@ -7,10 +7,10 @@
     NSArray *_predictions;
 }
 
-@property(assign,readonly) TIKeyboardCandidate * autocorrection;
-@property(assign,readonly) NSArray * candidates;
-@property(assign,readonly) NSArray * predictions;
-@property(assign,readonly) bool shouldAcceptTopCandidate;
+@property (nonatomic, readonly) TIKeyboardCandidate *autocorrection;
+@property (nonatomic, readonly) NSArray *candidates;
+@property (nonatomic, readonly) NSArray *predictions;
+@property (nonatomic, readonly) bool shouldAcceptTopCandidate;
 
 + (id)autocorrectionListWithCandidates:(id)arg1 shouldAcceptTopCandidate:(bool)arg2;
 + (id)listWithAutocorrection:(id)arg1 predictions:(id)arg2;

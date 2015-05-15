@@ -9,7 +9,7 @@
     id _outputBlock;
 }
 
-@property(assign,copy) id outputBlock;
+@property (copy) id outputBlock;
 
 - (void).cxx_destruct;
 - (id)initWithItemIdentifier:(long long)arg1 clientContext:(id)arg2;

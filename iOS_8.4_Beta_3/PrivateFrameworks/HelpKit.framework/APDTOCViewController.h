@@ -13,16 +13,16 @@
     bool _showingHelpInfo;
 }
 
-@property(assign,readwrite) UIButton * copyrightFooterButton;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <APDTOCViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) UIView * footerViewSeparatorView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIActivityIndicatorView * loadingIndicator;
-@property(assign,readwrite) UIView * loadingView;
-@property(assign,retain) APDNavigationItem * pendingOpenItem;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) UIButton *copyrightFooterButton;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <APDTOCViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) UIView *footerViewSeparatorView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UIActivityIndicatorView *loadingIndicator;
+@property (nonatomic) UIView *loadingView;
+@property (nonatomic, retain) APDNavigationItem *pendingOpenItem;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)alertView:(id)arg1 clickedButtonAtIndex:(long long)arg2;

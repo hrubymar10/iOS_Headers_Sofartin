@@ -20,23 +20,23 @@
     NSString *_responseScript;
 }
 
-@property(assign,readonly) <IKApplication> * app;
-@property(assign,readwrite) bool canAccessPendingQueue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) <IKAppContextDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isValid;
-@property(assign,retain) JSContext * jsContext;
-@property(assign,retain) IKJSFoundation * jsFoundation;
-@property(assign,readonly) unsigned long long mode;
-@property(assign,retain) NSMutableArray * pendingQueue;
-@property(assign,retain) NSMutableArray * postEvaluationBlocks;
-@property(assign,retain) id reloadData;
-@property(assign,readwrite) bool remoteInspectionEnabled;
-@property(assign,retain) NSError * responseError;
-@property(assign,copy) NSString * responseScript;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) <IKApplication> *app;
+@property (nonatomic) bool canAccessPendingQueue;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) <IKAppContextDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property bool isValid;
+@property (nonatomic, retain) JSContext *jsContext;
+@property (nonatomic, retain) IKJSFoundation *jsFoundation;
+@property (nonatomic, readonly) unsigned long long mode;
+@property (nonatomic, retain) NSMutableArray *pendingQueue;
+@property (nonatomic, retain) NSMutableArray *postEvaluationBlocks;
+@property (nonatomic, retain) id reloadData;
+@property (nonatomic) bool remoteInspectionEnabled;
+@property (nonatomic, retain) NSError *responseError;
+@property (nonatomic, copy) NSString *responseScript;
+@property (readonly) Class superclass;
 
 + (id)currentAppContext;
 

@@ -4,7 +4,7 @@
 
 @interface SADomainObjectPunchOut : SABaseClientBoundCommand
 
-@property(assign,retain) SADomainObject * domainItem;
+@property (nonatomic, retain) SADomainObject *domainItem;
 
 + (id)domainObjectPunchOut;
 + (id)domainObjectPunchOutWithDictionary:(id)arg1 context:(id)arg2;

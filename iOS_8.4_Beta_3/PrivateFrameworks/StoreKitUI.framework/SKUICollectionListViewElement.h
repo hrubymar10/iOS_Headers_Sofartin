@@ -6,7 +6,7 @@
     SKUISearchBarViewElement *_searchHeader;
 }
 
-@property(assign,readonly) SKUISearchBarViewElement * searchHeader;
+@property (nonatomic, readonly) SKUISearchBarViewElement *searchHeader;
 
 - (void).cxx_destruct;
 - (id)initWithDOMElement:(id)arg1 parent:(id)arg2 elementFactory:(id)arg3;

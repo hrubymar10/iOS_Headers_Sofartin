@@ -15,19 +15,19 @@
     BLTWatchKitAppList *_watchKitAppList;
 }
 
-@property(assign,retain) BLTAttachmentHashCache * attachmentHashCache;
-@property(assign,retain) BBObserver * bbObserver;
-@property(assign,retain) NSMutableDictionary * bulletins;
-@property(assign,copy) NSString * bundleRootPath;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) BLTRemoteGizmoClient * gizmoConnection;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableSet * lockScreenFeed;
-@property(assign,retain) NSMutableSet * noticesFeed;
-@property(assign,retain) BLTBulletinDistributorSubscriberList * subscribers;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) BLTWatchKitAppList * watchKitAppList;
+@property (nonatomic, retain) BLTAttachmentHashCache *attachmentHashCache;
+@property (nonatomic, retain) BBObserver *bbObserver;
+@property (nonatomic, retain) NSMutableDictionary *bulletins;
+@property (nonatomic, copy) NSString *bundleRootPath;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) BLTRemoteGizmoClient *gizmoConnection;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableSet *lockScreenFeed;
+@property (nonatomic, retain) NSMutableSet *noticesFeed;
+@property (nonatomic, retain) BLTBulletinDistributorSubscriberList *subscribers;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) BLTWatchKitAppList *watchKitAppList;
 
 + (id)sharedDistributor;
 

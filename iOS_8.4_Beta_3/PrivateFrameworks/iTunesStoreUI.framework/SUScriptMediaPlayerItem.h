@@ -6,15 +6,15 @@
     SUMediaPlayerItem *_mediaItem;
 }
 
-@property(assign,copy) NSString * URL;
-@property(assign,copy) NSString * backgroundImageURL;
-@property(assign,copy) NSString * bookmarkIdentifier;
-@property(assign,copy) NSString * initialOrientation;
-@property(assign,retain) NSNumber * itemIdentifier;
-@property(assign,copy) NSString * itemType;
-@property(assign,retain) NSNumber * playableDuration;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
+@property (copy) NSString *URL;
+@property (copy) NSString *backgroundImageURL;
+@property (copy) NSString *bookmarkIdentifier;
+@property (copy) NSString *initialOrientation;
+@property (retain) NSNumber *itemIdentifier;
+@property (copy) NSString *itemType;
+@property (retain) NSNumber *playableDuration;
+@property (copy) NSString *subtitle;
+@property (copy) NSString *title;
 
 + (id)webScriptNameForKey:(const char *)arg1;
 

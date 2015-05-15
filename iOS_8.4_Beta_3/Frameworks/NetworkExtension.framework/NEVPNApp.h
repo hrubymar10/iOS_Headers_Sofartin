@@ -6,7 +6,7 @@
     NSArray *_appRules;
 }
 
-@property(assign,copy) NSArray * appRules;
+@property (copy) NSArray *appRules;
 
 + (bool)supportsSecureCoding;
 

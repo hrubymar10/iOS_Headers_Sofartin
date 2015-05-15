@@ -4,10 +4,10 @@
 
 @interface SASource : SADomainObject
 
-@property(assign,copy) NSString * accountIdentifier;
-@property(assign,copy) NSString * accountName;
-@property(assign,copy) NSString * domainIdentifier;
-@property(assign,copy) NSNumber * remote;
+@property (nonatomic, copy) NSString *accountIdentifier;
+@property (nonatomic, copy) NSString *accountName;
+@property (nonatomic, copy) NSString *domainIdentifier;
+@property (nonatomic, copy) NSNumber *remote;
 
 + (id)source;
 + (id)sourceWithDictionary:(id)arg1 context:(id)arg2;

@@ -6,9 +6,9 @@
     SKUIGiftAmountControl *_amountControl;
 }
 
-@property(assign,readonly) UIControl * amountControl;
-@property(assign,readonly) long long selectedAmount;
-@property(assign,readonly) NSString * selectedAmountString;
+@property (nonatomic, readonly) UIControl *amountControl;
+@property (nonatomic, readonly) long long selectedAmount;
+@property (nonatomic, readonly) NSString *selectedAmountString;
 
 - (void).cxx_destruct;
 - (id)amountControl;

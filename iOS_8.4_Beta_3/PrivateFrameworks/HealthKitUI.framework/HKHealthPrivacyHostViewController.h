@@ -6,7 +6,7 @@
     <HKHealthPrivacyHostViewControllerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <HKHealthPrivacyHostViewControllerDelegate> * delegate;
+@property (nonatomic) <HKHealthPrivacyHostViewControllerDelegate> *delegate;
 
 + (id)exportedInterface;
 + (id)requestRemoteViewControllerWithConnectionHandler:(id)arg1;

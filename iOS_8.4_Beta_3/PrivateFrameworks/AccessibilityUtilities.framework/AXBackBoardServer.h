@@ -7,8 +7,8 @@
     bool _overrideGestureRecognition;
 }
 
-@property(assign,readwrite) bool inPreboardMode;
-@property(assign,readwrite) bool invertColorsEnabled;
+@property (nonatomic) bool inPreboardMode;
+@property (nonatomic) bool invertColorsEnabled;
 
 + (id)server;
 

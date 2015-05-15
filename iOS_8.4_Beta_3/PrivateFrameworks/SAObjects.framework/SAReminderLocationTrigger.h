@@ -4,10 +4,10 @@
 
 @interface SAReminderLocationTrigger : SAReminderTrigger
 
-@property(assign,copy) NSURL * contactIdentifier;
-@property(assign,copy) NSString * internalGUID;
-@property(assign,retain) SALocation * location;
-@property(assign,copy) NSString * timing;
+@property (nonatomic, copy) NSURL *contactIdentifier;
+@property (nonatomic, copy) NSString *internalGUID;
+@property (nonatomic, retain) SALocation *location;
+@property (nonatomic, copy) NSString *timing;
 
 + (id)locationTrigger;
 + (id)locationTriggerWithDictionary:(id)arg1 context:(id)arg2;

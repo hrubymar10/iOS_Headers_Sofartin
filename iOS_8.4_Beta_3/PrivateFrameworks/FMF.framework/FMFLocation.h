@@ -14,23 +14,23 @@
     NSDate *_timestamp;
 }
 
-@property(assign,readwrite) double TTL;
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) FMFHandle * handle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * label;
-@property(getter=isLocatingInProgress,assign,readwrite) bool locatingInProgress;
-@property(assign,retain) CLLocation * location;
-@property(assign,copy) NSString * longAddress;
-@property(assign,readwrite) double maxLocatingInterval;
-@property(assign,copy) NSString * shortAddress;
-@property(assign,copy) NSString * shortAddressString;
-@property(assign,copy) NSString * subtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSDate * timestamp;
-@property(assign,copy) NSString * title;
+@property (nonatomic) double TTL;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) FMFHandle *handle;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *label;
+@property (getter=isLocatingInProgress, nonatomic) bool locatingInProgress;
+@property (nonatomic, retain) CLLocation *location;
+@property (nonatomic, copy) NSString *longAddress;
+@property (nonatomic) double maxLocatingInterval;
+@property (nonatomic, readonly, copy) NSString *shortAddress;
+@property (nonatomic, copy) NSString *shortAddressString;
+@property (nonatomic, readonly, copy) NSString *subtitle;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSDate *timestamp;
+@property (nonatomic, readonly, copy) NSString *title;
 
 + (bool)supportsSecureCoding;
 

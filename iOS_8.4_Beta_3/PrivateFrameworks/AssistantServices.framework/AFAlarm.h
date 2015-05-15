@@ -10,11 +10,11 @@
     long long _minuteOfHour;
 }
 
-@property(assign,readwrite) long long daysOfWeek;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readwrite) long long hourOfDay;
-@property(assign,copy) NSString * label;
-@property(assign,readwrite) long long minuteOfHour;
+@property (nonatomic) long long daysOfWeek;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic) long long hourOfDay;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic) long long minuteOfHour;
 
 + (bool)supportsSecureCoding;
 

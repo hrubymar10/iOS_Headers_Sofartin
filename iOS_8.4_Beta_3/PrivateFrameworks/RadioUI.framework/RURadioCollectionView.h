@@ -6,8 +6,8 @@
     RURadioStationsCollectionViewTemplate *_radioStationsCollectionViewTemplate;
 }
 
-@property(assign,readwrite) <RURadioCollectionViewDelegate> * delegate;
-@property(assign,readonly) RURadioStationsCollectionViewTemplate * radioStationsCollectionViewTemplate;
+@property (nonatomic) <RURadioCollectionViewDelegate> *delegate;
+@property (nonatomic, readonly) RURadioStationsCollectionViewTemplate *radioStationsCollectionViewTemplate;
 
 - (void).cxx_destruct;
 - (id)dequeueReusableCellWithReuseIdentifier:(id)arg1 forIndexPath:(id)arg2;

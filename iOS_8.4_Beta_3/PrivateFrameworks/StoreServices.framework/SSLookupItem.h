@@ -6,21 +6,21 @@
     NSDictionary *_dictionary;
 }
 
-@property(assign,readonly) NSNumber * ITunesStoreIdentifier;
-@property(getter=isPOIBased,assign,readonly) bool POIBased;
-@property(assign,readonly) NSString * artistName;
-@property(assign,readonly) NSArray * artwork;
-@property(assign,readonly) NSString * bundleIdentifier;
-@property(assign,readonly) NSArray * categoryNames;
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) NSString * itemKind;
-@property(assign,readonly) NSDictionary * lookupDictionary;
-@property(assign,readonly) long long numberOfUserRatings;
-@property(assign,readonly) long long numberOfUserRatingsForCurrentVersion;
-@property(assign,readonly) NSArray * offers;
-@property(assign,readonly) NSURL * productPageURL;
-@property(assign,readonly) float userRating;
-@property(assign,readonly) float userRatingForCurrentVersion;
+@property (nonatomic, readonly) NSNumber *ITunesStoreIdentifier;
+@property (getter=isPOIBased, nonatomic, readonly) bool POIBased;
+@property (nonatomic, readonly) NSString *artistName;
+@property (nonatomic, readonly) NSArray *artwork;
+@property (nonatomic, readonly) NSString *bundleIdentifier;
+@property (nonatomic, readonly) NSArray *categoryNames;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, readonly) NSString *itemKind;
+@property (nonatomic, readonly) NSDictionary *lookupDictionary;
+@property (nonatomic, readonly) long long numberOfUserRatings;
+@property (nonatomic, readonly) long long numberOfUserRatingsForCurrentVersion;
+@property (nonatomic, readonly) NSArray *offers;
+@property (nonatomic, readonly) NSURL *productPageURL;
+@property (nonatomic, readonly) float userRating;
+@property (nonatomic, readonly) float userRatingForCurrentVersion;
 
 - (id)ITunesStoreIdentifier;
 - (id)artistName;

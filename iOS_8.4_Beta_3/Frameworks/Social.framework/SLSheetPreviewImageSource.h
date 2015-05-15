@@ -7,7 +7,7 @@
     ALAssetsLibrary *_assetsLibrary;
 }
 
-@property(assign,readonly) ALAssetsLibrary * assetsLibrary;
+@property (readonly) ALAssetsLibrary *assetsLibrary;
 
 - (void).cxx_destruct;
 - (void)_fetchPreviewImageForAssetURL:(id)arg1 resultBlock:(id)arg2;

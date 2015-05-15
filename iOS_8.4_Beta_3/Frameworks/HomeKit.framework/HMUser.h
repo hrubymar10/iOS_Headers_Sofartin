@@ -7,8 +7,8 @@
     NSUUID *_uuid;
 }
 
-@property(assign,copy) NSString * name;
-@property(assign,retain) NSUUID * uuid;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, retain) NSUUID *uuid;
 
 + (bool)supportsSecureCoding;
 

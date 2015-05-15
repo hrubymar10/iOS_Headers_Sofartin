@@ -13,16 +13,16 @@
     UIViewController *_sourceViewController;
 }
 
-@property(getter=isCancelled,assign,readwrite) bool cancelled;
-@property(assign,copy) id cancelledBlock;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSIndexPath * indexPath;
-@property(assign,readonly) MCDBrowsableContentModel * model;
-@property(assign,readonly) UINavigationController * navigationController;
-@property(assign,readonly) UIViewController * sourceViewController;
-@property(assign,readonly) Class superclass;
+@property (getter=isCancelled, nonatomic) bool cancelled;
+@property (nonatomic, readonly, copy) id cancelledBlock;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSIndexPath *indexPath;
+@property (nonatomic, readonly) MCDBrowsableContentModel *model;
+@property (nonatomic, readonly) UINavigationController *navigationController;
+@property (nonatomic, readonly) UIViewController *sourceViewController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_deregister;

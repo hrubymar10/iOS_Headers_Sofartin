@@ -6,8 +6,8 @@
     id _internalDevice;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * uniqueID;
+@property (nonatomic, readonly, retain) NSString *name;
+@property (nonatomic, readonly, retain) NSString *uniqueID;
 
 - (id)_AVAudioDevice;
 - (id)_initWithAVAudioDevice:(id)arg1;

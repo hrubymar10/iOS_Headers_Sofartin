@@ -7,8 +7,8 @@
     unsigned long long _columnsInPortrait;
 }
 
-@property(assign,readwrite) unsigned long long columnsInLandscape;
-@property(assign,readwrite) unsigned long long columnsInPortrait;
+@property (nonatomic) unsigned long long columnsInLandscape;
+@property (nonatomic) unsigned long long columnsInPortrait;
 
 + (id)dynamicColumnSectionMetricsWithColumnsInPortrait:(unsigned long long)arg1 columnsInLandscape:(unsigned long long)arg2;
 + (id)dynamicColumnSectionMetricsWithColumnsInPortrait:(unsigned long long)arg1 columnsInLandscape:(unsigned long long)arg2 forIdiom:(long long)arg3;

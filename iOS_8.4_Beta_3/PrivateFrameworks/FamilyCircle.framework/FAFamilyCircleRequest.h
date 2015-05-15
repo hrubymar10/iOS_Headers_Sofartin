@@ -7,8 +7,8 @@
     NSString *_usernameOrDSID;
 }
 
-@property(assign,copy) NSString * passwordOrToken;
-@property(assign,copy) NSString * usernameOrDSID;
+@property (copy) NSString *passwordOrToken;
+@property (copy) NSString *usernameOrDSID;
 
 - (void).cxx_destruct;
 - (id)init;

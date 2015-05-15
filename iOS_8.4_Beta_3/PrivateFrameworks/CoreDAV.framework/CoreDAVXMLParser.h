@@ -9,17 +9,17 @@
     CoreDAVXMLElementGenerator *_rootErrorGenerator;
 }
 
-@property(assign,retain) NSURL * baseURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSSet * parseHints;
-@property(assign,readonly) NSError * parserError;
-@property(assign,readonly) CoreDAVItem * rootElement;
-@property(assign,retain) CoreDAVXMLElementGenerator * rootElementGenerator;
-@property(assign,readonly) CoreDAVErrorItem * rootError;
-@property(assign,retain) CoreDAVXMLElementGenerator * rootErrorGenerator;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSURL *baseURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSSet *parseHints;
+@property (readonly) NSError *parserError;
+@property (nonatomic, readonly) CoreDAVItem *rootElement;
+@property (nonatomic, retain) CoreDAVXMLElementGenerator *rootElementGenerator;
+@property (nonatomic, readonly) CoreDAVErrorItem *rootError;
+@property (nonatomic, retain) CoreDAVXMLElementGenerator *rootErrorGenerator;
+@property (readonly) Class superclass;
 
 + (bool)canHandleContentType:(id)arg1;
 

@@ -8,9 +8,9 @@
     bool _sharpen;
 }
 
-@property(assign,readwrite) int radius;
-@property(assign,readwrite) double radiusScale;
-@property(assign,readwrite) bool sharpen;
+@property (nonatomic) int radius;
+@property (nonatomic) double radiusScale;
+@property (nonatomic) bool sharpen;
 
 + (id)layerWithBlur:(int)arg1;
 + (id)layerWithSharpen:(int)arg1;

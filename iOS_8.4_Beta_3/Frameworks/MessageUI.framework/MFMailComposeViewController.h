@@ -9,7 +9,7 @@
     id _setupAnimationBlock;
 }
 
-@property(assign,readwrite) <MFMailComposeViewControllerDelegate> * mailComposeDelegate;
+@property (nonatomic) <MFMailComposeViewControllerDelegate> *mailComposeDelegate;
 
 + (bool)canSendMail;
 + (bool)canSendMailSourceAccountManagement:(int)arg1;

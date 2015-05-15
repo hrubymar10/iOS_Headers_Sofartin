@@ -10,10 +10,10 @@
     UILabel *_valueLabel;
 }
 
-@property(assign,readonly) long long giftConfirmLabelStyle;
-@property(assign,copy) NSString * label;
-@property(assign,copy) NSString * subtitleLabel;
-@property(assign,copy) NSString * value;
+@property (nonatomic, readonly) long long giftConfirmLabelStyle;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, copy) NSString *subtitleLabel;
+@property (nonatomic, copy) NSString *value;
 
 - (void).cxx_destruct;
 - (long long)giftConfirmLabelStyle;

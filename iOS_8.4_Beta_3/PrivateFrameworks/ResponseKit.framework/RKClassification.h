@@ -11,12 +11,12 @@
     NSString *_taggedText;
 }
 
-@property(assign,retain) NSArray * customResponses;
-@property(assign,readwrite) unsigned long long gender;
-@property(assign,retain) NSString * language;
-@property(getter=isSensitive,assign,readwrite) int sensitive;
-@property(assign,readwrite) unsigned long long sentenceType;
-@property(assign,retain) NSString * taggedText;
+@property (retain) NSArray *customResponses;
+@property unsigned long long gender;
+@property (retain) NSString *language;
+@property (getter=isSensitive) int sensitive;
+@property unsigned long long sentenceType;
+@property (retain) NSString *taggedText;
 
 - (void).cxx_destruct;
 - (id)customResponses;

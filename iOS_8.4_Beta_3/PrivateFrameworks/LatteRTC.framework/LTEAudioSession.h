@@ -12,16 +12,16 @@
     id weakSelf;
 }
 
-@property(assign,retain) NSDictionary * capabilities;
-@property(assign,retain) LTEAudioSessionConfig * configuration;
-@property(assign,readwrite) <LTEAudioSessionDelegate> * delegate;
-@property(assign,readwrite) long long direction;
-@property(getter=isRTCPEnabled,assign,readwrite) bool rtcpEnabled;
-@property(assign,readwrite) double rtcpSendIntervalSec;
-@property(getter=isRTCPTimeOutEnabled,assign,readwrite) bool rtcpTimeOutEnabled;
-@property(assign,readwrite) double rtcpTimeOutIntervalSec;
-@property(getter=isRTPTimeOutEnabled,assign,readwrite) bool rtpTimeOutEnabled;
-@property(assign,readwrite) double rtpTimeOutIntervalSec;
+@property (nonatomic, retain) NSDictionary *capabilities;
+@property (nonatomic, retain) LTEAudioSessionConfig *configuration;
+@property (nonatomic) <LTEAudioSessionDelegate> *delegate;
+@property (nonatomic) long long direction;
+@property (getter=isRTCPEnabled, nonatomic) bool rtcpEnabled;
+@property (nonatomic) double rtcpSendIntervalSec;
+@property (getter=isRTCPTimeOutEnabled, nonatomic) bool rtcpTimeOutEnabled;
+@property (nonatomic) double rtcpTimeOutIntervalSec;
+@property (getter=isRTPTimeOutEnabled, nonatomic) bool rtpTimeOutEnabled;
+@property (nonatomic) double rtpTimeOutIntervalSec;
 
 - (id)capabilities;
 - (id)configuration;

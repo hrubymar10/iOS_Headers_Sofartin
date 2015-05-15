@@ -18,14 +18,14 @@
     } _mask;
 }
 
-@property(assign,readwrite) unsigned long long autocapitalizationType;
-@property(assign,readwrite) unsigned long long autocorrectionType;
-@property(assign,readwrite) bool enablesReturnKeyAutomatically;
-@property(assign,readwrite) unsigned long long keyboardAppearance;
-@property(assign,readwrite) unsigned long long keyboardType;
-@property(assign,readwrite) unsigned long long returnKeyType;
-@property(assign,readwrite) bool secureTextEntry;
-@property(assign,readwrite) unsigned long long spellCheckingType;
+@property (nonatomic) unsigned long long autocapitalizationType;
+@property (nonatomic) unsigned long long autocorrectionType;
+@property (nonatomic) bool enablesReturnKeyAutomatically;
+@property (nonatomic) unsigned long long keyboardAppearance;
+@property (nonatomic) unsigned long long keyboardType;
+@property (nonatomic) unsigned long long returnKeyType;
+@property (nonatomic) bool secureTextEntry;
+@property (nonatomic) unsigned long long spellCheckingType;
 
 + (bool)supportsSecureCoding;
 + (id)traitsForUITextInputTraits:(id)arg1;

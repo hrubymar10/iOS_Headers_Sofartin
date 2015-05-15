@@ -7,7 +7,7 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) NSMutableDictionary * clients;
+@property (nonatomic, retain) NSMutableDictionary *clients;
 
 + (void*)createIOSurfaceWithContextIds:(const unsigned int*)arg1 count:(unsigned long long)arg2 frame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg3 scale:(double)arg4 orientation:(long long)arg5 outTransform:(struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; }*)arg6;
 + (id)sharedInstance;

@@ -10,11 +10,11 @@
     UILabel *_verifiedLabel;
 }
 
-@property(assign,retain) UILabel * keyLabel;
-@property(assign,readwrite) double preferredValueLabelOriginX;
-@property(assign,retain) UILabel * valueLabel;
-@property(assign,retain) UIImageView * verifiedImageView;
-@property(assign,retain) UILabel * verifiedLabel;
+@property (nonatomic, retain) UILabel *keyLabel;
+@property (nonatomic) double preferredValueLabelOriginX;
+@property (nonatomic, retain) UILabel *valueLabel;
+@property (nonatomic, retain) UIImageView *verifiedImageView;
+@property (nonatomic, retain) UILabel *verifiedLabel;
 
 + (double)defaultPreferredValueLabelOriginX;
 

@@ -4,7 +4,7 @@
 
 @interface SSMetricsImpressionsEvent : SSMetricsBaseEvent
 
-@property(assign,retain) NSArray * impressionIdentifiers;
+@property (nonatomic, retain) NSArray *impressionIdentifiers;
 
 - (id)description;
 - (id)impressionIdentifiers;

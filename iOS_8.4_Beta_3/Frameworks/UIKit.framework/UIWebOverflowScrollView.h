@@ -10,11 +10,11 @@
     UIWebBrowserView *_webBrowserView;
 }
 
-@property(getter=isBeingRemoved,assign,readwrite) bool beingRemoved;
-@property(assign,retain) DOMNode * node;
-@property(assign,retain) UIWebOverflowContentView * overflowContentView;
-@property(assign,retain) UIWebOverflowScrollListener * scrollListener;
-@property(assign,readwrite) UIWebBrowserView * webBrowserView;
+@property (getter=isBeingRemoved, nonatomic) bool beingRemoved;
+@property (nonatomic, retain) DOMNode *node;
+@property (nonatomic, retain) UIWebOverflowContentView *overflowContentView;
+@property (nonatomic, retain) UIWebOverflowScrollListener *scrollListener;
+@property (nonatomic) UIWebBrowserView *webBrowserView;
 
 - (void)_replaceLayer:(id)arg1;
 - (void)dealloc;

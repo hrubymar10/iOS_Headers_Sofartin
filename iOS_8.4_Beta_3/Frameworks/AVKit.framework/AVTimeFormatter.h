@@ -8,9 +8,9 @@
     long long _style;
 }
 
-@property(assign,readwrite) double formatTemplate;
-@property(getter=isFullWidth,assign,readwrite) bool fullWidth;
-@property(assign,readwrite) long long style;
+@property double formatTemplate;
+@property (getter=isFullWidth) bool fullWidth;
+@property long long style;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)encodeWithCoder:(id)arg1;

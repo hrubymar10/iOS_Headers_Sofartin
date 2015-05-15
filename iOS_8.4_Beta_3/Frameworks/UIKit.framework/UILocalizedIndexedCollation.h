@@ -14,8 +14,8 @@
     NSString *_transform;
 }
 
-@property(assign,readonly) NSArray * sectionIndexTitles;
-@property(assign,readonly) NSArray * sectionTitles;
+@property (nonatomic, readonly) NSArray *sectionIndexTitles;
+@property (nonatomic, readonly) NSArray *sectionTitles;
 
 + (id)collationWithDictionary:(id)arg1;
 + (id)currentCollation;

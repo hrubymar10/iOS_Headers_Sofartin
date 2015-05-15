@@ -6,7 +6,7 @@
     NSDictionary *_restrictions;
 }
 
-@property(assign,retain) NSDictionary * restrictions;
+@property (nonatomic, retain) NSDictionary *restrictions;
 
 + (id)invalidDomainPatternErrorWithPattern:(id)arg1;
 + (bool)isPatternValid:(id)arg1 outError:(id*)arg2;

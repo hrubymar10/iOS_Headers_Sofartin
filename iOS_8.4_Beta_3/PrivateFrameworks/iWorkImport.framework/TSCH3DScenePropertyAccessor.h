@@ -6,7 +6,7 @@
     TSCH3DScene *mScene;
 }
 
-@property(assign,readonly) TSCH3DScene * scene;
+@property (nonatomic, readonly) TSCH3DScene *scene;
 
 + (id)accessorWithScene:(id)arg1;
 

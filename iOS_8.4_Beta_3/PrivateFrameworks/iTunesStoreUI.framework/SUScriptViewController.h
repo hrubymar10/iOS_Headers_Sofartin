@@ -6,27 +6,27 @@
     NSArray *_scriptToolbarItems;
 }
 
-@property(assign,retain) id backgroundColor;
-@property(assign,readonly) NSString * contextDictionary;
-@property(assign,retain) SUScriptViewController * inputAccessoryViewController;
-@property(assign,retain) NSString * modalPresentationStyle;
-@property(assign,readonly) NSString * modalPresentationStyleNameFormSheet;
-@property(assign,readonly) NSString * modalPresentationStyleNameFullScreen;
-@property(assign,readonly) SUScriptViewController * modalViewController;
-@property(assign,retain) UIViewController * nativeViewController;
-@property(assign,readonly) SUScriptNavigationController * navigationController;
-@property(assign,readonly) SUScriptNavigationItem * navigationItem;
-@property(assign,readonly) SUScriptPopOver * popOver;
-@property(assign,readonly) SUScriptViewController * presentingViewController;
-@property(assign,retain) SUScriptSection * section;
-@property(assign,readwrite) id showsLibraryButton;
-@property(assign,readonly) SUScriptSplitViewController * splitViewController;
-@property(assign,copy) id toolbarItems;
-@property(assign,retain) id topBackgroundColor;
-@property(assign,retain) SUScriptViewController * transientViewController;
-@property(assign,readwrite) id usesBlurredBackground;
-@property(assign,readonly) SUScriptViewController * volumeViewController;
-@property(assign,readwrite) id wantsFullScreenLayout;
+@property (retain) id backgroundColor;
+@property (readonly) NSString *contextDictionary;
+@property (retain) SUScriptViewController *inputAccessoryViewController;
+@property (retain) NSString *modalPresentationStyle;
+@property (readonly) NSString *modalPresentationStyleNameFormSheet;
+@property (readonly) NSString *modalPresentationStyleNameFullScreen;
+@property (readonly) SUScriptViewController *modalViewController;
+@property (nonatomic, retain) UIViewController *nativeViewController;
+@property (readonly) SUScriptNavigationController *navigationController;
+@property (readonly) SUScriptNavigationItem *navigationItem;
+@property (readonly) SUScriptPopOver *popOver;
+@property (readonly) SUScriptViewController *presentingViewController;
+@property (retain) SUScriptSection *section;
+@property id showsLibraryButton;
+@property (readonly) SUScriptSplitViewController *splitViewController;
+@property (copy) id toolbarItems;
+@property (retain) id topBackgroundColor;
+@property (retain) SUScriptViewController *transientViewController;
+@property id usesBlurredBackground;
+@property (readonly) SUScriptViewController *volumeViewController;
+@property id wantsFullScreenLayout;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

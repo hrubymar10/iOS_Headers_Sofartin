@@ -4,10 +4,10 @@
 
 @interface SKUIContentUnavailableTemplateElement : SKUIViewElement
 
-@property(assign,readonly) SKUIButtonViewElement * button;
-@property(assign,readonly) SKUIImageViewElement * image;
-@property(assign,readonly) SKUILabelViewElement * messageLabel;
-@property(assign,readonly) SKUILabelViewElement * titleLabel;
+@property (nonatomic, readonly) SKUIButtonViewElement *button;
+@property (nonatomic, readonly) SKUIImageViewElement *image;
+@property (nonatomic, readonly) SKUILabelViewElement *messageLabel;
+@property (nonatomic, readonly) SKUILabelViewElement *titleLabel;
 
 - (id)button;
 - (id)image;

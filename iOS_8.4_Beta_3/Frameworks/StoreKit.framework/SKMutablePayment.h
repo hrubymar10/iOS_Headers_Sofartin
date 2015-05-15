@@ -4,14 +4,14 @@
 
 @interface SKMutablePayment : SKPayment
 
-@property(assign,copy) NSString * applicationUsername;
-@property(assign,copy) NSString * partnerIdentifier;
-@property(assign,copy) NSString * partnerTransactionIdentifier;
-@property(assign,copy) NSString * productIdentifier;
-@property(assign,readwrite) long long quantity;
-@property(assign,copy) NSData * requestData;
-@property(assign,copy) NSDictionary * requestParameters;
-@property(assign,readwrite) bool simulatesAskToBuyInSandbox;
+@property (nonatomic, copy) NSString *applicationUsername;
+@property (nonatomic, copy) NSString *partnerIdentifier;
+@property (nonatomic, copy) NSString *partnerTransactionIdentifier;
+@property (nonatomic, copy) NSString *productIdentifier;
+@property (nonatomic) long long quantity;
+@property (nonatomic, copy) NSData *requestData;
+@property (nonatomic, copy) NSDictionary *requestParameters;
+@property (nonatomic) bool simulatesAskToBuyInSandbox;
 
 - (void)setApplicationUsername:(id)arg1;
 - (void)setPartnerIdentifier:(id)arg1;

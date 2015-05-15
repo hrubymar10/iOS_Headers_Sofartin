@@ -12,13 +12,13 @@
     _UITabBarItemAppearanceStorage *tabItemAppearanceStorage;
 }
 
-@property(assign,retain) UIImage * backgroundImage;
-@property(assign,retain) UIColor * barTintColor;
-@property(assign,copy) NSDictionary * dividerImagesForCoding;
-@property(assign,retain) UIColor * selectedImageTintColor;
-@property(assign,retain) UIImage * selectionIndicatorImage;
-@property(assign,retain) UIImage * shadowImage;
-@property(assign,retain) _UITabBarItemAppearanceStorage * tabItemAppearanceStorage;
+@property (nonatomic, retain) UIImage *backgroundImage;
+@property (nonatomic, retain) UIColor *barTintColor;
+@property (nonatomic, readonly, copy) NSDictionary *dividerImagesForCoding;
+@property (nonatomic, retain) UIColor *selectedImageTintColor;
+@property (nonatomic, retain) UIImage *selectionIndicatorImage;
+@property (nonatomic, retain) UIImage *shadowImage;
+@property (nonatomic, retain) _UITabBarItemAppearanceStorage *tabItemAppearanceStorage;
 
 - (id)_dividerImageForLeftButtonState:(unsigned long long)arg1 rightButtonState:(unsigned long long)arg2;
 - (void)_setDividerImage:(id)arg1 forLeftButtonState:(unsigned long long)arg2 rightButtonState:(unsigned long long)arg3;

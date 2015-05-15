@@ -22,22 +22,22 @@
     struct _DNSServiceRef_t { } *_txtRecordService;
 }
 
-@property(getter=isBusy,assign,readwrite) bool busy;
-@property(assign,readwrite) double connectTimeout;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool moreResolvesComing;
-@property(assign,readwrite) bool needsToTimeout;
-@property(assign,readonly) unsigned int pid;
-@property(assign,readwrite) struct _DNSServiceRef_t { }* resolveService;
-@property(assign,readwrite) int serviceCount;
-@property(assign,readonly) NSString * serviceName;
-@property(assign,readwrite) unsigned int servicePort;
-@property(assign,retain) GKSessionInternal * session;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) struct _DNSServiceRef_t { }* txtRecordService;
+@property (getter=isBusy) bool busy;
+@property double connectTimeout;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSString *displayName;
+@property (readonly) unsigned long long hash;
+@property bool moreResolvesComing;
+@property bool needsToTimeout;
+@property (readonly) unsigned int pid;
+@property struct _DNSServiceRef_t { }*resolveService;
+@property int serviceCount;
+@property (readonly) NSString *serviceName;
+@property unsigned int servicePort;
+@property (nonatomic, retain) GKSessionInternal *session;
+@property (readonly) Class superclass;
+@property struct _DNSServiceRef_t { }*txtRecordService;
 
 + (void)freeLookupList:(struct _DNSServiceRef_t {}**)arg1 andAddrList:(id*)arg2 andInterfaceList:(unsigned int*)arg3 count:(int)arg4;
 

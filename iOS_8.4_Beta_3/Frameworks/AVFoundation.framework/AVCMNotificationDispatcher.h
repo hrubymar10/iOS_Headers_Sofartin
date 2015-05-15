@@ -9,8 +9,8 @@
     NSObject<OS_dispatch_queue> *_listenerObjectsQueue;
 }
 
-@property(assign,readonly) struct opaqueCMNotificationCenter { }* CMNotificationCenter;
-@property(getter=_callbackRegistry,assign,readonly) AVCallbackRegistry * callbackRegistry;
+@property (nonatomic, readonly) struct opaqueCMNotificationCenter { }*CMNotificationCenter;
+@property (getter=_callbackRegistry, nonatomic, readonly) AVCallbackRegistry *callbackRegistry;
 
 + (void)initialize;
 + (id)notificationDispatcherForCMNotificationCenter:(struct opaqueCMNotificationCenter { }*)arg1;

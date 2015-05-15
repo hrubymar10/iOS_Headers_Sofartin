@@ -6,11 +6,11 @@
     TSTLayoutHint *mHint;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) TSTLayoutHint * hint;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) TSTLayoutHint *hint;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (id)hint;

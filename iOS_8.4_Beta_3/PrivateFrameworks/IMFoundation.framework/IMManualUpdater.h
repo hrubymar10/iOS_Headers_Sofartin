@@ -8,9 +8,9 @@
     id _target;
 }
 
-@property(assign,readwrite) SEL action;
-@property(assign,readwrite) bool needsUpdate;
-@property(assign,readwrite) id target;
+@property (nonatomic) SEL action;
+@property (nonatomic) bool needsUpdate;
+@property (nonatomic) id target;
 
 - (SEL)action;
 - (id)description;

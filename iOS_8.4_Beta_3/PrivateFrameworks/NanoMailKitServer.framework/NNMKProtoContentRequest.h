@@ -12,12 +12,12 @@
     NSString *_messageId;
 }
 
-@property(assign,readwrite) unsigned int fullSyncVersion;
-@property(assign,readwrite) bool hasFullSyncVersion;
-@property(assign,readwrite) bool hasHighPriority;
-@property(assign,readonly) bool hasMessageId;
-@property(assign,readwrite) bool highPriority;
-@property(assign,retain) NSString * messageId;
+@property (nonatomic) unsigned int fullSyncVersion;
+@property (nonatomic) bool hasFullSyncVersion;
+@property (nonatomic) bool hasHighPriority;
+@property (nonatomic, readonly) bool hasMessageId;
+@property (nonatomic) bool highPriority;
+@property (nonatomic, retain) NSString *messageId;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

@@ -13,12 +13,12 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int callStatus;
-@property(assign,readwrite) unsigned int callType;
-@property(assign,readwrite) bool hasCallStatus;
-@property(assign,readwrite) bool hasCallType;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int callStatus;
+@property (nonatomic) unsigned int callType;
+@property (nonatomic) bool hasCallStatus;
+@property (nonatomic) bool hasCallType;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long timestamp;
 
 - (unsigned int)callStatus;
 - (unsigned int)callType;

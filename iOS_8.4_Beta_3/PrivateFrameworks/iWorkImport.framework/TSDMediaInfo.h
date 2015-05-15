@@ -13,14 +13,14 @@
     } mOriginalSize;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } defaultOriginalSize;
-@property(assign,readwrite) unsigned int flags;
-@property(assign,readwrite) bool isPlaceholder;
-@property(assign,readonly) NSString * mediaDisplayName;
-@property(assign,readonly) NSString * mediaFileType;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } originalSize;
-@property(assign,readonly) struct CGSize { double x1; double x2; } rawDataSize;
-@property(assign,readwrite) bool wasMediaReplaced;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } defaultOriginalSize;
+@property (nonatomic) unsigned int flags;
+@property (nonatomic) bool isPlaceholder;
+@property (nonatomic, readonly) NSString *mediaDisplayName;
+@property (nonatomic, readonly) NSString *mediaFileType;
+@property (nonatomic) struct CGSize { double x1; double x2; } originalSize;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } rawDataSize;
+@property (nonatomic) bool wasMediaReplaced;
 
 - (struct CGPoint { double x1; double x2; })centerForReplacingWithNewMedia;
 - (id)copyWithContext:(id)arg1;

@@ -11,13 +11,13 @@
     <NSCoding> *_transportUserIdentifier;
 }
 
-@property(getter=isCancelled,assign,readwrite) bool cancelled;
-@property(assign,retain) <CPLEngineSyncTaskDelegate> * delegate;
-@property(assign,readonly) CPLEngineLibrary * engineLibrary;
-@property(assign,readwrite) bool foreground;
-@property(getter=isPaused,assign,readwrite) bool paused;
-@property(assign,readonly) NSString * taskIdentifier;
-@property(assign,retain) <NSCoding> * transportUserIdentifier;
+@property (getter=isCancelled) bool cancelled;
+@property (retain) <CPLEngineSyncTaskDelegate> *delegate;
+@property (nonatomic, readonly) CPLEngineLibrary *engineLibrary;
+@property (nonatomic) bool foreground;
+@property (getter=isPaused) bool paused;
+@property (nonatomic, readonly) NSString *taskIdentifier;
+@property (nonatomic, retain) <NSCoding> *transportUserIdentifier;
 
 + (id)taskWithEngineLibrary:(id)arg1;
 

@@ -11,10 +11,10 @@
     UITapGestureRecognizer *_tapGestureRecognizer;
 }
 
-@property(assign,readwrite) <MusicUpNextNowPlayingLockupViewDelegate> * dismissalDelegate;
-@property(assign,retain) UIView * itemContentViewContainerView;
-@property(assign,retain) MPAVController * player;
-@property(assign,readonly) UITapGestureRecognizer * tapGestureRecognizer;
+@property (nonatomic) <MusicUpNextNowPlayingLockupViewDelegate> *dismissalDelegate;
+@property (nonatomic, retain) UIView *itemContentViewContainerView;
+@property (nonatomic, retain) MPAVController *player;
+@property (nonatomic, readonly) UITapGestureRecognizer *tapGestureRecognizer;
 
 - (void).cxx_destruct;
 - (void)_handleTap:(id)arg1;

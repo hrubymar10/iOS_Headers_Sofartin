@@ -13,8 +13,8 @@
     NSMutableArray *_vendedMaskViews;
 }
 
-@property(assign,readonly) UIColor * calloutBackgroundColor;
-@property(assign,readwrite) unsigned long long mapDisplayStyle;
+@property (nonatomic, readonly) UIColor *calloutBackgroundColor;
+@property (nonatomic) unsigned long long mapDisplayStyle;
 
 + (double)_contentViewCornerRadiusForArrowDirection:(unsigned long long)arg1;
 + (double)arrowBase;

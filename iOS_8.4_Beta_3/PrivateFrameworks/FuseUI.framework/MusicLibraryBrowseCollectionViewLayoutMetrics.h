@@ -31,15 +31,15 @@
     bool _wantsEdgeToEdgeLayout;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } headerSize;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } headerViewContentInsets;
-@property(assign,readwrite) double itemHeight;
-@property(assign,readonly) struct CGSize { double x1; double x2; } itemSize;
-@property(assign,readwrite) double itemWidth;
-@property(assign,readwrite) double minimumInteritemSpacing;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } sectionInsets;
-@property(assign,readwrite) bool wantsEdgeToEdgeLayout;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic) struct CGSize { double x1; double x2; } headerSize;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } headerViewContentInsets;
+@property (nonatomic) double itemHeight;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } itemSize;
+@property (nonatomic) double itemWidth;
+@property (nonatomic) double minimumInteritemSpacing;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } sectionInsets;
+@property (nonatomic) bool wantsEdgeToEdgeLayout;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })contentInsets;
 - (id)description;

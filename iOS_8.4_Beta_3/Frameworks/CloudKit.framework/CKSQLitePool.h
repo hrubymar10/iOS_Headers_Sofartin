@@ -9,10 +9,10 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,retain) NSMutableArray * dbs;
-@property(assign,readwrite) bool drainScheduled;
-@property(assign,copy) id factory;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, retain) NSMutableArray *dbs;
+@property (nonatomic) bool drainScheduled;
+@property (nonatomic, readonly, copy) id factory;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 - (void).cxx_destruct;
 - (id)_acquireDatabaseWithError:(id*)arg1;

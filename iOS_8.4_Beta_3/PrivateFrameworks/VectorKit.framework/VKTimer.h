@@ -7,7 +7,7 @@
     NSObject<OS_dispatch_source> *_source;
 }
 
-@property(assign,readonly) double nextFireDate;
+@property (nonatomic, readonly) double nextFireDate;
 
 - (void)dealloc;
 - (void)disable;

@@ -12,8 +12,8 @@
     bool _shouldSuppressRemoteInputController;
 }
 
-@property(assign,retain) UIViewController * inputController;
-@property(assign,retain) UIView * inputControllerSnapshot;
+@property (nonatomic, retain) UIViewController *inputController;
+@property (nonatomic, retain) UIView *inputControllerSnapshot;
 
 + (bool)_requiresProxyInterface;
 + (bool)_shouldForwardViewWillTransitionToSize;

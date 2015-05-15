@@ -9,10 +9,10 @@
     double _nextTry;
 }
 
-@property(assign,retain) NSString * containerID;
-@property(assign,readonly) double delay;
-@property(assign,readonly) int lastErrorKind;
-@property(assign,readonly) double nextTry;
+@property (nonatomic, retain) NSString *containerID;
+@property (nonatomic, readonly) double delay;
+@property (nonatomic, readonly) int lastErrorKind;
+@property (nonatomic, readonly) double nextTry;
 
 + (bool)supportsSecureCoding;
 

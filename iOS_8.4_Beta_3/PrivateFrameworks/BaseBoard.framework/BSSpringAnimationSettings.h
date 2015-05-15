@@ -10,10 +10,10 @@
     double _stiffness;
 }
 
-@property(assign,readonly) double damping;
-@property(assign,readonly) double epsilon;
-@property(assign,readonly) double mass;
-@property(assign,readonly) double stiffness;
+@property (nonatomic, readonly) double damping;
+@property (nonatomic, readonly) double epsilon;
+@property (nonatomic, readonly) double mass;
+@property (nonatomic, readonly) double stiffness;
 
 + (id)settingsWithMass:(double)arg1 stiffness:(double)arg2 damping:(double)arg3;
 + (id)settingsWithMass:(double)arg1 stiffness:(double)arg2 damping:(double)arg3 epsilon:(double)arg4;

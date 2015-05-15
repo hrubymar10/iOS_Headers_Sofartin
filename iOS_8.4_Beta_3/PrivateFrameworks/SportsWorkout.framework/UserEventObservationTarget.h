@@ -6,7 +6,7 @@
     NSString *_event;
 }
 
-@property(assign,retain) NSString * event;
+@property (nonatomic, retain) NSString *event;
 
 + (id)targetWithEvent:(id)arg1 selector:(SEL)arg2;
 

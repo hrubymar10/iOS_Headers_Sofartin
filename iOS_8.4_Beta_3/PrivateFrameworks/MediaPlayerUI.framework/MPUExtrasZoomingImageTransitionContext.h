@@ -9,10 +9,10 @@
     MPUExtrasBorderedImageView *_zoomingImageView;
 }
 
-@property(assign,readwrite) unsigned long long appearState;
-@property(getter=isInteractive,assign,readwrite) bool interactive;
-@property(assign,readwrite) unsigned long long itemIndex;
-@property(assign,retain) MPUExtrasBorderedImageView * zoomingImageView;
+@property (nonatomic) unsigned long long appearState;
+@property (getter=isInteractive, nonatomic) bool interactive;
+@property (nonatomic) unsigned long long itemIndex;
+@property (nonatomic, retain) MPUExtrasBorderedImageView *zoomingImageView;
 
 - (void).cxx_destruct;
 - (unsigned long long)appearState;

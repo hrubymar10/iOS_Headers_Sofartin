@@ -13,11 +13,11 @@
     unsigned short mStartIndex;
 }
 
-@property(assign,readonly) unsigned short endIndex;
-@property(assign,readonly) bool isIdentityMapping;
-@property(assign,readonly) unsigned short* mapping;
-@property(assign,readonly) unsigned short mappingSize;
-@property(assign,readonly) unsigned short startIndex;
+@property (nonatomic, readonly) unsigned short endIndex;
+@property (nonatomic, readonly) bool isIdentityMapping;
+@property (nonatomic, readonly) unsigned short*mapping;
+@property (nonatomic, readonly) unsigned short mappingSize;
+@property (nonatomic, readonly) unsigned short startIndex;
 
 - (id)copyInverse;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -25,23 +25,23 @@
     } _wizardFlags;
 }
 
-@property(assign,copy) id alertHandler;
-@property(assign,readwrite) bool allowCancel;
-@property(assign,readwrite) bool allowSMS;
-@property(assign,retain) _UIBackdropView * backdropView;
-@property(assign,readwrite) bool canShowDisabledScreen;
-@property(assign,readwrite) bool canShowSplashScreen;
-@property(assign,readwrite) bool canStartNested;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) <CNFRegWizardControllerDelegate> * firstRunDelegate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hideLearnMoreButton;
-@property(assign,retain) CNFRegController * regController;
-@property(assign,readwrite) bool shouldListenForSuspension;
-@property(assign,readwrite) bool shouldTerminateInBackground;
-@property(assign,readwrite) bool showSplashOnSignin;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id alertHandler;
+@property (nonatomic) bool allowCancel;
+@property (nonatomic) bool allowSMS;
+@property (nonatomic, retain) _UIBackdropView *backdropView;
+@property (nonatomic) bool canShowDisabledScreen;
+@property (nonatomic) bool canShowSplashScreen;
+@property (nonatomic) bool canStartNested;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) <CNFRegWizardControllerDelegate> *firstRunDelegate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hideLearnMoreButton;
+@property (nonatomic, retain) CNFRegController *regController;
+@property (nonatomic) bool shouldListenForSuspension;
+@property (nonatomic) bool shouldTerminateInBackground;
+@property (nonatomic) bool showSplashOnSignin;
+@property (readonly) Class superclass;
 
 + (void)setGlobalAppearanceStyle:(long long)arg1;
 + (void)setSupportsAutoRotation:(bool)arg1;

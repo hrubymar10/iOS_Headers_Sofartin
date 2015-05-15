@@ -9,10 +9,10 @@
     double _wallTimestamp;
 }
 
-@property(assign,readonly) bool isMicrostackshot;
-@property(assign,readonly) double machTimestamp;
-@property(assign,readonly) PAMicrostackshotData * microstackshotData;
-@property(assign,readonly) double wallTimestamp;
+@property (readonly) bool isMicrostackshot;
+@property (readonly) double machTimestamp;
+@property (readonly) PAMicrostackshotData *microstackshotData;
+@property (readonly) double wallTimestamp;
 
 - (void)dealloc;
 - (id)initWithGlobalTrace;

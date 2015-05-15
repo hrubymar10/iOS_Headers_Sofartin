@@ -4,18 +4,18 @@
 
 @interface SASTTSSelectionStatistics : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * completionType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * interactionId;
-@property(assign,copy) NSArray * listenedItems;
-@property(assign,copy) NSString * refId;
-@property(assign,readwrite) long long selectedItemIndex;
-@property(assign,copy) NSString * sessionId;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * timesListened;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic, copy) NSString *completionType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *interactionId;
+@property (nonatomic, copy) NSArray *listenedItems;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic) long long selectedItemIndex;
+@property (nonatomic, copy) NSString *sessionId;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *timesListened;
 
 + (id)tTSSelectionStatistics;
 + (id)tTSSelectionStatisticsWithDictionary:(id)arg1 context:(id)arg2;

@@ -4,7 +4,7 @@
 
 @interface TSDMediaStyle : TSSStyle <TSDMixing, TSSPreset>
 
-@property(assign,readonly) NSString * presetKind;
+@property (nonatomic, readonly) NSString *presetKind;
 
 + (float)defaultFloatValueForProperty:(int)arg1;
 + (id)defaultValueForProperty:(int)arg1;

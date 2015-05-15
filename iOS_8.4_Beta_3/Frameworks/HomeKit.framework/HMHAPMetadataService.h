@@ -9,10 +9,10 @@
     NSString *_type;
 }
 
-@property(assign,retain) NSString * localizedDescription;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * svcDescription;
-@property(assign,retain) NSString * type;
+@property (nonatomic, retain) NSString *localizedDescription;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *svcDescription;
+@property (nonatomic, retain) NSString *type;
 
 + (bool)supportsSecureCoding;
 

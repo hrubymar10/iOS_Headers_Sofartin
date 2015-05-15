@@ -9,10 +9,10 @@
     long long _trigger_timestamp;
 }
 
-@property(assign,retain) NSString * fbq;
-@property(assign,retain) NSArray * hidden;
-@property(assign,retain) NSArray * results;
-@property(assign,readwrite) long long trigger_timestamp;
+@property (nonatomic, retain) NSString *fbq;
+@property (nonatomic, retain) NSArray *hidden;
+@property (nonatomic, retain) NSArray *results;
+@property (nonatomic) long long trigger_timestamp;
 
 + (bool)supportsSecureCoding;
 

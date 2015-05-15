@@ -24,14 +24,14 @@
     unsigned long long _signingStatusSemaphore;
 }
 
-@property(assign,readwrite) <MFSecureMIMECompositionManagerDelegate> * delegate;
-@property(assign,readonly) int encryptionPolicy;
-@property(assign,readonly) int encryptionStatus;
-@property(assign,readonly) NSSet * recipients;
-@property(assign,readonly) MailAccount * sendingAccount;
-@property(assign,copy) NSString * sendingAddress;
-@property(assign,readonly) int signingPolicy;
-@property(assign,readonly) int signingStatus;
+@property <MFSecureMIMECompositionManagerDelegate> *delegate;
+@property (readonly) int encryptionPolicy;
+@property (readonly) int encryptionStatus;
+@property (readonly) NSSet *recipients;
+@property (readonly) MailAccount *sendingAccount;
+@property (copy) NSString *sendingAddress;
+@property (readonly) int signingPolicy;
+@property (readonly) int signingStatus;
 
 + (id)copyEncryptionCertificatesForAccount:(id)arg1 recipientAddress:(id)arg2 error:(id*)arg3;
 + (struct __SecIdentity { }*)copyEncryptionIdentityForAccount:(id)arg1 sendingAddress:(id)arg2 error:(id*)arg3;

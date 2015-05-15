@@ -8,9 +8,9 @@
     NSUUID *_persistentPairingUUID;
 }
 
-@property(assign,retain) NSDate * creationDate;
-@property(assign,retain) NSUUID * healthPairingUUID;
-@property(assign,retain) NSUUID * persistentPairingUUID;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic, retain) NSUUID *healthPairingUUID;
+@property (nonatomic, retain) NSUUID *persistentPairingUUID;
 
 + (id)pairingRecordWithPersistentPairingUUID:(id)arg1 healthPairingUUID:(id)arg2 creationDate:(id)arg3;
 

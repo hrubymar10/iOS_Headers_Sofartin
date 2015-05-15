@@ -7,8 +7,8 @@
     NSMutableArray *_folders;
 }
 
-@property(assign,retain) NSMutableArray * files;
-@property(assign,retain) NSMutableArray * folders;
+@property (retain) NSMutableArray *files;
+@property (retain) NSMutableArray *folders;
 
 - (void)dealloc;
 - (id)files;

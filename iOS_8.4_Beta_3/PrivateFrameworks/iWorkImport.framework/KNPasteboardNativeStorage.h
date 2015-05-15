@@ -26,21 +26,21 @@
     NSDictionary *mThemeCurves;
 }
 
-@property(assign,readonly) NSArray * buildChunks;
-@property(assign,readonly) NSSet * builds;
-@property(assign,readonly) NSSet * collapsedSlideNodes;
-@property(assign,readonly) NSArray * displayedSlideNodes;
-@property(assign,readonly) NSArray * drawables;
-@property(assign,readonly) NSArray * geometriesInRoot;
-@property(assign,readonly) NSArray * nonPlaceholderDrawables;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } originalShowSize;
-@property(assign,readonly) NSSet * outlineCollapsedSlideNodes;
-@property(assign,readonly) NSSet * outlineHasBodySlideNodes;
-@property(assign,readonly) NSArray * placeholderDrawables;
-@property(assign,readonly) NSString * slideNodeUUID;
-@property(assign,readonly) NSArray * slideNodes;
-@property(assign,readonly) NSArray * textStorageTitleRanges;
-@property(assign,readonly) NSDictionary * themeCurves;
+@property (nonatomic, readonly) NSArray *buildChunks;
+@property (nonatomic, readonly) NSSet *builds;
+@property (nonatomic, readonly) NSSet *collapsedSlideNodes;
+@property (nonatomic, readonly) NSArray *displayedSlideNodes;
+@property (nonatomic, readonly) NSArray *drawables;
+@property (nonatomic, readonly) NSArray *geometriesInRoot;
+@property (nonatomic, readonly) NSArray *nonPlaceholderDrawables;
+@property (nonatomic) struct CGSize { double x1; double x2; } originalShowSize;
+@property (nonatomic, readonly) NSSet *outlineCollapsedSlideNodes;
+@property (nonatomic, readonly) NSSet *outlineHasBodySlideNodes;
+@property (nonatomic, readonly) NSArray *placeholderDrawables;
+@property (nonatomic, readonly) NSString *slideNodeUUID;
+@property (nonatomic, readonly) NSArray *slideNodes;
+@property (nonatomic, readonly) NSArray *textStorageTitleRanges;
+@property (nonatomic, readonly) NSDictionary *themeCurves;
 
 - (id)buildChunks;
 - (id)builds;

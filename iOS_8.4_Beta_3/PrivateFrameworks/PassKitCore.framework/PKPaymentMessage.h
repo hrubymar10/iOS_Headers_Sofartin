@@ -12,13 +12,13 @@
     NSDate *_messageDate;
 }
 
-@property(assign,readwrite) bool allowDeepLink;
-@property(assign,copy) NSString * content;
-@property(assign,copy) NSDate * expirationDate;
-@property(assign,readwrite) bool expiresOnNextTransaction;
-@property(assign,readwrite) bool hasAssociatedPaymentApplication;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSDate * messageDate;
+@property (nonatomic) bool allowDeepLink;
+@property (nonatomic, copy) NSString *content;
+@property (nonatomic, copy) NSDate *expirationDate;
+@property (nonatomic) bool expiresOnNextTransaction;
+@property (nonatomic) bool hasAssociatedPaymentApplication;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSDate *messageDate;
 
 + (id)paymentMessageWithDictionary:(id)arg1;
 + (bool)supportsSecureCoding;

@@ -12,13 +12,13 @@
     unsigned int _transportType;
 }
 
-@property(assign,retain) NSArray * characteristicTypes;
-@property(assign,readwrite) unsigned int duration;
-@property(assign,readwrite) unsigned int isClient;
-@property(assign,readwrite) int resultCode;
-@property(assign,readwrite) unsigned int resultType;
-@property(assign,retain) NSArray * serviceTypes;
-@property(assign,readwrite) unsigned int transportType;
+@property (nonatomic, retain) NSArray *characteristicTypes;
+@property (nonatomic) unsigned int duration;
+@property (nonatomic) unsigned int isClient;
+@property (nonatomic) int resultCode;
+@property (nonatomic) unsigned int resultType;
+@property (nonatomic, retain) NSArray *serviceTypes;
+@property (nonatomic) unsigned int transportType;
 
 - (void).cxx_destruct;
 - (id)characteristicTypes;

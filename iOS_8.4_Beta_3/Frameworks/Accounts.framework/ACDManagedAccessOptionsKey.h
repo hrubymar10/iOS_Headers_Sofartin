@@ -4,7 +4,7 @@
 
 @interface ACDManagedAccessOptionsKey : NSManagedObject
 
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSSet * owningAccountTypes;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSSet *owningAccountTypes;
 
 @end

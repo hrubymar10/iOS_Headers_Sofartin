@@ -10,14 +10,14 @@
     } _frame;
 }
 
-@property(assign,readonly) unsigned char destination;
-@property(assign,readonly) struct CECFrame { unsigned char x1[16]; unsigned int x2 : 5; unsigned int x3 : 3; } frame;
-@property(assign,readonly) unsigned char initiator;
-@property(assign,readonly) bool isBroadcast;
-@property(assign,readonly) unsigned char length;
-@property(assign,readonly) int messageType;
-@property(assign,readonly) double nominalLatency;
-@property(assign,readonly) bool shouldBeIgnored;
+@property (nonatomic, readonly) unsigned char destination;
+@property (nonatomic, readonly) struct CECFrame { unsigned char x1[16]; unsigned int x2 : 5; unsigned int x3 : 3; } frame;
+@property (nonatomic, readonly) unsigned char initiator;
+@property (nonatomic, readonly) bool isBroadcast;
+@property (nonatomic, readonly) unsigned char length;
+@property (nonatomic, readonly) int messageType;
+@property (nonatomic, readonly) double nominalLatency;
+@property (nonatomic, readonly) bool shouldBeIgnored;
 
 + (id)abortFrom:(unsigned char)arg1 to:(unsigned char)arg2;
 + (id)activeSourceFrom:(unsigned char)arg1 physicalAddress:(unsigned short)arg2;

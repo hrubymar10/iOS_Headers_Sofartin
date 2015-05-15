@@ -17,18 +17,18 @@
     int _type;
 }
 
-@property(assign,readwrite) unsigned int dataLength;
-@property(assign,readwrite) bool hasDataLength;
-@property(assign,readwrite) bool hasNumPeers;
-@property(assign,readonly) bool hasPeers;
-@property(assign,readonly) bool hasSessionId;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) unsigned int numPeers;
-@property(assign,retain) NSData * peers;
-@property(assign,retain) NSString * sessionId;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) int type;
+@property (nonatomic) unsigned int dataLength;
+@property (nonatomic) bool hasDataLength;
+@property (nonatomic) bool hasNumPeers;
+@property (nonatomic, readonly) bool hasPeers;
+@property (nonatomic, readonly) bool hasSessionId;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasType;
+@property (nonatomic) unsigned int numPeers;
+@property (nonatomic, retain) NSData *peers;
+@property (nonatomic, retain) NSString *sessionId;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) int type;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

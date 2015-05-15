@@ -4,14 +4,14 @@
 
 @interface DOMHTMLButtonElement : DOMHTMLElement
 
-@property(assign,copy) NSString * accessKey;
-@property(assign,readwrite) bool autofocus;
-@property(assign,readwrite) bool disabled;
-@property(assign,readonly) DOMHTMLFormElement * form;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * type;
-@property(assign,copy) NSString * value;
-@property(assign,readonly) bool willValidate;
+@property (copy) NSString *accessKey;
+@property bool autofocus;
+@property bool disabled;
+@property (readonly) DOMHTMLFormElement *form;
+@property (copy) NSString *name;
+@property (copy) NSString *type;
+@property (copy) NSString *value;
+@property (readonly) bool willValidate;
 
 - (id)accessKey;
 - (bool)autofocus;

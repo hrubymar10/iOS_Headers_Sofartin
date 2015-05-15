@@ -24,15 +24,15 @@
     SUTextContentView *_textContentView;
 }
 
-@property(assign,readonly) long long composeReviewStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIComposeReviewViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isLoading,assign,readwrite) bool loading;
-@property(assign,readwrite) float rating;
-@property(assign,readonly) Class superclass;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (nonatomic, readonly) long long composeReviewStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIComposeReviewViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isLoading, nonatomic) bool loading;
+@property (nonatomic) float rating;
+@property (readonly) Class superclass;
+@property (getter=isValid, nonatomic, readonly) bool valid;
 
 - (void).cxx_destruct;
 - (id)_body;

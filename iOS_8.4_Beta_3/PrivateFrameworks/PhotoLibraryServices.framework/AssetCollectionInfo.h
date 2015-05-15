@@ -14,15 +14,15 @@
     NSNumber *_width;
 }
 
-@property(assign,retain) NSString * GUID;
-@property(assign,readonly) bool hasVideoAsset;
-@property(assign,retain) NSNumber * height;
-@property(assign,readonly) bool isDeletable;
-@property(assign,readonly) bool isMine;
-@property(assign,retain) NSDictionary * metaData;
-@property(assign,retain) NSString * personID;
-@property(assign,retain) NSDate * timestamp;
-@property(assign,retain) NSNumber * width;
+@property (nonatomic, readonly, retain) NSString *GUID;
+@property (nonatomic, readonly) bool hasVideoAsset;
+@property (nonatomic, readonly, retain) NSNumber *height;
+@property (nonatomic, readonly) bool isDeletable;
+@property (nonatomic, readonly) bool isMine;
+@property (nonatomic, readonly, retain) NSDictionary *metaData;
+@property (nonatomic, readonly, retain) NSString *personID;
+@property (nonatomic, readonly, retain) NSDate *timestamp;
+@property (nonatomic, readonly, retain) NSNumber *width;
 
 + (bool)supportsSecureCoding;
 

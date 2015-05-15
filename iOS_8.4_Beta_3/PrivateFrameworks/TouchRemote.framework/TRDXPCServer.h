@@ -9,12 +9,12 @@
     unsigned long long _serverStartCount;
 }
 
-@property(assign,readonly) NSArray * connections;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * remoteClientProxies;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *connections;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *remoteClientProxies;
+@property (readonly) Class superclass;
 
 + (id)sharedServer;
 

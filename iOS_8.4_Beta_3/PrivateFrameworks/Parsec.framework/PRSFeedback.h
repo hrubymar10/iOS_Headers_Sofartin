@@ -7,9 +7,9 @@
     long long _timestamp;
 }
 
-@property(assign,readonly) NSString * input;
-@property(assign,readwrite) long long timestamp;
-@property(assign,readonly) NSString * type;
+@property (nonatomic, readonly) NSString *input;
+@property (nonatomic) long long timestamp;
+@property (nonatomic, readonly) NSString *type;
 
 + (id)JSONDictionaryForFeedbackArray:(id)arg1 enableFeedbackDebugLogging:(bool)arg2;
 + (bool)supportsSecureCoding;

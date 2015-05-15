@@ -7,11 +7,11 @@
     NSString *_directory;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isPlaying;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isPlaying;
+@property (readonly) Class superclass;
 
 + (void)__clearSharedPlayQueue;
 + (void)__deactivateAudioSession;

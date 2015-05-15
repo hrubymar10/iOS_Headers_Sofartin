@@ -32,9 +32,9 @@
     int _zoomLock;
 }
 
-@property(assign,readonly) float appliedZoomFactor;
-@property(assign,readwrite) float requestedZoomFactor;
-@property(assign,readwrite) <BWZoomCompletionDelegate> * zoomCompletionDelegate;
+@property (readonly) float appliedZoomFactor;
+@property float requestedZoomFactor;
+@property (nonatomic) <BWZoomCompletionDelegate> *zoomCompletionDelegate;
 
 + (void)initialize;
 

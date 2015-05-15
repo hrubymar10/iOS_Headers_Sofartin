@@ -25,22 +25,22 @@
     const char *_weakLayout;
 }
 
-@property(assign,readonly) NSString * binaryName;
-@property(assign,readonly) NSString * className;
-@property(assign,readonly) NSString * fullIvarDescription;
-@property(assign,readonly) bool hasCppConstructorOrDestructor;
-@property(assign,readonly) bool hasSpecificLayout;
-@property(assign,readonly) int infoType;
-@property(assign,readonly) unsigned int instanceSize;
-@property(assign,readonly) bool isARR;
-@property(assign,readonly) bool isMetaClass;
-@property(assign,readonly) bool isRealized;
-@property(assign,readonly) bool isRootClass;
-@property(assign,readonly) unsigned long long remoteIsa;
-@property(assign,readonly) NSString * shortIvarDescription;
-@property(assign,readonly) unsigned long long specificInstance;
-@property(assign,readonly) VMUClassInfo * superclassInfo;
-@property(assign,readonly) NSString * typeName;
+@property (readonly) NSString *binaryName;
+@property (readonly) NSString *className;
+@property (readonly) NSString *fullIvarDescription;
+@property (readonly) bool hasCppConstructorOrDestructor;
+@property (nonatomic, readonly) bool hasSpecificLayout;
+@property (readonly) int infoType;
+@property (readonly) unsigned int instanceSize;
+@property (readonly) bool isARR;
+@property (readonly) bool isMetaClass;
+@property (readonly) bool isRealized;
+@property (readonly) bool isRootClass;
+@property (readonly) unsigned long long remoteIsa;
+@property (readonly) NSString *shortIvarDescription;
+@property (readonly) unsigned long long specificInstance;
+@property (readonly) VMUClassInfo *superclassInfo;
+@property (readonly) NSString *typeName;
 
 + (id)classInfoWithClassName:(id)arg1 binaryName:(id)arg2 type:(int)arg3;
 + (id)descriptionForTypeEncoding:(const char *)arg1 ivarName:(const char *)arg2;

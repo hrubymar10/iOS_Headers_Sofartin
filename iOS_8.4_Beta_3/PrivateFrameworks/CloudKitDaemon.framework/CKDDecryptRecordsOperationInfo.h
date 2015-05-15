@@ -7,8 +7,8 @@
     NSDictionary *_webSharingIdentityDataByRecordID;
 }
 
-@property(assign,retain) NSArray * recordsToDecrypt;
-@property(assign,retain) NSDictionary * webSharingIdentityDataByRecordID;
+@property (nonatomic, retain) NSArray *recordsToDecrypt;
+@property (nonatomic, retain) NSDictionary *webSharingIdentityDataByRecordID;
 
 - (void).cxx_destruct;
 - (id)recordsToDecrypt;

@@ -7,9 +7,9 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,retain) GEOPDAutocompleteEntry * autocompleteEntry;
-@property(assign,readonly) bool hasAutocompleteEntry;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, retain) GEOPDAutocompleteEntry *autocompleteEntry;
+@property (nonatomic, readonly) bool hasAutocompleteEntry;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 + (id)storageForCompletionItem:(id)arg1;
 

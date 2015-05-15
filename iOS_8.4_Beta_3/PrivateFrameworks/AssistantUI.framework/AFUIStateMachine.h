@@ -8,9 +8,9 @@
     long long _state;
 }
 
-@property(assign,readwrite) <AFUIStateMachineDelegate> * delegate;
-@property(getter=_endStatesByEventByStartState,assign,retain) NSMutableDictionary * endStatesByEventByStartState;
-@property(assign,readwrite) long long state;
+@property (nonatomic) <AFUIStateMachineDelegate> *delegate;
+@property (getter=_endStatesByEventByStartState, nonatomic, retain) NSMutableDictionary *endStatesByEventByStartState;
+@property (nonatomic) long long state;
 
 - (void).cxx_destruct;
 - (id)_descriptionForEvent:(long long)arg1;

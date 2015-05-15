@@ -7,8 +7,8 @@
     bool _snapsToItemCenters;
 }
 
-@property(assign,readwrite) bool snapsToItemBoundaries;
-@property(assign,readwrite) bool snapsToItemCenters;
+@property (nonatomic) bool snapsToItemBoundaries;
+@property (nonatomic) bool snapsToItemCenters;
 
 + (double)snapToBoundariesDecelerationRate;
 

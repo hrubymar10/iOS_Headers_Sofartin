@@ -6,7 +6,7 @@
     bool _RTL;
 }
 
-@property(assign,readwrite) bool RTL;
+@property (nonatomic) bool RTL;
 
 - (bool)RTL;
 - (void)layoutSubviews;

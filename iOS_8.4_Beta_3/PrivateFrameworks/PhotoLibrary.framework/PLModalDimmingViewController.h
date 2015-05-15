@@ -8,7 +8,7 @@
     UIView *_wrapperView;
 }
 
-@property(assign,retain) UIViewController<PLModalDimmingContained> * contentViewController;
+@property (nonatomic, retain) UIViewController<PLModalDimmingContained> *contentViewController;
 
 - (void)_updateVignetteToOrientation:(long long)arg1;
 - (void)_updateWrapperView:(id)arg1 toOrientation:(long long)arg2 forViewController:(id)arg3;

@@ -4,8 +4,8 @@
 
 @interface SACreateSessionInfoResponse : SABaseClientBoundCommand
 
-@property(assign,copy) NSData * sessionInfo;
-@property(assign,copy) NSNumber * validityDuration;
+@property (nonatomic, copy) NSData *sessionInfo;
+@property (nonatomic, copy) NSNumber *validityDuration;
 
 + (id)createSessionInfoResponse;
 + (id)createSessionInfoResponseWithDictionary:(id)arg1 context:(id)arg2;

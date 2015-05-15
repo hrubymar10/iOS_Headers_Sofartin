@@ -18,20 +18,20 @@
     NSValue *_sentenceTag;
 }
 
-@property(assign,readonly) NSString * alternativeConjunction;
-@property(assign,retain) NSArray * alternatives;
-@property(assign,retain) NSArray * appreciations;
-@property(assign,retain) NSArray * choiceDelimiters;
-@property(assign,retain) NSArray * interrogatives;
-@property(assign,retain) NSArray * inversions;
-@property(assign,retain) NSArray * sentenceEntities;
-@property(assign,readwrite) bool sentenceHasAlternativeConjunction;
-@property(assign,readwrite) bool sentenceHasQuestionTerminator;
-@property(assign,readwrite) bool sentenceIsAllSymbols;
-@property(assign,readwrite) bool sentenceIsTerminated;
-@property(assign,retain) NSString * sentenceString;
-@property(assign,retain) NSString * sentenceStringOriginal;
-@property(assign,retain) NSValue * sentenceTag;
+@property (readonly) NSString *alternativeConjunction;
+@property (retain) NSArray *alternatives;
+@property (retain) NSArray *appreciations;
+@property (retain) NSArray *choiceDelimiters;
+@property (retain) NSArray *interrogatives;
+@property (retain) NSArray *inversions;
+@property (retain) NSArray *sentenceEntities;
+@property bool sentenceHasAlternativeConjunction;
+@property bool sentenceHasQuestionTerminator;
+@property bool sentenceIsAllSymbols;
+@property bool sentenceIsTerminated;
+@property (retain) NSString *sentenceString;
+@property (retain) NSString *sentenceStringOriginal;
+@property (retain) NSValue *sentenceTag;
 
 + (id)alternativeInversionsForLanguage:(id)arg1;
 + (id)appreciationKeywordsForLanguage:(id)arg1;

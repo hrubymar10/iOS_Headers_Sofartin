@@ -11,16 +11,16 @@
     NSObject<OS_dispatch_queue> *_syncQueue;
 }
 
-@property(assign,retain) GKLinkedList * cacheList;
-@property(assign,readwrite) unsigned long long count;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableDictionary * dictionary;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long maxCount;
-@property(assign,retain) NSMutableDictionary * missingEntryQueues;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * syncQueue;
+@property (nonatomic, retain) GKLinkedList *cacheList;
+@property (nonatomic) unsigned long long count;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMutableDictionary *dictionary;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long maxCount;
+@property (nonatomic, retain) NSMutableDictionary *missingEntryQueues;
+@property (readonly) Class superclass;
+@property (nonatomic) NSObject<OS_dispatch_queue> *syncQueue;
 
 - (id)cacheList;
 - (unsigned long long)count;

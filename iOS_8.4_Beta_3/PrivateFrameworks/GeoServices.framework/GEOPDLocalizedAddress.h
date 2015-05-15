@@ -7,10 +7,10 @@
     NSString *_locale;
 }
 
-@property(assign,retain) GEOAddress * address;
-@property(assign,readonly) bool hasAddress;
-@property(assign,readonly) bool hasLocale;
-@property(assign,retain) NSString * locale;
+@property (nonatomic, retain) GEOAddress *address;
+@property (nonatomic, readonly) bool hasAddress;
+@property (nonatomic, readonly) bool hasLocale;
+@property (nonatomic, retain) NSString *locale;
 
 - (id)address;
 - (void)copyTo:(id)arg1;

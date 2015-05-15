@@ -7,7 +7,7 @@
     UIView *_plusDView;
 }
 
-@property(assign,readwrite) double cornerRadius;
+@property double cornerRadius;
 
 + (id)_blendingPressedView;
 + (id)_blendingSeparatorView;

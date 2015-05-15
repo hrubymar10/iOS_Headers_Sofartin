@@ -10,11 +10,11 @@
     struct __CFDictionary { } *mImageSlices;
 }
 
-@property(assign,readonly) struct CGImage { }* CGImage;
-@property(assign,readonly) UIImage * UIImage;
-@property(assign,readonly) long long imageOrientation;
-@property(assign,readonly) double scale;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) struct CGImage { }*CGImage;
+@property (nonatomic, readonly) UIImage *UIImage;
+@property (nonatomic, readonly) long long imageOrientation;
+@property (nonatomic, readonly) double scale;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)imageNamed:(id)arg1;

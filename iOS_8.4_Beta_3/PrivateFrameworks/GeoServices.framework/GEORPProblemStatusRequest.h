@@ -8,11 +8,11 @@
     GEORPUserCredentials *_userCredentials;
 }
 
-@property(assign,readonly) bool hasStatusNotificationId;
-@property(assign,readonly) bool hasUserCredentials;
-@property(assign,retain) NSMutableArray * problemIds;
-@property(assign,retain) NSString * statusNotificationId;
-@property(assign,retain) GEORPUserCredentials * userCredentials;
+@property (nonatomic, readonly) bool hasStatusNotificationId;
+@property (nonatomic, readonly) bool hasUserCredentials;
+@property (nonatomic, retain) NSMutableArray *problemIds;
+@property (nonatomic, retain) NSString *statusNotificationId;
+@property (nonatomic, retain) GEORPUserCredentials *userCredentials;
 
 - (void)addProblemId:(id)arg1;
 - (void)clearProblemIds;

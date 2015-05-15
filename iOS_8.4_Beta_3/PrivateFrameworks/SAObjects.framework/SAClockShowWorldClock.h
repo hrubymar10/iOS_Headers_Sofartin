@@ -4,7 +4,7 @@
 
 @interface SAClockShowWorldClock : SABaseClientBoundCommand
 
-@property(assign,retain) SAClockObject * clock;
+@property (nonatomic, retain) SAClockObject *clock;
 
 + (id)showWorldClock;
 + (id)showWorldClockWithDictionary:(id)arg1 context:(id)arg2;

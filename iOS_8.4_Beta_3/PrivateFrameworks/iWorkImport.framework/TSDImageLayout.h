@@ -35,7 +35,7 @@
     TSUBezierPath *mTracedPath;
 }
 
-@property(assign,readonly) TSDPathSource<TSDSmartPathSource> * smartPathSource;
+@property (nonatomic, readonly) TSDPathSource<TSDSmartPathSource> *smartPathSource;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })boundsInfluencingExteriorWrap;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })computeAlignmentFrameInRoot:(bool)arg1;

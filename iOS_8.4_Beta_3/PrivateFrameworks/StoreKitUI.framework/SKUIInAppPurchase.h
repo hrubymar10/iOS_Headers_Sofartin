@@ -7,13 +7,13 @@
     NSString *_name;
 }
 
-@property(assign,readonly) NSMutableDictionary * cacheRepresentation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * formattedPrice;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSMutableDictionary *cacheRepresentation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *formattedPrice;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *name;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)cacheRepresentation;

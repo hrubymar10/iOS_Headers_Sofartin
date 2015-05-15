@@ -11,10 +11,10 @@
     NSError *_responseError;
 }
 
-@property(assign,copy) NSString * buyParameters;
-@property(assign,readonly) unsigned long long endpointType;
-@property(assign,readonly) MPStoreRedownloadProductResponse * redownloadProductResponse;
-@property(assign,copy) NSError * responseError;
+@property (nonatomic, readonly, copy) NSString *buyParameters;
+@property (nonatomic, readonly) unsigned long long endpointType;
+@property (nonatomic, readonly) MPStoreRedownloadProductResponse *redownloadProductResponse;
+@property (nonatomic, readonly, copy) NSError *responseError;
 
 - (void).cxx_destruct;
 - (id)buyParameters;

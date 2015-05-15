@@ -15,22 +15,22 @@
     long long _textAlignment;
 }
 
-@property(assign,retain) NSArray * _cachedItems;
-@property(assign,retain) NSArray * _groupsAndOptions;
-@property(assign,readwrite) UIWebSelectPopover * _popover;
-@property(assign,retain) DOMHTMLSelectElement * _selectionNode;
-@property(assign,readwrite) long long autocapitalizationType;
-@property(assign,readwrite) long long autocorrectionType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enablesReturnKeyAutomatically;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long keyboardAppearance;
-@property(assign,readwrite) long long keyboardType;
-@property(assign,readwrite) long long returnKeyType;
-@property(getter=isSecureTextEntry,assign,readwrite) bool secureTextEntry;
-@property(assign,readwrite) long long spellCheckingType;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSArray *_cachedItems;
+@property (nonatomic, retain) NSArray *_groupsAndOptions;
+@property (nonatomic) UIWebSelectPopover *_popover;
+@property (nonatomic, retain) DOMHTMLSelectElement *_selectionNode;
+@property (nonatomic) long long autocapitalizationType;
+@property (nonatomic) long long autocorrectionType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enablesReturnKeyAutomatically;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long keyboardAppearance;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic) long long returnKeyType;
+@property (getter=isSecureTextEntry, nonatomic) bool secureTextEntry;
+@property (nonatomic) long long spellCheckingType;
+@property (readonly) Class superclass;
 
 - (id)_cachedItems;
 - (id)_groupsAndOptions;

@@ -15,21 +15,21 @@
     IDSBatchIDQueryController *_statusQueryController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) IMAccount * defaultiMessageAccount;
-@property(assign,readwrite) <CKRecipientSearchListControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSArray * enteredRecipients;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSDate * idsQueryStartTime;
-@property(assign,retain) NSArray * prefilteredRecipients;
-@property(assign,retain) CKContactsSearchManager * searchManager;
-@property(assign,copy) NSArray * searchResults;
-@property(assign,readwrite) bool shouldUsePopovers;
-@property(assign,readwrite) bool smsEnabled;
-@property(assign,retain) IDSBatchIDQueryController * statusQueryController;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool suppressGroupSuggestions;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) IMAccount *defaultiMessageAccount;
+@property (nonatomic) <CKRecipientSearchListControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSArray *enteredRecipients;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSDate *idsQueryStartTime;
+@property (nonatomic, retain) NSArray *prefilteredRecipients;
+@property (nonatomic, retain) CKContactsSearchManager *searchManager;
+@property (nonatomic, copy) NSArray *searchResults;
+@property (nonatomic) bool shouldUsePopovers;
+@property (nonatomic) bool smsEnabled;
+@property (nonatomic, retain) IDSBatchIDQueryController *statusQueryController;
+@property (readonly) Class superclass;
+@property (nonatomic) bool suppressGroupSuggestions;
 
 - (BOOL)_serviceColorForRecipients:(id)arg1;
 - (id)_statusQueryController;

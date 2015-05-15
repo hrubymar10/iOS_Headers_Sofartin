@@ -24,22 +24,22 @@
     int _type;
 }
 
-@property(assign,readwrite) unsigned int featureIndex;
-@property(assign,readwrite) unsigned int featureTileX;
-@property(assign,readwrite) unsigned int featureTileY;
-@property(assign,readwrite) unsigned int featureTileZ;
-@property(assign,readwrite) bool hasFeatureIndex;
-@property(assign,readwrite) bool hasFeatureTileX;
-@property(assign,readwrite) bool hasFeatureTileY;
-@property(assign,readwrite) bool hasFeatureTileZ;
-@property(assign,readwrite) bool hasIdentifier;
-@property(assign,readwrite) bool hasStyle;
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) unsigned int identifier;
-@property(assign,readwrite) int style;
-@property(assign,readonly) struct { int x1; int x2; }* styleAttributes;
-@property(assign,readonly) unsigned long long styleAttributesCount;
-@property(assign,readwrite) int type;
+@property (nonatomic) unsigned int featureIndex;
+@property (nonatomic) unsigned int featureTileX;
+@property (nonatomic) unsigned int featureTileY;
+@property (nonatomic) unsigned int featureTileZ;
+@property (nonatomic) bool hasFeatureIndex;
+@property (nonatomic) bool hasFeatureTileX;
+@property (nonatomic) bool hasFeatureTileY;
+@property (nonatomic) bool hasFeatureTileZ;
+@property (nonatomic) bool hasIdentifier;
+@property (nonatomic) bool hasStyle;
+@property (nonatomic) bool hasType;
+@property (nonatomic) unsigned int identifier;
+@property (nonatomic) int style;
+@property (nonatomic, readonly) struct { int x1; int x2; }*styleAttributes;
+@property (nonatomic, readonly) unsigned long long styleAttributesCount;
+@property (nonatomic) int type;
 
 - (void)addStyleAttribute:(struct { int x1; int x2; })arg1;
 - (void)clearStyleAttributes;

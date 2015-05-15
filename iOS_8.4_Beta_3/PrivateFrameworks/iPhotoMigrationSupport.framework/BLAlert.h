@@ -14,13 +14,13 @@
     BLAlert *_strongSelf;
 }
 
-@property(assign,copy) id conditionBlock;
-@property(assign,retain) id context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) BLAlert * strongSelf;
-@property(assign,readonly) Class superclass;
+@property (copy) id conditionBlock;
+@property (retain) id context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) BLAlert *strongSelf;
+@property (readonly) Class superclass;
 
 + (id)pendingAlerts;
 + (void)performWithTitle:(id)arg1 message:(id)arg2 action:(id)arg3;

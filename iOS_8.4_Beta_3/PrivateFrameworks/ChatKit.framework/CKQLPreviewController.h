@@ -6,7 +6,7 @@
     NSArray *_previewItems;
 }
 
-@property(assign,copy) NSArray * previewItems;
+@property (nonatomic, copy) NSArray *previewItems;
 
 - (id)currentPreviewItem;
 - (void)dealloc;

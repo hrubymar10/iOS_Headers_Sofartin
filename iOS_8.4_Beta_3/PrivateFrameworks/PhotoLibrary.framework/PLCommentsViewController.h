@@ -33,18 +33,18 @@
     bool _temporaryKeyboardHideReshow;
 }
 
-@property(assign,retain) PLManagedAsset * asset;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } availableBounds;
-@property(assign,readonly) UIBarButtonItem * cancelButton;
-@property(assign,readwrite) <PLCommentsViewControllerDelegate> * commentsControllerDelegate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * draftComment;
-@property(assign,readwrite) bool editMode;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCompact;
-@property(assign,retain) PLCloudSharedComment * justInsertedComment;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) PLManagedAsset *asset;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } availableBounds;
+@property (nonatomic, readonly) UIBarButtonItem *cancelButton;
+@property (nonatomic) <PLCommentsViewControllerDelegate> *commentsControllerDelegate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *draftComment;
+@property (nonatomic) bool editMode;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCompact;
+@property (nonatomic, retain) PLCloudSharedComment *justInsertedComment;
+@property (readonly) Class superclass;
 
 - (void)_addCommentButtonTapped:(id)arg1;
 - (void)_adjustInitialScrollPosition:(bool)arg1;

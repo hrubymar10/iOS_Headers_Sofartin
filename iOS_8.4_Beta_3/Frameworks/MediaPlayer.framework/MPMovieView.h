@@ -6,7 +6,7 @@
     <MPMovieViewDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <MPMovieViewDelegate> * delegate;
+@property (nonatomic) <MPMovieViewDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)delegate;

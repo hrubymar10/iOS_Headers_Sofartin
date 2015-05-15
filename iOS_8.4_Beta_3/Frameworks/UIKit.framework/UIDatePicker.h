@@ -7,28 +7,28 @@
     bool _useCurrentDateDuringDecoding;
 }
 
-@property(getter=_usesModernStyle,setter=_setUsesModernStyle:,assign,readwrite) bool _usesModernStyle;
-@property(getter=_allowsZeroCountDownDuration,setter=_setAllowsZeroCountDownDuration:,assign,readwrite) bool allowsZeroCountDownDuration;
-@property(getter=_allowsZeroTimeInterval,setter=_setAllowsZeroTimeInterval:,assign,readwrite) bool allowsZeroTimeInterval;
-@property(assign,copy) NSCalendar * calendar;
-@property(getter=_contentWidth,assign,readonly) double contentWidth;
-@property(assign,readwrite) double countDownDuration;
-@property(assign,retain) NSDate * date;
-@property(assign,readwrite) long long datePickerMode;
-@property(getter=_dateUnderSelectionBar,assign,readonly) NSDate * dateUnderSelectionBar;
-@property(getter=_drawsBackground,setter=_setDrawsBackground:,assign,readwrite) bool drawsBackground;
-@property(getter=_highlightColor,setter=_setHighlightColor:,assign,retain) UIColor * highlightColor;
-@property(getter=_isTimeIntervalMode,assign,readonly) bool isTimeIntervalMode;
-@property(assign,retain) NSLocale * locale;
-@property(assign,retain) NSDate * maximumDate;
-@property(assign,retain) NSDate * minimumDate;
-@property(assign,readwrite) long long minuteInterval;
-@property(getter=_textColor,setter=_setTextColor:,assign,retain) UIColor * textColor;
-@property(getter=_textShadowColor,setter=_setTextShadowColor:,assign,retain) UIColor * textShadowColor;
-@property(assign,readwrite) double timeInterval;
-@property(assign,retain) NSTimeZone * timeZone;
-@property(getter=_useCurrentDateDuringDecoding,setter=_setUseCurrentDateDuringDecoding:,assign,readwrite) bool useCurrentDateDuringDecoding;
-@property(getter=_usesBlackChrome,setter=_setUsesBlackChrome:,assign,readwrite) bool usesBlackChrome;
+@property (getter=_usesModernStyle, setter=_setUsesModernStyle:, nonatomic) bool _usesModernStyle;
+@property (getter=_allowsZeroCountDownDuration, setter=_setAllowsZeroCountDownDuration:, nonatomic) bool allowsZeroCountDownDuration;
+@property (getter=_allowsZeroTimeInterval, setter=_setAllowsZeroTimeInterval:, nonatomic) bool allowsZeroTimeInterval;
+@property (nonatomic, copy) NSCalendar *calendar;
+@property (getter=_contentWidth, nonatomic, readonly) double contentWidth;
+@property (nonatomic) double countDownDuration;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic) long long datePickerMode;
+@property (getter=_dateUnderSelectionBar, nonatomic, readonly) NSDate *dateUnderSelectionBar;
+@property (getter=_drawsBackground, setter=_setDrawsBackground:, nonatomic) bool drawsBackground;
+@property (getter=_highlightColor, setter=_setHighlightColor:, nonatomic, retain) UIColor *highlightColor;
+@property (getter=_isTimeIntervalMode, nonatomic, readonly) bool isTimeIntervalMode;
+@property (nonatomic, retain) NSLocale *locale;
+@property (nonatomic, retain) NSDate *maximumDate;
+@property (nonatomic, retain) NSDate *minimumDate;
+@property (nonatomic) long long minuteInterval;
+@property (getter=_textColor, setter=_setTextColor:, nonatomic, retain) UIColor *textColor;
+@property (getter=_textShadowColor, setter=_setTextShadowColor:, nonatomic, retain) UIColor *textShadowColor;
+@property (nonatomic) double timeInterval;
+@property (nonatomic, retain) NSTimeZone *timeZone;
+@property (getter=_useCurrentDateDuringDecoding, setter=_setUseCurrentDateDuringDecoding:, nonatomic) bool useCurrentDateDuringDecoding;
+@property (getter=_usesBlackChrome, setter=_setUsesBlackChrome:, nonatomic) bool usesBlackChrome;
 
 + (Class)_pickerViewClass;
 

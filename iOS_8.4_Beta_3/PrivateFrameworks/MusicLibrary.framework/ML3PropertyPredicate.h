@@ -6,7 +6,7 @@
     NSString *_property;
 }
 
-@property(assign,copy) NSString * property;
+@property (nonatomic, copy) NSString *property;
 
 + (id)predicateWithProperty:(id)arg1;
 

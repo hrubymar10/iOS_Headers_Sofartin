@@ -9,10 +9,10 @@
     PLPhotoLibrary *_photoLibrary;
 }
 
-@property(assign,retain) NSArray * addedAssetUUIDs;
-@property(assign,retain) NSString * albumUUID;
-@property(assign,readwrite) long long bulletinType;
-@property(assign,retain) PLPhotoLibrary * photoLibrary;
+@property (nonatomic, retain) NSArray *addedAssetUUIDs;
+@property (nonatomic, retain) NSString *albumUUID;
+@property long long bulletinType;
+@property (nonatomic, retain) PLPhotoLibrary *photoLibrary;
 
 + (void)notifyAssets:(id)arg1 wereAddedToAlbum:(id)arg2;
 + (void)notifyCommentWasReceivedForAssets:(id)arg1;

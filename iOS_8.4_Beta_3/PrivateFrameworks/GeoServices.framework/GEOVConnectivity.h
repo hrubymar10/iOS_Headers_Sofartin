@@ -6,7 +6,7 @@
     NSMutableArray *_junctions;
 }
 
-@property(assign,retain) NSMutableArray * junctions;
+@property (nonatomic, retain) NSMutableArray *junctions;
 
 - (void)addJunction:(id)arg1;
 - (void)clearJunctions;

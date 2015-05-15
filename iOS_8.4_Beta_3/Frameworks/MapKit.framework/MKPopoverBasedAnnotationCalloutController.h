@@ -15,12 +15,12 @@
     UIPopoverController *_popoverController;
 }
 
-@property(assign,readwrite) bool allowsPopoverWhenNotInWindow;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIPopoverController * popoverController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool allowsPopoverWhenNotInWindow;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIPopoverController *popoverController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_contentSizeCategoryDidChange:(id)arg1;

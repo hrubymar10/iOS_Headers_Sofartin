@@ -19,22 +19,22 @@
     int _serviceType;
 }
 
-@property(assign,retain) NSString * displayName;
-@property(assign,readonly) bool hasDisplayName;
-@property(assign,readonly) bool hasHomeSharingGroupKey;
-@property(assign,readonly) bool hasHostName;
-@property(assign,readonly) bool hasNetworkName;
-@property(assign,readwrite) bool hasPort;
-@property(assign,readwrite) bool hasServiceDiscoverySource;
-@property(assign,readwrite) bool hasServiceLegacyFlags;
-@property(assign,readwrite) bool hasServiceType;
-@property(assign,retain) NSString * homeSharingGroupKey;
-@property(assign,retain) NSString * hostName;
-@property(assign,retain) NSString * networkName;
-@property(assign,readwrite) int port;
-@property(assign,readwrite) int serviceDiscoverySource;
-@property(assign,readwrite) int serviceLegacyFlags;
-@property(assign,readwrite) int serviceType;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, readonly) bool hasDisplayName;
+@property (nonatomic, readonly) bool hasHomeSharingGroupKey;
+@property (nonatomic, readonly) bool hasHostName;
+@property (nonatomic, readonly) bool hasNetworkName;
+@property (nonatomic) bool hasPort;
+@property (nonatomic) bool hasServiceDiscoverySource;
+@property (nonatomic) bool hasServiceLegacyFlags;
+@property (nonatomic) bool hasServiceType;
+@property (nonatomic, retain) NSString *homeSharingGroupKey;
+@property (nonatomic, retain) NSString *hostName;
+@property (nonatomic, retain) NSString *networkName;
+@property (nonatomic) int port;
+@property (nonatomic) int serviceDiscoverySource;
+@property (nonatomic) int serviceLegacyFlags;
+@property (nonatomic) int serviceType;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

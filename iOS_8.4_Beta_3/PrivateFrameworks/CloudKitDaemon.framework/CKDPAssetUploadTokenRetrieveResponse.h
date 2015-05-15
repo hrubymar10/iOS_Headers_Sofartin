@@ -6,7 +6,7 @@
     NSMutableArray *_uploadTokens;
 }
 
-@property(assign,retain) NSMutableArray * uploadTokens;
+@property (nonatomic, retain) NSMutableArray *uploadTokens;
 
 - (void).cxx_destruct;
 - (void)addUploadTokens:(id)arg1;

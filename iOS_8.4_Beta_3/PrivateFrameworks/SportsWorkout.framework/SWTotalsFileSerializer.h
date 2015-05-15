@@ -19,22 +19,22 @@
     double _weight;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) float farthestMile;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long mostCalories;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long total10K;
-@property(assign,readonly) unsigned long long total5K;
-@property(assign,readonly) unsigned long long totalCalories;
-@property(assign,readonly) float totalDistanceMiles;
-@property(assign,readonly) unsigned long long totalHalfMarathon;
-@property(assign,readonly) unsigned long long totalMarathon;
-@property(assign,readonly) unsigned long long totalSeconds;
-@property(assign,readonly) unsigned long long totalWeightWorkouts;
-@property(assign,readonly) unsigned long long totalWorkouts;
-@property(assign,readonly) double weight;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) float farthestMile;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long mostCalories;
+@property (readonly) Class superclass;
+@property (readonly) unsigned long long total10K;
+@property (readonly) unsigned long long total5K;
+@property (readonly) unsigned long long totalCalories;
+@property (readonly) float totalDistanceMiles;
+@property (readonly) unsigned long long totalHalfMarathon;
+@property (readonly) unsigned long long totalMarathon;
+@property (readonly) unsigned long long totalSeconds;
+@property (readonly) unsigned long long totalWeightWorkouts;
+@property (readonly) unsigned long long totalWorkouts;
+@property (readonly) double weight;
 
 + (void)initialize;
 

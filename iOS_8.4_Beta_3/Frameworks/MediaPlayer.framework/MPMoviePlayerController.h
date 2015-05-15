@@ -6,20 +6,20 @@
     id _implementation;
 }
 
-@property(assign,readonly) UIView * backgroundView;
-@property(assign,copy) NSURL * contentURL;
-@property(assign,readwrite) long long controlStyle;
-@property(assign,readwrite) float currentPlaybackRate;
-@property(assign,readwrite) double currentPlaybackTime;
-@property(getter=isFullscreen,assign,readwrite) bool fullscreen;
-@property(assign,readonly) bool isPreparedToPlay;
-@property(assign,readonly) unsigned long long loadState;
-@property(assign,readonly) long long playbackState;
-@property(assign,readonly) bool readyForDisplay;
-@property(assign,readwrite) long long repeatMode;
-@property(assign,readwrite) long long scalingMode;
-@property(assign,readwrite) bool shouldAutoplay;
-@property(assign,readonly) UIView * view;
+@property (nonatomic, readonly) UIView *backgroundView;
+@property (nonatomic, copy) NSURL *contentURL;
+@property (nonatomic) long long controlStyle;
+@property (nonatomic) float currentPlaybackRate;
+@property (nonatomic) double currentPlaybackTime;
+@property (getter=isFullscreen, nonatomic) bool fullscreen;
+@property (nonatomic, readonly) bool isPreparedToPlay;
+@property (nonatomic, readonly) unsigned long long loadState;
+@property (nonatomic, readonly) long long playbackState;
+@property (nonatomic, readonly) bool readyForDisplay;
+@property (nonatomic) long long repeatMode;
+@property (nonatomic) long long scalingMode;
+@property (nonatomic) bool shouldAutoplay;
+@property (nonatomic, readonly) UIView *view;
 
 + (void)allInstancesResignActive;
 + (void)preparePrerollAds;

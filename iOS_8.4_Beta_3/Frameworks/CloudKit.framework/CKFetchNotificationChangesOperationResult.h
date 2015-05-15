@@ -7,8 +7,8 @@
     CKServerChangeToken *_serverChangeToken;
 }
 
-@property(assign,readwrite) bool moreComing;
-@property(assign,retain) CKServerChangeToken * serverChangeToken;
+@property (nonatomic) bool moreComing;
+@property (nonatomic, retain) CKServerChangeToken *serverChangeToken;
 
 + (bool)supportsSecureCoding;
 

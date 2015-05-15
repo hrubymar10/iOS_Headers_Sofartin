@@ -6,7 +6,7 @@
     NSArray *_preferredIntervals;
 }
 
-@property(assign,copy) NSArray * preferredIntervals;
+@property (nonatomic, copy) NSArray *preferredIntervals;
 
 - (void).cxx_destruct;
 - (id)_mediaRemoteCommandInfoOptions;

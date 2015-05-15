@@ -8,9 +8,9 @@
     TSPLazyReference *mTargetSlideNodeReference;
 }
 
-@property(assign,readonly) long long animationPhase;
-@property(assign,readonly) unsigned long long targetEventIndex;
-@property(assign,readonly) KNSlideNode * targetSlideNode;
+@property (nonatomic, readonly) long long animationPhase;
+@property (nonatomic, readonly) unsigned long long targetEventIndex;
+@property (nonatomic, readonly) KNSlideNode *targetSlideNode;
 
 - (long long)animationPhase;
 - (bool)canPrecedeDiscontinuity;

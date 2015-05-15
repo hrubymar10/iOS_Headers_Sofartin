@@ -28,16 +28,16 @@
     UILabel *_toLabel;
 }
 
-@property(assign,copy) NSString * createChildAccountButtonTitle;
-@property(assign,copy) NSString * createChildAccountInstructions;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <AAUIPickInviteeDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * inviteeCompositeName;
-@property(assign,readonly) NSString * inviteeEmail;
-@property(assign,readonly) NSString * inviteeShortName;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *createChildAccountButtonTitle;
+@property (nonatomic, copy) NSString *createChildAccountInstructions;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <AAUIPickInviteeDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *inviteeCompositeName;
+@property (nonatomic, readonly) NSString *inviteeEmail;
+@property (nonatomic, readonly) NSString *inviteeShortName;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_attributedStringWithQueryHighlightedForString:(id)arg1 size:(double)arg2;

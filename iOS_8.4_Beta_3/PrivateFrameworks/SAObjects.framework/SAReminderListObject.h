@@ -4,7 +4,7 @@
 
 @interface SAReminderListObject : SADomainObject
 
-@property(assign,copy) NSString * name;
+@property (nonatomic, copy) NSString *name;
 
 + (id)listObject;
 + (id)listObjectWithDictionary:(id)arg1 context:(id)arg2;

@@ -6,14 +6,14 @@
     AVAssetImageGeneratorInternal *_priv;
 }
 
-@property(assign,copy) NSString * apertureMode;
-@property(assign,readwrite) bool appliesPreferredTrackTransform;
-@property(assign,readonly) AVAsset * asset;
-@property(assign,readonly) <AVVideoCompositing> * customVideoCompositor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } maximumSize;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } requestedTimeToleranceAfter;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } requestedTimeToleranceBefore;
-@property(assign,copy) AVVideoComposition * videoComposition;
+@property (nonatomic, copy) NSString *apertureMode;
+@property (nonatomic) bool appliesPreferredTrackTransform;
+@property (nonatomic, readonly) AVAsset *asset;
+@property (nonatomic, readonly) <AVVideoCompositing> *customVideoCompositor;
+@property (nonatomic) struct CGSize { double x1; double x2; } maximumSize;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } requestedTimeToleranceAfter;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } requestedTimeToleranceBefore;
+@property (nonatomic, copy) AVVideoComposition *videoComposition;
 
 + (id)assetImageGeneratorWithAsset:(id)arg1;
 

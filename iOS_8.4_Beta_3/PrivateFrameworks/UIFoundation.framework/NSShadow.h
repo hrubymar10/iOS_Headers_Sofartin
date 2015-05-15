@@ -12,9 +12,9 @@
     } _shadowOffset;
 }
 
-@property(assign,readwrite) double shadowBlurRadius;
-@property(assign,retain) id shadowColor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } shadowOffset;
+@property (nonatomic) double shadowBlurRadius;
+@property (nonatomic, retain) id shadowColor;
+@property (nonatomic) struct CGSize { double x1; double x2; } shadowOffset;
 
 + (id)defaultShadowColor;
 + (void)initialize;

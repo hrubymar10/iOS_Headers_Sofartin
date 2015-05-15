@@ -4,7 +4,7 @@
 
 @interface SASportsAthleteComparisonSnippet : SASportsAthleteSnippet
 
-@property(assign,copy) NSDictionary * comparisonItemDetails;
+@property (nonatomic, copy) NSDictionary *comparisonItemDetails;
 
 + (id)athleteComparisonSnippet;
 + (id)athleteComparisonSnippetWithDictionary:(id)arg1 context:(id)arg2;

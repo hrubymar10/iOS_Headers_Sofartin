@@ -8,7 +8,7 @@
     SEL _scrollViewAction;
 }
 
-@property(assign,readwrite) UIScrollView * scrollView;
+@property (nonatomic) UIScrollView *scrollView;
 
 - (double)_hysteresis;
 - (id)initWithTarget:(id)arg1 action:(SEL)arg2;

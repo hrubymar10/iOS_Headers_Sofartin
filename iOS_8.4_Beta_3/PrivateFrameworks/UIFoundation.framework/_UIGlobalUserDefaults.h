@@ -8,9 +8,9 @@
     <UIFoundationGlobalUserDefaultsHelper> *_userDefaultsHelper;
 }
 
-@property(assign,readwrite) unsigned long long backgroundTaskIdentifier;
-@property(assign,retain) NSMutableDictionary * userDefaultsDictionary;
-@property(assign,retain) <UIFoundationGlobalUserDefaultsHelper> * userDefaultsHelper;
+@property (nonatomic) unsigned long long backgroundTaskIdentifier;
+@property (nonatomic, retain) NSMutableDictionary *userDefaultsDictionary;
+@property (nonatomic, retain) <UIFoundationGlobalUserDefaultsHelper> *userDefaultsHelper;
 
 - (void)_scheduleSynchronization;
 - (void)_synchronizeIfNeeded;

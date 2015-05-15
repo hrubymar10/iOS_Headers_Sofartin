@@ -9,8 +9,8 @@
     bool _weak;
 }
 
-@property(assign,readwrite) id object;
-@property(assign,readwrite) SUScriptObject * scriptObject;
+@property (nonatomic) id object;
+@property SUScriptObject *scriptObject;
 
 + (void)clearWeakReferencesToObject:(id)arg1;
 + (void)makeReferencesToObjectWeak:(id)arg1;

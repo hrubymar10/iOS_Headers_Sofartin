@@ -11,8 +11,8 @@
     NSObject<OS_dispatch_source> *_fdDeletionWatcher;
 }
 
-@property(assign,retain) NSString * basename;
-@property(assign,retain) NSURL * directory;
+@property (nonatomic, retain) NSString *basename;
+@property (nonatomic, retain) NSURL *directory;
 
 + (id)defaultLogState;
 

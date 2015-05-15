@@ -8,10 +8,10 @@
     ADTapGestureRecognizer *_gestureRecognizer;
 }
 
-@property(assign,readwrite) <ADDimmerViewDelegate> * delegate;
-@property(assign,readwrite) bool dimmed;
-@property(assign,readonly) bool enabled;
-@property(assign,retain) ADTapGestureRecognizer * gestureRecognizer;
+@property (nonatomic) <ADDimmerViewDelegate> *delegate;
+@property (nonatomic) bool dimmed;
+@property (nonatomic, readonly) bool enabled;
+@property (nonatomic, retain) ADTapGestureRecognizer *gestureRecognizer;
 
 - (void)_tapRecognized:(id)arg1;
 - (void)dealloc;

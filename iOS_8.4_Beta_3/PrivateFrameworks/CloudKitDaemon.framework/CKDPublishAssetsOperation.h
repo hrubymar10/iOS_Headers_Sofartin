@@ -12,13 +12,13 @@
     unsigned long long _requestedTTL;
 }
 
-@property(assign,readwrite) unsigned long long URLOptions;
-@property(assign,copy) id assetPublishedBlock;
-@property(assign,retain) NSOperation * fetchRecordsOperation;
-@property(assign,retain) NSMutableDictionary * fetchedRecordsByID;
-@property(assign,retain) NSDictionary * fileNamesByAssetFieldNames;
-@property(assign,retain) NSArray * recordIDs;
-@property(assign,readwrite) unsigned long long requestedTTL;
+@property (nonatomic) unsigned long long URLOptions;
+@property (nonatomic, copy) id assetPublishedBlock;
+@property (retain) NSOperation *fetchRecordsOperation;
+@property (nonatomic, retain) NSMutableDictionary *fetchedRecordsByID;
+@property (nonatomic, retain) NSDictionary *fileNamesByAssetFieldNames;
+@property (nonatomic, retain) NSArray *recordIDs;
+@property (nonatomic) unsigned long long requestedTTL;
 
 - (void).cxx_destruct;
 - (unsigned long long)URLOptions;

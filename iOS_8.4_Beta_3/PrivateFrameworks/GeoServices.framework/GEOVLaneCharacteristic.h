@@ -12,11 +12,11 @@
     unsigned int _roadLaneCount;
 }
 
-@property(assign,readwrite) bool hasRoadLaneCount;
-@property(assign,retain) NSMutableArray * laneDirections;
-@property(assign,retain) NSMutableArray * laneDividers;
-@property(assign,retain) NSMutableArray * laneTypes;
-@property(assign,readwrite) unsigned int roadLaneCount;
+@property (nonatomic) bool hasRoadLaneCount;
+@property (nonatomic, retain) NSMutableArray *laneDirections;
+@property (nonatomic, retain) NSMutableArray *laneDividers;
+@property (nonatomic, retain) NSMutableArray *laneTypes;
+@property (nonatomic) unsigned int roadLaneCount;
 
 - (void)addLaneDirection:(id)arg1;
 - (void)addLaneDivider:(id)arg1;

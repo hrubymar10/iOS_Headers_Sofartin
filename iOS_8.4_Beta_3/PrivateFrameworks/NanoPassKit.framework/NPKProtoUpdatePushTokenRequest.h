@@ -6,8 +6,8 @@
     NSString *_pushToken;
 }
 
-@property(assign,readonly) bool hasPushToken;
-@property(assign,retain) NSString * pushToken;
+@property (nonatomic, readonly) bool hasPushToken;
+@property (nonatomic, retain) NSString *pushToken;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

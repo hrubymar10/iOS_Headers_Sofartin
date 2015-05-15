@@ -66,7 +66,7 @@
     struct UINibDecoderValue { unsigned int x1; unsigned int x2; } *values;
 }
 
-@property(assign,readwrite) id delegate;
+@property id delegate;
 
 + (id)unarchiveObjectWithData:(id)arg1;
 + (id)unarchiveObjectWithFile:(id)arg1;

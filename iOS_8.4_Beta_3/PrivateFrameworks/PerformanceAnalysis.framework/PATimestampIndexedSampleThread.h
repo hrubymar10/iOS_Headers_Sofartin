@@ -7,8 +7,8 @@
     PASampleThreadData *_sampleThread;
 }
 
-@property(assign,readwrite) unsigned long long lastTimestampIndex;
-@property(assign,readonly) PASampleThreadData * sampleThread;
+@property unsigned long long lastTimestampIndex;
+@property (readonly) PASampleThreadData *sampleThread;
 
 - (void)dealloc;
 - (id)debugDescription;

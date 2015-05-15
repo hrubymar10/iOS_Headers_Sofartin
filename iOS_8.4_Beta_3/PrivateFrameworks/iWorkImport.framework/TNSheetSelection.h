@@ -7,8 +7,8 @@
     TNSheet *mSheet;
 }
 
-@property(getter=isPaginated,assign,readonly) bool paginated;
-@property(assign,retain) TNSheet * sheet;
+@property (getter=isPaginated, nonatomic, readonly) bool paginated;
+@property (nonatomic, readonly, retain) TNSheet *sheet;
 
 + (Class)archivedSelectionClass;
 + (id)selectionForSheet:(id)arg1 paginated:(bool)arg2;

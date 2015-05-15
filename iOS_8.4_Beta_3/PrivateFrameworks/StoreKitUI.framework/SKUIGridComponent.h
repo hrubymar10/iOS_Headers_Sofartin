@@ -23,11 +23,11 @@
     bool _showsIndexNumbers;
 }
 
-@property(assign,readonly) NSArray * children;
-@property(assign,readonly) struct SKUIEditorialStyle { long long x1; long long x2; float x3; float x4; long long x5; float x6; float x7; } editorialStyle;
-@property(assign,readonly) long long gridType;
-@property(assign,readonly) struct SKUILockupStyle { long long x1; long long x2; unsigned long long x3; } lockupStyle;
-@property(assign,readonly) bool showsIndexNumbers;
+@property (nonatomic, readonly) NSArray *children;
+@property (nonatomic, readonly) struct SKUIEditorialStyle { long long x1; long long x2; float x3; float x4; long long x5; float x6; float x7; } editorialStyle;
+@property (nonatomic, readonly) long long gridType;
+@property (nonatomic, readonly) struct SKUILockupStyle { long long x1; long long x2; unsigned long long x3; } lockupStyle;
+@property (nonatomic, readonly) bool showsIndexNumbers;
 
 - (void).cxx_destruct;
 - (id)_newLockupComponentWithItem:(id)arg1 defaultStyle:(struct SKUILockupStyle { long long x1; long long x2; unsigned long long x3; })arg2;

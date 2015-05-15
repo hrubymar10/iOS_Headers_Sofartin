@@ -37,21 +37,21 @@
     float _zSize;
 }
 
-@property(assign,readwrite) union _GLKVector3 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; struct { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; struct { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; float x4[3]; } center;
-@property(assign,readwrite) unsigned char centerChanged;
-@property(assign,readwrite) GLKEffect * effect;
-@property(assign,readwrite) unsigned char effectStale;
-@property(assign,copy) NSString * label;
-@property(assign,readwrite) unsigned int positionVBO;
-@property(assign,readwrite) unsigned int programName;
-@property(assign,readonly) NSMutableArray * propertyArray;
-@property(assign,readwrite) unsigned int texCoordVBO;
-@property(assign,readonly) GLKEffectPropertyTexture * textureCubeMap;
-@property(assign,readonly) GLKEffectPropertyTransform * transform;
-@property(assign,readwrite) unsigned int vao;
-@property(assign,readwrite) float xSize;
-@property(assign,readwrite) float ySize;
-@property(assign,readwrite) float zSize;
+@property (nonatomic) union _GLKVector3 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; struct { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; struct { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; float x4[3]; } center;
+@property (nonatomic) unsigned char centerChanged;
+@property (nonatomic) GLKEffect *effect;
+@property (nonatomic) unsigned char effectStale;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic) unsigned int positionVBO;
+@property (nonatomic) unsigned int programName;
+@property (nonatomic, readonly) NSMutableArray *propertyArray;
+@property (nonatomic) unsigned int texCoordVBO;
+@property (nonatomic, readonly) GLKEffectPropertyTexture *textureCubeMap;
+@property (nonatomic, readonly) GLKEffectPropertyTransform *transform;
+@property (nonatomic) unsigned int vao;
+@property (nonatomic) float xSize;
+@property (nonatomic) float ySize;
+@property (nonatomic) float zSize;
 
 - (union _GLKVector3 { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; struct { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; struct { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; float x4[3]; })center;
 - (unsigned char)centerChanged;

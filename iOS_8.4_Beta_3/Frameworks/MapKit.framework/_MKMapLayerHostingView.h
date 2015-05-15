@@ -6,7 +6,7 @@
     VKMapView *_mapView;
 }
 
-@property(assign,retain) VKMapView * mapView;
+@property (nonatomic, retain) VKMapView *mapView;
 
 + (Class)layerClass;
 

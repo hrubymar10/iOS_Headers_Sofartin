@@ -156,20 +156,20 @@
     NSMutableDictionary *_visibleSupplementaryViewsDict;
 }
 
-@property(assign,readwrite) bool allowsMultipleSelection;
-@property(assign,readwrite) bool allowsSelection;
-@property(assign,retain) UIView * backgroundView;
-@property(getter=_collectionViewData,assign,readonly) UICollectionViewData * collectionViewData;
-@property(assign,retain) UICollectionViewLayout * collectionViewLayout;
-@property(getter=_currentTouch,setter=_setCurrentTouch:,assign,retain) UITouch * currentTouch;
-@property(getter=_currentUpdate,assign,readonly) UICollectionViewUpdate * currentUpdate;
-@property(assign,readwrite) <UICollectionViewDataSource> * dataSource;
-@property(assign,readwrite) <UICollectionViewDelegate> * delegate;
-@property(getter=_focusedCellIndexPath,setter=_setFocusedCellIndexPath:,assign,copy) NSIndexPath * focusedCellIndexPath;
-@property(getter=_navigationCompletion,setter=_setNavigationCompletion:,assign,copy) id navigationCompletion;
-@property(getter=_reorderedItems,assign,readonly) NSArray * reorderedItems;
-@property(getter=_reorderingTargetPosition,assign,readonly) struct CGPoint { double x1; double x2; } reorderingTargetPosition;
-@property(getter=_visibleViews,assign,readonly) NSArray * visibleViews;
+@property (nonatomic) bool allowsMultipleSelection;
+@property (nonatomic) bool allowsSelection;
+@property (nonatomic, retain) UIView *backgroundView;
+@property (getter=_collectionViewData, nonatomic, readonly) UICollectionViewData *collectionViewData;
+@property (nonatomic, retain) UICollectionViewLayout *collectionViewLayout;
+@property (getter=_currentTouch, setter=_setCurrentTouch:, nonatomic, retain) UITouch *currentTouch;
+@property (getter=_currentUpdate, nonatomic, readonly) UICollectionViewUpdate *currentUpdate;
+@property (nonatomic) <UICollectionViewDataSource> *dataSource;
+@property (nonatomic) <UICollectionViewDelegate> *delegate;
+@property (getter=_focusedCellIndexPath, setter=_setFocusedCellIndexPath:, nonatomic, copy) NSIndexPath *focusedCellIndexPath;
+@property (getter=_navigationCompletion, setter=_setNavigationCompletion:, nonatomic, copy) id navigationCompletion;
+@property (getter=_reorderedItems, nonatomic, readonly) NSArray *reorderedItems;
+@property (getter=_reorderingTargetPosition, nonatomic, readonly) struct CGPoint { double x1; double x2; } reorderingTargetPosition;
+@property (getter=_visibleViews, nonatomic, readonly) NSArray *visibleViews;
 
 + (id)_reuseKeyForSupplementaryViewOfKind:(id)arg1 withReuseIdentifier:(id)arg2;
 

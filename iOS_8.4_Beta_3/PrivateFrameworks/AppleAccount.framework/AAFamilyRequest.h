@@ -6,7 +6,7 @@
     AAGrandSlamSigner *_grandSlamSigner;
 }
 
-@property(assign,readonly) bool isUserInitiated;
+@property (nonatomic, readonly) bool isUserInitiated;
 
 - (void).cxx_destruct;
 - (id)initWithAppleAccount:(id)arg1 grandSlamAccount:(id)arg2 accountStore:(id)arg3;

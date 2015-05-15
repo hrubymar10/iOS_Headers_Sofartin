@@ -4,13 +4,13 @@
 
 @interface SAAnswerObjectLine : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * image;
-@property(assign,copy) NSNumber * imageInverted;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURL *image;
+@property (nonatomic, copy) NSNumber *imageInverted;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
 
 + (id)objectLine;
 + (id)objectLineWithDictionary:(id)arg1 context:(id)arg2;

@@ -10,10 +10,10 @@
     bool _pending;
 }
 
-@property(assign,retain) NSData * configurationDataBytes;
-@property(assign,readonly) bool hasConfigurationDataBytes;
-@property(assign,readwrite) bool hasPending;
-@property(assign,readwrite) bool pending;
+@property (nonatomic, retain) NSData *configurationDataBytes;
+@property (nonatomic, readonly) bool hasConfigurationDataBytes;
+@property (nonatomic) bool hasPending;
+@property (nonatomic) bool pending;
 
 - (void).cxx_destruct;
 - (id)configurationDataBytes;

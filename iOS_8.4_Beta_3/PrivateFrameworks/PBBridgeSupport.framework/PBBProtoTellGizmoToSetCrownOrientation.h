@@ -9,8 +9,8 @@
     } _has;
 }
 
-@property(assign,readwrite) bool crownOrientationRight;
-@property(assign,readwrite) bool hasCrownOrientationRight;
+@property (nonatomic) bool crownOrientationRight;
+@property (nonatomic) bool hasCrownOrientationRight;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

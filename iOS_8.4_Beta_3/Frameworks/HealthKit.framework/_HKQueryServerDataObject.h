@@ -8,9 +8,9 @@
     bool _shouldStayAliveAfterInitialResults;
 }
 
-@property(assign,retain) _HKFilter * filter;
-@property(assign,retain) HKSampleType * sampleType;
-@property(assign,readwrite) bool shouldStayAliveAfterInitialResults;
+@property (nonatomic, retain) _HKFilter *filter;
+@property (nonatomic, retain) HKSampleType *sampleType;
+@property (nonatomic) bool shouldStayAliveAfterInitialResults;
 
 + (bool)supportsSecureCoding;
 

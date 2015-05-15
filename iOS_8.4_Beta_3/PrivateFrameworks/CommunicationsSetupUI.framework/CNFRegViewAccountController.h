@@ -6,7 +6,7 @@
     <CNFRegViewAccountControllerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <CNFRegViewAccountControllerDelegate> * delegate;
+@property (nonatomic) <CNFRegViewAccountControllerDelegate> *delegate;
 
 - (id)bagKey;
 - (void)cancelTapped;

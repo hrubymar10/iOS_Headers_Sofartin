@@ -10,8 +10,8 @@
     NSMutableDictionary *saveState;
 }
 
-@property(assign,readwrite) bool allowSave;
-@property(assign,readonly) bool hasSavedData;
+@property (nonatomic) bool allowSave;
+@property (nonatomic, readonly) bool hasSavedData;
 
 - (void).cxx_destruct;
 - (void)addDataSource:(id)arg1;

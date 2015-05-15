@@ -4,16 +4,16 @@
 
 @interface SUScriptNavigationItem : SUScriptObject
 
-@property(assign,copy) NSString * backButtonTitle;
-@property(assign,readwrite) id hidesBackButton;
-@property(assign,retain) <SUScriptNavigationItem> * leftItem;
-@property(assign,readwrite) id leftItemsSupplementBackButton;
-@property(assign,retain) <SUScriptNavigationItem> * leftMostItem;
-@property(assign,readonly) UINavigationItem * nativeNavigationItem;
-@property(assign,retain) NSString * prompt;
-@property(assign,retain) <SUScriptNavigationItem> * rightItem;
-@property(assign,retain) NSString * title;
-@property(assign,retain) id titleView;
+@property (copy) NSString *backButtonTitle;
+@property id hidesBackButton;
+@property (retain) <SUScriptNavigationItem> *leftItem;
+@property id leftItemsSupplementBackButton;
+@property (retain) <SUScriptNavigationItem> *leftMostItem;
+@property (nonatomic, readonly) UINavigationItem *nativeNavigationItem;
+@property (retain) NSString *prompt;
+@property (retain) <SUScriptNavigationItem> *rightItem;
+@property (retain) NSString *title;
+@property (retain) id titleView;
 
 + (void)_disconnectNavigationItem:(id)arg1 scriptObject:(id)arg2;
 + (id)_rootScriptObjectForObject:(id)arg1;

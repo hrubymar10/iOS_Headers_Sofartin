@@ -7,8 +7,8 @@
     id _object;
 }
 
-@property(assign,copy) NSString * keyPath;
-@property(assign,readwrite) id object;
+@property (nonatomic, copy) NSString *keyPath;
+@property (nonatomic) id object;
 
 + (id)constraintWithItem:(id)arg1 attribute:(long long)arg2 relatedBy:(long long)arg3 toItem:(id)arg4 attribute:(long long)arg5 multiplier:(double)arg6 constantObject:(id)arg7 keyPath:(id)arg8;
 

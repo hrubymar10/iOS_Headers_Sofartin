@@ -27,18 +27,18 @@
     UITableView *_tableView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) RUITableViewRow * defaultFirstResponderRow;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSDictionary * footerViewAttributes;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * headerTitle;
-@property(assign,readonly) RUITableHeaderView * headerView;
-@property(assign,retain) NSDictionary * headerViewAttributes;
-@property(assign,readwrite) RUIObjectModel<RUITableViewDelegate> * objectModel;
-@property(assign,readonly) NSMutableArray * sections;
-@property(getter=isShowingPicker,assign,readonly) bool showingPicker;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) RUITableViewRow *defaultFirstResponderRow;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSDictionary *footerViewAttributes;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *headerTitle;
+@property (nonatomic, readonly) RUITableHeaderView *headerView;
+@property (nonatomic, retain) NSDictionary *headerViewAttributes;
+@property (nonatomic) RUIObjectModel<RUITableViewDelegate> *objectModel;
+@property (nonatomic, readonly) NSMutableArray *sections;
+@property (getter=isShowingPicker, nonatomic, readonly) bool showingPicker;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_becomeFirstResponderAtIndexPath:(id)arg1;

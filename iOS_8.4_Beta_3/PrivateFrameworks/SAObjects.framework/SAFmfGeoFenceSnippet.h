@@ -4,11 +4,11 @@
 
 @interface SAFmfGeoFenceSnippet : SAUISnippet
 
-@property(assign,retain) SAFmfGeoFence * aceFmfGeoFence;
-@property(assign,copy) NSNumber * enable;
-@property(assign,copy) NSString * fenceType;
-@property(assign,copy) NSNumber * oneTimeOnly;
-@property(assign,copy) NSURL * searchContext;
+@property (nonatomic, retain) SAFmfGeoFence *aceFmfGeoFence;
+@property (nonatomic, copy) NSNumber *enable;
+@property (nonatomic, copy) NSString *fenceType;
+@property (nonatomic, copy) NSNumber *oneTimeOnly;
+@property (nonatomic, copy) NSURL *searchContext;
 
 + (id)geoFenceSnippet;
 + (id)geoFenceSnippetWithDictionary:(id)arg1 context:(id)arg2;

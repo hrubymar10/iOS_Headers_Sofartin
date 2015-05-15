@@ -11,9 +11,9 @@
     } _size;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) long long index;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
+@property (retain) UIImage *image;
+@property long long index;
+@property struct CGSize { double x1; double x2; } size;
 
 - (void)dealloc;
 - (id)image;

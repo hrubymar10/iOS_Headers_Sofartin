@@ -12,13 +12,13 @@
     long long _jobType;
 }
 
-@property(assign,retain) NSString * albumGUID;
-@property(assign,readwrite) bool albumHasUnseenContent;
-@property(assign,readwrite) long long albumUnviewedAssetCount;
-@property(assign,retain) NSString * assetCollectionGUID;
-@property(assign,readwrite) bool assetCollectionHasUnreadComments;
-@property(assign,retain) NSDate * assetCollectionLastViewedCommentDate;
-@property(assign,readwrite) long long jobType;
+@property (nonatomic, retain) NSString *albumGUID;
+@property (nonatomic) bool albumHasUnseenContent;
+@property (nonatomic) long long albumUnviewedAssetCount;
+@property (nonatomic, retain) NSString *assetCollectionGUID;
+@property (nonatomic) bool assetCollectionHasUnreadComments;
+@property (nonatomic, retain) NSDate *assetCollectionLastViewedCommentDate;
+@property (nonatomic) long long jobType;
 
 + (void)markAlbum:(id)arg1 asHavingUnseenContent:(bool)arg2;
 + (void)markAssetCollection:(id)arg1 asHavingUnreadComments:(bool)arg2 inAlbum:(id)arg3;

@@ -18,15 +18,15 @@
     unsigned int _reason;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned int flags;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id invalidationHandler;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) unsigned int reason;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool valid;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) unsigned int flags;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id invalidationHandler;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, readonly) unsigned int reason;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool valid;
 
 + (id)NameForReason:(unsigned int)arg1;
 

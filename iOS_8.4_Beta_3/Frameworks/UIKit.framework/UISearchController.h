@@ -22,22 +22,22 @@
     id _windowWillAnimateToken;
 }
 
-@property(assign,readonly) int _barPresentationStyle;
-@property(assign,readwrite) long long _previousSearchBarPosition;
-@property(assign,readwrite) double _resultsContentScrollViewPresentationOffset;
-@property(assign,retain) UIView * _resultsControllerViewContainer;
-@property(setter=_setShowResultsForEmptySearch:,assign,readwrite) bool _showResultsForEmptySearch;
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UISearchControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool dimsBackgroundDuringPresentation;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hidesNavigationBarDuringPresentation;
-@property(assign,retain) UISearchBar * searchBar;
-@property(assign,retain) UIViewController * searchResultsController;
-@property(assign,readwrite) <UISearchResultsUpdating> * searchResultsUpdater;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) int _barPresentationStyle;
+@property (nonatomic) long long _previousSearchBarPosition;
+@property (nonatomic) double _resultsContentScrollViewPresentationOffset;
+@property (nonatomic, retain) UIView *_resultsControllerViewContainer;
+@property (setter=_setShowResultsForEmptySearch:, nonatomic) bool _showResultsForEmptySearch;
+@property (getter=isActive, nonatomic) bool active;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UISearchControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool dimsBackgroundDuringPresentation;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hidesNavigationBarDuringPresentation;
+@property (nonatomic, readonly, retain) UISearchBar *searchBar;
+@property (nonatomic, readonly, retain) UIViewController *searchResultsController;
+@property (nonatomic) <UISearchResultsUpdating> *searchResultsUpdater;
+@property (readonly) Class superclass;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 

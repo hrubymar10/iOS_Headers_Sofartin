@@ -8,9 +8,9 @@
     long long _foregroundDataclasses;
 }
 
-@property(assign,retain) NSMapTable * clientsToPriorityRequests;
-@property(assign,readonly) int currentPriority;
-@property(assign,readwrite) long long foregroundDataclasses;
+@property (nonatomic, retain) NSMapTable *clientsToPriorityRequests;
+@property (nonatomic, readonly) int currentPriority;
+@property (nonatomic) long long foregroundDataclasses;
 
 + (id)sharedManager;
 + (void)vendPriorityManagers;

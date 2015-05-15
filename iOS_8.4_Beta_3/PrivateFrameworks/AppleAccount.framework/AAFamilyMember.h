@@ -21,22 +21,22 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSString * appleID;
-@property(assign,readwrite) bool areParentalControlsEnabled;
-@property(assign,copy) NSString * firstName;
-@property(assign,copy) NSString * iTunesNotLinkedMessage;
-@property(assign,readwrite) bool isAskToBuyEnabled;
-@property(assign,readwrite) bool isChild;
-@property(assign,readwrite) bool isMe;
-@property(assign,readwrite) bool isOrganizer;
-@property(assign,readwrite) bool isSharingPurchases;
-@property(assign,copy) NSDate * joinDate;
-@property(assign,copy) NSString * lastName;
-@property(assign,copy) NSString * linkediTunesAppleID;
-@property(assign,copy) NSNumber * linkediTunesDSID;
-@property(assign,copy) NSNumber * personID;
-@property(assign,copy) NSString * personIDHash;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *appleID;
+@property (nonatomic) bool areParentalControlsEnabled;
+@property (nonatomic, copy) NSString *firstName;
+@property (nonatomic, copy) NSString *iTunesNotLinkedMessage;
+@property (nonatomic) bool isAskToBuyEnabled;
+@property (nonatomic) bool isChild;
+@property (nonatomic) bool isMe;
+@property (nonatomic) bool isOrganizer;
+@property (nonatomic) bool isSharingPurchases;
+@property (nonatomic, copy) NSDate *joinDate;
+@property (nonatomic, copy) NSString *lastName;
+@property (nonatomic, copy) NSString *linkediTunesAppleID;
+@property (nonatomic, copy) NSNumber *linkediTunesDSID;
+@property (nonatomic, copy) NSNumber *personID;
+@property (nonatomic, copy) NSString *personIDHash;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)appleID;

@@ -6,8 +6,8 @@
     SSSQLiteDatabase *_database;
 }
 
-@property(assign,readwrite) unsigned long long currentEventsRevision;
-@property(assign,copy) NSString * eventsRevisionVersionToken;
+@property (nonatomic) unsigned long long currentEventsRevision;
+@property (nonatomic, readonly, copy) NSString *eventsRevisionVersionToken;
 
 + (id)_eventsDatabaseTableName;
 + (id)_propertiesDatabaseTableName;

@@ -10,11 +10,11 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) UIColor * fillColor;
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) struct CGSize { double x1; double x2; } preferredImageSize;
-@property(assign,readwrite) double progress;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) UIColor *fillColor;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } preferredImageSize;
+@property (nonatomic) double progress;
+@property (nonatomic, copy) NSString *title;
 
 + (struct CGSize { double x1; double x2; })preferredImageSizeForViewSize:(struct CGSize { double x1; double x2; })arg1;
 

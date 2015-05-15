@@ -6,7 +6,7 @@
     NSString *_localPeerID;
 }
 
-@property(assign,readonly) NSString * localPeerID;
+@property (nonatomic, readonly) NSString *localPeerID;
 
 + (id)newFileCoordinatorForUbiquitousExternalDataReferenceLocation:(id)arg1;
 + (id)newFileCoordinatorForUbiquityRootLocation:(id)arg1;

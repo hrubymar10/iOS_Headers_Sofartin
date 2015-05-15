@@ -6,7 +6,7 @@
     id timerSource;
 }
 
-@property(assign,readwrite) id timerSource;
+@property (nonatomic) id timerSource;
 
 + (id)getWeakReferenceOfObject:(id)arg1;
 

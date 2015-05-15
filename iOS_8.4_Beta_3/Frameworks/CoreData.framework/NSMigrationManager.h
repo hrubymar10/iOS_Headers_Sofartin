@@ -24,15 +24,15 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,readonly) NSEntityMapping * currentEntityMapping;
-@property(assign,readonly) NSManagedObjectContext * destinationContext;
-@property(assign,readonly) NSManagedObjectModel * destinationModel;
-@property(assign,readonly) NSMappingModel * mappingModel;
-@property(assign,readonly) float migrationProgress;
-@property(assign,readonly) NSManagedObjectContext * sourceContext;
-@property(assign,readonly) NSManagedObjectModel * sourceModel;
-@property(assign,retain) NSDictionary * userInfo;
-@property(assign,readwrite) bool usesStoreSpecificMigrationManager;
+@property (readonly) NSEntityMapping *currentEntityMapping;
+@property (readonly) NSManagedObjectContext *destinationContext;
+@property (readonly) NSManagedObjectModel *destinationModel;
+@property (readonly) NSMappingModel *mappingModel;
+@property (readonly) float migrationProgress;
+@property (readonly) NSManagedObjectContext *sourceContext;
+@property (readonly) NSManagedObjectModel *sourceModel;
+@property (nonatomic, retain) NSDictionary *userInfo;
+@property bool usesStoreSpecificMigrationManager;
 
 + (bool)_performSanityCheckForMapping:(id)arg1 fromSourceModel:(id)arg2 toDestinationModel:(id)arg3;
 + (int)migrationDebugLevel;

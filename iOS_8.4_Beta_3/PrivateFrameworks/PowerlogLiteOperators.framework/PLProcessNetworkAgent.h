@@ -10,11 +10,11 @@
     UsageFeed *_usageFeed;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * batteryLevelChanged;
-@property(assign,retain) NSDictionary * lastEntry;
-@property(assign,retain) NSDate * lastEntryTime;
-@property(assign,readwrite) struct __NStatManager { }* statManagerRef;
-@property(assign,retain) UsageFeed * usageFeed;
+@property (retain) PLEntryNotificationOperatorComposition *batteryLevelChanged;
+@property (retain) NSDictionary *lastEntry;
+@property (retain) NSDate *lastEntryTime;
+@property struct __NStatManager { }*statManagerRef;
+@property (retain) UsageFeed *usageFeed;
 
 + (id)accountingGroupDefinitions;
 + (id)entryEventBackwardDefinitionUsage;

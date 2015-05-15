@@ -7,8 +7,8 @@
     unsigned long long _numberOfItemsPerRow;
 }
 
-@property(assign,readwrite) bool itemsFillRow;
-@property(assign,readwrite) unsigned long long numberOfItemsPerRow;
+@property (nonatomic) bool itemsFillRow;
+@property (nonatomic) unsigned long long numberOfItemsPerRow;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)init;

@@ -18,9 +18,9 @@
     bool mResolved;
 }
 
-@property(assign,readonly) struct FramebufferAttributes { int x1; long long x2; int x3; int x4; int x5; bool x6; bool x7; } attributes;
-@property(assign,readonly) bool resolved;
-@property(assign,readonly) bool usingMultisample;
+@property (nonatomic, readonly) struct FramebufferAttributes { int x1; long long x2; int x3; int x4; int x5; bool x6; bool x7; } attributes;
+@property (nonatomic, readonly) bool resolved;
+@property (nonatomic, readonly) bool usingMultisample;
 
 + (id)multisampleWithParent:(id)arg1 framebufferAttributes:(const struct FramebufferAttributes { int x1; long long x2; int x3; int x4; int x5; bool x6; bool x7; }*)arg2;
 

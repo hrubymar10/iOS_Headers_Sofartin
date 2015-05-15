@@ -14,7 +14,7 @@
     int _transactionDepth;
 }
 
-@property(assign,readonly) struct sqlite3 { }* handle;
+@property (nonatomic, readonly) struct sqlite3 { }*handle;
 
 + (id)sqliteDatabaseInMemoryWithError:(id*)arg1;
 + (id)sqliteDatabaseWithFilename:(id)arg1 error:(id*)arg2;

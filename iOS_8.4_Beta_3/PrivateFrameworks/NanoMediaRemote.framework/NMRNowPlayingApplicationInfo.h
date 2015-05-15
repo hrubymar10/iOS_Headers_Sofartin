@@ -6,14 +6,14 @@
     _NMRNowPlayingApplicationStateProtobuf *_protobuf;
 }
 
-@property(assign,copy) NSString * companionBundleIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * localizedDisplayName;
-@property(assign,readwrite) unsigned int playbackState;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * watchBundleIdentifier;
+@property (nonatomic, copy) NSString *companionBundleIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *localizedDisplayName;
+@property (nonatomic) unsigned int playbackState;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *watchBundleIdentifier;
 
 - (void).cxx_destruct;
 - (id)companionBundleIdentifier;

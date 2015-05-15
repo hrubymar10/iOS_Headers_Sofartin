@@ -7,8 +7,8 @@
     CABasicAnimation *_toAnimation;
 }
 
-@property(assign,retain) CABasicAnimation * fromAnimation;
-@property(assign,retain) CABasicAnimation * toAnimation;
+@property (nonatomic, retain) CABasicAnimation *fromAnimation;
+@property (nonatomic, retain) CABasicAnimation *toAnimation;
 
 - (void)dealloc;
 - (id)fromAnimation;

@@ -4,7 +4,7 @@
 
 @interface SAUISetURLData : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * urlData;
+@property (nonatomic, copy) NSArray *urlData;
 
 + (id)setURLData;
 + (id)setURLDataWithDictionary:(id)arg1 context:(id)arg2;

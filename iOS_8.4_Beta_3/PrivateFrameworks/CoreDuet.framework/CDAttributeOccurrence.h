@@ -7,8 +7,8 @@
     NSObject *_value;
 }
 
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) NSObject * value;
+@property (readonly) NSDate *date;
+@property (readonly) NSObject *value;
 
 + (id)attributeOccurrenceWithValue:(id)arg1 date:(id)arg2;
 

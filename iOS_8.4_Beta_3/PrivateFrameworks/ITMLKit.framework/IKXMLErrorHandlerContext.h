@@ -7,10 +7,10 @@
     NSMutableSet *_mutableParserErrors;
 }
 
-@property(assign,readonly) NSString * errorMessage;
-@property(assign,retain) NSMutableString * mutableErrorMessages;
-@property(assign,retain) NSMutableSet * mutableParserErrors;
-@property(assign,readonly) NSArray * parserErrors;
+@property (nonatomic, readonly) NSString *errorMessage;
+@property (nonatomic, retain) NSMutableString *mutableErrorMessages;
+@property (nonatomic, retain) NSMutableSet *mutableParserErrors;
+@property (nonatomic, readonly) NSArray *parserErrors;
 
 - (void).cxx_destruct;
 - (void)clear;

@@ -15,16 +15,16 @@
     unsigned long long _width;
 }
 
-@property(assign,readonly) unsigned long long bytesPerRow;
-@property(assign,readonly) NSData * data;
-@property(assign,readonly) unsigned long long dataHeight;
-@property(assign,readonly) unsigned long long dataOffset;
-@property(assign,readonly) unsigned long long dataWidth;
-@property(assign,readonly) int format;
-@property(assign,readonly) unsigned long long height;
-@property(assign,readonly) bool isPlaceholder;
-@property(assign,readonly) UIImage * uiImage;
-@property(assign,readonly) unsigned long long width;
+@property (nonatomic, readonly) unsigned long long bytesPerRow;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic, readonly) unsigned long long dataHeight;
+@property (nonatomic, readonly) unsigned long long dataOffset;
+@property (nonatomic, readonly) unsigned long long dataWidth;
+@property (nonatomic, readonly) int format;
+@property (nonatomic, readonly) unsigned long long height;
+@property (nonatomic, readonly) bool isPlaceholder;
+@property (nonatomic, readonly) UIImage *uiImage;
+@property (nonatomic, readonly) unsigned long long width;
 
 + (id)imageWithData:(id)arg1 width:(unsigned long long)arg2 height:(unsigned long long)arg3 bytesPerRow:(unsigned long long)arg4 dataWidth:(unsigned long long)arg5 dataHeight:(unsigned long long)arg6 dataOffset:(unsigned long long)arg7 format:(int)arg8 isPlaceholder:(bool)arg9;
 + (id)imageWithUIImage:(id)arg1 format:(int)arg2 isPlaceholder:(bool)arg3;

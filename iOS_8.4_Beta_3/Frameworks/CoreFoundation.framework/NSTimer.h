@@ -4,11 +4,11 @@
 
 @interface NSTimer : NSObject
 
-@property(assign,copy) NSDate * fireDate;
-@property(assign,readonly) double timeInterval;
-@property(assign,readwrite) double tolerance;
-@property(assign,retain) id userInfo;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (copy) NSDate *fireDate;
+@property (readonly) double timeInterval;
+@property double tolerance;
+@property (readonly, retain) id userInfo;
+@property (getter=isValid, readonly) bool valid;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)scheduledTimerWithTimeInterval:(double)arg1 invocation:(id)arg2 repeats:(bool)arg3;

@@ -8,8 +8,8 @@
     NSMutableArray *_records;
 }
 
-@property(assign,readonly) NSString * keyPath;
-@property(assign,readonly) id object;
+@property (nonatomic, readonly) NSString *keyPath;
+@property (nonatomic, readonly) id object;
 
 - (void)addRecord:(id)arg1;
 - (void)applyRecordsMatchingTraitCollection:(id)arg1;

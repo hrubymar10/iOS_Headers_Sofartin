@@ -8,9 +8,9 @@
     NSSet *_topics;
 }
 
-@property(assign,copy) NSSet * commands;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,copy) NSSet * topics;
+@property (nonatomic, copy) NSSet *commands;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, copy) NSSet *topics;
 
 - (id)commands;
 - (void)dealloc;

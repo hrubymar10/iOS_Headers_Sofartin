@@ -24,8 +24,8 @@
     bool _shouldDisplayCaptionsBelowBatches;
 }
 
-@property(assign,readwrite) double referenceWidth;
-@property(assign,readwrite) bool shouldDisplayCaptionsBelowBatches;
+@property (nonatomic) double referenceWidth;
+@property (nonatomic) bool shouldDisplayCaptionsBelowBatches;
 
 - (bool)_addRowWithContiguousTiles:(struct { long long x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; struct CGSize { double x_3_1_1; double x_3_1_2; } x3; bool x4; bool x5; }*)arg1 count:(long long)arg2;
 - (bool)_addRowWithTiles:(struct { long long x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; struct CGSize { double x_3_1_1; double x_3_1_2; } x3; bool x4; bool x5; }*)arg1 imageFrames:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }*)arg2 count:(long long)arg3;

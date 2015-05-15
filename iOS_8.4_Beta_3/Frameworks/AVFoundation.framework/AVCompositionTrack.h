@@ -6,7 +6,7 @@
     AVCompositionTrackInternal *_priv;
 }
 
-@property(assign,copy) NSArray * segments;
+@property (nonatomic, readonly, copy) NSArray *segments;
 
 - (id)_initWithAsset:(id)arg1 trackID:(int)arg2 trackIndex:(long long)arg3;
 - (struct OpaqueFigMutableComposition { }*)_mutableComposition;

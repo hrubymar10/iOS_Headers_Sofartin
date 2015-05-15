@@ -11,10 +11,10 @@
     GSPermanentStorage *_storage;
 }
 
-@property(assign,readonly) NSError * gsError;
-@property(assign,readonly) bool isLoser;
-@property(assign,retain) BRCProgress * progress;
-@property(assign,readonly) GSPermanentStorage * storage;
+@property (nonatomic, readonly) NSError *gsError;
+@property (nonatomic, readonly) bool isLoser;
+@property (nonatomic, retain) BRCProgress *progress;
+@property (nonatomic, readonly) GSPermanentStorage *storage;
 
 - (void).cxx_destruct;
 - (id)_stageContentWithSession:(id)arg1 error:(id*)arg2;

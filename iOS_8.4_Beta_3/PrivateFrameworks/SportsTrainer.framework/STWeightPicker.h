@@ -8,14 +8,14 @@
     id _weightPickerDelegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) int selectedWeightUnit;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) float weightInKg;
-@property(assign,readwrite) float weightInLbs;
-@property(assign,readwrite) <STWeightPickerDelegate> * weightPickerDelegate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) int selectedWeightUnit;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) float weightInKg;
+@property (nonatomic) float weightInLbs;
+@property (nonatomic) <STWeightPickerDelegate> *weightPickerDelegate;
 
 + (float)kgForLbs:(float)arg1;
 + (float)lbsForKg:(float)arg1;

@@ -9,7 +9,7 @@
     GEOETARequest *_simpleETARequest;
 }
 
-@property(assign,copy) NSString * loggingFacility;
+@property (nonatomic, copy) NSString *loggingFacility;
 
 - (void)_calculateRoutingETAWithHandler:(id)arg1;
 - (void)_calculateSimpleETAWithHandler:(id)arg1;

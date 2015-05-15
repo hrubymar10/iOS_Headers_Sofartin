@@ -7,22 +7,22 @@
     <PCInterfaceUsabilityMonitorProtocol> *_internal;
 }
 
-@property(assign,readonly) struct __CFString { }* currentRAT;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long interfaceIdentifier;
-@property(assign,readonly) bool isBadLinkQuality;
-@property(assign,readonly) bool isInterfaceHistoricallyUsable;
-@property(assign,readonly) bool isInterfaceUsable;
-@property(assign,readonly) bool isInternetReachable;
-@property(assign,readonly) bool isLTEWithCDRX;
-@property(assign,readonly) bool isPoorLinkQuality;
-@property(assign,readonly) bool isRadioHot;
-@property(assign,readonly) int linkQuality;
-@property(assign,retain) NSString * linkQualityString;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct __CFString { }* wwanInterfaceName;
+@property (nonatomic, readonly) struct __CFString { }*currentRAT;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long interfaceIdentifier;
+@property (nonatomic, readonly) bool isBadLinkQuality;
+@property (nonatomic, readonly) bool isInterfaceHistoricallyUsable;
+@property (nonatomic, readonly) bool isInterfaceUsable;
+@property (nonatomic, readonly) bool isInternetReachable;
+@property (nonatomic, readonly) bool isLTEWithCDRX;
+@property (nonatomic, readonly) bool isPoorLinkQuality;
+@property (nonatomic, readonly) bool isRadioHot;
+@property (nonatomic, readonly) int linkQuality;
+@property (nonatomic, readonly, retain) NSString *linkQualityString;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct __CFString { }*wwanInterfaceName;
 
 + (bool)isBadLinkQuality:(int)arg1;
 + (bool)isPoorLinkQuality:(int)arg1;

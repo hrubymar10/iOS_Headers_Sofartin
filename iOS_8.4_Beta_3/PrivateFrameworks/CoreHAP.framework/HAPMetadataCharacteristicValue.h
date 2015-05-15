@@ -10,11 +10,11 @@
     NSNumber *_stepValue;
 }
 
-@property(assign,retain) NSNumber * maxLength;
-@property(assign,retain) NSNumber * maxValue;
-@property(assign,retain) NSNumber * minLength;
-@property(assign,retain) NSNumber * minValue;
-@property(assign,retain) NSNumber * stepValue;
+@property (nonatomic, retain) NSNumber *maxLength;
+@property (nonatomic, retain) NSNumber *maxValue;
+@property (nonatomic, retain) NSNumber *minLength;
+@property (nonatomic, retain) NSNumber *minValue;
+@property (nonatomic, retain) NSNumber *stepValue;
 
 + (id)initWithDictionary:(id)arg1;
 

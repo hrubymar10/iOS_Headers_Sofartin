@@ -8,8 +8,8 @@
     int _lock;
 }
 
-@property(assign,readonly) id delegate;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * delegateQueue;
+@property (readonly) id delegate;
+@property (readonly) NSObject<OS_dispatch_queue> *delegateQueue;
 
 + (void)initialize;
 

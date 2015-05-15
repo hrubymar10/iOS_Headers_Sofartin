@@ -7,7 +7,7 @@
     IMServiceImpl *_service;
 }
 
-@property(assign,retain) IMServiceImpl * service;
+@property (nonatomic, retain) IMServiceImpl *service;
 
 - (void)_handleAccountNotification:(id)arg1;
 - (void)_handleDaemonConnected:(id)arg1;

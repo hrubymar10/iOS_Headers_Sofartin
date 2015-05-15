@@ -28,20 +28,20 @@
     id _unlockCompletion;
 }
 
-@property(assign,readwrite) bool carDisplaySnippetVisible;
-@property(assign,retain) UIView * contentView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <AFUISiriViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool disabled;
-@property(assign,readonly) UIView * foregroundView;
-@property(assign,readwrite) long long frozenBackdropSnapshotOrientation;
-@property(assign,retain) UIView * frozenBackdropSnapshotView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long mode;
-@property(assign,readwrite) long long siriSessionState;
-@property(assign,readwrite) bool statusViewHidden;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool carDisplaySnippetVisible;
+@property (nonatomic, retain) UIView *contentView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <AFUISiriViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool disabled;
+@property (nonatomic, readonly) UIView *foregroundView;
+@property (nonatomic) long long frozenBackdropSnapshotOrientation;
+@property (nonatomic, retain) UIView *frozenBackdropSnapshotView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long mode;
+@property (nonatomic) long long siriSessionState;
+@property (nonatomic) bool statusViewHidden;
+@property (readonly) Class superclass;
 
 + (void)_animateView:(id)arg1 inBounds:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg2 fromYPosition:(double)arg3 toYPostion:(double)arg4 fade:(long long)arg5 completion:(id)arg6;
 

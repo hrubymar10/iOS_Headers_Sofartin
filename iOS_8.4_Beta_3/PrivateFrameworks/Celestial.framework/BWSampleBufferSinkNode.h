@@ -6,7 +6,7 @@
     id _sampleBufferAvailableHandler;
 }
 
-@property(assign,copy) id sampleBufferAvailableHandler;
+@property (nonatomic, copy) id sampleBufferAvailableHandler;
 
 + (void)initialize;
 

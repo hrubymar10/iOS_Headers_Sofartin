@@ -17,14 +17,14 @@
     NSString *_userPreferredLangID;
 }
 
-@property(assign,readonly) NSString * content;
-@property(assign,retain) NSArray * currentDialects;
-@property(assign,retain) NSLinguisticTagger * linguisticTagger;
-@property(assign,readwrite) bool splitContentOnNewlines;
-@property(getter=isTagged,assign,readwrite) bool tagged;
-@property(assign,retain) NSMutableArray * tags;
-@property(assign,retain) NSMutableOrderedSet * unpredictedAmbiguousLangMaps;
-@property(assign,copy) NSString * userPreferredLangID;
+@property (nonatomic, readonly) NSString *content;
+@property (nonatomic, retain) NSArray *currentDialects;
+@property (nonatomic, retain) NSLinguisticTagger *linguisticTagger;
+@property (nonatomic) bool splitContentOnNewlines;
+@property (getter=isTagged, nonatomic) bool tagged;
+@property (nonatomic, retain) NSMutableArray *tags;
+@property (nonatomic, retain) NSMutableOrderedSet *unpredictedAmbiguousLangMaps;
+@property (nonatomic, copy) NSString *userPreferredLangID;
 
 - (void)_addTag;
 - (void)_manuallyProcessContentWithRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1;

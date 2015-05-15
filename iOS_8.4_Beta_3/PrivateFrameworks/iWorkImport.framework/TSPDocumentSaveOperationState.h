@@ -23,24 +23,24 @@
     TSPPackageWriter *_supportPackageWriter;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readwrite) bool didEndWriteOperation;
-@property(assign,retain) TSPObject * documentObject;
-@property(assign,retain) TSPPackageWriter * documentPackageWriter;
-@property(assign,copy) NSString * documentPasswordHint;
-@property(assign,retain) TSPDocumentProperties * documentProperties;
-@property(assign,retain) TSPDocumentRevision * documentRevision;
-@property(assign,copy) NSUUID * documentUUID;
-@property(assign,retain) SFUCryptoKey * encryptionKey;
-@property(assign,copy) NSURL * originalSupportURL;
-@property(assign,readonly) long long packageType;
-@property(assign,retain) NSData * passwordVerifier;
-@property(assign,retain) NSProgress * progress;
-@property(assign,copy) NSURL * relativeURLForExternalData;
-@property(assign,readwrite) unsigned long long saveToken;
-@property(assign,readwrite) bool shouldLeavePendingEndSave;
-@property(assign,retain) TSPObject * supportObject;
-@property(assign,retain) TSPPackageWriter * supportPackageWriter;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic) bool didEndWriteOperation;
+@property (nonatomic, retain) TSPObject *documentObject;
+@property (nonatomic, retain) TSPPackageWriter *documentPackageWriter;
+@property (nonatomic, copy) NSString *documentPasswordHint;
+@property (nonatomic, retain) TSPDocumentProperties *documentProperties;
+@property (nonatomic, retain) TSPDocumentRevision *documentRevision;
+@property (nonatomic, copy) NSUUID *documentUUID;
+@property (nonatomic, retain) SFUCryptoKey *encryptionKey;
+@property (nonatomic, copy) NSURL *originalSupportURL;
+@property (nonatomic, readonly) long long packageType;
+@property (nonatomic, retain) NSData *passwordVerifier;
+@property (nonatomic, retain) NSProgress *progress;
+@property (nonatomic, copy) NSURL *relativeURLForExternalData;
+@property (nonatomic) unsigned long long saveToken;
+@property (nonatomic) bool shouldLeavePendingEndSave;
+@property (nonatomic, retain) TSPObject *supportObject;
+@property (nonatomic, retain) TSPPackageWriter *supportPackageWriter;
 
 - (void).cxx_destruct;
 - (id)URL;

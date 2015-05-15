@@ -19,14 +19,14 @@
     UserFSVolume *_volume;
 }
 
-@property(assign,readwrite) struct timespec { long long x1; long long x2; } createdDate;
-@property(assign,readwrite) bool isDirectory;
-@property(assign,readwrite) unsigned long long length;
-@property(getter=isLocked,assign,readwrite) bool locked;
-@property(assign,readwrite) struct timespec { long long x1; long long x2; } modifiedDate;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * path;
-@property(assign,retain) UserFSVolume * volume;
+@property (nonatomic) struct timespec { long long x1; long long x2; } createdDate;
+@property (nonatomic) bool isDirectory;
+@property (nonatomic) unsigned long long length;
+@property (getter=isLocked, nonatomic) bool locked;
+@property (nonatomic) struct timespec { long long x1; long long x2; } modifiedDate;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *path;
+@property (nonatomic, retain) UserFSVolume *volume;
 
 + (id)_itemWithVolume:(id)arg1 path:(id)arg2 properties:(id)arg3;
 

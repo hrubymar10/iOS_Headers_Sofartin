@@ -46,8 +46,8 @@
     } _tile;
 }
 
-@property(assign,readonly) unsigned long long incidentCount;
-@property(assign,readonly) long long updateTime;
+@property (nonatomic, readonly) unsigned long long incidentCount;
+@property (nonatomic, readonly) long long updateTime;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -27,17 +27,17 @@
     } _rect;
 }
 
-@property(assign,readwrite) struct __CFDictionary { }* annotationDictionary;
-@property(assign,readonly) struct __CFString { }* annotationId;
-@property(assign,readonly) struct CGColor { }* color;
-@property(assign,readonly) struct __CFString { }* content;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct __CFString { }* otherId;
-@property(assign,readonly) bool parseError;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rect;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) struct __CFDictionary { }*annotationDictionary;
+@property (nonatomic, readonly) struct __CFString { }*annotationId;
+@property (nonatomic, readonly) struct CGColor { }*color;
+@property (nonatomic, readonly) struct __CFString { }*content;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct __CFString { }*otherId;
+@property (nonatomic, readonly) bool parseError;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rect;
+@property (readonly) Class superclass;
 
 - (void)addQuadpoints;
 - (struct __CFDictionary { }*)annotationDictionary;

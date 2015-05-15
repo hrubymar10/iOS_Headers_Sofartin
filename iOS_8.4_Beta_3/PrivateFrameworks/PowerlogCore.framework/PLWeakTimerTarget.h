@@ -7,8 +7,8 @@
     id _target;
 }
 
-@property(assign,readwrite) SEL selector;
-@property(assign,readwrite) id target;
+@property (nonatomic) SEL selector;
+@property (nonatomic) id target;
 
 - (void).cxx_destruct;
 - (id)init;

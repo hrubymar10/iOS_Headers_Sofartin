@@ -9,9 +9,9 @@
     NSNumber *_storeItemIdentifier;
 }
 
-@property(assign,copy) NSString * storeFlavorIdentifier;
-@property(assign,copy) SKUIStoreIdentifier * storeIdentifier;
-@property(assign,copy) NSNumber * storeItemIdentifier;
+@property (nonatomic, copy) NSString *storeFlavorIdentifier;
+@property (nonatomic, copy) SKUIStoreIdentifier *storeIdentifier;
+@property (nonatomic, copy) NSNumber *storeItemIdentifier;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

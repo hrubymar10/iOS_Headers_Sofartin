@@ -11,12 +11,12 @@
     PLCropOverlayWallpaperBottomBar *_wallpaperBottomBar;
 }
 
-@property(assign,retain) CAMBottomBar * cameraBottomBar;
-@property(getter=isInPopover,assign,readwrite) bool inPopover;
-@property(getter=isPlayingVideo,assign,readwrite) bool playingVideo;
-@property(assign,retain) PLCropOverlayPreviewBottomBar * previewBottomBar;
-@property(assign,readwrite) long long style;
-@property(assign,retain) PLCropOverlayWallpaperBottomBar * wallpaperBottomBar;
+@property (nonatomic, retain) CAMBottomBar *cameraBottomBar;
+@property (getter=isInPopover, nonatomic) bool inPopover;
+@property (getter=isPlayingVideo, nonatomic) bool playingVideo;
+@property (nonatomic, retain) PLCropOverlayPreviewBottomBar *previewBottomBar;
+@property (nonatomic) long long style;
+@property (nonatomic, retain) PLCropOverlayWallpaperBottomBar *wallpaperBottomBar;
 
 - (void)_commonPLCropOverlayBottomBarInitialization;
 - (bool)_isEditingStyle:(long long)arg1;

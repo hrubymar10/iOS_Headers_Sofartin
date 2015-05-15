@@ -9,7 +9,7 @@
     BRCSyncContext *_syncContext;
 }
 
-@property(assign,readonly) BRCSyncContext * syncContext;
+@property (nonatomic, readonly) BRCSyncContext *syncContext;
 
 - (void).cxx_destruct;
 - (void)close;

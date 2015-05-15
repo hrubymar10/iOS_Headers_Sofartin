@@ -4,7 +4,7 @@
 
 @interface IKVideoElement : IKMediaElement
 
-@property(assign,retain) NSArray * timelines;
+@property (nonatomic, readonly, retain) NSArray *timelines;
 
 - (id)timelines;
 

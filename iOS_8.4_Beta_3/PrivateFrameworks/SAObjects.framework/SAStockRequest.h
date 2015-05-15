@@ -4,9 +4,9 @@
 
 @interface SAStockRequest : SADomainObject
 
-@property(assign,copy) NSDate * endDate;
-@property(assign,copy) NSString * requestType;
-@property(assign,copy) NSDate * startDate;
+@property (nonatomic, copy) NSDate *endDate;
+@property (nonatomic, copy) NSString *requestType;
+@property (nonatomic, copy) NSDate *startDate;
 
 + (id)request;
 + (id)requestWithDictionary:(id)arg1 context:(id)arg2;

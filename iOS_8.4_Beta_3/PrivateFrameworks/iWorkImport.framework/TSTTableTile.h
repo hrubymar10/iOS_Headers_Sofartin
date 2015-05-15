@@ -11,11 +11,11 @@
     unsigned char mStorageVersion;
 }
 
-@property(assign,readonly) unsigned char maxColumn;
-@property(assign,readonly) unsigned short maxRow;
-@property(assign,readonly) unsigned short numCells;
-@property(assign,readonly) unsigned short numRows;
-@property(assign,readonly) NSArray * rowInfos;
+@property (nonatomic, readonly) unsigned char maxColumn;
+@property (nonatomic, readonly) unsigned short maxRow;
+@property (nonatomic, readonly) unsigned short numCells;
+@property (nonatomic, readonly) unsigned short numRows;
+@property (nonatomic, readonly) NSArray *rowInfos;
 
 - (void)dealloc;
 - (void)debugDump;

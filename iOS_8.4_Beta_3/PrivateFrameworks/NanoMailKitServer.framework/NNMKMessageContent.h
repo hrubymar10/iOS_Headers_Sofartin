@@ -10,11 +10,11 @@
     NSData *_textData;
 }
 
-@property(assign,retain) NSArray * attachments;
-@property(assign,readwrite) bool mainAlternativeValid;
-@property(assign,retain) NSString * messageId;
-@property(assign,readwrite) bool partiallyLoaded;
-@property(assign,retain) NSData * textData;
+@property (nonatomic, retain) NSArray *attachments;
+@property (nonatomic) bool mainAlternativeValid;
+@property (nonatomic, retain) NSString *messageId;
+@property (nonatomic) bool partiallyLoaded;
+@property (nonatomic, retain) NSData *textData;
 
 + (id)classesForUnarchivingTextData;
 + (bool)supportsSecureCoding;

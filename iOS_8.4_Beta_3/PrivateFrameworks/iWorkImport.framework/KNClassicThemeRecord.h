@@ -8,9 +8,9 @@
     NSString *mUUID;
 }
 
-@property(assign,copy) NSString * UUID;
-@property(assign,readonly) NSArray * masters;
-@property(assign,retain) KNClassicStylesheetRecord * stylesheetRecord;
+@property (nonatomic, copy) NSString *UUID;
+@property (nonatomic, readonly) NSArray *masters;
+@property (nonatomic, retain) KNClassicStylesheetRecord *stylesheetRecord;
 
 - (id)UUID;
 - (void)addMaster:(id)arg1;

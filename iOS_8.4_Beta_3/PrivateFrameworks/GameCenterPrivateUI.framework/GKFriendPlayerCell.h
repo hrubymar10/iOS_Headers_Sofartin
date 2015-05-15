@@ -7,9 +7,9 @@
     GKLabel *_whenLabel;
 }
 
-@property(assign,retain) GKLabel * statusLabel;
-@property(assign,retain) GKLabel * whenLabel;
-@property(assign,readwrite) NSString * whenText;
+@property (nonatomic, retain) GKLabel *statusLabel;
+@property (nonatomic, retain) GKLabel *whenLabel;
+@property (nonatomic) NSString *whenText;
 
 + (Class)cellClassForPlayer:(id)arg1;
 + (void)registerCellClassesWithCollectionView:(id)arg1;

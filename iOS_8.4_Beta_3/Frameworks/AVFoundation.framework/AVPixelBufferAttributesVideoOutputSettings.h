@@ -7,7 +7,7 @@
     NSDictionary *_VTPixelAspectRatioDictionary;
 }
 
-@property(assign,readonly) NSDictionary * pixelBufferAttributes;
+@property (nonatomic, readonly) NSDictionary *pixelBufferAttributes;
 
 + (id)_videoOutputSettingsWithVideoSettingsDictionary:(id)arg1 exceptionReason:(id*)arg2;
 + (id)eligibleOutputSettingsDictionaryKeys;

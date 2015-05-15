@@ -7,8 +7,8 @@
     UILabel *_copyrightLabel;
 }
 
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,retain) NSString * copyrightString;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic, retain) NSString *copyrightString;
 
 - (void).cxx_destruct;
 - (id)colorScheme;

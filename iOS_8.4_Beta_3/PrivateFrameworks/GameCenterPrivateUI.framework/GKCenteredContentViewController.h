@@ -7,12 +7,12 @@
     GKCenteringScrollView *_scrollView;
 }
 
-@property(assign,retain) UIView * containerView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) GKCenteringScrollView * scrollView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIView *containerView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) GKCenteringScrollView *scrollView;
+@property (readonly) Class superclass;
 
 - (id)containerView;
 - (void)dealloc;

@@ -8,9 +8,9 @@
     <SKUISwooshViewControllerDelegate> *_delegate;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) SKUIColorScheme * colorScheme;
-@property(assign,readwrite) <SKUISwooshViewControllerDelegate> * delegate;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, copy) SKUIColorScheme *colorScheme;
+@property (nonatomic) <SKUISwooshViewControllerDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)clientContext;

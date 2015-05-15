@@ -4,8 +4,8 @@
 
 @interface DOMCSSValue : DOMObject
 
-@property(assign,copy) NSString * cssText;
-@property(assign,readonly) unsigned short cssValueType;
+@property (copy) NSString *cssText;
+@property (readonly) unsigned short cssValueType;
 
 - (id)cssText;
 - (unsigned short)cssValueType;

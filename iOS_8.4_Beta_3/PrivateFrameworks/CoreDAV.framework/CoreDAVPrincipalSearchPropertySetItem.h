@@ -6,7 +6,7 @@
     NSMutableSet *_principalSearchProperties;
 }
 
-@property(assign,retain) NSMutableSet * principalSearchProperties;
+@property (nonatomic, retain) NSMutableSet *principalSearchProperties;
 
 + (id)copyParseRules;
 

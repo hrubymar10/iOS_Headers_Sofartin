@@ -7,9 +7,9 @@
     NSString *_searchString;
 }
 
-@property(assign,readonly) bool hasSearchString;
-@property(assign,retain) NSMutableArray * properties;
-@property(assign,retain) NSString * searchString;
+@property (nonatomic, readonly) bool hasSearchString;
+@property (nonatomic, retain) NSMutableArray *properties;
+@property (nonatomic, retain) NSString *searchString;
 
 - (void).cxx_destruct;
 - (void)addProperties:(id)arg1;

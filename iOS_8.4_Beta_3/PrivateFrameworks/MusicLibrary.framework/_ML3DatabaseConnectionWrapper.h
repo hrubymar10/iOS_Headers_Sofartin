@@ -9,10 +9,10 @@
     unsigned long long _useCount;
 }
 
-@property(assign,retain) NSThread * borrowingThread;
-@property(assign,retain) ML3DatabaseConnection * connection;
-@property(assign,retain) NSThread * owningThread;
-@property(assign,readwrite) unsigned long long useCount;
+@property (nonatomic, retain) NSThread *borrowingThread;
+@property (nonatomic, retain) ML3DatabaseConnection *connection;
+@property (nonatomic, retain) NSThread *owningThread;
+@property (nonatomic) unsigned long long useCount;
 
 - (void).cxx_destruct;
 - (id)borrowingThread;

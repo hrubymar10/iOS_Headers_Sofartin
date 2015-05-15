@@ -6,7 +6,7 @@
     SUViewController *_viewController;
 }
 
-@property(assign,readwrite) SUViewController * viewController;
+@property (nonatomic) SUViewController *viewController;
 
 - (void)animateRotationToInterfaceOrientation:(long long)arg1 duration:(double)arg2;
 - (void)dealloc;

@@ -7,12 +7,12 @@
     NSMutableArray *_pageHints;
 }
 
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } documentPageRange;
-@property(assign,readwrite) unsigned long long documentStartPageIndex;
-@property(assign,readonly) unsigned long long lastPageIndex;
-@property(assign,readonly) unsigned long long pageCount;
-@property(assign,readonly) unsigned long long pageCountWithoutFillerPage;
-@property(assign,readonly) NSArray * pageHints;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } documentPageRange;
+@property (nonatomic) unsigned long long documentStartPageIndex;
+@property (nonatomic, readonly) unsigned long long lastPageIndex;
+@property (nonatomic, readonly) unsigned long long pageCount;
+@property (nonatomic, readonly) unsigned long long pageCountWithoutFillerPage;
+@property (nonatomic, readonly) NSArray *pageHints;
 
 + (bool)verifyHints:(id)arg1 withBodyStorage:(id)arg2 upToPageIndex:(unsigned long long)arg3;
 

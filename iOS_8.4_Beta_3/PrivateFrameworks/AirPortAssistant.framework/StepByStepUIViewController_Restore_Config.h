@@ -10,8 +10,8 @@
     UILabel *restoreRecommendationLabel;
 }
 
-@property(assign,retain) UIView * dontRestoreRecommendationContainerView;
-@property(assign,retain) UIView * restoreRecommendationContainerView;
+@property (nonatomic, retain) UIView *dontRestoreRecommendationContainerView;
+@property (nonatomic, retain) UIView *restoreRecommendationContainerView;
 
 - (void)dealloc;
 - (id)dontRestoreRecommendationContainerView;

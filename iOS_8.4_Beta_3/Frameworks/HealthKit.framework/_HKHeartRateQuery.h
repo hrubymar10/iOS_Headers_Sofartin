@@ -6,7 +6,7 @@
     id _updateHandler;
 }
 
-@property(assign,copy) id updateHandler;
+@property (nonatomic, copy) id updateHandler;
 
 - (void).cxx_destruct;
 - (void)_queue_cleanupAfterDeactivation;

@@ -7,7 +7,7 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,retain) NSMutableDictionary * backgroundTaskRecordsByTaskIdentifier;
+@property (retain) NSMutableDictionary *backgroundTaskRecordsByTaskIdentifier;
 
 + (id)contextWithArchive:(id)arg1;
 + (bool)supportsSecureCoding;

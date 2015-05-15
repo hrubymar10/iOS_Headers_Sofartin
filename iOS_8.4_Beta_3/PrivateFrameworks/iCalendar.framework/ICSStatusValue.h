@@ -6,7 +6,7 @@
     NSString *_statusString;
 }
 
-@property(assign,retain) NSString * statusString;
+@property (retain) NSString *statusString;
 
 + (id)statusTypeFromCode:(int)arg1;
 + (id)statusTypeFromCode:(int)arg1 statusString:(id)arg2;

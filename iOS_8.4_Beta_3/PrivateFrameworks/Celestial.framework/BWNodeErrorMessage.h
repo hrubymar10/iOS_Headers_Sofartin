@@ -6,7 +6,7 @@
     BWNodeError *_nodeError;
 }
 
-@property(assign,readonly) BWNodeError * nodeError;
+@property (readonly) BWNodeError *nodeError;
 
 + (id)newMessageWithNodeError:(id)arg1;
 

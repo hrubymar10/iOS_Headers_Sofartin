@@ -8,13 +8,13 @@
     <PKPaymentAuthorizationViewControllerPrivateDelegate> *_privateDelegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPaymentAuthorizationViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PKPaymentAuthorizationController * paymentController;
-@property(assign,readwrite) <PKPaymentAuthorizationViewControllerPrivateDelegate> * privateDelegate;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPaymentAuthorizationViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PKPaymentAuthorizationController *paymentController;
+@property (nonatomic) <PKPaymentAuthorizationViewControllerPrivateDelegate> *privateDelegate;
+@property (readonly) Class superclass;
 
 + (bool)canMakePayments;
 + (bool)canMakePaymentsUsingNetworks:(id)arg1;

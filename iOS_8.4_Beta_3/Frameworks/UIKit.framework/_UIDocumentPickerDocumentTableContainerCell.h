@@ -6,7 +6,7 @@
     UIImageView *_containerIconView;
 }
 
-@property(assign,retain) UIImageView * containerIconView;
+@property (nonatomic, retain) UIImageView *containerIconView;
 
 - (id)containerIconView;
 - (void)containersChangedWithSnapshot:(id)arg1 differences:(id)arg2;

@@ -13,30 +13,30 @@
     bool _useCheapTrafficShader;
 }
 
-@property(assign,readonly) bool canMakeSharingThumbnails;
-@property(assign,readonly) bool isPad;
-@property(assign,readonly) bool lowPerformanceDevice;
-@property(assign,readonly) double mainScreenPPI;
-@property(assign,readonly) double mainScreenScale;
-@property(assign,readonly) double maxContentScaleForRendering;
-@property(assign,readonly) unsigned long long memorySize;
-@property(assign,readonly) bool proceduralRoadAlpha;
-@property(assign,readonly) bool roadsWithSimpleLineMeshesAvailable;
-@property(assign,readonly) double routeLineSimplificationEpsilon;
-@property(assign,readonly) bool shouldDrawWhenReady;
-@property(assign,readonly) bool shouldPregenerateLabelGlyphs;
-@property(assign,readonly) bool shouldStyleLabelsInParallel;
-@property(assign,readonly) bool shouldUseTrafficAlphaHack;
-@property(assign,readonly) bool supports3DBuildingStrokes;
-@property(assign,readonly) bool supports3DBuildings;
-@property(assign,readonly) bool supportsBuildingShadows;
-@property(assign,readonly) bool supportsBuildingStrokes;
-@property(assign,readonly) bool supportsHiResBuildings;
-@property(assign,readonly) bool supportsHiResRTT;
-@property(assign,readonly) unsigned int tileDecodeQueueWidth;
-@property(assign,readonly) unsigned long long tileMaximumLimit;
-@property(assign,readonly) unsigned int tilePrefetchNumberOfScreens;
-@property(assign,readonly) bool useCheapTrafficShader;
+@property (nonatomic, readonly) bool canMakeSharingThumbnails;
+@property (nonatomic, readonly) bool isPad;
+@property (nonatomic, readonly) bool lowPerformanceDevice;
+@property (nonatomic, readonly) double mainScreenPPI;
+@property (nonatomic, readonly) double mainScreenScale;
+@property (nonatomic, readonly) double maxContentScaleForRendering;
+@property (nonatomic, readonly) unsigned long long memorySize;
+@property (nonatomic, readonly) bool proceduralRoadAlpha;
+@property (nonatomic, readonly) bool roadsWithSimpleLineMeshesAvailable;
+@property (nonatomic, readonly) double routeLineSimplificationEpsilon;
+@property (nonatomic, readonly) bool shouldDrawWhenReady;
+@property (nonatomic, readonly) bool shouldPregenerateLabelGlyphs;
+@property (nonatomic, readonly) bool shouldStyleLabelsInParallel;
+@property (nonatomic, readonly) bool shouldUseTrafficAlphaHack;
+@property (nonatomic, readonly) bool supports3DBuildingStrokes;
+@property (nonatomic, readonly) bool supports3DBuildings;
+@property (nonatomic, readonly) bool supportsBuildingShadows;
+@property (nonatomic, readonly) bool supportsBuildingStrokes;
+@property (nonatomic, readonly) bool supportsHiResBuildings;
+@property (nonatomic, readonly) bool supportsHiResRTT;
+@property (nonatomic, readonly) unsigned int tileDecodeQueueWidth;
+@property (nonatomic, readonly) unsigned long long tileMaximumLimit;
+@property (nonatomic, readonly) unsigned int tilePrefetchNumberOfScreens;
+@property (nonatomic, readonly) bool useCheapTrafficShader;
 
 + (id)sharedPlatform;
 

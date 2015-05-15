@@ -4,14 +4,14 @@
 
 @interface SAAlarmUpdateCompleted : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSURL * alarmId;
-@property(assign,copy) NSArray * alarmIds;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic, copy) NSURL *alarmId;
+@property (nonatomic, copy) NSArray *alarmIds;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
 
 + (id)updateCompleted;
 + (id)updateCompletedWithDictionary:(id)arg1 context:(id)arg2;

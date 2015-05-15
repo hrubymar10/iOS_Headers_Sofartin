@@ -11,16 +11,16 @@
     <MPUExtrasZoomingImageInteractiveTransitionSource> *_zoomingImageInteractiveTransitionSource;
 }
 
-@property(assign,readwrite) bool allowsPinchingImageForInteractiveZoomingImageTransition;
-@property(assign,readwrite) <MPUExtrasImageBrowserViewControllerDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPUExtrasImageBrowserViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIPageViewController * pageViewController;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long visibleImageIndex;
-@property(assign,readwrite) <MPUExtrasZoomingImageInteractiveTransitionSource> * zoomingImageInteractiveTransitionSource;
+@property (nonatomic) bool allowsPinchingImageForInteractiveZoomingImageTransition;
+@property (nonatomic) <MPUExtrasImageBrowserViewControllerDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPUExtrasImageBrowserViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIPageViewController *pageViewController;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned long long visibleImageIndex;
+@property (nonatomic) <MPUExtrasZoomingImageInteractiveTransitionSource> *zoomingImageInteractiveTransitionSource;
 
 - (void).cxx_destruct;
 - (void)_addPageViewForController:(id)arg1 toView:(id)arg2;

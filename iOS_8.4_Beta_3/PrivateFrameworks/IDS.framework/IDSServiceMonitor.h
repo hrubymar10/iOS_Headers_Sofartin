@@ -8,7 +8,7 @@
     int _token;
 }
 
-@property(assign,retain) NSString * service;
+@property (nonatomic, readonly, retain) NSString *service;
 
 - (void)_postAvailability:(long long)arg1;
 - (void)_updateAvailability;

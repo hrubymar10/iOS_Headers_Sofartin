@@ -7,8 +7,8 @@
     NSSet *_versions;
 }
 
-@property(assign,retain) NSString * bundleID;
-@property(assign,retain) NSSet * versions;
+@property (nonatomic, retain) NSString *bundleID;
+@property (nonatomic, retain) NSSet *versions;
 
 + (id)secureCodedPropertyKeys;
 

@@ -16,14 +16,14 @@
     NSMutableArray *_updatedAppleLanguages;
 }
 
-@property(assign,retain) PSSpecifier * addLanguageSpecifier;
-@property(assign,readwrite) bool changePrimaryLanguage;
-@property(assign,retain) NSArray * deviceLanguageGroup;
-@property(assign,retain) NSArray * preferredLanguagesGroup;
-@property(assign,retain) NSArray * regionFormatExampleGroup;
-@property(assign,retain) NSArray * regionFormatGroup;
-@property(assign,readwrite) bool shouldReloadSpecifiers;
-@property(assign,retain) NSMutableArray * updatedAppleLanguages;
+@property (nonatomic, retain) PSSpecifier *addLanguageSpecifier;
+@property (nonatomic) bool changePrimaryLanguage;
+@property (nonatomic, retain) NSArray *deviceLanguageGroup;
+@property (nonatomic, retain) NSArray *preferredLanguagesGroup;
+@property (nonatomic, retain) NSArray *regionFormatExampleGroup;
+@property (nonatomic, retain) NSArray *regionFormatGroup;
+@property (nonatomic) bool shouldReloadSpecifiers;
+@property (nonatomic, retain) NSMutableArray *updatedAppleLanguages;
 
 + (id)canonicalLocaleIdentifierWithValidCalendarForComponents:(id)arg1;
 + (id)capitalizeFirstPartOfCountry:(id)arg1;

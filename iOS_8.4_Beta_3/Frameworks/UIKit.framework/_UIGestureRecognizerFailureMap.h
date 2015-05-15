@@ -9,7 +9,7 @@
     int _unmetFailureRequirementCount;
 }
 
-@property(assign,readonly) bool hasUnmetFailureRequirementsOrDependents;
+@property (readonly) bool hasUnmetFailureRequirementsOrDependents;
 
 + (void)buildFailureMapForGestureRecognizer:(id)arg1;
 + (void)buildFailureMapForGestureRecognizers:(id)arg1;

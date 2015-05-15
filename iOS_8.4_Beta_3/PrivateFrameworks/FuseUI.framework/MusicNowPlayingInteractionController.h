@@ -17,9 +17,9 @@
     bool _transitionStarted;
 }
 
-@property(assign,retain) MusicNowPlayingTransitionController * animationController;
-@property(assign,retain) UIPanGestureRecognizer * gestureRecognizer;
-@property(assign,retain) MusicNowPlayingPresentationController * presentationController;
+@property (nonatomic, retain) MusicNowPlayingTransitionController *animationController;
+@property (nonatomic, retain) UIPanGestureRecognizer *gestureRecognizer;
+@property (nonatomic, retain) MusicNowPlayingPresentationController *presentationController;
 
 - (void).cxx_destruct;
 - (void)_panRecognized:(id)arg1;

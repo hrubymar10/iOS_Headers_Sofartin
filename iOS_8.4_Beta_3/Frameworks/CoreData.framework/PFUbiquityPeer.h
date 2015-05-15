@@ -4,12 +4,12 @@
 
 @interface PFUbiquityPeer : NSManagedObject
 
-@property(assign,retain) NSSet * localPeerStates;
-@property(assign,retain) NSString * peerCode;
-@property(assign,retain) NSString * peerKey;
-@property(assign,retain) NSSet * primaryKeyRanges;
-@property(assign,retain) NSSet * remoteStates;
-@property(assign,retain) NSSet * transactionEntries;
+@property (nonatomic, retain) NSSet *localPeerStates;
+@property (nonatomic, retain) NSString *peerCode;
+@property (nonatomic, retain) NSString *peerKey;
+@property (nonatomic, retain) NSSet *primaryKeyRanges;
+@property (nonatomic, retain) NSSet *remoteStates;
+@property (nonatomic, retain) NSSet *transactionEntries;
 
 + (id)allPeersInManagedObjectContext:(id)arg1;
 + (id)peerForPeerID:(id)arg1 inManagedObjectContext:(id)arg2 createIfMissing:(bool)arg3;

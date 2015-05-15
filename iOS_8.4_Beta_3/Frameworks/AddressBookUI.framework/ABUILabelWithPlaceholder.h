@@ -10,13 +10,13 @@
     NSString *_placeholder;
 }
 
-@property(assign,readwrite) UIFont * font;
-@property(assign,readwrite) UIColor * highlightedTextColor;
-@property(assign,copy) NSString * placeholder;
-@property(assign,readwrite) UIColor * shadowColor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } shadowOffset;
-@property(assign,copy) NSString * text;
-@property(assign,retain) UIColor * textColor;
+@property (nonatomic) UIFont *font;
+@property (nonatomic) UIColor *highlightedTextColor;
+@property (nonatomic, copy) NSString *placeholder;
+@property (nonatomic) UIColor *shadowColor;
+@property (nonatomic) struct CGSize { double x1; double x2; } shadowOffset;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, retain) UIColor *textColor;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_labelFrameForBounds:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 - (void)_setActualText:(id)arg1;

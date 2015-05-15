@@ -9,9 +9,9 @@
     id _resultBlock;
 }
 
-@property(assign,readwrite) bool cameraRecognized;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) id resultBlock;
+@property (nonatomic) bool cameraRecognized;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (copy) id resultBlock;
 
 - (void).cxx_destruct;
 - (void)_applyThankYouDictionary:(id)arg1 toRedeem:(id)arg2;

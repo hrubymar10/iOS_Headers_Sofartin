@@ -8,13 +8,13 @@
     bool _virgin;
 }
 
-@property(assign,retain) AceObject * aceObject;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SiriUIAceObjectViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(getter=isVirgin,assign,readonly) bool virgin;
+@property (nonatomic, retain) AceObject *aceObject;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SiriUIAceObjectViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (getter=isVirgin, nonatomic, readonly) bool virgin;
 
 - (void).cxx_destruct;
 - (void)_aceObjectViewControllerWillBeRemoved;

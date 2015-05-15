@@ -19,15 +19,15 @@
     int _viewType;
 }
 
-@property(assign,readonly) bool animateFromCurrentPosition;
-@property(assign,readonly) bool deleteAfterAnimation;
-@property(assign,readonly) double endFraction;
-@property(assign,readonly) UICollectionViewLayoutAttributes * finalLayoutAttributes;
-@property(assign,readwrite) bool rasterizeAfterAnimation;
-@property(assign,readwrite) bool resetRasterizationAfterAnimation;
-@property(assign,readonly) double startFraction;
-@property(assign,readonly) UICollectionReusableView * view;
-@property(assign,readonly) int viewType;
+@property (nonatomic, readonly) bool animateFromCurrentPosition;
+@property (nonatomic, readonly) bool deleteAfterAnimation;
+@property (nonatomic, readonly) double endFraction;
+@property (nonatomic, readonly) UICollectionViewLayoutAttributes *finalLayoutAttributes;
+@property (nonatomic) bool rasterizeAfterAnimation;
+@property (nonatomic) bool resetRasterizationAfterAnimation;
+@property (nonatomic, readonly) double startFraction;
+@property (nonatomic, readonly) UICollectionReusableView *view;
+@property (nonatomic, readonly) int viewType;
 
 - (void)addCompletionHandler:(id)arg1;
 - (void)addStartupHandler:(id)arg1;

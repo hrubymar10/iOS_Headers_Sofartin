@@ -15,16 +15,16 @@
     bool _wantsRotation;
 }
 
-@property(assign,readwrite) long long annotationSize;
-@property(assign,retain) CALayer * centerImageLayer;
-@property(assign,retain) CAShapeLayer * circleLayer;
-@property(assign,readwrite) double futureRotationAmount;
-@property(assign,readwrite) bool isRotating;
-@property(assign,retain) CAShapeLayer * markerCenter;
-@property(assign,retain) CAShapeLayer * markerOval;
-@property(assign,retain) CAShapeLayer * shapeLayer;
-@property(assign,retain) CAShapeLayer * tailLayer;
-@property(assign,readwrite) bool wantsRotation;
+@property (nonatomic) long long annotationSize;
+@property (nonatomic, retain) CALayer *centerImageLayer;
+@property (nonatomic, retain) CAShapeLayer *circleLayer;
+@property (nonatomic) double futureRotationAmount;
+@property (nonatomic) bool isRotating;
+@property (nonatomic, retain) CAShapeLayer *markerCenter;
+@property (nonatomic, retain) CAShapeLayer *markerOval;
+@property (nonatomic, retain) CAShapeLayer *shapeLayer;
+@property (nonatomic, retain) CAShapeLayer *tailLayer;
+@property (nonatomic) bool wantsRotation;
 
 + (id)circlePath;
 

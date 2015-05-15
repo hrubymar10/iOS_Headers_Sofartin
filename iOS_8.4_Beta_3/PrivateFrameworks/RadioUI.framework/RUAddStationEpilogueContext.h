@@ -9,10 +9,10 @@
     bool _shouldKeepPlayingCurrentItem;
 }
 
-@property(assign,readonly) RadioStation * addedStation;
-@property(assign,retain) MPAVItem * prefixItem;
-@property(assign,readwrite) bool shouldBeginPlayback;
-@property(assign,readwrite) bool shouldKeepPlayingCurrentItem;
+@property (nonatomic, readonly) RadioStation *addedStation;
+@property (nonatomic, retain) MPAVItem *prefixItem;
+@property (nonatomic) bool shouldBeginPlayback;
+@property (nonatomic) bool shouldKeepPlayingCurrentItem;
 
 - (void).cxx_destruct;
 - (id)addedStation;

@@ -6,7 +6,7 @@
     NSMutableDictionary *_operators;
 }
 
-@property(assign,retain) NSMutableDictionary * operators;
+@property (retain) NSMutableDictionary *operators;
 
 + (void)registerOperator:(Class)arg1;
 + (id)registeredOperators;

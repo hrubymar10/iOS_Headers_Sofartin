@@ -22,16 +22,16 @@
     long long _transactionCount;
 }
 
-@property(assign,readonly) NSArray * allStations;
-@property(assign,readwrite) unsigned long long authenticatedAccountIdentifier;
-@property(assign,readonly) NSArray * featuredStations;
-@property(assign,copy) NSString * globalHash;
-@property(assign,readwrite) unsigned long long globalVersion;
-@property(assign,readonly) NSArray * previewStations;
-@property(assign,copy) NSArray * reportProblemIssueTypes;
-@property(assign,copy) NSArray * stationSortOrdering;
-@property(assign,readonly) NSArray * stations;
-@property(assign,readonly) NSArray * userStations;
+@property (nonatomic, readonly) NSArray *allStations;
+@property (nonatomic) unsigned long long authenticatedAccountIdentifier;
+@property (nonatomic, readonly) NSArray *featuredStations;
+@property (nonatomic, copy) NSString *globalHash;
+@property (nonatomic) unsigned long long globalVersion;
+@property (nonatomic, readonly) NSArray *previewStations;
+@property (nonatomic, readonly, copy) NSArray *reportProblemIssueTypes;
+@property (nonatomic, copy) NSArray *stationSortOrdering;
+@property (nonatomic, readonly) NSArray *stations;
+@property (nonatomic, readonly) NSArray *userStations;
 
 + (id)_persistentStoreConfigurationOptions;
 + (void)_postAccountDidDeauthenticateNotification;

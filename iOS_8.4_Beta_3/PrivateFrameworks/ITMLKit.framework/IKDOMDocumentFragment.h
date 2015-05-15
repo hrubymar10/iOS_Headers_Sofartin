@@ -4,10 +4,10 @@
 
 @interface IKDOMDocumentFragment : IKDOMNode <IKJSDOMParentNode>
 
-@property(assign,readonly) unsigned long long childElementCount;
-@property(assign,readonly) IKDOMHTMLCollection * children;
-@property(assign,readonly) IKDOMElement * firstElementChild;
-@property(assign,readonly) IKDOMElement * lastElementChild;
+@property (nonatomic, readonly) unsigned long long childElementCount;
+@property (nonatomic, readonly) IKDOMHTMLCollection *children;
+@property (nonatomic, readonly) IKDOMElement *firstElementChild;
+@property (nonatomic, readonly) IKDOMElement *lastElementChild;
 
 - (unsigned long long)childElementCount;
 - (id)children;

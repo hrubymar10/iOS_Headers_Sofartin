@@ -10,7 +10,7 @@
     NSObject<OS_dispatch_queue> *_socketRWQueue;
 }
 
-@property(assign,readonly) bool isWifi;
+@property (nonatomic, readonly) bool isWifi;
 
 - (void).cxx_destruct;
 - (void)_readLength:(unsigned long long)arg1;

@@ -10,11 +10,11 @@
     long long _size;
 }
 
-@property(assign,retain) NSMutableDictionary * assets;
-@property(assign,readwrite) unsigned long long cacheType;
-@property(assign,retain) NSString * gizmoCacheIdentifier;
-@property(assign,retain) NSMutableArray * keys;
-@property(assign,readwrite) long long size;
+@property (nonatomic, retain) NSMutableDictionary *assets;
+@property (nonatomic) unsigned long long cacheType;
+@property (nonatomic, retain) NSString *gizmoCacheIdentifier;
+@property (nonatomic, retain) NSMutableArray *keys;
+@property (nonatomic) long long size;
 
 - (void).cxx_destruct;
 - (bool)addAsset:(id)arg1 withName:(id)arg2 sendImage:(bool)arg3;

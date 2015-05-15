@@ -17,21 +17,21 @@
     NSData *_thumbnailHash;
 }
 
-@property(assign,retain) PKColor * backgroundColor;
-@property(assign,retain) NSData * backgroundHash;
-@property(assign,retain) PKColor * foregroundColor;
-@property(assign,retain) NSData * iconHash;
-@property(assign,retain) PKColor * labelColor;
-@property(assign,readonly) long long layoutMode;
-@property(assign,retain) NSData * logoHash;
-@property(assign,readwrite) long long passStyle;
-@property(assign,retain) NSData * paymentAssetsHash;
-@property(assign,readonly) bool showsBackgroundImage;
-@property(assign,readonly) bool showsStripImage;
-@property(assign,retain) PKColor * stripColor;
-@property(assign,retain) NSData * stripHash;
-@property(assign,readwrite) bool tallCode;
-@property(assign,retain) NSData * thumbnailHash;
+@property (nonatomic, retain) PKColor *backgroundColor;
+@property (nonatomic, retain) NSData *backgroundHash;
+@property (nonatomic, retain) PKColor *foregroundColor;
+@property (nonatomic, retain) NSData *iconHash;
+@property (nonatomic, retain) PKColor *labelColor;
+@property (nonatomic, readonly) long long layoutMode;
+@property (nonatomic, retain) NSData *logoHash;
+@property (nonatomic) long long passStyle;
+@property (nonatomic, retain) NSData *paymentAssetsHash;
+@property (nonatomic, readonly) bool showsBackgroundImage;
+@property (nonatomic, readonly) bool showsStripImage;
+@property (nonatomic, retain) PKColor *stripColor;
+@property (nonatomic, retain) NSData *stripHash;
+@property (nonatomic) bool tallCode;
+@property (nonatomic, retain) NSData *thumbnailHash;
 
 + (bool)supportsSecureCoding;
 

@@ -11,16 +11,16 @@
     NSSet *_updatedWriteURLs;
 }
 
-@property(assign,retain) NSSet * addReadURLs;
-@property(assign,retain) NSSet * addWriteURLs;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSSet * removeURLs;
-@property(assign,readwrite) int state;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSSet * updatedReadURLs;
-@property(assign,retain) NSSet * updatedWriteURLs;
+@property (nonatomic, retain) NSSet *addReadURLs;
+@property (nonatomic, retain) NSSet *addWriteURLs;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSSet *removeURLs;
+@property (nonatomic) int state;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSSet *updatedReadURLs;
+@property (nonatomic, retain) NSSet *updatedWriteURLs;
 
 - (void)_fetchExistingGrantedDelegates;
 - (void)_finishWithError:(id)arg1 state:(int)arg2;

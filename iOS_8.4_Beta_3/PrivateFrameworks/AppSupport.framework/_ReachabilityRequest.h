@@ -12,7 +12,7 @@
     bool _receivedAtLeastOneCallback;
 }
 
-@property(assign,readwrite) NSString * hostname;
+@property (nonatomic) NSString *hostname;
 
 - (void)addObserver:(id)arg1 selector:(SEL)arg2;
 - (void)dealloc;

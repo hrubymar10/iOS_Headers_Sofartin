@@ -13,11 +13,11 @@
     double _width;
 }
 
-@property(assign,readonly) unsigned long long calendarUnit;
-@property(assign,readonly) unsigned long long equivalentUnit;
-@property(assign,readonly) NSString * formatString;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } unitRange;
-@property(assign,readwrite) double width;
+@property (nonatomic, readonly) unsigned long long calendarUnit;
+@property (nonatomic, readonly) unsigned long long equivalentUnit;
+@property (nonatomic, readonly) NSString *formatString;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } unitRange;
+@property (nonatomic) double width;
 
 + (id)componentsFromDateFormatString:(id)arg1 locale:(id)arg2;
 + (id)componentsFromDateFormatString:(id)arg1 locale:(id)arg2 desiredUnits:(long long)arg3;

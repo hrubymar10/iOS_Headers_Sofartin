@@ -29,18 +29,18 @@
     PUPingTimer *_suggestedSearchResultsPingTimer;
 }
 
-@property(assign,retain) UIView * backgroundView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUSearchViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInCustomTransition,assign,readwrite) bool inCustomTransition;
-@property(assign,readonly) UISearchBar * searchBar;
-@property(assign,copy) NSString * searchText;
-@property(assign,retain) NSString * selectedDisplayTitle;
-@property(assign,readwrite) bool showsSearchBarInNavigationBar;
-@property(assign,readwrite) bool showsSectionHeaderForSearchResults;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIView *backgroundView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUSearchViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isInCustomTransition, nonatomic) bool inCustomTransition;
+@property (nonatomic, readonly) UISearchBar *searchBar;
+@property (nonatomic, copy) NSString *searchText;
+@property (nonatomic, retain) NSString *selectedDisplayTitle;
+@property (nonatomic) bool showsSearchBarInNavigationBar;
+@property (nonatomic) bool showsSectionHeaderForSearchResults;
+@property (readonly) Class superclass;
 
 + (id)_screenSnapshot;
 + (bool)mustAdaptFromTraitCollection:(id)arg1 toTraitCollection:(id)arg2;

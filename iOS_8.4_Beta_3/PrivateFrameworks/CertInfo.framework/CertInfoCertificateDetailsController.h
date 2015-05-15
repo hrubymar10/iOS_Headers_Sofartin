@@ -9,8 +9,8 @@
     unsigned int _showsDoneButton;
 }
 
-@property(assign,readwrite) <CertInfoCertificateDetailsControllerDelegate> * delegate;
-@property(assign,readwrite) bool showsDoneButton;
+@property (nonatomic) <CertInfoCertificateDetailsControllerDelegate> *delegate;
+@property (nonatomic) bool showsDoneButton;
 
 - (void).cxx_destruct;
 - (void)_doneButtonPressed:(id)arg1;

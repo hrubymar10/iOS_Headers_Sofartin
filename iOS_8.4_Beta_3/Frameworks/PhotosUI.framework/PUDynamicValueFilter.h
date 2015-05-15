@@ -7,8 +7,8 @@
     double _targetValue;
 }
 
-@property(assign,readwrite) double currentTime;
-@property(assign,readwrite) double targetValue;
+@property (nonatomic) double currentTime;
+@property (nonatomic) double targetValue;
 
 - (void)_update;
 - (double)currentTime;

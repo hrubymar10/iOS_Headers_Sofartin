@@ -11,19 +11,19 @@
     _RCCaptureInputDeviceSession *_preparingInputSession;
 }
 
-@property(assign,readonly) RCCaptureSession * activeCaptureSession;
-@property(assign,readonly) NSString * activeInputRouteName;
-@property(assign,retain) _RCCaptureInputDeviceSession * activeInputSession;
-@property(assign,readonly) RCAudioSessionRoutingController * audioRouteController;
-@property(assign,readonly) bool canExitApplication;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInputAvailable,assign,readonly) bool inputAvailable;
-@property(assign,retain) _RCCaptureInputDeviceSession * pendingInputSession;
-@property(getter=isPhoneCallRouteActive,assign,readonly) bool phoneCallRouteActive;
-@property(assign,retain) _RCCaptureInputDeviceSession * preparingInputSession;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) RCCaptureSession *activeCaptureSession;
+@property (nonatomic, readonly) NSString *activeInputRouteName;
+@property (nonatomic, retain) _RCCaptureInputDeviceSession *activeInputSession;
+@property (nonatomic, readonly) RCAudioSessionRoutingController *audioRouteController;
+@property (nonatomic, readonly) bool canExitApplication;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isInputAvailable, nonatomic, readonly) bool inputAvailable;
+@property (nonatomic, retain) _RCCaptureInputDeviceSession *pendingInputSession;
+@property (getter=isPhoneCallRouteActive, nonatomic, readonly) bool phoneCallRouteActive;
+@property (nonatomic, retain) _RCCaptureInputDeviceSession *preparingInputSession;
+@property (readonly) Class superclass;
 
 + (id)sharedCaptureDevice;
 

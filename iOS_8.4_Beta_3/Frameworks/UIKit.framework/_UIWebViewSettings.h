@@ -11,12 +11,12 @@
     bool _suppressesIncrementalRendering;
 }
 
-@property(assign,readwrite) bool allowsInlineMediaPlayback;
-@property(assign,copy) NSString * customUserAgent;
-@property(assign,readwrite) unsigned long long dataDetectorTypes;
-@property(assign,readwrite) bool mediaPlaybackAllowsAirPlay;
-@property(assign,readwrite) bool mediaPlaybackRequiresUserAction;
-@property(assign,readwrite) bool suppressesIncrementalRendering;
+@property (nonatomic) bool allowsInlineMediaPlayback;
+@property (nonatomic, copy) NSString *customUserAgent;
+@property (nonatomic) unsigned long long dataDetectorTypes;
+@property (nonatomic) bool mediaPlaybackAllowsAirPlay;
+@property (nonatomic) bool mediaPlaybackRequiresUserAction;
+@property (nonatomic) bool suppressesIncrementalRendering;
 
 + (id)defaultSettings;
 

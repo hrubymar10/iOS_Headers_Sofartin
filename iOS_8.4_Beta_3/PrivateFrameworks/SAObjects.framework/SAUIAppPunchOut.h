@@ -4,17 +4,17 @@
 
 @interface SAUIAppPunchOut : SABaseClientBoundCommand
 
-@property(assign,retain) SAUIAddViews * alternativePunchOut;
-@property(assign,readwrite) bool appAvailableInStorefront;
-@property(assign,copy) NSString * appDisplayName;
-@property(assign,retain) SAUIImageResource * appIcon;
-@property(assign,copy) NSDictionary * appIconMap;
-@property(assign,readwrite) bool appInstalled;
-@property(assign,copy) NSURL * appStoreUri;
-@property(assign,copy) NSString * bundleId;
-@property(assign,copy) NSString * providerId;
-@property(assign,copy) NSString * punchOutName;
-@property(assign,copy) NSURL * punchOutUri;
+@property (nonatomic, retain) SAUIAddViews *alternativePunchOut;
+@property (nonatomic) bool appAvailableInStorefront;
+@property (nonatomic, copy) NSString *appDisplayName;
+@property (nonatomic, retain) SAUIImageResource *appIcon;
+@property (nonatomic, copy) NSDictionary *appIconMap;
+@property (nonatomic) bool appInstalled;
+@property (nonatomic, copy) NSURL *appStoreUri;
+@property (nonatomic, copy) NSString *bundleId;
+@property (nonatomic, copy) NSString *providerId;
+@property (nonatomic, copy) NSString *punchOutName;
+@property (nonatomic, copy) NSURL *punchOutUri;
 
 + (id)appPunchOut;
 + (id)appPunchOutWithDictionary:(id)arg1 context:(id)arg2;

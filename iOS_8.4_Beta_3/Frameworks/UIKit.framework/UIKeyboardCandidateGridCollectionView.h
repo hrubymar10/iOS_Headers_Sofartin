@@ -10,11 +10,11 @@
     double _previousGroupBarStartingY;
 }
 
-@property(assign,retain) UIView * headerView;
-@property(assign,readonly) UITableViewIndex * index;
-@property(assign,retain) NSArray * indexTitles;
-@property(assign,readwrite) UIKeyboardCandidateGridCollectionViewController * parentViewController;
-@property(assign,readwrite) double previousGroupBarStartingY;
+@property (nonatomic, retain) UIView *headerView;
+@property (nonatomic, readonly) UITableViewIndex *index;
+@property (nonatomic, retain) NSArray *indexTitles;
+@property (nonatomic) UIKeyboardCandidateGridCollectionViewController *parentViewController;
+@property (nonatomic) double previousGroupBarStartingY;
 
 - (void)dealloc;
 - (void)delayUpdateIndex;

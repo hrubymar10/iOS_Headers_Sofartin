@@ -6,7 +6,7 @@
     UIView<CKAttachmentView> *_attachmentView;
 }
 
-@property(assign,retain) UIView<CKAttachmentView> * attachmentView;
+@property (nonatomic, retain) UIView<CKAttachmentView> *attachmentView;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })alignmentRectInsets;
 - (id)attachmentView;

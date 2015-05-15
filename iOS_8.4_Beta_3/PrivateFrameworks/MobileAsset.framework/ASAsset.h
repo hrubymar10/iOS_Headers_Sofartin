@@ -12,15 +12,15 @@
     id _progressHandler;
 }
 
-@property(assign,readonly) NSString * assetType;
-@property(assign,readonly) NSDictionary * attributes;
-@property(assign,retain) NSString * clientName;
-@property(assign,retain) NSDictionary * downloadOptions;
-@property(assign,readonly) NSDictionary * fullAttributes;
-@property(assign,readwrite) long long garbageCollectionBehavior;
-@property(assign,readonly) NSURL * localURL;
-@property(assign,copy) id progressHandler;
-@property(assign,readonly) long long state;
+@property (nonatomic, readonly) NSString *assetType;
+@property (nonatomic, readonly) NSDictionary *attributes;
+@property (nonatomic, retain) NSString *clientName;
+@property (nonatomic, retain) NSDictionary *downloadOptions;
+@property (nonatomic, readonly) NSDictionary *fullAttributes;
+@property (nonatomic) long long garbageCollectionBehavior;
+@property (nonatomic, readonly) NSURL *localURL;
+@property (nonatomic, copy) id progressHandler;
+@property (nonatomic, readonly) long long state;
 
 - (long long)_contentVersion;
 - (void)_downloadWithOptions:(id)arg1 shouldFireCallback:(bool)arg2;

@@ -8,10 +8,10 @@
     id _weakTarget;
 }
 
-@property(getter=_image,setter=_setImage:,assign,retain) UIImage * image;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) SEL selector;
-@property(assign,readwrite) id target;
+@property (getter=_image, setter=_setImage:, nonatomic, retain) UIImage *image;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) SEL selector;
+@property (nonatomic) id target;
 
 - (id)_accessibilityCustomActionIdentifier;
 - (bool)_accessibilityMatchesCustomActionIdentifier:(id)arg1;

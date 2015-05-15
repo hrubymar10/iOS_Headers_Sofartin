@@ -6,10 +6,10 @@
     id _internal;
 }
 
-@property(assign,readonly) NSObject<OS_xpc_object> * connection;
-@property(assign,readonly) bool isValid;
-@property(assign,readwrite) int pid;
-@property(assign,readonly) NSString * portName;
+@property (nonatomic, readonly) NSObject<OS_xpc_object> *connection;
+@property (nonatomic, readonly) bool isValid;
+@property (nonatomic) int pid;
+@property (nonatomic, readonly) NSString *portName;
 
 + (void)_registerIMRemoteObject:(id)arg1;
 + (id)_remoteObjects;

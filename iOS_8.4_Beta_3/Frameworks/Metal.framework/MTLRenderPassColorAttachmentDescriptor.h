@@ -4,7 +4,7 @@
 
 @interface MTLRenderPassColorAttachmentDescriptor : MTLRenderPassAttachmentDescriptor
 
-@property(assign,readwrite) struct { double x1; double x2; double x3; double x4; } clearColor;
+@property (nonatomic) struct { double x1; double x2; double x3; double x4; } clearColor;
 
 - (struct { double x1; double x2; double x3; double x4; })clearColor;
 - (id)description;

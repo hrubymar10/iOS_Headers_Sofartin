@@ -9,9 +9,9 @@
     unsigned int _queryID;
 }
 
-@property(assign,readwrite) <SPDaemonQueryDelegate> * delegate;
-@property(assign,readonly) SPSearchQuery * query;
-@property(assign,readonly) unsigned int queryID;
+@property (nonatomic) <SPDaemonQueryDelegate> *delegate;
+@property (nonatomic, readonly) SPSearchQuery *query;
+@property (nonatomic, readonly) unsigned int queryID;
 
 - (void)dealloc;
 - (id)delegate;

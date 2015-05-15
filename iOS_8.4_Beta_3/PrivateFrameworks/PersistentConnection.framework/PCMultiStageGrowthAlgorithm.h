@@ -17,16 +17,16 @@
     double _minimumKeepAliveInterval;
 }
 
-@property(assign,copy) NSDictionary * cacheInfo;
-@property(assign,readonly) unsigned long long countOfGrowthActions;
-@property(assign,readonly) double currentKeepAliveInterval;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * loggingIdentifier;
-@property(assign,readwrite) double maximumKeepAliveInterval;
-@property(assign,readwrite) double minimumKeepAliveInterval;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, copy) NSDictionary *cacheInfo;
+@property (nonatomic, readonly) unsigned long long countOfGrowthActions;
+@property (nonatomic, readonly) double currentKeepAliveInterval;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *loggingIdentifier;
+@property (nonatomic) double maximumKeepAliveInterval;
+@property (nonatomic) double minimumKeepAliveInterval;
+@property (readonly) Class superclass;
 
 + (void)_loadDefaultValue:(double*)arg1 forKey:(struct __CFString { }*)arg2;
 + (void)_loadDefaults;

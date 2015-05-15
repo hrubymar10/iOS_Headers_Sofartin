@@ -11,11 +11,11 @@
     NSMutableArray *_pushMessages;
 }
 
-@property(assign,retain) NSData * changeID;
-@property(assign,readonly) bool hasChangeID;
-@property(assign,readwrite) bool hasMoreAvailable;
-@property(assign,readwrite) bool moreAvailable;
-@property(assign,retain) NSMutableArray * pushMessages;
+@property (nonatomic, retain) NSData *changeID;
+@property (nonatomic, readonly) bool hasChangeID;
+@property (nonatomic) bool hasMoreAvailable;
+@property (nonatomic) bool moreAvailable;
+@property (nonatomic, retain) NSMutableArray *pushMessages;
 
 - (void).cxx_destruct;
 - (void)addPushMessage:(id)arg1;

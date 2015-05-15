@@ -6,16 +6,16 @@
     SUScriptFunction *_actionFunction;
 }
 
-@property(assign,retain) WebScriptObject * actionFunction;
-@property(assign,readonly) NSString * activityImageNameGiftAppStore;
-@property(assign,readonly) NSString * activityImageNameGiftMusicStore;
-@property(assign,readonly) NSString * activityImageNamePingAppStore;
-@property(assign,readonly) NSString * activityImageNamePingMusicStore;
-@property(assign,readonly) NSString * activityImageNameWishlistAppStore;
-@property(assign,readonly) NSString * activityImageNameWishlistMusicStore;
-@property(assign,copy) NSString * activityTitle;
-@property(assign,copy) NSString * activityType;
-@property(assign,readonly) SUActivity * nativeActivity;
+@property (retain) WebScriptObject *actionFunction;
+@property (readonly) NSString *activityImageNameGiftAppStore;
+@property (readonly) NSString *activityImageNameGiftMusicStore;
+@property (readonly) NSString *activityImageNamePingAppStore;
+@property (readonly) NSString *activityImageNamePingMusicStore;
+@property (readonly) NSString *activityImageNameWishlistAppStore;
+@property (readonly) NSString *activityImageNameWishlistMusicStore;
+@property (copy) NSString *activityTitle;
+@property (copy) NSString *activityType;
+@property (nonatomic, readonly) SUActivity *nativeActivity;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

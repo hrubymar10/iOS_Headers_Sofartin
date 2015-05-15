@@ -6,7 +6,7 @@
     bool _aggroBubbles;
 }
 
-@property(assign,readwrite) bool aggroBubbles;
+@property (nonatomic) bool aggroBubbles;
 
 - (bool)aggroBubbles;
 - (void)animateTransition:(id)arg1;

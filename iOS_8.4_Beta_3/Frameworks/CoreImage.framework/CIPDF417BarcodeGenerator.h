@@ -6,7 +6,7 @@
     NSDictionary *inputOptions;
 }
 
-@property(assign,copy) NSDictionary * inputOptions;
+@property (nonatomic, copy) NSDictionary *inputOptions;
 
 + (id)customAttributes;
 

@@ -14,10 +14,10 @@
     bool _preferDarkColors;
 }
 
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,readwrite) struct AXLogColorTheme { long long x1; long long x2; long long x3; long long x4; } colorTheme;
-@property(getter=isManagedBySettings,assign,readwrite) bool managedBySettings;
-@property(assign,readwrite) bool preferDarkColors;
+@property (getter=isActive, nonatomic) bool active;
+@property (nonatomic) struct AXLogColorTheme { long long x1; long long x2; long long x3; long long x4; } colorTheme;
+@property (getter=isManagedBySettings, nonatomic) bool managedBySettings;
+@property (nonatomic) bool preferDarkColors;
 
 + (char *)ansiColorSeqForAXLogColor:(long long)arg1;
 + (id)coloredString:(id)arg1 withColor:(long long)arg2;

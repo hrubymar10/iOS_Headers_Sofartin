@@ -12,13 +12,13 @@
     NSString *_userAgent;
 }
 
-@property(assign,readonly) CLLocation * location;
-@property(assign,copy) NSString * pointOfInterestIdentifier;
-@property(assign,copy) NSString * pointOfInterestProviderIdentifier;
-@property(assign,copy) NSString * pointOfInterestProviderURL;
-@property(assign,copy) id responseBlock;
-@property(assign,copy) NSString * storeFrontSuffix;
-@property(assign,copy) NSString * userAgent;
+@property (readonly) CLLocation *location;
+@property (copy) NSString *pointOfInterestIdentifier;
+@property (copy) NSString *pointOfInterestProviderIdentifier;
+@property (copy) NSString *pointOfInterestProviderURL;
+@property (copy) id responseBlock;
+@property (copy) NSString *storeFrontSuffix;
+@property (copy) NSString *userAgent;
 
 - (void).cxx_destruct;
 - (id)_lookupWithRequest:(id)arg1 error:(id*)arg2;

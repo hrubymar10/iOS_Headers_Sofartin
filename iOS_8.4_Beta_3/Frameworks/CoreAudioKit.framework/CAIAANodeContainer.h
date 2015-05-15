@@ -6,7 +6,7 @@
     long long _numPages;
 }
 
-@property(assign,readwrite) long long numPages;
+@property long long numPages;
 
 + (void)initialize;
 

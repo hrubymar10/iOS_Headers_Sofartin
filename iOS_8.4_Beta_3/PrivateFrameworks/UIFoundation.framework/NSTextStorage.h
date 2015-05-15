@@ -20,12 +20,12 @@
     id _sideData;
 }
 
-@property(assign,readwrite) long long changeInLength;
-@property(assign,readwrite) <NSTextStorageDelegate> * delegate;
-@property(assign,readwrite) unsigned long long editedMask;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } editedRange;
-@property(assign,readonly) bool fixesAttributesLazily;
-@property(assign,readonly) NSArray * layoutManagers;
+@property (nonatomic) long long changeInLength;
+@property (nonatomic) <NSTextStorageDelegate> *delegate;
+@property (nonatomic) unsigned long long editedMask;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } editedRange;
+@property (nonatomic, readonly) bool fixesAttributesLazily;
+@property (nonatomic, readonly) NSArray *layoutManagers;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 

@@ -7,8 +7,8 @@
     NSArray *_storageRanges;
 }
 
-@property(assign,readwrite) long long stageIndex;
-@property(assign,retain) NSArray * storageRanges;
+@property (nonatomic) long long stageIndex;
+@property (nonatomic, retain) NSArray *storageRanges;
 
 - (void)dealloc;
 - (id)description;

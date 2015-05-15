@@ -13,10 +13,10 @@
     EDWorksheet *mWorksheet;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (struct EDCellHeader { unsigned int x1; unsigned int x2; }*)cellWithRowNumber:(unsigned int)arg1 columnNumber:(int)arg2;
 - (Class)classForFormulaType:(unsigned char)arg1;

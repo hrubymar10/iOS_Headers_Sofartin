@@ -8,9 +8,9 @@
     NSString *_serviceString;
 }
 
-@property(assign,retain) NSArray * fetchedRecords;
-@property(assign,readwrite) struct __CFHost { }* host;
-@property(assign,retain) NSString * serviceString;
+@property (nonatomic, retain) NSArray *fetchedRecords;
+@property (nonatomic) struct __CFHost { }*host;
+@property (nonatomic, retain) NSString *serviceString;
 
 - (void)dealloc;
 - (id)description;

@@ -6,7 +6,7 @@
     NSArray *_queueItems;
 }
 
-@property(assign,readonly) NSArray * items;
+@property (nonatomic, readonly) NSArray *items;
 
 - (void).cxx_destruct;
 - (id)copyRawItemAtIndex:(unsigned long long)arg1;

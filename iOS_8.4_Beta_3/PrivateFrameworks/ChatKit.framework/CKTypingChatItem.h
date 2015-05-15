@@ -4,7 +4,7 @@
 
 @interface CKTypingChatItem : CKChatItem
 
-@property(getter=isFromMe,assign,readonly) bool fromMe;
+@property (getter=isFromMe, nonatomic, readonly) bool fromMe;
 
 - (Class)cellClass;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })contentInsets;

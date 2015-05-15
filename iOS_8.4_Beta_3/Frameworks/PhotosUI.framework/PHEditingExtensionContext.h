@@ -8,7 +8,7 @@
     long long _videoPathExtensionHandle;
 }
 
-@property(assign,readonly) PUEditingInitialPayload * _initialPayload;
+@property (readonly) PUEditingInitialPayload *_initialPayload;
 
 + (id)_extensionAuxiliaryHostProtocol;
 + (id)_extensionAuxiliaryVendorProtocol;

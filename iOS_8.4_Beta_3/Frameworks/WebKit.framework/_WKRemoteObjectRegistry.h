@@ -22,7 +22,7 @@
     } _remoteObjectRegistry;
 }
 
-@property(assign,readonly) struct RemoteObjectRegistry { int (**x1)(); id x2; struct MessageSender {} *x3; }* remoteObjectRegistry;
+@property (nonatomic, readonly) struct RemoteObjectRegistry { int (**x1)(); id x2; struct MessageSender {} *x3; }*remoteObjectRegistry;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

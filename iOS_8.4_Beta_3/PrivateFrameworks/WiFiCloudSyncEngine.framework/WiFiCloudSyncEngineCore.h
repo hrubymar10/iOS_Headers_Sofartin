@@ -10,11 +10,11 @@
     NSUbiquitousKeyValueStore *keyValueStore;
 }
 
-@property(assign,readwrite) int (* callback;
-@property(assign,retain) NSThread * clientThread;
-@property(assign,readwrite) void* context;
-@property(assign,readwrite) bool iCloudSyncingEnabled;
-@property(assign,retain) NSUbiquitousKeyValueStore * keyValueStore;
+@property int (*callback;
+@property (retain) NSThread *clientThread;
+@property void*context;
+@property bool iCloudSyncingEnabled;
+@property (retain) NSUbiquitousKeyValueStore *keyValueStore;
 
 - (void)addToKVStore:(id)arg1;
 - (void)asyncCircleStatusCheck;

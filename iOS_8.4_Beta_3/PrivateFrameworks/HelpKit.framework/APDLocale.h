@@ -12,14 +12,14 @@
     NSString *_name;
 }
 
-@property(getter=isRTL,assign,readwrite) bool RTL;
-@property(assign,readwrite) bool cache;
-@property(assign,copy) NSString * cacheHTML;
-@property(assign,copy) NSString * folder;
-@property(assign,readonly) bool isSimplifiedChinese;
-@property(assign,copy) NSArray * isoCodes;
-@property(assign,copy) NSString * isoName;
-@property(assign,copy) NSString * name;
+@property (getter=isRTL, nonatomic) bool RTL;
+@property (nonatomic) bool cache;
+@property (nonatomic, copy) NSString *cacheHTML;
+@property (nonatomic, copy) NSString *folder;
+@property (nonatomic, readonly) bool isSimplifiedChinese;
+@property (nonatomic, copy) NSArray *isoCodes;
+@property (nonatomic, copy) NSString *isoName;
+@property (nonatomic, copy) NSString *name;
 
 - (void).cxx_destruct;
 - (bool)cache;

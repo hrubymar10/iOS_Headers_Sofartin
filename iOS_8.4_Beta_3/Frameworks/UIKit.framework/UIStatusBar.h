@@ -72,20 +72,20 @@
     bool _waitingOnCallbackAfterChangingStyleOverridesLocally;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIColor * foregroundColor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool homeItemsDisabled;
-@property(assign,readwrite) long long legibilityStyle;
-@property(assign,readwrite) bool persistentAnimationsEnabled;
-@property(assign,readwrite) bool serverUpdatesDisabled;
-@property(assign,readwrite) bool simulatesLegacyAppearance;
-@property(assign,readwrite) UIStatusBarWindow * statusBarWindow;
-@property(assign,readwrite) <UIStatusBarStyleDelegate> * styleDelegate;
-@property(assign,readonly) int styleOverrides;
-@property(assign,copy) UIStatusBarStyleRequest * styleRequest;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIColor *foregroundColor;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool homeItemsDisabled;
+@property (nonatomic) long long legibilityStyle;
+@property (nonatomic) bool persistentAnimationsEnabled;
+@property (nonatomic) bool serverUpdatesDisabled;
+@property (nonatomic) bool simulatesLegacyAppearance;
+@property (nonatomic) UIStatusBarWindow *statusBarWindow;
+@property (nonatomic) <UIStatusBarStyleDelegate> *styleDelegate;
+@property (nonatomic, readonly) int styleOverrides;
+@property (nonatomic, copy) UIStatusBarStyleRequest *styleRequest;
+@property (readonly) Class superclass;
 
 + (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_frameInSceneReferenceSpaceForStyle:(long long)arg1 orientation:(long long)arg2 inSceneWithReferenceSize:(struct CGSize { double x1; double x2; })arg3;
 + (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_frameInSceneReferenceSpaceForStyleAttributes:(id)arg1 orientation:(long long)arg2;

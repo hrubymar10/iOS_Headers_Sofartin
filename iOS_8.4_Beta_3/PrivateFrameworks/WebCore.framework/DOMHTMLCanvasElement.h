@@ -4,8 +4,8 @@
 
 @interface DOMHTMLCanvasElement : DOMHTMLElement
 
-@property(assign,readwrite) int height;
-@property(assign,readwrite) int width;
+@property int height;
+@property int width;
 
 - (int)height;
 - (void)setHeight:(int)arg1;

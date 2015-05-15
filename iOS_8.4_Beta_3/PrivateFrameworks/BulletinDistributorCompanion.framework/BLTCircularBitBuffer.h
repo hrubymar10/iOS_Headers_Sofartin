@@ -8,8 +8,8 @@
     unsigned long long _capacity;
 }
 
-@property(assign,readonly) unsigned long long beginIndex;
-@property(assign,readonly) unsigned long long capacity;
+@property (nonatomic, readonly) unsigned long long beginIndex;
+@property (nonatomic, readonly) unsigned long long capacity;
 
 + (unsigned long long)actualCapacity:(unsigned long long)arg1;
 

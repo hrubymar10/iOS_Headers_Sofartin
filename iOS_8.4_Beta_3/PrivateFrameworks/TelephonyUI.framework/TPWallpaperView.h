@@ -13,14 +13,14 @@
     bool _shouldLockContactImage;
 }
 
-@property(assign,retain) _UIBackdropView * backdropEffectView;
-@property(assign,readwrite) double blurProportion;
-@property(assign,readwrite) bool blursBackground;
-@property(assign,retain) UIImage * contactImage;
-@property(assign,retain) UIImageView * contactImageView;
-@property(assign,readwrite) bool hidesContactImage;
-@property(assign,readwrite) bool shouldBindBlurringWithPresenceOfContactImage;
-@property(assign,readwrite) bool shouldLockContactImage;
+@property (retain) _UIBackdropView *backdropEffectView;
+@property (nonatomic) double blurProportion;
+@property (nonatomic) bool blursBackground;
+@property (nonatomic, retain) UIImage *contactImage;
+@property (retain) UIImageView *contactImageView;
+@property (nonatomic) bool hidesContactImage;
+@property (nonatomic) bool shouldBindBlurringWithPresenceOfContactImage;
+@property bool shouldLockContactImage;
 
 - (id)backdropEffectView;
 - (double)blurProportion;

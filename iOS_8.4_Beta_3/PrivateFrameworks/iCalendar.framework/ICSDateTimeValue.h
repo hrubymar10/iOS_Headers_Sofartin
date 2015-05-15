@@ -8,9 +8,9 @@
     long long _second;
 }
 
-@property(assign,readonly) long long hour;
-@property(assign,readonly) long long minute;
-@property(assign,readonly) long long second;
+@property (readonly) long long hour;
+@property (readonly) long long minute;
+@property (readonly) long long second;
 
 - (void)_ICSStringWithOptions:(unsigned long long)arg1 appendingToString:(id)arg2;
 - (id)components;

@@ -10,9 +10,9 @@
     CallHistoryDBHandle *dbStoreHandle;
 }
 
-@property(assign,readwrite) bool dataStoreCreated;
-@property(assign,readonly) CallHistoryDBHandle * dbStoreHandle;
-@property(assign,retain) NSObject<OS_dispatch_queue> * recentCallQueue;
+@property (nonatomic) bool dataStoreCreated;
+@property (nonatomic, readonly) CallHistoryDBHandle *dbStoreHandle;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *recentCallQueue;
 
 + (id)createForClient;
 + (id)createForServer;

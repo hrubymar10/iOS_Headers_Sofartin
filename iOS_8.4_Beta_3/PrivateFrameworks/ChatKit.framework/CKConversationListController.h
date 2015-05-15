@@ -26,26 +26,26 @@
     unsigned int _willRotate;
 }
 
-@property(assign,readwrite) double conversationCellHeight;
-@property(assign,readwrite) CKConversationList * conversationList;
-@property(assign,retain) UIBarButtonItem * currentEditButtonItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long filterMode;
-@property(assign,retain) NSArray * filteredContactsAndSMSConversations;
-@property(assign,readwrite) unsigned long long filteredConversationCount;
-@property(assign,retain) NSArray * filteredJunkConversations;
-@property(assign,copy) NSArray * frozenConversations;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isShowingSwipeDeleteConfirmation;
-@property(assign,readwrite) CKMessagesController * messagesController;
-@property(assign,retain) UIView * noMessagesDialogView;
-@property(assign,retain) NSIndexPath * previouslySelectedIndexPath;
-@property(assign,retain) UISearchController * searchController;
-@property(assign,retain) CKConversationSearchResultsController * searchResultsController;
-@property(assign,readonly) bool shouldShowPendingCell;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) CKScheduledUpdater * updater;
+@property (nonatomic) double conversationCellHeight;
+@property (nonatomic) CKConversationList *conversationList;
+@property (nonatomic, retain) UIBarButtonItem *currentEditButtonItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long filterMode;
+@property (nonatomic, retain) NSArray *filteredContactsAndSMSConversations;
+@property (nonatomic) unsigned long long filteredConversationCount;
+@property (nonatomic, retain) NSArray *filteredJunkConversations;
+@property (nonatomic, copy) NSArray *frozenConversations;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isShowingSwipeDeleteConfirmation;
+@property (nonatomic) CKMessagesController *messagesController;
+@property (nonatomic, retain) UIView *noMessagesDialogView;
+@property (nonatomic, retain) NSIndexPath *previouslySelectedIndexPath;
+@property (nonatomic, retain) UISearchController *searchController;
+@property (nonatomic, retain) CKConversationSearchResultsController *searchResultsController;
+@property (nonatomic, readonly) bool shouldShowPendingCell;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) CKScheduledUpdater *updater;
 
 - (void)_chatItemsDidChange:(id)arg1;
 - (void)_chatParticipantsChangedNotification:(id)arg1;

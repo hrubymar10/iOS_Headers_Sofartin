@@ -6,7 +6,7 @@
     UICollectionView *_collectionView;
 }
 
-@property(assign,retain) UICollectionView * collectionView;
+@property (nonatomic, retain) UICollectionView *collectionView;
 
 - (void).cxx_destruct;
 - (id)collectionView;

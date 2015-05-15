@@ -4,9 +4,9 @@
 
 @interface RadioMutableSeedMetadata : RadioSeedMetadata
 
-@property(assign,copy) NSString * seedDescription;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *seedDescription;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setSeedDescription:(id)arg1;

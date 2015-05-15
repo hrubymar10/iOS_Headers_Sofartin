@@ -46,25 +46,25 @@
     } _xmlIndexs;
 }
 
-@property(assign,readwrite) unsigned int attributionBadgeIndex;
-@property(assign,readonly) unsigned int* attributionIndexs;
-@property(assign,readonly) unsigned long long attributionIndexsCount;
-@property(assign,readonly) unsigned int* fontIndexs;
-@property(assign,readonly) unsigned long long fontIndexsCount;
-@property(assign,readwrite) bool hasAttributionBadgeIndex;
-@property(assign,readonly) unsigned int* iconIndexs;
-@property(assign,readonly) unsigned long long iconIndexsCount;
-@property(assign,readwrite) unsigned int identifier;
-@property(assign,readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; struct { unsigned int x_5_1_1 : 1; unsigned int x_5_1_2 : 1; unsigned int x_5_1_3 : 1; unsigned int x_5_1_4 : 1; } x5; }* regionalResourceIndexs;
-@property(assign,readonly) unsigned long long regionalResourceIndexsCount;
-@property(assign,readonly) unsigned int* styleSheetIndexs;
-@property(assign,readonly) unsigned long long styleSheetIndexsCount;
-@property(assign,readonly) unsigned int* textureIndexs;
-@property(assign,readonly) unsigned long long textureIndexsCount;
-@property(assign,readonly) struct { unsigned int x1; unsigned int x2; }* tileSets;
-@property(assign,readonly) unsigned long long tileSetsCount;
-@property(assign,readonly) unsigned int* xmlIndexs;
-@property(assign,readonly) unsigned long long xmlIndexsCount;
+@property (nonatomic) unsigned int attributionBadgeIndex;
+@property (nonatomic, readonly) unsigned int*attributionIndexs;
+@property (nonatomic, readonly) unsigned long long attributionIndexsCount;
+@property (nonatomic, readonly) unsigned int*fontIndexs;
+@property (nonatomic, readonly) unsigned long long fontIndexsCount;
+@property (nonatomic) bool hasAttributionBadgeIndex;
+@property (nonatomic, readonly) unsigned int*iconIndexs;
+@property (nonatomic, readonly) unsigned long long iconIndexsCount;
+@property (nonatomic) unsigned int identifier;
+@property (nonatomic, readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; struct { unsigned int x_5_1_1 : 1; unsigned int x_5_1_2 : 1; unsigned int x_5_1_3 : 1; unsigned int x_5_1_4 : 1; } x5; }*regionalResourceIndexs;
+@property (nonatomic, readonly) unsigned long long regionalResourceIndexsCount;
+@property (nonatomic, readonly) unsigned int*styleSheetIndexs;
+@property (nonatomic, readonly) unsigned long long styleSheetIndexsCount;
+@property (nonatomic, readonly) unsigned int*textureIndexs;
+@property (nonatomic, readonly) unsigned long long textureIndexsCount;
+@property (nonatomic, readonly) struct { unsigned int x1; unsigned int x2; }*tileSets;
+@property (nonatomic, readonly) unsigned long long tileSetsCount;
+@property (nonatomic, readonly) unsigned int*xmlIndexs;
+@property (nonatomic, readonly) unsigned long long xmlIndexsCount;
 
 - (void)addAttributionIndex:(unsigned int)arg1;
 - (void)addFontIndex:(unsigned int)arg1;

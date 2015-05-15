@@ -17,15 +17,15 @@
     PKPassColorProfile *_stripProfile;
 }
 
-@property(assign,readonly) UIColor * backgroundColor;
-@property(assign,readonly) UIColor * foregroundColor;
-@property(assign,readonly) UIColor * highlightColor;
-@property(assign,readonly) bool isLight;
-@property(assign,readonly) UIColor * labelColor;
-@property(assign,readonly) double overlayDarkeningAlpha;
-@property(assign,readonly) double overlayLighteningAlpha;
-@property(assign,readonly) double regularDarkeningAlpha;
-@property(assign,readonly) double regularLighteningAlpha;
+@property (nonatomic, readonly) UIColor *backgroundColor;
+@property (nonatomic, readonly) UIColor *foregroundColor;
+@property (nonatomic, readonly) UIColor *highlightColor;
+@property (nonatomic, readonly) bool isLight;
+@property (nonatomic, readonly) UIColor *labelColor;
+@property (nonatomic, readonly) double overlayDarkeningAlpha;
+@property (nonatomic, readonly) double overlayLighteningAlpha;
+@property (nonatomic, readonly) double regularDarkeningAlpha;
+@property (nonatomic, readonly) double regularLighteningAlpha;
 
 + (id)profileForDisplayProfile:(id)arg1;
 

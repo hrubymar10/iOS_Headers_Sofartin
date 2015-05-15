@@ -4,15 +4,15 @@
 
 @interface SAEmail : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * emailAddress;
-@property(assign,copy) NSNumber * favoriteFacetime;
-@property(assign,copy) NSNumber * favoriteFacetimeAudio;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * label;
-@property(assign,copy) NSNumber * pseudo;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *emailAddress;
+@property (nonatomic, copy) NSNumber *favoriteFacetime;
+@property (nonatomic, copy) NSNumber *favoriteFacetimeAudio;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, copy) NSNumber *pseudo;
+@property (readonly) Class superclass;
 
 + (id)email;
 + (id)emailWithDictionary:(id)arg1 context:(id)arg2;

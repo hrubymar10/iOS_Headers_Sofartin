@@ -8,11 +8,11 @@
     UIViewController *_originalRootViewController;
 }
 
-@property(assign,readwrite) bool allowsCustomizing;
-@property(assign,readwrite) UIViewController * displayedViewController;
-@property(assign,retain) UIViewController * moreListController;
-@property(assign,retain) NSArray * moreViewControllers;
-@property(assign,readwrite) bool moreViewControllersChanged;
+@property (nonatomic) bool allowsCustomizing;
+@property (nonatomic) UIViewController *displayedViewController;
+@property (nonatomic, readonly, retain) UIViewController *moreListController;
+@property (nonatomic, retain) NSArray *moreViewControllers;
+@property (nonatomic) bool moreViewControllersChanged;
 
 + (Class)_moreListControllerClass;
 

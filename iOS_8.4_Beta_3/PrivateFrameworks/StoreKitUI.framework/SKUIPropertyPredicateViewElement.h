@@ -8,9 +8,9 @@
     NSString *_value;
 }
 
-@property(assign,readonly) long long comparisonType;
-@property(assign,copy) NSString * property;
-@property(assign,copy) NSString * value;
+@property (nonatomic, readonly) long long comparisonType;
+@property (nonatomic, readonly, copy) NSString *property;
+@property (nonatomic, readonly, copy) NSString *value;
 
 + (bool)shouldParseChildDOMElements;
 

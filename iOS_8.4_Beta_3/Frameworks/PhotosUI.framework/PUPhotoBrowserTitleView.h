@@ -17,9 +17,9 @@
     bool _wantsSubtitle;
 }
 
-@property(assign,retain) NSDate * creationDate;
-@property(assign,retain) NSString * geoDescription;
-@property(assign,readwrite) bool wantsSubtitle;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic, retain) NSString *geoDescription;
+@property (nonatomic) bool wantsSubtitle;
 
 - (void).cxx_destruct;
 - (void)_dateFormatterChanged:(id)arg1;

@@ -7,8 +7,8 @@
     EKEvent *_event;
 }
 
-@property(assign,readonly) NSDate * selectedEndDate;
-@property(assign,readonly) NSDate * selectedStartDate;
+@property (nonatomic, readonly) NSDate *selectedEndDate;
+@property (nonatomic, readonly) NSDate *selectedStartDate;
 
 - (void).cxx_destruct;
 - (id)initWithEvent:(id)arg1;

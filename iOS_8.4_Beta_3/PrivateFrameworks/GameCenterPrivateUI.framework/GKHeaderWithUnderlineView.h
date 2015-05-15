@@ -15,16 +15,16 @@
     UIView *_underlineView;
 }
 
-@property(assign,readwrite) bool didSetupConstraints;
-@property(assign,retain) NSArray * gutterConstraints;
-@property(assign,readwrite) bool isPinned;
-@property(assign,readwrite) double leadingMargin;
-@property(assign,retain) NSMutableDictionary * metrics;
-@property(assign,retain) UIView * pinnedBackdropView;
-@property(assign,retain) UIImageView * shadowView;
-@property(assign,readwrite) double trailingMargin;
-@property(assign,readwrite) bool underlineHasRightMargin;
-@property(assign,retain) UIView * underlineView;
+@property (nonatomic) bool didSetupConstraints;
+@property (nonatomic, retain) NSArray *gutterConstraints;
+@property (nonatomic) bool isPinned;
+@property (nonatomic) double leadingMargin;
+@property (nonatomic, retain) NSMutableDictionary *metrics;
+@property (nonatomic, retain) UIView *pinnedBackdropView;
+@property (nonatomic, retain) UIImageView *shadowView;
+@property (nonatomic) double trailingMargin;
+@property (nonatomic) bool underlineHasRightMargin;
+@property (nonatomic, retain) UIView *underlineView;
 
 + (void)initialize;
 + (id)macMetrics;

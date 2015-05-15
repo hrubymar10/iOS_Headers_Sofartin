@@ -26,15 +26,15 @@
     double _verticalTextHeightEstimate;
 }
 
-@property(assign,retain) UIFont * font;
-@property(assign,retain) UIColor * indexBackgroundColor;
-@property(assign,retain) UIColor * indexColor;
-@property(assign,retain) UIColor * indexTrackingBackgroundColor;
-@property(assign,readonly) bool pastBottom;
-@property(assign,readonly) bool pastTop;
-@property(assign,readonly) long long selectedSection;
-@property(assign,readonly) NSString * selectedSectionTitle;
-@property(assign,retain) NSArray * titles;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic, retain) UIColor *indexBackgroundColor;
+@property (nonatomic, retain) UIColor *indexColor;
+@property (nonatomic, retain) UIColor *indexTrackingBackgroundColor;
+@property (nonatomic, readonly) bool pastBottom;
+@property (nonatomic, readonly) bool pastTop;
+@property (nonatomic, readonly) long long selectedSection;
+@property (nonatomic, readonly) NSString *selectedSectionTitle;
+@property (nonatomic, retain) NSArray *titles;
 
 - (void)_cacheAndMeasureTitles;
 - (id)_displayTitles;

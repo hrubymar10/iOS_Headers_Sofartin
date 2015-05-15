@@ -7,8 +7,8 @@
     CMOdometerProxy *_odometerProxy;
 }
 
-@property(assign,readwrite) <CMOdometerDelegate> * delegate;
-@property(assign,readonly) CMOdometerProxy * odometerProxy;
+@property (nonatomic) <CMOdometerDelegate> *delegate;
+@property (nonatomic, readonly) CMOdometerProxy *odometerProxy;
 
 + (bool)isOdometerAvailableForActivity:(long long)arg1;
 

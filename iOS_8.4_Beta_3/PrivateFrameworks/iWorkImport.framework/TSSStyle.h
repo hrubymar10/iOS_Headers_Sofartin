@@ -11,25 +11,25 @@
     TSSStylesheet *mStylesheet;
 }
 
-@property(assign,readonly) TSSStyle * baseStyleForVariation;
-@property(assign,readonly) NSSet * children;
-@property(assign,readonly) NSString * contentTag;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) NSSet * descendants;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) TSSStyle * firstIdentifiedAncestor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isIdentified;
-@property(assign,readonly) bool isNamed;
-@property(assign,readonly) bool isVariation;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) TSSPropertyMap * overridePropertyMap;
-@property(assign,readonly) TSSStyle * parent;
-@property(assign,readonly) TSSStyle * rootAncestor;
-@property(assign,readonly) TSSStyle * rootIdentifiedAncestor;
-@property(assign,readonly) NSString * styleIdentifier;
-@property(assign,readonly) TSSStylesheet * stylesheet;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) TSSStyle *baseStyleForVariation;
+@property (nonatomic, readonly) NSSet *children;
+@property (nonatomic, readonly) NSString *contentTag;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) NSSet *descendants;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) TSSStyle *firstIdentifiedAncestor;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isIdentified;
+@property (nonatomic, readonly) bool isNamed;
+@property (nonatomic, readonly) bool isVariation;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, readonly) TSSPropertyMap *overridePropertyMap;
+@property (nonatomic, readonly) TSSStyle *parent;
+@property (nonatomic, readonly) TSSStyle *rootAncestor;
+@property (nonatomic, readonly) TSSStyle *rootIdentifiedAncestor;
+@property (nonatomic, readonly) NSString *styleIdentifier;
+@property (nonatomic, readonly) TSSStylesheet *stylesheet;
+@property (readonly) Class superclass;
 
 + (id)boxedDefaultValueForProperty:(int)arg1;
 + (double)defaultDoubleValueForProperty:(int)arg1;

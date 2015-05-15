@@ -14,15 +14,15 @@
     NSString *_uniqueID;
 }
 
-@property(getter=isDefaultPairedDevice,assign,readwrite) bool defaultPairedDevice;
-@property(assign,copy) NSString * deviceColor;
-@property(assign,copy) NSString * enclosureColor;
-@property(assign,copy) NSString * modelIdentifier;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * productBuildVersion;
-@property(assign,copy) NSString * productName;
-@property(assign,copy) NSString * productVersion;
-@property(assign,copy) NSString * uniqueID;
+@property (getter=isDefaultPairedDevice) bool defaultPairedDevice;
+@property (copy) NSString *deviceColor;
+@property (copy) NSString *enclosureColor;
+@property (copy) NSString *modelIdentifier;
+@property (copy) NSString *name;
+@property (copy) NSString *productBuildVersion;
+@property (copy) NSString *productName;
+@property (copy) NSString *productVersion;
+@property (copy) NSString *uniqueID;
 
 + (bool)supportsSecureCoding;
 

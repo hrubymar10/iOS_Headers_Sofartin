@@ -11,9 +11,9 @@
     const char *_table;
 }
 
-@property(assign,readwrite) bool allowSlash;
-@property(assign,readwrite) unsigned long long lineBreak;
-@property(assign,readwrite) BOOL padChar;
+@property (nonatomic) bool allowSlash;
+@property (nonatomic) unsigned long long lineBreak;
+@property (nonatomic) BOOL padChar;
 
 - (bool)allowSlash;
 - (long long)appendData:(id)arg1;

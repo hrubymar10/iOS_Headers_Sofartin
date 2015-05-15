@@ -11,16 +11,16 @@
     SPProtoCacheSyncData *_syncData;
 }
 
-@property(assign,retain) NSData * assetData;
-@property(assign,retain) NSString * assetKey;
-@property(assign,readwrite) int cacheType;
-@property(assign,retain) NSString * gizmoCacheIdentifier;
-@property(assign,readonly) bool hasAssetData;
-@property(assign,readonly) bool hasAssetKey;
-@property(assign,readonly) bool hasGizmoCacheIdentifier;
-@property(assign,readonly) bool hasSyncData;
-@property(assign,readwrite) int messageType;
-@property(assign,retain) SPProtoCacheSyncData * syncData;
+@property (nonatomic, retain) NSData *assetData;
+@property (nonatomic, retain) NSString *assetKey;
+@property (nonatomic) int cacheType;
+@property (nonatomic, retain) NSString *gizmoCacheIdentifier;
+@property (nonatomic, readonly) bool hasAssetData;
+@property (nonatomic, readonly) bool hasAssetKey;
+@property (nonatomic, readonly) bool hasGizmoCacheIdentifier;
+@property (nonatomic, readonly) bool hasSyncData;
+@property (nonatomic) int messageType;
+@property (nonatomic, retain) SPProtoCacheSyncData *syncData;
 
 - (void).cxx_destruct;
 - (id)assetData;

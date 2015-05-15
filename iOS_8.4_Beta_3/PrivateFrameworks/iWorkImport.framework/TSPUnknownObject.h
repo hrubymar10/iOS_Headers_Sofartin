@@ -13,7 +13,7 @@
     NSString *_packageLocator;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_data> * serializedData;
+@property (nonatomic, readonly) NSObject<OS_dispatch_data> *serializedData;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

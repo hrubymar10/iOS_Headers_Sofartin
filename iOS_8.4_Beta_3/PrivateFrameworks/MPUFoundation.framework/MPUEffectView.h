@@ -9,10 +9,10 @@
     UIView *_referenceView;
 }
 
-@property(assign,retain) MPUEffectCache * effectCache;
-@property(assign,retain) UIImage * effectImage;
-@property(assign,retain) _UIBackdropViewSettings * effectSettings;
-@property(assign,retain) UIView * referenceView;
+@property (nonatomic, retain) MPUEffectCache *effectCache;
+@property (nonatomic, retain) UIImage *effectImage;
+@property (nonatomic, retain) _UIBackdropViewSettings *effectSettings;
+@property (nonatomic, retain) UIView *referenceView;
 
 + (void)coordinateAsyncEffectViewPropertyChanges:(id)arg1 withAnimationBlock:(id)arg2;
 

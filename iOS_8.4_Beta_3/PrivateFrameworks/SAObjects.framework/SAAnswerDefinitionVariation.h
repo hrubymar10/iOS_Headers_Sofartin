@@ -4,12 +4,12 @@
 
 @interface SAAnswerDefinitionVariation : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSArray * examples;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * variation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSArray *examples;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *variation;
 
 + (id)definitionVariation;
 + (id)definitionVariationWithDictionary:(id)arg1 context:(id)arg2;

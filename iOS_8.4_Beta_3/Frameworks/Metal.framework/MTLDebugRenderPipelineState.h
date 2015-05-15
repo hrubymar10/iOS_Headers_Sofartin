@@ -7,8 +7,8 @@
     MTLRenderPipelineReflection *_reflection;
 }
 
-@property(assign,readonly) MTLRenderPipelineDescriptor * descriptor;
-@property(assign,readonly) MTLRenderPipelineReflection * reflection;
+@property (nonatomic, readonly) MTLRenderPipelineDescriptor *descriptor;
+@property (nonatomic, readonly) MTLRenderPipelineReflection *reflection;
 
 - (void).cxx_destruct;
 - (id)description;

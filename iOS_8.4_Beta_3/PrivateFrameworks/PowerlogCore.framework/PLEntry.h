@@ -12,20 +12,20 @@
     bool _writeToDB;
 }
 
-@property(assign,readonly) NSArray * arrayKeys;
-@property(assign,readonly) NSArray * definedKeys;
-@property(assign,retain) NSMutableDictionary * dictionary;
-@property(assign,readonly) NSArray * dynamicKeys;
-@property(assign,retain) NSDate * entryDate;
-@property(assign,retain) NSDictionary * entryDefinition;
-@property(assign,readwrite) long long entryID;
-@property(assign,retain) NSString * entryKey;
-@property(assign,readonly) bool hasArrayKeys;
-@property(assign,readonly) bool hasDynamicKeys;
-@property(assign,readwrite) bool isErrorEntry;
-@property(assign,readonly) NSMutableArray * keys;
-@property(getter=allValues,assign,readonly) NSMutableArray * values;
-@property(assign,readwrite) bool writeToDB;
+@property (readonly) NSArray *arrayKeys;
+@property (readonly) NSArray *definedKeys;
+@property (retain) NSMutableDictionary *dictionary;
+@property (readonly) NSArray *dynamicKeys;
+@property (nonatomic, retain) NSDate *entryDate;
+@property (nonatomic, retain) NSDictionary *entryDefinition;
+@property (nonatomic) long long entryID;
+@property (nonatomic, retain) NSString *entryKey;
+@property (readonly) bool hasArrayKeys;
+@property (readonly) bool hasDynamicKeys;
+@property bool isErrorEntry;
+@property (readonly) NSMutableArray *keys;
+@property (getter=allValues, readonly) NSMutableArray *values;
+@property bool writeToDB;
 
 + (Class)classForEntryKey:(id)arg1;
 + (id)entryKey;

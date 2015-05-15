@@ -8,10 +8,10 @@
     UIWindow *_window;
 }
 
-@property(assign,retain) NSMutableDictionary * prefs;
-@property(assign,retain) UIView * prefsContainerView;
-@property(assign,readwrite) bool shouldShowUI;
-@property(assign,retain) UIWindow * window;
+@property (retain) NSMutableDictionary *prefs;
+@property (retain) UIView *prefsContainerView;
+@property (nonatomic) bool shouldShowUI;
+@property (retain) UIWindow *window;
 
 + (id)sharedPrefs;
 

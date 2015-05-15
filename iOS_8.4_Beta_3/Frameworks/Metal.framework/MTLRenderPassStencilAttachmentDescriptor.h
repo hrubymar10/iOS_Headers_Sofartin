@@ -4,7 +4,7 @@
 
 @interface MTLRenderPassStencilAttachmentDescriptor : MTLRenderPassAttachmentDescriptor
 
-@property(assign,readwrite) unsigned int clearStencil;
+@property (nonatomic) unsigned int clearStencil;
 
 - (unsigned int)clearStencil;
 - (id)description;

@@ -12,10 +12,10 @@
     } _range;
 }
 
-@property(assign,readonly) NSMutableDictionary * accountedEnergy;
-@property(assign,retain) NSMutableArray * accountingEvents;
-@property(assign,readwrite) double energy;
-@property(assign,readonly) struct _PLTimeIntervalRange { double x1; double x2; } range;
+@property (readonly) NSMutableDictionary *accountedEnergy;
+@property (readonly, retain) NSMutableArray *accountingEvents;
+@property double energy;
+@property (readonly) struct _PLTimeIntervalRange { double x1; double x2; } range;
 
 - (void).cxx_destruct;
 - (id)accountedEnergy;

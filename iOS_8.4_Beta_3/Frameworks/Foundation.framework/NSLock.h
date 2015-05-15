@@ -6,7 +6,7 @@
     void *_priv;
 }
 
-@property(assign,copy) NSString * name;
+@property (copy) NSString *name;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 

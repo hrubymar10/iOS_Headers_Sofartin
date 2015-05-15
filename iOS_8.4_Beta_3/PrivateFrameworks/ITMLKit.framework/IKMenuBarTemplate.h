@@ -4,7 +4,7 @@
 
 @interface IKMenuBarTemplate : IKViewElement
 
-@property(assign,retain) IKMenuBarElement * menuBar;
+@property (nonatomic, readonly, retain) IKMenuBarElement *menuBar;
 
 - (id)menuBar;
 

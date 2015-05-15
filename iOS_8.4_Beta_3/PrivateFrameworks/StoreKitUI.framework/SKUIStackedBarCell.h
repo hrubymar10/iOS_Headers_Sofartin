@@ -9,8 +9,8 @@
     UIView *_separator;
 }
 
-@property(assign,readonly) UIButton * backButton;
-@property(assign,readwrite) bool expanded;
+@property (nonatomic, readonly) UIButton *backButton;
+@property (nonatomic) bool expanded;
 
 - (void).cxx_destruct;
 - (id)backButton;

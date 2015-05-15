@@ -9,10 +9,10 @@
     UIImageView *_videoImageView;
 }
 
-@property(assign,retain) UIImageView * imageView;
-@property(assign,readwrite) bool isVideo;
-@property(assign,retain) PLRoundProgressView * progressView;
-@property(assign,retain) UIImageView * videoImageView;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic) bool isVideo;
+@property (nonatomic, retain) PLRoundProgressView *progressView;
+@property (nonatomic, retain) UIImageView *videoImageView;
 
 - (void)dealloc;
 - (id)imageView;

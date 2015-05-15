@@ -12,13 +12,13 @@
     NSString *_systemVersion;
 }
 
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) NSString * deviceName;
-@property(assign,readonly) bool isCompatible;
-@property(assign,readonly) unsigned long long quotaReserved;
-@property(assign,readonly) unsigned long long snapshotID;
-@property(assign,readonly) int state;
-@property(assign,readonly) NSString * systemVersion;
+@property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) NSString *deviceName;
+@property (nonatomic, readonly) bool isCompatible;
+@property (nonatomic, readonly) unsigned long long quotaReserved;
+@property (nonatomic, readonly) unsigned long long snapshotID;
+@property (nonatomic, readonly) int state;
+@property (nonatomic, readonly) NSString *systemVersion;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)date;

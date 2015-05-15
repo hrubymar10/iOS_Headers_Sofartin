@@ -6,7 +6,7 @@
     CoreDAVAction *_backingAction;
 }
 
-@property(assign,retain) CoreDAVAction * backingAction;
+@property (nonatomic, retain) CoreDAVAction *backingAction;
 
 - (id)backingAction;
 - (void)dealloc;

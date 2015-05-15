@@ -6,7 +6,7 @@
     RCComposition *_underlyingComposition;
 }
 
-@property(assign,readonly) RCComposition * underlyingComposition;
+@property (nonatomic, readonly) RCComposition *underlyingComposition;
 
 - (void).cxx_destruct;
 - (id)initWithUnderlyingComposition:(id)arg1;

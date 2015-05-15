@@ -9,10 +9,10 @@
     NSSet *_whitelist;
 }
 
-@property(assign,readwrite) bool disableService;
-@property(assign,readwrite) bool forceWhiteList;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSSet * whitelist;
+@property bool disableService;
+@property bool forceWhiteList;
+@property (retain) NSString *name;
+@property (retain) NSSet *whitelist;
 
 - (void)dealloc;
 - (bool)disableService;

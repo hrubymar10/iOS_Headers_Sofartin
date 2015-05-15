@@ -4,15 +4,15 @@
 
 @interface SASTColumnDataListItem : AceObject <SASTActionableTemplateItem>
 
-@property(assign,retain) <SASTTemplateAction> * action;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSArray * decoratedRows;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUINanoImageResource * imageResource;
-@property(assign,copy) NSString * rowLayout;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SAUIDecoratedText * title;
+@property (nonatomic, retain) <SASTTemplateAction> *action;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, copy) NSArray *decoratedRows;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUINanoImageResource *imageResource;
+@property (nonatomic, copy) NSString *rowLayout;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SAUIDecoratedText *title;
 
 + (id)columnDataListItem;
 + (id)columnDataListItemWithDictionary:(id)arg1 context:(id)arg2;

@@ -8,9 +8,9 @@
     NSString *_title;
 }
 
-@property(assign,readwrite) long long keyboardType;
-@property(getter=isSecure,assign,readwrite) bool secure;
-@property(assign,copy) NSString * title;
+@property (nonatomic) long long keyboardType;
+@property (getter=isSecure, nonatomic) bool secure;
+@property (nonatomic, copy) NSString *title;
 
 + (id)textFieldWithTitle:(id)arg1;
 + (id)textFieldWithTitle:(id)arg1 secure:(bool)arg2;

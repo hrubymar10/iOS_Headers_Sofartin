@@ -19,15 +19,15 @@
     } _sessionID;
 }
 
-@property(assign,retain) NSMutableArray * actionCaptures;
-@property(assign,readwrite) unsigned long long businessID;
-@property(assign,readwrite) bool hasBusinessID;
-@property(assign,readwrite) bool hasLocalSearchProviderID;
-@property(assign,readwrite) bool hasPlaceID;
-@property(assign,readwrite) bool hasSessionID;
-@property(assign,readwrite) int localSearchProviderID;
-@property(assign,readwrite) long long placeID;
-@property(assign,readwrite) struct { unsigned long long x1; unsigned long long x2; } sessionID;
+@property (nonatomic, retain) NSMutableArray *actionCaptures;
+@property (nonatomic) unsigned long long businessID;
+@property (nonatomic) bool hasBusinessID;
+@property (nonatomic) bool hasLocalSearchProviderID;
+@property (nonatomic) bool hasPlaceID;
+@property (nonatomic) bool hasSessionID;
+@property (nonatomic) int localSearchProviderID;
+@property (nonatomic) long long placeID;
+@property (nonatomic) struct { unsigned long long x1; unsigned long long x2; } sessionID;
 
 - (id)actionCaptureAtIndex:(unsigned long long)arg1;
 - (id)actionCaptures;

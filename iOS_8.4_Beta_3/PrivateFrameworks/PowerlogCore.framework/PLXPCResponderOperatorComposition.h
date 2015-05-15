@@ -9,10 +9,10 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,readwrite) PLOperator * operator;
-@property(assign,copy) id operatorBlock;
-@property(assign,readonly) NSDictionary * registration;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property PLOperator *operator;
+@property (nonatomic, copy) id operatorBlock;
+@property (readonly) NSDictionary *registration;
+@property (retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (id)description;

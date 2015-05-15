@@ -6,7 +6,7 @@
     NSString *_eventIdentifier;
 }
 
-@property(assign,retain) NSString * eventIdentifier;
+@property (nonatomic, readonly, retain) NSString *eventIdentifier;
 
 + (bool)supportsSecureCoding;
 

@@ -6,7 +6,7 @@
     bool _disableViewInPopoverRule;
 }
 
-@property(assign,readwrite) bool disableViewInPopoverRule;
+@property (nonatomic) bool disableViewInPopoverRule;
 
 - (void)didMoveToWindow;
 - (bool)disableViewInPopoverRule;

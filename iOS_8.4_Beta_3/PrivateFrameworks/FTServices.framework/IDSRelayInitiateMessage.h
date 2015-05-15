@@ -20,21 +20,21 @@
     NSNumber *_selfRelayPort;
 }
 
-@property(assign,copy) NSString * peerID;
-@property(assign,copy) NSNumber * peerNATIP;
-@property(assign,copy) NSNumber * peerNatType;
-@property(assign,copy) NSData * peerPushToken;
-@property(assign,copy) NSData * peerRelayIP;
-@property(assign,copy) NSNumber * peerRelayPort;
-@property(assign,copy) NSData * relayConnectionId;
-@property(assign,copy) NSData * relayTokenAllocReq;
-@property(assign,copy) NSData * relayTransactionIdAlloc;
-@property(assign,copy) NSNumber * relayType;
-@property(assign,copy) NSNumber * selfNATIP;
-@property(assign,copy) NSNumber * selfNatType;
-@property(assign,copy) NSData * selfPushToken;
-@property(assign,copy) NSData * selfRelayIP;
-@property(assign,copy) NSNumber * selfRelayPort;
+@property (copy) NSString *peerID;
+@property (copy) NSNumber *peerNATIP;
+@property (copy) NSNumber *peerNatType;
+@property (copy) NSData *peerPushToken;
+@property (copy) NSData *peerRelayIP;
+@property (copy) NSNumber *peerRelayPort;
+@property (copy) NSData *relayConnectionId;
+@property (copy) NSData *relayTokenAllocReq;
+@property (copy) NSData *relayTransactionIdAlloc;
+@property (copy) NSNumber *relayType;
+@property (copy) NSNumber *selfNATIP;
+@property (copy) NSNumber *selfNatType;
+@property (copy) NSData *selfPushToken;
+@property (copy) NSData *selfRelayIP;
+@property (copy) NSNumber *selfRelayPort;
 
 - (id)bagKey;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

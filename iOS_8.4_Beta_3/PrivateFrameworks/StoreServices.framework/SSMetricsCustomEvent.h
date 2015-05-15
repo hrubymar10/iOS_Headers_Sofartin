@@ -4,7 +4,7 @@
 
 @interface SSMetricsCustomEvent : SSMetricsMutableEvent
 
-@property(assign,retain) NSString * topic;
+@property (nonatomic, retain) NSString *topic;
 
 - (id)decorateReportingURL:(id)arg1;
 - (bool)isFieldBlacklistEnabled;

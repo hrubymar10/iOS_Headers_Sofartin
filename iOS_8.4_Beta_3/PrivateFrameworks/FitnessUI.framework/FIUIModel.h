@@ -16,14 +16,14 @@
     FIUIWeeklyGoalModel *_weeklyGoalModel;
 }
 
-@property(assign,readonly) FIUIAchievementsModel * achievementsModel;
-@property(assign,readonly) double arcPercentPerHour;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSPredicate * sourcesPredicate;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) FIUIWeeklyGoalModel * weeklyGoalModel;
+@property (nonatomic, readonly) FIUIAchievementsModel *achievementsModel;
+@property (nonatomic, readonly) double arcPercentPerHour;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSPredicate *sourcesPredicate;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) FIUIWeeklyGoalModel *weeklyGoalModel;
 
 + (id)_dailyTotalsQueryFromDate:(id)arg1 toDate:(id)arg2 dataType:(id)arg3 predicate:(id)arg4 sendUpdates:(bool)arg5 handler:(id)arg6;
 + (void)_fakeActiveAndGoalHoursDataWithCompletion:(id)arg1;

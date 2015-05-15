@@ -4,8 +4,8 @@
 
 @interface NSFileHandle : NSObject <NSSecureCoding>
 
-@property(assign,copy) NSData * availableData;
-@property(assign,readonly) unsigned long long offsetInFile;
+@property (readonly, copy) NSData *availableData;
+@property (readonly) unsigned long long offsetInFile;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)fileHandleForReadingAtPath:(id)arg1;

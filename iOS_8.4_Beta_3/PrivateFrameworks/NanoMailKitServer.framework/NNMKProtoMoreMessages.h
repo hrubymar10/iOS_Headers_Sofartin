@@ -12,13 +12,13 @@
     } _has;
 }
 
-@property(assign,retain) NSMutableArray * addedMessages;
-@property(assign,retain) NSData * dateForRequestingMoreMessages;
-@property(assign,retain) NSData * dateSynced;
-@property(assign,readwrite) unsigned int fullSyncVersion;
-@property(assign,readonly) bool hasDateForRequestingMoreMessages;
-@property(assign,readonly) bool hasDateSynced;
-@property(assign,readwrite) bool hasFullSyncVersion;
+@property (nonatomic, retain) NSMutableArray *addedMessages;
+@property (nonatomic, retain) NSData *dateForRequestingMoreMessages;
+@property (nonatomic, retain) NSData *dateSynced;
+@property (nonatomic) unsigned int fullSyncVersion;
+@property (nonatomic, readonly) bool hasDateForRequestingMoreMessages;
+@property (nonatomic, readonly) bool hasDateSynced;
+@property (nonatomic) bool hasFullSyncVersion;
 
 - (void).cxx_destruct;
 - (void)addAddedMessage:(id)arg1;

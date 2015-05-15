@@ -7,8 +7,8 @@
     UIImageView *_titleMaskImageView;
 }
 
-@property(assign,retain) _UIBackdropView * backdropView;
-@property(assign,retain) UIImageView * titleMaskImageView;
+@property (nonatomic, retain) _UIBackdropView *backdropView;
+@property (nonatomic, retain) UIImageView *titleMaskImageView;
 
 - (void)_setupBackdropView;
 - (id)backdropView;

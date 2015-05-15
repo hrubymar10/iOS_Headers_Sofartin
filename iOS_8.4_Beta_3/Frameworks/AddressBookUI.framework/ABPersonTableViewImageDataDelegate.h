@@ -10,7 +10,7 @@
     ABUIPerson *_personForImageData;
 }
 
-@property(assign,readwrite) ABPersonTableViewDataSource * dataSource;
+@property (nonatomic) ABPersonTableViewDataSource *dataSource;
 
 - (id)currentImageData;
 - (id)dataSource;

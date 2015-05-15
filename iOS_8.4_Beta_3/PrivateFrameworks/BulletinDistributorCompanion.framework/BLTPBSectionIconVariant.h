@@ -11,11 +11,11 @@
     bool _precomposed;
 }
 
-@property(assign,readwrite) unsigned int format;
-@property(assign,readonly) bool hasImageData;
-@property(assign,readwrite) bool hasPrecomposed;
-@property(assign,retain) NSData * imageData;
-@property(assign,readwrite) bool precomposed;
+@property (nonatomic) unsigned int format;
+@property (nonatomic, readonly) bool hasImageData;
+@property (nonatomic) bool hasPrecomposed;
+@property (nonatomic, retain) NSData *imageData;
+@property (nonatomic) bool precomposed;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

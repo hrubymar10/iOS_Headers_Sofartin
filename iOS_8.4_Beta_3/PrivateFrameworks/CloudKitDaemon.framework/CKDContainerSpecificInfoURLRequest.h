@@ -8,9 +8,9 @@
     bool _needUserID;
 }
 
-@property(assign,readwrite) NSString * containerIdentifier;
-@property(assign,copy) CKDContainerInfo * containerInfo;
-@property(assign,readwrite) bool needUserID;
+@property (nonatomic) NSString *containerIdentifier;
+@property (nonatomic, copy) CKDContainerInfo *containerInfo;
+@property (nonatomic) bool needUserID;
 
 - (void).cxx_destruct;
 - (id)additionalHeaderValues;

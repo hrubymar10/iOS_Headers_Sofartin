@@ -39,22 +39,22 @@
     NSData *_precomputedCube;
 }
 
-@property(assign,retain) CIFilter * colorCubeFilterBW;
-@property(assign,retain) CIFilter * colorCubeFilterGrain;
-@property(assign,retain) BLPixelImageBuffer * grainImage;
-@property(assign,copy) NSNumber * inputAmount;
-@property(assign,copy) NSNumber * inputApplyGrain;
-@property(assign,copy) NSNumber * inputApplySepia;
-@property(assign,copy) CIVector * inputDestinationRect;
-@property(assign,copy) CIVector * inputHueStrengthArray;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,copy) NSNumber * inputNeutralGamma;
-@property(assign,copy) NSNumber * inputPadding;
-@property(assign,copy) NSNumber * inputPhototone;
-@property(assign,copy) NSNumber * inputPreset;
-@property(assign,copy) NSNumber * inputVersion;
-@property(assign,retain) CIVector * lastHueStrengthArray;
-@property(assign,retain) NSData * precomputedCube;
+@property (nonatomic, retain) CIFilter *colorCubeFilterBW;
+@property (nonatomic, retain) CIFilter *colorCubeFilterGrain;
+@property (nonatomic, retain) BLPixelImageBuffer *grainImage;
+@property (nonatomic, copy) NSNumber *inputAmount;
+@property (nonatomic, copy) NSNumber *inputApplyGrain;
+@property (nonatomic, copy) NSNumber *inputApplySepia;
+@property (nonatomic, copy) CIVector *inputDestinationRect;
+@property (nonatomic, copy) CIVector *inputHueStrengthArray;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, copy) NSNumber *inputNeutralGamma;
+@property (nonatomic, copy) NSNumber *inputPadding;
+@property (nonatomic, copy) NSNumber *inputPhototone;
+@property (nonatomic, copy) NSNumber *inputPreset;
+@property (nonatomic, copy) NSNumber *inputVersion;
+@property (nonatomic, retain) CIVector *lastHueStrengthArray;
+@property (nonatomic, retain) NSData *precomputedCube;
 
 - (void).cxx_destruct;
 - (id)applyGrain:(id)arg1 cube:(id)arg2 destRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg3 padding:(float)arg4;

@@ -20,22 +20,22 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,retain) NSData * bssidOui;
-@property(assign,readwrite) int channel;
-@property(assign,readwrite) int deauthReason;
-@property(assign,retain) NSData * deauthSourceOui;
-@property(assign,readwrite) unsigned int error;
-@property(assign,readonly) bool hasBssidOui;
-@property(assign,readwrite) bool hasChannel;
-@property(assign,readwrite) bool hasDeauthReason;
-@property(assign,readonly) bool hasDeauthSourceOui;
-@property(assign,readwrite) bool hasError;
-@property(assign,readonly) bool hasSecurity;
-@property(assign,readwrite) bool hasSignal;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSString * security;
-@property(assign,readwrite) int signal;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic, retain) NSData *bssidOui;
+@property (nonatomic) int channel;
+@property (nonatomic) int deauthReason;
+@property (nonatomic, retain) NSData *deauthSourceOui;
+@property (nonatomic) unsigned int error;
+@property (nonatomic, readonly) bool hasBssidOui;
+@property (nonatomic) bool hasChannel;
+@property (nonatomic) bool hasDeauthReason;
+@property (nonatomic, readonly) bool hasDeauthSourceOui;
+@property (nonatomic) bool hasError;
+@property (nonatomic, readonly) bool hasSecurity;
+@property (nonatomic) bool hasSignal;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSString *security;
+@property (nonatomic) int signal;
+@property (nonatomic) unsigned long long timestamp;
 
 - (id)bssidOui;
 - (int)channel;

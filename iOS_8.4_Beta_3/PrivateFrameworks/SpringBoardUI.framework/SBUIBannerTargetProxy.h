@@ -8,12 +8,12 @@
     <SBUIBannerTargetImplementation> *_implementation;
 }
 
-@property(assign,readonly) void* bannerTargetIdentifier;
-@property(assign,readonly) long long bannerTargetIdiom;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) void*bannerTargetIdentifier;
+@property (nonatomic, readonly) long long bannerTargetIdiom;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void*)bannerTargetIdentifier;
 - (long long)bannerTargetIdiom;

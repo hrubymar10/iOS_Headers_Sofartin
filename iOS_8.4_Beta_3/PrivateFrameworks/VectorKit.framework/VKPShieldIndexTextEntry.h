@@ -11,11 +11,11 @@
     int _shieldType;
 }
 
-@property(assign,retain) NSString * artworkIdentifier;
-@property(assign,readonly) bool hasArtworkIdentifier;
-@property(assign,readwrite) bool hasShieldType;
-@property(assign,retain) NSMutableArray * shieldTexts;
-@property(assign,readwrite) int shieldType;
+@property (nonatomic, retain) NSString *artworkIdentifier;
+@property (nonatomic, readonly) bool hasArtworkIdentifier;
+@property (nonatomic) bool hasShieldType;
+@property (nonatomic, retain) NSMutableArray *shieldTexts;
+@property (nonatomic) int shieldType;
 
 - (void)addShieldText:(id)arg1;
 - (id)artworkIdentifier;

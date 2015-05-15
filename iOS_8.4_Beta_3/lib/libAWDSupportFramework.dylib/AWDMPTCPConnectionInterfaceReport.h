@@ -25,22 +25,22 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) long long dataInKB;
-@property(assign,readwrite) long long dataOutKB;
-@property(assign,readwrite) bool hasDataInKB;
-@property(assign,readwrite) bool hasDataOutKB;
-@property(assign,readonly) bool hasInterfaceName;
-@property(assign,readwrite) bool hasPostConnectTcpFallbackCount;
-@property(assign,readwrite) bool hasSecondaryFlowFailureCount;
-@property(assign,readwrite) bool hasSecondaryFlowSuccessCount;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSString * interfaceName;
-@property(assign,readonly) int* postConnectSubflowFailureErrors;
-@property(assign,readonly) unsigned long long postConnectSubflowFailureErrorsCount;
-@property(assign,readwrite) bool postConnectTcpFallbackCount;
-@property(assign,readwrite) int secondaryFlowFailureCount;
-@property(assign,readwrite) int secondaryFlowSuccessCount;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) long long dataInKB;
+@property (nonatomic) long long dataOutKB;
+@property (nonatomic) bool hasDataInKB;
+@property (nonatomic) bool hasDataOutKB;
+@property (nonatomic, readonly) bool hasInterfaceName;
+@property (nonatomic) bool hasPostConnectTcpFallbackCount;
+@property (nonatomic) bool hasSecondaryFlowFailureCount;
+@property (nonatomic) bool hasSecondaryFlowSuccessCount;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSString *interfaceName;
+@property (nonatomic, readonly) int*postConnectSubflowFailureErrors;
+@property (nonatomic, readonly) unsigned long long postConnectSubflowFailureErrorsCount;
+@property (nonatomic) bool postConnectTcpFallbackCount;
+@property (nonatomic) int secondaryFlowFailureCount;
+@property (nonatomic) int secondaryFlowSuccessCount;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)addPostConnectSubflowFailureErrors:(int)arg1;
 - (void)clearPostConnectSubflowFailureErrors;

@@ -12,7 +12,7 @@
     } mContainer;
 }
 
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{vector<glm::detail::tvec1<float>' */ struct * container; /* unknown property attribute:  std::__1::allocator<glm::detail::tvec1<float> > >=^{tvec1<float>}}} */
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{vector<glm::detail::tvec1<float>' */ struct *container; /* unknown property attribute:  std::__1::allocator<glm::detail::tvec1<float> > >=^{tvec1<float>}}} */
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

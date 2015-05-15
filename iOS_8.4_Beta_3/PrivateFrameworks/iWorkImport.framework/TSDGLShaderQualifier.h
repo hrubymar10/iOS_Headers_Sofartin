@@ -8,9 +8,9 @@
     int _uniformLocation;
 }
 
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) bool needsUpdate;
-@property(assign,readwrite) int uniformLocation;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) bool needsUpdate;
+@property (nonatomic) int uniformLocation;
 
 - (void)dealloc;
 - (id)initWithName:(id)arg1;

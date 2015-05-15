@@ -7,8 +7,8 @@
     unsigned int _role;
 }
 
-@property(assign,retain) SGIdentityKey * identityKey;
-@property(assign,readwrite) unsigned int role;
+@property (nonatomic, retain) SGIdentityKey *identityKey;
+@property (nonatomic) unsigned int role;
 
 + (id)participantWithKey:(id)arg1 roleType:(unsigned int)arg2;
 

@@ -9,10 +9,10 @@
     UIView *_view;
 }
 
-@property(assign,readwrite) int alignment;
-@property(assign,copy) id animation;
-@property(assign,readwrite) int clipContainerType;
-@property(assign,retain) UIView * view;
+@property (nonatomic) int alignment;
+@property (nonatomic, copy) id animation;
+@property (nonatomic) int clipContainerType;
+@property (nonatomic, retain) UIView *view;
 
 + (id)extraView:(id)arg1 withAlignment:(int)arg2 animation:(id)arg3 onSnapshot:(bool)arg4;
 

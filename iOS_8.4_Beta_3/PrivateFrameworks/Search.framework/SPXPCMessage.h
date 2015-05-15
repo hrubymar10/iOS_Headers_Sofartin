@@ -13,10 +13,10 @@
     NSObject<OS_xpc_object> *_x_reply_connection;
 }
 
-@property(assign,copy) NSDictionary * info;
-@property(assign,readonly) NSString * name;
-@property(assign,readwrite) unsigned long long sharedMemoryLength;
-@property(assign,readwrite) unsigned long long sharedMemoryRegion;
+@property (nonatomic, copy) NSDictionary *info;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic) unsigned long long sharedMemoryLength;
+@property (nonatomic) unsigned long long sharedMemoryRegion;
 
 - (id)_createXPCMessage;
 - (id)_initWithXPCMessage:(id)arg1 onConnection:(id)arg2;

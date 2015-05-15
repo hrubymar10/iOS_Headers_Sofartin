@@ -10,8 +10,8 @@
     NSMutableDictionary *_resettableInvocations;
 }
 
-@property(assign,readonly) _UIAppearanceCustomizableClassInfo * _customizableClassInfo;
-@property(setter=_setResettableInvocations:,assign,retain) NSMutableDictionary * _resettableInvocations;
+@property (nonatomic, readonly) _UIAppearanceCustomizableClassInfo *_customizableClassInfo;
+@property (setter=_setResettableInvocations:, nonatomic, retain) NSMutableDictionary *_resettableInvocations;
 
 + (void)_addWindow:(id)arg1 forSource:(id)arg2;
 + (id)_appearanceForClass:(Class)arg1 withContainerList:(id)arg2;

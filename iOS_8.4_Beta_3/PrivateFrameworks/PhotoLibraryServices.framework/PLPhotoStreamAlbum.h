@@ -4,7 +4,7 @@
 
 @interface PLPhotoStreamAlbum : PLManagedAlbum
 
-@property(assign,retain) NSString * personID;
+@property (nonatomic, retain) NSString *personID;
 
 + (id)entityInManagedObjectContext:(id)arg1;
 + (id)entityName;

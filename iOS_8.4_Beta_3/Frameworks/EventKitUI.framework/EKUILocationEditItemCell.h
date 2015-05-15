@@ -10,7 +10,7 @@
     UILabel *_title;
 }
 
-@property(assign,copy) id clearButtonTapped;
+@property (nonatomic, copy) id clearButtonTapped;
 
 - (void).cxx_destruct;
 - (void)_clearButtonTapped:(id)arg1;

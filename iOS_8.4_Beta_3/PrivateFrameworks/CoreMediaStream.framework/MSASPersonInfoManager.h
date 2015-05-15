@@ -7,8 +7,8 @@
     NSMutableDictionary *_personIDToPersonInfoDictionary;
 }
 
-@property(assign,retain) NSString * pathForPersonInfoDictionary;
-@property(assign,retain) NSMutableDictionary * personIDToPersonInfoDictionary;
+@property (nonatomic, retain) NSString *pathForPersonInfoDictionary;
+@property (nonatomic, retain) NSMutableDictionary *personIDToPersonInfoDictionary;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)sharedManager;

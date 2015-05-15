@@ -16,9 +16,9 @@
     VKTrafficTile *_trafficTile;
 }
 
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{PatternedLayer=^^?{vector<vk::PatternedBatch *' */ struct * patternedRibbonLayer; /* unknown property attribute:  std::__1::allocator<ggl::PatternedRibbon::BaseMesh *> >=^^{BaseMesh}}}[2^{RenderState}]{shared_ptr<ggl::Tile::ViewUniformData>=^{ViewUniformData}^{__shared_weak_count}}[2{shared_ptr<ggl::RenderState>=^{RenderState}^{__shared_weak_count}}]Q^{PatternedManager}@} */
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{RoadLayer=^^?{vector<vk::RoadBatch *' */ struct * roadLayer; /* unknown property attribute:  std::__1::allocator<ggl::Ribbon::BaseMesh *> >=^^{BaseMesh}}}[4^{RenderState}]{shared_ptr<ggl::Tile::ViewUniformData>=^{ViewUniformData}^{__shared_weak_count}}[4{shared_ptr<ggl::RenderState>=^{RenderState}^{__shared_weak_count}}]Q^{RoadManager}@} */
-@property(assign,retain) VKTrafficTile * trafficTile;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{PatternedLayer=^^?{vector<vk::PatternedBatch *' */ struct *patternedRibbonLayer; /* unknown property attribute:  std::__1::allocator<ggl::PatternedRibbon::BaseMesh *> >=^^{BaseMesh}}}[2^{RenderState}]{shared_ptr<ggl::Tile::ViewUniformData>=^{ViewUniformData}^{__shared_weak_count}}[2{shared_ptr<ggl::RenderState>=^{RenderState}^{__shared_weak_count}}]Q^{PatternedManager}@} */
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{RoadLayer=^^?{vector<vk::RoadBatch *' */ struct *roadLayer; /* unknown property attribute:  std::__1::allocator<ggl::Ribbon::BaseMesh *> >=^^{BaseMesh}}}[4^{RenderState}]{shared_ptr<ggl::Tile::ViewUniformData>=^{ViewUniformData}^{__shared_weak_count}}[4{shared_ptr<ggl::RenderState>=^{RenderState}^{__shared_weak_count}}]Q^{RoadManager}@} */
+@property (nonatomic, retain) VKTrafficTile *trafficTile;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

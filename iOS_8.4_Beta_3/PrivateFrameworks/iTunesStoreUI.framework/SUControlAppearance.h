@@ -8,7 +8,7 @@
     NSMutableDictionary *_titlePositions;
 }
 
-@property(assign,readonly) long long numberOfImages;
+@property (nonatomic, readonly) long long numberOfImages;
 
 - (id)_copyKeyForState:(unsigned long long)arg1 barMetrics:(long long)arg2;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

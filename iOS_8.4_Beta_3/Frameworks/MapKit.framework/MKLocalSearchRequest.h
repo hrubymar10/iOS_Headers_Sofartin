@@ -26,18 +26,18 @@
     int _resultProviderID;
 }
 
-@property(assign,readonly) bool _hasRegion;
-@property(getter=_allowPhoneNumberLookupUsingCellular,setter=_setAllowPhoneNumberLookupUsingCellular:,assign,readwrite) bool allowPhoneNumberLookupUsingCellular;
-@property(getter=_canonicalSearchString,setter=_setCanonicalSearchString:,assign,retain) NSString * canonicalSearchString;
-@property(getter=_contactsDataString,setter=_setContactsDataString:,assign,retain) NSString * contactsDataString;
-@property(getter=_deviceLocation,setter=_setDeviceLocation:,assign,retain) CLLocation * deviceLocation;
-@property(assign,readonly) <GEOCompletionItem> * geoCompletionItem;
-@property(getter=_merchantParameters,setter=_setMerchantParameters:,assign,retain) _MKLocalSearchMerchantParameters * merchantParameters;
-@property(getter=_muids,setter=_setMuids:,assign,retain) NSArray * muids;
-@property(assign,copy) NSString * naturalLanguageQuery;
-@property(getter=_phoneNumbers,setter=_setPhoneNumbers:,assign,retain) NSArray * phoneNumbers;
-@property(assign,readwrite) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } region;
-@property(getter=_resultProviderID,setter=_setResultProviderID:,assign,readwrite) int resultProviderID;
+@property (nonatomic, readonly) bool _hasRegion;
+@property (getter=_allowPhoneNumberLookupUsingCellular, setter=_setAllowPhoneNumberLookupUsingCellular:, nonatomic) bool allowPhoneNumberLookupUsingCellular;
+@property (getter=_canonicalSearchString, setter=_setCanonicalSearchString:, nonatomic, retain) NSString *canonicalSearchString;
+@property (getter=_contactsDataString, setter=_setContactsDataString:, nonatomic, retain) NSString *contactsDataString;
+@property (getter=_deviceLocation, setter=_setDeviceLocation:, nonatomic, retain) CLLocation *deviceLocation;
+@property (nonatomic, readonly) <GEOCompletionItem> *geoCompletionItem;
+@property (getter=_merchantParameters, setter=_setMerchantParameters:, nonatomic, retain) _MKLocalSearchMerchantParameters *merchantParameters;
+@property (getter=_muids, setter=_setMuids:, nonatomic, retain) NSArray *muids;
+@property (nonatomic, copy) NSString *naturalLanguageQuery;
+@property (getter=_phoneNumbers, setter=_setPhoneNumbers:, nonatomic, retain) NSArray *phoneNumbers;
+@property (nonatomic) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } region;
+@property (getter=_resultProviderID, setter=_setResultProviderID:, nonatomic) int resultProviderID;
 
 + (id)searchRequestWithCompletion:(id)arg1;
 

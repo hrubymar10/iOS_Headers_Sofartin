@@ -9,13 +9,13 @@
     id _selectionHandler;
 }
 
-@property(assign,readwrite) bool allowsSelection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) MusicEntityValueContext * entityValueContext;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id selectionHandler;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool allowsSelection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) MusicEntityValueContext *entityValueContext;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id selectionHandler;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)allowsSelection;

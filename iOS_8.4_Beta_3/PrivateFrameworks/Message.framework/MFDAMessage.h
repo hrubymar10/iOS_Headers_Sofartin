@@ -9,7 +9,7 @@
     MFMessage *_rfc822CreatedMessage;
 }
 
-@property(assign,readonly) DAMailMessage * DAMailMessage;
+@property (nonatomic, readonly) DAMailMessage *DAMailMessage;
 
 - (id)DAMailMessage;
 - (void)dealloc;

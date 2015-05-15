@@ -4,15 +4,15 @@
 
 @interface SSMetricsClickEvent : SSMetricsBaseEvent
 
-@property(assign,retain) id actionDetails;
-@property(assign,retain) NSString * actionType;
-@property(assign,retain) id impressions;
-@property(assign,retain) NSString * locationDescription;
-@property(assign,retain) NSNumber * positionX;
-@property(assign,retain) NSNumber * positionY;
-@property(assign,retain) NSString * targetIdentifier;
-@property(assign,retain) NSString * targetType;
-@property(assign,retain) NSString * targetURL;
+@property (nonatomic, retain) id actionDetails;
+@property (nonatomic, retain) NSString *actionType;
+@property (nonatomic, retain) id impressions;
+@property (nonatomic, retain) NSString *locationDescription;
+@property (nonatomic, retain) NSNumber *positionX;
+@property (nonatomic, retain) NSNumber *positionY;
+@property (nonatomic, retain) NSString *targetIdentifier;
+@property (nonatomic, retain) NSString *targetType;
+@property (nonatomic, retain) NSString *targetURL;
 
 - (id)actionDetails;
 - (id)actionType;

@@ -8,9 +8,9 @@
     CKRecordID *_recordID;
 }
 
-@property(assign,retain) NSString * etag;
-@property(assign,retain) CKRecord * record;
-@property(assign,retain) CKRecordID * recordID;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, retain) CKRecord *record;
+@property (nonatomic, retain) CKRecordID *recordID;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

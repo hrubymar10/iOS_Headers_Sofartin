@@ -7,8 +7,8 @@
     NSLayoutConstraint *_heightConstraint;
 }
 
-@property(assign,retain) NSMutableArray * buttonViews;
-@property(assign,readwrite) NSLayoutConstraint * heightConstraint;
+@property (retain) NSMutableArray *buttonViews;
+@property NSLayoutConstraint *heightConstraint;
 
 - (void).cxx_destruct;
 - (id)buttonViews;

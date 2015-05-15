@@ -6,13 +6,13 @@
     void *_impl;
 }
 
-@property(assign,readonly) NSNumber * dataSourceID;
-@property(assign,readonly) NSString * dataSourceName;
-@property(assign,readonly) NSString * location;
-@property(assign,readonly) NSString * orientation;
-@property(assign,readonly) NSString * preferredPolarPattern;
-@property(assign,readonly) NSString * selectedPolarPattern;
-@property(assign,readonly) NSArray * supportedPolarPatterns;
+@property (readonly) NSNumber *dataSourceID;
+@property (readonly) NSString *dataSourceName;
+@property (readonly) NSString *location;
+@property (readonly) NSString *orientation;
+@property (readonly) NSString *preferredPolarPattern;
+@property (readonly) NSString *selectedPolarPattern;
+@property (readonly) NSArray *supportedPolarPatterns;
 
 + (id)privateCreateOrConfigureArray:(id)arg1 withRawSourceArray:(id)arg2 portID:(id)arg3;
 

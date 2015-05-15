@@ -10,16 +10,16 @@
     NSString *_service;
 }
 
-@property(assign,readonly) bool cancelled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id idQueryResultHandler;
-@property(assign,retain) NSString * listenerID;
-@property(assign,retain) NSArray * propertyItems;
-@property(assign,copy) id requestResultBlock;
-@property(assign,retain) NSString * service;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) bool cancelled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id idQueryResultHandler;
+@property (nonatomic, retain) NSString *listenerID;
+@property (nonatomic, retain) NSArray *propertyItems;
+@property (nonatomic, copy) id requestResultBlock;
+@property (nonatomic, retain) NSString *service;
+@property (readonly) Class superclass;
 
 - (void)_requestStatusOnMainQueue:(bool)arg1;
 - (void)cancel;

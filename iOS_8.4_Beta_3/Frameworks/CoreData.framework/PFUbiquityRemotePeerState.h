@@ -4,10 +4,10 @@
 
 @interface PFUbiquityRemotePeerState : NSManagedObject
 
-@property(assign,retain) PFUbiquityPeer * peer;
-@property(assign,retain) NSString * peerID;
-@property(assign,retain) NSString * storeName;
-@property(assign,retain) NSNumber * transactionNumber;
+@property (nonatomic, retain) PFUbiquityPeer *peer;
+@property (nonatomic, retain) NSString *peerID;
+@property (nonatomic, retain) NSString *storeName;
+@property (nonatomic, retain) NSNumber *transactionNumber;
 
 + (id)remotePeerStatesMatchingStoreName:(id)arg1 andPeerID:(id)arg2 inManagedObjectContext:(id)arg3;
 + (id)remotePeerStatesMatchingStoreName:(id)arg1 inManagedObjectContext:(id)arg2;

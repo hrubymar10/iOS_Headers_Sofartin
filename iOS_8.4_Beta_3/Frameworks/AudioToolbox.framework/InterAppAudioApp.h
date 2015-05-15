@@ -11,12 +11,12 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) UIImage * icon;
-@property(assign,readonly) bool isCurrentApp;
-@property(assign,readonly) bool isHost;
-@property(assign,readonly) long long key;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, readonly) UIImage *icon;
+@property (nonatomic, readonly) bool isCurrentApp;
+@property (nonatomic, readonly) bool isHost;
+@property (nonatomic, readonly) long long key;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSURL *url;
 
 - (void)dealloc;
 - (id)description;

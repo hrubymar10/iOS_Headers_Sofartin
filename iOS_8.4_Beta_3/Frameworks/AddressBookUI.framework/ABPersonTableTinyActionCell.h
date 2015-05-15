@@ -9,10 +9,10 @@
     UIView *_tinyActionContentView;
 }
 
-@property(assign,retain) ABPersonTableActionDataSource * actionDataSource;
-@property(assign,readonly) unsigned long long actionsCount;
-@property(assign,readwrite) <ABPersonTableTinyActionDelegate> * delegate;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
+@property (nonatomic, retain) ABPersonTableActionDataSource *actionDataSource;
+@property (readonly) unsigned long long actionsCount;
+@property (nonatomic) <ABPersonTableTinyActionDelegate> *delegate;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
 
 - (void)_resizeInnerContentView;
 - (id)_tinyActionContentView;

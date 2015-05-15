@@ -10,10 +10,10 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readonly) bool hasTetheredOUI;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSData * tetheredOUI;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic, readonly) bool hasTetheredOUI;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSData *tetheredOUI;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

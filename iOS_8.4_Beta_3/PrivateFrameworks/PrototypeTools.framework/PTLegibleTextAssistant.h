@@ -21,12 +21,12 @@
     PTLegibleTextAssistantSettings *_settings;
 }
 
-@property(assign,readwrite) double alphaStrength;
-@property(assign,readwrite) bool effectsDisabled;
-@property(assign,readwrite) struct { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; } imageStatistics;
-@property(assign,readwrite) double largestShadowRadius;
-@property(assign,readwrite) double radiusStrength;
-@property(assign,retain) PTLegibleTextAssistantSettings * settings;
+@property (nonatomic) double alphaStrength;
+@property (nonatomic) bool effectsDisabled;
+@property (nonatomic) struct { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; } imageStatistics;
+@property (nonatomic) double largestShadowRadius;
+@property (nonatomic) double radiusStrength;
+@property (nonatomic, retain) PTLegibleTextAssistantSettings *settings;
 
 - (void).cxx_destruct;
 - (double)alphaStrength;

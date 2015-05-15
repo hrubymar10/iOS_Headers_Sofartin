@@ -7,8 +7,8 @@
     NSMutableDictionary *_zoneIDsToGateHolders;
 }
 
-@property(assign,retain) NSMutableArray * waiterWrappers;
-@property(assign,retain) NSMutableDictionary * zoneIDsToGateHolders;
+@property (nonatomic, retain) NSMutableArray *waiterWrappers;
+@property (nonatomic, retain) NSMutableDictionary *zoneIDsToGateHolders;
 
 - (void).cxx_destruct;
 - (bool)hasStatusToReport;

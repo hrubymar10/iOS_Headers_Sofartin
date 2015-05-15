@@ -14,8 +14,8 @@
     unsigned long long _writingRelinquishmentCount;
 }
 
-@property(assign,readonly) bool disconnected;
-@property(assign,readwrite) bool inSubarbiter;
+@property (readonly) bool disconnected;
+@property bool inSubarbiter;
 
 + (id)urlWithItemURL:(id)arg1 subitemPath:(id)arg2;
 

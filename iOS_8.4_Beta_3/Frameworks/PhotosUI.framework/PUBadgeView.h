@@ -13,14 +13,14 @@
     double _videoDuration;
 }
 
-@property(setter=_setBackgroundImageView:,assign,retain) UIImageView * _backgroundImageView;
-@property(setter=_setBadgeImage:,assign,retain) UIImage * _badgeImage;
-@property(setter=_setBadgeImageView:,assign,retain) UIImageView * _badgeImageView;
-@property(setter=_setBannerText:,assign,retain) NSString * _bannerText;
-@property(setter=_setTextLabel:,assign,retain) UILabel * _textLabel;
-@property(assign,readwrite) long long badgeType;
-@property(assign,readwrite) bool flattensSubviews;
-@property(assign,readwrite) double videoDuration;
+@property (setter=_setBackgroundImageView:, nonatomic, retain) UIImageView *_backgroundImageView;
+@property (setter=_setBadgeImage:, nonatomic, retain) UIImage *_badgeImage;
+@property (setter=_setBadgeImageView:, nonatomic, retain) UIImageView *_badgeImageView;
+@property (setter=_setBannerText:, nonatomic, retain) NSString *_bannerText;
+@property (setter=_setTextLabel:, nonatomic, retain) UILabel *_textLabel;
+@property (nonatomic) long long badgeType;
+@property (nonatomic) bool flattensSubviews;
+@property (nonatomic) double videoDuration;
 
 - (void).cxx_destruct;
 - (id)_backgroundImageView;

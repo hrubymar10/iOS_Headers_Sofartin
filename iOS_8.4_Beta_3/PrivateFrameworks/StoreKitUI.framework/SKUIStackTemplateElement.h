@@ -7,12 +7,12 @@
     SKUIViewElement *_collectionHeaderViewElement;
 }
 
-@property(assign,readonly) NSArray * collectionElements;
-@property(assign,readonly) SKUIViewElement * collectionHeaderViewElement;
-@property(assign,readonly) SKUIIndexBarViewElement * indexBarViewElement;
-@property(assign,readonly) SKUINavigationBarViewElement * navigationBarElement;
-@property(assign,readonly) long long numberOfSplits;
-@property(assign,readonly) SKUIToolbarViewElement * toolbarElement;
+@property (nonatomic, readonly) NSArray *collectionElements;
+@property (nonatomic, readonly) SKUIViewElement *collectionHeaderViewElement;
+@property (nonatomic, readonly) SKUIIndexBarViewElement *indexBarViewElement;
+@property (nonatomic, readonly) SKUINavigationBarViewElement *navigationBarElement;
+@property (nonatomic, readonly) long long numberOfSplits;
+@property (nonatomic, readonly) SKUIToolbarViewElement *toolbarElement;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

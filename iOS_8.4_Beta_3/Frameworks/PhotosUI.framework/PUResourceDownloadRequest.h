@@ -12,11 +12,11 @@
     long long _requestType;
 }
 
-@property(getter=_isDownloadCanceled,setter=_setDownloadCanceled:,assign,readwrite) bool _downloadCanceled;
-@property(assign,readonly) PHAsset * asset;
-@property(assign,readwrite) double progress;
-@property(assign,copy) id progressChangeHandler;
-@property(assign,readonly) long long requestType;
+@property (getter=_isDownloadCanceled, setter=_setDownloadCanceled:, nonatomic) bool _downloadCanceled;
+@property (readonly) PHAsset *asset;
+@property (nonatomic) double progress;
+@property (nonatomic, copy) id progressChangeHandler;
+@property (readonly) long long requestType;
 
 - (void).cxx_destruct;
 - (void)_didFinishDownloadWithSuccess:(bool)arg1 error:(id)arg2;

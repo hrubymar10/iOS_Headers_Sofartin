@@ -4,8 +4,8 @@
 
 @interface SASettingSetBool : SASettingSetValue
 
-@property(assign,readwrite) bool toggle;
-@property(assign,readwrite) bool value;
+@property (nonatomic) bool toggle;
+@property (nonatomic) bool value;
 
 + (id)setBool;
 + (id)setBoolWithDictionary:(id)arg1 context:(id)arg2;

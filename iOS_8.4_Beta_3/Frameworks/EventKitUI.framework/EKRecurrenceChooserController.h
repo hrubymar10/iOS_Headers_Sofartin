@@ -7,9 +7,9 @@
     <EKRecurrenceChooserControllerDelegate> *_delegate;
 }
 
-@property(assign,copy) NSDate * date;
-@property(assign,readwrite) <EKRecurrenceChooserControllerDelegate> * delegate;
-@property(assign,readonly) int frequency;
+@property (copy) NSDate *date;
+@property <EKRecurrenceChooserControllerDelegate> *delegate;
+@property (nonatomic, readonly) int frequency;
 
 + (int)dayFromNumber:(long long)arg1;
 

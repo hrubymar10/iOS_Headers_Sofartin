@@ -14,12 +14,12 @@
     NSURL *_url;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,retain) NSString * dataType;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) bool isTemplate;
-@property(assign,retain) NSURL * url;
+@property (retain) NSData *data;
+@property (retain) NSString *dataType;
+@property (retain) NSString *identifier;
+@property (retain) UIImage *image;
+@property bool isTemplate;
+@property (retain) NSURL *url;
 
 + (id)converterBlock;
 + (bool)supportsSecureCoding;

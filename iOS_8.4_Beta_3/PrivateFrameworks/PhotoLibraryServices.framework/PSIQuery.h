@@ -11,9 +11,9 @@
     NSObject<OS_dispatch_queue> *_syncQueue;
 }
 
-@property(getter=isCanceled,assign,readonly) bool canceled;
-@property(assign,readonly) int queryId;
-@property(assign,copy) NSString * searchText;
+@property (getter=isCanceled, readonly) bool canceled;
+@property (nonatomic, readonly) int queryId;
+@property (nonatomic, readonly, copy) NSString *searchText;
 
 - (void)cancel;
 - (void)dealloc;

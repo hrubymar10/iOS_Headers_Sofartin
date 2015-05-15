@@ -21,15 +21,15 @@
     BRCSyncBudgetThrottle *_syncUpBudget;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSObject<OS_dispatch_group> * initialSyncDownGroup;
-@property(assign,readonly) BRCAccountSession * session;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSObject<OS_dispatch_group> * syncGroup;
-@property(assign,readonly) BRCDeadlineScheduler * syncScheduler;
-@property(assign,readonly) BRCSyncBudgetThrottle * syncUpBudget;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSObject<OS_dispatch_group> *initialSyncDownGroup;
+@property (nonatomic, readonly) BRCAccountSession *session;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSObject<OS_dispatch_group> *syncGroup;
+@property (nonatomic, readonly) BRCDeadlineScheduler *syncScheduler;
+@property (nonatomic, readonly) BRCSyncBudgetThrottle *syncUpBudget;
 
 - (void).cxx_destruct;
 - (void)_automaticSyncSchedule:(id)arg1;

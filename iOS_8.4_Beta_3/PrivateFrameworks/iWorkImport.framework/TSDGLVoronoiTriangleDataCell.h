@@ -22,11 +22,11 @@
     struct { float x1; float x2; } *_vertexData;
 }
 
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
-@property(assign,readonly) struct { float x1; float x2; } centerPoint;
-@property(assign,readonly) unsigned long long triangleCount;
-@property(assign,readonly) unsigned long long vertexCount;
-@property(assign,readonly) struct { float x1; float x2; }* vertexData;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
+@property (nonatomic, readonly) struct { float x1; float x2; } centerPoint;
+@property (nonatomic, readonly) unsigned long long triangleCount;
+@property (nonatomic, readonly) unsigned long long vertexCount;
+@property (nonatomic, readonly) struct { float x1; float x2; }*vertexData;
 
 - (id).cxx_construct;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })bounds;

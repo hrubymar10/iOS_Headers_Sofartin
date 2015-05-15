@@ -7,8 +7,8 @@
     bool mAutoChartStrokeIsHollow;
 }
 
-@property(assign,readwrite) bool autoChartFillIsHollow;
-@property(assign,readwrite) bool autoChartStrokeIsHollow;
+@property bool autoChartFillIsHollow;
+@property bool autoChartStrokeIsHollow;
 
 - (bool)autoChartFillIsHollow;
 - (bool)autoChartStrokeIsHollow;

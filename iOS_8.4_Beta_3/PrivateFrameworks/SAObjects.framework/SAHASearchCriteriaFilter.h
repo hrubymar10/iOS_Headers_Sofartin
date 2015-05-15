@@ -4,15 +4,15 @@
 
 @interface SAHASearchCriteriaFilter : SAHAFilter
 
-@property(assign,copy) NSString * attribute;
-@property(assign,copy) NSString * entityType;
-@property(assign,copy) NSString * groupName;
-@property(assign,copy) NSString * homeName;
-@property(assign,copy) NSString * roomName;
-@property(assign,copy) NSString * sceneName;
-@property(assign,copy) NSString * serviceName;
-@property(assign,copy) NSString * serviceType;
-@property(assign,copy) NSString * zoneName;
+@property (nonatomic, copy) NSString *attribute;
+@property (nonatomic, copy) NSString *entityType;
+@property (nonatomic, copy) NSString *groupName;
+@property (nonatomic, copy) NSString *homeName;
+@property (nonatomic, copy) NSString *roomName;
+@property (nonatomic, copy) NSString *sceneName;
+@property (nonatomic, copy) NSString *serviceName;
+@property (nonatomic, copy) NSString *serviceType;
+@property (nonatomic, copy) NSString *zoneName;
 
 + (id)searchCriteriaFilter;
 + (id)searchCriteriaFilterWithDictionary:(id)arg1 context:(id)arg2;

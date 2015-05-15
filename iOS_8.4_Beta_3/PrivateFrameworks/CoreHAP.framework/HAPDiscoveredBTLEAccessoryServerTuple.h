@@ -7,8 +7,8 @@
     double _lastSeen;
 }
 
-@property(assign,retain) HAPAccessoryServerBTLE * accessoryServer;
-@property(assign,readwrite) double lastSeen;
+@property (nonatomic, retain) HAPAccessoryServerBTLE *accessoryServer;
+@property (nonatomic) double lastSeen;
 
 + (id)discoveredAccessoryServerTupleWithAccessoryServer:(id)arg1;
 

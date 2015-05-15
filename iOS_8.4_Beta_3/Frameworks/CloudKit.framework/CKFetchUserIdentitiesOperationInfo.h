@@ -6,7 +6,7 @@
     NSArray *_identityInfos;
 }
 
-@property(assign,retain) NSArray * identityInfos;
+@property (nonatomic, retain) NSArray *identityInfos;
 
 + (bool)supportsSecureCoding;
 

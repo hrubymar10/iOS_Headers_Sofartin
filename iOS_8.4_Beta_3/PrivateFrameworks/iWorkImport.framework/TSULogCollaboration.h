@@ -14,11 +14,11 @@
     int _stderrLevelMask;
 }
 
-@property(assign,readwrite) int filterLevel;
-@property(assign,readonly) NSURL * logFileURL;
-@property(assign,readwrite) bool shouldLogCommandTrace;
-@property(assign,readwrite) bool shouldLogToFile;
-@property(assign,readwrite) bool shouldLogToStderr;
+@property (nonatomic) int filterLevel;
+@property (nonatomic, readonly) NSURL *logFileURL;
+@property (nonatomic) bool shouldLogCommandTrace;
+@property (nonatomic) bool shouldLogToFile;
+@property (nonatomic) bool shouldLogToStderr;
 
 + (void)defineCategories;
 + (id)sharedInstance;

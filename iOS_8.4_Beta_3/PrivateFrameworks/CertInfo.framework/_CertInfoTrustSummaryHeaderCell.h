@@ -12,11 +12,11 @@
     _CertInfoGradientLabel *_trustedLabel;
 }
 
-@property(assign,readonly) _CertInfoActionButton * actionButton;
-@property(assign,readonly) double rowHeight;
-@property(assign,copy) NSString * trustSubtitle;
-@property(assign,copy) NSString * trustTitle;
-@property(getter=isTrusted,assign,readwrite) bool trusted;
+@property (nonatomic, readonly) _CertInfoActionButton *actionButton;
+@property (nonatomic, readonly) double rowHeight;
+@property (nonatomic, copy) NSString *trustSubtitle;
+@property (nonatomic, copy) NSString *trustTitle;
+@property (getter=isTrusted, nonatomic) bool trusted;
 
 - (void).cxx_destruct;
 - (void)_layoutSubviewsWithActionButtonSize:(struct CGSize { double x1; double x2; })arg1;

@@ -24,19 +24,19 @@
     bool editable;
 }
 
-@property(assign,readwrite) UIPDFAnnotationController * annotationController;
-@property(assign,retain) UIPDFAnnotationView * annotationView;
-@property(assign,retain) NSString * associatedAnnotationID;
-@property(assign,retain) NSString * contents;
-@property(assign,retain) id data;
-@property(assign,retain) CALayer * drawingLayer;
-@property(assign,readwrite) bool editable;
-@property(assign,readwrite) long long index;
-@property(assign,readwrite) UIPDFPage * page;
-@property(assign,readwrite) UIPDFPopupAnnotation * popup;
-@property(assign,readonly) bool recognizeGestures;
-@property(assign,readwrite) UIPDFSelection * selection;
-@property(assign,readwrite) unsigned long long tag;
+@property (nonatomic) UIPDFAnnotationController *annotationController;
+@property (nonatomic, retain) UIPDFAnnotationView *annotationView;
+@property (nonatomic, retain) NSString *associatedAnnotationID;
+@property (nonatomic, retain) NSString *contents;
+@property (nonatomic, retain) id data;
+@property (nonatomic, retain) CALayer *drawingLayer;
+@property (nonatomic) bool editable;
+@property (nonatomic) long long index;
+@property (nonatomic) UIPDFPage *page;
+@property (nonatomic) UIPDFPopupAnnotation *popup;
+@property (nonatomic, readonly) bool recognizeGestures;
+@property (nonatomic) UIPDFSelection *selection;
+@property (nonatomic) unsigned long long tag;
 
 + (id)newAnnotationWithPage:(id)arg1 fromArchive:(id)arg2;
 

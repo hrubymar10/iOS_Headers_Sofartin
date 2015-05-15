@@ -10,16 +10,16 @@
     bool _revealingNavigationBarDuringTransition;
 }
 
-@property(assign,retain) MPUExtrasCarouselCollectionView * carouselCollectionView;
-@property(assign,retain) UICollectionViewLayout<MPUExtrasCarouselCollectionViewLayout> * carouselCollectionViewLayout;
-@property(assign,readwrite) <MPUExtrasCarouselViewControllerDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPUExtrasCarouselViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long indexOfVisibleItem;
-@property(getter=isRevealingNavigationBarDuringTransition,assign,readwrite) bool revealingNavigationBarDuringTransition;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) MPUExtrasCarouselCollectionView *carouselCollectionView;
+@property (nonatomic, retain) UICollectionViewLayout<MPUExtrasCarouselCollectionViewLayout> *carouselCollectionViewLayout;
+@property (nonatomic) <MPUExtrasCarouselViewControllerDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPUExtrasCarouselViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long indexOfVisibleItem;
+@property (getter=isRevealingNavigationBarDuringTransition, nonatomic) bool revealingNavigationBarDuringTransition;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_isPhone;

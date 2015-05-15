@@ -7,8 +7,8 @@
     WBReader *mReader;
 }
 
-@property(assign,readwrite) int currentTextType;
-@property(assign,readwrite) WBReader * reader;
+@property (nonatomic) int currentTextType;
+@property (nonatomic) WBReader *reader;
 
 - (int)currentTextType;
 - (id)initWithClient:(Class)arg1;

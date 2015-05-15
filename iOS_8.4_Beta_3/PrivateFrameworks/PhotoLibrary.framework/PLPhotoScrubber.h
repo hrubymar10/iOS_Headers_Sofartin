@@ -34,12 +34,12 @@
     double _timeOfLastTouch;
 }
 
-@property(setter=_setLastSpeedRegime:,assign,readwrite) long long _lastSpeedRegime;
-@property(setter=_setLastTime:,assign,readwrite) double _lastTime;
-@property(setter=_setScrubbingSpeed:,assign,readwrite) double _scrubbingSpeed;
-@property(setter=_setTimeoutTimer:,assign,retain) NSTimer * _timeoutTimer;
-@property(assign,readwrite) <PLPhotoScrubberDataSource> * dataSource;
-@property(assign,readwrite) <PLPhotoScrubberSpeedDelegate> * speedDelegate;
+@property (setter=_setLastSpeedRegime:, nonatomic) long long _lastSpeedRegime;
+@property (setter=_setLastTime:, nonatomic) double _lastTime;
+@property (setter=_setScrubbingSpeed:, nonatomic) double _scrubbingSpeed;
+@property (setter=_setTimeoutTimer:, nonatomic, retain) NSTimer *_timeoutTimer;
+@property (nonatomic) <PLPhotoScrubberDataSource> *dataSource;
+@property (nonatomic) <PLPhotoScrubberSpeedDelegate> *speedDelegate;
 
 - (struct CGPoint { double x1; double x2; })_centerForImageAtIndex:(long long)arg1;
 - (void)_handleTimeoutTimer:(id)arg1;

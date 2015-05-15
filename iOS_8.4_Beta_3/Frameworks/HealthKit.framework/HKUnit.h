@@ -10,10 +10,10 @@
     double _scaleOffset;
 }
 
-@property(assign,readonly) _HKFactorization * _baseUnits;
-@property(assign,readonly) _HKDimension * dimension;
-@property(assign,readonly) double scaleOffset;
-@property(assign,readonly) NSString * unitString;
+@property (nonatomic, readonly) _HKFactorization *_baseUnits;
+@property (nonatomic, readonly) _HKDimension *dimension;
+@property (nonatomic, readonly) double scaleOffset;
+@property (readonly) NSString *unitString;
 
 + (id)_distanceUnitForLocale:(id)arg1;
 + (id)_foodEnergyUnitForLocale:(id)arg1;

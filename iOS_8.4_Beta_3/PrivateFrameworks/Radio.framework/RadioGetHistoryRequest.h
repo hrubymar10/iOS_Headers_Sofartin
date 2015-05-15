@@ -16,16 +16,16 @@
     long long _stationID;
 }
 
-@property(assign,copy) NSNumber * accountUniqueIdentifier;
-@property(assign,readwrite) bool aggregateSessions;
-@property(assign,readwrite) bool fetchForAccount;
-@property(assign,readwrite) bool includesAds;
-@property(assign,readwrite) unsigned long long maxNumberOfTracks;
-@property(assign,copy) NSArray * playActivityFeedEvents;
-@property(assign,copy) RadioPlayEventCollection * playEventCollection;
-@property(assign,readwrite) bool shouldProcessCategories;
-@property(assign,copy) NSString * stationHash;
-@property(assign,readwrite) long long stationID;
+@property (nonatomic, readonly, copy) NSNumber *accountUniqueIdentifier;
+@property (nonatomic) bool aggregateSessions;
+@property (nonatomic) bool fetchForAccount;
+@property (nonatomic) bool includesAds;
+@property (nonatomic) unsigned long long maxNumberOfTracks;
+@property (nonatomic, copy) NSArray *playActivityFeedEvents;
+@property (nonatomic, copy) RadioPlayEventCollection *playEventCollection;
+@property (nonatomic) bool shouldProcessCategories;
+@property (nonatomic, copy) NSString *stationHash;
+@property (nonatomic) long long stationID;
 
 - (void).cxx_destruct;
 - (id)_newHistoryCategoryWithDictionary:(id)arg1;

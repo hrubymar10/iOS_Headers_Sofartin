@@ -17,24 +17,24 @@
     bool _selected;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool displaysItemOfferButton;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,retain) UIImage * iconImage;
-@property(getter=isIconImageHidden,assign,readwrite) bool iconImageHidden;
-@property(assign,readonly) UIView * iconImageView;
-@property(assign,retain) SKUIItemOffer * itemOffer;
-@property(assign,readonly) SKUIItemOfferButton * itemOfferButton;
-@property(assign,retain) SKUIItemOfferButtonAppearance * itemOfferButtonAppearance;
-@property(assign,readonly) UILabel * itemOfferNoticeLabel;
-@property(assign,copy) NSString * itemOfferNoticeString;
-@property(assign,copy) SKUIItemState * itemState;
-@property(assign,readonly) UIView * removeControlView;
-@property(getter=isRestricted,assign,readwrite) bool restricted;
-@property(getter=isSelected,assign,readwrite) bool selected;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool displaysItemOfferButton;
+@property (readonly) unsigned long long hash;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic, retain) UIImage *iconImage;
+@property (getter=isIconImageHidden, nonatomic) bool iconImageHidden;
+@property (nonatomic, readonly) UIView *iconImageView;
+@property (nonatomic, retain) SKUIItemOffer *itemOffer;
+@property (nonatomic, readonly) SKUIItemOfferButton *itemOfferButton;
+@property (nonatomic, retain) SKUIItemOfferButtonAppearance *itemOfferButtonAppearance;
+@property (nonatomic, readonly) UILabel *itemOfferNoticeLabel;
+@property (nonatomic, copy) NSString *itemOfferNoticeString;
+@property (nonatomic, copy) SKUIItemState *itemState;
+@property (nonatomic, readonly) UIView *removeControlView;
+@property (getter=isRestricted, nonatomic) bool restricted;
+@property (getter=isSelected, nonatomic) bool selected;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_canShowItemOfferNotice;

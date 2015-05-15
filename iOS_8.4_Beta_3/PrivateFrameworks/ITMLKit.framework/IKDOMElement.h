@@ -4,13 +4,13 @@
 
 @interface IKDOMElement : IKDOMNode <IKJDOMParsingElement, IKJSDOMElement, IKJSDOMParentNode>
 
-@property(assign,readonly) unsigned long long childElementCount;
-@property(assign,readonly) IKDOMHTMLCollection * children;
-@property(assign,readonly) IKDOMElement * firstElementChild;
-@property(assign,retain) NSString * innerHTML;
-@property(assign,readonly) IKDOMElement * lastElementChild;
-@property(assign,retain) NSString * outerHTML;
-@property(assign,retain) NSString * tagName;
+@property (nonatomic, readonly) unsigned long long childElementCount;
+@property (nonatomic, readonly) IKDOMHTMLCollection *children;
+@property (nonatomic, readonly) IKDOMElement *firstElementChild;
+@property (nonatomic, retain) NSString *innerHTML;
+@property (nonatomic, readonly) IKDOMElement *lastElementChild;
+@property (nonatomic, retain) NSString *outerHTML;
+@property (nonatomic, readonly, retain) NSString *tagName;
 
 - (id)attributes;
 - (id)childElementByTagName:(id)arg1;

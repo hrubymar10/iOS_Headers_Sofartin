@@ -4,10 +4,10 @@
 
 @interface ICSConference : ICSProperty
 
-@property(assign,retain) NSString * feature;
-@property(assign,retain) NSString * info;
-@property(assign,retain) NSString * language;
-@property(assign,retain) NSString * region;
+@property (nonatomic, retain) NSString *feature;
+@property (nonatomic, retain) NSString *info;
+@property (nonatomic, retain) NSString *language;
+@property (nonatomic, retain) NSString *region;
 
 - (void)_ICSStringWithOptions:(unsigned long long)arg1 appendingToString:(id)arg2;
 - (id)feature;

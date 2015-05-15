@@ -8,9 +8,9 @@
     bool _showLastFourDigits;
 }
 
-@property(assign,readwrite) bool allowsUnknownCardTypes;
-@property(assign,readwrite) bool showCreditCardNumber;
-@property(assign,readwrite) bool showLastFourDigits;
+@property (nonatomic) bool allowsUnknownCardTypes;
+@property (nonatomic) bool showCreditCardNumber;
+@property (nonatomic) bool showLastFourDigits;
 
 - (id)_formattedStringForNormalizedNumber:(id)arg1 showCreditCardNumber:(bool)arg2;
 - (struct _NSRange { unsigned long long x1; unsigned long long x2; })_normalizedSelectionRangeForFormattedCreditCardNumber:(id)arg1 withOriginalSelectionRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg2;

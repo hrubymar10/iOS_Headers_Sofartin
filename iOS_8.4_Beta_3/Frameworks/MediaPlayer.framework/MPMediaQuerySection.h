@@ -11,9 +11,9 @@
     NSString *_title;
 }
 
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,readwrite) unsigned long long sectionIndexTitleIndex;
-@property(assign,copy) NSString * title;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic) unsigned long long sectionIndexTitleIndex;
+@property (nonatomic, copy) NSString *title;
 
 + (bool)supportsSecureCoding;
 

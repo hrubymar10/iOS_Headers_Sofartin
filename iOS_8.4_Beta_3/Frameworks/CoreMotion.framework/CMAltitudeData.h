@@ -6,8 +6,8 @@
     id _internal;
 }
 
-@property(assign,readonly) NSNumber * pressure;
-@property(assign,readonly) NSNumber * relativeAltitude;
+@property (nonatomic, readonly) NSNumber *pressure;
+@property (nonatomic, readonly) NSNumber *relativeAltitude;
 
 + (bool)supportsSecureCoding;
 

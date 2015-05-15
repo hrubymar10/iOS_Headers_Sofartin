@@ -7,8 +7,8 @@
     DOMHTMLInputElement *_inputElement;
 }
 
-@property(assign,retain) <UIWebFormControl> * _control;
-@property(assign,retain) DOMHTMLInputElement * _inputElement;
+@property (nonatomic, retain) <UIWebFormControl> *_control;
+@property (nonatomic, retain) DOMHTMLInputElement *_inputElement;
 
 + (id)createPeripheralWithDOMHTMLInputElement:(id)arg1;
 

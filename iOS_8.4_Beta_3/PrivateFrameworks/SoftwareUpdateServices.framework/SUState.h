@@ -16,21 +16,21 @@
     NSDate *_scheduledManualDownloadWifiPeriodEndTime;
 }
 
-@property(assign,readwrite) bool autodownloadNeedsOneTimeRetry;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) SUDownload * lastDownload;
-@property(assign,retain) NSString * lastProductBuild;
-@property(assign,retain) NSString * lastProductType;
-@property(assign,retain) NSString * lastProductVersion;
-@property(assign,retain) NSString * lastReleaseType;
-@property(assign,copy) SUDescriptor * lastScannedDescriptor;
-@property(assign,retain) NSDate * lastScannedDescriptorTime;
-@property(assign,retain) NSDate * scheduledAutodownloadPolicyChangeTime;
-@property(assign,retain) NSDate * scheduledAutodownloadWifiPeriodEndTime;
-@property(assign,retain) NSDate * scheduledManualDownloadWifiPeriodEndTime;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool autodownloadNeedsOneTimeRetry;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) SUDownload *lastDownload;
+@property (nonatomic, retain) NSString *lastProductBuild;
+@property (nonatomic, retain) NSString *lastProductType;
+@property (nonatomic, retain) NSString *lastProductVersion;
+@property (nonatomic, retain) NSString *lastReleaseType;
+@property (nonatomic, copy) SUDescriptor *lastScannedDescriptor;
+@property (nonatomic, retain) NSDate *lastScannedDescriptorTime;
+@property (nonatomic, retain) NSDate *scheduledAutodownloadPolicyChangeTime;
+@property (nonatomic, retain) NSDate *scheduledAutodownloadWifiPeriodEndTime;
+@property (nonatomic, retain) NSDate *scheduledManualDownloadWifiPeriodEndTime;
+@property (readonly) Class superclass;
 
 + (id)currentState;
 + (id)statePath;

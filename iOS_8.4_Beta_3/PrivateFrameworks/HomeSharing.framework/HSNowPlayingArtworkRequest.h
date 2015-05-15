@@ -11,9 +11,9 @@
     unsigned int _playQueueIndex;
 }
 
-@property(assign,readonly) unsigned int interfaceID;
-@property(assign,readonly) struct CGSize { double x1; double x2; } maximumSize;
-@property(assign,readonly) unsigned int playQueueIndex;
+@property (nonatomic, readonly) unsigned int interfaceID;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } maximumSize;
+@property (nonatomic, readonly) unsigned int playQueueIndex;
 
 - (id)canonicalResponseForResponse:(id)arg1;
 - (id)initWithInterfaceID:(unsigned int)arg1 maximumSize:(struct CGSize { double x1; double x2; })arg2 playQueueIndex:(unsigned int)arg3;

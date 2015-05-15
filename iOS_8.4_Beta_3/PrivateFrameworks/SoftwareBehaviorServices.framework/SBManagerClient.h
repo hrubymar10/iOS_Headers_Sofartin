@@ -11,9 +11,9 @@
     bool _serverIsExiting;
 }
 
-@property(assign,readwrite) int clientType;
-@property(assign,readwrite) <SBManagerClientDelegate> * delegate;
-@property(assign,readwrite) struct dispatch_queue_s { }* queue;
+@property (nonatomic) int clientType;
+@property (nonatomic) <SBManagerClientDelegate> *delegate;
+@property struct dispatch_queue_s { }*queue;
 
 - (void)_invalidateConnection;
 - (id)_remoteInterface;

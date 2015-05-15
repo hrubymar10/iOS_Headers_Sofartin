@@ -28,11 +28,11 @@
     unsigned int _zonesSize;
 }
 
-@property(assign,readwrite) bool exactScanningEnabled;
-@property(assign,readonly) unsigned int mallocNodeCount;
-@property(assign,readwrite) unsigned long long maxInteriorOffset;
-@property(assign,readonly) unsigned int nodeCount;
-@property(assign,readwrite) int scanningMask;
+@property (nonatomic) bool exactScanningEnabled;
+@property (nonatomic, readonly) unsigned int mallocNodeCount;
+@property (nonatomic) unsigned long long maxInteriorOffset;
+@property (nonatomic, readonly) unsigned int nodeCount;
+@property (nonatomic) int scanningMask;
 
 - (void)_callRemoteMallocEnumerators:(unsigned int)arg1 block:(id)arg2;
 - (void)_fixupBlockIsas;

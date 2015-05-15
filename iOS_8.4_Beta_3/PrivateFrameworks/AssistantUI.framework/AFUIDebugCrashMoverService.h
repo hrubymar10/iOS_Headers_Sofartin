@@ -6,7 +6,7 @@
     NSObject<OS_xpc_object> *_connection;
 }
 
-@property(getter=_connection,assign,readonly) NSObject<OS_xpc_object> * connection;
+@property (getter=_connection, nonatomic, readonly) NSObject<OS_xpc_object> *connection;
 
 - (void).cxx_destruct;
 - (id)_connection;

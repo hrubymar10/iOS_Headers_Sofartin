@@ -7,9 +7,9 @@
     NSMutableArray *_queryResults;
 }
 
-@property(assign,retain) NSData * continuationMarker;
-@property(assign,readonly) bool hasContinuationMarker;
-@property(assign,retain) NSMutableArray * queryResults;
+@property (nonatomic, retain) NSData *continuationMarker;
+@property (nonatomic, readonly) bool hasContinuationMarker;
+@property (nonatomic, retain) NSMutableArray *queryResults;
 
 - (void).cxx_destruct;
 - (void)addQueryResults:(id)arg1;

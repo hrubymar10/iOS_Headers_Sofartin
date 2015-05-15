@@ -13,12 +13,12 @@
     id _reserved;
 }
 
-@property(assign,retain) CAAnimation * animation;
-@property(assign,readwrite) double inputBias;
-@property(assign,readwrite) long long inputMode;
-@property(assign,readwrite) SCNNode * inputOrigin;
-@property(assign,copy) NSString * inputProperty;
-@property(assign,readwrite) double inputScale;
+@property (nonatomic, retain) CAAnimation *animation;
+@property (nonatomic) double inputBias;
+@property (nonatomic) long long inputMode;
+@property (nonatomic) SCNNode *inputOrigin;
+@property (nonatomic, copy) NSString *inputProperty;
+@property (nonatomic) double inputScale;
 
 + (id)SCNJSExportProtocol;
 + (id)controllerWithAnimation:(id)arg1;

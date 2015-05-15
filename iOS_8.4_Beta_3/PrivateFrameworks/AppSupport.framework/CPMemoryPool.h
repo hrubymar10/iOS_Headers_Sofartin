@@ -12,7 +12,7 @@
     unsigned long long _slotLength;
 }
 
-@property(assign,readonly) unsigned long long slotLength;
+@property (nonatomic, readonly) unsigned long long slotLength;
 
 - (void)dealloc;
 - (id)initWithLabel:(const char *)arg1 slotLength:(unsigned long long)arg2;

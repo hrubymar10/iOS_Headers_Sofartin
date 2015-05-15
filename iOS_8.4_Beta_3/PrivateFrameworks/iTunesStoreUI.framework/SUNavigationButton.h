@@ -12,8 +12,8 @@
     } _accessoryViewInsets;
 }
 
-@property(assign,retain) UIView * accessoryView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } accessoryViewInsets;
+@property (nonatomic, retain) UIView *accessoryView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } accessoryViewInsets;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_accessoryViewRectForContentRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 - (id)accessoryView;

@@ -10,11 +10,11 @@
     int _rowBaseOrOffset;
 }
 
-@property(assign,readwrite) unsigned long long baseFormulaIndex;
-@property(assign,readonly) EDReference * baseFormulaRange;
-@property(assign,readwrite) int columnBaseOrOffset;
-@property(assign,readwrite) bool forceNonBaseFormula;
-@property(assign,readwrite) int rowBaseOrOffset;
+@property (nonatomic) unsigned long long baseFormulaIndex;
+@property (nonatomic, readonly) EDReference *baseFormulaRange;
+@property (nonatomic) int columnBaseOrOffset;
+@property (nonatomic) bool forceNonBaseFormula;
+@property (nonatomic) int rowBaseOrOffset;
 
 - (void)archiveByAppendingToMutableData:(struct __CFData { }*)arg1;
 - (unsigned long long)baseFormulaIndex;

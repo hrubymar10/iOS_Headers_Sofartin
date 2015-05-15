@@ -18,20 +18,20 @@
     NSString *_transition;
 }
 
-@property(assign,readwrite) bool hasRepeat;
-@property(assign,readonly) bool hasSessionUUID;
-@property(assign,readwrite) bool hasSlideMs;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,readonly) bool hasTheme;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readonly) bool hasTransition;
-@property(assign,readwrite) unsigned int repeat;
-@property(assign,retain) NSString * sessionUUID;
-@property(assign,readwrite) unsigned int slideMs;
-@property(assign,readwrite) int status;
-@property(assign,retain) NSString * theme;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,retain) NSString * transition;
+@property (nonatomic) bool hasRepeat;
+@property (nonatomic, readonly) bool hasSessionUUID;
+@property (nonatomic) bool hasSlideMs;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic, readonly) bool hasTheme;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, readonly) bool hasTransition;
+@property (nonatomic) unsigned int repeat;
+@property (nonatomic, retain) NSString *sessionUUID;
+@property (nonatomic) unsigned int slideMs;
+@property (nonatomic) int status;
+@property (nonatomic, retain) NSString *theme;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic, retain) NSString *transition;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

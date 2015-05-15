@@ -21,15 +21,15 @@
     bool _suspended;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) UIColor * defaultBackgroundColorWhileHosting;
-@property(assign,copy) UIColor * defaultBackgroundColorWhileNotHosting;
-@property(assign,readwrite) <FBWindowContextHostManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * identifier;
-@property(assign,readonly) FBScene * scene;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, copy) UIColor *defaultBackgroundColorWhileHosting;
+@property (nonatomic, copy) UIColor *defaultBackgroundColorWhileNotHosting;
+@property (nonatomic) <FBWindowContextHostManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, readonly) FBScene *scene;
+@property (readonly) Class superclass;
 
 - (void)_applyRequesterInfo:(id)arg1;
 - (id)_hostViewForRequester:(id)arg1;

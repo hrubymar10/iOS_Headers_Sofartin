@@ -6,7 +6,7 @@
     NSData *tokenData;
 }
 
-@property(assign,copy) NSData * tokenData;
+@property (nonatomic, copy) NSData *tokenData;
 
 - (void).cxx_destruct;
 - (void)setTokenData:(id)arg1;

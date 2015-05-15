@@ -13,16 +13,16 @@
     int _type;
 }
 
-@property(assign,retain) NSString * etag;
-@property(assign,readonly) bool hasEtag;
-@property(assign,readonly) bool hasRecord;
-@property(assign,readonly) bool hasRecordIdentifier;
-@property(assign,readonly) bool hasRecordType;
-@property(assign,readwrite) bool hasType;
-@property(assign,retain) CKDPRecord * record;
-@property(assign,retain) CKDPRecordIdentifier * recordIdentifier;
-@property(assign,retain) CKDPRecordType * recordType;
-@property(assign,readwrite) int type;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, readonly) bool hasEtag;
+@property (nonatomic, readonly) bool hasRecord;
+@property (nonatomic, readonly) bool hasRecordIdentifier;
+@property (nonatomic, readonly) bool hasRecordType;
+@property (nonatomic) bool hasType;
+@property (nonatomic, retain) CKDPRecord *record;
+@property (nonatomic, retain) CKDPRecordIdentifier *recordIdentifier;
+@property (nonatomic, retain) CKDPRecordType *recordType;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

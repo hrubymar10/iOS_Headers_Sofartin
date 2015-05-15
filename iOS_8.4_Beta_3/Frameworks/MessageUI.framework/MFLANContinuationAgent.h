@@ -10,8 +10,8 @@
     struct __CFSocket { } *_socket;
 }
 
-@property(assign,readonly) MFLANContinuationContext * continuationContext;
-@property(assign,readonly) bool serverRunning;
+@property (nonatomic, readonly) MFLANContinuationContext *continuationContext;
+@property (nonatomic, readonly) bool serverRunning;
 
 - (void)_cleanupRunLoopSource;
 - (void)_cleanupSocket;

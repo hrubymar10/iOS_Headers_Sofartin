@@ -8,7 +8,7 @@
     bool shouldContinue;
 }
 
-@property(assign,copy) id errorHandler;
+@property (copy) id errorHandler;
 
 - (void)dealloc;
 - (id)directoryAttributes;

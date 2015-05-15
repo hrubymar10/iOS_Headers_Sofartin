@@ -4,10 +4,10 @@
 
 @interface DOMWheelEvent : DOMMouseEvent
 
-@property(assign,readonly) bool isHorizontal;
-@property(assign,readonly) int wheelDelta;
-@property(assign,readonly) int wheelDeltaX;
-@property(assign,readonly) int wheelDeltaY;
+@property (readonly) bool isHorizontal;
+@property (readonly) int wheelDelta;
+@property (readonly) int wheelDeltaX;
+@property (readonly) int wheelDeltaY;
 
 - (unsigned int)deltaMode;
 - (double)deltaX;

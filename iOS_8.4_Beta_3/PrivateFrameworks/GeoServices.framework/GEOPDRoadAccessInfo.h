@@ -6,7 +6,7 @@
     NSMutableArray *_roadAccessPoints;
 }
 
-@property(assign,retain) NSMutableArray * roadAccessPoints;
+@property (nonatomic, retain) NSMutableArray *roadAccessPoints;
 
 + (id)roadAccessInfoForPlaceData:(id)arg1;
 

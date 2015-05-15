@@ -8,14 +8,14 @@
     NSArray *_steps;
 }
 
-@property(assign,readonly) NSArray * advisoryNotices;
-@property(assign,readonly) double distance;
-@property(assign,readonly) double expectedTravelTime;
-@property(getter=_geoRoute,assign,readonly) GEORoute * geoRoute;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) MKPolyline * polyline;
-@property(assign,readonly) NSArray * steps;
-@property(assign,readonly) unsigned long long transportType;
+@property (nonatomic, readonly) NSArray *advisoryNotices;
+@property (nonatomic, readonly) double distance;
+@property (nonatomic, readonly) double expectedTravelTime;
+@property (getter=_geoRoute, nonatomic, readonly) GEORoute *geoRoute;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) MKPolyline *polyline;
+@property (nonatomic, readonly) NSArray *steps;
+@property (nonatomic, readonly) unsigned long long transportType;
 
 - (void).cxx_destruct;
 - (id)_geoRoute;

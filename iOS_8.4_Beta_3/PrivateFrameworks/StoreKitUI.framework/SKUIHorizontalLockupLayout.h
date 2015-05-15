@@ -14,8 +14,8 @@
     double _tallestNonMetadataColumnHeight;
 }
 
-@property(assign,readonly) NSArray * columns;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } metadataColumnEdgeInsets;
+@property (nonatomic, readonly) NSArray *columns;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } metadataColumnEdgeInsets;
 
 + (id)fontForButtonViewElement:(id)arg1 context:(id)arg2;
 + (id)fontForLabelViewElement:(id)arg1 context:(id)arg2;

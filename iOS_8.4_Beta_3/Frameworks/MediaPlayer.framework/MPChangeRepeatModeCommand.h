@@ -6,7 +6,7 @@
     unsigned long long _currentRepeatType;
 }
 
-@property(assign,readwrite) unsigned long long currentRepeatType;
+@property (nonatomic) unsigned long long currentRepeatType;
 
 - (id)_mediaRemoteCommandInfoOptions;
 - (unsigned long long)currentRepeatType;

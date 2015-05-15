@@ -9,8 +9,8 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIView * collectionView;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) UIView *collectionView;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)collectionView;

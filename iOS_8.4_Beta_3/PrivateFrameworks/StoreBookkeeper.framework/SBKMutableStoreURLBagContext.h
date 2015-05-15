@@ -4,13 +4,13 @@
 
 @interface SBKMutableStoreURLBagContext : SBKStoreURLBagContext
 
-@property(assign,copy) NSString * domain;
-@property(assign,readwrite) bool domainDisabled;
-@property(assign,readwrite) double pollingIntervalInSeconds;
-@property(assign,retain) NSURL * pullAllKeyValueRequestURL;
-@property(assign,retain) NSURL * pullKeyValueRequestURL;
-@property(assign,retain) NSURL * pushAllKeyValueRequestURL;
-@property(assign,retain) NSURL * pushKeyValueRequestURL;
-@property(assign,retain) NSURL * syncRequestURL;
+@property (copy) NSString *domain;
+@property bool domainDisabled;
+@property double pollingIntervalInSeconds;
+@property (retain) NSURL *pullAllKeyValueRequestURL;
+@property (retain) NSURL *pullKeyValueRequestURL;
+@property (retain) NSURL *pushAllKeyValueRequestURL;
+@property (retain) NSURL *pushKeyValueRequestURL;
+@property (retain) NSURL *syncRequestURL;
 
 @end

@@ -9,8 +9,8 @@
     int mListId;
 }
 
-@property(assign,readonly) int listDefinitionId;
-@property(assign,readonly) int listId;
+@property (nonatomic, readonly) int listDefinitionId;
+@property (nonatomic, readonly) int listId;
 
 - (id)addLevelOverrideWithLevel:(unsigned char)arg1;
 - (void)dealloc;

@@ -9,8 +9,8 @@
     double _transitionProgress;
 }
 
-@property(assign,readwrite) double factor;
-@property(assign,readwrite) double scale;
+@property (nonatomic) double factor;
+@property (nonatomic) double scale;
 
 - (void)_updateInputBounds;
 - (void)applySettings:(id)arg1;

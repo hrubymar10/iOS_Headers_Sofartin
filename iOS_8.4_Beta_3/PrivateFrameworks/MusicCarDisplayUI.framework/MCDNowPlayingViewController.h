@@ -19,13 +19,13 @@
     UIViewController *_transportViewController;
 }
 
-@property(assign,readonly) UITapGestureRecognizer * backPressRecognizer;
-@property(assign,readwrite) <MCDNowPlayingViewControllerDataSource> * dataSource;
-@property(assign,readwrite) <MCDNowPlayingViewControllerDelegate> * delegate;
-@property(assign,readonly) UITapGestureRecognizer * knobPressRecognizer;
-@property(assign,readonly) MCDNowPlayingView * nowPlayingView;
-@property(assign,readonly) MCDPlayModeControlView * playModeControlView;
-@property(assign,readonly) MCDTransportControlView * transportControlView;
+@property (nonatomic, readonly) UITapGestureRecognizer *backPressRecognizer;
+@property (nonatomic) <MCDNowPlayingViewControllerDataSource> *dataSource;
+@property (nonatomic) <MCDNowPlayingViewControllerDelegate> *delegate;
+@property (nonatomic, readonly) UITapGestureRecognizer *knobPressRecognizer;
+@property (nonatomic, readonly) MCDNowPlayingView *nowPlayingView;
+@property (nonatomic, readonly) MCDPlayModeControlView *playModeControlView;
+@property (nonatomic, readonly) MCDTransportControlView *transportControlView;
 
 - (void).cxx_destruct;
 - (void)_fastForwardButtonTouchDown:(id)arg1;

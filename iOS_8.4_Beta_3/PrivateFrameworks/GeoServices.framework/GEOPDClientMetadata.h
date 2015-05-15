@@ -17,21 +17,21 @@
     unsigned int _timeSinceMapEnteredForeground;
 }
 
-@property(assign,retain) NSString * deviceCountryCode;
-@property(assign,retain) NSString * deviceDisplayLocale;
-@property(assign,retain) NSMutableArray * deviceInstalledKeyboardLocales;
-@property(assign,retain) NSString * deviceKeyboardLocale;
-@property(assign,retain) GEOLatLng * deviceLocation;
-@property(assign,retain) NSString * deviceSpokenLocale;
-@property(assign,readonly) bool hasDeviceCountryCode;
-@property(assign,readonly) bool hasDeviceDisplayLocale;
-@property(assign,readonly) bool hasDeviceKeyboardLocale;
-@property(assign,readonly) bool hasDeviceLocation;
-@property(assign,readonly) bool hasDeviceSpokenLocale;
-@property(assign,readwrite) bool hasResultListAttributionSupport;
-@property(assign,readwrite) bool hasTimeSinceMapEnteredForeground;
-@property(assign,readwrite) int resultListAttributionSupport;
-@property(assign,readwrite) unsigned int timeSinceMapEnteredForeground;
+@property (nonatomic, retain) NSString *deviceCountryCode;
+@property (nonatomic, retain) NSString *deviceDisplayLocale;
+@property (nonatomic, retain) NSMutableArray *deviceInstalledKeyboardLocales;
+@property (nonatomic, retain) NSString *deviceKeyboardLocale;
+@property (nonatomic, retain) GEOLatLng *deviceLocation;
+@property (nonatomic, retain) NSString *deviceSpokenLocale;
+@property (nonatomic, readonly) bool hasDeviceCountryCode;
+@property (nonatomic, readonly) bool hasDeviceDisplayLocale;
+@property (nonatomic, readonly) bool hasDeviceKeyboardLocale;
+@property (nonatomic, readonly) bool hasDeviceLocation;
+@property (nonatomic, readonly) bool hasDeviceSpokenLocale;
+@property (nonatomic) bool hasResultListAttributionSupport;
+@property (nonatomic) bool hasTimeSinceMapEnteredForeground;
+@property (nonatomic) int resultListAttributionSupport;
+@property (nonatomic) unsigned int timeSinceMapEnteredForeground;
 
 - (void)addDeviceInstalledKeyboardLocale:(id)arg1;
 - (void)clearDeviceInstalledKeyboardLocales;

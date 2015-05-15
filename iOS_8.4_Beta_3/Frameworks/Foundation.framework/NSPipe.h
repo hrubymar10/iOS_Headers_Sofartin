@@ -4,8 +4,8 @@
 
 @interface NSPipe : NSObject
 
-@property(assign,retain) NSFileHandle * fileHandleForReading;
-@property(assign,retain) NSFileHandle * fileHandleForWriting;
+@property (readonly, retain) NSFileHandle *fileHandleForReading;
+@property (readonly, retain) NSFileHandle *fileHandleForWriting;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)pipe;

@@ -8,9 +8,9 @@
     Class _parseClass;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * nameSpace;
-@property(assign,readwrite) Class parseClass;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *nameSpace;
+@property (nonatomic) Class parseClass;
 
 - (void)dealloc;
 - (id)description;

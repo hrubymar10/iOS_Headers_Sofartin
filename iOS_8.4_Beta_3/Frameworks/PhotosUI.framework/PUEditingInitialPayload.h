@@ -14,15 +14,15 @@
     NSURL *_videoURL;
 }
 
-@property(assign,retain) PHAdjustmentData * adjustmentData;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,retain) NSData * displaySizeImageData;
-@property(assign,retain) CLLocation * location;
-@property(assign,readwrite) unsigned long long mediaSubtypes;
-@property(assign,readwrite) long long mediaType;
-@property(assign,retain) NSData * placeholderImageData;
-@property(assign,retain) NSString * videoPathSandboxExtensionToken;
-@property(assign,retain) NSURL * videoURL;
+@property (nonatomic, retain) PHAdjustmentData *adjustmentData;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic, retain) NSData *displaySizeImageData;
+@property (nonatomic, retain) CLLocation *location;
+@property (nonatomic) unsigned long long mediaSubtypes;
+@property (nonatomic) long long mediaType;
+@property (nonatomic, retain) NSData *placeholderImageData;
+@property (nonatomic, retain) NSString *videoPathSandboxExtensionToken;
+@property (nonatomic, retain) NSURL *videoURL;
 
 + (bool)supportsSecureCoding;
 

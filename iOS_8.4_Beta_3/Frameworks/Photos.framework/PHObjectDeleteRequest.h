@@ -10,16 +10,16 @@
     NSString *_uuid;
 }
 
-@property(assign,readonly) NSString * clientName;
-@property(assign,readonly) int clientProcessID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEntitled,assign,readonly) bool entitled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * managedEntityName;
-@property(assign,readonly) NSManagedObjectID * objectID;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * uuid;
+@property (nonatomic, readonly) NSString *clientName;
+@property (nonatomic, readonly) int clientProcessID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEntitled, nonatomic, readonly) bool entitled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *managedEntityName;
+@property (nonatomic, readonly) NSManagedObjectID *objectID;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *uuid;
 
 + (id)deleteRequestForObject:(id)arg1;
 

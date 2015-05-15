@@ -9,10 +9,10 @@
     NSString *_keyPath;
 }
 
-@property(assign,readonly) bool isAnimationKeyDoubleSided;
-@property(assign,readonly) bool isAnimationKeyHidden;
-@property(assign,readonly) bool isAnimationKeyTypeOfRotation;
-@property(assign,readonly) NSString * keyPath;
+@property (nonatomic, readonly) bool isAnimationKeyDoubleSided;
+@property (nonatomic, readonly) bool isAnimationKeyHidden;
+@property (nonatomic, readonly) bool isAnimationKeyTypeOfRotation;
+@property (nonatomic, readonly) NSString *keyPath;
 
 - (id)initWithAnimation:(id)arg1;
 - (bool)isAnimationKeyDoubleSided;

@@ -17,17 +17,17 @@
     double _totalDuration;
 }
 
-@property(getter=isAlwaysLive,assign,readwrite) bool alwaysLive;
-@property(assign,readonly) long long currentScrubSpeed;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double effectiveCurrentTime;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) float rate;
-@property(assign,readwrite) <MusicPlaybackProgressScrubberDelegate> * scrubberDelegate;
-@property(getter=isScrubbingEnabled,assign,readwrite) bool scrubbingEnabled;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double totalDuration;
+@property (getter=isAlwaysLive, nonatomic) bool alwaysLive;
+@property (nonatomic, readonly) long long currentScrubSpeed;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double effectiveCurrentTime;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) float rate;
+@property (nonatomic) <MusicPlaybackProgressScrubberDelegate> *scrubberDelegate;
+@property (getter=isScrubbingEnabled, nonatomic) bool scrubbingEnabled;
+@property (readonly) Class superclass;
+@property (nonatomic) double totalDuration;
 
 - (void).cxx_destruct;
 - (void)_applicationWillEnterForegroundNotification:(id)arg1;

@@ -7,8 +7,8 @@
     <SiriUISnippetPlugin> *_snippetPlugin;
 }
 
-@property(assign,retain) NSBundle * bundle;
-@property(assign,retain) <SiriUISnippetPlugin> * snippetPlugin;
+@property (nonatomic, retain) NSBundle *bundle;
+@property (nonatomic, retain) <SiriUISnippetPlugin> *snippetPlugin;
 
 + (id)snippetPluginWithBundle:(id)arg1;
 

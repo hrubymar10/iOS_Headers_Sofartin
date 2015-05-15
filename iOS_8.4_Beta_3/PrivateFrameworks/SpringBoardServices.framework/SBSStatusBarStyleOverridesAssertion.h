@@ -9,14 +9,14 @@
     NSObject<OS_dispatch_queue> *_invalidationQueue;
 }
 
-@property(assign,retain) SBSStatusBarStyleOverridesAssertionData * assertionData;
-@property(assign,copy) id invalidationHandler;
-@property(assign,retain) NSRecursiveLock * invalidationLock;
-@property(assign,retain) NSObject<OS_dispatch_queue> * invalidationQueue;
-@property(assign,readonly) bool isExclusive;
-@property(assign,readonly) int pid;
-@property(assign,readonly) int statusBarStyleOverrides;
-@property(assign,copy) NSString * uniqueIdentifier;
+@property (nonatomic, retain) SBSStatusBarStyleOverridesAssertionData *assertionData;
+@property (nonatomic, copy) id invalidationHandler;
+@property (nonatomic, retain) NSRecursiveLock *invalidationLock;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *invalidationQueue;
+@property (nonatomic, readonly) bool isExclusive;
+@property (nonatomic, readonly) int pid;
+@property (nonatomic, readonly) int statusBarStyleOverrides;
+@property (nonatomic, readonly, copy) NSString *uniqueIdentifier;
 
 + (id)assertionWithStatusBarStyleOverrides:(int)arg1 forPID:(int)arg2 exclusive:(bool)arg3;
 + (id)backgroundLocationAssertionForPID:(int)arg1;

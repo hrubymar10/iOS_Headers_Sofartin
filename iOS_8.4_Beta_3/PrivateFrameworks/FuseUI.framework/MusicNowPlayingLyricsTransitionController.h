@@ -11,11 +11,11 @@
     id _transitionStartBlock;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isPresenting,assign,readwrite) bool presenting;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isPresenting, nonatomic) bool presenting;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_prepareTransitionForOverArtwork:(id)arg1;

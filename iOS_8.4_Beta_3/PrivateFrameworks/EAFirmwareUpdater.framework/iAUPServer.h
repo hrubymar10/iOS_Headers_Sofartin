@@ -14,8 +14,8 @@
     unsigned short objectBlockTransferSizes;
 }
 
-@property(assign,readwrite) <iAUPServerDelegate> * delegate;
-@property(assign,retain) FirmwareBundle * firmwareBundle;
+@property <iAUPServerDelegate> *delegate;
+@property (retain) FirmwareBundle *firmwareBundle;
 
 + (id)sharedServer;
 

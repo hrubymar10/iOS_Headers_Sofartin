@@ -11,12 +11,12 @@
     UIView *_sheetView;
 }
 
-@property(assign,readwrite) void* context;
-@property(assign,readwrite) id delegate;
-@property(assign,retain) UISpringBoardHostedView * remoteView;
-@property(assign,readwrite) long long returnCode;
-@property(assign,readwrite) SEL selector;
-@property(assign,retain) UIView * sheetView;
+@property (nonatomic) void*context;
+@property (nonatomic) id delegate;
+@property (nonatomic, retain) UISpringBoardHostedView *remoteView;
+@property (nonatomic) long long returnCode;
+@property (nonatomic) SEL selector;
+@property (nonatomic, retain) UIView *sheetView;
 
 - (void*)context;
 - (void)dealloc;

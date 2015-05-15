@@ -7,8 +7,8 @@
     NSString *_inviteCode;
 }
 
-@property(setter=setiTunesAccount:,assign,retain) SSAccount * iTunesAccount;
-@property(assign,copy) NSString * inviteCode;
+@property (setter=setiTunesAccount:, nonatomic, retain) SSAccount *iTunesAccount;
+@property (nonatomic, copy) NSString *inviteCode;
 
 - (void).cxx_destruct;
 - (id)iTunesAccount;

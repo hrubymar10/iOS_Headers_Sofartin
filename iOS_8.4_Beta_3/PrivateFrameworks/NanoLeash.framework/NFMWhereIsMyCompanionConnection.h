@@ -8,13 +8,13 @@
     NSXPCConnection *_serverConnection;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id playSoundAndLEDCompletion;
-@property(assign,copy) id playSoundCompletion;
-@property(assign,retain) NSXPCConnection * serverConnection;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id playSoundAndLEDCompletion;
+@property (nonatomic, copy) id playSoundCompletion;
+@property (retain) NSXPCConnection *serverConnection;
+@property (readonly) Class superclass;
 
 + (id)sharedDeviceConnection;
 

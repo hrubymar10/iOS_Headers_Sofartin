@@ -11,11 +11,11 @@
     UITouch *_touch;
 }
 
-@property(assign,readwrite) bool cloneForSecondDelivery;
-@property(assign,retain) UIEvent * event;
-@property(assign,retain) UITouch * stateWhenDelayed;
-@property(assign,retain) UITouch * stateWhenDelivered;
-@property(assign,retain) UITouch * touch;
+@property bool cloneForSecondDelivery;
+@property (retain) UIEvent *event;
+@property (retain) UITouch *stateWhenDelayed;
+@property (retain) UITouch *stateWhenDelivered;
+@property (retain) UITouch *touch;
 
 - (bool)cloneForSecondDelivery;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

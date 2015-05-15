@@ -10,10 +10,10 @@
     long long _value;
 }
 
-@property(assign,readonly) bool hasSample;
-@property(assign,readwrite) bool hasValue;
-@property(assign,retain) HDCodableSample * sample;
-@property(assign,readwrite) long long value;
+@property (nonatomic, readonly) bool hasSample;
+@property (nonatomic) bool hasValue;
+@property (nonatomic, retain) HDCodableSample *sample;
+@property (nonatomic) long long value;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

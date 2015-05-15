@@ -9,7 +9,7 @@
     } _repairTextureOffset;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } repairTextureOffset;
+@property (nonatomic) struct CGPoint { double x1; double x2; } repairTextureOffset;
 
 - (id)keysToEncode;
 - (struct CGPoint { double x1; double x2; })repairTextureOffset;

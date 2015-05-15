@@ -33,19 +33,19 @@
     int _type;
 }
 
-@property(assign,readwrite) int destinationWidth;
-@property(assign,readwrite) bool erase;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } lastPoint;
-@property(assign,readwrite) bool magicEdges;
-@property(assign,retain) NSMutableData * offsets;
-@property(assign,readwrite) float opacity;
-@property(assign,readwrite) float size;
-@property(assign,readwrite) float softness;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } startPoint;
-@property(assign,readwrite) bool startPointSet;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } strokeRect;
-@property(assign,readwrite) double timestamp;
-@property(assign,readwrite) int type;
+@property (nonatomic) int destinationWidth;
+@property (nonatomic) bool erase;
+@property (nonatomic) struct CGPoint { double x1; double x2; } lastPoint;
+@property (nonatomic) bool magicEdges;
+@property (nonatomic, retain) NSMutableData *offsets;
+@property (nonatomic) float opacity;
+@property (nonatomic) float size;
+@property (nonatomic) float softness;
+@property (nonatomic) struct CGPoint { double x1; double x2; } startPoint;
+@property (nonatomic) bool startPointSet;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } strokeRect;
+@property (nonatomic) double timestamp;
+@property (nonatomic) int type;
 
 - (void)addPoint:(struct CGPoint { double x1; double x2; })arg1;
 - (void)dealloc;

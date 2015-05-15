@@ -7,8 +7,8 @@
     NSString *_openString;
 }
 
-@property(assign,copy) NSString * closeString;
-@property(assign,copy) NSString * openString;
+@property (nonatomic, copy) NSString *closeString;
+@property (nonatomic, copy) NSString *openString;
 
 - (id)_binomialCoefficientContent;
 - (bool)_isBinomialCoefficient;

@@ -20,14 +20,14 @@
     NSTextContainer *_textContainer;
 }
 
-@property(assign,retain) CUICatalog * cuiCatalog;
-@property(assign,retain) CUIStyleEffectConfiguration * cuiStyleEffects;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) double defaultTighteningFactor;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(getter=_usesSimpleTextEffects,setter=_setUsesSimpleTextEffects:,assign,readwrite) bool usesSimpleTextEffects;
+@property (nonatomic, retain) CUICatalog *cuiCatalog;
+@property (nonatomic, retain) CUIStyleEffectConfiguration *cuiStyleEffects;
+@property (readonly, copy) NSString *debugDescription;
+@property double defaultTighteningFactor;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (getter=_usesSimpleTextEffects, setter=_setUsesSimpleTextEffects:, nonatomic) bool usesSimpleTextEffects;
 
 + (bool)_hasCustomSettings;
 + (void)_setHasCustomSettings:(bool)arg1;

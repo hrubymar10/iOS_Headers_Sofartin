@@ -7,8 +7,8 @@
     long long _status;
 }
 
-@property(assign,readwrite) void* session;
-@property(assign,readonly) long long status;
+@property void*session;
+@property (readonly) long long status;
 
 - (void)dealloc;
 - (void)destroySession;

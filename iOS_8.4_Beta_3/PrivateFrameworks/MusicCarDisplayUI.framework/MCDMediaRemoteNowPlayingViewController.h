@@ -33,12 +33,12 @@
     NSDictionary *_supportedCommands;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * expectedPlaybackBundleIdentifier;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSDictionary * nowPlayingInfo;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *expectedPlaybackBundleIdentifier;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSDictionary *nowPlayingInfo;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (unsigned int)_bestCommandForFastForwardPosition;

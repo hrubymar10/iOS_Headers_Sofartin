@@ -16,14 +16,14 @@
     double mTailSize;
 }
 
-@property(assign,readwrite) double cornerRadius;
-@property(assign,readonly) bool isTailAtCenter;
-@property(assign,readonly) double maxCornerRadius;
-@property(assign,readonly) double maxTailSize;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } tailCenter;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } tailKnobPosition;
-@property(assign,readwrite) double tailSize;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } tailSizeKnobPosition;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic, readonly) bool isTailAtCenter;
+@property (nonatomic, readonly) double maxCornerRadius;
+@property (nonatomic, readonly) double maxTailSize;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } tailCenter;
+@property (nonatomic) struct CGPoint { double x1; double x2; } tailKnobPosition;
+@property (nonatomic) double tailSize;
+@property (nonatomic) struct CGPoint { double x1; double x2; } tailSizeKnobPosition;
 
 + (id)calloutWithCornerRadius:(double)arg1 tailPosition:(struct CGPoint { double x1; double x2; })arg2 tailSize:(double)arg3 naturalSize:(struct CGSize { double x1; double x2; })arg4;
 + (id)quoteBubbleWithTailPosition:(struct CGPoint { double x1; double x2; })arg1 tailSize:(double)arg2 naturalSize:(struct CGSize { double x1; double x2; })arg3;

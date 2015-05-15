@@ -8,9 +8,9 @@
     bool _isFastCountable;
 }
 
-@property(assign,readonly) Class aggregateEntityClass;
-@property(assign,readonly) NSString * foreignPersistentIDProperty;
-@property(assign,readwrite) bool isFastCountable;
+@property (nonatomic, readonly) Class aggregateEntityClass;
+@property (nonatomic, readonly) NSString *foreignPersistentIDProperty;
+@property (nonatomic) bool isFastCountable;
 
 - (void).cxx_destruct;
 - (Class)aggregateEntityClass;

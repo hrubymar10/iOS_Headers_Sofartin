@@ -8,7 +8,7 @@
     UISwitch *_switch;
 }
 
-@property(assign,readwrite) <HKEmergencyCardEnabledDelegate> * enabledDelegate;
+@property (nonatomic) <HKEmergencyCardEnabledDelegate> *enabledDelegate;
 
 - (void).cxx_destruct;
 - (id)_cell;

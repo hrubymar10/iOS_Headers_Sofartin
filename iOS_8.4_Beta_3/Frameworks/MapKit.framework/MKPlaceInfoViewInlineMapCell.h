@@ -8,9 +8,9 @@
     NSArray *_marginConstraints;
 }
 
-@property(assign,retain) UIImage * inlineMap;
-@property(assign,retain) UIImageView * inlineMapView;
-@property(assign,retain) NSArray * marginConstraints;
+@property (nonatomic, retain) UIImage *inlineMap;
+@property (nonatomic, retain) UIImageView *inlineMapView;
+@property (nonatomic, retain) NSArray *marginConstraints;
 
 + (bool)requiresConstraintBasedLayout;
 + (id)reuseIdentifier;

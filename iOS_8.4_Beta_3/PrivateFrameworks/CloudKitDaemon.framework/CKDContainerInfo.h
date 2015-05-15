@@ -9,10 +9,10 @@
     NSURL *_publicShareServiceURL;
 }
 
-@property(assign,copy) NSString * containerScopedUserID;
-@property(assign,copy) NSURL * publicCloudDBURL;
-@property(assign,copy) NSURL * publicDeviceServiceURL;
-@property(assign,copy) NSURL * publicShareServiceURL;
+@property (nonatomic, copy) NSString *containerScopedUserID;
+@property (nonatomic, copy) NSURL *publicCloudDBURL;
+@property (nonatomic, copy) NSURL *publicDeviceServiceURL;
+@property (nonatomic, copy) NSURL *publicShareServiceURL;
 
 + (bool)supportsSecureCoding;
 

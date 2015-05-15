@@ -7,8 +7,8 @@
     NSArray *_objects;
 }
 
-@property(assign,retain) Class cellConfigurationClass;
-@property(assign,retain) NSArray * objects;
+@property (nonatomic, retain) Class cellConfigurationClass;
+@property (nonatomic, retain) NSArray *objects;
 
 - (Class)cellConfigurationClass;
 - (id)cellForIndexPath:(id)arg1;

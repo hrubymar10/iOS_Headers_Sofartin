@@ -7,8 +7,8 @@
     EDWorkbook *_workbook;
 }
 
-@property(assign,readwrite) EDSheet * currentSheet;
-@property(assign,retain) EDWorkbook * workbook;
+@property EDSheet *currentSheet;
+@property (retain) EDWorkbook *workbook;
 
 - (id)currentSheet;
 - (void)dealloc;

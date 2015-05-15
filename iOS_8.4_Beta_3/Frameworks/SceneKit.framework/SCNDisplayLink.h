@@ -16,8 +16,8 @@
     id _reserved;
 }
 
-@property(assign,readwrite) long long frameInterval;
-@property(getter=isPaused,assign,readwrite) bool paused;
+@property (nonatomic) long long frameInterval;
+@property (getter=isPaused, nonatomic) bool paused;
 
 - (void)_caDisplayLinkCallback;
 - (void)_callbackWithTime:(double)arg1 andDeltaTime:(double)arg2;

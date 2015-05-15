@@ -8,8 +8,8 @@
     double _tableHeight;
 }
 
-@property(assign,readonly) NSArray * caches;
-@property(assign,retain) id cellContext;
+@property (nonatomic, readonly) NSArray *caches;
+@property (nonatomic, retain) id cellContext;
 
 - (id)cacheForClass:(Class)arg1;
 - (id)caches;

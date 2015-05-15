@@ -7,8 +7,8 @@
     id _handler;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * completionQueue;
-@property(assign,copy) id handler;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *completionQueue;
+@property (nonatomic, copy) id handler;
 
 + (id)readCompletionTupleWithHandler:(id)arg1 queue:(id)arg2;
 

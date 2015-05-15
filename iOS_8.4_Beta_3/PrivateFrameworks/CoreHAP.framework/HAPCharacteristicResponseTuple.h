@@ -7,8 +7,8 @@
     NSError *_error;
 }
 
-@property(assign,retain) HAPCharacteristic * characteristic;
-@property(assign,retain) NSError * error;
+@property (nonatomic, retain) HAPCharacteristic *characteristic;
+@property (nonatomic, retain) NSError *error;
 
 + (id)responseTupleForCharacteristic:(id)arg1 error:(id)arg2;
 

@@ -6,7 +6,7 @@
     NSString *_alarmIdentifier;
 }
 
-@property(assign,copy) NSString * alarmIdentifier;
+@property (nonatomic, copy) NSString *alarmIdentifier;
 
 + (bool)supportsSecureCoding;
 

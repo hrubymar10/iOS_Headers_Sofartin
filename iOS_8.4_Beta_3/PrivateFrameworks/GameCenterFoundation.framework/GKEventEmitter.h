@@ -9,10 +9,10 @@
     NSMutableArray *_supportedProtocols;
 }
 
-@property(assign,retain) NSHashTable * listeners;
-@property(assign,retain) NSMutableArray * queuedEvents;
-@property(assign,readwrite) bool shouldQueue;
-@property(assign,retain) NSMutableArray * supportedProtocols;
+@property (nonatomic, retain) NSHashTable *listeners;
+@property (nonatomic, retain) NSMutableArray *queuedEvents;
+@property (nonatomic) bool shouldQueue;
+@property (nonatomic, retain) NSMutableArray *supportedProtocols;
 
 + (id)eventEmitterForProtocols:(id)arg1;
 + (id)eventEmitterForProtocols:(id)arg1 shouldQueue:(bool)arg2;

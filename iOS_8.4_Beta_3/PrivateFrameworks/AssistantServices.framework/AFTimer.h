@@ -7,8 +7,8 @@
     NSNumber *_value;
 }
 
-@property(assign,readwrite) long long state;
-@property(assign,copy) NSNumber * value;
+@property (nonatomic) long long state;
+@property (nonatomic, copy) NSNumber *value;
 
 + (bool)supportsSecureCoding;
 

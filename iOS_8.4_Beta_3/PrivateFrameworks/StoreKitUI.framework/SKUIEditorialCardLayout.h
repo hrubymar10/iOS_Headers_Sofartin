@@ -12,10 +12,10 @@
     double _secondaryLockupWidth;
 }
 
-@property(assign,readonly) NSArray * allLockups;
-@property(assign,readonly) SKUILockupViewElement * primaryLockup;
-@property(assign,readonly) struct CGSize { double x1; double x2; } primaryLockupSize;
-@property(assign,readonly) double secondaryLockupWidth;
+@property (nonatomic, readonly) NSArray *allLockups;
+@property (nonatomic, readonly) SKUILockupViewElement *primaryLockup;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } primaryLockupSize;
+@property (nonatomic, readonly) double secondaryLockupWidth;
 
 - (void).cxx_destruct;
 - (id)allLockups;

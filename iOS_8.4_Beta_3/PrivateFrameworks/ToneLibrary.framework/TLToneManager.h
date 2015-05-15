@@ -15,22 +15,22 @@
     NPSDomainAccessor *_transientNanoPreferencesDomainAccessor;
 }
 
-@property(setter=_setAccessQueue:,assign,retain) TLAccessQueue * _accessQueue;
-@property(setter=_setAlertTonesByIdentifier:,assign,retain) NSMutableDictionary * _alertTonesByIdentifier;
-@property(setter=_setCachedTonePreferences:,assign,retain) NSDictionary * _cachedTonePreferences;
-@property(assign,readonly) NSString * _deviceITunesRingtoneDirectory;
-@property(assign,readonly) NSString * _deviceITunesRingtoneInformationPlist;
-@property(assign,readonly) NSString * _iTunesRingtoneDirectory;
-@property(assign,readonly) NSString * _iTunesRingtoneInformationPlist;
-@property(setter=_setITunesToneIdentifiersByPID:,assign,retain) NSMutableDictionary * _iTunesToneIdentifiersByPID;
-@property(setter=_setITunesTonesByIdentifier:,assign,retain) NSMutableDictionary * _iTunesTonesByIdentifier;
-@property(setter=_setPreviewBehaviorsByDefaultIdentifier:,assign,retain) NSDictionary * _previewBehaviorsByDefaultIdentifier;
-@property(assign,readonly) NSString * _rootDirectory;
-@property(setter=_setShouldIgnoreNextToneDidChangeNotification:,assign,readwrite) bool _shouldIgnoreNextToneDidChangeNotification;
-@property(setter=_setShouldUseServiceToAccessTonePreferences:,assign,readwrite) bool _shouldUseServiceToAccessTonePreferences;
-@property(assign,readonly) NSString * _systemRingtoneDirectory;
-@property(setter=_setToneIdentifierAliasMap:,assign,retain) NSDictionary * _toneIdentifierAliasMap;
-@property(setter=_setTransientNanoPreferencesDomainAccessor:,assign,retain) NPSDomainAccessor * _transientNanoPreferencesDomainAccessor;
+@property (setter=_setAccessQueue:, retain) TLAccessQueue *_accessQueue;
+@property (setter=_setAlertTonesByIdentifier:, nonatomic, retain) NSMutableDictionary *_alertTonesByIdentifier;
+@property (setter=_setCachedTonePreferences:, nonatomic, retain) NSDictionary *_cachedTonePreferences;
+@property (nonatomic, readonly) NSString *_deviceITunesRingtoneDirectory;
+@property (nonatomic, readonly) NSString *_deviceITunesRingtoneInformationPlist;
+@property (nonatomic, readonly) NSString *_iTunesRingtoneDirectory;
+@property (nonatomic, readonly) NSString *_iTunesRingtoneInformationPlist;
+@property (setter=_setITunesToneIdentifiersByPID:, nonatomic, retain) NSMutableDictionary *_iTunesToneIdentifiersByPID;
+@property (setter=_setITunesTonesByIdentifier:, nonatomic, retain) NSMutableDictionary *_iTunesTonesByIdentifier;
+@property (setter=_setPreviewBehaviorsByDefaultIdentifier:, nonatomic, retain) NSDictionary *_previewBehaviorsByDefaultIdentifier;
+@property (nonatomic, readonly) NSString *_rootDirectory;
+@property (setter=_setShouldIgnoreNextToneDidChangeNotification:, nonatomic) bool _shouldIgnoreNextToneDidChangeNotification;
+@property (setter=_setShouldUseServiceToAccessTonePreferences:, nonatomic) bool _shouldUseServiceToAccessTonePreferences;
+@property (nonatomic, readonly) NSString *_systemRingtoneDirectory;
+@property (setter=_setToneIdentifierAliasMap:, nonatomic, retain) NSDictionary *_toneIdentifierAliasMap;
+@property (setter=_setTransientNanoPreferencesDomainAccessor:, nonatomic, retain) NPSDomainAccessor *_transientNanoPreferencesDomainAccessor;
 
 + (struct __CFString { }*)_copySharedResourcesPreferencesDomainForDomain:(struct __CFString { }*)arg1;
 + (id)_defaultToneIdentifierForAlertType:(int)arg1 accountIdentifier:(id)arg2;

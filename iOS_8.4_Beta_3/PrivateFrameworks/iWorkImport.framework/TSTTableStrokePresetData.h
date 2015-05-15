@@ -9,10 +9,10 @@
     unsigned int mVisibleMask;
 }
 
-@property(assign,retain) TSDStroke * exteriorStroke;
-@property(assign,retain) TSDStroke * horizontalStroke;
-@property(assign,readwrite) unsigned int mask;
-@property(assign,retain) TSDStroke * verticalStroke;
+@property (nonatomic, retain) TSDStroke *exteriorStroke;
+@property (nonatomic, retain) TSDStroke *horizontalStroke;
+@property (nonatomic) unsigned int mask;
+@property (nonatomic, retain) TSDStroke *verticalStroke;
 
 - (void)dealloc;
 - (id)exteriorStroke;

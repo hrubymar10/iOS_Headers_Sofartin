@@ -7,7 +7,7 @@
     NSMutableSet *_adjustmentRecords;
 }
 
-@property(assign,readwrite) bool active;
+@property (nonatomic) bool active;
 
 + (id)sharedAdjuster;
 

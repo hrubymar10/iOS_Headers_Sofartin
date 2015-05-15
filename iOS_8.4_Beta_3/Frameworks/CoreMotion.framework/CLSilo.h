@@ -6,7 +6,7 @@
     NSString *_identifier;
 }
 
-@property(assign,readonly) NSString * identifier;
+@property (nonatomic, readonly) NSString *identifier;
 
 + (id)main;
 

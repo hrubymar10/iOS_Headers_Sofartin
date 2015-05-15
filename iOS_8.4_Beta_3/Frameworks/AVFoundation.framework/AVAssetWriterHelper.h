@@ -7,23 +7,23 @@
     AVWeakReference *_weakReferenceToAssetWriter;
 }
 
-@property(assign,readonly) NSArray * availableMediaTypes;
-@property(assign,readonly) AVAssetWriterConfigurationState * configurationState;
-@property(assign,copy) NSURL * directoryForTemporaryFiles;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) NSArray * inputGroups;
-@property(assign,readonly) NSArray * inputs;
-@property(assign,readonly) AVMediaFileType * mediaFileType;
-@property(assign,copy) NSArray * metadata;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } movieFragmentInterval;
-@property(assign,readwrite) int movieTimeScale;
-@property(assign,readonly) NSURL * outputURL;
-@property(assign,readwrite) float preferredRate;
-@property(assign,readwrite) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } preferredTransform;
-@property(assign,readwrite) float preferredVolume;
-@property(assign,readwrite) bool shouldOptimizeForNetworkUse;
-@property(assign,readonly) long long status;
-@property(assign,retain) AVWeakReference * weakReferenceToAssetWriter;
+@property (nonatomic, readonly) NSArray *availableMediaTypes;
+@property (nonatomic, readonly) AVAssetWriterConfigurationState *configurationState;
+@property (nonatomic, copy) NSURL *directoryForTemporaryFiles;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) NSArray *inputGroups;
+@property (nonatomic, readonly) NSArray *inputs;
+@property (nonatomic, readonly) AVMediaFileType *mediaFileType;
+@property (nonatomic, copy) NSArray *metadata;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } movieFragmentInterval;
+@property (nonatomic) int movieTimeScale;
+@property (nonatomic, readonly) NSURL *outputURL;
+@property (nonatomic) float preferredRate;
+@property (nonatomic) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } preferredTransform;
+@property (nonatomic) float preferredVolume;
+@property (nonatomic) bool shouldOptimizeForNetworkUse;
+@property (nonatomic, readonly) long long status;
+@property (retain) AVWeakReference *weakReferenceToAssetWriter;
 
 - (bool)_canApplyOutputSettings:(id)arg1 forMediaType:(id)arg2 sourceFormat:(struct opaqueCMFormatDescription { }*)arg3 exceptionReason:(id*)arg4;
 - (bool)_canApplyTrackReferences:(id)arg1 exceptionReason:(id*)arg2;

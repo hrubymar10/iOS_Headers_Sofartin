@@ -6,7 +6,7 @@
     NSString *_removalPasscode;
 }
 
-@property(assign,retain) NSString * removalPasscode;
+@property (nonatomic, retain) NSString *removalPasscode;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

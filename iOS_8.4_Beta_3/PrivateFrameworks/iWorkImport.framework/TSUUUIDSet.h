@@ -31,8 +31,8 @@
     } _uuidSet;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) unsigned int index;
+@property (readonly) unsigned long long count;
+@property (readonly) unsigned int index;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

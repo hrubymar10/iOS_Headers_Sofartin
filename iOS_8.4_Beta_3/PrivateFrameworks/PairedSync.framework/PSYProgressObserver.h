@@ -15,15 +15,15 @@
     double _totalProgress;
 }
 
-@property(assign,copy) NSDictionary * activityErrors;
-@property(assign,retain) NSString * activityLabel;
-@property(assign,readwrite) double activityProgress;
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,readwrite) <PSYProgressObserverDelegate> * delegate;
-@property(assign,retain) PSProgressClient * progressClient;
-@property(assign,readonly) long long progressObserverState;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readwrite) double totalProgress;
+@property (nonatomic, readonly, copy) NSDictionary *activityErrors;
+@property (nonatomic, retain) NSString *activityLabel;
+@property (nonatomic) double activityProgress;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (nonatomic) <PSYProgressObserverDelegate> *delegate;
+@property (nonatomic, retain) PSProgressClient *progressClient;
+@property (nonatomic, readonly) long long progressObserverState;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic) double totalProgress;
 
 - (void).cxx_destruct;
 - (void)_connectionInterrupted;

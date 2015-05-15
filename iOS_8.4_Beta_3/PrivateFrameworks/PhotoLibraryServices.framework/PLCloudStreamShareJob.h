@@ -10,11 +10,11 @@
     NSArray *_recipientsInfo;
 }
 
-@property(assign,retain) NSString * albumCloudGUID;
-@property(assign,retain) NSString * albumName;
-@property(assign,retain) NSString * commentText;
-@property(assign,retain) NSArray * mediaSources;
-@property(assign,retain) NSArray * recipientsInfo;
+@property (nonatomic, retain) NSString *albumCloudGUID;
+@property (nonatomic, retain) NSString *albumName;
+@property (nonatomic, retain) NSString *commentText;
+@property (nonatomic, retain) NSArray *mediaSources;
+@property (nonatomic, retain) NSArray *recipientsInfo;
 
 + (void)publishMediaFromSources:(id)arg1 toNewSharedAlbumWithName:(id)arg2 withCommentText:(id)arg3 recipients:(id)arg4;
 + (void)publishMediaFromSources:(id)arg1 toSharedAlbum:(id)arg2 withCommentText:(id)arg3;

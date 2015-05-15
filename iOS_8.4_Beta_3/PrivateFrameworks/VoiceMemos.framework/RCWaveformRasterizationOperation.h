@@ -14,10 +14,10 @@
     RCGLWaveformRenderer *_renderer;
 }
 
-@property(assign,copy) RCUIConfiguration * UIConfiguration;
-@property(assign,readonly) RCComposition * composition;
-@property(assign,readonly) struct CGSize { double x1; double x2; } imageSize;
-@property(assign,readonly) UIImage * rasterizedImage;
+@property (nonatomic, copy) RCUIConfiguration *UIConfiguration;
+@property (nonatomic, readonly) RCComposition *composition;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic, readonly) UIImage *rasterizedImage;
 
 + (id)waveformImageForComposition:(id)arg1 imageSize:(struct CGSize { double x1; double x2; })arg2;
 

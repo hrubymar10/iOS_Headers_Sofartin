@@ -18,7 +18,7 @@
     bool _shouldUsePolyShiftFunction;
 }
 
-@property(assign,readwrite) struct { double x1; double x2; } originalCoordinate;
+@property (nonatomic) struct { double x1; double x2; } originalCoordinate;
 
 - (id)initWithLocationShiftResponse:(id)arg1 originalCoordinate:(struct { double x1; double x2; })arg2;
 - (id)initWithPolyLocationShiftResponse:(id)arg1 originalCoordinate:(struct { double x1; double x2; })arg2;

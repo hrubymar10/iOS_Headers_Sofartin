@@ -7,12 +7,12 @@
     NSURL *_contentSourceURL;
 }
 
-@property(assign,readonly) SKUIURLViewElement * URL;
-@property(assign,readonly) NSString * activityType;
-@property(assign,readonly) NSURL * contentSourceURL;
-@property(assign,readonly) SKUIImageViewElement * image;
-@property(assign,readonly) SKUILabelViewElement * message;
-@property(assign,readonly) SKUILabelViewElement * title;
+@property (nonatomic, readonly) SKUIURLViewElement *URL;
+@property (nonatomic, readonly) NSString *activityType;
+@property (nonatomic, readonly) NSURL *contentSourceURL;
+@property (nonatomic, readonly) SKUIImageViewElement *image;
+@property (nonatomic, readonly) SKUILabelViewElement *message;
+@property (nonatomic, readonly) SKUILabelViewElement *title;
 
 - (void).cxx_destruct;
 - (id)URL;

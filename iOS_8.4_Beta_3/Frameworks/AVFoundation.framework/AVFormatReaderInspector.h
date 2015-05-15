@@ -8,7 +8,7 @@
     bool hasSaveRestriction;
 }
 
-@property(getter=_formatReader,setter=_setFormatReader:,assign,retain) struct OpaqueFigFormatReader { }* formatReader;
+@property (getter=_formatReader, setter=_setFormatReader:, nonatomic, retain) struct OpaqueFigFormatReader { }*formatReader;
 
 - (struct OpaqueFigFormatReader { }*)_formatReader;
 - (bool)_hasQTSaveRestriction;

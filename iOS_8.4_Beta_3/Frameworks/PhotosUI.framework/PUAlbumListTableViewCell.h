@@ -6,7 +6,7 @@
     <PUAlbumListTableViewCellDelegate> *_stateChangeDelegate;
 }
 
-@property(assign,readwrite) <PUAlbumListTableViewCellDelegate> * stateChangeDelegate;
+@property (nonatomic) <PUAlbumListTableViewCellDelegate> *stateChangeDelegate;
 
 - (void).cxx_destruct;
 - (void)setStateChangeDelegate:(id)arg1;

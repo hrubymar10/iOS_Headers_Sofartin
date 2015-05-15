@@ -6,7 +6,7 @@
     GEOLocationShifter *_locationShifter;
 }
 
-@property(getter=isLocationShiftEnabled,assign,readonly) bool locationShiftEnabled;
+@property (getter=isLocationShiftEnabled, nonatomic, readonly) bool locationShiftEnabled;
 
 - (void).cxx_destruct;
 - (void)_prepareShiftForLocation:(id)arg1 withCompletionHandler:(id)arg2 withShiftRequestBlock:(id)arg3;

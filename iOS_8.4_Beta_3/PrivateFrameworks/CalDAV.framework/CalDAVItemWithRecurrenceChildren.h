@@ -6,7 +6,7 @@
     NSMutableSet *_recurrences;
 }
 
-@property(assign,retain) NSMutableSet * recurrences;
+@property (nonatomic, retain) NSMutableSet *recurrences;
 
 - (void)addRecurrence:(id)arg1;
 - (id)copyParseRules;

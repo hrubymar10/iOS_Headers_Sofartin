@@ -6,7 +6,7 @@
     long long _status;
 }
 
-@property(assign,readwrite) long long status;
+@property (nonatomic) long long status;
 
 - (void)encodeWithCoder:(id)arg1;
 - (id)initWithCoder:(id)arg1;

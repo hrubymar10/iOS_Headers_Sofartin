@@ -18,11 +18,11 @@
     bool _visuallyEngagedAds;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUNowPlayingViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUNowPlayingViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)MPU_prepareForNavigationController:(id)arg1 poppingToViewController:(id)arg2 animated:(bool)arg3 completion:(id)arg4;

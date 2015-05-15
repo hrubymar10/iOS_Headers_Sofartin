@@ -9,10 +9,10 @@
     bool _supportsVideo;
 }
 
-@property(assign,retain) NSString * displayName;
-@property(assign,readwrite) unsigned long long macAddress;
-@property(getter=isSelected,assign,readwrite) bool selected;
-@property(assign,readwrite) bool supportsVideo;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic) unsigned long long macAddress;
+@property (getter=isSelected, nonatomic) bool selected;
+@property (nonatomic) bool supportsVideo;
 
 + (id)audioRoutesFromProtobufs:(id)arg1;
 + (id)protobufsFromAudioRoutes:(id)arg1;

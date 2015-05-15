@@ -7,8 +7,8 @@
     NSString *_property;
 }
 
-@property(getter=isAscending,assign,readonly) bool ascending;
-@property(assign,copy) NSString * property;
+@property (getter=isAscending, nonatomic, readonly) bool ascending;
+@property (nonatomic, readonly, copy) NSString *property;
 
 + (bool)shouldParseChildDOMElements;
 

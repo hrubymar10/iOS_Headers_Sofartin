@@ -21,11 +21,11 @@
     double timeFaceDetectionDone;
 }
 
-@property(assign,readwrite) bool forceFaceDetectionEnable;
-@property(assign,readwrite) double latestFaceTimestamp;
-@property(assign,readwrite) double timeBlinkDetectionDone;
-@property(assign,readwrite) double timeFaceDetectionDone;
-@property(assign,readwrite) int version;
+@property bool forceFaceDetectionEnable;
+@property double latestFaceTimestamp;
+@property double timeBlinkDetectionDone;
+@property double timeFaceDetectionDone;
+@property int version;
 
 - (void)addFaceToArray:(id)arg1;
 - (void)addFacesToImageStat:(id)arg1 imageSize:(struct CGSize { double x1; double x2; })arg2;

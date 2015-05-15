@@ -6,7 +6,7 @@
     int _drivingSide;
 }
 
-@property(assign,readonly) int drivingSide;
+@property (nonatomic, readonly) int drivingSide;
 
 - (int)drivingSide;
 - (id)initWithComposedRoute:(id)arg1 GEOStep:(id)arg2 stepIndex:(unsigned long long)arg3 pointRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg4 maneuverPointRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg5;

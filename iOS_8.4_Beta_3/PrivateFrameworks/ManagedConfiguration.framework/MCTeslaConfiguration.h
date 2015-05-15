@@ -8,9 +8,9 @@
     bool _fetching;
 }
 
-@property(assign,copy) id callback;
-@property(assign,retain) NSXPCConnection * connection;
-@property(getter=isFetching,assign,readwrite) bool fetching;
+@property (nonatomic, copy) id callback;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (getter=isFetching, nonatomic) bool fetching;
 
 - (void).cxx_destruct;
 - (id)callback;

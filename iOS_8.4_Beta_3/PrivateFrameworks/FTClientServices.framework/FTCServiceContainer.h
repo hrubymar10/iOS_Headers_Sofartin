@@ -7,8 +7,8 @@
     FTCServiceMonitor *_monitor;
 }
 
-@property(assign,retain) NSMutableSet * listeners;
-@property(assign,retain) FTCServiceMonitor * monitor;
+@property (nonatomic, readonly, retain) NSMutableSet *listeners;
+@property (nonatomic, retain) FTCServiceMonitor *monitor;
 
 - (bool)addListenerID:(id)arg1;
 - (void)dealloc;

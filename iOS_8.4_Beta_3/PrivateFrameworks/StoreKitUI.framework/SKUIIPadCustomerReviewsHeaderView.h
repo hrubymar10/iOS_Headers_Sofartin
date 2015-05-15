@@ -16,15 +16,15 @@
     UIButton *_writeAReviewButton;
 }
 
-@property(assign,readonly) UIControl * appSupportButton;
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long selectedSortIndex;
-@property(assign,copy) NSArray * sortTitles;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIControl * writeAReviewButton;
+@property (nonatomic, readonly) UIControl *appSupportButton;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long selectedSortIndex;
+@property (nonatomic, copy) NSArray *sortTitles;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UIControl *writeAReviewButton;
 
 - (void).cxx_destruct;
 - (void)_destroySortPopoverController;

@@ -14,16 +14,16 @@
     GEOPDViewportInfo *_viewportInfo;
 }
 
-@property(assign,readwrite) bool hasMaxResults;
-@property(assign,readonly) bool hasSearchLocation;
-@property(assign,readonly) bool hasSearchString;
-@property(assign,readwrite) bool hasSortOrder;
-@property(assign,readonly) bool hasViewportInfo;
-@property(assign,readwrite) unsigned int maxResults;
-@property(assign,retain) GEOLatLng * searchLocation;
-@property(assign,retain) NSString * searchString;
-@property(assign,readwrite) int sortOrder;
-@property(assign,retain) GEOPDViewportInfo * viewportInfo;
+@property (nonatomic) bool hasMaxResults;
+@property (nonatomic, readonly) bool hasSearchLocation;
+@property (nonatomic, readonly) bool hasSearchString;
+@property (nonatomic) bool hasSortOrder;
+@property (nonatomic, readonly) bool hasViewportInfo;
+@property (nonatomic) unsigned int maxResults;
+@property (nonatomic, retain) GEOLatLng *searchLocation;
+@property (nonatomic, retain) NSString *searchString;
+@property (nonatomic) int sortOrder;
+@property (nonatomic, retain) GEOPDViewportInfo *viewportInfo;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

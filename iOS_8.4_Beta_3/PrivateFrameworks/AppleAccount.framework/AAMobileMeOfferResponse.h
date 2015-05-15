@@ -4,11 +4,11 @@
 
 @interface AAMobileMeOfferResponse : AAResponse
 
-@property(assign,readonly) NSString * classicMessage;
-@property(assign,readonly) NSString * classicTitle;
-@property(assign,readonly) NSNumber * identifier;
-@property(assign,readonly) NSString * message;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSString *classicMessage;
+@property (nonatomic, readonly) NSString *classicTitle;
+@property (nonatomic, readonly) NSNumber *identifier;
+@property (nonatomic, readonly) NSString *message;
+@property (nonatomic, readonly) NSString *title;
 
 - (id)classicMessage;
 - (id)classicTitle;

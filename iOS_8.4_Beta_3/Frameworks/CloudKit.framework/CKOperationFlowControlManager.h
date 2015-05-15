@@ -6,7 +6,7 @@
     NSMutableDictionary *_flowControlledOperationClasses;
 }
 
-@property(assign,readonly) NSMutableDictionary * flowControlledOperationClasses;
+@property (readonly) NSMutableDictionary *flowControlledOperationClasses;
 
 - (void).cxx_destruct;
 - (id)flowControlledOperationClasses;

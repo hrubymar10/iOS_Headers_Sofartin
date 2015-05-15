@@ -18,18 +18,18 @@
     NSURLRequest *_urlRequest;
 }
 
-@property(assign,readwrite) bool cached;
-@property(assign,retain) NSDictionary * client_error;
-@property(assign,readonly) NSString * connectionType;
-@property(assign,readwrite) long long delta;
-@property(assign,readwrite) long long delta_ref;
-@property(assign,readwrite) bool error;
-@property(assign,retain) NSString * error_code;
-@property(assign,readwrite) long long latency;
-@property(assign,readwrite) long long responseSize;
-@property(assign,retain) NSArray * serverStatus;
-@property(assign,readwrite) long long ttfb;
-@property(assign,retain) NSURLRequest * urlRequest;
+@property (nonatomic) bool cached;
+@property (nonatomic, retain) NSDictionary *client_error;
+@property (readonly) NSString *connectionType;
+@property (nonatomic) long long delta;
+@property (nonatomic) long long delta_ref;
+@property (nonatomic) bool error;
+@property (nonatomic, retain) NSString *error_code;
+@property (nonatomic) long long latency;
+@property (nonatomic) long long responseSize;
+@property (nonatomic, retain) NSArray *serverStatus;
+@property (nonatomic) long long ttfb;
+@property (nonatomic, retain) NSURLRequest *urlRequest;
 
 + (bool)supportsSecureCoding;
 

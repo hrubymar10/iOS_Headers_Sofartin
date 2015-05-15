@@ -8,9 +8,9 @@
     id _shareCopyURLCompletionBlock;
 }
 
-@property(assign,retain) NSString * appName;
-@property(assign,retain) CKShare * share;
-@property(assign,copy) id shareCopyURLCompletionBlock;
+@property (nonatomic, retain) NSString *appName;
+@property (nonatomic, retain) CKShare *share;
+@property (copy) id shareCopyURLCompletionBlock;
 
 - (id)appName;
 - (void)dealloc;

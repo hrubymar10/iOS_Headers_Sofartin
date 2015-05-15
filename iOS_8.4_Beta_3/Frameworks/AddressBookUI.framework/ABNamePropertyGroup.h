@@ -10,8 +10,8 @@
     NSMutableDictionary *_valuesByPersonByProperty;
 }
 
-@property(assign,readwrite) <ABPrimaryValueDelegate> * delegate;
-@property(assign,readonly) ABUIPerson * preferredPerson;
+@property (nonatomic) <ABPrimaryValueDelegate> *delegate;
+@property (nonatomic, readonly) ABUIPerson *preferredPerson;
 
 - (void)_addItemForProperty:(int)arg1 duringReload:(bool)arg2;
 - (id)_allPeople;

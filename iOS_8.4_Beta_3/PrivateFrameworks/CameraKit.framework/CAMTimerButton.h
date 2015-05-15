@@ -8,10 +8,10 @@
     bool _hideOffWhenCollapsed;
 }
 
-@property(assign,readonly) UIImageView * _glyphView;
-@property(assign,readwrite) <CAMTimerButtonDelegate> * delegate;
-@property(assign,readwrite) long long duration;
-@property(assign,readwrite) bool hideOffWhenCollapsed;
+@property (nonatomic, readonly) UIImageView *_glyphView;
+@property (nonatomic) <CAMTimerButtonDelegate> *delegate;
+@property (nonatomic) long long duration;
+@property (nonatomic) bool hideOffWhenCollapsed;
 
 - (void).cxx_destruct;
 - (void)_commonCAMTimerButtonInitialization;

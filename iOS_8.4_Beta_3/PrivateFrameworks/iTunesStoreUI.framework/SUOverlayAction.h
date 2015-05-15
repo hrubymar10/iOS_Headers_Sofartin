@@ -10,11 +10,11 @@
     UIViewController *_viewController;
 }
 
-@property(assign,readwrite) int actionType;
-@property(assign,readwrite) long long animationCount;
-@property(assign,retain) UIViewController * otherViewController;
-@property(assign,retain) SUOverlayTransition * transition;
-@property(assign,retain) UIViewController * viewController;
+@property (nonatomic) int actionType;
+@property (nonatomic) long long animationCount;
+@property (nonatomic, retain) UIViewController *otherViewController;
+@property (nonatomic, retain) SUOverlayTransition *transition;
+@property (nonatomic, retain) UIViewController *viewController;
 
 - (int)actionType;
 - (long long)animationCount;

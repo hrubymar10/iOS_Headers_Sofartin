@@ -6,7 +6,7 @@
     MPMediaQuery *_query;
 }
 
-@property(assign,readonly) MPMediaQuery * query;
+@property (nonatomic, readonly) MPMediaQuery *query;
 
 + (Class)queueFeederClass;
 

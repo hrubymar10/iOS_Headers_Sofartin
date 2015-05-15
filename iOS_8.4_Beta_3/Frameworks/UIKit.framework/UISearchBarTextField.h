@@ -13,8 +13,8 @@
     NSValue *_searchTextOffsetValue;
 }
 
-@property(setter=_setPreventSelectionViewActivation:,assign,readwrite) bool _preventSelectionViewActivation;
-@property(setter=_setSearchTextOffetValue:,assign,retain) NSValue * _searchTextOffsetValue;
+@property (setter=_setPreventSelectionViewActivation:, nonatomic) bool _preventSelectionViewActivation;
+@property (setter=_setSearchTextOffetValue:, nonatomic, retain) NSValue *_searchTextOffsetValue;
 
 - (void)_activateSelectionView;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_adjustedTextOrEditingRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 forBounds:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg2;

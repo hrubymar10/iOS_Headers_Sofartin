@@ -18,18 +18,18 @@
     bool _toggleable;
 }
 
-@property(assign,retain) PUAdjustmentsMode * adjustmentsMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long layoutOrientation;
-@property(assign,retain) PUPhotoEditLevelSlider * levelSlider;
-@property(assign,readwrite) double sliderShortSideLength;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) long long titleLabelPosition;
-@property(getter=isToggleable,assign,readwrite) bool toggleable;
+@property (nonatomic, retain) PUAdjustmentsMode *adjustmentsMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long layoutOrientation;
+@property (nonatomic, retain) PUPhotoEditLevelSlider *levelSlider;
+@property (nonatomic) double sliderShortSideLength;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) long long titleLabelPosition;
+@property (getter=isToggleable, nonatomic) bool toggleable;
 
 + (double)sliderTopMarginVerticalForTitleLabelPosition:(long long)arg1;
 

@@ -27,24 +27,24 @@
     bool _usesLightText;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) double defaultHeight;
-@property(assign,readwrite) <EKDayTimeViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double highlightedHour;
-@property(assign,readonly) double hourHeight;
-@property(assign,readwrite) double hourHeightScale;
-@property(assign,readwrite) double hoursToPad;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } hoursToRender;
-@property(assign,readwrite) bool showsLeftBorder;
-@property(assign,readwrite) bool showsRightBorder;
-@property(assign,readwrite) bool showsTimeMarker;
-@property(assign,readwrite) bool showsTimeMarkerExtension;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIColor * timeColor;
-@property(assign,readonly) EKCurrentTimeMarkerView * timeMarker;
-@property(assign,readwrite) bool usesLightText;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) double defaultHeight;
+@property (nonatomic) <EKDayTimeViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double highlightedHour;
+@property (nonatomic, readonly) double hourHeight;
+@property (nonatomic) double hourHeightScale;
+@property (nonatomic) double hoursToPad;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } hoursToRender;
+@property (nonatomic) bool showsLeftBorder;
+@property (nonatomic) bool showsRightBorder;
+@property (nonatomic) bool showsTimeMarker;
+@property (nonatomic) bool showsTimeMarkerExtension;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIColor *timeColor;
+@property (nonatomic, readonly) EKCurrentTimeMarkerView *timeMarker;
+@property (nonatomic) bool usesLightText;
 
 + (id)_boldFontForOrientation:(long long)arg1;
 + (void)_calculateWidthForOrientation:(long long)arg1;

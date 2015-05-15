@@ -13,7 +13,7 @@
     UILabel *_tuningType3Label;
 }
 
-@property(assign,retain) RadioStation * station;
+@property (nonatomic, retain) RadioStation *station;
 
 + (id)_tuningTypeLabelFont;
 + (double)defaultHeightForTraitCollection:(id)arg1;

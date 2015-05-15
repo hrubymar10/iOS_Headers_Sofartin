@@ -4,8 +4,8 @@
 
 @interface SASportsEntityGroup : SASportsEntity
 
-@property(assign,copy) NSArray * entities;
-@property(assign,copy) NSString * groupType;
+@property (nonatomic, copy) NSArray *entities;
+@property (nonatomic, copy) NSString *groupType;
 
 + (id)entityGroup;
 + (id)entityGroupWithDictionary:(id)arg1 context:(id)arg2;

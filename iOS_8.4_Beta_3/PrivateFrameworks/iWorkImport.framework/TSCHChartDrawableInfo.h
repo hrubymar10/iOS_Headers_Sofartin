@@ -8,17 +8,17 @@
     TSPObject<TSCHMediatorProvider> *mMediatorPersistentObject;
 }
 
-@property(assign,readonly) TSCHChartInfo * chart;
-@property(assign,readonly) TSCHChunkManager * chunkManager;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long multiDataSetIndex;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) TSCHChartInfo *chart;
+@property (nonatomic, readonly) TSCHChunkManager *chunkManager;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long multiDataSetIndex;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
 
 + (void)bootstrapPresetsOfKind:(id)arg1 inTheme:(id)arg2 alternate:(int)arg3;
 + (bool)needsObjectUUID;

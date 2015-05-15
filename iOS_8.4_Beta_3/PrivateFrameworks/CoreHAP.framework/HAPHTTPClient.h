@@ -14,14 +14,14 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readwrite) <HAPHTTPClientDebugDelegate> * debugDelegate;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * debugDelegateQueue;
-@property(assign,readwrite) <HAPHTTPClientDelegate> * delegate;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * delegateQueue;
-@property(assign,copy) NSString * dnsName;
-@property(assign,readwrite) bool invalidateRequested;
-@property(assign,readonly) unsigned long long port;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic) <HAPHTTPClientDebugDelegate> *debugDelegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> *debugDelegateQueue;
+@property (nonatomic) <HAPHTTPClientDelegate> *delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> *delegateQueue;
+@property (nonatomic, copy) NSString *dnsName;
+@property (nonatomic) bool invalidateRequested;
+@property (nonatomic, readonly) unsigned long long port;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 - (void).cxx_destruct;
 - (bool)_debugDelegateRespondsToSelector:(SEL)arg1;

@@ -7,8 +7,8 @@
     NSMutableDictionary *_deleteStatementsByClassName;
 }
 
-@property(assign,readonly) HDSQLiteDatabase * database;
-@property(assign,retain) NSMutableDictionary * deleteStatementsByClassName;
+@property (nonatomic, readonly) HDSQLiteDatabase *database;
+@property (nonatomic, retain) NSMutableDictionary *deleteStatementsByClassName;
 
 - (void).cxx_destruct;
 - (id)database;

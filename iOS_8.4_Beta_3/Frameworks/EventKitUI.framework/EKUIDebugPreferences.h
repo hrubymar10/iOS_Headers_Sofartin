@@ -6,8 +6,8 @@
     CalPreferences *_preferences;
 }
 
-@property(assign,readwrite) bool showInviteesAndMoreRegion;
-@property(assign,readwrite) bool verifyIntegrityOfAvailabilityTimeSearchTimelines;
+@property (nonatomic) bool showInviteesAndMoreRegion;
+@property (nonatomic) bool verifyIntegrityOfAvailabilityTimeSearchTimelines;
 
 + (id)shared;
 

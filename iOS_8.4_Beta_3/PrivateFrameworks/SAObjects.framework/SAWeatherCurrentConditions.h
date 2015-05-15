@@ -4,26 +4,26 @@
 
 @interface SAWeatherCurrentConditions : AceObject <SAAceSerializable>
 
-@property(assign,retain) SAWeatherBarometricPressure * barometricPressure;
-@property(assign,retain) SAWeatherCondition * condition;
-@property(assign,copy) NSNumber * dayOfWeek;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * dewPoint;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * heatIndex;
-@property(assign,copy) NSString * moonPhase;
-@property(assign,copy) NSString * percentHumidity;
-@property(assign,copy) NSNumber * percentOfMoonFaceVisible;
-@property(assign,copy) NSString * sunrise;
-@property(assign,copy) NSString * sunset;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * temperature;
-@property(assign,copy) NSString * timeOfObservation;
-@property(assign,copy) NSString * timeZone;
-@property(assign,copy) NSString * visibility;
-@property(assign,copy) NSString * windChill;
-@property(assign,retain) SAWeatherWindSpeed * windSpeed;
+@property (nonatomic, retain) SAWeatherBarometricPressure *barometricPressure;
+@property (nonatomic, retain) SAWeatherCondition *condition;
+@property (nonatomic, copy) NSNumber *dayOfWeek;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *dewPoint;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *heatIndex;
+@property (nonatomic, copy) NSString *moonPhase;
+@property (nonatomic, copy) NSString *percentHumidity;
+@property (nonatomic, copy) NSNumber *percentOfMoonFaceVisible;
+@property (nonatomic, copy) NSString *sunrise;
+@property (nonatomic, copy) NSString *sunset;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *temperature;
+@property (nonatomic, copy) NSString *timeOfObservation;
+@property (nonatomic, copy) NSString *timeZone;
+@property (nonatomic, copy) NSString *visibility;
+@property (nonatomic, copy) NSString *windChill;
+@property (nonatomic, retain) SAWeatherWindSpeed *windSpeed;
 
 + (id)currentConditions;
 + (id)currentConditionsWithDictionary:(id)arg1 context:(id)arg2;

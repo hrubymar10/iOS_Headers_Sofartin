@@ -4,8 +4,8 @@
 
 @interface SASettingFloatEntity : SASettingNumericEntity
 
-@property(assign,copy) NSNumber * previousValue;
-@property(assign,readwrite) float value;
+@property (nonatomic, copy) NSNumber *previousValue;
+@property (nonatomic) float value;
 
 + (id)floatEntity;
 + (id)floatEntityWithDictionary:(id)arg1 context:(id)arg2;

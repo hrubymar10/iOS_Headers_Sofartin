@@ -25,11 +25,11 @@
     bool _usesImplicitBounds;
 }
 
-@property(assign,copy) NSArray * boundaryIdentifiers;
-@property(assign,readwrite) <UICollisionBehaviorDelegate> * collisionDelegate;
-@property(assign,readwrite) unsigned long long collisionMode;
-@property(assign,copy) NSArray * items;
-@property(assign,readwrite) bool translatesReferenceBoundsIntoBoundary;
+@property (nonatomic, readonly, copy) NSArray *boundaryIdentifiers;
+@property (nonatomic) <UICollisionBehaviorDelegate> *collisionDelegate;
+@property (nonatomic) unsigned long long collisionMode;
+@property (nonatomic, readonly, copy) NSArray *items;
+@property (nonatomic) bool translatesReferenceBoundsIntoBoundary;
 
 - (void)_addItem:(id)arg1;
 - (void)_applySettings;

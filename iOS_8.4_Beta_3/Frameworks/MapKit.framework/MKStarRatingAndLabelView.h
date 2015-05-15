@@ -11,10 +11,10 @@
     MKStarRatingView *_starRatingView;
 }
 
-@property(assign,readwrite) unsigned long long numberOfReviews;
-@property(assign,readonly) UILabel * reviewsLabel;
-@property(assign,retain) NSString * sourceName;
-@property(assign,readonly) MKStarRatingView * starRatingView;
+@property (nonatomic) unsigned long long numberOfReviews;
+@property (nonatomic, readonly) UILabel *reviewsLabel;
+@property (nonatomic, retain) NSString *sourceName;
+@property (nonatomic, readonly) MKStarRatingView *starRatingView;
 
 - (void).cxx_destruct;
 - (void)_mapkit_setCalloutTextColor:(id)arg1;

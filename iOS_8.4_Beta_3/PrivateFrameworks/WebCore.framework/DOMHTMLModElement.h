@@ -4,8 +4,8 @@
 
 @interface DOMHTMLModElement : DOMHTMLElement
 
-@property(assign,copy) NSString * cite;
-@property(assign,copy) NSString * dateTime;
+@property (copy) NSString *cite;
+@property (copy) NSString *dateTime;
 
 - (id)cite;
 - (id)dateTime;

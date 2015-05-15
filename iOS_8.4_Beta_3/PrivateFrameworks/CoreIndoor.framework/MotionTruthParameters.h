@@ -13,12 +13,12 @@
     float _scale;
 }
 
-@property(assign,readwrite) float bias;
-@property(assign,readwrite) float errorPeriodSeconds;
-@property(assign,readwrite) bool hasBias;
-@property(assign,readwrite) bool hasErrorPeriodSeconds;
-@property(assign,readwrite) bool hasScale;
-@property(assign,readwrite) float scale;
+@property (nonatomic) float bias;
+@property (nonatomic) float errorPeriodSeconds;
+@property (nonatomic) bool hasBias;
+@property (nonatomic) bool hasErrorPeriodSeconds;
+@property (nonatomic) bool hasScale;
+@property (nonatomic) float scale;
 
 - (float)bias;
 - (void)copyTo:(id)arg1;

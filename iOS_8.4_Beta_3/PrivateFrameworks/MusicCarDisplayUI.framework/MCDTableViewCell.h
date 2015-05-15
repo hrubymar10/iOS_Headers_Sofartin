@@ -7,7 +7,7 @@
     double _originalLeftInset;
 }
 
-@property(assign,retain) UIImage * artworkImage;
+@property (nonatomic, retain) UIImage *artworkImage;
 
 - (void).cxx_destruct;
 - (id)artworkImage;

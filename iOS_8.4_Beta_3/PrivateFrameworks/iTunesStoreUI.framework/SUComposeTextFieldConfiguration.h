@@ -16,12 +16,12 @@
     NSString *_value;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } borderInsets;
-@property(assign,retain) NSString * label;
-@property(assign,readwrite) unsigned long long maxLength;
-@property(assign,retain) NSString * placeholder;
-@property(getter=isRequired,assign,readwrite) bool required;
-@property(assign,retain) NSString * value;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } borderInsets;
+@property (nonatomic, retain) NSString *label;
+@property (nonatomic) unsigned long long maxLength;
+@property (nonatomic, retain) NSString *placeholder;
+@property (getter=isRequired, nonatomic) bool required;
+@property (nonatomic, retain) NSString *value;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })borderInsets;
 - (void)dealloc;

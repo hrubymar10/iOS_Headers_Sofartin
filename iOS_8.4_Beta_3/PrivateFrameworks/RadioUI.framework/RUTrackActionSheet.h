@@ -8,9 +8,9 @@
     bool _disableLike;
 }
 
-@property(assign,readwrite) bool disableAddToWishList;
-@property(assign,readwrite) bool disableBan;
-@property(assign,readwrite) bool disableLike;
+@property (nonatomic) bool disableAddToWishList;
+@property (nonatomic) bool disableBan;
+@property (nonatomic) bool disableLike;
 
 - (bool)disableAddToWishList;
 - (bool)disableBan;

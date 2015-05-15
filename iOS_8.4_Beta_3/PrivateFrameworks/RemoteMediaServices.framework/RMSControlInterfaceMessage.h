@@ -13,12 +13,12 @@
     bool _supportsVolumeControl;
 }
 
-@property(assign,readwrite) bool hasSupportsDirectionalControl;
-@property(assign,readwrite) bool hasSupportsSpeakerSelection;
-@property(assign,readwrite) bool hasSupportsVolumeControl;
-@property(assign,readwrite) bool supportsDirectionalControl;
-@property(assign,readwrite) bool supportsSpeakerSelection;
-@property(assign,readwrite) bool supportsVolumeControl;
+@property (nonatomic) bool hasSupportsDirectionalControl;
+@property (nonatomic) bool hasSupportsSpeakerSelection;
+@property (nonatomic) bool hasSupportsVolumeControl;
+@property (nonatomic) bool supportsDirectionalControl;
+@property (nonatomic) bool supportsSpeakerSelection;
+@property (nonatomic) bool supportsVolumeControl;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

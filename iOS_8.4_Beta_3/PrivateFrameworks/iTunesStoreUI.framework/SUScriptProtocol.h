@@ -4,13 +4,13 @@
 
 @interface SUScriptProtocol : SUScriptObject
 
-@property(assign,retain) NSArray * allowedOrientations;
-@property(assign,readonly) NSString * clientIdentifier;
-@property(assign,retain) NSString * copyright;
-@property(assign,readwrite) bool excludeFromNavigationHistory;
-@property(assign,retain) SUScriptURLRequest * overlayBackgroundURLRequest;
-@property(assign,readonly) NSString * protocolVersion;
-@property(assign,readwrite) bool shouldShowInOverlay;
+@property (retain) NSArray *allowedOrientations;
+@property (readonly) NSString *clientIdentifier;
+@property (retain) NSString *copyright;
+@property bool excludeFromNavigationHistory;
+@property (retain) SUScriptURLRequest *overlayBackgroundURLRequest;
+@property (readonly) NSString *protocolVersion;
+@property bool shouldShowInOverlay;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

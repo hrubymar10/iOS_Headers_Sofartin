@@ -11,11 +11,11 @@
     bool _wantsDebugCallbacks;
 }
 
-@property(assign,copy) PSSpecifierUpdateContext * context;
-@property(assign,copy) NSArray * currentSpecifiers;
-@property(assign,copy) PSSpecifierGroupIndex * groupIndex;
-@property(assign,copy) NSArray * originalSpecifiers;
-@property(assign,copy) NSArray * updates;
+@property (nonatomic, copy) PSSpecifierUpdateContext *context;
+@property (nonatomic, readonly, copy) NSArray *currentSpecifiers;
+@property (nonatomic, readonly, copy) PSSpecifierGroupIndex *groupIndex;
+@property (nonatomic, readonly, copy) NSArray *originalSpecifiers;
+@property (nonatomic, readonly, copy) NSArray *updates;
 
 + (void)_assertSpecifierIDsAreUnique:(id)arg1;
 + (Class)_groupIndexClass;

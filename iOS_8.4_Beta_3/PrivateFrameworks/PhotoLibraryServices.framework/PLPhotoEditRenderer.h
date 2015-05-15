@@ -30,26 +30,26 @@
     NSDictionary *_smartToneStatisticsInCachedAdjustments;
 }
 
-@property(assign,retain) CIImage * originalImage;
-@property(assign,retain) CIImage * outputImage;
-@property(assign,readonly) struct CGSize { double x1; double x2; } outputImageSize;
-@property(assign,retain) PLPhotoEditModel * photoEditModel;
-@property(assign,readwrite) unsigned long long renderMode;
-@property(assign,readonly) double smartBWBaseGrain;
-@property(assign,readonly) double smartBWBaseHue;
-@property(assign,readonly) double smartBWBaseNeutralGamma;
-@property(assign,readonly) double smartBWBaseStrength;
-@property(assign,readonly) double smartBWBaseTone;
-@property(assign,readonly) double smartColorBaseCast;
-@property(assign,readonly) double smartColorBaseContrast;
-@property(assign,readonly) double smartColorBaseVibrancy;
-@property(assign,readwrite) long long smartFiltersCubeSize;
-@property(assign,readonly) double smartToneBaseBlackPoint;
-@property(assign,readonly) double smartToneBaseBrightness;
-@property(assign,readonly) double smartToneBaseContrast;
-@property(assign,readonly) double smartToneBaseExposure;
-@property(assign,readonly) double smartToneBaseHighlights;
-@property(assign,readonly) double smartToneBaseShadows;
+@property (nonatomic, retain) CIImage *originalImage;
+@property (nonatomic, readonly, retain) CIImage *outputImage;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } outputImageSize;
+@property (nonatomic, retain) PLPhotoEditModel *photoEditModel;
+@property (nonatomic) unsigned long long renderMode;
+@property (nonatomic, readonly) double smartBWBaseGrain;
+@property (nonatomic, readonly) double smartBWBaseHue;
+@property (nonatomic, readonly) double smartBWBaseNeutralGamma;
+@property (nonatomic, readonly) double smartBWBaseStrength;
+@property (nonatomic, readonly) double smartBWBaseTone;
+@property (nonatomic, readonly) double smartColorBaseCast;
+@property (nonatomic, readonly) double smartColorBaseContrast;
+@property (nonatomic, readonly) double smartColorBaseVibrancy;
+@property (nonatomic) long long smartFiltersCubeSize;
+@property (nonatomic, readonly) double smartToneBaseBlackPoint;
+@property (nonatomic, readonly) double smartToneBaseBrightness;
+@property (nonatomic, readonly) double smartToneBaseContrast;
+@property (nonatomic, readonly) double smartToneBaseExposure;
+@property (nonatomic, readonly) double smartToneBaseHighlights;
+@property (nonatomic, readonly) double smartToneBaseShadows;
 
 + (id)_editedImagePropertiesFromOriginalImageProperties:(id)arg1 preserveRegions:(bool)arg2;
 + (id)createImageDataFromCGImage:(struct CGImage { }*)arg1 withCompressionQuality:(double)arg2 metadataSourceImageURL:(id)arg3 preserveRegionsInMetadata:(bool)arg4;

@@ -8,8 +8,8 @@
     SSURLBag *_urlBag;
 }
 
-@property(assign,retain) SSURLBag * URLBag;
-@property(assign,copy) id outputBlock;
+@property (retain) SSURLBag *URLBag;
+@property (copy) id outputBlock;
 
 - (void).cxx_destruct;
 - (id)URLBag;

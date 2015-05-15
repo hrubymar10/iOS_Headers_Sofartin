@@ -16,12 +16,12 @@
     long long _settingsID;
 }
 
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } maxDuration;
-@property(assign,readwrite) long long maxFileSize;
-@property(assign,readwrite) long long minFreeDiskSpaceLimit;
-@property(assign,copy) NSString * outputFileType;
-@property(assign,copy) NSURL * outputURL;
-@property(assign,readwrite) long long settingsID;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } maxDuration;
+@property (nonatomic) long long maxFileSize;
+@property (nonatomic) long long minFreeDiskSpaceLimit;
+@property (nonatomic, copy) NSString *outputFileType;
+@property (nonatomic, copy) NSURL *outputURL;
+@property (nonatomic) long long settingsID;
 
 - (void)dealloc;
 - (void)encodeWithCoder:(id)arg1;

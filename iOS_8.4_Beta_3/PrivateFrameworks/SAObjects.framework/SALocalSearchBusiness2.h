@@ -4,27 +4,27 @@
 
 @interface SALocalSearchBusiness2 : SADomainObject <SAAceSerializable>
 
-@property(assign,retain) SALocation * address;
-@property(assign,copy) NSURL * businessUrl;
-@property(assign,copy) NSArray * categories;
-@property(assign,copy) NSArray * commands;
-@property(assign,copy) NSString * currencySymbol;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * descriptionText;
-@property(assign,copy) NSString * extSessionGuid;
-@property(assign,copy) NSDate * extSessionGuidCreatedTimestamp;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSDictionary * identifierMap;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSArray * offerLists;
-@property(assign,retain) SALocalSearchOperationHours * operationHours;
-@property(assign,copy) NSString * phoneNumber;
-@property(assign,copy) NSArray * photoList;
-@property(assign,copy) NSData * placeData2;
-@property(assign,copy) NSString * priceRange;
-@property(assign,copy) NSArray * reviewList;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SALocation *address;
+@property (nonatomic, copy) NSURL *businessUrl;
+@property (nonatomic, copy) NSArray *categories;
+@property (nonatomic, copy) NSArray *commands;
+@property (nonatomic, copy) NSString *currencySymbol;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *descriptionText;
+@property (nonatomic, copy) NSString *extSessionGuid;
+@property (nonatomic, copy) NSDate *extSessionGuidCreatedTimestamp;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSDictionary *identifierMap;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSArray *offerLists;
+@property (nonatomic, retain) SALocalSearchOperationHours *operationHours;
+@property (nonatomic, copy) NSString *phoneNumber;
+@property (nonatomic, copy) NSArray *photoList;
+@property (nonatomic, copy) NSData *placeData2;
+@property (nonatomic, copy) NSString *priceRange;
+@property (nonatomic, copy) NSArray *reviewList;
+@property (readonly) Class superclass;
 
 + (id)afui_mapsURLForLocalSearchBusiness2s:(id)arg1;
 + (id)business2;

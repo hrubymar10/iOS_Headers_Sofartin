@@ -4,14 +4,14 @@
 
 @interface SADestroyAssistant : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * assistantId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * refId;
-@property(assign,copy) NSString * speechId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic, copy) NSString *assistantId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic, copy) NSString *speechId;
+@property (readonly) Class superclass;
 
 + (id)destroyAssistant;
 + (id)destroyAssistantWithDictionary:(id)arg1 context:(id)arg2;

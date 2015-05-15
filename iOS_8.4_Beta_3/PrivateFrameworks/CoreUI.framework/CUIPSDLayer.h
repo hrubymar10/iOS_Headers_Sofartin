@@ -8,9 +8,9 @@
     double _opacity;
 }
 
-@property(assign,readwrite) int blendMode;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) double opacity;
+@property (nonatomic) int blendMode;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) double opacity;
 
 - (int)blendMode;
 - (void)dealloc;

@@ -6,7 +6,7 @@
     TSKCOIdAddress *mAddress;
 }
 
-@property(assign,readonly) TSKCOIdAddress * address;
+@property (nonatomic, readonly) TSKCOIdAddress *address;
 
 + (id)operationWithIdAddress:(id)arg1 propertyName:(id)arg2;
 

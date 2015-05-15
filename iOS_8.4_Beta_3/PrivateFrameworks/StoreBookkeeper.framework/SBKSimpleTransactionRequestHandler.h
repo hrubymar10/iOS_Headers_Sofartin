@@ -7,8 +7,8 @@
     SBKTransactionController *_transactionController;
 }
 
-@property(assign,readonly) bool canceled;
-@property(assign,readonly) SBKTransactionController * transactionController;
+@property (nonatomic, readonly) bool canceled;
+@property (nonatomic, readonly) SBKTransactionController *transactionController;
 
 - (void).cxx_destruct;
 - (void)cancel;

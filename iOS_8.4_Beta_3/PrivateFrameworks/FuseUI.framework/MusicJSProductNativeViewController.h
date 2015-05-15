@@ -12,19 +12,19 @@
     NSArray *_tracklistItems;
 }
 
-@property(assign,readonly) IKAppContext * appContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicJSProductNativeViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * featureName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) IKJSNavigationDocument * navigationDocument;
-@property(assign,readonly) NSDictionary * productEntityValueProviderData;
-@property(assign,readonly) IKAppDocument * relatedContentDocument;
-@property(assign,readonly) NSDictionary * relatedContentDocumentOptions;
-@property(assign,readonly) NSDictionary * reportingInformation;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSArray * tracklistItems;
+@property (nonatomic, readonly) IKAppContext *appContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicJSProductNativeViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSString *featureName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) IKJSNavigationDocument *navigationDocument;
+@property (nonatomic, readonly) NSDictionary *productEntityValueProviderData;
+@property (nonatomic, readonly) IKAppDocument *relatedContentDocument;
+@property (nonatomic, readonly) NSDictionary *relatedContentDocumentOptions;
+@property (nonatomic, readonly) NSDictionary *reportingInformation;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *tracklistItems;
 
 + (id)featureName;
 

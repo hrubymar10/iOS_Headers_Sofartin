@@ -12,13 +12,13 @@
     bool _skipAnimation;
 }
 
-@property(assign,readonly) int action;
-@property(assign,readwrite) long long animation;
-@property(assign,readwrite) UITableViewUpdateGap * gap;
-@property(assign,readwrite) bool headerFooterOnly;
-@property(assign,readonly) NSIndexPath * indexPath;
-@property(assign,readwrite) double offset;
-@property(assign,readwrite) bool skipAnimation;
+@property (nonatomic, readonly) int action;
+@property (nonatomic) long long animation;
+@property (nonatomic) UITableViewUpdateGap *gap;
+@property (nonatomic) bool headerFooterOnly;
+@property (nonatomic, readonly) NSIndexPath *indexPath;
+@property (nonatomic) double offset;
+@property (nonatomic) bool skipAnimation;
 
 - (id)_actionDescription;
 - (int)action;

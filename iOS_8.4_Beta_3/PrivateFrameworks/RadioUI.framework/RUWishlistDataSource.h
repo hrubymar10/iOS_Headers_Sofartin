@@ -8,9 +8,9 @@
     NSArray *_wishlistedTracks;
 }
 
-@property(assign,readwrite) <RUWishlistDataSourceDelegate> * delegate;
-@property(getter=isRefreshing,assign,readonly) bool refreshing;
-@property(assign,readonly) NSArray * wishlistedTracks;
+@property (nonatomic) <RUWishlistDataSourceDelegate> *delegate;
+@property (getter=isRefreshing, nonatomic, readonly) bool refreshing;
+@property (nonatomic, readonly) NSArray *wishlistedTracks;
 
 - (void).cxx_destruct;
 - (void)_notifyDidInvalidate;

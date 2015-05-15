@@ -4,22 +4,22 @@
 
 @interface SALocalSearchBusiness : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSNumber * businessId;
-@property(assign,copy) NSDictionary * businessIds;
-@property(assign,copy) NSURL * businessUrl;
-@property(assign,copy) NSArray * categories;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * extSessionGuid;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * openingHours;
-@property(assign,copy) NSArray * phoneNumbers;
-@property(assign,copy) NSURL * photo;
-@property(assign,retain) SALocalSearchRating * rating;
-@property(assign,copy) NSArray * reviews;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long totalNumberOfReviews;
+@property (nonatomic, copy) NSNumber *businessId;
+@property (nonatomic, copy) NSDictionary *businessIds;
+@property (nonatomic, copy) NSURL *businessUrl;
+@property (nonatomic, copy) NSArray *categories;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *extSessionGuid;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *openingHours;
+@property (nonatomic, copy) NSArray *phoneNumbers;
+@property (nonatomic, copy) NSURL *photo;
+@property (nonatomic, retain) SALocalSearchRating *rating;
+@property (nonatomic, copy) NSArray *reviews;
+@property (readonly) Class superclass;
+@property (nonatomic) long long totalNumberOfReviews;
 
 + (id)business;
 + (id)businessWithDictionary:(id)arg1 context:(id)arg2;

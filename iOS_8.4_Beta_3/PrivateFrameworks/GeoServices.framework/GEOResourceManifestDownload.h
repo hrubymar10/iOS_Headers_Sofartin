@@ -7,9 +7,9 @@
     GEOResources *_resources;
 }
 
-@property(assign,readonly) bool hasResources;
-@property(assign,retain) GEODownloadMetadata * metadata;
-@property(assign,retain) GEOResources * resources;
+@property (nonatomic, readonly) bool hasResources;
+@property (nonatomic, retain) GEODownloadMetadata *metadata;
+@property (nonatomic, retain) GEOResources *resources;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

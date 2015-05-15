@@ -14,12 +14,12 @@
     NSMutableDictionary *mPropertiesMap;
 }
 
-@property(assign,retain) TSCH3DScenePropertyAccessor * accessor;
-@property(assign,retain) NSObject<TSCH3DScenePropertyAccessorFactory> * accessorFactory;
-@property(assign,retain) TSCH3DCamera * camera;
-@property(assign,readonly) <TSCH3DSceneDelegate> * delegate;
-@property(assign,retain) TSCH3DSceneObject * main;
-@property(assign,retain) TSCH3DScene * original;
+@property (nonatomic, retain) TSCH3DScenePropertyAccessor *accessor;
+@property (nonatomic, retain) NSObject<TSCH3DScenePropertyAccessorFactory> *accessorFactory;
+@property (nonatomic, retain) TSCH3DCamera *camera;
+@property (nonatomic, readonly) <TSCH3DSceneDelegate> *delegate;
+@property (nonatomic, retain) TSCH3DSceneObject *main;
+@property (nonatomic, retain) TSCH3DScene *original;
 
 + (id)scene;
 

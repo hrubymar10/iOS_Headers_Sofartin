@@ -6,10 +6,10 @@
     NSDictionary *_dictionary;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) long long height;
-@property(assign,readonly) NSDictionary * lookupDictionary;
-@property(assign,readonly) long long width;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) long long height;
+@property (nonatomic, readonly) NSDictionary *lookupDictionary;
+@property (nonatomic, readonly) long long width;
 
 - (id)URL;
 - (id)URLWithHeight:(long long)arg1 width:(long long)arg2;

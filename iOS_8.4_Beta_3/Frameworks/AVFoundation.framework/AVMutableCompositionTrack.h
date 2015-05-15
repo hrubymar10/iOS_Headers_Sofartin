@@ -6,12 +6,12 @@
     AVMutableCompositionTrackInternal *_mutablePriv;
 }
 
-@property(assign,copy) NSString * extendedLanguageTag;
-@property(assign,copy) NSString * languageCode;
-@property(assign,readwrite) int naturalTimeScale;
-@property(assign,readwrite) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } preferredTransform;
-@property(assign,readwrite) float preferredVolume;
-@property(assign,copy) NSArray * segments;
+@property (nonatomic, copy) NSString *extendedLanguageTag;
+@property (nonatomic, copy) NSString *languageCode;
+@property (nonatomic) int naturalTimeScale;
+@property (nonatomic) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } preferredTransform;
+@property (nonatomic) float preferredVolume;
+@property (nonatomic, copy) NSArray *segments;
 
 - (void)_setTrackReaderPropertyValue:(void*)arg1 forKey:(struct __CFString { }*)arg2;
 - (long long)alternateGroupID;

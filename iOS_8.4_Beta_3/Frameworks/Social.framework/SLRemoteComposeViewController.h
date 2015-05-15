@@ -6,7 +6,7 @@
     <SLRemoteComposeViewControllerDelegateProtocol> *_delegate;
 }
 
-@property(assign,readwrite) <SLRemoteComposeViewControllerDelegateProtocol> * delegate;
+@property (nonatomic) <SLRemoteComposeViewControllerDelegateProtocol> *delegate;
 
 - (void).cxx_destruct;
 - (id)delegate;

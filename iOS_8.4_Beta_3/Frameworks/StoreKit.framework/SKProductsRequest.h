@@ -6,7 +6,7 @@
     id _productsRequestInternal;
 }
 
-@property(assign,readwrite) <SKProductsRequestDelegate> * delegate;
+@property (nonatomic) <SKProductsRequestDelegate> *delegate;
 
 - (void)_handleReply:(id)arg1;
 - (void)_sendXPCMessage;

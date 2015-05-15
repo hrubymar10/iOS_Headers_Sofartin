@@ -12,13 +12,13 @@
     SPAssetCacheSyncData *_syncData;
 }
 
-@property(assign,retain) NSData * assetData;
-@property(assign,retain) NSString * assetKey;
-@property(assign,readwrite) unsigned long long cacheType;
-@property(assign,readwrite) unsigned long long error;
-@property(assign,retain) NSString * gizmoCacheIdentifier;
-@property(assign,readwrite) int messageType;
-@property(assign,retain) SPAssetCacheSyncData * syncData;
+@property (nonatomic, retain) NSData *assetData;
+@property (nonatomic, retain) NSString *assetKey;
+@property (nonatomic) unsigned long long cacheType;
+@property (nonatomic) unsigned long long error;
+@property (nonatomic, retain) NSString *gizmoCacheIdentifier;
+@property (nonatomic) int messageType;
+@property (nonatomic, retain) SPAssetCacheSyncData *syncData;
 
 + (id)fromProto:(id)arg1;
 + (id)toProto:(id)arg1;

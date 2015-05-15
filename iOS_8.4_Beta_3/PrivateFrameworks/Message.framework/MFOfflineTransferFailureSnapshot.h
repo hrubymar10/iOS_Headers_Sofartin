@@ -8,9 +8,9 @@
     NSString *_originalRemoteID;
 }
 
-@property(assign,readonly) NSString * originalMailboxID;
-@property(assign,readonly) unsigned long long originalMessageFlags;
-@property(assign,readonly) NSString * originalRemoteID;
+@property (nonatomic, readonly) NSString *originalMailboxID;
+@property (nonatomic, readonly) unsigned long long originalMessageFlags;
+@property (nonatomic, readonly) NSString *originalRemoteID;
 
 - (void)dealloc;
 - (id)description;

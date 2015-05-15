@@ -11,12 +11,12 @@
     int _validAttributes;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * nodes;
-@property(assign,readwrite) MFMessageBodyParser * parser;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *nodes;
+@property (nonatomic) MFMessageBodyParser *parser;
+@property (readonly) Class superclass;
 
 - (bool)_hasValueForAttributes:(int)arg1;
 - (void)_setValue:(int)arg1 forAttributes:(int)arg2;

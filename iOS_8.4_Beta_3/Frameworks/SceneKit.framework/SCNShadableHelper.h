@@ -11,10 +11,10 @@
     NSDictionary *_uniformNameToType;
 }
 
-@property(assign,readonly) id owner;
-@property(assign,retain) SCNProgram * program;
-@property(assign,copy) NSDictionary * shaderModifiers;
-@property(assign,readonly) NSArray * shaderModifiersUniformNames;
+@property (nonatomic, readonly) id owner;
+@property (nonatomic, retain) SCNProgram *program;
+@property (nonatomic, copy) NSDictionary *shaderModifiers;
+@property (nonatomic, readonly) NSArray *shaderModifiersUniformNames;
 
 + (bool)supportsSecureCoding;
 

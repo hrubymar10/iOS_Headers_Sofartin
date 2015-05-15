@@ -15,15 +15,15 @@
     NSString *_userAgentString;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RemoteUIControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id loadCompletion;
-@property(assign,retain) RUILoader * loader;
-@property(assign,readwrite) UINavigationController * navigationController;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * userAgentString;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RemoteUIControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id loadCompletion;
+@property (nonatomic, retain) RUILoader *loader;
+@property (nonatomic) UINavigationController *navigationController;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *userAgentString;
 
 - (void).cxx_destruct;
 - (void)_didRemoveObjectModel:(id)arg1;

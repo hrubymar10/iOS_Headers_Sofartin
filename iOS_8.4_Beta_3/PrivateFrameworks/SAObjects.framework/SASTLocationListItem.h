@@ -4,15 +4,15 @@
 
 @interface SASTLocationListItem : AceObject <SASTActionableTemplateItem>
 
-@property(assign,retain) <SASTTemplateAction> * action;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) SAUIDecoratedText * formattedDistance;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SASTTemplateStarRating * rating;
-@property(assign,retain) SAUIDecoratedText * subtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SAUIDecoratedText * title;
+@property (nonatomic, retain) <SASTTemplateAction> *action;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) SAUIDecoratedText *formattedDistance;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SASTTemplateStarRating *rating;
+@property (nonatomic, retain) SAUIDecoratedText *subtitle;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SAUIDecoratedText *title;
 
 + (id)locationListItem;
 + (id)locationListItemWithDictionary:(id)arg1 context:(id)arg2;

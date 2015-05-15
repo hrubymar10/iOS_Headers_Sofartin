@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readwrite) PKHostPlugIn * plugin;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property PKHostPlugIn *plugin;
+@property (retain) NSObject<OS_dispatch_queue> *queue;
 
 - (void).cxx_destruct;
 - (id)initWithPlugIn:(id)arg1;

@@ -8,7 +8,7 @@
     TSCH3DGLPointerCountedSet *mShadersUseCount;
 }
 
-@property(assign,readwrite) unsigned long long frames;
+@property (nonatomic) unsigned long long frames;
 
 + (id)statisticsData;
 

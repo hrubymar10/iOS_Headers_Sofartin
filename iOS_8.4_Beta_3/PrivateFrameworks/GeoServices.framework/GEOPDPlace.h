@@ -16,15 +16,15 @@
     int _status;
 }
 
-@property(assign,retain) NSMutableArray * components;
-@property(assign,readwrite) bool hasMuid;
-@property(assign,readwrite) bool hasPreferredMuid;
-@property(assign,readwrite) bool hasResultProviderId;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,readwrite) unsigned long long muid;
-@property(assign,readwrite) unsigned long long preferredMuid;
-@property(assign,readwrite) int resultProviderId;
-@property(assign,readwrite) int status;
+@property (nonatomic, retain) NSMutableArray *components;
+@property (nonatomic) bool hasMuid;
+@property (nonatomic) bool hasPreferredMuid;
+@property (nonatomic) bool hasResultProviderId;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic) unsigned long long muid;
+@property (nonatomic) unsigned long long preferredMuid;
+@property (nonatomic) int resultProviderId;
+@property (nonatomic) int status;
 
 + (id)attributionForPlaceData:(id)arg1 type:(int)arg2;
 + (id)failedPlaceData;

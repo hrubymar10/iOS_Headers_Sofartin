@@ -26,14 +26,14 @@
     TSWPLayout *_headerFooterLayouts;
 }
 
-@property(assign,readonly) bool allowsHeaderFooter;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bodyRect;
-@property(assign,readonly) double footerHeight;
-@property(assign,readonly) bool hasFooters;
-@property(assign,readonly) bool hasHeaders;
-@property(assign,readonly) <TSWPHeaderFooterProvider> * headerFooterProvider;
-@property(assign,readonly) bool headerFooterProviderValid;
-@property(assign,readonly) double headerHeight;
+@property (nonatomic, readonly) bool allowsHeaderFooter;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bodyRect;
+@property (nonatomic, readonly) double footerHeight;
+@property (nonatomic, readonly) bool hasFooters;
+@property (nonatomic, readonly) bool hasHeaders;
+@property (nonatomic, readonly) <TSWPHeaderFooterProvider> *headerFooterProvider;
+@property (nonatomic, readonly) bool headerFooterProviderValid;
+@property (nonatomic, readonly) double headerHeight;
 
 - (id).cxx_construct;
 - (bool)allowsHeaderFooter;

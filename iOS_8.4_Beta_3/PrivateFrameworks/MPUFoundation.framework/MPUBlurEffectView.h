@@ -7,8 +7,8 @@
     MPUPinningView *_blurView;
 }
 
-@property(assign,retain) UIImageView * blurImageView;
-@property(assign,retain) MPUPinningView * blurView;
+@property (nonatomic, retain) UIImageView *blurImageView;
+@property (nonatomic, retain) MPUPinningView *blurView;
 
 - (void).cxx_destruct;
 - (id)blurImageView;

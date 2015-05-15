@@ -11,9 +11,9 @@
     int mType;
 }
 
-@property(assign,readonly) int listDefinitionId;
-@property(assign,readonly) NSString * styleId;
-@property(assign,copy) NSString * styleRefId;
+@property (nonatomic, readonly) int listDefinitionId;
+@property (nonatomic, readonly) NSString *styleId;
+@property (nonatomic, copy) NSString *styleRefId;
 
 - (id)addLevel;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

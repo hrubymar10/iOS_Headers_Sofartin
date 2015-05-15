@@ -7,8 +7,8 @@
     NSDictionary *_stationDictionary;
 }
 
-@property(assign,copy) NSDictionary * highlightRanges;
-@property(assign,copy) NSDictionary * stationDictionary;
+@property (nonatomic, readonly, copy) NSDictionary *highlightRanges;
+@property (nonatomic, readonly, copy) NSDictionary *stationDictionary;
 
 - (void).cxx_destruct;
 - (id)_initWithResponseDictionary:(id)arg1;

@@ -12,11 +12,11 @@
     } _has;
 }
 
-@property(assign,readwrite) unsigned long long created;
-@property(assign,readwrite) unsigned long long expires;
-@property(assign,retain) NSMutableArray * fields;
-@property(assign,readwrite) bool hasCreated;
-@property(assign,readwrite) bool hasExpires;
+@property (nonatomic) unsigned long long created;
+@property (nonatomic) unsigned long long expires;
+@property (nonatomic, retain) NSMutableArray *fields;
+@property (nonatomic) bool hasCreated;
+@property (nonatomic) bool hasExpires;
 
 - (void).cxx_destruct;
 - (void)addFields:(id)arg1;

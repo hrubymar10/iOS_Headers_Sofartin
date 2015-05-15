@@ -18,16 +18,16 @@
     unsigned long long _transportType;
 }
 
-@property(assign,readonly) bool _includeBasicRoutePoints;
-@property(assign,readonly) bool _includeEntryPoints;
-@property(assign,readonly) bool _includeTrafficIncidents;
-@property(assign,readonly) bool _includeTravelTimes;
-@property(assign,readonly) bool _includeTypicalRouteDuration;
-@property(assign,readonly) bool _includeZilchRoutePoints;
-@property(getter=_additionalTransportTypesRequested,setter=_setAdditionalTransportTypesRequested:,assign,retain) NSArray * additionalTransportTypesRequested;
-@property(assign,retain) MKMapItem * destination;
-@property(getter=_includeDistanceInETA,setter=_setIncludeDistanceInETA:,assign,readwrite) bool includeDistanceInETA;
-@property(assign,retain) MKMapItem * source;
+@property (nonatomic, readonly) bool _includeBasicRoutePoints;
+@property (nonatomic, readonly) bool _includeEntryPoints;
+@property (nonatomic, readonly) bool _includeTrafficIncidents;
+@property (nonatomic, readonly) bool _includeTravelTimes;
+@property (nonatomic, readonly) bool _includeTypicalRouteDuration;
+@property (nonatomic, readonly) bool _includeZilchRoutePoints;
+@property (getter=_additionalTransportTypesRequested, setter=_setAdditionalTransportTypesRequested:, nonatomic, retain) NSArray *additionalTransportTypesRequested;
+@property (nonatomic, retain) MKMapItem *destination;
+@property (getter=_includeDistanceInETA, setter=_setIncludeDistanceInETA:, nonatomic) bool includeDistanceInETA;
+@property (nonatomic, retain) MKMapItem *source;
 
 + (bool)isDirectionsRequestURL:(id)arg1;
 

@@ -4,7 +4,7 @@
 
 @interface SKUIOfferViewElement : SKUIViewElement
 
-@property(getter=isSimpleOffer,assign,readonly) bool simpleOffer;
+@property (getter=isSimpleOffer, nonatomic, readonly) bool simpleOffer;
 
 - (void)enumerateChildrenUsingBlock:(id)arg1;
 - (bool)isSimpleOffer;

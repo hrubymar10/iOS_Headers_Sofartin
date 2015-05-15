@@ -4,14 +4,14 @@
 
 @interface SAWeatherLocationAddCompleted : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSURL * weatherLocationId;
+@property (nonatomic, copy) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSURL *weatherLocationId;
 
 + (id)locationAddCompleted;
 + (id)locationAddCompletedWithDictionary:(id)arg1 context:(id)arg2;

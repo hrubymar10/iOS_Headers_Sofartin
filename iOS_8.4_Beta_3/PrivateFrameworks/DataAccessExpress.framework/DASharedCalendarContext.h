@@ -10,11 +10,11 @@
     bool _shouldSyncCalendar;
 }
 
-@property(assign,readonly) NSString * accountID;
-@property(assign,readonly) NSString * calendarID;
-@property(assign,copy) id completionBlock;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readwrite) bool shouldSyncCalendar;
+@property (nonatomic, readonly) NSString *accountID;
+@property (nonatomic, readonly) NSString *calendarID;
+@property (nonatomic, readonly, copy) id completionBlock;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic) bool shouldSyncCalendar;
 
 - (void).cxx_destruct;
 - (id)accountID;

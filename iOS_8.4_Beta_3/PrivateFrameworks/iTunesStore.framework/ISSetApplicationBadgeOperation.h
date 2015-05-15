@@ -7,8 +7,8 @@
     NSString *_bundleIdentifier;
 }
 
-@property(assign,retain) NSString * badgeValue;
-@property(assign,retain) NSString * bundleIdentifier;
+@property (retain) NSString *badgeValue;
+@property (retain) NSString *bundleIdentifier;
 
 - (id)badgeValue;
 - (id)bundleIdentifier;

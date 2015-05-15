@@ -20,10 +20,10 @@
     PLXPCTransaction *_xpcTransaction;
 }
 
-@property(getter=_isIndexing,setter=_setIndexing:,assign,readwrite) bool _indexing;
-@property(setter=_setInqAfterIndexingDidIterate:,assign,copy) id _inqAfterIndexingDidIterate;
-@property(assign,readonly) unsigned long long enqueuedUUIDsCount;
-@property(getter=isIndexingPaused,setter=setIndexingPaused:,assign,readwrite) bool indexingPaused;
+@property (getter=_isIndexing, setter=_setIndexing:) bool _indexing;
+@property (setter=_setInqAfterIndexingDidIterate:, nonatomic, copy) id _inqAfterIndexingDidIterate;
+@property (readonly) unsigned long long enqueuedUUIDsCount;
+@property (getter=isIndexingPaused, setter=setIndexingPaused:) bool indexingPaused;
 
 + (id)_databasePathInDirectory:(id)arg1;
 + (id)_defaultDatabaseDirectory;

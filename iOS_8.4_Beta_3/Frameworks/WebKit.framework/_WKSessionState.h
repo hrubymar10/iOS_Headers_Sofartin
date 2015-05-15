@@ -39,7 +39,7 @@
     } _sessionState;
 }
 
-@property(assign,copy) NSData * data;
+@property (nonatomic, readonly, copy) NSData *data;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

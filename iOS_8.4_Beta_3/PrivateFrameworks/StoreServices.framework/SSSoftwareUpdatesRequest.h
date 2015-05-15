@@ -6,8 +6,8 @@
     SSSoftwareUpdatesContext *_context;
 }
 
-@property(assign,readwrite) <SSSoftwareUpdatesRequestDelegate> * delegate;
-@property(assign,readonly) SSSoftwareUpdatesContext * updateQueueContext;
+@property (nonatomic) <SSSoftwareUpdatesRequestDelegate> *delegate;
+@property (readonly) SSSoftwareUpdatesContext *updateQueueContext;
 
 - (id)copyXPCEncoding;
 - (void)dealloc;

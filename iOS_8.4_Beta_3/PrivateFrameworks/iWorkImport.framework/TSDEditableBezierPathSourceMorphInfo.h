@@ -8,8 +8,8 @@
     TSDEditableBezierPathSource *mSmoothOriginal;
 }
 
-@property(assign,retain) TSDEditableBezierPathSource * original;
-@property(assign,retain) TSDEditableBezierPathSource * smoothOriginal;
+@property (nonatomic, retain) TSDEditableBezierPathSource *original;
+@property (nonatomic, retain) TSDEditableBezierPathSource *smoothOriginal;
 
 - (void)dealloc;
 - (id)initWithEditableBezierPathSource:(id)arg1;

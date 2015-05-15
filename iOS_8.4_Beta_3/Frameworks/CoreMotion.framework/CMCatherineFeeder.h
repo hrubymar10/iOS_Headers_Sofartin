@@ -6,7 +6,7 @@
     CMCatherineFeederInternal *_internal;
 }
 
-@property(assign,readonly) CMCatherineFeederInternal * internal;
+@property (nonatomic, readonly) CMCatherineFeederInternal *internal;
 
 - (void)dealloc;
 - (void)feedCatherine:(double)arg1 confidence:(double)arg2;

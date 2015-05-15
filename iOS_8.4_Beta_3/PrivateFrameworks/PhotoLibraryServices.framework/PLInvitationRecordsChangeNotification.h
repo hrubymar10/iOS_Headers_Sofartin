@@ -7,8 +7,8 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,retain) PLGenericAlbum * album;
-@property(assign,readonly) bool invitationRecordsDidChange;
+@property (nonatomic, readonly, retain) PLGenericAlbum *album;
+@property (nonatomic, readonly) bool invitationRecordsDidChange;
 
 + (id)notificationWithAlbum:(id)arg1 snapshot:(id)arg2;
 

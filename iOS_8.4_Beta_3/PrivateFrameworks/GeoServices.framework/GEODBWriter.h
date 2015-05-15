@@ -38,10 +38,10 @@
     NSObject<OS_dispatch_queue> *_writeQueue;
 }
 
-@property(assign,readwrite) bool closed;
-@property(assign,readonly) unsigned long long databaseSize;
-@property(assign,readwrite) unsigned long long maxDatabaseSize;
-@property(assign,readonly) NSString * path;
+@property bool closed;
+@property (nonatomic, readonly) unsigned long long databaseSize;
+@property (nonatomic) unsigned long long maxDatabaseSize;
+@property (nonatomic, readonly) NSString *path;
 
 - (void)_assertDatabaseSize;
 - (void)_closeDB;

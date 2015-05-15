@@ -6,7 +6,7 @@
     id _contentEditingOutputCommitHandler;
 }
 
-@property(assign,copy) id contentEditingOutputCommitHandler;
+@property (copy) id contentEditingOutputCommitHandler;
 
 + (id)_extensionAuxiliaryHostProtocol;
 + (id)_extensionAuxiliaryVendorProtocol;

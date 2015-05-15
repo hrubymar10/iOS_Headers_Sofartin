@@ -7,8 +7,8 @@
     NSDictionary *_namesByLanguage;
 }
 
-@property(assign,readonly) NSArray * members;
-@property(assign,readonly) NSDictionary * namesByLanguage;
+@property (nonatomic, readonly) NSArray *members;
+@property (nonatomic, readonly) NSDictionary *namesByLanguage;
 
 - (id)bestMatchForStyling:(struct TCFontStyling { int x1; unsigned int x2; BOOL x3; bool x4; int x5; })arg1;
 - (void)dealloc;

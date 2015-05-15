@@ -8,15 +8,15 @@
     NSObject<UITextDocumentProxy> *_textDocumentProxy;
 }
 
-@property(assign,readwrite) bool _alignsToContentViewController;
-@property(assign,readonly) UIKeyboard * _keyboard;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIInputView * inputView;
-@property(assign,copy) NSString * primaryLanguage;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSObject<UITextDocumentProxy> * textDocumentProxy;
+@property (nonatomic) bool _alignsToContentViewController;
+@property (nonatomic, readonly) UIKeyboard *_keyboard;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIInputView *inputView;
+@property (nonatomic, copy) NSString *primaryLanguage;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSObject<UITextDocumentProxy> *textDocumentProxy;
 
 + (bool)_requiresProxyInterface;
 

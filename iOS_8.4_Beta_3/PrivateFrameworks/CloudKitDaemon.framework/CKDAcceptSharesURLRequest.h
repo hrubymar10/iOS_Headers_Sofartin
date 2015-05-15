@@ -8,9 +8,9 @@
     NSArray *_shareInfosToAccept;
 }
 
-@property(assign,copy) id shareAcceptedBlock;
-@property(assign,retain) NSMutableDictionary * shareInfoByRequestID;
-@property(assign,retain) NSArray * shareInfosToAccept;
+@property (nonatomic, copy) id shareAcceptedBlock;
+@property (nonatomic, retain) NSMutableDictionary *shareInfoByRequestID;
+@property (nonatomic, retain) NSArray *shareInfosToAccept;
 
 - (void).cxx_destruct;
 - (id)initWithShareInfosToAccept:(id)arg1;

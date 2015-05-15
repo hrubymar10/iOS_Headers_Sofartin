@@ -14,8 +14,8 @@
     int _transactionType;
 }
 
-@property(assign,readonly) struct sqlite3 { }* db;
-@property(assign,readwrite) MFSQLiteConnectionPool * pool;
+@property (nonatomic, readonly) struct sqlite3 { }*db;
+@property (nonatomic) MFSQLiteConnectionPool *pool;
 
 - (const char *)_vfsModuleName;
 - (int)beginTransaction;

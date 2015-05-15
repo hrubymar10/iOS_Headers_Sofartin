@@ -10,11 +10,11 @@
     CDDebug *_debug;
 }
 
-@property(assign,readwrite) bool admissionOverride;
-@property(assign,readwrite) bool admissionResult;
-@property(assign,readonly) NSString * clientName;
-@property(assign,readonly) CDDXPCConnection * connection;
-@property(assign,readonly) CDDebug * debug;
+@property bool admissionOverride;
+@property bool admissionResult;
+@property (readonly) NSString *clientName;
+@property (readonly) CDDXPCConnection *connection;
+@property (readonly) CDDebug *debug;
 
 - (void).cxx_destruct;
 - (bool)activitySignal:(id)arg1 error:(id*)arg2 replyHandler:(id)arg3;

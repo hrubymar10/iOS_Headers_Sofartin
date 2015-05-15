@@ -8,9 +8,9 @@
     double _shadowHeightGrowthFactor;
 }
 
-@property(assign,readwrite) bool drawsShadow;
-@property(assign,readwrite) bool shadowFadesToBottom;
-@property(assign,readwrite) double shadowHeightGrowthFactor;
+@property (nonatomic) bool drawsShadow;
+@property (nonatomic) bool shadowFadesToBottom;
+@property (nonatomic) double shadowHeightGrowthFactor;
 
 + (double)width;
 

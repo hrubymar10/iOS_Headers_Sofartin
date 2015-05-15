@@ -6,8 +6,8 @@
     id _internal;
 }
 
-@property(assign,readonly) NSArray * invalidProductIdentifiers;
-@property(assign,readonly) NSArray * products;
+@property (nonatomic, readonly) NSArray *invalidProductIdentifiers;
+@property (nonatomic, readonly) NSArray *products;
 
 - (void)_setInvalidIdentifiers:(id)arg1;
 - (void)_setProducts:(id)arg1;

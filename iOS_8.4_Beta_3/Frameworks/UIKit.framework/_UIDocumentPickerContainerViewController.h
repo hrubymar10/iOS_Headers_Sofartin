@@ -10,15 +10,15 @@
     _UIDocumentPickerViewServiceViewController *_weak_serviceViewController;
 }
 
-@property(assign,retain) UIViewController<_UIDocumentPickerContainedViewController> * childViewController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) _UIDocumentPickerContainerModel * model;
-@property(getter=isRootContainer,assign,readwrite) bool rootContainer;
-@property(assign,retain) _UINavigationControllerPalette * searchPalette;
-@property(assign,readwrite) <_UIDocumentPickerServiceViewController> * serviceViewController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIViewController<_UIDocumentPickerContainedViewController> *childViewController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) _UIDocumentPickerContainerModel *model;
+@property (getter=isRootContainer, nonatomic) bool rootContainer;
+@property (nonatomic, retain) _UINavigationControllerPalette *searchPalette;
+@property (nonatomic) <_UIDocumentPickerServiceViewController> *serviceViewController;
+@property (readonly) Class superclass;
 
 - (id)_mangledFilenameForURL:(id)arg1;
 - (void)_pickCurrentLocationForUpload:(id)arg1;

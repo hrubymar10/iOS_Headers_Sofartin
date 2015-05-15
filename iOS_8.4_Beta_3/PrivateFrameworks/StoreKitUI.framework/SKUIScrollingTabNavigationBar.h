@@ -9,11 +9,11 @@
     } _positionOffset;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } positionOffset;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct UIOffset { double x1; double x2; } positionOffset;
+@property (readonly) Class superclass;
 
 - (struct UIOffset { double x1; double x2; })positionOffset;
 - (void)setCenter:(struct CGPoint { double x1; double x2; })arg1;

@@ -8,11 +8,11 @@
     <MusicNowPlayingVideoViewControllerDelegate> *_videoViewControllerDelegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <MusicNowPlayingVideoViewControllerDelegate> * videoViewControllerDelegate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) <MusicNowPlayingVideoViewControllerDelegate> *videoViewControllerDelegate;
 
 - (void).cxx_destruct;
 - (void)_cancelIdleTimer;

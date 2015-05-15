@@ -17,9 +17,9 @@
     PDTransition *mTransition;
 }
 
-@property(assign,readonly) bool hasMappableSlideNumberShape;
-@property(assign,readonly) OADShape * slideNumberPlaceholder;
-@property(assign,readonly) OADShape * slideNumberShape;
+@property (nonatomic, readonly) bool hasMappableSlideNumberShape;
+@property (nonatomic, readonly) OADShape *slideNumberPlaceholder;
+@property (nonatomic, readonly) OADShape *slideNumberShape;
 
 + (int)inheritedPlaceholderType:(int)arg1;
 

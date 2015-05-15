@@ -7,8 +7,8 @@
     NSString *_string;
 }
 
-@property(assign,readwrite) bool caseSensitive;
-@property(assign,copy) NSString * string;
+@property (nonatomic) bool caseSensitive;
+@property (nonatomic, copy) NSString *string;
 
 - (void).cxx_destruct;
 - (id)_label;

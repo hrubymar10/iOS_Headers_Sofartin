@@ -7,7 +7,7 @@
     unsigned int _fileScaleFactor;
 }
 
-@property(assign,retain) NSSet * renditions;
+@property (nonatomic, retain) NSSet *renditions;
 
 - (void)_logError:(id)arg1;
 - (int)exifOrientation;

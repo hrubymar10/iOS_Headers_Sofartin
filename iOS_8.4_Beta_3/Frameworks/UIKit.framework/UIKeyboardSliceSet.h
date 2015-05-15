@@ -31,14 +31,14 @@
     } _startRect;
 }
 
-@property(assign,readwrite) NSMutableDictionary * controlKeys;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endRect;
-@property(assign,readwrite) double leftWidth;
-@property(assign,readwrite) double mergePoint;
-@property(assign,readwrite) double rightWidth;
-@property(assign,retain) NSString * sliceSetID;
-@property(assign,readonly) NSMutableSet * slices;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } startRect;
+@property NSMutableDictionary *controlKeys;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } endRect;
+@property double leftWidth;
+@property double mergePoint;
+@property double rightWidth;
+@property (retain) NSString *sliceSetID;
+@property (readonly) NSMutableSet *slices;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } startRect;
 
 + (id)sliceSetWithDictionaryRepresenation:(id)arg1;
 

@@ -14,14 +14,14 @@
     bool _useVoiceBooster;
 }
 
-@property(assign,readwrite) long long footprint;
-@property(assign,readwrite) long long gender;
-@property(assign,retain) NSString * identifier;
-@property(assign,readwrite) bool isCustomVoice;
-@property(assign,readonly) bool isDefault;
-@property(assign,retain) NSString * language;
-@property(assign,retain) NSString * name;
-@property(assign,readonly) bool useVoiceBooster;
+@property (nonatomic) long long footprint;
+@property (nonatomic) long long gender;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic) bool isCustomVoice;
+@property (nonatomic, readonly) bool isDefault;
+@property (nonatomic, retain) NSString *language;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, readonly) bool useVoiceBooster;
 
 - (void).cxx_destruct;
 - (void)_initializeVoiceBooster;

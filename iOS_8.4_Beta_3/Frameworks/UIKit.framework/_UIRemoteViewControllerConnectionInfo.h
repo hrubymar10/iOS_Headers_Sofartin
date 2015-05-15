@@ -18,19 +18,19 @@
     id _viewControllerOperatorProxy;
 }
 
-@property(assign,retain) _UIHostedWindowHostingHandle * hostedWindowHostingHandle;
-@property(assign,retain) _UIViewServiceInterface * interface;
-@property(assign,readwrite) long long preferredStatusBarStyle;
-@property(assign,readwrite) bool prefersStatusBarHidden;
-@property(assign,retain) _UIHostedWindowHostingHandle * remoteKeyboardsWindowHostingHandle;
-@property(assign,retain) _UIViewServiceXPCMachSendRight * serviceAccessibilityServerPortWrapper;
-@property(assign,retain) id serviceViewControllerControlMessageProxy;
-@property(assign,retain) id serviceViewControllerProxy;
-@property(assign,retain) NSArray * serviceViewControllerSupportedInterfaceOrientations;
-@property(assign,retain) id textEffectsOperatorProxy;
-@property(assign,retain) _UIHostedWindowHostingHandle * textEffectsWindowAboveStatusBarHostingHandle;
-@property(assign,retain) _UIHostedWindowHostingHandle * textEffectsWindowHostingHandle;
-@property(assign,retain) id viewControllerOperatorProxy;
+@property (retain) _UIHostedWindowHostingHandle *hostedWindowHostingHandle;
+@property (retain) _UIViewServiceInterface *interface;
+@property long long preferredStatusBarStyle;
+@property bool prefersStatusBarHidden;
+@property (retain) _UIHostedWindowHostingHandle *remoteKeyboardsWindowHostingHandle;
+@property (retain) _UIViewServiceXPCMachSendRight *serviceAccessibilityServerPortWrapper;
+@property (retain) id serviceViewControllerControlMessageProxy;
+@property (retain) id serviceViewControllerProxy;
+@property (retain) NSArray *serviceViewControllerSupportedInterfaceOrientations;
+@property (retain) id textEffectsOperatorProxy;
+@property (retain) _UIHostedWindowHostingHandle *textEffectsWindowAboveStatusBarHostingHandle;
+@property (retain) _UIHostedWindowHostingHandle *textEffectsWindowHostingHandle;
+@property (retain) id viewControllerOperatorProxy;
 
 - (void)dealloc;
 - (id)hostedWindowHostingHandle;

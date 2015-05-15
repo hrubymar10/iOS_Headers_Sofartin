@@ -12,26 +12,26 @@
     TSPUnknownContent *_unknownContent;
 }
 
-@property(assign,readonly) bool allowsImplicitComponentOwnership;
-@property(assign,readonly) TSPObject * componentRootObject;
-@property(assign,readonly) TSPObjectContext * context;
-@property(assign,readonly) unsigned int delayedArchivingPriority;
-@property(assign,readonly) bool isCommandObject;
-@property(assign,readonly) bool isComponentRoot;
-@property(assign,readonly) bool needsArchiving;
-@property(assign,copy) NSUUID * objectUUID;
-@property(assign,readonly) TSUUUIDPath * objectUUIDPath;
-@property(assign,readonly) NSString * packageLocator;
-@property(assign,readonly) bool shouldDelayArchiving;
-@property(assign,readonly) bool storeOutsideObjectArchive;
-@property(assign,readwrite) TSPComponent * tsp_component;
-@property(assign,readwrite) <TSPObjectDelegate> * tsp_delegate;
-@property(assign,readonly) NSString * tsp_description;
-@property(assign,readwrite) long long tsp_identifier;
-@property(assign,readonly) bool tsp_isInDocument;
-@property(assign,readwrite) long long tsp_modifyObjectToken;
-@property(assign,readonly) long long tsp_unarchiverIdentifier;
-@property(assign,readonly) TSPUnknownContent * tsp_unknownContent;
+@property (nonatomic, readonly) bool allowsImplicitComponentOwnership;
+@property (nonatomic, readonly) TSPObject *componentRootObject;
+@property (nonatomic, readonly) TSPObjectContext *context;
+@property (nonatomic, readonly) unsigned int delayedArchivingPriority;
+@property (nonatomic, readonly) bool isCommandObject;
+@property (nonatomic, readonly) bool isComponentRoot;
+@property (nonatomic, readonly) bool needsArchiving;
+@property (nonatomic, copy) NSUUID *objectUUID;
+@property (nonatomic, readonly) TSUUUIDPath *objectUUIDPath;
+@property (nonatomic, readonly) NSString *packageLocator;
+@property (nonatomic, readonly) bool shouldDelayArchiving;
+@property (nonatomic, readonly) bool storeOutsideObjectArchive;
+@property (nonatomic) TSPComponent *tsp_component;
+@property (nonatomic) <TSPObjectDelegate> *tsp_delegate;
+@property (nonatomic, readonly) NSString *tsp_description;
+@property (nonatomic) long long tsp_identifier;
+@property (nonatomic, readonly) bool tsp_isInDocument;
+@property (nonatomic) long long tsp_modifyObjectToken;
+@property (nonatomic, readonly) long long tsp_unarchiverIdentifier;
+@property (nonatomic, readonly) TSPUnknownContent *tsp_unknownContent;
 
 + (bool)needsObjectUUID;
 + (id)newObjectForUnarchiver:(id)arg1;

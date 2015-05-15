@@ -23,12 +23,12 @@
     } _startLocation;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } controlPoint;
-@property(assign,readonly) int endEndpointType;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } endLocation;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } midpointLocation;
-@property(assign,readonly) int startEndpointType;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } startLocation;
+@property (readonly) struct CGPoint { double x1; double x2; } controlPoint;
+@property (readonly) int endEndpointType;
+@property (readonly) struct CGPoint { double x1; double x2; } endLocation;
+@property (readonly) struct CGPoint { double x1; double x2; } midpointLocation;
+@property (readonly) int startEndpointType;
+@property (readonly) struct CGPoint { double x1; double x2; } startLocation;
 
 - (id).cxx_construct;
 - (struct CGPoint { double x1; double x2; })controlPoint;

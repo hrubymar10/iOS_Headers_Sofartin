@@ -6,7 +6,7 @@
     double _maximumChangeRate;
 }
 
-@property(assign,readwrite) double maximumChangeRate;
+@property (nonatomic) double maximumChangeRate;
 
 - (double)maximumChangeRate;
 - (void)setMaximumChangeRate:(double)arg1;

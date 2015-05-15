@@ -18,7 +18,7 @@
     bool mValid;
 }
 
-@property(assign,readonly) TSCH3DAxisLabelKind * kind;
+@property (nonatomic, readonly) TSCH3DAxisLabelKind *kind;
 
 + (id)enumeratorWithAxisLabelEnumerator:(id)arg1;
 

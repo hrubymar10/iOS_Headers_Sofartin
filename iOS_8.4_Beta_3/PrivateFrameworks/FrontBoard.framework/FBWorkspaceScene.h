@@ -14,16 +14,16 @@
     NSObject<OS_dispatch_queue> *_workspaceQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) <FBSceneHost> * host;
-@property(assign,copy) NSString * identifier;
-@property(assign,readonly) FBWorkspace * parentWorkspace;
-@property(getter=_workspaceQueue_sceneSettings,setter=_workspaceQueue_setSceneSettings:,assign,copy) FBSSceneSettings * sceneSettings;
-@property(getter=_workspaceQueue_hasSentCreationEvent,setter=_workspaceQueue_setSentCreationEvent:,assign,readwrite) bool sentCreationEvent;
-@property(assign,copy) FBSSceneSettings * settings;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) <FBSceneHost> *host;
+@property (nonatomic, readonly, copy) NSString *identifier;
+@property (nonatomic, readonly) FBWorkspace *parentWorkspace;
+@property (getter=_workspaceQueue_sceneSettings, setter=_workspaceQueue_setSceneSettings:, nonatomic, copy) FBSSceneSettings *sceneSettings;
+@property (getter=_workspaceQueue_hasSentCreationEvent, setter=_workspaceQueue_setSentCreationEvent:, nonatomic) bool sentCreationEvent;
+@property (nonatomic, readonly, copy) FBSSceneSettings *settings;
+@property (readonly) Class superclass;
 
 - (id)_descriptionWithMultilinePrefix:(id)arg1;
 - (id)_workspaceQueue;

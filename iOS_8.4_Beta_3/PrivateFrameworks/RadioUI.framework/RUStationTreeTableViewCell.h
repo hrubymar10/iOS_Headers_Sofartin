@@ -14,13 +14,13 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readonly) UIButton * addButton;
-@property(assign,readonly) RUAudioPreviewView * audioPreviewView;
-@property(assign,readwrite) long long cellDisplayStyle;
-@property(assign,copy) NSString * nowPlayingText;
-@property(getter=isPlaying,assign,readwrite) bool playing;
-@property(assign,readwrite) bool showsActivityIndicator;
-@property(assign,copy) NSString * title;
+@property (nonatomic, readonly) UIButton *addButton;
+@property (nonatomic, readonly) RUAudioPreviewView *audioPreviewView;
+@property (nonatomic) long long cellDisplayStyle;
+@property (nonatomic, copy) NSString *nowPlayingText;
+@property (getter=isPlaying, nonatomic) bool playing;
+@property (nonatomic) bool showsActivityIndicator;
+@property (nonatomic, copy) NSString *title;
 
 + (bool)_audioPreviewViewShowsFaceWhenNotPlaying;
 + (struct CGSize { double x1; double x2; })_audioPreviewViewSize;

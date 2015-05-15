@@ -7,8 +7,8 @@
     bool _wasSuccessful;
 }
 
-@property(assign,retain) NSDictionary * message;
-@property(assign,readwrite) bool wasSuccessful;
+@property (retain) NSDictionary *message;
+@property bool wasSuccessful;
 
 + (id)result;
 + (id)resultWithWasSuccessful:(bool)arg1 message:(id)arg2;

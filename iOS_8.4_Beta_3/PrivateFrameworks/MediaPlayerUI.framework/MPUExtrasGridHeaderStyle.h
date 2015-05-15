@@ -21,17 +21,17 @@
     NSString *_titleTextStyle;
 }
 
-@property(assign,readwrite) double bottomLabelDescender;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } insets;
-@property(assign,readwrite) bool showsImage;
-@property(assign,retain) UIColor * subtitleColor;
-@property(assign,retain) NSDictionary * subtitleDefaultFontAttributes;
-@property(assign,readwrite) double subtitleLineHeight;
-@property(assign,retain) NSString * subtitleTextStyle;
-@property(assign,retain) UIColor * titleColor;
-@property(assign,retain) NSDictionary * titleDefaultFontAttributes;
-@property(assign,readwrite) double titleLineHeight;
-@property(assign,retain) NSString * titleTextStyle;
+@property (nonatomic) double bottomLabelDescender;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } insets;
+@property (nonatomic) bool showsImage;
+@property (nonatomic, retain) UIColor *subtitleColor;
+@property (nonatomic, retain) NSDictionary *subtitleDefaultFontAttributes;
+@property (nonatomic) double subtitleLineHeight;
+@property (nonatomic, retain) NSString *subtitleTextStyle;
+@property (nonatomic, retain) UIColor *titleColor;
+@property (nonatomic, retain) NSDictionary *titleDefaultFontAttributes;
+@property (nonatomic) double titleLineHeight;
+@property (nonatomic, retain) NSString *titleTextStyle;
 
 - (void).cxx_destruct;
 - (double)bottomLabelDescender;

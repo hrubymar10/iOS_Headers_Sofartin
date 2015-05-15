@@ -14,16 +14,16 @@
     UIColor *_fillColor;
 }
 
-@property(assign,readwrite) double borderAlpha;
-@property(assign,retain) UIColor * borderColor;
-@property(assign,readwrite) double borderWidth;
-@property(assign,readwrite) double dropShadowAlpha;
-@property(assign,retain) UIColor * dropShadowColor;
-@property(assign,readwrite) unsigned long long dropShadowEdges;
-@property(assign,readwrite) double dropShadowWidth;
-@property(assign,readwrite) double fillAlpha;
-@property(assign,retain) UIColor * fillColor;
-@property(getter=isFullyTransparent,assign,readonly) bool fullyTransparent;
+@property (nonatomic) double borderAlpha;
+@property (nonatomic, retain) UIColor *borderColor;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) double dropShadowAlpha;
+@property (nonatomic, retain) UIColor *dropShadowColor;
+@property (nonatomic) unsigned long long dropShadowEdges;
+@property (nonatomic) double dropShadowWidth;
+@property (nonatomic) double fillAlpha;
+@property (nonatomic, retain) UIColor *fillColor;
+@property (getter=isFullyTransparent, nonatomic, readonly) bool fullyTransparent;
 
 - (void).cxx_destruct;
 - (double)borderAlpha;

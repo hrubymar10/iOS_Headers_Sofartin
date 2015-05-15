@@ -18,14 +18,14 @@
     UIColor *_pageIndicatorTintColor;
 }
 
-@property(assign,readwrite) long long currentPage;
-@property(assign,retain) UIColor * currentPageIndicatorTintColor;
-@property(assign,readwrite) bool defersCurrentPageDisplay;
-@property(assign,readwrite) bool hidesForSinglePage;
-@property(getter=_legibilitySettings,setter=_setLegibilitySettings:,assign,readwrite) _UILegibilitySettings * legibilitySettings;
-@property(getter=_legibilityStyle,setter=_setLegibilityStyle:,assign,readwrite) long long legibilityStyle;
-@property(assign,readwrite) long long numberOfPages;
-@property(assign,retain) UIColor * pageIndicatorTintColor;
+@property (nonatomic) long long currentPage;
+@property (nonatomic, retain) UIColor *currentPageIndicatorTintColor;
+@property (nonatomic) bool defersCurrentPageDisplay;
+@property (nonatomic) bool hidesForSinglePage;
+@property (getter=_legibilitySettings, setter=_setLegibilitySettings:, nonatomic) _UILegibilitySettings *legibilitySettings;
+@property (getter=_legibilityStyle, setter=_setLegibilityStyle:, nonatomic) long long legibilityStyle;
+@property (nonatomic) long long numberOfPages;
+@property (nonatomic, retain) UIColor *pageIndicatorTintColor;
 
 - (id)_activePageIndicatorImage;
 - (void)_commonPageControlInit;

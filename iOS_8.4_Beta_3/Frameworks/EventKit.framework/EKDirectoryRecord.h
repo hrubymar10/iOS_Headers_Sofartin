@@ -7,8 +7,8 @@
     NSString *_preferredAddress;
 }
 
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSString * preferredAddress;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSString *preferredAddress;
 
 - (id)description;
 - (id)displayName;

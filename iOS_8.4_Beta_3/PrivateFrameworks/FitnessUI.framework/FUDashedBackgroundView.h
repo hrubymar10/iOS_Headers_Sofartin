@@ -10,10 +10,10 @@
     unsigned long long _numLines;
 }
 
-@property(assign,retain) UIColor * color;
-@property(assign,readwrite) long long direction;
-@property(assign,readwrite) long long lineType;
-@property(assign,readwrite) unsigned long long numLines;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic) long long direction;
+@property (nonatomic) long long lineType;
+@property (nonatomic) unsigned long long numLines;
 
 - (void).cxx_destruct;
 - (id)color;

@@ -11,10 +11,10 @@
     NSString *_syncID;
 }
 
-@property(assign,readwrite) unsigned int estimatedChangeCount;
-@property(assign,readwrite) bool hasEstimatedChangeCount;
-@property(assign,retain) SYMessageHeader * header;
-@property(assign,retain) NSString * syncID;
+@property (nonatomic) unsigned int estimatedChangeCount;
+@property (nonatomic) bool hasEstimatedChangeCount;
+@property (nonatomic, retain) SYMessageHeader *header;
+@property (nonatomic, retain) NSString *syncID;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

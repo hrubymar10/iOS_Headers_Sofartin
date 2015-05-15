@@ -23,15 +23,15 @@
     NSString *_subtitle;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIView * detailCalloutAccessoryView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIView * leftCalloutAccessoryView;
-@property(assign,retain) UIView * rightCalloutAccessoryView;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * subtitle;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIView *detailCalloutAccessoryView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIView *leftCalloutAccessoryView;
+@property (nonatomic, retain) UIView *rightCalloutAccessoryView;
+@property (nonatomic, readonly, copy) NSString *subtitle;
+@property (nonatomic, copy) NSString *subtitle;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

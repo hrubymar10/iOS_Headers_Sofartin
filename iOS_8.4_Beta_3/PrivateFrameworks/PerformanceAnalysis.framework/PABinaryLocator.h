@@ -8,7 +8,7 @@
     NSMutableDictionary *_mappings;
 }
 
-@property(assign,readwrite) bool enabled;
+@property bool enabled;
 
 + (id)getRetainedSharedBinaryLocator;
 

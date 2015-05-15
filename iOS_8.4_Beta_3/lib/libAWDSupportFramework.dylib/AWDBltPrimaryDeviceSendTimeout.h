@@ -13,12 +13,12 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int connectionType;
-@property(assign,readwrite) bool hasConnectionType;
-@property(assign,readwrite) bool hasOrigConnectionType;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int origConnectionType;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int connectionType;
+@property (nonatomic) bool hasConnectionType;
+@property (nonatomic) bool hasOrigConnectionType;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int origConnectionType;
+@property (nonatomic) unsigned long long timestamp;
 
 - (unsigned int)connectionType;
 - (void)copyTo:(id)arg1;

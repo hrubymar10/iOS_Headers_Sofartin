@@ -13,11 +13,11 @@
     id _reserved;
 }
 
-@property(assign,readwrite) long long chamferMode;
-@property(assign,copy) UIBezierPath * chamferProfile;
-@property(assign,readwrite) double chamferRadius;
-@property(assign,readwrite) double extrusionDepth;
-@property(assign,copy) UIBezierPath * path;
+@property (nonatomic) long long chamferMode;
+@property (nonatomic, copy) UIBezierPath *chamferProfile;
+@property (nonatomic) double chamferRadius;
+@property (nonatomic) double extrusionDepth;
+@property (nonatomic, copy) UIBezierPath *path;
 
 + (id)SCNJSExportProtocol;
 + (id)shapeWithPath:(id)arg1 extrusionDepth:(double)arg2;

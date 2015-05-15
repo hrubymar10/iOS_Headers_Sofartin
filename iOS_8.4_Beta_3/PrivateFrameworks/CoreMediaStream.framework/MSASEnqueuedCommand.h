@@ -8,9 +8,9 @@
     NSDictionary *_variantParam;
 }
 
-@property(assign,copy) NSString * command;
-@property(assign,retain) NSDictionary * invariantParam;
-@property(assign,retain) NSDictionary * variantParam;
+@property (nonatomic, copy) NSString *command;
+@property (nonatomic, retain) NSDictionary *invariantParam;
+@property (nonatomic, retain) NSDictionary *variantParam;
 
 + (id)command;
 + (id)commandwithCommand:(id)arg1 variantParam:(id)arg2 invariantParam:(id)arg3;

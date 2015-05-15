@@ -6,9 +6,9 @@
     <PUAbstractNavigationBannerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <PUAbstractNavigationBannerDelegate> * delegate;
-@property(assign,readonly) double height;
-@property(assign,readonly) UIView * view;
+@property (nonatomic) <PUAbstractNavigationBannerDelegate> *delegate;
+@property (nonatomic, readonly) double height;
+@property (nonatomic, readonly) UIView *view;
 
 - (void).cxx_destruct;
 - (id)delegate;

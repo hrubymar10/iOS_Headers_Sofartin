@@ -12,13 +12,13 @@
     unsigned int _reportedSourceSSRC;
 }
 
-@property(assign,readwrite) unsigned int cumulativePacketsLost;
-@property(assign,readwrite) unsigned int delaySinceLastSR;
-@property(assign,readwrite) unsigned int extendedHighestSequenceNumber;
-@property(assign,readwrite) unsigned char fractionLost;
-@property(assign,readwrite) unsigned int interarrivalJitter;
-@property(assign,readwrite) unsigned int lastSRTimestamp;
-@property(assign,readwrite) unsigned int reportedSourceSSRC;
+@property (nonatomic) unsigned int cumulativePacketsLost;
+@property (nonatomic) unsigned int delaySinceLastSR;
+@property (nonatomic) unsigned int extendedHighestSequenceNumber;
+@property (nonatomic) unsigned char fractionLost;
+@property (nonatomic) unsigned int interarrivalJitter;
+@property (nonatomic) unsigned int lastSRTimestamp;
+@property (nonatomic) unsigned int reportedSourceSSRC;
 
 - (unsigned int)cumulativePacketsLost;
 - (unsigned int)delaySinceLastSR;

@@ -12,13 +12,13 @@
     long long _timeScope;
 }
 
-@property(assign,readwrite) bool friendsOnly;
-@property(assign,copy) NSString * gameBundleID;
-@property(assign,copy) NSString * groupIdentifier;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) GKPlayerInternal * playerInternal;
-@property(getter=isPrefetch,assign,readwrite) bool prefetch;
-@property(assign,readwrite) long long timeScope;
+@property (nonatomic) bool friendsOnly;
+@property (nonatomic, copy) NSString *gameBundleID;
+@property (nonatomic, copy) NSString *groupIdentifier;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) GKPlayerInternal *playerInternal;
+@property (getter=isPrefetch, nonatomic) bool prefetch;
+@property (nonatomic) long long timeScope;
 
 + (id)requestForPlayerInternals:(id)arg1;
 + (id)requestForRankRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1;

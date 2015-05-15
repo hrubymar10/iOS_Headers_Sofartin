@@ -25,12 +25,12 @@
     NSString *_urlString;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIView * navigationPaletteView;
-@property(assign,readonly) UIScrollView * scrollingTabNestedPagingScrollView;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIView *navigationPaletteView;
+@property (nonatomic, readonly) UIScrollView *scrollingTabNestedPagingScrollView;
+@property (readonly) Class superclass;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 + (bool)allowsChildViewControllerNavigationBarManagement;

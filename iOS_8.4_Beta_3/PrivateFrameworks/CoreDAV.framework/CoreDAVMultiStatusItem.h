@@ -7,9 +7,9 @@
     CoreDAVLeafItem *_responseDescription;
 }
 
-@property(assign,retain) NSMutableArray * orderedResponses;
-@property(assign,retain) CoreDAVLeafItem * responseDescription;
-@property(assign,readonly) NSSet * responses;
+@property (nonatomic, retain) NSMutableArray *orderedResponses;
+@property (nonatomic, retain) CoreDAVLeafItem *responseDescription;
+@property (nonatomic, readonly) NSSet *responses;
 
 + (id)copyParseRules;
 

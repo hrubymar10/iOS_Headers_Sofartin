@@ -10,9 +10,9 @@
     id _value;
 }
 
-@property(assign,copy) id eventBlock;
-@property(assign,readwrite) double minimumDelay;
-@property(assign,retain) id value;
+@property (nonatomic, copy) id eventBlock;
+@property (nonatomic) double minimumDelay;
+@property (nonatomic, retain) id value;
 
 - (void).cxx_destruct;
 - (void)_fire;

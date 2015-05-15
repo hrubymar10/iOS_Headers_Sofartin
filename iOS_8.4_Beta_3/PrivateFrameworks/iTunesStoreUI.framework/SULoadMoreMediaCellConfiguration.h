@@ -6,7 +6,7 @@
     double _previousCellHeight;
 }
 
-@property(assign,readwrite) double previousCellHeight;
+@property (nonatomic) double previousCellHeight;
 
 + (double)rowHeightForContext:(id)arg1 representedObject:(id)arg2;
 

@@ -6,11 +6,11 @@
     NSMutableArray *_dialogs;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long numberOfPendingDialogs;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long numberOfPendingDialogs;
+@property (readonly) Class superclass;
 
 + (id)newDialogWithError:(id)arg1;
 + (void)setSharedInstance:(id)arg1;

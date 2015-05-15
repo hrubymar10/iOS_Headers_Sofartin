@@ -12,10 +12,10 @@
     NSMutableDictionary *_properties;
 }
 
-@property(assign,readwrite) <UINavigationControllerDelegate><UIVideoEditorControllerDelegate> * delegate;
-@property(assign,readwrite) double videoMaximumDuration;
-@property(assign,copy) NSString * videoPath;
-@property(assign,readwrite) long long videoQuality;
+@property (nonatomic) <UINavigationControllerDelegate><UIVideoEditorControllerDelegate> *delegate;
+@property (nonatomic) double videoMaximumDuration;
+@property (nonatomic, copy) NSString *videoPath;
+@property (nonatomic) long long videoQuality;
 
 + (bool)canEditVideoAtPath:(id)arg1;
 

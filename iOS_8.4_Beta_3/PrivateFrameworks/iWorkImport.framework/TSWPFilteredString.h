@@ -9,9 +9,9 @@
     NSString *_sourceString;
 }
 
-@property(assign,retain) TSWPDeletionRangeMap * rangeMap;
-@property(assign,retain) TSWPRangeArray * sourceRanges;
-@property(assign,readwrite) NSString * sourceString;
+@property (nonatomic, retain) TSWPDeletionRangeMap *rangeMap;
+@property (nonatomic, readonly, retain) TSWPRangeArray *sourceRanges;
+@property (nonatomic) NSString *sourceString;
 
 - (unsigned long long)charIndexMappedFromStorage:(unsigned long long)arg1;
 - (unsigned long long)charIndexMappedToStorage:(unsigned long long)arg1;

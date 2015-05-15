@@ -11,8 +11,8 @@
     NSUserDefaults *sbDomain;
 }
 
-@property(assign,retain) NSMutableDictionary * appBlackMap;
-@property(assign,retain) NSMutableArray * appWhiteListArray;
+@property (nonatomic, readonly, retain) NSMutableDictionary *appBlackMap;
+@property (nonatomic, readonly, retain) NSMutableArray *appWhiteListArray;
 
 + (id)sharedInstance;
 

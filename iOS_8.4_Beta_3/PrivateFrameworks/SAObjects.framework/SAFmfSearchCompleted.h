@@ -4,15 +4,15 @@
 
 @interface SAFmfSearchCompleted : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSNumber * atRequestedLocation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSArray * fmfLocations;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * refId;
-@property(assign,copy) NSURL * searchContext;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic, copy) NSNumber *atRequestedLocation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSArray *fmfLocations;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic, copy) NSURL *searchContext;
+@property (readonly) Class superclass;
 
 + (id)searchCompleted;
 + (id)searchCompletedWithDictionary:(id)arg1 context:(id)arg2;

@@ -8,9 +8,9 @@
     NSString *_relationshipKey;
 }
 
-@property(assign,readonly) NSMutableSet * deletedObjectIDs;
-@property(assign,readonly) NSMutableSet * insertedObjectIDs;
-@property(assign,readonly) NSString * relationshipKey;
+@property (nonatomic, readonly) NSMutableSet *deletedObjectIDs;
+@property (nonatomic, readonly) NSMutableSet *insertedObjectIDs;
+@property (nonatomic, readonly) NSString *relationshipKey;
 
 - (void)dealloc;
 - (id)deletedObjectIDs;

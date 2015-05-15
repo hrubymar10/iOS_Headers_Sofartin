@@ -8,9 +8,9 @@
     double _maxModifiedAge;
 }
 
-@property(assign,retain) NSObject<OS_xpc_object> * activity;
-@property(assign,readwrite) bool forceClean;
-@property(assign,readwrite) double maxModifiedAge;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *activity;
+@property (nonatomic) bool forceClean;
+@property (nonatomic) double maxModifiedAge;
 
 + (bool)supportsSecureCoding;
 

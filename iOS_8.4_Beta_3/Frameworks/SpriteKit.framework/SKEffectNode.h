@@ -4,12 +4,12 @@
 
 @interface SKEffectNode : SKNode
 
-@property(assign,readwrite) long long blendMode;
-@property(assign,retain) CIFilter * filter;
-@property(assign,retain) SKShader * shader;
-@property(assign,readwrite) bool shouldCenterFilter;
-@property(assign,readwrite) bool shouldEnableEffects;
-@property(assign,readwrite) bool shouldRasterize;
+@property (nonatomic) long long blendMode;
+@property (nonatomic, retain) CIFilter *filter;
+@property (nonatomic, retain) SKShader *shader;
+@property (nonatomic) bool shouldCenterFilter;
+@property (nonatomic) bool shouldEnableEffects;
+@property (nonatomic) bool shouldRasterize;
 
 - (void)_flippedChangedFrom:(bool)arg1 to:(bool)arg2;
 - (void)_scaleFactorChangedFrom:(float)arg1 to:(float)arg2;

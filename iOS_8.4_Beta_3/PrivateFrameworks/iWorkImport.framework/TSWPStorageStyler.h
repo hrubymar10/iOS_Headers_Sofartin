@@ -7,7 +7,7 @@
     TSWPStorage *_storage;
 }
 
-@property(assign,retain) TSWPStorage * storage;
+@property (nonatomic, readonly, retain) TSWPStorage *storage;
 
 - (void)applyStyle:(id)arg1 range:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg2 undoTransaction:(struct TSWPStorageTransaction { }*)arg3;
 - (id)initWithStorage:(id)arg1 attributeArrayKind:(int)arg2;

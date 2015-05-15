@@ -13,11 +13,11 @@
     double _tuberadialSpan;
 }
 
-@property(assign,readwrite) double height;
-@property(assign,readwrite) long long heightSegmentCount;
-@property(assign,readwrite) double innerRadius;
-@property(assign,readwrite) double outerRadius;
-@property(assign,readwrite) long long radialSegmentCount;
+@property (nonatomic) double height;
+@property (nonatomic) long long heightSegmentCount;
+@property (nonatomic) double innerRadius;
+@property (nonatomic) double outerRadius;
+@property (nonatomic) long long radialSegmentCount;
 
 + (id)SCNJSExportProtocol;
 + (bool)supportsSecureCoding;

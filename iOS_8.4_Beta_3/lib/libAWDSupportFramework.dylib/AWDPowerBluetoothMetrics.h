@@ -21,20 +21,20 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int btConnectedDuration;
-@property(assign,readwrite) unsigned int btOthersDuration;
-@property(assign,readwrite) unsigned int btRxDuration;
-@property(assign,readwrite) unsigned int btSleepDuration;
-@property(assign,readwrite) unsigned int btTotalPowerMicroWatt;
-@property(assign,readwrite) unsigned int btTxDuration;
-@property(assign,readwrite) bool hasBtConnectedDuration;
-@property(assign,readwrite) bool hasBtOthersDuration;
-@property(assign,readwrite) bool hasBtRxDuration;
-@property(assign,readwrite) bool hasBtSleepDuration;
-@property(assign,readwrite) bool hasBtTotalPowerMicroWatt;
-@property(assign,readwrite) bool hasBtTxDuration;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int btConnectedDuration;
+@property (nonatomic) unsigned int btOthersDuration;
+@property (nonatomic) unsigned int btRxDuration;
+@property (nonatomic) unsigned int btSleepDuration;
+@property (nonatomic) unsigned int btTotalPowerMicroWatt;
+@property (nonatomic) unsigned int btTxDuration;
+@property (nonatomic) bool hasBtConnectedDuration;
+@property (nonatomic) bool hasBtOthersDuration;
+@property (nonatomic) bool hasBtRxDuration;
+@property (nonatomic) bool hasBtSleepDuration;
+@property (nonatomic) bool hasBtTotalPowerMicroWatt;
+@property (nonatomic) bool hasBtTxDuration;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long timestamp;
 
 - (unsigned int)btConnectedDuration;
 - (unsigned int)btOthersDuration;

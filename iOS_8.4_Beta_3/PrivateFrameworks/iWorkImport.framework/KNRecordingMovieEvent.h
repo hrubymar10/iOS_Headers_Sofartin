@@ -8,15 +8,15 @@
     TSPLazyReference *mMovieInfoReference;
 }
 
-@property(assign,readonly) bool beginsScrubbing;
-@property(assign,readonly) bool endsScrubbing;
-@property(assign,readonly) long long movieEventType;
-@property(assign,readonly) double movieEventValue;
-@property(assign,readonly) TSDMovieInfo * movieInfo;
-@property(assign,readonly) double rate;
-@property(assign,readonly) double seekTime;
-@property(assign,readonly) bool startsPlayback;
-@property(assign,readonly) bool stopsPlayback;
+@property (nonatomic, readonly) bool beginsScrubbing;
+@property (nonatomic, readonly) bool endsScrubbing;
+@property (nonatomic, readonly) long long movieEventType;
+@property (nonatomic, readonly) double movieEventValue;
+@property (nonatomic, readonly) TSDMovieInfo *movieInfo;
+@property (nonatomic, readonly) double rate;
+@property (nonatomic, readonly) double seekTime;
+@property (nonatomic, readonly) bool startsPlayback;
+@property (nonatomic, readonly) bool stopsPlayback;
 
 - (bool)beginsScrubbing;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

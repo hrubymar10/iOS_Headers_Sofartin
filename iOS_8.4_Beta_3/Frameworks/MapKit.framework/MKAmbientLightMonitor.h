@@ -29,9 +29,9 @@
     double _runningStatSum;
 }
 
-@property(assign,readonly) long long ambientLightLevel;
-@property(assign,readwrite) bool debugLogLux;
-@property(getter=isMonitoring,assign,readonly) bool monitoring;
+@property (nonatomic, readonly) long long ambientLightLevel;
+@property (nonatomic) bool debugLogLux;
+@property (getter=isMonitoring, nonatomic, readonly) bool monitoring;
 
 + (id)sharedAmbientLightMonitor;
 

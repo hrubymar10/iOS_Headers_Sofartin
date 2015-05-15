@@ -9,13 +9,13 @@
     bool _hasLoaded;
 }
 
-@property(assign,retain) NEConfiguration * configuration;
-@property(assign,readonly) NEConfigurationManager * configurationManager;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,retain) NSArray * entitlements;
-@property(assign,readwrite) bool hasLoaded;
-@property(assign,copy) NSString * localizedDescription;
-@property(assign,retain) NEContentFilterPlugin * pluginConfiguration;
+@property (retain) NEConfiguration *configuration;
+@property (readonly) NEConfigurationManager *configurationManager;
+@property (getter=isEnabled) bool enabled;
+@property (retain) NSArray *entitlements;
+@property bool hasLoaded;
+@property (copy) NSString *localizedDescription;
+@property (retain) NEContentFilterPlugin *pluginConfiguration;
 
 + (id)sharedManager;
 

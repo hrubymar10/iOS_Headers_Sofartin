@@ -10,7 +10,7 @@
     NSSQLManyToMany *_relationship;
 }
 
-@property(assign,readonly) NSSQLManyToMany * relationship;
+@property (readonly) NSSQLManyToMany *relationship;
 
 - (id)_organizeValues:(id)arg1;
 - (void)dealloc;

@@ -7,8 +7,8 @@
     bool _supportsFileLevelEncryption;
 }
 
-@property(assign,readonly) bool supportsBlockLevelEncryption;
-@property(assign,readonly) bool supportsFileLevelEncryption;
+@property (nonatomic, readonly) bool supportsBlockLevelEncryption;
+@property (nonatomic, readonly) bool supportsFileLevelEncryption;
 
 + (id)currentDevice;
 

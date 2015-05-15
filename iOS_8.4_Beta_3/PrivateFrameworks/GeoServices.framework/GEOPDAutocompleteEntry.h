@@ -15,19 +15,19 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,retain) GEOPDAutocompleteEntryAddress * address;
-@property(assign,retain) GEOPDAutocompleteEntryBusiness * business;
-@property(assign,readonly) bool hasAddress;
-@property(assign,readonly) bool hasBusiness;
-@property(assign,readonly) bool hasHighlightExtra;
-@property(assign,readonly) bool hasHighlightMain;
-@property(assign,readonly) bool hasQuery;
-@property(assign,readwrite) bool hasType;
-@property(assign,retain) GEOPDAutocompleteEntryHighlightLine * highlightExtra;
-@property(assign,retain) GEOPDAutocompleteEntryHighlightLine * highlightMain;
-@property(assign,retain) GEOPDAutocompleteEntryQuery * query;
-@property(assign,readwrite) int type;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, retain) GEOPDAutocompleteEntryAddress *address;
+@property (nonatomic, retain) GEOPDAutocompleteEntryBusiness *business;
+@property (nonatomic, readonly) bool hasAddress;
+@property (nonatomic, readonly) bool hasBusiness;
+@property (nonatomic, readonly) bool hasHighlightExtra;
+@property (nonatomic, readonly) bool hasHighlightMain;
+@property (nonatomic, readonly) bool hasQuery;
+@property (nonatomic) bool hasType;
+@property (nonatomic, retain) GEOPDAutocompleteEntryHighlightLine *highlightExtra;
+@property (nonatomic, retain) GEOPDAutocompleteEntryHighlightLine *highlightMain;
+@property (nonatomic, retain) GEOPDAutocompleteEntryQuery *query;
+@property (nonatomic) int type;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (id)address;
 - (id)business;

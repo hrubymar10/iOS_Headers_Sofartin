@@ -6,7 +6,7 @@
     NSMutableArray *_slots;
 }
 
-@property(assign,retain) NSMutableArray * slots;
+@property (retain) NSMutableArray *slots;
 
 + (id)emptySlotSequence;
 + (id)slotSequenceWithArray:(id)arg1;

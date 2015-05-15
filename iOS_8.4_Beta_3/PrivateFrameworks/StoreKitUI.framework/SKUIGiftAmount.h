@@ -8,9 +8,9 @@
     NSNumber *_value;
 }
 
-@property(assign,copy) NSString * displayLabel;
-@property(assign,copy) NSString * partNumber;
-@property(assign,copy) NSNumber * value;
+@property (nonatomic, copy) NSString *displayLabel;
+@property (nonatomic, copy) NSString *partNumber;
+@property (nonatomic, copy) NSNumber *value;
 
 - (void).cxx_destruct;
 - (id)HTTPBodyDictionary;

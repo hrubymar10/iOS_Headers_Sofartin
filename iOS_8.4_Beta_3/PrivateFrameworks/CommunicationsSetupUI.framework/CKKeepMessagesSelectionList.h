@@ -6,7 +6,7 @@
     id _sheetHandler;
 }
 
-@property(assign,copy) id sheetHandler;
+@property (nonatomic, copy) id sheetHandler;
 
 - (void)_warnAboutDeletingMessagesForSelectedListItem:(id)arg1;
 - (void)listItemSelected:(id)arg1;

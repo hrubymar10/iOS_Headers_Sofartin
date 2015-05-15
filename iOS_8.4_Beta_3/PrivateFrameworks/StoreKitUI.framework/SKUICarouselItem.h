@@ -9,9 +9,9 @@
     SKUILink *_link;
 }
 
-@property(assign,readonly) NSString * accessibilityLabel;
-@property(assign,readonly) long long carouselItemIdentifier;
-@property(assign,readonly) SKUILink * link;
+@property (nonatomic, readonly) NSString *accessibilityLabel;
+@property (nonatomic, readonly) long long carouselItemIdentifier;
+@property (nonatomic, readonly) SKUILink *link;
 
 - (void).cxx_destruct;
 - (void)_setLinkItem:(id)arg1;

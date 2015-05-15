@@ -13,14 +13,14 @@
     CKDProgressTracker *_progressTracker;
 }
 
-@property(assign,retain) CKDMMCSItem * MMCSManifestItem;
-@property(assign,retain) CKDMMCSRequestOptions * MMCSRequestOptions;
-@property(assign,retain) NSArray * MMCSSectionItems;
-@property(assign,retain) CKDCancelTokenGroup * cancelTokens;
-@property(assign,retain) NSError * error;
-@property(assign,retain) NSObject<OS_dispatch_group> * group;
-@property(assign,readonly) CKPackage * package;
-@property(assign,retain) CKDProgressTracker * progressTracker;
+@property (nonatomic, retain) CKDMMCSItem *MMCSManifestItem;
+@property (nonatomic, retain) CKDMMCSRequestOptions *MMCSRequestOptions;
+@property (nonatomic, retain) NSArray *MMCSSectionItems;
+@property (nonatomic, retain) CKDCancelTokenGroup *cancelTokens;
+@property (retain) NSError *error;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *group;
+@property (nonatomic, readonly) CKPackage *package;
+@property (nonatomic, retain) CKDProgressTracker *progressTracker;
 
 - (void).cxx_destruct;
 - (id)MMCSManifestItem;

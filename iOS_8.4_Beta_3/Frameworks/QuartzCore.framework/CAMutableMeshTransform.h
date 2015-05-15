@@ -4,8 +4,8 @@
 
 @interface CAMutableMeshTransform : CAMeshTransform
 
-@property(assign,copy) NSString * depthNormalization;
-@property(assign,readwrite) int subdivisionSteps;
+@property (copy) NSString *depthNormalization;
+@property int subdivisionSteps;
 
 + (id)meshTransform;
 

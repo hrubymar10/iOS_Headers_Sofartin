@@ -16,17 +16,17 @@
     NSLayoutConstraint *_verticalContraint;
 }
 
-@property(assign,retain) UICollectionView * collectionView;
-@property(assign,retain) NSLayoutConstraint * horizontalContraint;
-@property(assign,retain) GKLabel * label;
-@property(assign,readwrite) bool loading;
-@property(assign,readwrite) long long numberToShow;
-@property(assign,readwrite) long long sectionIndex;
-@property(assign,readwrite) SEL showMoreAction;
-@property(assign,readwrite) bool showShowAll;
-@property(assign,retain) UIActivityIndicatorView * spinner;
-@property(assign,readwrite) double textAlignmentOffset;
-@property(assign,retain) NSLayoutConstraint * verticalContraint;
+@property (nonatomic, retain) UICollectionView *collectionView;
+@property (nonatomic, retain) NSLayoutConstraint *horizontalContraint;
+@property (nonatomic, retain) GKLabel *label;
+@property (nonatomic) bool loading;
+@property (nonatomic) long long numberToShow;
+@property (nonatomic) long long sectionIndex;
+@property (nonatomic) SEL showMoreAction;
+@property (nonatomic) bool showShowAll;
+@property (nonatomic, retain) UIActivityIndicatorView *spinner;
+@property (nonatomic) double textAlignmentOffset;
+@property (nonatomic, retain) NSLayoutConstraint *verticalContraint;
 
 + (bool)requiresConstraintBasedLayout;
 

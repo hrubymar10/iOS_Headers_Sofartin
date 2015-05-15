@@ -39,20 +39,20 @@
     NSObject<OS_xpc_object> *changeHubConnection;
 }
 
-@property(assign,readwrite) NSObject<OS_xpc_object> * changeHubConnection;
-@property(assign,readwrite) int changeSource;
-@property(assign,retain) PLDelayedFiledSystemDeletions * delayedDeletions;
-@property(assign,readwrite) bool hasMetadataChanges;
-@property(assign,readwrite) bool isBackingALAssetsLibrary;
-@property(assign,readwrite) bool isInitializingSingletons;
-@property(assign,readwrite) bool isLoadingPhotoLibrary;
-@property(assign,readonly) bool isUserInterfaceContext;
-@property(assign,readonly) bool mergingChanges;
-@property(assign,readwrite) PLPhotoLibrary * photoLibrary;
-@property(assign,readwrite) <PLManagedObjectContextPTPNotificationDelegate> * ptpNotificationDelegate;
-@property(assign,readwrite) bool regenerateVideoThumbnails;
-@property(assign,readonly) bool savingDuringMerge;
-@property(assign,readwrite) bool suspendClientServerTransactions;
+@property (nonatomic) NSObject<OS_xpc_object> *changeHubConnection;
+@property (nonatomic) int changeSource;
+@property (nonatomic, retain) PLDelayedFiledSystemDeletions *delayedDeletions;
+@property (nonatomic) bool hasMetadataChanges;
+@property (nonatomic) bool isBackingALAssetsLibrary;
+@property (nonatomic) bool isInitializingSingletons;
+@property (nonatomic) bool isLoadingPhotoLibrary;
+@property (nonatomic, readonly) bool isUserInterfaceContext;
+@property (nonatomic, readonly) bool mergingChanges;
+@property (nonatomic) PLPhotoLibrary *photoLibrary;
+@property (nonatomic) <PLManagedObjectContextPTPNotificationDelegate> *ptpNotificationDelegate;
+@property (nonatomic) bool regenerateVideoThumbnails;
+@property (nonatomic, readonly) bool savingDuringMerge;
+@property (nonatomic) bool suspendClientServerTransactions;
 
 + (void)__prepareEntityPropertyLookups;
 + (id)_attributeNamesByIndexByEntityNames;

@@ -16,11 +16,11 @@
     NSMapTable *_viewElements;
 }
 
-@property(assign,copy) SKUISizeValue * artworkBoundingSize;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) SKUISizeValue *artworkBoundingSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (double)_defaultWidthForLockupWithContext:(id)arg1;
 + (struct CGSize { double x1; double x2; })artworkBoundingSizeWithViewElement:(id)arg1 width:(double)arg2 context:(id)arg3;

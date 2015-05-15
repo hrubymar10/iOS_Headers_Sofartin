@@ -18,18 +18,18 @@
     NSMutableArray *_versionDomains;
 }
 
-@property(assign,retain) NSMutableArray * batchPlaceResults;
-@property(assign,retain) NSMutableArray * clusters;
-@property(assign,readwrite) bool hasStatusCode;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasTtl;
-@property(assign,readwrite) bool hasVersion;
-@property(assign,retain) NSDictionary * httpHeaders;
-@property(assign,readwrite) int statusCode;
-@property(assign,readwrite) double timestamp;
-@property(assign,readwrite) unsigned int ttl;
-@property(assign,readwrite) unsigned int version;
-@property(assign,retain) NSMutableArray * versionDomains;
+@property (nonatomic, retain) NSMutableArray *batchPlaceResults;
+@property (nonatomic, retain) NSMutableArray *clusters;
+@property (nonatomic) bool hasStatusCode;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasTtl;
+@property (nonatomic) bool hasVersion;
+@property (nonatomic, retain) NSDictionary *httpHeaders;
+@property (nonatomic) int statusCode;
+@property (nonatomic) double timestamp;
+@property (nonatomic) unsigned int ttl;
+@property (nonatomic) unsigned int version;
+@property (nonatomic, retain) NSMutableArray *versionDomains;
 
 - (void)addBatchPlaceResult:(id)arg1;
 - (void)addCluster:(id)arg1;

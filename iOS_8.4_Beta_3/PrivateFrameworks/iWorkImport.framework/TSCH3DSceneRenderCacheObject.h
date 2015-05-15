@@ -8,7 +8,7 @@
     NSMutableArray *mDynamicResources;
 }
 
-@property(assign,readwrite) bool cachingEnabled;
+@property (nonatomic) bool cachingEnabled;
 
 + (id)cacheObject;
 

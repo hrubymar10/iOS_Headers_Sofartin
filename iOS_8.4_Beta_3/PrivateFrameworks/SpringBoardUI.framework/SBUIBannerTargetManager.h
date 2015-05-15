@@ -8,7 +8,7 @@
     NSHashTable *_proxies;
 }
 
-@property(assign,retain) NSArray * targets;
+@property (nonatomic, readonly, retain) NSArray *targets;
 
 + (id)sharedInstance;
 

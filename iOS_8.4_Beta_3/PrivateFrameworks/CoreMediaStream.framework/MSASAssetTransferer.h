@@ -19,24 +19,24 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,readwrite) MSBackoffManager * backoffManager;
-@property(assign,readwrite) MSAlbumSharingDaemon * daemon;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) MMCSEngine * engine;
-@property(assign,retain) NSObject<OS_dispatch_queue> * eventQueue;
-@property(assign,copy) NSString * focusAlbumGUID;
-@property(assign,copy) NSString * focusAssetCollectionGUID;
-@property(assign,readwrite) bool hasShutDown;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int maxBatchCount;
-@property(assign,readwrite) double maxMMCSTokenValidityTimeInterval;
-@property(assign,readwrite) int maxRetryCount;
-@property(assign,readwrite) MSASPersonModel * model;
-@property(assign,copy) NSString * personID;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic) MSBackoffManager *backoffManager;
+@property (nonatomic) MSAlbumSharingDaemon *daemon;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) id delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) MMCSEngine *engine;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *eventQueue;
+@property (nonatomic, copy) NSString *focusAlbumGUID;
+@property (nonatomic, copy) NSString *focusAssetCollectionGUID;
+@property (nonatomic) bool hasShutDown;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int maxBatchCount;
+@property (nonatomic) double maxMMCSTokenValidityTimeInterval;
+@property (nonatomic) int maxRetryCount;
+@property (nonatomic) MSASPersonModel *model;
+@property (nonatomic, copy) NSString *personID;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)MMCSEngine:(id)arg1 didCreateRequestorContext:(id)arg2 forAssets:(id)arg3;

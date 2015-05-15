@@ -6,7 +6,7 @@
     NSMutableDictionary *_authorizationList;
 }
 
-@property(assign,readonly) NSArray * deviceIdentifiers;
+@property (nonatomic, readonly) NSArray *deviceIdentifiers;
 
 + (id)_dataForDeviceIdentifier:(id)arg1;
 + (id)_deviceIdentifierForData:(id)arg1;

@@ -15,27 +15,27 @@
     struct __FSEventStream { } *_stream;
 }
 
-@property(assign,retain) NSArray * adManifests;
-@property(assign,copy) NSString * adPath;
-@property(assign,readwrite) bool alwaysRegenerateWebArchives;
-@property(assign,readwrite) double bandwidthStddev;
-@property(assign,readwrite) int cacheMaxAge;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) NSDictionary * defaultAdData;
-@property(assign,readwrite) bool defaultsToNoQualifiedAds;
-@property(assign,readwrite) <ADEmbeddedAdServerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool digestAuthenticationEnabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double kbps;
-@property(assign,readwrite) double latency;
-@property(assign,readwrite) double latencyStddev;
-@property(assign,readwrite) bool pipeliningEnabled;
-@property(assign,readonly) unsigned short port;
-@property(assign,copy) NSString * publicURLRoot;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long totalBytesWritten;
-@property(assign,readonly) NSString * urlString;
+@property (nonatomic, retain) NSArray *adManifests;
+@property (nonatomic, copy) NSString *adPath;
+@property (nonatomic) bool alwaysRegenerateWebArchives;
+@property (nonatomic) double bandwidthStddev;
+@property (nonatomic) int cacheMaxAge;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) NSDictionary *defaultAdData;
+@property (nonatomic) bool defaultsToNoQualifiedAds;
+@property (nonatomic) <ADEmbeddedAdServerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool digestAuthenticationEnabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double kbps;
+@property (nonatomic) double latency;
+@property (nonatomic) double latencyStddev;
+@property (nonatomic) bool pipeliningEnabled;
+@property (nonatomic, readonly) unsigned short port;
+@property (nonatomic, copy) NSString *publicURLRoot;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long totalBytesWritten;
+@property (nonatomic, readonly) NSString *urlString;
 
 + (bool)adBundleAtURL:(id)arg1 matchesRequest:(id)arg2;
 + (id)creativesForAdBundleAtURL:(id)arg1 matchingRequest:(id)arg2;

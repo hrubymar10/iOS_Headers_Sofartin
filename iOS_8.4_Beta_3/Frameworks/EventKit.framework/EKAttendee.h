@@ -4,10 +4,10 @@
 
 @interface EKAttendee : EKParticipant
 
-@property(assign,readwrite) bool commentChanged;
-@property(assign,readonly) NSDate * lastModifiedParticipationStatus;
-@property(assign,readwrite) int pendingStatus;
-@property(assign,readwrite) bool statusChanged;
+@property (nonatomic) bool commentChanged;
+@property (nonatomic, readonly) NSDate *lastModifiedParticipationStatus;
+@property (nonatomic) int pendingStatus;
+@property (nonatomic) bool statusChanged;
 
 + (id)attendeeWithEmailAddress:(id)arg1 name:(id)arg2;
 + (id)attendeeWithName:(id)arg1 emailAddress:(id)arg2 address:(id)arg3;

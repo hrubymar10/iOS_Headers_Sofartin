@@ -4,7 +4,7 @@
 
 @interface SLFacebookBatchResponse : SLFacebookResponse
 
-@property(assign,readonly) NSArray * batchResponseParameters;
+@property (readonly) NSArray *batchResponseParameters;
 
 - (id)batchResponseParameters;
 - (long long)batchedResponsesCount;

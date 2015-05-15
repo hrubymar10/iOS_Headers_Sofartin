@@ -16,15 +16,15 @@
     NSString *_pairingID;
 }
 
-@property(getter=isAssetSyncEnabled,assign,readwrite) bool assetSyncEnabled;
-@property(assign,copy) NSNumber * assetSyncLimit;
-@property(assign,readwrite) unsigned long long assetSyncLimitType;
-@property(assign,retain) MPMediaPlaylist * assetSyncPlaylist;
-@property(assign,copy) NSNumber * assetSyncPlaylistPersistentID;
-@property(assign,copy) NSNumber * lastFullySentAssetSyncPlaylistPersistentID;
-@property(assign,copy) NSNumber * lastFullySentAssetSyncPlaylistVersion;
-@property(assign,readonly) NSDate * modificationDate;
-@property(assign,copy) NSNumber * numberOfSyncedAssetSyncPlaylistSongs;
+@property (getter=isAssetSyncEnabled, nonatomic) bool assetSyncEnabled;
+@property (nonatomic, copy) NSNumber *assetSyncLimit;
+@property (nonatomic) unsigned long long assetSyncLimitType;
+@property (nonatomic, retain) MPMediaPlaylist *assetSyncPlaylist;
+@property (nonatomic, copy) NSNumber *assetSyncPlaylistPersistentID;
+@property (nonatomic, copy) NSNumber *lastFullySentAssetSyncPlaylistPersistentID;
+@property (nonatomic, copy) NSNumber *lastFullySentAssetSyncPlaylistVersion;
+@property (nonatomic, readonly) NSDate *modificationDate;
+@property (nonatomic, copy) NSNumber *numberOfSyncedAssetSyncPlaylistSongs;
 
 + (id)sharedDefaults;
 

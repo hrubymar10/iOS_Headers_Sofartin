@@ -26,27 +26,27 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,copy) CKAccountInfo * accountInfoOverride;
-@property(assign,retain) ACAccountStore * accountStore;
-@property(assign,retain) CKContainerSetupInfo * cachedSetupInfo;
-@property(assign,retain) CKOperationCallbackManager * callbackManager;
-@property(assign,retain) CKContainerID * containerID;
-@property(assign,readonly) NSString * containerIdentifier;
-@property(assign,retain) CKRecordID * containerScopedUserID;
-@property(assign,retain) NSOperationQueue * convenienceOperationQueue;
-@property(assign,retain) CKOperationFlowControlManager * flowControlManager;
-@property(assign,readwrite) bool hasCachedSetupInfo;
-@property(assign,readwrite) bool hasValidConnection;
-@property(assign,readwrite) int killSwitchToken;
-@property(assign,readwrite) bool needsSandboxExtensions;
-@property(assign,retain) CKDatabase * privateCloudDatabase;
-@property(assign,retain) CKDatabase * publicCloudDatabase;
-@property(assign,retain) NSMutableArray * sandboxExtensionHandles;
-@property(assign,readonly) CKDatabase * sharedCloudDatabase;
-@property(assign,retain) CKDatabase * sharedCloudDatabase;
-@property(assign,readwrite) int statusReportToken;
-@property(assign,retain) NSOperationQueue * throttlingOperationQueue;
-@property(assign,retain) NSXPCConnection * xpcConnection;
+@property (nonatomic, copy) CKAccountInfo *accountInfoOverride;
+@property (nonatomic, retain) ACAccountStore *accountStore;
+@property (nonatomic, retain) CKContainerSetupInfo *cachedSetupInfo;
+@property (nonatomic, retain) CKOperationCallbackManager *callbackManager;
+@property (nonatomic, retain) CKContainerID *containerID;
+@property (nonatomic, readonly) NSString *containerIdentifier;
+@property (nonatomic, retain) CKRecordID *containerScopedUserID;
+@property (nonatomic, retain) NSOperationQueue *convenienceOperationQueue;
+@property (nonatomic, retain) CKOperationFlowControlManager *flowControlManager;
+@property (nonatomic) bool hasCachedSetupInfo;
+@property (nonatomic) bool hasValidConnection;
+@property (nonatomic) int killSwitchToken;
+@property (nonatomic) bool needsSandboxExtensions;
+@property (nonatomic, retain) CKDatabase *privateCloudDatabase;
+@property (nonatomic, retain) CKDatabase *publicCloudDatabase;
+@property (nonatomic, retain) NSMutableArray *sandboxExtensionHandles;
+@property (nonatomic, readonly) CKDatabase *sharedCloudDatabase;
+@property (nonatomic, retain) CKDatabase *sharedCloudDatabase;
+@property (nonatomic) int statusReportToken;
+@property (nonatomic, retain) NSOperationQueue *throttlingOperationQueue;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
 
 + (id)containerWithIdentifier:(id)arg1;
 + (id)defaultContainer;

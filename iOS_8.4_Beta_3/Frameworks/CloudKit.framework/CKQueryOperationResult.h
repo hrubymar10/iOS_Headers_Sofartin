@@ -6,7 +6,7 @@
     CKQueryCursor *_cursor;
 }
 
-@property(assign,retain) CKQueryCursor * cursor;
+@property (nonatomic, retain) CKQueryCursor *cursor;
 
 + (bool)supportsSecureCoding;
 

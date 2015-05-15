@@ -6,16 +6,16 @@
     SUScriptTextFieldDelegate *_textFieldDelegate;
 }
 
-@property(assign,readwrite) long long autocapitalizationType;
-@property(assign,readwrite) long long autocorrectionType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long keyboardType;
-@property(assign,copy) NSString * placeholder;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * value;
-@property(assign,readwrite) double width;
+@property (nonatomic) long long autocapitalizationType;
+@property (nonatomic) long long autocorrectionType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic, copy) NSString *placeholder;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *value;
+@property (nonatomic) double width;
 
 - (id)_nativeObjectDelegate;
 - (void)_sendScriptDidChange;

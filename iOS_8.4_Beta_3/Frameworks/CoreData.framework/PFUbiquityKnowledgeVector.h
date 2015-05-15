@@ -8,8 +8,8 @@
     NSDictionary *_storeKVDict;
 }
 
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long length;
+@property (nonatomic, readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long length;
 
 + (id)createKnowledgeVectorDictionaryFromString:(id)arg1;
 + (id)createSetOfAllPeerIDsInKnowledgeVectors:(id)arg1;

@@ -7,8 +7,8 @@
     struct __SCPreferences { } *_prefs;
 }
 
-@property(assign,readonly) NSString * pluginType;
-@property(assign,readwrite) struct __SCPreferences { }* prefs;
+@property (readonly) NSString *pluginType;
+@property struct __SCPreferences { }*prefs;
 
 + (void)removePreferencesForPluginType:(id)arg1;
 

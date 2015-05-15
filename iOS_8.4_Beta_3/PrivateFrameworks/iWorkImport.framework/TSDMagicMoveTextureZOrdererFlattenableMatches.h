@@ -7,8 +7,8 @@
     NSArray *_texturesInZOrder;
 }
 
-@property(assign,retain) NSArray * animationMatches;
-@property(assign,retain) NSArray * texturesInZOrder;
+@property (nonatomic, retain) NSArray *animationMatches;
+@property (nonatomic, retain) NSArray *texturesInZOrder;
 
 - (id)animationMatches;
 - (void)dealloc;

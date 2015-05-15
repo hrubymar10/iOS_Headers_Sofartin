@@ -8,9 +8,9 @@
     MTLComputePipelineReflection *_reflection;
 }
 
-@property(assign,readonly) MTLComputePipelineDescriptor * descriptor;
-@property(assign,readonly) <MTLFunction> * function;
-@property(assign,readonly) MTLComputePipelineReflection * reflection;
+@property (nonatomic, readonly) MTLComputePipelineDescriptor *descriptor;
+@property (nonatomic, readonly) <MTLFunction> *function;
+@property (nonatomic, readonly) MTLComputePipelineReflection *reflection;
 
 - (void).cxx_destruct;
 - (id)description;

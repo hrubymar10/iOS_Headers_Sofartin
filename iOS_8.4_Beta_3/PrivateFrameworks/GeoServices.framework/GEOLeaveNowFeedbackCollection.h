@@ -24,20 +24,20 @@
     int _travelState;
 }
 
-@property(assign,readwrite) int actionType;
-@property(assign,readwrite) int alertType;
-@property(assign,readwrite) double currentTimestamp;
-@property(assign,readwrite) double eventTimestamp;
-@property(assign,readwrite) bool hasActionType;
-@property(assign,readwrite) bool hasAlertType;
-@property(assign,readwrite) bool hasCurrentTimestamp;
-@property(assign,readwrite) bool hasEventTimestamp;
-@property(assign,readwrite) bool hasSessionID;
-@property(assign,readwrite) bool hasTravelDuration;
-@property(assign,readwrite) bool hasTravelState;
-@property(assign,readwrite) struct { unsigned long long x1; unsigned long long x2; } sessionID;
-@property(assign,readwrite) double travelDuration;
-@property(assign,readwrite) int travelState;
+@property (nonatomic) int actionType;
+@property (nonatomic) int alertType;
+@property (nonatomic) double currentTimestamp;
+@property (nonatomic) double eventTimestamp;
+@property (nonatomic) bool hasActionType;
+@property (nonatomic) bool hasAlertType;
+@property (nonatomic) bool hasCurrentTimestamp;
+@property (nonatomic) bool hasEventTimestamp;
+@property (nonatomic) bool hasSessionID;
+@property (nonatomic) bool hasTravelDuration;
+@property (nonatomic) bool hasTravelState;
+@property (nonatomic) struct { unsigned long long x1; unsigned long long x2; } sessionID;
+@property (nonatomic) double travelDuration;
+@property (nonatomic) int travelState;
 
 - (int)actionType;
 - (int)alertType;

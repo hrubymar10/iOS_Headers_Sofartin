@@ -15,16 +15,16 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,retain) NSMutableArray * MMCSItemsToDownload;
-@property(assign,retain) NSArray * assetsToDownload;
-@property(assign,retain) CKDCancelTokenGroup * cancelTokens;
-@property(assign,copy) id downloadCompletionBlock;
-@property(assign,copy) id downloadPreparationBlock;
-@property(assign,copy) id downloadProgressBlock;
-@property(assign,retain) NSMapTable * downloadTasksByPackages;
-@property(assign,readwrite) unsigned long long maxPackageDownloadsPerBatch;
-@property(assign,retain) NSArray * packageIndexSets;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, retain) NSMutableArray *MMCSItemsToDownload;
+@property (nonatomic, retain) NSArray *assetsToDownload;
+@property (nonatomic, retain) CKDCancelTokenGroup *cancelTokens;
+@property (nonatomic, copy) id downloadCompletionBlock;
+@property (nonatomic, copy) id downloadPreparationBlock;
+@property (nonatomic, copy) id downloadProgressBlock;
+@property (nonatomic, retain) NSMapTable *downloadTasksByPackages;
+@property (nonatomic) unsigned long long maxPackageDownloadsPerBatch;
+@property (nonatomic, retain) NSArray *packageIndexSets;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 - (void).cxx_destruct;
 - (id)MMCSItemsToDownload;

@@ -4,11 +4,11 @@
 
 @interface SAMovieV2ShowtimeSnippet : SAUISnippet
 
-@property(assign,retain) SAUIImageResource * attributionLogo;
-@property(assign,copy) NSString * movieName;
-@property(assign,copy) NSArray * showtimes;
-@property(assign,retain) SALocalSearchBusiness2 * theater;
-@property(assign,copy) NSString * theaterName;
+@property (nonatomic, retain) SAUIImageResource *attributionLogo;
+@property (nonatomic, copy) NSString *movieName;
+@property (nonatomic, copy) NSArray *showtimes;
+@property (nonatomic, retain) SALocalSearchBusiness2 *theater;
+@property (nonatomic, copy) NSString *theaterName;
 
 + (id)showtimeSnippet;
 + (id)showtimeSnippetWithDictionary:(id)arg1 context:(id)arg2;

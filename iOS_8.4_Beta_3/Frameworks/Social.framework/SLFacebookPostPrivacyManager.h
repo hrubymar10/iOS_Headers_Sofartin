@@ -7,7 +7,7 @@
     NSArray *_privacySettings;
 }
 
-@property(assign,retain) SLFacebookPostPrivacySetting * privacySetting;
+@property (retain) SLFacebookPostPrivacySetting *privacySetting;
 
 - (void).cxx_destruct;
 - (void)_handlePrivacySettingsUpdateResponseWithData:(id)arg1 urlResponse:(id)arg2 error:(id)arg3 handler:(id)arg4;

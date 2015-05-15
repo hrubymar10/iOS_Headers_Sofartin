@@ -8,9 +8,9 @@
     NSString *_imageName;
 }
 
-@property(assign,readwrite) bool alwaysTemplate;
-@property(assign,retain) NSBundle * bundle;
-@property(assign,copy) NSString * imageName;
+@property (nonatomic) bool alwaysTemplate;
+@property (nonatomic, retain) NSBundle *bundle;
+@property (nonatomic, copy) NSString *imageName;
 
 - (void).cxx_destruct;
 - (bool)alwaysTemplate;

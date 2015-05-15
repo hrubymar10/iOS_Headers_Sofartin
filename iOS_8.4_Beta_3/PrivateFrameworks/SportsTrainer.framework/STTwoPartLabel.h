@@ -7,8 +7,8 @@
     UILabel *_secondaryLabel;
 }
 
-@property(assign,readonly) UILabel * primaryLabel;
-@property(assign,readonly) UILabel * secondaryLabel;
+@property (nonatomic, readonly) UILabel *primaryLabel;
+@property (nonatomic, readonly) UILabel *secondaryLabel;
 
 + (id)defaultFormatForSecondaryLabel;
 + (id)defaultTextForPrimaryLabel;

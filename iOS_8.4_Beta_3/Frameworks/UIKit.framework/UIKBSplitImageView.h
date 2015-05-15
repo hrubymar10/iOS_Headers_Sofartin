@@ -9,7 +9,7 @@
     UIImageView *_splitRight;
 }
 
-@property(assign,readwrite) NSString * filterType;
+@property (nonatomic) NSString *filterType;
 
 - (bool)_shouldInheritScreenScaleAsContentScaleFactor;
 - (void)clearImages;

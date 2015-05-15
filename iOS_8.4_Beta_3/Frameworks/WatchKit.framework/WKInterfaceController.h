@@ -18,10 +18,10 @@
     NSString *_viewControllerID;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } contentFrame;
-@property(assign,copy) NSArray * properties;
-@property(assign,retain) NSArray * topLevelObjects;
-@property(assign,retain) NSString * viewControllerID;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } contentFrame;
+@property (nonatomic, copy) NSArray *properties;
+@property (nonatomic, retain) NSArray *topLevelObjects;
+@property (nonatomic, retain) NSString *viewControllerID;
 
 + (void)_insertPageControllersAtIndexes:(id)arg1 withNames:(id)arg2 contexts:(id)arg3;
 + (void)_movePageControllerAtIndex:(long long)arg1 toIndex:(long long)arg2;

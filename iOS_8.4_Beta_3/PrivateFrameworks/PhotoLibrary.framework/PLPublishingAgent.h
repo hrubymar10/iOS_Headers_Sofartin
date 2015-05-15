@@ -40,23 +40,23 @@
     id _userInfo;
 }
 
-@property(assign,readonly) bool allowsCellularAccessForRequests;
-@property(assign,readwrite) bool allowsHDOver3GUpload;
-@property(assign,readwrite) long long approximateHDUploadSize;
-@property(assign,readwrite) long long approximateSDUploadSize;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PLPublishingAgentDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enableHDUpload;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool mediaIsHDVideo;
-@property(assign,readwrite) bool needsTrimming;
-@property(assign,readwrite) bool ownerIsCamera;
-@property(assign,readwrite) float progressMultiplier;
-@property(assign,readwrite) int remakerMode;
-@property(assign,readwrite) int selectedOption;
-@property(assign,readwrite) bool shouldCancelPublish;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) bool allowsCellularAccessForRequests;
+@property (nonatomic) bool allowsHDOver3GUpload;
+@property (nonatomic) long long approximateHDUploadSize;
+@property (nonatomic) long long approximateSDUploadSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PLPublishingAgentDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enableHDUpload;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool mediaIsHDVideo;
+@property (nonatomic) bool needsTrimming;
+@property (nonatomic) bool ownerIsCamera;
+@property (nonatomic) float progressMultiplier;
+@property (nonatomic) int remakerMode;
+@property (nonatomic) int selectedOption;
+@property (nonatomic) bool shouldCancelPublish;
+@property (readonly) Class superclass;
 
 + (id)publishingAgentForBundleNamed:(id)arg1 toPublishMedia:(id)arg2;
 

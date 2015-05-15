@@ -19,8 +19,8 @@
     struct CLNotifierBase { int (**x1)(); } *_notifier;
 }
 
-@property(assign,readonly) struct CLNotifierBase { int (**x1)(); }* notifier;
-@property(assign,readwrite) bool valid;
+@property (nonatomic, readonly) struct CLNotifierBase { int (**x1)(); }*notifier;
+@property (nonatomic) bool valid;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

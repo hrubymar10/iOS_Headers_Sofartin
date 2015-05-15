@@ -28,14 +28,14 @@
     int _verticalAlignement;
 }
 
-@property(assign,readwrite) double availableSpace;
-@property(assign,readwrite) bool complete;
-@property(assign,readwrite) bool fixedItemSize;
-@property(assign,readwrite) long long index;
-@property(assign,readonly) NSMutableArray * items;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rowFrame;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } rowSize;
-@property(assign,readwrite) _UIFlowLayoutSection * section;
+@property (nonatomic) double availableSpace;
+@property (nonatomic) bool complete;
+@property (nonatomic) bool fixedItemSize;
+@property (nonatomic) long long index;
+@property (nonatomic, readonly) NSMutableArray *items;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rowFrame;
+@property (nonatomic) struct CGSize { double x1; double x2; } rowSize;
+@property (nonatomic) _UIFlowLayoutSection *section;
 
 - (void)addItem:(id)arg1 atEnd:(bool)arg2;
 - (double)availableSpace;

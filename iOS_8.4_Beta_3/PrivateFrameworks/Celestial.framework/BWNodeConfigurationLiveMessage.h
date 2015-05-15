@@ -7,8 +7,8 @@
     BWFormat *_updatedFormat;
 }
 
-@property(assign,readonly) long long configurationID;
-@property(assign,readonly) BWFormat * updatedFormat;
+@property (readonly) long long configurationID;
+@property (readonly) BWFormat *updatedFormat;
 
 + (id)newMessageWithConfigurationID:(long long)arg1;
 + (id)newMessageWithConfigurationID:(long long)arg1 updatedFormat:(id)arg2;

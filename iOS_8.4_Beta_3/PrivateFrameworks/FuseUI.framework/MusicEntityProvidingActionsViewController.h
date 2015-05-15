@@ -9,12 +9,12 @@
     UITableView *_tableView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicEntityProvidingActionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) MPUFontDescriptor * fontDescriptor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicEntityProvidingActionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) MPUFontDescriptor *fontDescriptor;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (long long)_actionTypeForRow:(long long)arg1;

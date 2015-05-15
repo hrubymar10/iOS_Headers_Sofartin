@@ -10,10 +10,10 @@
     NSString *_url;
 }
 
-@property(assign,readwrite) bool hasSize;
-@property(assign,readonly) bool hasUrl;
-@property(assign,readwrite) int size;
-@property(assign,retain) NSString * url;
+@property (nonatomic) bool hasSize;
+@property (nonatomic, readonly) bool hasUrl;
+@property (nonatomic) int size;
+@property (nonatomic, retain) NSString *url;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

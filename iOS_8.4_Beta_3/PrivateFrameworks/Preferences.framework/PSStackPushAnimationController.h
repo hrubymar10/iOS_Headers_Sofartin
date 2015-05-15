@@ -16,18 +16,18 @@
     NSArray *_viewControllers;
 }
 
-@property(assign,readwrite) long long animationPreset;
-@property(assign,copy) id completionBlock;
-@property(assign,readwrite) double completionStagger;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UINavigationController * navigationController;
-@property(assign,readwrite) double pushDuration;
-@property(assign,readwrite) double springDamping;
-@property(assign,readwrite) double startStagger;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSArray * viewControllers;
+@property (nonatomic) long long animationPreset;
+@property (nonatomic, copy) id completionBlock;
+@property (nonatomic) double completionStagger;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UINavigationController *navigationController;
+@property (nonatomic) double pushDuration;
+@property (nonatomic) double springDamping;
+@property (nonatomic) double startStagger;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSArray *viewControllers;
 
 + (id)_animationParametersForPreset:(long long)arg1;
 + (id)_snapshotOfViewController:(id)arg1 withNavigationBar:(id)arg2 prevViewController:(id)arg3;

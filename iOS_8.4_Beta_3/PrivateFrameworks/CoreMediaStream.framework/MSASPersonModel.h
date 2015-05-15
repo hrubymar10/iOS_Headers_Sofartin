@@ -6,7 +6,7 @@
     bool _shouldDownloadEarliestPhotosFirst;
 }
 
-@property(assign,readwrite) bool shouldDownloadEarliestPhotosFirst;
+@property (nonatomic) bool shouldDownloadEarliestPhotosFirst;
 
 - (id)_commandWithMinimumIdentifier:(id)arg1 outParams:(id*)arg2 outCommandIdentifier:(long long*)arg3 outPersonID:(id*)arg4 outAlbumGUID:(id*)arg5 outAssetCollectionGUID:(id*)arg6;
 - (void)addPendingAssetCollectionGUID:(id)arg1 albumGUID:(id)arg2;

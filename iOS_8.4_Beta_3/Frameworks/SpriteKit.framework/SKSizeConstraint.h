@@ -7,8 +7,8 @@
     SKRange *_widthRange;
 }
 
-@property(assign,copy) SKRange * heightRange;
-@property(assign,copy) SKRange * widthRange;
+@property (copy) SKRange *heightRange;
+@property (copy) SKRange *widthRange;
 
 + (id)constraintWithHeightRange:(id)arg1;
 + (id)constraintWithWidthRange:(id)arg1;

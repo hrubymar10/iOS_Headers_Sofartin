@@ -13,14 +13,14 @@
     NSMutableDictionary *_recordZonesByZoneID;
 }
 
-@property(assign,retain) NSError * fetchAllRecordZonesError;
-@property(assign,copy) id fetchRecordZonesCompletionBlock;
-@property(assign,readwrite) bool ignorePCSFailures;
-@property(assign,readwrite) bool isFetchAllRecordZonesOperation;
-@property(assign,retain) NSMutableDictionary * recordZoneErrors;
-@property(assign,copy) NSArray * recordZoneIDs;
-@property(assign,retain) NSArray * recordZones;
-@property(assign,retain) NSMutableDictionary * recordZonesByZoneID;
+@property (nonatomic, retain) NSError *fetchAllRecordZonesError;
+@property (nonatomic, copy) id fetchRecordZonesCompletionBlock;
+@property (nonatomic) bool ignorePCSFailures;
+@property (nonatomic) bool isFetchAllRecordZonesOperation;
+@property (nonatomic, retain) NSMutableDictionary *recordZoneErrors;
+@property (nonatomic, copy) NSArray *recordZoneIDs;
+@property (nonatomic, retain) NSArray *recordZones;
+@property (nonatomic, retain) NSMutableDictionary *recordZonesByZoneID;
 
 + (id)fetchAllRecordZonesOperation;
 

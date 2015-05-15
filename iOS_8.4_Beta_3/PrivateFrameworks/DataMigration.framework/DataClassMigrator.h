@@ -7,13 +7,13 @@
     bool _didUpgrade;
 }
 
-@property(assign,retain) NSDictionary * context;
-@property(assign,readonly) bool didMigrateBackupFromDifferentDevice;
-@property(assign,readonly) bool didRestoreFromBackup;
-@property(assign,readonly) bool didRestoreFromCloudBackup;
-@property(assign,readwrite) bool didUpgrade;
-@property(assign,readonly) bool shouldPreserveSettingsAfterRestore;
-@property(assign,readonly) bool wasPasscodeSetInBackup;
+@property (nonatomic, retain) NSDictionary *context;
+@property (nonatomic, readonly) bool didMigrateBackupFromDifferentDevice;
+@property (nonatomic, readonly) bool didRestoreFromBackup;
+@property (nonatomic, readonly) bool didRestoreFromCloudBackup;
+@property (nonatomic) bool didUpgrade;
+@property (nonatomic, readonly) bool shouldPreserveSettingsAfterRestore;
+@property (nonatomic, readonly) bool wasPasscodeSetInBackup;
 
 - (void).cxx_destruct;
 - (id)context;

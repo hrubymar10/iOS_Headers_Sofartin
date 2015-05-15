@@ -6,7 +6,7 @@
     bool __hasLikes;
 }
 
-@property(setter=_setHasLikes:,assign,readwrite) bool _hasLikes;
+@property (setter=_setHasLikes:, nonatomic) bool _hasLikes;
 
 - (bool)_hasLikes;
 - (void)_setHasLikes:(bool)arg1;

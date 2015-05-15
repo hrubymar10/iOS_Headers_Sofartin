@@ -7,13 +7,13 @@
     unsigned int _layerIndex;
 }
 
-@property(assign,readonly) int blendMode;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
-@property(assign,readonly) double fillOpacity;
-@property(assign,readonly) bool hasLayerMask;
-@property(assign,readonly) bool hasVectorMask;
-@property(assign,readonly) double opacity;
-@property(assign,readonly) bool visibility;
+@property (readonly) int blendMode;
+@property (readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
+@property (readonly) double fillOpacity;
+@property (readonly) bool hasLayerMask;
+@property (readonly) bool hasVectorMask;
+@property (readonly) double opacity;
+@property (readonly) bool visibility;
 
 - (struct CGImage { }*)_createMaskFromAlphaChannel:(long long)arg1;
 - (id)_psdImageRef;

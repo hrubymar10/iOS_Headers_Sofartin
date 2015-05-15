@@ -23,18 +23,18 @@
     NSObject<OS_dispatch_queue> *_targetQueue;
 }
 
-@property(assign,copy) id connectedHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSInputStream * inputStream;
-@property(assign,copy) NSString * localServiceName;
-@property(assign,retain) NSOutputStream * outputStream;
-@property(assign,copy) id receiveDataHandler;
-@property(assign,copy) NSString * remoteServiceName;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * syncQueue;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * targetQueue;
+@property (nonatomic, copy) id connectedHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSInputStream *inputStream;
+@property (nonatomic, copy) NSString *localServiceName;
+@property (nonatomic, retain) NSOutputStream *outputStream;
+@property (nonatomic, copy) id receiveDataHandler;
+@property (nonatomic, copy) NSString *remoteServiceName;
+@property (readonly) Class superclass;
+@property (nonatomic) NSObject<OS_dispatch_queue> *syncQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> *targetQueue;
 
 + (void)checkConstants;
 + (unsigned long long)receiveDataLimit;

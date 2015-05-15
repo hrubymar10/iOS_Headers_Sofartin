@@ -6,7 +6,7 @@
     NSCharacterSet *_characterSet;
 }
 
-@property(assign,copy) NSCharacterSet * characterSet;
+@property (nonatomic, copy) NSCharacterSet *characterSet;
 
 - (void).cxx_destruct;
 - (id)_label;

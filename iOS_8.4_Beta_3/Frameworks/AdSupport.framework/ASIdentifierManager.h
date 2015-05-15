@@ -4,8 +4,8 @@
 
 @interface ASIdentifierManager : NSObject
 
-@property(assign,readonly) NSUUID * advertisingIdentifier;
-@property(getter=isAdvertisingTrackingEnabled,assign,readonly) bool advertisingTrackingEnabled;
+@property (nonatomic, readonly) NSUUID *advertisingIdentifier;
+@property (getter=isAdvertisingTrackingEnabled, nonatomic, readonly) bool advertisingTrackingEnabled;
 
 + (id)sharedManager;
 

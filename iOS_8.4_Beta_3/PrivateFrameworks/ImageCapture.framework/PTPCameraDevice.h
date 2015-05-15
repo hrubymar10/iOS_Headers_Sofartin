@@ -6,7 +6,7 @@
     void *_ptpCameraProperties;
 }
 
-@property(assign,readonly) PTPInitiator * initiator;
+@property (readonly) PTPInitiator *initiator;
 
 - (void)addToEventHandlerQ:(id)arg1;
 - (void)dealloc;

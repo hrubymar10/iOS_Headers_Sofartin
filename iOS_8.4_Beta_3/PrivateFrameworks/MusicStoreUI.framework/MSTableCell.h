@@ -9,7 +9,7 @@
     SUPlayerStatus *_previewStatus;
 }
 
-@property(assign,retain) SUPlayerStatus * previewStatus;
+@property (nonatomic, retain) SUPlayerStatus *previewStatus;
 
 - (void)_destroyPreviewProgressView;
 - (void)_flipFromPreviewProgressView;

@@ -6,7 +6,7 @@
     NSString *_standardNotes;
 }
 
-@property(assign,retain) NSString * standardNotes;
+@property (nonatomic, retain) NSString *standardNotes;
 
 - (void).cxx_destruct;
 - (void)setStandardNotes:(id)arg1;

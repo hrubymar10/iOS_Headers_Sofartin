@@ -15,15 +15,15 @@
     NSDictionary *_trackReferences;
 }
 
-@property(assign,readonly) bool displaysNonForcedSubtitles;
-@property(assign,readonly) NSString * extendedLanguageTag;
-@property(assign,readonly) AVAssetWriterInput * input;
-@property(assign,readonly) NSString * languageCode;
-@property(assign,readonly) NSString * mediaType;
-@property(assign,readonly) NSArray * metadata;
-@property(assign,readonly) NSDictionary * outputSettings;
-@property(assign,readonly) struct opaqueCMFormatDescription { }* sourceFormatHint;
-@property(assign,readonly) NSDictionary * trackReferences;
+@property (nonatomic, readonly) bool displaysNonForcedSubtitles;
+@property (nonatomic, readonly) NSString *extendedLanguageTag;
+@property (nonatomic, readonly) AVAssetWriterInput *input;
+@property (nonatomic, readonly) NSString *languageCode;
+@property (nonatomic, readonly) NSString *mediaType;
+@property (nonatomic, readonly) NSArray *metadata;
+@property (nonatomic, readonly) NSDictionary *outputSettings;
+@property (nonatomic, readonly) struct opaqueCMFormatDescription { }*sourceFormatHint;
+@property (nonatomic, readonly) NSDictionary *trackReferences;
 
 + (id)assetWriterInputSelectionOptionWithAssetWriterInput:(id)arg1;
 + (id)assetWriterInputSelectionOptionWithAssetWriterInput:(id)arg1 displaysNonForcedSubtitles:(bool)arg2;

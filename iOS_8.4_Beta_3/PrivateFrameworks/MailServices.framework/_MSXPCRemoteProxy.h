@@ -11,7 +11,7 @@
     int _selectorLock;
 }
 
-@property(setter=___setNSXPCRemoteObjectProxy:,assign,retain) id ___nsxpc_remoteObjectProxy;
+@property (setter=___setNSXPCRemoteObjectProxy:, nonatomic, retain) id ___nsxpc_remoteObjectProxy;
 
 - (id)___nsxpc_remoteObjectProxy;
 - (void)___setNSXPCRemoteObjectProxy:(id)arg1;

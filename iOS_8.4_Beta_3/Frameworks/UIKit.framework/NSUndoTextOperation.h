@@ -10,8 +10,8 @@
     UITextInputController *_inputController;
 }
 
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } affectedRange;
-@property(assign,readwrite) UITextInputController * inputController;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } affectedRange;
+@property (nonatomic) UITextInputController *inputController;
 
 - (struct _NSRange { unsigned long long x1; unsigned long long x2; })affectedRange;
 - (id)initWithAffectedRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1 inputController:(id)arg2;

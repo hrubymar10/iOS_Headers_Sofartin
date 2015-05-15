@@ -26,18 +26,18 @@
     NSMutableDictionary *_usedLabels;
 }
 
-@property(assign,readwrite) unsigned long long currentIndex;
-@property(assign,readwrite) <FUScrollWheelDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <FUScrollWheelDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIFont * font;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long itemTitleAligmnent;
-@property(assign,retain) UIScrollView * scrollView;
-@property(assign,readwrite) double scrollWheelLabelPageSize;
-@property(assign,readwrite) bool showsSelectionIndicator;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) unsigned long long currentIndex;
+@property (nonatomic) <FUScrollWheelDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <FUScrollWheelDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIFont *font;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long itemTitleAligmnent;
+@property (nonatomic, retain) UIScrollView *scrollView;
+@property (nonatomic) double scrollWheelLabelPageSize;
+@property (nonatomic) bool showsSelectionIndicator;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_alertDidChangeToCurrentIndex:(unsigned long long)arg1;

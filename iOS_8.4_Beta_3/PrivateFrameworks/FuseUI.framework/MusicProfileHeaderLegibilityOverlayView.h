@@ -9,7 +9,7 @@
     MPUGradientView *_radialGradientView;
 }
 
-@property(assign,copy) UIColor * radialGradientColor;
+@property (nonatomic, copy) UIColor *radialGradientColor;
 
 + (Class)layerClass;
 

@@ -8,7 +8,7 @@
     unsigned long long _policyOptions;
 }
 
-@property(assign,copy) NSString * bundleIdentifier;
+@property (nonatomic, copy) NSString *bundleIdentifier;
 
 + (bool)isServiceRestricted:(id)arg1;
 

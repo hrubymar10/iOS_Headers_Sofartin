@@ -13,18 +13,18 @@
     long long _presentationSource;
 }
 
-@property(assign,readonly) IKAppContext * appContext;
-@property(getter=_isConfigured,assign,readonly) bool configured;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * featureName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * nativeViewIdentifier;
-@property(assign,readonly) IKJSNavigationDocument * navigationDocument;
-@property(getter=_ownerForScriptObjectGraph,assign,readonly) IKJSObject * ownerForScriptObjectGraph;
-@property(getter=_ownerViewElement,assign,readonly) SKUIViewElement * ownerViewElement;
-@property(assign,readwrite) long long presentationSource;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) IKAppContext *appContext;
+@property (getter=_isConfigured, nonatomic, readonly) bool configured;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSString *featureName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *nativeViewIdentifier;
+@property (nonatomic, readonly) IKJSNavigationDocument *navigationDocument;
+@property (getter=_ownerForScriptObjectGraph, nonatomic, readonly) IKJSObject *ownerForScriptObjectGraph;
+@property (getter=_ownerViewElement, nonatomic, readonly) SKUIViewElement *ownerViewElement;
+@property (nonatomic) long long presentationSource;
+@property (readonly) Class superclass;
 
 + (id)makeFeatureJSObjectForFeature:(id)arg1;
 

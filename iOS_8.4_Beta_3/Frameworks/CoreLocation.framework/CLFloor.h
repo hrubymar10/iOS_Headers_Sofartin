@@ -6,7 +6,7 @@
     long long level;
 }
 
-@property(assign,readonly) long long level;
+@property (nonatomic, readonly) long long level;
 
 + (bool)supportsSecureCoding;
 

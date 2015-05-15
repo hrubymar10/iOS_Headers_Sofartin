@@ -13,11 +13,11 @@
     NSString *_truncationTokenFormat;
 }
 
-@property(assign,copy) NSString * componentsNamePlural;
-@property(assign,copy) NSString * componentsNameSingular;
-@property(assign,readonly) struct CGSize { double x1; double x2; } drawingSize;
-@property(assign,readonly) NSDictionary * textAttributes;
-@property(assign,copy) NSString * truncationTokenFormat;
+@property (nonatomic, copy) NSString *componentsNamePlural;
+@property (nonatomic, copy) NSString *componentsNameSingular;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } drawingSize;
+@property (nonatomic, readonly) NSDictionary *textAttributes;
+@property (nonatomic, copy) NSString *truncationTokenFormat;
 
 + (id)truncationStrategyWithTextAttributes:(id)arg1 drawingSize:(struct CGSize { double x1; double x2; })arg2;
 

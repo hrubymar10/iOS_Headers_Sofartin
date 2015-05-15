@@ -7,8 +7,8 @@
     MFGenericAttachmentStore *_store;
 }
 
-@property(assign,readwrite) MFConditionLock * lock;
-@property(assign,readwrite) MFGenericAttachmentStore * store;
+@property (nonatomic) MFConditionLock *lock;
+@property (nonatomic) MFGenericAttachmentStore *store;
 
 - (long long)appendData:(id)arg1;
 - (id)lock;

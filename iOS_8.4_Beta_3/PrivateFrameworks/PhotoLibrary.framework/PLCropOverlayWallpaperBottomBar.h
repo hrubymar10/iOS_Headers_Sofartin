@@ -18,19 +18,19 @@
     _UILegibilityLabel *_titleLabel;
 }
 
-@property(assign,retain) _UIBackdropView * backdropView;
-@property(assign,readonly) PLWallpaperButton * doCancelButton;
-@property(assign,readonly) PLWallpaperButton * doSetBothScreenButton;
-@property(assign,readonly) PLWallpaperButton * doSetButton;
-@property(assign,readonly) PLWallpaperButton * doSetHomeScreenButton;
-@property(assign,readonly) PLWallpaperButton * doSetLockScreenButton;
-@property(assign,readwrite) double maxToggleWidth;
-@property(assign,readonly) PLWallpaperButton * motionToggle;
-@property(assign,readwrite) bool motionToggleHidden;
-@property(assign,retain) UIView * separatorLine;
-@property(assign,readwrite) bool shouldOnlyShowHomeScreenButton;
-@property(assign,readwrite) bool shouldOnlyShowLockScreenButton;
-@property(assign,retain) _UILegibilityLabel * titleLabel;
+@property (nonatomic, retain) _UIBackdropView *backdropView;
+@property (nonatomic, readonly) PLWallpaperButton *doCancelButton;
+@property (nonatomic, readonly) PLWallpaperButton *doSetBothScreenButton;
+@property (nonatomic, readonly) PLWallpaperButton *doSetButton;
+@property (nonatomic, readonly) PLWallpaperButton *doSetHomeScreenButton;
+@property (nonatomic, readonly) PLWallpaperButton *doSetLockScreenButton;
+@property (nonatomic) double maxToggleWidth;
+@property (nonatomic, readonly) PLWallpaperButton *motionToggle;
+@property (nonatomic) bool motionToggleHidden;
+@property (nonatomic, retain) UIView *separatorLine;
+@property (nonatomic) bool shouldOnlyShowHomeScreenButton;
+@property (nonatomic) bool shouldOnlyShowLockScreenButton;
+@property (nonatomic, retain) _UILegibilityLabel *titleLabel;
 
 - (void)_commonPLCropOverlayWallpaperBottomBarInitialization;
 - (void)_commonPLCropOverlayWallpaperBottomBarInitializationPad;

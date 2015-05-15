@@ -10,10 +10,10 @@
     bool _valuePending;
 }
 
-@property(assign,copy) id tapHandler;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * value;
-@property(assign,readwrite) bool valuePending;
+@property (nonatomic, copy) id tapHandler;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *value;
+@property (nonatomic) bool valuePending;
 
 - (void).cxx_destruct;
 - (id)changeObserver;

@@ -12,13 +12,13 @@
     NSNumber *_phone;
 }
 
-@property(assign,retain) NSDate * birthday;
-@property(assign,retain) NSString * email;
-@property(assign,retain) NSString * firstName;
-@property(assign,retain) NSString * gender;
-@property(assign,retain) NSString * lastName;
-@property(assign,retain) NSString * password;
-@property(assign,retain) NSNumber * phone;
+@property (nonatomic, retain) NSDate *birthday;
+@property (nonatomic, retain) NSString *email;
+@property (nonatomic, retain) NSString *firstName;
+@property (nonatomic, retain) NSString *gender;
+@property (nonatomic, retain) NSString *lastName;
+@property (nonatomic, retain) NSString *password;
+@property (nonatomic, retain) NSNumber *phone;
 
 - (void).cxx_destruct;
 - (id)birthday;

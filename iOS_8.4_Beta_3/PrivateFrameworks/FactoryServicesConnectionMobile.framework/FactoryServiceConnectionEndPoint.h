@@ -13,18 +13,18 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,retain) NSXPCListener * Listener;
-@property(assign,copy) id connectionInterruptionHandler;
-@property(assign,copy) id connectionInvalidationHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) <FactoryServiceConnectionEndPointMessageHandlingProtocol> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isConnected;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * serviceName;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSXPCConnection * xpcConnection;
+@property (retain) NSXPCListener *Listener;
+@property (copy) id connectionInterruptionHandler;
+@property (copy) id connectionInvalidationHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (retain) <FactoryServiceConnectionEndPointMessageHandlingProtocol> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property bool isConnected;
+@property (retain) NSString *name;
+@property (retain) NSString *serviceName;
+@property (readonly) Class superclass;
+@property (retain) NSXPCConnection *xpcConnection;
 
 - (void).cxx_destruct;
 - (id)Listener;

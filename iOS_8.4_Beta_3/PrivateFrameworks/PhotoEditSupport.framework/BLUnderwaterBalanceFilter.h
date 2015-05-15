@@ -21,19 +21,19 @@
     CIFilter *_underwaterGamma2Filter;
 }
 
-@property(assign,copy) CIVector * inputAverageLinearColor;
-@property(assign,copy) NSNumber * inputDepthStrength;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,copy) NSNumber * inputWaterBlend;
-@property(assign,retain) CIFilter * underwaterAdditionFilter;
-@property(assign,retain) CIFilter * underwaterBalanceFilter;
-@property(assign,retain) CIFilter * underwaterColorMatrixIQFilter;
-@property(assign,retain) CIFilter * underwaterColorMatrixRGB2YIQFilter;
-@property(assign,retain) CIFilter * underwaterColorMatrixScaleFilter;
-@property(assign,retain) CIFilter * underwaterColorMatrixYFilter;
-@property(assign,retain) CIFilter * underwaterColorMatrixYIQ2RGBFilter;
-@property(assign,retain) CIFilter * underwaterGamma1Filter;
-@property(assign,retain) CIFilter * underwaterGamma2Filter;
+@property (nonatomic, copy) CIVector *inputAverageLinearColor;
+@property (nonatomic, copy) NSNumber *inputDepthStrength;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, copy) NSNumber *inputWaterBlend;
+@property (nonatomic, retain) CIFilter *underwaterAdditionFilter;
+@property (nonatomic, retain) CIFilter *underwaterBalanceFilter;
+@property (nonatomic, retain) CIFilter *underwaterColorMatrixIQFilter;
+@property (nonatomic, retain) CIFilter *underwaterColorMatrixRGB2YIQFilter;
+@property (nonatomic, retain) CIFilter *underwaterColorMatrixScaleFilter;
+@property (nonatomic, retain) CIFilter *underwaterColorMatrixYFilter;
+@property (nonatomic, retain) CIFilter *underwaterColorMatrixYIQ2RGBFilter;
+@property (nonatomic, retain) CIFilter *underwaterGamma1Filter;
+@property (nonatomic, retain) CIFilter *underwaterGamma2Filter;
 
 - (void).cxx_destruct;
 - (id)init;

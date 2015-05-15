@@ -15,15 +15,15 @@
     } _tileKey;
 }
 
-@property(assign,readonly) struct VKCacheKey { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; } cacheKey;
-@property(assign,readonly) bool isInvalid;
-@property(assign,retain) NSLocale * locale;
-@property(assign,readwrite) long long mapType;
-@property(assign,readwrite) unsigned int scale;
-@property(assign,readwrite) unsigned int tileGroupID;
-@property(assign,readwrite) struct VKRasterTileKey { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; } tileKey;
-@property(assign,readonly) const struct VKRasterTileKey { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; }* tileKeyPtr;
-@property(assign,readonly) struct VKTileKey { unsigned int x1; int x2; int x3; unsigned int x4; } tk;
+@property (nonatomic, readonly) struct VKCacheKey { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; } cacheKey;
+@property (nonatomic, readonly) bool isInvalid;
+@property (nonatomic, retain) NSLocale *locale;
+@property (nonatomic) long long mapType;
+@property (nonatomic) unsigned int scale;
+@property (nonatomic) unsigned int tileGroupID;
+@property (nonatomic) struct VKRasterTileKey { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; } tileKey;
+@property (nonatomic, readonly) const struct VKRasterTileKey { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; }*tileKeyPtr;
+@property (nonatomic, readonly) struct VKTileKey { unsigned int x1; int x2; int x3; unsigned int x4; } tk;
 
 - (struct VKCacheKey { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; })cacheKey;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

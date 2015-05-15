@@ -8,10 +8,10 @@
     NSMutableArray *_variants;
 }
 
-@property(assign,retain) VKPGenericShieldStyleInfo * genericShieldStyleInfo;
-@property(assign,readonly) bool hasGenericShieldStyleInfo;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSMutableArray * variants;
+@property (nonatomic, retain) VKPGenericShieldStyleInfo *genericShieldStyleInfo;
+@property (nonatomic, readonly) bool hasGenericShieldStyleInfo;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSMutableArray *variants;
 
 - (void)addVariants:(id)arg1;
 - (void)clearVariants;

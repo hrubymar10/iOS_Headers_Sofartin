@@ -6,8 +6,8 @@
     NSString *_guid;
 }
 
-@property(assign,retain) NSString * guid;
-@property(assign,readonly) bool hasGuid;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic, readonly) bool hasGuid;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

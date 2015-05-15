@@ -6,7 +6,7 @@
     LSBundleProxy *_bundleProxy;
 }
 
-@property(assign,retain) LSBundleProxy * bundleProxy;
+@property (nonatomic, retain) LSBundleProxy *bundleProxy;
 
 + (id)activityBundleHelperForExtension:(id)arg1;
 

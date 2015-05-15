@@ -6,14 +6,14 @@
     MTLToolsPointerArray *_functions;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,readonly) NSArray * functionNames;
-@property(assign,readonly) MTLToolsPointerArray * functions;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * label;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) <MTLDevice> *device;
+@property (readonly) NSArray *functionNames;
+@property (nonatomic, readonly) MTLToolsPointerArray *functions;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *label;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)acceptVisitor:(id)arg1;

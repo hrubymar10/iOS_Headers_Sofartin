@@ -16,15 +16,15 @@
     } _textViewExtraMargins;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <HKMedicalIDEditorCellHeightChangeDelegate> * heightChangeDelegate;
-@property(assign,retain) NSString * placeholder;
-@property(assign,retain) NSString * stringValue;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UITextView * textView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textViewExtraMargins;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <HKMedicalIDEditorCellHeightChangeDelegate> *heightChangeDelegate;
+@property (nonatomic, retain) NSString *placeholder;
+@property (nonatomic, retain) NSString *stringValue;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UITextView *textView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textViewExtraMargins;
 
 + (bool)showsLabelAndValue;
 

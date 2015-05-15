@@ -9,10 +9,10 @@
     MPSparseArray *_sourceContexts;
 }
 
-@property(assign,readwrite) unsigned long long count;
-@property(assign,readwrite) unsigned long long indexToFaultIn;
-@property(assign,readwrite) unsigned long long iterationIndex;
-@property(assign,retain) MPSparseArray * sourceContexts;
+@property (nonatomic) unsigned long long count;
+@property (nonatomic) unsigned long long indexToFaultIn;
+@property (nonatomic) unsigned long long iterationIndex;
+@property (nonatomic, retain) MPSparseArray *sourceContexts;
 
 - (void).cxx_destruct;
 - (unsigned long long)count;

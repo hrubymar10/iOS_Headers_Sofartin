@@ -10,11 +10,11 @@
     NSNumber *_weight;
 }
 
-@property(assign,retain) NSNumber * port;
-@property(assign,retain) NSNumber * priority;
-@property(assign,retain) NSString * serviceString;
-@property(assign,retain) NSString * target;
-@property(assign,retain) NSNumber * weight;
+@property (nonatomic, retain) NSNumber *port;
+@property (nonatomic, retain) NSNumber *priority;
+@property (nonatomic, retain) NSString *serviceString;
+@property (nonatomic, retain) NSString *target;
+@property (nonatomic, retain) NSNumber *weight;
 
 - (void)dealloc;
 - (id)description;

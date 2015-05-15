@@ -33,27 +33,27 @@
     unsigned long long _yAxisLabelCount;
 }
 
-@property(assign,readwrite) bool HUDEnabled;
-@property(assign,retain) UIColor * axisLabelsColor;
-@property(assign,readwrite) struct CGGradient { }* backgroundGradient;
-@property(assign,retain) UIColor * backgroundLinesColor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } chartSize;
-@property(assign,readwrite) bool graphOverlapsYAxisLabels;
-@property(assign,readonly) double gutterHeight;
-@property(assign,readwrite) unsigned long long horizontalGridlineCount;
-@property(assign,readwrite) double intervalRowHeight;
-@property(assign,retain) UIColor * lineColor;
-@property(assign,readonly) double lineGraphBottomPadding;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } lineGraphInsets;
-@property(assign,readwrite) double lineWidth;
-@property(assign,readwrite) long long maxInterval;
-@property(assign,readwrite) bool showsPriceLabelForPreviousClose;
-@property(assign,readwrite) double showsTitle;
-@property(assign,readwrite) bool showsVolume;
-@property(assign,readwrite) bool usesDetailedAxisLabels;
-@property(assign,readwrite) double volumeHeight;
-@property(assign,retain) UIColor * xAxisKeylineColor;
-@property(assign,readwrite) unsigned long long yAxisLabelCount;
+@property (nonatomic) bool HUDEnabled;
+@property (nonatomic, retain) UIColor *axisLabelsColor;
+@property (nonatomic) struct CGGradient { }*backgroundGradient;
+@property (nonatomic, retain) UIColor *backgroundLinesColor;
+@property (nonatomic) struct CGSize { double x1; double x2; } chartSize;
+@property (nonatomic) bool graphOverlapsYAxisLabels;
+@property (nonatomic, readonly) double gutterHeight;
+@property (nonatomic) unsigned long long horizontalGridlineCount;
+@property (nonatomic) double intervalRowHeight;
+@property (nonatomic, retain) UIColor *lineColor;
+@property (nonatomic, readonly) double lineGraphBottomPadding;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } lineGraphInsets;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) long long maxInterval;
+@property (nonatomic) bool showsPriceLabelForPreviousClose;
+@property (nonatomic) double showsTitle;
+@property (nonatomic) bool showsVolume;
+@property (nonatomic) bool usesDetailedAxisLabels;
+@property (nonatomic) double volumeHeight;
+@property (nonatomic, retain) UIColor *xAxisKeylineColor;
+@property (nonatomic) unsigned long long yAxisLabelCount;
 
 + (id)defaultDisplayMode;
 

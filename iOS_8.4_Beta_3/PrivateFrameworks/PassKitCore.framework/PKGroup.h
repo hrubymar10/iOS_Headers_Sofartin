@@ -10,10 +10,10 @@
     NSMutableDictionary *_passesByUniqueID;
 }
 
-@property(assign,readwrite) <PKGroupDelegate> * delegate;
-@property(assign,readwrite) unsigned long long frontmostPassIndex;
-@property(assign,readonly) NSNumber * groupID;
-@property(getter=isLocal,assign,readwrite) bool local;
+@property (nonatomic) <PKGroupDelegate> *delegate;
+@property (nonatomic) unsigned long long frontmostPassIndex;
+@property (nonatomic, readonly) NSNumber *groupID;
+@property (getter=isLocal, nonatomic) bool local;
 
 - (unsigned long long)_indexOfUniqueID:(id)arg1;
 - (void)_insertPass:(id)arg1 atIndex:(unsigned long long)arg2 notify:(bool)arg3;

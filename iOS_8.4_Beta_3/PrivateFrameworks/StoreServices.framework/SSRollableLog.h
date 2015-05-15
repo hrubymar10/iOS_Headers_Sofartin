@@ -10,7 +10,7 @@
     SSLogFileOptions *_options;
 }
 
-@property(assign,readonly) SSLogFileOptions * logOptions;
+@property (readonly) SSLogFileOptions *logOptions;
 
 - (id)_activeLogFilePath;
 - (void)_checkLogFileSize;

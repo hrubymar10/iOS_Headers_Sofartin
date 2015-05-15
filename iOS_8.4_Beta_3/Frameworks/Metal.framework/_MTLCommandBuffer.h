@@ -38,14 +38,14 @@
     bool _synchronousDebugMode;
 }
 
-@property(assign,readonly) <MTLCommandQueue> * commandQueue;
-@property(assign,readonly) NSError * error;
-@property(assign,copy) NSString * label;
-@property(getter=isProfilingEnabled,assign,readwrite) bool profilingEnabled;
-@property(assign,readonly) NSDictionary * profilingResults;
-@property(assign,readonly) bool retainedReferences;
-@property(assign,readonly) unsigned long long status;
-@property(assign,readonly) bool synchronousDebugMode;
+@property (readonly) <MTLCommandQueue> *commandQueue;
+@property (readonly) NSError *error;
+@property (copy) NSString *label;
+@property (getter=isProfilingEnabled) bool profilingEnabled;
+@property (readonly) NSDictionary *profilingResults;
+@property (readonly) bool retainedReferences;
+@property (readonly) unsigned long long status;
+@property (readonly) bool synchronousDebugMode;
 
 + (void)initialize;
 

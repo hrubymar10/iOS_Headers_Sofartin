@@ -4,8 +4,8 @@
 
 @interface SAUIAlternateProviderSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * alternateProviderResults;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSArray *alternateProviderResults;
+@property (nonatomic, copy) NSString *title;
 
 + (id)alternateProviderSnippet;
 + (id)alternateProviderSnippetWithDictionary:(id)arg1 context:(id)arg2;

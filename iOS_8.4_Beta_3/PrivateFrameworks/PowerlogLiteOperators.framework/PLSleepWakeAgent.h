@@ -9,10 +9,10 @@
     struct IONotificationPort { } *_systemPowerPortRef;
 }
 
-@property(assign,retain) PLSemaphore * canSleepSemaphore;
-@property(assign,readwrite) unsigned int pmNotifier;
-@property(assign,readwrite) unsigned int rootDomainConnect;
-@property(assign,readwrite) struct IONotificationPort { }* systemPowerPortRef;
+@property (retain) PLSemaphore *canSleepSemaphore;
+@property unsigned int pmNotifier;
+@property unsigned int rootDomainConnect;
+@property struct IONotificationPort { }*systemPowerPortRef;
 
 + (id)entryEventBackwardDefinitions;
 + (id)entryEventForwardDefinitionPowerState;

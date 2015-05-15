@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_networkUsageQueue;
 }
 
-@property(assign,readonly) bool isCellularNetworkingAllowed;
-@property(assign,readonly) bool isUsingNetwork;
+@property (nonatomic, readonly) bool isCellularNetworkingAllowed;
+@property (nonatomic, readonly) bool isUsingNetwork;
 
 + (id)sharedNetworkObserver;
 

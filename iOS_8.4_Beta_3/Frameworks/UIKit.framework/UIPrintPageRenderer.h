@@ -29,11 +29,11 @@
     } _printableRect;
 }
 
-@property(assign,readwrite) double footerHeight;
-@property(assign,readwrite) double headerHeight;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } paperRect;
-@property(assign,copy) NSArray * printFormatters;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } printableRect;
+@property (nonatomic) double footerHeight;
+@property (nonatomic) double headerHeight;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } paperRect;
+@property (nonatomic, copy) NSArray *printFormatters;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } printableRect;
 
 - (void)_drawPage:(long long)arg1;
 - (void)_endPrintContext:(id)arg1 success:(bool)arg2;

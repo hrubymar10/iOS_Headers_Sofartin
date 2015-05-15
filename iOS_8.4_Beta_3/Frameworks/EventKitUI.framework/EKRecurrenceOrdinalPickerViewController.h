@@ -6,12 +6,12 @@
     <EKRecurrenceOrdinalPickerViewControllerDelegate> *_delegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <EKRecurrenceOrdinalPickerViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIPickerView * pickerView;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property <EKRecurrenceOrdinalPickerViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIPickerView *pickerView;
+@property (readonly) Class superclass;
 
 - (id)_leftColumn;
 - (id)_rightColumn;

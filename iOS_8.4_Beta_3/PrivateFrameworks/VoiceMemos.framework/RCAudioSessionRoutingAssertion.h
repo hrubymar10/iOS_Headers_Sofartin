@@ -8,8 +8,8 @@
     bool _requiresActiveAudioSession;
 }
 
-@property(assign,readonly) long long priority;
-@property(assign,readonly) bool requiresActiveAudioSession;
+@property (nonatomic, readonly) long long priority;
+@property (nonatomic, readonly) bool requiresActiveAudioSession;
 
 + (id)newCaptureAssertionNamed:(id)arg1;
 + (id)newForegroundAppAssertion;

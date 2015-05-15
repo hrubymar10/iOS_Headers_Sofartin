@@ -16,18 +16,18 @@
     bool _viewDidAppeared;
 }
 
-@property(assign,retain) NSTimer * axSearchTimer;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <APDSearchViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIView * footerView;
-@property(assign,readwrite) UILabel * footerViewLabel;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) APDSearchBar * searchBar;
-@property(getter=isSearching,assign,readwrite) bool searching;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) UIView * toolbarTopOverlapView;
-@property(assign,readwrite) UIView * topbarBottomStrokeView;
+@property (nonatomic, retain) NSTimer *axSearchTimer;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <APDSearchViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIView *footerView;
+@property (nonatomic) UILabel *footerViewLabel;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) APDSearchBar *searchBar;
+@property (getter=isSearching, nonatomic) bool searching;
+@property (readonly) Class superclass;
+@property (nonatomic) UIView *toolbarTopOverlapView;
+@property (nonatomic) UIView *topbarBottomStrokeView;
 
 - (void).cxx_destruct;
 - (void)announceResults;

@@ -6,7 +6,7 @@
     UIImage *_image;
 }
 
-@property(assign,retain) UIImage * image;
+@property (nonatomic, retain) UIImage *image;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })alignmentRectInsets;
 - (void)dealloc;

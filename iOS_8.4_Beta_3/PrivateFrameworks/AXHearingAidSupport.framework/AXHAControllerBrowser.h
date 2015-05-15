@@ -13,16 +13,16 @@
     NSMutableArray *_updateDeviceBlocks;
 }
 
-@property(assign,retain) NSNetServiceBrowser * browser;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <AXHAControllerBrowserDelegateProtocol> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableArray * remoteControllers;
-@property(assign,retain) AXHearingSlaveController * slaveController;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableArray * updateDeviceBlocks;
+@property (nonatomic, retain) NSNetServiceBrowser *browser;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <AXHAControllerBrowserDelegateProtocol> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableArray *remoteControllers;
+@property (nonatomic, retain) AXHearingSlaveController *slaveController;
+@property (nonatomic) long long state;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMutableArray *updateDeviceBlocks;
 
 + (id)sharedInstance;
 

@@ -11,12 +11,12 @@
     NSString *_token;
 }
 
-@property(assign,readonly) NSDictionary * data;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) NSString * errorMessage;
-@property(assign,readonly) NSString * refreshToken;
-@property(assign,readonly) long long statusCode;
-@property(assign,readonly) NSString * token;
+@property (readonly) NSDictionary *data;
+@property (readonly) NSError *error;
+@property (readonly) NSString *errorMessage;
+@property (readonly) NSString *refreshToken;
+@property (readonly) long long statusCode;
+@property (readonly) NSString *token;
 
 - (void).cxx_destruct;
 - (id)data;

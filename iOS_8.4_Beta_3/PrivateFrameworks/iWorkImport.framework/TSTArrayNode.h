@@ -11,8 +11,8 @@
     NSString *mWhitespaceBeforeFirstChild;
 }
 
-@property(assign,retain) NSArray * whitespaceAfterDelimiters;
-@property(assign,retain) NSString * whitespaceBeforeFirstChild;
+@property (retain) NSArray *whitespaceAfterDelimiters;
+@property (retain) NSString *whitespaceBeforeFirstChild;
 
 - (id).cxx_construct;
 - (id)argumentSpec;

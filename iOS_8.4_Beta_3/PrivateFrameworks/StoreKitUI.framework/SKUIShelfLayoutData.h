@@ -15,11 +15,11 @@
     double *_rowHeights;
 }
 
-@property(assign,readonly) double columnSpacing;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,readonly) long long numberOfColumns;
-@property(assign,readonly) long long numberOfRows;
-@property(assign,readonly) struct CGSize { double x1; double x2; } totalContentSize;
+@property (nonatomic, readonly) double columnSpacing;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic, readonly) long long numberOfColumns;
+@property (nonatomic, readonly) long long numberOfRows;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } totalContentSize;
 
 - (void).cxx_destruct;
 - (double)columnSpacing;

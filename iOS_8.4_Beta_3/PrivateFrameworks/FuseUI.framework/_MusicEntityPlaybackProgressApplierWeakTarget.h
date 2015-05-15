@@ -6,7 +6,7 @@
     MusicEntityPlaybackProgressApplier *_applier;
 }
 
-@property(assign,readwrite) MusicEntityPlaybackProgressApplier * applier;
+@property (nonatomic) MusicEntityPlaybackProgressApplier *applier;
 
 - (void).cxx_destruct;
 - (id)applier;

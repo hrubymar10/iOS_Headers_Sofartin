@@ -7,18 +7,18 @@
     <TSCHSupportsRendering> *mChartRep;
 }
 
-@property(assign,readonly) TSCHChartInfo * chartInfo;
-@property(assign,readonly) <TSCHSupportsRendering> * chartRep;
-@property(assign,readonly) struct CGColor { }* debugColor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) bool debugLayout;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) TSCHChartLayoutItem * layoutItem;
-@property(assign,readonly) TSCHChartModel * model;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool supportsSeparateLabelsRenderPass;
-@property(assign,readonly) double viewScale;
+@property (nonatomic, readonly) TSCHChartInfo *chartInfo;
+@property (nonatomic, readonly) <TSCHSupportsRendering> *chartRep;
+@property (nonatomic, readonly) struct CGColor { }*debugColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) bool debugLayout;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) TSCHChartLayoutItem *layoutItem;
+@property (nonatomic, readonly) TSCHChartModel *model;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool supportsSeparateLabelsRenderPass;
+@property (nonatomic, readonly) double viewScale;
 
 - (void)addSelection:(id)arg1 toCGPath:(struct CGPath { }*)arg2;
 - (bool)canEditTextForSelectionPath:(id)arg1;

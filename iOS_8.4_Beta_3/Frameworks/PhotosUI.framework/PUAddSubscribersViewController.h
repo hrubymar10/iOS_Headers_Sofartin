@@ -8,7 +8,7 @@
     PUPhotoStreamRecipientViewController *_composeRecipientController;
 }
 
-@property(assign,readonly) PLCloudSharedAlbum * album;
+@property (nonatomic, readonly) PLCloudSharedAlbum *album;
 
 - (void).cxx_destruct;
 - (void)_addButtonHandler;

@@ -9,11 +9,11 @@
     bool _visible;
 }
 
-@property(assign,readwrite) float downloadProgress;
-@property(assign,readonly) NSSet * interfacePerceptibleKeyPaths;
-@property(assign,retain) MPStoreItemOffer * offer;
-@property(assign,readwrite) unsigned long long progressType;
-@property(assign,readwrite) bool visible;
+@property (nonatomic) float downloadProgress;
+@property (nonatomic, readonly) NSSet *interfacePerceptibleKeyPaths;
+@property (nonatomic, retain) MPStoreItemOffer *offer;
+@property (nonatomic) unsigned long long progressType;
+@property (nonatomic) bool visible;
 
 - (void).cxx_destruct;
 - (float)downloadProgress;

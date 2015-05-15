@@ -30,13 +30,13 @@
     UITapGestureRecognizer *_tapRecognizer;
 }
 
-@property(assign,readwrite) struct SKUIPhysicalCircleConstants { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; } constants;
-@property(assign,readwrite) <SKUIPhysicalCirclesDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIPhysicalCirclesDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) struct SKUIPhysicalCircleConstants { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; } constants;
+@property (nonatomic) <SKUIPhysicalCirclesDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIPhysicalCirclesDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_addNextMissingSpringJoint;

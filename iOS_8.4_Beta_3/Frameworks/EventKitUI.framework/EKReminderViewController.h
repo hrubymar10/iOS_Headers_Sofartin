@@ -11,15 +11,15 @@
     bool _shouldShowDatePicker;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <EKReminderViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) EKReminderEditor * editor;
-@property(assign,retain) EKEventStore * eventStore;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) EKReminder * reminder;
-@property(assign,retain) <EKStyleProvider> * styleProvider;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <EKReminderViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) EKReminderEditor *editor;
+@property (nonatomic, retain) EKEventStore *eventStore;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) EKReminder *reminder;
+@property (nonatomic, retain) <EKStyleProvider> *styleProvider;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_eventStoreChanged:(id)arg1;

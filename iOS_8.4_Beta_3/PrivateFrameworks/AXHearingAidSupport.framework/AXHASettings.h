@@ -9,14 +9,14 @@
     NSMutableDictionary *_updateBlocks;
 }
 
-@property(assign,readwrite) bool allowHearingAidControlOnLockScreen;
-@property(assign,readwrite) bool independentHearingAidSettings;
-@property(assign,retain) NSDictionary * pairedHearingAids;
-@property(assign,retain) NSMutableSet * registeredNotifications;
-@property(assign,readwrite) bool shouldStreamToLeftAid;
-@property(assign,readwrite) bool shouldStreamToRightAid;
-@property(assign,retain) NSMutableSet * synchronizePreferences;
-@property(assign,retain) NSMutableDictionary * updateBlocks;
+@property (nonatomic) bool allowHearingAidControlOnLockScreen;
+@property (nonatomic) bool independentHearingAidSettings;
+@property (nonatomic, retain) NSDictionary *pairedHearingAids;
+@property (nonatomic, retain) NSMutableSet *registeredNotifications;
+@property (nonatomic) bool shouldStreamToLeftAid;
+@property (nonatomic) bool shouldStreamToRightAid;
+@property (nonatomic, retain) NSMutableSet *synchronizePreferences;
+@property (nonatomic, retain) NSMutableDictionary *updateBlocks;
 
 + (void)initialize;
 + (id)sharedInstance;

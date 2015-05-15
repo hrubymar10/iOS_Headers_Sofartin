@@ -10,10 +10,10 @@
     NSString *_libraryName;
 }
 
-@property(assign,readwrite) bool hasLibraryId;
-@property(assign,readonly) bool hasLibraryName;
-@property(assign,readwrite) long long libraryId;
-@property(assign,retain) NSString * libraryName;
+@property (nonatomic) bool hasLibraryId;
+@property (nonatomic, readonly) bool hasLibraryName;
+@property (nonatomic) long long libraryId;
+@property (nonatomic, retain) NSString *libraryName;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

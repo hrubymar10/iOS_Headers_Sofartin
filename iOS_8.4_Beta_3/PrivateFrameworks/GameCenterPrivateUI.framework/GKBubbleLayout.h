@@ -13,11 +13,11 @@
     NSSet *_visibleBubbleSet;
 }
 
-@property(assign,retain) NSArray * bubbleLocations;
-@property(assign,retain) NSArray * bubbleViews;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } center;
-@property(assign,readwrite) double radius;
-@property(assign,retain) NSSet * visibleBubbleSet;
+@property (nonatomic, retain) NSArray *bubbleLocations;
+@property (nonatomic, retain) NSArray *bubbleViews;
+@property (nonatomic) struct CGPoint { double x1; double x2; } center;
+@property (nonatomic) double radius;
+@property (nonatomic, retain) NSSet *visibleBubbleSet;
 
 - (id)bubbleLocations;
 - (id)bubbleViews;

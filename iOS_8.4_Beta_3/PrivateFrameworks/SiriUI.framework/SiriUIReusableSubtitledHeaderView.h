@@ -7,9 +7,9 @@
     UILabel *_subtitleLabel;
 }
 
-@property(assign,copy) NSAttributedString * attributedSubtitleText;
-@property(assign,retain) UILabel * subtitleLabel;
-@property(assign,copy) NSString * subtitleText;
+@property (nonatomic, copy) NSAttributedString *attributedSubtitleText;
+@property (nonatomic, retain) UILabel *subtitleLabel;
+@property (nonatomic, copy) NSString *subtitleText;
 
 + (double)defaultHeight;
 

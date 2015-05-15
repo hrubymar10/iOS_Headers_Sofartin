@@ -9,15 +9,15 @@
     id _tintColorDidChangeHandler;
 }
 
-@property(setter=_setActsAsTintView:,assign,readwrite) bool _actsAsTintView;
-@property(setter=_setInheritsSecurity:,assign,readwrite) bool _inheritsSecurity;
-@property(setter=_setStatusBarTintColor:,assign,retain) UIColor * _statusBarTintColor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) _UIHostedWindowHostingHandle * hostedWindowHostingHandle;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id tintColorDidChangeHandler;
+@property (setter=_setActsAsTintView:, nonatomic) bool _actsAsTintView;
+@property (setter=_setInheritsSecurity:, nonatomic) bool _inheritsSecurity;
+@property (setter=_setStatusBarTintColor:, nonatomic, retain) UIColor *_statusBarTintColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) _UIHostedWindowHostingHandle *hostedWindowHostingHandle;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id tintColorDidChangeHandler;
 
 + (bool)_requiresWindowTouches;
 + (Class)layerClass;

@@ -6,7 +6,7 @@
     NSString *_reason;
 }
 
-@property(assign,retain) NSString * reason;
+@property (nonatomic, retain) NSString *reason;
 
 + (id)transactionReason:(id)arg1;
 

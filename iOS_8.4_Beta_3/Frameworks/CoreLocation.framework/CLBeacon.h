@@ -11,12 +11,12 @@
     long long _rssi;
 }
 
-@property(assign,readonly) double accuracy;
-@property(assign,readonly) NSNumber * major;
-@property(assign,readonly) NSNumber * minor;
-@property(assign,readonly) long long proximity;
-@property(assign,readonly) NSUUID * proximityUUID;
-@property(assign,readonly) long long rssi;
+@property (nonatomic, readonly) double accuracy;
+@property (nonatomic, readonly) NSNumber *major;
+@property (nonatomic, readonly) NSNumber *minor;
+@property (nonatomic, readonly) long long proximity;
+@property (nonatomic, readonly) NSUUID *proximityUUID;
+@property (nonatomic, readonly) long long rssi;
 
 + (bool)supportsSecureCoding;
 

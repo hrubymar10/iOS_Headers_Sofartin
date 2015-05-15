@@ -7,8 +7,8 @@
     id _targetValue;
 }
 
-@property(assign,readonly) HMCharacteristic * characteristic;
-@property(assign,copy) id targetValue;
+@property (nonatomic, readonly) HMCharacteristic *characteristic;
+@property (nonatomic, copy) id targetValue;
 
 + (id)actionWithInfo:(id)arg1 home:(id)arg2;
 + (id)lookupActionWithInfo:(id)arg1 inArray:(id)arg2;

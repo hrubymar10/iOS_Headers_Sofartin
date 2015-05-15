@@ -10,12 +10,12 @@
     UIActivityIndicatorView *_spinner;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) UIView * footerView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool published;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) UIView *footerView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool published;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_applyStyleToUILabel:(id)arg1;

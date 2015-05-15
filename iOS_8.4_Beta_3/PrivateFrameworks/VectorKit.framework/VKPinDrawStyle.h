@@ -4,7 +4,7 @@
 
 @interface VKPinDrawStyle : VKRenderStyle
 
-@property(assign,readonly) float brightness;
+@property (nonatomic, readonly) float brightness;
 
 + (int)renderStyleID;
 

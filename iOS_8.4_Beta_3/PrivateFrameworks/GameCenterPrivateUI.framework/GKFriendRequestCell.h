@@ -9,10 +9,10 @@
     UILabel *_whenLabel;
 }
 
-@property(assign,retain) GKButton * acceptButton;
-@property(assign,retain) GKButton * declineButton;
-@property(assign,retain) UILabel * messageLabel;
-@property(assign,retain) UILabel * whenLabel;
+@property (nonatomic, retain) GKButton *acceptButton;
+@property (nonatomic, retain) GKButton *declineButton;
+@property (nonatomic, retain) UILabel *messageLabel;
+@property (nonatomic, retain) UILabel *whenLabel;
 
 + (void)applyFriendRequest:(id)arg1 messageStringToLabel:(id)arg2 showAlias:(bool)arg3;
 + (Class)cellClassForPlayer:(id)arg1;

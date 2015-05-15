@@ -6,7 +6,7 @@
     long long _rowid;
 }
 
-@property(assign,readwrite) long long rowid;
+@property (nonatomic) long long rowid;
 
 - (void)encodeWithCoder:(id)arg1;
 - (bool)hasRowid;

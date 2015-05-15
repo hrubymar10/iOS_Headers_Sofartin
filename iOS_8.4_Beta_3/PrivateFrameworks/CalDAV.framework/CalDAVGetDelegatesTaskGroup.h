@@ -7,8 +7,8 @@
     int _state;
 }
 
-@property(assign,retain) NSMutableArray * nestedGroupPrincipalURLs;
-@property(assign,readwrite) int state;
+@property (nonatomic, retain) NSMutableArray *nestedGroupPrincipalURLs;
+@property (nonatomic) int state;
 
 - (void)_expandProperties;
 - (void)_finishWithError:(id)arg1 state:(int)arg2;

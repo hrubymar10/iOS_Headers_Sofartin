@@ -7,9 +7,9 @@
     IMHandle *_sender;
 }
 
-@property(assign,readonly) long long actionType;
-@property(assign,retain) IMHandle * otherHandle;
-@property(assign,retain) IMHandle * sender;
+@property (nonatomic, readonly) long long actionType;
+@property (nonatomic, readonly, retain) IMHandle *otherHandle;
+@property (nonatomic, readonly, retain) IMHandle *sender;
 
 - (Class)__ck_chatItemClass;
 - (id)_initWithItem:(id)arg1 sender:(id)arg2 otherHandle:(id)arg3;

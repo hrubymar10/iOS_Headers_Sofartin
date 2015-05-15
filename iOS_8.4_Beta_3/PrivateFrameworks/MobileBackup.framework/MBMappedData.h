@@ -11,7 +11,7 @@
     bool _removeFileOnClose;
 }
 
-@property(assign,readwrite) bool removeFileOnClose;
+@property (nonatomic) bool removeFileOnClose;
 
 - (id)base64EncodedDataWithOptions:(unsigned long long)arg1;
 - (id)base64EncodedStringWithOptions:(unsigned long long)arg1;

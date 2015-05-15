@@ -7,10 +7,10 @@
     RMSServiceMessage *_service;
 }
 
-@property(assign,readonly) bool hasPairingGUID;
-@property(assign,readonly) bool hasService;
-@property(assign,retain) NSString * pairingGUID;
-@property(assign,retain) RMSServiceMessage * service;
+@property (nonatomic, readonly) bool hasPairingGUID;
+@property (nonatomic, readonly) bool hasService;
+@property (nonatomic, retain) NSString *pairingGUID;
+@property (nonatomic, retain) RMSServiceMessage *service;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

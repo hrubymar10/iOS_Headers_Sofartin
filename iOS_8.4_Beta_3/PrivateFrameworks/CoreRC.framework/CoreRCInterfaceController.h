@@ -8,14 +8,14 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CoreRCInterfaceControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) CECFakeInterfaceListener * fakeInterfaceListener;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * interfaceListeners;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CoreRCInterfaceControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) CECFakeInterfaceListener *fakeInterfaceListener;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *interfaceListeners;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) Class superclass;
 
 - (bool)addBundlesFromPaths:(id)arg1 expectedClass:(Class)arg2;
 - (bool)addInterfaceListenerClass:(Class)arg1;

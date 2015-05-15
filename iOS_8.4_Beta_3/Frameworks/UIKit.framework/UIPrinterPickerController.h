@@ -9,8 +9,8 @@
     id _state;
 }
 
-@property(assign,readwrite) <UIPrinterPickerControllerDelegate> * delegate;
-@property(assign,retain) UIPrinter * selectedPrinter;
+@property (nonatomic) <UIPrinterPickerControllerDelegate> *delegate;
+@property (nonatomic, retain) UIPrinter *selectedPrinter;
 
 + (id)printerPickerControllerWithInitiallySelectedPrinter:(id)arg1;
 

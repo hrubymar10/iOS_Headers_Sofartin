@@ -7,8 +7,8 @@
     NSMutableArray *_removedObjects;
 }
 
-@property(assign,readonly) NSMutableArray * addedObjects;
-@property(assign,readonly) NSMutableArray * removedObjects;
+@property (nonatomic, readonly) NSMutableArray *addedObjects;
+@property (nonatomic, readonly) NSMutableArray *removedObjects;
 
 - (id)addedObjects;
 - (void)dealloc;

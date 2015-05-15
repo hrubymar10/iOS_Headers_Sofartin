@@ -4,7 +4,7 @@
 
 @interface SAMPEnableShuffle : SADomainCommand
 
-@property(assign,readwrite) bool enable;
+@property (nonatomic) bool enable;
 
 + (id)enableShuffle;
 + (id)enableShuffleWithDictionary:(id)arg1 context:(id)arg2;

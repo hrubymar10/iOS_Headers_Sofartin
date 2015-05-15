@@ -10,11 +10,11 @@
     NotesDataCollectorLogger *_logger;
 }
 
-@property(assign,retain) ACAccountStore * accountStore;
-@property(assign,copy) NSDictionary * accountTypesPerIdentifierCache;
-@property(getter=isAutomaticCollectionOn,assign,readwrite) bool automaticCollectionOn;
-@property(assign,retain) NSObject<OS_dispatch_group> * logDispatchGroup;
-@property(assign,retain) NotesDataCollectorLogger * logger;
+@property (nonatomic, retain) ACAccountStore *accountStore;
+@property (copy) NSDictionary *accountTypesPerIdentifierCache;
+@property (getter=isAutomaticCollectionOn, nonatomic) bool automaticCollectionOn;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *logDispatchGroup;
+@property (nonatomic, retain) NotesDataCollectorLogger *logger;
 
 + (void)clearSharedCollector;
 + (id)sharedCollector;

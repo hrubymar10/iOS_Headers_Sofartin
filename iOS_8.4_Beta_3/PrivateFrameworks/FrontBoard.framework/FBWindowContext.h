@@ -8,8 +8,8 @@
     double _level;
 }
 
-@property(assign,readonly) unsigned int identifier;
-@property(assign,readonly) double level;
+@property (nonatomic, readonly) unsigned int identifier;
+@property (nonatomic, readonly) double level;
 
 + (id)contextWithFBSContext:(id)arg1;
 + (id)contextWithID:(unsigned int)arg1 level:(double)arg2;

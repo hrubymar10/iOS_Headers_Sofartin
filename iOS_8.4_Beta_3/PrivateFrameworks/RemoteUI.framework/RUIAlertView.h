@@ -11,12 +11,12 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSDictionary * attributes;
-@property(assign,readonly) long long buttonIndex;
-@property(assign,copy) id completion;
-@property(assign,retain) NSString * message;
-@property(assign,readwrite) RUIObjectModel<RUIAlertViewDelegate> * objectModel;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSDictionary *attributes;
+@property (nonatomic, readonly) long long buttonIndex;
+@property (nonatomic, copy) id completion;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic) RUIObjectModel<RUIAlertViewDelegate> *objectModel;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (void)addButtonWithTitle:(id)arg1 URL:(id)arg2 destructive:(bool)arg3 attributes:(id)arg4;

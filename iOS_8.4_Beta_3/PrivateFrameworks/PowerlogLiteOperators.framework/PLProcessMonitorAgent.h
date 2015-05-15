@@ -11,12 +11,12 @@
     NSDate *_previousCacheDate;
 }
 
-@property(assign,retain) PLNSNotificationOperatorComposition * asertionNotifications;
-@property(assign,retain) PLEntryNotificationOperatorComposition * batteryLevelChanged;
-@property(assign,retain) NSDate * currentCachedDate;
-@property(assign,readwrite) double currentCachedTotalCPUTime;
-@property(assign,readwrite) bool firstBoot;
-@property(assign,retain) NSDate * previousCacheDate;
+@property (retain) PLNSNotificationOperatorComposition *asertionNotifications;
+@property (retain) PLEntryNotificationOperatorComposition *batteryLevelChanged;
+@property (retain) NSDate *currentCachedDate;
+@property double currentCachedTotalCPUTime;
+@property bool firstBoot;
+@property (retain) NSDate *previousCacheDate;
 
 + (id)accountingGroupDefinitions;
 + (id)defaults;

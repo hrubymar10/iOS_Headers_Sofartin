@@ -4,7 +4,7 @@
 
 @interface SACalendarSource : SASource
 
-@property(assign,readwrite) bool strict;
+@property (nonatomic) bool strict;
 
 + (id)source;
 + (id)sourceWithDictionary:(id)arg1 context:(id)arg2;

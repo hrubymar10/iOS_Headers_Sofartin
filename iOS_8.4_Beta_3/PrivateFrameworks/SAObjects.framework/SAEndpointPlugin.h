@@ -4,7 +4,7 @@
 
 @interface SAEndpointPlugin : SAEndpoint
 
-@property(assign,copy) NSString * pluginPath;
+@property (nonatomic, copy) NSString *pluginPath;
 
 + (id)endpointPlugin;
 + (id)endpointPluginWithDictionary:(id)arg1 context:(id)arg2;

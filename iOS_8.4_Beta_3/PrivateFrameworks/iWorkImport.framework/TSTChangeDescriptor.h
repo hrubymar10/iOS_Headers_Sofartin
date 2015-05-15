@@ -14,13 +14,13 @@
     TSTCellRegion *mStrokeRegion;
 }
 
-@property(assign,readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } cellID;
-@property(assign,readonly) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } cellRange;
-@property(assign,readonly) TSTCellRegion * cellRegion;
-@property(assign,readonly) int changeDescriptor;
-@property(assign,readonly) NSHashTable * referenceIdentifiers;
-@property(assign,readonly) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } strokeRange;
-@property(assign,readonly) TSTCellRegion * strokeRegion;
+@property (nonatomic, readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } cellID;
+@property (nonatomic, readonly) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } cellRange;
+@property (nonatomic, readonly) TSTCellRegion *cellRegion;
+@property (nonatomic, readonly) int changeDescriptor;
+@property (nonatomic, readonly) NSHashTable *referenceIdentifiers;
+@property (nonatomic, readonly) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } strokeRange;
+@property (nonatomic, readonly) TSTCellRegion *strokeRegion;
 
 + (id)changeDescriptorWithType:(int)arg1;
 + (id)changeDescriptorWithType:(int)arg1 cellID:(struct { unsigned short x1; unsigned char x2; unsigned char x3; })arg2 cellRange:(struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; })arg3;

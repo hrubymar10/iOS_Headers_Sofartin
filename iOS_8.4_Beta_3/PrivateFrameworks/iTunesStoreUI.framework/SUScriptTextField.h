@@ -7,19 +7,19 @@
     NSString *_style;
 }
 
-@property(assign,retain) NSString * autocapitalizationType;
-@property(assign,retain) NSString * autocorrectionType;
-@property(assign,readonly) bool canBecomeFirstResponder;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * keyboardType;
-@property(assign,retain) NSString * placeholder;
-@property(assign,retain) WebScriptObject * shouldFocusFunction;
-@property(assign,readonly) NSString * style;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * value;
-@property(assign,retain) NSNumber * width;
+@property (retain) NSString *autocapitalizationType;
+@property (retain) NSString *autocorrectionType;
+@property (nonatomic, readonly) bool canBecomeFirstResponder;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) NSString *keyboardType;
+@property (retain) NSString *placeholder;
+@property (retain) WebScriptObject *shouldFocusFunction;
+@property (readonly) NSString *style;
+@property (readonly) Class superclass;
+@property (retain) NSString *value;
+@property (retain) NSNumber *width;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

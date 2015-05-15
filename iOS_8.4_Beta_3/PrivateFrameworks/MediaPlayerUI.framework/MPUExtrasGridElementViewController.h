@@ -17,19 +17,19 @@
     MPUExtrasGridViewControllerStyle *_wideStyle;
 }
 
-@property(assign,readonly) UICollectionView * collectionView;
-@property(assign,readonly) MPUExtrasGridViewControllerStyle * currentStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) MPUExtrasGridViewControllerStyle * extraLargeStyle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPUExtrasGridViewControllerStyle * largeStyle;
-@property(assign,retain) MPUExtrasGridViewControllerStyle * mediumStyle;
-@property(getter=isShelfStyle,assign,readwrite) bool shelfStyle;
-@property(assign,retain) MPUExtrasGridViewControllerStyle * smallStyle;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) IKGridElement * viewElement;
-@property(assign,retain) MPUExtrasGridViewControllerStyle * wideStyle;
+@property (nonatomic, readonly) UICollectionView *collectionView;
+@property (nonatomic, readonly) MPUExtrasGridViewControllerStyle *currentStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) MPUExtrasGridViewControllerStyle *extraLargeStyle;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPUExtrasGridViewControllerStyle *largeStyle;
+@property (nonatomic, retain) MPUExtrasGridViewControllerStyle *mediumStyle;
+@property (getter=isShelfStyle, nonatomic) bool shelfStyle;
+@property (nonatomic, retain) MPUExtrasGridViewControllerStyle *smallStyle;
+@property (readonly) Class superclass;
+@property (readonly) IKGridElement *viewElement;
+@property (nonatomic, retain) MPUExtrasGridViewControllerStyle *wideStyle;
 
 + (id)_defaultCellStyle;
 + (id)_fontAttributes;

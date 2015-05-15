@@ -18,19 +18,19 @@
     NSString *_title;
 }
 
-@property(assign,readwrite) double ITunesPassLearnMoreAlertInterval;
-@property(assign,copy) NSString * balance;
-@property(assign,copy) NSString * credit;
-@property(assign,retain) SKUIArtworkList * headerArtworkList;
-@property(assign,retain) UIImage * headerImage;
-@property(assign,readwrite) bool hideItemView;
-@property(assign,retain) NSString * inAppPurchase;
-@property(assign,retain) NSArray * items;
-@property(assign,retain) NSArray * links;
-@property(assign,copy) NSString * message;
-@property(assign,retain) NSURL * redirectURL;
-@property(assign,retain) NSDictionary * thankYouDictionary;
-@property(assign,copy) NSString * title;
+@property (nonatomic) double ITunesPassLearnMoreAlertInterval;
+@property (nonatomic, copy) NSString *balance;
+@property (nonatomic, copy) NSString *credit;
+@property (nonatomic, retain) SKUIArtworkList *headerArtworkList;
+@property (nonatomic, retain) UIImage *headerImage;
+@property (nonatomic) bool hideItemView;
+@property (nonatomic, retain) NSString *inAppPurchase;
+@property (nonatomic, retain) NSArray *items;
+@property (nonatomic, retain) NSArray *links;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, retain) NSURL *redirectURL;
+@property (nonatomic, retain) NSDictionary *thankYouDictionary;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (double)ITunesPassLearnMoreAlertInterval;

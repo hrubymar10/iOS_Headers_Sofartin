@@ -12,7 +12,7 @@
     struct FPSAPContextOpaque_ { } *_session;
 }
 
-@property(getter=isComplete,assign,readonly) bool complete;
+@property (getter=isComplete, readonly) bool complete;
 
 - (id)_newDataWithBytes:(char *)arg1 length:(unsigned int)arg2;
 - (void)_teardownSession;

@@ -8,12 +8,12 @@
     id _willRenderSampleBufferHandler;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id formatDidBecomeLiveHandler;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id willRenderSampleBufferHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id formatDidBecomeLiveHandler;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id willRenderSampleBufferHandler;
 
 - (void)dealloc;
 - (id)formatDidBecomeLiveHandler;

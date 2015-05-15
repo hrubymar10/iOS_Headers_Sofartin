@@ -11,7 +11,7 @@
     NSNumber *_mecabraCandidatePointerValue;
 }
 
-@property(assign,retain) NSNumber * mecabraCandidatePointerValue;
+@property (nonatomic, retain) NSNumber *mecabraCandidatePointerValue;
 
 + (bool)supportsSecureCoding;
 + (int)type;

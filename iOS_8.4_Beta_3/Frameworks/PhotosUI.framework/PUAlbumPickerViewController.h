@@ -11,16 +11,16 @@
     PUAlbumPickerViewControllerSpec *_spec;
 }
 
-@property(setter=_setAlbumListViewController:,assign,retain) PUAlbumListViewController * _albumListViewController;
-@property(assign,retain) PUAlbumPickerSessionInfo * albumPickerSessionInfo;
-@property(assign,retain) PHCollectionList * collectionList;
-@property(assign,copy) id completionHandler;
-@property(assign,retain) UINavigationController * contentNavigationController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PUAlbumPickerViewControllerSpec * spec;
-@property(assign,readonly) Class superclass;
+@property (setter=_setAlbumListViewController:, nonatomic, retain) PUAlbumListViewController *_albumListViewController;
+@property (nonatomic, retain) PUAlbumPickerSessionInfo *albumPickerSessionInfo;
+@property (nonatomic, retain) PHCollectionList *collectionList;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic, retain) UINavigationController *contentNavigationController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PUAlbumPickerViewControllerSpec *spec;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_albumListViewController;

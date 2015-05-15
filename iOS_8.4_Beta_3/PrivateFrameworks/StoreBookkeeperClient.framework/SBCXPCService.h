@@ -13,14 +13,14 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,readonly) SBCXPCServiceInterface * XPCServiceInterface;
-@property(assign,readonly) id applicationWillTerminateObserver;
-@property(assign,readonly) SBCClientConfiguration * clientConfiguration;
-@property(assign,readonly) bool isConnecting;
-@property(assign,readonly) NSMutableDictionary * pendingReplyBlockCompletionHandlers;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) id serviceProxy;
-@property(assign,readonly) NSXPCConnection * xpcConnection;
+@property (readonly) SBCXPCServiceInterface *XPCServiceInterface;
+@property (readonly) id applicationWillTerminateObserver;
+@property (readonly) SBCClientConfiguration *clientConfiguration;
+@property (readonly) bool isConnecting;
+@property (readonly) NSMutableDictionary *pendingReplyBlockCompletionHandlers;
+@property (readonly) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) id serviceProxy;
+@property (readonly) NSXPCConnection *xpcConnection;
 
 + (id)XPCInterfaceDebugDescription;
 + (Class)XPCServiceInterfaceClass;

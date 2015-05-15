@@ -8,9 +8,9 @@
     NSDictionary *_sourceEntityScheduleTags;
 }
 
-@property(assign,readonly) NSMutableDictionary * destinationEntityScheduleTags;
-@property(assign,readonly) bool isAutoScheduleSupported;
-@property(assign,readonly) NSDictionary * sourceEntityScheduleTags;
+@property (nonatomic, readonly) NSMutableDictionary *destinationEntityScheduleTags;
+@property (nonatomic, readonly) bool isAutoScheduleSupported;
+@property (nonatomic, readonly) NSDictionary *sourceEntityScheduleTags;
 
 - (void)_completedPropFindTask:(id)arg1 intermediateETag:(id)arg2 intermediateScheduleTag:(id)arg3 destinationFilename:(id)arg4;
 - (void)_setTagsForDestinationEntityAtURL:(id)arg1 fromTaskResponseHeaders:(id)arg2 completionBlock:(id)arg3;

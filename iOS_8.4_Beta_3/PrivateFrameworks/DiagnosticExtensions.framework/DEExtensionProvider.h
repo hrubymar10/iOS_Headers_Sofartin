@@ -8,13 +8,13 @@
     NSString *_loggingConsent;
 }
 
-@property(assign,readwrite) bool allowUserAttachmentSelection;
-@property(assign,readwrite) bool canGenerateNewAttachment;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * loggingConsent;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool allowUserAttachmentSelection;
+@property (nonatomic) bool canGenerateNewAttachment;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *loggingConsent;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_getHostname;

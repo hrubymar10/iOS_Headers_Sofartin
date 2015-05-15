@@ -29,18 +29,18 @@
     bool _shouldOptimizeForNetworkUse;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,copy) NSURL * directoryForTemporaryFiles;
-@property(assign,copy) NSArray * inputGroups;
-@property(assign,copy) NSArray * inputs;
-@property(assign,copy) AVMediaFileType * mediaFileType;
-@property(assign,copy) NSArray * metadataItems;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } movieFragmentInterval;
-@property(assign,readwrite) int movieTimeScale;
-@property(assign,readwrite) float preferredRate;
-@property(assign,readwrite) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } preferredTransform;
-@property(assign,readwrite) float preferredVolume;
-@property(assign,readwrite) bool shouldOptimizeForNetworkUse;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, copy) NSURL *directoryForTemporaryFiles;
+@property (nonatomic, copy) NSArray *inputGroups;
+@property (nonatomic, copy) NSArray *inputs;
+@property (nonatomic, copy) AVMediaFileType *mediaFileType;
+@property (nonatomic, copy) NSArray *metadataItems;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } movieFragmentInterval;
+@property (nonatomic) int movieTimeScale;
+@property (nonatomic) float preferredRate;
+@property (nonatomic) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } preferredTransform;
+@property (nonatomic) float preferredVolume;
+@property (nonatomic) bool shouldOptimizeForNetworkUse;
 
 - (id)URL;
 - (void)dealloc;

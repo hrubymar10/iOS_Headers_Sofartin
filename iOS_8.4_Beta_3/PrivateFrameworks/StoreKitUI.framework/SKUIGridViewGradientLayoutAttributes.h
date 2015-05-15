@@ -6,7 +6,7 @@
     IKColor *_gradientColor;
 }
 
-@property(assign,retain) IKColor * gradientColor;
+@property (nonatomic, retain) IKColor *gradientColor;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

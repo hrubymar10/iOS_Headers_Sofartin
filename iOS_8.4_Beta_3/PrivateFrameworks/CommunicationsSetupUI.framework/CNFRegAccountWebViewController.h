@@ -8,11 +8,11 @@
     bool _listeningForBagLoad;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool failedBagLoad;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool failedBagLoad;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_bagLoadTimeout:(id)arg1;
 - (void)_handleFTServerBagFinishedLoading;

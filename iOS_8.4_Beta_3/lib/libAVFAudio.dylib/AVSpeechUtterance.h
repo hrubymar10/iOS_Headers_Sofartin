@@ -12,15 +12,15 @@
     float _volume;
 }
 
-@property(assign,readwrite) float pitchMultiplier;
-@property(assign,readwrite) double postUtteranceDelay;
-@property(assign,readwrite) double preUtteranceDelay;
-@property(assign,readwrite) bool processEmoticons;
-@property(assign,readwrite) float rate;
-@property(assign,retain) NSString * speechString;
-@property(assign,readwrite) bool useCompactVoice;
-@property(assign,retain) AVSpeechSynthesisVoice * voice;
-@property(assign,readwrite) float volume;
+@property (nonatomic) float pitchMultiplier;
+@property (nonatomic) double postUtteranceDelay;
+@property (nonatomic) double preUtteranceDelay;
+@property (nonatomic) bool processEmoticons;
+@property (nonatomic) float rate;
+@property (nonatomic, retain) NSString *speechString;
+@property (nonatomic) bool useCompactVoice;
+@property (nonatomic, retain) AVSpeechSynthesisVoice *voice;
+@property (nonatomic) float volume;
 
 + (void)initialize;
 + (id)speechUtteranceWithString:(id)arg1;

@@ -4,9 +4,9 @@
 
 @interface TDNamedElement : NSManagedObject
 
-@property(assign,retain) NSDate * dateOfLastChange;
-@property(assign,retain) NSNumber * identifier;
-@property(assign,retain) NSString * name;
-@property(assign,retain) TDElementProduction * production;
+@property (nonatomic, retain) NSDate *dateOfLastChange;
+@property (nonatomic, retain) NSNumber *identifier;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) TDElementProduction *production;
 
 @end

@@ -14,15 +14,15 @@
     NSDictionary *_vendorConfiguration;
 }
 
-@property(assign,readwrite) bool filterBrowsers;
-@property(assign,readwrite) bool filterSockets;
-@property(assign,copy) NSData * identityReference;
-@property(assign,copy) NSString * organization;
-@property(assign,copy) NSData * passwordReference;
-@property(assign,readonly) NSString * pluginType;
-@property(assign,copy) NSString * serverAddress;
-@property(assign,copy) NSString * username;
-@property(assign,copy) NSDictionary * vendorConfiguration;
+@property bool filterBrowsers;
+@property bool filterSockets;
+@property (copy) NSData *identityReference;
+@property (copy) NSString *organization;
+@property (copy) NSData *passwordReference;
+@property (readonly) NSString *pluginType;
+@property (copy) NSString *serverAddress;
+@property (copy) NSString *username;
+@property (copy) NSDictionary *vendorConfiguration;
 
 + (bool)supportsSecureCoding;
 

@@ -12,7 +12,7 @@
     int _uniqueID;
 }
 
-@property(assign,readonly) TRService * service;
+@property (nonatomic, readonly) TRService *service;
 
 - (void).cxx_destruct;
 - (void)_connectionDidClose;

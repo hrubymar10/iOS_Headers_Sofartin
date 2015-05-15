@@ -12,12 +12,12 @@
     RMSDAAPTouchRemoteManager *_touchRemoteManager;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RMSDAAPControlSessionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) RMSService * service;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RMSDAAPControlSessionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) RMSService *service;
+@property (readonly) Class superclass;
 
 + (id)localControlSession;
 + (id)proxyControlSession;

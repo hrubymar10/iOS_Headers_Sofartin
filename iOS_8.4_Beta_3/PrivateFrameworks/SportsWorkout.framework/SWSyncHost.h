@@ -7,9 +7,9 @@
     bool _secure;
 }
 
-@property(assign,readonly) NSString * hostName;
-@property(assign,readonly) NSString * scheme;
-@property(getter=isSecure,assign,readwrite) bool secure;
+@property (nonatomic, readonly) NSString *hostName;
+@property (nonatomic, readonly) NSString *scheme;
+@property (getter=isSecure, nonatomic) bool secure;
 
 + (id)developmentSyncHost;
 + (id)productionLandingPageHost;

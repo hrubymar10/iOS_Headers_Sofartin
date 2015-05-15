@@ -8,13 +8,13 @@
     <TTSSpeechService> *_speechService;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <TTSSpeechConnectionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) TTSSpeechRequest * request;
-@property(assign,readwrite) <TTSSpeechService> * speechService;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <TTSSpeechConnectionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) TTSSpeechRequest *request;
+@property (nonatomic) <TTSSpeechService> *speechService;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_setRequest:(id)arg1;

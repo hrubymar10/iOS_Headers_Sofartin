@@ -6,11 +6,11 @@
     NSDate *_lastUpdateDate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSDate * lastUpdateDate;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSDate *lastUpdateDate;
+@property (readonly) Class superclass;
 
 - (id)lastUpdateDate;
 - (void)routeHypothesizer:(id)arg1 matchedToRoute:(id)arg2;

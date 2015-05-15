@@ -9,10 +9,10 @@
     int _lifetimeMinutes;
 }
 
-@property(assign,readwrite) long long diffieHellmanGroup;
-@property(assign,readwrite) long long encryptionAlgorithm;
-@property(assign,readwrite) long long integrityAlgorithm;
-@property(assign,readwrite) int lifetimeMinutes;
+@property long long diffieHellmanGroup;
+@property long long encryptionAlgorithm;
+@property long long integrityAlgorithm;
+@property int lifetimeMinutes;
 
 + (bool)supportsSecureCoding;
 

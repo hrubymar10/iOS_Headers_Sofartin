@@ -7,8 +7,8 @@
     unsigned long long _sequence;
 }
 
-@property(assign,retain) NSXPCConnection * parentConnection;
-@property(assign,readwrite) unsigned long long sequence;
+@property (retain) NSXPCConnection *parentConnection;
+@property unsigned long long sequence;
 
 - (void)_updateFractionCompletedFromOldFraction:(id)arg1 toNewFraction:(id)arg2;
 - (void)dealloc;

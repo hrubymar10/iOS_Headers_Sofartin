@@ -6,7 +6,7 @@
     SKRange *_zRotationRange;
 }
 
-@property(assign,copy) SKRange * zRotationRange;
+@property (copy) SKRange *zRotationRange;
 
 + (id)constraintWithZRotationRange:(id)arg1;
 

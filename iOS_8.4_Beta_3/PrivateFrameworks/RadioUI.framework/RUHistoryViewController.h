@@ -21,12 +21,12 @@
     NSMutableArray *_wishlistedTracks;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUHistoryViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long historyType;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUHistoryViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long historyType;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_clearAction:(id)arg1;

@@ -6,7 +6,7 @@
     GKGameRecord *_localPlayerGameRecord;
 }
 
-@property(assign,retain) GKGameRecord * localPlayerGameRecord;
+@property (nonatomic, retain) GKGameRecord *localPlayerGameRecord;
 
 - (void)didUpdateModel;
 - (id)leaderboardStringWithGameRecord:(id)arg1;

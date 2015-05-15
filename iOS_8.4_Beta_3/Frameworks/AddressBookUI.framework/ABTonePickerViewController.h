@@ -6,7 +6,7 @@
     TKTonePickerViewController *_tonePickerViewController;
 }
 
-@property(assign,retain) TKTonePickerViewController * tonePickerViewController;
+@property (nonatomic, readonly, retain) TKTonePickerViewController *tonePickerViewController;
 
 - (void)_getRotationContentSettings:(struct { bool x1; bool x2; bool x3; bool x4; bool x5; double x6; int x7; }*)arg1;
 - (double)ab_heightToFitForViewInPopoverView;

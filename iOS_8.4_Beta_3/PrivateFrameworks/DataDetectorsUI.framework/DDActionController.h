@@ -14,15 +14,15 @@
     UIViewController *_presentedViewController;
 }
 
-@property(assign,retain) UIAlertController * alertController;
-@property(assign,retain) UIView * baseView;
-@property(assign,retain) DDAction * currentAction;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <DDDetectionControllerInteractionDelegate> * interactionDelegate;
-@property(assign,retain) UIPopoverController * popoverController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIAlertController *alertController;
+@property (nonatomic, retain) UIView *baseView;
+@property (retain) DDAction *currentAction;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <DDDetectionControllerInteractionDelegate> *interactionDelegate;
+@property (nonatomic, retain) UIPopoverController *popoverController;
+@property (readonly) Class superclass;
 
 - (void)_cleanup;
 - (void)_dismissCurrentViewControllerOurselves;

@@ -17,13 +17,13 @@
     } _tappableEdgeInsets;
 }
 
-@property(assign,readonly) UIView * _containerView;
-@property(assign,readonly) NSMutableArray * _dimmingViewQueue;
-@property(assign,readonly) UIImageView * _maskImageView;
-@property(assign,readonly) UIImageView * _thumbnailImageView;
-@property(setter=_setUuid:,assign,retain) NSString * _uuid;
-@property(assign,readwrite) long long cameraOrientation;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } tappableEdgeInsets;
+@property (nonatomic, readonly) UIView *_containerView;
+@property (nonatomic, readonly) NSMutableArray *_dimmingViewQueue;
+@property (nonatomic, readonly) UIImageView *_maskImageView;
+@property (nonatomic, readonly) UIImageView *_thumbnailImageView;
+@property (setter=_setUuid:, nonatomic, retain) NSString *_uuid;
+@property (nonatomic) long long cameraOrientation;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } tappableEdgeInsets;
 
 - (void).cxx_destruct;
 - (struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; })_affineTransformForImageOrientation:(long long)arg1;

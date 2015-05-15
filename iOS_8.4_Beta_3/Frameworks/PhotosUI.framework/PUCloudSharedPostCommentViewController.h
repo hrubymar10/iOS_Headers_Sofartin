@@ -27,16 +27,16 @@
     UITextView *_textView;
 }
 
-@property(assign,readwrite) <PUCloudSharedPostCommentViewControllerDelegate> * commentDelegate;
-@property(assign,readonly) NSString * commentText;
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isNewAlbum;
-@property(assign,copy) NSString * placeholderText;
-@property(assign,readwrite) long long selectedAlbumIndex;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) <PUCloudSharedPostCommentViewControllerDelegate> *commentDelegate;
+@property (nonatomic, readonly) NSString *commentText;
+@property (nonatomic, copy) id completionHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isNewAlbum;
+@property (nonatomic, copy) NSString *placeholderText;
+@property (nonatomic) long long selectedAlbumIndex;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_addBackgroundViewConstraintsInView:(id)arg1;

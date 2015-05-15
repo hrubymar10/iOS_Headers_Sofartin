@@ -6,7 +6,7 @@
     SEL _action;
 }
 
-@property(assign,readwrite) SEL action;
+@property (nonatomic) SEL action;
 
 - (SEL)action;
 - (void)perform;

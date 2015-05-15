@@ -13,21 +13,21 @@
     HMXpcClient *_xpcClient;
 }
 
-@property(assign,retain) NSMutableArray * accessories;
-@property(getter=isBrowsing,assign,readwrite) bool browsing;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <HMAccessoryBrowserDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSArray * discoveredAccessories;
-@property(assign,readwrite) unsigned long long generationCounter;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * messageReceiveQueue;
-@property(assign,readonly) NSUUID * messageTargetUUID;
-@property(assign,retain) HMMessageDispatcher * msgDispatcher;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSUUID * uuid;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
-@property(assign,retain) HMXpcClient * xpcClient;
+@property (nonatomic, retain) NSMutableArray *accessories;
+@property (getter=isBrowsing, nonatomic) bool browsing;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <HMAccessoryBrowserDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSArray *discoveredAccessories;
+@property (nonatomic) unsigned long long generationCounter;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *messageReceiveQueue;
+@property (nonatomic, readonly) NSUUID *messageTargetUUID;
+@property (nonatomic, retain) HMMessageDispatcher *msgDispatcher;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSUUID *uuid;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
+@property (nonatomic, retain) HMXpcClient *xpcClient;
 
 - (void).cxx_destruct;
 - (void)_fetchNewAccessories;

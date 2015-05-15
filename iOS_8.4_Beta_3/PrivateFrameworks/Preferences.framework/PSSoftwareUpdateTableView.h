@@ -10,11 +10,11 @@
     UILabel *_subtitleLabel;
 }
 
-@property(assign,retain) UIActivityIndicatorView * checkingForUpdateSpinner;
-@property(assign,retain) UILabel * checkingStatusLabel;
-@property(assign,retain) NSString * currentVersion;
-@property(assign,readwrite) int state;
-@property(assign,retain) UILabel * subtitleLabel;
+@property (nonatomic, retain) UIActivityIndicatorView *checkingForUpdateSpinner;
+@property (nonatomic, retain) UILabel *checkingStatusLabel;
+@property (nonatomic, retain) NSString *currentVersion;
+@property (nonatomic) int state;
+@property (nonatomic, retain) UILabel *subtitleLabel;
 
 - (id)checkingForUpdateSpinner;
 - (id)checkingStatusLabel;

@@ -23,24 +23,24 @@
     TSCHChartValueAxis *mValueAxis;
 }
 
-@property(assign,readonly) double dataPointSize;
-@property(assign,readonly) TSCHChartAxis * groupAxis;
-@property(assign,readonly) unsigned int labelPosition;
-@property(assign,readonly) int lineType;
-@property(assign,readonly) double opacity;
-@property(assign,readonly) TSWPParagraphStyle * paragraphStyle;
-@property(assign,readonly) TSCHChartSeries * series;
-@property(assign,readonly) id seriesFill;
-@property(assign,readonly) unsigned long long seriesIndex;
-@property(assign,readonly) TSDShadow * seriesShadow;
-@property(assign,readonly) TSDStroke * seriesStroke;
-@property(assign,readonly) bool showLabelsInFront;
-@property(assign,readonly) bool showValueLabels;
-@property(assign,readonly) id symbolFill;
-@property(assign,readonly) TSDStroke * symbolStroke;
-@property(assign,readonly) int symbolType;
-@property(assign,readonly) struct CGPath { }* unitSymbolPath;
-@property(assign,readonly) TSCHChartValueAxis * valueAxis;
+@property (readonly) double dataPointSize;
+@property (readonly) TSCHChartAxis *groupAxis;
+@property (readonly) unsigned int labelPosition;
+@property (readonly) int lineType;
+@property (readonly) double opacity;
+@property (readonly) TSWPParagraphStyle *paragraphStyle;
+@property (readonly) TSCHChartSeries *series;
+@property (readonly) id seriesFill;
+@property (readonly) unsigned long long seriesIndex;
+@property (readonly) TSDShadow *seriesShadow;
+@property (readonly) TSDStroke *seriesStroke;
+@property (readonly) bool showLabelsInFront;
+@property (readonly) bool showValueLabels;
+@property (readonly) id symbolFill;
+@property (readonly) TSDStroke *symbolStroke;
+@property (readonly) int symbolType;
+@property (readonly) struct CGPath { }*unitSymbolPath;
+@property (readonly) TSCHChartValueAxis *valueAxis;
 
 - (double)dataPointSize;
 - (void)dealloc;

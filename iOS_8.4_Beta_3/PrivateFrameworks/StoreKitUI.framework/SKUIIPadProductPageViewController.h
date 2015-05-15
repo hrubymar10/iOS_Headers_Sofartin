@@ -29,17 +29,17 @@
     NSURLRequest *_urlRequest;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readwrite) bool askPermission;
-@property(assign,copy) NSString * bannerText;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIIPadProductPageDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIItem * item;
-@property(assign,readonly) SKUIProductPage * productPage;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic) bool askPermission;
+@property (nonatomic, copy) NSString *bannerText;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIIPadProductPageDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIItem *item;
+@property (nonatomic, readonly) SKUIProductPage *productPage;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)URL;

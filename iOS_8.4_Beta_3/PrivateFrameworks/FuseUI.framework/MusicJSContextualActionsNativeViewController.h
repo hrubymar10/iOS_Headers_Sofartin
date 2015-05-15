@@ -10,10 +10,10 @@
     NSDictionary *_shareDocumentOptions;
 }
 
-@property(assign,readwrite) <MusicJSContextualActionsNativeViewControllerDelegate> * delegate;
-@property(assign,readonly) IKJSNavigationDocument * navigationDocument;
-@property(assign,readonly) IKAppDocument * shareDocument;
-@property(assign,readonly) NSDictionary * shareDocumentOptions;
+@property (nonatomic) <MusicJSContextualActionsNativeViewControllerDelegate> *delegate;
+@property (nonatomic, readonly) IKJSNavigationDocument *navigationDocument;
+@property (nonatomic, readonly) IKAppDocument *shareDocument;
+@property (nonatomic, readonly) NSDictionary *shareDocumentOptions;
 
 - (void).cxx_destruct;
 - (id)delegate;

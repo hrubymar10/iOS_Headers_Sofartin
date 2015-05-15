@@ -11,10 +11,10 @@
     PKPass *_pass;
 }
 
-@property(assign,retain) NSArray * bucket;
-@property(assign,retain) PKPassBucketTemplate * bucketTemplate;
-@property(assign,retain) PKPassColorProfile * colorProfile;
-@property(assign,retain) PKPass * pass;
+@property (nonatomic, retain) NSArray *bucket;
+@property (nonatomic, retain) PKPassBucketTemplate *bucketTemplate;
+@property (nonatomic, retain) PKPassColorProfile *colorProfile;
+@property (nonatomic, retain) PKPass *pass;
 
 - (long long)_backgroundForBucketTemplate:(id)arg1;
 - (id)_fieldViewsByWidth;

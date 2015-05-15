@@ -4,7 +4,7 @@
 
 @interface SSMetricsAccountEvent : SSMetricsBaseEvent
 
-@property(assign,retain) NSString * accountEventType;
+@property (nonatomic, retain) NSString *accountEventType;
 
 - (id)accountEventType;
 - (id)init;

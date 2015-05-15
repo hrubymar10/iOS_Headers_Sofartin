@@ -13,12 +13,12 @@
     unsigned long long _responseOffset;
 }
 
-@property(assign,readwrite) <NSURLConnectionDelegate> * delegate;
-@property(assign,retain) NSString * expectedRequestPattern;
-@property(assign,retain) NSData * response;
-@property(assign,readwrite) unsigned long long responseChunkDelay;
-@property(assign,readwrite) unsigned long long responseChunkInitialDelay;
-@property(assign,readwrite) unsigned long long responseChunkSize;
+@property (nonatomic) <NSURLConnectionDelegate> *delegate;
+@property (nonatomic, retain) NSString *expectedRequestPattern;
+@property (nonatomic, retain) NSData *response;
+@property (nonatomic) unsigned long long responseChunkDelay;
+@property (nonatomic) unsigned long long responseChunkInitialDelay;
+@property (nonatomic) unsigned long long responseChunkSize;
 
 + (void)_doppelgangerFinished:(id)arg1;
 + (void)_spewDoppelgangerArray:(id)arg1 named:(id)arg2;

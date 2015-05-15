@@ -8,9 +8,9 @@
     void *_xpcMessage;
 }
 
-@property(assign,readwrite) unsigned long long identifier;
-@property(assign,retain) NSString * topic;
-@property(assign,retain) NSDictionary * userInfo;
+@property (nonatomic) unsigned long long identifier;
+@property (nonatomic, retain) NSString *topic;
+@property (nonatomic, retain) NSDictionary *userInfo;
 
 - (void)dealloc;
 - (id)dictionaryRepresentation;

@@ -10,13 +10,13 @@
     short _embeddedThumbnailWidth;
 }
 
-@property(assign,readonly) PHAsset * asset;
-@property(assign,readonly) NSData * embeddedThumbnailData;
-@property(assign,readonly) short embeddedThumbnailHeight;
-@property(assign,readonly) int embeddedThumbnailLength;
-@property(assign,readonly) int embeddedThumbnailOffset;
-@property(assign,readonly) short embeddedThumbnailWidth;
-@property(assign,readonly) bool hasEmbeddedThumbnail;
+@property (nonatomic, readonly) PHAsset *asset;
+@property (nonatomic, readonly) NSData *embeddedThumbnailData;
+@property (nonatomic, readonly) short embeddedThumbnailHeight;
+@property (nonatomic, readonly) int embeddedThumbnailLength;
+@property (nonatomic, readonly) int embeddedThumbnailOffset;
+@property (nonatomic, readonly) short embeddedThumbnailWidth;
+@property (nonatomic, readonly) bool hasEmbeddedThumbnail;
 
 - (void).cxx_destruct;
 - (id)asset;

@@ -11,8 +11,8 @@
     bool _shouldStashLoginResponse;
 }
 
-@property(assign,readwrite) bool shouldSkipiTunesPlugin;
-@property(assign,readwrite) bool shouldStashLoginResponse;
+@property (nonatomic) bool shouldSkipiTunesPlugin;
+@property (nonatomic) bool shouldStashLoginResponse;
 
 + (id)sharedInstance;
 

@@ -4,24 +4,24 @@
 
 @interface ACDManagedAccount : NSManagedObject
 
-@property(assign,retain) NSString * accountDescription;
-@property(assign,retain) ACDManagedAccountType * accountType;
-@property(assign,retain) NSNumber * active;
-@property(assign,retain) NSNumber * authenticated;
-@property(assign,retain) NSString * authenticationType;
-@property(assign,retain) NSSet * childAccounts;
-@property(assign,retain) NSString * credentialType;
-@property(assign,retain) NSSet * customProperties;
-@property(assign,retain) id dataclassProperties;
-@property(assign,retain) NSDate * date;
-@property(assign,retain) NSSet * enabledDataclasses;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSDate * lastCredentialRenewalRejectionDate;
-@property(assign,retain) NSString * owningBundleID;
-@property(assign,retain) ACDManagedAccount * parentAccount;
-@property(assign,retain) NSSet * provisionedDataclasses;
-@property(assign,retain) NSNumber * supportsAuthentication;
-@property(assign,retain) NSString * username;
-@property(assign,retain) NSNumber * visible;
+@property (nonatomic, retain) NSString *accountDescription;
+@property (nonatomic, retain) ACDManagedAccountType *accountType;
+@property (nonatomic, retain) NSNumber *active;
+@property (nonatomic, retain) NSNumber *authenticated;
+@property (nonatomic, retain) NSString *authenticationType;
+@property (nonatomic, retain) NSSet *childAccounts;
+@property (nonatomic, retain) NSString *credentialType;
+@property (nonatomic, retain) NSSet *customProperties;
+@property (nonatomic, retain) id dataclassProperties;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, retain) NSSet *enabledDataclasses;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSDate *lastCredentialRenewalRejectionDate;
+@property (nonatomic, retain) NSString *owningBundleID;
+@property (nonatomic, retain) ACDManagedAccount *parentAccount;
+@property (nonatomic, retain) NSSet *provisionedDataclasses;
+@property (nonatomic, retain) NSNumber *supportsAuthentication;
+@property (nonatomic, retain) NSString *username;
+@property (nonatomic, retain) NSNumber *visible;
 
 @end

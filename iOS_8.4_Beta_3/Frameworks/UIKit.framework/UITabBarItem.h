@@ -35,17 +35,17 @@
     UIView *_view;
 }
 
-@property(setter=_setBarMetrics:,assign,readwrite) long long _barMetrics;
-@property(setter=_setImageStyle:,assign,readwrite) long long _imageStyle;
-@property(setter=_setTintColor:,assign,retain) UIColor * _tintColor;
-@property(assign,readwrite) SEL action;
-@property(assign,readwrite) bool animatedBadge;
-@property(assign,copy) NSString * badgeValue;
-@property(assign,retain) UIImage * selectedImage;
-@property(assign,readwrite) id target;
-@property(assign,retain) UIImage * unselectedImage;
-@property(assign,retain) UIView * view;
-@property(assign,readwrite) bool viewIsCustom;
+@property (setter=_setBarMetrics:, nonatomic) long long _barMetrics;
+@property (setter=_setImageStyle:, nonatomic) long long _imageStyle;
+@property (setter=_setTintColor:, nonatomic, retain) UIColor *_tintColor;
+@property (nonatomic) SEL action;
+@property (nonatomic) bool animatedBadge;
+@property (nonatomic, copy) NSString *badgeValue;
+@property (nonatomic, retain) UIImage *selectedImage;
+@property (nonatomic) id target;
+@property (nonatomic, retain) UIImage *unselectedImage;
+@property (nonatomic, retain) UIView *view;
+@property (nonatomic) bool viewIsCustom;
 
 + (id)_appearanceBlindViewClasses;
 

@@ -6,7 +6,7 @@
     unsigned long long _minimumNumberOfEntitiesToAllowSectionHeaders;
 }
 
-@property(assign,readwrite) unsigned long long minimumNumberOfEntitiesToAllowSectionHeaders;
+@property (nonatomic) unsigned long long minimumNumberOfEntitiesToAllowSectionHeaders;
 
 - (id)init;
 - (unsigned long long)minimumNumberOfEntitiesToAllowSectionHeaders;

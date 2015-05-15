@@ -20,14 +20,14 @@
     bool _userInitiated;
 }
 
-@property(assign,readonly) bool _canHandleRequest;
-@property(assign,readonly) NSURL * _originalURL;
-@property(setter=_setOriginalURL:,assign,copy) NSURL * _originalURL;
-@property(getter=_isUserInitiated,assign,readonly) bool _userInitiated;
-@property(assign,readonly) long long navigationType;
-@property(assign,copy) NSURLRequest * request;
-@property(assign,copy) WKFrameInfo * sourceFrame;
-@property(assign,copy) WKFrameInfo * targetFrame;
+@property (nonatomic, readonly) bool _canHandleRequest;
+@property (nonatomic, readonly) NSURL *_originalURL;
+@property (setter=_setOriginalURL:, nonatomic, copy) NSURL *_originalURL;
+@property (getter=_isUserInitiated, nonatomic, readonly) bool _userInitiated;
+@property (nonatomic, readonly) long long navigationType;
+@property (nonatomic, copy) NSURLRequest *request;
+@property (nonatomic, copy) WKFrameInfo *sourceFrame;
+@property (nonatomic, copy) WKFrameInfo *targetFrame;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

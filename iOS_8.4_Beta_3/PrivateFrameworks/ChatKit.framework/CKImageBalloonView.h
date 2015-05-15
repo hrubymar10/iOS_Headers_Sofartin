@@ -8,13 +8,13 @@
     CKBalloonImageView *_tailMask;
 }
 
-@property(assign,retain) CKAnimatedImage * animatedImage;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSArray * frames;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) CKBalloonImageView * tailMask;
+@property (nonatomic, retain) CKAnimatedImage *animatedImage;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSArray *frames;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) CKBalloonImageView *tailMask;
 
 - (id)animatedImage;
 - (void)animationTimerFired:(unsigned long long)arg1;

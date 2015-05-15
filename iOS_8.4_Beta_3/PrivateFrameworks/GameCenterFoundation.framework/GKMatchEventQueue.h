@@ -16,17 +16,17 @@
     unsigned int _sequenceNumber;
 }
 
-@property(assign,retain) NSMutableDictionary * connectionInfo;
-@property(assign,readwrite) bool counted;
-@property(assign,readwrite) long long deferedPlayerState;
-@property(assign,retain) NSMutableArray * events;
-@property(assign,readwrite) bool hasInitRelayInfo;
-@property(assign,readwrite) bool hasUpdateRelayInfo;
-@property(assign,readwrite) bool okToSend;
-@property(assign,retain) GKPlayer * player;
-@property(assign,readwrite) long long playerState;
-@property(assign,readwrite) bool relayInitiated;
-@property(assign,readwrite) unsigned int sequenceNumber;
+@property (nonatomic, retain) NSMutableDictionary *connectionInfo;
+@property (nonatomic) bool counted;
+@property (nonatomic) long long deferedPlayerState;
+@property (nonatomic, retain) NSMutableArray *events;
+@property (nonatomic) bool hasInitRelayInfo;
+@property (nonatomic) bool hasUpdateRelayInfo;
+@property (nonatomic) bool okToSend;
+@property (nonatomic, retain) GKPlayer *player;
+@property (nonatomic) long long playerState;
+@property (nonatomic) bool relayInitiated;
+@property (nonatomic) unsigned int sequenceNumber;
 
 - (id)connectionInfo;
 - (bool)counted;

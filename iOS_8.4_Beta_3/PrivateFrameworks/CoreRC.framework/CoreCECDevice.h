@@ -14,16 +14,16 @@
     unsigned long long _vendorID;
 }
 
-@property(assign,readwrite) unsigned long long cecVersion;
-@property(assign,readonly) unsigned long long deckStatus;
-@property(assign,readwrite) unsigned char deckStatusInternal;
-@property(assign,readwrite) unsigned long long deviceType;
-@property(assign,readwrite) bool isActiveSource;
-@property(assign,readwrite) unsigned char logicalAddress;
-@property(assign,readwrite) unsigned long long physicalAddress;
-@property(assign,readwrite) unsigned long long powerStatus;
-@property(assign,readonly) bool systemAudioControlEnabled;
-@property(assign,readwrite) unsigned long long vendorID;
+@property (nonatomic) unsigned long long cecVersion;
+@property (nonatomic, readonly) unsigned long long deckStatus;
+@property (nonatomic) unsigned char deckStatusInternal;
+@property (nonatomic) unsigned long long deviceType;
+@property (nonatomic) bool isActiveSource;
+@property (nonatomic) unsigned char logicalAddress;
+@property (nonatomic) unsigned long long physicalAddress;
+@property (nonatomic) unsigned long long powerStatus;
+@property (nonatomic, readonly) bool systemAudioControlEnabled;
+@property (nonatomic) unsigned long long vendorID;
 
 + (bool)supportsSecureCoding;
 

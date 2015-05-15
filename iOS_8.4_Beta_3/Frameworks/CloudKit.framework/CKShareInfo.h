@@ -20,21 +20,21 @@
     CKShareID *_shareID;
 }
 
-@property(assign,retain) NSString * container;
-@property(assign,readwrite) long long environment;
-@property(assign,retain) NSString * etag;
-@property(assign,retain) NSString * iWorkDocumentName;
-@property(assign,retain) NSString * ownerFirstName;
-@property(assign,retain) NSString * ownerLastName;
-@property(assign,readwrite) long long participantPermission;
-@property(assign,readwrite) long long participantStatus;
-@property(assign,readwrite) long long participantType;
-@property(assign,retain) NSData * privateToken;
-@property(assign,retain) NSData * protectedFullToken;
-@property(assign,retain) NSData * publicProtectionData;
-@property(assign,retain) NSString * publicProtectionEtag;
-@property(assign,retain) NSData * publicToken;
-@property(assign,retain) CKShareID * shareID;
+@property (nonatomic, retain) NSString *container;
+@property (nonatomic) long long environment;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, retain) NSString *iWorkDocumentName;
+@property (nonatomic, retain) NSString *ownerFirstName;
+@property (nonatomic, retain) NSString *ownerLastName;
+@property (nonatomic) long long participantPermission;
+@property (nonatomic) long long participantStatus;
+@property (nonatomic) long long participantType;
+@property (nonatomic, retain) NSData *privateToken;
+@property (nonatomic, retain) NSData *protectedFullToken;
+@property (nonatomic, retain) NSData *publicProtectionData;
+@property (nonatomic, retain) NSString *publicProtectionEtag;
+@property (nonatomic, retain) NSData *publicToken;
+@property (nonatomic, retain) CKShareID *shareID;
 
 + (bool)supportsSecureCoding;
 

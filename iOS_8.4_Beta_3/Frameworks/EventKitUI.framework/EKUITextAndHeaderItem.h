@@ -7,9 +7,9 @@
     NSString *_text;
 }
 
-@property(assign,readonly) NSDictionary * dictionaryRepresentation;
-@property(assign,retain) NSString * header;
-@property(assign,retain) NSString * text;
+@property (nonatomic, readonly) NSDictionary *dictionaryRepresentation;
+@property (nonatomic, retain) NSString *header;
+@property (nonatomic, retain) NSString *text;
 
 + (id)itemWithText:(id)arg1 andHeader:(id)arg2;
 

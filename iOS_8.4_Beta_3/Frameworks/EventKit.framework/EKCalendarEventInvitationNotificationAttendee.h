@@ -14,19 +14,19 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSString * comment;
-@property(assign,readonly) bool commentChanged;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * emailAddress;
-@property(assign,readonly) NSString * firstName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * lastName;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) int participantStatus;
-@property(assign,readonly) bool statusChanged;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, readonly) NSString *comment;
+@property (nonatomic, readonly) bool commentChanged;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *emailAddress;
+@property (nonatomic, readonly) NSString *firstName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *lastName;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) int participantStatus;
+@property (nonatomic, readonly) bool statusChanged;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSURL *url;
 
 - (id)comment;
 - (bool)commentChanged;

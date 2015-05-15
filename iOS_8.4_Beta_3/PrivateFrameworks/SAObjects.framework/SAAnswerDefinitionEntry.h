@@ -4,13 +4,13 @@
 
 @interface SAAnswerDefinitionEntry : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * definition;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSArray * examples;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * variations;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, copy) NSString *definition;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSArray *examples;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *variations;
 
 + (id)definitionEntry;
 + (id)definitionEntryWithDictionary:(id)arg1 context:(id)arg2;

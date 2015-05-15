@@ -11,12 +11,12 @@
     int _visibility;
 }
 
-@property(assign,readwrite) int effectiveVisibility;
-@property(getter=isForeground,assign,readwrite) bool foreground;
-@property(assign,readwrite) int pid;
-@property(getter=isRunning,assign,readwrite) bool running;
-@property(assign,readwrite) int taskState;
-@property(assign,readwrite) int visibility;
+@property (nonatomic) int effectiveVisibility;
+@property (getter=isForeground, nonatomic) bool foreground;
+@property (nonatomic) int pid;
+@property (getter=isRunning, nonatomic) bool running;
+@property (nonatomic) int taskState;
+@property (nonatomic) int visibility;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)description;

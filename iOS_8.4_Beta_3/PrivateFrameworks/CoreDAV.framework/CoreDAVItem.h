@@ -11,16 +11,16 @@
     bool _useCDATA;
 }
 
-@property(assign,retain) NSMutableSet * attributes;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableArray * extraChildItems;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * nameSpace;
-@property(assign,retain) NSData * payload;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useCDATA;
+@property (nonatomic, retain) NSMutableSet *attributes;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMutableArray *extraChildItems;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *nameSpace;
+@property (nonatomic, retain) NSData *payload;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useCDATA;
 
 + (id)copyParseRules;
 + (id)parseRuleCache;

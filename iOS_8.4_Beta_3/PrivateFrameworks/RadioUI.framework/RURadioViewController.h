@@ -44,13 +44,13 @@
     RUWelcomeViewController *_welcomeViewController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RURadioViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) RUMiniPlayerCoordinator * miniPlayerCoordinator;
-@property(assign,retain) RURadioPlaybackCoordinator * playbackCoordinator;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RURadioViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) RUMiniPlayerCoordinator *miniPlayerCoordinator;
+@property (nonatomic, retain) RURadioPlaybackCoordinator *playbackCoordinator;
+@property (readonly) Class superclass;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 + (id)viewControllerWithRestorationIdentifierPath:(id)arg1 coder:(id)arg2;

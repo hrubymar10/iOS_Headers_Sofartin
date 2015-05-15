@@ -18,19 +18,19 @@
     long long _transcriptionMode;
 }
 
-@property(assign,copy) NSString * applicationName;
-@property(assign,copy) NSString * applicationVersion;
-@property(assign,retain) AFSiriContext * context;
-@property(assign,copy) NSString * fieldIdentifier;
-@property(assign,copy) NSString * fieldLabel;
-@property(assign,copy) NSString * interactionIdentifier;
-@property(assign,readwrite) long long keyboardType;
-@property(assign,copy) NSString * languageCodeOverride;
-@property(assign,copy) NSString * postfixText;
-@property(assign,copy) NSString * prefixText;
-@property(assign,readwrite) long long returnKeyType;
-@property(assign,copy) NSString * selectedText;
-@property(assign,readwrite) long long transcriptionMode;
+@property (nonatomic, copy) NSString *applicationName;
+@property (nonatomic, copy) NSString *applicationVersion;
+@property (nonatomic, retain) AFSiriContext *context;
+@property (nonatomic, copy) NSString *fieldIdentifier;
+@property (nonatomic, copy) NSString *fieldLabel;
+@property (nonatomic, copy) NSString *interactionIdentifier;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic, copy) NSString *languageCodeOverride;
+@property (nonatomic, copy) NSString *postfixText;
+@property (nonatomic, copy) NSString *prefixText;
+@property (nonatomic) long long returnKeyType;
+@property (nonatomic, copy) NSString *selectedText;
+@property (nonatomic) long long transcriptionMode;
 
 + (bool)supportsSecureCoding;
 

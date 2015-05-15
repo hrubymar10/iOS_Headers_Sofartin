@@ -12,12 +12,12 @@
     NSArray *_validPurchases;
 }
 
-@property(assign,retain) NSArray * continuations;
-@property(assign,retain) NSArray * errors;
-@property(assign,readonly) NSArray * items;
-@property(assign,readonly) NSArray * offers;
-@property(assign,readwrite) SUPurchaseManager * purchaseManager;
-@property(assign,retain) NSArray * validPurchases;
+@property (nonatomic, retain) NSArray *continuations;
+@property (nonatomic, retain) NSArray *errors;
+@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic, readonly) NSArray *offers;
+@property (nonatomic) SUPurchaseManager *purchaseManager;
+@property (nonatomic, retain) NSArray *validPurchases;
 
 - (id)_copyModifiedErrorsFromDictionary:(struct __CFDictionary { }*)arg1;
 - (id)_copyUniqueErrorsFromErrors:(id)arg1;

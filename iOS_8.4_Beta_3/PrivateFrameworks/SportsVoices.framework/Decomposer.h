@@ -11,7 +11,7 @@
     int _iterations;
 }
 
-@property(assign,readwrite) id delegate;
+@property (nonatomic) id delegate;
 
 - (void)dealloc;
 - (id)delegate;

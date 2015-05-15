@@ -15,16 +15,16 @@
     UIView *topoView;
 }
 
-@property(assign,retain) UIView * justTextContainerView;
-@property(assign,readwrite) UILabel * justTextLabel;
-@property(assign,readwrite) int sbsMode;
-@property(assign,retain) UILabel * spinnerWithStatusBelowLabel;
-@property(assign,retain) UIActivityIndicatorView * spinnerWithStatusBelowSpinner;
-@property(assign,retain) UIView * spinnerWithStatusBelowView;
-@property(assign,retain) UIView * tableFooterContainerView;
-@property(assign,retain) UIView * tableHeaderContainerView;
-@property(assign,retain) NetTopoMiniStaticLayout * topoLayout;
-@property(assign,retain) UIView * topoView;
+@property (nonatomic, retain) UIView *justTextContainerView;
+@property (nonatomic) UILabel *justTextLabel;
+@property (nonatomic) int sbsMode;
+@property (nonatomic, retain) UILabel *spinnerWithStatusBelowLabel;
+@property (nonatomic, retain) UIActivityIndicatorView *spinnerWithStatusBelowSpinner;
+@property (nonatomic, retain) UIView *spinnerWithStatusBelowView;
+@property (nonatomic, retain) UIView *tableFooterContainerView;
+@property (nonatomic, retain) UIView *tableHeaderContainerView;
+@property (nonatomic, retain) NetTopoMiniStaticLayout *topoLayout;
+@property (nonatomic, retain) UIView *topoView;
 
 - (void)dealloc;
 - (id)justTextContainerView;

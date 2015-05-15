@@ -17,8 +17,8 @@
     bool hasSetComputePipelineState;
 }
 
-@property(assign,readonly) <MTLDevice> * cachedDevice;
-@property(assign,readonly) <MTLComputePipelineState> * computePipelineState;
+@property (nonatomic, readonly) <MTLDevice> *cachedDevice;
+@property (nonatomic, readonly) <MTLComputePipelineState> *computePipelineState;
 
 - (void).cxx_destruct;
 - (void)_setDefaults;

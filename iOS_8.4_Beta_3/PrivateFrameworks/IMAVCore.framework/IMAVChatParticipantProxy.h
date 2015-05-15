@@ -7,9 +7,9 @@
     NSDictionary *_info;
 }
 
-@property(assign,readonly) bool _inviteDelivered;
-@property(assign,retain) IMAVChat * avChat;
-@property(assign,retain) NSString * name;
+@property (nonatomic, readonly) bool _inviteDelivered;
+@property (nonatomic, readonly, retain) IMAVChat *avChat;
+@property (nonatomic, readonly, retain) NSString *name;
 
 - (bool)_inviteDelivered;
 - (id)avChat;

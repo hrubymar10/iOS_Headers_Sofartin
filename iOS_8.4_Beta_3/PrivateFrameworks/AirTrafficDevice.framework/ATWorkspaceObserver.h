@@ -6,7 +6,7 @@
     NSObject<LSApplicationWorkspaceObserverProtocol> *_delegate;
 }
 
-@property(assign,readwrite) NSObject<ATWorkspaceObserverDelegate> * delegate;
+@property (nonatomic) NSObject<ATWorkspaceObserverDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)applicationInstallsArePrioritized:(id)arg1 arePaused:(id)arg2;

@@ -10,15 +10,15 @@
     NSObject<OS_dispatch_queue> *_internalQueue;
 }
 
-@property(assign,readwrite) bool acknowledged;
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,retain) NSString * currentPassUniqueID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <NPKPaymentSessionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * internalQueue;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool acknowledged;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (nonatomic, retain) NSString *currentPassUniqueID;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <NPKPaymentSessionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *internalQueue;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_connectionWithEndpoint:(id)arg1 rootQueue:(id)arg2;

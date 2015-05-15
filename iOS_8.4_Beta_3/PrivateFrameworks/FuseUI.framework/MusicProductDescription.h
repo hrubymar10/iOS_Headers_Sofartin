@@ -8,10 +8,10 @@
     NSString *_text;
 }
 
-@property(getter=isEmpty,assign,readonly) bool empty;
-@property(assign,readonly) long long format;
-@property(assign,readonly) NSString * storeEditorNotes;
-@property(assign,readonly) NSString * text;
+@property (getter=isEmpty, nonatomic, readonly) bool empty;
+@property (nonatomic, readonly) long long format;
+@property (nonatomic, readonly) NSString *storeEditorNotes;
+@property (nonatomic, readonly) NSString *text;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -9,8 +9,8 @@
     NSHashTable *_referencedObjectsHashTable;
 }
 
-@property(assign,readonly) NSArray * referencedData;
-@property(assign,readonly) NSArray * referencedObjects;
+@property (nonatomic, readonly) NSArray *referencedData;
+@property (nonatomic, readonly) NSArray *referencedObjects;
 
 - (void).cxx_destruct;
 - (id)init;

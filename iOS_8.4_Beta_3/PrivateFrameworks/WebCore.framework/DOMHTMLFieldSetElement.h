@@ -4,7 +4,7 @@
 
 @interface DOMHTMLFieldSetElement : DOMHTMLElement
 
-@property(assign,readonly) DOMHTMLFormElement * form;
+@property (readonly) DOMHTMLFormElement *form;
 
 - (bool)checkValidity;
 - (bool)disabled;

@@ -7,8 +7,8 @@
     NSMutableArray *_languages;
 }
 
-@property(assign,readwrite) unsigned int identifier;
-@property(assign,retain) NSMutableArray * languages;
+@property (nonatomic) unsigned int identifier;
+@property (nonatomic, retain) NSMutableArray *languages;
 
 - (void)addLanguage:(id)arg1;
 - (void)clearLanguages;

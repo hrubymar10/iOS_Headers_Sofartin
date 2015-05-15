@@ -8,9 +8,9 @@
     int _stringType;
 }
 
-@property(assign,readwrite) int beginIndex;
-@property(assign,readwrite) int endIndex;
-@property(assign,readwrite) int stringType;
+@property (nonatomic) int beginIndex;
+@property (nonatomic) int endIndex;
+@property (nonatomic) int stringType;
 
 - (int)beginIndex;
 - (void)copyTo:(id)arg1;

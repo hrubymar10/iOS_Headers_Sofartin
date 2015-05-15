@@ -4,10 +4,10 @@
 
 @interface SAMPSearch : SADomainCommand
 
-@property(assign,copy) NSArray * constraints;
-@property(assign,readwrite) long long maxResults;
-@property(assign,copy) NSArray * searchTypes;
-@property(assign,readwrite) bool strict;
+@property (nonatomic, copy) NSArray *constraints;
+@property (nonatomic) long long maxResults;
+@property (nonatomic, copy) NSArray *searchTypes;
+@property (nonatomic) bool strict;
 
 + (id)search;
 + (id)searchWithDictionary:(id)arg1 context:(id)arg2;

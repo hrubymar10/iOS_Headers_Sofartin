@@ -7,12 +7,12 @@
     NSString *_universalSectionIdentifier;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) BBSectionInfo * sectionInfo;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * universalSectionIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) BBSectionInfo *sectionInfo;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *universalSectionIdentifier;
 
 + (id)factoryFromSectionInfo:(id)arg1;
 + (bool)supportsSecureCoding;

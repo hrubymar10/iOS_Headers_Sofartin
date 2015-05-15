@@ -6,7 +6,7 @@
     NSArray *_actions;
 }
 
-@property(assign,copy) NSArray * actions;
+@property (nonatomic, copy) NSArray *actions;
 
 + (id)actionGroupWithActions:(id)arg1;
 

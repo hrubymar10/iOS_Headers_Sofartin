@@ -7,8 +7,8 @@
     NSString *_urlString;
 }
 
-@property(assign,readonly) NSString * URLString;
-@property(assign,readonly) long long facebookType;
+@property (nonatomic, readonly) NSString *URLString;
+@property (nonatomic, readonly) long long facebookType;
 
 - (void).cxx_destruct;
 - (id)URLString;

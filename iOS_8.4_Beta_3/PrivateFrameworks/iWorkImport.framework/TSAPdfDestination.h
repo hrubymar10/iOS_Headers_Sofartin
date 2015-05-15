@@ -10,8 +10,8 @@
     } _point;
 }
 
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } point;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } point;
 
 + (id)pdfDestinationWithName:(id)arg1 point:(struct CGPoint { double x1; double x2; })arg2;
 

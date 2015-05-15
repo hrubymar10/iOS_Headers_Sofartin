@@ -20,21 +20,21 @@
     double _strokeWidth;
 }
 
-@property(assign,retain) UIColor * backgroundStrokeColor;
-@property(assign,readwrite) double backgroundStrokeWidth;
-@property(assign,retain) UIColor * barColor;
-@property(assign,retain) NSArray * barColors;
-@property(assign,readwrite) struct CGGradient { }* barGradient;
-@property(assign,retain) NSArray * barLabels;
-@property(assign,readwrite) double barSpacing;
-@property(assign,readwrite) double barWidth;
-@property(assign,readwrite) bool fadeZeroBars;
-@property(assign,retain) UIColor * fadedBarColor;
-@property(assign,retain) NSArray * labelAttributes;
-@property(assign,retain) NSArray * plotPoints;
-@property(assign,readwrite) double roundedCornerRadius;
-@property(assign,retain) UIColor * strokeColor;
-@property(assign,readwrite) double strokeWidth;
+@property (nonatomic, retain) UIColor *backgroundStrokeColor;
+@property (nonatomic) double backgroundStrokeWidth;
+@property (nonatomic, retain) UIColor *barColor;
+@property (nonatomic, retain) NSArray *barColors;
+@property (nonatomic) struct CGGradient { }*barGradient;
+@property (nonatomic, retain) NSArray *barLabels;
+@property (nonatomic) double barSpacing;
+@property (nonatomic) double barWidth;
+@property (nonatomic) bool fadeZeroBars;
+@property (nonatomic, retain) UIColor *fadedBarColor;
+@property (nonatomic, retain) NSArray *labelAttributes;
+@property (nonatomic, retain) NSArray *plotPoints;
+@property (nonatomic) double roundedCornerRadius;
+@property (nonatomic, retain) UIColor *strokeColor;
+@property (nonatomic) double strokeWidth;
 
 - (void).cxx_destruct;
 - (id)_chartColorForChartYValue:(double)arg1;

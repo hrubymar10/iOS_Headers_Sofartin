@@ -21,20 +21,20 @@
     SUTabBarController *_tabBarController;
 }
 
-@property(getter=_activeMediaPlayer,setter=_setActiveMediaPlayer:,assign,retain) SUMediaPlayerViewController * _activeMediaPlayer;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) NSString * defaultPNGNameForSuspend;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * exitStoreButtonTitle;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isIgnoringDownloadQueueChanges,assign,readonly) bool ignoringDownloadQueueChanges;
-@property(assign,readonly) NSURL * launchURL;
-@property(getter=wasLaunchedFromLibrary,assign,readonly) bool launchedFromLibrary;
-@property(assign,readwrite) bool shouldPrepareUserInterfaceWhenActivated;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) SUTabBarController * tabBarController;
-@property(getter=isTabBarControllerLoaded,assign,readonly) bool tabBarControllerLoaded;
-@property(assign,readonly) UINavigationController * topNavigationController;
+@property (getter=_activeMediaPlayer, setter=_setActiveMediaPlayer:, nonatomic, retain) SUMediaPlayerViewController *_activeMediaPlayer;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) NSString *defaultPNGNameForSuspend;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *exitStoreButtonTitle;
+@property (readonly) unsigned long long hash;
+@property (getter=isIgnoringDownloadQueueChanges, nonatomic, readonly) bool ignoringDownloadQueueChanges;
+@property (nonatomic, readonly) NSURL *launchURL;
+@property (getter=wasLaunchedFromLibrary, nonatomic, readonly) bool launchedFromLibrary;
+@property (nonatomic) bool shouldPrepareUserInterfaceWhenActivated;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) SUTabBarController *tabBarController;
+@property (getter=isTabBarControllerLoaded, nonatomic, readonly) bool tabBarControllerLoaded;
+@property (nonatomic, readonly) UINavigationController *topNavigationController;
 
 + (void)setSharedController:(id)arg1;
 + (id)sharedController;

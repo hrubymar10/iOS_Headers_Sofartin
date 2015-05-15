@@ -4,9 +4,9 @@
 
 @interface GKABRecord : GKABObject
 
-@property(assign,readonly) void* ABRecord;
-@property(assign,readonly) int recordID;
-@property(assign,readonly) NSString * uniqueID;
+@property (readonly) void*ABRecord;
+@property (readonly) int recordID;
+@property (readonly) NSString *uniqueID;
 
 - (void*)ABRecord;
 - (id)initWithABRecord:(void*)arg1;

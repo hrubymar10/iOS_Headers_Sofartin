@@ -12,14 +12,14 @@
     id _userInfo;
 }
 
-@property(assign,copy) SSURLRequestProperties * URLRequestProperties;
-@property(assign,readwrite) double expirationTime;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) id segmentedControlItem;
-@property(assign,readwrite) long long structuredPageType;
-@property(assign,retain) NSString * title;
-@property(assign,retain) id userInfo;
+@property (nonatomic, copy) SSURLRequestProperties *URLRequestProperties;
+@property (nonatomic) double expirationTime;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, readonly) id segmentedControlItem;
+@property (nonatomic) long long structuredPageType;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) id userInfo;
 
 - (id)URLRequestProperties;
 - (void)_setURL:(id)arg1;

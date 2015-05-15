@@ -6,7 +6,7 @@
     NSArray *_allPickers;
 }
 
-@property(assign,retain) NSArray * allPickers;
+@property (nonatomic, retain) NSArray *allPickers;
 
 - (void)_doneButtonPressed;
 - (id)allPickers;

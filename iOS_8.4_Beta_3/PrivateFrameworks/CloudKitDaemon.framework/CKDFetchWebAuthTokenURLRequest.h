@@ -6,7 +6,7 @@
     id _tokenFetchedBlock;
 }
 
-@property(assign,copy) id tokenFetchedBlock;
+@property (nonatomic, copy) id tokenFetchedBlock;
 
 - (void).cxx_destruct;
 - (int)operationType;

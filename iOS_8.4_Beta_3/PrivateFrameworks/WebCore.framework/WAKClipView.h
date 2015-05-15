@@ -7,8 +7,8 @@
     WAKView *_documentView;
 }
 
-@property(assign,readwrite) bool copiesOnScroll;
-@property(assign,readonly) WAKView * documentView;
+@property (nonatomic) bool copiesOnScroll;
+@property (nonatomic, readonly) WAKView *documentView;
 
 - (void)_setDocumentView:(id)arg1;
 - (bool)copiesOnScroll;

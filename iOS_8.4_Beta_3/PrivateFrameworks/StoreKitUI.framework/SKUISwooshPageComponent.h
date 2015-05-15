@@ -23,19 +23,19 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSArray * bricks;
-@property(assign,readonly) struct SKUILockupStyle { long long x1; long long x2; unsigned long long x3; } lockupStyle;
-@property(assign,readonly) NSArray * lockups;
-@property(assign,readonly) NSArray * mediaComponents;
-@property(assign,readonly) NSString * platformKeyProfile;
-@property(assign,readonly) long long seeAllStyle;
-@property(assign,readonly) NSString * seeAllTitle;
-@property(assign,readonly) NSURL * seeAllURL;
-@property(assign,readonly) bool showsBrickTitles;
-@property(assign,readonly) bool showsIndexNumbers;
-@property(assign,readonly) bool showsMediaTitles;
-@property(assign,readonly) long long swooshType;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSArray *bricks;
+@property (nonatomic, readonly) struct SKUILockupStyle { long long x1; long long x2; unsigned long long x3; } lockupStyle;
+@property (nonatomic, readonly) NSArray *lockups;
+@property (nonatomic, readonly) NSArray *mediaComponents;
+@property (nonatomic, readonly) NSString *platformKeyProfile;
+@property (nonatomic, readonly) long long seeAllStyle;
+@property (nonatomic, readonly) NSString *seeAllTitle;
+@property (nonatomic, readonly) NSURL *seeAllURL;
+@property (nonatomic, readonly) bool showsBrickTitles;
+@property (nonatomic, readonly) bool showsIndexNumbers;
+@property (nonatomic, readonly) bool showsMediaTitles;
+@property (nonatomic, readonly) long long swooshType;
+@property (nonatomic, readonly) NSString *title;
 
 - (void).cxx_destruct;
 - (id)_brickItemsWithChildren:(id)arg1 customPageContext:(id)arg2;

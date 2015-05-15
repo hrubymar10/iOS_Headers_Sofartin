@@ -25,10 +25,10 @@
     unsigned int _tilePointSize;
 }
 
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::PolygonMesh::MeshMesh>={vector<ggl::PolygonMesh::MeshMesh *' */ struct * coastlineMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::PolygonMesh::MeshMesh *> >=^^{MeshMesh}}}^{MeshMesh}} */
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::Glow::MeshMesh>={vector<ggl::Glow::MeshMesh *' */ struct * innerGlowMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::Glow::MeshMesh *> >=^^{MeshMesh}}}^{MeshMesh}} */
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::Glow::MeshMesh>={vector<ggl::Glow::MeshMesh *' */ struct * outerGlowMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::Glow::MeshMesh *> >=^^{MeshMesh}}}^{MeshMesh}} */
-@property(assign,readonly) struct shared_ptr<md::StyleQuery> { struct StyleQuery {} *x1; struct __shared_weak_count {} *x2; } styleQuery;
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::PolygonMesh::MeshMesh>={vector<ggl::PolygonMesh::MeshMesh *' */ struct *coastlineMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::PolygonMesh::MeshMesh *> >=^^{MeshMesh}}}^{MeshMesh}} */
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::Glow::MeshMesh>={vector<ggl::Glow::MeshMesh *' */ struct *innerGlowMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::Glow::MeshMesh *> >=^^{MeshMesh}}}^{MeshMesh}} */
+@property (nonatomic, readonly) const /* Warning: unhandled struct encoding: '{MeshVendor<ggl::Glow::MeshMesh>={vector<ggl::Glow::MeshMesh *' */ struct *outerGlowMeshVendor; /* unknown property attribute:  std::__1::allocator<ggl::Glow::MeshMesh *> >=^^{MeshMesh}}}^{MeshMesh}} */
+@property (nonatomic, readonly) struct shared_ptr<md::StyleQuery> { struct StyleQuery {} *x1; struct __shared_weak_count {} *x2; } styleQuery;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

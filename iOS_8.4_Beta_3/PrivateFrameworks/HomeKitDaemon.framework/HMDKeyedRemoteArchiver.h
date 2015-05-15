@@ -7,8 +7,8 @@
     NSString *_transportType;
 }
 
-@property(assign,retain) NSKeyedArchiver * archiver;
-@property(assign,retain) NSString * transportType;
+@property (nonatomic, retain) NSKeyedArchiver *archiver;
+@property (nonatomic, retain) NSString *transportType;
 
 - (void).cxx_destruct;
 - (id)archiver;

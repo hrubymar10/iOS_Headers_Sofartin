@@ -17,14 +17,14 @@
     bool _useLightStyle;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * lastCharacterBeforeBackspace;
-@property(assign,retain) UILabel * statusSubtitleView;
-@property(assign,retain) UILabel * statusTitleView;
-@property(assign,readonly) Class superclass;
-@property(getter=_undoInputOnTouchCancellation,setter=_setUndoInputOnTouchCancellation:,assign,readwrite) bool undoInputOnTouchCancellation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *lastCharacterBeforeBackspace;
+@property (nonatomic, retain) UILabel *statusSubtitleView;
+@property (nonatomic, retain) UILabel *statusTitleView;
+@property (readonly) Class superclass;
+@property (getter=_undoInputOnTouchCancellation, setter=_setUndoInputOnTouchCancellation:, nonatomic) bool undoInputOnTouchCancellation;
 
 - (double)_entryFieldBottomYDistanceFromNumberPadTopButton;
 - (bool)_includesStatusView;

@@ -11,12 +11,12 @@
     NSString *_unit;
 }
 
-@property(assign,retain) NSString * chrDescription;
-@property(assign,retain) NSString * format;
-@property(assign,retain) NSString * localizedDescription;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * type;
-@property(assign,retain) NSString * unit;
+@property (nonatomic, retain) NSString *chrDescription;
+@property (nonatomic, retain) NSString *format;
+@property (nonatomic, retain) NSString *localizedDescription;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *type;
+@property (nonatomic, retain) NSString *unit;
 
 + (bool)supportsSecureCoding;
 

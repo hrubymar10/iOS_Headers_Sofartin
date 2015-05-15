@@ -22,12 +22,12 @@
     bool _wasMinimizedWhenAnimationStarted;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UILabel * statusField;
-@property(assign,retain) UILabel * statusSubtitleView;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UILabel *statusField;
+@property (nonatomic, retain) UILabel *statusSubtitleView;
+@property (readonly) Class superclass;
 
 - (void)_acceptOrCancelReturnKeyPress;
 - (bool)_canMinMaxKeyboard;

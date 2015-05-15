@@ -11,10 +11,10 @@
     id _target;
 }
 
-@property(assign,readwrite) double delay;
-@property(assign,retain) id object;
-@property(assign,readwrite) SEL selector;
-@property(assign,retain) id target;
+@property (nonatomic) double delay;
+@property (nonatomic, retain) id object;
+@property (nonatomic) SEL selector;
+@property (nonatomic, retain) id target;
 
 - (void)dealloc;
 - (double)delay;

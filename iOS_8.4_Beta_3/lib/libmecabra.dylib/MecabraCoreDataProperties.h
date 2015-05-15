@@ -8,10 +8,10 @@
     NSString *_type;
 }
 
-@property(assign,retain) NSMutableDictionary * descriptionDictionary;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSString * type;
-@property(assign,readonly) NSString * ubiquityContainerIdentifier;
+@property (nonatomic, retain) NSMutableDictionary *descriptionDictionary;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, readonly, retain) NSString *type;
+@property (nonatomic, readonly) NSString *ubiquityContainerIdentifier;
 
 + (id)defaultDescriptionPath;
 + (void)setDefaultDescriptionPath:(id)arg1;

@@ -20,16 +20,16 @@
     double _trailingTextColumnWidth;
 }
 
-@property(assign,retain) MusicEntityViewContentDescriptor * contentDescriptor;
-@property(assign,readonly) UIButton * contextualActionsButton;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicEntityTracklistItemViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) <MusicEntityValueProviding> * entityValueProvider;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double leadingTextColumnWidth;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double trailingTextColumnWidth;
+@property (nonatomic, retain) MusicEntityViewContentDescriptor *contentDescriptor;
+@property (nonatomic, readonly) UIButton *contextualActionsButton;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicEntityTracklistItemViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) <MusicEntityValueProviding> *entityValueProvider;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double leadingTextColumnWidth;
+@property (readonly) Class superclass;
+@property (nonatomic) double trailingTextColumnWidth;
 
 + (double)maximumHeightForContentDescriptor:(id)arg1 width:(double)arg2 traitCollection:(id)arg3;
 

@@ -6,22 +6,22 @@
     IMHandle *_handle;
 }
 
-@property(assign,copy) NSString * IDSCanonicalAddress;
-@property(assign,readonly) void* abRecord;
-@property(assign,retain) IMHandle * defaultIMHandle;
-@property(assign,copy) NSString * fullName;
-@property(assign,retain) IMHandle * handle;
-@property(assign,readonly) int identifier;
-@property(assign,retain) UIImage * locationMapViewContactImage;
-@property(assign,retain) UIImage * locationShareBalloonContactImage;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * originalAddress;
-@property(assign,readonly) int propertyType;
-@property(assign,copy) NSString * rawAddress;
-@property(assign,copy) NSString * textToneIdentifier;
-@property(assign,copy) NSString * textVibrationIdentifier;
-@property(assign,retain) UIImage * transcriptContactImage;
-@property(assign,retain) UIImage * transcriptDrawerContactImage;
+@property (nonatomic, readonly, copy) NSString *IDSCanonicalAddress;
+@property (nonatomic, readonly) void*abRecord;
+@property (nonatomic, readonly, retain) IMHandle *defaultIMHandle;
+@property (nonatomic, readonly, copy) NSString *fullName;
+@property (nonatomic, retain) IMHandle *handle;
+@property (nonatomic, readonly) int identifier;
+@property (nonatomic, readonly, retain) UIImage *locationMapViewContactImage;
+@property (nonatomic, readonly, retain) UIImage *locationShareBalloonContactImage;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly, copy) NSString *originalAddress;
+@property (nonatomic, readonly) int propertyType;
+@property (nonatomic, readonly, copy) NSString *rawAddress;
+@property (nonatomic, readonly, copy) NSString *textToneIdentifier;
+@property (nonatomic, readonly, copy) NSString *textVibrationIdentifier;
+@property (nonatomic, readonly, retain) UIImage *transcriptContactImage;
+@property (nonatomic, readonly, retain) UIImage *transcriptDrawerContactImage;
 
 + (id)_copyEntityForAddressString:(id)arg1 onAccount:(id)arg2;
 + (id)copyEntityForAddressString:(id)arg1;

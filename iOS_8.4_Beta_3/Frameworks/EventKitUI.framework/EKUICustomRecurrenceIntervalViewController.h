@@ -10,14 +10,14 @@
     UIPickerView *_pickerView;
 }
 
-@property(assign,copy) id changeBlock;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) int frequency;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long interval;
-@property(assign,readwrite) bool maximumInterval;
-@property(assign,readonly) Class superclass;
+@property (copy) id changeBlock;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) int frequency;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long interval;
+@property (nonatomic) bool maximumInterval;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)changeBlock;

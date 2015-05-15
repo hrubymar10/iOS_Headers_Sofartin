@@ -6,7 +6,7 @@
     id _callbackBlock;
 }
 
-@property(assign,copy) id callbackBlock;
+@property (nonatomic, copy) id callbackBlock;
 
 - (void).cxx_destruct;
 - (id)callbackBlock;

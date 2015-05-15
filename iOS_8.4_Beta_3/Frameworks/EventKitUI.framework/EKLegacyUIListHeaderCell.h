@@ -7,10 +7,10 @@
     bool _showWeekNumber;
 }
 
-@property(assign,readwrite) double date;
-@property(assign,readwrite) bool indentsForDots;
-@property(assign,readonly) bool reusable;
-@property(assign,readwrite) bool showWeekNumber;
+@property (nonatomic) double date;
+@property (nonatomic) bool indentsForDots;
+@property (nonatomic, readonly) bool reusable;
+@property (nonatomic) bool showWeekNumber;
 
 - (void).cxx_destruct;
 - (id)_backgroundImage;

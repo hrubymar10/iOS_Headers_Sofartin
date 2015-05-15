@@ -34,13 +34,13 @@
     MFSearchShadowView *_shadowView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PLComposeRecipientViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long maxExpandRows;
-@property(assign,readonly) PLComposeRecipientView * recipientView;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PLComposeRecipientViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long maxExpandRows;
+@property (nonatomic, readonly) PLComposeRecipientView *recipientView;
+@property (readonly) Class superclass;
 
 + (void)recordRecentInvitationRecipient:(id)arg1 displayName:(id)arg2 date:(id)arg3;
 

@@ -17,17 +17,17 @@
     PKPaymentWebService *_webService;
 }
 
-@property(assign,readonly) NSString * alternateMethodButtonTitle;
-@property(assign,readonly) NSString * completeVerificationButtonTitle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPaymentVerificationPresentationDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) <PKPaymentVerificationEntryDelegate> * entryDelegate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * verificationBodyString;
-@property(assign,readonly) PKVerificationRequestRecord * verificationRecord;
-@property(assign,readonly) NSString * verificationTitleString;
+@property (readonly) NSString *alternateMethodButtonTitle;
+@property (readonly) NSString *completeVerificationButtonTitle;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPaymentVerificationPresentationDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) <PKPaymentVerificationEntryDelegate> *entryDelegate;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (readonly) NSString *verificationBodyString;
+@property (readonly) PKVerificationRequestRecord *verificationRecord;
+@property (readonly) NSString *verificationTitleString;
 
 - (id)_bankAppName;
 - (id)_bankAppStoreIDs;

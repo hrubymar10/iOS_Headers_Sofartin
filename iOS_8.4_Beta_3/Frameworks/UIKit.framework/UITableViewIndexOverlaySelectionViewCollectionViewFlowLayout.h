@@ -16,8 +16,8 @@
     double _rightMarginForDoneButton;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frameForDoneButton;
-@property(assign,readwrite) double rightMarginForDoneButton;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frameForDoneButton;
+@property (nonatomic) double rightMarginForDoneButton;
 
 + (Class)layoutAttributesClass;
 

@@ -7,11 +7,11 @@
     NSXPCConnection *_connection;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) <TRXPCDaemonExportedInterface> * remoteDaemonProxy;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) <TRXPCDaemonExportedInterface> *remoteDaemonProxy;
+@property (readonly) Class superclass;
 
 + (id)sharedClient;
 

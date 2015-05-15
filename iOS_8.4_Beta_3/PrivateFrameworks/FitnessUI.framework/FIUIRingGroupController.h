@@ -21,17 +21,17 @@
     NSArray *_rings;
 }
 
-@property(assign,readwrite) double additionalSpacingAtIndex;
-@property(assign,readwrite) <FIUIRingGroupAnimationStatusDelegate> * animationStatusDelegate;
-@property(assign,readwrite) double backingOrigin;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } center;
-@property(assign,readonly) long long numberOfRings;
-@property(assign,readwrite) double ringDiameter;
-@property(assign,readwrite) double ringIconSize;
-@property(assign,readwrite) double ringInterspacing;
-@property(assign,readwrite) double ringScale;
-@property(assign,readwrite) double ringThickness;
-@property(assign,retain) NSArray * rings;
+@property (nonatomic) double additionalSpacingAtIndex;
+@property (nonatomic) <FIUIRingGroupAnimationStatusDelegate> *animationStatusDelegate;
+@property (nonatomic) double backingOrigin;
+@property (nonatomic) struct CGPoint { double x1; double x2; } center;
+@property (nonatomic, readonly) long long numberOfRings;
+@property (nonatomic) double ringDiameter;
+@property (nonatomic) double ringIconSize;
+@property (nonatomic) double ringInterspacing;
+@property (nonatomic) double ringScale;
+@property (nonatomic) double ringThickness;
+@property (nonatomic, retain) NSArray *rings;
 
 + (id)animationTimingFunction;
 + (double)defaultAnimationDuration;

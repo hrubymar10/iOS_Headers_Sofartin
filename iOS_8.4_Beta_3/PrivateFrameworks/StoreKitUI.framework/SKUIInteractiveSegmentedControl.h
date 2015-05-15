@@ -10,10 +10,10 @@
     double _selectionProgress;
 }
 
-@property(assign,copy) id dividerCreationBlock;
-@property(assign,readwrite) double dividerWidth;
-@property(assign,copy) NSArray * segments;
-@property(assign,readwrite) double selectionProgress;
+@property (nonatomic, copy) id dividerCreationBlock;
+@property (nonatomic) double dividerWidth;
+@property (nonatomic, copy) NSArray *segments;
+@property (nonatomic) double selectionProgress;
 
 - (void).cxx_destruct;
 - (void)_applySelectionProgressToSegments;

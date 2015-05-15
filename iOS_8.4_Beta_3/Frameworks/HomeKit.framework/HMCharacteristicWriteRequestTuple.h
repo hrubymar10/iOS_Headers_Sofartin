@@ -7,8 +7,8 @@
     id _value;
 }
 
-@property(assign,readonly) HMCharacteristic * characteristic;
-@property(assign,readonly) id value;
+@property (nonatomic, readonly) HMCharacteristic *characteristic;
+@property (nonatomic, readonly) id value;
 
 + (id)tupleWithCharacteristic:(id)arg1 value:(id)arg2;
 

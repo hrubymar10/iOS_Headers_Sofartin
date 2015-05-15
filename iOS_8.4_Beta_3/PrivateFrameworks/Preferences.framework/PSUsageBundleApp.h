@@ -10,11 +10,11 @@
     float _totalSize;
 }
 
-@property(assign,retain) NSString * bundleIdentifier;
-@property(assign,retain) NSArray * categories;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) float totalSize;
-@property(assign,readwrite) <PSStorageReporting> * usageBundleStorageReporter;
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic, retain) NSArray *categories;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) float totalSize;
+@property (nonatomic) <PSStorageReporting> *usageBundleStorageReporter;
 
 + (id)usageBundleAppForBundleWithIdentifier:(id)arg1 withTotalSize:(float)arg2;
 + (id)usageBundleAppForBundleWithIdentifier:(id)arg1 withTotalSize:(float)arg2 andCategories:(id)arg3;

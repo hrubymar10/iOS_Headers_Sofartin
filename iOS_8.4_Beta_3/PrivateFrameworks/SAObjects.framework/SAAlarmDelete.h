@@ -4,11 +4,11 @@
 
 @interface SAAlarmDelete : SADomainCommand <SAAlarmAlarmAction>
 
-@property(assign,copy) NSArray * alarmIds;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSArray *alarmIds;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)delete;
 + (id)deleteWithDictionary:(id)arg1 context:(id)arg2;

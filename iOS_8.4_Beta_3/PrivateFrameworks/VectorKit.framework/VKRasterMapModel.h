@@ -28,13 +28,13 @@
     struct Pos2DUVMesh { int (**x1)(); char *x2; int (**x3)(); struct ResourceManager {} *x4; struct RenderResource {} *x5; struct shared_ptr<ggl::VertexData> { struct VertexData {} *x_6_1_1; struct __shared_weak_count {} *x_6_1_2; } x6; struct shared_ptr<ggl::IndexData> { struct IndexData {} *x_7_1_1; struct __shared_weak_count {} *x_7_1_2; } x7; struct shared_ptr<ggl::Texture::Pos2DUVVertexData> { struct Pos2DUVVertexData {} *x_8_1_1; struct __shared_weak_count {} *x_8_1_2; } x8; } *_unitMesh;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long mapLayerPosition;
-@property(assign,readwrite) bool rasterViewer;
-@property(getter=isShowingNoDataPlaceholders,assign,readonly) bool showingNoDataPlaceholders;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long mapLayerPosition;
+@property (nonatomic) bool rasterViewer;
+@property (getter=isShowingNoDataPlaceholders, readonly) bool showingNoDataPlaceholders;
+@property (readonly) Class superclass;
 
 + (bool)reloadOnStylesheetChange;
 

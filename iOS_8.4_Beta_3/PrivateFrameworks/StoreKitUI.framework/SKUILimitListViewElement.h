@@ -4,7 +4,7 @@
 
 @interface SKUILimitListViewElement : SKUIViewElement
 
-@property(assign,copy) NSArray * limitViewElements;
+@property (nonatomic, readonly, copy) NSArray *limitViewElements;
 
 - (id)limitViewElements;
 

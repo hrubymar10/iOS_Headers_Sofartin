@@ -6,17 +6,17 @@
     id _session;
 }
 
-@property(getter=isAvailable,assign,readwrite) bool available;
-@property(getter=isBusy,assign,readwrite) bool busy;
-@property(assign,readonly) GKConnection * connection;
-@property(assign,readwrite) <GKSessionDelegate> * delegate;
-@property(assign,readwrite) double disconnectTimeout;
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) NSString * peerID;
-@property(assign,readwrite) <GKSessionPrivateDelegate> * privateDelegate;
-@property(assign,readonly) NSString * sessionID;
-@property(assign,readonly) int sessionMode;
-@property(assign,readwrite) bool wifiEnabled;
+@property (getter=isAvailable) bool available;
+@property (getter=isBusy) bool busy;
+@property (readonly) GKConnection *connection;
+@property <GKSessionDelegate> *delegate;
+@property double disconnectTimeout;
+@property (readonly) NSString *displayName;
+@property (readonly) NSString *peerID;
+@property <GKSessionPrivateDelegate> *privateDelegate;
+@property (readonly) NSString *sessionID;
+@property (readonly) int sessionMode;
+@property bool wifiEnabled;
 
 + (void)initialize;
 

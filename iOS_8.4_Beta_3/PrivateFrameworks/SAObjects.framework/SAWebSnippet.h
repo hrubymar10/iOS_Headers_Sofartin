@@ -4,7 +4,7 @@
 
 @interface SAWebSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * webSearch;
+@property (nonatomic, copy) NSArray *webSearch;
 
 + (id)snippet;
 + (id)snippetWithDictionary:(id)arg1 context:(id)arg2;

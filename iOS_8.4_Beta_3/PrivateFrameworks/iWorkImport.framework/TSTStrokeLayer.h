@@ -13,8 +13,8 @@
     } mStrokeRuns;
 }
 
-@property(assign,readwrite) unsigned short columnOrRowIndex;
-@property(assign,readonly) bool isEmpty;
+@property (nonatomic) unsigned short columnOrRowIndex;
+@property (nonatomic, readonly) bool isEmpty;
 
 + (id)strokeLayer;
 

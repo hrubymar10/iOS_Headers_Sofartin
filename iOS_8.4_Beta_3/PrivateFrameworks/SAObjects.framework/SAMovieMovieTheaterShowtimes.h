@@ -4,13 +4,13 @@
 
 @interface SAMovieMovieTheaterShowtimes : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * movieShowtimes;
-@property(assign,copy) NSArray * showtimes;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SALocalSearchBusiness2 * theater;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *movieShowtimes;
+@property (nonatomic, copy) NSArray *showtimes;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SALocalSearchBusiness2 *theater;
 
 + (id)movieTheaterShowtimes;
 + (id)movieTheaterShowtimesWithDictionary:(id)arg1 context:(id)arg2;

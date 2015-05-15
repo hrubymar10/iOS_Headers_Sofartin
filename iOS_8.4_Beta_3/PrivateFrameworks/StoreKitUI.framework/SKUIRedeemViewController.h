@@ -15,11 +15,11 @@
     SKUIRedeemStepViewController *_rootViewController;
 }
 
-@property(assign,readwrite) bool attempsAutomaticRedeem;
-@property(assign,readonly) long long category;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * initialCode;
-@property(assign,retain) NSOperationQueue * operationQueue;
+@property (nonatomic) bool attempsAutomaticRedeem;
+@property (nonatomic, readonly) long long category;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, copy) NSString *initialCode;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
 
 - (void).cxx_destruct;
 - (void)_attemptAutomaticRedeemWithMetadata:(id)arg1;

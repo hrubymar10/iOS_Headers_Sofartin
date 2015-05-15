@@ -9,7 +9,7 @@
     UIVisualEffectView *_vibrancyView;
 }
 
-@property(assign,readwrite) <SiriUIAcousticIDSpinnerDelegate> * delegate;
+@property (nonatomic) <SiriUIAcousticIDSpinnerDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)_imageForSpinner;

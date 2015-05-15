@@ -12,13 +12,13 @@
     PLStorageOperator *_storageOperator;
 }
 
-@property(assign,retain) PLSQLiteConnection * connection;
-@property(assign,readwrite) bool enabled;
-@property(assign,retain) NSDate * lastArchiveDate;
-@property(assign,retain) NSNumber * minDaysMainDB;
-@property(assign,retain) NSNumber * minDaysTotalLogDuration;
-@property(assign,retain) NSMutableArray * notificationBlocks;
-@property(assign,readwrite) PLStorageOperator * storageOperator;
+@property (retain) PLSQLiteConnection *connection;
+@property bool enabled;
+@property (retain) NSDate *lastArchiveDate;
+@property (nonatomic, retain) NSNumber *minDaysMainDB;
+@property (nonatomic, retain) NSNumber *minDaysTotalLogDuration;
+@property (retain) NSMutableArray *notificationBlocks;
+@property PLStorageOperator *storageOperator;
 
 + (id)archivePathFromMetadataPath:(id)arg1;
 + (id)archivePaths;

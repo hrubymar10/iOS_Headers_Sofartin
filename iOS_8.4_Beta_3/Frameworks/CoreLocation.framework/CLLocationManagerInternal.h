@@ -62,7 +62,7 @@
     bool fUpdatingVehicleSpeed;
 }
 
-@property(assign,readonly) NSMutableSet * rangedRegions;
+@property (nonatomic, readonly) NSMutableSet *rangedRegions;
 
 - (int)PausesLocationUpdatesAutomatically;
 - (void)cancelLocationRequest;

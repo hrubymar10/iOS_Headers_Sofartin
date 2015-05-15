@@ -16,18 +16,18 @@
     CKDPZone *_targetZone;
 }
 
-@property(assign,readwrite) long long assetQuotaUsage;
-@property(assign,retain) NSData * clientChangeToken;
-@property(assign,retain) NSData * currentServerContinuationToken;
-@property(assign,readwrite) int deviceCount;
-@property(assign,readwrite) bool hasAssetQuotaUsage;
-@property(assign,readonly) bool hasClientChangeToken;
-@property(assign,readonly) bool hasCurrentServerContinuationToken;
-@property(assign,readwrite) bool hasDeviceCount;
-@property(assign,readwrite) bool hasMetadataQuotaUsage;
-@property(assign,readonly) bool hasTargetZone;
-@property(assign,readwrite) long long metadataQuotaUsage;
-@property(assign,retain) CKDPZone * targetZone;
+@property (nonatomic) long long assetQuotaUsage;
+@property (nonatomic, retain) NSData *clientChangeToken;
+@property (nonatomic, retain) NSData *currentServerContinuationToken;
+@property (nonatomic) int deviceCount;
+@property (nonatomic) bool hasAssetQuotaUsage;
+@property (nonatomic, readonly) bool hasClientChangeToken;
+@property (nonatomic, readonly) bool hasCurrentServerContinuationToken;
+@property (nonatomic) bool hasDeviceCount;
+@property (nonatomic) bool hasMetadataQuotaUsage;
+@property (nonatomic, readonly) bool hasTargetZone;
+@property (nonatomic) long long metadataQuotaUsage;
+@property (nonatomic, retain) CKDPZone *targetZone;
 
 - (void).cxx_destruct;
 - (long long)assetQuotaUsage;

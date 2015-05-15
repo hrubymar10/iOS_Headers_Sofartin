@@ -30,21 +30,21 @@
     PLVideoView *_videoView;
 }
 
-@property(assign,readwrite) double accessoryViewsAlpha;
-@property(assign,readwrite) float borderAndAccessoriesAlpha;
-@property(getter=isBorderAndAccessoriesVisible,assign,readwrite) bool borderAndAccessoriesVisible;
-@property(assign,retain) UIView * bottomRightAccessoryView;
-@property(getter=isDimmed,assign,readwrite) bool dimmed;
-@property(assign,readwrite) bool drawsBorder;
-@property(assign,retain) UIView * leftAccessoryView;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } leftAccessoryViewOffset;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) double placeholderScale;
-@property(assign,readonly) struct CGSize { double x1; double x2; } placeholderSize;
-@property(getter=isShadowEnabled,assign,readwrite) bool shadowEnabled;
-@property(assign,readonly) bool showsPlaceholder;
-@property(assign,readwrite) double transitionProgress;
-@property(assign,retain) PLVideoView * videoView;
+@property (nonatomic) double accessoryViewsAlpha;
+@property (nonatomic) float borderAndAccessoriesAlpha;
+@property (getter=isBorderAndAccessoriesVisible, nonatomic) bool borderAndAccessoriesVisible;
+@property (nonatomic, retain) UIView *bottomRightAccessoryView;
+@property (getter=isDimmed, nonatomic) bool dimmed;
+@property (nonatomic) bool drawsBorder;
+@property (nonatomic, retain) UIView *leftAccessoryView;
+@property (nonatomic) struct CGSize { double x1; double x2; } leftAccessoryViewOffset;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) double placeholderScale;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } placeholderSize;
+@property (getter=isShadowEnabled, nonatomic) bool shadowEnabled;
+@property (nonatomic, readonly) bool showsPlaceholder;
+@property (nonatomic) double transitionProgress;
+@property (nonatomic, retain) PLVideoView *videoView;
 
 + (struct CGSize { double x1; double x2; })badgeOffset;
 + (void)initialize;

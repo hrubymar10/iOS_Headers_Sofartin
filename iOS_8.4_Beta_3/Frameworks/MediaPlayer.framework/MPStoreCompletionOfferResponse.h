@@ -8,7 +8,7 @@
     NSDictionary *_responseDictionary;
 }
 
-@property(assign,readonly) NSDictionary * responseDictionary;
+@property (nonatomic, readonly) NSDictionary *responseDictionary;
 
 - (void).cxx_destruct;
 - (id)initWithResponseDictionary:(id)arg1;

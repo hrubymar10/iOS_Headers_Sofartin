@@ -6,9 +6,9 @@
     AVFlashlightInternal *_internal;
 }
 
-@property(getter=isAvailable,assign,readonly) bool available;
-@property(assign,readonly) float flashlightLevel;
-@property(getter=isOverheated,assign,readonly) bool overheated;
+@property (getter=isAvailable, nonatomic, readonly) bool available;
+@property (nonatomic, readonly) float flashlightLevel;
+@property (getter=isOverheated, nonatomic, readonly) bool overheated;
 
 + (id)alloc;
 + (bool)hasFlashlight;

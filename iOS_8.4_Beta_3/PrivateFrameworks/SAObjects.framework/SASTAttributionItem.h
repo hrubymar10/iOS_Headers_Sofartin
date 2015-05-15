@@ -4,13 +4,13 @@
 
 @interface SASTAttributionItem : AceObject <SASTActionableTemplateItem>
 
-@property(assign,retain) <SASTTemplateAction> * action;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUINanoImageResource * imageResource;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
+@property (nonatomic, retain) <SASTTemplateAction> *action;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUINanoImageResource *imageResource;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
 
 + (id)attributionItem;
 + (id)attributionItemWithDictionary:(id)arg1 context:(id)arg2;

@@ -11,8 +11,8 @@
     NSString *_serviceName;
 }
 
-@property(assign,readwrite) bool isInitialSendSequenceNumber;
-@property(assign,copy) NSString * serviceName;
+@property (nonatomic) bool isInitialSendSequenceNumber;
+@property (nonatomic, readonly, copy) NSString *serviceName;
 
 - (void).cxx_destruct;
 - (bool)_isSequenceNumberInOrder:(unsigned long long)arg1;

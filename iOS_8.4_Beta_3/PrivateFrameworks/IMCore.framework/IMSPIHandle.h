@@ -8,9 +8,9 @@
     NSString *_identifier;
 }
 
-@property(assign,retain) NSString * address;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSString * identifier;
+@property (retain) NSString *address;
+@property (retain) NSString *displayName;
+@property (retain) NSString *identifier;
 
 - (id)address;
 - (void)dealloc;

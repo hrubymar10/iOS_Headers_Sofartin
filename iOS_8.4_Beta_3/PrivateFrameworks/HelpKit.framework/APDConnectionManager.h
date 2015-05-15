@@ -11,9 +11,9 @@
     bool _reachabilityInitialized;
 }
 
-@property(getter=connected,assign,readwrite) bool connected;
-@property(assign,readwrite) bool internetActive;
-@property(assign,readwrite) bool reachabilityInitialized;
+@property (getter=connected, nonatomic) bool connected;
+@property (nonatomic) bool internetActive;
+@property (nonatomic) bool reachabilityInitialized;
 
 - (void).cxx_destruct;
 - (bool)connected;

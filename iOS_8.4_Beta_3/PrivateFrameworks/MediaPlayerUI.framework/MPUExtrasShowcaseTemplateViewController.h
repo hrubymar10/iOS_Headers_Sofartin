@@ -13,20 +13,20 @@
     bool _supportsOneupMode;
 }
 
-@property(assign,retain) MPUExtrasZoomingImageTransitionController * activeZoomingImageInteractiveTransitionController;
-@property(assign,readwrite) unsigned long long autohighlightIndex;
-@property(assign,retain) NSArray * bannerButtonElements;
-@property(assign,retain) NSArray * carouselLockupElements;
-@property(assign,retain) MPUExtrasCarouselViewController * carouselViewController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPUExtrasImageBrowserViewController * imageBrowserViewController;
-@property(assign,readonly) unsigned long long indexOfVisibleItem;
-@property(assign,retain) NSDictionary * overriddenFullscreenImages;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool supportsOneupMode;
-@property(assign,readonly) IKShowcaseTemplate * templateElement;
+@property (nonatomic, retain) MPUExtrasZoomingImageTransitionController *activeZoomingImageInteractiveTransitionController;
+@property (nonatomic) unsigned long long autohighlightIndex;
+@property (nonatomic, retain) NSArray *bannerButtonElements;
+@property (nonatomic, retain) NSArray *carouselLockupElements;
+@property (nonatomic, retain) MPUExtrasCarouselViewController *carouselViewController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPUExtrasImageBrowserViewController *imageBrowserViewController;
+@property (nonatomic, readonly) unsigned long long indexOfVisibleItem;
+@property (nonatomic, retain) NSDictionary *overriddenFullscreenImages;
+@property (readonly) Class superclass;
+@property (nonatomic) bool supportsOneupMode;
+@property (nonatomic, readonly) IKShowcaseTemplate *templateElement;
 
 - (void).cxx_destruct;
 - (void)_loadTextElement:(id)arg1 textAttributes:(id)arg2 withCompletionHandler:(id)arg3;

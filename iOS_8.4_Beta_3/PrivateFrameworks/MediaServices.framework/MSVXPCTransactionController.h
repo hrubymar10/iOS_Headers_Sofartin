@@ -9,7 +9,7 @@
     NSObject<OS_dispatch_source> *_signalUSR2DispatchSource;
 }
 
-@property(getter=isInTransaction,assign,readonly) bool inTransaction;
+@property (getter=isInTransaction, nonatomic, readonly) bool inTransaction;
 
 + (id)sharedInstance;
 

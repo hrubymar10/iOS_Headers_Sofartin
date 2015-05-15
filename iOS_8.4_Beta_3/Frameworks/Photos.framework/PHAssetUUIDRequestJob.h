@@ -7,8 +7,8 @@
     NSString *_uuid;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * uuid;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic, copy) NSString *uuid;
 
 + (void)requestUUIDWithCustomUUID:(id)arg1 completionHandler:(id)arg2;
 

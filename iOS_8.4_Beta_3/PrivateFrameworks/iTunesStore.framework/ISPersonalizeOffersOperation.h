@@ -7,8 +7,8 @@
     SSPersonalizeOffersResponse *_response;
 }
 
-@property(assign,readonly) ISPersonalizeOffersRequest * personalizeOffersReqeust;
-@property(assign,readonly) SSPersonalizeOffersResponse * response;
+@property (readonly) ISPersonalizeOffersRequest *personalizeOffersReqeust;
+@property (readonly) SSPersonalizeOffersResponse *response;
 
 - (void)_addDictionaryToResponse:(id)arg1;
 - (id)_copyResponseForURL:(id)arg1 requestString:(id)arg2 error:(id*)arg3;

@@ -10,10 +10,10 @@
     NSString *_nextButtonTitle;
 }
 
-@property(setter=_setAlbumRecipients:,assign,retain) NSArray * _albumRecipients;
-@property(assign,readonly) NSArray * albumRecipients;
-@property(assign,readwrite) <PUCloudSharedCreateAlbumViewControllerDelegate> * delegate;
-@property(assign,retain) NSString * nextButtonTitle;
+@property (setter=_setAlbumRecipients:, nonatomic, retain) NSArray *_albumRecipients;
+@property (nonatomic, readonly) NSArray *albumRecipients;
+@property (nonatomic) <PUCloudSharedCreateAlbumViewControllerDelegate> *delegate;
+@property (nonatomic, retain) NSString *nextButtonTitle;
 
 - (void).cxx_destruct;
 - (id)_albumRecipients;

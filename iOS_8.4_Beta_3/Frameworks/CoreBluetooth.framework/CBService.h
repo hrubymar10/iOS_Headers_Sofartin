@@ -11,12 +11,12 @@
     NSNumber *_startHandle;
 }
 
-@property(assign,retain) NSArray * characteristics;
-@property(assign,readonly) NSNumber * endHandle;
-@property(assign,retain) NSArray * includedServices;
-@property(assign,readwrite) bool isPrimary;
-@property(assign,readonly) CBPeripheral * peripheral;
-@property(assign,readonly) NSNumber * startHandle;
+@property (retain) NSArray *characteristics;
+@property (nonatomic, readonly) NSNumber *endHandle;
+@property (retain) NSArray *includedServices;
+@property (nonatomic) bool isPrimary;
+@property (nonatomic, readonly) CBPeripheral *peripheral;
+@property (nonatomic, readonly) NSNumber *startHandle;
 
 - (id)characteristics;
 - (void)dealloc;

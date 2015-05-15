@@ -10,11 +10,11 @@
     NSString *_temperatureText;
 }
 
-@property(assign,readwrite) long long currentConditionsEnum;
-@property(assign,retain) NSString * currentConditionsText;
-@property(assign,retain) NSString * highLowText;
-@property(assign,retain) NSString * locationText;
-@property(assign,retain) NSString * temperatureText;
+@property (nonatomic) long long currentConditionsEnum;
+@property (nonatomic, retain) NSString *currentConditionsText;
+@property (nonatomic, retain) NSString *highLowText;
+@property (nonatomic, retain) NSString *locationText;
+@property (nonatomic, retain) NSString *temperatureText;
 
 + (bool)supportsSecureCoding;
 

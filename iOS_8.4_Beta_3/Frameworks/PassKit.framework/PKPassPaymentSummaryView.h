@@ -14,16 +14,16 @@
     NSString *_transactionAppLaunchToken;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPassPaymentSummaryViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) PKPaymentMessage * message;
-@property(assign,readonly) NSString * messageAppLaunchToken;
-@property(assign,readonly) PKPaymentPass * pass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) PKPaymentTransaction * transaction;
-@property(assign,readonly) NSString * transactionAppLaunchToken;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPassPaymentSummaryViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) PKPaymentMessage *message;
+@property (nonatomic, readonly) NSString *messageAppLaunchToken;
+@property (nonatomic, readonly) PKPaymentPass *pass;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) PKPaymentTransaction *transaction;
+@property (nonatomic, readonly) NSString *transactionAppLaunchToken;
 
 - (id)_amountTextFromTransaction:(id)arg1;
 - (void)_configureCell:(id)arg1 forMessage:(id)arg2;

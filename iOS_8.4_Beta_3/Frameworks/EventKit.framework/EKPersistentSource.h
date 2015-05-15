@@ -6,17 +6,17 @@
     EKSourceConstraints *_constraints;
 }
 
-@property(assign,readwrite) NSString * UUID;
-@property(assign,readonly) EKSourceConstraints * constraints;
-@property(assign,copy) NSNumber * defaultAlarmOffset;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,copy) NSString * externalID;
-@property(assign,copy) NSString * externalModificationTag;
-@property(assign,readwrite) bool onlyCreatorCanModify;
-@property(assign,readwrite) long long preferredEventPrivateValue;
-@property(assign,readwrite) int sourceType;
-@property(assign,readwrite) long long strictestEventPrivateValue;
-@property(assign,copy) NSString * title;
+@property (nonatomic) NSString *UUID;
+@property (nonatomic, readonly) EKSourceConstraints *constraints;
+@property (nonatomic, copy) NSNumber *defaultAlarmOffset;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic, copy) NSString *externalID;
+@property (nonatomic, copy) NSString *externalModificationTag;
+@property (nonatomic) bool onlyCreatorCanModify;
+@property (nonatomic) long long preferredEventPrivateValue;
+@property (nonatomic) int sourceType;
+@property (nonatomic) long long strictestEventPrivateValue;
+@property (nonatomic, copy) NSString *title;
 
 + (long long)_calEventPrivacyLevelToEKPrivacyLevel:(int)arg1;
 + (int)_ekPrivacyLevelToCalEventPrivacyLevel:(long long)arg1;

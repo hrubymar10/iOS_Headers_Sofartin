@@ -6,27 +6,27 @@
     void *_impl;
 }
 
-@property(assign,readwrite) float alertVolume;
-@property(getter=isBargeInDetectEnabled,assign,readwrite) bool bargeInDetectEnabled;
-@property(assign,retain) <Endpointer> * endpointerDelegate;
-@property(assign,readonly) unsigned long long lastRecordStartTime;
-@property(getter=isMeteringEnabled,assign,readwrite) bool meteringEnabled;
-@property(assign,readwrite) <AVVoiceControllerPlaybackDelegate> * playbackDelegate;
-@property(assign,readonly) NSDictionary * playbackSettings;
-@property(assign,readwrite) float playbackVolume;
-@property(getter=isPlaying,assign,readonly) bool playing;
-@property(assign,readwrite) <AVVoiceControllerRecordDelegate> * recordDelegate;
-@property(assign,readwrite) double recordEndWaitTime;
-@property(assign,readwrite) int recordEndpointMode;
-@property(assign,readwrite) double recordInterspeechWaitTime;
-@property(assign,copy) NSString * recordRoute;
-@property(assign,readonly) NSDictionary * recordSettings;
-@property(assign,readwrite) double recordStartWaitTime;
-@property(getter=isRecording,assign,readonly) bool recording;
-@property(getter=isStopOnBargeInEnabled,assign,readwrite) bool stopOnBargeInEnabled;
-@property(getter=isStopOnEndpointEnabled,assign,readwrite) bool stopOnEndpointEnabled;
-@property(getter=isSynchronousCallbackEnabled,assign,readwrite) bool synchronousCallbackEnabled;
-@property(assign,readonly) NSDictionary * voiceTriggerInfo;
+@property float alertVolume;
+@property (getter=isBargeInDetectEnabled) bool bargeInDetectEnabled;
+@property (retain) <Endpointer> *endpointerDelegate;
+@property (readonly) unsigned long long lastRecordStartTime;
+@property (getter=isMeteringEnabled) bool meteringEnabled;
+@property <AVVoiceControllerPlaybackDelegate> *playbackDelegate;
+@property (readonly) NSDictionary *playbackSettings;
+@property float playbackVolume;
+@property (getter=isPlaying, readonly) bool playing;
+@property <AVVoiceControllerRecordDelegate> *recordDelegate;
+@property double recordEndWaitTime;
+@property int recordEndpointMode;
+@property double recordInterspeechWaitTime;
+@property (readonly, copy) NSString *recordRoute;
+@property (readonly) NSDictionary *recordSettings;
+@property double recordStartWaitTime;
+@property (getter=isRecording, readonly) bool recording;
+@property (getter=isStopOnBargeInEnabled) bool stopOnBargeInEnabled;
+@property (getter=isStopOnEndpointEnabled) bool stopOnEndpointEnabled;
+@property (getter=isSynchronousCallbackEnabled) bool synchronousCallbackEnabled;
+@property (readonly) NSDictionary *voiceTriggerInfo;
 
 - (float)alertVolume;
 - (float)averagePowerForChannel:(unsigned long long)arg1;

@@ -7,8 +7,8 @@
     double mTargetWidth;
 }
 
-@property(assign,readonly) double targetHeight;
-@property(assign,readonly) double targetWidth;
+@property (nonatomic, readonly) double targetHeight;
+@property (nonatomic, readonly) double targetWidth;
 
 - (void)applyFixedHeight:(double)arg1;
 - (void)applyFixedWidth:(double)arg1;

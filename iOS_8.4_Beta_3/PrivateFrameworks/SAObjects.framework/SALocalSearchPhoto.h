@@ -4,16 +4,16 @@
 
 @interface SALocalSearchPhoto : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSURL * fullsize;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSURL * largeSize;
-@property(assign,copy) NSURL * maximumSize;
-@property(assign,retain) SAUIAppPunchOut * photoPunchOut;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSURL * thumbnail;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSURL *fullsize;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSURL *largeSize;
+@property (nonatomic, copy) NSURL *maximumSize;
+@property (nonatomic, retain) SAUIAppPunchOut *photoPunchOut;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSURL *thumbnail;
 
 + (id)photo;
 + (id)photoWithDictionary:(id)arg1 context:(id)arg2;

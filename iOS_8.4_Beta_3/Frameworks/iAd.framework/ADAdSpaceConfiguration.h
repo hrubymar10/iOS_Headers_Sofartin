@@ -12,13 +12,13 @@
     NSURL *_serverURL;
 }
 
-@property(assign,copy) NSString * advertisingSection;
-@property(assign,copy) NSString * authenticationUserName;
-@property(assign,copy) NSSet * context;
-@property(assign,readwrite) int creativeType;
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) long long options;
-@property(assign,copy) NSURL * serverURL;
+@property (nonatomic, copy) NSString *advertisingSection;
+@property (nonatomic, copy) NSString *authenticationUserName;
+@property (nonatomic, copy) NSSet *context;
+@property (nonatomic) int creativeType;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic) long long options;
+@property (nonatomic, copy) NSURL *serverURL;
 
 + (bool)supportsSecureCoding;
 

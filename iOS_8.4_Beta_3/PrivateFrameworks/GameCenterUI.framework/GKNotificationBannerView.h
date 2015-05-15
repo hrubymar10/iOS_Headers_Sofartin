@@ -12,13 +12,13 @@
     id _touchHandler;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,readwrite) double duration;
-@property(assign,readonly) UIImageView * imageView;
-@property(assign,readonly) GKLabel * messageLabel;
-@property(assign,readonly) double preferredWidthPad;
-@property(assign,readonly) GKLabel * titleLabel;
-@property(assign,copy) id touchHandler;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic) double duration;
+@property (nonatomic, readonly) UIImageView *imageView;
+@property (nonatomic, readonly) GKLabel *messageLabel;
+@property (nonatomic, readonly) double preferredWidthPad;
+@property (nonatomic, readonly) GKLabel *titleLabel;
+@property (nonatomic, copy) id touchHandler;
 
 + (bool)_preventsAppearanceProxyCustomization;
 

@@ -16,19 +16,19 @@
     unsigned int _sectionStartKind;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool inheritPreviousHeaderFooter;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) bool pageMasterEvenOddPagesDifferent;
-@property(assign,readwrite) bool pageMasterFirstPageDifferent;
-@property(assign,readwrite) bool pageMasterFirstPageHidesHeaderFooter;
-@property(assign,readwrite) TSWPStorage * parentStorage;
-@property(assign,readwrite) unsigned int sectionPageNumberKind;
-@property(assign,readwrite) unsigned int sectionPageNumberStart;
-@property(assign,readwrite) unsigned int sectionStartKind;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool inheritPreviousHeaderFooter;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) bool pageMasterEvenOddPagesDifferent;
+@property (nonatomic) bool pageMasterFirstPageDifferent;
+@property (nonatomic) bool pageMasterFirstPageHidesHeaderFooter;
+@property (nonatomic) TSWPStorage *parentStorage;
+@property (nonatomic) unsigned int sectionPageNumberKind;
+@property (nonatomic) unsigned int sectionPageNumberStart;
+@property (nonatomic) unsigned int sectionStartKind;
+@property (readonly) Class superclass;
 
 + (bool)needsObjectUUID;
 

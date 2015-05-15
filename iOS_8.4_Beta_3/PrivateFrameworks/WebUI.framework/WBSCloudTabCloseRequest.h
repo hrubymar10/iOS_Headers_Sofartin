@@ -11,13 +11,13 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSUUID * destinationDeviceUUID;
-@property(assign,readonly) NSDictionary * dictionaryRepresentation;
-@property(assign,readonly) NSDate * lastModified;
-@property(assign,readonly) NSUUID * requestUUID;
-@property(assign,readonly) NSUUID * sourceDeviceUUID;
-@property(assign,readonly) NSUUID * tabUUID;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, readonly) NSUUID *destinationDeviceUUID;
+@property (nonatomic, readonly) NSDictionary *dictionaryRepresentation;
+@property (nonatomic, readonly) NSDate *lastModified;
+@property (nonatomic, readonly) NSUUID *requestUUID;
+@property (nonatomic, readonly) NSUUID *sourceDeviceUUID;
+@property (nonatomic, readonly) NSUUID *tabUUID;
+@property (nonatomic, readonly) NSURL *url;
 
 + (id)_dictionaryWithURL:(id)arg1 tabUUID:(id)arg2 lastModified:(id)arg3 sourceDeviceUUID:(id)arg4 destinationDeviceUUID:(id)arg5;
 + (id)destinationDeviceUUIDInDictionary:(id)arg1;

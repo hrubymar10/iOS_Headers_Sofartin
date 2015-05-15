@@ -7,9 +7,9 @@
     long long _visibilityPriority;
 }
 
-@property(assign,readonly) SKUIViewElement * childElement;
-@property(assign,copy) NSString * targetIndexBarEntryID;
-@property(assign,readonly) long long visibilityPriority;
+@property (nonatomic, readonly) SKUIViewElement *childElement;
+@property (nonatomic, readonly, copy) NSString *targetIndexBarEntryID;
+@property (nonatomic, readonly) long long visibilityPriority;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

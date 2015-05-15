@@ -6,7 +6,7 @@
     AVSynchronizedLayerInternal *_syncLayer;
 }
 
-@property(assign,retain) AVPlayerItem * playerItem;
+@property (nonatomic, retain) AVPlayerItem *playerItem;
 
 + (id)synchronizedLayerWithPlayerItem:(id)arg1;
 

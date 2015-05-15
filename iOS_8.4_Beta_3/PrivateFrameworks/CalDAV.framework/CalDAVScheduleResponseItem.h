@@ -8,9 +8,9 @@
     NSMutableSet *_successfulICS;
 }
 
-@property(assign,retain) NSMutableSet * failedResponseItems;
-@property(assign,retain) NSMutableSet * responses;
-@property(assign,retain) NSMutableSet * successfulICS;
+@property (nonatomic, retain) NSMutableSet *failedResponseItems;
+@property (nonatomic, retain) NSMutableSet *responses;
+@property (nonatomic, retain) NSMutableSet *successfulICS;
 
 - (void)addNewTopLevelItem:(id)arg1;
 - (id)copyParseRules;

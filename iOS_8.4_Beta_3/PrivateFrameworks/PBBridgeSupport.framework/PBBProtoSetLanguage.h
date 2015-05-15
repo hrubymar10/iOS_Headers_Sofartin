@@ -6,7 +6,7 @@
     NSString *_language;
 }
 
-@property(assign,retain) NSString * language;
+@property (nonatomic, retain) NSString *language;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

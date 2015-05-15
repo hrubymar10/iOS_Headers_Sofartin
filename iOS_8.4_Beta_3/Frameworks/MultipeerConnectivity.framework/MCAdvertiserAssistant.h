@@ -18,23 +18,23 @@
     bool _wasAdvertising;
 }
 
-@property(assign,retain) MCNearbyServiceAdvertiser * advertiser;
-@property(assign,retain) UIAlertView * alertView;
-@property(assign,copy) NSString * appName;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MCAdvertiserAssistantDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSDictionary * discoveryInfo;
-@property(assign,retain) NSBundle * frameworkBundle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id invitationHandlerForPresentedAlert;
-@property(assign,retain) NSMutableArray * invitationsBuffer;
-@property(assign,readwrite) bool isAdvertising;
-@property(assign,copy) MCPeerID * myPeerID;
-@property(assign,copy) NSString * serviceType;
-@property(assign,retain) MCSession * session;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool wasAdvertising;
+@property (nonatomic, retain) MCNearbyServiceAdvertiser *advertiser;
+@property (nonatomic, retain) UIAlertView *alertView;
+@property (nonatomic, readonly, copy) NSString *appName;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MCAdvertiserAssistantDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSDictionary *discoveryInfo;
+@property (nonatomic, retain) NSBundle *frameworkBundle;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id invitationHandlerForPresentedAlert;
+@property (nonatomic, retain) NSMutableArray *invitationsBuffer;
+@property (nonatomic) bool isAdvertising;
+@property (nonatomic, copy) MCPeerID *myPeerID;
+@property (nonatomic, copy) NSString *serviceType;
+@property (nonatomic, retain) MCSession *session;
+@property (readonly) Class superclass;
+@property (nonatomic) bool wasAdvertising;
 
 - (id)advertiser;
 - (void)advertiser:(id)arg1 didReceiveInvitationFromPeer:(id)arg2 withContext:(id)arg3 invitationHandler:(id)arg4;

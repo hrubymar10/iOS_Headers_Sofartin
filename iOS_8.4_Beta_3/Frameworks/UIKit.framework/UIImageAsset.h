@@ -14,9 +14,9 @@
     UITraitCollection *_defaultTraitCollection;
 }
 
-@property(assign,readonly) _UIAssetManager * _assetManager;
-@property(assign,copy) NSString * assetName;
-@property(assign,copy) id creationBlock;
+@property (nonatomic, readonly) _UIAssetManager *_assetManager;
+@property (nonatomic, copy) NSString *assetName;
+@property (nonatomic, copy) id creationBlock;
 
 + (id)_assetGeneratingImagesWithDrawingBlock:(id)arg1;
 + (bool)supportsSecureCoding;

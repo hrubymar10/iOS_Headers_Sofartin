@@ -7,7 +7,7 @@
     UIDatePicker *_picker;
 }
 
-@property(assign,retain) NSDate * dateValue;
+@property (nonatomic, retain) NSDate *dateValue;
 
 - (void).cxx_destruct;
 - (void)_configureDatePicker;

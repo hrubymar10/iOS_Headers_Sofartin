@@ -8,9 +8,9 @@
     double __range;
 }
 
-@property(assign,readonly) double distance;
-@property(assign,readonly) NSMutableSet * nodes;
-@property(assign,readonly) double range;
+@property (nonatomic, readonly) double distance;
+@property (nonatomic, readonly) NSMutableSet *nodes;
+@property (nonatomic, readonly) double range;
 
 - (double)distance;
 - (id)initWithNodes:(id)arg1 inRange:(double)arg2;

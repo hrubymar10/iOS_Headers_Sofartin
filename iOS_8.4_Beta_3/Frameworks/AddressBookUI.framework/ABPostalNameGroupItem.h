@@ -10,11 +10,11 @@
     NSString *_value;
 }
 
-@property(assign,copy) CNMutableContact * contact;
-@property(assign,copy) NSString * placeholder;
-@property(assign,copy) NSString * property;
-@property(assign,readwrite) SEL setter;
-@property(assign,copy) NSString * value;
+@property (nonatomic, copy) CNMutableContact *contact;
+@property (nonatomic, copy) NSString *placeholder;
+@property (nonatomic, copy) NSString *property;
+@property (nonatomic) SEL setter;
+@property (nonatomic, copy) NSString *value;
 
 - (id)contact;
 - (id)placeholder;

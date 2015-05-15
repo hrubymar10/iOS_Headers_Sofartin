@@ -12,9 +12,9 @@
     <UIViewControllerTransitionCoordinator> *_transitioningToSizeCoordinator;
 }
 
-@property(assign,readwrite) UIPresentationController<_UISearchControllerPresenting> * adaptivePresentationController;
-@property(assign,readwrite) bool presentationWasAnimated;
-@property(assign,retain) <UIViewControllerTransitionCoordinator> * transitioningToSizeCoordinator;
+@property (nonatomic) UIPresentationController<_UISearchControllerPresenting> *adaptivePresentationController;
+@property (nonatomic) bool presentationWasAnimated;
+@property (nonatomic, retain) <UIViewControllerTransitionCoordinator> *transitioningToSizeCoordinator;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_containerFrame;
 - (bool)_currentTransitionIsRotating;

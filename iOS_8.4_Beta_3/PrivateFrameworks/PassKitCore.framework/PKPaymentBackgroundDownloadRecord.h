@@ -7,8 +7,8 @@
     long long _taskType;
 }
 
-@property(assign,readwrite) long long retryCount;
-@property(assign,readwrite) long long taskType;
+@property (nonatomic) long long retryCount;
+@property (nonatomic) long long taskType;
 
 + (bool)supportsSecureCoding;
 + (id)taskWithType:(long long)arg1;

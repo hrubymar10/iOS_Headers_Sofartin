@@ -6,13 +6,13 @@
     UICompletionTablePrivate *_private;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } scrollIndicatorInsets;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) id delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } scrollIndicatorInsets;
+@property (readonly) Class superclass;
 
 + (id)_cellFont;
 + (id)_shadowImage;

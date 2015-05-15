@@ -12,7 +12,7 @@
     } mRangeList;
 }
 
-@property(assign,readonly) unsigned long long count;
+@property (nonatomic, readonly) unsigned long long count;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

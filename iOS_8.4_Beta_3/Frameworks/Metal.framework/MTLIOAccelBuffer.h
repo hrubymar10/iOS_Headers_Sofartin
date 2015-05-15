@@ -12,8 +12,8 @@
     void *_pointer;
 }
 
-@property(assign,readonly) void* contents;
-@property(assign,readonly) unsigned long long length;
+@property (nonatomic, readonly) void*contents;
+@property (readonly) unsigned long long length;
 
 - (void*)contents;
 - (struct __CFArray { }*)copyAnnotations;

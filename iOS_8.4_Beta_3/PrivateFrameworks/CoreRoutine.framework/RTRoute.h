@@ -8,9 +8,9 @@
     NSData *_zilchPoints;
 }
 
-@property(assign,readonly) NSUUID * uuid;
-@property(assign,readonly) NSArray * waypoints;
-@property(assign,readonly) NSData * zilchPoints;
+@property (nonatomic, readonly) NSUUID *uuid;
+@property (nonatomic, readonly) NSArray *waypoints;
+@property (nonatomic, readonly) NSData *zilchPoints;
 
 + (bool)supportsSecureCoding;
 

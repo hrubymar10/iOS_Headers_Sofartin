@@ -7,8 +7,8 @@
     double _clipCornerRadius;
 }
 
-@property(assign,retain) UIColor * clipBackgroundColor;
-@property(assign,readwrite) double clipCornerRadius;
+@property (nonatomic, retain) UIColor *clipBackgroundColor;
+@property (nonatomic) double clipCornerRadius;
 
 - (void).cxx_destruct;
 - (id)clipBackgroundColor;

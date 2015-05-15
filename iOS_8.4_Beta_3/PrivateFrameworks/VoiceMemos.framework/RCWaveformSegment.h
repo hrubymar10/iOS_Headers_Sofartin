@@ -10,9 +10,9 @@
     } _timeRange;
 }
 
-@property(assign,readonly) const float* averagePowerLevels;
-@property(assign,readonly) long long averagePowerLevelsCount;
-@property(assign,readonly) struct { double x1; double x2; } timeRange;
+@property (nonatomic, readonly) const float*averagePowerLevels;
+@property (nonatomic, readonly) long long averagePowerLevelsCount;
+@property (nonatomic, readonly) struct { double x1; double x2; } timeRange;
 
 + (id)_discontinuityRepairedSegmentsByGrowingToFillGapsInSegments:(id)arg1;
 + (id)_mergedSegmentByFastMergingWithMergeableSegments:(id)arg1 mergedLevelsDuration:(double)arg2;

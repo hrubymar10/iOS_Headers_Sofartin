@@ -13,20 +13,20 @@
     long long _timeLimitStates;
 }
 
-@property(assign,copy) NSSet * applicationStates;
-@property(assign,readwrite) float batteryLevel;
-@property(getter=isCellularAllowed,assign,readonly) bool cellularAllowed;
-@property(assign,readwrite) long long cellularDataStates;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long downloadSizeLimit;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSSet * networkTypes;
-@property(assign,readwrite) long long powerStates;
-@property(assign,readwrite) long long registrationStates;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long timeLimitStates;
-@property(getter=isWiFiAllowed,assign,readonly) bool wiFiAllowed;
+@property (nonatomic, copy) NSSet *applicationStates;
+@property (nonatomic) float batteryLevel;
+@property (getter=isCellularAllowed, nonatomic, readonly) bool cellularAllowed;
+@property (nonatomic) long long cellularDataStates;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long downloadSizeLimit;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSSet *networkTypes;
+@property (nonatomic) long long powerStates;
+@property (nonatomic) long long registrationStates;
+@property (readonly) Class superclass;
+@property (nonatomic) long long timeLimitStates;
+@property (getter=isWiFiAllowed, nonatomic, readonly) bool wiFiAllowed;
 
 - (void)addApplicationState:(id)arg1;
 - (void)addNetworkType:(long long)arg1;

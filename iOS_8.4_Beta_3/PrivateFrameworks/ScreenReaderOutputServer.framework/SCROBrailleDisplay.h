@@ -74,15 +74,15 @@
     long long _statusSize;
 }
 
-@property(assign,readwrite) bool automaticBrailleTranslationEnabled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) bool delegateWantsDisplayCallback;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool inputAllowed;
-@property(assign,readwrite) int inputContractionMode;
-@property(assign,readwrite) bool inputEightDot;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool automaticBrailleTranslationEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) bool delegateWantsDisplayCallback;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool inputAllowed;
+@property (nonatomic) int inputContractionMode;
+@property (nonatomic) bool inputEightDot;
+@property (readonly) Class superclass;
 
 + (bool)brailleDriverClassIsValid:(Class)arg1;
 + (id)displayWithIOElement:(id)arg1 driverIdentifier:(id)arg2 delegate:(id)arg3;

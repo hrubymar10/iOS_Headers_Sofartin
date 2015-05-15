@@ -19,20 +19,20 @@
     double _timeTransform;
 }
 
-@property(assign,readwrite) int binarizerLimit;
-@property(assign,readwrite) bool createFeaturesForAllConcomps;
-@property(assign,readwrite) bool detectDiacritics;
-@property(assign,readwrite) bool enableBinarizerFiltering;
-@property(assign,readwrite) bool measureTime;
-@property(assign,readwrite) int minimumCharacterHeight;
-@property(assign,readwrite) bool returnSubFeatures;
-@property(assign,readwrite) struct { int x1; int x2; int x3; int x4; char *x5; char *x6; int x7; int x8; int x9; struct lineseg {} *x10; int x11; int x12; int x13; struct concomp {} *x14; int x15; int x16; int x17; int x18; struct sequence {} *x19; int x20; int x21; }* session;
-@property(assign,readwrite) long long thresholdingAlgorithm;
-@property(assign,readwrite) double timeBinarizer;
-@property(assign,readwrite) double timeConcomps;
-@property(assign,readwrite) double timeRecognizer;
-@property(assign,readwrite) double timeSequences;
-@property(assign,readwrite) double timeTransform;
+@property (nonatomic) int binarizerLimit;
+@property (nonatomic) bool createFeaturesForAllConcomps;
+@property (nonatomic) bool detectDiacritics;
+@property (nonatomic) bool enableBinarizerFiltering;
+@property (nonatomic) bool measureTime;
+@property (nonatomic) int minimumCharacterHeight;
+@property (nonatomic) bool returnSubFeatures;
+@property (nonatomic) struct { int x1; int x2; int x3; int x4; char *x5; char *x6; int x7; int x8; int x9; struct lineseg {} *x10; int x11; int x12; int x13; struct concomp {} *x14; int x15; int x16; int x17; int x18; struct sequence {} *x19; int x20; int x21; }*session;
+@property (nonatomic) long long thresholdingAlgorithm;
+@property (nonatomic) double timeBinarizer;
+@property (nonatomic) double timeConcomps;
+@property (nonatomic) double timeRecognizer;
+@property (nonatomic) double timeSequences;
+@property (nonatomic) double timeTransform;
 
 - (int)binarizerLimit;
 - (bool)createFeaturesForAllConcomps;

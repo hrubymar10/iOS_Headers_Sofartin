@@ -29,14 +29,14 @@
     bool mTrendLineInvalid;
 }
 
-@property(assign,readonly) float equationTextOpacity;
-@property(assign,readonly) NSString * rSquaredText;
-@property(assign,readonly) float rSquaredTextOpacity;
-@property(assign,readonly) bool showEquation;
-@property(assign,readonly) bool showRSquared;
-@property(assign,readonly) bool showTrendLine;
-@property(assign,readonly) bool showTrendLineLegendText;
-@property(assign,readonly) NSString * trendLineLegendText;
+@property (nonatomic, readonly) float equationTextOpacity;
+@property (nonatomic, readonly) NSString *rSquaredText;
+@property (nonatomic, readonly) float rSquaredTextOpacity;
+@property (nonatomic, readonly) bool showEquation;
+@property (nonatomic, readonly) bool showRSquared;
+@property (nonatomic, readonly) bool showTrendLine;
+@property (nonatomic, readonly) bool showTrendLineLegendText;
+@property (nonatomic, readonly) NSString *trendLineLegendText;
 
 - (void)clearParent;
 - (void)dealloc;

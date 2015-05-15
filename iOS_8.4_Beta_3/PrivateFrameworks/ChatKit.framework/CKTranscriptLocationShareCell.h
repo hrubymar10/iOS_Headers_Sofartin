@@ -8,9 +8,9 @@
     UILabel *_timeRemainingLabel;
 }
 
-@property(assign,readwrite) double offerTimeRemaining;
-@property(assign,readwrite) bool showOfferTimeRemaining;
-@property(assign,retain) UILabel * timeRemainingLabel;
+@property (nonatomic) double offerTimeRemaining;
+@property (nonatomic) bool showOfferTimeRemaining;
+@property (nonatomic, retain) UILabel *timeRemainingLabel;
 
 + (id)identifier;
 

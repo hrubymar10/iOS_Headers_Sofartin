@@ -9,10 +9,10 @@
     TSUIntToIntDictionary *mRemoteSeriesIndexForGridSeriesIndex;
 }
 
-@property(assign,readwrite) TSCHChartInfo * chartInfo;
-@property(assign,readonly) int direction;
-@property(assign,readonly) bool isPhantom;
-@property(assign,readwrite) <TSCHNotifyOnModify> * objectToNotify;
+@property (nonatomic) TSCHChartInfo *chartInfo;
+@property (nonatomic, readonly) int direction;
+@property (nonatomic, readonly) bool isPhantom;
+@property (nonatomic) <TSCHNotifyOnModify> *objectToNotify;
 
 + (id)propertiesThatInvalidateMediator;
 

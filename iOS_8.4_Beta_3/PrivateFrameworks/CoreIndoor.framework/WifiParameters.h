@@ -13,12 +13,12 @@
     float _scanPeriodSeconds;
 }
 
-@property(assign,readwrite) int batching;
-@property(assign,readwrite) bool hasBatching;
-@property(assign,readwrite) bool hasHistoryTimespanSeconds;
-@property(assign,readwrite) bool hasScanPeriodSeconds;
-@property(assign,readwrite) float historyTimespanSeconds;
-@property(assign,readwrite) float scanPeriodSeconds;
+@property (nonatomic) int batching;
+@property (nonatomic) bool hasBatching;
+@property (nonatomic) bool hasHistoryTimespanSeconds;
+@property (nonatomic) bool hasScanPeriodSeconds;
+@property (nonatomic) float historyTimespanSeconds;
+@property (nonatomic) float scanPeriodSeconds;
 
 - (int)batching;
 - (void)copyTo:(id)arg1;

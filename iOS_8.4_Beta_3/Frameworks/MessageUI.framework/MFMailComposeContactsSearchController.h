@@ -12,12 +12,12 @@
     unsigned long long _waitingOnSearchResultsCount;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MFMailComposeContactsSearchControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSNumber * taskID;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MFMailComposeContactsSearchControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSNumber *taskID;
 
 - (void)_cancelSearchAndNotify:(bool)arg1;
 - (void)_finishSearch;

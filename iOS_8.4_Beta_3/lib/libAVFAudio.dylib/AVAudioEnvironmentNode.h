@@ -4,18 +4,18 @@
 
 @interface AVAudioEnvironmentNode : AVAudioNode <AVAudioMixing>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) AVAudioEnvironmentDistanceAttenuationParameters * distanceAttenuationParameters;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct AVAudio3DAngularOrientation { float x1; float x2; float x3; } listenerAngularOrientation;
-@property(assign,readwrite) struct AVAudio3DPoint { float x1; float x2; float x3; } listenerPosition;
-@property(assign,readwrite) struct AVAudio3DVectorOrientation { struct AVAudio3DPoint { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; struct AVAudio3DPoint { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; } listenerVectorOrientation;
-@property(assign,readonly) unsigned long long nextAvailableInputBus;
-@property(assign,readwrite) float outputVolume;
-@property(assign,readonly) AVAudioEnvironmentReverbParameters * reverbParameters;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) float volume;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) AVAudioEnvironmentDistanceAttenuationParameters *distanceAttenuationParameters;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct AVAudio3DAngularOrientation { float x1; float x2; float x3; } listenerAngularOrientation;
+@property (nonatomic) struct AVAudio3DPoint { float x1; float x2; float x3; } listenerPosition;
+@property (nonatomic) struct AVAudio3DVectorOrientation { struct AVAudio3DPoint { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; struct AVAudio3DPoint { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; } listenerVectorOrientation;
+@property (nonatomic, readonly) unsigned long long nextAvailableInputBus;
+@property (nonatomic) float outputVolume;
+@property (nonatomic, readonly) AVAudioEnvironmentReverbParameters *reverbParameters;
+@property (readonly) Class superclass;
+@property (nonatomic) float volume;
 
 - (id)applicableRenderingAlgorithms;
 - (id)distanceAttenuationParameters;

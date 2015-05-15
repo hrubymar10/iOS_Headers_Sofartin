@@ -11,22 +11,22 @@
     long long _pinStyle;
 }
 
-@property(getter=isDynamicContainer,assign,readonly) bool dynamicContainer;
-@property(getter=isEnabled,assign,readonly) bool enabled;
-@property(assign,readonly) <SKUIEntityProviding> * entityProvider;
-@property(assign,readonly) NSSet * entityValueProperties;
-@property(assign,retain) <IKEntityValueProviding> * entityValueProvider;
-@property(assign,readonly) <SKUIEntityProviding> * explicitEntityProvider;
-@property(assign,retain) <IKEntityValueProviding> * explicitEntityValueProvider;
-@property(assign,readonly) NSArray * flattenedChildren;
-@property(assign,copy) NSString * indexBarEntryID;
-@property(assign,retain) NSString * itmlID;
-@property(assign,readonly) long long pageComponentType;
-@property(assign,readonly) NSSet * personalizationLibraryItems;
-@property(assign,readonly) long long pinStyle;
-@property(assign,readonly) bool rendersWithParallax;
-@property(assign,readonly) bool rendersWithPerspective;
-@property(assign,readonly) <NSCopying> * uniquingMapKey;
+@property (getter=isDynamicContainer, nonatomic, readonly) bool dynamicContainer;
+@property (getter=isEnabled, nonatomic, readonly) bool enabled;
+@property (nonatomic, readonly) <SKUIEntityProviding> *entityProvider;
+@property (nonatomic, readonly) NSSet *entityValueProperties;
+@property (nonatomic, retain) <IKEntityValueProviding> *entityValueProvider;
+@property (nonatomic, readonly) <SKUIEntityProviding> *explicitEntityProvider;
+@property (nonatomic, retain) <IKEntityValueProviding> *explicitEntityValueProvider;
+@property (nonatomic, readonly) NSArray *flattenedChildren;
+@property (nonatomic, readonly, copy) NSString *indexBarEntryID;
+@property (nonatomic, readonly, retain) NSString *itmlID;
+@property (nonatomic, readonly) long long pageComponentType;
+@property (nonatomic, readonly) NSSet *personalizationLibraryItems;
+@property (nonatomic, readonly) long long pinStyle;
+@property (nonatomic, readonly) bool rendersWithParallax;
+@property (nonatomic, readonly) bool rendersWithPerspective;
+@property (nonatomic, readonly) <NSCopying> *uniquingMapKey;
 
 - (void).cxx_destruct;
 - (void)_entityProviderDidInvalidateNotification:(id)arg1;

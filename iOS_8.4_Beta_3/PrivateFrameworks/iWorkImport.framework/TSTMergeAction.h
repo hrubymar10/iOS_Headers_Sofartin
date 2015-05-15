@@ -27,9 +27,9 @@
     } _uidRanges;
 }
 
-@property(assign,readonly) NSString * description;
-@property(assign,readonly) bool hasMergeFormulas;
-@property(assign,readonly) int type;
+@property (readonly) NSString *description;
+@property (nonatomic, readonly) bool hasMergeFormulas;
+@property (nonatomic, readonly) int type;
 
 + (id)stringForMergeType:(int)arg1;
 

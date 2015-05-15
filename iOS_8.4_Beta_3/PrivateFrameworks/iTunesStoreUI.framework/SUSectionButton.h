@@ -17,13 +17,13 @@
     long long _tag;
 }
 
-@property(assign,copy) NSString * accessibilityTitle;
-@property(assign,copy) NSString * displayTitle;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } imageInsets;
-@property(assign,copy) NSURL * imageURL;
-@property(assign,readwrite) float imageURLScale;
-@property(assign,readwrite) long long tag;
+@property (nonatomic, copy) NSString *accessibilityTitle;
+@property (nonatomic, copy) NSString *displayTitle;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } imageInsets;
+@property (nonatomic, copy) NSURL *imageURL;
+@property (nonatomic) float imageURLScale;
+@property (nonatomic) long long tag;
 
 - (id)accessibilityTitle;
 - (void)applyToBarButtonItem:(id)arg1;

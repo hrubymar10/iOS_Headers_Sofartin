@@ -4,7 +4,7 @@
 
 @interface SUScriptDownloadsViewController : SUScriptViewController
 
-@property(assign,retain) id buttons;
+@property (retain) id buttons;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

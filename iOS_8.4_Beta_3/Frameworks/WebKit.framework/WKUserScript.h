@@ -10,9 +10,9 @@
     } _source;
 }
 
-@property(getter=isForMainFrameOnly,assign,readonly) bool forMainFrameOnly;
-@property(assign,readonly) long long injectionTime;
-@property(assign,copy) NSString * source;
+@property (getter=isForMainFrameOnly, nonatomic, readonly) bool forMainFrameOnly;
+@property (nonatomic, readonly) long long injectionTime;
+@property (nonatomic, readonly, copy) NSString *source;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

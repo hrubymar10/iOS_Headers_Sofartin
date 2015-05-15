@@ -10,11 +10,11 @@
     NSString *_type;
 }
 
-@property(assign,copy) NSString * bundleId;
-@property(assign,copy) NSDate * date;
-@property(assign,copy) NSDictionary * payload;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * type;
+@property (copy) NSString *bundleId;
+@property (copy) NSDate *date;
+@property (copy) NSDictionary *payload;
+@property (copy) NSString *title;
+@property (copy) NSString *type;
 
 + (id)createFromUserActivity:(id)arg1;
 + (bool)supportsSecureCoding;

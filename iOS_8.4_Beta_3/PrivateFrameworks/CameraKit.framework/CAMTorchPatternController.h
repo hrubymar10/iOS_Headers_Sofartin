@@ -11,12 +11,12 @@
     double _stepInterval;
 }
 
-@property(assign,readonly) CAMTorchPattern * _currentPattern;
-@property(assign,readonly) CADisplayLink * _displayLink;
-@property(setter=_setPerforming:,assign,readwrite) bool _performing;
-@property(assign,readonly) double _startTime;
-@property(assign,retain) AVCaptureDevice * captureDevice;
-@property(assign,readwrite) double stepInterval;
+@property (nonatomic, readonly) CAMTorchPattern *_currentPattern;
+@property (nonatomic, readonly) CADisplayLink *_displayLink;
+@property (setter=_setPerforming:, nonatomic) bool _performing;
+@property (nonatomic, readonly) double _startTime;
+@property (nonatomic, retain) AVCaptureDevice *captureDevice;
+@property (nonatomic) double stepInterval;
 
 - (void).cxx_destruct;
 - (void)_applyTorchLevel:(float)arg1;

@@ -11,16 +11,16 @@
     id _purgeable;
 }
 
-@property(assign,copy) id cancel;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSXPCListenerEndpoint * endpoint;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id notify;
-@property(assign,copy) id periodic;
-@property(assign,copy) id purge;
-@property(assign,copy) id purgeable;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id cancel;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSXPCListenerEndpoint *endpoint;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id notify;
+@property (nonatomic, copy) id periodic;
+@property (nonatomic, copy) id purge;
+@property (nonatomic, copy) id purgeable;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)cancel;

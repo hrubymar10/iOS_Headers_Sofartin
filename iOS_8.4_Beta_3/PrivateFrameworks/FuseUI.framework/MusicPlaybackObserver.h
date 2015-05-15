@@ -8,8 +8,8 @@
     MPAVController *_player;
 }
 
-@property(assign,readonly) MusicLocalPlaybackEventDataSource * localPlaybackEventDataSource;
-@property(assign,readonly) MPAVController * player;
+@property (nonatomic, readonly) MusicLocalPlaybackEventDataSource *localPlaybackEventDataSource;
+@property (nonatomic, readonly) MPAVController *player;
 
 + (id)playbackObserverForPlayer:(id)arg1;
 

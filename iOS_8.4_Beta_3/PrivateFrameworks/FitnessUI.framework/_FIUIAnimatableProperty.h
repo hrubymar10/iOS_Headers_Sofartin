@@ -11,9 +11,9 @@
     id _startValue;
 }
 
-@property(assign,retain) id currentValue;
-@property(assign,retain) id endValue;
-@property(assign,retain) id startValue;
+@property (nonatomic, retain) id currentValue;
+@property (nonatomic, retain) id endValue;
+@property (nonatomic, retain) id startValue;
 
 - (void).cxx_destruct;
 - (void)addPropertyAnimation:(id)arg1;

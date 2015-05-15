@@ -8,9 +8,9 @@
     long long _startOffset;
 }
 
-@property(assign,readwrite) long long endOffset;
-@property(assign,retain) DOMNode * node;
-@property(assign,readwrite) long long startOffset;
+@property (nonatomic) long long endOffset;
+@property (nonatomic, retain) DOMNode *node;
+@property (nonatomic) long long startOffset;
 
 + (id)rangeWithDOMRange:(id)arg1;
 

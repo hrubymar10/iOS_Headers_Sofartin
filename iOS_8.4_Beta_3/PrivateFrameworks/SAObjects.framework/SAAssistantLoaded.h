@@ -4,10 +4,10 @@
 
 @interface SAAssistantLoaded : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * dataAnchor;
-@property(assign,copy) NSNumber * requestSync;
-@property(assign,copy) NSArray * syncAnchors;
-@property(assign,copy) NSString * version;
+@property (nonatomic, copy) NSString *dataAnchor;
+@property (nonatomic, copy) NSNumber *requestSync;
+@property (nonatomic, copy) NSArray *syncAnchors;
+@property (nonatomic, copy) NSString *version;
 
 + (id)assistantLoaded;
 + (id)assistantLoadedWithDictionary:(id)arg1 context:(id)arg2;

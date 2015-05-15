@@ -8,12 +8,12 @@
     NSString *_osVersion;
 }
 
-@property(assign,retain) NSString * hardwareIdentifier;
-@property(assign,readonly) bool hasHardwareIdentifier;
-@property(assign,readonly) bool hasOsBuild;
-@property(assign,readonly) bool hasOsVersion;
-@property(assign,retain) NSString * osBuild;
-@property(assign,retain) NSString * osVersion;
+@property (nonatomic, retain) NSString *hardwareIdentifier;
+@property (nonatomic, readonly) bool hasHardwareIdentifier;
+@property (nonatomic, readonly) bool hasOsBuild;
+@property (nonatomic, readonly) bool hasOsVersion;
+@property (nonatomic, retain) NSString *osBuild;
+@property (nonatomic, retain) NSString *osVersion;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

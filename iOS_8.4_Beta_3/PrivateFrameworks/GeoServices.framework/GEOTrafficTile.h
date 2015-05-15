@@ -8,10 +8,10 @@
     NSData *_vertices;
 }
 
-@property(assign,readonly) bool hasVertices;
-@property(assign,retain) NSMutableArray * trafficIncidents;
-@property(assign,retain) NSMutableArray * trafficSegments;
-@property(assign,retain) NSData * vertices;
+@property (nonatomic, readonly) bool hasVertices;
+@property (nonatomic, retain) NSMutableArray *trafficIncidents;
+@property (nonatomic, retain) NSMutableArray *trafficSegments;
+@property (nonatomic, retain) NSData *vertices;
 
 - (void)addTrafficIncident:(id)arg1;
 - (void)addTrafficSegment:(id)arg1;

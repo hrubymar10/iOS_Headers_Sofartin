@@ -6,17 +6,17 @@
     AVAssetResourceLoadingRequestInternal *_loadingRequest;
 }
 
-@property(getter=isCancelled,assign,readonly) bool cancelled;
-@property(assign,readonly) AVAssetResourceLoadingContentInformationRequest * contentInformationRequest;
-@property(assign,readonly) AVAssetResourceLoadingDataRequest * dataRequest;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isFinished,assign,readonly) bool finished;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURLRequest * redirect;
-@property(assign,readonly) NSURLRequest * request;
-@property(assign,copy) NSURLResponse * response;
-@property(assign,readonly) Class superclass;
+@property (getter=isCancelled, nonatomic, readonly) bool cancelled;
+@property (nonatomic, readonly) AVAssetResourceLoadingContentInformationRequest *contentInformationRequest;
+@property (nonatomic, readonly) AVAssetResourceLoadingDataRequest *dataRequest;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isFinished, nonatomic, readonly) bool finished;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURLRequest *redirect;
+@property (nonatomic, readonly) NSURLRequest *request;
+@property (nonatomic, copy) NSURLResponse *response;
+@property (readonly) Class superclass;
 
 + (SEL)_selectorForInformingDelegateOfCancellationByFig;
 

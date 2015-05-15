@@ -4,7 +4,7 @@
 
 @interface SAWeatherHourlyForecast : SAWeatherForecast
 
-@property(assign,copy) NSNumber * temperature;
+@property (nonatomic, copy) NSNumber *temperature;
 
 + (id)hourlyForecast;
 + (id)hourlyForecastWithDictionary:(id)arg1 context:(id)arg2;

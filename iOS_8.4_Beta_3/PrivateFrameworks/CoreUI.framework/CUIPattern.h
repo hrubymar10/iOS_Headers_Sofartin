@@ -8,7 +8,7 @@
     struct CGImage { } *_patternImage;
 }
 
-@property(assign,readwrite) double alpha;
+@property (nonatomic) double alpha;
 
 - (struct CGPattern { }*)_newPattern;
 - (double)alpha;

@@ -7,9 +7,9 @@
     NSString *_taskIdentifier;
 }
 
-@property(assign,retain) <CPLEngineSyncEmergencyTaskDelegate> * delegate;
-@property(assign,retain) CPLEngineLibrary * engineLibrary;
-@property(assign,readonly) unsigned long long priority;
+@property (retain) <CPLEngineSyncEmergencyTaskDelegate> *delegate;
+@property (nonatomic, retain) CPLEngineLibrary *engineLibrary;
+@property (nonatomic, readonly) unsigned long long priority;
 
 + (bool)shouldCoalesceTasks;
 + (id)taskIdentifier;

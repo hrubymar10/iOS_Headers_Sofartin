@@ -9,7 +9,7 @@
     MPUAVPlayer *_player;
 }
 
-@property(assign,readwrite) bool hidesViews;
+@property (nonatomic) bool hidesViews;
 
 - (void).cxx_destruct;
 - (void)configureCell:(id)arg1 forIndexPath:(id)arg2;

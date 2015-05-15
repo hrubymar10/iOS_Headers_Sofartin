@@ -6,7 +6,7 @@
     SKUILockupSwooshCellLayout *_layout;
 }
 
-@property(assign,readonly) SKUILockupSwooshCellLayout * layout;
+@property (nonatomic, readonly) SKUILockupSwooshCellLayout *layout;
 
 - (void).cxx_destruct;
 - (void)configureForItem:(id)arg1 clientContext:(id)arg2;

@@ -49,16 +49,16 @@
     NSUserDefaults *_userDefaults;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIMoveEvent * moveEvent;
-@property(getter=_playsSoundOnFocusChange,setter=_setPlaysSoundOnFocusChange:,assign,readwrite) bool playsSoundOnFocusChange;
-@property(getter=_sendsFocusDirection,setter=_setSendsFocusDirection:,assign,readwrite) bool sendsFocusDirection;
-@property(assign,readwrite) bool shouldShowDebugOverlays;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) UIWindow * targetWindow;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIMoveEvent *moveEvent;
+@property (getter=_playsSoundOnFocusChange, setter=_setPlaysSoundOnFocusChange:, nonatomic) bool playsSoundOnFocusChange;
+@property (getter=_sendsFocusDirection, setter=_setSendsFocusDirection:, nonatomic) bool sendsFocusDirection;
+@property (nonatomic) bool shouldShowDebugOverlays;
+@property (readonly) Class superclass;
+@property (nonatomic) UIWindow *targetWindow;
 
 + (id)defaultTuningValues;
 + (void)initialize;

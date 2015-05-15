@@ -8,9 +8,9 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,retain) NSString * path;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic, retain) NSString *path;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (id)URL;

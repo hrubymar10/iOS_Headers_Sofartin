@@ -4,7 +4,7 @@
 
 @interface SAClockAdd : SADomainCommand
 
-@property(assign,retain) SAClockObject * clockToAdd;
+@property (nonatomic, retain) SAClockObject *clockToAdd;
 
 + (id)add;
 + (id)addWithDictionary:(id)arg1 context:(id)arg2;

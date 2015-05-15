@@ -7,8 +7,8 @@
     CKRecordZoneID *_zoneID;
 }
 
-@property(assign,copy) NSString * shareName;
-@property(assign,copy) CKRecordZoneID * zoneID;
+@property (nonatomic, copy) NSString *shareName;
+@property (nonatomic, copy) CKRecordZoneID *zoneID;
 
 + (bool)supportsSecureCoding;
 

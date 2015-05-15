@@ -10,15 +10,15 @@
     NSMutableArray *_stackItems;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUINavigationDocumentDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSArray * documentStackItems;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UINavigationController * navigationController;
-@property(assign,retain) UINavigationController * overrideNavigationController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUINavigationDocumentDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSArray *documentStackItems;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UINavigationController *navigationController;
+@property (nonatomic, retain) UINavigationController *overrideNavigationController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_activeNavigationController;

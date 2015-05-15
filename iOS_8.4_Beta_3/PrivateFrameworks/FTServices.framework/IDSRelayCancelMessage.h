@@ -14,15 +14,15 @@
     NSNumber *_selfRelayPort;
 }
 
-@property(assign,copy) NSString * peerID;
-@property(assign,copy) NSData * peerPushToken;
-@property(assign,copy) NSData * peerRelayIP;
-@property(assign,copy) NSNumber * peerRelayPort;
-@property(assign,copy) NSNumber * reason;
-@property(assign,copy) NSData * relayConnectionID;
-@property(assign,copy) NSNumber * relayType;
-@property(assign,copy) NSData * selfRelayIP;
-@property(assign,copy) NSNumber * selfRelayPort;
+@property (copy) NSString *peerID;
+@property (copy) NSData *peerPushToken;
+@property (copy) NSData *peerRelayIP;
+@property (copy) NSNumber *peerRelayPort;
+@property (copy) NSNumber *reason;
+@property (copy) NSData *relayConnectionID;
+@property (copy) NSNumber *relayType;
+@property (copy) NSData *selfRelayIP;
+@property (copy) NSNumber *selfRelayPort;
 
 - (id)bagKey;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

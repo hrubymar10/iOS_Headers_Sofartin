@@ -7,7 +7,7 @@
     long long _manifestType;
 }
 
-@property(assign,readonly) long long manifestType;
+@property (readonly) long long manifestType;
 
 - (void)_removeItemsWithAssetPaths:(id)arg1 completionBlock:(id)arg2;
 - (void)dealloc;

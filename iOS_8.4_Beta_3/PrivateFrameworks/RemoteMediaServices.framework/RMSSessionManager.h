@@ -8,7 +8,7 @@
     NSMutableDictionary *_sessions;
 }
 
-@property(assign,readwrite) <RMSSessionManagerDelegate> * delegate;
+@property (nonatomic) <RMSSessionManagerDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_scheduleSessionExpirationWithIdentifier:(int)arg1 timeout:(int)arg2;

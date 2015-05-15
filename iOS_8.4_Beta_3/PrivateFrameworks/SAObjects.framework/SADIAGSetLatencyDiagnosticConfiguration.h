@@ -4,7 +4,7 @@
 
 @interface SADIAGSetLatencyDiagnosticConfiguration : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * diagnosticActions;
+@property (nonatomic, copy) NSArray *diagnosticActions;
 
 + (id)setLatencyDiagnosticConfiguration;
 + (id)setLatencyDiagnosticConfigurationWithDictionary:(id)arg1 context:(id)arg2;

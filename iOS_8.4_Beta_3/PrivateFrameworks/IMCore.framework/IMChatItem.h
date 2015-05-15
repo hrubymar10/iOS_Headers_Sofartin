@@ -6,7 +6,7 @@
     IMItem *_item;
 }
 
-@property(assign,readonly) bool canDelete;
+@property (nonatomic, readonly) bool canDelete;
 
 - (id)_initWithItem:(id)arg1;
 - (id)_item;

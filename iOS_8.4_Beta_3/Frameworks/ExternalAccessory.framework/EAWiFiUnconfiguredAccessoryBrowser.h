@@ -10,10 +10,10 @@
     NSSet *_unconfiguredAccessories;
 }
 
-@property(assign,retain) NSPredicate * accessorySearchPredicate;
-@property(assign,readwrite) <EAWiFiUnconfiguredAccessoryBrowserDelegate> * delegate;
-@property(assign,retain) NSObject<OS_dispatch_queue> * delegateQueue;
-@property(assign,copy) NSSet * unconfiguredAccessories;
+@property (retain) NSPredicate *accessorySearchPredicate;
+@property (nonatomic) <EAWiFiUnconfiguredAccessoryBrowserDelegate> *delegate;
+@property (retain) NSObject<OS_dispatch_queue> *delegateQueue;
+@property (readonly, copy) NSSet *unconfiguredAccessories;
 
 - (void).cxx_destruct;
 - (void)_handleBrowserDidUpdateState:(id)arg1;

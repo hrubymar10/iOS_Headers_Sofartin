@@ -13,16 +13,16 @@
     GEORPUserSearchInput *_startWaypoint;
 }
 
-@property(assign,retain) NSData * directionsResponseId;
-@property(assign,retain) GEORPUserSearchInput * endWaypoint;
-@property(assign,readonly) bool hasDirectionsResponseId;
-@property(assign,readonly) bool hasEndWaypoint;
-@property(assign,readonly) bool hasOverviewScreenshotImageData;
-@property(assign,readwrite) bool hasProblematicStepIndex;
-@property(assign,readonly) bool hasStartWaypoint;
-@property(assign,retain) NSData * overviewScreenshotImageData;
-@property(assign,readwrite) unsigned int problematicStepIndex;
-@property(assign,retain) GEORPUserSearchInput * startWaypoint;
+@property (nonatomic, retain) NSData *directionsResponseId;
+@property (nonatomic, retain) GEORPUserSearchInput *endWaypoint;
+@property (nonatomic, readonly) bool hasDirectionsResponseId;
+@property (nonatomic, readonly) bool hasEndWaypoint;
+@property (nonatomic, readonly) bool hasOverviewScreenshotImageData;
+@property (nonatomic) bool hasProblematicStepIndex;
+@property (nonatomic, readonly) bool hasStartWaypoint;
+@property (nonatomic, retain) NSData *overviewScreenshotImageData;
+@property (nonatomic) unsigned int problematicStepIndex;
+@property (nonatomic, retain) GEORPUserSearchInput *startWaypoint;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

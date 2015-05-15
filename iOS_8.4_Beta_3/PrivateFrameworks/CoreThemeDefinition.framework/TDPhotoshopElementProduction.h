@@ -12,7 +12,7 @@
     CUIPSDImageRef *psdImageRef;
 }
 
-@property(assign,retain) TDPhotoshopAsset * asset;
+@property (nonatomic, retain) TDPhotoshopAsset *asset;
 
 + (unsigned int)sliceColumnsPerRendition:(long long)arg1;
 + (unsigned int)sliceRowsPerRendition:(long long)arg1;

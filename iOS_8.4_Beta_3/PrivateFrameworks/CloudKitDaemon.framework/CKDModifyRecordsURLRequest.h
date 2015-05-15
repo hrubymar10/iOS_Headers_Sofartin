@@ -16,17 +16,17 @@
     bool _sendAllFields;
 }
 
-@property(assign,readwrite) bool atomic;
-@property(assign,retain) NSData * clientChangeTokenData;
-@property(assign,retain) NSDictionary * conflictLosersToResolveByRecordID;
-@property(assign,readwrite) bool oplock;
-@property(assign,retain) NSMutableDictionary * recordByRequestID;
-@property(assign,retain) NSMutableDictionary * recordIDByRequestID;
-@property(assign,retain) NSArray * recordIDsToDelete;
-@property(assign,retain) NSDictionary * recordIDsToDeleteToEtags;
-@property(assign,copy) id recordPostedBlock;
-@property(assign,retain) NSArray * records;
-@property(assign,readwrite) bool sendAllFields;
+@property (nonatomic) bool atomic;
+@property (nonatomic, retain) NSData *clientChangeTokenData;
+@property (nonatomic, retain) NSDictionary *conflictLosersToResolveByRecordID;
+@property (nonatomic) bool oplock;
+@property (nonatomic, retain) NSMutableDictionary *recordByRequestID;
+@property (nonatomic, retain) NSMutableDictionary *recordIDByRequestID;
+@property (nonatomic, retain) NSArray *recordIDsToDelete;
+@property (nonatomic, retain) NSDictionary *recordIDsToDeleteToEtags;
+@property (nonatomic, copy) id recordPostedBlock;
+@property (nonatomic, retain) NSArray *records;
+@property (nonatomic) bool sendAllFields;
 
 - (void).cxx_destruct;
 - (bool)atomic;

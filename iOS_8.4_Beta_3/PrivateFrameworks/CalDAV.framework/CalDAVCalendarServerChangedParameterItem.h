@@ -7,8 +7,8 @@
     NSString *_typeAttribute;
 }
 
-@property(assign,retain) NSString * nameAttribute;
-@property(assign,retain) NSString * typeAttribute;
+@property (nonatomic, retain) NSString *nameAttribute;
+@property (nonatomic, retain) NSString *typeAttribute;
 
 - (void)dealloc;
 - (id)initWithNameSpace:(id)arg1 andName:(id)arg2;

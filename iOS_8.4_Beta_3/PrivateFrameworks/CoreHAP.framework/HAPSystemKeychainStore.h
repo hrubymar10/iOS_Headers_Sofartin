@@ -7,12 +7,12 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,retain) NSString * activeControllerIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSString *activeControllerIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) Class superclass;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)systemStore;

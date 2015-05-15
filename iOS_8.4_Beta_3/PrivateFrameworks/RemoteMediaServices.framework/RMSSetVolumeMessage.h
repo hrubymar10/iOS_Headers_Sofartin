@@ -11,10 +11,10 @@
     float _volume;
 }
 
-@property(assign,readwrite) bool hasSessionIdentifier;
-@property(assign,readwrite) bool hasVolume;
-@property(assign,readwrite) int sessionIdentifier;
-@property(assign,readwrite) float volume;
+@property (nonatomic) bool hasSessionIdentifier;
+@property (nonatomic) bool hasVolume;
+@property (nonatomic) int sessionIdentifier;
+@property (nonatomic) float volume;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

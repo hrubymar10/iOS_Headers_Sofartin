@@ -4,17 +4,17 @@
 
 @interface SAUIImageResource : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSData * imageData;
-@property(assign,readwrite) double pixelHeight;
-@property(assign,readwrite) double pixelWidth;
-@property(assign,readwrite) double pointHeight;
-@property(assign,readwrite) double pointWidth;
-@property(assign,copy) NSURL * resourceUrl;
-@property(assign,readwrite) double scaleFactor;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSData *imageData;
+@property (nonatomic) double pixelHeight;
+@property (nonatomic) double pixelWidth;
+@property (nonatomic) double pointHeight;
+@property (nonatomic) double pointWidth;
+@property (nonatomic, copy) NSURL *resourceUrl;
+@property (nonatomic) double scaleFactor;
+@property (readonly) Class superclass;
 
 + (id)imageResource;
 + (id)imageResourceWithDictionary:(id)arg1 context:(id)arg2;

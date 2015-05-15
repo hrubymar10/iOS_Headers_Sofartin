@@ -7,8 +7,8 @@
     long long _provenance;
 }
 
-@property(assign,readonly) HDCodableObjectCollection * collection;
-@property(assign,readonly) long long provenance;
+@property (nonatomic, readonly) HDCodableObjectCollection *collection;
+@property (nonatomic, readonly) long long provenance;
 
 + (void)applyEntries:(id)arg1 withDaemon:(id)arg2;
 + (long long)behavior;

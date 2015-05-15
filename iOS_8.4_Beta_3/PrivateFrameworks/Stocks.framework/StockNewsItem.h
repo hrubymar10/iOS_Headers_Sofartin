@@ -11,12 +11,12 @@
     NSString *_summary;
 }
 
-@property(assign,retain) NSDate * date;
-@property(assign,retain) NSString * headline;
-@property(assign,retain) NSURL * link;
-@property(assign,retain) NSString * localizedDateString;
-@property(assign,retain) NSString * source;
-@property(assign,retain) NSString * summary;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, retain) NSString *headline;
+@property (nonatomic, retain) NSURL *link;
+@property (nonatomic, readonly, retain) NSString *localizedDateString;
+@property (nonatomic, retain) NSString *source;
+@property (nonatomic, retain) NSString *summary;
 
 + (id)localizedStringForDate:(id)arg1;
 

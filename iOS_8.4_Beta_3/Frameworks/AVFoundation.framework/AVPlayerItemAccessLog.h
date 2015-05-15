@@ -6,8 +6,8 @@
     AVPlayerItemAccessLogInternal *_playerItemAccessLog;
 }
 
-@property(assign,readonly) NSArray * events;
-@property(assign,readonly) unsigned long long extendedLogDataStringEncoding;
+@property (nonatomic, readonly) NSArray *events;
+@property (nonatomic, readonly) unsigned long long extendedLogDataStringEncoding;
 
 - (id)_accessLogArray;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

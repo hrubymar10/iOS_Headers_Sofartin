@@ -11,12 +11,12 @@
     long long _sectionCount;
 }
 
-@property(assign,retain) GKCollectionViewDataSource * dataSource;
-@property(assign,retain) NSString * dynamicTag;
-@property(assign,retain) NSMutableDictionary * globalSectionsToTags;
-@property(assign,retain) NSMutableDictionary * globalToLocalSections;
-@property(assign,retain) NSMutableDictionary * localToGlobalSections;
-@property(assign,readwrite) long long sectionCount;
+@property (nonatomic, retain) GKCollectionViewDataSource *dataSource;
+@property (nonatomic, retain) NSString *dynamicTag;
+@property (nonatomic, retain) NSMutableDictionary *globalSectionsToTags;
+@property (nonatomic, retain) NSMutableDictionary *globalToLocalSections;
+@property (nonatomic, retain) NSMutableDictionary *localToGlobalSections;
+@property (nonatomic) long long sectionCount;
 
 - (id)_gkDescriptionWithChildren:(int)arg1;
 - (void)addMappingFromGlobalSection:(unsigned long long)arg1 toLocalSection:(unsigned long long)arg2 withTag:(id)arg3;

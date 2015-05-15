@@ -18,21 +18,21 @@
     NSError *_unarchivingError;
 }
 
-@property(assign,readwrite) long long UIItemIndex;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIImage * icon;
-@property(assign,readonly) bool isFolder;
-@property(assign,readwrite) long long level;
-@property(assign,readonly) NSString * path;
-@property(assign,readwrite) long long previewItemIndex;
-@property(assign,readonly) NSString * previewItemTitle;
-@property(assign,readonly) NSURL * previewItemURL;
-@property(assign,retain) NSURL * rootUnzippingURL;
-@property(assign,copy) NSArray * subItems;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool unarchived;
+@property long long UIItemIndex;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) UIImage *icon;
+@property (readonly) bool isFolder;
+@property long long level;
+@property (readonly) NSString *path;
+@property long long previewItemIndex;
+@property (readonly) NSString *previewItemTitle;
+@property (readonly) NSURL *previewItemURL;
+@property (retain) NSURL *rootUnzippingURL;
+@property (copy) NSArray *subItems;
+@property (readonly) Class superclass;
+@property (readonly) bool unarchived;
 
 - (long long)UIItemIndex;
 - (void)cancelIconUpdate;

@@ -9,10 +9,10 @@
     unsigned long long _options;
 }
 
-@property(assign,retain) NSDate * anchorDate;
-@property(assign,retain) NSDateComponents * intervalComponents;
-@property(assign,readwrite) unsigned long long mergeStrategy;
-@property(assign,readwrite) unsigned long long options;
+@property (nonatomic, retain) NSDate *anchorDate;
+@property (nonatomic, retain) NSDateComponents *intervalComponents;
+@property (nonatomic) unsigned long long mergeStrategy;
+@property (nonatomic) unsigned long long options;
 
 + (bool)supportsSecureCoding;
 

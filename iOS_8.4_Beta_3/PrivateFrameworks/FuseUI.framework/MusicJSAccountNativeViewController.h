@@ -9,10 +9,10 @@
     <MusicJSAccountNativeViewControllerDelegate> *_delegate;
 }
 
-@property(assign,readonly) IKAppDocument * accountDocument;
-@property(assign,readonly) NSDictionary * accountDocumentOptions;
-@property(assign,readwrite) <MusicJSAccountNativeViewControllerDelegate> * delegate;
-@property(assign,readonly) IKJSNavigationDocument * navigationDocument;
+@property (nonatomic, readonly) IKAppDocument *accountDocument;
+@property (nonatomic, readonly) NSDictionary *accountDocumentOptions;
+@property (nonatomic) <MusicJSAccountNativeViewControllerDelegate> *delegate;
+@property (nonatomic, readonly) IKJSNavigationDocument *navigationDocument;
 
 - (void).cxx_destruct;
 - (id)accountDocument;

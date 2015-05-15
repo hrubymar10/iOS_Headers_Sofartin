@@ -7,13 +7,13 @@
     SKUIViewElementLayoutContext *_viewLayoutContext;
 }
 
-@property(assign,retain) SKUINavigationBarContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIView * view;
-@property(assign,readonly) SKUIViewElementLayoutContext * viewLayoutContext;
+@property (nonatomic, retain) SKUINavigationBarContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UIView *view;
+@property (nonatomic, readonly) SKUIViewElementLayoutContext *viewLayoutContext;
 
 - (void).cxx_destruct;
 - (void)artworkRequest:(id)arg1 didLoadImage:(id)arg2;

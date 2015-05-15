@@ -21,21 +21,21 @@
     long long _startTime;
 }
 
-@property(assign,readwrite) long long byteCount;
-@property(assign,readwrite) bool cancelled;
-@property(assign,readwrite) long long chunkCount;
-@property(assign,retain) NSMutableArray * chunkingErrors;
-@property(assign,readwrite) long long duration;
-@property(assign,readwrite) int errorCode;
-@property(assign,retain) NSString * errorDomain;
-@property(assign,readwrite) bool hasByteCount;
-@property(assign,readwrite) bool hasCancelled;
-@property(assign,readwrite) bool hasChunkCount;
-@property(assign,readwrite) bool hasDuration;
-@property(assign,readwrite) bool hasErrorCode;
-@property(assign,readonly) bool hasErrorDomain;
-@property(assign,readwrite) bool hasStartTime;
-@property(assign,readwrite) long long startTime;
+@property (nonatomic) long long byteCount;
+@property (nonatomic) bool cancelled;
+@property (nonatomic) long long chunkCount;
+@property (nonatomic, retain) NSMutableArray *chunkingErrors;
+@property (nonatomic) long long duration;
+@property (nonatomic) int errorCode;
+@property (nonatomic, retain) NSString *errorDomain;
+@property (nonatomic) bool hasByteCount;
+@property (nonatomic) bool hasCancelled;
+@property (nonatomic) bool hasChunkCount;
+@property (nonatomic) bool hasDuration;
+@property (nonatomic) bool hasErrorCode;
+@property (nonatomic, readonly) bool hasErrorDomain;
+@property (nonatomic) bool hasStartTime;
+@property (nonatomic) long long startTime;
 
 - (void)addChunkingError:(id)arg1;
 - (long long)byteCount;

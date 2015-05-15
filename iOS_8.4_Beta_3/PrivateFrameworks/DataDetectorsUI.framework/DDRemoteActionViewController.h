@@ -9,8 +9,8 @@
     bool _waitingForRemoteConfiguration;
 }
 
-@property(assign,retain) DDAction * action;
-@property(assign,readwrite) DDActionController * actionController;
+@property (retain) DDAction *action;
+@property DDActionController *actionController;
 
 + (id)exportedInterface;
 + (id)prepareViewController:(id)arg1 forAction:(id)arg2 actionController:(id)arg3;

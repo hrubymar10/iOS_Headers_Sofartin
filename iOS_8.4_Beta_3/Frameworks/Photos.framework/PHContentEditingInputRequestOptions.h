@@ -8,9 +8,9 @@
     id _progressHandler;
 }
 
-@property(assign,copy) id canHandleAdjustmentData;
-@property(getter=isNetworkAccessAllowed,assign,readwrite) bool networkAccessAllowed;
-@property(assign,copy) id progressHandler;
+@property (nonatomic, copy) id canHandleAdjustmentData;
+@property (getter=isNetworkAccessAllowed, nonatomic) bool networkAccessAllowed;
+@property (nonatomic, copy) id progressHandler;
 
 - (void).cxx_destruct;
 - (id)canHandleAdjustmentData;

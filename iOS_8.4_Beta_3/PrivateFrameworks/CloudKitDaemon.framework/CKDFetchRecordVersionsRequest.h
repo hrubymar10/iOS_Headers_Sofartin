@@ -11,12 +11,12 @@
     id _recordVersionsFetchedBlock;
 }
 
-@property(assign,retain) NSArray * desiredKeys;
-@property(assign,readwrite) bool isDeleted;
-@property(assign,retain) NSString * minimumVersionETag;
-@property(assign,retain) NSMutableDictionary * recordIDByRequestID;
-@property(assign,retain) NSArray * recordIDs;
-@property(assign,copy) id recordVersionsFetchedBlock;
+@property (nonatomic, retain) NSArray *desiredKeys;
+@property (nonatomic) bool isDeleted;
+@property (nonatomic, retain) NSString *minimumVersionETag;
+@property (nonatomic, retain) NSMutableDictionary *recordIDByRequestID;
+@property (nonatomic, retain) NSArray *recordIDs;
+@property (nonatomic, copy) id recordVersionsFetchedBlock;
 
 - (void).cxx_destruct;
 - (id)desiredKeys;

@@ -16,17 +16,17 @@
     bool _useDueDateAsCompletionDate;
 }
 
-@property(assign,readwrite) bool completed;
-@property(assign,retain) NSDate * dueAfter;
-@property(assign,retain) NSDate * dueBefore;
-@property(assign,readwrite) bool limitToCompletedOrIncomplete;
-@property(assign,retain) NSString * listTitle;
-@property(assign,readwrite) unsigned long long maxResults;
-@property(assign,retain) NSString * searchTerm;
-@property(assign,readwrite) int sortOrder;
-@property(assign,retain) NSString * title;
-@property(assign,readwrite) bool useCompletionDateAsAlternate;
-@property(assign,readwrite) bool useDueDateAsCompletionDate;
+@property (nonatomic) bool completed;
+@property (nonatomic, retain) NSDate *dueAfter;
+@property (nonatomic, retain) NSDate *dueBefore;
+@property (nonatomic) bool limitToCompletedOrIncomplete;
+@property (nonatomic, retain) NSString *listTitle;
+@property (nonatomic) unsigned long long maxResults;
+@property (nonatomic, retain) NSString *searchTerm;
+@property (nonatomic) int sortOrder;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic) bool useCompletionDateAsAlternate;
+@property (nonatomic) bool useDueDateAsCompletionDate;
 
 + (id)predicateWithCalendars:(id)arg1;
 + (bool)supportsSecureCoding;

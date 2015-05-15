@@ -9,8 +9,8 @@
     double _trackRadius;
 }
 
-@property(setter=setAngle:,assign,readwrite) double currentAngle;
-@property(assign,readwrite) double trackRadius;
+@property (setter=setAngle:, nonatomic) double currentAngle;
+@property (nonatomic) double trackRadius;
 
 - (void).cxx_destruct;
 - (id)ballView;

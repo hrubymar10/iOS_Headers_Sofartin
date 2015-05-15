@@ -12,13 +12,13 @@
     NSString *_layoutTag;
 }
 
-@property(assign,readwrite) bool canMultitap;
-@property(assign,readwrite) bool hasAccentKey;
-@property(assign,readwrite) bool hasCandidateKey;
-@property(assign,copy) NSString * inputMode;
-@property(assign,readwrite) bool interfaceIdiomIsPad;
-@property(assign,readwrite) bool isAlphabeticPlane;
-@property(assign,copy) NSString * layoutTag;
+@property (nonatomic) bool canMultitap;
+@property (nonatomic) bool hasAccentKey;
+@property (nonatomic) bool hasCandidateKey;
+@property (nonatomic, copy) NSString *inputMode;
+@property (nonatomic) bool interfaceIdiomIsPad;
+@property (nonatomic) bool isAlphabeticPlane;
+@property (nonatomic, copy) NSString *layoutTag;
 
 + (bool)supportsSecureCoding;
 

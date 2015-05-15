@@ -7,9 +7,9 @@
     UIButton *_statusButton;
 }
 
-@property(assign,copy) NSAttributedString * attributedButtonText;
-@property(assign,readwrite) double prevBalloonWidth;
-@property(assign,retain) UIButton * statusButton;
+@property (nonatomic, copy) NSAttributedString *attributedButtonText;
+@property (nonatomic) double prevBalloonWidth;
+@property (nonatomic, retain) UIButton *statusButton;
 
 + (id)statusButton;
 + (void)transitionFromView:(id)arg1 toView:(id)arg2 duration:(double)arg3 options:(unsigned long long)arg4 completion:(id)arg5;

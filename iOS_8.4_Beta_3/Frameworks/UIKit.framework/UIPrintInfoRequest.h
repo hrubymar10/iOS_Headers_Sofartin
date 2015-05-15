@@ -8,8 +8,8 @@
     int _requestState;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,readwrite) int requestState;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic) int requestState;
 
 + (id)requestInfoForPrinter:(id)arg1;
 

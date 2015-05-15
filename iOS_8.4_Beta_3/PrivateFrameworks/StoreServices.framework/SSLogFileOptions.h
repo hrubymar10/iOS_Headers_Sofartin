@@ -9,10 +9,10 @@
     unsigned long long _maxSizeInBytes;
 }
 
-@property(assign,copy) NSString * logDirectoryPath;
-@property(assign,copy) NSString * logFileBaseName;
-@property(assign,readwrite) unsigned long long maxLogFileSize;
-@property(assign,readwrite) long long maxNumberOfLogFiles;
+@property (nonatomic, copy) NSString *logDirectoryPath;
+@property (nonatomic, copy) NSString *logFileBaseName;
+@property (nonatomic) unsigned long long maxLogFileSize;
+@property (nonatomic) long long maxNumberOfLogFiles;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

@@ -4,8 +4,8 @@
 
 @interface SKUIHeaderViewElement : SKUIViewElement
 
-@property(assign,readonly) SKUIButtonViewElement * button;
-@property(assign,readonly) NSArray * titleLabels;
+@property (nonatomic, readonly) SKUIButtonViewElement *button;
+@property (nonatomic, readonly) NSArray *titleLabels;
 
 - (id)button;
 - (id)initWithDOMElement:(id)arg1 parent:(id)arg2 elementFactory:(id)arg3;

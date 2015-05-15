@@ -29,22 +29,22 @@
     UIColor *_topShadowColor;
 }
 
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,retain) UIColor * bottomShadowColor;
-@property(assign,retain) UIColor * fillColor;
-@property(assign,readwrite) double leftPhase;
-@property(assign,readwrite) bool opaque;
-@property(assign,readwrite) double rightPhase;
-@property(assign,retain) UIColor * sectionBorderColor;
-@property(assign,readwrite) double sectionBorderWidth;
-@property(assign,readwrite) int sectionLocation;
-@property(assign,readwrite) bool selected;
-@property(assign,retain) UIColor * selectionColor;
-@property(assign,readwrite) long long selectionStyle;
-@property(assign,retain) UIColor * separatorColor;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } separatorInset;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,retain) UIColor * topShadowColor;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic, retain) UIColor *bottomShadowColor;
+@property (nonatomic, retain) UIColor *fillColor;
+@property (nonatomic) double leftPhase;
+@property (nonatomic) bool opaque;
+@property (nonatomic) double rightPhase;
+@property (nonatomic, retain) UIColor *sectionBorderColor;
+@property (nonatomic) double sectionBorderWidth;
+@property (nonatomic) int sectionLocation;
+@property (nonatomic) bool selected;
+@property (nonatomic, retain) UIColor *selectionColor;
+@property (nonatomic) long long selectionStyle;
+@property (nonatomic, retain) UIColor *separatorColor;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } separatorInset;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, retain) UIColor *topShadowColor;
 
 - (id)backgroundColor;
 - (id)bottomShadowColor;

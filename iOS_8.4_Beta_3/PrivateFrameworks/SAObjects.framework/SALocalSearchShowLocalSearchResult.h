@@ -4,7 +4,7 @@
 
 @interface SALocalSearchShowLocalSearchResult : SADomainCommand
 
-@property(assign,copy) NSData * rawData;
+@property (nonatomic, copy) NSData *rawData;
 
 + (id)showLocalSearchResult;
 + (id)showLocalSearchResultWithDictionary:(id)arg1 context:(id)arg2;

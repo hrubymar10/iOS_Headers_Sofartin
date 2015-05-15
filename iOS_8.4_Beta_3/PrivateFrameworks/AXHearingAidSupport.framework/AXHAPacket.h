@@ -7,7 +7,7 @@
     unsigned long long _totalLength;
 }
 
-@property(assign,retain) NSMutableData * data;
+@property (nonatomic, retain) NSMutableData *data;
 
 + (struct { short x1; int x2; })headerFromData:(id)arg1;
 + (id)packetDataWithPayload:(id)arg1;

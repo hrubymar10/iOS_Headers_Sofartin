@@ -20,22 +20,22 @@
     int _systemEventTapPriority;
 }
 
-@property(assign,copy) id HIDEventHandler;
-@property(assign,retain) NSThread * HIDEventReceiveThread;
-@property(assign,retain) NSString * HIDEventTapIdentifier;
-@property(assign,readwrite) int HIDEventTapPriority;
-@property(getter=isHandlingHIDEvents,assign,readwrite) bool handlingHIDEvents;
-@property(getter=isHandlingSystemEvents,assign,readwrite) bool handlingSystemEvents;
-@property(assign,retain) NSMutableArray * hidActualEventTapEnabledReasons;
-@property(assign,readonly) NSArray * hidEventTapEnabledReasons;
-@property(assign,readwrite) bool ignoreAllHIDEvents;
-@property(assign,readwrite) bool ignoreAllSystemEvents;
-@property(assign,readwrite) bool shouldNotifyUserEventOccurred;
-@property(assign,retain) NSMutableArray * systemActualEventTapEnabledReasons;
-@property(assign,copy) id systemEventHandler;
-@property(assign,readonly) NSArray * systemEventTapEnabledReasons;
-@property(assign,retain) NSString * systemEventTapIdentifier;
-@property(assign,readwrite) int systemEventTapPriority;
+@property (nonatomic, copy) id HIDEventHandler;
+@property (nonatomic, retain) NSThread *HIDEventReceiveThread;
+@property (nonatomic, retain) NSString *HIDEventTapIdentifier;
+@property (nonatomic) int HIDEventTapPriority;
+@property (getter=isHandlingHIDEvents, nonatomic) bool handlingHIDEvents;
+@property (getter=isHandlingSystemEvents, nonatomic) bool handlingSystemEvents;
+@property (nonatomic, retain) NSMutableArray *hidActualEventTapEnabledReasons;
+@property (nonatomic, readonly) NSArray *hidEventTapEnabledReasons;
+@property (nonatomic) bool ignoreAllHIDEvents;
+@property (nonatomic) bool ignoreAllSystemEvents;
+@property (nonatomic) bool shouldNotifyUserEventOccurred;
+@property (nonatomic, retain) NSMutableArray *systemActualEventTapEnabledReasons;
+@property (nonatomic, copy) id systemEventHandler;
+@property (nonatomic, readonly) NSArray *systemEventTapEnabledReasons;
+@property (nonatomic, retain) NSString *systemEventTapIdentifier;
+@property (nonatomic) int systemEventTapPriority;
 
 - (id)HIDEventHandler;
 - (id)HIDEventReceiveThread;

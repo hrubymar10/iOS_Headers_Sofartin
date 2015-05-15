@@ -12,7 +12,7 @@
     double preformatWidth;
 }
 
-@property(assign,retain) CPListItem * listItem;
+@property (nonatomic, retain) CPListItem *listItem;
 
 - (void)accept:(id)arg1;
 - (unsigned long long)alignment;

@@ -9,11 +9,11 @@
     long long _lastVisibleFirstEmojiIndex;
 }
 
-@property(assign,readwrite) int categoryType;
-@property(getter=displaySymbol,assign,readonly) NSString * displaySymbol;
-@property(assign,retain) NSArray * emoji;
-@property(assign,readwrite) long long lastVisibleFirstEmojiIndex;
-@property(getter=name,assign,readonly) NSString * name;
+@property int categoryType;
+@property (getter=displaySymbol, readonly) NSString *displaySymbol;
+@property (retain) NSArray *emoji;
+@property (nonatomic) long long lastVisibleFirstEmojiIndex;
+@property (getter=name, nonatomic, readonly) NSString *name;
 
 + (id)categories;
 + (id)categoryForType:(int)arg1;

@@ -6,7 +6,7 @@
     AFAlarm *_alarm;
 }
 
-@property(assign,retain) AFAlarm * alarm;
+@property (nonatomic, retain) AFAlarm *alarm;
 
 + (bool)supportsSecureCoding;
 

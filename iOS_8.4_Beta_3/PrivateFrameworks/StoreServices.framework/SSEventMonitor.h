@@ -9,7 +9,7 @@
     SSXPCConnection *_eventConnection;
 }
 
-@property(assign,readwrite) <SSEventMonitorDelegate> * delegate;
+@property <SSEventMonitorDelegate> *delegate;
 
 - (void)_connectEventConnection;
 - (void)_handleMessage:(id)arg1 fromServerConnection:(id)arg2;

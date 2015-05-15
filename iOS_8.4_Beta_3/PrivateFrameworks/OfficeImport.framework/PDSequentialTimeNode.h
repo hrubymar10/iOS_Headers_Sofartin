@@ -4,14 +4,14 @@
 
 @interface PDSequentialTimeNode : PDTimeNode
 
-@property(assign,readwrite) double delay;
-@property(assign,readwrite) double direction;
-@property(assign,retain) NSString * groupId;
-@property(assign,readwrite) int iterateType;
-@property(assign,readwrite) int presetClass;
-@property(assign,readwrite) int presetId;
-@property(assign,retain) PDAnimationTarget * target;
-@property(assign,readwrite) int triggerType;
+@property (nonatomic) double delay;
+@property (nonatomic) double direction;
+@property (nonatomic, retain) NSString *groupId;
+@property (nonatomic) int iterateType;
+@property (nonatomic) int presetClass;
+@property (nonatomic) int presetId;
+@property (nonatomic, retain) PDAnimationTarget *target;
+@property (nonatomic) int triggerType;
 
 + (unsigned long long)buildPartsFromTarget:(id)arg1;
 + (id)newSequentialTimeNodeGroupForAnimationInfo;

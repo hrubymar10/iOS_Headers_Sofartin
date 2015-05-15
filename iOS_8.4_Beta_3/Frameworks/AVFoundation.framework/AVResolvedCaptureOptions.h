@@ -44,10 +44,10 @@
     } videoConnectionMinFrameDuration;
 }
 
-@property(assign,readwrite) bool hasStillImageOutput;
-@property(assign,readwrite) bool resetsVideoZoomFactorToDefaultValue;
-@property(assign,readwrite) bool resolvesFrameRatesUsingDefaultValues;
-@property(assign,readonly) NSString * sessionPreset;
+@property (nonatomic) bool hasStillImageOutput;
+@property bool resetsVideoZoomFactorToDefaultValue;
+@property bool resolvesFrameRatesUsingDefaultValues;
+@property (readonly) NSString *sessionPreset;
 
 + (void)initialize;
 + (id)resolvedCaptureOptionsWithSessionPreset:(id)arg1 captureOptionsDictionary:(id)arg2;

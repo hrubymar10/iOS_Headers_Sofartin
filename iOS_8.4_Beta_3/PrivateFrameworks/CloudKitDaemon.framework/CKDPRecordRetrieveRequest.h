@@ -10,16 +10,16 @@
     NSString *_versionETag;
 }
 
-@property(assign,retain) NSString * clientVersionETag;
-@property(assign,retain) CKDPRecordRetrieveRequestRetrieveAssetURL * getAssetURL;
-@property(assign,readonly) bool hasClientVersionETag;
-@property(assign,readonly) bool hasGetAssetURL;
-@property(assign,readonly) bool hasRecordIdentifier;
-@property(assign,readonly) bool hasRequestedFields;
-@property(assign,readonly) bool hasVersionETag;
-@property(assign,retain) CKDPRecordIdentifier * recordIdentifier;
-@property(assign,retain) CKDPRequestedFields * requestedFields;
-@property(assign,retain) NSString * versionETag;
+@property (nonatomic, retain) NSString *clientVersionETag;
+@property (nonatomic, retain) CKDPRecordRetrieveRequestRetrieveAssetURL *getAssetURL;
+@property (nonatomic, readonly) bool hasClientVersionETag;
+@property (nonatomic, readonly) bool hasGetAssetURL;
+@property (nonatomic, readonly) bool hasRecordIdentifier;
+@property (nonatomic, readonly) bool hasRequestedFields;
+@property (nonatomic, readonly) bool hasVersionETag;
+@property (nonatomic, retain) CKDPRecordIdentifier *recordIdentifier;
+@property (nonatomic, retain) CKDPRequestedFields *requestedFields;
+@property (nonatomic, retain) NSString *versionETag;
 
 + (id)options;
 

@@ -9,8 +9,8 @@
     VKImage *_image;
 }
 
-@property(assign,readonly) double contentScale;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) double contentScale;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
 
 - (void)_cleanUpAfterDrawing;
 - (id)_newImage;

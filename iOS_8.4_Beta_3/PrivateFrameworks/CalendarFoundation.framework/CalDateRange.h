@@ -7,13 +7,13 @@
     NSDate *_startDate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double duration;
-@property(assign,retain) NSDate * endDate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSDate * startDate;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double duration;
+@property (retain) NSDate *endDate;
+@property (readonly) unsigned long long hash;
+@property (retain) NSDate *startDate;
+@property (readonly) Class superclass;
 
 + (id)rangeByExpandingRange:(id)arg1 direction:(long long)arg2 duration:(double)arg3;
 + (id)rangeByExpandingRange:(id)arg1 direction:(long long)arg2 multiplier:(unsigned long long)arg3;

@@ -6,7 +6,7 @@
     SSSQLiteDatabase *_database;
 }
 
-@property(assign,readonly) SSSQLiteDatabase * database;
+@property (nonatomic, readonly) SSSQLiteDatabase *database;
 
 - (id)database;
 - (void)dealloc;

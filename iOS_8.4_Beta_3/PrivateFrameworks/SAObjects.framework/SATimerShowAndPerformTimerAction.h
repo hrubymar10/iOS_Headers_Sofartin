@@ -4,7 +4,7 @@
 
 @interface SATimerShowAndPerformTimerAction : SABaseClientBoundCommand
 
-@property(assign,retain) <SATimerTimerAction> * timerAction;
+@property (nonatomic, retain) <SATimerTimerAction> *timerAction;
 
 + (id)showAndPerformTimerAction;
 + (id)showAndPerformTimerActionWithDictionary:(id)arg1 context:(id)arg2;

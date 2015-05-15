@@ -9,11 +9,11 @@
     AAUIAccountRepairRemoteUI *_remoteUI;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <AAUIRemoteUIRepairFlowDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <AAUIRemoteUIRepairFlowDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)accountRepairRemoteUI:(id)arg1 account:(id)arg2 didFinishWithSuccess:(bool)arg3;

@@ -8,9 +8,9 @@
     UIView *_topBorder;
 }
 
-@property(assign,readwrite) bool hasBottomBorder;
-@property(assign,readwrite) bool hasTopBorder;
-@property(assign,copy) NSString * title;
+@property (nonatomic) bool hasBottomBorder;
+@property (nonatomic) bool hasTopBorder;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (bool)hasBottomBorder;

@@ -16,20 +16,20 @@
     unsigned int _updatedABPerson;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } baselinePoint;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hidesVIPIndicator;
-@property(assign,readwrite) bool isPrimaryAddressAtom;
-@property(assign,readwrite) unsigned long long presentationOptions;
-@property(assign,readwrite) double scale;
-@property(assign,readwrite) bool separatorHidden;
-@property(assign,readwrite) bool separatorIsLeftAligned;
-@property(assign,readwrite) int separatorStyle;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIFont * titleFont;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } baselinePoint;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hidesVIPIndicator;
+@property (nonatomic) bool isPrimaryAddressAtom;
+@property (nonatomic) unsigned long long presentationOptions;
+@property (nonatomic) double scale;
+@property (nonatomic) bool separatorHidden;
+@property (nonatomic) bool separatorIsLeftAligned;
+@property (nonatomic) int separatorStyle;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIFont *titleFont;
 
 + (id)copyDisplayStringForAddress:(id)arg1 usingAddressBook:(void*)arg2 useAbbreviatedName:(bool)arg3;
 

@@ -13,9 +13,9 @@
     UILabel *_textLabel;
 }
 
-@property(assign,readwrite) bool areAnimationsValid;
-@property(assign,readwrite) double currentPopStiffness;
-@property(assign,readonly) UILabel * textLabel;
+@property (nonatomic) bool areAnimationsValid;
+@property (nonatomic) double currentPopStiffness;
+@property (nonatomic, readonly) UILabel *textLabel;
 
 - (void)_cleanUpAfterRevealing;
 - (double)_currentTimeOffset;

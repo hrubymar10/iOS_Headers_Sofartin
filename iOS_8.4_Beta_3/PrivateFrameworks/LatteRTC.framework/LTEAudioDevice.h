@@ -10,10 +10,10 @@
     bool _outputAvailable;
 }
 
-@property(assign,readonly) NSNumber * deviceID;
-@property(assign,readonly) NSString * deviceName;
-@property(assign,readonly) bool inputAvailable;
-@property(assign,readonly) bool outputAvailable;
+@property (nonatomic, readonly) NSNumber *deviceID;
+@property (nonatomic, readonly) NSString *deviceName;
+@property (nonatomic, readonly) bool inputAvailable;
+@property (nonatomic, readonly) bool outputAvailable;
 
 - (void)createName;
 - (void)createNameForScope:(unsigned int)arg1;

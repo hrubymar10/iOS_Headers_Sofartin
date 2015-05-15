@@ -4,15 +4,15 @@
 
 @interface DOMUIEvent : DOMEvent
 
-@property(assign,readonly) int charCode;
-@property(assign,readonly) int detail;
-@property(assign,readonly) int keyCode;
-@property(assign,readonly) int layerX;
-@property(assign,readonly) int layerY;
-@property(assign,readonly) int pageX;
-@property(assign,readonly) int pageY;
-@property(assign,readonly) DOMAbstractView * view;
-@property(assign,readonly) int which;
+@property (readonly) int charCode;
+@property (readonly) int detail;
+@property (readonly) int keyCode;
+@property (readonly) int layerX;
+@property (readonly) int layerY;
+@property (readonly) int pageX;
+@property (readonly) int pageY;
+@property (readonly) DOMAbstractView *view;
+@property (readonly) int which;
 
 - (int)charCode;
 - (int)detail;

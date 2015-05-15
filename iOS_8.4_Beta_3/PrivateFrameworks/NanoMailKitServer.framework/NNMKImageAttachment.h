@@ -10,8 +10,8 @@
     bool _renderOnClient;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } imageSize;
-@property(assign,readwrite) bool renderOnClient;
+@property (nonatomic) struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic) bool renderOnClient;
 
 + (bool)supportsSecureCoding;
 

@@ -6,7 +6,7 @@
     NSMutableArray *_zoneSummarys;
 }
 
-@property(assign,retain) NSMutableArray * zoneSummarys;
+@property (nonatomic, retain) NSMutableArray *zoneSummarys;
 
 - (void).cxx_destruct;
 - (void)addZoneSummary:(id)arg1;

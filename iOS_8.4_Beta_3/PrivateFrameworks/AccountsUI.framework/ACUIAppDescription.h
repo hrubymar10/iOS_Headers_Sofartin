@@ -10,11 +10,11 @@
     NSString *_publisher;
 }
 
-@property(assign,copy) NSString * bundleID;
-@property(assign,retain) UIImage * icon;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * persistentID;
-@property(assign,copy) NSString * publisher;
+@property (nonatomic, copy) NSString *bundleID;
+@property (nonatomic, retain) UIImage *icon;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *persistentID;
+@property (nonatomic, copy) NSString *publisher;
 
 - (void).cxx_destruct;
 - (id)bundleID;

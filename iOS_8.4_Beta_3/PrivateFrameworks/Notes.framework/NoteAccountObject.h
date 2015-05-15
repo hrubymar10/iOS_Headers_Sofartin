@@ -6,15 +6,15 @@
     NSDictionary *_constraints;
 }
 
-@property(assign,retain) NSString * accountIdentifier;
-@property(assign,readwrite) int accountType;
-@property(assign,retain) NSDictionary * constraints;
-@property(assign,retain) NSString * constraintsPath;
-@property(assign,retain) NoteStoreObject * defaultStore;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * pathToConstraintsPlist;
-@property(assign,retain) NSSet * stores;
-@property(assign,retain) NSNumber * type;
+@property (nonatomic, retain) NSString *accountIdentifier;
+@property (nonatomic) int accountType;
+@property (nonatomic, retain) NSDictionary *constraints;
+@property (nonatomic, retain) NSString *constraintsPath;
+@property (nonatomic, retain) NoteStoreObject *defaultStore;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *pathToConstraintsPlist;
+@property (nonatomic, retain) NSSet *stores;
+@property (nonatomic, retain) NSNumber *type;
 
 - (void).cxx_destruct;
 - (int)accountType;

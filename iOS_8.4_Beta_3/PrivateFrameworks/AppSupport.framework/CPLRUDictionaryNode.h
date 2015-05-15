@@ -9,8 +9,8 @@
     CPLRUDictionaryNode *prev;
 }
 
-@property(assign,readonly) id key;
-@property(assign,retain) id object;
+@property (nonatomic, readonly) id key;
+@property (nonatomic, retain) id object;
 
 - (void)dealloc;
 - (id)initWithKey:(id)arg1 object:(id)arg2;

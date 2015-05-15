@@ -10,9 +10,9 @@
     bool _shouldShowDoneButton;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,readwrite) bool makeRouteCurrentBeforeReturning;
-@property(assign,readwrite) bool shouldShowDoneButton;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic) bool makeRouteCurrentBeforeReturning;
+@property (nonatomic) bool shouldShowDoneButton;
 
 - (void).cxx_destruct;
 - (void)_doneAction:(id)arg1;

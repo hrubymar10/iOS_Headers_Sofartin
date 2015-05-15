@@ -7,8 +7,8 @@
     NSString *_memberEmail;
 }
 
-@property(assign,copy) NSNumber * memberDSID;
-@property(assign,copy) NSString * memberEmail;
+@property (nonatomic, copy) NSNumber *memberDSID;
+@property (nonatomic, copy) NSString *memberEmail;
 
 - (void).cxx_destruct;
 - (bool)isUserInitiated;

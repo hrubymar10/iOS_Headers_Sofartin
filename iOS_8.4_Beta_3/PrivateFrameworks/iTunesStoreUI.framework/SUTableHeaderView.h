@@ -16,16 +16,16 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIColor * bottomBorderColor;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,readwrite) long long index;
-@property(assign,retain) UIColor * shadowColor;
-@property(assign,readwrite) long long style;
-@property(assign,retain) NSString * subtitle;
-@property(assign,retain) UIFont * subtitleFont;
-@property(assign,retain) UIColor * textColor;
-@property(assign,retain) NSString * title;
-@property(assign,retain) UIFont * titleFont;
+@property (nonatomic, retain) UIColor *bottomBorderColor;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic) long long index;
+@property (nonatomic, retain) UIColor *shadowColor;
+@property (nonatomic) long long style;
+@property (nonatomic, retain) NSString *subtitle;
+@property (nonatomic, retain) UIFont *subtitleFont;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) UIFont *titleFont;
 
 - (id)bottomBorderColor;
 - (void)dealloc;

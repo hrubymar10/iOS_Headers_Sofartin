@@ -11,16 +11,16 @@
     long long _urlType;
 }
 
-@property(assign,readwrite) int actionType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSDictionary * dictionary;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) id parameter;
-@property(assign,copy) NSString * subtarget;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * title;
-@property(assign,readwrite) long long urlType;
+@property int actionType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain) NSDictionary *dictionary;
+@property (readonly) unsigned long long hash;
+@property (retain) id parameter;
+@property (copy) NSString *subtarget;
+@property (readonly) Class superclass;
+@property (retain) NSString *title;
+@property long long urlType;
 
 + (id)buttonWithTitle:(id)arg1;
 

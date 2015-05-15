@@ -42,22 +42,22 @@
     bool dictationStartedFromGesture;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIWindow * dictationPresenterWindow;
-@property(assign,retain) _UIDictationPrivacySheetController * dictationPrivacySheetController;
-@property(assign,readwrite) bool dictationStartedFromGesture;
-@property(assign,readwrite) bool discardNextHypothesis;
-@property(assign,readwrite) bool hasPreheated;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIKeyboardInputMode * inputModeThatInvokedDictation;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } insertionRange;
-@property(assign,copy) NSString * lastHypothesis;
-@property(assign,retain) NSMutableArray * pendingEdits;
-@property(assign,readwrite) bool performingStreamingEditingOperation;
-@property(assign,copy) NSString * previousHypothesis;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * targetHypothesis;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIWindow *dictationPresenterWindow;
+@property (nonatomic, retain) _UIDictationPrivacySheetController *dictationPrivacySheetController;
+@property (nonatomic) bool dictationStartedFromGesture;
+@property (nonatomic) bool discardNextHypothesis;
+@property (nonatomic) bool hasPreheated;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIKeyboardInputMode *inputModeThatInvokedDictation;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } insertionRange;
+@property (nonatomic, copy) NSString *lastHypothesis;
+@property (nonatomic, retain) NSMutableArray *pendingEdits;
+@property (nonatomic) bool performingStreamingEditingOperation;
+@property (nonatomic, copy) NSString *previousHypothesis;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *targetHypothesis;
 
 + (id)activeConnection;
 + (id)activeInstance;

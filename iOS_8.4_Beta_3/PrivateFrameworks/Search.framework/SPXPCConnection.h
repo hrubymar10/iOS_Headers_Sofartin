@@ -15,11 +15,11 @@
     int _timeoutDisabled;
 }
 
-@property(assign,readonly) NSString * bundleID;
-@property(assign,retain) id context;
-@property(assign,copy) id disconnectHandler;
-@property(assign,copy) id messageHandler;
-@property(assign,readonly) NSString * serviceName;
+@property (readonly) NSString *bundleID;
+@property (nonatomic, retain) id context;
+@property (nonatomic, copy) id disconnectHandler;
+@property (nonatomic, copy) id messageHandler;
+@property (readonly) NSString *serviceName;
 
 - (void)_handleXPCError:(id)arg1;
 - (void)_handleXPCMessage:(id)arg1;

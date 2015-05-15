@@ -10,11 +10,11 @@
     int wifiOut;
 }
 
-@property(assign,readwrite) int cellIn;
-@property(assign,readwrite) int cellOut;
-@property(assign,retain) NSString * processName;
-@property(assign,readwrite) int wifiIn;
-@property(assign,readwrite) int wifiOut;
+@property (nonatomic) int cellIn;
+@property (nonatomic) int cellOut;
+@property (nonatomic, retain) NSString *processName;
+@property (nonatomic) int wifiIn;
+@property (nonatomic) int wifiOut;
 
 - (void).cxx_destruct;
 - (int)cellIn;

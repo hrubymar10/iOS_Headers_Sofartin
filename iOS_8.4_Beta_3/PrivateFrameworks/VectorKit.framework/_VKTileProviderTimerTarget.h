@@ -7,7 +7,7 @@
     VKTileProvider *tileProvider;
 }
 
-@property(assign,readwrite) VKTileProvider * tileProvider;
+@property (nonatomic) VKTileProvider *tileProvider;
 
 - (void)setTileProvider:(id)arg1;
 - (id)tileProvider;

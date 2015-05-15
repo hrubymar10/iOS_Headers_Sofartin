@@ -7,9 +7,9 @@
     NSMutableArray *_suggestionEntries;
 }
 
-@property(assign,readonly) bool hasLocalizedSectionHeader;
-@property(assign,retain) NSString * localizedSectionHeader;
-@property(assign,retain) NSMutableArray * suggestionEntries;
+@property (nonatomic, readonly) bool hasLocalizedSectionHeader;
+@property (nonatomic, retain) NSString *localizedSectionHeader;
+@property (nonatomic, retain) NSMutableArray *suggestionEntries;
 
 - (void)addSuggestionEntries:(id)arg1;
 - (void)clearSuggestionEntries;

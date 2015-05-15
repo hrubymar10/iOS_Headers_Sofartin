@@ -8,9 +8,9 @@
     NSString *_username;
 }
 
-@property(assign,readonly) long long age;
-@property(assign,readonly) long long maxUploadDuration;
-@property(assign,readonly) NSString * username;
+@property (nonatomic, readonly) long long age;
+@property (nonatomic, readonly) long long maxUploadDuration;
+@property (nonatomic, readonly) NSString *username;
 
 - (long long)age;
 - (id)initWithUsername:(id)arg1 age:(long long)arg2 maxUploadDuration:(long long)arg3;

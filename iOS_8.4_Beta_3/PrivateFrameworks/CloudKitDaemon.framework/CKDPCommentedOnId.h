@@ -7,10 +7,10 @@
     CKDPShareIdentifier *_shareIdentifier;
 }
 
-@property(assign,readonly) bool hasItemId;
-@property(assign,readonly) bool hasShareIdentifier;
-@property(assign,retain) NSData * itemId;
-@property(assign,retain) CKDPShareIdentifier * shareIdentifier;
+@property (nonatomic, readonly) bool hasItemId;
+@property (nonatomic, readonly) bool hasShareIdentifier;
+@property (nonatomic, retain) NSData *itemId;
+@property (nonatomic, retain) CKDPShareIdentifier *shareIdentifier;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

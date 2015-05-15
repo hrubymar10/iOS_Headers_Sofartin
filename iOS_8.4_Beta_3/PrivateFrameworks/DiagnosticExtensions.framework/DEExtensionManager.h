@@ -9,10 +9,10 @@
     NSObject<OS_dispatch_queue> *_initialLoadQueue;
 }
 
-@property(assign,copy) id afterExtendedBlock;
-@property(assign,readwrite) bool extendedLoaded;
-@property(assign,retain) NSArray * extensions;
-@property(assign,retain) NSObject<OS_dispatch_queue> * initialLoadQueue;
+@property (nonatomic, copy) id afterExtendedBlock;
+@property (nonatomic) bool extendedLoaded;
+@property (nonatomic, retain) NSArray *extensions;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *initialLoadQueue;
 
 + (id)sharedInstance;
 

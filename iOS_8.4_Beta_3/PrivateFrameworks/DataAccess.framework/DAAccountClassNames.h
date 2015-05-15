@@ -9,10 +9,10 @@
     NSString *_daemonAccountClassName;
 }
 
-@property(assign,retain) NSString * accountClassName;
-@property(assign,retain) NSString * agentClassName;
-@property(assign,retain) NSString * clientAccountClassName;
-@property(assign,retain) NSString * daemonAccountClassName;
+@property (nonatomic, retain) NSString *accountClassName;
+@property (nonatomic, retain) NSString *agentClassName;
+@property (nonatomic, retain) NSString *clientAccountClassName;
+@property (nonatomic, retain) NSString *daemonAccountClassName;
 
 - (void).cxx_destruct;
 - (id)accountClassName;

@@ -4,8 +4,8 @@
 
 @interface NSTextCheckingResult : NSObject <NSCoding, NSCopying>
 
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,readonly) unsigned long long resultType;
+@property (readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (readonly) unsigned long long resultType;
 
 + (id)addressCheckingResultWithRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1 components:(id)arg2;
 + (id)correctionCheckingResultWithRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1 replacementString:(id)arg2;

@@ -8,11 +8,11 @@
     unsigned long long mTypeVersion;
 }
 
-@property(assign,readonly) asn1Token * contentToken;
-@property(assign,readonly) unsigned long long integerValue;
-@property(assign,readonly) NSString * stringValue;
-@property(assign,readonly) unsigned long long type;
-@property(assign,readonly) unsigned long long typeVersion;
+@property (readonly) asn1Token *contentToken;
+@property (readonly) unsigned long long integerValue;
+@property (readonly) NSString *stringValue;
+@property (readonly) unsigned long long type;
+@property (readonly) unsigned long long typeVersion;
 
 + (id)readFromBuffer:(const char *)arg1;
 

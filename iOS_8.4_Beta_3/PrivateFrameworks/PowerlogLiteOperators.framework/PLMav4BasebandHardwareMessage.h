@@ -21,25 +21,25 @@
     struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; } *_mav4_usb;
 }
 
-@property(assign,readwrite) struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }* adm;
-@property(assign,readwrite) struct _PLMav4BasebandHWStatsARMPerf { unsigned int x1[8]; }* armPerf;
-@property(assign,readwrite) struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }* gps;
-@property(assign,readwrite) struct _PLMav4BasebandHWStatsHeader { unsigned short x1; unsigned short x2; unsigned short x3; unsigned short x4; unsigned int x5; unsigned int x6; unsigned int x7; }* header;
-@property(assign,readonly) unsigned short hw_rev;
-@property(assign,readonly) unsigned char level;
-@property(assign,readwrite) unsigned int logDuration;
-@property(assign,readwrite) struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }* mdm;
-@property(assign,readwrite) struct _PLMav4BasebandHWStatsMDSP { unsigned int x1[5]; }* mdsp;
-@property(assign,readwrite) struct _PLMav4BasebandHWStatsQDSP { unsigned int x1[5]; }* qdsp;
-@property(assign,readwrite) struct _PLMav4BasebandHWStatsRX { unsigned int x1[5][4]; unsigned int x2[5][13]; unsigned int x3[5][13]; }* rx;
-@property(assign,readwrite) struct _PLMav4BasebandHWSleepVeto { unsigned char x1[4][13]; }* sleep_arm;
-@property(assign,readwrite) struct _PLMav4BasebandHWSleepVeto { unsigned char x1[4][13]; }* sleep_qdsp;
-@property(assign,readwrite) struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }* spi;
-@property(assign,readonly) unsigned short sw_rev;
-@property(assign,readwrite) struct _PLMav4BasebandHWStatsSystem { unsigned int x1[3]; }* system;
-@property(assign,readwrite) struct _PLMav4BasebandHWStatsTX { unsigned int x1[5][12]; }* tx;
-@property(assign,readwrite) struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }* uart;
-@property(assign,readwrite) struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }* usb;
+@property (nonatomic) struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }*adm;
+@property (nonatomic) struct _PLMav4BasebandHWStatsARMPerf { unsigned int x1[8]; }*armPerf;
+@property (nonatomic) struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }*gps;
+@property (nonatomic) struct _PLMav4BasebandHWStatsHeader { unsigned short x1; unsigned short x2; unsigned short x3; unsigned short x4; unsigned int x5; unsigned int x6; unsigned int x7; }*header;
+@property (nonatomic, readonly) unsigned short hw_rev;
+@property (nonatomic, readonly) unsigned char level;
+@property unsigned int logDuration;
+@property (nonatomic) struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }*mdm;
+@property (nonatomic) struct _PLMav4BasebandHWStatsMDSP { unsigned int x1[5]; }*mdsp;
+@property (nonatomic) struct _PLMav4BasebandHWStatsQDSP { unsigned int x1[5]; }*qdsp;
+@property (nonatomic) struct _PLMav4BasebandHWStatsRX { unsigned int x1[5][4]; unsigned int x2[5][13]; unsigned int x3[5][13]; }*rx;
+@property (nonatomic) struct _PLMav4BasebandHWSleepVeto { unsigned char x1[4][13]; }*sleep_arm;
+@property (nonatomic) struct _PLMav4BasebandHWSleepVeto { unsigned char x1[4][13]; }*sleep_qdsp;
+@property (nonatomic) struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }*spi;
+@property (nonatomic, readonly) unsigned short sw_rev;
+@property (nonatomic) struct _PLMav4BasebandHWStatsSystem { unsigned int x1[3]; }*system;
+@property (nonatomic) struct _PLMav4BasebandHWStatsTX { unsigned int x1[5][12]; }*tx;
+@property (nonatomic) struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }*uart;
+@property (nonatomic) struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }*usb;
 
 - (struct _PLMav4BasebandHWOnOffComponentStats { unsigned int x1[2]; }*)adm;
 - (struct _PLMav4BasebandHWStatsARMPerf { unsigned int x1[8]; }*)armPerf;

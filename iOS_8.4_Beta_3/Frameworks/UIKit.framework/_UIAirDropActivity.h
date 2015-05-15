@@ -7,8 +7,8 @@
     id _airdropCompletion;
 }
 
-@property(assign,retain) SFAirDropActivityViewController * airDropViewController;
-@property(assign,copy) id airdropCompletion;
+@property (nonatomic, retain) SFAirDropActivityViewController *airDropViewController;
+@property (nonatomic, copy) id airdropCompletion;
 
 - (struct CGSize { double x1; double x2; })_thumbnailSize;
 - (id)activityType;

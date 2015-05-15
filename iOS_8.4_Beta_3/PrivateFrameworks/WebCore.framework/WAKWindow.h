@@ -56,8 +56,8 @@
     bool _visible;
 }
 
-@property(assign,readwrite) struct CGImage { }* contentReplacementImage;
-@property(assign,readwrite) bool useOrientationDependentFontAntialiasing;
+@property (nonatomic) struct CGImage { }*contentReplacementImage;
+@property (nonatomic) bool useOrientationDependentFontAntialiasing;
 
 + (id)currentEvent;
 + (bool)hasLandscapeOrientation;

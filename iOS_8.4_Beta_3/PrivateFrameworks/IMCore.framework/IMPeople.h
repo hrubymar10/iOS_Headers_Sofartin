@@ -8,11 +8,11 @@
     NSMutableArray *_people;
 }
 
-@property(assign,readonly) bool coalescingChanges;
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) NSArray * groups;
-@property(setter=setShouldHidePeople:,assign,readwrite) bool hidePeople;
-@property(assign,readonly) NSArray * people;
+@property (nonatomic, readonly) bool coalescingChanges;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, readonly) NSArray *groups;
+@property (setter=setShouldHidePeople:, nonatomic) bool hidePeople;
+@property (nonatomic, readonly) NSArray *people;
 
 - (void)_addedPeople:(id)arg1;
 - (bool)addIMHandle:(id)arg1;

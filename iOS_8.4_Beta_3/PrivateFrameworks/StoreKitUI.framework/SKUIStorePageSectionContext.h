@@ -19,21 +19,21 @@
     SKUILayoutCache *_textLayoutCache;
 }
 
-@property(assign,readonly) SKUIMetricsImpressionSession * activeMetricsImpressionSession;
-@property(assign,readonly) double activePageWidth;
-@property(assign,readonly) SKUIClientContext * clientContext;
-@property(assign,readonly) UICollectionView * collectionView;
-@property(assign,readonly) SKUIColorScheme * colorScheme;
-@property(assign,readonly) long long defaultPinningTransitionStyle;
-@property(assign,readonly) SKUIItemOfferButtonAppearance * itemOfferButtonAppearance;
-@property(assign,readonly) double landscapePageWidth;
-@property(assign,readonly) long long layoutStyle;
-@property(assign,readonly) SKUIMetricsController * metricsController;
-@property(assign,readonly) SKUIStorePageSectionsViewController * parentViewController;
-@property(assign,readonly) UIColor * placeholderColor;
-@property(assign,readonly) double portraitPageWidth;
-@property(assign,readonly) SKUIResourceLoader * resourceLoader;
-@property(assign,readonly) SKUILayoutCache * textLayoutCache;
+@property (nonatomic, readonly) SKUIMetricsImpressionSession *activeMetricsImpressionSession;
+@property (nonatomic, readonly) double activePageWidth;
+@property (nonatomic, readonly) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) UICollectionView *collectionView;
+@property (nonatomic, readonly) SKUIColorScheme *colorScheme;
+@property (nonatomic, readonly) long long defaultPinningTransitionStyle;
+@property (nonatomic, readonly) SKUIItemOfferButtonAppearance *itemOfferButtonAppearance;
+@property (nonatomic, readonly) double landscapePageWidth;
+@property (nonatomic, readonly) long long layoutStyle;
+@property (nonatomic, readonly) SKUIMetricsController *metricsController;
+@property (nonatomic, readonly) SKUIStorePageSectionsViewController *parentViewController;
+@property (nonatomic, readonly) UIColor *placeholderColor;
+@property (nonatomic, readonly) double portraitPageWidth;
+@property (nonatomic, readonly) SKUIResourceLoader *resourceLoader;
+@property (nonatomic, readonly) SKUILayoutCache *textLayoutCache;
 
 - (void).cxx_destruct;
 - (void)_setActiveMetricsImpressionSession:(id)arg1;

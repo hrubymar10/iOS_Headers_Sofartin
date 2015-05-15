@@ -16,14 +16,14 @@
     bool _viewHasAppeared;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UITabBarController * hostTabBarController;
-@property(assign,retain) MPAVController * player;
-@property(assign,readwrite) RadioRecentStationsController * recentStationsController;
-@property(assign,readwrite) <MCDCarDisplayServiceProvider> * serviceProvider;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UITabBarController *hostTabBarController;
+@property (nonatomic, retain) MPAVController *player;
+@property (nonatomic) RadioRecentStationsController *recentStationsController;
+@property (nonatomic) <MCDCarDisplayServiceProvider> *serviceProvider;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)MCD_pushNowPlayingViewControllerAnimated:(bool)arg1;

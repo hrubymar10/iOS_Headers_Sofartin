@@ -16,17 +16,17 @@
     bool _usesOpaqueBackground;
 }
 
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,readwrite) long long barStyle;
-@property(assign,readwrite) long long keyboardAppearance;
-@property(assign,readonly) UIColor * placeholderTextColor;
-@property(assign,retain) UIColor * sectionBackgroundColor;
-@property(assign,retain) UIColor * selectedCellBackgroundColor;
-@property(assign,readwrite) long long separatorBackdropOverlayBlendMode;
-@property(assign,retain) UIColor * separatorColor;
-@property(assign,readwrite) long long separatorStyle;
-@property(assign,retain) UIColor * textColor;
-@property(assign,readwrite) bool usesOpaqueBackground;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic) long long barStyle;
+@property (nonatomic) long long keyboardAppearance;
+@property (nonatomic, readonly) UIColor *placeholderTextColor;
+@property (nonatomic, retain) UIColor *sectionBackgroundColor;
+@property (nonatomic, retain) UIColor *selectedCellBackgroundColor;
+@property (nonatomic) long long separatorBackdropOverlayBlendMode;
+@property (nonatomic, retain) UIColor *separatorColor;
+@property (nonatomic) long long separatorStyle;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic) bool usesOpaqueBackground;
 
 - (id)backgroundColor;
 - (long long)barStyle;

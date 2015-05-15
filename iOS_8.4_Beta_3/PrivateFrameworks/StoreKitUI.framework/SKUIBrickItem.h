@@ -11,12 +11,12 @@
     SKUILink *_link;
 }
 
-@property(assign,readonly) NSString * accessibilityLabel;
-@property(assign,readonly) SKUIArtwork * artwork;
-@property(assign,readonly) long long brickIdentifier;
-@property(assign,readonly) SKUICountdown * countdown;
-@property(assign,readonly) SKUIEditorialComponent * editorial;
-@property(assign,readonly) SKUILink * link;
+@property (nonatomic, readonly) NSString *accessibilityLabel;
+@property (nonatomic, readonly) SKUIArtwork *artwork;
+@property (nonatomic, readonly) long long brickIdentifier;
+@property (nonatomic, readonly) SKUICountdown *countdown;
+@property (nonatomic, readonly) SKUIEditorialComponent *editorial;
+@property (nonatomic, readonly) SKUILink *link;
 
 - (void).cxx_destruct;
 - (void)_setLinkInfoWithLinkDictionary:(id)arg1 context:(id)arg2;

@@ -47,13 +47,13 @@
     TSCH3DDataBufferResource *mTexcoords;
 }
 
-@property(assign,retain) TSCH3DCamera * camera;
-@property(assign,readwrite) bool enabled;
-@property(assign,retain) TSCH3DDataBufferResource * fadecoords;
-@property(assign,retain) TSCH3DDataBufferResource * quad;
-@property(assign,readonly) NSObject<TSCH3DShadowsRenderer> * renderer;
-@property(assign,readonly) bool shadowPlaneValid;
-@property(assign,retain) TSCH3DDataBufferResource * texcoords;
+@property (nonatomic, retain) TSCH3DCamera *camera;
+@property (nonatomic) bool enabled;
+@property (nonatomic, retain) TSCH3DDataBufferResource *fadecoords;
+@property (nonatomic, retain) TSCH3DDataBufferResource *quad;
+@property (nonatomic, readonly) NSObject<TSCH3DShadowsRenderer> *renderer;
+@property (nonatomic, readonly) bool shadowPlaneValid;
+@property (nonatomic, retain) TSCH3DDataBufferResource *texcoords;
 
 - (id).cxx_construct;
 - (id)camera;

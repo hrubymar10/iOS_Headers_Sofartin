@@ -17,26 +17,26 @@
     bool _usesStackPopTransition;
 }
 
-@property(assign,readonly) PUAlbumPickerViewControllerSpec * albumPickerViewControllerSpec;
-@property(assign,readonly) struct CGSize { double x1; double x2; } baseInterItemSpacing;
-@property(assign,readonly) bool canDisplayEditActionsInNavigationBar;
-@property(assign,readonly) bool canDisplayOptionsInPopover;
-@property(assign,readonly) bool canDisplaySearchActionInNavigationBar;
-@property(assign,readonly) bool canDisplaySlideshowButton;
-@property(assign,readonly) long long cellBannerTextAlignment;
-@property(assign,readonly) long long cellFillMode;
-@property(assign,readonly) struct CGSize { double x1; double x2; } contentSizeForViewInPopover;
-@property(assign,readonly) bool displaysAvalancheStacks;
-@property(assign,readonly) long long forceLoadInitialSectionCount;
-@property(assign,readonly) double globalFooterHeight;
-@property(assign,readonly) long long layoutVariant;
-@property(assign,readonly) double maxSearchBarWidth;
-@property(assign,readonly) PUPhotosPickerViewControllerSpec * photosPickerViewControllerSpec;
-@property(assign,readonly) bool shouldPlaceDeleteInCenterToolbarPosition;
-@property(assign,readonly) int thumbnailImageFormat;
-@property(assign,readonly) bool usesStackPopTransition;
-@property(assign,readonly) bool wantsBackButtonTitleForPhotoBrowser;
-@property(assign,readonly) bool wantsCustomNavigationTransition;
+@property (nonatomic, readonly) PUAlbumPickerViewControllerSpec *albumPickerViewControllerSpec;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } baseInterItemSpacing;
+@property (nonatomic, readonly) bool canDisplayEditActionsInNavigationBar;
+@property (nonatomic, readonly) bool canDisplayOptionsInPopover;
+@property (nonatomic, readonly) bool canDisplaySearchActionInNavigationBar;
+@property (nonatomic, readonly) bool canDisplaySlideshowButton;
+@property (nonatomic, readonly) long long cellBannerTextAlignment;
+@property (nonatomic, readonly) long long cellFillMode;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } contentSizeForViewInPopover;
+@property (nonatomic, readonly) bool displaysAvalancheStacks;
+@property (nonatomic, readonly) long long forceLoadInitialSectionCount;
+@property (nonatomic, readonly) double globalFooterHeight;
+@property (nonatomic, readonly) long long layoutVariant;
+@property (nonatomic, readonly) double maxSearchBarWidth;
+@property (nonatomic, readonly) PUPhotosPickerViewControllerSpec *photosPickerViewControllerSpec;
+@property (nonatomic, readonly) bool shouldPlaceDeleteInCenterToolbarPosition;
+@property (nonatomic, readonly) int thumbnailImageFormat;
+@property (nonatomic, readonly) bool usesStackPopTransition;
+@property (nonatomic, readonly) bool wantsBackButtonTitleForPhotoBrowser;
+@property (nonatomic, readonly) bool wantsCustomNavigationTransition;
 
 - (void).cxx_destruct;
 - (id)albumPickerViewControllerSpec;

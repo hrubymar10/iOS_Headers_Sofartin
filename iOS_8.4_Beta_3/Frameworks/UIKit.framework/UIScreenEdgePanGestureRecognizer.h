@@ -6,11 +6,11 @@
     _UIScreenEdgePanRecognizer *_recognizer;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long edges;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) unsigned long long edges;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (double)_edgeRegionSize;
 - (bool)_shouldTryToBeginWithEvent:(id)arg1;

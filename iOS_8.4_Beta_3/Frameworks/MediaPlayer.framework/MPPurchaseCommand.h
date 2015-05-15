@@ -6,7 +6,7 @@
     long long _state;
 }
 
-@property(assign,readwrite) long long state;
+@property (nonatomic) long long state;
 
 - (id)_mediaRemoteCommandInfoOptions;
 - (void)setState:(long long)arg1;

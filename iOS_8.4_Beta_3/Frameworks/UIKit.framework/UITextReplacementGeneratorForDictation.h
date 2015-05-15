@@ -6,7 +6,7 @@
     NSTextAlternatives *_alternatives;
 }
 
-@property(assign,readonly) NSTextAlternatives * alternatives;
+@property (nonatomic, readonly) NSTextAlternatives *alternatives;
 
 - (id)alternatives;
 - (void)dealloc;

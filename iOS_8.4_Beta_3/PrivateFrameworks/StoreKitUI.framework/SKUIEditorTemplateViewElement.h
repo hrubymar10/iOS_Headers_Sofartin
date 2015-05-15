@@ -6,7 +6,7 @@
     NSNumber *_contentId;
 }
 
-@property(assign,readonly) NSNumber * contentId;
+@property (nonatomic, readonly) NSNumber *contentId;
 
 - (void).cxx_destruct;
 - (id)contentId;

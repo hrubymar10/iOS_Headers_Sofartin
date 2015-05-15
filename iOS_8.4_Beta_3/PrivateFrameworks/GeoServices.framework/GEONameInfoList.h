@@ -6,7 +6,7 @@
     NSMutableArray *_nameInfos;
 }
 
-@property(assign,retain) NSMutableArray * nameInfos;
+@property (nonatomic, retain) NSMutableArray *nameInfos;
 
 - (void)addNameInfo:(id)arg1;
 - (void)clearNameInfos;

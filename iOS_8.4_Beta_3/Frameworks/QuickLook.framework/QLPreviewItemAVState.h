@@ -8,9 +8,9 @@
     double position;
 }
 
-@property(assign,readwrite) double duration;
-@property(getter=isPlaying,assign,readwrite) bool playing;
-@property(assign,readwrite) double position;
+@property double duration;
+@property (getter=isPlaying) bool playing;
+@property double position;
 
 + (id)avStateWithPosition:(double)arg1 duration:(double)arg2 playing:(bool)arg3;
 + (bool)supportsSecureCoding;

@@ -12,13 +12,13 @@
     NSString *_realm;
 }
 
-@property(assign,retain) NSArray * URLPrefixMatches;
-@property(assign,retain) NSString * accountGUID;
-@property(assign,retain) NSString * accountTypeGUID;
-@property(assign,retain) NSArray * appIdentifierMatches;
-@property(assign,retain) NSString * certificateUUID;
-@property(assign,retain) NSString * principalName;
-@property(assign,retain) NSString * realm;
+@property (nonatomic, retain) NSArray *URLPrefixMatches;
+@property (nonatomic, retain) NSString *accountGUID;
+@property (nonatomic, retain) NSString *accountTypeGUID;
+@property (nonatomic, retain) NSArray *appIdentifierMatches;
+@property (nonatomic, retain) NSString *certificateUUID;
+@property (nonatomic, retain) NSString *principalName;
+@property (nonatomic, retain) NSString *realm;
 
 - (void).cxx_destruct;
 - (id)URLPrefixMatches;

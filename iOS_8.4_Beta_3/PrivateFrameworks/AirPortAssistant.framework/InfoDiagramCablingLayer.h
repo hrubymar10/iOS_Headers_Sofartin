@@ -15,16 +15,16 @@
     bool swapCabling;
 }
 
-@property(assign,retain) CAShapeLayer * broadbandToWANInnerLineLayer;
-@property(assign,retain) CAShapeLayer * broadbandToWANOuterLineLayer;
-@property(assign,readwrite) <InfoDiagramCablingAnchorDelegate> * diagramAnchorPointDelegate;
-@property(assign,retain) CAGradientLayer * internetGradientLayer;
-@property(assign,retain) CAShapeLayer * internetInnerLineLayer;
-@property(assign,retain) CAShapeLayer * internetOuterLineLayer;
-@property(assign,readwrite) bool isCompactWidth;
-@property(assign,retain) CAShapeLayer * swapArcArrowLayer;
-@property(assign,retain) CAShapeLayer * swapArcLineLayer;
-@property(assign,readwrite) bool swapCabling;
+@property (nonatomic, retain) CAShapeLayer *broadbandToWANInnerLineLayer;
+@property (nonatomic, retain) CAShapeLayer *broadbandToWANOuterLineLayer;
+@property (nonatomic) <InfoDiagramCablingAnchorDelegate> *diagramAnchorPointDelegate;
+@property (nonatomic, retain) CAGradientLayer *internetGradientLayer;
+@property (nonatomic, retain) CAShapeLayer *internetInnerLineLayer;
+@property (nonatomic, retain) CAShapeLayer *internetOuterLineLayer;
+@property (nonatomic) bool isCompactWidth;
+@property (nonatomic, retain) CAShapeLayer *swapArcArrowLayer;
+@property (nonatomic, retain) CAShapeLayer *swapArcLineLayer;
+@property (nonatomic) bool swapCabling;
 
 - (id)broadbandToWANInnerLineLayer;
 - (id)broadbandToWANOuterLineLayer;

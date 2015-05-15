@@ -8,7 +8,7 @@
     TSUPointerKeyDictionary *_pageIndexByDrawable;
 }
 
-@property(assign,readonly) TPDocumentRoot * documentRoot;
+@property (nonatomic, readonly) TPDocumentRoot *documentRoot;
 
 - (void)addDrawable:(id)arg1 toPageIndex:(unsigned long long)arg2 insertContext:(id)arg3;
 - (void)addDrawable:(id)arg1 toPageIndex:(unsigned long long)arg2 insertContext:(id)arg3 suppressDOLC:(bool)arg4;

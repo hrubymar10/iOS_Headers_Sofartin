@@ -12,13 +12,13 @@
     unsigned long long _totalSize;
 }
 
-@property(assign,retain) NSString * bundleIdentifier;
-@property(assign,retain) NSString * bundleVersion;
-@property(assign,readwrite) unsigned long long dataSize;
-@property(assign,readwrite) unsigned long long dynamicSize;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) unsigned long long staticSize;
-@property(assign,readwrite) unsigned long long totalSize;
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic, retain) NSString *bundleVersion;
+@property (nonatomic) unsigned long long dataSize;
+@property (nonatomic) unsigned long long dynamicSize;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) unsigned long long staticSize;
+@property (nonatomic) unsigned long long totalSize;
 
 + (bool)supportsSecureCoding;
 

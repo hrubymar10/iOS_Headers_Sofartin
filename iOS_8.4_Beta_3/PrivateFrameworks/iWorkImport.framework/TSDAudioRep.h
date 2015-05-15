@@ -12,7 +12,7 @@
     CALayer *mSpinnerLayer;
 }
 
-@property(assign,readonly) TSDMovieInfo * movieInfo;
+@property (nonatomic, readonly) TSDMovieInfo *movieInfo;
 
 - (bool)canResetMediaSize;
 - (void)dealloc;

@@ -20,19 +20,19 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int apAwakeDuration;
-@property(assign,readwrite) unsigned int cpuPowerMicroWatt;
-@property(assign,retain) NSMutableArray * datas;
-@property(assign,readwrite) unsigned int dramPowerMicroWatt;
-@property(assign,readwrite) unsigned int gpuPowerMicroWatt;
-@property(assign,readwrite) bool hasApAwakeDuration;
-@property(assign,readwrite) bool hasCpuPowerMicroWatt;
-@property(assign,readwrite) bool hasDramPowerMicroWatt;
-@property(assign,readwrite) bool hasGpuPowerMicroWatt;
-@property(assign,readwrite) bool hasSocPowerMicroWatt;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int socPowerMicroWatt;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int apAwakeDuration;
+@property (nonatomic) unsigned int cpuPowerMicroWatt;
+@property (nonatomic, retain) NSMutableArray *datas;
+@property (nonatomic) unsigned int dramPowerMicroWatt;
+@property (nonatomic) unsigned int gpuPowerMicroWatt;
+@property (nonatomic) bool hasApAwakeDuration;
+@property (nonatomic) bool hasCpuPowerMicroWatt;
+@property (nonatomic) bool hasDramPowerMicroWatt;
+@property (nonatomic) bool hasGpuPowerMicroWatt;
+@property (nonatomic) bool hasSocPowerMicroWatt;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int socPowerMicroWatt;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)addData:(id)arg1;
 - (unsigned int)apAwakeDuration;

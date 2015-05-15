@@ -4,7 +4,7 @@
 
 @interface BKSTouchDeliveryPolicy : NSObject <NSSecureCoding>
 
-@property(assign,retain) NSObject<OS_xpc_object> * assertionEndpoint;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *assertionEndpoint;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)policyByCombiningPolicies:(id)arg1;

@@ -11,10 +11,10 @@
     TSCEEdgeListPrinter *_precedentsList;
 }
 
-@property(assign,retain) NSString * cellID;
-@property(assign,readwrite) unsigned long long dirtyPrecedentCount;
-@property(assign,readwrite) bool isFormula;
-@property(assign,readwrite) bool isInCycle;
+@property (nonatomic, retain) NSString *cellID;
+@property (nonatomic) unsigned long long dirtyPrecedentCount;
+@property (nonatomic) bool isFormula;
+@property (nonatomic) bool isInCycle;
 
 - (void)addDependentWithCellID:(id)arg1 forOwner:(id)arg2;
 - (void)addPrecedentWithCellID:(id)arg1 forOwner:(id)arg2;

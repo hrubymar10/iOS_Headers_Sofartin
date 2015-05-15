@@ -20,21 +20,21 @@
     AVCaptureMovieFileOutput *_videoOutput;
 }
 
-@property(assign,retain) AVCaptureDeviceInput * audioInput;
-@property(assign,readwrite) long long cameraDevice;
-@property(assign,readwrite) bool canceled;
-@property(assign,retain) AVCaptureVideoPreviewLayer * captureVideoPreviewLayer;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKVideoRecorderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) AVCaptureDeviceInput * frontVideoInput;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * outputFileURL;
-@property(assign,retain) AVCaptureDeviceInput * rearVideoInput;
-@property(assign,retain) AVCaptureSession * session;
-@property(assign,retain) AVCaptureStillImageOutput * stillImageOutput;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) AVCaptureMovieFileOutput * videoOutput;
+@property (nonatomic, retain) AVCaptureDeviceInput *audioInput;
+@property (nonatomic) long long cameraDevice;
+@property (nonatomic) bool canceled;
+@property (nonatomic, retain) AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKVideoRecorderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) AVCaptureDeviceInput *frontVideoInput;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURL *outputFileURL;
+@property (nonatomic, retain) AVCaptureDeviceInput *rearVideoInput;
+@property (nonatomic, retain) AVCaptureSession *session;
+@property (nonatomic, retain) AVCaptureStillImageOutput *stillImageOutput;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) AVCaptureMovieFileOutput *videoOutput;
 
 - (id)_cameraWithPosition:(long long)arg1;
 - (id)_configureFrontVideoInput;

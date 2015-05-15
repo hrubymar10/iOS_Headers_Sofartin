@@ -4,22 +4,22 @@
 
 @interface UIApplicationSceneClientSettings : FBSSceneClientSettings <UIApplicationSceneClientSettings>
 
-@property(assign,readonly) long long compatibilityMode;
-@property(assign,readonly) long long controlCenterRevealMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) double defaultPNGExpirationTime;
-@property(assign,copy) NSString * defaultPNGName;
-@property(assign,readonly) bool defaultStatusBarHidden;
-@property(assign,readonly) long long defaultStatusBarStyle;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool idleTimerDisabled;
-@property(assign,readonly) long long notificationCenterRevealMode;
-@property(assign,readonly) bool orientationEnabled;
-@property(assign,readonly) unsigned long long proximityDetectionModes;
-@property(assign,readonly) bool statusBarHidden;
-@property(assign,readonly) long long statusBarStyle;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) long long compatibilityMode;
+@property (nonatomic, readonly) long long controlCenterRevealMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) double defaultPNGExpirationTime;
+@property (nonatomic, readonly, copy) NSString *defaultPNGName;
+@property (nonatomic, readonly) bool defaultStatusBarHidden;
+@property (nonatomic, readonly) long long defaultStatusBarStyle;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool idleTimerDisabled;
+@property (nonatomic, readonly) long long notificationCenterRevealMode;
+@property (nonatomic, readonly) bool orientationEnabled;
+@property (nonatomic, readonly) unsigned long long proximityDetectionModes;
+@property (nonatomic, readonly) bool statusBarHidden;
+@property (nonatomic, readonly) long long statusBarStyle;
+@property (readonly) Class superclass;
 
 - (long long)compatibilityMode;
 - (long long)controlCenterRevealMode;

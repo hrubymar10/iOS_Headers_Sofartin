@@ -24,16 +24,16 @@
     double _size;
 }
 
-@property(assign,readwrite) double alpha;
-@property(assign,retain) UIColor * color;
-@property(assign,readwrite) double coloration;
-@property(assign,readwrite) long long currentFrameIndex;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } firstFrameOrigin;
-@property(assign,readwrite) long long frameColumns;
-@property(assign,readwrite) long long frameCount;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } frameSize;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } position;
-@property(assign,readwrite) double size;
+@property (nonatomic) double alpha;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic) double coloration;
+@property (nonatomic) long long currentFrameIndex;
+@property (nonatomic) struct CGPoint { double x1; double x2; } firstFrameOrigin;
+@property (nonatomic) long long frameColumns;
+@property (nonatomic) long long frameCount;
+@property (nonatomic) struct CGSize { double x1; double x2; } frameSize;
+@property (nonatomic) struct CGPoint { double x1; double x2; } position;
+@property (nonatomic) double size;
 
 - (void).cxx_destruct;
 - (id)_newAnimatablePropertyForType:(unsigned long long)arg1;

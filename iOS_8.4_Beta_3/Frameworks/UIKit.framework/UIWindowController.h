@@ -27,12 +27,12 @@
     UIWindow *_window;
 }
 
-@property(setter=_setInteractionController:,assign,retain) <UIViewControllerInteractiveTransitioning> * _interactionController;
-@property(getter=_isInteractiveTransition,setter=_setInteractiveTransition:,assign,readwrite) bool _interactiveTransition;
-@property(setter=_setTransitionController:,assign,retain) <UIViewControllerAnimatedTransitioning> * _transitionController;
-@property(assign,readwrite) bool presenting;
-@property(assign,readonly) UITransitionView * transitionView;
-@property(assign,readwrite) UIWindow * window;
+@property (setter=_setInteractionController:, nonatomic, retain) <UIViewControllerInteractiveTransitioning> *_interactionController;
+@property (getter=_isInteractiveTransition, setter=_setInteractiveTransition:, nonatomic) bool _interactiveTransition;
+@property (setter=_setTransitionController:, nonatomic, retain) <UIViewControllerAnimatedTransitioning> *_transitionController;
+@property (nonatomic) bool presenting;
+@property (nonatomic, readonly) UITransitionView *transitionView;
+@property (nonatomic) UIWindow *window;
 
 + (id)windowControllerForWindow:(id)arg1;
 + (void)windowWillBeDeallocated:(id)arg1;

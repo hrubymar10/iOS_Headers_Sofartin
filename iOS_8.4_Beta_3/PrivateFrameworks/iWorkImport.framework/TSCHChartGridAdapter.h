@@ -7,8 +7,8 @@
     unsigned long long mIndex;
 }
 
-@property(assign,readonly) TSCHChartGrid * grid;
-@property(assign,retain) NSString * name;
+@property (nonatomic, readonly) TSCHChartGrid *grid;
+@property (nonatomic, retain) NSString *name;
 
 - (unsigned long long)count;
 - (unsigned long long)countByEnumeratingWithState:(struct { unsigned long long x1; id *x2; unsigned long long *x3; unsigned long long x4[5]; }*)arg1 objects:(id*)arg2 count:(unsigned long long)arg3;

@@ -9,7 +9,7 @@
     long long _maxCacheSizeInBytes;
 }
 
-@property(assign,readwrite) long long maxCacheSizeInBytes;
+@property (nonatomic) long long maxCacheSizeInBytes;
 
 + (id)defaultCacheURL;
 + (id)sharedCache;

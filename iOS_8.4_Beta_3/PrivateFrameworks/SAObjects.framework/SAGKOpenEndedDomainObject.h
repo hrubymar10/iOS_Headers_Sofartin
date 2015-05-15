@@ -4,10 +4,10 @@
 
 @interface SAGKOpenEndedDomainObject : SAGKDomainObject
 
-@property(assign,retain) SAGKDirectAnswer * directAnswer;
-@property(assign,copy) NSArray * image;
-@property(assign,copy) NSArray * linkedAnswerGroups;
-@property(assign,copy) NSArray * structuredAnswers;
+@property (nonatomic, retain) SAGKDirectAnswer *directAnswer;
+@property (nonatomic, copy) NSArray *image;
+@property (nonatomic, copy) NSArray *linkedAnswerGroups;
+@property (nonatomic, copy) NSArray *structuredAnswers;
 
 + (id)openEndedDomainObject;
 + (id)openEndedDomainObjectWithDictionary:(id)arg1 context:(id)arg2;

@@ -12,13 +12,13 @@
     NSString *_trackingID;
 }
 
-@property(assign,readwrite) unsigned long long cachedCompletedBytes;
-@property(assign,readwrite) unsigned long long cachedTotalBytes;
-@property(assign,retain) NSMapTable * completedBytesByItems;
-@property(assign,readwrite) bool hasCachedCompletedBytes;
-@property(assign,readwrite) bool hasCachedTotalBytes;
-@property(assign,readwrite) double lastItemPercentage;
-@property(assign,retain) NSString * trackingID;
+@property (nonatomic) unsigned long long cachedCompletedBytes;
+@property (nonatomic) unsigned long long cachedTotalBytes;
+@property (nonatomic, retain) NSMapTable *completedBytesByItems;
+@property (nonatomic) bool hasCachedCompletedBytes;
+@property (nonatomic) bool hasCachedTotalBytes;
+@property (nonatomic) double lastItemPercentage;
+@property (nonatomic, retain) NSString *trackingID;
 
 + (unsigned long long)_sizeForItem:(id)arg1;
 

@@ -19,13 +19,13 @@
     int _transportType;
 }
 
-@property(assign,readonly) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } bounds;
-@property(assign,readonly) unsigned int endPointIndex;
-@property(assign,readonly) unsigned int pointCount;
-@property(assign,readonly) struct { float x1; float x2; }* points;
-@property(assign,readonly) unsigned int startPointIndex;
-@property(assign,readonly) int transportType;
-@property(assign,readonly) struct { double x1; double x2; double x3; double x4; } vkBounds;
+@property (nonatomic, readonly) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } bounds;
+@property (nonatomic, readonly) unsigned int endPointIndex;
+@property (nonatomic, readonly) unsigned int pointCount;
+@property (nonatomic, readonly) struct { float x1; float x2; }*points;
+@property (nonatomic, readonly) unsigned int startPointIndex;
+@property (nonatomic, readonly) int transportType;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; double x4; } vkBounds;
 
 - (id).cxx_construct;
 - (struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; })bounds;

@@ -13,12 +13,12 @@
     NSMutableDictionary *_unknownAttributes;
 }
 
-@property(assign,readonly) NSData * lastCropRectChecksum;
-@property(assign,readonly) int lastCropRectHeight;
-@property(assign,readonly) int lastCropRectWidth;
-@property(assign,readonly) int lastCropRectX;
-@property(assign,readonly) int lastCropRectY;
-@property(assign,readonly) bool localRecordHasAdditionalProperties;
+@property (readonly) NSData *lastCropRectChecksum;
+@property (readonly) int lastCropRectHeight;
+@property (readonly) int lastCropRectWidth;
+@property (readonly) int lastCropRectX;
+@property (readonly) int lastCropRectY;
+@property (readonly) bool localRecordHasAdditionalProperties;
 
 - (bool)_handleUnknownTag:(id)arg1 withValue:(id)arg2;
 - (void)cleanUpCardState;

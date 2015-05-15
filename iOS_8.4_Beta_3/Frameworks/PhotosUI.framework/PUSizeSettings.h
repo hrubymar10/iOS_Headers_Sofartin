@@ -10,11 +10,11 @@
     double __widthDelay;
 }
 
-@property(assign,readwrite) double _desiredWidth;
-@property(assign,readwrite) double _testIncrement;
-@property(assign,readwrite) double _testInterval;
-@property(assign,readwrite) double _testStartDelay;
-@property(assign,readwrite) double _widthDelay;
+@property (nonatomic) double _desiredWidth;
+@property (nonatomic) double _testIncrement;
+@property (nonatomic) double _testInterval;
+@property (nonatomic) double _testStartDelay;
+@property (nonatomic) double _widthDelay;
 
 + (void)runSizeTest;
 + (id)settingsControllerModule;

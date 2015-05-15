@@ -4,7 +4,7 @@
 
 @interface SAGetSessionCertificateResponse : SABaseClientBoundCommand
 
-@property(assign,copy) NSData * certificate;
+@property (nonatomic, copy) NSData *certificate;
 
 + (id)getSessionCertificateResponse;
 + (id)getSessionCertificateResponseWithDictionary:(id)arg1 context:(id)arg2;

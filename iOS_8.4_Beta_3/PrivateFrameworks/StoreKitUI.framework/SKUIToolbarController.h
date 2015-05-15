@@ -9,9 +9,9 @@
     SKUIToolbarViewElement *_viewElement;
 }
 
-@property(assign,readwrite) <SKUIToolbarControllerDelegate> * delegate;
-@property(assign,readonly) NSArray * toolbarItems;
-@property(assign,readonly) SKUIToolbarViewElement * toolbarViewElement;
+@property (nonatomic) <SKUIToolbarControllerDelegate> *delegate;
+@property (nonatomic, readonly) NSArray *toolbarItems;
+@property (nonatomic, readonly) SKUIToolbarViewElement *toolbarViewElement;
 
 - (void).cxx_destruct;
 - (id)_barButtonItemWithButtonElement:(id)arg1;

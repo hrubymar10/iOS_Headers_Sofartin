@@ -6,8 +6,8 @@
     long long _classicToneIndex;
 }
 
-@property(assign,readwrite) long long classicToneIndex;
-@property(assign,readonly) TKTonePickerItem * parentItem;
+@property (nonatomic) long long classicToneIndex;
+@property (nonatomic, readonly) TKTonePickerItem *parentItem;
 
 - (void)_appendDescriptionOfAttributesToString:(id)arg1;
 - (void)_setClassicToneIndex:(long long)arg1;

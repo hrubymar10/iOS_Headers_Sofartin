@@ -29,14 +29,14 @@
     } _y;
 }
 
-@property(assign,readonly) NSNumber * allowsResizing;
-@property(assign,readonly) NSNumber * height;
-@property(assign,readonly) NSNumber * menuBarVisibility;
-@property(assign,readonly) NSNumber * statusBarVisibility;
-@property(assign,readonly) NSNumber * toolbarsVisibility;
-@property(assign,readonly) NSNumber * width;
-@property(assign,readonly) NSNumber * x;
-@property(assign,readonly) NSNumber * y;
+@property (nonatomic, readonly) NSNumber *allowsResizing;
+@property (nonatomic, readonly) NSNumber *height;
+@property (nonatomic, readonly) NSNumber *menuBarVisibility;
+@property (nonatomic, readonly) NSNumber *statusBarVisibility;
+@property (nonatomic, readonly) NSNumber *toolbarsVisibility;
+@property (nonatomic, readonly) NSNumber *width;
+@property (nonatomic, readonly) NSNumber *x;
+@property (nonatomic, readonly) NSNumber *y;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

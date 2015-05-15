@@ -9,9 +9,9 @@
     SKUIViewElementText *_text;
 }
 
-@property(assign,readonly) float ratingValue;
-@property(assign,readonly) long long starType;
-@property(assign,readonly) SKUIViewElementText * text;
+@property (nonatomic, readonly) float ratingValue;
+@property (nonatomic, readonly) long long starType;
+@property (nonatomic, readonly) SKUIViewElementText *text;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

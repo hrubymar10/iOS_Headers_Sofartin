@@ -4,7 +4,7 @@
 
 @interface SAGKImagePod : SAGKPodView
 
-@property(assign,copy) NSArray * images;
+@property (nonatomic, copy) NSArray *images;
 
 + (id)imagePod;
 + (id)imagePodWithDictionary:(id)arg1 context:(id)arg2;

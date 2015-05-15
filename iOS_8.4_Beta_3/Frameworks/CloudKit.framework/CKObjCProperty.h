@@ -16,17 +16,17 @@
     CKObjCType *_type;
 }
 
-@property(assign,readonly) Class classHandle;
-@property(assign,readonly) unsigned long long flags;
-@property(assign,readonly) NSMethodSignature * getterMethodSignature;
-@property(assign,readonly) SEL getterSelector;
-@property(assign,readonly) NSString * getterSelectorName;
-@property(assign,readonly) NSString * instanceVariableName;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSMethodSignature * setterMethodSignature;
-@property(assign,readonly) SEL setterSelector;
-@property(assign,readonly) NSString * setterSelectorName;
-@property(assign,readonly) CKObjCType * type;
+@property (nonatomic, readonly) Class classHandle;
+@property (nonatomic, readonly) unsigned long long flags;
+@property (nonatomic, readonly) NSMethodSignature *getterMethodSignature;
+@property (nonatomic, readonly) SEL getterSelector;
+@property (nonatomic, readonly) NSString *getterSelectorName;
+@property (nonatomic, readonly) NSString *instanceVariableName;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSMethodSignature *setterMethodSignature;
+@property (nonatomic, readonly) SEL setterSelector;
+@property (nonatomic, readonly) NSString *setterSelectorName;
+@property (nonatomic, readonly) CKObjCType *type;
 
 - (void).cxx_destruct;
 - (Class)classHandle;

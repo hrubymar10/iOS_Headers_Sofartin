@@ -6,7 +6,7 @@
     NSData *inputMessage;
 }
 
-@property(assign,copy) NSData * inputMessage;
+@property (nonatomic, copy) NSData *inputMessage;
 
 - (id)inputMessage;
 - (struct CGImage { }*)outputCGImage;

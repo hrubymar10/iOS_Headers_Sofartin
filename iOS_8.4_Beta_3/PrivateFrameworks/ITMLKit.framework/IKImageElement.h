@@ -10,17 +10,17 @@
     NSDictionary *_srcset;
 }
 
-@property(assign,readonly) UIColor * borderColor;
-@property(assign,retain) NSURL * defaultURL;
-@property(assign,readonly) long long fill;
-@property(assign,readonly) double height;
-@property(assign,readonly) unsigned long long imageType;
-@property(assign,retain) NSURL * placeholderURL;
-@property(assign,readonly) unsigned long long position;
-@property(assign,readonly) long long reflect;
-@property(assign,retain) NSDictionary * srcset;
-@property(assign,readonly) NSURL * url;
-@property(assign,readonly) double width;
+@property (nonatomic, readonly) UIColor *borderColor;
+@property (nonatomic, retain) NSURL *defaultURL;
+@property (nonatomic, readonly) long long fill;
+@property (nonatomic, readonly) double height;
+@property (nonatomic, readonly) unsigned long long imageType;
+@property (nonatomic, readonly, retain) NSURL *placeholderURL;
+@property (nonatomic, readonly) unsigned long long position;
+@property (nonatomic, readonly) long long reflect;
+@property (nonatomic, readonly, retain) NSDictionary *srcset;
+@property (nonatomic, readonly) NSURL *url;
+@property (nonatomic, readonly) double width;
 
 + (bool)shouldParseChildDOMElements;
 

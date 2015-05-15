@@ -20,18 +20,18 @@
     unsigned long long _visibleFields;
 }
 
-@property(assign,copy) NSString * artistName;
-@property(assign,copy) NSString * categoryString;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * editorialBadgeString;
-@property(assign,copy) NSString * itemCountString;
-@property(assign,copy) NSString * itemOfferString;
-@property(assign,readwrite) long long numberOfUserRatings;
-@property(assign,readonly) UIColor * primaryTextColor;
-@property(assign,copy) NSString * releaseDateString;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) float userRating;
-@property(assign,readwrite) unsigned long long visibleFields;
+@property (nonatomic, copy) NSString *artistName;
+@property (nonatomic, copy) NSString *categoryString;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, copy) NSString *editorialBadgeString;
+@property (nonatomic, copy) NSString *itemCountString;
+@property (nonatomic, copy) NSString *itemOfferString;
+@property (nonatomic) long long numberOfUserRatings;
+@property (nonatomic, readonly) UIColor *primaryTextColor;
+@property (nonatomic, copy) NSString *releaseDateString;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) float userRating;
+@property (nonatomic) unsigned long long visibleFields;
 
 + (double)maximumHeightWithVisibleFields:(unsigned long long)arg1;
 

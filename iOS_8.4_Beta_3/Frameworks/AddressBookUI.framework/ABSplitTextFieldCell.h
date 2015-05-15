@@ -8,9 +8,9 @@
     UITextField *_textFieldRight;
 }
 
-@property(assign,retain) ABRepeatingGradientSeparatorView * separator;
-@property(assign,retain) UITextField * textFieldLeft;
-@property(assign,retain) UITextField * textFieldRight;
+@property (nonatomic, retain) ABRepeatingGradientSeparatorView *separator;
+@property (nonatomic, retain) UITextField *textFieldLeft;
+@property (nonatomic, retain) UITextField *textFieldRight;
 
 + (bool)requiresConstraintBasedLayout;
 

@@ -7,8 +7,8 @@
     SCRCMathExpression *_rootIndex;
 }
 
-@property(assign,retain) SCRCMathExpression * radicand;
-@property(assign,retain) SCRCMathExpression * rootIndex;
+@property (nonatomic, retain) SCRCMathExpression *radicand;
+@property (nonatomic, retain) SCRCMathExpression *rootIndex;
 
 - (bool)_isCubeRoot;
 - (bool)_isSquareRoot;

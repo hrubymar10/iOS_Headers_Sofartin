@@ -6,8 +6,8 @@
     NSString *_token;
 }
 
-@property(assign,readonly) bool hasToken;
-@property(assign,retain) NSString * token;
+@property (nonatomic, readonly) bool hasToken;
+@property (nonatomic, retain) NSString *token;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

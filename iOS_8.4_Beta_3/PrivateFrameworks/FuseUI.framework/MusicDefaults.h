@@ -6,28 +6,28 @@
     bool _internalInstall;
 }
 
-@property(getter=isActivityContinuationEnabled,assign,readonly) bool activityContinuationEnabled;
-@property(assign,readonly) int eqPreset;
-@property(getter=isGeniusUserEnabled,assign,readwrite) bool geniusUserEnabled;
-@property(getter=isGroupByAlbumArtistEnabled,assign,readonly) bool groupByAlbumArtistEnabled;
-@property(assign,readwrite) bool hasUserBeenNotifiedThatAudioBooksHaveMoved;
-@property(assign,readwrite) bool hasUserRequestedSubscriptionHidden;
-@property(getter=isInternalInstall,assign,readwrite) bool internalInstall;
-@property(assign,readwrite) bool lastEffectiveRadioExplicitTracksEnabled;
-@property(assign,copy) NSDictionary * lastKnownTabConfigurations;
-@property(getter=isPinningEnabled,assign,readonly) bool pinningEnabled;
-@property(assign,readwrite) unsigned long long playbackSpeed;
-@property(assign,readwrite) bool playlistsOverviewShowsOnlyOfflinePlaylists;
-@property(assign,readwrite) unsigned long long repeatType;
-@property(assign,readwrite) bool searchShouldDefaultToMyMusic;
-@property(assign,copy) NSString * selectedLibraryViewIdentifier;
-@property(assign,readwrite) unsigned long long selectedPlaylistsOverviewFilterType;
-@property(getter=isShakeToShuffleEnabled,assign,readonly) bool shakeToShuffleEnabled;
-@property(getter=isShowCloudMediaEnabled,assign,readwrite) bool showCloudMediaEnabled;
-@property(assign,readwrite) unsigned long long shuffleType;
-@property(getter=isSortByArtistEnabled,assign,readonly) bool sortByArtistEnabled;
-@property(getter=isSoundCheckEnabled,assign,readonly) bool soundCheckEnabled;
-@property(assign,copy) NSArray * tabBarOrdering;
+@property (getter=isActivityContinuationEnabled, nonatomic, readonly) bool activityContinuationEnabled;
+@property (nonatomic, readonly) int eqPreset;
+@property (getter=isGeniusUserEnabled, nonatomic) bool geniusUserEnabled;
+@property (getter=isGroupByAlbumArtistEnabled, nonatomic, readonly) bool groupByAlbumArtistEnabled;
+@property (nonatomic) bool hasUserBeenNotifiedThatAudioBooksHaveMoved;
+@property (nonatomic) bool hasUserRequestedSubscriptionHidden;
+@property (getter=isInternalInstall, nonatomic) bool internalInstall;
+@property (nonatomic) bool lastEffectiveRadioExplicitTracksEnabled;
+@property (nonatomic, copy) NSDictionary *lastKnownTabConfigurations;
+@property (getter=isPinningEnabled, nonatomic, readonly) bool pinningEnabled;
+@property (nonatomic) unsigned long long playbackSpeed;
+@property (nonatomic) bool playlistsOverviewShowsOnlyOfflinePlaylists;
+@property (nonatomic) unsigned long long repeatType;
+@property (nonatomic) bool searchShouldDefaultToMyMusic;
+@property (nonatomic, copy) NSString *selectedLibraryViewIdentifier;
+@property (nonatomic) unsigned long long selectedPlaylistsOverviewFilterType;
+@property (getter=isShakeToShuffleEnabled, nonatomic, readonly) bool shakeToShuffleEnabled;
+@property (getter=isShowCloudMediaEnabled, nonatomic) bool showCloudMediaEnabled;
+@property (nonatomic) unsigned long long shuffleType;
+@property (getter=isSortByArtistEnabled, nonatomic, readonly) bool sortByArtistEnabled;
+@property (getter=isSoundCheckEnabled, nonatomic, readonly) bool soundCheckEnabled;
+@property (nonatomic, copy) NSArray *tabBarOrdering;
 
 + (id)sharedDefaults;
 

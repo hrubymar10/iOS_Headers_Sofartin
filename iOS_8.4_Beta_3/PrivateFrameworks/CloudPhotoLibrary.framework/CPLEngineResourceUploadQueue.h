@@ -6,11 +6,11 @@
     bool _immediateUploads;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (readonly) Class superclass;
 
 - (bool)_markResourcesAsStaleForItemWithIdentifier:(id)arg1 withResources:(id)arg2 includePending:(bool)arg3 error:(id*)arg4;
 - (id)_uploadTaskForResource:(id)arg1 foreground:(bool)arg2 withCompletionHandler:(id)arg3;

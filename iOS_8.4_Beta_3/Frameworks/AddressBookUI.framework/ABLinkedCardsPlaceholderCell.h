@@ -6,7 +6,7 @@
     <ABPropertyCellDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <ABPropertyCellDelegate> * delegate;
+@property (nonatomic) <ABPropertyCellDelegate> *delegate;
 
 - (id)delegate;
 - (void)performDefaultAction;

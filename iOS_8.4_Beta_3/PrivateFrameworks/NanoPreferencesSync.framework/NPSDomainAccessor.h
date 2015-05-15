@@ -8,11 +8,11 @@
     NSObject<OS_dispatch_queue> *_invalidationQueue;
 }
 
-@property(assign,readonly) NSString * domain;
-@property(assign,retain) NSObject<OS_dispatch_queue> * externalQueue;
-@property(assign,retain) NPSDomainAccessorInternal * internalAccessor;
-@property(assign,retain) NSObject<OS_dispatch_queue> * invalidationQueue;
-@property(assign,readonly) NSUUID * pairingID;
+@property (nonatomic, readonly) NSString *domain;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *externalQueue;
+@property (nonatomic, retain) NPSDomainAccessorInternal *internalAccessor;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *invalidationQueue;
+@property (nonatomic, readonly) NSUUID *pairingID;
 
 + (id)copyDomainList;
 + (id)copyDomainListForPairingID:(id)arg1 pairingDataStore:(id)arg2;

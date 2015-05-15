@@ -9,10 +9,10 @@
     long long _type;
 }
 
-@property(assign,readonly) NSString * stationHash;
-@property(assign,readonly) NSNumber * stationID;
-@property(assign,readonly) NSNumber * trackID;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) NSString *stationHash;
+@property (nonatomic, readonly) NSNumber *stationID;
+@property (nonatomic, readonly) NSNumber *trackID;
+@property (nonatomic, readonly) long long type;
 
 - (void).cxx_destruct;
 - (id)initWithCommand:(id)arg1 mediaRemoteType:(unsigned int)arg2 options:(id)arg3;

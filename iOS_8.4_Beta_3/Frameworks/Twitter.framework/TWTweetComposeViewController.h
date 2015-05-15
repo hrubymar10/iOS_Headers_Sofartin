@@ -4,7 +4,7 @@
 
 @interface TWTweetComposeViewController : UIViewController
 
-@property(assign,copy) id completionHandler;
+@property (nonatomic, copy) id completionHandler;
 
 + (bool)canSendTweet;
 

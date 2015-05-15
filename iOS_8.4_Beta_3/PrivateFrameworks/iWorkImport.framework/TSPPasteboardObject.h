@@ -16,17 +16,17 @@
     TSPObject *_wpStorage;
 }
 
-@property(assign,retain) TSPObject * appNativeObject;
-@property(assign,copy) NSArray * drawables;
-@property(assign,retain) TSPObject * guideStorage;
-@property(assign,readonly) bool isCrossAppPaste;
-@property(assign,readonly) bool isCrossDocumentPaste;
-@property(assign,readwrite) bool isSmartCopyPaste;
-@property(assign,readwrite) bool isTextPrimary;
-@property(assign,copy) NSArray * styles;
-@property(assign,retain) TSPObject * stylesheet;
-@property(assign,retain) TSPObject * theme;
-@property(assign,retain) TSPObject * wpStorage;
+@property (nonatomic, retain) TSPObject *appNativeObject;
+@property (nonatomic, copy) NSArray *drawables;
+@property (nonatomic, retain) TSPObject *guideStorage;
+@property (nonatomic, readonly) bool isCrossAppPaste;
+@property (nonatomic, readonly) bool isCrossDocumentPaste;
+@property (nonatomic) bool isSmartCopyPaste;
+@property (nonatomic) bool isTextPrimary;
+@property (nonatomic, copy) NSArray *styles;
+@property (nonatomic, retain) TSPObject *stylesheet;
+@property (nonatomic, retain) TSPObject *theme;
+@property (nonatomic, retain) TSPObject *wpStorage;
 
 - (void).cxx_destruct;
 - (id)appNativeObject;

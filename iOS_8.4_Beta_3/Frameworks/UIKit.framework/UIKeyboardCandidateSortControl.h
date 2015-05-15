@@ -9,8 +9,8 @@
     UIKBThemedView *_themedView;
 }
 
-@property(assign,readonly) UISegmentedControl * segmentedControl;
-@property(assign,retain) UIKBThemedView * themedView;
+@property (readonly) UISegmentedControl *segmentedControl;
+@property (nonatomic, retain) UIKBThemedView *themedView;
 
 + (bool)_preventsAppearanceProxyCustomization;
 

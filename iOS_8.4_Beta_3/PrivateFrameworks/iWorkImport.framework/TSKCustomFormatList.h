@@ -15,8 +15,8 @@
     bool mUpgradingDone;
 }
 
-@property(assign,readwrite) bool importing;
-@property(assign,readwrite) bool upgrading;
+@property (nonatomic) bool importing;
+@property (nonatomic) bool upgrading;
 
 + (void)archiveKeys:(id)arg1 message:(struct RepeatedPtrField<TSP::UUID> { void **x1; int x2; int x3; int x4; }*)arg2;
 + (id)unarchiveKeys:(const struct RepeatedPtrField<TSP::UUID> { void **x1; int x2; int x3; int x4; }*)arg1;

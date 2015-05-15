@@ -6,7 +6,7 @@
     PKServicePersonality *_personality;
 }
 
-@property(assign,readwrite) PKServicePersonality * personality;
+@property PKServicePersonality *personality;
 
 - (void).cxx_destruct;
 - (id)initWithPersonality:(id)arg1;

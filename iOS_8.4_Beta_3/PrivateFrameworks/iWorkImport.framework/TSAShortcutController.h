@@ -8,8 +8,8 @@
     TSURetainedPointerKeyDictionary *_styleToShortcutDictionary;
 }
 
-@property(assign,readwrite) TSADocumentRoot * documentRoot;
-@property(assign,readonly) bool hasShortcuts;
+@property (nonatomic) TSADocumentRoot *documentRoot;
+@property (nonatomic, readonly) bool hasShortcuts;
 
 + (id)localizedStringForShortcut:(id)arg1;
 

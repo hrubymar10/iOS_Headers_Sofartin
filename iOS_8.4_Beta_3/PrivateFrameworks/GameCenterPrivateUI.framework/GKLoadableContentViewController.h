@@ -8,14 +8,14 @@
     NSArray *_viewsToHideWhileLoading;
 }
 
-@property(assign,retain) UIActivityIndicatorView * activityIndicator;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) GKLoadableContentStateMachine * loadingMachine;
-@property(assign,retain) NSString * loadingState;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSArray * viewsToHideWhileLoading;
+@property (nonatomic, retain) UIActivityIndicatorView *activityIndicator;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) GKLoadableContentStateMachine *loadingMachine;
+@property (nonatomic, retain) NSString *loadingState;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSArray *viewsToHideWhileLoading;
 
 - (id)activityIndicator;
 - (void)dealloc;

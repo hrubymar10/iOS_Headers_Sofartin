@@ -7,8 +7,8 @@
     bool _getScheduleTags;
 }
 
-@property(assign,readwrite) bool getScheduleChanges;
-@property(assign,readwrite) bool getScheduleTags;
+@property (nonatomic) bool getScheduleChanges;
+@property (nonatomic) bool getScheduleTags;
 
 - (id)copyAdditionalPropElements;
 - (bool)getScheduleChanges;

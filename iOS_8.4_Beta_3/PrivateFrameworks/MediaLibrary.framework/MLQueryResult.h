@@ -6,7 +6,7 @@
     NSArray *_entities;
 }
 
-@property(assign,readonly) NSArray * entities;
+@property (nonatomic, readonly) NSArray *entities;
 
 - (void).cxx_destruct;
 - (id)entities;

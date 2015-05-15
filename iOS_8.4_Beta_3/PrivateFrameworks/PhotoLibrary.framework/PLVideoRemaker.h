@@ -17,8 +17,8 @@
     NSString *_trimmedPath;
 }
 
-@property(assign,retain) PFVideoAVObjectBuilder * _videoAVObjectBuilder;
-@property(assign,copy) id progressHandler;
+@property (nonatomic, readonly, retain) PFVideoAVObjectBuilder *_videoAVObjectBuilder;
+@property (nonatomic, copy) id progressHandler;
 
 + (long long)approximateByteSizeForMode:(int)arg1 duration:(double)arg2;
 + (long long)fileLengthLimitForRemakerMode:(int)arg1;

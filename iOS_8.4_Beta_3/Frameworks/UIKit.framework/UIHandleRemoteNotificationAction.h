@@ -4,8 +4,8 @@
 
 @interface UIHandleRemoteNotificationAction : BSAction
 
-@property(assign,copy) NSString * action;
-@property(assign,copy) NSDictionary * payload;
+@property (nonatomic, readonly, copy) NSString *action;
+@property (nonatomic, readonly, copy) NSDictionary *payload;
 
 - (long long)UIActionType;
 - (id)_initWithRemoteNotificationPayload:(id)arg1 action:(id)arg2 type:(long long)arg3 withHandler:(id)arg4;

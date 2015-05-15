@@ -11,8 +11,8 @@
     } _textSize;
 }
 
-@property(assign,readwrite) long long count;
-@property(assign,readwrite) bool isSelected;
+@property (nonatomic) long long count;
+@property (nonatomic) bool isSelected;
 
 + (void)deallocImageCache;
 + (int)initImageCache;

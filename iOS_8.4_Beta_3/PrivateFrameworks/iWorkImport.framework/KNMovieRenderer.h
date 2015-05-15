@@ -33,15 +33,15 @@
     unsigned int mWasMoviePlayingBeforeAnimationPause;
 }
 
-@property(assign,readwrite) KNBuildRenderer * buildInRenderer;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasMoviePlaybackStarted;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSObject<NSCopying> * movieTimelineMovieIdentifier;
-@property(assign,readonly) CALayer * offscreenVideoLayer;
-@property(assign,readonly) NSObject<TSKMediaPlayerController> * playerController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) KNBuildRenderer *buildInRenderer;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasMoviePlaybackStarted;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSObject<NSCopying> *movieTimelineMovieIdentifier;
+@property (nonatomic, readonly) CALayer *offscreenVideoLayer;
+@property (nonatomic, readonly) NSObject<TSKMediaPlayerController> *playerController;
+@property (readonly) Class superclass;
 
 + (id)movieInfoForMovieTimelineMovieIdentifier:(id)arg1;
 + (id)movieTimelineMovieIdentifierForMovieInfo:(id)arg1;

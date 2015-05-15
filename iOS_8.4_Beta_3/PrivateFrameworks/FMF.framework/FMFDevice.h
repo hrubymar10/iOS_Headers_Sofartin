@@ -9,10 +9,10 @@
     bool _isThisDevice;
 }
 
-@property(assign,copy) NSString * deviceId;
-@property(assign,copy) NSString * deviceName;
-@property(assign,readwrite) bool isActiveDevice;
-@property(assign,readwrite) bool isThisDevice;
+@property (nonatomic, copy) NSString *deviceId;
+@property (nonatomic, copy) NSString *deviceName;
+@property (nonatomic) bool isActiveDevice;
+@property (nonatomic) bool isThisDevice;
 
 + (id)deviceWithId:(id)arg1 name:(id)arg2 isActive:(bool)arg3 isThisDevice:(bool)arg4;
 + (bool)supportsSecureCoding;

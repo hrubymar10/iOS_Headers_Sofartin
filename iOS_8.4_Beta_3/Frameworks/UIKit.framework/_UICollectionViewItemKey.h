@@ -9,10 +9,10 @@
     unsigned long long _type;
 }
 
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSIndexPath * indexPath;
-@property(assign,readonly) bool isClone;
-@property(assign,readonly) unsigned long long type;
+@property (nonatomic, readonly, retain) NSString *identifier;
+@property (nonatomic, readonly, retain) NSIndexPath *indexPath;
+@property (nonatomic, readonly) bool isClone;
+@property (nonatomic, readonly) unsigned long long type;
 
 + (id)collectionItemKeyForCellWithIndexPath:(id)arg1;
 + (id)collectionItemKeyForDecorationViewOfKind:(id)arg1 andIndexPath:(id)arg2;

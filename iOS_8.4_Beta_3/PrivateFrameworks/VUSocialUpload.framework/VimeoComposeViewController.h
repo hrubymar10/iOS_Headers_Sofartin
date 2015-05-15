@@ -15,16 +15,16 @@
     ACAccount *_vimeoAccount;
 }
 
-@property(assign,retain) ACAccountStore * accountStore;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * postDescription;
-@property(assign,readwrite) long long privacySettings;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSArray * tags;
-@property(assign,readwrite) long long videoSize;
-@property(assign,retain) ACAccount * vimeoAccount;
+@property (nonatomic, retain) ACAccountStore *accountStore;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *postDescription;
+@property (nonatomic) long long privacySettings;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSArray *tags;
+@property (nonatomic) long long videoSize;
+@property (nonatomic, retain) ACAccount *vimeoAccount;
 
 - (void).cxx_destruct;
 - (id)accountStore;

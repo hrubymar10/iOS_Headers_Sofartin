@@ -9,8 +9,8 @@
     SiriUIKeyline *_verticalKeyline;
 }
 
-@property(assign,readonly) SiriUIContentButton * leftButton;
-@property(assign,readonly) SiriUIContentButton * rightButton;
+@property (nonatomic, readonly) SiriUIContentButton *leftButton;
+@property (nonatomic, readonly) SiriUIContentButton *rightButton;
 
 + (double)defaultHeight;
 

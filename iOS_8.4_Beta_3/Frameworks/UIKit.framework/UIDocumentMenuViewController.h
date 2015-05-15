@@ -12,17 +12,17 @@
     <UIDocumentMenuDelegate> *_weak_delegate;
 }
 
-@property(assign,retain) UIAlertController * alertController;
-@property(assign,retain) NSMutableArray * auxiliaryOptions;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UIDocumentMenuDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool dismissDelegateCalled;
-@property(assign,readwrite) unsigned long long documentPickerMode;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=_remoteViewController,setter=_setRemoteViewController:,assign,retain) _UIDocumentPickerRemoteViewController * remoteViewController;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSURL * uploadURL;
+@property (nonatomic, retain) UIAlertController *alertController;
+@property (nonatomic, retain) NSMutableArray *auxiliaryOptions;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UIDocumentMenuDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool dismissDelegateCalled;
+@property (nonatomic) unsigned long long documentPickerMode;
+@property (readonly) unsigned long long hash;
+@property (getter=_remoteViewController, setter=_setRemoteViewController:, nonatomic, retain) _UIDocumentPickerRemoteViewController *remoteViewController;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSURL *uploadURL;
 
 - (void)_commonInitWithCompletion:(id)arg1;
 - (id)_containedAlertController;

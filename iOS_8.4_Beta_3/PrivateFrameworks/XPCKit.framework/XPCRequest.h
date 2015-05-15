@@ -9,9 +9,9 @@
     unsigned long long _sequence;
 }
 
-@property(assign,readonly) NSObject<OS_xpc_object> * message;
-@property(assign,readonly) NSObject<OS_xpc_object> * reply;
-@property(assign,readonly) unsigned long long sequence;
+@property (nonatomic, readonly) NSObject<OS_xpc_object> *message;
+@property (nonatomic, readonly) NSObject<OS_xpc_object> *reply;
+@property (nonatomic, readonly) unsigned long long sequence;
 
 - (void).cxx_destruct;
 - (id)initWithMessage:(id)arg1 sequence:(unsigned long long)arg2 connection:(id)arg3;

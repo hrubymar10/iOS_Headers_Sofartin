@@ -17,11 +17,11 @@
     bool _readyForDisplay;
 }
 
-@property(assign,readonly) double contentHeight;
-@property(assign,readwrite) <MusicVerticalScrollingContainerItemContextDelegate> * delegate;
-@property(assign,readonly) MusicVerticalScrollingContainerItem * item;
-@property(assign,readonly) UIView * itemView;
-@property(getter=isOverridingContentHeight,assign,readonly) bool overridingContentHeight;
+@property (nonatomic, readonly) double contentHeight;
+@property (nonatomic) <MusicVerticalScrollingContainerItemContextDelegate> *delegate;
+@property (nonatomic, readonly) MusicVerticalScrollingContainerItem *item;
+@property (nonatomic, readonly) UIView *itemView;
+@property (getter=isOverridingContentHeight, nonatomic, readonly) bool overridingContentHeight;
 
 - (void).cxx_destruct;
 - (void)_notifyDelegateOfUpdatedContentHeightInContentScrollView;

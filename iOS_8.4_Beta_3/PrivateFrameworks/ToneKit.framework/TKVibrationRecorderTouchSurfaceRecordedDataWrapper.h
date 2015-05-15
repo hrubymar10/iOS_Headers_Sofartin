@@ -14,15 +14,15 @@
     bool _warmUpModeEnabled;
 }
 
-@property(setter=_setDisplayLinkHasRefreshedAtLeastOnce:,assign,readwrite) bool _displayLinkHasRefreshedAtLeastOnce;
-@property(setter=_setMaximumFramesPerSecondRate:,assign,readwrite) unsigned long long _maximumFramesPerSecondRate;
-@property(setter=_setRecordedData:,assign,readwrite) void* _recordedData;
-@property(setter=_setRecordedDataCursor:,assign,readwrite) unsigned long long _recordedDataCursor;
-@property(setter=_setRecordedDataElementsCount:,assign,readwrite) unsigned long long _recordedDataElementsCount;
-@property(setter=_setVibrationPatternDidStartTimestamp:,assign,readwrite) double _vibrationPatternDidStartTimestamp;
-@property(setter=_setVibrationPatternMaximumDuration:,assign,readwrite) double _vibrationPatternMaximumDuration;
-@property(setter=_setWarmUpModeDidStartTimestamp:,assign,readwrite) double _warmUpModeDidStartTimestamp;
-@property(getter=_isWarmUpModeEnabled,setter=_setWarmUpModeEnabled:,assign,readwrite) bool _warmUpModeEnabled;
+@property (setter=_setDisplayLinkHasRefreshedAtLeastOnce:, nonatomic) bool _displayLinkHasRefreshedAtLeastOnce;
+@property (setter=_setMaximumFramesPerSecondRate:, nonatomic) unsigned long long _maximumFramesPerSecondRate;
+@property (setter=_setRecordedData:, nonatomic) void*_recordedData;
+@property (setter=_setRecordedDataCursor:, nonatomic) unsigned long long _recordedDataCursor;
+@property (setter=_setRecordedDataElementsCount:, nonatomic) unsigned long long _recordedDataElementsCount;
+@property (setter=_setVibrationPatternDidStartTimestamp:, nonatomic) double _vibrationPatternDidStartTimestamp;
+@property (setter=_setVibrationPatternMaximumDuration:, nonatomic) double _vibrationPatternMaximumDuration;
+@property (setter=_setWarmUpModeDidStartTimestamp:, nonatomic) double _warmUpModeDidStartTimestamp;
+@property (getter=_isWarmUpModeEnabled, setter=_setWarmUpModeEnabled:, nonatomic) bool _warmUpModeEnabled;
 
 - (bool)_displayLinkHasRefreshedAtLeastOnce;
 - (bool)_isWarmUpModeEnabled;

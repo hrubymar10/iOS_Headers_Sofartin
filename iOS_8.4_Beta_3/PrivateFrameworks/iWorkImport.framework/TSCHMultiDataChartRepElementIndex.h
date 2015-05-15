@@ -7,8 +7,8 @@
     unsigned long long mValueIndex;
 }
 
-@property(assign,readonly) unsigned long long seriesIndex;
-@property(assign,readonly) unsigned long long valueIndex;
+@property (nonatomic, readonly) unsigned long long seriesIndex;
+@property (nonatomic, readonly) unsigned long long valueIndex;
 
 + (id)repElementIndexWithSeriesIndex:(unsigned long long)arg1 valueIndex:(unsigned long long)arg2;
 

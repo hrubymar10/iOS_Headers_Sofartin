@@ -36,16 +36,16 @@
     NSArray *_viewConfigurations;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * populatedViewConfigurations;
-@property(assign,copy) NSString * preferredSelectedViewIdentifier;
-@property(assign,readonly) MusicLibraryViewConfiguration * selectedViewConfiguration;
-@property(assign,readonly) UIViewController * selectedViewConfigurationViewController;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) MusicSwitcherButtonContainerView * switcherButtonContainerView;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *populatedViewConfigurations;
+@property (nonatomic, readonly, copy) NSString *preferredSelectedViewIdentifier;
+@property (nonatomic, readonly) MusicLibraryViewConfiguration *selectedViewConfiguration;
+@property (nonatomic, readonly) UIViewController *selectedViewConfigurationViewController;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) MusicSwitcherButtonContainerView *switcherButtonContainerView;
 
 - (void).cxx_destruct;
 - (double)_calculateHairlineViewHeight;

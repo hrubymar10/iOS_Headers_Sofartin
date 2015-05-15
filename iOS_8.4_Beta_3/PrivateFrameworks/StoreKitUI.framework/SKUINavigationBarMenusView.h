@@ -14,7 +14,7 @@
     NSArray *_menuViewElements;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
 
 + (id)_attributedStringWithMenuItem:(id)arg1 context:(id)arg2;
 + (void)requestLayoutWithMenus:(id)arg1 width:(long long)arg2 context:(id)arg3;

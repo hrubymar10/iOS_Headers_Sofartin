@@ -7,8 +7,8 @@
     NSURL *mURL;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,retain) TSUBezierPath * bezierPath;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic, retain) TSUBezierPath *bezierPath;
 
 + (id)hyperlinkRegionWithURL:(id)arg1 bezierPath:(id)arg2;
 

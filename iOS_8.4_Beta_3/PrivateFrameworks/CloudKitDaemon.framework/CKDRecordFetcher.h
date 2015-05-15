@@ -13,14 +13,14 @@
     NSArray *_recordResponsesToFetch;
 }
 
-@property(assign,retain) NSSet * desiredKeys;
-@property(assign,readwrite) bool fetchAssetContents;
-@property(assign,retain) NSObject<OS_dispatch_group> * fetchGroup;
-@property(assign,retain) NSMutableDictionary * fetchedRecordInfoByRecordID;
-@property(assign,readwrite) bool preserveOrdering;
-@property(assign,copy) id recordFetchedBlock;
-@property(assign,retain) NSMutableArray * recordIDsToFetch;
-@property(assign,retain) NSArray * recordResponsesToFetch;
+@property (nonatomic, retain) NSSet *desiredKeys;
+@property (nonatomic) bool fetchAssetContents;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *fetchGroup;
+@property (nonatomic, retain) NSMutableDictionary *fetchedRecordInfoByRecordID;
+@property (nonatomic) bool preserveOrdering;
+@property (nonatomic, copy) id recordFetchedBlock;
+@property (nonatomic, retain) NSMutableArray *recordIDsToFetch;
+@property (nonatomic, retain) NSArray *recordResponsesToFetch;
 
 - (void).cxx_destruct;
 - (void)_fetchRecordsFromServer:(id)arg1 fullRecords:(id)arg2;

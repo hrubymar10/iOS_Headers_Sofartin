@@ -9,10 +9,10 @@
     NSURL *_sourceURL;
 }
 
-@property(assign,copy) NSURL * destinationURL;
-@property(assign,readwrite) unsigned long long downloadToken;
-@property(assign,copy) NSDictionary * purchaseBundle;
-@property(assign,copy) NSURL * sourceURL;
+@property (nonatomic, copy) NSURL *destinationURL;
+@property (nonatomic) unsigned long long downloadToken;
+@property (nonatomic, copy) NSDictionary *purchaseBundle;
+@property (nonatomic, copy) NSURL *sourceURL;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

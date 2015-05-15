@@ -7,10 +7,10 @@
     NSString *_identifier;
 }
 
-@property(assign,retain) NSString * category;
-@property(assign,readonly) bool hasCategory;
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,retain) NSString * identifier;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic, readonly) bool hasCategory;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, retain) NSString *identifier;
 
 - (void).cxx_destruct;
 - (id)category;

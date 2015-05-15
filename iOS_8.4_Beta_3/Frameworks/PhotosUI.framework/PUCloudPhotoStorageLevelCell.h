@@ -7,8 +7,8 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readonly) UILabel * sizeLabel;
-@property(assign,readonly) UILabel * titleLabel;
+@property (nonatomic, readonly) UILabel *sizeLabel;
+@property (nonatomic, readonly) UILabel *titleLabel;
 
 - (void).cxx_destruct;
 - (id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2;

@@ -9,10 +9,10 @@
     bool _invalidateLayout;
 }
 
-@property(getter=isAnimated,assign,readwrite) bool animated;
-@property(assign,readwrite) bool invalidateDownloadStatus;
-@property(assign,readwrite) bool invalidateEverything;
-@property(assign,readwrite) bool invalidateLayout;
+@property (getter=isAnimated, nonatomic) bool animated;
+@property (nonatomic) bool invalidateDownloadStatus;
+@property (nonatomic) bool invalidateEverything;
+@property (nonatomic) bool invalidateLayout;
 
 - (bool)invalidateDownloadStatus;
 - (bool)invalidateEverything;

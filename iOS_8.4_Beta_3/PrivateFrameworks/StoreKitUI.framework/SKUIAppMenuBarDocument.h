@@ -4,12 +4,12 @@
 
 @interface SKUIAppMenuBarDocument : IKAppMenuBarDocument <SKUIDOMFeature>
 
-@property(assign,readonly) IKAppContext * appContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * featureName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) IKAppContext *appContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSString *featureName;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)featureName;
 

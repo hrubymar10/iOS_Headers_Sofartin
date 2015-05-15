@@ -15,12 +15,12 @@
     NSArray *_whitelistedClassNames;
 }
 
-@property(assign,readonly) NSObject<OS_xpc_object> * connection;
-@property(assign,copy) id errorHandler;
-@property(assign,readwrite) Class remoteClass;
-@property(assign,readwrite) Protocol * remoteProtocol;
-@property(assign,readwrite) <XPCProxyTarget> * target;
-@property(assign,readwrite) bool useTraditionalEncoder;
+@property (nonatomic, readonly) NSObject<OS_xpc_object> *connection;
+@property (copy) id errorHandler;
+@property Class remoteClass;
+@property Protocol *remoteProtocol;
+@property <XPCProxyTarget> *target;
+@property (nonatomic) bool useTraditionalEncoder;
 
 + (void)initialize;
 

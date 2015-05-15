@@ -22,11 +22,11 @@
     bool _isDeferringInterfaceUpdates;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(getter=isDeferringInterfaceUpdates,assign,readwrite) bool deferringInterfaceUpdates;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (getter=isDeferringInterfaceUpdates, nonatomic) bool deferringInterfaceUpdates;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_commitDeferredInterfaceUpdates;
 - (void)_insertSegmentWithValue:(id)arg1 atIndex:(unsigned long long)arg2;

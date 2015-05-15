@@ -13,13 +13,13 @@
     id _removeLibraryHandler;
 }
 
-@property(assign,readonly) NSArray * availableLibraries;
-@property(assign,readwrite) long long browserType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * homeSharingGroupID;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *availableLibraries;
+@property (nonatomic) long long browserType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *homeSharingGroupID;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_didFindService:(id)arg1 moreComing:(bool)arg2;

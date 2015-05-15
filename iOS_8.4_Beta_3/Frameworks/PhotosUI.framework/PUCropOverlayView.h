@@ -22,15 +22,15 @@
     bool _straightenGridVisible;
 }
 
-@property(setter=_setCropWindowView:,assign,retain) UIView * _cropWindowView;
-@property(setter=_setMaskViews:,assign,retain) NSArray * _maskViews;
-@property(setter=_setOneNinethLines:,assign,retain) NSArray * _oneNinthCropLines;
-@property(setter=_setOneThirdLines:,assign,retain) NSArray * _oneThirdCropLines;
-@property(getter=isCropGridVisible,assign,readwrite) bool cropGridVisible;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cropRect;
-@property(assign,readonly) id layoutReferenceItem;
-@property(getter=isMaskedContentVisible,assign,readwrite) bool maskedContentVisible;
-@property(getter=isStraightenGridVisible,assign,readwrite) bool straightenGridVisible;
+@property (setter=_setCropWindowView:, nonatomic, retain) UIView *_cropWindowView;
+@property (setter=_setMaskViews:, nonatomic, retain) NSArray *_maskViews;
+@property (setter=_setOneNinethLines:, nonatomic, retain) NSArray *_oneNinthCropLines;
+@property (setter=_setOneThirdLines:, nonatomic, retain) NSArray *_oneThirdCropLines;
+@property (getter=isCropGridVisible, nonatomic) bool cropGridVisible;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cropRect;
+@property (nonatomic, readonly) id layoutReferenceItem;
+@property (getter=isMaskedContentVisible, nonatomic) bool maskedContentVisible;
+@property (getter=isStraightenGridVisible, nonatomic) bool straightenGridVisible;
 
 - (void).cxx_destruct;
 - (id)_addLinesSpacedForCount:(unsigned long long)arg1 drawFirstAndLast:(bool)arg2 visible:(bool)arg3;

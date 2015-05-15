@@ -15,13 +15,13 @@
     WKContentView *_view;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) <WKRotatingPopoverDelegate> * dismissionDelegate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIPopoverController * popoverController;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } presentationPoint;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) <WKRotatingPopoverDelegate> *dismissionDelegate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIPopoverController *popoverController;
+@property (nonatomic) struct CGPoint { double x1; double x2; } presentationPoint;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

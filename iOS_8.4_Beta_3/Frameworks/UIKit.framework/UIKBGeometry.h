@@ -39,16 +39,16 @@
     } m_y;
 }
 
-@property(assign,readwrite) bool explicitlySpecified;
-@property(setter=setH:,assign,readwrite) struct { double x1; int x2; } h;
-@property(assign,retain) NSString * name;
-@property(setter=setPaddingBottom:,assign,readwrite) struct { double x1; int x2; } paddingBottom;
-@property(setter=setPaddingLeft:,assign,readwrite) struct { double x1; int x2; } paddingLeft;
-@property(setter=setPaddingRight:,assign,readwrite) struct { double x1; int x2; } paddingRight;
-@property(setter=setPaddingTop:,assign,readwrite) struct { double x1; int x2; } paddingTop;
-@property(setter=setW:,assign,readwrite) struct { double x1; int x2; } w;
-@property(setter=setX:,assign,readwrite) struct { double x1; int x2; } x;
-@property(setter=setY:,assign,readwrite) struct { double x1; int x2; } y;
+@property (nonatomic) bool explicitlySpecified;
+@property (setter=setH:, nonatomic) struct { double x1; int x2; } h;
+@property (nonatomic, retain) NSString *name;
+@property (setter=setPaddingBottom:, nonatomic) struct { double x1; int x2; } paddingBottom;
+@property (setter=setPaddingLeft:, nonatomic) struct { double x1; int x2; } paddingLeft;
+@property (setter=setPaddingRight:, nonatomic) struct { double x1; int x2; } paddingRight;
+@property (setter=setPaddingTop:, nonatomic) struct { double x1; int x2; } paddingTop;
+@property (setter=setW:, nonatomic) struct { double x1; int x2; } w;
+@property (setter=setX:, nonatomic) struct { double x1; int x2; } x;
+@property (setter=setY:, nonatomic) struct { double x1; int x2; } y;
 
 + (id)codeStringForValue:(struct { double x1; int x2; })arg1;
 + (id)geometry;

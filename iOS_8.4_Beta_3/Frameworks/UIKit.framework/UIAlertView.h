@@ -24,19 +24,19 @@
     UIViewController *externalViewControllerForPresentation;
 }
 
-@property(setter=_setCurrentlyRunningModal:,assign,readwrite) bool _currentlyRunningModal;
-@property(assign,readwrite) long long alertViewStyle;
-@property(assign,readwrite) long long cancelButtonIndex;
-@property(assign,readwrite) id delegate;
-@property(getter=_externalViewControllerForPresentation,setter=_setExternalViewControllerForPresentation:,assign,retain) UIViewController * externalViewControllerForPresentation;
-@property(assign,readonly) long long firstOtherButtonIndex;
-@property(assign,readwrite) bool groupsTextFields;
-@property(assign,copy) NSString * message;
-@property(assign,readonly) long long numberOfButtons;
-@property(assign,readwrite) bool showsOverSpringBoardAlerts;
-@property(assign,copy) NSString * title;
-@property(getter=isVisible,assign,readonly) bool visible;
-@property(assign,retain) _UIWeakRef * weakDelegate;
+@property (setter=_setCurrentlyRunningModal:, nonatomic) bool _currentlyRunningModal;
+@property (nonatomic) long long alertViewStyle;
+@property (nonatomic) long long cancelButtonIndex;
+@property (nonatomic) id delegate;
+@property (getter=_externalViewControllerForPresentation, setter=_setExternalViewControllerForPresentation:, nonatomic, retain) UIViewController *externalViewControllerForPresentation;
+@property (nonatomic, readonly) long long firstOtherButtonIndex;
+@property (nonatomic) bool groupsTextFields;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, readonly) long long numberOfButtons;
+@property (nonatomic) bool showsOverSpringBoardAlerts;
+@property (nonatomic, copy) NSString *title;
+@property (getter=isVisible, nonatomic, readonly) bool visible;
+@property (nonatomic, retain) _UIWeakRef *weakDelegate;
 
 + (id)_alertViewForSessionWithRemoteViewController:(id)arg1;
 + (id)_alertViewForWindow:(id)arg1;
@@ -134,7 +134,6 @@
 - (id)initWithTitle:(id)arg1 buttons:(id)arg2 defaultButtonIndex:(int)arg3 delegate:(id)arg4 context:(id)arg5;
 - (id)initWithTitle:(id)arg1 message:(id)arg2 delegate:(id)arg3 cancelButtonTitle:(id)arg4 otherButtonTitles:(id)arg5;
 - (id)initWithTitle:(id)arg1 message:(id)arg2 delegate:(id)arg3 defaultButton:(id)arg4 cancelButton:(id)arg5 otherButtons:(id)arg6;
-- (id)initWithTitle:(id)arg1 message:(id)arg2 leftButtonTitle:(id)arg3 leftButtonAction:(id)arg4 rightButtonTitle:(id)arg5 rightButtonAction:(id)arg6;
 - (bool)isBodyTextTruncated;
 - (bool)isVisible;
 - (id)keyboard;
@@ -154,6 +153,7 @@
 - (void)presentSheetToAboveView:(id)arg1;
 - (void)replaceAlert:(id)arg1;
 - (bool)requiresPortraitOrientation;
+- (id)rtb_initWithTitle:(id)arg1 message:(id)arg2 leftButtonTitle:(id)arg3 leftButtonAction:(id)arg4 rightButtonTitle:(id)arg5 rightButtonAction:(id)arg6;
 - (bool)runsModal;
 - (void)setAlertSheetStyle:(int)arg1;
 - (void)setAlertViewStyle:(long long)arg1;

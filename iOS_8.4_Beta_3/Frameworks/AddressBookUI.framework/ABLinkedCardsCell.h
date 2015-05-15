@@ -8,9 +8,9 @@
     UILabel *_sourceLabel;
 }
 
-@property(assign,readwrite) <ABPropertyCellDelegate> * delegate;
-@property(assign,readonly) UILabel * nameLabel;
-@property(assign,readonly) UILabel * sourceLabel;
+@property (nonatomic) <ABPropertyCellDelegate> *delegate;
+@property (nonatomic, readonly) UILabel *nameLabel;
+@property (nonatomic, readonly) UILabel *sourceLabel;
 
 + (bool)wantsChevron;
 

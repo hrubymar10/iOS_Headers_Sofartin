@@ -6,7 +6,7 @@
     MTLSamplerDescriptor *_descriptor;
 }
 
-@property(assign,copy) MTLSamplerDescriptor * descriptor;
+@property (nonatomic, readonly, copy) MTLSamplerDescriptor *descriptor;
 
 - (void).cxx_destruct;
 - (id)description;

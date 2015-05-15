@@ -12,11 +12,11 @@
     long long _workImageVersion;
 }
 
-@property(assign,readonly) PHContentEditingOutput * contentEditingOutput;
-@property(assign,readonly) long long currentState;
-@property(assign,copy) PLPhotoEditModel * editModel;
-@property(assign,readonly) PHAsset * photo;
-@property(assign,readonly) long long workImageVersion;
+@property (nonatomic, readonly) PHContentEditingOutput *contentEditingOutput;
+@property (nonatomic, readonly) long long currentState;
+@property (nonatomic, readonly, copy) PLPhotoEditModel *editModel;
+@property (nonatomic, readonly) PHAsset *photo;
+@property (nonatomic, readonly) long long workImageVersion;
 
 - (void).cxx_destruct;
 - (void)_finishWithSuccess:(bool)arg1 error:(id)arg2;

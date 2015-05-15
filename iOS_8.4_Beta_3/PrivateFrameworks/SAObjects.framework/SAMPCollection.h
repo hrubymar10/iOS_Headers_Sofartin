@@ -4,7 +4,7 @@
 
 @interface SAMPCollection : SAMPMediaEntity
 
-@property(assign,copy) NSArray * items;
+@property (nonatomic, copy) NSArray *items;
 
 + (id)collection;
 + (id)collectionWithDictionary:(id)arg1 context:(id)arg2;

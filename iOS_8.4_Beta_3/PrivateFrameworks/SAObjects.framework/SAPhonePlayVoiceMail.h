@@ -4,7 +4,7 @@
 
 @interface SAPhonePlayVoiceMail : SADomainCommand
 
-@property(assign,copy) NSURL * voiceMailId;
+@property (nonatomic, copy) NSURL *voiceMailId;
 
 + (id)playVoiceMail;
 + (id)playVoiceMailWithDictionary:(id)arg1 context:(id)arg2;

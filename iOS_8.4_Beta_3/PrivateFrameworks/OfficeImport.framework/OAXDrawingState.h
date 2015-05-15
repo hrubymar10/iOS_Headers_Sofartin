@@ -29,16 +29,16 @@
     NSMutableArray *mTgtBulletBlips;
 }
 
-@property(assign,retain) CXNamespace * OAXChartDrawingNamespace;
-@property(assign,retain) CXNamespace * OAXChartNamespace;
-@property(assign,retain) CXNamespace * OAXCompatNamespace;
-@property(assign,retain) CXNamespace * OAXDrawing2010Namespace;
-@property(assign,retain) CXNamespace * OAXLockedCanvasNamespace;
-@property(assign,retain) CXNamespace * OAXMainNamespace;
-@property(assign,retain) CXNamespace * OAXPictureNamespace;
-@property(assign,retain) CXNamespace * OAXWordProcessingMLNamespace;
-@property(assign,retain) NSMutableDictionary * sourceURLToTargetBlipIndexMap;
-@property(assign,retain) NSMutableDictionary * sourceURLToTargetBulletBlipIndexMap;
+@property (nonatomic, retain) CXNamespace *OAXChartDrawingNamespace;
+@property (nonatomic, retain) CXNamespace *OAXChartNamespace;
+@property (nonatomic, retain) CXNamespace *OAXCompatNamespace;
+@property (nonatomic, retain) CXNamespace *OAXDrawing2010Namespace;
+@property (nonatomic, retain) CXNamespace *OAXLockedCanvasNamespace;
+@property (nonatomic, retain) CXNamespace *OAXMainNamespace;
+@property (nonatomic, retain) CXNamespace *OAXPictureNamespace;
+@property (nonatomic, retain) CXNamespace *OAXWordProcessingMLNamespace;
+@property (nonatomic, retain) NSMutableDictionary *sourceURLToTargetBlipIndexMap;
+@property (nonatomic, retain) NSMutableDictionary *sourceURLToTargetBulletBlipIndexMap;
 
 - (id)OAXChartDrawingNamespace;
 - (id)OAXChartNamespace;

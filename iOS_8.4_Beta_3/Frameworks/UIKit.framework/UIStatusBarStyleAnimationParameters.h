@@ -6,7 +6,7 @@
     int _styleAnimation;
 }
 
-@property(assign,readwrite) int styleAnimation;
+@property (nonatomic) int styleAnimation;
 
 - (id)initWithDefaultParameters;
 - (void)setStyleAnimation:(int)arg1;

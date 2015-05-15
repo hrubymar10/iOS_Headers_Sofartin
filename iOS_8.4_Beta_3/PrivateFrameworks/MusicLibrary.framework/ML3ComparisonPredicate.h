@@ -10,12 +10,12 @@
     id _value;
 }
 
-@property(assign,readwrite) bool caseInsensitive;
-@property(assign,readwrite) int comparison;
-@property(assign,copy) NSString * operator;
-@property(assign,copy) NSString * transformFunction;
-@property(assign,copy) NSString * treatNullAsString;
-@property(assign,retain) id value;
+@property (nonatomic) bool caseInsensitive;
+@property (nonatomic) int comparison;
+@property (nonatomic, readonly, copy) NSString *operator;
+@property (nonatomic, copy) NSString *transformFunction;
+@property (nonatomic, copy) NSString *treatNullAsString;
+@property (nonatomic, retain) id value;
 
 + (id)predicateWithProperty:(id)arg1 equalToInt64:(long long)arg2;
 + (id)predicateWithProperty:(id)arg1 equalToInteger:(long long)arg2;

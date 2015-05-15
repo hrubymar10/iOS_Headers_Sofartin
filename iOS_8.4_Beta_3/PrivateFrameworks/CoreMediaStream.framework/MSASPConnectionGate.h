@@ -6,7 +6,7 @@
     NSError *_error;
 }
 
-@property(assign,retain) NSError * error;
+@property (nonatomic, retain) NSError *error;
 
 + (id)gate;
 

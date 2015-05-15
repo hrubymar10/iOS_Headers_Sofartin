@@ -9,14 +9,14 @@
     bool _videoDataDiscardsLateVideoFrames;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * sinkID;
-@property(assign,readwrite) int sinkType;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool videoDataDerivedFromPreview;
-@property(assign,readwrite) bool videoDataDiscardsLateVideoFrames;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *sinkID;
+@property (nonatomic) int sinkType;
+@property (readonly) Class superclass;
+@property (nonatomic) bool videoDataDerivedFromPreview;
+@property (nonatomic) bool videoDataDiscardsLateVideoFrames;
 
 + (void)initialize;
 + (int)sinkTypeForString:(id)arg1;

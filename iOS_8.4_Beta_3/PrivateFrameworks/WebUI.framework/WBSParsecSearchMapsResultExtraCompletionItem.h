@@ -9,14 +9,14 @@
     NSURL *_url;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * feedbackIdentifier;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * parsecDomainIdentifier;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * title;
-@property(assign,readonly) NSURL * url;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *feedbackIdentifier;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *parsecDomainIdentifier;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) NSURL *url;
 
 - (void).cxx_destruct;
 - (id)feedbackIdentifier;

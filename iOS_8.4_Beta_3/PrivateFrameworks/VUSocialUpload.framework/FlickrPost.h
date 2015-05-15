@@ -15,20 +15,20 @@
     unsigned int _visibility;
 }
 
-@property(assign,retain) NSURL * assetURL;
-@property(assign,readwrite) int contentType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hidden;
-@property(assign,retain) NSData * photoData;
-@property(assign,readwrite) long long photoSetID;
-@property(assign,retain) NSString * postDescription;
-@property(assign,readwrite) int safetyLevel;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSArray * tags;
-@property(assign,retain) NSString * title;
-@property(assign,readwrite) unsigned int visibility;
+@property (nonatomic, retain) NSURL *assetURL;
+@property (nonatomic) int contentType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hidden;
+@property (nonatomic, retain) NSData *photoData;
+@property (nonatomic) long long photoSetID;
+@property (nonatomic, retain) NSString *postDescription;
+@property (nonatomic) int safetyLevel;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSArray *tags;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic) unsigned int visibility;
 
 + (bool)supportsSecureCoding;
 

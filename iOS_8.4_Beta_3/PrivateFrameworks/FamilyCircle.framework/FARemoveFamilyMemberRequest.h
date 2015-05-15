@@ -6,7 +6,7 @@
     NSNumber *_memberDSID;
 }
 
-@property(assign,copy) NSNumber * memberDSID;
+@property (readonly, copy) NSNumber *memberDSID;
 
 - (void).cxx_destruct;
 - (id)initWithFamilyMemberDSID:(id)arg1;

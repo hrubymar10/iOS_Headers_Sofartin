@@ -6,7 +6,7 @@
     NSMutableArray *_localizedStrings;
 }
 
-@property(assign,retain) NSMutableArray * localizedStrings;
+@property (nonatomic, retain) NSMutableArray *localizedStrings;
 
 - (void)addLocalizedString:(id)arg1;
 - (id)bestLocalizedName;

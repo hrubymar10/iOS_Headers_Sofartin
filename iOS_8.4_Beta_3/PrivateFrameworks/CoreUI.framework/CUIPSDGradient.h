@@ -8,9 +8,9 @@
     unsigned int gradientStyle;
 }
 
-@property(assign,readwrite) double drawingAngle;
-@property(assign,retain) CUIPSDGradientEvaluator * evaluator;
-@property(assign,readwrite) unsigned int gradientStyle;
+@property double drawingAngle;
+@property (retain) CUIPSDGradientEvaluator *evaluator;
+@property unsigned int gradientStyle;
 
 + (id)cuiPSDGradientWithColors:(id)arg1 locations:(id)arg2 midpointLocations:(id)arg3 angle:(double)arg4 isRadial:(bool)arg5;
 + (id)getMidpointLocationFromArray:(id)arg1 atIndex:(long long)arg2 withPolicy:(int)arg3;

@@ -8,7 +8,7 @@
     CALayer *_leftBorder;
 }
 
-@property(assign,readwrite) bool hidesLeftBorder;
+@property (nonatomic) bool hidesLeftBorder;
 
 + (id)buttonWithHeight:(double)arg1;
 + (id)wrappingViewForButton:(id)arg1;

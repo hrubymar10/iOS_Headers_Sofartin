@@ -6,7 +6,7 @@
     NSDictionary *_dictionary;
 }
 
-@property(assign,readonly) NSDictionary * dictionary;
+@property (readonly) NSDictionary *dictionary;
 
 + (bool)isKeyExcludedFromWebScript:(const char *)arg1;
 

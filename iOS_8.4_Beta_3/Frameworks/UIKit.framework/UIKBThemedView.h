@@ -17,18 +17,18 @@
     bool _usePersistentCaching;
 }
 
-@property(assign,readwrite) bool active;
-@property(assign,readonly) bool cacheDeferable;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } cacheInsets;
-@property(assign,readonly) NSString * cacheKey;
-@property(assign,readonly) double cachedWidth;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool keepNonPersistent;
-@property(assign,readwrite) int style;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool usePersistentCaching;
+@property (nonatomic) bool active;
+@property (nonatomic, readonly) bool cacheDeferable;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } cacheInsets;
+@property (nonatomic, readonly) NSString *cacheKey;
+@property (nonatomic, readonly) double cachedWidth;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool keepNonPersistent;
+@property (nonatomic) int style;
+@property (readonly) Class superclass;
+@property (nonatomic) bool usePersistentCaching;
 
 - (bool)_canDrawContent;
 - (bool)_hasInsets;

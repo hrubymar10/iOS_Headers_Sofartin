@@ -6,7 +6,7 @@
     NSString *_name;
 }
 
-@property(assign,readonly) NSString * name;
+@property (readonly) NSString *name;
 
 - (void).cxx_destruct;
 - (void)dealloc;

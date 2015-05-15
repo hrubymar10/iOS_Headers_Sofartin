@@ -6,7 +6,7 @@
     _MKPlacePhotosCollectionView *_photoGrid;
 }
 
-@property(assign,readonly) _MKPlacePhotosCollectionView * photoGrid;
+@property (nonatomic, readonly) _MKPlacePhotosCollectionView *photoGrid;
 
 + (id)reuseIdentifier;
 

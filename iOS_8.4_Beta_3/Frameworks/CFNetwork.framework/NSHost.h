@@ -8,12 +8,12 @@
     id reserved;
 }
 
-@property(assign,copy) NSString * address;
-@property(assign,copy) NSArray * addresses;
-@property(assign,copy) NSString * localizedName;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSArray * names;
-@property(assign,retain) __NSHostExtraIvars * reserved;
+@property (readonly, copy) NSString *address;
+@property (readonly, copy) NSArray *addresses;
+@property (readonly, copy) NSString *localizedName;
+@property (readonly, copy) NSString *name;
+@property (readonly, copy) NSArray *names;
+@property (nonatomic, retain) __NSHostExtraIvars *reserved;
 
 + (id)currentHost;
 + (void)flushHostCache;

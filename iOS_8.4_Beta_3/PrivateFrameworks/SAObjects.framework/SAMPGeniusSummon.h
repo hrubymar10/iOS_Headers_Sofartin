@@ -4,8 +4,8 @@
 
 @interface SAMPGeniusSummon : SADomainCommand
 
-@property(assign,retain) SAMPMediaItem * mediaItem;
-@property(assign,copy) NSString * upNextQueueInsertLocation;
+@property (nonatomic, retain) SAMPMediaItem *mediaItem;
+@property (nonatomic, copy) NSString *upNextQueueInsertLocation;
 
 + (id)geniusSummon;
 + (id)geniusSummonWithDictionary:(id)arg1 context:(id)arg2;

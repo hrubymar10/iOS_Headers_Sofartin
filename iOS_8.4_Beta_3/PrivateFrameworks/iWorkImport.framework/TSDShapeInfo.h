@@ -7,26 +7,26 @@
     TSDShapeStyle *mStyle;
 }
 
-@property(getter=isAnchoredToText,assign,readonly) bool anchoredToText;
-@property(getter=isAttachedToBodyText,assign,readonly) bool attachedToBodyText;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) TSDFill * fill;
-@property(getter=isFloatingAboveText,assign,readonly) bool floatingAboveText;
-@property(assign,copy) TSDInfoGeometry * geometry;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) TSDLineEnd * headLineEnd;
-@property(getter=isInlineWithText,assign,readonly) bool inlineWithText;
-@property(assign,readwrite) bool matchesObjectPlaceholderGeometry;
-@property(assign,readwrite) TSPObject<TSDOwningAttachment> * owningAttachment;
-@property(assign,readonly) TSPObject<TSDOwningAttachment> * owningAttachmentNoRecurse;
-@property(assign,readwrite) NSObject<TSDContainerInfo> * parentInfo;
-@property(assign,retain) TSDPathSource * pathSource;
-@property(assign,readonly) TSDShapeStyle * shapeStyle;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool supportsShrinkTextToFit;
-@property(assign,readonly) bool supportsTextInset;
-@property(assign,copy) TSDLineEnd * tailLineEnd;
+@property (getter=isAnchoredToText, nonatomic, readonly) bool anchoredToText;
+@property (getter=isAttachedToBodyText, nonatomic, readonly) bool attachedToBodyText;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) TSDFill *fill;
+@property (getter=isFloatingAboveText, nonatomic, readonly) bool floatingAboveText;
+@property (nonatomic, copy) TSDInfoGeometry *geometry;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) TSDLineEnd *headLineEnd;
+@property (getter=isInlineWithText, nonatomic, readonly) bool inlineWithText;
+@property (nonatomic) bool matchesObjectPlaceholderGeometry;
+@property (nonatomic) TSPObject<TSDOwningAttachment> *owningAttachment;
+@property (nonatomic, readonly) TSPObject<TSDOwningAttachment> *owningAttachmentNoRecurse;
+@property (nonatomic) NSObject<TSDContainerInfo> *parentInfo;
+@property (nonatomic, retain) TSDPathSource *pathSource;
+@property (nonatomic, readonly) TSDShapeStyle *shapeStyle;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool supportsShrinkTextToFit;
+@property (nonatomic, readonly) bool supportsTextInset;
+@property (nonatomic, copy) TSDLineEnd *tailLineEnd;
 
 - (id)animationFilters;
 - (id)copyWithContext:(id)arg1;

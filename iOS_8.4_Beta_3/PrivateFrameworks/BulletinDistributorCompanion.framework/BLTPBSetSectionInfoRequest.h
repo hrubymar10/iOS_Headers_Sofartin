@@ -6,8 +6,8 @@
     BLTPBSectionInfo *_sectionInfo;
 }
 
-@property(assign,readonly) bool hasSectionInfo;
-@property(assign,retain) BLTPBSectionInfo * sectionInfo;
+@property (nonatomic, readonly) bool hasSectionInfo;
+@property (nonatomic, retain) BLTPBSectionInfo *sectionInfo;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

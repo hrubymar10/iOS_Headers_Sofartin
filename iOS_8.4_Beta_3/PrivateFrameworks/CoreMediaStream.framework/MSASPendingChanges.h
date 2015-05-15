@@ -9,10 +9,10 @@
     NSMutableSet *_pendingAlbumGUIDsWithSharingInfoChanges;
 }
 
-@property(assign,retain) NSMutableSet * pendingAlbumChanges;
-@property(assign,retain) NSMutableDictionary * pendingAlbumGUIDToAssetCollections;
-@property(assign,retain) NSMutableSet * pendingAlbumGUIDsWithKeyValueChanges;
-@property(assign,retain) NSMutableSet * pendingAlbumGUIDsWithSharingInfoChanges;
+@property (nonatomic, retain) NSMutableSet *pendingAlbumChanges;
+@property (nonatomic, retain) NSMutableDictionary *pendingAlbumGUIDToAssetCollections;
+@property (nonatomic, retain) NSMutableSet *pendingAlbumGUIDsWithKeyValueChanges;
+@property (nonatomic, retain) NSMutableSet *pendingAlbumGUIDsWithSharingInfoChanges;
 
 - (void).cxx_destruct;
 - (void)addPendingAssetCollectionChanges:(id)arg1 forAlbumGUID:(id)arg2;

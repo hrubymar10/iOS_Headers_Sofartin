@@ -8,9 +8,9 @@
     NSString *_passUniqueID;
 }
 
-@property(assign,copy) PKVerificationChannel * channel;
-@property(assign,copy) NSDate * date;
-@property(assign,copy) NSString * passUniqueID;
+@property (nonatomic, copy) PKVerificationChannel *channel;
+@property (nonatomic, copy) NSDate *date;
+@property (nonatomic, copy) NSString *passUniqueID;
 
 + (bool)supportsSecureCoding;
 + (id)verificationRequestRecordForPass:(id)arg1 channel:(id)arg2 date:(id)arg3;

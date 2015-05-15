@@ -4,12 +4,12 @@
 
 @interface SACalendarRange : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) SACalendar * end;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SACalendar * start;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) SACalendar *end;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SACalendar *start;
+@property (readonly) Class superclass;
 
 + (id)calendarRange;
 + (id)calendarRangeWithDictionary:(id)arg1 context:(id)arg2;

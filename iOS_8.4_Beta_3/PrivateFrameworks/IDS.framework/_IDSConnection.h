@@ -14,12 +14,12 @@
     NSString *_serviceToken;
 }
 
-@property(assign,retain) IDSAccount * account;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isActive;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, retain) IDSAccount *account;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isActive;
+@property (readonly) Class superclass;
 
 - (void)_callDelegatesWithBlock:(id)arg1;
 - (void)_callDelegatesWithBlock:(id)arg1 group:(id)arg2;

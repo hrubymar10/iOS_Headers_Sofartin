@@ -7,7 +7,7 @@
     int _r;
 }
 
-@property(getter=isSuspended,assign,readonly) bool suspended;
+@property (getter=isSuspended, nonatomic, readonly) bool suspended;
 
 - (void).cxx_destruct;
 - (void)async:(id)arg1;

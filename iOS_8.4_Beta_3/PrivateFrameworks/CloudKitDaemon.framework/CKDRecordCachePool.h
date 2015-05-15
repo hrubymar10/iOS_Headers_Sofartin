@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_source> * expiryTimer;
-@property(assign,retain) NSMutableDictionary * pools;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *expiryTimer;
+@property (nonatomic, retain) NSMutableDictionary *pools;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 + (id)sharedPool;
 

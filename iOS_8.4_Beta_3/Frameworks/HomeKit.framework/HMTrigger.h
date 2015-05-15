@@ -13,21 +13,21 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,copy) NSArray * actionSets;
-@property(assign,retain) NSMutableArray * currentActionSets;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) HMHome * home;
-@property(assign,copy) NSDate * lastFireDate;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * messageReceiveQueue;
-@property(assign,readonly) NSUUID * messageTargetUUID;
-@property(assign,retain) HMMessageDispatcher * msgDispatcher;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSUUID * uuid;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, readonly, copy) NSArray *actionSets;
+@property (nonatomic, retain) NSMutableArray *currentActionSets;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) HMHome *home;
+@property (nonatomic, copy) NSDate *lastFireDate;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *messageReceiveQueue;
+@property (nonatomic, readonly) NSUUID *messageTargetUUID;
+@property (nonatomic, retain) HMMessageDispatcher *msgDispatcher;
+@property (nonatomic, copy) NSString *name;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSUUID *uuid;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 + (bool)supportsSecureCoding;
 

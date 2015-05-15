@@ -8,27 +8,27 @@
     bool _hasChanges;
 }
 
-@property(assign,retain) NSString * accountPrsId;
-@property(assign,retain) NSString * bookmarksBarId;
-@property(assign,readwrite) unsigned long long bookmarksBarOrder;
-@property(assign,retain) NSString * bookmarksMenuId;
-@property(assign,readwrite) unsigned long long bookmarksMenuOrder;
-@property(assign,retain) NSDictionary * bulkRequests;
-@property(assign,readwrite) unsigned long long clientVersion;
-@property(assign,retain) NSString * ctag;
-@property(assign,retain) NSString * etag;
-@property(assign,readonly) bool hasChanges;
-@property(assign,readwrite) bool hasHitQuotaLimit;
-@property(assign,retain) NSDictionary * heldAsideOrderings;
-@property(assign,retain) NSURL * homeURL;
-@property(assign,readwrite) bool initialSyncDone;
-@property(assign,retain) NSNumber * knownQuotaRemaining;
-@property(assign,retain) NSURL * principalURL;
-@property(assign,retain) NSString * ptag;
-@property(assign,retain) NSString * pushKey;
-@property(assign,retain) NSDictionary * pushTransports;
-@property(assign,readwrite) bool supportsSyncCollection;
-@property(assign,retain) NSString * syncToken;
+@property (nonatomic, retain) NSString *accountPrsId;
+@property (nonatomic, retain) NSString *bookmarksBarId;
+@property (nonatomic) unsigned long long bookmarksBarOrder;
+@property (nonatomic, retain) NSString *bookmarksMenuId;
+@property (nonatomic) unsigned long long bookmarksMenuOrder;
+@property (nonatomic, retain) NSDictionary *bulkRequests;
+@property (nonatomic) unsigned long long clientVersion;
+@property (nonatomic, retain) NSString *ctag;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, readonly) bool hasChanges;
+@property (nonatomic) bool hasHitQuotaLimit;
+@property (nonatomic, retain) NSDictionary *heldAsideOrderings;
+@property (nonatomic, retain) NSURL *homeURL;
+@property (nonatomic) bool initialSyncDone;
+@property (nonatomic, retain) NSNumber *knownQuotaRemaining;
+@property (nonatomic, retain) NSURL *principalURL;
+@property (nonatomic, retain) NSString *ptag;
+@property (nonatomic, retain) NSString *pushKey;
+@property (nonatomic, retain) NSDictionary *pushTransports;
+@property (nonatomic) bool supportsSyncCollection;
+@property (nonatomic, retain) NSString *syncToken;
 
 - (id)accountPrsId;
 - (id)bookmarksBarId;

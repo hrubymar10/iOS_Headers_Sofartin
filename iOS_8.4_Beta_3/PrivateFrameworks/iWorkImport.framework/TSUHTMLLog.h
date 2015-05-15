@@ -13,10 +13,10 @@
     unsigned long long _uniquifier;
 }
 
-@property(assign,readonly) NSString * path;
-@property(assign,copy) NSString * script;
-@property(assign,copy) NSString * stylesheet;
-@property(assign,copy) NSString * title;
+@property (nonatomic, readonly) NSString *path;
+@property (nonatomic, copy) NSString *script;
+@property (nonatomic, copy) NSString *stylesheet;
+@property (nonatomic, copy) NSString *title;
 
 - (void)_writeMarkupData:(id)arg1;
 - (void)clear;

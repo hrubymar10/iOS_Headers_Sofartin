@@ -18,19 +18,19 @@
     bool _wantsTransportTask;
 }
 
-@property(getter=isBackgroundTask,assign,readwrite) bool backgroundTask;
-@property(assign,readonly) id cancelHandler;
-@property(getter=isCancelledByEngine,assign,readwrite) bool cancelledByEngine;
-@property(assign,retain) NSString * clientBundleID;
-@property(assign,retain) CPLResource * cloudResource;
-@property(assign,readonly) id completionHandler;
-@property(assign,readonly) id didStartHandler;
-@property(assign,readonly) id launchHandler;
-@property(assign,readonly) id progressHandler;
-@property(assign,readwrite) unsigned long long taskIdentifierForQueue;
-@property(assign,readwrite) bool transportOwnsTask;
-@property(assign,retain) <CPLEngineTransportTask> * transportTask;
-@property(assign,readwrite) bool wantsTransportTask;
+@property (getter=isBackgroundTask, nonatomic) bool backgroundTask;
+@property (nonatomic, readonly) id cancelHandler;
+@property (getter=isCancelledByEngine, nonatomic) bool cancelledByEngine;
+@property (nonatomic, retain) NSString *clientBundleID;
+@property (nonatomic, retain) CPLResource *cloudResource;
+@property (nonatomic, readonly) id completionHandler;
+@property (nonatomic, readonly) id didStartHandler;
+@property (nonatomic, readonly) id launchHandler;
+@property (nonatomic, readonly) id progressHandler;
+@property (nonatomic) unsigned long long taskIdentifierForQueue;
+@property (nonatomic) bool transportOwnsTask;
+@property (nonatomic, retain) <CPLEngineTransportTask> *transportTask;
+@property (nonatomic) bool wantsTransportTask;
 
 - (void).cxx_destruct;
 - (id)cancelHandler;

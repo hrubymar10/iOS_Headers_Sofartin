@@ -13,17 +13,17 @@
     NSString *_unmodifiedInput;
 }
 
-@property(assign,retain) NSString * _commandModifiedInput;
-@property(assign,readonly) long long _gsModifierFlags;
-@property(assign,readwrite) int _inputFlags;
-@property(assign,readonly) bool _isKeyDown;
-@property(assign,readonly) long long _keyCode;
-@property(assign,retain) NSString * _markedInput;
-@property(assign,retain) NSString * _modifiedInput;
-@property(assign,readwrite) long long _modifierFlags;
-@property(assign,retain) NSString * _privateInput;
-@property(assign,retain) NSString * _shiftModifiedInput;
-@property(assign,retain) NSString * _unmodifiedInput;
+@property (nonatomic, retain) NSString *_commandModifiedInput;
+@property (nonatomic, readonly) long long _gsModifierFlags;
+@property (nonatomic) int _inputFlags;
+@property (nonatomic, readonly) bool _isKeyDown;
+@property (nonatomic, readonly) long long _keyCode;
+@property (nonatomic, retain) NSString *_markedInput;
+@property (nonatomic, retain) NSString *_modifiedInput;
+@property (nonatomic) long long _modifierFlags;
+@property (nonatomic, retain) NSString *_privateInput;
+@property (nonatomic, retain) NSString *_shiftModifiedInput;
+@property (nonatomic, retain) NSString *_unmodifiedInput;
 
 + (id)_eventWithInput:(id)arg1 inputFlags:(int)arg2;
 

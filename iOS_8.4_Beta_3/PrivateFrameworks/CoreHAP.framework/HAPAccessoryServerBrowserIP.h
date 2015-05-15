@@ -9,9 +9,9 @@
     NSMutableSet *_discoveredAccessoryServers;
 }
 
-@property(assign,readwrite) <HAPAccessoryServerBrowserDelegate> * delegate;
-@property(assign,retain) NSObject<OS_dispatch_queue> * delegateQueue;
-@property(assign,retain) NSMutableSet * discoveredAccessoryServers;
+@property (nonatomic) <HAPAccessoryServerBrowserDelegate> *delegate;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *delegateQueue;
+@property (nonatomic, retain) NSMutableSet *discoveredAccessoryServers;
 
 - (void).cxx_destruct;
 - (bool)_delegateRespondsToSelector:(SEL)arg1;

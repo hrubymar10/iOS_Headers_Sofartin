@@ -11,10 +11,10 @@
     int _sessionIdentifier;
 }
 
-@property(assign,readwrite) bool hasResponseCode;
-@property(assign,readwrite) bool hasSessionIdentifier;
-@property(assign,readwrite) int responseCode;
-@property(assign,readwrite) int sessionIdentifier;
+@property (nonatomic) bool hasResponseCode;
+@property (nonatomic) bool hasSessionIdentifier;
+@property (nonatomic) int responseCode;
+@property (nonatomic) int sessionIdentifier;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

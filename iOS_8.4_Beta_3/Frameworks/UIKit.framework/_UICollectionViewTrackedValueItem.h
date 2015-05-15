@@ -7,8 +7,8 @@
     double _value;
 }
 
-@property(assign,readwrite) double timeStamp;
-@property(assign,readwrite) double value;
+@property (nonatomic) double timeStamp;
+@property (nonatomic) double value;
 
 - (void)setTimeStamp:(double)arg1;
 - (void)setValue:(double)arg1;

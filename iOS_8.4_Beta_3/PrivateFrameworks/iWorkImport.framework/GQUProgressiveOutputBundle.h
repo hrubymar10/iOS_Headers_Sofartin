@@ -12,10 +12,10 @@
     struct __CFString { } *mUuidStr;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (bool)appendData:(struct __CFData { }*)arg1 mimeType:(struct __CFString { }*)arg2 resourceName:(struct __CFString { }*)arg3;
 - (void)closeAttachment:(struct __CFString { }*)arg1;

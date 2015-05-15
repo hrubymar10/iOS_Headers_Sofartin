@@ -9,9 +9,9 @@
     NSString *_userRatingCountString;
 }
 
-@property(assign,readwrite) float userRating;
-@property(assign,readwrite) long long userRatingCount;
-@property(assign,retain) NSString * userRatingCountString;
+@property (nonatomic) float userRating;
+@property (nonatomic) long long userRatingCount;
+@property (nonatomic, retain) NSString *userRatingCountString;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })contentRectForBounds:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 - (void)dealloc;

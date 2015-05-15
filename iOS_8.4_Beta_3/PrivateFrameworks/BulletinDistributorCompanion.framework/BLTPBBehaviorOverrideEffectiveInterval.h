@@ -12,14 +12,14 @@
     BLTPBDateComponents *_startComponents;
 }
 
-@property(assign,retain) NSString * calendarIdentifier;
-@property(assign,retain) BLTPBDateComponents * endComponents;
-@property(assign,readonly) bool hasCalendarIdentifier;
-@property(assign,readonly) bool hasEndComponents;
-@property(assign,readwrite) bool hasRepeatInterval;
-@property(assign,readonly) bool hasStartComponents;
-@property(assign,readwrite) int repeatInterval;
-@property(assign,retain) BLTPBDateComponents * startComponents;
+@property (nonatomic, retain) NSString *calendarIdentifier;
+@property (nonatomic, retain) BLTPBDateComponents *endComponents;
+@property (nonatomic, readonly) bool hasCalendarIdentifier;
+@property (nonatomic, readonly) bool hasEndComponents;
+@property (nonatomic) bool hasRepeatInterval;
+@property (nonatomic, readonly) bool hasStartComponents;
+@property (nonatomic) int repeatInterval;
+@property (nonatomic, retain) BLTPBDateComponents *startComponents;
 
 - (void).cxx_destruct;
 - (id)calendarIdentifier;

@@ -13,14 +13,14 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) bool hasSwitchCount;
-@property(assign,readonly) bool hasSwitchFromInterfaceName;
-@property(assign,readonly) bool hasSwitchToInterfaceName;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) int switchCount;
-@property(assign,retain) NSString * switchFromInterfaceName;
-@property(assign,retain) NSString * switchToInterfaceName;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) bool hasSwitchCount;
+@property (nonatomic, readonly) bool hasSwitchFromInterfaceName;
+@property (nonatomic, readonly) bool hasSwitchToInterfaceName;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) int switchCount;
+@property (nonatomic, retain) NSString *switchFromInterfaceName;
+@property (nonatomic, retain) NSString *switchToInterfaceName;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

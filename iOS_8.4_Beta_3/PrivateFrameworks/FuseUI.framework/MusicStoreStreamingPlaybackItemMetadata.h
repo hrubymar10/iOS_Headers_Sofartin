@@ -7,7 +7,7 @@
     MPStoreItemMetadataContext *_storeItemMetadataContext;
 }
 
-@property(assign,retain) MPStoreItemMetadataContext * storeItemMetadataContext;
+@property (nonatomic, retain) MPStoreItemMetadataContext *storeItemMetadataContext;
 
 - (void).cxx_destruct;
 - (void)_registerForNotificationsForStoreItemMetadataContext:(id)arg1;

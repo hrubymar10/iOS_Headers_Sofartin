@@ -8,9 +8,9 @@
     NSURL *_url;
 }
 
-@property(assign,copy) id shareCopyAccessTokenCompletionBlock;
-@property(assign,copy) id shareCopyAccessTokenCompletionBlockWithPermissions;
-@property(assign,retain) NSURL * url;
+@property (copy) id shareCopyAccessTokenCompletionBlock;
+@property (copy) id shareCopyAccessTokenCompletionBlockWithPermissions;
+@property (nonatomic, retain) NSURL *url;
 
 - (void)dealloc;
 - (void)finishWithResult:(id)arg1 error:(id)arg2;

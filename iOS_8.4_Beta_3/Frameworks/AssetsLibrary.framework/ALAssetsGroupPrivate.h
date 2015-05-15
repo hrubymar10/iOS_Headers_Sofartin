@@ -15,19 +15,19 @@
     NSMutableDictionary *_propertyValues;
 }
 
-@property(assign,retain) PLPhotoLibrary * _photoLibrary;
-@property(assign,retain) NSObject<PLAlbumProtocol> * album;
-@property(assign,readwrite) bool applyHyperionFilter;
-@property(assign,retain) ALAssetsFilter * assetsFilter;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long groupType;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCloudSharedGroup;
-@property(assign,readwrite) bool isValid;
-@property(assign,readwrite) ALAssetsLibrary * library;
-@property(assign,retain) NSMutableDictionary * propertyValues;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) PLPhotoLibrary *_photoLibrary;
+@property (nonatomic, retain) NSObject<PLAlbumProtocol> *album;
+@property (nonatomic) bool applyHyperionFilter;
+@property (nonatomic, retain) ALAssetsFilter *assetsFilter;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) unsigned long long groupType;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCloudSharedGroup;
+@property (nonatomic) bool isValid;
+@property (nonatomic) ALAssetsLibrary *library;
+@property (nonatomic, retain) NSMutableDictionary *propertyValues;
+@property (readonly) Class superclass;
 
 - (void)_performBlockAndWait:(id)arg1;
 - (id)_photoLibrary;

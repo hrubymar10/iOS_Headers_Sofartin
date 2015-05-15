@@ -6,9 +6,9 @@
     AVMediaSelectionGroupInternal *_mediaSelectionGroup;
 }
 
-@property(assign,readonly) bool allowsEmptySelection;
-@property(assign,readonly) AVMediaSelectionOption * defaultOption;
-@property(assign,readonly) NSArray * options;
+@property (nonatomic, readonly) bool allowsEmptySelection;
+@property (nonatomic, readonly) AVMediaSelectionOption *defaultOption;
+@property (nonatomic, readonly) NSArray *options;
 
 + (id)mediaSelectionGroupWithAsset:(id)arg1 dictionary:(id)arg2;
 + (id)mediaSelectionOptionsFromArray:(id)arg1 filteredAndSortedAccordingToPreferredLanguages:(id)arg2;

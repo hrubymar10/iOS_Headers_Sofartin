@@ -20,20 +20,20 @@
     double _zPosition;
 }
 
-@property(assign,readonly) NSString * UIKitFontTextStyleName;
-@property(assign,retain) UIColor * color;
-@property(assign,readonly) NSString * fontName;
-@property(assign,readwrite) SEL fontNameRebaseSelector;
-@property(assign,readonly) double fontSize;
-@property(assign,readwrite) SEL fontSizeRebaseSelector;
-@property(assign,readwrite) long long lineBreakMode;
-@property(assign,readwrite) double m34;
-@property(assign,readwrite) double minimumLineHeight;
-@property(assign,readwrite) bool needsParagraphStyle;
-@property(assign,readwrite) bool overrideUIKitFontSize;
-@property(assign,retain) GKColorPalette * palette;
-@property(assign,readwrite) long long textAlignment;
-@property(assign,readwrite) double zPosition;
+@property (nonatomic, readonly) NSString *UIKitFontTextStyleName;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic, readonly) NSString *fontName;
+@property (nonatomic) SEL fontNameRebaseSelector;
+@property (nonatomic, readonly) double fontSize;
+@property (nonatomic) SEL fontSizeRebaseSelector;
+@property (nonatomic) long long lineBreakMode;
+@property (nonatomic) double m34;
+@property (nonatomic) double minimumLineHeight;
+@property (nonatomic) bool needsParagraphStyle;
+@property (nonatomic) bool overrideUIKitFontSize;
+@property (nonatomic, retain) GKColorPalette *palette;
+@property (nonatomic) long long textAlignment;
+@property (nonatomic) double zPosition;
 
 + (id)attributedString:(id)arg1 byReplayingFromBaseStyle:(id)arg2 systemContentSizeDidChange:(bool)arg3;
 + (double)bubbleTextScale;

@@ -9,10 +9,10 @@
     UIActivityIndicatorView *_spinner;
 }
 
-@property(assign,retain) UIImageView * badgeImageView;
-@property(assign,readwrite) long long badgeType;
-@property(assign,retain) PUPhotoView * photoView;
-@property(assign,retain) UIActivityIndicatorView * spinner;
+@property (nonatomic, retain) UIImageView *badgeImageView;
+@property (nonatomic) long long badgeType;
+@property (nonatomic, retain) PUPhotoView *photoView;
+@property (nonatomic, retain) UIActivityIndicatorView *spinner;
 
 - (void).cxx_destruct;
 - (void)_createSpinnerIfNecessary;

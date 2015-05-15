@@ -10,9 +10,9 @@
     NSString *_relationName;
 }
 
-@property(assign,readonly) NSString * inverseName;
-@property(assign,readonly) EKObject * owner;
-@property(assign,readonly) NSString * relationName;
+@property (nonatomic, readonly) NSString *inverseName;
+@property (nonatomic, readonly) EKObject *owner;
+@property (nonatomic, readonly) NSString *relationName;
 
 - (void)_addRelatedObject:(id)arg1 setInverse:(bool)arg2 dirty:(bool)arg3;
 - (void)_removeRelatedObject:(id)arg1 setInverse:(bool)arg2 dirty:(bool)arg3;

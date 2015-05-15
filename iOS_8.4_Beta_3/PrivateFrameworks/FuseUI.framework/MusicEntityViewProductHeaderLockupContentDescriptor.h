@@ -18,19 +18,19 @@
     bool _wantsRefreshButton;
 }
 
-@property(assign,copy) UIColor * backgroundOverlayTintColor;
-@property(assign,readwrite) long long buttonsBackdropOverlayBlendMode;
-@property(assign,copy) UIColor * buttonsTintColor;
-@property(assign,retain) MusicEntityViewContentTextDescriptor * editableTextDescriptor;
-@property(assign,retain) MusicEntityViewContentTextDescriptor * editableTextHeaderDescriptor;
-@property(assign,readwrite) bool wantsAddSongsButton;
-@property(assign,readwrite) bool wantsAddToLibraryButton;
-@property(assign,readwrite) bool wantsBackgroundBlur;
-@property(assign,readwrite) bool wantsBackgroundImage;
-@property(assign,readwrite) bool wantsCameraButtonWhenEditing;
-@property(assign,readwrite) bool wantsEditButton;
-@property(assign,readwrite) bool wantsRefreshActivityIndicator;
-@property(assign,readwrite) bool wantsRefreshButton;
+@property (nonatomic, copy) UIColor *backgroundOverlayTintColor;
+@property (nonatomic) long long buttonsBackdropOverlayBlendMode;
+@property (nonatomic, copy) UIColor *buttonsTintColor;
+@property (nonatomic, retain) MusicEntityViewContentTextDescriptor *editableTextDescriptor;
+@property (nonatomic, retain) MusicEntityViewContentTextDescriptor *editableTextHeaderDescriptor;
+@property (nonatomic) bool wantsAddSongsButton;
+@property (nonatomic) bool wantsAddToLibraryButton;
+@property (nonatomic) bool wantsBackgroundBlur;
+@property (nonatomic) bool wantsBackgroundImage;
+@property (nonatomic) bool wantsCameraButtonWhenEditing;
+@property (nonatomic) bool wantsEditButton;
+@property (nonatomic) bool wantsRefreshActivityIndicator;
+@property (nonatomic) bool wantsRefreshButton;
 
 - (void).cxx_destruct;
 - (id)backgroundOverlayTintColor;

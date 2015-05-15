@@ -11,8 +11,8 @@
     long long _style;
 }
 
-@property(assign,readwrite) bool snapsToHalfStar;
-@property(assign,readwrite) long long style;
+@property (nonatomic) bool snapsToHalfStar;
+@property (nonatomic) long long style;
 
 + (id)_starsImageCache;
 

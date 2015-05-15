@@ -8,9 +8,9 @@
     NSMutableArray *_internalDevices;
 }
 
-@property(getter=isBrowsing,assign,readwrite) bool browsing;
-@property(assign,readwrite) id delegate;
-@property(assign,retain) NSMutableArray * internalDevices;
+@property (getter=isBrowsing) bool browsing;
+@property id delegate;
+@property (retain) NSMutableArray *internalDevices;
 
 - (void)dealloc;
 - (id)delegate;

@@ -6,7 +6,7 @@
     NSDictionary *_payload;
 }
 
-@property(assign,copy) NSDictionary * payload;
+@property (readonly, copy) NSDictionary *payload;
 
 - (void).cxx_destruct;
 - (id)initWithPayload:(id)arg1;

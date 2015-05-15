@@ -10,10 +10,10 @@
     long long _uniqueID;
 }
 
-@property(assign,readonly) int errorCode;
-@property(assign,readonly) FigCaptureRecordingSettings * recordingSettings;
-@property(assign,readonly) NSString * sourceNodeDescription;
-@property(assign,readonly) FigCaptureStillImageSettings * stillImageSettings;
+@property (readonly) int errorCode;
+@property (readonly) FigCaptureRecordingSettings *recordingSettings;
+@property (readonly) NSString *sourceNodeDescription;
+@property (readonly) FigCaptureStillImageSettings *stillImageSettings;
 
 + (id)newError:(int)arg1 sourceNode:(id)arg2;
 + (id)newError:(int)arg1 sourceNode:(id)arg2 recordingSettings:(id)arg3;

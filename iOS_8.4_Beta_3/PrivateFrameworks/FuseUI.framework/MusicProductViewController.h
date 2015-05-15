@@ -25,19 +25,19 @@
     bool _usesLightContentOverHeader;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readonly) <MusicEntityProviding> * containerEntityProvider;
-@property(assign,readonly) <MusicEntityValueProviding> * containerEntityValueProvider;
-@property(assign,readonly) UIScrollView * containerScrollView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long presentationSource;
-@property(assign,readonly) MusicProductDetailViewController * productDetailViewController;
-@property(assign,readonly) MusicProductMainViewController * productMainViewController;
-@property(assign,readwrite) bool shouldAutomaticallyDismissUponExitingEditingMode;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) <MusicEntityProviding> * tracklistEntityProvider;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) <MusicEntityProviding> *containerEntityProvider;
+@property (nonatomic, readonly) <MusicEntityValueProviding> *containerEntityValueProvider;
+@property (nonatomic, readonly) UIScrollView *containerScrollView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long presentationSource;
+@property (nonatomic, readonly) MusicProductDetailViewController *productDetailViewController;
+@property (nonatomic, readonly) MusicProductMainViewController *productMainViewController;
+@property (nonatomic) bool shouldAutomaticallyDismissUponExitingEditingMode;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) <MusicEntityProviding> *tracklistEntityProvider;
 
 + (Class)storeEntityValueProviderClass;
 

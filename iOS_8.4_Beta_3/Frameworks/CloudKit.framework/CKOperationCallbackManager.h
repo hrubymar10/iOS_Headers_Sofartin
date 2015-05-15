@@ -7,8 +7,8 @@
     NSMutableDictionary *_progressCallbacks;
 }
 
-@property(assign,retain) NSMutableDictionary * completionCallbacks;
-@property(assign,retain) NSMutableDictionary * progressCallbacks;
+@property (retain) NSMutableDictionary *completionCallbacks;
+@property (retain) NSMutableDictionary *progressCallbacks;
 
 - (void).cxx_destruct;
 - (id)completionCallbacks;

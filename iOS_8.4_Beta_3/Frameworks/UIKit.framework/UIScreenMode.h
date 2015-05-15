@@ -7,9 +7,9 @@
     id _mode;
 }
 
-@property(assign,readwrite) bool _mainScreen;
-@property(assign,readonly) double pixelAspectRatio;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property bool _mainScreen;
+@property (nonatomic, readonly) double pixelAspectRatio;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
 
 + (id)_screenModeForDisplayMode:(id)arg1 mainScreen:(bool)arg2;
 

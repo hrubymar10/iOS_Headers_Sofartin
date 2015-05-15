@@ -8,8 +8,8 @@
     bool _shouldPrioritize;
 }
 
-@property(assign,readwrite) bool shouldPrioritize;
-@property(assign,retain) PLPhotoLibrary * transientPhotoLibrary;
+@property (nonatomic) bool shouldPrioritize;
+@property (nonatomic, readonly, retain) PLPhotoLibrary *transientPhotoLibrary;
 
 + (id)archiveDirectory;
 + (void)deleteAllRecoveryEvents;

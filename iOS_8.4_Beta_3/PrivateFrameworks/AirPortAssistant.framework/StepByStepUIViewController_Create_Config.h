@@ -17,22 +17,22 @@
     bool useSinglePassword;
 }
 
-@property(assign,retain) RecommendationActionController * actionController;
-@property(assign,copy) NSString * basePassword;
-@property(assign,copy) NSString * basePasswordVerify;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * diskPassword;
-@property(assign,copy) NSString * diskPasswordVerify;
-@property(assign,readwrite) bool hasDisk;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * personalizedBaseName;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useDifferentDiskPassword;
-@property(assign,readwrite) bool useSinglePassword;
-@property(assign,copy) NSString * wifiName;
-@property(assign,copy) NSString * wifiPassword;
-@property(assign,copy) NSString * wifiPasswordVerify;
+@property (nonatomic, retain) RecommendationActionController *actionController;
+@property (nonatomic, copy) NSString *basePassword;
+@property (nonatomic, copy) NSString *basePasswordVerify;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *diskPassword;
+@property (nonatomic, copy) NSString *diskPasswordVerify;
+@property (nonatomic) bool hasDisk;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *personalizedBaseName;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useDifferentDiskPassword;
+@property (nonatomic) bool useSinglePassword;
+@property (nonatomic, copy) NSString *wifiName;
+@property (nonatomic, copy) NSString *wifiPassword;
+@property (nonatomic, copy) NSString *wifiPasswordVerify;
 
 - (id)actionController;
 - (void)addDiskPasswordSection;

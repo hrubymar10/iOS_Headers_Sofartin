@@ -20,23 +20,23 @@
     NSObject<OS_dispatch_queue> *_syncOperationQueue;
 }
 
-@property(assign,readwrite) bool canceled;
-@property(assign,retain) SBKSyncTransaction * currentKVSTransaction;
-@property(assign,retain) <SBKUniversalPlaybackPositionDataSource> * dataSource;
-@property(assign,retain) <SBKUniversalPlaybackPositionTransactionContext> * dataSourceTransactionContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSError * fatalSyncError;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SBKTransactionController * kvsController;
-@property(assign,retain) NSMutableDictionary * metadataItemsFromDataSource;
-@property(assign,retain) NSDictionary * metadataItemsToCommitToDataSource;
-@property(assign,retain) NSDictionary * metadataItemsToCommitToKVSStorage;
-@property(assign,retain) NSString * overrideSyncAnchor;
-@property(assign,retain) NSMutableDictionary * responseMetadataItemsMergedToCommitBackToKVSStorage;
-@property(assign,retain) NSMutableDictionary * responseMetadataItemsToCommitToDataSource;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool syncInProgress;
+@property bool canceled;
+@property (retain) SBKSyncTransaction *currentKVSTransaction;
+@property (retain) <SBKUniversalPlaybackPositionDataSource> *dataSource;
+@property (retain) <SBKUniversalPlaybackPositionTransactionContext> *dataSourceTransactionContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain) NSError *fatalSyncError;
+@property (readonly) unsigned long long hash;
+@property (retain) SBKTransactionController *kvsController;
+@property (retain) NSMutableDictionary *metadataItemsFromDataSource;
+@property (retain) NSDictionary *metadataItemsToCommitToDataSource;
+@property (retain) NSDictionary *metadataItemsToCommitToKVSStorage;
+@property (retain) NSString *overrideSyncAnchor;
+@property (retain) NSMutableDictionary *responseMetadataItemsMergedToCommitBackToKVSStorage;
+@property (retain) NSMutableDictionary *responseMetadataItemsToCommitToDataSource;
+@property (readonly) Class superclass;
+@property bool syncInProgress;
 
 - (void).cxx_destruct;
 - (void)_dataSourceCancelTransaction;

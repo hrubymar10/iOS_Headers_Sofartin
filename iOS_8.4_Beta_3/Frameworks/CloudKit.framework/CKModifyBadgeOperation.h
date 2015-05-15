@@ -7,8 +7,8 @@
     id _modifyBadgeCompletionBlock;
 }
 
-@property(assign,readwrite) unsigned long long badgeValue;
-@property(assign,copy) id modifyBadgeCompletionBlock;
+@property (nonatomic) unsigned long long badgeValue;
+@property (nonatomic, copy) id modifyBadgeCompletionBlock;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

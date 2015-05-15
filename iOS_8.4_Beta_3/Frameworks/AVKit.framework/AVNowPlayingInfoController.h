@@ -8,7 +8,7 @@
     id _playerControllerCurrentTimeJumpedObserver;
 }
 
-@property(assign,retain) AVPlayerController * playerController;
+@property (nonatomic, retain) AVPlayerController *playerController;
 
 - (void).cxx_destruct;
 - (void)_setNowPlayingInfoNeedsUpdate;

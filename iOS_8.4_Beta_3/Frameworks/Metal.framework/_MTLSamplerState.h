@@ -7,12 +7,12 @@
     NSString *_label;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * label;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) <MTLDevice> *device;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSString *label;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (id)description;

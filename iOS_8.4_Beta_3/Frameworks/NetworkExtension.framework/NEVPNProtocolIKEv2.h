@@ -12,13 +12,13 @@
     bool _wakeForRekey;
 }
 
-@property(assign,readonly) NEVPNIKEv2SecurityAssociationParameters * IKESecurityAssociationParameters;
-@property(assign,readwrite) long long certificateType;
-@property(assign,readonly) NEVPNIKEv2SecurityAssociationParameters * childSecurityAssociationParameters;
-@property(assign,readwrite) long long deadPeerDetectionRate;
-@property(assign,copy) NSString * serverCertificateCommonName;
-@property(assign,copy) NSString * serverCertificateIssuerCommonName;
-@property(assign,readwrite) bool wakeForRekey;
+@property (readonly) NEVPNIKEv2SecurityAssociationParameters *IKESecurityAssociationParameters;
+@property long long certificateType;
+@property (readonly) NEVPNIKEv2SecurityAssociationParameters *childSecurityAssociationParameters;
+@property long long deadPeerDetectionRate;
+@property (copy) NSString *serverCertificateCommonName;
+@property (copy) NSString *serverCertificateIssuerCommonName;
+@property bool wakeForRekey;
 
 + (bool)supportsSecureCoding;
 

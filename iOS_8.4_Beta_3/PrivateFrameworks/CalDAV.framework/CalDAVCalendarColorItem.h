@@ -6,8 +6,8 @@
     NSString *_symbolicColorName;
 }
 
-@property(assign,retain) NSString * colorString;
-@property(assign,retain) NSString * symbolicColorName;
+@property (nonatomic, retain) NSString *colorString;
+@property (nonatomic, retain) NSString *symbolicColorName;
 
 - (id)colorString;
 - (void)dealloc;

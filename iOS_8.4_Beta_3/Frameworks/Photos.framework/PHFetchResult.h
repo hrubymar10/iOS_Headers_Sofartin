@@ -15,14 +15,14 @@
     unsigned long long _videosCount;
 }
 
-@property(assign,readwrite) long long chunkSizeForFetch;
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) NSFetchRequest * fetchRequest;
-@property(assign,readonly) NSArray * fetchedObjectIDs;
-@property(assign,readonly) NSArray * fetchedObjects;
-@property(assign,readonly) id firstObject;
-@property(assign,readonly) id lastObject;
-@property(assign,readonly) PHQuery * query;
+@property long long chunkSizeForFetch;
+@property (readonly) unsigned long long count;
+@property (readonly) NSFetchRequest *fetchRequest;
+@property (readonly) NSArray *fetchedObjectIDs;
+@property (readonly) NSArray *fetchedObjects;
+@property (nonatomic, readonly) id firstObject;
+@property (nonatomic, readonly) id lastObject;
+@property (readonly) PHQuery *query;
 
 + (id)_batchFetchingArrayForObjectIDs:(id)arg1 fetchResult:(id)arg2;
 + (id)cleanedAndSortedOIDsFrom:(id)arg1 usingFetchOptions:(id)arg2;

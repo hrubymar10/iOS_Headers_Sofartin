@@ -12,13 +12,13 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,copy) id cleanupBlock;
-@property(assign,copy) id errorBlock;
-@property(assign,retain) NSXPCInterface * interface;
-@property(assign,readwrite) unsigned long long proxyNumber;
-@property(assign,copy) NSBlock * replyBlock;
-@property(assign,readwrite) SEL selector;
-@property(assign,retain) NSDictionary * userInfo;
+@property (copy) id cleanupBlock;
+@property (copy) id errorBlock;
+@property (retain) NSXPCInterface *interface;
+@property unsigned long long proxyNumber;
+@property (copy) NSBlock *replyBlock;
+@property SEL selector;
+@property (retain) NSDictionary *userInfo;
 
 - (id)cleanupBlock;
 - (void)dealloc;

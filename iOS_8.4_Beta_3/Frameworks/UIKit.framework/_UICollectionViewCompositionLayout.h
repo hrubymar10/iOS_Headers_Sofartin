@@ -6,7 +6,7 @@
     NSMutableDictionary *_sublayoutsDict;
 }
 
-@property(assign,readonly) NSArray * sublayouts;
+@property (nonatomic, readonly) NSArray *sublayouts;
 
 + (Class)invalidationContextClass;
 

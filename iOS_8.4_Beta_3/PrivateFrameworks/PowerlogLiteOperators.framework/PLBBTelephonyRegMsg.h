@@ -16,17 +16,17 @@
     NSDate *_timeUpdate;
 }
 
-@property(assign,retain) NSNumber * cellID;
-@property(assign,readwrite) unsigned char changed;
-@property(assign,retain) NSNumber * dataActive;
-@property(assign,retain) NSNumber * dataAttached;
-@property(assign,retain) NSString * dataIndicator;
-@property(assign,retain) NSNumber * homeNetwork;
-@property(assign,retain) NSNumber * lac;
-@property(assign,retain) NSString * operatorName;
-@property(assign,retain) NSString * registrationStatus;
-@property(assign,retain) NSDictionary * telRegInfo;
-@property(assign,retain) NSDate * timeUpdate;
+@property (retain) NSNumber *cellID;
+@property unsigned char changed;
+@property (retain) NSNumber *dataActive;
+@property (retain) NSNumber *dataAttached;
+@property (retain) NSString *dataIndicator;
+@property (retain) NSNumber *homeNetwork;
+@property (retain) NSNumber *lac;
+@property (retain) NSString *operatorName;
+@property (retain) NSString *registrationStatus;
+@property (retain) NSDictionary *telRegInfo;
+@property (retain) NSDate *timeUpdate;
 
 + (id)bbEuLogMsgNameTelephonyReg;
 

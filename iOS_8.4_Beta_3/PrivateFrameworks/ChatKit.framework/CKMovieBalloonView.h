@@ -9,11 +9,11 @@
     CKMovieMediaObject *_mediaObject;
 }
 
-@property(setter=setAVPlayer:,assign,retain) AVPlayer * avPlayer;
-@property(setter=setAVPlayerItem:,assign,retain) AVPlayerItem * avPlayerItem;
-@property(setter=setAVPlayerLayer:,assign,retain) AVPlayerLayer * avPlayerLayer;
-@property(assign,readwrite) <CKMovieBalloonViewDelegate> * delegate;
-@property(assign,retain) CKMovieMediaObject * mediaObject;
+@property (setter=setAVPlayer:, nonatomic, retain) AVPlayer *avPlayer;
+@property (setter=setAVPlayerItem:, nonatomic, retain) AVPlayerItem *avPlayerItem;
+@property (setter=setAVPlayerLayer:, nonatomic, retain) AVPlayerLayer *avPlayerLayer;
+@property (nonatomic) <CKMovieBalloonViewDelegate> *delegate;
+@property (nonatomic, retain) CKMovieMediaObject *mediaObject;
 
 - (id)avPlayer;
 - (id)avPlayerItem;

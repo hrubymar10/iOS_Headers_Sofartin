@@ -16,13 +16,13 @@
     unsigned long long _type;
 }
 
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) NSString * externalKey;
-@property(getter=isFromForwardedMessage,assign,readonly) bool fromForwardedMessage;
-@property(assign,readonly) NSString * sourceKey;
-@property(assign,readonly) NSString * title;
-@property(assign,readonly) unsigned long long type;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) NSString *externalKey;
+@property (getter=isFromForwardedMessage, readonly) bool fromForwardedMessage;
+@property (nonatomic, readonly) NSString *sourceKey;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) unsigned long long type;
+@property (nonatomic, readonly) NSURL *url;
 
 + (id)originForDuplicateKey:(id)arg1 sourceKey:(id)arg2 store:(id)arg3;
 + (id)originWithType:(unsigned long long)arg1 sourceKey:(id)arg2 externalKey:(id)arg3 fromForwardedMessage:(bool)arg4;

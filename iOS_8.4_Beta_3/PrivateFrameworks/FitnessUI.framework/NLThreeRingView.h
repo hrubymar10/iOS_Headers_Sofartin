@@ -12,13 +12,13 @@
     NLArcView *_sedentaryArcView;
 }
 
-@property(assign,retain) NLArcView * briskArcView;
-@property(assign,retain) NLArcView * calorieArcView;
-@property(assign,retain) UIImageView * fadedView;
-@property(assign,readwrite) double interspacing;
-@property(assign,readwrite) double lineThickness;
-@property(assign,readwrite) double outerDiameter;
-@property(assign,retain) NLArcView * sedentaryArcView;
+@property (nonatomic, retain) NLArcView *briskArcView;
+@property (nonatomic, retain) NLArcView *calorieArcView;
+@property (nonatomic, retain) UIImageView *fadedView;
+@property (nonatomic) double interspacing;
+@property (nonatomic) double lineThickness;
+@property (nonatomic) double outerDiameter;
+@property (nonatomic, retain) NLArcView *sedentaryArcView;
 
 - (void).cxx_destruct;
 - (id)_generateArcWithNesting:(int)arg1 fromColor:(id)arg2 toColor:(id)arg3;

@@ -12,11 +12,11 @@
     } _private;
 }
 
-@property(assign,copy) MTLStencilDescriptor * backFaceStencil;
-@property(assign,readwrite) unsigned long long depthCompareFunction;
-@property(getter=isDepthWriteEnabled,assign,readwrite) bool depthWriteEnabled;
-@property(assign,copy) MTLStencilDescriptor * frontFaceStencil;
-@property(assign,copy) NSString * label;
+@property (nonatomic, copy) MTLStencilDescriptor *backFaceStencil;
+@property (nonatomic) unsigned long long depthCompareFunction;
+@property (getter=isDepthWriteEnabled, nonatomic) bool depthWriteEnabled;
+@property (nonatomic, copy) MTLStencilDescriptor *frontFaceStencil;
+@property (nonatomic, copy) NSString *label;
 
 - (id)backFaceStencil;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -9,7 +9,7 @@
     } _rowSize;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } rowSize;
+@property (nonatomic) struct CGSize { double x1; double x2; } rowSize;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (struct CGSize { double x1; double x2; })rowSize;

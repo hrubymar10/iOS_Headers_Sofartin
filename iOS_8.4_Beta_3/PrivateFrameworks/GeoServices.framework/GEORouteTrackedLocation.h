@@ -23,16 +23,16 @@
     GEORouteMatch *_routeMatch;
 }
 
-@property(assign,readonly) struct PolylineCoordinate { unsigned int x1; float x2; } lastGoodMatchCoordinate;
-@property(assign,retain) NSDate * lastTimeInTunnel;
-@property(assign,readonly) double newStepDistanceTraveled;
-@property(assign,readonly) struct { double x1; double x2; } newStepLastGeoCoord;
-@property(assign,readonly) struct PolylineCoordinate { unsigned int x1; float x2; } newStepLastRouteCoord;
-@property(assign,readonly) unsigned long long newStepProgressions;
-@property(assign,readonly) GEOLocation * rawLocation;
-@property(assign,readonly) GEOComposedRoute * route;
-@property(assign,readonly) GEORouteMatch * routeMatch;
-@property(assign,readonly) double timeSinceTunnel;
+@property (nonatomic, readonly) struct PolylineCoordinate { unsigned int x1; float x2; } lastGoodMatchCoordinate;
+@property (nonatomic, retain) NSDate *lastTimeInTunnel;
+@property (nonatomic, readonly) double newStepDistanceTraveled;
+@property (nonatomic, readonly) struct { double x1; double x2; } newStepLastGeoCoord;
+@property (nonatomic, readonly) struct PolylineCoordinate { unsigned int x1; float x2; } newStepLastRouteCoord;
+@property (nonatomic, readonly) unsigned long long newStepProgressions;
+@property (nonatomic, readonly) GEOLocation *rawLocation;
+@property (nonatomic, readonly) GEOComposedRoute *route;
+@property (nonatomic, readonly) GEORouteMatch *routeMatch;
+@property (nonatomic, readonly) double timeSinceTunnel;
 
 - (id).cxx_construct;
 - (void)dealloc;

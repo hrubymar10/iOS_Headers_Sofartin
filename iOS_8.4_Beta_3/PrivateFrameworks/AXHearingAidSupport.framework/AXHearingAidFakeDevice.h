@@ -24,23 +24,23 @@
     int _type;
 }
 
-@property(assign,readwrite) bool connected;
-@property(assign,retain) NSString * deviceUUID;
-@property(assign,readwrite) bool isConnecting;
-@property(assign,readwrite) double leftBatteryLevel;
-@property(assign,retain) NSDate * leftBatteryLowDate;
-@property(assign,retain) NSString * leftFirmwareVersion;
-@property(assign,retain) NSString * leftHardwareVersion;
-@property(assign,retain) NSString * leftUUID;
-@property(assign,retain) NSString * manufacturer;
-@property(assign,retain) NSString * model;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) double rightBatteryLevel;
-@property(assign,retain) NSDate * rightBatteryLowDate;
-@property(assign,retain) NSString * rightFirmwareVersion;
-@property(assign,retain) NSString * rightHardwareVersion;
-@property(assign,retain) NSString * rightUUID;
-@property(assign,readwrite) int type;
+@property (nonatomic) bool connected;
+@property (nonatomic, retain) NSString *deviceUUID;
+@property (nonatomic) bool isConnecting;
+@property (nonatomic) double leftBatteryLevel;
+@property (nonatomic, retain) NSDate *leftBatteryLowDate;
+@property (nonatomic, retain) NSString *leftFirmwareVersion;
+@property (nonatomic, retain) NSString *leftHardwareVersion;
+@property (nonatomic, retain) NSString *leftUUID;
+@property (nonatomic, retain) NSString *manufacturer;
+@property (nonatomic, retain) NSString *model;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) double rightBatteryLevel;
+@property (nonatomic, retain) NSDate *rightBatteryLowDate;
+@property (nonatomic, retain) NSString *rightFirmwareVersion;
+@property (nonatomic, retain) NSString *rightHardwareVersion;
+@property (nonatomic, retain) NSString *rightUUID;
+@property (nonatomic) int type;
 
 - (void)connect;
 - (bool)connected;

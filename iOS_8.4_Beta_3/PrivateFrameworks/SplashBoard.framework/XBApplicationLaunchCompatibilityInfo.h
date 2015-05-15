@@ -13,19 +13,19 @@
     NSString *_sandboxPath;
 }
 
-@property(assign,readonly) bool allowsSavingLaunchImages;
-@property(assign,readwrite) bool alwaysLaunchesFullScreen;
-@property(assign,copy) NSString * bundleIdentifier;
-@property(assign,copy) NSString * bundlePath;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * launchImageInfos;
-@property(assign,copy) NSString * launchNibName;
-@property(assign,copy) NSString * launchStoryboardName;
-@property(assign,readwrite) bool launchesOpaque;
-@property(assign,copy) NSString * sandboxPath;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) bool allowsSavingLaunchImages;
+@property (nonatomic) bool alwaysLaunchesFullScreen;
+@property (nonatomic, copy) NSString *bundleIdentifier;
+@property (nonatomic, copy) NSString *bundlePath;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *launchImageInfos;
+@property (nonatomic, copy) NSString *launchNibName;
+@property (nonatomic, copy) NSString *launchStoryboardName;
+@property (nonatomic) bool launchesOpaque;
+@property (nonatomic, copy) NSString *sandboxPath;
+@property (readonly) Class superclass;
 
 + (id)_compatibilityInfoForBundleIdentifier:(id)arg1 creatingIfNecessaryWithBundle:(id)arg2 andSandboxPath:(id)arg3;
 + (id)_compatibilityInfoForBundleIdentifier:(id)arg1 creatingIfNecessaryWithBundle:(id)arg2 andSandboxPath:(id)arg3 lazy:(bool)arg4;

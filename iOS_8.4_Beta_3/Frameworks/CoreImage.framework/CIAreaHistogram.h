@@ -10,10 +10,10 @@
     NSNumber *inputScale;
 }
 
-@property(assign,retain) NSNumber * inputCount;
-@property(assign,retain) CIVector * inputExtent;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputScale;
+@property (nonatomic, retain) NSNumber *inputCount;
+@property (nonatomic, retain) CIVector *inputExtent;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputScale;
 
 + (id)customAttributes;
 

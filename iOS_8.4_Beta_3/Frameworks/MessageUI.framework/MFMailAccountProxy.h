@@ -6,18 +6,18 @@
     NSDictionary *_properties;
 }
 
-@property(assign,readonly) NSArray * emailAddresses;
-@property(assign,readonly) NSString * firstEmailAddress;
-@property(assign,readonly) NSArray * fromEmailAddresses;
-@property(assign,readonly) NSArray * fromEmailAddressesIncludingDisabled;
-@property(assign,readonly) NSString * fullUserName;
-@property(assign,readonly) bool isDefaultDeliveryAccount;
-@property(assign,readonly) id mailAccount;
-@property(assign,readonly) bool restrictsRepliesAndForwards;
-@property(assign,readonly) bool supportsSoftBankCodePoints;
-@property(assign,readonly) bool supportsThreadNotifications;
-@property(assign,readonly) NSString * uniqueID;
-@property(assign,readonly) NSString * username;
+@property (nonatomic, readonly) NSArray *emailAddresses;
+@property (nonatomic, readonly) NSString *firstEmailAddress;
+@property (nonatomic, readonly) NSArray *fromEmailAddresses;
+@property (nonatomic, readonly) NSArray *fromEmailAddressesIncludingDisabled;
+@property (nonatomic, readonly) NSString *fullUserName;
+@property (nonatomic, readonly) bool isDefaultDeliveryAccount;
+@property (nonatomic, readonly) id mailAccount;
+@property (nonatomic, readonly) bool restrictsRepliesAndForwards;
+@property (nonatomic, readonly) bool supportsSoftBankCodePoints;
+@property (nonatomic, readonly) bool supportsThreadNotifications;
+@property (nonatomic, readonly) NSString *uniqueID;
+@property (nonatomic, readonly) NSString *username;
 
 - (id)_emailAddressesAndAliases;
 - (id)_initWithProperties:(id)arg1;

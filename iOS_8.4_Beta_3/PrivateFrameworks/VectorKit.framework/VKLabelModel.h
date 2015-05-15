@@ -23,23 +23,23 @@
     bool _shouldModifyLabelsOnRoutes;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <VKLabelModelDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool drawLabels;
-@property(assign,retain) NSArray * externalTrafficIncidents;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct shared_ptr<vk::LabelManager> { struct LabelManager {} *x1; struct __shared_weak_count {} *x2; } labelManager;
-@property(assign,readwrite) bool labelMarkerSelectionEnabled;
-@property(assign,readwrite) long long labelScaleFactor;
-@property(assign,readwrite) bool localizeLabels;
-@property(assign,readwrite) long long navigationShieldSize;
-@property(assign,readwrite) long long shieldIdiom;
-@property(assign,readwrite) long long shieldSize;
-@property(assign,readwrite) bool shouldModifyLabelsOnRoutes;
-@property(assign,readwrite) bool showsPointsOfInterest;
-@property(assign,readonly) VKStyleManager * styleManager;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <VKLabelModelDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool drawLabels;
+@property (nonatomic, retain) NSArray *externalTrafficIncidents;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct shared_ptr<vk::LabelManager> { struct LabelManager {} *x1; struct __shared_weak_count {} *x2; } labelManager;
+@property (nonatomic) bool labelMarkerSelectionEnabled;
+@property (nonatomic) long long labelScaleFactor;
+@property (nonatomic) bool localizeLabels;
+@property (nonatomic) long long navigationShieldSize;
+@property (nonatomic) long long shieldIdiom;
+@property (nonatomic) long long shieldSize;
+@property (nonatomic) bool shouldModifyLabelsOnRoutes;
+@property (nonatomic) bool showsPointsOfInterest;
+@property (nonatomic, readonly) VKStyleManager *styleManager;
+@property (readonly) Class superclass;
 
 + (bool)reloadOnStylesheetChange;
 

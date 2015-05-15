@@ -6,7 +6,7 @@
     NSDate *_date;
 }
 
-@property(assign,readonly) NSDate * date;
+@property (nonatomic, readonly) NSDate *date;
 
 - (void).cxx_destruct;
 - (id)date;

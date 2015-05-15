@@ -15,9 +15,9 @@
     bool _usesRGBColors;
 }
 
-@property(assign,readwrite) bool horizontal;
-@property(assign,readwrite) double opacity;
-@property(assign,readonly) bool usesRGBColors;
+@property (nonatomic) bool horizontal;
+@property (nonatomic) double opacity;
+@property (nonatomic, readonly) bool usesRGBColors;
 
 + (id)gradientWith3Colors:(id)arg1 middleLocation:(double)arg2;
 + (id)gradientWithFlatColor:(id)arg1;

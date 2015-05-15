@@ -11,12 +11,12 @@
     long long _dominantPhysicalButton;
 }
 
-@property(setter=_setAccelerometer:,assign,retain) BKSAccelerometer * _accelerometer;
-@property(setter=_setNumberOfDominantPhysicalButtonObservers:,assign,readwrite) long long _numberOfDominantPhysicalButtonObservers;
-@property(assign,readonly) CMMotionManager * _physicalButtonMotionManager;
-@property(setter=_setCaptureOrientation:,assign,readwrite) long long captureOrientation;
-@property(setter=_setDeviceOrientation:,assign,readwrite) long long deviceOrientation;
-@property(setter=_setDominantPhysicalButton:,assign,readwrite) long long dominantPhysicalButton;
+@property (setter=_setAccelerometer:, nonatomic, retain) BKSAccelerometer *_accelerometer;
+@property (setter=_setNumberOfDominantPhysicalButtonObservers:, nonatomic) long long _numberOfDominantPhysicalButtonObservers;
+@property (nonatomic, readonly) CMMotionManager *_physicalButtonMotionManager;
+@property (setter=_setCaptureOrientation:, nonatomic) long long captureOrientation;
+@property (setter=_setDeviceOrientation:, nonatomic) long long deviceOrientation;
+@property (setter=_setDominantPhysicalButton:, nonatomic) long long dominantPhysicalButton;
 
 + (id)sharedController;
 

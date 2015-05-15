@@ -13,10 +13,10 @@
     SKUIGiftComposeViewController *_rootViewController;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) SKUIGift * gift;
-@property(assign,readwrite) <SKUIGiftViewControllerDelegate> * giftDelegate;
-@property(assign,retain) NSOperationQueue * operationQueue;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, readonly, copy) SKUIGift *gift;
+@property (nonatomic) <SKUIGiftViewControllerDelegate> *giftDelegate;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
 
 - (void).cxx_destruct;
 - (void)_cancelButtonAction:(id)arg1;

@@ -11,8 +11,8 @@
     NSURLRequest *_urlRequest;
 }
 
-@property(assign,readonly) SSMetricsPageEvent * metricsPageEvent;
-@property(assign,copy) id outputBlock;
+@property (readonly) SSMetricsPageEvent *metricsPageEvent;
+@property (copy) id outputBlock;
 
 - (void).cxx_destruct;
 - (id)_initSKUILoadProductPageOperation;

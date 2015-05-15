@@ -7,8 +7,8 @@
     NSArray *mReferenceLineNonStyleItems;
 }
 
-@property(assign,copy) TSCHChartAxisID * axisIdentifier;
-@property(assign,copy) NSArray * referenceLineNonStyleItems;
+@property (nonatomic, copy) TSCHChartAxisID *axisIdentifier;
+@property (nonatomic, copy) NSArray *referenceLineNonStyleItems;
 
 - (id)axisIdentifier;
 - (void)dealloc;

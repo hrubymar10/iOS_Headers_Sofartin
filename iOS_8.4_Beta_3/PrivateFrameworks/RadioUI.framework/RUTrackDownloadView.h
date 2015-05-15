@@ -34,26 +34,26 @@
     UIViewController *_viewControllerForPresenting;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } alignmentRectInsets;
-@property(setter=setAVItem:,assign,retain) MPAVItem * avItem;
-@property(assign,copy) NSString * baseOriginator;
-@property(assign,readwrite) long long buyButtonTitleStyle;
-@property(assign,retain) NSArray * buyOffers;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUTrackDownloadViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } overrideSize;
-@property(assign,readwrite) long long overrideState;
-@property(assign,copy) NSString * overrideTitleText;
-@property(assign,retain) RadioTrack * radioTrack;
-@property(assign,readonly) long long state;
-@property(assign,copy) NSString * stationHash;
-@property(assign,readwrite) long long stationID;
-@property(assign,readwrite) long long storeDownloadID;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool supportsAlbumOnly;
-@property(assign,readwrite) UIViewController * viewControllerForPresenting;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } alignmentRectInsets;
+@property (setter=setAVItem:, nonatomic, retain) MPAVItem *avItem;
+@property (nonatomic, copy) NSString *baseOriginator;
+@property (nonatomic) long long buyButtonTitleStyle;
+@property (nonatomic, retain) NSArray *buyOffers;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUTrackDownloadViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct CGSize { double x1; double x2; } overrideSize;
+@property (nonatomic) long long overrideState;
+@property (nonatomic, copy) NSString *overrideTitleText;
+@property (nonatomic, retain) RadioTrack *radioTrack;
+@property (nonatomic, readonly) long long state;
+@property (nonatomic, copy) NSString *stationHash;
+@property (nonatomic) long long stationID;
+@property (nonatomic) long long storeDownloadID;
+@property (readonly) Class superclass;
+@property (nonatomic) bool supportsAlbumOnly;
+@property (nonatomic) UIViewController *viewControllerForPresenting;
 
 - (void).cxx_destruct;
 - (long long)_albumStoreID;

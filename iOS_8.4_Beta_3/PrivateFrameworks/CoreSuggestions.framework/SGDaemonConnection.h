@@ -18,8 +18,8 @@
     NSXPCInterface *_xpcInterface;
 }
 
-@property(assign,readwrite) id delegate;
-@property(assign,retain) NSXPCConnection * xpcConnection;
+@property (nonatomic) id delegate;
+@property (nonatomic, readonly, retain) NSXPCConnection *xpcConnection;
 
 - (void).cxx_destruct;
 - (void)_connectToServer;

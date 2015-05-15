@@ -13,14 +13,14 @@
     NSArray *_visits;
 }
 
-@property(assign,readonly) double confidence;
-@property(assign,readonly) <GEOMapItem> * geoMapItem;
-@property(assign,readonly) NSUUID * identifier;
-@property(assign,readonly) double latitude;
-@property(assign,readonly) double longitude;
-@property(assign,readonly) long long type;
-@property(assign,readonly) double uncertainty;
-@property(assign,readonly) NSArray * visits;
+@property (nonatomic, readonly) double confidence;
+@property (nonatomic, readonly) <GEOMapItem> *geoMapItem;
+@property (nonatomic, readonly) NSUUID *identifier;
+@property (nonatomic, readonly) double latitude;
+@property (nonatomic, readonly) double longitude;
+@property (nonatomic, readonly) long long type;
+@property (nonatomic, readonly) double uncertainty;
+@property (nonatomic, readonly) NSArray *visits;
 
 + (id)locationOfInterestTypeToString:(long long)arg1;
 + (bool)supportsSecureCoding;

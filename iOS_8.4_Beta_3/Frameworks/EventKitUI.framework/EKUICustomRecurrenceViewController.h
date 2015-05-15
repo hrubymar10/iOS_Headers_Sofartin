@@ -26,26 +26,26 @@
     EKRecurrenceOrdinalChooserController *_yearlyOrdinalChooser;
 }
 
-@property(assign,copy) id completionBlock;
-@property(assign,readwrite) EKRecurrenceChooserController * currentChooser;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIPickerView * frequencyPickerView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) EKUICustomRecurrenceIntervalViewController * intervalPickerViewController;
-@property(assign,retain) EKRecurrenceMonthlyChooserController * monthlyChooser;
-@property(assign,readwrite) bool prohibitsMultipleDaysInMonthlyRecurrence;
-@property(assign,readwrite) bool prohibitsMultipleMonthsInYearlyRecurrence;
-@property(assign,readwrite) bool prohibitsYearlyRecurrenceInterval;
-@property(assign,copy) NSString * recurrenceSummaryString;
-@property(assign,retain) NSDate * startDate;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITableView * tableView;
-@property(assign,retain) NSTimeZone * timeZone;
-@property(assign,retain) EKRecurrenceWeekdayChooserController * weeklyChooser;
-@property(assign,retain) UISwitch * yearOrdinalSwitch;
-@property(assign,retain) EKRecurrenceMonthChooserController * yearlyChooser;
-@property(assign,retain) EKRecurrenceOrdinalChooserController * yearlyOrdinalChooser;
+@property (copy) id completionBlock;
+@property EKRecurrenceChooserController *currentChooser;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (retain) UIPickerView *frequencyPickerView;
+@property (readonly) unsigned long long hash;
+@property (retain) EKUICustomRecurrenceIntervalViewController *intervalPickerViewController;
+@property (retain) EKRecurrenceMonthlyChooserController *monthlyChooser;
+@property (nonatomic) bool prohibitsMultipleDaysInMonthlyRecurrence;
+@property (nonatomic) bool prohibitsMultipleMonthsInYearlyRecurrence;
+@property bool prohibitsYearlyRecurrenceInterval;
+@property (copy) NSString *recurrenceSummaryString;
+@property (retain) NSDate *startDate;
+@property (readonly) Class superclass;
+@property (retain) UITableView *tableView;
+@property (retain) NSTimeZone *timeZone;
+@property (retain) EKRecurrenceWeekdayChooserController *weeklyChooser;
+@property (retain) UISwitch *yearOrdinalSwitch;
+@property (retain) EKRecurrenceMonthChooserController *yearlyChooser;
+@property (retain) EKRecurrenceOrdinalChooserController *yearlyOrdinalChooser;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 + (bool)isRecurrenceRuleOrdinal:(id)arg1;

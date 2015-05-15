@@ -18,19 +18,19 @@
     NSDictionary *_webSharingIdentityDataByRecordID;
 }
 
-@property(assign,copy) NSArray * desiredKeys;
-@property(assign,copy) NSDictionary * desiredPackageFileIndices;
-@property(assign,copy) id fetchRecordsCompletionBlock;
-@property(assign,readwrite) bool isFetchCurrentUserOperation;
-@property(assign,copy) id perRecordCompletionBlock;
-@property(assign,copy) id perRecordProgressBlock;
-@property(assign,retain) NSMutableDictionary * recordErrors;
-@property(assign,copy) NSArray * recordIDs;
-@property(assign,retain) NSMutableDictionary * recordIDsToRecords;
-@property(assign,retain) NSDictionary * recordIDsToVersionETags;
-@property(assign,readwrite) bool shouldFetchAssetContent;
-@property(assign,retain) NSMutableDictionary * signaturesOfAssetsByRecordIDAndKey;
-@property(assign,retain) NSDictionary * webSharingIdentityDataByRecordID;
+@property (nonatomic, copy) NSArray *desiredKeys;
+@property (nonatomic, copy) NSDictionary *desiredPackageFileIndices;
+@property (nonatomic, copy) id fetchRecordsCompletionBlock;
+@property (nonatomic) bool isFetchCurrentUserOperation;
+@property (nonatomic, copy) id perRecordCompletionBlock;
+@property (nonatomic, copy) id perRecordProgressBlock;
+@property (nonatomic, retain) NSMutableDictionary *recordErrors;
+@property (nonatomic, copy) NSArray *recordIDs;
+@property (nonatomic, retain) NSMutableDictionary *recordIDsToRecords;
+@property (nonatomic, retain) NSDictionary *recordIDsToVersionETags;
+@property (nonatomic) bool shouldFetchAssetContent;
+@property (nonatomic, retain) NSMutableDictionary *signaturesOfAssetsByRecordIDAndKey;
+@property (nonatomic, retain) NSDictionary *webSharingIdentityDataByRecordID;
 
 + (id)fetchCurrentUserRecordOperation;
 

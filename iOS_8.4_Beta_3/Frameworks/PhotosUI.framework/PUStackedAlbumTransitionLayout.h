@@ -33,12 +33,12 @@
     PUCollectionViewLayoutCache *_nextLayoutCache;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } currentCollapsedStackCenter;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } expandedStackFinalDelta;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } finalCollapsedStackCenter;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } initialCollapsedStackCenter;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } interactionOffset;
-@property(assign,readonly) bool isExpanding;
+@property (nonatomic) struct CGPoint { double x1; double x2; } currentCollapsedStackCenter;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } expandedStackFinalDelta;
+@property (nonatomic) struct CGPoint { double x1; double x2; } finalCollapsedStackCenter;
+@property (nonatomic) struct CGPoint { double x1; double x2; } initialCollapsedStackCenter;
+@property (nonatomic) struct CGPoint { double x1; double x2; } interactionOffset;
+@property (nonatomic, readonly) bool isExpanding;
 
 - (void).cxx_destruct;
 - (struct CGPoint { double x1; double x2; })_centerOfLayoutAttributes:(id)arg1;

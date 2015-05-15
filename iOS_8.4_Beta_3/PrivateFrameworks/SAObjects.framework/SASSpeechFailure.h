@@ -4,9 +4,9 @@
 
 @interface SASSpeechFailure : SABaseClientBoundCommand
 
-@property(assign,readwrite) long long errorCode;
-@property(assign,readwrite) int reason;
-@property(assign,copy) NSString * reasonDescription;
+@property (nonatomic) long long errorCode;
+@property (nonatomic) int reason;
+@property (nonatomic, copy) NSString *reasonDescription;
 
 + (id)speechFailure;
 + (id)speechFailureWithDictionary:(id)arg1 context:(id)arg2;

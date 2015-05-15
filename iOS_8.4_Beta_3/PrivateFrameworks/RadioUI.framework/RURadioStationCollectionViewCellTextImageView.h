@@ -8,9 +8,9 @@
     MPUTextDrawingContext *_textDrawingContext;
 }
 
-@property(assign,retain) RURadioStationsCollectionViewTemplateTextElement * templateTextElement;
-@property(assign,copy) NSString * text;
-@property(assign,retain) MPUTextDrawingContext * textDrawingContext;
+@property (nonatomic, retain) RURadioStationsCollectionViewTemplateTextElement *templateTextElement;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, retain) MPUTextDrawingContext *textDrawingContext;
 
 - (void).cxx_destruct;
 - (void)setTemplateTextElement:(id)arg1;

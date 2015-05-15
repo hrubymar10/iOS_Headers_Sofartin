@@ -7,19 +7,19 @@
     TSADocumentRoot *mDocumentRoot;
 }
 
-@property(assign,readonly) NSArray * applicationTemplateVariants;
-@property(assign,readonly) NSString * collaboratorPersonID;
-@property(assign,readwrite) TSADocumentRoot * documentRoot;
-@property(assign,retain) <TSADownloadDelegate> * downloadDelegate;
-@property(assign,readonly) NSArray * importableDocumentTypes;
-@property(assign,readonly) NSString * nativeDocumentExtension;
-@property(assign,readonly) NSString * nativeDocumentType;
-@property(assign,readonly) NSString * nativeSFFDocumentType;
-@property(assign,readonly) NSArray * readableDocumentTypes;
-@property(assign,readonly) NSString * tangierEditingFormatDocumentType;
-@property(assign,readonly) NSString * templateDocumentExtension;
-@property(assign,readonly) NSString * templateDocumentType;
-@property(assign,readonly) NSString * templateSFFDocumentType;
+@property (nonatomic, readonly) NSArray *applicationTemplateVariants;
+@property (nonatomic, readonly) NSString *collaboratorPersonID;
+@property (nonatomic) TSADocumentRoot *documentRoot;
+@property (nonatomic, retain) <TSADownloadDelegate> *downloadDelegate;
+@property (nonatomic, readonly) NSArray *importableDocumentTypes;
+@property (nonatomic, readonly) NSString *nativeDocumentExtension;
+@property (nonatomic, readonly) NSString *nativeDocumentType;
+@property (nonatomic, readonly) NSString *nativeSFFDocumentType;
+@property (nonatomic, readonly) NSArray *readableDocumentTypes;
+@property (nonatomic, readonly) NSString *tangierEditingFormatDocumentType;
+@property (nonatomic, readonly) NSString *templateDocumentExtension;
+@property (nonatomic, readonly) NSString *templateDocumentType;
+@property (nonatomic, readonly) NSString *templateSFFDocumentType;
 
 + (void)resetSharedConfigurations;
 + (id)sharedDelegate;

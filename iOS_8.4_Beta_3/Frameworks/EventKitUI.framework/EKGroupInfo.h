@@ -15,21 +15,21 @@
     NSString *_typeTitle;
 }
 
-@property(assign,retain) NSArray * calendarInfos;
-@property(assign,copy) NSSet * calendarSet;
-@property(assign,readonly) bool isSubscribed;
-@property(assign,readonly) unsigned long long numCalendars;
-@property(assign,readonly) unsigned long long numSelectableCalendars;
-@property(assign,readonly) unsigned long long numSelectedCalendars;
-@property(assign,readwrite) bool selected;
-@property(assign,copy) NSSet * selectedCalendarSet;
-@property(assign,readonly) bool showAddCalendarButton;
-@property(assign,readonly) bool showCalendarNameIfSolitary;
-@property(assign,readwrite) bool showSelectAllButton;
-@property(assign,readonly) int sortOrder;
-@property(assign,retain) EKSource * source;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * typeTitle;
+@property (nonatomic, readonly, retain) NSArray *calendarInfos;
+@property (nonatomic, readonly, copy) NSSet *calendarSet;
+@property (nonatomic, readonly) bool isSubscribed;
+@property (nonatomic, readonly) unsigned long long numCalendars;
+@property (nonatomic, readonly) unsigned long long numSelectableCalendars;
+@property (nonatomic, readonly) unsigned long long numSelectedCalendars;
+@property (nonatomic) bool selected;
+@property (nonatomic, readonly, copy) NSSet *selectedCalendarSet;
+@property (nonatomic, readonly) bool showAddCalendarButton;
+@property (nonatomic, readonly) bool showCalendarNameIfSolitary;
+@property (nonatomic) bool showSelectAllButton;
+@property (nonatomic, readonly) int sortOrder;
+@property (nonatomic, retain) EKSource *source;
+@property (nonatomic, readonly, copy) NSString *title;
+@property (nonatomic, readonly, copy) NSString *typeTitle;
 
 - (void).cxx_destruct;
 - (id)calendarAtIndex:(unsigned long long)arg1;

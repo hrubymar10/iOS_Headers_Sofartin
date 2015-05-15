@@ -12,13 +12,13 @@
     NSString *_username;
 }
 
-@property(assign,retain) NSString * accountDescription;
-@property(assign,copy) NSString * accountPersistentUUID;
-@property(assign,retain) NSString * hostname;
-@property(assign,retain) NSString * password;
-@property(assign,readonly) bool useSSL;
-@property(assign,readonly) NSNumber * useSSLNum;
-@property(assign,retain) NSString * username;
+@property (nonatomic, readonly, retain) NSString *accountDescription;
+@property (nonatomic, copy) NSString *accountPersistentUUID;
+@property (nonatomic, readonly, retain) NSString *hostname;
+@property (nonatomic, readonly, retain) NSString *password;
+@property (nonatomic, readonly) bool useSSL;
+@property (nonatomic, readonly) NSNumber *useSSLNum;
+@property (nonatomic, readonly, retain) NSString *username;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

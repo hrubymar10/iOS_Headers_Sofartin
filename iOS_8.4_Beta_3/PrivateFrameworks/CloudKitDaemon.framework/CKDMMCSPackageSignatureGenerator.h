@@ -7,8 +7,8 @@
     bool _valid;
 }
 
-@property(assign,readwrite) void* generator;
-@property(getter=isValid,assign,readwrite) bool valid;
+@property (nonatomic) void*generator;
+@property (getter=isValid, nonatomic) bool valid;
 
 - (char *)_finishGenerator;
 - (id)dataByFinishingSignature;

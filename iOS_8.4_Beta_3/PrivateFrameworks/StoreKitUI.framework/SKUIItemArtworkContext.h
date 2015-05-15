@@ -13,13 +13,13 @@
     SKUIProductImageDataConsumer *_posterConsumer;
 }
 
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,retain) SKUIProductImageDataConsumer * generalConsumer;
-@property(assign,retain) SKUIStyledImageDataConsumer * iconConsumer;
-@property(assign,retain) SKUIProductImageDataConsumer * letterboxConsumer;
-@property(assign,retain) SKUIStyledImageDataConsumer * newsstandConsumer;
-@property(assign,retain) SKUIProductImageDataConsumer * posterConsumer;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic, retain) SKUIProductImageDataConsumer *generalConsumer;
+@property (nonatomic, retain) SKUIStyledImageDataConsumer *iconConsumer;
+@property (nonatomic, retain) SKUIProductImageDataConsumer *letterboxConsumer;
+@property (nonatomic, retain) SKUIStyledImageDataConsumer *newsstandConsumer;
+@property (nonatomic, retain) SKUIProductImageDataConsumer *posterConsumer;
 
 + (id)lockupContextWithSize:(long long)arg1;
 + (id)roomContext;

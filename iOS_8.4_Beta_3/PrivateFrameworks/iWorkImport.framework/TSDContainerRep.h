@@ -6,12 +6,12 @@
     NSMutableArray *mChildReps;
 }
 
-@property(assign,readonly) NSObject<TSDContainerInfo> * containerInfo;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSObject<TSDMutableContainerInfo> * mutableContainerInfo;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSObject<TSDContainerInfo> *containerInfo;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSObject<TSDMutableContainerInfo> *mutableContainerInfo;
+@property (readonly) Class superclass;
 
 - (void)addAdditionalChildLayersToArray:(id)arg1;
 - (void)addChildRep:(id)arg1;

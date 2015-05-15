@@ -13,14 +13,14 @@
     NSMutableArray *_revokedRecordIDs;
 }
 
-@property(assign,retain) NSMutableArray * grantedRecordIDs;
-@property(assign,copy) id recordAccessCompletionBlock;
-@property(assign,copy) id recordAccessGrantedBlock;
-@property(assign,copy) id recordAccessRevokedBlock;
-@property(assign,retain) NSMutableDictionary * recordErrors;
-@property(assign,retain) NSArray * recordIDsToGrant;
-@property(assign,retain) NSArray * recordIDsToRevoke;
-@property(assign,retain) NSMutableArray * revokedRecordIDs;
+@property (nonatomic, retain) NSMutableArray *grantedRecordIDs;
+@property (nonatomic, copy) id recordAccessCompletionBlock;
+@property (nonatomic, copy) id recordAccessGrantedBlock;
+@property (nonatomic, copy) id recordAccessRevokedBlock;
+@property (nonatomic, retain) NSMutableDictionary *recordErrors;
+@property (nonatomic, retain) NSArray *recordIDsToGrant;
+@property (nonatomic, retain) NSArray *recordIDsToRevoke;
+@property (nonatomic, retain) NSMutableArray *revokedRecordIDs;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

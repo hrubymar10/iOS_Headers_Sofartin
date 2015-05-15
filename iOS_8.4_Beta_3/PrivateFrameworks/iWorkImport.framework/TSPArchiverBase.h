@@ -17,14 +17,14 @@
     NSHashTable *_weakReferences;
 }
 
-@property(assign,readonly) NSHashTable * commandToModelReferences;
-@property(assign,readonly) NSHashTable * dataReferences;
-@property(assign,readonly) bool isForCopy;
-@property(assign,readonly) NSHashTable * lazyReferences;
-@property(assign,readwrite) unsigned long long messageVersion;
-@property(assign,readonly) TSPObject * object;
-@property(assign,readonly) NSHashTable * strongReferences;
-@property(assign,readonly) NSHashTable * weakReferences;
+@property (nonatomic, readonly) NSHashTable *commandToModelReferences;
+@property (nonatomic, readonly) NSHashTable *dataReferences;
+@property (nonatomic, readonly) bool isForCopy;
+@property (nonatomic, readonly) NSHashTable *lazyReferences;
+@property (nonatomic) unsigned long long messageVersion;
+@property (nonatomic, readonly) TSPObject *object;
+@property (nonatomic, readonly) NSHashTable *strongReferences;
+@property (nonatomic, readonly) NSHashTable *weakReferences;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

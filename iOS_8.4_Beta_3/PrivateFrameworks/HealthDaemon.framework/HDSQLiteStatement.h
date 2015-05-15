@@ -8,7 +8,7 @@
     struct sqlite3_stmt { } *_stmt;
 }
 
-@property(assign,readonly) HDSQLiteDatabase * database;
+@property (nonatomic, readonly) HDSQLiteDatabase *database;
 
 - (id)database;
 - (void)dealloc;

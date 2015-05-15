@@ -9,7 +9,7 @@
     id _target;
 }
 
-@property(assign,readwrite) bool cancelled;
+@property (nonatomic) bool cancelled;
 
 - (bool)cancelled;
 - (void)setCancelled:(bool)arg1;

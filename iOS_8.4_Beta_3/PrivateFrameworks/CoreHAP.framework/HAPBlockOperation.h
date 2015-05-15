@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) NSError * error;
-@property(assign,retain) NSObject<OS_dispatch_semaphore> * finishedSemaphore;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, retain) NSObject<OS_dispatch_semaphore> *finishedSemaphore;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)_cancelWithError:(id)arg1;

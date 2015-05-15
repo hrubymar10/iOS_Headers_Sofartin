@@ -4,8 +4,8 @@
 
 @interface SASTTemplateStarRating : SASTTemplateRating
 
-@property(assign,readwrite) double maximumValue;
-@property(assign,readwrite) double value;
+@property (nonatomic) double maximumValue;
+@property (nonatomic) double value;
 
 + (id)templateStarRating;
 + (id)templateStarRatingWithDictionary:(id)arg1 context:(id)arg2;

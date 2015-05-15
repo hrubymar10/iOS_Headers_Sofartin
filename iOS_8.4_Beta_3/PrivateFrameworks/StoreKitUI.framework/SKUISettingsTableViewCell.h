@@ -14,7 +14,7 @@
     SKUISettingDescriptionView *_settingDescriptionView;
 }
 
-@property(assign,readonly) SKUISettingDescriptionView * settingDescriptionView;
+@property (nonatomic, readonly) SKUISettingDescriptionView *settingDescriptionView;
 
 - (void).cxx_destruct;
 - (void)displaySettingDescriptionView:(id)arg1;

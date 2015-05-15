@@ -169,12 +169,12 @@
     } _writtenObjects;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) TSPPackageMetadata * packageMetadata;
-@property(assign,readonly) NSURL * relativeURLForExternalData;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) TSPPackageMetadata *packageMetadata;
+@property (nonatomic, readonly) NSURL *relativeURLForExternalData;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

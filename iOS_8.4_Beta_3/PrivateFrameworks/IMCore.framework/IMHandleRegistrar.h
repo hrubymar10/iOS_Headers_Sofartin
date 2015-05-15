@@ -6,7 +6,7 @@
     id _internal;
 }
 
-@property(assign,readwrite) long long nameStyle;
+@property (nonatomic) long long nameStyle;
 
 + (id)sharedInstance;
 

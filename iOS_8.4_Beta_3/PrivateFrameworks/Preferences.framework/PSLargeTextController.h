@@ -12,7 +12,7 @@
     bool _usesExtendedRange;
 }
 
-@property(assign,readwrite) bool showsExtendedRangeSwitch;
+@property (nonatomic) bool showsExtendedRangeSwitch;
 
 - (void)dealloc;
 - (id)getDynamicTypeValueForSpecifier:(id)arg1;

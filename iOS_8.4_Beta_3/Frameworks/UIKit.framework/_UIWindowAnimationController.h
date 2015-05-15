@@ -7,12 +7,12 @@
     UIWindow *_window;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool shouldCrossfade;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) UIWindow * window;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool shouldCrossfade;
+@property (readonly) Class superclass;
+@property (nonatomic) UIWindow *window;
 
 + (id)animationControllerWithWindow:(id)arg1;
 

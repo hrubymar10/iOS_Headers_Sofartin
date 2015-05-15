@@ -8,9 +8,9 @@
     GraphTextView *_text;
 }
 
-@property(assign,readwrite) GraphViewSegment * current;
-@property(assign,retain) NSMutableArray * segments;
-@property(assign,retain) GraphTextView * text;
+@property (nonatomic) GraphViewSegment *current;
+@property (nonatomic, retain) NSMutableArray *segments;
+@property (nonatomic, retain) GraphTextView *text;
 
 - (void).cxx_destruct;
 - (id)accessibilityValue;

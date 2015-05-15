@@ -27,26 +27,26 @@
     MPVolumeSlider *_volumeSlider;
 }
 
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } _boundsForCenteringCreateActivityIndicatorView;
-@property(assign,readonly) UIView * _createButton;
-@property(assign,readonly) double _textButtonBottomVerticalInsetBaselinePhone;
-@property(assign,readonly) double _textButtonVerticalInsetBaselinePad;
-@property(assign,readonly) double _titlesLastResortVerticalOffsetPhone;
-@property(assign,readonly) double _transportControlsLastResortVerticalOffsetPhone;
-@property(assign,readonly) double _volumeBottomVerticalInsetPhone;
-@property(assign,retain) MPUApplicationDefaults * applicationDefaults;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } artworkFrame;
-@property(assign,readonly) UIActionSheet * createActionSheet;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPUNowPlayingPlaybackControlsViewDelegate><MPTransportControlsTarget> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long orientation;
-@property(getter=isShowingCreateLoadingIndicator,assign,readwrite) bool showingCreateLoadingIndicator;
-@property(assign,readonly) MPUSkipLimitView * skipLimitView;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) UIView * titlesView;
-@property(assign,readwrite) bool usesMiniProgressControl;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } _boundsForCenteringCreateActivityIndicatorView;
+@property (nonatomic, readonly) UIView *_createButton;
+@property (nonatomic, readonly) double _textButtonBottomVerticalInsetBaselinePhone;
+@property (nonatomic, readonly) double _textButtonVerticalInsetBaselinePad;
+@property (nonatomic, readonly) double _titlesLastResortVerticalOffsetPhone;
+@property (nonatomic, readonly) double _transportControlsLastResortVerticalOffsetPhone;
+@property (nonatomic, readonly) double _volumeBottomVerticalInsetPhone;
+@property (nonatomic, retain) MPUApplicationDefaults *applicationDefaults;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } artworkFrame;
+@property (nonatomic, readonly) UIActionSheet *createActionSheet;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPUNowPlayingPlaybackControlsViewDelegate><MPTransportControlsTarget> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long orientation;
+@property (getter=isShowingCreateLoadingIndicator, nonatomic) bool showingCreateLoadingIndicator;
+@property (nonatomic, readonly) MPUSkipLimitView *skipLimitView;
+@property (readonly) Class superclass;
+@property (nonatomic) UIView *titlesView;
+@property (nonatomic) bool usesMiniProgressControl;
 
 + (unsigned long long)defaultVisibleParts;
 

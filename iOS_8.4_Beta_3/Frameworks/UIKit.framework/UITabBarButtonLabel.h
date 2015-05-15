@@ -11,8 +11,8 @@
     UIColor *_unselectedTintColor;
 }
 
-@property(setter=_setAppearanceGuideClass:,assign,readwrite) Class _appearanceGuideClass;
-@property(getter=_unselectedTintColor,setter=_setUnselectedTintColor:,assign,retain) UIColor * unselectedTintColor;
+@property (setter=_setAppearanceGuideClass:, nonatomic) Class _appearanceGuideClass;
+@property (getter=_unselectedTintColor, setter=_setUnselectedTintColor:, nonatomic, retain) UIColor *unselectedTintColor;
 
 + (double)_fontPointSizeForIdiom:(long long)arg1;
 

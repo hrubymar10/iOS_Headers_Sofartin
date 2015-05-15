@@ -9,14 +9,14 @@
     NSExtension *_extension;
 }
 
-@property(assign,readwrite) void* addressBook;
-@property(assign,retain) <NSCopying> * currentRequestIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CNContactPickerContentDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSExtension * extension;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property void*addressBook;
+@property (nonatomic, retain) <NSCopying> *currentRequestIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property <CNContactPickerContentDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSExtension *extension;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)contactPickerExtension;
 + (id)contextForIdentifier:(id)arg1;

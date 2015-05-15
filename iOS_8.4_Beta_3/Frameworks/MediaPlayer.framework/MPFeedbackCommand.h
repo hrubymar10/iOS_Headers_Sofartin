@@ -9,9 +9,9 @@
     long long _presentationStyle;
 }
 
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,copy) NSString * localizedShortTitle;
-@property(assign,copy) NSString * localizedTitle;
+@property (getter=isActive, nonatomic) bool active;
+@property (nonatomic, copy) NSString *localizedShortTitle;
+@property (nonatomic, copy) NSString *localizedTitle;
 
 - (void).cxx_destruct;
 - (id)_mediaRemoteCommandInfoOptions;

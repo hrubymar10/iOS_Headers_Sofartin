@@ -12,16 +12,16 @@
     id _target;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readwrite) id delegate;
-@property(assign,readwrite) double dequeueRate;
-@property(assign,readonly) bool holdQueue;
-@property(assign,readonly) bool isEmpty;
-@property(assign,retain) NSMutableArray * options;
-@property(assign,retain) Protocol * protocol;
-@property(assign,retain) NSProtocolChecker * protocolChecker;
-@property(assign,retain) NSMutableArray * queue;
-@property(assign,readwrite) id target;
+@property (nonatomic, readonly) unsigned long long count;
+@property id delegate;
+@property (nonatomic) double dequeueRate;
+@property (nonatomic, readonly) bool holdQueue;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, readonly, retain) NSMutableArray *options;
+@property (nonatomic, retain) Protocol *protocol;
+@property (nonatomic, readonly, retain) NSProtocolChecker *protocolChecker;
+@property (nonatomic, readonly, retain) NSMutableArray *queue;
+@property id target;
 
 - (bool)_acceptsOptions:(unsigned long long)arg1;
 - (void)_checkQueue;

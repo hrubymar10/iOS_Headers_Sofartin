@@ -11,16 +11,16 @@
     bool _headingEnabled;
 }
 
-@property(assign,readonly) NSMutableArray * _assetsWaitingForLocation;
-@property(assign,readonly) CLLocationManager * _locationManager;
-@property(getter=_isMonitoringLocation,assign,readonly) bool _monitoringLocation;
-@property(assign,readonly) CLLocation * currentLocation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isHeadingEnabled,assign,readwrite) bool headingEnabled;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSMutableArray *_assetsWaitingForLocation;
+@property (nonatomic, readonly) CLLocationManager *_locationManager;
+@property (getter=_isMonitoringLocation, nonatomic, readonly) bool _monitoringLocation;
+@property (nonatomic, readonly) CLLocation *currentLocation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (getter=isHeadingEnabled, nonatomic) bool headingEnabled;
+@property (readonly) Class superclass;
 
 + (id)_sharedGPSDatestampFormatter;
 + (id)_sharedGPSTimestampFormatter;

@@ -13,14 +13,14 @@
     long long _proxyProtocol;
 }
 
-@property(assign,copy) NSString * _host;
-@property(assign,readwrite) unsigned short _port;
-@property(assign,copy) NSString * _proxyAccount;
-@property(assign,copy) NSString * _proxyHost;
-@property(assign,copy) NSString * _proxyPassword;
-@property(assign,readwrite) unsigned short _proxyPort;
-@property(assign,readwrite) long long _proxyProtocol;
-@property(assign,readwrite) id delegate;
+@property (nonatomic, copy) NSString *_host;
+@property (nonatomic) unsigned short _port;
+@property (nonatomic, copy) NSString *_proxyAccount;
+@property (nonatomic, copy) NSString *_proxyHost;
+@property (nonatomic, copy) NSString *_proxyPassword;
+@property (nonatomic) unsigned short _proxyPort;
+@property (nonatomic) long long _proxyProtocol;
+@property id delegate;
 
 - (void)_callAccountSettingsDelegateMethod;
 - (void)_callProxySettingsDelegateMethod;

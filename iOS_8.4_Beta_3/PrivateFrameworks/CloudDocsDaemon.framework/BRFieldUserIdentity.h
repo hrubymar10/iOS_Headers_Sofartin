@@ -8,12 +8,12 @@
     NSString *_lastName;
 }
 
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSString * firstName;
-@property(assign,readonly) bool hasDisplayName;
-@property(assign,readonly) bool hasFirstName;
-@property(assign,readonly) bool hasLastName;
-@property(assign,retain) NSString * lastName;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSString *firstName;
+@property (nonatomic, readonly) bool hasDisplayName;
+@property (nonatomic, readonly) bool hasFirstName;
+@property (nonatomic, readonly) bool hasLastName;
+@property (nonatomic, retain) NSString *lastName;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

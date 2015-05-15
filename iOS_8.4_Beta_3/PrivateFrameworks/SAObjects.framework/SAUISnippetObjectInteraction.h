@@ -4,7 +4,7 @@
 
 @interface SAUISnippetObjectInteraction : SAUISnippetInteraction
 
-@property(assign,retain) SADomainObject * object;
+@property (nonatomic, retain) SADomainObject *object;
 
 + (id)snippetObjectInteraction;
 + (id)snippetObjectInteractionWithDictionary:(id)arg1 context:(id)arg2;

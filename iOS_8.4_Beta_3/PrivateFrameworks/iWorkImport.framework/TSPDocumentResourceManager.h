@@ -14,8 +14,8 @@
     long long _sageDocumentResourcesConfigurationToken;
 }
 
-@property(assign,readonly) TSPDocumentResourceCache * cache;
-@property(assign,readonly) TSUDownloadManager * downloadManager;
+@property (nonatomic, readonly) TSPDocumentResourceCache *cache;
+@property (nonatomic, readonly) TSUDownloadManager *downloadManager;
 
 + (id)appDocumentResourcesMetadataURL;
 + (id)appDocumentResourcesURL;

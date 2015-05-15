@@ -10,11 +10,11 @@
     NSMutableDictionary *_zoneIDsByRequestID;
 }
 
-@property(assign,copy) id shareFetchedBlock;
-@property(assign,retain) NSArray * shareIDs;
-@property(assign,retain) NSMutableDictionary * shareIDsByRequestID;
-@property(assign,retain) NSArray * zoneIDs;
-@property(assign,retain) NSMutableDictionary * zoneIDsByRequestID;
+@property (nonatomic, copy) id shareFetchedBlock;
+@property (nonatomic, retain) NSArray *shareIDs;
+@property (nonatomic, retain) NSMutableDictionary *shareIDsByRequestID;
+@property (nonatomic, retain) NSArray *zoneIDs;
+@property (nonatomic, retain) NSMutableDictionary *zoneIDsByRequestID;
 
 - (void).cxx_destruct;
 - (id)initWithShareIDs:(id)arg1;

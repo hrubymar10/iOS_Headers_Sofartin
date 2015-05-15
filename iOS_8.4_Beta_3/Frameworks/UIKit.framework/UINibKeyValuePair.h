@@ -8,9 +8,9 @@
     id value;
 }
 
-@property(assign,readonly) NSString * keyPath;
-@property(assign,readonly) id object;
-@property(assign,readonly) id value;
+@property (nonatomic, readonly) NSString *keyPath;
+@property (nonatomic, readonly) id object;
+@property (nonatomic, readonly) id value;
 
 - (void)apply;
 - (void)applyForSimulator;

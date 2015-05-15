@@ -7,8 +7,8 @@
     long long currentItemPoolValue;
 }
 
-@property(assign,readwrite) long long currentItemPoolDiff;
-@property(assign,readwrite) long long currentItemPoolValue;
+@property (nonatomic) long long currentItemPoolDiff;
+@property (nonatomic) long long currentItemPoolValue;
 
 - (long long)currentItemPoolDiff;
 - (long long)currentItemPoolValue;

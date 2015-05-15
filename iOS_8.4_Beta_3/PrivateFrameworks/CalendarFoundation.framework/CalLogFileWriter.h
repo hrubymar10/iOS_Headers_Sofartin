@@ -8,9 +8,9 @@
     NSString *_path;
 }
 
-@property(assign,readwrite) int fileDescriptor;
-@property(assign,readwrite) bool fileDescriptorIsValid;
-@property(assign,retain) NSString * path;
+@property (nonatomic) int fileDescriptor;
+@property (nonatomic) bool fileDescriptorIsValid;
+@property (nonatomic, retain) NSString *path;
 
 - (void).cxx_destruct;
 - (void)dealloc;

@@ -6,7 +6,7 @@
     long long _currentLayoutStyle;
 }
 
-@property(assign,readonly) long long currentLayoutStyle;
+@property (nonatomic, readonly) long long currentLayoutStyle;
 
 - (long long)currentLayoutStyle;
 - (bool)updateWithTraitCollection:(id)arg1 layoutReferenceSize:(struct CGSize { double x1; double x2; })arg2;

@@ -14,14 +14,14 @@
     NSMutableArray *_uniqueIDs;
 }
 
-@property(assign,retain) NPKProtoHash * expectedHash;
-@property(assign,readwrite) bool fullResyncNeeded;
-@property(assign,readonly) bool hasExpectedHash;
-@property(assign,readwrite) bool hasFullResyncNeeded;
-@property(assign,readwrite) bool hasResyncID;
-@property(assign,retain) NSMutableArray * manifestHashes;
-@property(assign,readwrite) unsigned int resyncID;
-@property(assign,retain) NSMutableArray * uniqueIDs;
+@property (nonatomic, retain) NPKProtoHash *expectedHash;
+@property (nonatomic) bool fullResyncNeeded;
+@property (nonatomic, readonly) bool hasExpectedHash;
+@property (nonatomic) bool hasFullResyncNeeded;
+@property (nonatomic) bool hasResyncID;
+@property (nonatomic, retain) NSMutableArray *manifestHashes;
+@property (nonatomic) unsigned int resyncID;
+@property (nonatomic, retain) NSMutableArray *uniqueIDs;
 
 - (void).cxx_destruct;
 - (void)addManifestHashes:(id)arg1;

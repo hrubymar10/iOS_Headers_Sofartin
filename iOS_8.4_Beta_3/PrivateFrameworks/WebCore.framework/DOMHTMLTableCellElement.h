@@ -4,21 +4,21 @@
 
 @interface DOMHTMLTableCellElement : DOMHTMLElement
 
-@property(assign,copy) NSString * abbr;
-@property(assign,copy) NSString * align;
-@property(assign,copy) NSString * axis;
-@property(assign,copy) NSString * bgColor;
-@property(assign,readonly) int cellIndex;
-@property(assign,copy) NSString * ch;
-@property(assign,copy) NSString * chOff;
-@property(assign,readwrite) int colSpan;
-@property(assign,copy) NSString * headers;
-@property(assign,copy) NSString * height;
-@property(assign,readwrite) bool noWrap;
-@property(assign,readwrite) int rowSpan;
-@property(assign,copy) NSString * scope;
-@property(assign,copy) NSString * vAlign;
-@property(assign,copy) NSString * width;
+@property (copy) NSString *abbr;
+@property (copy) NSString *align;
+@property (copy) NSString *axis;
+@property (copy) NSString *bgColor;
+@property (readonly) int cellIndex;
+@property (copy) NSString *ch;
+@property (copy) NSString *chOff;
+@property int colSpan;
+@property (copy) NSString *headers;
+@property (copy) NSString *height;
+@property bool noWrap;
+@property int rowSpan;
+@property (copy) NSString *scope;
+@property (copy) NSString *vAlign;
+@property (copy) NSString *width;
 
 - (id)_cellAbove;
 - (id)abbr;

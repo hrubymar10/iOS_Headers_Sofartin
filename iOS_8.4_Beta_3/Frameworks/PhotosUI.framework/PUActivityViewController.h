@@ -14,12 +14,12 @@
     PLProgressView *_remakerProgressView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUActivityViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * photosActivities;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUActivityViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *photosActivities;
+@property (readonly) Class superclass;
 
 + (id)_defaultActivityTypeOrder;
 + (bool)_isOutboundShareActivity:(id)arg1;

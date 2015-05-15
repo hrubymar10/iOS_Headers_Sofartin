@@ -11,10 +11,10 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) bool hasIsWowEnabled;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool isWowEnabled;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) bool hasIsWowEnabled;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool isWowEnabled;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

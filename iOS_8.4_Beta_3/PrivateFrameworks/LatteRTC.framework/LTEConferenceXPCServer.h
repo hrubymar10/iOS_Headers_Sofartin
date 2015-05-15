@@ -11,8 +11,8 @@
     NSMutableDictionary *registeredBlocks;
 }
 
-@property(assign,readonly) NSObject<OS_xpc_object> * listener;
-@property(assign,readonly) NSMutableDictionary * registeredBlocks;
+@property (readonly) NSObject<OS_xpc_object> *listener;
+@property (readonly) NSMutableDictionary *registeredBlocks;
 
 + (id)LTEConferenceXPCServerSingleton;
 + (id)createAudioSessionConfigFromDictionary:(id)arg1;

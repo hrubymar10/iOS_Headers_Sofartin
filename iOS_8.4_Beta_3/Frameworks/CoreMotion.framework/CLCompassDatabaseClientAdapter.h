@@ -4,7 +4,7 @@
 
 @interface CLCompassDatabaseClientAdapter : CLNotifierServiceAdapter <CLCompassDatabaseClientProtocol>
 
-@property(assign,readwrite) bool valid;
+@property (nonatomic) bool valid;
 
 + (void)becameFatallyBlocked:(id)arg1;
 + (id)getSilo;

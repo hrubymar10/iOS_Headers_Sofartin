@@ -7,10 +7,10 @@
     SKUILabelViewElement *_menuLabel;
 }
 
-@property(assign,readonly) NSArray * menuItemTitles;
-@property(assign,readonly) SKUILabelViewElement * menuLabel;
-@property(assign,readonly) long long selectedItemIndex;
-@property(assign,readonly) SKUIItemViewElement * titleItem;
+@property (nonatomic, readonly) NSArray *menuItemTitles;
+@property (nonatomic, readonly) SKUILabelViewElement *menuLabel;
+@property (nonatomic, readonly) long long selectedItemIndex;
+@property (nonatomic, readonly) SKUIItemViewElement *titleItem;
 
 - (void).cxx_destruct;
 - (void)_enumerateItemElementsUsingBlock:(id)arg1;

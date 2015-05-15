@@ -7,8 +7,8 @@
     NSDate *_startDate;
 }
 
-@property(assign,readwrite) long long sedentaryState;
-@property(assign,retain) NSDate * startDate;
+@property (nonatomic) long long sedentaryState;
+@property (nonatomic, retain) NSDate *startDate;
 
 + (bool)supportsSecureCoding;
 

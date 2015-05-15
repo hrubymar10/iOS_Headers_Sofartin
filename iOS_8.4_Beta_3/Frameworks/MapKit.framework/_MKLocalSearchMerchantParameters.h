@@ -10,11 +10,11 @@
     CLLocation *_transactionLocation;
 }
 
-@property(assign,copy) NSString * merchantCode;
-@property(assign,copy) NSString * paymentNetwork;
-@property(assign,copy) NSString * rawMerchantCode;
-@property(assign,retain) NSDate * transactionDate;
-@property(assign,retain) CLLocation * transactionLocation;
+@property (nonatomic, copy) NSString *merchantCode;
+@property (nonatomic, copy) NSString *paymentNetwork;
+@property (nonatomic, copy) NSString *rawMerchantCode;
+@property (nonatomic, retain) NSDate *transactionDate;
+@property (nonatomic, retain) CLLocation *transactionLocation;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

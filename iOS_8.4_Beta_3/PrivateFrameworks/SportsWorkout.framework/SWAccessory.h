@@ -10,11 +10,11 @@
     SWVicFileLogger *_vicFileLogger;
 }
 
-@property(assign,readonly) NSString * linkState;
-@property(assign,readonly) NSString * searchState;
-@property(assign,readonly) NSString * serialNumber;
-@property(assign,readonly) NSString * transportType;
-@property(assign,retain) SWVicFileLogger * vicFileLogger;
+@property (nonatomic, readonly) NSString *linkState;
+@property (nonatomic, readonly) NSString *searchState;
+@property (nonatomic, readonly) NSString *serialNumber;
+@property (nonatomic, readonly) NSString *transportType;
+@property (nonatomic, retain) SWVicFileLogger *vicFileLogger;
 
 - (void)beginLinking;
 - (void)beginSearching;

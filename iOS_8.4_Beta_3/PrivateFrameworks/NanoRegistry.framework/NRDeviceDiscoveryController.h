@@ -9,14 +9,14 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,readwrite) unsigned long long counter;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSArray * devices;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableArray * mutableDevices;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSXPCConnection * xpcConnection;
+@property (nonatomic) unsigned long long counter;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSArray *devices;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableArray *mutableDevices;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
 
 + (id)sharedInstance;
 

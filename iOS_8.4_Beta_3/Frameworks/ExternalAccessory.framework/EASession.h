@@ -12,10 +12,10 @@
     int _sock;
 }
 
-@property(assign,readonly) EAAccessory * accessory;
-@property(assign,readonly) NSInputStream * inputStream;
-@property(assign,readonly) NSOutputStream * outputStream;
-@property(assign,readonly) NSString * protocolString;
+@property (nonatomic, readonly) EAAccessory *accessory;
+@property (nonatomic, readonly) NSInputStream *inputStream;
+@property (nonatomic, readonly) NSOutputStream *outputStream;
+@property (nonatomic, readonly) NSString *protocolString;
 
 - (void)_endStreams;
 - (unsigned int)_sessionID;

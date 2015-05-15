@@ -14,14 +14,14 @@
     double _stiffness;
 }
 
-@property(assign,readwrite) long long animationType;
-@property(assign,readwrite) double calculatedDuration;
-@property(assign,readwrite) double damping;
-@property(assign,readwrite) double delay;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) double epsilon;
-@property(assign,readwrite) double mass;
-@property(assign,readwrite) double stiffness;
+@property (nonatomic) long long animationType;
+@property (nonatomic) double calculatedDuration;
+@property (nonatomic) double damping;
+@property (nonatomic) double delay;
+@property (nonatomic) double duration;
+@property (nonatomic) double epsilon;
+@property (nonatomic) double mass;
+@property (nonatomic) double stiffness;
 
 + (id)_moduleWithSectionTitle:(id)arg1;
 + (id)_moduleWithSectionTitle:(id)arg1 delay:(bool)arg2;

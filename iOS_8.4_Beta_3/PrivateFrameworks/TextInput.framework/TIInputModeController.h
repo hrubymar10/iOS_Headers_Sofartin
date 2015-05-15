@@ -11,13 +11,13 @@
     NSArray *enabledInputModes;
 }
 
-@property(assign,copy) NSString * currentLanguage;
-@property(assign,copy) NSString * currentLocale;
-@property(assign,copy) NSArray * defaultInputModes;
-@property(assign,readonly) NSArray * enabledInputModeIdentifiers;
-@property(assign,copy) NSArray * enabledInputModes;
-@property(assign,readonly) NSArray * supportedInputModeIdentifiers;
-@property(assign,readonly) NSArray * supportedInputModeLanguageAndRegions;
+@property (nonatomic, copy) NSString *currentLanguage;
+@property (nonatomic, copy) NSString *currentLocale;
+@property (nonatomic, copy) NSArray *defaultInputModes;
+@property (readonly) NSArray *enabledInputModeIdentifiers;
+@property (nonatomic, copy) NSArray *enabledInputModes;
+@property (readonly) NSArray *supportedInputModeIdentifiers;
+@property (readonly) NSArray *supportedInputModeLanguageAndRegions;
 
 + (id)_inputModesForLocale:(id)arg1 language:(id)arg2 modeFetcher:(id)arg3;
 + (id)sharedInputModeController;

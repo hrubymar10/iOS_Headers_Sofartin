@@ -4,10 +4,10 @@
 
 @interface SAUIAlternateProviderResult : SADomainObject
 
-@property(assign,copy) NSArray * commands;
-@property(assign,copy) NSNumber * numberOfResults;
-@property(assign,retain) SAUIImageResource * providerImage;
-@property(assign,copy) NSString * providerName;
+@property (nonatomic, copy) NSArray *commands;
+@property (nonatomic, copy) NSNumber *numberOfResults;
+@property (nonatomic, retain) SAUIImageResource *providerImage;
+@property (nonatomic, copy) NSString *providerName;
 
 + (id)alternateProviderResult;
 + (id)alternateProviderResultWithDictionary:(id)arg1 context:(id)arg2;

@@ -8,9 +8,9 @@
     long long _totalBytesExpectedToBeDownloaded;
 }
 
-@property(assign,readwrite) bool isActive;
-@property(assign,readwrite) long long totalBytesDownloaded;
-@property(assign,readwrite) long long totalBytesExpectedToBeDownloaded;
+@property (nonatomic) bool isActive;
+@property (nonatomic) long long totalBytesDownloaded;
+@property (nonatomic) long long totalBytesExpectedToBeDownloaded;
 
 - (id)description;
 - (bool)isActive;

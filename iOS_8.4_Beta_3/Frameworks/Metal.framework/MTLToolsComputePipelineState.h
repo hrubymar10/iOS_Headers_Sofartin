@@ -6,14 +6,14 @@
     <MTLFunction> *_function;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long maxTotalThreadsPerThreadgroup;
-@property(assign,readonly) unsigned long long staticLocalMemorySize;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long threadExecutionWidth;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) <MTLDevice> *device;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long maxTotalThreadsPerThreadgroup;
+@property (readonly) unsigned long long staticLocalMemorySize;
+@property (readonly) Class superclass;
+@property (readonly) unsigned long long threadExecutionWidth;
 
 - (void).cxx_destruct;
 - (void)acceptVisitor:(id)arg1;

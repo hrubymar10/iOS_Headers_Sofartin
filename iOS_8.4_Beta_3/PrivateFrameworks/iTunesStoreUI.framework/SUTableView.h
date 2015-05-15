@@ -6,7 +6,7 @@
     bool _allowsHeaderAndFooterToFloat;
 }
 
-@property(assign,readwrite) bool allowsHeaderAndFooterToFloat;
+@property (nonatomic) bool allowsHeaderAndFooterToFloat;
 
 - (bool)allowsFooterViewsToFloat;
 - (bool)allowsHeaderAndFooterToFloat;

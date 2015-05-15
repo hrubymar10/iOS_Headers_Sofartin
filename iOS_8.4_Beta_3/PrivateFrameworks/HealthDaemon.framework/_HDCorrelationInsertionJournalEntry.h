@@ -8,9 +8,9 @@
     long long _provenance;
 }
 
-@property(assign,readonly) NSUUID * correlationUUID;
-@property(assign,readonly) NSData * objectUUIDsData;
-@property(assign,readonly) long long provenance;
+@property (nonatomic, readonly) NSUUID *correlationUUID;
+@property (nonatomic, readonly) NSData *objectUUIDsData;
+@property (nonatomic, readonly) long long provenance;
 
 + (void)applyEntries:(id)arg1 withDaemon:(id)arg2;
 + (long long)behavior;

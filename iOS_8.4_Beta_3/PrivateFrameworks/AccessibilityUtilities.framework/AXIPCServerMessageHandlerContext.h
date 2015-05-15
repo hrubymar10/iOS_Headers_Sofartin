@@ -8,9 +8,9 @@
     id _target;
 }
 
-@property(assign,readonly) id handler;
-@property(assign,readonly) SEL selector;
-@property(assign,readonly) id target;
+@property (nonatomic, readonly) id handler;
+@property (nonatomic, readonly) SEL selector;
+@property (nonatomic, readonly) id target;
 
 - (void)dealloc;
 - (id)handler;

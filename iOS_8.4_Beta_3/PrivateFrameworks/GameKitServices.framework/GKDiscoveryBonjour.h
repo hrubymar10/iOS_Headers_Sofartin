@@ -17,16 +17,16 @@
     NSString *_serviceType;
 }
 
-@property(assign,readwrite) struct _DNSServiceRef_t { }* advertiseRef;
-@property(assign,copy) id browseCallback;
-@property(assign,readwrite) struct _DNSServiceRef_t { }* browseRef;
-@property(assign,copy) id connectionCallback;
-@property(assign,retain) NSMutableArray * launchdSources;
-@property(assign,retain) NSMutableDictionary * resolveContainers;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * resolveContainersSyncQueue;
-@property(assign,copy) NSString * serviceDomain;
-@property(assign,copy) id serviceNameCollisionCallback;
-@property(assign,copy) NSString * serviceType;
+@property (nonatomic) struct _DNSServiceRef_t { }*advertiseRef;
+@property (nonatomic, copy) id browseCallback;
+@property (nonatomic) struct _DNSServiceRef_t { }*browseRef;
+@property (nonatomic, copy) id connectionCallback;
+@property (nonatomic, retain) NSMutableArray *launchdSources;
+@property (nonatomic, retain) NSMutableDictionary *resolveContainers;
+@property (nonatomic) NSObject<OS_dispatch_queue> *resolveContainersSyncQueue;
+@property (nonatomic, copy) NSString *serviceDomain;
+@property (nonatomic, copy) id serviceNameCollisionCallback;
+@property (nonatomic, copy) NSString *serviceType;
 
 - (struct _DNSServiceRef_t { }*)advertiseRef;
 - (id)browseCallback;

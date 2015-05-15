@@ -4,10 +4,10 @@
 
 @interface TDMetafontSizeSelector : NSManagedObject
 
-@property(assign,retain) TDThemeSize * controlSize;
-@property(assign,retain) TDFontSizeDefinition * definition;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSNumber * identifier;
-@property(assign,retain) NSString * selectorName;
+@property (nonatomic, retain) TDThemeSize *controlSize;
+@property (nonatomic, retain) TDFontSizeDefinition *definition;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSNumber *identifier;
+@property (nonatomic, retain) NSString *selectorName;
 
 @end

@@ -8,9 +8,9 @@
     unsigned long long _valueType;
 }
 
-@property(assign,readonly) NSString * key;
-@property(assign,readonly) id value;
-@property(assign,readonly) unsigned long long valueType;
+@property (nonatomic, readonly) NSString *key;
+@property (nonatomic, readonly) id value;
+@property (nonatomic, readonly) unsigned long long valueType;
 
 - (void).cxx_destruct;
 - (id)initWithData:(id)arg1 localizedKey:(id)arg2;

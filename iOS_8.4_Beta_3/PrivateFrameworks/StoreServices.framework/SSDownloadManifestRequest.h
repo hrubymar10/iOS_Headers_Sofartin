@@ -8,14 +8,14 @@
     NSURLRequest *_urlRequest;
 }
 
-@property(assign,readonly) NSURLRequest * URLRequest;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SSDownloadManifestRequestDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long manifestFormat;
-@property(assign,readwrite) bool shouldHideUserPrompts;
-@property(assign,readonly) Class superclass;
+@property (readonly) NSURLRequest *URLRequest;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SSDownloadManifestRequestDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property long long manifestFormat;
+@property bool shouldHideUserPrompts;
+@property (readonly) Class superclass;
 
 - (id)URLRequest;
 - (id)copyXPCEncoding;

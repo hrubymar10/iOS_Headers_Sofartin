@@ -9,8 +9,8 @@
     NSMutableArray *_tokens;
 }
 
-@property(assign,readonly) NSDictionary * correctionIdentifier;
-@property(assign,readonly) NSArray * dictationResult;
+@property (nonatomic, readonly) NSDictionary *correctionIdentifier;
+@property (nonatomic, readonly) NSArray *dictationResult;
 
 - (void).cxx_destruct;
 - (id)bestTextInterpretation;

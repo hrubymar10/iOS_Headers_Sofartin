@@ -13,14 +13,14 @@
     NSString *_publisherMatchID;
 }
 
-@property(assign,readwrite) double date;
-@property(assign,readwrite) bool didPlayLightsAndSirens;
-@property(assign,readwrite) bool hasDate;
-@property(assign,readwrite) bool hasDidPlayLightsAndSirens;
-@property(assign,readonly) bool hasPhoneSectionID;
-@property(assign,readonly) bool hasPublisherMatchID;
-@property(assign,retain) NSString * phoneSectionID;
-@property(assign,retain) NSString * publisherMatchID;
+@property (nonatomic) double date;
+@property (nonatomic) bool didPlayLightsAndSirens;
+@property (nonatomic) bool hasDate;
+@property (nonatomic) bool hasDidPlayLightsAndSirens;
+@property (nonatomic, readonly) bool hasPhoneSectionID;
+@property (nonatomic, readonly) bool hasPublisherMatchID;
+@property (nonatomic, retain) NSString *phoneSectionID;
+@property (nonatomic, retain) NSString *publisherMatchID;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

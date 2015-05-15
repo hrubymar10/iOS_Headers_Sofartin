@@ -24,17 +24,17 @@
     bool _usesBackgroundSession;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * callbackQueue;
-@property(assign,readonly) NSError * error;
-@property(getter=isExecuting,assign,readwrite) bool executing;
-@property(assign,copy) id finishBlock;
-@property(getter=isFinished,assign,readwrite) bool finished;
-@property(assign,readonly) id logSections;
-@property(assign,copy) id mainBlock;
-@property(assign,readonly) NSUUID * operationID;
-@property(assign,readwrite) BRCThrottle * operationThrottle;
-@property(assign,readonly) BRCSyncContext * syncContext;
-@property(assign,readwrite) bool usesBackgroundSession;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *callbackQueue;
+@property (nonatomic, readonly) NSError *error;
+@property (getter=isExecuting, nonatomic) bool executing;
+@property (nonatomic, copy) id finishBlock;
+@property (getter=isFinished, nonatomic) bool finished;
+@property (nonatomic, readonly) id logSections;
+@property (nonatomic, copy) id mainBlock;
+@property (nonatomic, readonly) NSUUID *operationID;
+@property (nonatomic) BRCThrottle *operationThrottle;
+@property (nonatomic, readonly) BRCSyncContext *syncContext;
+@property (nonatomic) bool usesBackgroundSession;
 
 - (void).cxx_destruct;
 - (void)_completedWithResult:(id)arg1 error:(id)arg2;

@@ -6,7 +6,7 @@
     bool isStart;
 }
 
-@property(assign,readwrite) bool isStart;
+@property (nonatomic) bool isStart;
 
 - (bool)isStart;
 - (void)setIsStart:(bool)arg1;

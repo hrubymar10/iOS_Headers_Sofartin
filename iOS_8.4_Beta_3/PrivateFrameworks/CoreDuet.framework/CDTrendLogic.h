@@ -20,21 +20,21 @@
     unsigned long long _timerMinSeconds;
 }
 
-@property(assign,readwrite) unsigned long long cDelta;
-@property(assign,readwrite) unsigned long long cEpsilon;
-@property(assign,readwrite) unsigned long long cHighThreshold;
-@property(assign,readwrite) unsigned long long cLowThreshold;
-@property(assign,readwrite) unsigned long long cMax;
-@property(assign,readwrite) unsigned long long cMin;
-@property(assign,readwrite) unsigned long long iecAvgMult;
-@property(assign,readwrite) unsigned long long iecDecayMult;
-@property(assign,readwrite) unsigned long long iecDiv;
-@property(assign,readwrite) unsigned long long iecMaxSeconds;
-@property(assign,readwrite) unsigned long long iecMinMult;
-@property(assign,readwrite) unsigned long long iecMinSeconds;
-@property(assign,readwrite) unsigned long long slotCount;
-@property(assign,readwrite) unsigned long long timerLeewaySeconds;
-@property(assign,readwrite) unsigned long long timerMinSeconds;
+@property unsigned long long cDelta;
+@property unsigned long long cEpsilon;
+@property unsigned long long cHighThreshold;
+@property unsigned long long cLowThreshold;
+@property unsigned long long cMax;
+@property unsigned long long cMin;
+@property unsigned long long iecAvgMult;
+@property unsigned long long iecDecayMult;
+@property unsigned long long iecDiv;
+@property unsigned long long iecMaxSeconds;
+@property unsigned long long iecMinMult;
+@property unsigned long long iecMinSeconds;
+@property unsigned long long slotCount;
+@property unsigned long long timerLeewaySeconds;
+@property unsigned long long timerMinSeconds;
 
 - (unsigned long long)cDelta;
 - (unsigned long long)cEpsilon;

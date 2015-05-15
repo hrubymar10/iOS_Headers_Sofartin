@@ -8,9 +8,9 @@
     double _values;
 }
 
-@property(assign,readonly) struct IKCornerRadii { double x1; double x2; double x3; double x4; } cornerRadiiValue;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsetsValue;
-@property(assign,readonly) NSString * namedStyle;
+@property (nonatomic, readonly) struct IKCornerRadii { double x1; double x2; double x3; double x4; } cornerRadiiValue;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsetsValue;
+@property (nonatomic, readonly) NSString *namedStyle;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

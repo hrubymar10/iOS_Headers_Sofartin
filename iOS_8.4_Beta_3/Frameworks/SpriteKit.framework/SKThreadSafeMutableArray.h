@@ -7,7 +7,7 @@
     int _storageLock;
 }
 
-@property(assign,readonly) NSArray * arrayRepresentation;
+@property (readonly) NSArray *arrayRepresentation;
 
 - (void).cxx_destruct;
 - (id)arrayRepresentation;

@@ -11,12 +11,12 @@
     SKUIViewElement *_rootTargetViewElement;
 }
 
-@property(assign,readwrite) <SKUIIndexBarEntryListControllerDelegate> * delegate;
-@property(assign,readonly) bool hidesIndexBar;
-@property(assign,readonly) bool needsRootTargetViewElement;
-@property(assign,readonly) long long numberOfEntryDescriptors;
-@property(assign,readonly) NSString * rootTargetIndexBarEntryID;
-@property(assign,retain) SKUIViewElement * rootTargetViewElement;
+@property (nonatomic) <SKUIIndexBarEntryListControllerDelegate> *delegate;
+@property (nonatomic, readonly) bool hidesIndexBar;
+@property (nonatomic, readonly) bool needsRootTargetViewElement;
+@property (nonatomic, readonly) long long numberOfEntryDescriptors;
+@property (nonatomic, readonly) NSString *rootTargetIndexBarEntryID;
+@property (nonatomic, retain) SKUIViewElement *rootTargetViewElement;
 
 + (id)entryListControllerForEntryListViewElement:(id)arg1;
 + (id)entryListControllerForEntryViewElement:(id)arg1;

@@ -14,15 +14,15 @@
     NSString *_uniqueIdentifier;
 }
 
-@property(assign,retain) NSDictionary * activities;
-@property(assign,retain) NSMutableSet * connections;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * name;
-@property(assign,retain) id node;
-@property(assign,retain) NSString * serviceName;
-@property(assign,retain) NSArray * services;
-@property(assign,copy) NSString * type;
-@property(assign,retain) NSString * uniqueIdentifier;
+@property (nonatomic, retain) NSDictionary *activities;
+@property (nonatomic, retain) NSMutableSet *connections;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) id node;
+@property (nonatomic, retain) NSString *serviceName;
+@property (nonatomic, retain) NSArray *services;
+@property (nonatomic, copy) NSString *type;
+@property (retain) NSString *uniqueIdentifier;
 
 - (id)activities;
 - (id)connections;

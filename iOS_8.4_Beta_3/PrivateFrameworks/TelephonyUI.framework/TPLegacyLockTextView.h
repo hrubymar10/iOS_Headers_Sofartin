@@ -14,7 +14,7 @@
     char *_textData;
 }
 
-@property(assign,readonly) double deltaFromDefaultTrackWidth;
+@property (readonly) double deltaFromDefaultTrackWidth;
 
 - (void)_cacheLabel:(id)arg1 size:(struct CGSize { double x1; double x2; })arg2;
 - (void)dealloc;

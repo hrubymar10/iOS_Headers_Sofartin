@@ -9,9 +9,9 @@
     NSXPCConnection *_serverConnection;
 }
 
-@property(assign,readwrite) bool active;
-@property(assign,readwrite) long long audioType;
-@property(assign,readwrite) bool keepAudioSessionActive;
+@property (nonatomic) bool active;
+@property (nonatomic) long long audioType;
+@property (nonatomic) bool keepAudioSessionActive;
 
 - (void).cxx_destruct;
 - (void)_ensureKeepAliveMaintenance;

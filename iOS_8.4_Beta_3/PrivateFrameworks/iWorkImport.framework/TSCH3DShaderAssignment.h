@@ -22,16 +22,16 @@
     NSString *mStatement;
 }
 
-@property(assign,readonly) TSCH3DShaderVariableLinkage * assignee;
-@property(assign,readonly) struct TSCH3DShaderVariableScopeType { unsigned long long x1; } assigneeScope;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) NSArray * dependees;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isLinked;
-@property(assign,readwrite) struct TSCH3DShaderType { unsigned long long x1; } linkageType;
-@property(assign,readonly) NSString * string;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) TSCH3DShaderVariableLinkage *assignee;
+@property (nonatomic, readonly) struct TSCH3DShaderVariableScopeType { unsigned long long x1; } assigneeScope;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) NSArray *dependees;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isLinked;
+@property (nonatomic) struct TSCH3DShaderType { unsigned long long x1; } linkageType;
+@property (nonatomic, readonly) NSString *string;
+@property (readonly) Class superclass;
 
 + (id)assignmentWithAssignee:(id)arg1 statement:(id)arg2 dependees:(id)arg3 program:(id)arg4;
 

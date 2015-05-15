@@ -4,7 +4,7 @@
 
 @interface ABContactToggleBlockCallerAction : ABContactAction
 
-@property(assign,readonly) bool isBlocked;
+@property (nonatomic, readonly) bool isBlocked;
 
 - (id)allNumbersAndEmails;
 - (void)block;

@@ -12,10 +12,10 @@
     id _target;
 }
 
-@property(assign,retain) CADisplay * display;
-@property(assign,readwrite) long long frameInterval;
-@property(getter=isPaused,assign,readwrite) bool paused;
-@property(assign,readonly) double timestamp;
+@property (nonatomic, retain) CADisplay *display;
+@property (nonatomic) long long frameInterval;
+@property (getter=isPaused, nonatomic) bool paused;
+@property (nonatomic, readonly) double timestamp;
 
 - (void)_displayLinkFired:(id)arg1;
 - (void)addToRunLoop:(id)arg1 forMode:(id)arg2;

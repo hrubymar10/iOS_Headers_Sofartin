@@ -9,9 +9,9 @@
     bool _stop;
 }
 
-@property(assign,retain) NSMutableArray * enumeratorStack;
-@property(assign,copy) id filter;
-@property(assign,retain) <TSKModel> * root;
+@property (nonatomic, retain) NSMutableArray *enumeratorStack;
+@property (nonatomic, copy) id filter;
+@property (nonatomic, retain) <TSKModel> *root;
 
 - (void)dealloc;
 - (void)enumerateReferencedStylesUsingBlock:(id)arg1;

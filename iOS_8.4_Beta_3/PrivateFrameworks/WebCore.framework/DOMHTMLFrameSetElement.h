@@ -4,8 +4,8 @@
 
 @interface DOMHTMLFrameSetElement : DOMHTMLElement
 
-@property(assign,copy) NSString * cols;
-@property(assign,copy) NSString * rows;
+@property (copy) NSString *cols;
+@property (copy) NSString *rows;
 
 - (id)cols;
 - (id)rows;

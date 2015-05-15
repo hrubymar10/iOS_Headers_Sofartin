@@ -4,15 +4,15 @@
 
 @interface ML3Container : ML3Entity
 
-@property(assign,copy) NSArray * cloudDisplayOrderingTerms;
-@property(assign,copy) NSArray * displayOrderingTerms;
-@property(assign,readonly) ML3Predicate * dynamicPredicate;
-@property(getter=isLimitOrderingDescending,assign,readonly) bool limitOrderingDescending;
-@property(assign,copy) NSArray * limitOrderingTerms;
-@property(assign,readonly) long long limitValue;
-@property(getter=isLimitedByCount,assign,readonly) bool limitedByCount;
-@property(assign,copy) NSString * limitingProperty;
-@property(assign,readonly) ML3Predicate * staticPredicate;
+@property (readonly, copy) NSArray *cloudDisplayOrderingTerms;
+@property (readonly, copy) NSArray *displayOrderingTerms;
+@property (readonly) ML3Predicate *dynamicPredicate;
+@property (getter=isLimitOrderingDescending, readonly) bool limitOrderingDescending;
+@property (readonly, copy) NSArray *limitOrderingTerms;
+@property (readonly) long long limitValue;
+@property (getter=isLimitedByCount, readonly) bool limitedByCount;
+@property (readonly, copy) NSString *limitingProperty;
+@property (readonly) ML3Predicate *staticPredicate;
 
 + (id)__mediaTypesForTracksWithDatabaseConnection:(id)arg1 tracksPersistentIDsEnumerationBlock:(id)arg2;
 + (void)_addMediaTypesToContainerWithPersistentID:(long long)arg1 mediaTypes:(id)arg2 connection:(id)arg3;

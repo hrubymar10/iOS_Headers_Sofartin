@@ -7,8 +7,8 @@
     NSString *_mimeType;
 }
 
-@property(assign,copy) NSData * imageData;
-@property(assign,copy) NSString * mimeType;
+@property (nonatomic, readonly, copy) NSData *imageData;
+@property (nonatomic, readonly, copy) NSString *mimeType;
 
 - (void)bindToXPCDictionary:(id)arg1;
 - (id)copyImageData;

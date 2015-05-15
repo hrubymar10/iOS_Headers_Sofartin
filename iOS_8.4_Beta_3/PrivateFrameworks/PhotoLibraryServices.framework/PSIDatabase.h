@@ -21,8 +21,8 @@
     NSMutableArray *_tokenizerOutputTokens;
 }
 
-@property(assign,readonly) long long options;
-@property(assign,readonly) NSString * path;
+@property (nonatomic, readonly) long long options;
+@property (nonatomic, readonly) NSString *path;
 
 + (void)_dropDatabase:(struct sqlite3 { }*)arg1 withCompletion:(id)arg2;
 + (struct sqlite3 { }*)_openDatabaseAtPath:(id)arg1 options:(long long)arg2;

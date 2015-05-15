@@ -8,9 +8,9 @@
     NSMutableArray *_misgroupedTracks;
 }
 
-@property(assign,readonly) long long albumArtistPID;
-@property(assign,readonly) long long albumPID;
-@property(assign,readonly) NSArray * misgroupedTracks;
+@property (nonatomic, readonly) long long albumArtistPID;
+@property (nonatomic, readonly) long long albumPID;
+@property (nonatomic, readonly) NSArray *misgroupedTracks;
 
 - (void).cxx_destruct;
 - (void)addMisgroupedTrack:(id)arg1;

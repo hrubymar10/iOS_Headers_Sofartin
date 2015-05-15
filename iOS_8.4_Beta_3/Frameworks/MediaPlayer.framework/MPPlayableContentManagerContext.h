@@ -9,10 +9,10 @@
     long long _enforcedContentTreeDepth;
 }
 
-@property(assign,readwrite) bool contentLimitsEnabled;
-@property(assign,readwrite) bool endpointAvailable;
-@property(assign,readwrite) long long enforcedContentItemsCount;
-@property(assign,readwrite) long long enforcedContentTreeDepth;
+@property (nonatomic) bool contentLimitsEnabled;
+@property (nonatomic) bool endpointAvailable;
+@property (nonatomic) long long enforcedContentItemsCount;
+@property (nonatomic) long long enforcedContentTreeDepth;
 
 - (bool)contentLimitsEnabled;
 - (bool)endpointAvailable;

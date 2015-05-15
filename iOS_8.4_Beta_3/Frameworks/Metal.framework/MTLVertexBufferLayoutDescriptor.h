@@ -8,9 +8,9 @@
     unsigned long long _stride;
 }
 
-@property(assign,readwrite) unsigned long long stepFunction;
-@property(assign,readwrite) unsigned long long stepRate;
-@property(assign,readwrite) unsigned long long stride;
+@property (nonatomic) unsigned long long stepFunction;
+@property (nonatomic) unsigned long long stepRate;
+@property (nonatomic) unsigned long long stride;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)init;

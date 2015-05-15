@@ -6,9 +6,9 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(getter=_baseLogDirectoryURL,assign,copy) NSURL * baseLogDirectoryURL;
-@property(getter=_queue,assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(getter=_siriLogDirectoryURL,assign,copy) NSURL * siriLogDirectoryURL;
+@property (getter=_baseLogDirectoryURL, nonatomic, readonly, copy) NSURL *baseLogDirectoryURL;
+@property (getter=_queue, nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (getter=_siriLogDirectoryURL, nonatomic, readonly, copy) NSURL *siriLogDirectoryURL;
 
 + (int)executeSystemCommand:(id)arg1 stdoutTo:(id)arg2;
 

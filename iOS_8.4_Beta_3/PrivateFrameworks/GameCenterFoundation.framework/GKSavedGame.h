@@ -9,10 +9,10 @@
     NSString *_name;
 }
 
-@property(assign,retain) NSString * deviceName;
-@property(assign,retain) NSURL * fileURL;
-@property(assign,retain) NSDate * modificationDate;
-@property(assign,retain) NSString * name;
+@property (retain) NSString *deviceName;
+@property (retain) NSURL *fileURL;
+@property (retain) NSDate *modificationDate;
+@property (retain) NSString *name;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

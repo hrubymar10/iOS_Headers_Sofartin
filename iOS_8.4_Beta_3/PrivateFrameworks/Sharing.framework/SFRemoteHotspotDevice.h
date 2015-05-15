@@ -11,12 +11,12 @@
     NSNumber *_signalStrength;
 }
 
-@property(assign,retain) NSNumber * batteryLife;
-@property(assign,copy) NSString * deviceIdentifier;
-@property(assign,copy) NSString * deviceName;
-@property(assign,readwrite) bool hasDuplicates;
-@property(assign,readwrite) unsigned char networkType;
-@property(assign,retain) NSNumber * signalStrength;
+@property (retain) NSNumber *batteryLife;
+@property (copy) NSString *deviceIdentifier;
+@property (copy) NSString *deviceName;
+@property bool hasDuplicates;
+@property unsigned char networkType;
+@property (retain) NSNumber *signalStrength;
 
 + (bool)supportsSecureCoding;
 

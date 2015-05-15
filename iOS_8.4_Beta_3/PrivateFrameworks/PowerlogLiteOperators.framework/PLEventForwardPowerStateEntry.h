@@ -4,10 +4,10 @@
 
 @interface PLEventForwardPowerStateEntry : PLEntry
 
-@property(assign,readonly) short event;
-@property(assign,readonly) bool isBasebandWake;
-@property(assign,readonly) NSArray * reason;
-@property(assign,readonly) short state;
+@property (readonly) short event;
+@property (readonly) bool isBasebandWake;
+@property (readonly) NSArray *reason;
+@property (readonly) short state;
 
 + (id)entryKey;
 + (void)load;

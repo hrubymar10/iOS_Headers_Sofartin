@@ -16,17 +16,17 @@
     NSDictionary *_webSharingIdentityDataByRecordID;
 }
 
-@property(assign,readwrite) unsigned long long URLOptions;
-@property(assign,retain) NSSet * assetFieldNamesToPublishURLs;
-@property(assign,retain) NSArray * desiredKeys;
-@property(assign,retain) NSDictionary * desiredPackageFileIndices;
-@property(assign,readwrite) bool isFetchCurrentUserOperation;
-@property(assign,retain) NSArray * recordIDs;
-@property(assign,retain) NSDictionary * recordIDsToVersionETags;
-@property(assign,readwrite) unsigned long long requestedTTL;
-@property(assign,readwrite) bool shouldFetchAssetContent;
-@property(assign,retain) NSDictionary * signaturesOfAssetsByRecordIDAndKey;
-@property(assign,retain) NSDictionary * webSharingIdentityDataByRecordID;
+@property (nonatomic) unsigned long long URLOptions;
+@property (nonatomic, retain) NSSet *assetFieldNamesToPublishURLs;
+@property (nonatomic, retain) NSArray *desiredKeys;
+@property (nonatomic, retain) NSDictionary *desiredPackageFileIndices;
+@property (nonatomic) bool isFetchCurrentUserOperation;
+@property (nonatomic, retain) NSArray *recordIDs;
+@property (nonatomic, retain) NSDictionary *recordIDsToVersionETags;
+@property (nonatomic) unsigned long long requestedTTL;
+@property (nonatomic) bool shouldFetchAssetContent;
+@property (nonatomic, retain) NSDictionary *signaturesOfAssetsByRecordIDAndKey;
+@property (nonatomic, retain) NSDictionary *webSharingIdentityDataByRecordID;
 
 + (bool)supportsSecureCoding;
 

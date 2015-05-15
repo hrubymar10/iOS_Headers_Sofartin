@@ -8,9 +8,9 @@
     unsigned long long _limit;
 }
 
-@property(assign,retain) NSNumber * anchor;
-@property(assign,readonly) id completionHandler;
-@property(assign,readwrite) unsigned long long limit;
+@property (nonatomic, retain) NSNumber *anchor;
+@property (nonatomic, readonly) id completionHandler;
+@property (nonatomic) unsigned long long limit;
 
 + (Class)_queryServerDataObjectClass;
 

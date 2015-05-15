@@ -14,12 +14,12 @@
     } _targetSize;
 }
 
-@property(assign,readwrite) int bestFormat;
-@property(assign,readonly) long long contentMode;
-@property(assign,readwrite) int degradedFormat;
-@property(assign,readonly) PHImageRequestOptions * options;
-@property(assign,copy) id resultHandler;
-@property(assign,readonly) struct CGSize { double x1; double x2; } targetSize;
+@property int bestFormat;
+@property (nonatomic, readonly) long long contentMode;
+@property int degradedFormat;
+@property (nonatomic, readonly) PHImageRequestOptions *options;
+@property (nonatomic, readonly, copy) id resultHandler;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } targetSize;
 
 + (id)descriptionWithContentMode:(long long)arg1;
 + (id)imageRequestWithAsset:(id)arg1 targetSize:(struct CGSize { double x1; double x2; })arg2 contentMode:(long long)arg3 options:(id)arg4 domain:(id)arg5 resultHandler:(id)arg6;

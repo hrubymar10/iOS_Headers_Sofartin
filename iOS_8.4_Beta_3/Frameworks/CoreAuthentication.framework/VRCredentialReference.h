@@ -9,8 +9,8 @@
     NSDictionary *_lastEvaluatePolicyResult;
 }
 
-@property(assign,readonly) NSString * creatorDisplayName;
-@property(assign,readonly) NSData * credentialHandle;
+@property (readonly) NSString *creatorDisplayName;
+@property (readonly) NSData *credentialHandle;
 
 - (void).cxx_destruct;
 - (id)creatorDisplayName;

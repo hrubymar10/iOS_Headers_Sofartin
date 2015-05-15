@@ -23,11 +23,11 @@
     BRCServerZone *_serverZone;
 }
 
-@property(assign,readonly) BRCRelativePath * byFileSystemID;
-@property(assign,readonly) BRCRelativePath * byPath;
-@property(assign,readonly) NSURL * coordinationURL;
-@property(assign,readonly) bool fileSystemIDMayStillExist;
-@property(assign,readonly) BRCRelativePath * parentPath;
+@property (nonatomic, readonly) BRCRelativePath *byFileSystemID;
+@property (nonatomic, readonly) BRCRelativePath *byPath;
+@property (nonatomic, readonly) NSURL *coordinationURL;
+@property (nonatomic, readonly) bool fileSystemIDMayStillExist;
+@property (nonatomic, readonly) BRCRelativePath *parentPath;
 
 + (id)_resolveEnclosureWithEnclosureFd:(int)arg1 serverZone:(id)arg2 expectedDocumentID:(unsigned int)arg3 expectedFileName:(id)arg4 cleanupFaults:(bool)arg5;
 + (id)lookupForItem:(id)arg1;

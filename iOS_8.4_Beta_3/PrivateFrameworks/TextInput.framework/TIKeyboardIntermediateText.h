@@ -9,10 +9,10 @@
     unsigned long long _selectionOffset;
 }
 
-@property(assign,readonly) NSString * displayString;
-@property(assign,readonly) NSString * inputString;
-@property(assign,readonly) NSString * searchString;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } selectedRange;
+@property (nonatomic, readonly) NSString *displayString;
+@property (nonatomic, readonly) NSString *inputString;
+@property (nonatomic, readonly) NSString *searchString;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } selectedRange;
 
 + (id)intermediateTextWithInputString:(id)arg1 displayString:(id)arg2;
 + (id)intermediateTextWithInputString:(id)arg1 displayString:(id)arg2 selectionLocation:(unsigned long long)arg3;

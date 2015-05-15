@@ -7,7 +7,7 @@
     NSMutableArray *_images;
 }
 
-@property(assign,readonly) NSArray * predefinedImages;
+@property (nonatomic, readonly) NSArray *predefinedImages;
 
 + (id)sharedInstance;
 

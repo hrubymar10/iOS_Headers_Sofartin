@@ -16,17 +16,17 @@
     NSData *_wrappedAssetKey;
 }
 
-@property(assign,retain) NSNumber * deviceID;
-@property(assign,retain) NSNumber * fileID;
-@property(assign,retain) NSURL * fileURL;
-@property(assign,retain) NSNumber * generationID;
-@property(assign,readwrite) unsigned long long itemID;
-@property(assign,readwrite) long long offset;
-@property(assign,readwrite) long long packageIndex;
-@property(assign,readwrite) int sectionIndex;
-@property(assign,retain) NSData * signature;
-@property(assign,readwrite) long long size;
-@property(assign,retain) NSData * wrappedAssetKey;
+@property (nonatomic, retain) NSNumber *deviceID;
+@property (nonatomic, retain) NSNumber *fileID;
+@property (nonatomic, retain) NSURL *fileURL;
+@property (nonatomic, retain) NSNumber *generationID;
+@property (nonatomic) unsigned long long itemID;
+@property (nonatomic) long long offset;
+@property (nonatomic) long long packageIndex;
+@property (nonatomic) int sectionIndex;
+@property (nonatomic, retain) NSData *signature;
+@property (nonatomic) long long size;
+@property (nonatomic, retain) NSData *wrappedAssetKey;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

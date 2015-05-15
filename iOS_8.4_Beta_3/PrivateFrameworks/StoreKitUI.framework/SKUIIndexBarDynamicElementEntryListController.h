@@ -10,7 +10,7 @@
     SKUIViewElement *_templateElement;
 }
 
-@property(assign,readonly) SKUIIndexBarEntryListViewElement * entryListViewElement;
+@property (nonatomic, readonly) SKUIIndexBarEntryListViewElement *entryListViewElement;
 
 - (void).cxx_destruct;
 - (void)_entityProviderDidInvalidateNotification:(id)arg1;

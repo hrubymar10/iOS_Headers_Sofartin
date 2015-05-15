@@ -8,12 +8,12 @@
     NSMutableArray *_queue;
 }
 
-@property(assign,retain) NSMutableArray * _addDates;
-@property(assign,retain) NSMutableArray * _queue;
-@property(assign,readonly) long long count;
-@property(assign,readwrite) <FTMessageQueueDelegate> * delegate;
-@property(assign,readonly) NSArray * messages;
-@property(assign,readonly) IDSBaseMessage * topMessage;
+@property (retain) NSMutableArray *_addDates;
+@property (retain) NSMutableArray *_queue;
+@property (readonly) long long count;
+@property <FTMessageQueueDelegate> *delegate;
+@property (readonly) NSArray *messages;
+@property (readonly) IDSBaseMessage *topMessage;
 
 - (id)_addDates;
 - (void)_clearTimeout;

@@ -29,9 +29,9 @@
     NSMutableDictionary *vectorListCardinality;
 }
 
-@property(assign,readonly) CPMLSchema * cpSchema;
-@property(assign,readonly) struct sqlite3 { }* db;
-@property(assign,readonly) NSString * dbFileName;
+@property (readonly) CPMLSchema *cpSchema;
+@property (nonatomic, readonly) struct sqlite3 { }*db;
+@property (readonly) NSString *dbFileName;
 
 + (id)getConfigurationFromPlist:(id)arg1;
 

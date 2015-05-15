@@ -20,10 +20,10 @@
     _UIFlowLayoutSection *_section;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } itemFrame;
-@property(getter=isPositionEstimated,assign,readwrite) bool positionEstimated;
-@property(assign,readwrite) _UIFlowLayoutRow * rowObject;
-@property(assign,readwrite) _UIFlowLayoutSection * section;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } itemFrame;
+@property (getter=isPositionEstimated, nonatomic) bool positionEstimated;
+@property (nonatomic) _UIFlowLayoutRow *rowObject;
+@property (nonatomic) _UIFlowLayoutSection *section;
 
 - (id)copy;
 - (bool)isPositionEstimated;

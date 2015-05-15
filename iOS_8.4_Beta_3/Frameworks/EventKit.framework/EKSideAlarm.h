@@ -4,15 +4,15 @@
 
 @interface EKSideAlarm : NSManagedObject
 
-@property(assign,retain) NSDate * acknowledgedDate;
-@property(assign,retain) NSNumber * alarmID;
-@property(assign,retain) NSNumber * allDay;
-@property(assign,retain) NSDate * entityDate;
-@property(assign,retain) NSNumber * entityID;
-@property(assign,retain) NSString * entityTimeZone;
-@property(assign,retain) NSString * entityURI;
-@property(assign,retain) NSString * externalID;
-@property(assign,retain) NSDate * fireTime;
-@property(assign,retain) NSNumber * isDelayedProximityAlarm;
+@property (nonatomic, retain) NSDate *acknowledgedDate;
+@property (nonatomic, retain) NSNumber *alarmID;
+@property (nonatomic, retain) NSNumber *allDay;
+@property (nonatomic, retain) NSDate *entityDate;
+@property (nonatomic, retain) NSNumber *entityID;
+@property (nonatomic, retain) NSString *entityTimeZone;
+@property (nonatomic, retain) NSString *entityURI;
+@property (nonatomic, retain) NSString *externalID;
+@property (nonatomic, retain) NSDate *fireTime;
+@property (nonatomic, retain) NSNumber *isDelayedProximityAlarm;
 
 @end

@@ -4,12 +4,12 @@
 
 @interface SAUIConfirmationView : SAAceView
 
-@property(assign,copy) NSArray * allConfirmationOptions;
-@property(assign,copy) NSString * cancelTrigger;
-@property(assign,copy) NSArray * confirmCommands;
-@property(assign,copy) NSString * confirmText;
-@property(assign,copy) NSArray * denyCommands;
-@property(assign,copy) NSString * denyText;
+@property (nonatomic, copy) NSArray *allConfirmationOptions;
+@property (nonatomic, copy) NSString *cancelTrigger;
+@property (nonatomic, copy) NSArray *confirmCommands;
+@property (nonatomic, copy) NSString *confirmText;
+@property (nonatomic, copy) NSArray *denyCommands;
+@property (nonatomic, copy) NSString *denyText;
 
 + (id)confirmationView;
 + (id)confirmationViewWithDictionary:(id)arg1 context:(id)arg2;

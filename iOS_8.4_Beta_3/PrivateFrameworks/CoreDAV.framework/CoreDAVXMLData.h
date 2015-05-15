@@ -12,8 +12,8 @@
     struct _xmlTextWriter { } *_writer;
 }
 
-@property(assign,readonly) NSData * data;
-@property(assign,readwrite) bool shouldAddFormattingSpaces;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic) bool shouldAddFormattingSpaces;
 
 + (bool)string:(id)arg1 isEqualToXmlCharString:(const char *)arg2;
 

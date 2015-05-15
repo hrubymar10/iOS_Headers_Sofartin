@@ -7,7 +7,7 @@
     int _resultProviderID;
 }
 
-@property(assign,readonly) int resultProviderID;
+@property (nonatomic, readonly) int resultProviderID;
 
 - (id)allCacheEntries;
 - (void)calculateFreeableSpaceWithHandler:(id)arg1 onQueue:(id)arg2;

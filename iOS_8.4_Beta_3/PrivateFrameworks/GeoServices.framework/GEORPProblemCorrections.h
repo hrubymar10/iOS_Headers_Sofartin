@@ -14,22 +14,22 @@
     GEORPPlaceProblem *_placeProblem;
 }
 
-@property(assign,retain) NSString * comments;
-@property(assign,retain) GEORPCorrectedCoordinate * correctedCoordinate;
-@property(assign,retain) NSMutableArray * correctedFields;
-@property(assign,retain) GEORPCorrectedLabel * correctedLabel;
-@property(assign,retain) GEORPMapLocation * correctedMapLocation;
-@property(assign,retain) GEORPCorrectedSearch * correctedSearch;
-@property(assign,retain) GEORPDirectionsProblem * directionsProblem;
-@property(assign,readonly) bool hasComments;
-@property(assign,readonly) bool hasCorrectedCoordinate;
-@property(assign,readonly) bool hasCorrectedLabel;
-@property(assign,readonly) bool hasCorrectedMapLocation;
-@property(assign,readonly) bool hasCorrectedSearch;
-@property(assign,readonly) bool hasDirectionsProblem;
-@property(assign,readonly) bool hasPlaceProblem;
-@property(assign,retain) NSMutableArray * photoWithMetadatas;
-@property(assign,retain) GEORPPlaceProblem * placeProblem;
+@property (nonatomic, retain) NSString *comments;
+@property (nonatomic, retain) GEORPCorrectedCoordinate *correctedCoordinate;
+@property (nonatomic, retain) NSMutableArray *correctedFields;
+@property (nonatomic, retain) GEORPCorrectedLabel *correctedLabel;
+@property (nonatomic, retain) GEORPMapLocation *correctedMapLocation;
+@property (nonatomic, retain) GEORPCorrectedSearch *correctedSearch;
+@property (nonatomic, retain) GEORPDirectionsProblem *directionsProblem;
+@property (nonatomic, readonly) bool hasComments;
+@property (nonatomic, readonly) bool hasCorrectedCoordinate;
+@property (nonatomic, readonly) bool hasCorrectedLabel;
+@property (nonatomic, readonly) bool hasCorrectedMapLocation;
+@property (nonatomic, readonly) bool hasCorrectedSearch;
+@property (nonatomic, readonly) bool hasDirectionsProblem;
+@property (nonatomic, readonly) bool hasPlaceProblem;
+@property (nonatomic, retain) NSMutableArray *photoWithMetadatas;
+@property (nonatomic, retain) GEORPPlaceProblem *placeProblem;
 
 - (void)addCorrectedField:(id)arg1;
 - (void)addPhotoWithMetadata:(id)arg1;

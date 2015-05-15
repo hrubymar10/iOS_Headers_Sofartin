@@ -9,10 +9,10 @@
     double _nominalShortSideLength;
 }
 
-@property(assign,readwrite) int assetTypeFlags;
-@property(assign,readwrite) double maximumLongSideLength;
-@property(assign,readwrite) double minimumLongSideLength;
-@property(assign,readwrite) double nominalShortSideLength;
+@property (nonatomic) int assetTypeFlags;
+@property (nonatomic) double maximumLongSideLength;
+@property (nonatomic) double minimumLongSideLength;
+@property (nonatomic) double nominalShortSideLength;
 
 + (id)assetsToGenerateFromImageWithInputSize:(struct CGSize { double x1; double x2; })arg1 toConformToSpecifications:(id)arg2;
 + (id)specificationWithSharedAlbumSpecificationString:(id)arg1;

@@ -8,10 +8,10 @@
     UITextField *_textField;
 }
 
-@property(assign,readwrite) <ABPropertyCellDelegate> * delegate;
-@property(assign,readonly) UIResponder * firstResponderItem;
-@property(assign,retain) ABPropertyGroupItem * propertyItem;
-@property(assign,readonly) UITextField * textField;
+@property (nonatomic) <ABPropertyCellDelegate> *delegate;
+@property (nonatomic, readonly) UIResponder *firstResponderItem;
+@property (nonatomic, retain) ABPropertyGroupItem *propertyItem;
+@property (nonatomic, readonly) UITextField *textField;
 
 - (id)constantConstraints;
 - (void)dealloc;

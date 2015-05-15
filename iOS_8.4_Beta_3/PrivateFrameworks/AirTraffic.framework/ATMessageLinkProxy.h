@@ -13,14 +13,14 @@
     NSMutableDictionary *_requestHandlers;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) int endpointType;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInitialized,assign,readwrite) bool initialized;
-@property(assign,copy) NSString * libraryIdentifier;
-@property(getter=isOpen,assign,readwrite) bool open;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) int endpointType;
+@property (readonly) unsigned long long hash;
+@property (getter=isInitialized, nonatomic) bool initialized;
+@property (nonatomic, copy) NSString *libraryIdentifier;
+@property (getter=isOpen, nonatomic) bool open;
+@property (readonly) Class superclass;
 
 + (bool)supportsSecureCoding;
 

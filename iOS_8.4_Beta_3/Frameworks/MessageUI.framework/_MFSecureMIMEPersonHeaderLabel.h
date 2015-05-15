@@ -7,7 +7,7 @@
     UILabel *_label;
 }
 
-@property(assign,copy) NSString * text;
+@property (nonatomic, copy) NSString *text;
 
 - (void)dealloc;
 - (id)initWithImage:(id)arg1 text:(id)arg2 textColor:(id)arg3;

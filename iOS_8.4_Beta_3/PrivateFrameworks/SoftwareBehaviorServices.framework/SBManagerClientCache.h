@@ -23,11 +23,11 @@
     } fCallbacks;
 }
 
-@property(assign,readwrite) bool behaviorBundleSupport;
-@property(assign,readwrite) bool behaviorBundleSupportKnown;
-@property(assign,readwrite) NSLock * cacheLock;
-@property(assign,readwrite) NSMutableDictionary * keyValueCache;
-@property(assign,readwrite) struct dispatch_queue_s { }* queue;
+@property bool behaviorBundleSupport;
+@property bool behaviorBundleSupportKnown;
+@property NSLock *cacheLock;
+@property NSMutableDictionary *keyValueCache;
+@property struct dispatch_queue_s { }*queue;
 
 + (id)sharedInstance;
 

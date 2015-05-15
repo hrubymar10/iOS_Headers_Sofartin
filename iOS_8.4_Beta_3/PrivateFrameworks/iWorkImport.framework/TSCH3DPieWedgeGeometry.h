@@ -16,17 +16,17 @@
     float mTopZ;
 }
 
-@property(assign,readwrite) long long angleSteps;
-@property(assign,readwrite) long long bevelEdgeSteps;
-@property(assign,readwrite) float bottomZ;
-@property(assign,readonly) long long capCount;
-@property(assign,readonly) long long capOffset;
-@property(assign,readwrite) float endAngle;
-@property(assign,readonly) TSCH3DNormalDirectionMapper * normalDirectionMapper;
-@property(assign,readwrite) float radius;
-@property(assign,readwrite) long long radiusSteps;
-@property(assign,readwrite) float startAngle;
-@property(assign,readwrite) float topZ;
+@property (nonatomic) long long angleSteps;
+@property (nonatomic) long long bevelEdgeSteps;
+@property (nonatomic) float bottomZ;
+@property (nonatomic, readonly) long long capCount;
+@property (nonatomic, readonly) long long capOffset;
+@property (nonatomic) float endAngle;
+@property (nonatomic, readonly) TSCH3DNormalDirectionMapper *normalDirectionMapper;
+@property (nonatomic) float radius;
+@property (nonatomic) long long radiusSteps;
+@property (nonatomic) float startAngle;
+@property (nonatomic) float topZ;
 
 - (long long)angleSteps;
 - (long long)bevelEdgeSteps;

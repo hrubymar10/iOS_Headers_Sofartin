@@ -32,10 +32,10 @@
     bool _useLigatures;
 }
 
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } dirtyRange;
-@property(assign,readonly) <TSWPLayoutOwner> * owner;
-@property(assign,retain) TSWPStorage * storage;
-@property(assign,retain) TSWPCTTypesetterCache * typesetterCache;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } dirtyRange;
+@property (nonatomic, readonly) <TSWPLayoutOwner> *owner;
+@property (nonatomic, readonly, retain) TSWPStorage *storage;
+@property (nonatomic, readonly, retain) TSWPCTTypesetterCache *typesetterCache;
 
 + (void)fixColumnBoundsForTarget:(id)arg1 storage:(id)arg2 charIndex:(unsigned long long)arg3 firstColumnIndex:(unsigned long long)arg4 precedingHeight:(double)arg5 height:(double)arg6 alreadyHasMargins:(bool)arg7 styleProvider:(id)arg8 vertical:(bool)arg9;
 

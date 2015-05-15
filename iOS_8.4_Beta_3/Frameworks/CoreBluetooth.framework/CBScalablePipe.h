@@ -13,12 +13,12 @@
     long long _type;
 }
 
-@property(assign,readonly) CBCentral * central;
-@property(assign,readonly) NSInputStream * input;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSOutputStream * output;
-@property(assign,readonly) long long priority;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) CBCentral *central;
+@property (nonatomic, readonly) NSInputStream *input;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSOutputStream *output;
+@property (nonatomic, readonly) long long priority;
+@property (nonatomic, readonly) long long type;
 
 - (id)central;
 - (void)dealloc;

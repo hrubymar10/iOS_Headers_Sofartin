@@ -24,24 +24,24 @@
     unsigned int _transportType;
 }
 
-@property(assign,readwrite) unsigned int audioCompressionType;
-@property(assign,readwrite) unsigned int bonjourMs;
-@property(assign,readwrite) unsigned int configMs;
-@property(assign,readwrite) unsigned int connectMs;
-@property(assign,readwrite) bool hasAudioCompressionType;
-@property(assign,readwrite) bool hasBonjourMs;
-@property(assign,readwrite) bool hasConfigMs;
-@property(assign,readwrite) bool hasConnectMs;
-@property(assign,readwrite) bool hasPrepareMs;
-@property(assign,readonly) bool hasSessionUUID;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasTransportType;
-@property(assign,readwrite) unsigned int prepareMs;
-@property(assign,retain) NSString * sessionUUID;
-@property(assign,readwrite) int status;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int transportType;
+@property (nonatomic) unsigned int audioCompressionType;
+@property (nonatomic) unsigned int bonjourMs;
+@property (nonatomic) unsigned int configMs;
+@property (nonatomic) unsigned int connectMs;
+@property (nonatomic) bool hasAudioCompressionType;
+@property (nonatomic) bool hasBonjourMs;
+@property (nonatomic) bool hasConfigMs;
+@property (nonatomic) bool hasConnectMs;
+@property (nonatomic) bool hasPrepareMs;
+@property (nonatomic, readonly) bool hasSessionUUID;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasTransportType;
+@property (nonatomic) unsigned int prepareMs;
+@property (nonatomic, retain) NSString *sessionUUID;
+@property (nonatomic) int status;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int transportType;
 
 - (unsigned int)audioCompressionType;
 - (unsigned int)bonjourMs;

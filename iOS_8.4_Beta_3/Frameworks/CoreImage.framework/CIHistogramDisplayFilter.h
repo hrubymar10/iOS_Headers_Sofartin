@@ -9,10 +9,10 @@
     NSNumber *inputLowLimit;
 }
 
-@property(assign,retain) NSNumber * inputHeight;
-@property(assign,retain) NSNumber * inputHighLimit;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputLowLimit;
+@property (nonatomic, retain) NSNumber *inputHeight;
+@property (nonatomic, retain) NSNumber *inputHighLimit;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputLowLimit;
 
 + (id)customAttributes;
 

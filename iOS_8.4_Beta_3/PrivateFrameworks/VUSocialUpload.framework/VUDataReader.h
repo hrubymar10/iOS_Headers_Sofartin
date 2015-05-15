@@ -7,8 +7,8 @@
     NSFileHandle *_readHandle;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,retain) NSFileHandle * readHandle;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic, retain) NSFileHandle *readHandle;
 
 + (id)dataReaderWithURL:(id)arg1 error:(id*)arg2;
 

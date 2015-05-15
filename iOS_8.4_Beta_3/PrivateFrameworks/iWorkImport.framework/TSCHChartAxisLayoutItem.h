@@ -18,16 +18,16 @@
     TSCHChartAxisTickMarksLayoutItem *mTickMarks;
 }
 
-@property(assign,retain) TSCHChartAxisID * axisID;
-@property(assign,readonly) TSCHChartAxisLineLayoutItem * axisLineLayoutItem;
-@property(assign,readonly) TSCHChartAxisPaddingLayoutItem * axisPaddingLayoutItem;
-@property(assign,readonly) int axisPosition;
-@property(assign,readonly) TSCHChartAxisTickMarksLayoutItem * axisTickMarksLayoutItem;
-@property(assign,readonly) TSCHChartAxisTitleLayoutItem * axisTitleLayoutItem;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } chartBodySize;
-@property(assign,readonly) TSCHChartReferenceLineLabelPaddingLayoutItem * refLineLabelPadding;
-@property(assign,readonly) TSCHChartReferenceLineLabelsLayoutItem * refLineLabels;
-@property(assign,retain) TSCHChartAxisID * referenceLineLabelAxisID;
+@property (nonatomic, retain) TSCHChartAxisID *axisID;
+@property (nonatomic, readonly) TSCHChartAxisLineLayoutItem *axisLineLayoutItem;
+@property (nonatomic, readonly) TSCHChartAxisPaddingLayoutItem *axisPaddingLayoutItem;
+@property (nonatomic, readonly) int axisPosition;
+@property (nonatomic, readonly) TSCHChartAxisTickMarksLayoutItem *axisTickMarksLayoutItem;
+@property (nonatomic, readonly) TSCHChartAxisTitleLayoutItem *axisTitleLayoutItem;
+@property (nonatomic) struct CGSize { double x1; double x2; } chartBodySize;
+@property (nonatomic, readonly) TSCHChartReferenceLineLabelPaddingLayoutItem *refLineLabelPadding;
+@property (nonatomic, readonly) TSCHChartReferenceLineLabelsLayoutItem *refLineLabels;
+@property (nonatomic, retain) TSCHChartAxisID *referenceLineLabelAxisID;
 
 - (id)axisID;
 - (id)axisLineLayoutItem;

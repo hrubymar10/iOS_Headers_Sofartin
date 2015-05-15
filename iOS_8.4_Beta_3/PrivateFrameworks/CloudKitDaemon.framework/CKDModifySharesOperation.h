@@ -10,11 +10,11 @@
     NSMutableArray *_shareMetadatas;
 }
 
-@property(assign,copy) id deleteCompletionBlock;
-@property(assign,readwrite) bool haveOutstandingMetadatas;
-@property(assign,readwrite) int numShareSaveAttempts;
-@property(assign,copy) id saveCompletionBlock;
-@property(assign,retain) NSMutableArray * shareMetadatas;
+@property (nonatomic, copy) id deleteCompletionBlock;
+@property (nonatomic) bool haveOutstandingMetadatas;
+@property (nonatomic) int numShareSaveAttempts;
+@property (nonatomic, copy) id saveCompletionBlock;
+@property (nonatomic, retain) NSMutableArray *shareMetadatas;
 
 - (void).cxx_destruct;
 - (void)_addOwnerToShares;

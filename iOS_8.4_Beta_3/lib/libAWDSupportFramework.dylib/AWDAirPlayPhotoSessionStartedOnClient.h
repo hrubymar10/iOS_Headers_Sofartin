@@ -12,12 +12,12 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readonly) bool hasSessionUUID;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSString * sessionUUID;
-@property(assign,readwrite) int status;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic, readonly) bool hasSessionUUID;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSString *sessionUUID;
+@property (nonatomic) int status;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

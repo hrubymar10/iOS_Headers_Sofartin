@@ -13,15 +13,15 @@
     long long _stopValue;
 }
 
-@property(assign,readonly) SKUIImageViewElement * backgroundImageElement;
-@property(assign,readonly) double changeRatePerSecond;
-@property(assign,readonly) long long counterType;
-@property(assign,readonly) long long dateFormatType;
-@property(assign,readonly) NSDate * endDate;
-@property(assign,readonly) NSString * numberFormat;
-@property(assign,readonly) long long startValue;
-@property(assign,readonly) NSDate * startValueDate;
-@property(assign,readonly) long long stopValue;
+@property (nonatomic, readonly) SKUIImageViewElement *backgroundImageElement;
+@property (nonatomic, readonly) double changeRatePerSecond;
+@property (nonatomic, readonly) long long counterType;
+@property (nonatomic, readonly) long long dateFormatType;
+@property (nonatomic, readonly) NSDate *endDate;
+@property (nonatomic, readonly) NSString *numberFormat;
+@property (nonatomic, readonly) long long startValue;
+@property (nonatomic, readonly) NSDate *startValueDate;
+@property (nonatomic, readonly) long long stopValue;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

@@ -4,7 +4,7 @@
 
 @interface SAFmfVisibilityStateSet : SADomainCommand
 
-@property(assign,readwrite) bool visible;
+@property (nonatomic) bool visible;
 
 + (id)visibilityStateSet;
 + (id)visibilityStateSetWithDictionary:(id)arg1 context:(id)arg2;

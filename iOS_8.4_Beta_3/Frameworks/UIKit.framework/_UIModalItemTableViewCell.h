@@ -10,10 +10,10 @@
     UIView *_topSeparatorView;
 }
 
-@property(assign,retain) UIColor * fullWidthSeparatorColor;
-@property(assign,readwrite) bool isEnabled;
-@property(assign,readwrite) bool showFullWidthSeparator;
-@property(assign,retain) UIView * topSeparatorView;
+@property (nonatomic, retain) UIColor *fullWidthSeparatorColor;
+@property (nonatomic) bool isEnabled;
+@property (nonatomic) bool showFullWidthSeparator;
+@property (nonatomic, readonly, retain) UIView *topSeparatorView;
 
 - (void)dealloc;
 - (id)fullWidthSeparatorColor;

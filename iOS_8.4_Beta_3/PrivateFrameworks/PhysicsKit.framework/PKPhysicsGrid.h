@@ -10,9 +10,9 @@
     PKQuadTree *quadTree;
 }
 
-@property(assign,readwrite) struct shared_ptr<PKCGrid> { struct PKCGrid {} *x1; struct __shared_weak_count {} *x2; } gridPtr;
-@property(assign,readonly) int height;
-@property(assign,readonly) int width;
+@property (nonatomic) struct shared_ptr<PKCGrid> { struct PKCGrid {} *x1; struct __shared_weak_count {} *x2; } gridPtr;
+@property (nonatomic, readonly) int height;
+@property (nonatomic, readonly) int width;
 
 + (id)gridFromOccupancyArray:(const char *)arg1 bytePitch:(int)arg2 width:(int)arg3 height:(int)arg4;
 + (id)gridFromRGBAU8PixelData:(const char *)arg1 imageWidth:(int)arg2 imageHeight:(int)arg3 alphaThreshold:(float)arg4 accuracy:(float)arg5;

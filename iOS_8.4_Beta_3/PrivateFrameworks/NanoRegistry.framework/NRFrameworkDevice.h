@@ -6,7 +6,7 @@
     NSUUID *_deviceID;
 }
 
-@property(assign,retain) NSUUID * deviceID;
+@property (nonatomic, retain) NSUUID *deviceID;
 
 - (void).cxx_destruct;
 - (bool)_setValue:(id)arg1 forProperty:(id)arg2;

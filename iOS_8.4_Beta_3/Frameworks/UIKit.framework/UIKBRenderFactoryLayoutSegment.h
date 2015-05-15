@@ -23,9 +23,9 @@
     int _triangleCorners;
 }
 
-@property(assign,readwrite) int keyStates;
-@property(assign,readwrite) bool requireAllMatches;
-@property(assign,readonly) UIKBRenderTraits * traits;
+@property (nonatomic) int keyStates;
+@property (nonatomic) bool requireAllMatches;
+@property (nonatomic, readonly) UIKBRenderTraits *traits;
 
 + (id)segmentWithTraits:(id)arg1;
 

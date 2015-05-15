@@ -8,9 +8,9 @@
     NSDictionary *_registration;
 }
 
-@property(assign,readwrite) PLOperator * operator;
-@property(assign,copy) id operatorBlock;
-@property(assign,readonly) NSDictionary * registration;
+@property PLOperator *operator;
+@property (nonatomic, copy) id operatorBlock;
+@property (readonly) NSDictionary *registration;
 
 - (void).cxx_destruct;
 - (id)description;

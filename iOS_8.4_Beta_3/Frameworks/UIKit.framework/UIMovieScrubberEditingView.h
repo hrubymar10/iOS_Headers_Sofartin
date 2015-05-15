@@ -14,9 +14,9 @@
     UIImageView *_rightImageView;
 }
 
-@property(assign,readwrite) double edgeInset;
-@property(getter=isEditing,assign,readwrite) bool editing;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
+@property (nonatomic) double edgeInset;
+@property (getter=isEditing, nonatomic) bool editing;
+@property (getter=isEnabled, nonatomic) bool enabled;
 
 - (double)_bounceValueForFraction:(double)arg1;
 - (id)_handleImages;

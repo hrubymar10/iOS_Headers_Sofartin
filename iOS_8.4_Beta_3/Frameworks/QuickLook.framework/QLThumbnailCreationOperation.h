@@ -23,13 +23,13 @@
     unsigned long long _useMode;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } contentRect;
-@property(assign,retain) NSURL * documentURL;
-@property(assign,retain) NSError * error;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) double maximumDimension;
-@property(assign,readwrite) double scaleFactor;
-@property(assign,readwrite) unsigned long long useMode;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } contentRect;
+@property (retain) NSURL *documentURL;
+@property (retain) NSError *error;
+@property (retain) UIImage *image;
+@property double maximumDimension;
+@property double scaleFactor;
+@property unsigned long long useMode;
 
 - (void)_finish;
 - (bool)_finishIfCancelled;

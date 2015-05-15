@@ -6,7 +6,7 @@
     <MusicNowPlayingAtmosphericStatusBarDelegate> *__music_statusBarDelegate;
 }
 
-@property(assign,readwrite) <MusicNowPlayingAtmosphericStatusBarDelegate> * _music_statusBarDelegate;
+@property (nonatomic) <MusicNowPlayingAtmosphericStatusBarDelegate> *_music_statusBarDelegate;
 
 - (void).cxx_destruct;
 - (id)_music_statusBarDelegate;

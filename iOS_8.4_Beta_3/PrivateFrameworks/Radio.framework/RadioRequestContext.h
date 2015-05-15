@@ -7,8 +7,8 @@
     bool _usesLocalNetworking;
 }
 
-@property(assign,retain) SSVFairPlaySAPSession * SAPSession;
-@property(assign,readwrite) bool usesLocalNetworking;
+@property (nonatomic, retain) SSVFairPlaySAPSession *SAPSession;
+@property (nonatomic) bool usesLocalNetworking;
 
 - (void).cxx_destruct;
 - (id)SAPSession;

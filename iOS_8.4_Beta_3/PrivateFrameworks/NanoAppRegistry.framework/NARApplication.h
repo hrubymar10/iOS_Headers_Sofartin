@@ -10,21 +10,21 @@
     unsigned long long _sequenceNumber;
 }
 
-@property(assign,readonly) NSString * applicationIdentifier;
-@property(assign,readonly) NSString * bundleName;
-@property(assign,readonly) NSString * bundleVersion;
-@property(assign,retain) NSDictionary * iTunesPlistStrings;
-@property(assign,retain) NSDictionary * infoPlist;
-@property(assign,readonly) NSString * itemName;
-@property(assign,copy) NSString * launchServicesBundleType;
-@property(assign,readonly) NSArray * localizations;
-@property(assign,readonly) NSDictionary * localizedBundleNames;
-@property(assign,readonly) NSString * localizedDisplayName;
-@property(assign,readonly) NSDictionary * localizedDisplayNames;
-@property(assign,retain) NSDictionary * localizedStrings;
-@property(assign,readwrite) unsigned long long sequenceNumber;
-@property(assign,readonly) NSArray * supportedSchemes;
-@property(assign,readonly) NSString * vendorName;
+@property (nonatomic, readonly) NSString *applicationIdentifier;
+@property (nonatomic, readonly) NSString *bundleName;
+@property (nonatomic, readonly) NSString *bundleVersion;
+@property (nonatomic, retain) NSDictionary *iTunesPlistStrings;
+@property (nonatomic, retain) NSDictionary *infoPlist;
+@property (nonatomic, readonly) NSString *itemName;
+@property (nonatomic, copy) NSString *launchServicesBundleType;
+@property (nonatomic, readonly) NSArray *localizations;
+@property (nonatomic, readonly) NSDictionary *localizedBundleNames;
+@property (nonatomic, readonly) NSString *localizedDisplayName;
+@property (nonatomic, readonly) NSDictionary *localizedDisplayNames;
+@property (nonatomic, retain) NSDictionary *localizedStrings;
+@property (nonatomic) unsigned long long sequenceNumber;
+@property (nonatomic, readonly) NSArray *supportedSchemes;
+@property (nonatomic, readonly) NSString *vendorName;
 
 + (bool)supportsSecureCoding;
 

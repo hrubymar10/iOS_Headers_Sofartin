@@ -15,11 +15,11 @@
     NSString *_matchedToken;
 }
 
-@property(assign,readonly) unsigned long long* geoIds;
-@property(assign,readonly) unsigned long long geoIdsCount;
-@property(assign,readwrite) int geoType;
-@property(assign,readwrite) bool hasGeoType;
-@property(assign,retain) NSString * matchedToken;
+@property (nonatomic, readonly) unsigned long long*geoIds;
+@property (nonatomic, readonly) unsigned long long geoIdsCount;
+@property (nonatomic) int geoType;
+@property (nonatomic) bool hasGeoType;
+@property (nonatomic, retain) NSString *matchedToken;
 
 - (void)addGeoId:(unsigned long long)arg1;
 - (void)clearGeoIds;

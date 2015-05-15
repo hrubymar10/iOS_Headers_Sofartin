@@ -6,7 +6,7 @@
     CIColor *inputColor;
 }
 
-@property(assign,retain) CIColor * inputColor;
+@property (nonatomic, retain) CIColor *inputColor;
 
 + (id)customAttributes;
 

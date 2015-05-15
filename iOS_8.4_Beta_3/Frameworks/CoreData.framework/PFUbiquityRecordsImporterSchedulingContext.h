@@ -11,11 +11,11 @@
     NSMutableSet *_scheduledLogLocations;
 }
 
-@property(assign,readonly) NSSet * failedLogLocations;
-@property(assign,readonly) NSSet * ignoredLogLocations;
-@property(assign,readonly) NSDictionary * logLocationsToEncounteredErrors;
-@property(assign,readonly) NSSet * pendingLogLocations;
-@property(assign,readonly) NSSet * scheduledLogLocations;
+@property (nonatomic, readonly) NSSet *failedLogLocations;
+@property (nonatomic, readonly) NSSet *ignoredLogLocations;
+@property (nonatomic, readonly) NSDictionary *logLocationsToEncounteredErrors;
+@property (nonatomic, readonly) NSSet *pendingLogLocations;
+@property (nonatomic, readonly) NSSet *scheduledLogLocations;
 
 - (void)addPendingLogLocation:(id)arg1;
 - (void)addPendingLogLocations:(id)arg1;

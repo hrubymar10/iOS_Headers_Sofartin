@@ -7,8 +7,8 @@
     CPLContainerRelation *_relation;
 }
 
-@property(assign,copy) NSString * itemIdentifier;
-@property(assign,retain) CPLContainerRelation * relation;
+@property (nonatomic, copy) NSString *itemIdentifier;
+@property (nonatomic, retain) CPLContainerRelation *relation;
 
 + (id)relationToContainerWithIdentifier:(id)arg1;
 + (id)relationWithItemIdentifier:(id)arg1 containerIdentifier:(id)arg2;

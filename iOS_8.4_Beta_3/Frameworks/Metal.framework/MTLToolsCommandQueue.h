@@ -6,17 +6,17 @@
     MTLToolsPointerArray *_commandBuffers;
 }
 
-@property(assign,readwrite) int backgroundTrackingPID;
-@property(assign,readonly) MTLToolsPointerArray * commandBuffers;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,readwrite) bool executionEnabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * label;
-@property(getter=isProfilingEnabled,assign,readwrite) bool profilingEnabled;
-@property(assign,readwrite) bool skipRender;
-@property(assign,readonly) Class superclass;
+@property int backgroundTrackingPID;
+@property (nonatomic, readonly) MTLToolsPointerArray *commandBuffers;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) <MTLDevice> *device;
+@property bool executionEnabled;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *label;
+@property (getter=isProfilingEnabled) bool profilingEnabled;
+@property bool skipRender;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)acceptVisitor:(id)arg1;

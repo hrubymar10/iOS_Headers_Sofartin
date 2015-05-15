@@ -18,12 +18,12 @@
     NSMutableDictionary *_webViewsForMagnifyMode;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PSMagnifyControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool doneButtonCommits;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PSMagnifyControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool doneButtonCommits;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (void)commitMagnifyMode:(id)arg1;
 + (void)commitMagnifyMode:(id)arg1 withRelaunchURL:(id)arg2;

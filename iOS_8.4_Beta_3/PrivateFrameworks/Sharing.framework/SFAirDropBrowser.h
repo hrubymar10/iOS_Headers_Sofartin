@@ -12,8 +12,8 @@
     NSObject<OS_dispatch_source> *_timer;
 }
 
-@property(assign,readwrite) <SFAirDropBrowserDelegate> * delegate;
-@property(assign,readonly) NSArray * people;
+@property <SFAirDropBrowserDelegate> *delegate;
+@property (nonatomic, readonly) NSArray *people;
 
 - (void).cxx_destruct;
 - (void)dealloc;

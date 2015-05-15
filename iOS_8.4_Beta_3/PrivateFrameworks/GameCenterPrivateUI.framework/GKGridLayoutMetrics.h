@@ -8,9 +8,9 @@
     NSMutableDictionary *_locationToKeyList;
 }
 
-@property(assign,retain) NSMutableDictionary * keyToMetrics;
-@property(assign,retain) NSString * layoutKey;
-@property(assign,retain) NSMutableDictionary * locationToKeyList;
+@property (nonatomic, retain) NSMutableDictionary *keyToMetrics;
+@property (nonatomic, retain) NSString *layoutKey;
+@property (nonatomic, retain) NSMutableDictionary *locationToKeyList;
 
 + (id)metrics;
 

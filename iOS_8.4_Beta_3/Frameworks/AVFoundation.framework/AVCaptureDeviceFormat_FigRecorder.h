@@ -6,14 +6,14 @@
     AVCaptureDeviceFormatInternal_FigRecorder *_internal;
 }
 
-@property(assign,readonly) struct opaqueCMFormatDescription { }* formatDescription;
-@property(assign,readonly) NSString * mediaType;
-@property(getter=isVideoBinned,assign,readonly) bool videoBinned;
-@property(assign,readonly) float videoFieldOfView;
-@property(assign,readonly) double videoMaxZoomFactor;
-@property(getter=isVideoStabilizationSupported,assign,readonly) bool videoStabilizationSupported;
-@property(assign,readonly) NSArray * videoSupportedFrameRateRanges;
-@property(assign,readonly) double videoZoomFactorUpscaleThreshold;
+@property (nonatomic, readonly) struct opaqueCMFormatDescription { }*formatDescription;
+@property (nonatomic, readonly) NSString *mediaType;
+@property (getter=isVideoBinned, nonatomic, readonly) bool videoBinned;
+@property (nonatomic, readonly) float videoFieldOfView;
+@property (nonatomic, readonly) double videoMaxZoomFactor;
+@property (getter=isVideoStabilizationSupported, nonatomic, readonly) bool videoStabilizationSupported;
+@property (nonatomic, readonly) NSArray *videoSupportedFrameRateRanges;
+@property (nonatomic, readonly) double videoZoomFactorUpscaleThreshold;
 
 + (id)deviceFormatWithDictionary:(id)arg1;
 + (void)initialize;

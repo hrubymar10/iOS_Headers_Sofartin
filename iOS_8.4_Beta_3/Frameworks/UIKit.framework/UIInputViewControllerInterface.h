@@ -8,13 +8,13 @@
     <_UIIVCResponseDelegate> *_responseDelegate;
 }
 
-@property(getter=_cachedState,setter=_setCachedState:,assign,retain) _UIInputViewControllerState * cachedState;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) <_UIIVCInterface> * forwardingInterface;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <_UIIVCResponseDelegate> * responseDelegate;
-@property(assign,readonly) Class superclass;
+@property (getter=_cachedState, setter=_setCachedState:, nonatomic, retain) _UIInputViewControllerState *cachedState;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) <_UIIVCInterface> *forwardingInterface;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <_UIIVCResponseDelegate> *responseDelegate;
+@property (readonly) Class superclass;
 
 - (id)_cachedState;
 - (void)_handleInputViewControllerState:(id)arg1;

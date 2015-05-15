@@ -25,17 +25,17 @@
     unsigned long long _zeroFormattingBehavior;
 }
 
-@property(assign,readwrite) unsigned long long allowedUnits;
-@property(assign,readwrite) bool allowsFractionalUnits;
-@property(assign,copy) NSCalendar * calendar;
-@property(assign,readwrite) bool collapsesLargestUnit;
-@property(assign,readwrite) long long formattingContext;
-@property(assign,readwrite) bool includesApproximationPhrase;
-@property(assign,readwrite) bool includesTimeRemainingPhrase;
-@property(assign,readwrite) long long maximumUnitCount;
-@property(assign,copy) NSDate * referenceDate;
-@property(assign,readwrite) long long unitsStyle;
-@property(assign,readwrite) unsigned long long zeroFormattingBehavior;
+@property unsigned long long allowedUnits;
+@property bool allowsFractionalUnits;
+@property (copy) NSCalendar *calendar;
+@property bool collapsesLargestUnit;
+@property long long formattingContext;
+@property bool includesApproximationPhrase;
+@property bool includesTimeRemainingPhrase;
+@property long long maximumUnitCount;
+@property (copy) NSDate *referenceDate;
+@property long long unitsStyle;
+@property unsigned long long zeroFormattingBehavior;
 
 + (id)localizedStringFromDateComponents:(id)arg1 unitsStyle:(long long)arg2;
 

@@ -12,13 +12,13 @@
     NSMutableArray *_preauthorizedInfos;
 }
 
-@property(assign,readonly) NSArray * activeTransferGUIDs;
-@property(assign,readonly) NSArray * activeTransfers;
-@property(assign,readonly) bool hasActiveFileTransfers;
-@property(assign,readonly) bool hasPendingFileTransfers;
-@property(assign,readonly) NSArray * orderedTransfers;
-@property(assign,readonly) NSArray * orderedTransfersGUIDs;
-@property(assign,readonly) NSDictionary * transfers;
+@property (nonatomic, readonly) NSArray *activeTransferGUIDs;
+@property (nonatomic, readonly) NSArray *activeTransfers;
+@property (nonatomic, readonly) bool hasActiveFileTransfers;
+@property (nonatomic, readonly) bool hasPendingFileTransfers;
+@property (nonatomic, readonly) NSArray *orderedTransfers;
+@property (nonatomic, readonly) NSArray *orderedTransfersGUIDs;
+@property (nonatomic, readonly) NSDictionary *transfers;
 
 + (Class)fileTransferClass;
 + (void)setTransferCenterClass:(Class)arg1;

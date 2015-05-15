@@ -4,9 +4,9 @@
 
 @interface FTUserConfiguration : NSObject
 
-@property(assign,readonly) bool _nonWifiFaceTimeEntitled;
-@property(assign,readwrite) bool allowAnyNetwork;
-@property(assign,readwrite) bool cellularFaceTimeEnabled;
+@property (nonatomic, readonly) bool _nonWifiFaceTimeEntitled;
+@property (nonatomic) bool allowAnyNetwork;
+@property (nonatomic) bool cellularFaceTimeEnabled;
 
 + (id)sharedInstance;
 

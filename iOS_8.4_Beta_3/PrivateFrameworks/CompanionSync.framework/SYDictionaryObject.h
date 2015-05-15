@@ -6,11 +6,11 @@
     NSDictionary *_properties;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSDictionary * properties;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSDictionary *properties;
+@property (readonly) Class superclass;
 
 + (bool)supportsSecureCoding;
 

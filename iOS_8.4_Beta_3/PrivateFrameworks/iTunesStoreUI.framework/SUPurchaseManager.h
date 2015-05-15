@@ -18,16 +18,16 @@
     bool _waitingForAuthentication;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SUPurchaseManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSSet * futurePurchases;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long numberOfPendingPurchases;
-@property(assign,readonly) NSSet * purchasedItemIdentifiers;
-@property(assign,retain) SUQueueSessionManager * queueSessionManager;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * userAgent;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SUPurchaseManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSSet *futurePurchases;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long numberOfPendingPurchases;
+@property (nonatomic, readonly) NSSet *purchasedItemIdentifiers;
+@property (nonatomic, retain) SUQueueSessionManager *queueSessionManager;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *userAgent;
 
 - (id)_accountForPurchase:(id)arg1;
 - (void)_addBatchForPurchases:(id)arg1 options:(id)arg2;

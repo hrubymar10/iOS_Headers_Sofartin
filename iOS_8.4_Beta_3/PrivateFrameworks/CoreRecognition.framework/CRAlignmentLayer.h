@@ -12,13 +12,13 @@
     CAShapeLayer *_outlineLayer;
 }
 
-@property(assign,retain) CATextLayer * cardNumberLayer;
-@property(assign,retain) CATextLayer * cardholderNameLayer;
-@property(assign,retain) CATextLayer * expirationDateLayer;
-@property(assign,retain) CALayer * infoLayer;
-@property(assign,retain) CATextLayer * instructionLayer;
-@property(assign,retain) CAShapeLayer * maskLayer;
-@property(assign,retain) CAShapeLayer * outlineLayer;
+@property (retain) CATextLayer *cardNumberLayer;
+@property (retain) CATextLayer *cardholderNameLayer;
+@property (retain) CATextLayer *expirationDateLayer;
+@property (retain) CALayer *infoLayer;
+@property (retain) CATextLayer *instructionLayer;
+@property (retain) CAShapeLayer *maskLayer;
+@property (retain) CAShapeLayer *outlineLayer;
 
 + (id)layer;
 

@@ -12,12 +12,12 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) bool contactless;
-@property(assign,readwrite) bool hasContactless;
-@property(assign,readonly) bool hasLog;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSData * log;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) bool contactless;
+@property (nonatomic) bool hasContactless;
+@property (nonatomic, readonly) bool hasLog;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSData *log;
+@property (nonatomic) unsigned long long timestamp;
 
 - (bool)contactless;
 - (void)copyTo:(id)arg1;

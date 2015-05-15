@@ -7,10 +7,10 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIImageView * chevron;
-@property(assign,readwrite) <CKTitledImageBalloonViewDelegate> * delegate;
-@property(assign,copy) NSString * title;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) UIImageView *chevron;
+@property (nonatomic) <CKTitledImageBalloonViewDelegate> *delegate;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })alignmentRectInsets;
 - (id)chevron;

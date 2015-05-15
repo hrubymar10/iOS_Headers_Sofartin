@@ -6,8 +6,8 @@
     TSUBasicProgressStorage *mStorage;
 }
 
-@property(getter=isIndeterminate,assign,readwrite) bool indeterminate;
-@property(assign,readwrite) double value;
+@property (getter=isIndeterminate) bool indeterminate;
+@property double value;
 
 - (void)dealloc;
 - (id)init;

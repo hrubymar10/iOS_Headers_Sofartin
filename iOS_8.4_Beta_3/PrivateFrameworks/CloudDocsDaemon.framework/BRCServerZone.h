@@ -14,21 +14,21 @@
     NSString *_zoneName;
 }
 
-@property(assign,readonly) BRCServerChangeState * changeState;
-@property(assign,readonly) NSString * containerMetadataEtag;
-@property(assign,readonly) PQLConnection * db;
-@property(assign,retain) NSNumber * dbRowID;
-@property(assign,readonly) bool isPrivateContainer;
-@property(assign,readonly) bool isSharedContainer;
-@property(assign,readonly) bool isSyncingDownForTheFirstTime;
-@property(assign,readwrite) BRCLocalContainer * localContainer;
-@property(assign,readwrite) bool needsSave;
-@property(assign,readonly) NSString * ownerName;
-@property(assign,readonly) NSMutableDictionary * plist;
-@property(assign,retain) BRCAccountSession * session;
-@property(assign,readonly) BRCSyncContext * syncContext;
-@property(assign,readonly) CKRecordZoneID * zoneID;
-@property(assign,readonly) NSString * zoneName;
+@property (readonly) BRCServerChangeState *changeState;
+@property (nonatomic, readonly) NSString *containerMetadataEtag;
+@property (nonatomic, readonly) PQLConnection *db;
+@property (nonatomic, retain) NSNumber *dbRowID;
+@property (nonatomic, readonly) bool isPrivateContainer;
+@property (nonatomic, readonly) bool isSharedContainer;
+@property (nonatomic, readonly) bool isSyncingDownForTheFirstTime;
+@property (nonatomic) BRCLocalContainer *localContainer;
+@property (nonatomic) bool needsSave;
+@property (nonatomic, readonly) NSString *ownerName;
+@property (nonatomic, readonly) NSMutableDictionary *plist;
+@property (nonatomic, retain) BRCAccountSession *session;
+@property (nonatomic, readonly) BRCSyncContext *syncContext;
+@property (nonatomic, readonly) CKRecordZoneID *zoneID;
+@property (nonatomic, readonly) NSString *zoneName;
 
 - (void).cxx_destruct;
 - (void)_collectTombstoneForRank:(unsigned long long)arg1;

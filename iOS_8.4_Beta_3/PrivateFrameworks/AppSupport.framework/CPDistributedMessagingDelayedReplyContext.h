@@ -7,8 +7,8 @@
     unsigned int _replyPort;
 }
 
-@property(assign,readwrite) bool portPassing;
-@property(assign,readwrite) unsigned int replyPort;
+@property (nonatomic) bool portPassing;
+@property (nonatomic) unsigned int replyPort;
 
 - (void)dealloc;
 - (id)initWithReplyPort:(unsigned int)arg1 portPassing:(bool)arg2;

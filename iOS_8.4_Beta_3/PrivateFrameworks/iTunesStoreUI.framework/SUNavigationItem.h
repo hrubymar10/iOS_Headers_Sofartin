@@ -4,7 +4,7 @@
 
 @interface SUNavigationItem : UINavigationItem
 
-@property(assign,retain) UIBarButtonItem * secondaryLeftBarButtonItem;
+@property (nonatomic, retain) UIBarButtonItem *secondaryLeftBarButtonItem;
 
 - (id)secondaryLeftBarButtonItem;
 - (void)setSecondaryLeftBarButtonItem:(id)arg1;

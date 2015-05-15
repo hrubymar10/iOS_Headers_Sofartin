@@ -11,16 +11,16 @@
     NSObject<OS_xpc_object> *_server;
 }
 
-@property(assign,readwrite) long long advertiserState;
-@property(assign,retain) XPCClient * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <WPTransferDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readwrite) long long scannerState;
-@property(assign,retain) NSObject<OS_xpc_object> * server;
-@property(assign,readonly) Class superclass;
+@property long long advertiserState;
+@property (retain) XPCClient *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property <WPTransferDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) NSObject<OS_dispatch_queue> *queue;
+@property long long scannerState;
+@property (retain) NSObject<OS_xpc_object> *server;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (long long)advertiserState;

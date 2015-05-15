@@ -28,15 +28,15 @@
     UILabel *_updateDateLabel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) PKLinkedAppView * linkedApp;
-@property(assign,readwrite) bool showsDelete;
-@property(assign,readwrite) bool showsLinkedApp;
-@property(assign,readwrite) bool showsLinks;
-@property(assign,readwrite) bool showsSettings;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) PKLinkedAppView *linkedApp;
+@property (nonatomic) bool showsDelete;
+@property (nonatomic) bool showsLinkedApp;
+@property (nonatomic) bool showsLinks;
+@property (nonatomic) bool showsSettings;
+@property (readonly) Class superclass;
 
 + (id)_linkColor;
 + (id)_linkTextAttributes;

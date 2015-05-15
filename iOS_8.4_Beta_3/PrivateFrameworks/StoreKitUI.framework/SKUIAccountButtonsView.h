@@ -13,15 +13,15 @@
     SKUIRoundedRectButton *_usernameButton;
 }
 
-@property(assign,readonly) UIControl * ECommerceButton;
-@property(assign,copy) NSString * ECommerceLinkTitle;
-@property(assign,copy) NSString * accountCredits;
-@property(assign,readonly) UIButton * appleIDButton;
-@property(assign,readonly) UIButton * giftingButton;
-@property(getter=isGiftingHidden,assign,readwrite) bool giftingHidden;
-@property(assign,readonly) UIButton * redeemButton;
-@property(assign,readonly) UIButton * termsAndConditionsButton;
-@property(getter=isTermsAndConditionsHidden,assign,readwrite) bool termsAndConditionsHidden;
+@property (nonatomic, readonly) UIControl *ECommerceButton;
+@property (nonatomic, copy) NSString *ECommerceLinkTitle;
+@property (nonatomic, copy) NSString *accountCredits;
+@property (nonatomic, readonly) UIButton *appleIDButton;
+@property (nonatomic, readonly) UIButton *giftingButton;
+@property (getter=isGiftingHidden, nonatomic) bool giftingHidden;
+@property (nonatomic, readonly) UIButton *redeemButton;
+@property (nonatomic, readonly) UIButton *termsAndConditionsButton;
+@property (getter=isTermsAndConditionsHidden, nonatomic) bool termsAndConditionsHidden;
 
 - (void).cxx_destruct;
 - (id)ECommerceButton;

@@ -10,7 +10,7 @@
     unsigned long long _gatheringRankMax;
 }
 
-@property(assign,retain) BRCItemID * gatheredChildrenItemID;
+@property (nonatomic, retain) BRCItemID *gatheredChildrenItemID;
 
 - (void).cxx_destruct;
 - (id)_gatheringDescendantOfContainerWithID:(id)arg1;

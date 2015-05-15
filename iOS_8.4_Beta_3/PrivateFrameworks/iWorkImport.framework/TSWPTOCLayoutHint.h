@@ -9,11 +9,11 @@
     } _charRange;
 }
 
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } charRange;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } charRange;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (Class)archivedHintClass;
 

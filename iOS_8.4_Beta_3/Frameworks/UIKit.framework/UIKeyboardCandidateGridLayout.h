@@ -28,21 +28,21 @@
     } _visualStyling;
 }
 
-@property(assign,retain) NSArray * candidateGroups;
-@property(assign,readwrite) int candidatesVisualStyle;
-@property(assign,retain) NSMutableArray * cellAttributes;
-@property(assign,readwrite) unsigned long long columnsCount;
-@property(assign,retain) NSSet * emphasizedCandidates;
-@property(assign,readwrite) bool expanded;
-@property(assign,readonly) double groupBarWidth;
-@property(assign,readwrite) bool hasSecondaryCandidates;
-@property(assign,readwrite) double headerViewHeight;
-@property(assign,readwrite) bool needsLayout;
-@property(assign,readwrite) bool needsPaddingForIndexScrubber;
-@property(assign,readonly) struct CGSize { double x1; double x2; } rowSize;
-@property(assign,retain) NSMutableDictionary * supplementaryAttributes;
-@property(assign,readwrite) bool supportsNumberKeySelection;
-@property(assign,readwrite) struct { unsigned int x1 : 6; unsigned int x2 : 1; unsigned int x3 : 1; unsigned int x4 : 8; unsigned int x5 : 16; } visualStyling;
+@property (nonatomic, retain) NSArray *candidateGroups;
+@property (nonatomic) int candidatesVisualStyle;
+@property (nonatomic, retain) NSMutableArray *cellAttributes;
+@property (nonatomic) unsigned long long columnsCount;
+@property (nonatomic, retain) NSSet *emphasizedCandidates;
+@property (nonatomic) bool expanded;
+@property (nonatomic, readonly) double groupBarWidth;
+@property (nonatomic) bool hasSecondaryCandidates;
+@property (nonatomic) double headerViewHeight;
+@property (nonatomic) bool needsLayout;
+@property (nonatomic) bool needsPaddingForIndexScrubber;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } rowSize;
+@property (nonatomic, retain) NSMutableDictionary *supplementaryAttributes;
+@property (nonatomic) bool supportsNumberKeySelection;
+@property (nonatomic) struct { unsigned int x1 : 6; unsigned int x2 : 1; unsigned int x3 : 1; unsigned int x4 : 8; unsigned int x5 : 16; } visualStyling;
 
 + (void)deemphasizeLastItemIfNeeded:(id)arg1;
 + (id)layout;

@@ -6,8 +6,8 @@
     _CLLocationManagerRoutineProxy *_locationManagerRoutineProxy;
 }
 
-@property(assign,readwrite) <CLLocationManagerDelegate> * delegate;
-@property(assign,retain) _CLLocationManagerRoutineProxy * locationManagerRoutineProxy;
+@property (nonatomic) <CLLocationManagerDelegate> *delegate;
+@property (nonatomic, retain) _CLLocationManagerRoutineProxy *locationManagerRoutineProxy;
 
 - (void)dealloc;
 - (id)delegate;

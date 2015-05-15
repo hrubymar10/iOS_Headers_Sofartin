@@ -6,7 +6,7 @@
     NSMutableArray *_tags;
 }
 
-@property(assign,retain) NSMutableArray * tags;
+@property (nonatomic, retain) NSMutableArray *tags;
 
 - (void).cxx_destruct;
 - (void)addTags:(id)arg1;

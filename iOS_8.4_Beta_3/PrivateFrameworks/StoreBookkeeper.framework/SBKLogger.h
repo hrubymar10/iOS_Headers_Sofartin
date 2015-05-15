@@ -13,8 +13,8 @@
     NSRegularExpression *_runtimeOverrideRegex;
 }
 
-@property(assign,copy) NSString * filter;
-@property(assign,copy) NSString * runtimeOverride;
+@property (copy) NSString *filter;
+@property (copy) NSString *runtimeOverride;
 
 + (bool)debugLoggingEnabled;
 + (id)sharedLogger;

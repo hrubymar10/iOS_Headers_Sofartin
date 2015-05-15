@@ -16,10 +16,10 @@
     long long _sendDateStyle;
 }
 
-@property(assign,retain) SKUIItem * giftItem;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } headerInsets;
-@property(assign,copy) NSDate * sendDate;
-@property(assign,readwrite) long long sendDateStyle;
+@property (nonatomic, retain) SKUIItem *giftItem;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } headerInsets;
+@property (nonatomic, copy) NSDate *sendDate;
+@property (nonatomic) long long sendDateStyle;
 
 - (void).cxx_destruct;
 - (id)_headerView;

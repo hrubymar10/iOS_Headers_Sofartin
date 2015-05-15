@@ -9,10 +9,10 @@
     NSString *_statusText;
 }
 
-@property(assign,copy) NSError * error;
-@property(assign,readonly) unsigned int readyState;
-@property(assign,readonly) unsigned int statusCode;
-@property(assign,copy) NSString * statusText;
+@property (nonatomic, copy) NSError *error;
+@property (nonatomic, readonly) unsigned int readyState;
+@property (nonatomic, readonly) unsigned int statusCode;
+@property (nonatomic, copy) NSString *statusText;
 
 - (void).cxx_destruct;
 - (id)error;

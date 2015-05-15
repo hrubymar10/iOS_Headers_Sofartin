@@ -27,26 +27,26 @@
     unsigned int _totalTransientDeactiveTimeout;
 }
 
-@property(assign,readwrite) bool hasStartTimestamp;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasTotalAPNReceived;
-@property(assign,readwrite) bool hasTotalCEEnable;
-@property(assign,readwrite) bool hasTotalCardProvisioned;
-@property(assign,readwrite) bool hasTotalFailureWithMissingTransactionEndEvent;
-@property(assign,readwrite) bool hasTotalFailureWithTransactionEndEventErrors;
-@property(assign,readwrite) bool hasTotalRestrictModeEntered;
-@property(assign,readwrite) bool hasTotalTransactionEndEvent;
-@property(assign,readwrite) bool hasTotalTransientDeactiveTimeout;
-@property(assign,readwrite) unsigned long long startTimestamp;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int totalAPNReceived;
-@property(assign,readwrite) unsigned int totalCEEnable;
-@property(assign,readwrite) unsigned int totalCardProvisioned;
-@property(assign,readwrite) unsigned int totalFailureWithMissingTransactionEndEvent;
-@property(assign,readwrite) unsigned int totalFailureWithTransactionEndEventErrors;
-@property(assign,readwrite) unsigned int totalRestrictModeEntered;
-@property(assign,readwrite) unsigned int totalTransactionEndEvent;
-@property(assign,readwrite) unsigned int totalTransientDeactiveTimeout;
+@property (nonatomic) bool hasStartTimestamp;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasTotalAPNReceived;
+@property (nonatomic) bool hasTotalCEEnable;
+@property (nonatomic) bool hasTotalCardProvisioned;
+@property (nonatomic) bool hasTotalFailureWithMissingTransactionEndEvent;
+@property (nonatomic) bool hasTotalFailureWithTransactionEndEventErrors;
+@property (nonatomic) bool hasTotalRestrictModeEntered;
+@property (nonatomic) bool hasTotalTransactionEndEvent;
+@property (nonatomic) bool hasTotalTransientDeactiveTimeout;
+@property (nonatomic) unsigned long long startTimestamp;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int totalAPNReceived;
+@property (nonatomic) unsigned int totalCEEnable;
+@property (nonatomic) unsigned int totalCardProvisioned;
+@property (nonatomic) unsigned int totalFailureWithMissingTransactionEndEvent;
+@property (nonatomic) unsigned int totalFailureWithTransactionEndEventErrors;
+@property (nonatomic) unsigned int totalRestrictModeEntered;
+@property (nonatomic) unsigned int totalTransactionEndEvent;
+@property (nonatomic) unsigned int totalTransientDeactiveTimeout;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

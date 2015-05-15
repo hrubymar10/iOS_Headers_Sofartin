@@ -17,13 +17,13 @@
     NSString *_value;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } borderInsets;
-@property(assign,readwrite) long long columnIndex;
-@property(assign,copy) NSString * label;
-@property(assign,readwrite) unsigned long long maxLength;
-@property(assign,copy) NSString * placeholder;
-@property(getter=isRequired,assign,readwrite) bool required;
-@property(assign,copy) NSString * value;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } borderInsets;
+@property (nonatomic) long long columnIndex;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic) unsigned long long maxLength;
+@property (nonatomic, copy) NSString *placeholder;
+@property (getter=isRequired, nonatomic) bool required;
+@property (nonatomic, copy) NSString *value;
 
 - (void).cxx_destruct;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })borderInsets;

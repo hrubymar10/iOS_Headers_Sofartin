@@ -6,7 +6,7 @@
     CCCameraConnection *_parent;
 }
 
-@property(assign,readwrite) CCCameraConnection * parent;
+@property (nonatomic) CCCameraConnection *parent;
 
 - (void).cxx_destruct;
 - (id)parent;

@@ -9,10 +9,10 @@
     NSSet *_resources;
 }
 
-@property(assign,retain) NSSet * groups;
-@property(assign,retain) NSSet * locations;
-@property(assign,retain) NSSet * people;
-@property(assign,retain) NSSet * resources;
+@property (nonatomic, retain) NSSet *groups;
+@property (nonatomic, retain) NSSet *locations;
+@property (nonatomic, retain) NSSet *people;
+@property (nonatomic, retain) NSSet *resources;
 
 - (id)groups;
 - (id)locations;

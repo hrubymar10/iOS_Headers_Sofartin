@@ -9,10 +9,10 @@
     NSString *_toFolder;
 }
 
-@property(assign,retain) id context;
-@property(assign,copy) NSString * fromFolder;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * toFolder;
+@property (nonatomic, retain) id context;
+@property (nonatomic, copy) NSString *fromFolder;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *toFolder;
 
 - (void).cxx_destruct;
 - (id)context;

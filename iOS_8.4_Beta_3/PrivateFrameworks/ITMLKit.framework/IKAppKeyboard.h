@@ -10,15 +10,15 @@
     NSString *_text;
 }
 
-@property(assign,readonly) IKAppContext * appContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <IKAppKeyboardDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * featureName;
-@property(assign,readonly) unsigned long long hash;
-@property(setter=setJSKeyboard:,assign,readwrite) IKJSKeyboard * jsKeyboard;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
+@property (nonatomic, readonly) IKAppContext *appContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <IKAppKeyboardDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSString *featureName;
+@property (readonly) unsigned long long hash;
+@property (setter=setJSKeyboard:, nonatomic) IKJSKeyboard *jsKeyboard;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
 
 + (id)makeFeatureJSObjectForFeature:(id)arg1;
 

@@ -12,7 +12,7 @@
     NSObject<OS_dispatch_queue> *xpcQueue;
 }
 
-@property(assign,readonly) LTEVTPWrapper * vtpWrapper;
+@property (readonly) LTEVTPWrapper *vtpWrapper;
 
 + (id)LTEConferenceManagerSingleton;
 + (void)addNSError:(id)arg1 toLTEConfXPCArgumentDictionary:(id)arg2;

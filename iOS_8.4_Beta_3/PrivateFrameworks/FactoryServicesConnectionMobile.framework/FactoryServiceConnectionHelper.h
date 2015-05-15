@@ -6,7 +6,7 @@
     NSDictionary *_activeServiceConnectionList;
 }
 
-@property(assign,retain) NSDictionary * activeServiceConnectionList;
+@property (retain) NSDictionary *activeServiceConnectionList;
 
 + (id)createErrorDictionaryWithErrorCode:(int)arg1 andErrMsg:(id)arg2;
 

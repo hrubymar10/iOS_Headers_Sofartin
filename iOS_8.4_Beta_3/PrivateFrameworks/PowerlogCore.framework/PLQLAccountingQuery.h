@@ -13,14 +13,14 @@
     short _queryType;
 }
 
-@property(assign,retain) <PLQLAccountingGroupProtocol> * QLAccountingGroup;
-@property(assign,retain) NSString * aggKey;
-@property(assign,readonly) NSArray * allRails;
-@property(assign,readonly) NSArray * allRailsToBeAdded;
-@property(assign,readonly) NSArray * allRailsToBeSubtracted;
-@property(assign,readwrite) double queryHasRunTillTime;
-@property(assign,retain) NSString * queryName;
-@property(assign,readonly) short queryType;
+@property (readonly, retain) <PLQLAccountingGroupProtocol> *QLAccountingGroup;
+@property (readonly, retain) NSString *aggKey;
+@property (readonly) NSArray *allRails;
+@property (readonly) NSArray *allRailsToBeAdded;
+@property (readonly) NSArray *allRailsToBeSubtracted;
+@property double queryHasRunTillTime;
+@property (readonly, retain) NSString *queryName;
+@property (readonly) short queryType;
 
 - (void).cxx_destruct;
 - (id)QLAccountingGroup;

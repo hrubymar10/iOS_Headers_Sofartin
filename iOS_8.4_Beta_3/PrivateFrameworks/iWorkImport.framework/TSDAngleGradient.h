@@ -6,8 +6,8 @@
     double mAngle;
 }
 
-@property(assign,readwrite) double gradientAngle;
-@property(assign,readonly) double gradientAngleInDegrees;
+@property (nonatomic) double gradientAngle;
+@property (nonatomic, readonly) double gradientAngleInDegrees;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)description;

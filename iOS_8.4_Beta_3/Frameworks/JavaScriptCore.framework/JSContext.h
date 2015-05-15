@@ -12,12 +12,12 @@
     JSWrapperMap *m_wrapperMap;
 }
 
-@property(assign,retain) JSValue * exception;
-@property(assign,copy) id exceptionHandler;
-@property(assign,readonly) JSValue * globalObject;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) JSVirtualMachine * virtualMachine;
-@property(assign,retain) JSWrapperMap * wrapperMap;
+@property (retain) JSValue *exception;
+@property (copy) id exceptionHandler;
+@property (readonly) JSValue *globalObject;
+@property (copy) NSString *name;
+@property (readonly) JSVirtualMachine *virtualMachine;
+@property (readonly, retain) JSWrapperMap *wrapperMap;
 
 + (id)contextWithJSGlobalContextRef:(struct OpaqueJSContext { }*)arg1;
 + (id)currentArguments;

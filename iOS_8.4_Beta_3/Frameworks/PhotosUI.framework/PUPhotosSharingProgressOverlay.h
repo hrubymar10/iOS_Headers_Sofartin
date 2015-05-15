@@ -7,7 +7,7 @@
     UIView *_progressView;
 }
 
-@property(assign,retain) UIView * progressView;
+@property (nonatomic, retain) UIView *progressView;
 
 - (void).cxx_destruct;
 - (id)_grayScaleImageFromImage:(id)arg1;

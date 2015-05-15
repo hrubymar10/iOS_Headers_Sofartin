@@ -9,10 +9,10 @@
     NSArray *_storeIdentifiers;
 }
 
-@property(assign,copy) NSURL * appLaunchURL;
-@property(assign,retain) PKBarcode * barcode;
-@property(assign,copy) NSString * localizedDescription;
-@property(assign,copy) NSArray * storeIdentifiers;
+@property (nonatomic, copy) NSURL *appLaunchURL;
+@property (nonatomic, retain) PKBarcode *barcode;
+@property (nonatomic, copy) NSString *localizedDescription;
+@property (nonatomic, copy) NSArray *storeIdentifiers;
 
 + (id)contentWithFileURL:(id)arg1;
 + (bool)supportsSecureCoding;

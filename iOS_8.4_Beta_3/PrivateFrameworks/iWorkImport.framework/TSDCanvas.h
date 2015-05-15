@@ -38,23 +38,23 @@
     double mViewScale;
 }
 
-@property(assign,readonly) TSKAccessController * accessController;
-@property(assign,readwrite) bool allowsFontSubpixelQuantization;
-@property(assign,readwrite) struct CGColor { }* backgroundColor;
-@property(assign,readonly) TSDInteractiveCanvasController * canvasController;
-@property(assign,readonly) TSKChangeNotifier * changeNotifier;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,readwrite) <TSDCanvasDelegate> * delegate;
-@property(assign,readonly) TSKDocumentRoot * documentRoot;
-@property(assign,copy) NSArray * infosToDisplay;
-@property(assign,readonly) bool isCanvasInteractive;
-@property(assign,readonly) bool isTemporaryForLayout;
-@property(assign,readonly) TSDLayoutController * layoutController;
-@property(assign,readonly) TSPObjectContext * objectContext;
-@property(assign,readonly) bool supportsAdaptiveLayout;
-@property(assign,readwrite) bool suppressesShadowsAndReflections;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } unscaledSize;
-@property(assign,readwrite) double viewScale;
+@property (nonatomic, readonly) TSKAccessController *accessController;
+@property (nonatomic) bool allowsFontSubpixelQuantization;
+@property (nonatomic) struct CGColor { }*backgroundColor;
+@property (nonatomic, readonly) TSDInteractiveCanvasController *canvasController;
+@property (nonatomic, readonly) TSKChangeNotifier *changeNotifier;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic) <TSDCanvasDelegate> *delegate;
+@property (nonatomic, readonly) TSKDocumentRoot *documentRoot;
+@property (nonatomic, copy) NSArray *infosToDisplay;
+@property (nonatomic, readonly) bool isCanvasInteractive;
+@property (nonatomic, readonly) bool isTemporaryForLayout;
+@property (nonatomic, readonly) TSDLayoutController *layoutController;
+@property (nonatomic, readonly) TSPObjectContext *objectContext;
+@property (nonatomic, readonly) bool supportsAdaptiveLayout;
+@property (nonatomic) bool suppressesShadowsAndReflections;
+@property (nonatomic) struct CGSize { double x1; double x2; } unscaledSize;
+@property (nonatomic) double viewScale;
 
 - (id)accessController;
 - (void)addBitmapsToRenderingQualityInfo:(id)arg1 inContext:(struct CGContext { }*)arg2;

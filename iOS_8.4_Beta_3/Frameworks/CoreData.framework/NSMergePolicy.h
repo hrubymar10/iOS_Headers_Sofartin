@@ -8,7 +8,7 @@
     unsigned long long _type;
 }
 
-@property(assign,readonly) unsigned long long mergeType;
+@property (readonly) unsigned long long mergeType;
 
 + (bool)accessInstanceVariablesDirectly;
 + (void)load;

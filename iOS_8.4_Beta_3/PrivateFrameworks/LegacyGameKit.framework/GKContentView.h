@@ -15,21 +15,21 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIActivityIndicatorView * activityIndicator;
-@property(assign,retain) UIButton * cancelButton;
-@property(assign,retain) NSArray * connectionButtons;
-@property(assign,readwrite) UIImage * icon;
-@property(assign,retain) UIImageView * iconView;
-@property(assign,readwrite) NSString * message;
-@property(assign,readonly) UIFont * messageFont;
-@property(assign,retain) UILabel * messageLabel;
-@property(assign,readwrite) long long numberOfMessageLines;
-@property(assign,readwrite) long long numberOfTitleLines;
-@property(assign,retain) UIButton * otherButton;
-@property(assign,retain) UITableView * table;
-@property(assign,readwrite) NSString * title;
-@property(assign,readonly) UIFont * titleFont;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, retain) UIButton *cancelButton;
+@property (nonatomic, readonly, retain) NSArray *connectionButtons;
+@property (nonatomic) UIImage *icon;
+@property (nonatomic, retain) UIImageView *iconView;
+@property (nonatomic) NSString *message;
+@property (nonatomic, readonly) UIFont *messageFont;
+@property (nonatomic, retain) UILabel *messageLabel;
+@property (nonatomic) long long numberOfMessageLines;
+@property (nonatomic) long long numberOfTitleLines;
+@property (nonatomic, retain) UIButton *otherButton;
+@property (nonatomic, readonly, retain) UITableView *table;
+@property (nonatomic) NSString *title;
+@property (nonatomic, readonly) UIFont *titleFont;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 + (double)maxTextWidth;
 

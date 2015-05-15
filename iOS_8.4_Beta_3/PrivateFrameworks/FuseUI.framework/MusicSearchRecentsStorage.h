@@ -10,7 +10,7 @@
     NSMutableArray *_recents;
 }
 
-@property(assign,readonly) long long maximumNumberOfRecents;
+@property (readonly) long long maximumNumberOfRecents;
 
 + (id)sharedRecentsStorage;
 

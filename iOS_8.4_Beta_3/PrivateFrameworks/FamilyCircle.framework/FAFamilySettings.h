@@ -10,13 +10,13 @@
     FAFamilySettings *_retainedSelf;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SSAccount * iTunesAccount;
-@property(assign,readwrite) bool isFirstRun;
-@property(assign,readwrite) UIViewController * presentingViewController;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) SSAccount *iTunesAccount;
+@property bool isFirstRun;
+@property UIViewController *presentingViewController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_launchPrefsUsingDaemon;

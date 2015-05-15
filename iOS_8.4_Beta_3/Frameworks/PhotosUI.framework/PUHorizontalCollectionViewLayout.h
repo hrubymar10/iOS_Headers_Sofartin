@@ -34,10 +34,10 @@
     } _lastRequestedRect;
 }
 
-@property(assign,readwrite) <PUHorizontalCollectionViewLayoutDelegate> * delegate;
-@property(assign,readwrite) double interitemSpacing;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } itemSize;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } itemsContentInset;
+@property (nonatomic) <PUHorizontalCollectionViewLayoutDelegate> *delegate;
+@property (nonatomic) double interitemSpacing;
+@property (nonatomic) struct CGSize { double x1; double x2; } itemSize;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } itemsContentInset;
 
 + (Class)invalidationContextClass;
 

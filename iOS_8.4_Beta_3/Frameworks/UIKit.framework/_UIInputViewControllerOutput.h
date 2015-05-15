@@ -12,13 +12,13 @@
     bool _shouldPostReturnKeyNotification;
 }
 
-@property(assign,retain) NSArray * keyboardOutputs;
-@property(assign,copy) NSString * primaryLanguage;
-@property(assign,readwrite) bool requiresInputManagerSync;
-@property(assign,readwrite) bool shouldAdvanceInputMode;
-@property(assign,readwrite) bool shouldAdvanceResponder;
-@property(assign,readwrite) bool shouldDismiss;
-@property(assign,readwrite) bool shouldPostReturnKeyNotification;
+@property (nonatomic, retain) NSArray *keyboardOutputs;
+@property (nonatomic, copy) NSString *primaryLanguage;
+@property (nonatomic) bool requiresInputManagerSync;
+@property (nonatomic) bool shouldAdvanceInputMode;
+@property (nonatomic) bool shouldAdvanceResponder;
+@property (nonatomic) bool shouldDismiss;
+@property (nonatomic) bool shouldPostReturnKeyNotification;
 
 + (bool)supportsSecureCoding;
 

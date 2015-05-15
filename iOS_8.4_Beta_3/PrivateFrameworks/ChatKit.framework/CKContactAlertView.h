@@ -9,10 +9,10 @@
     UIImage *_image;
 }
 
-@property(assign,retain) NSString * contactDescription;
-@property(assign,retain) UIImageView * contactImageView;
-@property(assign,retain) UILabel * contactLabel;
-@property(assign,retain) UIImage * image;
+@property (nonatomic, retain) NSString *contactDescription;
+@property (nonatomic, retain) UIImageView *contactImageView;
+@property (nonatomic, retain) UILabel *contactLabel;
+@property (nonatomic, retain) UIImage *image;
 
 - (id)contactDescription;
 - (id)contactImageView;

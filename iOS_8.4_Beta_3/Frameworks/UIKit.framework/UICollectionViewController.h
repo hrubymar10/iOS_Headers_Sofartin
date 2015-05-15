@@ -11,14 +11,14 @@
     UICollectionViewLayout *_layout;
 }
 
-@property(assign,readwrite) bool clearsSelectionOnViewWillAppear;
-@property(assign,retain) UICollectionView * collectionView;
-@property(assign,readonly) UICollectionViewLayout * collectionViewLayout;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useLayoutToLayoutNavigationTransitions;
+@property (nonatomic) bool clearsSelectionOnViewWillAppear;
+@property (nonatomic, retain) UICollectionView *collectionView;
+@property (nonatomic, readonly) UICollectionViewLayout *collectionViewLayout;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useLayoutToLayoutNavigationTransitions;
 
 - (void)__viewWillAppear:(bool)arg1;
 - (id)_animatorForOperation:(long long)arg1 fromViewController:(id)arg2 toViewController:(id)arg3;

@@ -11,12 +11,12 @@
     SEL _setterMethod;
 }
 
-@property(assign,readonly) NSString * elementName;
-@property(assign,readonly) long long maximumNumber;
-@property(assign,readonly) long long minimumNumber;
-@property(assign,readonly) NSString * nameSpace;
-@property(assign,readonly) Class objectClass;
-@property(assign,readonly) SEL setterMethod;
+@property (nonatomic, readonly) NSString *elementName;
+@property (nonatomic, readonly) long long maximumNumber;
+@property (nonatomic, readonly) long long minimumNumber;
+@property (nonatomic, readonly) NSString *nameSpace;
+@property (nonatomic, readonly) Class objectClass;
+@property (nonatomic, readonly) SEL setterMethod;
 
 + (id)ruleWithMinimumNumber:(long long)arg1 maximumNumber:(long long)arg2 nameSpace:(id)arg3 elementName:(id)arg4 objectClass:(Class)arg5 setterMethod:(SEL)arg6;
 

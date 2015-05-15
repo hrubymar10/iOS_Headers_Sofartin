@@ -4,9 +4,9 @@
 
 @interface SUMediaItemCellConfiguration : SUItemCellConfiguration
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } artworkSize;
-@property(assign,readonly) long long mediaIconType;
-@property(assign,readonly) bool showContentRating;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } artworkSize;
+@property (nonatomic, readonly) long long mediaIconType;
+@property (nonatomic, readonly) bool showContentRating;
 
 + (id)copyDefaultContext;
 

@@ -7,8 +7,8 @@
     CKMultiDict *_pendingBlocks;
 }
 
-@property(assign,retain) CKDispatchCache * dispatchCache;
-@property(assign,retain) CKMultiDict * pendingBlocks;
+@property (nonatomic, retain) CKDispatchCache *dispatchCache;
+@property (nonatomic, retain) CKMultiDict *pendingBlocks;
 
 + (id)detailsPreviewCache;
 + (id)mapThumbnailQueue;

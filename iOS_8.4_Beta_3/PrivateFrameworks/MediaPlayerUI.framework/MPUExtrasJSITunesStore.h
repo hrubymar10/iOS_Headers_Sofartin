@@ -6,18 +6,18 @@
     UIViewController *_formPresentationViewController;
 }
 
-@property(assign,readonly) NSString * DSID;
-@property(assign,readonly) NSDictionary * accountInfo;
-@property(assign,retain) id cookie;
-@property(assign,retain) NSString * cookieURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) UIViewController * formPresentationViewController;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * networkConnectionType;
-@property(assign,retain) NSString * storefront;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * userAgent;
+@property (nonatomic, readonly) NSString *DSID;
+@property (nonatomic, readonly) NSDictionary *accountInfo;
+@property (nonatomic, retain) id cookie;
+@property (nonatomic, retain) NSString *cookieURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) UIViewController *formPresentationViewController;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *networkConnectionType;
+@property (nonatomic, retain) NSString *storefront;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *userAgent;
 
 - (void).cxx_destruct;
 - (id)formPresentationViewController;

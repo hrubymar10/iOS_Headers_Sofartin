@@ -6,8 +6,8 @@
     NSData *_requestData;
 }
 
-@property(assign,readonly) bool hasRequestData;
-@property(assign,retain) NSData * requestData;
+@property (nonatomic, readonly) bool hasRequestData;
+@property (nonatomic, retain) NSData *requestData;
 
 + (id)options;
 

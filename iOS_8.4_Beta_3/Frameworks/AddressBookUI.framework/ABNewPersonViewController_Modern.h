@@ -19,26 +19,26 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,readonly) _UIAccessDeniedView * accessDeniedView;
-@property(assign,readwrite) void* addressBook;
-@property(assign,readonly) ABContactViewController * contactViewController;
-@property(assign,readonly) ABPersonTableViewDataSource * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) void* displayedPerson;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) ABPersonViewControllerHelper * helper;
-@property(assign,readwrite) bool isRealViewLoaded;
-@property(assign,retain) CNContact * mergeContact;
-@property(assign,readwrite) <ABNewPersonViewControllerDelegate> * newPersonViewDelegate;
-@property(assign,retain) ABContactsFilter * parentContactsFilter;
-@property(assign,readwrite) void* parentGroup;
-@property(assign,readwrite) void* parentSource;
-@property(assign,readwrite) <ABPresenterDelegate> * presentingDelegate;
-@property(assign,readwrite) bool savesNewContactOnSuspend;
-@property(assign,readwrite) bool showsCancelButton;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) _UIAccessDeniedView *accessDeniedView;
+@property (nonatomic) void*addressBook;
+@property (nonatomic, readonly) ABContactViewController *contactViewController;
+@property (nonatomic, readonly) ABPersonTableViewDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) void*displayedPerson;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) ABPersonViewControllerHelper *helper;
+@property (nonatomic) bool isRealViewLoaded;
+@property (nonatomic, retain) CNContact *mergeContact;
+@property (nonatomic) <ABNewPersonViewControllerDelegate> *newPersonViewDelegate;
+@property (nonatomic, retain) ABContactsFilter *parentContactsFilter;
+@property (nonatomic) void*parentGroup;
+@property (nonatomic) void*parentSource;
+@property (nonatomic) <ABPresenterDelegate> *presentingDelegate;
+@property (nonatomic) bool savesNewContactOnSuspend;
+@property (nonatomic) bool showsCancelButton;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
+@property (readonly) Class superclass;
 
 - (void)accessChanged;
 - (id)accessDeniedView;

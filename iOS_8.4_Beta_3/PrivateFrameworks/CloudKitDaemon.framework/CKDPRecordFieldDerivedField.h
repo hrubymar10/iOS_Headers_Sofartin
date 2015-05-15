@@ -15,17 +15,17 @@
     NSMutableArray *_targetTypes;
 }
 
-@property(assign,retain) CKDPRecordFieldIdentifier * aggregatedField;
-@property(assign,retain) NSMutableArray * aggregatedTypes;
-@property(assign,readwrite) int aggregationFunction;
-@property(assign,retain) NSMutableArray * filters;
-@property(assign,retain) CKDPRecordFieldIdentifier * groupByField;
-@property(assign,readonly) bool hasAggregatedField;
-@property(assign,readwrite) bool hasAggregationFunction;
-@property(assign,readonly) bool hasGroupByField;
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,retain) CKDPRecordFieldIdentifier * identifier;
-@property(assign,retain) NSMutableArray * targetTypes;
+@property (nonatomic, retain) CKDPRecordFieldIdentifier *aggregatedField;
+@property (nonatomic, retain) NSMutableArray *aggregatedTypes;
+@property (nonatomic) int aggregationFunction;
+@property (nonatomic, retain) NSMutableArray *filters;
+@property (nonatomic, retain) CKDPRecordFieldIdentifier *groupByField;
+@property (nonatomic, readonly) bool hasAggregatedField;
+@property (nonatomic) bool hasAggregationFunction;
+@property (nonatomic, readonly) bool hasGroupByField;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, retain) CKDPRecordFieldIdentifier *identifier;
+@property (nonatomic, retain) NSMutableArray *targetTypes;
 
 - (void).cxx_destruct;
 - (void)addAggregatedTypes:(id)arg1;

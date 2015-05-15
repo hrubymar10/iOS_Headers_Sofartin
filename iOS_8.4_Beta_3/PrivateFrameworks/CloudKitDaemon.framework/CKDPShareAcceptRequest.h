@@ -9,14 +9,14 @@
     CKDPShareIdentifier *_shareId;
 }
 
-@property(assign,retain) NSString * etag;
-@property(assign,readonly) bool hasEtag;
-@property(assign,readonly) bool hasPublicParticipantPublicKey;
-@property(assign,readonly) bool hasSelfAddedPcs;
-@property(assign,readonly) bool hasShareId;
-@property(assign,retain) CKDPProtectionInfo * publicParticipantPublicKey;
-@property(assign,retain) CKDPProtectionInfo * selfAddedPcs;
-@property(assign,retain) CKDPShareIdentifier * shareId;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, readonly) bool hasEtag;
+@property (nonatomic, readonly) bool hasPublicParticipantPublicKey;
+@property (nonatomic, readonly) bool hasSelfAddedPcs;
+@property (nonatomic, readonly) bool hasShareId;
+@property (nonatomic, retain) CKDPProtectionInfo *publicParticipantPublicKey;
+@property (nonatomic, retain) CKDPProtectionInfo *selfAddedPcs;
+@property (nonatomic, retain) CKDPShareIdentifier *shareId;
 
 + (id)options;
 

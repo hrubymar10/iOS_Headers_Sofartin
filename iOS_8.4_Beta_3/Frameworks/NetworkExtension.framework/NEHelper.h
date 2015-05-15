@@ -8,8 +8,8 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readonly) NSObject<OS_xpc_object> * initMessage;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (readonly) NSObject<OS_xpc_object> *initMessage;
+@property (readonly) NSObject<OS_dispatch_queue> *queue;
 
 - (void).cxx_destruct;
 - (id)connection;

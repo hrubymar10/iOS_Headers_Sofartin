@@ -6,7 +6,7 @@
     NSString *_customGoalUnits;
 }
 
-@property(assign,readwrite) NSString * customGoalUnits;
+@property (nonatomic) NSString *customGoalUnits;
 
 + (id)newPresetGoal10K;
 + (id)newPresetGoal10Miles;

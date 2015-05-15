@@ -7,7 +7,7 @@
     int _fileDescriptor;
 }
 
-@property(assign,readonly) int fileDescriptor;
+@property (nonatomic, readonly) int fileDescriptor;
 
 - (void).cxx_destruct;
 - (void)close;

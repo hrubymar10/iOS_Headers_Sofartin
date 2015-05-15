@@ -8,9 +8,9 @@
     long long _total;
 }
 
-@property(assign,readwrite) long long completed;
-@property(assign,readonly) bool overflowed;
-@property(assign,readwrite) long long total;
+@property long long completed;
+@property (readonly) bool overflowed;
+@property long long total;
 
 + (id)fractionWithCompleted:(long long)arg1 total:(long long)arg2;
 + (id)fractionWithDouble:(double)arg1;

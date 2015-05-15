@@ -7,8 +7,8 @@
     NSString *_stringValue;
 }
 
-@property(assign,readwrite) int numberFormat;
-@property(assign,copy) NSString * stringValue;
+@property (nonatomic) int numberFormat;
+@property (nonatomic, copy) NSString *stringValue;
 
 + (id)newObjectForUnarchiver:(id)arg1;
 

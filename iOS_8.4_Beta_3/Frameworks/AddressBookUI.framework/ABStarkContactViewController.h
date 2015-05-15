@@ -7,8 +7,8 @@
     ABCardiMessageEmailGroup *_iMessageEmailGroup;
 }
 
-@property(assign,retain) ABPropertyBestIDSValueQuery * bestiMessageQuery;
-@property(assign,retain) ABCardiMessageEmailGroup * iMessageEmailGroup;
+@property (nonatomic, retain) ABPropertyBestIDSValueQuery *bestiMessageQuery;
+@property (nonatomic, retain) ABCardiMessageEmailGroup *iMessageEmailGroup;
 
 - (void)_initiateBestiMessagePropertyQuery;
 - (id)bestiMessageQuery;

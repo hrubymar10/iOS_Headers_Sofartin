@@ -14,14 +14,14 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) bool hasIsMaster;
-@property(assign,readonly) bool hasService;
-@property(assign,readwrite) bool hasSyncDuration;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool isMaster;
-@property(assign,retain) NSString * service;
-@property(assign,readwrite) unsigned long long syncDuration;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) bool hasIsMaster;
+@property (nonatomic, readonly) bool hasService;
+@property (nonatomic) bool hasSyncDuration;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool isMaster;
+@property (nonatomic, retain) NSString *service;
+@property (nonatomic) unsigned long long syncDuration;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

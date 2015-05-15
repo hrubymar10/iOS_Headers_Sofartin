@@ -4,11 +4,11 @@
 
 @interface MusicMyMusicViewController : SKUIScrollingSegmentedController <MusicClientContextConsuming, SKUITabBarItemRootViewController>
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)initWithTabBarItem:(id)arg1;
 - (bool)music_handleUserActivityContext:(id)arg1 containerItem:(id)arg2;

@@ -14,15 +14,15 @@
     bool _needsOutputRoutesFetch;
 }
 
-@property(assign,readonly) NSString * AVAudioSessionCategory;
-@property(assign,readonly) NSString * AVSystemControllerCategory;
-@property(assign,readonly) NSString * activeInputRouteName;
-@property(assign,readonly) bool hasCategoryEverBeenActive;
-@property(assign,readonly) bool isAudioSessionAppropriateForQueryingInputRoutes;
-@property(assign,readonly) bool isAudioSessionAppropriateForQueryingOutputRoutes;
-@property(assign,readonly) bool isRoutingToAirPlayMirrorDestination;
-@property(assign,readonly) bool isRoutingToPhoneCall;
-@property(assign,readonly) bool isTemporarilyIgnoringRouteChangeNotifications;
+@property (nonatomic, readonly) NSString *AVAudioSessionCategory;
+@property (nonatomic, readonly) NSString *AVSystemControllerCategory;
+@property (nonatomic, readonly) NSString *activeInputRouteName;
+@property (nonatomic, readonly) bool hasCategoryEverBeenActive;
+@property (nonatomic, readonly) bool isAudioSessionAppropriateForQueryingInputRoutes;
+@property (nonatomic, readonly) bool isAudioSessionAppropriateForQueryingOutputRoutes;
+@property (nonatomic, readonly) bool isRoutingToAirPlayMirrorDestination;
+@property (nonatomic, readonly) bool isRoutingToPhoneCall;
+@property (nonatomic, readonly) bool isTemporarilyIgnoringRouteChangeNotifications;
 
 - (void).cxx_destruct;
 - (id)AVAudioSessionCategory;

@@ -16,12 +16,12 @@
     long long _pinningTransitionStyle;
 }
 
-@property(assign,readonly) bool hasValidPinningContentInset;
-@property(assign,readonly) bool hasValidPinningStyle;
-@property(assign,readonly) bool hasValidPinningTransitionStyle;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } pinningContentInset;
-@property(assign,readwrite) long long pinningStyle;
-@property(assign,readwrite) long long pinningTransitionStyle;
+@property (nonatomic, readonly) bool hasValidPinningContentInset;
+@property (nonatomic, readonly) bool hasValidPinningStyle;
+@property (nonatomic, readonly) bool hasValidPinningTransitionStyle;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } pinningContentInset;
+@property (nonatomic) long long pinningStyle;
+@property (nonatomic) long long pinningTransitionStyle;
 
 - (bool)hasValidPinningContentInset;
 - (bool)hasValidPinningStyle;

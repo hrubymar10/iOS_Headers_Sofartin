@@ -6,7 +6,7 @@
     NSArray *_filter;
 }
 
-@property(assign,readonly) NSArray * filter;
+@property (readonly) NSArray *filter;
 
 + (id)modelWithFilter:(id)arg1;
 

@@ -4,8 +4,8 @@
 
 @interface RadioMutablePlaybackContext : RadioPlaybackContext
 
-@property(assign,readwrite) long long numberOfSkipsUsed;
-@property(assign,copy) NSArray * trackPlaybackDescriptorQueue;
+@property (nonatomic) long long numberOfSkipsUsed;
+@property (nonatomic, copy) NSArray *trackPlaybackDescriptorQueue;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setNumberOfSkipsUsed:(long long)arg1;

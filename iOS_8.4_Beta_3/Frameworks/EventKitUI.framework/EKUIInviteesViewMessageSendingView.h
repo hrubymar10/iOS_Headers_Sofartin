@@ -6,7 +6,7 @@
     UIView *_composeView;
 }
 
-@property(assign,retain) UIView * composeView;
+@property (nonatomic, retain) UIView *composeView;
 
 - (void).cxx_destruct;
 - (id)composeView;

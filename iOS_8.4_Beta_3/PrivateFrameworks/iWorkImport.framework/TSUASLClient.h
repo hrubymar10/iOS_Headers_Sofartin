@@ -15,7 +15,7 @@
     NSString *_stderrMessageFormat;
 }
 
-@property(assign,readwrite) int filter;
+@property int filter;
 
 - (void).cxx_destruct;
 - (void)_addLogFileToCompress:(id)arg1;

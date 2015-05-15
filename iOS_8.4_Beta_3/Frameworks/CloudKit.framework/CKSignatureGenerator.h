@@ -7,8 +7,8 @@
     bool _valid;
 }
 
-@property(assign,readwrite) void* generator;
-@property(getter=isValid,assign,readwrite) bool valid;
+@property (nonatomic) void*generator;
+@property (getter=isValid, nonatomic) bool valid;
 
 + (bool)isValidSignature:(id)arg1;
 + (id)signatureWithFileDescriptor:(int)arg1 error:(id*)arg2;

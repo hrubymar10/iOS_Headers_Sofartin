@@ -7,8 +7,8 @@
     bool _editingDisabled;
 }
 
-@property(getter=isEditingDisabled,assign,readwrite) bool editingDisabled;
-@property(assign,retain) ABMultiCellContentView * multiCellContentView;
+@property (getter=isEditingDisabled, nonatomic) bool editingDisabled;
+@property (nonatomic, retain) ABMultiCellContentView *multiCellContentView;
 
 - (void)_addMultiCellContentViewIfNeeded;
 - (bool)_shouldSwallowTouches:(id)arg1 withEvent:(id)arg2;

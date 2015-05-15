@@ -11,10 +11,10 @@
     int _objectType;
 }
 
-@property(assign,readwrite) long long anchor;
-@property(assign,readwrite) bool hasAnchor;
-@property(assign,readwrite) bool hasObjectType;
-@property(assign,readwrite) int objectType;
+@property (nonatomic) long long anchor;
+@property (nonatomic) bool hasAnchor;
+@property (nonatomic) bool hasObjectType;
+@property (nonatomic) int objectType;
 
 - (long long)anchor;
 - (void)copyTo:(id)arg1;

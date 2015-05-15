@@ -14,26 +14,26 @@
     NSString *_uniqueIdentifier;
 }
 
-@property(assign,readonly) <MPArtworkDataSource> * artworkDataSource;
-@property(assign,readonly) bool companionDeviceActiveStoreAccountIsDynamiteEligible;
-@property(assign,readonly) <MPArtworkDataSource> * completeMyCollectionArtworkDataSource;
-@property(assign,readonly) NSString * databasePath;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) MPMediaEntityCache * entityCache;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isGeniusEnabled;
-@property(assign,retain) ML3MusicLibrary * library;
-@property(assign,readonly) NSArray * localizedSectionIndexTitles;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) long long playbackHistoryPlaylistPersistentID;
-@property(assign,readonly) NSArray * preferredAudioLanguages;
-@property(assign,readonly) NSArray * preferredSubtitleLanguages;
-@property(assign,readonly) NSSet * propertiesToCache;
-@property(assign,readonly) bool requiresAuthentication;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * syncValidity;
-@property(assign,readonly) NSString * uniqueIdentifier;
+@property (nonatomic, readonly) <MPArtworkDataSource> *artworkDataSource;
+@property (nonatomic, readonly) bool companionDeviceActiveStoreAccountIsDynamiteEligible;
+@property (nonatomic, readonly) <MPArtworkDataSource> *completeMyCollectionArtworkDataSource;
+@property (nonatomic, readonly) NSString *databasePath;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) MPMediaEntityCache *entityCache;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isGeniusEnabled;
+@property (nonatomic, retain) ML3MusicLibrary *library;
+@property (nonatomic, readonly) NSArray *localizedSectionIndexTitles;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) long long playbackHistoryPlaylistPersistentID;
+@property (nonatomic, readonly) NSArray *preferredAudioLanguages;
+@property (nonatomic, readonly) NSArray *preferredSubtitleLanguages;
+@property (nonatomic, readonly) NSSet *propertiesToCache;
+@property (nonatomic, readonly) bool requiresAuthentication;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *syncValidity;
+@property (nonatomic, readonly) NSString *uniqueIdentifier;
 
 + (id)_unadjustedValueForItemDateWithDefaultValue:(id)arg1;
 + (id)_unadjustedValueForItemPropertyRatingWithDefaultValue:(id)arg1;

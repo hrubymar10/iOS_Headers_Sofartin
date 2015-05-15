@@ -4,7 +4,7 @@
 
 @interface SAUIListenForPronunciation : SABaseClientBoundCommand
 
-@property(assign,retain) SASPronunciationContext * context;
+@property (nonatomic, retain) SASPronunciationContext *context;
 
 + (id)listenForPronunciation;
 + (id)listenForPronunciationWithDictionary:(id)arg1 context:(id)arg2;

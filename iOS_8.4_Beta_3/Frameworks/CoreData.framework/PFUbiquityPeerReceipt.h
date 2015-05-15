@@ -7,9 +7,9 @@
     NSDate *_writeDate;
 }
 
-@property(assign,readonly) PFUbiquityKnowledgeVector * kv;
-@property(assign,readonly) PFUbiquityLocation * receiptFileLocation;
-@property(assign,retain) NSDate * writeDate;
+@property (nonatomic, readonly) PFUbiquityKnowledgeVector *kv;
+@property (nonatomic, readonly) PFUbiquityLocation *receiptFileLocation;
+@property (nonatomic, retain) NSDate *writeDate;
 
 - (void)dealloc;
 - (id)description;

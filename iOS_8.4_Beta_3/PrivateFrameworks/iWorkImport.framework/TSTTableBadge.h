@@ -18,10 +18,10 @@
     double _viewScale;
 }
 
-@property(assign,readwrite) int badgeType;
-@property(assign,retain) TSUColor * color;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
-@property(assign,readwrite) double viewScale;
+@property (nonatomic) int badgeType;
+@property (nonatomic, retain) TSUColor *color;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
+@property (nonatomic) double viewScale;
 
 + (id)badgeWithType:(int)arg1 color:(id)arg2 viewScale:(double)arg3 frame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg4;
 

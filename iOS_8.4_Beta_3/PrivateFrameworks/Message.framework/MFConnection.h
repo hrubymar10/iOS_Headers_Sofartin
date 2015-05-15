@@ -23,16 +23,16 @@
     char *_zbuffer;
 }
 
-@property(assign,readonly) NSArray * authenticationMechanisms;
-@property(assign,readonly) NSArray * capabilities;
-@property(assign,readonly) bool hasBytesAvailable;
-@property(assign,readonly) bool isCellularConnection;
-@property(assign,readwrite) bool isFetching;
-@property(assign,readonly) bool isValid;
-@property(assign,readonly) double lastUsedTime;
-@property(assign,readonly) bool loginDisabled;
-@property(assign,readonly) NSString * securityProtocol;
-@property(assign,readonly) bool usesOpportunisticSockets;
+@property (nonatomic, readonly) NSArray *authenticationMechanisms;
+@property (nonatomic, readonly) NSArray *capabilities;
+@property (nonatomic, readonly) bool hasBytesAvailable;
+@property (nonatomic, readonly) bool isCellularConnection;
+@property (nonatomic) bool isFetching;
+@property (nonatomic, readonly) bool isValid;
+@property (nonatomic, readonly) double lastUsedTime;
+@property (nonatomic, readonly) bool loginDisabled;
+@property (nonatomic, readonly) NSString *securityProtocol;
+@property (nonatomic, readonly) bool usesOpportunisticSockets;
 
 + (void)flushLog;
 + (void)initialize;

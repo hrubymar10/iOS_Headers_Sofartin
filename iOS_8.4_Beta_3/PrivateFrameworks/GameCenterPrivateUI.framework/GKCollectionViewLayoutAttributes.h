@@ -19,20 +19,20 @@
     double _unpinnedY;
 }
 
-@property(assign,readwrite) bool allSectionItemsVisible;
-@property(assign,readwrite) unsigned long long currentTotalItemCount;
-@property(assign,readwrite) unsigned long long currentVisibleItemCount;
-@property(assign,retain) <UICollectionViewDataSource> * dataSource;
-@property(assign,readwrite) bool doesAbutLeftOfCollectionView;
-@property(assign,readwrite) unsigned long long gridLayoutLocation;
-@property(assign,readwrite) bool isPartOfGlobalPinningGroup;
-@property(assign,readwrite) bool isPinned;
-@property(assign,readwrite) double leadingMargin;
-@property(assign,readwrite) unsigned long long maxTotalItemCount;
-@property(assign,retain) GKSectionMetrics * sectionMetrics;
-@property(assign,retain) GKSupplementaryViewMetrics * supplementaryMetrics;
-@property(assign,readwrite) double trailingMargin;
-@property(assign,readwrite) double unpinnedY;
+@property (nonatomic) bool allSectionItemsVisible;
+@property (nonatomic) unsigned long long currentTotalItemCount;
+@property (nonatomic) unsigned long long currentVisibleItemCount;
+@property (nonatomic, retain) <UICollectionViewDataSource> *dataSource;
+@property (nonatomic) bool doesAbutLeftOfCollectionView;
+@property (nonatomic) unsigned long long gridLayoutLocation;
+@property (nonatomic) bool isPartOfGlobalPinningGroup;
+@property (nonatomic) bool isPinned;
+@property (nonatomic) double leadingMargin;
+@property (nonatomic) unsigned long long maxTotalItemCount;
+@property (nonatomic, retain) GKSectionMetrics *sectionMetrics;
+@property (nonatomic, retain) GKSupplementaryViewMetrics *supplementaryMetrics;
+@property (nonatomic) double trailingMargin;
+@property (nonatomic) double unpinnedY;
 
 - (bool)allSectionItemsVisible;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

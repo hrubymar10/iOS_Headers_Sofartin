@@ -4,20 +4,20 @@
 
 @interface CAMCameraSpec : NSObject
 
-@property(assign,readonly) bool shouldCreateAvalancheIndicator;
-@property(assign,readonly) bool shouldCreateElapsedTimeView;
-@property(assign,readonly) bool shouldCreateFiltersButton;
-@property(assign,readonly) bool shouldCreateFlashButton;
-@property(assign,readonly) bool shouldCreateFlipButton;
-@property(assign,readonly) bool shouldCreateHDRButton;
-@property(assign,readonly) bool shouldCreateImageWell;
-@property(assign,readonly) bool shouldCreateModeDial;
-@property(assign,readonly) bool shouldCreatePanoramaView;
-@property(assign,readonly) bool shouldCreateShutterButton;
-@property(assign,readonly) bool shouldCreateSlalomIndicator;
-@property(assign,readonly) bool shouldCreateStillDuringVideo;
-@property(assign,readonly) bool shouldCreateTimerButton;
-@property(assign,readonly) bool shouldCreateZoomSlider;
+@property (nonatomic, readonly) bool shouldCreateAvalancheIndicator;
+@property (nonatomic, readonly) bool shouldCreateElapsedTimeView;
+@property (nonatomic, readonly) bool shouldCreateFiltersButton;
+@property (nonatomic, readonly) bool shouldCreateFlashButton;
+@property (nonatomic, readonly) bool shouldCreateFlipButton;
+@property (nonatomic, readonly) bool shouldCreateHDRButton;
+@property (nonatomic, readonly) bool shouldCreateImageWell;
+@property (nonatomic, readonly) bool shouldCreateModeDial;
+@property (nonatomic, readonly) bool shouldCreatePanoramaView;
+@property (nonatomic, readonly) bool shouldCreateShutterButton;
+@property (nonatomic, readonly) bool shouldCreateSlalomIndicator;
+@property (nonatomic, readonly) bool shouldCreateStillDuringVideo;
+@property (nonatomic, readonly) bool shouldCreateTimerButton;
+@property (nonatomic, readonly) bool shouldCreateZoomSlider;
 
 + (id)specForCurrentPlatform;
 + (id)specForPad;

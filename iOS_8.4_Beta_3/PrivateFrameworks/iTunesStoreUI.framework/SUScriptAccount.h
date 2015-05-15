@@ -6,16 +6,16 @@
     SSAccount *_account;
 }
 
-@property(assign,readonly) NSString * ITunesPassSerialNumber;
-@property(assign,retain) SSAccount * account;
-@property(assign,copy) NSString * credits;
-@property(assign,retain) NSNumber * dsID;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * kind;
-@property(assign,retain) id lockerEnabled;
-@property(getter=isPrimaryLockerAccount,assign,readonly) id primaryLockerAccount;
-@property(assign,retain) id purchaseHistoryEnabled;
-@property(assign,retain) id socialEnabled;
+@property (readonly) NSString *ITunesPassSerialNumber;
+@property (retain) SSAccount *account;
+@property (copy) NSString *credits;
+@property (retain) NSNumber *dsID;
+@property (copy) NSString *identifier;
+@property (copy) NSString *kind;
+@property (retain) id lockerEnabled;
+@property (getter=isPrimaryLockerAccount, readonly) id primaryLockerAccount;
+@property (retain) id purchaseHistoryEnabled;
+@property (retain) id socialEnabled;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

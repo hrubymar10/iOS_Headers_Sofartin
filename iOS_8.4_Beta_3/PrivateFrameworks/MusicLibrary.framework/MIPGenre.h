@@ -12,12 +12,12 @@
     long long _storeId;
 }
 
-@property(assign,readonly) bool hasName;
-@property(assign,readwrite) bool hasPersistentId;
-@property(assign,readwrite) bool hasStoreId;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) long long persistentId;
-@property(assign,readwrite) long long storeId;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic) bool hasPersistentId;
+@property (nonatomic) bool hasStoreId;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) long long persistentId;
+@property (nonatomic) long long storeId;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

@@ -14,15 +14,15 @@
     NSURL *_redirectURL;
 }
 
-@property(assign,retain) NSNumber * authenticatedAccountDSID;
-@property(assign,retain) SSAuthenticationContext * authenticationContext;
-@property(assign,retain) SSURLBagContext * bagContext;
-@property(assign,readwrite) long long contentLength;
-@property(assign,retain) NSString * contentType;
-@property(assign,readwrite) long long errorHandlerResponseType;
-@property(assign,retain) id output;
-@property(assign,readwrite) ISOperation * parentOperation;
-@property(assign,retain) NSURL * redirectURL;
+@property (retain) NSNumber *authenticatedAccountDSID;
+@property (retain) SSAuthenticationContext *authenticationContext;
+@property (retain) SSURLBagContext *bagContext;
+@property long long contentLength;
+@property (retain) NSString *contentType;
+@property long long errorHandlerResponseType;
+@property (retain) id output;
+@property ISOperation *parentOperation;
+@property (retain) NSURL *redirectURL;
 
 + (id)provider;
 

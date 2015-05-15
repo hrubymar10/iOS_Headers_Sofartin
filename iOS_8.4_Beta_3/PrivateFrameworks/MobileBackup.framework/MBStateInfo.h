@@ -10,11 +10,11 @@
     int _state;
 }
 
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) unsigned long long estimatedTimeRemaining;
-@property(assign,readonly) float progress;
-@property(assign,readonly) int state;
+@property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) unsigned long long estimatedTimeRemaining;
+@property (nonatomic, readonly) float progress;
+@property (nonatomic, readonly) int state;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)date;

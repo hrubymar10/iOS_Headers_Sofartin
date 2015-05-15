@@ -16,17 +16,17 @@
     SKUIUber *_uber;
 }
 
-@property(assign,retain) NSData * ITMLData;
-@property(assign,retain) NSHTTPURLResponse * ITMLResponse;
-@property(assign,readwrite) long long defaultPageFragment;
-@property(assign,retain) SKUIProductPageItem * item;
-@property(assign,retain) SSMetricsConfiguration * metricsConfiguration;
-@property(assign,copy) NSString * metricsPageDescription;
-@property(assign,copy) NSURL * pageURL;
-@property(assign,retain) SKUIProductPageProductInfo * productInformation;
-@property(assign,copy) NSArray * relatedContentSwooshes;
-@property(assign,retain) SKUIReviewConfiguration * reviewConfiguration;
-@property(assign,retain) SKUIUber * uber;
+@property (nonatomic, retain) NSData *ITMLData;
+@property (nonatomic, retain) NSHTTPURLResponse *ITMLResponse;
+@property (nonatomic) long long defaultPageFragment;
+@property (nonatomic, retain) SKUIProductPageItem *item;
+@property (nonatomic, retain) SSMetricsConfiguration *metricsConfiguration;
+@property (nonatomic, copy) NSString *metricsPageDescription;
+@property (nonatomic, copy) NSURL *pageURL;
+@property (nonatomic, retain) SKUIProductPageProductInfo *productInformation;
+@property (nonatomic, copy) NSArray *relatedContentSwooshes;
+@property (nonatomic, retain) SKUIReviewConfiguration *reviewConfiguration;
+@property (nonatomic, retain) SKUIUber *uber;
 
 - (void).cxx_destruct;
 - (id)ITMLData;

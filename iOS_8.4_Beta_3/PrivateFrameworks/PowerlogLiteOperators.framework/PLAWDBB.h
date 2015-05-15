@@ -18,19 +18,19 @@
     unsigned int _upBytes;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * accountingGroupEventCallback;
-@property(assign,retain) PLEntryNotificationOperatorComposition * bbEventCallback;
-@property(assign,retain) PLEntryNotificationOperatorComposition * bbLqmCellularActiveCallback;
-@property(assign,retain) PLEntryNotificationOperatorComposition * bbLqmCumulativeNetworkCallback;
-@property(assign,retain) PLEntryNotificationOperatorComposition * bbProtocolRailCallback;
-@property(assign,retain) PLEntryNotificationOperatorComposition * connectedPowerRailCallback;
-@property(assign,readwrite) int currQuality;
-@property(assign,readwrite) unsigned int downBytes;
-@property(assign,retain) PLEntryNotificationOperatorComposition * iceStatsEventCallback;
-@property(assign,readwrite) int newQuality;
-@property(assign,retain) NSDate * startTimeAppBB;
-@property(assign,retain) NSDate * startTimeBBLqm;
-@property(assign,readwrite) unsigned int upBytes;
+@property (retain) PLEntryNotificationOperatorComposition *accountingGroupEventCallback;
+@property (retain) PLEntryNotificationOperatorComposition *bbEventCallback;
+@property (retain) PLEntryNotificationOperatorComposition *bbLqmCellularActiveCallback;
+@property (retain) PLEntryNotificationOperatorComposition *bbLqmCumulativeNetworkCallback;
+@property (retain) PLEntryNotificationOperatorComposition *bbProtocolRailCallback;
+@property (retain) PLEntryNotificationOperatorComposition *connectedPowerRailCallback;
+@property int currQuality;
+@property unsigned int downBytes;
+@property (retain) PLEntryNotificationOperatorComposition *iceStatsEventCallback;
+@property int newQuality;
+@property (retain) NSDate *startTimeAppBB;
+@property (retain) NSDate *startTimeBBLqm;
+@property unsigned int upBytes;
 
 + (id)entryAggregateDefinitionAwdBBQlm;
 + (id)entryAggregateDefinitionAwdBBQlmCounter;

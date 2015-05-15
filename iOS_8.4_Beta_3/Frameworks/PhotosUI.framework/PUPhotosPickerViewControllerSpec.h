@@ -6,8 +6,8 @@
     unsigned long long _supportedInterfaceOrientations;
 }
 
-@property(assign,readonly) unsigned long long supportedInterfaceOrientations;
-@property(assign,readonly) PUTabbedLibraryViewControllerSpec * tabbedLibraryViewControllerSpec;
+@property (nonatomic, readonly) unsigned long long supportedInterfaceOrientations;
+@property (nonatomic, readonly) PUTabbedLibraryViewControllerSpec *tabbedLibraryViewControllerSpec;
 
 - (void)configureSessionInfo:(id)arg1;
 - (unsigned long long)supportedInterfaceOrientations;

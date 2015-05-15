@@ -14,15 +14,15 @@
     NSMutableString *_sdState;
 }
 
-@property(assign,retain) NSDate * bbDate;
-@property(assign,retain) NSNumber * bbSeqNum;
-@property(assign,readwrite) double* bbTimeCal;
-@property(assign,retain) NSMutableDictionary * commonInfo;
-@property(assign,readwrite) unsigned char inited;
-@property(assign,retain) NSMutableDictionary * kvPairs;
-@property(assign,retain) NSMutableString * sdAct;
-@property(assign,retain) NSMutableString * sdEvent;
-@property(assign,retain) NSMutableString * sdState;
+@property (retain) NSDate *bbDate;
+@property (retain) NSNumber *bbSeqNum;
+@property double*bbTimeCal;
+@property (nonatomic, retain) NSMutableDictionary *commonInfo;
+@property (nonatomic) unsigned char inited;
+@property (nonatomic, retain) NSMutableDictionary *kvPairs;
+@property (nonatomic, retain) NSMutableString *sdAct;
+@property (nonatomic, retain) NSMutableString *sdEvent;
+@property (nonatomic, retain) NSMutableString *sdState;
 
 + (id)bbEuLogMsgNameICEStats;
 + (id)bbEuLogMsgNameLTESleepMgrStats;

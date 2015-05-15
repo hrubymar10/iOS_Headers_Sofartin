@@ -6,9 +6,9 @@
     id _internal;
 }
 
-@property(getter=isEditable,assign,readonly) bool editable;
-@property(assign,retain) ALAssetPrivate * internal;
-@property(assign,readonly) ALAsset * originalAsset;
+@property (getter=isEditable, nonatomic, readonly) bool editable;
+@property (nonatomic, retain) ALAssetPrivate *internal;
+@property (nonatomic, readonly) ALAsset *originalAsset;
 
 + (struct CGSize { double x1; double x2; })largePreviewImageSizeForSize:(struct CGSize { double x1; double x2; })arg1;
 

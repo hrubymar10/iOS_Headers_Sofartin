@@ -27,17 +27,17 @@
     VKAnnotationMarkerLayer *_superlayer;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } accumulatedCenterOffset;
-@property(assign,readwrite) VKAnnotationMarker * annotationMarker;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } centerOffset;
-@property(assign,readonly) double contentScale;
-@property(assign,readwrite) bool hasMass;
-@property(assign,readonly) bool hasScreenRect;
-@property(assign,readwrite) VKAnnotationModel * model;
-@property(assign,readwrite) struct { double x1; double x2; double x3; double x4; } screenRect;
-@property(assign,readwrite) long long styleType;
-@property(assign,copy) NSArray * sublayers;
-@property(assign,readwrite) VKAnnotationMarkerLayer * superlayer;
+@property (nonatomic) struct CGPoint { double x1; double x2; } accumulatedCenterOffset;
+@property (nonatomic) VKAnnotationMarker *annotationMarker;
+@property (nonatomic) struct CGPoint { double x1; double x2; } centerOffset;
+@property (nonatomic, readonly) double contentScale;
+@property (nonatomic) bool hasMass;
+@property (nonatomic, readonly) bool hasScreenRect;
+@property (nonatomic) VKAnnotationModel *model;
+@property (nonatomic) struct { double x1; double x2; double x3; double x4; } screenRect;
+@property (nonatomic) long long styleType;
+@property (nonatomic, readonly, copy) NSArray *sublayers;
+@property (nonatomic) VKAnnotationMarkerLayer *superlayer;
 
 - (id).cxx_construct;
 - (id)_styleAttributes;

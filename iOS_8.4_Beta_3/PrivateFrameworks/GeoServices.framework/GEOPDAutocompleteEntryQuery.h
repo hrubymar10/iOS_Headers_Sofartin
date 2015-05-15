@@ -7,9 +7,9 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,retain) NSString * completion;
-@property(assign,readonly) bool hasCompletion;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, retain) NSString *completion;
+@property (nonatomic, readonly) bool hasCompletion;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (id)completion;
 - (void)copyTo:(id)arg1;

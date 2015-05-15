@@ -26,26 +26,26 @@
     bool _shouldShowSectionHeadersWhenNoItems;
 }
 
-@property(assign,readwrite) unsigned long long alignment;
-@property(assign,readonly) double calculatedItemHeight;
-@property(assign,readwrite) double desiredItemHeight;
-@property(assign,readwrite) double desiredItemWidth;
-@property(assign,readwrite) double flowColumnWidth;
-@property(assign,readwrite) unsigned long long flowMaxColumnCount;
-@property(assign,readwrite) bool incrementalRevealConsumesPadding;
-@property(assign,readwrite) unsigned long long incrementalRevealItemCount;
-@property(assign,readwrite) double interitemSpacing;
-@property(assign,retain) NSDictionary * itemHeightList;
-@property(assign,readwrite) unsigned long long lastLineItemAlignment;
-@property(assign,readwrite) double lineSpacing;
-@property(assign,readwrite) double marginBetweenItems;
-@property(assign,readwrite) unsigned long long maximumVisibleItemCount;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } padding;
-@property(assign,readwrite) double sectionHeaderHeight;
-@property(assign,readwrite) bool sectionHeadersShouldPin;
-@property(assign,readwrite) bool shouldAlwaysIncludeShowMore;
-@property(assign,readwrite) bool shouldShowSectionHeadersWhenNoItems;
-@property(assign,readwrite) double showMoreHeight;
+@property (nonatomic) unsigned long long alignment;
+@property (nonatomic, readonly) double calculatedItemHeight;
+@property (nonatomic) double desiredItemHeight;
+@property (nonatomic) double desiredItemWidth;
+@property (nonatomic) double flowColumnWidth;
+@property (nonatomic) unsigned long long flowMaxColumnCount;
+@property (nonatomic) bool incrementalRevealConsumesPadding;
+@property (nonatomic) unsigned long long incrementalRevealItemCount;
+@property (nonatomic) double interitemSpacing;
+@property (nonatomic, retain) NSDictionary *itemHeightList;
+@property (nonatomic) unsigned long long lastLineItemAlignment;
+@property (nonatomic) double lineSpacing;
+@property (nonatomic) double marginBetweenItems;
+@property (nonatomic) unsigned long long maximumVisibleItemCount;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } padding;
+@property (nonatomic) double sectionHeaderHeight;
+@property (nonatomic) bool sectionHeadersShouldPin;
+@property (nonatomic) bool shouldAlwaysIncludeShowMore;
+@property (nonatomic) bool shouldShowSectionHeadersWhenNoItems;
+@property (nonatomic) double showMoreHeight;
 
 + (id)metricsForIdiom:(long long)arg1;
 

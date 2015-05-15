@@ -8,9 +8,9 @@
     NSSet *_propertiesToFind;
 }
 
-@property(assign,retain) NSString * expandedName;
-@property(assign,retain) NSString * expandedNameSpace;
-@property(assign,retain) NSSet * propertiesToFind;
+@property (nonatomic, retain) NSString *expandedName;
+@property (nonatomic, retain) NSString *expandedNameSpace;
+@property (nonatomic, retain) NSSet *propertiesToFind;
 
 - (void)dealloc;
 - (id)expandedName;

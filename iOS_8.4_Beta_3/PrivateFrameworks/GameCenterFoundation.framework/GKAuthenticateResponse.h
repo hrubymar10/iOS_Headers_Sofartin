@@ -13,14 +13,14 @@
     bool _shouldShowLinkAccountsUI;
 }
 
-@property(assign,retain) NSString * accountName;
-@property(assign,retain) NSString * authToken;
-@property(assign,readwrite) long long environment;
-@property(assign,readwrite) bool loginDisabled;
-@property(assign,readwrite) bool passwordChangeRequired;
-@property(assign,retain) NSURL * passwordChangeURL;
-@property(assign,retain) NSString * playerID;
-@property(assign,readwrite) bool shouldShowLinkAccountsUI;
+@property (nonatomic, retain) NSString *accountName;
+@property (nonatomic, retain) NSString *authToken;
+@property (nonatomic) long long environment;
+@property (nonatomic) bool loginDisabled;
+@property (nonatomic) bool passwordChangeRequired;
+@property (nonatomic, retain) NSURL *passwordChangeURL;
+@property (nonatomic, retain) NSString *playerID;
+@property (nonatomic) bool shouldShowLinkAccountsUI;
 
 + (id)secureCodedPropertyKeys;
 

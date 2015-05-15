@@ -18,21 +18,21 @@
     PUVideoTrimQueueController *_trimController;
 }
 
-@property(setter=_setCanContributeToCloudSharedAlbum:,assign,readwrite) bool _canContributeToCloudSharedAlbum;
-@property(setter=_setOptionsBarButtonItem:,assign,retain) UIBarButtonItem * _optionsBarButtonItem;
-@property(setter=_setOptionsBarButtonSpacerItem:,assign,retain) UIBarButtonItem * _optionsBarButtonSpacerItem;
-@property(setter=_setOptionsPopoverRootViewController:,assign,retain) UIViewController * _optionsPopoverRootViewController;
-@property(setter=_setOptionsViewController:,assign,retain) UIViewController * _optionsViewController;
-@property(setter=_setSelectedItemIndex:,assign,readwrite) long long _selectedItemIndex;
-@property(setter=_setSwitcherBarButtonItem:,assign,retain) UIBarButtonItem * _switcherBarButtonItem;
-@property(setter=_setSwitcherSegmentedControl:,assign,retain) UISegmentedControl * _switcherSegmentedControl;
-@property(setter=_setTransitioningOptionsViewControllers:,assign,retain) NSArray * _transitioningOptionsViewControllers;
-@property(assign,retain) PLCloudSharedAlbum * album;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isDisplayingOptions,setter=setDisplayingOptions:,assign,readwrite) bool displayingOptions;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (setter=_setCanContributeToCloudSharedAlbum:, nonatomic) bool _canContributeToCloudSharedAlbum;
+@property (setter=_setOptionsBarButtonItem:, nonatomic, retain) UIBarButtonItem *_optionsBarButtonItem;
+@property (setter=_setOptionsBarButtonSpacerItem:, nonatomic, retain) UIBarButtonItem *_optionsBarButtonSpacerItem;
+@property (setter=_setOptionsPopoverRootViewController:, nonatomic, retain) UIViewController *_optionsPopoverRootViewController;
+@property (setter=_setOptionsViewController:, nonatomic, retain) UIViewController *_optionsViewController;
+@property (setter=_setSelectedItemIndex:, nonatomic) long long _selectedItemIndex;
+@property (setter=_setSwitcherBarButtonItem:, nonatomic, retain) UIBarButtonItem *_switcherBarButtonItem;
+@property (setter=_setSwitcherSegmentedControl:, nonatomic, retain) UISegmentedControl *_switcherSegmentedControl;
+@property (setter=_setTransitioningOptionsViewControllers:, nonatomic, retain) NSArray *_transitioningOptionsViewControllers;
+@property (nonatomic, retain) PLCloudSharedAlbum *album;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isDisplayingOptions, setter=setDisplayingOptions:, nonatomic) bool displayingOptions;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_appAllowsSupressionOfAlerts;

@@ -16,9 +16,9 @@
     NSString *_userInfoPath;
 }
 
-@property(assign,retain) NSURL * currentSubDirectory;
-@property(assign,retain) NSURL * directoryURL;
-@property(assign,readwrite) bool representsCameraRoll;
+@property (nonatomic, readonly, retain) NSURL *currentSubDirectory;
+@property (readonly, retain) NSURL *directoryURL;
+@property bool representsCameraRoll;
 
 + (id)cameraRollPlistName;
 + (id)cloudPlistName;

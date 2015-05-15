@@ -7,8 +7,8 @@
     NSString *_messageID;
 }
 
-@property(assign,copy) NSString * attachmentName;
-@property(assign,copy) NSString * messageID;
+@property (nonatomic, copy) NSString *attachmentName;
+@property (nonatomic, copy) NSString *messageID;
 
 - (void).cxx_destruct;
 - (id)attachmentName;

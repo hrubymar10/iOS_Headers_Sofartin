@@ -7,8 +7,8 @@
     <FlickrComposeOptionViewDelegate> *_delegate;
 }
 
-@property(assign,readwrite) int audience;
-@property(assign,readwrite) <FlickrComposeOptionViewDelegate> * delegate;
+@property (nonatomic) int audience;
+@property (nonatomic) <FlickrComposeOptionViewDelegate> *delegate;
 
 + (id)titleForAudience:(int)arg1;
 

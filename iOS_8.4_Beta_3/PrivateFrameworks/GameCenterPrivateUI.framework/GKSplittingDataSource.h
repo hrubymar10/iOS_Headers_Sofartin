@@ -7,9 +7,9 @@
     GKBasicCollectionViewDataSource *_underlyingDataSource;
 }
 
-@property(assign,readonly) long long sectionCount;
-@property(assign,retain) NSMutableDictionary * sectionToSectionInfo;
-@property(assign,retain) GKBasicCollectionViewDataSource * underlyingDataSource;
+@property (nonatomic, readonly) long long sectionCount;
+@property (nonatomic, retain) NSMutableDictionary *sectionToSectionInfo;
+@property (nonatomic, retain) GKBasicCollectionViewDataSource *underlyingDataSource;
 
 - (id)_gkDescriptionWithChildren:(int)arg1;
 - (void)addSectionWithTitle:(id)arg1 sortDescriptors:(id)arg2;

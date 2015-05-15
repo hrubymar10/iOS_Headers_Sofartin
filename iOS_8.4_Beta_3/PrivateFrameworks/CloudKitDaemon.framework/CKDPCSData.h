@@ -8,10 +8,10 @@
     NSData *_pcsData;
 }
 
-@property(assign,copy) NSString * etag;
-@property(assign,readonly) <NSSecureCoding> * itemID;
-@property(assign,readwrite) struct _OpaquePCSShareProtection { }* pcs;
-@property(assign,copy) NSData * pcsData;
+@property (nonatomic, copy) NSString *etag;
+@property (nonatomic, readonly) <NSSecureCoding> *itemID;
+@property (nonatomic) struct _OpaquePCSShareProtection { }*pcs;
+@property (nonatomic, copy) NSData *pcsData;
 
 + (bool)supportsSecureCoding;
 

@@ -10,7 +10,7 @@
     MLLibrary *_library;
 }
 
-@property(assign,readonly) MLLibrary * library;
+@property (nonatomic, readonly) MLLibrary *library;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

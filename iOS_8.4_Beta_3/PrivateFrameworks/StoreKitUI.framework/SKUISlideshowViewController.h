@@ -20,14 +20,14 @@
     bool _shouldCancelDelayedOverlayVisibilityChange;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readwrite) long long currentIndex;
-@property(assign,readwrite) <SKUISlideshowViewControllerDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUISlideshowViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic) long long currentIndex;
+@property (nonatomic) <SKUISlideshowViewControllerDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUISlideshowViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_contentViewTapped:(id)arg1;

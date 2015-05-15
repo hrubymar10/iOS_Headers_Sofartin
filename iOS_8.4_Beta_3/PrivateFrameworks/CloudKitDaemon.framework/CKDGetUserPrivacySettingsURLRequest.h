@@ -6,7 +6,7 @@
     CKDPUserPrivacySettings *_userPrivacySettings;
 }
 
-@property(assign,retain) CKDPUserPrivacySettings * userPrivacySettings;
+@property (nonatomic, retain) CKDPUserPrivacySettings *userPrivacySettings;
 
 - (void).cxx_destruct;
 - (int)operationType;

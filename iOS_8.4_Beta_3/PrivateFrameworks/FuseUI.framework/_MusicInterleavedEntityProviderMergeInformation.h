@@ -9,10 +9,10 @@
     NSIndexPath *_indexPath;
 }
 
-@property(assign,copy) id entityComparisonObject;
-@property(assign,retain) <MusicEntityProviding> * entityProvider;
-@property(assign,copy) id entityUniqueIdentifier;
-@property(assign,copy) NSIndexPath * indexPath;
+@property (nonatomic, copy) id entityComparisonObject;
+@property (nonatomic, retain) <MusicEntityProviding> *entityProvider;
+@property (nonatomic, copy) id entityUniqueIdentifier;
+@property (nonatomic, copy) NSIndexPath *indexPath;
 
 - (void).cxx_destruct;
 - (long long)compare:(id)arg1;

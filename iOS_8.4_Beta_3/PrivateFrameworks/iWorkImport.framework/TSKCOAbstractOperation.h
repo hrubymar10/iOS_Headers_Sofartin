@@ -6,7 +6,7 @@
     bool mNoop;
 }
 
-@property(assign,readonly) bool isNoop;
+@property (nonatomic, readonly) bool isNoop;
 
 + (id)_classRegistry;
 + (id)newObjectForUnarchiver:(id)arg1 message:(const struct Message { int (**x1)(); }*)arg2;

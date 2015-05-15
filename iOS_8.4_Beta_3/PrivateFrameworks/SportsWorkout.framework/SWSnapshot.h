@@ -4,15 +4,15 @@
 
 @interface SWSnapshot : NSManagedObject
 
-@property(assign,retain) NSDecimalNumber * caloriesBurned;
-@property(assign,retain) NSDecimalNumber * distanceInMiles;
-@property(assign,retain) NSDecimalNumber * elapsedTimeInSeconds;
-@property(assign,retain) NSString * event;
-@property(assign,retain) SWRunWorkoutRecord * kilometerSnapshotWorkoutRecord;
-@property(assign,retain) id location;
-@property(assign,retain) SWRunWorkoutRecord * mileSnapshotWorkoutRecord;
-@property(assign,retain) NSDecimalNumber * paceInSecondsPerMile;
-@property(assign,retain) SWRunWorkoutRecord * tenSecondSnapshotWorkoutRecord;
-@property(assign,retain) SWRunWorkoutRecord * userInteractionSnapshotWorkoutRecord;
+@property (nonatomic, retain) NSDecimalNumber *caloriesBurned;
+@property (nonatomic, retain) NSDecimalNumber *distanceInMiles;
+@property (nonatomic, retain) NSDecimalNumber *elapsedTimeInSeconds;
+@property (nonatomic, retain) NSString *event;
+@property (nonatomic, retain) SWRunWorkoutRecord *kilometerSnapshotWorkoutRecord;
+@property (nonatomic, retain) id location;
+@property (nonatomic, retain) SWRunWorkoutRecord *mileSnapshotWorkoutRecord;
+@property (nonatomic, retain) NSDecimalNumber *paceInSecondsPerMile;
+@property (nonatomic, retain) SWRunWorkoutRecord *tenSecondSnapshotWorkoutRecord;
+@property (nonatomic, retain) SWRunWorkoutRecord *userInteractionSnapshotWorkoutRecord;
 
 @end

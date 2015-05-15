@@ -14,12 +14,12 @@
     id _transitionStopBlock;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isDismissal,assign,readwrite) bool dismissal;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) MusicTabBarController * tabBarController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isDismissal, nonatomic) bool dismissal;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) MusicTabBarController *tabBarController;
 
 - (void).cxx_destruct;
 - (void)animateTransition:(id)arg1;

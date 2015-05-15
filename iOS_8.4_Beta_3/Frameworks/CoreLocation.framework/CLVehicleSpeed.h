@@ -6,8 +6,8 @@
     id _internal;
 }
 
-@property(assign,readonly) double speed;
-@property(assign,readonly) NSDate * timestamp;
+@property (nonatomic, readonly) double speed;
+@property (nonatomic, readonly) NSDate *timestamp;
 
 + (bool)supportsSecureCoding;
 

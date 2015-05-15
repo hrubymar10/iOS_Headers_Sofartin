@@ -7,18 +7,18 @@
     long long _AVPreviewState;
 }
 
-@property(assign,readwrite) long long AVCaptureState;
-@property(assign,readwrite) long long AVPreviewState;
-@property(assign,readonly) bool isCaptureActive;
-@property(assign,readonly) bool isCaptureActiveOrPreparing;
-@property(assign,readonly) bool isCaptureActiveOrPreparingOrResumable;
-@property(assign,readonly) bool isCaptureInactive;
-@property(assign,readonly) bool isCapturePaused;
-@property(assign,readonly) bool isCapturePreparing;
-@property(assign,readonly) bool isPreviewActive;
-@property(assign,readonly) bool isPreviewActiveOrPreparing;
-@property(assign,readonly) bool isPreviewInactive;
-@property(assign,readonly) bool isPreviewPreparing;
+@property (nonatomic) long long AVCaptureState;
+@property (nonatomic) long long AVPreviewState;
+@property (nonatomic, readonly) bool isCaptureActive;
+@property (nonatomic, readonly) bool isCaptureActiveOrPreparing;
+@property (nonatomic, readonly) bool isCaptureActiveOrPreparingOrResumable;
+@property (nonatomic, readonly) bool isCaptureInactive;
+@property (nonatomic, readonly) bool isCapturePaused;
+@property (nonatomic, readonly) bool isCapturePreparing;
+@property (nonatomic, readonly) bool isPreviewActive;
+@property (nonatomic, readonly) bool isPreviewActiveOrPreparing;
+@property (nonatomic, readonly) bool isPreviewInactive;
+@property (nonatomic, readonly) bool isPreviewPreparing;
 
 + (id)inactiveState;
 + (bool)supportsSecureCoding;

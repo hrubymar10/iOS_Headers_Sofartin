@@ -7,8 +7,8 @@
     VKPMatchingTree *_subTree;
 }
 
-@property(assign,readwrite) unsigned long long attributeValue;
-@property(assign,retain) VKPMatchingTree * subTree;
+@property (nonatomic) unsigned long long attributeValue;
+@property (nonatomic, retain) VKPMatchingTree *subTree;
 
 - (unsigned long long)attributeValue;
 - (void)copyTo:(id)arg1;

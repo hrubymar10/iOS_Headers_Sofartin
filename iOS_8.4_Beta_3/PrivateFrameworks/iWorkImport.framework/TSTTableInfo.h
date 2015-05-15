@@ -2,7 +2,7 @@
    Image: /System/Library/PrivateFrameworks/iWorkImport.framework/iWorkImport
  */
 
-@interface TSTTableInfo : TSDDrawableInfo <TSCECalculationEngineRegistration, TSCEFormulaOwning, TSCEReferenceResolving, TSCETableModeling, TSCETableModeling, TSDContainerInfo, TSDMixing, TSKModel, TSKSearchable, TSSPresetSource, TSSStyleClient, TSWPStorageParent> {
+@interface TSTTableInfo : TSDDrawableInfo <TSCECalculationEngineRegistration, TSCEFormulaOwning, TSCEReferenceResolving, TSCETableModeling, TSDContainerInfo, TSDMixing, TSKModel, TSKSearchable, TSSPresetSource, TSSStyleClient, TSWPStorageParent> {
     bool mHasReference;
     bool mIsFormulaEditing;
     TSTMasterLayout *mMasterLayout;
@@ -10,32 +10,32 @@
     TSTTableModel *mTableModel;
 }
 
-@property(getter=isAnchoredToText,assign,readonly) bool anchoredToText;
-@property(getter=isAttachedToBodyText,assign,readonly) bool attachedToBodyText;
-@property(assign,readwrite) long long contentWritingDirection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(getter=isFloatingAboveText,assign,readonly) bool floatingAboveText;
-@property(assign,copy) TSDInfoGeometry * geometry;
-@property(assign,readwrite) bool hasReference;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInlineWithText,assign,readonly) bool inlineWithText;
-@property(assign,readonly) TSTMasterLayout * masterLayout;
-@property(assign,readwrite) bool matchesObjectPlaceholderGeometry;
-@property(assign,readwrite) TSPObject<TSDOwningAttachment> * owningAttachment;
-@property(assign,readonly) TSPObject<TSDOwningAttachment> * owningAttachmentNoRecurse;
-@property(assign,readwrite) NSObject<TSDContainerInfo> * parentInfo;
-@property(assign,readonly) TSTTablePartitioner * partitioner;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) TSTTableModel * tableModel;
+@property (getter=isAnchoredToText, nonatomic, readonly) bool anchoredToText;
+@property (getter=isAttachedToBodyText, nonatomic, readonly) bool attachedToBodyText;
+@property (nonatomic) long long contentWritingDirection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (getter=isFloatingAboveText, nonatomic, readonly) bool floatingAboveText;
+@property (nonatomic, copy) TSDInfoGeometry *geometry;
+@property (nonatomic) bool hasReference;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (getter=isInlineWithText, nonatomic, readonly) bool inlineWithText;
+@property (nonatomic, readonly) TSTMasterLayout *masterLayout;
+@property (nonatomic) bool matchesObjectPlaceholderGeometry;
+@property (nonatomic) TSPObject<TSDOwningAttachment> *owningAttachment;
+@property (nonatomic, readonly) TSPObject<TSDOwningAttachment> *owningAttachmentNoRecurse;
+@property (nonatomic) NSObject<TSDContainerInfo> *parentInfo;
+@property (nonatomic, readonly) TSTTablePartitioner *partitioner;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) TSTTableModel *tableModel;
 
 + (void)bootstrapPresetsOfKind:(id)arg1 inTheme:(id)arg2 alternate:(int)arg3;
 + (void)bootstrapPresetsOfKind:(id)arg1 inTheme:(id)arg2 alternate:(int)arg3 reservedCount:(unsigned long long)arg4;

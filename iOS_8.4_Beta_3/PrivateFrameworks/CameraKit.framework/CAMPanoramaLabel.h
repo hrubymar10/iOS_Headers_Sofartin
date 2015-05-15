@@ -9,7 +9,7 @@
     NSString *_text;
 }
 
-@property(assign,copy) NSString * text;
+@property (nonatomic, copy) NSString *text;
 
 - (void).cxx_destruct;
 - (void)_updateLegibilityView;

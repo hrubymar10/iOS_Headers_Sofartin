@@ -9,8 +9,8 @@
     NSDate *lastModified;
 }
 
-@property(assign,retain) NSArray * cities;
-@property(assign,retain) NSDate * lastModified;
+@property (nonatomic, readonly, retain) NSArray *cities;
+@property (nonatomic, retain) NSDate *lastModified;
 
 + (id)sharedManager;
 

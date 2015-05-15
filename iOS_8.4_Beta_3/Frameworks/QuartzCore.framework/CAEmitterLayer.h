@@ -4,28 +4,28 @@
 
 @interface CAEmitterLayer : CALayer
 
-@property(assign,readwrite) float birthRate;
-@property(assign,readwrite) double cullMaxZ;
-@property(assign,readwrite) double cullMinZ;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cullRect;
-@property(assign,copy) NSArray * emitterBehaviors;
-@property(assign,copy) NSArray * emitterCells;
-@property(assign,readwrite) double emitterDepth;
-@property(assign,readwrite) float emitterDuration;
-@property(assign,copy) NSString * emitterMode;
-@property(assign,readwrite) struct CGPath { }* emitterPath;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } emitterPosition;
-@property(assign,copy) NSString * emitterShape;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } emitterSize;
-@property(assign,readwrite) double emitterZPosition;
-@property(assign,readwrite) float lifetime;
-@property(assign,readwrite) bool preservesDepth;
-@property(assign,copy) NSString * renderMode;
-@property(assign,readwrite) float scale;
-@property(assign,readwrite) unsigned int seed;
-@property(assign,readwrite) float spin;
-@property(assign,readwrite) float spinBias;
-@property(assign,readwrite) float velocity;
+@property float birthRate;
+@property double cullMaxZ;
+@property double cullMinZ;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cullRect;
+@property (copy) NSArray *emitterBehaviors;
+@property (copy) NSArray *emitterCells;
+@property double emitterDepth;
+@property float emitterDuration;
+@property (copy) NSString *emitterMode;
+@property struct CGPath { }*emitterPath;
+@property struct CGPoint { double x1; double x2; } emitterPosition;
+@property (copy) NSString *emitterShape;
+@property struct CGSize { double x1; double x2; } emitterSize;
+@property double emitterZPosition;
+@property float lifetime;
+@property bool preservesDepth;
+@property (copy) NSString *renderMode;
+@property float scale;
+@property unsigned int seed;
+@property float spin;
+@property float spinBias;
+@property float velocity;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (bool)_hasRenderLayerSubclass;

@@ -11,10 +11,10 @@
     int _trackID;
 }
 
-@property(assign,copy) id completionBlock;
-@property(assign,readonly) AVAssetWriterInputPassDescription * descriptionForNextPass;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) bool succeeded;
+@property (nonatomic, copy) id completionBlock;
+@property (nonatomic, readonly) AVAssetWriterInputPassDescription *descriptionForNextPass;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) bool succeeded;
 
 - (void)_markOperationAsCompletedWithSuccess:(bool)arg1 error:(id)arg2;
 - (void)_notifyWhetherMorePassesAreNeeded:(bool)arg1 timeRanges:(id)arg2 forTrackWithID:(int)arg3;

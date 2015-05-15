@@ -7,8 +7,8 @@
     NSLock *_nsLock;
 }
 
-@property(assign,retain) EAGLContext * glContext;
-@property(assign,retain) NSLock * nsLock;
+@property (retain) EAGLContext *glContext;
+@property (retain) NSLock *nsLock;
 
 + (id)_textureWithTexture:(id)arg1 error:(id*)arg2;
 + (id)commonCubeMapWithContentsOfFiles:(id)arg1 options:(id)arg2 error:(id*)arg3 lock:(id)arg4 glContext:(id)arg5;

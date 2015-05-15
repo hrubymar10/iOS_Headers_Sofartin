@@ -9,10 +9,10 @@
     NSNumber *inputShadowAmount;
 }
 
-@property(assign,retain) NSNumber * inputHighlightAmount;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputRadius;
-@property(assign,retain) NSNumber * inputShadowAmount;
+@property (nonatomic, retain) NSNumber *inputHighlightAmount;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputRadius;
+@property (nonatomic, retain) NSNumber *inputShadowAmount;
 
 + (id)customAttributes;
 

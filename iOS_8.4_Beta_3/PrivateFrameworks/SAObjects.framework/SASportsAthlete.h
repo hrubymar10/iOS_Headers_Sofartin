@@ -4,23 +4,23 @@
 
 @interface SASportsAthlete : SASportsEntity
 
-@property(assign,retain) SASportsTeam * activeTeam;
-@property(assign,copy) NSArray * athleteMetadata;
-@property(assign,copy) NSArray * careerStatistics;
-@property(assign,copy) NSString * firstName;
-@property(assign,copy) NSArray * formattedMetadata;
-@property(assign,copy) NSArray * formattedMetadataTypes;
-@property(assign,copy) NSString * gender;
-@property(assign,copy) NSString * height;
-@property(assign,copy) NSNumber * injured;
-@property(assign,copy) NSString * jerseyNumber;
-@property(assign,copy) NSArray * lastGameStatistics;
-@property(assign,copy) NSString * lastName;
-@property(assign,copy) NSString * nickname;
-@property(assign,copy) NSString * position;
-@property(assign,copy) NSArray * previousTeams;
-@property(assign,copy) NSArray * statistics;
-@property(assign,copy) NSString * weight;
+@property (nonatomic, retain) SASportsTeam *activeTeam;
+@property (nonatomic, copy) NSArray *athleteMetadata;
+@property (nonatomic, copy) NSArray *careerStatistics;
+@property (nonatomic, copy) NSString *firstName;
+@property (nonatomic, copy) NSArray *formattedMetadata;
+@property (nonatomic, copy) NSArray *formattedMetadataTypes;
+@property (nonatomic, copy) NSString *gender;
+@property (nonatomic, copy) NSString *height;
+@property (nonatomic, copy) NSNumber *injured;
+@property (nonatomic, copy) NSString *jerseyNumber;
+@property (nonatomic, copy) NSArray *lastGameStatistics;
+@property (nonatomic, copy) NSString *lastName;
+@property (nonatomic, copy) NSString *nickname;
+@property (nonatomic, copy) NSString *position;
+@property (nonatomic, copy) NSArray *previousTeams;
+@property (nonatomic, copy) NSArray *statistics;
+@property (nonatomic, copy) NSString *weight;
 
 + (id)athlete;
 + (id)athleteWithDictionary:(id)arg1 context:(id)arg2;

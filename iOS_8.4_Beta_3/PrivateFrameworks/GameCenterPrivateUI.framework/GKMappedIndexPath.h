@@ -7,8 +7,8 @@
     id _tag;
 }
 
-@property(assign,copy) NSIndexPath * sourceIndexPath;
-@property(assign,retain) id tag;
+@property (nonatomic, copy) NSIndexPath *sourceIndexPath;
+@property (nonatomic, retain) id tag;
 
 + (id)indexPathForItem:(long long)arg1 inSection:(long long)arg2 fromSourceIndexPath:(id)arg3 withTag:(id)arg4;
 

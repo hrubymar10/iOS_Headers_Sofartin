@@ -15,12 +15,12 @@
     UIView *_topHairlineView;
 }
 
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,readonly) MusicTableView * parentTableView;
-@property(getter=isSelected,assign,readwrite) bool selected;
-@property(assign,retain) UIColor * separatorColor;
-@property(assign,readwrite) bool showsBottomSeparator;
-@property(assign,readwrite) bool showsTopSeparator;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic, readonly) MusicTableView *parentTableView;
+@property (getter=isSelected, nonatomic) bool selected;
+@property (nonatomic, retain) UIColor *separatorColor;
+@property (nonatomic) bool showsBottomSeparator;
+@property (nonatomic) bool showsTopSeparator;
 
 - (void).cxx_destruct;
 - (void)_updateBackgroundColorAnimated:(bool)arg1;

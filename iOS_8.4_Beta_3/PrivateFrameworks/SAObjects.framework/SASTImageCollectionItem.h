@@ -4,11 +4,11 @@
 
 @interface SASTImageCollectionItem : AceObject <SASTTemplateItem>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * images;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *images;
+@property (readonly) Class superclass;
 
 + (id)imageCollectionItem;
 + (id)imageCollectionItemWithDictionary:(id)arg1 context:(id)arg2;

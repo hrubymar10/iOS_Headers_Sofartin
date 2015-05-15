@@ -12,13 +12,13 @@
     NSString *_storeName;
 }
 
-@property(assign,readonly) NSString * entityName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSManagedObjectID * managedObjectID;
-@property(assign,readonly) NSString * owningPeerID;
-@property(assign,readonly) NSString * primaryKey;
-@property(assign,readonly) unsigned long long primaryKeyInteger;
-@property(assign,readonly) NSString * storeName;
+@property (nonatomic, readonly) NSString *entityName;
+@property (nonatomic, readonly) unsigned long long hash;
+@property (nonatomic, retain) NSManagedObjectID *managedObjectID;
+@property (nonatomic, readonly) NSString *owningPeerID;
+@property (nonatomic, readonly) NSString *primaryKey;
+@property (nonatomic, readonly) unsigned long long primaryKeyInteger;
+@property (nonatomic, readonly) NSString *storeName;
 
 - (long long)compare:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

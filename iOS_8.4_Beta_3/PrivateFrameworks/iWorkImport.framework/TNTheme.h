@@ -6,7 +6,7 @@
     NSArray *mTablePrototypes;
 }
 
-@property(assign,retain) NSArray * tablePrototypes;
+@property (nonatomic, retain) NSArray *tablePrototypes;
 
 + (void)initialize;
 

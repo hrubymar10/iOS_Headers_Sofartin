@@ -42,9 +42,9 @@
     TSPLazyReferenceArray *_objects;
 }
 
-@property(assign,retain) NSArray * datas;
-@property(assign,readonly) NSObject<OS_dispatch_data> * messageData;
-@property(assign,retain) TSPLazyReferenceArray * objects;
+@property (nonatomic, retain) NSArray *datas;
+@property (nonatomic, readonly) NSObject<OS_dispatch_data> *messageData;
+@property (nonatomic, retain) TSPLazyReferenceArray *objects;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -6,7 +6,7 @@
     NSMutableArray *_initialAccounts;
 }
 
-@property(assign,retain) NSMutableArray * initialAccounts;
+@property (nonatomic, retain) NSMutableArray *initialAccounts;
 
 - (void).cxx_destruct;
 - (void)addInitialAccount:(id)arg1;

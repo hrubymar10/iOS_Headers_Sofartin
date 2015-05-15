@@ -25,10 +25,10 @@
     long long _spineLocation;
 }
 
-@property(getter=_isManualPageCurlInProgressAndUncommitted,assign,readonly) bool _manualPageCurlInProgressAndUncommitted;
-@property(setter=_setManualPageCurlMaxDAngle:,assign,readwrite) double _manualPageCurlMaxDAngle;
-@property(assign,readonly) long long _spineLocation;
-@property(assign,readonly) NSNumber * _wrappedManualPageCurlDirection;
+@property (getter=_isManualPageCurlInProgressAndUncommitted, nonatomic, readonly) bool _manualPageCurlInProgressAndUncommitted;
+@property (setter=_setManualPageCurlMaxDAngle:, nonatomic) double _manualPageCurlMaxDAngle;
+@property (nonatomic, readonly) long long _spineLocation;
+@property (nonatomic, readonly) NSNumber *_wrappedManualPageCurlDirection;
 
 - (void)_abortManualCurlAtLocation:(struct CGPoint { double x1; double x2; })arg1 withSuggestedVelocity:(double)arg2;
 - (id)_animationKeyPaths;

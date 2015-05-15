@@ -8,9 +8,9 @@
     UIView *_placeholderView;
 }
 
-@property(assign,readwrite) bool isPad;
-@property(assign,readwrite) double offset;
-@property(assign,retain) UIView * placeholderView;
+@property (nonatomic) bool isPad;
+@property (nonatomic) double offset;
+@property (nonatomic, retain) UIView *placeholderView;
 
 - (void).cxx_destruct;
 - (bool)isPad;

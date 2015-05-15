@@ -18,15 +18,15 @@
     } _size;
 }
 
-@property(assign,retain) NSString * cacheKey;
-@property(assign,readonly) bool containsRGBContent;
-@property(assign,readonly) struct CGContext { }* context;
-@property(assign,readonly) NSData * contextData;
-@property(assign,readonly) bool opaque;
-@property(assign,readonly) long long renderFlags;
-@property(assign,readonly) UIImage * renderedImage;
-@property(assign,readonly) double scale;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, retain) NSString *cacheKey;
+@property (nonatomic, readonly) bool containsRGBContent;
+@property (nonatomic, readonly) struct CGContext { }*context;
+@property (nonatomic, readonly) NSData *contextData;
+@property (nonatomic, readonly) bool opaque;
+@property (nonatomic, readonly) long long renderFlags;
+@property (nonatomic, readonly) UIImage *renderedImage;
+@property (nonatomic, readonly) double scale;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
 
 + (void)clearInternalCaches;
 + (struct CGContext { }*)imageContextWithSize:(struct CGSize { double x1; double x2; })arg1 scale:(double)arg2 opaque:(bool)arg3 invert:(bool)arg4;

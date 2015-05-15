@@ -6,7 +6,7 @@
     unsigned long long _count;
 }
 
-@property(assign,readonly) unsigned long long count;
+@property (nonatomic, readonly) unsigned long long count;
 
 - (long long)appendData:(id)arg1;
 - (unsigned long long)count;

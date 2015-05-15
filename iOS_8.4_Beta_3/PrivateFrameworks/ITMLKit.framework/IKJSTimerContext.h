@@ -10,11 +10,11 @@
     NSTimer *_timer;
 }
 
-@property(assign,readonly) bool isRepeating;
-@property(assign,retain) IKJSManagedArray * managedArgs;
-@property(assign,retain) JSManagedValue * managedCallback;
-@property(assign,retain) id ownerObject;
-@property(assign,retain) NSTimer * timer;
+@property (nonatomic, readonly) bool isRepeating;
+@property (nonatomic, readonly, retain) IKJSManagedArray *managedArgs;
+@property (nonatomic, readonly, retain) JSManagedValue *managedCallback;
+@property (nonatomic, readonly, retain) id ownerObject;
+@property (nonatomic, retain) NSTimer *timer;
 
 - (void).cxx_destruct;
 - (void)dealloc;

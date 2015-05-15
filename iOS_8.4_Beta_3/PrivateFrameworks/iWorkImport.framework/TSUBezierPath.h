@@ -37,12 +37,12 @@
     double sfr_totalLength;
 }
 
-@property(assign,readonly) bool containsClosePathElement;
-@property(assign,readonly) bool isCompound;
-@property(assign,readonly) bool isEffectivelyClosed;
-@property(assign,readonly) bool isLineSegment;
-@property(assign,readonly) bool isOpen;
-@property(assign,readonly) bool isSelfIntersecting;
+@property (nonatomic, readonly) bool containsClosePathElement;
+@property (nonatomic, readonly) bool isCompound;
+@property (nonatomic, readonly) bool isEffectivelyClosed;
+@property (nonatomic, readonly) bool isLineSegment;
+@property (nonatomic, readonly) bool isOpen;
+@property (nonatomic, readonly) bool isSelfIntersecting;
 
 + (id)appendBezierPaths:(id)arg1;
 + (id)bezierPath;

@@ -8,9 +8,9 @@
     NSArray *_possibleValues;
 }
 
-@property(assign,copy) NSArray * possibleShortTitles;
-@property(assign,copy) NSArray * possibleTitles;
-@property(assign,copy) NSArray * possibleValues;
+@property (nonatomic, copy) NSArray *possibleShortTitles;
+@property (nonatomic, copy) NSArray *possibleTitles;
+@property (nonatomic, copy) NSArray *possibleValues;
 
 - (void).cxx_destruct;
 - (id)init;

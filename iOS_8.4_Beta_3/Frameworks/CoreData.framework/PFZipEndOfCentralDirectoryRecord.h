@@ -13,14 +13,14 @@
     unsigned short _totalNumberOfCentralDirectoryRecords;
 }
 
-@property(assign,readwrite) unsigned int byteSizeOfCentralDirectory;
-@property(assign,readwrite) unsigned int centralDirectoryOffset;
-@property(assign,retain) NSString * comment;
-@property(assign,readonly) unsigned short commentLength;
-@property(assign,readwrite) unsigned short diskWhereCentralDirectoryStarts;
-@property(assign,readwrite) unsigned short numberOfCentralDirectoryRecordsOnThisDisk;
-@property(assign,readwrite) unsigned short numberOfDisk;
-@property(assign,readwrite) unsigned short totalNumberOfCentralDirectoryRecords;
+@property (nonatomic) unsigned int byteSizeOfCentralDirectory;
+@property (nonatomic) unsigned int centralDirectoryOffset;
+@property (nonatomic, retain) NSString *comment;
+@property (nonatomic, readonly) unsigned short commentLength;
+@property (nonatomic) unsigned short diskWhereCentralDirectoryStarts;
+@property (nonatomic) unsigned short numberOfCentralDirectoryRecordsOnThisDisk;
+@property (nonatomic) unsigned short numberOfDisk;
+@property (nonatomic) unsigned short totalNumberOfCentralDirectoryRecords;
 
 - (void)appendToData:(id)arg1;
 - (unsigned int)byteSizeOfCentralDirectory;

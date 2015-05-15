@@ -15,14 +15,14 @@
     NSObject<OS_dispatch_source> *_source;
 }
 
-@property(assign,readwrite) long long coalescingLeeway;
-@property(assign,copy) id computeNextAdmissibleDateForScheduling;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long coalescingLeeway;
+@property (nonatomic, copy) id computeNextAdmissibleDateForScheduling;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCancelled;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_addToken:(id)arg1 deadline:(long long)arg2;

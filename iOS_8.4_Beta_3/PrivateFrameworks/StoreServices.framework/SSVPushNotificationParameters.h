@@ -9,16 +9,16 @@
     long long _requestType;
 }
 
-@property(assign,copy) NSNumber * accountIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * environmentName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * mediaKinds;
-@property(assign,copy) NSString * notificationType;
-@property(assign,copy) NSDictionary * putParameters;
-@property(assign,readwrite) long long requestType;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSNumber *accountIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *environmentName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *mediaKinds;
+@property (nonatomic, copy) NSString *notificationType;
+@property (nonatomic, copy) NSDictionary *putParameters;
+@property (nonatomic) long long requestType;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_copyParametersDictionary;

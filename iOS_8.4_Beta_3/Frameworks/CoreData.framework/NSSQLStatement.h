@@ -12,7 +12,7 @@
     NSString *_sqlString;
 }
 
-@property(assign,retain) NSCachedFetchRequestInfo * cachedStatementInfo;
+@property (nonatomic, retain) NSCachedFetchRequestInfo *cachedStatementInfo;
 
 - (unsigned int)addBindIntarray:(id)arg1;
 - (unsigned int)addBindVariable:(id)arg1;

@@ -8,9 +8,9 @@
     NSArray *_limitedPersistentIDs;
 }
 
-@property(assign,readonly) ML3Container * container;
-@property(assign,readonly) NSArray * limitedPersistentIDs;
-@property(assign,readonly) bool requiresSmartLimiting;
+@property (nonatomic, readonly) ML3Container *container;
+@property (nonatomic, readonly) NSArray *limitedPersistentIDs;
+@property (nonatomic, readonly) bool requiresSmartLimiting;
 
 - (void).cxx_destruct;
 - (id)container;

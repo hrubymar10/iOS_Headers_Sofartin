@@ -7,8 +7,8 @@
     NSMapTable *_recordIDsByRequestIDs;
 }
 
-@property(assign,readonly) NSMapTable * MMCSItemsByRecordIDs;
-@property(assign,retain) NSMapTable * recordIDsByRequestIDs;
+@property (nonatomic, readonly) NSMapTable *MMCSItemsByRecordIDs;
+@property (nonatomic, retain) NSMapTable *recordIDsByRequestIDs;
 
 - (void).cxx_destruct;
 - (id)MMCSItemsByRecordIDs;

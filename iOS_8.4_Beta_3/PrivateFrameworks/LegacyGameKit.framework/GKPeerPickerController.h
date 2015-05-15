@@ -6,10 +6,10 @@
     id _picker;
 }
 
-@property(assign,readwrite) unsigned long long connectionTypesMask;
-@property(assign,readwrite) <GKPeerPickerControllerDelegate> * delegate;
-@property(assign,readonly) GKPeerPickerViewController * pickerViewController;
-@property(getter=isVisible,assign,readonly) bool visible;
+@property (nonatomic) unsigned long long connectionTypesMask;
+@property (nonatomic) <GKPeerPickerControllerDelegate> *delegate;
+@property (nonatomic, readonly) GKPeerPickerViewController *pickerViewController;
+@property (getter=isVisible, nonatomic, readonly) bool visible;
 
 + (void)initialize;
 

@@ -4,11 +4,11 @@
 
 @interface SAClockSearch : SADomainCommand
 
-@property(assign,copy) NSNumber * alCityId;
-@property(assign,copy) NSString * countryCode;
-@property(assign,copy) NSURL * identifier;
-@property(assign,copy) NSString * unlocalizedCityName;
-@property(assign,copy) NSString * unlocalizedCountryName;
+@property (nonatomic, copy) NSNumber *alCityId;
+@property (nonatomic, copy) NSString *countryCode;
+@property (nonatomic, copy) NSURL *identifier;
+@property (nonatomic, copy) NSString *unlocalizedCityName;
+@property (nonatomic, copy) NSString *unlocalizedCountryName;
 
 + (id)search;
 + (id)searchWithDictionary:(id)arg1 context:(id)arg2;

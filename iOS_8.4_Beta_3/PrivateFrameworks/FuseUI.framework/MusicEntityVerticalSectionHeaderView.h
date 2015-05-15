@@ -11,15 +11,15 @@
     double _topContentInset;
 }
 
-@property(assign,readonly) MusicActionableHeaderView * actionableHeaderView;
-@property(assign,readwrite) bool alignsHairlineWithTitle;
-@property(assign,readwrite) double bottomContentInset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicEntityVerticalSectionHeaderViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double topContentInset;
+@property (nonatomic, readonly) MusicActionableHeaderView *actionableHeaderView;
+@property (nonatomic) bool alignsHairlineWithTitle;
+@property (nonatomic) double bottomContentInset;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicEntityVerticalSectionHeaderViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) double topContentInset;
 
 + (struct { long long x1; double x2; double x3; })_actionableHeaderMetrics;
 + (Class)actionableHeaderViewClass;

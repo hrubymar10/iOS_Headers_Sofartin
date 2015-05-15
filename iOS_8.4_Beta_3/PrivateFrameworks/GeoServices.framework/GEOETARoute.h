@@ -34,27 +34,27 @@
     NSData *_zilchPoints;
 }
 
-@property(assign,readonly) double expectedTime;
-@property(assign,readwrite) bool hasHistoricTravelTime;
-@property(assign,readonly) bool hasRouteID;
-@property(assign,readwrite) bool hasRouteNoLongerValid;
-@property(assign,readonly) bool hasZilchPoints;
-@property(assign,readwrite) unsigned int historicTravelTime;
-@property(assign,readonly) unsigned int* incidentEndOffsetsInETARoutes;
-@property(assign,readonly) unsigned long long incidentEndOffsetsInETARoutesCount;
-@property(assign,retain) NSMutableArray * incidentsOffReRoutes;
-@property(assign,retain) NSMutableArray * incidentsOnETARoutes;
-@property(assign,retain) NSMutableArray * incidentsOnReRoutes;
-@property(assign,retain) NSMutableArray * invalidSectionZilchPoints;
-@property(assign,retain) NSMutableArray * reroutedRoutes;
-@property(assign,retain) NSData * routeID;
-@property(assign,readwrite) bool routeNoLongerValid;
-@property(assign,retain) NSMutableArray * steps;
-@property(assign,readonly) unsigned int* trafficColorOffsets;
-@property(assign,readonly) unsigned long long trafficColorOffsetsCount;
-@property(assign,readonly) unsigned int* trafficColors;
-@property(assign,readonly) unsigned long long trafficColorsCount;
-@property(assign,retain) NSData * zilchPoints;
+@property (nonatomic, readonly) double expectedTime;
+@property (nonatomic) bool hasHistoricTravelTime;
+@property (nonatomic, readonly) bool hasRouteID;
+@property (nonatomic) bool hasRouteNoLongerValid;
+@property (nonatomic, readonly) bool hasZilchPoints;
+@property (nonatomic) unsigned int historicTravelTime;
+@property (nonatomic, readonly) unsigned int*incidentEndOffsetsInETARoutes;
+@property (nonatomic, readonly) unsigned long long incidentEndOffsetsInETARoutesCount;
+@property (nonatomic, retain) NSMutableArray *incidentsOffReRoutes;
+@property (nonatomic, retain) NSMutableArray *incidentsOnETARoutes;
+@property (nonatomic, retain) NSMutableArray *incidentsOnReRoutes;
+@property (nonatomic, retain) NSMutableArray *invalidSectionZilchPoints;
+@property (nonatomic, retain) NSMutableArray *reroutedRoutes;
+@property (nonatomic, retain) NSData *routeID;
+@property (nonatomic) bool routeNoLongerValid;
+@property (nonatomic, retain) NSMutableArray *steps;
+@property (nonatomic, readonly) unsigned int*trafficColorOffsets;
+@property (nonatomic, readonly) unsigned long long trafficColorOffsetsCount;
+@property (nonatomic, readonly) unsigned int*trafficColors;
+@property (nonatomic, readonly) unsigned long long trafficColorsCount;
+@property (nonatomic, retain) NSData *zilchPoints;
 
 - (void)addIncidentEndOffsetsInETARoute:(unsigned int)arg1;
 - (void)addIncidentsOffReRoutes:(id)arg1;

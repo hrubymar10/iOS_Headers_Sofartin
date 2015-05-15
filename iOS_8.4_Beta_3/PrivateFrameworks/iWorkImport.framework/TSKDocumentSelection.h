@@ -6,7 +6,7 @@
     TSKDocumentRoot *mDocumentRoot;
 }
 
-@property(assign,readonly) TSKDocumentRoot * documentRoot;
+@property (nonatomic, readonly) TSKDocumentRoot *documentRoot;
 
 + (Class)archivedSelectionClass;
 

@@ -6,12 +6,12 @@
     NSDictionary *_dictionary;
 }
 
-@property(assign,readonly) NSArray * actions;
-@property(assign,readonly) NSNumber * failureType;
-@property(assign,readonly) NSArray * pingURLs;
-@property(assign,readonly) NSDictionary * responseDictionary;
-@property(getter=isSupportedProtocolVersion,assign,readonly) bool supportedProtocolVersion;
-@property(assign,readonly) NSURL * versionMismatchURL;
+@property (nonatomic, readonly) NSArray *actions;
+@property (nonatomic, readonly) NSNumber *failureType;
+@property (nonatomic, readonly) NSArray *pingURLs;
+@property (nonatomic, readonly) NSDictionary *responseDictionary;
+@property (getter=isSupportedProtocolVersion, nonatomic, readonly) bool supportedProtocolVersion;
+@property (nonatomic, readonly) NSURL *versionMismatchURL;
 
 - (id)_copyAccount;
 - (id)_valueForProtocolKey:(id)arg1;

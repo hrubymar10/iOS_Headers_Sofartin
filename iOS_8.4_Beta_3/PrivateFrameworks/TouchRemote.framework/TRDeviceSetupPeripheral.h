@@ -16,7 +16,7 @@
     NSString *_userAgent;
 }
 
-@property(assign,readwrite) <TRDeviceSetupPeripheralDelegate> * delegate;
+@property (nonatomic) <TRDeviceSetupPeripheralDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_authenticateWithParameters:(id)arg1;

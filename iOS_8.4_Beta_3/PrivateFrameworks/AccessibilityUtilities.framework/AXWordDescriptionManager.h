@@ -9,10 +9,10 @@
     NSString *languageDialectCode;
 }
 
-@property(assign,retain) NSString * languageDialectCode;
-@property(assign,readonly) NSManagedObjectContext * managedObjectContext;
-@property(assign,readonly) NSManagedObjectModel * managedObjectModel;
-@property(assign,readonly) NSPersistentStoreCoordinator * persistentStoreCoordinator;
+@property (nonatomic, retain) NSString *languageDialectCode;
+@property (nonatomic, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 + (id)sharedInstance;
 

@@ -8,11 +8,11 @@
     UIWebView *_webView;
 }
 
-@property(assign,readonly) DOMElement * element;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
-@property(assign,readonly) UIImage * imageRepresentation;
-@property(assign,readonly) NSString * innerText;
-@property(assign,retain) UIWebView * webView;
+@property (nonatomic, readonly) DOMElement *element;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
+@property (nonatomic, readonly) UIImage *imageRepresentation;
+@property (nonatomic, readonly) NSString *innerText;
+@property (nonatomic, retain) UIWebView *webView;
 
 + (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })frameForDOMElement:(id)arg1;
 

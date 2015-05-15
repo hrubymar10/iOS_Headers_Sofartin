@@ -9,7 +9,7 @@
     NSString *_path;
 }
 
-@property(assign,copy) NSString * path;
+@property (readonly, copy) NSString *path;
 
 - (void)addPath:(id)arg1;
 - (void)addPathComponents:(id)arg1;

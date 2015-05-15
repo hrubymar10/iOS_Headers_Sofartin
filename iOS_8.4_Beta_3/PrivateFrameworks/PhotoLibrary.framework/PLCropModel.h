@@ -25,10 +25,10 @@
     } _photoSize;
 }
 
-@property(assign,readwrite) float angle;
-@property(assign,readwrite) float cropConstrain;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cropRect;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property float angle;
+@property float cropConstrain;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cropRect;
+@property (readonly) struct CGSize { double x1; double x2; } size;
 
 - (void)adjustEdgeForDragAction:(int)arg1 withAmount:(struct CGPoint { double x1; double x2; })arg2;
 - (float)angle;

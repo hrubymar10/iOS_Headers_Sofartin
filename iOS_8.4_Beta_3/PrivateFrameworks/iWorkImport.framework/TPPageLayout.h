@@ -16,24 +16,24 @@
     unsigned long long _pageNumber;
 }
 
-@property(assign,readonly) bool allowsBody;
-@property(assign,readonly) bool allowsFootnotes;
-@property(assign,readonly) bool alwaysStartsNewTarget;
-@property(assign,readonly) NSArray * anchoredDrawableLayouts;
-@property(assign,readonly) TPBodyLayout * bodyLayout;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bodyRect;
-@property(assign,readonly) <NSFastEnumeration> * childTextLayoutsForExteriorWrap;
-@property(assign,readonly) unsigned long long columnCount;
-@property(assign,readonly) bool columnsAreLeftToRight;
-@property(assign,readonly) NSArray * floatingDrawableLayouts;
-@property(assign,readonly) TPFootnoteContainerLayout * footnoteContainerLayout;
-@property(assign,readonly) TSWPPadding * layoutMargins;
-@property(assign,readonly) <TPMasterDrawableProvider> * masterDrawableProvider;
-@property(assign,readonly) unsigned long long pageCount;
-@property(assign,readonly) unsigned long long pageIndex;
-@property(assign,readonly) unsigned long long pageNumber;
-@property(assign,readonly) bool shrinkTextToFit;
-@property(assign,readonly) double textScaleFactor;
+@property (nonatomic, readonly) bool allowsBody;
+@property (nonatomic, readonly) bool allowsFootnotes;
+@property (nonatomic, readonly) bool alwaysStartsNewTarget;
+@property (nonatomic, readonly) NSArray *anchoredDrawableLayouts;
+@property (nonatomic, readonly) TPBodyLayout *bodyLayout;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bodyRect;
+@property (nonatomic, readonly) <NSFastEnumeration> *childTextLayoutsForExteriorWrap;
+@property (nonatomic, readonly) unsigned long long columnCount;
+@property (nonatomic, readonly) bool columnsAreLeftToRight;
+@property (nonatomic, readonly) NSArray *floatingDrawableLayouts;
+@property (nonatomic, readonly) TPFootnoteContainerLayout *footnoteContainerLayout;
+@property (nonatomic, readonly) TSWPPadding *layoutMargins;
+@property (nonatomic, readonly) <TPMasterDrawableProvider> *masterDrawableProvider;
+@property (nonatomic, readonly) unsigned long long pageCount;
+@property (nonatomic, readonly) unsigned long long pageIndex;
+@property (nonatomic, readonly) unsigned long long pageNumber;
+@property (nonatomic, readonly) bool shrinkTextToFit;
+@property (nonatomic, readonly) double textScaleFactor;
 
 - (void)addAttachmentLayout:(id)arg1;
 - (id)additionalDependenciesForChildLayout:(id)arg1;

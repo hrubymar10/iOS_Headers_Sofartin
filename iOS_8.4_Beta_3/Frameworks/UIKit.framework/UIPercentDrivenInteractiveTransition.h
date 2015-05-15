@@ -12,17 +12,17 @@
     double _duration;
 }
 
-@property(setter=_setOriginalFillMode:,assign,retain) NSString * _originalFillMode;
-@property(getter=_isTransitionInterrupted,setter=_setTransitionInterrupted:,assign,readwrite) bool _transitionInterrupted;
-@property(setter=_setUuid:,assign,retain) NSUUID * _uuid;
-@property(assign,readwrite) long long completionCurve;
-@property(assign,readwrite) double completionSpeed;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double duration;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double percentComplete;
-@property(assign,readonly) Class superclass;
+@property (setter=_setOriginalFillMode:, nonatomic, retain) NSString *_originalFillMode;
+@property (getter=_isTransitionInterrupted, setter=_setTransitionInterrupted:, nonatomic) bool _transitionInterrupted;
+@property (setter=_setUuid:, nonatomic, retain) NSUUID *_uuid;
+@property (nonatomic) long long completionCurve;
+@property (nonatomic) double completionSpeed;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) double duration;
+@property (readonly) unsigned long long hash;
+@property (readonly) double percentComplete;
+@property (readonly) Class superclass;
 
 - (bool)_isTransitionInterrupted;
 - (id)_originalFillMode;

@@ -14,16 +14,16 @@
     void *_tokenizations;
 }
 
-@property(assign,copy) NSString * accountIdentifier;
-@property(assign,readwrite) void* addressBook;
-@property(assign,readwrite) void* group;
-@property(assign,retain) NSArray * groups;
-@property(assign,readwrite) bool matchPersonOrCompanyNamesExclusively;
-@property(assign,readwrite) bool matchPreferredName;
-@property(assign,readwrite) bool matchWholeWords;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) void* source;
-@property(assign,retain) NSArray * sources;
+@property (nonatomic, copy) NSString *accountIdentifier;
+@property (nonatomic) void*addressBook;
+@property (nonatomic) void*group;
+@property (nonatomic, retain) NSArray *groups;
+@property (nonatomic) bool matchPersonOrCompanyNamesExclusively;
+@property (nonatomic) bool matchPreferredName;
+@property (nonatomic) bool matchWholeWords;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) void*source;
+@property (nonatomic, retain) NSArray *sources;
 
 - (id)_personNameKeys;
 - (void)ab_bindStatement:(struct CPSqliteStatement { struct CPSqliteConnection {} *x1; struct sqlite3_stmt {} *x2; }*)arg1 withBindingOffset:(int*)arg2 predicateIdentifier:(int)arg3;

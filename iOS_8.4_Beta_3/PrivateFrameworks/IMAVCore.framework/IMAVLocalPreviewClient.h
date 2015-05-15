@@ -9,13 +9,13 @@
     bool _wantsUnpausedPreview;
 }
 
-@property(assign,readwrite) unsigned int cameraOrientation;
-@property(assign,readwrite) unsigned int cameraType;
-@property(assign,readonly) bool isPreviewRunning;
-@property(assign,readwrite) IMAVCamera * localCamera;
-@property(assign,readwrite) void* localVideoBackLayer;
-@property(assign,readwrite) void* localVideoLayer;
-@property(assign,readwrite) bool supportsPreview;
+@property (nonatomic) unsigned int cameraOrientation;
+@property (nonatomic) unsigned int cameraType;
+@property (nonatomic, readonly) bool isPreviewRunning;
+@property (nonatomic) IMAVCamera *localCamera;
+@property (nonatomic) void*localVideoBackLayer;
+@property (nonatomic) void*localVideoLayer;
+@property (nonatomic) bool supportsPreview;
 
 + (id)sharedInstance;
 

@@ -28,14 +28,14 @@
     double _scrubbingVerticalRange;
 }
 
-@property(assign,readonly) long long currentScrubSpeed;
-@property(assign,readwrite) <MPDetailScrubControllerDelegate> * delegate;
-@property(assign,readwrite) bool detailedScrubbingEnabled;
-@property(assign,readwrite) double duration;
-@property(assign,readonly) bool durationAllowsForDetailedScrubbing;
-@property(assign,readonly) bool isTracking;
-@property(assign,readwrite) UIControl<MPDetailedScrubbing> * scrubbingControl;
-@property(assign,readwrite) double scrubbingVerticalRange;
+@property (nonatomic, readonly) long long currentScrubSpeed;
+@property (nonatomic) <MPDetailScrubControllerDelegate> *delegate;
+@property (nonatomic) bool detailedScrubbingEnabled;
+@property (nonatomic) double duration;
+@property (nonatomic, readonly) bool durationAllowsForDetailedScrubbing;
+@property (nonatomic, readonly) bool isTracking;
+@property (nonatomic) UIControl<MPDetailedScrubbing> *scrubbingControl;
+@property (nonatomic) double scrubbingVerticalRange;
 
 - (void).cxx_destruct;
 - (void)_beginScrubbing;

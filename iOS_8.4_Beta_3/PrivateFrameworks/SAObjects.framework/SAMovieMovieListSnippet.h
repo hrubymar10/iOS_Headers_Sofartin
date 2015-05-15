@@ -4,8 +4,8 @@
 
 @interface SAMovieMovieListSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * movies;
-@property(assign,readwrite) bool shouldShowRottenTomatoesRating;
+@property (nonatomic, copy) NSArray *movies;
+@property (nonatomic) bool shouldShowRottenTomatoesRating;
 
 + (id)movieListSnippet;
 + (id)movieListSnippetWithDictionary:(id)arg1 context:(id)arg2;

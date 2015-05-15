@@ -14,8 +14,8 @@
     void *_reserved2;
 }
 
-@property(assign,retain) NSArray * entityMappings;
-@property(assign,copy) NSDictionary * entityMappingsByName;
+@property (retain) NSArray *entityMappings;
+@property (readonly, copy) NSDictionary *entityMappingsByName;
 
 + (id)_modelPathsFromBundles:(id)arg1;
 + (id)_newMappingModelFromPaths:(id)arg1 forSourceHashes:(id)arg2 destinationHashes:(id)arg3;

@@ -23,26 +23,26 @@
     int _userRating;
 }
 
-@property(assign,retain) MIPArtist * artist;
-@property(assign,retain) NSString * artworkId;
-@property(assign,readwrite) bool compilation;
-@property(assign,readonly) bool hasArtist;
-@property(assign,readonly) bool hasArtworkId;
-@property(assign,readwrite) bool hasCompilation;
-@property(assign,readonly) bool hasName;
-@property(assign,readwrite) bool hasNumDiscs;
-@property(assign,readwrite) bool hasNumTracks;
-@property(assign,readwrite) bool hasPersistentId;
-@property(assign,readonly) bool hasSortName;
-@property(assign,readwrite) bool hasStoreId;
-@property(assign,readwrite) bool hasUserRating;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) int numDiscs;
-@property(assign,readwrite) int numTracks;
-@property(assign,readwrite) long long persistentId;
-@property(assign,retain) NSString * sortName;
-@property(assign,readwrite) long long storeId;
-@property(assign,readwrite) int userRating;
+@property (nonatomic, retain) MIPArtist *artist;
+@property (nonatomic, retain) NSString *artworkId;
+@property (nonatomic) bool compilation;
+@property (nonatomic, readonly) bool hasArtist;
+@property (nonatomic, readonly) bool hasArtworkId;
+@property (nonatomic) bool hasCompilation;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic) bool hasNumDiscs;
+@property (nonatomic) bool hasNumTracks;
+@property (nonatomic) bool hasPersistentId;
+@property (nonatomic, readonly) bool hasSortName;
+@property (nonatomic) bool hasStoreId;
+@property (nonatomic) bool hasUserRating;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) int numDiscs;
+@property (nonatomic) int numTracks;
+@property (nonatomic) long long persistentId;
+@property (nonatomic, retain) NSString *sortName;
+@property (nonatomic) long long storeId;
+@property (nonatomic) int userRating;
 
 - (void).cxx_destruct;
 - (id)artist;

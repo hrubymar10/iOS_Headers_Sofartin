@@ -26,22 +26,22 @@
     double _timestamp;
 }
 
-@property(assign,readwrite) long long businessID;
-@property(assign,readwrite) int feedbackType;
-@property(assign,readwrite) bool hasBusinessID;
-@property(assign,readwrite) bool hasFeedbackType;
-@property(assign,readwrite) bool hasLocalSearchProviderID;
-@property(assign,readwrite) bool hasNumberOfResults;
-@property(assign,readwrite) bool hasPositionInResults;
-@property(assign,readwrite) bool hasSequenceNumber;
-@property(assign,readwrite) bool hasSessionGUID;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) int localSearchProviderID;
-@property(assign,readwrite) int numberOfResults;
-@property(assign,readwrite) int positionInResults;
-@property(assign,readwrite) int sequenceNumber;
-@property(assign,readwrite) struct { unsigned long long x1; unsigned long long x2; } sessionGUID;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic) long long businessID;
+@property (nonatomic) int feedbackType;
+@property (nonatomic) bool hasBusinessID;
+@property (nonatomic) bool hasFeedbackType;
+@property (nonatomic) bool hasLocalSearchProviderID;
+@property (nonatomic) bool hasNumberOfResults;
+@property (nonatomic) bool hasPositionInResults;
+@property (nonatomic) bool hasSequenceNumber;
+@property (nonatomic) bool hasSessionGUID;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) int localSearchProviderID;
+@property (nonatomic) int numberOfResults;
+@property (nonatomic) int positionInResults;
+@property (nonatomic) int sequenceNumber;
+@property (nonatomic) struct { unsigned long long x1; unsigned long long x2; } sessionGUID;
+@property (nonatomic) double timestamp;
 
 - (long long)businessID;
 - (void)copyTo:(id)arg1;

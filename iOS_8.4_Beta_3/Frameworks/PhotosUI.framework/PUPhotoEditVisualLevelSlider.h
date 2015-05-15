@@ -12,12 +12,12 @@
     UICollectionViewFlowLayout *_thumbnailsStripFlowLayout;
 }
 
-@property(assign,readwrite) <PUPhotoEditVisualLevelSliderDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } thumbnailSize;
+@property (nonatomic) <PUPhotoEditVisualLevelSliderDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) struct CGSize { double x1; double x2; } thumbnailSize;
 
 - (void).cxx_destruct;
 - (void)_configureCell:(id)arg1 thumbnailIndex:(long long)arg2 animated:(bool)arg3;

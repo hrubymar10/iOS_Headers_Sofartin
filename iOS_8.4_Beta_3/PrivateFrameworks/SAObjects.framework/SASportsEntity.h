@@ -4,12 +4,12 @@
 
 @interface SASportsEntity : SADomainObject
 
-@property(assign,copy) NSURL * image;
-@property(assign,copy) NSURL * largeImage;
-@property(assign,retain) SASportsLeague * league;
-@property(assign,copy) NSURL * listImage;
-@property(assign,copy) NSString * name;
-@property(assign,retain) SAUIAppPunchOut * punchout;
+@property (nonatomic, copy) NSURL *image;
+@property (nonatomic, copy) NSURL *largeImage;
+@property (nonatomic, retain) SASportsLeague *league;
+@property (nonatomic, copy) NSURL *listImage;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) SAUIAppPunchOut *punchout;
 
 + (id)entity;
 + (id)entityWithDictionary:(id)arg1 context:(id)arg2;

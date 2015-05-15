@@ -6,7 +6,7 @@
     NSString *_path;
 }
 
-@property(assign,readonly) NSString * path;
+@property (readonly) NSString *path;
 
 - (void)dealloc;
 - (id)debugDescription;

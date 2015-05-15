@@ -8,7 +8,7 @@
     bool _usesCompactLayout;
 }
 
-@property(assign,readwrite) bool usesCompactLayout;
+@property (nonatomic) bool usesCompactLayout;
 
 - (void)dealloc;
 - (id)initWithSpecifier:(id)arg1;

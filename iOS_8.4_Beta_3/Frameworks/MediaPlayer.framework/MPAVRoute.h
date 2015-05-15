@@ -15,19 +15,19 @@
     MPAVRoute *_wirelessDisplayRoute;
 }
 
-@property(assign,readonly) bool displayIsPicked;
-@property(assign,readonly) long long displayRouteType;
-@property(assign,readonly) long long passwordType;
-@property(assign,readonly) long long pickableRouteType;
-@property(getter=isPicked,assign,readonly) bool picked;
-@property(assign,readonly) long long rc_audioRouteType;
-@property(assign,readonly) bool rc_shouldExpectFaceContact;
-@property(assign,readonly) bool requiresPassword;
-@property(assign,readonly) NSString * routeName;
-@property(assign,readonly) long long routeSubtype;
-@property(assign,readonly) long long routeType;
-@property(assign,readonly) NSString * routeUID;
-@property(assign,readonly) MPAVRoute * wirelessDisplayRoute;
+@property (nonatomic, readonly) bool displayIsPicked;
+@property (nonatomic, readonly) long long displayRouteType;
+@property (nonatomic, readonly) long long passwordType;
+@property (nonatomic, readonly) long long pickableRouteType;
+@property (getter=isPicked, nonatomic, readonly) bool picked;
+@property (nonatomic, readonly) long long rc_audioRouteType;
+@property (nonatomic, readonly) bool rc_shouldExpectFaceContact;
+@property (nonatomic, readonly) bool requiresPassword;
+@property (nonatomic, readonly) NSString *routeName;
+@property (nonatomic, readonly) long long routeSubtype;
+@property (nonatomic, readonly) long long routeType;
+@property (nonatomic, readonly) NSString *routeUID;
+@property (nonatomic, readonly) MPAVRoute *wirelessDisplayRoute;
 
 - (void).cxx_destruct;
 - (id)_initWithAVRouteDescription:(id)arg1;

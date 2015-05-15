@@ -6,7 +6,7 @@
     <GKAchievementViewControllerDelegate> *_achievementDelegate;
 }
 
-@property(assign,readwrite) <GKAchievementViewControllerDelegate> * achievementDelegate;
+@property (nonatomic) <GKAchievementViewControllerDelegate> *achievementDelegate;
 
 - (id)achievementDelegate;
 - (void)dealloc;

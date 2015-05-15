@@ -7,8 +7,8 @@
     NSPredicate *_conditionPredicate;
 }
 
-@property(assign,retain) NSString * conditionKeyPath;
-@property(assign,retain) NSPredicate * conditionPredicate;
+@property (nonatomic, retain) NSString *conditionKeyPath;
+@property (nonatomic, retain) NSPredicate *conditionPredicate;
 
 + (id)appearanceConditionWithPredicate:(id)arg1;
 

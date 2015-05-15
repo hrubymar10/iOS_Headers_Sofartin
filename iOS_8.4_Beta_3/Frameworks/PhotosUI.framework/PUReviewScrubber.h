@@ -17,22 +17,22 @@
     long long _selectedIndex;
 }
 
-@property(assign,readonly) UIImageView * _arrowImageView;
-@property(assign,readonly) _UIBackdropView * _backdropView;
-@property(assign,readonly) UICollectionView * _collectionView;
-@property(assign,readonly) PUHorizontalCollectionViewLayout * _collectionViewLayout;
-@property(assign,readonly) bool _ignoreScrollViewDidScrollUpdate;
-@property(assign,readonly) unsigned long long _numberOfPhotos;
-@property(assign,readonly) bool _performingInteractiveUpdate;
-@property(assign,readonly) UIImageView * _shadowView;
-@property(assign,readonly) UITapGestureRecognizer * _tapGestureRecognizer;
-@property(assign,readwrite) <PUReviewScrubberDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <PUReviewScrubberDelegate> * scrubberDelegate;
-@property(assign,readwrite) long long selectedIndex;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) UIImageView *_arrowImageView;
+@property (nonatomic, readonly) _UIBackdropView *_backdropView;
+@property (nonatomic, readonly) UICollectionView *_collectionView;
+@property (nonatomic, readonly) PUHorizontalCollectionViewLayout *_collectionViewLayout;
+@property (nonatomic, readonly) bool _ignoreScrollViewDidScrollUpdate;
+@property (nonatomic, readonly) unsigned long long _numberOfPhotos;
+@property (nonatomic, readonly) bool _performingInteractiveUpdate;
+@property (nonatomic, readonly) UIImageView *_shadowView;
+@property (nonatomic, readonly) UITapGestureRecognizer *_tapGestureRecognizer;
+@property (nonatomic) <PUReviewScrubberDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <PUReviewScrubberDelegate> *scrubberDelegate;
+@property (nonatomic) long long selectedIndex;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_arrowImageView;

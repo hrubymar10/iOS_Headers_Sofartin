@@ -6,7 +6,7 @@
     NSString *mId;
 }
 
-@property(assign,readonly) NSString * identifier;
+@property (nonatomic, readonly) NSString *identifier;
 
 + (id)addressWithId:(id)arg1;
 + (id)addressWithIdPath:(id)arg1;

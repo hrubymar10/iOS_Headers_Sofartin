@@ -4,12 +4,12 @@
 
 @interface SAConstraintDefinition : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * supportedValues;
-@property(assign,copy) NSString * type;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *supportedValues;
+@property (nonatomic, copy) NSString *type;
 
 + (id)constraintDefinition;
 + (id)constraintDefinitionWithDictionary:(id)arg1 context:(id)arg2;

@@ -20,13 +20,13 @@
     NSArray *_trailers;
 }
 
-@property(assign,readonly) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIScreenshotsDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIScreenshotsDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_setImage:(id)arg1 forIndex:(long long)arg2;

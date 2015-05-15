@@ -8,9 +8,9 @@
     NSString *mPicaSeparator;
 }
 
-@property(assign,copy) NSNumber * maximum;
-@property(assign,copy) NSNumber * minimum;
-@property(assign,copy) NSString * picaSeparator;
+@property (nonatomic, copy) NSNumber *maximum;
+@property (nonatomic, copy) NSNumber *minimum;
+@property (nonatomic, copy) NSString *picaSeparator;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

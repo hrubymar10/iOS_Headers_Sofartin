@@ -13,14 +13,14 @@
     UIView *_titleSeparator;
 }
 
-@property(assign,retain) _UIBackdropView * backdropView;
-@property(assign,retain) UIView * bottomSeparator;
-@property(assign,retain) UIView * buttonSeparator;
-@property(assign,retain) UIButton * ignoreButton;
-@property(assign,retain) UIButton * reportJunkButton;
-@property(assign,retain) UIImageView * titleImageView;
-@property(assign,retain) UILabel * titleLabel;
-@property(assign,retain) UIView * titleSeparator;
+@property (nonatomic, retain) _UIBackdropView *backdropView;
+@property (nonatomic, retain) UIView *bottomSeparator;
+@property (nonatomic, retain) UIView *buttonSeparator;
+@property (nonatomic, retain) UIButton *ignoreButton;
+@property (nonatomic, retain) UIButton *reportJunkButton;
+@property (nonatomic, retain) UIImageView *titleImageView;
+@property (nonatomic, retain) UILabel *titleLabel;
+@property (nonatomic, retain) UIView *titleSeparator;
 
 - (id)backdropView;
 - (id)bottomSeparator;

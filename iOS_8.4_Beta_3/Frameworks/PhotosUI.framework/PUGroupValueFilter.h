@@ -6,7 +6,7 @@
     NSArray *_filters;
 }
 
-@property(assign,copy) NSArray * filters;
+@property (nonatomic, copy) NSArray *filters;
 
 - (void).cxx_destruct;
 - (id)filters;

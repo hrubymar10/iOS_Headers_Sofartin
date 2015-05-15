@@ -12,10 +12,10 @@
     double _translationWeight;
 }
 
-@property(assign,readonly) int dominantComponent;
-@property(assign,readwrite) double pinchingWeight;
-@property(assign,readwrite) double rotationWeight;
-@property(assign,readwrite) double translationWeight;
+@property (nonatomic, readonly) int dominantComponent;
+@property (nonatomic) double pinchingWeight;
+@property (nonatomic) double rotationWeight;
+@property (nonatomic) double translationWeight;
 
 - (void)analyzeTouches:(id)arg1;
 - (int)dominantComponent;

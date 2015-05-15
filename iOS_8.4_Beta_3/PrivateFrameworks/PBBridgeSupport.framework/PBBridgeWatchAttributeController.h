@@ -10,11 +10,11 @@
     NSCache *_stringCache;
 }
 
-@property(assign,retain) NRDevice * device;
-@property(assign,readonly) unsigned long long edition;
-@property(assign,readonly) int material;
-@property(assign,readonly) unsigned long long size;
-@property(assign,retain) NSCache * stringCache;
+@property (nonatomic, retain) NRDevice *device;
+@property (nonatomic, readonly) unsigned long long edition;
+@property (nonatomic, readonly) int material;
+@property (nonatomic, readonly) unsigned long long size;
+@property (nonatomic, retain) NSCache *stringCache;
 
 + (id)editionDescription:(unsigned long long)arg1;
 + (id)materialDescription:(int)arg1;

@@ -8,7 +8,7 @@
     UIWebDocumentView *_webDocumentView;
 }
 
-@property(assign,copy) NSString * markupText;
+@property (nonatomic, copy) NSString *markupText;
 
 - (long long)_recalcPageCount;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

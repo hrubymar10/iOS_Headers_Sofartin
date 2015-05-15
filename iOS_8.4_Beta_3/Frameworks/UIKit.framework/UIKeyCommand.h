@@ -13,8 +13,8 @@
     UIEvent *_triggeringEvent;
 }
 
-@property(assign,readonly) NSString * input;
-@property(assign,readonly) long long modifierFlags;
+@property (nonatomic, readonly) NSString *input;
+@property (nonatomic, readonly) long long modifierFlags;
 
 + (id)keyCommandWithInput:(id)arg1 modifierFlags:(long long)arg2 action:(SEL)arg3;
 + (id)keyCommandWithInput:(id)arg1 modifierFlags:(long long)arg2 buttonType:(long long)arg3;

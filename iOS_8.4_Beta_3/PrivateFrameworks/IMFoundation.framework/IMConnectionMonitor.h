@@ -7,11 +7,11 @@
     NSString *_remoteHost;
 }
 
-@property(assign,readwrite) <IMConnectionMonitorDelegate> * delegate;
-@property(setter=setDataConnectionActive:,assign,readwrite) bool isDataConnectionActive;
-@property(assign,readonly) bool isImmediatelyReachable;
-@property(assign,readonly) NSString * remoteHost;
-@property(assign,readonly) bool requiresDataConnectionActivation;
+@property (nonatomic) <IMConnectionMonitorDelegate> *delegate;
+@property (setter=setDataConnectionActive:, nonatomic) bool isDataConnectionActive;
+@property (nonatomic, readonly) bool isImmediatelyReachable;
+@property (nonatomic, readonly) NSString *remoteHost;
+@property (nonatomic, readonly) bool requiresDataConnectionActivation;
 
 + (id)alloc;
 

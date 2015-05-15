@@ -16,20 +16,20 @@
     double _timestamp;
 }
 
-@property(assign,retain) NSData * applicationInfo;
-@property(assign,retain) NSData * digest;
-@property(assign,readonly) bool hasApplicationInfo;
-@property(assign,readonly) bool hasDigest;
-@property(assign,readonly) bool hasNowPlayingInfo;
-@property(assign,readonly) bool hasPayload;
-@property(assign,readwrite) bool hasState;
-@property(assign,readonly) bool hasSupportedCommands;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSData * nowPlayingInfo;
-@property(assign,retain) NSData * payload;
-@property(assign,readwrite) int state;
-@property(assign,retain) NSData * supportedCommands;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic, retain) NSData *applicationInfo;
+@property (nonatomic, retain) NSData *digest;
+@property (nonatomic, readonly) bool hasApplicationInfo;
+@property (nonatomic, readonly) bool hasDigest;
+@property (nonatomic, readonly) bool hasNowPlayingInfo;
+@property (nonatomic, readonly) bool hasPayload;
+@property (nonatomic) bool hasState;
+@property (nonatomic, readonly) bool hasSupportedCommands;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSData *nowPlayingInfo;
+@property (nonatomic, retain) NSData *payload;
+@property (nonatomic) int state;
+@property (nonatomic, retain) NSData *supportedCommands;
+@property (nonatomic) double timestamp;
 
 - (void).cxx_destruct;
 - (id)applicationInfo;

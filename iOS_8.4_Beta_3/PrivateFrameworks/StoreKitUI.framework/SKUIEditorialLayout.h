@@ -15,8 +15,8 @@
     SKUILayoutCache *_textLayoutCache;
 }
 
-@property(assign,readonly) SKUIEditorialComponent * editorialComponent;
-@property(assign,readonly) SKUILayoutCache * layoutCache;
+@property (nonatomic, readonly) SKUIEditorialComponent *editorialComponent;
+@property (nonatomic, readonly) SKUILayoutCache *layoutCache;
 
 - (void).cxx_destruct;
 - (id)_bodyTextLayoutRequestWithTotalWidth:(double)arg1;

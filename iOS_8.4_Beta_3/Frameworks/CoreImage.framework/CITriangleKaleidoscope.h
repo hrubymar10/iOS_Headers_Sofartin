@@ -10,11 +10,11 @@
     NSNumber *inputSize;
 }
 
-@property(assign,retain) NSNumber * inputDecay;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIVector * inputPoint;
-@property(assign,retain) NSNumber * inputRotation;
-@property(assign,retain) NSNumber * inputSize;
+@property (nonatomic, retain) NSNumber *inputDecay;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIVector *inputPoint;
+@property (nonatomic, retain) NSNumber *inputRotation;
+@property (nonatomic, retain) NSNumber *inputSize;
 
 + (id)customAttributes;
 

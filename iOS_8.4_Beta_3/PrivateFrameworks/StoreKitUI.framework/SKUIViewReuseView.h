@@ -7,7 +7,7 @@
     NSArray *_views;
 }
 
-@property(assign,readonly) NSArray * allExistingViews;
+@property (nonatomic, readonly) NSArray *allExistingViews;
 
 - (void).cxx_destruct;
 - (id)allExistingViews;

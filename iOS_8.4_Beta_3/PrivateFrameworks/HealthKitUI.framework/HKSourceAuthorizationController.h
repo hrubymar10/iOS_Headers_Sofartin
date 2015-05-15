@@ -11,12 +11,12 @@
     NSMutableSet *_typesEnabledForSharing;
 }
 
-@property(assign,readonly) HKHealthStore * healthStore;
-@property(assign,retain) NSArray * orderedTypesForReading;
-@property(assign,retain) NSArray * orderedTypesForSharing;
-@property(assign,readonly) HKSource * source;
-@property(assign,retain) NSMutableSet * typesEnabledForReading;
-@property(assign,retain) NSMutableSet * typesEnabledForSharing;
+@property (nonatomic, readonly) HKHealthStore *healthStore;
+@property (nonatomic, retain) NSArray *orderedTypesForReading;
+@property (nonatomic, retain) NSArray *orderedTypesForSharing;
+@property (nonatomic, readonly) HKSource *source;
+@property (nonatomic, retain) NSMutableSet *typesEnabledForReading;
+@property (nonatomic, retain) NSMutableSet *typesEnabledForSharing;
 
 - (void).cxx_destruct;
 - (long long)_authorizationStatusWithType:(id)arg1;

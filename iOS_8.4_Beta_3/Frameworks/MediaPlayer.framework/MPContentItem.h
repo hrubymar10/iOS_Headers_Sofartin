@@ -7,13 +7,13 @@
     struct _MRContentItem { } *_mrContentItem;
 }
 
-@property(assign,retain) MPMediaItemArtwork * artwork;
-@property(getter=isContainer,assign,readwrite) bool container;
-@property(assign,copy) NSString * identifier;
-@property(getter=isPlayable,assign,readwrite) bool playable;
-@property(assign,readwrite) float playbackProgress;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) MPMediaItemArtwork *artwork;
+@property (getter=isContainer, nonatomic) bool container;
+@property (nonatomic, readonly, copy) NSString *identifier;
+@property (getter=isPlayable, nonatomic) bool playable;
+@property (nonatomic) float playbackProgress;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)_initWithMediaRemoteContentItem:(struct _MRContentItem { }*)arg1;

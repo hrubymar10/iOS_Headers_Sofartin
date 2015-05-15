@@ -9,15 +9,15 @@
     id _token;
 }
 
-@property(assign,readonly) NSNumber * accountIdentifier;
-@property(assign,readonly) id authorizationToken;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SSAuthorizationRequestDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * keybagPath;
-@property(assign,copy) NSString * reason;
-@property(assign,readonly) Class superclass;
+@property (readonly) NSNumber *accountIdentifier;
+@property (readonly) id authorizationToken;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SSAuthorizationRequestDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *keybagPath;
+@property (copy) NSString *reason;
+@property (readonly) Class superclass;
 
 - (id)accountIdentifier;
 - (id)authorizationToken;

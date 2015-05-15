@@ -26,12 +26,12 @@
     bool _writeSocketIsResumed;
 }
 
-@property(assign,readwrite) unsigned int fragmentationSize;
-@property(assign,readonly) unsigned long long inFlightMessageCount;
-@property(assign,readwrite) unsigned long long inFlightMessageCountLowWaterMark;
-@property(assign,readonly) NSSet * inFlightMessages;
-@property(assign,readonly) bool isConnected;
-@property(assign,readonly) bool isEmpty;
+@property (nonatomic) unsigned int fragmentationSize;
+@property (nonatomic, readonly) unsigned long long inFlightMessageCount;
+@property (nonatomic) unsigned long long inFlightMessageCountLowWaterMark;
+@property (nonatomic, readonly) NSSet *inFlightMessages;
+@property (nonatomic, readonly) bool isConnected;
+@property (nonatomic, readonly) bool isEmpty;
 
 - (void)_callDelegateWithBlock:(id)arg1;
 - (void)_endSession;

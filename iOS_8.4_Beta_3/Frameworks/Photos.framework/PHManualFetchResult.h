@@ -8,9 +8,9 @@
     NSArray *_objects;
 }
 
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSOrderedSet * objectIDs;
-@property(assign,readonly) NSArray * objects;
+@property (readonly) NSString *identifier;
+@property (readonly) NSOrderedSet *objectIDs;
+@property (readonly) NSArray *objects;
 
 - (void).cxx_destruct;
 - (id)changeHandlingKey;

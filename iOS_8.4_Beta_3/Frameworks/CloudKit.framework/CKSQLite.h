@@ -16,18 +16,18 @@
     int _userVersion;
 }
 
-@property(assign,readwrite) bool corrupt;
-@property(assign,retain) NSDateFormatter * dateFormatter;
-@property(assign,readwrite) struct sqlite3 { }* db;
-@property(assign,readonly) bool hasMigrated;
-@property(assign,readonly) bool isOpen;
-@property(assign,retain) NSString * objectClassPrefix;
-@property(assign,readwrite) unsigned long long openCount;
-@property(assign,readonly) NSString * path;
-@property(assign,readonly) NSString * schema;
-@property(assign,readonly) NSString * schemaVersion;
-@property(assign,readonly) NSMutableDictionary * statementsBySQL;
-@property(assign,readwrite) int userVersion;
+@property (nonatomic) bool corrupt;
+@property (nonatomic, retain) NSDateFormatter *dateFormatter;
+@property (nonatomic) struct sqlite3 { }*db;
+@property (nonatomic, readonly) bool hasMigrated;
+@property (nonatomic, readonly) bool isOpen;
+@property (nonatomic, retain) NSString *objectClassPrefix;
+@property (nonatomic) unsigned long long openCount;
+@property (nonatomic, readonly) NSString *path;
+@property (nonatomic, readonly) NSString *schema;
+@property (nonatomic, readonly) NSString *schemaVersion;
+@property (nonatomic, readonly) NSMutableDictionary *statementsBySQL;
+@property (nonatomic) int userVersion;
 
 - (void).cxx_destruct;
 - (id)_boxedPropertyDictionary:(id)arg1 forObjCClass:(id)arg2;

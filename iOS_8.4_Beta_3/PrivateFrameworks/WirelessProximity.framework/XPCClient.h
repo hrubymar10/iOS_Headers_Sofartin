@@ -13,14 +13,14 @@
     NSString *_type;
 }
 
-@property(assign,retain) NSObject<OS_xpc_object> * connection;
-@property(assign,readwrite) <XPCClientDelegate> * delegate;
-@property(assign,retain) NSRecursiveLock * delegateLock;
-@property(assign,copy) NSString * machName;
-@property(assign,copy) NSDictionary * options;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readwrite) int state;
-@property(assign,copy) NSString * type;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *connection;
+@property (nonatomic) <XPCClientDelegate> *delegate;
+@property (retain) NSRecursiveLock *delegateLock;
+@property (copy) NSString *machName;
+@property (copy) NSDictionary *options;
+@property (retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic) int state;
+@property (copy) NSString *type;
 
 - (void).cxx_destruct;
 - (void)closeConnection;

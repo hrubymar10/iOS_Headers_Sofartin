@@ -10,11 +10,11 @@
     NSObject<OS_dispatch_source> *_transactionTimer;
 }
 
-@property(assign,readwrite) bool active;
-@property(assign,retain) NSMutableDictionary * coreLocationAsserts;
-@property(assign,readwrite) long long refCount;
-@property(assign,retain) NSMutableSet * transactionObservers;
-@property(assign,retain) NSObject<OS_dispatch_source> * transactionTimer;
+@property (nonatomic) bool active;
+@property (nonatomic, retain) NSMutableDictionary *coreLocationAsserts;
+@property (nonatomic) long long refCount;
+@property (nonatomic, retain) NSMutableSet *transactionObservers;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *transactionTimer;
 
 + (id)sharedInstance;
 

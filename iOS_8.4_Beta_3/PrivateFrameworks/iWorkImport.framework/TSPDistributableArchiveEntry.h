@@ -12,13 +12,13 @@
     unsigned int _version;
 }
 
-@property(assign,readwrite) int classType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * relativeDataPath;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned int version;
+@property (nonatomic) int classType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *relativeDataPath;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned int version;
 
 - (void).cxx_destruct;
 - (int)classType;

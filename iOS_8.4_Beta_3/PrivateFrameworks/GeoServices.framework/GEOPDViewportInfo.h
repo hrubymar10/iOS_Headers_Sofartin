@@ -12,12 +12,12 @@
     unsigned int _timeSinceMapViewportChanged;
 }
 
-@property(assign,readwrite) bool hasMapMode;
-@property(assign,readonly) bool hasMapRegion;
-@property(assign,readwrite) bool hasTimeSinceMapViewportChanged;
-@property(assign,readwrite) int mapMode;
-@property(assign,retain) GEOMapRegion * mapRegion;
-@property(assign,readwrite) unsigned int timeSinceMapViewportChanged;
+@property (nonatomic) bool hasMapMode;
+@property (nonatomic, readonly) bool hasMapRegion;
+@property (nonatomic) bool hasTimeSinceMapViewportChanged;
+@property (nonatomic) int mapMode;
+@property (nonatomic, retain) GEOMapRegion *mapRegion;
+@property (nonatomic) unsigned int timeSinceMapViewportChanged;
 
 + (id)viewportInfoForTraits:(id)arg1;
 

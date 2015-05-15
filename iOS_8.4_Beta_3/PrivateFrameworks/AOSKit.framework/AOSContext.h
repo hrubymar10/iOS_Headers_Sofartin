@@ -10,10 +10,10 @@
     struct AOSTransactionC { Class x1; unsigned char x2; unsigned char x3; void *x4; struct __CFError {} *x5; int (*x6)(); id x7; /* Warning: Unrecognized filer type: '?' using 'void*' */ void*x8; id x9; void *x10; id x11; int (*x12)(); int (*x13)(); } *_transaction;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)contextWithAccount:(struct AOSAccount { }*)arg1 andTransaction:(struct AOSTransactionC { Class x1; unsigned char x2; unsigned char x3; void *x4; struct __CFError {} *x5; int (*x6)(); id x7; /* Warning: Unrecognized filer type: '?' using 'void*' */ void*x8; id x9; void *x10; id x11; int (*x12)(); int (*x13)(); }*)arg2;
 

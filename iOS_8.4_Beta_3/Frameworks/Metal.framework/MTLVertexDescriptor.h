@@ -7,8 +7,8 @@
     MTLVertexBufferLayoutDescriptorArray *_vertexBufferArray;
 }
 
-@property(assign,readonly) MTLVertexAttributeDescriptorArray * attributes;
-@property(assign,readonly) MTLVertexBufferLayoutDescriptorArray * layouts;
+@property (readonly) MTLVertexAttributeDescriptorArray *attributes;
+@property (readonly) MTLVertexBufferLayoutDescriptorArray *layouts;
 
 + (id)vertexDescriptor;
 

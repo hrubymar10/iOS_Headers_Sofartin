@@ -4,7 +4,7 @@
 
 @interface UIKBCandidateCollectionView : UICollectionView
 
-@property(assign,readonly) NSIndexPath * selectedItemIndexPath;
+@property (nonatomic, readonly) NSIndexPath *selectedItemIndexPath;
 
 - (bool)_selectAndScrollToItemAtIndexPath:(id)arg1 animated:(bool)arg2 scrollPosition:(unsigned long long)arg3;
 - (void)configureAsCandidatesBar;

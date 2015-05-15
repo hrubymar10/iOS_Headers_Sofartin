@@ -10,11 +10,11 @@
     NSString *_pushTopic;
 }
 
-@property(assign,readwrite) bool disabled;
-@property(assign,copy) NSDate * nextHeartbeatDate;
-@property(assign,copy) NSString * pushEnvironment;
-@property(assign,copy) NSString * pushToken;
-@property(assign,copy) NSString * pushTopic;
+@property (nonatomic) bool disabled;
+@property (nonatomic, copy) NSDate *nextHeartbeatDate;
+@property (nonatomic, copy) NSString *pushEnvironment;
+@property (nonatomic, copy) NSString *pushToken;
+@property (nonatomic, copy) NSString *pushTopic;
 
 + (bool)supportsSecureCoding;
 

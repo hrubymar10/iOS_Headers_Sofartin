@@ -4,7 +4,7 @@
 
 @interface SANPSetRepeatMode : SADomainCommand
 
-@property(assign,copy) NSString * repeatMode;
+@property (nonatomic, copy) NSString *repeatMode;
 
 + (id)setRepeatMode;
 + (id)setRepeatModeWithDictionary:(id)arg1 context:(id)arg2;

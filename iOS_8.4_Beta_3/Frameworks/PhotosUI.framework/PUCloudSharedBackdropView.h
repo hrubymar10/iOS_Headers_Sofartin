@@ -8,7 +8,7 @@
     bool _isMask;
 }
 
-@property(assign,readwrite) bool hasRoundedCorners;
+@property (nonatomic) bool hasRoundedCorners;
 
 - (void).cxx_destruct;
 - (bool)hasRoundedCorners;

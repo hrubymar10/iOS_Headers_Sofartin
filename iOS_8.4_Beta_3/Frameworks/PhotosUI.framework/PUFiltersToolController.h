@@ -12,16 +12,16 @@
     bool _didPerformInitialScrollToReveal;
 }
 
-@property(setter=_setCollectionView:,assign,retain) UICollectionView * _collectionView;
-@property(setter=_setCollectionViewLayout:,assign,retain) UICollectionViewFlowLayout * _collectionViewLayout;
-@property(assign,readonly) bool _needsThumbnails;
-@property(setter=_setSelectedFilterIndex:,assign,readwrite) unsigned long long _selectedFilterIndex;
-@property(setter=_setThumbnailImages:,assign,retain) NSMutableDictionary * _thumbnailImages;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) PUFiltersToolControllerSpec * spec;
-@property(assign,readonly) Class superclass;
+@property (setter=_setCollectionView:, nonatomic, retain) UICollectionView *_collectionView;
+@property (setter=_setCollectionViewLayout:, nonatomic, retain) UICollectionViewFlowLayout *_collectionViewLayout;
+@property (nonatomic, readonly) bool _needsThumbnails;
+@property (setter=_setSelectedFilterIndex:, nonatomic) unsigned long long _selectedFilterIndex;
+@property (setter=_setThumbnailImages:, nonatomic, retain) NSMutableDictionary *_thumbnailImages;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) PUFiltersToolControllerSpec *spec;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_collectionView;

@@ -7,8 +7,8 @@
     NSDictionary *_presentationOptions;
 }
 
-@property(assign,readonly) MusicJSManagedObject * jsDocumentManagedObject;
-@property(assign,readonly) NSDictionary * presentationOptions;
+@property (nonatomic, readonly) MusicJSManagedObject *jsDocumentManagedObject;
+@property (nonatomic, readonly) NSDictionary *presentationOptions;
 
 - (void).cxx_destruct;
 - (id)initWithJSDocumentManagedObject:(id)arg1 presentationOptions:(id)arg2;

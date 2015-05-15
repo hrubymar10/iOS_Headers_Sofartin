@@ -7,8 +7,8 @@
     UIColor *_overlayColor;
 }
 
-@property(assign,retain) UIView * highlightView;
-@property(assign,copy) UIColor * overlayColor;
+@property (nonatomic, retain) UIView *highlightView;
+@property (nonatomic, copy) UIColor *overlayColor;
 
 - (id)_focusItemsOverlayCreateIfNecessary:(bool)arg1;
 - (void)_highlightPreferredFocusView:(id)arg1;

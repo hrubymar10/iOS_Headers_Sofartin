@@ -14,10 +14,10 @@
     NSNumber *_percentage;
 }
 
-@property(assign,retain) TSCH3DFillSetIdentifier * identifier;
-@property(assign,readonly) TSCH3DLightingModel * lightingModel;
-@property(assign,retain) NSNumber * percentage;
-@property(assign,readonly) float percentageValue;
+@property (nonatomic, retain) TSCH3DFillSetIdentifier *identifier;
+@property (readonly) TSCH3DLightingModel *lightingModel;
+@property (nonatomic, retain) NSNumber *percentage;
+@property (nonatomic, readonly) float percentageValue;
 
 + (id)fill;
 + (id)fillWithIdentifier:(id)arg1;

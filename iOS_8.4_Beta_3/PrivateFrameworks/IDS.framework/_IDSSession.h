@@ -21,15 +21,15 @@
     IDSBaseSocketPairConnection *_unreliableSocketPairConnection;
 }
 
-@property(assign,retain) id boostContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long inviteTimeout;
-@property(assign,readonly) unsigned int sessionEndedReason;
-@property(assign,readonly) int socket;
-@property(assign,readonly) unsigned int state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) id boostContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long inviteTimeout;
+@property (nonatomic, readonly) unsigned int sessionEndedReason;
+@property (nonatomic, readonly) int socket;
+@property (nonatomic, readonly) unsigned int state;
+@property (readonly) Class superclass;
 
 - (void)_broadcastNewSessionToDaemon;
 - (void)_callDelegateWithBlock:(id)arg1;

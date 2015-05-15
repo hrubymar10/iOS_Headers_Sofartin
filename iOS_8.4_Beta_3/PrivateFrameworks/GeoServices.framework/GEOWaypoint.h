@@ -8,11 +8,11 @@
     GEOPlaceSearchRequest *_placeSearchRequest;
 }
 
-@property(assign,retain) NSMutableArray * entryPoints;
-@property(assign,readonly) bool hasLocation;
-@property(assign,readonly) bool hasPlaceSearchRequest;
-@property(assign,retain) GEOLocation * location;
-@property(assign,retain) GEOPlaceSearchRequest * placeSearchRequest;
+@property (nonatomic, retain) NSMutableArray *entryPoints;
+@property (nonatomic, readonly) bool hasLocation;
+@property (nonatomic, readonly) bool hasPlaceSearchRequest;
+@property (nonatomic, retain) GEOLocation *location;
+@property (nonatomic, retain) GEOPlaceSearchRequest *placeSearchRequest;
 
 - (void)addEntryPoint:(id)arg1;
 - (void)clearEntryPoints;

@@ -14,8 +14,8 @@
     unsigned int _width;
 }
 
-@property(assign,readwrite) bool allowsMultiPassEncoding;
-@property(assign,readwrite) unsigned int pixelFormat;
+@property bool allowsMultiPassEncoding;
+@property (nonatomic) unsigned int pixelFormat;
 
 - (bool)allowsMultiPassEncoding;
 - (struct CGContext { }*)bitmapContext;

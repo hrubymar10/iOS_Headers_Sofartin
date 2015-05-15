@@ -11,15 +11,15 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,readwrite) void* addressBook;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ABMembersDataSourceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isInPopover;
-@property(assign,readonly) NSArray * records;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) void*addressBook;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ABMembersDataSourceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isInPopover;
+@property (nonatomic, readonly) NSArray *records;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
+@property (readonly) Class superclass;
 
 - (void)addRecords:(id)arg1 toSection:(long long)arg2;
 - (void*)addressBook;

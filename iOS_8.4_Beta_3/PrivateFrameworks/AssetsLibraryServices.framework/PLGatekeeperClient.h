@@ -10,11 +10,11 @@
     NSObject<OS_xpc_object> *connection;
 }
 
-@property(assign,copy) id CPLDownloadTransactionsLostHandler;
-@property(assign,readwrite) NSObject<OS_xpc_object> * connection;
-@property(assign,retain) NSArray * previewAssetLocalIdentifiers;
-@property(assign,readonly) unsigned long long previewRenderedContentURLCount;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * replyQueue;
+@property (nonatomic, copy) id CPLDownloadTransactionsLostHandler;
+@property (nonatomic) NSObject<OS_xpc_object> *connection;
+@property (nonatomic, retain) NSArray *previewAssetLocalIdentifiers;
+@property (nonatomic, readonly) unsigned long long previewRenderedContentURLCount;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *replyQueue;
 
 + (id)securityPolicyErrorForMissingEntitlement:(id)arg1;
 + (id)sharedInstance;

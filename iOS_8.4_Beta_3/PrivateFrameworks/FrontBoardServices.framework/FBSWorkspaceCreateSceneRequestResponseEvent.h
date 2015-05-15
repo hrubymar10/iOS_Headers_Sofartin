@@ -6,7 +6,7 @@
     NSString *_sceneID;
 }
 
-@property(assign,copy) NSString * sceneID;
+@property (nonatomic, copy) NSString *sceneID;
 
 - (void)dealloc;
 - (void)encodeWithXPCDictionary:(id)arg1;

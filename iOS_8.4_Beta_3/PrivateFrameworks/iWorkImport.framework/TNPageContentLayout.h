@@ -7,8 +7,8 @@
     unsigned long long mPageNumber;
 }
 
-@property(assign,readwrite) TNPageLayout * pageLayout;
-@property(assign,readonly) unsigned long long pageNumber;
+@property TNPageLayout *pageLayout;
+@property (readonly) unsigned long long pageNumber;
 
 - (id)computeLayoutGeometry;
 - (id)initWithPageLayout:(id)arg1;

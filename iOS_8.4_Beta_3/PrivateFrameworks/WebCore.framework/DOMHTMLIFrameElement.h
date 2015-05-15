@@ -4,19 +4,19 @@
 
 @interface DOMHTMLIFrameElement : DOMHTMLElement
 
-@property(assign,copy) NSString * align;
-@property(assign,readonly) DOMDocument * contentDocument;
-@property(assign,readonly) WebFrame * contentFrame;
-@property(assign,readonly) DOMAbstractView * contentWindow;
-@property(assign,copy) NSString * frameBorder;
-@property(assign,copy) NSString * height;
-@property(assign,copy) NSString * longDesc;
-@property(assign,copy) NSString * marginHeight;
-@property(assign,copy) NSString * marginWidth;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * scrolling;
-@property(assign,copy) NSString * src;
-@property(assign,copy) NSString * width;
+@property (copy) NSString *align;
+@property (readonly) DOMDocument *contentDocument;
+@property (nonatomic, readonly) WebFrame *contentFrame;
+@property (readonly) DOMAbstractView *contentWindow;
+@property (copy) NSString *frameBorder;
+@property (copy) NSString *height;
+@property (copy) NSString *longDesc;
+@property (copy) NSString *marginHeight;
+@property (copy) NSString *marginWidth;
+@property (copy) NSString *name;
+@property (copy) NSString *scrolling;
+@property (copy) NSString *src;
+@property (copy) NSString *width;
 
 - (id)align;
 - (id)contentDocument;

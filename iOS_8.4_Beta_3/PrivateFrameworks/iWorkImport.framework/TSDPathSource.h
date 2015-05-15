@@ -7,8 +7,8 @@
     bool mVerticalFlip;
 }
 
-@property(assign,readwrite) bool hasHorizontalFlip;
-@property(assign,readwrite) bool hasVerticalFlip;
+@property bool hasHorizontalFlip;
+@property bool hasVerticalFlip;
 
 + (id)pathSourceForShapeType:(int)arg1 naturalSize:(struct CGSize { double x1; double x2; })arg2;
 + (id)pathSourceWithArchive:(const struct PathSourceArchive { int (**x1)(); struct UnknownFieldSet { struct vector<google::protobuf::UnknownField, std::__1::allocator<google::protobuf::UnknownField> > {} *x_2_1_1; } x2; unsigned int x3[1]; int x4; struct PointPathSourceArchive {} *x5; struct ScalarPathSourceArchive {} *x6; struct BezierPathSourceArchive {} *x7; struct CalloutPathSourceArchive {} *x8; struct ConnectionLinePathSourceArchive {} *x9; struct EditableBezierPathSourceArchive {} *x10; bool x11; bool x12; }*)arg1;

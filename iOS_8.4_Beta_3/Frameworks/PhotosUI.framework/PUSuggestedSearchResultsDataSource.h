@@ -12,12 +12,12 @@
     NSArray *_suggestedSearches;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUSuggestedSearchResultsDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PSIDatabase * searchIndex;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUSuggestedSearchResultsDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PSIDatabase *searchIndex;
+@property (readonly) Class superclass;
 
 + (void)_clearRecentSearches;
 + (id)_recentSearchObjects;

@@ -14,15 +14,15 @@
     NSObject<OS_dispatch_queue> *_searialQueue;
 }
 
-@property(assign,readonly) RCComposition * composition;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSOperationQueue * fragmentLoadingOperationQueue;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool highlightLastDecomposedFragment;
-@property(assign,readonly) bool preferLoadingFragmentWaveforms;
-@property(assign,readwrite) bool saveGeneratedWaveform;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) RCComposition *composition;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSOperationQueue *fragmentLoadingOperationQueue;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool highlightLastDecomposedFragment;
+@property (nonatomic, readonly) bool preferLoadingFragmentWaveforms;
+@property (nonatomic) bool saveGeneratedWaveform;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_synchronouslyAppendSegmentsForAVContentURL:(id)arg1 isDecomposedFragment:(bool)arg2 sourceTimeRange:(struct { double x1; double x2; })arg3 destinationTime:(double)arg4;

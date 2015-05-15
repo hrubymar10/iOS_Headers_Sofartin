@@ -4,13 +4,13 @@
 
 @interface SASetDynamiteClientState : SABaseCommand <SAServerBoundCommand, SASetSingleClientState>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,retain) SADynamiteClientState * clientState;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic, retain) SADynamiteClientState *clientState;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
 
 + (id)setDynamiteClientState;
 + (id)setDynamiteClientStateWithDictionary:(id)arg1 context:(id)arg2;

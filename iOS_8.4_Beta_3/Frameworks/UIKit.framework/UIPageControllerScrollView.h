@@ -6,7 +6,7 @@
     UIPageController *_pageController;
 }
 
-@property(assign,readwrite) UIPageController * pageController;
+@property (nonatomic) UIPageController *pageController;
 
 - (unsigned long long)_abuttedPagingEdges;
 - (void)_scrollViewAnimationEnded:(id)arg1 finished:(bool)arg2;

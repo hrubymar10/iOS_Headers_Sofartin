@@ -6,7 +6,7 @@
     NSArray *_responderViews;
 }
 
-@property(assign,retain) NSArray * responderViews;
+@property (nonatomic, retain) NSArray *responderViews;
 
 - (void).cxx_destruct;
 - (id)responderViews;

@@ -9,8 +9,8 @@
     bool _isAvailable;
 }
 
-@property(assign,readwrite) bool hasIsAvailable;
-@property(assign,readwrite) bool isAvailable;
+@property (nonatomic) bool hasIsAvailable;
+@property (nonatomic) bool isAvailable;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -7,9 +7,9 @@
     TSKCOAddress *mParent;
 }
 
-@property(assign,readonly) NSArray * allPathElements;
-@property(assign,readonly) TSKCOAddress * parent;
-@property(assign,readonly) NSString * pathElement;
+@property (nonatomic, readonly) NSArray *allPathElements;
+@property (nonatomic, readonly) TSKCOAddress *parent;
+@property (nonatomic, readonly) NSString *pathElement;
 
 + (id)newObjectForUnarchiver:(id)arg1 message:(const struct Message { int (**x1)(); }*)arg2;
 + (void)registerClass:(Class)arg1 forExtensionNumber:(unsigned int)arg2;

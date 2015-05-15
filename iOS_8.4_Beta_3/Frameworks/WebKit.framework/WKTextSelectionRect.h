@@ -6,7 +6,7 @@
     WebSelectionRect *_webRect;
 }
 
-@property(assign,retain) WebSelectionRect * webRect;
+@property (nonatomic, retain) WebSelectionRect *webRect;
 
 + (id)textSelectionRectsWithWebRects:(id)arg1;
 

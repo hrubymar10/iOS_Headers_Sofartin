@@ -19,20 +19,20 @@
     NSNumber *_preventMoveNum;
 }
 
-@property(assign,readwrite) bool SMIMEEnabled;
-@property(assign,retain) NSNumber * SMIMEEnabledNum;
-@property(assign,retain) NSData * SMIMEEncryptionIdentityPersistentID;
-@property(assign,retain) NSString * SMIMEEncryptionIdentityUUID;
-@property(assign,readwrite) bool SMIMEPerMessageSwitchEnabled;
-@property(assign,retain) NSNumber * SMIMEPerMessageSwitchEnabledNum;
-@property(assign,retain) NSData * SMIMESigningIdentityPersistentID;
-@property(assign,retain) NSString * SMIMESigningIdentityUUID;
-@property(assign,readwrite) bool isRecentsSyncingDisabled;
-@property(assign,retain) NSNumber * isRecentsSyncingDisabledNum;
-@property(assign,readwrite) bool preventAppSheet;
-@property(assign,retain) NSNumber * preventAppSheetNum;
-@property(assign,readwrite) bool preventMove;
-@property(assign,retain) NSNumber * preventMoveNum;
+@property (nonatomic) bool SMIMEEnabled;
+@property (nonatomic, retain) NSNumber *SMIMEEnabledNum;
+@property (nonatomic, retain) NSData *SMIMEEncryptionIdentityPersistentID;
+@property (nonatomic, retain) NSString *SMIMEEncryptionIdentityUUID;
+@property (nonatomic) bool SMIMEPerMessageSwitchEnabled;
+@property (nonatomic, retain) NSNumber *SMIMEPerMessageSwitchEnabledNum;
+@property (nonatomic, retain) NSData *SMIMESigningIdentityPersistentID;
+@property (nonatomic, retain) NSString *SMIMESigningIdentityUUID;
+@property (nonatomic) bool isRecentsSyncingDisabled;
+@property (nonatomic, retain) NSNumber *isRecentsSyncingDisabledNum;
+@property (nonatomic) bool preventAppSheet;
+@property (nonatomic, retain) NSNumber *preventAppSheetNum;
+@property (nonatomic) bool preventMove;
+@property (nonatomic, retain) NSNumber *preventMoveNum;
 
 - (void).cxx_destruct;
 - (bool)SMIMEEnabled;

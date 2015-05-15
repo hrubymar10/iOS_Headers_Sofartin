@@ -43,23 +43,23 @@
     } _velocityFactor;
 }
 
-@property(assign,readwrite) bool allowsResting;
-@property(assign,readwrite) double angularDamping;
-@property(assign,readwrite) struct SCNVector4 { float x1; float x2; float x3; float x4; } angularVelocity;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } angularVelocityFactor;
-@property(assign,readwrite) unsigned long long categoryBitMask;
-@property(assign,readwrite) double charge;
-@property(assign,readwrite) unsigned long long collisionBitMask;
-@property(assign,readwrite) double damping;
-@property(assign,readwrite) double friction;
-@property(assign,readonly) bool isResting;
-@property(assign,readwrite) double mass;
-@property(assign,retain) SCNPhysicsShape * physicsShape;
-@property(assign,readwrite) double restitution;
-@property(assign,readwrite) double rollingFriction;
-@property(assign,readwrite) long long type;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } velocity;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } velocityFactor;
+@property (nonatomic) bool allowsResting;
+@property (nonatomic) double angularDamping;
+@property (nonatomic) struct SCNVector4 { float x1; float x2; float x3; float x4; } angularVelocity;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } angularVelocityFactor;
+@property (nonatomic) unsigned long long categoryBitMask;
+@property (nonatomic) double charge;
+@property (nonatomic) unsigned long long collisionBitMask;
+@property (nonatomic) double damping;
+@property (nonatomic) double friction;
+@property (nonatomic, readonly) bool isResting;
+@property (nonatomic) double mass;
+@property (nonatomic, retain) SCNPhysicsShape *physicsShape;
+@property (nonatomic) double restitution;
+@property (nonatomic) double rollingFriction;
+@property (nonatomic) long long type;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } velocity;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } velocityFactor;
 
 + (id)SCNJSExportProtocol;
 + (id)bodyWithType:(long long)arg1 shape:(id)arg2;

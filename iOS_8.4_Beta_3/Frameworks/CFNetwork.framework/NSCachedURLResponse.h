@@ -6,10 +6,10 @@
     NSCachedURLResponseInternal *_internal;
 }
 
-@property(assign,copy) NSData * data;
-@property(assign,copy) NSURLResponse * response;
-@property(assign,readonly) unsigned long long storagePolicy;
-@property(assign,copy) NSDictionary * userInfo;
+@property (readonly, copy) NSData *data;
+@property (readonly, copy) NSURLResponse *response;
+@property (readonly) unsigned long long storagePolicy;
+@property (readonly, copy) NSDictionary *userInfo;
 
 + (void)initialize;
 + (bool)supportsSecureCoding;

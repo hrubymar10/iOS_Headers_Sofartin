@@ -9,10 +9,10 @@
     NSMutableSet *_successfulNotificationIDs;
 }
 
-@property(assign,retain) NSMutableDictionary * errorByNotificationID;
-@property(assign,retain) NSArray * notificationIDs;
-@property(assign,copy) id notificationMarkedRead;
-@property(assign,retain) NSMutableSet * successfulNotificationIDs;
+@property (nonatomic, retain) NSMutableDictionary *errorByNotificationID;
+@property (nonatomic, retain) NSArray *notificationIDs;
+@property (nonatomic, copy) id notificationMarkedRead;
+@property (nonatomic, retain) NSMutableSet *successfulNotificationIDs;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

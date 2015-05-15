@@ -7,8 +7,8 @@
     NSMutableSet *_runningMetrics;
 }
 
-@property(assign,readwrite) PLOperator * operator;
-@property(assign,retain) NSMutableSet * runningMetrics;
+@property PLOperator *operator;
+@property (nonatomic, retain) NSMutableSet *runningMetrics;
 
 + (id)entryAggregateDefinitions;
 + (id)entryEventPointDefinitions;

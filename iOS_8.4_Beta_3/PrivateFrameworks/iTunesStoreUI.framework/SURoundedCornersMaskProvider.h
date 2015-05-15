@@ -6,7 +6,7 @@
     double _cornerRadius;
 }
 
-@property(assign,readwrite) double cornerRadius;
+@property (nonatomic) double cornerRadius;
 
 - (struct CGPath { }*)copyPathForMaskWithSize:(struct CGSize { double x1; double x2; })arg1;
 - (double)cornerRadius;

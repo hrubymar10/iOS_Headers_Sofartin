@@ -12,12 +12,12 @@
     unsigned int _updatedStatus;
 }
 
-@property(assign,readonly) bool hasMessageId;
-@property(assign,readwrite) bool hasStatusVersion;
-@property(assign,readwrite) bool hasUpdatedStatus;
-@property(assign,retain) NSString * messageId;
-@property(assign,readwrite) unsigned int statusVersion;
-@property(assign,readwrite) unsigned int updatedStatus;
+@property (nonatomic, readonly) bool hasMessageId;
+@property (nonatomic) bool hasStatusVersion;
+@property (nonatomic) bool hasUpdatedStatus;
+@property (nonatomic, retain) NSString *messageId;
+@property (nonatomic) unsigned int statusVersion;
+@property (nonatomic) unsigned int updatedStatus;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

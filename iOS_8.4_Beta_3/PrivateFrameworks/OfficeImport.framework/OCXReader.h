@@ -6,7 +6,7 @@
     OCPZipPackage *mZipPackage;
 }
 
-@property(assign,retain) OCPZipPackage * zipPackage;
+@property (nonatomic, retain) OCPZipPackage *zipPackage;
 
 - (void)dealloc;
 - (bool)isBinaryReader;

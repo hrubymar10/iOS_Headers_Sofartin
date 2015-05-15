@@ -6,23 +6,23 @@
     void *_rawCandidate;
 }
 
-@property(assign,readonly) NSString * analysisString;
-@property(assign,readonly) NSString * convertedAnalysisString;
-@property(assign,readonly) NSString * dictionaryReading;
-@property(assign,readonly) bool isAutocorrectedCandidate;
-@property(assign,readonly) bool isConversionCandidate;
-@property(assign,readonly) bool isEmojiCandidate;
-@property(assign,readonly) bool isExtensionCandidate;
-@property(assign,readonly) bool isFuzzyMatchCandidate;
-@property(assign,readonly) bool isLearningDictionaryCandidate;
-@property(assign,readonly) bool isPersonName;
-@property(assign,readonly) bool isPredictionCandidate;
-@property(assign,readonly) bool isUserWordCandidate;
-@property(assign,readonly) struct MecabraCandidateBase { int (**x1)(); long long x2; }* rawCandidate;
-@property(assign,readonly) struct ConversionCandidate { int (**x1)(); long long x2; }* rawConversionCandidate;
-@property(assign,readonly) NSString * surface;
-@property(assign,readonly) int type;
-@property(assign,readonly) unsigned long long wordCount;
+@property (nonatomic, readonly) NSString *analysisString;
+@property (nonatomic, readonly) NSString *convertedAnalysisString;
+@property (nonatomic, readonly) NSString *dictionaryReading;
+@property (nonatomic, readonly) bool isAutocorrectedCandidate;
+@property (nonatomic, readonly) bool isConversionCandidate;
+@property (nonatomic, readonly) bool isEmojiCandidate;
+@property (nonatomic, readonly) bool isExtensionCandidate;
+@property (nonatomic, readonly) bool isFuzzyMatchCandidate;
+@property (nonatomic, readonly) bool isLearningDictionaryCandidate;
+@property (nonatomic, readonly) bool isPersonName;
+@property (nonatomic, readonly) bool isPredictionCandidate;
+@property (nonatomic, readonly) bool isUserWordCandidate;
+@property (nonatomic, readonly) struct MecabraCandidateBase { int (**x1)(); long long x2; }*rawCandidate;
+@property (nonatomic, readonly) struct ConversionCandidate { int (**x1)(); long long x2; }*rawConversionCandidate;
+@property (nonatomic, readonly) NSString *surface;
+@property (nonatomic, readonly) int type;
+@property (nonatomic, readonly) unsigned long long wordCount;
 
 + (id)createSyntheticCandidate:(id)arg1 withLexicon:(void*)arg2 language:(int)arg3;
 

@@ -12,17 +12,17 @@
     NSMutableDictionary *_serverSideConfigurationDictionaryByPersonID;
 }
 
-@property(assign,retain) XPCNSClientConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableDictionary * focusAlbumGUIDByPersonID;
-@property(assign,retain) NSMutableDictionary * focusAlbumTimerByPersonID;
-@property(assign,retain) NSMutableDictionary * foregroundPingTimerContextByPersonID;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * memberQueue;
-@property(assign,retain) XPCNSClientConnection * noWakeConnection;
-@property(assign,retain) NSMutableDictionary * serverSideConfigurationDictionaryByPersonID;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) XPCNSClientConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMutableDictionary *focusAlbumGUIDByPersonID;
+@property (nonatomic, retain) NSMutableDictionary *focusAlbumTimerByPersonID;
+@property (nonatomic, retain) NSMutableDictionary *foregroundPingTimerContextByPersonID;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *memberQueue;
+@property (nonatomic, retain) XPCNSClientConnection *noWakeConnection;
+@property (nonatomic, retain) NSMutableDictionary *serverSideConfigurationDictionaryByPersonID;
+@property (readonly) Class superclass;
 
 + (id)sharedConnection;
 

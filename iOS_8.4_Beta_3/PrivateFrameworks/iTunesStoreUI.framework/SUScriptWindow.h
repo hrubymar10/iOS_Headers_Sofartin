@@ -15,18 +15,18 @@
     id _width;
 }
 
-@property(assign,retain) SUScriptViewController * backViewController;
-@property(assign,copy) id canSwipeToDismiss;
-@property(assign,readonly) SUScriptWindowContext * context;
-@property(assign,retain) SUScriptViewController * frontViewController;
-@property(assign,retain) NSNumber * height;
-@property(assign,retain) WebScriptObject * maskFunction;
-@property(assign,retain) NSNumber * shadowOpacity;
-@property(assign,retain) NSNumber * shadowRadius;
-@property(assign,retain) WebScriptObject * shouldDismissFunction;
-@property(assign,readonly) NSString * style;
-@property(assign,retain) NSNumber * width;
-@property(assign,readonly) SUScriptViewController * windowParentViewController;
+@property (retain) SUScriptViewController *backViewController;
+@property (copy) id canSwipeToDismiss;
+@property (readonly) SUScriptWindowContext *context;
+@property (retain) SUScriptViewController *frontViewController;
+@property (retain) NSNumber *height;
+@property (retain) WebScriptObject *maskFunction;
+@property (retain) NSNumber *shadowOpacity;
+@property (retain) NSNumber *shadowRadius;
+@property (retain) WebScriptObject *shouldDismissFunction;
+@property (readonly) NSString *style;
+@property (retain) NSNumber *width;
+@property (readonly) SUScriptViewController *windowParentViewController;
 
 + (void)dismissWindowsWithOptions:(id)arg1;
 + (void)initialize;

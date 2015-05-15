@@ -7,8 +7,8 @@
     UITraitCollection *_traitCollection;
 }
 
-@property(assign,retain) UIAlertControllerDescriptor * descriptor;
-@property(assign,retain) UITraitCollection * traitCollection;
+@property (nonatomic, retain) UIAlertControllerDescriptor *descriptor;
+@property (nonatomic, retain) UITraitCollection *traitCollection;
 
 - (id)_detailMessageFont;
 - (double)_scaledMarginAboveMessageLabelFirstBaseline;

@@ -54,13 +54,13 @@
     bool mUseNormals;
 }
 
-@property(assign,readwrite) bool cullBackfaces;
-@property(assign,readwrite) bool disableColorOutput;
-@property(assign,readwrite) struct tvec4<float> { union { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; union { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; union { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; union { float x_4_1_1; float x_4_1_2; float x_4_1_3; } x4; } filterRadius;
-@property(assign,readwrite) float lineWidth;
-@property(assign,copy) TSDStroke * stroke;
-@property(assign,readwrite) struct tvec4<float> { union { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; union { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; union { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; union { float x_4_1_1; float x_4_1_2; float x_4_1_3; } x4; } strokeColor;
-@property(assign,readwrite) bool useNormals;
+@property (nonatomic) bool cullBackfaces;
+@property (nonatomic) bool disableColorOutput;
+@property (nonatomic) struct tvec4<float> { union { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; union { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; union { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; union { float x_4_1_1; float x_4_1_2; float x_4_1_3; } x4; } filterRadius;
+@property (nonatomic) float lineWidth;
+@property (nonatomic, copy) TSDStroke *stroke;
+@property (nonatomic) struct tvec4<float> { union { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; union { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; union { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; union { float x_4_1_1; float x_4_1_2; float x_4_1_3; } x4; } strokeColor;
+@property (nonatomic) bool useNormals;
 
 + (id)setting;
 

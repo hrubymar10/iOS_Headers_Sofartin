@@ -14,18 +14,18 @@
     NSString *_syncKey;
 }
 
-@property(assign,retain) NSDictionary * appleAttributes;
-@property(assign,retain) NSURL * bookmarkURL;
-@property(assign,retain) CoreDAVErrorItem * bulkUploadErrorItem;
-@property(assign,readonly) NSArray * childrenOrder;
-@property(assign,readonly) NSData * dataPayload;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSURL * serverID;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * syncKey;
+@property (nonatomic, readonly, retain) NSDictionary *appleAttributes;
+@property (nonatomic, readonly, retain) NSURL *bookmarkURL;
+@property (nonatomic, retain) CoreDAVErrorItem *bulkUploadErrorItem;
+@property (nonatomic, readonly) NSArray *childrenOrder;
+@property (nonatomic, readonly) NSData *dataPayload;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) NSString *name;
+@property (nonatomic, retain) NSURL *serverID;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *syncKey;
 
 - (id)appleAttributes;
 - (id)bookmarkURL;

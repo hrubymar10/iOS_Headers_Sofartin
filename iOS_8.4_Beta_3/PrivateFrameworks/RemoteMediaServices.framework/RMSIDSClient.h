@@ -10,11 +10,11 @@
     NSMutableDictionary *_messageRecords;
 }
 
-@property(getter=isCompanionAvailable,assign,readwrite) bool companionAvailable;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (getter=isCompanionAvailable, nonatomic) bool companionAvailable;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)sharedClient;
 

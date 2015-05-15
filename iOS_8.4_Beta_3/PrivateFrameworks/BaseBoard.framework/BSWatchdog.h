@@ -15,12 +15,12 @@
     BSTimer *_timer;
 }
 
-@property(assign,retain) <BSWatchdogDelegate> * delegate;
-@property(getter=hasFired,assign,readonly) bool fired;
-@property(assign,retain) <BSWatchdogProviding> * provider;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSDate * startDate;
-@property(assign,readonly) double timeout;
+@property (nonatomic, retain) <BSWatchdogDelegate> *delegate;
+@property (getter=hasFired, nonatomic, readonly) bool fired;
+@property (nonatomic, readonly, retain) <BSWatchdogProviding> *provider;
+@property (nonatomic, readonly, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, readonly, retain) NSDate *startDate;
+@property (nonatomic, readonly) double timeout;
 
 - (void)_completeWatchdogAfterFiring:(bool)arg1;
 - (void)_invalidateTimer;

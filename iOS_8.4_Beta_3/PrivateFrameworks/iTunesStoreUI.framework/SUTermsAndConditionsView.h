@@ -13,10 +13,10 @@
     SUClientInterface *clientInterface;
 }
 
-@property(assign,retain) SUClientInterface * clientInterface;
-@property(assign,readwrite) bool hideAccountButton;
-@property(assign,readwrite) double rightMargin;
-@property(assign,readwrite) long long style;
+@property (nonatomic, retain) SUClientInterface *clientInterface;
+@property (nonatomic) bool hideAccountButton;
+@property (nonatomic) double rightMargin;
+@property (nonatomic) long long style;
 
 - (void)_accountsChangedNotification:(id)arg1;
 - (id)_button;

@@ -12,8 +12,8 @@
     PLPhotoEditModel *_photoEditModelForCurrentValues;
 }
 
-@property(assign,retain) CIImage * baseImage;
-@property(assign,retain) PLPhotoEditModel * photoEditModel;
+@property (nonatomic, retain) CIImage *baseImage;
+@property (nonatomic, retain) PLPhotoEditModel *photoEditModel;
 
 - (void).cxx_destruct;
 - (void)_ensureCurrentImageValuesAreComputed;

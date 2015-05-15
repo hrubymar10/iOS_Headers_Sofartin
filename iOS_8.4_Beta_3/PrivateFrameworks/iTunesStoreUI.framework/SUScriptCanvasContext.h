@@ -18,20 +18,20 @@
     double _width;
 }
 
-@property(assign,retain) id fillStyle;
-@property(assign,readwrite) double globalAlpha;
-@property(assign,retain) NSString * globalCompositeOperation;
-@property(assign,readonly) double height;
-@property(assign,retain) id lineCap;
-@property(assign,retain) id lineJoin;
-@property(assign,readwrite) double lineWidth;
-@property(assign,readwrite) double miterLimit;
-@property(assign,readwrite) double shadowBlur;
-@property(assign,retain) id shadowColor;
-@property(assign,readwrite) double shadowOffsetX;
-@property(assign,readwrite) double shadowOffsetY;
-@property(assign,retain) id strokeStyle;
-@property(assign,readonly) double width;
+@property (retain) id fillStyle;
+@property double globalAlpha;
+@property (retain) NSString *globalCompositeOperation;
+@property (readonly) double height;
+@property (retain) id lineCap;
+@property (retain) id lineJoin;
+@property double lineWidth;
+@property double miterLimit;
+@property double shadowBlur;
+@property (retain) id shadowColor;
+@property double shadowOffsetX;
+@property double shadowOffsetY;
+@property (retain) id strokeStyle;
+@property (readonly) double width;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

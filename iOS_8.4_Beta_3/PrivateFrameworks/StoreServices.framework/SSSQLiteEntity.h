@@ -7,13 +7,13 @@
     long long _persistentID;
 }
 
-@property(assign,readonly) SSSQLiteDatabase * database;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool existsInDatabase;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long persistentID;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) SSSQLiteDatabase *database;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool existsInDatabase;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long persistentID;
+@property (readonly) Class superclass;
 
 + (id)_aggregateValueForProperty:(id)arg1 function:(id)arg2 predicate:(id)arg3 database:(id)arg4;
 + (bool)_insertValues:(id)arg1 intoTable:(id)arg2 withPersistentID:(long long)arg3 database:(id)arg4;

@@ -12,17 +12,17 @@
     AVVoiceController *_voiceController;
 }
 
-@property(setter=_setActivationMode:,assign,readwrite) long long _activationMode;
-@property(assign,retain) CKAudioAnalyzer * audioAnalyzer;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKVoiceControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_source> * powerUpdateTimer;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,copy) NSDictionary * recordSettings;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) AVVoiceController * voiceController;
+@property (setter=_setActivationMode:, nonatomic) long long _activationMode;
+@property (nonatomic, retain) CKAudioAnalyzer *audioAnalyzer;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKVoiceControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *powerUpdateTimer;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, copy) NSDictionary *recordSettings;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) AVVoiceController *voiceController;
 
 - (long long)_activationMode;
 - (void)_setActivationMode:(long long)arg1;

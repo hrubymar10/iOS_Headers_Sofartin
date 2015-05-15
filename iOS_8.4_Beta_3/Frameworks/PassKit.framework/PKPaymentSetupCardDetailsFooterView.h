@@ -8,9 +8,9 @@
     UIButton *_setupLaterButton;
 }
 
-@property(assign,readwrite) long long context;
-@property(assign,retain) UIButton * manualEntryButton;
-@property(assign,retain) UIButton * setupLaterButton;
+@property (nonatomic) long long context;
+@property (nonatomic, retain) UIButton *manualEntryButton;
+@property (nonatomic, retain) UIButton *setupLaterButton;
 
 - (long long)context;
 - (void)dealloc;

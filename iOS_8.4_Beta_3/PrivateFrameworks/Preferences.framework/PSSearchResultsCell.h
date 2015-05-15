@@ -7,8 +7,8 @@
     bool _shouldIndentSeparator;
 }
 
-@property(assign,readwrite) bool shouldIndentContent;
-@property(assign,readwrite) bool shouldIndentSeparator;
+@property (nonatomic) bool shouldIndentContent;
+@property (nonatomic) bool shouldIndentSeparator;
 
 + (id)reuseIdentifier;
 

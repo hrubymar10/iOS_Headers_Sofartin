@@ -4,7 +4,7 @@
 
 @interface NSInputStream : NSStream
 
-@property(assign,readonly) bool hasBytesAvailable;
+@property (readonly) bool hasBytesAvailable;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)inputStreamWithData:(id)arg1;

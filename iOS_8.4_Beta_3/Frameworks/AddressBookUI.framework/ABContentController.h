@@ -8,7 +8,7 @@
     UIView *_contentLayer;
 }
 
-@property(assign,readwrite) void* addressBook;
+@property (nonatomic) void*addressBook;
 
 - (void*)addressBook;
 - (void)back:(bool)arg1 save:(bool)arg2;

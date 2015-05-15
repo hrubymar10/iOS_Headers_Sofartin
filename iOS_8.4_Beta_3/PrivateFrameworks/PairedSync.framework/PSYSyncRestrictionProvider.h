@@ -16,13 +16,13 @@
     unsigned long long _syncRestriction;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PSYSyncRestrictionProviderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * serviceName;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long syncRestriction;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PSYSyncRestrictionProviderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *serviceName;
+@property (readonly) Class superclass;
+@property unsigned long long syncRestriction;
 
 - (void).cxx_destruct;
 - (void)_createPairingDataDirectoryIfNeeded;

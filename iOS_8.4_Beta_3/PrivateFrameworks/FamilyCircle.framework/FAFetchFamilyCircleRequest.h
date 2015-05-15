@@ -11,12 +11,12 @@
     bool _signedInAccountShouldBeApprover;
 }
 
-@property(assign,readwrite) bool doNotFetchFromServer;
-@property(assign,copy) NSArray * expectedDSIDs;
-@property(assign,readwrite) bool forceServerFetch;
-@property(assign,readwrite) bool promptUserToResolveAuthenticatonFailure;
-@property(assign,retain) NSDictionary * serverResponse;
-@property(assign,readwrite) bool signedInAccountShouldBeApprover;
+@property bool doNotFetchFromServer;
+@property (copy) NSArray *expectedDSIDs;
+@property bool forceServerFetch;
+@property bool promptUserToResolveAuthenticatonFailure;
+@property (readonly, retain) NSDictionary *serverResponse;
+@property bool signedInAccountShouldBeApprover;
 
 - (void).cxx_destruct;
 - (bool)doNotFetchFromServer;

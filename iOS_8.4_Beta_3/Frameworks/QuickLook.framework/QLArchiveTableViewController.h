@@ -6,7 +6,7 @@
     QLArchiveViewer *_archiveViewer;
 }
 
-@property(assign,readwrite) QLArchiveViewer * archiveViewer;
+@property QLArchiveViewer *archiveViewer;
 
 - (id)archiveViewer;
 - (void)setArchiveViewer:(id)arg1;

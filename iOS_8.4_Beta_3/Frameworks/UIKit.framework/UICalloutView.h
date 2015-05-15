@@ -63,22 +63,22 @@
     UIImageView *_topAnchor;
 }
 
-@property(assign,readonly) double UICalloutViewButtonPadding;
-@property(assign,readonly) double UICalloutViewCapHeight;
-@property(assign,readonly) double UICalloutViewCapPaddingTop;
-@property(assign,readonly) double UICalloutViewHorizontalMargin;
-@property(assign,readonly) double UICalloutViewHorizontalPadding;
-@property(assign,readonly) double UICalloutViewLayoutDuration;
-@property(assign,readonly) double UICalloutViewMinimumWidth;
-@property(assign,readonly) double UICalloutViewVerticalMargin;
-@property(assign,readwrite) bool canAnchorFromBottom;
-@property(assign,retain) UIView * leftView;
-@property(assign,readwrite) double maximumWidth;
-@property(assign,retain) UIView * rightView;
-@property(assign,readwrite) long long subtitleLineBreakMode;
-@property(assign,readwrite) long long subtitleTextAlignment;
-@property(assign,readwrite) long long titleLineBreakMode;
-@property(assign,readwrite) long long titleTextAlignment;
+@property (nonatomic, readonly) double UICalloutViewButtonPadding;
+@property (nonatomic, readonly) double UICalloutViewCapHeight;
+@property (nonatomic, readonly) double UICalloutViewCapPaddingTop;
+@property (nonatomic, readonly) double UICalloutViewHorizontalMargin;
+@property (nonatomic, readonly) double UICalloutViewHorizontalPadding;
+@property (nonatomic, readonly) double UICalloutViewLayoutDuration;
+@property (nonatomic, readonly) double UICalloutViewMinimumWidth;
+@property (nonatomic, readonly) double UICalloutViewVerticalMargin;
+@property (nonatomic) bool canAnchorFromBottom;
+@property (nonatomic, retain) UIView *leftView;
+@property (nonatomic) double maximumWidth;
+@property (nonatomic, retain) UIView *rightView;
+@property (nonatomic) long long subtitleLineBreakMode;
+@property (nonatomic) long long subtitleTextAlignment;
+@property (nonatomic) long long titleLineBreakMode;
+@property (nonatomic) long long titleTextAlignment;
 
 + (id)_backgroundImage;
 + (id)_bottomAnchorImage;

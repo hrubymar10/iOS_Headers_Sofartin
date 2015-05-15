@@ -18,12 +18,12 @@
     NSData *ticket_;
 }
 
-@property(assign,retain) CDXClient * CDXClient;
-@property(assign,readwrite) <CDXClientSessionDelegate> * delegate;
-@property(assign,copy) id inboundHandler;
-@property(assign,copy) NSIndexSet * participantsInFlight;
-@property(assign,copy) NSData * sessionKey;
-@property(assign,copy) NSData * ticket;
+@property (nonatomic, readonly, retain) CDXClient *CDXClient;
+@property (nonatomic) <CDXClientSessionDelegate> *delegate;
+@property (nonatomic, copy) id inboundHandler;
+@property (nonatomic, readonly, copy) NSIndexSet *participantsInFlight;
+@property (nonatomic, readonly, copy) NSData *sessionKey;
+@property (nonatomic, copy) NSData *ticket;
 
 - (id)CDXClient;
 - (void)dealloc;

@@ -7,8 +7,8 @@
     VKModelObject *_submodel;
 }
 
-@property(assign,readwrite) unsigned char pass;
-@property(assign,retain) VKModelObject * submodel;
+@property (nonatomic) unsigned char pass;
+@property (nonatomic, retain) VKModelObject *submodel;
 
 - (void)dealloc;
 - (id)description;

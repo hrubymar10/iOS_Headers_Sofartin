@@ -15,11 +15,11 @@
     } _response;
 }
 
-@property(assign,readonly) WKFrameInfo * _frame;
-@property(assign,readonly) NSURLRequest * _request;
-@property(assign,readwrite) bool canShowMIMEType;
-@property(getter=isForMainFrame,assign,readonly) bool forMainFrame;
-@property(assign,copy) NSURLResponse * response;
+@property (nonatomic, readonly) WKFrameInfo *_frame;
+@property (nonatomic, readonly) NSURLRequest *_request;
+@property (nonatomic) bool canShowMIMEType;
+@property (getter=isForMainFrame, nonatomic, readonly) bool forMainFrame;
+@property (nonatomic, copy) NSURLResponse *response;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

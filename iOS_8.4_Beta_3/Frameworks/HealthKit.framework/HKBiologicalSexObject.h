@@ -6,7 +6,7 @@
     long long _biologicalSex;
 }
 
-@property(assign,readonly) long long biologicalSex;
+@property (readonly) long long biologicalSex;
 
 - (id)_initWithBiologicalSex:(long long)arg1;
 - (long long)biologicalSex;

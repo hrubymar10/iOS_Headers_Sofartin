@@ -4,8 +4,8 @@
 
 @interface TDThemeBitSource : NSManagedObject
 
-@property(assign,retain) NSSet * assets;
-@property(assign,retain) NSString * path;
+@property (nonatomic, retain) NSSet *assets;
+@property (nonatomic, retain) NSString *path;
 
 - (id)fileURLWithDocument:(id)arg1;
 - (id)name;

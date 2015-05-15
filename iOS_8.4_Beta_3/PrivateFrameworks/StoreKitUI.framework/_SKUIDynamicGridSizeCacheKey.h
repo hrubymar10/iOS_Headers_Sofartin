@@ -7,8 +7,8 @@
     SKUIViewElement *_viewElement;
 }
 
-@property(assign,readwrite) long long position;
-@property(assign,retain) SKUIViewElement * viewElement;
+@property (nonatomic) long long position;
+@property (nonatomic, retain) SKUIViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (bool)__isSKUIDynamicGridSizeCacheKey;

@@ -12,18 +12,18 @@
     int _transitionForModalViewPresentation;
 }
 
-@property(assign,readwrite) bool canHideDoneAndCancelButtons;
-@property(assign,readwrite) <EKEventEditViewDelegate> * editViewDelegate;
-@property(assign,retain) EKEventEditor * editor;
-@property(assign,retain) UIColor * editorBackgroundColor;
-@property(assign,readwrite) double editorNavBarLeftContentInset;
-@property(assign,readwrite) double editorNavBarRightContentInset;
-@property(assign,retain) EKEvent * event;
-@property(assign,retain) EKEventStore * eventStore;
-@property(assign,readwrite) bool scrollToNotes;
-@property(assign,readwrite) bool showAttachments;
-@property(assign,retain) EKEventEditViewController * strongSelf;
-@property(assign,readwrite) int transitionForModalViewPresentation;
+@property (nonatomic) bool canHideDoneAndCancelButtons;
+@property (nonatomic) <EKEventEditViewDelegate> *editViewDelegate;
+@property (nonatomic, retain) EKEventEditor *editor;
+@property (nonatomic, retain) UIColor *editorBackgroundColor;
+@property (nonatomic) double editorNavBarLeftContentInset;
+@property (nonatomic) double editorNavBarRightContentInset;
+@property (nonatomic, retain) EKEvent *event;
+@property (nonatomic, retain) EKEventStore *eventStore;
+@property (nonatomic) bool scrollToNotes;
+@property (nonatomic) bool showAttachments;
+@property (nonatomic, retain) EKEventEditViewController *strongSelf;
+@property (nonatomic) int transitionForModalViewPresentation;
 
 + (void)setDefaultDatesForEvent:(id)arg1;
 

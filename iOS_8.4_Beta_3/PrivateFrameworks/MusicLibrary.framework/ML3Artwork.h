@@ -12,13 +12,13 @@
     long long _sourceType;
 }
 
-@property(assign,readonly) NSString * artworkToken;
-@property(assign,readonly) long long artworkType;
-@property(assign,retain) NSDictionary * interestDictionary;
-@property(assign,readonly) ML3MusicLibrary * musicLibrary;
-@property(assign,readonly) NSURL * originalFileURL;
-@property(assign,readonly) NSString * relativePath;
-@property(assign,readonly) long long sourceType;
+@property (nonatomic, readonly) NSString *artworkToken;
+@property (nonatomic, readonly) long long artworkType;
+@property (nonatomic, retain) NSDictionary *interestDictionary;
+@property (nonatomic, readonly) ML3MusicLibrary *musicLibrary;
+@property (nonatomic, readonly) NSURL *originalFileURL;
+@property (nonatomic, readonly) NSString *relativePath;
+@property (nonatomic, readonly) long long sourceType;
 
 - (void).cxx_destruct;
 - (void)_faultInProperties;

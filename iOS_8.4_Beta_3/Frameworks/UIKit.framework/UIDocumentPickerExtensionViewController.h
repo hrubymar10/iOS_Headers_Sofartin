@@ -10,15 +10,15 @@
     NSArray *_validTypes;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long documentPickerMode;
-@property(assign,copy) NSURL * documentStorageURL;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * originalURL;
-@property(assign,copy) NSString * providerIdentifier;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * validTypes;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) unsigned long long documentPickerMode;
+@property (nonatomic, copy) NSURL *documentStorageURL;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURL *originalURL;
+@property (nonatomic, copy) NSString *providerIdentifier;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *validTypes;
 
 + (id)_exportedInterface;
 + (id)_remoteViewControllerInterface;

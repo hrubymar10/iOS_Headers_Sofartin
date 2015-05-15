@@ -7,19 +7,19 @@
     bool _shouldArchiveUIAppearanceTags;
 }
 
-@property(setter=_setHasCustomizableInstanceAppearanceModifications:,assign,readwrite) bool _hasCustomizableInstanceAppearanceModifications;
-@property(setter=_setShouldArchiveUIAppearanceTags:,assign,readwrite) bool _shouldArchiveUIAppearanceTags;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } imageInsets;
-@property(assign,retain) UIImage * landscapeImagePhone;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } landscapeImagePhoneInsets;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long tag;
-@property(assign,copy) NSString * title;
+@property (setter=_setHasCustomizableInstanceAppearanceModifications:, nonatomic) bool _hasCustomizableInstanceAppearanceModifications;
+@property (setter=_setShouldArchiveUIAppearanceTags:, nonatomic) bool _shouldArchiveUIAppearanceTags;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } imageInsets;
+@property (nonatomic, retain) UIImage *landscapeImagePhone;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } landscapeImagePhoneInsets;
+@property (readonly) Class superclass;
+@property (nonatomic) long long tag;
+@property (nonatomic, copy) NSString *title;
 
 + (id)_appearanceBlindViewClasses;
 + (id)_appearanceRecorder;

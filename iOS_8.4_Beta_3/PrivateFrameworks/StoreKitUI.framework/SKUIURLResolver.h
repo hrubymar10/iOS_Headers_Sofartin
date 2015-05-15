@@ -10,13 +10,13 @@
     SKUIPassbookLoader *_passbookLoader;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIURLResolverDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <UINavigationControllerDelegate> * navigationControllerDelegate;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIURLResolverDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <UINavigationControllerDelegate> *navigationControllerDelegate;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (readonly) Class superclass;
 
 + (id)tabIdentifierForURL:(id)arg1;
 

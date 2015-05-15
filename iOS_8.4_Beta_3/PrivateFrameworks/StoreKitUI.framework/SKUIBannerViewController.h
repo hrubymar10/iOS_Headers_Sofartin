@@ -16,14 +16,14 @@
     NSDictionary *_scriptContextDictionary;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIBannerViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSOperationQueue * resourceOperationQueue;
-@property(assign,copy) NSDictionary * scriptContextDictionary;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIBannerViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSOperationQueue *resourceOperationQueue;
+@property (nonatomic, copy) NSDictionary *scriptContextDictionary;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_bannerViewAction:(id)arg1;

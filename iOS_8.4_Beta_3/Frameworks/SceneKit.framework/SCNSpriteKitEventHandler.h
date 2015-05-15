@@ -7,7 +7,7 @@
     NSMutableDictionary *_touchMap;
 }
 
-@property(assign,retain) SKScene * scene;
+@property (nonatomic, retain) SKScene *scene;
 
 - (void)dealloc;
 - (id)init;

@@ -9,12 +9,12 @@
     SKUIStorePageSplit *_topSplit;
 }
 
-@property(assign,copy) SKUIStorePageSplit * bottomSplit;
-@property(assign,readonly) SKUIStorePageSplit * firstSplit;
-@property(assign,copy) SKUIStorePageSplit * leftSplit;
-@property(assign,readonly) long long numberOfSplits;
-@property(assign,copy) SKUIStorePageSplit * rightSplit;
-@property(assign,copy) SKUIStorePageSplit * topSplit;
+@property (nonatomic, copy) SKUIStorePageSplit *bottomSplit;
+@property (nonatomic, readonly) SKUIStorePageSplit *firstSplit;
+@property (nonatomic, copy) SKUIStorePageSplit *leftSplit;
+@property (nonatomic, readonly) long long numberOfSplits;
+@property (nonatomic, copy) SKUIStorePageSplit *rightSplit;
+@property (nonatomic, copy) SKUIStorePageSplit *topSplit;
 
 - (void).cxx_destruct;
 - (id)bottomSplit;

@@ -8,9 +8,9 @@
     NSData *_serverChangeTokenData;
 }
 
-@property(assign,readonly) NSArray * cloudHistoryVisits;
-@property(assign,readonly) NSArray * historyTombstones;
-@property(assign,readonly) NSData * serverChangeTokenData;
+@property (nonatomic, readonly) NSArray *cloudHistoryVisits;
+@property (nonatomic, readonly) NSArray *historyTombstones;
+@property (nonatomic, readonly) NSData *serverChangeTokenData;
 
 - (void).cxx_destruct;
 - (void)_addCloudHistoryVisit:(id)arg1;

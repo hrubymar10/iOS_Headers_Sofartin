@@ -6,7 +6,7 @@
     <CoreActivityPedometerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <CoreActivityPedometerDelegate> * delegate;
+@property (nonatomic) <CoreActivityPedometerDelegate> *delegate;
 
 + (id)sharedStepActivityHandler;
 

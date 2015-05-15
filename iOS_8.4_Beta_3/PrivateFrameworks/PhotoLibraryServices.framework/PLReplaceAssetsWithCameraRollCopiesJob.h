@@ -8,11 +8,11 @@
     PLPhotoLibrary *_photoLibrary;
 }
 
-@property(assign,retain) PLManagedAlbum * album;
-@property(assign,copy) NSArray * assets;
-@property(assign,retain) NSPersistentStoreCoordinator * coordinator;
-@property(assign,retain) PLManagedObjectContext * managedObjectContext;
-@property(assign,retain) PLPhotoLibrary * photoLibrary;
+@property (nonatomic, retain) PLManagedAlbum *album;
+@property (nonatomic, copy) NSArray *assets;
+@property (nonatomic, readonly, retain) NSPersistentStoreCoordinator *coordinator;
+@property (nonatomic, readonly, retain) PLManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) PLPhotoLibrary *photoLibrary;
 
 + (void)replaceAssets:(id)arg1 withCameraRollCopiesInAlbum:(id)arg2;
 

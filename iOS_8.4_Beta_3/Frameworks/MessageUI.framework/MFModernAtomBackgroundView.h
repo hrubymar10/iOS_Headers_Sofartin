@@ -12,11 +12,11 @@
     UIView *_separatorView;
 }
 
-@property(assign,readwrite) MFModernAtomView * hostAtomView;
-@property(assign,readwrite) double scalingFactor;
-@property(assign,readonly) UIView * selectedView;
-@property(assign,readwrite) int separatorStyle;
-@property(assign,readonly) UIView * separatorView;
+@property (nonatomic) MFModernAtomView *hostAtomView;
+@property (nonatomic) double scalingFactor;
+@property (nonatomic, readonly) UIView *selectedView;
+@property (nonatomic) int separatorStyle;
+@property (nonatomic, readonly) UIView *separatorView;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })_backgroundBleedArea;
 - (id)_chevronImage;

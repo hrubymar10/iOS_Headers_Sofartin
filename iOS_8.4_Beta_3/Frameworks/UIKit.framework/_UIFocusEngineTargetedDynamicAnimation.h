@@ -10,10 +10,10 @@
     double _value;
 }
 
-@property(assign,readwrite) double convergenceRate;
-@property(assign,readwrite) double minimumDifference;
-@property(assign,readwrite) double targetValue;
-@property(assign,readwrite) double value;
+@property (nonatomic) double convergenceRate;
+@property (nonatomic) double minimumDifference;
+@property (nonatomic) double targetValue;
+@property (nonatomic) double value;
 
 - (bool)_animateForInterval:(double)arg1;
 - (double)convergenceRate;

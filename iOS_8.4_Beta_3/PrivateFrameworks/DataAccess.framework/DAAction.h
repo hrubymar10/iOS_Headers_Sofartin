@@ -9,10 +9,10 @@
     id _serverId;
 }
 
-@property(assign,readwrite) int changeId;
-@property(assign,retain) id changedItem;
-@property(assign,readwrite) long long itemChangeType;
-@property(assign,retain) id serverId;
+@property (nonatomic) int changeId;
+@property (nonatomic, retain) id changedItem;
+@property (nonatomic) long long itemChangeType;
+@property (nonatomic, retain) id serverId;
 
 - (void).cxx_destruct;
 - (void)_setChangedItem:(id)arg1;

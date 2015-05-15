@@ -6,7 +6,7 @@
     AVPlayerController *_playerController;
 }
 
-@property(assign,retain) AVPlayerController * playerController;
+@property (nonatomic, retain) AVPlayerController *playerController;
 
 - (void).cxx_destruct;
 - (long long)_handleRemoteCommandEvent:(id)arg1;

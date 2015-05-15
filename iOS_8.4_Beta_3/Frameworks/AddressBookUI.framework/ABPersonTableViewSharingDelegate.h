@@ -15,20 +15,20 @@
     id _willWeiboLocationCallback;
 }
 
-@property(assign,readonly) bool canSendMMS;
-@property(assign,readonly) bool canSendMail;
-@property(assign,readonly) bool canShareContact;
-@property(assign,readonly) bool canTweet;
-@property(assign,readonly) bool canWeibo;
-@property(assign,readwrite) ABPersonViewControllerHelper * helper;
-@property(assign,retain) UIImage * shareLocationSnapshotImage;
-@property(assign,copy) NSString * shareLocationURL;
-@property(assign,copy) NSString * shareMessageBody;
-@property(assign,readwrite) bool shareMessageBodyIsHTML;
-@property(assign,copy) NSString * shareMessageSubject;
-@property(assign,retain) ABStyleProvider * styleProvider;
-@property(assign,copy) id willTweetLocationCallback;
-@property(assign,copy) id willWeiboLocationCallback;
+@property (nonatomic, readonly) bool canSendMMS;
+@property (nonatomic, readonly) bool canSendMail;
+@property (nonatomic, readonly) bool canShareContact;
+@property (nonatomic, readonly) bool canTweet;
+@property (nonatomic, readonly) bool canWeibo;
+@property (nonatomic) ABPersonViewControllerHelper *helper;
+@property (nonatomic, retain) UIImage *shareLocationSnapshotImage;
+@property (nonatomic, copy) NSString *shareLocationURL;
+@property (nonatomic, copy) NSString *shareMessageBody;
+@property (nonatomic) bool shareMessageBodyIsHTML;
+@property (nonatomic, copy) NSString *shareMessageSubject;
+@property (nonatomic, retain) ABStyleProvider *styleProvider;
+@property (nonatomic, copy) id willTweetLocationCallback;
+@property (nonatomic, copy) id willWeiboLocationCallback;
 
 + (id)_fakePersonForMergedPeople:(id)arg1;
 

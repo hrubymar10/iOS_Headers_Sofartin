@@ -8,8 +8,8 @@
     unsigned long long _taskIdentifier;
 }
 
-@property(assign,readonly) ISOperation * operation;
-@property(assign,readonly) NSString * permissionIdentifier;
+@property (readonly) ISOperation *operation;
+@property (readonly) NSString *permissionIdentifier;
 
 - (void)_cancelBackgroundAssertion;
 - (void)_removeBackgroundAssertion;

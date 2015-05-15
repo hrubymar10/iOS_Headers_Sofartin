@@ -7,8 +7,8 @@
     int _imageManagerRequestID;
 }
 
-@property(assign,readwrite) bool canceled;
-@property(assign,readwrite) int imageManagerRequestID;
+@property (nonatomic) bool canceled;
+@property (nonatomic) int imageManagerRequestID;
 
 - (bool)canceled;
 - (int)imageManagerRequestID;

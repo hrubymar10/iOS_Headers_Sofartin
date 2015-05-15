@@ -13,12 +13,12 @@
     GEORouteMatch *_routeMatch;
 }
 
-@property(assign,readonly) double projectedCourse;
-@property(assign,readonly) struct { double x1; double x2; } projectedLocation;
-@property(assign,readonly) bool projectedLocationOnRoute;
-@property(assign,readonly) struct VKPoint { double x1; double x2; double x3; } projectedPosition;
-@property(assign,retain) GEORouteMatch * projectedRouteMatch;
-@property(assign,retain) GEORouteMatch * routeMatch;
+@property (nonatomic, readonly) double projectedCourse;
+@property (nonatomic, readonly) struct { double x1; double x2; } projectedLocation;
+@property (nonatomic, readonly) bool projectedLocationOnRoute;
+@property (nonatomic, readonly) struct VKPoint { double x1; double x2; double x3; } projectedPosition;
+@property (nonatomic, retain) GEORouteMatch *projectedRouteMatch;
+@property (nonatomic, retain) GEORouteMatch *routeMatch;
 
 - (id).cxx_construct;
 - (void)_updateCourseAndPositionFromRouteMatch;

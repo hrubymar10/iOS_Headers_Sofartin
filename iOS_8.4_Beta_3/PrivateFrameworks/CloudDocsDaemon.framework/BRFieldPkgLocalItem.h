@@ -13,12 +13,12 @@
     long long _size;
 }
 
-@property(assign,readwrite) long long fileID;
-@property(assign,readwrite) unsigned int generationID;
-@property(assign,readwrite) bool hasGenerationID;
-@property(assign,readwrite) bool hasSize;
-@property(assign,retain) BRFieldPkgItem * item;
-@property(assign,readwrite) long long size;
+@property (nonatomic) long long fileID;
+@property (nonatomic) unsigned int generationID;
+@property (nonatomic) bool hasGenerationID;
+@property (nonatomic) bool hasSize;
+@property (nonatomic, retain) BRFieldPkgItem *item;
+@property (nonatomic) long long size;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

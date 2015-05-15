@@ -11,7 +11,7 @@
     bool _shouldDeferEventFlushing;
 }
 
-@property(assign,readwrite) bool shouldDeferEventFlushing;
+@property (nonatomic) bool shouldDeferEventFlushing;
 
 + (unsigned int)reportingEnableFlag;
 + (void)setRTCReportingEnableFlag:(unsigned int)arg1;

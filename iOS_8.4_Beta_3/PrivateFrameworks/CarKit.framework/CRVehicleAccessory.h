@@ -10,11 +10,11 @@
     NSString *_vehicleName;
 }
 
-@property(assign,retain) NSArray * accessoryProtocols;
-@property(assign,retain) NSString * bluetoothAddress;
-@property(assign,retain) NSData * certificateSerialNumber;
-@property(assign,retain) NSNumber * connectionID;
-@property(assign,retain) NSString * vehicleName;
+@property (nonatomic, retain) NSArray *accessoryProtocols;
+@property (nonatomic, retain) NSString *bluetoothAddress;
+@property (nonatomic, retain) NSData *certificateSerialNumber;
+@property (nonatomic, retain) NSNumber *connectionID;
+@property (nonatomic, retain) NSString *vehicleName;
 
 - (void).cxx_destruct;
 - (bool)_updateNameUsingAccessory:(id)arg1;

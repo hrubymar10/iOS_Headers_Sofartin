@@ -10,15 +10,15 @@
     NSHashTable *_observers;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSArray * downloads;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * localizedStatusString;
-@property(assign,readonly) long long numberOfCancelableDownloads;
-@property(assign,readonly) long long numberOfDownloads;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) float transferProgress;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSArray *downloads;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, copy) NSString *localizedStatusString;
+@property (nonatomic, readonly) long long numberOfCancelableDownloads;
+@property (nonatomic, readonly) long long numberOfDownloads;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) float transferProgress;
 
 - (void).cxx_destruct;
 - (id)_downloadKinds;

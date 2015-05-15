@@ -7,8 +7,8 @@
     NSMutableArray *_waypoints;
 }
 
-@property(assign,retain) NSMutableArray * locations;
-@property(assign,retain) NSMutableArray * waypoints;
+@property (nonatomic, retain) NSMutableArray *locations;
+@property (nonatomic, retain) NSMutableArray *waypoints;
 
 - (void)addLocation:(id)arg1;
 - (void)addWaypoint:(id)arg1;

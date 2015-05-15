@@ -15,9 +15,9 @@
     NSExpression *_valueExpression;
 }
 
-@property(assign,copy) NSString * name;
-@property(assign,retain) NSDictionary * userInfo;
-@property(assign,retain) NSExpression * valueExpression;
+@property (copy) NSString *name;
+@property (retain) NSDictionary *userInfo;
+@property (retain) NSExpression *valueExpression;
 
 + (void)initialize;
 

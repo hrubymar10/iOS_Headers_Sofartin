@@ -8,9 +8,9 @@
     bool _hidesPageIndicator;
 }
 
-@property(assign,readonly) NSArray * childComponents;
-@property(assign,readwrite) double cycleInterval;
-@property(assign,readwrite) bool hidesPageIndicator;
+@property (nonatomic, readonly) NSArray *childComponents;
+@property (nonatomic) double cycleInterval;
+@property (nonatomic) bool hidesPageIndicator;
 
 - (void).cxx_destruct;
 - (id)childComponents;

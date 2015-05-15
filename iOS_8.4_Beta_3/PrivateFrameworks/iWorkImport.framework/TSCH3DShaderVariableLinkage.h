@@ -25,30 +25,30 @@
     TSCH3DShaderVariable *mVariable;
 }
 
-@property(assign,readonly) bool canHaveFragment;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{TSCH3DShaderVariableScopes={array<TSCH3DShaderVariableScopeType' */ struct  declaredScope; /* unknown property attribute:  2>=[2{TSCH3DShaderVariableScopeType=Q}]}} */
-@property(assign,readonly) NSMutableSet * dependees;
-@property(assign,readonly) bool hasAttribute;
-@property(assign,readonly) bool hasFragment;
-@property(assign,readonly) unsigned long long hasGlobal;
-@property(assign,readonly) bool hasVertex;
-@property(assign,readonly) bool isAttribute;
-@property(assign,readonly) bool isFragment;
-@property(assign,readonly) bool isFragmentLinkable;
-@property(assign,readonly) bool isLinked;
-@property(assign,readonly) bool isSpecial;
-@property(assign,readonly) bool isUniform;
-@property(assign,readwrite) bool isUsed;
-@property(assign,readonly) bool isVertex;
-@property(assign,readonly) bool isVertexLinkable;
-@property(assign,readonly) bool isVertexVarying;
-@property(assign,readonly) struct TSCH3DShaderType { unsigned long long x1; } linked;
-@property(assign,readonly) bool notLinked;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{TSCH3DShaderVariableScopes={array<TSCH3DShaderVariableScopeType' */ struct  scope; /* unknown property attribute:  2>=[2{TSCH3DShaderVariableScopeType=Q}]}} */
-@property(assign,readonly) bool scopeHasFragment;
-@property(assign,readonly) bool scopedInAll;
-@property(assign,readonly) struct TSCH3DShaderType { unsigned long long x1; } shaderType;
-@property(assign,readonly) TSCH3DShaderVariable * variable;
+@property (nonatomic, readonly) bool canHaveFragment;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{TSCH3DShaderVariableScopes={array<TSCH3DShaderVariableScopeType' */ struct  declaredScope; /* unknown property attribute:  2>=[2{TSCH3DShaderVariableScopeType=Q}]}} */
+@property (nonatomic, readonly) NSMutableSet *dependees;
+@property (nonatomic, readonly) bool hasAttribute;
+@property (nonatomic, readonly) bool hasFragment;
+@property (nonatomic, readonly) unsigned long long hasGlobal;
+@property (nonatomic, readonly) bool hasVertex;
+@property (nonatomic, readonly) bool isAttribute;
+@property (nonatomic, readonly) bool isFragment;
+@property (nonatomic, readonly) bool isFragmentLinkable;
+@property (nonatomic, readonly) bool isLinked;
+@property (nonatomic, readonly) bool isSpecial;
+@property (nonatomic, readonly) bool isUniform;
+@property (nonatomic) bool isUsed;
+@property (nonatomic, readonly) bool isVertex;
+@property (nonatomic, readonly) bool isVertexLinkable;
+@property (nonatomic, readonly) bool isVertexVarying;
+@property (nonatomic, readonly) struct TSCH3DShaderType { unsigned long long x1; } linked;
+@property (nonatomic, readonly) bool notLinked;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{TSCH3DShaderVariableScopes={array<TSCH3DShaderVariableScopeType' */ struct  scope; /* unknown property attribute:  2>=[2{TSCH3DShaderVariableScopeType=Q}]}} */
+@property (nonatomic, readonly) bool scopeHasFragment;
+@property (nonatomic, readonly) bool scopedInAll;
+@property (nonatomic, readonly) struct TSCH3DShaderType { unsigned long long x1; } shaderType;
+@property (nonatomic, readonly) TSCH3DShaderVariable *variable;
 
 + (id)linkageWithVariable:(id)arg1;
 

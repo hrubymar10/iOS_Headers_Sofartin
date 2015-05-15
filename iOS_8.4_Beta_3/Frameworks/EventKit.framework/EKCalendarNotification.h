@@ -16,22 +16,22 @@
     long long _type;
 }
 
-@property(assign,retain) NSURL * URI;
-@property(assign,readwrite) bool alerted;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) struct CGColor { }* dotColor;
-@property(assign,retain) NSString * emailAddress;
-@property(assign,retain) NSString * firstName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hiddenFromNotificationCenter;
-@property(assign,retain) NSString * lastName;
-@property(assign,retain) NSString * name;
-@property(assign,readonly) bool needsAlert;
-@property(assign,retain) EKObjectID * objectID;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * title;
-@property(assign,readwrite) long long type;
+@property (nonatomic, retain) NSURL *URI;
+@property (nonatomic) bool alerted;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) struct CGColor { }*dotColor;
+@property (nonatomic, retain) NSString *emailAddress;
+@property (nonatomic, retain) NSString *firstName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hiddenFromNotificationCenter;
+@property (nonatomic, retain) NSString *lastName;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, readonly) bool needsAlert;
+@property (nonatomic, retain) EKObjectID *objectID;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic) long long type;
 
 - (id)URI;
 - (bool)alerted;

@@ -10,10 +10,10 @@
     double _trackingOffset;
 }
 
-@property(assign,readwrite) long long selectionAffinity;
-@property(assign,readwrite) long long selectionBarType;
-@property(assign,readwrite) UITouch * touch;
-@property(assign,readwrite) double trackingOffset;
+@property (nonatomic) long long selectionAffinity;
+@property (nonatomic) long long selectionBarType;
+@property (nonatomic) UITouch *touch;
+@property (nonatomic) double trackingOffset;
 
 - (void).cxx_destruct;
 - (id)description;

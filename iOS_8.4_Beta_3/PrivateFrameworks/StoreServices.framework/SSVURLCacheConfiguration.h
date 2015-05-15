@@ -7,8 +7,8 @@
     bool _supportsProcessSharing;
 }
 
-@property(assign,copy) NSString * sessionIdentifier;
-@property(assign,readwrite) bool supportsProcessSharing;
+@property (nonatomic, copy) NSString *sessionIdentifier;
+@property (nonatomic) bool supportsProcessSharing;
 
 - (void).cxx_destruct;
 - (id)sessionIdentifier;

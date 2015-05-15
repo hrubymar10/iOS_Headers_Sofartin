@@ -6,7 +6,7 @@
     UIView *_view;
 }
 
-@property(assign,readonly) UIView * view;
+@property (nonatomic, readonly) UIView *view;
 
 - (id)_initWithView:(id)arg1;
 - (long long)_recalcPageCount;

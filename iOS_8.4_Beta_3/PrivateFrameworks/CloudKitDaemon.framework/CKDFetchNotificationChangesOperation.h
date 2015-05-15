@@ -10,11 +10,11 @@
     unsigned long long _resultsLimit;
 }
 
-@property(assign,readwrite) bool moreComing;
-@property(assign,copy) id notificationChangedBlock;
-@property(assign,retain) CKServerChangeToken * previousServerChangeToken;
-@property(assign,retain) CKServerChangeToken * resultServerChangeToken;
-@property(assign,readwrite) unsigned long long resultsLimit;
+@property (nonatomic) bool moreComing;
+@property (nonatomic, copy) id notificationChangedBlock;
+@property (nonatomic, retain) CKServerChangeToken *previousServerChangeToken;
+@property (nonatomic, retain) CKServerChangeToken *resultServerChangeToken;
+@property (nonatomic) unsigned long long resultsLimit;
 
 - (void).cxx_destruct;
 - (void)_finishOnCallbackQueueWithError:(id)arg1;

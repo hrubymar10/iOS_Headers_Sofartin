@@ -24,24 +24,24 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int connectionType;
-@property(assign,readwrite) unsigned int dualChannelState;
-@property(assign,readwrite) unsigned int error;
-@property(assign,readwrite) unsigned int flushes;
-@property(assign,retain) NSString * guid;
-@property(assign,readwrite) bool hasConnectionType;
-@property(assign,readwrite) bool hasDualChannelState;
-@property(assign,readwrite) bool hasError;
-@property(assign,readwrite) bool hasFlushes;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasLinkQuality;
-@property(assign,readwrite) bool hasPayloadSize;
-@property(assign,readwrite) bool hasSendDuration;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) int linkQuality;
-@property(assign,readwrite) unsigned int payloadSize;
-@property(assign,readwrite) unsigned int sendDuration;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int connectionType;
+@property (nonatomic) unsigned int dualChannelState;
+@property (nonatomic) unsigned int error;
+@property (nonatomic) unsigned int flushes;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic) bool hasConnectionType;
+@property (nonatomic) bool hasDualChannelState;
+@property (nonatomic) bool hasError;
+@property (nonatomic) bool hasFlushes;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasLinkQuality;
+@property (nonatomic) bool hasPayloadSize;
+@property (nonatomic) bool hasSendDuration;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) int linkQuality;
+@property (nonatomic) unsigned int payloadSize;
+@property (nonatomic) unsigned int sendDuration;
+@property (nonatomic) unsigned long long timestamp;
 
 - (unsigned int)connectionType;
 - (void)copyTo:(id)arg1;

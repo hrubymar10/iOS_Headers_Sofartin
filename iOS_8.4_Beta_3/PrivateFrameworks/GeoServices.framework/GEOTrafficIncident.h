@@ -24,26 +24,26 @@
     int _vertexOffset;
 }
 
-@property(assign,readwrite) double endTime;
-@property(assign,readwrite) bool hasEndTime;
-@property(assign,readonly) bool hasInfo;
-@property(assign,readwrite) bool hasLastUpdated;
-@property(assign,readonly) bool hasLocation;
-@property(assign,readwrite) bool hasStartTime;
-@property(assign,readonly) bool hasTitle;
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) bool hasUID;
-@property(assign,readwrite) bool hasVertexCount;
-@property(assign,readwrite) bool hasVertexOffset;
-@property(assign,retain) NSString * info;
-@property(assign,readwrite) double lastUpdated;
-@property(assign,retain) NSString * location;
-@property(assign,readwrite) double startTime;
-@property(assign,retain) NSString * title;
-@property(assign,readwrite) int type;
-@property(assign,readwrite) long long uID;
-@property(assign,readwrite) int vertexCount;
-@property(assign,readwrite) int vertexOffset;
+@property (nonatomic) double endTime;
+@property (nonatomic) bool hasEndTime;
+@property (nonatomic, readonly) bool hasInfo;
+@property (nonatomic) bool hasLastUpdated;
+@property (nonatomic, readonly) bool hasLocation;
+@property (nonatomic) bool hasStartTime;
+@property (nonatomic, readonly) bool hasTitle;
+@property (nonatomic) bool hasType;
+@property (nonatomic) bool hasUID;
+@property (nonatomic) bool hasVertexCount;
+@property (nonatomic) bool hasVertexOffset;
+@property (nonatomic, retain) NSString *info;
+@property (nonatomic) double lastUpdated;
+@property (nonatomic, retain) NSString *location;
+@property (nonatomic) double startTime;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic) int type;
+@property (nonatomic) long long uID;
+@property (nonatomic) int vertexCount;
+@property (nonatomic) int vertexOffset;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

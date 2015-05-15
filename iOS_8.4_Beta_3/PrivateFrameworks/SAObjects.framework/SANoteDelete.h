@@ -4,7 +4,7 @@
 
 @interface SANoteDelete : SADomainCommand
 
-@property(assign,copy) NSURL * identifier;
+@property (nonatomic, copy) NSURL *identifier;
 
 + (id)delete;
 + (id)deleteWithDictionary:(id)arg1 context:(id)arg2;

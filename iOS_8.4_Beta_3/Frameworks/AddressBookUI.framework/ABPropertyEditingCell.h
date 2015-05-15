@@ -8,13 +8,13 @@
     ABRepeatingGradientSeparatorView *_vseparator;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIButton * labelButton;
-@property(assign,readonly) double leftValueMargin;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) ABRepeatingGradientSeparatorView * vseparator;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIButton *labelButton;
+@property (nonatomic, readonly) double leftValueMargin;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) ABRepeatingGradientSeparatorView *vseparator;
 
 + (id)keyPathsForValuesAffectingEffectiveLabelWidth;
 + (bool)wantsChevron;

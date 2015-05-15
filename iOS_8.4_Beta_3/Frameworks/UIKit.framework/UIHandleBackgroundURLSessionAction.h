@@ -4,7 +4,7 @@
 
 @interface UIHandleBackgroundURLSessionAction : BSAction
 
-@property(assign,copy) NSString * sessionIdentifier;
+@property (nonatomic, readonly, copy) NSString *sessionIdentifier;
 
 - (long long)UIActionType;
 - (id)initWithInfo:(id)arg1 timeout:(double)arg2 forResponseOnQueue:(id)arg3 withHandler:(id)arg4;

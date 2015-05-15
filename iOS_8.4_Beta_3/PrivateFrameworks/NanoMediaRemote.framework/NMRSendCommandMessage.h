@@ -6,13 +6,13 @@
     _NMRSendCommandMessageProtobuf *_protobuf;
 }
 
-@property(assign,readonly) unsigned int command;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSDictionary * options;
-@property(assign,readonly) NSDate * serializationDate;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) unsigned int command;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSDictionary *options;
+@property (nonatomic, readonly) NSDate *serializationDate;
+@property (readonly) Class superclass;
 
 + (id)messageWithCommand:(unsigned int)arg1 options:(id)arg2;
 

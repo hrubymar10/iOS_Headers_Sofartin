@@ -25,24 +25,24 @@
     float _widthFraction;
 }
 
-@property(assign,readwrite) float fadingOffset;
-@property(assign,readwrite) float fadingSlope;
-@property(assign,readwrite) unsigned int fillColor;
-@property(assign,readwrite) bool hasFadingOffset;
-@property(assign,readwrite) bool hasFadingSlope;
-@property(assign,readwrite) bool hasFillColor;
-@property(assign,readwrite) bool hasPatternLength;
-@property(assign,readwrite) bool hasPatternSlotLength;
-@property(assign,readwrite) bool hasPatternWidth;
-@property(assign,readwrite) bool hasSecondaryColor;
-@property(assign,readwrite) bool hasUNUSEDPattern;
-@property(assign,readwrite) bool hasWidthFraction;
-@property(assign,readwrite) float patternLength;
-@property(assign,readwrite) float patternSlotLength;
-@property(assign,readwrite) float patternWidth;
-@property(assign,readwrite) unsigned int secondaryColor;
-@property(assign,readwrite) int uNUSEDPattern;
-@property(assign,readwrite) float widthFraction;
+@property (nonatomic) float fadingOffset;
+@property (nonatomic) float fadingSlope;
+@property (nonatomic) unsigned int fillColor;
+@property (nonatomic) bool hasFadingOffset;
+@property (nonatomic) bool hasFadingSlope;
+@property (nonatomic) bool hasFillColor;
+@property (nonatomic) bool hasPatternLength;
+@property (nonatomic) bool hasPatternSlotLength;
+@property (nonatomic) bool hasPatternWidth;
+@property (nonatomic) bool hasSecondaryColor;
+@property (nonatomic) bool hasUNUSEDPattern;
+@property (nonatomic) bool hasWidthFraction;
+@property (nonatomic) float patternLength;
+@property (nonatomic) float patternSlotLength;
+@property (nonatomic) float patternWidth;
+@property (nonatomic) unsigned int secondaryColor;
+@property (nonatomic) int uNUSEDPattern;
+@property (nonatomic) float widthFraction;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -34,7 +34,7 @@
     NSMutableDictionary *_textSpecificArtworks;
 }
 
-@property(assign,readonly) double scale;
+@property (nonatomic, readonly) double scale;
 
 - (id).cxx_construct;
 - (id)_initWithBackgroundImage:(struct CGImage { }*)arg1 contentScale:(double)arg2 resizableInfo:(struct { double x1; double x2; double x3; double x4; }*)arg3 font:(struct __CTFont { }*)arg4 nonDigitFont:(struct __CTFont { }*)arg5 textColor:(struct CGColor { }*)arg6 textCenterOffsetX:(double)arg7 textBaseline:(double)arg8 textStrokeWidth:(double)arg9 textStrokeColor:(struct CGColor { }*)arg10 textShadowOffset:(struct CGSize { double x1; double x2; })arg11 textShadowRadius:(double)arg12 textShadowColor:(struct CGColor { }*)arg13 lineSpacing:(double)arg14;

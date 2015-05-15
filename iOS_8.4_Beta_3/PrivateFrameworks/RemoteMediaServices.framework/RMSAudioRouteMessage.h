@@ -14,14 +14,14 @@
     bool _supportsVideo;
 }
 
-@property(assign,retain) NSString * displayName;
-@property(assign,readonly) bool hasDisplayName;
-@property(assign,readwrite) bool hasMacAddress;
-@property(assign,readwrite) bool hasSelected;
-@property(assign,readwrite) bool hasSupportsVideo;
-@property(assign,readwrite) long long macAddress;
-@property(assign,readwrite) bool selected;
-@property(assign,readwrite) bool supportsVideo;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, readonly) bool hasDisplayName;
+@property (nonatomic) bool hasMacAddress;
+@property (nonatomic) bool hasSelected;
+@property (nonatomic) bool hasSupportsVideo;
+@property (nonatomic) long long macAddress;
+@property (nonatomic) bool selected;
+@property (nonatomic) bool supportsVideo;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

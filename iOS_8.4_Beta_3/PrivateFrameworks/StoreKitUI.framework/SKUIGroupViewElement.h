@@ -6,7 +6,7 @@
     NSString *_type;
 }
 
-@property(assign,readonly) NSString * type;
+@property (nonatomic, readonly) NSString *type;
 
 - (void).cxx_destruct;
 - (id)initWithDOMElement:(id)arg1 parent:(id)arg2 elementFactory:(id)arg3;

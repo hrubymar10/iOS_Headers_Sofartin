@@ -7,12 +7,12 @@
     int _interestedStates;
 }
 
-@property(assign,readonly) NSString * assetType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) int interestedStates;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSString *assetType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) int interestedStates;
+@property (readonly) Class superclass;
 
 - (id)_findMatchFromCandidates:(id)arg1 error:(id*)arg2;
 - (bool)_matchesFilterType:(id)arg1;

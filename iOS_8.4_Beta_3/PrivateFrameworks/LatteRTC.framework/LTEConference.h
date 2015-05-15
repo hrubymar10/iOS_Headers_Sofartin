@@ -53,10 +53,10 @@
     WRMClient *wrmClient;
 }
 
-@property(assign,readonly) unsigned int conferenceID;
-@property(assign,readwrite) NSObject<LTEConferenceDelegate> * delegate;
-@property(assign,readwrite) bool isValid;
-@property(assign,retain) LTEAudioSessionConfig * sessionConfig;
+@property (readonly) unsigned int conferenceID;
+@property (nonatomic) NSObject<LTEConferenceDelegate> *delegate;
+@property bool isValid;
+@property (nonatomic, retain) LTEAudioSessionConfig *sessionConfig;
 
 - (unsigned int)AMRModeToBitrate;
 - (id)addAudioPayload:(int)arg1;

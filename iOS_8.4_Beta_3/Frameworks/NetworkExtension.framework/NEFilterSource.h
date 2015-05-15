@@ -15,16 +15,16 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) long long direction;
-@property(assign,retain) NSUUID * flowUUID;
-@property(assign,readwrite) unsigned long long passLength;
-@property(assign,readwrite) unsigned long long peekIndex;
-@property(assign,retain) NSMutableData * pendingData;
-@property(assign,readwrite) unsigned long long pendingDataStartIndex;
-@property(assign,readwrite) bool registered;
-@property(assign,readonly) unsigned long long socketIdentifier;
-@property(assign,readonly) long long status;
-@property(assign,readonly) NSURL * url;
+@property (readonly) long long direction;
+@property (retain) NSUUID *flowUUID;
+@property unsigned long long passLength;
+@property unsigned long long peekIndex;
+@property (retain) NSMutableData *pendingData;
+@property unsigned long long pendingDataStartIndex;
+@property bool registered;
+@property (readonly) unsigned long long socketIdentifier;
+@property (readonly) long long status;
+@property (readonly) NSURL *url;
 
 + (unsigned int)checkPolicyFilterUnit;
 + (void)connectToAgentWithCompletionHandler:(id)arg1;

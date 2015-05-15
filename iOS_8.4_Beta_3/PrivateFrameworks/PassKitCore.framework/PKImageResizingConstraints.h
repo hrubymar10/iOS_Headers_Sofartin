@@ -17,9 +17,9 @@
     } _size;
 }
 
-@property(assign,readwrite) double outputBorderTrim;
-@property(assign,readwrite) bool outputMirrored;
-@property(assign,readwrite) double outputScale;
+@property (nonatomic) double outputBorderTrim;
+@property (nonatomic) bool outputMirrored;
+@property (nonatomic) double outputScale;
 
 + (id)constraintsWithFixedHeight:(double)arg1 minAspectRatio:(double)arg2 maxAspectRatio:(double)arg3;
 + (id)constraintsWithFixedLargeDimenstion:(double)arg1 minAspectRatio:(double)arg2 maxAspectRatio:(double)arg3;

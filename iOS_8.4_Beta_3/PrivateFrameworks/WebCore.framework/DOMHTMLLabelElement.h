@@ -4,9 +4,9 @@
 
 @interface DOMHTMLLabelElement : DOMHTMLElement
 
-@property(assign,copy) NSString * accessKey;
-@property(assign,readonly) DOMHTMLFormElement * form;
-@property(assign,copy) NSString * htmlFor;
+@property (copy) NSString *accessKey;
+@property (readonly) DOMHTMLFormElement *form;
+@property (copy) NSString *htmlFor;
 
 - (id)accessKey;
 - (id)control;

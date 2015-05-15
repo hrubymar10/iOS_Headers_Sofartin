@@ -13,9 +13,9 @@
     NSDate *_signingSessionCreationDate;
 }
 
-@property(assign,copy) NSString * appleID;
-@property(assign,copy) NSString * emailChoice;
-@property(assign,copy) NSString * password;
+@property (nonatomic, copy) NSString *appleID;
+@property (nonatomic, copy) NSString *emailChoice;
+@property (nonatomic, copy) NSString *password;
 
 + (void)resetURLConfiguration;
 + (id)urlConfiguration;

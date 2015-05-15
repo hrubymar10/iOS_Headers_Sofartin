@@ -8,9 +8,9 @@
     id _statisticsDelegate;
 }
 
-@property(assign,readwrite) unsigned long long blurHardEdges;
-@property(assign,readwrite) double blurRadius;
-@property(assign,readwrite) id statisticsDelegate;
+@property (nonatomic) unsigned long long blurHardEdges;
+@property (nonatomic) double blurRadius;
+@property (nonatomic) id statisticsDelegate;
 
 + (Class)layerClass;
 

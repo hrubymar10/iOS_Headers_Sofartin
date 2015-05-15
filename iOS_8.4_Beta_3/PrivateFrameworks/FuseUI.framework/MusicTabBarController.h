@@ -10,11 +10,11 @@
     MPAVController *_player;
 }
 
-@property(assign,readonly) MusicMiniPlayerViewController * miniPlayerViewController;
-@property(getter=isMiniPlayerVisible,assign,readwrite) bool miniPlayerVisible;
-@property(getter=isNowPlayingPresenting,assign,readwrite) bool nowPlayingPresenting;
-@property(assign,readonly) MusicNowPlayingViewController * nowPlayingViewController;
-@property(assign,retain) MPAVController * player;
+@property (nonatomic, readonly) MusicMiniPlayerViewController *miniPlayerViewController;
+@property (getter=isMiniPlayerVisible, nonatomic) bool miniPlayerVisible;
+@property (getter=isNowPlayingPresenting, nonatomic) bool nowPlayingPresenting;
+@property (nonatomic, readonly) MusicNowPlayingViewController *nowPlayingViewController;
+@property (nonatomic, retain) MPAVController *player;
 
 - (void).cxx_destruct;
 - (void)_playerContentsChangedNotification:(id)arg1;

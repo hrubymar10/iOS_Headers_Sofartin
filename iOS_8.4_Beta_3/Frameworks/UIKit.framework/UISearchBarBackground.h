@@ -16,18 +16,18 @@
     unsigned int _usesEmbeddedAppearance;
 }
 
-@property(assign,readonly) UIImage * backgroundImage;
-@property(assign,readonly) UIImage * backgroundImagePrompt;
-@property(assign,readwrite) long long barStyle;
-@property(assign,retain) UIColor * barTintColor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long searchBarStyle;
-@property(assign,readonly) Class superclass;
-@property(getter=isTranslucent,assign,readwrite) bool translucent;
-@property(assign,readwrite) bool usesContiguousBarBackground;
-@property(assign,readwrite) bool usesEmbeddedAppearance;
+@property (nonatomic, readonly) UIImage *backgroundImage;
+@property (nonatomic, readonly) UIImage *backgroundImagePrompt;
+@property (nonatomic) long long barStyle;
+@property (nonatomic, retain) UIColor *barTintColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long searchBarStyle;
+@property (readonly) Class superclass;
+@property (getter=isTranslucent, nonatomic) bool translucent;
+@property (nonatomic) bool usesContiguousBarBackground;
+@property (nonatomic) bool usesEmbeddedAppearance;
 
 - (id)_backgroundImageForBarPosition:(long long)arg1 barMetrics:(long long)arg2;
 - (long long)_barPosition;

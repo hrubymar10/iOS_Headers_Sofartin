@@ -31,19 +31,19 @@
     } clientContext;
 }
 
-@property(assign,readonly) UIView * accessoryView;
-@property(assign,readonly) int airPlayMode;
-@property(assign,readonly) UIView * airplayView;
-@property(assign,readwrite) struct { long long x1; struct { unsigned int x_2_1_1[8]; } x2; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_3_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_3_1_2; } x3; } clientContext;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } contentFrame;
-@property(assign,readwrite) <QLPreviewItemInteractionDelegate> * delegate;
-@property(assign,readwrite) long long index;
-@property(assign,readwrite) bool loaded;
-@property(assign,readwrite) bool loading;
-@property(assign,readwrite) double navigationBarVerticalOffset;
-@property(assign,retain) NSString * password;
-@property(assign,retain) <QLPreviewItem> * previewItem;
-@property(assign,readwrite) int previewMode;
+@property (readonly) UIView *accessoryView;
+@property (readonly) int airPlayMode;
+@property (readonly) UIView *airplayView;
+@property struct { long long x1; struct { unsigned int x_2_1_1[8]; } x2; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_3_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_3_1_2; } x3; } clientContext;
+@property (readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } contentFrame;
+@property <QLPreviewItemInteractionDelegate> *delegate;
+@property long long index;
+@property bool loaded;
+@property bool loading;
+@property double navigationBarVerticalOffset;
+@property (retain) NSString *password;
+@property (retain) <QLPreviewItem> *previewItem;
+@property int previewMode;
 
 + (double)allowedLoadingDelay;
 + (bool)needsAVControls;

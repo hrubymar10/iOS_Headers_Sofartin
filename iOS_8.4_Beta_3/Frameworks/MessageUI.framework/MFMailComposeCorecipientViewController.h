@@ -9,12 +9,12 @@
     UITableView *_tableView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MFMailComposeRecipientView * recipientView;
-@property(assign,readonly) NSArray * recipients;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MFMailComposeRecipientView *recipientView;
+@property (nonatomic, readonly) NSArray *recipients;
+@property (readonly) Class superclass;
 
 - (void)_didTapDoneButton:(id)arg1;
 - (void)_dismissAndAddSelectedContacts;

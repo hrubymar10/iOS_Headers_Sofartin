@@ -7,11 +7,11 @@
     ISURLCacheConfiguration *_configuration;
 }
 
-@property(assign,readonly) unsigned long long currentDiskUsage;
-@property(assign,readonly) unsigned long long currentMemoryUsage;
-@property(assign,readonly) unsigned long long diskCapacity;
-@property(assign,readonly) unsigned long long memoryCapacity;
-@property(assign,readonly) NSString * persistentIdentifier;
+@property (nonatomic, readonly) unsigned long long currentDiskUsage;
+@property (nonatomic, readonly) unsigned long long currentMemoryUsage;
+@property (nonatomic, readonly) unsigned long long diskCapacity;
+@property (nonatomic, readonly) unsigned long long memoryCapacity;
+@property (readonly) NSString *persistentIdentifier;
 
 + (id)cacheDirectoryPath;
 

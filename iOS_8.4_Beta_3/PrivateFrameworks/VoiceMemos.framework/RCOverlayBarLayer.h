@@ -9,7 +9,7 @@
     CALayer *_topKnob;
 }
 
-@property(assign,retain) UIColor * color;
+@property (nonatomic, retain) UIColor *color;
 
 - (void).cxx_destruct;
 - (void)_loadWithColor:(id)arg1 selectionExtentIncludingKnobs:(double)arg2 topKnob:(bool)arg3 bottomKnob:(bool)arg4;

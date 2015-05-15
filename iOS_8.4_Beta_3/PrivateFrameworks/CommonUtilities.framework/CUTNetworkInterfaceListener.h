@@ -12,10 +12,10 @@
     int _wifiState;
 }
 
-@property(assign,retain) NSSet * IPv4Addresses;
-@property(assign,retain) NSSet * IPv6Addresses;
-@property(assign,readonly) int cellState;
-@property(assign,readonly) int wifiState;
+@property (nonatomic, readonly, retain) NSSet *IPv4Addresses;
+@property (nonatomic, readonly, retain) NSSet *IPv6Addresses;
+@property (nonatomic, readonly) int cellState;
+@property (nonatomic, readonly) int wifiState;
 
 + (id)sharedInstance;
 

@@ -12,13 +12,13 @@
     unsigned long long _width;
 }
 
-@property(assign,retain) NSData * bitmapData;
-@property(assign,readwrite) unsigned int bitmapInfo;
-@property(assign,readwrite) unsigned long long bitsPerComponent;
-@property(assign,readwrite) unsigned long long bitsPerPixel;
-@property(assign,readwrite) unsigned long long bytesPerRow;
-@property(assign,readwrite) unsigned long long height;
-@property(assign,readwrite) unsigned long long width;
+@property (nonatomic, retain) NSData *bitmapData;
+@property (nonatomic) unsigned int bitmapInfo;
+@property (nonatomic) unsigned long long bitsPerComponent;
+@property (nonatomic) unsigned long long bitsPerPixel;
+@property (nonatomic) unsigned long long bytesPerRow;
+@property (nonatomic) unsigned long long height;
+@property (nonatomic) unsigned long long width;
 
 - (void).cxx_destruct;
 - (id)bitmapData;

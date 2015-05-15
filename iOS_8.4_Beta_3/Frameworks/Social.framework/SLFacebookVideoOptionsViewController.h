@@ -9,7 +9,7 @@
     NSURL *_videoAssetURL;
 }
 
-@property(assign,readwrite) <SLFacebookVideoOptionsDelegate> * delegate;
+@property (nonatomic) <SLFacebookVideoOptionsDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_generateQualityOptionsWithAssetURL:(id)arg1;

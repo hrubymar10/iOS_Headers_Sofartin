@@ -22,23 +22,23 @@
     NSMutableSet *_waiterIDsExpectingNotesLock;
 }
 
-@property(assign,retain) <DADataclassLockWatcher> * bookmarksLockHolder;
-@property(assign,retain) NSMutableArray * bookmarksWaiters;
-@property(assign,readwrite) bool claimedOwnershipOfBookmarks;
-@property(assign,readwrite) bool claimedOwnershipOfContacts;
-@property(assign,readwrite) bool claimedOwnershipOfEvents;
-@property(assign,readwrite) bool claimedOwnershipOfNotes;
-@property(assign,retain) <DADataclassLockWatcher> * contactsLockHolder;
-@property(assign,retain) NSMutableArray * contactsWaiters;
-@property(assign,retain) <DADataclassLockWatcher> * eventsLockHolder;
-@property(assign,retain) NSMutableArray * eventsWaiters;
-@property(assign,retain) <DADataclassLockWatcher> * notesLockHolder;
-@property(assign,retain) NSMutableArray * notesWaiters;
-@property(assign,retain) NSString * unitTestHackRunLoopMode;
-@property(assign,retain) NSMutableSet * waiterIDsExpectingBookmarksLock;
-@property(assign,retain) NSMutableSet * waiterIDsExpectingContactsLock;
-@property(assign,retain) NSMutableSet * waiterIDsExpectingEventsLock;
-@property(assign,retain) NSMutableSet * waiterIDsExpectingNotesLock;
+@property (nonatomic, retain) <DADataclassLockWatcher> *bookmarksLockHolder;
+@property (nonatomic, retain) NSMutableArray *bookmarksWaiters;
+@property (nonatomic) bool claimedOwnershipOfBookmarks;
+@property (nonatomic) bool claimedOwnershipOfContacts;
+@property (nonatomic) bool claimedOwnershipOfEvents;
+@property (nonatomic) bool claimedOwnershipOfNotes;
+@property (nonatomic, retain) <DADataclassLockWatcher> *contactsLockHolder;
+@property (nonatomic, retain) NSMutableArray *contactsWaiters;
+@property (nonatomic, retain) <DADataclassLockWatcher> *eventsLockHolder;
+@property (nonatomic, retain) NSMutableArray *eventsWaiters;
+@property (nonatomic, retain) <DADataclassLockWatcher> *notesLockHolder;
+@property (nonatomic, retain) NSMutableArray *notesWaiters;
+@property (nonatomic, retain) NSString *unitTestHackRunLoopMode;
+@property (nonatomic, retain) NSMutableSet *waiterIDsExpectingBookmarksLock;
+@property (nonatomic, retain) NSMutableSet *waiterIDsExpectingContactsLock;
+@property (nonatomic, retain) NSMutableSet *waiterIDsExpectingEventsLock;
+@property (nonatomic, retain) NSMutableSet *waiterIDsExpectingNotesLock;
 
 + (id)sharedGateKeeper;
 

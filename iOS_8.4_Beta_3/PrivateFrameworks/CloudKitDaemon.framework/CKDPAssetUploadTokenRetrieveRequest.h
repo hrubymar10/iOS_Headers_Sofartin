@@ -9,12 +9,12 @@
     NSMutableArray *_uploads;
 }
 
-@property(assign,retain) NSMutableArray * assets;
-@property(assign,retain) CKDPRecordFieldIdentifier * field;
-@property(assign,readonly) bool hasField;
-@property(assign,readonly) bool hasType;
-@property(assign,retain) CKDPRecordType * type;
-@property(assign,retain) NSMutableArray * uploads;
+@property (nonatomic, retain) NSMutableArray *assets;
+@property (nonatomic, retain) CKDPRecordFieldIdentifier *field;
+@property (nonatomic, readonly) bool hasField;
+@property (nonatomic, readonly) bool hasType;
+@property (nonatomic, retain) CKDPRecordType *type;
+@property (nonatomic, retain) NSMutableArray *uploads;
 
 + (id)options;
 

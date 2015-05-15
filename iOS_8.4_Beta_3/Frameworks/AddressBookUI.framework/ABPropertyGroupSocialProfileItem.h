@@ -4,7 +4,7 @@
 
 @interface ABPropertyGroupSocialProfileItem : ABPropertyGroupItem
 
-@property(assign,readonly) CNSocialProfile * profile;
+@property (nonatomic, readonly) CNSocialProfile *profile;
 
 - (id)defaultActionURL;
 - (id)displayLabel;

@@ -8,7 +8,7 @@
     unsigned long long _pos;
 }
 
-@property(assign,readonly) unsigned long long count;
+@property (nonatomic, readonly) unsigned long long count;
 
 - (void).cxx_destruct;
 - (void)addObject:(id)arg1;

@@ -19,16 +19,16 @@
     <EKICSPreviewControllerDelegate> *_previewDelegate;
 }
 
-@property(assign,readwrite) int actionsState;
-@property(assign,readwrite) bool allowsEditing;
-@property(assign,readwrite) bool allowsImport;
-@property(assign,readwrite) bool allowsInvalidProperties;
-@property(assign,readwrite) bool allowsSubitems;
-@property(assign,readwrite) bool allowsToDos;
-@property(assign,readonly) bool isImporting;
-@property(assign,readwrite) <EKICSPreviewControllerDelegate> * previewDelegate;
-@property(assign,readonly) unsigned long long totalEventCount;
-@property(assign,readonly) unsigned long long unimportedEventCount;
+@property (nonatomic) int actionsState;
+@property (nonatomic) bool allowsEditing;
+@property (nonatomic) bool allowsImport;
+@property (nonatomic) bool allowsInvalidProperties;
+@property (nonatomic) bool allowsSubitems;
+@property (nonatomic) bool allowsToDos;
+@property (nonatomic, readonly) bool isImporting;
+@property (nonatomic) <EKICSPreviewControllerDelegate> *previewDelegate;
+@property (nonatomic, readonly) unsigned long long totalEventCount;
+@property (nonatomic, readonly) unsigned long long unimportedEventCount;
 
 - (void).cxx_destruct;
 - (void)_createCancelButtonWithType:(long long)arg1 target:(id)arg2 action:(SEL)arg3;

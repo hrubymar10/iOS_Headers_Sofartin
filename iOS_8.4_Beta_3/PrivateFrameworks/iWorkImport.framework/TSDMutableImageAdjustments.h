@@ -4,20 +4,20 @@
 
 @interface TSDMutableImageAdjustments : TSDImageAdjustments
 
-@property(assign,readwrite) double bottomLevel;
-@property(assign,readwrite) double contrast;
-@property(assign,readwrite) double denoise;
-@property(assign,readwrite) bool enhance;
-@property(assign,readwrite) double exposure;
-@property(assign,readwrite) double gamma;
-@property(assign,readwrite) double highlights;
-@property(assign,readwrite) bool representsSageAdjustments;
-@property(assign,readwrite) double saturation;
-@property(assign,readwrite) double shadows;
-@property(assign,readwrite) double sharpness;
-@property(assign,readwrite) double temperature;
-@property(assign,readwrite) double tint;
-@property(assign,readwrite) double topLevel;
+@property (nonatomic) double bottomLevel;
+@property (nonatomic) double contrast;
+@property (nonatomic) double denoise;
+@property (nonatomic) bool enhance;
+@property (nonatomic) double exposure;
+@property (nonatomic) double gamma;
+@property (nonatomic) double highlights;
+@property (nonatomic) bool representsSageAdjustments;
+@property (nonatomic) double saturation;
+@property (nonatomic) double shadows;
+@property (nonatomic) double sharpness;
+@property (nonatomic) double temperature;
+@property (nonatomic) double tint;
+@property (nonatomic) double topLevel;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setBottomLevel:(double)arg1;

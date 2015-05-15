@@ -18,23 +18,23 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) SFCompanionDevice * connectedDevice;
-@property(assign,copy) NSString * connectionID;
-@property(assign,retain) <SFCompanionConnectionManagerProtocol> * connectionProxy;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SFCompanionConnectionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) SFCompanionInterface * exportedInterface;
-@property(assign,retain) id exportedObject;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool invalid;
-@property(assign,retain) SFCompanionInterface * remoteObjectInterface;
-@property(assign,retain) SFCompanionService * service;
-@property(assign,readwrite) unsigned long long status;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSXPCConnection * userConnection;
-@property(assign,readwrite) bool waitForAccept;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) SFCompanionDevice *connectedDevice;
+@property (nonatomic, readonly, copy) NSString *connectionID;
+@property (retain) <SFCompanionConnectionManagerProtocol> *connectionProxy;
+@property (readonly, copy) NSString *debugDescription;
+@property <SFCompanionConnectionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (retain) SFCompanionInterface *exportedInterface;
+@property (retain) id exportedObject;
+@property (readonly) unsigned long long hash;
+@property bool invalid;
+@property (retain) SFCompanionInterface *remoteObjectInterface;
+@property (retain) SFCompanionService *service;
+@property unsigned long long status;
+@property (readonly) Class superclass;
+@property (retain) NSXPCConnection *userConnection;
+@property bool waitForAccept;
+@property NSObject<OS_dispatch_queue> *workQueue;
 
 - (void)connect;
 - (id)connectedDevice;

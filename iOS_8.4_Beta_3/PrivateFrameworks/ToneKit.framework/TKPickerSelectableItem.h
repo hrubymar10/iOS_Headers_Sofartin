@@ -10,11 +10,11 @@
     bool _textCentered;
 }
 
-@property(assign,copy) NSString * detailText;
-@property(assign,readwrite) bool showsCheckmark;
-@property(assign,readwrite) bool showsDisclosureIndicator;
-@property(assign,copy) NSString * text;
-@property(getter=isTextCentered,assign,readwrite) bool textCentered;
+@property (nonatomic, copy) NSString *detailText;
+@property (nonatomic) bool showsCheckmark;
+@property (nonatomic) bool showsDisclosureIndicator;
+@property (nonatomic, copy) NSString *text;
+@property (getter=isTextCentered, nonatomic) bool textCentered;
 
 - (void)_appendDescriptionOfAttributesToString:(id)arg1;
 - (void)_setDetailText:(id)arg1;

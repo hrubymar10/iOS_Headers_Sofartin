@@ -12,14 +12,14 @@
     CKRecordID *_userRecordID;
 }
 
-@property(assign,copy) NSString * emailAddress;
-@property(assign,copy) NSString * firstName;
-@property(assign,readwrite) bool hasiCloudAccount;
-@property(assign,readwrite) bool hasiCloudAccountSupportingSharing;
-@property(assign,copy) NSString * lastName;
-@property(assign,copy) NSString * localizedDisplayName;
-@property(assign,retain) NSData * protectionData;
-@property(assign,copy) CKRecordID * userRecordID;
+@property (nonatomic, copy) NSString *emailAddress;
+@property (nonatomic, copy) NSString *firstName;
+@property (nonatomic) bool hasiCloudAccount;
+@property (nonatomic) bool hasiCloudAccountSupportingSharing;
+@property (nonatomic, copy) NSString *lastName;
+@property (nonatomic, readonly, copy) NSString *localizedDisplayName;
+@property (nonatomic, retain) NSData *protectionData;
+@property (nonatomic, copy) CKRecordID *userRecordID;
 
 + (bool)supportsSecureCoding;
 

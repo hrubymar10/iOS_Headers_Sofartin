@@ -7,8 +7,8 @@
     float mNear;
 }
 
-@property(assign,readwrite) float far;
-@property(assign,readwrite) float near;
+@property (nonatomic) float far;
+@property (nonatomic) float near;
 
 + (id)lens;
 

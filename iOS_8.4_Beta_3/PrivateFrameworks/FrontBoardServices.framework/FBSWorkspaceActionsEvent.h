@@ -6,7 +6,7 @@
     NSSet *_actions;
 }
 
-@property(assign,copy) NSSet * actions;
+@property (nonatomic, copy) NSSet *actions;
 
 - (id)actions;
 - (void)dealloc;

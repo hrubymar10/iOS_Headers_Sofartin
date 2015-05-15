@@ -11,12 +11,12 @@
     long long _statusCode;
 }
 
-@property(assign,readonly) NSData * data;
-@property(assign,retain) NSError * error;
-@property(assign,readonly) NSNumber * maxAge;
-@property(assign,readonly) NSString * protocolVersion;
-@property(assign,readonly) NSDictionary * responseDictionary;
-@property(assign,readonly) long long statusCode;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, readonly) NSNumber *maxAge;
+@property (nonatomic, readonly) NSString *protocolVersion;
+@property (nonatomic, readonly) NSDictionary *responseDictionary;
+@property (nonatomic, readonly) long long statusCode;
 
 - (void).cxx_destruct;
 - (id)_deviceSpecificLocalizedString:(id)arg1;

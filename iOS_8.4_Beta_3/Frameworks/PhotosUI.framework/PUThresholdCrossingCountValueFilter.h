@@ -8,8 +8,8 @@
     double _thresholdValue;
 }
 
-@property(assign,readwrite) long long maximumCrossingCount;
-@property(assign,readwrite) double thresholdValue;
+@property (nonatomic) long long maximumCrossingCount;
+@property (nonatomic) double thresholdValue;
 
 - (long long)maximumCrossingCount;
 - (void)setMaximumCrossingCount:(long long)arg1;

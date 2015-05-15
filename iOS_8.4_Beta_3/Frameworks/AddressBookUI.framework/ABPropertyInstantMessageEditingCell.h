@@ -4,11 +4,11 @@
 
 @interface ABPropertyInstantMessageEditingCell : ABPropertySimpleEditingCell <ABPickerControllerDelegate>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CNInstantMessageAddress * profile;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CNInstantMessageAddress *profile;
+@property (readonly) Class superclass;
 
 - (void)labelButtonClicked:(id)arg1;
 - (void)picker:(id)arg1 didPickItem:(id)arg2;

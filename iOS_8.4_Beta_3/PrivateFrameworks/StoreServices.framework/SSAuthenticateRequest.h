@@ -6,12 +6,12 @@
     SSAuthenticationContext *_authenticationContext;
 }
 
-@property(assign,readonly) SSAuthenticationContext * authenticationContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SSAuthenticateRequestDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly) SSAuthenticationContext *authenticationContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SSAuthenticateRequestDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)authenticationContext;
 - (id)copyXPCEncoding;

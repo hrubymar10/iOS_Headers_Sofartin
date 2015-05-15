@@ -7,9 +7,9 @@
     NSString *_category;
 }
 
-@property(assign,retain) NSMutableArray * audioRoutes;
-@property(assign,retain) NSString * category;
-@property(assign,readonly) bool hasCategory;
+@property (nonatomic, retain) NSMutableArray *audioRoutes;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic, readonly) bool hasCategory;
 
 - (void).cxx_destruct;
 - (void)addAudioRoutes:(id)arg1;

@@ -25,7 +25,7 @@
     VKMapRasterizer *_mapRasterizer;
 }
 
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  backgroundColor; /* unknown property attribute:  1>=[4f]} */
+@property (nonatomic) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  backgroundColor; /* unknown property attribute:  1>=[4f]} */
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

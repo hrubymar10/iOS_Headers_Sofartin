@@ -4,8 +4,8 @@
 
 @interface NSRegularExpressionCheckingResult : NSTextCheckingResult
 
-@property(assign,readonly) NSArray * rangeArray;
-@property(assign,readonly) NSRegularExpression * regularExpression;
+@property (readonly) NSArray *rangeArray;
+@property (readonly) NSRegularExpression *regularExpression;
 
 - (id)description;
 - (void)encodeWithCoder:(id)arg1;

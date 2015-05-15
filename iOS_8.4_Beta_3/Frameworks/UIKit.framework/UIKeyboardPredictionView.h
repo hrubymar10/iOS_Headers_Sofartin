@@ -33,13 +33,13 @@
     double m_width;
 }
 
-@property(assign,retain) UITouch * activeTouch;
-@property(assign,retain) NSDate * lastUpdateDate;
-@property(assign,retain) TIKeyboardCandidate * scheduledAutocorrection;
-@property(assign,retain) NSArray * scheduledPredictions;
-@property(assign,readwrite) bool show;
-@property(assign,readwrite) int state;
-@property(assign,retain) NSTimer * updateTimer;
+@property (nonatomic, retain) UITouch *activeTouch;
+@property (nonatomic, retain) NSDate *lastUpdateDate;
+@property (nonatomic, retain) TIKeyboardCandidate *scheduledAutocorrection;
+@property (nonatomic, retain) NSArray *scheduledPredictions;
+@property (nonatomic) bool show;
+@property (nonatomic) int state;
+@property (nonatomic, retain) NSTimer *updateTimer;
 
 + (id)activeInstance;
 + (unsigned long long)numberOfCandidates;

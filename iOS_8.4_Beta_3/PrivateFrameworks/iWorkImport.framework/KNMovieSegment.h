@@ -7,9 +7,9 @@
     double mStartTime;
 }
 
-@property(getter=isEmptySegment,assign,readonly) bool emptySegment;
-@property(assign,readonly) TSPData * movieData;
-@property(assign,readonly) double startTime;
+@property (getter=isEmptySegment, nonatomic, readonly) bool emptySegment;
+@property (nonatomic, readonly) TSPData *movieData;
+@property (nonatomic, readonly) double startTime;
 
 - (void)dealloc;
 - (id)init;

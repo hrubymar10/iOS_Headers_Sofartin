@@ -7,7 +7,7 @@
     PKPaymentAuthorizationSummaryItemsView *_summaryItemsView;
 }
 
-@property(assign,readonly) PKPaymentAuthorizationSummaryItemsView * summaryItemsView;
+@property (nonatomic, readonly) PKPaymentAuthorizationSummaryItemsView *summaryItemsView;
 
 - (void)_prepareConstraints;
 - (void)dealloc;

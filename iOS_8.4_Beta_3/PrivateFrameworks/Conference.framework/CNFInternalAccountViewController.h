@@ -7,7 +7,7 @@
     FTRegConnectionHandler *_connectionHandler;
 }
 
-@property(assign,retain) IMAccount * account;
+@property (nonatomic, retain) IMAccount *account;
 
 - (void)_handleAccountNotification:(id)arg1;
 - (void)_handleDaemonConnected:(id)arg1;

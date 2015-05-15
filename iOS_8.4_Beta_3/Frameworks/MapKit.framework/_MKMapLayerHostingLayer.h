@@ -6,7 +6,7 @@
     _MKMapLayerHostingView *_hostView;
 }
 
-@property(assign,readwrite) _MKMapLayerHostingView * hostView;
+@property (nonatomic) _MKMapLayerHostingView *hostView;
 
 - (void).cxx_destruct;
 - (id)hostView;

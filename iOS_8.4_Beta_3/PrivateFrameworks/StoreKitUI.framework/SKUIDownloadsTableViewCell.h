@@ -6,7 +6,7 @@
     SKUIDownloadsCellView *_cellView;
 }
 
-@property(assign,readonly) SKUIDownloadsCellView * cellView;
+@property (nonatomic, readonly) SKUIDownloadsCellView *cellView;
 
 - (void).cxx_destruct;
 - (id)cellView;

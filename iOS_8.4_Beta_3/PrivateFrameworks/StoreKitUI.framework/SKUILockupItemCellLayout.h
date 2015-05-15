@@ -27,24 +27,24 @@
     SKUIEmbeddedMediaView *_videoThumbnailView;
 }
 
-@property(assign,copy) NSString * artistName;
-@property(assign,copy) NSString * categoryString;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,copy) NSString * editorialBadgeString;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } imageBoundingSize;
-@property(assign,copy) NSString * itemCountString;
-@property(assign,readwrite) long long itemOfferStyle;
-@property(assign,readwrite) long long layoutStyle;
-@property(assign,readwrite) long long lockupSize;
-@property(assign,readwrite) long long numberOfUserRatings;
-@property(assign,readwrite) bool playsInlineVideo;
-@property(assign,copy) NSString * releaseDateString;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) float userRating;
-@property(assign,readwrite) long long verticalAlignment;
-@property(assign,retain) UIImage * videoThumbnailImage;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } videoThumbnailSize;
-@property(assign,readwrite) unsigned long long visibleFields;
+@property (nonatomic, copy) NSString *artistName;
+@property (nonatomic, copy) NSString *categoryString;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic, copy) NSString *editorialBadgeString;
+@property (nonatomic) struct CGSize { double x1; double x2; } imageBoundingSize;
+@property (nonatomic, copy) NSString *itemCountString;
+@property (nonatomic) long long itemOfferStyle;
+@property (nonatomic) long long layoutStyle;
+@property (nonatomic) long long lockupSize;
+@property (nonatomic) long long numberOfUserRatings;
+@property (nonatomic) bool playsInlineVideo;
+@property (nonatomic, copy) NSString *releaseDateString;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) float userRating;
+@property (nonatomic) long long verticalAlignment;
+@property (nonatomic, retain) UIImage *videoThumbnailImage;
+@property (nonatomic) struct CGSize { double x1; double x2; } videoThumbnailSize;
+@property (nonatomic) unsigned long long visibleFields;
 
 + (double)heightForLockupComponent:(id)arg1 clientContext:(id)arg2;
 + (double)heightForLockupStyle:(struct SKUILockupStyle { long long x1; long long x2; unsigned long long x3; })arg1 item:(id)arg2 editorial:(id)arg3 clientContext:(id)arg4;

@@ -11,10 +11,10 @@
     bool extensionCandidate;
 }
 
-@property(getter=isExtensionCandidate,assign,readwrite) bool extensionCandidate;
-@property(assign,readwrite) bool isFromPhraseDictionary;
-@property(assign,readwrite) bool isFromTextChecker;
-@property(assign,copy) NSString * label;
+@property (getter=isExtensionCandidate, nonatomic) bool extensionCandidate;
+@property (nonatomic) bool isFromPhraseDictionary;
+@property (nonatomic) bool isFromTextChecker;
+@property (nonatomic, copy) NSString *label;
 
 + (bool)supportsSecureCoding;
 + (int)type;

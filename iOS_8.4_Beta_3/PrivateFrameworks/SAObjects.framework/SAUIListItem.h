@@ -4,12 +4,12 @@
 
 @interface SAUIListItem : SAAceView
 
-@property(assign,copy) NSArray * commands;
-@property(assign,retain) <SAAceSerializable> * object;
-@property(assign,copy) NSString * selectionResponse;
-@property(assign,copy) NSString * selectionText;
-@property(assign,copy) NSString * speakableSelectionResponse;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSArray *commands;
+@property (nonatomic, retain) <SAAceSerializable> *object;
+@property (nonatomic, copy) NSString *selectionResponse;
+@property (nonatomic, copy) NSString *selectionText;
+@property (nonatomic, copy) NSString *speakableSelectionResponse;
+@property (nonatomic, copy) NSString *title;
 
 + (id)listItem;
 + (id)listItemWithDictionary:(id)arg1 context:(id)arg2;

@@ -4,13 +4,13 @@
 
 @interface SAUIColor : AceObject <SAAceSerializable>
 
-@property(assign,readwrite) long long blueValue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long greenValue;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long redValue;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long blueValue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long greenValue;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long redValue;
+@property (readonly) Class superclass;
 
 + (id)color;
 + (id)colorWithDictionary:(id)arg1 context:(id)arg2;

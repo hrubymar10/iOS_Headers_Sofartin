@@ -13,13 +13,13 @@
     UITableView *_table;
 }
 
-@property(assign,readwrite) bool allowsCustomizing;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * moreViewControllers;
-@property(assign,readwrite) bool moreViewControllersChanged;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool allowsCustomizing;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *moreViewControllers;
+@property (nonatomic) bool moreViewControllersChanged;
+@property (readonly) Class superclass;
 
 - (bool)_isSupportedInterfaceOrientation:(long long)arg1;
 - (void)_layoutCells;

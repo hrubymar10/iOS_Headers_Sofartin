@@ -8,9 +8,9 @@
     } _origin;
 }
 
-@property(assign,copy) NSString * host;
-@property(assign,readonly) unsigned short port;
-@property(assign,copy) NSString * protocol;
+@property (nonatomic, readonly, copy) NSString *host;
+@property (nonatomic, readonly) unsigned short port;
+@property (nonatomic, readonly, copy) NSString *protocol;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

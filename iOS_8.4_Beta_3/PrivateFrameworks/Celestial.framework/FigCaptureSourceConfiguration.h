@@ -19,24 +19,24 @@
     float _videoZoomRampAcceleration;
 }
 
-@property(assign,readwrite) bool applyMaxIntegrationTimeOverrideWhenAvailable;
-@property(assign,readwrite) bool automaticallyEnablesLowLightBoostWhenAvailable;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSDictionary * faceDetectionConfiguration;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int imageControlMode;
-@property(assign,retain) FigCaptureSourceFormat * requiredFormat;
-@property(assign,readwrite) float requiredMaxFrameRate;
-@property(assign,readwrite) float requiredMinFrameRate;
-@property(assign,readwrite) bool sensorHDREnabled;
-@property(assign,readonly) struct OpaqueFigCaptureSource { }* source;
-@property(assign,copy) NSString * sourceID;
-@property(assign,readonly) int sourcePosition;
-@property(assign,readonly) int sourceType;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) float videoZoomFactor;
-@property(assign,readwrite) float videoZoomRampAcceleration;
+@property (nonatomic) bool applyMaxIntegrationTimeOverrideWhenAvailable;
+@property (nonatomic) bool automaticallyEnablesLowLightBoostWhenAvailable;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSDictionary *faceDetectionConfiguration;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int imageControlMode;
+@property (nonatomic, retain) FigCaptureSourceFormat *requiredFormat;
+@property (nonatomic) float requiredMaxFrameRate;
+@property (nonatomic) float requiredMinFrameRate;
+@property (nonatomic) bool sensorHDREnabled;
+@property (nonatomic, readonly) struct OpaqueFigCaptureSource { }*source;
+@property (nonatomic, copy) NSString *sourceID;
+@property (nonatomic, readonly) int sourcePosition;
+@property (nonatomic, readonly) int sourceType;
+@property (readonly) Class superclass;
+@property (nonatomic) float videoZoomFactor;
+@property (nonatomic) float videoZoomRampAcceleration;
 
 + (void)initialize;
 + (int)sourceTypeForString:(id)arg1;

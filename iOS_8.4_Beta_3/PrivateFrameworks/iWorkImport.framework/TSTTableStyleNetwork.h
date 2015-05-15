@@ -17,18 +17,18 @@
     TSTTableStyle *mTableStyle;
 }
 
-@property(assign,readonly) TSTCellStyle * bodyCellStyle;
-@property(assign,readonly) TSWPParagraphStyle * bodyTextStyle;
-@property(assign,readonly) TSTCellStyle * footerRowCellStyle;
-@property(assign,readonly) TSWPParagraphStyle * footerRowTextStyle;
-@property(assign,readonly) TSTCellStyle * headerColumnCellStyle;
-@property(assign,readonly) TSWPParagraphStyle * headerColumnTextStyle;
-@property(assign,readonly) TSTCellStyle * headerRowCellStyle;
-@property(assign,readonly) TSWPParagraphStyle * headerRowTextStyle;
-@property(assign,readwrite) unsigned long long presetID;
-@property(assign,retain) TSWPShapeStyle * tableNameShapeStyle;
-@property(assign,retain) TSWPParagraphStyle * tableNameStyle;
-@property(assign,retain) TSTTableStyle * tableStyle;
+@property (nonatomic, readonly) TSTCellStyle *bodyCellStyle;
+@property (nonatomic, readonly) TSWPParagraphStyle *bodyTextStyle;
+@property (nonatomic, readonly) TSTCellStyle *footerRowCellStyle;
+@property (nonatomic, readonly) TSWPParagraphStyle *footerRowTextStyle;
+@property (nonatomic, readonly) TSTCellStyle *headerColumnCellStyle;
+@property (nonatomic, readonly) TSWPParagraphStyle *headerColumnTextStyle;
+@property (nonatomic, readonly) TSTCellStyle *headerRowCellStyle;
+@property (nonatomic, readonly) TSWPParagraphStyle *headerRowTextStyle;
+@property (nonatomic) unsigned long long presetID;
+@property (nonatomic, retain) TSWPShapeStyle *tableNameShapeStyle;
+@property (nonatomic, retain) TSWPParagraphStyle *tableNameStyle;
+@property (nonatomic, retain) TSTTableStyle *tableStyle;
 
 + (id)createStylesInStylesheet:(id)arg1 presetID:(unsigned long long)arg2 colors:(id)arg3 alternate:(int)arg4;
 + (id)curatedTableStylePropertySetForCrossDocumentPasteMasterComparison;

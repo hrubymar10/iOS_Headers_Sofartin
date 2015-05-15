@@ -8,16 +8,16 @@
     SKUIReviewList *_reviewList;
 }
 
-@property(assign,readonly) UIControl * appSupportButton;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readwrite) long long personalStarRating;
-@property(assign,retain) SKUIReviewList * reviewList;
-@property(assign,readonly) UIControl * segmentedControl;
-@property(assign,copy) NSArray * segmentedControlTitles;
-@property(assign,readwrite) long long selectedSegmentIndex;
-@property(assign,readonly) UIControl * starRatingControl;
-@property(assign,copy) NSString * versionString;
-@property(assign,readonly) UIControl * writeAReviewButton;
+@property (nonatomic, readonly) UIControl *appSupportButton;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic) long long personalStarRating;
+@property (nonatomic, retain) SKUIReviewList *reviewList;
+@property (nonatomic, readonly) UIControl *segmentedControl;
+@property (nonatomic, copy) NSArray *segmentedControlTitles;
+@property (nonatomic) long long selectedSegmentIndex;
+@property (nonatomic, readonly) UIControl *starRatingControl;
+@property (nonatomic, copy) NSString *versionString;
+@property (nonatomic, readonly) UIControl *writeAReviewButton;
 
 - (void).cxx_destruct;
 - (id)_histogramView;

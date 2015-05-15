@@ -10,15 +10,15 @@
     CKAudioProgressView *_progressView;
 }
 
-@property(assign,readwrite) double currentProgress;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double duration;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UILabel * label;
-@property(assign,readwrite) double lastProgress;
-@property(assign,retain) CKAudioProgressView * progressView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) double currentProgress;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double duration;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UILabel *label;
+@property (nonatomic) double lastProgress;
+@property (nonatomic, retain) CKAudioProgressView *progressView;
+@property (readonly) Class superclass;
 
 - (void)_playButtonHit:(id)arg1;
 - (void)_updateTime:(id)arg1;

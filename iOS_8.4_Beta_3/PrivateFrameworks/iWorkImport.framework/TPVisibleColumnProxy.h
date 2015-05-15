@@ -7,15 +7,15 @@
     unsigned long long _pageIndex;
 }
 
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } anchoredRange;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long nextWidowPullsDownFromCharIndex;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,readonly) unsigned long long startAnchoredCharIndex;
-@property(assign,readonly) unsigned long long startCharIndex;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } anchoredRange;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long nextWidowPullsDownFromCharIndex;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic, readonly) unsigned long long startAnchoredCharIndex;
+@property (nonatomic, readonly) unsigned long long startCharIndex;
+@property (readonly) Class superclass;
 
 - (struct _NSRange { unsigned long long x1; unsigned long long x2; })anchoredRange;
 - (void)dealloc;

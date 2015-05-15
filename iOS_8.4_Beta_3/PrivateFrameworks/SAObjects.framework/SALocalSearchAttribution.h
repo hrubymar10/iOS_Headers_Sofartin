@@ -4,13 +4,13 @@
 
 @interface SALocalSearchAttribution : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * attributionId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * urls;
-@property(assign,readwrite) long long version;
+@property (nonatomic, copy) NSString *attributionId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *urls;
+@property (nonatomic) long long version;
 
 + (id)attribution;
 + (id)attributionWithDictionary:(id)arg1 context:(id)arg2;

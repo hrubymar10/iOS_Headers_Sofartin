@@ -6,7 +6,7 @@
     <SKUISettingsDocumentViewDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <SKUISettingsDocumentViewDelegate> * delegate;
+@property (nonatomic) <SKUISettingsDocumentViewDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)delegate;

@@ -7,7 +7,7 @@
     PLCloudPhotoLibraryManager *_cloudLibraryManager;
 }
 
-@property(assign,retain) PLCloudPhotoLibraryManager * cloudLibraryManager;
+@property (nonatomic, readonly, retain) PLCloudPhotoLibraryManager *cloudLibraryManager;
 
 + (id)sharedInstance;
 + (void)triggerWithCloudLibraryManager:(id)arg1;

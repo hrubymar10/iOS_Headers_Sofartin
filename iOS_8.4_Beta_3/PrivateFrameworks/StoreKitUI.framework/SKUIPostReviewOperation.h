@@ -7,7 +7,7 @@
     SKUIReviewMetadata *_review;
 }
 
-@property(assign,readonly) NSDictionary * responseDictionary;
+@property (readonly) NSDictionary *responseDictionary;
 
 - (void).cxx_destruct;
 - (id)_httpBody;

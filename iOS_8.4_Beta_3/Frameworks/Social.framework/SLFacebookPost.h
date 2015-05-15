@@ -17,18 +17,18 @@
     NSString *_videoExportPreset;
 }
 
-@property(assign,retain) SLFacebookAlbum * album;
-@property(assign,retain) NSArray * imageAssetURLs;
-@property(assign,retain) NSArray * imageData;
-@property(assign,retain) NSURL * link;
-@property(assign,retain) NSString * maskedApplicationID;
-@property(assign,retain) SLFacebookPlace * place;
-@property(assign,retain) SLFacebookPostPrivacySetting * privacySetting;
-@property(assign,retain) NSArray * taggedUserIDs;
-@property(assign,retain) NSString * text;
-@property(assign,retain) NSArray * videoAssetURLs;
-@property(assign,retain) NSArray * videoData;
-@property(assign,retain) NSString * videoExportPreset;
+@property (retain) SLFacebookAlbum *album;
+@property (retain) NSArray *imageAssetURLs;
+@property (retain) NSArray *imageData;
+@property (retain) NSURL *link;
+@property (retain) NSString *maskedApplicationID;
+@property (retain) SLFacebookPlace *place;
+@property (retain) SLFacebookPostPrivacySetting *privacySetting;
+@property (retain) NSArray *taggedUserIDs;
+@property (retain) NSString *text;
+@property (retain) NSArray *videoAssetURLs;
+@property (retain) NSArray *videoData;
+@property (retain) NSString *videoExportPreset;
 
 + (bool)supportsSecureCoding;
 

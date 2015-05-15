@@ -4,12 +4,12 @@
 
 @interface CATiledLayer : CALayer
 
-@property(getter=isDrawingEnabled,assign,readwrite) bool drawingEnabled;
-@property(assign,readwrite) struct CGColor { }* fillColor;
-@property(assign,readwrite) unsigned long long levelsOfDetail;
-@property(assign,readwrite) unsigned long long levelsOfDetailBias;
-@property(assign,readwrite) double maximumTileScale;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } tileSize;
+@property (getter=isDrawingEnabled) bool drawingEnabled;
+@property struct CGColor { }*fillColor;
+@property unsigned long long levelsOfDetail;
+@property unsigned long long levelsOfDetailBias;
+@property double maximumTileScale;
+@property struct CGSize { double x1; double x2; } tileSize;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (id)defaultValueForKey:(id)arg1;

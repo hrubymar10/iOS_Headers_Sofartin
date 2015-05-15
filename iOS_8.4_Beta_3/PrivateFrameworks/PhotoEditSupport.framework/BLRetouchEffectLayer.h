@@ -28,11 +28,11 @@
     bool _strokeInProgress;
 }
 
-@property(assign,readwrite) float amount;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } area;
-@property(assign,copy) NSMutableArray * brushStrokes;
-@property(assign,readwrite) struct CGContext { }* layerMask;
-@property(assign,readonly) bool strokeInProgress;
+@property (nonatomic) float amount;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } area;
+@property (nonatomic, copy) NSMutableArray *brushStrokes;
+@property (nonatomic) struct CGContext { }*layerMask;
+@property (nonatomic, readonly) bool strokeInProgress;
 
 - (float)amount;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })area;

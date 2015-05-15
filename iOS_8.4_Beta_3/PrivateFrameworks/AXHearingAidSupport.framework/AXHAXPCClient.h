@@ -7,8 +7,8 @@
     NSObject<OS_xpc_object> *_xpcConnection;
 }
 
-@property(assign,readwrite) unsigned long long requestedUpdates;
-@property(assign,retain) NSObject<OS_xpc_object> * xpcConnection;
+@property (nonatomic) unsigned long long requestedUpdates;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *xpcConnection;
 
 + (id)clientWithConnection:(id)arg1;
 

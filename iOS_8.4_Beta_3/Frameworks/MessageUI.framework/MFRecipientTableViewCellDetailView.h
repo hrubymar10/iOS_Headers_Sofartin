@@ -11,14 +11,14 @@
     UIColor *_tintColor;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) UILabel * detailLabel;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool highlighted;
-@property(assign,readonly) UILabel * labelLabel;
-@property(assign,readwrite) bool shouldDim;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) UILabel *detailLabel;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool highlighted;
+@property (nonatomic, readonly) UILabel *labelLabel;
+@property (nonatomic) bool shouldDim;
+@property (readonly) Class superclass;
 
 + (id)defaultStringAttributes;
 + (id)groupStringAttributes;

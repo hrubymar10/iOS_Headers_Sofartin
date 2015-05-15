@@ -7,8 +7,8 @@
     int _serverVersion;
 }
 
-@property(assign,retain) CKDMescalSession * mescalSession;
-@property(assign,readwrite) int serverVersion;
+@property (nonatomic, retain) CKDMescalSession *mescalSession;
+@property (nonatomic) int serverVersion;
 
 - (void).cxx_destruct;
 - (void)_exchangeDataAndSendRequest:(id)arg1;

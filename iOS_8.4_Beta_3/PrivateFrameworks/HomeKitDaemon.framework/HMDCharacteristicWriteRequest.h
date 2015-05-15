@@ -7,8 +7,8 @@
     id _value;
 }
 
-@property(assign,readonly) NSData * authorizationData;
-@property(assign,readonly) id value;
+@property (nonatomic, readonly) NSData *authorizationData;
+@property (nonatomic, readonly) id value;
 
 + (id)writeRequestWithCharacteristic:(id)arg1 value:(id)arg2 authorizationData:(id)arg3;
 

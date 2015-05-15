@@ -7,7 +7,7 @@
     SSURLConnectionRequest *_request;
 }
 
-@property(assign,readwrite) unsigned long long acceptedTermsVersion;
+@property (nonatomic) unsigned long long acceptedTermsVersion;
 
 - (void).cxx_destruct;
 - (unsigned long long)acceptedTermsVersion;

@@ -6,7 +6,7 @@
     struct _Stream { } *m_pCStream;
 }
 
-@property(assign,readonly) struct _Stream { }* cStream;
+@property (nonatomic, readonly) struct _Stream { }*cStream;
 
 - (struct _Stream { }*)cStream;
 - (void)close;

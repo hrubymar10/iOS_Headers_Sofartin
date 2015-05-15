@@ -6,11 +6,11 @@
     _NMRMediaRemoteGetArtworkMessage *_protobuf;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSDate * serializationDate;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSDate *serializationDate;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)init;

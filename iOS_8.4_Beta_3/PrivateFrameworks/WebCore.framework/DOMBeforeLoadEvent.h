@@ -4,7 +4,7 @@
 
 @interface DOMBeforeLoadEvent : DOMEvent
 
-@property(assign,copy) NSString * url;
+@property (readonly, copy) NSString *url;
 
 - (id)url;
 

@@ -12,13 +12,13 @@
     NSArray *_subscriptionsToSave;
 }
 
-@property(assign,retain) NSMutableArray * deletedSubscriptionIDs;
-@property(assign,copy) id modifySubscriptionsCompletionBlock;
-@property(assign,retain) NSMutableArray * savedSubscriptions;
-@property(assign,retain) NSMutableDictionary * subscriptionErrors;
-@property(assign,copy) NSArray * subscriptionIDsToDelete;
-@property(assign,retain) NSMutableDictionary * subscriptionsBySubscriptionIDs;
-@property(assign,copy) NSArray * subscriptionsToSave;
+@property (nonatomic, retain) NSMutableArray *deletedSubscriptionIDs;
+@property (nonatomic, copy) id modifySubscriptionsCompletionBlock;
+@property (nonatomic, retain) NSMutableArray *savedSubscriptions;
+@property (nonatomic, retain) NSMutableDictionary *subscriptionErrors;
+@property (nonatomic, copy) NSArray *subscriptionIDsToDelete;
+@property (nonatomic, retain) NSMutableDictionary *subscriptionsBySubscriptionIDs;
+@property (nonatomic, copy) NSArray *subscriptionsToSave;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

@@ -10,10 +10,10 @@
     UIColor *_strokeColor;
 }
 
-@property(assign,readwrite) double cornerRadius;
-@property(assign,retain) UIColor * fillColor;
-@property(assign,readwrite) double lineWidth;
-@property(assign,retain) UIColor * strokeColor;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic, retain) UIColor *fillColor;
+@property (nonatomic) double lineWidth;
+@property (nonatomic, retain) UIColor *strokeColor;
 
 - (id)_fillColor:(bool)arg1;
 - (id)_initWithFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 active:(bool)arg2 lineWidth:(double)arg3;

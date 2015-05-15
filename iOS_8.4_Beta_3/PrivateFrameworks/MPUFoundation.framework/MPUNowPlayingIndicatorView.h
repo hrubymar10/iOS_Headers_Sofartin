@@ -15,15 +15,15 @@
     bool _showsLevelGutters;
 }
 
-@property(assign,readwrite) double interLevelSpacing;
-@property(assign,readwrite) double levelCornerRadius;
-@property(assign,retain) UIColor * levelGuttersColor;
-@property(assign,readwrite) double levelWidth;
-@property(assign,readwrite) double maximumLevelHeight;
-@property(assign,readwrite) double minimumLevelHeight;
-@property(assign,readwrite) long long numberOfLevels;
-@property(assign,readwrite) long long playbackState;
-@property(assign,readwrite) bool showsLevelGutters;
+@property (nonatomic) double interLevelSpacing;
+@property (nonatomic) double levelCornerRadius;
+@property (nonatomic, retain) UIColor *levelGuttersColor;
+@property (nonatomic) double levelWidth;
+@property (nonatomic) double maximumLevelHeight;
+@property (nonatomic) double minimumLevelHeight;
+@property (nonatomic) long long numberOfLevels;
+@property (nonatomic) long long playbackState;
+@property (nonatomic) bool showsLevelGutters;
 
 - (void).cxx_destruct;
 - (void)_reloadLevelViews;

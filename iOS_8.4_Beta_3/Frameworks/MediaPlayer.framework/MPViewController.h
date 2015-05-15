@@ -18,19 +18,19 @@
     unsigned int _showOverlayWhileAppearingDisabled;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=idleTimerDisabled,setter=setIdleTimerDisabled:,assign,readwrite) bool idleTimerDisabled;
-@property(assign,retain) MPAVItem * item;
-@property(assign,readwrite) bool observesApplicationSuspendResumeEventsOnly;
-@property(assign,readwrite) long long orientation;
-@property(assign,retain) MPAVController * player;
-@property(assign,copy) id popViewControllerHandler;
-@property(assign,readwrite) bool registeredForPlayerNotifications;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIView * view;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) id delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=idleTimerDisabled, setter=setIdleTimerDisabled:, nonatomic) bool idleTimerDisabled;
+@property (nonatomic, retain) MPAVItem *item;
+@property (nonatomic) bool observesApplicationSuspendResumeEventsOnly;
+@property (nonatomic) long long orientation;
+@property (nonatomic, retain) MPAVController *player;
+@property (nonatomic, copy) id popViewControllerHandler;
+@property (nonatomic) bool registeredForPlayerNotifications;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, retain) UIView *view;
 
 - (void).cxx_destruct;
 - (bool)_canReloadView;

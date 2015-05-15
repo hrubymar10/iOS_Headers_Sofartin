@@ -8,13 +8,13 @@
     long long _options;
 }
 
-@property(assign,readonly) NSNumber * accountID;
-@property(assign,copy) id contentIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long keybagOptions;
-@property(assign,readonly) Class superclass;
+@property (readonly) NSNumber *accountID;
+@property (copy) id contentIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property long long keybagOptions;
+@property (readonly) Class superclass;
 
 - (id)accountID;
 - (id)accountIdentifier;

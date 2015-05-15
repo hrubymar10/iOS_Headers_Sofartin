@@ -7,8 +7,8 @@
     double maxAllowedRotationAngle;
 }
 
-@property(assign,readwrite) SCNNode * joint;
-@property(assign,readwrite) double maxAllowedRotationAngle;
+@property (nonatomic) SCNNode *joint;
+@property (nonatomic) double maxAllowedRotationAngle;
 
 - (id)joint;
 - (double)maxAllowedRotationAngle;

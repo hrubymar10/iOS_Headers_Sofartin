@@ -21,17 +21,17 @@
     bool useSBR;
 }
 
-@property(assign,readonly) unsigned int bitrate;
-@property(assign,readonly) unsigned int blockSize;
-@property(assign,readonly) unsigned int bundleHeaderBytes;
-@property(assign,readonly) bool canBundle;
-@property(assign,readonly) unsigned int encodedBytesPerFrame;
-@property(assign,readonly) int payload;
-@property(assign,readonly) unsigned int sampleRate;
-@property(assign,readonly) unsigned int samplesPerFrame;
-@property(assign,readonly) NSArray * supportedBitrates;
-@property(assign,readonly) bool useCookie;
-@property(assign,readwrite) bool useSBR;
+@property (nonatomic, readonly) unsigned int bitrate;
+@property (nonatomic, readonly) unsigned int blockSize;
+@property (nonatomic, readonly) unsigned int bundleHeaderBytes;
+@property (nonatomic, readonly) bool canBundle;
+@property (nonatomic, readonly) unsigned int encodedBytesPerFrame;
+@property (nonatomic, readonly) int payload;
+@property (nonatomic, readonly) unsigned int sampleRate;
+@property (nonatomic, readonly) unsigned int samplesPerFrame;
+@property (nonatomic, readonly) NSArray *supportedBitrates;
+@property (nonatomic, readonly) bool useCookie;
+@property (nonatomic) bool useSBR;
 
 + (bool)isPayloadSupported:(int)arg1;
 

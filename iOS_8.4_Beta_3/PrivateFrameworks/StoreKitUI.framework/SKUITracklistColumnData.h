@@ -9,10 +9,10 @@
     double _rightEdgeInset;
 }
 
-@property(assign,copy) NSArray * columns;
-@property(assign,readwrite) double interColumnSpacing;
-@property(assign,readwrite) double leftEdgeInset;
-@property(assign,readwrite) double rightEdgeInset;
+@property (nonatomic, copy) NSArray *columns;
+@property (nonatomic) double interColumnSpacing;
+@property (nonatomic) double leftEdgeInset;
+@property (nonatomic) double rightEdgeInset;
 
 - (void).cxx_destruct;
 - (id)_initSKUITracklistColumnData;

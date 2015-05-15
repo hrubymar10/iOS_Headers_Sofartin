@@ -7,7 +7,7 @@
     id _progressBlock;
 }
 
-@property(assign,copy) id progressBlock;
+@property (nonatomic, copy) id progressBlock;
 
 + (id)installerWithProgressBlock:(id)arg1;
 

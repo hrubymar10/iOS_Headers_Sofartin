@@ -8,9 +8,9 @@
     double _n;
 }
 
-@property(assign,readwrite) double m2;
-@property(assign,readwrite) double mean;
-@property(assign,readwrite) double n;
+@property (nonatomic) double m2;
+@property (nonatomic) double mean;
+@property (nonatomic) double n;
 
 - (double)m2;
 - (double)mean;

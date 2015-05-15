@@ -15,19 +15,19 @@
     NSURL *_selectedURL;
 }
 
-@property(assign,retain) SKUICategoryArtworkLoader * artworkLoader;
-@property(assign,retain) SKUICategory * category;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) NSURL * defaultURL;
-@property(assign,readwrite) <SKUICategoryTableViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * metricsLocations;
-@property(assign,readwrite) long long numberOfHiddenRows;
-@property(getter=isRoot,assign,readwrite) bool root;
-@property(assign,retain) NSURL * selectedURL;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUICategoryArtworkLoader *artworkLoader;
+@property (nonatomic, retain) SKUICategory *category;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) NSURL *defaultURL;
+@property (nonatomic) <SKUICategoryTableViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *metricsLocations;
+@property (nonatomic) long long numberOfHiddenRows;
+@property (getter=isRoot, nonatomic) bool root;
+@property (nonatomic, retain) NSURL *selectedURL;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_categoryAtIndexPath:(id)arg1;

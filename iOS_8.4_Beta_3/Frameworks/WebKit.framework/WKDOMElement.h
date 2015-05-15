@@ -4,7 +4,7 @@
 
 @interface WKDOMElement : WKDOMNode
 
-@property(assign,readonly) NSString * tagName;
+@property (readonly) NSString *tagName;
 
 - (id)getAttribute:(id)arg1;
 - (bool)hasAttribute:(id)arg1;

@@ -13,9 +13,9 @@
     double _preferredMaxLayoutWidth;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,readonly) UILabel * label;
-@property(assign,readwrite) double preferredMaxLayoutWidth;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic, readonly) UILabel *label;
+@property (nonatomic) double preferredMaxLayoutWidth;
 
 - (void).cxx_destruct;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })contentInsets;

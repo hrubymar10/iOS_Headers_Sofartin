@@ -7,10 +7,10 @@
     int _chunkID;
 }
 
-@property(assign,readonly) NSUUID * buildUUID;
-@property(assign,readonly) int chunkID;
-@property(getter=isEmpty,assign,readonly) bool empty;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (nonatomic, readonly) NSUUID *buildUUID;
+@property (nonatomic, readonly) int chunkID;
+@property (getter=isEmpty, nonatomic, readonly) bool empty;
+@property (getter=isValid, nonatomic, readonly) bool valid;
 
 + (id)emptyIdentifier;
 

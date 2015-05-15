@@ -6,8 +6,8 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,retain) NSXPCConnection * xpcConnection;
-@property(assign,retain) NSXPCConnection * xpcConnection;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
 
 + (id)defaultManager;
 

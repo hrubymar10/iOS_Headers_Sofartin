@@ -14,10 +14,10 @@
     SKUIGiftTheme *_theme;
 }
 
-@property(assign,retain) SKUIGift * gift;
-@property(assign,retain) SKUIGiftConfiguration * giftConfiguration;
-@property(assign,retain) UIImage * itemImage;
-@property(assign,retain) SKUIGiftTheme * theme;
+@property (nonatomic, retain) SKUIGift *gift;
+@property (nonatomic, retain) SKUIGiftConfiguration *giftConfiguration;
+@property (nonatomic, retain) UIImage *itemImage;
+@property (nonatomic, retain) SKUIGiftTheme *theme;
 
 - (void).cxx_destruct;
 - (id)_itemView;

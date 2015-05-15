@@ -7,9 +7,9 @@
     bool _numberButtonsEnabled;
 }
 
-@property(assign,readwrite) double buttonBackgroundAlpha;
-@property(assign,retain) NSArray * buttons;
-@property(assign,readwrite) bool numberButtonsEnabled;
+@property (nonatomic) double buttonBackgroundAlpha;
+@property (retain) NSArray *buttons;
+@property (nonatomic) bool numberButtonsEnabled;
 
 - (void)_addButton:(id)arg1;
 - (double)_backgroundAlphaOfButton:(id)arg1;

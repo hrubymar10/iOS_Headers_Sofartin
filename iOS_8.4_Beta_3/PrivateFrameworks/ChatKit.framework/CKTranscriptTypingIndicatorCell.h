@@ -7,8 +7,8 @@
     CKTypingView *_typingView;
 }
 
-@property(assign,retain) CKTypingView * typingIndicatorLayer;
-@property(assign,retain) CKTypingView * typingView;
+@property (nonatomic, retain) CKTypingView *typingIndicatorLayer;
+@property (nonatomic, retain) CKTypingView *typingView;
 
 + (struct CGSize { double x1; double x2; })indicatorSize;
 

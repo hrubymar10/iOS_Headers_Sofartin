@@ -17,7 +17,7 @@
     <MKAnnotation><NSCopying> *_primaryAnnotation;
 }
 
-@property(assign,readwrite) <PUMapAnnotationQuadtreeDataSource> * dataSource;
+@property (nonatomic) <PUMapAnnotationQuadtreeDataSource> *dataSource;
 
 + (void)convertCoordinate:(struct { double x1; double x2; })arg1 quantizedX:(unsigned int*)arg2 quantizedY:(unsigned int*)arg3;
 + (void)getMinCoordinate:(struct { double x1; double x2; }*)arg1 maxCoordinate:(struct { double x1; double x2; }*)arg2 forAddress:(id)arg3;

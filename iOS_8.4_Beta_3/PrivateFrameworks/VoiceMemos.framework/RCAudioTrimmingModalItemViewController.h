@@ -20,13 +20,13 @@
     RCAVWaveformViewController *_waveformViewController;
 }
 
-@property(assign,copy) NSURL * audioURL;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) double maximumDuration;
-@property(assign,readonly) RCPreviewController * previewController;
-@property(assign,readwrite) float progress;
-@property(assign,readonly) struct { double x1; double x2; } selectedTimeRange;
-@property(assign,readwrite) bool showsProgress;
+@property (nonatomic, readonly, copy) NSURL *audioURL;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic, readonly) double maximumDuration;
+@property (nonatomic, readonly) RCPreviewController *previewController;
+@property (nonatomic) float progress;
+@property (nonatomic, readonly) struct { double x1; double x2; } selectedTimeRange;
+@property (nonatomic) bool showsProgress;
 
 - (void).cxx_destruct;
 - (void)_beginOrResumePreviewing;

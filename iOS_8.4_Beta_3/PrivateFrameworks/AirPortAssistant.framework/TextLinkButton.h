@@ -7,8 +7,8 @@
     NSString *_urlString;
 }
 
-@property(assign,readwrite) <TextLinkButtonDelegate> * delegate;
-@property(assign,retain) NSString * urlString;
+@property (nonatomic) <TextLinkButtonDelegate> *delegate;
+@property (nonatomic, retain) NSString *urlString;
 
 - (void)dealloc;
 - (id)delegate;

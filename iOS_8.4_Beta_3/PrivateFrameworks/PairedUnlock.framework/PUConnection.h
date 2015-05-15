@@ -9,12 +9,12 @@
     id _remoteDeviceRemoveLockoutHandler;
 }
 
-@property(assign,readonly) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUConnectionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUConnectionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)connection;

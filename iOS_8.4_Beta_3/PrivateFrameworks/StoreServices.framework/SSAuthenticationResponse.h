@@ -8,21 +8,21 @@
     NSHTTPURLResponse *_urlResponse;
 }
 
-@property(assign,readwrite) long long URLBagType;
-@property(assign,readonly) NSHTTPURLResponse * URLResponse;
-@property(assign,readonly) long long accountKind;
-@property(assign,readonly) NSString * accountName;
-@property(assign,readonly) NSNumber * accountUniqueIdentifier;
-@property(assign,readonly) long long availableServiceTypes;
-@property(assign,readonly) NSString * creditsString;
-@property(assign,readonly) long long enabledServiceTypes;
-@property(assign,readonly) NSNumber * failureType;
-@property(getter=isNewCustomer,assign,readonly) bool newCustomer;
-@property(assign,readonly) NSDictionary * responseDictionary;
-@property(assign,readonly) long long responseType;
-@property(assign,readonly) NSString * storeFrontIdentifier;
-@property(assign,readonly) NSString * token;
-@property(assign,readonly) NSString * userMessage;
+@property long long URLBagType;
+@property (readonly) NSHTTPURLResponse *URLResponse;
+@property (readonly) long long accountKind;
+@property (readonly) NSString *accountName;
+@property (readonly) NSNumber *accountUniqueIdentifier;
+@property (readonly) long long availableServiceTypes;
+@property (readonly) NSString *creditsString;
+@property (readonly) long long enabledServiceTypes;
+@property (readonly) NSNumber *failureType;
+@property (getter=isNewCustomer, readonly) bool newCustomer;
+@property (readonly) NSDictionary *responseDictionary;
+@property (readonly) long long responseType;
+@property (readonly) NSString *storeFrontIdentifier;
+@property (readonly) NSString *token;
+@property (readonly) NSString *userMessage;
 
 - (long long)URLBagType;
 - (id)URLResponse;

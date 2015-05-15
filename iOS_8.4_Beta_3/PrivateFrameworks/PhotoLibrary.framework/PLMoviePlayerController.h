@@ -28,18 +28,18 @@
     PLMoviePlayerView *_view;
 }
 
-@property(assign,readwrite) bool TVOutEnabled;
-@property(assign,readonly) unsigned long long bufferingState;
-@property(assign,readwrite) double currentTime;
-@property(assign,readwrite) <PLMoviePlayerControllerDelegate> * delegate;
-@property(assign,readonly) double duration;
-@property(setter=_setForceDisableTVOut:,assign,readwrite) bool forceDisableTVOut;
-@property(assign,readwrite) bool isActiveController;
-@property(assign,readonly) bool isPreparedForPlayback;
-@property(assign,readonly) float playbackRate;
-@property(assign,readonly) unsigned long long playbackState;
-@property(assign,retain) AVPlayer * player;
-@property(assign,retain) PLMoviePlayerView * view;
+@property (nonatomic) bool TVOutEnabled;
+@property (nonatomic, readonly) unsigned long long bufferingState;
+@property (nonatomic) double currentTime;
+@property (nonatomic) <PLMoviePlayerControllerDelegate> *delegate;
+@property (nonatomic, readonly) double duration;
+@property (setter=_setForceDisableTVOut:, nonatomic) bool forceDisableTVOut;
+@property (nonatomic) bool isActiveController;
+@property (nonatomic, readonly) bool isPreparedForPlayback;
+@property (nonatomic, readonly) float playbackRate;
+@property (nonatomic, readonly) unsigned long long playbackState;
+@property (nonatomic, readonly, retain) AVPlayer *player;
+@property (nonatomic, readonly, retain) PLMoviePlayerView *view;
 
 + (id)AVAssetURLWithPath:(id)arg1;
 + (bool)_isNetworkSupportedPath:(id)arg1;

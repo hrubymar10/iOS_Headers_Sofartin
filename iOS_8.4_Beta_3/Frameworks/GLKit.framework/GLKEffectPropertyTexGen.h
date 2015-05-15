@@ -15,16 +15,16 @@
     unsigned int _textureIndex;
 }
 
-@property(assign,readonly) int coord;
-@property(assign,readwrite) float* eyePlaneByInvModelview;
-@property(assign,readwrite) int eyePlaneByInvModelviewLoc;
-@property(assign,readwrite) int mode;
-@property(assign,readwrite) int modeLoc;
-@property(assign,readwrite) char * modeNameString;
-@property(assign,readwrite) float* plane;
-@property(assign,readwrite) int planeLoc;
-@property(assign,readwrite) char * planeNameString;
-@property(assign,readwrite) unsigned int textureIndex;
+@property (nonatomic, readonly) int coord;
+@property (nonatomic) float*eyePlaneByInvModelview;
+@property (nonatomic) int eyePlaneByInvModelviewLoc;
+@property (nonatomic) int mode;
+@property (nonatomic) int modeLoc;
+@property (nonatomic) char *modeNameString;
+@property (nonatomic) float*plane;
+@property (nonatomic) int planeLoc;
+@property (nonatomic) char *planeNameString;
+@property (nonatomic) unsigned int textureIndex;
 
 - (void)bind;
 - (int)coord;

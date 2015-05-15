@@ -9,15 +9,15 @@
     PLPhotoLibrary *_photoLibrary;
 }
 
-@property(assign,retain) PLPhotoLibrary * _photoLibrary;
-@property(assign,copy) NSString * debugDescription;
-@property(getter=isDeletable,assign,readonly) bool deletable;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isValid;
-@property(assign,readwrite) ALAssetsLibrary * library;
-@property(assign,retain) PLManagedAsset * photo;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) PLPhotoLibrary *_photoLibrary;
+@property (readonly, copy) NSString *debugDescription;
+@property (getter=isDeletable, nonatomic, readonly) bool deletable;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isValid;
+@property (nonatomic) ALAssetsLibrary *library;
+@property (nonatomic, retain) PLManagedAsset *photo;
+@property (readonly) Class superclass;
 
 - (void)_performBlockAndWait:(id)arg1;
 - (id)_photoLibrary;

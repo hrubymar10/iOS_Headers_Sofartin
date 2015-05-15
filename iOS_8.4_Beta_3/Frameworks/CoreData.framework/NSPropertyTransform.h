@@ -9,10 +9,10 @@
     NSExpression *_valueExpression;
 }
 
-@property(assign,retain) NSPropertyTransform * prerequisiteTransform;
-@property(assign,retain) NSString * propertyName;
-@property(assign,readwrite) bool replaceMissingValueOnly;
-@property(assign,retain) NSExpression * valueExpression;
+@property (nonatomic, retain) NSPropertyTransform *prerequisiteTransform;
+@property (nonatomic, retain) NSString *propertyName;
+@property bool replaceMissingValueOnly;
+@property (nonatomic, retain) NSExpression *valueExpression;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

@@ -19,7 +19,7 @@
     <VKMercatorTerrainHeightProvider> *_heightProvider;
 }
 
-@property(assign,readwrite) <VKMercatorTerrainHeightProvider> * heightProvider;
+@property (nonatomic) <VKMercatorTerrainHeightProvider> *heightProvider;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

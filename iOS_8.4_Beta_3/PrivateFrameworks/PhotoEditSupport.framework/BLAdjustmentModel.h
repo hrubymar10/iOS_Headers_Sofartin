@@ -56,15 +56,15 @@
     double _whiteLevel;
 }
 
-@property(assign,retain) CIFilter * colorBalanceFilter;
-@property(assign,retain) CIFilter * colorFilter;
-@property(assign,retain) CIFilter * curvesFilter;
-@property(assign,retain) CIFilter * faceBalanceFilter;
-@property(assign,retain) CIFilter * highlightsAndShadowsFilter;
-@property(assign,retain) CIFilter * skyAndGrassFilter;
-@property(assign,retain) CIFilter * tempAndTintFilter;
-@property(assign,retain) CIFilter * underwaterBalanceFilter;
-@property(assign,retain) CIFilter * vibranceFilter;
+@property (nonatomic, retain) CIFilter *colorBalanceFilter;
+@property (nonatomic, retain) CIFilter *colorFilter;
+@property (nonatomic, retain) CIFilter *curvesFilter;
+@property (nonatomic, retain) CIFilter *faceBalanceFilter;
+@property (nonatomic, retain) CIFilter *highlightsAndShadowsFilter;
+@property (nonatomic, retain) CIFilter *skyAndGrassFilter;
+@property (nonatomic, retain) CIFilter *tempAndTintFilter;
+@property (nonatomic, retain) CIFilter *underwaterBalanceFilter;
+@property (nonatomic, retain) CIFilter *vibranceFilter;
 
 + (id)exposureValuesForToneCurveData:(id)arg1 highlightsAndShadowsData:(id)arg2 andHistogramData:(id)arg3;
 + (struct CGPoint { double x1; double x2; })pointOnCurveFromPoint:(struct CGPoint { double x1; double x2; })arg1 withSlope:(double)arg2 andCurveData:(double*)arg3;

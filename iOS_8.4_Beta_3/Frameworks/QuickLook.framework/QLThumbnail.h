@@ -6,7 +6,7 @@
     NSURL *_url;
 }
 
-@property(assign,retain) NSURL * url;
+@property (retain) NSURL *url;
 
 + (id)defaultDescriptors;
 + (id)sharedQueue;

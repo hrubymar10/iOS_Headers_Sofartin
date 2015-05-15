@@ -7,8 +7,8 @@
     unsigned long long _size;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) unsigned long long size;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) unsigned long long size;
 
 + (bool)supportsSecureCoding;
 

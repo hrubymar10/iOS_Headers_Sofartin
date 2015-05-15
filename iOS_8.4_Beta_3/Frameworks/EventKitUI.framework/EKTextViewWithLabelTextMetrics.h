@@ -6,12 +6,12 @@
     long long lineBreakMode;
 }
 
-@property(assign,retain) UIFont * font;
-@property(assign,readwrite) long long lineBreakMode;
-@property(assign,readwrite) long long numberOfLines;
-@property(assign,copy) NSString * text;
-@property(assign,readwrite) long long textAlignment;
-@property(assign,retain) UIColor * textColor;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic) long long lineBreakMode;
+@property (nonatomic) long long numberOfLines;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic) long long textAlignment;
+@property (nonatomic, retain) UIColor *textColor;
 
 - (id)initWithFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 - (long long)lineBreakMode;

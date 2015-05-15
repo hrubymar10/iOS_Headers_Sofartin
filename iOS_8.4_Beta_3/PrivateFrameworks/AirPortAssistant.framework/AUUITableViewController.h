@@ -6,9 +6,9 @@
     TableViewManager *_tableManager;
 }
 
-@property(assign,readwrite) <TableViewManagerDelegate> * delegate;
-@property(assign,readonly) TableViewManager * tableManager;
-@property(assign,retain) UITableView * tableView;
+@property (nonatomic) <TableViewManagerDelegate> *delegate;
+@property (nonatomic, readonly) TableViewManager *tableManager;
+@property (nonatomic, retain) UITableView *tableView;
 
 - (void)dealloc;
 - (id)delegate;

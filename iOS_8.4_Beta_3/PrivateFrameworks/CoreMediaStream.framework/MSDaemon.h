@@ -10,11 +10,11 @@
     bool _stabilizedIsBusy;
 }
 
-@property(assign,readwrite) int UIBusyCount;
-@property(assign,readwrite) int busyCount;
-@property(assign,retain) NSTimer * hysteresisTimer;
-@property(assign,retain) NSObject<OS_dispatch_queue> * idleCountQueue;
-@property(assign,readwrite) bool stabilizedIsBusy;
+@property (nonatomic) int UIBusyCount;
+@property (nonatomic) int busyCount;
+@property (nonatomic, retain) NSTimer *hysteresisTimer;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *idleCountQueue;
+@property (nonatomic) bool stabilizedIsBusy;
 
 - (void).cxx_destruct;
 - (int)UIBusyCount;

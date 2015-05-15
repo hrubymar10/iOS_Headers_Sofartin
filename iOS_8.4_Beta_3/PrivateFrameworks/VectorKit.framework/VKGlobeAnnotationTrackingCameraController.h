@@ -20,7 +20,7 @@
     struct GlobeView { int (**x1)(); } *_globeView;
 }
 
-@property(assign,readwrite) struct GlobeView { int (**x1)(); }* globeView;
+@property (nonatomic) struct GlobeView { int (**x1)(); }*globeView;
 
 - (id).cxx_construct;
 - (void)_goToAnnotationAnimated:(bool)arg1 duration:(double)arg2 isInitial:(bool)arg3;

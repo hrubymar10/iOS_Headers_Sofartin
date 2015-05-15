@@ -13,14 +13,14 @@
     NSString *_path;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * dispatchQueue;
-@property(assign,readwrite) bool enabled;
-@property(assign,readwrite) int fileDescriptor;
-@property(assign,readwrite) int kQueue;
-@property(assign,copy) id kQueueBlock;
-@property(assign,readwrite) struct __CFFileDescriptor { }* kqueueDescriptorRef;
-@property(assign,readwrite) struct __CFRunLoopSource { }* kqueueDescriptorSource;
-@property(assign,copy) NSString * path;
+@property (retain) NSObject<OS_dispatch_queue> *dispatchQueue;
+@property (nonatomic) bool enabled;
+@property int fileDescriptor;
+@property int kQueue;
+@property (nonatomic, copy) id kQueueBlock;
+@property struct __CFFileDescriptor { }*kqueueDescriptorRef;
+@property struct __CFRunLoopSource { }*kqueueDescriptorSource;
+@property (copy) NSString *path;
 
 - (void).cxx_destruct;
 - (id)dispatchQueue;

@@ -18,21 +18,21 @@
     bool _validCTag;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSURL * folderURL;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSDictionary * hrefToETag;
-@property(assign,readonly) NSDictionary * hrefToErrorItems;
-@property(assign,readonly) NSDictionary * hrefToStatus;
-@property(assign,readwrite) unsigned long long multiPutBatchMaxNumResources;
-@property(assign,readwrite) unsigned long long multiPutBatchMaxSize;
-@property(assign,retain) NSString * nextCTag;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSDictionary * uuidToErrorItems;
-@property(assign,readonly) NSDictionary * uuidToHREF;
-@property(assign,readonly) NSDictionary * uuidToStatus;
-@property(assign,readonly) bool validCTag;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSURL *folderURL;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSDictionary *hrefToETag;
+@property (nonatomic, readonly) NSDictionary *hrefToErrorItems;
+@property (nonatomic, readonly) NSDictionary *hrefToStatus;
+@property (nonatomic) unsigned long long multiPutBatchMaxNumResources;
+@property (nonatomic) unsigned long long multiPutBatchMaxSize;
+@property (nonatomic, retain) NSString *nextCTag;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSDictionary *uuidToErrorItems;
+@property (nonatomic, readonly) NSDictionary *uuidToHREF;
+@property (nonatomic, readonly) NSDictionary *uuidToStatus;
+@property (nonatomic, readonly) bool validCTag;
 
 - (void)_sendNextBatch;
 - (void)dealloc;

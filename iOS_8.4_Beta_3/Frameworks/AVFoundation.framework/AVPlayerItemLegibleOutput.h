@@ -6,9 +6,9 @@
     AVPlayerItemLegibleOutputInternal *_legibleOutputInternal;
 }
 
-@property(assign,readwrite) double advanceIntervalForDelegateInvocation;
-@property(assign,readonly) <AVPlayerItemLegibleOutputPushDelegate> * delegate;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * delegateQueue;
+@property (nonatomic) double advanceIntervalForDelegateInvocation;
+@property (nonatomic, readonly) <AVPlayerItemLegibleOutputPushDelegate> *delegate;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *delegateQueue;
 
 + (void)initialize;
 

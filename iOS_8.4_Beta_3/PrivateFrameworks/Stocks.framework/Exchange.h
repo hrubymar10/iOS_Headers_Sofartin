@@ -10,11 +10,11 @@
     double _streamInterval;
 }
 
-@property(assign,readonly) double lastUpdateTime;
-@property(assign,copy) NSString * name;
-@property(assign,retain) NSDate * nextOpenDate;
-@property(assign,readwrite) long long status;
-@property(assign,readwrite) double streamInterval;
+@property (nonatomic, readonly) double lastUpdateTime;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) NSDate *nextOpenDate;
+@property (nonatomic) long long status;
+@property (nonatomic) double streamInterval;
 
 + (id)formattedExchangeNameForName:(id)arg1;
 

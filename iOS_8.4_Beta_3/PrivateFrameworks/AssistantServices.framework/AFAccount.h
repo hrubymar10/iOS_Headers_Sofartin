@@ -19,20 +19,20 @@
     NSString *_speechIdentifier;
 }
 
-@property(assign,copy) NSString * aceHost;
-@property(assign,copy) NSString * assistantIdentifier;
-@property(assign,copy) NSDictionary * connectionPolicy;
-@property(assign,copy) NSDate * connectionPolicyDate;
-@property(assign,copy) NSString * connectionPolicyHostname;
-@property(assign,copy) NSString * group;
-@property(assign,copy) NSString * hostname;
-@property(assign,copy) NSString * identifier;
-@property(assign,readonly) bool isActive;
-@property(assign,copy) NSString * label;
-@property(assign,copy) NSDictionary * lastSyncDates;
-@property(assign,copy) NSString * localeIdentifier;
-@property(assign,copy) NSString * predefinedServer;
-@property(assign,copy) NSString * speechIdentifier;
+@property (nonatomic, copy) NSString *aceHost;
+@property (nonatomic, copy) NSString *assistantIdentifier;
+@property (nonatomic, copy) NSDictionary *connectionPolicy;
+@property (nonatomic, copy) NSDate *connectionPolicyDate;
+@property (nonatomic, copy) NSString *connectionPolicyHostname;
+@property (nonatomic, copy) NSString *group;
+@property (nonatomic, copy) NSString *hostname;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, readonly) bool isActive;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, copy) NSDictionary *lastSyncDates;
+@property (nonatomic, copy) NSString *localeIdentifier;
+@property (nonatomic, copy) NSString *predefinedServer;
+@property (nonatomic, copy) NSString *speechIdentifier;
 
 - (void).cxx_destruct;
 - (id)aceHost;

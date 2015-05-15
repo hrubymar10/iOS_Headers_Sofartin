@@ -4,7 +4,7 @@
 
 @interface CPAggregateDictionary : NSObject
 
-@property(getter=isEnabled,assign,readonly) bool enabled;
+@property (getter=isEnabled, nonatomic, readonly) bool enabled;
 
 + (id)sharedAggregateDictionary;
 

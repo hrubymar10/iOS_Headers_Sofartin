@@ -6,7 +6,7 @@
     CUIThemeSchemaRendition *rendition;
 }
 
-@property(assign,retain) CUIThemeSchemaRendition * rendition;
+@property (nonatomic, retain) CUIThemeSchemaRendition *rendition;
 
 - (void)dealloc;
 - (id)rendition;

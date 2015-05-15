@@ -6,7 +6,7 @@
     NSMutableArray *_actions;
 }
 
-@property(assign,readonly) NSArray * actions;
+@property (nonatomic, readonly) NSArray *actions;
 
 + (id)actionGroupItemWithAction:(id)arg1;
 + (id)actionGroupItemWithActions:(id)arg1;

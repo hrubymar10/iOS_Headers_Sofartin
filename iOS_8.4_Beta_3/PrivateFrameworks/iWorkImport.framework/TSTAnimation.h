@@ -23,21 +23,21 @@
     unsigned long long mStageCount;
 }
 
-@property(assign,readonly) unsigned long long cellRangeCount;
-@property(assign,readonly) bool clipStrokes;
-@property(assign,readonly) bool drawCellBackground;
-@property(assign,readonly) bool drawCellContent;
-@property(assign,readonly) bool drawStrokes;
-@property(assign,readonly) bool drawTableBackground;
-@property(assign,readonly) bool drawTableName;
-@property(assign,readwrite) bool drawsBlackAndWhite;
-@property(assign,readonly) bool enabled;
-@property(assign,readwrite) bool expandBackgroundFill;
-@property(assign,readonly) bool final;
-@property(assign,readwrite) bool showsOverlayLayers;
-@property(assign,readwrite) bool showsTableChrome;
-@property(assign,readonly) unsigned long long stage;
-@property(assign,readonly) unsigned long long stageCount;
+@property (readonly) unsigned long long cellRangeCount;
+@property (readonly) bool clipStrokes;
+@property (readonly) bool drawCellBackground;
+@property (readonly) bool drawCellContent;
+@property (readonly) bool drawStrokes;
+@property (readonly) bool drawTableBackground;
+@property (readonly) bool drawTableName;
+@property bool drawsBlackAndWhite;
+@property (readonly) bool enabled;
+@property bool expandBackgroundFill;
+@property (readonly) bool final;
+@property bool showsOverlayLayers;
+@property bool showsTableChrome;
+@property (readonly) unsigned long long stage;
+@property (readonly) unsigned long long stageCount;
 
 + (bool)deliveryStyleSupportedForExport:(unsigned long long)arg1;
 + (id)newAnimationWithLayout:(id)arg1 andCellRange:(struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; })arg2;

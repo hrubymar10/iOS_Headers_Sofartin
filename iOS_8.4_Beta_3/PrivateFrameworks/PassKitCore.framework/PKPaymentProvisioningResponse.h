@@ -6,7 +6,7 @@
     NSURL *_passURL;
 }
 
-@property(assign,retain) NSURL * passURL;
+@property (nonatomic, retain) NSURL *passURL;
 
 - (void)dealloc;
 - (id)initWithData:(id)arg1;

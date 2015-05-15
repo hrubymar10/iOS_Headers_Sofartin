@@ -4,7 +4,7 @@
 
 @interface MusicQueryQueueFeeder : MPMediaQueryQueueFeeder
 
-@property(assign,retain) MPMediaPlaylist * mixPlaylist;
+@property (nonatomic, retain) MPMediaPlaylist *mixPlaylist;
 
 + (bool)supportsStateRestoration;
 

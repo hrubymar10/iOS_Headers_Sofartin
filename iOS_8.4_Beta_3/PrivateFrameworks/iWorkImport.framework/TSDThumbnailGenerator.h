@@ -7,7 +7,7 @@
     TSDImager *_imager;
 }
 
-@property(assign,readwrite) struct CGColor { }* backgroundColor;
+@property (nonatomic) struct CGColor { }*backgroundColor;
 
 - (struct CGColor { }*)backgroundColor;
 - (void)dealloc;

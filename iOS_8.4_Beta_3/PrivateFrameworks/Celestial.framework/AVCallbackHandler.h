@@ -10,9 +10,9 @@
     id _target;
 }
 
-@property(assign,readwrite) SEL action;
-@property(assign,readwrite) SEL mainThreadAction;
-@property(assign,readwrite) id target;
+@property SEL action;
+@property SEL mainThreadAction;
+@property id target;
 
 - (SEL)action;
 - (void)dealloc;

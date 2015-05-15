@@ -14,14 +14,14 @@
     NSNumber *_pid;
 }
 
-@property(assign,readonly) NSString * adamOrDisplayID;
-@property(assign,readonly) struct __CFBundle { }* bundle;
-@property(assign,retain) NSString * bundleID;
-@property(assign,readonly) NSXPCConnection * connection;
-@property(assign,readonly) ACDDatabase * database;
-@property(assign,readonly) NSString * localizedAppName;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSNumber * pid;
+@property (nonatomic, readonly) NSString *adamOrDisplayID;
+@property (nonatomic, readonly) struct __CFBundle { }*bundle;
+@property (nonatomic, retain) NSString *bundleID;
+@property (nonatomic, readonly) NSXPCConnection *connection;
+@property (nonatomic, readonly) ACDDatabase *database;
+@property (nonatomic, readonly) NSString *localizedAppName;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSNumber *pid;
 
 + (id)_bundleForNonPlugInPID:(int)arg1;
 + (id)_bundleForPID:(int)arg1;

@@ -14,9 +14,9 @@
     BRCServerZone *_targetServerZone;
 }
 
-@property(assign,readonly) bool containsItemID;
-@property(assign,readonly) BRCDocumentItem * target;
-@property(assign,readonly) BRCServerZone * targetServerZone;
+@property (nonatomic, readonly) bool containsItemID;
+@property (nonatomic, readonly) BRCDocumentItem *target;
+@property (nonatomic, readonly) BRCServerZone *targetServerZone;
 
 + (id)createName;
 + (void)unlinkAliasAtPath:(id)arg1;

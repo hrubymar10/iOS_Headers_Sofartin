@@ -27,8 +27,8 @@
     NSLayoutConstraint *_titleVerticalConstraint;
 }
 
-@property(assign,readonly) NSString * descriptionTextStyle;
-@property(assign,readonly) IKLockupElement * viewElement;
+@property (readonly) NSString *descriptionTextStyle;
+@property (readonly) IKLockupElement *viewElement;
 
 - (void).cxx_destruct;
 - (void)_configureArtworkViewForImageElement:(id)arg1 overlays:(id)arg2;

@@ -8,9 +8,9 @@
     CIImage *inputImage;
 }
 
-@property(assign,retain) CIColor * inputColor0;
-@property(assign,retain) CIColor * inputColor1;
-@property(assign,retain) CIImage * inputImage;
+@property (nonatomic, retain) CIColor *inputColor0;
+@property (nonatomic, retain) CIColor *inputColor1;
+@property (nonatomic, retain) CIImage *inputImage;
 
 + (id)customAttributes;
 

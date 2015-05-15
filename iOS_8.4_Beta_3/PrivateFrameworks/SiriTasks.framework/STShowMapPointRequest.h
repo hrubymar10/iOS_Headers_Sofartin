@@ -7,7 +7,7 @@
     NSData *_placeData;
 }
 
-@property(assign,readwrite) bool isCurrentLocation;
+@property (nonatomic) bool isCurrentLocation;
 
 + (bool)supportsSecureCoding;
 

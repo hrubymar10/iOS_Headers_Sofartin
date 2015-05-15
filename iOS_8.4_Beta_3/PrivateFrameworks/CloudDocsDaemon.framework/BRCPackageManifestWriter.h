@@ -12,8 +12,8 @@
     PBMessageStreamWriter *_writer;
 }
 
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) NSURL *url;
 
 - (void).cxx_destruct;
 - (void)_applyDirectoryMetadataWithManifestItem:(id)arg1 packageRootFD:(int)arg2;

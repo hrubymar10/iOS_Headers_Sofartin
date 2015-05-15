@@ -8,9 +8,9 @@
     id _updateRasterizationScaleToken;
 }
 
-@property(assign,retain) NSArray * labels;
-@property(assign,readwrite) double referenceZPosition;
-@property(assign,retain) id updateRasterizationScaleToken;
+@property (nonatomic, retain) NSArray *labels;
+@property (nonatomic) double referenceZPosition;
+@property (nonatomic, retain) id updateRasterizationScaleToken;
 
 - (id)_scaledTextStyle:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

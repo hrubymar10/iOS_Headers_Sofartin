@@ -7,8 +7,8 @@
     <WBSFluidProgressControllerWindowDelegate> *_windowDelegate;
 }
 
-@property(assign,readwrite) <WBSFluidProgressControllerDelegate> * delegate;
-@property(assign,readwrite) <WBSFluidProgressControllerWindowDelegate> * windowDelegate;
+@property <WBSFluidProgressControllerDelegate> *delegate;
+@property <WBSFluidProgressControllerWindowDelegate> *windowDelegate;
 
 - (void).cxx_destruct;
 - (void)_updateFluidProgressWithProgressStateSource:(id)arg1;

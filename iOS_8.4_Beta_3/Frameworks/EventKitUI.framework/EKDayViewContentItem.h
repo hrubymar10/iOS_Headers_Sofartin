@@ -22,27 +22,27 @@
     EKDayOccurrenceView *_view;
 }
 
-@property(assign,readwrite) double bottomPinningProximity;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSDate * end;
-@property(assign,copy) EKCalendarDate * endDate;
-@property(assign,readonly) double enoughHeightForOneLine;
-@property(assign,readonly) EKEvent * event;
-@property(assign,readonly) unsigned long long eventIndex;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool hideTravelTime;
-@property(assign,readonly) NSDate * start;
-@property(assign,copy) EKCalendarDate * startDate;
-@property(assign,copy) EKCalendarDate * startDateIncludingTravelTime;
-@property(assign,readonly) NSDate * startWithTravelTime;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double topPinningProximity;
-@property(assign,readwrite) double travelTime;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } unPinnedViewFrame;
-@property(assign,retain) EKDayOccurrenceView * view;
-@property(assign,readonly) double viewMaxNaturalTextHeight;
-@property(assign,readonly) bool visibleHeightLocked;
+@property (nonatomic) double bottomPinningProximity;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSDate *end;
+@property (nonatomic, copy) EKCalendarDate *endDate;
+@property (nonatomic, readonly) double enoughHeightForOneLine;
+@property (nonatomic, readonly) EKEvent *event;
+@property (nonatomic, readonly) unsigned long long eventIndex;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool hideTravelTime;
+@property (nonatomic, readonly) NSDate *start;
+@property (nonatomic, copy) EKCalendarDate *startDate;
+@property (nonatomic, readonly, copy) EKCalendarDate *startDateIncludingTravelTime;
+@property (nonatomic, readonly) NSDate *startWithTravelTime;
+@property (readonly) Class superclass;
+@property (nonatomic) double topPinningProximity;
+@property (nonatomic) double travelTime;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } unPinnedViewFrame;
+@property (nonatomic, retain) EKDayOccurrenceView *view;
+@property (nonatomic, readonly) double viewMaxNaturalTextHeight;
+@property (readonly) bool visibleHeightLocked;
 
 + (double)barToBarHorizontalDistanceIncludingBarWidth;
 

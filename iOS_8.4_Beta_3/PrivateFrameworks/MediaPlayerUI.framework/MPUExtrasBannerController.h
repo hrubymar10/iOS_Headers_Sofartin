@@ -16,17 +16,17 @@
     unsigned long long _vignetteType;
 }
 
-@property(assign,readonly) NSLayoutConstraint * anchorConstraint;
-@property(assign,retain) UIView * anchorView;
-@property(assign,readonly) IKDocumentBannerElement * bannerElement;
-@property(assign,retain) UIImageView * bannerImageView;
-@property(assign,retain) NSLayoutConstraint * bannerImageViewHeightConstraint;
-@property(assign,retain) NSArray * installedConstraints;
-@property(assign,readwrite) UIView * installedView;
-@property(assign,retain) UIView * maskView;
-@property(assign,readwrite) UIScrollView * trackingScrollView;
-@property(assign,retain) UIImageView * vignetteImageView;
-@property(assign,readwrite) unsigned long long vignetteType;
+@property (nonatomic, readonly) NSLayoutConstraint *anchorConstraint;
+@property (nonatomic, retain) UIView *anchorView;
+@property (nonatomic, readonly) IKDocumentBannerElement *bannerElement;
+@property (nonatomic, retain) UIImageView *bannerImageView;
+@property (nonatomic, retain) NSLayoutConstraint *bannerImageViewHeightConstraint;
+@property (nonatomic, retain) NSArray *installedConstraints;
+@property (nonatomic) UIView *installedView;
+@property (nonatomic, retain) UIView *maskView;
+@property (nonatomic) UIScrollView *trackingScrollView;
+@property (nonatomic, retain) UIImageView *vignetteImageView;
+@property (nonatomic) unsigned long long vignetteType;
 
 - (void).cxx_destruct;
 - (void)_configureBanner;

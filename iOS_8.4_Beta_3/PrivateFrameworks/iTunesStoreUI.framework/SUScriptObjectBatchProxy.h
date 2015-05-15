@@ -7,8 +7,8 @@
     id _target;
 }
 
-@property(assign,readwrite) SUScriptObjectInvocationBatch * invocationBatch;
-@property(assign,readwrite) id target;
+@property SUScriptObjectInvocationBatch *invocationBatch;
+@property id target;
 
 - (void)forwardInvocation:(id)arg1;
 - (id)invocationBatch;

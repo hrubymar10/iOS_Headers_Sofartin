@@ -16,16 +16,16 @@
     unsigned int _timeUsedMinutes;
 }
 
-@property(assign,readwrite) unsigned int apOUI;
-@property(assign,retain) NSData * apOui;
-@property(assign,readwrite) bool hasApOUI;
-@property(assign,readonly) bool hasApOui;
-@property(assign,readwrite) bool hasSecurityType;
-@property(assign,readwrite) bool hasTimeUsed;
-@property(assign,readwrite) bool hasTimeUsedMinutes;
-@property(assign,readwrite) unsigned int securityType;
-@property(assign,readwrite) double timeUsed;
-@property(assign,readwrite) unsigned int timeUsedMinutes;
+@property (nonatomic) unsigned int apOUI;
+@property (nonatomic, retain) NSData *apOui;
+@property (nonatomic) bool hasApOUI;
+@property (nonatomic, readonly) bool hasApOui;
+@property (nonatomic) bool hasSecurityType;
+@property (nonatomic) bool hasTimeUsed;
+@property (nonatomic) bool hasTimeUsedMinutes;
+@property (nonatomic) unsigned int securityType;
+@property (nonatomic) double timeUsed;
+@property (nonatomic) unsigned int timeUsedMinutes;
 
 - (unsigned int)apOUI;
 - (id)apOui;

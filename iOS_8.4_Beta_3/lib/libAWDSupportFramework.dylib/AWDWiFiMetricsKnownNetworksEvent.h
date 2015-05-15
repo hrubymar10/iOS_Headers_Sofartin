@@ -16,16 +16,16 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int eventType;
-@property(assign,readwrite) bool hasEventType;
-@property(assign,readwrite) bool hasNetworkSecurity;
-@property(assign,readwrite) bool hasNetworkTypeBitMap;
-@property(assign,readonly) bool hasOui;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int networkSecurity;
-@property(assign,readwrite) unsigned int networkTypeBitMap;
-@property(assign,retain) NSData * oui;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int eventType;
+@property (nonatomic) bool hasEventType;
+@property (nonatomic) bool hasNetworkSecurity;
+@property (nonatomic) bool hasNetworkTypeBitMap;
+@property (nonatomic, readonly) bool hasOui;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int networkSecurity;
+@property (nonatomic) unsigned int networkTypeBitMap;
+@property (nonatomic, retain) NSData *oui;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

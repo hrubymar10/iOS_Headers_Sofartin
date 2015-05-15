@@ -4,11 +4,11 @@
 
 @interface UIMutableStatusBarStyleRequest : UIStatusBarStyleRequest
 
-@property(assign,retain) UIColor * foregroundColor;
-@property(getter=isLegacy,assign,readwrite) bool legacy;
-@property(assign,readwrite) long long legibilityStyle;
-@property(assign,retain) NSNumber * overrideHeight;
-@property(assign,readwrite) long long style;
+@property (nonatomic, retain) UIColor *foregroundColor;
+@property (getter=isLegacy, nonatomic) bool legacy;
+@property (nonatomic) long long legibilityStyle;
+@property (nonatomic, retain) NSNumber *overrideHeight;
+@property (nonatomic) long long style;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setForegroundColor:(id)arg1;

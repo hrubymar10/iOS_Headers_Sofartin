@@ -7,8 +7,8 @@
     unsigned long long _operatorType;
 }
 
-@property(assign,copy) NSString * key;
-@property(assign,readonly) unsigned long long operatorType;
+@property (nonatomic, readonly, copy) NSString *key;
+@property (nonatomic, readonly) unsigned long long operatorType;
 
 + (bool)_acceptsOperatorType:(unsigned long long)arg1;
 + (id)filterForKeyPath:(id)arg1 predicateOperatorType:(unsigned long long)arg2 value:(id)arg3 dataTypes:(id)arg4;

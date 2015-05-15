@@ -6,7 +6,7 @@
     id _referencedObject;
 }
 
-@property(assign,readonly) id referencedObject;
+@property (readonly) id referencedObject;
 
 + (id)weakReferenceToObject:(id)arg1;
 

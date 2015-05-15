@@ -6,12 +6,12 @@
     id opaqueSession;
 }
 
-@property(getter=isActiveSession,assign,readwrite) bool activeSession;
-@property(assign,readwrite) <GKVoiceChatSessionDelegate> * delegate;
-@property(assign,readonly) float inputMeter;
-@property(assign,readonly) NSArray * peerList;
-@property(assign,readonly) NSString * sessionName;
-@property(assign,readwrite) float sessionVolume;
+@property (getter=isActiveSession) bool activeSession;
+@property <GKVoiceChatSessionDelegate> *delegate;
+@property (readonly) float inputMeter;
+@property (readonly) NSArray *peerList;
+@property (readonly) NSString *sessionName;
+@property float sessionVolume;
 
 - (void)dealloc;
 - (id)delegate;

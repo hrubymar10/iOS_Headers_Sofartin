@@ -4,7 +4,7 @@
 
 @interface SAMPAddMediaItemsToLibrary : SABaseClientBoundCommand
 
-@property(assign,retain) SAMPCollection * mediaItems;
+@property (nonatomic, retain) SAMPCollection *mediaItems;
 
 + (id)addMediaItemsToLibrary;
 + (id)addMediaItemsToLibraryWithDictionary:(id)arg1 context:(id)arg2;

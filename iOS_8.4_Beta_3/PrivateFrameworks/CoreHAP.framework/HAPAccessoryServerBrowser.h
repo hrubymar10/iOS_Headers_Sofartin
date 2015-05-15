@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) <HAPKeyStore> * keyStore;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) <HAPKeyStore> *keyStore;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)discoverAccessoryServerWithIdentifier:(id)arg1;

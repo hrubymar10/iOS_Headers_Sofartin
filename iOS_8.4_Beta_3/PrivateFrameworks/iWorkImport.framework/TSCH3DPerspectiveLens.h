@@ -7,10 +7,10 @@
     float mFOV;
 }
 
-@property(assign,readwrite) float aspect;
-@property(assign,readwrite) float fov;
-@property(assign,readonly) float height;
-@property(assign,readonly) float width;
+@property (nonatomic) float aspect;
+@property (nonatomic) float fov;
+@property (nonatomic, readonly) float height;
+@property (nonatomic, readonly) float width;
 
 - (id)asFrustumLens;
 - (float)aspect;

@@ -7,11 +7,11 @@
     struct { int x1; unsigned short x2; unsigned short x3; unsigned short x4; int x5; bool x6; bool x7; bool x8; bool x9; bool x10; } *mOriginalProperties;
 }
 
-@property(assign,readwrite) int alignment;
-@property(assign,readwrite) unsigned short baseFontSize;
-@property(assign,readwrite) unsigned short distanceBetween;
-@property(assign,readwrite) unsigned short phoneticGuideFontSize;
-@property(assign,readwrite) int phoneticGuideLanguage;
+@property (nonatomic) int alignment;
+@property (nonatomic) unsigned short baseFontSize;
+@property (nonatomic) unsigned short distanceBetween;
+@property (nonatomic) unsigned short phoneticGuideFontSize;
+@property (nonatomic) int phoneticGuideLanguage;
 
 - (int)alignment;
 - (unsigned short)baseFontSize;

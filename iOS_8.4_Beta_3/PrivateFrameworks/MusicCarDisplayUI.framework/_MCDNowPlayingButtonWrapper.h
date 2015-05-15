@@ -6,7 +6,7 @@
     MCDNowPlayingButton *_button;
 }
 
-@property(assign,retain) MCDNowPlayingButton * button;
+@property (nonatomic, retain) MCDNowPlayingButton *button;
 
 - (void).cxx_destruct;
 - (id)button;

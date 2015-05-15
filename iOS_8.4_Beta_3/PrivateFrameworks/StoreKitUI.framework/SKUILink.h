@@ -11,17 +11,17 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(getter=isActionable,assign,readonly) bool actionable;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIItem * item;
-@property(assign,readonly) NSNumber * itemIdentifier;
-@property(assign,readonly) NSDictionary * linkDictionary;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * targetString;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSURL *URL;
+@property (getter=isActionable, nonatomic, readonly) bool actionable;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIItem *item;
+@property (nonatomic, readonly) NSNumber *itemIdentifier;
+@property (nonatomic, readonly) NSDictionary *linkDictionary;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSString *targetString;
+@property (nonatomic, readonly) NSString *title;
 
 - (void).cxx_destruct;
 - (id)URL;

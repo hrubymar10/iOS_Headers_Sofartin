@@ -8,8 +8,8 @@
     NSString *_serverCacheTag;
 }
 
-@property(setter=setiTunesAccount:,assign,retain) SSAccount * iTunesAccount;
-@property(assign,copy) NSString * serverCacheTag;
+@property (setter=setiTunesAccount:, nonatomic, retain) SSAccount *iTunesAccount;
+@property (nonatomic, copy) NSString *serverCacheTag;
 
 + (Class)responseClass;
 

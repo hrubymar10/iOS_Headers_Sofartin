@@ -14,14 +14,14 @@
     NSMutableSet *_scriptObjects;
 }
 
-@property(getter=_className,assign,readonly) NSString * className;
-@property(assign,retain) SUClientInterface * clientInterface;
-@property(assign,readonly) struct OpaqueJSContext { }* copyJavaScriptContext;
-@property(assign,retain) SUScriptNativeObject * nativeObject;
-@property(assign,readwrite) SUScriptObject * parentScriptObject;
-@property(assign,readonly) NSMutableArray * scriptAttributeKeys;
-@property(assign,readonly) bool sourceIsTrusted;
-@property(assign,retain) WebFrame * webFrame;
+@property (getter=_className, readonly) NSString *className;
+@property (readonly, retain) SUClientInterface *clientInterface;
+@property (readonly) struct OpaqueJSContext { }*copyJavaScriptContext;
+@property (retain) SUScriptNativeObject *nativeObject;
+@property SUScriptObject *parentScriptObject;
+@property (readonly) NSMutableArray *scriptAttributeKeys;
+@property (readonly) bool sourceIsTrusted;
+@property (readonly, retain) WebFrame *webFrame;
 
 + (void)initialize;
 + (bool)isKeyExcludedFromWebScript:(const char *)arg1;

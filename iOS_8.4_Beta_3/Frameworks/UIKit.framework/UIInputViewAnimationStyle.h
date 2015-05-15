@@ -10,13 +10,13 @@
     bool interactivelyCancelled;
 }
 
-@property(assign,readwrite) bool animated;
-@property(assign,readonly) bool canDismissWithScrollView;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) unsigned long long extraOptions;
-@property(assign,readwrite) bool force;
-@property(assign,readwrite) bool interactivelyCancelled;
-@property(assign,readonly) bool isAnimationCompleted;
+@property (nonatomic) bool animated;
+@property (nonatomic, readonly) bool canDismissWithScrollView;
+@property (nonatomic) double duration;
+@property (nonatomic) unsigned long long extraOptions;
+@property (nonatomic) bool force;
+@property (nonatomic) bool interactivelyCancelled;
+@property (nonatomic, readonly) bool isAnimationCompleted;
 
 + (id)animationStyleAnimated:(bool)arg1 duration:(double)arg2;
 + (id)animationStyleDefault;

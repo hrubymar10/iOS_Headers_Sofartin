@@ -7,13 +7,13 @@
     CKJoystickView *_joystickView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) CKDismissView * dismissView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CKJoystickView * joystickView;
-@property(assign,copy) NSArray * passthroughViews;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) CKDismissView *dismissView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CKJoystickView *joystickView;
+@property (nonatomic, copy) NSArray *passthroughViews;
+@property (readonly) Class superclass;
 
 + (id)sharedInstance;
 

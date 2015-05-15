@@ -6,7 +6,7 @@
     UIButton *_accessoryButton;
 }
 
-@property(assign,readonly) UIButton * accessoryButton;
+@property (nonatomic, readonly) UIButton *accessoryButton;
 
 + (void)setupRelatedNamesView:(id)arg1 withStyleProvider:(id)arg2;
 

@@ -8,9 +8,9 @@
     ISPropertyListProvider *_propertyListDataProvider;
 }
 
-@property(assign,retain) SUClientInterface * clientInterface;
-@property(assign,readwrite) long long outputType;
-@property(assign,copy) ISPropertyListProvider * propertyListDataProvider;
+@property (retain) SUClientInterface *clientInterface;
+@property long long outputType;
+@property (copy) ISPropertyListProvider *propertyListDataProvider;
 
 - (void)_loadPersonalizedStoreOffersForPage:(id)arg1;
 - (id)clientInterface;

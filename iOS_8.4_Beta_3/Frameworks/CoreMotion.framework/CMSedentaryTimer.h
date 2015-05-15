@@ -6,7 +6,7 @@
     CMSedentaryTimer_Internal *_internal;
 }
 
-@property(assign,readonly) CMSedentaryTimer_Internal * _internal;
+@property (nonatomic, readonly) CMSedentaryTimer_Internal *_internal;
 
 + (bool)isAvailable;
 

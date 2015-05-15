@@ -9,11 +9,11 @@
     NSDictionary *userInfo;
 }
 
-@property(assign,copy) NSArray * callStackReturnAddresses;
-@property(assign,copy) NSArray * callStackSymbols;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * reason;
-@property(assign,copy) NSDictionary * userInfo;
+@property (readonly, copy) NSArray *callStackReturnAddresses;
+@property (readonly, copy) NSArray *callStackSymbols;
+@property (readonly, copy) NSString *name;
+@property (readonly, copy) NSString *reason;
+@property (readonly, copy) NSDictionary *userInfo;
 
 + (void)errnoRaise:(id)arg1 format:(id)arg2;
 + (id)exceptionWithName:(id)arg1 reason:(id)arg2 userInfo:(id)arg3;

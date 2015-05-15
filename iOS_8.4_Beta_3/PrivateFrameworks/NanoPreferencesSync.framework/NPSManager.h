@@ -7,8 +7,8 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * internalQueue;
-@property(assign,retain) NSXPCConnection * xpcConnection;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *internalQueue;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
 
 - (void).cxx_destruct;
 - (id)connection;

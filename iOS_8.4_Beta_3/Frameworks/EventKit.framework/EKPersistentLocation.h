@@ -4,13 +4,13 @@
 
 @interface EKPersistentLocation : EKPersistentObject <NSCopying>
 
-@property(assign,copy) NSString * address;
-@property(assign,copy) NSString * addressBookEntityID;
-@property(assign,copy) NSNumber * latitude;
-@property(assign,copy) NSNumber * longitude;
-@property(assign,copy) NSNumber * radius;
-@property(assign,copy) NSString * routing;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *address;
+@property (nonatomic, copy) NSString *addressBookEntityID;
+@property (nonatomic, copy) NSNumber *latitude;
+@property (nonatomic, copy) NSNumber *longitude;
+@property (nonatomic, copy) NSNumber *radius;
+@property (nonatomic, copy) NSString *routing;
+@property (nonatomic, copy) NSString *title;
 
 + (id)defaultPropertiesToLoad;
 + (id)relations;

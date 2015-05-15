@@ -9,10 +9,10 @@
     double _value;
 }
 
-@property(assign,retain) UIImageView * backgroundImageView;
-@property(assign,retain) UIImageView * foregroundImageView;
-@property(assign,retain) NSLayoutConstraint * foregroundWidthConstraint;
-@property(assign,readwrite) double value;
+@property (nonatomic, retain) UIImageView *backgroundImageView;
+@property (nonatomic, retain) UIImageView *foregroundImageView;
+@property (nonatomic, retain) NSLayoutConstraint *foregroundWidthConstraint;
+@property (nonatomic) double value;
 
 - (void)awakeFromNib;
 - (id)backgroundImageView;

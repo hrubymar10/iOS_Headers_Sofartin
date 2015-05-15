@@ -10,11 +10,11 @@
     double _vertexVariance;
 }
 
-@property(assign,readwrite) double controlpointVariance;
-@property(assign,readwrite) double endpointVariance;
-@property(assign,readwrite) unsigned long long vertexCount;
-@property(assign,readwrite) struct GKVertexCurve { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGPoint { double x_2_1_1; double x_2_1_2; } x2; struct CGPoint { double x_3_1_1; double x_3_1_2; } x3; struct CGPoint { double x_4_1_1; double x_4_1_2; } x4; struct CGPoint { double x_5_1_1; double x_5_1_2; } x5; }* vertexCurves;
-@property(assign,readwrite) double vertexVariance;
+@property (nonatomic) double controlpointVariance;
+@property (nonatomic) double endpointVariance;
+@property (nonatomic) unsigned long long vertexCount;
+@property (nonatomic) struct GKVertexCurve { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGPoint { double x_2_1_1; double x_2_1_2; } x2; struct CGPoint { double x_3_1_1; double x_3_1_2; } x3; struct CGPoint { double x_4_1_1; double x_4_1_2; } x4; struct CGPoint { double x_5_1_1; double x_5_1_2; } x5; }*vertexCurves;
+@property (nonatomic) double vertexVariance;
 
 + (id)standardBezierPathForSize:(struct CGSize { double x1; double x2; })arg1;
 + (id)standardBubbleShape;

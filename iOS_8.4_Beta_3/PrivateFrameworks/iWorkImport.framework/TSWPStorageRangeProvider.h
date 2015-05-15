@@ -11,9 +11,9 @@
     } _range;
 }
 
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSObject * object;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) NSObject *object;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
 
 - (id).cxx_construct;
 - (void)dealloc;

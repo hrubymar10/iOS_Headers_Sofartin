@@ -20,14 +20,14 @@
     NSURL *_url;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,copy) NSString * configurationName;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) NSDictionary * metadata;
-@property(assign,readonly) NSDictionary * options;
-@property(assign,readonly) NSPersistentStoreCoordinator * persistentStoreCoordinator;
-@property(getter=isReadOnly,assign,readwrite) bool readOnly;
-@property(assign,copy) NSString * type;
+@property (retain) NSURL *URL;
+@property (readonly, copy) NSString *configurationName;
+@property (copy) NSString *identifier;
+@property (nonatomic, retain) NSDictionary *metadata;
+@property (readonly) NSDictionary *options;
+@property (nonatomic, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (getter=isReadOnly) bool readOnly;
+@property (readonly, copy) NSString *type;
 
 + (bool)_destroyPersistentStoreAtURL:(id)arg1 options:(id)arg2 error:(id*)arg3;
 + (id)_figureOutWhereExternalReferencesEndedUpRelativeTo:(id)arg1;

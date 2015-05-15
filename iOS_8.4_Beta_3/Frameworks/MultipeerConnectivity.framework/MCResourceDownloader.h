@@ -11,16 +11,16 @@
     NSURLSessionDataTask *_urlTask;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MCPeerID * peerID;
-@property(assign,copy) NSString * resourceName;
-@property(assign,readwrite) MCSession * session;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) id urlResponseHandler;
-@property(assign,retain) NSURLSession * urlSession;
-@property(assign,retain) NSURLSessionDataTask * urlTask;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MCPeerID *peerID;
+@property (nonatomic, copy) NSString *resourceName;
+@property (nonatomic) MCSession *session;
+@property (readonly) Class superclass;
+@property (nonatomic) id urlResponseHandler;
+@property (nonatomic, retain) NSURLSession *urlSession;
+@property (nonatomic, retain) NSURLSessionDataTask *urlTask;
 
 - (void)URLSession:(id)arg1 dataTask:(id)arg2 didReceiveData:(id)arg3;
 - (void)URLSession:(id)arg1 dataTask:(id)arg2 didReceiveResponse:(id)arg3 completionHandler:(id)arg4;

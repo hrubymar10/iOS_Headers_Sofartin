@@ -12,12 +12,12 @@
     unsigned int _statusSubject;
 }
 
-@property(assign,retain) NSArray * continuationResponses;
-@property(assign,readonly) int status;
-@property(assign,readonly) unsigned int statusClass;
-@property(assign,readonly) unsigned int statusDetail;
-@property(assign,readonly) NSString * statusString;
-@property(assign,readonly) unsigned int statusSubject;
+@property (nonatomic, retain) NSArray *continuationResponses;
+@property (nonatomic, readonly) int status;
+@property (nonatomic, readonly) unsigned int statusClass;
+@property (nonatomic, readonly) unsigned int statusDetail;
+@property (nonatomic, readonly) NSString *statusString;
+@property (nonatomic, readonly) unsigned int statusSubject;
 
 - (void)_updateEnhancedStatusCodesFromLastResponse;
 - (id)continuationResponses;

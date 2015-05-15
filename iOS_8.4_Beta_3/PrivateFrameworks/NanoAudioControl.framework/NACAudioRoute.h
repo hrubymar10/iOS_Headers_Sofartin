@@ -11,12 +11,12 @@
     NSString *_uniqueIdentifier;
 }
 
-@property(getter=isPicked,assign,readonly) bool picked;
-@property(assign,readonly) NSString * routeName;
-@property(assign,readonly) long long routeSubtype;
-@property(assign,readonly) long long routeType;
-@property(assign,readonly) bool supportsVolumeControl;
-@property(assign,readonly) NSString * uniqueIdentifier;
+@property (getter=isPicked, nonatomic, readonly) bool picked;
+@property (nonatomic, readonly) NSString *routeName;
+@property (nonatomic, readonly) long long routeSubtype;
+@property (nonatomic, readonly) long long routeType;
+@property (nonatomic, readonly) bool supportsVolumeControl;
+@property (nonatomic, readonly) NSString *uniqueIdentifier;
 
 + (int)_routeBufferSubtypeFromMPAVRouteSubtype:(long long)arg1;
 + (int)_routeBufferTypeFromMPAVRouteType:(long long)arg1;

@@ -10,11 +10,11 @@
     unsigned long long _sequenceNumber;
 }
 
-@property(assign,readwrite) bool hasSequenceNumber;
-@property(assign,retain) IDSProtobuf * idsProtobuf;
-@property(assign,readonly) bool isInitialSequenceNumber;
-@property(assign,retain) PBCodable * protobuf;
-@property(assign,readwrite) unsigned long long sequenceNumber;
+@property (nonatomic) bool hasSequenceNumber;
+@property (nonatomic, retain) IDSProtobuf *idsProtobuf;
+@property (nonatomic, readonly) bool isInitialSequenceNumber;
+@property (nonatomic, retain) PBCodable *protobuf;
+@property (nonatomic) unsigned long long sequenceNumber;
 
 - (void).cxx_destruct;
 - (bool)hasSequenceNumber;

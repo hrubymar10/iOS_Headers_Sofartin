@@ -10,11 +10,11 @@
     MPTimeMarker *_closedCaptionMarker;
 }
 
-@property(assign,retain) MPAVItem * AVItem;
-@property(assign,retain) MPTimeMarker * URLMarker;
-@property(assign,retain) MPTimeMarker * artworkMarker;
-@property(assign,retain) MPTimeMarker * chapterMarker;
-@property(assign,retain) MPTimeMarker * closedCaptionMarker;
+@property (nonatomic, retain) MPAVItem *AVItem;
+@property (nonatomic, retain) MPTimeMarker *URLMarker;
+@property (nonatomic, retain) MPTimeMarker *artworkMarker;
+@property (nonatomic, retain) MPTimeMarker *chapterMarker;
+@property (nonatomic, retain) MPTimeMarker *closedCaptionMarker;
 
 - (void).cxx_destruct;
 - (id)AVItem;

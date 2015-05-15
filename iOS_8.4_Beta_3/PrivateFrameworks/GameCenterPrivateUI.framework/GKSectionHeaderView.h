@@ -17,20 +17,20 @@
     SEL _showAllAction;
 }
 
-@property(assign,readwrite) bool allSectionItemsVisible;
-@property(assign,readwrite) long long itemCount;
-@property(assign,readwrite) int (* itemCountFormatter;
-@property(assign,retain) GKLabel * leftLabel;
-@property(assign,retain) NSString * leftText;
-@property(assign,readwrite) bool manualItemCount;
-@property(assign,readwrite) long long maxItemCount;
-@property(assign,readwrite) long long maxRange;
-@property(assign,readwrite) SEL rightAction;
-@property(assign,retain) GKButton * rightButton;
-@property(assign,readwrite) id rightTarget;
-@property(assign,retain) NSString * rightText;
-@property(assign,readwrite) unsigned long long sectionIndex;
-@property(assign,readwrite) SEL showAllAction;
+@property (nonatomic) bool allSectionItemsVisible;
+@property (nonatomic) long long itemCount;
+@property (nonatomic) int (*itemCountFormatter;
+@property (nonatomic, retain) GKLabel *leftLabel;
+@property (nonatomic, retain) NSString *leftText;
+@property (nonatomic) bool manualItemCount;
+@property (nonatomic) long long maxItemCount;
+@property (nonatomic) long long maxRange;
+@property (nonatomic) SEL rightAction;
+@property (nonatomic, retain) GKButton *rightButton;
+@property (nonatomic) id rightTarget;
+@property (nonatomic, retain) NSString *rightText;
+@property (nonatomic) unsigned long long sectionIndex;
+@property (nonatomic) SEL showAllAction;
 
 + (id)padMetrics;
 + (id)phoneMetrics;

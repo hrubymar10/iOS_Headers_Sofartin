@@ -60,27 +60,27 @@
     NSArray *_viewControllersStashedForRotation;
 }
 
-@property(assign,readonly) _UIPageViewControllerContentView * _contentView;
-@property(getter=_isInterfaceRotating,assign,readonly) bool _interfaceRotating;
-@property(assign,readonly) long long _navigationOrientation;
-@property(getter=_isPageControlVisible,assign,readonly) bool _pageControlVisible;
-@property(setter=_setPageSpacing:,assign,readwrite) double _pageSpacing;
-@property(assign,readonly) _UIQueuingScrollView * _scrollView;
-@property(assign,readonly) long long _transitionStyle;
-@property(setter=_setViewControllers:,assign,retain) NSArray * _viewControllers;
-@property(setter=_setViewControllersStashedForRotation:,assign,retain) NSArray * _viewControllersStashedForRotation;
-@property(assign,readwrite) <UIPageViewControllerDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UIPageViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=isDoubleSided,assign,readwrite) bool doubleSided;
-@property(assign,readonly) NSArray * gestureRecognizers;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long navigationOrientation;
-@property(assign,readonly) long long spineLocation;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) long long transitionStyle;
-@property(assign,readonly) NSArray * viewControllers;
+@property (nonatomic, readonly) _UIPageViewControllerContentView *_contentView;
+@property (getter=_isInterfaceRotating, nonatomic, readonly) bool _interfaceRotating;
+@property (nonatomic, readonly) long long _navigationOrientation;
+@property (getter=_isPageControlVisible, nonatomic, readonly) bool _pageControlVisible;
+@property (setter=_setPageSpacing:, nonatomic) double _pageSpacing;
+@property (nonatomic, readonly) _UIQueuingScrollView *_scrollView;
+@property (nonatomic, readonly) long long _transitionStyle;
+@property (setter=_setViewControllers:, nonatomic, retain) NSArray *_viewControllers;
+@property (setter=_setViewControllersStashedForRotation:, nonatomic, retain) NSArray *_viewControllersStashedForRotation;
+@property (nonatomic) <UIPageViewControllerDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UIPageViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=isDoubleSided, nonatomic) bool doubleSided;
+@property (nonatomic, readonly) NSArray *gestureRecognizers;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long navigationOrientation;
+@property (nonatomic, readonly) long long spineLocation;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) long long transitionStyle;
+@property (nonatomic, readonly) NSArray *viewControllers;
 
 + (id)_incomingViewControllerKeys;
 + (bool)_isNavigationOrientation:(long long)arg1 supportedForTransitionStyle:(long long)arg2;

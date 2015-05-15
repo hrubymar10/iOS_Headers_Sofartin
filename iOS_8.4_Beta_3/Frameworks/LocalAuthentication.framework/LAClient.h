@@ -14,10 +14,10 @@
     <LAUIDelegate> *_uiDelegate;
 }
 
-@property(assign,retain) NSData * connectToContext;
-@property(assign,readonly) NSString * creatorDisplayName;
-@property(assign,readonly) NSData * externalizedContext;
-@property(assign,readwrite) <LAUIDelegate> * uiDelegate;
+@property (nonatomic, retain) NSData *connectToContext;
+@property (readonly) NSString *creatorDisplayName;
+@property (readonly) NSData *externalizedContext;
+@property (nonatomic) <LAUIDelegate> *uiDelegate;
 
 + (id)clientWithExternalizedContext:(id)arg1 uiDelegate:(id)arg2 error:(id*)arg3;
 + (void)clientWithExternalizedContext:(id)arg1 uiDelegate:(id)arg2 reply:(id)arg3;

@@ -8,9 +8,9 @@
     unsigned long long _hash;
 }
 
-@property(assign,readonly) NSManagedObjectID * containerIdentifier;
-@property(assign,readonly) NSFetchRequest * fetchRequest;
-@property(assign,readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSManagedObjectID *containerIdentifier;
+@property (nonatomic, readonly) NSFetchRequest *fetchRequest;
+@property (nonatomic, readonly) unsigned long long hash;
 
 - (void).cxx_destruct;
 - (id)containerIdentifier;

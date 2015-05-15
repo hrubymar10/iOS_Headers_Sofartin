@@ -7,8 +7,8 @@
     long long _sectionIndex;
 }
 
-@property(assign,retain) <IKEntityValueProviding> * entityValueProvider;
-@property(assign,readwrite) long long sectionIndex;
+@property (nonatomic, retain) <IKEntityValueProviding> *entityValueProvider;
+@property (nonatomic) long long sectionIndex;
 
 - (void).cxx_destruct;
 - (id)entityValueProvider;

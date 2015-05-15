@@ -9,10 +9,10 @@
     NSArray *_preferredCompressions;
 }
 
-@property(assign,readwrite) double desiredWidth;
-@property(assign,retain) UIFont * font;
-@property(assign,copy) NSString * phoneNumber;
-@property(assign,copy) NSArray * preferredCompressions;
+@property (nonatomic) double desiredWidth;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic, copy) NSString *phoneNumber;
+@property (nonatomic, copy) NSArray *preferredCompressions;
 
 - (id)_compressPhoneNumberIfFitsInCompressionLevel:(int)arg1;
 - (id)compress;

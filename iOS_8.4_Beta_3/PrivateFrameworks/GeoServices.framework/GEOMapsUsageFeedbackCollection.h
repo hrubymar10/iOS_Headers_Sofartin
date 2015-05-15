@@ -24,24 +24,24 @@
     double _zoomLevel;
 }
 
-@property(assign,readwrite) int actionType;
-@property(assign,retain) GEOCarInfo * carInfo;
-@property(assign,readwrite) bool hasActionType;
-@property(assign,readonly) bool hasCarInfo;
-@property(assign,readonly) bool hasMapRegion;
-@property(assign,readonly) bool hasPlaceActionDetails;
-@property(assign,readonly) bool hasProviderId;
-@property(assign,readwrite) bool hasSequenceNumber;
-@property(assign,readwrite) bool hasSessionID;
-@property(assign,readwrite) bool hasSessionRelativeTimestamp;
-@property(assign,readwrite) bool hasZoomLevel;
-@property(assign,retain) GEOMapRegion * mapRegion;
-@property(assign,retain) GEOPlaceActionDetails * placeActionDetails;
-@property(assign,retain) NSString * providerId;
-@property(assign,readwrite) int sequenceNumber;
-@property(assign,readwrite) struct { unsigned long long x1; unsigned long long x2; } sessionID;
-@property(assign,readwrite) double sessionRelativeTimestamp;
-@property(assign,readwrite) double zoomLevel;
+@property (nonatomic) int actionType;
+@property (nonatomic, retain) GEOCarInfo *carInfo;
+@property (nonatomic) bool hasActionType;
+@property (nonatomic, readonly) bool hasCarInfo;
+@property (nonatomic, readonly) bool hasMapRegion;
+@property (nonatomic, readonly) bool hasPlaceActionDetails;
+@property (nonatomic, readonly) bool hasProviderId;
+@property (nonatomic) bool hasSequenceNumber;
+@property (nonatomic) bool hasSessionID;
+@property (nonatomic) bool hasSessionRelativeTimestamp;
+@property (nonatomic) bool hasZoomLevel;
+@property (nonatomic, retain) GEOMapRegion *mapRegion;
+@property (nonatomic, retain) GEOPlaceActionDetails *placeActionDetails;
+@property (nonatomic, retain) NSString *providerId;
+@property (nonatomic) int sequenceNumber;
+@property (nonatomic) struct { unsigned long long x1; unsigned long long x2; } sessionID;
+@property (nonatomic) double sessionRelativeTimestamp;
+@property (nonatomic) double zoomLevel;
 
 + (id)feedbackCollectionWithTraits:(id)arg1 flyoverAnimationID:(unsigned long long)arg2 timestamp:(double)arg3 resultIndex:(int)arg4;
 + (id)feedbackCollectionWithTraits:(id)arg1 mapItem:(id)arg2 timestamp:(double)arg3 resultIndex:(int)arg4;

@@ -15,11 +15,11 @@
     unsigned int _usesRoundedCorners;
 }
 
-@property(assign,readwrite) id delegate;
-@property(assign,readonly) UIView * fromView;
-@property(assign,readonly) bool isTransitioning;
-@property(assign,readwrite) bool popoverWillCleanUpNavigationTransition;
-@property(assign,readwrite) bool usesRoundedCorners;
+@property (nonatomic) id delegate;
+@property (readonly) UIView *fromView;
+@property (readonly) bool isTransitioning;
+@property (nonatomic) bool popoverWillCleanUpNavigationTransition;
+@property (nonatomic) bool usesRoundedCorners;
 
 + (double)defaultDurationForTransition:(long long)arg1;
 

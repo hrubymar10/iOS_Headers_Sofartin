@@ -9,10 +9,10 @@
     id _value;
 }
 
-@property(assign,readwrite) CBCharacteristic * characteristic;
-@property(assign,readonly) NSNumber * handle;
-@property(assign,readonly) CBPeripheral * peripheral;
-@property(assign,retain) id value;
+@property (nonatomic) CBCharacteristic *characteristic;
+@property (nonatomic, readonly) NSNumber *handle;
+@property (nonatomic, readonly) CBPeripheral *peripheral;
+@property (retain) id value;
 
 - (id)characteristic;
 - (void)dealloc;

@@ -4,8 +4,8 @@
 
 @interface TSWPDocumentRoot : TSKDocumentRoot <TSWPObjectIndex>
 
-@property(getter=isChangeTrackingEnabled,assign,readonly) bool changeTrackingEnabled;
-@property(assign,readonly) bool supportHeaderFooterParagraphAlignmentInInspectors;
+@property (getter=isChangeTrackingEnabled, nonatomic, readonly) bool changeTrackingEnabled;
+@property (nonatomic, readonly) bool supportHeaderFooterParagraphAlignmentInInspectors;
 
 - (id)changeSessionManagerForModel:(id)arg1;
 - (id)changeVisibility;

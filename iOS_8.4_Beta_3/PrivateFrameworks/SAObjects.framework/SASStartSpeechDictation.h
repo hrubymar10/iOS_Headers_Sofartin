@@ -4,20 +4,20 @@
 
 @interface SASStartSpeechDictation : SASStartSpeech
 
-@property(assign,copy) NSData * activationToken;
-@property(assign,copy) NSString * applicationName;
-@property(assign,copy) NSString * applicationVersion;
-@property(assign,readwrite) bool censorSpeech;
-@property(assign,copy) NSString * fieldId;
-@property(assign,copy) NSString * fieldLabel;
-@property(assign,copy) NSString * interactionId;
-@property(assign,copy) NSString * keyboardReturnKey;
-@property(assign,copy) NSString * keyboardType;
-@property(assign,copy) NSString * language;
-@property(assign,copy) NSString * postfixText;
-@property(assign,copy) NSString * prefixText;
-@property(assign,copy) NSString * region;
-@property(assign,copy) NSString * selectedText;
+@property (nonatomic, copy) NSData *activationToken;
+@property (nonatomic, copy) NSString *applicationName;
+@property (nonatomic, copy) NSString *applicationVersion;
+@property (nonatomic) bool censorSpeech;
+@property (nonatomic, copy) NSString *fieldId;
+@property (nonatomic, copy) NSString *fieldLabel;
+@property (nonatomic, copy) NSString *interactionId;
+@property (nonatomic, copy) NSString *keyboardReturnKey;
+@property (nonatomic, copy) NSString *keyboardType;
+@property (nonatomic, copy) NSString *language;
+@property (nonatomic, copy) NSString *postfixText;
+@property (nonatomic, copy) NSString *prefixText;
+@property (nonatomic, copy) NSString *region;
+@property (nonatomic, copy) NSString *selectedText;
 
 + (id)startSpeechDictation;
 + (id)startSpeechDictationWithDictionary:(id)arg1 context:(id)arg2;

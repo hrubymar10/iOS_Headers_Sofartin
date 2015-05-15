@@ -8,12 +8,12 @@
     NSString *_uti;
 }
 
-@property(assign,readonly) NSString * UTI;
-@property(assign,readonly) unsigned int audioFileTypeID;
-@property(assign,readonly) NSString * defaultFileExtension;
-@property(assign,readonly) NSString * figFormatReaderFileFormat;
-@property(assign,readonly) NSSet * supportedMediaTypes;
-@property(assign,readonly) bool supportsSampleReferences;
+@property (nonatomic, readonly) NSString *UTI;
+@property (nonatomic, readonly) unsigned int audioFileTypeID;
+@property (nonatomic, readonly) NSString *defaultFileExtension;
+@property (nonatomic, readonly) NSString *figFormatReaderFileFormat;
+@property (nonatomic, readonly) NSSet *supportedMediaTypes;
+@property (nonatomic, readonly) bool supportsSampleReferences;
 
 + (id)_mediaFileTypeWithFileTypeIdentifier:(id)arg1 exceptionReason:(id*)arg2;
 + (id)allFileTypeIdentifiers;

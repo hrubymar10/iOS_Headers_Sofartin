@@ -8,9 +8,9 @@
     bool _isUnlockOnly;
 }
 
-@property(assign,readwrite) bool hasPasscode;
-@property(assign,readwrite) bool isLocked;
-@property(assign,readwrite) bool isUnlockOnly;
+@property (nonatomic) bool hasPasscode;
+@property (nonatomic) bool isLocked;
+@property (nonatomic) bool isUnlockOnly;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

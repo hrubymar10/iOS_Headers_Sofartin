@@ -12,17 +12,17 @@
     NSString *_yAxisValueKeyPath;
 }
 
-@property(assign,readwrite) int alignment;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) _UISettings * settings;
-@property(assign,readwrite) _UISettingsGroup * settingsGroup;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * valueKeyPath;
-@property(assign,copy) NSString * xAxisValueKeyPath;
-@property(assign,copy) NSString * yAxisValueKeyPath;
+@property (nonatomic) int alignment;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) _UISettings *settings;
+@property (nonatomic) _UISettingsGroup *settingsGroup;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *valueKeyPath;
+@property (nonatomic, copy) NSString *xAxisValueKeyPath;
+@property (nonatomic, copy) NSString *yAxisValueKeyPath;
 
 + (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })defaultFrame;
 + (id)graphView;

@@ -4,7 +4,7 @@
 
 @interface TDPhotoshopRenditionSpec : TDRenditionSpec
 
-@property(assign,retain) TDPhotoshopLayer * photoshopLayer;
+@property (nonatomic, retain) TDPhotoshopLayer *photoshopLayer;
 
 - (int)_layerIndexInPSDImage:(id)arg1;
 - (void)_logError:(id)arg1;

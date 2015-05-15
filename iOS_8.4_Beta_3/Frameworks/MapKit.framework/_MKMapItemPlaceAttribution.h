@@ -6,7 +6,7 @@
     GEOMapItemPlaceAttribution *_geoPlaceAttribution;
 }
 
-@property(assign,readonly) NSArray * checkInURLs;
+@property (nonatomic, readonly) NSArray *checkInURLs;
 
 - (void).cxx_destruct;
 - (id)checkInURLs;

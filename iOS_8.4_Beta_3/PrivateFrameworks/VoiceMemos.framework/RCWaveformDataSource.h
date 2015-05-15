@@ -13,24 +13,24 @@
     NSHashTable *_weakObservers;
 }
 
-@property(assign,readonly) RCWaveform * accumulatorWaveform;
-@property(assign,readonly) double averagePowerLevelsRate;
-@property(assign,readonly) bool canceled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double duration;
-@property(assign,readonly) bool finished;
-@property(assign,readonly) NSURL * generatedWaveformOutputURL;
-@property(assign,readonly) bool hasSavedGeneratedWaveform;
-@property(assign,readonly) bool hasStartedLoading;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) float loadingProgress;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * observerQueue;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct { double x1; double x2; } timeRangeToHighlight;
-@property(assign,readonly) RCWaveformGenerator * waveformGenerator;
-@property(assign,readonly) NSHashTable * weakObservers;
+@property (nonatomic, readonly) RCWaveform *accumulatorWaveform;
+@property (nonatomic, readonly) double averagePowerLevelsRate;
+@property (nonatomic, readonly) bool canceled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic, readonly) bool finished;
+@property (nonatomic, readonly) NSURL *generatedWaveformOutputURL;
+@property (nonatomic, readonly) bool hasSavedGeneratedWaveform;
+@property (nonatomic, readonly) bool hasStartedLoading;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) float loadingProgress;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *observerQueue;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct { double x1; double x2; } timeRangeToHighlight;
+@property (nonatomic, readonly) RCWaveformGenerator *waveformGenerator;
+@property (nonatomic, readonly) NSHashTable *weakObservers;
 
 - (void).cxx_destruct;
 - (void)_performObserversBlock:(id)arg1;

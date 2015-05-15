@@ -4,19 +4,19 @@
 
 @interface SAWebWebSearchResult : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * imageResults;
-@property(assign,copy) NSArray * newsResults;
-@property(assign,copy) NSArray * relatedSearchResults;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSNumber * totalImageResults;
-@property(assign,copy) NSNumber * totalNewsResults;
-@property(assign,copy) NSNumber * totalVideoResults;
-@property(assign,copy) NSNumber * totalWebResults;
-@property(assign,copy) NSArray * videoResults;
-@property(assign,copy) NSArray * webResults;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *imageResults;
+@property (nonatomic, copy) NSArray *newsResults;
+@property (nonatomic, copy) NSArray *relatedSearchResults;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSNumber *totalImageResults;
+@property (nonatomic, copy) NSNumber *totalNewsResults;
+@property (nonatomic, copy) NSNumber *totalVideoResults;
+@property (nonatomic, copy) NSNumber *totalWebResults;
+@property (nonatomic, copy) NSArray *videoResults;
+@property (nonatomic, copy) NSArray *webResults;
 
 + (id)webSearchResult;
 + (id)webSearchResultWithDictionary:(id)arg1 context:(id)arg2;

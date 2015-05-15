@@ -6,12 +6,12 @@
     long long _value;
 }
 
-@property(assign,readonly) HKCategoryType * categoryType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) long long value;
+@property (readonly) HKCategoryType *categoryType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (readonly) long long value;
 
 + (id)_categorySampleWithUUID:(id)arg1 metadata:(id)arg2 sourceBundleIdentifier:(id)arg3 creationDate:(id)arg4 categoryType:(id)arg5 startDate:(id)arg6 endDate:(id)arg7 value:(long long)arg8;
 + (bool)_isConcreteObjectClass;

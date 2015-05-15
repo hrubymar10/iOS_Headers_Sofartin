@@ -45,13 +45,13 @@
     bool webViewHasFinishedLoading;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIWebClip * webClip;
-@property(assign,readonly) UIWebView * webView;
-@property(assign,retain) UIWindow * window;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (retain) UIWebClip *webClip;
+@property (readonly) UIWebView *webView;
+@property (nonatomic, retain) UIWindow *window;
 
 + (id)contentBackgroundColor;
 

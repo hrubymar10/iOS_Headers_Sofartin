@@ -9,11 +9,11 @@
     UIButton *_toggleButton;
 }
 
-@property(assign,retain) UIKBBackdropView * backdropView;
-@property(assign,copy) NSString * inlineText;
-@property(assign,retain) UILabel * inlineTextLabel;
-@property(assign,readwrite) double inlineTextRightMargin;
-@property(assign,retain) UIButton * toggleButton;
+@property (nonatomic, retain) UIKBBackdropView *backdropView;
+@property (nonatomic, copy) NSString *inlineText;
+@property (nonatomic, retain) UILabel *inlineTextLabel;
+@property (nonatomic) double inlineTextRightMargin;
+@property (nonatomic, retain) UIButton *toggleButton;
 
 - (id)backdropView;
 - (void)dealloc;

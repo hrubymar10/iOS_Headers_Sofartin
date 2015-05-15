@@ -4,17 +4,17 @@
 
 @interface SAStockAddCompleted : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,retain) SAStockObject * aceStock;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * identifier;
-@property(assign,copy) NSString * refId;
-@property(assign,copy) NSArray * results;
-@property(assign,copy) NSArray * stockReferences;
-@property(assign,copy) NSArray * stocks;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic, retain) SAStockObject *aceStock;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURL *identifier;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic, copy) NSArray *results;
+@property (nonatomic, copy) NSArray *stockReferences;
+@property (nonatomic, copy) NSArray *stocks;
+@property (readonly) Class superclass;
 
 + (id)addCompleted;
 + (id)addCompletedWithDictionary:(id)arg1 context:(id)arg2;

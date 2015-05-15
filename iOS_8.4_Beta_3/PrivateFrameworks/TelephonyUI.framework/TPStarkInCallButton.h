@@ -12,13 +12,13 @@
     UIColor *_unhighlightedBackgroundColor;
 }
 
-@property(assign,retain) UILabel * buttonLabel;
-@property(assign,retain) NSLayoutConstraint * horizontalPositioningConstraint;
-@property(assign,readonly) int inCallButtonType;
-@property(assign,retain) TPStarkInCallButtonRing * ringView;
-@property(assign,readwrite) int specialLayoutType;
-@property(assign,readwrite) bool toggledOn;
-@property(assign,retain) UIColor * unhighlightedBackgroundColor;
+@property (retain) UILabel *buttonLabel;
+@property (retain) NSLayoutConstraint *horizontalPositioningConstraint;
+@property (readonly) int inCallButtonType;
+@property (retain) TPStarkInCallButtonRing *ringView;
+@property (nonatomic) int specialLayoutType;
+@property (nonatomic) bool toggledOn;
+@property (retain) UIColor *unhighlightedBackgroundColor;
 
 - (id)buttonLabel;
 - (void)dealloc;

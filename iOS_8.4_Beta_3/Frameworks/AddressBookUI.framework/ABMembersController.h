@@ -27,20 +27,20 @@
     UITableView *_tableView;
 }
 
-@property(assign,readonly) NSString * currentSearchText;
-@property(assign,readonly) UITableView * currentTableView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isServerSearchGroup;
-@property(assign,readwrite) <ABMembersControllerDelegate> * membersControllerDelegate;
-@property(assign,readonly) UISearchBar * searchBar;
-@property(assign,readwrite) <ABMembersControllerSearchCompletionDelegate> * searchCompletionDelegate;
-@property(getter=isSearchEnabled,assign,readwrite) bool searchEnabled;
-@property(assign,retain) _UINavigationControllerPalette * searchPalette;
-@property(assign,readonly) UITableView * searchResultsTableView;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSString *currentSearchText;
+@property (nonatomic, readonly) UITableView *currentTableView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isServerSearchGroup;
+@property (nonatomic) <ABMembersControllerDelegate> *membersControllerDelegate;
+@property (nonatomic, readonly) UISearchBar *searchBar;
+@property (nonatomic) <ABMembersControllerSearchCompletionDelegate> *searchCompletionDelegate;
+@property (getter=isSearchEnabled, nonatomic) bool searchEnabled;
+@property (nonatomic, retain) _UINavigationControllerPalette *searchPalette;
+@property (readonly) UITableView *searchResultsTableView;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
+@property (readonly) Class superclass;
 
 + (id)newNameSearchOperationWithString:(id)arg1 contactsFilter:(id)arg2 addressBook:(void*)arg3 delegate:(id)arg4 inOutSequenceNumber:(unsigned long long*)arg5;
 

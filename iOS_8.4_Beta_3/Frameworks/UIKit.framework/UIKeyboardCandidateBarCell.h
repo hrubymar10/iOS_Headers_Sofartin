@@ -11,20 +11,20 @@
     UIKBThemedView *_themedView;
 }
 
-@property(assign,readwrite) bool beginsFirstPage;
-@property(assign,readonly) bool cacheDeferable;
-@property(assign,readonly) NSString * cacheKey;
-@property(assign,readonly) double cachedWidth;
-@property(assign,copy) NSString * candidateText;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool endsLastPage;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isAtLeftEdge;
-@property(assign,readonly) bool keepNonPersistent;
-@property(assign,retain) UILabel * label;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIKBThemedView * themedView;
+@property (nonatomic) bool beginsFirstPage;
+@property (nonatomic, readonly) bool cacheDeferable;
+@property (nonatomic, readonly) NSString *cacheKey;
+@property (nonatomic, readonly) double cachedWidth;
+@property (nonatomic, copy) NSString *candidateText;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool endsLastPage;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isAtLeftEdge;
+@property (nonatomic, readonly) bool keepNonPersistent;
+@property (nonatomic, retain) UILabel *label;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIKBThemedView *themedView;
 
 + (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })cacheInsets;
 + (bool)drawsSideBorders;

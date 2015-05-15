@@ -6,12 +6,12 @@
     NSOrderedSet *_containers;
 }
 
-@property(assign,retain) NSOrderedSet * containers;
-@property(assign,readonly) unsigned long long containersCount;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSOrderedSet *containers;
+@property (nonatomic, readonly) unsigned long long containersCount;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (bool)canEditContainers;
 - (id)containers;

@@ -30,9 +30,9 @@
     } _message;
 }
 
-@property(assign,readonly) NSHashTable * dataReferences;
-@property(assign,readonly) bool isCrossAppPaste;
-@property(assign,readonly) bool isCrossDocumentPaste;
+@property (nonatomic, readonly) NSHashTable *dataReferences;
+@property (nonatomic, readonly) bool isCrossAppPaste;
+@property (nonatomic, readonly) bool isCrossDocumentPaste;
 
 + (id)appNameAndVersion;
 + (id)bundleIdentifier;

@@ -12,17 +12,17 @@
     GKLabel *_textLabel;
 }
 
-@property(assign,readwrite) double bottomMargin;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int layoutStyle;
-@property(assign,readwrite) double leftMargin;
-@property(assign,readwrite) double paragraphMargin;
-@property(assign,readwrite) double rightMargin;
-@property(assign,readwrite) bool shouldApplyGameCenterTheme;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) GKLabel * textLabel;
+@property (nonatomic) double bottomMargin;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int layoutStyle;
+@property (nonatomic) double leftMargin;
+@property (nonatomic) double paragraphMargin;
+@property (nonatomic) double rightMargin;
+@property (nonatomic) bool shouldApplyGameCenterTheme;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) GKLabel *textLabel;
 
 - (id)attributedStringForString:(id)arg1 withStyle:(id)arg2;
 - (double)bottomMargin;

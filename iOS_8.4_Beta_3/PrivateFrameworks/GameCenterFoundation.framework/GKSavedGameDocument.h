@@ -12,20 +12,20 @@
     NSString *_name;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * deviceName;
-@property(assign,retain) NSURL * fileURL;
-@property(assign,retain) NSFileVersion * fileVersion;
-@property(assign,readwrite) bool hasConflict;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isConflictVersion;
-@property(assign,retain) NSDate * modificationDate;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSOperationQueue * presentedItemOperationQueue;
-@property(assign,copy) NSURL * presentedItemURL;
-@property(assign,copy) NSURL * primaryPresentedItemURL;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *deviceName;
+@property (nonatomic, retain) NSURL *fileURL;
+@property (nonatomic, retain) NSFileVersion *fileVersion;
+@property (nonatomic) bool hasConflict;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isConflictVersion;
+@property (nonatomic, retain) NSDate *modificationDate;
+@property (nonatomic, retain) NSString *name;
+@property (readonly, retain) NSOperationQueue *presentedItemOperationQueue;
+@property (readonly, copy) NSURL *presentedItemURL;
+@property (readonly, copy) NSURL *primaryPresentedItemURL;
+@property (readonly) Class superclass;
 
 + (id)currentDeviceName;
 

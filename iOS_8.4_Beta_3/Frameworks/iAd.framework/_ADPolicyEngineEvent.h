@@ -8,14 +8,14 @@
     NSMutableArray *_bannersWaitingOnLoad;
 }
 
-@property(assign,readonly) NSArray * bannerIdentifiers;
-@property(assign,retain) NSMutableArray * banners;
-@property(assign,copy) id bannersLoadedHandler;
-@property(assign,retain) NSMutableArray * bannersWaitingOnLoad;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *bannerIdentifiers;
+@property (nonatomic, retain) NSMutableArray *banners;
+@property (nonatomic, copy) id bannersLoadedHandler;
+@property (nonatomic, retain) NSMutableArray *bannersWaitingOnLoad;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_considerCallingLoadedHandler;
 - (void)addBannerForCreativeType:(int)arg1;

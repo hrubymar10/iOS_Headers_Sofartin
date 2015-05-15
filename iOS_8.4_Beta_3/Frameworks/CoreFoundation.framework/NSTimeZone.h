@@ -4,8 +4,8 @@
 
 @interface NSTimeZone : NSObject <NSCopying, NSSecureCoding>
 
-@property(assign,copy) NSData * data;
-@property(assign,copy) NSString * name;
+@property (readonly, copy) NSData *data;
+@property (readonly, copy) NSString *name;
 
 + (id)abbreviationDictionary;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;

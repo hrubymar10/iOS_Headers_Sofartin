@@ -14,14 +14,14 @@
     int _loiType;
 }
 
-@property(assign,readwrite) double eventDate;
-@property(assign,retain) NSString * eventName;
-@property(assign,readwrite) bool hasEventDate;
-@property(assign,readonly) bool hasEventName;
-@property(assign,readwrite) bool hasIsEventAllDay;
-@property(assign,readwrite) bool hasLoiType;
-@property(assign,readwrite) bool isEventAllDay;
-@property(assign,readwrite) int loiType;
+@property (nonatomic) double eventDate;
+@property (nonatomic, retain) NSString *eventName;
+@property (nonatomic) bool hasEventDate;
+@property (nonatomic, readonly) bool hasEventName;
+@property (nonatomic) bool hasIsEventAllDay;
+@property (nonatomic) bool hasLoiType;
+@property (nonatomic) bool isEventAllDay;
+@property (nonatomic) int loiType;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

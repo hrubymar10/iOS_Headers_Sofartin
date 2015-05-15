@@ -6,7 +6,7 @@
     NSString *_actionType;
 }
 
-@property(assign,copy) NSString * actionType;
+@property (copy) NSString *actionType;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

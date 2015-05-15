@@ -9,7 +9,7 @@
     int _lock;
 }
 
-@property(assign,copy) NSString * countryCode;
+@property (nonatomic, readonly, copy) NSString *countryCode;
 
 + (id)sharedConfiguration;
 

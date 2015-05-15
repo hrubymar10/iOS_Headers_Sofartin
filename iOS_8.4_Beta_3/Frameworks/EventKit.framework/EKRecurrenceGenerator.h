@@ -22,17 +22,17 @@
     NSArray *_weeksOfTheYear;
 }
 
-@property(assign,readwrite) bool allDay;
-@property(assign,copy) NSArray * daysOfTheMonth;
-@property(assign,copy) NSArray * daysOfTheWeek;
-@property(assign,copy) NSArray * daysOfTheYear;
-@property(assign,copy) NSDate * endDate;
-@property(assign,copy) NSDate * eventEndDate;
-@property(assign,copy) NSDate * eventStartDate;
-@property(assign,copy) NSTimeZone * eventTimeZone;
-@property(assign,copy) NSArray * monthsOfTheYear;
-@property(assign,copy) NSArray * setPositions;
-@property(assign,copy) NSArray * weeksOfTheYear;
+@property (nonatomic) bool allDay;
+@property (nonatomic, copy) NSArray *daysOfTheMonth;
+@property (nonatomic, copy) NSArray *daysOfTheWeek;
+@property (nonatomic, copy) NSArray *daysOfTheYear;
+@property (nonatomic, copy) NSDate *endDate;
+@property (nonatomic, copy) NSDate *eventEndDate;
+@property (nonatomic, copy) NSDate *eventStartDate;
+@property (nonatomic, copy) NSTimeZone *eventTimeZone;
+@property (nonatomic, copy) NSArray *monthsOfTheYear;
+@property (nonatomic, copy) NSArray *setPositions;
+@property (nonatomic, copy) NSArray *weeksOfTheYear;
 
 + (id)generator;
 

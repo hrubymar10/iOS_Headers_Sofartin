@@ -4,7 +4,7 @@
 
 @interface UIOpenURLAction : BSAction
 
-@property(assign,copy) NSURL * url;
+@property (nonatomic, readonly, copy) NSURL *url;
 
 - (long long)UIActionType;
 - (id)initWithInfo:(id)arg1 timeout:(double)arg2 forResponseOnQueue:(id)arg3 withHandler:(id)arg4;

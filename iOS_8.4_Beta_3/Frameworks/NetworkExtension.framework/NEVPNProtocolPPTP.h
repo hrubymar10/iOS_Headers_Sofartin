@@ -6,7 +6,7 @@
     long long _encryptionLevel;
 }
 
-@property(assign,readwrite) long long encryptionLevel;
+@property long long encryptionLevel;
 
 + (bool)supportsSecureCoding;
 

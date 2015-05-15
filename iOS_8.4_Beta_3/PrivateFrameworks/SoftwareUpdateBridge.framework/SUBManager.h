@@ -8,9 +8,9 @@
     NSObject<OS_xpc_object> *_serverConnection;
 }
 
-@property(assign,readwrite) <SUBManagerDelegate> * delegate;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSObject<OS_xpc_object> * serverConnection;
+@property (nonatomic) <SUBManagerDelegate> *delegate;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *serverConnection;
 
 - (void)_forwardDownloadProgress:(id)arg1;
 - (void)_forwardInstallResult:(id)arg1;

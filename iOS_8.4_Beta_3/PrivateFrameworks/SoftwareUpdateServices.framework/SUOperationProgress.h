@@ -9,10 +9,10 @@
     double _timeRemaining;
 }
 
-@property(assign,readwrite) float normalizedPercentComplete;
-@property(assign,readwrite) float percentComplete;
-@property(assign,retain) NSString * phase;
-@property(assign,readwrite) double timeRemaining;
+@property (nonatomic) float normalizedPercentComplete;
+@property (nonatomic) float percentComplete;
+@property (nonatomic, retain) NSString *phase;
+@property (nonatomic) double timeRemaining;
 
 + (bool)supportsSecureCoding;
 

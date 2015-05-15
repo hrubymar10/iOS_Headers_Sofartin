@@ -6,7 +6,7 @@
     NSMutableDictionary *_sessions;
 }
 
-@property(assign,readonly) NSArray * allSessionURLs;
+@property (nonatomic, readonly) NSArray *allSessionURLs;
 
 + (id)sessionManager;
 

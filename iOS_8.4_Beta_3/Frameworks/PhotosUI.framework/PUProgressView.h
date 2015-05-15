@@ -7,7 +7,7 @@
     long long _style;
 }
 
-@property(assign,readonly) long long style;
+@property (readonly) long long style;
 
 - (void).cxx_destruct;
 - (void)hideAnimated:(bool)arg1;

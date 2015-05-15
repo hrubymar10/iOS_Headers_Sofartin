@@ -4,10 +4,10 @@
 
 @interface IKTimelineEventElement : IKViewElement
 
-@property(assign,readonly) double duration;
-@property(assign,readonly) double offset;
-@property(assign,retain) IKViewElement * relatedContent;
-@property(assign,retain) NSDate * startDate;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic, readonly) double offset;
+@property (nonatomic, readonly, retain) IKViewElement *relatedContent;
+@property (nonatomic, readonly, retain) NSDate *startDate;
 
 - (double)duration;
 - (double)offset;

@@ -12,20 +12,20 @@
     NSURL *_pictureURL;
 }
 
-@property(assign,retain) NSString * category;
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double distance;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * identifier;
-@property(assign,readwrite) double latitude;
-@property(assign,readwrite) double longitude;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSURL * pictureURL;
-@property(assign,copy) NSString * subtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
+@property (retain) NSString *category;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property double distance;
+@property (readonly) unsigned long long hash;
+@property (retain) NSString *identifier;
+@property double latitude;
+@property double longitude;
+@property (retain) NSString *name;
+@property (retain) NSURL *pictureURL;
+@property (nonatomic, readonly, copy) NSString *subtitle;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly, copy) NSString *title;
 
 + (bool)supportsSecureCoding;
 

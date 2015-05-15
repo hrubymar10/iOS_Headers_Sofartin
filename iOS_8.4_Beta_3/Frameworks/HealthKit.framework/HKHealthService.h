@@ -10,11 +10,11 @@
     long long _type;
 }
 
-@property(assign,readonly) NSUUID * identifier;
-@property(assign,readwrite) double lastConnection;
-@property(assign,readonly) NSString * name;
-@property(assign,copy) NSString * serviceId;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) NSUUID *identifier;
+@property (nonatomic) double lastConnection;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, copy) NSString *serviceId;
+@property (nonatomic, readonly) long long type;
 
 + (bool)supportsSecureCoding;
 

@@ -16,17 +16,17 @@
     bool _viewIsReady;
 }
 
-@property(assign,retain) NSURL * displayedURL;
-@property(assign,retain) UIViewController * firstViewController;
-@property(assign,readwrite) long long layoutType;
-@property(assign,retain) NSString * mainTitle;
-@property(assign,readwrite) double minimumPaneSize;
-@property(assign,retain) UIViewController * secondViewController;
-@property(assign,readwrite) double splitPosition;
-@property(assign,copy) SUShadow * splitShadow;
-@property(assign,readwrite) bool usesSharedPlaceholder;
-@property(getter=isVertical,assign,readwrite) bool vertical;
-@property(assign,readwrite) bool viewIsReady;
+@property (nonatomic, retain) NSURL *displayedURL;
+@property (nonatomic, retain) UIViewController *firstViewController;
+@property (nonatomic) long long layoutType;
+@property (nonatomic, retain) NSString *mainTitle;
+@property (nonatomic) double minimumPaneSize;
+@property (nonatomic, retain) UIViewController *secondViewController;
+@property (nonatomic) double splitPosition;
+@property (nonatomic, copy) SUShadow *splitShadow;
+@property (nonatomic) bool usesSharedPlaceholder;
+@property (getter=isVertical, nonatomic) bool vertical;
+@property (nonatomic) bool viewIsReady;
 
 + (bool)isValidSplitPositionValue:(id)arg1;
 + (bool)isValidSplitTypeString:(id)arg1;

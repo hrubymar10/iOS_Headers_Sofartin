@@ -14,13 +14,13 @@
     UITextView *_textView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicProductDescriptionTableViewCellDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) MusicProductDescription * productDescription;
-@property(assign,readwrite) long long productDescriptionMaximumLengthForTextInput;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicProductDescriptionTableViewCellDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) MusicProductDescription *productDescription;
+@property (nonatomic) long long productDescriptionMaximumLengthForTextInput;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_attributedTextWithProductDescriptionStoreEditorNotes:(id)arg1;

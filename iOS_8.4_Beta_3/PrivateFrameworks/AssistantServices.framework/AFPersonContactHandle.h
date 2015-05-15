@@ -8,9 +8,9 @@
     unsigned long long _type;
 }
 
-@property(assign,copy) NSString * handle;
-@property(assign,copy) NSString * label;
-@property(assign,readwrite) unsigned long long type;
+@property (nonatomic, copy) NSString *handle;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic) unsigned long long type;
 
 + (bool)supportsSecureCoding;
 

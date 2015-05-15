@@ -10,10 +10,10 @@
     double _pieRadius;
 }
 
-@property(assign,retain) UIImage * backgroundImage;
-@property(assign,retain) UIImage * foregroundImage;
-@property(assign,readwrite) double pieFraction;
-@property(assign,readwrite) double pieRadius;
+@property (nonatomic, retain) UIImage *backgroundImage;
+@property (nonatomic, retain) UIImage *foregroundImage;
+@property (nonatomic) double pieFraction;
+@property (nonatomic) double pieRadius;
 
 - (void)_reloadClipPath;
 - (id)backgroundImage;

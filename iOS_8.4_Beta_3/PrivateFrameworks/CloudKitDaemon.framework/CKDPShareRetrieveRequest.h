@@ -7,10 +7,10 @@
     CKDPRecordZoneIdentifier *_zoneId;
 }
 
-@property(assign,readonly) bool hasShareId;
-@property(assign,readonly) bool hasZoneId;
-@property(assign,retain) CKDPShareIdentifier * shareId;
-@property(assign,retain) CKDPRecordZoneIdentifier * zoneId;
+@property (nonatomic, readonly) bool hasShareId;
+@property (nonatomic, readonly) bool hasZoneId;
+@property (nonatomic, retain) CKDPShareIdentifier *shareId;
+@property (nonatomic, retain) CKDPRecordZoneIdentifier *zoneId;
 
 + (id)options;
 

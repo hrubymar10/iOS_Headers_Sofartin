@@ -4,13 +4,13 @@
 
 @interface SASTTableRowItem : AceObject <SASTTemplateItem>
 
-@property(assign,copy) NSArray * columnValues;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUINanoImageResource * imageResource;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SAUIDecoratedText * title;
+@property (nonatomic, copy) NSArray *columnValues;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUINanoImageResource *imageResource;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SAUIDecoratedText *title;
 
 + (id)tableRowItem;
 + (id)tableRowItemWithDictionary:(id)arg1 context:(id)arg2;

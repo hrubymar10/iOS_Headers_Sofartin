@@ -15,16 +15,16 @@
     UILabel *_rssiStats;
 }
 
-@property(assign,retain) UIView * babyBar;
-@property(assign,readwrite) long long bufferIndex;
-@property(assign,readwrite) bool freshBuffer;
-@property(assign,retain) GraphView * graph;
-@property(assign,retain) UIView * graphClippingView;
-@property(assign,retain) NFMLeashManager * leashManager;
-@property(assign,retain) UIView * mamaBar;
-@property(assign,readwrite) long long miniBufferIndex;
-@property(assign,retain) UIView * papaBar;
-@property(assign,retain) UILabel * rssiStats;
+@property (nonatomic, retain) UIView *babyBar;
+@property (nonatomic) long long bufferIndex;
+@property (nonatomic) bool freshBuffer;
+@property (nonatomic, retain) GraphView *graph;
+@property (nonatomic, retain) UIView *graphClippingView;
+@property (nonatomic, retain) NFMLeashManager *leashManager;
+@property (nonatomic, retain) UIView *mamaBar;
+@property (nonatomic) long long miniBufferIndex;
+@property (nonatomic, retain) UIView *papaBar;
+@property (nonatomic, retain) UILabel *rssiStats;
 
 - (void).cxx_destruct;
 - (id)babyBar;

@@ -13,12 +13,12 @@
     NSString *_webBaseActionURL;
 }
 
-@property(assign,retain) NSArray * attributionApps;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSString * identifier;
-@property(assign,readwrite) unsigned int requirementsMask;
-@property(assign,readwrite) unsigned int version;
-@property(assign,retain) NSString * webBaseActionURL;
+@property (nonatomic, retain) NSArray *attributionApps;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic) unsigned int requirementsMask;
+@property (nonatomic) unsigned int version;
+@property (nonatomic, retain) NSString *webBaseActionURL;
 
 + (bool)supportsSecureCoding;
 

@@ -11,12 +11,12 @@
     NSNumber *_rangeStart;
 }
 
-@property(assign,readonly) NSString * entityName;
-@property(assign,readonly) NSString * owningPeerID;
-@property(assign,readonly) NSNumber * peerEnd;
-@property(assign,readonly) NSNumber * peerStart;
-@property(assign,readonly) NSNumber * rangeEnd;
-@property(assign,readonly) NSNumber * rangeStart;
+@property (nonatomic, readonly) NSString *entityName;
+@property (nonatomic, readonly) NSString *owningPeerID;
+@property (nonatomic, readonly) NSNumber *peerEnd;
+@property (nonatomic, readonly) NSNumber *peerStart;
+@property (nonatomic, readonly) NSNumber *rangeEnd;
+@property (nonatomic, readonly) NSNumber *rangeStart;
 
 - (void)dealloc;
 - (id)description;

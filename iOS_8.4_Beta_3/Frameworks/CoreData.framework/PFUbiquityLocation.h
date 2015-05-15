@@ -16,24 +16,24 @@
     NSString *_ubiquityRootLocationPath;
 }
 
-@property(assign,readonly) NSString * exportingPeerID;
-@property(assign,readonly) NSString * filename;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isDirectory;
-@property(assign,readonly) bool isRootUbiquitous;
-@property(getter=isTransactionLogLocation,assign,readonly) bool isTransactionLogLocation;
-@property(assign,readonly) NSString * modelVersionHash;
-@property(assign,readonly) NSArray * otherPathComponents;
-@property(assign,readonly) NSString * storeName;
-@property(assign,readonly) int ubiquityLocationType;
-@property(assign,readonly) PFUbiquityLocation * ubiquityRootLocation;
-@property(assign,readonly) NSString * ubiquityRootLocationPath;
-@property(assign,readonly) bool usesBaselineDirectory;
-@property(assign,readonly) bool usesBaselineStagingDirectory;
-@property(assign,readonly) bool usesCurrentBaselineDirectory;
-@property(assign,readonly) bool usesNosyncDirectory;
-@property(assign,readonly) bool usesStagingLogDirectory;
-@property(assign,readonly) bool usesTemporaryLogDirectory;
+@property (nonatomic, readonly) NSString *exportingPeerID;
+@property (nonatomic, readonly) NSString *filename;
+@property (nonatomic, readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isDirectory;
+@property (nonatomic, readonly) bool isRootUbiquitous;
+@property (getter=isTransactionLogLocation, nonatomic, readonly) bool isTransactionLogLocation;
+@property (nonatomic, readonly) NSString *modelVersionHash;
+@property (nonatomic, readonly) NSArray *otherPathComponents;
+@property (nonatomic, readonly) NSString *storeName;
+@property (nonatomic, readonly) int ubiquityLocationType;
+@property (nonatomic, readonly) PFUbiquityLocation *ubiquityRootLocation;
+@property (nonatomic, readonly) NSString *ubiquityRootLocationPath;
+@property (nonatomic, readonly) bool usesBaselineDirectory;
+@property (nonatomic, readonly) bool usesBaselineStagingDirectory;
+@property (nonatomic, readonly) bool usesCurrentBaselineDirectory;
+@property (nonatomic, readonly) bool usesNosyncDirectory;
+@property (nonatomic, readonly) bool usesStagingLogDirectory;
+@property (nonatomic, readonly) bool usesTemporaryLogDirectory;
 
 + (id)createArrayOfSubLocationsAtLocation:(id)arg1 error:(id*)arg2;
 + (id)createBaselineLocation:(int)arg1 forStoreName:(id)arg2 andModelVersionHash:(id)arg3 withUbiquityRootLocation:(id)arg4;

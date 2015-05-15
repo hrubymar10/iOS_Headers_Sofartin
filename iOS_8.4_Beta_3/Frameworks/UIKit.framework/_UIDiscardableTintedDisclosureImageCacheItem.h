@@ -12,8 +12,8 @@
     UIImage *_tintedImage;
 }
 
-@property(assign,readonly) UIColor * tintColor;
-@property(assign,readonly) UIImage * tintedImage;
+@property (nonatomic, readonly) UIColor *tintColor;
+@property (nonatomic, readonly) UIImage *tintedImage;
 
 - (id)_tintedDisclosureImage:(bool)arg1;
 - (bool)beginContentAccess;

@@ -12,16 +12,16 @@
     NSArray *_userStations;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RURadioDataSourceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSArray * featuredStations;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isOptedInToRadio,assign,readonly) bool optedInToRadio;
-@property(assign,retain) RURadioPlaybackCoordinator * playbackCoordinator;
-@property(assign,readonly) NSArray * stations;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSArray * userStations;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RURadioDataSourceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSArray *featuredStations;
+@property (readonly) unsigned long long hash;
+@property (getter=isOptedInToRadio, nonatomic, readonly) bool optedInToRadio;
+@property (nonatomic, retain) RURadioPlaybackCoordinator *playbackCoordinator;
+@property (nonatomic, readonly) NSArray *stations;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *userStations;
 
 + (void)_accountStoreDidChangeNotification:(id)arg1;
 + (void)_networkReachabilityDidChangeNotification:(id)arg1;

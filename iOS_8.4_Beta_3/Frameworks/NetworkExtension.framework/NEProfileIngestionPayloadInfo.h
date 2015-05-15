@@ -13,14 +13,14 @@
     NSString *_profileUUID;
 }
 
-@property(assign,readwrite) bool applicationCreated;
-@property(assign,readwrite) bool isSetAside;
-@property(assign,copy) NSString * payloadOrganization;
-@property(assign,copy) NSString * payloadProtocolType;
-@property(assign,copy) NSString * payloadUUID;
-@property(assign,copy) NSString * profileIdentifier;
-@property(assign,copy) NSString * profileOrganization;
-@property(assign,copy) NSString * profileUUID;
+@property bool applicationCreated;
+@property bool isSetAside;
+@property (copy) NSString *payloadOrganization;
+@property (copy) NSString *payloadProtocolType;
+@property (copy) NSString *payloadUUID;
+@property (copy) NSString *profileIdentifier;
+@property (copy) NSString *profileOrganization;
+@property (copy) NSString *profileUUID;
 
 + (bool)supportsSecureCoding;
 

@@ -10,8 +10,8 @@
     id _result;
 }
 
-@property(assign,retain) NSError * error;
-@property(assign,retain) id result;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, retain) id result;
 
 + (id)proxy;
 

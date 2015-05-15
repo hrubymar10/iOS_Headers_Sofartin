@@ -9,9 +9,9 @@
     NSArray *_rightHandSide;
 }
 
-@property(assign,readonly) unsigned long long lengthIncrease;
-@property(assign,copy) id nodeEvaluator;
-@property(assign,copy) NSArray * rightHandSide;
+@property (nonatomic, readonly) unsigned long long lengthIncrease;
+@property (nonatomic, readonly, copy) id nodeEvaluator;
+@property (nonatomic, readonly, copy) NSArray *rightHandSide;
 
 + (id)ruleWithLHS:(id)arg1 RHS:(id)arg2 nodeEvaluator:(id)arg3;
 

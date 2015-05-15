@@ -6,7 +6,7 @@
     bool _editSessionDidSaveChanges;
 }
 
-@property(assign,readwrite) bool editSessionDidSaveChanges;
+@property (nonatomic) bool editSessionDidSaveChanges;
 
 - (void)_prepareViewForTransitionIsPresenting:(bool)arg1;
 - (void)animatePopTransition;

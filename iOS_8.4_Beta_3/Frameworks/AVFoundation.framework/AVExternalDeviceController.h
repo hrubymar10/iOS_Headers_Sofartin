@@ -6,9 +6,9 @@
     AVExternalDeviceControllerInternal *_externalDeviceController;
 }
 
-@property(assign,copy) NSArray * availableExternalDevices;
-@property(assign,readwrite) <AVExternalDeviceControllerDelegate> * delegate;
-@property(assign,readwrite) long long discoveryMode;
+@property (nonatomic, readonly, copy) NSArray *availableExternalDevices;
+@property (nonatomic) <AVExternalDeviceControllerDelegate> *delegate;
+@property (nonatomic) long long discoveryMode;
 
 - (id)availableExternalDevices;
 - (void)dealloc;

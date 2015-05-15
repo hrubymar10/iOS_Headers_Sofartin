@@ -21,12 +21,12 @@
     double _turnMargin;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,readwrite) <UIBookViewControllerDelegate> * delegate;
-@property(assign,retain) UIViewController * evenPage;
-@property(assign,retain) UIViewController * oddPage;
-@property(assign,readwrite) double turnDuration;
-@property(assign,readwrite) double turnMargin;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic) <UIBookViewControllerDelegate> *delegate;
+@property (nonatomic, retain) UIViewController *evenPage;
+@property (nonatomic, retain) UIViewController *oddPage;
+@property (nonatomic) double turnDuration;
+@property (nonatomic) double turnMargin;
 
 - (void)_positionPage:(id)arg1 isLeft:(bool)arg2;
 - (void)_setNewPage:(id)arg1 isLeft:(bool)arg2;

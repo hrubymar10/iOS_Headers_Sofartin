@@ -14,10 +14,10 @@
     UIImage *_overlayImage;
 }
 
-@property(assign,retain) UIImage * backgroundImage;
-@property(assign,retain) UIImage * maskImage;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } maskInsets;
-@property(assign,retain) UIImage * overlayImage;
+@property (nonatomic, retain) UIImage *backgroundImage;
+@property (nonatomic, retain) UIImage *maskImage;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } maskInsets;
+@property (nonatomic, retain) UIImage *overlayImage;
 
 - (id)backgroundImage;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

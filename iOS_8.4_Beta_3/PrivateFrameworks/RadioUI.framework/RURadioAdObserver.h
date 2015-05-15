@@ -21,17 +21,17 @@
     bool _visuallyEngaged;
 }
 
-@property(assign,retain) RURTCReportingController * RTCReportingController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPUJinglePlayActivityReportingController * jinglePlayActivityReportingController;
-@property(assign,retain) RUJingleTiltReportingController * jingleTiltReportingController;
-@property(assign,readonly) unsigned long long numberOfSkippedTracks;
-@property(assign,retain) MPAVController * player;
-@property(assign,retain) MPUReportingPlaybackObserver * reportingPlaybackObserver;
-@property(assign,readonly) Class superclass;
-@property(getter=isVisuallyEngaged,assign,readonly) bool visuallyEngaged;
+@property (nonatomic, retain) RURTCReportingController *RTCReportingController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPUJinglePlayActivityReportingController *jinglePlayActivityReportingController;
+@property (nonatomic, retain) RUJingleTiltReportingController *jingleTiltReportingController;
+@property (nonatomic, readonly) unsigned long long numberOfSkippedTracks;
+@property (nonatomic, retain) MPAVController *player;
+@property (nonatomic, retain) MPUReportingPlaybackObserver *reportingPlaybackObserver;
+@property (readonly) Class superclass;
+@property (getter=isVisuallyEngaged, nonatomic, readonly) bool visuallyEngaged;
 
 + (id)sharedAdObserver;
 

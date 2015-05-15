@@ -17,13 +17,13 @@
     NSMutableArray *mValues;
 }
 
-@property(assign,readonly) NSArray * columnIds;
-@property(assign,readwrite) int direction;
-@property(assign,readwrite) bool dirty;
-@property(assign,readonly) unsigned long long numberOfColumns;
-@property(assign,readonly) unsigned long long numberOfRows;
-@property(assign,readwrite) <TSCHNotifyOnModify> * objectToNotify;
-@property(assign,readonly) NSArray * rowIds;
+@property (nonatomic, readonly) NSArray *columnIds;
+@property (nonatomic) int direction;
+@property (nonatomic) bool dirty;
+@property (nonatomic, readonly) unsigned long long numberOfColumns;
+@property (nonatomic, readonly) unsigned long long numberOfRows;
+@property (nonatomic) <TSCHNotifyOnModify> *objectToNotify;
+@property (nonatomic, readonly) NSArray *rowIds;
 
 - (void)addingMultipleCols:(bool)arg1;
 - (void)addingMultipleRows:(bool)arg1;

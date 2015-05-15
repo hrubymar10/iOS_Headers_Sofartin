@@ -11,11 +11,11 @@
     MPMediaItem *_representativeItem;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) long long groupingType;
-@property(assign,readonly) NSArray * items;
-@property(assign,readonly) unsigned long long mediaTypes;
-@property(assign,readonly) MPMediaItem * representativeItem;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, readonly) long long groupingType;
+@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic, readonly) unsigned long long mediaTypes;
+@property (nonatomic, readonly) MPMediaItem *representativeItem;
 
 + (id)collectionWithItems:(id)arg1;
 + (void)registerSupportedCustomProperties;

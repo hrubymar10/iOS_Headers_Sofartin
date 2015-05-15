@@ -14,7 +14,7 @@
     NSMutableArray *_pendingInvalidationRemovedIdentifiers;
 }
 
-@property(assign,readwrite) <MPShuffleControllerDataSource> * dataSource;
+@property (nonatomic) <MPShuffleControllerDataSource> *dataSource;
 
 + (bool)supportsSecureCoding;
 

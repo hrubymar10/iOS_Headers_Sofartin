@@ -7,8 +7,8 @@
     NSArray *_substVarBindOrdering;
 }
 
-@property(assign,retain) NSArray * substitutionBindIntarrayOrder;
-@property(assign,retain) NSArray * substitutionBindVariableOrder;
+@property (nonatomic, retain) NSArray *substitutionBindIntarrayOrder;
+@property (nonatomic, retain) NSArray *substitutionBindVariableOrder;
 
 - (void)dealloc;
 - (void)setSubstitutionBindIntarrayOrder:(id)arg1;

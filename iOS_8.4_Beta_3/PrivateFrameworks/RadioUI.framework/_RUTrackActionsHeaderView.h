@@ -8,9 +8,9 @@
     UILabel *_songLabel;
 }
 
-@property(assign,copy) NSString * artistText;
-@property(assign,retain) UIImage * artworkImage;
-@property(assign,copy) NSString * songText;
+@property (nonatomic, copy) NSString *artistText;
+@property (nonatomic, retain) UIImage *artworkImage;
+@property (nonatomic, copy) NSString *songText;
 
 + (id)_artistLabelFont;
 + (id)_songLabelFont;

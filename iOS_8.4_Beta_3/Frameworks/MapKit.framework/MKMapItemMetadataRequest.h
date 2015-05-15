@@ -6,9 +6,9 @@
     MKMapItem *_mapItem;
 }
 
-@property(assign,retain) MKMapItem * mapItem;
-@property(assign,readonly) NSURL * url;
-@property(assign,readonly) NSURLRequest * urlRequest;
+@property (nonatomic, retain) MKMapItem *mapItem;
+@property (nonatomic, readonly) NSURL *url;
+@property (nonatomic, readonly) NSURLRequest *urlRequest;
 
 - (void).cxx_destruct;
 - (void)handleData:(id)arg1;

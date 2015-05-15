@@ -13,9 +13,9 @@
     NSMigrationManager *_migrationManager;
 }
 
-@property(assign,retain) NSEntityMapping * currentEntityMapping;
-@property(assign,readwrite) unsigned long long currentMigrationStep;
-@property(assign,retain) NSPropertyMapping * currentPropertyMapping;
+@property (retain) NSEntityMapping *currentEntityMapping;
+@property unsigned long long currentMigrationStep;
+@property (retain) NSPropertyMapping *currentPropertyMapping;
 
 - (void)_createAssociationsByDestination:(id)arg1 fromSource:(id)arg2 forEntityMapping:(id)arg3;
 - (void)_createAssociationsBySource:(id)arg1 withDestination:(id)arg2 forEntityMapping:(id)arg3;

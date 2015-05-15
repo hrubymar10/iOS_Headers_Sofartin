@@ -23,7 +23,7 @@
     } _superTileKey;
 }
 
-@property(assign,readonly) struct VKRasterTileKey { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; } tileKey;
+@property (nonatomic, readonly) struct VKRasterTileKey { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; } tileKey;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -25,24 +25,24 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int cycleCountKey;
-@property(assign,readwrite) unsigned int durationDispOn;
-@property(assign,readwrite) unsigned int durationPartialDispOff;
-@property(assign,readwrite) unsigned int durationPartialDispOn;
-@property(assign,readwrite) unsigned int energyChargedMicroWatt;
-@property(assign,readwrite) unsigned int energyConsumedDisplayOffMicroWatt;
-@property(assign,readwrite) unsigned int energyConsumedDisplayOnMicroWatt;
-@property(assign,readwrite) unsigned int energyConsumedPartailDispOnMicrowatt;
-@property(assign,readwrite) bool hasCycleCountKey;
-@property(assign,readwrite) bool hasDurationDispOn;
-@property(assign,readwrite) bool hasDurationPartialDispOff;
-@property(assign,readwrite) bool hasDurationPartialDispOn;
-@property(assign,readwrite) bool hasEnergyChargedMicroWatt;
-@property(assign,readwrite) bool hasEnergyConsumedDisplayOffMicroWatt;
-@property(assign,readwrite) bool hasEnergyConsumedDisplayOnMicroWatt;
-@property(assign,readwrite) bool hasEnergyConsumedPartailDispOnMicrowatt;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int cycleCountKey;
+@property (nonatomic) unsigned int durationDispOn;
+@property (nonatomic) unsigned int durationPartialDispOff;
+@property (nonatomic) unsigned int durationPartialDispOn;
+@property (nonatomic) unsigned int energyChargedMicroWatt;
+@property (nonatomic) unsigned int energyConsumedDisplayOffMicroWatt;
+@property (nonatomic) unsigned int energyConsumedDisplayOnMicroWatt;
+@property (nonatomic) unsigned int energyConsumedPartailDispOnMicrowatt;
+@property (nonatomic) bool hasCycleCountKey;
+@property (nonatomic) bool hasDurationDispOn;
+@property (nonatomic) bool hasDurationPartialDispOff;
+@property (nonatomic) bool hasDurationPartialDispOn;
+@property (nonatomic) bool hasEnergyChargedMicroWatt;
+@property (nonatomic) bool hasEnergyConsumedDisplayOffMicroWatt;
+@property (nonatomic) bool hasEnergyConsumedDisplayOnMicroWatt;
+@property (nonatomic) bool hasEnergyConsumedPartailDispOnMicrowatt;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

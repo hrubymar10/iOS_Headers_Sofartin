@@ -4,7 +4,7 @@
 
 @interface SAGKVideoLinkedAnswer : SAGKImageLinkedAnswer
 
-@property(assign,copy) NSNumber * runtimeInMilliseconds;
+@property (nonatomic, copy) NSNumber *runtimeInMilliseconds;
 
 + (id)videoLinkedAnswer;
 + (id)videoLinkedAnswerWithDictionary:(id)arg1 context:(id)arg2;

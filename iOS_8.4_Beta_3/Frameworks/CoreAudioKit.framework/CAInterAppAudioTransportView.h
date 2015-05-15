@@ -21,16 +21,16 @@
     CAUITransportButton *rewindButton;
 }
 
-@property(getter=isConnected,assign,readonly) bool connected;
-@property(assign,retain) UIFont * currentTimeLabelFont;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,retain) UIColor * labelColor;
-@property(assign,retain) UIColor * pauseButtonColor;
-@property(assign,retain) UIColor * playButtonColor;
-@property(getter=isPlaying,assign,readonly) bool playing;
-@property(assign,retain) UIColor * recordButtonColor;
-@property(getter=isRecording,assign,readonly) bool recording;
-@property(assign,retain) UIColor * rewindButtonColor;
+@property (getter=isConnected, nonatomic, readonly) bool connected;
+@property (nonatomic, retain) UIFont *currentTimeLabelFont;
+@property (getter=isEnabled) bool enabled;
+@property (nonatomic, retain) UIColor *labelColor;
+@property (nonatomic, retain) UIColor *pauseButtonColor;
+@property (nonatomic, retain) UIColor *playButtonColor;
+@property (getter=isPlaying, nonatomic, readonly) bool playing;
+@property (nonatomic, retain) UIColor *recordButtonColor;
+@property (getter=isRecording, nonatomic, readonly) bool recording;
+@property (nonatomic, retain) UIColor *rewindButtonColor;
 
 - (void)appHasGoneForeground;
 - (void)appHasGoneInBackground;

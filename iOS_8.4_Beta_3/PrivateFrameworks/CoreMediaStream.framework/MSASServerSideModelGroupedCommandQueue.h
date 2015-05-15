@@ -6,7 +6,7 @@
     MSASEnqueuedCommand *_lastEnqueuedCommand;
 }
 
-@property(assign,retain) MSASEnqueuedCommand * lastEnqueuedCommand;
+@property (nonatomic, retain) MSASEnqueuedCommand *lastEnqueuedCommand;
 
 + (id)calloutBlockForCommand:(id)arg1;
 

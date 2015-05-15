@@ -4,12 +4,12 @@
 
 @interface DOMHTMLEmbedElement : DOMHTMLElement
 
-@property(assign,copy) NSString * align;
-@property(assign,readwrite) int height;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * src;
-@property(assign,copy) NSString * type;
-@property(assign,readwrite) int width;
+@property (copy) NSString *align;
+@property int height;
+@property (copy) NSString *name;
+@property (copy) NSString *src;
+@property (copy) NSString *type;
+@property int width;
 
 - (id)align;
 - (int)height;

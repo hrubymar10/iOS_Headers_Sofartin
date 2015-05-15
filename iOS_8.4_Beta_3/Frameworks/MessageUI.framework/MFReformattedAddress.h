@@ -10,9 +10,9 @@
     } _middleTruncationRange;
 }
 
-@property(assign,readonly) NSString * domainPart;
-@property(assign,readonly) NSString * localPart;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } middleTruncationRange;
+@property (nonatomic, readonly) NSString *domainPart;
+@property (nonatomic, readonly) NSString *localPart;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } middleTruncationRange;
 
 - (id)attributedStringWithFontSize:(double)arg1 maximumWidth:(double)arg2 options:(unsigned long long)arg3;
 - (void)dealloc;

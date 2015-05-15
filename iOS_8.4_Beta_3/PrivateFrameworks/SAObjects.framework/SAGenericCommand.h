@@ -4,8 +4,8 @@
 
 @interface SAGenericCommand : SABaseCommand
 
-@property(assign,readonly) NSString * className;
-@property(assign,readonly) NSString * group;
+@property (nonatomic, readonly) NSString *className;
+@property (nonatomic, readonly) NSString *group;
 
 - (id)className;
 - (id)encodedClassName;

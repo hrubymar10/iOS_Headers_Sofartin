@@ -9,10 +9,10 @@
     NSMutableDictionary *_userInfo;
 }
 
-@property(assign,retain) SBKRequest * activeRequest;
-@property(assign,copy) NSString * domain;
-@property(assign,retain) NSURL * requestURL;
-@property(assign,retain) NSMutableDictionary * userInfo;
+@property (retain) SBKRequest *activeRequest;
+@property (readonly, copy) NSString *domain;
+@property (retain) NSURL *requestURL;
+@property (retain) NSMutableDictionary *userInfo;
 
 - (void).cxx_destruct;
 - (id)activeRequest;

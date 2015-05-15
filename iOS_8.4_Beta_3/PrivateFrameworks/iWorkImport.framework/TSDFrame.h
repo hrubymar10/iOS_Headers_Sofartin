@@ -17,8 +17,8 @@
     double mTopHeight;
 }
 
-@property(assign,readonly) double assetScale;
-@property(assign,readonly) TSDFrameSpec * frameSpec;
+@property (nonatomic, readonly) double assetScale;
+@property (nonatomic, readonly) TSDFrameSpec *frameSpec;
 
 + (Class)mutableClass;
 

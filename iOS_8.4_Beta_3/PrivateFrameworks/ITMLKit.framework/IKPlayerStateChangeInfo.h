@@ -8,11 +8,11 @@
     long long _state;
 }
 
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) double elapsedTime;
-@property(assign,copy) NSDictionary * jsonValue;
-@property(assign,readonly) long long oldState;
-@property(assign,readonly) long long state;
+@property (nonatomic) double duration;
+@property (nonatomic) double elapsedTime;
+@property (nonatomic, copy) NSDictionary *jsonValue;
+@property (nonatomic, readonly) long long oldState;
+@property (nonatomic, readonly) long long state;
 
 - (void).cxx_destruct;
 - (id)_stateNameForState:(long long)arg1;

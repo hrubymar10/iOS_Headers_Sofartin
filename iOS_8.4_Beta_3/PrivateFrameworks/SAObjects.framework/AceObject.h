@@ -10,14 +10,14 @@
     NSString *_refId;
 }
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSMutableDictionary * dict;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSData * plistData;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSMutableDictionary *dict;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSData *plistData;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
 
 + (id)_aceObjectWithMutableDictionary:(id)arg1 context:(id)arg2;
 + (id)_filteredDictionaryForKeySet:(struct __CFSet { }*)arg1 plistData:(id)arg2;

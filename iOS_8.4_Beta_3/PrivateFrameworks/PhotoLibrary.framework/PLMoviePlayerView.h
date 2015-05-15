@@ -9,10 +9,10 @@
     PLVideoOutBackgroundView *_videoOutView;
 }
 
-@property(getter=isDestinationPlaceholderHidden,assign,readwrite) bool destinationPlaceholderHidden;
-@property(assign,readonly) long long destinationPlaceholderStyle;
-@property(assign,retain) AVPlayer * player;
-@property(assign,retain) UIView * videoView;
+@property (getter=isDestinationPlaceholderHidden, nonatomic) bool destinationPlaceholderHidden;
+@property (nonatomic, readonly) long long destinationPlaceholderStyle;
+@property (nonatomic, retain) AVPlayer *player;
+@property (nonatomic, readonly, retain) UIView *videoView;
 
 - (void)_clearAirPlayView;
 - (void)_clearVideoView;

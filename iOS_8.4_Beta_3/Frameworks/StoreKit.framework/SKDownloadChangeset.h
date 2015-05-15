@@ -12,13 +12,13 @@
     NSNumber *_timeRemaining;
 }
 
-@property(assign,copy) NSNumber * contentLength;
-@property(assign,copy) NSURL * contentURL;
-@property(assign,copy) NSNumber * downloadID;
-@property(assign,copy) NSNumber * downloadState;
-@property(assign,copy) NSError * error;
-@property(assign,copy) NSNumber * progress;
-@property(assign,copy) NSNumber * timeRemaining;
+@property (nonatomic, copy) NSNumber *contentLength;
+@property (nonatomic, copy) NSURL *contentURL;
+@property (nonatomic, copy) NSNumber *downloadID;
+@property (nonatomic, copy) NSNumber *downloadState;
+@property (nonatomic, copy) NSError *error;
+@property (nonatomic, copy) NSNumber *progress;
+@property (nonatomic, copy) NSNumber *timeRemaining;
 
 + (id)changesetWithDownloadID:(id)arg1 state:(long long)arg2;
 

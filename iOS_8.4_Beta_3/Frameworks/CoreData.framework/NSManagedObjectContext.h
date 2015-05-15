@@ -60,21 +60,21 @@
     NSMutableSet *_unprocessedInserts;
 }
 
-@property(assign,readonly) unsigned long long concurrencyType;
-@property(assign,readonly) NSSet * deletedObjects;
-@property(assign,readonly) bool hasChanges;
-@property(assign,readonly) NSSet * insertedObjects;
-@property(assign,retain) id mergePolicy;
-@property(assign,copy) NSString * name;
-@property(assign,retain) NSManagedObjectContext * parentContext;
-@property(assign,retain) NSPersistentStoreCoordinator * persistentStoreCoordinator;
-@property(assign,readwrite) bool propagatesDeletesAtEndOfEvent;
-@property(assign,readonly) NSSet * registeredObjects;
-@property(assign,readwrite) bool retainsRegisteredObjects;
-@property(assign,readwrite) double stalenessInterval;
-@property(assign,retain) NSUndoManager * undoManager;
-@property(assign,readonly) NSSet * updatedObjects;
-@property(assign,readonly) NSMutableDictionary * userInfo;
+@property (readonly) unsigned long long concurrencyType;
+@property (nonatomic, readonly) NSSet *deletedObjects;
+@property (nonatomic, readonly) bool hasChanges;
+@property (nonatomic, readonly) NSSet *insertedObjects;
+@property (retain) id mergePolicy;
+@property (copy) NSString *name;
+@property (retain) NSManagedObjectContext *parentContext;
+@property (retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (nonatomic) bool propagatesDeletesAtEndOfEvent;
+@property (nonatomic, readonly) NSSet *registeredObjects;
+@property (nonatomic) bool retainsRegisteredObjects;
+@property double stalenessInterval;
+@property (nonatomic, retain) NSUndoManager *undoManager;
+@property (nonatomic, readonly) NSSet *updatedObjects;
+@property (nonatomic, readonly) NSMutableDictionary *userInfo;
 
 + (void)__Multithreading_Violation_AllThatIsLeftToUsIsHonor__;
 + (bool)_handleError:(id)arg1 withError:(id*)arg2;

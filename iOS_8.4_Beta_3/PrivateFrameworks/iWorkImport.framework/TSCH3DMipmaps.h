@@ -9,10 +9,10 @@
     int mWidth;
 }
 
-@property(assign,readonly) unsigned long long components;
-@property(assign,readonly) NSData * data;
-@property(assign,readonly) int height;
-@property(assign,readonly) int width;
+@property (nonatomic, readonly) unsigned long long components;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic, readonly) int height;
+@property (nonatomic, readonly) int width;
 
 + (id)mipmapPathFromPath:(id)arg1;
 + (struct CGSize { double x1; double x2; })mipmapSizeForTexturableSize:(struct CGSize { double x1; double x2; })arg1;

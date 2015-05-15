@@ -11,10 +11,10 @@
     NSMutableDictionary *_resourcesByRequestID;
 }
 
-@property(assign,readonly) SKUIClientContext * clientContext;
-@property(assign,readwrite) <SKUIResourceLoaderDelegate> * delegate;
-@property(getter=isIdle,assign,readonly) bool idle;
-@property(assign,readonly) NSOperationQueue * operationQueue;
+@property (nonatomic, readonly) SKUIClientContext *clientContext;
+@property (nonatomic) <SKUIResourceLoaderDelegate> *delegate;
+@property (getter=isIdle, nonatomic, readonly) bool idle;
+@property (nonatomic, readonly) NSOperationQueue *operationQueue;
 
 - (void).cxx_destruct;
 - (void)_finishLoadForRequest:(id)arg1 withResource:(id)arg2;

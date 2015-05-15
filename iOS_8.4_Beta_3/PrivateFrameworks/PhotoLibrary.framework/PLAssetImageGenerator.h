@@ -7,8 +7,8 @@
     bool _inUse;
 }
 
-@property(assign,retain) AVAssetImageGenerator * imageGenerator;
-@property(assign,readwrite) bool inUse;
+@property (nonatomic, retain) AVAssetImageGenerator *imageGenerator;
+@property (nonatomic) bool inUse;
 
 - (void)dealloc;
 - (id)imageGenerator;

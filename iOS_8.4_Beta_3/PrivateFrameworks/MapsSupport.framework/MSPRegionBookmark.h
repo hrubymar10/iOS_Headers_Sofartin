@@ -8,11 +8,11 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,readonly) bool hasRegion;
-@property(assign,readonly) bool hasTitle;
-@property(assign,retain) GEOMapRegion * region;
-@property(assign,retain) NSString * title;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, readonly) bool hasRegion;
+@property (nonatomic, readonly) bool hasTitle;
+@property (nonatomic, retain) GEOMapRegion *region;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

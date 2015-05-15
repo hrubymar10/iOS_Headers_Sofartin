@@ -12,17 +12,17 @@
     PUPhotoEditValuesCalculator *_valuesCalculator;
 }
 
-@property(assign,readonly) long long _modeType;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) UIImage * icon;
-@property(assign,copy) NSString * localizedName;
-@property(assign,readonly) PLPhotoEditMutableModel * photoEditModel;
-@property(assign,readonly) long long sliderStyle;
-@property(assign,copy) NSArray * submodes;
-@property(assign,readwrite) PUAdjustmentsMode * supermode;
-@property(getter=isToggleable,assign,readonly) bool toggleable;
-@property(assign,readwrite) bool useAccurateStatistics;
-@property(assign,readonly) PUPhotoEditValuesCalculator * valuesCalculator;
+@property (nonatomic, readonly) long long _modeType;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic, readonly) UIImage *icon;
+@property (nonatomic, readonly, copy) NSString *localizedName;
+@property (nonatomic, readonly) PLPhotoEditMutableModel *photoEditModel;
+@property (nonatomic, readonly) long long sliderStyle;
+@property (nonatomic, copy) NSArray *submodes;
+@property (nonatomic) PUAdjustmentsMode *supermode;
+@property (getter=isToggleable, nonatomic, readonly) bool toggleable;
+@property (nonatomic) bool useAccurateStatistics;
+@property (nonatomic, readonly) PUPhotoEditValuesCalculator *valuesCalculator;
 
 + (id)newVisibleModesWithPhotoEditModel:(id)arg1 valuesCalculator:(id)arg2;
 

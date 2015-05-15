@@ -7,8 +7,8 @@
     NSData *_sessionData;
 }
 
-@property(assign,retain) NSData * mescalData;
-@property(assign,retain) NSData * sessionData;
+@property (nonatomic, retain) NSData *mescalData;
+@property (nonatomic, retain) NSData *sessionData;
 
 - (void).cxx_destruct;
 - (bool)allowsAnonymousAccount;

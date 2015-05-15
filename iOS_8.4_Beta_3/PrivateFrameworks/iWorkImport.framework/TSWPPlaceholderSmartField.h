@@ -7,8 +7,8 @@
     NSString *_scriptTag;
 }
 
-@property(assign,readwrite) bool isLocalizable;
-@property(assign,copy) NSString * scriptTag;
+@property (nonatomic) bool isLocalizable;
+@property (nonatomic, copy) NSString *scriptTag;
 
 - (id)copyWithContext:(id)arg1;
 - (void)dealloc;

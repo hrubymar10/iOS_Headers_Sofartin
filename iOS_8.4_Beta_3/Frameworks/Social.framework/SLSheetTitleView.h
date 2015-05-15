@@ -9,7 +9,7 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_setupTitleLabel;

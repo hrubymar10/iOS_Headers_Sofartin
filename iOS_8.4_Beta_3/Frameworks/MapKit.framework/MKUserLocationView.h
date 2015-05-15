@@ -21,21 +21,21 @@
     long long _zoomDirection;
 }
 
-@property(assign,readwrite) bool allowsAccuracyRing;
-@property(assign,readwrite) bool allowsHeadingIndicator;
-@property(assign,readwrite) bool allowsPulse;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEffectsEnabled,assign,readwrite) bool effectsEnabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double headingAccuracy;
-@property(assign,readonly) double locationAccuracy;
-@property(assign,readwrite) float opacity;
-@property(assign,readwrite) double presentationCourse;
-@property(assign,readwrite) bool shouldDisplayHeading;
-@property(getter=isStale,assign,readonly) bool stale;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long zoomDirection;
+@property (nonatomic) bool allowsAccuracyRing;
+@property (nonatomic) bool allowsHeadingIndicator;
+@property (nonatomic) bool allowsPulse;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEffectsEnabled, nonatomic) bool effectsEnabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double headingAccuracy;
+@property (nonatomic, readonly) double locationAccuracy;
+@property (nonatomic) float opacity;
+@property (nonatomic) double presentationCourse;
+@property (nonatomic) bool shouldDisplayHeading;
+@property (getter=isStale, nonatomic, readonly) bool stale;
+@property (readonly) Class superclass;
+@property (nonatomic) long long zoomDirection;
 
 + (unsigned long long)_selectedZIndex;
 + (unsigned long long)_zIndex;

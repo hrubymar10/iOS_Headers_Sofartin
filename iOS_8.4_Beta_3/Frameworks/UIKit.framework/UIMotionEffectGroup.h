@@ -6,7 +6,7 @@
     NSArray *_motionEffects;
 }
 
-@property(assign,copy) NSArray * motionEffects;
+@property (nonatomic, copy) NSArray *motionEffects;
 
 - (id)_keyPathsAndRelativeValuesForPose:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

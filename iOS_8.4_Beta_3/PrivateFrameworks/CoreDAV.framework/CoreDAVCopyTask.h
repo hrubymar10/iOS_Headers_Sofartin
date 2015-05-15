@@ -4,7 +4,7 @@
 
 @interface CoreDAVCopyTask : CoreDAVCopyOrMoveTask
 
-@property(assign,readwrite) <CoreDAVCopyTaskDelegate> * delegate;
+@property (nonatomic) <CoreDAVCopyTaskDelegate> *delegate;
 
 - (void)_callBackToDelegateWithResponses:(id)arg1 error:(id)arg2;
 - (void)dealloc;

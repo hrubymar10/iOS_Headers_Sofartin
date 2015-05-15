@@ -13,10 +13,10 @@
     bool _showsColorDot;
 }
 
-@property(assign,readwrite) bool checked;
-@property(assign,readwrite) bool shouldAnimate;
-@property(assign,readwrite) bool showCheckmarksOnLeft;
-@property(assign,readwrite) bool showsColorDot;
+@property (nonatomic) bool checked;
+@property (nonatomic) bool shouldAnimate;
+@property (nonatomic) bool showCheckmarksOnLeft;
+@property (nonatomic) bool showsColorDot;
 
 - (void).cxx_destruct;
 - (bool)checked;

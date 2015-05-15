@@ -12,11 +12,11 @@
     PFUbiquityLocation *_ubiquityRootLocation;
 }
 
-@property(assign,readwrite) NSObject * delegate;
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,readonly) NSPersistentStore * store;
-@property(assign,readonly) NSString * storeName;
-@property(assign,readonly) PFUbiquityLocation * ubiquityRootLocation;
+@property NSObject *delegate;
+@property (nonatomic, readonly) NSString *localPeerID;
+@property (nonatomic, readonly) NSPersistentStore *store;
+@property (nonatomic, readonly) NSString *storeName;
+@property (nonatomic, readonly) PFUbiquityLocation *ubiquityRootLocation;
 
 - (void)cancel;
 - (void)dealloc;

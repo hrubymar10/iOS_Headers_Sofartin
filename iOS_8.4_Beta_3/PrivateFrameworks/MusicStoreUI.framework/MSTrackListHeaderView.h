@@ -16,9 +16,9 @@
     SUTouchCaptureView *_touchCaptureView;
 }
 
-@property(assign,retain) UIImage * artworkImage;
-@property(assign,readwrite) <MSTrackListHeaderDelegate> * delegate;
-@property(assign,retain) SUItem * item;
+@property (nonatomic, retain) UIImage *artworkImage;
+@property (nonatomic) <MSTrackListHeaderDelegate> *delegate;
+@property (nonatomic, retain) SUItem *item;
 
 - (void)_hidePurchaseConfirmation;
 - (id)_newGenericSmallFontLabel;

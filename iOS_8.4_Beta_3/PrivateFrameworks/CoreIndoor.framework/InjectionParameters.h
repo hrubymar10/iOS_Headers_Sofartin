@@ -13,12 +13,12 @@
     float _timeBetweenLocationsTime2dSeconds;
 }
 
-@property(assign,readwrite) bool hasTimeBetweenLocationsMultiphoneSeconds;
-@property(assign,readwrite) bool hasTimeBetweenLocationsPdrSeconds;
-@property(assign,readwrite) bool hasTimeBetweenLocationsTime2dSeconds;
-@property(assign,readwrite) float timeBetweenLocationsMultiphoneSeconds;
-@property(assign,readwrite) float timeBetweenLocationsPdrSeconds;
-@property(assign,readwrite) float timeBetweenLocationsTime2dSeconds;
+@property (nonatomic) bool hasTimeBetweenLocationsMultiphoneSeconds;
+@property (nonatomic) bool hasTimeBetweenLocationsPdrSeconds;
+@property (nonatomic) bool hasTimeBetweenLocationsTime2dSeconds;
+@property (nonatomic) float timeBetweenLocationsMultiphoneSeconds;
+@property (nonatomic) float timeBetweenLocationsPdrSeconds;
+@property (nonatomic) float timeBetweenLocationsTime2dSeconds;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

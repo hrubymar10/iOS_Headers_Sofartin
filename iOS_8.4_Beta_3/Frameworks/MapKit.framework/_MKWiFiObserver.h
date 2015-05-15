@@ -9,8 +9,8 @@
     struct __WiFiManagerClient { } *_wifiManager;
 }
 
-@property(assign,readwrite) <_MKWiFiObserverDelegate> * delegate;
-@property(getter=isWifiEnabled,assign,readonly) bool wifiEnabled;
+@property (nonatomic) <_MKWiFiObserverDelegate> *delegate;
+@property (getter=isWifiEnabled, nonatomic, readonly) bool wifiEnabled;
 
 - (void).cxx_destruct;
 - (void)_updateWiFiState:(bool)arg1;

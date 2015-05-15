@@ -7,12 +7,12 @@
     BLTBulletinDistributorSubscriber *_subscriber;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <BLTPingSubscribing> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) BLTBulletinDistributorSubscriber * subscriber;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <BLTPingSubscribing> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) BLTBulletinDistributorSubscriber *subscriber;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)delegate;

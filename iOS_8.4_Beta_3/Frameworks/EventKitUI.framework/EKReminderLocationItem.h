@@ -9,10 +9,10 @@
     int _type;
 }
 
-@property(assign,retain) NSDictionary * addressDictionary;
-@property(assign,readwrite) bool isLocationBeingDetermined;
-@property(assign,retain) EKStructuredLocation * location;
-@property(assign,readwrite) int type;
+@property (nonatomic, retain) NSDictionary *addressDictionary;
+@property (nonatomic) bool isLocationBeingDetermined;
+@property (nonatomic, retain) EKStructuredLocation *location;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (id)addressDictionary;

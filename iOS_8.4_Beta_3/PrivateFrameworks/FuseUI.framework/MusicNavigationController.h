@@ -6,7 +6,7 @@
     unsigned long long _searchOptions;
 }
 
-@property(assign,readwrite) unsigned long long searchOptions;
+@property (nonatomic) unsigned long long searchOptions;
 
 + (bool)automaticallyInstallSearchBarButtonItem;
 

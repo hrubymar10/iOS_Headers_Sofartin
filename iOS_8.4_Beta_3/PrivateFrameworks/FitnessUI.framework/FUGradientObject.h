@@ -7,8 +7,8 @@
     NSArray *_locations;
 }
 
-@property(assign,readonly) NSArray * colors;
-@property(assign,readonly) NSArray * locations;
+@property (nonatomic, readonly) NSArray *colors;
+@property (nonatomic, readonly) NSArray *locations;
 
 + (id)gradientWithColors:(id)arg1 locations:(id)arg2;
 + (id)gradientWithTopColor:(id)arg1 bottomColor:(id)arg2;

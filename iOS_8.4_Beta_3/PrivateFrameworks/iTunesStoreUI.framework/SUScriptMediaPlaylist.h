@@ -4,7 +4,7 @@
 
 @interface SUScriptMediaPlaylist : SUScriptMediaItemCollection
 
-@property(assign,readonly) MPMediaPlaylist * nativePlaylist;
+@property (nonatomic, readonly) MPMediaPlaylist *nativePlaylist;
 
 + (void)initialize;
 + (unsigned long long)nativePlaylistAttributesForScriptPlaylistAttributes:(id)arg1;

@@ -12,16 +12,16 @@
     NSString *_sourcePageURLString;
 }
 
-@property(assign,readonly) NSDate * dateAdded;
-@property(assign,copy) NSDate * dateOfLastSearch;
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) NSString * hostname;
-@property(assign,readonly) WBSOpenSearchDescription * openSearchDescription;
-@property(assign,copy) NSString * openSearchDescriptionURLString;
-@property(assign,readonly) NSString * searchURLTemplateString;
-@property(assign,copy) NSString * searchURLTemplateStringFromForm;
-@property(assign,readonly) NSString * sourcePageURLString;
-@property(assign,readonly) NSString * urlTemplateStringForSuggestionsInJSON;
+@property (nonatomic, readonly) NSDate *dateAdded;
+@property (nonatomic, copy) NSDate *dateOfLastSearch;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, readonly) NSString *hostname;
+@property (nonatomic, readonly) WBSOpenSearchDescription *openSearchDescription;
+@property (nonatomic, copy) NSString *openSearchDescriptionURLString;
+@property (nonatomic, readonly) NSString *searchURLTemplateString;
+@property (nonatomic, copy) NSString *searchURLTemplateStringFromForm;
+@property (nonatomic, readonly) NSString *sourcePageURLString;
+@property (nonatomic, readonly) NSString *urlTemplateStringForSuggestionsInJSON;
 
 - (void).cxx_destruct;
 - (id)dateAdded;

@@ -6,7 +6,7 @@
     CALayer *_mask;
 }
 
-@property(assign,retain) CALayer * mask;
+@property (nonatomic, retain) CALayer *mask;
 
 + (id)classFallbacksForKeyedArchiver;
 

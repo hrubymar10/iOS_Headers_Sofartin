@@ -19,18 +19,18 @@
     unsigned int _unassociatedSleepDur;
 }
 
-@property(assign,readwrite) unsigned int associatedSleepDur;
-@property(assign,readwrite) bool hasAssociatedSleepDur;
-@property(assign,readwrite) bool hasRoamDur;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasTotalDur;
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) bool hasUnassociatedSleepDur;
-@property(assign,readwrite) unsigned int roamDur;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int totalDur;
-@property(assign,readwrite) unsigned int type;
-@property(assign,readwrite) unsigned int unassociatedSleepDur;
+@property (nonatomic) unsigned int associatedSleepDur;
+@property (nonatomic) bool hasAssociatedSleepDur;
+@property (nonatomic) bool hasRoamDur;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasTotalDur;
+@property (nonatomic) bool hasType;
+@property (nonatomic) bool hasUnassociatedSleepDur;
+@property (nonatomic) unsigned int roamDur;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int totalDur;
+@property (nonatomic) unsigned int type;
+@property (nonatomic) unsigned int unassociatedSleepDur;
 
 - (unsigned int)associatedSleepDur;
 - (void)copyTo:(id)arg1;

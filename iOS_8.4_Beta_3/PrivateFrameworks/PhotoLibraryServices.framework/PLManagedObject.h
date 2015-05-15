@@ -4,10 +4,10 @@
 
 @interface PLManagedObject : NSManagedObject
 
-@property(assign,readonly) bool isRegisteredWithUserInterfaceContext;
-@property(assign,retain) PLPhotoLibrary * photoLibrary;
-@property(assign,copy) NSString * pl_shortDescription;
-@property(assign,copy) NSString * shortObjectIDURI;
+@property (nonatomic, readonly) bool isRegisteredWithUserInterfaceContext;
+@property (nonatomic, readonly, retain) PLPhotoLibrary *photoLibrary;
+@property (nonatomic, readonly, copy) NSString *pl_shortDescription;
+@property (nonatomic, readonly, copy) NSString *shortObjectIDURI;
 
 - (bool)isRegisteredWithUserInterfaceContext;
 - (id)photoLibrary;

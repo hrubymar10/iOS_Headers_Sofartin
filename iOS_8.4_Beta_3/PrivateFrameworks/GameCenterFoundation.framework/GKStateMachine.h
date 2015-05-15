@@ -10,10 +10,10 @@
     NSDictionary *_validTransitions;
 }
 
-@property(assign,retain) NSString * currentState;
-@property(assign,readwrite) <GKStateMachineDelegate> * delegate;
-@property(assign,readwrite) bool shouldLogStateTransitions;
-@property(assign,retain) NSDictionary * validTransitions;
+@property (retain) NSString *currentState;
+@property <GKStateMachineDelegate> *delegate;
+@property (nonatomic) bool shouldLogStateTransitions;
+@property (retain) NSDictionary *validTransitions;
 
 - (void)_performTransitionFromState:(id)arg1 toState:(id)arg2;
 - (bool)_setCurrentState:(id)arg1;

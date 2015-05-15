@@ -7,8 +7,8 @@
     double _progressLineWidth;
 }
 
-@property(assign,readwrite) double progressGap;
-@property(assign,readwrite) double progressLineWidth;
+@property (nonatomic) double progressGap;
+@property (nonatomic) double progressLineWidth;
 
 - (void)_updateAnimation;
 - (void)_willEnterForeground:(id)arg1;

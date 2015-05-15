@@ -6,7 +6,7 @@
     NSArray *_subresults;
 }
 
-@property(assign,readonly) NSArray * subresults;
+@property (readonly) NSArray *subresults;
 
 - (void)dealloc;
 - (id)initWithSubresults:(id)arg1;

@@ -13,14 +13,14 @@
     NSMutableDictionary *_userData;
 }
 
-@property(assign,retain) NSString * UTI;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,readwrite) ICCameraDevice * device;
-@property(assign,readwrite) bool locked;
-@property(assign,retain) NSDate * modificationDate;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) ICCameraFolder * parentFolder;
-@property(assign,retain) NSMutableDictionary * userData;
+@property (retain) NSString *UTI;
+@property (retain) NSDate *creationDate;
+@property ICCameraDevice *device;
+@property bool locked;
+@property (retain) NSDate *modificationDate;
+@property (retain) NSString *name;
+@property ICCameraFolder *parentFolder;
+@property (retain) NSMutableDictionary *userData;
 
 - (id)UTI;
 - (id)creationDate;

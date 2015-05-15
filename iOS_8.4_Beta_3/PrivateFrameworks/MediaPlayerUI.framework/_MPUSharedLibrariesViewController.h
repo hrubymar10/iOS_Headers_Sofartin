@@ -8,7 +8,7 @@
     bool _showsLocalLibrary;
 }
 
-@property(assign,readwrite) bool showsLocalLibrary;
+@property (nonatomic) bool showsLocalLibrary;
 
 + (id)viewControllerWithRestorationIdentifierPath:(id)arg1 coder:(id)arg2;
 

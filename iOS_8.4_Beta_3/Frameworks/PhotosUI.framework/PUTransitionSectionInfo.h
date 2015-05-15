@@ -14,12 +14,12 @@
     NSIndexSet *_visualSections;
 }
 
-@property(assign,retain) NSIndexPath * anchorRealPath;
-@property(assign,readwrite) struct PUGridCoordinates { long long x1; long long x2; } anchorShiftOffset;
-@property(assign,readwrite) long long contiguousRows;
-@property(assign,readwrite) long long transitionSection;
-@property(assign,retain) NSArray * visualRowStartMarkers;
-@property(assign,retain) NSIndexSet * visualSections;
+@property (nonatomic, retain) NSIndexPath *anchorRealPath;
+@property (nonatomic) struct PUGridCoordinates { long long x1; long long x2; } anchorShiftOffset;
+@property (nonatomic) long long contiguousRows;
+@property (nonatomic) long long transitionSection;
+@property (nonatomic, retain) NSArray *visualRowStartMarkers;
+@property (nonatomic, retain) NSIndexSet *visualSections;
 
 - (void).cxx_destruct;
 - (id)anchorRealPath;

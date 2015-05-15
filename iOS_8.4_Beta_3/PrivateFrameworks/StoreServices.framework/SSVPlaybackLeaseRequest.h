@@ -11,11 +11,11 @@
     NSURL *_url;
 }
 
-@property(getter=_URL,setter=_setURL:,assign,copy) NSURL * _URL;
-@property(getter=_URLBagKey,setter=_setURLBagKey:,assign,copy) NSString * _URLBagKey;
-@property(getter=_transactionType,setter=_setTransactionType:,assign,readwrite) unsigned int _transactionType;
-@property(assign,copy) NSDictionary * parameterValues;
-@property(assign,readwrite) bool startsLeaseSession;
+@property (getter=_URL, setter=_setURL:, nonatomic, copy) NSURL *_URL;
+@property (getter=_URLBagKey, setter=_setURLBagKey:, nonatomic, copy) NSString *_URLBagKey;
+@property (getter=_transactionType, setter=_setTransactionType:, nonatomic) unsigned int _transactionType;
+@property (nonatomic, copy) NSDictionary *parameterValues;
+@property (nonatomic) bool startsLeaseSession;
 
 - (void).cxx_destruct;
 - (id)_URL;

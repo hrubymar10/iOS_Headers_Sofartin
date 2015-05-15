@@ -8,7 +8,7 @@
     NSMutableArray *_stringTables;
 }
 
-@property(assign,readonly) NSString * localeName;
+@property (nonatomic, readonly) NSString *localeName;
 
 - (void).cxx_destruct;
 - (id)_stringTableForBundle:(id)arg1 tableName:(id)arg2;

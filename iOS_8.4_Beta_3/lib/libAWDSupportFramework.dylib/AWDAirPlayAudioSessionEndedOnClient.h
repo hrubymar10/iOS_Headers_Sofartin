@@ -20,20 +20,20 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int duration;
-@property(assign,readwrite) unsigned int futileRetransmits;
-@property(assign,readwrite) bool hasDuration;
-@property(assign,readwrite) bool hasFutileRetransmits;
-@property(assign,readwrite) bool hasReason;
-@property(assign,readwrite) bool hasRetransmits;
-@property(assign,readonly) bool hasSessionUUID;
-@property(assign,readwrite) bool hasSlowKeepAlives;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) int reason;
-@property(assign,readwrite) unsigned int retransmits;
-@property(assign,retain) NSString * sessionUUID;
-@property(assign,readwrite) unsigned int slowKeepAlives;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int duration;
+@property (nonatomic) unsigned int futileRetransmits;
+@property (nonatomic) bool hasDuration;
+@property (nonatomic) bool hasFutileRetransmits;
+@property (nonatomic) bool hasReason;
+@property (nonatomic) bool hasRetransmits;
+@property (nonatomic, readonly) bool hasSessionUUID;
+@property (nonatomic) bool hasSlowKeepAlives;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) int reason;
+@property (nonatomic) unsigned int retransmits;
+@property (nonatomic, retain) NSString *sessionUUID;
+@property (nonatomic) unsigned int slowKeepAlives;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

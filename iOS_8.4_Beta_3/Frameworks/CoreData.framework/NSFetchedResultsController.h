@@ -32,14 +32,14 @@
     id _sortKeys;
 }
 
-@property(assign,readonly) NSString * cacheName;
-@property(assign,readwrite) <NSFetchedResultsControllerDelegate> * delegate;
-@property(assign,readonly) NSFetchRequest * fetchRequest;
-@property(assign,readonly) NSArray * fetchedObjects;
-@property(assign,readonly) NSManagedObjectContext * managedObjectContext;
-@property(assign,readonly) NSArray * sectionIndexTitles;
-@property(assign,readonly) NSString * sectionNameKeyPath;
-@property(assign,readonly) NSArray * sections;
+@property (nonatomic, readonly) NSString *cacheName;
+@property (nonatomic) <NSFetchedResultsControllerDelegate> *delegate;
+@property (nonatomic, readonly) NSFetchRequest *fetchRequest;
+@property (nonatomic, readonly) NSArray *fetchedObjects;
+@property (nonatomic, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, readonly) NSArray *sectionIndexTitles;
+@property (nonatomic, readonly) NSString *sectionNameKeyPath;
+@property (nonatomic, readonly) NSArray *sections;
 
 + (id)_CoreDataSectionCachesPath;
 + (unsigned long long)_insertIndexForObject:(id)arg1 inArray:(id)arg2 lowIdx:(unsigned long long)arg3 highIdx:(unsigned long long)arg4 sortDescriptors:(id)arg5;

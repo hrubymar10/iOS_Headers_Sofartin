@@ -14,23 +14,23 @@
     int _statusCode;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * deviceSourceIdentifier;
-@property(assign,readonly) bool hasDeviceSourceIdentifier;
-@property(assign,readonly) bool hasRestoreIdentifier;
-@property(assign,readwrite) bool hasSequenceNumber;
-@property(assign,readwrite) bool hasStatusCode;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSData * restoreIdentifier;
-@property(assign,retain) NSMutableArray * restores;
-@property(assign,readwrite) long long sequenceNumber;
-@property(assign,readwrite) int statusCode;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *deviceSourceIdentifier;
+@property (nonatomic, readonly) bool hasDeviceSourceIdentifier;
+@property (nonatomic, readonly) bool hasRestoreIdentifier;
+@property (nonatomic) bool hasSequenceNumber;
+@property (nonatomic) bool hasStatusCode;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSData *restoreIdentifier;
+@property (nonatomic, retain) NSMutableArray *restores;
+@property (nonatomic) long long sequenceNumber;
+@property (nonatomic) int statusCode;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
 
 + (id)activationRestoreWithRestoreUUID:(id)arg1 sequenceNumber:(long long)arg2 statusCode:(int)arg3;
 + (id)persistentUserInfoKey;

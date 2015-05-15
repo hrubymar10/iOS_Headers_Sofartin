@@ -11,12 +11,12 @@
     NSDate *_startTime;
 }
 
-@property(assign,retain) NSDate * endTime;
-@property(assign,retain) NSString * externalMessage;
-@property(assign,readwrite) int externalState;
-@property(assign,retain) NSString * message;
-@property(assign,readwrite) int oofState;
-@property(assign,retain) NSDate * startTime;
+@property (nonatomic, retain) NSDate *endTime;
+@property (nonatomic, retain) NSString *externalMessage;
+@property (nonatomic) int externalState;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic) int oofState;
+@property (nonatomic, retain) NSDate *startTime;
 
 - (void).cxx_destruct;
 - (id)description;

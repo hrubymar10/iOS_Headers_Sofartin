@@ -7,8 +7,8 @@
     NSSet *_restrictedCalendarRowIDs;
 }
 
-@property(assign,readonly) NSArray * calendars;
-@property(assign,retain) NSSet * restrictedCalendarRowIDs;
+@property (nonatomic, readonly) NSArray *calendars;
+@property (nonatomic, retain) NSSet *restrictedCalendarRowIDs;
 
 + (bool)supportsSecureCoding;
 

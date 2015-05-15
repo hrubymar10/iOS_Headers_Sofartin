@@ -9,23 +9,23 @@
     WebScriptObject *_target;
 }
 
-@property(assign,retain) id action;
-@property(assign,retain) SUScriptCanvasContext * canvas;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } imageEdgeInsets;
-@property(assign,readwrite) bool loading;
-@property(assign,readwrite) bool shouldPerformDefaultAction;
-@property(assign,readonly) id showingConfirmation;
-@property(assign,retain) NSString * style;
-@property(assign,retain) NSString * subtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long tag;
-@property(assign,retain) WebScriptObject * target;
-@property(assign,retain) NSString * title;
+@property (retain) id action;
+@property (retain) SUScriptCanvasContext *canvas;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } imageEdgeInsets;
+@property bool loading;
+@property (nonatomic) bool shouldPerformDefaultAction;
+@property (readonly) id showingConfirmation;
+@property (retain) NSString *style;
+@property (retain) NSString *subtitle;
+@property (readonly) Class superclass;
+@property long long tag;
+@property (retain) WebScriptObject *target;
+@property (retain) NSString *title;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

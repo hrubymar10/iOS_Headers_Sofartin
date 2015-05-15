@@ -6,7 +6,7 @@
     id _internal;
 }
 
-@property(assign,retain) ALAssetsLibraryPrivate * internal;
+@property (nonatomic, retain) ALAssetsLibraryPrivate *internal;
 
 + (struct CGImage { }*)_aspectRatioThumbnailForAssetURL:(id)arg1;
 + (long long)_estimatedOutputFileLengthForVideoFilePath:(id)arg1 metadata:(id)arg2 exportPreset:(id)arg3 exportProperties:(id)arg4;

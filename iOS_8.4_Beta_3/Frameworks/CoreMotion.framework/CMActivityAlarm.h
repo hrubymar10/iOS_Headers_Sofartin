@@ -11,8 +11,8 @@
     struct __CFRunLoop { } *fRunLoop;
 }
 
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) unsigned int trigger;
+@property (nonatomic) double duration;
+@property (nonatomic) unsigned int trigger;
 
 + (bool)activityAlarmAvailable;
 + (id)activityAlarmInfo;

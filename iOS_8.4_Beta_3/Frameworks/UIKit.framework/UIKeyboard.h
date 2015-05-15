@@ -13,12 +13,12 @@
     bool m_typingDisabled;
 }
 
-@property(assign,readwrite) bool caretBlinks;
-@property(assign,readwrite) bool caretVisible;
-@property(assign,readwrite) long long keyboardIdiom;
-@property(getter=isMinimized,assign,readwrite) bool minimized;
-@property(assign,readwrite) bool showsCandidatesInline;
-@property(assign,readwrite) bool typingEnabled;
+@property (nonatomic) bool caretBlinks;
+@property (nonatomic) bool caretVisible;
+@property (nonatomic) long long keyboardIdiom;
+@property (getter=isMinimized, nonatomic) bool minimized;
+@property (nonatomic) bool showsCandidatesInline;
+@property (nonatomic) bool typingEnabled;
 
 + (void)_clearActiveKeyboard;
 + (id)activeKeyboard;

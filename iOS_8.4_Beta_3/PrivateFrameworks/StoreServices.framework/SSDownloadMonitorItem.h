@@ -11,16 +11,16 @@
     unsigned long long _transferTypes;
 }
 
-@property(assign,copy) NSString * clientIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long itemState;
-@property(assign,copy) NSString * representativeTitle;
-@property(assign,copy) NSString * statusString;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long totalNumberOfItems;
-@property(assign,readwrite) unsigned long long transferTypes;
+@property (nonatomic, copy) NSString *clientIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long itemState;
+@property (nonatomic, copy) NSString *representativeTitle;
+@property (nonatomic, copy) NSString *statusString;
+@property (readonly) Class superclass;
+@property (nonatomic) long long totalNumberOfItems;
+@property (nonatomic) unsigned long long transferTypes;
 
 - (id)clientIdentifier;
 - (id)copyXPCEncoding;

@@ -15,17 +15,17 @@
     NSString *_transactionLock;
 }
 
-@property(assign,readwrite) long long cacheSize;
-@property(assign,retain) NSString * cachedClassName;
-@property(assign,readwrite) struct sqlite3 { }* dbConnection;
-@property(assign,retain) NSString * dbLock;
-@property(assign,copy) NSString * filePath;
-@property(assign,retain) NSMutableDictionary * preparedDynamicStatements;
-@property(assign,retain) NSMutableDictionary * preparedStatements;
-@property(assign,retain) NSMutableDictionary * preparedUpdateStatements;
-@property(assign,readwrite) int transactionInProgress;
-@property(assign,retain) NSString * transactionLock;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * workQueue;
+@property long long cacheSize;
+@property (retain) NSString *cachedClassName;
+@property struct sqlite3 { }*dbConnection;
+@property (nonatomic, retain) NSString *dbLock;
+@property (nonatomic, copy) NSString *filePath;
+@property (retain) NSMutableDictionary *preparedDynamicStatements;
+@property (retain) NSMutableDictionary *preparedStatements;
+@property (retain) NSMutableDictionary *preparedUpdateStatements;
+@property int transactionInProgress;
+@property (retain) NSString *transactionLock;
+@property (readonly) NSObject<OS_dispatch_queue> *workQueue;
 
 + (id)masterTableForTable:(id)arg1 andType:(id)arg2;
 + (void)removeDBAtFilePath:(id)arg1;

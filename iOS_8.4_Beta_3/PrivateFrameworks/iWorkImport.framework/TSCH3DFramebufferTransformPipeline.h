@@ -8,8 +8,8 @@
     TSCH3DGLFramebuffer *mTarget;
 }
 
-@property(assign,retain) <TSCH3DPipelineLinkable> * source;
-@property(assign,retain) TSCH3DGLFramebuffer * target;
+@property (nonatomic, retain) <TSCH3DPipelineLinkable> *source;
+@property (nonatomic, retain) TSCH3DGLFramebuffer *target;
 
 - (void)dealloc;
 - (void)loadSource;

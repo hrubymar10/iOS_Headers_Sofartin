@@ -9,7 +9,7 @@
     UIDocumentInteractionController *_documentInteractionController;
 }
 
-@property(getter=isDefaultApp,assign,readwrite) bool defaultApp;
+@property (getter=isDefaultApp, nonatomic) bool defaultApp;
 
 + (long long)activityCategory;
 

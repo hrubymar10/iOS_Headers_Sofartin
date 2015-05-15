@@ -7,8 +7,8 @@
     TPRevealingRingView *_ringView;
 }
 
-@property(assign,readonly) TPRevealingRingView * backgroundRing;
-@property(assign,readonly) UILabel * label;
+@property (nonatomic, readonly) TPRevealingRingView *backgroundRing;
+@property (nonatomic, readonly) UILabel *label;
 
 - (id)backgroundRing;
 - (void)dealloc;

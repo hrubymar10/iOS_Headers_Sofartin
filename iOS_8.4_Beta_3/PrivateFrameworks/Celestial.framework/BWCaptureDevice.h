@@ -4,11 +4,11 @@
 
 @interface BWCaptureDevice : NSObject
 
-@property(assign,readonly) struct OpaqueCMClock { }* clock;
-@property(assign,readwrite) int maximumFrameRate;
-@property(assign,readwrite) int minimumFrameRate;
-@property(assign,readonly) int position;
-@property(assign,readonly) NSArray * supportedFormats;
+@property (nonatomic, readonly) struct OpaqueCMClock { }*clock;
+@property (nonatomic) int maximumFrameRate;
+@property (nonatomic) int minimumFrameRate;
+@property (nonatomic, readonly) int position;
+@property (nonatomic, readonly) NSArray *supportedFormats;
 
 - (long long)activeFormatIndex;
 - (void)captureStillImageBracketNow:(int)arg1 bracketSettings:(id)arg2;

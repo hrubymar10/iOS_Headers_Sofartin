@@ -8,7 +8,7 @@
     int _verbosity;
 }
 
-@property(assign,readwrite) int verbosity;
+@property (nonatomic) int verbosity;
 
 + (id)logger;
 

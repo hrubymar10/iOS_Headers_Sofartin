@@ -6,7 +6,7 @@
     NSKeyedArchiver *_archiver;
 }
 
-@property(assign,retain) NSKeyedArchiver * archiver;
+@property (nonatomic, retain) NSKeyedArchiver *archiver;
 
 - (void).cxx_destruct;
 - (void)_configure;

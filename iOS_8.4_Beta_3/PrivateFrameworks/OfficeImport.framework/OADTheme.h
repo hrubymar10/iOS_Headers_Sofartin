@@ -9,10 +9,10 @@
     OADDefaultProperties *mTextDefaults;
 }
 
-@property(assign,retain) OADBaseStyles * baseStyles;
-@property(assign,retain) OADDefaultProperties * lineDefaults;
-@property(assign,retain) OADDefaultProperties * shapeDefaults;
-@property(assign,retain) OADDefaultProperties * textDefaults;
+@property (nonatomic, retain) OADBaseStyles *baseStyles;
+@property (nonatomic, retain) OADDefaultProperties *lineDefaults;
+@property (nonatomic, retain) OADDefaultProperties *shapeDefaults;
+@property (nonatomic, retain) OADDefaultProperties *textDefaults;
 
 - (void)addDefaults;
 - (id)addLineDefaults;

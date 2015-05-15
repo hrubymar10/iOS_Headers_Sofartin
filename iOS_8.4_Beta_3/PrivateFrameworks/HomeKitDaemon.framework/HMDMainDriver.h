@@ -17,18 +17,18 @@
     HMDXpcServer *_xpcServer;
 }
 
-@property(assign,retain) HMDAccessoryBrowser * accessoryBrowser;
-@property(assign,retain) HMDAccessoryManager * accessoryManager;
-@property(assign,retain) HMDCloudDataSyncManager * cloudDataSyncManager;
-@property(assign,retain) HMDHomeManager * homeManager;
-@property(assign,retain) HMDIdentityRegistry * identityRegistry;
-@property(assign,retain) HMDIDSMessageTransport * idsTransport;
-@property(assign,retain) HMDIDSMessageDispatcher * messageDispatcher;
-@property(assign,retain) HMDMessageFilterChain * msgFilterChain;
-@property(assign,retain) HMMessageDispatcher * notificationRelayDispatcher;
-@property(assign,retain) NSMutableArray * unpairedAccessories;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
-@property(assign,retain) HMDXpcServer * xpcServer;
+@property (nonatomic, retain) HMDAccessoryBrowser *accessoryBrowser;
+@property (nonatomic, retain) HMDAccessoryManager *accessoryManager;
+@property (nonatomic, retain) HMDCloudDataSyncManager *cloudDataSyncManager;
+@property (nonatomic, retain) HMDHomeManager *homeManager;
+@property (nonatomic, retain) HMDIdentityRegistry *identityRegistry;
+@property (nonatomic, retain) HMDIDSMessageTransport *idsTransport;
+@property (nonatomic, retain) HMDIDSMessageDispatcher *messageDispatcher;
+@property (nonatomic, retain) HMDMessageFilterChain *msgFilterChain;
+@property (nonatomic, retain) HMMessageDispatcher *notificationRelayDispatcher;
+@property (nonatomic, retain) NSMutableArray *unpairedAccessories;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
+@property (nonatomic, retain) HMDXpcServer *xpcServer;
 
 + (id)driver;
 

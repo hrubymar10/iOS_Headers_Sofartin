@@ -15,10 +15,10 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,readwrite) long long contentPosition;
-@property(assign,readonly) UILabel * explanationLabel;
-@property(assign,readonly) UILabel * titleLabel;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic) long long contentPosition;
+@property (nonatomic, readonly) UILabel *explanationLabel;
+@property (nonatomic, readonly) UILabel *titleLabel;
 
 + (id)explanationAttributedStringWithString:(id)arg1;
 + (id)titleAttributedStringWithString:(id)arg1;

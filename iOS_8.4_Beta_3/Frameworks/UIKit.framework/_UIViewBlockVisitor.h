@@ -6,7 +6,7 @@
     id _visitorBlock;
 }
 
-@property(assign,copy) id visitorBlock;
+@property (nonatomic, copy) id visitorBlock;
 
 - (bool)_visitView:(id)arg1;
 - (void)dealloc;

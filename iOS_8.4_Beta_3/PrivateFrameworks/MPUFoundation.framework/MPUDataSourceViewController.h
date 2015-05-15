@@ -9,16 +9,16 @@
     bool _visible;
 }
 
-@property(assign,retain) MPUDataSource * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class objectRestorationClass;
-@property(assign,readonly) MPUQueryDataSource * queryDataSource;
-@property(assign,readonly) <UIStateRestoring> * restorationParent;
-@property(assign,readwrite) bool shouldReloadWhenVisible;
-@property(assign,readonly) Class superclass;
-@property(getter=isVisible,assign,readwrite) bool visible;
+@property (nonatomic, retain) MPUDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) Class objectRestorationClass;
+@property (nonatomic, readonly) MPUQueryDataSource *queryDataSource;
+@property (nonatomic, readonly) <UIStateRestoring> *restorationParent;
+@property (nonatomic) bool shouldReloadWhenVisible;
+@property (readonly) Class superclass;
+@property (getter=isVisible, nonatomic) bool visible;
 
 + (id)viewControllerWithRestorationIdentifierPath:(id)arg1 coder:(id)arg2;
 

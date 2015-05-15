@@ -17,26 +17,26 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,readwrite) bool activated;
-@property(assign,readwrite) unsigned long long activeMessageCount;
-@property(assign,retain) NSObject<OS_dispatch_group> * activeMessageTracker;
-@property(getter=isAuthorizedForHomeDataAccess,assign,readonly) bool authorizedForHomeDataAccess;
-@property(assign,retain) NSString * clientName;
-@property(assign,readonly) int clientPid;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEntitledForAPIAccess,assign,readonly) bool entitledForAPIAccess;
-@property(getter=isEntitledForBackgroundMode,assign,readonly) bool entitledForBackgroundMode;
-@property(getter=isEntitledForSPIAccess,assign,readonly) bool entitledForSPIAccess;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * name;
-@property(assign,retain) NSMutableSet * pendingRequests;
-@property(assign,readwrite) bool ready;
-@property(assign,retain) HMMessageDispatcher * recvDispatcher;
-@property(assign,readonly) id remoteProxy;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
-@property(assign,readwrite) NSXPCConnection * xpcConnection;
+@property (nonatomic) bool activated;
+@property (nonatomic) unsigned long long activeMessageCount;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *activeMessageTracker;
+@property (getter=isAuthorizedForHomeDataAccess, nonatomic, readonly) bool authorizedForHomeDataAccess;
+@property (nonatomic, retain) NSString *clientName;
+@property (nonatomic, readonly) int clientPid;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEntitledForAPIAccess, nonatomic, readonly) bool entitledForAPIAccess;
+@property (getter=isEntitledForBackgroundMode, nonatomic, readonly) bool entitledForBackgroundMode;
+@property (getter=isEntitledForSPIAccess, nonatomic, readonly) bool entitledForSPIAccess;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, retain) NSMutableSet *pendingRequests;
+@property (nonatomic) bool ready;
+@property (nonatomic, retain) HMMessageDispatcher *recvDispatcher;
+@property (nonatomic, readonly) id remoteProxy;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
+@property (nonatomic) NSXPCConnection *xpcConnection;
 
 - (void).cxx_destruct;
 - (void)activate;

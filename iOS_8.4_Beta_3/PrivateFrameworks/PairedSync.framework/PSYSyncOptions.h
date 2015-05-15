@@ -9,10 +9,10 @@
     NSUUID *_transactionID;
 }
 
-@property(assign,readwrite) bool dryRun;
-@property(assign,readwrite) bool terminateDuringDryRun;
-@property(assign,retain) PSYTestInput * testInput;
-@property(assign,copy) NSUUID * transactionID;
+@property (nonatomic) bool dryRun;
+@property (nonatomic) bool terminateDuringDryRun;
+@property (nonatomic, retain) PSYTestInput *testInput;
+@property (nonatomic, copy) NSUUID *transactionID;
 
 + (bool)supportsSecureCoding;
 

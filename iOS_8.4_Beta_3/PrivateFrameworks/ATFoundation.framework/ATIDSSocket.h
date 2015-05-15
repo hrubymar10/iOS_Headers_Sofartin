@@ -11,9 +11,9 @@
     unsigned int _wifiWriteBufferSize;
 }
 
-@property(assign,readonly) IDSDevice * device;
-@property(assign,readonly) long long priority;
-@property(assign,readonly) ATIDSService * service;
+@property (nonatomic, readonly) IDSDevice *device;
+@property (nonatomic, readonly) long long priority;
+@property (nonatomic, readonly) ATIDSService *service;
 
 - (void).cxx_destruct;
 - (void)addTransportUpgradeException;

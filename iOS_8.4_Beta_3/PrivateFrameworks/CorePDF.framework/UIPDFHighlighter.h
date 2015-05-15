@@ -13,7 +13,7 @@
     double inset;
 }
 
-@property(assign,readwrite) double inset;
+@property (nonatomic) double inset;
 
 - (void)addAnimation:(id)arg1;
 - (void)addHighlightFor:(id)arg1 to:(id)arg2 animated:(bool)arg3;

@@ -17,16 +17,16 @@
     NSThread *_thread;
 }
 
-@property(assign,retain) NSData * auditToken;
-@property(assign,retain) NSString * bundleIdentifier;
-@property(assign,retain) NSString * bundleVersion;
-@property(assign,readonly) GEOTileKeyMap * cachedData;
-@property(assign,readonly) GEOTileKeyMap * cachedEtags;
-@property(assign,retain) id context;
-@property(assign,retain) <GEOTileRequesterDelegate> * delegate;
-@property(assign,readonly) GEOTileKeyList * keyList;
-@property(assign,readwrite) bool requireWiFi;
-@property(assign,retain) NSThread * thread;
+@property (nonatomic, retain) NSData *auditToken;
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic, retain) NSString *bundleVersion;
+@property (nonatomic, readonly) GEOTileKeyMap *cachedData;
+@property (nonatomic, readonly) GEOTileKeyMap *cachedEtags;
+@property (nonatomic, retain) id context;
+@property (nonatomic, retain) <GEOTileRequesterDelegate> *delegate;
+@property (nonatomic, readonly) GEOTileKeyList *keyList;
+@property (nonatomic) bool requireWiFi;
+@property (nonatomic, retain) NSThread *thread;
 
 + (unsigned long long)expiringTilesetsCount;
 + (struct { unsigned int x1; double x2; }*)newExpiringTilesets;

@@ -4,15 +4,15 @@
 
 @interface UIApplicationSceneTransitionContext : FBSSceneTransitionContext
 
-@property(assign,readwrite) bool allowCPUThrottling;
-@property(assign,readwrite) double execTime;
-@property(assign,readwrite) bool forTesting;
-@property(getter=_lifecycleActionType,setter=_setLifecycleActionType:,assign,readwrite) unsigned long long lifecycleActionType;
-@property(assign,retain) NSDictionary * payload;
-@property(assign,readwrite) bool runWatchdogIndependently;
-@property(assign,readwrite) bool safeMode;
-@property(assign,readwrite) double userLaunchEventTime;
-@property(assign,readwrite) double watchdogExtension;
+@property (nonatomic) bool allowCPUThrottling;
+@property (nonatomic) double execTime;
+@property (nonatomic) bool forTesting;
+@property (getter=_lifecycleActionType, setter=_setLifecycleActionType:, nonatomic) unsigned long long lifecycleActionType;
+@property (nonatomic, retain) NSDictionary *payload;
+@property (nonatomic) bool runWatchdogIndependently;
+@property (nonatomic) bool safeMode;
+@property (nonatomic) double userLaunchEventTime;
+@property (nonatomic) double watchdogExtension;
 
 - (unsigned long long)_lifecycleActionType;
 - (void)_setLifecycleActionType:(unsigned long long)arg1;

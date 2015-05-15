@@ -9,10 +9,10 @@
     NSOrderedSet *_orderedOcclusions;
 }
 
-@property(assign,copy) NSString * key;
-@property(assign,readwrite) double level;
-@property(assign,copy) NSSet * occlusions;
-@property(assign,copy) NSOrderedSet * orderedOcclusions;
+@property (nonatomic, readonly, copy) NSString *key;
+@property (nonatomic) double level;
+@property (nonatomic, copy) NSSet *occlusions;
+@property (nonatomic, readonly, copy) NSOrderedSet *orderedOcclusions;
 
 - (void)dealloc;
 - (id)description;

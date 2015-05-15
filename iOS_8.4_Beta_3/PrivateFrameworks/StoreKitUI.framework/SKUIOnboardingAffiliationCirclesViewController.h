@@ -15,16 +15,16 @@
     bool _needsReloadOnDidAppear;
 }
 
-@property(assign,copy) NSArray * affiliationItems;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIOnboardingAffiliationCirclesDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIView * footerView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIOnboardingInstructionsView * instructionsView;
-@property(assign,readonly) double maximumCircleDiameter;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSArray *affiliationItems;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIOnboardingAffiliationCirclesDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIView *footerView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIOnboardingInstructionsView *instructionsView;
+@property (nonatomic, readonly) double maximumCircleDiameter;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_cancelDeletionTimer;

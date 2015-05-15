@@ -11,16 +11,16 @@
     unsigned long long _size;
 }
 
-@property(assign,readonly) NSString * className;
-@property(assign,readonly) long long code;
-@property(assign,readonly) NSString * encoding;
-@property(assign,readonly) unsigned long long flags;
-@property(getter=isFloatingPointNumber,assign,readonly) bool floatingPointNumber;
-@property(getter=isIntegerNumber,assign,readonly) bool integerNumber;
-@property(assign,readonly) NSString * name;
-@property(getter=isNumber,assign,readonly) bool number;
-@property(getter=isObject,assign,readonly) bool object;
-@property(assign,readonly) unsigned long long size;
+@property (nonatomic, readonly) NSString *className;
+@property (nonatomic, readonly) long long code;
+@property (nonatomic, readonly) NSString *encoding;
+@property (nonatomic, readonly) unsigned long long flags;
+@property (getter=isFloatingPointNumber, nonatomic, readonly) bool floatingPointNumber;
+@property (getter=isIntegerNumber, nonatomic, readonly) bool integerNumber;
+@property (nonatomic, readonly) NSString *name;
+@property (getter=isNumber, nonatomic, readonly) bool number;
+@property (getter=isObject, nonatomic, readonly) bool object;
+@property (nonatomic, readonly) unsigned long long size;
 
 + (id)typeForEncoding:(const char *)arg1;
 + (id)typeForValue:(id)arg1;

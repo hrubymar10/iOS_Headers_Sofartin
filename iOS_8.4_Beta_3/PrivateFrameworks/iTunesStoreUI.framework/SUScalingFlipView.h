@@ -30,9 +30,9 @@
     } _toFrame;
 }
 
-@property(assign,readwrite) <SUScalingFlipViewDelegate> * delegate;
-@property(assign,readwrite) long long direction;
-@property(assign,readwrite) double duration;
+@property (nonatomic) <SUScalingFlipViewDelegate> *delegate;
+@property (nonatomic) long long direction;
+@property (nonatomic) double duration;
 
 - (id)_backLayerAnimation;
 - (id)_fixedAnimationForAnimation:(id)arg1;

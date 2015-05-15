@@ -14,15 +14,15 @@
     RUTrackDownloadView *_trackDownloadView;
 }
 
-@property(setter=setAVItem:,assign,retain) MPAVItem * avItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUStationTrackInfoViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * stationHash;
-@property(assign,readwrite) long long stationID;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) UIViewController * trackDownloadPresentingViewController;
+@property (setter=setAVItem:, nonatomic, retain) MPAVItem *avItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUStationTrackInfoViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *stationHash;
+@property (nonatomic) long long stationID;
+@property (readonly) Class superclass;
+@property (nonatomic) UIViewController *trackDownloadPresentingViewController;
 
 + (id)_albumLabelFont;
 + (id)_artistLabelFont;

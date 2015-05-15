@@ -8,9 +8,9 @@
     TPPageMaster *_pageMaster;
 }
 
-@property(assign,readwrite) int fragmentIndex;
-@property(assign,readwrite) int headerFooterType;
-@property(assign,retain) TPPageMaster * pageMaster;
+@property (nonatomic) int fragmentIndex;
+@property (nonatomic) int headerFooterType;
+@property (nonatomic, retain) TPPageMaster *pageMaster;
 
 - (void)dealloc;
 - (int)fragmentIndex;

@@ -6,11 +6,11 @@
     UIBarButtonItem *_doneButton;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIBarButtonItem * doneButton;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIBarButtonItem *doneButton;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_frecencySearch;
 - (void)_updateNavigationButton;

@@ -6,7 +6,7 @@
     NSNumber *_storeID;
 }
 
-@property(assign,copy) NSNumber * storeID;
+@property (nonatomic, copy) NSNumber *storeID;
 
 + (id)metadataKey;
 

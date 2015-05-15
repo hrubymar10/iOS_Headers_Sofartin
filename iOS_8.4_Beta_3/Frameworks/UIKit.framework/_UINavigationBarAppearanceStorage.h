@@ -19,25 +19,25 @@
     NSMutableDictionary *titleVerticalAdjustmentsForBarMetrics;
 }
 
-@property(assign,readonly) _UIBarButtonItemAppearanceStorage * _barButtonAppearanceStorage;
-@property(assign,readwrite) long long activeBarMetrics;
-@property(assign,retain) UIImage * backIndicatorImage;
-@property(assign,retain) NSNumber * backIndicatorLeftMargin;
-@property(assign,retain) UIImage * backIndicatorTransitionMaskImage;
-@property(assign,retain) NSString * backdropViewGroupName;
-@property(assign,readonly) UIImage * backgroundImage;
-@property(assign,readonly) _UIBarButtonItemAppearanceStorage * barButtonAppearanceStorage;
-@property(assign,readonly) UIImage * cardBackgroundImage;
-@property(assign,readonly) UIImage * condensedBackgroundImage;
-@property(assign,readwrite) long long defaultBarMetrics;
-@property(assign,readwrite) bool deferShadowToSearchBar;
-@property(assign,readwrite) bool hidesShadow;
-@property(assign,readonly) UIImage * miniBackgroundImage;
-@property(assign,readonly) UIImage * miniPromptBackgroundImage;
-@property(assign,readonly) UIImage * promptBackgroundImage;
-@property(assign,readwrite) bool reversesShadowOffset;
-@property(assign,retain) UIImage * shadowImage;
-@property(assign,copy) NSDictionary * textAttributes;
+@property (nonatomic, readonly) _UIBarButtonItemAppearanceStorage *_barButtonAppearanceStorage;
+@property (nonatomic) long long activeBarMetrics;
+@property (nonatomic, retain) UIImage *backIndicatorImage;
+@property (nonatomic, retain) NSNumber *backIndicatorLeftMargin;
+@property (nonatomic, retain) UIImage *backIndicatorTransitionMaskImage;
+@property (nonatomic, retain) NSString *backdropViewGroupName;
+@property (nonatomic, readonly) UIImage *backgroundImage;
+@property (nonatomic, readonly) _UIBarButtonItemAppearanceStorage *barButtonAppearanceStorage;
+@property (nonatomic, readonly) UIImage *cardBackgroundImage;
+@property (nonatomic, readonly) UIImage *condensedBackgroundImage;
+@property (nonatomic) long long defaultBarMetrics;
+@property (nonatomic) bool deferShadowToSearchBar;
+@property (nonatomic) bool hidesShadow;
+@property (nonatomic, readonly) UIImage *miniBackgroundImage;
+@property (nonatomic, readonly) UIImage *miniPromptBackgroundImage;
+@property (nonatomic, readonly) UIImage *promptBackgroundImage;
+@property (nonatomic) bool reversesShadowOffset;
+@property (nonatomic, retain) UIImage *shadowImage;
+@property (nonatomic, copy) NSDictionary *textAttributes;
 
 + (long long)typicalBarPosition;
 

@@ -14,15 +14,15 @@
     NSString *_uuid;
 }
 
-@property(assign,readwrite) id accessibilityContainer;
-@property(assign,readwrite) unsigned int contextId;
-@property(assign,readwrite) bool deniesDirectAppConnection;
-@property(assign,readwrite) unsigned int machPort;
-@property(assign,readwrite) bool onClientSide;
-@property(assign,readwrite) <AXRemoteElementChildrenDelegate> * remoteChildrenDelegate;
-@property(assign,readwrite) int remotePid;
-@property(assign,retain) NSString * uuid;
-@property(assign,readonly) unsigned long long uuidHash;
+@property (nonatomic) id accessibilityContainer;
+@property (nonatomic) unsigned int contextId;
+@property (nonatomic) bool deniesDirectAppConnection;
+@property (nonatomic) unsigned int machPort;
+@property (nonatomic) bool onClientSide;
+@property (nonatomic) <AXRemoteElementChildrenDelegate> *remoteChildrenDelegate;
+@property (nonatomic) int remotePid;
+@property (nonatomic, retain) NSString *uuid;
+@property (nonatomic, readonly) unsigned long long uuidHash;
 
 + (void)initialize;
 + (bool)registerRemoteElement:(id)arg1;

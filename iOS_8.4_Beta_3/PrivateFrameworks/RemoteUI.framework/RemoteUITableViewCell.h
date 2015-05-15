@@ -13,10 +13,10 @@
     UIView *_remoteUIAccessoryView;
 }
 
-@property(assign,readwrite) bool forceFullSizeDetailLabel;
-@property(assign,readwrite) bool leftAlignDetailLabel;
-@property(assign,readwrite) long long remoteUIAccessoryType;
-@property(assign,retain) UIView * remoteUIAccessoryView;
+@property (nonatomic) bool forceFullSizeDetailLabel;
+@property (nonatomic) bool leftAlignDetailLabel;
+@property (nonatomic) long long remoteUIAccessoryType;
+@property (nonatomic, retain) UIView *remoteUIAccessoryView;
 
 - (void).cxx_destruct;
 - (void)_accessoriesChanged;

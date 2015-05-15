@@ -26,9 +26,9 @@
     NSPredicate *_searchPredicate;
 }
 
-@property(assign,retain) AccountUtilities * accountUtilities;
-@property(assign,readonly) bool isIndexing;
-@property(assign,retain) NSManagedObjectContext * managedObjectContext;
+@property (nonatomic, retain) AccountUtilities *accountUtilities;
+@property (nonatomic, readonly) bool isIndexing;
+@property (nonatomic, readonly, retain) NSManagedObjectContext *managedObjectContext;
 
 + (void)clearTestsNotesRootPath;
 + (bool)databaseIsCorrupt:(id)arg1;

@@ -17,10 +17,10 @@
     bool _validCTag;
 }
 
-@property(assign,readonly) NSSet * bulkChangeResponses;
-@property(assign,readonly) NSDictionary * hrefsToModDeleteActions;
-@property(assign,readonly) NSString * nextCTag;
-@property(assign,readonly) NSDictionary * uuidsToAddActions;
+@property (nonatomic, readonly) NSSet *bulkChangeResponses;
+@property (nonatomic, readonly) NSDictionary *hrefsToModDeleteActions;
+@property (nonatomic, readonly) NSString *nextCTag;
+@property (nonatomic, readonly) NSDictionary *uuidsToAddActions;
 
 - (id)additionalHeaderValues;
 - (id)bulkChangeResponses;

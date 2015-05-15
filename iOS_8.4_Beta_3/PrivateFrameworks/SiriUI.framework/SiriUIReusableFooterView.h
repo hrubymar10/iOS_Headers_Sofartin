@@ -4,11 +4,11 @@
 
 @interface SiriUIReusableFooterView : UICollectionReusableView <SiriUIReusableView>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) SiriUISnippetViewController * snippetViewController;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) SiriUISnippetViewController *snippetViewController;
+@property (readonly) Class superclass;
 
 + (double)defaultHeight;
 + (id)elementKind;

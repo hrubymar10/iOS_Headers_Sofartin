@@ -10,11 +10,11 @@
     unsigned long long _year;
 }
 
-@property(assign,readonly) NSMutableSet * _moments;
-@property(assign,readonly) unsigned long long month;
-@property(assign,readonly) unsigned long long numberOfAssets;
-@property(assign,readonly) unsigned long long numberOfMoments;
-@property(assign,readonly) unsigned long long year;
+@property (nonatomic, readonly) NSMutableSet *_moments;
+@property (nonatomic, readonly) unsigned long long month;
+@property (nonatomic, readonly) unsigned long long numberOfAssets;
+@property (nonatomic, readonly) unsigned long long numberOfMoments;
+@property (nonatomic, readonly) unsigned long long year;
 
 - (id)_moments;
 - (void)addMoment:(id)arg1;

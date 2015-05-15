@@ -13,13 +13,13 @@
     int m_orientation;
 }
 
-@property(assign,readwrite) bool activeFlattened;
-@property(assign,readwrite) bool alertFlattened;
-@property(assign,readwrite) bool animating;
-@property(assign,readonly) UITextRangeView * hostView;
-@property(assign,readwrite) bool isDotted;
-@property(assign,readwrite) bool navigationTransitionFlattened;
-@property(assign,readwrite) int orientation;
+@property (nonatomic) bool activeFlattened;
+@property (nonatomic) bool alertFlattened;
+@property (nonatomic) bool animating;
+@property (nonatomic, readonly) UITextRangeView *hostView;
+@property (nonatomic) bool isDotted;
+@property (nonatomic) bool navigationTransitionFlattened;
+@property (nonatomic) int orientation;
 
 + (id)_grabberDot;
 

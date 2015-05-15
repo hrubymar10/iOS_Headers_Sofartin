@@ -8,10 +8,10 @@
     UIColor *_strokeColor;
 }
 
-@property(assign,readonly) UIColor * fillColor;
-@property(assign,readonly) UIBezierPath * path;
-@property(assign,readonly) CAShapeLayer * shapeLayer;
-@property(assign,readonly) UIColor * strokeColor;
+@property (nonatomic, readonly) UIColor *fillColor;
+@property (nonatomic, readonly) UIBezierPath *path;
+@property (nonatomic, readonly) CAShapeLayer *shapeLayer;
+@property (nonatomic, readonly) UIColor *strokeColor;
 
 + (Class)layerClass;
 

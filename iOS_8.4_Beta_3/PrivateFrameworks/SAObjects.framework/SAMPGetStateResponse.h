@@ -4,16 +4,16 @@
 
 @interface SAMPGetStateResponse : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAMPMediaItem * listeningToItem;
-@property(assign,copy) NSNumber * listeningToMusicApplication;
-@property(assign,copy) NSString * refId;
-@property(assign,copy) NSString * source;
-@property(assign,readwrite) int state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAMPMediaItem *listeningToItem;
+@property (nonatomic, copy) NSNumber *listeningToMusicApplication;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic, copy) NSString *source;
+@property (nonatomic) int state;
+@property (readonly) Class superclass;
 
 + (id)getStateResponse;
 + (id)getStateResponseWithDictionary:(id)arg1 context:(id)arg2;

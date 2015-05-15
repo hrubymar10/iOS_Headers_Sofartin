@@ -7,8 +7,8 @@
     bool _showsSeparator;
 }
 
-@property(assign,retain) UIImage * actionImage;
-@property(assign,readwrite) bool showsSeparator;
+@property (nonatomic, retain) UIImage *actionImage;
+@property (nonatomic) bool showsSeparator;
 
 - (void).cxx_destruct;
 - (id)actionImage;

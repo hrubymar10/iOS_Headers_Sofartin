@@ -4,8 +4,8 @@
 
 @interface SAUISnippetAttributeOpened : SAUISnippetInteraction
 
-@property(assign,copy) NSString * attributeName;
-@property(assign,copy) NSString * attributeValue;
+@property (nonatomic, copy) NSString *attributeName;
+@property (nonatomic, copy) NSString *attributeValue;
 
 + (id)snippetAttributeOpened;
 + (id)snippetAttributeOpenedWithDictionary:(id)arg1 context:(id)arg2;

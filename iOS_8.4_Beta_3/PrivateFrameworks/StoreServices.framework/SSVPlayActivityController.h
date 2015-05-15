@@ -17,7 +17,7 @@
     unsigned long long _writingStyle;
 }
 
-@property(assign,readonly) unsigned long long writingStyle;
+@property (nonatomic, readonly) unsigned long long writingStyle;
 
 + (id)_requiredEndpointIdentifiers;
 

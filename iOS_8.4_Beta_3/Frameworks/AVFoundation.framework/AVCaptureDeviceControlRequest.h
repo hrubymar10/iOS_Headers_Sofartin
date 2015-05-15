@@ -8,9 +8,9 @@
     int _requestID;
 }
 
-@property(assign,copy) id completionBlock;
-@property(assign,readwrite) int errorCode;
-@property(assign,readonly) int requestID;
+@property (nonatomic, readonly, copy) id completionBlock;
+@property (nonatomic) int errorCode;
+@property (nonatomic, readonly) int requestID;
 
 + (id)deviceControlRequestWithCompletionBlock:(id)arg1;
 

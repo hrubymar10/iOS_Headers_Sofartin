@@ -11,12 +11,12 @@
     unsigned long long _type2Errors;
 }
 
-@property(assign,readwrite) unsigned long long admissions;
-@property(assign,readwrite) unsigned long long negativeHits;
-@property(assign,readwrite) unsigned long long positiveHits;
-@property(assign,readwrite) unsigned long long rejections;
-@property(assign,readwrite) unsigned long long type1Errors;
-@property(assign,readwrite) unsigned long long type2Errors;
+@property unsigned long long admissions;
+@property unsigned long long negativeHits;
+@property unsigned long long positiveHits;
+@property unsigned long long rejections;
+@property unsigned long long type1Errors;
+@property unsigned long long type2Errors;
 
 - (unsigned long long)admissions;
 - (id)init;

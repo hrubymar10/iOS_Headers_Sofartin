@@ -10,9 +10,9 @@
     UILabel *_textLabel;
 }
 
-@property(getter=isDestructiveText,assign,readwrite) bool destructiveText;
-@property(assign,copy) NSString * text;
-@property(assign,readwrite) long long textAlignment;
+@property (getter=isDestructiveText, nonatomic) bool destructiveText;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic) long long textAlignment;
 
 - (void).cxx_destruct;
 - (void)_updateSubviews;

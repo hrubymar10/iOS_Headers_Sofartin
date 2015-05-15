@@ -9,9 +9,9 @@
     struct __SCNetworkReachability { } *_reachabilityRef;
 }
 
-@property(assign,readonly) bool connectionRequired;
-@property(assign,readwrite) bool notifierActive;
-@property(assign,readonly) long long status;
+@property (nonatomic, readonly) bool connectionRequired;
+@property (nonatomic) bool notifierActive;
+@property (nonatomic, readonly) long long status;
 
 + (id)networkReachabilityForDocumentResources;
 + (id)networkReachabilityForInternetConnection;

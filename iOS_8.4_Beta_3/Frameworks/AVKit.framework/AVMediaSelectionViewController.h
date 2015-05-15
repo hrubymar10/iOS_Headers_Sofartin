@@ -10,12 +10,12 @@
     UITableView *_tableView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id doneButtonHandler;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) AVPlayerController * playerController;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id doneButtonHandler;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) AVPlayerController *playerController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_doneButtonTapped:(id)arg1;

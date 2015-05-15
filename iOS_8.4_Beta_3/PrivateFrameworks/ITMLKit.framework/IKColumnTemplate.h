@@ -4,8 +4,8 @@
 
 @interface IKColumnTemplate : IKViewElement
 
-@property(assign,retain) IKColumnCollectionElement * columnCollection;
-@property(assign,retain) IKDocumentBannerElement * documentBanner;
+@property (nonatomic, readonly, retain) IKColumnCollectionElement *columnCollection;
+@property (nonatomic, readonly, retain) IKDocumentBannerElement *documentBanner;
 
 - (id)columnCollection;
 - (id)documentBanner;

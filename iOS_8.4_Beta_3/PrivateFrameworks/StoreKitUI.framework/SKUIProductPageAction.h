@@ -10,11 +10,11 @@
     id _viewControllerBlock;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,readwrite) long long actionType;
-@property(assign,retain) SKUIItem * item;
-@property(assign,readonly) UIViewController * viewController;
-@property(assign,copy) id viewControllerBlock;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic) long long actionType;
+@property (nonatomic, retain) SKUIItem *item;
+@property (nonatomic, readonly) UIViewController *viewController;
+@property (nonatomic, copy) id viewControllerBlock;
 
 + (id)actionWithType:(long long)arg1;
 

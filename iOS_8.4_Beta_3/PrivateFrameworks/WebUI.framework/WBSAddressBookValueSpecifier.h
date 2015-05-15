@@ -8,9 +8,9 @@
     NSString *_property;
 }
 
-@property(assign,readonly) NSString * component;
-@property(assign,readonly) NSString * label;
-@property(assign,readonly) NSString * property;
+@property (nonatomic, readonly) NSString *component;
+@property (nonatomic, readonly) NSString *label;
+@property (nonatomic, readonly) NSString *property;
 
 - (void).cxx_destruct;
 - (id)component;

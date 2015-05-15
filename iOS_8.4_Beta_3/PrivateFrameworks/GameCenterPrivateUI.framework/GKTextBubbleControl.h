@@ -10,12 +10,12 @@
     GKLabel *_textStyle;
 }
 
-@property(assign,retain) NSAttributedString * attributedText;
-@property(assign,retain) GKTextStyle * overrideTextStyle;
-@property(assign,readwrite) bool smallText;
-@property(assign,retain) NSString * text;
-@property(assign,retain) GKLabel * textLabel;
-@property(assign,retain) GKLabel * textStyle;
+@property (nonatomic, retain) NSAttributedString *attributedText;
+@property (nonatomic, retain) GKTextStyle *overrideTextStyle;
+@property (nonatomic) bool smallText;
+@property (nonatomic, retain) NSString *text;
+@property (nonatomic, retain) GKLabel *textLabel;
+@property (nonatomic, retain) GKLabel *textStyle;
 
 - (void)_updateTextLabel;
 - (id)attributedText;

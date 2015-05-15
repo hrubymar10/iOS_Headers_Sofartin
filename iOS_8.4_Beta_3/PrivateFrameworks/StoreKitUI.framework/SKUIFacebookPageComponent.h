@@ -4,7 +4,7 @@
 
 @interface SKUIFacebookPageComponent : SKUIPageComponent
 
-@property(assign,readonly) SKUIFacebookViewElement * viewElement;
+@property (nonatomic, readonly) SKUIFacebookViewElement *viewElement;
 
 - (long long)componentType;
 - (id)initWithViewElement:(id)arg1;

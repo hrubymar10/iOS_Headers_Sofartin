@@ -51,12 +51,12 @@
     SWRunWorkoutProxy *_workoutProxy;
 }
 
-@property(assign,readwrite) bool animateForResumeEventsOnly;
-@property(assign,readwrite) <STRunViewDelegate> * delegate;
-@property(assign,readwrite) int interface;
-@property(assign,readwrite) bool isLockScreen;
-@property(assign,readwrite) long long orientation;
-@property(assign,readonly) SWRunWorkoutProxy * workoutProxy;
+@property (nonatomic) bool animateForResumeEventsOnly;
+@property (nonatomic) <STRunViewDelegate> *delegate;
+@property (nonatomic) int interface;
+@property (nonatomic) bool isLockScreen;
+@property (nonatomic) long long orientation;
+@property (nonatomic, readonly) SWRunWorkoutProxy *workoutProxy;
 
 - (void)_applicationDidBecomeActiveNotification:(id)arg1;
 - (void)_applicationDidEnterBackgroundNotification:(id)arg1;

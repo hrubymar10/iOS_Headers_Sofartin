@@ -34,11 +34,11 @@
     VKWorld *_world;
 }
 
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,readonly) VKStyleManager * styleManager;
-@property(assign,readonly) NSArray * submodels;
-@property(assign,readonly) VKModelObject * supermodel;
-@property(assign,readwrite) VKWorld * world;
+@property (getter=isActive, nonatomic) bool active;
+@property (nonatomic, readonly) VKStyleManager *styleManager;
+@property (nonatomic, readonly) NSArray *submodels;
+@property (nonatomic, readonly) VKModelObject *supermodel;
+@property (nonatomic) VKWorld *world;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

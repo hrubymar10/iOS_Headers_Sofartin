@@ -16,14 +16,14 @@
     } _titleBoldedRange;
 }
 
-@property(assign,copy) NSString * extraDisambiguationSubText;
-@property(assign,copy) NSString * extraDisambiguationText;
-@property(assign,copy) NSString * headingText;
-@property(assign,retain) UIImageView * imageView;
-@property(assign,readwrite) bool showsFavoriteStar;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } titleBoldedRange;
+@property (nonatomic, copy) NSString *extraDisambiguationSubText;
+@property (nonatomic, copy) NSString *extraDisambiguationText;
+@property (nonatomic, copy) NSString *headingText;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic) bool showsFavoriteStar;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } titleBoldedRange;
 
 + (id)disambiguationItem;
 

@@ -6,7 +6,7 @@
     UIImage *__contentImage;
 }
 
-@property(assign,retain) UIImage * _contentImage;
+@property (nonatomic, retain) UIImage *_contentImage;
 
 - (void).cxx_destruct;
 - (void)_commonInit;

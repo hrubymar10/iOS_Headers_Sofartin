@@ -17,13 +17,13 @@
     NSArray *_storeItems;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MKPlaceViewNearbyAppsCellDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * marginConstraints;
-@property(assign,retain) NSArray * storeItems;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MKPlaceViewNearbyAppsCellDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *marginConstraints;
+@property (nonatomic, retain) NSArray *storeItems;
+@property (readonly) Class superclass;
 
 + (double)_headerBaselineOffsetFromTop;
 + (id)_headerLabelFont;

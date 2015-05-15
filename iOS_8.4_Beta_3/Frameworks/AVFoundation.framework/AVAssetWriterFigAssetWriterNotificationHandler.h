@@ -10,7 +10,7 @@
     AVWeakReference *_weakReferenceToSelf;
 }
 
-@property(assign,retain) AVWeakReference * weakReferenceToDelegate;
+@property (retain) AVWeakReference *weakReferenceToDelegate;
 
 - (void)_callDelegateIfNotCalledWithSuccess:(bool)arg1 error:(id)arg2;
 - (void)_handleCompletedWritingNotification;

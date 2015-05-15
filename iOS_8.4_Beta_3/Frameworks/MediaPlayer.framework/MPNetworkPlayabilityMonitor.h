@@ -9,9 +9,9 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readonly) long long effectiveNetworkTypeForPlayback;
-@property(assign,readonly) double lastAverageBitrate;
-@property(assign,readonly) long long networkType;
+@property (nonatomic, readonly) long long effectiveNetworkTypeForPlayback;
+@property (nonatomic, readonly) double lastAverageBitrate;
+@property (nonatomic, readonly) long long networkType;
 
 + (id)sharedNetworkPlayabilityMonitor;
 

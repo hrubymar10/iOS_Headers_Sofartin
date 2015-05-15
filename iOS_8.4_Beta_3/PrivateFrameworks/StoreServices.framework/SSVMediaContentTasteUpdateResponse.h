@@ -9,14 +9,14 @@
     unsigned long long _responseRevisionID;
 }
 
-@property(getter=isCachedResponse,assign,readwrite) bool cachedResponse;
-@property(assign,copy) NSArray * contentTasteItems;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSDate * expirationDate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long responseRevisionID;
-@property(assign,readonly) Class superclass;
+@property (getter=isCachedResponse, nonatomic) bool cachedResponse;
+@property (nonatomic, copy) NSArray *contentTasteItems;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSDate *expirationDate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long responseRevisionID;
+@property (readonly) Class superclass;
 
 + (bool)supportsSecureCoding;
 

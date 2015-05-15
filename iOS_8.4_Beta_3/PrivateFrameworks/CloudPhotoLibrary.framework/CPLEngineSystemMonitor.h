@@ -9,11 +9,11 @@
     CPLNetworkWatcher *_watcher;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) CPLEngineLibrary * engineLibrary;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) CPLEngineLibrary *engineLibrary;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)closeAndDeactivate:(bool)arg1 completionHandler:(id)arg2;

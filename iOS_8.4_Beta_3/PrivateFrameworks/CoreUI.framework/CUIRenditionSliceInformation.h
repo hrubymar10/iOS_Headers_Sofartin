@@ -23,9 +23,9 @@
     long long _renditionType;
 }
 
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } destinationRect;
-@property(assign,readonly) struct { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,readonly) long long renditionType;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } destinationRect;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic, readonly) long long renditionType;
 
 - (struct CGSize { double x1; double x2; })_bottomRightCapSize;
 - (struct CGSize { double x1; double x2; })_topLeftCapSize;

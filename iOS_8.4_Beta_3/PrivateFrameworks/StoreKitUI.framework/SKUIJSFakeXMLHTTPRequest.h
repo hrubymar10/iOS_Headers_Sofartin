@@ -8,14 +8,14 @@
     NSHTTPURLResponse *_response;
 }
 
-@property(assign,readonly) NSDictionary * metrics;
-@property(assign,readonly) unsigned int readyState;
-@property(assign,readonly) id response;
-@property(assign,readonly) NSString * responseText;
-@property(assign,readonly) unsigned int responseType;
-@property(assign,readonly) IKJSXMLDocument * responseXML;
-@property(assign,readonly) unsigned int status;
-@property(assign,retain) NSString * statusText;
+@property (readonly) NSDictionary *metrics;
+@property (readonly) unsigned int readyState;
+@property (readonly) id response;
+@property (readonly) NSString *responseText;
+@property (readonly) unsigned int responseType;
+@property (readonly) IKJSXMLDocument *responseXML;
+@property (readonly) unsigned int status;
+@property (readonly, retain) NSString *statusText;
 
 - (void).cxx_destruct;
 - (id)getAllResponseHeaders;

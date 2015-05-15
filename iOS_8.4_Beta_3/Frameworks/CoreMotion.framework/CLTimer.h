@@ -10,9 +10,9 @@
     CLSilo *_silo;
 }
 
-@property(assign,readwrite) double fireInterval;
-@property(assign,copy) id handler;
-@property(assign,readwrite) double nextFireTime;
+@property (nonatomic) double fireInterval;
+@property (nonatomic, copy) id handler;
+@property (nonatomic) double nextFireTime;
 
 - (void).cxx_destruct;
 - (double)fireInterval;

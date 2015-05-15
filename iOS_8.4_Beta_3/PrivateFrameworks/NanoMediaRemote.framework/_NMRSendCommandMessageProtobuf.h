@@ -12,12 +12,12 @@
     double _timestamp;
 }
 
-@property(assign,readwrite) int command;
-@property(assign,readwrite) bool hasCommand;
-@property(assign,readonly) bool hasOptions;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) _NMRCommandOptionsProtobuf * options;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic) int command;
+@property (nonatomic) bool hasCommand;
+@property (nonatomic, readonly) bool hasOptions;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) _NMRCommandOptionsProtobuf *options;
+@property (nonatomic) double timestamp;
 
 - (void).cxx_destruct;
 - (int)command;

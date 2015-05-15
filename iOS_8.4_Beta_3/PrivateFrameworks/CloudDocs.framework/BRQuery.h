@@ -44,11 +44,11 @@
     NSArray *_values;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) NSMetadataQuery * query;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property NSMetadataQuery *query;
+@property (readonly) Class superclass;
 
 + (void)didEndPossibleFileOperation:(id)arg1;
 + (void)initialize;

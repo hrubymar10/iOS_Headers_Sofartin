@@ -13,14 +13,14 @@
     NSString *_universalSectionID;
 }
 
-@property(assign,readwrite) double date;
-@property(assign,readwrite) unsigned int feed;
-@property(assign,readwrite) bool hasDate;
-@property(assign,readwrite) bool hasFeed;
-@property(assign,readonly) bool hasPublisherMatchID;
-@property(assign,readonly) bool hasUniversalSectionID;
-@property(assign,retain) NSString * publisherMatchID;
-@property(assign,retain) NSString * universalSectionID;
+@property (nonatomic) double date;
+@property (nonatomic) unsigned int feed;
+@property (nonatomic) bool hasDate;
+@property (nonatomic) bool hasFeed;
+@property (nonatomic, readonly) bool hasPublisherMatchID;
+@property (nonatomic, readonly) bool hasUniversalSectionID;
+@property (nonatomic, retain) NSString *publisherMatchID;
+@property (nonatomic, retain) NSString *universalSectionID;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

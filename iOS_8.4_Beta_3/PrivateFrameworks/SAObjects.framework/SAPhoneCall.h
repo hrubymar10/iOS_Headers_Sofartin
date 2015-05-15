@@ -4,11 +4,11 @@
 
 @interface SAPhoneCall : SADomainCommand
 
-@property(assign,retain) SAPersonAttribute * callRecipient;
-@property(assign,copy) NSNumber * emergencyCall;
-@property(assign,readwrite) bool faceTime;
-@property(assign,readwrite) bool faceTimeAudio;
-@property(assign,readwrite) bool speakerphoneCall;
+@property (nonatomic, retain) SAPersonAttribute *callRecipient;
+@property (nonatomic, copy) NSNumber *emergencyCall;
+@property (nonatomic) bool faceTime;
+@property (nonatomic) bool faceTimeAudio;
+@property (nonatomic) bool speakerphoneCall;
 
 + (id)call;
 + (id)callWithDictionary:(id)arg1 context:(id)arg2;

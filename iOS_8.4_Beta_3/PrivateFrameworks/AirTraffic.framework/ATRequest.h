@@ -7,8 +7,8 @@
     NSString *_dataClass;
 }
 
-@property(assign,copy) NSString * command;
-@property(assign,copy) NSString * dataClass;
+@property (nonatomic, copy) NSString *command;
+@property (nonatomic, copy) NSString *dataClass;
 
 + (bool)supportsSecureCoding;
 

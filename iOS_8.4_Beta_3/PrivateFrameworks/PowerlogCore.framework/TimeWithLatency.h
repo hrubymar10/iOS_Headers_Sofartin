@@ -7,8 +7,8 @@
     NSDate *_time;
 }
 
-@property(assign,readwrite) double latency;
-@property(assign,retain) NSDate * time;
+@property double latency;
+@property (retain) NSDate *time;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -8,12 +8,12 @@
     NSString *_sectionID;
 }
 
-@property(assign,readonly) bool hasPublisherBulletinID;
-@property(assign,readonly) bool hasRecordID;
-@property(assign,readonly) bool hasSectionID;
-@property(assign,retain) NSString * publisherBulletinID;
-@property(assign,retain) NSString * recordID;
-@property(assign,retain) NSString * sectionID;
+@property (nonatomic, readonly) bool hasPublisherBulletinID;
+@property (nonatomic, readonly) bool hasRecordID;
+@property (nonatomic, readonly) bool hasSectionID;
+@property (nonatomic, retain) NSString *publisherBulletinID;
+@property (nonatomic, retain) NSString *recordID;
+@property (nonatomic, retain) NSString *sectionID;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

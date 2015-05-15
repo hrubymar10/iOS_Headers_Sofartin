@@ -4,6 +4,6 @@
 
 @interface TDSchemaCategory : TDThemeConstant
 
-@property(assign,retain) NSSet * elements;
+@property (nonatomic, retain) NSSet *elements;
 
 @end

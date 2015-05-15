@@ -6,7 +6,7 @@
     PKPaymentCredential *_paymentCredential;
 }
 
-@property(assign,retain) PKPaymentCredential * paymentCredential;
+@property (nonatomic, retain) PKPaymentCredential *paymentCredential;
 
 - (void)dealloc;
 - (id)paymentCredential;

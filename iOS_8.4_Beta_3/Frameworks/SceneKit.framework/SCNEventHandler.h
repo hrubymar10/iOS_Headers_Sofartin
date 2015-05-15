@@ -7,7 +7,7 @@
     SCNView *_view;
 }
 
-@property(assign,readonly) SCNView * view;
+@property (readonly) SCNView *view;
 
 - (void)cameraDidChange;
 - (void)cameraWillChange;

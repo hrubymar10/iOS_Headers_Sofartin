@@ -4,26 +4,26 @@
 
 @interface SUScriptApplication : SUScriptObject
 
-@property(getter=isDelayingTerminate,assign,readonly) id delayingTerminate;
-@property(assign,readonly) NSNumber * exitStoreReasonButton;
-@property(assign,readonly) NSNumber * exitStoreReasonDownloadComplete;
-@property(assign,readonly) NSNumber * exitStoreReasonFatalError;
-@property(assign,readonly) NSNumber * exitStoreReasonGotoMainStore;
-@property(assign,readonly) NSNumber * exitStoreReasonOther;
-@property(assign,readonly) NSNumber * exitStoreReasonPurchase;
-@property(assign,retain) id iconBadgeNumber;
-@property(getter=wasLaunchedFromLibrary,assign,readonly) id launchedFromLibrary;
-@property(getter=isRunningInStoreDemoMode,assign,readonly) id runningInStoreDemoMode;
-@property(assign,readonly) id screenHeight;
-@property(assign,readonly) id screenWidth;
-@property(assign,readonly) long long statusBarAnimationFade;
-@property(assign,readonly) long long statusBarAnimationNone;
-@property(assign,readonly) long long statusBarAnimationSlide;
-@property(assign,readwrite) id statusBarHidden;
-@property(assign,readwrite) long long statusBarStyle;
-@property(assign,readonly) long long statusBarStyleBlackOpaque;
-@property(assign,readonly) long long statusBarStyleBlackTranslucent;
-@property(assign,readonly) long long statusBarStyleDefault;
+@property (getter=isDelayingTerminate, readonly) id delayingTerminate;
+@property (readonly) NSNumber *exitStoreReasonButton;
+@property (readonly) NSNumber *exitStoreReasonDownloadComplete;
+@property (readonly) NSNumber *exitStoreReasonFatalError;
+@property (readonly) NSNumber *exitStoreReasonGotoMainStore;
+@property (readonly) NSNumber *exitStoreReasonOther;
+@property (readonly) NSNumber *exitStoreReasonPurchase;
+@property (retain) id iconBadgeNumber;
+@property (getter=wasLaunchedFromLibrary, readonly) id launchedFromLibrary;
+@property (getter=isRunningInStoreDemoMode, readonly) id runningInStoreDemoMode;
+@property (readonly) id screenHeight;
+@property (readonly) id screenWidth;
+@property (readonly) long long statusBarAnimationFade;
+@property (readonly) long long statusBarAnimationNone;
+@property (readonly) long long statusBarAnimationSlide;
+@property id statusBarHidden;
+@property long long statusBarStyle;
+@property (readonly) long long statusBarStyleBlackOpaque;
+@property (readonly) long long statusBarStyleBlackTranslucent;
+@property (readonly) long long statusBarStyleDefault;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

@@ -17,15 +17,15 @@
     bool _useLocalStorage;
 }
 
-@property(assign,readwrite) bool allowTempLogStorage;
-@property(assign,readonly) PFUbiquityLocation * currentRootLocation;
-@property(assign,retain) NSDate * lastTransactionDate;
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,readonly) PFUbiquityLocation * localRootLocation;
-@property(assign,readonly) bool pendingTempLogMove;
-@property(assign,readwrite) bool throwOptimisticLockingException;
-@property(assign,retain) PFUbiquityLocation * ubiquityRootLocation;
-@property(assign,readwrite) bool useLocalStorage;
+@property (nonatomic) bool allowTempLogStorage;
+@property (nonatomic, readonly) PFUbiquityLocation *currentRootLocation;
+@property (retain) NSDate *lastTransactionDate;
+@property (nonatomic, readonly) NSString *localPeerID;
+@property (nonatomic, readonly) PFUbiquityLocation *localRootLocation;
+@property (nonatomic, readonly) bool pendingTempLogMove;
+@property (nonatomic) bool throwOptimisticLockingException;
+@property (nonatomic, retain) PFUbiquityLocation *ubiquityRootLocation;
+@property (nonatomic) bool useLocalStorage;
 
 - (bool)allowTempLogStorage;
 - (void)beginWatchingForChangesFromStore:(id)arg1;

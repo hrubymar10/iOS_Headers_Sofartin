@@ -11,12 +11,12 @@
     NSString *_parentFolderID;
 }
 
-@property(assign,readwrite) long long dataclass;
-@property(assign,copy) NSString * folderID;
-@property(assign,copy) NSString * folderName;
-@property(assign,readwrite) bool hasRemoteChanges;
-@property(assign,readwrite) bool isDefault;
-@property(assign,copy) NSString * parentFolderID;
+@property (nonatomic) long long dataclass;
+@property (nonatomic, copy) NSString *folderID;
+@property (nonatomic, copy) NSString *folderName;
+@property (nonatomic) bool hasRemoteChanges;
+@property (nonatomic) bool isDefault;
+@property (nonatomic, copy) NSString *parentFolderID;
 
 - (void).cxx_destruct;
 - (long long)dataclass;

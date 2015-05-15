@@ -39,7 +39,7 @@
     bool mIterDataValid;
 }
 
-@property(assign,readonly) bool cellValid;
+@property (nonatomic, readonly) bool cellValid;
 
 - (id).cxx_construct;
 - (bool)cellValid;

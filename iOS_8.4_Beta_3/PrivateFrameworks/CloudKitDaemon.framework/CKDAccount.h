@@ -13,24 +13,24 @@
     bool _isUnitTestingAccount;
 }
 
-@property(assign,retain) ACAccountType * acAccountType;
-@property(assign,readonly) NSString * accountID;
-@property(assign,readonly) NSString * accountIdentifier;
-@property(assign,retain) ACAccountStore * accountStore;
-@property(assign,readwrite) bool accountWantsPushRegistration;
-@property(assign,readonly) bool allowsCellularAccess;
-@property(assign,readonly) CKDBackingAccount * backingAccount;
-@property(assign,readonly) bool cloudKitIsEnabled;
-@property(assign,readonly) bool cloudPhotosIsEnabled;
-@property(assign,readwrite) CKDClientContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool haveWarnedAboutServerPreferredPushEnvironment;
-@property(assign,readwrite) bool isAnonymousAccount;
-@property(assign,readonly) bool isFakeAccount;
-@property(assign,readwrite) bool isUnitTestingAccount;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) ACAccountType *acAccountType;
+@property (nonatomic, readonly) NSString *accountID;
+@property (nonatomic, readonly) NSString *accountIdentifier;
+@property (nonatomic, retain) ACAccountStore *accountStore;
+@property (nonatomic) bool accountWantsPushRegistration;
+@property (nonatomic, readonly) bool allowsCellularAccess;
+@property (nonatomic, readonly) CKDBackingAccount *backingAccount;
+@property (nonatomic, readonly) bool cloudKitIsEnabled;
+@property (nonatomic, readonly) bool cloudPhotosIsEnabled;
+@property (nonatomic) CKDClientContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool haveWarnedAboutServerPreferredPushEnvironment;
+@property (nonatomic) bool isAnonymousAccount;
+@property (nonatomic, readonly) bool isFakeAccount;
+@property (nonatomic) bool isUnitTestingAccount;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_initWithContext:(id)arg1;

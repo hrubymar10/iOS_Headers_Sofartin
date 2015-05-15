@@ -7,7 +7,7 @@
     unsigned long long _length;
 }
 
-@property(assign,readonly) NSData * sql;
+@property (nonatomic, readonly) NSData *sql;
 
 - (const void*)bytes;
 - (void)dealloc;

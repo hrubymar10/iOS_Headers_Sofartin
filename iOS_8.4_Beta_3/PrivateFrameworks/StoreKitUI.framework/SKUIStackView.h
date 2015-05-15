@@ -9,8 +9,8 @@
     UIWindow *_window;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) long long stackViewStyle;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, readonly) long long stackViewStyle;
 
 - (void).cxx_destruct;
 - (struct CGPoint { double x1; double x2; })_centerInPerspectiveTargetViewCoordinates;

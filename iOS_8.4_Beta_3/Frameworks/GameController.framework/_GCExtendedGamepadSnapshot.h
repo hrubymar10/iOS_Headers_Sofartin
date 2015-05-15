@@ -7,11 +7,11 @@
     NSData *_snapshotData;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSData * snapshotData;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (copy) NSData *snapshotData;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)init;

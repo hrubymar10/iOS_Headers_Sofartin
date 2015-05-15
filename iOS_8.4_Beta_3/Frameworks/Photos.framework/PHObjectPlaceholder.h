@@ -7,7 +7,7 @@
     NSString *_localIdentifier;
 }
 
-@property(assign,readwrite) long long assetMediaType;
+@property long long assetMediaType;
 
 - (void).cxx_destruct;
 - (long long)assetMediaType;

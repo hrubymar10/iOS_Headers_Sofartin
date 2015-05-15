@@ -6,7 +6,7 @@
     NSData *_data;
 }
 
-@property(assign,retain) NSData * data;
+@property (nonatomic, readonly, retain) NSData *data;
 
 - (id)_nonHeaderData;
 - (unsigned char)command;

@@ -27,28 +27,28 @@
     long long _wordCallbackPostProcessedOffset;
 }
 
-@property(assign,readwrite) bool cannotInterrupt;
-@property(assign,copy) id completionCallback;
-@property(assign,retain) NSMutableArray * emojiRangeReplacements;
-@property(assign,retain) NSString * language;
-@property(assign,copy) id onPauseCallback;
-@property(assign,copy) id onResumeCallback;
-@property(assign,copy) id onSpeechStartCallback;
-@property(assign,copy) id onWillSpeakRangeCallback;
-@property(assign,readwrite) double pitch;
-@property(assign,retain) NSString * processedString;
-@property(assign,readwrite) bool shouldDetectLanguage;
-@property(assign,readwrite) bool shouldPrecomposeString;
-@property(assign,readwrite) bool shouldProcessEmoji;
-@property(assign,readwrite) bool shouldProcessEmoticons;
-@property(assign,readwrite) bool shouldQueue;
-@property(assign,readwrite) double speakingRate;
-@property(assign,retain) TTSSpeechRequest * speechRequest;
-@property(assign,copy) NSString * string;
-@property(assign,readwrite) bool useCompactVoice;
-@property(assign,retain) NSString * voiceIdentifier;
-@property(assign,readwrite) double volume;
-@property(assign,readwrite) long long wordCallbackPostProcessedOffset;
+@property (nonatomic) bool cannotInterrupt;
+@property (nonatomic, copy) id completionCallback;
+@property (nonatomic, retain) NSMutableArray *emojiRangeReplacements;
+@property (nonatomic, retain) NSString *language;
+@property (nonatomic, copy) id onPauseCallback;
+@property (nonatomic, copy) id onResumeCallback;
+@property (nonatomic, copy) id onSpeechStartCallback;
+@property (nonatomic, copy) id onWillSpeakRangeCallback;
+@property (nonatomic) double pitch;
+@property (nonatomic, retain) NSString *processedString;
+@property (nonatomic) bool shouldDetectLanguage;
+@property (nonatomic) bool shouldPrecomposeString;
+@property (nonatomic) bool shouldProcessEmoji;
+@property (nonatomic) bool shouldProcessEmoticons;
+@property (nonatomic) bool shouldQueue;
+@property (nonatomic) double speakingRate;
+@property (nonatomic, retain) TTSSpeechRequest *speechRequest;
+@property (nonatomic, copy) NSString *string;
+@property (nonatomic) bool useCompactVoice;
+@property (nonatomic, retain) NSString *voiceIdentifier;
+@property (nonatomic) double volume;
+@property (nonatomic) long long wordCallbackPostProcessedOffset;
 
 + (id)actionWithString:(id)arg1 shouldQueue:(bool)arg2;
 

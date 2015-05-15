@@ -8,9 +8,9 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) SUItemContentRating * contentRating;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) SUItemContentRating *contentRating;
+@property (nonatomic, readonly) NSString *title;
 
 - (id)URL;
 - (id)contentRating;

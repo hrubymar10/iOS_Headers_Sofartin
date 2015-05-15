@@ -10,7 +10,7 @@
     long long _stationID;
 }
 
-@property(assign,copy) NSArray * acceptedMIMETypes;
+@property (nonatomic, copy) NSArray *acceptedMIMETypes;
 
 - (void).cxx_destruct;
 - (id)acceptedMIMETypes;

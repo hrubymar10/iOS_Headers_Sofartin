@@ -11,14 +11,14 @@
     SKUISwooshViewController *_swooshViewController;
 }
 
-@property(assign,readonly) SKUIResourceLoader * artworkLoader;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIImageDataConsumer * imageDataConsumer;
-@property(assign,readonly) UIImage * placeholderImage;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) SKUISwooshViewController * swooshViewController;
+@property (nonatomic, readonly) SKUIResourceLoader *artworkLoader;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIImageDataConsumer *imageDataConsumer;
+@property (nonatomic, readonly) UIImage *placeholderImage;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) SKUISwooshViewController *swooshViewController;
 
 - (void).cxx_destruct;
 - (id)artworkLoader;

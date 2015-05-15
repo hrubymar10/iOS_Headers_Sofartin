@@ -9,9 +9,9 @@
     SUSectionsResponse *_sectionsResponse;
 }
 
-@property(assign,retain) ISStoreURLOperation * baseOperation;
-@property(assign,retain) NSString * expectedVersionString;
-@property(assign,readonly) SUSectionsResponse * sectionsResponse;
+@property (retain) ISStoreURLOperation *baseOperation;
+@property (retain) NSString *expectedVersionString;
+@property (readonly) SUSectionsResponse *sectionsResponse;
 
 - (id)_bestItemImageForImages:(id)arg1 withImageKind:(id)arg2;
 - (id)_copyImageWithURL:(id)arg1 scale:(float)arg2 error:(id*)arg3;

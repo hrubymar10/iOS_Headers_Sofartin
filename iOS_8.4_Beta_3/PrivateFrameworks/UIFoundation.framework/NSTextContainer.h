@@ -30,16 +30,16 @@
     id _textView;
 }
 
-@property(assign,copy) NSArray * exclusionPaths;
-@property(assign,readwrite) bool heightTracksTextView;
-@property(assign,readonly) bool isSimpleRectangularTextContainer;
-@property(assign,readwrite) NSLayoutManager * layoutManager;
-@property(assign,readwrite) long long layoutOrientation;
-@property(assign,readwrite) long long lineBreakMode;
-@property(assign,readwrite) double lineFragmentPadding;
-@property(assign,readwrite) unsigned long long maximumNumberOfLines;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readwrite) bool widthTracksTextView;
+@property (nonatomic, copy) NSArray *exclusionPaths;
+@property (nonatomic) bool heightTracksTextView;
+@property (readonly) bool isSimpleRectangularTextContainer;
+@property (nonatomic) NSLayoutManager *layoutManager;
+@property (nonatomic) long long layoutOrientation;
+@property (nonatomic) long long lineBreakMode;
+@property (nonatomic) double lineFragmentPadding;
+@property (nonatomic) unsigned long long maximumNumberOfLines;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic) bool widthTracksTextView;
 
 + (void)initialize;
 

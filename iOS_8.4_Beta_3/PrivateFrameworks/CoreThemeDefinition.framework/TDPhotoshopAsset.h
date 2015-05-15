@@ -4,7 +4,7 @@
 
 @interface TDPhotoshopAsset : TDAsset
 
-@property(assign,retain) NSSet * productions;
+@property (nonatomic, retain) NSSet *productions;
 
 - (id)_activeProductionWithRenditionsInProductions:(id)arg1;
 - (id)_productionWithRenditionsInProductions:(id)arg1;

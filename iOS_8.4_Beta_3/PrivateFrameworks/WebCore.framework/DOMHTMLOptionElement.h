@@ -4,14 +4,14 @@
 
 @interface DOMHTMLOptionElement : DOMHTMLElement
 
-@property(assign,readwrite) bool defaultSelected;
-@property(assign,readwrite) bool disabled;
-@property(assign,readonly) DOMHTMLFormElement * form;
-@property(assign,readonly) int index;
-@property(assign,copy) NSString * label;
-@property(assign,readwrite) bool selected;
-@property(assign,copy) NSString * text;
-@property(assign,copy) NSString * value;
+@property bool defaultSelected;
+@property bool disabled;
+@property (readonly) DOMHTMLFormElement *form;
+@property (readonly) int index;
+@property (copy) NSString *label;
+@property bool selected;
+@property (readonly, copy) NSString *text;
+@property (copy) NSString *value;
 
 - (id)createPickerCell;
 - (id)createSelectedItem;

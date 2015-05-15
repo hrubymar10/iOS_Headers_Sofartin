@@ -8,9 +8,9 @@
     CoreDAVItem *_prop;
 }
 
-@property(assign,retain) NSMutableSet * calendarChanges;
-@property(assign,readwrite) bool content;
-@property(assign,retain) CoreDAVItem * prop;
+@property (nonatomic, retain) NSMutableSet *calendarChanges;
+@property (nonatomic) bool content;
+@property (nonatomic, retain) CoreDAVItem *prop;
 
 - (void)addCalendarChange:(id)arg1;
 - (void)addContentItem:(id)arg1;

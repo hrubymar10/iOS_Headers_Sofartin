@@ -6,7 +6,7 @@
     <SKUIJSDOMFeatureCollectionAppBridge> *_appBridge;
 }
 
-@property(assign,readwrite) <SKUIJSDOMFeatureCollectionAppBridge> * appBridge;
+@property (nonatomic) <SKUIJSDOMFeatureCollectionAppBridge> *appBridge;
 
 - (void).cxx_destruct;
 - (id)appBridge;

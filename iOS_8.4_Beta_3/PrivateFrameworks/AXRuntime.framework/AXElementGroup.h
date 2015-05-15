@@ -12,23 +12,23 @@
     bool _rootGroup;
 }
 
-@property(assign,readonly) bool allowsChangingExistingGroupingOfContents;
-@property(assign,readonly) bool allowsVisualGroupingOfChildren;
-@property(assign,readonly) bool canBeGroupedWithOtherGroupables;
-@property(assign,readonly) bool canBeReplacedByChildren;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
-@property(assign,readwrite) <AXElementGroupGenerator> * generator;
-@property(assign,retain) NSHashTable * groupObservers;
-@property(assign,readwrite) int groupTraits;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * label;
-@property(assign,readonly) unsigned long long numberOfElements;
-@property(assign,readwrite) AXElementGroup * parentGroup;
-@property(getter=isRootGroup,assign,readwrite) bool rootGroup;
-@property(assign,readonly) bool shouldBeUngrouped;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) bool allowsChangingExistingGroupingOfContents;
+@property (nonatomic, readonly) bool allowsVisualGroupingOfChildren;
+@property (nonatomic, readonly) bool canBeGroupedWithOtherGroupables;
+@property (nonatomic, readonly) bool canBeReplacedByChildren;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } frame;
+@property (nonatomic) <AXElementGroupGenerator> *generator;
+@property (nonatomic, retain) NSHashTable *groupObservers;
+@property (nonatomic) int groupTraits;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *label;
+@property (nonatomic, readonly) unsigned long long numberOfElements;
+@property (nonatomic) AXElementGroup *parentGroup;
+@property (getter=isRootGroup, nonatomic) bool rootGroup;
+@property (nonatomic, readonly) bool shouldBeUngrouped;
+@property (readonly) Class superclass;
 
 + (id)groupWithElements:(id)arg1;
 + (id)groupWithElements:(id)arg1 label:(id)arg2;

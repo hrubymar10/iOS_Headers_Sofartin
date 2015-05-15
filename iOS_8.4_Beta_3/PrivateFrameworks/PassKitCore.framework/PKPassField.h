@@ -13,14 +13,14 @@
     NSString *_value;
 }
 
-@property(assign,copy) NSString * changeMessage;
-@property(assign,readwrite) unsigned long long dataDetectorTypes;
-@property(assign,copy) NSString * key;
-@property(assign,copy) NSString * label;
-@property(assign,readwrite) long long textAlignment;
-@property(assign,readwrite) long long type;
-@property(assign,copy) id unformattedValue;
-@property(assign,readonly) NSString * value;
+@property (nonatomic, copy) NSString *changeMessage;
+@property (nonatomic) unsigned long long dataDetectorTypes;
+@property (nonatomic, copy) NSString *key;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic) long long textAlignment;
+@property (nonatomic) long long type;
+@property (nonatomic, copy) id unformattedValue;
+@property (readonly) NSString *value;
 
 + (bool)supportsSecureCoding;
 

@@ -8,9 +8,9 @@
     long long _type;
 }
 
-@property(assign,readonly) NSDate * endDate;
-@property(assign,readonly) NSDate * startDate;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) NSDate *endDate;
+@property (nonatomic, readonly) NSDate *startDate;
+@property (nonatomic, readonly) long long type;
 
 + (bool)supportsSecureCoding;
 

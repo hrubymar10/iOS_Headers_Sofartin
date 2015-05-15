@@ -7,14 +7,14 @@
     NSString *_personID;
 }
 
-@property(assign,readwrite) <MSStreamsProtocolDelegate> * delegate;
-@property(assign,readonly) NSURL * deleteURL;
-@property(assign,readonly) NSURL * getURL;
-@property(assign,readonly) NSString * personID;
-@property(assign,readonly) NSURL * putURL;
-@property(assign,readonly) NSURL * reauthorizeURL;
-@property(assign,readonly) NSURL * resetURL;
-@property(assign,readonly) NSURL * uploadCompleteURL;
+@property (nonatomic) <MSStreamsProtocolDelegate> *delegate;
+@property (nonatomic, readonly) NSURL *deleteURL;
+@property (nonatomic, readonly) NSURL *getURL;
+@property (nonatomic, readonly) NSString *personID;
+@property (nonatomic, readonly) NSURL *putURL;
+@property (nonatomic, readonly) NSURL *reauthorizeURL;
+@property (nonatomic, readonly) NSURL *resetURL;
+@property (nonatomic, readonly) NSURL *uploadCompleteURL;
 
 - (void).cxx_destruct;
 - (void)_didFindServerSideConfigurationVersion:(id)arg1;

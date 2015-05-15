@@ -6,11 +6,11 @@
     WebHistoryItemPrivate *_private;
 }
 
-@property(assign,copy) NSString * URLString;
-@property(assign,copy) NSString * alternateTitle;
-@property(assign,readonly) double lastVisitedTimeInterval;
-@property(assign,copy) NSString * originalURLString;
-@property(assign,copy) NSString * title;
+@property (nonatomic, readonly, copy) NSString *URLString;
+@property (nonatomic, copy) NSString *alternateTitle;
+@property (nonatomic, readonly) double lastVisitedTimeInterval;
+@property (nonatomic, readonly, copy) NSString *originalURLString;
+@property (nonatomic, readonly, copy) NSString *title;
 
 + (id)entryWithURL:(id)arg1;
 + (void)initialize;

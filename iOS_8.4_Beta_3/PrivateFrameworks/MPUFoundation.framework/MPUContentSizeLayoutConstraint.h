@@ -14,9 +14,9 @@
     double _textStyleDefaultLeading;
 }
 
-@property(assign,readwrite) double defaultSizeConstant;
-@property(assign,readwrite) double fontSizeMultiplier;
-@property(assign,copy) NSString * textStyle;
+@property (nonatomic) double defaultSizeConstant;
+@property (nonatomic) double fontSizeMultiplier;
+@property (nonatomic, copy) NSString *textStyle;
 
 + (id)constraintWithAutoupdatingBaselineOfView:(id)arg1 relation:(long long)arg2 toView:(id)arg3 attribute:(long long)arg4 withTextStyle:(id)arg5 multiplier:(double)arg6 nonStandardLeading:(double)arg7;
 + (id)constraintWithAutoupdatingBaselineOfView:(id)arg1 relation:(long long)arg2 toView:(id)arg3 attribute:(long long)arg4 withTextStyle:(id)arg5 nonStandardLeading:(double)arg6;

@@ -23,13 +23,13 @@
     NSURL *_url;
 }
 
-@property(assign,copy) NSSet * allowedExternalEntityURLs;
-@property(assign,readwrite) <NSXMLParserDelegate> * delegate;
-@property(assign,readwrite) unsigned long long externalEntityResolvingPolicy;
-@property(assign,copy) NSError * parserError;
-@property(assign,readwrite) bool shouldProcessNamespaces;
-@property(assign,readwrite) bool shouldReportNamespacePrefixes;
-@property(assign,readwrite) bool shouldResolveExternalEntities;
+@property (copy) NSSet *allowedExternalEntityURLs;
+@property <NSXMLParserDelegate> *delegate;
+@property unsigned long long externalEntityResolvingPolicy;
+@property (readonly, copy) NSError *parserError;
+@property bool shouldProcessNamespaces;
+@property bool shouldReportNamespacePrefixes;
+@property bool shouldResolveExternalEntities;
 
 + (id)currentParser;
 + (void)setCurrentParser:(id)arg1;

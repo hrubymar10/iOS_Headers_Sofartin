@@ -12,11 +12,11 @@
     NSNumber *inputVibrancy;
 }
 
-@property(assign,retain) NSNumber * inputCast;
-@property(assign,retain) NSNumber * inputContrast;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputUseCube;
-@property(assign,retain) NSNumber * inputVibrancy;
+@property (nonatomic, retain) NSNumber *inputCast;
+@property (nonatomic, retain) NSNumber *inputContrast;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputUseCube;
+@property (nonatomic, retain) NSNumber *inputVibrancy;
 
 + (id)customAttributes;
 

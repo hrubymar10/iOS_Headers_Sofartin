@@ -19,13 +19,13 @@
     } _screenPointInCanvas;
 }
 
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) MDDisplayLayer * displayLayer;
-@property(assign,readwrite) bool followsTerrain;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) MDDisplayLayer *displayLayer;
+@property (nonatomic) bool followsTerrain;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (id)_anchorWithContext:(id)arg1;

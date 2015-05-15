@@ -9,10 +9,10 @@
     UIViewController *_userDefaultsViewController;
 }
 
-@property(assign,copy) NSArray * availableActivities;
-@property(assign,retain) UINavigationController * navigationController;
-@property(assign,retain) _UIActivityUserDefaults * userDefaults;
-@property(assign,retain) UIViewController * userDefaultsViewController;
+@property (nonatomic, copy) NSArray *availableActivities;
+@property (nonatomic, retain) UINavigationController *navigationController;
+@property (nonatomic, retain) _UIActivityUserDefaults *userDefaults;
+@property (nonatomic, retain) UIViewController *userDefaultsViewController;
 
 - (id)_activityImage;
 - (void)_cleanup;

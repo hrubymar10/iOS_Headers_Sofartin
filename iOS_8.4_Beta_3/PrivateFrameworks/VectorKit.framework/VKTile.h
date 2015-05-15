@@ -72,13 +72,13 @@
     } bounds;
 }
 
-@property(assign,readonly) double birthdate;
-@property(assign,readonly) const struct { double x1[4][4]; }* inverseMatrix;
-@property(assign,readonly) struct VKTileKey { unsigned int x1; int x2; int x3; unsigned int x4; } key;
-@property(assign,readonly) const struct { double x1[4][4]; }* matrix;
-@property(assign,readonly) union { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; float x_1_1_4; float x_1_1_5; float x_1_1_6; float x_1_1_7; float x_1_1_8; float x_1_1_9; float x_1_1_10; float x_1_1_11; float x_1_1_12; float x_1_1_13; float x_1_1_14; float x_1_1_15; float x_1_1_16; } x1; float x2[16]; } shaderMatrix;
-@property(assign,readonly) double tileWidth;
-@property(assign,readonly) struct shared_ptr<ggl::Tile::ViewUniformData> { struct ViewUniformData {} *x1; struct __shared_weak_count {} *x2; } viewUniformData;
+@property (nonatomic, readonly) double birthdate;
+@property (nonatomic, readonly) const struct { double x1[4][4]; }*inverseMatrix;
+@property (nonatomic, readonly) struct VKTileKey { unsigned int x1; int x2; int x3; unsigned int x4; } key;
+@property (nonatomic, readonly) const struct { double x1[4][4]; }*matrix;
+@property (nonatomic, readonly) union { struct { float x_1_1_1; float x_1_1_2; float x_1_1_3; float x_1_1_4; float x_1_1_5; float x_1_1_6; float x_1_1_7; float x_1_1_8; float x_1_1_9; float x_1_1_10; float x_1_1_11; float x_1_1_12; float x_1_1_13; float x_1_1_14; float x_1_1_15; float x_1_1_16; } x1; float x2[16]; } shaderMatrix;
+@property (nonatomic, readonly) double tileWidth;
+@property (readonly) struct shared_ptr<ggl::Tile::ViewUniformData> { struct ViewUniformData {} *x1; struct __shared_weak_count {} *x2; } viewUniformData;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -9,7 +9,7 @@
     NSMutableArray *_secondaryBackdrops;
 }
 
-@property(assign,readonly) bool _hasUpdatedFrame;
+@property (nonatomic, readonly) bool _hasUpdatedFrame;
 
 + (void)_registerSecondaryBackdropView:(id)arg1;
 + (void)_unregisterSecondaryBackdropView:(id)arg1;

@@ -14,12 +14,12 @@
     double _spacing;
 }
 
-@property(assign,readonly) NSPointerArray * _imageSizes;
-@property(assign,readonly) NSArray * _imageViews;
-@property(assign,readonly) long long _numberOfImageViews;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } collageSize;
-@property(assign,readwrite) long long numberOfItems;
-@property(assign,readwrite) double spacing;
+@property (nonatomic, readonly) NSPointerArray *_imageSizes;
+@property (nonatomic, readonly) NSArray *_imageViews;
+@property (nonatomic, readonly) long long _numberOfImageViews;
+@property (nonatomic) struct CGSize { double x1; double x2; } collageSize;
+@property (nonatomic) long long numberOfItems;
+@property (nonatomic) double spacing;
 
 + (long long)maximumNumberOfItems;
 

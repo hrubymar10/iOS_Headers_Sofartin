@@ -6,11 +6,11 @@
     bool _ignoreEmptyMessages;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool ignoreEmptyMessages;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool ignoreEmptyMessages;
+@property (readonly) Class superclass;
 
 - (id)allMessagesSince:(id)arg1 onMessage:(id)arg2;
 - (bool)ignoreEmptyMessages;

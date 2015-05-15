@@ -6,7 +6,7 @@
     FBSSceneClientSettingsDiff *_clientSettings;
 }
 
-@property(assign,retain) FBSSceneClientSettingsDiff * clientSettingsDiff;
+@property (nonatomic, retain) FBSSceneClientSettingsDiff *clientSettingsDiff;
 
 - (id)clientSettingsDiff;
 - (void)dealloc;

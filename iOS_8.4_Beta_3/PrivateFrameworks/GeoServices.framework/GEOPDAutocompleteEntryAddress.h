@@ -11,11 +11,11 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,retain) GEOLatLng * center;
-@property(assign,readonly) bool hasCenter;
-@property(assign,readwrite) bool hasOpaqueGeoId;
-@property(assign,readwrite) unsigned long long opaqueGeoId;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, retain) GEOLatLng *center;
+@property (nonatomic, readonly) bool hasCenter;
+@property (nonatomic) bool hasOpaqueGeoId;
+@property (nonatomic) unsigned long long opaqueGeoId;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (id)center;
 - (void)copyTo:(id)arg1;

@@ -7,10 +7,10 @@
     void *_reserved;
 }
 
-@property(assign,readonly) unsigned long long frameLength;
-@property(assign,readonly) unsigned long long methodReturnLength;
-@property(assign,readonly) const char * methodReturnType;
-@property(assign,readonly) unsigned long long numberOfArguments;
+@property (readonly) unsigned long long frameLength;
+@property (readonly) unsigned long long methodReturnLength;
+@property (readonly) const char *methodReturnType;
+@property (readonly) unsigned long long numberOfArguments;
 
 + (id)signatureWithObjCTypes:(const char *)arg1;
 

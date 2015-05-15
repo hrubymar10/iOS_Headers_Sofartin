@@ -9,9 +9,9 @@
     NSNumber *_version;
 }
 
-@property(assign,copy) NSDictionary * configuration;
-@property(assign,copy) NSURL * configurationURL;
-@property(assign,readonly) NSNumber * version;
+@property (copy) NSDictionary *configuration;
+@property (copy) NSURL *configurationURL;
+@property (readonly) NSNumber *version;
 
 + (bool)supportsSecureCoding;
 

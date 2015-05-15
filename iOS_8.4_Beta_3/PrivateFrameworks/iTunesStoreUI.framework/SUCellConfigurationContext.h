@@ -6,7 +6,7 @@
     long long _tableViewStyle;
 }
 
-@property(assign,readwrite) long long tableViewStyle;
+@property (nonatomic) long long tableViewStyle;
 
 - (void)resetLayoutCaches;
 - (void)setTableViewStyle:(long long)arg1;

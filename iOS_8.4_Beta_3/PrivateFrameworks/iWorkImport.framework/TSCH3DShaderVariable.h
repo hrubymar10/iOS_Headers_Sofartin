@@ -15,14 +15,14 @@
     struct NSString { Class x1; } *mType;
 }
 
-@property(assign,readonly) unsigned long long arraySize;
-@property(assign,readonly) TSCH3DShaderVariable * genericName;
-@property(assign,readonly) struct TSCH3DShaderType { unsigned long long x1; } initialLinkType;
-@property(assign,readonly) bool isSpecial;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSString * precision;
-@property(assign,readonly) struct TSCH3DShaderType { unsigned long long x1; } shaderType;
-@property(assign,readonly) NSString * type;
+@property (nonatomic, readonly) unsigned long long arraySize;
+@property (nonatomic, readonly) TSCH3DShaderVariable *genericName;
+@property (nonatomic, readonly) struct TSCH3DShaderType { unsigned long long x1; } initialLinkType;
+@property (nonatomic, readonly) bool isSpecial;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSString *precision;
+@property (nonatomic, readonly) struct TSCH3DShaderType { unsigned long long x1; } shaderType;
+@property (nonatomic, readonly) NSString *type;
 
 + (id)variableWithName:(id)arg1 type:(struct NSString { Class x1; }*)arg2 precision:(struct NSString { Class x1; }*)arg3 arraySize:(unsigned long long)arg4 shaderType:(struct TSCH3DShaderType { unsigned long long x1; })arg5 isSpecial:(bool)arg6 generic:(id)arg7;
 

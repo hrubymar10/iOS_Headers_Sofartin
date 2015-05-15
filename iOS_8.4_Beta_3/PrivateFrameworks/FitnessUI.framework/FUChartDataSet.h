@@ -9,8 +9,8 @@
     long long _tag;
 }
 
-@property(assign,readwrite) <FUChartDataSetDataSource> * dataSource;
-@property(assign,readwrite) long long tag;
+@property (nonatomic) <FUChartDataSetDataSource> *dataSource;
+@property (nonatomic) long long tag;
 
 - (void).cxx_destruct;
 - (id)_getChartPointAtIndex:(unsigned long long)arg1;

@@ -7,8 +7,8 @@
     NSArray *_tabBarButtons;
 }
 
-@property(assign,readonly) SKUIScrollingTabBarBackgroundView * backgroundView;
-@property(assign,copy) NSArray * tabBarButtons;
+@property (nonatomic, readonly) SKUIScrollingTabBarBackgroundView *backgroundView;
+@property (nonatomic, copy) NSArray *tabBarButtons;
 
 - (void).cxx_destruct;
 - (id)backgroundView;

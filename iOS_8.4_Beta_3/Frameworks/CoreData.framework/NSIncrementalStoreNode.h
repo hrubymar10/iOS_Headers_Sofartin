@@ -9,8 +9,8 @@
     unsigned long long _versionNumber;
 }
 
-@property(assign,readonly) NSManagedObjectID * objectID;
-@property(assign,readonly) unsigned long long version;
+@property (nonatomic, readonly) NSManagedObjectID *objectID;
+@property (nonatomic, readonly) unsigned long long version;
 
 + (void)initialize;
 

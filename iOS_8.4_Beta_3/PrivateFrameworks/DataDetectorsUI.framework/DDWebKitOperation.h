@@ -9,11 +9,11 @@
     int _startOffset;
 }
 
-@property(assign,retain) WebFrame * container;
-@property(assign,retain) DOMNode * endNode;
-@property(assign,readwrite) int endOffset;
-@property(assign,retain) DOMNode * startNode;
-@property(assign,readwrite) int startOffset;
+@property (nonatomic, retain) WebFrame *container;
+@property (nonatomic, retain) DOMNode *endNode;
+@property int endOffset;
+@property (nonatomic, retain) DOMNode *startNode;
+@property int startOffset;
 
 - (void)_applyContainerRestrictionsToTypes;
 - (bool)_containerReadyForDetection;

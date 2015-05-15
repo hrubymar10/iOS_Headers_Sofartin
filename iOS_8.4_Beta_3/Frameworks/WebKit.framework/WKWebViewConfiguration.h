@@ -56,21 +56,21 @@
     } _websiteDataStore;
 }
 
-@property(setter=_setAlternateWebViewForNavigationGestures:,assign,readwrite) WKWebView * _alternateWebViewForNavigationGestures;
-@property(setter=_setContentProviderRegistry:,assign,readwrite) WKWebViewContentProviderRegistry * _contentProviderRegistry;
-@property(setter=_setFeatureCounterEnabled:,assign,readwrite) bool _featureCounterEnabled;
-@property(setter=_setGroupIdentifier:,assign,copy) NSString * _groupIdentifier;
-@property(setter=_setRelatedWebView:,assign,readwrite) WKWebView * _relatedWebView;
-@property(setter=_setVisitedLinkProvider:,assign,retain) _WKVisitedLinkProvider * _visitedLinkProvider;
-@property(setter=_setWebsiteDataStore:,assign,retain) _WKWebsiteDataStore * _websiteDataStore;
-@property(assign,readwrite) bool allowsInlineMediaPlayback;
-@property(assign,readwrite) bool mediaPlaybackAllowsAirPlay;
-@property(assign,readwrite) bool mediaPlaybackRequiresUserAction;
-@property(assign,retain) WKPreferences * preferences;
-@property(assign,retain) WKProcessPool * processPool;
-@property(assign,readwrite) long long selectionGranularity;
-@property(assign,readwrite) bool suppressesIncrementalRendering;
-@property(assign,retain) WKUserContentController * userContentController;
+@property (setter=_setAlternateWebViewForNavigationGestures:, nonatomic) WKWebView *_alternateWebViewForNavigationGestures;
+@property (setter=_setContentProviderRegistry:, nonatomic) WKWebViewContentProviderRegistry *_contentProviderRegistry;
+@property (setter=_setFeatureCounterEnabled:, nonatomic) bool _featureCounterEnabled;
+@property (setter=_setGroupIdentifier:, nonatomic, copy) NSString *_groupIdentifier;
+@property (setter=_setRelatedWebView:, nonatomic) WKWebView *_relatedWebView;
+@property (setter=_setVisitedLinkProvider:, nonatomic, retain) _WKVisitedLinkProvider *_visitedLinkProvider;
+@property (setter=_setWebsiteDataStore:, nonatomic, retain) _WKWebsiteDataStore *_websiteDataStore;
+@property (nonatomic) bool allowsInlineMediaPlayback;
+@property (nonatomic) bool mediaPlaybackAllowsAirPlay;
+@property (nonatomic) bool mediaPlaybackRequiresUserAction;
+@property (nonatomic, retain) WKPreferences *preferences;
+@property (nonatomic, retain) WKProcessPool *processPool;
+@property (nonatomic) long long selectionGranularity;
+@property (nonatomic) bool suppressesIncrementalRendering;
+@property (nonatomic, retain) WKUserContentController *userContentController;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

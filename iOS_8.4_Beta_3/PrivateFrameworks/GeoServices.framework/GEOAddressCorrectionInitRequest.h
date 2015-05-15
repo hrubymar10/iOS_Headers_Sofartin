@@ -7,10 +7,10 @@
     NSString *_token;
 }
 
-@property(assign,readonly) bool hasPersonID;
-@property(assign,readonly) bool hasToken;
-@property(assign,retain) NSString * personID;
-@property(assign,retain) NSString * token;
+@property (nonatomic, readonly) bool hasPersonID;
+@property (nonatomic, readonly) bool hasToken;
+@property (nonatomic, retain) NSString *personID;
+@property (nonatomic, retain) NSString *token;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

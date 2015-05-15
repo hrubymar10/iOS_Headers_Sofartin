@@ -9,17 +9,17 @@
     unsigned long long _timeInUsUnix;
 }
 
-@property(assign,readonly) unsigned int cpuNumber;
-@property(assign,readonly) bool didInterruptKernelMode;
-@property(assign,readonly) bool didInterruptUserMode;
-@property(assign,readonly) bool hasValidOnBatteryAndUserIdleFlags;
-@property(assign,readonly) bool isInterruptRecord;
-@property(assign,readonly) bool isOnBattery;
-@property(assign,readonly) bool isTimerArmingRecord;
-@property(assign,readonly) bool isUserIdle;
-@property(assign,readonly) unsigned char microSnapshotFlags;
-@property(assign,readonly) unsigned short systemStatsFlags;
-@property(assign,readonly) unsigned long long timestampInUsUnix;
+@property (readonly) unsigned int cpuNumber;
+@property (readonly) bool didInterruptKernelMode;
+@property (readonly) bool didInterruptUserMode;
+@property (readonly) bool hasValidOnBatteryAndUserIdleFlags;
+@property (readonly) bool isInterruptRecord;
+@property (readonly) bool isOnBattery;
+@property (readonly) bool isTimerArmingRecord;
+@property (readonly) bool isUserIdle;
+@property (readonly) unsigned char microSnapshotFlags;
+@property (readonly) unsigned short systemStatsFlags;
+@property (readonly) unsigned long long timestampInUsUnix;
 
 - (unsigned long long)bytesUsedInBuffer;
 - (unsigned int)cpuNumber;

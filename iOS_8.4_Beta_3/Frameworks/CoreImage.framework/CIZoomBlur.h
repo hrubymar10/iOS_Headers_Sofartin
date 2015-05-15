@@ -6,7 +6,7 @@
     CIVector *inputCenter;
 }
 
-@property(assign,retain) CIVector * inputCenter;
+@property (nonatomic, retain) CIVector *inputCenter;
 
 + (id)customAttributes;
 

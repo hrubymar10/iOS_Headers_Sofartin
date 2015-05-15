@@ -9,9 +9,9 @@
     unsigned long long _downloadToken;
 }
 
-@property(assign,readwrite) unsigned long long AVAssetDownloadToken;
-@property(assign,copy) NSURL * URL;
-@property(assign,copy) NSURL * destinationURL;
+@property unsigned long long AVAssetDownloadToken;
+@property (copy) NSURL *URL;
+@property (copy) NSURL *destinationURL;
 
 - (unsigned long long)AVAssetDownloadToken;
 - (id)URL;

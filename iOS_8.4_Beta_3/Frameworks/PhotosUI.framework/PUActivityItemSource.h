@@ -20,20 +20,20 @@
     id _strongSelf;
 }
 
-@property(setter=_setAssetURL:,assign,retain) NSURL * _assetURL;
-@property(setter=_setAssetsLibraryURL:,assign,retain) NSURL * _assetsLibraryURL;
-@property(setter=_setImageManagerRequestID:,assign,readwrite) int _imageManagerRequestID;
-@property(setter=_setPasteboardRepresentation:,assign,retain) NSDictionary * _pasteboardRepresentation;
-@property(setter=_setRemakerWasCancelled:,assign,readwrite) long long _remakerWasCancelled;
-@property(setter=_setVideoRemakerURL:,assign,retain) NSURL * _videoRemakerURL;
-@property(assign,readonly) PHAsset * asset;
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id postCompletionHandler;
-@property(assign,copy) id progressHandler;
-@property(assign,readonly) Class superclass;
+@property (setter=_setAssetURL:, retain) NSURL *_assetURL;
+@property (setter=_setAssetsLibraryURL:, retain) NSURL *_assetsLibraryURL;
+@property (setter=_setImageManagerRequestID:) int _imageManagerRequestID;
+@property (setter=_setPasteboardRepresentation:, retain) NSDictionary *_pasteboardRepresentation;
+@property (setter=_setRemakerWasCancelled:) long long _remakerWasCancelled;
+@property (setter=_setVideoRemakerURL:, retain) NSURL *_videoRemakerURL;
+@property (nonatomic, readonly) PHAsset *asset;
+@property (copy) id completionHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (copy) id postCompletionHandler;
+@property (copy) id progressHandler;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_assetURL;

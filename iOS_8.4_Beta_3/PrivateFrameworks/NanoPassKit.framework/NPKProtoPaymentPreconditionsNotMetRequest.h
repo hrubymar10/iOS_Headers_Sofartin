@@ -7,8 +7,8 @@
     NSMutableArray *_passIDs;
 }
 
-@property(assign,readwrite) int failedPrecondition;
-@property(assign,retain) NSMutableArray * passIDs;
+@property (nonatomic) int failedPrecondition;
+@property (nonatomic, retain) NSMutableArray *passIDs;
 
 - (void).cxx_destruct;
 - (void)addPassIDs:(id)arg1;

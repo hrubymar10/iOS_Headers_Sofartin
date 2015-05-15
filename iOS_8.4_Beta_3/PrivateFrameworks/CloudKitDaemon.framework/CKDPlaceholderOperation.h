@@ -11,15 +11,15 @@
     NSOperationQueue *_targetOperationQueue;
 }
 
-@property(assign,readonly) CKDClientContext * context;
-@property(assign,readwrite) bool isExecuting;
-@property(assign,readwrite) bool isFinished;
-@property(assign,readonly) NSString * operationID;
-@property(assign,readonly) CKDClientProxy * proxy;
-@property(assign,readonly) CKDOperation * realOperation;
-@property(assign,readonly) NSString * sectionID;
-@property(assign,retain) NSDate * startDate;
-@property(assign,readonly) NSOperationQueue * targetOperationQueue;
+@property (nonatomic, readonly) CKDClientContext *context;
+@property (nonatomic) bool isExecuting;
+@property (nonatomic) bool isFinished;
+@property (nonatomic, readonly) NSString *operationID;
+@property (nonatomic, readonly) CKDClientProxy *proxy;
+@property (nonatomic, readonly) CKDOperation *realOperation;
+@property (nonatomic, readonly) NSString *sectionID;
+@property (nonatomic, retain) NSDate *startDate;
+@property (nonatomic, readonly) NSOperationQueue *targetOperationQueue;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

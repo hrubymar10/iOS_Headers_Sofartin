@@ -7,12 +7,12 @@
     <PKPaymentAuthorizationServiceProtocol> *_delegate;
 }
 
-@property(assign,readwrite) PKPaymentAuthorizationRemoteAlertViewController * controller;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPaymentAuthorizationServiceProtocol> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) PKPaymentAuthorizationRemoteAlertViewController *controller;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPaymentAuthorizationServiceProtocol> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)authorizationDidAuthorizePaymentCompleteWithStatus:(long long)arg1;
 - (void)authorizationDidSelectShippingAddressCompleteWithStatus:(long long)arg1 shippingMethods:(id)arg2 paymentSummaryItems:(id)arg3;

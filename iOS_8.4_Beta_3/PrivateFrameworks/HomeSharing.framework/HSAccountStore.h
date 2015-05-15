@@ -8,11 +8,11 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,copy) NSString * appleID;
-@property(assign,copy) NSString * groupID;
-@property(assign,retain) SSURLConnectionRequest * groupIDRequest;
-@property(assign,copy) NSString * password;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, copy) NSString *appleID;
+@property (nonatomic, copy) NSString *groupID;
+@property (nonatomic, retain) SSURLConnectionRequest *groupIDRequest;
+@property (nonatomic, copy) NSString *password;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 + (id)defaultStore;
 

@@ -11,7 +11,7 @@
     NSObject<OS_tcp_listener> *_tcpListener;
 }
 
-@property(assign,copy) NSString * interfaceName;
+@property (nonatomic, copy) NSString *interfaceName;
 
 - (void).cxx_destruct;
 - (id)initWithServiceName:(id)arg1 type:(id)arg2 domain:(id)arg3;

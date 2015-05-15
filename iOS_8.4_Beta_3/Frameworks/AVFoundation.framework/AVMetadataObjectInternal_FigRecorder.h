@@ -30,12 +30,12 @@
     NSString *type;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } duration;
-@property(assign,retain) AVCaptureInput_FigRecorder * input;
-@property(assign,retain) AVMetadataObject_FigRecorder * originalMetadataObject;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } time;
-@property(assign,retain) NSString * type;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
+@property struct { long long x1; int x2; unsigned int x3; long long x4; } duration;
+@property (retain) AVCaptureInput_FigRecorder *input;
+@property (retain) AVMetadataObject_FigRecorder *originalMetadataObject;
+@property struct { long long x1; int x2; unsigned int x3; long long x4; } time;
+@property (retain) NSString *type;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })bounds;
 - (void)dealloc;

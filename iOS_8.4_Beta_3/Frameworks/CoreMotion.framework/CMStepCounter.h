@@ -6,9 +6,9 @@
     CMStepCounterProxy *_stepcounterProxy;
 }
 
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) bool everRequested;
-@property(assign,readonly) CMStepCounterProxy * stepcounterProxy;
+@property bool enabled;
+@property (readonly) bool everRequested;
+@property (nonatomic, readonly) CMStepCounterProxy *stepcounterProxy;
 
 + (bool)isStepCountingAvailable;
 

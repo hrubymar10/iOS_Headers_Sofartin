@@ -4,12 +4,12 @@
 
 @interface SAHAEntity : SADomainObject
 
-@property(assign,copy) NSString * entityType;
-@property(assign,copy) NSString * home;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * room;
-@property(assign,copy) NSString * serviceType;
-@property(assign,copy) NSString * zone;
+@property (nonatomic, copy) NSString *entityType;
+@property (nonatomic, copy) NSString *home;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *room;
+@property (nonatomic, copy) NSString *serviceType;
+@property (nonatomic, copy) NSString *zone;
 
 + (id)entity;
 + (id)entityWithDictionary:(id)arg1 context:(id)arg2;

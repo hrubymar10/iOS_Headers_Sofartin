@@ -14,15 +14,15 @@
     GKScoreInternal *_score;
 }
 
-@property(assign,readwrite) short achievementPoints;
-@property(assign,readwrite) unsigned short achievements;
-@property(assign,readwrite) unsigned short friendRank;
-@property(assign,retain) NSDate * lastPlayedDate;
-@property(assign,readwrite) unsigned short maxFriendRank;
-@property(assign,readwrite) unsigned int maxRank;
-@property(assign,retain) NSDate * purchaseDate;
-@property(assign,readwrite) unsigned int rank;
-@property(assign,retain) GKScoreInternal * score;
+@property (nonatomic) short achievementPoints;
+@property (nonatomic) unsigned short achievements;
+@property (nonatomic) unsigned short friendRank;
+@property (nonatomic, retain) NSDate *lastPlayedDate;
+@property (nonatomic) unsigned short maxFriendRank;
+@property (nonatomic) unsigned int maxRank;
+@property (nonatomic, retain) NSDate *purchaseDate;
+@property (nonatomic) unsigned int rank;
+@property (nonatomic, retain) GKScoreInternal *score;
 
 + (id)gameRecordForGame:(id)arg1;
 + (id)secureCodedPropertyKeys;

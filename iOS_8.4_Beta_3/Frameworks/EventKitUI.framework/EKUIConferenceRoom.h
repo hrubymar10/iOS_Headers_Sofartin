@@ -9,10 +9,10 @@
     bool _supportsAvailability;
 }
 
-@property(assign,readwrite) long long availability;
-@property(assign,readwrite) bool availabilityRequestInProgress;
-@property(assign,retain) EKDirectoryLocation * location;
-@property(assign,readwrite) bool supportsAvailability;
+@property (nonatomic) long long availability;
+@property (nonatomic) bool availabilityRequestInProgress;
+@property (nonatomic, retain) EKDirectoryLocation *location;
+@property (nonatomic) bool supportsAvailability;
 
 - (void).cxx_destruct;
 - (long long)availability;

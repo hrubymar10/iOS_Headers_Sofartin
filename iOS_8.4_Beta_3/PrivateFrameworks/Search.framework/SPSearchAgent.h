@@ -17,15 +17,15 @@
     SPSearchResultSection *_topHitResultSection;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) NSObject<SPSearchAgentDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int options;
-@property(assign,readonly) bool queryComplete;
-@property(assign,readonly) unsigned int resultCount;
-@property(assign,retain) NSArray * searchDomains;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) NSObject<SPSearchAgentDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int options;
+@property (nonatomic, readonly) bool queryComplete;
+@property (nonatomic, readonly) unsigned int resultCount;
+@property (nonatomic, retain) NSArray *searchDomains;
+@property (readonly) Class superclass;
 
 - (id)_indexesOfCompatibleSection:(id)arg1;
 - (bool)_shouldIgnoreQuery:(id)arg1;

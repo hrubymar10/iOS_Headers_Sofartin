@@ -20,20 +20,20 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSDate * creationDate;
-@property(assign,readonly) NSDate * end;
-@property(assign,readonly) NSTimeZone * endTimeZone;
-@property(getter=isGeocodeCandidate,assign,readonly) bool geocodeCandidate;
-@property(assign,readonly) bool isAllDay;
-@property(assign,readonly) NSDate * lastModifiedDate;
-@property(assign,readonly) NSArray * locations;
-@property(assign,readonly) NSString * messageId;
-@property(assign,readonly) NSString * notes;
-@property(assign,readonly) NSString * opaqueKey;
-@property(assign,readonly) NSDate * start;
-@property(assign,readonly) NSTimeZone * startTimeZone;
-@property(assign,readonly) NSArray * tags;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSDate *creationDate;
+@property (nonatomic, readonly) NSDate *end;
+@property (nonatomic, readonly) NSTimeZone *endTimeZone;
+@property (getter=isGeocodeCandidate, nonatomic, readonly) bool geocodeCandidate;
+@property (nonatomic, readonly) bool isAllDay;
+@property (nonatomic, readonly) NSDate *lastModifiedDate;
+@property (nonatomic, readonly) NSArray *locations;
+@property (nonatomic, readonly) NSString *messageId;
+@property (nonatomic, readonly) NSString *notes;
+@property (nonatomic, readonly) NSString *opaqueKey;
+@property (nonatomic, readonly) NSDate *start;
+@property (nonatomic, readonly) NSTimeZone *startTimeZone;
+@property (nonatomic, readonly) NSArray *tags;
+@property (nonatomic, readonly) NSString *title;
 
 + (id)eventWithOpaqueKey:(id)arg1 title:(id)arg2 notes:(id)arg3 start:(id)arg4 startTimeZone:(id)arg5 end:(id)arg6 endTimeZone:(id)arg7 isAllDay:(bool)arg8 creationDate:(id)arg9 lastModifiedDate:(id)arg10 locations:(id)arg11 tags:(id)arg12 messageId:(id)arg13;
 + (bool)supportsSecureCoding;

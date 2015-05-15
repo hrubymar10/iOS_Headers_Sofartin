@@ -18,20 +18,20 @@
     bool _wantsTick;
 }
 
-@property(assign,readwrite) bool allowsWirelessPlayback;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPVideoOverlayDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long desiredParts;
-@property(assign,readwrite) unsigned long long disabledParts;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPAVItem * item;
-@property(assign,retain) UINavigationBar * navigationBar;
-@property(assign,readwrite) bool navigationBarHidden;
-@property(assign,retain) MPAVController * player;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <MPVideoControllerProtocol> * videoViewController;
-@property(assign,readwrite) unsigned long long visibleParts;
+@property (nonatomic) bool allowsWirelessPlayback;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPVideoOverlayDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) unsigned long long desiredParts;
+@property (nonatomic) unsigned long long disabledParts;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPAVItem *item;
+@property (nonatomic, readonly, retain) UINavigationBar *navigationBar;
+@property (nonatomic) bool navigationBarHidden;
+@property (nonatomic, retain) MPAVController *player;
+@property (readonly) Class superclass;
+@property (nonatomic) <MPVideoControllerProtocol> *videoViewController;
+@property (nonatomic) unsigned long long visibleParts;
 
 - (void).cxx_destruct;
 - (double)_duration;

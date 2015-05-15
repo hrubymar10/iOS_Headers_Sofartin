@@ -6,7 +6,7 @@
     long long _bloodType;
 }
 
-@property(assign,readonly) long long bloodType;
+@property (readonly) long long bloodType;
 
 - (id)_initWithBloodType:(long long)arg1;
 - (long long)bloodType;

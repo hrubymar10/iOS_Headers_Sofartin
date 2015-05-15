@@ -6,8 +6,8 @@
     NSString *_queryString;
 }
 
-@property(assign,readonly) bool hasQueryString;
-@property(assign,retain) NSString * queryString;
+@property (nonatomic, readonly) bool hasQueryString;
+@property (nonatomic, retain) NSString *queryString;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

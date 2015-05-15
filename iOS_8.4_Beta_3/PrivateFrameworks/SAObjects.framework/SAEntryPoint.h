@@ -4,12 +4,12 @@
 
 @interface SAEntryPoint : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSNumber * latitude;
-@property(assign,copy) NSNumber * longitude;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSNumber *latitude;
+@property (nonatomic, copy) NSNumber *longitude;
+@property (readonly) Class superclass;
 
 + (id)entryPoint;
 + (id)entryPointWithDictionary:(id)arg1 context:(id)arg2;

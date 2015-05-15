@@ -12,13 +12,13 @@
     CKRecordZoneID *_zoneID;
 }
 
-@property(assign,retain) NSData * cursor;
-@property(assign,readwrite) unsigned long long limit;
-@property(assign,retain) CKQuery * query;
-@property(assign,retain) NSArray * queryResponses;
-@property(assign,retain) NSArray * requestedFields;
-@property(assign,retain) NSData * resultsCursor;
-@property(assign,retain) CKRecordZoneID * zoneID;
+@property (nonatomic, retain) NSData *cursor;
+@property (nonatomic) unsigned long long limit;
+@property (nonatomic, retain) CKQuery *query;
+@property (nonatomic, retain) NSArray *queryResponses;
+@property (nonatomic, retain) NSArray *requestedFields;
+@property (nonatomic, retain) NSData *resultsCursor;
+@property (nonatomic, retain) CKRecordZoneID *zoneID;
 
 - (void).cxx_destruct;
 - (bool)allowsAnonymousAccount;

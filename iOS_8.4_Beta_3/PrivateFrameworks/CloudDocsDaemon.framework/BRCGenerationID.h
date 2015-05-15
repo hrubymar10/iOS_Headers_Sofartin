@@ -7,14 +7,14 @@
     NSData *_signature;
 }
 
-@property(assign,readonly) const char * UTF8String;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSNumber * fsGenerationID;
-@property(assign,readonly) NSString * generationIDString;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSData * signature;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) const char *UTF8String;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSNumber *fsGenerationID;
+@property (nonatomic, readonly) NSString *generationIDString;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSData *signature;
+@property (readonly) Class superclass;
 
 + (id)newFromSqliteValue:(struct Mem { }*)arg1;
 + (bool)supportsSecureCoding;

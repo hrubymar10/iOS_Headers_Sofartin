@@ -32,13 +32,13 @@
     double _width;
 }
 
-@property(setter=_setInfoConstraints:,assign,copy) NSArray * _infoConstraints;
-@property(assign,copy) NSString * badgeValue;
-@property(assign,readonly) UIView * badgeView;
-@property(assign,readwrite) int controlSize;
-@property(getter=isMomentary,assign,readwrite) bool momentary;
-@property(assign,readwrite) double requestedScaleFactor;
-@property(getter=isSelected,assign,readwrite) bool selected;
+@property (setter=_setInfoConstraints:, nonatomic, copy) NSArray *_infoConstraints;
+@property (nonatomic, copy) NSString *badgeValue;
+@property (readonly) UIView *badgeView;
+@property int controlSize;
+@property (getter=isMomentary) bool momentary;
+@property (nonatomic) double requestedScaleFactor;
+@property (getter=isSelected) bool selected;
 
 + (id)_backgroundImageWithStorage:(id)arg1 style:(long long)arg2 mini:(bool)arg3 state:(unsigned long long)arg4 position:(unsigned int)arg5 drawMode:(int*)arg6 defaultBlock:(id)arg7;
 

@@ -29,7 +29,7 @@
     } _zFlags;
 }
 
-@property(assign,readonly) NSArray * entryNames;
+@property (nonatomic, readonly) NSArray *entryNames;
 
 + (id)createStringFromBytes:(const char *)arg1 offset:(unsigned long long*)arg2 length:(unsigned long long)arg3;
 + (unsigned short)readInt16FromBytes:(const char *)arg1 offset:(unsigned long long*)arg2;

@@ -4,10 +4,10 @@
 
 @interface IKRestrictionsUtilities : NSObject <NSCacheDelegate>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_purgableRatingsDictionary;
 + (id)orderedRankingsInDomain:(id)arg1 countryCode:(id)arg2;

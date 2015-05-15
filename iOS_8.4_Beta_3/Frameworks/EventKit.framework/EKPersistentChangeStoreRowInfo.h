@@ -7,8 +7,8 @@
     int _consumedSequenceNumber;
 }
 
-@property(assign,retain) NSString * clientIdentifier;
-@property(assign,readwrite) int consumedSequenceNumber;
+@property (nonatomic, retain) NSString *clientIdentifier;
+@property (nonatomic) int consumedSequenceNumber;
 
 - (id)clientIdentifier;
 - (int)consumedSequenceNumber;

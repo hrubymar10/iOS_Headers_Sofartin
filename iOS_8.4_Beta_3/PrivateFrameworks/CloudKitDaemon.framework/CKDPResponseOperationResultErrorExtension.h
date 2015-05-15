@@ -10,10 +10,10 @@
     unsigned int _typeCode;
 }
 
-@property(assign,retain) NSString * extensionName;
-@property(assign,readonly) bool hasExtensionName;
-@property(assign,readwrite) bool hasTypeCode;
-@property(assign,readwrite) unsigned int typeCode;
+@property (nonatomic, retain) NSString *extensionName;
+@property (nonatomic, readonly) bool hasExtensionName;
+@property (nonatomic) bool hasTypeCode;
+@property (nonatomic) unsigned int typeCode;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

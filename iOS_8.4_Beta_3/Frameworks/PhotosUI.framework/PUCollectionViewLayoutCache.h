@@ -14,8 +14,8 @@
     NSMutableDictionary *_supplementaryViewLayoutAttributesByKind;
 }
 
-@property(assign,readwrite) bool cachesResults;
-@property(assign,readonly) <PUCollectionViewLayoutProvider> * layoutProvider;
+@property (nonatomic) bool cachesResults;
+@property (nonatomic, readonly) <PUCollectionViewLayoutProvider> *layoutProvider;
 
 - (void).cxx_destruct;
 - (bool)cachesResults;

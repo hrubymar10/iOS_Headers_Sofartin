@@ -4,8 +4,8 @@
 
 @interface NSCharacterSet : NSObject <NSCoding, NSCopying, NSMutableCopying>
 
-@property(assign,copy) NSData * bitmapRepresentation;
-@property(assign,copy) NSCharacterSet * invertedSet;
+@property (readonly, copy) NSData *bitmapRepresentation;
+@property (readonly, copy) NSCharacterSet *invertedSet;
 
 + (id)URLFragmentAllowedCharacterSet;
 + (id)URLHostAllowedCharacterSet;

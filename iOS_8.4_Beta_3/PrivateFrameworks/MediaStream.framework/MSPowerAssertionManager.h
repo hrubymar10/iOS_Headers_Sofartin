@@ -10,11 +10,11 @@
     bool _isBusy;
 }
 
-@property(assign,readwrite) int UIBusyCount;
-@property(assign,readwrite) unsigned int assertionID;
-@property(assign,readwrite) int busyCount;
-@property(assign,readwrite) bool isAssertingPowerAssertion;
-@property(assign,readwrite) bool isBusy;
+@property (nonatomic) int UIBusyCount;
+@property (nonatomic) unsigned int assertionID;
+@property (nonatomic) int busyCount;
+@property (nonatomic) bool isAssertingPowerAssertion;
+@property (nonatomic) bool isBusy;
 
 + (id)sharedManager;
 

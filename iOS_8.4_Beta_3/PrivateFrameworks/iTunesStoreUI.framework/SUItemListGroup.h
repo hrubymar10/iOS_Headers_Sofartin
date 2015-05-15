@@ -7,9 +7,9 @@
     SUItem *_separatorItem;
 }
 
-@property(assign,readonly) NSString * indexBarTitle;
-@property(assign,retain) NSMutableArray * items;
-@property(assign,retain) SUItem * separatorItem;
+@property (nonatomic, readonly) NSString *indexBarTitle;
+@property (nonatomic, retain) NSMutableArray *items;
+@property (nonatomic, retain) SUItem *separatorItem;
 
 - (void)dealloc;
 - (id)description;

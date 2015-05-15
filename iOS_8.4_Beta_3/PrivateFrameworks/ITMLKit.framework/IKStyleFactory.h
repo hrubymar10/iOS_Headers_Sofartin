@@ -7,8 +7,8 @@
     IKStylesGroup *_stylesGroup;
 }
 
-@property(assign,retain) NSMutableDictionary * styleListsByClassSelector;
-@property(assign,retain) IKStylesGroup * stylesGroup;
+@property (nonatomic, readonly, retain) NSMutableDictionary *styleListsByClassSelector;
+@property (nonatomic, readonly, retain) IKStylesGroup *stylesGroup;
 
 + (id)styleFactoryWithMarkup:(id)arg1;
 

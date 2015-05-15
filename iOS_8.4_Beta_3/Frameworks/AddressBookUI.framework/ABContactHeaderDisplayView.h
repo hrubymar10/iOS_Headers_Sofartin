@@ -13,10 +13,10 @@
     NSDictionary *_taglineTextAttributes;
 }
 
-@property(assign,retain) NSString * alternateName;
-@property(assign,retain) NSString * message;
-@property(assign,retain) UIView * personHeaderView;
-@property(assign,copy) NSDictionary * taglineTextAttributes;
+@property (nonatomic, retain) NSString *alternateName;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic, retain) UIView *personHeaderView;
+@property (nonatomic, copy) NSDictionary *taglineTextAttributes;
 
 + (id)contactHeaderViewWithContact:(id)arg1 personHeaderView:(id)arg2;
 

@@ -10,12 +10,12 @@
     bool _pushEnabled;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RadioPushNotificationControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool notificationsEnabled;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RadioPushNotificationControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool notificationsEnabled;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_loadURLBagWithCompletionHandler:(id)arg1;

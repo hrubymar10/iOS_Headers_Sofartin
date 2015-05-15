@@ -16,21 +16,21 @@
     UITextView *_textView;
 }
 
-@property(assign,readwrite) bool allowsEditing;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ABSwellTextViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) UIFont * font;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,readwrite) UIColor * highlightedTextColor;
-@property(assign,readwrite) double maxHeight;
-@property(getter=isScrollEnabled,assign,readwrite) bool scrollEnabled;
-@property(assign,retain) UIColor * shadowColor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } shadowOffset;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) NSString * text;
-@property(assign,readwrite) UIColor * textColor;
+@property (nonatomic) bool allowsEditing;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ABSwellTextViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) UIFont *font;
+@property (readonly) unsigned long long hash;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic) UIColor *highlightedTextColor;
+@property (nonatomic) double maxHeight;
+@property (getter=isScrollEnabled, nonatomic) bool scrollEnabled;
+@property (nonatomic, retain) UIColor *shadowColor;
+@property (nonatomic) struct CGSize { double x1; double x2; } shadowOffset;
+@property (readonly) Class superclass;
+@property (nonatomic) NSString *text;
+@property (nonatomic) UIColor *textColor;
 
 + (double)lineHeightWithFont:(id)arg1;
 

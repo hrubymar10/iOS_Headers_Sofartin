@@ -21,8 +21,8 @@
     bool _wantsReconnectMessage;
 }
 
-@property(assign,readwrite) int inputContractionMode;
-@property(assign,readwrite) bool inputEightDotBraille;
+@property (nonatomic) int inputContractionMode;
+@property (nonatomic) bool inputEightDotBraille;
 
 + (id)statusAttributeDotText;
 

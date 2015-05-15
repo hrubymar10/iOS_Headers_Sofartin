@@ -44,7 +44,7 @@
     unsigned int _willStartSent;
 }
 
-@property(assign,readonly) bool _allowsUserInteraction;
+@property (nonatomic, readonly) bool _allowsUserInteraction;
 
 + (void)popAnimationState;
 + (void)pushViewAnimationState:(id)arg1 context:(void*)arg2;

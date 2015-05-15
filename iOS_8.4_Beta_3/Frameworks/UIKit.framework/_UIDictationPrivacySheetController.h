@@ -6,7 +6,7 @@
     id _dismissHandler;
 }
 
-@property(assign,copy) id dismissHandler;
+@property (copy) id dismissHandler;
 
 + (id)controllerWithDismissHandler:(id)arg1;
 

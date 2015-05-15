@@ -19,14 +19,14 @@
     NSString *mTag;
 }
 
-@property(assign,readonly) bool active;
-@property(assign,readonly) long long bufferID;
-@property(assign,readonly) long long bufferSize;
-@property(assign,retain) TSMTraceController * controller;
-@property(assign,retain) NSFileHandle * fileHandle;
-@property(assign,readonly) unsigned int* filters;
-@property(assign,readwrite) bool synchronizedAccess;
-@property(assign,readonly) NSString * tag;
+@property (nonatomic, readonly) bool active;
+@property (nonatomic, readonly) long long bufferID;
+@property (nonatomic, readonly) long long bufferSize;
+@property (nonatomic, retain) TSMTraceController *controller;
+@property (nonatomic, retain) NSFileHandle *fileHandle;
+@property (nonatomic, readonly) unsigned int*filters;
+@property (nonatomic) bool synchronizedAccess;
+@property (nonatomic, readonly) NSString *tag;
 
 + (id)bufferWithTag:(id)arg1 size:(long long)arg2;
 

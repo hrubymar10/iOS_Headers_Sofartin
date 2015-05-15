@@ -8,9 +8,9 @@
     NSString *_correctedText;
 }
 
-@property(assign,readwrite) long long alternativeSelectionCount;
-@property(assign,readwrite) long long characterModificationCount;
-@property(assign,copy) NSString * correctedText;
+@property (nonatomic) long long alternativeSelectionCount;
+@property (nonatomic) long long characterModificationCount;
+@property (nonatomic, copy) NSString *correctedText;
 
 + (bool)supportsSecureCoding;
 

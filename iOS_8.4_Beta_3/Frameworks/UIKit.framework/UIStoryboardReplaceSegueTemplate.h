@@ -7,8 +7,8 @@
     long long _splitViewControllerIndex;
 }
 
-@property(assign,readwrite) long long destinationContainmentContext;
-@property(assign,readwrite) long long splitViewControllerIndex;
+@property (nonatomic) long long destinationContainmentContext;
+@property (nonatomic) long long splitViewControllerIndex;
 
 - (id)defaultSegueClassName;
 - (long long)destinationContainmentContext;

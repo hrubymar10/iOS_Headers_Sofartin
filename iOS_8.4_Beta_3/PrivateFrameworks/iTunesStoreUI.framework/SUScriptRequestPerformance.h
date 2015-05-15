@@ -6,11 +6,11 @@
     ISURLRequestPerformance *_performance;
 }
 
-@property(assign,readonly) NSString * JSONHeaders;
-@property(assign,readonly) double finishInterval;
-@property(assign,readonly) double receivedResponseInterval;
-@property(assign,readonly) double renderBeginInterval;
-@property(assign,readonly) double renderEndInterval;
+@property (readonly) NSString *JSONHeaders;
+@property (readonly) double finishInterval;
+@property (readonly) double receivedResponseInterval;
+@property (readonly) double renderBeginInterval;
+@property (readonly) double renderEndInterval;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

@@ -9,13 +9,13 @@
     BLBaseLayerStack *_layerStack;
 }
 
-@property(assign,readwrite) int brushType;
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) bool hasLayerMask;
-@property(assign,readonly) struct CGSize { double x1; double x2; } imageSize;
-@property(assign,readwrite) BLRetouchLayer * layerBelow;
-@property(assign,readwrite) NSData * layerData;
-@property(assign,readwrite) BLBaseLayerStack * layerStack;
+@property (nonatomic) int brushType;
+@property (nonatomic) bool enabled;
+@property (nonatomic, readonly) bool hasLayerMask;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic) BLRetouchLayer *layerBelow;
+@property (nonatomic) NSData *layerData;
+@property (nonatomic) BLBaseLayerStack *layerStack;
 
 + (id)layer;
 

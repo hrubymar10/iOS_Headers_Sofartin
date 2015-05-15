@@ -8,8 +8,8 @@
     CALayer *_scrollViewLayer;
 }
 
-@property(assign,retain) UIView * oldSuperview;
-@property(assign,retain) UIWebOverflowScrollView * scrollView;
+@property (nonatomic, retain) UIView *oldSuperview;
+@property (nonatomic, retain) UIWebOverflowScrollView *scrollView;
 
 - (void)dealloc;
 - (id)initWithScrollView:(id)arg1;

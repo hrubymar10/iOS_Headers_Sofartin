@@ -10,11 +10,11 @@
     bool _wasStatusBarHiddenBeforeTransition;
 }
 
-@property(setter=_setOperation:,assign,readwrite) long long _operation;
-@property(assign,readwrite) UINavigationController * navigationController;
-@property(assign,readonly) double popDuration;
-@property(assign,readonly) double pushDuration;
-@property(assign,readwrite) bool wasStatusBarHiddenBeforeTransition;
+@property (setter=_setOperation:, nonatomic) long long _operation;
+@property (nonatomic) UINavigationController *navigationController;
+@property (nonatomic, readonly) double popDuration;
+@property (nonatomic, readonly) double pushDuration;
+@property (nonatomic) bool wasStatusBarHiddenBeforeTransition;
 
 + (id)animationControllerForOperation:(long long)arg1 fromViewController:(id)arg2 toViewController:(id)arg3 inNavigationController:(id)arg4;
 + (bool)shouldCrossFadeBottomBarsForNavigationController:(id)arg1;

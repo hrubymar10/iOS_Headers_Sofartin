@@ -21,7 +21,7 @@
     long long *_visualSectionForRealSection;
 }
 
-@property(assign,readwrite) bool supportsSamplingAndSectionGrouping;
+@property (nonatomic) bool supportsSamplingAndSectionGrouping;
 
 - (void).cxx_destruct;
 - (long long)__debugUnsampledIndexForRealIndexPath:(struct PUSimpleIndexPath { long long x1; long long x2; })arg1;

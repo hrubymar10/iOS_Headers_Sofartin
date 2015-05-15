@@ -16,11 +16,11 @@
     NSXPCConnection *_xpcConn;
 }
 
-@property(assign,copy) NSString * appWakeUUID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (copy) NSString *appWakeUUID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)_AVAssetDownloadTaskForURL:(id)arg1 destinationURL:(id)arg2 options:(id)arg3;
 - (id)_downloadTaskForRequest:(id)arg1;

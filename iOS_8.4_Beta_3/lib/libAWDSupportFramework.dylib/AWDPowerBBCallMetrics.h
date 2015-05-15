@@ -22,21 +22,21 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int bBAndDataPowerMicroWatt;
-@property(assign,readwrite) unsigned int bBPowerMicroWatt;
-@property(assign,readwrite) unsigned int bBTotalAndDataDuration;
-@property(assign,readwrite) unsigned int bBTotalCallDuration;
-@property(assign,readwrite) unsigned int connectedSleepDuration;
-@property(assign,readwrite) unsigned int connectedSleepDurationData;
-@property(assign,readwrite) bool hasBBAndDataPowerMicroWatt;
-@property(assign,readwrite) bool hasBBPowerMicroWatt;
-@property(assign,readwrite) bool hasBBTotalAndDataDuration;
-@property(assign,readwrite) bool hasBBTotalCallDuration;
-@property(assign,readwrite) bool hasConnectedSleepDuration;
-@property(assign,readwrite) bool hasConnectedSleepDurationData;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSMutableArray * metrics;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int bBAndDataPowerMicroWatt;
+@property (nonatomic) unsigned int bBPowerMicroWatt;
+@property (nonatomic) unsigned int bBTotalAndDataDuration;
+@property (nonatomic) unsigned int bBTotalCallDuration;
+@property (nonatomic) unsigned int connectedSleepDuration;
+@property (nonatomic) unsigned int connectedSleepDurationData;
+@property (nonatomic) bool hasBBAndDataPowerMicroWatt;
+@property (nonatomic) bool hasBBPowerMicroWatt;
+@property (nonatomic) bool hasBBTotalAndDataDuration;
+@property (nonatomic) bool hasBBTotalCallDuration;
+@property (nonatomic) bool hasConnectedSleepDuration;
+@property (nonatomic) bool hasConnectedSleepDurationData;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSMutableArray *metrics;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)addMetrics:(id)arg1;
 - (unsigned int)bBAndDataPowerMicroWatt;

@@ -14,7 +14,7 @@
     NSMutableArray *_statusBlocks;
 }
 
-@property(assign,copy) SSVSubscriptionStatus * lastKnownStatus;
+@property (readonly, copy) SSVSubscriptionStatus *lastKnownStatus;
 
 + (id)_existingSharedCoordinator;
 + (id)sharedCoordinator;

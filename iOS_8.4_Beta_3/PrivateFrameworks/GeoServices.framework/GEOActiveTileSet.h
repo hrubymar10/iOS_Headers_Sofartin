@@ -25,26 +25,26 @@
     unsigned int _version;
 }
 
-@property(assign,readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; unsigned int x6; }* availableTiles;
-@property(assign,readonly) unsigned long long availableTilesCount;
-@property(assign,retain) NSString * baseURL;
-@property(assign,readonly) bool hasBaseURL;
-@property(assign,readonly) bool hasLocalizationURL;
-@property(assign,readonly) bool hasMultiTileURL;
-@property(assign,readwrite) bool hasMultiTileURLUsesStatusCodes;
-@property(assign,readwrite) bool hasTimeToLiveSeconds;
-@property(assign,readwrite) bool hasUpdateBehavior;
-@property(assign,retain) NSString * localizationURL;
-@property(assign,retain) NSString * multiTileURL;
-@property(assign,readwrite) bool multiTileURLUsesStatusCodes;
-@property(assign,readwrite) int scale;
-@property(assign,retain) NSMutableArray * sentinelTiles;
-@property(assign,readwrite) int size;
-@property(assign,readwrite) int style;
-@property(assign,retain) NSMutableArray * supportedLanguages;
-@property(assign,readwrite) unsigned int timeToLiveSeconds;
-@property(assign,readwrite) int updateBehavior;
-@property(assign,readwrite) unsigned int version;
+@property (nonatomic, readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; unsigned int x6; }*availableTiles;
+@property (nonatomic, readonly) unsigned long long availableTilesCount;
+@property (nonatomic, retain) NSString *baseURL;
+@property (nonatomic, readonly) bool hasBaseURL;
+@property (nonatomic, readonly) bool hasLocalizationURL;
+@property (nonatomic, readonly) bool hasMultiTileURL;
+@property (nonatomic) bool hasMultiTileURLUsesStatusCodes;
+@property (nonatomic) bool hasTimeToLiveSeconds;
+@property (nonatomic) bool hasUpdateBehavior;
+@property (nonatomic, retain) NSString *localizationURL;
+@property (nonatomic, retain) NSString *multiTileURL;
+@property (nonatomic) bool multiTileURLUsesStatusCodes;
+@property (nonatomic) int scale;
+@property (nonatomic, retain) NSMutableArray *sentinelTiles;
+@property (nonatomic) int size;
+@property (nonatomic) int style;
+@property (nonatomic, retain) NSMutableArray *supportedLanguages;
+@property (nonatomic) unsigned int timeToLiveSeconds;
+@property (nonatomic) int updateBehavior;
+@property (nonatomic) unsigned int version;
 
 - (id)_bestLanguageWithOverrideLocale:(id)arg1;
 - (void)_resetBestLanguage;

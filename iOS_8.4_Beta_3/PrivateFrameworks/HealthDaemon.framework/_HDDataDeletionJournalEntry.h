@@ -7,8 +7,8 @@
     bool _restrictSource;
 }
 
-@property(assign,readonly) HKObject * dataObject;
-@property(assign,readonly) bool restrictSource;
+@property (nonatomic, readonly) HKObject *dataObject;
+@property (nonatomic, readonly) bool restrictSource;
 
 + (void)applyEntries:(id)arg1 withDaemon:(id)arg2;
 + (long long)behavior;

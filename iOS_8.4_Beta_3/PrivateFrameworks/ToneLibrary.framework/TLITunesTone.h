@@ -16,17 +16,17 @@
     bool _ringtone;
 }
 
-@property(assign,copy) NSString * artworkFile;
-@property(assign,readwrite) unsigned long long duration;
-@property(assign,copy) NSString * filePath;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSNumber * pid;
-@property(assign,copy) NSDictionary * playbackProperties;
-@property(getter=isPrivate,assign,readwrite) bool private;
-@property(getter=isProtected,assign,readwrite) bool protected;
-@property(getter=isPurchased,assign,readwrite) bool purchased;
-@property(getter=isRingtone,assign,readwrite) bool ringtone;
+@property (nonatomic, copy) NSString *artworkFile;
+@property (nonatomic) unsigned long long duration;
+@property (nonatomic, copy) NSString *filePath;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSNumber *pid;
+@property (nonatomic, copy) NSDictionary *playbackProperties;
+@property (getter=isPrivate, nonatomic) bool private;
+@property (getter=isProtected, nonatomic) bool protected;
+@property (getter=isPurchased, nonatomic) bool purchased;
+@property (getter=isRingtone, nonatomic) bool ringtone;
 
 - (void)_setArtworkFile:(id)arg1;
 - (void)_setDuration:(unsigned long long)arg1;

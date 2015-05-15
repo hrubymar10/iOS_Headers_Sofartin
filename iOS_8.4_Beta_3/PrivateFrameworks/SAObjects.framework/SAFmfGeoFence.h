@@ -4,9 +4,9 @@
 
 @interface SAFmfGeoFence : SADomainObject
 
-@property(assign,retain) SAPersonAttribute * friend;
-@property(assign,copy) NSString * geoFenceTrigger;
-@property(assign,retain) SALocation * location;
+@property (nonatomic, retain) SAPersonAttribute *friend;
+@property (nonatomic, copy) NSString *geoFenceTrigger;
+@property (nonatomic, retain) SALocation *location;
 
 + (id)geoFence;
 + (id)geoFenceWithDictionary:(id)arg1 context:(id)arg2;

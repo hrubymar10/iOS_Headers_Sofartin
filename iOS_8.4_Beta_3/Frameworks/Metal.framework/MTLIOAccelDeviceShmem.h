@@ -18,9 +18,9 @@
     bool purgeable;
 }
 
-@property(assign,readonly) unsigned int shmemID;
-@property(assign,readonly) unsigned int shmemSize;
-@property(assign,readonly) void* virtualAddress;
+@property (readonly) unsigned int shmemID;
+@property (readonly) unsigned int shmemSize;
+@property (readonly) void*virtualAddress;
 
 - (void)dealloc;
 - (id)initWithDevice:(id)arg1 shmemSize:(unsigned int)arg2;

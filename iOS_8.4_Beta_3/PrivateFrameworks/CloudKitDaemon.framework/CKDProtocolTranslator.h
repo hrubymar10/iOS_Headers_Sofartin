@@ -9,11 +9,11 @@
     NSString *_overriddenContainerScopedUserID;
 }
 
-@property(assign,copy) NSString * bundleIdentifier;
-@property(assign,copy) NSString * containerScopedUserID;
-@property(assign,readwrite) <CKDProtocolTranslatorIdentityDelegate> * identityDelegate;
-@property(assign,copy) NSString * overriddenContainerScopedUserID;
-@property(assign,readonly) CKDPIdentifier * pUserID;
+@property (nonatomic, readonly, copy) NSString *bundleIdentifier;
+@property (nonatomic, copy) NSString *containerScopedUserID;
+@property (nonatomic) <CKDProtocolTranslatorIdentityDelegate> *identityDelegate;
+@property (nonatomic, copy) NSString *overriddenContainerScopedUserID;
+@property (nonatomic, readonly) CKDPIdentifier *pUserID;
 
 + (id)translatorIgnoringUserIDs;
 

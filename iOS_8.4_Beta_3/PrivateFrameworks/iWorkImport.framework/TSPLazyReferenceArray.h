@@ -7,7 +7,7 @@
     NSMutableArray *_references;
 }
 
-@property(assign,readonly) NSArray * references;
+@property (nonatomic, readonly) NSArray *references;
 
 - (void).cxx_destruct;
 - (void)addObject:(id)arg1;

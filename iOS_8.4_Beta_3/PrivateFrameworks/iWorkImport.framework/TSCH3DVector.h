@@ -9,10 +9,10 @@
     float _z;
 }
 
-@property(assign,readonly) float w;
-@property(assign,readonly) float x;
-@property(assign,readonly) float y;
-@property(assign,readonly) float z;
+@property (nonatomic, readonly) float w;
+@property (nonatomic, readonly) float x;
+@property (nonatomic, readonly) float y;
+@property (nonatomic, readonly) float z;
 
 + (unsigned long long)hashVec4:(const struct tvec4<float> { union { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; union { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; union { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; union { float x_4_1_1; float x_4_1_2; float x_4_1_3; } x4; }*)arg1;
 + (id)instanceWithArchive:(const struct Chart3DVectorArchive { int (**x1)(); struct UnknownFieldSet { struct vector<google::protobuf::UnknownField, std::__1::allocator<google::protobuf::UnknownField> > {} *x_2_1_1; } x2; unsigned int x3[1]; int x4; float x5; float x6; float x7; float x8; }*)arg1 unarchiver:(id)arg2;

@@ -8,9 +8,9 @@
     float prepareWeight;
 }
 
-@property(assign,readwrite) float applyWeight;
-@property(assign,readwrite) float finishWeight;
-@property(assign,readwrite) float prepareWeight;
+@property float applyWeight;
+@property float finishWeight;
+@property float prepareWeight;
 
 - (float)applyWeight;
 - (double)calculateOverallProgressWithStepProgress:(double)arg1 step:(int)arg2;

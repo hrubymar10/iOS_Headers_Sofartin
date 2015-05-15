@@ -7,8 +7,8 @@
     NSAttributedString *string;
 }
 
-@property(assign,readwrite) double halfWidth;
-@property(assign,retain) NSAttributedString * string;
+@property (nonatomic) double halfWidth;
+@property (nonatomic, retain) NSAttributedString *string;
 
 - (void).cxx_destruct;
 - (id)actionForKey:(id)arg1;

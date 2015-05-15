@@ -16,10 +16,10 @@
     UITouch *_touch;
 }
 
-@property(assign,readwrite) double allowableMovement;
-@property(assign,readwrite) double minimumFinalPressDuration;
-@property(assign,readwrite) int numberOfFullTaps;
-@property(assign,retain) UITouch * touch;
+@property (nonatomic) double allowableMovement;
+@property (nonatomic) double minimumFinalPressDuration;
+@property (nonatomic) int numberOfFullTaps;
+@property (nonatomic, retain) UITouch *touch;
 
 - (void)_resetGestureRecognizer;
 - (void)_verifyMovementInAllowableRange;

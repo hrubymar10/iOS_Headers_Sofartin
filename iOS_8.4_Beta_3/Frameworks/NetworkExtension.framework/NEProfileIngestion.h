@@ -10,11 +10,11 @@
     NSString *_payloadType;
 }
 
-@property(assign,readonly) NSString * clientName;
-@property(assign,retain) NSMutableArray * currentConfigurations;
-@property(assign,retain) NEConfiguration * ingestedConfiguration;
-@property(assign,readonly) NEConfigurationManager * manager;
-@property(assign,readonly) NSString * payloadType;
+@property (readonly) NSString *clientName;
+@property (retain) NSMutableArray *currentConfigurations;
+@property (retain) NEConfiguration *ingestedConfiguration;
+@property (readonly) NEConfigurationManager *manager;
+@property (readonly) NSString *payloadType;
 
 + (id)getServiceIDForPayload:(id)arg1;
 + (void)profileMigrationComplete;

@@ -14,16 +14,16 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readonly) bool hasPeerId;
-@property(assign,readwrite) bool hasResult;
-@property(assign,readonly) bool hasResultString;
-@property(assign,readonly) bool hasSessionId;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSString * peerId;
-@property(assign,readwrite) unsigned int result;
-@property(assign,retain) NSString * resultString;
-@property(assign,retain) NSString * sessionId;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic, readonly) bool hasPeerId;
+@property (nonatomic) bool hasResult;
+@property (nonatomic, readonly) bool hasResultString;
+@property (nonatomic, readonly) bool hasSessionId;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSString *peerId;
+@property (nonatomic) unsigned int result;
+@property (nonatomic, retain) NSString *resultString;
+@property (nonatomic, retain) NSString *sessionId;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

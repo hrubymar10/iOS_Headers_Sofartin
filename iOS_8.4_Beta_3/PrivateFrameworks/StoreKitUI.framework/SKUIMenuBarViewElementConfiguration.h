@@ -12,16 +12,16 @@
     SKUIMenuItemViewElement *_selectedMenuItemViewElement;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIMenuBarViewElementConfigurationDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long menuBarStyle;
-@property(getter=_needsReload,setter=_setNeedsReload:,assign,readwrite) bool needsReload;
-@property(assign,readonly) unsigned long long numberOfMenuItems;
-@property(getter=_reloadDelegate,setter=_setReloadDelegate:,assign,readwrite) <_SKUIMenuBarViewElementConfigurationReloadDelegate> * reloadDelegate;
-@property(assign,readonly) SKUIMenuItemViewElement * selectedMenuItemViewElement;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIMenuBarViewElementConfigurationDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long menuBarStyle;
+@property (getter=_needsReload, setter=_setNeedsReload:, nonatomic) bool needsReload;
+@property (nonatomic, readonly) unsigned long long numberOfMenuItems;
+@property (getter=_reloadDelegate, setter=_setReloadDelegate:, nonatomic) <_SKUIMenuBarViewElementConfigurationReloadDelegate> *reloadDelegate;
+@property (nonatomic, readonly) SKUIMenuItemViewElement *selectedMenuItemViewElement;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_ensureDataLoaded;

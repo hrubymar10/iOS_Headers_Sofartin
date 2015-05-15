@@ -7,8 +7,8 @@
     <TSCH3DAxisLabelPositioner><NSObject> *mValueLabelPositioner;
 }
 
-@property(assign,retain) <TSCH3DAxisLabelPositioner> * categoryLabelPositioner;
-@property(assign,retain) <TSCH3DAxisLabelPositioner> * valueLabelPositioner;
+@property (retain) <TSCH3DAxisLabelPositioner> *categoryLabelPositioner;
+@property (retain) <TSCH3DAxisLabelPositioner> *valueLabelPositioner;
 
 + (void)cacheValueAxisLabelAlignmentForScene:(id)arg1;
 + (struct TSCH3DScenePart { id x1; id x2; })partWithEnumerator:(id)arg1 chartInfo:(id)arg2 styleIndex:(unsigned long long)arg3;

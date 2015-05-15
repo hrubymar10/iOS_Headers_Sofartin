@@ -4,10 +4,10 @@
 
 @interface DOMHTMLMetaElement : DOMHTMLElement
 
-@property(assign,copy) NSString * content;
-@property(assign,copy) NSString * httpEquiv;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * scheme;
+@property (copy) NSString *content;
+@property (copy) NSString *httpEquiv;
+@property (copy) NSString *name;
+@property (copy) NSString *scheme;
 
 - (id)content;
 - (id)httpEquiv;

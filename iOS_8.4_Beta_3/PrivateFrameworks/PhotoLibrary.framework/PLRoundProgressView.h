@@ -18,7 +18,7 @@
     double _uiProgress;
 }
 
-@property(assign,readonly) long long style;
+@property (nonatomic, readonly) long long style;
 
 - (void)_setupSubviews;
 - (void)dealloc;

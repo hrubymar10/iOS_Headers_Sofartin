@@ -8,9 +8,9 @@
     UIViewController *_owningViewController;
 }
 
-@property(assign,retain) _HKMedicalIDData * data;
-@property(assign,readonly) bool isInEditMode;
-@property(assign,readwrite) UIViewController * owningViewController;
+@property (nonatomic, retain) _HKMedicalIDData *data;
+@property (nonatomic, readonly) bool isInEditMode;
+@property (nonatomic) UIViewController *owningViewController;
 
 - (void).cxx_destruct;
 - (id)_dequeueNoValueCellInTableView:(id)arg1 withTitle:(id)arg2;

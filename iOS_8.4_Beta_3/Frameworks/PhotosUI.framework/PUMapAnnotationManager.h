@@ -37,15 +37,15 @@
     int _updateId;
 }
 
-@property(assign,readwrite) bool alwaysFadeRemoves;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } annotationSize;
-@property(assign,readonly) NSArray * annotations;
-@property(assign,readwrite) <PUMapAnnotationManagerDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MKMapView * mapView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool alwaysFadeRemoves;
+@property (nonatomic) struct CGSize { double x1; double x2; } annotationSize;
+@property (nonatomic, readonly) NSArray *annotations;
+@property (nonatomic) <PUMapAnnotationManagerDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MKMapView *mapView;
+@property (readonly) Class superclass;
 
 + (bool)coordinateRegion:(struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; })arg1 overlapsWithCoordinateRegion2:(struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; })arg2;
 + (void)mergeOverlappingAnnotations:(id)arg1 withQuadtree:(id)arg2 treeLevel:(unsigned int)arg3 coordRegion:(struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; })arg4 mapSize:(struct CGSize { double x1; double x2; })arg5 annotationSize:(struct CGSize { double x1; double x2; })arg6;

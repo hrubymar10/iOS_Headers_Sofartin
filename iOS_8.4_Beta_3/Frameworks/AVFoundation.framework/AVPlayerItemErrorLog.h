@@ -6,8 +6,8 @@
     AVPlayerItemErrorLogInternal *_playerItemErrorLog;
 }
 
-@property(assign,readonly) NSArray * events;
-@property(assign,readonly) unsigned long long extendedLogDataStringEncoding;
+@property (nonatomic, readonly) NSArray *events;
+@property (nonatomic, readonly) unsigned long long extendedLogDataStringEncoding;
 
 - (id)_errorLogArray;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

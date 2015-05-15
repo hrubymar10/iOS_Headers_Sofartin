@@ -10,11 +10,11 @@
     NSString *_numberOfUserReviewsString;
 }
 
-@property(assign,readwrite) float averageUserRating;
-@property(assign,readwrite) long long numberOfUserRatings;
-@property(assign,copy) NSString * numberOfUserRatingsString;
-@property(assign,readwrite) long long numberOfUserReviews;
-@property(assign,copy) NSString * numberOfUserReviewsString;
+@property (nonatomic) float averageUserRating;
+@property (nonatomic) long long numberOfUserRatings;
+@property (nonatomic, copy) NSString *numberOfUserRatingsString;
+@property (nonatomic) long long numberOfUserReviews;
+@property (nonatomic, copy) NSString *numberOfUserReviewsString;
 
 - (float)averageUserRating;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

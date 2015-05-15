@@ -8,7 +8,7 @@
     NSMutableArray *_records;
 }
 
-@property(assign,readonly) NSArray * records;
+@property (nonatomic, readonly) NSArray *records;
 
 + (bool)supportsSecureCoding;
 

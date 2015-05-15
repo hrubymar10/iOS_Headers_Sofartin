@@ -7,9 +7,9 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSAttributedString * disclosureArrow;
-@property(assign,readonly) NSAttributedString * string;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, readonly) NSAttributedString *disclosureArrow;
+@property (nonatomic, readonly) NSAttributedString *string;
+@property (nonatomic, readonly) NSURL *url;
 
 - (void).cxx_destruct;
 - (id)attributedStringWithImage:(id)arg1;

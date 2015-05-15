@@ -14,23 +14,23 @@
     bool _shouldSendRouteWithStatus;
 }
 
-@property(assign,readwrite) unsigned long long announcementStage;
-@property(assign,readwrite) <GEONavigationDelegate> * delegate;
-@property(assign,readonly) NSString * destinationName;
-@property(assign,readonly) double distanceRemainingOnRoute;
-@property(assign,readonly) double distanceToManeuverEnd;
-@property(assign,readonly) double distanceToManeuverStart;
-@property(assign,readonly) double distanceToRoute;
-@property(assign,readonly) bool isNavigating;
-@property(assign,readonly) GEOLocation * location;
-@property(assign,readonly) bool locationUnreliable;
-@property(assign,readwrite) int navigationState;
-@property(assign,readwrite) int navigationTransportType;
-@property(assign,readonly) unsigned long long nextAnnouncementStage;
-@property(assign,readonly) double remainingTime;
-@property(assign,readonly) GEOComposedRoute * route;
-@property(assign,readonly) GEORouteMatch * routeMatch;
-@property(assign,readonly) double timeUntilNextAnnouncement;
+@property (nonatomic) unsigned long long announcementStage;
+@property (nonatomic) <GEONavigationDelegate> *delegate;
+@property (nonatomic, readonly) NSString *destinationName;
+@property (nonatomic, readonly) double distanceRemainingOnRoute;
+@property (nonatomic, readonly) double distanceToManeuverEnd;
+@property (nonatomic, readonly) double distanceToManeuverStart;
+@property (nonatomic, readonly) double distanceToRoute;
+@property (nonatomic, readonly) bool isNavigating;
+@property (nonatomic, readonly) GEOLocation *location;
+@property (nonatomic, readonly) bool locationUnreliable;
+@property (nonatomic) int navigationState;
+@property (nonatomic) int navigationTransportType;
+@property (nonatomic, readonly) unsigned long long nextAnnouncementStage;
+@property (nonatomic, readonly) double remainingTime;
+@property (nonatomic, readonly) GEOComposedRoute *route;
+@property (nonatomic, readonly) GEORouteMatch *routeMatch;
+@property (nonatomic, readonly) double timeUntilNextAnnouncement;
 
 + (id)sharedInstance;
 

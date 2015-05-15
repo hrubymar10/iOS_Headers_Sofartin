@@ -8,15 +8,15 @@
     CNFRegController *_regController;
 }
 
-@property(assign,readonly) long long currentAppearanceStyle;
-@property(assign,retain) UIBarButtonItem * customLeftButton;
-@property(assign,retain) UIBarButtonItem * customRightButton;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CNFRegFirstRunDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CNFRegController * regController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) long long currentAppearanceStyle;
+@property (nonatomic, retain) UIBarButtonItem *customLeftButton;
+@property (nonatomic, retain) UIBarButtonItem *customRightButton;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CNFRegFirstRunDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CNFRegController *regController;
+@property (readonly) Class superclass;
 
 - (void)_getStartedPressed:(id)arg1;
 - (void)_learnMorePressed:(id)arg1;

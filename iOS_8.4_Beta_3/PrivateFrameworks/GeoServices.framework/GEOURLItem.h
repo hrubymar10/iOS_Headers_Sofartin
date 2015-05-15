@@ -11,12 +11,12 @@
     GEOPlace *_place;
 }
 
-@property(assign,readwrite) bool currentLocation;
-@property(assign,readwrite) bool hasCurrentLocation;
-@property(assign,readonly) bool hasMapItemStorage;
-@property(assign,readonly) bool hasPlace;
-@property(assign,retain) GEOMapItemStorage * mapItemStorage;
-@property(assign,retain) GEOPlace * place;
+@property (nonatomic) bool currentLocation;
+@property (nonatomic) bool hasCurrentLocation;
+@property (nonatomic, readonly) bool hasMapItemStorage;
+@property (nonatomic, readonly) bool hasPlace;
+@property (nonatomic, retain) GEOMapItemStorage *mapItemStorage;
+@property (nonatomic, retain) GEOPlace *place;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

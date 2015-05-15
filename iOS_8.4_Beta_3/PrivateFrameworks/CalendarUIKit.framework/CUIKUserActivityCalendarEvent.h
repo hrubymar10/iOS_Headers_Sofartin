@@ -9,8 +9,8 @@
     unsigned long long _view;
 }
 
-@property(assign,readonly) NSString * title;
-@property(assign,readonly) unsigned long long view;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) unsigned long long view;
 
 - (void).cxx_destruct;
 - (id)dictionary;

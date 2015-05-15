@@ -8,9 +8,9 @@
     NSArray *_whitelistDestinations;
 }
 
-@property(assign,retain) NSArray * destinationsWithPasswords;
-@property(assign,retain) NSArray * titlesAndDescriptions;
-@property(assign,retain) NSArray * whitelistDestinations;
+@property (nonatomic, retain) NSArray *destinationsWithPasswords;
+@property (nonatomic, retain) NSArray *titlesAndDescriptions;
+@property (nonatomic, retain) NSArray *whitelistDestinations;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

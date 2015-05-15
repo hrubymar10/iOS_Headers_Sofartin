@@ -22,11 +22,11 @@
     unsigned long long _underlineCount;
 }
 
-@property(assign,retain) NSString * backgroundColor;
-@property(assign,readwrite) long long baseWritingDirection;
-@property(assign,readonly) NSAttributedString * body;
-@property(assign,retain) NSArray * fileTransferGUIDs;
-@property(assign,retain) NSString * foregroundColor;
+@property (nonatomic, retain) NSString *backgroundColor;
+@property long long baseWritingDirection;
+@property (nonatomic, readonly) NSAttributedString *body;
+@property (nonatomic, retain) NSArray *fileTransferGUIDs;
+@property (nonatomic, retain) NSString *foregroundColor;
 
 - (void)_clearIvars;
 - (void)_incrementMessagePartNumber;

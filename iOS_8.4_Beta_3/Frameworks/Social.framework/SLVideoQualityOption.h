@@ -9,10 +9,10 @@
     long long _size;
 }
 
-@property(assign,retain) NSString * exportPreset;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) long long size;
+@property (nonatomic, retain) NSString *exportPreset;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) long long size;
 
 + (id)videoQualityOptionForIdentifier:(id)arg1;
 

@@ -12,8 +12,8 @@
     NSArray *_preorders;
 }
 
-@property(assign,readonly) NSArray * itemKinds;
-@property(assign,readonly) NSArray * preorders;
+@property (readonly) NSArray *itemKinds;
+@property (readonly) NSArray *preorders;
 
 + (id)bookStoreItemKinds;
 + (id)musicStoreItemKinds;

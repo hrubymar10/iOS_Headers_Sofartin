@@ -9,10 +9,10 @@
     NSMutableArray *_observers;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,readwrite) bool interrupted;
-@property(getter=isInvalid,assign,readwrite) bool invalid;
-@property(assign,retain) NSMutableArray * observers;
+@property (retain) NSXPCConnection *connection;
+@property bool interrupted;
+@property (getter=isInvalid) bool invalid;
+@property (retain) NSMutableArray *observers;
 
 + (id)advertiserClientInterface;
 + (id)advertiserInterface;

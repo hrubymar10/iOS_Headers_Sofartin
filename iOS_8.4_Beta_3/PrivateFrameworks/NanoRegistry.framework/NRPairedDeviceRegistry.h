@@ -25,30 +25,30 @@
     bool _xpcConnectionInvalidated;
 }
 
-@property(assign,retain) NSUUID * clientUUID;
-@property(assign,readwrite) unsigned short compatibilityState;
-@property(assign,retain) NSObject<OS_dispatch_queue> * connectQueue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSObject<OS_dispatch_queue> * deviceQueue;
-@property(assign,retain) NSMutableArray * devicesBlocks;
-@property(assign,retain) NSMutableArray * finishedPairingSemaphores;
-@property(assign,readwrite) bool hasSomeEntitlements;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long lastUnpairReason;
-@property(assign,retain) NSMutableDictionary * mutableDeviceDictionary;
-@property(assign,retain) NRFrameworkDevice * pairedDevice;
-@property(assign,readwrite) long long pairingCompatibilityVersion;
-@property(assign,retain) NRFrameworkDevice * pairingDevice;
-@property(assign,retain) NSUUID * pairingDeviceID;
-@property(assign,retain) NSObject<OS_dispatch_queue> * pdrQueue;
-@property(assign,readwrite) double reconnectDelay;
-@property(assign,retain) NSObject<OS_dispatch_queue> * reconnectQueue;
-@property(assign,readonly) unsigned long long status;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSXPCConnection * xpcConnection;
-@property(assign,readwrite) bool xpcConnectionInterrupted;
-@property(assign,readwrite) bool xpcConnectionInvalidated;
+@property (nonatomic, retain) NSUUID *clientUUID;
+@property (nonatomic) unsigned short compatibilityState;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *connectQueue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *deviceQueue;
+@property (nonatomic, retain) NSMutableArray *devicesBlocks;
+@property (nonatomic, retain) NSMutableArray *finishedPairingSemaphores;
+@property (nonatomic) bool hasSomeEntitlements;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long lastUnpairReason;
+@property (nonatomic, retain) NSMutableDictionary *mutableDeviceDictionary;
+@property (nonatomic, retain) NRFrameworkDevice *pairedDevice;
+@property (nonatomic) long long pairingCompatibilityVersion;
+@property (nonatomic, retain) NRFrameworkDevice *pairingDevice;
+@property (nonatomic, retain) NSUUID *pairingDeviceID;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *pdrQueue;
+@property (nonatomic) double reconnectDelay;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *reconnectQueue;
+@property (nonatomic, readonly) unsigned long long status;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
+@property (nonatomic) bool xpcConnectionInterrupted;
+@property (nonatomic) bool xpcConnectionInvalidated;
 
 + (id)sharedInstance;
 

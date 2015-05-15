@@ -6,7 +6,7 @@
     ISOperationQueue *_operationQueue;
 }
 
-@property(assign,retain) ISOperationQueue * operationQueue;
+@property (nonatomic, retain) ISOperationQueue *operationQueue;
 
 - (id)_poolOperationForOperation:(id)arg1 flags:(long long)arg2;
 - (void)addOperation:(id)arg1 withFlags:(long long)arg2;

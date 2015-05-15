@@ -4,13 +4,13 @@
 
 @interface SACalendarDefaultSourceGetCompleted : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,retain) SACalendarSource * aceCalendarSource;
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SACalendarSource *aceCalendarSource;
+@property (nonatomic, copy) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
 
 + (id)defaultSourceGetCompleted;
 + (id)defaultSourceGetCompletedWithAceCalendarSource:(id)arg1;

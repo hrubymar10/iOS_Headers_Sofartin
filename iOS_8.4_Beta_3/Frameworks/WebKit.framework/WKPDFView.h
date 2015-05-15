@@ -74,12 +74,12 @@
     WKWebView *_webView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct CGPDFDocument { }* pdfDocument;
-@property(assign,readonly) NSString * suggestedFilename;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct CGPDFDocument { }*pdfDocument;
+@property (nonatomic, readonly) NSString *suggestedFilename;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

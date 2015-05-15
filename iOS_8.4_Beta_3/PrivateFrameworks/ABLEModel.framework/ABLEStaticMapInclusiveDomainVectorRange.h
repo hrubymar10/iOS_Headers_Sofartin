@@ -8,9 +8,9 @@
     NSArray *_domainVector;
 }
 
-@property(assign,readonly) double domainMax;
-@property(assign,readonly) double domainMin;
-@property(assign,readonly) NSArray * domainVector;
+@property (readonly) double domainMax;
+@property (readonly) double domainMin;
+@property (readonly) NSArray *domainVector;
 
 - (void).cxx_destruct;
 - (double)domainMax;

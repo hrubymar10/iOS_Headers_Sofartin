@@ -6,7 +6,7 @@
     NSURL *_destinationWaveformURL;
 }
 
-@property(assign,readonly) NSURL * destinationWaveformURL;
+@property (nonatomic, readonly) NSURL *destinationWaveformURL;
 
 - (void).cxx_destruct;
 - (id)destinationWaveformURL;

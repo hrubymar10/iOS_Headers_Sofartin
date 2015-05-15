@@ -10,7 +10,7 @@
     NSArray *_people;
 }
 
-@property(assign,readonly) NSArray * people;
+@property (nonatomic, readonly) NSArray *people;
 
 - (void)dealloc;
 - (id)humanReadableResult;

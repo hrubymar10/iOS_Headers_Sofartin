@@ -11,16 +11,16 @@
     NSObject<OS_dispatch_queue> *_serviceQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) IDSService * idsService;
-@property(assign,retain) NSString * idsServiceName;
-@property(assign,readwrite) bool isConnected;
-@property(assign,retain) NSObject<OS_dispatch_source> * repeatPreventionCleanupTimer;
-@property(assign,retain) NSMutableDictionary * repeatPreventionRecords;
-@property(assign,retain) NSObject<OS_dispatch_queue> * serviceQueue;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) IDSService *idsService;
+@property (nonatomic, retain) NSString *idsServiceName;
+@property (nonatomic) bool isConnected;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *repeatPreventionCleanupTimer;
+@property (nonatomic, retain) NSMutableDictionary *repeatPreventionRecords;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *serviceQueue;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_handleConnectivityChange;

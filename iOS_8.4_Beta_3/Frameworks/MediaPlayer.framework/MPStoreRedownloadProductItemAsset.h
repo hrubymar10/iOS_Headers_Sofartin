@@ -6,11 +6,11 @@
     NSDictionary *_responseDictionary;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,copy) NSString * downloadKey;
-@property(assign,copy) NSString * flavor;
-@property(assign,copy) NSDictionary * responseDictionary;
-@property(assign,copy) NSArray * sinfs;
+@property (nonatomic, readonly, copy) NSURL *URL;
+@property (nonatomic, readonly, copy) NSString *downloadKey;
+@property (nonatomic, readonly, copy) NSString *flavor;
+@property (nonatomic, readonly, copy) NSDictionary *responseDictionary;
+@property (nonatomic, readonly, copy) NSArray *sinfs;
 
 - (void).cxx_destruct;
 - (id)URL;

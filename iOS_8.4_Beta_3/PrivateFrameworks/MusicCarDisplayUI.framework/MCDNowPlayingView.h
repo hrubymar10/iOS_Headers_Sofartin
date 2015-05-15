@@ -13,12 +13,12 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readonly) UILabel * albumLabel;
-@property(assign,readonly) UILabel * artistLabel;
-@property(assign,readonly) UIImageView * artworkView;
-@property(getter=isExplicitTrack,assign,readwrite) bool explicitTrack;
-@property(assign,readonly) MCDProgressView * progressView;
-@property(assign,readonly) UILabel * titleLabel;
+@property (nonatomic, readonly) UILabel *albumLabel;
+@property (nonatomic, readonly) UILabel *artistLabel;
+@property (nonatomic, readonly) UIImageView *artworkView;
+@property (getter=isExplicitTrack, nonatomic) bool explicitTrack;
+@property (nonatomic, readonly) MCDProgressView *progressView;
+@property (nonatomic, readonly) UILabel *titleLabel;
 
 - (void).cxx_destruct;
 - (id)_addLabelWithFont:(id)arg1;

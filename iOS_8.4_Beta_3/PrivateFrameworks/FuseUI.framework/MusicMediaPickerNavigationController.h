@@ -17,21 +17,21 @@
     NSMutableArray *_storeItemIDs;
 }
 
-@property(assign,readwrite) bool allowsMultipleSelection;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * collectionName;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hidesRightBarButtonItem;
-@property(assign,readwrite) bool includeStoreItemsInSearch;
-@property(getter=isInvokedForPlaylistEditing,assign,readwrite) bool invokedForPlaylistEditing;
-@property(assign,readwrite) <MusicMediaPickerDelegate> * mediaPickerDelegate;
-@property(assign,readonly) NSArray * pickedEntities;
-@property(assign,copy) NSString * prompt;
-@property(assign,readonly) UIBarButtonItem * rightBarButtonItem;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool allowsMultipleSelection;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, copy) NSString *collectionName;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hidesRightBarButtonItem;
+@property (nonatomic) bool includeStoreItemsInSearch;
+@property (getter=isInvokedForPlaylistEditing, nonatomic) bool invokedForPlaylistEditing;
+@property (nonatomic) <MusicMediaPickerDelegate> *mediaPickerDelegate;
+@property (nonatomic, readonly) NSArray *pickedEntities;
+@property (nonatomic, copy) NSString *prompt;
+@property (nonatomic, readonly) UIBarButtonItem *rightBarButtonItem;
+@property (nonatomic) long long state;
+@property (readonly) Class superclass;
 
 + (id)navigationController;
 

@@ -4,14 +4,14 @@
 
 @interface SASTCardItem : AceObject <SASTTemplateItem>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) SAUIDecoratedText * footnote;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUIDecoratedText * label;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SAUIDecoratedText * title;
-@property(assign,retain) SAUIColor * titleBackgroundColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) SAUIDecoratedText *footnote;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUIDecoratedText *label;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SAUIDecoratedText *title;
+@property (nonatomic, retain) SAUIColor *titleBackgroundColor;
 
 + (id)cardItem;
 + (id)cardItemWithDictionary:(id)arg1 context:(id)arg2;

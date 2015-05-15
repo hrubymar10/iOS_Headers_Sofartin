@@ -7,8 +7,8 @@
     NSString *_VPNUUID;
 }
 
-@property(assign,retain) NSArray * SafariDomains;
-@property(assign,retain) NSString * VPNUUID;
+@property (nonatomic, retain) NSArray *SafariDomains;
+@property (nonatomic, retain) NSString *VPNUUID;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

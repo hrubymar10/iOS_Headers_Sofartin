@@ -29,12 +29,12 @@
     NSMutableArray *_userTransactions;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * dispatchQueue;
-@property(assign,copy) id findPeerHandler;
-@property(assign,copy) id internalRequestHandler;
-@property(assign,copy) id requestHandler;
-@property(assign,copy) id stoppedHandler;
-@property(assign,copy) id transportSendMessage;
+@property (retain) NSObject<OS_dispatch_queue> *dispatchQueue;
+@property (copy) id findPeerHandler;
+@property (copy) id internalRequestHandler;
+@property (copy) id requestHandler;
+@property (copy) id stoppedHandler;
+@property (copy) id transportSendMessage;
 
 - (void).cxx_destruct;
 - (int)_clientHandleCommitResponse:(id)arg1;

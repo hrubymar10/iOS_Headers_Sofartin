@@ -9,10 +9,10 @@
     bool _inverted;
 }
 
-@property(assign,readonly) long long baseIdentifier;
-@property(assign,readonly) NSCharacterSet * characterSet;
-@property(assign,copy) NSString * charactersAddedToBase;
-@property(assign,readonly) bool inverted;
+@property (nonatomic, readonly) long long baseIdentifier;
+@property (nonatomic, readonly) NSCharacterSet *characterSet;
+@property (nonatomic, copy) NSString *charactersAddedToBase;
+@property (nonatomic, readonly) bool inverted;
 
 + (bool)supportsSecureCoding;
 

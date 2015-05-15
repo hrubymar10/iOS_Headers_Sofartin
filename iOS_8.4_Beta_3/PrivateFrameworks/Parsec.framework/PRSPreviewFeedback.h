@@ -7,8 +7,8 @@
     NSString *_local_result;
 }
 
-@property(assign,retain) NSString * fbr;
-@property(assign,retain) NSString * local_result;
+@property (nonatomic, retain) NSString *fbr;
+@property (nonatomic, retain) NSString *local_result;
 
 + (bool)supportsSecureCoding;
 

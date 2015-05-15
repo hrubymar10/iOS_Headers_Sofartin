@@ -8,9 +8,9 @@
     UIView *_view;
 }
 
-@property(assign,readwrite) double bannerOffset;
-@property(assign,retain) UIView * bannerView;
-@property(assign,retain) UIView * view;
+@property (nonatomic) double bannerOffset;
+@property (nonatomic, retain) UIView *bannerView;
+@property (nonatomic, retain) UIView *view;
 
 - (void).cxx_destruct;
 - (void)animateYPosition:(double)arg1;

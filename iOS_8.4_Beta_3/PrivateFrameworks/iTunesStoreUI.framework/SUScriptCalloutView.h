@@ -8,8 +8,8 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
+@property (copy) NSString *subtitle;
+@property (copy) NSString *title;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

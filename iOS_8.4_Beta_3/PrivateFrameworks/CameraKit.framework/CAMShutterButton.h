@@ -20,16 +20,16 @@
     bool _spinning;
 }
 
-@property(assign,readonly) UIView * _innerView;
-@property(assign,readonly) UIImageView * _outerImageView;
-@property(assign,readonly) UIView * _outerView;
-@property(assign,readonly) UIActivityIndicatorView * _progressActivityIndicatorView;
-@property(assign,readonly) CAMTimelapseShutterRingView * _timelapseOuterView;
-@property(assign,readwrite) long long mode;
-@property(getter=isPulsing,assign,readwrite) bool pulsing;
-@property(assign,readwrite) bool showDisabled;
-@property(assign,readwrite) struct CAMShutterButtonSpec { double x1; double x2; double x3; double x4; } spec;
-@property(getter=isSpinning,assign,readwrite) bool spinning;
+@property (nonatomic, readonly) UIView *_innerView;
+@property (nonatomic, readonly) UIImageView *_outerImageView;
+@property (nonatomic, readonly) UIView *_outerView;
+@property (nonatomic, readonly) UIActivityIndicatorView *_progressActivityIndicatorView;
+@property (nonatomic, readonly) CAMTimelapseShutterRingView *_timelapseOuterView;
+@property (nonatomic) long long mode;
+@property (getter=isPulsing, nonatomic) bool pulsing;
+@property (nonatomic) bool showDisabled;
+@property (nonatomic) struct CAMShutterButtonSpec { double x1; double x2; double x3; double x4; } spec;
+@property (getter=isSpinning, nonatomic) bool spinning;
 
 + (id)shutterButton;
 + (id)shutterButtonWithSpec:(struct CAMShutterButtonSpec { double x1; double x2; double x3; double x4; })arg1;

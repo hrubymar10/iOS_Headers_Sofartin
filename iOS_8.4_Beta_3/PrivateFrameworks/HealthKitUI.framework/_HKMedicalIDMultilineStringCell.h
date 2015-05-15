@@ -8,8 +8,8 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) NSString * stringValue;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSString *stringValue;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_contentSizeCategoryDidChange:(id)arg1;

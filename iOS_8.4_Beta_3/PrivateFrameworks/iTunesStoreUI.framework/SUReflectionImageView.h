@@ -12,8 +12,8 @@
     bool _useImageSize;
 }
 
-@property(assign,readwrite) bool nonSquareImage;
-@property(assign,readwrite) double reflectionSpacing;
+@property (nonatomic) bool nonSquareImage;
+@property (nonatomic) double reflectionSpacing;
 
 - (void)dealloc;
 - (id)init;

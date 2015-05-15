@@ -9,10 +9,10 @@
     NSURL *_url;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,retain) SSVURLDataConsumer * dataConsumer;
-@property(assign,readwrite) <SKUIArtworkRequestDelegate> * delegate;
-@property(assign,copy) NSString * imageName;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, retain) SSVURLDataConsumer *dataConsumer;
+@property (nonatomic) <SKUIArtworkRequestDelegate> *delegate;
+@property (nonatomic, copy) NSString *imageName;
 
 - (void).cxx_destruct;
 - (id)URL;

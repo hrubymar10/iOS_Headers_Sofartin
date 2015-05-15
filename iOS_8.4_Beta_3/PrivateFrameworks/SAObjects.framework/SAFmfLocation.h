@@ -4,10 +4,10 @@
 
 @interface SAFmfLocation : SALocation
 
-@property(assign,retain) NSNumber * distance;
-@property(assign,copy) NSString * emailAddress;
-@property(assign,retain) SAPersonAttribute * friend;
-@property(assign,retain) NSNumber * locationDate;
+@property (nonatomic, retain) NSNumber *distance;
+@property (nonatomic, copy) NSString *emailAddress;
+@property (nonatomic, retain) SAPersonAttribute *friend;
+@property (nonatomic, retain) NSNumber *locationDate;
 
 + (id)location;
 + (id)locationWithDictionary:(id)arg1 context:(id)arg2;

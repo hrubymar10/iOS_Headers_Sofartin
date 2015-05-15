@@ -6,8 +6,8 @@
     NSArray *_sections;
 }
 
-@property(assign,retain) IKHeaderElement * header;
-@property(assign,retain) NSArray * sections;
+@property (nonatomic, readonly, retain) IKHeaderElement *header;
+@property (nonatomic, readonly, retain) NSArray *sections;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

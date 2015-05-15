@@ -6,7 +6,7 @@
     bool _finished;
 }
 
-@property(assign,readwrite) bool finished;
+@property bool finished;
 
 - (void)_onqueue_cancelByProducingResumeData:(id)arg1;
 - (void)_onqueue_didFinishDownloadingToURL:(id)arg1;

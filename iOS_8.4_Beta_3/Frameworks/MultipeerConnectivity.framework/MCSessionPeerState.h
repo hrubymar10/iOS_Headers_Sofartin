@@ -15,16 +15,16 @@
     long long _state;
 }
 
-@property(assign,readwrite) long long certificateDecision;
-@property(assign,readwrite) bool connectPeerCalled;
-@property(assign,retain) NSMutableDictionary * incomingStreams;
-@property(assign,copy) NSData * nearbyConnectionData;
-@property(assign,readonly) unsigned int newStreamID;
-@property(assign,readonly) unsigned int newStreamOpenRequestID;
-@property(assign,retain) NSMutableDictionary * outgoingStreamRequests;
-@property(assign,retain) NSMutableDictionary * outgoingStreams;
-@property(assign,copy) MCPeerID * peerID;
-@property(assign,readwrite) long long state;
+@property (nonatomic) long long certificateDecision;
+@property (nonatomic) bool connectPeerCalled;
+@property (nonatomic, retain) NSMutableDictionary *incomingStreams;
+@property (nonatomic, copy) NSData *nearbyConnectionData;
+@property (nonatomic, readonly) unsigned int newStreamID;
+@property (nonatomic, readonly) unsigned int newStreamOpenRequestID;
+@property (nonatomic, retain) NSMutableDictionary *outgoingStreamRequests;
+@property (nonatomic, retain) NSMutableDictionary *outgoingStreams;
+@property (nonatomic, readonly, copy) MCPeerID *peerID;
+@property (nonatomic) long long state;
 
 - (long long)certificateDecision;
 - (bool)connectPeerCalled;

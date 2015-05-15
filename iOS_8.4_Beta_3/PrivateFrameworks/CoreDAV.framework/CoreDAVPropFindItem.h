@@ -9,10 +9,10 @@
     CoreDAVItemWithNoChildren *_propName;
 }
 
-@property(assign,retain) CoreDAVItemWithNoChildren * allProp;
-@property(assign,retain) CoreDAVItem * include;
-@property(assign,retain) CoreDAVItem * prop;
-@property(assign,retain) CoreDAVItemWithNoChildren * propName;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *allProp;
+@property (nonatomic, retain) CoreDAVItem *include;
+@property (nonatomic, retain) CoreDAVItem *prop;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *propName;
 
 + (id)copyParseRules;
 

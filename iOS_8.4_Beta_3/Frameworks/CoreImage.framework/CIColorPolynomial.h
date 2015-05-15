@@ -10,11 +10,11 @@
     CIVector *inputRedCoefficients;
 }
 
-@property(assign,retain) CIVector * inputAlphaCoefficients;
-@property(assign,retain) CIVector * inputBlueCoefficients;
-@property(assign,retain) CIVector * inputGreenCoefficients;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIVector * inputRedCoefficients;
+@property (nonatomic, retain) CIVector *inputAlphaCoefficients;
+@property (nonatomic, retain) CIVector *inputBlueCoefficients;
+@property (nonatomic, retain) CIVector *inputGreenCoefficients;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIVector *inputRedCoefficients;
 
 + (id)customAttributes;
 

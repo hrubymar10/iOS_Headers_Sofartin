@@ -6,11 +6,11 @@
     <CKTranscriptJunkHeaderDelegate> *_delegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKTranscriptJunkHeaderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKTranscriptJunkHeaderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_ignoreButtonPressed:(id)arg1;
 - (void)_reportJunkButtonPressed:(id)arg1;

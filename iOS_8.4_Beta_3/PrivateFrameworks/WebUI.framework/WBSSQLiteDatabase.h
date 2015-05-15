@@ -8,12 +8,12 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) long long changedRowCount;
-@property(assign,readonly) struct sqlite3 { }* handle;
-@property(assign,readonly) int lastErrorCode;
-@property(assign,readonly) NSString * lastErrorMessage;
-@property(assign,readonly) long long lastInsertRowID;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, readonly) long long changedRowCount;
+@property (nonatomic, readonly) struct sqlite3 { }*handle;
+@property (nonatomic, readonly) int lastErrorCode;
+@property (nonatomic, readonly) NSString *lastErrorMessage;
+@property (nonatomic, readonly) long long lastInsertRowID;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
 
 - (void).cxx_destruct;
 - (int)_openWithFlags:(int)arg1;

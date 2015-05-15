@@ -8,8 +8,8 @@
     TSCHSelectionPath *mSubSelection;
 }
 
-@property(assign,readonly) TSCHSelectionPathType * pathType;
-@property(assign,readonly) TSCHSelectionPath * subSelection;
+@property (nonatomic, readonly) TSCHSelectionPathType *pathType;
+@property (nonatomic, readonly) TSCHSelectionPath *subSelection;
 
 + (id)selectionPathWithPathType:(id)arg1 arguments:(id)arg2;
 + (id)selectionPathWithPathType:(id)arg1 arguments:(id)arg2 subSelection:(id)arg3;

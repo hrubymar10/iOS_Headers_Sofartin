@@ -9,9 +9,9 @@
     FBSystemServiceServer *_server;
 }
 
-@property(assign,readwrite) <FBSystemServiceDelegate> * delegate;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) FBSystemServiceServer * server;
+@property (nonatomic) <FBSystemServiceDelegate> *delegate;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) FBSystemServiceServer *server;
 
 + (id)sharedInstance;
 

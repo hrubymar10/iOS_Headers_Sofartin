@@ -29,25 +29,25 @@
     NSArray *_valuesToFetch;
 }
 
-@property(assign,retain) NSArray * affectedStores;
-@property(assign,retain) NSEntityDescription * entity;
-@property(assign,readonly) NSString * entityName;
-@property(assign,readwrite) unsigned long long fetchBatchSize;
-@property(assign,readwrite) unsigned long long fetchLimit;
-@property(assign,readwrite) unsigned long long fetchOffset;
-@property(assign,retain) NSPredicate * havingPredicate;
-@property(assign,readwrite) bool includesPendingChanges;
-@property(assign,readwrite) bool includesPropertyValues;
-@property(assign,readwrite) bool includesSubentities;
-@property(assign,retain) NSPredicate * predicate;
-@property(assign,copy) NSArray * propertiesToFetch;
-@property(assign,copy) NSArray * propertiesToGroupBy;
-@property(assign,copy) NSArray * relationshipKeyPathsForPrefetching;
-@property(assign,readwrite) unsigned long long resultType;
-@property(assign,readwrite) bool returnsDistinctResults;
-@property(assign,readwrite) bool returnsObjectsAsFaults;
-@property(assign,readwrite) bool shouldRefreshRefetchedObjects;
-@property(assign,retain) NSArray * sortDescriptors;
+@property (nonatomic, retain) NSArray *affectedStores;
+@property (nonatomic, retain) NSEntityDescription *entity;
+@property (nonatomic, readonly) NSString *entityName;
+@property (nonatomic) unsigned long long fetchBatchSize;
+@property (nonatomic) unsigned long long fetchLimit;
+@property (nonatomic) unsigned long long fetchOffset;
+@property (nonatomic, retain) NSPredicate *havingPredicate;
+@property (nonatomic) bool includesPendingChanges;
+@property (nonatomic) bool includesPropertyValues;
+@property (nonatomic) bool includesSubentities;
+@property (nonatomic, retain) NSPredicate *predicate;
+@property (nonatomic, copy) NSArray *propertiesToFetch;
+@property (nonatomic, copy) NSArray *propertiesToGroupBy;
+@property (nonatomic, copy) NSArray *relationshipKeyPathsForPrefetching;
+@property (nonatomic) unsigned long long resultType;
+@property (nonatomic) bool returnsDistinctResults;
+@property (nonatomic) bool returnsObjectsAsFaults;
+@property (nonatomic) bool shouldRefreshRefetchedObjects;
+@property (nonatomic, retain) NSArray *sortDescriptors;
 
 + (bool)accessInstanceVariablesDirectly;
 + (id)fetchRequestWithEntityName:(id)arg1;

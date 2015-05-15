@@ -12,8 +12,8 @@
     } _contentInsets;
 }
 
-@property(assign,retain) UIView * contentChildView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic, retain) UIView *contentChildView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
 
 - (void).cxx_destruct;
 - (void)applyLayoutAttributes:(id)arg1;

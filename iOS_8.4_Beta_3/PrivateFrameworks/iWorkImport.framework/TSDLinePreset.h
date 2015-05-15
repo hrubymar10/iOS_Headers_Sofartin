@@ -8,9 +8,9 @@
     TSDLineEnd *mTailLineEnd;
 }
 
-@property(assign,copy) TSDLineEnd * headLineEnd;
-@property(assign,copy) TSDStroke * stroke;
-@property(assign,copy) TSDLineEnd * tailLineEnd;
+@property (nonatomic, readonly, copy) TSDLineEnd *headLineEnd;
+@property (nonatomic, readonly, copy) TSDStroke *stroke;
+@property (nonatomic, readonly, copy) TSDLineEnd *tailLineEnd;
 
 + (id)lineWithStroke:(id)arg1 headLineEnd:(id)arg2 tailLineEnd:(id)arg3;
 

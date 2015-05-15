@@ -4,10 +4,10 @@
 
 @interface PKPaymentCardDataItem : PKPaymentDataItem
 
-@property(assign,readonly) CNContact * billingAddress;
-@property(assign,readonly) PKPaymentPass * pass;
-@property(assign,readonly) PKPaymentApplication * paymentApplication;
-@property(assign,readonly) bool requiresBillingAddress;
+@property (nonatomic, readonly) CNContact *billingAddress;
+@property (nonatomic, readonly) PKPaymentPass *pass;
+@property (nonatomic, readonly) PKPaymentApplication *paymentApplication;
+@property (nonatomic, readonly) bool requiresBillingAddress;
 
 + (long long)dataType;
 

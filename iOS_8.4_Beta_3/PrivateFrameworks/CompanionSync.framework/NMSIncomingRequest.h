@@ -13,18 +13,18 @@
     NMSOutgoingResponse *_response;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool expectsResponse;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * idsIdentifier;
-@property(assign,readwrite) NMSMessageCenter * messageCenter;
-@property(assign,readwrite) unsigned short messageID;
-@property(assign,retain) id pbRequest;
-@property(assign,readwrite) unsigned long long priority;
-@property(assign,retain) NMSOutgoingResponse * response;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSData *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool expectsResponse;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *idsIdentifier;
+@property (nonatomic) NMSMessageCenter *messageCenter;
+@property (nonatomic) unsigned short messageID;
+@property (nonatomic, retain) id pbRequest;
+@property (nonatomic) unsigned long long priority;
+@property (nonatomic, retain) NMSOutgoingResponse *response;
+@property (readonly) Class superclass;
 
 + (bool)allowsUnrepliedRequestsForUnitTesting;
 + (void)setAllowsUnrepliedRequestsForUnitTesting:(bool)arg1;

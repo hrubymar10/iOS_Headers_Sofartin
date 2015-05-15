@@ -8,8 +8,8 @@
     NSString *personalizedBaseName;
 }
 
-@property(assign,retain) UIView * justTextContainerView2;
-@property(assign,retain) NSString * personalizedBaseName;
+@property (nonatomic, retain) UIView *justTextContainerView2;
+@property (nonatomic, retain) NSString *personalizedBaseName;
 
 - (void)dealloc;
 - (id)devicePickerLabel;

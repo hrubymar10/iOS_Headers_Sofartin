@@ -6,7 +6,7 @@
     NSPointerArray *_cells;
 }
 
-@property(assign,retain) NSPointerArray * cells;
+@property (nonatomic, retain) NSPointerArray *cells;
 
 - (id)addCell:(id)arg1;
 - (id)cellAtIndex:(unsigned long long)arg1;

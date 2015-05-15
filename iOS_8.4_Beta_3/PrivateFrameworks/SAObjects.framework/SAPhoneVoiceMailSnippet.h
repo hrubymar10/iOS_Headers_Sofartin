@@ -4,10 +4,10 @@
 
 @interface SAPhoneVoiceMailSnippet : SAUISnippet
 
-@property(assign,copy) NSNumber * autoPlay;
-@property(assign,copy) NSArray * calls;
-@property(assign,copy) NSArray * playVoiceMailCommands;
-@property(assign,retain) <SAClientBoundCommand> * postPlayCommand;
+@property (nonatomic, copy) NSNumber *autoPlay;
+@property (nonatomic, copy) NSArray *calls;
+@property (nonatomic, copy) NSArray *playVoiceMailCommands;
+@property (nonatomic, retain) <SAClientBoundCommand> *postPlayCommand;
 
 + (id)voiceMailSnippet;
 + (id)voiceMailSnippetWithDictionary:(id)arg1 context:(id)arg2;

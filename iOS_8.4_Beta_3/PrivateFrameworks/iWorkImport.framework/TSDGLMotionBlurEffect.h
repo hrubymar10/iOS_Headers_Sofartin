@@ -33,11 +33,11 @@
     TSDGLShader *_velocityVisualizerShader;
 }
 
-@property(assign,retain) TSDGLState * GLState;
-@property(assign,readwrite) long long debugDrawMode;
-@property(assign,readwrite) double framebufferScale;
-@property(assign,readwrite) bool isSingleObject;
-@property(assign,readwrite) double motionBlurStrength;
+@property (nonatomic, retain) TSDGLState *GLState;
+@property (nonatomic) long long debugDrawMode;
+@property (nonatomic) double framebufferScale;
+@property (nonatomic) bool isSingleObject;
+@property (nonatomic) double motionBlurStrength;
 
 - (id)GLState;
 - (void)bindColorAndVelocityFramebuffer;

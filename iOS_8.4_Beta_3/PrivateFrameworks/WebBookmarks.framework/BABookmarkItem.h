@@ -7,8 +7,8 @@
     WebBookmarkCollection *_collection;
 }
 
-@property(assign,retain) WebBookmark * bookmark;
-@property(assign,readonly) WebBookmarkCollection * collection;
+@property (nonatomic, retain) WebBookmark *bookmark;
+@property (nonatomic, readonly) WebBookmarkCollection *collection;
 
 - (id)bookmark;
 - (id)collection;

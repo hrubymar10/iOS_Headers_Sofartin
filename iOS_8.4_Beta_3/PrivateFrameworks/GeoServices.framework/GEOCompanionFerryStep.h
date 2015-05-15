@@ -9,8 +9,8 @@
     int _maneuverType;
 }
 
-@property(assign,readwrite) bool hasManeuverType;
-@property(assign,readwrite) int maneuverType;
+@property (nonatomic) bool hasManeuverType;
+@property (nonatomic) int maneuverType;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

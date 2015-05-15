@@ -10,11 +10,11 @@
     NSDate *_startDate;
 }
 
-@property(assign,readonly) NSNumber * averageSpeed;
-@property(assign,readonly) NSNumber * currentSpeed;
-@property(assign,readonly) NSNumber * distance;
-@property(assign,readonly) NSDate * endDate;
-@property(assign,readonly) NSDate * startDate;
+@property (nonatomic, readonly) NSNumber *averageSpeed;
+@property (nonatomic, readonly) NSNumber *currentSpeed;
+@property (nonatomic, readonly) NSNumber *distance;
+@property (nonatomic, readonly) NSDate *endDate;
+@property (nonatomic, readonly) NSDate *startDate;
 
 + (bool)supportsSecureCoding;
 

@@ -35,8 +35,8 @@
     bool mScalingInMaskMode;
 }
 
-@property(assign,readonly) TSDImageLayout * imageLayout;
-@property(assign,readwrite) double pathScale;
+@property (nonatomic, readonly) TSDImageLayout *imageLayout;
+@property (nonatomic) double pathScale;
 
 - (struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; })affineTransformForTightPathBounds;
 - (id)computeLayoutGeometry;

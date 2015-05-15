@@ -16,14 +16,14 @@
     unsigned int _sortOrdering;
 }
 
-@property(assign,readwrite) void* addressBook;
-@property(assign,readwrite) void* context;
-@property(assign,readwrite) <ABSearchOperationDelegate> * delegate;
-@property(assign,readwrite) void* internalSearchAddressBook;
-@property(assign,retain) NSPredicate * predicate;
-@property(assign,copy) NSArray * prefetchProperties;
-@property(assign,copy) id progressBlock;
-@property(assign,readwrite) unsigned int sortOrdering;
+@property (nonatomic) void*addressBook;
+@property (nonatomic) void*context;
+@property (nonatomic) <ABSearchOperationDelegate> *delegate;
+@property (nonatomic) void*internalSearchAddressBook;
+@property (nonatomic, retain) NSPredicate *predicate;
+@property (nonatomic, copy) NSArray *prefetchProperties;
+@property (nonatomic, copy) id progressBlock;
+@property (nonatomic) unsigned int sortOrdering;
 
 + (id)personPredicateWithAnyValueForProperty:(int)arg1 addressBook:(void*)arg2;
 + (id)personPredicateWithGroup:(void*)arg1 addressBook:(void*)arg2;

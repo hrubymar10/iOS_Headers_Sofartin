@@ -4,15 +4,15 @@
 
 @interface SAMetrics : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * category;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * originalCommandId;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSDictionary * timings;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic, copy) NSString *category;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *originalCommandId;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSDictionary *timings;
 
 + (id)metrics;
 + (id)metricsWithDictionary:(id)arg1 context:(id)arg2;

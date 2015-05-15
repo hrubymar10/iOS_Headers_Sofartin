@@ -4,25 +4,25 @@
 
 @interface ICSJournal : ICSComponent
 
-@property(assign,retain) NSArray * attach;
-@property(assign,retain) NSArray * attendee;
-@property(assign,readwrite) int classification;
-@property(assign,retain) ICSDate * created;
-@property(assign,retain) NSString * description;
-@property(assign,retain) ICSDate * dtstamp;
-@property(assign,retain) ICSDate * dtstart;
-@property(assign,retain) NSArray * exdate;
-@property(assign,retain) NSArray * exrule;
-@property(assign,retain) ICSDate * last_modified;
-@property(assign,retain) ICSUserAddress * organizer;
-@property(assign,retain) NSArray * rdate;
-@property(assign,retain) ICSDate * recurrence_id;
-@property(assign,retain) NSArray * rrule;
-@property(assign,readwrite) unsigned long long sequence;
-@property(assign,readwrite) int status;
-@property(assign,retain) NSString * summary;
-@property(assign,retain) NSString * uid;
-@property(assign,retain) NSURL * url;
+@property (retain) NSArray *attach;
+@property (retain) NSArray *attendee;
+@property int classification;
+@property (retain) ICSDate *created;
+@property (retain) NSString *description;
+@property (retain) ICSDate *dtstamp;
+@property (retain) ICSDate *dtstart;
+@property (retain) NSArray *exdate;
+@property (retain) NSArray *exrule;
+@property (retain) ICSDate *last_modified;
+@property (retain) ICSUserAddress *organizer;
+@property (retain) NSArray *rdate;
+@property (retain) ICSDate *recurrence_id;
+@property (retain) NSArray *rrule;
+@property unsigned long long sequence;
+@property int status;
+@property (retain) NSString *summary;
+@property (retain) NSString *uid;
+@property (retain) NSURL *url;
 
 + (id)name;
 

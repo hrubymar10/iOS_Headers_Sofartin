@@ -23,14 +23,14 @@
     NSObject<OS_dispatch_source> *_timer;
 }
 
-@property(assign,readwrite) unsigned long long batchingChanges;
-@property(assign,readwrite) double batchingDelay;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) <BRNotificationReceiverDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long pendingCount;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) unsigned long long batchingChanges;
+@property (nonatomic) double batchingDelay;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) <BRNotificationReceiverDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long pendingCount;
+@property (readonly) Class superclass;
 
 - (id)_getSender;
 - (void)_receiveUpdates:(id)arg1;

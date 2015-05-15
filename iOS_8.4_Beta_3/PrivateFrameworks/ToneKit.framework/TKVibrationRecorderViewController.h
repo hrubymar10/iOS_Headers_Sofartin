@@ -6,8 +6,8 @@
     TKVibrationRecorderContentViewController *_vibrationRecorderContentViewController;
 }
 
-@property(setter=_setVibrationRecorderContentViewController:,assign,retain) TKVibrationRecorderContentViewController * _vibrationRecorderContentViewController;
-@property(assign,readwrite) <TKVibrationRecorderViewControllerDelegate> * vibrationRecorderViewControllerDelegate;
+@property (setter=_setVibrationRecorderContentViewController:, nonatomic, retain) TKVibrationRecorderContentViewController *_vibrationRecorderContentViewController;
+@property (nonatomic) <TKVibrationRecorderViewControllerDelegate> *vibrationRecorderViewControllerDelegate;
 
 - (void)_setVibrationRecorderContentViewController:(id)arg1;
 - (id)_vibrationRecorderContentViewController;

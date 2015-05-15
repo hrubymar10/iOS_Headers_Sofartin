@@ -11,12 +11,12 @@
     bool _finished;
 }
 
-@property(assign,readwrite) bool allowsThumbnailGeneration;
-@property(assign,retain) NSError * error;
-@property(getter=isExecuting,assign,readwrite) bool executing;
-@property(getter=isFinished,assign,readwrite) bool finished;
-@property(assign,readonly) NSData * serializedQuickLookMetadataDictionary;
-@property(assign,readonly) NSDictionary * thumbnailImagesDictionary;
+@property bool allowsThumbnailGeneration;
+@property (retain) NSError *error;
+@property (getter=isExecuting, nonatomic) bool executing;
+@property (getter=isFinished, nonatomic) bool finished;
+@property (readonly) NSData *serializedQuickLookMetadataDictionary;
+@property (readonly) NSDictionary *thumbnailImagesDictionary;
 
 - (bool)_finishIfCancelled;
 - (void)_finishWithError:(id)arg1;

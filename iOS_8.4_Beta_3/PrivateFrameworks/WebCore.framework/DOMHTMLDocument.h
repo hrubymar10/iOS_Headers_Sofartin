@@ -4,19 +4,19 @@
 
 @interface DOMHTMLDocument : DOMDocument
 
-@property(assign,copy) NSString * alinkColor;
-@property(assign,copy) NSString * bgColor;
-@property(assign,copy) NSString * compatMode;
-@property(assign,copy) NSString * designMode;
-@property(assign,copy) NSString * dir;
-@property(assign,readonly) DOMHTMLCollection * embeds;
-@property(assign,copy) NSString * fgColor;
-@property(assign,readonly) int height;
-@property(assign,copy) NSString * linkColor;
-@property(assign,readonly) DOMHTMLCollection * plugins;
-@property(assign,readonly) DOMHTMLCollection * scripts;
-@property(assign,copy) NSString * vlinkColor;
-@property(assign,readonly) int width;
+@property (copy) NSString *alinkColor;
+@property (copy) NSString *bgColor;
+@property (readonly, copy) NSString *compatMode;
+@property (copy) NSString *designMode;
+@property (copy) NSString *dir;
+@property (readonly) DOMHTMLCollection *embeds;
+@property (copy) NSString *fgColor;
+@property (readonly) int height;
+@property (copy) NSString *linkColor;
+@property (readonly) DOMHTMLCollection *plugins;
+@property (readonly) DOMHTMLCollection *scripts;
+@property (copy) NSString *vlinkColor;
+@property (readonly) int width;
 
 + (id)mf_listElements;
 

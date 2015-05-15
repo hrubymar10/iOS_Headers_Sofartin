@@ -9,8 +9,8 @@
     unsigned long long _usage;
 }
 
-@property(assign,copy) id fireBlock;
-@property(assign,readonly) unsigned long long usage;
+@property (nonatomic, copy) id fireBlock;
+@property (nonatomic, readonly) unsigned long long usage;
 
 - (void).cxx_destruct;
 - (void)_monitorMemory;

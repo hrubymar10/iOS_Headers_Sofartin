@@ -6,7 +6,7 @@
     unsigned long long _animationType;
 }
 
-@property(assign,readwrite) unsigned long long animationType;
+@property (nonatomic) unsigned long long animationType;
 
 - (void)animateWithDelay:(double)arg1 completion:(id)arg2;
 - (unsigned long long)animationType;

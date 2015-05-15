@@ -12,7 +12,7 @@
     unsigned long long _size;
 }
 
-@property(assign,readonly) unsigned long long count;
+@property (readonly) unsigned long long count;
 
 - (void)addID:(unsigned int)arg1;
 - (void)addIDsFromList:(id)arg1;

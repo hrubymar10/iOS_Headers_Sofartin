@@ -4,7 +4,7 @@
 
 @interface PLCloudMasterMediaMetadata : PLManagedObject
 
-@property(assign,retain) PLCloudMaster * cloudMaster;
-@property(assign,retain) NSData * data;
+@property (nonatomic, retain) PLCloudMaster *cloudMaster;
+@property (nonatomic, retain) NSData *data;
 
 @end

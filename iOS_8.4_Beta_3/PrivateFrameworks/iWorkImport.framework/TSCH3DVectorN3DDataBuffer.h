@@ -32,7 +32,7 @@
     } mDimension;
 }
 
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{vector<unsigned char' */ struct * container; /* unknown property attribute:  std::__1::allocator<unsigned char> >=*}} */
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{vector<unsigned char' */ struct *container; /* unknown property attribute:  std::__1::allocator<unsigned char> >=*}} */
 
 + (id)bufferWithCapacity3DDimension:(const struct DataBuffer3DDimension { struct tvec3<int> { union { int x_1_2_1; int x_1_2_2; int x_1_2_3; } x_1_1_1; union { int x_2_2_1; int x_2_2_2; int x_2_2_3; } x_1_1_2; union { int x_3_2_1; int x_3_2_2; int x_3_2_3; } x_1_1_3; } x1; unsigned long long x2; }*)arg1;
 

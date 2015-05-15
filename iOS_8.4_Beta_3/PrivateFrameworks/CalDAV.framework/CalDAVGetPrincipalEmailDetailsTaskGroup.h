@@ -7,14 +7,14 @@
     NSURL *_principalURL;
 }
 
-@property(assign,retain) NSSet * addresses;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * displayName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CalDAVPrincipalEmailDetailsResult * principalResult;
-@property(assign,retain) NSURL * principalURL;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, retain) NSSet *addresses;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, retain) NSString *displayName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CalDAVPrincipalEmailDetailsResult *principalResult;
+@property (nonatomic, retain) NSURL *principalURL;
+@property (readonly) Class superclass;
 
 - (void)_finishWithError:(id)arg1;
 - (void)_processPropFind:(id)arg1;

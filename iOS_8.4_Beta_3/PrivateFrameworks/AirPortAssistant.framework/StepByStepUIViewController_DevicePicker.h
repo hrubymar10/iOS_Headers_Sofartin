@@ -15,9 +15,9 @@
     NSArray *sortedDevices;
 }
 
-@property(assign,retain) RecommendationActionController * actionController;
-@property(assign,readwrite) NSString * connectionMedium;
-@property(assign,retain) NSArray * sortedDevices;
+@property (nonatomic, retain) RecommendationActionController *actionController;
+@property (nonatomic) NSString *connectionMedium;
+@property (nonatomic, retain) NSArray *sortedDevices;
 
 - (id)actionController;
 - (id)connectionMedium;

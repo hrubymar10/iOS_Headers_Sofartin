@@ -11,11 +11,11 @@
     NSString *_title;
 }
 
-@property(assign,readonly) double duration;
-@property(assign,readonly) UIImage * image;
-@property(assign,readonly) unsigned long long number;
-@property(assign,readonly) double startTime;
-@property(assign,copy) NSString * title;
+@property (readonly) double duration;
+@property (readonly) UIImage *image;
+@property (readonly) unsigned long long number;
+@property (readonly) double startTime;
+@property (readonly, copy) NSString *title;
 
 + (id)chapterAtTime:(double)arg1 inChapters:(id)arg2;
 + (void)initialize;

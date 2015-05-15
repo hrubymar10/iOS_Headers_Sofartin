@@ -8,13 +8,13 @@
     NSNumber *_timestamp;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * phrase;
-@property(assign,copy) NSString * shortcut;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSNumber * timestamp;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *phrase;
+@property (nonatomic, copy) NSString *shortcut;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSNumber *timestamp;
 
 + (bool)supportsSecureCoding;
 + (id)valueWithEntry:(id)arg1;

@@ -23,15 +23,15 @@
     int m_writingDirection;
 }
 
-@property(assign,readwrite) bool containsEnd;
-@property(assign,readwrite) bool containsStart;
-@property(assign,readwrite) bool isFirstOnLine;
-@property(assign,readwrite) bool isHorizontal;
-@property(assign,readwrite) bool isInFixedPosition;
-@property(assign,readwrite) bool isLastOnLine;
-@property(assign,readwrite) bool isLineBreak;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rect;
-@property(assign,readwrite) int writingDirection;
+@property (nonatomic) bool containsEnd;
+@property (nonatomic) bool containsStart;
+@property (nonatomic) bool isFirstOnLine;
+@property (nonatomic) bool isHorizontal;
+@property (nonatomic) bool isInFixedPosition;
+@property (nonatomic) bool isLastOnLine;
+@property (nonatomic) bool isLineBreak;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rect;
+@property (nonatomic) int writingDirection;
 
 + (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })endEdge:(id)arg1;
 + (id)selectionRect;

@@ -11,11 +11,11 @@
     PLCoreStorage *_storage;
 }
 
-@property(assign,readonly) PLCoreAccountingGroup * accountingGroups;
-@property(assign,readonly) PLCoreAgent * agents;
-@property(assign,readonly) PLCoreRail * rails;
-@property(assign,readonly) PLCoreService * services;
-@property(assign,readonly) PLCoreStorage * storage;
+@property (readonly) PLCoreAccountingGroup *accountingGroups;
+@property (readonly) PLCoreAgent *agents;
+@property (readonly) PLCoreRail *rails;
+@property (readonly) PLCoreService *services;
+@property (readonly) PLCoreStorage *storage;
 
 + (bool)allowRun;
 + (bool)isDebugEnabled;

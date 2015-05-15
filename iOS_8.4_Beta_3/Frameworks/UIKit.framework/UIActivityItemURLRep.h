@@ -8,9 +8,9 @@
     UIImage *_thumbnail;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,readwrite) long long attachmentURLType;
-@property(assign,retain) UIImage * thumbnail;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic) long long attachmentURLType;
+@property (nonatomic, retain) UIImage *thumbnail;
 
 - (id)URL;
 - (long long)attachmentURLType;

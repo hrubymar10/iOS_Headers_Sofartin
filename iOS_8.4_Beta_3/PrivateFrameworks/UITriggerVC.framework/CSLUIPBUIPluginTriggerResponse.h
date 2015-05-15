@@ -7,9 +7,9 @@
     bool _success;
 }
 
-@property(assign,retain) NSString * errorString;
-@property(assign,readonly) bool hasErrorString;
-@property(assign,readwrite) bool success;
+@property (nonatomic, retain) NSString *errorString;
+@property (nonatomic, readonly) bool hasErrorString;
+@property (nonatomic) bool success;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

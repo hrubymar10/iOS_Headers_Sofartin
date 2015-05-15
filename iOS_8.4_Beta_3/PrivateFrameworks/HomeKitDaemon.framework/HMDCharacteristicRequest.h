@@ -6,7 +6,7 @@
     HMDCharacteristic *_characteristic;
 }
 
-@property(assign,readonly) HMDCharacteristic * characteristic;
+@property (nonatomic, readonly) HMDCharacteristic *characteristic;
 
 + (id)requestWithCharacteristic:(id)arg1;
 

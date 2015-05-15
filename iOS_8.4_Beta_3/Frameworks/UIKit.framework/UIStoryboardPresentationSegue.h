@@ -10,15 +10,15 @@
     bool _useDefaultModalTransitionStyle;
 }
 
-@property(assign,readwrite) bool animates;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long modalPresentationStyle;
-@property(assign,readwrite) long long modalTransitionStyle;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useDefaultModalPresentationStyle;
-@property(assign,readwrite) bool useDefaultModalTransitionStyle;
+@property (nonatomic) bool animates;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long modalPresentationStyle;
+@property (nonatomic) long long modalTransitionStyle;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useDefaultModalPresentationStyle;
+@property (nonatomic) bool useDefaultModalTransitionStyle;
 
 - (void)_prepare;
 - (bool)animates;

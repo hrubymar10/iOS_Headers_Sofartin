@@ -4,17 +4,17 @@
 
 @interface SAUIAppPunchOutEvent : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * appDisplayName;
-@property(assign,copy) NSString * bundleId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * originalCommandId;
-@property(assign,copy) NSString * punchOutName;
-@property(assign,copy) NSURL * punchOutUri;
-@property(assign,copy) NSString * refId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic, copy) NSString *appDisplayName;
+@property (nonatomic, copy) NSString *bundleId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *originalCommandId;
+@property (nonatomic, copy) NSString *punchOutName;
+@property (nonatomic, copy) NSURL *punchOutUri;
+@property (nonatomic, copy) NSString *refId;
+@property (readonly) Class superclass;
 
 + (id)afui_appPunchOutEventWithRefId:(id)arg1 URL:(id)arg2 appDisplayName:(id)arg3 bundleId:(id)arg4;
 + (id)appPunchOutEvent;

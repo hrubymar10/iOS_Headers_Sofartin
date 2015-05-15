@@ -4,18 +4,18 @@
 
 @interface SAMicroblogMicroblogSearchResultPost : SAMicroblogMicroblogSearchResultBase
 
-@property(assign,copy) NSDate * creationTime;
-@property(assign,retain) SADecoratedString * decoratedContent;
-@property(assign,copy) NSArray * embeddedHashtags;
-@property(assign,copy) NSArray * embeddedImages;
-@property(assign,copy) NSArray * embeddedLinks;
-@property(assign,copy) NSArray * embeddedMentions;
-@property(assign,readwrite) long long favoritesCount;
-@property(assign,copy) NSString * location;
-@property(assign,retain) SAUIAppPunchOut * punchOut;
-@property(assign,retain) SAMicroblogTwitterPostAuthor * retweetAuthor;
-@property(assign,readwrite) long long retweetCount;
-@property(assign,copy) NSURL * webAddress;
+@property (nonatomic, copy) NSDate *creationTime;
+@property (nonatomic, retain) SADecoratedString *decoratedContent;
+@property (nonatomic, copy) NSArray *embeddedHashtags;
+@property (nonatomic, copy) NSArray *embeddedImages;
+@property (nonatomic, copy) NSArray *embeddedLinks;
+@property (nonatomic, copy) NSArray *embeddedMentions;
+@property (nonatomic) long long favoritesCount;
+@property (nonatomic, copy) NSString *location;
+@property (nonatomic, retain) SAUIAppPunchOut *punchOut;
+@property (nonatomic, retain) SAMicroblogTwitterPostAuthor *retweetAuthor;
+@property (nonatomic) long long retweetCount;
+@property (nonatomic, copy) NSURL *webAddress;
 
 + (id)microblogSearchResultPost;
 + (id)microblogSearchResultPostWithDictionary:(id)arg1 context:(id)arg2;

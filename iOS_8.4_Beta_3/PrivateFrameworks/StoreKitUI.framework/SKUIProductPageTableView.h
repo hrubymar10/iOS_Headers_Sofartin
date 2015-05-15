@@ -6,7 +6,7 @@
     UIView *_productPageHeaderView;
 }
 
-@property(assign,retain) UIView * productPageHeaderView;
+@property (nonatomic, retain) UIView *productPageHeaderView;
 
 - (void).cxx_destruct;
 - (void)_addContentSubview:(id)arg1 atBack:(bool)arg2;

@@ -8,9 +8,9 @@
     SCRCMathExpression *_superscript;
 }
 
-@property(assign,retain) SCRCMathExpression * base;
-@property(assign,retain) SCRCMathExpression * subscript;
-@property(assign,retain) SCRCMathExpression * superscript;
+@property (nonatomic, retain) SCRCMathExpression *base;
+@property (nonatomic, retain) SCRCMathExpression *subscript;
+@property (nonatomic, retain) SCRCMathExpression *superscript;
 
 - (id)_stringToAddForSuperscript:(id)arg1 withPriorDescription:(id)arg2 updatedDescription:(id*)arg3;
 - (id)base;

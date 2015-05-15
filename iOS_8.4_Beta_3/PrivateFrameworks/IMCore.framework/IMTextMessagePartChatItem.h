@@ -6,7 +6,7 @@
     NSAttributedString *_subject;
 }
 
-@property(assign,copy) NSAttributedString * subject;
+@property (nonatomic, readonly, copy) NSAttributedString *subject;
 
 - (Class)__ck_chatItemClass;
 - (id)_initWithItem:(id)arg1 text:(id)arg2 index:(long long)arg3 subject:(id)arg4;

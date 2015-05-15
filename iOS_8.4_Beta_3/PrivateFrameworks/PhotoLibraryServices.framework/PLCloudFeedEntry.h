@@ -4,14 +4,14 @@
 
 @interface PLCloudFeedEntry : PLManagedObject
 
-@property(assign,readonly) NSURL * URIRepresentation;
-@property(assign,retain) NSString * entryAlbumGUID;
-@property(assign,retain) NSDate * entryDate;
-@property(assign,retain) NSString * entryInvitationRecordGUID;
-@property(assign,readonly) long long entryPriority;
-@property(assign,retain) NSNumber * entryPriorityNumber;
-@property(assign,readonly) long long entryType;
-@property(assign,retain) NSNumber * entryTypeNumber;
+@property (nonatomic, readonly) NSURL *URIRepresentation;
+@property (nonatomic, retain) NSString *entryAlbumGUID;
+@property (nonatomic, retain) NSDate *entryDate;
+@property (nonatomic, retain) NSString *entryInvitationRecordGUID;
+@property (nonatomic, readonly) long long entryPriority;
+@property (nonatomic, retain) NSNumber *entryPriorityNumber;
+@property (nonatomic, readonly) long long entryType;
+@property (nonatomic, retain) NSNumber *entryTypeNumber;
 
 + (id)allEntriesInLibrary:(id)arg1;
 + (id)allEntriesInManagedObjectContext:(id)arg1;

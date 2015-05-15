@@ -9,10 +9,10 @@
     UILabel *titleLabel;
 }
 
-@property(assign,retain) UILabel * dateLabel;
-@property(assign,retain) UIImageView * locationsIconView;
-@property(assign,retain) UILabel * locationsLabel;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) UILabel *dateLabel;
+@property (nonatomic, retain) UIImageView *locationsIconView;
+@property (nonatomic, retain) UILabel *locationsLabel;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 - (void).cxx_destruct;
 - (id)dateLabel;

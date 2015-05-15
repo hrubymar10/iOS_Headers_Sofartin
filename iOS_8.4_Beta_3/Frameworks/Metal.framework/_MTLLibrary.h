@@ -10,15 +10,15 @@
     struct MTLLibraryData { int (**x1)(); int x2; id x3; } *_libraryData;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,readwrite) NSMutableDictionary * functionDictionary;
-@property(assign,readonly) NSArray * functionNames;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * label;
-@property(assign,readonly) struct MTLLibraryData { int (**x1)(); int x2; id x3; }* libraryData;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) <MTLDevice> *device;
+@property (nonatomic) NSMutableDictionary *functionDictionary;
+@property (readonly) NSArray *functionNames;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *label;
+@property (readonly) struct MTLLibraryData { int (**x1)(); int x2; id x3; }*libraryData;
+@property (readonly) Class superclass;
 
 + (struct { unsigned int x1; unsigned int x2; })libraryCacheStats;
 + (struct { unsigned int x1; unsigned int x2; })pipelineCacheStats;

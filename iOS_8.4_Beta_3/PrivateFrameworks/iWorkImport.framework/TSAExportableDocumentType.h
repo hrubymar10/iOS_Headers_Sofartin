@@ -9,10 +9,10 @@
     NSString *_type;
 }
 
-@property(assign,readonly) TSUColor * exportFormatChooserItemTextColor;
-@property(assign,readonly) NSString * exportProgressMessage;
-@property(assign,readonly) NSString * localizedName;
-@property(assign,readonly) NSString * type;
+@property (nonatomic, readonly) TSUColor *exportFormatChooserItemTextColor;
+@property (nonatomic, readonly) NSString *exportProgressMessage;
+@property (nonatomic, readonly) NSString *localizedName;
+@property (nonatomic, readonly) NSString *type;
 
 + (id)exportableTypeWithType:(id)arg1 localizedName:(id)arg2 exportFormatChooserItemTextColor:(id)arg3;
 + (id)exportableTypeWithType:(id)arg1 localizedName:(id)arg2 exportFormatChooserItemTextColor:(id)arg3 exportProgressMessage:(id)arg4;

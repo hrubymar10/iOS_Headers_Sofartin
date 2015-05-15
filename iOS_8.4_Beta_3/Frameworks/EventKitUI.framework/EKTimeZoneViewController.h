@@ -11,14 +11,14 @@
     NSTimeZone *_timeZone;
 }
 
-@property(assign,readonly) int chooserStyle;
-@property(assign,retain) NSArray * cities;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <EKTimeZoneViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSTimeZone * timeZone;
+@property (nonatomic, readonly) int chooserStyle;
+@property (nonatomic, retain) NSArray *cities;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <EKTimeZoneViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSTimeZone *timeZone;
 
 - (void).cxx_destruct;
 - (int)chooserStyle;

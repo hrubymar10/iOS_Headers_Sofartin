@@ -4,15 +4,15 @@
 
 @interface SAClockObject : SADomainObject
 
-@property(assign,copy) NSNumber * alCityId;
-@property(assign,copy) NSString * cityName;
-@property(assign,copy) NSString * countryCode;
-@property(assign,copy) NSString * countryName;
-@property(assign,copy) NSNumber * latitude;
-@property(assign,copy) NSNumber * longitude;
-@property(assign,copy) NSString * timezoneId;
-@property(assign,copy) NSString * unlocalizedCityName;
-@property(assign,copy) NSString * unlocalizedCountryName;
+@property (nonatomic, copy) NSNumber *alCityId;
+@property (nonatomic, copy) NSString *cityName;
+@property (nonatomic, copy) NSString *countryCode;
+@property (nonatomic, copy) NSString *countryName;
+@property (nonatomic, copy) NSNumber *latitude;
+@property (nonatomic, copy) NSNumber *longitude;
+@property (nonatomic, copy) NSString *timezoneId;
+@property (nonatomic, copy) NSString *unlocalizedCityName;
+@property (nonatomic, copy) NSString *unlocalizedCountryName;
 
 + (id)object;
 + (id)objectWithDictionary:(id)arg1 context:(id)arg2;

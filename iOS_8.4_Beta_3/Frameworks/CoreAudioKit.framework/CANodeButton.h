@@ -7,8 +7,8 @@
     bool hasLabel;
 }
 
-@property(assign,readwrite) bool hasLabel;
-@property(assign,retain) NSURL * url;
+@property bool hasLabel;
+@property (retain) NSURL *url;
 
 - (bool)hasLabel;
 - (id)init;

@@ -15,25 +15,25 @@
     bool _topSection;
 }
 
-@property(assign,readonly) IKColor * backgroundColorForSection;
-@property(getter=isBottomSection,assign,readwrite) bool bottomSection;
-@property(assign,readonly) SKUIStorePageSectionContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) long long defaultItemPinningStyle;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSIndexPath * firstAppearanceIndexPath;
-@property(assign,readonly) bool fitsToHeight;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * indexPathsForBackgroundItems;
-@property(assign,readonly) NSArray * indexPathsForPinningItems;
-@property(assign,readonly) long long numberOfCells;
-@property(assign,readonly) SKUIPageComponent * pageComponent;
-@property(assign,readonly) struct CGSize { double x1; double x2; } preferredContentSize;
-@property(assign,copy) NSSet * relevantEntityProviders;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } sectionContentInset;
-@property(assign,readwrite) long long sectionIndex;
-@property(assign,readonly) Class superclass;
-@property(getter=isTopSection,assign,readwrite) bool topSection;
+@property (nonatomic, readonly) IKColor *backgroundColorForSection;
+@property (getter=isBottomSection, nonatomic) bool bottomSection;
+@property (nonatomic, readonly) SKUIStorePageSectionContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) long long defaultItemPinningStyle;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSIndexPath *firstAppearanceIndexPath;
+@property (nonatomic, readonly) bool fitsToHeight;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *indexPathsForBackgroundItems;
+@property (nonatomic, readonly) NSArray *indexPathsForPinningItems;
+@property (nonatomic, readonly) long long numberOfCells;
+@property (nonatomic, readonly) SKUIPageComponent *pageComponent;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } preferredContentSize;
+@property (nonatomic, readonly, copy) NSSet *relevantEntityProviders;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } sectionContentInset;
+@property (nonatomic) long long sectionIndex;
+@property (readonly) Class superclass;
+@property (getter=isTopSection, nonatomic) bool topSection;
 
 - (void).cxx_destruct;
 - (id)_clickEventWithElementName:(id)arg1 index:(long long)arg2 fieldData:(id)arg3;

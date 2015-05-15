@@ -47,8 +47,8 @@
     int zoneCounts;
 }
 
-@property(assign,readonly) NSDate * cycleStart;
-@property(assign,retain) NSMutableArray * pastCycle;
+@property (nonatomic, readonly) NSDate *cycleStart;
+@property (nonatomic, retain) NSMutableArray *pastCycle;
 
 + (id)sharedInstance;
 

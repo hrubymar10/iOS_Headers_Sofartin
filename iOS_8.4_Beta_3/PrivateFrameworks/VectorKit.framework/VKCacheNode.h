@@ -14,10 +14,10 @@
     id _value;
 }
 
-@property(assign,readwrite) struct VKCacheKey { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; } key;
-@property(assign,retain) VKCacheNode * next;
-@property(assign,readwrite) VKCacheNode * previous;
-@property(assign,retain) id value;
+@property (nonatomic) struct VKCacheKey { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; } key;
+@property (nonatomic, retain) VKCacheNode *next;
+@property (nonatomic) VKCacheNode *previous;
+@property (nonatomic, retain) id value;
 
 - (id).cxx_construct;
 - (void)dealloc;

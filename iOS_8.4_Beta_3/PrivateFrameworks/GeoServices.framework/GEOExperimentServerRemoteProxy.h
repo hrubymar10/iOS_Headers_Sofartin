@@ -9,12 +9,12 @@
     NSLock *_experimentsInfoLock;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <GEOExperimentServerProxyDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) GEOABExperimentResponse * experimentsInfo;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <GEOExperimentServerProxyDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) GEOABExperimentResponse *experimentsInfo;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_debug_setQuerySubstring:(id)arg1 forExperimentType:(long long)arg2 dispatcherRequestType:(int)arg3;
 - (void)dealloc;

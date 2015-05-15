@@ -4,12 +4,12 @@
 
 @interface CKObject : NSObject <CKPropertyCoding>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CKObjCClass * objcClass;
-@property(assign,readonly) NSSet * propertyNamesNotToEncode;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CKObjCClass *objcClass;
+@property (nonatomic, readonly) NSSet *propertyNamesNotToEncode;
+@property (readonly) Class superclass;
 
 - (id)description;
 - (id)dictionaryPropertyEncoding;

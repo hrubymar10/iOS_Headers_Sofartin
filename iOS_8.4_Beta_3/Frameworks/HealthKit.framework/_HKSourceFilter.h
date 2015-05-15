@@ -6,7 +6,7 @@
     NSSet *_sources;
 }
 
-@property(assign,readonly) NSSet * sources;
+@property (nonatomic, readonly) NSSet *sources;
 
 + (id)_filterForComparisonWithKeyPath:(id)arg1 value:(id)arg2 dataTypes:(id)arg3;
 + (id)_filterForInOperatorWithKeyPath:(id)arg1 value:(id)arg2 dataTypes:(id)arg3;

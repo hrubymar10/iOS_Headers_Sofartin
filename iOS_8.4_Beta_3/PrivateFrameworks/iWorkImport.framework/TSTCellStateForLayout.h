@@ -48,25 +48,25 @@
     TSWPColumn *mWPColumn;
 }
 
-@property(assign,copy) TSTCell * cell;
-@property(assign,retain) id cellContents;
-@property(assign,readwrite) bool cellPropsRowHeight;
-@property(assign,readwrite) bool cellWraps;
-@property(assign,readwrite) bool forDrawing;
-@property(assign,readonly) bool hasContent;
-@property(assign,readwrite) bool inDynamicLayout;
-@property(assign,retain) TSTLayoutContentCachedKey * keyVal;
-@property(assign,readwrite) int layoutCacheFlags;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } maxSize;
-@property(assign,readwrite) double maxWidthForChildren;
-@property(assign,readwrite) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } mergedRange;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } minSize;
-@property(assign,readwrite) struct { unsigned short x1; unsigned char x2; unsigned char x3; } modelCellID;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } paddingInsets;
-@property(assign,readwrite) unsigned long long pageCount;
-@property(assign,readwrite) unsigned long long pageNumber;
-@property(assign,readwrite) int verticalAlignment;
-@property(assign,retain) TSWPColumn * wpColumn;
+@property (nonatomic, copy) TSTCell *cell;
+@property (nonatomic, retain) id cellContents;
+@property (nonatomic) bool cellPropsRowHeight;
+@property (nonatomic) bool cellWraps;
+@property (nonatomic) bool forDrawing;
+@property (nonatomic, readonly) bool hasContent;
+@property (nonatomic) bool inDynamicLayout;
+@property (nonatomic, retain) TSTLayoutContentCachedKey *keyVal;
+@property (nonatomic) int layoutCacheFlags;
+@property (nonatomic) struct CGSize { double x1; double x2; } maxSize;
+@property (nonatomic) double maxWidthForChildren;
+@property (nonatomic) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } mergedRange;
+@property (nonatomic) struct CGSize { double x1; double x2; } minSize;
+@property (nonatomic) struct { unsigned short x1; unsigned char x2; unsigned char x3; } modelCellID;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } paddingInsets;
+@property (nonatomic) unsigned long long pageCount;
+@property (nonatomic) unsigned long long pageNumber;
+@property (nonatomic) int verticalAlignment;
+@property (nonatomic, retain) TSWPColumn *wpColumn;
 
 - (id)cell;
 - (id)cellContents;

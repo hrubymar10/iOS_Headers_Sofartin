@@ -12,10 +12,10 @@
     BOOL _stateCount;
 }
 
-@property(assign,readonly) unsigned int currentState;
-@property(assign,readonly) NSString * currentStateLabel;
-@property(assign,readonly) NSString * label;
-@property(assign,readwrite) bool performsAtomicStateTransitions;
+@property (readonly) unsigned int currentState;
+@property (readonly) NSString *currentStateLabel;
+@property (readonly) NSString *label;
+@property (nonatomic) bool performsAtomicStateTransitions;
 
 + (void)initialize;
 

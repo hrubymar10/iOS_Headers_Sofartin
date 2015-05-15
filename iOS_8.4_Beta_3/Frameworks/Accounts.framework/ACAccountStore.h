@@ -9,9 +9,9 @@
     NSObject<OS_dispatch_queue> *_replyQueue;
 }
 
-@property(assign,readonly) NSArray * accounts;
-@property(assign,readonly) NSString * effectiveBundleID;
-@property(assign,retain) ACRemoteAccountStoreSession * remoteAccountStoreSession;
+@property (nonatomic, readonly) NSArray *accounts;
+@property (readonly) NSString *effectiveBundleID;
+@property (nonatomic, retain) ACRemoteAccountStoreSession *remoteAccountStoreSession;
 
 + (int)accountsWithAccountTypeIdentifierExist:(id)arg1;
 + (bool)canSaveAccountsOfAccountTypeIdentifier:(id)arg1;

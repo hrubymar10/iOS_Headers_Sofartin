@@ -10,8 +10,8 @@
     bool _shouldRemoveTimeZoneInformation;
 }
 
-@property(assign,retain) UIDatePicker * _datePicker;
-@property(assign,retain) DOMHTMLInputElement * _inputElement;
+@property (nonatomic, retain) UIDatePicker *_datePicker;
+@property (nonatomic, retain) DOMHTMLInputElement *_inputElement;
 
 - (void)_dateChangeHandler:(id)arg1;
 - (void)_dateChanged;

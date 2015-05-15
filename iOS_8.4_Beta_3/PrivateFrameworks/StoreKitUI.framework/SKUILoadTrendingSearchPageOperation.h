@@ -8,9 +8,9 @@
     NSURL *_url;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) id outputBlock;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (copy) id outputBlock;
 
 - (void).cxx_destruct;
 - (id)URL;

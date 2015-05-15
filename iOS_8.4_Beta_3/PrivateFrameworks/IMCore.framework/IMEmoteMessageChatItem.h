@@ -4,7 +4,7 @@
 
 @interface IMEmoteMessageChatItem : IMMessageChatItem
 
-@property(assign,copy) NSAttributedString * text;
+@property (nonatomic, readonly, copy) NSAttributedString *text;
 
 - (Class)__ck_chatItemClass;
 - (id)_initWithItem:(id)arg1;

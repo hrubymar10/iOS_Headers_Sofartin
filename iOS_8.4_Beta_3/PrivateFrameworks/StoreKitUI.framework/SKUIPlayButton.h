@@ -10,11 +10,11 @@
     bool _useLargeButton;
 }
 
-@property(assign,readwrite) long long itemIdentifier;
-@property(assign,copy) NSString * mediaURLString;
-@property(assign,copy) NSString * playItemIdentifier;
-@property(getter=isRadio,assign,readwrite) bool radio;
-@property(assign,readwrite) bool useLargeButton;
+@property (nonatomic) long long itemIdentifier;
+@property (nonatomic, copy) NSString *mediaURLString;
+@property (nonatomic, copy) NSString *playItemIdentifier;
+@property (getter=isRadio, nonatomic) bool radio;
+@property (nonatomic) bool useLargeButton;
 
 + (struct CGSize { double x1; double x2; })sizeThatFitsWidth:(double)arg1 viewElement:(id)arg2 context:(id)arg3;
 

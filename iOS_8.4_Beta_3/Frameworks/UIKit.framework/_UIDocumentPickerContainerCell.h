@@ -12,13 +12,13 @@
     id _observerToken;
 }
 
-@property(assign,retain) NSString * containerDisplayName;
-@property(assign,retain) NSLayoutConstraint * containerIconBottomConstraint;
-@property(assign,retain) NSLayoutConstraint * containerIconHeightConstraint;
-@property(assign,retain) UIImageView * containerIconView;
-@property(assign,retain) NSLayoutConstraint * containerIconWidthConstraint;
-@property(assign,retain) _UIDocumentPickerContainerItem * item;
-@property(assign,retain) id observerToken;
+@property (nonatomic, retain) NSString *containerDisplayName;
+@property (nonatomic, retain) NSLayoutConstraint *containerIconBottomConstraint;
+@property (nonatomic, retain) NSLayoutConstraint *containerIconHeightConstraint;
+@property (nonatomic, retain) UIImageView *containerIconView;
+@property (nonatomic, retain) NSLayoutConstraint *containerIconWidthConstraint;
+@property (nonatomic, retain) _UIDocumentPickerContainerItem *item;
+@property (nonatomic, retain) id observerToken;
 
 - (id)containerDisplayName;
 - (id)containerIconBottomConstraint;

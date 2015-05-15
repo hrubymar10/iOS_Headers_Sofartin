@@ -16,14 +16,14 @@
     NSString *_wildCardName;
 }
 
-@property(assign,readwrite) PLEntryKey * baseEntryKey;
-@property(assign,retain) NSString * entryKey;
-@property(assign,retain) NSString * entryName;
-@property(assign,retain) NSString * entryType;
-@property(assign,readwrite) bool isDynamic;
-@property(assign,retain) NSString * operatorName;
-@property(assign,readwrite) struct _PLTimeIntervalRange { double x1; double x2; } timeIntervalRange;
-@property(assign,copy) NSString * wildCardName;
+@property PLEntryKey *baseEntryKey;
+@property (readonly, retain) NSString *entryKey;
+@property (readonly, retain) NSString *entryName;
+@property (readonly, retain) NSString *entryType;
+@property (nonatomic) bool isDynamic;
+@property (readonly, retain) NSString *operatorName;
+@property (nonatomic) struct _PLTimeIntervalRange { double x1; double x2; } timeIntervalRange;
+@property (nonatomic, copy) NSString *wildCardName;
 
 + (id)PLEntryAggregateKeysForOperator:(id)arg1;
 + (id)PLEntryAggregateKeysForOperatorClass:(Class)arg1;

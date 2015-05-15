@@ -22,25 +22,25 @@
     unsigned long long _updateType;
 }
 
-@property(assign,copy) NSString * accessibilityText;
-@property(assign,retain) NSMutableSet * activeSingularEvents;
-@property(assign,readwrite) IKAppDocument * appDocument;
-@property(assign,retain) NSDictionary * attributes;
-@property(assign,copy) NSString * autoHighlightIdentifier;
-@property(assign,retain) NSArray * children;
-@property(getter=isDisabled,assign,readwrite) bool disabled;
-@property(assign,copy) NSString * elementID;
-@property(assign,copy) NSString * elementName;
-@property(assign,readonly) unsigned long long elementType;
-@property(assign,readonly) SKUIEntityProviderListViewElement * entityProviderList;
-@property(assign,copy) NSArray * features;
-@property(getter=isImpressionable,assign,readwrite) bool impressionable;
-@property(assign,retain) NSString * itmlID;
-@property(assign,retain) NSMutableDictionary * metadataDict;
-@property(assign,readwrite) IKViewElement * parent;
-@property(assign,retain) IKViewElementStyle * style;
-@property(assign,retain) IKViewElementStyleComposer * styleComposer;
-@property(assign,readwrite) unsigned long long updateType;
+@property (nonatomic, readonly, copy) NSString *accessibilityText;
+@property (nonatomic, retain) NSMutableSet *activeSingularEvents;
+@property (nonatomic) IKAppDocument *appDocument;
+@property (nonatomic, readonly, retain) NSDictionary *attributes;
+@property (nonatomic, readonly, copy) NSString *autoHighlightIdentifier;
+@property (nonatomic, retain) NSArray *children;
+@property (getter=isDisabled, nonatomic) bool disabled;
+@property (nonatomic, readonly, copy) NSString *elementID;
+@property (nonatomic, readonly, copy) NSString *elementName;
+@property (nonatomic, readonly) unsigned long long elementType;
+@property (nonatomic, readonly) SKUIEntityProviderListViewElement *entityProviderList;
+@property (nonatomic, readonly, copy) NSArray *features;
+@property (getter=isImpressionable, nonatomic) bool impressionable;
+@property (nonatomic, readonly, retain) NSString *itmlID;
+@property (nonatomic, retain) NSMutableDictionary *metadataDict;
+@property (nonatomic) IKViewElement *parent;
+@property (nonatomic, readonly, retain) IKViewElementStyle *style;
+@property (nonatomic, readonly, retain) IKViewElementStyleComposer *styleComposer;
+@property (nonatomic) unsigned long long updateType;
 
 + (unsigned long long)evaluateElementUpdateTypeAndReset:(id)arg1;
 + (bool)shouldParseChildDOMElement:(id)arg1;

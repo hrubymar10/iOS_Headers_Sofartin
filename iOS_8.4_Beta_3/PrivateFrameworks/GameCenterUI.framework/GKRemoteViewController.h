@@ -12,19 +12,19 @@
     bool _viewDidAppear;
 }
 
-@property(assign,copy) id blockToPerformAfterViewDidAppear;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didSetRemoteGame;
-@property(assign,retain) NSMutableDictionary * dirtyProperties;
-@property(assign,retain) GKGame * game;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) GKHostedViewController * managingViewController;
-@property(assign,retain) UIColor * previousStatusBarColor;
-@property(assign,readonly) bool serviceNeedsCurrentGame;
-@property(assign,readonly) bool serviceNeedsLocalPlayer;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool viewDidAppear;
+@property (nonatomic, copy) id blockToPerformAfterViewDidAppear;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool didSetRemoteGame;
+@property (nonatomic, retain) NSMutableDictionary *dirtyProperties;
+@property (nonatomic, retain) GKGame *game;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) GKHostedViewController *managingViewController;
+@property (nonatomic, retain) UIColor *previousStatusBarColor;
+@property (nonatomic, readonly) bool serviceNeedsCurrentGame;
+@property (nonatomic, readonly) bool serviceNeedsLocalPlayer;
+@property (readonly) Class superclass;
+@property (nonatomic) bool viewDidAppear;
 
 + (id)exportedInterface;
 + (id)serviceViewControllerInterface;

@@ -7,12 +7,12 @@
     NSMutableArray *_subscribers;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSMutableArray * subscribers;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSMutableArray *subscribers;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_removeSubscribersWithMachServiceName:(id)arg1 exceptFor:(id)arg2;

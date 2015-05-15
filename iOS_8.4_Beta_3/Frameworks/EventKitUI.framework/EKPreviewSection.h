@@ -7,8 +7,8 @@
     NSArray *_events;
 }
 
-@property(assign,retain) NSDate * date;
-@property(assign,readonly) NSArray * events;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, readonly) NSArray *events;
 
 + (id)sectionWithDate:(id)arg1;
 

@@ -6,7 +6,7 @@
     UIColor *_backgroundColor;
 }
 
-@property(assign,retain) UIColor * backgroundColor;
+@property (nonatomic, retain) UIColor *backgroundColor;
 
 - (void).cxx_destruct;
 - (id)backgroundColor;

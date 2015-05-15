@@ -17,20 +17,20 @@
     NSTimer *_timeoutTimer;
 }
 
-@property(assign,retain) IMAccount * account;
-@property(assign,readwrite) Class completionControllerClass;
-@property(assign,readonly) long long currentAppearanceStyle;
-@property(assign,retain) UIBarButtonItem * customLeftButton;
-@property(assign,retain) UIBarButtonItem * customRightButton;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CNFRegFirstRunDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool previousHidesBackButton;
-@property(assign,retain) UIBarButtonItem * previousLeftButton;
-@property(assign,retain) UIBarButtonItem * previousRightButton;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool timedOut;
+@property (nonatomic, retain) IMAccount *account;
+@property (nonatomic) Class completionControllerClass;
+@property (nonatomic, readonly) long long currentAppearanceStyle;
+@property (nonatomic, retain) UIBarButtonItem *customLeftButton;
+@property (nonatomic, retain) UIBarButtonItem *customRightButton;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CNFRegFirstRunDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool previousHidesBackButton;
+@property (nonatomic, retain) UIBarButtonItem *previousLeftButton;
+@property (nonatomic, retain) UIBarButtonItem *previousRightButton;
+@property (readonly) Class superclass;
+@property (nonatomic) bool timedOut;
 
 - (void)_cancelValidationMode;
 - (void)_executeDismissBlock:(id)arg1;

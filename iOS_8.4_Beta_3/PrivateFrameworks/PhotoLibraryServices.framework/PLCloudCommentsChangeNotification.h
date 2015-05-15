@@ -6,7 +6,7 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,retain) PLManagedAsset * asset;
+@property (nonatomic, readonly, retain) PLManagedAsset *asset;
 
 + (id)notificationWithAsset:(id)arg1 snapshot:(id)arg2;
 

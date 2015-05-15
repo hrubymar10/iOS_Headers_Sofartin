@@ -9,10 +9,10 @@
     UIView *_view;
 }
 
-@property(assign,readwrite) double maxVal;
-@property(assign,readwrite) double minVal;
-@property(assign,retain) UISlider * slider;
-@property(assign,retain) UIView * view;
+@property double maxVal;
+@property double minVal;
+@property (retain) UISlider *slider;
+@property (retain) UIView *view;
 
 - (void)dealloc;
 - (id)initWithPrefName:(id)arg1 defaultValue:(id)arg2 minimumValue:(double)arg3 maximumValue:(double)arg4;

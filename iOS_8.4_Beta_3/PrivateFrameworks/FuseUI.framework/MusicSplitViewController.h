@@ -24,14 +24,14 @@
     double _staticPrimaryColumnWidth;
 }
 
-@property(assign,readonly) UIViewController * _detailViewController;
-@property(assign,readonly) bool _supportsDetailViewController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIViewController * primaryViewController;
-@property(assign,readwrite) double staticPrimaryColumnWidth;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) UIViewController *_detailViewController;
+@property (nonatomic, readonly) bool _supportsDetailViewController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIViewController *primaryViewController;
+@property (nonatomic) double staticPrimaryColumnWidth;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_applyContentInsetsForChildViewControllers;

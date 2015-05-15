@@ -6,13 +6,13 @@
     AVCaptureStillImageOutputInternal_FigRecorder *_internal;
 }
 
-@property(assign,readwrite) bool automaticallyEnablesStillImageStabilizationWhenAvailable;
-@property(assign,readonly) NSArray * availableImageDataCVPixelFormatTypes;
-@property(assign,readonly) NSArray * availableImageDataCodecTypes;
-@property(getter=isCapturingStillImage,assign,readonly) bool capturingStillImage;
-@property(assign,copy) NSDictionary * outputSettings;
-@property(getter=isStillImageStabilizationActive,assign,readonly) bool stillImageStabilizationActive;
-@property(getter=isStillImageStabilizationSupported,assign,readonly) bool stillImageStabilizationSupported;
+@property (nonatomic) bool automaticallyEnablesStillImageStabilizationWhenAvailable;
+@property (nonatomic, readonly) NSArray *availableImageDataCVPixelFormatTypes;
+@property (nonatomic, readonly) NSArray *availableImageDataCodecTypes;
+@property (getter=isCapturingStillImage, readonly) bool capturingStillImage;
+@property (nonatomic, copy) NSDictionary *outputSettings;
+@property (getter=isStillImageStabilizationActive, nonatomic, readonly) bool stillImageStabilizationActive;
+@property (getter=isStillImageStabilizationSupported, nonatomic, readonly) bool stillImageStabilizationSupported;
 
 + (struct CGImage { }*)cgImageForBGRASurface:(struct __IOSurface { }*)arg1 size:(unsigned long long)arg2;
 + (void)initialize;

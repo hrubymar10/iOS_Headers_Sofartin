@@ -29,21 +29,21 @@
     unsigned char _vertexAttributesInitialized;
 }
 
-@property(assign,readwrite) long long bitCodeOffset;
-@property(assign,readonly) struct { unsigned char x1[32]; } bitcodeHash;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,copy) NSString * filePath;
-@property(assign,readonly) unsigned long long functionType;
-@property(assign,readonly) const struct MTLFunctionVersions { unsigned short x1; unsigned short x2; unsigned short x3; unsigned short x4; }* functionVersions;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct MTLLibraryData { int (**x1)(); int x2; id x3; }* libraryData;
-@property(assign,readwrite) long long lineNumber;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) id vendorPrivate;
-@property(assign,readonly) NSArray * vertexAttributes;
+@property long long bitCodeOffset;
+@property (readonly) struct { unsigned char x1[32]; } bitcodeHash;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) <MTLDevice> *device;
+@property (copy) NSString *filePath;
+@property (readonly) unsigned long long functionType;
+@property (readonly) const struct MTLFunctionVersions { unsigned short x1; unsigned short x2; unsigned short x3; unsigned short x4; }*functionVersions;
+@property (readonly) unsigned long long hash;
+@property (readonly) struct MTLLibraryData { int (**x1)(); int x2; id x3; }*libraryData;
+@property long long lineNumber;
+@property (readonly) NSString *name;
+@property (readonly) Class superclass;
+@property (readonly) id vendorPrivate;
+@property (readonly) NSArray *vertexAttributes;
 
 - (id).cxx_construct;
 - (long long)bitCodeOffset;

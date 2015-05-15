@@ -8,9 +8,9 @@
     unsigned long long mParenNestingLevel;
 }
 
-@property(assign,readonly) unsigned long long argumentIndex;
-@property(assign,readonly) TSTExpressionNode * expressionNode;
-@property(assign,readonly) unsigned long long parenNestingLevel;
+@property (nonatomic, readonly) unsigned long long argumentIndex;
+@property (nonatomic, readonly) TSTExpressionNode *expressionNode;
+@property (nonatomic, readonly) unsigned long long parenNestingLevel;
 
 + (id)tokenContextWithExpressionNode:(id)arg1 parenNestingLevel:(unsigned long long)arg2;
 + (id)tokenContextWithExpressionNode:(id)arg1 parenNestingLevel:(unsigned long long)arg2 argumentIndex:(unsigned long long)arg3;

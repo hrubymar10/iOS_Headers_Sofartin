@@ -7,8 +7,8 @@
     bool _stroked;
 }
 
-@property(getter=isFilled,assign,readwrite) bool filled;
-@property(getter=isStroked,assign,readwrite) bool stroked;
+@property (getter=isFilled, nonatomic) bool filled;
+@property (getter=isStroked, nonatomic) bool stroked;
 
 - (id)_drawColor;
 - (void)_updateBadge;

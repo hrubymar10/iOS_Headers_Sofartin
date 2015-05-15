@@ -7,10 +7,10 @@
     NSArray *_partViewsMaintainingOrientation;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)partInfoWithName:(id)arg1;
 + (id)partInfoWithName:(id)arg1 offset:(struct CGPoint { double x1; double x2; })arg2 maintainsOrientation:(bool)arg3;

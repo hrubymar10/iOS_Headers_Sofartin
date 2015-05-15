@@ -18,11 +18,11 @@
     UIColor *_tintColor;
 }
 
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,readwrite) double diameter;
-@property(assign,retain) UIFont * font;
-@property(assign,retain) UIColor * textColor;
-@property(assign,readwrite) bool textKnockout;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic) double diameter;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic) bool textKnockout;
 
 - (void)_clearMonogramCache;
 - (id)_copyMonogramWithImageData:(struct __CFData { }*)arg1;

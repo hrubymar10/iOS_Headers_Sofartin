@@ -9,10 +9,10 @@
     UIView *_view;
 }
 
-@property(assign,readwrite) double lineWidth;
-@property(assign,readwrite) struct CGPath { }* path;
-@property(assign,retain) NSMutableArray * prevPoints;
-@property(assign,retain) UIView * view;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) struct CGPath { }*path;
+@property (nonatomic, retain) NSMutableArray *prevPoints;
+@property (nonatomic, retain) UIView *view;
 
 - (void)addPoint:(struct CGPoint { double x1; double x2; })arg1;
 - (void)clear;

@@ -6,7 +6,7 @@
     CNContact *_contact;
 }
 
-@property(assign,retain) CNContact * contact;
+@property (nonatomic, retain) CNContact *contact;
 
 - (void).cxx_destruct;
 - (void)_setRecord:(void*)arg1 property:(int)arg2 stringValue:(id)arg3 label:(id)arg4;

@@ -10,7 +10,7 @@
     bool _sentConnect;
 }
 
-@property(assign,readwrite) <BKSSystemApplicationClientDelegate> * delegate;
+@property (nonatomic) <BKSSystemApplicationClientDelegate> *delegate;
 
 - (void)_connect;
 - (void)_queue_handleWatchdogPing:(id)arg1;

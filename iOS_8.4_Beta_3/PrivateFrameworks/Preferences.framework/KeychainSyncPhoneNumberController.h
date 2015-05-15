@@ -8,11 +8,11 @@
     KeychainSyncPhoneSettingsFragment *_phoneSettingsFragment;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <KeychainSyncViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <KeychainSyncViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)alertView:(id)arg1 didDismissWithButtonIndex:(long long)arg2;
 - (void)controllerDone;

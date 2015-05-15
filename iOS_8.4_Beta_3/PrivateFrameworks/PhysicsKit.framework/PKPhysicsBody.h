@@ -77,37 +77,37 @@
     PKPhysicsWorld *_world;
 }
 
-@property(assign,readwrite) struct b2Body { bool x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; int x6; unsigned short x7; int x8; struct b2Transform { struct b2Vec2 { float x_1_2_1; float x_1_2_2; } x_9_1_1; struct b2Rot { float x_2_2_1; float x_2_2_2; } x_9_1_2; } x9; struct b2Transform { struct b2Vec2 { float x_1_2_1; float x_1_2_2; } x_10_1_1; struct b2Rot { float x_2_2_1; float x_2_2_2; } x_10_1_2; } x10; struct b2Sweep { struct b2Vec2 { float x_1_2_1; float x_1_2_2; } x_11_1_1; union b2Position { struct { struct b2Vec2 { float x_1_4_1; float x_1_4_2; } x_1_3_1; float x_1_3_2; float x_1_3_3; } x_2_2_1; } x_11_1_2; union b2Position { struct { struct b2Vec2 { float x_1_4_1; float x_1_4_2; } x_1_3_1; float x_1_3_2; float x_1_3_3; } x_3_2_1; } x_11_1_3; float x_11_1_4; } x11; struct b2Vec2 { float x_12_1_1; float x_12_1_2; } x12; float x13; struct b2Vec2 { float x_14_1_1; float x_14_1_2; } x14; float x15; struct b2World {} *x16; struct b2Body {} *x17; struct b2Body {} *x18; struct b2Fixture {} *x19; int x20; struct b2JointEdge {} *x21; struct b2ContactEdge {} *x22; float x23; float x24; float x25; float x26; float x27; float x28; float x29; float x30; void *x31; }* _body;
-@property(assign,readwrite) struct b2BodyDef { bool x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; int x6; struct b2Vec2 { float x_7_1_1; float x_7_1_2; } x7; float x8; struct b2Vec2 { float x_9_1_1; float x_9_1_2; } x9; float x10; float x11; float x12; float x13; bool x14; bool x15; bool x16; bool x17; bool x18; void *x19; } _bodyDef;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{vector<PKPhysicsShape *' */ struct * _shapes; /* unknown property attribute:  std::__1::allocator<PKPhysicsShape *> >=^^{PKPhysicsShape}}} */
-@property(assign,readwrite) bool affectedByGravity;
-@property(assign,readwrite) bool allowsRotation;
-@property(assign,readwrite) double angularDamping;
-@property(assign,readwrite) double angularVelocity;
-@property(assign,readonly) double area;
-@property(assign,readwrite) unsigned int categoryBitMask;
-@property(assign,readwrite) double charge;
-@property(assign,readwrite) unsigned int collisionBitMask;
-@property(assign,readwrite) unsigned int contactTestBitMask;
-@property(assign,readwrite) double density;
-@property(getter=isDynamic,assign,readwrite) bool dynamic;
-@property(assign,readwrite) unsigned int fieldBitMask;
-@property(assign,readwrite) double friction;
-@property(assign,readonly) NSArray * joints;
-@property(assign,readwrite) double linearDamping;
-@property(assign,readwrite) double mass;
-@property(assign,readonly) SKNode * node;
-@property(assign,readwrite) struct shared_ptr<PKPath> { struct PKPath {} *x1; struct __shared_weak_count {} *x2; } outline;
-@property(assign,readwrite) bool pinned;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } position;
-@property(assign,copy) id postStepBlock;
-@property(assign,readwrite) double radius;
-@property(assign,readwrite) <NSObject> * representedObject;
-@property(getter=isResting,assign,readwrite) bool resting;
-@property(assign,readwrite) double restitution;
-@property(assign,readwrite) double rotation;
-@property(assign,readwrite) bool usesPreciseCollisionDetection;
-@property(assign,readwrite) struct CGVector { double x1; double x2; } velocity;
+@property (nonatomic) struct b2Body { bool x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; int x6; unsigned short x7; int x8; struct b2Transform { struct b2Vec2 { float x_1_2_1; float x_1_2_2; } x_9_1_1; struct b2Rot { float x_2_2_1; float x_2_2_2; } x_9_1_2; } x9; struct b2Transform { struct b2Vec2 { float x_1_2_1; float x_1_2_2; } x_10_1_1; struct b2Rot { float x_2_2_1; float x_2_2_2; } x_10_1_2; } x10; struct b2Sweep { struct b2Vec2 { float x_1_2_1; float x_1_2_2; } x_11_1_1; union b2Position { struct { struct b2Vec2 { float x_1_4_1; float x_1_4_2; } x_1_3_1; float x_1_3_2; float x_1_3_3; } x_2_2_1; } x_11_1_2; union b2Position { struct { struct b2Vec2 { float x_1_4_1; float x_1_4_2; } x_1_3_1; float x_1_3_2; float x_1_3_3; } x_3_2_1; } x_11_1_3; float x_11_1_4; } x11; struct b2Vec2 { float x_12_1_1; float x_12_1_2; } x12; float x13; struct b2Vec2 { float x_14_1_1; float x_14_1_2; } x14; float x15; struct b2World {} *x16; struct b2Body {} *x17; struct b2Body {} *x18; struct b2Fixture {} *x19; int x20; struct b2JointEdge {} *x21; struct b2ContactEdge {} *x22; float x23; float x24; float x25; float x26; float x27; float x28; float x29; float x30; void *x31; }*_body;
+@property (nonatomic) struct b2BodyDef { bool x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; int x6; struct b2Vec2 { float x_7_1_1; float x_7_1_2; } x7; float x8; struct b2Vec2 { float x_9_1_1; float x_9_1_2; } x9; float x10; float x11; float x12; float x13; bool x14; bool x15; bool x16; bool x17; bool x18; void *x19; } _bodyDef;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{vector<PKPhysicsShape *' */ struct *_shapes; /* unknown property attribute:  std::__1::allocator<PKPhysicsShape *> >=^^{PKPhysicsShape}}} */
+@property (nonatomic) bool affectedByGravity;
+@property (nonatomic) bool allowsRotation;
+@property (nonatomic) double angularDamping;
+@property (nonatomic) double angularVelocity;
+@property (nonatomic, readonly) double area;
+@property (nonatomic) unsigned int categoryBitMask;
+@property (nonatomic) double charge;
+@property (nonatomic) unsigned int collisionBitMask;
+@property (nonatomic) unsigned int contactTestBitMask;
+@property (nonatomic) double density;
+@property (getter=isDynamic, nonatomic) bool dynamic;
+@property (nonatomic) unsigned int fieldBitMask;
+@property (nonatomic) double friction;
+@property (nonatomic, readonly) NSArray *joints;
+@property (nonatomic) double linearDamping;
+@property (nonatomic) double mass;
+@property (nonatomic, readonly) SKNode *node;
+@property (nonatomic) struct shared_ptr<PKPath> { struct PKPath {} *x1; struct __shared_weak_count {} *x2; } outline;
+@property (nonatomic) bool pinned;
+@property (nonatomic) struct CGPoint { double x1; double x2; } position;
+@property (nonatomic, copy) id postStepBlock;
+@property (nonatomic) double radius;
+@property (nonatomic) <NSObject> *representedObject;
+@property (getter=isResting, nonatomic) bool resting;
+@property (nonatomic) double restitution;
+@property (nonatomic) double rotation;
+@property (nonatomic) bool usesPreciseCollisionDetection;
+@property (nonatomic) struct CGVector { double x1; double x2; } velocity;
 
 + (id)bodyWithBodies:(id)arg1;
 + (id)bodyWithCircleOfRadius:(double)arg1;

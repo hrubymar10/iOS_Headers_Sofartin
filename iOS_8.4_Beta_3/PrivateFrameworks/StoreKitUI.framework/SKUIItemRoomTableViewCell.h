@@ -6,7 +6,7 @@
     SKUIItemBrowseCellLayout *_layout;
 }
 
-@property(assign,readonly) SKUIItemBrowseCellLayout * layout;
+@property (nonatomic, readonly) SKUIItemBrowseCellLayout *layout;
 
 - (void).cxx_destruct;
 - (void)configureForItem:(id)arg1 clientContext:(id)arg2 rowIndex:(long long)arg3;

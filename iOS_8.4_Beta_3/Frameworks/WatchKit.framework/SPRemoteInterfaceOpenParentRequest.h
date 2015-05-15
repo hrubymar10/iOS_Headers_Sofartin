@@ -8,9 +8,9 @@
     bool _waitingForReply;
 }
 
-@property(assign,copy) id reply;
-@property(assign,copy) NSData * userInfoData;
-@property(assign,readwrite) bool waitingForReply;
+@property (nonatomic, copy) id reply;
+@property (nonatomic, copy) NSData *userInfoData;
+@property (nonatomic) bool waitingForReply;
 
 - (void).cxx_destruct;
 - (id)reply;

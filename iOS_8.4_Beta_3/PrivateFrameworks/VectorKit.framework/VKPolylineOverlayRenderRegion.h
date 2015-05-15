@@ -26,8 +26,8 @@
     } _visibleRect;
 }
 
-@property(assign,readonly) NSSet * tiles;
-@property(assign,readonly) struct { double x1; double x2; double x3; double x4; } visibleRect;
+@property (nonatomic, readonly) NSSet *tiles;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; double x4; } visibleRect;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

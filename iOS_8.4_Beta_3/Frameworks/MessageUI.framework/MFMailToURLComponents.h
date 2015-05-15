@@ -10,11 +10,11 @@
     NSArray *_toRecipients;
 }
 
-@property(assign,readonly) NSArray * bccRecipients;
-@property(assign,readonly) NSString * body;
-@property(assign,readonly) NSArray * ccRecipients;
-@property(assign,readonly) NSString * subject;
-@property(assign,readonly) NSArray * toRecipients;
+@property (nonatomic, readonly) NSArray *bccRecipients;
+@property (nonatomic, readonly) NSString *body;
+@property (nonatomic, readonly) NSArray *ccRecipients;
+@property (nonatomic, readonly) NSString *subject;
+@property (nonatomic, readonly) NSArray *toRecipients;
 
 + (id)componentsWithURL:(id)arg1;
 

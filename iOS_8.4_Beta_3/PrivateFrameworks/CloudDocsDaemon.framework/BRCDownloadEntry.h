@@ -14,18 +14,18 @@
     unsigned long long _totalSize;
 }
 
-@property(assign,readwrite) unsigned long long doneSize;
-@property(assign,readonly) NSString * etag;
-@property(assign,readonly) BRCItemID * itemID;
-@property(assign,readonly) int kind;
-@property(assign,readonly) BRCProgress * progress;
-@property(assign,retain) CKRecord * record;
-@property(assign,readonly) CKRecordID * recordID;
-@property(assign,retain) CKRecord * secondaryRecord;
-@property(assign,readonly) CKRecordID * secondaryRecordID;
-@property(assign,readonly) NSString * stageID;
-@property(assign,readonly) unsigned long long totalSize;
-@property(assign,readonly) NSNumber * transferID;
+@property (nonatomic) unsigned long long doneSize;
+@property (nonatomic, readonly) NSString *etag;
+@property (nonatomic, readonly) BRCItemID *itemID;
+@property (nonatomic, readonly) int kind;
+@property (nonatomic, readonly) BRCProgress *progress;
+@property (nonatomic, retain) CKRecord *record;
+@property (nonatomic, readonly) CKRecordID *recordID;
+@property (nonatomic, retain) CKRecord *secondaryRecord;
+@property (nonatomic, readonly) CKRecordID *secondaryRecordID;
+@property (nonatomic, readonly) NSString *stageID;
+@property (nonatomic, readonly) unsigned long long totalSize;
+@property (nonatomic, readonly) NSNumber *transferID;
 
 - (void).cxx_destruct;
 - (unsigned long long)doneSize;

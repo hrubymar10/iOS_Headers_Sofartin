@@ -7,9 +7,9 @@
     long long _galleryIndex;
 }
 
-@property(assign,readonly) SKUIMediaComponent * component;
-@property(assign,readonly) long long galleryIndex;
-@property(assign,readonly) SKUIEmbeddedMediaView * mediaView;
+@property (nonatomic, readonly) SKUIMediaComponent *component;
+@property (nonatomic, readonly) long long galleryIndex;
+@property (nonatomic, readonly) SKUIEmbeddedMediaView *mediaView;
 
 - (void).cxx_destruct;
 - (id)component;

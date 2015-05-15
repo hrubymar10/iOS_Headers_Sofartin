@@ -6,8 +6,8 @@
     NSString *_routingKey;
 }
 
-@property(assign,readonly) bool hasRoutingKey;
-@property(assign,retain) NSString * routingKey;
+@property (nonatomic, readonly) bool hasRoutingKey;
+@property (nonatomic, retain) NSString *routingKey;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

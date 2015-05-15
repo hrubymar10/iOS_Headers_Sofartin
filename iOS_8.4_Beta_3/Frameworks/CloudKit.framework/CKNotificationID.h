@@ -6,7 +6,7 @@
     NSString *_notificationUUID;
 }
 
-@property(assign,copy) NSString * notificationUUID;
+@property (nonatomic, copy) NSString *notificationUUID;
 
 + (bool)supportsSecureCoding;
 

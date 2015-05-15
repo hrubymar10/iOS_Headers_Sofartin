@@ -8,9 +8,9 @@
     NSString *_source;
 }
 
-@property(assign,readonly) NSString * messageId;
-@property(assign,readonly) long long messageIdHash;
-@property(assign,readonly) NSString * source;
+@property (nonatomic, readonly) NSString *messageId;
+@property (nonatomic, readonly) long long messageIdHash;
+@property (nonatomic, readonly) NSString *source;
 
 + (bool)supportsSecureCoding;
 

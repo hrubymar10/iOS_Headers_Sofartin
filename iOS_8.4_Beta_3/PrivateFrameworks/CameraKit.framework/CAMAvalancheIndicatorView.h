@@ -9,10 +9,10 @@
     bool _showsWhenStarted;
 }
 
-@property(assign,readonly) UIView * _backgroundView;
-@property(assign,readonly) UILabel * _countLabel;
-@property(assign,readonly) long long _numberOfPhotos;
-@property(assign,readwrite) bool showsWhenStarted;
+@property (nonatomic, readonly) UIView *_backgroundView;
+@property (nonatomic, readonly) UILabel *_countLabel;
+@property (nonatomic, readonly) long long _numberOfPhotos;
+@property (nonatomic) bool showsWhenStarted;
 
 - (void).cxx_destruct;
 - (id)_backgroundView;

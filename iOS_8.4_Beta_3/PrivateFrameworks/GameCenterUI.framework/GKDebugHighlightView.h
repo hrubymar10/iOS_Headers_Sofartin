@@ -8,9 +8,9 @@
     bool _isOval;
 }
 
-@property(assign,retain) NSString * caption;
-@property(assign,retain) UIColor * color;
-@property(assign,readwrite) bool isOval;
+@property (nonatomic, retain) NSString *caption;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic) bool isOval;
 
 - (id)caption;
 - (id)color;

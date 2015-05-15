@@ -11,13 +11,13 @@
     NSString *_uuid;
 }
 
-@property(getter=isCloseRequestSupported,assign,readonly) bool closeRequestSupported;
-@property(assign,readonly) NSDictionary * dictionaryRepresentation;
-@property(assign,readonly) bool hasDuplicateName;
-@property(assign,readonly) NSDate * lastModified;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSArray * tabs;
-@property(assign,copy) NSString * uuid;
+@property (getter=isCloseRequestSupported, nonatomic, readonly) bool closeRequestSupported;
+@property (nonatomic, readonly) NSDictionary *dictionaryRepresentation;
+@property (nonatomic, readonly) bool hasDuplicateName;
+@property (nonatomic, readonly) NSDate *lastModified;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly, copy) NSArray *tabs;
+@property (nonatomic, readonly, copy) NSString *uuid;
 
 + (id)_dictionaryWithDeviceName:(id)arg1 lastModified:(id)arg2 hasDuplicateName:(bool)arg3 tabs:(id)arg4;
 + (id)deviceNameInDictionary:(id)arg1;

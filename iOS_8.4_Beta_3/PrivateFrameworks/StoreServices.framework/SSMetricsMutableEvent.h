@@ -6,7 +6,7 @@
     NSMutableDictionary *_mutableBody;
 }
 
-@property(assign,copy) NSDictionary * bodyDictionary;
+@property (nonatomic, readonly, copy) NSDictionary *bodyDictionary;
 
 - (void)addPropertiesWithDictionary:(id)arg1;
 - (void)appendPropertiesToBody:(id)arg1;

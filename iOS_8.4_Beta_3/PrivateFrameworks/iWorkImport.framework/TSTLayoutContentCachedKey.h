@@ -19,15 +19,15 @@
     int mWritingDirection;
 }
 
-@property(assign,readonly) bool cellWraps;
-@property(assign,readonly) double height;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } paddingInsets;
-@property(assign,readonly) TSWPParagraphStyle * paragraphStyle;
-@property(assign,readonly) NSString * string;
-@property(assign,readonly) int valueType;
-@property(assign,readonly) int verticalAlignment;
-@property(assign,readonly) double width;
-@property(assign,readonly) int writingDirection;
+@property (nonatomic, readonly) bool cellWraps;
+@property (nonatomic, readonly) double height;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } paddingInsets;
+@property (nonatomic, readonly) TSWPParagraphStyle *paragraphStyle;
+@property (nonatomic, readonly) NSString *string;
+@property (nonatomic, readonly) int valueType;
+@property (nonatomic, readonly) int verticalAlignment;
+@property (nonatomic, readonly) double width;
+@property (nonatomic, readonly) int writingDirection;
 
 - (bool)cellWraps;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

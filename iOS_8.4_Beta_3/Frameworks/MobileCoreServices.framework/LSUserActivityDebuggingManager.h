@@ -12,15 +12,15 @@
     NSUserDefaults *_userDefaults;
 }
 
-@property(assign,readwrite) int additionalLogFile;
-@property(assign,readwrite) struct __asl_object_s { }* client;
-@property(assign,readwrite) unsigned long long lastLogRotationTime;
-@property(assign,copy) NSString * logFileDirectoryPath;
-@property(assign,readonly) bool logFileEnabled;
-@property(assign,copy) NSString * logFilePath;
-@property(assign,readwrite) NSObject<OS_dispatch_source> * logRotationTimerSource;
-@property(assign,readonly) bool loggingEnabled;
-@property(assign,retain) NSUserDefaults * userDefaults;
+@property int additionalLogFile;
+@property struct __asl_object_s { }*client;
+@property unsigned long long lastLogRotationTime;
+@property (copy) NSString *logFileDirectoryPath;
+@property (readonly) bool logFileEnabled;
+@property (copy) NSString *logFilePath;
+@property NSObject<OS_dispatch_source> *logRotationTimerSource;
+@property (readonly) bool loggingEnabled;
+@property (retain) NSUserDefaults *userDefaults;
 
 + (id)hexDataDump:(id)arg1;
 + (void)log:(int)arg1 format:(id)arg2;

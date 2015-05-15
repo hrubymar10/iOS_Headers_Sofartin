@@ -6,7 +6,7 @@
     long long _handle;
 }
 
-@property(assign,readwrite) long long handle;
+@property long long handle;
 
 + (id)objectWithHandle:(long long)arg1;
 

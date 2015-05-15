@@ -7,7 +7,7 @@
     id _participant;
 }
 
-@property(assign,retain) id participant;
+@property (nonatomic, retain) id participant;
 
 - (void)dealloc;
 - (id)displayString;

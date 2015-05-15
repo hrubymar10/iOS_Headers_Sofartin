@@ -13,14 +13,14 @@
     NSString *_uuidStr;
 }
 
-@property(assign,readwrite) bool allowAssociatedService;
-@property(assign,retain) NSString * btleuuidStr;
-@property(assign,retain) NSString * localizationKey;
-@property(assign,retain) NSArray * mandatoryCharacteristics;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSArray * optionalCharacteristics;
-@property(assign,retain) NSString * svcDescription;
-@property(assign,retain) NSString * uuidStr;
+@property (nonatomic) bool allowAssociatedService;
+@property (nonatomic, retain) NSString *btleuuidStr;
+@property (nonatomic, retain) NSString *localizationKey;
+@property (nonatomic, retain) NSArray *mandatoryCharacteristics;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSArray *optionalCharacteristics;
+@property (nonatomic, retain) NSString *svcDescription;
+@property (nonatomic, retain) NSString *uuidStr;
 
 - (void).cxx_destruct;
 - (bool)allowAssociatedService;

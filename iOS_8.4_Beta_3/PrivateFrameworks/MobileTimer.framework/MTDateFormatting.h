@@ -11,10 +11,10 @@
     bool _use24HourTime;
 }
 
-@property(assign,readonly) NSString * amString;
-@property(assign,readonly) NSString * pmString;
-@property(assign,readonly) bool timeDesignatorAppearsBeforeTime;
-@property(assign,readonly) bool use24HourTime;
+@property (nonatomic, readonly) NSString *amString;
+@property (nonatomic, readonly) NSString *pmString;
+@property (nonatomic, readonly) bool timeDesignatorAppearsBeforeTime;
+@property (nonatomic, readonly) bool use24HourTime;
 
 + (void)load;
 + (id)sharedInstance;

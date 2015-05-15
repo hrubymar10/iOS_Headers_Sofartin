@@ -8,11 +8,11 @@
     NSString *_path;
 }
 
-@property(getter=getMMCSEngine,assign,readonly) struct __MMCSEngine { }* MMCSEngine;
-@property(assign,retain) CKDMMCSEngineContext * MMCSEngineContext;
-@property(assign,retain) CKDAssetCache * assetCache;
-@property(getter=getMaxChunkCountForSection,assign,readonly) unsigned int maxChunkCountForSection;
-@property(assign,retain) NSString * path;
+@property (getter=getMMCSEngine, nonatomic, readonly) struct __MMCSEngine { }*MMCSEngine;
+@property (nonatomic, retain) CKDMMCSEngineContext *MMCSEngineContext;
+@property (nonatomic, retain) CKDAssetCache *assetCache;
+@property (getter=getMaxChunkCountForSection, nonatomic, readonly) unsigned int maxChunkCountForSection;
+@property (nonatomic, retain) NSString *path;
 
 + (id)MMCSWrapperForApplicationBundleID:(id)arg1 path:(id)arg2 assetDbPath:(id)arg3 fileDownloadPath:(id)arg4 packageDownloadPath:(id)arg5 packageUploadPath:(id)arg6 isUTAccount:(bool)arg7 error:(id*)arg8;
 + (long long)_commonErrorCodeWithMMCSError:(id)arg1;

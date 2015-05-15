@@ -8,9 +8,9 @@
     NSSet *_locations;
 }
 
-@property(assign,retain) NSSet * followers;
-@property(assign,retain) NSSet * following;
-@property(assign,retain) NSSet * locations;
+@property (nonatomic, retain) NSSet *followers;
+@property (nonatomic, retain) NSSet *following;
+@property (nonatomic, retain) NSSet *locations;
 
 + (id)sharedInstance;
 

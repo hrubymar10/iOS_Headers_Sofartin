@@ -12,15 +12,15 @@
     PLEntryNotificationOperatorComposition *_wakeEventCallback;
 }
 
-@property(assign,readwrite) long long apSubmitCnt;
-@property(assign,readwrite) long long cpuLoadSubmitCnt;
-@property(assign,retain) PLEntryNotificationOperatorComposition * ioreportEnergyEventCallback;
-@property(assign,readwrite) bool isIoreportEnergy;
-@property(assign,retain) PLEntryNotificationOperatorComposition * monitorEventCallback;
-@property(assign,readwrite) PLOperator * operator;
-@property(assign,retain) NSMutableSet * runningMetrics;
-@property(assign,retain) NSDate * sleepStartTime;
-@property(assign,retain) PLEntryNotificationOperatorComposition * wakeEventCallback;
+@property long long apSubmitCnt;
+@property long long cpuLoadSubmitCnt;
+@property (retain) PLEntryNotificationOperatorComposition *ioreportEnergyEventCallback;
+@property bool isIoreportEnergy;
+@property (retain) PLEntryNotificationOperatorComposition *monitorEventCallback;
+@property PLOperator *operator;
+@property (nonatomic, retain) NSMutableSet *runningMetrics;
+@property (retain) NSDate *sleepStartTime;
+@property (retain) PLEntryNotificationOperatorComposition *wakeEventCallback;
 
 + (id)entryAggregateDefinitionAwdAp;
 + (id)entryAggregateDefinitionAwdCpu;

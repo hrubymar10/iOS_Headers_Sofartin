@@ -8,11 +8,11 @@
     long long _style;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long style;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long style;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)alertView:(id)arg1 clickedButtonAtIndex:(long long)arg2;

@@ -4,13 +4,13 @@
 
 @interface SATextDecorationRegion : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSNumber * length;
-@property(assign,copy) NSString * property;
-@property(assign,copy) NSNumber * start;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSNumber *length;
+@property (nonatomic, copy) NSString *property;
+@property (nonatomic, copy) NSNumber *start;
+@property (readonly) Class superclass;
 
 + (id)textDecorationRegion;
 + (id)textDecorationRegionWithDictionary:(id)arg1 context:(id)arg2;

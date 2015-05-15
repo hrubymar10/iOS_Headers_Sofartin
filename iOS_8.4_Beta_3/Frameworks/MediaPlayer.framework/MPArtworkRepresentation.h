@@ -11,9 +11,9 @@
     id _representationToken;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } representationSize;
-@property(assign,retain) id representationToken;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) struct CGSize { double x1; double x2; } representationSize;
+@property (nonatomic, retain) id representationToken;
 
 + (id)representationWithSize:(struct CGSize { double x1; double x2; })arg1 image:(id)arg2;
 

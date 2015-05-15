@@ -16,17 +16,17 @@
     unsigned long long _softenSize;
 }
 
-@property(assign,readwrite) unsigned long long altitude;
-@property(assign,readwrite) short angle;
-@property(assign,readwrite) unsigned long long blurSize;
-@property(assign,readwrite) unsigned int direction;
-@property(assign,readwrite) int highlightBlendMode;
-@property(assign,retain) CUIColor * highlightColor;
-@property(assign,readwrite) double highlightOpacity;
-@property(assign,readwrite) int shadowBlendMode;
-@property(assign,retain) CUIColor * shadowColor;
-@property(assign,readwrite) double shadowOpacity;
-@property(assign,readwrite) unsigned long long softenSize;
+@property unsigned long long altitude;
+@property short angle;
+@property unsigned long long blurSize;
+@property unsigned int direction;
+@property int highlightBlendMode;
+@property (retain) CUIColor *highlightColor;
+@property double highlightOpacity;
+@property int shadowBlendMode;
+@property (retain) CUIColor *shadowColor;
+@property double shadowOpacity;
+@property unsigned long long softenSize;
 
 - (unsigned long long)altitude;
 - (short)angle;

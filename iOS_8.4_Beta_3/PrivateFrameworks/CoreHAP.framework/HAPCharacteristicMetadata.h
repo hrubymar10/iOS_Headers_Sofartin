@@ -9,10 +9,10 @@
     NSString *_units;
 }
 
-@property(assign,retain) HAPMetadataConstraints * constraints;
-@property(assign,retain) NSString * format;
-@property(assign,copy) NSString * manufacturerDescription;
-@property(assign,retain) NSString * units;
+@property (nonatomic, retain) HAPMetadataConstraints *constraints;
+@property (nonatomic, retain) NSString *format;
+@property (nonatomic, copy) NSString *manufacturerDescription;
+@property (nonatomic, retain) NSString *units;
 
 - (void).cxx_destruct;
 - (id)_generateValidConstraints:(id)arg1;

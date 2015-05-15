@@ -12,14 +12,14 @@
     UIImage *_videoPreviewImage;
 }
 
-@property(assign,readwrite) short assetSubtype;
-@property(assign,readwrite) bool didCompleteUnexpectedly;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) int recordingStoppedReason;
-@property(getter=isSuccessful,assign,readonly) bool successful;
-@property(getter=isUnplayable,assign,readwrite) bool unplayable;
-@property(assign,copy) NSString * videoCapturePath;
-@property(assign,retain) UIImage * videoPreviewImage;
+@property (nonatomic) short assetSubtype;
+@property (nonatomic) bool didCompleteUnexpectedly;
+@property (nonatomic) double duration;
+@property (nonatomic) int recordingStoppedReason;
+@property (getter=isSuccessful, nonatomic, readonly) bool successful;
+@property (getter=isUnplayable, nonatomic) bool unplayable;
+@property (nonatomic, copy) NSString *videoCapturePath;
+@property (nonatomic, retain) UIImage *videoPreviewImage;
 
 + (double)minimumVideoCaptureDuration;
 

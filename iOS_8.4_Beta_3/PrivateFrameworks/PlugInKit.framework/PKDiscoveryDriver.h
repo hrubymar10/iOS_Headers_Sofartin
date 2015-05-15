@@ -10,15 +10,15 @@
     id _report;
 }
 
-@property(assign,readwrite) int annotationNotifyToken;
-@property(assign,retain) NSDictionary * attributes;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long flags;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSSet * lastResults;
-@property(assign,copy) id report;
-@property(assign,readonly) Class superclass;
+@property int annotationNotifyToken;
+@property (retain) NSDictionary *attributes;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property unsigned long long flags;
+@property (readonly) unsigned long long hash;
+@property (retain) NSSet *lastResults;
+@property (copy) id report;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (int)annotationNotifyToken;

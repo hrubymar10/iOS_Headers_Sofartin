@@ -8,11 +8,11 @@
     bool _wantsContactImageLayout;
 }
 
-@property(assign,retain) UIImage * contactImage;
-@property(assign,retain) CKBalloonImageView * contactImageView;
-@property(assign,readwrite) bool failed;
-@property(assign,retain) UIButton * failureButton;
-@property(assign,readwrite) bool wantsContactImageLayout;
+@property (nonatomic, retain) UIImage *contactImage;
+@property (nonatomic, retain) CKBalloonImageView *contactImageView;
+@property (nonatomic) bool failed;
+@property (nonatomic, retain) UIButton *failureButton;
+@property (nonatomic) bool wantsContactImageLayout;
 
 + (double)failureButtonWidthPlusSpacing;
 

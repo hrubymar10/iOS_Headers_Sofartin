@@ -11,14 +11,14 @@
     bool _workaround;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) int errorCode;
-@property(assign,retain) NSString * errorDescription;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long photoID;
-@property(getter=isSuccess,assign,readwrite) bool success;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) int errorCode;
+@property (nonatomic, retain) NSString *errorDescription;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long photoID;
+@property (getter=isSuccess, nonatomic) bool success;
+@property (readonly) Class superclass;
 
 + (id)responseWithData:(id)arg1;
 

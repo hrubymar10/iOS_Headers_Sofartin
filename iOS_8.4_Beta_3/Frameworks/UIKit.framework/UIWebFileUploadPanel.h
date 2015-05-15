@@ -21,16 +21,16 @@
     UIAlertController *_selectPickerTypeSheet;
 }
 
-@property(assign,readwrite) bool allowMultipleFiles;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UIWebFileUploadPanelDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) UIWebDocumentView * documentView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isUsingCamera;
-@property(assign,copy) NSArray * mimeTypes;
-@property(assign,retain) NSObject<WebOpenPanelResultListener> * resultListener;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool allowMultipleFiles;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UIWebFileUploadPanelDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) UIWebDocumentView *documentView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isUsingCamera;
+@property (nonatomic, copy) NSArray *mimeTypes;
+@property (nonatomic, retain) NSObject<WebOpenPanelResultListener> *resultListener;
+@property (readonly) Class superclass;
 
 - (void)_cancel;
 - (void)_chooseFilename:(id)arg1 displayString:(id)arg2 iconImage:(id)arg3;

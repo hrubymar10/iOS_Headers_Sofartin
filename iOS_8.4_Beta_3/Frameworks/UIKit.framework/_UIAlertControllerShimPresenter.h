@@ -11,14 +11,14 @@
     _UIAlertControllerShimPresenterWindow *_window;
 }
 
-@property(assign,readwrite) UIAlertController * alertController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIAlertView * legacyAlert;
-@property(assign,readwrite) <UIPopoverControllerDelegate> * popoverDelegate;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) _UIAlertControllerShimPresenterWindow * window;
+@property UIAlertController *alertController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property UIAlertView *legacyAlert;
+@property <UIPopoverControllerDelegate> *popoverDelegate;
+@property (readonly) Class superclass;
+@property (readonly) _UIAlertControllerShimPresenterWindow *window;
 
 + (void)_addPresenter:(id)arg1;
 + (void)_cancelPendingTouchesIfAppropriate;

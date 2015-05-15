@@ -6,7 +6,7 @@
     NSMutableArray *_tileSets;
 }
 
-@property(assign,retain) NSMutableArray * tileSets;
+@property (nonatomic, retain) NSMutableArray *tileSets;
 
 - (void)addTileSet:(id)arg1;
 - (void)clearTileSets;

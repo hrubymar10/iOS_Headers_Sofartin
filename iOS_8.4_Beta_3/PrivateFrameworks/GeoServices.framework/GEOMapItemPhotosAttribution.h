@@ -4,7 +4,7 @@
 
 @interface GEOMapItemPhotosAttribution : GEOMapItemAttribution
 
-@property(assign,readonly) NSArray * addPhotoURLs;
+@property (nonatomic, readonly) NSArray *addPhotoURLs;
 
 - (id)addPhotoURLs;
 - (id)initWithSearchAttributionInfo:(id)arg1 attributionURLs:(id)arg2 poiID:(id)arg3;

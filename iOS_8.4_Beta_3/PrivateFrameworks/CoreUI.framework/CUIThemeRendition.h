@@ -30,9 +30,9 @@
     long long _validLookGradation;
 }
 
-@property(assign,readwrite) int blendMode;
-@property(assign,readwrite) int exifOrientation;
-@property(assign,readwrite) double opacity;
+@property (nonatomic) int blendMode;
+@property (nonatomic) int exifOrientation;
+@property (nonatomic) double opacity;
 
 + (id)displayNameForRenditionType:(long long)arg1;
 + (id)filteredCSIDataFromBaseCSIData:(id)arg1;

@@ -22,22 +22,22 @@
     bool inAskToBuyApprovalFlow;
 }
 
-@property(getter=_ignoresExpectedClientsProtocol,setter=_setIgnoresExpectedClientsProtocol:,assign,readwrite) bool _ignoresExpectedClientsProtocol;
-@property(assign,copy) SUUIAppearance * appearance;
-@property(assign,copy) NSString * askToBuyApprovalPrompt;
-@property(assign,copy) NSString * clientIdentifier;
-@property(assign,copy) UIColor * darkKeyColor;
-@property(assign,readwrite) <SUClientInterfaceDelegate> * delegate;
-@property(assign,readwrite) bool inAskToBuyApprovalFlow;
-@property(assign,copy) UIColor * lightKeyColor;
-@property(assign,copy) NSString * localStoragePath;
-@property(assign,readonly) SUPreviewOverlayViewController * previewOverlay;
-@property(assign,retain) SUPurchaseManager * purchaseManager;
-@property(assign,retain) SUQueueSessionManager * queueSessionManager;
-@property(assign,readonly) SUTabBarController * tabBarController;
-@property(assign,copy) NSString * userAgent;
-@property(assign,retain) SUViewControllerFactory * viewControllerFactory;
-@property(assign,readwrite) bool wasLaunchedFromLibrary;
+@property (getter=_ignoresExpectedClientsProtocol, setter=_setIgnoresExpectedClientsProtocol:) bool _ignoresExpectedClientsProtocol;
+@property (copy) SUUIAppearance *appearance;
+@property (nonatomic, copy) NSString *askToBuyApprovalPrompt;
+@property (copy) NSString *clientIdentifier;
+@property (nonatomic, copy) UIColor *darkKeyColor;
+@property (nonatomic) <SUClientInterfaceDelegate> *delegate;
+@property bool inAskToBuyApprovalFlow;
+@property (nonatomic, copy) UIColor *lightKeyColor;
+@property (copy) NSString *localStoragePath;
+@property (nonatomic, readonly) SUPreviewOverlayViewController *previewOverlay;
+@property (retain) SUPurchaseManager *purchaseManager;
+@property (retain) SUQueueSessionManager *queueSessionManager;
+@property (nonatomic, readonly) SUTabBarController *tabBarController;
+@property (copy) NSString *userAgent;
+@property (retain) SUViewControllerFactory *viewControllerFactory;
+@property bool wasLaunchedFromLibrary;
 
 - (id)URLBagKeyForIdentifier:(id)arg1;
 - (void)_dismissModalViewControllerFromViewController:(id)arg1 withTransition:(int)arg2;

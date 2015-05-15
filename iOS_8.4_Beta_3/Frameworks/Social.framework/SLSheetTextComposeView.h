@@ -8,9 +8,9 @@
     UITextView *_textView;
 }
 
-@property(assign,retain) UILabel * placeholderLabel;
-@property(assign,readwrite) double textRightInset;
-@property(assign,retain) UITextView * textView;
+@property (nonatomic, retain) UILabel *placeholderLabel;
+@property (nonatomic) double textRightInset;
+@property (nonatomic, retain) UITextView *textView;
 
 - (void).cxx_destruct;
 - (void)_assembleView;

@@ -18,18 +18,18 @@
     IKDOMElement *_xml;
 }
 
-@property(assign,readonly) NSArray * badges;
-@property(assign,readwrite) bool containsLinks;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long labelViewStyle;
-@property(assign,readwrite) <SKUILinkHandler> * linkDelegate;
-@property(assign,readonly) NSString * moreButtonTitle;
-@property(assign,readonly) long long numberOfLines;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) SKUIViewElementText * text;
-@property(assign,readonly) NSArray * trailingBadges;
+@property (nonatomic, readonly) NSArray *badges;
+@property (nonatomic) bool containsLinks;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long labelViewStyle;
+@property (nonatomic) <SKUILinkHandler> *linkDelegate;
+@property (nonatomic, readonly) NSString *moreButtonTitle;
+@property (nonatomic, readonly) long long numberOfLines;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) SKUIViewElementText *text;
+@property (nonatomic, readonly) NSArray *trailingBadges;
 
 + (bool)shouldParseChildDOMElements;
 

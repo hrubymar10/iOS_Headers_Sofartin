@@ -16,17 +16,17 @@
     int _usageFlags;
 }
 
-@property(assign,retain) NSArray * CACaps;
-@property(assign,retain) NSData * CAFingerprint;
-@property(assign,retain) NSString * CAInstanceName;
-@property(assign,retain) NSString * URLString;
-@property(assign,retain) NSString * challenge;
-@property(assign,readonly) unsigned long long keySize;
-@property(assign,readonly) unsigned long long retries;
-@property(assign,readonly) unsigned long long retryDelay;
-@property(assign,retain) NSArray * subject;
-@property(assign,retain) NSDictionary * subjectAltName;
-@property(assign,readonly) int usageFlags;
+@property (nonatomic, readonly, retain) NSArray *CACaps;
+@property (nonatomic, readonly, retain) NSData *CAFingerprint;
+@property (nonatomic, readonly, retain) NSString *CAInstanceName;
+@property (nonatomic, readonly, retain) NSString *URLString;
+@property (nonatomic, readonly, retain) NSString *challenge;
+@property (nonatomic, readonly) unsigned long long keySize;
+@property (nonatomic, readonly) unsigned long long retries;
+@property (nonatomic, readonly) unsigned long long retryDelay;
+@property (nonatomic, readonly, retain) NSArray *subject;
+@property (nonatomic, readonly, retain) NSDictionary *subjectAltName;
+@property (nonatomic, readonly) int usageFlags;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

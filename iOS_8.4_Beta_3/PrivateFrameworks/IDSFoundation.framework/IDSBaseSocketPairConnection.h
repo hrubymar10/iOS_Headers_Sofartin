@@ -16,7 +16,7 @@
     bool _writeSourceIsResumed;
 }
 
-@property(assign,readonly) int socket;
+@property (nonatomic, readonly) int socket;
 
 - (void)_callDelegatesWithBlock:(id)arg1;
 - (void)_processBytesAvailable;

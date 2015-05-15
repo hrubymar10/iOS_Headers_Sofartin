@@ -40,7 +40,7 @@
     unsigned int _unreadCount;
 }
 
-@property(assign,readwrite) bool VVMDataConnectionAvailable;
+@property bool VVMDataConnectionAvailable;
 
 + (void)_handleSIMChange;
 + (bool)_lockedSharedServiceIsSubscribed;

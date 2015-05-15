@@ -14,12 +14,12 @@
     unsigned int _type;
 }
 
-@property(assign,readonly) NSString * context;
-@property(assign,readonly) NSString * extraction;
-@property(assign,readonly) bool hasPhoneLabel;
-@property(assign,readonly) NSString * label;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } match;
-@property(assign,readonly) unsigned int type;
+@property (nonatomic, readonly) NSString *context;
+@property (nonatomic, readonly) NSString *extraction;
+@property (nonatomic, readonly) bool hasPhoneLabel;
+@property (nonatomic, readonly) NSString *label;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } match;
+@property (nonatomic, readonly) unsigned int type;
 
 + (id)detectionWithType:(unsigned int)arg1 text:(id)arg2 matchRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg3 matchString:(id)arg4 label:(id)arg5 hasPhoneLabel:(bool)arg6;
 

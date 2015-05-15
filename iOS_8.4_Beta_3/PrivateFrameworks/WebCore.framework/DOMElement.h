@@ -4,31 +4,31 @@
 
 @interface DOMElement : DOMNode
 
-@property(assign,readonly) unsigned int childElementCount;
-@property(assign,copy) NSString * className;
-@property(assign,readonly) int clientHeight;
-@property(assign,readonly) int clientLeft;
-@property(assign,readonly) int clientTop;
-@property(assign,readonly) int clientWidth;
-@property(assign,readonly) DOMElement * firstElementChild;
-@property(assign,copy) NSString * innerText;
-@property(assign,readonly) DOMElement * lastElementChild;
-@property(assign,readonly) DOMElement * mf_containingQuoteBlockElement;
-@property(assign,readonly) bool mf_isContainedInQuoteBlock;
-@property(assign,readonly) bool mf_isContainedInTable;
-@property(assign,readonly) DOMElement * nextElementSibling;
-@property(assign,readonly) int offsetHeight;
-@property(assign,readonly) int offsetLeft;
-@property(assign,readonly) DOMElement * offsetParent;
-@property(assign,readonly) int offsetTop;
-@property(assign,readonly) int offsetWidth;
-@property(assign,readonly) DOMElement * previousElementSibling;
-@property(assign,readonly) int scrollHeight;
-@property(assign,readwrite) int scrollLeft;
-@property(assign,readwrite) int scrollTop;
-@property(assign,readonly) int scrollWidth;
-@property(assign,readonly) DOMCSSStyleDeclaration * style;
-@property(assign,copy) NSString * tagName;
+@property (readonly) unsigned int childElementCount;
+@property (copy) NSString *className;
+@property (readonly) int clientHeight;
+@property (readonly) int clientLeft;
+@property (readonly) int clientTop;
+@property (readonly) int clientWidth;
+@property (readonly) DOMElement *firstElementChild;
+@property (readonly, copy) NSString *innerText;
+@property (readonly) DOMElement *lastElementChild;
+@property (readonly) DOMElement *mf_containingQuoteBlockElement;
+@property (readonly) bool mf_isContainedInQuoteBlock;
+@property (readonly) bool mf_isContainedInTable;
+@property (readonly) DOMElement *nextElementSibling;
+@property (readonly) int offsetHeight;
+@property (readonly) int offsetLeft;
+@property (readonly) DOMElement *offsetParent;
+@property (readonly) int offsetTop;
+@property (readonly) int offsetWidth;
+@property (readonly) DOMElement *previousElementSibling;
+@property (readonly) int scrollHeight;
+@property int scrollLeft;
+@property int scrollTop;
+@property (readonly) int scrollWidth;
+@property (readonly) DOMCSSStyleDeclaration *style;
+@property (readonly, copy) NSString *tagName;
 
 + (id)_DOMElementFromJSContext:(struct OpaqueJSContext { }*)arg1 value:(struct OpaqueJSValue { }*)arg2;
 + (bool)isRichTextStyle:(id)arg1;

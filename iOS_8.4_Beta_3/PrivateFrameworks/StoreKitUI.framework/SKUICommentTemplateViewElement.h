@@ -13,14 +13,14 @@
     bool _showKeyboard;
 }
 
-@property(assign,readonly) NSString * asFormat;
-@property(assign,readonly) NSString * asText;
-@property(assign,readonly) NSString * commentAsText;
-@property(assign,readonly) NSString * myselfText;
-@property(assign,readonly) NSString * postButtonText;
-@property(assign,readonly) NSString * postPlaceholderText;
-@property(assign,readonly) bool scrollNewCommentToView;
-@property(assign,readonly) bool showKeyboard;
+@property (nonatomic, readonly) NSString *asFormat;
+@property (nonatomic, readonly) NSString *asText;
+@property (nonatomic, readonly) NSString *commentAsText;
+@property (nonatomic, readonly) NSString *myselfText;
+@property (nonatomic, readonly) NSString *postButtonText;
+@property (nonatomic, readonly) NSString *postPlaceholderText;
+@property (nonatomic, readonly) bool scrollNewCommentToView;
+@property (nonatomic, readonly) bool showKeyboard;
 
 - (void).cxx_destruct;
 - (id)asFormat;

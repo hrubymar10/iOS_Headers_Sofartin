@@ -28,23 +28,23 @@
     NSMutableSet *_warnings;
 }
 
-@property(assign,copy) NSArray * buildVersionHistory;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) NSString * defaultDraftName;
-@property(assign,readwrite) <TSADocumentRootDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didLoadDocumentFromRevert;
-@property(assign,readwrite) bool hasPreUFFVersion;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool importingDesignDemoDoc;
-@property(assign,readonly) bool isBrowsingVersions;
-@property(assign,readonly) bool isClosed;
-@property(assign,readonly) NSSet * missingFontWarningMessages;
-@property(assign,readonly) NSString * name;
-@property(assign,readwrite) bool needsMovieCompatibilityUpgrade;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * templateIdentifier;
-@property(assign,readonly) TSKViewState * viewState;
+@property (nonatomic, copy) NSArray *buildVersionHistory;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) NSString *defaultDraftName;
+@property (nonatomic) <TSADocumentRootDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool didLoadDocumentFromRevert;
+@property (nonatomic) bool hasPreUFFVersion;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool importingDesignDemoDoc;
+@property (nonatomic, readonly) bool isBrowsingVersions;
+@property (nonatomic, readonly) bool isClosed;
+@property (nonatomic, readonly) NSSet *missingFontWarningMessages;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic) bool needsMovieCompatibilityUpgrade;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *templateIdentifier;
+@property (nonatomic, readonly) TSKViewState *viewState;
 
 + (id)buildVersionHistoryPath;
 + (id)buildVersionHistoryPathPreUFF;

@@ -9,10 +9,10 @@
     NSLayoutConstraint *_widthConstraint;
 }
 
-@property(assign,retain) UITextLabel * label;
-@property(assign,readwrite) bool selected;
-@property(assign,readwrite) EKUIDividedGridViewController * viewController;
-@property(assign,readwrite) NSLayoutConstraint * widthConstraint;
+@property (retain) UITextLabel *label;
+@property (nonatomic) bool selected;
+@property EKUIDividedGridViewController *viewController;
+@property NSLayoutConstraint *widthConstraint;
 
 - (void).cxx_destruct;
 - (id)init;

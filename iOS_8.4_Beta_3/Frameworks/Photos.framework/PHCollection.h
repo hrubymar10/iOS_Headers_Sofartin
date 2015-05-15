@@ -9,13 +9,13 @@
     unsigned long long _estimatedVideosCount;
 }
 
-@property(assign,readonly) bool canContainAssets;
-@property(assign,readonly) bool canContainCollections;
-@property(assign,readonly) bool customSortAscending;
-@property(assign,readonly) int customSortKey;
-@property(assign,readonly) unsigned long long estimatedPhotosCount;
-@property(assign,readonly) unsigned long long estimatedVideosCount;
-@property(assign,readonly) NSString * localizedTitle;
+@property (nonatomic, readonly) bool canContainAssets;
+@property (nonatomic, readonly) bool canContainCollections;
+@property (nonatomic, readonly) bool customSortAscending;
+@property (nonatomic, readonly) int customSortKey;
+@property (nonatomic, readonly) unsigned long long estimatedPhotosCount;
+@property (nonatomic, readonly) unsigned long long estimatedVideosCount;
+@property (nonatomic, readonly) NSString *localizedTitle;
 
 + (id)_transformValueExpression:(id)arg1 forKeyPath:(id)arg2;
 + (id)entityKeyForPropertyKey:(id)arg1;

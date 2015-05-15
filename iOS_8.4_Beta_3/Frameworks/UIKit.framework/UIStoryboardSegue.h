@@ -10,11 +10,11 @@
     id _sourceViewController;
 }
 
-@property(assign,readonly) id destinationViewController;
-@property(assign,readonly) NSString * identifier;
-@property(assign,copy) id performHandler;
-@property(assign,retain) id sender;
-@property(assign,readonly) id sourceViewController;
+@property (nonatomic, readonly) id destinationViewController;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, copy) id performHandler;
+@property (nonatomic, retain) id sender;
+@property (nonatomic, readonly) id sourceViewController;
 
 + (id)segueWithIdentifier:(id)arg1 source:(id)arg2 destination:(id)arg3 performHandler:(id)arg4;
 

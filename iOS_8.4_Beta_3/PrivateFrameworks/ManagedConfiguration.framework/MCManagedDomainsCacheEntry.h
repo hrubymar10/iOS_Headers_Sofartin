@@ -9,10 +9,10 @@
     bool _subdomainsMatch;
 }
 
-@property(assign,retain) NSString * domain;
-@property(assign,retain) NSString * path;
-@property(assign,retain) NSNumber * port;
-@property(assign,readwrite) bool subdomainsMatch;
+@property (nonatomic, retain) NSString *domain;
+@property (nonatomic, retain) NSString *path;
+@property (nonatomic, retain) NSNumber *port;
+@property (nonatomic) bool subdomainsMatch;
 
 + (id)normalizedPatternString:(id)arg1;
 

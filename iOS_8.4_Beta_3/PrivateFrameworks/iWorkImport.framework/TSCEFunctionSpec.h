@@ -14,15 +14,15 @@
     int mShipVersion;
 }
 
-@property(assign,readonly) NSArray * arguments;
-@property(assign,readonly) int functionIndex;
-@property(assign,readonly) NSString * functionName;
-@property(assign,readonly) bool isOperator;
-@property(assign,readonly) short maxArguments;
-@property(assign,readonly) short minArguments;
-@property(assign,readonly) unsigned long long numArguments;
-@property(assign,readonly) short repeatingGroupSize;
-@property(assign,readonly) int versionShippedIn;
+@property (nonatomic, readonly) NSArray *arguments;
+@property (readonly) int functionIndex;
+@property (nonatomic, readonly) NSString *functionName;
+@property (nonatomic, readonly) bool isOperator;
+@property (nonatomic, readonly) short maxArguments;
+@property (nonatomic, readonly) short minArguments;
+@property (nonatomic, readonly) unsigned long long numArguments;
+@property (nonatomic, readonly) short repeatingGroupSize;
+@property (nonatomic, readonly) int versionShippedIn;
 
 + (id)functionSpecForFunctionIndex:(int)arg1;
 + (id)specDictionary;

@@ -6,10 +6,10 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (long long)_invalidationDataHasExpired:(id)arg1;
 - (bool)_invalidationDataHasExpiredByVersion:(unsigned int)arg1 domains:(id)arg2;

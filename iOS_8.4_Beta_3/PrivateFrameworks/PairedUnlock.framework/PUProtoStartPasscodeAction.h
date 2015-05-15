@@ -10,9 +10,9 @@
     unsigned int _passcodeType;
 }
 
-@property(assign,readwrite) unsigned int actionID;
-@property(assign,readwrite) bool hasPasscodeType;
-@property(assign,readwrite) unsigned int passcodeType;
+@property (nonatomic) unsigned int actionID;
+@property (nonatomic) bool hasPasscodeType;
+@property (nonatomic) unsigned int passcodeType;
 
 - (unsigned int)actionID;
 - (void)copyTo:(id)arg1;

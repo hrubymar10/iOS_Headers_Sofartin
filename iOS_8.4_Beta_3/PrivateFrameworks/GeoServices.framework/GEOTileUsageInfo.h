@@ -9,10 +9,10 @@
     NSMapTable *_tileStyleToCount;
 }
 
-@property(assign,readonly) unsigned long long dataLength;
-@property(assign,readwrite) double endTime;
-@property(assign,readwrite) double startTime;
-@property(assign,readonly) NSMapTable * tileStyleToCount;
+@property (nonatomic, readonly) unsigned long long dataLength;
+@property (nonatomic) double endTime;
+@property (nonatomic) double startTime;
+@property (nonatomic, readonly) NSMapTable *tileStyleToCount;
 
 - (void)addTileKey:(const struct _GEOTileKey { unsigned int x1 : 6; unsigned int x2 : 26; unsigned int x3 : 26; unsigned int x4 : 6; unsigned int x5 : 8; unsigned int x6 : 8; unsigned int x7 : 8; unsigned int x8 : 1; unsigned int x9 : 7; unsigned char x10[4]; }*)arg1 dataLength:(unsigned long long)arg2;
 - (unsigned long long)dataLength;

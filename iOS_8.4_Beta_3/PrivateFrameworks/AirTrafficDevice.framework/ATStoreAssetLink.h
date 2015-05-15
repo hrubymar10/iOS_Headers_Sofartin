@@ -12,13 +12,13 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * callbackQueue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ATAssetLinkDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isOpen,assign,readonly) bool open;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *callbackQueue;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ATAssetLinkDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isOpen, nonatomic, readonly) bool open;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_assetForDownload:(id)arg1;

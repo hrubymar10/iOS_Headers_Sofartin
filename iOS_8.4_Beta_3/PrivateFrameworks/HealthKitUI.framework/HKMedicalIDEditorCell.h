@@ -11,15 +11,15 @@
     UIView *_verticalSeparatorView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) <HKMedicalIDEditorCellEditDelegate> * editDelegate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) HKCaretOptionalTextField * inputTextField;
-@property(assign,retain) NSString * label;
-@property(assign,readonly) UILabel * labelLabel;
-@property(assign,readwrite) double minimumLabelWidth;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) <HKMedicalIDEditorCellEditDelegate> *editDelegate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) HKCaretOptionalTextField *inputTextField;
+@property (nonatomic, retain) NSString *label;
+@property (nonatomic, readonly) UILabel *labelLabel;
+@property (nonatomic) double minimumLabelWidth;
+@property (readonly) Class superclass;
 
 + (bool)showsLabelAndValue;
 

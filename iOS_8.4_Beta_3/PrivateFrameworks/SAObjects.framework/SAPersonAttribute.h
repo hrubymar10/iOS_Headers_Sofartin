@@ -4,14 +4,14 @@
 
 @interface SAPersonAttribute : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * displayText;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAPerson * object;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) <SAAceSerializable> * typedData;
+@property (nonatomic, copy) NSString *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *displayText;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAPerson *object;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) <SAAceSerializable> *typedData;
 
 + (id)personAttribute;
 + (id)personAttributeWithDictionary:(id)arg1 context:(id)arg2;

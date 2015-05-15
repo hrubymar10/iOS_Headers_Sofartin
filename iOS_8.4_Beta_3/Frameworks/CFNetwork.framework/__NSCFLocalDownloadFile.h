@@ -46,15 +46,15 @@
     NSObject<OS_dispatch_io> *_writeIO;
 }
 
-@property(assign,readwrite) int error;
-@property(assign,readwrite) <__NSCFLocalDownloadFileOpener> * fileProvider;
-@property(assign,copy) id finishCompletion;
-@property(assign,readwrite) bool finished;
-@property(assign,retain) NSString * path;
-@property(assign,readwrite) bool skipUnlink;
-@property(assign,readwrite) bool truncateFile;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * workQueue;
-@property(assign,readwrite) NSObject<OS_dispatch_io> * writeIO;
+@property int error;
+@property <__NSCFLocalDownloadFileOpener> *fileProvider;
+@property (copy) id finishCompletion;
+@property bool finished;
+@property (retain) NSString *path;
+@property bool skipUnlink;
+@property bool truncateFile;
+@property NSObject<OS_dispatch_queue> *workQueue;
+@property NSObject<OS_dispatch_io> *writeIO;
 
 - (id).cxx_construct;
 - (void)captureFile:(id*)arg1 outStat:(struct stat { int x1; unsigned short x2; unsigned short x3; unsigned long long x4; unsigned int x5; unsigned int x6; int x7; struct timespec { long long x_8_1_1; long long x_8_1_2; } x8; struct timespec { long long x_9_1_1; long long x_9_1_2; } x9; struct timespec { long long x_10_1_1; long long x_10_1_2; } x10; struct timespec { long long x_11_1_1; long long x_11_1_2; } x11; long long x12; long long x13; int x14; unsigned int x15; unsigned int x16; int x17; long long x18[2]; }*)arg2;

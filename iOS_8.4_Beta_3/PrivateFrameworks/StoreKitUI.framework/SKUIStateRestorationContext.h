@@ -6,7 +6,7 @@
     SKUIClientContext *_clientContext;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
 
 + (void)setSharedContext:(id)arg1;
 + (id)sharedContext;

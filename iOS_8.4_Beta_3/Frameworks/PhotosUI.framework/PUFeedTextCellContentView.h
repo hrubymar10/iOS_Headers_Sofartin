@@ -8,9 +8,9 @@
     UILabel *label;
 }
 
-@property(assign,retain) UILabel * detailLabel;
-@property(assign,retain) UIImageView * iconImageView;
-@property(assign,retain) UILabel * label;
+@property (nonatomic, retain) UILabel *detailLabel;
+@property (nonatomic, retain) UIImageView *iconImageView;
+@property (nonatomic, retain) UILabel *label;
 
 - (void).cxx_destruct;
 - (id)detailLabel;

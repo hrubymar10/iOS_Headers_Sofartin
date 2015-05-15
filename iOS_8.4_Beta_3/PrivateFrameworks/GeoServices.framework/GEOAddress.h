@@ -11,15 +11,15 @@
     GEOStructuredAddress *_structuredAddress;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableArray * formattedAddressLines;
-@property(assign,readwrite) int formattedAddressType;
-@property(assign,readwrite) bool hasFormattedAddressType;
-@property(assign,readonly) bool hasStructuredAddress;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) GEOStructuredAddress * structuredAddress;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMutableArray *formattedAddressLines;
+@property (nonatomic) int formattedAddressType;
+@property (nonatomic) bool hasFormattedAddressType;
+@property (nonatomic, readonly) bool hasStructuredAddress;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) GEOStructuredAddress *structuredAddress;
+@property (readonly) Class superclass;
 
 + (id)geoAddressForPlaceData:(id)arg1;
 

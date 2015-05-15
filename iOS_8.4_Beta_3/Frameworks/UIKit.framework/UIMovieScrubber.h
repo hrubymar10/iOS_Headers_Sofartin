@@ -79,30 +79,30 @@
     double _zoomDelay;
 }
 
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } alignmentMargins;
-@property(getter=isContinuous,assign,readwrite) bool continuous;
-@property(assign,readwrite) <UIMovieScrubberDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UIMovieScrubberDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) double edgeInset;
-@property(getter=isEditable,assign,readwrite) bool editable;
-@property(getter=isEditing,assign,readwrite) bool editing;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isInsideNavigationBar;
-@property(assign,readwrite) double maximumTrimLength;
-@property(assign,readwrite) double minimumTrimLength;
-@property(assign,readwrite) bool showTimeViews;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool thumbIsVisible;
-@property(assign,readwrite) double trimEndValue;
-@property(assign,readwrite) double trimStartValue;
-@property(assign,readwrite) double value;
-@property(getter=isZoomAnimating,assign,readonly) bool zoomAnimating;
-@property(assign,readwrite) double zoomDelay;
-@property(assign,readonly) double zoomMaximumValue;
-@property(assign,readonly) double zoomMinimumValue;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } alignmentMargins;
+@property (getter=isContinuous, nonatomic) bool continuous;
+@property (nonatomic) <UIMovieScrubberDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UIMovieScrubberDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double duration;
+@property (nonatomic) double edgeInset;
+@property (getter=isEditable, nonatomic) bool editable;
+@property (getter=isEditing, nonatomic) bool editing;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isInsideNavigationBar;
+@property (nonatomic) double maximumTrimLength;
+@property (nonatomic) double minimumTrimLength;
+@property (nonatomic) bool showTimeViews;
+@property (readonly) Class superclass;
+@property (nonatomic) bool thumbIsVisible;
+@property (nonatomic) double trimEndValue;
+@property (nonatomic) double trimStartValue;
+@property (nonatomic) double value;
+@property (getter=isZoomAnimating, nonatomic, readonly) bool zoomAnimating;
+@property (nonatomic) double zoomDelay;
+@property (nonatomic, readonly) double zoomMaximumValue;
+@property (nonatomic, readonly) double zoomMinimumValue;
 
 + (id)timeStringForSeconds:(int)arg1 forceFullWidthComponents:(bool)arg2 isElapsed:(bool)arg3;
 

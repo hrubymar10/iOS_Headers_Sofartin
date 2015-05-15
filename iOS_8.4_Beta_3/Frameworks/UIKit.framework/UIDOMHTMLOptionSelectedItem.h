@@ -7,7 +7,7 @@
     bool _selected;
 }
 
-@property(assign,retain) DOMHTMLOptionElement * _node;
+@property (nonatomic, retain) DOMHTMLOptionElement *_node;
 
 - (id)_node;
 - (void)dealloc;

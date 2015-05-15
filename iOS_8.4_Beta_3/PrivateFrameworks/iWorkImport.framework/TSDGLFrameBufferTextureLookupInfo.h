@@ -13,11 +13,11 @@
     } _textureSize;
 }
 
-@property(assign,readwrite) unsigned int attachment;
-@property(assign,readwrite) long long indexOnAttachment;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) unsigned int textureName;
-@property(assign,readonly) struct CGSize { double x1; double x2; } textureSize;
+@property (nonatomic) unsigned int attachment;
+@property (nonatomic) long long indexOnAttachment;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) unsigned int textureName;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } textureSize;
 
 + (id)textureLookupInfoWithAttachment:(unsigned int)arg1 indexOnAttachment:(long long)arg2 textureName:(unsigned int)arg3 textureSize:(struct CGSize { double x1; double x2; })arg4 name:(id)arg5;
 

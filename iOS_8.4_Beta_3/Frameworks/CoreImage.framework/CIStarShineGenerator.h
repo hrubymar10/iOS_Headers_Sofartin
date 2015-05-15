@@ -13,14 +13,14 @@
     NSNumber *inputRadius;
 }
 
-@property(assign,retain) CIVector * inputCenter;
-@property(assign,retain) CIColor * inputColor;
-@property(assign,retain) NSNumber * inputCrossAngle;
-@property(assign,retain) NSNumber * inputCrossOpacity;
-@property(assign,retain) NSNumber * inputCrossScale;
-@property(assign,retain) NSNumber * inputCrossWidth;
-@property(assign,retain) NSNumber * inputEpsilon;
-@property(assign,retain) NSNumber * inputRadius;
+@property (nonatomic, retain) CIVector *inputCenter;
+@property (nonatomic, retain) CIColor *inputColor;
+@property (nonatomic, retain) NSNumber *inputCrossAngle;
+@property (nonatomic, retain) NSNumber *inputCrossOpacity;
+@property (nonatomic, retain) NSNumber *inputCrossScale;
+@property (nonatomic, retain) NSNumber *inputCrossWidth;
+@property (nonatomic, retain) NSNumber *inputEpsilon;
+@property (nonatomic, retain) NSNumber *inputRadius;
 
 + (id)customAttributes;
 

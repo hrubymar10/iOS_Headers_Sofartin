@@ -47,21 +47,21 @@
     <PCGrowthAlgorithm> *_wwanGrowthAlgorithm;
 }
 
-@property(assign,readonly) unsigned long long countOfGrowthActions;
-@property(assign,readonly) double currentKeepAliveInterval;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PCConnectionManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool disableEarlyFire;
-@property(assign,copy) NSString * duetIdentifier;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isRunning;
-@property(assign,readwrite) double keepAliveGracePeriod;
-@property(assign,readonly) NSString * loggingIdentifier;
-@property(assign,readwrite) double maximumKeepAliveInterval;
-@property(assign,readwrite) double minimumKeepAliveInterval;
-@property(assign,readonly) double pollingInterval;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long countOfGrowthActions;
+@property (nonatomic, readonly) double currentKeepAliveInterval;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PCConnectionManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool disableEarlyFire;
+@property (nonatomic, copy) NSString *duetIdentifier;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isRunning;
+@property (nonatomic) double keepAliveGracePeriod;
+@property (nonatomic, readonly) NSString *loggingIdentifier;
+@property double maximumKeepAliveInterval;
+@property (nonatomic) double minimumKeepAliveInterval;
+@property (nonatomic, readonly) double pollingInterval;
+@property (readonly) Class superclass;
 
 + (bool)_isCachedKeepAliveIntervalStillValid:(double)arg1 date:(id)arg2;
 + (id)_keepAliveCachePath;

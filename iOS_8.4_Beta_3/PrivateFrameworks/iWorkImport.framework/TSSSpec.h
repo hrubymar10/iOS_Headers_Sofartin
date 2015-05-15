@@ -4,7 +4,7 @@
 
 @interface TSSSpec : TSKSosBase
 
-@property(assign,readonly) NSString * operationPropertyName;
+@property (readonly) NSString *operationPropertyName;
 
 - (id)apply:(id)arg1;
 - (bool)canApplyOnObject:(id)arg1;

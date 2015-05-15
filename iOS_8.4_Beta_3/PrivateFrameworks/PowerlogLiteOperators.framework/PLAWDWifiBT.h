@@ -16,19 +16,19 @@
     long long _wifiSubmitCnt;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * btEventCallback;
-@property(assign,retain) PLEntryNotificationOperatorComposition * btPowerCallback;
-@property(assign,retain) PLEntryNotificationOperatorComposition * btRailCallback;
-@property(assign,readwrite) long long btSubmitCnt;
-@property(assign,readwrite) bool isBTRailStart;
-@property(assign,readwrite) bool isBTStart;
-@property(assign,readwrite) bool isWiFiRailStart;
-@property(assign,readwrite) bool isWiFiStart;
-@property(assign,readwrite) PLOperator * operator;
-@property(assign,retain) NSMutableSet * runningMetrics;
-@property(assign,retain) PLEntryNotificationOperatorComposition * wifiEventCallback;
-@property(assign,retain) PLEntryNotificationOperatorComposition * wifiRailCallback;
-@property(assign,readwrite) long long wifiSubmitCnt;
+@property (retain) PLEntryNotificationOperatorComposition *btEventCallback;
+@property (retain) PLEntryNotificationOperatorComposition *btPowerCallback;
+@property (retain) PLEntryNotificationOperatorComposition *btRailCallback;
+@property long long btSubmitCnt;
+@property bool isBTRailStart;
+@property bool isBTStart;
+@property bool isWiFiRailStart;
+@property bool isWiFiStart;
+@property PLOperator *operator;
+@property (nonatomic, retain) NSMutableSet *runningMetrics;
+@property (retain) PLEntryNotificationOperatorComposition *wifiEventCallback;
+@property (retain) PLEntryNotificationOperatorComposition *wifiRailCallback;
+@property long long wifiSubmitCnt;
 
 + (id)entryAggregateDefinitionAwdBT;
 + (id)entryAggregateDefinitionAwdWifi;

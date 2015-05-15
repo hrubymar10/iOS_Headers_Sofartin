@@ -6,8 +6,8 @@
     NSDictionary *_dictionary;
 }
 
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSString * name;
+@property (readonly) NSString *identifier;
+@property (readonly) NSString *name;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

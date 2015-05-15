@@ -12,11 +12,11 @@
     unsigned long long mWidth;
 }
 
-@property(assign,readwrite) float compressionFactor;
-@property(assign,readwrite) unsigned long long height;
-@property(assign,retain) NSString * imageType;
-@property(assign,readwrite) bool scaleToFit;
-@property(assign,readwrite) unsigned long long width;
+@property (nonatomic) float compressionFactor;
+@property (nonatomic) unsigned long long height;
+@property (nonatomic, retain) NSString *imageType;
+@property (nonatomic) bool scaleToFit;
+@property (nonatomic) unsigned long long width;
 
 - (float)compressionFactor;
 - (unsigned long long)height;

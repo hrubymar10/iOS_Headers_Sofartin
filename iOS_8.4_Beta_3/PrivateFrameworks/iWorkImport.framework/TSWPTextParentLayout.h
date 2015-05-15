@@ -9,7 +9,7 @@
     } _maximumFrameSizeForChildren;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } maximumFrameSizeForChildren;
+@property (nonatomic) struct CGSize { double x1; double x2; } maximumFrameSizeForChildren;
 
 - (id).cxx_construct;
 - (id)initWithInfo:(id)arg1;

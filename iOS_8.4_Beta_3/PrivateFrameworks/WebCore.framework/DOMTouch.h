@@ -4,14 +4,14 @@
 
 @interface DOMTouch : DOMObject
 
-@property(assign,readonly) int clientX;
-@property(assign,readonly) int clientY;
-@property(assign,readonly) unsigned int identifier;
-@property(assign,readonly) int pageX;
-@property(assign,readonly) int pageY;
-@property(assign,readonly) int screenX;
-@property(assign,readonly) int screenY;
-@property(assign,readonly) <DOMEventTarget> * target;
+@property (readonly) int clientX;
+@property (readonly) int clientY;
+@property (readonly) unsigned int identifier;
+@property (readonly) int pageX;
+@property (readonly) int pageY;
+@property (readonly) int screenX;
+@property (readonly) int screenY;
+@property (readonly) <DOMEventTarget> *target;
 
 - (int)clientX;
 - (int)clientY;

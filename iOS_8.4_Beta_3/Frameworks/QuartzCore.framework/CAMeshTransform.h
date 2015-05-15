@@ -8,10 +8,10 @@
     long long _subdivisionSteps;
 }
 
-@property(assign,copy) NSString * depthNormalization;
-@property(assign,readonly) unsigned long long faceCount;
-@property(assign,readonly) int subdivisionSteps;
-@property(assign,readonly) unsigned long long vertexCount;
+@property (readonly, copy) NSString *depthNormalization;
+@property (readonly) unsigned long long faceCount;
+@property (readonly) int subdivisionSteps;
+@property (readonly) unsigned long long vertexCount;
 
 + (void)CAMLParserEndElement:(id)arg1 content:(id)arg2;
 + (void)CAMLParserStartElement:(id)arg1;

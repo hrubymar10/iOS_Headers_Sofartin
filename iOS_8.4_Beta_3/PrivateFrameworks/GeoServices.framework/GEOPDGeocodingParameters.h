@@ -12,14 +12,14 @@
     GEOPDViewportInfo *_viewportInfo;
 }
 
-@property(assign,readwrite) bool hasMaxResults;
-@property(assign,readonly) bool hasQueryString;
-@property(assign,readonly) bool hasStructuredAddress;
-@property(assign,readonly) bool hasViewportInfo;
-@property(assign,readwrite) unsigned int maxResults;
-@property(assign,retain) NSString * queryString;
-@property(assign,retain) GEOStructuredAddress * structuredAddress;
-@property(assign,retain) GEOPDViewportInfo * viewportInfo;
+@property (nonatomic) bool hasMaxResults;
+@property (nonatomic, readonly) bool hasQueryString;
+@property (nonatomic, readonly) bool hasStructuredAddress;
+@property (nonatomic, readonly) bool hasViewportInfo;
+@property (nonatomic) unsigned int maxResults;
+@property (nonatomic, retain) NSString *queryString;
+@property (nonatomic, retain) GEOStructuredAddress *structuredAddress;
+@property (nonatomic, retain) GEOPDViewportInfo *viewportInfo;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

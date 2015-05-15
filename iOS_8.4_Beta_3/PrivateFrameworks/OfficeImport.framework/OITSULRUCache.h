@@ -10,7 +10,7 @@
     NSMutableArray *mOrderedKeys;
 }
 
-@property(assign,readonly) unsigned long long maxSize;
+@property (nonatomic, readonly) unsigned long long maxSize;
 
 - (id)allKeys;
 - (id)allValues;

@@ -12,8 +12,8 @@
     NSString *_uuid;
 }
 
-@property(assign,readwrite) <CPPowerAssertionManagerDelegate> * delegate;
-@property(assign,readonly) NSString * uuid;
+@property <CPPowerAssertionManagerDelegate> *delegate;
+@property (readonly) NSString *uuid;
 
 + (id)sharedInstance;
 

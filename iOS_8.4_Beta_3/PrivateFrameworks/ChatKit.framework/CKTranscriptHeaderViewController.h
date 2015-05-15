@@ -7,8 +7,8 @@
     bool _shouldInvalidateOnAddressBookChange;
 }
 
-@property(assign,retain) CKConversation * conversation;
-@property(assign,readonly) bool shouldInvalidateOnAddressBookChange;
+@property (nonatomic, retain) CKConversation *conversation;
+@property (nonatomic, readonly) bool shouldInvalidateOnAddressBookChange;
 
 - (id)conversation;
 - (void)dealloc;

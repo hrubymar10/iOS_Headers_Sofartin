@@ -9,10 +9,10 @@
     NSData *tokenData;
 }
 
-@property(assign,readwrite) NSObject<OS_xpc_object> * connection;
-@property(assign,retain) id context;
-@property(assign,readwrite) int pid;
-@property(assign,retain) NSData * tokenData;
+@property NSObject<OS_xpc_object> *connection;
+@property (nonatomic, retain) id context;
+@property int pid;
+@property (nonatomic, retain) NSData *tokenData;
 
 - (id)connection;
 - (id)context;

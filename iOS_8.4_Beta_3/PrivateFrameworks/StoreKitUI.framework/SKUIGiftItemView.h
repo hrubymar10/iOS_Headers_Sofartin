@@ -22,19 +22,19 @@
     UILabel *_userRatingCountLabel;
 }
 
-@property(assign,copy) NSString * artistName;
-@property(assign,readonly) SKUIItemArtworkContext * artworkContext;
-@property(assign,copy) NSString * categoryName;
-@property(assign,readonly) long long giftItemStyle;
-@property(assign,readonly) SKUIItem * item;
-@property(assign,retain) UIImage * itemImage;
-@property(assign,readonly) SKUIItemOfferButton * itemOfferButton;
-@property(assign,retain) SKUIItemState * itemState;
-@property(assign,readwrite) long long numberOfUserRatings;
-@property(assign,copy) NSString * price;
-@property(assign,copy) SKUIGiftTheme * theme;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) float userRating;
+@property (nonatomic, copy) NSString *artistName;
+@property (nonatomic, readonly) SKUIItemArtworkContext *artworkContext;
+@property (nonatomic, copy) NSString *categoryName;
+@property (nonatomic, readonly) long long giftItemStyle;
+@property (nonatomic, readonly) SKUIItem *item;
+@property (nonatomic, retain) UIImage *itemImage;
+@property (nonatomic, readonly) SKUIItemOfferButton *itemOfferButton;
+@property (nonatomic, retain) SKUIItemState *itemState;
+@property (nonatomic) long long numberOfUserRatings;
+@property (nonatomic, copy) NSString *price;
+@property (nonatomic, copy) SKUIGiftTheme *theme;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) float userRating;
 
 - (void).cxx_destruct;
 - (void)_enumerateMetadataViewsUsingBlock:(id)arg1;

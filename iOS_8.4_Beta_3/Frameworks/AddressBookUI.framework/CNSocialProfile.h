@@ -6,12 +6,12 @@
     NSMutableDictionary *_profileDictionary;
 }
 
-@property(assign,copy) NSString * displayname;
-@property(assign,retain) NSMutableDictionary * profileDictionary;
-@property(assign,copy) NSString * service;
-@property(assign,copy) NSString * urlString;
-@property(assign,copy) NSString * userIdentifier;
-@property(assign,copy) NSString * username;
+@property (readonly, copy) NSString *displayname;
+@property (retain) NSMutableDictionary *profileDictionary;
+@property (readonly, copy) NSString *service;
+@property (readonly, copy) NSString *urlString;
+@property (readonly, copy) NSString *userIdentifier;
+@property (readonly, copy) NSString *username;
 
 + (id)socialProfile;
 + (id)socialProfileWithDictionary:(id)arg1;

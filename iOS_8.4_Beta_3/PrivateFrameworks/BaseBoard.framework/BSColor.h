@@ -9,14 +9,14 @@
     double _red;
 }
 
-@property(assign,readonly) double alpha;
-@property(assign,readonly) double blue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double green;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double red;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) double alpha;
+@property (nonatomic, readonly) double blue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double green;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double red;
+@property (readonly) Class superclass;
 
 + (id)colorWithRed:(double)arg1 green:(double)arg2 blue:(double)arg3 alpha:(double)arg4;
 + (bool)supportsSecureCoding;

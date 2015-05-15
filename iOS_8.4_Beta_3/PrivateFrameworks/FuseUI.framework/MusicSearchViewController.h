@@ -25,16 +25,16 @@
     bool _storeSearchViewNeedsSubmitUponAppearance;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <MusicSearchViewControllerMediaPickerDelegate> * mediaPickerDelegate;
-@property(assign,readonly) double searchNavigationBarPaletteHeight;
-@property(assign,readwrite) unsigned long long searchOptions;
-@property(assign,copy) NSString * searchTerm;
-@property(assign,readwrite) bool storeSearchViewIsVisible;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <MusicSearchViewControllerMediaPickerDelegate> *mediaPickerDelegate;
+@property (nonatomic, readonly) double searchNavigationBarPaletteHeight;
+@property (nonatomic) unsigned long long searchOptions;
+@property (nonatomic, copy) NSString *searchTerm;
+@property (nonatomic) bool storeSearchViewIsVisible;
+@property (readonly) Class superclass;
 
 + (id)_defaultSearchNavigationControllerWithSearchViewController:(id)arg1;
 + (id)_defaultSearchViewControllerForPresentingViewController:(id)arg1;

@@ -8,9 +8,9 @@
     NSArray *_requestUUIDs;
 }
 
-@property(assign,retain) NSError * error;
-@property(assign,retain) NSString * operationID;
-@property(assign,retain) NSArray * requestUUIDs;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, retain) NSString *operationID;
+@property (nonatomic, retain) NSArray *requestUUIDs;
 
 + (bool)supportsSecureCoding;
 

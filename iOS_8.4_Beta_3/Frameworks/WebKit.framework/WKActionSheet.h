@@ -15,8 +15,8 @@
     <WKActionSheetDelegate> *_sheetDelegate;
 }
 
-@property(assign,readwrite) unsigned long long arrowDirections;
-@property(assign,readwrite) <WKActionSheetDelegate> * sheetDelegate;
+@property (nonatomic) unsigned long long arrowDirections;
+@property (nonatomic) <WKActionSheetDelegate> *sheetDelegate;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

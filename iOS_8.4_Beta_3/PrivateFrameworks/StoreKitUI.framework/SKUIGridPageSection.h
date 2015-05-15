@@ -25,11 +25,11 @@
     NSMutableDictionary *_videoPlaceholderImages;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIGridComponent * pageComponent;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIGridComponent *pageComponent;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_artworkContextForLockupSize:(long long)arg1;

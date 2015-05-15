@@ -4,12 +4,12 @@
 
 @interface DOMHTMLTableColElement : DOMHTMLElement
 
-@property(assign,copy) NSString * align;
-@property(assign,copy) NSString * ch;
-@property(assign,copy) NSString * chOff;
-@property(assign,readwrite) int span;
-@property(assign,copy) NSString * vAlign;
-@property(assign,copy) NSString * width;
+@property (copy) NSString *align;
+@property (copy) NSString *ch;
+@property (copy) NSString *chOff;
+@property int span;
+@property (copy) NSString *vAlign;
+@property (copy) NSString *width;
 
 - (id)align;
 - (id)ch;

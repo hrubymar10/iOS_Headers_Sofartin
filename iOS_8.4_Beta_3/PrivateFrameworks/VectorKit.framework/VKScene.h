@@ -13,13 +13,13 @@
     NSSet *_tilesToRender;
 }
 
-@property(assign,retain) GEOTileKeyList * debugKeyList;
-@property(assign,readwrite) bool fullyLoaded;
-@property(assign,retain) VKTileKeyList * keysInView;
-@property(assign,readwrite) bool mapIsOpaque;
-@property(assign,retain) VKTileKeyList * neighborKeys;
-@property(assign,retain) NSSet * neighborTiles;
-@property(assign,retain) NSSet * tilesToRender;
+@property (nonatomic, retain) GEOTileKeyList *debugKeyList;
+@property (nonatomic) bool fullyLoaded;
+@property (nonatomic, retain) VKTileKeyList *keysInView;
+@property (nonatomic) bool mapIsOpaque;
+@property (nonatomic, retain) VKTileKeyList *neighborKeys;
+@property (nonatomic, retain) NSSet *neighborTiles;
+@property (nonatomic, retain) NSSet *tilesToRender;
 
 - (void)addRasterOverlayScene:(id)arg1;
 - (void)clearRasterOverlayScenes;

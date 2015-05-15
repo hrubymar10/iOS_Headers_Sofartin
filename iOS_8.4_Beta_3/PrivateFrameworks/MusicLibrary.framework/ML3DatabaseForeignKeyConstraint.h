@@ -8,9 +8,9 @@
     NSArray *_localColumns;
 }
 
-@property(assign,readonly) NSArray * foreignColumns;
-@property(assign,readonly) ML3DatabaseTable * foreignTable;
-@property(assign,readonly) NSArray * localColumns;
+@property (nonatomic, readonly) NSArray *foreignColumns;
+@property (nonatomic, readonly) ML3DatabaseTable *foreignTable;
+@property (nonatomic, readonly) NSArray *localColumns;
 
 - (void).cxx_destruct;
 - (id)_foreignKeyClauseSQL;

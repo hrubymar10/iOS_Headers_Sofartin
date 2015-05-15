@@ -4,8 +4,8 @@
 
 @interface TSWPUIGraphicalAttachment : TSWPAttachment
 
-@property(assign,readonly) double baselineOffset;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) double baselineOffset;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
 
 - (double)baselineOffset;
 - (int)elementKind;

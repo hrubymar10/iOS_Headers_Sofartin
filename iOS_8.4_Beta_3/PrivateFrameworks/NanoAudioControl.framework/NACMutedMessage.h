@@ -10,10 +10,10 @@
     bool _muted;
 }
 
-@property(assign,retain) NSString * category;
-@property(assign,readonly) bool hasCategory;
-@property(assign,readwrite) bool hasMuted;
-@property(assign,readwrite) bool muted;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic, readonly) bool hasCategory;
+@property (nonatomic) bool hasMuted;
+@property (nonatomic) bool muted;
 
 - (void).cxx_destruct;
 - (id)category;

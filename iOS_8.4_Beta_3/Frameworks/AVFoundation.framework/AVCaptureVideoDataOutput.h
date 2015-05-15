@@ -6,13 +6,13 @@
     AVCaptureVideoDataOutputInternal *_internal;
 }
 
-@property(assign,readwrite) bool alwaysDiscardsLateVideoFrames;
-@property(assign,readonly) NSArray * availableVideoCVPixelFormatTypes;
-@property(assign,readonly) NSArray * availableVideoCodecTypes;
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } minFrameDuration;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * sampleBufferCallbackQueue;
-@property(assign,readonly) <AVCaptureVideoDataOutputSampleBufferDelegate> * sampleBufferDelegate;
-@property(assign,copy) NSDictionary * videoSettings;
+@property (nonatomic) bool alwaysDiscardsLateVideoFrames;
+@property (nonatomic, readonly) NSArray *availableVideoCVPixelFormatTypes;
+@property (nonatomic, readonly) NSArray *availableVideoCodecTypes;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } minFrameDuration;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *sampleBufferCallbackQueue;
+@property (nonatomic, readonly) <AVCaptureVideoDataOutputSampleBufferDelegate> *sampleBufferDelegate;
+@property (nonatomic, copy) NSDictionary *videoSettings;
 
 + (id)alloc;
 + (void)initialize;

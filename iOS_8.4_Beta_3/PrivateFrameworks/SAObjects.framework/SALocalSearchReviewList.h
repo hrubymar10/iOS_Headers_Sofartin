@@ -4,15 +4,15 @@
 
 @interface SALocalSearchReviewList : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * providerId;
-@property(assign,copy) NSString * providerId2;
-@property(assign,retain) SALocalSearchRating * rating;
-@property(assign,copy) NSArray * selectReviews;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSNumber * totalReviewCount;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURL *providerId;
+@property (nonatomic, copy) NSString *providerId2;
+@property (nonatomic, retain) SALocalSearchRating *rating;
+@property (nonatomic, copy) NSArray *selectReviews;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSNumber *totalReviewCount;
 
 + (id)reviewList;
 + (id)reviewListWithDictionary:(id)arg1 context:(id)arg2;

@@ -10,11 +10,11 @@
     NSString *_locator;
 }
 
-@property(assign,readonly) NSString * digestString;
-@property(assign,readonly) NSString * extension;
-@property(assign,readonly) long long fileSize;
-@property(assign,readonly) bool isDownloadable;
-@property(assign,readonly) NSString * locator;
+@property (nonatomic, readonly) NSString *digestString;
+@property (nonatomic, readonly) NSString *extension;
+@property (nonatomic, readonly) long long fileSize;
+@property (nonatomic, readonly) bool isDownloadable;
+@property (nonatomic, readonly) NSString *locator;
 
 - (void).cxx_destruct;
 - (id)digestString;

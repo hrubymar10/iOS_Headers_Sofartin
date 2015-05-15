@@ -7,8 +7,8 @@
     NSDictionary *_metadata;
 }
 
-@property(assign,copy) NSDictionary * audioSettings;
-@property(assign,copy) NSDictionary * metadata;
+@property (nonatomic, copy) NSDictionary *audioSettings;
+@property (nonatomic, copy) NSDictionary *metadata;
 
 - (id)audioSettings;
 - (void)dealloc;

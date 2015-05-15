@@ -13,14 +13,14 @@
     NSString *_navigationGestureMode;
 }
 
-@property(assign,readwrite) bool analysisFailureOverlayVisible;
-@property(assign,readwrite) bool analysisLoggingEnabled;
-@property(assign,readwrite) bool analysisLoggingOverlayVisible;
-@property(assign,retain) _UIScreenEdgePanRecognizerCornerSettings * cornerSettings;
-@property(assign,retain) _UIScreenEdgePanRecognizerDwellSettings * dwellSettings;
-@property(assign,retain) _UIScreenEdgePanRecognizerEdgeSettings * edgeSettings;
-@property(assign,copy) NSString * multitaskingGestureMode;
-@property(assign,copy) NSString * navigationGestureMode;
+@property (nonatomic) bool analysisFailureOverlayVisible;
+@property (nonatomic) bool analysisLoggingEnabled;
+@property (nonatomic) bool analysisLoggingOverlayVisible;
+@property (nonatomic, retain) _UIScreenEdgePanRecognizerCornerSettings *cornerSettings;
+@property (nonatomic, retain) _UIScreenEdgePanRecognizerDwellSettings *dwellSettings;
+@property (nonatomic, retain) _UIScreenEdgePanRecognizerEdgeSettings *edgeSettings;
+@property (nonatomic, copy) NSString *multitaskingGestureMode;
+@property (nonatomic, copy) NSString *navigationGestureMode;
 
 + (id)settingsControllerModule;
 

@@ -13,18 +13,18 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) IDSService * idsService;
-@property(assign,readwrite) HMMessageDispatcher * messageDispatcher;
-@property(assign,retain) NSMutableSet * peerResidentDeviceAddresses;
-@property(assign,retain) NSMutableSet * peerTransientDeviceAddresses;
-@property(assign,retain) NSMutableDictionary * pendingResponseTimers;
-@property(assign,retain) NSMutableDictionary * pendingResponses;
-@property(assign,retain) NSMutableDictionary * pendingSentMessages;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) IDSService *idsService;
+@property (nonatomic) HMMessageDispatcher *messageDispatcher;
+@property (nonatomic, retain) NSMutableSet *peerResidentDeviceAddresses;
+@property (nonatomic, retain) NSMutableSet *peerTransientDeviceAddresses;
+@property (nonatomic, retain) NSMutableDictionary *pendingResponseTimers;
+@property (nonatomic, retain) NSMutableDictionary *pendingResponses;
+@property (nonatomic, retain) NSMutableDictionary *pendingSentMessages;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 + (id)dictionaryForMessageName:(id)arg1 messageIdentifier:(id)arg2 messagePayload:(id)arg3 target:(id)arg4 transactionID:(id)arg5 msgType:(unsigned long long)arg6;
 + (id)idsMessageTypeDescription:(unsigned long long)arg1;

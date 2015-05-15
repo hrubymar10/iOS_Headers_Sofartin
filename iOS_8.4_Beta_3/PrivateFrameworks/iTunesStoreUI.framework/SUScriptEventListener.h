@@ -9,9 +9,9 @@
     bool _useCapture;
 }
 
-@property(assign,retain) WebScriptObject * callback;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) bool shouldUseCapture;
+@property (retain) WebScriptObject *callback;
+@property (copy) NSString *name;
+@property bool shouldUseCapture;
 
 - (id)callback;
 - (void)dealloc;

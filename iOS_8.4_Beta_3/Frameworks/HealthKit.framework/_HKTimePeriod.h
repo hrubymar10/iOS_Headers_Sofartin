@@ -7,8 +7,8 @@
     NSDate *_startDate;
 }
 
-@property(assign,readonly) NSDate * endDate;
-@property(assign,readonly) NSDate * startDate;
+@property (nonatomic, readonly) NSDate *endDate;
+@property (nonatomic, readonly) NSDate *startDate;
 
 + (bool)supportsSecureCoding;
 + (id)timePeriodWithStartDate:(id)arg1 endDate:(id)arg2;

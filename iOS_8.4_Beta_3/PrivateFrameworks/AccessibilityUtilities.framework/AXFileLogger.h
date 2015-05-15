@@ -6,7 +6,7 @@
     NSString *_filePath;
 }
 
-@property(assign,copy) NSString * filePath;
+@property (nonatomic, copy) NSString *filePath;
 
 + (id)defaultFileLogger;
 

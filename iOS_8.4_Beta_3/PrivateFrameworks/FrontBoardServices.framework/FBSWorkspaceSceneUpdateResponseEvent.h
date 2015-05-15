@@ -6,7 +6,7 @@
     FBSWorkspaceSceneUpdateResponse *_response;
 }
 
-@property(assign,retain) FBSWorkspaceSceneUpdateResponse * response;
+@property (nonatomic, retain) FBSWorkspaceSceneUpdateResponse *response;
 
 - (void)dealloc;
 - (void)encodeWithXPCDictionary:(id)arg1;

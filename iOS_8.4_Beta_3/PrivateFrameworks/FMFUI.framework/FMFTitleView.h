@@ -8,9 +8,9 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) FMFLocation * location;
-@property(assign,retain) UILabel * subtitleLabel;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) FMFLocation *location;
+@property (nonatomic, retain) UILabel *subtitleLabel;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 - (void).cxx_destruct;
 - (void)_updateLabels:(id)arg1;

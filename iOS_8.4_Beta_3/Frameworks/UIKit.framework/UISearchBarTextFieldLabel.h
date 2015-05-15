@@ -6,7 +6,7 @@
     bool _ignoresGeometryChanges;
 }
 
-@property(assign,readwrite) bool ignoresGeometryChanges;
+@property (nonatomic) bool ignoresGeometryChanges;
 
 + (id)_defaultAttributes;
 

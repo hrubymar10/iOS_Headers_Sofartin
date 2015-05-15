@@ -4,7 +4,7 @@
 
 @interface DOMCSSPrimitiveValue : DOMCSSValue
 
-@property(assign,readonly) unsigned short primitiveType;
+@property (readonly) unsigned short primitiveType;
 
 - (id)getCounterValue;
 - (float)getFloatValue:(unsigned short)arg1;

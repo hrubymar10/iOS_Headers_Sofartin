@@ -21,22 +21,22 @@
     NSNumber *_swSvcId;
 }
 
-@property(assign,retain) NSMutableDictionary * commonInfo;
-@property(assign,retain) NSMutableDictionary * kvPairs;
-@property(assign,retain) NSString * swAtCmd;
-@property(assign,retain) NSString * swCTData;
-@property(assign,retain) NSString * swChan;
-@property(assign,retain) NSString * swClientId;
-@property(assign,retain) NSString * swCmd;
-@property(assign,retain) NSString * swCmdFullName;
-@property(assign,retain) NSString * swCmdName;
-@property(assign,retain) NSDictionary * swIpData;
-@property(assign,retain) NSString * swMsgId;
-@property(assign,retain) NSString * swMsgType;
-@property(assign,retain) NSString * swRadioClass;
-@property(assign,retain) NSString * swRawData;
-@property(assign,retain) NSString * swReason;
-@property(assign,retain) NSNumber * swSvcId;
+@property (nonatomic, retain) NSMutableDictionary *commonInfo;
+@property (nonatomic, retain) NSMutableDictionary *kvPairs;
+@property (retain) NSString *swAtCmd;
+@property (retain) NSString *swCTData;
+@property (retain) NSString *swChan;
+@property (retain) NSString *swClientId;
+@property (retain) NSString *swCmd;
+@property (retain) NSString *swCmdFullName;
+@property (retain) NSString *swCmdName;
+@property (retain) NSDictionary *swIpData;
+@property (retain) NSString *swMsgId;
+@property (retain) NSString *swMsgType;
+@property (retain) NSString *swRadioClass;
+@property (retain) NSString *swRawData;
+@property (retain) NSString *swReason;
+@property (retain) NSNumber *swSvcId;
 
 + (id)entryEventPointDefinitionSleepWakeActivity;
 

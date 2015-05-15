@@ -7,8 +7,8 @@
     NSString *_value;
 }
 
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSString * value;
+@property (readonly) NSString *name;
+@property (readonly) NSString *value;
 
 + (bool)automaticallyNotifiesObserversForKey:(id)arg1;
 + (id)queryItemWithName:(id)arg1 value:(id)arg2;

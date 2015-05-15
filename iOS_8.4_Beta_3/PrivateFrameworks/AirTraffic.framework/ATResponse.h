@@ -7,8 +7,8 @@
     bool _partial;
 }
 
-@property(assign,retain) NSError * error;
-@property(getter=isPartial,assign,readwrite) bool partial;
+@property (nonatomic, retain) NSError *error;
+@property (getter=isPartial, nonatomic) bool partial;
 
 + (bool)supportsSecureCoding;
 

@@ -7,8 +7,8 @@
     NSMutableDictionary *_customPropertyValueHandlers;
 }
 
-@property(assign,readonly) NSSet * customProperties;
-@property(assign,readonly) NSDictionary * customPropertyValueHandlers;
+@property (nonatomic, readonly) NSSet *customProperties;
+@property (nonatomic, readonly) NSDictionary *customPropertyValueHandlers;
 
 - (void).cxx_destruct;
 - (void)addCustomProperty:(id)arg1 withValueHandler:(id)arg2;

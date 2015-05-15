@@ -13,18 +13,18 @@
     double _zoomLevel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CLLocation * location;
-@property(assign,retain) MKMapCamera * orbitCamera;
-@property(assign,readwrite) bool orbiting;
-@property(assign,readwrite) unsigned long long pinColor;
-@property(assign,readwrite) bool settingUpOrbitAnimation;
-@property(assign,readwrite) bool showsPin;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool useSatellite;
-@property(assign,readwrite) double zoomLevel;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CLLocation *location;
+@property (nonatomic, retain) MKMapCamera *orbitCamera;
+@property (nonatomic) bool orbiting;
+@property (nonatomic) unsigned long long pinColor;
+@property (nonatomic) bool settingUpOrbitAnimation;
+@property (nonatomic) bool showsPin;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool useSatellite;
+@property (nonatomic) double zoomLevel;
 
 - (void).cxx_destruct;
 - (void)_orbitNextThird;

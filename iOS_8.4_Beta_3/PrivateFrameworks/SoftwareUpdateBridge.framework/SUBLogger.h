@@ -7,7 +7,7 @@
     long long _logLevel;
 }
 
-@property(assign,readwrite) long long logLevel;
+@property (nonatomic) long long logLevel;
 
 + (id)sharedLogger;
 

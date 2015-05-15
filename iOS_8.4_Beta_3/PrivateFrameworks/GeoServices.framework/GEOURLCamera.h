@@ -17,16 +17,16 @@
     double _pitch;
 }
 
-@property(assign,readwrite) double altitude;
-@property(assign,readwrite) bool hasAltitude;
-@property(assign,readwrite) bool hasHeading;
-@property(assign,readwrite) bool hasLatitude;
-@property(assign,readwrite) bool hasLongitude;
-@property(assign,readwrite) bool hasPitch;
-@property(assign,readwrite) double heading;
-@property(assign,readwrite) double latitude;
-@property(assign,readwrite) double longitude;
-@property(assign,readwrite) double pitch;
+@property (nonatomic) double altitude;
+@property (nonatomic) bool hasAltitude;
+@property (nonatomic) bool hasHeading;
+@property (nonatomic) bool hasLatitude;
+@property (nonatomic) bool hasLongitude;
+@property (nonatomic) bool hasPitch;
+@property (nonatomic) double heading;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic) double pitch;
 
 - (double)altitude;
 - (void)copyTo:(id)arg1;

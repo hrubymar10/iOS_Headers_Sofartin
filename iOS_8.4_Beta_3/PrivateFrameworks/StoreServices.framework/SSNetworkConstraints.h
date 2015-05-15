@@ -7,11 +7,11 @@
     NSMutableDictionary *_sizeLimits;
 }
 
-@property(getter=isAnyNetworkTypeEnabled,assign,readonly) bool anyNetworkTypeEnabled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (getter=isAnyNetworkTypeEnabled, readonly) bool anyNetworkTypeEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (void)_addNetworkConstraintsToDictionary:(id)arg1 forNetworkType:(long long)arg2 legacyDictionary:(id)arg3;
 + (id)_newLegacyNetworkConstraintsWithDictionary:(id)arg1;

@@ -10,15 +10,15 @@
     bool hasSaveRestriction;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) unsigned long long downloadToken;
-@property(getter=_figAsset,assign,readonly) struct OpaqueFigAsset { }* figAsset;
-@property(assign,readonly) NSArray * figChapterGroupInfo;
-@property(assign,readonly) NSArray * figChapters;
-@property(getter=_formatReader,assign,readonly) struct OpaqueFigFormatReader { }* formatReader;
-@property(assign,readonly) bool hasProtectedContent;
-@property(assign,readonly) NSURL * resolvedURL;
-@property(getter=_isStreaming,assign,readonly) bool streaming;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) unsigned long long downloadToken;
+@property (getter=_figAsset, nonatomic, readonly) struct OpaqueFigAsset { }*figAsset;
+@property (nonatomic, readonly) NSArray *figChapterGroupInfo;
+@property (nonatomic, readonly) NSArray *figChapters;
+@property (getter=_formatReader, nonatomic, readonly) struct OpaqueFigFormatReader { }*formatReader;
+@property (nonatomic, readonly) bool hasProtectedContent;
+@property (nonatomic, readonly) NSURL *resolvedURL;
+@property (getter=_isStreaming, nonatomic, readonly) bool streaming;
 
 - (id)SHA1Digest;
 - (id)URL;

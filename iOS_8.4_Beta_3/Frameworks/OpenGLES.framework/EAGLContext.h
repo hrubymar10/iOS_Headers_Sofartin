@@ -7,10 +7,10 @@
     NSString *debugLabel;
 }
 
-@property(assign,readonly) unsigned long long API;
-@property(assign,copy) NSString * debugLabel;
-@property(getter=isMultiThreaded,assign,readwrite) bool multiThreaded;
-@property(assign,readonly) EAGLSharegroup * sharegroup;
+@property (readonly) unsigned long long API;
+@property (nonatomic, copy) NSString *debugLabel;
+@property (getter=isMultiThreaded, nonatomic) bool multiThreaded;
+@property (readonly) EAGLSharegroup *sharegroup;
 
 + (id)currentContext;
 + (bool)setCurrentContext:(id)arg1;

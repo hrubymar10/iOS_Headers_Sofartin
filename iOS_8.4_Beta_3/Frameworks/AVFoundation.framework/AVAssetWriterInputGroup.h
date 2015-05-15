@@ -6,8 +6,8 @@
     AVAssetWriterInputGroupInternal *_internal;
 }
 
-@property(assign,readonly) AVAssetWriterInput * defaultInput;
-@property(assign,readonly) NSArray * inputs;
+@property (nonatomic, readonly) AVAssetWriterInput *defaultInput;
+@property (nonatomic, readonly) NSArray *inputs;
 
 + (id)assetWriterInputGroupWithInputs:(id)arg1 defaultInput:(id)arg2;
 

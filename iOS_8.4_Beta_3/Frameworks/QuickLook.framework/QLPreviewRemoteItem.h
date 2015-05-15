@@ -10,13 +10,13 @@
     bool _resolving;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * previewItemTitle;
-@property(assign,readonly) NSURL * previewItemURL;
-@property(assign,readonly) QLPreviewItemProxy * proxy;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSString *previewItemTitle;
+@property (readonly) NSURL *previewItemURL;
+@property (readonly) QLPreviewItemProxy *proxy;
+@property (readonly) Class superclass;
 
 - (void)_clearCompletionBlock;
 - (double)autoPlaybackPosition;

@@ -17,10 +17,10 @@
     unsigned long long mResourceIdentifier;
 }
 
-@property(assign,readonly) struct DataBufferInfo { int x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; unsigned long long x5; unsigned long long x6; } bufferInfo;
-@property(assign,readwrite) int caching;
-@property(assign,readwrite) bool childRegenerated;
-@property(assign,readonly) unsigned long long resourceIdentifier;
+@property (readonly) struct DataBufferInfo { int x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; unsigned long long x5; unsigned long long x6; } bufferInfo;
+@property (nonatomic) int caching;
+@property (nonatomic) bool childRegenerated;
+@property (nonatomic, readonly) unsigned long long resourceIdentifier;
 
 + (id)resourceWithParent:(id)arg1;
 

@@ -8,9 +8,9 @@
     bool mPreserveLowerPriorityLocation;
 }
 
-@property(assign,readonly) TSKCORangeAddress * address;
-@property(assign,readonly) unsigned long long insertLength;
-@property(assign,readonly) bool preserveLowerPriorityLocation;
+@property (nonatomic, readonly) TSKCORangeAddress *address;
+@property (nonatomic, readonly) unsigned long long insertLength;
+@property (nonatomic, readonly) bool preserveLowerPriorityLocation;
 
 - (id)address;
 - (void)dealloc;

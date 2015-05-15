@@ -9,12 +9,12 @@
     NSString *_uncommentedSender;
 }
 
-@property(assign,readonly) int action;
-@property(assign,readonly) NSArray * certificates;
-@property(assign,readonly) NSString * commonName;
-@property(assign,readonly) NSString * emailAddress;
-@property(assign,readonly) MFError * error;
-@property(assign,readonly) NSString * sender;
+@property (nonatomic, readonly) int action;
+@property (nonatomic, readonly) NSArray *certificates;
+@property (nonatomic, readonly) NSString *commonName;
+@property (nonatomic, readonly) NSString *emailAddress;
+@property (nonatomic, readonly) MFError *error;
+@property (nonatomic, readonly) NSString *sender;
 
 - (int)action;
 - (void)addTrustException;

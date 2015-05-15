@@ -8,7 +8,7 @@
     <SKUIMoreNavigationControllerDelegate> *_storeKitDelegate;
 }
 
-@property(assign,readwrite) <SKUIMoreNavigationControllerDelegate> * storeKitDelegate;
+@property (nonatomic) <SKUIMoreNavigationControllerDelegate> *storeKitDelegate;
 
 + (Class)_moreListControllerClass;
 

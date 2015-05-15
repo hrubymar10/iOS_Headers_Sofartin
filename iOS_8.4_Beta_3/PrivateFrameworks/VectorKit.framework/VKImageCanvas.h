@@ -34,13 +34,13 @@
     } _yFlipPass;
 }
 
-@property(assign,readonly) VKCamera * camera;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) VKDispatch * dispatch;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) VKWorld * world;
+@property (nonatomic, readonly) VKCamera *camera;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) VKDispatch *dispatch;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) VKWorld *world;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

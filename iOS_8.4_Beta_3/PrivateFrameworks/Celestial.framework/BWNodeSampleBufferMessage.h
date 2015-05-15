@@ -8,9 +8,9 @@
     FigCaptureStillImageSettings *_stillImageSettings;
 }
 
-@property(assign,readonly) FigCaptureRecordingSettings * recordingSettings;
-@property(assign,readonly) struct opaqueCMSampleBuffer { }* sampleBuffer;
-@property(assign,readonly) FigCaptureStillImageSettings * stillImageSettings;
+@property (readonly) FigCaptureRecordingSettings *recordingSettings;
+@property (readonly) struct opaqueCMSampleBuffer { }*sampleBuffer;
+@property (readonly) FigCaptureStillImageSettings *stillImageSettings;
 
 + (id)newMessageWithSampleBuffer:(struct opaqueCMSampleBuffer { }*)arg1;
 + (id)newMessageWithSampleBuffer:(struct opaqueCMSampleBuffer { }*)arg1 recordingSettings:(id)arg2;

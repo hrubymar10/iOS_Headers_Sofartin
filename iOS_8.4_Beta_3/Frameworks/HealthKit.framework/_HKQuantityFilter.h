@@ -8,9 +8,9 @@
     unsigned long long _operatorType;
 }
 
-@property(assign,readonly) HKQuantity * comparisonQuantity;
-@property(assign,readonly) HKQuantityType * dataType;
-@property(assign,readonly) unsigned long long operatorType;
+@property (nonatomic, readonly) HKQuantity *comparisonQuantity;
+@property (nonatomic, readonly) HKQuantityType *dataType;
+@property (nonatomic, readonly) unsigned long long operatorType;
 
 + (id)filterForKeyPath:(id)arg1 predicateOperatorType:(unsigned long long)arg2 value:(id)arg3 dataTypes:(id)arg4;
 + (id)filterWithOperatorType:(unsigned long long)arg1 comparisonQuantity:(id)arg2 dataType:(id)arg3;

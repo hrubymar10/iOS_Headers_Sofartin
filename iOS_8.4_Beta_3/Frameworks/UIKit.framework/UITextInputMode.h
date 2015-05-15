@@ -4,7 +4,7 @@
 
 @interface UITextInputMode : NSObject <NSSecureCoding>
 
-@property(assign,retain) NSString * primaryLanguage;
+@property (nonatomic, readonly, retain) NSString *primaryLanguage;
 
 + (id)activeInputModes;
 + (id)currentInputMode;

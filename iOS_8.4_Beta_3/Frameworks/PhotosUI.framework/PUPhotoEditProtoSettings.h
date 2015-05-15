@@ -16,17 +16,17 @@
     bool _useOldPhotosEditor2;
 }
 
-@property(assign,readwrite) bool allowAnyPlugin;
-@property(assign,readwrite) bool autoCropEnabled;
-@property(assign,readwrite) bool cropMaskBlurred;
-@property(assign,readwrite) double cropRecomposeDelay;
-@property(assign,readwrite) double cropSideMargins;
-@property(assign,readwrite) double cropWheelSize;
-@property(assign,readwrite) bool showLevelIndicator;
-@property(assign,readwrite) bool showResetToolButton;
-@property(assign,readwrite) bool simulateDownload;
-@property(assign,readwrite) bool simulateDownloadFailure;
-@property(assign,readwrite) bool useOldPhotosEditor2;
+@property (nonatomic) bool allowAnyPlugin;
+@property (nonatomic) bool autoCropEnabled;
+@property (nonatomic) bool cropMaskBlurred;
+@property (nonatomic) double cropRecomposeDelay;
+@property (nonatomic) double cropSideMargins;
+@property (nonatomic) double cropWheelSize;
+@property (nonatomic) bool showLevelIndicator;
+@property (nonatomic) bool showResetToolButton;
+@property (nonatomic) bool simulateDownload;
+@property (nonatomic) bool simulateDownloadFailure;
+@property (nonatomic) bool useOldPhotosEditor2;
 
 + (id)settingsControllerModule;
 + (id)sharedInstance;

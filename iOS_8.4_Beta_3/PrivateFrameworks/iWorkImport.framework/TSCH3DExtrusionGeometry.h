@@ -68,14 +68,14 @@
     } mSpineDirectionBias;
 }
 
-@property(assign,readwrite) bool beginCap;
-@property(assign,readonly) int capCount;
-@property(assign,readonly) unsigned int capOffset;
-@property(assign,readwrite) float crossSectionCreaseAngle;
-@property(assign,readwrite) bool endCap;
-@property(assign,readwrite) struct tvec3<float> { union { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; union { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; union { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; } normalBias;
-@property(assign,readwrite) float spineCreaseAngle;
-@property(assign,readwrite) struct tvec3<float> { union { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; union { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; union { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; } spineDirectionBias;
+@property (nonatomic) bool beginCap;
+@property (nonatomic, readonly) int capCount;
+@property (nonatomic, readonly) unsigned int capOffset;
+@property (nonatomic) float crossSectionCreaseAngle;
+@property (nonatomic) bool endCap;
+@property (nonatomic) struct tvec3<float> { union { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; union { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; union { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; } normalBias;
+@property (nonatomic) float spineCreaseAngle;
+@property (nonatomic) struct tvec3<float> { union { float x_1_1_1; float x_1_1_2; float x_1_1_3; } x1; union { float x_2_1_1; float x_2_1_2; float x_2_1_3; } x2; union { float x_3_1_1; float x_3_1_2; float x_3_1_3; } x3; } spineDirectionBias;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

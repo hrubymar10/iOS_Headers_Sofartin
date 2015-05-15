@@ -7,8 +7,8 @@
     double _dismissalTimeInterval;
 }
 
-@property(assign,copy) NSString * dismissalHash;
-@property(assign,readonly) double dismissalTimeInterval;
+@property (nonatomic, readonly, copy) NSString *dismissalHash;
+@property (nonatomic, readonly) double dismissalTimeInterval;
 
 - (void)dealloc;
 - (id)description;

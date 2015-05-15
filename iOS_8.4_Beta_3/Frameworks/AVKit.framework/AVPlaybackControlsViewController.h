@@ -27,25 +27,25 @@
     bool _skipBackwardThirtySecondsButtonEnabled;
 }
 
-@property(getter=isGotoEndOfSeekableRangesButtonEnabled,assign,readwrite) bool gotoEndOfSeekableRangesButtonEnabled;
-@property(getter=isPlayPauseButtonEnabled,assign,readwrite) bool playPauseButtonEnabled;
-@property(assign,retain) AVPlayerController * playerController;
-@property(assign,readwrite) AVPlayerViewController * playerViewController;
-@property(getter=isPlaying,assign,readwrite) bool playing;
-@property(assign,readwrite) long long scaleButtonType;
-@property(getter=isScanBackwardButtonEnabled,assign,readwrite) bool scanBackwardButtonEnabled;
-@property(getter=isScanForwardButtonEnabled,assign,readwrite) bool scanForwardButtonEnabled;
-@property(getter=isScrubberEnabled,assign,readwrite) bool scrubberEnabled;
-@property(assign,retain) NSArray * scrubberLoadedTimeRanges;
-@property(assign,readonly) double scrubberWidth;
-@property(assign,readwrite) bool showsDoneButton;
-@property(assign,readwrite) bool showsExitFullScreenButton;
-@property(assign,readwrite) bool showsLoadingIndicator;
-@property(assign,readwrite) bool showsMediaSelectionButton;
-@property(assign,readwrite) bool showsScaleButton;
-@property(assign,readwrite) bool showsStreamingControls;
-@property(assign,readwrite) bool showsVolumeSlider;
-@property(getter=isSkipBackwardThirtySecondsButtonEnabled,assign,readwrite) bool skipBackwardThirtySecondsButtonEnabled;
+@property (getter=isGotoEndOfSeekableRangesButtonEnabled, nonatomic) bool gotoEndOfSeekableRangesButtonEnabled;
+@property (getter=isPlayPauseButtonEnabled, nonatomic) bool playPauseButtonEnabled;
+@property (nonatomic, retain) AVPlayerController *playerController;
+@property (nonatomic) AVPlayerViewController *playerViewController;
+@property (getter=isPlaying, nonatomic) bool playing;
+@property (nonatomic) long long scaleButtonType;
+@property (getter=isScanBackwardButtonEnabled, nonatomic) bool scanBackwardButtonEnabled;
+@property (getter=isScanForwardButtonEnabled, nonatomic) bool scanForwardButtonEnabled;
+@property (getter=isScrubberEnabled, nonatomic) bool scrubberEnabled;
+@property (nonatomic, retain) NSArray *scrubberLoadedTimeRanges;
+@property (nonatomic, readonly) double scrubberWidth;
+@property (nonatomic) bool showsDoneButton;
+@property (nonatomic) bool showsExitFullScreenButton;
+@property (nonatomic) bool showsLoadingIndicator;
+@property (nonatomic) bool showsMediaSelectionButton;
+@property (nonatomic) bool showsScaleButton;
+@property (nonatomic) bool showsStreamingControls;
+@property (nonatomic) bool showsVolumeSlider;
+@property (getter=isSkipBackwardThirtySecondsButtonEnabled, nonatomic) bool skipBackwardThirtySecondsButtonEnabled;
 
 - (void).cxx_destruct;
 - (void)_updateVolumeSliderVisibility;

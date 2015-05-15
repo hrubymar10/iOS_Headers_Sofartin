@@ -9,8 +9,8 @@
     PKPaymentSetupInfoView *_infoView;
 }
 
-@property(assign,retain) UIImageView * heroImage;
-@property(assign,retain) PKPaymentSetupInfoView * infoView;
+@property (nonatomic, retain) UIImageView *heroImage;
+@property (nonatomic, retain) PKPaymentSetupInfoView *infoView;
 
 - (void)_createSubviews;
 - (void)dealloc;

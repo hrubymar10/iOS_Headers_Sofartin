@@ -8,10 +8,10 @@
     long long _originatorVersion;
 }
 
-@property(assign,copy) NSArray * containerItems;
-@property(assign,copy) NSData * dataRepresentation;
-@property(assign,readonly) long long originatorType;
-@property(assign,readonly) long long originatorVersion;
+@property (nonatomic, readonly, copy) NSArray *containerItems;
+@property (nonatomic, readonly, copy) NSData *dataRepresentation;
+@property (nonatomic, readonly) long long originatorType;
+@property (nonatomic, readonly) long long originatorVersion;
 
 - (void).cxx_destruct;
 - (id)containerItemFollowingContainerItem:(id)arg1;

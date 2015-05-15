@@ -6,7 +6,7 @@
     KNMacUILayout *mUILayout;
 }
 
-@property(assign,readonly) KNMacUILayout * uiLayout;
+@property (nonatomic, readonly) KNMacUILayout *uiLayout;
 
 - (void)dealloc;
 - (id)initFromUnarchiver:(id)arg1;

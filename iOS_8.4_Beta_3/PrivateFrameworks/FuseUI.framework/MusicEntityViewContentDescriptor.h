@@ -26,26 +26,26 @@
     NSString *_wantsPlayButtonProperty;
 }
 
-@property(assign,readonly) NSSet * allPropertiesToPrefetch;
-@property(assign,retain) MusicEntityViewContentArtworkDescriptor * artworkDescriptor;
-@property(assign,copy) UIColor * backgroundColor;
-@property(assign,retain) UIColor * customSeparatorColor;
-@property(assign,copy) NSString * explicitBadgeProperty;
-@property(assign,copy) NSString * keepLocalPreferenceProperty;
-@property(assign,readwrite) bool leftSeparatorInsetFollowsText;
-@property(assign,retain) Class lockupViewClass;
-@property(assign,readwrite) double minimumHeight;
-@property(assign,readwrite) bool shouldDisableWhenUnplayable;
-@property(assign,readwrite) bool shouldForceBottomSeparatorVisible;
-@property(assign,copy) NSString * storeDownloadIDProperty;
-@property(assign,copy) NSString * storeOffersProperty;
-@property(assign,readwrite) long long textDescriptorVerticalAlignment;
-@property(assign,copy) NSArray * textDescriptors;
-@property(assign,copy) NSString * wantsAddButtonProperty;
-@property(assign,copy) NSString * wantsBuyButtonProperty;
-@property(assign,copy) NSString * wantsContextualActionsButtonProperty;
-@property(assign,copy) NSString * wantsDisclosureIndicatorProperty;
-@property(assign,copy) NSString * wantsPlayButtonProperty;
+@property (nonatomic, readonly) NSSet *allPropertiesToPrefetch;
+@property (nonatomic, retain) MusicEntityViewContentArtworkDescriptor *artworkDescriptor;
+@property (nonatomic, copy) UIColor *backgroundColor;
+@property (nonatomic, retain) UIColor *customSeparatorColor;
+@property (nonatomic, copy) NSString *explicitBadgeProperty;
+@property (nonatomic, copy) NSString *keepLocalPreferenceProperty;
+@property (nonatomic) bool leftSeparatorInsetFollowsText;
+@property (nonatomic, retain) Class lockupViewClass;
+@property (nonatomic) double minimumHeight;
+@property (nonatomic) bool shouldDisableWhenUnplayable;
+@property (nonatomic) bool shouldForceBottomSeparatorVisible;
+@property (nonatomic, copy) NSString *storeDownloadIDProperty;
+@property (nonatomic, copy) NSString *storeOffersProperty;
+@property (nonatomic) long long textDescriptorVerticalAlignment;
+@property (nonatomic, copy) NSArray *textDescriptors;
+@property (nonatomic, copy) NSString *wantsAddButtonProperty;
+@property (nonatomic, copy) NSString *wantsBuyButtonProperty;
+@property (nonatomic, copy) NSString *wantsContextualActionsButtonProperty;
+@property (nonatomic, copy) NSString *wantsDisclosureIndicatorProperty;
+@property (nonatomic, copy) NSString *wantsPlayButtonProperty;
 
 + (Class)tableViewCellClass;
 + (id)tableViewCellReuseIdentifier;

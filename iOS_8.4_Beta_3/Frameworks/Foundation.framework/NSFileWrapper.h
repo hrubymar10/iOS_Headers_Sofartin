@@ -11,16 +11,16 @@
     NSString *_preferredFileName;
 }
 
-@property(getter=isDirectory,assign,readonly) bool directory;
-@property(assign,copy) NSDictionary * fileAttributes;
-@property(assign,copy) NSDictionary * fileWrappers;
-@property(assign,copy) NSString * filename;
-@property(assign,copy) NSString * preferredFilename;
-@property(getter=isRegularFile,assign,readonly) bool regularFile;
-@property(assign,copy) NSData * regularFileContents;
-@property(assign,copy) NSData * serializedRepresentation;
-@property(getter=isSymbolicLink,assign,readonly) bool symbolicLink;
-@property(assign,copy) NSURL * symbolicLinkDestinationURL;
+@property (getter=isDirectory, readonly) bool directory;
+@property (copy) NSDictionary *fileAttributes;
+@property (readonly, copy) NSDictionary *fileWrappers;
+@property (copy) NSString *filename;
+@property (copy) NSString *preferredFilename;
+@property (getter=isRegularFile, readonly) bool regularFile;
+@property (readonly, copy) NSData *regularFileContents;
+@property (readonly, copy) NSData *serializedRepresentation;
+@property (getter=isSymbolicLink, readonly) bool symbolicLink;
+@property (readonly, copy) NSURL *symbolicLinkDestinationURL;
 
 + (bool)_canSafelyMapFilesAtPath:(id)arg1;
 + (bool)_finishWritingToURL:(id)arg1 byMovingItemAtURL:(id)arg2 addingAttributes:(id)arg3 error:(id*)arg4;

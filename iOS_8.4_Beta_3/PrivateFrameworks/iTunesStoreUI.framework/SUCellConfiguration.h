@@ -14,14 +14,14 @@
     UIView<SUCellConfigurationView> *_view;
 }
 
-@property(assign,retain) id context;
-@property(assign,readwrite) bool isDeleteConfirmationVisible;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } layoutSize;
-@property(assign,readwrite) bool needsDisplay;
-@property(assign,readonly) unsigned long long numberOfImages;
-@property(assign,readonly) unsigned long long numberOfLabels;
-@property(assign,retain) id representedObject;
-@property(assign,readwrite) UIView<SUCellConfigurationView> * view;
+@property (nonatomic, retain) id context;
+@property (nonatomic) bool isDeleteConfirmationVisible;
+@property (nonatomic) struct CGSize { double x1; double x2; } layoutSize;
+@property (nonatomic) bool needsDisplay;
+@property (nonatomic, readonly) unsigned long long numberOfImages;
+@property (nonatomic, readonly) unsigned long long numberOfLabels;
+@property (nonatomic, retain) id representedObject;
+@property (nonatomic) UIView<SUCellConfigurationView> *view;
 
 + (id)copyDefaultContext;
 + (double)minimumRowHeight;

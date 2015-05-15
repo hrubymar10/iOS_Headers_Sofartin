@@ -20,28 +20,28 @@
     TSKSelectionDispatcher *_selectionDispatcher;
 }
 
-@property(assign,readonly) TSKAccessController * accessController;
-@property(assign,retain) TSKAnnotationAuthorStorage * annotationAuthorStorage;
-@property(assign,readonly) unsigned long long applicationType;
-@property(assign,readonly) TSKChangeNotifier * changeNotifier;
-@property(assign,readonly) NSString * creationLanguage;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) TSULocale * documentCreationLocale;
-@property(assign,readonly) TSULocale * documentLocale;
-@property(assign,readonly) TSKDocumentSupport * documentSupport;
-@property(assign,retain) NSSet * filteredAuthors;
-@property(getter=isFindActive,assign,readwrite) bool findActive;
-@property(assign,readonly) bool hasICloudConflict;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isBeingLocalized;
-@property(assign,retain) TSKPasteboardController * pasteboardController;
-@property(assign,readonly) TSKSelectionDispatcher * selectionDispatcher;
-@property(assign,readonly) TSSStylesheet * stylesheet;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) TSSTheme * theme;
-@property(assign,readonly) unsigned long long writingDirection;
-@property(assign,readonly) unsigned long long writingDirectionForStorage;
+@property (nonatomic, readonly) TSKAccessController *accessController;
+@property (nonatomic, retain) TSKAnnotationAuthorStorage *annotationAuthorStorage;
+@property (nonatomic, readonly) unsigned long long applicationType;
+@property (nonatomic, readonly) TSKChangeNotifier *changeNotifier;
+@property (nonatomic, readonly) NSString *creationLanguage;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) TSULocale *documentCreationLocale;
+@property (nonatomic, readonly) TSULocale *documentLocale;
+@property (nonatomic, readonly) TSKDocumentSupport *documentSupport;
+@property (nonatomic, retain) NSSet *filteredAuthors;
+@property (getter=isFindActive, nonatomic) bool findActive;
+@property (nonatomic, readonly) bool hasICloudConflict;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isBeingLocalized;
+@property (nonatomic, retain) TSKPasteboardController *pasteboardController;
+@property (nonatomic, readonly) TSKSelectionDispatcher *selectionDispatcher;
+@property (nonatomic, readonly) TSSStylesheet *stylesheet;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) TSSTheme *theme;
+@property (nonatomic, readonly) unsigned long long writingDirection;
+@property (nonatomic, readonly) unsigned long long writingDirectionForStorage;
 
 + (bool)needsObjectUUID;
 

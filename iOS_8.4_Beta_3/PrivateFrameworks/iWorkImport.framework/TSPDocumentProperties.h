@@ -11,12 +11,12 @@
     NSUUID *_versionUUID;
 }
 
-@property(assign,copy) NSDictionary * additionalProperties;
-@property(assign,copy) NSUUID * documentUUID;
-@property(assign,readwrite) unsigned long long fileFormatVersion;
-@property(assign,copy) TSPDocumentRevision * revision;
-@property(assign,readonly) NSUUID * shareUUID;
-@property(assign,readonly) NSUUID * versionUUID;
+@property (nonatomic, copy) NSDictionary *additionalProperties;
+@property (nonatomic, copy) NSUUID *documentUUID;
+@property (nonatomic) unsigned long long fileFormatVersion;
+@property (nonatomic, copy) TSPDocumentRevision *revision;
+@property (nonatomic, readonly) NSUUID *shareUUID;
+@property (nonatomic, readonly) NSUUID *versionUUID;
 
 + (bool)documentIsEncryptedAtURL:(id)arg1;
 + (id)documentPropertiesRelativePath;

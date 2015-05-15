@@ -6,7 +6,7 @@
     NSURL *_savedRecordingURI;
 }
 
-@property(assign,readonly) NSURL * savedRecordingURI;
+@property (nonatomic, readonly) NSURL *savedRecordingURI;
 
 + (id)compositionControllerForCreatingSavedRecording;
 + (id)compositionControllerForExistingSavedRecordingURI:(id)arg1;

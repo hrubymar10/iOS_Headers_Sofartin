@@ -6,10 +6,10 @@
     struct _CAMLParserData { } *_data;
 }
 
-@property(assign,retain) NSURL * baseURL;
-@property(assign,readwrite) id delegate;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) id result;
+@property (retain) NSURL *baseURL;
+@property id delegate;
+@property (readonly) NSError *error;
+@property (readonly) id result;
 
 + (id)parseContentsOfURL:(id)arg1;
 + (id)parser;

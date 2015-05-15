@@ -27,26 +27,26 @@
     unsigned int _touchTotalUserTouchCount;
 }
 
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasTocuhTotalUserInteractionDuration;
-@property(assign,readwrite) bool hasTouchStateActiveDuration;
-@property(assign,readwrite) bool hasTouchStateAnticipateDuration;
-@property(assign,readwrite) bool hasTouchStateOffDuration;
-@property(assign,readwrite) bool hasTouchStateOnDuration;
-@property(assign,readwrite) bool hasTouchStateOthersDuration;
-@property(assign,readwrite) bool hasTouchStateReadyDuration;
-@property(assign,readwrite) bool hasTouchTotalPowerMicroWatt;
-@property(assign,readwrite) bool hasTouchTotalUserTouchCount;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int tocuhTotalUserInteractionDuration;
-@property(assign,readwrite) unsigned int touchStateActiveDuration;
-@property(assign,readwrite) unsigned int touchStateAnticipateDuration;
-@property(assign,readwrite) unsigned int touchStateOffDuration;
-@property(assign,readwrite) unsigned int touchStateOnDuration;
-@property(assign,readwrite) unsigned int touchStateOthersDuration;
-@property(assign,readwrite) unsigned int touchStateReadyDuration;
-@property(assign,readwrite) unsigned int touchTotalPowerMicroWatt;
-@property(assign,readwrite) unsigned int touchTotalUserTouchCount;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasTocuhTotalUserInteractionDuration;
+@property (nonatomic) bool hasTouchStateActiveDuration;
+@property (nonatomic) bool hasTouchStateAnticipateDuration;
+@property (nonatomic) bool hasTouchStateOffDuration;
+@property (nonatomic) bool hasTouchStateOnDuration;
+@property (nonatomic) bool hasTouchStateOthersDuration;
+@property (nonatomic) bool hasTouchStateReadyDuration;
+@property (nonatomic) bool hasTouchTotalPowerMicroWatt;
+@property (nonatomic) bool hasTouchTotalUserTouchCount;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int tocuhTotalUserInteractionDuration;
+@property (nonatomic) unsigned int touchStateActiveDuration;
+@property (nonatomic) unsigned int touchStateAnticipateDuration;
+@property (nonatomic) unsigned int touchStateOffDuration;
+@property (nonatomic) unsigned int touchStateOnDuration;
+@property (nonatomic) unsigned int touchStateOthersDuration;
+@property (nonatomic) unsigned int touchStateReadyDuration;
+@property (nonatomic) unsigned int touchTotalPowerMicroWatt;
+@property (nonatomic) unsigned int touchTotalUserTouchCount;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -7,8 +7,8 @@
     NSNumber *inputRadius;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputRadius;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputRadius;
 
 + (id)customAttributes;
 

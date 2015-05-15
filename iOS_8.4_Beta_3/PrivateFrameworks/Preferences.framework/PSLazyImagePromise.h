@@ -11,8 +11,8 @@
     id _loadBlock;
 }
 
-@property(assign,readonly) UIImage * image;
-@property(getter=isImageLoaded,assign,readonly) bool imageLoaded;
+@property (nonatomic, readonly) UIImage *image;
+@property (getter=isImageLoaded, nonatomic, readonly) bool imageLoaded;
 
 + (id)imagePromiseWithImageNamed:(id)arg1 inBundle:(id)arg2;
 + (id)imagePromiseWithImagePath:(id)arg1;

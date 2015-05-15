@@ -8,8 +8,8 @@
     NSDictionary *_urlBagDictionary;
 }
 
-@property(assign,retain) SSVFairPlaySAPSession * SAPSession;
-@property(assign,copy) NSDictionary * URLBagDictionary;
+@property (retain) SSVFairPlaySAPSession *SAPSession;
+@property (readonly, copy) NSDictionary *URLBagDictionary;
 
 - (void).cxx_destruct;
 - (id)SAPSession;

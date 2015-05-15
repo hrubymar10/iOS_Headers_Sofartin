@@ -26,17 +26,17 @@
     NSString *_wantsToHideBorderProperty;
 }
 
-@property(assign,copy) NSSet * artworkAdditionalPropertiesToPrefetch;
-@property(assign,copy) NSString * artworkAllowsUserInteractionProperty;
-@property(assign,readwrite) double artworkAspectRatio;
-@property(assign,copy) UIColor * artworkBackgoundColor;
-@property(assign,readwrite) long long artworkContentMode;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } artworkEdgeInsets;
-@property(assign,copy) UIColor * artworkHighlightedBackgoundColor;
-@property(assign,readwrite) long long artworkPlaceholderStyle;
-@property(assign,copy) NSString * artworkProperty;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } artworkSize;
-@property(assign,copy) NSString * wantsToHideBorderProperty;
+@property (nonatomic, copy) NSSet *artworkAdditionalPropertiesToPrefetch;
+@property (nonatomic, copy) NSString *artworkAllowsUserInteractionProperty;
+@property (nonatomic) double artworkAspectRatio;
+@property (nonatomic, copy) UIColor *artworkBackgoundColor;
+@property (nonatomic) long long artworkContentMode;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } artworkEdgeInsets;
+@property (nonatomic, copy) UIColor *artworkHighlightedBackgoundColor;
+@property (nonatomic) long long artworkPlaceholderStyle;
+@property (nonatomic, copy) NSString *artworkProperty;
+@property (nonatomic) struct CGSize { double x1; double x2; } artworkSize;
+@property (nonatomic, copy) NSString *wantsToHideBorderProperty;
 
 - (void).cxx_destruct;
 - (id)_grayArtworkPlaceholderImageForSize:(struct CGSize { double x1; double x2; })arg1 scale:(double)arg2;

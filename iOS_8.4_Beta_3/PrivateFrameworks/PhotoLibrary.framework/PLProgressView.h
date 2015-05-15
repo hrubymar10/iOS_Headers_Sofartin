@@ -18,13 +18,13 @@
     UIView *_topDivider;
 }
 
-@property(assign,retain) _UIBackdropView * backgroundBlurredView;
-@property(assign,retain) UIView * backgroundTintedView;
-@property(assign,readwrite) long long backgroundType;
-@property(assign,retain) UIView * backgroundView;
-@property(assign,copy) id cancelationHandler;
-@property(assign,readwrite) float percentComplete;
-@property(assign,readwrite) bool showsCancelButton;
+@property (nonatomic, retain) _UIBackdropView *backgroundBlurredView;
+@property (nonatomic, retain) UIView *backgroundTintedView;
+@property (nonatomic) long long backgroundType;
+@property (nonatomic, retain) UIView *backgroundView;
+@property (nonatomic, copy) id cancelationHandler;
+@property (nonatomic) float percentComplete;
+@property (nonatomic) bool showsCancelButton;
 
 - (void)_cancel:(id)arg1;
 - (void)_installBackgroundBlurredView;

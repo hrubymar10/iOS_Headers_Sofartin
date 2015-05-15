@@ -7,8 +7,8 @@
     PLXPCListenerOperatorComposition *_xpcHandler;
 }
 
-@property(assign,readonly) PLAccountingGroup * watchkitAccountingGroup;
-@property(assign,retain) PLXPCListenerOperatorComposition * xpcHandler;
+@property (readonly) PLAccountingGroup *watchkitAccountingGroup;
+@property (retain) PLXPCListenerOperatorComposition *xpcHandler;
 
 + (id)accountingGroupDefinitions;
 + (id)entryEventPointDefinitions;

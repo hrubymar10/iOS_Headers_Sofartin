@@ -16,22 +16,22 @@
     PLObjectSnapshot *_snapshot;
 }
 
-@property(assign,retain) NSArray * _changedObjects;
-@property(assign,retain) NSString * _contentRelationshipName;
-@property(setter=_setDidCalculateDiffs:,assign,readwrite) bool _didCalculateDiffs;
-@property(assign,retain) NSString * _diffDescription;
-@property(assign,retain) PLManagedObject * _managedObject;
-@property(assign,retain) NSIndexSet * changedIndexes;
-@property(assign,retain) NSIndexSet * changedIndexesRelativeToSnapshot;
-@property(assign,retain) NSArray * changedObjects;
-@property(assign,readonly) bool countDidChange;
-@property(assign,retain) NSIndexSet * deletedIndexes;
-@property(assign,retain) NSArray * deletedObjects;
-@property(assign,readonly) bool hasMoves;
-@property(assign,retain) NSIndexSet * insertedIndexes;
-@property(assign,retain) NSArray * insertedObjects;
-@property(assign,readonly) bool shouldReload;
-@property(assign,retain) PLObjectSnapshot * snapshot;
+@property (nonatomic, readonly, retain) NSArray *_changedObjects;
+@property (nonatomic, readonly, retain) NSString *_contentRelationshipName;
+@property (setter=_setDidCalculateDiffs:, nonatomic) bool _didCalculateDiffs;
+@property (nonatomic, readonly, retain) NSString *_diffDescription;
+@property (nonatomic, readonly, retain) PLManagedObject *_managedObject;
+@property (nonatomic, readonly, retain) NSIndexSet *changedIndexes;
+@property (nonatomic, readonly, retain) NSIndexSet *changedIndexesRelativeToSnapshot;
+@property (nonatomic, readonly, retain) NSArray *changedObjects;
+@property (nonatomic, readonly) bool countDidChange;
+@property (nonatomic, readonly, retain) NSIndexSet *deletedIndexes;
+@property (nonatomic, readonly, retain) NSArray *deletedObjects;
+@property (nonatomic, readonly) bool hasMoves;
+@property (nonatomic, readonly, retain) NSIndexSet *insertedIndexes;
+@property (nonatomic, readonly, retain) NSArray *insertedObjects;
+@property (nonatomic, readonly) bool shouldReload;
+@property (nonatomic, readonly, retain) PLObjectSnapshot *snapshot;
 
 - (void)_calculateDiffs;
 - (void)_calculateDiffsIfNecessary;

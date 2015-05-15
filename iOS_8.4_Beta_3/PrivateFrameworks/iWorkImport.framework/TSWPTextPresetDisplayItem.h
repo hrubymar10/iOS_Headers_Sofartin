@@ -7,8 +7,8 @@
     TSWPTextStylePreset *_preset;
 }
 
-@property(assign,copy) NSString * displayName;
-@property(assign,retain) TSWPTextStylePreset * preset;
+@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic, retain) TSWPTextStylePreset *preset;
 
 - (void)dealloc;
 - (id)description;

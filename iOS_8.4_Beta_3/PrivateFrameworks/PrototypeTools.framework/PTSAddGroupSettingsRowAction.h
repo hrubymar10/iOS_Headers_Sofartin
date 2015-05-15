@@ -7,8 +7,8 @@
     Class _settingsClass;
 }
 
-@property(assign,copy) NSString * groupKeyPath;
-@property(assign,retain) Class settingsClass;
+@property (nonatomic, copy) NSString *groupKeyPath;
+@property (nonatomic, retain) Class settingsClass;
 
 + (id)actionWithGroupKeyPath:(id)arg1 settingsClass:(Class)arg2;
 

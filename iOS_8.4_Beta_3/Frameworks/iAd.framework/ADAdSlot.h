@@ -18,24 +18,24 @@
     NSMutableArray *_visuallyEngagedBanners;
 }
 
-@property(assign,retain) NSArray * ads;
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ADAdSlotDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didBeginPlayback;
-@property(assign,readwrite) bool didReportFinish;
-@property(assign,readwrite) bool didRequest;
-@property(assign,copy) NSData * followingSongData;
-@property(assign,readwrite) bool gatewayAdSlot;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) NSMutableArray * pendingBannerLoads;
-@property(assign,copy) NSData * previousSongData;
-@property(assign,copy) NSData * stationData;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableArray * visuallyDisengagedBanners;
-@property(assign,retain) NSMutableArray * visuallyEngagedBanners;
+@property (nonatomic, readonly, retain) NSArray *ads;
+@property (nonatomic, copy) id completionHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ADAdSlotDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool didBeginPlayback;
+@property (nonatomic) bool didReportFinish;
+@property (nonatomic) bool didRequest;
+@property (nonatomic, copy) NSData *followingSongData;
+@property (nonatomic) bool gatewayAdSlot;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, retain) NSMutableArray *pendingBannerLoads;
+@property (nonatomic, copy) NSData *previousSongData;
+@property (nonatomic, copy) NSData *stationData;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMutableArray *visuallyDisengagedBanners;
+@property (nonatomic, retain) NSMutableArray *visuallyEngagedBanners;
 
 + (bool)supportsSecureCoding;
 

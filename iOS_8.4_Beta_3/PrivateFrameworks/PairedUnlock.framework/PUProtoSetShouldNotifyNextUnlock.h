@@ -6,7 +6,7 @@
     bool _shouldNotify;
 }
 
-@property(assign,readwrite) bool shouldNotify;
+@property (nonatomic) bool shouldNotify;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

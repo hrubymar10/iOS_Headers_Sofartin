@@ -7,8 +7,8 @@
     UIColor *_vibrantColor;
 }
 
-@property(assign,readonly) UIColor * tintColor;
-@property(assign,readonly) UIColor * vibrantColor;
+@property (nonatomic, readonly) UIColor *tintColor;
+@property (nonatomic, readonly) UIColor *vibrantColor;
 
 + (id)layerWithVibrantColor:(id)arg1 tintColor:(id)arg2 filterType:(id)arg3;
 

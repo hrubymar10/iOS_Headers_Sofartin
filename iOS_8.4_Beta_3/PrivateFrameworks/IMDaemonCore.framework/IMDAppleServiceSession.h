@@ -7,14 +7,14 @@
     NSString *_serviceName;
 }
 
-@property(assign,retain) NSString * GUID;
-@property(assign,retain) NSArray * aliases;
-@property(assign,retain) NSString * callerID;
-@property(assign,retain) NSString * callerURI;
-@property(assign,retain) IDSAccount * idsAccount;
-@property(assign,readonly) NSArray * registeredURIs;
-@property(assign,readonly) NSString * serviceType;
-@property(assign,retain) NSArray * vettedAliases;
+@property (nonatomic, readonly, retain) NSString *GUID;
+@property (nonatomic, readonly, retain) NSArray *aliases;
+@property (nonatomic, readonly, retain) NSString *callerID;
+@property (nonatomic, readonly, retain) NSString *callerURI;
+@property (nonatomic, readonly, retain) IDSAccount *idsAccount;
+@property (nonatomic, readonly) NSArray *registeredURIs;
+@property (nonatomic, readonly) NSString *serviceType;
+@property (nonatomic, readonly, retain) NSArray *vettedAliases;
 
 - (id)GUID;
 - (id)_aliasStrings;

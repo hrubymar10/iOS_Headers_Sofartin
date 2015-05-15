@@ -15,19 +15,19 @@
     TNSheet *mSheet;
 }
 
-@property(assign,readonly) bool alwaysStartsNewTarget;
-@property(assign,readonly) unsigned long long columnCount;
-@property(assign,readonly) bool columnsAreLeftToRight;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } contentFrame;
-@property(assign,retain) TNPageContentLayout * contentLayout;
-@property(assign,readonly) TSWPPadding * layoutMargins;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } pageBounds;
-@property(assign,readwrite) TNPageController * pageController;
-@property(assign,readwrite) struct { unsigned short x1; unsigned char x2; unsigned char x3; } pageCoordinate;
-@property(getter=isPlaceholder,assign,readwrite) bool placeholder;
-@property(assign,retain) TNSheet * sheet;
-@property(assign,readonly) bool shrinkTextToFit;
-@property(assign,readonly) double textScaleFactor;
+@property (nonatomic, readonly) bool alwaysStartsNewTarget;
+@property (nonatomic, readonly) unsigned long long columnCount;
+@property (nonatomic, readonly) bool columnsAreLeftToRight;
+@property (readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } contentFrame;
+@property (retain) TNPageContentLayout *contentLayout;
+@property (nonatomic, readonly) TSWPPadding *layoutMargins;
+@property (readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } pageBounds;
+@property TNPageController *pageController;
+@property struct { unsigned short x1; unsigned char x2; unsigned char x3; } pageCoordinate;
+@property (getter=isPlaceholder) bool placeholder;
+@property (retain) TNSheet *sheet;
+@property (nonatomic, readonly) bool shrinkTextToFit;
+@property (nonatomic, readonly) double textScaleFactor;
 
 + (id)pageLayoutWithPageController:(id)arg1 pageCoordinate:(struct { unsigned short x1; unsigned char x2; unsigned char x3; })arg2;
 

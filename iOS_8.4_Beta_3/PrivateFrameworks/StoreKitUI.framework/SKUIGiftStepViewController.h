@@ -9,9 +9,9 @@
     NSOperationQueue *_operationQueue;
 }
 
-@property(assign,readonly) SKUIGift * gift;
-@property(assign,readonly) SKUIGiftConfiguration * giftConfiguration;
-@property(assign,retain) NSOperationQueue * operationQueue;
+@property (nonatomic, readonly) SKUIGift *gift;
+@property (nonatomic, readonly) SKUIGiftConfiguration *giftConfiguration;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
 
 - (void).cxx_destruct;
 - (void)_finishImageLoadWithImage:(id)arg1 error:(id)arg2 block:(id)arg3;

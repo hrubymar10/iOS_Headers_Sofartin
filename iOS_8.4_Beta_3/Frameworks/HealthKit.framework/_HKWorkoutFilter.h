@@ -6,7 +6,7 @@
     NSUUID *_workoutUUID;
 }
 
-@property(assign,readonly) NSUUID * workoutUUID;
+@property (nonatomic, readonly) NSUUID *workoutUUID;
 
 + (id)filterForKeyPath:(id)arg1 predicateOperatorType:(unsigned long long)arg2 value:(id)arg3 dataTypes:(id)arg4;
 + (id)filterWithWorkoutUUID:(id)arg1;

@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) NSMutableArray * contextLists;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) NSMutableArray *contextLists;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)_addRequest:(id)arg1 ofType:(long long)arg2 forIdentifier:(id)arg3;

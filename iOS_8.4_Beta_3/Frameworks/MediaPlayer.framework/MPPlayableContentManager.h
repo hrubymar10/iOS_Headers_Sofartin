@@ -14,9 +14,9 @@
     NSObject<OS_dispatch_queue> *_serialQueue;
 }
 
-@property(assign,retain) MPPlayableContentManagerContext * context;
-@property(assign,readwrite) <MPPlayableContentDataSource> * dataSource;
-@property(assign,readwrite) <MPPlayableContentDelegate> * delegate;
+@property (nonatomic, retain) MPPlayableContentManagerContext *context;
+@property (nonatomic) <MPPlayableContentDataSource> *dataSource;
+@property (nonatomic) <MPPlayableContentDelegate> *delegate;
 
 + (id)sharedContentManager;
 

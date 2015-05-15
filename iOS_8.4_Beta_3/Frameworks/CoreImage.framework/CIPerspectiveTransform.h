@@ -10,11 +10,11 @@
     CIVector *inputTopRight;
 }
 
-@property(assign,retain) CIVector * inputBottomLeft;
-@property(assign,retain) CIVector * inputBottomRight;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIVector * inputTopLeft;
-@property(assign,retain) CIVector * inputTopRight;
+@property (nonatomic, retain) CIVector *inputBottomLeft;
+@property (nonatomic, retain) CIVector *inputBottomRight;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIVector *inputTopLeft;
+@property (nonatomic, retain) CIVector *inputTopRight;
 
 + (id)customAttributes;
 

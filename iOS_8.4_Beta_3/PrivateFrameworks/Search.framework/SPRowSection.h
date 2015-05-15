@@ -4,15 +4,15 @@
 
 @interface SPRowSection : SPSection <PRSRowSection>
 
-@property(assign,retain) NSURL * attribution_url;
-@property(assign,retain) NSString * key;
-@property(assign,readwrite) bool key_nowrap;
-@property(assign,readwrite) long long key_weight;
-@property(assign,retain) NSString * type;
-@property(assign,retain) NSURL * url;
-@property(assign,retain) NSString * value;
-@property(assign,retain) PRSImage * value_image;
-@property(assign,readwrite) bool value_nowrap;
-@property(assign,readwrite) long long value_weight;
+@property (nonatomic, retain) NSURL *attribution_url;
+@property (nonatomic, retain) NSString *key;
+@property (nonatomic) bool key_nowrap;
+@property (nonatomic) long long key_weight;
+@property (nonatomic, retain) NSString *type;
+@property (nonatomic, retain) NSURL *url;
+@property (nonatomic, retain) NSString *value;
+@property (nonatomic, retain) PRSImage *value_image;
+@property (nonatomic) bool value_nowrap;
+@property (nonatomic) long long value_weight;
 
 @end

@@ -25,25 +25,25 @@
     RUIWebContainerView *_webContainerView;
 }
 
-@property(assign,readwrite) bool configured;
-@property(assign,readonly) UIControl * control;
-@property(assign,retain) NSData * data;
-@property(assign,retain) NSDate * date;
-@property(assign,retain) NSDate * dateMax;
-@property(assign,retain) NSDate * dateMin;
-@property(assign,readonly) long long datePickerMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUITableViewRowDelegate> * delegate;
-@property(assign,retain) NSDictionary * deleteAction;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double height;
-@property(assign,retain) UIView * pickerView;
-@property(assign,readwrite) bool rowInvalid;
-@property(getter=isSelected,assign,readwrite) bool selected;
-@property(assign,readonly) long long selectedRow;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <RUITextFieldChangeObserver> * textFieldChangeObserver;
+@property (nonatomic) bool configured;
+@property (nonatomic, readonly) UIControl *control;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, retain) NSDate *dateMax;
+@property (nonatomic, retain) NSDate *dateMin;
+@property (nonatomic, readonly) long long datePickerMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUITableViewRowDelegate> *delegate;
+@property (nonatomic, retain) NSDictionary *deleteAction;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double height;
+@property (nonatomic, retain) UIView *pickerView;
+@property (nonatomic) bool rowInvalid;
+@property (getter=isSelected, nonatomic) bool selected;
+@property (nonatomic, readonly) long long selectedRow;
+@property (readonly) Class superclass;
+@property (nonatomic) <RUITextFieldChangeObserver> *textFieldChangeObserver;
 
 + (id)_formatterForDateYMD;
 + (id)_formatterForMonthAndDay;

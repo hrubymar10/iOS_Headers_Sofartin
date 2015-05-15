@@ -15,16 +15,16 @@
     bool _wasDeleted;
 }
 
-@property(assign,retain) NSString * GUID;
-@property(assign,retain) NSString * URLString;
-@property(assign,retain) MSASInvitation * invitation;
-@property(assign,retain) NSString * name;
-@property(assign,copy) NSString * ownerEmail;
-@property(assign,copy) NSString * ownerFirstName;
-@property(assign,copy) NSString * ownerFullName;
-@property(assign,copy) NSString * ownerLastName;
-@property(assign,copy) NSString * ownerPersonID;
-@property(assign,readwrite) bool wasDeleted;
+@property (nonatomic, retain) NSString *GUID;
+@property (nonatomic, retain) NSString *URLString;
+@property (nonatomic, retain) MSASInvitation *invitation;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, copy) NSString *ownerEmail;
+@property (nonatomic, copy) NSString *ownerFirstName;
+@property (nonatomic, copy) NSString *ownerFullName;
+@property (nonatomic, copy) NSString *ownerLastName;
+@property (nonatomic, copy) NSString *ownerPersonID;
+@property (nonatomic) bool wasDeleted;
 
 - (void).cxx_destruct;
 - (id)GUID;

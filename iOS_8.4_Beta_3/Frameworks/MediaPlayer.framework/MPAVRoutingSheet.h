@@ -11,11 +11,11 @@
     MPAVRoutingViewController *_routingViewController;
 }
 
-@property(setter=setAVItemType:,assign,readwrite) unsigned long long avItemType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (setter=setAVItemType:, nonatomic) unsigned long long avItemType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_animateControls:(bool)arg1 withCompletionHandler:(id)arg2;

@@ -6,8 +6,8 @@
     AVAssetTrackInternal *_track;
 }
 
-@property(assign,readonly) AVAsset * asset;
-@property(assign,readonly) int trackID;
+@property (nonatomic, readonly) AVAsset *asset;
+@property (nonatomic, readonly) int trackID;
 
 + (id)keyPathsForValuesAffectingTimeRange;
 + (id)mediaTypesForMediaCharacteristics;

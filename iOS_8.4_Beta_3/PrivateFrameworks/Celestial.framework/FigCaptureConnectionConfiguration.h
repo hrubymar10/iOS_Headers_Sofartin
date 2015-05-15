@@ -10,15 +10,15 @@
     FigCaptureSourceConfiguration *_sourceConfiguration;
 }
 
-@property(assign,copy) NSString * connectionID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned int mediaType;
-@property(assign,retain) FigCaptureSinkConfiguration * sinkConfiguration;
-@property(assign,retain) FigCaptureSourceConfiguration * sourceConfiguration;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *connectionID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned int mediaType;
+@property (nonatomic, retain) FigCaptureSinkConfiguration *sinkConfiguration;
+@property (nonatomic, retain) FigCaptureSourceConfiguration *sourceConfiguration;
+@property (readonly) Class superclass;
 
 + (void)initialize;
 

@@ -4,9 +4,9 @@
 
 @interface SAMovieV2ReviewListCell : SADomainObject
 
-@property(assign,copy) NSString * reviewAuthor;
-@property(assign,copy) NSDate * reviewDate;
-@property(assign,copy) NSString * reviewText;
+@property (nonatomic, copy) NSString *reviewAuthor;
+@property (nonatomic, copy) NSDate *reviewDate;
+@property (nonatomic, copy) NSString *reviewText;
 
 + (id)reviewListCell;
 + (id)reviewListCellWithDictionary:(id)arg1 context:(id)arg2;

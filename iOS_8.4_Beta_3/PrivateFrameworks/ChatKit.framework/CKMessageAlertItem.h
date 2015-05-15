@@ -11,14 +11,14 @@
     bool _showingImage;
 }
 
-@property(assign,retain) NCInteractiveNotificationHostViewController * audioPlaybackViewController;
-@property(assign,retain) BBBulletin * bulletin;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NCInteractiveNotificationHostViewController * replyViewController;
-@property(assign,readwrite) bool showingImage;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NCInteractiveNotificationHostViewController *audioPlaybackViewController;
+@property (nonatomic, retain) BBBulletin *bulletin;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NCInteractiveNotificationHostViewController *replyViewController;
+@property (nonatomic) bool showingImage;
+@property (readonly) Class superclass;
 
 + (int)lastMessageSenderID;
 + (void)playMessageReceived;

@@ -7,22 +7,22 @@
     EKRecurrenceEnd *_recurrenceEnd;
 }
 
-@property(assign,readonly) NSString * UUID;
-@property(assign,readonly) NSDate * cachedEndDate;
-@property(assign,readonly) NSString * calendarIdentifier;
-@property(assign,readwrite) unsigned long long count;
-@property(assign,copy) NSArray * daysOfTheMonth;
-@property(assign,copy) NSArray * daysOfTheWeek;
-@property(assign,copy) NSArray * daysOfTheYear;
-@property(assign,copy) NSDate * endDate;
-@property(assign,readwrite) long long firstDayOfTheWeek;
-@property(assign,readwrite) int frequency;
-@property(assign,readwrite) long long interval;
-@property(assign,copy) NSArray * monthsOfTheYear;
-@property(assign,retain) EKPersistentCalendarItem * owner;
-@property(assign,copy) NSArray * setPositions;
-@property(assign,readonly) bool shouldPinMonthDays;
-@property(assign,copy) NSArray * weeksOfTheYear;
+@property (nonatomic, readonly) NSString *UUID;
+@property (nonatomic, readonly) NSDate *cachedEndDate;
+@property (nonatomic, readonly) NSString *calendarIdentifier;
+@property (nonatomic) unsigned long long count;
+@property (nonatomic, copy) NSArray *daysOfTheMonth;
+@property (nonatomic, copy) NSArray *daysOfTheWeek;
+@property (nonatomic, copy) NSArray *daysOfTheYear;
+@property (nonatomic, copy) NSDate *endDate;
+@property (nonatomic) long long firstDayOfTheWeek;
+@property (nonatomic) int frequency;
+@property (nonatomic) long long interval;
+@property (nonatomic, copy) NSArray *monthsOfTheYear;
+@property (nonatomic, retain) EKPersistentCalendarItem *owner;
+@property (nonatomic, copy) NSArray *setPositions;
+@property (nonatomic, readonly) bool shouldPinMonthDays;
+@property (nonatomic, copy) NSArray *weeksOfTheYear;
 
 + (id)defaultPropertiesToLoad;
 + (id)relations;

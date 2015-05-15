@@ -12,11 +12,11 @@
     NSMutableArray *_subTrees;
 }
 
-@property(assign,readwrite) bool hasStyleReference;
-@property(assign,readwrite) unsigned int key;
-@property(assign,readwrite) unsigned int score;
-@property(assign,readwrite) unsigned int styleReference;
-@property(assign,retain) NSMutableArray * subTrees;
+@property (nonatomic) bool hasStyleReference;
+@property (nonatomic) unsigned int key;
+@property (nonatomic) unsigned int score;
+@property (nonatomic) unsigned int styleReference;
+@property (nonatomic, retain) NSMutableArray *subTrees;
 
 - (void)addSubTree:(id)arg1;
 - (void)clearSubTrees;

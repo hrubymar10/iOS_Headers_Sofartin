@@ -19,15 +19,15 @@
     NSString *_trailingButtonTitle;
 }
 
-@property(assign,readwrite) <MusicSwitcherButtonContainerViewDelegate> * delegate;
-@property(assign,retain) UIFont * fontOfLeadingAndTrailingButtons;
-@property(assign,retain) UIFont * fontOfTextRightAbove;
-@property(assign,readwrite) bool isSwitcherButtonHidden;
-@property(assign,copy) NSString * leadingButtonTitle;
-@property(assign,retain) UIFont * switcherButtonFont;
-@property(assign,copy) NSString * switcherButtonTitle;
-@property(assign,readonly) UIView * switcherButtonView;
-@property(assign,copy) NSString * trailingButtonTitle;
+@property (nonatomic) <MusicSwitcherButtonContainerViewDelegate> *delegate;
+@property (nonatomic, retain) UIFont *fontOfLeadingAndTrailingButtons;
+@property (nonatomic, retain) UIFont *fontOfTextRightAbove;
+@property (nonatomic) bool isSwitcherButtonHidden;
+@property (nonatomic, copy) NSString *leadingButtonTitle;
+@property (nonatomic, retain) UIFont *switcherButtonFont;
+@property (nonatomic, copy) NSString *switcherButtonTitle;
+@property (nonatomic, readonly) UIView *switcherButtonView;
+@property (nonatomic, copy) NSString *trailingButtonTitle;
 
 + (id)_chevronImageForTraitCollection:(id)arg1;
 + (id)defaultHairlineColor;

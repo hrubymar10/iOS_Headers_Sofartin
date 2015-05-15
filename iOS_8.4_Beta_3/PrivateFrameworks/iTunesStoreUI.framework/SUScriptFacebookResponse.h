@@ -8,9 +8,9 @@
     long long _statusCode;
 }
 
-@property(assign,readonly) long long HTTPStatusCode;
-@property(assign,readonly) NSString * bodyData;
-@property(assign,readonly) SUScriptError * error;
+@property (readonly) long long HTTPStatusCode;
+@property (readonly) NSString *bodyData;
+@property (readonly) SUScriptError *error;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

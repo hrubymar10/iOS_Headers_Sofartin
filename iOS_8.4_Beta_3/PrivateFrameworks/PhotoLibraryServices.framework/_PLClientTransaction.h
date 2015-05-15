@@ -9,10 +9,10 @@
     id _processAssertion;
 }
 
-@property(assign,readwrite) NSObject<OS_dispatch_semaphore> * fdResourceSemaphore;
-@property(assign,readwrite) int fileDescriptor;
-@property(assign,retain) NSString * path;
-@property(assign,retain) id processAssertion;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> *fdResourceSemaphore;
+@property (nonatomic) int fileDescriptor;
+@property (nonatomic, retain) NSString *path;
+@property (nonatomic, retain) id processAssertion;
 
 + (id)_fdIsolationQueue;
 + (id)_fdResourceSemaphore;

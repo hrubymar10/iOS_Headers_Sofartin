@@ -10,10 +10,10 @@
     int _status;
 }
 
-@property(assign,readonly) bool hasMescalHeaderData;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,retain) NSData * mescalHeaderData;
-@property(assign,readwrite) int status;
+@property (nonatomic, readonly) bool hasMescalHeaderData;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic, retain) NSData *mescalHeaderData;
+@property (nonatomic) int status;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

@@ -8,9 +8,9 @@
     UIImage *_photo;
 }
 
-@property(assign,readonly) NSString * appleID;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) UIImage * photo;
+@property (nonatomic, readonly) NSString *appleID;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) UIImage *photo;
 
 + (Class)_viewClassForSettingDescription:(id)arg1;
 

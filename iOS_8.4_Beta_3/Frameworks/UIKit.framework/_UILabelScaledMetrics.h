@@ -18,13 +18,13 @@
     } _targetSize;
 }
 
-@property(assign,readwrite) double actualScaleFactor;
-@property(assign,readwrite) double baselineOffset;
-@property(assign,retain) NSAttributedString * scaledAttributedText;
-@property(assign,readwrite) double scaledBaselineOffset;
-@property(assign,readwrite) double scaledLineHeight;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } scaledSize;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } targetSize;
+@property (nonatomic) double actualScaleFactor;
+@property (nonatomic) double baselineOffset;
+@property (nonatomic, retain) NSAttributedString *scaledAttributedText;
+@property (nonatomic) double scaledBaselineOffset;
+@property (nonatomic) double scaledLineHeight;
+@property (nonatomic) struct CGSize { double x1; double x2; } scaledSize;
+@property (nonatomic) struct CGSize { double x1; double x2; } targetSize;
 
 - (double)actualScaleFactor;
 - (double)baselineOffset;

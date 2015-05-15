@@ -19,21 +19,21 @@
     bool _showing;
 }
 
-@property(assign,copy) NSDictionary * configuration;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enteringModalEditingSavedModeTableViewCell;
-@property(assign,readwrite) bool exitingModalEditingSavedModeTableViewCell;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } initialPoint;
-@property(assign,copy) NSString * mode;
-@property(assign,retain) UIView * panView;
-@property(assign,retain) NSArray * savedModeRows;
-@property(assign,readwrite) unsigned long long savedSettingsIndex;
-@property(assign,retain) _UISettings * settings;
-@property(assign,retain) _UISettingsGroup * settingsGroup;
-@property(assign,readwrite) bool showing;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSDictionary *configuration;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enteringModalEditingSavedModeTableViewCell;
+@property (nonatomic) bool exitingModalEditingSavedModeTableViewCell;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct CGPoint { double x1; double x2; } initialPoint;
+@property (nonatomic, copy) NSString *mode;
+@property (nonatomic, retain) UIView *panView;
+@property (nonatomic, retain) NSArray *savedModeRows;
+@property (nonatomic) unsigned long long savedSettingsIndex;
+@property (nonatomic, retain) _UISettings *settings;
+@property (nonatomic, retain) _UISettingsGroup *settingsGroup;
+@property (nonatomic) bool showing;
+@property (readonly) Class superclass;
 
 + (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })defaultFrame;
 + (id)sharedInstance;

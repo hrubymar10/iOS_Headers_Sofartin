@@ -13,14 +13,14 @@
     CoreDAVLeafItem *_status;
 }
 
-@property(assign,retain) CoreDAVErrorItem * errorItem;
-@property(assign,retain) NSMutableArray * hrefs;
-@property(assign,retain) CoreDAVItemWithHrefChildItem * location;
-@property(assign,retain) CoreDAVMatchResultsItem * matchResults;
-@property(assign,retain) NSMutableSet * propStats;
-@property(assign,retain) CoreDAVLeafItem * responseDescription;
-@property(assign,retain) CoreDAVLeafItem * serverUID;
-@property(assign,retain) CoreDAVLeafItem * status;
+@property (nonatomic, retain) CoreDAVErrorItem *errorItem;
+@property (nonatomic, retain) NSMutableArray *hrefs;
+@property (nonatomic, retain) CoreDAVItemWithHrefChildItem *location;
+@property (nonatomic, retain) CoreDAVMatchResultsItem *matchResults;
+@property (nonatomic, retain) NSMutableSet *propStats;
+@property (nonatomic, retain) CoreDAVLeafItem *responseDescription;
+@property (nonatomic, retain) CoreDAVLeafItem *serverUID;
+@property (nonatomic, retain) CoreDAVLeafItem *status;
 
 + (id)copyParseRules;
 

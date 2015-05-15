@@ -14,15 +14,15 @@
     long long _style;
 }
 
-@property(assign,readonly) CAMAnimationDelegate * _animationDelegate;
-@property(assign,readonly) UILabel * _countdownLabel;
-@property(setter=_setDeferredOrientation:,assign,readwrite) long long _deferredLabelOrientation;
-@property(assign,readonly) UIView * _dimmingView;
-@property(setter=_setLabelOrientation:,assign,readwrite) long long _labelOrientation;
-@property(getter=_isPerformingStyleAnimation,setter=_setPerformingStyleAnimation:,assign,readwrite) bool _performingStyleAnimation;
-@property(assign,readonly) long long _remainingTicks;
-@property(assign,readonly) long long _startingTicks;
-@property(assign,readwrite) long long style;
+@property (nonatomic, readonly) CAMAnimationDelegate *_animationDelegate;
+@property (nonatomic, readonly) UILabel *_countdownLabel;
+@property (setter=_setDeferredOrientation:, nonatomic) long long _deferredLabelOrientation;
+@property (nonatomic, readonly) UIView *_dimmingView;
+@property (setter=_setLabelOrientation:, nonatomic) long long _labelOrientation;
+@property (getter=_isPerformingStyleAnimation, setter=_setPerformingStyleAnimation:, nonatomic) bool _performingStyleAnimation;
+@property (nonatomic, readonly) long long _remainingTicks;
+@property (nonatomic, readonly) long long _startingTicks;
+@property (nonatomic) long long style;
 
 - (void).cxx_destruct;
 - (void)_addDecrementAnimationForTick:(long long)arg1;

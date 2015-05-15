@@ -10,8 +10,8 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readwrite) <CPLFileWatcherDelegate> * delegate;
-@property(assign,copy) NSURL * fileURL;
+@property (nonatomic) <CPLFileWatcherDelegate> *delegate;
+@property (nonatomic, copy) NSURL *fileURL;
 
 - (void).cxx_destruct;
 - (void)_startWatchingNode;

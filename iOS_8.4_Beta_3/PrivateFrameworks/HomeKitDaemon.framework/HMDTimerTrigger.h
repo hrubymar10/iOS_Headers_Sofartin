@@ -11,12 +11,12 @@
     NSString *_timerID;
 }
 
-@property(assign,retain) NSDate * currentFireDate;
-@property(assign,copy) NSDate * fireDate;
-@property(assign,copy) NSTimeZone * fireDateTimeZone;
-@property(assign,copy) NSDateComponents * fireRepeatInterval;
-@property(assign,retain) NSTimer * timer;
-@property(assign,retain) NSString * timerID;
+@property (nonatomic, retain) NSDate *currentFireDate;
+@property (nonatomic, copy) NSDate *fireDate;
+@property (nonatomic, copy) NSTimeZone *fireDateTimeZone;
+@property (nonatomic, copy) NSDateComponents *fireRepeatInterval;
+@property (nonatomic, retain) NSTimer *timer;
+@property (nonatomic, retain) NSString *timerID;
 
 + (bool)supportsSecureCoding;
 + (id)validateWholeMinuteDate:(id)arg1 onCalendar:(id)arg2;

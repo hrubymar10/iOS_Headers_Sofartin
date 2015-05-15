@@ -17,13 +17,13 @@
     NSMutableArray *_yAxisLabels;
 }
 
-@property(assign,retain) StockChartData * chartData;
-@property(assign,readwrite) bool compactGraph;
-@property(assign,readonly) StockChartDisplayMode * currentDisplayMode;
-@property(assign,readwrite) <SPChartViewDelegate> * delegate;
-@property(assign,readwrite) bool glanceGraph;
-@property(assign,readwrite) bool showsHorizontalLines;
-@property(assign,retain) Stock * stock;
+@property (nonatomic, retain) StockChartData *chartData;
+@property (nonatomic) bool compactGraph;
+@property (nonatomic, readonly) StockChartDisplayMode *currentDisplayMode;
+@property (nonatomic) <SPChartViewDelegate> *delegate;
+@property (nonatomic) bool glanceGraph;
+@property (nonatomic) bool showsHorizontalLines;
+@property (nonatomic, retain) Stock *stock;
 
 - (void).cxx_destruct;
 - (void)_prepareXAxisLabelsAndPositions;

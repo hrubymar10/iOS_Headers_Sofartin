@@ -6,7 +6,7 @@
     <SBNumberPadDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <SBNumberPadDelegate> * delegate;
+@property (nonatomic) <SBNumberPadDelegate> *delegate;
 
 - (void)buttonCancelled:(id)arg1;
 - (void)buttonDown:(id)arg1;

@@ -152,7 +152,7 @@
     bool mUseIndividualBounds;
 }
 
-@property(assign,readwrite) bool useIndividualBounds;
+@property (nonatomic) bool useIndividualBounds;
 
 + (bool)includesDepthForUnitScaleForScene:(id)arg1;
 + (void)setIncludesDepthForUnitScale:(bool)arg1 forScene:(id)arg2;

@@ -10,11 +10,11 @@
     int size;
 }
 
-@property(assign,readonly) double I;
-@property(assign,readonly) double Q;
-@property(assign,readonly) int centerX;
-@property(assign,readonly) int centerY;
-@property(assign,readonly) int size;
+@property (readonly) double I;
+@property (readonly) double Q;
+@property (readonly) int centerX;
+@property (readonly) int centerY;
+@property (readonly) int size;
 
 - (double)I;
 - (double)Q;

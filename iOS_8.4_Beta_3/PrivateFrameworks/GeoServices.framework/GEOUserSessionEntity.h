@@ -11,14 +11,14 @@
     } _sessionID;
 }
 
-@property(assign,readwrite) unsigned int sequenceNumber;
-@property(assign,readwrite) double sessionCreationTime;
-@property(assign,readwrite) struct { unsigned long long x1; unsigned long long x2; } sessionID;
-@property(assign,readonly) NSNumber * sessionIDHigh;
-@property(assign,readonly) NSString * sessionIDHighString;
-@property(assign,readonly) NSNumber * sessionIDLow;
-@property(assign,readonly) NSString * sessionIDLowString;
-@property(assign,readonly) NSString * sessionIDString;
+@property unsigned int sequenceNumber;
+@property double sessionCreationTime;
+@property struct { unsigned long long x1; unsigned long long x2; } sessionID;
+@property (nonatomic, readonly) NSNumber *sessionIDHigh;
+@property (nonatomic, readonly) NSString *sessionIDHighString;
+@property (nonatomic, readonly) NSNumber *sessionIDLow;
+@property (nonatomic, readonly) NSString *sessionIDLowString;
+@property (nonatomic, readonly) NSString *sessionIDString;
 
 - (id)description;
 - (unsigned int)sequenceNumber;

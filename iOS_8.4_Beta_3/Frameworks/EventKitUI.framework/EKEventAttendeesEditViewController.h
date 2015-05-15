@@ -9,8 +9,8 @@
     EKEventAttendeePicker *_picker;
 }
 
-@property(assign,copy) NSArray * attendees;
-@property(assign,readwrite) bool disableShowingButtons;
+@property (nonatomic, copy) NSArray *attendees;
+@property (nonatomic) bool disableShowingButtons;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 

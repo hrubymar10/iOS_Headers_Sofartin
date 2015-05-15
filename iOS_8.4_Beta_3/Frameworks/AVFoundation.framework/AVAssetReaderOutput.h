@@ -6,12 +6,12 @@
     AVAssetReaderOutputInternal *_internal;
 }
 
-@property(assign,readwrite) bool alwaysCopiesSampleData;
-@property(getter=_extractionID,setter=_setExtractionID:,assign,readwrite) int extractionID;
-@property(getter=_figAssetReaderExtractionOptions,assign,readonly) NSDictionary * figAssetReaderExtractionOptions;
-@property(assign,readonly) NSString * mediaType;
-@property(getter=_trimsSampleDurations,assign,readonly) bool trimsSampleDurations;
-@property(getter=_weakReferenceToAssetReader,assign,readonly) AVWeakReference * weakReferenceToAssetReader;
+@property (nonatomic) bool alwaysCopiesSampleData;
+@property (getter=_extractionID, setter=_setExtractionID:, nonatomic) int extractionID;
+@property (getter=_figAssetReaderExtractionOptions, nonatomic, readonly) NSDictionary *figAssetReaderExtractionOptions;
+@property (nonatomic, readonly) NSString *mediaType;
+@property (getter=_trimsSampleDurations, nonatomic, readonly) bool trimsSampleDurations;
+@property (getter=_weakReferenceToAssetReader, nonatomic, readonly) AVWeakReference *weakReferenceToAssetReader;
 
 + (void)initialize;
 

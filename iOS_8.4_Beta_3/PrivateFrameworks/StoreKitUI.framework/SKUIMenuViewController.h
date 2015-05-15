@@ -11,11 +11,11 @@
     NSArray *_menuTitles;
 }
 
-@property(assign,readwrite) <SKUIMenuViewControllerDelegate> * delegate;
-@property(assign,readwrite) long long indexOfCheckedTitle;
-@property(assign,readonly) NSArray * menuImages;
-@property(assign,readwrite) long long menuStyle;
-@property(assign,readonly) NSArray * menuTitles;
+@property (nonatomic) <SKUIMenuViewControllerDelegate> *delegate;
+@property (nonatomic) long long indexOfCheckedTitle;
+@property (nonatomic, readonly) NSArray *menuImages;
+@property (nonatomic) long long menuStyle;
+@property (nonatomic, readonly) NSArray *menuTitles;
 
 - (void).cxx_destruct;
 - (void)_reloadViewStyling;

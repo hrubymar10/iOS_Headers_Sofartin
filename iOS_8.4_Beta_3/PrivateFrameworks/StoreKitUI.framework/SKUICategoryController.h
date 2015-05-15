@@ -20,20 +20,20 @@
     SKUICategoryTableViewController *_tableViewController;
 }
 
-@property(assign,retain) SKUICategory * category;
-@property(assign,readonly) UIBarButtonItem * categoryButton;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) NSURL * defaultURL;
-@property(assign,readwrite) <SKUICategoryControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isLoading;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,readonly) UISegmentedControl * segmentedControl;
-@property(assign,readwrite) long long segmentedControlLength;
-@property(assign,retain) NSURL * selectedURL;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUICategory *category;
+@property (nonatomic, readonly) UIBarButtonItem *categoryButton;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) NSURL *defaultURL;
+@property (nonatomic) <SKUICategoryControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isLoading;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic, readonly) UISegmentedControl *segmentedControl;
+@property (nonatomic) long long segmentedControlLength;
+@property (nonatomic, retain) NSURL *selectedURL;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_artworkLoader;

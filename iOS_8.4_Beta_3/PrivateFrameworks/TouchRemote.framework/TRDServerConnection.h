@@ -11,7 +11,7 @@
     TRService *_service;
 }
 
-@property(assign,readonly) TRService * service;
+@property (nonatomic, readonly) TRService *service;
 
 - (void).cxx_destruct;
 - (void)_browserDidRemoveServiceNotification:(id)arg1;

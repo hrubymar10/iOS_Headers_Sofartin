@@ -13,8 +13,8 @@
     unsigned short mTileRowIndex;
 }
 
-@property(assign,readonly) unsigned short cellCount;
-@property(assign,readwrite) unsigned short tileRowIndex;
+@property (nonatomic, readonly) unsigned short cellCount;
+@property (nonatomic) unsigned short tileRowIndex;
 
 - (unsigned short)cellCount;
 - (void)dealloc;

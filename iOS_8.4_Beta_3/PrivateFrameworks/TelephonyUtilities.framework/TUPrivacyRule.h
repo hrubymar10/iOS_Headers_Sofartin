@@ -8,9 +8,9 @@
     int _type;
 }
 
-@property(assign,readonly) NSString * email;
-@property(assign,readonly) TUPhoneNumber * phoneNumber;
-@property(assign,readonly) int type;
+@property (nonatomic, readonly) NSString *email;
+@property (nonatomic, readonly) TUPhoneNumber *phoneNumber;
+@property (nonatomic, readonly) int type;
 
 + (id)ruleForEmail:(id)arg1;
 + (id)ruleForPhoneNumber:(id)arg1;

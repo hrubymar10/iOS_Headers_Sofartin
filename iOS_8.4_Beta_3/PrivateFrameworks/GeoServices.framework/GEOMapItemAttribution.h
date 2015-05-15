@@ -9,12 +9,12 @@
     NSString *_yelpID;
 }
 
-@property(assign,readonly) NSArray * attributionApps;
-@property(assign,readonly) NSArray * attributionURLs;
-@property(assign,readonly) NSString * providerID;
-@property(assign,readonly) NSString * providerName;
-@property(assign,readonly) bool requiresAttributionInCallout;
-@property(assign,readonly) NSString * webBaseActionURL;
+@property (nonatomic, readonly) NSArray *attributionApps;
+@property (nonatomic, readonly) NSArray *attributionURLs;
+@property (nonatomic, readonly) NSString *providerID;
+@property (nonatomic, readonly) NSString *providerName;
+@property (nonatomic, readonly) bool requiresAttributionInCallout;
+@property (nonatomic, readonly) NSString *webBaseActionURL;
 
 - (id)_yelpHTTPURLForRequirement:(int)arg1 withUID:(id)arg2 writeAReview:(bool)arg3;
 - (id)attributionApps;

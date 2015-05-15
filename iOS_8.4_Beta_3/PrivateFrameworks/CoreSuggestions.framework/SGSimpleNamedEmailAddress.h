@@ -7,8 +7,8 @@
     NSString *_name;
 }
 
-@property(assign,readonly) NSString * emailAddress;
-@property(assign,readonly) NSString * name;
+@property (nonatomic, readonly) NSString *emailAddress;
+@property (nonatomic, readonly) NSString *name;
 
 + (id)namedEmailAddressWithFieldValue:(id)arg1;
 + (id)namedEmailAddressesWithFieldValues:(id)arg1;

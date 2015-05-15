@@ -8,9 +8,9 @@
     NSURL *_principalURL;
 }
 
-@property(assign,retain) NSSet * addresses;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSURL * principalURL;
+@property (nonatomic, retain) NSSet *addresses;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSURL *principalURL;
 
 + (id)resultFromResponseItem:(id)arg1;
 

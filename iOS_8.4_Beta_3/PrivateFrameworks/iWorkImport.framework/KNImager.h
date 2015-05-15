@@ -8,13 +8,13 @@
     unsigned long long mSlideNumber;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool shouldShowInstructionalText;
-@property(assign,readwrite) KNAbstractSlide * slide;
-@property(assign,readwrite) unsigned long long slideNumber;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool shouldShowInstructionalText;
+@property (nonatomic) KNAbstractSlide *slide;
+@property (nonatomic) unsigned long long slideNumber;
+@property (readonly) Class superclass;
 
 - (id)infoToConnectToForConnectionLineConnectedToInfo:(id)arg1;
 - (id)initWithDocumentRoot:(id)arg1;

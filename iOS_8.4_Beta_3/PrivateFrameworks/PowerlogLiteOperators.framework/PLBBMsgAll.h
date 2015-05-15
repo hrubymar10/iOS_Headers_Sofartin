@@ -15,16 +15,16 @@
     NSNumber *_seqNum;
 }
 
-@property(assign,retain) NSDate * bbDate;
-@property(assign,retain) NSString * error;
-@property(assign,retain) NSDate * ibbDate;
-@property(assign,retain) NSString * ierror;
-@property(assign,retain) NSString * ieventCode;
-@property(assign,retain) NSMutableDictionary * info;
-@property(assign,retain) NSString * ipayload;
-@property(assign,retain) NSNumber * iseqNum;
-@property(assign,retain) NSString * payload;
-@property(assign,retain) NSNumber * seqNum;
+@property (retain) NSDate *bbDate;
+@property (retain) NSString *error;
+@property (retain) NSDate *ibbDate;
+@property (retain) NSString *ierror;
+@property (retain) NSString *ieventCode;
+@property (retain) NSMutableDictionary *info;
+@property (retain) NSString *ipayload;
+@property (retain) NSNumber *iseqNum;
+@property (retain) NSString *payload;
+@property (retain) NSNumber *seqNum;
 
 + (id)entryEventNoneBBMsgAll;
 

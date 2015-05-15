@@ -6,7 +6,7 @@
     int mFunctionIndex;
 }
 
-@property(assign,readwrite) int functionIndex;
+@property (nonatomic) int functionIndex;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (int)functionIndex;

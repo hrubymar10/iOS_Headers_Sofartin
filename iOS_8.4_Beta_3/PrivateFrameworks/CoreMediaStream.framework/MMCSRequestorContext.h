@@ -12,13 +12,13 @@
     int _type;
 }
 
-@property(assign,readwrite) char ** authTokens;
-@property(assign,readwrite) unsigned long long count;
-@property(assign,readwrite) MMCSEngine * engine;
-@property(assign,readwrite) unsigned int* itemFlags;
-@property(assign,readwrite) unsigned long long* itemIDs;
-@property(assign,readwrite) char ** signatures;
-@property(assign,readwrite) int type;
+@property (nonatomic) char **authTokens;
+@property (nonatomic) unsigned long long count;
+@property (nonatomic) MMCSEngine *engine;
+@property (nonatomic) unsigned int*itemFlags;
+@property (nonatomic) unsigned long long*itemIDs;
+@property (nonatomic) char **signatures;
+@property (nonatomic) int type;
 
 + (id)contextWithEngine:(id)arg1 type:(int)arg2;
 

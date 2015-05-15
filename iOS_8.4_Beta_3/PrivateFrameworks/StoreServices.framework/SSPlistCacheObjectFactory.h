@@ -4,10 +4,10 @@
 
 @interface SSPlistCacheObjectFactory : NSObject <SSCacheObjectFactory>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)cachedObjectWithDataRepresentation:(id)arg1 typeIdentifier:(id)arg2;
 - (bool)supportsTypeIdentifier:(id)arg1;

@@ -49,8 +49,8 @@
     } _userControlInitiatorState;
 }
 
-@property(assign,readonly) unsigned short deckStatusRequestMask;
-@property(assign,readwrite) unsigned char sendFromAddress;
+@property (nonatomic, readonly) unsigned short deckStatusRequestMask;
+@property (nonatomic) unsigned char sendFromAddress;
 
 + (bool)supportsSecureCoding;
 

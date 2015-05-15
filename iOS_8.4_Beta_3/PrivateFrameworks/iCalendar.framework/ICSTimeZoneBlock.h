@@ -4,12 +4,12 @@
 
 @interface ICSTimeZoneBlock : ICSComponent
 
-@property(assign,retain) ICSDate * dtstart;
-@property(assign,retain) NSArray * rdate;
-@property(assign,retain) NSArray * rrule;
-@property(assign,readwrite) NSArray * tzname;
-@property(assign,readwrite) long long tzoffsetfrom;
-@property(assign,readwrite) long long tzoffsetto;
+@property (nonatomic, retain) ICSDate *dtstart;
+@property (nonatomic, retain) NSArray *rdate;
+@property (nonatomic, retain) NSArray *rrule;
+@property (nonatomic) NSArray *tzname;
+@property (nonatomic) long long tzoffsetfrom;
+@property (nonatomic) long long tzoffsetto;
 
 - (void)addRecurrenceDate:(id)arg1;
 - (long long)compare:(id)arg1;

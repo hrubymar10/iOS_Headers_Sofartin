@@ -8,9 +8,9 @@
     bool _suspended;
 }
 
-@property(assign,readwrite) double gain;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } listenerPosition;
-@property(assign,readwrite) bool suspended;
+@property (nonatomic) double gain;
+@property (nonatomic) struct CGPoint { double x1; double x2; } listenerPosition;
+@property (nonatomic) bool suspended;
 
 + (id)context;
 + (id)currentContext;

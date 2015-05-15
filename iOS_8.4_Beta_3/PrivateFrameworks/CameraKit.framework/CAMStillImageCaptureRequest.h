@@ -13,14 +13,14 @@
     bool _wantsAudioForCapture;
 }
 
-@property(assign,readonly) long long captureDevice;
-@property(assign,readonly) <CAMStillImageCaptureRequestDelegate> * delegate;
-@property(assign,readonly) long long deviceOrientation;
-@property(assign,readonly) long long flashMode;
-@property(assign,readonly) int hdrMode;
-@property(getter=isTransient,assign,readonly) bool transient;
-@property(assign,readonly) bool usesStillImageStabilization;
-@property(assign,readonly) bool wantsAudioForCapture;
+@property (nonatomic, readonly) long long captureDevice;
+@property (nonatomic, readonly) <CAMStillImageCaptureRequestDelegate> *delegate;
+@property (nonatomic, readonly) long long deviceOrientation;
+@property (nonatomic, readonly) long long flashMode;
+@property (nonatomic, readonly) int hdrMode;
+@property (getter=isTransient, nonatomic, readonly) bool transient;
+@property (nonatomic, readonly) bool usesStillImageStabilization;
+@property (nonatomic, readonly) bool wantsAudioForCapture;
 
 - (void).cxx_destruct;
 - (long long)captureDevice;

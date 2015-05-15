@@ -10,12 +10,12 @@
     double _timestamp;
 }
 
-@property(assign,retain) NSStream * dataStream;
-@property(assign,readwrite) unsigned int messageID;
-@property(assign,readwrite) unsigned int options;
-@property(assign,retain) NSDictionary * parameters;
-@property(assign,readwrite) unsigned int sessionID;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic, retain) NSStream *dataStream;
+@property (nonatomic) unsigned int messageID;
+@property (nonatomic) unsigned int options;
+@property (nonatomic, retain) NSDictionary *parameters;
+@property (nonatomic) unsigned int sessionID;
+@property (nonatomic) double timestamp;
 
 + (bool)supportsSecureCoding;
 

@@ -4,7 +4,7 @@
 
 @interface SKUIReviewListPageComponent : SKUIPageComponent
 
-@property(assign,readonly) SKUIReviewListViewElement * viewElement;
+@property (nonatomic, readonly) SKUIReviewListViewElement *viewElement;
 
 - (long long)componentType;
 - (id)initWithViewElement:(id)arg1;

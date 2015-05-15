@@ -12,13 +12,13 @@
     NSString *_sandboxExtensionToken;
 }
 
-@property(assign,readwrite) long long EXIFOrientation;
-@property(assign,retain) NSURL * URL;
-@property(assign,retain) NSString * UTI;
-@property(assign,readwrite) bool canDownloadFromCloud;
-@property(assign,readwrite) long long deliveredFormat;
-@property(assign,readwrite) bool deliveredPlaceholder;
-@property(assign,retain) NSString * sandboxExtensionToken;
+@property long long EXIFOrientation;
+@property (retain) NSURL *URL;
+@property (retain) NSString *UTI;
+@property bool canDownloadFromCloud;
+@property long long deliveredFormat;
+@property bool deliveredPlaceholder;
+@property (retain) NSString *sandboxExtensionToken;
 
 - (long long)EXIFOrientation;
 - (id)URL;

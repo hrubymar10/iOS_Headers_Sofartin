@@ -8,10 +8,10 @@
     NSMutableArray *_variablesSortedByPriorityVectors;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)addExpression:(id)arg1 priority:(double)arg2 times:(double)arg3 processVariableNewToReceiver:(id)arg4 processVariableDroppedFromReceiver:(id)arg5;
 - (void)addVariable:(id)arg1 priority:(double)arg2 times:(double)arg3;

@@ -4,7 +4,7 @@
 
 @interface TSWPListStyle : TSSStyle <TSSPreset>
 
-@property(assign,readonly) NSString * presetKind;
+@property (nonatomic, readonly) NSString *presetKind;
 
 + (id)additionalBulletStrings;
 + (id)arrayValuedProperties;

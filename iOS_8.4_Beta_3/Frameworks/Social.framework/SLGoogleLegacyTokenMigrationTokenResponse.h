@@ -7,8 +7,8 @@
     NSString *_token;
 }
 
-@property(assign,readonly) NSString * errorMessage;
-@property(assign,readonly) NSString * token;
+@property (readonly) NSString *errorMessage;
+@property (readonly) NSString *token;
 
 - (void).cxx_destruct;
 - (id)errorMessage;

@@ -4,16 +4,16 @@
 
 @interface DOMEvent : DOMObject
 
-@property(assign,readonly) bool bubbles;
-@property(assign,readwrite) bool cancelBubble;
-@property(assign,readonly) bool cancelable;
-@property(assign,readonly) <DOMEventTarget> * currentTarget;
-@property(assign,readonly) unsigned short eventPhase;
-@property(assign,readwrite) bool returnValue;
-@property(assign,readonly) <DOMEventTarget> * srcElement;
-@property(assign,readonly) <DOMEventTarget> * target;
-@property(assign,readonly) unsigned long long timeStamp;
-@property(assign,copy) NSString * type;
+@property (readonly) bool bubbles;
+@property bool cancelBubble;
+@property (readonly) bool cancelable;
+@property (readonly) <DOMEventTarget> *currentTarget;
+@property (readonly) unsigned short eventPhase;
+@property bool returnValue;
+@property (readonly) <DOMEventTarget> *srcElement;
+@property (readonly) <DOMEventTarget> *target;
+@property (readonly) unsigned long long timeStamp;
+@property (readonly, copy) NSString *type;
 
 - (bool)bubbles;
 - (bool)cancelBubble;

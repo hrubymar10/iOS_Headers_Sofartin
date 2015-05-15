@@ -7,7 +7,7 @@
     MusicLibrarySearchResultsEntityProvider *_entityValueProvider;
 }
 
-@property(assign,readonly) MusicLibrarySearchResultsEntityProvider * entityProvider;
+@property (nonatomic, readonly) MusicLibrarySearchResultsEntityProvider *entityProvider;
 
 + (id)_defaultLibraryViewConfigurations;
 + (id)_mediaPickerConfigurationsIncludingPlaylists:(bool)arg1 allowingMultipleSelection:(bool)arg2;

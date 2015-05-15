@@ -6,7 +6,7 @@
     long long _authorizationStatus;
 }
 
-@property(assign,readonly) long long authorizationStatus;
+@property (nonatomic, readonly) long long authorizationStatus;
 
 + (unsigned int)_packetEventType;
 

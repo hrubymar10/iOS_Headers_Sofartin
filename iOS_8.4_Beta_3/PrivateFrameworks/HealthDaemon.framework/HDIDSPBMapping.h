@@ -7,8 +7,8 @@
     Class _responseClass;
 }
 
-@property(assign,retain) Class requestClass;
-@property(assign,retain) Class responseClass;
+@property (nonatomic, retain) Class requestClass;
+@property (nonatomic, retain) Class responseClass;
 
 - (void).cxx_destruct;
 - (Class)requestClass;

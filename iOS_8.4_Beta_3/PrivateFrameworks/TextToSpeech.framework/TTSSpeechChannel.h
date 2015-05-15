@@ -6,7 +6,7 @@
     TTSSpeechVoice *_voice;
 }
 
-@property(assign,retain) TTSSpeechVoice * voice;
+@property (nonatomic, retain) TTSSpeechVoice *voice;
 
 + (bool)supportsSecureCoding;
 

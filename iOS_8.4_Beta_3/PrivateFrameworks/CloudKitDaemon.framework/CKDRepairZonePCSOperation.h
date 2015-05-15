@@ -10,11 +10,11 @@
     id _zonePCSRepairProgressBlock;
 }
 
-@property(assign,retain) NSMutableArray * fetchedZones;
-@property(assign,retain) NSMutableArray * fixedZones;
-@property(assign,retain) NSMutableDictionary * pcsInfoByZoneID;
-@property(assign,retain) NSArray * zoneIDs;
-@property(assign,copy) id zonePCSRepairProgressBlock;
+@property (nonatomic, retain) NSMutableArray *fetchedZones;
+@property (nonatomic, retain) NSMutableArray *fixedZones;
+@property (nonatomic, retain) NSMutableDictionary *pcsInfoByZoneID;
+@property (nonatomic, retain) NSArray *zoneIDs;
+@property (nonatomic, copy) id zonePCSRepairProgressBlock;
 
 - (void).cxx_destruct;
 - (id)_checkPCSDataForZone:(id)arg1;

@@ -7,8 +7,8 @@
     id _zoneRepairedBlock;
 }
 
-@property(assign,retain) NSArray * zoneIDs;
-@property(assign,copy) id zoneRepairedBlock;
+@property (nonatomic, retain) NSArray *zoneIDs;
+@property (nonatomic, copy) id zoneRepairedBlock;
 
 - (void).cxx_destruct;
 - (void)_handleProgressCallback:(id)arg1;

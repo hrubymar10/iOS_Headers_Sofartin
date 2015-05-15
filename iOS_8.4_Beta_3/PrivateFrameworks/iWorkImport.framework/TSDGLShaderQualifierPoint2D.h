@@ -13,8 +13,8 @@
     } _proposedGLPoint2DValue;
 }
 
-@property(assign,readonly) struct { float x1; float x2; } GLPoint2DValue;
-@property(assign,readwrite) struct { float x1; float x2; } proposedGLPoint2DValue;
+@property (nonatomic, readonly) struct { float x1; float x2; } GLPoint2DValue;
+@property (nonatomic) struct { float x1; float x2; } proposedGLPoint2DValue;
 
 - (struct { float x1; float x2; })GLPoint2DValue;
 - (id)description;

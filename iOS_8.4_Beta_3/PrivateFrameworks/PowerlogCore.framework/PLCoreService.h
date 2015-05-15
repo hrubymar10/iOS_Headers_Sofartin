@@ -6,7 +6,7 @@
     NSMutableDictionary *_services;
 }
 
-@property(assign,retain) NSMutableDictionary * services;
+@property (retain) NSMutableDictionary *services;
 
 - (void).cxx_destruct;
 - (id)init;

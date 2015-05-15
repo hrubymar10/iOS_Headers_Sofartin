@@ -9,11 +9,11 @@
     bool _showingTakePhotoButton;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <HKEmergencyCardRowHeightChangeDelegate> * rowHeightChangeDelegate;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <HKEmergencyCardRowHeightChangeDelegate> *rowHeightChangeDelegate;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_cell;

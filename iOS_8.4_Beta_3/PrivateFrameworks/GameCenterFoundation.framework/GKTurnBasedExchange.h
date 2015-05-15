@@ -10,18 +10,18 @@
     GKTurnBasedParticipant *_sender;
 }
 
-@property(assign,retain) NSDate * completionDate;
-@property(assign,retain) NSData * data;
-@property(assign,retain) NSString * exchangeID;
-@property(assign,retain) GKTurnBasedExchangeInternal * internal;
-@property(assign,readwrite) GKTurnBasedMatch * match;
-@property(assign,readonly) NSString * message;
-@property(assign,retain) NSArray * recipients;
-@property(assign,retain) NSArray * replies;
-@property(assign,readonly) NSDate * sendDate;
-@property(assign,retain) GKTurnBasedParticipant * sender;
-@property(assign,readonly) BOOL status;
-@property(assign,retain) NSDate * timeoutDate;
+@property (nonatomic, retain) NSDate *completionDate;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic, retain) NSString *exchangeID;
+@property (retain) GKTurnBasedExchangeInternal *internal;
+@property (nonatomic) GKTurnBasedMatch *match;
+@property (nonatomic, readonly) NSString *message;
+@property (nonatomic, retain) NSArray *recipients;
+@property (nonatomic, retain) NSArray *replies;
+@property (nonatomic, readonly) NSDate *sendDate;
+@property (nonatomic, retain) GKTurnBasedParticipant *sender;
+@property (nonatomic, readonly) BOOL status;
+@property (nonatomic, retain) NSDate *timeoutDate;
 
 + (id)instanceMethodSignatureForSelector:(SEL)arg1;
 + (bool)instancesRespondToSelector:(SEL)arg1;

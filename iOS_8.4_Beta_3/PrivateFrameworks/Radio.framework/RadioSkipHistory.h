@@ -12,17 +12,17 @@
     long long _stationID;
 }
 
-@property(getter=isDatabaseBacked,assign,readonly) bool databaseBacked;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSManagedObject * managedObject;
-@property(assign,readonly) RadioModel * model;
-@property(assign,copy) NSString * skipIdentifier;
-@property(assign,copy) NSArray * skipTimestamps;
-@property(assign,copy) NSString * stationHash;
-@property(assign,readwrite) long long stationID;
-@property(assign,readonly) Class superclass;
+@property (getter=isDatabaseBacked, nonatomic, readonly) bool databaseBacked;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSManagedObject *managedObject;
+@property (nonatomic, readonly) RadioModel *model;
+@property (nonatomic, copy) NSString *skipIdentifier;
+@property (nonatomic, copy) NSArray *skipTimestamps;
+@property (nonatomic, copy) NSString *stationHash;
+@property (nonatomic) long long stationID;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_radioModelWasDeletedNotification:(id)arg1;

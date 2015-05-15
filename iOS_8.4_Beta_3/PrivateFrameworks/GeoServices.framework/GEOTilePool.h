@@ -53,10 +53,10 @@
     } _pool;
 }
 
-@property(assign,readonly) unsigned long long currentCost;
-@property(assign,readonly) unsigned long long currentCount;
-@property(assign,readwrite) unsigned long long maxCapacity;
-@property(assign,readwrite) unsigned long long maxCost;
+@property (nonatomic, readonly) unsigned long long currentCost;
+@property (nonatomic, readonly) unsigned long long currentCount;
+@property unsigned long long maxCapacity;
+@property unsigned long long maxCost;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -9,7 +9,7 @@
     UIViewController *_viewController;
 }
 
-@property(assign,readwrite) UIViewController * viewController;
+@property (nonatomic) UIViewController *viewController;
 
 + (id)defaultBackgroundColor;
 + (float)preferredHeight;

@@ -6,8 +6,8 @@
     NSData *_hashData;
 }
 
-@property(assign,readonly) bool hasHashData;
-@property(assign,retain) NSData * hashData;
+@property (nonatomic, readonly) bool hasHashData;
+@property (nonatomic, retain) NSData *hashData;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

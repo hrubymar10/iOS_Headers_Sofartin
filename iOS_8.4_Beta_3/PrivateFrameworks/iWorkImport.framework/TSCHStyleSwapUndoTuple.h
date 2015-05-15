@@ -12,17 +12,17 @@
     int mSwapType;
 }
 
-@property(assign,readonly) TSSStyle * afterValue;
-@property(assign,readonly) TSSStyle * beforeValue;
-@property(assign,readonly) TSSPropertyMap * forwardDelta;
-@property(assign,readonly) unsigned long long index;
-@property(assign,readonly) TSSPropertySet * mutatedProperties;
-@property(assign,readonly) NSUUID * refLineUUID;
-@property(assign,readonly) TSSPropertyMap * reverseDelta;
-@property(assign,readonly) TSCHStyleSemanticTag * semanticTag;
-@property(assign,readonly) TSCHStyleOwnerReference * styleOwnerReference;
-@property(assign,retain) TSPObject<TSCHStyleSwapSupporting> * styleSwapSupporting;
-@property(assign,readonly) int swapType;
+@property (readonly) TSSStyle *afterValue;
+@property (readonly) TSSStyle *beforeValue;
+@property (readonly) TSSPropertyMap *forwardDelta;
+@property (readonly) unsigned long long index;
+@property (readonly) TSSPropertySet *mutatedProperties;
+@property (readonly) NSUUID *refLineUUID;
+@property (readonly) TSSPropertyMap *reverseDelta;
+@property (readonly) TSCHStyleSemanticTag *semanticTag;
+@property (readonly) TSCHStyleOwnerReference *styleOwnerReference;
+@property (nonatomic, readonly, retain) TSPObject<TSCHStyleSwapSupporting> *styleSwapSupporting;
+@property (readonly) int swapType;
 
 - (id)afterValue;
 - (id)beforeValue;

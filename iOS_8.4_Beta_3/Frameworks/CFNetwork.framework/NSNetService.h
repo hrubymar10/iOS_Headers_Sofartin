@@ -8,14 +8,14 @@
     id _reserved;
 }
 
-@property(assign,copy) NSArray * addresses;
-@property(assign,readwrite) <NSNetServiceDelegate> * delegate;
-@property(assign,copy) NSString * domain;
-@property(assign,copy) NSString * hostName;
-@property(assign,readwrite) bool includesPeerToPeer;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) long long port;
-@property(assign,copy) NSString * type;
+@property (readonly, copy) NSArray *addresses;
+@property <NSNetServiceDelegate> *delegate;
+@property (readonly, copy) NSString *domain;
+@property (readonly, copy) NSString *hostName;
+@property bool includesPeerToPeer;
+@property (readonly, copy) NSString *name;
+@property (readonly) long long port;
+@property (readonly, copy) NSString *type;
 
 + (id)dataFromTXTRecordDictionary:(id)arg1;
 + (id)dictionaryFromTXTRecordData:(id)arg1;

@@ -10,15 +10,15 @@
     long long _selectedIndexRow;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <FlickrComposeOptionViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) FlickrPhotoSetManager * manager;
-@property(assign,readonly) long long photoSetID;
-@property(assign,readonly) NSString * photoSetTitle;
-@property(assign,readwrite) long long selectedIndexRow;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <FlickrComposeOptionViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) FlickrPhotoSetManager *manager;
+@property (nonatomic, readonly) long long photoSetID;
+@property (nonatomic, readonly) NSString *photoSetTitle;
+@property (nonatomic) long long selectedIndexRow;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)delegate;

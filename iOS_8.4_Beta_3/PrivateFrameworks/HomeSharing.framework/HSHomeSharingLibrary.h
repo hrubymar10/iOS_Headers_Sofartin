@@ -17,21 +17,21 @@
     unsigned int _version;
 }
 
-@property(assign,readwrite) bool _hasPendingUpdateRequest;
-@property(getter=isAvailable,assign,readonly) bool available;
-@property(assign,readonly) unsigned int basePlaylistContainerID;
-@property(assign,retain) NSURL * baseURL;
-@property(assign,retain) HSConnection * connection;
-@property(assign,readonly) long long connectionState;
-@property(assign,readonly) long long connectionType;
-@property(assign,retain) <NSObject> * context;
-@property(assign,readonly) unsigned int databaseID;
-@property(assign,readonly) NSString * deviceGUID;
-@property(assign,copy) NSString * homeSharingGroupID;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) bool requiresPassword;
-@property(assign,copy) NSString * uniqueIdentifier;
-@property(assign,readonly) unsigned int version;
+@property (nonatomic) bool _hasPendingUpdateRequest;
+@property (getter=isAvailable, nonatomic, readonly) bool available;
+@property (nonatomic, readonly) unsigned int basePlaylistContainerID;
+@property (nonatomic, readonly, retain) NSURL *baseURL;
+@property (nonatomic, retain) HSConnection *connection;
+@property (nonatomic, readonly) long long connectionState;
+@property (nonatomic, readonly) long long connectionType;
+@property (nonatomic, retain) <NSObject> *context;
+@property (nonatomic, readonly) unsigned int databaseID;
+@property (nonatomic, readonly) NSString *deviceGUID;
+@property (nonatomic, readonly, copy) NSString *homeSharingGroupID;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly) bool requiresPassword;
+@property (nonatomic, readonly, copy) NSString *uniqueIdentifier;
+@property (nonatomic, readonly) unsigned int version;
 
 - (void).cxx_destruct;
 - (bool)_hasPendingUpdateRequest;

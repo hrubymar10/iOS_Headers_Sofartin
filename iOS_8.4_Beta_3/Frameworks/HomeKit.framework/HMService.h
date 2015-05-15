@@ -13,14 +13,14 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,readonly) HMAccessory * accessory;
-@property(assign,copy) NSString * associatedServiceType;
-@property(assign,copy) NSArray * characteristics;
-@property(assign,readonly) NSNumber * instanceID;
-@property(assign,retain) HMMessageDispatcher * msgDispatcher;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * serviceType;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, readonly) HMAccessory *accessory;
+@property (nonatomic, readonly, copy) NSString *associatedServiceType;
+@property (nonatomic, copy) NSArray *characteristics;
+@property (nonatomic, readonly) NSNumber *instanceID;
+@property (nonatomic, retain) HMMessageDispatcher *msgDispatcher;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly, copy) NSString *serviceType;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 + (id)serviceTypeAsString:(id)arg1;
 + (bool)supportsSecureCoding;

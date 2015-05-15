@@ -8,10 +8,10 @@
     id _value;
 }
 
-@property(assign,readwrite) short formatter;
-@property(assign,readonly) NSNumberFormatter * numberFormatter;
-@property(assign,retain) NSString * unit;
-@property(assign,retain) id value;
+@property short formatter;
+@property (readonly) NSNumberFormatter *numberFormatter;
+@property (nonatomic, retain) NSString *unit;
+@property (nonatomic, retain) id value;
 
 + (id)formattedStringForDate:(id)arg1;
 + (bool)isFormater:(short)arg1 validForObject:(id)arg2;

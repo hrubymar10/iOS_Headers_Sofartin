@@ -9,8 +9,8 @@
     int _type;
 }
 
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) int type;
+@property (nonatomic) bool hasType;
+@property (nonatomic) int type;
 
 - (id)_prettyDictionaryRepresentation;
 - (void)copyTo:(id)arg1;

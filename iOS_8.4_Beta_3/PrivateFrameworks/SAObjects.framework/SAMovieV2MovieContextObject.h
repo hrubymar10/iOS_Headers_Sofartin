@@ -4,7 +4,7 @@
 
 @interface SAMovieV2MovieContextObject : SADomainObject
 
-@property(assign,copy) NSString * movieName;
+@property (nonatomic, copy) NSString *movieName;
 
 + (id)movieContextObject;
 + (id)movieContextObjectWithDictionary:(id)arg1 context:(id)arg2;

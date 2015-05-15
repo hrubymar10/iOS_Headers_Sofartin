@@ -7,7 +7,7 @@
     bool mIgnoreInvalidation;
 }
 
-@property(assign,readwrite) bool ignoreInvalidation;
+@property (nonatomic) bool ignoreInvalidation;
 
 + (id)cacheWithCacheItem:(id)arg1;
 

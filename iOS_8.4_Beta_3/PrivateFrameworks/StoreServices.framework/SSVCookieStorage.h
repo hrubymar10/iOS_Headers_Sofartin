@@ -8,7 +8,7 @@
     NSURL *_storageLocation;
 }
 
-@property(assign,readonly) NSURL * storageLocation;
+@property (readonly) NSURL *storageLocation;
 
 + (bool)_setupCookieDatabase:(id)arg1;
 + (id)sharedInstance;

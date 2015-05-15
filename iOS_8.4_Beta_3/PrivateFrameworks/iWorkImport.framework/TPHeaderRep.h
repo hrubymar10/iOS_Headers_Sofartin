@@ -6,8 +6,8 @@
     bool _hideKnobs;
 }
 
-@property(assign,readwrite) bool hideKnobs;
-@property(assign,readonly) TPPaginatedPageInfo * pageInfo;
+@property (nonatomic) bool hideKnobs;
+@property (nonatomic, readonly) TPPaginatedPageInfo *pageInfo;
 
 - (bool)hideKnobs;
 - (bool)p_isInDocumentSetup;

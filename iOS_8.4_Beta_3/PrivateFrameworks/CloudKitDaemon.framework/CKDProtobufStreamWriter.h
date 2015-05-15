@@ -36,18 +36,18 @@
     } _zlibStream;
 }
 
-@property(assign,retain) NSFileHandle * binaryLogFileHandle;
-@property(assign,readwrite) unsigned long long bufferSize;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool hasInitedCompression;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool haveFinishedCompression;
-@property(assign,readwrite) bool haveFinishedStreaming;
-@property(assign,retain) NSFileHandle * humanLogFileHandle;
-@property(assign,readwrite) bool shouldCompress;
-@property(assign,readwrite) <CKDProtobufMessageSigningDelegate> * signingDelegate;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSFileHandle *binaryLogFileHandle;
+@property (nonatomic) unsigned long long bufferSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool hasInitedCompression;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool haveFinishedCompression;
+@property bool haveFinishedStreaming;
+@property (nonatomic, retain) NSFileHandle *humanLogFileHandle;
+@property (nonatomic) bool shouldCompress;
+@property (nonatomic) <CKDProtobufMessageSigningDelegate> *signingDelegate;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_compressBodyData:(id)arg1 shouldFlush:(bool)arg2;

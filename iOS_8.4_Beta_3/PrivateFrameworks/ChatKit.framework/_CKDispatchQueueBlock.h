@@ -9,10 +9,10 @@
     long long _priority;
 }
 
-@property(assign,copy) id block;
-@property(assign,readwrite) unsigned long long fifo;
-@property(assign,copy) NSString * key;
-@property(assign,readwrite) long long priority;
+@property (nonatomic, copy) id block;
+@property (nonatomic) unsigned long long fifo;
+@property (nonatomic, copy) NSString *key;
+@property (nonatomic) long long priority;
 
 - (id)block;
 - (void)cancel;

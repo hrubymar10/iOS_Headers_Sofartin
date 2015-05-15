@@ -9,9 +9,9 @@
     UIView *_separator;
 }
 
-@property(assign,copy) NSString * label;
-@property(assign,readonly) MFHeaderLabelView * labelView;
-@property(assign,copy) NSString * navTitle;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, readonly) MFHeaderLabelView *labelView;
+@property (nonatomic, copy) NSString *navTitle;
 
 + (double)_labelTopPaddingSpecification;
 + (id)defaultFont;

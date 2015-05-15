@@ -6,7 +6,7 @@
     SBFWallpaperView *_wallpaperView;
 }
 
-@property(assign,readwrite) SBFWallpaperView * wallpaperView;
+@property SBFWallpaperView *wallpaperView;
 
 - (void)backdropLayerStatisticsDidChange:(id)arg1;
 - (void)setWallpaperView:(id)arg1;

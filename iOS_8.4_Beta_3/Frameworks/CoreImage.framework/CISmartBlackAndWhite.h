@@ -12,13 +12,13 @@
     NSNumber *inputTone;
 }
 
-@property(assign,copy) NSNumber * inputGrain;
-@property(assign,copy) NSNumber * inputHue;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,copy) NSNumber * inputNeutralGamma;
-@property(assign,copy) NSNumber * inputScaleFactor;
-@property(assign,copy) NSNumber * inputStrength;
-@property(assign,copy) NSNumber * inputTone;
+@property (nonatomic, copy) NSNumber *inputGrain;
+@property (nonatomic, copy) NSNumber *inputHue;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, copy) NSNumber *inputNeutralGamma;
+@property (nonatomic, copy) NSNumber *inputScaleFactor;
+@property (nonatomic, copy) NSNumber *inputStrength;
+@property (nonatomic, copy) NSNumber *inputTone;
 
 + (id)customAttributes;
 

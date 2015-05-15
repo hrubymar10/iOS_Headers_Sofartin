@@ -4,14 +4,14 @@
 
 @interface SAFmfGeoFenceSetCompleted : SADomainCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) SAFmfGeoFence * geoFence;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * refId;
-@property(assign,copy) NSURL * searchContext;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) SAFmfGeoFence *geoFence;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic, copy) NSURL *searchContext;
+@property (readonly) Class superclass;
 
 + (id)geoFenceSetCompleted;
 + (id)geoFenceSetCompletedWithDictionary:(id)arg1 context:(id)arg2;

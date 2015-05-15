@@ -7,10 +7,10 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,copy) NSString * formattedOutgoingRelayCallerID;
-@property(assign,copy) NSString * outgoingRelayCallerID;
-@property(assign,readwrite) int outgoingRelayCallerIDChangedToken;
-@property(assign,retain) NSXPCConnection * xpcConnection;
+@property (nonatomic, readonly, copy) NSString *formattedOutgoingRelayCallerID;
+@property (nonatomic, readonly, copy) NSString *outgoingRelayCallerID;
+@property (nonatomic) int outgoingRelayCallerIDChangedToken;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
 
 - (void)_setUpXPCConnection;
 - (void)_tearDownXPCConnection;

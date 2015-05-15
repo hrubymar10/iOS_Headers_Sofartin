@@ -6,14 +6,14 @@
     _NMRMediaRemoteSetStateMessageProfobuf *_protobuf;
 }
 
-@property(assign,readonly) NSData * applicationInfoData;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSData * nowPlayingInfoData;
-@property(assign,readonly) NSDate * serializationDate;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSData * supportedCommandsData;
+@property (nonatomic, readonly) NSData *applicationInfoData;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSData *nowPlayingInfoData;
+@property (nonatomic, readonly) NSDate *serializationDate;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSData *supportedCommandsData;
 
 + (id)messageWithNowPlayingInfo:(id)arg1 applicationInfo:(id)arg2 supportedCommands:(id)arg3;
 

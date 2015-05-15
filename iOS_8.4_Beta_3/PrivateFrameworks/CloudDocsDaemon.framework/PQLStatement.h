@@ -15,7 +15,7 @@
     struct sqlite3_stmt { } *_stmt;
 }
 
-@property(assign,readonly) bool isTraced;
+@property (nonatomic, readonly) bool isTraced;
 
 - (void).cxx_destruct;
 - (bool)_prepare:(const char *)arg1 withDB:(id)arg2;

@@ -4,10 +4,10 @@
 
 @interface SPTitleSection : SPSection <PRSTitleSection>
 
-@property(assign,retain) NSURL * attribution_url;
-@property(assign,retain) NSString * subtitle;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSString * type;
-@property(assign,retain) NSURL * url;
+@property (nonatomic, retain) NSURL *attribution_url;
+@property (nonatomic, retain) NSString *subtitle;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *type;
+@property (nonatomic, retain) NSURL *url;
 
 @end

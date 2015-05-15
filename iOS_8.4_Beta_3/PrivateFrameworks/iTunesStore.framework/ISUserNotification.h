@@ -10,11 +10,11 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,readwrite) long long allowedRetryCount;
-@property(assign,readwrite) long long currentRetryCount;
-@property(assign,readonly) NSDictionary * dictionary;
-@property(assign,readonly) unsigned long long optionFlags;
-@property(assign,retain) NSDictionary * userInfo;
+@property long long allowedRetryCount;
+@property long long currentRetryCount;
+@property (readonly) NSDictionary *dictionary;
+@property (readonly) unsigned long long optionFlags;
+@property (retain) NSDictionary *userInfo;
 
 - (long long)allowedRetryCount;
 - (struct __CFUserNotification { }*)copyUserNotification;

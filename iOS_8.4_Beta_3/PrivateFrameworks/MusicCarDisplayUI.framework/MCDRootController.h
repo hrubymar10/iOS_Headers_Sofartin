@@ -9,10 +9,10 @@
     <MCDCarDisplayServiceProvider> *_serviceProvider;
 }
 
-@property(assign,readonly) UIWindow * carDisplayWindow;
-@property(assign,retain) MPAVController * player;
-@property(assign,readwrite) RadioRecentStationsController * recentStationsController;
-@property(assign,readwrite) <MCDCarDisplayServiceProvider> * serviceProvider;
+@property (nonatomic, readonly) UIWindow *carDisplayWindow;
+@property (nonatomic, retain) MPAVController *player;
+@property (nonatomic) RadioRecentStationsController *recentStationsController;
+@property (nonatomic) <MCDCarDisplayServiceProvider> *serviceProvider;
 
 - (void).cxx_destruct;
 - (id)carDisplayWindow;

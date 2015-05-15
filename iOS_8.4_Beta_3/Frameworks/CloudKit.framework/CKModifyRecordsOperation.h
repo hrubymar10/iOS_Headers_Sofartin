@@ -21,22 +21,22 @@
     bool _shouldOnlySaveAssetContent;
 }
 
-@property(assign,retain) NSMutableDictionary * assetsByRecordIDAndRecordKey;
-@property(assign,readwrite) bool atomic;
-@property(assign,copy) NSData * clientChangeTokenData;
-@property(assign,retain) NSDictionary * conflictLosersToResolveByRecordID;
-@property(assign,retain) NSMutableArray * deletedRecordIDs;
-@property(assign,copy) id modifyRecordsCompletionBlock;
-@property(assign,copy) id perRecordCompletionBlock;
-@property(assign,copy) id perRecordProgressBlock;
-@property(assign,retain) NSMutableDictionary * recordErrors;
-@property(assign,copy) NSArray * recordIDsToDelete;
-@property(assign,copy) NSDictionary * recordIDsToDeleteToEtags;
-@property(assign,retain) NSMutableDictionary * recordsByRecordIDs;
-@property(assign,copy) NSArray * recordsToSave;
-@property(assign,readwrite) long long savePolicy;
-@property(assign,retain) NSMutableArray * savedRecords;
-@property(assign,readwrite) bool shouldOnlySaveAssetContent;
+@property (nonatomic, retain) NSMutableDictionary *assetsByRecordIDAndRecordKey;
+@property (nonatomic) bool atomic;
+@property (nonatomic, copy) NSData *clientChangeTokenData;
+@property (nonatomic, retain) NSDictionary *conflictLosersToResolveByRecordID;
+@property (nonatomic, retain) NSMutableArray *deletedRecordIDs;
+@property (nonatomic, copy) id modifyRecordsCompletionBlock;
+@property (nonatomic, copy) id perRecordCompletionBlock;
+@property (nonatomic, copy) id perRecordProgressBlock;
+@property (nonatomic, retain) NSMutableDictionary *recordErrors;
+@property (nonatomic, copy) NSArray *recordIDsToDelete;
+@property (nonatomic, copy) NSDictionary *recordIDsToDeleteToEtags;
+@property (nonatomic, retain) NSMutableDictionary *recordsByRecordIDs;
+@property (nonatomic, copy) NSArray *recordsToSave;
+@property (nonatomic) long long savePolicy;
+@property (nonatomic, retain) NSMutableArray *savedRecords;
+@property (nonatomic) bool shouldOnlySaveAssetContent;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

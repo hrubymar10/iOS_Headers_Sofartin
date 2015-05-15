@@ -14,8 +14,8 @@
     NSLayoutConstraint *_topConstraint;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } contentSize;
-@property(assign,readonly) struct CGSize { double x1; double x2; } maximumContentSize;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } contentSize;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } maximumContentSize;
 
 - (void)_notifyObserversAboutDidAdjustToSize:(struct CGSize { double x1; double x2; })arg1;
 - (void)_notifyObserversAboutWillAdjustToSize:(struct CGSize { double x1; double x2; })arg1;

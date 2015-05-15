@@ -11,10 +11,10 @@
     UIView *_separatorView;
 }
 
-@property(assign,readwrite) double backdropAlpha;
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,readonly) UIControl * sectionControl;
-@property(assign,readwrite) long long selectedSectionIndex;
+@property (nonatomic) double backdropAlpha;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic, readonly) UIControl *sectionControl;
+@property (nonatomic) long long selectedSectionIndex;
 
 - (void).cxx_destruct;
 - (void)_reloadBackdropView;

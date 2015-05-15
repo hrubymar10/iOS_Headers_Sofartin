@@ -11,12 +11,12 @@
     CKRecord *_record;
 }
 
-@property(assign,retain) NSMutableArray * assetsToDownload;
-@property(assign,retain) NSError * error;
-@property(assign,retain) NSObject<OS_dispatch_group> * group;
-@property(assign,retain) NSMutableArray * packageIndexSets;
-@property(assign,retain) CKDProgressTracker * progressTracker;
-@property(assign,retain) CKRecord * record;
+@property (nonatomic, retain) NSMutableArray *assetsToDownload;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *group;
+@property (nonatomic, retain) NSMutableArray *packageIndexSets;
+@property (nonatomic, retain) CKDProgressTracker *progressTracker;
+@property (nonatomic, retain) CKRecord *record;
 
 - (void).cxx_destruct;
 - (id)assetsToDownload;

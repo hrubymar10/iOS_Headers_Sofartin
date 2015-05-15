@@ -10,12 +10,12 @@
     MPShuffleController *_shuffleController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MPMediaPlaylist * mixPlaylist;
-@property(assign,retain) MPMediaItem * requiredInitialMediaItem;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MPMediaPlaylist *mixPlaylist;
+@property (nonatomic, retain) MPMediaItem *requiredInitialMediaItem;
+@property (readonly) Class superclass;
 
 + (Class)queueFeederClass;
 

@@ -6,7 +6,7 @@
     NSString *_maskedUID;
 }
 
-@property(assign,retain) NSString * maskedUID;
+@property (nonatomic, retain) NSString *maskedUID;
 
 + (id)_freeBusyDocumentWithOrganizer:(id)arg1 attendees:(id)arg2 start:(id)arg3 end:(id)arg4 maskedUID:(id)arg5 extendedFreeBusy:(bool)arg6 prodID:(id)arg7;
 + (id)_icsDate:(id)arg1 calendar:(id)arg2;

@@ -7,8 +7,8 @@
     NSIndexSet *_mailboxIDs;
 }
 
-@property(assign,retain) MFMessageCriterion * criterion;
-@property(assign,copy) NSIndexSet * mailboxIDs;
+@property (nonatomic, retain) MFMessageCriterion *criterion;
+@property (nonatomic, copy) NSIndexSet *mailboxIDs;
 
 - (id)criterion;
 - (void)dealloc;

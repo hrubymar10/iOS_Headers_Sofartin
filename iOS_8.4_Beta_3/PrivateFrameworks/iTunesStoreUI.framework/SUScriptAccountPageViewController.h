@@ -4,10 +4,10 @@
 
 @interface SUScriptAccountPageViewController : SUScriptStorePageViewController
 
-@property(assign,retain) NSString * style;
-@property(assign,readonly) NSString * styleNameDefault;
-@property(assign,readonly) NSString * styleNameSignUp;
-@property(assign,readonly) NSString * styleNameViewAccount;
+@property (retain) NSString *style;
+@property (readonly) NSString *styleNameDefault;
+@property (readonly) NSString *styleNameSignUp;
+@property (readonly) NSString *styleNameViewAccount;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

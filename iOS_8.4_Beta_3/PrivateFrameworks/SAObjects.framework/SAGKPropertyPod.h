@@ -4,7 +4,7 @@
 
 @interface SAGKPropertyPod : SAGKPodView
 
-@property(assign,copy) NSArray * propertyList;
+@property (nonatomic, copy) NSArray *propertyList;
 
 + (id)propertyPod;
 + (id)propertyPodWithDictionary:(id)arg1 context:(id)arg2;

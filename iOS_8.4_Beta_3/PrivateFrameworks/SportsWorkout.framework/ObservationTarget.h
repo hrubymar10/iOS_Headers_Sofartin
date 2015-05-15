@@ -7,8 +7,8 @@
     SEL _selector;
 }
 
-@property(assign,readwrite) bool isActive;
-@property(assign,readwrite) SEL selector;
+@property (nonatomic) bool isActive;
+@property (nonatomic) SEL selector;
 
 - (id)description;
 - (bool)isActive;

@@ -40,21 +40,21 @@
     } _visibleRect;
 }
 
-@property(assign,readwrite) bool _needsRender;
-@property(assign,readwrite) bool _needsUpdate;
-@property(assign,retain) PKPhysicsWorld * _pkPhysicsWorld;
-@property(assign,readwrite) bool _usesExplicitRender;
-@property(assign,readwrite) bool _usesExplicitUpdate;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } anchorPoint;
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,readwrite) <SKSceneDelegate> * delegate;
-@property(assign,readonly) SKPhysicsWorld * physicsWorld;
-@property(assign,readwrite) long long scaleMode;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) SKView * view;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } visibleRect;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } visibleRectCenter;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } visibleRectSize;
+@property bool _needsRender;
+@property bool _needsUpdate;
+@property (nonatomic, retain) PKPhysicsWorld *_pkPhysicsWorld;
+@property bool _usesExplicitRender;
+@property bool _usesExplicitUpdate;
+@property (nonatomic) struct CGPoint { double x1; double x2; } anchorPoint;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic) <SKSceneDelegate> *delegate;
+@property (nonatomic, readonly) SKPhysicsWorld *physicsWorld;
+@property (nonatomic) long long scaleMode;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) SKView *view;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } visibleRect;
+@property (nonatomic) struct CGPoint { double x1; double x2; } visibleRectCenter;
+@property (nonatomic) struct CGSize { double x1; double x2; } visibleRectSize;
 
 + (id)sceneWithContentsOfFile:(id)arg1;
 + (id)sceneWithContentsOfFile:(id)arg1 size:(struct CGSize { double x1; double x2; })arg2;

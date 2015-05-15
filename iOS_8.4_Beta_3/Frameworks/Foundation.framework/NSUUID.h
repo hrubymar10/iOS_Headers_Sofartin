@@ -2,21 +2,21 @@
    Image: /System/Library/Frameworks/Foundation.framework/Foundation
  */
 
-@interface NSUUID : NSObject <NSCopying, NSSecureCoding, PASerializable, PQLValuable, PQLValuable>
+@interface NSUUID : NSObject <NSCopying, NSSecureCoding, PASerializable, PQLValuable>
 
-@property(assign,copy) NSString * UUIDString;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *UUIDString;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
 
 + (id)UUID;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;

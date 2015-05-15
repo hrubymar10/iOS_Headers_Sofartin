@@ -13,13 +13,13 @@
     NSDictionary *_unparsedResponseDictionary;
 }
 
-@property(getter=isAsynchronousBackgroundRequest,assign,readwrite) bool asynchronousBackgroundRequest;
-@property(getter=isCachedResponse,assign,readonly) bool cachedResponse;
-@property(assign,readonly) long long errorCode;
-@property(assign,copy) RadioRequestContext * requestContext;
-@property(assign,readonly) double retryInterval;
-@property(assign,readonly) long long status;
-@property(assign,copy) NSDictionary * unparsedResponseDictionary;
+@property (getter=isAsynchronousBackgroundRequest, nonatomic) bool asynchronousBackgroundRequest;
+@property (getter=isCachedResponse, readonly) bool cachedResponse;
+@property (readonly) long long errorCode;
+@property (copy) RadioRequestContext *requestContext;
+@property (readonly) double retryInterval;
+@property (readonly) long long status;
+@property (readonly, copy) NSDictionary *unparsedResponseDictionary;
 
 + (id)defaultURLCache;
 + (void)loadServiceConfigurationWithCompletionHandler:(id)arg1;

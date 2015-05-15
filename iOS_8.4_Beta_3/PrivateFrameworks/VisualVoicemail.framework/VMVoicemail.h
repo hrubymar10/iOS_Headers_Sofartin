@@ -13,10 +13,10 @@
     struct __CFPhoneNumber { } *_senderPhoneNumber;
 }
 
-@property(assign,retain) id cachedAddressBookRef;
-@property(assign,retain) NSString * cachedDisplayName;
-@property(assign,readonly) struct __CFPhoneNumber { }* callbackPhoneNumber;
-@property(assign,readonly) struct __CFPhoneNumber { }* senderPhoneNumber;
+@property (nonatomic, retain) id cachedAddressBookRef;
+@property (nonatomic, retain) NSString *cachedDisplayName;
+@property (readonly) struct __CFPhoneNumber { }*callbackPhoneNumber;
+@property (readonly) struct __CFPhoneNumber { }*senderPhoneNumber;
 
 + (void)_doVoicemailMapHousekeepingNoLock;
 + (id)_findPreviouslyCreatedVoicemailWithAccountNoLock:(id)arg1 identifier:(long long)arg2;

@@ -6,7 +6,7 @@
     NSString *_peerID;
 }
 
-@property(assign,retain) NSString * peerID;
+@property (nonatomic, retain) NSString *peerID;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

@@ -19,24 +19,24 @@
     TIKeyboardIntermediateText *_uncommittedText;
 }
 
-@property(assign,retain) TIKeyboardCandidate * acceptedCandidate;
-@property(assign,readwrite) unsigned long long batchCandidateLocation;
-@property(assign,retain) NSArray * candidates;
-@property(assign,copy) TIKeyboardCandidate * defaultCandidate;
-@property(assign,readwrite) bool excludedExtensionCandidates;
-@property(assign,readonly) TIKeyboardCandidate * firstCandidate;
-@property(assign,readwrite) unsigned long long generatedCandidateCount;
-@property(assign,readonly) bool hasCandidates;
-@property(assign,readonly) bool hasMetadata;
-@property(assign,retain) NSDictionary * indexTitles;
-@property(assign,readwrite) unsigned long long initialSelectedIndex;
-@property(assign,retain) NSArray * initiallyHiddenCandidates;
-@property(assign,readonly) bool isDummySet;
-@property(assign,readwrite) unsigned long long selectedHiddenCandidateIndex;
-@property(assign,retain) NSDictionary * showExtensionCandidates;
-@property(assign,retain) NSDictionary * sortMethodGroups;
-@property(assign,retain) NSArray * sortMethods;
-@property(assign,retain) TIKeyboardIntermediateText * uncommittedText;
+@property (nonatomic, retain) TIKeyboardCandidate *acceptedCandidate;
+@property (nonatomic) unsigned long long batchCandidateLocation;
+@property (nonatomic, retain) NSArray *candidates;
+@property (nonatomic, copy) TIKeyboardCandidate *defaultCandidate;
+@property (nonatomic) bool excludedExtensionCandidates;
+@property (nonatomic, readonly) TIKeyboardCandidate *firstCandidate;
+@property (nonatomic) unsigned long long generatedCandidateCount;
+@property (nonatomic, readonly) bool hasCandidates;
+@property (nonatomic, readonly) bool hasMetadata;
+@property (nonatomic, retain) NSDictionary *indexTitles;
+@property (nonatomic) unsigned long long initialSelectedIndex;
+@property (nonatomic, retain) NSArray *initiallyHiddenCandidates;
+@property (nonatomic, readonly) bool isDummySet;
+@property (nonatomic) unsigned long long selectedHiddenCandidateIndex;
+@property (nonatomic, retain) NSDictionary *showExtensionCandidates;
+@property (nonatomic, retain) NSDictionary *sortMethodGroups;
+@property (nonatomic, retain) NSArray *sortMethods;
+@property (nonatomic, retain) TIKeyboardIntermediateText *uncommittedText;
 
 + (id)dummySet;
 + (id)setWithCandidates:(id)arg1;

@@ -7,7 +7,7 @@
     bool _visible;
 }
 
-@property(getter=isVisible,assign,readwrite) bool visible;
+@property (getter=isVisible, nonatomic) bool visible;
 
 + (struct CGSize { double x1; double x2; })defaultSizeForTitle:(id)arg1;
 

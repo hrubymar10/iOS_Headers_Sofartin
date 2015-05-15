@@ -17,18 +17,18 @@
     NSDate *_yesterday;
 }
 
-@property(assign,readwrite) bool boldForAllLocales;
-@property(assign,retain) NSDate * date;
-@property(getter=_dateString,assign,readonly) NSString * dateString;
-@property(assign,readwrite) bool forceTimeOnly;
-@property(assign,readwrite) double paddingFromTimeToDesignator;
-@property(assign,readwrite) bool shouldRecomputeText;
-@property(assign,readonly) NSString * timeDesignator;
-@property(assign,readonly) bool timeDesignatorAppearsBeforeTime;
-@property(assign,readonly) UIFont * timeDesignatorFont;
-@property(assign,readonly) struct CGSize { double x1; double x2; } timeDesignatorSize;
-@property(assign,readwrite) double timeInterval;
-@property(assign,readonly) bool use24HourTime;
+@property (nonatomic) bool boldForAllLocales;
+@property (nonatomic, retain) NSDate *date;
+@property (getter=_dateString, nonatomic, readonly) NSString *dateString;
+@property (nonatomic) bool forceTimeOnly;
+@property (nonatomic) double paddingFromTimeToDesignator;
+@property (nonatomic) bool shouldRecomputeText;
+@property (nonatomic, readonly) NSString *timeDesignator;
+@property (nonatomic, readonly) bool timeDesignatorAppearsBeforeTime;
+@property (nonatomic, readonly) UIFont *timeDesignatorFont;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } timeDesignatorSize;
+@property (nonatomic) double timeInterval;
+@property (nonatomic, readonly) bool use24HourTime;
 
 + (id)_dateFormatter;
 + (id)_relativeDateFormatter;

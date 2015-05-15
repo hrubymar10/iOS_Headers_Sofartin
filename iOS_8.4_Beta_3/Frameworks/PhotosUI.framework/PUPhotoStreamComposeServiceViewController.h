@@ -21,15 +21,15 @@
     bool _shouldShowPost;
 }
 
-@property(assign,readwrite) bool addToExistingWorkflow;
-@property(assign,retain) NSString * albumTitle;
-@property(assign,copy) id completion;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUPhotoStreamComposeServiceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool shouldAllowAlbumPicking;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool addToExistingWorkflow;
+@property (nonatomic, retain) NSString *albumTitle;
+@property (nonatomic, copy) id completion;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUPhotoStreamComposeServiceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool shouldAllowAlbumPicking;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_pushTitleController;

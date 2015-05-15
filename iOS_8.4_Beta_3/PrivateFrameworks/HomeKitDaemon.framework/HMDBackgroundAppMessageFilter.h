@@ -6,7 +6,7 @@
     NSMutableSet *_pidOfAppsRunningInBackground;
 }
 
-@property(assign,retain) NSMutableSet * pidOfAppsRunningInBackground;
+@property (nonatomic, retain) NSMutableSet *pidOfAppsRunningInBackground;
 
 + (bool)isWhitelistedMessage:(id)arg1;
 

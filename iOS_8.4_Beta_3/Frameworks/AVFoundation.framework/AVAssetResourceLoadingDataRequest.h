@@ -6,9 +6,9 @@
     AVAssetResourceLoadingDataRequestInternal *_dataRequest;
 }
 
-@property(assign,readonly) long long currentOffset;
-@property(assign,readonly) long long requestedLength;
-@property(assign,readonly) long long requestedOffset;
+@property (nonatomic, readonly) long long currentOffset;
+@property (nonatomic, readonly) long long requestedLength;
+@property (nonatomic, readonly) long long requestedOffset;
 
 - (id)_loadingRequest;
 - (long long)currentOffset;

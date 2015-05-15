@@ -6,7 +6,7 @@
     FBTransaction *_transaction;
 }
 
-@property(assign,retain) FBTransaction * transaction;
+@property (nonatomic, readonly, retain) FBTransaction *transaction;
 
 - (void)_dumpDebugInfo;
 - (void)_watchdogTimerFired;

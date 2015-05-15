@@ -11,12 +11,12 @@
     bool _updated;
 }
 
-@property(getter=isChildrenUpdated,assign,readwrite) bool childrenUpdated;
-@property(assign,retain) NSMutableDictionary * featuresMap;
-@property(assign,readwrite) IKDOMNode * ownerJSNode;
-@property(assign,retain) IKViewElementStyleComposer * styleComposer;
-@property(getter=isSubtreeUpdated,assign,readwrite) bool subtreeUpdated;
-@property(getter=isUpdated,assign,readwrite) bool updated;
+@property (getter=isChildrenUpdated, nonatomic) bool childrenUpdated;
+@property (nonatomic, retain) NSMutableDictionary *featuresMap;
+@property (nonatomic) IKDOMNode *ownerJSNode;
+@property (nonatomic, retain) IKViewElementStyleComposer *styleComposer;
+@property (getter=isSubtreeUpdated, nonatomic) bool subtreeUpdated;
+@property (getter=isUpdated, nonatomic) bool updated;
 
 + (id)jsNodeDataForNode:(struct _xmlNode { void *x1; int x2; char *x3; struct _xmlNode {} *x4; struct _xmlNode {} *x5; struct _xmlNode {} *x6; struct _xmlNode {} *x7; struct _xmlNode {} *x8; struct _xmlDoc {} *x9; struct _xmlNs {} *x10; char *x11; struct _xmlAttr {} *x12; struct _xmlNs {} *x13; void *x14; unsigned short x15; unsigned short x16; }*)arg1 create:(bool)arg2;
 

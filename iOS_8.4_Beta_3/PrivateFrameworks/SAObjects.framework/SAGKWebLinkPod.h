@@ -4,7 +4,7 @@
 
 @interface SAGKWebLinkPod : SAGKPodView
 
-@property(assign,copy) NSArray * links;
+@property (nonatomic, copy) NSArray *links;
 
 + (id)webLinkPod;
 + (id)webLinkPodWithDictionary:(id)arg1 context:(id)arg2;

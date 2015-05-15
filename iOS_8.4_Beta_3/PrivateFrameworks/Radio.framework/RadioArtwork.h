@@ -10,9 +10,9 @@
     } _pixelSize;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) struct CGSize { double x1; double x2; } pixelSize;
-@property(assign,readonly) struct CGSize { double x1; double x2; } pointSize;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } pixelSize;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } pointSize;
 
 - (void).cxx_destruct;
 - (id)URL;

@@ -6,9 +6,9 @@
     AVAssetWriterInputPixelBufferAdaptorInternal *_internal;
 }
 
-@property(assign,readonly) AVAssetWriterInput * assetWriterInput;
-@property(assign,readonly) struct __CVPixelBufferPool { }* pixelBufferPool;
-@property(assign,readonly) NSDictionary * sourcePixelBufferAttributes;
+@property (nonatomic, readonly) AVAssetWriterInput *assetWriterInput;
+@property (nonatomic, readonly) struct __CVPixelBufferPool { }*pixelBufferPool;
+@property (nonatomic, readonly) NSDictionary *sourcePixelBufferAttributes;
 
 + (id)assetWriterInputPixelBufferAdaptorWithAssetWriterInput:(id)arg1 sourcePixelBufferAttributes:(id)arg2;
 + (id)keyPathsForValuesAffectingPixelBufferPool;

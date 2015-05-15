@@ -8,8 +8,8 @@
     bool _relinquished;
 }
 
-@property(assign,retain) FBSDisplay * display;
-@property(assign,readwrite) long long reason;
+@property (nonatomic, retain) FBSDisplay *display;
+@property (nonatomic) long long reason;
 
 - (void)dealloc;
 - (id)description;

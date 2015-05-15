@@ -16,19 +16,19 @@
     void *_source;
 }
 
-@property(assign,readonly) NSString * _accountDescriptionBasedOnIdentifier;
-@property(assign,readonly) NSString * accountIdentifier;
-@property(assign,retain) ACAccountStore * accountStore;
-@property(assign,readonly) void* addressBook;
-@property(assign,retain) NSSet * childGroupWrappers;
-@property(assign,readwrite) <ABGroupWrapperDelegate> * delegate;
-@property(assign,readonly) void* group;
-@property(assign,readonly) NSString * name;
-@property(assign,readwrite) ABGroupWrapper * parentGroupWrapper;
-@property(getter=isSelected,assign,readwrite) bool selected;
-@property(assign,readwrite) bool shouldBeSelectedWhenAllChildrenAreSelected;
-@property(assign,readonly) void* source;
-@property(assign,readonly) int sourceType;
+@property (nonatomic, readonly) NSString *_accountDescriptionBasedOnIdentifier;
+@property (nonatomic, readonly) NSString *accountIdentifier;
+@property (nonatomic, retain) ACAccountStore *accountStore;
+@property (nonatomic, readonly) void*addressBook;
+@property (nonatomic, retain) NSSet *childGroupWrappers;
+@property (nonatomic) <ABGroupWrapperDelegate> *delegate;
+@property (nonatomic, readonly) void*group;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic) ABGroupWrapper *parentGroupWrapper;
+@property (getter=isSelected, nonatomic) bool selected;
+@property (nonatomic) bool shouldBeSelectedWhenAllChildrenAreSelected;
+@property (nonatomic, readonly) void*source;
+@property (nonatomic, readonly) int sourceType;
 
 + (id)newGroupWrapperFromDictionaryRepresentation:(id)arg1 withAddressBook:(void*)arg2;
 + (id)newGroupWrappersWithAccountIdentifier:(id)arg1 addressBook:(void*)arg2;

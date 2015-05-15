@@ -17,8 +17,8 @@
     NSObject<OS_dispatch_queue> *_serialAccessQueue;
 }
 
-@property(assign,copy) NSString * bundleID;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic, readonly, copy) NSString *bundleID;
+@property (nonatomic) struct CGSize { double x1; double x2; } imageSize;
 
 - (void).cxx_destruct;
 - (void)_contentItemsUpdated:(id)arg1;

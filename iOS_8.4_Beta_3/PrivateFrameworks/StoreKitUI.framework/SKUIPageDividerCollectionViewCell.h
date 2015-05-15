@@ -20,15 +20,15 @@
     long long _verticalAlignment;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double dividerHeight;
-@property(assign,readwrite) long long dividerType;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double leftEdgeInset;
-@property(assign,readwrite) double rightEdgeInset;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long verticalAlignment;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double dividerHeight;
+@property (nonatomic) long long dividerType;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double leftEdgeInset;
+@property (nonatomic) double rightEdgeInset;
+@property (readonly) Class superclass;
+@property (nonatomic) long long verticalAlignment;
 
 + (struct CGSize { double x1; double x2; })preferredSizeForViewElement:(id)arg1 context:(id)arg2;
 + (bool)prefetchResourcesForViewElement:(id)arg1 reason:(long long)arg2 context:(id)arg3;

@@ -29,11 +29,11 @@
     } mSpinePoints;
 }
 
-@property(assign,readwrite) float bevelHeight;
-@property(assign,readwrite) long long bevelSlices;
-@property(assign,readonly) long long bottomBevelStartIndex;
-@property(assign,readonly) long long bottomNonBevelStartIndex;
-@property(assign,readwrite) bool enableBevelEdges;
+@property (nonatomic) float bevelHeight;
+@property (nonatomic) long long bevelSlices;
+@property (nonatomic, readonly) long long bottomBevelStartIndex;
+@property (nonatomic, readonly) long long bottomNonBevelStartIndex;
+@property (nonatomic) bool enableBevelEdges;
 
 + (id)generator;
 + (id)namedBevelInterpolationShaderFunction;

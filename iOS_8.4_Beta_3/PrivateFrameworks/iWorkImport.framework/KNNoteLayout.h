@@ -11,14 +11,14 @@
     } mSizeOfScrollViewEnclosingCanvas;
 }
 
-@property(assign,readonly) bool alwaysStartsNewTarget;
-@property(assign,readonly) unsigned long long columnCount;
-@property(assign,readonly) bool columnsAreLeftToRight;
-@property(assign,readonly) TSWPLayout * containedLayout;
-@property(assign,readonly) TSWPPadding * layoutMargins;
-@property(assign,readonly) TSWPPadding * padding;
-@property(assign,readonly) bool shrinkTextToFit;
-@property(assign,readonly) double textScaleFactor;
+@property (nonatomic, readonly) bool alwaysStartsNewTarget;
+@property (nonatomic, readonly) unsigned long long columnCount;
+@property (nonatomic, readonly) bool columnsAreLeftToRight;
+@property (nonatomic, readonly) TSWPLayout *containedLayout;
+@property (nonatomic, readonly) TSWPPadding *layoutMargins;
+@property (nonatomic, readonly) TSWPPadding *padding;
+@property (nonatomic, readonly) bool shrinkTextToFit;
+@property (nonatomic, readonly) double textScaleFactor;
 
 - (id).cxx_construct;
 - (void)addChild:(id)arg1;

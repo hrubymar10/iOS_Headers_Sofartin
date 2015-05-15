@@ -10,10 +10,10 @@
     int _type;
 }
 
-@property(assign,readonly) bool hasName;
-@property(assign,readwrite) bool hasType;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) int type;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic) bool hasType;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

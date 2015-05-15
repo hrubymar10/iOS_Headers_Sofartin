@@ -19,15 +19,15 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,readwrite) bool allowsEditing;
-@property(assign,readonly) UIImage * attributionImage;
-@property(assign,readonly) UIImage * backgroundImage;
-@property(assign,retain) ABUIPerson * displayedPerson;
-@property(assign,readwrite) <ABPersonImageDataDelegate> * imageDataDelegate;
-@property(assign,readonly) UIImage * maskImage;
-@property(assign,readwrite) bool multiplePhotoBackdropEnabled;
-@property(assign,readonly) UIImage * overlayImage;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
+@property (nonatomic) bool allowsEditing;
+@property (nonatomic, readonly) UIImage *attributionImage;
+@property (nonatomic, readonly) UIImage *backgroundImage;
+@property (nonatomic, retain) ABUIPerson *displayedPerson;
+@property (nonatomic) <ABPersonImageDataDelegate> *imageDataDelegate;
+@property (nonatomic, readonly) UIImage *maskImage;
+@property (nonatomic) bool multiplePhotoBackdropEnabled;
+@property (nonatomic, readonly) UIImage *overlayImage;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
 
 + (id)newImageWithName:(id)arg1;
 

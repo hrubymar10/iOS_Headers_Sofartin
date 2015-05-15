@@ -7,8 +7,8 @@
     double _widthFactor;
 }
 
-@property(assign,readonly) double heightFactor;
-@property(assign,readonly) double widthFactor;
+@property (nonatomic, readonly) double heightFactor;
+@property (nonatomic, readonly) double widthFactor;
 
 - (double)applyResizeHeightFactor:(double)arg1;
 - (double)applyResizeWidthFactor:(double)arg1;

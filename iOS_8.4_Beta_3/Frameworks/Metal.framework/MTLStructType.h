@@ -7,7 +7,7 @@
     NSArray *_members;
 }
 
-@property(assign,readonly) NSArray * members;
+@property (readonly) NSArray *members;
 
 - (void)dealloc;
 - (id)describe;

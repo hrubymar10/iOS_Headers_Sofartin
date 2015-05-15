@@ -13,7 +13,7 @@
     } _fireTime;
 }
 
-@property(assign,readonly) bool didFire;
+@property (nonatomic, readonly) bool didFire;
 
 - (void)_effectiveRateChanged;
 - (void)_fireBlock;

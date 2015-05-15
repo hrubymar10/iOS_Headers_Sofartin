@@ -23,25 +23,25 @@
     unsigned int _reroutedRouteTravelTime;
 }
 
-@property(assign,readwrite) int actionType;
-@property(assign,retain) NSData * directionResponseID;
-@property(assign,readwrite) bool hasActionType;
-@property(assign,readonly) bool hasDirectionResponseID;
-@property(assign,readwrite) bool hasOldRouteBlocked;
-@property(assign,readwrite) bool hasOldRouteHistoricTravelTime;
-@property(assign,readonly) bool hasOldRouteID;
-@property(assign,readwrite) bool hasOldRouteTravelTime;
-@property(assign,readwrite) bool hasReroutedRouteHistoricTravelTime;
-@property(assign,readonly) bool hasReroutedRouteID;
-@property(assign,readwrite) bool hasReroutedRouteTravelTime;
-@property(assign,readwrite) bool oldRouteBlocked;
-@property(assign,readwrite) unsigned int oldRouteHistoricTravelTime;
-@property(assign,retain) NSData * oldRouteID;
-@property(assign,retain) NSMutableArray * oldRouteIncidents;
-@property(assign,readwrite) unsigned int oldRouteTravelTime;
-@property(assign,readwrite) unsigned int reroutedRouteHistoricTravelTime;
-@property(assign,retain) NSData * reroutedRouteID;
-@property(assign,readwrite) unsigned int reroutedRouteTravelTime;
+@property (nonatomic) int actionType;
+@property (nonatomic, retain) NSData *directionResponseID;
+@property (nonatomic) bool hasActionType;
+@property (nonatomic, readonly) bool hasDirectionResponseID;
+@property (nonatomic) bool hasOldRouteBlocked;
+@property (nonatomic) bool hasOldRouteHistoricTravelTime;
+@property (nonatomic, readonly) bool hasOldRouteID;
+@property (nonatomic) bool hasOldRouteTravelTime;
+@property (nonatomic) bool hasReroutedRouteHistoricTravelTime;
+@property (nonatomic, readonly) bool hasReroutedRouteID;
+@property (nonatomic) bool hasReroutedRouteTravelTime;
+@property (nonatomic) bool oldRouteBlocked;
+@property (nonatomic) unsigned int oldRouteHistoricTravelTime;
+@property (nonatomic, retain) NSData *oldRouteID;
+@property (nonatomic, retain) NSMutableArray *oldRouteIncidents;
+@property (nonatomic) unsigned int oldRouteTravelTime;
+@property (nonatomic) unsigned int reroutedRouteHistoricTravelTime;
+@property (nonatomic, retain) NSData *reroutedRouteID;
+@property (nonatomic) unsigned int reroutedRouteTravelTime;
 
 - (int)actionType;
 - (void)addOldRouteIncidents:(id)arg1;

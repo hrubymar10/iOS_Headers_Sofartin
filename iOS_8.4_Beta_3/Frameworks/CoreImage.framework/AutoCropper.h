@@ -12,10 +12,10 @@
     bool shouldFavorTop;
 }
 
-@property(assign,retain) NSNumber * bufferZone;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } originalImageSize;
-@property(assign,readwrite) bool shouldFavorBottom;
-@property(assign,readwrite) bool shouldFavorTop;
+@property (nonatomic, retain) NSNumber *bufferZone;
+@property (nonatomic) struct CGSize { double x1; double x2; } originalImageSize;
+@property (nonatomic) bool shouldFavorBottom;
+@property (nonatomic) bool shouldFavorTop;
 
 - (id)bufferZone;
 - (id)clusterRects:(id)arg1;

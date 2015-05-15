@@ -11,13 +11,13 @@
     bool _supportsMessageInspection;
 }
 
-@property(assign,readwrite) bool canEditRecipients;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CKModalTranscriptController * modalTranscriptController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool canEditRecipients;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) id delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CKModalTranscriptController *modalTranscriptController;
+@property (readonly) Class superclass;
 
 + (id)_exportedInterface;
 + (bool)_isSecureForRemoteViewService;

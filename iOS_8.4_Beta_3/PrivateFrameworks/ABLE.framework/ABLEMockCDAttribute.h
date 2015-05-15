@@ -7,8 +7,8 @@
     NSDate *_endDate;
 }
 
-@property(assign,retain) DuetSampleData * duetSampleData;
-@property(assign,retain) NSDate * endDate;
+@property (retain) DuetSampleData *duetSampleData;
+@property (retain) NSDate *endDate;
 
 - (void).cxx_destruct;
 - (id)duetSampleData;

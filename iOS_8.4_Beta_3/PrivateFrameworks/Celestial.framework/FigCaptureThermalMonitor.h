@@ -9,7 +9,7 @@
     id _torchHandler;
 }
 
-@property(assign,readonly) float maxTorchLevel;
+@property (nonatomic, readonly) float maxTorchLevel;
 
 + (void)initialize;
 

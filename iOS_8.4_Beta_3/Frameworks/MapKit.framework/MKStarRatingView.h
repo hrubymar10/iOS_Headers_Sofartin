@@ -18,16 +18,16 @@
     long long _starStyle;
 }
 
-@property(assign,retain) UIImage * emptyStarHighlightedImage;
-@property(assign,retain) UIImage * emptyStarImage;
-@property(assign,retain) UIImage * fullStarHighlightedImage;
-@property(assign,retain) UIImage * fullStarImage;
-@property(assign,retain) UIImage * halfStarHighlightedImage;
-@property(assign,retain) UIImage * halfStarImage;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,readwrite) long long numberOfRatingLevels;
-@property(assign,readwrite) double rating;
-@property(assign,readwrite) long long starStyle;
+@property (nonatomic, retain) UIImage *emptyStarHighlightedImage;
+@property (nonatomic, retain) UIImage *emptyStarImage;
+@property (nonatomic, retain) UIImage *fullStarHighlightedImage;
+@property (nonatomic, retain) UIImage *fullStarImage;
+@property (nonatomic, retain) UIImage *halfStarHighlightedImage;
+@property (nonatomic, retain) UIImage *halfStarImage;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic) long long numberOfRatingLevels;
+@property (nonatomic) double rating;
+@property (nonatomic) long long starStyle;
 
 - (void).cxx_destruct;
 - (void)_layoutStarViewsCreatingIfNeeded:(bool)arg1;

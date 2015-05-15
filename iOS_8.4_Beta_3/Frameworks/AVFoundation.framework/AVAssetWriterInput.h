@@ -6,24 +6,24 @@
     AVAssetWriterInputInternal *_internal;
 }
 
-@property(getter=_alternateGroupID,setter=_setAlternateGroupID:,assign,readwrite) short alternateGroupID;
-@property(getter=_isAttachedToMetadataAdaptor,assign,readonly) bool attachedToMetadataAdaptor;
-@property(getter=_isAttachedToPixelBufferAdaptor,setter=_setAttachedToPixelBufferAdaptor:,assign,readwrite) bool attachedToPixelBufferAdaptor;
-@property(assign,readwrite) bool expectsMediaDataInRealTime;
-@property(getter=_helper,setter=_setHelper:,assign,retain) AVAssetWriterInputHelper * helper;
-@property(assign,readonly) NSString * mediaType;
-@property(assign,copy) NSArray * metadata;
-@property(assign,readonly) long long numberOfAppendFailures;
-@property(assign,readonly) NSDictionary * outputSettings;
-@property(getter=_outputSettingsObject,assign,readonly) AVOutputSettings * outputSettingsObject;
-@property(getter=_pixelBufferPool,assign,readonly) struct __CVPixelBufferPool { }* pixelBufferPool;
-@property(getter=isReadyForMoreMediaData,assign,readonly) bool readyForMoreMediaData;
-@property(assign,readonly) struct opaqueCMFormatDescription { }* sourceFormatHint;
-@property(getter=_sourcePixelBufferAttributes,setter=_setSourcePixelBufferAttributes:,assign,copy) NSDictionary * sourcePixelBufferAttributes;
-@property(getter=_status,assign,readonly) long long status;
-@property(getter=_trackID,assign,readonly) int trackID;
-@property(getter=_trackReferences,assign,readonly) NSDictionary * trackReferences;
-@property(getter=_weakReferenceToAssetWriter,setter=_setWeakReferenceToAssetWriter:,assign,retain) AVWeakReference * weakReferenceToAssetWriter;
+@property (getter=_alternateGroupID, setter=_setAlternateGroupID:, nonatomic) short alternateGroupID;
+@property (getter=_isAttachedToMetadataAdaptor, nonatomic, readonly) bool attachedToMetadataAdaptor;
+@property (getter=_isAttachedToPixelBufferAdaptor, setter=_setAttachedToPixelBufferAdaptor:, nonatomic) bool attachedToPixelBufferAdaptor;
+@property (nonatomic) bool expectsMediaDataInRealTime;
+@property (getter=_helper, setter=_setHelper:, nonatomic, retain) AVAssetWriterInputHelper *helper;
+@property (nonatomic, readonly) NSString *mediaType;
+@property (nonatomic, copy) NSArray *metadata;
+@property (readonly) long long numberOfAppendFailures;
+@property (nonatomic, readonly) NSDictionary *outputSettings;
+@property (getter=_outputSettingsObject, nonatomic, readonly) AVOutputSettings *outputSettingsObject;
+@property (getter=_pixelBufferPool, nonatomic, readonly) struct __CVPixelBufferPool { }*pixelBufferPool;
+@property (getter=isReadyForMoreMediaData, nonatomic, readonly) bool readyForMoreMediaData;
+@property (nonatomic, readonly) struct opaqueCMFormatDescription { }*sourceFormatHint;
+@property (getter=_sourcePixelBufferAttributes, setter=_setSourcePixelBufferAttributes:, nonatomic, copy) NSDictionary *sourcePixelBufferAttributes;
+@property (getter=_status, nonatomic, readonly) long long status;
+@property (getter=_trackID, nonatomic, readonly) int trackID;
+@property (getter=_trackReferences, nonatomic, readonly) NSDictionary *trackReferences;
+@property (getter=_weakReferenceToAssetWriter, setter=_setWeakReferenceToAssetWriter:, nonatomic, retain) AVWeakReference *weakReferenceToAssetWriter;
 
 + (id)assetWriterInputWithMediaType:(id)arg1 outputSettings:(id)arg2;
 + (id)assetWriterInputWithMediaType:(id)arg1 outputSettings:(id)arg2 sourceFormatHint:(struct opaqueCMFormatDescription { }*)arg3;

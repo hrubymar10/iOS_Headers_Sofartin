@@ -24,11 +24,11 @@
     NSString *_zoomingImageTransitionIdentifier;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) IKLockupElement * lockup;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) IKLockupElement *lockup;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_handlePinchGesture:(id)arg1;

@@ -15,16 +15,16 @@
     NSPredicate *_predicate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSEntityDescription * entity;
-@property(assign,copy) NSString * entityName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool includesSubentities;
-@property(assign,retain) NSPredicate * predicate;
-@property(assign,copy) NSDictionary * propertiesToUpdate;
-@property(assign,readwrite) unsigned long long resultType;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSEntityDescription *entity;
+@property (readonly, copy) NSString *entityName;
+@property (readonly) unsigned long long hash;
+@property bool includesSubentities;
+@property (retain) NSPredicate *predicate;
+@property (copy) NSDictionary *propertiesToUpdate;
+@property unsigned long long resultType;
+@property (readonly) Class superclass;
 
 + (id)batchUpdateRequestWithEntityName:(id)arg1;
 

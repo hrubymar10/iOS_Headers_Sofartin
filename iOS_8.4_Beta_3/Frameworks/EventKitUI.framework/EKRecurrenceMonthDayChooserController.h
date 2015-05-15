@@ -7,7 +7,7 @@
     bool _prohibitsMultipleDaysInMonthlyRecurrence;
 }
 
-@property(assign,readwrite) bool prohibitsMultipleDaysInMonthlyRecurrence;
+@property (nonatomic) bool prohibitsMultipleDaysInMonthlyRecurrence;
 
 - (void).cxx_destruct;
 - (id)cellLabels;

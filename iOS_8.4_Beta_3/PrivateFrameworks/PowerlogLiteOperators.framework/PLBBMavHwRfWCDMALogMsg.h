@@ -21,22 +21,22 @@
     NSNumber *_logDuration;
 }
 
-@property(assign,retain) NSArray * DCEqStatCnt;
-@property(assign,retain) NSArray * DCQsetEqStatCnt;
-@property(assign,retain) NSArray * DurInCarrierMode;
-@property(assign,retain) NSArray * RABModeCnt;
-@property(assign,retain) NSArray * RABTypeCnt;
-@property(assign,retain) NSArray * SCEqStatCnt;
-@property(assign,retain) NSArray * SCQsetEqStatCnt;
-@property(assign,retain) NSArray * TxPwrBucket;
-@property(assign,retain) NSMutableDictionary * commonInfo;
-@property(assign,retain) NSString * error;
-@property(assign,retain) NSMutableArray * groupArrEntries;
-@property(assign,retain) NSString * groupEntryKey;
-@property(assign,retain) NSString * groupID;
-@property(assign,readwrite) unsigned char inited;
-@property(assign,retain) NSMutableDictionary * kvPairs;
-@property(assign,retain) NSNumber * logDuration;
+@property (retain) NSArray *DCEqStatCnt;
+@property (retain) NSArray *DCQsetEqStatCnt;
+@property (retain) NSArray *DurInCarrierMode;
+@property (retain) NSArray *RABModeCnt;
+@property (retain) NSArray *RABTypeCnt;
+@property (retain) NSArray *SCEqStatCnt;
+@property (retain) NSArray *SCQsetEqStatCnt;
+@property (retain) NSArray *TxPwrBucket;
+@property (nonatomic, retain) NSMutableDictionary *commonInfo;
+@property (retain) NSString *error;
+@property (retain) NSMutableArray *groupArrEntries;
+@property (retain) NSString *groupEntryKey;
+@property (retain) NSString *groupID;
+@property (nonatomic) unsigned char inited;
+@property (nonatomic, retain) NSMutableDictionary *kvPairs;
+@property (retain) NSNumber *logDuration;
 
 + (id)entryEventBackwardDefinitionBBMavHwRfWCDMA;
 

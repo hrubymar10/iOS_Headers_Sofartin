@@ -6,7 +6,7 @@
     unsigned long long __touchCount;
 }
 
-@property(setter=_setTouchCount:,assign,readwrite) unsigned long long _touchCount;
+@property (setter=_setTouchCount:, nonatomic) unsigned long long _touchCount;
 
 - (void)_decrementTouchesBy:(unsigned long long)arg1;
 - (void)_incrementTouchesBy:(unsigned long long)arg1;

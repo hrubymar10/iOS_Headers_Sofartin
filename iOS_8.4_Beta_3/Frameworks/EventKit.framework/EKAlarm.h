@@ -6,20 +6,20 @@
     EKObjectToOneRelation *_locationRelation;
 }
 
-@property(assign,readonly) NSString * UUID;
-@property(assign,copy) NSDate * absoluteDate;
-@property(assign,copy) NSDate * acknowledgedDate;
-@property(getter=isDefaultAlarm,assign,readwrite) bool defaultAlarm;
-@property(assign,readonly) NSString * externalID;
-@property(assign,readonly) bool isAbsolute;
-@property(assign,readonly) bool isSnoozedAlarm;
-@property(assign,retain) EKObjectToOneRelation * locationRelation;
-@property(assign,retain) EKAlarm * originalAlarm;
-@property(assign,retain) EKCalendarItem * owner;
-@property(assign,readwrite) long long proximity;
-@property(assign,readwrite) double relativeOffset;
-@property(assign,copy) NSArray * snoozedAlarms;
-@property(assign,copy) EKStructuredLocation * structuredLocation;
+@property (nonatomic, readonly) NSString *UUID;
+@property (nonatomic, copy) NSDate *absoluteDate;
+@property (nonatomic, copy) NSDate *acknowledgedDate;
+@property (getter=isDefaultAlarm, nonatomic) bool defaultAlarm;
+@property (nonatomic, readonly) NSString *externalID;
+@property (readonly) bool isAbsolute;
+@property (nonatomic, readonly) bool isSnoozedAlarm;
+@property (nonatomic, retain) EKObjectToOneRelation *locationRelation;
+@property (nonatomic, retain) EKAlarm *originalAlarm;
+@property (nonatomic, retain) EKCalendarItem *owner;
+@property (nonatomic) long long proximity;
+@property (nonatomic) double relativeOffset;
+@property (nonatomic, copy) NSArray *snoozedAlarms;
+@property (nonatomic, copy) EKStructuredLocation *structuredLocation;
 
 + (int)_currentAuthorizationStatus;
 + (id)alarmWithAbsoluteDate:(id)arg1;

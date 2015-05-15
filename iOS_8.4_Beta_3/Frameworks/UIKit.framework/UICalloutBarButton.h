@@ -22,17 +22,17 @@
     int m_type;
 }
 
-@property(assign,readonly) SEL action;
-@property(assign,readonly) double additionalContentHeight;
-@property(assign,readonly) double contentScale;
-@property(assign,readonly) double contentWidth;
-@property(assign,readwrite) double dividerOffset;
-@property(assign,readwrite) bool dontDismiss;
-@property(assign,readwrite) bool forceFlash;
-@property(assign,readwrite) double imageVerticalAdjust;
-@property(assign,readwrite) long long page;
-@property(assign,retain) UITextReplacement * textReplacement;
-@property(assign,readonly) int type;
+@property (nonatomic, readonly) SEL action;
+@property (nonatomic, readonly) double additionalContentHeight;
+@property (nonatomic, readonly) double contentScale;
+@property (nonatomic, readonly) double contentWidth;
+@property (nonatomic) double dividerOffset;
+@property (nonatomic) bool dontDismiss;
+@property (nonatomic) bool forceFlash;
+@property (nonatomic) double imageVerticalAdjust;
+@property (nonatomic) long long page;
+@property (nonatomic, retain) UITextReplacement *textReplacement;
+@property (nonatomic, readonly) int type;
 
 + (id)buttonWithImage:(id)arg1 action:(SEL)arg2 type:(int)arg3 inView:(id)arg4;
 + (id)buttonWithTitle:(id)arg1 action:(SEL)arg2 type:(int)arg3 inView:(id)arg4;

@@ -9,10 +9,10 @@
     long long mShadowSize;
 }
 
-@property(assign,readwrite) float kernelScale;
-@property(assign,readwrite) long long numPasses;
-@property(assign,readwrite) float quality;
-@property(assign,readwrite) long long shadowSize;
+@property (nonatomic) float kernelScale;
+@property (nonatomic) long long numPasses;
+@property (nonatomic) float quality;
+@property (nonatomic) long long shadowSize;
 
 + (id)paramsWithQuality:(float)arg1 numPasses:(long long)arg2 shadowSize:(long long)arg3 kernelScale:(float)arg4;
 

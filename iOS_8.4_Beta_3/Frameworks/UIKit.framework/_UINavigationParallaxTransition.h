@@ -17,22 +17,22 @@
     long long _transitionStyle;
 }
 
-@property(assign,retain) _UIParallaxDimmingView * borderDimmingView;
-@property(assign,retain) UIView * clipUnderView;
-@property(assign,readwrite) bool clipUnderlapWhileTransitioning;
-@property(assign,retain) UIView * containerFromView;
-@property(assign,retain) UIView * containerToView;
-@property(assign,retain) _UIParallaxDimmingView * contentDimmingView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool interactionAborted;
-@property(assign,readwrite) _UINavigationInteractiveTransitionBase * interactionController;
-@property(assign,readwrite) long long operation;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) <UIViewControllerContextTransitioning> * transitionContext;
-@property(assign,readwrite) double transitionGap;
-@property(assign,readwrite) long long transitionStyle;
+@property (nonatomic, retain) _UIParallaxDimmingView *borderDimmingView;
+@property (nonatomic, retain) UIView *clipUnderView;
+@property (nonatomic) bool clipUnderlapWhileTransitioning;
+@property (nonatomic, retain) UIView *containerFromView;
+@property (nonatomic, retain) UIView *containerToView;
+@property (nonatomic, retain) _UIParallaxDimmingView *contentDimmingView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool interactionAborted;
+@property (nonatomic) _UINavigationInteractiveTransitionBase *interactionController;
+@property (nonatomic) long long operation;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) <UIViewControllerContextTransitioning> *transitionContext;
+@property (nonatomic) double transitionGap;
+@property (nonatomic) long long transitionStyle;
 
 - (id)_basicAnimationForView:(id)arg1 withKeyPath:(id)arg2;
 - (id)_timingFunctionForAnimation;

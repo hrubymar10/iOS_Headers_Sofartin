@@ -4,14 +4,14 @@
 
 @interface ICSStructuredLocation : ICSProperty
 
-@property(assign,retain) NSString * abURLString;
-@property(assign,retain) NSString * address;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSString * fmtype;
-@property(assign,retain) NSString * loctype;
-@property(assign,readwrite) double radius;
-@property(assign,retain) NSString * routing;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSString *abURLString;
+@property (nonatomic, retain) NSString *address;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSString *fmtype;
+@property (nonatomic, retain) NSString *loctype;
+@property (nonatomic) double radius;
+@property (nonatomic, retain) NSString *routing;
+@property (nonatomic, retain) NSString *title;
 
 - (void)_ICSStringWithOptions:(unsigned long long)arg1 appendingToString:(id)arg2;
 - (id)abURLString;

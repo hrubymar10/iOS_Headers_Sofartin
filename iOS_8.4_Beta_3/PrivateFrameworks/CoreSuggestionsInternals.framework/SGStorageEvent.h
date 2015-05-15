@@ -17,18 +17,18 @@
     SGSimpleTimeRange *_when;
 }
 
-@property(assign,readonly) NSString * content;
-@property(assign,readonly) double creationTimestamp;
-@property(assign,readonly) bool curated;
-@property(assign,readonly) SGDuplicateKey * duplicateKey;
-@property(assign,readonly) double lastModifiedTimestamp;
-@property(assign,readonly) NSArray * locations;
-@property(assign,readonly) NSString * sourceKey;
-@property(assign,readonly) unsigned int state;
-@property(assign,readonly) NSData * structuredData;
-@property(assign,readonly) NSSet * tags;
-@property(assign,readonly) NSString * title;
-@property(assign,readonly) SGSimpleTimeRange * when;
+@property (nonatomic, readonly) NSString *content;
+@property (nonatomic, readonly) double creationTimestamp;
+@property (nonatomic, readonly) bool curated;
+@property (nonatomic, readonly) SGDuplicateKey *duplicateKey;
+@property (nonatomic, readonly) double lastModifiedTimestamp;
+@property (nonatomic, readonly) NSArray *locations;
+@property (nonatomic, readonly) NSString *sourceKey;
+@property (nonatomic, readonly) unsigned int state;
+@property (nonatomic, readonly) NSData *structuredData;
+@property (nonatomic, readonly) NSSet *tags;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) SGSimpleTimeRange *when;
 
 + (id)storageEventFromEntity:(id)arg1 usingStore:(id)arg2;
 

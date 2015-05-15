@@ -14,9 +14,9 @@
     RadioStation *_station;
 }
 
-@property(assign,readonly) long long numberOfAvailableSkips;
-@property(getter=hasSkipsEnabled,assign,readonly) bool skipsEnabled;
-@property(assign,readonly) RadioStation * station;
+@property (nonatomic, readonly) long long numberOfAvailableSkips;
+@property (getter=hasSkipsEnabled, nonatomic, readonly) bool skipsEnabled;
+@property (nonatomic, readonly) RadioStation *station;
 
 - (void).cxx_destruct;
 - (void)_cancelAvailableSkipsInvalidationTimer;

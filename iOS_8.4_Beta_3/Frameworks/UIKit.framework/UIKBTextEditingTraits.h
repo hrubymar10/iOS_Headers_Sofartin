@@ -17,18 +17,18 @@
     bool _supportStyling;
 }
 
-@property(assign,readonly) bool canCopy;
-@property(assign,readwrite) bool canCut;
-@property(assign,readonly) bool canMoveCursorLeft;
-@property(assign,readonly) bool canMoveCursorRight;
-@property(assign,readonly) bool canPaste;
-@property(assign,readonly) bool canToggleBoldface;
-@property(assign,readonly) bool canToggleItalics;
-@property(assign,readonly) bool canToggleUnderline;
-@property(assign,readonly) bool isBold;
-@property(assign,readonly) bool isItalicized;
-@property(assign,readonly) bool isUnderlined;
-@property(assign,readonly) bool supportStyling;
+@property (nonatomic, readonly) bool canCopy;
+@property (nonatomic) bool canCut;
+@property (nonatomic, readonly) bool canMoveCursorLeft;
+@property (nonatomic, readonly) bool canMoveCursorRight;
+@property (nonatomic, readonly) bool canPaste;
+@property (nonatomic, readonly) bool canToggleBoldface;
+@property (nonatomic, readonly) bool canToggleItalics;
+@property (nonatomic, readonly) bool canToggleUnderline;
+@property (nonatomic, readonly) bool isBold;
+@property (nonatomic, readonly) bool isItalicized;
+@property (nonatomic, readonly) bool isUnderlined;
+@property (nonatomic, readonly) bool supportStyling;
 
 + (id)traitsWithResponder:(id)arg1 keyMaskFlags:(unsigned long long)arg2;
 

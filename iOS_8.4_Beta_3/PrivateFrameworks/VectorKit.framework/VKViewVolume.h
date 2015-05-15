@@ -10,7 +10,7 @@
     } _corners;
 }
 
-@property(assign,readonly) const struct VKPoint { double x1; double x2; double x3; }* corners;
+@property (nonatomic, readonly) const struct VKPoint { double x1; double x2; double x3; }*corners;
 
 - (id).cxx_construct;
 - (const struct VKPoint { double x1; double x2; double x3; }*)corners;

@@ -12,15 +12,15 @@
     NSMutableArray *_workouts;
 }
 
-@property(assign,retain) NSMutableArray * activityCaches;
-@property(assign,retain) NSMutableArray * categorySamples;
-@property(assign,retain) NSMutableArray * correlations;
-@property(assign,readonly) bool hasSource;
-@property(assign,readonly) bool hasSourceBundleIdentifier;
-@property(assign,retain) NSMutableArray * quantitySamples;
-@property(assign,retain) HDCodableSource * source;
-@property(assign,retain) NSString * sourceBundleIdentifier;
-@property(assign,retain) NSMutableArray * workouts;
+@property (nonatomic, retain) NSMutableArray *activityCaches;
+@property (nonatomic, retain) NSMutableArray *categorySamples;
+@property (nonatomic, retain) NSMutableArray *correlations;
+@property (nonatomic, readonly) bool hasSource;
+@property (nonatomic, readonly) bool hasSourceBundleIdentifier;
+@property (nonatomic, retain) NSMutableArray *quantitySamples;
+@property (nonatomic, retain) HDCodableSource *source;
+@property (nonatomic, retain) NSString *sourceBundleIdentifier;
+@property (nonatomic, retain) NSMutableArray *workouts;
 
 - (void).cxx_destruct;
 - (id)activityCaches;

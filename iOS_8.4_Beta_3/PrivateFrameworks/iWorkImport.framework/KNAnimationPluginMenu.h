@@ -10,10 +10,10 @@
     NSMutableDictionary *mLocalizedStringToDirectionMap;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readwrite) unsigned long long defaultDirection;
-@property(assign,readonly) NSArray * directions;
-@property(assign,readonly) NSArray * localizedDirections;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic) unsigned long long defaultDirection;
+@property (nonatomic, readonly) NSArray *directions;
+@property (nonatomic, readonly) NSArray *localizedDirections;
 
 + (id)animationPluginMenu;
 + (id)localizedStringForDirection:(unsigned long long)arg1 shortVersion:(bool)arg2;

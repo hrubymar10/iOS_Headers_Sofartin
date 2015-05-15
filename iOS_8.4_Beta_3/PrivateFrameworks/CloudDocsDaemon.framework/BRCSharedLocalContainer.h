@@ -6,9 +6,9 @@
     NSString *_ownerName;
 }
 
-@property(assign,readonly) bool isPrivateContainer;
-@property(assign,readonly) bool isSharedContainer;
-@property(assign,readonly) BRCSharedServerZone * sharedZone;
+@property (nonatomic, readonly) bool isPrivateContainer;
+@property (nonatomic, readonly) bool isSharedContainer;
+@property (nonatomic, readonly) BRCSharedServerZone *sharedZone;
 
 - (void).cxx_destruct;
 - (void)_setup;

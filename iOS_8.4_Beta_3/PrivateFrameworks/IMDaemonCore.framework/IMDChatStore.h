@@ -6,7 +6,7 @@
     NSString *_lastModificationStamp;
 }
 
-@property(assign,retain) NSString * modificationStamp;
+@property (retain) NSString *modificationStamp;
 
 + (id)sharedInstance;
 

@@ -9,14 +9,14 @@
     NSString *_value;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long keyboardType;
-@property(getter=isSecure,assign,readwrite) bool secure;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSString * value;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property long long keyboardType;
+@property (getter=isSecure) bool secure;
+@property (readonly) Class superclass;
+@property (retain) NSString *title;
+@property (retain) NSString *value;
 
 + (id)textFieldWithTitle:(id)arg1;
 

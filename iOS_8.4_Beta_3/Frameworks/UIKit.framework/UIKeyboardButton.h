@@ -6,7 +6,7 @@
     long long _keyboardButtonStyle;
 }
 
-@property(assign,readonly) long long keyboardButtonStyle;
+@property (nonatomic, readonly) long long keyboardButtonStyle;
 
 - (id)initWithKeyboardButtonStyle:(long long)arg1;
 - (long long)keyboardButtonStyle;

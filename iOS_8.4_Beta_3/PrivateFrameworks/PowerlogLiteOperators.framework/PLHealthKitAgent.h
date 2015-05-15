@@ -6,7 +6,7 @@
     PLXPCListenerOperatorComposition *_queryHandler;
 }
 
-@property(assign,retain) PLXPCListenerOperatorComposition * queryHandler;
+@property (retain) PLXPCListenerOperatorComposition *queryHandler;
 
 + (id)entryEventPointDefinitions;
 + (void)load;

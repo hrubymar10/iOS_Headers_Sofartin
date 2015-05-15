@@ -10,9 +10,9 @@
     int _sessionIdentifier;
 }
 
-@property(assign,retain) NSMutableArray * audioRoutes;
-@property(assign,readwrite) bool hasSessionIdentifier;
-@property(assign,readwrite) int sessionIdentifier;
+@property (nonatomic, retain) NSMutableArray *audioRoutes;
+@property (nonatomic) bool hasSessionIdentifier;
+@property (nonatomic) int sessionIdentifier;
 
 - (void).cxx_destruct;
 - (void)addAudioRoutes:(id)arg1;

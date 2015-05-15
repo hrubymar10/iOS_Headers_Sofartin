@@ -11,10 +11,10 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) bool hasTimeToSucceed;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) long long timeToSucceed;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) bool hasTimeToSucceed;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) long long timeToSucceed;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

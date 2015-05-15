@@ -6,7 +6,7 @@
     NSError *_sqliteError;
 }
 
-@property(assign,readonly) NSError * sqliteError;
+@property (nonatomic, readonly) NSError *sqliteError;
 
 + (id)databaseExceptionWithReason:(id)arg1 sqliteError:(id)arg2;
 

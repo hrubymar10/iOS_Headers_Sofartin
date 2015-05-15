@@ -12,11 +12,11 @@
     RadioStation *_station;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * issueText;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *issueText;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_descriptionForIssueType:(long long)arg1;

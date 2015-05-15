@@ -8,9 +8,9 @@
     unsigned long long _options;
 }
 
-@property(assign,readonly) id completionHandler;
-@property(assign,readwrite) unsigned long long mergeStrategy;
-@property(assign,readonly) unsigned long long options;
+@property (nonatomic, readonly) id completionHandler;
+@property (nonatomic) unsigned long long mergeStrategy;
+@property (nonatomic, readonly) unsigned long long options;
 
 + (Class)_queryServerDataObjectClass;
 

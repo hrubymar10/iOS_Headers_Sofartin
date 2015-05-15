@@ -6,7 +6,7 @@
     int _outDirection;
 }
 
-@property(assign,readwrite) int outDirection;
+@property (nonatomic) int outDirection;
 
 + (id)animationStyleAnimated:(bool)arg1 duration:(double)arg2 outDirection:(int)arg3;
 

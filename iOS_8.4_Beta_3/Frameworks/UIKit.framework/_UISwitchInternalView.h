@@ -28,17 +28,17 @@
     bool _useAlternateColor;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * offImage;
-@property(assign,readwrite) bool on;
-@property(assign,retain) UIImage * onImage;
-@property(assign,retain) UIColor * onTintColor;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIColor * thumbTintColor;
-@property(assign,retain) UIColor * tintColor;
-@property(assign,readwrite) bool useAlternateColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *offImage;
+@property (nonatomic) bool on;
+@property (nonatomic, retain) UIImage *onImage;
+@property (nonatomic, retain) UIColor *onTintColor;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIColor *thumbTintColor;
+@property (nonatomic, retain) UIColor *tintColor;
+@property (nonatomic) bool useAlternateColor;
 
 + (id)_defaultOnTintColor;
 

@@ -11,18 +11,18 @@
     unsigned long long _warmUpModeRequirementsCount;
 }
 
-@property(assign,retain) NSMutableSet * activeTargetActions;
-@property(assign,retain) CADisplayLink * displayLink;
-@property(assign,readonly) double duration;
-@property(assign,readonly) unsigned long long frameInterval;
-@property(getter=isHandlingDisplayRefresh,assign,readwrite) bool handlingDisplayRefresh;
-@property(assign,readwrite) bool hasUpdatedTargetActions;
-@property(getter=isPaused,assign,readonly) bool paused;
-@property(assign,retain) CADisplayLink * storedDisplayLink;
-@property(assign,readonly) double timestamp;
-@property(assign,retain) NSMutableSet * updatedTargetActions;
-@property(getter=isWarmUpModeEnabled,assign,readonly) bool warmUpModeEnabled;
-@property(assign,readwrite) unsigned long long warmUpModeRequirementsCount;
+@property (nonatomic, retain) NSMutableSet *activeTargetActions;
+@property (nonatomic, retain) CADisplayLink *displayLink;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic, readonly) unsigned long long frameInterval;
+@property (getter=isHandlingDisplayRefresh, nonatomic) bool handlingDisplayRefresh;
+@property (nonatomic) bool hasUpdatedTargetActions;
+@property (getter=isPaused, nonatomic, readonly) bool paused;
+@property (nonatomic, retain) CADisplayLink *storedDisplayLink;
+@property (nonatomic, readonly) double timestamp;
+@property (nonatomic, retain) NSMutableSet *updatedTargetActions;
+@property (getter=isWarmUpModeEnabled, nonatomic, readonly) bool warmUpModeEnabled;
+@property (nonatomic) unsigned long long warmUpModeRequirementsCount;
 
 + (void)_releaseCurrentDisplayLinkManager;
 + (id)currentDisplayLinkManager;

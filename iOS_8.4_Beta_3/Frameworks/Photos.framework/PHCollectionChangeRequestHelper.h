@@ -14,15 +14,15 @@
     NSString *_relationshipName;
 }
 
-@property(assign,readwrite) bool allowsInsert;
-@property(assign,readwrite) bool allowsMove;
-@property(assign,readwrite) bool allowsRemove;
-@property(assign,retain) PHChangeRequestHelper * changeRequestHelper;
-@property(assign,retain) NSString * destinationEntityName;
-@property(assign,copy) id isDestinationObjectValid;
-@property(assign,retain) NSMutableArray * mutableObjectIDsAndUUIDs;
-@property(assign,retain) NSArray * originalObjectIDs;
-@property(assign,readonly) NSString * relationshipName;
+@property (nonatomic) bool allowsInsert;
+@property (nonatomic) bool allowsMove;
+@property (nonatomic) bool allowsRemove;
+@property (nonatomic, retain) PHChangeRequestHelper *changeRequestHelper;
+@property (nonatomic, retain) NSString *destinationEntityName;
+@property (nonatomic, copy) id isDestinationObjectValid;
+@property (nonatomic, retain) NSMutableArray *mutableObjectIDsAndUUIDs;
+@property (nonatomic, retain) NSArray *originalObjectIDs;
+@property (nonatomic, readonly) NSString *relationshipName;
 
 + (id)_offsetsFromSourceOIDs:(id)arg1 toManagedObjects:(id)arg2;
 

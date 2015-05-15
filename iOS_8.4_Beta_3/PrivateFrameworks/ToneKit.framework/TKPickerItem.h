@@ -6,7 +6,7 @@
     long long _section;
 }
 
-@property(assign,readwrite) long long section;
+@property (nonatomic) long long section;
 
 - (void)_appendDescriptionOfAttributeNamed:(id)arg1 withBoolValue:(bool)arg2 toString:(id)arg3;
 - (void)_appendDescriptionOfAttributeNamed:(id)arg1 withIntegerValue:(long long)arg2 toString:(id)arg3;

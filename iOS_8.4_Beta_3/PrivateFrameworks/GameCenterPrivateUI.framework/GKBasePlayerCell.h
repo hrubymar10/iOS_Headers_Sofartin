@@ -8,10 +8,10 @@
     UILabel *_nameLabel;
 }
 
-@property(assign,retain) GKPlayerPhotoView * iconView;
-@property(assign,retain) NSDictionary * metricsOverrides;
-@property(assign,retain) UILabel * nameLabel;
-@property(assign,retain) GKPlayer * player;
+@property (nonatomic, retain) GKPlayerPhotoView *iconView;
+@property (nonatomic, retain) NSDictionary *metricsOverrides;
+@property (nonatomic, retain) UILabel *nameLabel;
+@property (nonatomic, retain) GKPlayer *player;
 
 + (double)defaultRowHeight;
 + (void)initialize;

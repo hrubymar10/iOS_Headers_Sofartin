@@ -17,17 +17,17 @@
     bool _usesSSL;
 }
 
-@property(assign,copy) NSString * accountIdentifier;
-@property(assign,readwrite) bool allowsTrustPrompt;
-@property(assign,copy) NSString * certUIService;
-@property(assign,copy) NSArray * clientCertificates;
-@property(assign,copy) NSString * hostname;
-@property(assign,readwrite) unsigned int portNumber;
-@property(assign,copy) NSString * serviceName;
-@property(assign,copy) NSString * sourceApplicationBundleIdentifier;
-@property(assign,readwrite) bool tryDirectSSL;
-@property(assign,readwrite) bool usesOpportunisticSockets;
-@property(assign,readwrite) bool usesSSL;
+@property (nonatomic, copy) NSString *accountIdentifier;
+@property (nonatomic) bool allowsTrustPrompt;
+@property (nonatomic, copy) NSString *certUIService;
+@property (nonatomic, copy) NSArray *clientCertificates;
+@property (nonatomic, copy) NSString *hostname;
+@property (nonatomic) unsigned int portNumber;
+@property (nonatomic, copy) NSString *serviceName;
+@property (nonatomic, copy) NSString *sourceApplicationBundleIdentifier;
+@property (nonatomic) bool tryDirectSSL;
+@property (nonatomic) bool usesOpportunisticSockets;
+@property (nonatomic) bool usesSSL;
 
 - (id)accountIdentifier;
 - (bool)allowsTrustPrompt;

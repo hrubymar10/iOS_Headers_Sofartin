@@ -20,24 +20,24 @@
     CKDPIdentifier *_userId;
 }
 
-@property(assign,retain) CKDPContactInformation * contactInformation;
-@property(assign,readwrite) bool createdOutOfProcess;
-@property(assign,readonly) bool hasContactInformation;
-@property(assign,readwrite) bool hasCreatedOutOfProcess;
-@property(assign,readonly) bool hasInviterId;
-@property(assign,readonly) bool hasParticipantId;
-@property(assign,readwrite) bool hasParticipantType;
-@property(assign,readwrite) bool hasPermission;
-@property(assign,readonly) bool hasPublicKey;
-@property(assign,readwrite) bool hasState;
-@property(assign,readonly) bool hasUserId;
-@property(assign,retain) CKDPIdentifier * inviterId;
-@property(assign,retain) CKDPIdentifier * participantId;
-@property(assign,readwrite) int participantType;
-@property(assign,readwrite) int permission;
-@property(assign,retain) CKDPProtectionInfo * publicKey;
-@property(assign,readwrite) int state;
-@property(assign,retain) CKDPIdentifier * userId;
+@property (nonatomic, retain) CKDPContactInformation *contactInformation;
+@property (nonatomic) bool createdOutOfProcess;
+@property (nonatomic, readonly) bool hasContactInformation;
+@property (nonatomic) bool hasCreatedOutOfProcess;
+@property (nonatomic, readonly) bool hasInviterId;
+@property (nonatomic, readonly) bool hasParticipantId;
+@property (nonatomic) bool hasParticipantType;
+@property (nonatomic) bool hasPermission;
+@property (nonatomic, readonly) bool hasPublicKey;
+@property (nonatomic) bool hasState;
+@property (nonatomic, readonly) bool hasUserId;
+@property (nonatomic, retain) CKDPIdentifier *inviterId;
+@property (nonatomic, retain) CKDPIdentifier *participantId;
+@property (nonatomic) int participantType;
+@property (nonatomic) int permission;
+@property (nonatomic, retain) CKDPProtectionInfo *publicKey;
+@property (nonatomic) int state;
+@property (nonatomic, retain) CKDPIdentifier *userId;
 
 - (void).cxx_destruct;
 - (id)contactInformation;

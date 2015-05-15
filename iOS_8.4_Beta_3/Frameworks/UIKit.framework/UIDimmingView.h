@@ -16,17 +16,17 @@
     bool _suppressesBackdrops;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIColor * dimmingColor;
-@property(assign,readwrite) bool displayed;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIBarButtonItem * highlightedBarButtonItem;
-@property(assign,readwrite) bool ignoresTouches;
-@property(assign,retain) NSArray * passthroughViews;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool suppressesBackdrops;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) id delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIColor *dimmingColor;
+@property (nonatomic) bool displayed;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIBarButtonItem *highlightedBarButtonItem;
+@property (nonatomic) bool ignoresTouches;
+@property (nonatomic, retain) NSArray *passthroughViews;
+@property (readonly) Class superclass;
+@property (nonatomic) bool suppressesBackdrops;
 
 + (id)defaultDimmingColor;
 

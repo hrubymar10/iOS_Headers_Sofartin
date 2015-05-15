@@ -17,9 +17,9 @@
     bool _sendDisabled;
 }
 
-@property(assign,retain) SSMetricsConfiguration * childConfiguration;
-@property(assign,readwrite) bool disableEventDecoration;
-@property(assign,readonly) NSDictionary * fieldsMap;
+@property (nonatomic, retain) SSMetricsConfiguration *childConfiguration;
+@property (nonatomic) bool disableEventDecoration;
+@property (nonatomic, readonly) NSDictionary *fieldsMap;
 
 + (id)_reportingFrequencyOverride;
 + (void)getReportingFrequencyOverrideWithCompletionBlock:(id)arg1;

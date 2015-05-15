@@ -8,9 +8,9 @@
     unsigned long long mStyleIndex;
 }
 
-@property(assign,readonly) double rotation;
-@property(assign,readonly) NSString * string;
-@property(assign,readonly) unsigned long long styleIndex;
+@property (nonatomic, readonly) double rotation;
+@property (nonatomic, readonly) NSString *string;
+@property (nonatomic, readonly) unsigned long long styleIndex;
 
 + (id)renderInfoWithString:(id)arg1 styleIndex:(unsigned long long)arg2 rotation:(double)arg3;
 

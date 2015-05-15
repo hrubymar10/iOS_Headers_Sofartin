@@ -13,15 +13,15 @@
     NSDictionary *_userActivityUserInfo;
 }
 
-@property(getter=isAllDay,assign,readwrite) bool allDay;
-@property(assign,retain) NSDate * date;
-@property(assign,readonly) NSDictionary * dictionaryRepresentation;
-@property(assign,readonly) NSDictionary * organizerContactDictionary;
-@property(assign,retain) EKUITextAndHeaderItem * subtitleItem;
-@property(assign,retain) NSArray * supplementaryItems;
-@property(assign,retain) EKUITextAndHeaderItem * titleItem;
-@property(assign,readwrite) unsigned long long type;
-@property(assign,retain) NSDictionary * userActivityUserInfo;
+@property (getter=isAllDay, nonatomic) bool allDay;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, readonly) NSDictionary *dictionaryRepresentation;
+@property (nonatomic, readonly) NSDictionary *organizerContactDictionary;
+@property (nonatomic, retain) EKUITextAndHeaderItem *subtitleItem;
+@property (nonatomic, retain) NSArray *supplementaryItems;
+@property (nonatomic, retain) EKUITextAndHeaderItem *titleItem;
+@property (nonatomic) unsigned long long type;
+@property (nonatomic, retain) NSDictionary *userActivityUserInfo;
 
 + (bool)_invitationNotificationHasResourceChanges:(id)arg1 changesString:(id*)arg2;
 + (id)defaultEventNotificationRepresentationWithTitle:(id)arg1 message:(id)arg2;

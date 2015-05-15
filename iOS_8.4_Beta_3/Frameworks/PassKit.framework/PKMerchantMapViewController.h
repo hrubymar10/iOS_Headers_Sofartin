@@ -4,10 +4,10 @@
 
 @interface PKMerchantMapViewController : _MKPlaceViewController <_MKPlaceViewControllerDelegate>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)activityViewControllerForPlaceViewController:(id)arg1;
 - (void)done:(id)arg1;

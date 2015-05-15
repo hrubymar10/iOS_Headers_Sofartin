@@ -7,9 +7,9 @@
     NSData *_value;
 }
 
-@property(assign,readonly) bool hasValue;
-@property(assign,retain) NSString * key;
-@property(assign,retain) NSData * value;
+@property (nonatomic, readonly) bool hasValue;
+@property (nonatomic, retain) NSString *key;
+@property (nonatomic, retain) NSData *value;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

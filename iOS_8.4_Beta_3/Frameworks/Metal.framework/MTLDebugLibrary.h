@@ -8,9 +8,9 @@
     unsigned long long _type;
 }
 
-@property(assign,copy) id code;
-@property(assign,copy) MTLCompileOptions * compileOptions;
-@property(assign,readwrite) unsigned long long type;
+@property (nonatomic, copy) id code;
+@property (nonatomic, copy) MTLCompileOptions *compileOptions;
+@property (nonatomic) unsigned long long type;
 
 - (void).cxx_destruct;
 - (id)code;

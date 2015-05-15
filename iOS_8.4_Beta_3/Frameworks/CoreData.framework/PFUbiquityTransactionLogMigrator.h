@@ -12,7 +12,7 @@
     bool _throttleLogs;
 }
 
-@property(assign,readonly) bool throttleLogs;
+@property (readonly) bool throttleLogs;
 
 - (id)createDestinationGlobalObjectIDFromSourceGlobalObjectID:(id)arg1;
 - (id)createDestinationObjectContentFromSourceObjectContent:(id)arg1 withEntityMapping:(id)arg2 migrationContext:(id)arg3;

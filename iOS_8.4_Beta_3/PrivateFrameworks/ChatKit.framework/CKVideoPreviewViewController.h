@@ -11,13 +11,13 @@
     <CKVideoPreviewViewControllerDelegate> *_videoPreviewDelegate;
 }
 
-@property(assign,retain) AVPlayer * avPlayer;
-@property(assign,retain) AVPlayerItem * avPlayerItem;
-@property(assign,retain) AVPlayerLayer * avPlayerLayer;
-@property(getter=isPlaying,assign,readonly) bool playing;
-@property(assign,readwrite) bool reachedEnd;
-@property(assign,readwrite) bool redisplayStatusBar;
-@property(assign,readwrite) <CKVideoPreviewViewControllerDelegate> * videoPreviewDelegate;
+@property (nonatomic, retain) AVPlayer *avPlayer;
+@property (nonatomic, retain) AVPlayerItem *avPlayerItem;
+@property (nonatomic, retain) AVPlayerLayer *avPlayerLayer;
+@property (getter=isPlaying, nonatomic, readonly) bool playing;
+@property (nonatomic) bool reachedEnd;
+@property (nonatomic) bool redisplayStatusBar;
+@property (nonatomic) <CKVideoPreviewViewControllerDelegate> *videoPreviewDelegate;
 
 - (id)avPlayer;
 - (id)avPlayerItem;

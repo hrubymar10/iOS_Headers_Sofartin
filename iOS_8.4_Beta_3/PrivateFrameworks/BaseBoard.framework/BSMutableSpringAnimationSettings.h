@@ -4,13 +4,13 @@
 
 @interface BSMutableSpringAnimationSettings : BSSpringAnimationSettings
 
-@property(assign,readwrite) double damping;
-@property(assign,readwrite) double delay;
-@property(assign,readwrite) double epsilon;
-@property(assign,readwrite) double frameInterval;
-@property(assign,readwrite) double mass;
-@property(assign,readwrite) double stiffness;
-@property(assign,retain) CAMediaTimingFunction * timingFunction;
+@property (nonatomic) double damping;
+@property (nonatomic) double delay;
+@property (nonatomic) double epsilon;
+@property (nonatomic) double frameInterval;
+@property (nonatomic) double mass;
+@property (nonatomic) double stiffness;
+@property (nonatomic, retain) CAMediaTimingFunction *timingFunction;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setDamping:(double)arg1;

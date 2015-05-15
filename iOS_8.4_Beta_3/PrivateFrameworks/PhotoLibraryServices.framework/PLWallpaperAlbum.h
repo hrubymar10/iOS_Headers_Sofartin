@@ -4,7 +4,7 @@
 
 @interface PLWallpaperAlbum : PLManagedAlbum
 
-@property(assign,readwrite) short wallpaperAlbumType;
+@property (nonatomic) short wallpaperAlbumType;
 
 + (id)entityInManagedObjectContext:(id)arg1;
 + (id)entityName;

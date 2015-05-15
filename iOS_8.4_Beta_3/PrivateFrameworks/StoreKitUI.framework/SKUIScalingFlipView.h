@@ -30,8 +30,8 @@
     } _toFrame;
 }
 
-@property(assign,readwrite) long long direction;
-@property(assign,readwrite) double duration;
+@property (nonatomic) long long direction;
+@property (nonatomic) double duration;
 
 - (void).cxx_destruct;
 - (id)_backLayerAnimation;

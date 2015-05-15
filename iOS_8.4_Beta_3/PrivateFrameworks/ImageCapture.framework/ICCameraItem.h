@@ -6,19 +6,19 @@
     void *_itemProperties;
 }
 
-@property(assign,readonly) NSString * UTI;
-@property(assign,readonly) NSDate * creationDate;
-@property(assign,readonly) ICCameraDevice * device;
-@property(assign,readonly) NSString * fileSystemPath;
-@property(assign,readonly) bool hasMetadata;
-@property(assign,readonly) bool hasThumbnail;
-@property(getter=isLocked,assign,readwrite) bool locked;
-@property(assign,readonly) NSDictionary * metadata;
-@property(assign,readonly) NSDate * modificationDate;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) ICCameraFolder * parentFolder;
-@property(assign,readonly) struct CGImage { }* thumbnail;
-@property(assign,readonly) NSMutableDictionary * userData;
+@property (readonly) NSString *UTI;
+@property (readonly) NSDate *creationDate;
+@property (readonly) ICCameraDevice *device;
+@property (readonly) NSString *fileSystemPath;
+@property (readonly) bool hasMetadata;
+@property (readonly) bool hasThumbnail;
+@property (getter=isLocked) bool locked;
+@property (readonly) NSDictionary *metadata;
+@property (readonly) NSDate *modificationDate;
+@property (readonly) NSString *name;
+@property (readonly) ICCameraFolder *parentFolder;
+@property (readonly) struct CGImage { }*thumbnail;
+@property (readonly) NSMutableDictionary *userData;
 
 - (id)UTI;
 - (void)appendToPath:(id)arg1;

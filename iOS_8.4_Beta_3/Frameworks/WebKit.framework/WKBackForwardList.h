@@ -10,16 +10,16 @@
     } _list;
 }
 
-@property(assign,readonly) struct Object { int (**x1)(); id x2; }* _apiObject;
-@property(assign,readonly) WKBackForwardListItem * backItem;
-@property(assign,copy) NSArray * backList;
-@property(assign,readonly) WKBackForwardListItem * currentItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) WKBackForwardListItem * forwardItem;
-@property(assign,copy) NSArray * forwardList;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly) struct Object { int (**x1)(); id x2; }*_apiObject;
+@property (nonatomic, readonly) WKBackForwardListItem *backItem;
+@property (nonatomic, readonly, copy) NSArray *backList;
+@property (nonatomic, readonly) WKBackForwardListItem *currentItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) WKBackForwardListItem *forwardItem;
+@property (nonatomic, readonly, copy) NSArray *forwardList;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (struct Object { int (**x1)(); id x2; }*)_apiObject;

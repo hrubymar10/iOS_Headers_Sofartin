@@ -10,12 +10,12 @@
     long long _seasonNumber;
 }
 
-@property(assign,readonly) long long albumArtistPersistentID;
-@property(assign,readonly) bool compilation;
-@property(assign,readonly) NSString * feedURL;
-@property(assign,readonly) NSData * groupingKey;
-@property(assign,readonly) NSData * keyValue;
-@property(assign,readonly) long long seasonNumber;
+@property (nonatomic, readonly) long long albumArtistPersistentID;
+@property (nonatomic, readonly) bool compilation;
+@property (nonatomic, readonly) NSString *feedURL;
+@property (nonatomic, readonly) NSData *groupingKey;
+@property (nonatomic, readonly) NSData *keyValue;
+@property (nonatomic, readonly) long long seasonNumber;
 
 - (void).cxx_destruct;
 - (long long)albumArtistPersistentID;

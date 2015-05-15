@@ -53,26 +53,26 @@
     unsigned long long visibleParts;
 }
 
-@property(assign,readwrite) bool allowsDetailScrubbing;
-@property(assign,readwrite) bool allowsExitFromFullscreen;
-@property(assign,readwrite) bool allowsScrubbing;
-@property(assign,readwrite) bool allowsWirelessPlayback;
-@property(assign,readwrite) bool automaticallyHandleTransportControls;
-@property(assign,readonly) double bottomBarHeight;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPVideoOverlayDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long desiredParts;
-@property(assign,readwrite) unsigned long long disabledParts;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPAVItem * item;
-@property(assign,retain) UINavigationBar * navigationBar;
-@property(assign,readwrite) bool navigationBarHidden;
-@property(assign,retain) MPAVController * player;
-@property(assign,readwrite) long long style;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <MPVideoControllerProtocol> * videoViewController;
-@property(assign,readwrite) unsigned long long visibleParts;
+@property (nonatomic) bool allowsDetailScrubbing;
+@property (nonatomic) bool allowsExitFromFullscreen;
+@property (nonatomic) bool allowsScrubbing;
+@property (nonatomic) bool allowsWirelessPlayback;
+@property (nonatomic) bool automaticallyHandleTransportControls;
+@property (nonatomic, readonly) double bottomBarHeight;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPVideoOverlayDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) unsigned long long desiredParts;
+@property (nonatomic) unsigned long long disabledParts;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPAVItem *item;
+@property (nonatomic, readonly, retain) UINavigationBar *navigationBar;
+@property (nonatomic) bool navigationBarHidden;
+@property (nonatomic, retain) MPAVController *player;
+@property (nonatomic) long long style;
+@property (readonly) Class superclass;
+@property (nonatomic) <MPVideoControllerProtocol> *videoViewController;
+@property (nonatomic) unsigned long long visibleParts;
 
 - (void).cxx_destruct;
 - (void)_activeAudioRouteDidChange:(id)arg1;

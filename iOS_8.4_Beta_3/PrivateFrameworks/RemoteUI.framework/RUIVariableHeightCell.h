@@ -6,7 +6,7 @@
     bool _supportsAccessory;
 }
 
-@property(assign,readwrite) bool supportsAccessory;
+@property (nonatomic) bool supportsAccessory;
 
 - (double)contentWidth;
 - (struct CGSize { double x1; double x2; })detailLabelSizeForWidth:(double)arg1;

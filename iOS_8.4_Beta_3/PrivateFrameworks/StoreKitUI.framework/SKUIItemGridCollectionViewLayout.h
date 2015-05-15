@@ -8,9 +8,9 @@
     UIColor *_oddColor;
 }
 
-@property(assign,copy) UIColor * evenRowBackgroundColor;
-@property(assign,readwrite) long long numberOfColumns;
-@property(assign,copy) UIColor * oddRowBackgroundColor;
+@property (nonatomic, copy) UIColor *evenRowBackgroundColor;
+@property (nonatomic) long long numberOfColumns;
+@property (nonatomic, copy) UIColor *oddRowBackgroundColor;
 
 + (Class)layoutAttributesClass;
 

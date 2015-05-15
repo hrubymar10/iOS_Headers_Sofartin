@@ -6,7 +6,7 @@
     id _viewServiceTerminationBlock;
 }
 
-@property(assign,copy) id viewServiceTerminationBlock;
+@property (nonatomic, copy) id viewServiceTerminationBlock;
 
 - (void).cxx_destruct;
 - (void)setViewServiceTerminationBlock:(id)arg1;

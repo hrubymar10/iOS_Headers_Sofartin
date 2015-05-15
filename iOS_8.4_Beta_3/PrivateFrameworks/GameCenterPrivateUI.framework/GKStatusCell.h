@@ -6,7 +6,7 @@
     UILabel *_statusLabel;
 }
 
-@property(assign,retain) UILabel * statusLabel;
+@property (nonatomic, retain) UILabel *statusLabel;
 
 - (bool)canRemoveItem;
 - (void)dealloc;

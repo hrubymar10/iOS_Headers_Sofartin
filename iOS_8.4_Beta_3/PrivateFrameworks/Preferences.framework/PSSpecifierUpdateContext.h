@@ -8,9 +8,9 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,readwrite) bool animated;
-@property(assign,readwrite) bool updateModelOnly;
-@property(assign,copy) NSDictionary * userInfo;
+@property (nonatomic) bool animated;
+@property (nonatomic) bool updateModelOnly;
+@property (nonatomic, copy) NSDictionary *userInfo;
 
 + (id)context;
 + (id)contextWithUserInfo:(id)arg1;

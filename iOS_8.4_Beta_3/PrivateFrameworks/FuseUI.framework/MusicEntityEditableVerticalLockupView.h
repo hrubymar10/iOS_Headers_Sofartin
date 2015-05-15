@@ -8,8 +8,8 @@
     bool _editing;
 }
 
-@property(assign,readwrite) <MusicEntityEditableVerticalLockupViewDelegate> * delegate;
-@property(getter=isEditing,assign,readwrite) bool editing;
+@property (nonatomic) <MusicEntityEditableVerticalLockupViewDelegate> *delegate;
+@property (getter=isEditing, nonatomic) bool editing;
 
 - (void).cxx_destruct;
 - (void)_cameraButtonTapped:(id)arg1;

@@ -21,15 +21,15 @@
     NSDate *_time;
 }
 
-@property(assign,readonly) UIImageView * faceView;
-@property(assign,readonly) long long hour;
-@property(assign,readonly) long long minute;
-@property(getter=isNighttime,assign,readonly) bool nighttime;
-@property(assign,readwrite) int runMode;
-@property(getter=isStarted,assign,readonly) bool started;
-@property(assign,readonly) int style;
-@property(assign,retain) NSDate * time;
-@property(assign,retain) NSTimeZone * timeZone;
+@property (nonatomic, readonly) UIImageView *faceView;
+@property (nonatomic, readonly) long long hour;
+@property (nonatomic, readonly) long long minute;
+@property (getter=isNighttime, nonatomic, readonly) bool nighttime;
+@property (nonatomic) int runMode;
+@property (getter=isStarted, nonatomic, readonly) bool started;
+@property (nonatomic, readonly) int style;
+@property (nonatomic, retain) NSDate *time;
+@property (nonatomic, retain) NSTimeZone *timeZone;
 
 + (void)adjustNumberalCenter:(struct CGPoint { double x1; double x2; }*)arg1 forNumeralIndex:(long long)arg2;
 + (id)analogClockWithStyle:(int)arg1;

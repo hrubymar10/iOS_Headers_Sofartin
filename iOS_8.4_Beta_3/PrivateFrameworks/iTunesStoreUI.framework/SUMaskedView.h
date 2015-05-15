@@ -6,7 +6,7 @@
     SUMaskProvider *_maskProvider;
 }
 
-@property(assign,retain) SUMaskProvider * maskProvider;
+@property (nonatomic, retain) SUMaskProvider *maskProvider;
 
 - (void)_reloadMask;
 - (struct CGPath { }*)copyMaskPath;

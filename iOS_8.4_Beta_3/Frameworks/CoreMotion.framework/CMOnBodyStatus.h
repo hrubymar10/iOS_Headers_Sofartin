@@ -7,8 +7,8 @@
     int fResult;
 }
 
-@property(assign,readonly) long long confidence;
-@property(assign,readonly) long long result;
+@property (nonatomic, readonly) long long confidence;
+@property (nonatomic, readonly) long long result;
 
 + (bool)supportsSecureCoding;
 

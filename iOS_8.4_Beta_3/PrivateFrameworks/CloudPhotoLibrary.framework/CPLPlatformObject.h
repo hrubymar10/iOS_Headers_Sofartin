@@ -6,7 +6,7 @@
     <CPLAbstractObject> *_abstractObject;
 }
 
-@property(assign,readonly) <CPLAbstractObject> * abstractObject;
+@property (nonatomic, readonly) <CPLAbstractObject> *abstractObject;
 
 - (void).cxx_destruct;
 - (id)abstractObject;

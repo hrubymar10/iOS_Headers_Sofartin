@@ -12,7 +12,7 @@
     void *stringTable;
 }
 
-@property(assign,retain) NSMutableData * archiverData;
+@property (readonly, retain) NSMutableData *archiverData;
 
 + (bool)archiveRootObject:(id)arg1 toFile:(id)arg2;
 + (id)archivedDataWithRootObject:(id)arg1;

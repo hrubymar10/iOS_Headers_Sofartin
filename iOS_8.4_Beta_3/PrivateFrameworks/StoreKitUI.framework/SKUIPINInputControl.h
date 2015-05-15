@@ -16,24 +16,24 @@
     SKUIViewElement *_viewElement;
 }
 
-@property(assign,readwrite) long long autocapitalizationType;
-@property(assign,readwrite) long long autocorrectionType;
-@property(assign,copy) UIColor * boxBackgroundColor;
-@property(assign,copy) UIColor * boxBorderColor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enablesReturnKeyAutomatically;
-@property(assign,copy) UIFont * font;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long keyboardAppearance;
-@property(assign,readwrite) long long keyboardType;
-@property(assign,readwrite) long long numberOfCharacters;
-@property(assign,readwrite) long long returnKeyType;
-@property(getter=isSecureTextEntry,assign,readwrite) bool secureTextEntry;
-@property(assign,readwrite) long long spellCheckingType;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
-@property(assign,copy) UIColor * textColor;
+@property (nonatomic) long long autocapitalizationType;
+@property (nonatomic) long long autocorrectionType;
+@property (nonatomic, copy) UIColor *boxBackgroundColor;
+@property (nonatomic, copy) UIColor *boxBorderColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enablesReturnKeyAutomatically;
+@property (nonatomic, copy) UIFont *font;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long keyboardAppearance;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic) long long numberOfCharacters;
+@property (nonatomic) long long returnKeyType;
+@property (getter=isSecureTextEntry, nonatomic) bool secureTextEntry;
+@property (nonatomic) long long spellCheckingType;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) UIColor *textColor;
 
 + (double)_defaultBoxSizeForFont:(id)arg1;
 + (struct CGSize { double x1; double x2; })preferredSizeForViewElement:(id)arg1 context:(id)arg2;

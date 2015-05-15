@@ -4,8 +4,8 @@
 
 @interface SATimerObject : SADomainObject
 
-@property(assign,copy) NSString * state;
-@property(assign,copy) NSNumber * timerValue;
+@property (nonatomic, copy) NSString *state;
+@property (nonatomic, copy) NSNumber *timerValue;
 
 + (id)object;
 + (id)objectWithDictionary:(id)arg1 context:(id)arg2;

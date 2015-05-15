@@ -11,12 +11,12 @@
     NSDictionary *_remoteMilestones;
 }
 
-@property(assign,readonly) NSMutableDictionary * macroActivities;
-@property(assign,readonly) NSMutableArray * measurements;
-@property(assign,readonly) NSMutableDictionary * milestones;
-@property(assign,retain) NSDictionary * remoteMacroActivities;
-@property(assign,retain) NSArray * remoteMeasurements;
-@property(assign,retain) NSDictionary * remoteMilestones;
+@property (nonatomic, readonly) NSMutableDictionary *macroActivities;
+@property (nonatomic, readonly) NSMutableArray *measurements;
+@property (nonatomic, readonly) NSMutableDictionary *milestones;
+@property (nonatomic, retain) NSDictionary *remoteMacroActivities;
+@property (nonatomic, retain) NSArray *remoteMeasurements;
+@property (nonatomic, retain) NSDictionary *remoteMilestones;
 
 + (id)shareMonitor;
 

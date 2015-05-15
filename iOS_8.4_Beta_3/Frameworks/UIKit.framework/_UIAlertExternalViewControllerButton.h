@@ -6,7 +6,7 @@
     long long _index;
 }
 
-@property(assign,readwrite) long long index;
+@property long long index;
 
 - (long long)index;
 - (void)setIndex:(long long)arg1;

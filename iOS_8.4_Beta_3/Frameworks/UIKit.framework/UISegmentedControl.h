@@ -28,17 +28,17 @@
     long long _selectedSegment;
 }
 
-@property(setter=_setTranslucentOptionsBackground:,assign,readwrite) bool _hasTranslucentOptionsBackground;
-@property(assign,readwrite) bool apportionsSegmentWidthsByContent;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isMomentary,assign,readwrite) bool momentary;
-@property(assign,readonly) unsigned long long numberOfSegments;
-@property(assign,readwrite) long long segmentedControlStyle;
-@property(assign,readwrite) long long selectedSegmentIndex;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIColor * tintColor;
+@property (setter=_setTranslucentOptionsBackground:, nonatomic) bool _hasTranslucentOptionsBackground;
+@property (nonatomic) bool apportionsSegmentWidthsByContent;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isMomentary, nonatomic) bool momentary;
+@property (nonatomic, readonly) unsigned long long numberOfSegments;
+@property (nonatomic) long long segmentedControlStyle;
+@property (nonatomic) long long selectedSegmentIndex;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIColor *tintColor;
 
 + (id)_modernBackgroundSelected:(bool)arg1 highlighted:(bool)arg2;
 + (id)_modernDividerImage;

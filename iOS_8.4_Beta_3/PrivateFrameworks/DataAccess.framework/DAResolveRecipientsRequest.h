@@ -10,11 +10,11 @@
     NSDate *_startTime;
 }
 
-@property(assign,retain) NSArray * emailAddresses;
-@property(assign,retain) NSDate * endTime;
-@property(assign,readwrite) bool retrieveAvailablilty;
-@property(assign,readwrite) bool retrieveCertificates;
-@property(assign,retain) NSDate * startTime;
+@property (nonatomic, retain) NSArray *emailAddresses;
+@property (nonatomic, retain) NSDate *endTime;
+@property (nonatomic) bool retrieveAvailablilty;
+@property (nonatomic) bool retrieveCertificates;
+@property (nonatomic, retain) NSDate *startTime;
 
 - (void).cxx_destruct;
 - (id)description;

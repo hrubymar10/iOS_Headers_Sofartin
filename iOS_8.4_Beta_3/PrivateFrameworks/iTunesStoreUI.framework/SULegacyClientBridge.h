@@ -9,14 +9,14 @@
     UITabBarController *_rootViewController;
 }
 
-@property(assign,readonly) SUClientInterface * clientInterface;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SUOverlayBackgroundViewController * overlayBackgroundViewController;
-@property(assign,readonly) SUPreviewOverlayViewController * previewOverlayViewController;
-@property(assign,retain) UITabBarController * rootViewController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) SUClientInterface *clientInterface;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SUOverlayBackgroundViewController *overlayBackgroundViewController;
+@property (nonatomic, readonly) SUPreviewOverlayViewController *previewOverlayViewController;
+@property (nonatomic, retain) UITabBarController *rootViewController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_previewOverlayViewController;

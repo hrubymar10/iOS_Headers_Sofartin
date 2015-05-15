@@ -8,10 +8,10 @@
     NSURL *_url;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,readonly) bool isRead;
-@property(assign,readonly) unsigned long long readingOptions;
-@property(assign,readonly) unsigned long long writingOptions;
+@property (copy) NSURL *URL;
+@property (readonly) bool isRead;
+@property (readonly) unsigned long long readingOptions;
+@property (readonly) unsigned long long writingOptions;
 
 + (id)readingIntentWithURL:(id)arg1 options:(unsigned long long)arg2;
 + (id)writingIntentWithURL:(id)arg1 options:(unsigned long long)arg2;

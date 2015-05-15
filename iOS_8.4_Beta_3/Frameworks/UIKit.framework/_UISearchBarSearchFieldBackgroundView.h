@@ -8,9 +8,9 @@
     unsigned long long _searchBarStyle;
 }
 
-@property(assign,readwrite) bool backgroundContainer;
-@property(assign,readwrite) long long barStyle;
-@property(assign,readwrite) unsigned long long searchBarStyle;
+@property (nonatomic) bool backgroundContainer;
+@property (nonatomic) long long barStyle;
+@property (nonatomic) unsigned long long searchBarStyle;
 
 - (id)_fillColor:(bool)arg1;
 - (id)_strokeColor:(bool)arg1;

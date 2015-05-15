@@ -20,12 +20,12 @@
     NSOutputStream *_wStream;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isOpen;
-@property(assign,readonly) NSError * streamError;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isOpen;
+@property (nonatomic, readonly) NSError *streamError;
+@property (readonly) Class superclass;
 
 + (id)_networkDispatchQueue;
 + (id)networkThread;

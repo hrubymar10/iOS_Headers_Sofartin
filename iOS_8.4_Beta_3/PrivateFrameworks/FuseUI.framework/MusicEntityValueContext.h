@@ -19,21 +19,21 @@
     bool _wantsItemPlaybackContext;
 }
 
-@property(assign,retain) <MusicEntityValueProviding> * containerEntityValueProvider;
-@property(assign,copy) MPUContentItemIdentifierCollection * containerIdentifierCollection;
-@property(assign,retain) MPPlaybackContext * containerPlaybackContext;
-@property(assign,readonly) <MusicEntityValueProviding> * entityValueProvider;
-@property(assign,retain) <MusicEntityValueProviding> * itemEntityValueProvider;
-@property(assign,readwrite) unsigned long long itemGlobalIndex;
-@property(assign,copy) MPUContentItemIdentifierCollection * itemIdentifierCollection;
-@property(assign,retain) MPPlaybackContext * itemPlaybackContext;
-@property(assign,readwrite) bool wantsContainerEntityValueProvider;
-@property(assign,readwrite) bool wantsContainerIdentifierCollection;
-@property(assign,readwrite) bool wantsContainerPlaybackContext;
-@property(assign,readwrite) bool wantsItemEntityValueProvider;
-@property(assign,readwrite) bool wantsItemGlobalIndex;
-@property(assign,readwrite) bool wantsItemIdentifierCollection;
-@property(assign,readwrite) bool wantsItemPlaybackContext;
+@property (nonatomic, retain) <MusicEntityValueProviding> *containerEntityValueProvider;
+@property (nonatomic, copy) MPUContentItemIdentifierCollection *containerIdentifierCollection;
+@property (nonatomic, retain) MPPlaybackContext *containerPlaybackContext;
+@property (nonatomic, readonly) <MusicEntityValueProviding> *entityValueProvider;
+@property (nonatomic, retain) <MusicEntityValueProviding> *itemEntityValueProvider;
+@property (nonatomic) unsigned long long itemGlobalIndex;
+@property (nonatomic, copy) MPUContentItemIdentifierCollection *itemIdentifierCollection;
+@property (nonatomic, retain) MPPlaybackContext *itemPlaybackContext;
+@property (nonatomic) bool wantsContainerEntityValueProvider;
+@property (nonatomic) bool wantsContainerIdentifierCollection;
+@property (nonatomic) bool wantsContainerPlaybackContext;
+@property (nonatomic) bool wantsItemEntityValueProvider;
+@property (nonatomic) bool wantsItemGlobalIndex;
+@property (nonatomic) bool wantsItemIdentifierCollection;
+@property (nonatomic) bool wantsItemPlaybackContext;
 
 - (void).cxx_destruct;
 - (void)configureWithMediaEntity:(id)arg1;

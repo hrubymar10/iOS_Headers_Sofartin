@@ -9,10 +9,10 @@
     PKPaymentToken *_token;
 }
 
-@property(assign,readwrite) void* billingAddress;
-@property(assign,readwrite) void* shippingAddress;
-@property(assign,retain) PKShippingMethod * shippingMethod;
-@property(assign,retain) PKPaymentToken * token;
+@property (nonatomic) void*billingAddress;
+@property (nonatomic) void*shippingAddress;
+@property (nonatomic, retain) PKShippingMethod *shippingMethod;
+@property (nonatomic, retain) PKPaymentToken *token;
 
 + (bool)supportsSecureCoding;
 

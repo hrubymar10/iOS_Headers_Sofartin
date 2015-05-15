@@ -12,13 +12,13 @@
     double _temporalResolution;
 }
 
-@property(assign,retain) CDAttribute * attribute;
-@property(assign,readwrite) bool attributeEncodesProgress;
-@property(assign,readwrite) bool considerAlternateDayPattern;
-@property(assign,readwrite) bool considerDailyPattern;
-@property(assign,readwrite) bool considerWeeklyPattern;
-@property(assign,readwrite) double lookBackDuration;
-@property(assign,readwrite) double temporalResolution;
+@property (retain) CDAttribute *attribute;
+@property bool attributeEncodesProgress;
+@property bool considerAlternateDayPattern;
+@property bool considerDailyPattern;
+@property bool considerWeeklyPattern;
+@property double lookBackDuration;
+@property double temporalResolution;
 
 - (void).cxx_destruct;
 - (id)aggregateForecastsToHaveMinAvgVar:(id)arg1;

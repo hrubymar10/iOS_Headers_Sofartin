@@ -17,18 +17,18 @@
     NSNumber *_version;
 }
 
-@property(assign,retain) NSArray * assistantCharacteristics;
-@property(assign,retain) NSDictionary * assistantServices;
-@property(assign,retain) NSDictionary * assistantUnits;
-@property(assign,retain) NSArray * hapCharacteristics;
-@property(assign,retain) HAPMetadata * hapMetadata;
-@property(assign,retain) NSArray * hapProperties;
-@property(assign,retain) NSArray * hapServices;
-@property(assign,retain) NSArray * hapSupportsAuthDataTuples;
-@property(assign,retain) NSArray * hapValueUnits;
-@property(assign,retain) NSArray * hmRequiresDeviceUnlockTuples;
-@property(assign,retain) NSNumber * schemaVersion;
-@property(assign,retain) NSNumber * version;
+@property (nonatomic, retain) NSArray *assistantCharacteristics;
+@property (nonatomic, retain) NSDictionary *assistantServices;
+@property (nonatomic, retain) NSDictionary *assistantUnits;
+@property (nonatomic, retain) NSArray *hapCharacteristics;
+@property (nonatomic, retain) HAPMetadata *hapMetadata;
+@property (nonatomic, retain) NSArray *hapProperties;
+@property (nonatomic, retain) NSArray *hapServices;
+@property (nonatomic, retain) NSArray *hapSupportsAuthDataTuples;
+@property (nonatomic, retain) NSArray *hapValueUnits;
+@property (nonatomic, retain) NSArray *hmRequiresDeviceUnlockTuples;
+@property (nonatomic, retain) NSNumber *schemaVersion;
+@property (nonatomic, retain) NSNumber *version;
 
 + (id)getBuiltinInstance;
 + (id)getSharedInstance;

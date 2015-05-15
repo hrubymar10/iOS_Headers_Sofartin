@@ -11,13 +11,13 @@
     UIViewController<EKEditItemViewControllerProtocol> *_viewController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <EKCalendarItemEditItemDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIResponder * selectedResponder;
-@property(assign,retain) <EKStyleProvider> * styleProvider;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <EKCalendarItemEditItemDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIResponder *selectedResponder;
+@property (nonatomic, retain) <EKStyleProvider> *styleProvider;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_showViewController:(id)arg1 editor:(id)arg2 animated:(bool)arg3;

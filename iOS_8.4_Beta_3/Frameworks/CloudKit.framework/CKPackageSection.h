@@ -8,9 +8,9 @@
     unsigned long long _size;
 }
 
-@property(assign,readonly) long long index;
-@property(assign,readonly) NSData * signature;
-@property(assign,readwrite) unsigned long long size;
+@property (nonatomic, readonly) long long index;
+@property (nonatomic, readonly) NSData *signature;
+@property (nonatomic) unsigned long long size;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

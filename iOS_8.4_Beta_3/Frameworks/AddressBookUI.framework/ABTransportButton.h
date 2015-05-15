@@ -8,9 +8,9 @@
     long long _transportType;
 }
 
-@property(assign,retain) UIColor * glyphColor;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) long long transportType;
+@property (nonatomic, retain) UIColor *glyphColor;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) long long transportType;
 
 + (id)transportButton;
 

@@ -11,9 +11,9 @@
     } _size;
 }
 
-@property(assign,copy) NSArray * childViewElements;
-@property(assign,readwrite) long long identifier;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly, copy) NSArray *childViewElements;
+@property (nonatomic) long long identifier;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
 
 - (void).cxx_destruct;
 - (void)_addChildViewElement:(id)arg1;

@@ -8,9 +8,9 @@
     unsigned long long _minBytesLeft;
 }
 
-@property(assign,readwrite) unsigned long long fetchMaxBytes;
-@property(assign,readwrite) unsigned long long fetchMinBytes;
-@property(assign,readwrite) unsigned long long minBytesLeft;
+@property (nonatomic) unsigned long long fetchMaxBytes;
+@property (nonatomic) unsigned long long fetchMinBytes;
+@property (nonatomic) unsigned long long minBytesLeft;
 
 - (unsigned long long)fetchMaxBytes;
 - (unsigned long long)fetchMinBytes;

@@ -14,15 +14,15 @@
     NSArray *_ungroupedNames;
 }
 
-@property(assign,retain) NSArray * acceptedNames;
-@property(assign,retain) NSArray * declinedNames;
-@property(assign,readwrite) bool groupsNames;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,retain) UIColor * highlightedTextColor;
-@property(assign,retain) NSArray * maybeNames;
-@property(assign,retain) NSArray * noReplyNames;
-@property(assign,retain) UIColor * textColor;
-@property(assign,retain) NSArray * ungroupedNames;
+@property (nonatomic, retain) NSArray *acceptedNames;
+@property (nonatomic, retain) NSArray *declinedNames;
+@property (nonatomic) bool groupsNames;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic, retain) UIColor *highlightedTextColor;
+@property (nonatomic, retain) NSArray *maybeNames;
+@property (nonatomic, retain) NSArray *noReplyNames;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic, retain) NSArray *ungroupedNames;
 
 - (void).cxx_destruct;
 - (void)_drawColumnOfStrings:(id)arg1 inRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg2 startingAtPoint:(struct CGPoint { double x1; double x2; })arg3 givenWidth:(double)arg4;

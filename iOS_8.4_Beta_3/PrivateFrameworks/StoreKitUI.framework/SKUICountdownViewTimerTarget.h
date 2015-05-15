@@ -6,7 +6,7 @@
     id _actionBlock;
 }
 
-@property(assign,copy) id actionBlock;
+@property (nonatomic, copy) id actionBlock;
 
 - (void).cxx_destruct;
 - (void)action;

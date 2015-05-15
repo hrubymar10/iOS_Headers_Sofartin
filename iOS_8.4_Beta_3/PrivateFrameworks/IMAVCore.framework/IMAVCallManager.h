@@ -18,11 +18,11 @@
     unsigned int _telephonyCallState;
 }
 
-@property(assign,retain) NSArray * _FTCalls;
-@property(setter=_setTelephonyCallState:,assign,readwrite) unsigned int _telephonyCallState;
-@property(assign,readonly) unsigned int callState;
-@property(assign,retain) NSArray * calls;
-@property(assign,readonly) bool hasActiveCall;
+@property (nonatomic, readonly, retain) NSArray *_FTCalls;
+@property (setter=_setTelephonyCallState:, nonatomic) unsigned int _telephonyCallState;
+@property (nonatomic, readonly) unsigned int callState;
+@property (nonatomic, readonly, retain) NSArray *calls;
+@property (nonatomic, readonly) bool hasActiveCall;
 
 + (id)sharedInstance;
 

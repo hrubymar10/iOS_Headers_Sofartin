@@ -7,7 +7,7 @@
     SSURLRequestProperties *_requestProperties;
 }
 
-@property(assign,copy) id outputBlock;
+@property (copy) id outputBlock;
 
 - (void).cxx_destruct;
 - (bool)_isAllowedURL:(id)arg1 withURLBag:(id)arg2;

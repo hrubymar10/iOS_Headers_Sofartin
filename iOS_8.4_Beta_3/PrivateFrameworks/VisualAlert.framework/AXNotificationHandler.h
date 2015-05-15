@@ -10,10 +10,10 @@
     bool _valid;
 }
 
-@property(setter=_setDispatcher:,assign,copy) id _dispatcher;
-@property(setter=_setNotificationName:,assign,retain) NSString * _notificationName;
-@property(setter=_setTarget:,assign,retain) id _target;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (setter=_setDispatcher:, nonatomic, copy) id _dispatcher;
+@property (setter=_setNotificationName:, nonatomic, retain) NSString *_notificationName;
+@property (setter=_setTarget:, nonatomic, retain) id _target;
+@property (getter=isValid, nonatomic, readonly) bool valid;
 
 + (id)_safelyGetObserverForIdentifier:(unsigned long long)arg1;
 + (unsigned long long)_safelyRegisterObserver:(id)arg1;

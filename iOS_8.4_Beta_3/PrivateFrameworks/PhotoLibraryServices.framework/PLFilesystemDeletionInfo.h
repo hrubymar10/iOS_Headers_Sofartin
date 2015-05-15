@@ -13,14 +13,14 @@
     NSString *_uuid;
 }
 
-@property(assign,retain) NSString * directory;
-@property(assign,retain) NSArray * fileURLs;
-@property(assign,retain) NSString * filename;
-@property(assign,retain) NSURL * objectIDURI;
-@property(assign,retain) NSString * thumbnailIdentifier;
-@property(assign,readonly) unsigned long long thumbnailIndex;
-@property(assign,readonly) unsigned long long timestamp;
-@property(assign,retain) NSString * uuid;
+@property (readonly, retain) NSString *directory;
+@property (retain) NSArray *fileURLs;
+@property (readonly, retain) NSString *filename;
+@property (readonly, retain) NSURL *objectIDURI;
+@property (retain) NSString *thumbnailIdentifier;
+@property (readonly) unsigned long long thumbnailIndex;
+@property (readonly) unsigned long long timestamp;
+@property (readonly, retain) NSString *uuid;
 
 + (id)deletionInfoWithAsset:(id)arg1;
 

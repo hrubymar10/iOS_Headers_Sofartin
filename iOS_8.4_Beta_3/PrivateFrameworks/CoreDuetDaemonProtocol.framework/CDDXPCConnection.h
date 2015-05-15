@@ -12,8 +12,8 @@
     NSString *_serviceName;
 }
 
-@property(assign,readonly) CDDebug * debug;
-@property(assign,readonly) NSString * serviceName;
+@property (readonly) CDDebug *debug;
+@property (readonly) NSString *serviceName;
 
 - (void).cxx_destruct;
 - (void)cancelConnection;

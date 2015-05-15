@@ -4,7 +4,7 @@
 
 @interface DOMWebKitCSSTransformValue : DOMCSSValueList
 
-@property(assign,readonly) unsigned short operationType;
+@property (readonly) unsigned short operationType;
 
 - (unsigned short)operationType;
 

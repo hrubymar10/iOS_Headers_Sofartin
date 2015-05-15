@@ -15,15 +15,15 @@
     bool _unknown;
 }
 
-@property(assign,retain) UIImage * displayIcon;
-@property(assign,retain) NSString * displayName;
-@property(getter=isMonogram,assign,readwrite) bool monogram;
-@property(assign,retain) id node;
-@property(assign,retain) NSString * realName;
-@property(assign,retain) NSString * secondaryName;
-@property(assign,readonly) bool supportsMixedTypes;
-@property(assign,readonly) bool supportsPasses;
-@property(getter=isUnknown,assign,readwrite) bool unknown;
+@property (retain) UIImage *displayIcon;
+@property (retain) NSString *displayName;
+@property (getter=isMonogram) bool monogram;
+@property (retain) id node;
+@property (retain) NSString *realName;
+@property (retain) NSString *secondaryName;
+@property (readonly) bool supportsMixedTypes;
+@property (readonly) bool supportsPasses;
+@property (getter=isUnknown) bool unknown;
 
 + (id)nodeWithSFNode:(struct __SFNode { }*)arg1;
 

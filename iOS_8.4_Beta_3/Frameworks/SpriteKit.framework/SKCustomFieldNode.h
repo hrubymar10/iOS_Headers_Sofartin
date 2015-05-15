@@ -4,7 +4,7 @@
 
 @interface SKCustomFieldNode : SKFieldNode
 
-@property(assign,copy) id block;
+@property (nonatomic, copy) id block;
 
 - (id)_descriptionClassName;
 - (void)_initialize;

@@ -8,13 +8,13 @@
     id _value;
 }
 
-@property(assign,readwrite) long long comparisonType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * property;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id value;
+@property (nonatomic) long long comparisonType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *property;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id value;
 
 + (id)predicateWithValue:(id)arg1 forProperty:(id)arg2;
 + (id)predicateWithValue:(id)arg1 forProperty:(id)arg2 comparisonType:(long long)arg3;

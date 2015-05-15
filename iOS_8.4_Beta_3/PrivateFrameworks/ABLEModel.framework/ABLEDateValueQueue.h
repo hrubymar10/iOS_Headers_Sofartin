@@ -6,7 +6,7 @@
     NSMutableArray *_queue;
 }
 
-@property(assign,retain) NSMutableArray * queue;
+@property (retain) NSMutableArray *queue;
 
 - (void).cxx_destruct;
 - (void)addDate:(id)arg1 value:(id)arg2;

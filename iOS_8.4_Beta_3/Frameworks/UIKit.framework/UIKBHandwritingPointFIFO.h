@@ -6,7 +6,7 @@
     UIKBHandwritingPointFIFO *_nextFIFO;
 }
 
-@property(assign,retain) UIKBHandwritingPointFIFO * nextFIFO;
+@property (nonatomic, retain) UIKBHandwritingPointFIFO *nextFIFO;
 
 - (void)addPoint:(struct CGPoint { double x1; double x2; })arg1;
 - (void)clear;

@@ -23,8 +23,8 @@
     NSLayoutConstraint *_topLabelConstraint;
 }
 
-@property(assign,readonly) MPUExtrasConstrainedArtworkContainerView * artworkContainerView;
-@property(assign,readwrite) IKListItemLockupElement * element;
+@property (nonatomic, readonly) MPUExtrasConstrainedArtworkContainerView *artworkContainerView;
+@property (nonatomic) IKListItemLockupElement *element;
 
 - (void).cxx_destruct;
 - (id)artworkContainerView;

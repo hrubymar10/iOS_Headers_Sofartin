@@ -6,8 +6,8 @@
     id _requestInternal;
 }
 
-@property(assign,readwrite) <SKRequestDelegate> * delegate;
-@property(assign,copy) SKPaymentQueueClient * paymentQueueClient;
+@property (nonatomic) <SKRequestDelegate> *delegate;
+@property (nonatomic, copy) SKPaymentQueueClient *paymentQueueClient;
 
 - (void)_beginBackgroundTask;
 - (void)_endBackgroundTask;

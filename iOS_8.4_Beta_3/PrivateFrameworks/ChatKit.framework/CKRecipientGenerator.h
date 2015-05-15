@@ -6,7 +6,7 @@
     NSArray *_searchABPropertyTypes;
 }
 
-@property(assign,retain) NSArray * searchABPropertyTypes;
+@property (nonatomic, retain) NSArray *searchABPropertyTypes;
 
 + (id)sharedRecipientGenerator;
 

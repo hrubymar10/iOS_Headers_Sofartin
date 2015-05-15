@@ -7,8 +7,8 @@
     NSUUID *mUUID;
 }
 
-@property(assign,retain) TSCHReferenceLineNonStyle * nonStyle;
-@property(assign,readonly) NSUUID * uuid;
+@property (nonatomic, retain) TSCHReferenceLineNonStyle *nonStyle;
+@property (nonatomic, readonly) NSUUID *uuid;
 
 - (void)dealloc;
 - (id)description;

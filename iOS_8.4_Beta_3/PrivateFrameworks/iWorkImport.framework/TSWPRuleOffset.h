@@ -7,8 +7,8 @@
     double _dY;
 }
 
-@property(assign,readonly) double dX;
-@property(assign,readonly) double dY;
+@property (nonatomic, readonly) double dX;
+@property (nonatomic, readonly) double dY;
 
 + (id)ruleOffset;
 

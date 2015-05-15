@@ -33,22 +33,22 @@
     TSPUnknownContent *_unknownContent;
 }
 
-@property(assign,readonly) bool canValidateReferences;
-@property(assign,readonly) <TSPUnarchiverDelegate> * delegate;
-@property(assign,readonly) bool documentHasCurrentFileFormatVersion;
-@property(assign,readonly) unsigned long long fileFormatVersion;
-@property(assign,readonly) bool hasDocumentVersionUUID;
-@property(assign,readonly) bool hasPreUFFVersion;
-@property(assign,readonly) bool isCrossAppPaste;
-@property(assign,readonly) bool isCrossDocumentPaste;
-@property(assign,readonly) bool isFromCopy;
-@property(assign,readonly) unsigned int messageType;
-@property(assign,readonly) unsigned long long messageVersion;
-@property(assign,readonly) <TSPObjectDelegate> * objectDelegate;
-@property(assign,readonly) long long objectIdentifier;
-@property(assign,readonly) NSUUID * objectUUID;
-@property(assign,readonly) unsigned long long preUFFVersion;
-@property(assign,readonly) TSPUnknownContent * unknownContent;
+@property (nonatomic, readonly) bool canValidateReferences;
+@property (nonatomic, readonly) <TSPUnarchiverDelegate> *delegate;
+@property (nonatomic, readonly) bool documentHasCurrentFileFormatVersion;
+@property (nonatomic, readonly) unsigned long long fileFormatVersion;
+@property (nonatomic, readonly) bool hasDocumentVersionUUID;
+@property (nonatomic, readonly) bool hasPreUFFVersion;
+@property (nonatomic, readonly) bool isCrossAppPaste;
+@property (nonatomic, readonly) bool isCrossDocumentPaste;
+@property (nonatomic, readonly) bool isFromCopy;
+@property (nonatomic, readonly) unsigned int messageType;
+@property (nonatomic, readonly) unsigned long long messageVersion;
+@property (nonatomic, readonly) <TSPObjectDelegate> *objectDelegate;
+@property (nonatomic, readonly) long long objectIdentifier;
+@property (nonatomic, readonly) NSUUID *objectUUID;
+@property (nonatomic, readonly) unsigned long long preUFFVersion;
+@property (nonatomic, readonly) TSPUnknownContent *unknownContent;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

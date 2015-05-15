@@ -6,7 +6,7 @@
     <CalendarPublishingActivityDelegate> *_activityDelegate;
 }
 
-@property(assign,readwrite) <CalendarPublishingActivityDelegate> * activityDelegate;
+@property <CalendarPublishingActivityDelegate> *activityDelegate;
 
 - (void).cxx_destruct;
 - (void)_prepareActivity:(id)arg1;

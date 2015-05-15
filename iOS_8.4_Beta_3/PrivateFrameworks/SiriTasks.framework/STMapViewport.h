@@ -12,13 +12,13 @@
     double _westLongitude;
 }
 
-@property(assign,readwrite) double eastLongitude;
-@property(assign,readwrite) double northLatitude;
-@property(assign,readwrite) double southLatitude;
-@property(assign,readwrite) double timeSinceViewportChanged;
-@property(assign,readwrite) double timeSinceViewportEnteredForeground;
-@property(assign,copy) NSArray * viewportVertices;
-@property(assign,readwrite) double westLongitude;
+@property (nonatomic) double eastLongitude;
+@property (nonatomic) double northLatitude;
+@property (nonatomic) double southLatitude;
+@property (nonatomic) double timeSinceViewportChanged;
+@property (nonatomic) double timeSinceViewportEnteredForeground;
+@property (nonatomic, copy) NSArray *viewportVertices;
+@property (nonatomic) double westLongitude;
 
 + (bool)supportsSecureCoding;
 

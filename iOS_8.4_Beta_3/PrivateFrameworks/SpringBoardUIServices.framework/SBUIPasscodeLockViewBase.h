@@ -30,27 +30,27 @@
     int _style;
 }
 
-@property(getter=_entryField,setter=_setEntryField:,assign,retain) SBUIPasscodeEntryField * _entryField;
-@property(assign,readwrite) double backgroundAlpha;
-@property(assign,retain) <SBFLegibilitySettingsProvider> * backgroundLegibilitySettingsProvider;
-@property(assign,readwrite) unsigned long long biometricMatchMode;
-@property(assign,retain) UIColor * customBackgroundColor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SBUIPasscodeLockViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=_luminosityBoost,setter=_setLuminosityBoost:,assign,readwrite) double luminosityBoost;
-@property(assign,readonly) NSString * passcode;
-@property(assign,readwrite) bool playsKeypadSounds;
-@property(getter=isScreenOn,assign,readwrite) bool screenOn;
-@property(assign,readwrite) bool shouldResetForFailedPasscodeAttempt;
-@property(assign,readwrite) bool showsEmergencyCallButton;
-@property(assign,readwrite) bool showsStatusField;
-@property(getter=_statusState,setter=_setStatusState:,assign,readwrite) unsigned long long statusState;
-@property(getter=_statusSubtitleText,assign,copy) NSString * statusSubtitleText;
-@property(getter=_statusText,assign,copy) NSString * statusText;
-@property(assign,readwrite) int style;
-@property(assign,readonly) Class superclass;
+@property (getter=_entryField, setter=_setEntryField:, nonatomic, retain) SBUIPasscodeEntryField *_entryField;
+@property (nonatomic) double backgroundAlpha;
+@property (nonatomic, retain) <SBFLegibilitySettingsProvider> *backgroundLegibilitySettingsProvider;
+@property (nonatomic) unsigned long long biometricMatchMode;
+@property (nonatomic, retain) UIColor *customBackgroundColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SBUIPasscodeLockViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=_luminosityBoost, setter=_setLuminosityBoost:, nonatomic) double luminosityBoost;
+@property (nonatomic, readonly) NSString *passcode;
+@property (nonatomic) bool playsKeypadSounds;
+@property (getter=isScreenOn, nonatomic) bool screenOn;
+@property (nonatomic) bool shouldResetForFailedPasscodeAttempt;
+@property (nonatomic) bool showsEmergencyCallButton;
+@property (nonatomic) bool showsStatusField;
+@property (getter=_statusState, setter=_setStatusState:, nonatomic) unsigned long long statusState;
+@property (getter=_statusSubtitleText, nonatomic, readonly, copy) NSString *statusSubtitleText;
+@property (getter=_statusText, nonatomic, readonly, copy) NSString *statusText;
+@property (nonatomic) int style;
+@property (readonly) Class superclass;
 
 - (void)_clearBrightnessChangeTimer;
 - (id)_defaultStatusText;

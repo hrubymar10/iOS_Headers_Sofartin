@@ -13,13 +13,13 @@
     bool _shouldSendContentAvailable;
 }
 
-@property(assign,retain) NSMutableArray * additionalFields;
-@property(assign,retain) CKDPSubscriptionNotificationAlert * alert;
-@property(assign,readonly) bool hasAlert;
-@property(assign,readwrite) bool hasShouldBadge;
-@property(assign,readwrite) bool hasShouldSendContentAvailable;
-@property(assign,readwrite) bool shouldBadge;
-@property(assign,readwrite) bool shouldSendContentAvailable;
+@property (nonatomic, retain) NSMutableArray *additionalFields;
+@property (nonatomic, retain) CKDPSubscriptionNotificationAlert *alert;
+@property (nonatomic, readonly) bool hasAlert;
+@property (nonatomic) bool hasShouldBadge;
+@property (nonatomic) bool hasShouldSendContentAvailable;
+@property (nonatomic) bool shouldBadge;
+@property (nonatomic) bool shouldSendContentAvailable;
 
 - (void).cxx_destruct;
 - (void)addAdditionalFields:(id)arg1;

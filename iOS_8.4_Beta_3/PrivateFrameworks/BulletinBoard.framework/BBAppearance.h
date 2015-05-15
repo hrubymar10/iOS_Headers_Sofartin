@@ -11,16 +11,16 @@
     NSString *_viewClassName;
 }
 
-@property(assign,copy) BBColor * color;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) BBImage * image;
-@property(assign,readwrite) long long style;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
-@property(assign,copy) BBColor * titleColor;
-@property(assign,copy) NSString * viewClassName;
+@property (nonatomic, copy) BBColor *color;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) BBImage *image;
+@property (nonatomic) long long style;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) BBColor *titleColor;
+@property (nonatomic, copy) NSString *viewClassName;
 
 + (id)appearanceWithTitle:(id)arg1;
 + (bool)supportsSecureCoding;

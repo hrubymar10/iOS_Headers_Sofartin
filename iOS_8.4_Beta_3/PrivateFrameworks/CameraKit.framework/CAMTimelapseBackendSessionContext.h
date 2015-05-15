@@ -9,10 +9,10 @@
     NSString *_timelapseUUID;
 }
 
-@property(assign,retain) NSArray * filesToDelete;
-@property(assign,retain) NSArray * filesToWrite;
-@property(assign,retain) CAMTimelapseState * state;
-@property(assign,readonly) NSString * timelapseUUID;
+@property (nonatomic, retain) NSArray *filesToDelete;
+@property (nonatomic, retain) NSArray *filesToWrite;
+@property (nonatomic, retain) CAMTimelapseState *state;
+@property (nonatomic, readonly) NSString *timelapseUUID;
 
 - (void).cxx_destruct;
 - (id)description;

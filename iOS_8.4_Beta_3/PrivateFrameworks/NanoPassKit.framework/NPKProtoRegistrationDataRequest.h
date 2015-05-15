@@ -6,8 +6,8 @@
     NSString *_authToken;
 }
 
-@property(assign,retain) NSString * authToken;
-@property(assign,readonly) bool hasAuthToken;
+@property (nonatomic, retain) NSString *authToken;
+@property (nonatomic, readonly) bool hasAuthToken;
 
 - (void).cxx_destruct;
 - (id)authToken;

@@ -9,14 +9,14 @@
     long long _state;
 }
 
-@property(assign,readwrite) long long btBandwidthState;
-@property(assign,retain) XPCClient * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <WPContinuityDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) Class superclass;
+@property long long btBandwidthState;
+@property (nonatomic, retain) XPCClient *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <WPContinuityDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property long long state;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (long long)btBandwidthState;

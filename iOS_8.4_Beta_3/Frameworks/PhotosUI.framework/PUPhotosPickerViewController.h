@@ -10,13 +10,13 @@
     PUPhotosPickerViewControllerSpec *_spec;
 }
 
-@property(setter=_setTabbedLibraryViewController:,assign,retain) PUTabbedLibraryViewController * _tabbedLibraryViewController;
-@property(assign,copy) id completionHandler;
-@property(assign,readwrite) int currentContentMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (setter=_setTabbedLibraryViewController:, nonatomic, retain) PUTabbedLibraryViewController *_tabbedLibraryViewController;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic) int currentContentMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_initWithSpec:(id)arg1 targetAlbum:(struct NSObject { Class x1; }*)arg2 orTargetAlbumName:(id)arg3 isLocal:(bool)arg4;

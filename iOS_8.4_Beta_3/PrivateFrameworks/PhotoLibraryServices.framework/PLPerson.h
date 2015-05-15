@@ -4,9 +4,9 @@
 
 @interface PLPerson : PLManagedObject
 
-@property(assign,retain) NSString * fullName;
-@property(assign,retain) NSSet * personReferences;
-@property(assign,retain) NSString * personUUID;
+@property (nonatomic, retain) NSString *fullName;
+@property (nonatomic, retain) NSSet *personReferences;
+@property (nonatomic, retain) NSString *personUUID;
 
 + (id)allPersonsInManagedObjectContext:(id)arg1;
 + (id)entityInManagedObjectContext:(id)arg1;

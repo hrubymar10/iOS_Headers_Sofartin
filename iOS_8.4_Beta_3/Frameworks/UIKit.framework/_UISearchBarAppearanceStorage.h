@@ -10,9 +10,9 @@
     UIImage *separatorImage;
 }
 
-@property(assign,retain) UIImage * scopeBarBackgroundImage;
-@property(assign,retain) NSValue * searchFieldPositionAdjustment;
-@property(assign,retain) UIImage * separatorImage;
+@property (nonatomic, retain) UIImage *scopeBarBackgroundImage;
+@property (nonatomic, retain) NSValue *searchFieldPositionAdjustment;
+@property (nonatomic, retain) UIImage *separatorImage;
 
 - (void)dealloc;
 - (id)imageForIcon:(long long)arg1 state:(unsigned long long)arg2;

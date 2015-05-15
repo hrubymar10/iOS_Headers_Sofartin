@@ -15,12 +15,12 @@
     NSObject<OS_dispatch_queue> *_statusBarQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPAVController * player;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPAVController *player;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (long long)_MPNowPlayingDownloadStateForDownload:(id)arg1;

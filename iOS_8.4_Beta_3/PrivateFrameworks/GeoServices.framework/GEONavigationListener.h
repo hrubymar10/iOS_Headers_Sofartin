@@ -9,8 +9,8 @@
     id _routeSummaryUpdatedHandler;
 }
 
-@property(assign,copy) id guidanceStateUpdatedHandler;
-@property(assign,copy) id routeSummaryUpdatedHandler;
+@property (nonatomic, copy) id guidanceStateUpdatedHandler;
+@property (nonatomic, copy) id routeSummaryUpdatedHandler;
 
 - (void)_closeConnection;
 - (void)_createConnection;

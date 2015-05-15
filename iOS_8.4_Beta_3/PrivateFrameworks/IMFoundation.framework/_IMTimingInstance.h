@@ -9,8 +9,8 @@
     double _totalTime;
 }
 
-@property(assign,readwrite) bool isRunning;
-@property(assign,readwrite) double totalTime;
+@property (nonatomic) bool isRunning;
+@property (nonatomic) double totalTime;
 
 + (id)createTimingInstanceWithStartTime:(float)arg1;
 

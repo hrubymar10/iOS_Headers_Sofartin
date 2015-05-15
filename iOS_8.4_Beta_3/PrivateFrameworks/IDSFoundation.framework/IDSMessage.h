@@ -8,9 +8,9 @@
     NSNumber *_wantsDeliveryStatus;
 }
 
-@property(assign,copy) NSDictionary * deliveryStatusContext;
-@property(assign,copy) NSNumber * version;
-@property(assign,copy) NSNumber * wantsDeliveryStatus;
+@property (copy) NSDictionary *deliveryStatusContext;
+@property (copy) NSNumber *version;
+@property (copy) NSNumber *wantsDeliveryStatus;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

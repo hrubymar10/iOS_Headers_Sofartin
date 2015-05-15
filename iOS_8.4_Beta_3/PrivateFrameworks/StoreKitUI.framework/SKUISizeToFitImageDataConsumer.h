@@ -12,9 +12,9 @@
     double _gradientHeight;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } constraintSize;
-@property(assign,retain) UIColor * gradientEndColor;
-@property(assign,readwrite) double gradientHeight;
+@property (nonatomic) struct CGSize { double x1; double x2; } constraintSize;
+@property (nonatomic, retain) UIColor *gradientEndColor;
+@property (nonatomic) double gradientHeight;
 
 + (id)consumerWithConstraintSize2:(struct CGSize { double x1; double x2; })arg1;
 + (id)consumerWithConstraintSize:(struct CGSize { double x1; double x2; })arg1;

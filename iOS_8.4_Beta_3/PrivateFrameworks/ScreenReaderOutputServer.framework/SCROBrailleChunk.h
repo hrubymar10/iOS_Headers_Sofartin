@@ -24,7 +24,7 @@
     long long _token;
 }
 
-@property(assign,readonly) NSString * language;
+@property (nonatomic, readonly) NSString *language;
 
 + (void)initialize;
 

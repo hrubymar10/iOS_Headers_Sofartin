@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_xpcConnectionCreationQueue;
 }
 
-@property(assign,retain) NSXPCConnection * xpcConnection;
-@property(assign,retain) NSObject<OS_dispatch_queue> * xpcConnectionCreationQueue;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *xpcConnectionCreationQueue;
 
 + (id)sharedInstance;
 

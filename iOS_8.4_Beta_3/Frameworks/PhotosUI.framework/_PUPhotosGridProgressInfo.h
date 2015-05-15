@@ -10,11 +10,11 @@
     double _progress;
 }
 
-@property(assign,retain) PHAsset * asset;
-@property(assign,retain) NSIndexPath * cachedIndexPath;
-@property(assign,retain) PHAssetCollection * collection;
-@property(assign,retain) NSString * identifier;
-@property(assign,readwrite) double progress;
+@property (nonatomic, retain) PHAsset *asset;
+@property (nonatomic, retain) NSIndexPath *cachedIndexPath;
+@property (nonatomic, retain) PHAssetCollection *collection;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic) double progress;
 
 - (void).cxx_destruct;
 - (id)asset;

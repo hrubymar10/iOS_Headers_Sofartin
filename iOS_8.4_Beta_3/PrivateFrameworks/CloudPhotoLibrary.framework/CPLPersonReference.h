@@ -7,8 +7,8 @@
     NSString *_personIdentifier;
 }
 
-@property(assign,copy) NSDictionary * extraProperties;
-@property(assign,copy) NSString * personIdentifier;
+@property (nonatomic, copy) NSDictionary *extraProperties;
+@property (nonatomic, copy) NSString *personIdentifier;
 
 + (bool)supportsSecureCoding;
 

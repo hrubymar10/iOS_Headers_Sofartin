@@ -11,14 +11,14 @@
     char *_ssstate;
 }
 
-@property(assign,readonly) unsigned int eventCode;
-@property(assign,readonly) NSString * eventCodeString;
-@property(assign,readwrite) struct _PLBasebandEventHeader { struct _PLBasebandMessageHeader { unsigned char x_1_1_1; } x1; unsigned int x2; unsigned char x3[8]; unsigned char x4; }* header;
-@property(assign,retain) NSData * payload;
-@property(assign,readwrite) unsigned char skip;
-@property(assign,readwrite) char * ssaction;
-@property(assign,readwrite) struct _PLBasebandSystemSelectionEvent { unsigned short x1; }* ssevent;
-@property(assign,readwrite) char * ssstate;
+@property (readonly) unsigned int eventCode;
+@property (readonly) NSString *eventCodeString;
+@property struct _PLBasebandEventHeader { struct _PLBasebandMessageHeader { unsigned char x_1_1_1; } x1; unsigned int x2; unsigned char x3[8]; unsigned char x4; }*header;
+@property (retain) NSData *payload;
+@property unsigned char skip;
+@property char *ssaction;
+@property struct _PLBasebandSystemSelectionEvent { unsigned short x1; }*ssevent;
+@property char *ssstate;
 
 - (void).cxx_destruct;
 - (id)actionStringSystemSelection;

@@ -18,17 +18,17 @@
     bool _workspaceLocked;
 }
 
-@property(assign,readonly) double backgroundTimeRemaining;
-@property(assign,readwrite) bool connectedToExternalAccessories;
-@property(assign,readwrite) <BKSProcessDelegate> * delegate;
-@property(assign,readwrite) long long exitStatus;
-@property(assign,readwrite) bool nowPlayingWithAudio;
-@property(assign,readwrite) bool recordingAudio;
-@property(assign,readwrite) bool supportsTaskSuspension;
-@property(assign,readwrite) int taskState;
-@property(assign,readwrite) long long terminationReason;
-@property(assign,readwrite) int visibility;
-@property(assign,readwrite) bool workspaceLocked;
+@property (nonatomic, readonly) double backgroundTimeRemaining;
+@property (nonatomic) bool connectedToExternalAccessories;
+@property (nonatomic) <BKSProcessDelegate> *delegate;
+@property (nonatomic) long long exitStatus;
+@property (nonatomic) bool nowPlayingWithAudio;
+@property (nonatomic) bool recordingAudio;
+@property (nonatomic) bool supportsTaskSuspension;
+@property (nonatomic) int taskState;
+@property (nonatomic) long long terminationReason;
+@property (nonatomic) int visibility;
+@property (nonatomic) bool workspaceLocked;
 
 + (double)backgroundTimeRemaining;
 + (id)busyExtensionInstances:(id)arg1;

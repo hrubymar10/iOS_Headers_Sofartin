@@ -15,24 +15,24 @@
     long long _numDeviceOrientationObservers;
 }
 
-@property(setter=_setBacklightLevel:,assign,readwrite) float _backlightLevel;
-@property(assign,readonly) float batteryLevel;
-@property(getter=isBatteryMonitoringEnabled,assign,readwrite) bool batteryMonitoringEnabled;
-@property(assign,readonly) long long batteryState;
-@property(assign,retain) NSString * buildVersion;
-@property(getter=isGeneratingDeviceOrientationNotifications,assign,readonly) bool generatesDeviceOrientationNotifications;
-@property(assign,retain) NSUUID * identifierForVendor;
-@property(assign,retain) NSString * localizedModel;
-@property(assign,retain) NSString * model;
-@property(getter=isMultitaskingSupported,assign,readonly) bool multitaskingSupported;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) long long orientation;
-@property(assign,readonly) long long orientation;
-@property(getter=isProximityMonitoringEnabled,assign,readwrite) bool proximityMonitoringEnabled;
-@property(assign,readonly) bool proximityState;
-@property(assign,retain) NSString * systemName;
-@property(assign,retain) NSString * systemVersion;
-@property(assign,readonly) long long userInterfaceIdiom;
+@property (setter=_setBacklightLevel:, nonatomic) float _backlightLevel;
+@property (nonatomic, readonly) float batteryLevel;
+@property (getter=isBatteryMonitoringEnabled, nonatomic) bool batteryMonitoringEnabled;
+@property (nonatomic, readonly) long long batteryState;
+@property (nonatomic, readonly, retain) NSString *buildVersion;
+@property (getter=isGeneratingDeviceOrientationNotifications, nonatomic, readonly) bool generatesDeviceOrientationNotifications;
+@property (nonatomic, readonly, retain) NSUUID *identifierForVendor;
+@property (nonatomic, readonly, retain) NSString *localizedModel;
+@property (nonatomic, readonly, retain) NSString *model;
+@property (getter=isMultitaskingSupported, nonatomic, readonly) bool multitaskingSupported;
+@property (nonatomic, readonly, retain) NSString *name;
+@property (nonatomic) long long orientation;
+@property (nonatomic, readonly) long long orientation;
+@property (getter=isProximityMonitoringEnabled, nonatomic) bool proximityMonitoringEnabled;
+@property (nonatomic, readonly) bool proximityState;
+@property (nonatomic, readonly, retain) NSString *systemName;
+@property (nonatomic, readonly, retain) NSString *systemVersion;
+@property (nonatomic, readonly) long long userInterfaceIdiom;
 
 + (bool)_isWatch;
 + (bool)_isWatchCompanion;

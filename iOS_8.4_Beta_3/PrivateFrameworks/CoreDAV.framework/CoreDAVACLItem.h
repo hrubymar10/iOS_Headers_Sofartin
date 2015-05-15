@@ -6,7 +6,7 @@
     NSMutableSet *_accessControlEntities;
 }
 
-@property(assign,retain) NSMutableSet * accessControlEntities;
+@property (nonatomic, retain) NSMutableSet *accessControlEntities;
 
 + (id)copyParseRules;
 

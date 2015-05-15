@@ -17,13 +17,13 @@
     NSString *_stationStringID;
 }
 
-@property(assign,readonly) RadioArtworkCollection * artworkCollection;
-@property(assign,readonly) RadioStation * station;
-@property(assign,copy) NSDictionary * stationDictionary;
-@property(assign,copy) NSString * stationHash;
-@property(assign,readonly) long long stationID;
-@property(assign,copy) NSString * stationName;
-@property(assign,copy) NSString * stationStringID;
+@property (nonatomic, readonly) RadioArtworkCollection *artworkCollection;
+@property (nonatomic, readonly) RadioStation *station;
+@property (nonatomic, readonly, copy) NSDictionary *stationDictionary;
+@property (nonatomic, readonly, copy) NSString *stationHash;
+@property (nonatomic, readonly) long long stationID;
+@property (nonatomic, readonly, copy) NSString *stationName;
+@property (nonatomic, readonly, copy) NSString *stationStringID;
 
 + (bool)supportsSecureCoding;
 

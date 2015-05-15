@@ -9,10 +9,10 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readwrite) double initialPlaybackTime;
-@property(assign,readonly) long long itemIdentifier;
-@property(assign,readonly) double playbackDuration;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic) double initialPlaybackTime;
+@property (nonatomic, readonly) long long itemIdentifier;
+@property (nonatomic, readonly) double playbackDuration;
 
 - (void).cxx_destruct;
 - (id)URL;

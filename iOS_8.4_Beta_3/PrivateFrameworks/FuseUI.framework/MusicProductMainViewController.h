@@ -32,23 +32,23 @@
     bool _wantsRefreshActivityIndicator;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readonly) MusicEntityValueContext * containerEntityValueContext;
-@property(assign,readonly) <MusicEntityValueProviding> * containerEntityValueProvider;
-@property(assign,readonly) UIScrollView * containerScrollView;
-@property(assign,readwrite) double contentBottomLayoutGuide;
-@property(assign,readwrite) double contentTopLayoutGuide;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicProductMainViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long editableComponents;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long presentationSource;
-@property(assign,readonly) MusicProductAdditionalMetadataViewController * productAdditionalMetadataViewController;
-@property(assign,readonly) MusicEntityProductHeaderLockupView * productHeaderLockupView;
-@property(assign,retain) SKUIDocumentContainerViewController * relatedContentDocumentContainerViewController;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) MusicProductTracklistTableViewController * tracklistTableViewController;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) MusicEntityValueContext *containerEntityValueContext;
+@property (nonatomic, readonly) <MusicEntityValueProviding> *containerEntityValueProvider;
+@property (nonatomic, readonly) UIScrollView *containerScrollView;
+@property (nonatomic) double contentBottomLayoutGuide;
+@property (nonatomic) double contentTopLayoutGuide;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicProductMainViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) unsigned long long editableComponents;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long presentationSource;
+@property (nonatomic, readonly) MusicProductAdditionalMetadataViewController *productAdditionalMetadataViewController;
+@property (nonatomic, readonly) MusicEntityProductHeaderLockupView *productHeaderLockupView;
+@property (nonatomic, retain) SKUIDocumentContainerViewController *relatedContentDocumentContainerViewController;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) MusicProductTracklistTableViewController *tracklistTableViewController;
 
 - (void).cxx_destruct;
 - (bool)_calculateWantsRefreshButton;

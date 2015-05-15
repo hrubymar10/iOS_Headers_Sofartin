@@ -15,14 +15,14 @@
     int _navLabelType;
 }
 
-@property(assign,readwrite) long long alignment;
-@property(assign,readwrite) float desiredOffsetDistance;
-@property(assign,readwrite) unsigned int displayID;
-@property(assign,readonly) bool isJunctionLabel;
-@property(assign,readonly) bool isRoadLabel;
-@property(assign,readonly) bool isShieldLabel;
-@property(assign,readonly) const struct shared_ptr<vk::NavLabel> { struct NavLabel {} *x1; struct __shared_weak_count {} *x2; }* label;
-@property(assign,readwrite) <VKLabelNavFeature> * navFeature;
+@property (nonatomic) long long alignment;
+@property (nonatomic) float desiredOffsetDistance;
+@property (nonatomic) unsigned int displayID;
+@property (nonatomic, readonly) bool isJunctionLabel;
+@property (nonatomic, readonly) bool isRoadLabel;
+@property (nonatomic, readonly) bool isShieldLabel;
+@property (nonatomic, readonly) const struct shared_ptr<vk::NavLabel> { struct NavLabel {} *x1; struct __shared_weak_count {} *x2; }*label;
+@property (nonatomic) <VKLabelNavFeature> *navFeature;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

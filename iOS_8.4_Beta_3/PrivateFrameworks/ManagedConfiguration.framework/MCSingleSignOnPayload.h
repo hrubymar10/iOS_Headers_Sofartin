@@ -7,8 +7,8 @@
     MCSingleSignOnPayloadKerberosInfo *_kerberosInfo;
 }
 
-@property(assign,retain) NSString * humanReadableName;
-@property(assign,retain) MCSingleSignOnPayloadKerberosInfo * kerberosInfo;
+@property (nonatomic, retain) NSString *humanReadableName;
+@property (nonatomic, retain) MCSingleSignOnPayloadKerberosInfo *kerberosInfo;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

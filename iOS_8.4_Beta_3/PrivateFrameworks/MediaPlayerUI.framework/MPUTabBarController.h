@@ -8,12 +8,12 @@
     NSArray *_viewControllerIdentifiers;
 }
 
-@property(assign,copy) NSArray * customizableViewControllerIdentifiers;
-@property(assign,readwrite) <MPUTabBarControllerDelegate> * delegate;
-@property(assign,readonly) NSArray * filteredViewControllerIdentifiers;
-@property(assign,copy) NSString * selectedViewControllerIdentifier;
-@property(assign,retain) Class viewControllerFactoryClass;
-@property(assign,copy) NSArray * viewControllerIdentifiers;
+@property (nonatomic, copy) NSArray *customizableViewControllerIdentifiers;
+@property (nonatomic) <MPUTabBarControllerDelegate> *delegate;
+@property (nonatomic, readonly) NSArray *filteredViewControllerIdentifiers;
+@property (nonatomic, copy) NSString *selectedViewControllerIdentifier;
+@property (nonatomic, retain) Class viewControllerFactoryClass;
+@property (nonatomic, copy) NSArray *viewControllerIdentifiers;
 
 + (Class)_moreNavigationControllerClass;
 

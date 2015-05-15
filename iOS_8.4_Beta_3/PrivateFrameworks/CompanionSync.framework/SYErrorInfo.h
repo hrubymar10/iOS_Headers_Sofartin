@@ -8,10 +8,10 @@
     NSData *_userInfo;
 }
 
-@property(assign,readwrite) unsigned int code;
-@property(assign,retain) NSString * domain;
-@property(assign,readonly) bool hasUserInfo;
-@property(assign,retain) NSData * userInfo;
+@property (nonatomic) unsigned int code;
+@property (nonatomic, retain) NSString *domain;
+@property (nonatomic, readonly) bool hasUserInfo;
+@property (nonatomic, retain) NSData *userInfo;
 
 + (void)initialize;
 

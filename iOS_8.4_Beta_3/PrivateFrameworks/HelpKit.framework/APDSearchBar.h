@@ -13,12 +13,12 @@
     UIView *_searchGlassView;
 }
 
-@property(assign,readwrite) bool RTL;
-@property(assign,readwrite) UIView * clearButtonView;
-@property(assign,readwrite) UIButton * searchBarCancelButton;
-@property(assign,retain) NSString * searchBarCancelText;
-@property(assign,readwrite) UITextField * searchBarTextField;
-@property(assign,readwrite) UIView * searchGlassView;
+@property (nonatomic) bool RTL;
+@property (nonatomic) UIView *clearButtonView;
+@property (nonatomic) UIButton *searchBarCancelButton;
+@property (nonatomic, retain) NSString *searchBarCancelText;
+@property (nonatomic) UITextField *searchBarTextField;
+@property (nonatomic) UIView *searchGlassView;
 
 - (void).cxx_destruct;
 - (bool)RTL;

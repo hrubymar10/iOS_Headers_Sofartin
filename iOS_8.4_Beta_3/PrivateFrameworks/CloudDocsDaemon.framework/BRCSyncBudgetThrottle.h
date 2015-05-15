@@ -7,9 +7,9 @@
     float _values;
 }
 
-@property(assign,readonly) float lastDay;
-@property(assign,readonly) float lastHour;
-@property(assign,readonly) float lastMinute;
+@property (nonatomic, readonly) float lastDay;
+@property (nonatomic, readonly) float lastHour;
+@property (nonatomic, readonly) float lastMinute;
 
 + (bool)supportsSecureCoding;
 

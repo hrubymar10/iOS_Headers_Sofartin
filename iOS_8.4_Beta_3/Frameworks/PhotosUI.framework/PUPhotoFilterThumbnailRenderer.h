@@ -10,11 +10,11 @@
     UIImage *_inputImage;
 }
 
-@property(setter=_setCiContext:,assign,retain) CIContext * _ciContext;
-@property(setter=_setEaglContext:,assign,retain) EAGLContext * _eaglContext;
-@property(setter=_setRenderQueue:,assign,retain) NSObject<OS_dispatch_queue> * _renderQueue;
-@property(setter=_setThumbnailImage:,assign,retain) UIImage * _thumbnailImage;
-@property(assign,readonly) UIImage * inputImage;
+@property (setter=_setCiContext:, nonatomic, retain) CIContext *_ciContext;
+@property (setter=_setEaglContext:, nonatomic, retain) EAGLContext *_eaglContext;
+@property (setter=_setRenderQueue:, nonatomic, retain) NSObject<OS_dispatch_queue> *_renderQueue;
+@property (setter=_setThumbnailImage:, nonatomic, retain) UIImage *_thumbnailImage;
+@property (nonatomic, readonly) UIImage *inputImage;
 
 - (void).cxx_destruct;
 - (id)_ciContext;

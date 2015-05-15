@@ -10,11 +10,11 @@
     double _locationSpeed;
 }
 
-@property(assign,readwrite) int locationDeliveryBehavior;
-@property(assign,readwrite) double locationDistance;
-@property(assign,readwrite) double locationInterval;
-@property(assign,readwrite) int locationRepeatBehavior;
-@property(assign,readwrite) double locationSpeed;
+@property (nonatomic) int locationDeliveryBehavior;
+@property (nonatomic) double locationDistance;
+@property (nonatomic) double locationInterval;
+@property (nonatomic) int locationRepeatBehavior;
+@property (nonatomic) double locationSpeed;
 
 - (void)appendSimulatedLocation:(id)arg1;
 - (id)availableScenarios;

@@ -7,8 +7,8 @@
     NSString *_key;
 }
 
-@property(assign,readonly) long long componentType;
-@property(assign,copy) NSString * key;
+@property (nonatomic, readonly) long long componentType;
+@property (nonatomic, readonly, copy) NSString *key;
 
 - (void).cxx_destruct;
 - (id)_dataToSignWithDataSource:(id)arg1;

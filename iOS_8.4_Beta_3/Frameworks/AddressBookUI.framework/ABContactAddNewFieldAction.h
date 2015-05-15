@@ -6,7 +6,7 @@
     <ABContactGroupPickerDelegate> *_groupPickerDelegate;
 }
 
-@property(assign,readwrite) <ABContactGroupPickerDelegate> * groupPickerDelegate;
+@property (nonatomic) <ABContactGroupPickerDelegate> *groupPickerDelegate;
 
 - (id)groupPickerDelegate;
 - (void)performActionWithSender:(id)arg1;

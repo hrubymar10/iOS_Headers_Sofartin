@@ -8,9 +8,9 @@
     MusicAVPlayer *_player;
 }
 
-@property(assign,readonly) MPAVItem * currentlyPlayingItem;
-@property(assign,readonly) unsigned long long itemPersistentID;
-@property(assign,readonly) MusicAVPlayer * player;
+@property (nonatomic, readonly) MPAVItem *currentlyPlayingItem;
+@property (nonatomic, readonly) unsigned long long itemPersistentID;
+@property (nonatomic, readonly) MusicAVPlayer *player;
 
 - (void).cxx_destruct;
 - (id)currentlyPlayingItem;

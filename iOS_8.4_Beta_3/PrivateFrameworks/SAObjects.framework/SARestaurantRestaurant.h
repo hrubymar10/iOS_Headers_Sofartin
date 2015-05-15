@@ -4,13 +4,13 @@
 
 @interface SARestaurantRestaurant : SALocalSearchBusiness2
 
-@property(assign,copy) NSArray * attributeSet;
-@property(assign,copy) NSString * currencySymbol;
-@property(assign,copy) NSArray * makeReservationPunchOuts;
-@property(assign,copy) NSURL * menuLink;
-@property(assign,copy) NSArray * openings;
-@property(assign,copy) NSArray * orderDeliveryPunchOuts;
-@property(assign,copy) NSString * priceRange;
+@property (nonatomic, copy) NSArray *attributeSet;
+@property (nonatomic, copy) NSString *currencySymbol;
+@property (nonatomic, copy) NSArray *makeReservationPunchOuts;
+@property (nonatomic, copy) NSURL *menuLink;
+@property (nonatomic, copy) NSArray *openings;
+@property (nonatomic, copy) NSArray *orderDeliveryPunchOuts;
+@property (nonatomic, copy) NSString *priceRange;
 
 + (id)restaurant;
 + (id)restaurantWithDictionary:(id)arg1 context:(id)arg2;

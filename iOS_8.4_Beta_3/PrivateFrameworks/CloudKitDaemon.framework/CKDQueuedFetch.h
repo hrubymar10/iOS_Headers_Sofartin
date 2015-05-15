@@ -21,23 +21,23 @@
     long long _usesBackgroundSession;
 }
 
-@property(assign,readwrite) bool allowsCellularAccess;
-@property(assign,retain) NSObject<OS_dispatch_queue> * callbackQueue;
-@property(assign,copy) id completionHandler;
-@property(assign,retain) NSMutableDictionary * completionHandlersByItemID;
-@property(assign,readwrite) CKDClientContext * context;
-@property(assign,retain) NSString * deviceIdentifier;
-@property(assign,retain) CKDDatabaseOperation * fetchOp;
-@property(assign,readwrite) bool isFinished;
-@property(assign,retain) NSDate * lastRequestDate;
-@property(assign,readwrite) NSOperationQueue * operationQueue;
-@property(assign,readwrite) long long qos;
-@property(assign,readwrite) long long scope;
-@property(assign,readonly) bool shouldStart;
-@property(assign,retain) NSString * sourceApplicationBundleIdentifier;
-@property(assign,retain) NSString * sourceApplicationSecondaryIdentifier;
-@property(assign,retain) NSDate * startDate;
-@property(assign,readwrite) long long usesBackgroundSession;
+@property (nonatomic) bool allowsCellularAccess;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *callbackQueue;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic, retain) NSMutableDictionary *completionHandlersByItemID;
+@property (nonatomic) CKDClientContext *context;
+@property (nonatomic, retain) NSString *deviceIdentifier;
+@property (nonatomic, retain) CKDDatabaseOperation *fetchOp;
+@property (nonatomic) bool isFinished;
+@property (nonatomic, retain) NSDate *lastRequestDate;
+@property (nonatomic) NSOperationQueue *operationQueue;
+@property (nonatomic) long long qos;
+@property (nonatomic) long long scope;
+@property (nonatomic, readonly) bool shouldStart;
+@property (nonatomic, retain) NSString *sourceApplicationBundleIdentifier;
+@property (nonatomic, retain) NSString *sourceApplicationSecondaryIdentifier;
+@property (nonatomic, retain) NSDate *startDate;
+@property (nonatomic) long long usesBackgroundSession;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

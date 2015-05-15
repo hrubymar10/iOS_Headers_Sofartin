@@ -8,11 +8,11 @@
     NSMapTable *_viewMargins;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUISignInViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUISignInViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_attributedStringForText:(id)arg1 style:(id)arg2 context:(id)arg3;
 + (void)_enumerateChildrenOfViewElement:(id)arg1 usingBlock:(id)arg2;

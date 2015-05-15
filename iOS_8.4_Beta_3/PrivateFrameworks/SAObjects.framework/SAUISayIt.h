@@ -4,9 +4,9 @@
 
 @interface SAUISayIt : SABaseClientBoundCommand
 
-@property(assign,retain) <SAAceSerializable> * context;
-@property(assign,copy) NSNumber * listenAfterSpeaking;
-@property(assign,copy) NSString * message;
+@property (nonatomic, retain) <SAAceSerializable> *context;
+@property (nonatomic, copy) NSNumber *listenAfterSpeaking;
+@property (nonatomic, copy) NSString *message;
 
 + (id)sayIt;
 + (id)sayItWithDictionary:(id)arg1 context:(id)arg2;

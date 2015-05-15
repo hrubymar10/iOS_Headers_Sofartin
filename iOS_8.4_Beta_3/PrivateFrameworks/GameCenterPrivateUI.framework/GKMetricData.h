@@ -10,13 +10,13 @@
     GKGridLayoutMetrics *_metrics;
 }
 
-@property(assign,readwrite) unsigned long long currentMaxVisibleItemCount;
-@property(assign,readwrite) unsigned long long filteredTotalItemCount;
-@property(assign,retain) NSMutableArray * footerPinnableAttributes;
-@property(assign,retain) NSMutableArray * headerPinnableAttributes;
-@property(assign,readonly) NSString * layoutKey;
-@property(assign,retain) GKGridLayoutMetrics * metrics;
-@property(assign,readonly) GKSectionMetrics * sectionMetrics;
+@property (nonatomic) unsigned long long currentMaxVisibleItemCount;
+@property (nonatomic) unsigned long long filteredTotalItemCount;
+@property (nonatomic, retain) NSMutableArray *footerPinnableAttributes;
+@property (nonatomic, retain) NSMutableArray *headerPinnableAttributes;
+@property (nonatomic, readonly) NSString *layoutKey;
+@property (nonatomic, retain) GKGridLayoutMetrics *metrics;
+@property (nonatomic, readonly) GKSectionMetrics *sectionMetrics;
 
 - (id)_gkDescriptionWithChildren:(int)arg1;
 - (void)addAttributes:(id)arg1 forLocation:(unsigned long long)arg2;

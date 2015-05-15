@@ -19,15 +19,15 @@
     _UIQueueingServiceWebViewControllerProxy *_serviceProxy;
 }
 
-@property(assign,copy) NSString * URLString;
-@property(assign,retain) UIBarButtonItem * backBarButtonItem;
-@property(assign,readonly) bool canGoBack;
-@property(assign,readonly) bool canGoForward;
-@property(assign,readwrite) <_UIWebViewControllerDelegate> * delegate;
-@property(assign,readonly) float estimatedProgress;
-@property(assign,retain) UIBarButtonItem * forwardBarButtonItem;
-@property(getter=isLoading,assign,readonly) bool loading;
-@property(assign,copy) NSString * pageTitle;
+@property (nonatomic, copy) NSString *URLString;
+@property (nonatomic, readonly, retain) UIBarButtonItem *backBarButtonItem;
+@property (nonatomic, readonly) bool canGoBack;
+@property (nonatomic, readonly) bool canGoForward;
+@property (nonatomic) <_UIWebViewControllerDelegate> *delegate;
+@property (nonatomic, readonly) float estimatedProgress;
+@property (nonatomic, readonly, retain) UIBarButtonItem *forwardBarButtonItem;
+@property (getter=isLoading, nonatomic, readonly) bool loading;
+@property (nonatomic, readonly, copy) NSString *pageTitle;
 
 - (id)URLString;
 - (void)_addRemoteView;

@@ -9,10 +9,10 @@
     NSDate *_replyDate;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,retain) NSDictionary * localizableMessage;
-@property(assign,readwrite) unsigned char recipientIndex;
-@property(assign,retain) NSDate * replyDate;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic, retain) NSDictionary *localizableMessage;
+@property (nonatomic) unsigned char recipientIndex;
+@property (nonatomic, retain) NSDate *replyDate;
 
 + (id)secureCodedPropertyKeys;
 

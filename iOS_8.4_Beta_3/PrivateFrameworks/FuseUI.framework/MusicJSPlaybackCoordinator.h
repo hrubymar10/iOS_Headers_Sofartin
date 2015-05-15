@@ -6,7 +6,7 @@
     MusicAVPlayer *_player;
 }
 
-@property(assign,retain) MusicAVPlayer * player;
+@property (nonatomic, retain) MusicAVPlayer *player;
 
 - (void).cxx_destruct;
 - (void)_beginPlaybackWithStationDictionary:(id)arg1 completionHandler:(id)arg2;

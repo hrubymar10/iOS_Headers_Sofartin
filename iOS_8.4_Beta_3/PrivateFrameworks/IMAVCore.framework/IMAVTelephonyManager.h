@@ -13,7 +13,7 @@
     bool _isDesignatedVideoServiceProvider;
 }
 
-@property(assign,readonly) unsigned int callState;
+@property (nonatomic, readonly) unsigned int callState;
 
 + (id)numberToDialForNumber:(id)arg1 dialAssist:(bool*)arg2;
 + (id)sharedInstance;

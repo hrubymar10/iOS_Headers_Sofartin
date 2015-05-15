@@ -4,14 +4,14 @@
 
 @interface SASTSpecificAnswerItem : AceObject <SASTTemplateItem>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) SAUIDecoratedText * decoratedFooter;
-@property(assign,retain) SAUIDecoratedText * decoratedValue;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * footer;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * value;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) SAUIDecoratedText *decoratedFooter;
+@property (nonatomic, retain) SAUIDecoratedText *decoratedValue;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *footer;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *value;
 
 + (id)specificAnswerItem;
 + (id)specificAnswerItemWithDictionary:(id)arg1 context:(id)arg2;

@@ -9,11 +9,11 @@
     id _updateHandler;
 }
 
-@property(assign,copy) NSString * displayNameForRoutes;
-@property(assign,copy) NSArray * routes;
-@property(assign,retain) PUAirplayRoute * selectedRoute;
-@property(assign,readonly) bool shouldCondenseDisplay;
-@property(assign,copy) id updateHandler;
+@property (nonatomic, readonly, copy) NSString *displayNameForRoutes;
+@property (nonatomic, readonly, copy) NSArray *routes;
+@property (nonatomic, retain) PUAirplayRoute *selectedRoute;
+@property (nonatomic, readonly) bool shouldCondenseDisplay;
+@property (nonatomic, copy) id updateHandler;
 
 - (void).cxx_destruct;
 - (void)_updateRoutes:(id)arg1;

@@ -13,14 +13,14 @@
     bool _trimMode;
 }
 
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) double exportedDuration;
-@property(assign,readonly) double progress;
-@property(assign,readonly) bool progressShouldContinueUpdating;
-@property(assign,copy) id progressUpdateBlock;
-@property(assign,readonly) bool success;
-@property(assign,readonly) struct { double x1; double x2; } timeRange;
-@property(assign,readonly) bool trimMode;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) double exportedDuration;
+@property (nonatomic, readonly) double progress;
+@property (nonatomic, readonly) bool progressShouldContinueUpdating;
+@property (nonatomic, copy) id progressUpdateBlock;
+@property (nonatomic, readonly) bool success;
+@property (nonatomic, readonly) struct { double x1; double x2; } timeRange;
+@property (nonatomic, readonly) bool trimMode;
 
 - (void).cxx_destruct;
 - (void)_postFinalProgressUpdateNotification;

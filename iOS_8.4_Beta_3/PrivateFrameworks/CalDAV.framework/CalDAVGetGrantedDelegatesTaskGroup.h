@@ -7,8 +7,8 @@
     int _state;
 }
 
-@property(assign,readwrite) bool fetchPrincipalDetails;
-@property(assign,readwrite) int state;
+@property (nonatomic) bool fetchPrincipalDetails;
+@property (nonatomic) int state;
 
 - (void)_expandPropertiesWithAllowWrite:(bool)arg1;
 - (void)_fetchOnlyHrefs;

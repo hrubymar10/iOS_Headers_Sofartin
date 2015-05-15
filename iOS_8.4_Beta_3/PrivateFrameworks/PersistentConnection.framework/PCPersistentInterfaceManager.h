@@ -29,24 +29,24 @@
     int _wwanRSSI;
 }
 
-@property(assign,readonly) NSString * WWANInterfaceName;
-@property(assign,readonly) bool areAllNetworkInterfacesDisabled;
-@property(assign,retain) NSString * currentLinkQualityString;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool doesWWANInterfaceExist;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isInCall;
-@property(assign,readonly) bool isInternetReachable;
-@property(assign,readonly) bool isInternetReachableViaWiFi;
-@property(assign,readonly) bool isPowerStateDetectionSupported;
-@property(assign,readonly) bool isWWANBetterThanWiFi;
-@property(assign,readonly) bool isWWANInHomeCountry;
-@property(assign,readonly) bool isWWANInterfaceActivationPermitted;
-@property(assign,readonly) bool isWWANInterfaceInProlongedHighPowerState;
-@property(assign,readonly) bool isWWANInterfaceUp;
-@property(assign,readonly) bool isWakeOnWiFiSupported;
-@property(assign,readonly) Class superclass;
+@property (readonly) NSString *WWANInterfaceName;
+@property (readonly) bool areAllNetworkInterfacesDisabled;
+@property (nonatomic, readonly, retain) NSString *currentLinkQualityString;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) bool doesWWANInterfaceExist;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isInCall;
+@property (readonly) bool isInternetReachable;
+@property (readonly) bool isInternetReachableViaWiFi;
+@property (readonly) bool isPowerStateDetectionSupported;
+@property (readonly) bool isWWANBetterThanWiFi;
+@property (readonly) bool isWWANInHomeCountry;
+@property (readonly) bool isWWANInterfaceActivationPermitted;
+@property (readonly) bool isWWANInterfaceInProlongedHighPowerState;
+@property (readonly) bool isWWANInterfaceUp;
+@property (readonly) bool isWakeOnWiFiSupported;
+@property (readonly) Class superclass;
 
 + (id)sharedInstance;
 

@@ -32,24 +32,24 @@
     unsigned long long _visibleRegions;
 }
 
-@property(assign,readwrite) bool allowBackgroundPlaceHolders;
-@property(assign,readwrite) long long backgroundMode;
-@property(assign,readonly) PKBarcodeStickerView * barcodeView;
-@property(assign,readonly) bool bodyContentCreated;
-@property(assign,retain) NSArray * buckets;
-@property(assign,readwrite) double clippedContentHeight;
-@property(assign,readwrite) bool clipsContent;
-@property(assign,readonly) PKPassColorProfile * colorProfile;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } contentBounds;
-@property(assign,readonly) struct CGSize { double x1; double x2; } contentSize;
-@property(assign,readonly) UIView * contentView;
-@property(assign,readwrite) <PKPassFaceDelegate> * delegate;
-@property(assign,retain) NSMutableArray * headerBucketViews;
-@property(assign,readonly) bool isFrontFace;
-@property(assign,readonly) PKPass * pass;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } shadowInsets;
-@property(assign,readwrite) long long style;
-@property(assign,readwrite) unsigned long long visibleRegions;
+@property (nonatomic) bool allowBackgroundPlaceHolders;
+@property (nonatomic) long long backgroundMode;
+@property (nonatomic, readonly) PKBarcodeStickerView *barcodeView;
+@property (nonatomic, readonly) bool bodyContentCreated;
+@property (nonatomic, readonly, retain) NSArray *buckets;
+@property (nonatomic) double clippedContentHeight;
+@property (nonatomic) bool clipsContent;
+@property (nonatomic, readonly) PKPassColorProfile *colorProfile;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } contentBounds;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } contentSize;
+@property (nonatomic, readonly) UIView *contentView;
+@property (nonatomic) <PKPassFaceDelegate> *delegate;
+@property (nonatomic, retain) NSMutableArray *headerBucketViews;
+@property (nonatomic, readonly) bool isFrontFace;
+@property (nonatomic, readonly) PKPass *pass;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } shadowInsets;
+@property (nonatomic) long long style;
+@property (nonatomic) unsigned long long visibleRegions;
 
 + (Class)_faceClassForStyle:(long long)arg1 front:(bool)arg2;
 + (id)newBackFaceViewForStyle:(long long)arg1 tall:(bool)arg2;

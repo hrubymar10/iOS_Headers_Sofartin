@@ -4,9 +4,9 @@
 
 @interface SAMicroblogMicroblogSearchEmbeddedImage : SAMicroblogMicroblogSearchResultPost
 
-@property(assign,copy) NSNumber * height;
-@property(assign,copy) NSURL * imageURL;
-@property(assign,copy) NSNumber * width;
+@property (nonatomic, copy) NSNumber *height;
+@property (nonatomic, copy) NSURL *imageURL;
+@property (nonatomic, copy) NSNumber *width;
 
 + (id)microblogSearchEmbeddedImage;
 + (id)microblogSearchEmbeddedImageWithDictionary:(id)arg1 context:(id)arg2;

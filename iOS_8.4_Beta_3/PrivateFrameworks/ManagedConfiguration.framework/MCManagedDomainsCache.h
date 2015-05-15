@@ -7,8 +7,8 @@
     NSMutableArray *_memberQueueCache;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * memberQueue;
-@property(assign,retain) NSMutableArray * memberQueueCache;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *memberQueue;
+@property (nonatomic, retain) NSMutableArray *memberQueueCache;
 
 + (id)sharedCache;
 

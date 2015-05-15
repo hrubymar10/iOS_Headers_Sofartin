@@ -10,11 +10,11 @@
     UILabel *_statusLabel;
 }
 
-@property(assign,retain) UILabel * infoLabel;
-@property(assign,retain) GKPlayerPickerInfo * pickerInfo;
-@property(assign,readwrite) unsigned long long selectionStatus;
-@property(assign,retain) UIImageView * selectionView;
-@property(assign,retain) UILabel * statusLabel;
+@property (nonatomic, retain) UILabel *infoLabel;
+@property (nonatomic, retain) GKPlayerPickerInfo *pickerInfo;
+@property (nonatomic) unsigned long long selectionStatus;
+@property (nonatomic, retain) UIImageView *selectionView;
+@property (nonatomic, retain) UILabel *statusLabel;
 
 + (Class)cellClassForPickerInfo:(id)arg1;
 + (void)registerCellClassesWithCollectionView:(id)arg1;

@@ -29,12 +29,12 @@
     id _valueChangedHandler;
 }
 
-@property(assign,readonly) struct GCQuaternion { double x1; double x2; double x3; double x4; } attitude;
-@property(assign,readonly) GCController * controller;
-@property(assign,readonly) struct { double x1; double x2; double x3; } gravity;
-@property(assign,readonly) struct { double x1; double x2; double x3; } rotationRate;
-@property(assign,readonly) struct { double x1; double x2; double x3; } userAcceleration;
-@property(assign,copy) id valueChangedHandler;
+@property (readonly) struct GCQuaternion { double x1; double x2; double x3; double x4; } attitude;
+@property (readonly) GCController *controller;
+@property (readonly) struct { double x1; double x2; double x3; } gravity;
+@property (readonly) struct { double x1; double x2; double x3; } rotationRate;
+@property (readonly) struct { double x1; double x2; double x3; } userAcceleration;
+@property (copy) id valueChangedHandler;
 
 - (void).cxx_destruct;
 - (bool)_isUpdatingDeviceMotion;

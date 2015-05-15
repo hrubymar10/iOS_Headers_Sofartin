@@ -11,7 +11,7 @@
     NSObject<OS_dispatch_source> *_watchdogTimer;
 }
 
-@property(assign,retain) <BBDataProvider> * dataProvider;
+@property (nonatomic, retain) <BBDataProvider> *dataProvider;
 
 + (id)dataProviderWithDataProvider:(id)arg1 serverQueue:(id)arg2;
 + (id)dataProviderWithPrincipalClass:(Class)arg1 serverQueue:(id)arg2 initializationCompletion:(id)arg3;

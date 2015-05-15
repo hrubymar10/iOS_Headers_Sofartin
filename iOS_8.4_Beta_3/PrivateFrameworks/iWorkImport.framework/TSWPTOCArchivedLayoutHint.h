@@ -6,11 +6,11 @@
     TSWPTOCLayoutHint *_hint;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <TSDHint> * hint;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <TSDHint> *hint;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (id)hint;

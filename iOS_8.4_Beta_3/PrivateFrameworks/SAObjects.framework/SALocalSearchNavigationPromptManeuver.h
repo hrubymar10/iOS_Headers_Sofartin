@@ -4,7 +4,7 @@
 
 @interface SALocalSearchNavigationPromptManeuver : SADomainCommand
 
-@property(assign,copy) NSNumber * maneuverIndex;
+@property (nonatomic, copy) NSNumber *maneuverIndex;
 
 + (id)navigationPromptManeuver;
 + (id)navigationPromptManeuverWithDictionary:(id)arg1 context:(id)arg2;

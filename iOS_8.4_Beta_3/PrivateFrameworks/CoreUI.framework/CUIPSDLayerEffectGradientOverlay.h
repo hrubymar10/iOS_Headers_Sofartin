@@ -6,7 +6,7 @@
     CUIPSDGradient *_gradient;
 }
 
-@property(assign,retain) CUIPSDGradient * gradient;
+@property (retain) CUIPSDGradient *gradient;
 
 - (void)dealloc;
 - (unsigned int)effectType;

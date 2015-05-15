@@ -12,7 +12,7 @@
     } _postPrepareTimeRange;
 }
 
-@property(assign,retain) RCCompositionController * compositionController;
+@property (nonatomic, retain) RCCompositionController *compositionController;
 
 + (id)sharedRecordingPreviewController;
 

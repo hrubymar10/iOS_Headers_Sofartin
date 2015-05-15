@@ -9,10 +9,10 @@
     long long _operation;
 }
 
-@property(assign,copy) NSString * accountIdentifier;
-@property(assign,readwrite) int accountType;
-@property(assign,readwrite) long long entity;
-@property(assign,readwrite) long long operation;
+@property (nonatomic, copy) NSString *accountIdentifier;
+@property (nonatomic) int accountType;
+@property (nonatomic) long long entity;
+@property (nonatomic) long long operation;
 
 + (id)changeForEntity:(long long)arg1 operation:(long long)arg2 account:(id)arg3;
 

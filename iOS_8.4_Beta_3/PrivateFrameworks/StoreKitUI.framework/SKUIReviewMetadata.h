@@ -13,14 +13,14 @@
     unsigned long long _titleMaxLength;
 }
 
-@property(assign,copy) NSString * body;
-@property(assign,readonly) unsigned long long bodyMaxLength;
-@property(assign,copy) NSString * nickname;
-@property(assign,readonly) unsigned long long nicknameMaxLength;
-@property(assign,readwrite) float rating;
-@property(assign,readonly) NSURL * submitURL;
-@property(assign,copy) NSString * title;
-@property(assign,readonly) unsigned long long titleMaxLength;
+@property (nonatomic, copy) NSString *body;
+@property (nonatomic, readonly) unsigned long long bodyMaxLength;
+@property (nonatomic, copy) NSString *nickname;
+@property (nonatomic, readonly) unsigned long long nicknameMaxLength;
+@property (nonatomic) float rating;
+@property (nonatomic, readonly) NSURL *submitURL;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, readonly) unsigned long long titleMaxLength;
 
 - (void).cxx_destruct;
 - (id)body;

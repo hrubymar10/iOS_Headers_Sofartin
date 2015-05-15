@@ -24,21 +24,21 @@
     double _tailIndent;
 }
 
-@property(assign,readonly) long long alignment;
-@property(assign,readonly) long long baseWritingDirection;
-@property(assign,readonly) double defaultTabInterval;
-@property(assign,readonly) double firstLineHeadIndent;
-@property(assign,readonly) double headIndent;
-@property(assign,readonly) float hyphenationFactor;
-@property(assign,readonly) long long lineBreakMode;
-@property(assign,readonly) double lineHeightMultiple;
-@property(assign,readonly) double lineSpacing;
-@property(assign,readonly) double maximumLineHeight;
-@property(assign,readonly) double minimumLineHeight;
-@property(assign,readonly) double paragraphSpacing;
-@property(assign,readonly) double paragraphSpacingBefore;
-@property(assign,copy) NSArray * tabStops;
-@property(assign,readonly) double tailIndent;
+@property (readonly) long long alignment;
+@property (readonly) long long baseWritingDirection;
+@property (nonatomic, readonly) double defaultTabInterval;
+@property (readonly) double firstLineHeadIndent;
+@property (readonly) double headIndent;
+@property (readonly) float hyphenationFactor;
+@property (readonly) long long lineBreakMode;
+@property (readonly) double lineHeightMultiple;
+@property (readonly) double lineSpacing;
+@property (readonly) double maximumLineHeight;
+@property (readonly) double minimumLineHeight;
+@property (readonly) double paragraphSpacing;
+@property (readonly) double paragraphSpacingBefore;
+@property (nonatomic, readonly, copy) NSArray *tabStops;
+@property (readonly) double tailIndent;
 
 + (long long)_defaultWritingDirection;
 + (id)defaultParagraphStyle;

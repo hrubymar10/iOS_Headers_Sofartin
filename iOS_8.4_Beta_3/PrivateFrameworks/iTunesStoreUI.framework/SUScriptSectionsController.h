@@ -4,8 +4,8 @@
 
 @interface SUScriptSectionsController : SUScriptObject
 
-@property(assign,readonly) id sections;
-@property(assign,retain) SUScriptSection * selectedSection;
+@property (readonly) id sections;
+@property (retain) SUScriptSection *selectedSection;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

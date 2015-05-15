@@ -4,15 +4,15 @@
 
 @interface DOMTouchEvent : DOMUIEvent
 
-@property(assign,readonly) bool altKey;
-@property(assign,readonly) DOMTouchList * changedTouches;
-@property(assign,readonly) bool ctrlKey;
-@property(assign,readonly) bool metaKey;
-@property(assign,readonly) float rotation;
-@property(assign,readonly) float scale;
-@property(assign,readonly) bool shiftKey;
-@property(assign,readonly) DOMTouchList * targetTouches;
-@property(assign,readonly) DOMTouchList * touches;
+@property (readonly) bool altKey;
+@property (readonly) DOMTouchList *changedTouches;
+@property (readonly) bool ctrlKey;
+@property (readonly) bool metaKey;
+@property (readonly) float rotation;
+@property (readonly) float scale;
+@property (readonly) bool shiftKey;
+@property (readonly) DOMTouchList *targetTouches;
+@property (readonly) DOMTouchList *touches;
 
 - (bool)altKey;
 - (id)changedTouches;

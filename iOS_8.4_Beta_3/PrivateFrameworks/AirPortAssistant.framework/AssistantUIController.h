@@ -22,23 +22,23 @@
     NSDictionary *_targetScanRecord;
 }
 
-@property(assign,readonly) int assistantResult;
-@property(assign,retain) AutoGuessController * autoGuessController;
-@property(assign,readonly) int connectionStatusSelectorAwaitingResolution;
-@property(assign,readwrite) id delegate;
-@property(assign,retain) NSDictionary * guessCompleteDict;
-@property(assign,retain) NSDictionary * lastAssociatedInfo;
-@property(assign,retain) NSDictionary * lastAutoguessInstrumentation;
-@property(assign,retain) NSDictionary * lastSetupInstrumentation;
-@property(assign,retain) NSDictionary * lastStepByStepInstrumentation;
-@property(assign,retain) NSArray * paramScanResults;
-@property(assign,retain) AUSetupController * setupController;
-@property(assign,retain) NSMutableDictionary * setupOptions;
-@property(assign,readonly) int state;
-@property(assign,retain) StepByStepController * stepByStepController;
-@property(assign,retain) NSDictionary * targetBrowseRecord;
-@property(assign,retain) NSString * targetMACAddress;
-@property(assign,retain) NSDictionary * targetScanRecord;
+@property (readonly) int assistantResult;
+@property (retain) AutoGuessController *autoGuessController;
+@property (readonly) int connectionStatusSelectorAwaitingResolution;
+@property id delegate;
+@property (retain) NSDictionary *guessCompleteDict;
+@property (retain) NSDictionary *lastAssociatedInfo;
+@property (retain) NSDictionary *lastAutoguessInstrumentation;
+@property (retain) NSDictionary *lastSetupInstrumentation;
+@property (retain) NSDictionary *lastStepByStepInstrumentation;
+@property (retain) NSArray *paramScanResults;
+@property (retain) AUSetupController *setupController;
+@property (retain) NSMutableDictionary *setupOptions;
+@property (readonly) int state;
+@property (retain) StepByStepController *stepByStepController;
+@property (retain) NSDictionary *targetBrowseRecord;
+@property (retain) NSString *targetMACAddress;
+@property (retain) NSDictionary *targetScanRecord;
 
 - (int)assistantResult;
 - (id)autoGuessController;

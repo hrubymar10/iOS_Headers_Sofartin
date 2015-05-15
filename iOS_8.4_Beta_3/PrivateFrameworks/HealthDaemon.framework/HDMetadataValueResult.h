@@ -8,9 +8,9 @@
     id _value;
 }
 
-@property(assign,retain) NSNumber * keyID;
-@property(assign,retain) NSNumber * objectID;
-@property(assign,retain) id value;
+@property (nonatomic, retain) NSNumber *keyID;
+@property (nonatomic, retain) NSNumber *objectID;
+@property (nonatomic, retain) id value;
 
 - (void).cxx_destruct;
 - (id)keyID;

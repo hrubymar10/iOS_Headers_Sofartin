@@ -7,8 +7,8 @@
     unsigned long long _uniqueID;
 }
 
-@property(assign,readonly) unsigned long long completionUniqueID;
-@property(assign,readonly) unsigned long long uniqueID;
+@property (nonatomic, readonly) unsigned long long completionUniqueID;
+@property (nonatomic, readonly) unsigned long long uniqueID;
 
 + (bool)supportsSecureCoding;
 + (int)type;

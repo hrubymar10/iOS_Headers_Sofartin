@@ -9,8 +9,8 @@
     NSHTTPURLResponse *_response;
 }
 
-@property(assign,readonly) NSData * HTTPBody;
-@property(assign,readonly) NSString * HTTPMethod;
+@property (nonatomic, readonly) NSData *HTTPBody;
+@property (nonatomic, readonly) NSString *HTTPMethod;
 
 - (void).cxx_destruct;
 - (id)HTTPBody;

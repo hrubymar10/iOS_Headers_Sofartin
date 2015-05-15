@@ -20,14 +20,14 @@
     SKUIRedeemTextField *_textField;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIRedeemCameraViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIRedeemCameraViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *image;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
 
 - (void).cxx_destruct;
 - (void)_hideKeyboard;

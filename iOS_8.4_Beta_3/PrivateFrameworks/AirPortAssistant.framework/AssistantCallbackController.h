@@ -8,7 +8,7 @@
     id _uiDelegate;
 }
 
-@property(assign,retain) <AssistantCallbackUIDelegate> * uiDelegate;
+@property (nonatomic, retain) <AssistantCallbackUIDelegate> *uiDelegate;
 
 + (id)keychainPasswordForBaseStation:(id)arg1;
 + (void)keychainPasswordForBaseStation:(id)arg1 delegate:(id)arg2;

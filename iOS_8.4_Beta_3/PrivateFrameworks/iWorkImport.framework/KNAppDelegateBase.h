@@ -6,7 +6,7 @@
     bool _cachedBidiIsSupported;
 }
 
-@property(assign,readonly) NSArray * powerPointDocumentTypes;
+@property (nonatomic, readonly) NSArray *powerPointDocumentTypes;
 
 - (bool)URLIsValidForImportedHyperlink:(id)arg1;
 - (id)appChartPropertyOverrides;

@@ -8,8 +8,8 @@
     NSMutableDictionary *_providers;
 }
 
-@property(assign,readwrite) bool handleTTSCodes;
-@property(assign,readwrite) bool handlesFunctions;
+@property (nonatomic) bool handleTTSCodes;
+@property (nonatomic) bool handlesFunctions;
 
 + (bool)_shouldAutomaticallyProvideFunctions;
 + (id)afui_speakableUtteranceParserForCurrentLanguage;

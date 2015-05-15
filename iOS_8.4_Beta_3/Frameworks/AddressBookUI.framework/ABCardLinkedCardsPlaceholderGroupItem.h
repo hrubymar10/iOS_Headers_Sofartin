@@ -4,7 +4,7 @@
 
 @interface ABCardLinkedCardsPlaceholderGroupItem : ABCardGroupItem
 
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSString *title;
 
 - (id)title;
 

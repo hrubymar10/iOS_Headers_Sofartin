@@ -12,7 +12,7 @@
     unsigned long long _state;
 }
 
-@property(getter=isEnabled,assign,readwrite) bool enabled;
+@property (getter=isEnabled, nonatomic) bool enabled;
 
 + (void)initialize;
 

@@ -6,11 +6,11 @@
     FMFLocation *_lastKnownLocation;
 }
 
-@property(assign,retain) FMFLocation * lastKnownLocation;
-@property(assign,readonly) NSString * locationText;
-@property(assign,readonly) long long offerState;
-@property(assign,readonly) IMHandle * sender;
-@property(assign,readonly) NSString * titleText;
+@property (nonatomic, retain) FMFLocation *lastKnownLocation;
+@property (nonatomic, readonly) NSString *locationText;
+@property (nonatomic, readonly) long long offerState;
+@property (nonatomic, readonly) IMHandle *sender;
+@property (nonatomic, readonly) NSString *titleText;
 
 + (id)placeholderPreviewCache;
 + (id)titleBarMaskImageForWidth:(double)arg1;

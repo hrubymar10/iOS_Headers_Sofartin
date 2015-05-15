@@ -9,10 +9,10 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSArray * leftItems;
-@property(assign,retain) UINavigationItem * navigationItem;
-@property(assign,retain) NSArray * rightItems;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSArray *leftItems;
+@property (nonatomic, retain) UINavigationItem *navigationItem;
+@property (nonatomic, retain) NSArray *rightItems;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (id)leftItems;

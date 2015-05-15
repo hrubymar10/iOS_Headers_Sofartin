@@ -4,8 +4,8 @@
 
 @interface SKUIInfoViewElement : SKUIViewElement
 
-@property(assign,readonly) SKUILabelViewElement * titleElement;
-@property(assign,readonly) NSArray * valueElements;
+@property (nonatomic, readonly) SKUILabelViewElement *titleElement;
+@property (nonatomic, readonly) NSArray *valueElements;
 
 - (id)titleElement;
 - (id)valueElements;

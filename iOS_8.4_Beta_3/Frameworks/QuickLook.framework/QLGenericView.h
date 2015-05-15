@@ -12,11 +12,11 @@
     <QLGenericViewDelegate> *delegate;
 }
 
-@property(assign,copy) NSAttributedString * attributedSubtitle;
-@property(assign,readwrite) <QLGenericViewDelegate> * delegate;
-@property(assign,readwrite) bool showArchiveButton;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
+@property (copy) NSAttributedString *attributedSubtitle;
+@property <QLGenericViewDelegate> *delegate;
+@property bool showArchiveButton;
+@property (copy) NSString *subtitle;
+@property (copy) NSString *title;
 
 - (void)_updateContainerFrameForTraitCollection:(id)arg1;
 - (id)attributedSubtitle;

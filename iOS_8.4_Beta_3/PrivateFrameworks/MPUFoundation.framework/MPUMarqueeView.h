@@ -17,13 +17,13 @@
     double _marqueeScrollRate;
 }
 
-@property(assign,readwrite) double contentGap;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } contentSize;
-@property(assign,readonly) UIView * contentView;
-@property(assign,readwrite) <MPUMarqueeViewDelegate> * delegate;
-@property(assign,readwrite) double marqueeDelay;
-@property(getter=isMarqueeEnabled,assign,readwrite) bool marqueeEnabled;
-@property(assign,readwrite) double marqueeScrollRate;
+@property (nonatomic) double contentGap;
+@property (nonatomic) struct CGSize { double x1; double x2; } contentSize;
+@property (nonatomic, readonly) UIView *contentView;
+@property (nonatomic) <MPUMarqueeViewDelegate> *delegate;
+@property (nonatomic) double marqueeDelay;
+@property (getter=isMarqueeEnabled, nonatomic) bool marqueeEnabled;
+@property (nonatomic) double marqueeScrollRate;
 
 - (void).cxx_destruct;
 - (void)_createMarqueeAnimationIfNeededWithOptions:(long long)arg1;

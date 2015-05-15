@@ -9,7 +9,7 @@
     NSMutableDictionary *_messageHandlers;
 }
 
-@property(assign,readonly) NSObject<OS_xpc_object> * connection;
+@property (nonatomic, readonly) NSObject<OS_xpc_object> *connection;
 
 - (void)_handleMessage:(id)arg1;
 - (id)connection;

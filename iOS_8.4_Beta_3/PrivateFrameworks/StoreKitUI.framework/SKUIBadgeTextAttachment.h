@@ -7,9 +7,9 @@
     NSURL *_imageURL;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } badgeSize;
-@property(assign,retain) NSObject<OS_dispatch_semaphore> * imageLoadingSemaphore;
-@property(assign,readonly) NSURL * imageURL;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } badgeSize;
+@property (retain) NSObject<OS_dispatch_semaphore> *imageLoadingSemaphore;
+@property (nonatomic, readonly) NSURL *imageURL;
 
 - (void).cxx_destruct;
 - (void)_ensureImageIsLoaded;

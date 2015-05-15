@@ -11,9 +11,9 @@
     long long _type;
 }
 
-@property(assign,readwrite) double dismissalDelay;
-@property(assign,readwrite) bool shouldWaitForExplicitDismissal;
-@property(assign,copy) NSString * text;
+@property (nonatomic) double dismissalDelay;
+@property (nonatomic) bool shouldWaitForExplicitDismissal;
+@property (nonatomic, copy) NSString *text;
 
 - (void).cxx_destruct;
 - (void)_dismissHUDAnimated:(bool)arg1;

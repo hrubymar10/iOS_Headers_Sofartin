@@ -8,9 +8,9 @@
     NSString *_toState;
 }
 
-@property(assign,copy) NSArray * elements;
-@property(assign,copy) NSString * fromState;
-@property(assign,copy) NSString * toState;
+@property (nonatomic, copy) NSArray *elements;
+@property (nonatomic, copy) NSString *fromState;
+@property (nonatomic, copy) NSString *toState;
 
 + (void)CAMLParserStartElement:(id)arg1;
 

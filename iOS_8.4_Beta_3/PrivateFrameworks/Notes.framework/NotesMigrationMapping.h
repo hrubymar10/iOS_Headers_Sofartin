@@ -9,10 +9,10 @@
     long long _type;
 }
 
-@property(assign,copy) NSString * descriptionString;
-@property(assign,retain) NSManagedObjectModel * destinationModel;
-@property(assign,copy) NSArray * sourceModels;
-@property(assign,readwrite) long long type;
+@property (copy) NSString *descriptionString;
+@property (retain) NSManagedObjectModel *destinationModel;
+@property (copy) NSArray *sourceModels;
+@property long long type;
 
 + (id)customMappingFromSourceModelName:(id)arg1 toDestinationModelName:(id)arg2;
 + (id)descriptionStringFromSourceStoreNames:(id)arg1 destinationStoreName:(id)arg2;

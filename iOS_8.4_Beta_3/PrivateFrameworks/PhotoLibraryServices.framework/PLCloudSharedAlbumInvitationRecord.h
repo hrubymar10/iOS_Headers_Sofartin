@@ -4,20 +4,20 @@
 
 @interface PLCloudSharedAlbumInvitationRecord : PLManagedObject
 
-@property(assign,retain) PLCloudSharedAlbum * album;
-@property(assign,retain) NSString * albumGUID;
-@property(assign,retain) NSString * cloudGUID;
-@property(assign,retain) NSNumber * invitationState;
-@property(assign,retain) NSNumber * invitationStateLocal;
-@property(assign,readwrite) NSNumber * inviteeEmailKey;
-@property(assign,readonly) NSArray * inviteeEmails;
-@property(assign,retain) NSString * inviteeFirstName;
-@property(assign,retain) NSString * inviteeFullName;
-@property(assign,readwrite) NSString * inviteeHashedPersonID;
-@property(assign,retain) NSString * inviteeLastName;
-@property(assign,readonly) NSArray * inviteePhones;
-@property(assign,retain) NSDate * inviteeSubscriptionDate;
-@property(assign,readwrite) bool isMine;
+@property (nonatomic, retain) PLCloudSharedAlbum *album;
+@property (nonatomic, retain) NSString *albumGUID;
+@property (nonatomic, retain) NSString *cloudGUID;
+@property (nonatomic, retain) NSNumber *invitationState;
+@property (nonatomic, retain) NSNumber *invitationStateLocal;
+@property (nonatomic) NSNumber *inviteeEmailKey;
+@property (nonatomic, readonly) NSArray *inviteeEmails;
+@property (nonatomic, retain) NSString *inviteeFirstName;
+@property (nonatomic, retain) NSString *inviteeFullName;
+@property (nonatomic) NSString *inviteeHashedPersonID;
+@property (nonatomic, retain) NSString *inviteeLastName;
+@property (nonatomic, readonly) NSArray *inviteePhones;
+@property (nonatomic, retain) NSDate *inviteeSubscriptionDate;
+@property (nonatomic) bool isMine;
 
 + (id)cloudSharedAlbumInvitationRecordWithGUID:(id)arg1 inLibrary:(id)arg2;
 + (id)cloudSharedAlbumInvitationRecordsWithAlbumGUID:(id)arg1 inLibrary:(id)arg2;

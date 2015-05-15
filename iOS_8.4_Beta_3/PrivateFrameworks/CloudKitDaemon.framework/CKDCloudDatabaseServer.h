@@ -9,14 +9,14 @@
     NSXPCListener *_xpcListener;
 }
 
-@property(assign,retain) NSOperationQueue * clientTeardownQueue;
-@property(assign,retain) NSMutableArray * connectedClients;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_source> * sighandlerSource;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSXPCListener * xpcListener;
+@property (nonatomic, retain) NSOperationQueue *clientTeardownQueue;
+@property (nonatomic, retain) NSMutableArray *connectedClients;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *sighandlerSource;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSXPCListener *xpcListener;
 
 + (id)sharedServer;
 

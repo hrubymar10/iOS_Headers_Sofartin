@@ -11,12 +11,12 @@
     CKRecordZoneID *_zoneID;
 }
 
-@property(assign,retain) CKQueryCursor * cursor;
-@property(assign,retain) NSArray * desiredKeys;
-@property(assign,retain) CKQuery * query;
-@property(assign,readwrite) unsigned long long resultsLimit;
-@property(assign,readwrite) bool shouldFetchAssetContent;
-@property(assign,retain) CKRecordZoneID * zoneID;
+@property (nonatomic, retain) CKQueryCursor *cursor;
+@property (nonatomic, retain) NSArray *desiredKeys;
+@property (nonatomic, retain) CKQuery *query;
+@property (nonatomic) unsigned long long resultsLimit;
+@property (nonatomic) bool shouldFetchAssetContent;
+@property (nonatomic, retain) CKRecordZoneID *zoneID;
 
 + (bool)supportsSecureCoding;
 

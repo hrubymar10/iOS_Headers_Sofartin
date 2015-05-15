@@ -11,8 +11,8 @@
     IKViewElementStyleFactory *_styleFactory;
 }
 
-@property(getter=isSparse,assign,readwrite) bool sparse;
-@property(assign,retain) IKViewElementStyleFactory * styleFactory;
+@property (getter=isSparse, nonatomic) bool sparse;
+@property (nonatomic, retain) IKViewElementStyleFactory *styleFactory;
 
 + (Class)elementClassByTagName:(id)arg1;
 + (unsigned long long)elementTypeByTagName:(id)arg1;

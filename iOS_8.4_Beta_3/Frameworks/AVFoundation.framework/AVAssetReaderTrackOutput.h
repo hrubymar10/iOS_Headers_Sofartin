@@ -6,11 +6,11 @@
     AVAssetReaderTrackOutputInternal *_trackOutputInternal;
 }
 
-@property(assign,readwrite) bool appliesPreferredTrackTransform;
-@property(getter=_isAttachedToMetadataAdaptor,assign,readonly) bool attachedToMetadataAdaptor;
-@property(assign,copy) NSString * audioTimePitchAlgorithm;
-@property(assign,readonly) NSDictionary * outputSettings;
-@property(assign,readonly) AVAssetTrack * track;
+@property (nonatomic) bool appliesPreferredTrackTransform;
+@property (getter=_isAttachedToMetadataAdaptor, nonatomic, readonly) bool attachedToMetadataAdaptor;
+@property (nonatomic, copy) NSString *audioTimePitchAlgorithm;
+@property (nonatomic, readonly) NSDictionary *outputSettings;
+@property (nonatomic, readonly) AVAssetTrack *track;
 
 + (id)assetReaderTrackOutputWithTrack:(id)arg1 outputSettings:(id)arg2;
 

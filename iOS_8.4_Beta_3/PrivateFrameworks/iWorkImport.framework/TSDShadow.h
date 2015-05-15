@@ -11,15 +11,15 @@
     double mRadius;
 }
 
-@property(assign,copy) TSUColor * TSUColor;
-@property(assign,readonly) double angle;
-@property(assign,readonly) struct CGColor { }* color;
-@property(getter=isEnabled,assign,readonly) bool enabled;
-@property(assign,readonly) double offset;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } offsetDelta;
-@property(assign,readonly) double opacity;
-@property(assign,readonly) NSString * presetKind;
-@property(assign,readonly) double radius;
+@property (nonatomic, readonly, copy) TSUColor *TSUColor;
+@property (nonatomic, readonly) double angle;
+@property (nonatomic, readonly) struct CGColor { }*color;
+@property (getter=isEnabled, nonatomic, readonly) bool enabled;
+@property (nonatomic, readonly) double offset;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } offsetDelta;
+@property (nonatomic, readonly) double opacity;
+@property (nonatomic, readonly) NSString *presetKind;
+@property (nonatomic, readonly) double radius;
 
 + (bool)automaticallyNotifiesObserversOfTSUColor;
 + (void)bootstrapPresetsOfKind:(id)arg1 inTheme:(id)arg2 alternate:(int)arg3;

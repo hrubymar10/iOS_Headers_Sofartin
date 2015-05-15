@@ -13,10 +13,10 @@
     double _subLineHeight;
 }
 
-@property(assign,readwrite) bool backgroundIsTransparent;
-@property(assign,readwrite) double lineSpacing;
-@property(assign,readwrite) double lineWidth;
-@property(assign,readwrite) double subLineHeight;
+@property (nonatomic) bool backgroundIsTransparent;
+@property (nonatomic) double lineSpacing;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) double subLineHeight;
 
 - (void).cxx_destruct;
 - (id)_linesPatternColor;

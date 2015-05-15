@@ -8,12 +8,12 @@
     NSString *_serialized;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * domain;
-@property(assign,readonly) NSString * groupId;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *domain;
+@property (nonatomic, readonly) NSString *groupId;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (bool)isSupportedEntityType:(long long)arg1;
 

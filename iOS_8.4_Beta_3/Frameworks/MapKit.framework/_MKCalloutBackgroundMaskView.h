@@ -11,12 +11,12 @@
     UIImageView *_topArrow;
 }
 
-@property(assign,readonly) UIView * baseView;
-@property(assign,readonly) UIImageView * bottomArrow;
-@property(assign,readonly) UIView * currentArrowContainer;
-@property(assign,readonly) UIImageView * leftArrow;
-@property(assign,readonly) UIImageView * rightArrow;
-@property(assign,readonly) UIImageView * topArrow;
+@property (nonatomic, readonly) UIView *baseView;
+@property (nonatomic, readonly) UIImageView *bottomArrow;
+@property (nonatomic, readonly) UIView *currentArrowContainer;
+@property (nonatomic, readonly) UIImageView *leftArrow;
+@property (nonatomic, readonly) UIImageView *rightArrow;
+@property (nonatomic, readonly) UIImageView *topArrow;
 
 - (void).cxx_destruct;
 - (void)_removeArrows;

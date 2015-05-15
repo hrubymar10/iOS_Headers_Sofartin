@@ -13,13 +13,13 @@
     BLTSectionInfoListBBProvider *_sectionInfoProvider;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <BLTSectionInfoListDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) BLTSectionInfoListBridgeProvider * overrideProvider;
-@property(assign,retain) BLTSectionInfoListBBProvider * sectionInfoProvider;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <BLTSectionInfoListDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) BLTSectionInfoListBridgeProvider *overrideProvider;
+@property (nonatomic, retain) BLTSectionInfoListBBProvider *sectionInfoProvider;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)delegate;

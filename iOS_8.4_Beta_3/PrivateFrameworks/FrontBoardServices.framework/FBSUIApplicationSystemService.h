@@ -7,11 +7,11 @@
     NSObject<OS_dispatch_queue> *_delegateQueue;
 }
 
-@property(assign,readonly) double backgroundTimeRemaining;
-@property(assign,readwrite) long long badgeNumber;
-@property(assign,copy) NSString * badgeString;
-@property(assign,readwrite) double currentBacklightLevel;
-@property(assign,readwrite) <FBSUIApplicationSystemServiceDelegate> * delegate;
+@property (nonatomic, readonly) double backgroundTimeRemaining;
+@property (nonatomic) long long badgeNumber;
+@property (nonatomic, copy) NSString *badgeString;
+@property (nonatomic) double currentBacklightLevel;
+@property (nonatomic) <FBSUIApplicationSystemServiceDelegate> *delegate;
 
 - (id)_getBadgeValue;
 - (double)backgroundTimeRemaining;

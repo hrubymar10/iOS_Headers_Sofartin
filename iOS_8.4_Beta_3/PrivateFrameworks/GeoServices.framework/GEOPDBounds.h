@@ -7,10 +7,10 @@
     GEOMapRegion *_mapRegion;
 }
 
-@property(assign,retain) GEOMapRegion * displayMapRegion;
-@property(assign,readonly) bool hasDisplayMapRegion;
-@property(assign,readonly) bool hasMapRegion;
-@property(assign,retain) GEOMapRegion * mapRegion;
+@property (nonatomic, retain) GEOMapRegion *displayMapRegion;
+@property (nonatomic, readonly) bool hasDisplayMapRegion;
+@property (nonatomic, readonly) bool hasMapRegion;
+@property (nonatomic, retain) GEOMapRegion *mapRegion;
 
 + (id)boundsInfoForPlaceData:(id)arg1;
 

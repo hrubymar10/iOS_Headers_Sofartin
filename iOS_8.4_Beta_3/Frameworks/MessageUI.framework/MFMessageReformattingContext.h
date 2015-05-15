@@ -18,17 +18,17 @@
     double _widthDeviation;
 }
 
-@property(assign,readonly) DOMNode * body;
-@property(assign,readonly) bool didChangeDocument;
-@property(assign,readonly) DOMDocument * document;
-@property(assign,retain) DOMRange * firstTextRange;
-@property(assign,readonly) bool hasAnyLeftFloat;
-@property(assign,readonly) bool hasAnyRightFloat;
-@property(assign,readonly) double maximumWidth;
-@property(assign,readonly) double meanWidth;
-@property(assign,readwrite) double minimumRescalingFactor;
-@property(assign,copy) NSArray * rightFloats;
-@property(assign,readonly) double widthDeviation;
+@property (nonatomic, readonly) DOMNode *body;
+@property (nonatomic, readonly) bool didChangeDocument;
+@property (nonatomic, readonly) DOMDocument *document;
+@property (nonatomic, retain) DOMRange *firstTextRange;
+@property (nonatomic, readonly) bool hasAnyLeftFloat;
+@property (nonatomic, readonly) bool hasAnyRightFloat;
+@property (nonatomic, readonly) double maximumWidth;
+@property (nonatomic, readonly) double meanWidth;
+@property (nonatomic) double minimumRescalingFactor;
+@property (nonatomic, readonly, copy) NSArray *rightFloats;
+@property (nonatomic, readonly) double widthDeviation;
 
 - (void)_rollBackChange:(id)arg1;
 - (void)_updateFloatsIfNecessary;

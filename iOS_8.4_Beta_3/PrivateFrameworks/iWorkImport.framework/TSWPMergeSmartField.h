@@ -13,14 +13,14 @@
     NSString *_whitespace;
 }
 
-@property(assign,readwrite) int category;
-@property(assign,copy) NSString * guid;
-@property(assign,copy) NSString * key;
-@property(assign,copy) NSString * label;
-@property(assign,copy) NSString * property;
-@property(assign,readwrite) bool requiresFollowingWhitespace;
-@property(assign,copy) NSString * tableField;
-@property(assign,copy) NSString * whitespace;
+@property (nonatomic) int category;
+@property (nonatomic, copy) NSString *guid;
+@property (nonatomic, copy) NSString *key;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, copy) NSString *property;
+@property (nonatomic) bool requiresFollowingWhitespace;
+@property (nonatomic, copy) NSString *tableField;
+@property (nonatomic, copy) NSString *whitespace;
 
 - (bool)allowsPasteAsSmartField;
 - (int)category;

@@ -9,10 +9,10 @@
     int _windowBits;
 }
 
-@property(assign,copy) id createBuffer;
-@property(assign,readwrite) bool decompressAllAtOnce;
-@property(assign,copy) id growData;
-@property(assign,readwrite) int windowBits;
+@property (nonatomic, copy) id createBuffer;
+@property (nonatomic) bool decompressAllAtOnce;
+@property (nonatomic, copy) id growData;
+@property (nonatomic) int windowBits;
 
 + (id)defaultOptions;
 

@@ -8,13 +8,13 @@
     NSMutableArray *_segments;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool finishedSuccessfully;
-@property(assign,retain) RCWaveformGenerator * generator;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableArray * segments;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool finishedSuccessfully;
+@property (nonatomic, retain) RCWaveformGenerator *generator;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableArray *segments;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)dealloc;

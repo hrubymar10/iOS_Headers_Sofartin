@@ -7,13 +7,13 @@
     UIImage *_image;
 }
 
-@property(assign,readwrite) NSTextAttachment * attachment;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } drawingBounds;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) NSTextAttachment *attachment;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } drawingBounds;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *image;
+@property (readonly) Class superclass;
 
 + (id)viewForData:(id)arg1 ofType:(id)arg2;
 + (id)viewForImage:(id)arg1;

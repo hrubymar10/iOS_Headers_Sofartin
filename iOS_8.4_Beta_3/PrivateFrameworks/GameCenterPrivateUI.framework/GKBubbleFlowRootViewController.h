@@ -9,10 +9,10 @@
     bool _showingInterstitial;
 }
 
-@property(assign,retain) GKBubbleFlowAnimator * animator;
-@property(getter=isCoveringContentUnderneath,assign,readonly) bool coveringContentUnderneath;
-@property(getter=isCurrentlyAnimatingADismiss,assign,readwrite) bool currentlyAnimatingADismiss;
-@property(getter=isShowingInterstitial,assign,readwrite) bool showingInterstitial;
+@property (nonatomic, retain) GKBubbleFlowAnimator *animator;
+@property (getter=isCoveringContentUnderneath, nonatomic, readonly) bool coveringContentUnderneath;
+@property (getter=isCurrentlyAnimatingADismiss, nonatomic) bool currentlyAnimatingADismiss;
+@property (getter=isShowingInterstitial, nonatomic) bool showingInterstitial;
 
 + (bool)_useTwoPartBubbleFlowModalPresentation;
 + (id)sharedBubbleFlowRootViewController;

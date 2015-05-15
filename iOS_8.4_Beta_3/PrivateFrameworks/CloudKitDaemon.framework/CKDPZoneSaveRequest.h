@@ -8,12 +8,12 @@
     NSString *_zoneProtectionInfoTag;
 }
 
-@property(assign,retain) NSString * etag;
-@property(assign,readonly) bool hasEtag;
-@property(assign,readonly) bool hasRecordZone;
-@property(assign,readonly) bool hasZoneProtectionInfoTag;
-@property(assign,retain) CKDPZone * recordZone;
-@property(assign,retain) NSString * zoneProtectionInfoTag;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, readonly) bool hasEtag;
+@property (nonatomic, readonly) bool hasRecordZone;
+@property (nonatomic, readonly) bool hasZoneProtectionInfoTag;
+@property (nonatomic, retain) CKDPZone *recordZone;
+@property (nonatomic, retain) NSString *zoneProtectionInfoTag;
 
 + (id)options;
 

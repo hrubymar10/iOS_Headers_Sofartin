@@ -9,9 +9,9 @@
     RCLayoutMetrics *_layoutMetrics;
 }
 
-@property(assign,copy) RCUIConfiguration * UIConfiguration;
-@property(assign,readwrite) double gradientAlpha;
-@property(assign,retain) RCLayoutMetrics * layoutMetrics;
+@property (nonatomic, copy) RCUIConfiguration *UIConfiguration;
+@property (nonatomic) double gradientAlpha;
+@property (nonatomic, retain) RCLayoutMetrics *layoutMetrics;
 
 + (double)requiredWidth;
 

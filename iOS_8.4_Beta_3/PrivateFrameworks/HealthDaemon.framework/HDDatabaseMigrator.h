@@ -6,7 +6,7 @@
     HDSQLiteDatabase *_database;
 }
 
-@property(assign,readonly) HDSQLiteDatabase * database;
+@property (nonatomic, readonly) HDSQLiteDatabase *database;
 
 - (void).cxx_destruct;
 - (id)database;

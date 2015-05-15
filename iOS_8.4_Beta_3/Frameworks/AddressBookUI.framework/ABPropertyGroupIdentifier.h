@@ -7,8 +7,8 @@
     int _property;
 }
 
-@property(assign,readonly) void* context;
-@property(assign,readonly) int property;
+@property (nonatomic, readonly) void*context;
+@property (nonatomic, readonly) int property;
 
 + (id)propertyGroupIdentifierWithProperty:(int)arg1 context:(void*)arg2;
 

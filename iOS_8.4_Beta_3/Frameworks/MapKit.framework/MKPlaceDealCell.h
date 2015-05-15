@@ -4,7 +4,7 @@
 
 @interface MKPlaceDealCell : ABContactCell
 
-@property(assign,retain) NSString * dealTitle;
+@property (nonatomic, retain) NSString *dealTitle;
 
 + (id)reuseIdentifier;
 

@@ -9,10 +9,10 @@
     NSURL *_sourceURL;
 }
 
-@property(assign,readwrite) unsigned long long downloadToken;
-@property(assign,copy) NSString * localFilePath;
-@property(assign,copy) NSArray * sinfs;
-@property(assign,copy) NSURL * sourceURL;
+@property (nonatomic) unsigned long long downloadToken;
+@property (nonatomic, copy) NSString *localFilePath;
+@property (nonatomic, copy) NSArray *sinfs;
+@property (nonatomic, copy) NSURL *sourceURL;
 
 - (void).cxx_destruct;
 - (unsigned long long)downloadToken;

@@ -11,12 +11,12 @@
     NSString *_resendInvitationGUID;
 }
 
-@property(assign,retain) NSArray * MSASSharingRelationships;
-@property(assign,retain) NSString * albumGUID;
-@property(assign,readwrite) long long jobType;
-@property(assign,retain) NSDictionary * mstreamdInfoDictionary;
-@property(assign,readwrite) long long relationshipChangeType;
-@property(assign,retain) NSString * resendInvitationGUID;
+@property (nonatomic, retain) NSArray *MSASSharingRelationships;
+@property (nonatomic, retain) NSString *albumGUID;
+@property (nonatomic) long long jobType;
+@property (nonatomic, retain) NSDictionary *mstreamdInfoDictionary;
+@property (nonatomic) long long relationshipChangeType;
+@property (nonatomic, retain) NSString *resendInvitationGUID;
 
 + (void)resendPendingInvitationWithGUID:(id)arg1 albumGUID:(id)arg2;
 + (void)saveServerStateLocallyForSharingACLRelationships:(id)arg1 changeType:(long long)arg2 info:(id)arg3;

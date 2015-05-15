@@ -6,7 +6,7 @@
     long long _environment;
 }
 
-@property(assign,readwrite) long long environment;
+@property (nonatomic) long long environment;
 
 - (bool)allowsAnonymousAccount;
 - (bool)allowsAuthedAccount;

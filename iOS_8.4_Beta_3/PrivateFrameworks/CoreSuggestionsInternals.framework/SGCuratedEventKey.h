@@ -6,11 +6,11 @@
     NSString *_externalId;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * externalId;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *externalId;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (bool)isSupportedEntityType:(long long)arg1;
 

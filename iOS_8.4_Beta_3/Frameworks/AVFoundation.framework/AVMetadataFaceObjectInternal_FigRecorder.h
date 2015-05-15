@@ -10,11 +10,11 @@
     double yawAngle;
 }
 
-@property(assign,readwrite) long long faceID;
-@property(assign,readwrite) bool hasRollAngle;
-@property(assign,readwrite) bool hasYawAngle;
-@property(assign,readwrite) double rollAngle;
-@property(assign,readwrite) double yawAngle;
+@property long long faceID;
+@property bool hasRollAngle;
+@property bool hasYawAngle;
+@property double rollAngle;
+@property double yawAngle;
 
 - (long long)faceID;
 - (bool)hasRollAngle;

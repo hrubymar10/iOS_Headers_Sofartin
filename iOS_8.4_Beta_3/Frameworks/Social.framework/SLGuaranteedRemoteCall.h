@@ -7,8 +7,8 @@
     id _proxy;
 }
 
-@property(assign,copy) id block;
-@property(assign,retain) id proxy;
+@property (copy) id block;
+@property (retain) id proxy;
 
 - (void).cxx_destruct;
 - (id)block;

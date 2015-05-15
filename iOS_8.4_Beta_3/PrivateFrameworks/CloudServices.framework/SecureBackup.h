@@ -9,8 +9,8 @@
     NSObject<OS_dispatch_queue> *syncQueue;
 }
 
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * replyQueue;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * syncQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> *replyQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> *syncQueue;
 
 - (void).cxx_destruct;
 - (id)_CreateSecureBackupConnection:(id)arg1;

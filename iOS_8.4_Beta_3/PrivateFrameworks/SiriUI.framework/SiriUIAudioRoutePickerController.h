@@ -14,13 +14,13 @@
     UIWindow *_window;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SiriUIAudioRoutePickerControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIActionSheet * pickerActionSheet;
-@property(assign,retain) SiriRoutePickerAlertController * pickerAlertController;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SiriUIAudioRoutePickerControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIActionSheet *pickerActionSheet;
+@property (nonatomic, retain) SiriRoutePickerAlertController *pickerAlertController;
+@property (readonly) Class superclass;
 
 + (id)_nameForRouteInfo:(id)arg1 overridePicked:(bool)arg2 isSelected:(bool*)arg3 isBluetooth:(bool*)arg4 isOverride:(bool*)arg5 audioRouteName:(id*)arg6;
 

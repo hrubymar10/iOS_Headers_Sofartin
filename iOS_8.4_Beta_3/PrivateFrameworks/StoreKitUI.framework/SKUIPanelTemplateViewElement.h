@@ -4,7 +4,7 @@
 
 @interface SKUIPanelTemplateViewElement : SKUIViewElement
 
-@property(assign,readonly) SKUIImageViewElement * backgroundImageElement;
+@property (nonatomic, readonly) SKUIImageViewElement *backgroundImageElement;
 
 - (id)backgroundImageElement;
 

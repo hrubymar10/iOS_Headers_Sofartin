@@ -9,10 +9,10 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,copy) UIImage * icon;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic, copy) UIImage *icon;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)colorScheme;

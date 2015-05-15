@@ -4,8 +4,8 @@
 
 @interface ACDManagedAccountProperty : NSManagedObject
 
-@property(assign,retain) NSString * key;
-@property(assign,retain) ACDManagedAccount * owner;
-@property(assign,retain) id value;
+@property (nonatomic, retain) NSString *key;
+@property (nonatomic, retain) ACDManagedAccount *owner;
+@property (nonatomic, retain) id value;
 
 @end

@@ -6,8 +6,8 @@
     NSSet *_setElements;
 }
 
-@property(assign,readwrite) <CalDAVMkcalendarTaskDelegate><CoreDAVTaskDelegate> * delegate;
-@property(assign,retain) NSSet * setElements;
+@property (nonatomic) <CalDAVMkcalendarTaskDelegate><CoreDAVTaskDelegate> *delegate;
+@property (nonatomic, retain) NSSet *setElements;
 
 - (id)copyDefaultParserForContentType:(id)arg1;
 - (void)dealloc;

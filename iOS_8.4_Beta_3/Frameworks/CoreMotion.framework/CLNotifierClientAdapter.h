@@ -7,7 +7,7 @@
     bool _valid;
 }
 
-@property(assign,readwrite) bool valid;
+@property (nonatomic) bool valid;
 
 - (id)debugDescription;
 - (id)init;

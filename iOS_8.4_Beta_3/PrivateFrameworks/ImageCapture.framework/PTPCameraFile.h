@@ -7,11 +7,11 @@
     void *_ptpCameraFileProperties;
 }
 
-@property(assign,copy) id info;
-@property(assign,readonly) unsigned int objHandle;
-@property(assign,retain) NSString * path;
-@property(assign,readonly) unsigned int storageID;
-@property(assign,readonly) unsigned long long type;
+@property (copy) id info;
+@property (readonly) unsigned int objHandle;
+@property (retain) NSString *path;
+@property (readonly) unsigned int storageID;
+@property (readonly) unsigned long long type;
 
 - (void)dealloc;
 - (void)finalize;

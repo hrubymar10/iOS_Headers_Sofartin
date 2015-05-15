@@ -8,13 +8,13 @@
     unsigned long long _itemIdentifier;
 }
 
-@property(assign,retain) NSString * commentText;
-@property(assign,retain) SUConcernItem * concern;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long itemIdentifier;
-@property(assign,readonly) Class superclass;
+@property (retain) NSString *commentText;
+@property (retain) SUConcernItem *concern;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property unsigned long long itemIdentifier;
+@property (readonly) Class superclass;
 
 - (id)_httpBody;
 - (id)commentText;

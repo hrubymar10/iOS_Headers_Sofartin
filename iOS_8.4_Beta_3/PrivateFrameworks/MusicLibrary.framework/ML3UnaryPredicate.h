@@ -6,7 +6,7 @@
     ML3Predicate *_predicate;
 }
 
-@property(assign,retain) ML3Predicate * predicate;
+@property (nonatomic, retain) ML3Predicate *predicate;
 
 + (id)predicateWithPredicate:(id)arg1;
 

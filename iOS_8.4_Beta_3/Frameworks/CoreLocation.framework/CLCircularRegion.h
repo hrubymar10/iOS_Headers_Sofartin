@@ -4,8 +4,8 @@
 
 @interface CLCircularRegion : CLRegion
 
-@property(assign,readonly) struct { double x1; double x2; } center;
-@property(assign,readonly) double radius;
+@property (nonatomic, readonly) struct { double x1; double x2; } center;
+@property (nonatomic, readonly) double radius;
 
 + (id)circularRegionFromMapRegion:(id)arg1;
 + (bool)supportsSecureCoding;

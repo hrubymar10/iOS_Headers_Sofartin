@@ -7,11 +7,11 @@
     MPAVRoutingController *_routingController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hearingAidRouteAvailable;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hearingAidRouteAvailable;
+@property (readonly) Class superclass;
 
 + (id)XDCObjectFromObject:(id)arg1;
 + (id)copyXPCMessageFromDictionary:(id)arg1 inReplyToXPCMessage:(id)arg2 error:(id*)arg3;

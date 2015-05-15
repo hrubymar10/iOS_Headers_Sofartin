@@ -11,11 +11,11 @@
     NSArray *_topoDevicesDescriptor;
 }
 
-@property(assign,retain) CALayer * containerLayer;
-@property(assign,readwrite) int layoutOptions;
-@property(assign,retain) id owningView;
-@property(assign,readonly) NSArray * topoDeviceLayers;
-@property(assign,retain) NSArray * topoDevicesDescriptor;
+@property (nonatomic, retain) CALayer *containerLayer;
+@property (nonatomic) int layoutOptions;
+@property (nonatomic, retain) id owningView;
+@property (nonatomic, readonly) NSArray *topoDeviceLayers;
+@property (nonatomic, retain) NSArray *topoDevicesDescriptor;
 
 - (id)containerLayer;
 - (void)createLayoutForDevices:(id)arg1;

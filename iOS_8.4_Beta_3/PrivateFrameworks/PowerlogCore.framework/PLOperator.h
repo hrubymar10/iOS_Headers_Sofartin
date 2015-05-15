@@ -11,18 +11,18 @@
     PLNSTimerOperatorComposition *_triggerBufferFlush;
 }
 
-@property(assign,readonly) PLCoreAccountingGroup * accountingGroups;
-@property(assign,retain) NSMutableArray * bufferedEntries;
-@property(assign,readonly) NSString * className;
-@property(assign,retain) NSMutableDictionary * filterDefinitions;
-@property(assign,retain) NSMutableDictionary * filterDeltaLastEntryIDs;
-@property(assign,retain) NSMutableDictionary * lastLogDateForEntryKey;
-@property(assign,retain) NSMutableDictionary * localCache;
-@property(assign,readonly) PLCoreRail * rails;
-@property(assign,readonly) PLCoreStorage * storage;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * storageQueue;
-@property(assign,retain) PLNSTimerOperatorComposition * triggerBufferFlush;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * workQueue;
+@property (readonly) PLCoreAccountingGroup *accountingGroups;
+@property (retain) NSMutableArray *bufferedEntries;
+@property (readonly) NSString *className;
+@property (retain) NSMutableDictionary *filterDefinitions;
+@property (retain) NSMutableDictionary *filterDeltaLastEntryIDs;
+@property (retain) NSMutableDictionary *lastLogDateForEntryKey;
+@property (retain) NSMutableDictionary *localCache;
+@property (readonly) PLCoreRail *rails;
+@property (readonly) PLCoreStorage *storage;
+@property (readonly) NSObject<OS_dispatch_queue> *storageQueue;
+@property (retain) PLNSTimerOperatorComposition *triggerBufferFlush;
+@property (readonly) NSObject<OS_dispatch_queue> *workQueue;
 
 + (id)accountingGroupDefinitions;
 + (id)className;

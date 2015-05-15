@@ -7,8 +7,8 @@
     double _rightClip;
 }
 
-@property(assign,readwrite) double leftClip;
-@property(assign,readwrite) double rightClip;
+@property (nonatomic) double leftClip;
+@property (nonatomic) double rightClip;
 
 - (double)leftClip;
 - (double)rightClip;

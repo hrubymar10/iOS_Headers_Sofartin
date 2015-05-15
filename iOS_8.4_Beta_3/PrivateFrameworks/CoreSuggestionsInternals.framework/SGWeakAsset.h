@@ -6,7 +6,7 @@
     SGAsset *_asset;
 }
 
-@property(assign,readonly) SGAsset * asset;
+@property (readonly) SGAsset *asset;
 
 - (void).cxx_destruct;
 - (id)asset;

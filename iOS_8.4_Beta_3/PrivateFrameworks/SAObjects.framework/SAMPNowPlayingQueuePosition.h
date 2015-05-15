@@ -4,12 +4,12 @@
 
 @interface SAMPNowPlayingQueuePosition : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long index;
-@property(assign,readwrite) long long queueSize;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long index;
+@property (nonatomic) long long queueSize;
+@property (readonly) Class superclass;
 
 + (id)nowPlayingQueuePosition;
 + (id)nowPlayingQueuePositionWithDictionary:(id)arg1 context:(id)arg2;

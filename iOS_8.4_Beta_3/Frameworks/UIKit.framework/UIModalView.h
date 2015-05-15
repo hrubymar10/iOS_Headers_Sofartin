@@ -67,17 +67,17 @@
     UIToolbar *_toolbar;
 }
 
-@property(assign,readwrite) long long cancelButtonIndex;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UIModalViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool groupsTextFields;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * message;
-@property(assign,readonly) long long numberOfButtons;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
-@property(getter=isVisible,assign,readonly) bool visible;
+@property (nonatomic) long long cancelButtonIndex;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UIModalViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool groupsTextFields;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, readonly) long long numberOfButtons;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
+@property (getter=isVisible, nonatomic, readonly) bool visible;
 
 + (id)_popupAlertBackground;
 + (bool)atLeastOneAlertVisible;

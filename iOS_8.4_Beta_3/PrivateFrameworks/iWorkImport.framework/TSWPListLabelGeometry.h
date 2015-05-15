@@ -8,9 +8,9 @@
     bool mScaleWithText;
 }
 
-@property(assign,readwrite) double baselineOffset;
-@property(assign,readwrite) double scale;
-@property(assign,readwrite) bool scaleWithText;
+@property (nonatomic) double baselineOffset;
+@property (nonatomic) double scale;
+@property (nonatomic) bool scaleWithText;
 
 + (id)listLabelGeometry;
 

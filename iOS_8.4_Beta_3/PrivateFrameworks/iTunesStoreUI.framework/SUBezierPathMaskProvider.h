@@ -6,7 +6,7 @@
     UIBezierPath *_bezierPath;
 }
 
-@property(assign,retain) UIBezierPath * bezierPath;
+@property (nonatomic, retain) UIBezierPath *bezierPath;
 
 - (id)bezierPath;
 - (struct CGPath { }*)copyPathForMaskWithSize:(struct CGSize { double x1; double x2; })arg1;

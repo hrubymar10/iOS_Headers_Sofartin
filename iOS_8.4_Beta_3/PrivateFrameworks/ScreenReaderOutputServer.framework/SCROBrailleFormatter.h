@@ -19,7 +19,7 @@
     struct __CFDictionary { } *_tokenDictionary;
 }
 
-@property(assign,readwrite) int lineFocus;
+@property (nonatomic) int lineFocus;
 
 - (void)addText:(id)arg1 language:(id)arg2 selection:(struct _NSRange { unsigned long long x1; unsigned long long x2; }*)arg3 token:(long long)arg4 focused:(bool)arg5;
 - (void)addText:(id)arg1 language:(id)arg2 selection:(struct _NSRange { unsigned long long x1; unsigned long long x2; }*)arg3 token:(long long)arg4 focused:(bool)arg5 technical:(bool)arg6;

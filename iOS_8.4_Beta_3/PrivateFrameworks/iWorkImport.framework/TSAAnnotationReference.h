@@ -7,8 +7,8 @@
     unsigned long long _pageIndex;
 }
 
-@property(assign,retain) <TSKAnnotation> * annotation;
-@property(assign,readwrite) unsigned long long pageIndex;
+@property (nonatomic, retain) <TSKAnnotation> *annotation;
+@property (nonatomic) unsigned long long pageIndex;
 
 + (id)referenceWithObjectContext:(id)arg1 annotation:(id)arg2 searchReference:(id)arg3 pageIndex:(unsigned long long)arg4;
 

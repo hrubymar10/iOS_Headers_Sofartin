@@ -14,10 +14,10 @@
     long long mTotalTests;
 }
 
-@property(assign,readonly) bool passed;
-@property(assign,readonly) long long passingTestCount;
-@property(assign,readwrite) bool quiet;
-@property(assign,readonly) long long testCount;
+@property (nonatomic, readonly) bool passed;
+@property (nonatomic, readonly) long long passingTestCount;
+@property (nonatomic) bool quiet;
+@property (nonatomic, readonly) long long testCount;
 
 + (id)harness;
 

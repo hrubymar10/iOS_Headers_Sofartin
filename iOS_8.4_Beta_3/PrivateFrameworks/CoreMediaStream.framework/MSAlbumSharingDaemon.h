@@ -14,15 +14,15 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,readwrite) int busyCount;
-@property(assign,retain) MSASDaemonModel * daemonModel;
-@property(assign,readwrite) <MSAlbumSharingDaemonDelegate> * delegate;
-@property(assign,readwrite) bool isRetryingOutstandingActivities;
-@property(assign,retain) NSObject<OS_dispatch_queue> * mapQueue;
-@property(assign,retain) NSMutableDictionary * nextUpdateDateByPersonID;
-@property(assign,retain) NSMutableDictionary * personIDToDelegateMap;
-@property(assign,retain) NSMutableDictionary * personIDToStateMachineMap;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic) int busyCount;
+@property (nonatomic, retain) MSASDaemonModel *daemonModel;
+@property (nonatomic) <MSAlbumSharingDaemonDelegate> *delegate;
+@property (nonatomic) bool isRetryingOutstandingActivities;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *mapQueue;
+@property (nonatomic, retain) NSMutableDictionary *nextUpdateDateByPersonID;
+@property (nonatomic, retain) NSMutableDictionary *personIDToDelegateMap;
+@property (nonatomic, retain) NSMutableDictionary *personIDToStateMachineMap;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (id)_delegateForPersonID:(id)arg1;

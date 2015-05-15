@@ -19,7 +19,7 @@
     } _selectors;
 }
 
-@property(assign,readonly) Protocol * protocol;
+@property (nonatomic, readonly) Protocol *protocol;
 
 + (id)interfaceWithProtocol:(id)arg1 base:(id)arg2;
 

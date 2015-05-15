@@ -14,12 +14,12 @@
     NSString *mWhitespaceBeforeFirstChild;
 }
 
-@property(assign,retain) NSMutableArray * children;
-@property(assign,readwrite) struct TSCEVectorIndexPair { unsigned short x1; unsigned short x2; } dimensions;
-@property(assign,readwrite) unsigned long long firstIndex;
-@property(assign,readwrite) unsigned long long lastIndex;
-@property(assign,retain) NSMutableArray * whitespaceAfterDelimiters;
-@property(assign,retain) NSString * whitespaceBeforeFirstChild;
+@property (nonatomic, retain) NSMutableArray *children;
+@property (nonatomic) struct TSCEVectorIndexPair { unsigned short x1; unsigned short x2; } dimensions;
+@property (nonatomic) unsigned long long firstIndex;
+@property (nonatomic) unsigned long long lastIndex;
+@property (nonatomic, retain) NSMutableArray *whitespaceAfterDelimiters;
+@property (nonatomic, retain) NSString *whitespaceBeforeFirstChild;
 
 - (id).cxx_construct;
 - (id)children;

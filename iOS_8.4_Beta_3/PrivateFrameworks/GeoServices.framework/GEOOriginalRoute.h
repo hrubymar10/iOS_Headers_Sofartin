@@ -11,12 +11,12 @@
     NSData *_routeHandle;
 }
 
-@property(assign,readonly) bool hasOriginalDirectionsResponseID;
-@property(assign,readwrite) bool hasOriginalRoutePurpose;
-@property(assign,readonly) bool hasRouteHandle;
-@property(assign,retain) NSData * originalDirectionsResponseID;
-@property(assign,readwrite) int originalRoutePurpose;
-@property(assign,retain) NSData * routeHandle;
+@property (nonatomic, readonly) bool hasOriginalDirectionsResponseID;
+@property (nonatomic) bool hasOriginalRoutePurpose;
+@property (nonatomic, readonly) bool hasRouteHandle;
+@property (nonatomic, retain) NSData *originalDirectionsResponseID;
+@property (nonatomic) int originalRoutePurpose;
+@property (nonatomic, retain) NSData *routeHandle;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

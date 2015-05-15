@@ -6,7 +6,7 @@
     NSString *_text;
 }
 
-@property(assign,copy) NSString * text;
+@property (nonatomic, copy) NSString *text;
 
 - (void)_appendDescriptionOfAttributesToString:(id)arg1;
 - (void)_setText:(id)arg1;

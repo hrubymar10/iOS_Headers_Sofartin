@@ -11,12 +11,12 @@
     PLXPCResponderOperatorComposition *_xpcResponderUIBatteryForModels;
 }
 
-@property(assign,readonly) double appBreakdownThresholdPercent;
-@property(assign,retain) PLNSNotificationOperatorComposition * dailyTaskNotification;
-@property(assign,readonly) NSDictionary * nonAppBundleIDsWhitelist;
-@property(assign,retain) PLNSTimerOperatorComposition * runLoggingTimer;
-@property(assign,retain) PLXPCResponderOperatorComposition * xpcResponderUIBattery;
-@property(assign,retain) PLXPCResponderOperatorComposition * xpcResponderUIBatteryForModels;
+@property (readonly) double appBreakdownThresholdPercent;
+@property (retain) PLNSNotificationOperatorComposition *dailyTaskNotification;
+@property (readonly) NSDictionary *nonAppBundleIDsWhitelist;
+@property (retain) PLNSTimerOperatorComposition *runLoggingTimer;
+@property (retain) PLXPCResponderOperatorComposition *xpcResponderUIBattery;
+@property (retain) PLXPCResponderOperatorComposition *xpcResponderUIBatteryForModels;
 
 + (id)defaults;
 + (id)entryEventPointBUILogging;

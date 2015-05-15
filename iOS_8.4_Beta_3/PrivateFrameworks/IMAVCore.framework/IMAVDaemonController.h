@@ -19,8 +19,8 @@
     struct __CFRunLoopSource { } *_runLoopSource;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * _remoteMessageQueue;
-@property(assign,readonly) IMAVDaemonListener * listener;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *_remoteMessageQueue;
+@property (nonatomic, readonly) IMAVDaemonListener *listener;
 
 + (id)sharedInstance;
 

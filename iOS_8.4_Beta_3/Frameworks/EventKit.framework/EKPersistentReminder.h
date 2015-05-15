@@ -6,13 +6,13 @@
     EKObjectID *_parentID;
 }
 
-@property(getter=isCompleted,assign,readwrite) bool completed;
-@property(assign,copy) NSDate * completionDate;
-@property(assign,readwrite) unsigned long long displayOrder;
-@property(assign,copy) NSDate * dueDate;
-@property(assign,readwrite) bool dueDateAllDay;
-@property(assign,copy) NSTimeZone * dueDateTimeZone;
-@property(assign,copy) EKObjectID * parentID;
+@property (getter=isCompleted, nonatomic) bool completed;
+@property (nonatomic, copy) NSDate *completionDate;
+@property (nonatomic) unsigned long long displayOrder;
+@property (nonatomic, copy) NSDate *dueDate;
+@property (nonatomic) bool dueDateAllDay;
+@property (nonatomic, copy) NSTimeZone *dueDateTimeZone;
+@property (nonatomic, copy) EKObjectID *parentID;
 
 + (id)generateUniqueIDWithReminder:(id)arg1 calendar:(id)arg2;
 

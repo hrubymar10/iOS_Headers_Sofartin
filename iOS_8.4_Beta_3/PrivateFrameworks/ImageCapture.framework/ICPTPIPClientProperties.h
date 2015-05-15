@@ -11,12 +11,12 @@
     int _serverFD;
 }
 
-@property(assign,readwrite) struct __CFFileDescriptor { }* fdref;
-@property(assign,readwrite) int pid;
-@property(getter=didRegister,assign,readwrite) bool registered;
-@property(assign,readwrite) int remoteAddress;
-@property(assign,readwrite) struct __CFMessagePort { }* remotePort;
-@property(assign,readwrite) int serverFD;
+@property struct __CFFileDescriptor { }*fdref;
+@property int pid;
+@property (getter=didRegister) bool registered;
+@property int remoteAddress;
+@property struct __CFMessagePort { }*remotePort;
+@property int serverFD;
 
 - (void)dealloc;
 - (bool)didRegister;

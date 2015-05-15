@@ -12,10 +12,10 @@
     unsigned long long _state;
 }
 
-@property(assign,retain) UIImageView * animatingImageView;
-@property(assign,retain) UIImageView * fullHeartImageView;
-@property(assign,retain) UIImageView * reloadArrowView;
-@property(assign,retain) UIImageView * reloadOutlineView;
+@property (nonatomic, retain) UIImageView *animatingImageView;
+@property (nonatomic, retain) UIImageView *fullHeartImageView;
+@property (nonatomic, retain) UIImageView *reloadArrowView;
+@property (nonatomic, retain) UIImageView *reloadOutlineView;
 
 - (void).cxx_destruct;
 - (void)_beatFullHeartOnce;

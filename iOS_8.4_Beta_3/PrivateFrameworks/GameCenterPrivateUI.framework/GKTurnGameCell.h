@@ -11,12 +11,12 @@
     GKContiguousContainerView *_textContainerView;
 }
 
-@property(assign,retain) GKLabel * activeMatchesLabel;
-@property(assign,retain) GKLabel * localPlayerTurnsLabel;
-@property(assign,readwrite) unsigned long long numberOfActiveMatches;
-@property(assign,readwrite) unsigned long long numberOfLocalPlayerTurns;
-@property(assign,retain) UIImageView * statusImageView;
-@property(assign,retain) GKContiguousContainerView * textContainerView;
+@property (nonatomic, retain) GKLabel *activeMatchesLabel;
+@property (nonatomic, retain) GKLabel *localPlayerTurnsLabel;
+@property (nonatomic) unsigned long long numberOfActiveMatches;
+@property (nonatomic) unsigned long long numberOfLocalPlayerTurns;
+@property (nonatomic, retain) UIImageView *statusImageView;
+@property (nonatomic, retain) GKContiguousContainerView *textContainerView;
 
 + (double)defaultRowHeight;
 + (id)itemHeightList;

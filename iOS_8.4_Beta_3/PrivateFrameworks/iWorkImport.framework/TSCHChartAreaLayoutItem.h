@@ -11,8 +11,8 @@
     TSCHChartAxisLayoutItem *mTopHorizontalAxis;
 }
 
-@property(assign,readonly) TSCHChartReferenceLineLabelsLayoutItem * rightRefLineLabels;
-@property(assign,readonly) TSCHChartReferenceLineLabelsLayoutItem * topRefLineLabels;
+@property (nonatomic, readonly) TSCHChartReferenceLineLabelsLayoutItem *rightRefLineLabels;
+@property (nonatomic, readonly) TSCHChartReferenceLineLabelsLayoutItem *topRefLineLabels;
 
 - (void)buildSubTree;
 - (void)dealloc;

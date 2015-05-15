@@ -16,14 +16,14 @@
     int _storageType;
 }
 
-@property(assign,readwrite) int askedImageType;
-@property(assign,readonly) long long imageOrientation;
-@property(assign,readwrite) bool isPlaceholder;
-@property(assign,readonly) unsigned long long memoryUsage;
-@property(assign,readwrite) int obtainedImageType;
-@property(assign,readonly) double scale;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) int storageType;
+@property (nonatomic) int askedImageType;
+@property (nonatomic, readonly) long long imageOrientation;
+@property (nonatomic) bool isPlaceholder;
+@property (nonatomic, readonly) unsigned long long memoryUsage;
+@property (nonatomic) int obtainedImageType;
+@property (nonatomic, readonly) double scale;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) int storageType;
 
 + (id)abbreviatedDescriptionWithImageType:(int)arg1;
 + (id)descriptionWithImageType:(int)arg1;

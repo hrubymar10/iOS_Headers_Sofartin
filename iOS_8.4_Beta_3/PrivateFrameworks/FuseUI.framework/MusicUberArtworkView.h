@@ -16,7 +16,7 @@
     NSArray *_focusRegions;
 }
 
-@property(assign,copy) NSArray * focusRegions;
+@property (nonatomic, copy) NSArray *focusRegions;
 
 - (void).cxx_destruct;
 - (void)_musicArtworkViewCommonInitialization;

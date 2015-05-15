@@ -12,13 +12,13 @@
     AVAsset *_videoAsset;
 }
 
-@property(assign,readonly) AVAsset * _finalAsset;
-@property(assign,readonly) AVAudioMix * _finalAudioMix;
-@property(assign,readonly) AVVideoComposition * _finalVideoComposition;
-@property(assign,readonly) PFSlowMotionTimeRangeMapper * _timeRangeMapperForExport;
-@property(assign,readonly) PFSlowMotionTimeRangeMapper * _timeRangeMapperForPlayback;
-@property(assign,readonly) PFVideoAdjustments * videoAdjustments;
-@property(assign,readonly) AVAsset * videoAsset;
+@property (nonatomic, readonly) AVAsset *_finalAsset;
+@property (nonatomic, readonly) AVAudioMix *_finalAudioMix;
+@property (nonatomic, readonly) AVVideoComposition *_finalVideoComposition;
+@property (nonatomic, readonly) PFSlowMotionTimeRangeMapper *_timeRangeMapperForExport;
+@property (nonatomic, readonly) PFSlowMotionTimeRangeMapper *_timeRangeMapperForPlayback;
+@property (nonatomic, readonly) PFVideoAdjustments *videoAdjustments;
+@property (nonatomic, readonly) AVAsset *videoAsset;
 
 - (void).cxx_destruct;
 - (id)_finalAsset;

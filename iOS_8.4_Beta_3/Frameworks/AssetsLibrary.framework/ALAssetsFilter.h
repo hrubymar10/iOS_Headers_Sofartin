@@ -6,7 +6,7 @@
     id _internal;
 }
 
-@property(assign,retain) ALAssetsFilterInternal * internal;
+@property (nonatomic, retain) ALAssetsFilterInternal *internal;
 
 + (id)allAssets;
 + (id)allPhotos;

@@ -6,7 +6,7 @@
     CKRecordZoneID *_zoneID;
 }
 
-@property(assign,retain) CKRecordZoneID * zoneID;
+@property (nonatomic, retain) CKRecordZoneID *zoneID;
 
 + (id)dataWithZoneID:(id)arg1 pcsData:(id)arg2;
 + (bool)supportsSecureCoding;

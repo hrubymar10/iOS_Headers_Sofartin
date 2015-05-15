@@ -24,22 +24,22 @@
     bool tokenCheckRequired;
 }
 
-@property(getter=isAuthenticationRequired,assign,readwrite) bool authenticationRequired;
-@property(assign,readwrite) unsigned int basePlaylistContainerID;
-@property(assign,readonly) NSURL * baseURL;
-@property(assign,readwrite) long long connectionState;
-@property(assign,readonly) long long connectionType;
-@property(assign,readwrite) unsigned int controlKey;
-@property(assign,readwrite) unsigned int controlPort;
-@property(assign,readwrite) unsigned int databaseID;
-@property(assign,readwrite) unsigned int databaseRevision;
-@property(assign,retain) HSFairPlayInfo * fairPlayInfo;
-@property(assign,copy) NSString * homeSharingGroupID;
-@property(assign,readwrite) unsigned int interfaceID;
-@property(assign,readwrite) unsigned int promptID;
-@property(assign,readwrite) unsigned int sessionID;
-@property(assign,readwrite) bool tokenCheckRequired;
-@property(getter=isTokenCheckRequired,assign,readonly) bool tokenCheckRequred;
+@property (getter=isAuthenticationRequired) bool authenticationRequired;
+@property unsigned int basePlaylistContainerID;
+@property (nonatomic, readonly) NSURL *baseURL;
+@property long long connectionState;
+@property (nonatomic, readonly) long long connectionType;
+@property unsigned int controlKey;
+@property unsigned int controlPort;
+@property unsigned int databaseID;
+@property unsigned int databaseRevision;
+@property (retain) HSFairPlayInfo *fairPlayInfo;
+@property (copy) NSString *homeSharingGroupID;
+@property unsigned int interfaceID;
+@property (nonatomic) unsigned int promptID;
+@property unsigned int sessionID;
+@property bool tokenCheckRequired;
+@property (getter=isTokenCheckRequired, readonly) bool tokenCheckRequred;
 
 + (void)_scheduleDialogResetIfNeeded;
 

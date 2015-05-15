@@ -8,9 +8,9 @@
     bool _supportsVolumeControl;
 }
 
-@property(assign,readwrite) bool supportsDirectionalControl;
-@property(assign,readwrite) bool supportsSpeakerSelection;
-@property(assign,readwrite) bool supportsVolumeControl;
+@property (nonatomic) bool supportsDirectionalControl;
+@property (nonatomic) bool supportsSpeakerSelection;
+@property (nonatomic) bool supportsVolumeControl;
 
 - (id)initWithProtobuf:(id)arg1;
 - (id)protobuf;

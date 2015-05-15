@@ -7,14 +7,14 @@
     struct __C3DHitTestResult { } *_result;
 }
 
-@property(assign,readonly) long long faceIndex;
-@property(assign,readonly) long long geometryIndex;
-@property(assign,readonly) struct SCNVector3 { float x1; float x2; float x3; } localCoordinates;
-@property(assign,readonly) struct SCNVector3 { float x1; float x2; float x3; } localNormal;
-@property(assign,readonly) struct SCNMatrix4 { float x1; float x2; float x3; float x4; float x5; float x6; float x7; float x8; float x9; float x10; float x11; float x12; float x13; float x14; float x15; float x16; } modelTransform;
-@property(assign,readonly) SCNNode * node;
-@property(assign,readonly) struct SCNVector3 { float x1; float x2; float x3; } worldCoordinates;
-@property(assign,readonly) struct SCNVector3 { float x1; float x2; float x3; } worldNormal;
+@property (nonatomic, readonly) long long faceIndex;
+@property (nonatomic, readonly) long long geometryIndex;
+@property (nonatomic, readonly) struct SCNVector3 { float x1; float x2; float x3; } localCoordinates;
+@property (nonatomic, readonly) struct SCNVector3 { float x1; float x2; float x3; } localNormal;
+@property (nonatomic, readonly) struct SCNMatrix4 { float x1; float x2; float x3; float x4; float x5; float x6; float x7; float x8; float x9; float x10; float x11; float x12; float x13; float x14; float x15; float x16; } modelTransform;
+@property (nonatomic, readonly) SCNNode *node;
+@property (nonatomic, readonly) struct SCNVector3 { float x1; float x2; float x3; } worldCoordinates;
+@property (nonatomic, readonly) struct SCNVector3 { float x1; float x2; float x3; } worldNormal;
 
 + (id)SCNJSExportProtocol;
 + (id)hitTestResultsFromHitTestResultRef:(struct __CFArray { }*)arg1;

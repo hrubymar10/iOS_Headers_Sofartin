@@ -8,8 +8,8 @@
     id _woeidWeatherHandler;
 }
 
-@property(assign,retain) NSMutableArray * parsedCities;
-@property(assign,retain) NSArray * requestedCities;
+@property (nonatomic, retain) NSMutableArray *parsedCities;
+@property (nonatomic, retain) NSArray *requestedCities;
 
 + (void)clearSharedIdentifierUpdater;
 + (id)sharedWeatherIdentifierUpdater;

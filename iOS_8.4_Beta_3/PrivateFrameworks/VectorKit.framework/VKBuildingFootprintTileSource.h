@@ -8,7 +8,7 @@
     bool _prepareExtrusion;
 }
 
-@property(assign,readwrite) bool makeFacades;
+@property (nonatomic) bool makeFacades;
 
 - (id)initWithTileSet:(id)arg1 resourceManifestConfiguration:(id)arg2 locale:(id)arg3;
 - (bool)makeFacades;

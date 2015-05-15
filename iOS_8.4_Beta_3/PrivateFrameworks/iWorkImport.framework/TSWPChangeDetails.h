@@ -8,20 +8,20 @@
     NSString *mChangeTrackingTitleString;
 }
 
-@property(assign,readonly) int annotationDisplayStringType;
-@property(assign,readonly) int annotationType;
-@property(assign,readonly) TSKAnnotationAuthor * author;
-@property(assign,retain) TSWPChange * change;
-@property(assign,readonly) NSString * changeTrackingContentFormatString;
-@property(assign,readonly) NSString * changeTrackingContentString;
-@property(assign,readonly) NSString * changeTrackingTitleString;
-@property(assign,readonly) NSDate * date;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <TSKModel> * hostingModel;
-@property(assign,copy) TSDCommentStorage * storage;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) int annotationDisplayStringType;
+@property (nonatomic, readonly) int annotationType;
+@property (nonatomic, readonly) TSKAnnotationAuthor *author;
+@property (nonatomic, retain) TSWPChange *change;
+@property (nonatomic, readonly) NSString *changeTrackingContentFormatString;
+@property (nonatomic, readonly) NSString *changeTrackingContentString;
+@property (nonatomic, readonly) NSString *changeTrackingTitleString;
+@property (nonatomic, readonly) NSDate *date;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <TSKModel> *hostingModel;
+@property (nonatomic, copy) TSDCommentStorage *storage;
+@property (readonly) Class superclass;
 
 - (int)annotationDisplayStringType;
 - (int)annotationType;

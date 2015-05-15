@@ -37,26 +37,26 @@
     } _totalBounds;
 }
 
-@property(assign,readwrite) double actualScaleFactor;
-@property(assign,readwrite) double actualTrackingAdjustment;
-@property(assign,readwrite) double baselineOffset;
-@property(assign,readwrite) bool cachesLayout;
-@property(assign,readwrite) bool drawsDebugBaselines;
-@property(assign,readwrite) double firstBaselineOffset;
-@property(assign,retain) id layout;
-@property(assign,readwrite) unsigned long long maximumNumberOfLines;
-@property(assign,readwrite) double minimumScaleFactor;
-@property(assign,readwrite) double minimumTrackingAdjustment;
-@property(assign,readwrite) unsigned long long numberOfLineFragments;
-@property(assign,readwrite) double scaledBaselineOffset;
-@property(assign,readwrite) double scaledLineHeight;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } totalBounds;
-@property(assign,readwrite) bool usesSimpleTextEffects;
-@property(assign,readwrite) bool wantsBaselineOffset;
-@property(assign,readwrite) bool wantsNumberOfLineFragments;
-@property(assign,readwrite) bool wantsScaledBaselineOffset;
-@property(assign,readwrite) bool wantsScaledLineHeight;
-@property(assign,readwrite) bool wrapsForTruncationMode;
+@property (nonatomic) double actualScaleFactor;
+@property (nonatomic) double actualTrackingAdjustment;
+@property (nonatomic) double baselineOffset;
+@property (nonatomic) bool cachesLayout;
+@property (nonatomic) bool drawsDebugBaselines;
+@property (nonatomic) double firstBaselineOffset;
+@property (nonatomic, retain) id layout;
+@property (nonatomic) unsigned long long maximumNumberOfLines;
+@property (nonatomic) double minimumScaleFactor;
+@property (nonatomic) double minimumTrackingAdjustment;
+@property (nonatomic) unsigned long long numberOfLineFragments;
+@property (nonatomic) double scaledBaselineOffset;
+@property (nonatomic) double scaledLineHeight;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } totalBounds;
+@property (nonatomic) bool usesSimpleTextEffects;
+@property (nonatomic) bool wantsBaselineOffset;
+@property (nonatomic) bool wantsNumberOfLineFragments;
+@property (nonatomic) bool wantsScaledBaselineOffset;
+@property (nonatomic) bool wantsScaledLineHeight;
+@property (nonatomic) bool wrapsForTruncationMode;
 
 - (double)actualScaleFactor;
 - (double)actualTrackingAdjustment;

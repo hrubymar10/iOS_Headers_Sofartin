@@ -9,10 +9,10 @@
     bool _valid;
 }
 
-@property(assign,readonly) CLIntersiloInterface * inboundInterface;
-@property(assign,readonly) CLIntersiloInterface * outboundInterface;
-@property(assign,readonly) CLSilo * silo;
-@property(assign,readwrite) bool valid;
+@property (nonatomic, readonly) CLIntersiloInterface *inboundInterface;
+@property (nonatomic, readonly) CLIntersiloInterface *outboundInterface;
+@property (nonatomic, readonly) CLSilo *silo;
+@property (nonatomic) bool valid;
 
 + (void)becameFatallyBlocked:(id)arg1;
 + (id)getSilo;

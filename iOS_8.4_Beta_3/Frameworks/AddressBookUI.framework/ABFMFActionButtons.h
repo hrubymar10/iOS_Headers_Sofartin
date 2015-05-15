@@ -9,12 +9,12 @@
     ABUnknownPersonViewController *_upvc;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) void* displayedPerson;
-@property(assign,readonly) bool hasTelephonyCapability;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) void*displayedPerson;
+@property (nonatomic, readonly) bool hasTelephonyCapability;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (void*)displayedPerson;

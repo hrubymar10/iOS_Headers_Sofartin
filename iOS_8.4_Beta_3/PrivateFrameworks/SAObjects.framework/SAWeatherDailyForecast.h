@@ -4,8 +4,8 @@
 
 @interface SAWeatherDailyForecast : SAWeatherForecast
 
-@property(assign,copy) NSNumber * highTemperature;
-@property(assign,copy) NSNumber * lowTemperature;
+@property (nonatomic, copy) NSNumber *highTemperature;
+@property (nonatomic, copy) NSNumber *lowTemperature;
 
 + (id)dailyForecast;
 + (id)dailyForecastWithDictionary:(id)arg1 context:(id)arg2;

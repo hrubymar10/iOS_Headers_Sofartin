@@ -20,20 +20,20 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned long long deltaTime;
-@property(assign,readwrite) bool hasDeltaTime;
-@property(assign,readwrite) bool hasPayloadSize;
-@property(assign,readwrite) bool hasPriority;
-@property(assign,readwrite) bool hasQos;
-@property(assign,readonly) bool hasService;
-@property(assign,readwrite) bool hasThreadPriority;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long payloadSize;
-@property(assign,readwrite) unsigned long long priority;
-@property(assign,readwrite) unsigned long long qos;
-@property(assign,retain) NSString * service;
-@property(assign,readwrite) unsigned long long threadPriority;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned long long deltaTime;
+@property (nonatomic) bool hasDeltaTime;
+@property (nonatomic) bool hasPayloadSize;
+@property (nonatomic) bool hasPriority;
+@property (nonatomic) bool hasQos;
+@property (nonatomic, readonly) bool hasService;
+@property (nonatomic) bool hasThreadPriority;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long payloadSize;
+@property (nonatomic) unsigned long long priority;
+@property (nonatomic) unsigned long long qos;
+@property (nonatomic, retain) NSString *service;
+@property (nonatomic) unsigned long long threadPriority;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

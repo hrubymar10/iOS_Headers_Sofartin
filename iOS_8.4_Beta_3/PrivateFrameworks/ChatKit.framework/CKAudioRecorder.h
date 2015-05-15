@@ -17,23 +17,23 @@
     CKVoiceController *_voiceController;
 }
 
-@property(getter=isCancelled,assign,readwrite) bool cancelled;
-@property(assign,copy) id completion;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKAudioRecorderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double duration;
-@property(assign,readwrite) struct OpaqueAudioFileID { }* fileID;
-@property(assign,retain) NSURL * fileURL;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isRecording,assign,readwrite) bool recording;
-@property(getter=isRecordingEmpty,assign,readwrite) bool recordingEmpty;
-@property(assign,readwrite) bool shouldPlayStartSound;
-@property(assign,readwrite) bool shouldPlayStopSound;
-@property(assign,retain) NSDate * startDate;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long totalPacketsCount;
-@property(assign,retain) CKVoiceController * voiceController;
+@property (getter=isCancelled, nonatomic) bool cancelled;
+@property (nonatomic, copy) id completion;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKAudioRecorderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic) struct OpaqueAudioFileID { }*fileID;
+@property (nonatomic, retain) NSURL *fileURL;
+@property (readonly) unsigned long long hash;
+@property (getter=isRecording, nonatomic) bool recording;
+@property (getter=isRecordingEmpty, nonatomic) bool recordingEmpty;
+@property (nonatomic) bool shouldPlayStartSound;
+@property (nonatomic) bool shouldPlayStopSound;
+@property (nonatomic, retain) NSDate *startDate;
+@property (readonly) Class superclass;
+@property (nonatomic) long long totalPacketsCount;
+@property (nonatomic, retain) CKVoiceController *voiceController;
 
 - (void)applicationDidEnterBackground:(id)arg1;
 - (void)cancelRecording;

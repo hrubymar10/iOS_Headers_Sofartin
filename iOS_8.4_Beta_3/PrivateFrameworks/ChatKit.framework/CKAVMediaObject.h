@@ -7,7 +7,7 @@
     bool _durationLoaded;
 }
 
-@property(assign,readwrite) double duration;
+@property (nonatomic) double duration;
 
 + (id)durationCache;
 

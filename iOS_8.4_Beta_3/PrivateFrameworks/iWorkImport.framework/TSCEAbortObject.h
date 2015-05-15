@@ -6,7 +6,7 @@
     bool _isAborted;
 }
 
-@property(assign,readonly) bool isAborted;
+@property (readonly) bool isAborted;
 
 - (id)initWithSecondsTillAbort:(int)arg1;
 - (bool)isAborted;

@@ -18,12 +18,12 @@
     bool useShortMode;
 }
 
-@property(getter=isArrowVisible,assign,readwrite) bool arrowVisible;
-@property(assign,readwrite) long long backgroundStyle;
-@property(getter=isDebugModeEnabled,assign,readwrite) bool debugModeEnabled;
-@property(assign,readwrite) double dimmingViewTopEdgeInset;
-@property(assign,copy) UIColor * popoverBackgroundColor;
-@property(assign,readwrite) bool useShortMode;
+@property (getter=isArrowVisible, nonatomic) bool arrowVisible;
+@property (nonatomic) long long backgroundStyle;
+@property (getter=isDebugModeEnabled, nonatomic) bool debugModeEnabled;
+@property (nonatomic) double dimmingViewTopEdgeInset;
+@property (nonatomic, copy) UIColor *popoverBackgroundColor;
+@property (nonatomic) bool useShortMode;
 
 + (double)arrowBase;
 + (double)arrowHeight;

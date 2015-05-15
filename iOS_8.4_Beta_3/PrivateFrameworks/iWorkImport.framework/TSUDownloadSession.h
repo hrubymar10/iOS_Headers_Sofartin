@@ -23,13 +23,13 @@
     long long _totalBytesExpectedToBeDownloaded;
 }
 
-@property(assign,readonly) NSProgress * NSProgress;
-@property(assign,readonly) bool isActive;
-@property(assign,readonly) bool isCancelled;
-@property(assign,readonly) TSUProgress * progress;
-@property(assign,readonly) NSString * sessionDescription;
-@property(assign,readonly) long long totalBytesDownloaded;
-@property(assign,readonly) long long totalBytesExpectedToBeDownloaded;
+@property (nonatomic, readonly) NSProgress *NSProgress;
+@property (nonatomic, readonly) bool isActive;
+@property (nonatomic, readonly) bool isCancelled;
+@property (nonatomic, readonly) TSUProgress *progress;
+@property (nonatomic, readonly) NSString *sessionDescription;
+@property (nonatomic, readonly) long long totalBytesDownloaded;
+@property (nonatomic, readonly) long long totalBytesExpectedToBeDownloaded;
 
 - (void).cxx_destruct;
 - (id)NSProgress;

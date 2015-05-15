@@ -25,18 +25,18 @@
     bool _useSmallButton;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SBUIControlCenterButtonDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCircleButton;
-@property(assign,readwrite) bool isRectButton;
-@property(assign,readwrite) double naturalHeight;
-@property(assign,retain) UIImage * normalBGImage;
-@property(assign,retain) UIImage * sourceGlyphImage;
-@property(assign,retain) UIImage * sourceSelectedGlyphImage;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool useSmallButton;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SBUIControlCenterButtonDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCircleButton;
+@property (nonatomic) bool isRectButton;
+@property (nonatomic) double naturalHeight;
+@property (nonatomic, retain) UIImage *normalBGImage;
+@property (nonatomic, retain) UIImage *sourceGlyphImage;
+@property (nonatomic, retain) UIImage *sourceSelectedGlyphImage;
+@property (readonly) Class superclass;
+@property (nonatomic) bool useSmallButton;
 
 + (id)_buttonWithBGImage:(id)arg1 glyphImage:(id)arg2 naturalHeight:(double)arg3;
 + (id)_circleBackgroundImage;

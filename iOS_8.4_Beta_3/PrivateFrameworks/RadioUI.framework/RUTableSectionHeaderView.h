@@ -8,8 +8,8 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSAttributedString * attributedTitle;
-@property(assign,readwrite) double backdropTransitionWeighting;
+@property (nonatomic, copy) NSAttributedString *attributedTitle;
+@property (nonatomic) double backdropTransitionWeighting;
 
 - (void).cxx_destruct;
 - (id)attributedTitle;

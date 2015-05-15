@@ -14,15 +14,15 @@
     NSMutableArray *_titles;
 }
 
-@property(assign,readonly) NSArray * allTitles;
-@property(assign,readonly) long long defaultSelectedIndex;
-@property(assign,readonly) long long menuStyle;
-@property(assign,readonly) NSString * menuTitle;
-@property(assign,readonly) float menuTitleFontSize;
-@property(assign,readonly) long long menuTitleFontWeight;
-@property(assign,readonly) long long numberOfItems;
-@property(assign,readonly) NSString * titleForMoreItem;
-@property(assign,readonly) SKUISegmentedControlViewElement * viewElement;
+@property (nonatomic, readonly) NSArray *allTitles;
+@property (nonatomic, readonly) long long defaultSelectedIndex;
+@property (nonatomic, readonly) long long menuStyle;
+@property (nonatomic, readonly) NSString *menuTitle;
+@property (nonatomic, readonly) float menuTitleFontSize;
+@property (nonatomic, readonly) long long menuTitleFontWeight;
+@property (nonatomic, readonly) long long numberOfItems;
+@property (nonatomic, readonly) NSString *titleForMoreItem;
+@property (nonatomic, readonly) SKUISegmentedControlViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (id)_componentWithContext:(id)arg1;

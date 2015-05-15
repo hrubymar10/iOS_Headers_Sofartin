@@ -13,14 +13,14 @@
     int _yPosition;
 }
 
-@property(assign,readwrite) int face;
-@property(assign,readwrite) int mode;
-@property(assign,readwrite) bool reveal;
-@property(assign,readwrite) int scontinuity;
-@property(assign,readwrite) int tcontinuity;
-@property(assign,readwrite) int wrap;
-@property(assign,readwrite) int xposition;
-@property(assign,readwrite) int yposition;
+@property (nonatomic) int face;
+@property (nonatomic) int mode;
+@property (nonatomic) bool reveal;
+@property (nonatomic) int scontinuity;
+@property (nonatomic) int tcontinuity;
+@property (nonatomic) int wrap;
+@property (nonatomic) int xposition;
+@property (nonatomic) int yposition;
 
 + (id)instanceWithArchive:(const struct Chart3DImageTextureTilingArchive { int (**x1)(); struct UnknownFieldSet { struct vector<google::protobuf::UnknownField, std::__1::allocator<google::protobuf::UnknownField> > {} *x_2_1_1; } x2; unsigned int x3[1]; int x4; struct Chart3DBaseImageTextureTilingArchive {} *x5; int x6; int x7; int x8; int x9; int x10; int x11; int x12; bool x13; }*)arg1 unarchiver:(id)arg2;
 

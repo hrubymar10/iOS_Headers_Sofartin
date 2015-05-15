@@ -16,20 +16,20 @@
     NSSet *_urls;
 }
 
-@property(assign,readwrite) <CoreDAVAccountInfoProvider> * accountInfoProvider;
-@property(assign,retain) NSSet * additionalPropElements;
-@property(assign,copy) id completionBlock;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) NSSet * deletedURLs;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSSet * missingURLs;
-@property(assign,readonly) NSSet * parsedContents;
-@property(assign,readwrite) bool shouldIgnoreResponseErrors;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <CoreDAVTaskManager> * taskManager;
-@property(assign,readwrite) double timeoutInterval;
+@property (nonatomic) <CoreDAVAccountInfoProvider> *accountInfoProvider;
+@property (nonatomic, retain) NSSet *additionalPropElements;
+@property (nonatomic, copy) id completionBlock;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) NSSet *deletedURLs;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSSet *missingURLs;
+@property (nonatomic, readonly) NSSet *parsedContents;
+@property (nonatomic) bool shouldIgnoreResponseErrors;
+@property (readonly) Class superclass;
+@property (nonatomic) <CoreDAVTaskManager> *taskManager;
+@property (nonatomic) double timeoutInterval;
 
 - (id)additionalPropElements;
 - (id)copyAdditionalPropElements;

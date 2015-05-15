@@ -8,9 +8,9 @@
     bool _recordingTelemetry;
 }
 
-@property(assign,retain) NSOperationQueue * accelerationQueue;
-@property(assign,retain) NSOperationQueue * activityQueue;
-@property(assign,readwrite) bool recordingTelemetry;
+@property (nonatomic, retain) NSOperationQueue *accelerationQueue;
+@property (nonatomic, retain) NSOperationQueue *activityQueue;
+@property (nonatomic) bool recordingTelemetry;
 
 + (id)sharedLogger;
 

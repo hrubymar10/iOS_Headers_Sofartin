@@ -14,15 +14,15 @@
     NSURL *_trustedServiceManagerURL;
 }
 
-@property(assign,retain) NSURL * brokerURL;
-@property(assign,retain) NSNumber * cardsOnFile;
-@property(assign,retain) NSArray * certificates;
-@property(assign,retain) NSString * deviceIdentifier;
-@property(assign,retain) NSNumber * maxCards;
-@property(assign,retain) NSURL * paymentServicesURL;
-@property(assign,readonly) NSString * primaryRegion;
-@property(assign,retain) NSDictionary * regions;
-@property(assign,retain) NSURL * trustedServiceManagerURL;
+@property (nonatomic, retain) NSURL *brokerURL;
+@property (nonatomic, retain) NSNumber *cardsOnFile;
+@property (nonatomic, retain) NSArray *certificates;
+@property (nonatomic, retain) NSString *deviceIdentifier;
+@property (nonatomic, retain) NSNumber *maxCards;
+@property (nonatomic, retain) NSURL *paymentServicesURL;
+@property (nonatomic, readonly) NSString *primaryRegion;
+@property (nonatomic, retain) NSDictionary *regions;
+@property (nonatomic, retain) NSURL *trustedServiceManagerURL;
 
 - (id)brokerURL;
 - (id)cardsOnFile;

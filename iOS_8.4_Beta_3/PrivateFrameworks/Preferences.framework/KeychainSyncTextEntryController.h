@@ -14,16 +14,16 @@
     NSString *_textValue;
 }
 
-@property(assign,readwrite) bool convertsNumeralsToASCII;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hidesNextButton;
-@property(assign,readwrite) bool secureTextEntry;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) int textEntryType;
-@property(assign,readwrite) bool textFieldHasRoundBorder;
-@property(assign,retain) NSString * textValue;
+@property (nonatomic) bool convertsNumeralsToASCII;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hidesNextButton;
+@property (nonatomic) bool secureTextEntry;
+@property (readonly) Class superclass;
+@property (nonatomic) int textEntryType;
+@property (nonatomic) bool textFieldHasRoundBorder;
+@property (nonatomic, retain) NSString *textValue;
 
 - (bool)becomeFirstResponder;
 - (bool)convertsNumeralsToASCII;

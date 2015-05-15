@@ -18,12 +18,12 @@
     NSObject<OS_dispatch_queue> *printersQueue;
 }
 
-@property(assign,readwrite) <PKPrinterBrowserDelegate> * delegate;
-@property(assign,retain) NSFileHandle * handle;
-@property(assign,retain) NSMutableArray * pendingList;
-@property(assign,retain) NSMutableDictionary * printers;
-@property(assign,retain) NSMutableDictionary * printersByUUID;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * printersQueue;
+@property (nonatomic) <PKPrinterBrowserDelegate> *delegate;
+@property (nonatomic, retain) NSFileHandle *handle;
+@property (nonatomic, retain) NSMutableArray *pendingList;
+@property (nonatomic, retain) NSMutableDictionary *printers;
+@property (nonatomic, retain) NSMutableDictionary *printersByUUID;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *printersQueue;
 
 + (id)browserWithDelegate:(id)arg1;
 

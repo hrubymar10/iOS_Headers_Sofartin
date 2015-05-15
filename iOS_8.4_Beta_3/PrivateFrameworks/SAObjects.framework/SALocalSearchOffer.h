@@ -4,13 +4,13 @@
 
 @interface SALocalSearchOffer : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) SAUIAppPunchOut * offerPunchOut;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, retain) SAUIAppPunchOut *offerPunchOut;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
 
 + (id)offer;
 + (id)offerWithDictionary:(id)arg1 context:(id)arg2;

@@ -16,10 +16,10 @@
     SUTouchCaptureView *_touchCaptureView;
 }
 
-@property(assign,retain) UIView * accessoryView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } accessoryViewInsets;
-@property(getter=isLoading,assign,readwrite) bool loading;
-@property(getter=isShowingConfirmation,assign,readonly) bool showingConfirmation;
+@property (nonatomic, retain) UIView *accessoryView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } accessoryViewInsets;
+@property (getter=isLoading, nonatomic) bool loading;
+@property (getter=isShowingConfirmation, nonatomic, readonly) bool showingConfirmation;
 
 + (Class)classForNavigationButton;
 

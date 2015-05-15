@@ -7,8 +7,8 @@
     NSMutableSet *_observers;
 }
 
-@property(assign,retain) NSArray * audioRoutes;
-@property(assign,retain) NSMutableSet * observers;
+@property (nonatomic, retain) NSArray *audioRoutes;
+@property (nonatomic, retain) NSMutableSet *observers;
 
 - (void).cxx_destruct;
 - (id)audioRoutes;

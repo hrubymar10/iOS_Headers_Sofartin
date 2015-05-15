@@ -9,10 +9,10 @@
     unsigned long long _version;
 }
 
-@property(assign,retain) NSMutableArray * allObjects;
-@property(assign,retain) SYMessageHeader * header;
-@property(assign,retain) NSString * syncID;
-@property(assign,readwrite) unsigned long long version;
+@property (nonatomic, retain) NSMutableArray *allObjects;
+@property (nonatomic, retain) SYMessageHeader *header;
+@property (nonatomic, retain) NSString *syncID;
+@property (nonatomic) unsigned long long version;
 
 - (void).cxx_destruct;
 - (void)addAllObjects:(id)arg1;

@@ -37,16 +37,16 @@
     bool _suppressAvailabilityRequests;
 }
 
-@property(assign,readonly) NSArray * addresses;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) <EKEventAttendeePickerDelegate> * emailValidationDelegate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * recipients;
-@property(assign,readonly) NSString * remainingText;
-@property(assign,copy) NSString * searchAccountID;
-@property(assign,readonly) bool showAvailability;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *addresses;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) <EKEventAttendeePickerDelegate> *emailValidationDelegate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *recipients;
+@property (nonatomic, readonly) NSString *remainingText;
+@property (nonatomic, copy) NSString *searchAccountID;
+@property (nonatomic, readonly) bool showAvailability;
+@property (readonly) Class superclass;
 
 + (id)_addressForRecipient:(id)arg1;
 + (bool)_participantHasResponded:(id)arg1;

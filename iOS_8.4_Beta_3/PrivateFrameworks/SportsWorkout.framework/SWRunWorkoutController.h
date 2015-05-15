@@ -30,26 +30,26 @@
     NSString *_workoutState;
 }
 
-@property(assign,readonly) bool canBeUsedForRunCalibration;
-@property(assign,readonly) bool canBeUsedForWalkCalibration;
-@property(assign,readonly) SWDataController * dataController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasEverStarted;
-@property(assign,readonly) bool hasPowerSong;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isCalibratedForRun;
-@property(assign,readonly) bool isCalibratedForWalk;
-@property(assign,readwrite) bool isCalibration;
-@property(assign,readonly) float maxCalibrationDistanceMiles;
-@property(assign,readonly) float minCalibrationDistanceMiles;
-@property(assign,readonly) NSString * powerSongName;
-@property(assign,retain) SWRunWorkoutPreset * preset;
-@property(assign,readonly) SWRemote * remote;
-@property(assign,readonly) SWRunSensor * sensor;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSDictionary * workoutData;
-@property(assign,readonly) NSString * workoutState;
+@property (nonatomic, readonly) bool canBeUsedForRunCalibration;
+@property (nonatomic, readonly) bool canBeUsedForWalkCalibration;
+@property (nonatomic, readonly) SWDataController *dataController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasEverStarted;
+@property (nonatomic, readonly) bool hasPowerSong;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isCalibratedForRun;
+@property (nonatomic, readonly) bool isCalibratedForWalk;
+@property (nonatomic) bool isCalibration;
+@property (nonatomic, readonly) float maxCalibrationDistanceMiles;
+@property (nonatomic, readonly) float minCalibrationDistanceMiles;
+@property (nonatomic, readonly) NSString *powerSongName;
+@property (nonatomic, retain) SWRunWorkoutPreset *preset;
+@property (nonatomic, readonly) SWRemote *remote;
+@property (nonatomic, readonly) SWRunSensor *sensor;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSDictionary *workoutData;
+@property (nonatomic, readonly) NSString *workoutState;
 
 + (void)__releaseWorkoutInProgressFileLock;
 + (id)__systemVersion;

@@ -17,18 +17,18 @@
     unsigned int _version;
 }
 
-@property(assign,retain) VKPGlobalProperties * globalProperties;
-@property(assign,readonly) bool hasGlobalProperties;
-@property(assign,readwrite) bool hasMapTypeSupport;
-@property(assign,readonly) bool hasMatchingTree;
-@property(assign,readwrite) bool hasMatchingTreeVersion;
-@property(assign,readwrite) bool hasVersion;
-@property(assign,readwrite) unsigned int mapTypeSupport;
-@property(assign,retain) NSMutableArray * matchingGraphNodes;
-@property(assign,retain) VKPMatchingTree * matchingTree;
-@property(assign,readwrite) unsigned int matchingTreeVersion;
-@property(assign,retain) NSMutableArray * styles;
-@property(assign,readwrite) unsigned int version;
+@property (nonatomic, retain) VKPGlobalProperties *globalProperties;
+@property (nonatomic, readonly) bool hasGlobalProperties;
+@property (nonatomic) bool hasMapTypeSupport;
+@property (nonatomic, readonly) bool hasMatchingTree;
+@property (nonatomic) bool hasMatchingTreeVersion;
+@property (nonatomic) bool hasVersion;
+@property (nonatomic) unsigned int mapTypeSupport;
+@property (nonatomic, retain) NSMutableArray *matchingGraphNodes;
+@property (nonatomic, retain) VKPMatchingTree *matchingTree;
+@property (nonatomic) unsigned int matchingTreeVersion;
+@property (nonatomic, retain) NSMutableArray *styles;
+@property (nonatomic) unsigned int version;
 
 - (void)addMatchingGraphNodes:(id)arg1;
 - (void)addStyle:(id)arg1;

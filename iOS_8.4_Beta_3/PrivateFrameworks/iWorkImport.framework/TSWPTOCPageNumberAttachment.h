@@ -7,8 +7,8 @@
     NSString *_pageNumber;
 }
 
-@property(assign,copy) NSString * bookmarkName;
-@property(assign,copy) NSString * pageNumber;
+@property (nonatomic, copy) NSString *bookmarkName;
+@property (nonatomic, copy) NSString *pageNumber;
 
 - (id)bookmarkName;
 - (void)dealloc;

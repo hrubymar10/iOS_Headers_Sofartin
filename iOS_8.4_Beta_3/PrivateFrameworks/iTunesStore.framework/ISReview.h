@@ -17,19 +17,19 @@
     unsigned long long _titleMaxLength;
 }
 
-@property(assign,readwrite) long long assetType;
-@property(assign,retain) NSString * body;
-@property(assign,readwrite) unsigned long long bodyMaxLength;
-@property(assign,readonly) bool hasSavedDraft;
-@property(assign,retain) NSURL * infoURL;
-@property(assign,readwrite) unsigned long long itemIdentifier;
-@property(assign,retain) NSString * nickname;
-@property(assign,readwrite) bool nicknameIsConfirmed;
-@property(assign,readwrite) unsigned long long nicknameMaxLength;
-@property(assign,readwrite) float rating;
-@property(assign,retain) NSURL * submitURL;
-@property(assign,retain) NSString * title;
-@property(assign,readwrite) unsigned long long titleMaxLength;
+@property (nonatomic) long long assetType;
+@property (nonatomic, retain) NSString *body;
+@property (nonatomic) unsigned long long bodyMaxLength;
+@property (nonatomic, readonly) bool hasSavedDraft;
+@property (nonatomic, retain) NSURL *infoURL;
+@property (nonatomic) unsigned long long itemIdentifier;
+@property (nonatomic, retain) NSString *nickname;
+@property (nonatomic) bool nicknameIsConfirmed;
+@property (nonatomic) unsigned long long nicknameMaxLength;
+@property (nonatomic) float rating;
+@property (nonatomic, retain) NSURL *submitURL;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic) unsigned long long titleMaxLength;
 
 - (id)_draftFileName;
 - (id)_draftsDirectoryPath;

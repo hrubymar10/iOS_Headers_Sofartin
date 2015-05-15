@@ -18,25 +18,25 @@
     NSMutableArray *mSeriesList;
 }
 
-@property(assign,retain) NSArray * axisList;
-@property(assign,retain) NSArray * categoryAxisList;
-@property(assign,readwrite) TSCHChartInfo * chartInfo;
-@property(assign,retain) TSCHChartGrid * grid;
-@property(assign,readonly) bool isMultiData;
-@property(assign,readonly) bool isTransient;
-@property(assign,readonly) unsigned long long maxNumberOfReferenceLines;
-@property(assign,readwrite) unsigned long long multiDataSetIndex;
-@property(assign,readonly) unsigned long long numberOfChunkableMultiDataSets;
-@property(assign,readonly) unsigned long long numberOfMultiDataSetCategories;
-@property(assign,readonly) unsigned long long numberOfMultiDataSets;
-@property(assign,readonly) unsigned long long numberOfSeries;
-@property(assign,readonly) unsigned long long numberOfSeriesForCalculatingBarWidth;
-@property(assign,readonly) unsigned long long numberOfValues;
-@property(assign,retain) NSDictionary * referenceLinesMap;
-@property(assign,readwrite) int scatterFormat;
-@property(assign,retain) NSArray * seriesList;
-@property(assign,retain) id syncRoot;
-@property(assign,retain) NSArray * valueAxisList;
+@property (nonatomic, readonly, retain) NSArray *axisList;
+@property (nonatomic, readonly, retain) NSArray *categoryAxisList;
+@property (nonatomic) TSCHChartInfo *chartInfo;
+@property (nonatomic, retain) TSCHChartGrid *grid;
+@property (nonatomic, readonly) bool isMultiData;
+@property (nonatomic, readonly) bool isTransient;
+@property (nonatomic, readonly) unsigned long long maxNumberOfReferenceLines;
+@property (nonatomic) unsigned long long multiDataSetIndex;
+@property (nonatomic, readonly) unsigned long long numberOfChunkableMultiDataSets;
+@property (nonatomic, readonly) unsigned long long numberOfMultiDataSetCategories;
+@property (nonatomic, readonly) unsigned long long numberOfMultiDataSets;
+@property (nonatomic, readonly) unsigned long long numberOfSeries;
+@property (nonatomic, readonly) unsigned long long numberOfSeriesForCalculatingBarWidth;
+@property (nonatomic, readonly) unsigned long long numberOfValues;
+@property (nonatomic, readonly, retain) NSDictionary *referenceLinesMap;
+@property (nonatomic) int scatterFormat;
+@property (nonatomic, readonly, retain) NSArray *seriesList;
+@property (nonatomic, readonly, retain) id syncRoot;
+@property (nonatomic, readonly, retain) NSArray *valueAxisList;
 
 - (id)axisForID:(id)arg1;
 - (id)axisList;

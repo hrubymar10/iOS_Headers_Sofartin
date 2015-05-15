@@ -22,14 +22,14 @@
     NSMutableDictionary *_zIndexByIndexPath;
 }
 
-@property(assign,retain) PUAlbumListTransitionContext * albumListTransitionContext;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } contentSizeAdjust;
-@property(assign,retain) UICollectionViewLayoutAttributes * globalHeaderAttributes;
-@property(setter=setInteractive:,assign,readwrite) bool isInteractive;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } referenceCenter;
-@property(assign,copy) UICollectionViewLayoutAttributes * referenceItemLayoutAttributes;
-@property(assign,copy) NSArray * visibleStackedItemLayoutAttributes;
-@property(assign,readwrite) double yAdjust;
+@property (nonatomic, retain) PUAlbumListTransitionContext *albumListTransitionContext;
+@property (nonatomic) struct CGSize { double x1; double x2; } contentSizeAdjust;
+@property (nonatomic, retain) UICollectionViewLayoutAttributes *globalHeaderAttributes;
+@property (setter=setInteractive:, nonatomic) bool isInteractive;
+@property (nonatomic) struct CGPoint { double x1; double x2; } referenceCenter;
+@property (nonatomic, copy) UICollectionViewLayoutAttributes *referenceItemLayoutAttributes;
+@property (nonatomic, copy) NSArray *visibleStackedItemLayoutAttributes;
+@property (nonatomic) double yAdjust;
 
 - (void).cxx_destruct;
 - (id)_animationForReusableView:(id)arg1 toLayoutAttributes:(id)arg2 type:(unsigned long long)arg3;

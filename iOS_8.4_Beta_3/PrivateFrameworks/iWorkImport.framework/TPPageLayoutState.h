@@ -14,20 +14,20 @@
     TPPageIndexPath *_pageIndexPath;
 }
 
-@property(assign,readwrite) unsigned long long bodyCharIndex;
-@property(assign,readwrite) void* bodyLayoutState;
-@property(assign,readonly) unsigned long long documentPageIndex;
-@property(assign,readwrite) bool doingLayout;
-@property(assign,readwrite) unsigned long long footnoteIndex;
-@property(assign,readonly) bool isLayoutComplete;
-@property(assign,readonly) unsigned long long lastLaidOutDocumentPageIndex;
-@property(assign,readonly) unsigned long long lastLaidOutSectionIndex;
-@property(assign,readonly) bool onLastSection;
-@property(assign,readonly) unsigned long long pageIndex;
-@property(assign,readonly) TPPageIndexPath * pageIndexPath;
-@property(assign,readonly) TPSection * section;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } sectionCharRange;
-@property(assign,readonly) unsigned long long sectionIndex;
+@property (nonatomic) unsigned long long bodyCharIndex;
+@property (nonatomic) void*bodyLayoutState;
+@property (nonatomic, readonly) unsigned long long documentPageIndex;
+@property (nonatomic) bool doingLayout;
+@property (nonatomic) unsigned long long footnoteIndex;
+@property (nonatomic, readonly) bool isLayoutComplete;
+@property (nonatomic, readonly) unsigned long long lastLaidOutDocumentPageIndex;
+@property (nonatomic, readonly) unsigned long long lastLaidOutSectionIndex;
+@property (nonatomic, readonly) bool onLastSection;
+@property (nonatomic, readonly) unsigned long long pageIndex;
+@property (nonatomic, readonly) TPPageIndexPath *pageIndexPath;
+@property (nonatomic, readonly) TPSection *section;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } sectionCharRange;
+@property (nonatomic, readonly) unsigned long long sectionIndex;
 
 - (void)advancePageIndex;
 - (void)advanceSectionIndex;

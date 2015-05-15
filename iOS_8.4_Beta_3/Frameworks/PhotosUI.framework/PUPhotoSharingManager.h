@@ -12,8 +12,8 @@
     long long _videoRemakingCount;
 }
 
-@property(assign,readonly) PLProgressView * publishingProgressView;
-@property(getter=isRemaking,assign,readwrite) bool remaking;
+@property (nonatomic, readonly) PLProgressView *publishingProgressView;
+@property (getter=isRemaking, nonatomic) bool remaking;
 
 + (id)sharedInstance;
 

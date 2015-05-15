@@ -7,8 +7,8 @@
     NSString *_value;
 }
 
-@property(assign,copy) NSString * key;
-@property(assign,copy) NSString * value;
+@property (nonatomic, readonly, copy) NSString *key;
+@property (nonatomic, readonly, copy) NSString *value;
 
 - (void).cxx_destruct;
 - (long long)compare:(id)arg1;

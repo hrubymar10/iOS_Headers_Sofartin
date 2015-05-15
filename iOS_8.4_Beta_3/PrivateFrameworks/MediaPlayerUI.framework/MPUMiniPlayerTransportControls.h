@@ -8,8 +8,8 @@
     MPUProspectivePlaybackInformation *_prospectivePlaybackInformation;
 }
 
-@property(assign,readwrite) <MPUMiniPlayerTransportControlsDelegate> * delegate;
-@property(assign,retain) MPUProspectivePlaybackInformation * prospectivePlaybackInformation;
+@property (nonatomic) <MPUMiniPlayerTransportControlsDelegate> *delegate;
+@property (nonatomic, retain) MPUProspectivePlaybackInformation *prospectivePlaybackInformation;
 
 + (Class)buttonClass;
 + (bool)buttonImagesUseBackgroundImage;

@@ -11,14 +11,14 @@
     GEOMapServiceTraits *_traits;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSArray * displayLines;
-@property(assign,readonly) NSData * entryMetadata;
-@property(assign,readonly) <GEOMapItem> * geoMapItem;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSData * metadata;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSArray *displayLines;
+@property (nonatomic, readonly) NSData *entryMetadata;
+@property (nonatomic, readonly) <GEOMapItem> *geoMapItem;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSData *metadata;
+@property (readonly) Class superclass;
 
 - (id)calloutTitle;
 - (id)completionLocation;

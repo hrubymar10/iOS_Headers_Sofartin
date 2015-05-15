@@ -11,7 +11,7 @@
     } _contentScrollInset;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentScrollInset;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentScrollInset;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })contentScrollInset;
 - (void)setContentScrollInset:(struct UIEdgeInsets { double x1; double x2; double x3; double x4; })arg1;

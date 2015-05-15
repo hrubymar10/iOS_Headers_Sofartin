@@ -7,9 +7,9 @@
     long long _type;
 }
 
-@property(assign,copy) NSDictionary * _customParameterStorage;
-@property(assign,readonly) NSMutableDictionary * _parameterStorage;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly, copy) NSDictionary *_customParameterStorage;
+@property (nonatomic, readonly) NSMutableDictionary *_parameterStorage;
+@property (nonatomic, readonly) long long type;
 
 - (void).cxx_destruct;
 - (id)_customParameterStorage;

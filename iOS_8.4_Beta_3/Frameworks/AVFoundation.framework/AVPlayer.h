@@ -6,18 +6,18 @@
     AVPlayerInternal *_player;
 }
 
-@property(setter=_setDisplaysUsedForPlayback:,assign,copy) NSArray * _displaysUsedForPlayback;
-@property(assign,readonly) long long _externalProtectionStatus;
-@property(assign,readwrite) bool allowsOutOfBandTextTrackRendering;
-@property(assign,readwrite) bool allowsPixelBufferPoolSharing;
-@property(assign,readwrite) bool appliesMediaSelectionCriteriaAutomatically;
-@property(assign,copy) NSString * audioOutputDeviceUniqueID;
-@property(getter=isAudioPlaybackEnabledAtAllRates,assign,readonly) bool audioPlaybackEnabledAtAllRates;
-@property(assign,readwrite) bool disallowsAMRAudio;
-@property(assign,readonly) NSError * error;
-@property(assign,readwrite) float maxRateForAudioPlayback;
-@property(assign,readwrite) float minRateForAudioPlayback;
-@property(assign,readonly) long long status;
+@property (setter=_setDisplaysUsedForPlayback:, nonatomic, copy) NSArray *_displaysUsedForPlayback;
+@property (nonatomic, readonly) long long _externalProtectionStatus;
+@property (nonatomic) bool allowsOutOfBandTextTrackRendering;
+@property (nonatomic) bool allowsPixelBufferPoolSharing;
+@property (nonatomic) bool appliesMediaSelectionCriteriaAutomatically;
+@property (nonatomic, copy) NSString *audioOutputDeviceUniqueID;
+@property (getter=isAudioPlaybackEnabledAtAllRates, nonatomic, readonly) bool audioPlaybackEnabledAtAllRates;
+@property (nonatomic) bool disallowsAMRAudio;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic) float maxRateForAudioPlayback;
+@property (nonatomic) float minRateForAudioPlayback;
+@property (nonatomic, readonly) long long status;
 
 + (bool)automaticallyNotifiesObserversOfActionAtItemEnd;
 + (bool)automaticallyNotifiesObserversOfAirPlayVideoActive;

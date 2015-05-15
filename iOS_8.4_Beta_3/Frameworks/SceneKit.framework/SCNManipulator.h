@@ -7,8 +7,8 @@
     SCNNode *_target;
 }
 
-@property(assign,readonly) SCNAuthoringEnvironment * authoringEnvironment;
-@property(assign,readwrite) SCNNode * target;
+@property (readonly) SCNAuthoringEnvironment *authoringEnvironment;
+@property (nonatomic) SCNNode *target;
 
 - (void)_setAuthoringEnvironment:(id)arg1;
 - (id)authoringEnvironment;

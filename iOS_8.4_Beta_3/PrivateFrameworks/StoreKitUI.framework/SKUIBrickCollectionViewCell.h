@@ -19,14 +19,14 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSString * accessibilityLabel;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,retain) SKUICountdown * countdown;
-@property(assign,retain) UIImage * itemImage;
-@property(getter=isItemImageHidden,assign,readwrite) bool itemImageHidden;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } itemImageInsets;
-@property(assign,readonly) UIView * itemImageView;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *accessibilityLabel;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, retain) SKUICountdown *countdown;
+@property (nonatomic, retain) UIImage *itemImage;
+@property (getter=isItemImageHidden, nonatomic) bool itemImageHidden;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } itemImageInsets;
+@property (nonatomic, readonly) UIView *itemImageView;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_reloadHighlight;

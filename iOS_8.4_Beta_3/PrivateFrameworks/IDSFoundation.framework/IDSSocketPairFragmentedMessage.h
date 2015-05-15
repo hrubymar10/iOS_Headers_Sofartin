@@ -10,10 +10,10 @@
     unsigned int _totalFragmentCount;
 }
 
-@property(assign,readonly) NSData * data;
-@property(assign,readonly) unsigned int fragmentIndex;
-@property(assign,readonly) unsigned int fragmentedMessageID;
-@property(assign,readonly) unsigned int totalFragmentCount;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic, readonly) unsigned int fragmentIndex;
+@property (nonatomic, readonly) unsigned int fragmentedMessageID;
+@property (nonatomic, readonly) unsigned int totalFragmentCount;
 
 + (id)createMessageFragmentsFromOriginalMessage:(id)arg1 withFragmentedMessageID:(unsigned int)arg2 fragmentSize:(unsigned int)arg3;
 + (id)createOriginalMessageFromFragmentedMessages:(id)arg1;

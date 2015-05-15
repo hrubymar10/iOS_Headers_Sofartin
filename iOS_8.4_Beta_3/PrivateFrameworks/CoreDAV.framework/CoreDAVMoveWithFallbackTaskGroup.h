@@ -14,15 +14,15 @@
     bool _useFallback;
 }
 
-@property(assign,retain) NSString * dataContentType;
-@property(assign,retain) NSData * dataPayload;
-@property(assign,readonly) NSURL * destinationURL;
-@property(assign,readonly) NSString * nextETag;
-@property(assign,readwrite) int overwrite;
-@property(assign,retain) NSString * previousETag;
-@property(assign,readonly) NSDictionary * responseHeaders;
-@property(assign,readonly) NSURL * sourceURL;
-@property(assign,readwrite) bool useFallback;
+@property (nonatomic, retain) NSString *dataContentType;
+@property (nonatomic, retain) NSData *dataPayload;
+@property (nonatomic, readonly) NSURL *destinationURL;
+@property (nonatomic, readonly) NSString *nextETag;
+@property (nonatomic) int overwrite;
+@property (nonatomic, retain) NSString *previousETag;
+@property (nonatomic, readonly) NSDictionary *responseHeaders;
+@property (nonatomic, readonly) NSURL *sourceURL;
+@property (nonatomic) bool useFallback;
 
 - (void)_completedMoveTask:(id)arg1;
 - (void)_completedPutTask:(id)arg1;

@@ -7,8 +7,8 @@
     id _touchesEndedCallback;
 }
 
-@property(assign,copy) id touchesBeganCallback;
-@property(assign,copy) id touchesEndedCallback;
+@property (nonatomic, copy) id touchesBeganCallback;
+@property (nonatomic, copy) id touchesEndedCallback;
 
 - (void).cxx_destruct;
 - (bool)canPreventGestureRecognizer:(id)arg1;

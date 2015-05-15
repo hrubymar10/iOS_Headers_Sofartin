@@ -7,9 +7,9 @@
     NSOrderedSet *mSlideNodes;
 }
 
-@property(getter=isEmpty,assign,readonly) bool empty;
-@property(assign,readonly) KNSlideNode * slideNodeToEdit;
-@property(assign,readonly) NSOrderedSet * slideNodes;
+@property (getter=isEmpty, nonatomic, readonly) bool empty;
+@property (nonatomic, readonly) KNSlideNode *slideNodeToEdit;
+@property (nonatomic, readonly) NSOrderedSet *slideNodes;
 
 + (Class)archivedSelectionClass;
 

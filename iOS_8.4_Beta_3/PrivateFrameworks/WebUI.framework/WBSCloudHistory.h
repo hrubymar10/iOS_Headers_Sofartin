@@ -31,12 +31,12 @@
     WBSCloudHistorySyncThrottler *_syncCircleSizeRetrievalThrottler;
 }
 
-@property(getter=isCloudHistoryEnabled,assign,readwrite) bool cloudHistoryEnabled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long numberOfDevicesInSyncCircle;
-@property(assign,readonly) Class superclass;
+@property (getter=isCloudHistoryEnabled, nonatomic) bool cloudHistoryEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long numberOfDevicesInSyncCircle;
+@property (readonly) Class superclass;
 
 + (id)sharedCloudHistory;
 

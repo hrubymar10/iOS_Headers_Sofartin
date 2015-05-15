@@ -8,10 +8,10 @@
     NSArray *_sections;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readwrite) bool hasUnknownSection;
-@property(assign,copy) NSArray * sectionIndexTitles;
-@property(assign,copy) NSArray * sections;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic) bool hasUnknownSection;
+@property (nonatomic, copy) NSArray *sectionIndexTitles;
+@property (nonatomic, readonly, copy) NSArray *sections;
 
 + (bool)supportsSecureCoding;
 

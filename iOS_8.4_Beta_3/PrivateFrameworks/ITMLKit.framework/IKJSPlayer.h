@@ -10,13 +10,13 @@
     IKJSPlaylist *_playlist;
 }
 
-@property(assign,readonly) IKAppPlayerBridge * bridge;
-@property(assign,readonly) IKJSMediaItem * currentMediaItem;
-@property(assign,readonly) bool ended;
-@property(assign,readonly) bool paused;
-@property(assign,readonly) bool playing;
-@property(assign,retain) IKJSPlaylist * playlist;
-@property(assign,readonly) bool seeking;
+@property (nonatomic, readonly) IKAppPlayerBridge *bridge;
+@property (nonatomic, readonly) IKJSMediaItem *currentMediaItem;
+@property (nonatomic, readonly) bool ended;
+@property (nonatomic, readonly) bool paused;
+@property (nonatomic, readonly) bool playing;
+@property (nonatomic, retain) IKJSPlaylist *playlist;
+@property (nonatomic, readonly) bool seeking;
 
 - (void).cxx_destruct;
 - (void)addEventListener:(id)arg1 :(id)arg2 :(id)arg3;

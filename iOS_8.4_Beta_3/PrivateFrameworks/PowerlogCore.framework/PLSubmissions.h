@@ -7,8 +7,8 @@
     PLStorageOperator *_storageOperator;
 }
 
-@property(assign,retain) PLSQLiteConnection * connection;
-@property(assign,readwrite) PLStorageOperator * storageOperator;
+@property (retain) PLSQLiteConnection *connection;
+@property PLStorageOperator *storageOperator;
 
 + (id)sharedInstance;
 

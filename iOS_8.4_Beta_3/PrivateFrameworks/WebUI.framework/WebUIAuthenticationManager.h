@@ -9,7 +9,7 @@
     bool _isShowingAuthenticationPanel;
 }
 
-@property(assign,readwrite) id delegate;
+@property id delegate;
 
 - (void).cxx_destruct;
 - (void)_cancel;

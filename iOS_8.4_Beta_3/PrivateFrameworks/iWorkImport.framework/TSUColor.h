@@ -6,12 +6,12 @@
     struct CGColor { } *mCGColor;
 }
 
-@property(assign,readonly) struct CGColor { }* CGColor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * presetKind;
-@property(assign,readonly) Class superclass;
+@property (readonly) struct CGColor { }*CGColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *presetKind;
+@property (readonly) Class superclass;
 
 + (id)blackColor;
 + (id)blueColor;

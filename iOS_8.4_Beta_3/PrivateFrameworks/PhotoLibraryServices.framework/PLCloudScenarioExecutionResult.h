@@ -8,9 +8,9 @@
     NSMutableArray *_successfullOperations;
 }
 
-@property(assign,readwrite) bool duplicateScenario;
-@property(assign,retain) NSMutableArray * failedOperations;
-@property(assign,retain) NSMutableArray * successfullOperations;
+@property (nonatomic) bool duplicateScenario;
+@property (nonatomic, retain) NSMutableArray *failedOperations;
+@property (nonatomic, retain) NSMutableArray *successfullOperations;
 
 - (void)dealloc;
 - (bool)duplicateScenario;

@@ -50,23 +50,23 @@
     int mSymbolType;
 }
 
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } badgeFillFrame;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } badgeFrame;
-@property(assign,readonly) int badgeType;
-@property(assign,readonly) int cellType;
-@property(assign,readonly) double effectiveStrokeWidth;
-@property(assign,readonly) double effectiveSymbolStrokeWidth;
-@property(assign,readonly) id fill;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } labelFrame;
-@property(assign,readonly) NSString * labelString;
-@property(assign,readonly) int lineType;
-@property(assign,readonly) TSCHChartSeries * series;
-@property(assign,readonly) unsigned long long seriesIndex;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) TSDStroke * stroke;
-@property(assign,readonly) id symbolFill;
-@property(assign,readonly) TSDStroke * symbolStroke;
-@property(assign,readonly) int symbolType;
+@property (readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } badgeFillFrame;
+@property (readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } badgeFrame;
+@property (readonly) int badgeType;
+@property (readonly) int cellType;
+@property (readonly) double effectiveStrokeWidth;
+@property (readonly) double effectiveSymbolStrokeWidth;
+@property (readonly) id fill;
+@property (readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } labelFrame;
+@property (readonly) NSString *labelString;
+@property (readonly) int lineType;
+@property (readonly) TSCHChartSeries *series;
+@property (readonly) unsigned long long seriesIndex;
+@property (readonly) struct CGSize { double x1; double x2; } size;
+@property (readonly) TSDStroke *stroke;
+@property (readonly) id symbolFill;
+@property (readonly) TSDStroke *symbolStroke;
+@property (readonly) int symbolType;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })badgeFillFrame;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })badgeFrame;

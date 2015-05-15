@@ -7,19 +7,19 @@
     NSArray *_providers;
 }
 
-@property(assign,readonly) NSString * activityTypeAddToReadingList;
-@property(assign,readonly) NSString * activityTypeAssignToContact;
-@property(assign,readonly) NSString * activityTypeCopyToPasteboard;
-@property(assign,readonly) NSString * activityTypeMail;
-@property(assign,readonly) NSString * activityTypeMessage;
-@property(assign,readonly) NSString * activityTypePostToFacebook;
-@property(assign,readonly) NSString * activityTypePostToFlickr;
-@property(assign,readonly) NSString * activityTypePostToTwitter;
-@property(assign,readonly) NSString * activityTypePostToVimeo;
-@property(assign,readonly) NSString * activityTypePostToWeibo;
-@property(assign,readonly) NSString * activityTypePrint;
-@property(assign,readonly) NSString * activityTypeSaveToCameraRoll;
-@property(assign,copy) id excludedActivityTypes;
+@property (readonly) NSString *activityTypeAddToReadingList;
+@property (readonly) NSString *activityTypeAssignToContact;
+@property (readonly) NSString *activityTypeCopyToPasteboard;
+@property (readonly) NSString *activityTypeMail;
+@property (readonly) NSString *activityTypeMessage;
+@property (readonly) NSString *activityTypePostToFacebook;
+@property (readonly) NSString *activityTypePostToFlickr;
+@property (readonly) NSString *activityTypePostToTwitter;
+@property (readonly) NSString *activityTypePostToVimeo;
+@property (readonly) NSString *activityTypePostToWeibo;
+@property (readonly) NSString *activityTypePrint;
+@property (readonly) NSString *activityTypeSaveToCameraRoll;
+@property (copy) id excludedActivityTypes;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

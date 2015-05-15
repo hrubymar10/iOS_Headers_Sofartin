@@ -8,9 +8,9 @@
     id _target;
 }
 
-@property(assign,readwrite) SEL action;
-@property(assign,readwrite) unsigned long long controlEvents;
-@property(assign,readwrite) id target;
+@property (nonatomic) SEL action;
+@property (nonatomic) unsigned long long controlEvents;
+@property (nonatomic) id target;
 
 - (void).cxx_destruct;
 - (SEL)action;

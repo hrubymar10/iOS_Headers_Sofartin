@@ -9,10 +9,10 @@
     bool _usesModernStyle;
 }
 
-@property(assign,readonly) bool _isAttributed;
-@property(assign,readonly) UILabel * _titleLabel;
-@property(assign,retain) NSAttributedString * attributedTitle;
-@property(assign,retain) NSString * title;
+@property (nonatomic, readonly) bool _isAttributed;
+@property (nonatomic, readonly) UILabel *_titleLabel;
+@property (nonatomic, retain) NSAttributedString *attributedTitle;
+@property (nonatomic, retain) NSString *title;
 
 - (bool)_canBeReusedInPickerView;
 - (bool)_isAttributed;

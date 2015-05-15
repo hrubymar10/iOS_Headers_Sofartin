@@ -10,18 +10,18 @@
     NSMutableDictionary *_timezones;
 }
 
-@property(assign,retain) NSString * calscale;
-@property(assign,readwrite) int method;
-@property(assign,retain) NSString * prodid;
-@property(assign,retain) NSString * version;
-@property(assign,retain) ICSDuration * x_apple_auto_refresh;
-@property(assign,retain) ICSColor * x_apple_calendar_color;
-@property(assign,readwrite) bool x_apple_ignore_on_restore;
-@property(assign,readwrite) int x_calendarserver_access;
-@property(assign,retain) NSString * x_wr_caldesc;
-@property(assign,retain) NSString * x_wr_calname;
-@property(assign,retain) NSString * x_wr_relcalid;
-@property(assign,retain) NSString * x_wr_timezone;
+@property (nonatomic, retain) NSString *calscale;
+@property (nonatomic) int method;
+@property (nonatomic, retain) NSString *prodid;
+@property (nonatomic, retain) NSString *version;
+@property (nonatomic, retain) ICSDuration *x_apple_auto_refresh;
+@property (nonatomic, retain) ICSColor *x_apple_calendar_color;
+@property bool x_apple_ignore_on_restore;
+@property int x_calendarserver_access;
+@property (nonatomic, retain) NSString *x_wr_caldesc;
+@property (nonatomic, retain) NSString *x_wr_calname;
+@property (nonatomic, retain) NSString *x_wr_relcalid;
+@property (nonatomic, retain) NSString *x_wr_timezone;
 
 + (id)ICSStringFromCalendarServerAccess:(int)arg1;
 + (id)ICSStringFromMethod:(int)arg1;

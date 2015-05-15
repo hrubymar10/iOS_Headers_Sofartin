@@ -12,8 +12,8 @@
     } _textInsets;
 }
 
-@property(assign,retain) UILabel * _label;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textInsets;
+@property (nonatomic, retain) UILabel *_label;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textInsets;
 
 - (void).cxx_destruct;
 - (id)_label;

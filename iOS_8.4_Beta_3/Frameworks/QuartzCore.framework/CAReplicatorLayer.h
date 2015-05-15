@@ -4,15 +4,15 @@
 
 @interface CAReplicatorLayer : CALayer
 
-@property(assign,readwrite) float instanceAlphaOffset;
-@property(assign,readwrite) float instanceBlueOffset;
-@property(assign,readwrite) struct CGColor { }* instanceColor;
-@property(assign,readwrite) long long instanceCount;
-@property(assign,readwrite) double instanceDelay;
-@property(assign,readwrite) float instanceGreenOffset;
-@property(assign,readwrite) float instanceRedOffset;
-@property(assign,readwrite) struct CATransform3D { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; double x10; double x11; double x12; double x13; double x14; double x15; double x16; } instanceTransform;
-@property(assign,readwrite) bool preservesDepth;
+@property float instanceAlphaOffset;
+@property float instanceBlueOffset;
+@property struct CGColor { }*instanceColor;
+@property long long instanceCount;
+@property double instanceDelay;
+@property float instanceGreenOffset;
+@property float instanceRedOffset;
+@property struct CATransform3D { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; double x10; double x11; double x12; double x13; double x14; double x15; double x16; } instanceTransform;
+@property bool preservesDepth;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (bool)_hasRenderLayerSubclass;

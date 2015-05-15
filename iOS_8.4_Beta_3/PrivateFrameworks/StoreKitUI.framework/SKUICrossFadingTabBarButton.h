@@ -13,10 +13,10 @@
     NSString *_title;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,retain) UIImage * selectedImage;
-@property(assign,readwrite) double selectionProgress;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) UIImage *selectedImage;
+@property (nonatomic) double selectionProgress;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)image;

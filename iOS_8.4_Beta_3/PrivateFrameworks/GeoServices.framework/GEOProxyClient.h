@@ -9,10 +9,10 @@
     bool _isApplication;
 }
 
-@property(assign,retain) NSData * auditToken;
-@property(assign,retain) NSString * bundleIdentifier;
-@property(assign,retain) NSString * bundleVersion;
-@property(assign,readwrite) bool isApplication;
+@property (nonatomic, retain) NSData *auditToken;
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic, retain) NSString *bundleVersion;
+@property (nonatomic) bool isApplication;
 
 + (id)compositeClientForClients:(id)arg1;
 + (id)currentClient;

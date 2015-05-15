@@ -18,7 +18,7 @@
     unsigned char _sig;
 }
 
-@property(assign,readonly) NSData * signature;
+@property (nonatomic, readonly) NSData *signature;
 
 + (id)checksummingOutputStreamWithTag:(unsigned char)arg1;
 

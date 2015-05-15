@@ -13,7 +13,7 @@
     UILabel *_rightLabel;
 }
 
-@property(assign,retain) AXRemoteHearingAidDevice * device;
+@property (nonatomic, retain) AXRemoteHearingAidDevice *device;
 
 - (unsigned long long)accessibilityTraits;
 - (id)accessibilityValue;

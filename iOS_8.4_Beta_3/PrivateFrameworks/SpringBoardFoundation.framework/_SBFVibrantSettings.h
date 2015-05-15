@@ -14,15 +14,15 @@
     UIColor *_tintColor;
 }
 
-@property(assign,retain) UIColor * chevronShimmerColor;
-@property(assign,retain) UIColor * highlightColor;
-@property(assign,retain) UIColor * highlightLimitingColor;
-@property(assign,readonly) _UILegibilitySettings * legibilitySettings;
-@property(assign,readonly) UIColor * referenceColor;
-@property(assign,readonly) double referenceContrast;
-@property(assign,retain) UIColor * shimmerColor;
-@property(assign,readonly) long long style;
-@property(assign,retain) UIColor * tintColor;
+@property (nonatomic, retain) UIColor *chevronShimmerColor;
+@property (nonatomic, retain) UIColor *highlightColor;
+@property (nonatomic, retain) UIColor *highlightLimitingColor;
+@property (nonatomic, readonly) _UILegibilitySettings *legibilitySettings;
+@property (nonatomic, readonly) UIColor *referenceColor;
+@property (nonatomic, readonly) double referenceContrast;
+@property (nonatomic, retain) UIColor *shimmerColor;
+@property (nonatomic, readonly) long long style;
+@property (nonatomic, retain) UIColor *tintColor;
 
 + (id)vibrantSettingsWithReferenceColor:(id)arg1 referenceContrast:(double)arg2 legibilitySettings:(id)arg3;
 

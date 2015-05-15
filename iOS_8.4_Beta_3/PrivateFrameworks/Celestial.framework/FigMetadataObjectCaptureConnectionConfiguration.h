@@ -16,8 +16,8 @@
     } _metadataRectOfInterest;
 }
 
-@property(assign,copy) NSArray * metadataIdentifiers;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } metadataRectOfInterest;
+@property (nonatomic, copy) NSArray *metadataIdentifiers;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } metadataRectOfInterest;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)copyXPCEncoding;

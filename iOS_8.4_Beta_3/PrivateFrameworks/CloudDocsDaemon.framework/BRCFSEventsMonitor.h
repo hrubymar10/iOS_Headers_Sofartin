@@ -23,15 +23,15 @@
     bool _volumeIsCaseSensitive;
 }
 
-@property(setter=setDB:,assign,retain) PQLConnection * db;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <BRCFSEventsDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,readonly) BRCRelativePath * root;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool volumeIsCaseSensitive;
+@property (setter=setDB:, nonatomic, retain) PQLConnection *db;
+@property (readonly, copy) NSString *debugDescription;
+@property <BRCFSEventsDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCancelled;
+@property (nonatomic, readonly) BRCRelativePath *root;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool volumeIsCaseSensitive;
 
 - (void).cxx_destruct;
 - (void)_cancel;

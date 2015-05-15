@@ -10,11 +10,11 @@
     NSArray *referenceLineLayers;
 }
 
-@property(assign,retain) CALayer * backgroundLayer;
-@property(assign,retain) CALayer * dataSetNameLayer;
-@property(assign,copy) NSArray * elementLayers;
-@property(assign,retain) CALayer * legendLayer;
-@property(assign,copy) NSArray * referenceLineLayers;
+@property (nonatomic, retain) CALayer *backgroundLayer;
+@property (nonatomic, retain) CALayer *dataSetNameLayer;
+@property (nonatomic, copy) NSArray *elementLayers;
+@property (nonatomic, retain) CALayer *legendLayer;
+@property (nonatomic, copy) NSArray *referenceLineLayers;
 
 + (id)animatedLayers;
 

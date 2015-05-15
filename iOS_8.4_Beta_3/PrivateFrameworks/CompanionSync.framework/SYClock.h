@@ -7,8 +7,8 @@
     unsigned long long _version;
 }
 
-@property(assign,retain) SYPeer * peer;
-@property(assign,readwrite) unsigned long long version;
+@property (nonatomic, retain) SYPeer *peer;
+@property (nonatomic) unsigned long long version;
 
 + (void)initialize;
 

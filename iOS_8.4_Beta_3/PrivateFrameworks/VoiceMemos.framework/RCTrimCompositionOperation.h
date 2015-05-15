@@ -16,8 +16,8 @@
     RCTrimAudioFileOperation *_trimAudioFileSubOperation;
 }
 
-@property(assign,copy) NSURL * destinationComposedAVURL;
-@property(assign,copy) RCComposition * sourceComposition;
+@property (nonatomic, readonly, copy) NSURL *destinationComposedAVURL;
+@property (nonatomic, readonly, copy) RCComposition *sourceComposition;
 
 + (id)_intermediateTrimmedAVOutputURLForFragment:(id)arg1;
 + (id)_intermediateTrimmedWaveformURLForFragment:(id)arg1;

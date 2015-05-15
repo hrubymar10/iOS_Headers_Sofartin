@@ -6,7 +6,7 @@
     NSMutableArray *_cacheFeedbacks;
 }
 
-@property(assign,retain) NSMutableArray * cacheFeedbacks;
+@property (nonatomic, retain) NSMutableArray *cacheFeedbacks;
 
 - (void)addCacheFeedback:(id)arg1;
 - (id)cacheFeedbackAtIndex:(unsigned long long)arg1;

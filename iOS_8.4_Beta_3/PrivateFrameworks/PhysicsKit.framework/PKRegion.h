@@ -23,7 +23,7 @@
     int _shape2;
 }
 
-@property(assign,readonly) struct CGPath { }* path;
+@property (nonatomic, readonly) struct CGPath { }*path;
 
 + (id)infiniteRegion;
 

@@ -6,8 +6,8 @@
     NSString *_messageId;
 }
 
-@property(assign,readonly) bool hasMessageId;
-@property(assign,retain) NSString * messageId;
+@property (nonatomic, readonly) bool hasMessageId;
+@property (nonatomic, retain) NSString *messageId;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

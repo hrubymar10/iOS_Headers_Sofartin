@@ -7,7 +7,7 @@
     bool _presentedPrintInteractionController;
 }
 
-@property(assign,readwrite) bool presentedPrintInteractionController;
+@property (nonatomic) bool presentedPrintInteractionController;
 
 - (void)dealloc;
 - (id)initWithCompletion:(id)arg1;

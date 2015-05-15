@@ -18,12 +18,12 @@
     long long _redeemCategory;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIRedeem * redeem;
-@property(assign,readwrite) long long redeemCategory;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIRedeem *redeem;
+@property (nonatomic) long long redeemCategory;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_anotherButtonSection;

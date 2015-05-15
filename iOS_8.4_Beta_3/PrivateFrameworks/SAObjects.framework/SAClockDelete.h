@@ -4,7 +4,7 @@
 
 @interface SAClockDelete : SADomainCommand
 
-@property(assign,copy) NSArray * clockIds;
+@property (nonatomic, copy) NSArray *clockIds;
 
 + (id)delete;
 + (id)deleteWithDictionary:(id)arg1 context:(id)arg2;

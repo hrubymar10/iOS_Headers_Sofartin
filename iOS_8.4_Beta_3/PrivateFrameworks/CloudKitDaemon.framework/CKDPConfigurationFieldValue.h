@@ -19,20 +19,20 @@
     int _type;
 }
 
-@property(assign,readwrite) bool boolValue;
-@property(assign,retain) NSData * bytesValue;
-@property(assign,readwrite) double doubleValue;
-@property(assign,retain) NSMutableArray * fieldValues;
-@property(assign,readwrite) bool hasBoolValue;
-@property(assign,readonly) bool hasBytesValue;
-@property(assign,readwrite) bool hasDoubleValue;
-@property(assign,readwrite) bool hasLongValue;
-@property(assign,readonly) bool hasStringValue;
-@property(assign,readwrite) bool hasType;
-@property(assign,retain) NSMutableArray * listValues;
-@property(assign,readwrite) long long longValue;
-@property(assign,retain) NSString * stringValue;
-@property(assign,readwrite) int type;
+@property (nonatomic) bool boolValue;
+@property (nonatomic, retain) NSData *bytesValue;
+@property (nonatomic) double doubleValue;
+@property (nonatomic, retain) NSMutableArray *fieldValues;
+@property (nonatomic) bool hasBoolValue;
+@property (nonatomic, readonly) bool hasBytesValue;
+@property (nonatomic) bool hasDoubleValue;
+@property (nonatomic) bool hasLongValue;
+@property (nonatomic, readonly) bool hasStringValue;
+@property (nonatomic) bool hasType;
+@property (nonatomic, retain) NSMutableArray *listValues;
+@property (nonatomic) long long longValue;
+@property (nonatomic, retain) NSString *stringValue;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (void)addFieldValues:(id)arg1;

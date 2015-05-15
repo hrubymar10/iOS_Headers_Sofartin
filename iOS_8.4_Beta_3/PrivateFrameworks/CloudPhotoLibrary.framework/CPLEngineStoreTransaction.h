@@ -9,8 +9,8 @@
     NSString *_name;
 }
 
-@property(assign,copy) NSError * error;
-@property(assign,copy) NSString * name;
+@property (nonatomic, copy) NSError *error;
+@property (nonatomic, copy) NSString *name;
 
 - (void).cxx_destruct;
 - (bool)_forWrite;

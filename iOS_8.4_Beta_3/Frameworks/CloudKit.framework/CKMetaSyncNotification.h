@@ -6,7 +6,7 @@
     long long _databaseScope;
 }
 
-@property(assign,readwrite) long long databaseScope;
+@property (nonatomic) long long databaseScope;
 
 + (bool)supportsSecureCoding;
 

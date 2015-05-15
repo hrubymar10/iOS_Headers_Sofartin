@@ -7,8 +7,8 @@
     double _leading;
 }
 
-@property(assign,retain) NSString * fontTextStyle;
-@property(assign,readwrite) double leading;
+@property (nonatomic, retain) NSString *fontTextStyle;
+@property (nonatomic) double leading;
 
 - (void)dealloc;
 - (id)fontTextStyle;

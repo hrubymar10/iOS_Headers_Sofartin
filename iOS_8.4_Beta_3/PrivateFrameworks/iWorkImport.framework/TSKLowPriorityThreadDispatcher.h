@@ -7,7 +7,7 @@
     int _suspendCount;
 }
 
-@property(getter=isSuspended,assign,readonly) bool suspended;
+@property (getter=isSuspended, readonly) bool suspended;
 
 + (id)_singletonAlloc;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;

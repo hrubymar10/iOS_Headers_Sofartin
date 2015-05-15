@@ -7,8 +7,8 @@
     NSString *_qualifiers;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * qualifiers;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *qualifiers;
 
 - (void).cxx_destruct;
 - (id)SQL;

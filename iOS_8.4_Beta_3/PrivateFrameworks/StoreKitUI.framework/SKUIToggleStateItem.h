@@ -10,11 +10,11 @@
     NSString *_toggledString;
 }
 
-@property(assign,readwrite) long long count;
-@property(assign,copy) NSString * itemIdentifier;
-@property(assign,copy) NSString * nonToggleString;
-@property(assign,readwrite) BOOL toggled;
-@property(assign,copy) NSString * toggledString;
+@property (nonatomic) long long count;
+@property (nonatomic, copy) NSString *itemIdentifier;
+@property (nonatomic, copy) NSString *nonToggleString;
+@property (nonatomic) BOOL toggled;
+@property (nonatomic, copy) NSString *toggledString;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -14,8 +14,8 @@
     unsigned int _style;
 }
 
-@property(getter=isHiding,assign,readwrite) bool hiding;
-@property(getter=isRotated,assign,readwrite) bool rotated;
+@property (getter=isHiding, nonatomic) bool hiding;
+@property (getter=isRotated, nonatomic) bool rotated;
 
 + (id)_deleteImage:(double)arg1;
 + (id)_deleteImageBackground:(double)arg1;

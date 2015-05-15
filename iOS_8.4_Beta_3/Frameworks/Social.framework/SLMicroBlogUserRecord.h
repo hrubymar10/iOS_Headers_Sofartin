@@ -9,10 +9,10 @@
     NSString *_screen_name;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,retain) UIImage * profileImageCache;
-@property(assign,retain) NSString * profile_image_url;
-@property(assign,retain) NSString * screen_name;
+@property (nonatomic, retain) NSString *name;
+@property (retain) UIImage *profileImageCache;
+@property (nonatomic, retain) NSString *profile_image_url;
+@property (nonatomic, retain) NSString *screen_name;
 
 + (bool)supportsSecureCoding;
 + (id)userRecordWithDictionaryRepresentation:(id)arg1;

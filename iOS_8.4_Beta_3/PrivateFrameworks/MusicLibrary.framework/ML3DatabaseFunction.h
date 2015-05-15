@@ -7,8 +7,8 @@
     NSString *_name;
 }
 
-@property(assign,readwrite) int argumentCount;
-@property(assign,copy) NSString * name;
+@property (nonatomic) int argumentCount;
+@property (nonatomic, copy) NSString *name;
 
 - (void).cxx_destruct;
 - (int)argumentCount;

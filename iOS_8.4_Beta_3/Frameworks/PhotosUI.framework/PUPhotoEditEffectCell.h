@@ -11,12 +11,12 @@
     NSString *_name;
 }
 
-@property(setter=_setHighlightView:,assign,retain) UIView * _highlightView;
-@property(setter=_setImageView:,assign,retain) UIImageView * _imageView;
-@property(setter=_setNameLabel:,assign,retain) UILabel * _nameLabel;
-@property(setter=_setSelectionView:,assign,retain) UIImageView * _selectionView;
-@property(assign,retain) UIImage * image;
-@property(assign,copy) NSString * name;
+@property (setter=_setHighlightView:, nonatomic, retain) UIView *_highlightView;
+@property (setter=_setImageView:, nonatomic, retain) UIImageView *_imageView;
+@property (setter=_setNameLabel:, nonatomic, retain) UILabel *_nameLabel;
+@property (setter=_setSelectionView:, nonatomic, retain) UIImageView *_selectionView;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, copy) NSString *name;
 
 + (id)selectionOutlineImage;
 

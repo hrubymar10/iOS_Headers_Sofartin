@@ -7,8 +7,8 @@
     double _time;
 }
 
-@property(assign,retain) NSString * message;
-@property(assign,readwrite) double time;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic) double time;
 
 - (void).cxx_destruct;
 - (id)message;

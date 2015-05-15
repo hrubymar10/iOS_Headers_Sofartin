@@ -6,25 +6,25 @@
     AVWeakReference *_weakReference;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(getter=_classForTrackInspectors,assign,readonly) Class classForTrackInspectors;
-@property(getter=isCompatibleWithSavedPhotosAlbum,assign,readonly) bool compatibleWithSavedPhotosAlbum;
-@property(getter=isComposable,assign,readonly) bool composable;
-@property(assign,readonly) unsigned long long downloadToken;
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } duration;
-@property(getter=isExportable,assign,readonly) bool exportable;
-@property(getter=_figAsset,assign,readonly) struct OpaqueFigAsset { }* figAsset;
-@property(assign,readonly) NSArray * figChapterGroupInfo;
-@property(assign,readonly) NSArray * figChapters;
-@property(getter=_formatReader,assign,readonly) struct OpaqueFigFormatReader { }* formatReader;
-@property(assign,readonly) bool hasProtectedContent;
-@property(assign,readonly) NSString * lyrics;
-@property(getter=isPlayable,assign,readonly) bool playable;
-@property(getter=_playbackItem,assign,readonly) struct OpaqueFigPlaybackItem { }* playbackItem;
-@property(getter=isReadable,assign,readonly) bool readable;
-@property(assign,readonly) NSURL * resolvedURL;
-@property(getter=_isStreaming,assign,readonly) bool streaming;
-@property(getter=_weakReference,assign,readonly) AVWeakReference * weakReference;
+@property (nonatomic, readonly) NSURL *URL;
+@property (getter=_classForTrackInspectors, nonatomic, readonly) Class classForTrackInspectors;
+@property (getter=isCompatibleWithSavedPhotosAlbum, nonatomic, readonly) bool compatibleWithSavedPhotosAlbum;
+@property (getter=isComposable, nonatomic, readonly) bool composable;
+@property (nonatomic, readonly) unsigned long long downloadToken;
+@property (nonatomic, readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } duration;
+@property (getter=isExportable, nonatomic, readonly) bool exportable;
+@property (getter=_figAsset, nonatomic, readonly) struct OpaqueFigAsset { }*figAsset;
+@property (nonatomic, readonly) NSArray *figChapterGroupInfo;
+@property (nonatomic, readonly) NSArray *figChapters;
+@property (getter=_formatReader, nonatomic, readonly) struct OpaqueFigFormatReader { }*formatReader;
+@property (nonatomic, readonly) bool hasProtectedContent;
+@property (nonatomic, readonly) NSString *lyrics;
+@property (getter=isPlayable, nonatomic, readonly) bool playable;
+@property (getter=_playbackItem, nonatomic, readonly) struct OpaqueFigPlaybackItem { }*playbackItem;
+@property (getter=isReadable, nonatomic, readonly) bool readable;
+@property (nonatomic, readonly) NSURL *resolvedURL;
+@property (getter=_isStreaming, nonatomic, readonly) bool streaming;
+@property (getter=_weakReference, nonatomic, readonly) AVWeakReference *weakReference;
 
 + (void)initialize;
 

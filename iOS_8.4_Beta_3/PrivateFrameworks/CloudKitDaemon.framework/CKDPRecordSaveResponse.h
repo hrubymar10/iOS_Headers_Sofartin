@@ -8,12 +8,12 @@
     CKDPDateStatistics *_timeStatistics;
 }
 
-@property(assign,retain) NSString * etag;
-@property(assign,readonly) bool hasEtag;
-@property(assign,readonly) bool hasServerFields;
-@property(assign,readonly) bool hasTimeStatistics;
-@property(assign,retain) CKDPRecord * serverFields;
-@property(assign,retain) CKDPDateStatistics * timeStatistics;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, readonly) bool hasEtag;
+@property (nonatomic, readonly) bool hasServerFields;
+@property (nonatomic, readonly) bool hasTimeStatistics;
+@property (nonatomic, retain) CKDPRecord *serverFields;
+@property (nonatomic, retain) CKDPDateStatistics *timeStatistics;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

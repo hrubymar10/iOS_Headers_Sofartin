@@ -11,11 +11,11 @@
     NSMutableArray *_localizedNames;
 }
 
-@property(assign,retain) NSString * categoryId;
-@property(assign,readonly) bool hasCategoryId;
-@property(assign,readwrite) bool hasLevel;
-@property(assign,readwrite) int level;
-@property(assign,retain) NSMutableArray * localizedNames;
+@property (nonatomic, retain) NSString *categoryId;
+@property (nonatomic, readonly) bool hasCategoryId;
+@property (nonatomic) bool hasLevel;
+@property (nonatomic) int level;
+@property (nonatomic, retain) NSMutableArray *localizedNames;
 
 + (id)_allCategoriesForPlaceData:(id)arg1 type:(unsigned int)arg2;
 + (id)categoryNamesForPlaceData:(id)arg1 type:(unsigned int)arg2;

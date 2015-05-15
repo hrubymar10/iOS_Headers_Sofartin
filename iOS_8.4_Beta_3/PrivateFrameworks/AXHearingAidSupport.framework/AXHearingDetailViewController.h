@@ -7,7 +7,7 @@
     bool _isLiveListening;
 }
 
-@property(assign,retain) AXRemoteHearingAidDevice * device;
+@property (nonatomic, retain) AXRemoteHearingAidDevice *device;
 
 - (id)_modeSpecifiers;
 - (id)_volumeSpecifiers;

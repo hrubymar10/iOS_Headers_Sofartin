@@ -4,9 +4,9 @@
 
 @interface ML3MutableDatabaseTable : ML3DatabaseTable
 
-@property(assign,copy) NSArray * columns;
-@property(assign,copy) NSArray * foreignKeyConstraints;
-@property(assign,copy) NSString * name;
+@property (nonatomic, copy) NSArray *columns;
+@property (nonatomic, copy) NSArray *foreignKeyConstraints;
+@property (nonatomic, copy) NSString *name;
 
 - (void)setColumns:(id)arg1;
 - (void)setForeignKeyConstraints:(id)arg1;

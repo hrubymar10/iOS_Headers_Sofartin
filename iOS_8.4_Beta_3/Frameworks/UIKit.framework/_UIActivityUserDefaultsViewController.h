@@ -8,9 +8,9 @@
     _UIActivityUserDefaults *_userDefaults;
 }
 
-@property(assign,copy) NSArray * activities;
-@property(assign,retain) UIImage * placeholderImage;
-@property(assign,retain) _UIActivityUserDefaults * userDefaults;
+@property (nonatomic, copy) NSArray *activities;
+@property (nonatomic, retain) UIImage *placeholderImage;
+@property (nonatomic, retain) _UIActivityUserDefaults *userDefaults;
 
 - (id)activities;
 - (id)activityForRowAtIndexPath:(id)arg1;

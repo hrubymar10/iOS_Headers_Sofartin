@@ -13,14 +13,14 @@
     long long _urlBagType;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) long long URLBagType;
-@property(assign,readonly) SSAccount * account;
-@property(assign,readonly) NSString * actionType;
-@property(assign,readonly) NSString * clientIdentifier;
-@property(assign,readonly) NSString * creditsString;
-@property(assign,readonly) SSDialog * dialog;
-@property(assign,readonly) NSString * footerSection;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) long long URLBagType;
+@property (nonatomic, readonly) SSAccount *account;
+@property (nonatomic, readonly) NSString *actionType;
+@property (nonatomic, readonly) NSString *clientIdentifier;
+@property (nonatomic, readonly) NSString *creditsString;
+@property (nonatomic, readonly) SSDialog *dialog;
+@property (nonatomic, readonly) NSString *footerSection;
 
 + (id)_actionWithActionType:(id)arg1;
 + (id)_checkInAppQueueActionWithClientID:(id)arg1 environment:(id)arg2;

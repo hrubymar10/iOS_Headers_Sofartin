@@ -12,11 +12,11 @@
     unsigned long long _totalSamples;
 }
 
-@property(assign,readwrite) double budget;
-@property(assign,readwrite) unsigned long long budgetCap;
-@property(assign,retain) NSDate * lastExpenditure;
-@property(assign,readwrite) double maximumThrottleTime;
-@property(assign,readwrite) double regenerationPerSecond;
+@property double budget;
+@property unsigned long long budgetCap;
+@property (retain) NSDate *lastExpenditure;
+@property (nonatomic) double maximumThrottleTime;
+@property double regenerationPerSecond;
 
 + (id)flowControlWithBudgetCap:(unsigned long long)arg1 withMaximumThrottleTime:(double)arg2 andRegenerationPerSecond:(double)arg3;
 

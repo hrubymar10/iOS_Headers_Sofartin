@@ -15,8 +15,8 @@
     struct __CFRunLoop { } *_runLoop;
 }
 
-@property(assign,readonly) double accuracy;
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
+@property (nonatomic, readonly) double accuracy;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
 
 - (id)_initWithCoordinate:(struct { double x1; double x2; })arg1 accuracy:(double)arg2 completionHandler:(id)arg3 errorHandler:(id)arg4 mustGoToNetworkCallback:(id)arg5;
 - (void)_performOnCallbackQueue:(id)arg1;

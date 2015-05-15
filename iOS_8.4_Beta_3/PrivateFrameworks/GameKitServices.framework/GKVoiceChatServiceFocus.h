@@ -11,9 +11,9 @@
     int packetsPerBundle;
 }
 
-@property(assign,copy) NSString * currentFocus;
-@property(assign,readwrite) bool hasMic;
-@property(assign,readwrite) int packetsPerBundle;
+@property (nonatomic, copy) NSString *currentFocus;
+@property bool hasMic;
+@property int packetsPerBundle;
 
 + (id)defaultVoiceChatService;
 

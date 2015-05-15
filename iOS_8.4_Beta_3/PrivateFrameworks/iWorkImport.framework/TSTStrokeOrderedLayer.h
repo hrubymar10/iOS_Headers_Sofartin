@@ -7,8 +7,8 @@
     TSTStrokeLayer *_minorStrokeLayer;
 }
 
-@property(assign,retain) TSTStrokeLayer * majorStrokeLayer;
-@property(assign,retain) TSTStrokeLayer * minorStrokeLayer;
+@property (nonatomic, retain) TSTStrokeLayer *majorStrokeLayer;
+@property (nonatomic, retain) TSTStrokeLayer *minorStrokeLayer;
 
 - (void)appendStroke:(id)arg1 inRange:(struct TSTSimpleRange { long long x1; unsigned long long x2; })arg2 order:(int)arg3;
 - (void)enumerateRawStrokesSegmentsUsingBlock:(id)arg1;

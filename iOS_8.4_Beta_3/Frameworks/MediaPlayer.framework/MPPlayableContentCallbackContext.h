@@ -7,8 +7,8 @@
     bool _serviced;
 }
 
-@property(assign,readonly) NSIndexPath * indexPath;
-@property(assign,readwrite) bool serviced;
+@property (nonatomic, readonly) NSIndexPath *indexPath;
+@property (nonatomic) bool serviced;
 
 - (void).cxx_destruct;
 - (id)indexPath;

@@ -6,7 +6,7 @@
     PKPrinter *_printer;
 }
 
-@property(assign,retain) PKPrinter * printer;
+@property (nonatomic, retain) PKPrinter *printer;
 
 - (void)dealloc;
 - (void)enterPIN;

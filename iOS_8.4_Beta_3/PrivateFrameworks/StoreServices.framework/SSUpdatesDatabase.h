@@ -6,7 +6,7 @@
     SSSQLiteDatabase *_database;
 }
 
-@property(assign,readonly) bool requiresMigration;
+@property (readonly) bool requiresMigration;
 
 - (void)_dispatchBlockAsync:(id)arg1;
 - (id)_initReadOnly:(bool)arg1;

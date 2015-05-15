@@ -12,7 +12,7 @@
     const unsigned short *_unichars;
 }
 
-@property(assign,readonly) NSString * normalizedString;
+@property (nonatomic, readonly) NSString *normalizedString;
 
 + (void)initialize;
 

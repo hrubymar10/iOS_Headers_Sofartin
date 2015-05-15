@@ -22,8 +22,8 @@
     long long _writtenOffset;
 }
 
-@property(assign,readonly) unsigned long long archiveLength;
-@property(assign,readonly) <TSURandomWriteChannel> * writeChannel;
+@property (nonatomic, readonly) unsigned long long archiveLength;
+@property (nonatomic, readonly) <TSURandomWriteChannel> *writeChannel;
 
 - (void).cxx_destruct;
 - (void)addBarrier:(id)arg1;

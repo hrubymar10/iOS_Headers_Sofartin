@@ -18,7 +18,7 @@
     UIKeyboardCandidateSortControl *_sortControl;
 }
 
-@property(assign,retain) UIView<UIKeyboardCandidateList> * inlineView;
+@property (nonatomic, retain) UIView<UIKeyboardCandidateList> *inlineView;
 
 + (id)activeCandidateList;
 + (id)activeCandidateView;

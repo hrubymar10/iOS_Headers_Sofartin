@@ -7,7 +7,7 @@
     SCRCMathExpression *_mathExpression;
 }
 
-@property(assign,readonly) NSDictionary * mathDictionary;
+@property (nonatomic, readonly) NSDictionary *mathDictionary;
 
 + (id)_uiaxBundle;
 

@@ -9,18 +9,18 @@
     bool _hasBegunPlayback;
 }
 
-@property(assign,readonly) ADAdSlot * adSlot;
-@property(assign,copy) NSArray * adTracks;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSData * followingSongData;
-@property(getter=isGatewayAdSlot,assign,readwrite) bool gatewayAdSlot;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSData * previousSongData;
-@property(assign,copy) NSData * stationData;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool wasPreparedAsStationEntryAdSlot;
+@property (nonatomic, readonly) ADAdSlot *adSlot;
+@property (nonatomic, readonly, copy) NSArray *adTracks;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSData *followingSongData;
+@property (getter=isGatewayAdSlot, nonatomic) bool gatewayAdSlot;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSData *previousSongData;
+@property (nonatomic, copy) NSData *stationData;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool wasPreparedAsStationEntryAdSlot;
 
 - (void).cxx_destruct;
 - (id)adSlot;

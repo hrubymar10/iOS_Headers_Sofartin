@@ -4,7 +4,7 @@
 
 @interface CoreDAVPrincipalSearchPropertySetTask : CoreDAVTask
 
-@property(assign,readwrite) <CoreDAVPrincipalSearchPropertySetTaskDelegate> * delegate;
+@property (nonatomic) <CoreDAVPrincipalSearchPropertySetTaskDelegate> *delegate;
 
 - (id)copyDefaultParserForContentType:(id)arg1;
 - (void)finishCoreDAVTaskWithError:(id)arg1;

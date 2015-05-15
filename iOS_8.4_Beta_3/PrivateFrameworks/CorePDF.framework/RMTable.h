@@ -12,8 +12,8 @@
     struct CGPDFNode { } *_tableRoot;
 }
 
-@property(assign,readonly) struct CGPDFPage { }* page;
-@property(assign,readwrite) bool rowOrder;
+@property (readonly) struct CGPDFPage { }*page;
+@property bool rowOrder;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })bounds;
 - (id)columnAtIndex:(unsigned long long)arg1;

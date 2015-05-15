@@ -20,7 +20,7 @@
     NSMutableArray *_sections;
 }
 
-@property(assign,readonly) bool completed;
+@property (nonatomic, readonly) bool completed;
 
 - (unsigned long long)_allocateSize:(unsigned long long)arg1;
 - (id)_convertConformingResult:(id)arg1;

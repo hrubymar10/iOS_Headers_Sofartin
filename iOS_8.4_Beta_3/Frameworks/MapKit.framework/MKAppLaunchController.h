@@ -8,8 +8,8 @@
     NSURL *webURL;
 }
 
-@property(assign,retain) SSLookupRequest * storeRequest;
-@property(assign,retain) NSURL * webURL;
+@property (nonatomic, retain) SSLookupRequest *storeRequest;
+@property (nonatomic, retain) NSURL *webURL;
 
 + (void)launchAttributionURLs:(id)arg1 withAttributionApps:(id)arg2;
 + (void)launchAttributionURLs:(id)arg1 withAttributionApps:(id)arg2 completionHandler:(id)arg3;

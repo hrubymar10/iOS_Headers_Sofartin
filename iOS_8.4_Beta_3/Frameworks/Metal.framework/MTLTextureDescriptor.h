@@ -6,15 +6,15 @@
     struct MTLTextureDescriptorPrivate { unsigned long long x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; unsigned long long x5; unsigned long long x6; unsigned long long x7; unsigned long long x8; bool x9; unsigned long long x10; unsigned long long x11; bool x12; bool x13; } *_private;
 }
 
-@property(assign,readwrite) unsigned long long arrayLength;
-@property(assign,readwrite) unsigned long long depth;
-@property(assign,readwrite) unsigned long long height;
-@property(assign,readwrite) unsigned long long mipmapLevelCount;
-@property(assign,readwrite) unsigned long long pixelFormat;
-@property(assign,readwrite) unsigned long long resourceOptions;
-@property(assign,readwrite) unsigned long long sampleCount;
-@property(assign,readwrite) unsigned long long textureType;
-@property(assign,readwrite) unsigned long long width;
+@property (nonatomic) unsigned long long arrayLength;
+@property (nonatomic) unsigned long long depth;
+@property (nonatomic) unsigned long long height;
+@property (nonatomic) unsigned long long mipmapLevelCount;
+@property (nonatomic) unsigned long long pixelFormat;
+@property (nonatomic) unsigned long long resourceOptions;
+@property (nonatomic) unsigned long long sampleCount;
+@property (nonatomic) unsigned long long textureType;
+@property (nonatomic) unsigned long long width;
 
 + (id)texture2DDescriptorWithPixelFormat:(unsigned long long)arg1 width:(unsigned long long)arg2 height:(unsigned long long)arg3 mipmapped:(bool)arg4;
 + (id)textureCubeDescriptorWithPixelFormat:(unsigned long long)arg1 size:(unsigned long long)arg2 mipmapped:(bool)arg3;

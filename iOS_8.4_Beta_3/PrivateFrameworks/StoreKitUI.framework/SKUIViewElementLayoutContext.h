@@ -26,19 +26,19 @@
     UIColor *_tintColor;
 }
 
-@property(assign,readwrite) double activePageWidth;
-@property(assign,readwrite) <SKUIArtworkRequestDelegate> * artworkRequestDelegate;
-@property(assign,copy) NSString * backdropGroupName;
-@property(assign,readonly) SKUIBadgeTextAttachmentLoader * badgeImageLoader;
-@property(assign,readonly) MPUBorderDrawingCache * borderDrawingCache;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,readwrite) unsigned long long containerViewElementType;
-@property(assign,readwrite) double displayScale;
-@property(assign,retain) SKUIViewElementTextLayoutCache * labelLayoutCache;
-@property(assign,readwrite) UIViewController * parentViewController;
-@property(assign,retain) UIColor * placeholderColor;
-@property(assign,retain) SKUIResourceLoader * resourceLoader;
-@property(assign,retain) UIColor * tintColor;
+@property (nonatomic) double activePageWidth;
+@property (nonatomic) <SKUIArtworkRequestDelegate> *artworkRequestDelegate;
+@property (nonatomic, copy) NSString *backdropGroupName;
+@property (nonatomic, readonly) SKUIBadgeTextAttachmentLoader *badgeImageLoader;
+@property (nonatomic, readonly) MPUBorderDrawingCache *borderDrawingCache;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic) unsigned long long containerViewElementType;
+@property (nonatomic) double displayScale;
+@property (nonatomic, retain) SKUIViewElementTextLayoutCache *labelLayoutCache;
+@property (nonatomic) UIViewController *parentViewController;
+@property (nonatomic, retain) UIColor *placeholderColor;
+@property (nonatomic, retain) SKUIResourceLoader *resourceLoader;
+@property (nonatomic, retain) UIColor *tintColor;
 
 - (void).cxx_destruct;
 - (void)_artworkRequestDidLoadImageNotification:(id)arg1;

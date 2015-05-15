@@ -12,11 +12,11 @@
     int _originatorVersion;
 }
 
-@property(assign,retain) NSMutableArray * containerItems;
-@property(assign,readwrite) bool hasOriginatorType;
-@property(assign,readwrite) bool hasOriginatorVersion;
-@property(assign,readwrite) int originatorType;
-@property(assign,readwrite) int originatorVersion;
+@property (nonatomic, retain) NSMutableArray *containerItems;
+@property (nonatomic) bool hasOriginatorType;
+@property (nonatomic) bool hasOriginatorVersion;
+@property (nonatomic) int originatorType;
+@property (nonatomic) int originatorVersion;
 
 - (void).cxx_destruct;
 - (void)addContainerItems:(id)arg1;

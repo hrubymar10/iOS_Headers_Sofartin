@@ -7,8 +7,8 @@
     FBSSceneTransitionContext *_transitionContext;
 }
 
-@property(assign,retain) FBSSceneSettingsDiff * settingsDiff;
-@property(assign,retain) FBSSceneTransitionContext * transitionContext;
+@property (nonatomic, retain) FBSSceneSettingsDiff *settingsDiff;
+@property (nonatomic, retain) FBSSceneTransitionContext *transitionContext;
 
 - (void)dealloc;
 - (void)encodeWithXPCDictionary:(id)arg1;

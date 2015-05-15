@@ -14,14 +14,14 @@
     bool _shouldProcessCategories;
 }
 
-@property(assign,readwrite) bool excludeFeaturedStations;
-@property(assign,retain) SSMetricsConfiguration * metricsConfiguration;
-@property(assign,copy) SSMetricsPageEvent * metricsPageEvent;
-@property(assign,readwrite) unsigned long long numberOfSearchResults;
-@property(assign,readwrite) long long searchCategory;
-@property(assign,readwrite) unsigned long long searchResultsOffset;
-@property(assign,readonly) NSString * searchTerm;
-@property(assign,readwrite) bool shouldProcessCategories;
+@property (nonatomic) bool excludeFeaturedStations;
+@property (nonatomic, readonly, retain) SSMetricsConfiguration *metricsConfiguration;
+@property (nonatomic, readonly, copy) SSMetricsPageEvent *metricsPageEvent;
+@property (nonatomic) unsigned long long numberOfSearchResults;
+@property (nonatomic) long long searchCategory;
+@property (nonatomic) unsigned long long searchResultsOffset;
+@property (nonatomic, readonly) NSString *searchTerm;
+@property (nonatomic) bool shouldProcessCategories;
 
 - (void).cxx_destruct;
 - (void)cancel;

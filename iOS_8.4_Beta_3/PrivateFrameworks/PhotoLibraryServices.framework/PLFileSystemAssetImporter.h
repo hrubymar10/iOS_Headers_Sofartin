@@ -13,10 +13,10 @@
     unsigned long long _thumbnailBatchFetchSize;
 }
 
-@property(assign,retain) NSMutableDictionary * existingOIDsByUUID;
-@property(assign,retain) NSMutableSet * existingUUIDs;
-@property(assign,retain) NSMutableDictionary * existingUUIDsByPath;
-@property(assign,readwrite) unsigned long long thumbnailBatchFetchSize;
+@property (nonatomic, retain) NSMutableDictionary *existingOIDsByUUID;
+@property (nonatomic, retain) NSMutableSet *existingUUIDs;
+@property (nonatomic, retain) NSMutableDictionary *existingUUIDsByPath;
+@property (nonatomic) unsigned long long thumbnailBatchFetchSize;
 
 - (id)_addAssetWithURL:(id)arg1 existingOID:(id)arg2;
 - (id)addAssetWithURLs:(id)arg1;

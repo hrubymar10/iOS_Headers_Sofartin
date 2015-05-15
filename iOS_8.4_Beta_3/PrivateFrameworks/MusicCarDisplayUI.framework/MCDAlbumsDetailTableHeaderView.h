@@ -11,9 +11,9 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIImage * artworkImage;
-@property(assign,copy) id shuffleActionBlock;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) UIImage *artworkImage;
+@property (nonatomic, copy) id shuffleActionBlock;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_shuffleButtonAction:(id)arg1;

@@ -6,7 +6,7 @@
     unsigned long long _entityLimit;
 }
 
-@property(assign,readonly) unsigned long long entityLimit;
+@property (nonatomic, readonly) unsigned long long entityLimit;
 
 + (unsigned long long)defaultEntityLimit;
 

@@ -6,7 +6,7 @@
     bool _automaticLocaleDisabled;
 }
 
-@property(assign,readwrite) bool automaticLocaleDisabled;
+@property (nonatomic) bool automaticLocaleDisabled;
 
 + (bool)automaticLanguageUpdateEnabled;
 

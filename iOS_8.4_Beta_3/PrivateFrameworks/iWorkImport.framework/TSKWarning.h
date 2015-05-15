@@ -9,10 +9,10 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,copy) NSSet * affectedObjects;
-@property(assign,copy) NSString * localizedLocation;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSDictionary * userInfo;
+@property (nonatomic, copy) NSSet *affectedObjects;
+@property (nonatomic, copy) NSString *localizedLocation;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSDictionary *userInfo;
 
 + (id)warningWithMessage:(id)arg1;
 + (id)warningWithMessage:(id)arg1 affectedObject:(id)arg2;

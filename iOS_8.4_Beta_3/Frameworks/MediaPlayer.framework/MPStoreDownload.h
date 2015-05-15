@@ -13,23 +13,23 @@
     long long _type;
 }
 
-@property(assign,readonly) NSDictionary * attributes;
-@property(assign,readonly) long long bytesDownloaded;
-@property(assign,readonly) long long bytesTotal;
-@property(getter=isCanceled,assign,readonly) bool canceled;
-@property(assign,readonly) long long downloadIdentifier;
-@property(assign,readonly) long long downloadSizeLimit;
-@property(assign,readonly) NSError * failureError;
-@property(getter=isFinished,assign,readonly) bool finished;
-@property(assign,readonly) unsigned long long libraryItemIdentifier;
-@property(getter=isPaused,assign,readonly) bool paused;
-@property(assign,readonly) double percentComplete;
-@property(assign,readonly) NSString * phaseIdentifier;
-@property(assign,readonly) NSError * purchaseError;
-@property(getter=isPurchasing,assign,readonly) bool purchasing;
-@property(getter=isRestore,assign,readonly) bool restore;
-@property(assign,readonly) long long storeItemIdentifier;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) NSDictionary *attributes;
+@property (nonatomic, readonly) long long bytesDownloaded;
+@property (nonatomic, readonly) long long bytesTotal;
+@property (getter=isCanceled, nonatomic, readonly) bool canceled;
+@property (nonatomic, readonly) long long downloadIdentifier;
+@property (nonatomic, readonly) long long downloadSizeLimit;
+@property (nonatomic, readonly) NSError *failureError;
+@property (getter=isFinished, nonatomic, readonly) bool finished;
+@property (nonatomic, readonly) unsigned long long libraryItemIdentifier;
+@property (getter=isPaused, nonatomic, readonly) bool paused;
+@property (nonatomic, readonly) double percentComplete;
+@property (nonatomic, readonly) NSString *phaseIdentifier;
+@property (nonatomic, readonly) NSError *purchaseError;
+@property (getter=isPurchasing, nonatomic, readonly) bool purchasing;
+@property (getter=isRestore, nonatomic, readonly) bool restore;
+@property (nonatomic, readonly) long long storeItemIdentifier;
+@property (nonatomic, readonly) long long type;
 
 + (id)_SSPurchaseForType:(long long)arg1 attributes:(id)arg2;
 + (bool)_getEffectiveStoreDownloadAttributes:(id*)arg1 forPlaybackItemMetadata:(id)arg2 attributes:(id)arg3;

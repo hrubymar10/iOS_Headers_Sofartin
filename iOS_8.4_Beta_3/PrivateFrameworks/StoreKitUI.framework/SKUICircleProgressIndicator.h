@@ -24,11 +24,11 @@
     UIColor *_unhighlightedBackgroundColor;
 }
 
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } imageInsets;
-@property(getter=isIndeterminate,assign,readwrite) bool indeterminate;
-@property(assign,readwrite) double progress;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } imageInsets;
+@property (getter=isIndeterminate, nonatomic) bool indeterminate;
+@property (nonatomic) double progress;
 
 + (id)_borderImage;
 + (id)_fillImage;

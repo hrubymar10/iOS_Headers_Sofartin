@@ -4,7 +4,7 @@
 
 @interface SAWeatherLocationDelete : SADomainCommand
 
-@property(assign,retain) SAWeatherLocation * weatherLocation;
+@property (nonatomic, retain) SAWeatherLocation *weatherLocation;
 
 + (id)locationDelete;
 + (id)locationDeleteWithDictionary:(id)arg1 context:(id)arg2;

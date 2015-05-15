@@ -6,8 +6,8 @@
     CKDPPublicKey *_publicKey;
 }
 
-@property(assign,readonly) bool hasPublicKey;
-@property(assign,retain) CKDPPublicKey * publicKey;
+@property (nonatomic, readonly) bool hasPublicKey;
+@property (nonatomic, retain) CKDPPublicKey *publicKey;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

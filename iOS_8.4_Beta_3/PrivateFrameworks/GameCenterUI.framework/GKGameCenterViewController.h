@@ -10,15 +10,15 @@
     NSMutableDictionary *_volatileProperties;
 }
 
-@property(assign,retain) UIAlertController * alertController;
-@property(assign,readwrite) <GKGameCenterControllerDelegate> * gameCenterDelegate;
-@property(assign,retain) NSString * leaderboardCategory;
-@property(assign,retain) NSString * leaderboardIdentifier;
-@property(assign,readwrite) long long leaderboardTimeScope;
-@property(assign,retain) GKHostedGameCenterViewController * privateViewController;
-@property(assign,retain) GKRemoteGameCenterViewController * remoteViewController;
-@property(assign,readwrite) long long viewState;
-@property(assign,retain) NSMutableDictionary * volatileProperties;
+@property (nonatomic, retain) UIAlertController *alertController;
+@property (nonatomic) <GKGameCenterControllerDelegate> *gameCenterDelegate;
+@property (nonatomic, retain) NSString *leaderboardCategory;
+@property (nonatomic, retain) NSString *leaderboardIdentifier;
+@property (nonatomic) long long leaderboardTimeScope;
+@property (nonatomic, retain) GKHostedGameCenterViewController *privateViewController;
+@property (nonatomic, retain) GKRemoteGameCenterViewController *remoteViewController;
+@property (nonatomic) long long viewState;
+@property (nonatomic, retain) NSMutableDictionary *volatileProperties;
 
 + (bool)_preventsAppearanceProxyCustomization;
 + (bool)accessInstanceVariablesDirectly;

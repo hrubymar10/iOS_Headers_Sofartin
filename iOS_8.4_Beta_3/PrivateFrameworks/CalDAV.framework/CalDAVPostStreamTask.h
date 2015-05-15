@@ -7,8 +7,8 @@
     NSString *_previousScheduleTag;
 }
 
-@property(assign,retain) NSString * filename;
-@property(assign,retain) NSString * previousScheduleTag;
+@property (nonatomic, retain) NSString *filename;
+@property (nonatomic, retain) NSString *previousScheduleTag;
 
 - (id)additionalHeaderValues;
 - (id)copyDefaultParserForContentType:(id)arg1;

@@ -4,22 +4,22 @@
 
 @interface SASetRequestOrigin : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSNumber * age;
-@property(assign,readwrite) double altitude;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * desiredAccuracy;
-@property(assign,readwrite) double direction;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double horizontalAccuracy;
-@property(assign,readwrite) double latitude;
-@property(assign,readwrite) double longitude;
-@property(assign,copy) NSString * refId;
-@property(assign,readwrite) double speed;
-@property(assign,copy) NSString * status;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double verticalAccuracy;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic, copy) NSNumber *age;
+@property (nonatomic) double altitude;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *desiredAccuracy;
+@property (nonatomic) double direction;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double horizontalAccuracy;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic) double speed;
+@property (nonatomic, copy) NSString *status;
+@property (readonly) Class superclass;
+@property (nonatomic) double verticalAccuracy;
 
 + (id)setRequestOrigin;
 + (id)setRequestOriginWithDictionary:(id)arg1 context:(id)arg2;

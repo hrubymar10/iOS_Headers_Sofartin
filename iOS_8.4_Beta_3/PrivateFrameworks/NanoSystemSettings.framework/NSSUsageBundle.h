@@ -10,11 +10,11 @@
     unsigned long long _totalSize;
 }
 
-@property(assign,retain) NSString * bundleIdentifier;
-@property(assign,retain) NSArray * categories;
-@property(assign,retain) NSString * name;
-@property(getter=isPurgeable,assign,readwrite) bool purgeable;
-@property(assign,readwrite) unsigned long long totalSize;
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic, retain) NSArray *categories;
+@property (nonatomic, retain) NSString *name;
+@property (getter=isPurgeable, nonatomic) bool purgeable;
+@property (nonatomic) unsigned long long totalSize;
 
 + (bool)supportsSecureCoding;
 

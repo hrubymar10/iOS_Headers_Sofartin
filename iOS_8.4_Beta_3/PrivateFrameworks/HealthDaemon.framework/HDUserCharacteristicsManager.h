@@ -12,17 +12,17 @@
     NSDate *_userProfileLastUpdated;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <HDHealthDaemon> * healthDaemon;
-@property(assign,copy) NSDictionary * lastUserProfile;
-@property(assign,readwrite) bool needsUpdateAfterUnlock;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) bool shouldUpdateQuantityCharacteristics;
-@property(assign,readonly) bool shouldUpdateUserProfile;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSDate * userProfileLastUpdated;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <HDHealthDaemon> *healthDaemon;
+@property (nonatomic, copy) NSDictionary *lastUserProfile;
+@property (nonatomic) bool needsUpdateAfterUnlock;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, readonly) bool shouldUpdateQuantityCharacteristics;
+@property (nonatomic, readonly) bool shouldUpdateUserProfile;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSDate *userProfileLastUpdated;
 
 - (void).cxx_destruct;
 - (id)_mostRecentSampleOfType:(id)arg1 error:(id*)arg2;

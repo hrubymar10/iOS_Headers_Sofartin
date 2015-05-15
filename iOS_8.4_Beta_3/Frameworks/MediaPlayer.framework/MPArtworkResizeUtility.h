@@ -8,9 +8,9 @@
     NSMapTable *_artworkResizingOperations;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * artworkResizingAccessQueue;
-@property(assign,retain) NSOperationQueue * artworkResizingOperationQueue;
-@property(assign,retain) NSMapTable * artworkResizingOperations;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *artworkResizingAccessQueue;
+@property (nonatomic, retain) NSOperationQueue *artworkResizingOperationQueue;
+@property (nonatomic, retain) NSMapTable *artworkResizingOperations;
 
 - (void).cxx_destruct;
 - (id)artworkResizingAccessQueue;

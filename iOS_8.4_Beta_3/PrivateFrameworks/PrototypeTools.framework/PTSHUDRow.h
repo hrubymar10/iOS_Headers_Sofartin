@@ -7,8 +7,8 @@
     double _height;
 }
 
-@property(assign,retain) NSArray * controls;
-@property(assign,readwrite) double height;
+@property (nonatomic, retain) NSArray *controls;
+@property (nonatomic) double height;
 
 + (id)controlsModeFooterRow;
 + (id)controlsModeHeaderRow;

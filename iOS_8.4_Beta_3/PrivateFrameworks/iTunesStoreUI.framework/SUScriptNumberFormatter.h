@@ -6,8 +6,8 @@
     NSNumberFormatter *_numberFormatter;
 }
 
-@property(assign,retain) NSString * localeIdentifier;
-@property(assign,retain) NSString * style;
+@property (retain) NSString *localeIdentifier;
+@property (retain) NSString *style;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

@@ -12,13 +12,13 @@
     id _value;
 }
 
-@property(assign,copy) NSString * characteristicType;
-@property(assign,retain) NSNumber * instanceID;
-@property(assign,readonly) HMCharacteristicMetadata * metadata;
-@property(getter=isNotificationEnabled,assign,readwrite) bool notificationEnabled;
-@property(assign,copy) NSArray * properties;
-@property(assign,readwrite) HMService * service;
-@property(assign,copy) id value;
+@property (nonatomic, readonly, copy) NSString *characteristicType;
+@property (nonatomic, retain) NSNumber *instanceID;
+@property (nonatomic, readonly) HMCharacteristicMetadata *metadata;
+@property (getter=isNotificationEnabled, nonatomic) bool notificationEnabled;
+@property (nonatomic, readonly, copy) NSArray *properties;
+@property (nonatomic) HMService *service;
+@property (nonatomic, copy) id value;
 
 + (id)characteristicTypeAsString:(id)arg1;
 + (bool)supportsSecureCoding;

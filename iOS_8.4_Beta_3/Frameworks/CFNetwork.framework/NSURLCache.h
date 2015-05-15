@@ -6,10 +6,10 @@
     NSURLCacheInternal *_internal;
 }
 
-@property(assign,readonly) unsigned long long currentDiskUsage;
-@property(assign,readonly) unsigned long long currentMemoryUsage;
-@property(assign,readwrite) unsigned long long diskCapacity;
-@property(assign,readwrite) unsigned long long memoryCapacity;
+@property (readonly) unsigned long long currentDiskUsage;
+@property (readonly) unsigned long long currentMemoryUsage;
+@property unsigned long long diskCapacity;
+@property unsigned long long memoryCapacity;
 
 + (void)setSharedURLCache:(id)arg1;
 + (id)sharedURLCache;

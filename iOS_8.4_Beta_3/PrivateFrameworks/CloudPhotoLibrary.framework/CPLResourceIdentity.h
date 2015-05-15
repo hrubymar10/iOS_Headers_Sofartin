@@ -14,12 +14,12 @@
     } _imageDimensions;
 }
 
-@property(getter=isAvailable,assign,readwrite) bool available;
-@property(assign,readwrite) unsigned long long fileSize;
-@property(assign,copy) NSURL * fileURL;
-@property(assign,copy) NSString * fileUTI;
-@property(assign,copy) NSString * fingerPrint;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } imageDimensions;
+@property (getter=isAvailable, nonatomic) bool available;
+@property (nonatomic) unsigned long long fileSize;
+@property (nonatomic, copy) NSURL *fileURL;
+@property (nonatomic, copy) NSString *fileUTI;
+@property (nonatomic, copy) NSString *fingerPrint;
+@property (nonatomic) struct CGSize { double x1; double x2; } imageDimensions;
 
 + (Class)_identityImplementationClass;
 + (id)alloc;

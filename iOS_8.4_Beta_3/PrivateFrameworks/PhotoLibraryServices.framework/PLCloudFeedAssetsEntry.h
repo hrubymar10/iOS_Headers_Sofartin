@@ -4,8 +4,8 @@
 
 @interface PLCloudFeedAssetsEntry : PLCloudFeedEntry
 
-@property(assign,retain) NSOrderedSet * entryAssets;
-@property(assign,readonly) NSMutableOrderedSet * mutableEntryAssets;
+@property (nonatomic, retain) NSOrderedSet *entryAssets;
+@property (nonatomic, readonly) NSMutableOrderedSet *mutableEntryAssets;
 
 + (id)entityName;
 

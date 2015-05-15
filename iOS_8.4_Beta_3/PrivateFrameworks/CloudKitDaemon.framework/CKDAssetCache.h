@@ -17,18 +17,18 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readwrite) CKDMMCS * MMCS;
-@property(assign,retain) NSString * applicationBundleID;
-@property(assign,retain) NSString * dbPath;
-@property(assign,readonly) CKSQLitePool * dbPool;
-@property(assign,retain) NSObject<OS_dispatch_source> * expiryTimer;
-@property(assign,retain) NSString * fileDownloadPath;
-@property(assign,readwrite) int fileDownloadPathFd;
-@property(assign,readwrite) bool isEvictionScheduled;
-@property(assign,readwrite) bool isUnitTestingAccount;
-@property(assign,retain) NSString * packageDownloadPath;
-@property(assign,retain) NSString * packageUploadPath;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic) CKDMMCS *MMCS;
+@property (nonatomic, retain) NSString *applicationBundleID;
+@property (nonatomic, retain) NSString *dbPath;
+@property (nonatomic, readonly) CKSQLitePool *dbPool;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *expiryTimer;
+@property (nonatomic, retain) NSString *fileDownloadPath;
+@property (nonatomic) int fileDownloadPathFd;
+@property bool isEvictionScheduled;
+@property (nonatomic) bool isUnitTestingAccount;
+@property (nonatomic, retain) NSString *packageDownloadPath;
+@property (nonatomic, retain) NSString *packageUploadPath;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 + (id)_sharedCachesByBundleID;
 + (id)_sharedCachesQueue;

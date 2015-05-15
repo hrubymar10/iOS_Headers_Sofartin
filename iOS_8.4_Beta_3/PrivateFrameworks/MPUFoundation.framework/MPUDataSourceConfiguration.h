@@ -9,10 +9,10 @@
     long long _entityType;
 }
 
-@property(assign,copy) NSString * dataSourceCachingKey;
-@property(assign,readonly) Class dataSourceClass;
-@property(assign,copy) id defaultQueryCreationBlock;
-@property(assign,readwrite) long long entityType;
+@property (nonatomic, copy) NSString *dataSourceCachingKey;
+@property (nonatomic, readonly) Class dataSourceClass;
+@property (nonatomic, copy) id defaultQueryCreationBlock;
+@property (nonatomic) long long entityType;
 
 + (id)configurationWithDataSourceClass:(Class)arg1;
 

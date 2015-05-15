@@ -11,11 +11,11 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,retain) GEOURLCamera * camera;
-@property(assign,readonly) bool hasCamera;
-@property(assign,readwrite) bool hasMapType;
-@property(assign,readwrite) int mapType;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, retain) GEOURLCamera *camera;
+@property (nonatomic, readonly) bool hasCamera;
+@property (nonatomic) bool hasMapType;
+@property (nonatomic) int mapType;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (id)camera;
 - (void)copyTo:(id)arg1;

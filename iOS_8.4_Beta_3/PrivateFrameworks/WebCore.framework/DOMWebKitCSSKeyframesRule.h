@@ -4,8 +4,8 @@
 
 @interface DOMWebKitCSSKeyframesRule : DOMCSSRule
 
-@property(assign,readonly) DOMCSSRuleList * cssRules;
-@property(assign,copy) NSString * name;
+@property (readonly) DOMCSSRuleList *cssRules;
+@property (copy) NSString *name;
 
 - (id)cssRules;
 - (void)deleteRule:(id)arg1;

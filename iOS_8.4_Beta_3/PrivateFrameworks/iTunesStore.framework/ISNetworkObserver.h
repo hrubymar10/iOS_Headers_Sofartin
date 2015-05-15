@@ -17,23 +17,23 @@
     struct __CTServerConnection { } *_telephonyServer;
 }
 
-@property(assign,readonly) NSString * connectionTypeHeader;
-@property(assign,readonly) NSString * dataStatusIndicator;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double lastNetworkTypeChangeTime;
-@property(assign,readonly) NSString * mobileSubscriberCountryCode;
-@property(assign,readonly) NSString * mobileSubscriberNetworkCode;
-@property(assign,readonly) NSString * modemRegistrationStatus;
-@property(assign,readwrite) long long networkType;
-@property(assign,readonly) NSString * operatorName;
-@property(assign,readonly) NSString * phoneNumber;
-@property(assign,readonly) NSString * providerName;
-@property(assign,readonly) bool shouldShowCellularAutomaticDownloadsSwitch;
-@property(assign,readonly) Class superclass;
-@property(getter=isUsingNetwork,assign,readonly) bool usingNetwork;
-@property(getter=isWiFiEnabled,assign,readonly) bool wifiEnabled;
+@property (readonly) NSString *connectionTypeHeader;
+@property (readonly) NSString *dataStatusIndicator;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) double lastNetworkTypeChangeTime;
+@property (readonly) NSString *mobileSubscriberCountryCode;
+@property (readonly) NSString *mobileSubscriberNetworkCode;
+@property (readonly) NSString *modemRegistrationStatus;
+@property long long networkType;
+@property (readonly) NSString *operatorName;
+@property (readonly) NSString *phoneNumber;
+@property (readonly) NSString *providerName;
+@property (readonly) bool shouldShowCellularAutomaticDownloadsSwitch;
+@property (readonly) Class superclass;
+@property (getter=isUsingNetwork, readonly) bool usingNetwork;
+@property (getter=isWiFiEnabled, readonly) bool wifiEnabled;
 
 + (void)set3GEnabled:(bool)arg1;
 + (void)setAirplaneModeEnabled:(bool)arg1;

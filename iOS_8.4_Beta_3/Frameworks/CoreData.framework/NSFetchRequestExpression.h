@@ -15,9 +15,9 @@
     void *_reserved4;
 }
 
-@property(assign,readonly) NSExpression * contextExpression;
-@property(getter=isCountOnlyRequest,assign,readonly) bool countOnlyRequest;
-@property(assign,readonly) NSExpression * requestExpression;
+@property (readonly) NSExpression *contextExpression;
+@property (getter=isCountOnlyRequest, readonly) bool countOnlyRequest;
+@property (readonly) NSExpression *requestExpression;
 
 + (id)expressionForFetch:(id)arg1 context:(id)arg2 countOnly:(bool)arg3;
 

@@ -11,8 +11,8 @@
     double radius;
 }
 
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } center;
-@property(assign,readwrite) double radius;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } center;
+@property (nonatomic) double radius;
 
 + (id)SCNJSExportProtocol;
 

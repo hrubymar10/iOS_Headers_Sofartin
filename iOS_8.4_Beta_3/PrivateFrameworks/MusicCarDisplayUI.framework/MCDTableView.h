@@ -6,7 +6,7 @@
     bool _shouldShowHeadersAndFooters;
 }
 
-@property(assign,readwrite) bool shouldShowHeadersAndFooters;
+@property (nonatomic) bool shouldShowHeadersAndFooters;
 
 - (bool)_shouldShowHeadersAndFooters;
 - (bool)canBecomeFirstResponder;

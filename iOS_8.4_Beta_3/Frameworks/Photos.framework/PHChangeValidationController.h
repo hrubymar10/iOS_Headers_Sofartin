@@ -20,20 +20,20 @@
     NSSet *_updateRequests;
 }
 
-@property(assign,readonly) NSArray * albumsToDelete;
-@property(assign,readonly) NSArray * assetsToChangeContent;
-@property(assign,readonly) NSArray * assetsToDelete;
-@property(assign,readonly) NSArray * assetsToHide;
-@property(assign,readonly) NSArray * assetsToRevert;
-@property(assign,copy) NSString * clientName;
-@property(assign,readonly) bool confirmationRequired;
-@property(assign,readonly) NSSet * deleteRequests;
-@property(assign,readonly) NSArray * foldersToDelete;
-@property(assign,readonly) NSSet * insertRequests;
-@property(assign,readonly) NSManagedObjectContext * managedObjectContext;
-@property(assign,readonly) PLPhotoLibrary * photoLibrary;
-@property(assign,readonly) NSArray * renderedContentURLs;
-@property(assign,readonly) NSSet * updateRequests;
+@property (nonatomic, readonly) NSArray *albumsToDelete;
+@property (nonatomic, readonly) NSArray *assetsToChangeContent;
+@property (nonatomic, readonly) NSArray *assetsToDelete;
+@property (nonatomic, readonly) NSArray *assetsToHide;
+@property (nonatomic, readonly) NSArray *assetsToRevert;
+@property (nonatomic, readonly, copy) NSString *clientName;
+@property (nonatomic, readonly) bool confirmationRequired;
+@property (nonatomic, readonly) NSSet *deleteRequests;
+@property (nonatomic, readonly) NSArray *foldersToDelete;
+@property (nonatomic, readonly) NSSet *insertRequests;
+@property (nonatomic, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, readonly) PLPhotoLibrary *photoLibrary;
+@property (nonatomic, readonly) NSArray *renderedContentURLs;
+@property (nonatomic, readonly) NSSet *updateRequests;
 
 - (void).cxx_destruct;
 - (bool)_prepareWithError:(id*)arg1;

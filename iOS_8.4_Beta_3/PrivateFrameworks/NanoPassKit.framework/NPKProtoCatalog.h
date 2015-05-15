@@ -6,7 +6,7 @@
     NSData *_catalogData;
 }
 
-@property(assign,retain) NSData * catalogData;
+@property (nonatomic, retain) NSData *catalogData;
 
 - (void).cxx_destruct;
 - (id)catalogData;

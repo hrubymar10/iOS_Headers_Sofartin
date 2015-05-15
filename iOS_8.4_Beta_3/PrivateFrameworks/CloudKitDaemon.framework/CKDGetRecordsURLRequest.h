@@ -15,16 +15,16 @@
     unsigned long long _requestedTTL;
 }
 
-@property(assign,readwrite) unsigned long long URLOptions;
-@property(assign,retain) NSSet * assetFieldNamesToPublishURLs;
-@property(assign,retain) NSSet * desiredKeys;
-@property(assign,readwrite) unsigned long long recordCount;
-@property(assign,copy) id recordFetchedBlock;
-@property(assign,retain) NSMutableDictionary * recordIDByRequestID;
-@property(assign,retain) NSArray * recordIDs;
-@property(assign,retain) NSDictionary * recordIDsToETags;
-@property(assign,retain) NSDictionary * recordIDsToVersionETags;
-@property(assign,readwrite) unsigned long long requestedTTL;
+@property (nonatomic) unsigned long long URLOptions;
+@property (nonatomic, retain) NSSet *assetFieldNamesToPublishURLs;
+@property (nonatomic, retain) NSSet *desiredKeys;
+@property (nonatomic) unsigned long long recordCount;
+@property (nonatomic, copy) id recordFetchedBlock;
+@property (nonatomic, retain) NSMutableDictionary *recordIDByRequestID;
+@property (nonatomic, retain) NSArray *recordIDs;
+@property (nonatomic, retain) NSDictionary *recordIDsToETags;
+@property (nonatomic, retain) NSDictionary *recordIDsToVersionETags;
+@property (nonatomic) unsigned long long requestedTTL;
 
 - (void).cxx_destruct;
 - (unsigned long long)URLOptions;

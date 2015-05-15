@@ -15,14 +15,14 @@
     long long _vectorCount;
 }
 
-@property(assign,readonly) long long bytesPerComponent;
-@property(assign,readonly) long long componentsPerVector;
-@property(assign,readonly) NSData * data;
-@property(assign,readonly) long long dataOffset;
-@property(assign,readonly) long long dataStride;
-@property(assign,readonly) bool floatComponents;
-@property(assign,readonly) NSString * semantic;
-@property(assign,readonly) long long vectorCount;
+@property (nonatomic, readonly) long long bytesPerComponent;
+@property (nonatomic, readonly) long long componentsPerVector;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic, readonly) long long dataOffset;
+@property (nonatomic, readonly) long long dataStride;
+@property (nonatomic, readonly) bool floatComponents;
+@property (nonatomic, readonly) NSString *semantic;
+@property (nonatomic, readonly) long long vectorCount;
 
 + (id)SCNJSExportProtocol;
 + (id)dataWithPointArray:(const struct CGPoint { double x1; double x2; }*)arg1 count:(long long)arg2 bytesPerComponent:(long long*)arg3;

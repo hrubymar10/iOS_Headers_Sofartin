@@ -8,8 +8,8 @@
     CPBitmapStore *_store;
 }
 
-@property(assign,retain) NSCache * conditionImagesCache;
-@property(assign,retain) CPBitmapStore * store;
+@property (nonatomic, retain) NSCache *conditionImagesCache;
+@property (nonatomic, retain) CPBitmapStore *store;
 
 + (void)cacheImageIfNecessary:(id)arg1;
 + (id)cachedImageNamed:(id)arg1 completion:(id)arg2;

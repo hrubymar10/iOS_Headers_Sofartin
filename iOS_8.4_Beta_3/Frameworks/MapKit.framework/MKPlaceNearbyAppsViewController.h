@@ -7,13 +7,13 @@
     NSArray *_storeItems;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <MKPlaceNearbyAppsViewControllerDelegate> * nearbyAppsDelegate;
-@property(assign,readonly) bool requiresPreferredContentSizeInStackingView;
-@property(assign,retain) NSArray * storeItems;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <MKPlaceNearbyAppsViewControllerDelegate> *nearbyAppsDelegate;
+@property (nonatomic, readonly) bool requiresPreferredContentSizeInStackingView;
+@property (nonatomic, retain) NSArray *storeItems;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)contentSizeDidChange;

@@ -14,13 +14,13 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSString * album;
-@property(assign,readwrite) double albumMinXRatioWithContentWidth;
-@property(assign,copy) NSString * artist;
-@property(assign,readwrite) double artistMinXRatioWithContentWidth;
-@property(assign,retain) UIImage * artworkImage;
-@property(assign,readwrite) double artworkMinX;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *album;
+@property (nonatomic) double albumMinXRatioWithContentWidth;
+@property (nonatomic, copy) NSString *artist;
+@property (nonatomic) double artistMinXRatioWithContentWidth;
+@property (nonatomic, retain) UIImage *artworkImage;
+@property (nonatomic) double artworkMinX;
+@property (nonatomic, copy) NSString *title;
 
 + (id)_textLabelFontWithEmphasis:(bool)arg1;
 + (struct CGSize { double x1; double x2; })artworkSize;

@@ -4,7 +4,7 @@
 
 @interface MusicUpNextNowPlayingTableViewCell : MusicUpNextTableViewCell
 
-@property(assign,readonly) MusicUpNextNowPlayingLockupView * nowPlayingLockupView;
+@property (nonatomic, readonly) MusicUpNextNowPlayingLockupView *nowPlayingLockupView;
 
 + (Class)horizontalLockupViewClass;
 

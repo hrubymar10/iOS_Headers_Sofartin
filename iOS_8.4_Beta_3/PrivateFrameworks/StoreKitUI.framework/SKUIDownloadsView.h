@@ -7,8 +7,8 @@
     UIView *_overlayView;
 }
 
-@property(assign,retain) UIView * contentView;
-@property(assign,retain) UIView * overlayView;
+@property (nonatomic, retain) UIView *contentView;
+@property (nonatomic, retain) UIView *overlayView;
 
 - (void).cxx_destruct;
 - (id)contentView;

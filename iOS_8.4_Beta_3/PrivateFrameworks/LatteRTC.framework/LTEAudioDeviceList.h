@@ -6,7 +6,7 @@
     LTEInternalDeviceList *_internalList;
 }
 
-@property(assign,copy) id changeListener;
+@property (nonatomic, copy) id changeListener;
 
 + (id)currentInputDevice;
 + (id)defaultInputDevice;

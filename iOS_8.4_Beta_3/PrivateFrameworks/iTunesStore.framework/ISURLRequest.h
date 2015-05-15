@@ -7,19 +7,19 @@
     SSMutableURLRequestProperties *_properties;
 }
 
-@property(assign,retain) NSData * HTTPBody;
-@property(assign,retain) NSInputStream * HTTPBodyStream;
-@property(assign,retain) NSString * HTTPMethod;
-@property(assign,readwrite) long long URLBagType;
-@property(assign,retain) NSArray * URLs;
-@property(assign,readwrite) long long allowedRetryCount;
-@property(assign,retain) NSString * appleClientApplication;
-@property(assign,readwrite) unsigned long long cachePolicy;
-@property(assign,retain) NSDictionary * customHeaders;
-@property(assign,readwrite) long long expectedContentLength;
-@property(assign,readonly) NSURL * primaryURL;
-@property(assign,retain) NSDictionary * queryStringDictionary;
-@property(assign,readwrite) double timeoutInterval;
+@property (retain) NSData *HTTPBody;
+@property (retain) NSInputStream *HTTPBodyStream;
+@property (retain) NSString *HTTPMethod;
+@property long long URLBagType;
+@property (retain) NSArray *URLs;
+@property long long allowedRetryCount;
+@property (retain) NSString *appleClientApplication;
+@property unsigned long long cachePolicy;
+@property (retain) NSDictionary *customHeaders;
+@property long long expectedContentLength;
+@property (readonly) NSURL *primaryURL;
+@property (retain) NSDictionary *queryStringDictionary;
+@property double timeoutInterval;
 
 + (id)requestWithURL:(id)arg1;
 

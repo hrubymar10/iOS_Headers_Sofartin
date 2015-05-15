@@ -14,18 +14,18 @@
     NSString *_unsaltedBookmarkData;
 }
 
-@property(assign,readonly) NSString * aliasContainerID;
-@property(assign,readonly) BRCLocalContainer * container;
-@property(assign,retain) NSMutableSet * containerIDsWithReverseAliases;
-@property(assign,readonly) BRCItemID * itemID;
-@property(assign,readonly) unsigned long long oldParentFileID;
-@property(assign,readonly) NSNumber * oldParentFileObjectID;
-@property(assign,readonly) unsigned long long parentFileID;
-@property(assign,readonly) NSNumber * parentFileObjectID;
-@property(assign,readonly) BRCItemID * parentID;
-@property(assign,retain) NSSet * parentIDs;
-@property(assign,retain) NSString * unsaltedBookmarkData;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, readonly) NSString *aliasContainerID;
+@property (nonatomic, readonly) BRCLocalContainer *container;
+@property (nonatomic, retain) NSMutableSet *containerIDsWithReverseAliases;
+@property (nonatomic, readonly) BRCItemID *itemID;
+@property (nonatomic, readonly) unsigned long long oldParentFileID;
+@property (nonatomic, readonly) NSNumber *oldParentFileObjectID;
+@property (nonatomic, readonly) unsigned long long parentFileID;
+@property (nonatomic, readonly) NSNumber *parentFileObjectID;
+@property (nonatomic, readonly) BRCItemID *parentID;
+@property (nonatomic, retain) NSSet *parentIDs;
+@property (nonatomic, retain) NSString *unsaltedBookmarkData;
+@property (nonatomic, readonly) NSURL *url;
 
 + (id)notificationGatheredFromItem:(id)arg1;
 + (id)notificationWithAliasItem:(id)arg1 targetItemNotification:(id)arg2;

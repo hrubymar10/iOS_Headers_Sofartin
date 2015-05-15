@@ -22,13 +22,13 @@
     double _unroundedTopBarHeight;
 }
 
-@property(assign,readonly) double bottomBarOffset;
-@property(assign,readwrite) <SKUIDynamicBarAnimatorDelegate> * delegate;
-@property(assign,readwrite) double maximumBottomBarOffset;
-@property(assign,readwrite) double minimumTopBarHeight;
-@property(assign,readonly) long long state;
-@property(assign,readonly) long long targetState;
-@property(assign,readonly) double topBarHeight;
+@property (nonatomic, readonly) double bottomBarOffset;
+@property (nonatomic) <SKUIDynamicBarAnimatorDelegate> *delegate;
+@property (nonatomic) double maximumBottomBarOffset;
+@property (nonatomic) double minimumTopBarHeight;
+@property (nonatomic, readonly) long long state;
+@property (nonatomic, readonly) long long targetState;
+@property (nonatomic, readonly) double topBarHeight;
 
 - (void).cxx_destruct;
 - (double)_bottomBarOffsetForTopBarHeight:(double)arg1;

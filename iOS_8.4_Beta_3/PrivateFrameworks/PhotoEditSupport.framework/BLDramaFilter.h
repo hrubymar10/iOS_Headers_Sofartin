@@ -17,14 +17,14 @@
     NSData *_precomputedCube;
 }
 
-@property(assign,retain) CIFilter * colorCubeFilterDrama;
-@property(assign,copy) NSNumber * inputAmount;
-@property(assign,copy) CIVector * inputHueStrengthArray;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,copy) NSNumber * inputNeutralGamma;
-@property(assign,copy) NSNumber * inputPhototone;
-@property(assign,retain) CIVector * lastHueStrengthArray;
-@property(assign,retain) NSData * precomputedCube;
+@property (nonatomic, retain) CIFilter *colorCubeFilterDrama;
+@property (nonatomic, copy) NSNumber *inputAmount;
+@property (nonatomic, copy) CIVector *inputHueStrengthArray;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, copy) NSNumber *inputNeutralGamma;
+@property (nonatomic, copy) NSNumber *inputPhototone;
+@property (nonatomic, retain) CIVector *lastHueStrengthArray;
+@property (nonatomic, retain) NSData *precomputedCube;
 
 - (void).cxx_destruct;
 - (id)colorCubeFilterDrama;

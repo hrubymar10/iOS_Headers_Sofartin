@@ -8,12 +8,12 @@
     NSXPCListener *_xpcListener;
 }
 
-@property(setter=_setHasAcknowlegedPushNotifications:,assign,readwrite) bool _hasAcknowledgedPushNotifications;
-@property(setter=_setHasUnacknowledgedPushNotifications:,assign,readwrite) bool _hasUnacknowledgedPushNotifications;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (setter=_setHasAcknowlegedPushNotifications:, nonatomic) bool _hasAcknowledgedPushNotifications;
+@property (setter=_setHasUnacknowledgedPushNotifications:, nonatomic) bool _hasUnacknowledgedPushNotifications;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_hasAcknowledgedPushNotifications;

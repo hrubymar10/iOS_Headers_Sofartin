@@ -19,7 +19,7 @@
     } _map;
 }
 
-@property(assign,readwrite) unsigned long long count;
+@property (nonatomic) unsigned long long count;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

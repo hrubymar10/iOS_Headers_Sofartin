@@ -14,16 +14,16 @@
     NSNumber *_responderDSID;
 }
 
-@property(assign,copy) NSString * ask;
-@property(assign,copy) NSString * clientIdentifier;
-@property(assign,copy) NSDate * dateAddedToLocalCache;
-@property(assign,copy) NSString * requestID;
-@property(assign,copy) NSDictionary * requestInfo;
-@property(assign,readwrite) unsigned long long requestStatus;
-@property(assign,readwrite) bool requestedOnThisDevice;
-@property(assign,copy) NSNumber * requesterDSID;
-@property(assign,copy) NSNumber * responderDSID;
-@property(assign,readonly) NSString * statusDescription;
+@property (copy) NSString *ask;
+@property (copy) NSString *clientIdentifier;
+@property (copy) NSDate *dateAddedToLocalCache;
+@property (copy) NSString *requestID;
+@property (copy) NSDictionary *requestInfo;
+@property unsigned long long requestStatus;
+@property bool requestedOnThisDevice;
+@property (copy) NSNumber *requesterDSID;
+@property (copy) NSNumber *responderDSID;
+@property (readonly) NSString *statusDescription;
 
 + (bool)supportsSecureCoding;
 

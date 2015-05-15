@@ -16,18 +16,18 @@
     NSNumber *_storeVersionIdentifier;
 }
 
-@property(assign,readwrite) unsigned long long AVTypes;
-@property(assign,readwrite) long long availability;
-@property(assign,copy) NSString * bundleIdentifier;
-@property(assign,copy) NSString * bundleVersion;
-@property(getter=isHighDefinition,assign,readwrite) bool highDefinition;
-@property(assign,readonly) NSString * itemStateVariantIdentifier;
-@property(getter=isPreview,assign,readwrite) bool preview;
-@property(getter=isRental,assign,readwrite) bool rental;
-@property(assign,copy) NSNumber * storeAccountIdentifier;
-@property(assign,copy) NSString * storeFlavorIdentifier;
-@property(assign,copy) NSString * storePlatformKind;
-@property(assign,copy) NSNumber * storeVersionIdentifier;
+@property (nonatomic) unsigned long long AVTypes;
+@property (nonatomic) long long availability;
+@property (nonatomic, copy) NSString *bundleIdentifier;
+@property (nonatomic, copy) NSString *bundleVersion;
+@property (getter=isHighDefinition, nonatomic) bool highDefinition;
+@property (nonatomic, readonly) NSString *itemStateVariantIdentifier;
+@property (getter=isPreview, nonatomic) bool preview;
+@property (getter=isRental, nonatomic) bool rental;
+@property (nonatomic, copy) NSNumber *storeAccountIdentifier;
+@property (nonatomic, copy) NSString *storeFlavorIdentifier;
+@property (nonatomic, copy) NSString *storePlatformKind;
+@property (nonatomic, copy) NSNumber *storeVersionIdentifier;
 
 - (void).cxx_destruct;
 - (unsigned long long)AVTypes;

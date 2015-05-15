@@ -6,7 +6,7 @@
     bool _activated;
 }
 
-@property(getter=isActivated,assign,readonly) bool activated;
+@property (getter=isActivated, nonatomic, readonly) bool activated;
 
 - (void)_buttonAction:(id)arg1;
 - (void)_setActivated:(bool)arg1;

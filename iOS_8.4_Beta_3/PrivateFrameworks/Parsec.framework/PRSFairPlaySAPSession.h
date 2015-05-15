@@ -12,8 +12,8 @@
     struct FPSAPContextOpaque_ { } *_session;
 }
 
-@property(assign,retain) NSString * SAPVersion;
-@property(getter=isComplete,assign,readonly) bool complete;
+@property (retain) NSString *SAPVersion;
+@property (getter=isComplete, nonatomic, readonly) bool complete;
 
 - (void).cxx_destruct;
 - (id)SAPVersion;

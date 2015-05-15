@@ -8,9 +8,9 @@
     ACAccount *_oldAccount;
 }
 
-@property(assign,retain) ACAccount * account;
-@property(assign,readwrite) int changeType;
-@property(assign,retain) ACAccount * oldAccount;
+@property (nonatomic, retain) ACAccount *account;
+@property (nonatomic) int changeType;
+@property (nonatomic, retain) ACAccount *oldAccount;
 
 + (id)changeWithChangeType:(int)arg1 account:(id)arg2 oldAccount:(id)arg3;
 

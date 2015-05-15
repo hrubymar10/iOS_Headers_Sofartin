@@ -10,11 +10,11 @@
     NSArray *_results;
 }
 
-@property(assign,copy) NSString * assetType;
-@property(assign,readwrite) double networkTimeout;
-@property(assign,retain) NSPredicate * predicate;
-@property(assign,readwrite) bool queriesLocalAssetInformationOnly;
-@property(assign,retain) NSArray * results;
+@property (nonatomic, copy) NSString *assetType;
+@property (nonatomic) double networkTimeout;
+@property (nonatomic, retain) NSPredicate *predicate;
+@property (nonatomic) bool queriesLocalAssetInformationOnly;
+@property (nonatomic, retain) NSArray *results;
 
 + (id)queryPredicateForProperties:(id)arg1;
 

@@ -8,9 +8,9 @@
     NSDictionary *_metadata;
 }
 
-@property(assign,copy) PLLoadRequestKey * cacheKey;
-@property(assign,readwrite) int format;
-@property(assign,retain) NSDictionary * metadata;
+@property (nonatomic, copy) PLLoadRequestKey *cacheKey;
+@property (nonatomic) int format;
+@property (nonatomic, retain) NSDictionary *metadata;
 
 - (id)cacheKey;
 - (void)dealloc;

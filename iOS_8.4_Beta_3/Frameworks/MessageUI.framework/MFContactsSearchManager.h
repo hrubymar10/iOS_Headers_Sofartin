@@ -21,12 +21,12 @@
     struct __CFDictionary { } *_taskIDsBySearchQuery;
 }
 
-@property(assign,readwrite) unsigned long long implicitGroupCreationThreshold;
-@property(assign,readwrite) bool includeUpcomingEventMembers;
-@property(assign,copy) NSString * recentsBundleIdentifier;
-@property(assign,retain) NSArray * searchAccountIDs;
-@property(assign,readonly) NSArray * searchAccounts;
-@property(assign,copy) NSString * sendingAddress;
+@property (nonatomic) unsigned long long implicitGroupCreationThreshold;
+@property (nonatomic) bool includeUpcomingEventMembers;
+@property (nonatomic, copy) NSString *recentsBundleIdentifier;
+@property (retain) NSArray *searchAccountIDs;
+@property (nonatomic, readonly) NSArray *searchAccounts;
+@property (nonatomic, copy) NSString *sendingAddress;
 
 - (void)_handleAddressBookChangeNotification;
 - (void)_handleCorecipientSearchResults:(id)arg1 operation:(id)arg2 taskID:(id)arg3;

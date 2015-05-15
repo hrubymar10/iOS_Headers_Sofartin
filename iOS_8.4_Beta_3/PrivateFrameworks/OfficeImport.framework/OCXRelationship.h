@@ -9,9 +9,9 @@
     NSString *mType;
 }
 
-@property(assign,readonly) NSString * idString;
-@property(assign,readonly) NSString * target;
-@property(assign,readonly) NSString * type;
+@property (nonatomic, readonly) NSString *idString;
+@property (nonatomic, readonly) NSString *target;
+@property (nonatomic, readonly) NSString *type;
 
 - (void)dealloc;
 - (id)idString;

@@ -10,11 +10,11 @@
     bool _receivedDidStart;
 }
 
-@property(assign,copy) id didStartHandler;
-@property(assign,copy) id didStopHandler;
-@property(getter=isHost,assign,readwrite) bool host;
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) bool receivedDidStart;
+@property (nonatomic, copy) id didStartHandler;
+@property (nonatomic, copy) id didStopHandler;
+@property (getter=isHost, nonatomic) bool host;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic) bool receivedDidStart;
 
 + (id)conferenceConnectionWithIdentifier:(id)arg1 host:(bool)arg2;
 

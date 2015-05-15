@@ -43,16 +43,16 @@
     unsigned int _webkitDefinedConfigurationFlags;
 }
 
-@property(assign,readonly) bool allowsUserScaling;
-@property(assign,readonly) struct CGSize { double x1; double x2; } availableViewSize;
-@property(getter=isClassicViewportMode,assign,readonly) bool classicViewportMode;
-@property(assign,readwrite) <_UIWebViewportHandlerDelegate> * delegate;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } documentBounds;
-@property(assign,readonly) float initialScale;
-@property(assign,readonly) float maximumScale;
-@property(assign,readonly) float minimumScale;
-@property(assign,readonly) struct _UIWebViewportConfiguration { struct CGSize { double x_1_1_1; double x_1_1_2; } x1; float x2; float x3; float x4; bool x5; } rawViewConfiguration;
-@property(assign,readonly) unsigned int webkitDefinedConfigurationFlags;
+@property (nonatomic, readonly) bool allowsUserScaling;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } availableViewSize;
+@property (getter=isClassicViewportMode, nonatomic, readonly) bool classicViewportMode;
+@property (nonatomic) <_UIWebViewportHandlerDelegate> *delegate;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } documentBounds;
+@property (nonatomic, readonly) float initialScale;
+@property (nonatomic, readonly) float maximumScale;
+@property (nonatomic, readonly) float minimumScale;
+@property (nonatomic, readonly) struct _UIWebViewportConfiguration { struct CGSize { double x_1_1_1; double x_1_1_2; } x1; float x2; float x3; float x4; bool x5; } rawViewConfiguration;
+@property (nonatomic, readonly) unsigned int webkitDefinedConfigurationFlags;
 
 - (id).cxx_construct;
 - (bool)allowsUserScaling;

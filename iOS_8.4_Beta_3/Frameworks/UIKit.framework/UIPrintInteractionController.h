@@ -19,21 +19,21 @@
     bool _showsPaperSelectionForLoadedPapers;
 }
 
-@property(assign,readwrite) <UIPrintInteractionControllerDelegate> * delegate;
-@property(assign,readonly) long long pageCount;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } pageRange;
-@property(assign,retain) UIPrintPaper * paper;
-@property(assign,readwrite) <UIPrintInteractionControllerDelegate> * printActivityDelegate;
-@property(assign,retain) UIPrintFormatter * printFormatter;
-@property(assign,retain) UIPrintInfo * printInfo;
-@property(assign,retain) UIPrintPageRenderer * printPageRenderer;
-@property(assign,readonly) UIPrintPaper * printPaper;
-@property(assign,retain) PKPrinter * printer;
-@property(assign,copy) id printingItem;
-@property(assign,copy) NSArray * printingItems;
-@property(assign,readwrite) bool showsNumberOfCopies;
-@property(assign,readwrite) bool showsPageRange;
-@property(assign,readwrite) bool showsPaperSelectionForLoadedPapers;
+@property (nonatomic) <UIPrintInteractionControllerDelegate> *delegate;
+@property (nonatomic, readonly) long long pageCount;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } pageRange;
+@property (nonatomic, retain) UIPrintPaper *paper;
+@property (nonatomic) <UIPrintInteractionControllerDelegate> *printActivityDelegate;
+@property (nonatomic, retain) UIPrintFormatter *printFormatter;
+@property (nonatomic, retain) UIPrintInfo *printInfo;
+@property (nonatomic, retain) UIPrintPageRenderer *printPageRenderer;
+@property (nonatomic, readonly) UIPrintPaper *printPaper;
+@property (nonatomic, retain) PKPrinter *printer;
+@property (nonatomic, copy) id printingItem;
+@property (nonatomic, copy) NSArray *printingItems;
+@property (nonatomic) bool showsNumberOfCopies;
+@property (nonatomic) bool showsPageRange;
+@property (nonatomic) bool showsPaperSelectionForLoadedPapers;
 
 + (bool)canPrintData:(id)arg1;
 + (bool)canPrintURL:(id)arg1;

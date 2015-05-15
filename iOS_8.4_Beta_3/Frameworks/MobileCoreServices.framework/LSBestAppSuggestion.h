@@ -15,18 +15,18 @@
     NSUUID *_uniqueIdentifier;
 }
 
-@property(assign,copy) NSString * activityType;
-@property(assign,copy) NSString * bundleIdentifier;
-@property(assign,readonly) double confidence;
-@property(assign,copy) NSDate * lastUpdateTime;
-@property(assign,copy) NSDictionary * options;
-@property(assign,copy) NSString * originatingDeviceIdentifier;
-@property(assign,copy) NSString * originatingDeviceName;
-@property(assign,copy) NSString * originatingDeviceType;
-@property(assign,readonly) unsigned long long type;
-@property(assign,copy) NSUUID * uniqueIdentifier;
-@property(assign,copy) NSString * userActivityTypeIdentifier;
-@property(assign,copy) NSDate * when;
+@property (copy) NSString *activityType;
+@property (readonly, copy) NSString *bundleIdentifier;
+@property (readonly) double confidence;
+@property (readonly, copy) NSDate *lastUpdateTime;
+@property (readonly, copy) NSDictionary *options;
+@property (readonly, copy) NSString *originatingDeviceIdentifier;
+@property (readonly, copy) NSString *originatingDeviceName;
+@property (readonly, copy) NSString *originatingDeviceType;
+@property (readonly) unsigned long long type;
+@property (copy) NSUUID *uniqueIdentifier;
+@property (readonly, copy) NSString *userActivityTypeIdentifier;
+@property (readonly, copy) NSDate *when;
 
 + (bool)supportsSecureCoding;
 

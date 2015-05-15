@@ -22,12 +22,12 @@
     unsigned int _set;
 }
 
-@property(assign,readonly) NSData * data;
-@property(assign,readonly) unsigned int edition;
-@property(assign,readonly) NSString * etag;
-@property(assign,readonly) struct _GEOTileKey { unsigned int x1 : 6; unsigned int x2 : 26; unsigned int x3 : 26; unsigned int x4 : 6; unsigned int x5 : 8; unsigned int x6 : 8; unsigned int x7 : 8; unsigned int x8 : 1; unsigned int x9 : 7; unsigned char x10[4]; } key;
-@property(assign,readonly) unsigned int provider;
-@property(assign,readonly) unsigned int set;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic, readonly) unsigned int edition;
+@property (nonatomic, readonly) NSString *etag;
+@property (nonatomic, readonly) struct _GEOTileKey { unsigned int x1 : 6; unsigned int x2 : 26; unsigned int x3 : 26; unsigned int x4 : 6; unsigned int x5 : 8; unsigned int x6 : 8; unsigned int x7 : 8; unsigned int x8 : 1; unsigned int x9 : 7; unsigned char x10[4]; } key;
+@property (nonatomic, readonly) unsigned int provider;
+@property (nonatomic, readonly) unsigned int set;
 
 - (id).cxx_construct;
 - (id)data;

@@ -8,9 +8,9 @@
     double _upperDistanceLimit;
 }
 
-@property(assign,readwrite) double lowerDistanceLimit;
-@property(assign,readwrite) bool shouldEnableLimits;
-@property(assign,readwrite) double upperDistanceLimit;
+@property (nonatomic) double lowerDistanceLimit;
+@property (nonatomic) bool shouldEnableLimits;
+@property (nonatomic) double upperDistanceLimit;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)jointWithBodyA:(id)arg1 bodyB:(id)arg2 anchor:(struct CGPoint { double x1; double x2; })arg3 axis:(struct CGVector { double x1; double x2; })arg4;

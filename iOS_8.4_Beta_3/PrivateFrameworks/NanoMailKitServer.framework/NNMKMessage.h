@@ -17,22 +17,22 @@
     NSArray *_to;
 }
 
-@property(assign,retain) NSString * accountId;
-@property(assign,retain) NSArray * cc;
-@property(assign,retain) NSString * conversationId;
-@property(assign,retain) NSDate * dateReceived;
-@property(assign,retain) NSDate * dateSent;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * from;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * messageId;
-@property(assign,retain) NSString * messageIdHeader;
-@property(assign,retain) NSString * preview;
-@property(assign,readwrite) unsigned long long status;
-@property(assign,retain) NSString * subject;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSArray * to;
+@property (nonatomic, retain) NSString *accountId;
+@property (nonatomic, retain) NSArray *cc;
+@property (nonatomic, retain) NSString *conversationId;
+@property (nonatomic, retain) NSDate *dateReceived;
+@property (nonatomic, retain) NSDate *dateSent;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *from;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *messageId;
+@property (nonatomic, retain) NSString *messageIdHeader;
+@property (nonatomic, retain) NSString *preview;
+@property (nonatomic) unsigned long long status;
+@property (nonatomic, retain) NSString *subject;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSArray *to;
 
 + (bool)supportsSecureCoding;
 

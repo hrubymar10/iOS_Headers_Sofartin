@@ -7,12 +7,12 @@
     UIWebView *_webView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UIScrollViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) UIWebView * webView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UIScrollViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) UIWebView *webView;
 
 - (id)delegate;
 - (void)forwardInvocation:(id)arg1;

@@ -11,7 +11,7 @@
     id _underlyingResult;
 }
 
-@property(assign,readonly) void* underlyingResult;
+@property (readonly) void*underlyingResult;
 
 - (bool)_adjustRangesWithOffset:(long long)arg1;
 - (id)components;

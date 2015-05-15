@@ -9,10 +9,10 @@
     unsigned long long _red;
 }
 
-@property(assign,readonly) double alpha;
-@property(assign,readonly) unsigned long long blue;
-@property(assign,readonly) unsigned long long green;
-@property(assign,readonly) unsigned long long red;
+@property (nonatomic, readonly) double alpha;
+@property (nonatomic, readonly) unsigned long long blue;
+@property (nonatomic, readonly) unsigned long long green;
+@property (nonatomic, readonly) unsigned long long red;
 
 - (double)alpha;
 - (unsigned long long)blue;

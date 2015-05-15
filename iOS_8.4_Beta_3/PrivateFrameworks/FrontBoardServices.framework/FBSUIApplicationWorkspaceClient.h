@@ -4,7 +4,7 @@
 
 @interface FBSUIApplicationWorkspaceClient : FBSWorkspaceClient
 
-@property(assign,readonly) <FBSUIApplicationWorkspaceClientDelegate> * delegate;
+@property (nonatomic, readonly) <FBSUIApplicationWorkspaceClientDelegate> *delegate;
 
 - (void)_queue_handleAssertionExpirationImminent:(id)arg1;
 - (void)_queue_handleExit:(id)arg1;

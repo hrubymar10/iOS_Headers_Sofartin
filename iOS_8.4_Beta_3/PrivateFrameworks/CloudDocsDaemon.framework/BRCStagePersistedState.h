@@ -8,7 +8,7 @@
     BRCAccountSession *_session;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 + (id)loadFromClientStateInSession:(id)arg1;
 + (bool)supportsSecureCoding;

@@ -4,9 +4,9 @@
 
 @interface RadioRevision : NSManagedObject
 
-@property(assign,readwrite) long long revisionID;
-@property(assign,readwrite) long long revisionType;
-@property(assign,readwrite) long long stationID;
+@property (nonatomic) long long revisionID;
+@property (nonatomic) long long revisionType;
+@property (nonatomic) long long stationID;
 
 - (long long)revisionID;
 - (long long)revisionType;

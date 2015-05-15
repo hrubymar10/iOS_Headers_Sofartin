@@ -11,19 +11,19 @@
     double _prevCurrentTime;
 }
 
-@property(assign,retain) AVAudioPlayer * audioPlayer;
-@property(assign,readwrite) id block;
-@property(assign,readonly) double currentTime;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKAudioPlayerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) CADisplayLink * displayLink;
-@property(assign,readonly) double duration;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CKMediaObject * mediaObject;
-@property(getter=isPlaying,assign,readonly) bool playing;
-@property(assign,readwrite) double prevCurrentTime;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) AVAudioPlayer *audioPlayer;
+@property (nonatomic) id block;
+@property (nonatomic, readonly) double currentTime;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKAudioPlayerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) CADisplayLink *displayLink;
+@property (nonatomic, readonly) double duration;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CKMediaObject *mediaObject;
+@property (getter=isPlaying, nonatomic, readonly) bool playing;
+@property (nonatomic) double prevCurrentTime;
+@property (readonly) Class superclass;
 
 - (id)audioPlayer;
 - (void)audioPlayerDidFinishPlaying:(id)arg1 successfully:(bool)arg2;

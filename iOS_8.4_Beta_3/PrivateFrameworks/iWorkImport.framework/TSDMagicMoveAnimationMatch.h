@@ -19,14 +19,14 @@
     bool _shouldDisableTextMorphing;
 }
 
-@property(assign,retain) TSDTextureSet * incomingTexture;
-@property(assign,readonly) bool isMatched;
-@property(assign,readwrite) bool isMorphMatch;
-@property(assign,readwrite) bool isTextStyleIdenticalExceptSize;
-@property(assign,readwrite) long long matchType;
-@property(assign,retain) TSDTextureSet * outgoingTexture;
-@property(assign,readwrite) double outgoingTextureActionBuildFinalAngle;
-@property(assign,readwrite) bool shouldDisableTextMorphing;
+@property (nonatomic, retain) TSDTextureSet *incomingTexture;
+@property (nonatomic, readonly) bool isMatched;
+@property (nonatomic) bool isMorphMatch;
+@property (nonatomic) bool isTextStyleIdenticalExceptSize;
+@property (nonatomic) long long matchType;
+@property (nonatomic, retain) TSDTextureSet *outgoingTexture;
+@property (nonatomic) double outgoingTextureActionBuildFinalAngle;
+@property (nonatomic) bool shouldDisableTextMorphing;
 
 + (unsigned long long)magicMoveMorphTexturesPerSecond;
 

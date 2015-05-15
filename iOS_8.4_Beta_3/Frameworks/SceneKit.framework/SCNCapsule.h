@@ -12,11 +12,11 @@
     id _reserved;
 }
 
-@property(assign,readwrite) double capRadius;
-@property(assign,readwrite) long long capSegmentCount;
-@property(assign,readwrite) double height;
-@property(assign,readwrite) long long heightSegmentCount;
-@property(assign,readwrite) long long radialSegmentCount;
+@property (nonatomic) double capRadius;
+@property (nonatomic) long long capSegmentCount;
+@property (nonatomic) double height;
+@property (nonatomic) long long heightSegmentCount;
+@property (nonatomic) long long radialSegmentCount;
 
 + (id)SCNJSExportProtocol;
 + (id)capsuleWithCapRadius:(double)arg1 height:(double)arg2;

@@ -6,7 +6,7 @@
     NSArray *_recipientNameStrings;
 }
 
-@property(assign,retain) NSArray * recipientNameStrings;
+@property (nonatomic, retain) NSArray *recipientNameStrings;
 
 - (void)dealloc;
 - (void)layoutSubviews;

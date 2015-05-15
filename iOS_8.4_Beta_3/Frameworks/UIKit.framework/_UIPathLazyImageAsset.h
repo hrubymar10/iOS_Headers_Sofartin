@@ -8,8 +8,8 @@
     bool _imagesHaveBeenLoaded;
 }
 
-@property(assign,readwrite) bool haveCGCacheImages;
-@property(assign,copy) NSArray * imagePaths;
+@property (nonatomic) bool haveCGCacheImages;
+@property (nonatomic, copy) NSArray *imagePaths;
 
 - (void)_clearResolvedImageResources;
 - (void)dealloc;

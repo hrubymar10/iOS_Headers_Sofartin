@@ -19,26 +19,26 @@
     NSMutableArray *_tos;
 }
 
-@property(assign,retain) NSString * accountId;
-@property(assign,retain) NSMutableArray * ccs;
-@property(assign,retain) NSString * conversationId;
-@property(assign,retain) NSData * dateReceived;
-@property(assign,retain) NSData * dateSent;
-@property(assign,retain) NSString * from;
-@property(assign,readonly) bool hasAccountId;
-@property(assign,readonly) bool hasConversationId;
-@property(assign,readonly) bool hasDateReceived;
-@property(assign,readonly) bool hasDateSent;
-@property(assign,readonly) bool hasFrom;
-@property(assign,readonly) bool hasMessageId;
-@property(assign,readonly) bool hasMessageIdHeader;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,readonly) bool hasSubject;
-@property(assign,retain) NSString * messageId;
-@property(assign,retain) NSString * messageIdHeader;
-@property(assign,readwrite) unsigned int status;
-@property(assign,retain) NSString * subject;
-@property(assign,retain) NSMutableArray * tos;
+@property (nonatomic, retain) NSString *accountId;
+@property (nonatomic, retain) NSMutableArray *ccs;
+@property (nonatomic, retain) NSString *conversationId;
+@property (nonatomic, retain) NSData *dateReceived;
+@property (nonatomic, retain) NSData *dateSent;
+@property (nonatomic, retain) NSString *from;
+@property (nonatomic, readonly) bool hasAccountId;
+@property (nonatomic, readonly) bool hasConversationId;
+@property (nonatomic, readonly) bool hasDateReceived;
+@property (nonatomic, readonly) bool hasDateSent;
+@property (nonatomic, readonly) bool hasFrom;
+@property (nonatomic, readonly) bool hasMessageId;
+@property (nonatomic, readonly) bool hasMessageIdHeader;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic, readonly) bool hasSubject;
+@property (nonatomic, retain) NSString *messageId;
+@property (nonatomic, retain) NSString *messageIdHeader;
+@property (nonatomic) unsigned int status;
+@property (nonatomic, retain) NSString *subject;
+@property (nonatomic, retain) NSMutableArray *tos;
 
 - (void).cxx_destruct;
 - (id)accountId;

@@ -7,7 +7,7 @@
     NSMutableArray *_posterRepresentations;
 }
 
-@property(assign,readonly) NSString * descriptionLeadInText;
+@property (nonatomic, readonly) NSString *descriptionLeadInText;
 
 - (void).cxx_destruct;
 - (id)descriptionLeadInText;

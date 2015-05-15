@@ -16,23 +16,23 @@
     NSTimer *_timer;
 }
 
-@property(setter=_setPrivateDelegate:,assign,readwrite) <PKPaymentAuthorizationControllerPrivateDelegate> * _privateDelegate;
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,readwrite) double connectionTimeout;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPaymentAuthorizationControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didPresent;
-@property(assign,retain) PKPaymentAuthorizationControllerExportedObject * exportedObject;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * hostIdentifier;
-@property(assign,retain) PKInAppPaymentService * inAppPaymentService;
-@property(assign,retain) NSXPCListener * listener;
-@property(assign,retain) PKPaymentRequest * paymentRequest;
-@property(assign,copy) id presentationCompletionBlock;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSTimer * timer;
+@property (setter=_setPrivateDelegate:, nonatomic) <PKPaymentAuthorizationControllerPrivateDelegate> *_privateDelegate;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (nonatomic) double connectionTimeout;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPaymentAuthorizationControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool didPresent;
+@property (nonatomic, retain) PKPaymentAuthorizationControllerExportedObject *exportedObject;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *hostIdentifier;
+@property (nonatomic, retain) PKInAppPaymentService *inAppPaymentService;
+@property (nonatomic, retain) NSXPCListener *listener;
+@property (nonatomic, retain) PKPaymentRequest *paymentRequest;
+@property (nonatomic, copy) id presentationCompletionBlock;
+@property (nonatomic) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSTimer *timer;
 
 + (bool)canMakePayments;
 + (bool)canMakePaymentsUsingNetworks:(id)arg1;

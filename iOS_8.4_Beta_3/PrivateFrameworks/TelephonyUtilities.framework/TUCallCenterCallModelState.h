@@ -4,9 +4,9 @@
 
 @interface TUCallCenterCallModelState : TUCallModelState
 
-@property(assign,retain) TUFaceTimeAudioCallModel * faceTimeAudioCallModel;
-@property(assign,retain) TUProxyCallModel * proxyCallModel;
-@property(assign,retain) TUTelephonyCallModel * telephonyCallModel;
+@property (nonatomic, readonly, retain) TUFaceTimeAudioCallModel *faceTimeAudioCallModel;
+@property (nonatomic, readonly, retain) TUProxyCallModel *proxyCallModel;
+@property (nonatomic, readonly, retain) TUTelephonyCallModel *telephonyCallModel;
 
 - (bool)_allCallsSupportCallModelType:(int)arg1;
 - (bool)_anyCallsSupportCallModelType:(int)arg1;

@@ -6,7 +6,7 @@
     NSMutableSet *_distinctRanges;
 }
 
-@property(assign,copy) NSMutableSet * distinctRanges;
+@property (nonatomic, copy) NSMutableSet *distinctRanges;
 
 + (id)disjointRangeWithDistinctRanges:(id)arg1;
 + (id)disjointRangeWithSingleRange:(id)arg1;

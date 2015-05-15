@@ -17,18 +17,18 @@
     int nextConnectionTypeIndex;
 }
 
-@property(assign,copy) id completionBlock;
-@property(assign,retain) NSURLConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct dispatch_queue_s { }* queue;
-@property(assign,retain) NSMutableData * receivedData;
-@property(assign,retain) NSMutableURLRequest * request;
-@property(assign,retain) NSURLResponse * response;
-@property(assign,readwrite) NSData * serializedCookies;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id completionBlock;
+@property (nonatomic, retain) NSURLConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct dispatch_queue_s { }*queue;
+@property (nonatomic, retain) NSMutableData *receivedData;
+@property (nonatomic, retain) NSMutableURLRequest *request;
+@property (nonatomic, retain) NSURLResponse *response;
+@property (nonatomic) NSData *serializedCookies;
+@property (readonly) Class superclass;
 
 + (id)connectionSettingsForServiceType:(long long)arg1;
 + (id)createSessionRequest;

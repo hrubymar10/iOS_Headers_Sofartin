@@ -13,12 +13,12 @@
     float _zoomLevel;
 }
 
-@property(assign,readwrite) struct { double x1; double x2; } centerCoordinate;
-@property(assign,readonly) NSDictionary * dictionaryRepresentation;
-@property(assign,readwrite) double pitch;
-@property(assign,readwrite) long long tileSize;
-@property(assign,readwrite) double yaw;
-@property(assign,readwrite) float zoomLevel;
+@property (nonatomic) struct { double x1; double x2; } centerCoordinate;
+@property (nonatomic, readonly) NSDictionary *dictionaryRepresentation;
+@property (nonatomic) double pitch;
+@property (nonatomic) long long tileSize;
+@property (nonatomic) double yaw;
+@property (nonatomic) float zoomLevel;
 
 - (id).cxx_construct;
 - (struct { double x1; double x2; })centerCoordinate;

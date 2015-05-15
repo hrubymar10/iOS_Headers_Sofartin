@@ -6,9 +6,9 @@
     AVPlayerItemTrackInternal *_playerItemTrack;
 }
 
-@property(assign,readonly) AVAssetTrack * assetTrack;
-@property(assign,readonly) float currentVideoFrameRate;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
+@property (nonatomic, readonly) AVAssetTrack *assetTrack;
+@property (nonatomic, readonly) float currentVideoFrameRate;
+@property (getter=isEnabled, nonatomic) bool enabled;
 
 + (id)playerItemTrackWithFigPlaybackItem:(struct OpaqueFigPlaybackItem { }*)arg1 readyForInspection:(bool)arg2 trackID:(int)arg3 asset:(id)arg4 playerItem:(id)arg5;
 

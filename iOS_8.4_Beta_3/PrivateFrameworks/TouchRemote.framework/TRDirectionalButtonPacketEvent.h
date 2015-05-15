@@ -8,9 +8,9 @@
     long long _gestureType;
 }
 
-@property(assign,readonly) long long buttonType;
-@property(assign,readonly) long long gestureState;
-@property(assign,readonly) long long gestureType;
+@property (nonatomic, readonly) long long buttonType;
+@property (nonatomic, readonly) long long gestureState;
+@property (nonatomic, readonly) long long gestureType;
 
 + (unsigned int)_packetEventType;
 

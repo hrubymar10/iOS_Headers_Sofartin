@@ -19,20 +19,20 @@
     PUMomentsZoomLevelManager *_zoomLevelManager;
 }
 
-@property(setter=_setTransitionLayout:,assign,retain) UICollectionViewTransitionLayout * _transitionLayout;
-@property(assign,retain) NSIndexPath * anchorItemIndexPath;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } currentInteractiveCenterOffset;
-@property(assign,readwrite) double currentInteractiveProgress;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInteractive,assign,readonly) bool interactive;
-@property(assign,readwrite) unsigned long long originZoomLevel;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long targetZoomLevel;
-@property(assign,retain) <UIViewControllerContextTransitioning> * transitionContext;
-@property(assign,readwrite) unsigned long long transitionState;
-@property(assign,readonly) PUMomentsZoomLevelManager * zoomLevelManager;
+@property (setter=_setTransitionLayout:, nonatomic, retain) UICollectionViewTransitionLayout *_transitionLayout;
+@property (nonatomic, retain) NSIndexPath *anchorItemIndexPath;
+@property (nonatomic) struct CGSize { double x1; double x2; } currentInteractiveCenterOffset;
+@property (nonatomic) double currentInteractiveProgress;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isInteractive, nonatomic, readonly) bool interactive;
+@property (nonatomic) unsigned long long originZoomLevel;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned long long targetZoomLevel;
+@property (nonatomic, retain) <UIViewControllerContextTransitioning> *transitionContext;
+@property (nonatomic) unsigned long long transitionState;
+@property (nonatomic, readonly) PUMomentsZoomLevelManager *zoomLevelManager;
 
 - (void).cxx_destruct;
 - (void)_setCurrentInteractiveCenterOffset:(struct CGSize { double x1; double x2; })arg1;

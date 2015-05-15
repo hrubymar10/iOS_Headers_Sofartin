@@ -10,11 +10,11 @@
     NSHashTable *_videoPreviewLayers;
 }
 
-@property(assign,readonly) long long configurationID;
-@property(assign,readonly) NSArray * connections;
-@property(assign,readonly) NSArray * inputs;
-@property(assign,readonly) NSArray * outputs;
-@property(assign,readonly) NSHashTable * videoPreviewLayers;
+@property (readonly) long long configurationID;
+@property (readonly) NSArray *connections;
+@property (readonly) NSArray *inputs;
+@property (readonly) NSArray *outputs;
+@property (readonly) NSHashTable *videoPreviewLayers;
 
 - (long long)configurationID;
 - (id)connections;

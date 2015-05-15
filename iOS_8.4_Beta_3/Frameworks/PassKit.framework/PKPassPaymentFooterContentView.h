@@ -9,10 +9,10 @@
     PKPaymentPass *_pass;
 }
 
-@property(assign,readonly) UIView * bottomRule;
-@property(assign,readonly) UIButton * infoButton;
-@property(assign,readonly) bool isVisibleAsFooter;
-@property(assign,readonly) PKPaymentPass * pass;
+@property (nonatomic, readonly) UIView *bottomRule;
+@property (nonatomic, readonly) UIButton *infoButton;
+@property (nonatomic, readonly) bool isVisibleAsFooter;
+@property (nonatomic, readonly) PKPaymentPass *pass;
 
 - (void)_infoButtonPressed:(id)arg1;
 - (id)bottomRule;

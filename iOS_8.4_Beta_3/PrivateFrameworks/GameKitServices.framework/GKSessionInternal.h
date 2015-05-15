@@ -56,24 +56,24 @@
     struct OpaqueGCKSession { } *sessionRef;
 }
 
-@property(assign,readwrite) struct OpaqueAGPSession { }* agpSessionRef;
-@property(getter=isAvailable,assign,readwrite) bool available;
-@property(getter=isBusy,assign,readwrite) bool busy;
-@property(assign,retain) GKConnection * connection;
-@property(assign,readonly) id dataReceiveHandler;
-@property(assign,readwrite) <GKSessionDelegate> * delegate;
-@property(assign,readwrite) double disconnectTimeout;
-@property(assign,readonly) NSString * displayName;
-@property(assign,copy) NSString * domain;
-@property(assign,readwrite) unsigned long long maxPeers;
-@property(assign,readonly) NSString * peerID;
-@property(assign,readwrite) unsigned long long port;
-@property(assign,readwrite) <GKSessionPrivateDelegate> * privateDelegate;
-@property(assign,copy) NSString * serviceType;
-@property(assign,readonly) NSString * sessionID;
-@property(assign,readonly) int sessionMode;
-@property(assign,readwrite) struct OpaqueGCKSession { }* sessionRef;
-@property(assign,readwrite) bool wifiEnabled;
+@property (nonatomic) struct OpaqueAGPSession { }*agpSessionRef;
+@property (getter=isAvailable) bool available;
+@property (getter=isBusy) bool busy;
+@property (readonly, retain) GKConnection *connection;
+@property (nonatomic, readonly) id dataReceiveHandler;
+@property <GKSessionDelegate> *delegate;
+@property double disconnectTimeout;
+@property (readonly) NSString *displayName;
+@property (nonatomic, copy) NSString *domain;
+@property (nonatomic) unsigned long long maxPeers;
+@property (readonly) NSString *peerID;
+@property (nonatomic) unsigned long long port;
+@property <GKSessionPrivateDelegate> *privateDelegate;
+@property (nonatomic, copy) NSString *serviceType;
+@property (readonly) NSString *sessionID;
+@property (readonly) int sessionMode;
+@property (nonatomic) struct OpaqueGCKSession { }*sessionRef;
+@property bool wifiEnabled;
 
 - (bool)acceptConnectionFromPeer:(id)arg1 error:(id*)arg2;
 - (struct OpaqueAGPSession { }*)agpSessionRef;

@@ -9,10 +9,10 @@
     long long _status;
 }
 
-@property(assign,readwrite) bool animated;
-@property(assign,readwrite) long long dataType;
-@property(assign,retain) NSError * error;
-@property(assign,readwrite) long long status;
+@property (nonatomic) bool animated;
+@property (nonatomic) long long dataType;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic) long long status;
 
 - (bool)animated;
 - (long long)dataType;

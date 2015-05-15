@@ -8,7 +8,7 @@
     ACAccount *_primaryAppleAccount;
 }
 
-@property(assign,readonly) ACAccount * primaryAppleAccount;
+@property (readonly) ACAccount *primaryAppleAccount;
 
 + (id)sharedAccountStore;
 

@@ -13,12 +13,12 @@
     long long _serviceType;
 }
 
-@property(setter=_setListenerID:,assign,copy) NSString * _listenerID;
-@property(assign,retain) NSString * _logName;
-@property(assign,retain) NSString * _serviceName;
-@property(assign,readwrite) unsigned int caps;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) long long serviceType;
+@property (setter=_setListenerID:, nonatomic, copy) NSString *_listenerID;
+@property (nonatomic, retain) NSString *_logName;
+@property (nonatomic, readonly, retain) NSString *_serviceName;
+@property (nonatomic) unsigned int caps;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) long long serviceType;
 
 - (void)_disconnectFromDaemon;
 - (void)_handleDaemonConnected:(id)arg1;

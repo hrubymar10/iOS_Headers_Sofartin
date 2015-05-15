@@ -8,7 +8,7 @@
     unsigned long long _maxLength;
 }
 
-@property(assign,readwrite) unsigned long long maxLength;
+@property (nonatomic) unsigned long long maxLength;
 
 + (id)asciiFormatter:(unsigned long long)arg1;
 + (id)asciiSet;

@@ -6,7 +6,7 @@
     MTLDepthStencilDescriptor *_descriptor;
 }
 
-@property(assign,readonly) MTLDepthStencilDescriptor * descriptor;
+@property (nonatomic, readonly) MTLDepthStencilDescriptor *descriptor;
 
 - (void).cxx_destruct;
 - (id)description;

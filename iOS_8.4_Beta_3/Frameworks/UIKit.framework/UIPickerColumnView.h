@@ -45,17 +45,17 @@
     UIPickerTableView *_topTable;
 }
 
-@property(getter=_textColor,setter=_setTextColor:,assign,retain) UIColor * _textColor;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double leftHitTestExtension;
-@property(assign,readwrite) struct CATransform3D { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; double x10; double x11; double x12; double x13; double x14; double x15; double x16; } perspectiveTransform;
-@property(assign,readwrite) double rightHitTestExtension;
-@property(assign,readwrite) double rowHeight;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } selectionBarRect;
-@property(assign,readonly) long long selectionBarRow;
-@property(assign,readonly) Class superclass;
+@property (getter=_textColor, setter=_setTextColor:, nonatomic, retain) UIColor *_textColor;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double leftHitTestExtension;
+@property (nonatomic) struct CATransform3D { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; double x10; double x11; double x12; double x13; double x14; double x15; double x16; } perspectiveTransform;
+@property (nonatomic) double rightHitTestExtension;
+@property (nonatomic) double rowHeight;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } selectionBarRect;
+@property (nonatomic, readonly) long long selectionBarRow;
+@property (readonly) Class superclass;
 
 - (id)_allVisibleCells;
 - (void)_centerTableInContainer:(id)arg1;

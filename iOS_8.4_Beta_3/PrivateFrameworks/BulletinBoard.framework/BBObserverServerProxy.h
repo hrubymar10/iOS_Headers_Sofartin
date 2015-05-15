@@ -10,9 +10,9 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,readwrite) BBObserver * observerWeak;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (nonatomic) BBObserver *observerWeak;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 + (id)xpcInterface;
 

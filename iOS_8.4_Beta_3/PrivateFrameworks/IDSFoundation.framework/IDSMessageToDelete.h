@@ -8,9 +8,9 @@
     NSString *_guid;
 }
 
-@property(setter=setAlternateGUID:,assign,retain) NSString * alternateGUID;
-@property(assign,readwrite) unsigned int dataProtectionClass;
-@property(setter=setGUID:,assign,retain) NSString * guid;
+@property (setter=setAlternateGUID:, retain) NSString *alternateGUID;
+@property unsigned int dataProtectionClass;
+@property (setter=setGUID:, retain) NSString *guid;
 
 - (id)alternateGUID;
 - (unsigned int)dataProtectionClass;

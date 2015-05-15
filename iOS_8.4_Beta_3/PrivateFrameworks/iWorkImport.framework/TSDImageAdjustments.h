@@ -19,20 +19,20 @@
     double mTopLevel;
 }
 
-@property(assign,readonly) double bottomLevel;
-@property(assign,readonly) double contrast;
-@property(assign,readonly) double denoise;
-@property(assign,readonly) bool enhance;
-@property(assign,readonly) double exposure;
-@property(assign,readonly) double gamma;
-@property(assign,readonly) double highlights;
-@property(assign,readonly) bool representsSageAdjustments;
-@property(assign,readonly) double saturation;
-@property(assign,readonly) double shadows;
-@property(assign,readonly) double sharpness;
-@property(assign,readonly) double temperature;
-@property(assign,readonly) double tint;
-@property(assign,readonly) double topLevel;
+@property (nonatomic, readonly) double bottomLevel;
+@property (nonatomic, readonly) double contrast;
+@property (nonatomic, readonly) double denoise;
+@property (nonatomic, readonly) bool enhance;
+@property (nonatomic, readonly) double exposure;
+@property (nonatomic, readonly) double gamma;
+@property (nonatomic, readonly) double highlights;
+@property (nonatomic, readonly) bool representsSageAdjustments;
+@property (nonatomic, readonly) double saturation;
+@property (nonatomic, readonly) double shadows;
+@property (nonatomic, readonly) double sharpness;
+@property (nonatomic, readonly) double temperature;
+@property (nonatomic, readonly) double tint;
+@property (nonatomic, readonly) double topLevel;
 
 - (double)bottomLevel;
 - (double)contrast;

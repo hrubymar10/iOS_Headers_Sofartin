@@ -4,19 +4,19 @@
 
 @interface SAConnectionPolicyRoute : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * cname;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * host;
-@property(assign,copy) NSNumber * mptcp;
-@property(assign,readwrite) long long priority;
-@property(assign,copy) NSString * resolver;
-@property(assign,copy) NSString * resolverProtocol;
-@property(assign,copy) NSString * routeId;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSNumber * timeout;
-@property(assign,copy) NSString * type;
+@property (nonatomic, copy) NSString *cname;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *host;
+@property (nonatomic, copy) NSNumber *mptcp;
+@property (nonatomic) long long priority;
+@property (nonatomic, copy) NSString *resolver;
+@property (nonatomic, copy) NSString *resolverProtocol;
+@property (nonatomic, copy) NSString *routeId;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSNumber *timeout;
+@property (nonatomic, copy) NSString *type;
 
 + (id)connectionPolicyRoute;
 + (id)connectionPolicyRouteWithDictionary:(id)arg1 context:(id)arg2;

@@ -9,12 +9,12 @@
     NSData *_shortSharingTokenData;
 }
 
-@property(assign,retain) NSData * privateTokenData;
-@property(assign,retain) NSData * publicTokenData;
-@property(assign,retain) NSString * routingKey;
-@property(assign,readonly) NSString * shortSharingToken;
-@property(assign,retain) NSData * shortSharingTokenData;
-@property(assign,readonly) NSData * shortSharingTokenHashData;
+@property (nonatomic, retain) NSData *privateTokenData;
+@property (nonatomic, retain) NSData *publicTokenData;
+@property (nonatomic, retain) NSString *routingKey;
+@property (nonatomic, readonly) NSString *shortSharingToken;
+@property (nonatomic, retain) NSData *shortSharingTokenData;
+@property (nonatomic, readonly) NSData *shortSharingTokenHashData;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

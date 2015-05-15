@@ -6,8 +6,8 @@
     NSMutableDictionary *_defaults;
 }
 
-@property(assign,retain) NSDictionary * diskUsageInfo;
-@property(assign,readwrite) bool hasCompletedDataMigration;
+@property (nonatomic, retain) NSDictionary *diskUsageInfo;
+@property (nonatomic) bool hasCompletedDataMigration;
 
 + (id)readOnlyDefaults;
 + (void)synchronize;

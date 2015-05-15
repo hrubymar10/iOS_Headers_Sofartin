@@ -8,9 +8,9 @@
     NSURL *_persistentURL;
 }
 
-@property(assign,retain) NSData * fontData;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSURL * persistentURL;
+@property (nonatomic, retain) NSData *fontData;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSURL *persistentURL;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

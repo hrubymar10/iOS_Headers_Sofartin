@@ -6,7 +6,7 @@
     bool _overlay;
 }
 
-@property(getter=isOverlay,assign,readwrite) bool overlay;
+@property (getter=isOverlay, nonatomic) bool overlay;
 
 - (bool)isOverlay;
 - (void)setOverlay:(bool)arg1;

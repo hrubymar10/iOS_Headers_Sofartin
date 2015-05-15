@@ -13,14 +13,14 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIProgressView * progressView;
-@property(assign,retain) UILabel * subtitle2Label;
-@property(assign,retain) UILabel * subtitleLabel;
-@property(assign,retain) NSLayoutConstraint * thumbnailCenterHeightConstraint;
-@property(assign,retain) UIView * thumbnailCenterView;
-@property(assign,retain) NSLayoutConstraint * thumbnailCenterWidthConstraint;
-@property(assign,retain) UIImageView * thumbnailView;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) UIProgressView *progressView;
+@property (nonatomic, retain) UILabel *subtitle2Label;
+@property (nonatomic, retain) UILabel *subtitleLabel;
+@property (nonatomic, retain) NSLayoutConstraint *thumbnailCenterHeightConstraint;
+@property (nonatomic, retain) UIView *thumbnailCenterView;
+@property (nonatomic, retain) NSLayoutConstraint *thumbnailCenterWidthConstraint;
+@property (nonatomic, retain) UIImageView *thumbnailView;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 + (struct CGSize { double x1; double x2; })defaultSizeForTraits:(id)arg1;
 + (id)folderIconForTraits:(id)arg1;

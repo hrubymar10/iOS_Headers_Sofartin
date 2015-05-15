@@ -8,8 +8,8 @@
     NSMutableSet *_observers;
 }
 
-@property(assign,retain) CADisplayLink * displayLink;
-@property(assign,retain) NSMutableSet * observers;
+@property (nonatomic, retain) CADisplayLink *displayLink;
+@property (nonatomic, retain) NSMutableSet *observers;
 
 + (id)sharedTimer;
 

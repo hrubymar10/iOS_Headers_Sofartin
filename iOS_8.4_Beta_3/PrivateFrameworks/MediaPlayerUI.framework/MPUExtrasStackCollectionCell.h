@@ -10,9 +10,9 @@
     MPUExtrasGridElementViewController *_viewController;
 }
 
-@property(assign,retain) MPUExtrasStackTemplateViewController * parentViewController;
-@property(assign,readonly) MPUExtrasGridSectionHeaderStyle * sectionStyle;
-@property(assign,retain) MPUExtrasGridElementViewController * viewController;
+@property (nonatomic, retain) MPUExtrasStackTemplateViewController *parentViewController;
+@property (nonatomic, readonly) MPUExtrasGridSectionHeaderStyle *sectionStyle;
+@property (nonatomic, retain) MPUExtrasGridElementViewController *viewController;
 
 - (void).cxx_destruct;
 - (id)parentViewController;

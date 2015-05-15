@@ -13,14 +13,14 @@
     CPLResource *_secondaryAdjustmentData;
 }
 
-@property(assign,retain) CPLResource * baseImage;
-@property(assign,readwrite) bool hasAutoEnhance;
-@property(assign,readwrite) bool hasOtherAdjustments;
-@property(assign,readwrite) bool hasRedEye;
-@property(assign,readwrite) bool hasSimpleLightenDarken;
-@property(assign,retain) CPLResource * largeAdjustmentData;
-@property(assign,retain) CPLAdjustments * otherAdjustments;
-@property(assign,retain) CPLResource * secondaryAdjustmentData;
+@property (nonatomic, retain) CPLResource *baseImage;
+@property (nonatomic) bool hasAutoEnhance;
+@property (nonatomic) bool hasOtherAdjustments;
+@property (nonatomic) bool hasRedEye;
+@property (nonatomic) bool hasSimpleLightenDarken;
+@property (nonatomic, retain) CPLResource *largeAdjustmentData;
+@property (nonatomic, retain) CPLAdjustments *otherAdjustments;
+@property (nonatomic, retain) CPLResource *secondaryAdjustmentData;
 
 - (void).cxx_destruct;
 - (id)baseImage;

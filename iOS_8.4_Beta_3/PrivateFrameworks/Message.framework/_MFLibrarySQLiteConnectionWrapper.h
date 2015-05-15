@@ -10,10 +10,10 @@
     bool _writer;
 }
 
-@property(assign,readonly) MFProtectedSQLiteConnection * connection;
-@property(assign,readwrite) bool invalid;
-@property(assign,readonly) unsigned long long refcount;
-@property(assign,readonly) bool writer;
+@property (nonatomic, readonly) MFProtectedSQLiteConnection *connection;
+@property (nonatomic) bool invalid;
+@property (nonatomic, readonly) unsigned long long refcount;
+@property (nonatomic, readonly) bool writer;
 
 + (id)wrapperWithConnection:(id)arg1 forWriting:(bool)arg2;
 

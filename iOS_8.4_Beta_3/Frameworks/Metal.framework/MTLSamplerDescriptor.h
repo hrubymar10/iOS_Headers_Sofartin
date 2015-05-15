@@ -6,17 +6,17 @@
     struct MTLSamplerDescriptorPrivate { union { struct { unsigned int x_1_2_1 : 2; unsigned int x_1_2_2 : 2; unsigned int x_1_2_3 : 2; unsigned int x_1_2_4 : 3; unsigned int x_1_2_5 : 3; unsigned int x_1_2_6 : 3; unsigned int x_1_2_7 : 1; } x_1_1_1; unsigned int x_1_1_2; } x1; union { unsigned int x_2_1_1; float x_2_1_2; } x2; union { unsigned int x_3_1_1; float x_3_1_2; } x3; union { unsigned int x_4_1_1; float x_4_1_2; } x4; unsigned long long x5; id x6; } *_private;
 }
 
-@property(assign,copy) NSString * label;
-@property(assign,readwrite) float lodMaxClamp;
-@property(assign,readwrite) float lodMinClamp;
-@property(assign,readwrite) unsigned long long magFilter;
-@property(assign,readwrite) unsigned long long maxAnisotropy;
-@property(assign,readwrite) unsigned long long minFilter;
-@property(assign,readwrite) unsigned long long mipFilter;
-@property(assign,readwrite) bool normalizedCoordinates;
-@property(assign,readwrite) unsigned long long rAddressMode;
-@property(assign,readwrite) unsigned long long sAddressMode;
-@property(assign,readwrite) unsigned long long tAddressMode;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic) float lodMaxClamp;
+@property (nonatomic) float lodMinClamp;
+@property (nonatomic) unsigned long long magFilter;
+@property (nonatomic) unsigned long long maxAnisotropy;
+@property (nonatomic) unsigned long long minFilter;
+@property (nonatomic) unsigned long long mipFilter;
+@property (nonatomic) bool normalizedCoordinates;
+@property (nonatomic) unsigned long long rAddressMode;
+@property (nonatomic) unsigned long long sAddressMode;
+@property (nonatomic) unsigned long long tAddressMode;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

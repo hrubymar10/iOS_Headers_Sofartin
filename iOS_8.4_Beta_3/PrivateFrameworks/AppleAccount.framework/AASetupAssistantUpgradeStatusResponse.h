@@ -4,7 +4,7 @@
 
 @interface AASetupAssistantUpgradeStatusResponse : AAResponse
 
-@property(assign,readonly) NSNumber * upgradeStatus;
+@property (nonatomic, readonly) NSNumber *upgradeStatus;
 
 - (id)upgradeStatus;
 

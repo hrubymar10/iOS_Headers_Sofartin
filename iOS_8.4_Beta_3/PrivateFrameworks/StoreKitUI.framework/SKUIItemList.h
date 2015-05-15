@@ -10,16 +10,16 @@
     NSSet *_unavailableItemIdentifiers;
 }
 
-@property(assign,readonly) NSMutableDictionary * cacheRepresentation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * items;
-@property(assign,copy) NSString * seeAllTitle;
-@property(assign,copy) NSString * seeAllURLString;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSSet * unavailableItemIdentifiers;
+@property (nonatomic, readonly) NSMutableDictionary *cacheRepresentation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *items;
+@property (nonatomic, copy) NSString *seeAllTitle;
+@property (nonatomic, copy) NSString *seeAllURLString;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSSet *unavailableItemIdentifiers;
 
 - (void).cxx_destruct;
 - (void)addItem:(id)arg1;

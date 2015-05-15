@@ -13,7 +13,7 @@
     SPSearchResultSection *_searchResults;
 }
 
-@property(assign,copy) id completion;
+@property (nonatomic, copy) id completion;
 
 - (void)_callCompletionIfNecessary;
 - (void)_cleanup;

@@ -10,11 +10,11 @@
     double _transitionProgress;
 }
 
-@property(assign,retain) UIColor * backdropColor;
-@property(assign,copy) NSString * backdropGroupName;
-@property(assign,readwrite) long long backdropStyle;
-@property(assign,readwrite) bool hidesBackdropView;
-@property(assign,readwrite) double transitionProgress;
+@property (nonatomic, retain) UIColor *backdropColor;
+@property (nonatomic, copy) NSString *backdropGroupName;
+@property (nonatomic) long long backdropStyle;
+@property (nonatomic) bool hidesBackdropView;
+@property (nonatomic) double transitionProgress;
 
 - (void).cxx_destruct;
 - (id)backdropColor;

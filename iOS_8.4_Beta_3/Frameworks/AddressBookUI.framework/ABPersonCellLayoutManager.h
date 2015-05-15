@@ -7,8 +7,8 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,readwrite) <ABPersonCellLayoutManagerDelegate> * delegate;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
+@property (nonatomic) <ABPersonCellLayoutManagerDelegate> *delegate;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
 
 - (double)accessoryViewInsetForBounds:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })backgroundEndingRectForCell:(id)arg1 forNewEditingState:(bool)arg2;

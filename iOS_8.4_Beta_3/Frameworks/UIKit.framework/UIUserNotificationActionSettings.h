@@ -7,8 +7,8 @@
     NSString *_category;
 }
 
-@property(assign,copy) NSDictionary * actionsByContext;
-@property(assign,copy) NSString * category;
+@property (nonatomic, copy) NSDictionary *actionsByContext;
+@property (nonatomic, copy) NSString *category;
 
 + (bool)supportsSecureCoding;
 

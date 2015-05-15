@@ -20,30 +20,30 @@
     NSAttributedString *_transcriptText;
 }
 
-@property(assign,retain) IMTranscriptChatItem * IMChatItem;
-@property(assign,readonly) unsigned char attachmentContiguousType;
-@property(assign,readonly) bool canCopy;
-@property(assign,readonly) bool canDelete;
-@property(assign,readonly) bool canExport;
-@property(assign,readonly) bool canForward;
-@property(assign,readonly) bool canSendAsTextMessage;
-@property(assign,readonly) Class cellClass;
-@property(assign,copy) NSString * cellIdentifier;
-@property(assign,retain) UIImage * contactImage;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,readonly) unsigned char contiguousType;
-@property(assign,readonly) bool displayDuringSend;
-@property(assign,readonly) bool hasTail;
-@property(assign,readonly) bool isEditable;
-@property(assign,readwrite) double maxWidth;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(getter=isSizeLoaded,assign,readwrite) bool sizeLoaded;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textAlignmentInsets;
-@property(assign,copy) NSAttributedString * transcriptDrawerText;
-@property(assign,readonly) BOOL transcriptOrientation;
-@property(assign,copy) NSAttributedString * transcriptText;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } transcriptTextAlignmentInsets;
-@property(assign,readonly) bool wantsDrawerLayout;
+@property (nonatomic, retain) IMTranscriptChatItem *IMChatItem;
+@property (nonatomic, readonly) unsigned char attachmentContiguousType;
+@property (nonatomic, readonly) bool canCopy;
+@property (nonatomic, readonly) bool canDelete;
+@property (nonatomic, readonly) bool canExport;
+@property (nonatomic, readonly) bool canForward;
+@property (nonatomic, readonly) bool canSendAsTextMessage;
+@property (nonatomic, readonly) Class cellClass;
+@property (nonatomic, readonly, copy) NSString *cellIdentifier;
+@property (nonatomic, readonly, retain) UIImage *contactImage;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic, readonly) unsigned char contiguousType;
+@property (nonatomic, readonly) bool displayDuringSend;
+@property (nonatomic, readonly) bool hasTail;
+@property (nonatomic, readonly) bool isEditable;
+@property (nonatomic) double maxWidth;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (getter=isSizeLoaded, nonatomic) bool sizeLoaded;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textAlignmentInsets;
+@property (nonatomic, copy) NSAttributedString *transcriptDrawerText;
+@property (nonatomic, readonly) BOOL transcriptOrientation;
+@property (nonatomic, copy) NSAttributedString *transcriptText;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } transcriptTextAlignmentInsets;
+@property (nonatomic, readonly) bool wantsDrawerLayout;
 
 + (id)chatItemWithIMChatItem:(id)arg1 rightBalloonMaxWidth:(double)arg2 leftBalloonMaxWidth:(double)arg3 otherMaxWidth:(double)arg4;
 

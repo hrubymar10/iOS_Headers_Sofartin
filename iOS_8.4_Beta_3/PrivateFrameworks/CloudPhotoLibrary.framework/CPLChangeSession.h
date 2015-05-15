@@ -10,15 +10,15 @@
     unsigned long long _state;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CPLLibraryManager * libraryManager;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readonly) NSString * sessionIdentifier;
-@property(assign,readonly) NSProgress * sessionProgress;
-@property(assign,readwrite) unsigned long long state;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CPLLibraryManager *libraryManager;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (nonatomic, readonly) NSString *sessionIdentifier;
+@property (nonatomic, readonly) NSProgress *sessionProgress;
+@property (nonatomic) unsigned long long state;
+@property (readonly) Class superclass;
 
 + (id)platformImplementationProtocol;
 + (id)stateDescriptionForState:(unsigned long long)arg1;

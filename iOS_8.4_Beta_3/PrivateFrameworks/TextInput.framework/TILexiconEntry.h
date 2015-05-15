@@ -7,8 +7,8 @@
     NSString *_userInput;
 }
 
-@property(assign,readonly) NSString * documentText;
-@property(assign,readonly) NSString * userInput;
+@property (nonatomic, readonly) NSString *documentText;
+@property (nonatomic, readonly) NSString *userInput;
 
 + (id)entryWithDocumentText:(id)arg1 userInput:(id)arg2;
 + (bool)supportsSecureCoding;

@@ -7,8 +7,8 @@
     UIWebView *_webView;
 }
 
-@property(assign,readwrite) <NSObject><UIWebPDFViewHandlerDelegate> * delegate;
-@property(assign,readwrite) UIWebView * webView;
+@property (nonatomic) <NSObject><UIWebPDFViewHandlerDelegate> *delegate;
+@property (nonatomic) UIWebView *webView;
 
 - (id)delegate;
 - (void)forwardInvocation:(id)arg1;

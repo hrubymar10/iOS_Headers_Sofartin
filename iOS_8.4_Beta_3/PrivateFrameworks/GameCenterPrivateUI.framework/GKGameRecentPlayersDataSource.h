@@ -7,8 +7,8 @@
     GKPlayer *_player;
 }
 
-@property(assign,retain) GKGame * game;
-@property(assign,retain) GKPlayer * player;
+@property (nonatomic, retain) GKGame *game;
+@property (nonatomic, retain) GKPlayer *player;
 
 - (void)_preloadImagesForItems:(id)arg1;
 - (id)collectionView:(id)arg1 cellForItemAtIndexPath:(id)arg2;

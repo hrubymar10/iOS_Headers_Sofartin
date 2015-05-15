@@ -6,14 +6,14 @@
     NSURLProtectionSpaceInternal *_internal;
 }
 
-@property(assign,copy) NSString * authenticationMethod;
-@property(assign,copy) NSString * host;
-@property(assign,readonly) bool isProxy;
-@property(assign,readonly) long long port;
-@property(assign,copy) NSString * protocol;
-@property(assign,copy) NSString * proxyType;
-@property(assign,copy) NSString * realm;
-@property(assign,readonly) bool receivesCredentialSecurely;
+@property (readonly, copy) NSString *authenticationMethod;
+@property (readonly, copy) NSString *host;
+@property (readonly) bool isProxy;
+@property (readonly) long long port;
+@property (readonly, copy) NSString *protocol;
+@property (readonly, copy) NSString *proxyType;
+@property (readonly, copy) NSString *realm;
+@property (readonly) bool receivesCredentialSecurely;
 
 + (id)safari_HTMLFormProtectionSpaceForURL:(id)arg1;
 + (bool)supportsSecureCoding;

@@ -19,14 +19,14 @@
     bool _usesLockupTitle;
 }
 
-@property(getter=_usesLockupTitle,assign,readonly) bool _usesLockupTitle;
-@property(assign,readonly) NSAttributedString * bodyAttributedText;
-@property(assign,readonly) NSString * bodyText;
-@property(assign,readonly) struct SKUIEditorialStyle { long long x1; long long x2; float x3; float x4; long long x5; float x6; float x7; } editorialStyle;
-@property(assign,readonly) NSArray * links;
-@property(assign,readonly) long long maximumBodyLines;
-@property(assign,readonly) NSString * titleText;
-@property(assign,readonly) SKUILabelViewElement * viewElement;
+@property (getter=_usesLockupTitle, nonatomic, readonly) bool _usesLockupTitle;
+@property (nonatomic, readonly) NSAttributedString *bodyAttributedText;
+@property (nonatomic, readonly) NSString *bodyText;
+@property (nonatomic, readonly) struct SKUIEditorialStyle { long long x1; long long x2; float x3; float x4; long long x5; float x6; float x7; } editorialStyle;
+@property (nonatomic, readonly) NSArray *links;
+@property (nonatomic, readonly) long long maximumBodyLines;
+@property (nonatomic, readonly) NSString *titleText;
+@property (nonatomic, readonly) SKUILabelViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (void)_setTitleText:(id)arg1;

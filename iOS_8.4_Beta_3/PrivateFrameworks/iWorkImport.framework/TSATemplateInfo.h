@@ -7,14 +7,14 @@
     NSString *_identifier;
 }
 
-@property(assign,copy) NSString * displayName;
-@property(assign,readonly) NSURL * documentURL;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) bool isAvailable;
-@property(assign,readonly) bool isUserTemplate;
-@property(assign,readonly) NSBundle * localizationBundle;
-@property(assign,readonly) UIImage * previewImage;
-@property(assign,readonly) NSURL * previewImageURL;
+@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic, readonly) NSURL *documentURL;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) bool isAvailable;
+@property (nonatomic, readonly) bool isUserTemplate;
+@property (nonatomic, readonly) NSBundle *localizationBundle;
+@property (nonatomic, readonly) UIImage *previewImage;
+@property (nonatomic, readonly) NSURL *previewImageURL;
 
 - (void)dealloc;
 - (id)displayName;

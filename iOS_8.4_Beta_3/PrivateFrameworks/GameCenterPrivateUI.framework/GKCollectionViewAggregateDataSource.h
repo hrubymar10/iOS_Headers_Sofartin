@@ -9,10 +9,10 @@
     unsigned long long _sectionCount;
 }
 
-@property(assign,retain) NSMapTable * dataSourceToMappings;
-@property(assign,retain) NSMutableDictionary * globalSectionToMappings;
-@property(assign,retain) NSMutableArray * mappings;
-@property(assign,readwrite) unsigned long long sectionCount;
+@property (nonatomic, retain) NSMapTable *dataSourceToMappings;
+@property (nonatomic, retain) NSMutableDictionary *globalSectionToMappings;
+@property (nonatomic, retain) NSMutableArray *mappings;
+@property (nonatomic) unsigned long long sectionCount;
 
 - (id)_gkDescription;
 - (id)_gkDescriptionWithChildren:(int)arg1;

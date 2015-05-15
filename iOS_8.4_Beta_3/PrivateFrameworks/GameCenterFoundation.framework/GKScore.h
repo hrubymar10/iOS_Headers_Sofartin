@@ -8,20 +8,20 @@
     bool _shouldSetDefaultLeaderboard;
 }
 
-@property(assign,copy) NSString * category;
-@property(assign,readwrite) unsigned long long context;
-@property(assign,retain) NSDate * date;
-@property(assign,copy) NSString * formattedValue;
-@property(assign,retain) GKGame * game;
-@property(assign,retain) NSString * groupLeaderboardIdentifier;
-@property(assign,retain) GKScoreInternal * internal;
-@property(assign,copy) NSString * leaderboardIdentifier;
-@property(assign,retain) GKPlayer * player;
-@property(assign,retain) NSString * playerID;
-@property(assign,readwrite) long long rank;
-@property(assign,readwrite) bool shouldSetDefaultLeaderboard;
-@property(assign,readwrite) long long value;
-@property(assign,readwrite) bool valueSet;
+@property (nonatomic, copy) NSString *category;
+@property (nonatomic) unsigned long long context;
+@property (nonatomic, readonly, retain) NSDate *date;
+@property (nonatomic, copy) NSString *formattedValue;
+@property (nonatomic, retain) GKGame *game;
+@property (nonatomic, retain) NSString *groupLeaderboardIdentifier;
+@property (retain) GKScoreInternal *internal;
+@property (nonatomic, copy) NSString *leaderboardIdentifier;
+@property (nonatomic, readonly, retain) GKPlayer *player;
+@property (readonly, retain) NSString *playerID;
+@property (nonatomic) long long rank;
+@property (nonatomic) bool shouldSetDefaultLeaderboard;
+@property (nonatomic) long long value;
+@property bool valueSet;
 
 + (id)instanceMethodSignatureForSelector:(SEL)arg1;
 + (bool)instancesRespondToSelector:(SEL)arg1;

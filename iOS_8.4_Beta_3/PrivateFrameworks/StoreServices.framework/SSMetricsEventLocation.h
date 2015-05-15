@@ -8,9 +8,9 @@
     NSMutableDictionary *_values;
 }
 
-@property(assign,readwrite) long long locationPosition;
-@property(assign,copy) NSString * locationType;
-@property(assign,readonly) NSDictionary * reportingDictionary;
+@property (nonatomic) long long locationPosition;
+@property (nonatomic, copy) NSString *locationType;
+@property (nonatomic, readonly) NSDictionary *reportingDictionary;
 
 - (void).cxx_destruct;
 - (long long)locationPosition;

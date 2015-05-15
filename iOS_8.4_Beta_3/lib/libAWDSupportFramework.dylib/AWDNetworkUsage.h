@@ -18,18 +18,18 @@
     unsigned long long _wifiOut;
 }
 
-@property(assign,retain) NSString * bundleName;
-@property(assign,readwrite) unsigned long long cellIn;
-@property(assign,readwrite) unsigned long long cellOut;
-@property(assign,readonly) bool hasBundleName;
-@property(assign,readwrite) bool hasCellIn;
-@property(assign,readwrite) bool hasCellOut;
-@property(assign,readwrite) bool hasNumConnections;
-@property(assign,readwrite) bool hasWifiIn;
-@property(assign,readwrite) bool hasWifiOut;
-@property(assign,readwrite) unsigned int numConnections;
-@property(assign,readwrite) unsigned long long wifiIn;
-@property(assign,readwrite) unsigned long long wifiOut;
+@property (nonatomic, retain) NSString *bundleName;
+@property (nonatomic) unsigned long long cellIn;
+@property (nonatomic) unsigned long long cellOut;
+@property (nonatomic, readonly) bool hasBundleName;
+@property (nonatomic) bool hasCellIn;
+@property (nonatomic) bool hasCellOut;
+@property (nonatomic) bool hasNumConnections;
+@property (nonatomic) bool hasWifiIn;
+@property (nonatomic) bool hasWifiOut;
+@property (nonatomic) unsigned int numConnections;
+@property (nonatomic) unsigned long long wifiIn;
+@property (nonatomic) unsigned long long wifiOut;
 
 - (id)bundleName;
 - (unsigned long long)cellIn;

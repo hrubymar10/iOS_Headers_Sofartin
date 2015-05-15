@@ -6,7 +6,7 @@
     bool _disabled;
 }
 
-@property(assign,readwrite) bool disabled;
+@property (nonatomic) bool disabled;
 
 - (bool)_isSelectable;
 - (bool)disabled;

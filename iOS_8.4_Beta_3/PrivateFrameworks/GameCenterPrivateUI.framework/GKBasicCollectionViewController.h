@@ -8,9 +8,9 @@
     id _target;
 }
 
-@property(assign,retain) GKCollectionViewDataSource * initialDataSource;
-@property(assign,retain) NSArray * metricsForSections;
-@property(assign,retain) id target;
+@property (nonatomic, retain) GKCollectionViewDataSource *initialDataSource;
+@property (nonatomic, retain) NSArray *metricsForSections;
+@property (nonatomic, retain) id target;
 
 - (void)collectionView:(id)arg1 didSelectItemAtIndexPath:(id)arg2;
 - (void)configureDataSource;

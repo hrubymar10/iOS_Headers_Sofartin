@@ -7,20 +7,20 @@
     bool _shouldRepeatTexture;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } anchorPoint;
-@property(assign,readwrite) long long blendMode;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } centerRect;
-@property(assign,retain) UIColor * color;
-@property(assign,readwrite) double colorBlendFactor;
-@property(assign,readwrite) unsigned int lightingBitMask;
-@property(assign,retain) SKTexture * normalTexture;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } repeatTextureSize;
-@property(assign,retain) SKShader * shader;
-@property(assign,readwrite) unsigned int shadowCastBitMask;
-@property(assign,readwrite) unsigned int shadowedBitMask;
-@property(assign,readwrite) bool shouldRepeatTexture;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,retain) SKTexture * texture;
+@property (nonatomic) struct CGPoint { double x1; double x2; } anchorPoint;
+@property (nonatomic) long long blendMode;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } centerRect;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic) double colorBlendFactor;
+@property (nonatomic) unsigned int lightingBitMask;
+@property (nonatomic, retain) SKTexture *normalTexture;
+@property (nonatomic) struct CGSize { double x1; double x2; } repeatTextureSize;
+@property (nonatomic, retain) SKShader *shader;
+@property (nonatomic) unsigned int shadowCastBitMask;
+@property (nonatomic) unsigned int shadowedBitMask;
+@property (nonatomic) bool shouldRepeatTexture;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, retain) SKTexture *texture;
 
 + (id)spriteNodeWithColor:(id)arg1 size:(struct CGSize { double x1; double x2; })arg2;
 + (id)spriteNodeWithImageNamed:(id)arg1;

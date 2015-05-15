@@ -9,10 +9,10 @@
     bool _requiresDomains;
 }
 
-@property(assign,readonly) NSString * matchDesignatedRequirement;
-@property(assign,copy) NSString * matchPath;
-@property(assign,readonly) NSString * matchSigningIdentifier;
-@property(assign,readonly) bool requiresDomains;
+@property (readonly) NSString *matchDesignatedRequirement;
+@property (copy) NSString *matchPath;
+@property (readonly) NSString *matchSigningIdentifier;
+@property (readonly) bool requiresDomains;
 
 + (bool)supportsSecureCoding;
 

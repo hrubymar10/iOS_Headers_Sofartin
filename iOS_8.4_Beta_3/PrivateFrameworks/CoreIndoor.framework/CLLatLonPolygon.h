@@ -16,11 +16,11 @@
     double _tolerance;
 }
 
-@property(assign,readonly) double* latitudes;
-@property(assign,readonly) unsigned long long latitudesCount;
-@property(assign,readonly) double* longitudes;
-@property(assign,readonly) unsigned long long longitudesCount;
-@property(assign,readwrite) double tolerance;
+@property (nonatomic, readonly) double*latitudes;
+@property (nonatomic, readonly) unsigned long long latitudesCount;
+@property (nonatomic, readonly) double*longitudes;
+@property (nonatomic, readonly) unsigned long long longitudesCount;
+@property (nonatomic) double tolerance;
 
 - (void)addLatitude:(double)arg1;
 - (void)addLongitude:(double)arg1;

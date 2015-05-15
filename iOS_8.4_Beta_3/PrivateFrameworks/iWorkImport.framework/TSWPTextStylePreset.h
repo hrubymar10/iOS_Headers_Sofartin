@@ -8,10 +8,10 @@
     NSString *_presetIdentifier;
 }
 
-@property(assign,retain) TSWPListStyle * listStyle;
-@property(assign,retain) TSWPParagraphStyle * paragraphStyle;
-@property(assign,copy) NSString * presetIdentifier;
-@property(assign,readonly) NSString * presetKind;
+@property (nonatomic, retain) TSWPListStyle *listStyle;
+@property (nonatomic, retain) TSWPParagraphStyle *paragraphStyle;
+@property (nonatomic, copy) NSString *presetIdentifier;
+@property (nonatomic, readonly) NSString *presetKind;
 
 - (void)dealloc;
 - (id)initFromUnarchiver:(id)arg1;

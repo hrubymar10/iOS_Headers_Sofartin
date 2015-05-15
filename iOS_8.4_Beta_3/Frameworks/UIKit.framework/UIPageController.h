@@ -21,13 +21,13 @@
     UIView *_wrapperViews;
 }
 
-@property(assign,readwrite) <UIPageControllerDelegate> * delegate;
-@property(assign,readwrite) bool displaysPageControl;
-@property(assign,readwrite) long long pageCount;
-@property(assign,readwrite) double pageSpacing;
-@property(assign,readwrite) long long visibleIndex;
-@property(assign,retain) UIViewController * visibleViewController;
-@property(assign,readwrite) bool wraps;
+@property (nonatomic) <UIPageControllerDelegate> *delegate;
+@property (nonatomic) bool displaysPageControl;
+@property (nonatomic) long long pageCount;
+@property (nonatomic) double pageSpacing;
+@property (nonatomic) long long visibleIndex;
+@property (nonatomic, readonly, retain) UIViewController *visibleViewController;
+@property (nonatomic) bool wraps;
 
 - (void)_adjustScrollViewContentInsets;
 - (bool)_allowsAutorotation;

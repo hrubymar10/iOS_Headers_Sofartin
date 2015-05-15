@@ -6,7 +6,7 @@
     NSRegularExpression *_regularExpression;
 }
 
-@property(assign,retain) NSRegularExpression * regularExpression;
+@property (nonatomic, retain) NSRegularExpression *regularExpression;
 
 + (id)prototypes;
 

@@ -15,26 +15,26 @@
     GEOPDSiriSearchParameters *_siriSearchParameters;
 }
 
-@property(assign,retain) GEOPDAutocompleteParameters * autocompleteParameters;
-@property(assign,retain) GEOPDCanonicalLocationSearchParameters * canonicalLocationSearchParameters;
-@property(assign,retain) GEOPDGeocodingParameters * geocodingParameters;
-@property(assign,readonly) bool hasAutocompleteParameters;
-@property(assign,readonly) bool hasCanonicalLocationSearchParameters;
-@property(assign,readonly) bool hasGeocodingParameters;
-@property(assign,readonly) bool hasLocationDirectedSearchParameters;
-@property(assign,readonly) bool hasMerchantLookupParameters;
-@property(assign,readonly) bool hasPlaceLookupParameters;
-@property(assign,readonly) bool hasPlaceRefinementParameters;
-@property(assign,readonly) bool hasReverseGeocodingParameters;
-@property(assign,readonly) bool hasSearchParameters;
-@property(assign,readonly) bool hasSiriSearchParameters;
-@property(assign,retain) GEOPDLocationDirectedSearchParameters * locationDirectedSearchParameters;
-@property(assign,retain) GEOPDMerchantLookupParameters * merchantLookupParameters;
-@property(assign,retain) GEOPDPlaceLookupParameters * placeLookupParameters;
-@property(assign,retain) GEOPDPlaceRefinementParameters * placeRefinementParameters;
-@property(assign,retain) GEOPDReverseGeocodingParameters * reverseGeocodingParameters;
-@property(assign,retain) GEOPDSearchParameters * searchParameters;
-@property(assign,retain) GEOPDSiriSearchParameters * siriSearchParameters;
+@property (nonatomic, retain) GEOPDAutocompleteParameters *autocompleteParameters;
+@property (nonatomic, retain) GEOPDCanonicalLocationSearchParameters *canonicalLocationSearchParameters;
+@property (nonatomic, retain) GEOPDGeocodingParameters *geocodingParameters;
+@property (nonatomic, readonly) bool hasAutocompleteParameters;
+@property (nonatomic, readonly) bool hasCanonicalLocationSearchParameters;
+@property (nonatomic, readonly) bool hasGeocodingParameters;
+@property (nonatomic, readonly) bool hasLocationDirectedSearchParameters;
+@property (nonatomic, readonly) bool hasMerchantLookupParameters;
+@property (nonatomic, readonly) bool hasPlaceLookupParameters;
+@property (nonatomic, readonly) bool hasPlaceRefinementParameters;
+@property (nonatomic, readonly) bool hasReverseGeocodingParameters;
+@property (nonatomic, readonly) bool hasSearchParameters;
+@property (nonatomic, readonly) bool hasSiriSearchParameters;
+@property (nonatomic, retain) GEOPDLocationDirectedSearchParameters *locationDirectedSearchParameters;
+@property (nonatomic, retain) GEOPDMerchantLookupParameters *merchantLookupParameters;
+@property (nonatomic, retain) GEOPDPlaceLookupParameters *placeLookupParameters;
+@property (nonatomic, retain) GEOPDPlaceRefinementParameters *placeRefinementParameters;
+@property (nonatomic, retain) GEOPDReverseGeocodingParameters *reverseGeocodingParameters;
+@property (nonatomic, retain) GEOPDSearchParameters *searchParameters;
+@property (nonatomic, retain) GEOPDSiriSearchParameters *siriSearchParameters;
 
 - (id)autocompleteParameters;
 - (id)canonicalLocationSearchParameters;

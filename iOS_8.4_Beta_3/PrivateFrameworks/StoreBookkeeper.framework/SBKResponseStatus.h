@@ -11,18 +11,18 @@
     long long _statusCode;
 }
 
-@property(assign,copy) NSString * consoleDescription;
-@property(assign,readonly) bool isAuthenticationError;
-@property(assign,readonly) bool isError;
-@property(assign,readonly) bool isGenericError;
-@property(assign,readonly) bool isPuntedError;
-@property(assign,readonly) bool isRecoverable;
-@property(assign,readonly) bool isSuccess;
-@property(assign,readonly) bool isUnsupportedClient;
-@property(assign,readonly) bool isValidationError;
-@property(assign,readonly) NSError * requestError;
-@property(assign,readonly) bool shouldFileRadar;
-@property(assign,readonly) long long statusCode;
+@property (readonly, copy) NSString *consoleDescription;
+@property (readonly) bool isAuthenticationError;
+@property (readonly) bool isError;
+@property (readonly) bool isGenericError;
+@property (readonly) bool isPuntedError;
+@property (readonly) bool isRecoverable;
+@property (readonly) bool isSuccess;
+@property (readonly) bool isUnsupportedClient;
+@property (readonly) bool isValidationError;
+@property (readonly) NSError *requestError;
+@property (readonly) bool shouldFileRadar;
+@property (readonly) long long statusCode;
 
 + (id)responseStatusForStatusCodeNumber:(id)arg1;
 

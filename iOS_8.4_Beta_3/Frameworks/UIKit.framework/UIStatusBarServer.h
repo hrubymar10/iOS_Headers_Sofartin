@@ -7,7 +7,7 @@
     <UIStatusBarServerClient> *_statusBar;
 }
 
-@property(assign,retain) <UIStatusBarServerClient> * statusBar;
+@property (nonatomic, retain) <UIStatusBarServerClient> *statusBar;
 
 + (unsigned int)_publisherPort;
 + (unsigned int)_serverPort;

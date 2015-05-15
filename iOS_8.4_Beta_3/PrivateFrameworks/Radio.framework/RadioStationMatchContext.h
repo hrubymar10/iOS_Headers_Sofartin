@@ -7,8 +7,8 @@
     bool _shouldMatchArtist;
 }
 
-@property(assign,retain) RadioStationMatchMetadata * matchMetadata;
-@property(assign,readwrite) bool shouldMatchArtist;
+@property (nonatomic, retain) RadioStationMatchMetadata *matchMetadata;
+@property (nonatomic) bool shouldMatchArtist;
 
 - (void).cxx_destruct;
 - (id)copyMatchDictionary;

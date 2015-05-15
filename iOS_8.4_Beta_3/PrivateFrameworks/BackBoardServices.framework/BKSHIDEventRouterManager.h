@@ -6,7 +6,7 @@
     bool _needsFlush;
 }
 
-@property(assign,readwrite) bool needsFlush;
+@property (nonatomic) bool needsFlush;
 
 + (id)sharedInstance;
 

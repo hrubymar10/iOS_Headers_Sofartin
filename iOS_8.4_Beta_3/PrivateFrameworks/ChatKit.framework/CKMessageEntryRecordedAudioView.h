@@ -15,21 +15,21 @@
     UIImageView *_waveformImageView;
 }
 
-@property(assign,retain) CKAudioController * audioController;
-@property(assign,retain) CKAudioMediaObject * audioMediaObject;
-@property(assign,retain) UIImageView * balloonImageView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKMessageEntryRecordedAudioViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isPlaying;
-@property(assign,retain) CKAudioProgressView * progressView;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double time;
-@property(assign,copy) NSString * timeFormat;
-@property(assign,retain) UILabel * timeLabel;
-@property(assign,retain) UIImage * waveformImage;
-@property(assign,retain) UIImageView * waveformImageView;
+@property (nonatomic, retain) CKAudioController *audioController;
+@property (nonatomic, retain) CKAudioMediaObject *audioMediaObject;
+@property (nonatomic, retain) UIImageView *balloonImageView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKMessageEntryRecordedAudioViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isPlaying;
+@property (nonatomic, retain) CKAudioProgressView *progressView;
+@property (readonly) Class superclass;
+@property (nonatomic) double time;
+@property (nonatomic, copy) NSString *timeFormat;
+@property (nonatomic, retain) UILabel *timeLabel;
+@property (nonatomic, retain) UIImage *waveformImage;
+@property (nonatomic, retain) UIImageView *waveformImageView;
 
 - (id)audioController;
 - (void)audioController:(id)arg1 mediaObjectDidFinishPlaying:(id)arg2;

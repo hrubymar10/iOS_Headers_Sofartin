@@ -17,12 +17,12 @@
     UILabel *_valueLabel;
 }
 
-@property(assign,retain) PKPassColorProfile * colorProfile;
-@property(assign,retain) PKDiffView * diffView;
-@property(assign,retain) PKPassField * field;
-@property(assign,retain) PKPassFieldTemplate * fieldTemplate;
-@property(assign,readonly) UILabel * labelLabel;
-@property(assign,readonly) UILabel * valueLabel;
+@property (nonatomic, retain) PKPassColorProfile *colorProfile;
+@property (nonatomic, retain) PKDiffView *diffView;
+@property (nonatomic, retain) PKPassField *field;
+@property (nonatomic, retain) PKPassFieldTemplate *fieldTemplate;
+@property (nonatomic, readonly) UILabel *labelLabel;
+@property (nonatomic, readonly) UILabel *valueLabel;
 
 + (id)newViewForField:(id)arg1 fieldTemplate:(id)arg2;
 

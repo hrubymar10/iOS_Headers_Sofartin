@@ -8,10 +8,10 @@
     long long _paymentApplicationState;
 }
 
-@property(assign,copy) NSString * applicationIdentifier;
-@property(getter=isReadyForPayment,assign,readonly) bool availableForPayment;
-@property(assign,copy) NSString * passUniqueIdentifier;
-@property(assign,readwrite) long long paymentApplicationState;
+@property (nonatomic, copy) NSString *applicationIdentifier;
+@property (getter=isReadyForPayment, nonatomic, readonly) bool availableForPayment;
+@property (nonatomic, copy) NSString *passUniqueIdentifier;
+@property (nonatomic) long long paymentApplicationState;
 
 + (id)paymentServiceCardForPassUniqueID:(id)arg1 paymentApplication:(id)arg2;
 + (id)paymentServiceCardForPaymentPass:(id)arg1;

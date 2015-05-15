@@ -6,11 +6,11 @@
     struct _MIDINetworkHostImpl { id x1; id x2; unsigned long long x3; id x4; id x5; } *_impl;
 }
 
-@property(assign,retain) NSString * address;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * netServiceDomain;
-@property(assign,retain) NSString * netServiceName;
-@property(assign,readonly) unsigned long long port;
+@property (nonatomic, readonly, retain) NSString *address;
+@property (nonatomic, readonly, retain) NSString *name;
+@property (nonatomic, readonly, retain) NSString *netServiceDomain;
+@property (nonatomic, readonly, retain) NSString *netServiceName;
+@property (nonatomic, readonly) unsigned long long port;
 
 + (id)fromAddressAsText:(id)arg1 withName:(id)arg2;
 + (id)hostWithName:(id)arg1 address:(id)arg2 port:(unsigned long long)arg3;

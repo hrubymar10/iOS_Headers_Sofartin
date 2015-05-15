@@ -4,7 +4,7 @@
 
 @interface SAStartLocalRequest : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * clientBoundCommands;
+@property (nonatomic, copy) NSArray *clientBoundCommands;
 
 + (id)startLocalRequest;
 + (id)startLocalRequestWithDictionary:(id)arg1 context:(id)arg2;

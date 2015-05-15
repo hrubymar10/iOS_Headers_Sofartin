@@ -10,11 +10,11 @@
     long long _trackID;
 }
 
-@property(assign,readonly) MPAVItem * currentlyPlayingItem;
-@property(assign,readonly) RadioTrack * currentlyPlayingTrack;
-@property(assign,readonly) MusicAVPlayer * player;
-@property(assign,readonly) RadioStation * radioStation;
-@property(assign,readonly) long long trackID;
+@property (nonatomic, readonly) MPAVItem *currentlyPlayingItem;
+@property (nonatomic, readonly) RadioTrack *currentlyPlayingTrack;
+@property (nonatomic, readonly) MusicAVPlayer *player;
+@property (nonatomic, readonly) RadioStation *radioStation;
+@property (nonatomic, readonly) long long trackID;
 
 - (void).cxx_destruct;
 - (id)currentlyPlayingItem;

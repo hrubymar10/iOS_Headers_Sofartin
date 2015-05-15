@@ -9,14 +9,14 @@
     long long _preferringUserInteractionCount;
 }
 
-@property(assign,readwrite) id cellReuseSource;
-@property(assign,readwrite) long long columnCount;
-@property(assign,readonly) SUImageCache * imageCache;
-@property(assign,readonly) ISURLOperationPool * imagePool;
-@property(assign,readonly) long long numberOfSections;
-@property(getter=isPreferringUserInteraction,assign,readonly) bool preferringUserInteraction;
-@property(assign,readonly) NSArray * sectionIndexTitles;
-@property(assign,readonly) long long tableViewStyle;
+@property (nonatomic) id cellReuseSource;
+@property (nonatomic) long long columnCount;
+@property (nonatomic, readonly) SUImageCache *imageCache;
+@property (nonatomic, readonly) ISURLOperationPool *imagePool;
+@property (nonatomic, readonly) long long numberOfSections;
+@property (getter=isPreferringUserInteraction, nonatomic, readonly) bool preferringUserInteraction;
+@property (nonatomic, readonly) NSArray *sectionIndexTitles;
+@property (nonatomic, readonly) long long tableViewStyle;
 
 - (void)beginPreferringUserInteraction;
 - (id)cachedConfigurationForClass:(Class)arg1 index:(long long)arg2;

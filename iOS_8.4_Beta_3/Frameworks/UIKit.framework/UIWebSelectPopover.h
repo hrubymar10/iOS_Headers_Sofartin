@@ -6,7 +6,7 @@
     UIWebSelectTableViewController *_tableViewController;
 }
 
-@property(assign,retain) UIWebSelectTableViewController * _tableViewController;
+@property (nonatomic, retain) UIWebSelectTableViewController *_tableViewController;
 
 - (id)_tableViewController;
 - (void)_userActionDismissedPopover:(id)arg1;

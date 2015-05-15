@@ -16,17 +16,17 @@
     } mLegendFrame;
 }
 
-@property(assign,readwrite) TSCHChartInfo * chartInfo;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } legendOffset;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } legendSize;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) TSCHChartInfo *chartInfo;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct CGPoint { double x1; double x2; } legendOffset;
+@property (nonatomic) struct CGSize { double x1; double x2; } legendSize;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
 
 + (unsigned char)styleOwnerPathType;
 

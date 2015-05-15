@@ -4,9 +4,9 @@
 
 @interface SAUIUnlockDevice : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * cancellationCommands;
-@property(assign,copy) NSArray * failureCommands;
-@property(assign,copy) NSArray * successCommands;
+@property (nonatomic, copy) NSArray *cancellationCommands;
+@property (nonatomic, copy) NSArray *failureCommands;
+@property (nonatomic, copy) NSArray *successCommands;
 
 + (id)unlockDevice;
 + (id)unlockDeviceWithDictionary:(id)arg1 context:(id)arg2;

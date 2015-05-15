@@ -4,12 +4,12 @@
 
 @interface SAWeatherBarometricPressure : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * trend;
-@property(assign,copy) NSString * value;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *trend;
+@property (nonatomic, copy) NSString *value;
 
 + (id)barometricPressure;
 + (id)barometricPressureWithDictionary:(id)arg1 context:(id)arg2;

@@ -8,13 +8,13 @@
     UIViewController *_viewControllerForSharePresentation;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) UIView * targetViewForPopover;
-@property(assign,readwrite) UIViewController * viewControllerForSharePresentation;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) UIView *targetViewForPopover;
+@property (nonatomic) UIViewController *viewControllerForSharePresentation;
 
 + (void)dismissAllModalViewsWithCompletionHandler:(id)arg1;
 + (id)selectedNavigationController;

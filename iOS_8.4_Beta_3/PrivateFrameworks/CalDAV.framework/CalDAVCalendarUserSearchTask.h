@@ -12,13 +12,13 @@
     NSSet *_searchStrings;
 }
 
-@property(assign,readwrite) bool findAttendees;
-@property(assign,readwrite) bool findGroups;
-@property(assign,readwrite) bool findLocations;
-@property(assign,readwrite) bool findResources;
-@property(assign,readwrite) bool findUsers;
-@property(assign,readwrite) unsigned long long resultLimit;
-@property(assign,retain) NSSet * searchStrings;
+@property (nonatomic) bool findAttendees;
+@property bool findGroups;
+@property (nonatomic) bool findLocations;
+@property bool findResources;
+@property bool findUsers;
+@property (nonatomic) unsigned long long resultLimit;
+@property (nonatomic, retain) NSSet *searchStrings;
 
 + (bool)tokensAreLegal:(id)arg1;
 

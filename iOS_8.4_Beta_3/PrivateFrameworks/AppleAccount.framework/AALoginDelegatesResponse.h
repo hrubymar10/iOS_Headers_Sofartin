@@ -4,10 +4,10 @@
 
 @interface AALoginDelegatesResponse : AAResponse
 
-@property(assign,readonly) NSString * dsid;
-@property(assign,readonly) NSDictionary * responseParameters;
-@property(assign,readonly) NSNumber * status;
-@property(assign,readonly) NSString * statusMessage;
+@property (nonatomic, readonly) NSString *dsid;
+@property (nonatomic, readonly) NSDictionary *responseParameters;
+@property (nonatomic, readonly) NSNumber *status;
+@property (nonatomic, readonly) NSString *statusMessage;
 
 - (id)dsid;
 - (id)responseParameters;

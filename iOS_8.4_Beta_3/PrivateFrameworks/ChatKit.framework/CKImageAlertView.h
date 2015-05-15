@@ -7,8 +7,8 @@
     UIImageView *_imageView;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,retain) UIImageView * imageView;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) UIImageView *imageView;
 
 - (void)dealloc;
 - (id)image;

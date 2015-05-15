@@ -4,8 +4,8 @@
 
 @interface SAAnswerDomainObjectSnippet : SAUISnippet
 
-@property(assign,retain) SAUIAppPunchOut * answerPunchOut;
-@property(assign,copy) NSArray * answers;
+@property (nonatomic, retain) SAUIAppPunchOut *answerPunchOut;
+@property (nonatomic, copy) NSArray *answers;
 
 + (id)domainObjectSnippet;
 + (id)domainObjectSnippetWithDictionary:(id)arg1 context:(id)arg2;

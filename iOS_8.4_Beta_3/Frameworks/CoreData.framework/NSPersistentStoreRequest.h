@@ -6,8 +6,8 @@
     NSArray *_affectedStores;
 }
 
-@property(assign,retain) NSArray * affectedStores;
-@property(assign,readonly) unsigned long long requestType;
+@property (nonatomic, retain) NSArray *affectedStores;
+@property (readonly) unsigned long long requestType;
 
 + (void)initialize;
 

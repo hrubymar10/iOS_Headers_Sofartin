@@ -9,14 +9,14 @@
     UITextView *_speechTextView;
 }
 
-@property(assign,retain) GKSpeechBalloonBackgroundView * balloonView;
-@property(assign,readwrite) unsigned char drawStyle;
-@property(assign,retain) UIView<GKPlayerPhotoContainer> * photoView;
-@property(assign,retain) GKPlayer * player;
-@property(assign,retain) NSArray * replaceableConstraints;
-@property(assign,retain) NSString * speechText;
-@property(assign,retain) UITextView * speechTextView;
-@property(assign,readwrite) unsigned char tipDirection;
+@property (nonatomic, retain) GKSpeechBalloonBackgroundView *balloonView;
+@property (nonatomic) unsigned char drawStyle;
+@property (nonatomic, retain) UIView<GKPlayerPhotoContainer> *photoView;
+@property (nonatomic, retain) GKPlayer *player;
+@property (nonatomic, retain) NSArray *replaceableConstraints;
+@property (nonatomic, retain) NSString *speechText;
+@property (nonatomic, retain) UITextView *speechTextView;
+@property (nonatomic) unsigned char tipDirection;
 
 + (id)instantiatePhotoContainer;
 + (bool)requiresConstraintBasedLayout;

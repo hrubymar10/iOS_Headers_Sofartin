@@ -8,10 +8,10 @@
     bool _isNewStyle;
 }
 
-@property(assign,retain) UIImage * highlightImage;
-@property(assign,readonly) UIImageView * highlightView;
-@property(assign,readwrite) double imageOffset;
-@property(assign,readwrite) bool isNewStyle;
+@property (nonatomic, retain) UIImage *highlightImage;
+@property (readonly) UIImageView *highlightView;
+@property (nonatomic) double imageOffset;
+@property (nonatomic) bool isNewStyle;
 
 - (void)_transitionHighlightViewToHighlighted:(bool)arg1;
 - (bool)canBecomeFocused;

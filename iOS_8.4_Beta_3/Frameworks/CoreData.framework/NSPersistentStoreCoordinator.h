@@ -16,9 +16,9 @@
     unsigned int _reserved32;
 }
 
-@property(assign,readonly) NSManagedObjectModel * managedObjectModel;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) NSArray * persistentStores;
+@property (readonly) NSManagedObjectModel *managedObjectModel;
+@property (copy) NSString *name;
+@property (readonly) NSArray *persistentStores;
 
 + (void)__Multithreading_Violation_AllThatIsLeftToUsIsHonor__;
 + (id)_beginPowerAssertionWithAssert:(unsigned long long*)arg1;

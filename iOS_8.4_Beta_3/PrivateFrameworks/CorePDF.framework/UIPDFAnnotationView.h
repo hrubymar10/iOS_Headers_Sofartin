@@ -6,7 +6,7 @@
     UIPDFAnnotation *_annotation;
 }
 
-@property(assign,readwrite) UIPDFAnnotation * annotation;
+@property (nonatomic) UIPDFAnnotation *annotation;
 
 - (id)annotation;
 - (void)setAnnotation:(id)arg1;

@@ -11,12 +11,12 @@
     int _order;
 }
 
-@property(assign,retain) CKDPLocationCoordinate * coordinate;
-@property(assign,retain) CKDPRecordFieldIdentifier * fieldName;
-@property(assign,readonly) bool hasCoordinate;
-@property(assign,readonly) bool hasFieldName;
-@property(assign,readwrite) bool hasOrder;
-@property(assign,readwrite) int order;
+@property (nonatomic, retain) CKDPLocationCoordinate *coordinate;
+@property (nonatomic, retain) CKDPRecordFieldIdentifier *fieldName;
+@property (nonatomic, readonly) bool hasCoordinate;
+@property (nonatomic, readonly) bool hasFieldName;
+@property (nonatomic) bool hasOrder;
+@property (nonatomic) int order;
 
 - (void).cxx_destruct;
 - (id)coordinate;

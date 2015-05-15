@@ -6,7 +6,7 @@
     PTSSavedModeTableViewController *_tableViewController;
 }
 
-@property(assign,retain) PTSSavedModeTableViewController * tableViewController;
+@property (nonatomic, retain) PTSSavedModeTableViewController *tableViewController;
 
 + (id)row;
 

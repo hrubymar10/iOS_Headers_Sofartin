@@ -6,7 +6,7 @@
     UIView *_mirroredView;
 }
 
-@property(assign,retain) UIView * placeheldView;
+@property (readonly, retain) UIView *placeheldView;
 
 + (id)placeholderForView:(id)arg1;
 + (id)placeholderWithWidth:(double)arg1 height:(double)arg2;

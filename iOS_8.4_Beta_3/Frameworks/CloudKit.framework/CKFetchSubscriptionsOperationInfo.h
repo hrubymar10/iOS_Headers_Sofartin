@@ -7,8 +7,8 @@
     NSArray *_subscriptionIDs;
 }
 
-@property(assign,readwrite) bool isFetchAllSubscriptionsOperation;
-@property(assign,retain) NSArray * subscriptionIDs;
+@property (nonatomic) bool isFetchAllSubscriptionsOperation;
+@property (nonatomic, retain) NSArray *subscriptionIDs;
 
 + (bool)supportsSecureCoding;
 

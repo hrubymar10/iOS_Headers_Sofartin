@@ -17,20 +17,20 @@
     bool _useUserSpecificURLBag;
 }
 
-@property(assign,retain) SSVFairPlaySAPSession * SAPSession;
-@property(assign,readonly) SSURLBagContext * URLBagContext;
-@property(getter=isURLBagRequest,assign,readwrite) bool URLBagRequest;
-@property(assign,retain) NSNumber * authenticatedDSID;
-@property(assign,readwrite) bool canSendGUIDParameter;
-@property(assign,readwrite) <ISStoreURLOperationDelegate> * delegate;
-@property(assign,readwrite) bool ignorePreexistingSecureToken;
-@property(assign,readwrite) long long machineDataStyle;
-@property(assign,readwrite) bool needsAuthentication;
-@property(assign,readwrite) bool needsURLBag;
-@property(assign,readwrite) bool performsMachineDataActions;
-@property(assign,readwrite) bool shouldSendXTokenHeader;
-@property(assign,readwrite) bool urlKnownToBeTrusted;
-@property(assign,readwrite) bool useUserSpecificURLBag;
+@property (retain) SSVFairPlaySAPSession *SAPSession;
+@property (readonly) SSURLBagContext *URLBagContext;
+@property (getter=isURLBagRequest, nonatomic) bool URLBagRequest;
+@property (retain) NSNumber *authenticatedDSID;
+@property bool canSendGUIDParameter;
+@property <ISStoreURLOperationDelegate> *delegate;
+@property (nonatomic) bool ignorePreexistingSecureToken;
+@property long long machineDataStyle;
+@property bool needsAuthentication;
+@property bool needsURLBag;
+@property bool performsMachineDataActions;
+@property bool shouldSendXTokenHeader;
+@property bool urlKnownToBeTrusted;
+@property bool useUserSpecificURLBag;
 
 + (void)_addITunesStoreHeadersToRequest:(id)arg1 withURLBag:(id)arg2 account:(id)arg3;
 + (void)_addITunesStoreHeadersToRequest:(id)arg1 withURLBag:(id)arg2 accountIdentifier:(id)arg3;

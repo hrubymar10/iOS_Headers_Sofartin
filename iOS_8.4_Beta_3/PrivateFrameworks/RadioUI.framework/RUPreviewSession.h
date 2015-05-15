@@ -10,12 +10,12 @@
     NSHashTable *_sessionObservers;
 }
 
-@property(assign,readonly) MPAVItem * currentItem;
-@property(assign,readonly) double currentItemDuration;
-@property(assign,readonly) double currentTime;
-@property(assign,readwrite) double customTrackPreviewDuration;
-@property(assign,copy) NSArray * items;
-@property(getter=isPlaying,assign,readonly) bool playing;
+@property (nonatomic, readonly) MPAVItem *currentItem;
+@property (nonatomic, readonly) double currentItemDuration;
+@property (nonatomic, readonly) double currentTime;
+@property (nonatomic) double customTrackPreviewDuration;
+@property (nonatomic, readonly, copy) NSArray *items;
+@property (getter=isPlaying, nonatomic, readonly) bool playing;
 
 - (void).cxx_destruct;
 - (void)_applicationWillResignActiveNotification:(id)arg1;

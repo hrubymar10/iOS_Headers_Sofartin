@@ -7,8 +7,8 @@
     NSMutableArray *_usages;
 }
 
-@property(assign,retain) NSMutableArray * names;
-@property(assign,retain) NSMutableArray * usages;
+@property (nonatomic, retain) NSMutableArray *names;
+@property (nonatomic, retain) NSMutableArray *usages;
 
 - (void).cxx_destruct;
 - (void)addName:(id)arg1;

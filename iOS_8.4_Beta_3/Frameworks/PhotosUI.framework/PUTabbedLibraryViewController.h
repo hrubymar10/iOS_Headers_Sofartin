@@ -12,13 +12,13 @@
     PUMomentsZoomLevelManager *_zoomLevelManager;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int selectedContentMode;
-@property(assign,readonly) UINavigationController * selectedNavigationController;
-@property(assign,retain) PUSessionInfo * sessionInfo;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int selectedContentMode;
+@property (nonatomic, readonly) UINavigationController *selectedNavigationController;
+@property (nonatomic, retain) PUSessionInfo *sessionInfo;
+@property (readonly) Class superclass;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 + (void)initialize;

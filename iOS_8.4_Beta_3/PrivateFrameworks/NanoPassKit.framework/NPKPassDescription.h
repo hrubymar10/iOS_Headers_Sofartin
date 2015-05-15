@@ -22,23 +22,23 @@
     NSString *_uniqueID;
 }
 
-@property(assign,retain) PKColor * backgroundColor;
-@property(assign,retain) PKImage * backgroundImage;
-@property(assign,retain) NSData * backgroundImageEncoded;
-@property(assign,readwrite) bool deletePending;
-@property(assign,retain) PKColor * foregroundColor;
-@property(assign,retain) NSNumber * groupID;
-@property(assign,retain) NSDate * ingestionDate;
-@property(assign,retain) PKColor * labelColor;
-@property(assign,retain) PKImage * logoImage;
-@property(assign,retain) NSData * logoImageEncoded;
-@property(assign,retain) NSString * logoText;
-@property(assign,retain) NSData * manifestHash;
-@property(assign,retain) NSString * passTypeIdentifier;
-@property(assign,retain) PKPaymentApplication * paymentApplication;
-@property(assign,retain) NSDate * relevantDate;
-@property(assign,readwrite) long long style;
-@property(assign,retain) NSString * uniqueID;
+@property (nonatomic, retain) PKColor *backgroundColor;
+@property (nonatomic, retain) PKImage *backgroundImage;
+@property (nonatomic, retain) NSData *backgroundImageEncoded;
+@property (nonatomic) bool deletePending;
+@property (nonatomic, retain) PKColor *foregroundColor;
+@property (nonatomic, retain) NSNumber *groupID;
+@property (nonatomic, retain) NSDate *ingestionDate;
+@property (nonatomic, retain) PKColor *labelColor;
+@property (nonatomic, retain) PKImage *logoImage;
+@property (nonatomic, retain) NSData *logoImageEncoded;
+@property (nonatomic, retain) NSString *logoText;
+@property (nonatomic, retain) NSData *manifestHash;
+@property (nonatomic, retain) NSString *passTypeIdentifier;
+@property (nonatomic, retain) PKPaymentApplication *paymentApplication;
+@property (nonatomic, retain) NSDate *relevantDate;
+@property (nonatomic) long long style;
+@property (nonatomic, retain) NSString *uniqueID;
 
 + (bool)isCachingEnabled;
 + (void)setCachingEnabled:(bool)arg1;

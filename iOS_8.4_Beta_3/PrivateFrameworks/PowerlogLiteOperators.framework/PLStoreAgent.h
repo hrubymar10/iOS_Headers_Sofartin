@@ -7,12 +7,12 @@
     SSEventMonitor *_monitor;
 }
 
-@property(assign,retain) NSMutableDictionary * currentDownloads;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SSEventMonitor * monitor;
-@property(assign,readonly) Class superclass;
+@property (retain) NSMutableDictionary *currentDownloads;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) SSEventMonitor *monitor;
+@property (readonly) Class superclass;
 
 + (id)accountingGroupDefinitions;
 + (id)defaults;

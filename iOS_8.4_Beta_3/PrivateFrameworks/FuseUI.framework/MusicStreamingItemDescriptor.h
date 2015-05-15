@@ -7,8 +7,8 @@
     long long _storeID;
 }
 
-@property(assign,copy) NSArray * assetDescriptors;
-@property(assign,readonly) long long storeID;
+@property (nonatomic, readonly, copy) NSArray *assetDescriptors;
+@property (nonatomic, readonly) long long storeID;
 
 - (void).cxx_destruct;
 - (id)_initWithResponseDictionary:(id)arg1;

@@ -15,16 +15,16 @@
     NSSet *_userAddresses;
 }
 
-@property(assign,readonly) NSSet * calendarHomes;
-@property(assign,retain) NSURL * delegatePrincipalURL;
-@property(assign,readonly) NSURL * dropboxURL;
-@property(assign,readonly) NSURL * inboxURL;
-@property(assign,readonly) NSURL * notificationURL;
-@property(assign,readonly) NSURL * outboxURL;
-@property(assign,readonly) CalDAVServerVersion * serverVersion;
-@property(assign,readonly) bool supportsCalendarUserSearch;
-@property(assign,readonly) NSURL * updatedPrincipalURL;
-@property(assign,readonly) NSSet * userAddresses;
+@property (nonatomic, readonly) NSSet *calendarHomes;
+@property (nonatomic, retain) NSURL *delegatePrincipalURL;
+@property (nonatomic, readonly) NSURL *dropboxURL;
+@property (nonatomic, readonly) NSURL *inboxURL;
+@property (nonatomic, readonly) NSURL *notificationURL;
+@property (nonatomic, readonly) NSURL *outboxURL;
+@property (nonatomic, readonly) CalDAVServerVersion *serverVersion;
+@property (nonatomic, readonly) bool supportsCalendarUserSearch;
+@property (nonatomic, readonly) NSURL *updatedPrincipalURL;
+@property (nonatomic, readonly) NSSet *userAddresses;
 
 - (id)_copyAccountPropertiesPropFindElements;
 - (void)_setPropertiesFromParsedResponses:(id)arg1;

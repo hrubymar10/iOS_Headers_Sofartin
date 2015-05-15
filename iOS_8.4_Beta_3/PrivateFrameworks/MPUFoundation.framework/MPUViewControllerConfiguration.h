@@ -13,14 +13,14 @@
     bool _wantsNavigationController;
 }
 
-@property(assign,copy) NSString * aggregateStatisticDisplayCountKey;
-@property(assign,readonly) Class cellConfigurationClass;
-@property(assign,copy) id configurationBlock;
-@property(assign,retain) MPUDataSourceConfiguration * dataSourceConfiguration;
-@property(assign,retain) Class navigationControllerClass;
-@property(assign,readonly) Class viewControllerClass;
-@property(assign,readwrite) bool wantsModalPresentation;
-@property(assign,readwrite) bool wantsNavigationController;
+@property (nonatomic, copy) NSString *aggregateStatisticDisplayCountKey;
+@property (nonatomic, readonly) Class cellConfigurationClass;
+@property (nonatomic, copy) id configurationBlock;
+@property (nonatomic, retain) MPUDataSourceConfiguration *dataSourceConfiguration;
+@property (nonatomic, retain) Class navigationControllerClass;
+@property (nonatomic, readonly) Class viewControllerClass;
+@property (nonatomic) bool wantsModalPresentation;
+@property (nonatomic) bool wantsNavigationController;
 
 + (id)configurationWithViewControllerClass:(Class)arg1;
 + (id)configurationWithViewControllerClass:(Class)arg1 cellConfigurationClass:(Class)arg2;

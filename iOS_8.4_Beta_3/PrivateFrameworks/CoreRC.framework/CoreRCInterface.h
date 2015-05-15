@@ -7,8 +7,8 @@
     id _testProperty;
 }
 
-@property(assign,readwrite) CoreRCInterfaceListener * listener;
-@property(assign,copy) id testProperty;
+@property (nonatomic) CoreRCInterfaceListener *listener;
+@property (nonatomic, copy) id testProperty;
 
 - (void)dealloc;
 - (bool)doesNotImplement:(SEL)arg1 error:(id*)arg2;

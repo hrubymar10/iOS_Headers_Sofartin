@@ -13,14 +13,14 @@
     NSString *_name;
 }
 
-@property(assign,readonly) NSString * amountDisclaimer;
-@property(assign,readonly) NSString * charityDescription;
-@property(assign,readonly) NSArray * donationAmounts;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSString * legalText;
-@property(assign,readonly) NSString * legalText2;
-@property(assign,readonly) SKUIArtwork * logoArtwork;
-@property(assign,readonly) NSString * name;
+@property (nonatomic, readonly) NSString *amountDisclaimer;
+@property (nonatomic, readonly) NSString *charityDescription;
+@property (nonatomic, readonly) NSArray *donationAmounts;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) NSString *legalText;
+@property (nonatomic, readonly) NSString *legalText2;
+@property (nonatomic, readonly) SKUIArtwork *logoArtwork;
+@property (nonatomic, readonly) NSString *name;
 
 - (void).cxx_destruct;
 - (id)amountDisclaimer;

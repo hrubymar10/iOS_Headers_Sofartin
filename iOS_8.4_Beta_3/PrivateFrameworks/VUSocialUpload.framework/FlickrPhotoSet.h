@@ -12,13 +12,13 @@
     NSString *_title;
 }
 
-@property(assign,readwrite) long long farmID;
-@property(assign,readwrite) long long identifier;
-@property(assign,copy) NSString * photoSetDescription;
-@property(assign,readwrite) long long primaryPhotoID;
-@property(assign,copy) NSString * secret;
-@property(assign,readwrite) long long serverID;
-@property(assign,copy) NSString * title;
+@property (nonatomic) long long farmID;
+@property (nonatomic) long long identifier;
+@property (nonatomic, copy) NSString *photoSetDescription;
+@property (nonatomic) long long primaryPhotoID;
+@property (nonatomic, copy) NSString *secret;
+@property (nonatomic) long long serverID;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)description;

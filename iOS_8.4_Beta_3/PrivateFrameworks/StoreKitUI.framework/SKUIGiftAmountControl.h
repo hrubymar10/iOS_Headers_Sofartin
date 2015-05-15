@@ -11,12 +11,12 @@
     long long _trackingAmount;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long selectedAmount;
-@property(assign,readonly) NSString * selectedAmountString;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long selectedAmount;
+@property (nonatomic, readonly) NSString *selectedAmountString;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_reloadSelectedButton;

@@ -7,8 +7,8 @@
     NSMutableArray *_icons;
 }
 
-@property(assign,retain) NSMutableArray * attributions;
-@property(assign,retain) NSMutableArray * icons;
+@property (nonatomic, retain) NSMutableArray *attributions;
+@property (nonatomic, retain) NSMutableArray *icons;
 
 - (void)addAttribution:(id)arg1;
 - (void)addIcon:(id)arg1;

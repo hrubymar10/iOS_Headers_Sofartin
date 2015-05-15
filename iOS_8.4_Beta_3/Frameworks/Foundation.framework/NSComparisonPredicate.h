@@ -9,12 +9,12 @@
     NSExpression *_rhs;
 }
 
-@property(assign,readonly) unsigned long long comparisonPredicateModifier;
-@property(assign,readonly) SEL customSelector;
-@property(assign,retain) NSExpression * leftExpression;
-@property(assign,readonly) unsigned long long options;
-@property(assign,readonly) unsigned long long predicateOperatorType;
-@property(assign,retain) NSExpression * rightExpression;
+@property (readonly) unsigned long long comparisonPredicateModifier;
+@property (readonly) SEL customSelector;
+@property (readonly, retain) NSExpression *leftExpression;
+@property (readonly) unsigned long long options;
+@property (readonly) unsigned long long predicateOperatorType;
+@property (readonly, retain) NSExpression *rightExpression;
 
 + (id)predicateWithLeftExpression:(id)arg1 rightExpression:(id)arg2 customSelector:(SEL)arg3;
 + (id)predicateWithLeftExpression:(id)arg1 rightExpression:(id)arg2 modifier:(unsigned long long)arg3 type:(unsigned long long)arg4 options:(unsigned long long)arg5;

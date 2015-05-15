@@ -15,11 +15,11 @@
     UIImageView *_imageView;
 }
 
-@property(assign,retain) UIView * accessoryView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } accessoryViewInsets;
-@property(assign,readwrite) bool antialiasEdges;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) unsigned long long imageFillMode;
+@property (nonatomic, retain) UIView *accessoryView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } accessoryViewInsets;
+@property (nonatomic) bool antialiasEdges;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) unsigned long long imageFillMode;
 
 - (void).cxx_destruct;
 - (void)_configure;

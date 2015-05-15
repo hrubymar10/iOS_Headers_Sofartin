@@ -13,14 +13,14 @@
     NSNumber *_shouldCompress;
 }
 
-@property(assign,retain) NSURL * attachedPath;
-@property(assign,copy) NSString * attachmentType;
-@property(assign,copy) NSNumber * deleteOnAttach;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSNumber * filesize;
-@property(assign,retain) NSDate * modificationDate;
-@property(assign,retain) NSURL * path;
-@property(assign,retain) NSNumber * shouldCompress;
+@property (nonatomic, retain) NSURL *attachedPath;
+@property (nonatomic, copy) NSString *attachmentType;
+@property (nonatomic, copy) NSNumber *deleteOnAttach;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSNumber *filesize;
+@property (nonatomic, retain) NSDate *modificationDate;
+@property (nonatomic, retain) NSURL *path;
+@property (nonatomic, retain) NSNumber *shouldCompress;
 
 + (id)newAttachmentWithPath:(id)arg1;
 + (id)newAttachmentWithPath:(id)arg1 withDisplayName:(id)arg2 modificationDate:(id)arg3 andFilesize:(id)arg4;

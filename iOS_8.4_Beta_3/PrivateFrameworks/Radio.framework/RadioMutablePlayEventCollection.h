@@ -4,7 +4,7 @@
 
 @interface RadioMutablePlayEventCollection : RadioPlayEventCollection
 
-@property(assign,copy) NSString * deviceName;
+@property (nonatomic, copy) NSString *deviceName;
 
 - (void)addPlayEvents:(id)arg1 forStation:(id)arg2;
 - (void)addPlayEvents:(id)arg1 forStationHash:(id)arg2 stationID:(long long)arg3;

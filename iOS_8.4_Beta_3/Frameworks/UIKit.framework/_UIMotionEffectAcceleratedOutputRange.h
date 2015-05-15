@@ -17,7 +17,7 @@
     } _referenceOffset;
 }
 
-@property(assign,readonly) struct CGPoint { double x1; double x2; } acceleration;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } acceleration;
 
 - (struct UIOffset { double x1; double x2; })acceleratedOutputForViewerOffset:(struct UIOffset { double x1; double x2; })arg1 accelerationBoostFactor:(struct CGPoint { double x1; double x2; })arg2;
 - (struct CGPoint { double x1; double x2; })acceleration;

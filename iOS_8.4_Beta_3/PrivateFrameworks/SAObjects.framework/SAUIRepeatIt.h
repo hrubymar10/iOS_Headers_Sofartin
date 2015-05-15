@@ -4,7 +4,7 @@
 
 @interface SAUIRepeatIt : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * contingency;
+@property (nonatomic, copy) NSString *contingency;
 
 + (id)repeatIt;
 + (id)repeatItWithDictionary:(id)arg1 context:(id)arg2;

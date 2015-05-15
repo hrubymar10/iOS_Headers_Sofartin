@@ -7,8 +7,8 @@
     NSMutableArray *_uniqueIDs;
 }
 
-@property(assign,retain) NSNumber * groupID;
-@property(assign,retain) NSMutableArray * uniqueIDs;
+@property (nonatomic, retain) NSNumber *groupID;
+@property (nonatomic, retain) NSMutableArray *uniqueIDs;
 
 + (bool)supportsSecureCoding;
 

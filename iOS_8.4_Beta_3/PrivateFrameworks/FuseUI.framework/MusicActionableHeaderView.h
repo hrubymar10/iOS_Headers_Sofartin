@@ -16,12 +16,12 @@
     UILabel *_headerTitleLabel;
 }
 
-@property(assign,readwrite) struct { long long x1; double x2; double x3; } actionableHeaderMetrics;
-@property(assign,copy) NSString * buttonTitle;
-@property(assign,readwrite) <MusicActionableHeaderViewDelegate> * delegate;
-@property(assign,readwrite) bool enforceMinimumLayoutMargins;
-@property(assign,copy) NSString * headerTitle;
-@property(assign,retain) UIColor * headerTitleColor;
+@property (nonatomic) struct { long long x1; double x2; double x3; } actionableHeaderMetrics;
+@property (nonatomic, copy) NSString *buttonTitle;
+@property (nonatomic) <MusicActionableHeaderViewDelegate> *delegate;
+@property (nonatomic) bool enforceMinimumLayoutMargins;
+@property (nonatomic, copy) NSString *headerTitle;
+@property (nonatomic, retain) UIColor *headerTitleColor;
 
 + (struct { long long x1; double x2; double x3; })defaultActionableHeaderMetrics;
 + (double)heightForTraitCollection:(id)arg1;

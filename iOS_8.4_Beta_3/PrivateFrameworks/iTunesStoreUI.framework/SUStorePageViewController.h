@@ -34,26 +34,26 @@
     bool _useWebViewFastPath;
 }
 
-@property(assign,copy) SSURLRequestProperties * URLRequestProperties;
-@property(getter=_isCacheExpired,assign,readonly) bool _cacheExpired;
-@property(getter=_reloadsWhenCacheExpired,setter=_setReloadsWhenCacheExpired:,assign,readwrite) bool _reloadsWhenCacheExpired;
-@property(assign,readonly) SUViewController * activeChildViewController;
-@property(assign,retain) SSAuthenticationContext * authenticationContext;
-@property(assign,readonly) bool canBeResolved;
-@property(assign,readwrite) bool canMoveToOverlay;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SUStorePageViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } documentBounds;
-@property(getter=isExternalRequest,assign,readwrite) bool externalRequest;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool loadsWhenHidden;
-@property(assign,readwrite) bool needsAuthentication;
-@property(assign,copy) NSString * scriptUserInfo;
-@property(assign,readonly) SUSearchFieldController * searchFieldController;
-@property(assign,readonly) SUPageSectionGroup * sectionGroup;
-@property(assign,readonly) SUSegmentedControl * sectionSegmentedControl;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) SSURLRequestProperties *URLRequestProperties;
+@property (getter=_isCacheExpired, nonatomic, readonly) bool _cacheExpired;
+@property (getter=_reloadsWhenCacheExpired, setter=_setReloadsWhenCacheExpired:, nonatomic) bool _reloadsWhenCacheExpired;
+@property (nonatomic, readonly) SUViewController *activeChildViewController;
+@property (nonatomic, retain) SSAuthenticationContext *authenticationContext;
+@property (nonatomic, readonly) bool canBeResolved;
+@property (nonatomic) bool canMoveToOverlay;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SUStorePageViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } documentBounds;
+@property (getter=isExternalRequest, nonatomic) bool externalRequest;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool loadsWhenHidden;
+@property (nonatomic) bool needsAuthentication;
+@property (nonatomic, copy) NSString *scriptUserInfo;
+@property (nonatomic, readonly) SUSearchFieldController *searchFieldController;
+@property (nonatomic, readonly) SUPageSectionGroup *sectionGroup;
+@property (nonatomic, readonly) SUSegmentedControl *sectionSegmentedControl;
+@property (readonly) Class superclass;
 
 - (id)URLRequest;
 - (id)URLRequestProperties;

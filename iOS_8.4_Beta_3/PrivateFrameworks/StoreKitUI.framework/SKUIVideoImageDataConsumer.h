@@ -16,11 +16,11 @@
     } _portraitSize;
 }
 
-@property(assign,readwrite) unsigned long long allowedOrientations;
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } landscapeSize;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } portraitSize;
+@property (nonatomic) unsigned long long allowedOrientations;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic) struct CGSize { double x1; double x2; } landscapeSize;
+@property (nonatomic) struct CGSize { double x1; double x2; } portraitSize;
 
 - (void).cxx_destruct;
 - (unsigned long long)allowedOrientations;

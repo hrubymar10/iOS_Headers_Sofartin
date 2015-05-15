@@ -13,21 +13,21 @@
     unsigned long long _state;
 }
 
-@property(assign,readwrite) bool _hasShownMismatchedSIM;
-@property(assign,readwrite) bool _hasShownWaitingAlertThisSession;
-@property(assign,readwrite) bool _isCarrierInstall;
-@property(assign,readwrite) bool _isInternalInstall;
-@property(assign,readwrite) bool _isNonUIInstall;
-@property(assign,readwrite) bool _isVendorInstall;
-@property(assign,readwrite) bool _settingUpActivationState;
-@property(setter=_setState:,assign,readwrite) unsigned long long _state;
-@property(assign,readonly) bool isActivated;
-@property(assign,readonly) bool isCarrierInstall;
-@property(assign,readonly) bool isExpired;
-@property(assign,readonly) bool isInternalInstall;
-@property(assign,readonly) bool isNonUIInstall;
-@property(assign,readonly) bool isVendorInstall;
-@property(assign,readonly) NSString * uniqueDeviceIdentifier;
+@property (nonatomic) bool _hasShownMismatchedSIM;
+@property (nonatomic) bool _hasShownWaitingAlertThisSession;
+@property (nonatomic) bool _isCarrierInstall;
+@property (nonatomic) bool _isInternalInstall;
+@property (nonatomic) bool _isNonUIInstall;
+@property (nonatomic) bool _isVendorInstall;
+@property (nonatomic) bool _settingUpActivationState;
+@property (setter=_setState:, nonatomic) unsigned long long _state;
+@property (nonatomic, readonly) bool isActivated;
+@property (nonatomic, readonly) bool isCarrierInstall;
+@property (nonatomic, readonly) bool isExpired;
+@property (nonatomic, readonly) bool isInternalInstall;
+@property (nonatomic, readonly) bool isNonUIInstall;
+@property (nonatomic, readonly) bool isVendorInstall;
+@property (nonatomic, readonly) NSString *uniqueDeviceIdentifier;
 
 + (id)sharedInstance;
 

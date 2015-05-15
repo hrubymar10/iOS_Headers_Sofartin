@@ -12,12 +12,12 @@
     NSMutableArray *_waypoints;
 }
 
-@property(assign,readonly) bool hasRouteHandle;
-@property(assign,readwrite) bool hasTransportType;
-@property(assign,retain) GEOURLRouteHandle * routeHandle;
-@property(assign,readwrite) int transportType;
-@property(assign,readonly) PBUnknownFields * unknownFields;
-@property(assign,retain) NSMutableArray * waypoints;
+@property (nonatomic, readonly) bool hasRouteHandle;
+@property (nonatomic) bool hasTransportType;
+@property (nonatomic, retain) GEOURLRouteHandle *routeHandle;
+@property (nonatomic) int transportType;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
+@property (nonatomic, retain) NSMutableArray *waypoints;
 
 - (void)addWaypoints:(id)arg1;
 - (void)clearWaypoints;

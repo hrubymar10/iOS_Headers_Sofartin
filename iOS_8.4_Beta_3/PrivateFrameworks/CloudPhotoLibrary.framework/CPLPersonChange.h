@@ -6,7 +6,7 @@
     NSString *_fullName;
 }
 
-@property(assign,copy) NSString * fullName;
+@property (nonatomic, copy) NSString *fullName;
 
 - (void).cxx_destruct;
 - (id)fullName;

@@ -17,23 +17,23 @@
     id _weak_updateHandlerWeakSelf;
 }
 
-@property(assign,readwrite) bool afterInitialUpdate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id handler;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) Class itemClass;
-@property(assign,retain) NSOrderedSet * lastSnapshot;
-@property(assign,retain) NSDate * lastSnapshotDate;
-@property(assign,retain) NSPredicate * predicate;
-@property(assign,retain) NSMetadataQuery * query;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queryQueue;
-@property(assign,retain) NSOperationQueue * queryWorkerQueue;
-@property(assign,retain) NSArray * scopes;
-@property(assign,retain) NSArray * sortDescriptors;
-@property(assign,retain) NSOrderedSet * staticItems;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) id updateHandlerWeakSelf;
+@property (nonatomic) bool afterInitialUpdate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id handler;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) Class itemClass;
+@property (nonatomic, retain) NSOrderedSet *lastSnapshot;
+@property (nonatomic, retain) NSDate *lastSnapshotDate;
+@property (nonatomic, retain) NSPredicate *predicate;
+@property (nonatomic, retain) NSMetadataQuery *query;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queryQueue;
+@property (nonatomic, retain) NSOperationQueue *queryWorkerQueue;
+@property (nonatomic, retain) NSArray *scopes;
+@property (nonatomic, retain) NSArray *sortDescriptors;
+@property (nonatomic, retain) NSOrderedSet *staticItems;
+@property (readonly) Class superclass;
+@property (nonatomic) id updateHandlerWeakSelf;
 
 - (id)_computeUpdatesFromOld:(id)arg1 toNew:(id)arg2 changedItems:(id)arg3;
 - (void)_initialGatherFinished:(id)arg1;

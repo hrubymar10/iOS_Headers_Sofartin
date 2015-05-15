@@ -9,11 +9,11 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,retain) NSMutableDictionary * _loadHandlers;
-@property(assign,retain) <_NSItemProviderLoading> * _loadOperator;
-@property(assign,copy) id previewImageHandler;
-@property(assign,copy) NSArray * registeredTypeIdentifiers;
-@property(assign,copy) NSDictionary * userInfo;
+@property (nonatomic, retain) NSMutableDictionary *_loadHandlers;
+@property (nonatomic, retain) <_NSItemProviderLoading> *_loadOperator;
+@property (nonatomic, copy) id previewImageHandler;
+@property (nonatomic, readonly, copy) NSArray *registeredTypeIdentifiers;
+@property (nonatomic, copy) NSDictionary *userInfo;
 
 + (bool)supportsSecureCoding;
 

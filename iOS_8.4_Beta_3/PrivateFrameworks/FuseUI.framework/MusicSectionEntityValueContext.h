@@ -7,8 +7,8 @@
     bool _wantsLocalizedTitle;
 }
 
-@property(assign,copy) NSString * localizedTitle;
-@property(assign,readwrite) bool wantsLocalizedTitle;
+@property (nonatomic, copy) NSString *localizedTitle;
+@property (nonatomic) bool wantsLocalizedTitle;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -11,12 +11,12 @@
     long long _resultType;
 }
 
-@property(assign,retain) SSAccount * account;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,retain) SSVRedeemCodeMetadata * codeMetadata;
-@property(assign,copy) NSError * error;
-@property(assign,retain) SKUIRedeemConfiguration * redeemConfiguration;
-@property(assign,readwrite) long long resultType;
+@property (nonatomic, retain) SSAccount *account;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (nonatomic, retain) SSVRedeemCodeMetadata *codeMetadata;
+@property (nonatomic, copy) NSError *error;
+@property (nonatomic, retain) SKUIRedeemConfiguration *redeemConfiguration;
+@property (nonatomic) long long resultType;
 
 - (void).cxx_destruct;
 - (id)account;

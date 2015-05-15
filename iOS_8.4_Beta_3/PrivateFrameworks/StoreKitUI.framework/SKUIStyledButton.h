@@ -28,22 +28,22 @@
     bool _usesTintColor;
 }
 
-@property(assign,readonly) double baselineOffset;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } bigHitInsets;
-@property(assign,copy) SKUIButtonBorderStyle * borderStyle;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } buttonPadding;
-@property(assign,readwrite) long long buttonType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double firstBaselineOffset;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIImageView * imageView;
-@property(assign,readwrite) <SKUIItemOfferButtonDelegate> * itemOfferDelegate;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SKUIAttributedStringLayout * titleLayout;
-@property(assign,readwrite) bool useBigHitTarget;
-@property(assign,readwrite) bool usesTintColor;
-@property(getter=isUsingItemOfferAppearance,assign,readonly) bool usingItemOfferAppearance;
+@property (nonatomic, readonly) double baselineOffset;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } bigHitInsets;
+@property (nonatomic, copy) SKUIButtonBorderStyle *borderStyle;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } buttonPadding;
+@property (nonatomic) long long buttonType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double firstBaselineOffset;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIImageView *imageView;
+@property (nonatomic) <SKUIItemOfferButtonDelegate> *itemOfferDelegate;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SKUIAttributedStringLayout *titleLayout;
+@property (nonatomic) bool useBigHitTarget;
+@property (nonatomic) bool usesTintColor;
+@property (getter=isUsingItemOfferAppearance, nonatomic, readonly) bool usingItemOfferAppearance;
 
 + (long long)buttonTypeForElement:(id)arg1;
 + (struct CGSize { double x1; double x2; })sizeForTextSize:(struct CGSize { double x1; double x2; })arg1 buttonType:(long long)arg2;

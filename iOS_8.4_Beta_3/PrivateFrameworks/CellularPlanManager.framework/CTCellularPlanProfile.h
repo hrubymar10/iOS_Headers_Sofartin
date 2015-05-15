@@ -9,10 +9,10 @@
     NSData *_profileId;
 }
 
-@property(assign,copy) NSString * iccid;
-@property(assign,readwrite) bool isBootstrap;
-@property(assign,readwrite) bool isSelected;
-@property(assign,copy) NSData * profileId;
+@property (nonatomic, copy) NSString *iccid;
+@property (nonatomic) bool isBootstrap;
+@property (nonatomic) bool isSelected;
+@property (nonatomic, copy) NSData *profileId;
 
 + (bool)supportsSecureCoding;
 

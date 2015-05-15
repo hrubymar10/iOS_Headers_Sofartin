@@ -10,11 +10,11 @@
     float _progress;
 }
 
-@property(assign,readwrite) bool didFinish;
-@property(assign,readwrite) bool didStart;
-@property(assign,retain) NSError * finalError;
-@property(assign,retain) CPLResource * finalResource;
-@property(assign,readwrite) float progress;
+@property (nonatomic) bool didFinish;
+@property (nonatomic) bool didStart;
+@property (nonatomic, retain) NSError *finalError;
+@property (nonatomic, retain) CPLResource *finalResource;
+@property (nonatomic) float progress;
 
 - (void).cxx_destruct;
 - (id)description;

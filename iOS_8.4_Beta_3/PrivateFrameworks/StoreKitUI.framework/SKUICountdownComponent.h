@@ -6,7 +6,7 @@
     SKUICountdown *_countdown;
 }
 
-@property(assign,retain) SKUICountdown * countdown;
+@property (nonatomic, retain) SKUICountdown *countdown;
 
 - (void).cxx_destruct;
 - (long long)componentType;

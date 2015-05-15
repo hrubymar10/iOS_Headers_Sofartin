@@ -7,12 +7,12 @@
     NSError *_shutdownReason;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CLIndoorDelegateProtocol> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSError * shutdownReason;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CLIndoorDelegateProtocol> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSError *shutdownReason;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)delegate;

@@ -7,7 +7,7 @@
     double _value;
 }
 
-@property(getter=_unit,assign,readonly) HKUnit * unit;
+@property (getter=_unit, nonatomic, readonly) HKUnit *unit;
 
 + (id)quantityWithUnit:(id)arg1 doubleValue:(double)arg2;
 + (bool)supportsSecureCoding;

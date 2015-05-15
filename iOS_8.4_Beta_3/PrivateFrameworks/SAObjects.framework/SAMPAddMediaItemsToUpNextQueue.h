@@ -4,8 +4,8 @@
 
 @interface SAMPAddMediaItemsToUpNextQueue : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * insertLocation;
-@property(assign,retain) SAMPCollection * mediaCollection;
+@property (nonatomic, copy) NSString *insertLocation;
+@property (nonatomic, retain) SAMPCollection *mediaCollection;
 
 + (id)addMediaItemsToUpNextQueue;
 + (id)addMediaItemsToUpNextQueueWithDictionary:(id)arg1 context:(id)arg2;

@@ -17,18 +17,18 @@
     bool _userNameRequired;
 }
 
-@property(assign,copy) NSString * password;
-@property(assign,readwrite) bool passwordRequired;
-@property(assign,copy) NSString * pin;
-@property(assign,readwrite) bool pinRequired;
-@property(assign,copy) NSString * proxyPassword;
-@property(assign,readwrite) bool proxyPasswordRequired;
-@property(assign,copy) NSString * proxyUserName;
-@property(assign,readwrite) bool proxyUserNameRequired;
-@property(assign,copy) NSString * sharedSecret;
-@property(assign,readwrite) bool sharedSecretRequired;
-@property(assign,copy) NSString * userName;
-@property(assign,readwrite) bool userNameRequired;
+@property (nonatomic, copy) NSString *password;
+@property (nonatomic) bool passwordRequired;
+@property (nonatomic, copy) NSString *pin;
+@property (nonatomic) bool pinRequired;
+@property (nonatomic, copy) NSString *proxyPassword;
+@property (nonatomic) bool proxyPasswordRequired;
+@property (nonatomic, copy) NSString *proxyUserName;
+@property (nonatomic) bool proxyUserNameRequired;
+@property (nonatomic, copy) NSString *sharedSecret;
+@property (nonatomic) bool sharedSecretRequired;
+@property (nonatomic, copy) NSString *userName;
+@property (nonatomic) bool userNameRequired;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

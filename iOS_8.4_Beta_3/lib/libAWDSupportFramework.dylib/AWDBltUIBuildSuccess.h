@@ -10,10 +10,10 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readonly) bool hasSectionid;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,retain) NSString * sectionid;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic, readonly) bool hasSectionid;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, retain) NSString *sectionid;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

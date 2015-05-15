@@ -10,7 +10,7 @@
     int _maxFileGroupNumber;
 }
 
-@property(assign,readwrite) bool considerInvalidFileGroups;
+@property bool considerInvalidFileGroups;
 
 + (id)fileGroupRequiredEmptyExtensions;
 + (id)fileGroupRequiredEmptyPrefixes;

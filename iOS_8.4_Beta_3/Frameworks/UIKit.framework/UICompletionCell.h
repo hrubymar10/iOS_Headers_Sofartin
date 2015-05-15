@@ -6,7 +6,7 @@
     NSString *_cellContentString;
 }
 
-@property(getter=_contentString,setter=_setContentString:,assign,retain) NSString * contentString;
+@property (getter=_contentString, setter=_setContentString:, nonatomic, retain) NSString *contentString;
 
 - (id)_contentString;
 - (void)_setContentString:(id)arg1;

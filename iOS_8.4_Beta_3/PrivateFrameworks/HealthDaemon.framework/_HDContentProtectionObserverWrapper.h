@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readonly) <HDContentProtectionObserver> * observer;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, readonly) <HDContentProtectionObserver> *observer;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
 
 - (void).cxx_destruct;
 - (id)initWithObserver:(id)arg1 queue:(id)arg2;

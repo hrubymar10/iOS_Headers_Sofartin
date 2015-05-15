@@ -17,15 +17,15 @@
     } _visualStyling;
 }
 
-@property(assign,readonly) TIKeyboardCandidateResultSet * candidateResultSet;
-@property(assign,retain) UIKeyboardCandidateGridCollectionViewController * collectionViewController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIKeyboardCandidateSortControl * scrollViewSortControl;
-@property(assign,readwrite) unsigned long long selectedSortIndex;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) struct { unsigned int x1 : 6; unsigned int x2 : 1; unsigned int x3 : 1; unsigned int x4 : 8; unsigned int x5 : 16; } visualStyling;
+@property (nonatomic, readonly) TIKeyboardCandidateResultSet *candidateResultSet;
+@property (nonatomic, retain) UIKeyboardCandidateGridCollectionViewController *collectionViewController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIKeyboardCandidateSortControl *scrollViewSortControl;
+@property (nonatomic) unsigned long long selectedSortIndex;
+@property (readonly) Class superclass;
+@property (nonatomic) struct { unsigned int x1 : 6; unsigned int x2 : 1; unsigned int x3 : 1; unsigned int x4 : 8; unsigned int x5 : 16; } visualStyling;
 
 - (void)addSubview:(id)arg1;
 - (void)candidateAcceptedAtIndex:(unsigned long long)arg1;

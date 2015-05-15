@@ -9,10 +9,10 @@
     float _volumeDuringSlowMotion;
 }
 
-@property(assign,retain) PFSlowMotionRampConfiguration * rampDown;
-@property(assign,retain) PFSlowMotionRampConfiguration * rampUp;
-@property(assign,readonly) float volumeDuringRampToSlowMotion;
-@property(assign,readonly) float volumeDuringSlowMotion;
+@property (nonatomic, readonly, retain) PFSlowMotionRampConfiguration *rampDown;
+@property (nonatomic, readonly, retain) PFSlowMotionRampConfiguration *rampUp;
+@property (nonatomic, readonly) float volumeDuringRampToSlowMotion;
+@property (nonatomic, readonly) float volumeDuringSlowMotion;
 
 - (void).cxx_destruct;
 - (id)init;

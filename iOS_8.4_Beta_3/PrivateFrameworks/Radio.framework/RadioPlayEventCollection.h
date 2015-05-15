@@ -7,7 +7,7 @@
     NSMapTable *_stationInformationToPlayEvents;
 }
 
-@property(assign,copy) NSString * deviceName;
+@property (nonatomic, readonly, copy) NSString *deviceName;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

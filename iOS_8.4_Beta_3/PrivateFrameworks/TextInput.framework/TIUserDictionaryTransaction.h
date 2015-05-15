@@ -7,8 +7,8 @@
     TIUserDictionaryEntryValue *_valueToInsert;
 }
 
-@property(assign,retain) TIUserDictionaryEntryValue * valueToDelete;
-@property(assign,retain) TIUserDictionaryEntryValue * valueToInsert;
+@property (nonatomic, retain) TIUserDictionaryEntryValue *valueToDelete;
+@property (nonatomic, retain) TIUserDictionaryEntryValue *valueToInsert;
 
 + (bool)supportsSecureCoding;
 

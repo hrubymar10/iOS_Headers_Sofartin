@@ -4,7 +4,7 @@
 
 @interface SAStockDelete : SADomainCommand
 
-@property(assign,copy) NSArray * stocks;
+@property (nonatomic, copy) NSArray *stocks;
 
 + (id)delete;
 + (id)deleteWithDictionary:(id)arg1 context:(id)arg2;

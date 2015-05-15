@@ -7,8 +7,8 @@
     float _score;
 }
 
-@property(assign,readonly) WBSHistoryItem * historyItem;
-@property(assign,readonly) float score;
+@property (nonatomic, readonly) WBSHistoryItem *historyItem;
+@property (nonatomic, readonly) float score;
 
 - (void).cxx_destruct;
 - (id)historyItem;

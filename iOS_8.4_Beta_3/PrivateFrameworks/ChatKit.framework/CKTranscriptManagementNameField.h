@@ -13,19 +13,19 @@
     UIView *_topSeparator;
 }
 
-@property(assign,retain) _UIBackdropView * backdropView;
-@property(assign,retain) UIView * bottomSeparator;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKTranscriptManagementNameFieldDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,retain) UILabel * fieldLabel;
-@property(assign,copy) NSString * groupName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isOverlay;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITextField * textField;
-@property(assign,retain) UIView * topSeparator;
+@property (nonatomic, retain) _UIBackdropView *backdropView;
+@property (nonatomic, retain) UIView *bottomSeparator;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKTranscriptManagementNameFieldDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic, retain) UILabel *fieldLabel;
+@property (nonatomic, copy) NSString *groupName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isOverlay;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UITextField *textField;
+@property (nonatomic, retain) UIView *topSeparator;
 
 + (double)preferredHeight;
 

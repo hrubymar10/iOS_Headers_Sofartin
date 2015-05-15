@@ -10,10 +10,10 @@
     } _has;
 }
 
-@property(assign,readwrite) int errorCode;
-@property(assign,retain) NSString * errorDescription;
-@property(assign,readwrite) bool hasErrorCode;
-@property(assign,readonly) bool hasErrorDescription;
+@property (nonatomic) int errorCode;
+@property (nonatomic, retain) NSString *errorDescription;
+@property (nonatomic) bool hasErrorCode;
+@property (nonatomic, readonly) bool hasErrorDescription;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

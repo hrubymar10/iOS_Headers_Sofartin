@@ -18,22 +18,22 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,readwrite) <HAPAccessoryDelegate> * delegate;
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSNumber * instanceID;
-@property(assign,readonly) long long linkType;
-@property(assign,copy) NSString * manufacturer;
-@property(assign,copy) NSString * model;
-@property(assign,copy) NSString * name;
-@property(getter=isPaired,assign,readonly) bool paired;
-@property(getter=isPrimary,assign,readwrite) bool primary;
-@property(getter=isReachable,assign,readwrite) bool reachable;
-@property(assign,copy) NSString * serialNumber;
-@property(assign,readwrite) HAPAccessoryServer * server;
-@property(assign,retain) NSArray * services;
-@property(assign,readonly) bool supportsGroupedRequests;
-@property(assign,copy) NSString * uniqueIdentifier;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic) <HAPAccessoryDelegate> *delegate;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSNumber *instanceID;
+@property (nonatomic, readonly) long long linkType;
+@property (nonatomic, copy) NSString *manufacturer;
+@property (nonatomic, copy) NSString *model;
+@property (nonatomic, copy) NSString *name;
+@property (getter=isPaired, nonatomic, readonly) bool paired;
+@property (getter=isPrimary, nonatomic) bool primary;
+@property (getter=isReachable, nonatomic) bool reachable;
+@property (nonatomic, copy) NSString *serialNumber;
+@property (nonatomic) HAPAccessoryServer *server;
+@property (nonatomic, retain) NSArray *services;
+@property (nonatomic, readonly) bool supportsGroupedRequests;
+@property (nonatomic, copy) NSString *uniqueIdentifier;
+@property (retain) NSObject<OS_dispatch_queue> *workQueue;
 
 + (bool)isAccessoryPairedWithIdentifier:(id)arg1;
 + (bool)isAccessoryPrimaryWithUniqueIdentifier:(id)arg1;

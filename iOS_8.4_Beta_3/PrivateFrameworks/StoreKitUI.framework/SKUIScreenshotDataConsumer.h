@@ -11,9 +11,9 @@
     } _screenshotSize;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } constraintSize;
-@property(assign,readwrite) bool drawsBorder;
-@property(assign,readwrite) bool forcesPortrait;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } constraintSize;
+@property (nonatomic) bool drawsBorder;
+@property (nonatomic) bool forcesPortrait;
 
 + (id)consumer;
 + (id)consumerWithScreenshotSize:(struct CGSize { double x1; double x2; })arg1;

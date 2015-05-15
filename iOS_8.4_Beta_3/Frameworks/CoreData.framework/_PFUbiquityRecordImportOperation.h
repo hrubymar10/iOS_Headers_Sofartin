@@ -24,27 +24,27 @@
     bool _wroteKV;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) NSObject<_PFUbiquityRecordImportOperationDelegate> * delegate;
-@property(assign,readonly) NSMutableSet * deletedObjectIDs;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PFUbiquityImportContext * importContext;
-@property(assign,readonly) PFUbiquityKnowledgeVector * initialStoreKnowledgeVector;
-@property(assign,readonly) NSMutableSet * insertedObjectIDs;
-@property(assign,readwrite) bool lockedExistingCoord;
-@property(assign,retain) PFUbiquityKnowledgeVector * logScore;
-@property(assign,readonly) NSManagedObjectContext * moc;
-@property(assign,readonly) NSError * operationError;
-@property(assign,readonly) NSPersistentStoreCoordinator * psc;
-@property(assign,readonly) NSMutableDictionary * resolvedConflicts;
-@property(assign,readonly) bool success;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool transactionDidRollBack;
-@property(assign,readonly) PFUbiquityTransactionLog * transactionLog;
-@property(assign,readonly) NSMutableSet * updatedObjectIDs;
-@property(assign,retain) PFUbiquityKnowledgeVector * updatedStoreKnowledgeVector;
-@property(assign,readonly) bool wroteKV;
+@property (readonly, copy) NSString *debugDescription;
+@property NSObject<_PFUbiquityRecordImportOperationDelegate> *delegate;
+@property (nonatomic, readonly) NSMutableSet *deletedObjectIDs;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PFUbiquityImportContext *importContext;
+@property (readonly) PFUbiquityKnowledgeVector *initialStoreKnowledgeVector;
+@property (nonatomic, readonly) NSMutableSet *insertedObjectIDs;
+@property bool lockedExistingCoord;
+@property (nonatomic, retain) PFUbiquityKnowledgeVector *logScore;
+@property (readonly) NSManagedObjectContext *moc;
+@property (nonatomic, readonly) NSError *operationError;
+@property (readonly) NSPersistentStoreCoordinator *psc;
+@property (nonatomic, readonly) NSMutableDictionary *resolvedConflicts;
+@property (nonatomic, readonly) bool success;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool transactionDidRollBack;
+@property (nonatomic, readonly) PFUbiquityTransactionLog *transactionLog;
+@property (nonatomic, readonly) NSMutableSet *updatedObjectIDs;
+@property (nonatomic, retain) PFUbiquityKnowledgeVector *updatedStoreKnowledgeVector;
+@property (nonatomic, readonly) bool wroteKV;
 
 - (bool)applyChangesFromStoreSaveSnapshot:(id)arg1 withImportContext:(id)arg2 withError:(id*)arg3;
 - (void)cancel;

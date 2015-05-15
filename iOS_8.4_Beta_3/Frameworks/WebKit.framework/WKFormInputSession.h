@@ -9,13 +9,13 @@
     } _userObject;
 }
 
-@property(assign,copy) NSString * accessoryViewCustomButtonTitle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSObject<NSSecureCoding> * userObject;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (nonatomic, copy) NSString *accessoryViewCustomButtonTitle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSObject<NSSecureCoding> *userObject;
+@property (getter=isValid, nonatomic, readonly) bool valid;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

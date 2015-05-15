@@ -6,7 +6,7 @@
     SUMediaPlayerItem *_mediaItem;
 }
 
-@property(assign,copy) SUMediaPlayerItem * mediaPlayerItem;
+@property (nonatomic, readonly, copy) SUMediaPlayerItem *mediaPlayerItem;
 
 - (bool)_runHEADRequest:(id*)arg1;
 - (void)dealloc;

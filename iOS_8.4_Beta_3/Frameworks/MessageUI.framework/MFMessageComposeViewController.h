@@ -14,15 +14,15 @@
     NSString *_subject;
 }
 
-@property(assign,copy) NSArray * attachments;
-@property(assign,copy) NSString * body;
-@property(assign,readwrite) unsigned long long currentAttachedAudioCount;
-@property(assign,readwrite) unsigned long long currentAttachedImageCount;
-@property(assign,readwrite) unsigned long long currentAttachedVideoCount;
-@property(assign,readwrite) <MFMessageComposeViewControllerDelegate> * messageComposeDelegate;
-@property(assign,copy) NSMutableArray * mutableAttachmentURLs;
-@property(assign,copy) NSArray * recipients;
-@property(assign,copy) NSString * subject;
+@property (nonatomic, readonly, copy) NSArray *attachments;
+@property (nonatomic, copy) NSString *body;
+@property (nonatomic) unsigned long long currentAttachedAudioCount;
+@property (nonatomic) unsigned long long currentAttachedImageCount;
+@property (nonatomic) unsigned long long currentAttachedVideoCount;
+@property (nonatomic) <MFMessageComposeViewControllerDelegate> *messageComposeDelegate;
+@property (nonatomic, copy) NSMutableArray *mutableAttachmentURLs;
+@property (nonatomic, copy) NSArray *recipients;
+@property (nonatomic, copy) NSString *subject;
 
 + (bool)_canSendText;
 + (void)_serviceAvailabilityChanged:(id)arg1;

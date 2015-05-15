@@ -4,17 +4,17 @@
 
 @interface CADynamicsBehavior : CABehavior
 
-@property(assign,readwrite) double angularDrag;
-@property(assign,readwrite) double collisionInterval;
-@property(assign,readwrite) double drag;
-@property(assign,copy) NSArray * forceFields;
-@property(assign,readwrite) double minimumTimeStep;
-@property(assign,readwrite) bool reactsToCollisions;
-@property(assign,readwrite) double springScale;
-@property(assign,copy) NSArray * springs;
-@property(assign,readwrite) double stoppedAngularVelocity;
-@property(assign,readwrite) double stoppedVelocity;
-@property(assign,readwrite) double timeStep;
+@property double angularDrag;
+@property double collisionInterval;
+@property double drag;
+@property (copy) NSArray *forceFields;
+@property double minimumTimeStep;
+@property bool reactsToCollisions;
+@property double springScale;
+@property (copy) NSArray *springs;
+@property double stoppedAngularVelocity;
+@property double stoppedVelocity;
+@property double timeStep;
 
 + (id)defaultValueForKey:(id)arg1;
 

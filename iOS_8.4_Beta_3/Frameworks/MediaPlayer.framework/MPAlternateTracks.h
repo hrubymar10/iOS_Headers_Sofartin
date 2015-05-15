@@ -12,14 +12,14 @@
     NSMutableDictionary *_trackChangeDictionary;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool disableAlternateTextTrackRendering;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isLoaded,assign,readonly) bool loaded;
-@property(assign,retain) NSArray * outOfBandTextTracks;
-@property(assign,retain) MPAlternateTextTrack * selectedAlternateTextTrack;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool disableAlternateTextTrackRendering;
+@property (readonly) unsigned long long hash;
+@property (getter=isLoaded, nonatomic, readonly) bool loaded;
+@property (nonatomic, retain) NSArray *outOfBandTextTracks;
+@property (nonatomic, retain) MPAlternateTextTrack *selectedAlternateTextTrack;
+@property (readonly) Class superclass;
 
 + (id)subtitleLanguages;
 

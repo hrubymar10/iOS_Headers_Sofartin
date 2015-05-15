@@ -6,7 +6,7 @@
     NSMapTable *_keysForSizes;
 }
 
-@property(assign,retain) NSMapTable * keysForSizes;
+@property (nonatomic, retain) NSMapTable *keysForSizes;
 
 - (void)dealloc;
 - (id)imageForImageSize:(struct CGSize { double x1; double x2; })arg1;

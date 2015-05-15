@@ -11,12 +11,12 @@
     CoreDAVItemWithNoChildren *_protectedItem;
 }
 
-@property(assign,retain) CoreDAVDenyItem * deny;
-@property(assign,retain) CoreDAVGrantItem * grant;
-@property(assign,retain) CoreDAVItemWithHrefChildItem * inherited;
-@property(assign,retain) CoreDAVInvertItem * invert;
-@property(assign,retain) CoreDAVPrincipalItem * principal;
-@property(assign,retain) CoreDAVItemWithNoChildren * protectedItem;
+@property (nonatomic, retain) CoreDAVDenyItem *deny;
+@property (nonatomic, retain) CoreDAVGrantItem *grant;
+@property (nonatomic, retain) CoreDAVItemWithHrefChildItem *inherited;
+@property (nonatomic, retain) CoreDAVInvertItem *invert;
+@property (nonatomic, retain) CoreDAVPrincipalItem *principal;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *protectedItem;
 
 + (id)copyParseRules;
 + (id)privilegeItemWithNameSpace:(id)arg1 andName:(id)arg2;

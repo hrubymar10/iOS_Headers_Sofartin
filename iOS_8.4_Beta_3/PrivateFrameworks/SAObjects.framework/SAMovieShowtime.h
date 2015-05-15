@@ -4,17 +4,17 @@
 
 @interface SAMovieShowtime : AceObject <SAAceSerializable>
 
-@property(assign,retain) SAUIAppPunchOut * buyTicketsPunchout;
-@property(assign,copy) NSNumber * childTicketQuantity;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool is3d;
-@property(assign,readwrite) bool isImax;
-@property(assign,copy) NSNumber * regularTicketQuantity;
-@property(assign,copy) NSNumber * seniorTicketQuantity;
-@property(assign,retain) SACalendar * showtime;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SAUIAppPunchOut *buyTicketsPunchout;
+@property (nonatomic, copy) NSNumber *childTicketQuantity;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool is3d;
+@property (nonatomic) bool isImax;
+@property (nonatomic, copy) NSNumber *regularTicketQuantity;
+@property (nonatomic, copy) NSNumber *seniorTicketQuantity;
+@property (nonatomic, retain) SACalendar *showtime;
+@property (readonly) Class superclass;
 
 + (id)showtime;
 + (id)showtimeWithDictionary:(id)arg1 context:(id)arg2;

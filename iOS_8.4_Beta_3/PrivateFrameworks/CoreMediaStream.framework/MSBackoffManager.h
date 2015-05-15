@@ -13,14 +13,14 @@
     NSDate *_retryAfterDate;
 }
 
-@property(assign,readwrite) double backoffFactor;
-@property(assign,readwrite) double currentInterval;
-@property(assign,readwrite) <MSBackoffManagerDelegate> * delegate;
-@property(assign,readwrite) double initialInterval;
-@property(assign,readwrite) double maxBackoffInterval;
-@property(assign,retain) NSDate * nextExpiryDate;
-@property(assign,readwrite) double randomizeFactor;
-@property(assign,retain) NSDate * retryAfterDate;
+@property (nonatomic) double backoffFactor;
+@property (nonatomic) double currentInterval;
+@property (nonatomic) <MSBackoffManagerDelegate> *delegate;
+@property (nonatomic) double initialInterval;
+@property (nonatomic) double maxBackoffInterval;
+@property (nonatomic, retain) NSDate *nextExpiryDate;
+@property (nonatomic) double randomizeFactor;
+@property (nonatomic, retain) NSDate *retryAfterDate;
 
 - (void).cxx_destruct;
 - (void)_complainAboutMissingKeyInArchive:(id)arg1;

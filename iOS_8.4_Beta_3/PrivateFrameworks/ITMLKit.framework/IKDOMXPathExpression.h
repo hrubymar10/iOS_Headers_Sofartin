@@ -6,7 +6,7 @@
     id _evaluatingBlock;
 }
 
-@property(assign,copy) id evaluatingBlock;
+@property (nonatomic, copy) id evaluatingBlock;
 
 - (void).cxx_destruct;
 - (id)evaluate:(id)arg1 :(long long)arg2 :(id)arg3;

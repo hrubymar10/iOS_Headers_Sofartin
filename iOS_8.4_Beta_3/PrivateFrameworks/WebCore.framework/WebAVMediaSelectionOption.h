@@ -6,7 +6,7 @@
     NSString *_localizedDisplayName;
 }
 
-@property(assign,retain) NSString * localizedDisplayName;
+@property (retain) NSString *localizedDisplayName;
 
 - (id)localizedDisplayName;
 - (void)setLocalizedDisplayName:(id)arg1;

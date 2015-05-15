@@ -6,9 +6,9 @@
     CRCameraReaderOutputInternal *_objectInternal;
 }
 
-@property(assign,retain) CRCameraReaderOutputInternal * objectInternal;
-@property(assign,readonly) NSString * stringValue;
-@property(assign,readonly) NSString * type;
+@property (retain) CRCameraReaderOutputInternal *objectInternal;
+@property (readonly) NSString *stringValue;
+@property (readonly) NSString *type;
 
 - (void).cxx_destruct;
 - (void)dealloc;

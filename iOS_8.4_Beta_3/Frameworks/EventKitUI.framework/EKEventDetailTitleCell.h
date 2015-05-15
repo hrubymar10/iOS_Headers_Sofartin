@@ -19,7 +19,7 @@
     unsigned int _visibleItems;
 }
 
-@property(assign,readwrite) NSObject<EKEventDetailTitleCellDelegate> * delegate;
+@property (nonatomic) NSObject<EKEventDetailTitleCellDelegate> *delegate;
 
 + (void)_invalidateCachedFonts;
 + (id)_locationFont;

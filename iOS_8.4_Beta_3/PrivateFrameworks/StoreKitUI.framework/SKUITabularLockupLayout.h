@@ -6,7 +6,7 @@
     NSArray *_columns;
 }
 
-@property(assign,readonly) NSArray * columns;
+@property (nonatomic, readonly) NSArray *columns;
 
 + (id)fontForLabelViewElement:(id)arg1 context:(id)arg2;
 

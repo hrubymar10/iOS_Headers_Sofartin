@@ -8,9 +8,9 @@
     NSString *_publicGlobalUUID;
 }
 
-@property(assign,readonly) PHAsset * asset;
-@property(assign,retain) NSData * originalHash;
-@property(assign,retain) NSString * publicGlobalUUID;
+@property (nonatomic, readonly) PHAsset *asset;
+@property (nonatomic, retain) NSData *originalHash;
+@property (nonatomic, retain) NSString *publicGlobalUUID;
 
 - (void).cxx_destruct;
 - (id)asset;

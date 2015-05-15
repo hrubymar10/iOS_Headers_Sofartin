@@ -11,12 +11,12 @@
     NSString *_identifier;
 }
 
-@property(assign,copy) NSString * assetType;
-@property(assign,copy) NSString * dataclass;
-@property(assign,copy) NSString * displayName;
-@property(assign,copy) NSError * error;
-@property(assign,copy) NSData * icon;
-@property(assign,copy) NSString * identifier;
+@property (nonatomic, copy) NSString *assetType;
+@property (nonatomic, copy) NSString *dataclass;
+@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic, copy) NSError *error;
+@property (nonatomic, copy) NSData *icon;
+@property (nonatomic, copy) NSString *identifier;
 
 - (id)assetType;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

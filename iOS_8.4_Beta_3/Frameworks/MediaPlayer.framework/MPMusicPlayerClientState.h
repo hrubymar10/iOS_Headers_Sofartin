@@ -17,18 +17,18 @@
     bool _videoPlaybackEnabled;
 }
 
-@property(assign,readwrite) bool allowsBackgroundVideo;
-@property(assign,readwrite) int backgroundPlaybackAccess;
-@property(assign,retain) MPMediaItem * firstItem;
-@property(assign,retain) MPMediaPlaylist * geniusMixPlaylist;
-@property(assign,readwrite) bool hasAudioBackgroundMode;
-@property(assign,retain) MPMediaQuery * query;
-@property(assign,retain) MPRadioStation * radioStation;
-@property(assign,readwrite) long long repeatMode;
-@property(assign,readwrite) bool seeking;
-@property(assign,readwrite) long long shuffleMode;
-@property(assign,readwrite) bool useApplicationSpecificQueue;
-@property(assign,readwrite) bool videoPlaybackEnabled;
+@property (nonatomic) bool allowsBackgroundVideo;
+@property (nonatomic) int backgroundPlaybackAccess;
+@property (nonatomic, retain) MPMediaItem *firstItem;
+@property (nonatomic, retain) MPMediaPlaylist *geniusMixPlaylist;
+@property (nonatomic) bool hasAudioBackgroundMode;
+@property (nonatomic, retain) MPMediaQuery *query;
+@property (nonatomic, retain) MPRadioStation *radioStation;
+@property (nonatomic) long long repeatMode;
+@property (nonatomic) bool seeking;
+@property (nonatomic) long long shuffleMode;
+@property (nonatomic) bool useApplicationSpecificQueue;
+@property (nonatomic) bool videoPlaybackEnabled;
 
 - (void).cxx_destruct;
 - (bool)allowsBackgroundVideo;

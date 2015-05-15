@@ -6,7 +6,7 @@
     GEOLatLng *_location;
 }
 
-@property(assign,retain) GEOLatLng * location;
+@property (nonatomic, retain) GEOLatLng *location;
 
 - (struct { double x1; double x2; })coordinate;
 - (void)copyTo:(id)arg1;

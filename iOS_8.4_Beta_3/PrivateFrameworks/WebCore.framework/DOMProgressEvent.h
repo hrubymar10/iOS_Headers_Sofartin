@@ -4,9 +4,9 @@
 
 @interface DOMProgressEvent : DOMEvent
 
-@property(assign,readonly) bool lengthComputable;
-@property(assign,readonly) unsigned long long loaded;
-@property(assign,readonly) unsigned long long total;
+@property (readonly) bool lengthComputable;
+@property (readonly) unsigned long long loaded;
+@property (readonly) unsigned long long total;
 
 - (bool)lengthComputable;
 - (unsigned long long)loaded;

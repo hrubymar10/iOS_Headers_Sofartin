@@ -6,9 +6,9 @@
     TSCH3DAxisGridEnumerator *mAxis;
 }
 
-@property(assign,readonly) bool enabled;
-@property(assign,readonly) float opacity;
-@property(assign,readonly) TSDStroke * stroke;
+@property (nonatomic, readonly) bool enabled;
+@property (nonatomic, readonly) float opacity;
+@property (nonatomic, readonly) TSDStroke *stroke;
 
 + (id)resourceWithAxisEnumerator:(id)arg1;
 

@@ -11,16 +11,16 @@
     bool _systemApp;
 }
 
-@property(getter=isAppDomain,assign,readonly) bool appDomain;
-@property(assign,readonly) NSString * bundleID;
-@property(getter=isCameraRollDomain,assign,readonly) bool cameraRollDomain;
-@property(assign,retain) NSString * domainName;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readwrite) unsigned long long localSize;
-@property(assign,readwrite) unsigned long long remoteSize;
-@property(getter=isRestricted,assign,readwrite) bool restricted;
-@property(assign,readonly) unsigned long long size;
-@property(getter=isSystemApp,assign,readwrite) bool systemApp;
+@property (getter=isAppDomain, nonatomic, readonly) bool appDomain;
+@property (nonatomic, readonly) NSString *bundleID;
+@property (getter=isCameraRollDomain, nonatomic, readonly) bool cameraRollDomain;
+@property (nonatomic, retain) NSString *domainName;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic) unsigned long long localSize;
+@property (nonatomic) unsigned long long remoteSize;
+@property (getter=isRestricted, nonatomic) bool restricted;
+@property (nonatomic, readonly) unsigned long long size;
+@property (getter=isSystemApp, nonatomic) bool systemApp;
 
 + (id)domainInfoWithName:(id)arg1 systemApp:(bool)arg2 remoteSize:(unsigned long long)arg3 localSize:(unsigned long long)arg4 enabled:(bool)arg5 restricted:(bool)arg6;
 + (id)domainNameForBundleID:(id)arg1;

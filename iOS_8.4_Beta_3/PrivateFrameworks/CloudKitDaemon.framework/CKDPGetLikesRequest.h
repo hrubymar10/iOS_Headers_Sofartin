@@ -10,10 +10,10 @@
     unsigned int _limit;
 }
 
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,readwrite) bool hasLimit;
-@property(assign,retain) CKDPLikedId * identifier;
-@property(assign,readwrite) unsigned int limit;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic) bool hasLimit;
+@property (nonatomic, retain) CKDPLikedId *identifier;
+@property (nonatomic) unsigned int limit;
 
 + (id)options;
 

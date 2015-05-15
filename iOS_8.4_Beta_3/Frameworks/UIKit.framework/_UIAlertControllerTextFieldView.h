@@ -9,7 +9,7 @@
     _UIAlertControllerTextField *_textField;
 }
 
-@property(assign,readonly) UITextField * textField;
+@property (readonly) UITextField *textField;
 
 - (void)_addConstraints;
 - (double)_borderWidth;

@@ -9,10 +9,10 @@
     bool _verified;
 }
 
-@property(assign,retain) NSString * address;
-@property(assign,retain) NSString * addressPrefix;
-@property(assign,retain) NSString * addressSHA1;
-@property(assign,readwrite) bool verified;
+@property (nonatomic, retain) NSString *address;
+@property (nonatomic, retain) NSString *addressPrefix;
+@property (nonatomic, retain) NSString *addressSHA1;
+@property (nonatomic) bool verified;
 
 + (id)secureCodedPropertyKeys;
 

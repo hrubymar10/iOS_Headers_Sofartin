@@ -18,11 +18,11 @@
     CALayer *mShadowLayer;
 }
 
-@property(assign,readonly) double opacity;
-@property(assign,readonly) TSDReflection * reflection;
-@property(assign,readonly) CALayer * reflectionLayer;
-@property(assign,readonly) TSDShadow * shadow;
-@property(assign,readonly) CALayer * shadowLayer;
+@property (nonatomic, readonly) double opacity;
+@property (nonatomic, readonly) TSDReflection *reflection;
+@property (nonatomic, readonly) CALayer *reflectionLayer;
+@property (nonatomic, readonly) TSDShadow *shadow;
+@property (nonatomic, readonly) CALayer *shadowLayer;
 
 - (id)actionForLayer:(id)arg1 forKey:(id)arg2;
 - (void)calculateTextureClipBounds:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }*)arg1 andOffset:(struct CGPoint { double x1; double x2; }*)arg2 withTransform:(struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; }*)arg3 andRectOnCanvas:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }*)arg4 textureContext:(id)arg5 isUsingImageTexture:(bool)arg6;

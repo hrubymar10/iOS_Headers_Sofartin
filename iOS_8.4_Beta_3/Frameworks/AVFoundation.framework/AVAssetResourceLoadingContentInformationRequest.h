@@ -6,10 +6,10 @@
     AVAssetResourceLoadingContentInformationRequestInternal *_contentInformationRequest;
 }
 
-@property(getter=isByteRangeAccessSupported,assign,readwrite) bool byteRangeAccessSupported;
-@property(assign,readwrite) long long contentLength;
-@property(assign,copy) NSString * contentType;
-@property(assign,copy) NSDate * renewalDate;
+@property (getter=isByteRangeAccessSupported, nonatomic) bool byteRangeAccessSupported;
+@property (nonatomic) long long contentLength;
+@property (nonatomic, copy) NSString *contentType;
+@property (nonatomic, copy) NSDate *renewalDate;
 
 - (long long)contentLength;
 - (id)contentType;

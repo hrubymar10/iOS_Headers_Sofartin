@@ -20,21 +20,21 @@
     unsigned long long _width;
 }
 
-@property(assign,readonly) unsigned long long arrayLength;
-@property(assign,readonly) unsigned long long depth;
-@property(getter=isFramebufferOnly,assign,readonly) bool framebufferOnly;
-@property(assign,readonly) unsigned long long height;
-@property(assign,readonly) struct __IOSurface { }* iosurface;
-@property(assign,readonly) unsigned long long iosurfacePlane;
-@property(assign,readonly) bool isDrawable;
-@property(assign,readonly) unsigned long long mipmapLevelCount;
-@property(assign,readonly) unsigned long long numFaces;
-@property(assign,readonly) unsigned long long pixelFormat;
-@property(assign,readonly) MTLIOAccelResource * rootResource;
-@property(assign,readonly) unsigned long long rotation;
-@property(assign,readonly) unsigned long long sampleCount;
-@property(assign,readonly) unsigned long long textureType;
-@property(assign,readonly) unsigned long long width;
+@property (readonly) unsigned long long arrayLength;
+@property (readonly) unsigned long long depth;
+@property (getter=isFramebufferOnly, readonly) bool framebufferOnly;
+@property (readonly) unsigned long long height;
+@property (readonly) struct __IOSurface { }*iosurface;
+@property (readonly) unsigned long long iosurfacePlane;
+@property (readonly) bool isDrawable;
+@property (readonly) unsigned long long mipmapLevelCount;
+@property (readonly) unsigned long long numFaces;
+@property (readonly) unsigned long long pixelFormat;
+@property (readonly) MTLIOAccelResource *rootResource;
+@property (readonly) unsigned long long rotation;
+@property (readonly) unsigned long long sampleCount;
+@property (readonly) unsigned long long textureType;
+@property (readonly) unsigned long long width;
 
 - (unsigned long long)arrayLength;
 - (struct __CFArray { }*)copyAnnotations;

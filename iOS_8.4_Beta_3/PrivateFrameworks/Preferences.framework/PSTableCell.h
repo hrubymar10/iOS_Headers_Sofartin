@@ -25,12 +25,12 @@
     id _value;
 }
 
-@property(assign,readwrite) bool forceHideDisclosureIndicator;
-@property(assign,readwrite) bool isCopyable;
-@property(assign,retain) UILongPressGestureRecognizer * longTapRecognizer;
-@property(assign,readwrite) bool reusedCell;
-@property(assign,retain) PSSpecifier * specifier;
-@property(assign,readwrite) long long type;
+@property (nonatomic) bool forceHideDisclosureIndicator;
+@property (nonatomic) bool isCopyable;
+@property (nonatomic, retain) UILongPressGestureRecognizer *longTapRecognizer;
+@property (nonatomic) bool reusedCell;
+@property (nonatomic, retain) PSSpecifier *specifier;
+@property (nonatomic) long long type;
 
 + (Class)cellClassForSpecifier:(id)arg1;
 + (long long)cellStyle;

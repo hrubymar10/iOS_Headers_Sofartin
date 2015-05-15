@@ -18,16 +18,16 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) AVAsset * asset;
-@property(assign,readonly) double duration;
-@property(assign,readwrite) double endPlaybackTime;
-@property(assign,readonly) unsigned long long movieMediaTypes;
-@property(assign,readwrite) long long movieSourceType;
-@property(assign,readonly) struct CGSize { double x1; double x2; } naturalSize;
-@property(assign,readonly) double playableDuration;
-@property(assign,readonly) AVPlayerItem * playerItem;
-@property(assign,readwrite) double startPlaybackTime;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, readonly) AVAsset *asset;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic) double endPlaybackTime;
+@property (nonatomic, readonly) unsigned long long movieMediaTypes;
+@property (nonatomic) long long movieSourceType;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } naturalSize;
+@property (nonatomic, readonly) double playableDuration;
+@property (nonatomic, readonly) AVPlayerItem *playerItem;
+@property (nonatomic) double startPlaybackTime;
+@property (nonatomic, readonly) NSURL *url;
 
 + (id)movieWithAsset:(id)arg1 error:(id*)arg2;
 + (id)movieWithPlayerItem:(id)arg1 error:(id*)arg2;

@@ -6,7 +6,7 @@
     NSString *__targetAlbumName;
 }
 
-@property(setter=_setTargetAlbumName:,assign,copy) NSString * _targetAlbumName;
+@property (setter=_setTargetAlbumName:, nonatomic, copy) NSString *_targetAlbumName;
 
 - (void).cxx_destruct;
 - (id)_initWithTargetAlbum:(struct NSObject { Class x1; }*)arg1 orTargetAlbumName:(id)arg2 isLocal:(bool)arg3;

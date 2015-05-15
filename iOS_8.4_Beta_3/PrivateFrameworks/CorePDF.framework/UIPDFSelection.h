@@ -15,7 +15,7 @@
     } stringRange;
 }
 
-@property(assign,readwrite) struct { long long x1; long long x2; } stringRange;
+@property (nonatomic) struct { long long x1; long long x2; } stringRange;
 
 - (struct CGPDFSelection { }*)CGSelection;
 - (id)archive;

@@ -7,8 +7,8 @@
     unsigned long long _operatorType;
 }
 
-@property(assign,readonly) double duration;
-@property(assign,readonly) unsigned long long operatorType;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic, readonly) unsigned long long operatorType;
 
 + (id)filterForKeyPath:(id)arg1 predicateOperatorType:(unsigned long long)arg2 value:(id)arg3 dataTypes:(id)arg4;
 + (id)filterWithDuration:(double)arg1 operatorType:(unsigned long long)arg2;

@@ -8,7 +8,7 @@
     SKUIIndexBarEntryViewElement *_entryViewElement;
 }
 
-@property(assign,readonly) SKUIIndexBarEntryViewElement * entryViewElement;
+@property (nonatomic, readonly) SKUIIndexBarEntryViewElement *entryViewElement;
 
 - (void).cxx_destruct;
 - (id)entryDescriptorAtIndex:(long long)arg1;

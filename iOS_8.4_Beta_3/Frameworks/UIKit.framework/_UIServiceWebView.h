@@ -7,8 +7,8 @@
     bool _shouldDecidePolicyRemotely;
 }
 
-@property(assign,readwrite) _UIServiceWebViewController * serviceWebViewController;
-@property(assign,readwrite) bool shouldDecidePolicyRemotely;
+@property (nonatomic) _UIServiceWebViewController *serviceWebViewController;
+@property (nonatomic) bool shouldDecidePolicyRemotely;
 
 - (id)_makeAlertView;
 - (void)_webView:(id)arg1 dismissViewControllerAnimated:(bool)arg2 completion:(id)arg3;

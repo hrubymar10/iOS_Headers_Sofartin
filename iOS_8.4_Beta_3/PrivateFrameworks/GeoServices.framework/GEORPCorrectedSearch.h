@@ -16,20 +16,20 @@
     NSString *_preferredSearchDisplayLocation;
 }
 
-@property(assign,readwrite) unsigned int correctedSearchResultIndex;
-@property(assign,readwrite) bool hasCorrectedSearchResultIndex;
-@property(assign,readwrite) bool hasOriginalSearchResultIndex;
-@property(assign,readonly) bool hasPlaceRequest;
-@property(assign,readonly) bool hasPlaceResponse;
-@property(assign,readonly) bool hasPlaceSearchRequest;
-@property(assign,readonly) bool hasPlaceSearchResponse;
-@property(assign,readonly) bool hasPreferredSearchDisplayLocation;
-@property(assign,readwrite) unsigned int originalSearchResultIndex;
-@property(assign,retain) GEOPDPlaceRequest * placeRequest;
-@property(assign,retain) GEOPDPlaceResponse * placeResponse;
-@property(assign,retain) GEOPlaceSearchRequest * placeSearchRequest;
-@property(assign,retain) GEOPlaceSearchResponse * placeSearchResponse;
-@property(assign,retain) NSString * preferredSearchDisplayLocation;
+@property (nonatomic) unsigned int correctedSearchResultIndex;
+@property (nonatomic) bool hasCorrectedSearchResultIndex;
+@property (nonatomic) bool hasOriginalSearchResultIndex;
+@property (nonatomic, readonly) bool hasPlaceRequest;
+@property (nonatomic, readonly) bool hasPlaceResponse;
+@property (nonatomic, readonly) bool hasPlaceSearchRequest;
+@property (nonatomic, readonly) bool hasPlaceSearchResponse;
+@property (nonatomic, readonly) bool hasPreferredSearchDisplayLocation;
+@property (nonatomic) unsigned int originalSearchResultIndex;
+@property (nonatomic, retain) GEOPDPlaceRequest *placeRequest;
+@property (nonatomic, retain) GEOPDPlaceResponse *placeResponse;
+@property (nonatomic, retain) GEOPlaceSearchRequest *placeSearchRequest;
+@property (nonatomic, retain) GEOPlaceSearchResponse *placeSearchResponse;
+@property (nonatomic, retain) NSString *preferredSearchDisplayLocation;
 
 - (bool)containsReportableData;
 - (void)copyTo:(id)arg1;

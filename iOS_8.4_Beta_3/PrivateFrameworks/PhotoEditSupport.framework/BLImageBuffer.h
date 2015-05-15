@@ -12,7 +12,7 @@
     } _size;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
 
 - (id)ciImage;
 - (void)dealloc;

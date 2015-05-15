@@ -10,14 +10,14 @@
     double _scale;
 }
 
-@property(assign,readwrite) int displayHint;
-@property(assign,readwrite) int emptyFields;
-@property(assign,readonly) bool hasKey;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) long long renderFlags;
-@property(assign,readwrite) int rowHint;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) NSString * string;
+@property (nonatomic) int displayHint;
+@property (nonatomic) int emptyFields;
+@property (nonatomic, readonly) bool hasKey;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) long long renderFlags;
+@property (nonatomic) int rowHint;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) NSString *string;
 
 + (id)tokenForKey:(id)arg1 style:(struct { unsigned int x1 : 6; unsigned int x2 : 1; unsigned int x3 : 1; unsigned int x4 : 8; unsigned int x5 : 16; })arg2;
 + (id)tokenForKey:(id)arg1 style:(struct { unsigned int x1 : 6; unsigned int x2 : 1; unsigned int x3 : 1; unsigned int x4 : 8; unsigned int x5 : 16; })arg2 displayInsets:(struct UIEdgeInsets { double x1; double x2; double x3; double x4; })arg3;

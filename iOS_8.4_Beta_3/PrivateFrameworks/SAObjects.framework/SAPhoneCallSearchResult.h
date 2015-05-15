@@ -4,9 +4,9 @@
 
 @interface SAPhoneCallSearchResult : SADomainObject
 
-@property(assign,copy) NSDate * callTime;
-@property(assign,retain) SAPersonAttribute * contact;
-@property(assign,copy) NSNumber * isNew;
+@property (nonatomic, copy) NSDate *callTime;
+@property (nonatomic, retain) SAPersonAttribute *contact;
+@property (nonatomic, copy) NSNumber *isNew;
 
 - (id)callTime;
 - (id)contact;

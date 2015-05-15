@@ -10,11 +10,11 @@
     struct sqlite3_stmt { } *_sqliteStatement;
 }
 
-@property(assign,readwrite) bool clearBindingsAfterRunning;
-@property(assign,readonly) ML3DatabaseConnection * connection;
-@property(assign,readwrite) bool isExecuting;
-@property(assign,readonly) NSString * sql;
-@property(assign,readonly) struct sqlite3_stmt { }* sqliteStatement;
+@property (nonatomic) bool clearBindingsAfterRunning;
+@property (nonatomic, readonly) ML3DatabaseConnection *connection;
+@property (nonatomic) bool isExecuting;
+@property (nonatomic, readonly) NSString *sql;
+@property (nonatomic, readonly) struct sqlite3_stmt { }*sqliteStatement;
 
 - (void).cxx_destruct;
 - (void)bindBytes:(const void*)arg1 length:(int)arg2 forParameterAtPosition:(int)arg3;

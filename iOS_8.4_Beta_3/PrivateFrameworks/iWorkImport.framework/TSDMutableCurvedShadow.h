@@ -4,14 +4,14 @@
 
 @interface TSDMutableCurvedShadow : TSDCurvedShadow
 
-@property(assign,copy) TSUColor * TSUColor;
-@property(assign,readwrite) double angle;
-@property(assign,readwrite) struct CGColor { }* color;
-@property(assign,readwrite) double curve;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readwrite) double offset;
-@property(assign,readwrite) double opacity;
-@property(assign,readwrite) double radius;
+@property (nonatomic, copy) TSUColor *TSUColor;
+@property (nonatomic) double angle;
+@property (nonatomic) struct CGColor { }*color;
+@property (nonatomic) double curve;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic) double offset;
+@property (nonatomic) double opacity;
+@property (nonatomic) double radius;
 
 - (void)setAngle:(double)arg1;
 - (void)setColor:(struct CGColor { }*)arg1;

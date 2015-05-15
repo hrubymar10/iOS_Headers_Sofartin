@@ -10,11 +10,11 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,retain) NSDate * date;
-@property(getter=isFromRequest,assign,readwrite) bool fromRequest;
-@property(assign,copy) NSString * idsIdentifier;
-@property(assign,readwrite) unsigned short messageID;
-@property(assign,retain) NSDictionary * userInfo;
+@property (nonatomic, retain) NSDate *date;
+@property (getter=isFromRequest, nonatomic) bool fromRequest;
+@property (nonatomic, copy) NSString *idsIdentifier;
+@property (nonatomic) unsigned short messageID;
+@property (nonatomic, retain) NSDictionary *userInfo;
 
 + (bool)supportsSecureCoding;
 

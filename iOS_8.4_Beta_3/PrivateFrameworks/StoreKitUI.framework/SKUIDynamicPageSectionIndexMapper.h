@@ -11,9 +11,9 @@
     struct _NSRange { unsigned long long x1; unsigned long long x2; } *_sectionIndexToEntityRange;
 }
 
-@property(assign,retain) <SKUIEntityProviding> * entityProvider;
-@property(assign,readonly) long long numberOfSections;
-@property(assign,readonly) long long totalNumberOfEntities;
+@property (nonatomic, retain) <SKUIEntityProviding> *entityProvider;
+@property (nonatomic, readonly) long long numberOfSections;
+@property (nonatomic, readonly) long long totalNumberOfEntities;
 
 - (void).cxx_destruct;
 - (void)_loadDataIfNeeded;

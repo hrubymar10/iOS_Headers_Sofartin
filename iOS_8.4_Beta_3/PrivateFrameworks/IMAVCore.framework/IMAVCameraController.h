@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,retain) NSArray * cameras;
-@property(assign,retain) IMAVCamera * currentCamera;
+@property (nonatomic, readonly, retain) NSArray *cameras;
+@property (nonatomic, retain) IMAVCamera *currentCamera;
 
 + (id)sharedInstance;
 

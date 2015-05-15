@@ -17,22 +17,22 @@
     BRCServerZone *_zone;
 }
 
-@property(assign,readonly) BRCLocalContainer * container;
-@property(assign,readonly) bool isAlias;
-@property(assign,readonly) bool isDead;
-@property(assign,readonly) bool isDirectory;
-@property(assign,readonly) bool isDocument;
-@property(assign,readonly) bool isLive;
-@property(assign,readonly) bool isPackage;
-@property(assign,readonly) BRCItemID * itemID;
-@property(assign,readonly) BRCVersion * latestVersion;
-@property(assign,readonly) NSString * originalName;
-@property(assign,readonly) NSNumber * ownerKey;
-@property(assign,readonly) long long rank;
-@property(assign,readonly) BRCServerZone * serverZone;
-@property(assign,readonly) BRCAccountSession * session;
-@property(assign,readwrite) unsigned long long sharingOptions;
-@property(assign,readonly) BRCStatInfo * st;
+@property (nonatomic, readonly) BRCLocalContainer *container;
+@property (nonatomic, readonly) bool isAlias;
+@property (nonatomic, readonly) bool isDead;
+@property (nonatomic, readonly) bool isDirectory;
+@property (nonatomic, readonly) bool isDocument;
+@property (nonatomic, readonly) bool isLive;
+@property (nonatomic, readonly) bool isPackage;
+@property (nonatomic, readonly) BRCItemID *itemID;
+@property (nonatomic, readonly) BRCVersion *latestVersion;
+@property (nonatomic, readonly) NSString *originalName;
+@property (nonatomic, readonly) NSNumber *ownerKey;
+@property (nonatomic, readonly) long long rank;
+@property (nonatomic, readonly) BRCServerZone *serverZone;
+@property (nonatomic, readonly) BRCAccountSession *session;
+@property (nonatomic) unsigned long long sharingOptions;
+@property (nonatomic, readonly) BRCStatInfo *st;
 
 + (bool)supportsSecureCoding;
 

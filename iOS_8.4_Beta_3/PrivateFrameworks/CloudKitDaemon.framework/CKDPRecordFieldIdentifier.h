@@ -6,8 +6,8 @@
     NSString *_name;
 }
 
-@property(assign,readonly) bool hasName;
-@property(assign,retain) NSString * name;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic, retain) NSString *name;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

@@ -7,11 +7,11 @@
     ACAccount *_nativeAccount;
 }
 
-@property(assign,readonly) NSString * DSID;
-@property(assign,readonly) NSString * accountDescription;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) ACAccount * nativeAccount;
-@property(assign,readonly) NSString * username;
+@property (nonatomic, readonly) NSString *DSID;
+@property (nonatomic, readonly) NSString *accountDescription;
+@property (nonatomic, readonly) NSString *identifier;
+@property (readonly) ACAccount *nativeAccount;
+@property (nonatomic, readonly) NSString *username;
 
 - (void).cxx_destruct;
 - (id)DSID;

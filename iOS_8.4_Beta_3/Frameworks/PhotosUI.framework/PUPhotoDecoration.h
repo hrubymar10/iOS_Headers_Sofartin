@@ -8,9 +8,9 @@
     UIColor *_foregroundColor;
 }
 
-@property(assign,copy) UIColor * borderColor;
-@property(assign,readwrite) double borderWidth;
-@property(assign,copy) UIColor * foregroundColor;
+@property (nonatomic, copy) UIColor *borderColor;
+@property (nonatomic) double borderWidth;
+@property (nonatomic, copy) UIColor *foregroundColor;
 
 - (void).cxx_destruct;
 - (id)borderColor;

@@ -8,9 +8,9 @@
     NSObject<OS_xpc_object> *_xpcPayload;
 }
 
-@property(assign,readwrite) AXHAXPCClient * client;
-@property(assign,retain) NSObject<OS_xpc_object> * xpcMessage;
-@property(assign,retain) NSObject<OS_xpc_object> * xpcPayload;
+@property (nonatomic) AXHAXPCClient *client;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *xpcMessage;
+@property (nonatomic, readonly, retain) NSObject<OS_xpc_object> *xpcPayload;
 
 + (id)messageWithPayload:(id)arg1 xpcMessage:(id)arg2 andClient:(id)arg3;
 

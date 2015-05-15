@@ -7,11 +7,11 @@
     unsigned long long _managerID;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long managerID;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long managerID;
+@property (readonly) Class superclass;
 
 + (id)defaultManager;
 + (struct CGSize { double x1; double x2; })fullScreenSizeForScreen:(id)arg1 contentMode:(long long*)arg2;

@@ -8,9 +8,9 @@
     double _opacity;
 }
 
-@property(assign,readwrite) int blendMode;
-@property(assign,retain) CUIColor * color;
-@property(assign,readwrite) double opacity;
+@property int blendMode;
+@property (retain) CUIColor *color;
+@property double opacity;
 
 - (int)blendMode;
 - (id)color;

@@ -4,18 +4,18 @@
 
 @interface TSDMutableAngleGradient : TSDAngleGradient <TSDGradientStopContainer>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) TSUColor * firstColor;
-@property(assign,readwrite) double gradientAngle;
-@property(assign,readwrite) double gradientAngleInDegrees;
-@property(assign,retain) NSArray * gradientStops;
-@property(assign,readwrite) unsigned long long gradientType;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isAdvancedGradient;
-@property(assign,retain) TSUColor * lastColor;
-@property(assign,readwrite) double opacity;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) TSUColor *firstColor;
+@property (nonatomic) double gradientAngle;
+@property (nonatomic) double gradientAngleInDegrees;
+@property (nonatomic, retain) NSArray *gradientStops;
+@property (nonatomic) unsigned long long gradientType;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isAdvancedGradient;
+@property (nonatomic, retain) TSUColor *lastColor;
+@property (nonatomic) double opacity;
+@property (readonly) Class superclass;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)evenlyDistributeStops;

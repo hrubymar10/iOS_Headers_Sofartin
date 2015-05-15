@@ -8,9 +8,9 @@
     int _maxSize;
 }
 
-@property(assign,readwrite) int bodyFormat;
-@property(assign,copy) NSString * longID;
-@property(assign,readwrite) int maxSize;
+@property (nonatomic) int bodyFormat;
+@property (nonatomic, copy) NSString *longID;
+@property (nonatomic) int maxSize;
 
 - (void).cxx_destruct;
 - (int)bodyFormat;

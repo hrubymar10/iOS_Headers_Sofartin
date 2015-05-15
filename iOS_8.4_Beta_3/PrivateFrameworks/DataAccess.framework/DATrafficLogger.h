@@ -6,7 +6,7 @@
     NSString *_filename;
 }
 
-@property(assign,retain) NSString * filename;
+@property (nonatomic, retain) NSString *filename;
 
 + (bool)enabled;
 

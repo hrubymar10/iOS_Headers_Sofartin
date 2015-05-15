@@ -6,7 +6,7 @@
     SUScriptMediaItemCollection *_collection;
 }
 
-@property(assign,readonly) SUScriptMediaItemCollection * collection;
+@property (readonly) SUScriptMediaItemCollection *collection;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

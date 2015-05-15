@@ -6,7 +6,7 @@
     BRCChecksummingOutputStream *_stream;
 }
 
-@property(assign,readonly) NSData * signature;
+@property (nonatomic, readonly) NSData *signature;
 
 - (void).cxx_destruct;
 - (void)addItem:(id)arg1;

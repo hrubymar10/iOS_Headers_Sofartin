@@ -4,7 +4,7 @@
 
 @interface SAReminderSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * reminders;
+@property (nonatomic, copy) NSArray *reminders;
 
 + (id)snippet;
 + (id)snippetWithDictionary:(id)arg1 context:(id)arg2;

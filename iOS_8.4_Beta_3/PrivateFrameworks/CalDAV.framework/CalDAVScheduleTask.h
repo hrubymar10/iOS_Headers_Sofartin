@@ -8,9 +8,9 @@
     CalDAVScheduleResponseItem *_scheduleResponse;
 }
 
-@property(assign,retain) NSArray * attendees;
-@property(assign,retain) NSString * originator;
-@property(assign,retain) CalDAVScheduleResponseItem * scheduleResponse;
+@property (nonatomic, retain) NSArray *attendees;
+@property (nonatomic, retain) NSString *originator;
+@property (nonatomic, retain) CalDAVScheduleResponseItem *scheduleResponse;
 
 - (id)additionalHeaderValues;
 - (id)attendees;

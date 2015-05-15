@@ -9,7 +9,7 @@
     TSUSparseArray *_uuidSetForIndex;
 }
 
-@property(assign,readonly) unsigned long long count;
+@property (readonly) unsigned long long count;
 
 - (void).cxx_destruct;
 - (void)_foreachUuidSet:(id)arg1;

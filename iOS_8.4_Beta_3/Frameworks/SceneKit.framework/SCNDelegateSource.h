@@ -6,7 +6,7 @@
     id _delegate;
 }
 
-@property(assign,retain) id delegate;
+@property (nonatomic, retain) id delegate;
 
 - (void)dealloc;
 - (id)delegate;

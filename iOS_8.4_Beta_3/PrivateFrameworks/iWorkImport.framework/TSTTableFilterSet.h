@@ -16,12 +16,12 @@
     int mType;
 }
 
-@property(assign,readonly) bool canAddRules;
-@property(assign,readonly) unsigned long long filterCount;
-@property(assign,readwrite) int filterSetType;
-@property(assign,readwrite) bool isEnabled;
-@property(assign,readonly) unsigned long long newFilterIndex;
-@property(assign,readonly) unsigned long long ruleCount;
+@property (nonatomic, readonly) bool canAddRules;
+@property (nonatomic, readonly) unsigned long long filterCount;
+@property (nonatomic) int filterSetType;
+@property (nonatomic) bool isEnabled;
+@property (nonatomic, readonly) unsigned long long newFilterIndex;
+@property (nonatomic, readonly) unsigned long long ruleCount;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

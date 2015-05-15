@@ -26,7 +26,7 @@
     bool mShouldAnimateLabelsQuickly;
 }
 
-@property(assign,readonly) bool shouldDisableMultiDataControls;
+@property (nonatomic, readonly) bool shouldDisableMultiDataControls;
 
 - (void)dealloc;
 - (void)didEndZooming;

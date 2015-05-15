@@ -8,9 +8,9 @@
     NSUUID *_uuid;
 }
 
-@property(assign,readwrite) HMActionSet * actionSet;
-@property(assign,readwrite) unsigned long long actionType;
-@property(assign,retain) NSUUID * uuid;
+@property (nonatomic) HMActionSet *actionSet;
+@property (nonatomic) unsigned long long actionType;
+@property (nonatomic, retain) NSUUID *uuid;
 
 + (id)actionWithInfo:(id)arg1 home:(id)arg2;
 + (id)lookupActionWithInfo:(id)arg1 inArray:(id)arg2;

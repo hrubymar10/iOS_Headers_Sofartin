@@ -11,14 +11,14 @@
     AXHearingAidDevice *_pairedDevice;
 }
 
-@property(assign,retain) NSDictionary * availableDevicesDescription;
-@property(assign,retain) NSMutableArray * clients;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableDictionary * handlers;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) AXHearingAidDevice * pairedDevice;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSDictionary *availableDevicesDescription;
+@property (nonatomic, retain) NSMutableArray *clients;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMutableDictionary *handlers;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) AXHearingAidDevice *pairedDevice;
+@property (readonly) Class superclass;
 
 + (id)entitlementsForMessageID:(unsigned long long)arg1;
 + (id)sharedController;

@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_semaphore> *_decodeSemaphore;
 }
 
-@property(assign,copy) NSString * action;
-@property(assign,copy) UILocalNotification * notification;
+@property (nonatomic, readonly, copy) NSString *action;
+@property (nonatomic, readonly, copy) UILocalNotification *notification;
 
 - (long long)UIActionType;
 - (id)_initWithNotification:(id)arg1 action:(id)arg2 type:(long long)arg3 withHandler:(id)arg4;

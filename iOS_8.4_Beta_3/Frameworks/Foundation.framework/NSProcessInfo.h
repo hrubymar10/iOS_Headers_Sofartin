@@ -10,19 +10,19 @@
     NSString *name;
 }
 
-@property(assign,readonly) unsigned long long activeProcessorCount;
-@property(assign,copy) NSArray * arguments;
-@property(assign,readwrite) bool automaticTerminationSupportEnabled;
-@property(assign,copy) NSDictionary * environment;
-@property(assign,copy) NSString * globallyUniqueString;
-@property(assign,copy) NSString * hostName;
-@property(assign,readonly) struct { long long x1; long long x2; long long x3; } operatingSystemVersion;
-@property(assign,copy) NSString * operatingSystemVersionString;
-@property(assign,readonly) unsigned long long physicalMemory;
-@property(assign,readonly) int processIdentifier;
-@property(assign,copy) NSString * processName;
-@property(assign,readonly) unsigned long long processorCount;
-@property(assign,readonly) double systemUptime;
+@property (readonly) unsigned long long activeProcessorCount;
+@property (readonly, copy) NSArray *arguments;
+@property bool automaticTerminationSupportEnabled;
+@property (readonly, copy) NSDictionary *environment;
+@property (readonly, copy) NSString *globallyUniqueString;
+@property (readonly, copy) NSString *hostName;
+@property (readonly) struct { long long x1; long long x2; long long x3; } operatingSystemVersion;
+@property (readonly, copy) NSString *operatingSystemVersionString;
+@property (readonly) unsigned long long physicalMemory;
+@property (readonly) int processIdentifier;
+@property (copy) NSString *processName;
+@property (readonly) unsigned long long processorCount;
+@property (readonly) double systemUptime;
 
 + (id)processInfo;
 

@@ -13,14 +13,14 @@
     double _previousDelay;
 }
 
-@property(assign,copy) NSString * basedOn;
-@property(assign,copy) NSArray * elements;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(getter=isInitial,assign,readwrite) bool initial;
-@property(getter=isLocked,assign,readwrite) bool locked;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) double nextDelay;
-@property(assign,readwrite) double previousDelay;
+@property (copy) NSString *basedOn;
+@property (nonatomic, copy) NSArray *elements;
+@property (getter=isEnabled) bool enabled;
+@property (getter=isInitial) bool initial;
+@property (getter=isLocked, nonatomic) bool locked;
+@property (nonatomic, copy) NSString *name;
+@property double nextDelay;
+@property double previousDelay;
 
 + (void)CAMLParserStartElement:(id)arg1;
 

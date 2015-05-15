@@ -9,10 +9,10 @@
     int _synCount;
 }
 
-@property(assign,readonly) int ackCount;
-@property(assign,readonly) <CLIntersiloServiceProtocol> * service;
-@property(assign,readonly) CLSilo * silo;
-@property(assign,readonly) int synCount;
+@property (nonatomic, readonly) int ackCount;
+@property (nonatomic, readonly) <CLIntersiloServiceProtocol> *service;
+@property (nonatomic, readonly) CLSilo *silo;
+@property (nonatomic, readonly) int synCount;
 
 - (void).cxx_destruct;
 - (void)ack;

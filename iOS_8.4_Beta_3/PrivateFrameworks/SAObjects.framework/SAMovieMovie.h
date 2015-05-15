@@ -4,28 +4,28 @@
 
 @interface SAMovieMovie : SADomainObject
 
-@property(assign,copy) NSArray * actors;
-@property(assign,copy) NSArray * directors;
-@property(assign,copy) NSArray * genres;
-@property(assign,copy) NSURL * hiResTrailerUri;
-@property(assign,copy) NSURL * iTunesUri;
-@property(assign,readwrite) bool is3d;
-@property(assign,copy) NSNumber * isAvailableOnItunesForPurchase;
-@property(assign,copy) NSNumber * isAvailableOnItunesForRent;
-@property(assign,copy) NSURL * lowResTrailerUri;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSArray * posterImages;
-@property(assign,copy) NSURL * posterUri;
-@property(assign,copy) NSNumber * qualityRating;
-@property(assign,copy) NSString * rating;
-@property(assign,retain) SALocalSearchReviewList * reviews;
-@property(assign,copy) NSURL * rottenTomatoesUri;
-@property(assign,readwrite) long long runtimeInMinutes;
-@property(assign,copy) NSArray * studios;
-@property(assign,copy) NSString * synopsis;
-@property(assign,copy) NSString * theaterShowtimeSearchRegionDescription;
-@property(assign,copy) NSArray * theaterShowtimes;
-@property(assign,copy) NSDate * theatricalReleaseDate;
+@property (nonatomic, copy) NSArray *actors;
+@property (nonatomic, copy) NSArray *directors;
+@property (nonatomic, copy) NSArray *genres;
+@property (nonatomic, copy) NSURL *hiResTrailerUri;
+@property (nonatomic, copy) NSURL *iTunesUri;
+@property (nonatomic) bool is3d;
+@property (nonatomic, copy) NSNumber *isAvailableOnItunesForPurchase;
+@property (nonatomic, copy) NSNumber *isAvailableOnItunesForRent;
+@property (nonatomic, copy) NSURL *lowResTrailerUri;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSArray *posterImages;
+@property (nonatomic, copy) NSURL *posterUri;
+@property (nonatomic, copy) NSNumber *qualityRating;
+@property (nonatomic, copy) NSString *rating;
+@property (nonatomic, retain) SALocalSearchReviewList *reviews;
+@property (nonatomic, copy) NSURL *rottenTomatoesUri;
+@property (nonatomic) long long runtimeInMinutes;
+@property (nonatomic, copy) NSArray *studios;
+@property (nonatomic, copy) NSString *synopsis;
+@property (nonatomic, copy) NSString *theaterShowtimeSearchRegionDescription;
+@property (nonatomic, copy) NSArray *theaterShowtimes;
+@property (nonatomic, copy) NSDate *theatricalReleaseDate;
 
 + (id)movie;
 + (id)movieWithDictionary:(id)arg1 context:(id)arg2;

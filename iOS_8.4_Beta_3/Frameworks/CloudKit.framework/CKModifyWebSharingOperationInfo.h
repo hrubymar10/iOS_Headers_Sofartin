@@ -8,9 +8,9 @@
     NSArray *_recordIDsToUnshare;
 }
 
-@property(assign,retain) NSArray * recordIDsToShare;
-@property(assign,retain) NSArray * recordIDsToShareReadWrite;
-@property(assign,retain) NSArray * recordIDsToUnshare;
+@property (nonatomic, retain) NSArray *recordIDsToShare;
+@property (nonatomic, retain) NSArray *recordIDsToShareReadWrite;
+@property (nonatomic, retain) NSArray *recordIDsToUnshare;
 
 + (bool)supportsSecureCoding;
 

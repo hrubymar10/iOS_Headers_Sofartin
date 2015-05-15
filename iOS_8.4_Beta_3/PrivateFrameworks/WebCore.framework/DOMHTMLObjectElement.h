@@ -4,26 +4,26 @@
 
 @interface DOMHTMLObjectElement : DOMHTMLElement
 
-@property(assign,copy) NSURL * absoluteImageURL;
-@property(assign,copy) NSString * align;
-@property(assign,copy) NSString * archive;
-@property(assign,copy) NSString * border;
-@property(assign,copy) NSString * code;
-@property(assign,copy) NSString * codeBase;
-@property(assign,copy) NSString * codeType;
-@property(assign,readonly) DOMDocument * contentDocument;
-@property(assign,readonly) WebFrame * contentFrame;
-@property(assign,copy) NSString * data;
-@property(assign,readwrite) bool declare;
-@property(assign,readonly) DOMHTMLFormElement * form;
-@property(assign,copy) NSString * height;
-@property(assign,readwrite) int hspace;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * standby;
-@property(assign,copy) NSString * type;
-@property(assign,copy) NSString * useMap;
-@property(assign,readwrite) int vspace;
-@property(assign,copy) NSString * width;
+@property (readonly, copy) NSURL *absoluteImageURL;
+@property (copy) NSString *align;
+@property (copy) NSString *archive;
+@property (copy) NSString *border;
+@property (copy) NSString *code;
+@property (copy) NSString *codeBase;
+@property (copy) NSString *codeType;
+@property (readonly) DOMDocument *contentDocument;
+@property (nonatomic, readonly) WebFrame *contentFrame;
+@property (copy) NSString *data;
+@property bool declare;
+@property (readonly) DOMHTMLFormElement *form;
+@property (copy) NSString *height;
+@property int hspace;
+@property (copy) NSString *name;
+@property (copy) NSString *standby;
+@property (copy) NSString *type;
+@property (copy) NSString *useMap;
+@property int vspace;
+@property (copy) NSString *width;
 
 - (id)absoluteImageURL;
 - (id)align;

@@ -17,18 +17,18 @@
     NSString *_tradeRepresentativeName;
 }
 
-@property(assign,copy) NSString * ECommerceRegistrationIdentifier;
-@property(assign,copy) NSString * ISOCountryCode;
-@property(assign,copy) NSArray * addressLines;
-@property(assign,copy) NSString * administrativeArea;
-@property(assign,copy) NSString * businessRegistrationIdentifier;
-@property(assign,copy) NSString * country;
-@property(assign,copy) NSString * emailAddress;
-@property(assign,copy) NSString * locality;
-@property(assign,copy) NSString * phoneNumber;
-@property(assign,copy) NSString * postalCode;
-@property(assign,copy) NSString * tradeName;
-@property(assign,copy) NSString * tradeRepresentativeName;
+@property (nonatomic, copy) NSString *ECommerceRegistrationIdentifier;
+@property (nonatomic, copy) NSString *ISOCountryCode;
+@property (nonatomic, copy) NSArray *addressLines;
+@property (nonatomic, copy) NSString *administrativeArea;
+@property (nonatomic, copy) NSString *businessRegistrationIdentifier;
+@property (nonatomic, copy) NSString *country;
+@property (nonatomic, copy) NSString *emailAddress;
+@property (nonatomic, copy) NSString *locality;
+@property (nonatomic, copy) NSString *phoneNumber;
+@property (nonatomic, copy) NSString *postalCode;
+@property (nonatomic, copy) NSString *tradeName;
+@property (nonatomic, copy) NSString *tradeRepresentativeName;
 
 - (void).cxx_destruct;
 - (id)ECommerceRegistrationIdentifier;

@@ -4,7 +4,7 @@
 
 @interface ABPropertyGroupInstantMessageItem : ABPropertyGroupItem
 
-@property(assign,readonly) CNInstantMessageAddress * profile;
+@property (nonatomic, readonly) CNInstantMessageAddress *profile;
 
 - (id)defaultActionURL;
 - (id)displayLabel;

@@ -8,10 +8,10 @@
     bool _selectable;
 }
 
-@property(assign,readonly) bool containsElementGroups;
-@property(assign,readonly) SKUIFullscreenImageViewElement * fullscreenImage;
-@property(assign,readonly) long long lockupViewType;
-@property(getter=isSelectable,assign,readonly) bool selectable;
+@property (nonatomic, readonly) bool containsElementGroups;
+@property (nonatomic, readonly) SKUIFullscreenImageViewElement *fullscreenImage;
+@property (nonatomic, readonly) long long lockupViewType;
+@property (getter=isSelectable, nonatomic, readonly) bool selectable;
 
 - (id)applyUpdatesWithElement:(id)arg1;
 - (bool)containsElementGroups;

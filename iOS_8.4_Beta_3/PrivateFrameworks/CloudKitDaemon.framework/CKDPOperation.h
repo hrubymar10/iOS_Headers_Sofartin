@@ -14,14 +14,14 @@
     int _type;
 }
 
-@property(assign,readwrite) bool hasLast;
-@property(assign,readonly) bool hasOperationUUID;
-@property(assign,readwrite) bool hasSynchronousMode;
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) bool last;
-@property(assign,retain) NSString * operationUUID;
-@property(assign,readwrite) bool synchronousMode;
-@property(assign,readwrite) int type;
+@property (nonatomic) bool hasLast;
+@property (nonatomic, readonly) bool hasOperationUUID;
+@property (nonatomic) bool hasSynchronousMode;
+@property (nonatomic) bool hasType;
+@property (nonatomic) bool last;
+@property (nonatomic, retain) NSString *operationUUID;
+@property (nonatomic) bool synchronousMode;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

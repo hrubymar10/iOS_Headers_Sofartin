@@ -15,16 +15,16 @@
     long long _textSizeMode;
 }
 
-@property(assign,retain) NSArray * actions;
-@property(assign,readwrite) double baselineFromBoundsTop;
-@property(assign,readwrite) double buttonsCharge;
-@property(assign,readonly) UIButton * centerButton;
-@property(assign,readwrite) <EKUIEventStatusButtonsViewDelegate> * delegate;
-@property(assign,readwrite) bool disableButtonHighlights;
-@property(assign,readonly) UIFont * font;
-@property(assign,readwrite) bool forcesSingleButtonToCenter;
-@property(assign,readwrite) long long selectedAction;
-@property(assign,readwrite) long long textSizeMode;
+@property (nonatomic, retain) NSArray *actions;
+@property (nonatomic) double baselineFromBoundsTop;
+@property (nonatomic) double buttonsCharge;
+@property (nonatomic, readonly) UIButton *centerButton;
+@property (nonatomic) <EKUIEventStatusButtonsViewDelegate> *delegate;
+@property (nonatomic) bool disableButtonHighlights;
+@property (nonatomic, readonly) UIFont *font;
+@property (nonatomic) bool forcesSingleButtonToCenter;
+@property (nonatomic) long long selectedAction;
+@property (nonatomic) long long textSizeMode;
 
 - (void).cxx_destruct;
 - (long long)_actionForButton:(id)arg1;

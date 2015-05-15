@@ -9,9 +9,9 @@
     int _securityCodeType;
 }
 
-@property(assign,retain) NSString * firstPasscodeEntry;
-@property(assign,readwrite) int mode;
-@property(assign,readwrite) int securityCodeType;
+@property (nonatomic, retain) NSString *firstPasscodeEntry;
+@property (nonatomic) int mode;
+@property (nonatomic) int securityCodeType;
 
 - (void)dealloc;
 - (id)firstPasscodeEntry;

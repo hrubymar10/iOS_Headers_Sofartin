@@ -14,14 +14,14 @@
     } _pxSize;
 }
 
-@property(assign,copy) NSString * MIMEType;
-@property(assign,copy) NSString * UTIType;
-@property(assign,readonly) unsigned long long count;
-@property(assign,retain) NSData * data;
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) long long orientation;
-@property(assign,readonly) struct CGSize { double x1; double x2; } ptSize;
-@property(assign,readonly) struct CGSize { double x1; double x2; } pxSize;
+@property (nonatomic, readonly, copy) NSString *MIMEType;
+@property (nonatomic, readonly, copy) NSString *UTIType;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic, readonly, retain) UIImage *image;
+@property (nonatomic, readonly) long long orientation;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } ptSize;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } pxSize;
 
 + (id)UTITypeForData:(id)arg1;
 

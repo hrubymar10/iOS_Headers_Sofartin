@@ -7,7 +7,7 @@
     NSXPCConnection *_searchHelperConnection;
 }
 
-@property(assign,retain) NSXPCConnection * searchHelperConnection;
+@property (nonatomic, retain) NSXPCConnection *searchHelperConnection;
 
 + (id)sharedManager;
 

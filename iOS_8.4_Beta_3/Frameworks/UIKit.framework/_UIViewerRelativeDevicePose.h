@@ -11,8 +11,8 @@
     } _viewerOffset;
 }
 
-@property(assign,readwrite) double planarRotationAngle;
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } viewerOffset;
+@property (nonatomic) double planarRotationAngle;
+@property (nonatomic) struct UIOffset { double x1; double x2; } viewerOffset;
 
 - (struct UIOffset { double x1; double x2; })_acceleratedOutputForViewerOffset:(struct UIOffset { double x1; double x2; })arg1 accelerationBoostFactor:(struct CGPoint { double x1; double x2; })arg2;
 - (id)_acceleratedOutputRange;

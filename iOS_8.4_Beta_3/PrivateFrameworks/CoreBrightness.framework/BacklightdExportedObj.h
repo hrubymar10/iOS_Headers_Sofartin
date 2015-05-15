@@ -9,12 +9,12 @@
     BrightnessSystemInternal *_server;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) BrightnessSystemInternal * server;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) BrightnessSystemInternal *server;
+@property (readonly) Class superclass;
 
 - (void)clientCopyPropertyWithKey:(id)arg1 reply:(id)arg2;
 - (void)clientSetPropertyWithKey:(id)arg1 property:(id)arg2;

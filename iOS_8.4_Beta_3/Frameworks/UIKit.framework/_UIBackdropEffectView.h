@@ -7,8 +7,8 @@
     double _zoom;
 }
 
-@property(assign,retain) CABackdropLayer * backdropLayer;
-@property(assign,readwrite) double zoom;
+@property (nonatomic, retain) CABackdropLayer *backdropLayer;
+@property (nonatomic) double zoom;
 
 + (Class)layerClass;
 

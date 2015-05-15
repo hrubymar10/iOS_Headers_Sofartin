@@ -4,12 +4,12 @@
 
 @interface SALocalSearchRangePeriod : AceObject <SALocalSearchPeriod>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long endSecondsSinceMidnight;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long startSecondsSinceMidnight;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long endSecondsSinceMidnight;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long startSecondsSinceMidnight;
+@property (readonly) Class superclass;
 
 + (id)rangePeriod;
 + (id)rangePeriodWithDictionary:(id)arg1 context:(id)arg2;

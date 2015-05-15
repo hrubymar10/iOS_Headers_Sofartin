@@ -8,9 +8,9 @@
     unsigned long long _publisherDestination;
 }
 
-@property(assign,readonly) NSSet * enabledSectionIDs;
-@property(assign,readonly) unsigned long long maximumCount;
-@property(assign,readonly) unsigned long long publisherDestination;
+@property (nonatomic, readonly) NSSet *enabledSectionIDs;
+@property (nonatomic, readonly) unsigned long long maximumCount;
+@property (nonatomic, readonly) unsigned long long publisherDestination;
 
 + (id)requestParametersForDestination:(unsigned long long)arg1 withMaximumCount:(long long)arg2 enabledSectionIDs:(id)arg3;
 + (bool)supportsSecureCoding;

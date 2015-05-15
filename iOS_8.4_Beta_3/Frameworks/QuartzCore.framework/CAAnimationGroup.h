@@ -4,7 +4,7 @@
 
 @interface CAAnimationGroup : CAAnimation
 
-@property(assign,copy) NSArray * animations;
+@property (copy) NSArray *animations;
 
 - (void)CA_prepareRenderValue;
 - (id)TSDCAAnimationContextCache;

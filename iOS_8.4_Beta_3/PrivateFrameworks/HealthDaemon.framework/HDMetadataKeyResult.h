@@ -6,7 +6,7 @@
     NSString *_key;
 }
 
-@property(assign,retain) NSString * key;
+@property (nonatomic, retain) NSString *key;
 
 - (void).cxx_destruct;
 - (id)key;

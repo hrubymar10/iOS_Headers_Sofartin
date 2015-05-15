@@ -12,8 +12,8 @@
     NSMutableArray *_typesToInsert;
 }
 
-@property(assign,readwrite) bool forceMMS;
-@property(assign,readwrite) bool mimeType;
+@property (nonatomic) bool forceMMS;
+@property (nonatomic) bool mimeType;
 
 - (void)_conversationListDidFinishLoading:(id)arg1;
 - (bool)_insertMediaObject:(id)arg1;

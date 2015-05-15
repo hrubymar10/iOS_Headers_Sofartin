@@ -8,13 +8,13 @@
     <BLTPingService> *_service;
 }
 
-@property(assign,retain) NSMutableDictionary * bulletinHandlers;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableDictionary * pingHandlers;
-@property(assign,retain) <BLTPingService> * service;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSMutableDictionary *bulletinHandlers;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableDictionary *pingHandlers;
+@property (nonatomic, retain) <BLTPingService> *service;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)bulletinHandlers;

@@ -13,14 +13,14 @@
     NSUUID *_uuid;
 }
 
-@property(assign,readwrite) int attribute;
-@property(assign,retain) NSDate * creationTime;
-@property(assign,readwrite) int entity;
-@property(assign,readwrite) long long matchCount;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) int type;
-@property(assign,readwrite) long long updateCount;
-@property(assign,retain) NSUUID * uuid;
+@property (nonatomic) int attribute;
+@property (nonatomic, retain) NSDate *creationTime;
+@property (nonatomic) int entity;
+@property (nonatomic) long long matchCount;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) int type;
+@property (nonatomic) long long updateCount;
+@property (nonatomic, retain) NSUUID *uuid;
 
 + (id)biometricKitIdentity;
 + (bool)supportsSecureCoding;

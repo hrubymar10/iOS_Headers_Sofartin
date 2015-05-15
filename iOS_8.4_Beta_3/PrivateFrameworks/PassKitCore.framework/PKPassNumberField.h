@@ -7,8 +7,8 @@
     long long _numberStyle;
 }
 
-@property(assign,copy) NSString * currencyCode;
-@property(assign,readwrite) long long numberStyle;
+@property (nonatomic, copy) NSString *currencyCode;
+@property (nonatomic) long long numberStyle;
 
 + (bool)supportsSecureCoding;
 

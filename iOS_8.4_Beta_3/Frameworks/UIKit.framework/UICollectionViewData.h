@@ -42,11 +42,11 @@
     } _validLayoutRect;
 }
 
-@property(assign,readonly) NSArray * clonedCellAttributes;
-@property(assign,readonly) NSArray * clonedDecorationAttributes;
-@property(assign,readonly) NSArray * clonedSupplementaryAttributes;
-@property(assign,readonly) bool layoutIsPrepared;
-@property(getter=isLayoutLocked,assign,readwrite) bool layoutLocked;
+@property (nonatomic, readonly) NSArray *clonedCellAttributes;
+@property (nonatomic, readonly) NSArray *clonedDecorationAttributes;
+@property (nonatomic, readonly) NSArray *clonedSupplementaryAttributes;
+@property (nonatomic, readonly) bool layoutIsPrepared;
+@property (getter=isLayoutLocked, nonatomic) bool layoutLocked;
 
 + (void)initialize;
 

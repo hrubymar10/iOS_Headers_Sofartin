@@ -8,9 +8,9 @@
     bool _visible;
 }
 
-@property(assign,copy) NSMutableDictionary * effectList;
-@property(assign,readwrite) double effectScale;
-@property(assign,readwrite) bool visible;
+@property (copy) NSMutableDictionary *effectList;
+@property double effectScale;
+@property bool visible;
 
 - (void)addLayerEffectComponent:(id)arg1;
 - (void)dealloc;

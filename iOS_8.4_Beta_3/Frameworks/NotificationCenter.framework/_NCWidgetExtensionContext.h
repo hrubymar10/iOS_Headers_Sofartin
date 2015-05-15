@@ -6,7 +6,7 @@
     _NCWidgetViewController *_hostViewController;
 }
 
-@property(assign,readwrite) _NCWidgetViewController * hostViewController;
+@property (nonatomic) _NCWidgetViewController *hostViewController;
 
 - (id)hostViewController;
 - (void)openURL:(id)arg1 completion:(id)arg2;

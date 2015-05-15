@@ -10,11 +10,11 @@
     NSMutableDictionary *_requests;
 }
 
-@property(assign,retain) NSMutableDictionary * callbackGroups;
-@property(assign,retain) NSMutableDictionary * deviceIDs;
-@property(assign,readonly) NSString * deviceIdentifier;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSMutableDictionary * requests;
+@property (nonatomic, retain) NSMutableDictionary *callbackGroups;
+@property (nonatomic, retain) NSMutableDictionary *deviceIDs;
+@property (nonatomic, readonly) NSString *deviceIdentifier;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSMutableDictionary *requests;
 
 + (id)sharedManager;
 

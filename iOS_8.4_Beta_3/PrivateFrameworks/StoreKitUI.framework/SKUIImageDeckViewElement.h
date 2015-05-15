@@ -9,10 +9,10 @@
     double _initialDragRight;
 }
 
-@property(assign,readonly) double additionalDragLeft;
-@property(assign,readonly) double additionalDragRight;
-@property(assign,readonly) double initialDragLeft;
-@property(assign,readonly) double initialDragRight;
+@property (nonatomic, readonly) double additionalDragLeft;
+@property (nonatomic, readonly) double additionalDragRight;
+@property (nonatomic, readonly) double initialDragLeft;
+@property (nonatomic, readonly) double initialDragRight;
 
 - (double)additionalDragLeft;
 - (double)additionalDragRight;

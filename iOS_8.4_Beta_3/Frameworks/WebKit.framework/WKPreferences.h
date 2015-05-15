@@ -8,15 +8,15 @@
     } _preferences;
 }
 
-@property(setter=_setCompositingBordersVisible:,assign,readwrite) bool _compositingBordersVisible;
-@property(setter=_setCompositingRepaintCountersVisible:,assign,readwrite) bool _compositingRepaintCountersVisible;
-@property(setter=_setOfflineApplicationCacheIsEnabled:,assign,readwrite) bool _offlineApplicationCacheIsEnabled;
-@property(setter=_setStorageBlockingPolicy:,assign,readwrite) long long _storageBlockingPolicy;
-@property(setter=_setTelephoneNumberDetectionIsEnabled:,assign,readwrite) bool _telephoneNumberDetectionIsEnabled;
-@property(setter=_setTiledScrollingIndicatorVisible:,assign,readwrite) bool _tiledScrollingIndicatorVisible;
-@property(assign,readwrite) bool javaScriptCanOpenWindowsAutomatically;
-@property(assign,readwrite) bool javaScriptEnabled;
-@property(assign,readwrite) double minimumFontSize;
+@property (setter=_setCompositingBordersVisible:, nonatomic) bool _compositingBordersVisible;
+@property (setter=_setCompositingRepaintCountersVisible:, nonatomic) bool _compositingRepaintCountersVisible;
+@property (setter=_setOfflineApplicationCacheIsEnabled:, nonatomic) bool _offlineApplicationCacheIsEnabled;
+@property (setter=_setStorageBlockingPolicy:, nonatomic) long long _storageBlockingPolicy;
+@property (setter=_setTelephoneNumberDetectionIsEnabled:, nonatomic) bool _telephoneNumberDetectionIsEnabled;
+@property (setter=_setTiledScrollingIndicatorVisible:, nonatomic) bool _tiledScrollingIndicatorVisible;
+@property (nonatomic) bool javaScriptCanOpenWindowsAutomatically;
+@property (nonatomic) bool javaScriptEnabled;
+@property (nonatomic) double minimumFontSize;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -10,12 +10,12 @@
     ABPeoplePickerNavigationController *_peoplePicker;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIViewController * parentViewController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UIViewController *parentViewController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_dismissPeoplePicker;

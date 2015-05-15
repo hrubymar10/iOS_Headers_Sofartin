@@ -14,13 +14,13 @@
     int _timeLimit;
 }
 
-@property(assign,readwrite) <DASearchQueryConsumer> * consumer;
-@property(assign,readwrite) unsigned int maxResults;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,copy) NSString * searchID;
-@property(assign,copy) NSString * searchString;
-@property(assign,readwrite) int state;
-@property(assign,readwrite) int timeLimit;
+@property (nonatomic) <DASearchQueryConsumer> *consumer;
+@property (nonatomic) unsigned int maxResults;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic, copy) NSString *searchID;
+@property (nonatomic, copy) NSString *searchString;
+@property (nonatomic) int state;
+@property (nonatomic) int timeLimit;
 
 + (id)searchQueryWithSearchString:(id)arg1 consumer:(id)arg2;
 

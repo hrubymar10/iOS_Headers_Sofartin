@@ -4,12 +4,12 @@
 
 @interface SSMetricsSearchEvent : SSMetricsBaseEvent
 
-@property(assign,retain) id actionDetails;
-@property(assign,retain) NSString * actionType;
-@property(assign,retain) NSString * searchTerm;
-@property(assign,retain) NSString * targetIdentifier;
-@property(assign,retain) NSString * targetType;
-@property(assign,retain) NSString * targetURL;
+@property (nonatomic, retain) id actionDetails;
+@property (nonatomic, retain) NSString *actionType;
+@property (nonatomic, retain) NSString *searchTerm;
+@property (nonatomic, retain) NSString *targetIdentifier;
+@property (nonatomic, retain) NSString *targetType;
+@property (nonatomic, retain) NSString *targetURL;
 
 - (id)actionDetails;
 - (id)actionType;

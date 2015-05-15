@@ -7,12 +7,12 @@
     NSMutableDictionary *_dialogDictionary;
 }
 
-@property(assign,copy) NSArray * buttons;
-@property(assign,retain) SSDialogButton * defaultButton;
-@property(assign,readonly) NSDictionary * dialogDictionary;
-@property(assign,readonly) NSString * dialogKind;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSArray *buttons;
+@property (nonatomic, retain) SSDialogButton *defaultButton;
+@property (nonatomic, readonly) NSDictionary *dialogDictionary;
+@property (nonatomic, readonly) NSString *dialogKind;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *title;
 
 - (void)_setValue:(id)arg1 forProperty:(id)arg2;
 - (id)buttons;

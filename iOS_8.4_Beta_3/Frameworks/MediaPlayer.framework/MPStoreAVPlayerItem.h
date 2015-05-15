@@ -6,7 +6,7 @@
     id _deallocationHandler;
 }
 
-@property(assign,copy) id deallocationHandler;
+@property (nonatomic, copy) id deallocationHandler;
 
 - (void).cxx_destruct;
 - (void)dealloc;

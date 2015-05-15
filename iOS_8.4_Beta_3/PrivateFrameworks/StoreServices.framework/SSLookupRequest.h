@@ -9,17 +9,17 @@
     long long _resultFilters;
 }
 
-@property(assign,copy) SSLookupProperties * _lookupProperties;
-@property(assign,readwrite) bool authenticatesIfNeeded;
-@property(assign,copy) SSAuthenticationContext * authenticationContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * keyProfile;
-@property(assign,readwrite) long long localizationStyle;
-@property(assign,readwrite) long long personalizationStyle;
-@property(assign,readwrite) long long resultFilters;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, copy) SSLookupProperties *_lookupProperties;
+@property (nonatomic) bool authenticatesIfNeeded;
+@property (nonatomic, copy) SSAuthenticationContext *authenticationContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *keyProfile;
+@property (nonatomic) long long localizationStyle;
+@property (nonatomic) long long personalizationStyle;
+@property (nonatomic) long long resultFilters;
+@property (readonly) Class superclass;
 
 - (id)_lookupProperties;
 - (void)_setTimeoutInterval:(id)arg1;

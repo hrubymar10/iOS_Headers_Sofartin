@@ -10,11 +10,11 @@
     int _lastLine;
 }
 
-@property(assign,copy) NSString * fileName;
-@property(assign,readonly) int firstColumn;
-@property(assign,readonly) int firstLine;
-@property(assign,readonly) int lastColumn;
-@property(assign,readonly) int lastLine;
+@property (readonly, copy) NSString *fileName;
+@property (readonly) int firstColumn;
+@property (readonly) int firstLine;
+@property (readonly) int lastColumn;
+@property (readonly) int lastLine;
 
 - (void)dealloc;
 - (id)description;

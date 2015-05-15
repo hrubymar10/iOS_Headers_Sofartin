@@ -7,10 +7,10 @@
     CKDPIdentifier *_value;
 }
 
-@property(assign,readonly) bool hasOwnerIdentifier;
-@property(assign,readonly) bool hasValue;
-@property(assign,retain) CKDPIdentifier * ownerIdentifier;
-@property(assign,retain) CKDPIdentifier * value;
+@property (nonatomic, readonly) bool hasOwnerIdentifier;
+@property (nonatomic, readonly) bool hasValue;
+@property (nonatomic, retain) CKDPIdentifier *ownerIdentifier;
+@property (nonatomic, retain) CKDPIdentifier *value;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

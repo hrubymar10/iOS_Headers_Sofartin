@@ -11,12 +11,12 @@
     NSIndexSet *_updatedIndexes;
 }
 
-@property(assign,retain) NSIndexSet * deletedIndexes;
-@property(assign,retain) NSIndexSet * insertedIndexes;
-@property(assign,retain) NSSet * sectionInfosWithCommentChanges;
-@property(assign,readwrite) bool shouldReload;
-@property(assign,retain) NSSet * updatedAssets;
-@property(assign,retain) NSIndexSet * updatedIndexes;
+@property (nonatomic, retain) NSIndexSet *deletedIndexes;
+@property (nonatomic, retain) NSIndexSet *insertedIndexes;
+@property (nonatomic, retain) NSSet *sectionInfosWithCommentChanges;
+@property (nonatomic) bool shouldReload;
+@property (nonatomic, retain) NSSet *updatedAssets;
+@property (nonatomic, retain) NSIndexSet *updatedIndexes;
 
 - (void).cxx_destruct;
 - (id)deletedIndexes;

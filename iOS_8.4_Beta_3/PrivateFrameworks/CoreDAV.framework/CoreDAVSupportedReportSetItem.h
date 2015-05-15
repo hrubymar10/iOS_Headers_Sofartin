@@ -6,7 +6,7 @@
     NSMutableSet *_supportedReports;
 }
 
-@property(assign,retain) NSMutableSet * supportedReports;
+@property (nonatomic, retain) NSMutableSet *supportedReports;
 
 + (id)copyParseRules;
 

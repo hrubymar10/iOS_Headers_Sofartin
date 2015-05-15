@@ -4,8 +4,8 @@
 
 @interface SCNOffscreenRenderer : SCNRenderer
 
-@property(assign,readwrite) unsigned long long antialiasingMode;
-@property(assign,readonly) unsigned int textureID;
+@property (nonatomic) unsigned long long antialiasingMode;
+@property (nonatomic, readonly) unsigned int textureID;
 
 + (id)offscreenRendererWithContext:(id)arg1 size:(struct CGSize { double x1; double x2; })arg2;
 

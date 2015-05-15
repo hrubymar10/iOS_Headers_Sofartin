@@ -4,13 +4,13 @@
 
 @interface DOMXPathResult : DOMObject
 
-@property(assign,readonly) bool booleanValue;
-@property(assign,readonly) bool invalidIteratorState;
-@property(assign,readonly) double numberValue;
-@property(assign,readonly) unsigned short resultType;
-@property(assign,readonly) DOMNode * singleNodeValue;
-@property(assign,readonly) unsigned int snapshotLength;
-@property(assign,copy) NSString * stringValue;
+@property (readonly) bool booleanValue;
+@property (readonly) bool invalidIteratorState;
+@property (readonly) double numberValue;
+@property (readonly) unsigned short resultType;
+@property (readonly) DOMNode *singleNodeValue;
+@property (readonly) unsigned int snapshotLength;
+@property (readonly, copy) NSString *stringValue;
 
 - (bool)booleanValue;
 - (void)dealloc;

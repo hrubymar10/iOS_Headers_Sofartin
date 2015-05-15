@@ -12,13 +12,13 @@
     unsigned int _z;
 }
 
-@property(assign,retain) NSMutableArray * attributions;
-@property(assign,retain) NSMutableArray * childrens;
-@property(assign,retain) NSMutableArray * iconChecksums;
-@property(assign,retain) NSMutableArray * icons;
-@property(assign,readwrite) unsigned int x;
-@property(assign,readwrite) unsigned int y;
-@property(assign,readwrite) unsigned int z;
+@property (nonatomic, retain) NSMutableArray *attributions;
+@property (nonatomic, retain) NSMutableArray *childrens;
+@property (nonatomic, retain) NSMutableArray *iconChecksums;
+@property (nonatomic, retain) NSMutableArray *icons;
+@property (nonatomic) unsigned int x;
+@property (nonatomic) unsigned int y;
+@property (nonatomic) unsigned int z;
 
 - (void)addAttribution:(id)arg1;
 - (void)addChildren:(id)arg1;

@@ -6,7 +6,7 @@
     NSMapTable *_creditCardDataKeychainReferences;
 }
 
-@property(assign,readonly) NSArray * creditCardData;
+@property (nonatomic, readonly) NSArray *creditCardData;
 
 + (bool)hasCreditCardData;
 

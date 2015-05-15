@@ -7,8 +7,8 @@
     NSString *_string;
 }
 
-@property(assign,readonly) double rotation;
-@property(assign,readonly) NSString * string;
+@property (readonly) double rotation;
+@property (readonly) NSString *string;
 
 - (void)dealloc;
 - (id)initWithString:(id)arg1 score:(double)arg2 rotation:(double)arg3;

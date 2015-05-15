@@ -7,7 +7,7 @@
     NSData *_perAppAccountIdentifier;
 }
 
-@property(assign,copy) NSData * perAppAccountIdentifier;
+@property (nonatomic, copy) NSData *perAppAccountIdentifier;
 
 + (bool)_refreshCurrentLoggedInAccountForcingRefresh:(bool)arg1 error:(id*)arg2;
 + (id)currentCachedLoggedInAccountWithError:(id*)arg1;

@@ -6,11 +6,11 @@
     NSDictionary *_buttonDictionary;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) NSDictionary * buttonDictionary;
-@property(assign,readonly) NSString * buttonLocation;
-@property(assign,readonly) NSString * buttonTarget;
-@property(assign,readonly) NSString * buttonTitle;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) NSDictionary *buttonDictionary;
+@property (nonatomic, readonly) NSString *buttonLocation;
+@property (nonatomic, readonly) NSString *buttonTarget;
+@property (nonatomic, readonly) NSString *buttonTitle;
 
 - (id)URL;
 - (id)buttonDictionary;

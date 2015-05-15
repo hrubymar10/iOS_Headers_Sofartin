@@ -14,8 +14,8 @@
     bool _timerSourceSet;
 }
 
-@property(assign,readwrite) <GKSimpleTimerDelegate> * delegate;
-@property(assign,readonly) double interval;
+@property (nonatomic) <GKSimpleTimerDelegate> *delegate;
+@property (nonatomic, readonly) double interval;
 
 - (void)dealloc;
 - (id)delegate;

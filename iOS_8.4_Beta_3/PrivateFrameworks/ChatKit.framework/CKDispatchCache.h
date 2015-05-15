@@ -11,12 +11,12 @@
     NSCountedSet *_pendingKeys;
 }
 
-@property(assign,readwrite) long long dispatchPriority;
-@property(assign,retain) CKDispatchQueue * dispatchQueue;
-@property(assign,retain) NSObject<OS_dispatch_queue> * lockQueue;
-@property(assign,retain) NSCache * objectCache;
-@property(assign,retain) NSMutableDictionary * pendingGroups;
-@property(assign,retain) NSCountedSet * pendingKeys;
+@property (nonatomic) long long dispatchPriority;
+@property (nonatomic, retain) CKDispatchQueue *dispatchQueue;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *lockQueue;
+@property (nonatomic, retain) NSCache *objectCache;
+@property (nonatomic, retain) NSMutableDictionary *pendingGroups;
+@property (nonatomic, retain) NSCountedSet *pendingKeys;
 
 - (void)_beginGeneratingForKeyUnlocked:(id)arg1;
 - (void)_endGeneratingForKeyUnlocked:(id)arg1;

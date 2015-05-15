@@ -4,13 +4,13 @@
 
 @interface SAEndpoint : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSDictionary * operations;
-@property(assign,copy) NSString * providerId;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool supportsAuthentication;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSDictionary *operations;
+@property (nonatomic, copy) NSString *providerId;
+@property (readonly) Class superclass;
+@property (nonatomic) bool supportsAuthentication;
 
 + (id)endpoint;
 + (id)endpointWithDictionary:(id)arg1 context:(id)arg2;

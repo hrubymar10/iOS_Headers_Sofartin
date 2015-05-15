@@ -12,11 +12,11 @@
     LSApplicationWorkspace *wlmAppWorkSpace;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enableWhiteListCheck;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enableWhiteListCheck;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)instance;
 

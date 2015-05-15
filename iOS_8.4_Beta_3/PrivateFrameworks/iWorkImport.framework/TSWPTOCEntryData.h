@@ -13,14 +13,14 @@
     unsigned long long _paragraphIndex;
 }
 
-@property(assign,readonly) NSString * heading;
-@property(assign,readonly) unsigned long long indexedListStart;
-@property(assign,readonly) TSWPListStyle * indexedListStyle;
-@property(assign,readonly) unsigned long long indexedParagraphLevel;
-@property(assign,readonly) TSWPParagraphStyle * indexedStyle;
-@property(assign,readonly) int numberFormat;
-@property(assign,readonly) unsigned long long pageNumber;
-@property(assign,readonly) unsigned long long paragraphIndex;
+@property (nonatomic, readonly) NSString *heading;
+@property (nonatomic, readonly) unsigned long long indexedListStart;
+@property (nonatomic, readonly) TSWPListStyle *indexedListStyle;
+@property (nonatomic, readonly) unsigned long long indexedParagraphLevel;
+@property (nonatomic, readonly) TSWPParagraphStyle *indexedStyle;
+@property (nonatomic, readonly) int numberFormat;
+@property (nonatomic, readonly) unsigned long long pageNumber;
+@property (nonatomic, readonly) unsigned long long paragraphIndex;
 
 + (id)tocEntryDataWithParagraphIndex:(unsigned long long)arg1 pageNumber:(unsigned long long)arg2 numberFormat:(int)arg3 heading:(id)arg4 indexedStyle:(id)arg5 indexedListStyle:(id)arg6 indexedListStart:(unsigned long long)arg7 indexedParagraphLevel:(unsigned long long)arg8;
 

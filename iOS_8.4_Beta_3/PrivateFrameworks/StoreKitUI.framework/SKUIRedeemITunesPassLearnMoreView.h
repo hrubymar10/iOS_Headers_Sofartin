@@ -8,10 +8,10 @@
     UIImageView *_headerImageView;
 }
 
-@property(assign,readonly) UIControl * button;
-@property(assign,copy) NSString * buttonTitle;
-@property(assign,copy) NSString * explanationString;
-@property(assign,retain) UIImage * headerImage;
+@property (nonatomic, readonly) UIControl *button;
+@property (nonatomic, copy) NSString *buttonTitle;
+@property (nonatomic, copy) NSString *explanationString;
+@property (nonatomic, retain) UIImage *headerImage;
 
 - (void).cxx_destruct;
 - (id)button;

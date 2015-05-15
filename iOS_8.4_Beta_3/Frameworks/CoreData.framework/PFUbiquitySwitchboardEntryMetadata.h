@@ -21,18 +21,18 @@
     bool _useLocalStorage;
 }
 
-@property(assign,readonly) NSString * activeModelVersionHash;
-@property(assign,readonly) PFUbiquityBaselineHeuristics * baselineHeuristics;
-@property(assign,retain) PFUbiquitySwitchboardCacheWrapper * cacheWrapper;
-@property(assign,readonly) _PFUbiquityRecordsExporter * exporter;
-@property(assign,readonly) _PFUbiquityRecordsImporter * importer;
-@property(assign,readonly) NSPersistentStoreCoordinator * privatePSC;
-@property(assign,readonly) NSSQLCore * privateStore;
-@property(assign,readonly) PFUbiquityRecordsImporterSchedulingContext * schedulingContext;
-@property(assign,readonly) NSSet * stores;
-@property(assign,retain) PFUbiquityLocation * ubiquityRootLocation;
-@property(assign,readwrite) bool useLocalAccount;
-@property(assign,readwrite) bool useLocalStorage;
+@property (nonatomic, readonly) NSString *activeModelVersionHash;
+@property (nonatomic, readonly) PFUbiquityBaselineHeuristics *baselineHeuristics;
+@property (nonatomic, retain) PFUbiquitySwitchboardCacheWrapper *cacheWrapper;
+@property (nonatomic, readonly) _PFUbiquityRecordsExporter *exporter;
+@property (nonatomic, readonly) _PFUbiquityRecordsImporter *importer;
+@property (nonatomic, readonly) NSPersistentStoreCoordinator *privatePSC;
+@property (nonatomic, readonly) NSSQLCore *privateStore;
+@property (nonatomic, readonly) PFUbiquityRecordsImporterSchedulingContext *schedulingContext;
+@property (nonatomic, readonly) NSSet *stores;
+@property (nonatomic, retain) PFUbiquityLocation *ubiquityRootLocation;
+@property (nonatomic) bool useLocalAccount;
+@property (nonatomic) bool useLocalStorage;
 
 - (id)activeModelVersionHash;
 - (void)addPersistentStore:(id)arg1;

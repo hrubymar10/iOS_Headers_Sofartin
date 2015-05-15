@@ -42,8 +42,8 @@
     } _uncompressedCellUIDs;
 }
 
-@property(assign,readonly) unsigned long long compressedSize;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, readonly) unsigned long long compressedSize;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
 
 + (id)cellUIDList;
 + (id)cellUIDListFromRange:(const struct TSTCellUIDRange { struct vector<TSU::UUIDData<TSP::UUIDData>, std::__1::allocator<TSU::UUIDData<TSP::UUIDData> > > { struct UUIDData<TSP::UUIDData> {} *x_1_1_1; struct UUIDData<TSP::UUIDData> {} *x_1_1_2; struct __compressed_pair<TSU::UUIDData<TSP::UUIDData> *, std::__1::allocator<TSU::UUIDData<TSP::UUIDData> > > { struct UUIDData<TSP::UUIDData> {} *x_3_2_1; } x_1_1_3; } x1; struct vector<TSU::UUIDData<TSP::UUIDData>, std::__1::allocator<TSU::UUIDData<TSP::UUIDData> > > { struct UUIDData<TSP::UUIDData> {} *x_2_1_1; struct UUIDData<TSP::UUIDData> {} *x_2_1_2; struct __compressed_pair<TSU::UUIDData<TSP::UUIDData> *, std::__1::allocator<TSU::UUIDData<TSP::UUIDData> > > { struct UUIDData<TSP::UUIDData> {} *x_3_2_1; } x_2_1_3; } x2; }*)arg1;

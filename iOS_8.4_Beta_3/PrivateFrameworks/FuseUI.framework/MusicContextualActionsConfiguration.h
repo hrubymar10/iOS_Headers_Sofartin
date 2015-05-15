@@ -20,25 +20,25 @@
     bool _showsHeader;
 }
 
-@property(assign,readwrite) bool allowsLibraryAddRemoveActions;
-@property(assign,readwrite) bool allowsLibraryKeepLocalActions;
-@property(assign,readwrite) bool allowsRecommendationActions;
-@property(assign,readwrite) bool allowsShareActions;
-@property(assign,readwrite) bool allowsShowGeniusPlaylistDetail;
-@property(assign,readwrite) bool allowsShowInStoreActions;
-@property(assign,readwrite) bool allowsStartRadioActions;
-@property(assign,readwrite) bool allowsUpNextActions;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id didDismissHandler;
-@property(assign,retain) MusicEntityValueContext * entityValueContext;
-@property(assign,retain) NSDictionary * extraInfo;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long preferredAlertControllerStyle;
-@property(assign,readwrite) UIViewController * presentingViewController;
-@property(assign,readwrite) bool showsHeader;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool allowsLibraryAddRemoveActions;
+@property (nonatomic) bool allowsLibraryKeepLocalActions;
+@property (nonatomic) bool allowsRecommendationActions;
+@property (nonatomic) bool allowsShareActions;
+@property (nonatomic) bool allowsShowGeniusPlaylistDetail;
+@property (nonatomic) bool allowsShowInStoreActions;
+@property (nonatomic) bool allowsStartRadioActions;
+@property (nonatomic) bool allowsUpNextActions;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id didDismissHandler;
+@property (nonatomic, retain) MusicEntityValueContext *entityValueContext;
+@property (nonatomic, retain) NSDictionary *extraInfo;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long preferredAlertControllerStyle;
+@property (nonatomic) UIViewController *presentingViewController;
+@property (nonatomic) bool showsHeader;
+@property (readonly) Class superclass;
 
 + (id)defaultEntityValueContext;
 

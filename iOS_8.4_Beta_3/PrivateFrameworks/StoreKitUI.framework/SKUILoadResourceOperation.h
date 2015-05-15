@@ -9,9 +9,9 @@
     SKUIResourceRequest *_request;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) id outputBlock;
-@property(assign,copy) SKUIResourceRequest * resourceRequest;
+@property (retain) SKUIClientContext *clientContext;
+@property (copy) id outputBlock;
+@property (readonly, copy) SKUIResourceRequest *resourceRequest;
 
 - (void).cxx_destruct;
 - (id)_initSKUILoadResourceOperation;

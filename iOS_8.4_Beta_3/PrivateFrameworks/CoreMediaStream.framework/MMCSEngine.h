@@ -33,13 +33,13 @@
     NSThread *_workThread;
 }
 
-@property(assign,readwrite) bool autoGenerateItemID;
-@property(assign,readwrite) <MMCSEngineDelegate> * delegate;
-@property(assign,readonly) bool hasOutstandingActivity;
-@property(assign,readwrite) bool isDone;
-@property(assign,readwrite) bool isMetricsGatheringEnabled;
-@property(assign,retain) NSTimer * threadKeepAliveTimer;
-@property(assign,retain) NSThread * workThread;
+@property (nonatomic) bool autoGenerateItemID;
+@property (nonatomic) <MMCSEngineDelegate> *delegate;
+@property (nonatomic, readonly) bool hasOutstandingActivity;
+@property (nonatomic) bool isDone;
+@property (nonatomic) bool isMetricsGatheringEnabled;
+@property (nonatomic, retain) NSTimer *threadKeepAliveTimer;
+@property (nonatomic, retain) NSThread *workThread;
 
 + (id)logStringForGetItemState:(int)arg1;
 + (id)logStringForPutItemState:(int)arg1;

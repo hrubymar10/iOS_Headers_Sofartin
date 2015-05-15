@@ -9,14 +9,14 @@
     unsigned long long _maxCount;
 }
 
-@property(assign,retain) GKLinkedList * cacheList;
-@property(assign,readwrite) unsigned long long count;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableDictionary * dictionary;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long maxCount;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) GKLinkedList *cacheList;
+@property (nonatomic) unsigned long long count;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMutableDictionary *dictionary;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long maxCount;
+@property (readonly) Class superclass;
 
 - (id)cacheList;
 - (unsigned long long)count;

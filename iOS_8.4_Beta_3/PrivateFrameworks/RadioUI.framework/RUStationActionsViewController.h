@@ -23,14 +23,14 @@
     RUStationTrackInfoView *_trackInfoView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUStationActionsViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MPAVItem * item;
-@property(assign,readwrite) bool showsDoneButton;
-@property(assign,readonly) RadioStation * station;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUStationActionsViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MPAVItem *item;
+@property (nonatomic) bool showsDoneButton;
+@property (nonatomic, readonly) RadioStation *station;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_addDerivedStationUsingArtist:(bool)arg1 withCompletionHandler:(id)arg2;

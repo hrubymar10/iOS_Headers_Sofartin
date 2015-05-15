@@ -12,14 +12,14 @@
     NSObject<OS_dispatch_queue> *_serialQueue;
 }
 
-@property(assign,readonly) NSURL * bundledManifestURL;
-@property(assign,readonly) SSUpdatableAssetManifest * currentManifest;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * manifestURL;
-@property(assign,readonly) SSUpdatableAssetManifest * newestCachedManifest;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSURL *bundledManifestURL;
+@property (nonatomic, readonly) SSUpdatableAssetManifest *currentManifest;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURL *manifestURL;
+@property (nonatomic, readonly) SSUpdatableAssetManifest *newestCachedManifest;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_bundledManifest;

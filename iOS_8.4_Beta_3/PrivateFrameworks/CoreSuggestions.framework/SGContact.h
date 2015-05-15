@@ -9,11 +9,11 @@
     NSArray *_postalAddresses;
 }
 
-@property(assign,readonly) NSArray * addresses;
-@property(assign,readonly) NSArray * emailAddresses;
-@property(assign,readonly) SGName * name;
-@property(assign,readonly) NSArray * phones;
-@property(assign,readonly) NSArray * postalAddresses;
+@property (nonatomic, readonly) NSArray *addresses;
+@property (nonatomic, readonly) NSArray *emailAddresses;
+@property (nonatomic, readonly) SGName *name;
+@property (nonatomic, readonly) NSArray *phones;
+@property (nonatomic, readonly) NSArray *postalAddresses;
 
 + (id)contactWithName:(id)arg1 emailAddresses:(id)arg2 phones:(id)arg3 addresses:(id)arg4;
 + (id)contactWithName:(id)arg1 emailAddresses:(id)arg2 phones:(id)arg3 postalAddresses:(id)arg4;

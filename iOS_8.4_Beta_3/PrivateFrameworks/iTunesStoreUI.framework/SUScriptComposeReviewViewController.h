@@ -4,7 +4,7 @@
 
 @interface SUScriptComposeReviewViewController : SUScriptViewController
 
-@property(assign,readonly) SUScriptReview * review;
+@property (readonly) SUScriptReview *review;
 
 + (id)webScriptNameForKey:(const char *)arg1;
 

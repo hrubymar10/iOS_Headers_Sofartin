@@ -4,7 +4,7 @@
 
 @interface SAGetClientState : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * statesToGet;
+@property (nonatomic, copy) NSArray *statesToGet;
 
 + (id)getClientState;
 + (id)getClientStateWithDictionary:(id)arg1 context:(id)arg2;

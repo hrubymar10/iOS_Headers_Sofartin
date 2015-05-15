@@ -13,15 +13,15 @@
     NSString *_valueText;
 }
 
-@property(assign,retain) GKLabel * captionLabel;
-@property(assign,retain) NSString * captionText;
-@property(assign,retain) GKTextStyle * normalValueStyle;
-@property(assign,readwrite) bool oneLineOnly;
-@property(assign,retain) GKTextStyle * overrideCaptionStyle;
-@property(assign,retain) GKTextStyle * overrideValueStyle;
-@property(assign,retain) GKTextStyle * smallValueStyle;
-@property(assign,retain) GKLabel * valueLabel;
-@property(assign,retain) NSString * valueText;
+@property (nonatomic, retain) GKLabel *captionLabel;
+@property (nonatomic, retain) NSString *captionText;
+@property (nonatomic, retain) GKTextStyle *normalValueStyle;
+@property (nonatomic) bool oneLineOnly;
+@property (nonatomic, retain) GKTextStyle *overrideCaptionStyle;
+@property (nonatomic, retain) GKTextStyle *overrideValueStyle;
+@property (nonatomic, retain) GKTextStyle *smallValueStyle;
+@property (nonatomic, retain) GKLabel *valueLabel;
+@property (nonatomic, retain) NSString *valueText;
 
 - (void)_updateCaptionTextLabel;
 - (void)_updateValueTextLabel;

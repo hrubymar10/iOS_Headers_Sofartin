@@ -4,7 +4,7 @@
 
 @interface SAClockSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * clocks;
+@property (nonatomic, copy) NSArray *clocks;
 
 + (id)snippet;
 + (id)snippetWithDictionary:(id)arg1 context:(id)arg2;

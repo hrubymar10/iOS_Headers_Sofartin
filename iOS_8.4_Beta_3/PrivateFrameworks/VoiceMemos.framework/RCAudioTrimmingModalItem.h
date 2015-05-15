@@ -19,12 +19,12 @@
     RCAudioTrimmingModalItemViewController *_trimmingViewController;
 }
 
-@property(assign,readwrite) <RCAudioTrimmingModalItemDelegate> * delegate;
-@property(assign,readwrite) bool deletesDestinationPathWhenDone;
-@property(assign,copy) NSString * destinationPath;
-@property(assign,readwrite) double maximumTrimmedDuration;
-@property(assign,readonly) RCSavedRecording * recording;
-@property(assign,copy) NSString * sourcePath;
+@property (nonatomic) <RCAudioTrimmingModalItemDelegate> *delegate;
+@property (nonatomic) bool deletesDestinationPathWhenDone;
+@property (nonatomic, readonly, copy) NSString *destinationPath;
+@property (nonatomic) double maximumTrimmedDuration;
+@property (nonatomic, readonly) RCSavedRecording *recording;
+@property (nonatomic, readonly, copy) NSString *sourcePath;
 
 + (id)exportableAudioFormatPathExtensionWithSourceURL:(id)arg1;
 

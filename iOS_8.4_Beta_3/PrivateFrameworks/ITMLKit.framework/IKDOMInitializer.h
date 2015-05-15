@@ -6,7 +6,7 @@
     NSMutableDictionary *_nodeDeregisterObservers;
 }
 
-@property(assign,retain) NSMutableDictionary * nodeDeregisterObservers;
+@property (nonatomic, retain) NSMutableDictionary *nodeDeregisterObservers;
 
 + (id)sharedInstance;
 

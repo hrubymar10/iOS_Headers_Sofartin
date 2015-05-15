@@ -9,7 +9,7 @@
     NSURL *_url;
 }
 
-@property(assign,retain) CoreDAVResponseItem * responseItem;
+@property (nonatomic, retain) CoreDAVResponseItem *responseItem;
 
 - (void)_proppatchAfterFailureCount:(unsigned long long)arg1;
 - (void)dealloc;

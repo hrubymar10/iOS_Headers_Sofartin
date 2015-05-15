@@ -15,7 +15,7 @@
     struct __CFDictionary { } *_stringSizes;
 }
 
-@property(assign,readwrite) struct { long long x1; int (*x2)(); int (*x3)(); int (*x4)(); int (*x5)(); int (*x6)(); } stringSizeCacheKeyCallBacks;
+@property (nonatomic) struct { long long x1; int (*x2)(); int (*x3)(); int (*x4)(); int (*x5)(); int (*x6)(); } stringSizeCacheKeyCallBacks;
 
 - (void)dealloc;
 - (id)init;

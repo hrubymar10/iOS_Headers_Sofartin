@@ -4,14 +4,14 @@
 
 @interface SAObjectSupport : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * aceVersion;
-@property(assign,copy) NSString * classId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * groupId;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * supportedProperties;
+@property (nonatomic, copy) NSString *aceVersion;
+@property (nonatomic, copy) NSString *classId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *groupId;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *supportedProperties;
 
 + (id)objectSupport;
 + (id)objectSupportWithDictionary:(id)arg1 context:(id)arg2;

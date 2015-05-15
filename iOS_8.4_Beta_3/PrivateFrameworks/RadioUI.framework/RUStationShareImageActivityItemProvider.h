@@ -6,7 +6,7 @@
     RUStationShareInformationProvider *_shareInformationProvider;
 }
 
-@property(assign,readonly) RUStationShareInformationProvider * shareInformationProvider;
+@property (nonatomic, readonly) RUStationShareInformationProvider *shareInformationProvider;
 
 - (void).cxx_destruct;
 - (id)initWithShareInformationProvider:(id)arg1;

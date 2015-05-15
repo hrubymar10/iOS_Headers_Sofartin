@@ -16,17 +16,17 @@
     } finalFrameForContainerView;
 }
 
-@property(assign,readonly) UIPresentationController<_UISearchControllerPresenting> * adaptivePresentationController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } finalFrameForContainerView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double resultsControllerContentOffset;
-@property(assign,retain) UIView * searchBarContainerView;
-@property(assign,readonly) bool searchBarToBecomeTopAttached;
-@property(assign,readonly) bool shouldAccountForStatusBar;
-@property(assign,readonly) double statusBarAdjustment;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) UIPresentationController<_UISearchControllerPresenting> *adaptivePresentationController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } finalFrameForContainerView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double resultsControllerContentOffset;
+@property (nonatomic, readonly, retain) UIView *searchBarContainerView;
+@property (nonatomic, readonly) bool searchBarToBecomeTopAttached;
+@property (nonatomic, readonly) bool shouldAccountForStatusBar;
+@property (nonatomic, readonly) double statusBarAdjustment;
+@property (readonly) Class superclass;
 
 - (id)_popoverHostingWindow;
 - (id)_presentationControllerForTraitCollection:(id)arg1;

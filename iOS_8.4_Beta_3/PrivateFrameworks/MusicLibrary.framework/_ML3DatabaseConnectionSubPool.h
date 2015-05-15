@@ -19,12 +19,12 @@
     int _willDeleteDatabaseNotifyToken;
 }
 
-@property(assign,readwrite) unsigned long long connectionsJournalingMode;
-@property(assign,readwrite) int connectionsProfilingLevel;
-@property(assign,readonly) NSString * databasePath;
-@property(assign,readonly) unsigned long long maxConcurrentConnections;
-@property(assign,readwrite) bool useDistantConnections;
-@property(assign,readwrite) bool useReadOnlyConnections;
+@property (nonatomic) unsigned long long connectionsJournalingMode;
+@property (nonatomic) int connectionsProfilingLevel;
+@property (nonatomic, readonly) NSString *databasePath;
+@property (nonatomic, readonly) unsigned long long maxConcurrentConnections;
+@property (nonatomic) bool useDistantConnections;
+@property (nonatomic) bool useReadOnlyConnections;
 
 - (void).cxx_destruct;
 - (void)_handleDatabaseDeletion;

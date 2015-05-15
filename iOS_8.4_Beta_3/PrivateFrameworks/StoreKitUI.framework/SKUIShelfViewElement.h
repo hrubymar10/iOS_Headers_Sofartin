@@ -8,9 +8,9 @@
     NSString *_slideshowTitle;
 }
 
-@property(assign,readonly) long long numberOfRows;
-@property(assign,copy) id shelfItemViewElementValidator;
-@property(assign,readonly) NSString * slideshowTitle;
+@property (nonatomic, readonly) long long numberOfRows;
+@property (nonatomic, copy) id shelfItemViewElementValidator;
+@property (nonatomic, readonly) NSString *slideshowTitle;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

@@ -12,12 +12,12 @@
     long long _version;
 }
 
-@property(assign,readonly) long long SAPVersion;
-@property(assign,copy) NSData * certificateData;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly) long long SAPVersion;
+@property (copy) NSData *certificateData;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)sharedDefaultSession;
 + (id)sharedPrimeSession;

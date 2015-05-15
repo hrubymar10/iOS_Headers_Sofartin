@@ -8,9 +8,9 @@
     NSString *_versionString;
 }
 
-@property(assign,readonly) NSString * changeNotes;
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) NSString * versionString;
+@property (nonatomic, readonly) NSString *changeNotes;
+@property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) NSString *versionString;
 
 + (id)dateFormatter;
 

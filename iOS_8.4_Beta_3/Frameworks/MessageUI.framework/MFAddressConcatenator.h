@@ -10,11 +10,11 @@
     NSString *_truncatedAddressFormat;
 }
 
-@property(assign,retain) NSString * andNMoreFormat;
-@property(assign,retain) NSString * andNMoreNoEllipsisFormat;
-@property(assign,retain) NSString * nAddressesFormat;
-@property(assign,retain) NSString * oneAddressFormat;
-@property(assign,retain) NSString * truncatedAddressFormat;
+@property (nonatomic, retain) NSString *andNMoreFormat;
+@property (nonatomic, retain) NSString *andNMoreNoEllipsisFormat;
+@property (nonatomic, retain) NSString *nAddressesFormat;
+@property (nonatomic, retain) NSString *oneAddressFormat;
+@property (nonatomic, retain) NSString *truncatedAddressFormat;
 
 + (id)defaultRecipientListConcatenator;
 

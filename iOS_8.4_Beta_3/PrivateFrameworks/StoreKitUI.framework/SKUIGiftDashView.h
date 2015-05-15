@@ -11,9 +11,9 @@
     double _dashSpacing;
 }
 
-@property(assign,copy) UIColor * dashColor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } dashSize;
-@property(assign,readwrite) double dashSpacing;
+@property (nonatomic, copy) UIColor *dashColor;
+@property (nonatomic) struct CGSize { double x1; double x2; } dashSize;
+@property (nonatomic) double dashSpacing;
 
 - (void).cxx_destruct;
 - (id)dashColor;

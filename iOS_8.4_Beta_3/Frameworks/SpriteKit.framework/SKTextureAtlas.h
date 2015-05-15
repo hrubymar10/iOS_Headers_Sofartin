@@ -7,7 +7,7 @@
     NSDictionary *_textureDict;
 }
 
-@property(assign,readonly) NSArray * textureNames;
+@property (nonatomic, readonly) NSArray *textureNames;
 
 + (id)atlasNamed:(id)arg1;
 + (id)atlasWithDictionary:(id)arg1;

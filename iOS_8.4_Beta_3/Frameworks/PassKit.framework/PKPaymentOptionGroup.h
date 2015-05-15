@@ -13,17 +13,17 @@
     id _selectionChangedHandler;
 }
 
-@property(assign,readonly) NSString * abTitleDisplayName;
-@property(assign,readonly) NSString * addExistingDisplayName;
-@property(assign,readonly) NSString * addNewDisplayName;
-@property(getter=isEditable,assign,readwrite) bool editable;
-@property(assign,retain) NSString * groupDisplayMode;
-@property(assign,retain) NSString * groupDisplayName;
-@property(assign,copy) NSString * groupType;
-@property(assign,readwrite) long long indexForSelectedItem;
-@property(assign,retain) NSArray * items;
-@property(assign,retain) NSString * readOnlyDisplayName;
-@property(assign,copy) id selectionChangedHandler;
+@property (nonatomic, readonly) NSString *abTitleDisplayName;
+@property (nonatomic, readonly) NSString *addExistingDisplayName;
+@property (nonatomic, readonly) NSString *addNewDisplayName;
+@property (getter=isEditable, nonatomic) bool editable;
+@property (nonatomic, retain) NSString *groupDisplayMode;
+@property (nonatomic, retain) NSString *groupDisplayName;
+@property (nonatomic, copy) NSString *groupType;
+@property (nonatomic) long long indexForSelectedItem;
+@property (nonatomic, retain) NSArray *items;
+@property (nonatomic, retain) NSString *readOnlyDisplayName;
+@property (nonatomic, copy) id selectionChangedHandler;
 
 - (id)abTitleDisplayName;
 - (id)addExistingDisplayName;

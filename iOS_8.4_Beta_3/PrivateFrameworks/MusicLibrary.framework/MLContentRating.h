@@ -6,10 +6,10 @@
     NSMutableDictionary *_dictionary;
 }
 
-@property(assign,copy) NSString * ratingDescription;
-@property(assign,copy) NSString * ratingLabel;
-@property(assign,retain) NSNumber * ratingRank;
-@property(assign,copy) NSString * ratingSystem;
+@property (nonatomic, copy) NSString *ratingDescription;
+@property (nonatomic, copy) NSString *ratingLabel;
+@property (nonatomic, retain) NSNumber *ratingRank;
+@property (nonatomic, copy) NSString *ratingSystem;
 
 - (void).cxx_destruct;
 - (void)_setValue:(id)arg1 forKey:(id)arg2;

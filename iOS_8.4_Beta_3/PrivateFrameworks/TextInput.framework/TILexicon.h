@@ -6,7 +6,7 @@
     NSArray *_entries;
 }
 
-@property(assign,readonly) NSArray * entries;
+@property (nonatomic, readonly) NSArray *entries;
 
 + (id)lexiconWithEntries:(id)arg1;
 + (void)requestLexiconFromBundlePath:(id)arg1 completionHandler:(id)arg2;

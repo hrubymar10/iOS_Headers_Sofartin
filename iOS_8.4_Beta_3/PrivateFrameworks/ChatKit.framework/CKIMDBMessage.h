@@ -7,8 +7,8 @@
     NSString *_personName;
 }
 
-@property(assign,readwrite) int personID;
-@property(assign,retain) NSString * personName;
+@property (nonatomic) int personID;
+@property (nonatomic, retain) NSString *personName;
 
 - (void)dealloc;
 - (id)initWithRecordID:(long long)arg1;

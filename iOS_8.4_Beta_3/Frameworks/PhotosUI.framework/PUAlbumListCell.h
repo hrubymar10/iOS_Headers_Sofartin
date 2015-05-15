@@ -4,7 +4,7 @@
 
 @interface PUAlbumListCell : UICollectionViewCell
 
-@property(assign,readonly) PUAlbumListCellContentView * albumListCellContentView;
+@property (nonatomic, readonly) PUAlbumListCellContentView *albumListCellContentView;
 
 - (id)albumListCellContentView;
 - (void)didTransitionFromLayout:(id)arg1 toLayout:(id)arg2;

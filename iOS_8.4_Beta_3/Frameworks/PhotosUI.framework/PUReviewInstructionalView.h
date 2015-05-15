@@ -6,7 +6,7 @@
     UILabel *__instructionalLabel;
 }
 
-@property(assign,readonly) UILabel * _instructionalLabel;
+@property (nonatomic, readonly) UILabel *_instructionalLabel;
 
 - (void).cxx_destruct;
 - (void)_commonPUReviewInstructionalViewInitialization;

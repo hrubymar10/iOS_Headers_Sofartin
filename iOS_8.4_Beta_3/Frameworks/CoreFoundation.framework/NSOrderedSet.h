@@ -4,7 +4,7 @@
 
 @interface NSOrderedSet : NSObject <NSCopying, NSFastEnumeration, NSMutableCopying, NSSecureCoding>
 
-@property(assign,readonly) unsigned long long count;
+@property (readonly) unsigned long long count;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)newOrderedSetWithObjects:(const id*)arg1 count:(unsigned long long)arg2;

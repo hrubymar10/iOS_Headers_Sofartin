@@ -4,22 +4,22 @@
 
 @interface SALocalSearchMapItem : SADomainObject
 
-@property(assign,copy) NSArray * attributions;
-@property(assign,retain) <SAAceSerializable> * detail;
-@property(assign,copy) NSString * detailType;
-@property(assign,copy) NSString * directionRole;
-@property(assign,retain) SADistance * distance;
-@property(assign,copy) NSNumber * distanceInMiles;
-@property(assign,copy) NSString * extSessionGuid;
-@property(assign,copy) NSDate * extSessionGuidCreatedTimestamp;
-@property(assign,copy) NSString * label;
-@property(assign,copy) NSNumber * localSearchProviderId;
-@property(assign,retain) SALocation * location;
-@property(assign,copy) NSData * placeData;
-@property(assign,copy) NSData * placeData2;
-@property(assign,copy) NSNumber * placeId;
-@property(assign,copy) NSString * spokenAddress;
-@property(assign,copy) NSString * spokenName;
+@property (nonatomic, copy) NSArray *attributions;
+@property (nonatomic, retain) <SAAceSerializable> *detail;
+@property (nonatomic, copy) NSString *detailType;
+@property (nonatomic, copy) NSString *directionRole;
+@property (nonatomic, retain) SADistance *distance;
+@property (nonatomic, copy) NSNumber *distanceInMiles;
+@property (nonatomic, copy) NSString *extSessionGuid;
+@property (nonatomic, copy) NSDate *extSessionGuidCreatedTimestamp;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, copy) NSNumber *localSearchProviderId;
+@property (nonatomic, retain) SALocation *location;
+@property (nonatomic, copy) NSData *placeData;
+@property (nonatomic, copy) NSData *placeData2;
+@property (nonatomic, copy) NSNumber *placeId;
+@property (nonatomic, copy) NSString *spokenAddress;
+@property (nonatomic, copy) NSString *spokenName;
 
 + (id)mapItem;
 + (id)mapItemWithDictionary:(id)arg1 context:(id)arg2;

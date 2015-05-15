@@ -13,19 +13,19 @@
     ABPersonTableView *_tableView;
 }
 
-@property(assign,retain) UISegmentedControl * contentSwitchingTabs;
-@property(assign,retain) UIImageView * contentSwitchingTabsBorder;
-@property(assign,retain) UIImageView * contentSwitchingTabsPocketShadow;
-@property(assign,readonly) UIScrollView<ABPersonTabsScrollView> * currentScrollView;
-@property(assign,readwrite) ABPersonTableViewDataSource * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hidesContentSwitchingTabs;
-@property(assign,retain) UIView * nonScrollableHeaderView;
-@property(assign,retain) ABPersonOverlayingContainerView * overlayingContainerView;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) ABPersonTableView * tableView;
+@property (nonatomic, retain) UISegmentedControl *contentSwitchingTabs;
+@property (nonatomic, retain) UIImageView *contentSwitchingTabsBorder;
+@property (nonatomic, retain) UIImageView *contentSwitchingTabsPocketShadow;
+@property (nonatomic, readonly) UIScrollView<ABPersonTabsScrollView> *currentScrollView;
+@property (nonatomic) ABPersonTableViewDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hidesContentSwitchingTabs;
+@property (nonatomic, retain) UIView *nonScrollableHeaderView;
+@property (nonatomic, retain) ABPersonOverlayingContainerView *overlayingContainerView;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) ABPersonTableView *tableView;
 
 - (id)contentSwitchingTabs;
 - (id)contentSwitchingTabsBorder;

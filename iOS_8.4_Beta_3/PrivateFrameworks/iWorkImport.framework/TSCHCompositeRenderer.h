@@ -7,11 +7,11 @@
     NSArray *mSubRenderers;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSArray * renderers;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSArray *renderers;
+@property (readonly) Class superclass;
 
 + (void)p_delegateSelector:(SEL)arg1 toRenderer:(id)arg2 transparencyLayer:(int)arg3 inContext:(struct CGContext { }*)arg4;
 + (void)renderTSCHCompositeRendering:(id)arg1 intoContext:(struct CGContext { }*)arg2 visible:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg3;

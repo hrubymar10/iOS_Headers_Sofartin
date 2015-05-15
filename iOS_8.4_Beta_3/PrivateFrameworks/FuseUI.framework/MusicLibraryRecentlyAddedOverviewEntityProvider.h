@@ -8,7 +8,7 @@
     MusicLibraryRecentlyAddedOverviewEntityValueProvider *_overviewEntityValueProvider;
 }
 
-@property(assign,readwrite) unsigned long long entityLimit;
+@property (nonatomic) unsigned long long entityLimit;
 
 - (void).cxx_destruct;
 - (void)_handleMediaQueryDataSourceDidInvalidate;

@@ -13,14 +13,14 @@
     CKShareID *_shareID;
 }
 
-@property(assign,readwrite) long long myParticipantPermission;
-@property(assign,readwrite) long long myParticipantType;
-@property(assign,readwrite) struct _OpaquePCSShareProtection { }* publicPCS;
-@property(assign,copy) NSData * publicPCSData;
-@property(assign,copy) NSString * publicPCSEtag;
-@property(assign,readwrite) long long publicPermission;
-@property(assign,retain) NSString * shareEtag;
-@property(assign,retain) CKShareID * shareID;
+@property (nonatomic) long long myParticipantPermission;
+@property (nonatomic) long long myParticipantType;
+@property (nonatomic) struct _OpaquePCSShareProtection { }*publicPCS;
+@property (nonatomic, copy) NSData *publicPCSData;
+@property (nonatomic, copy) NSString *publicPCSEtag;
+@property (nonatomic) long long publicPermission;
+@property (nonatomic, retain) NSString *shareEtag;
+@property (nonatomic, retain) CKShareID *shareID;
 
 + (id)dataWithShareID:(id)arg1 pcsData:(id)arg2;
 + (bool)supportsSecureCoding;

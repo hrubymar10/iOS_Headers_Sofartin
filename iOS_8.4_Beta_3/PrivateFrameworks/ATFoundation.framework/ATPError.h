@@ -13,14 +13,14 @@
     } _has;
 }
 
-@property(assign,readwrite) int code;
-@property(assign,retain) NSString * domain;
-@property(assign,readwrite) long long domainCode;
-@property(assign,retain) NSString * errorDescription;
-@property(assign,readwrite) bool hasCode;
-@property(assign,readonly) bool hasDomain;
-@property(assign,readwrite) bool hasDomainCode;
-@property(assign,readonly) bool hasErrorDescription;
+@property (nonatomic) int code;
+@property (nonatomic, retain) NSString *domain;
+@property (nonatomic) long long domainCode;
+@property (nonatomic, retain) NSString *errorDescription;
+@property (nonatomic) bool hasCode;
+@property (nonatomic, readonly) bool hasDomain;
+@property (nonatomic) bool hasDomainCode;
+@property (nonatomic, readonly) bool hasErrorDescription;
 
 - (void).cxx_destruct;
 - (int)code;

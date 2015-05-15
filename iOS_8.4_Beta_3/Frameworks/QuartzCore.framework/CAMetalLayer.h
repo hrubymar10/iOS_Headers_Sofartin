@@ -7,12 +7,12 @@
     struct _CAMetalLayerPrivate { struct x_list_struct {} *x1; struct Atomic { struct { int x_1_2_1; } x_2_1_1; } x2; struct Atomic { struct { int x_1_2_1; } x_3_1_1; } x3; struct SpinLock { struct { int x_1_2_1; } x_4_1_1; } x4; struct _CAImageQueue {} *x5; id x6; struct x_list_struct {} *x7; unsigned int x8; struct _CAMetalDrawablePrivate {} *x9; id x10; unsigned long long x11; struct CGSize { double x_12_1_1; double x_12_1_2; } x12; unsigned int x13; unsigned int x14; unsigned long long x15; unsigned long long x16; id x17; struct Atomic { struct { int x_1_2_1; } x_18_1_1; } x18; unsigned int x19 : 1; unsigned int x20 : 1; unsigned int x21 : 1; unsigned int x22 : 1; } *_priv;
 }
 
-@property(assign,retain) <MTLDevice> * device;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } drawableSize;
-@property(assign,readwrite) bool framebufferOnly;
-@property(assign,readwrite) unsigned long long maximumDrawableCount;
-@property(assign,readwrite) unsigned long long pixelFormat;
-@property(getter=presentsWithTransaction,assign,readwrite) bool presentsWithTransaction;
+@property (retain) <MTLDevice> *device;
+@property struct CGSize { double x1; double x2; } drawableSize;
+@property bool framebufferOnly;
+@property unsigned long long maximumDrawableCount;
+@property unsigned long long pixelFormat;
+@property (getter=presentsWithTransaction) bool presentsWithTransaction;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (id)defaultValueForKey:(id)arg1;

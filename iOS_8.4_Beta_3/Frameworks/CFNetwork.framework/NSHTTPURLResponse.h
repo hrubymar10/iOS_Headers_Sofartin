@@ -6,9 +6,9 @@
     NSHTTPURLResponseInternal *_httpInternal;
 }
 
-@property(assign,copy) NSDictionary * allHeaderFields;
-@property(assign,readonly) long long statusCode;
-@property(assign,readonly) bool tsu_isSuccess;
+@property (readonly, copy) NSDictionary *allHeaderFields;
+@property (readonly) long long statusCode;
+@property (readonly) bool tsu_isSuccess;
 
 + (bool)isErrorStatusCode:(long long)arg1;
 + (id)localizedStringForStatusCode:(long long)arg1;

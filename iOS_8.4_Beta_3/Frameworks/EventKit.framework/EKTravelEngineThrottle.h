@@ -12,13 +12,13 @@
     NSMutableOrderedSet *_throttledAdviceQueue;
 }
 
-@property(assign,copy) id adviceBlock;
-@property(assign,retain) PCPersistentTimer * emissionTimer;
-@property(assign,retain) NSDate * nextEmissionDate;
-@property(assign,readwrite) unsigned long long numberOfThrottleAdviceObjectsToEmitLater;
-@property(assign,readwrite) bool running;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * throttleQueue;
-@property(assign,retain) NSMutableOrderedSet * throttledAdviceQueue;
+@property (nonatomic, copy) id adviceBlock;
+@property (nonatomic, retain) PCPersistentTimer *emissionTimer;
+@property (nonatomic, retain) NSDate *nextEmissionDate;
+@property (nonatomic) unsigned long long numberOfThrottleAdviceObjectsToEmitLater;
+@property (nonatomic) bool running;
+@property (nonatomic) NSObject<OS_dispatch_queue> *throttleQueue;
+@property (nonatomic, retain) NSMutableOrderedSet *throttledAdviceQueue;
 
 + (id)_throttleIdentifier;
 + (double)_throttlePeriodInSeconds;

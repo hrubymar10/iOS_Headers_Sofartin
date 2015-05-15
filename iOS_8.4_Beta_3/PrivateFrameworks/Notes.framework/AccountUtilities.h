@@ -10,9 +10,9 @@
     NSLock *_updateAccountInfosLock;
 }
 
-@property(assign,retain) ACAccountStore * accountStore;
-@property(assign,retain) NSObject<OS_dispatch_group> * backgroundDispatchGroup;
-@property(assign,retain) NSLock * updateAccountInfosLock;
+@property (nonatomic, retain) ACAccountStore *accountStore;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *backgroundDispatchGroup;
+@property (retain) NSLock *updateAccountInfosLock;
 
 + (id)sharedAccountUtilities;
 

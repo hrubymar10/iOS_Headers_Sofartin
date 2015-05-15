@@ -6,7 +6,7 @@
     NSSet *_values;
 }
 
-@property(assign,retain) NSSet * values;
+@property (nonatomic, retain) NSSet *values;
 
 + (id)predicateWithProperty:(id)arg1 values:(id)arg2;
 

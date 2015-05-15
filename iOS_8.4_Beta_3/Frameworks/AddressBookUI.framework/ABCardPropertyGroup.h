@@ -14,18 +14,18 @@
     bool _showActionsWhenEmpty;
 }
 
-@property(assign,readonly) bool allowsAdding;
-@property(assign,copy) NSArray * contacts;
-@property(assign,retain) NSArray * deletedItems;
-@property(assign,retain) NSArray * editingItems;
-@property(getter=isFixedValue,assign,readonly) bool fixedValue;
-@property(assign,readwrite) bool isAdded;
-@property(assign,readonly) bool modified;
-@property(getter=isMultiLine,assign,readonly) bool multiLine;
-@property(getter=isMultiValue,assign,readonly) bool multiValue;
-@property(assign,readonly) NSString * property;
-@property(assign,readonly) NSArray * propertyItems;
-@property(assign,readwrite) bool showActionsWhenEmpty;
+@property (nonatomic, readonly) bool allowsAdding;
+@property (nonatomic, copy) NSArray *contacts;
+@property (nonatomic, retain) NSArray *deletedItems;
+@property (nonatomic, retain) NSArray *editingItems;
+@property (getter=isFixedValue, nonatomic, readonly) bool fixedValue;
+@property (nonatomic) bool isAdded;
+@property (nonatomic, readonly) bool modified;
+@property (getter=isMultiLine, nonatomic, readonly) bool multiLine;
+@property (getter=isMultiValue, nonatomic, readonly) bool multiValue;
+@property (nonatomic, readonly) NSString *property;
+@property (nonatomic, readonly) NSArray *propertyItems;
+@property (nonatomic) bool showActionsWhenEmpty;
 
 + (id)groupForProperty:(id)arg1 contact:(id)arg2 withLinkedContacts:(id)arg3;
 

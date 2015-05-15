@@ -4,15 +4,15 @@
 
 @interface SALocalSearchGetNavigationStatusCompleted : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SALocalSearchAceNavigationEta * nextManeuverEta;
-@property(assign,retain) SALocalSearchAceNavigationEta * overallEta;
-@property(assign,copy) NSString * refId;
-@property(assign,retain) SALocalSearchRoute * route;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *aceId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SALocalSearchAceNavigationEta *nextManeuverEta;
+@property (nonatomic, retain) SALocalSearchAceNavigationEta *overallEta;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic, retain) SALocalSearchRoute *route;
+@property (readonly) Class superclass;
 
 + (id)getNavigationStatusCompleted;
 + (id)getNavigationStatusCompletedWithDictionary:(id)arg1 context:(id)arg2;

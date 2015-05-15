@@ -4,8 +4,8 @@
 
 @interface UIPopoverBackgroundView : UIView <UIPopoverBackgroundViewMethods>
 
-@property(assign,readwrite) unsigned long long arrowDirection;
-@property(assign,readwrite) double arrowOffset;
+@property (nonatomic) unsigned long long arrowDirection;
+@property (nonatomic) double arrowOffset;
 
 + (double)_contentViewCornerRadiusForArrowDirection:(unsigned long long)arg1;
 + (double)arrowBase;

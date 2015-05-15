@@ -4,9 +4,9 @@
 
 @interface CAMMutableVideoCaptureRequest : CAMVideoCaptureRequest
 
-@property(assign,readwrite) long long captureDevice;
-@property(assign,readwrite) long long deviceOrientation;
-@property(assign,readwrite) long long torchMode;
+@property (nonatomic) long long captureDevice;
+@property (nonatomic) long long deviceOrientation;
+@property (nonatomic) long long torchMode;
 
 - (void)setCaptureDevice:(long long)arg1;
 - (void)setDeviceOrientation:(long long)arg1;

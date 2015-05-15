@@ -6,7 +6,7 @@
     NSSet *_updatedAssets;
 }
 
-@property(assign,copy) NSSet * updatedAssets;
+@property (nonatomic, copy) NSSet *updatedAssets;
 
 + (id)notificationWithChangedAssets:(id)arg1;
 

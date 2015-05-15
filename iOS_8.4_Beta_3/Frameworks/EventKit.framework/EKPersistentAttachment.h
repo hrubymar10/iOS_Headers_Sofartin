@@ -4,14 +4,14 @@
 
 @interface EKPersistentAttachment : EKPersistentObject <NSCopying>
 
-@property(assign,copy) NSURL * URL;
-@property(assign,readonly) NSString * UUID;
-@property(assign,copy) NSDictionary * XProperties;
-@property(assign,copy) NSString * fileFormat;
-@property(assign,copy) NSString * fileName;
-@property(assign,copy) NSNumber * fileSize;
-@property(assign,readonly) bool isBinary;
-@property(assign,copy) NSURL * localURL;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, readonly) NSString *UUID;
+@property (nonatomic, copy) NSDictionary *XProperties;
+@property (nonatomic, copy) NSString *fileFormat;
+@property (nonatomic, copy) NSString *fileName;
+@property (nonatomic, copy) NSNumber *fileSize;
+@property (nonatomic, readonly) bool isBinary;
+@property (nonatomic, copy) NSURL *localURL;
 
 + (id)relations;
 

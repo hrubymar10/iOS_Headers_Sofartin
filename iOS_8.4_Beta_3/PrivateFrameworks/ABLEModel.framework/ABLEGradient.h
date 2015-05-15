@@ -8,9 +8,9 @@
     float _minDecay;
 }
 
-@property(assign,readonly) ABLEBONDrain * drainMap;
-@property(assign,readonly) float maxDecay;
-@property(assign,readonly) float minDecay;
+@property (readonly) ABLEBONDrain *drainMap;
+@property (readonly) float maxDecay;
+@property (readonly) float minDecay;
 
 - (void).cxx_destruct;
 - (unsigned long long)calculateBON:(id)arg1;

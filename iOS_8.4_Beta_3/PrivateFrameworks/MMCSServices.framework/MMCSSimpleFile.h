@@ -17,18 +17,18 @@
     NSData *_signature;
 }
 
-@property(assign,retain) NSString * authToken;
-@property(assign,readwrite) long long encryptionBehavior;
-@property(assign,readwrite) int fd;
-@property(assign,retain) NSData * fileHash;
-@property(assign,retain) NSString * guid;
-@property(assign,readwrite) unsigned long long itemID;
-@property(assign,retain) NSString * localPath;
-@property(assign,readwrite) double progress;
-@property(assign,readwrite) unsigned long long protocolFileSize;
-@property(assign,retain) NSURL * requestURL;
-@property(assign,retain) NSString * requestorID;
-@property(assign,retain) NSData * signature;
+@property (retain) NSString *authToken;
+@property long long encryptionBehavior;
+@property int fd;
+@property (retain) NSData *fileHash;
+@property (retain) NSString *guid;
+@property unsigned long long itemID;
+@property (retain) NSString *localPath;
+@property double progress;
+@property unsigned long long protocolFileSize;
+@property (retain) NSURL *requestURL;
+@property (retain) NSString *requestorID;
+@property (retain) NSData *signature;
 
 - (id)authToken;
 - (void)dealloc;

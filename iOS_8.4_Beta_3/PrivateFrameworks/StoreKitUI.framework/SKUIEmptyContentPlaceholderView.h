@@ -14,12 +14,12 @@
     UIButton *_signInButton;
 }
 
-@property(assign,retain) UIImage * placeholderImage;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } placeholderImageInsets;
-@property(assign,copy) NSString * placeholderMessage;
-@property(assign,readonly) UILabel * placeholderMessageLabel;
-@property(assign,readwrite) bool showsSignInButton;
-@property(assign,readonly) UIButton * signInButton;
+@property (nonatomic, retain) UIImage *placeholderImage;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } placeholderImageInsets;
+@property (nonatomic, copy) NSString *placeholderMessage;
+@property (nonatomic, readonly) UILabel *placeholderMessageLabel;
+@property (nonatomic) bool showsSignInButton;
+@property (nonatomic, readonly) UIButton *signInButton;
 
 - (void).cxx_destruct;
 - (void)layoutSubviews;

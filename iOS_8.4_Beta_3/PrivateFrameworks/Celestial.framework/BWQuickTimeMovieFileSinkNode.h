@@ -88,9 +88,9 @@
     NSArray *_trackReferenceListForMetadataInputs;
 }
 
-@property(assign,readwrite) float maxVideoFrameRate;
-@property(assign,copy) NSDictionary * movieLevelMetadata;
-@property(assign,copy) NSArray * trackReferenceListForMetadataInputs;
+@property (nonatomic) float maxVideoFrameRate;
+@property (nonatomic, copy) NSDictionary *movieLevelMetadata;
+@property (nonatomic, copy) NSArray *trackReferenceListForMetadataInputs;
 
 + (void)initialize;
 

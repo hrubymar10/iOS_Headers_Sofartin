@@ -9,10 +9,10 @@
     UIView *_itemTitleView;
 }
 
-@property(assign,retain) UIImageView * itemImageView;
-@property(assign,retain) UILabel * itemSubtitleLabel;
-@property(assign,retain) UILabel * itemTitleLabel;
-@property(assign,retain) UIView * itemTitleView;
+@property (nonatomic, retain) UIImageView *itemImageView;
+@property (nonatomic, retain) UILabel *itemSubtitleLabel;
+@property (nonatomic, retain) UILabel *itemTitleLabel;
+@property (nonatomic, retain) UIView *itemTitleView;
 
 + (double)titleOriginX;
 

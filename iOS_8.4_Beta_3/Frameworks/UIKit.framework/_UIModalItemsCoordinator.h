@@ -11,12 +11,12 @@
     NSMapTable *_sessionForItemMapTable;
 }
 
-@property(assign,retain) _UIModalItemHostingWindow * _hostingWindowForAlerts;
-@property(assign,retain) _UIModalItemHostingWindow * _hostingWindowForSBAlerts;
-@property(assign,retain) _UIModalItemAppViewController * _viewControllerForAlerts;
-@property(assign,retain) _UIModalItemSBViewController * _viewControllerForSBAlerts;
-@property(assign,retain) NSMapTable * presentingSessionsMapTable;
-@property(assign,retain) NSMapTable * sessionForItemMapTable;
+@property (nonatomic, retain) _UIModalItemHostingWindow *_hostingWindowForAlerts;
+@property (nonatomic, retain) _UIModalItemHostingWindow *_hostingWindowForSBAlerts;
+@property (nonatomic, retain) _UIModalItemAppViewController *_viewControllerForAlerts;
+@property (nonatomic, retain) _UIModalItemSBViewController *_viewControllerForSBAlerts;
+@property (nonatomic, retain) NSMapTable *presentingSessionsMapTable;
+@property (nonatomic, retain) NSMapTable *sessionForItemMapTable;
 
 + (void)_desaturateUIForSB;
 + (void)_getRidOfViewControllerForAlerts;

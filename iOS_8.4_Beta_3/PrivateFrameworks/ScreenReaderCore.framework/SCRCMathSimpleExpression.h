@@ -6,7 +6,7 @@
     NSString *_content;
 }
 
-@property(assign,copy) NSString * content;
+@property (nonatomic, copy) NSString *content;
 
 - (id)_functionNames;
 - (bool)canBeUsedWithBase;

@@ -19,9 +19,9 @@
     } fWakeGestureVisitor;
 }
 
-@property(assign,readwrite) long long crown;
-@property(assign,readwrite) <CMWakeGestureDelegate> * delegate;
-@property(assign,readwrite) long long wrist;
+@property (nonatomic) long long crown;
+@property (nonatomic) <CMWakeGestureDelegate> *delegate;
+@property (nonatomic) long long wrist;
 
 + (void)initialize;
 + (bool)isWakeGestureAvailable;

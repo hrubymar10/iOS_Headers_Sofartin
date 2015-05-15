@@ -6,7 +6,7 @@
     NSSet *_notificationTypeNamesToFetch;
 }
 
-@property(assign,retain) NSSet * notificationTypeNamesToFetch;
+@property (nonatomic, retain) NSSet *notificationTypeNamesToFetch;
 
 - (id)copyAdditionalResourcePropertiesToFetch;
 - (id)copyGetTaskWithURL:(id)arg1;

@@ -4,13 +4,13 @@
 
 @interface SAOperation : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSDictionary * constraints;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * domainId;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * operationId;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSDictionary *constraints;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *domainId;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *operationId;
+@property (readonly) Class superclass;
 
 + (id)operation;
 + (id)operationWithDictionary:(id)arg1 context:(id)arg2;

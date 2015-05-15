@@ -6,7 +6,7 @@
     NSString *_albumIdentifier;
 }
 
-@property(assign,retain) NSString * albumIdentifier;
+@property (retain) NSString *albumIdentifier;
 
 - (void).cxx_destruct;
 - (id)albumIdentifier;

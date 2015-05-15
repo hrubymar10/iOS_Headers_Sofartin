@@ -9,10 +9,10 @@
     long long mWidth;
 }
 
-@property(assign,readonly) char * data;
-@property(assign,readonly) long long height;
-@property(assign,readonly) long long rowBytes;
-@property(assign,readonly) long long width;
+@property (nonatomic, readonly) char *data;
+@property (nonatomic, readonly) long long height;
+@property (nonatomic, readonly) long long rowBytes;
+@property (nonatomic, readonly) long long width;
 
 - (char *)data;
 - (void)dealloc;

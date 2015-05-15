@@ -4,10 +4,10 @@
 
 @interface SAGKSnippet : SAUISnippet
 
-@property(assign,retain) SAUIAppPunchOut * appPunchOut;
-@property(assign,copy) NSArray * pods;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) SAUIAppPunchOut *appPunchOut;
+@property (nonatomic, copy) NSArray *pods;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
 
 + (id)snippet;
 + (id)snippetWithDictionary:(id)arg1 context:(id)arg2;

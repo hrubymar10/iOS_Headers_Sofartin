@@ -18,13 +18,13 @@
     bool placed;
 }
 
-@property(assign,readwrite) int calloutType;
-@property(assign,readwrite) double fBottom;
-@property(assign,readwrite) double fLeft;
-@property(assign,readwrite) double fRight;
-@property(assign,readwrite) CPParagraph * nextInColumn;
-@property(assign,retain) CPParagraph * paragraph;
-@property(assign,readwrite) bool placed;
+@property int calloutType;
+@property double fBottom;
+@property double fLeft;
+@property double fRight;
+@property (nonatomic) CPParagraph *nextInColumn;
+@property (nonatomic, retain) CPParagraph *paragraph;
+@property bool placed;
 
 - (double)area;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })belowBounds;

@@ -14,14 +14,14 @@
     void *_reserved6;
 }
 
-@property(assign,readwrite) unsigned long long deleteRule;
-@property(assign,readwrite) NSEntityDescription * destinationEntity;
-@property(assign,readwrite) NSRelationshipDescription * inverseRelationship;
-@property(assign,readwrite) unsigned long long maxCount;
-@property(assign,readwrite) unsigned long long minCount;
-@property(getter=isOrdered,assign,readwrite) bool ordered;
-@property(getter=isToMany,assign,readonly) bool toMany;
-@property(assign,copy) NSData * versionHash;
+@property unsigned long long deleteRule;
+@property (nonatomic) NSEntityDescription *destinationEntity;
+@property (nonatomic) NSRelationshipDescription *inverseRelationship;
+@property unsigned long long maxCount;
+@property unsigned long long minCount;
+@property (getter=isOrdered) bool ordered;
+@property (getter=isToMany, readonly) bool toMany;
+@property (readonly, copy) NSData *versionHash;
 
 + (void)initialize;
 

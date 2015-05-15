@@ -4,7 +4,7 @@
 
 @interface DOMHTMLBRElement : DOMHTMLElement
 
-@property(assign,copy) NSString * clear;
+@property (copy) NSString *clear;
 
 - (id)clear;
 - (void)setClear:(id)arg1;

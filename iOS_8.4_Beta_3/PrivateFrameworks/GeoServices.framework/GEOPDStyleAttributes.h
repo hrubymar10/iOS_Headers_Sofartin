@@ -10,9 +10,9 @@
     } _has;
 }
 
-@property(assign,retain) NSMutableArray * attributes;
-@property(assign,readwrite) unsigned long long customIconId;
-@property(assign,readwrite) bool hasCustomIconId;
+@property (nonatomic, retain) NSMutableArray *attributes;
+@property (nonatomic) unsigned long long customIconId;
+@property (nonatomic) bool hasCustomIconId;
 
 - (void)addAttribute:(id)arg1;
 - (id)attributeAtIndex:(unsigned long long)arg1;

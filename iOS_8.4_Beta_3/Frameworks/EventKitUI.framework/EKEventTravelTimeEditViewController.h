@@ -40,15 +40,15 @@
     long long _travelTimeSelectedChoice;
 }
 
-@property(assign,retain) NSDate * arrivalDate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) EKStructuredLocation * destinationStructuredLocation;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) EKStructuredLocation * originStructuredLocation;
-@property(assign,readwrite) long long selectedRoutingMode;
-@property(assign,readwrite) double selectedTravelTime;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSDate *arrivalDate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) EKStructuredLocation *destinationStructuredLocation;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) EKStructuredLocation *originStructuredLocation;
+@property (nonatomic) long long selectedRoutingMode;
+@property (nonatomic) double selectedTravelTime;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_autoselectFromAvailableChoices;

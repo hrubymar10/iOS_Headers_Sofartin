@@ -6,8 +6,8 @@
     NSHTTPCookieStorageInternal *_internal;
 }
 
-@property(assign,readwrite) unsigned long long cookieAcceptPolicy;
-@property(assign,copy) NSArray * cookies;
+@property unsigned long long cookieAcceptPolicy;
+@property (readonly, copy) NSArray *cookies;
 
 + (id)aa_icloudCookies;
 + (id)sharedHTTPCookieStorage;

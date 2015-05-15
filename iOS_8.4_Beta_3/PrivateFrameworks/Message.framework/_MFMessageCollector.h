@@ -8,7 +8,7 @@
     id _transmogrifier;
 }
 
-@property(assign,copy) id transmogrifier;
+@property (nonatomic, copy) id transmogrifier;
 
 - (id)copyMessages;
 - (void)dealloc;

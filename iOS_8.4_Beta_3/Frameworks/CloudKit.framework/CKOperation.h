@@ -24,27 +24,27 @@
     long long _usesBackgroundSessionOverride;
 }
 
-@property(assign,readwrite) bool allowsCellularAccess;
-@property(assign,retain) NSObject<OS_dispatch_queue> * callbackQueue;
-@property(assign,retain) CKContainer * container;
-@property(assign,readonly) id context;
-@property(assign,retain) NSString * deviceIdentifier;
-@property(assign,retain) NSError * error;
-@property(assign,readwrite) bool isDiscretionary;
-@property(assign,readwrite) bool isExecuting;
-@property(assign,readwrite) bool isFinished;
-@property(assign,retain) NSString * operationID;
-@property(assign,readonly) CKOperationInfo * operationInfo;
-@property(assign,readonly) NSString * parentSectionID;
-@property(assign,retain) CKPlaceholderOperation * placeholderOperation;
-@property(assign,retain) NSArray * requestUUIDs;
-@property(assign,retain) NSString * sectionID;
-@property(assign,retain) NSString * sourceApplicationBundleIdentifier;
-@property(assign,retain) NSString * sourceApplicationSecondaryIdentifier;
-@property(assign,retain) CKTimeLogger * timeLogger;
-@property(assign,retain) NSObject<OS_dispatch_source> * timeoutSource;
-@property(assign,readwrite) bool usesBackgroundSession;
-@property(assign,readwrite) long long usesBackgroundSessionOverride;
+@property (nonatomic) bool allowsCellularAccess;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *callbackQueue;
+@property (nonatomic, retain) CKContainer *container;
+@property (nonatomic, readonly) id context;
+@property (nonatomic, retain) NSString *deviceIdentifier;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic) bool isDiscretionary;
+@property (nonatomic) bool isExecuting;
+@property (nonatomic) bool isFinished;
+@property (nonatomic, retain) NSString *operationID;
+@property (nonatomic, readonly) CKOperationInfo *operationInfo;
+@property (nonatomic, readonly) NSString *parentSectionID;
+@property (nonatomic, retain) CKPlaceholderOperation *placeholderOperation;
+@property (nonatomic, retain) NSArray *requestUUIDs;
+@property (nonatomic, retain) NSString *sectionID;
+@property (nonatomic, retain) NSString *sourceApplicationBundleIdentifier;
+@property (nonatomic, retain) NSString *sourceApplicationSecondaryIdentifier;
+@property (nonatomic, retain) CKTimeLogger *timeLogger;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *timeoutSource;
+@property (nonatomic) bool usesBackgroundSession;
+@property (nonatomic) long long usesBackgroundSessionOverride;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

@@ -8,9 +8,9 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UILabel * hostLabel;
-@property(assign,readwrite) bool showActive;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) UILabel *hostLabel;
+@property (nonatomic) bool showActive;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 - (void)dealloc;
 - (id)hostLabel;

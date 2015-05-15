@@ -14,11 +14,11 @@
     NSMutableDictionary *_parsedFoldersByURL;
 }
 
-@property(assign,readonly) NSDictionary * folderURLToChildrenURLOrder;
-@property(assign,retain) NSString * nextRootCTag;
-@property(assign,retain) NSString * nextRootSyncToken;
-@property(assign,readonly) NSArray * parsedBookmarks;
-@property(assign,readonly) NSArray * parsedFolders;
+@property (nonatomic, readonly) NSDictionary *folderURLToChildrenURLOrder;
+@property (nonatomic, retain) NSString *nextRootCTag;
+@property (nonatomic, retain) NSString *nextRootSyncToken;
+@property (nonatomic, readonly) NSArray *parsedBookmarks;
+@property (nonatomic, readonly) NSArray *parsedFolders;
 
 - (void)_foundChildrenOrder:(id)arg1 inFolderWithURL:(id)arg2;
 - (id)additionalHeaderValues;

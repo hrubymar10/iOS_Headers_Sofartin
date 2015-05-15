@@ -6,9 +6,9 @@
     unsigned long long eventMask;
 }
 
-@property(assign,readonly) SEL action;
-@property(assign,readwrite) unsigned long long eventMask;
-@property(assign,readonly) id target;
+@property (readonly) SEL action;
+@property unsigned long long eventMask;
+@property (readonly) id target;
 
 - (SEL)action;
 - (void)connect;

@@ -9,10 +9,10 @@
     bool _timeoutOccurred;
 }
 
-@property(assign,retain) NSString * info;
-@property(assign,retain) NSObject<OS_dispatch_semaphore> * sem;
-@property(assign,readwrite) double timeout;
-@property(assign,readwrite) bool timeoutOccurred;
+@property (nonatomic, retain) NSString *info;
+@property (nonatomic, retain) NSObject<OS_dispatch_semaphore> *sem;
+@property (nonatomic) double timeout;
+@property (nonatomic) bool timeoutOccurred;
 
 - (void).cxx_destruct;
 - (id)info;

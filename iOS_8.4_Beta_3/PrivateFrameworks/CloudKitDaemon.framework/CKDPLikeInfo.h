@@ -11,10 +11,10 @@
     bool _likedByCurrentUser;
 }
 
-@property(assign,readwrite) bool hasLikeCount;
-@property(assign,readwrite) bool hasLikedByCurrentUser;
-@property(assign,readwrite) int likeCount;
-@property(assign,readwrite) bool likedByCurrentUser;
+@property (nonatomic) bool hasLikeCount;
+@property (nonatomic) bool hasLikedByCurrentUser;
+@property (nonatomic) int likeCount;
+@property (nonatomic) bool likedByCurrentUser;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

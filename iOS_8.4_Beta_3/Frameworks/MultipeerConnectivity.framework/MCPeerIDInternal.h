@@ -8,9 +8,9 @@
     unsigned long long _pid64;
 }
 
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) NSString * idString;
-@property(assign,readonly) unsigned long long pid64;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, readonly) NSString *idString;
+@property (nonatomic, readonly) unsigned long long pid64;
 
 - (void)dealloc;
 - (id)displayName;

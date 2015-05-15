@@ -12,8 +12,8 @@
     NSOutputStream *_writeStream;
 }
 
-@property(getter=isClosed,assign,readwrite) bool closed;
-@property(assign,readwrite) <TRTCPConnectionStreamDelegate> * delegate;
+@property (getter=isClosed, nonatomic) bool closed;
+@property (nonatomic) <TRTCPConnectionStreamDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)_initWithNetService:(id)arg1;

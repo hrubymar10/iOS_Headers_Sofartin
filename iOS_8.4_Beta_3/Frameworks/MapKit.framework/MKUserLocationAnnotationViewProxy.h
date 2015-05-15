@@ -7,15 +7,15 @@
     NSHashTable *_presentationCoordinateObservers;
 }
 
-@property(assign,readwrite) MKAnnotationView * annotationView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct { double x1; double x2; } presentationCoordinate;
-@property(assign,readwrite) double presentationCourse;
-@property(assign,retain) GEORouteMatch * routeMatch;
-@property(assign,readonly) Class superclass;
-@property(getter=isTracking,assign,readwrite) bool tracking;
+@property (nonatomic) MKAnnotationView *annotationView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct { double x1; double x2; } presentationCoordinate;
+@property (nonatomic) double presentationCourse;
+@property (nonatomic, retain) GEORouteMatch *routeMatch;
+@property (readonly) Class superclass;
+@property (getter=isTracking, nonatomic) bool tracking;
 
 - (void).cxx_destruct;
 - (void)addPresentationCoordinateChangedObserver:(id)arg1;

@@ -6,11 +6,11 @@
     SSVPushNotificationParameters *_parameters;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) SSVPushNotificationParameters * pushNotificationParameters;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) SSVPushNotificationParameters *pushNotificationParameters;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)copyXPCEncoding;

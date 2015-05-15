@@ -8,12 +8,12 @@
     CKDPIdentifier *_userId;
 }
 
-@property(assign,readonly) bool hasKeyData;
-@property(assign,readonly) bool hasKeyHash;
-@property(assign,readonly) bool hasUserId;
-@property(assign,retain) NSData * keyData;
-@property(assign,retain) NSString * keyHash;
-@property(assign,retain) CKDPIdentifier * userId;
+@property (nonatomic, readonly) bool hasKeyData;
+@property (nonatomic, readonly) bool hasKeyHash;
+@property (nonatomic, readonly) bool hasUserId;
+@property (nonatomic, retain) NSData *keyData;
+@property (nonatomic, retain) NSString *keyHash;
+@property (nonatomic, retain) CKDPIdentifier *userId;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

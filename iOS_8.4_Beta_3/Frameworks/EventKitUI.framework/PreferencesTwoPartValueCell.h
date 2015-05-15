@@ -8,9 +8,9 @@
     TwoPartTextLabel *_twoPartLabel;
 }
 
-@property(assign,readwrite) <EKCellShortener> * shortener;
-@property(assign,retain) TwoPartTextLabel * twoPartTextLabel;
-@property(assign,retain) UIColor * valueColor;
+@property (nonatomic) <EKCellShortener> *shortener;
+@property (nonatomic, readonly, retain) TwoPartTextLabel *twoPartTextLabel;
+@property (nonatomic, readonly, retain) UIColor *valueColor;
 
 - (void).cxx_destruct;
 - (void)_layoutSubviewsCore;

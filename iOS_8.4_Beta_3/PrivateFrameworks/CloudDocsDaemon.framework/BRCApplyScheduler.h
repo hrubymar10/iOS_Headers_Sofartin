@@ -9,12 +9,12 @@
     NSObject<OS_dispatch_group> *_writerGroup;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSObject<OS_dispatch_group> * writerGroup;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCancelled;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSObject<OS_dispatch_group> *writerGroup;
 
 - (void).cxx_destruct;
 - (void)_close;

@@ -10,12 +10,12 @@
     CoreDAVErrorItem *_topLevelErrorItem;
 }
 
-@property(assign,retain) ICSDocument * calendarData;
-@property(assign,retain) CoreDAVItemWithHrefChildItem * recipientHREF;
-@property(assign,readonly) NSString * recipientString;
-@property(assign,retain) CoreDAVLeafItem * requestStatus;
-@property(assign,retain) NSString * responseDescription;
-@property(assign,retain) CoreDAVErrorItem * topLevelErrorItem;
+@property (nonatomic, retain) ICSDocument *calendarData;
+@property (nonatomic, retain) CoreDAVItemWithHrefChildItem *recipientHREF;
+@property (nonatomic, readonly) NSString *recipientString;
+@property (nonatomic, retain) CoreDAVLeafItem *requestStatus;
+@property (nonatomic, retain) NSString *responseDescription;
+@property (nonatomic, retain) CoreDAVErrorItem *topLevelErrorItem;
 
 - (void)_setCalendarDataWithLeafItem:(id)arg1;
 - (id)calendarData;

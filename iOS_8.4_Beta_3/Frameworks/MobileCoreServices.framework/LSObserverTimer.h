@@ -14,14 +14,14 @@
     NSTimer *_timer;
 }
 
-@property(assign,readwrite) SEL appObserverSelector;
-@property(assign,retain) NSMutableSet * applications;
-@property(assign,retain) NSDate * lastFiredDate;
-@property(assign,readonly) double latency;
-@property(assign,readonly) double minInterval;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSMutableSet * plugins;
-@property(assign,retain) NSTimer * timer;
+@property SEL appObserverSelector;
+@property (nonatomic, retain) NSMutableSet *applications;
+@property (nonatomic, retain) NSDate *lastFiredDate;
+@property (nonatomic, readonly) double latency;
+@property (nonatomic, readonly) double minInterval;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSMutableSet *plugins;
+@property (nonatomic, retain) NSTimer *timer;
 
 - (void)addApplication:(id)arg1;
 - (SEL)appObserverSelector;

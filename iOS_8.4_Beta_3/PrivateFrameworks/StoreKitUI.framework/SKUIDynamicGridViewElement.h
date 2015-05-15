@@ -8,9 +8,9 @@
     NSMutableDictionary *_templateDefinitionTypeToModeValueMap;
 }
 
-@property(assign,readonly) bool hasSectionHeaders;
-@property(getter=isMalformed,assign,readonly) bool malformed;
-@property(assign,readonly) long long minimumEntityCountForSections;
+@property (nonatomic, readonly) bool hasSectionHeaders;
+@property (getter=isMalformed, nonatomic, readonly) bool malformed;
+@property (nonatomic, readonly) long long minimumEntityCountForSections;
 
 - (void).cxx_destruct;
 - (id)_templateDefinitionTypeToModeValueMap;

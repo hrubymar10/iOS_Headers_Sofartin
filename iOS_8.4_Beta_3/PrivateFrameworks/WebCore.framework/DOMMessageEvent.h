@@ -4,11 +4,11 @@
 
 @interface DOMMessageEvent : DOMEvent
 
-@property(assign,readonly) NSString * data;
-@property(assign,copy) NSString * lastEventId;
-@property(assign,readonly) DOMMessagePort * messagePort;
-@property(assign,copy) NSString * origin;
-@property(assign,readonly) <DOMEventTarget> * source;
+@property (readonly) NSString *data;
+@property (readonly, copy) NSString *lastEventId;
+@property (readonly) DOMMessagePort *messagePort;
+@property (readonly, copy) NSString *origin;
+@property (readonly) <DOMEventTarget> *source;
 
 - (id)data;
 - (void)initMessageEvent:(id)arg1 canBubbleArg:(bool)arg2 cancelableArg:(bool)arg3 dataArg:(id)arg4 originArg:(id)arg5 lastEventIdArg:(id)arg6 sourceArg:(id)arg7 messagePort:(id)arg8;

@@ -8,9 +8,9 @@
     NSString *_serviceName;
 }
 
-@property(assign,copy) NSString * accountName;
-@property(assign,retain) NSLock * lock;
-@property(assign,copy) NSString * serviceName;
+@property (nonatomic, copy) NSString *accountName;
+@property (nonatomic, retain) NSLock *lock;
+@property (nonatomic, copy) NSString *serviceName;
 
 + (id)keychainPasswordForMACAddress:(id)arg1;
 + (id)keychainWrapperWithMACAddress:(id)arg1;

@@ -18,15 +18,15 @@
     unsigned long long _transmissionType;
 }
 
-@property(assign,readonly) unsigned long long bytesExpected;
-@property(assign,readonly) unsigned long long bytesReceived;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MFComposeActivityContinuationOperationDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSData * draftData;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long transmissionType;
+@property (nonatomic, readonly) unsigned long long bytesExpected;
+@property (nonatomic, readonly) unsigned long long bytesReceived;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MFComposeActivityContinuationOperationDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSData *draftData;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned long long transmissionType;
 
 + (id)receivingOperationWithInputStream:(id)arg1 outputStream:(id)arg2;
 + (id)sendingOperationWithDraftData:(id)arg1 inputStream:(id)arg2 outputStream:(id)arg3;

@@ -4,15 +4,15 @@
 
 @interface CAKeyframeAnimation : CAPropertyAnimation
 
-@property(assign,copy) NSArray * biasValues;
-@property(assign,copy) NSString * calculationMode;
-@property(assign,copy) NSArray * continuityValues;
-@property(assign,copy) NSArray * keyTimes;
-@property(assign,readwrite) struct CGPath { }* path;
-@property(assign,copy) NSString * rotationMode;
-@property(assign,copy) NSArray * tensionValues;
-@property(assign,copy) NSArray * timingFunctions;
-@property(assign,copy) NSArray * values;
+@property (copy) NSArray *biasValues;
+@property (copy) NSString *calculationMode;
+@property (copy) NSArray *continuityValues;
+@property (copy) NSArray *keyTimes;
+@property struct CGPath { }*path;
+@property (copy) NSString *rotationMode;
+@property (copy) NSArray *tensionValues;
+@property (copy) NSArray *timingFunctions;
+@property (copy) NSArray *values;
 
 + (id)normalizedKeyframeAnimationWithKeyPath:(id)arg1;
 

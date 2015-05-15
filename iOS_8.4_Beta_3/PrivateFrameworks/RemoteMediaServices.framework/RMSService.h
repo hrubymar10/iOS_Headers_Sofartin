@@ -13,14 +13,14 @@
     long long _serviceType;
 }
 
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSString * homeSharingGroupKey;
-@property(assign,retain) NSString * hostName;
-@property(assign,retain) NSString * networkName;
-@property(assign,readwrite) int port;
-@property(assign,readwrite) long long serviceDiscoverySource;
-@property(assign,readwrite) long long serviceLegacyFlags;
-@property(assign,readwrite) long long serviceType;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSString *homeSharingGroupKey;
+@property (nonatomic, retain) NSString *hostName;
+@property (nonatomic, retain) NSString *networkName;
+@property (nonatomic) int port;
+@property (nonatomic) long long serviceDiscoverySource;
+@property (nonatomic) long long serviceLegacyFlags;
+@property (nonatomic) long long serviceType;
 
 + (id)protobufsFromServices:(id)arg1;
 + (id)servicesFromProtobufs:(id)arg1;

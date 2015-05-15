@@ -8,9 +8,9 @@
     NSString *_typeAttribute;
 }
 
-@property(assign,retain) NSMutableSet * changedParameters;
-@property(assign,retain) NSString * nameAttribute;
-@property(assign,retain) NSString * typeAttribute;
+@property (nonatomic, retain) NSMutableSet *changedParameters;
+@property (nonatomic, retain) NSString *nameAttribute;
+@property (nonatomic, retain) NSString *typeAttribute;
 
 - (void)addChangedParameter:(id)arg1;
 - (id)changedParameters;

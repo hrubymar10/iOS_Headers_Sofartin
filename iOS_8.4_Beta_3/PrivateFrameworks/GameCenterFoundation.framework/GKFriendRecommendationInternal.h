@@ -9,10 +9,10 @@
     int _source;
 }
 
-@property(assign,retain) NSString * reason;
-@property(assign,retain) NSString * reason2;
-@property(assign,readwrite) unsigned int rid;
-@property(assign,readwrite) int source;
+@property (nonatomic, retain) NSString *reason;
+@property (nonatomic, retain) NSString *reason2;
+@property (nonatomic) unsigned int rid;
+@property (nonatomic) int source;
 
 + (id)secureCodedPropertyKeys;
 

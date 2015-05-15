@@ -6,7 +6,7 @@
     bool _didPlay;
 }
 
-@property(assign,readwrite) bool didPlay;
+@property (nonatomic) bool didPlay;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -8,9 +8,9 @@
     NSArray *mRules;
 }
 
-@property(assign,readonly) unsigned char columnIndex;
-@property(assign,readonly) unsigned long long filterIndex;
-@property(assign,readonly) unsigned long long ruleCount;
+@property (nonatomic, readonly) unsigned char columnIndex;
+@property (nonatomic, readonly) unsigned long long filterIndex;
+@property (nonatomic, readonly) unsigned long long ruleCount;
 
 + (id)filterWithIndex:(unsigned long long)arg1 columnIndex:(unsigned char)arg2 rules:(id)arg3;
 

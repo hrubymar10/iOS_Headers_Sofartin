@@ -7,20 +7,20 @@
     NSSet *mValidAnimationTypes;
 }
 
-@property(assign,readonly) Class animationClass;
-@property(assign,readonly) NSString * animationFilter;
-@property(assign,readonly) int category;
-@property(assign,readonly) NSDictionary * customAttributeDefaults;
-@property(assign,readonly) NSArray * customAttributes;
-@property(assign,readonly) NSDictionary * defaultAttributes;
-@property(assign,readonly) unsigned long long directionType;
-@property(assign,readonly) NSString * effectIdentifier;
-@property(assign,readonly) bool isDrift;
-@property(assign,readonly) NSString * localizedActionBuildName;
-@property(assign,readonly) NSString * localizedBuildInName;
-@property(assign,readonly) NSString * localizedBuildOutName;
-@property(assign,readonly) NSString * localizedTransitionName;
-@property(assign,readonly) NSSet * validAnimationTypes;
+@property (nonatomic, readonly) Class animationClass;
+@property (nonatomic, readonly) NSString *animationFilter;
+@property (nonatomic, readonly) int category;
+@property (nonatomic, readonly) NSDictionary *customAttributeDefaults;
+@property (nonatomic, readonly) NSArray *customAttributes;
+@property (nonatomic, readonly) NSDictionary *defaultAttributes;
+@property (nonatomic, readonly) unsigned long long directionType;
+@property (nonatomic, readonly) NSString *effectIdentifier;
+@property (nonatomic, readonly) bool isDrift;
+@property (nonatomic, readonly) NSString *localizedActionBuildName;
+@property (nonatomic, readonly) NSString *localizedBuildInName;
+@property (nonatomic, readonly) NSString *localizedBuildOutName;
+@property (nonatomic, readonly) NSString *localizedTransitionName;
+@property (nonatomic, readonly) NSSet *validAnimationTypes;
 
 + (id)effectIdentifiersForAnimationInfos:(id)arg1;
 + (id)localizedEffectNamesForAnimationInfos:(id)arg1 animationType:(int)arg2;

@@ -8,9 +8,9 @@
     TSCH3Dvec3DataBuffer *mVertex;
 }
 
-@property(assign,retain) TSCH3DTexCoordGeneration * generator;
-@property(assign,retain) TSCH3Dvec3DataBuffer * normal;
-@property(assign,retain) TSCH3Dvec3DataBuffer * vertex;
+@property (nonatomic, retain) TSCH3DTexCoordGeneration *generator;
+@property (nonatomic, retain) TSCH3Dvec3DataBuffer *normal;
+@property (nonatomic, retain) TSCH3Dvec3DataBuffer *vertex;
 
 - (void)dealloc;
 - (void)flushMemory;

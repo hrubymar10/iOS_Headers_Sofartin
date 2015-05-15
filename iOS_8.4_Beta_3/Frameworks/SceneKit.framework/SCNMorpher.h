@@ -14,12 +14,12 @@
     NSMutableArray *_weights;
 }
 
-@property(assign,readwrite) long long calculationMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * targets;
+@property (nonatomic) long long calculationMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *targets;
 
 + (id)SCNJSExportProtocol;
 + (id)morpher;

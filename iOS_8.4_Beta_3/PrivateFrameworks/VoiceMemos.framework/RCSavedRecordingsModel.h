@@ -12,11 +12,11 @@
     bool _valid;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) long long currentEntityRevision;
-@property(assign,readwrite) long long isSavingDisabledCount;
-@property(assign,readonly) NSArray * recordings;
-@property(assign,readwrite) bool valid;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, readonly) long long currentEntityRevision;
+@property (nonatomic) long long isSavingDisabledCount;
+@property (nonatomic, readonly) NSArray *recordings;
+@property bool valid;
 
 + (id)_copyFileIntoRecordingsDirectory:(id)arg1;
 + (void)_importImportableRecordingWithSourceAudioURL:(id)arg1 name:(id)arg2 date:(id)arg3 completionHandler:(id)arg4;

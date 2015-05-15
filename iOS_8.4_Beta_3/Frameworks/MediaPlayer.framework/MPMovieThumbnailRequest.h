@@ -7,8 +7,8 @@
     NSArray *_times;
 }
 
-@property(assign,readwrite) long long timeOption;
-@property(assign,retain) NSArray * times;
+@property (nonatomic) long long timeOption;
+@property (nonatomic, retain) NSArray *times;
 
 - (void).cxx_destruct;
 - (void)setTimeOption:(long long)arg1;

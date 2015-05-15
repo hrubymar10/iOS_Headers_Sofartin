@@ -18,11 +18,11 @@
     } _visibleTimeRange;
 }
 
-@property(assign,copy) RCUIConfiguration * UIConfiguration;
-@property(assign,retain) UIColor * backgroundDebugColor;
-@property(assign,readwrite) struct { double x1; double x2; } markerClippingRange;
-@property(assign,readwrite) unsigned long long maximumMajorUnitsInVisibleDuration;
-@property(assign,readwrite) struct { double x1; double x2; } visibleTimeRange;
+@property (nonatomic, copy) RCUIConfiguration *UIConfiguration;
+@property (nonatomic, retain) UIColor *backgroundDebugColor;
+@property (nonatomic) struct { double x1; double x2; } markerClippingRange;
+@property (nonatomic) unsigned long long maximumMajorUnitsInVisibleDuration;
+@property (nonatomic) struct { double x1; double x2; } visibleTimeRange;
 
 - (void).cxx_destruct;
 - (id)UIConfiguration;

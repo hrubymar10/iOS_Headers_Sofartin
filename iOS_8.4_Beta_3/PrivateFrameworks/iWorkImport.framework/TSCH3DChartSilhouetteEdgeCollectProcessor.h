@@ -12,8 +12,8 @@
     TSCH3DResource *mVertices;
 }
 
-@property(assign,readonly) TSCH3Dvec3DataBuffer * edges;
-@property(assign,retain) TSCH3DResource * vertices;
+@property (nonatomic, readonly) TSCH3Dvec3DataBuffer *edges;
+@property (nonatomic, retain) TSCH3DResource *vertices;
 
 - (id).cxx_construct;
 - (long long)attribute:(id)arg1 resource:(id)arg2 specs:(const struct AttributeSpecs { unsigned long long x1; unsigned long long x2; unsigned long long x3; }*)arg3;

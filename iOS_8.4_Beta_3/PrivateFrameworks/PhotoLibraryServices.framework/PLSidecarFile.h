@@ -4,7 +4,7 @@
 
 @interface PLSidecarFile : _PLSidecarFile
 
-@property(assign,retain) NSURL * fileURL;
+@property (nonatomic, readonly, retain) NSURL *fileURL;
 
 - (id)fileURL;
 - (void)setCaptureDateFromExifDictionary:(id)arg1;

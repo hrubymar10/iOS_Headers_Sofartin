@@ -8,15 +8,15 @@
     KNNoteInfo *mNote;
 }
 
-@property(assign,readonly) bool areInfosUsingObjectPlaceholderGeometry;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSSet * infosUsingObjectPlaceholderGeometry;
-@property(assign,retain) KNMasterSlide * master;
-@property(assign,retain) KNNoteInfo * note;
-@property(assign,readonly) bool slideObjectsLayerWithMaster;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) bool areInfosUsingObjectPlaceholderGeometry;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSSet *infosUsingObjectPlaceholderGeometry;
+@property (nonatomic, retain) KNMasterSlide *master;
+@property (nonatomic, retain) KNNoteInfo *note;
+@property (nonatomic, readonly) bool slideObjectsLayerWithMaster;
+@property (readonly) Class superclass;
 
 + (id)blankSlideWithSlideNode:(id)arg1 master:(id)arg2 andShow:(id)arg3;
 

@@ -7,15 +7,15 @@
     long long _type;
 }
 
-@property(assign,readonly) bool booleanValue;
-@property(assign,readonly) bool invalidIteratorState;
-@property(assign,copy) NSArray * nodes;
-@property(assign,readonly) long long numberValue;
-@property(assign,readonly) long long resultType;
-@property(assign,readonly) IKDOMNode * singleNodeValue;
-@property(assign,readonly) long long snapshotLength;
-@property(assign,readonly) NSString * stringValue;
-@property(assign,readwrite) long long type;
+@property (nonatomic, readonly) bool booleanValue;
+@property (nonatomic, readonly) bool invalidIteratorState;
+@property (nonatomic, copy) NSArray *nodes;
+@property (nonatomic, readonly) long long numberValue;
+@property (nonatomic, readonly) long long resultType;
+@property (nonatomic, readonly) IKDOMNode *singleNodeValue;
+@property (nonatomic, readonly) long long snapshotLength;
+@property (nonatomic, readonly) NSString *stringValue;
+@property long long type;
 
 - (void).cxx_destruct;
 - (bool)booleanValue;

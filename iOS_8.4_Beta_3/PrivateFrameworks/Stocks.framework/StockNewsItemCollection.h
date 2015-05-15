@@ -7,8 +7,8 @@
     NSArray *_newsItems;
 }
 
-@property(assign,readwrite) double expirationTime;
-@property(assign,retain) NSArray * newsItems;
+@property (nonatomic) double expirationTime;
+@property (nonatomic, retain) NSArray *newsItems;
 
 - (void).cxx_destruct;
 - (id)archiveArray;

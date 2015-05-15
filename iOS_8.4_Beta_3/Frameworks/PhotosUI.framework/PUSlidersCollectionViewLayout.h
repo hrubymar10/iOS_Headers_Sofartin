@@ -6,7 +6,7 @@
     double _rowHeight;
 }
 
-@property(assign,readwrite) double rowHeight;
+@property (nonatomic) double rowHeight;
 
 - (void)prepareLayout;
 - (double)rowHeight;

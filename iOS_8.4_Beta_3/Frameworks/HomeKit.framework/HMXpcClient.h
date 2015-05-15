@@ -13,18 +13,18 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * callbackQueue;
-@property(assign,readwrite) bool connectionValid;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) HMMessageDispatcher * messageDispatcher;
-@property(assign,readwrite) int notifyRegisterToken;
-@property(assign,readwrite) bool notifyRegistered;
-@property(assign,copy) id reconnectionHandler;
-@property(assign,readwrite) bool requiresCheckin;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSXPCConnection * xpcConnection;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *callbackQueue;
+@property (nonatomic) bool connectionValid;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) HMMessageDispatcher *messageDispatcher;
+@property (nonatomic) int notifyRegisterToken;
+@property (nonatomic) bool notifyRegistered;
+@property (nonatomic, copy) id reconnectionHandler;
+@property (nonatomic) bool requiresCheckin;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
 
 - (void).cxx_destruct;
 - (id)callbackQueue;

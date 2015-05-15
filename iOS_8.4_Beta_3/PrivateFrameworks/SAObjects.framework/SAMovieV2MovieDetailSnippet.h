@@ -4,29 +4,29 @@
 
 @interface SAMovieV2MovieDetailSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * actors;
-@property(assign,copy) NSNumber * availableOnItunesForPurchase;
-@property(assign,copy) NSNumber * availableOnItunesForRent;
-@property(assign,copy) NSArray * directors;
-@property(assign,copy) NSArray * genres;
-@property(assign,copy) NSURL * hiresTrailerUri;
-@property(assign,copy) NSURL * iTunesUri;
-@property(assign,readwrite) bool is3d;
-@property(assign,copy) NSURL * lowresTrailerUri;
-@property(assign,copy) NSURL * movieIdentifier;
-@property(assign,retain) SAMovieV2ReviewListSnippet * movieReviewListSnippet;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSNumber * playTrailer;
-@property(assign,copy) NSArray * posterImages;
-@property(assign,copy) NSNumber * qualityRating;
-@property(assign,copy) NSString * rating;
-@property(assign,readwrite) long long runtimeInMinutes;
-@property(assign,retain) SAMovieV2ShowtimeSnippet * showtimeSnippet;
-@property(assign,copy) NSArray * studios;
-@property(assign,copy) NSString * synopsis;
-@property(assign,retain) SAMovieV2TheaterShowtimeListSnippet * theaterShowtimeListSnippet;
-@property(assign,copy) NSString * theaterShowtimeSearchRegionDescription;
-@property(assign,copy) NSDate * theatricalReleaseDate;
+@property (nonatomic, copy) NSArray *actors;
+@property (nonatomic, copy) NSNumber *availableOnItunesForPurchase;
+@property (nonatomic, copy) NSNumber *availableOnItunesForRent;
+@property (nonatomic, copy) NSArray *directors;
+@property (nonatomic, copy) NSArray *genres;
+@property (nonatomic, copy) NSURL *hiresTrailerUri;
+@property (nonatomic, copy) NSURL *iTunesUri;
+@property (nonatomic) bool is3d;
+@property (nonatomic, copy) NSURL *lowresTrailerUri;
+@property (nonatomic, copy) NSURL *movieIdentifier;
+@property (nonatomic, retain) SAMovieV2ReviewListSnippet *movieReviewListSnippet;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSNumber *playTrailer;
+@property (nonatomic, copy) NSArray *posterImages;
+@property (nonatomic, copy) NSNumber *qualityRating;
+@property (nonatomic, copy) NSString *rating;
+@property (nonatomic) long long runtimeInMinutes;
+@property (nonatomic, retain) SAMovieV2ShowtimeSnippet *showtimeSnippet;
+@property (nonatomic, copy) NSArray *studios;
+@property (nonatomic, copy) NSString *synopsis;
+@property (nonatomic, retain) SAMovieV2TheaterShowtimeListSnippet *theaterShowtimeListSnippet;
+@property (nonatomic, copy) NSString *theaterShowtimeSearchRegionDescription;
+@property (nonatomic, copy) NSDate *theatricalReleaseDate;
 
 + (id)movieDetailSnippet;
 + (id)movieDetailSnippetWithDictionary:(id)arg1 context:(id)arg2;

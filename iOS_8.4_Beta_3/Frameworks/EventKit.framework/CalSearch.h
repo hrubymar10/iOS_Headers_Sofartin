@@ -28,9 +28,9 @@
     bool _stopLoadingResults;
 }
 
-@property(assign,readwrite) bool searchAttendees;
-@property(assign,readwrite) bool searchLocations;
-@property(assign,readwrite) bool searchParticipants;
+@property bool searchAttendees;
+@property bool searchLocations;
+@property bool searchParticipants;
 
 - (void)_addMatchedEventIds:(struct __CFArray { }*)arg1;
 - (void)_addMatchedLocationIds:(struct __CFArray { }*)arg1;

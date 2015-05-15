@@ -4,7 +4,7 @@
 
 @interface MKPolygonView : MKOverlayPathView
 
-@property(assign,readonly) MKPolygon * polygon;
+@property (nonatomic, readonly) MKPolygon *polygon;
 
 - (void)createPath;
 - (void)fillPath:(struct CGPath { }*)arg1 inContext:(struct CGContext { }*)arg2;

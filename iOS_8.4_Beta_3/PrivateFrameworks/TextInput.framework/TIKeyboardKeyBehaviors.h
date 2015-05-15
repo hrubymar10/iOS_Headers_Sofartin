@@ -7,8 +7,8 @@
     unsigned long long _spaceKeyBehavior;
 }
 
-@property(assign,readwrite) unsigned long long returnKeyBehavior;
-@property(assign,readwrite) unsigned long long spaceKeyBehavior;
+@property (nonatomic) unsigned long long returnKeyBehavior;
+@property (nonatomic) unsigned long long spaceKeyBehavior;
 
 + (id)behaviorForSpaceKey:(unsigned long long)arg1 forReturnKey:(unsigned long long)arg2;
 

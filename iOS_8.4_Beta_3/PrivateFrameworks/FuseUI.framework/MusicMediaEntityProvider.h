@@ -9,13 +9,13 @@
     NSSet *_requiredVisibilityPrioritySectionIndexTitles;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long maximumItemCount;
-@property(assign,retain) MPMediaQuery * mediaQuery;
-@property(assign,readonly) MusicMediaQueryDataSource * mediaQueryDataSource;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long maximumItemCount;
+@property (nonatomic, retain) MPMediaQuery *mediaQuery;
+@property (nonatomic, readonly) MusicMediaQueryDataSource *mediaQueryDataSource;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_configureEntityValueContextOutput:(id)arg1 forGlobalIndex:(unsigned long long)arg2;

@@ -24,13 +24,13 @@
     NSMutableArray *_viewControllers;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SUOverlayBackgroundDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SUOverlayViewController * selectedViewController;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSArray * viewControllers;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SUOverlayBackgroundDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SUOverlayViewController *selectedViewController;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *viewControllers;
 
 - (void)_addViewController:(id)arg1;
 - (void)_backgroundAnimationDidStop:(id)arg1 finished:(id)arg2 context:(void*)arg3;

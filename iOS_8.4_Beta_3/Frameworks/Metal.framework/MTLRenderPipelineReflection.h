@@ -17,8 +17,8 @@
     NSArray *_vertexBuiltInArguments;
 }
 
-@property(assign,readonly) NSArray * fragmentArguments;
-@property(assign,readonly) NSArray * vertexArguments;
+@property (readonly) NSArray *fragmentArguments;
+@property (readonly) NSArray *vertexArguments;
 
 - (id).cxx_construct;
 - (void)dealloc;

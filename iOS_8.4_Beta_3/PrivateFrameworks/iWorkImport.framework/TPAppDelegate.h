@@ -7,7 +7,7 @@
     bool _cachedBidiIsSupported;
 }
 
-@property(assign,readonly) NSArray * wordDocumentTypes;
+@property (nonatomic, readonly) NSArray *wordDocumentTypes;
 
 + (id)sharedDelegate;
 

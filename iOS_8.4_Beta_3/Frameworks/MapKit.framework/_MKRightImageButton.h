@@ -7,10 +7,10 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) UIImageView * imageView;
-@property(assign,retain) NSString * title;
-@property(assign,readonly) UILabel * titleLabel;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, readonly) UIImageView *imageView;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, readonly) UILabel *titleLabel;
 
 - (void).cxx_destruct;
 - (id)image;

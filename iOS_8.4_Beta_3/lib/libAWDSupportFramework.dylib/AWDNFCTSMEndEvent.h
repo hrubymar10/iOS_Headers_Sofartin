@@ -24,26 +24,26 @@
     NSData *_uuidReference;
 }
 
-@property(assign,retain) NSData * aid;
-@property(assign,readwrite) bool authEnable;
-@property(assign,retain) NSData * discretionaryData;
-@property(assign,readonly) bool hasAid;
-@property(assign,readwrite) bool hasAuthEnable;
-@property(assign,readonly) bool hasDiscretionaryData;
-@property(assign,readwrite) bool hasLcState;
-@property(assign,readwrite) bool hasMfdEnable;
-@property(assign,readwrite) bool hasRestricted;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,readwrite) bool hasTimeDeltaFromReference;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readonly) bool hasUuidReference;
-@property(assign,readwrite) unsigned int lcState;
-@property(assign,readwrite) bool mfdEnable;
-@property(assign,readwrite) bool restricted;
-@property(assign,readwrite) unsigned int status;
-@property(assign,readwrite) unsigned long long timeDeltaFromReference;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,retain) NSData * uuidReference;
+@property (nonatomic, retain) NSData *aid;
+@property (nonatomic) bool authEnable;
+@property (nonatomic, retain) NSData *discretionaryData;
+@property (nonatomic, readonly) bool hasAid;
+@property (nonatomic) bool hasAuthEnable;
+@property (nonatomic, readonly) bool hasDiscretionaryData;
+@property (nonatomic) bool hasLcState;
+@property (nonatomic) bool hasMfdEnable;
+@property (nonatomic) bool hasRestricted;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic) bool hasTimeDeltaFromReference;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, readonly) bool hasUuidReference;
+@property (nonatomic) unsigned int lcState;
+@property (nonatomic) bool mfdEnable;
+@property (nonatomic) bool restricted;
+@property (nonatomic) unsigned int status;
+@property (nonatomic) unsigned long long timeDeltaFromReference;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic, retain) NSData *uuidReference;
 
 - (id)aid;
 - (bool)authEnable;

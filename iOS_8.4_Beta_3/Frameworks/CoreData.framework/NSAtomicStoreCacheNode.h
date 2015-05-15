@@ -9,8 +9,8 @@
     void *_reserved1;
 }
 
-@property(assign,readonly) NSManagedObjectID * objectID;
-@property(assign,retain) NSMutableDictionary * propertyCache;
+@property (nonatomic, readonly) NSManagedObjectID *objectID;
+@property (nonatomic, retain) NSMutableDictionary *propertyCache;
 
 + (bool)accessInstanceVariablesDirectly;
 + (void)initialize;

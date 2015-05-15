@@ -13,21 +13,21 @@
     bool _shouldUseSpeaker;
 }
 
-@property(setter=_setMediaObjects:,assign,retain) NSMutableArray * _mediaObjects;
-@property(assign,retain) CKAudioPlayer * audioPlayer;
-@property(assign,retain) CKMediaObject * currentMediaObject;
-@property(assign,readonly) double currentMediaObjectDuration;
-@property(assign,readonly) double currentMediaObjectTime;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKAudioControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool interrupted;
-@property(assign,retain) NSArray * mediaObjects;
-@property(getter=isPaused,assign,readwrite) bool paused;
-@property(getter=isPlaying,assign,readwrite) bool playing;
-@property(assign,readwrite) bool shouldUseSpeaker;
-@property(assign,readonly) Class superclass;
+@property (setter=_setMediaObjects:, nonatomic, retain) NSMutableArray *_mediaObjects;
+@property (nonatomic, retain) CKAudioPlayer *audioPlayer;
+@property (nonatomic, readonly, retain) CKMediaObject *currentMediaObject;
+@property (nonatomic, readonly) double currentMediaObjectDuration;
+@property (nonatomic, readonly) double currentMediaObjectTime;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKAudioControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool interrupted;
+@property (nonatomic, readonly, retain) NSArray *mediaObjects;
+@property (getter=isPaused, nonatomic) bool paused;
+@property (getter=isPlaying, nonatomic) bool playing;
+@property (nonatomic) bool shouldUseSpeaker;
+@property (readonly) Class superclass;
 
 - (id)_mediaObjects;
 - (void)_setMediaObjects:(id)arg1;

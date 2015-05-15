@@ -11,12 +11,12 @@
     unsigned int _shutterSoundID;
 }
 
-@property(assign,copy) id bracketedCaptureCompletionBlock;
-@property(assign,retain) AVCaptureBracketedStillImageSettings * bracketedSettings;
-@property(assign,copy) id iosurfaceCompletionBlock;
-@property(assign,copy) id sbufCompletionBlock;
-@property(assign,readwrite) long long settingsID;
-@property(assign,readwrite) unsigned int shutterSoundID;
+@property (copy) id bracketedCaptureCompletionBlock;
+@property (retain) AVCaptureBracketedStillImageSettings *bracketedSettings;
+@property (copy) id iosurfaceCompletionBlock;
+@property (copy) id sbufCompletionBlock;
+@property long long settingsID;
+@property unsigned int shutterSoundID;
 
 + (id)request;
 

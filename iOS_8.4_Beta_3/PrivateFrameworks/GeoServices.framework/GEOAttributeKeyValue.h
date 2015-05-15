@@ -7,8 +7,8 @@
     NSString *_attributeValue;
 }
 
-@property(assign,retain) NSString * attributeKey;
-@property(assign,retain) NSString * attributeValue;
+@property (nonatomic, retain) NSString *attributeKey;
+@property (nonatomic, retain) NSString *attributeValue;
 
 - (id)attributeKey;
 - (id)attributeValue;

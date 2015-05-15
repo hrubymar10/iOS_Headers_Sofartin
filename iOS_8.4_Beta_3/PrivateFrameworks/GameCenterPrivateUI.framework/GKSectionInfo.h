@@ -10,11 +10,11 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSArray * items;
-@property(assign,retain) NSPredicate * predicate;
-@property(assign,readwrite) long long section;
-@property(assign,retain) NSArray * sortDescriptors;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSArray *items;
+@property (nonatomic, retain) NSPredicate *predicate;
+@property (nonatomic) long long section;
+@property (nonatomic, retain) NSArray *sortDescriptors;
+@property (nonatomic, retain) NSString *title;
 
 - (void)dealloc;
 - (id)description;

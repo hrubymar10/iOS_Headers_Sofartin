@@ -7,21 +7,21 @@
     NSMutableArray *_reviews;
 }
 
-@property(assign,readonly) NSMutableDictionary * cacheRepresentation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) long long fiveStarRatingCount;
-@property(assign,readonly) long long fourStarRatingCount;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long numberOfPages;
-@property(assign,readonly) long long oneStarRatingCount;
-@property(assign,readonly) long long ratingCount;
-@property(assign,readonly) NSArray * reviews;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) long long threeStarRatingCount;
-@property(assign,readonly) long long twoStarRatingCount;
-@property(assign,readonly) float userRating;
-@property(assign,readonly) NSURL * writeReviewURL;
+@property (nonatomic, readonly) NSMutableDictionary *cacheRepresentation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) long long fiveStarRatingCount;
+@property (nonatomic, readonly) long long fourStarRatingCount;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long numberOfPages;
+@property (nonatomic, readonly) long long oneStarRatingCount;
+@property (nonatomic, readonly) long long ratingCount;
+@property (nonatomic, readonly) NSArray *reviews;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) long long threeStarRatingCount;
+@property (nonatomic, readonly) long long twoStarRatingCount;
+@property (nonatomic, readonly) float userRating;
+@property (nonatomic, readonly) NSURL *writeReviewURL;
 
 - (void).cxx_destruct;
 - (void)addReviews:(id)arg1;

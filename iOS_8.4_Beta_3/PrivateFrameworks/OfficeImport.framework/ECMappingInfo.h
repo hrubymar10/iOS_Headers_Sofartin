@@ -6,9 +6,9 @@
     NSString *mSheetName;
 }
 
-@property(assign,readonly) int columnOffset;
-@property(assign,readonly) int rowOffset;
-@property(assign,readonly) NSString * sheetName;
+@property (nonatomic, readonly) int columnOffset;
+@property (nonatomic, readonly) int rowOffset;
+@property (nonatomic, readonly) NSString *sheetName;
 
 + (id)mappingInfoWithSheetName:(id)arg1;
 

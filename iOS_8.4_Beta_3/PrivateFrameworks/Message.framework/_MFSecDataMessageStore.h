@@ -4,7 +4,7 @@
 
 @interface _MFSecDataMessageStore : MFDataMessageStore
 
-@property(assign,copy) NSString * storagePath;
+@property (nonatomic, copy) NSString *storagePath;
 
 + (Class)classForMimePart;
 

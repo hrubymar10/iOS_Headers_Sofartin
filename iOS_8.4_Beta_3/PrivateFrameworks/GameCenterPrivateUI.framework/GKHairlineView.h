@@ -6,7 +6,7 @@
     long long _alignment;
 }
 
-@property(assign,readwrite) long long alignment;
+@property (nonatomic) long long alignment;
 
 + (id)hairlineViewForAlignment:(long long)arg1;
 

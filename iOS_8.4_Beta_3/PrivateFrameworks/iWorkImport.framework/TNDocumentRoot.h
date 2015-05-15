@@ -19,22 +19,22 @@
     TNUIState *mUIState;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } pageSize;
-@property(assign,copy) NSString * paperID;
-@property(assign,copy) NSString * printerID;
-@property(getter=isPrintingAllSheets,assign,readwrite) bool printingAllSheets;
-@property(assign,readwrite) bool removedAllQuickCalcFunctions;
-@property(assign,copy) NSArray * selectedQuickCalcFunctions;
-@property(assign,readonly) NSArray * sheets;
-@property(assign,retain) TSKTreeNode * sidebarOrder;
-@property(assign,readonly) TSSStylesheet * stylesheet;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long tableCount;
-@property(assign,retain) TNTheme * theme;
-@property(assign,retain) TNUIState * uiState;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct CGSize { double x1; double x2; } pageSize;
+@property (nonatomic, copy) NSString *paperID;
+@property (nonatomic, copy) NSString *printerID;
+@property (getter=isPrintingAllSheets, nonatomic) bool printingAllSheets;
+@property (nonatomic) bool removedAllQuickCalcFunctions;
+@property (nonatomic, copy) NSArray *selectedQuickCalcFunctions;
+@property (nonatomic, readonly) NSArray *sheets;
+@property (nonatomic, readonly, retain) TSKTreeNode *sidebarOrder;
+@property (nonatomic, readonly) TSSStylesheet *stylesheet;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long tableCount;
+@property (nonatomic, retain) TNTheme *theme;
+@property (nonatomic, retain) TNUIState *uiState;
 
 + (struct CGSize { double x1; double x2; })previewImageMaxSizeForType:(unsigned long long)arg1;
 + (struct CGSize { double x1; double x2; })previewImageSizeForType:(unsigned long long)arg1;

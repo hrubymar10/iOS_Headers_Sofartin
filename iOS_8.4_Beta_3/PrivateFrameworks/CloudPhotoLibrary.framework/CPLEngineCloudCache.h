@@ -4,12 +4,12 @@
 
 @interface CPLEngineCloudCache : CPLEngineStorage <CPLAbstractObject>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasDoneAFirstSynchronization;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) bool hasDoneAFirstSynchronization;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (readonly) Class superclass;
 
 - (bool)_remapRecord:(id)arg1 inBatch:(id)arg2 error:(id*)arg3;
 - (bool)addRecord:(id)arg1 isFinal:(bool)arg2 error:(id*)arg3;

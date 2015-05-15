@@ -11,7 +11,7 @@
     NSString *name;
 }
 
-@property(assign,retain) NSString * name;
+@property (retain) NSString *name;
 
 + (id)sharedTimer;
 + (id)timerWithName:(id)arg1;

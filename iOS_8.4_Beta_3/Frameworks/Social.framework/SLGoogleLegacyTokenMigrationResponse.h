@@ -8,9 +8,9 @@
     long long _statusCode;
 }
 
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) NSString * responseBody;
-@property(assign,readonly) long long statusCode;
+@property (readonly) NSError *error;
+@property (readonly) NSString *responseBody;
+@property (readonly) long long statusCode;
 
 - (void).cxx_destruct;
 - (id)error;

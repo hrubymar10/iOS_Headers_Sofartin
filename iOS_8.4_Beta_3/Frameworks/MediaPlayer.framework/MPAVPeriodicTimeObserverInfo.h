@@ -13,9 +13,9 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,copy) id block;
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } interval;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, readonly, copy) id block;
+@property (nonatomic, readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } interval;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
 
 - (void).cxx_destruct;
 - (id)block;

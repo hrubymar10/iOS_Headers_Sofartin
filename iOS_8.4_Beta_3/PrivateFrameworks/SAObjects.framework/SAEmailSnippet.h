@@ -4,7 +4,7 @@
 
 @interface SAEmailSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * emails;
+@property (nonatomic, copy) NSArray *emails;
 
 + (id)snippet;
 + (id)snippetWithDictionary:(id)arg1 context:(id)arg2;

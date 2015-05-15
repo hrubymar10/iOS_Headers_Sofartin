@@ -12,13 +12,13 @@
     NSObject<OS_dispatch_semaphore> *_uniqueProxyIdentifierToProxyCallSemaphore;
 }
 
-@property(assign,retain) NSMapTable * callRefToTelephonyCall;
-@property(assign,retain) NSObject<OS_dispatch_semaphore> * callRefToTelephonyCallSemaphore;
-@property(assign,retain) NSMapTable * chatGUIDToFaceTimeCall;
-@property(assign,retain) NSObject<OS_dispatch_semaphore> * chatGUIDToFaceTimeCallSemaphore;
-@property(assign,retain) NSMutableSet * currentCallSet;
-@property(assign,retain) NSMapTable * uniqueProxyIdentifierToProxyCall;
-@property(assign,retain) NSObject<OS_dispatch_semaphore> * uniqueProxyIdentifierToProxyCallSemaphore;
+@property (nonatomic, retain) NSMapTable *callRefToTelephonyCall;
+@property (nonatomic, retain) NSObject<OS_dispatch_semaphore> *callRefToTelephonyCallSemaphore;
+@property (nonatomic, retain) NSMapTable *chatGUIDToFaceTimeCall;
+@property (nonatomic, retain) NSObject<OS_dispatch_semaphore> *chatGUIDToFaceTimeCallSemaphore;
+@property (nonatomic, retain) NSMutableSet *currentCallSet;
+@property (nonatomic, retain) NSMapTable *uniqueProxyIdentifierToProxyCall;
+@property (nonatomic, retain) NSObject<OS_dispatch_semaphore> *uniqueProxyIdentifierToProxyCallSemaphore;
 
 - (void)_updateCallWithCallState:(id)arg1 loadPersistentState:(bool)arg2;
 - (id)callForCTCall:(struct __CTCall { }*)arg1;

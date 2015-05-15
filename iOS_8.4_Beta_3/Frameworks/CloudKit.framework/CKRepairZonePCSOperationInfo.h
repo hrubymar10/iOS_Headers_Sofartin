@@ -6,7 +6,7 @@
     NSArray *_zoneIDs;
 }
 
-@property(assign,retain) NSArray * zoneIDs;
+@property (nonatomic, retain) NSArray *zoneIDs;
 
 + (bool)supportsSecureCoding;
 

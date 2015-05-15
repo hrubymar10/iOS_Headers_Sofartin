@@ -6,7 +6,7 @@
     HSHomeSharingLibrary *_library;
 }
 
-@property(assign,retain) HSHomeSharingLibrary * library;
+@property (nonatomic, retain) HSHomeSharingLibrary *library;
 
 - (void).cxx_destruct;
 - (bool)areRepresentationsAvailableForCatalog:(id)arg1;

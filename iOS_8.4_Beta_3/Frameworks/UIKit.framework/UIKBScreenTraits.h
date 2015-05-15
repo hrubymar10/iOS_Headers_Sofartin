@@ -9,11 +9,11 @@
     UIScreen *_screen;
 }
 
-@property(assign,readonly) long long idiom;
-@property(assign,readwrite) double keyboardWidth;
-@property(assign,readonly) bool knobInput;
-@property(assign,readwrite) long long orientation;
-@property(assign,readonly) UIScreen * screen;
+@property (nonatomic, readonly) long long idiom;
+@property (nonatomic) double keyboardWidth;
+@property (nonatomic, readonly) bool knobInput;
+@property (nonatomic) long long orientation;
+@property (nonatomic, readonly) UIScreen *screen;
 
 + (id)traitsWithScreen:(id)arg1 orientation:(long long)arg2;
 

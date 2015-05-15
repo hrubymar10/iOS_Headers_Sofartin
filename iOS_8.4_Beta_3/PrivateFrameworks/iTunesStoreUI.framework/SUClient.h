@@ -13,14 +13,14 @@
     SUScriptExecutionContext *_scriptExecutionContext;
 }
 
-@property(assign,readonly) SUClientInterface * clientInterface;
-@property(assign,readwrite) <SUClientDelegate> * delegate;
-@property(assign,readwrite) bool dontSaveNavigationPath;
-@property(assign,retain) SUImageCache * imageCache;
-@property(assign,retain) ISURLOperationPool * imagePool;
-@property(assign,readonly) SUScriptExecutionContext * scriptExecutionContext;
-@property(assign,retain) NSString * searchHintsURLBagKey;
-@property(assign,retain) NSString * searchURLBagKey;
+@property (readonly) SUClientInterface *clientInterface;
+@property (nonatomic) <SUClientDelegate> *delegate;
+@property (nonatomic) bool dontSaveNavigationPath;
+@property (nonatomic, retain) SUImageCache *imageCache;
+@property (nonatomic, retain) ISURLOperationPool *imagePool;
+@property (nonatomic, readonly) SUScriptExecutionContext *scriptExecutionContext;
+@property (nonatomic, retain) NSString *searchHintsURLBagKey;
+@property (nonatomic, retain) NSString *searchURLBagKey;
 
 + (id)imagePool;
 + (void)setSharedClient:(id)arg1;

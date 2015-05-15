@@ -6,7 +6,7 @@
     ABPropertyGroupItem *_item;
 }
 
-@property(assign,readonly) ABPropertyGroupItem * item;
+@property (nonatomic, readonly) ABPropertyGroupItem *item;
 
 - (void)dealloc;
 - (id)initForPropertyItem:(id)arg1;

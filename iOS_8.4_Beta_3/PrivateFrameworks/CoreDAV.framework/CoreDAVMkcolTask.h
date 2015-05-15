@@ -9,10 +9,10 @@
     bool _sendOrder;
 }
 
-@property(assign,readwrite) int absoluteOrder;
-@property(assign,readwrite) <CoreDAVTaskDelegate> * delegate;
-@property(assign,retain) NSURL * priorOrderedURL;
-@property(assign,retain) NSSet * propertiesToSet;
+@property (nonatomic) int absoluteOrder;
+@property (nonatomic) <CoreDAVTaskDelegate> *delegate;
+@property (nonatomic, retain) NSURL *priorOrderedURL;
+@property (nonatomic, retain) NSSet *propertiesToSet;
 
 - (int)absoluteOrder;
 - (id)additionalHeaderValues;

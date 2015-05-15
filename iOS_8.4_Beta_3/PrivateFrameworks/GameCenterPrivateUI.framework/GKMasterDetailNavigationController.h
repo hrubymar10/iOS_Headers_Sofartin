@@ -6,7 +6,7 @@
     GKMasterDetailViewController *_parentMasterDetailVC;
 }
 
-@property(assign,readwrite) GKMasterDetailViewController * parentMasterDetailVC;
+@property (nonatomic) GKMasterDetailViewController *parentMasterDetailVC;
 
 - (void)collapseSecondaryViewController:(id)arg1 forSplitViewController:(id)arg2;
 - (id)parentMasterDetailVC;

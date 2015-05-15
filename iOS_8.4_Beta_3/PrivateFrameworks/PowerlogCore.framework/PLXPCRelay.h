@@ -8,9 +8,9 @@
     NSObject<OS_xpc_object> *_xpcConnection;
 }
 
-@property(assign,readwrite) bool relayActive;
-@property(assign,retain) NSObject<OS_xpc_object> * relayConnection;
-@property(assign,retain) NSObject<OS_xpc_object> * xpcConnection;
+@property bool relayActive;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *relayConnection;
+@property (retain) NSObject<OS_xpc_object> *xpcConnection;
 
 + (id)sharedInstance;
 

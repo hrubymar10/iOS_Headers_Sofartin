@@ -4,9 +4,9 @@
 
 @interface SAGKImageLinkedAnswer : SAGKLinkedAnswer
 
-@property(assign,copy) NSNumber * fileSize;
-@property(assign,retain) SAUIImageResource * imageResource;
-@property(assign,copy) NSArray * thumbnails;
+@property (nonatomic, copy) NSNumber *fileSize;
+@property (nonatomic, retain) SAUIImageResource *imageResource;
+@property (nonatomic, copy) NSArray *thumbnails;
 
 + (id)imageLinkedAnswer;
 + (id)imageLinkedAnswerWithDictionary:(id)arg1 context:(id)arg2;

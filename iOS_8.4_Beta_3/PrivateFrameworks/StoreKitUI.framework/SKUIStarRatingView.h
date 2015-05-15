@@ -8,9 +8,9 @@
     UILabel *_textLabel;
 }
 
-@property(assign,readwrite) double elementSpacing;
-@property(assign,retain) UIImage * ratingStarsImage;
-@property(assign,readonly) UILabel * textLabel;
+@property (nonatomic) double elementSpacing;
+@property (nonatomic, retain) UIImage *ratingStarsImage;
+@property (nonatomic, readonly) UILabel *textLabel;
 
 - (void).cxx_destruct;
 - (double)elementSpacing;

@@ -9,10 +9,10 @@
     NSSet *_updatedEntries;
 }
 
-@property(assign,copy) NSSet * deletedEntries;
-@property(assign,copy) NSSet * insertedEntries;
-@property(assign,readwrite) bool shouldReload;
-@property(assign,copy) NSSet * updatedEntries;
+@property (nonatomic, copy) NSSet *deletedEntries;
+@property (nonatomic, copy) NSSet *insertedEntries;
+@property (nonatomic) bool shouldReload;
+@property (nonatomic, copy) NSSet *updatedEntries;
 
 + (id)notificationWithFullReload;
 + (id)notificationWithInsertedEntries:(id)arg1 updatedEntries:(id)arg2 deletedEntries:(id)arg3;

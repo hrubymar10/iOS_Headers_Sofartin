@@ -18,14 +18,14 @@
     bool _shouldTile;
 }
 
-@property(assign,readonly) struct PKEdgeInsets { double x1; double x2; double x3; double x4; } capInsets;
-@property(assign,readonly) NSData * imageData;
-@property(assign,readonly) struct CGImage { }* imageRef;
-@property(assign,readonly) long long orientation;
-@property(assign,readonly) double scale;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) bool stretches;
-@property(assign,readonly) bool tiles;
+@property (nonatomic, readonly) struct PKEdgeInsets { double x1; double x2; double x3; double x4; } capInsets;
+@property (nonatomic, readonly) NSData *imageData;
+@property (nonatomic, readonly) struct CGImage { }*imageRef;
+@property (nonatomic, readonly) long long orientation;
+@property (nonatomic, readonly) double scale;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) bool stretches;
+@property (nonatomic, readonly) bool tiles;
 
 + (id)URLForImageNamed:(id)arg1 inBundle:(id)arg2 scale:(double*)arg3;
 + (id)URLForImageNamed:(id)arg1 inBundle:(id)arg2 scale:(double*)arg3 preferredScreenScale:(double)arg4 suffix:(id)arg5;

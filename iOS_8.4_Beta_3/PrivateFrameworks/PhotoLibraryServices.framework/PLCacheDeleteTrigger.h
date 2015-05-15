@@ -8,8 +8,8 @@
     int _urgency;
 }
 
-@property(assign,readonly) long long goal;
-@property(assign,readonly) int urgency;
+@property (nonatomic, readonly) long long goal;
+@property (nonatomic, readonly) int urgency;
 
 - (void)activate;
 - (long long)goal;

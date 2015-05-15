@@ -6,7 +6,7 @@
     NSMutableArray *_requests;
 }
 
-@property(assign,readonly) NSMutableArray * requests;
+@property (nonatomic, readonly) NSMutableArray *requests;
 
 - (void).cxx_destruct;
 - (void)addRequest:(id)arg1;

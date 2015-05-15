@@ -6,7 +6,7 @@
     CPLProxyLibraryManager *_proxyLibraryManager;
 }
 
-@property(assign,retain) CPLProxyLibraryManager * proxyLibraryManager;
+@property (nonatomic, retain) CPLProxyLibraryManager *proxyLibraryManager;
 
 - (void).cxx_destruct;
 - (void)cancelTask;

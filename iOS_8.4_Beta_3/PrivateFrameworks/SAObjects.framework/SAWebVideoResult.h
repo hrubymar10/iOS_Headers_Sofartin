@@ -4,7 +4,7 @@
 
 @interface SAWebVideoResult : SAWebImageResult
 
-@property(assign,copy) NSNumber * runTimeInMilliseconds;
+@property (nonatomic, copy) NSNumber *runTimeInMilliseconds;
 
 + (id)videoResult;
 + (id)videoResultWithDictionary:(id)arg1 context:(id)arg2;

@@ -19,15 +19,15 @@
     unsigned long long _permittedArrowDirections;
 }
 
-@property(assign,retain) UIBarButtonItem * anchorBarButtonItem;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } anchorRect;
-@property(assign,retain) UIView * anchorView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * passthroughViews;
-@property(assign,readwrite) unsigned long long permittedArrowDirections;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIBarButtonItem *anchorBarButtonItem;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } anchorRect;
+@property (nonatomic, retain) UIView *anchorView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *passthroughViews;
+@property (nonatomic) unsigned long long permittedArrowDirections;
+@property (readonly) Class superclass;
 
 - (void)_prepare;
 - (id)anchorBarButtonItem;

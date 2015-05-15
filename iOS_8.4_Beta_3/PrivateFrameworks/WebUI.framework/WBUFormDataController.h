@@ -6,13 +6,13 @@
     bool _savePending;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool shouldAutoFillFromAddressBook;
-@property(assign,readwrite) bool shouldAutoFillFromCreditCardData;
-@property(assign,readwrite) bool shouldAutoFillPasswords;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool shouldAutoFillFromAddressBook;
+@property (nonatomic) bool shouldAutoFillFromCreditCardData;
+@property (nonatomic) bool shouldAutoFillPasswords;
+@property (readonly) Class superclass;
 
 + (bool)_isDevicePasscodeSet;
 + (bool)_isKeychainSyncEnabled;

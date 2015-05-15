@@ -8,9 +8,9 @@
     CIImage *_inputMaskImage;
 }
 
-@property(assign,retain) CIImage * inputBackgroundImage;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIImage * inputMaskImage;
+@property (retain) CIImage *inputBackgroundImage;
+@property (retain) CIImage *inputImage;
+@property (retain) CIImage *inputMaskImage;
 
 - (void).cxx_destruct;
 - (id)inputBackgroundImage;

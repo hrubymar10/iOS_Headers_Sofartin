@@ -16,12 +16,12 @@
     double _timeInterval;
 }
 
-@property(assign,readwrite) bool active;
-@property(assign,readwrite) double angle;
-@property(assign,copy) NSArray * items;
-@property(assign,readwrite) double magnitude;
-@property(assign,readonly) long long mode;
-@property(assign,readwrite) struct CGVector { double x1; double x2; } pushDirection;
+@property (nonatomic) bool active;
+@property (nonatomic) double angle;
+@property (nonatomic, readonly, copy) NSArray *items;
+@property (nonatomic) double magnitude;
+@property (nonatomic, readonly) long long mode;
+@property (nonatomic) struct CGVector { double x1; double x2; } pushDirection;
 
 - (void)_associate;
 - (void)_commonInit;

@@ -13,17 +13,17 @@
     unsigned int _stagedGenerationID;
 }
 
-@property(assign,readonly) NSString * bouncedName;
-@property(assign,readonly) NSNumber * documentID;
-@property(assign,readonly) NSNumber * fileID;
-@property(assign,readonly) NSNumber * fileObjectID;
-@property(assign,readonly) BRCGenerationID * generationID;
-@property(assign,readonly) NSString * localName;
-@property(assign,readonly) NSNumber * lostStamp;
-@property(assign,readonly) NSNumber * processingStamp;
-@property(assign,readonly) NSNumber * stagedFileID;
-@property(assign,readonly) NSNumber * stagedFileIDForDB;
-@property(assign,readonly) unsigned int stagedGenerationID;
+@property (nonatomic, readonly) NSString *bouncedName;
+@property (nonatomic, readonly) NSNumber *documentID;
+@property (nonatomic, readonly) NSNumber *fileID;
+@property (nonatomic, readonly) NSNumber *fileObjectID;
+@property (nonatomic, readonly) BRCGenerationID *generationID;
+@property (nonatomic, readonly) NSString *localName;
+@property (nonatomic, readonly) NSNumber *lostStamp;
+@property (nonatomic, readonly) NSNumber *processingStamp;
+@property (nonatomic, readonly) NSNumber *stagedFileID;
+@property (nonatomic, readonly) NSNumber *stagedFileIDForDB;
+@property (nonatomic, readonly) unsigned int stagedGenerationID;
 
 + (bool)supportsSecureCoding;
 

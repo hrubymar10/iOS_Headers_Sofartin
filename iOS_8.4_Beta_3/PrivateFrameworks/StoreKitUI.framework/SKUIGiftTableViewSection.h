@@ -6,7 +6,7 @@
     SKUIGiftConfiguration *_giftConfiguration;
 }
 
-@property(assign,readonly) SKUIGiftConfiguration * giftConfiguration;
+@property (nonatomic, readonly) SKUIGiftConfiguration *giftConfiguration;
 
 + (id)aloneRowBackgroundImageWithSize:(struct CGSize { double x1; double x2; })arg1;
 

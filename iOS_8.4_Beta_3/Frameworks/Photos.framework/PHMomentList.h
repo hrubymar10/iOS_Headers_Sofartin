@@ -9,10 +9,10 @@
     int _sortIndex;
 }
 
-@property(assign,readonly) short generationType;
-@property(assign,readonly) short granularityLevel;
-@property(assign,readonly) NSDate * representativeDate;
-@property(assign,readonly) int sortIndex;
+@property (nonatomic, readonly) short generationType;
+@property (nonatomic, readonly) short granularityLevel;
+@property (nonatomic, readonly) NSDate *representativeDate;
+@property (nonatomic, readonly) int sortIndex;
 
 + (id)_transformValueExpression:(id)arg1 forKeyPath:(id)arg2;
 + (id)entityKeyForPropertyKey:(id)arg1;

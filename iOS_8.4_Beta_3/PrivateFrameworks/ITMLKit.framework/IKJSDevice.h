@@ -6,15 +6,15 @@
     <IKAppDeviceConfig> *_deviceConfig;
 }
 
-@property(assign,readonly) NSString * appIdentifier;
-@property(assign,readonly) NSString * appVersion;
-@property(assign,readwrite) <IKAppDeviceConfig> * deviceConfig;
-@property(assign,readonly) bool isInRetailDemoMode;
-@property(assign,readonly) NSString * model;
-@property(assign,readonly) NSNumber * pixelRatio;
-@property(assign,readonly) NSString * productType;
-@property(assign,readonly) NSString * systemVersion;
-@property(assign,readonly) NSString * vendorID;
+@property (nonatomic, readonly) NSString *appIdentifier;
+@property (nonatomic, readonly) NSString *appVersion;
+@property (nonatomic) <IKAppDeviceConfig> *deviceConfig;
+@property (nonatomic, readonly) bool isInRetailDemoMode;
+@property (nonatomic, readonly) NSString *model;
+@property (nonatomic, readonly) NSNumber *pixelRatio;
+@property (nonatomic, readonly) NSString *productType;
+@property (nonatomic, readonly) NSString *systemVersion;
+@property (nonatomic, readonly) NSString *vendorID;
 
 + (id)getMobileGestaltString:(struct __CFString { }*)arg1;
 

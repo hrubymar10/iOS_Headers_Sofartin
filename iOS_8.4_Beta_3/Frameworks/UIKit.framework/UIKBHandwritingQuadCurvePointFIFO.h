@@ -8,9 +8,9 @@
     UIView<UIKBHandwritingStrokeEnabled> *_strokeView;
 }
 
-@property(assign,retain) UIBezierPath * path;
-@property(assign,retain) NSMutableArray * prevPoints;
-@property(assign,retain) UIView<UIKBHandwritingStrokeEnabled> * strokeView;
+@property (nonatomic, retain) UIBezierPath *path;
+@property (nonatomic, retain) NSMutableArray *prevPoints;
+@property (nonatomic, retain) UIView<UIKBHandwritingStrokeEnabled> *strokeView;
 
 - (void)addPoint:(struct CGPoint { double x1; double x2; })arg1;
 - (void)clear;

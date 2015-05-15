@@ -7,9 +7,9 @@
     NSMutableArray *_roadAccessPoints;
 }
 
-@property(assign,retain) GEOLatLng * center;
-@property(assign,readonly) bool hasCenter;
-@property(assign,retain) NSMutableArray * roadAccessPoints;
+@property (nonatomic, retain) GEOLatLng *center;
+@property (nonatomic, readonly) bool hasCenter;
+@property (nonatomic, retain) NSMutableArray *roadAccessPoints;
 
 - (void)addRoadAccessPoint:(id)arg1;
 - (id)center;

@@ -25,26 +25,26 @@
     unsigned int _viewIsOffscreen;
 }
 
-@property(assign,readwrite) bool allowsCameraControl;
-@property(assign,readwrite) unsigned long long antialiasingMode;
-@property(assign,readwrite) bool autoenablesDefaultLighting;
-@property(assign,readonly) void* context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SCNSceneRendererDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) EAGLContext * eaglContext;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isJitteringEnabled,assign,readwrite) bool jitteringEnabled;
-@property(assign,readwrite) bool loops;
-@property(assign,retain) SKScene * overlaySKScene;
-@property(getter=isPlaying,assign,readwrite) bool playing;
-@property(assign,retain) SCNNode * pointOfView;
-@property(assign,readwrite) long long preferredFramesPerSecond;
-@property(assign,retain) SCNScene * scene;
-@property(assign,readwrite) double sceneTime;
-@property(assign,readwrite) bool showsStatistics;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) SCNTechnique * technique;
+@property (nonatomic) bool allowsCameraControl;
+@property (nonatomic) unsigned long long antialiasingMode;
+@property (nonatomic) bool autoenablesDefaultLighting;
+@property (nonatomic, readonly) void*context;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SCNSceneRendererDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) EAGLContext *eaglContext;
+@property (readonly) unsigned long long hash;
+@property (getter=isJitteringEnabled, nonatomic) bool jitteringEnabled;
+@property (nonatomic) bool loops;
+@property (nonatomic, retain) SKScene *overlaySKScene;
+@property (getter=isPlaying) bool playing;
+@property (nonatomic, retain) SCNNode *pointOfView;
+@property (nonatomic) long long preferredFramesPerSecond;
+@property (nonatomic, retain) SCNScene *scene;
+@property (nonatomic) double sceneTime;
+@property (nonatomic) bool showsStatistics;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) SCNTechnique *technique;
 
 + (id)SCNJSExportProtocol;
 + (id)_kvoKeysForwardedToRenderer;

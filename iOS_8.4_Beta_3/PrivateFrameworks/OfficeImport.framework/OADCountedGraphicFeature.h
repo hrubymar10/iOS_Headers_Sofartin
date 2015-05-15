@@ -7,7 +7,7 @@
     unsigned long long mUsageCount;
 }
 
-@property(assign,readwrite) unsigned long long usageCount;
+@property (nonatomic) unsigned long long usageCount;
 
 - (long long)compareUsageCount:(id)arg1;
 - (void)dealloc;

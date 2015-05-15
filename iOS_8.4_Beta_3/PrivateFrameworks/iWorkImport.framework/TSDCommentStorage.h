@@ -8,9 +8,9 @@
     NSString *mText;
 }
 
-@property(assign,retain) TSKAnnotationAuthor * author;
-@property(assign,copy) NSDate * creationDate;
-@property(assign,copy) NSString * text;
+@property (nonatomic, retain) TSKAnnotationAuthor *author;
+@property (nonatomic, copy) NSDate *creationDate;
+@property (nonatomic, copy) NSString *text;
 
 - (void)appendText:(id)arg1;
 - (id)author;

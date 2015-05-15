@@ -8,25 +8,25 @@
     bool isRegisteredForChanges;
 }
 
-@property(assign,retain) NSString * _prettyDescription;
-@property(assign,retain) NSString * _typeDescription;
-@property(assign,readwrite) short albumListType;
-@property(assign,retain) NSMutableOrderedSet * albums;
-@property(assign,readonly) unsigned long long albumsCount;
-@property(assign,copy) id albumsSortingComparator;
-@property(assign,readonly) bool canEditAlbums;
-@property(assign,readonly) unsigned long long containersCount;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didRegisteredWithUserInterfaceContext;
-@property(assign,readonly) int filter;
-@property(assign,readonly) bool hasAtLeastOneAlbum;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isFolder;
-@property(assign,readwrite) bool isRegisteredForChanges;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long unreadAlbumsCount;
-@property(assign,retain) NSString * uuid;
+@property (nonatomic, readonly, retain) NSString *_prettyDescription;
+@property (nonatomic, readonly, retain) NSString *_typeDescription;
+@property (nonatomic) short albumListType;
+@property (nonatomic, readonly, retain) NSMutableOrderedSet *albums;
+@property (nonatomic, readonly) unsigned long long albumsCount;
+@property (nonatomic, readonly, copy) id albumsSortingComparator;
+@property (nonatomic, readonly) bool canEditAlbums;
+@property (nonatomic, readonly) unsigned long long containersCount;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool didRegisteredWithUserInterfaceContext;
+@property (nonatomic, readonly) int filter;
+@property (nonatomic, readonly) bool hasAtLeastOneAlbum;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isFolder;
+@property (nonatomic) bool isRegisteredForChanges;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long unreadAlbumsCount;
+@property (nonatomic, retain) NSString *uuid;
 
 + (id)_albumListWithType:(short)arg1 inManagedObjectContext:(id)arg2;
 + (bool)_albumOrderMatchesFrom:(id)arg1 inDestination:(id)arg2;

@@ -11,15 +11,15 @@
     bool _shouldAddToPurchasedPlaylist;
 }
 
-@property(assign,copy) NSData * artworkData;
-@property(assign,copy) NSString * assetFilePath;
-@property(assign,readwrite) bool assignArtworkCacheIDFromAlbum;
-@property(assign,copy) NSArray * chapters;
-@property(assign,copy) MLContentRating * contentRating;
-@property(assign,copy) NSDictionary * entityProperties;
-@property(assign,readwrite) unsigned int mediaType;
-@property(assign,copy) MLMovieProperties * movieProperties;
-@property(assign,readwrite) bool shouldAddToPurchasedPlaylist;
+@property (nonatomic, copy) NSData *artworkData;
+@property (nonatomic, copy) NSString *assetFilePath;
+@property (nonatomic) bool assignArtworkCacheIDFromAlbum;
+@property (nonatomic, copy) NSArray *chapters;
+@property (nonatomic, copy) MLContentRating *contentRating;
+@property (nonatomic, readonly, copy) NSDictionary *entityProperties;
+@property (nonatomic) unsigned int mediaType;
+@property (nonatomic, copy) MLMovieProperties *movieProperties;
+@property (nonatomic) bool shouldAddToPurchasedPlaylist;
 
 + (void)initialize;
 

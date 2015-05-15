@@ -4,8 +4,8 @@
 
 @interface DOMHTMLMapElement : DOMHTMLElement
 
-@property(assign,readonly) DOMHTMLCollection * areas;
-@property(assign,copy) NSString * name;
+@property (readonly) DOMHTMLCollection *areas;
+@property (copy) NSString *name;
 
 - (id)areas;
 - (id)name;

@@ -8,9 +8,9 @@
     id _intermediateResultCallback;
 }
 
-@property(assign,readonly) NSAsynchronousFetchRequest * fetchRequest;
-@property(assign,retain) NSArray * finalResult;
-@property(assign,copy) id intermediateResultCallback;
+@property (readonly) NSAsynchronousFetchRequest *fetchRequest;
+@property (retain) NSArray *finalResult;
+@property (copy) id intermediateResultCallback;
 
 - (void)dealloc;
 - (id)fetchRequest;

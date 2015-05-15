@@ -18,23 +18,23 @@
     CKDPCSCache *_zoneCache;
 }
 
-@property(assign,retain) NSMutableDictionary * backgroundRecordCacheByPrivateZoneID;
-@property(assign,retain) CKDPCSCache * backgroundShareCache;
-@property(assign,retain) CKDPCSCache * backgroundZoneCache;
-@property(assign,readonly) CKDClientContext * context;
-@property(assign,retain) NSString * currentAccountIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,retain) CKDPCSFetchAggregator * pcsFetchAggregator;
-@property(assign,retain) NSMutableDictionary * recordCacheByPrivateZoneID;
-@property(assign,retain) NSString * serviceName;
-@property(assign,retain) CKDPCSCache * shareCache;
-@property(assign,readwrite) struct _PCSIdentityData { }* sharingIdentity;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSData * userIdentityFingerprint;
-@property(assign,retain) CKDPCSCache * zoneCache;
+@property (nonatomic, retain) NSMutableDictionary *backgroundRecordCacheByPrivateZoneID;
+@property (nonatomic, retain) CKDPCSCache *backgroundShareCache;
+@property (nonatomic, retain) CKDPCSCache *backgroundZoneCache;
+@property (nonatomic, readonly) CKDClientContext *context;
+@property (retain) NSString *currentAccountIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic, retain) CKDPCSFetchAggregator *pcsFetchAggregator;
+@property (nonatomic, retain) NSMutableDictionary *recordCacheByPrivateZoneID;
+@property (nonatomic, retain) NSString *serviceName;
+@property (nonatomic, retain) CKDPCSCache *shareCache;
+@property (nonatomic) struct _PCSIdentityData { }*sharingIdentity;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSData *userIdentityFingerprint;
+@property (nonatomic, retain) CKDPCSCache *zoneCache;
 
 - (void).cxx_destruct;
 - (struct _OpaquePCSShareProtection { }*)_addPublicSharingIdentityToSharePCS:(struct _OpaquePCSShareProtection { }*)arg1 withError:(id*)arg2;

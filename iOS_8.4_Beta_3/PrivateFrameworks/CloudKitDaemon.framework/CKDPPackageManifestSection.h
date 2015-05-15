@@ -12,12 +12,12 @@
     long long _size;
 }
 
-@property(assign,readwrite) bool hasLastSection;
-@property(assign,readonly) bool hasSignature;
-@property(assign,readwrite) bool hasSize;
-@property(assign,readwrite) bool lastSection;
-@property(assign,retain) NSData * signature;
-@property(assign,readwrite) long long size;
+@property (nonatomic) bool hasLastSection;
+@property (nonatomic, readonly) bool hasSignature;
+@property (nonatomic) bool hasSize;
+@property (nonatomic) bool lastSection;
+@property (nonatomic, retain) NSData *signature;
+@property (nonatomic) long long size;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

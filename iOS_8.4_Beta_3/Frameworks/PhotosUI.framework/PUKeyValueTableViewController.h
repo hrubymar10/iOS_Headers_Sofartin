@@ -8,7 +8,7 @@
     NSString *_markedKey;
 }
 
-@property(assign,copy) id completionHandler;
+@property (nonatomic, copy) id completionHandler;
 
 - (void).cxx_destruct;
 - (id)completionHandler;

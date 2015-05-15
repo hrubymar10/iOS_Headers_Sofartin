@@ -11,12 +11,12 @@
     long long _storeId;
 }
 
-@property(assign,readonly) bool hasName;
-@property(assign,readonly) bool hasSortName;
-@property(assign,readwrite) bool hasStoreId;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * sortName;
-@property(assign,readwrite) long long storeId;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic, readonly) bool hasSortName;
+@property (nonatomic) bool hasStoreId;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *sortName;
+@property (nonatomic) long long storeId;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

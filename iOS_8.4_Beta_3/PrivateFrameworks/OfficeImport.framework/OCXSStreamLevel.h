@@ -7,8 +7,8 @@
     const char *mName;
 }
 
-@property(assign,readwrite) int depth;
-@property(assign,readwrite) const char * name;
+@property (nonatomic) int depth;
+@property (nonatomic) const char *name;
 
 - (int)depth;
 - (const char *)name;

@@ -14,10 +14,10 @@
     double _retrievalTime;
 }
 
-@property(assign,readonly) NSString * availableArtworkToken;
-@property(assign,readonly) long long fetchableArtworkSourceType;
-@property(assign,readonly) NSString * fetchableArtworkToken;
-@property(assign,readwrite) double retrievalTime;
+@property (nonatomic, readonly) NSString *availableArtworkToken;
+@property (nonatomic, readonly) long long fetchableArtworkSourceType;
+@property (nonatomic, readonly) NSString *fetchableArtworkToken;
+@property (nonatomic) double retrievalTime;
 
 - (void).cxx_destruct;
 - (void)_faultInBestTokens;

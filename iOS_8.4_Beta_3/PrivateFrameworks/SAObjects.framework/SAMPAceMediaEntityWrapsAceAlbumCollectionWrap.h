@@ -4,12 +4,12 @@
 
 @interface SAMPAceMediaEntityWrapsAceAlbumCollectionWrap : SAMPAlbumCollection <SASyncWrap>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSNumber * generation;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURL * identifier;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSNumber *generation;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSURL *identifier;
+@property (readonly) Class superclass;
 
 + (id)aceMediaEntityWrapsAceAlbumCollectionWrap;
 + (id)aceMediaEntityWrapsAceAlbumCollectionWrapWithDictionary:(id)arg1 context:(id)arg2;

@@ -10,11 +10,11 @@
     TSWPParagraphStyle *mTextStyle;
 }
 
-@property(assign,retain) TSTCellStyle * cellStyle;
-@property(assign,readwrite) unsigned char hidingState;
-@property(assign,readwrite) unsigned short numberOfCells;
-@property(assign,readwrite) double size;
-@property(assign,retain) TSWPParagraphStyle * textStyle;
+@property (nonatomic, retain) TSTCellStyle *cellStyle;
+@property (nonatomic) unsigned char hidingState;
+@property (nonatomic) unsigned short numberOfCells;
+@property (nonatomic) double size;
+@property (nonatomic, retain) TSWPParagraphStyle *textStyle;
 
 - (id)cellStyle;
 - (void)dealloc;

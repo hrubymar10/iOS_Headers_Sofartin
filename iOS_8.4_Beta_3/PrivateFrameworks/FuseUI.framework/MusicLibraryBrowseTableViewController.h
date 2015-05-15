@@ -34,18 +34,18 @@
     bool _usesFlexibleHeaderViews;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicLibraryBrowseTableViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double effectiveContentHeight;
-@property(assign,readonly) NSArray * entityProviderChangeRecords;
-@property(assign,readonly) MusicEntityViewDescriptor * entityViewDescriptor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MusicLibraryViewConfiguration * libraryViewConfiguration;
-@property(assign,readwrite) unsigned long long sectionCountThresholdForCollapsedSections;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) MusicTableView * tableView;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicLibraryBrowseTableViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double effectiveContentHeight;
+@property (nonatomic, readonly) NSArray *entityProviderChangeRecords;
+@property (nonatomic, readonly) MusicEntityViewDescriptor *entityViewDescriptor;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MusicLibraryViewConfiguration *libraryViewConfiguration;
+@property (nonatomic) unsigned long long sectionCountThresholdForCollapsedSections;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) MusicTableView *tableView;
 
 - (void).cxx_destruct;
 - (void)_beginEntityProviderInvalidation;

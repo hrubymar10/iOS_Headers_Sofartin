@@ -13,12 +13,12 @@
     NSMutableSet *_outstandingMessages;
 }
 
-@property(assign,readwrite) bool assertionHeld;
-@property(assign,retain) id context;
-@property(assign,copy) id disconnectHandler;
-@property(assign,copy) id lockdownHandler;
-@property(assign,copy) id messageHandler;
-@property(assign,readonly) NSString * serviceName;
+@property (nonatomic) bool assertionHeld;
+@property (nonatomic, retain) id context;
+@property (nonatomic, copy) id disconnectHandler;
+@property (nonatomic, copy) id lockdownHandler;
+@property (nonatomic, copy) id messageHandler;
+@property (readonly) NSString *serviceName;
 
 - (void).cxx_destruct;
 - (void)_handleLockdownMessage:(void*)arg1;

@@ -13,15 +13,15 @@
     WBSCloudHistoryVisitIdentifier *_visitIdentifier;
 }
 
-@property(assign,readonly) NSDictionary * dictionaryRepresentation;
-@property(getter=wasHTTPNonGet,assign,readwrite) bool httpNonGet;
-@property(getter=loadWasSuccessful,assign,readwrite) bool loadSuccessful;
-@property(assign,readwrite) WBSCloudHistoryVisit * redirectDestinationVisit;
-@property(assign,copy) WBSCloudHistoryVisitIdentifier * redirectDestinationVisitIdentifier;
-@property(assign,readwrite) WBSCloudHistoryVisit * redirectSourceVisit;
-@property(assign,copy) WBSCloudHistoryVisitIdentifier * redirectSourceVisitIdentifier;
-@property(assign,copy) NSString * title;
-@property(assign,copy) WBSCloudHistoryVisitIdentifier * visitIdentifier;
+@property (nonatomic, readonly) NSDictionary *dictionaryRepresentation;
+@property (getter=wasHTTPNonGet, nonatomic) bool httpNonGet;
+@property (getter=loadWasSuccessful, nonatomic) bool loadSuccessful;
+@property (nonatomic) WBSCloudHistoryVisit *redirectDestinationVisit;
+@property (nonatomic, copy) WBSCloudHistoryVisitIdentifier *redirectDestinationVisitIdentifier;
+@property (nonatomic) WBSCloudHistoryVisit *redirectSourceVisit;
+@property (nonatomic, copy) WBSCloudHistoryVisitIdentifier *redirectSourceVisitIdentifier;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) WBSCloudHistoryVisitIdentifier *visitIdentifier;
 
 - (void).cxx_destruct;
 - (id)description;

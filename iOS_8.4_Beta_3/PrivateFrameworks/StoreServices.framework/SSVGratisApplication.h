@@ -9,11 +9,11 @@
     NSString *_itemIdentifier;
 }
 
-@property(assign,copy) NSString * bundleIdentifier;
-@property(assign,copy) NSString * bundleVersion;
-@property(assign,readonly) NSDictionary * dictionaryRepresentation;
-@property(assign,copy) NSNumber * externalVersionIdentifier;
-@property(assign,copy) NSString * itemIdentifier;
+@property (nonatomic, copy) NSString *bundleIdentifier;
+@property (nonatomic, copy) NSString *bundleVersion;
+@property (nonatomic, readonly) NSDictionary *dictionaryRepresentation;
+@property (nonatomic, copy) NSNumber *externalVersionIdentifier;
+@property (nonatomic, copy) NSString *itemIdentifier;
 
 - (void).cxx_destruct;
 - (id)bundleIdentifier;

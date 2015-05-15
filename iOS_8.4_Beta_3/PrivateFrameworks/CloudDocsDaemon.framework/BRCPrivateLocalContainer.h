@@ -9,13 +9,13 @@
     NSMutableArray *_syncBarriers;
 }
 
-@property(assign,readonly) BRContainer * containerMetadata;
-@property(assign,retain) NSString * containerMetadataEtag;
-@property(assign,readwrite) bool containerMetadataNeedsSyncUp;
-@property(assign,readonly) BRCRelativePath * documentsPath;
-@property(assign,readonly) bool isPrivateContainer;
-@property(assign,readonly) bool isSharedContainer;
-@property(assign,readonly) BRCPrivateServerZone * privateZone;
+@property (nonatomic, readonly) BRContainer *containerMetadata;
+@property (nonatomic, retain) NSString *containerMetadataEtag;
+@property (nonatomic) bool containerMetadataNeedsSyncUp;
+@property (nonatomic, readonly) BRCRelativePath *documentsPath;
+@property (nonatomic, readonly) bool isPrivateContainer;
+@property (nonatomic, readonly) bool isSharedContainer;
+@property (nonatomic, readonly) BRCPrivateServerZone *privateZone;
 
 - (void).cxx_destruct;
 - (unsigned int)_activateState:(unsigned int)arg1 origState:(unsigned int)arg2;

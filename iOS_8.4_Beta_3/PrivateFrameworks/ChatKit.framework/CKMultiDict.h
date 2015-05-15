@@ -8,8 +8,8 @@
     NSObject<OS_dispatch_queue> *_lockQueue;
 }
 
-@property(assign,retain) NSMutableDictionary * dictionary;
-@property(assign,retain) NSObject<OS_dispatch_queue> * lockQueue;
+@property (nonatomic, retain) NSMutableDictionary *dictionary;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *lockQueue;
 
 - (id)allKeys;
 - (unsigned long long)count;

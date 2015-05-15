@@ -11,12 +11,12 @@
     } _has;
 }
 
-@property(assign,retain) NSData * beforeDateReceived;
-@property(assign,retain) NSString * conversationId;
-@property(assign,readwrite) unsigned int fullSyncVersion;
-@property(assign,readonly) bool hasBeforeDateReceived;
-@property(assign,readonly) bool hasConversationId;
-@property(assign,readwrite) bool hasFullSyncVersion;
+@property (nonatomic, retain) NSData *beforeDateReceived;
+@property (nonatomic, retain) NSString *conversationId;
+@property (nonatomic) unsigned int fullSyncVersion;
+@property (nonatomic, readonly) bool hasBeforeDateReceived;
+@property (nonatomic, readonly) bool hasConversationId;
+@property (nonatomic) bool hasFullSyncVersion;
 
 - (void).cxx_destruct;
 - (id)beforeDateReceived;

@@ -8,9 +8,9 @@
     double _presentationTime;
 }
 
-@property(assign,retain) UIActivityIndicatorView * activityIndicator;
-@property(assign,retain) UILabel * label;
-@property(assign,readwrite) double presentationTime;
+@property (nonatomic, retain) UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, retain) UILabel *label;
+@property (nonatomic) double presentationTime;
 
 - (id)activityIndicator;
 - (void)dealloc;

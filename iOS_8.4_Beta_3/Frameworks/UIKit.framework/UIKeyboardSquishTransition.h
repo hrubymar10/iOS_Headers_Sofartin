@@ -14,13 +14,13 @@
     double _widthRatio;
 }
 
-@property(assign,readwrite) unsigned long long animationType;
-@property(assign,retain) NSArray * commonVisibleKeys;
-@property(assign,readwrite) bool disableMeshOptimization;
-@property(assign,retain) NSArray * endGeometries;
-@property(assign,readwrite) bool nonoverlappingCrossfade;
-@property(assign,retain) NSArray * startGeometries;
-@property(assign,readonly) double transitionOverlapDelta;
+@property (nonatomic) unsigned long long animationType;
+@property (nonatomic, retain) NSArray *commonVisibleKeys;
+@property (nonatomic) bool disableMeshOptimization;
+@property (nonatomic, retain) NSArray *endGeometries;
+@property (nonatomic) bool nonoverlappingCrossfade;
+@property (nonatomic, retain) NSArray *startGeometries;
+@property (nonatomic, readonly) double transitionOverlapDelta;
 
 - (void)_updateTransition;
 - (unsigned long long)animationType;

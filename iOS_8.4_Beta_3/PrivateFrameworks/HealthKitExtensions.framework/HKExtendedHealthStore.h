@@ -9,14 +9,14 @@
     _HKExtendedHealthStoreProxy *_connectionProxy;
 }
 
-@property(assign,copy) id achievementsAddedHandler;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * clientQueue;
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,retain) _HKExtendedHealthStoreProxy * connectionProxy;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id achievementsAddedHandler;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *clientQueue;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (nonatomic, retain) _HKExtendedHealthStoreProxy *connectionProxy;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)achievementsAddedHandler;

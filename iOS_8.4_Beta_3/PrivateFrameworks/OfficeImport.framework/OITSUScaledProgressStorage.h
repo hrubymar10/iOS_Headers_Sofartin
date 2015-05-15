@@ -6,7 +6,7 @@
     double mMaxValue;
 }
 
-@property(assign,readwrite) double maxValue;
+@property double maxValue;
 
 - (double)maxValue;
 - (void)setMaxValue:(double)arg1;

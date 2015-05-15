@@ -22,17 +22,17 @@
     IMScheduledUpdater *_updater;
 }
 
-@property(assign,readonly) double bottomInsetPadding;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } keyboardFrame;
-@property(assign,readwrite) bool keyboardInteractionCancelled;
-@property(getter=isKeyboardOnscreenWithoutAccessoryView,assign,readonly) bool keyboardOnscreenWithoutAccessoryView;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } keyboardScreenFrame;
-@property(getter=isKeyboardUndocked,assign,readonly) bool keyboardUndocked;
-@property(getter=isKeyboardVisible,assign,readwrite) bool keyboardVisible;
-@property(assign,readonly) UIScrollView * scrollView;
-@property(assign,readonly) bool topInsetIncludesPalette;
-@property(assign,readonly) double topInsetPadding;
-@property(assign,retain) IMScheduledUpdater * updater;
+@property (nonatomic, readonly) double bottomInsetPadding;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } keyboardFrame;
+@property (nonatomic) bool keyboardInteractionCancelled;
+@property (getter=isKeyboardOnscreenWithoutAccessoryView, nonatomic, readonly) bool keyboardOnscreenWithoutAccessoryView;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } keyboardScreenFrame;
+@property (getter=isKeyboardUndocked, nonatomic, readonly) bool keyboardUndocked;
+@property (getter=isKeyboardVisible, nonatomic) bool keyboardVisible;
+@property (nonatomic, readonly) UIScrollView *scrollView;
+@property (nonatomic, readonly) bool topInsetIncludesPalette;
+@property (nonatomic, readonly) double topInsetPadding;
+@property (nonatomic, retain) IMScheduledUpdater *updater;
 
 - (double)_bottomRotatingFooterHeight;
 - (void)_changedStatusBarFrame:(id)arg1;

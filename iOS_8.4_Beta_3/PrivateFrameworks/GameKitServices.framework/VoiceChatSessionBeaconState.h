@@ -10,10 +10,10 @@
     unsigned int typeToSend;
 }
 
-@property(assign,readwrite) bool needsSend;
-@property(assign,readwrite) unsigned int receivedState;
-@property(assign,readwrite) unsigned int sentState;
-@property(assign,readwrite) unsigned int typeToSend;
+@property (nonatomic) bool needsSend;
+@property (nonatomic) unsigned int receivedState;
+@property (nonatomic) unsigned int sentState;
+@property (nonatomic) unsigned int typeToSend;
 
 - (void)dealloc;
 - (id)init;

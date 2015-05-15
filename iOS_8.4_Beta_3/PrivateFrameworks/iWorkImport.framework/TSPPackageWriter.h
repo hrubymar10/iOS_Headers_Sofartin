@@ -19,18 +19,18 @@
     TSUZipFileWriter *_zipArchiveWriter;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSURL * documentTargetURL;
-@property(assign,readonly) SFUCryptoKey * encryptionKey;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) TSPPackage * originalPackage;
-@property(assign,readonly) NSProgress * progress;
-@property(assign,readonly) NSURL * relativeURLForExternalData;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) long long updateType;
-@property(assign,readonly) TSUZipFileWriter * zipArchiveWriter;
+@property (nonatomic, readonly) NSURL *URL;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSURL *documentTargetURL;
+@property (nonatomic, readonly) SFUCryptoKey *encryptionKey;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) TSPPackage *originalPackage;
+@property (nonatomic, readonly) NSProgress *progress;
+@property (nonatomic, readonly) NSURL *relativeURLForExternalData;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) long long updateType;
+@property (nonatomic, readonly) TSUZipFileWriter *zipArchiveWriter;
 
 + (id)newPackageWriterWithPackageType:(long long)arg1 URL:(id)arg2 documentTargetURL:(id)arg3 relativeURLForExternalData:(id)arg4 packageIdentifier:(unsigned char)arg5 documentProperties:(id)arg6 fileFormatVersion:(unsigned long long)arg7 updateType:(long long)arg8 encryptionKey:(id)arg9 originalDocumentPackage:(id)arg10 originalSuppportPackage:(id)arg11 fileCoordinatorDelegate:(id)arg12 progress:(id)arg13 error:(id*)arg14;
 

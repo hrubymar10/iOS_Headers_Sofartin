@@ -7,7 +7,7 @@
     bool _shouldForwardBasePropertyValues;
 }
 
-@property(assign,readonly) unsigned long long entityLimit;
+@property (nonatomic, readonly) unsigned long long entityLimit;
 
 + (unsigned long long)defaultEntityLimit;
 

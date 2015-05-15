@@ -10,11 +10,11 @@
     YTVideo *_video;
 }
 
-@property(assign,retain) NSURL * captionTrackURL;
-@property(assign,retain) NSString * language;
-@property(assign,readwrite) bool speechRecognition;
-@property(assign,retain) NSString * title;
-@property(assign,retain) YTVideo * video;
+@property (nonatomic, retain) NSURL *captionTrackURL;
+@property (nonatomic, retain) NSString *language;
+@property (nonatomic) bool speechRecognition;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) YTVideo *video;
 
 - (id)captionTrackURL;
 - (void)dealloc;

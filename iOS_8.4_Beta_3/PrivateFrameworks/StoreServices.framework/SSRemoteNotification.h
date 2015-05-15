@@ -6,18 +6,18 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,readonly) long long actionType;
-@property(assign,readonly) NSString * alertBodyString;
-@property(assign,readonly) NSString * alertCancelString;
-@property(assign,readonly) NSString * alertOKString;
-@property(assign,readonly) NSString * alertTitleString;
-@property(assign,readonly) id badgeValue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSDictionary * notificationUserInfo;
-@property(assign,readonly) NSString * soundFileName;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) long long actionType;
+@property (nonatomic, readonly) NSString *alertBodyString;
+@property (nonatomic, readonly) NSString *alertCancelString;
+@property (nonatomic, readonly) NSString *alertOKString;
+@property (nonatomic, readonly) NSString *alertTitleString;
+@property (nonatomic, readonly) id badgeValue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSDictionary *notificationUserInfo;
+@property (nonatomic, readonly) NSString *soundFileName;
+@property (readonly) Class superclass;
 
 - (id)_valueForAlertKey:(id)arg1;
 - (long long)actionType;

@@ -7,21 +7,21 @@
     bool _needsPersistenceUpdate;
 }
 
-@property(assign,retain) NSString * _prettyDescription;
-@property(assign,retain) NSString * _typeDescription;
-@property(assign,readonly) unsigned long long albumsCount;
-@property(assign,copy) id albumsSortingComparator;
-@property(assign,retain) NSOrderedSet * childCollections;
-@property(assign,readonly) unsigned long long containersCount;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) int filter;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isFolder;
-@property(assign,readwrite) bool needsFixedOrderKeysComplianceUpdate;
-@property(assign,readwrite) bool needsPersistenceUpdate;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long unreadAlbumsCount;
+@property (nonatomic, readonly, retain) NSString *_prettyDescription;
+@property (nonatomic, readonly, retain) NSString *_typeDescription;
+@property (nonatomic, readonly) unsigned long long albumsCount;
+@property (nonatomic, readonly, copy) id albumsSortingComparator;
+@property (nonatomic, retain) NSOrderedSet *childCollections;
+@property (nonatomic, readonly) unsigned long long containersCount;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) int filter;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isFolder;
+@property (nonatomic) bool needsFixedOrderKeysComplianceUpdate;
+@property (nonatomic) bool needsPersistenceUpdate;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long unreadAlbumsCount;
 
 + (id)childKeyForOrdering;
 + (id)entityInManagedObjectContext:(id)arg1;

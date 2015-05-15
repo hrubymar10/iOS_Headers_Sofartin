@@ -9,10 +9,10 @@
     SKUIImageViewElement *_thumbnailImage;
 }
 
-@property(assign,readonly) NSArray * assets;
-@property(assign,readonly) long long itemIdentifier;
-@property(assign,readonly) long long playbackStyle;
-@property(assign,readonly) SKUIImageViewElement * thumbnailImage;
+@property (nonatomic, readonly) NSArray *assets;
+@property (nonatomic, readonly) long long itemIdentifier;
+@property (nonatomic, readonly) long long playbackStyle;
+@property (nonatomic, readonly) SKUIImageViewElement *thumbnailImage;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

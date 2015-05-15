@@ -4,11 +4,11 @@
 
 @interface CPLPullChangeSession : CPLChangeSession <CPLAbstractObject>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (readonly) Class superclass;
 
 - (id)_sessionLogDomain;
 - (void)acknowledgeChangeBatch:(id)arg1 withCompletionHandler:(id)arg2;

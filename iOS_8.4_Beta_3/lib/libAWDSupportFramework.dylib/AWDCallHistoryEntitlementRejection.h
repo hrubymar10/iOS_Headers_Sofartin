@@ -12,12 +12,12 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) bool hasPid;
-@property(assign,readonly) bool hasProcname;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int pid;
-@property(assign,retain) NSString * procname;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) bool hasPid;
+@property (nonatomic, readonly) bool hasProcname;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int pid;
+@property (nonatomic, retain) NSString *procname;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

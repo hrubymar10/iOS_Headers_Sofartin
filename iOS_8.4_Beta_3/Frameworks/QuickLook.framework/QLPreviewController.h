@@ -6,10 +6,10 @@
     QLPreviewControllerReserved *_reserved;
 }
 
-@property(assign,readonly) <QLPreviewItem> * currentPreviewItem;
-@property(assign,readwrite) long long currentPreviewItemIndex;
-@property(assign,readwrite) <QLPreviewControllerDataSource> * dataSource;
-@property(assign,readwrite) <QLPreviewControllerDelegate> * delegate;
+@property (readonly) <QLPreviewItem> *currentPreviewItem;
+@property long long currentPreviewItemIndex;
+@property <QLPreviewControllerDataSource> *dataSource;
+@property <QLPreviewControllerDelegate> *delegate;
 
 + (id)_passThroughDocumentTypes;
 + (bool)_shouldForwardViewWillTransitionToSize;

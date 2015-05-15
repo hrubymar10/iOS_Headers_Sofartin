@@ -16,10 +16,10 @@
     NSMutableArray *_transformedManyToManys;
 }
 
-@property(assign,readonly) NSSQLEntity * destinationEntity;
-@property(assign,readonly) NSEntityMapping * entityMapping;
-@property(assign,readonly) int migrationType;
-@property(assign,readonly) NSSQLEntity * sourceEntity;
+@property (readonly) NSSQLEntity *destinationEntity;
+@property (readonly) NSEntityMapping *entityMapping;
+@property (readonly) int migrationType;
+@property (readonly) NSSQLEntity *sourceEntity;
 
 - (void)_generateSQLValueMappingsWithMigrationContext:(struct _NSSQLMigrationContext { id x1; })arg1;
 - (void)_populateSQLValuesByPropertyFromTransforms:(id)arg1 migrationContext:(struct _NSSQLMigrationContext { id x1; })arg2;

@@ -9,11 +9,11 @@
     bool _wantsGradient;
 }
 
-@property(assign,readwrite) BOOL color;
-@property(assign,retain) UIView<CKGradientReferenceView> * gradientReferenceView;
-@property(assign,retain) CKGradientView * gradientView;
-@property(assign,retain) CKBalloonImageView * mask;
-@property(assign,readwrite) bool wantsGradient;
+@property (nonatomic) BOOL color;
+@property (nonatomic, retain) UIView<CKGradientReferenceView> *gradientReferenceView;
+@property (nonatomic, retain) CKGradientView *gradientView;
+@property (nonatomic, retain) CKBalloonImageView *mask;
+@property (nonatomic) bool wantsGradient;
 
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })alignmentRectInsets;
 - (BOOL)color;

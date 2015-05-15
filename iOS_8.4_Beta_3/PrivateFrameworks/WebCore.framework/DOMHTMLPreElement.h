@@ -4,8 +4,8 @@
 
 @interface DOMHTMLPreElement : DOMHTMLElement
 
-@property(assign,readwrite) int width;
-@property(assign,readwrite) bool wrap;
+@property int width;
+@property bool wrap;
 
 - (void)setWidth:(int)arg1;
 - (void)setWrap:(bool)arg1;

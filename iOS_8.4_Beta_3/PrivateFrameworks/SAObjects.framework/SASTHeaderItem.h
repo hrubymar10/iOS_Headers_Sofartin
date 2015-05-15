@@ -4,13 +4,13 @@
 
 @interface SASTHeaderItem : AceObject <SASTTemplateItem>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUIDecoratedText * header;
-@property(assign,retain) SAUIDecoratedText * subtitle;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUIDecoratedText *header;
+@property (nonatomic, retain) SAUIDecoratedText *subtitle;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
 
 + (id)headerItem;
 + (id)headerItemWithDictionary:(id)arg1 context:(id)arg2;

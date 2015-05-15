@@ -8,12 +8,12 @@
     NSData *_zilchPoints;
 }
 
-@property(assign,retain) NSData * directionsResponseID;
-@property(assign,readonly) bool hasDirectionsResponseID;
-@property(assign,readonly) bool hasRouteID;
-@property(assign,readonly) bool hasZilchPoints;
-@property(assign,retain) NSData * routeID;
-@property(assign,retain) NSData * zilchPoints;
+@property (nonatomic, retain) NSData *directionsResponseID;
+@property (nonatomic, readonly) bool hasDirectionsResponseID;
+@property (nonatomic, readonly) bool hasRouteID;
+@property (nonatomic, readonly) bool hasZilchPoints;
+@property (nonatomic, retain) NSData *routeID;
+@property (nonatomic, retain) NSData *zilchPoints;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

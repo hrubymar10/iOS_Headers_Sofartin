@@ -17,24 +17,24 @@
     TSCHTrendLineData *mTrendLineData;
 }
 
-@property(assign,readwrite) unsigned long long barGapIndex;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) TSCHErrorBarData * errorBarData;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) TSCHChartModel * model;
-@property(assign,retain) NSString * name;
-@property(assign,readonly) unsigned long long seriesIndex;
-@property(assign,readonly) NSObject<TSCHUnretainedParent> * seriesStorage;
-@property(assign,readwrite) TSCHChartSeriesType * seriesType;
-@property(assign,readonly) bool showTrendLineLegendText;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) TSCHTrendLineData * trendLineData;
-@property(assign,readonly) NSString * trendLineLegendText;
+@property (nonatomic) unsigned long long barGapIndex;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) TSCHErrorBarData *errorBarData;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) TSCHChartModel *model;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, readonly) unsigned long long seriesIndex;
+@property (nonatomic, readonly) NSObject<TSCHUnretainedParent> *seriesStorage;
+@property (nonatomic) TSCHChartSeriesType *seriesType;
+@property (nonatomic, readonly) bool showTrendLineLegendText;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) TSCHTrendLineData *trendLineData;
+@property (nonatomic, readonly) NSString *trendLineLegendText;
 
 + (id)computableProperties;
 + (id)computedFillOrStroke:(id)arg1 forSeriesIndex:(unsigned long long)arg2 numberOfThemeSeries:(unsigned long long)arg3;

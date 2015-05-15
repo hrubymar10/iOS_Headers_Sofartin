@@ -7,7 +7,7 @@
     SKUISettingsFamilyViewStateCoordinator *_viewStateCoordinator;
 }
 
-@property(assign,readonly) long long viewState;
+@property (nonatomic, readonly) long long viewState;
 
 + (Class)_viewClassForSettingDescription:(id)arg1;
 

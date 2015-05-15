@@ -20,23 +20,23 @@
     int _visibility;
 }
 
-@property(assign,readonly) bool accessGranted;
-@property(assign,readonly) NSSet * accessKeys;
-@property(assign,readwrite) ACAccountStore * accountStore;
-@property(assign,readonly) NSString * accountTypeDescription;
-@property(assign,copy) id credentialProtectionPolicy;
-@property(assign,retain) NSString * credentialType;
-@property(assign,readonly) bool encryptAccountProperties;
-@property(assign,readonly) NSString * fullDescription;
-@property(assign,readonly) NSString * identifier;
-@property(assign,retain) NSURL * objectID;
-@property(assign,retain) NSString * owningBundleID;
-@property(assign,retain) NSString * owningTeamID;
-@property(assign,readonly) NSSet * supportedDataclasses;
-@property(assign,readwrite) int supportsAuthentication;
-@property(assign,readwrite) bool supportsMultipleAccounts;
-@property(assign,readonly) NSSet * syncableDataclasses;
-@property(assign,readwrite) int visibility;
+@property (nonatomic, readonly) bool accessGranted;
+@property (nonatomic, readonly) NSSet *accessKeys;
+@property (nonatomic) ACAccountStore *accountStore;
+@property (nonatomic, readonly) NSString *accountTypeDescription;
+@property (nonatomic, copy) id credentialProtectionPolicy;
+@property (nonatomic, retain) NSString *credentialType;
+@property (nonatomic, readonly) bool encryptAccountProperties;
+@property (nonatomic, readonly) NSString *fullDescription;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, retain) NSURL *objectID;
+@property (nonatomic, retain) NSString *owningBundleID;
+@property (nonatomic, retain) NSString *owningTeamID;
+@property (nonatomic, readonly) NSSet *supportedDataclasses;
+@property (nonatomic) int supportsAuthentication;
+@property (nonatomic) bool supportsMultipleAccounts;
+@property (nonatomic, readonly) NSSet *syncableDataclasses;
+@property (nonatomic) int visibility;
 
 + (bool)supportsSecureCoding;
 

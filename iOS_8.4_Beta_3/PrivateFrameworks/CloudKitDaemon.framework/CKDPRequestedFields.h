@@ -6,7 +6,7 @@
     NSMutableArray *_fields;
 }
 
-@property(assign,retain) NSMutableArray * fields;
+@property (nonatomic, retain) NSMutableArray *fields;
 
 - (void).cxx_destruct;
 - (void)addFields:(id)arg1;

@@ -14,13 +14,13 @@
     long long _tabState;
 }
 
-@property(assign,readonly) bool canShowRadio;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) RadioAvailabilityController * radioAvailabilityController;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) long long tabState;
+@property (nonatomic, readonly) bool canShowRadio;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) RadioAvailabilityController *radioAvailabilityController;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) long long tabState;
 
 + (id)sharedUserInterfaceStatusController;
 

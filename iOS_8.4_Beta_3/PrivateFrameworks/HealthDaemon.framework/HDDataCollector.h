@@ -13,12 +13,12 @@
     long long _state;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool disabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) HDSourceEntity * sourceEntity;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property bool disabled;
+@property (readonly) unsigned long long hash;
+@property (readonly) HDSourceEntity *sourceEntity;
+@property (readonly) Class superclass;
 
 + (id)domain;
 + (id)observedType;

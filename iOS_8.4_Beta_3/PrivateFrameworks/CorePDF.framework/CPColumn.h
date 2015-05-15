@@ -12,7 +12,7 @@
     double minLeft;
 }
 
-@property(assign,readwrite) bool complete;
+@property bool complete;
 
 - (void)accept:(id)arg1;
 - (double)bottomBaseline;

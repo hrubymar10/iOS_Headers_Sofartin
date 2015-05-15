@@ -8,9 +8,9 @@
     NSString *_labelKey;
 }
 
-@property(assign,readwrite) int contentMode;
-@property(assign,retain) NSString * iconName;
-@property(assign,retain) NSString * labelKey;
+@property (nonatomic) int contentMode;
+@property (nonatomic, retain) NSString *iconName;
+@property (nonatomic, retain) NSString *labelKey;
 
 + (id)_existingTabInfoForContentMode:(int)arg1;
 + (id)tabInfoWithLabelKey:(id)arg1 iconName:(id)arg2 contentMode:(int)arg3;

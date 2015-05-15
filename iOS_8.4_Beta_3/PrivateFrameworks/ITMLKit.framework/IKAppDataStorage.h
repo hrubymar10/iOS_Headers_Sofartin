@@ -10,10 +10,10 @@
     NSObject<OS_dispatch_queue> *_storageQueue;
 }
 
-@property(assign,retain) NSString * filePath;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSMutableDictionary * storageDict;
-@property(assign,retain) NSObject<OS_dispatch_queue> * storageQueue;
+@property (nonatomic, readonly, retain) NSString *filePath;
+@property (nonatomic, readonly, retain) NSString *identifier;
+@property (nonatomic, retain) NSMutableDictionary *storageDict;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *storageQueue;
 
 - (void).cxx_destruct;
 - (void)_saveDict:(id)arg1;

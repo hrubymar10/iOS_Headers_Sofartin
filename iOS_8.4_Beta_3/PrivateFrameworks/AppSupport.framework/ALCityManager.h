@@ -8,7 +8,7 @@
     struct sqlite3 { } *_localizedDb;
 }
 
-@property(assign,readonly) CPSearchMatcher * citySearchMatcher;
+@property (readonly) CPSearchMatcher *citySearchMatcher;
 
 + (id)_localeDictionaryFromSQLRow:(char **)arg1;
 + (struct __CFArray { }*)legacyCityForCity:(id)arg1;

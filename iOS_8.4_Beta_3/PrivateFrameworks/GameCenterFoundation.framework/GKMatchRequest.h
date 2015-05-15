@@ -8,17 +8,17 @@
     id _recipientResponseHandler;
 }
 
-@property(assign,readwrite) unsigned long long defaultNumberOfPlayers;
-@property(assign,retain) GKMatchRequestInternal * internal;
-@property(assign,copy) NSString * inviteMessage;
-@property(assign,copy) id inviteeResponseHandler;
-@property(assign,readwrite) unsigned long long maxPlayers;
-@property(assign,readwrite) unsigned long long minPlayers;
-@property(assign,readwrite) unsigned int playerAttributes;
-@property(assign,readwrite) unsigned long long playerGroup;
-@property(assign,retain) NSArray * playersToInvite;
-@property(assign,copy) id recipientResponseHandler;
-@property(assign,retain) NSArray * recipients;
+@property unsigned long long defaultNumberOfPlayers;
+@property (retain) GKMatchRequestInternal *internal;
+@property (copy) NSString *inviteMessage;
+@property (copy) id inviteeResponseHandler;
+@property unsigned long long maxPlayers;
+@property unsigned long long minPlayers;
+@property unsigned int playerAttributes;
+@property unsigned long long playerGroup;
+@property (retain) NSArray *playersToInvite;
+@property (copy) id recipientResponseHandler;
+@property (retain) NSArray *recipients;
 
 + (id)instanceMethodSignatureForSelector:(SEL)arg1;
 + (bool)instancesRespondToSelector:(SEL)arg1;

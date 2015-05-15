@@ -7,8 +7,8 @@
     unsigned long long _transactionType;
 }
 
-@property(assign,retain) NSData * record;
-@property(assign,readwrite) unsigned long long transactionType;
+@property (retain) NSData *record;
+@property unsigned long long transactionType;
 
 + (bool)supportsSecureCoding;
 + (id)toString:(unsigned long long)arg1;

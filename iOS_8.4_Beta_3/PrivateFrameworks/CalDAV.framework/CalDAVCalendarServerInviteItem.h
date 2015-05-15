@@ -6,7 +6,7 @@
     NSMutableSet *_users;
 }
 
-@property(assign,retain) NSMutableSet * users;
+@property (nonatomic, retain) NSMutableSet *users;
 
 - (void)addUser:(id)arg1;
 - (id)copyParseRules;

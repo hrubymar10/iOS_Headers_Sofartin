@@ -6,7 +6,7 @@
     SKUIViewElementText *_text;
 }
 
-@property(assign,readonly) SKUIViewElementText * text;
+@property (nonatomic, readonly) SKUIViewElementText *text;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

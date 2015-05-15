@@ -7,19 +7,19 @@
     bool _ignoreDismiss;
 }
 
-@property(assign,readonly) UIViewController * activeViewController;
-@property(assign,readwrite) long long backgroundStyle;
-@property(assign,readonly) long long backgroundStyleBlack;
-@property(assign,readonly) long long backgroundStyleClear;
-@property(assign,readonly) long long backgroundStyleCream;
-@property(assign,readonly) long long backgroundStyleDefault;
-@property(assign,readonly) long long backgroundStyleShare;
-@property(assign,readwrite) double contentHeight;
-@property(assign,readwrite) double contentWidth;
-@property(assign,retain) UIPopoverController * nativePopoverController;
-@property(assign,readonly) UIPopoverController * presentablePopoverController;
-@property(assign,readonly) SUScriptViewController * presentingViewController;
-@property(assign,retain) SUScriptViewController * viewController;
+@property (readonly) UIViewController *activeViewController;
+@property long long backgroundStyle;
+@property (readonly) long long backgroundStyleBlack;
+@property (readonly) long long backgroundStyleClear;
+@property (readonly) long long backgroundStyleCream;
+@property (readonly) long long backgroundStyleDefault;
+@property (readonly) long long backgroundStyleShare;
+@property double contentHeight;
+@property double contentWidth;
+@property (nonatomic, retain) UIPopoverController *nativePopoverController;
+@property (nonatomic, readonly) UIPopoverController *presentablePopoverController;
+@property (readonly) SUScriptViewController *presentingViewController;
+@property (retain) SUScriptViewController *viewController;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

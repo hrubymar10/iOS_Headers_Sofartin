@@ -8,10 +8,10 @@
     NSMutableArray *_ids;
 }
 
-@property(assign,retain) CLLatLonPolygon * exterior;
-@property(assign,retain) NSMutableArray * exteriors;
-@property(assign,readonly) bool hasExterior;
-@property(assign,retain) NSMutableArray * ids;
+@property (nonatomic, retain) CLLatLonPolygon *exterior;
+@property (nonatomic, retain) NSMutableArray *exteriors;
+@property (nonatomic, readonly) bool hasExterior;
+@property (nonatomic, retain) NSMutableArray *ids;
 
 - (void).cxx_destruct;
 - (void)addExteriors:(id)arg1;

@@ -9,9 +9,9 @@
     bool _wasInvalidSyncToken;
 }
 
-@property(assign,readonly) bool moreToSync;
-@property(assign,readonly) NSString * nextSyncToken;
-@property(assign,readonly) bool wasInvalidSyncToken;
+@property (nonatomic, readonly) bool moreToSync;
+@property (nonatomic, readonly) NSString *nextSyncToken;
+@property (nonatomic, readonly) bool wasInvalidSyncToken;
 
 - (id)copyDefaultParserForContentType:(id)arg1;
 - (void)dealloc;

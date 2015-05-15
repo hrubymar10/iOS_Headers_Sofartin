@@ -11,9 +11,9 @@
     UIToolbar *_toolbarView;
 }
 
-@property(assign,readwrite) <SKUISlideshowGalleryBarViewDelegate> * delegate;
-@property(assign,readwrite) unsigned long long numberOfImages;
-@property(assign,readwrite) unsigned long long selectedImageIndex;
+@property (nonatomic) <SKUISlideshowGalleryBarViewDelegate> *delegate;
+@property (nonatomic) unsigned long long numberOfImages;
+@property (nonatomic) unsigned long long selectedImageIndex;
 
 - (void).cxx_destruct;
 - (void)_handleTouch:(id)arg1 withEvent:(id)arg2;

@@ -4,9 +4,9 @@
 
 @interface BRCDirectoryItem : BRCLocalItem
 
-@property(assign,readonly) BRCAliasItem * asAlias;
-@property(assign,readonly) BRCDirectoryItem * asDirectory;
-@property(assign,readonly) BRCDocumentItem * asDocument;
+@property (nonatomic, readonly) BRCAliasItem *asAlias;
+@property (nonatomic, readonly) BRCDirectoryItem *asDirectory;
+@property (nonatomic, readonly) BRCDocumentItem *asDocument;
 
 - (bool)_deleteFromDB:(id)arg1 diffs:(unsigned long long)arg2 keepAliases:(bool)arg3;
 - (bool)_insertInDB:(id)arg1 dbRowID:(unsigned long long)arg2;

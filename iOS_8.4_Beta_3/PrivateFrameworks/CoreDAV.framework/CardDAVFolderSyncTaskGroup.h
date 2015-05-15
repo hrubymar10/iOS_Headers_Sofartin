@@ -6,7 +6,7 @@
     bool _isInitialSync;
 }
 
-@property(assign,readwrite) bool isInitialSync;
+@property (nonatomic) bool isInitialSync;
 
 - (Class)bulkChangeTaskClass;
 - (id)copyGetTaskWithURL:(id)arg1;

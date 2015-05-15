@@ -21,16 +21,16 @@
     double _visibleHeight;
 }
 
-@property(getter=_isApplyingInsets,assign,readonly) bool _applyingInsets;
-@property(assign,readonly) double _refreshControlHeight;
-@property(assign,readonly) double _snappingHeight;
-@property(assign,readonly) double _visibleHeight;
-@property(getter=_appliedInsets,assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } appliedInsets;
-@property(assign,retain) NSAttributedString * attributedTitle;
-@property(assign,readonly) int refreshControlState;
-@property(getter=isRefreshing,assign,readonly) bool refreshing;
-@property(assign,readonly) long long style;
-@property(assign,retain) UIColor * tintColor;
+@property (getter=_isApplyingInsets, nonatomic, readonly) bool _applyingInsets;
+@property (nonatomic, readonly) double _refreshControlHeight;
+@property (nonatomic, readonly) double _snappingHeight;
+@property (nonatomic, readonly) double _visibleHeight;
+@property (getter=_appliedInsets, nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } appliedInsets;
+@property (nonatomic, retain) NSAttributedString *attributedTitle;
+@property (nonatomic, readonly) int refreshControlState;
+@property (getter=isRefreshing, nonatomic, readonly) bool refreshing;
+@property (nonatomic, readonly) long long style;
+@property (nonatomic, retain) UIColor *tintColor;
 
 + (Class)_contentViewClassForStyle:(long long)arg1;
 + (id)_defaultColor;

@@ -8,9 +8,9 @@
     NSString *_inviteeShortName;
 }
 
-@property(assign,copy) NSString * inviteeCompositeName;
-@property(assign,copy) NSString * inviteeEmail;
-@property(assign,copy) NSString * inviteeShortName;
+@property (nonatomic, copy) NSString *inviteeCompositeName;
+@property (nonatomic, copy) NSString *inviteeEmail;
+@property (nonatomic, copy) NSString *inviteeShortName;
 
 - (void).cxx_destruct;
 - (id)inviteeCompositeName;

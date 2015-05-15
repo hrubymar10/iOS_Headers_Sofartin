@@ -7,8 +7,8 @@
     NSData *_playlistData;
 }
 
-@property(assign,readonly) NSDictionary * parsedPlaylistImportProperties;
-@property(assign,readonly) NSData * playlistData;
+@property (nonatomic, readonly) NSDictionary *parsedPlaylistImportProperties;
+@property (nonatomic, readonly) NSData *playlistData;
 
 - (void).cxx_destruct;
 - (id)_playlistPropertiesForLookupItem:(id)arg1;

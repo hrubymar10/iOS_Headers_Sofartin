@@ -7,12 +7,12 @@
     bool _isLocalizable;
 }
 
-@property(assign,copy) NSArray * citationRecords;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isLocalizable;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSArray *citationRecords;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isLocalizable;
+@property (readonly) Class superclass;
 
 + (bool)isValidBibliographyField:(id)arg1;
 

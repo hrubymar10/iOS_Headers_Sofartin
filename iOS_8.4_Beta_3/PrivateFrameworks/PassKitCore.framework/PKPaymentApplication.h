@@ -17,19 +17,19 @@
     bool _supportsInAppPayment;
 }
 
-@property(assign,copy) NSString * applicationIdentifier;
-@property(setter=setDPANIdentifier:,assign,copy) NSString * dpanIdentifier;
-@property(setter=setDPANSuffix:,assign,copy) NSString * dpanSuffix;
-@property(assign,readwrite) bool inAppPINRequired;
-@property(assign,copy) NSDecimalNumber * inAppPINRequiredAmount;
-@property(assign,copy) NSString * inAppPINRequiredCurrency;
-@property(assign,readwrite) long long paymentNetworkIdentifier;
-@property(setter=setSanitizedDPAN:,assign,copy) NSString * sanitizedDPAN;
-@property(assign,copy) NSString * secureElementIdentifier;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) NSString * stateAsString;
-@property(assign,readwrite) bool supportsContactlessPayment;
-@property(assign,readwrite) bool supportsInAppPayment;
+@property (nonatomic, copy) NSString *applicationIdentifier;
+@property (setter=setDPANIdentifier:, nonatomic, copy) NSString *dpanIdentifier;
+@property (setter=setDPANSuffix:, nonatomic, copy) NSString *dpanSuffix;
+@property (nonatomic) bool inAppPINRequired;
+@property (nonatomic, copy) NSDecimalNumber *inAppPINRequiredAmount;
+@property (nonatomic, copy) NSString *inAppPINRequiredCurrency;
+@property (nonatomic) long long paymentNetworkIdentifier;
+@property (setter=setSanitizedDPAN:, nonatomic, copy) NSString *sanitizedDPAN;
+@property (nonatomic, copy) NSString *secureElementIdentifier;
+@property (nonatomic) long long state;
+@property (nonatomic, readonly) NSString *stateAsString;
+@property (nonatomic) bool supportsContactlessPayment;
+@property (nonatomic) bool supportsInAppPayment;
 
 + (bool)supportsSecureCoding;
 

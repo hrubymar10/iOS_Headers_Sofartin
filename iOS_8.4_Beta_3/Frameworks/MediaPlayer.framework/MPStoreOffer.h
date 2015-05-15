@@ -12,21 +12,21 @@
     MPStoreOffer *_regularPriceOffer;
 }
 
-@property(assign,copy) NSString * actionDisplayTitle;
-@property(assign,copy) NSString * buyParameters;
-@property(assign,readonly) long long buyType;
-@property(assign,copy) NSString * displayPrice;
-@property(assign,copy) NSString * displayTitle;
-@property(assign,readonly) unsigned long long downloadSize;
-@property(assign,readonly) unsigned long long entityPersistentID;
-@property(assign,copy) NSString * entityTitle;
-@property(assign,readonly) long long entityType;
-@property(assign,readonly) long long passType;
-@property(assign,readonly) double previewDuration;
-@property(assign,copy) NSURL * previewURL;
-@property(assign,readonly) float price;
-@property(assign,copy) NSString * regularPriceDisplayPrice;
-@property(assign,readonly) bool requiresConfirmation;
+@property (nonatomic, readonly, copy) NSString *actionDisplayTitle;
+@property (nonatomic, readonly, copy) NSString *buyParameters;
+@property (nonatomic, readonly) long long buyType;
+@property (nonatomic, readonly, copy) NSString *displayPrice;
+@property (nonatomic, readonly, copy) NSString *displayTitle;
+@property (nonatomic, readonly) unsigned long long downloadSize;
+@property (nonatomic, readonly) unsigned long long entityPersistentID;
+@property (nonatomic, readonly, copy) NSString *entityTitle;
+@property (nonatomic, readonly) long long entityType;
+@property (nonatomic, readonly) long long passType;
+@property (nonatomic, readonly) double previewDuration;
+@property (nonatomic, readonly, copy) NSURL *previewURL;
+@property (nonatomic, readonly) float price;
+@property (nonatomic, readonly, copy) NSString *regularPriceDisplayPrice;
+@property (nonatomic, readonly) bool requiresConfirmation;
 
 + (id)_priceForOfferDictionary:(id)arg1;
 + (long long)bestOfferVariantInOfferDictionaries:(id)arg1 withPreferredVariant:(long long)arg2;

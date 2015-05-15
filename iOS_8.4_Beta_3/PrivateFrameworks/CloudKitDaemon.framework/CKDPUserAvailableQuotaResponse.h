@@ -9,8 +9,8 @@
     unsigned long long _storageAvailableBytes;
 }
 
-@property(assign,readwrite) bool hasStorageAvailableBytes;
-@property(assign,readwrite) unsigned long long storageAvailableBytes;
+@property (nonatomic) bool hasStorageAvailableBytes;
+@property (nonatomic) unsigned long long storageAvailableBytes;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

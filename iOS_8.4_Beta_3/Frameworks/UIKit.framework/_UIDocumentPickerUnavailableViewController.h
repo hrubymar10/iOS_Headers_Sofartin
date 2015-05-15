@@ -16,17 +16,17 @@
     NSLayoutConstraint *_topConstraint;
 }
 
-@property(assign,retain) UIButton * button;
-@property(assign,retain) NSURL * buttonURL;
-@property(assign,retain) NSLayoutConstraint * imageToTitleConstraint;
-@property(assign,retain) UIImageView * leadImageView;
-@property(assign,retain) UILabel * textLabel;
-@property(assign,retain) UILabel * textLabel2;
-@property(assign,retain) NSLayoutConstraint * textToButtonConstraint;
-@property(assign,retain) NSLayoutConstraint * textToTextConstraint;
-@property(assign,retain) UILabel * titleLabel;
-@property(assign,retain) NSLayoutConstraint * titleToTextConstraint;
-@property(assign,retain) NSLayoutConstraint * topConstraint;
+@property (nonatomic, retain) UIButton *button;
+@property (nonatomic, retain) NSURL *buttonURL;
+@property (nonatomic, retain) NSLayoutConstraint *imageToTitleConstraint;
+@property (nonatomic, retain) UIImageView *leadImageView;
+@property (nonatomic, retain) UILabel *textLabel;
+@property (nonatomic, retain) UILabel *textLabel2;
+@property (nonatomic, retain) NSLayoutConstraint *textToButtonConstraint;
+@property (nonatomic, retain) NSLayoutConstraint *textToTextConstraint;
+@property (nonatomic, retain) UILabel *titleLabel;
+@property (nonatomic, retain) NSLayoutConstraint *titleToTextConstraint;
+@property (nonatomic, retain) NSLayoutConstraint *topConstraint;
 
 - (id)_buttonBackgroundImageForState:(unsigned long long)arg1 traits:(id)arg2;
 - (void)_buttonPressed:(id)arg1;

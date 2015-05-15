@@ -4,9 +4,9 @@
 
 @interface GEOTileLoader : NSObject
 
-@property(assign,readonly) int diskHits;
-@property(assign,readonly) int memoryHits;
-@property(assign,readonly) int networkHits;
+@property (nonatomic, readonly) int diskHits;
+@property (nonatomic, readonly) int memoryHits;
+@property (nonatomic, readonly) int networkHits;
 
 + (id)alloc;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;

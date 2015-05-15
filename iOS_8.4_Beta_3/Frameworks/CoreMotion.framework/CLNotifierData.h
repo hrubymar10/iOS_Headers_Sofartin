@@ -7,8 +7,8 @@
     id _destructor;
 }
 
-@property(assign,readwrite) void* data;
-@property(assign,copy) id destructor;
+@property (nonatomic) void*data;
+@property (nonatomic, copy) id destructor;
 
 - (void).cxx_destruct;
 - (void*)data;

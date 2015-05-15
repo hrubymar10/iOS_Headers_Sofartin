@@ -6,11 +6,11 @@
     long long __operation;
 }
 
-@property(setter=_setOperation:,assign,readwrite) long long _operation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (setter=_setOperation:, nonatomic) long long _operation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (long long)_operation;
 - (void)_setOperation:(long long)arg1;

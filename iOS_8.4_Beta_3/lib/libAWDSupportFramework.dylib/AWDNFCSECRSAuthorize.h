@@ -19,20 +19,20 @@
     NSData *_uuidReference;
 }
 
-@property(assign,readwrite) bool activated;
-@property(assign,retain) NSData * aid;
-@property(assign,readwrite) bool hasActivated;
-@property(assign,readonly) bool hasAid;
-@property(assign,readwrite) bool hasMethod;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,readwrite) bool hasTimeDeltaFromReference;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readonly) bool hasUuidReference;
-@property(assign,readwrite) unsigned int method;
-@property(assign,readwrite) unsigned int status;
-@property(assign,readwrite) unsigned long long timeDeltaFromReference;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,retain) NSData * uuidReference;
+@property (nonatomic) bool activated;
+@property (nonatomic, retain) NSData *aid;
+@property (nonatomic) bool hasActivated;
+@property (nonatomic, readonly) bool hasAid;
+@property (nonatomic) bool hasMethod;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic) bool hasTimeDeltaFromReference;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, readonly) bool hasUuidReference;
+@property (nonatomic) unsigned int method;
+@property (nonatomic) unsigned int status;
+@property (nonatomic) unsigned long long timeDeltaFromReference;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic, retain) NSData *uuidReference;
 
 - (bool)activated;
 - (id)aid;

@@ -13,12 +13,12 @@
     bool _wantsRepresentativeMediaEntity;
 }
 
-@property(assign,copy) MPUContentItemIdentifierCollection * MPU_contentItemIdentifierCollection;
-@property(getter=isCompilation,assign,readonly) bool compilation;
-@property(assign,readonly) bool hasCompleteStoreItemMetadata;
-@property(assign,copy) NSString * storeID;
-@property(assign,copy) MPStoreItemMetadata * storeItemMetadata;
-@property(getter=isStoreRestricted,assign,readonly) bool storeRestricted;
+@property (nonatomic, readonly, copy) MPUContentItemIdentifierCollection *MPU_contentItemIdentifierCollection;
+@property (getter=isCompilation, nonatomic, readonly) bool compilation;
+@property (nonatomic, readonly) bool hasCompleteStoreItemMetadata;
+@property (nonatomic, readonly, copy) NSString *storeID;
+@property (nonatomic, readonly, copy) MPStoreItemMetadata *storeItemMetadata;
+@property (getter=isStoreRestricted, nonatomic, readonly) bool storeRestricted;
 
 + (id)mediaLibrary;
 

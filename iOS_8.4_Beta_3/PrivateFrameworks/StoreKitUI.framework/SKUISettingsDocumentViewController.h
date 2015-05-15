@@ -15,10 +15,10 @@
     SKUIViewElementTextLayoutCache *_textLayoutCache;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (double)_heightThatFitsWidth:(double)arg1 withSettingsHeaderFooterDescription:(id)arg2 context:(id)arg3;
 + (id)_settingsGroupsFromTemplateElement:(id)arg1 withDelegate:(id)arg2 clientContext:(id)arg3;

@@ -13,12 +13,12 @@
     int _stateType;
 }
 
-@property(assign,readwrite) bool hasNewValue;
-@property(assign,readwrite) bool hasOldValue;
-@property(assign,readwrite) bool hasStateType;
-@property(assign,readwrite) int newValue;
-@property(assign,readwrite) int oldValue;
-@property(assign,readwrite) int stateType;
+@property (nonatomic) bool hasNewValue;
+@property (nonatomic) bool hasOldValue;
+@property (nonatomic) bool hasStateType;
+@property (nonatomic) int newValue;
+@property (nonatomic) int oldValue;
+@property (nonatomic) int stateType;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

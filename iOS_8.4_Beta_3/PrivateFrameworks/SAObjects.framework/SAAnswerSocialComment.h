@@ -4,13 +4,13 @@
 
 @interface SAAnswerSocialComment : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * author;
-@property(assign,copy) NSDate * date;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
+@property (nonatomic, copy) NSString *author;
+@property (nonatomic, copy) NSDate *date;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
 
 + (id)socialComment;
 + (id)socialCommentWithDictionary:(id)arg1 context:(id)arg2;

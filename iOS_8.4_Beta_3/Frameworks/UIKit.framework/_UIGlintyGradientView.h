@@ -4,7 +4,7 @@
 
 @interface _UIGlintyGradientView : UIView
 
-@property(assign,readonly) CAGradientLayer * gradientLayer;
+@property (nonatomic, readonly) CAGradientLayer *gradientLayer;
 
 + (Class)layerClass;
 

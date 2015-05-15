@@ -12,8 +12,8 @@
     SKUITextBoxView *_textBoxView;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textBoxInsets;
-@property(assign,readonly) SKUITextBoxView * textBoxView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textBoxInsets;
+@property (nonatomic, readonly) SKUITextBoxView *textBoxView;
 
 - (void).cxx_destruct;
 - (id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2;

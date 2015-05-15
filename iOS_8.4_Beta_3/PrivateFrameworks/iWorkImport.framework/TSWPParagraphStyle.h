@@ -8,7 +8,7 @@
     struct __CFDictionary { } *_styleCache;
 }
 
-@property(assign,readonly) NSString * presetKind;
+@property (nonatomic, readonly) NSString *presetKind;
 
 + (float)defaultFloatValueForProperty:(int)arg1;
 + (int)defaultIntValueForProperty:(int)arg1;

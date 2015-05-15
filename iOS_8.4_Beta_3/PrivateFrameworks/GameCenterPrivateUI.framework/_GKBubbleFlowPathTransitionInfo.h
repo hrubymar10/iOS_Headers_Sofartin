@@ -49,14 +49,14 @@
     double _startTime;
 }
 
-@property(assign,retain) NSDictionary * auxiliaryInfo;
-@property(assign,readwrite) GKBubbleSet * bubbles;
-@property(assign,readwrite) bool couldUseFallbackAnimator;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) UIView * effectiveView;
-@property(assign,readwrite) long long focusBubbleType;
-@property(assign,readwrite) long long newlyVisibleBubbles;
-@property(assign,readwrite) double startTime;
+@property (nonatomic, retain) NSDictionary *auxiliaryInfo;
+@property (nonatomic) GKBubbleSet *bubbles;
+@property (nonatomic) bool couldUseFallbackAnimator;
+@property (nonatomic) double duration;
+@property (nonatomic) UIView *effectiveView;
+@property (nonatomic) long long focusBubbleType;
+@property (nonatomic) long long newlyVisibleBubbles;
+@property (nonatomic) double startTime;
 
 - (id)auxiliaryInfo;
 - (id)bubbles;

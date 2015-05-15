@@ -26,7 +26,7 @@
     NSArray *_to;
 }
 
-@property(assign,retain) MFMimePart * parentPart;
+@property (nonatomic, retain) MFMimePart *parentPart;
 
 + (Class)dataMessageStoreToUse;
 + (id)messageWithRFC822Data:(id)arg1;

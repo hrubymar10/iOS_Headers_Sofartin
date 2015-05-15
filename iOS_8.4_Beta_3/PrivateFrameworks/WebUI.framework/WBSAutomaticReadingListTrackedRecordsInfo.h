@@ -7,8 +7,8 @@
     WBSAutomaticReadingListRecordRange *_rangeOfTrackedRecords;
 }
 
-@property(assign,copy) NSArray * items;
-@property(assign,copy) WBSAutomaticReadingListRecordRange * rangeOfTrackedRecords;
+@property (nonatomic, copy) NSArray *items;
+@property (nonatomic, copy) WBSAutomaticReadingListRecordRange *rangeOfTrackedRecords;
 
 - (void).cxx_destruct;
 - (id)items;

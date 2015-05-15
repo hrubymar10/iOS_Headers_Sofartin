@@ -10,7 +10,7 @@
     double mValueInterval;
 }
 
-@property(assign,readonly) double valueInterval;
+@property (nonatomic, readonly) double valueInterval;
 
 - (void)dealloc;
 - (void)handleValue:(double)arg1 maxValue:(double)arg2 isIndeterminate:(bool)arg3;

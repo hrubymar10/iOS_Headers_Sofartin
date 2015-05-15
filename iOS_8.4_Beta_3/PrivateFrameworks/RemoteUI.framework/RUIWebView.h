@@ -9,13 +9,13 @@
     UIWebView *_webView;
 }
 
-@property(assign,retain) NSURL * baseURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * html;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSURL *baseURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) id delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *html;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)baseURL;

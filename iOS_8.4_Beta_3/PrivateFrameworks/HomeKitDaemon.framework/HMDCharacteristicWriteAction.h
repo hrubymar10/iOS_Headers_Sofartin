@@ -9,10 +9,10 @@
     NSUUID *_uuid;
 }
 
-@property(assign,readonly) HMDActionSet * actionSet;
-@property(assign,readonly) HMDCharacteristic * characteristic;
-@property(assign,copy) id targetValue;
-@property(assign,copy) NSUUID * uuid;
+@property (nonatomic, readonly) HMDActionSet *actionSet;
+@property (nonatomic, readonly) HMDCharacteristic *characteristic;
+@property (nonatomic, copy) id targetValue;
+@property (nonatomic, readonly, copy) NSUUID *uuid;
 
 + (bool)supportsSecureCoding;
 

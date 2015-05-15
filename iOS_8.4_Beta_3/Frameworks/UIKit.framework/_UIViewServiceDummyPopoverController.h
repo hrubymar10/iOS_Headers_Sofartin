@@ -6,7 +6,7 @@
     <_UIViewServiceDummyPopoverControllerDelegate> *_dummyPopoverControllerDelegate;
 }
 
-@property(assign,retain) <_UIViewServiceDummyPopoverControllerDelegate> * dummyPopoverControllerDelegate;
+@property (nonatomic, retain) <_UIViewServiceDummyPopoverControllerDelegate> *dummyPopoverControllerDelegate;
 
 + (Class)_popoverViewClass;
 

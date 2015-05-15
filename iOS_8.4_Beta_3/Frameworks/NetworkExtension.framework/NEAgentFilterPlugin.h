@@ -33,16 +33,16 @@
     struct NESocketContentFilter_s { } *_socketContentFilter;
 }
 
-@property(assign,readonly) bool builtInPlugin;
-@property(assign,retain) NSObject<OS_xpc_object> * clientListener;
-@property(assign,retain) NSUUID * configID;
-@property(assign,readwrite) int outstandingSetDataOps;
-@property(assign,readwrite) int outstandingSetGlobalDataOps;
-@property(assign,readwrite) bool pluginInitialized;
-@property(assign,retain) NEPluginPreferences * pluginPrefs;
-@property(assign,readonly) NSString * pluginType;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) NEAgentServer * server;
+@property (readonly) bool builtInPlugin;
+@property (retain) NSObject<OS_xpc_object> *clientListener;
+@property (retain) NSUUID *configID;
+@property int outstandingSetDataOps;
+@property int outstandingSetGlobalDataOps;
+@property bool pluginInitialized;
+@property (retain) NEPluginPreferences *pluginPrefs;
+@property (readonly) NSString *pluginType;
+@property (readonly) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) NEAgentServer *server;
 
 - (void).cxx_destruct;
 - (void)acceptNewClientConnection:(id)arg1;

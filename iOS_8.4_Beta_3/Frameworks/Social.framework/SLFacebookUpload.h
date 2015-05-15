@@ -9,10 +9,10 @@
     long long _uploadType;
 }
 
-@property(assign,readwrite) unsigned long long totalBytes;
-@property(assign,readwrite) unsigned long long transferredBytes;
-@property(assign,retain) NSString * uploadID;
-@property(assign,readwrite) long long uploadType;
+@property (nonatomic) unsigned long long totalBytes;
+@property (nonatomic) unsigned long long transferredBytes;
+@property (nonatomic, retain) NSString *uploadID;
+@property (nonatomic) long long uploadType;
 
 + (bool)supportsSecureCoding;
 

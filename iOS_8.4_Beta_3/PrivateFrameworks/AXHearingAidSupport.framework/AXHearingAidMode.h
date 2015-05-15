@@ -11,12 +11,12 @@
     int syncAttempts;
 }
 
-@property(assign,readwrite) long long category;
-@property(assign,readwrite) int ear;
-@property(assign,readwrite) unsigned char index;
-@property(assign,readwrite) bool isSelected;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) int syncAttempts;
+@property (nonatomic) long long category;
+@property (nonatomic) int ear;
+@property (nonatomic) unsigned char index;
+@property (nonatomic) bool isSelected;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) int syncAttempts;
 
 + (bool)supportsSecureCoding;
 

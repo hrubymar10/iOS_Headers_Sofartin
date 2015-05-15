@@ -11,11 +11,11 @@
     void *_query;
 }
 
-@property(assign,readonly) float blendFactor;
-@property(assign,readonly) bool hasTargetStyle;
-@property(assign,readwrite) void* query;
-@property(assign,readonly) NSString * sourceName;
-@property(assign,readonly) NSString * targetName;
+@property (nonatomic, readonly) float blendFactor;
+@property (nonatomic, readonly) bool hasTargetStyle;
+@property (nonatomic) void*query;
+@property (nonatomic, readonly) NSString *sourceName;
+@property (nonatomic, readonly) NSString *targetName;
 
 - (id).cxx_construct;
 - (float)blendFactor;

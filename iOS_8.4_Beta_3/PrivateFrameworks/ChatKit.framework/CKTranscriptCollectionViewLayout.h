@@ -33,19 +33,19 @@
     } _visibleBounds;
 }
 
-@property(assign,readwrite) double anchorYPosition;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } contentSize;
-@property(assign,retain) CADisplayLink * displayLink;
-@property(assign,readwrite) bool easingUp;
-@property(assign,readwrite) bool hasLoadMore;
-@property(getter=isHoldingBoundsInvalidation,assign,readwrite) bool holdingBoundsInvalidation;
-@property(assign,readwrite) bool isResting;
-@property(assign,copy) NSArray * layoutAttributes;
-@property(assign,readwrite) double prevTimestamp;
-@property(assign,readwrite) bool shouldDisplayLinkInvalidateLayout;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } targetContentOffset;
-@property(getter=isUsingInitialLayoutAttributesForRotation,assign,readwrite) bool useInitialLayoutAttributesForRotation;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } visibleBounds;
+@property (nonatomic) double anchorYPosition;
+@property (nonatomic) struct CGSize { double x1; double x2; } contentSize;
+@property (nonatomic, retain) CADisplayLink *displayLink;
+@property (nonatomic) bool easingUp;
+@property (nonatomic) bool hasLoadMore;
+@property (getter=isHoldingBoundsInvalidation, nonatomic) bool holdingBoundsInvalidation;
+@property (nonatomic) bool isResting;
+@property (nonatomic, copy) NSArray *layoutAttributes;
+@property (nonatomic) double prevTimestamp;
+@property (nonatomic) bool shouldDisplayLinkInvalidateLayout;
+@property (nonatomic) struct CGPoint { double x1; double x2; } targetContentOffset;
+@property (getter=isUsingInitialLayoutAttributesForRotation, nonatomic) bool useInitialLayoutAttributesForRotation;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } visibleBounds;
 
 + (Class)layoutAttributesClass;
 

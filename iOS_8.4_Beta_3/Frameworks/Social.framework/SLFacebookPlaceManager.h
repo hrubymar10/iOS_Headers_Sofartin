@@ -17,14 +17,14 @@
     NSHTTPURLResponse *_urlResponse;
 }
 
-@property(assign,retain) ACAccount * account;
-@property(assign,retain) CLLocation * currentLocation;
-@property(assign,readonly) double currentLocationAccuracy;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) NSObject<SLPlaceDataSourceDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (retain) ACAccount *account;
+@property (retain) CLLocation *currentLocation;
+@property (readonly) double currentLocationAccuracy;
+@property (readonly, copy) NSString *debugDescription;
+@property NSObject<SLPlaceDataSourceDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_handleResponse:(id)arg1 error:(id)arg2;

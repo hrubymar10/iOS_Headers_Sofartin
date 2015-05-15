@@ -43,8 +43,8 @@
     TSCH3DScene *mScene;
 }
 
-@property(assign,readonly) TSCHChartInfo * info;
-@property(assign,readonly) TSCH3DScene * scene;
+@property (nonatomic, readonly) TSCHChartInfo *info;
+@property (nonatomic, readonly) TSCH3DScene *scene;
 
 + (id)positionerWithInfo:(id)arg1 scene:(id)arg2;
 

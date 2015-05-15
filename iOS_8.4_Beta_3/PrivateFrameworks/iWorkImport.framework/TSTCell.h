@@ -108,7 +108,7 @@
     } mPrivate;
 }
 
-@property(assign,readonly) TSULocale * locale;
+@property (nonatomic, readonly) TSULocale *locale;
 
 - (id).cxx_construct;
 - (void)applyFormulaResult:(const struct TSCEValue { unsigned long long x1[80]; int x2; }*)arg1;

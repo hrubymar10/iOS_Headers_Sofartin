@@ -6,7 +6,7 @@
     CALayer *_imageLayer;
 }
 
-@property(assign,readwrite) double yaw;
+@property (nonatomic) double yaw;
 
 - (void).cxx_destruct;
 - (void)dealloc;

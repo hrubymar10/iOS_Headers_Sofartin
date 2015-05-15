@@ -8,7 +8,7 @@
     UIView *_background;
 }
 
-@property(assign,readwrite) bool accountHasUnsafeDomain;
+@property (nonatomic) bool accountHasUnsafeDomain;
 
 - (id)_accountLabel;
 - (void)_setBackgroundVisible:(bool)arg1 animated:(bool)arg2;

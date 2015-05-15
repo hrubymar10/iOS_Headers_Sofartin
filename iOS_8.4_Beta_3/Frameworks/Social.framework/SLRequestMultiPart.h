@@ -11,12 +11,12 @@
     NSString *_uniqueIdentifier;
 }
 
-@property(assign,copy) NSString * filename;
-@property(assign,copy) NSString * multiPartBoundary;
-@property(assign,copy) NSString * name;
-@property(assign,retain) NSData * payload;
-@property(assign,copy) NSString * type;
-@property(assign,readonly) NSString * uniqueIdentifier;
+@property (nonatomic, copy) NSString *filename;
+@property (nonatomic, copy) NSString *multiPartBoundary;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) NSData *payload;
+@property (nonatomic, copy) NSString *type;
+@property (nonatomic, readonly) NSString *uniqueIdentifier;
 
 + (id)multiPartWithName:(id)arg1 payload:(id)arg2 type:(id)arg3 multiPartBoundary:(id)arg4;
 

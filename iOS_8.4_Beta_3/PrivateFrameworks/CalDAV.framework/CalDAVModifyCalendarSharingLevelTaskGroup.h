@@ -9,14 +9,14 @@
     NSURL *_url;
 }
 
-@property(assign,readwrite) int action;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSURL * publishedURL;
-@property(assign,readwrite) int state;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSURL * url;
+@property (nonatomic) int action;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSURL *publishedURL;
+@property (nonatomic) int state;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSURL *url;
 
 - (int)action;
 - (void)dealloc;

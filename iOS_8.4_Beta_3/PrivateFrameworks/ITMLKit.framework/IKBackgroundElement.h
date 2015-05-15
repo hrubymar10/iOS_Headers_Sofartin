@@ -4,10 +4,10 @@
 
 @interface IKBackgroundElement : IKViewElement
 
-@property(assign,retain) IKAudioElement * audio;
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,retain) NSArray * images;
-@property(assign,readonly) double transitionInterval;
+@property (nonatomic, readonly, retain) IKAudioElement *audio;
+@property (nonatomic, readonly, retain) UIColor *backgroundColor;
+@property (nonatomic, readonly, retain) NSArray *images;
+@property (nonatomic, readonly) double transitionInterval;
 
 - (id)audio;
 - (id)backgroundColor;

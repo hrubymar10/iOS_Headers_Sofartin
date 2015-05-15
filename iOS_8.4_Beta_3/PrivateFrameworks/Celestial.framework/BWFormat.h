@@ -4,8 +4,8 @@
 
 @interface BWFormat : NSObject
 
-@property(assign,readonly) struct opaqueCMFormatDescription { }* formatDescription;
-@property(assign,readonly) unsigned int mediaType;
+@property (readonly) struct opaqueCMFormatDescription { }*formatDescription;
+@property (readonly) unsigned int mediaType;
 
 + (id)formatByResolvingRequirements:(id)arg1;
 

@@ -15,14 +15,14 @@
     NSNumber *inputUseCube;
 }
 
-@property(assign,retain) NSNumber * inputBlack;
-@property(assign,retain) NSNumber * inputBrightness;
-@property(assign,retain) NSNumber * inputContrast;
-@property(assign,retain) NSNumber * inputExposure;
-@property(assign,retain) NSNumber * inputHighlights;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputShadows;
-@property(assign,retain) NSNumber * inputUseCube;
+@property (nonatomic, retain) NSNumber *inputBlack;
+@property (nonatomic, retain) NSNumber *inputBrightness;
+@property (nonatomic, retain) NSNumber *inputContrast;
+@property (nonatomic, retain) NSNumber *inputExposure;
+@property (nonatomic, retain) NSNumber *inputHighlights;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputShadows;
+@property (nonatomic, retain) NSNumber *inputUseCube;
 
 + (id)customAttributes;
 

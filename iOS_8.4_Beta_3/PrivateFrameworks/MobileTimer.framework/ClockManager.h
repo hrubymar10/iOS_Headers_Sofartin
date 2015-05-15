@@ -11,11 +11,11 @@
     bool runningInSpringBoard;
 }
 
-@property(getter=isIgnoringNotificationPostRequests,assign,readwrite) bool ignoringNotificationPostRequests;
-@property(getter=isRunningInAssistantPlugin,assign,readwrite) bool runningInAssistantPlugin;
-@property(getter=isRunningInSpringBoard,assign,readwrite) bool runningInSpringBoard;
-@property(assign,readonly) NSArray * scheduledLocalNotificationsCache;
-@property(assign,readonly) ObjectUpdates * updatesToLocalNotificationsCache;
+@property (getter=isIgnoringNotificationPostRequests, nonatomic) bool ignoringNotificationPostRequests;
+@property (getter=isRunningInAssistantPlugin, nonatomic) bool runningInAssistantPlugin;
+@property (getter=isRunningInSpringBoard, nonatomic) bool runningInSpringBoard;
+@property (nonatomic, readonly) NSArray *scheduledLocalNotificationsCache;
+@property (nonatomic, readonly) ObjectUpdates *updatesToLocalNotificationsCache;
 
 + (void)loadUserPreferences;
 + (void)saveAndNotifyForUserPreferences:(bool)arg1 localNotifications:(bool)arg2;

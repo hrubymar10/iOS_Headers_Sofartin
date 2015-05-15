@@ -7,10 +7,10 @@
     TSWPStorage *_parentStorage;
 }
 
-@property(assign,readonly) int attributeArrayKind;
-@property(assign,readwrite) TSWPStorage * parentStorage;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,readonly) int styleAttributeArrayKind;
+@property (nonatomic, readonly) int attributeArrayKind;
+@property (nonatomic) TSWPStorage *parentStorage;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic, readonly) int styleAttributeArrayKind;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)defaultFieldStyleIdentifier;

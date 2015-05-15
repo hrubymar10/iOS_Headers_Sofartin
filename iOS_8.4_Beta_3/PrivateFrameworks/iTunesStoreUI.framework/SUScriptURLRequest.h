@@ -6,9 +6,9 @@
     SSMutableURLRequestProperties *_requestProperties;
 }
 
-@property(assign,copy) NSString * URLBagKey;
-@property(assign,copy) id URLs;
-@property(assign,copy) NSNumber * timeoutInterval;
+@property (copy) NSString *URLBagKey;
+@property (copy) id URLs;
+@property (copy) NSNumber *timeoutInterval;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

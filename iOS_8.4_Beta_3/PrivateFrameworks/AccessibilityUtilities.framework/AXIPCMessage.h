@@ -11,11 +11,11 @@
     NSDictionary *_payload;
 }
 
-@property(assign,readwrite) struct { unsigned int x1[8]; } auditToken;
-@property(assign,readwrite) unsigned int clientPort;
-@property(assign,readwrite) int key;
-@property(assign,retain) NSDictionary * payload;
-@property(assign,readonly) NSString * senderBundleId;
+@property (nonatomic) struct { unsigned int x1[8]; } auditToken;
+@property (nonatomic) unsigned int clientPort;
+@property (nonatomic) int key;
+@property (nonatomic, retain) NSDictionary *payload;
+@property (nonatomic, readonly) NSString *senderBundleId;
 
 + (id)archivedMessageFromData:(id)arg1;
 + (bool)supportsSecureCoding;

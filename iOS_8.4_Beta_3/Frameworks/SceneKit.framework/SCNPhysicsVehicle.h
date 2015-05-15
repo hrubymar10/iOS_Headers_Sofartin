@@ -10,9 +10,9 @@
     SCNPhysicsWorld *_world;
 }
 
-@property(assign,readonly) SCNPhysicsBody * chassisBody;
-@property(assign,readonly) double speedInKilometersPerHour;
-@property(assign,readonly) NSArray * wheels;
+@property (nonatomic, readonly) SCNPhysicsBody *chassisBody;
+@property (nonatomic, readonly) double speedInKilometersPerHour;
+@property (nonatomic, readonly) NSArray *wheels;
 
 + (id)SCNJSExportProtocol;
 + (bool)supportsSecureCoding;

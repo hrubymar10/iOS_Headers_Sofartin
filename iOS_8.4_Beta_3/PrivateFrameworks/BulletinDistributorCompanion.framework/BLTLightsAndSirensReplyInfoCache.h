@@ -8,9 +8,9 @@
     NSDate *_timeToCheck;
 }
 
-@property(assign,retain) NSMutableDictionary * localReplyInfo;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSDate * timeToCheck;
+@property (nonatomic, retain) NSMutableDictionary *localReplyInfo;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSDate *timeToCheck;
 
 + (id)sharedReplyCache;
 

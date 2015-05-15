@@ -13,11 +13,11 @@
     RadioStationMatchContext *_stationMatchContext;
 }
 
-@property(assign,retain) SSVPlaybackLease * playbackLease;
-@property(assign,copy) id preparedBlock;
-@property(assign,copy) RadioRequestContext * requestContext;
-@property(assign,retain) RadioStation * station;
-@property(assign,retain) RadioStationMatchContext * stationMatchContext;
+@property (retain) SSVPlaybackLease *playbackLease;
+@property (copy) id preparedBlock;
+@property (copy) RadioRequestContext *requestContext;
+@property (retain) RadioStation *station;
+@property (retain) RadioStationMatchContext *stationMatchContext;
 
 - (void).cxx_destruct;
 - (void)cancel;

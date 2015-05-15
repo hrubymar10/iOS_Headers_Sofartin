@@ -15,12 +15,12 @@
     NSMutableSet *_readers;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ATAssetLinkDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isOpen,assign,readonly) bool open;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ATAssetLinkDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isOpen, nonatomic, readonly) bool open;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_finishAsset:(id)arg1 withError:(id)arg2;

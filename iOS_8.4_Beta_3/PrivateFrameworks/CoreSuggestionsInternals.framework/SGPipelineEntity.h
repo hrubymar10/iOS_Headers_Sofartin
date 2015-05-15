@@ -36,23 +36,23 @@
     NSIndexSet *_plainTextTabularRegions;
 }
 
-@property(assign,readonly) NSArray * addresses;
-@property(assign,readonly) NSString * authorEmail;
-@property(assign,readwrite) struct __DDResult { }* dataDetectorsSignature;
-@property(assign,readonly) NSArray * emailAddresses;
-@property(assign,readonly) NSMutableDictionary * emailToCanonicalEmailCache;
-@property(assign,readonly) NSArray * enrichments;
-@property(getter=hasFullDownloadBeenRequested,assign,readonly) bool fullDownloadRequested;
-@property(assign,readonly) NSArray * headers;
-@property(assign,readonly) unsigned long long* htmlOffsets;
-@property(assign,readonly) struct { struct { unsigned short x_1_1_1; unsigned short x_1_1_2; } x1; bool x2; bool x3; bool x4; bool x5; bool x6; }* inhumanFeatures;
-@property(assign,readonly) NSArray * phoneNumbers;
-@property(assign,readonly) NSString * plainTextContent;
-@property(assign,retain) NSArray * plainTextDetectedData;
-@property(assign,readonly) NSArray * plainTextLines;
-@property(assign,retain) NSIndexSet * plainTextQuotedRegions;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } plainTextSigRange;
-@property(assign,retain) NSIndexSet * plainTextTabularRegions;
+@property (nonatomic, readonly) NSArray *addresses;
+@property (nonatomic, readonly) NSString *authorEmail;
+@property (nonatomic) struct __DDResult { }*dataDetectorsSignature;
+@property (nonatomic, readonly) NSArray *emailAddresses;
+@property (nonatomic, readonly) NSMutableDictionary *emailToCanonicalEmailCache;
+@property (nonatomic, readonly) NSArray *enrichments;
+@property (getter=hasFullDownloadBeenRequested, readonly) bool fullDownloadRequested;
+@property (nonatomic, readonly) NSArray *headers;
+@property (nonatomic, readonly) unsigned long long*htmlOffsets;
+@property (nonatomic, readonly) struct { struct { unsigned short x_1_1_1; unsigned short x_1_1_2; } x1; bool x2; bool x3; bool x4; bool x5; bool x6; }*inhumanFeatures;
+@property (nonatomic, readonly) NSArray *phoneNumbers;
+@property (nonatomic, readonly) NSString *plainTextContent;
+@property (nonatomic, retain) NSArray *plainTextDetectedData;
+@property (nonatomic, readonly) NSArray *plainTextLines;
+@property (nonatomic, retain) NSIndexSet *plainTextQuotedRegions;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } plainTextSigRange;
+@property (nonatomic, retain) NSIndexSet *plainTextTabularRegions;
 
 + (id)address:(id)arg1 forIdentity:(id)arg2 parent:(id)arg3 curated:(bool)arg4 context:(id)arg5;
 + (id)emailAddress:(id)arg1 forIdentity:(id)arg2 parent:(id)arg3 curated:(bool)arg4 context:(id)arg5;

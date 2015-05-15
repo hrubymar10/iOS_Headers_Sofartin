@@ -6,10 +6,10 @@
     ASAsset *_asset;
 }
 
-@property(getter=isInstalled,assign,readonly) bool installed;
-@property(assign,readonly) NSArray * languages;
-@property(assign,readonly) NSString * path;
-@property(assign,readonly) NSNumber * version;
+@property (getter=isInstalled, nonatomic, readonly) bool installed;
+@property (nonatomic, readonly) NSArray *languages;
+@property (nonatomic, readonly) NSString *path;
+@property (nonatomic, readonly) NSNumber *version;
 
 - (void).cxx_destruct;
 - (id)description;

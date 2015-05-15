@@ -14,17 +14,17 @@
     long long _startAnchor;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long endAnchor;
-@property(assign,readwrite) bool hasEndAnchor;
-@property(assign,readwrite) bool hasObjectType;
-@property(assign,readwrite) bool hasStartAnchor;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableArray * objectDatas;
-@property(assign,readwrite) int objectType;
-@property(assign,readwrite) long long startAnchor;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long endAnchor;
+@property (nonatomic) bool hasEndAnchor;
+@property (nonatomic) bool hasObjectType;
+@property (nonatomic) bool hasStartAnchor;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableArray *objectDatas;
+@property (nonatomic) int objectType;
+@property (nonatomic) long long startAnchor;
+@property (readonly) Class superclass;
 
 + (id)changeWithNanoSyncEntityClass:(Class)arg1;
 

@@ -23,25 +23,25 @@
     int _zBits;
 }
 
-@property(assign,retain) NSMutableArray * coastlines;
-@property(assign,retain) GEOVConnectivity * connectivity;
-@property(assign,readonly) bool hasConnectivity;
-@property(assign,readonly) bool hasLabels;
-@property(assign,readwrite) bool hasMinZ;
-@property(assign,readwrite) bool hasSectionDeltaLengthBits;
-@property(assign,readwrite) bool hasVertexBits;
-@property(assign,readonly) bool hasVertices;
-@property(assign,readwrite) bool hasZBits;
-@property(assign,retain) NSMutableArray * labelLanguages;
-@property(assign,retain) NSData * labels;
-@property(assign,retain) NSMutableArray * lines;
-@property(assign,readwrite) int minZ;
-@property(assign,retain) NSMutableArray * points;
-@property(assign,retain) NSMutableArray * polygons;
-@property(assign,readwrite) unsigned int sectionDeltaLengthBits;
-@property(assign,readwrite) unsigned int vertexBits;
-@property(assign,retain) NSData * vertices;
-@property(assign,readwrite) int zBits;
+@property (nonatomic, retain) NSMutableArray *coastlines;
+@property (nonatomic, retain) GEOVConnectivity *connectivity;
+@property (nonatomic, readonly) bool hasConnectivity;
+@property (nonatomic, readonly) bool hasLabels;
+@property (nonatomic) bool hasMinZ;
+@property (nonatomic) bool hasSectionDeltaLengthBits;
+@property (nonatomic) bool hasVertexBits;
+@property (nonatomic, readonly) bool hasVertices;
+@property (nonatomic) bool hasZBits;
+@property (nonatomic, retain) NSMutableArray *labelLanguages;
+@property (nonatomic, retain) NSData *labels;
+@property (nonatomic, retain) NSMutableArray *lines;
+@property (nonatomic) int minZ;
+@property (nonatomic, retain) NSMutableArray *points;
+@property (nonatomic, retain) NSMutableArray *polygons;
+@property (nonatomic) unsigned int sectionDeltaLengthBits;
+@property (nonatomic) unsigned int vertexBits;
+@property (nonatomic, retain) NSData *vertices;
+@property (nonatomic) int zBits;
 
 - (void)addCoastlines:(id)arg1;
 - (void)addLabelLanguage:(id)arg1;

@@ -4,8 +4,8 @@
 
 @interface PLAssetDescription : PLManagedObject
 
-@property(assign,retain) PLAdditionalAssetAttributes * assetAttributes;
-@property(assign,retain) NSString * longDescription;
+@property (nonatomic, retain) PLAdditionalAssetAttributes *assetAttributes;
+@property (nonatomic, retain) NSString *longDescription;
 
 - (void)prepareForDeletion;
 - (void)willSave;

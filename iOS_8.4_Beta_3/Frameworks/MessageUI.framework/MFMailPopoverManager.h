@@ -29,18 +29,18 @@
     bool _popoverDismissalShouldBeAnimated;
 }
 
-@property(assign,retain) UIActionSheet * actionSheet;
-@property(assign,readwrite) unsigned long long currentArrowDirections;
-@property(assign,retain) UIBarButtonItem * currentBarButtonItem;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } currentRect;
-@property(assign,retain) UIView * currentView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool popoverBeingHiddenDuringRotation;
-@property(assign,retain) MFPopoverController * popoverController;
-@property(assign,readwrite) bool rasterizePopoverLayer;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIActionSheet *actionSheet;
+@property (nonatomic) unsigned long long currentArrowDirections;
+@property (nonatomic, retain) UIBarButtonItem *currentBarButtonItem;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } currentRect;
+@property (nonatomic, retain) UIView *currentView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool popoverBeingHiddenDuringRotation;
+@property (nonatomic, retain) MFPopoverController *popoverController;
+@property (nonatomic) bool rasterizePopoverLayer;
+@property (readonly) Class superclass;
 
 + (void)dismissPopover:(id)arg1 animated:(bool)arg2;
 + (void)enumerateManagersUsingBlock:(id)arg1;

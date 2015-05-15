@@ -21,22 +21,22 @@
     NSArray *_videoAssets;
 }
 
-@property(assign,copy) NSString * accessibilityLabel;
-@property(assign,readwrite) int action;
-@property(assign,readwrite) bool actionLeavesApplication;
-@property(assign,readwrite) bool actionViewControllerHidesStatusBar;
-@property(assign,readwrite) unsigned long long actionViewControllerPresentationOrientationMask;
-@property(assign,retain) NSURL * audioURL;
-@property(assign,copy) NSString * descriptionForLCD;
-@property(assign,copy) NSString * headlineForLCD;
-@property(assign,retain) NSURL * logoImageURL;
-@property(assign,readwrite) double minimumIntervalBetweenPresentations;
-@property(assign,readwrite) long long modalPresentationStyle;
-@property(assign,readwrite) double skipThreshold;
-@property(assign,retain) NSURL * staticImageURL;
-@property(assign,readwrite) bool unbranded;
-@property(assign,copy) NSString * uniqueIdentifier;
-@property(assign,retain) NSArray * videoAssets;
+@property (nonatomic, copy) NSString *accessibilityLabel;
+@property (nonatomic) int action;
+@property (nonatomic) bool actionLeavesApplication;
+@property (nonatomic) bool actionViewControllerHidesStatusBar;
+@property (nonatomic) unsigned long long actionViewControllerPresentationOrientationMask;
+@property (nonatomic, retain) NSURL *audioURL;
+@property (nonatomic, copy) NSString *descriptionForLCD;
+@property (nonatomic, copy) NSString *headlineForLCD;
+@property (nonatomic, retain) NSURL *logoImageURL;
+@property (nonatomic) double minimumIntervalBetweenPresentations;
+@property (nonatomic) long long modalPresentationStyle;
+@property (nonatomic) double skipThreshold;
+@property (nonatomic, retain) NSURL *staticImageURL;
+@property (nonatomic) bool unbranded;
+@property (nonatomic, copy) NSString *uniqueIdentifier;
+@property (nonatomic, retain) NSArray *videoAssets;
 
 + (bool)supportsSecureCoding;
 

@@ -9,7 +9,7 @@
     NSString *_serviceName;
 }
 
-@property(assign,readonly) <XPCClientConnectionDelegate> * delegate;
+@property (nonatomic, readonly) <XPCClientConnectionDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_handleConnectionEvent:(id)arg1;

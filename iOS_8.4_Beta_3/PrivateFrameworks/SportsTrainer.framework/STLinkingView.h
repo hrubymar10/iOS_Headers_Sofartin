@@ -19,10 +19,10 @@
     UIButton *_unlinkButton;
 }
 
-@property(assign,readwrite) bool bordered;
-@property(assign,readwrite) <STLinkingViewDelegate> * delegate;
-@property(assign,readwrite) long long linkingType;
-@property(assign,copy) NSString * serialNumber;
+@property (nonatomic) bool bordered;
+@property (nonatomic) <STLinkingViewDelegate> *delegate;
+@property (nonatomic) long long linkingType;
+@property (nonatomic, copy) NSString *serialNumber;
 
 - (void)_done;
 - (id)_haloImageOfSize:(struct CGSize { double x1; double x2; })arg1 color:(id)arg2 strokeWidth:(double)arg3;

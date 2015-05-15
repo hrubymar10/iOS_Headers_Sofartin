@@ -10,10 +10,10 @@
     int _sessionIdentifier;
 }
 
-@property(assign,readonly) bool hasNowPlayingInfo;
-@property(assign,readwrite) bool hasSessionIdentifier;
-@property(assign,retain) RMSNowPlayingInfoMessage * nowPlayingInfo;
-@property(assign,readwrite) int sessionIdentifier;
+@property (nonatomic, readonly) bool hasNowPlayingInfo;
+@property (nonatomic) bool hasSessionIdentifier;
+@property (nonatomic, retain) RMSNowPlayingInfoMessage *nowPlayingInfo;
+@property (nonatomic) int sessionIdentifier;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

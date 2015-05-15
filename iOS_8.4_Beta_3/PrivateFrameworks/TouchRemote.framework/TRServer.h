@@ -12,14 +12,14 @@
     unsigned short _port;
 }
 
-@property(assign,copy) TRAdvertisingInfo * advertisingInfo;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <TRServerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) unsigned short port;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) TRAdvertisingInfo *advertisingInfo;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <TRServerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) unsigned short port;
+@property (readonly) Class superclass;
 
 + (id)newServerWithName:(id)arg1;
 + (id)newServerWithName:(id)arg1 port:(unsigned short)arg2;

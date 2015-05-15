@@ -7,8 +7,8 @@
     NSString *_assetCollectionGUID;
 }
 
-@property(assign,retain) NSString * albumGUID;
-@property(assign,retain) NSString * assetCollectionGUID;
+@property (nonatomic, retain) NSString *albumGUID;
+@property (nonatomic, retain) NSString *assetCollectionGUID;
 
 - (void).cxx_destruct;
 - (id)albumGUID;

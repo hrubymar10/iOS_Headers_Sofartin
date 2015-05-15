@@ -24,26 +24,26 @@
     NSString *_unitChangeCautionaryText;
 }
 
-@property(assign,readonly) NSAttributedString * attributedSummaryAttribution;
-@property(assign,readonly) long long categoryID;
-@property(assign,readonly) NSString * cautionaryText;
-@property(assign,readonly) HKDataUnitGroupChartingRules * chartingRules;
-@property(assign,readonly) HKCorrelationType * correlationType;
-@property(assign,readonly) long long dataUnitGroupID;
-@property(assign,readonly) NSArray * dataUnits;
-@property(assign,readonly) NSArray * dataUnitsOrderedForDataEntry;
-@property(assign,readonly) UIImage * detailImage;
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) NSString * embeddedDisplayName;
-@property(assign,readonly) UIImage * groupIcon;
-@property(assign,readonly) NSString * joinString;
-@property(assign,readonly) NSString * keywords;
-@property(assign,readonly) UIImage * shareIcon;
-@property(assign,readonly) NSString * summary;
-@property(assign,readonly) NSString * summaryAttribution;
-@property(assign,readonly) NSString * unitChangeCautionaryText;
-@property(assign,readonly) UIImage * unitIcon;
-@property(assign,readonly) bool unitPreferencesRequireChangeConfirmation;
+@property (nonatomic, readonly) NSAttributedString *attributedSummaryAttribution;
+@property (nonatomic, readonly) long long categoryID;
+@property (nonatomic, readonly) NSString *cautionaryText;
+@property (nonatomic, readonly) HKDataUnitGroupChartingRules *chartingRules;
+@property (nonatomic, readonly) HKCorrelationType *correlationType;
+@property (nonatomic, readonly) long long dataUnitGroupID;
+@property (nonatomic, readonly) NSArray *dataUnits;
+@property (nonatomic, readonly) NSArray *dataUnitsOrderedForDataEntry;
+@property (nonatomic, readonly) UIImage *detailImage;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, readonly) NSString *embeddedDisplayName;
+@property (nonatomic, readonly) UIImage *groupIcon;
+@property (nonatomic, readonly) NSString *joinString;
+@property (nonatomic, readonly) NSString *keywords;
+@property (nonatomic, readonly) UIImage *shareIcon;
+@property (nonatomic, readonly) NSString *summary;
+@property (nonatomic, readonly) NSString *summaryAttribution;
+@property (nonatomic, readonly) NSString *unitChangeCautionaryText;
+@property (nonatomic, readonly) UIImage *unitIcon;
+@property (nonatomic, readonly) bool unitPreferencesRequireChangeConfirmation;
 
 - (void).cxx_destruct;
 - (void)_applyChartingProperties:(id)arg1;

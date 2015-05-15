@@ -11,9 +11,9 @@
     NSError *_savedError;
 }
 
-@property(assign,readwrite) <CalDAVCalendarSyncDelegate> * delegate;
-@property(assign,readwrite) bool getScheduleChanges;
-@property(assign,readwrite) bool getScheduleTags;
+@property (nonatomic) <CalDAVCalendarSyncDelegate> *delegate;
+@property (nonatomic) bool getScheduleChanges;
+@property (nonatomic) bool getScheduleTags;
 
 - (id)_distantFutureEndDate;
 - (void)_finishWithError:(id)arg1;

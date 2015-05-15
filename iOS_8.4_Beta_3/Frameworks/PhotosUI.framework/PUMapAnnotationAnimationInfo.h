@@ -19,14 +19,14 @@
     } _sourceCoordinate;
 }
 
-@property(assign,retain) id annotation;
-@property(assign,retain) id annotationForCountSwap;
-@property(assign,retain) id destinationAnnotation;
-@property(assign,readonly) struct { double x1; double x2; } destinationCoordinate;
-@property(assign,readonly) long long fadeType;
-@property(assign,readonly) long long reason;
-@property(assign,readonly) bool remove;
-@property(assign,readonly) struct { double x1; double x2; } sourceCoordinate;
+@property (nonatomic, readonly, retain) id annotation;
+@property (nonatomic, readonly, retain) id annotationForCountSwap;
+@property (nonatomic, readonly, retain) id destinationAnnotation;
+@property (nonatomic, readonly) struct { double x1; double x2; } destinationCoordinate;
+@property (nonatomic, readonly) long long fadeType;
+@property (nonatomic, readonly) long long reason;
+@property (nonatomic, readonly) bool remove;
+@property (nonatomic, readonly) struct { double x1; double x2; } sourceCoordinate;
 
 - (void).cxx_destruct;
 - (id)annotation;

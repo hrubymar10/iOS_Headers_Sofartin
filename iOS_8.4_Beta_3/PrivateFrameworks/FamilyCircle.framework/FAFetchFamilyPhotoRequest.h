@@ -17,18 +17,18 @@
     bool _useMonogramAsLastResort;
 }
 
-@property(assign,copy) NSString * emailAddress;
-@property(assign,copy) NSString * fullname;
-@property(assign,readonly) bool localFallback;
-@property(assign,copy) NSNumber * memberDSID;
-@property(assign,copy) NSString * memberHashedDSID;
-@property(assign,readwrite) double monogramDiameter;
-@property(assign,readwrite) long long monogramStyle;
-@property(assign,copy) NSString * phoneNumber;
-@property(assign,readonly) unsigned long long requestedSize;
-@property(assign,readwrite) double requiredHeight;
-@property(assign,readwrite) double requiredWidth;
-@property(assign,readwrite) bool useMonogramAsLastResort;
+@property (copy) NSString *emailAddress;
+@property (copy) NSString *fullname;
+@property (readonly) bool localFallback;
+@property (readonly, copy) NSNumber *memberDSID;
+@property (readonly, copy) NSString *memberHashedDSID;
+@property double monogramDiameter;
+@property long long monogramStyle;
+@property (copy) NSString *phoneNumber;
+@property (readonly) unsigned long long requestedSize;
+@property double requiredHeight;
+@property double requiredWidth;
+@property bool useMonogramAsLastResort;
 
 - (void).cxx_destruct;
 - (id)emailAddress;

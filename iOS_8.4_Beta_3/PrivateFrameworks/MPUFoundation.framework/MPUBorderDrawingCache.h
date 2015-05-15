@@ -8,7 +8,7 @@
     NSCache *_images;
 }
 
-@property(assign,readwrite) double displayScale;
+@property (nonatomic) double displayScale;
 
 - (void).cxx_destruct;
 - (void)_applicationDidReceiveMemoryWarning:(id)arg1;

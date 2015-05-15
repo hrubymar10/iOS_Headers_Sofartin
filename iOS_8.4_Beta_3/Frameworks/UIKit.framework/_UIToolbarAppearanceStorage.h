@@ -12,13 +12,13 @@
     UIImage *topShadowImage;
 }
 
-@property(assign,retain) UIImage * backgroundImage;
-@property(assign,readwrite) bool hidesShadow;
-@property(assign,retain) UIImage * miniBackgroundImage;
-@property(assign,retain) UIImage * miniTopBackgroundImage;
-@property(assign,retain) UIImage * shadowImage;
-@property(assign,retain) UIImage * topBackgroundImage;
-@property(assign,retain) UIImage * topShadowImage;
+@property (nonatomic, retain) UIImage *backgroundImage;
+@property (nonatomic) bool hidesShadow;
+@property (nonatomic, retain) UIImage *miniBackgroundImage;
+@property (nonatomic, retain) UIImage *miniTopBackgroundImage;
+@property (nonatomic, retain) UIImage *shadowImage;
+@property (nonatomic, retain) UIImage *topBackgroundImage;
+@property (nonatomic, retain) UIImage *topShadowImage;
 
 + (long long)typicalBarPosition;
 

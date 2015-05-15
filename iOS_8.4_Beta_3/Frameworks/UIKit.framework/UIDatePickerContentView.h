@@ -12,11 +12,11 @@
     double _titleLabelMaxX;
 }
 
-@property(assign,readwrite) bool isAmPm;
-@property(assign,readwrite) bool isModern;
-@property(assign,readwrite) long long titleAlignment;
-@property(assign,readonly) UILabel * titleLabel;
-@property(assign,readwrite) double titleLabelMaxX;
+@property (nonatomic) bool isAmPm;
+@property (nonatomic) bool isModern;
+@property (nonatomic) long long titleAlignment;
+@property (nonatomic, readonly) UILabel *titleLabel;
+@property (nonatomic) double titleLabelMaxX;
 
 - (bool)_canBeReusedInPickerView;
 - (void)dealloc;

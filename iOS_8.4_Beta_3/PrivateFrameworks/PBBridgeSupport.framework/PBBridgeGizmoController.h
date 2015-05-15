@@ -19,24 +19,24 @@
     id _updateRegionCompletion;
 }
 
-@property(assign,copy) id activationCompletion;
-@property(assign,readwrite) unsigned short activationState;
-@property(assign,retain) NSTimer * activationTimeout;
-@property(assign,readonly) bool canBeginActivation;
-@property(assign,retain) UIAlertView * confirmationAlert;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PBBridgeConnectionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id enableSiriCompletion;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * internalLastSendMessageID;
-@property(assign,readonly) NSString * languageIdentifer;
-@property(assign,readonly) bool readyToCreatePasscode;
-@property(assign,readonly) NSString * regionIdentifer;
-@property(assign,copy) id siriStateCompletion;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id updateLanguageCompletion;
-@property(assign,copy) id updateRegionCompletion;
+@property (nonatomic, copy) id activationCompletion;
+@property (nonatomic) unsigned short activationState;
+@property (nonatomic, retain) NSTimer *activationTimeout;
+@property (nonatomic, readonly) bool canBeginActivation;
+@property (nonatomic, retain) UIAlertView *confirmationAlert;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PBBridgeConnectionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id enableSiriCompletion;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *internalLastSendMessageID;
+@property (nonatomic, readonly) NSString *languageIdentifer;
+@property (nonatomic, readonly) bool readyToCreatePasscode;
+@property (nonatomic, readonly) NSString *regionIdentifer;
+@property (nonatomic, copy) id siriStateCompletion;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id updateLanguageCompletion;
+@property (nonatomic, copy) id updateRegionCompletion;
 
 + (id)licensePathForAppleLanguages:(id)arg1;
 + (id)prepareOfflineTermsResponse:(id)arg1;

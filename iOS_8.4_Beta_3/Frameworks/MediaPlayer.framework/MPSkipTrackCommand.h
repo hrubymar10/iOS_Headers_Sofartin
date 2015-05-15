@@ -10,7 +10,7 @@
     } _skipLimit;
 }
 
-@property(assign,readwrite) struct { long long x1; long long x2; double x3; } skipLimit;
+@property (nonatomic) struct { long long x1; long long x2; double x3; } skipLimit;
 
 - (id)_mediaRemoteCommandInfoOptions;
 - (void)setSkipLimit:(struct { long long x1; long long x2; double x3; })arg1;

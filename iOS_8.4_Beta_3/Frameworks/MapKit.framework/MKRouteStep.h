@@ -9,12 +9,12 @@
     unsigned long long _transportType;
 }
 
-@property(assign,readonly) double distance;
-@property(getter=_geoStep,assign,readonly) GEOStep * geoStep;
-@property(assign,readonly) NSString * instructions;
-@property(assign,readonly) NSString * notice;
-@property(assign,readonly) MKPolyline * polyline;
-@property(assign,readonly) unsigned long long transportType;
+@property (nonatomic, readonly) double distance;
+@property (getter=_geoStep, nonatomic, readonly) GEOStep *geoStep;
+@property (nonatomic, readonly) NSString *instructions;
+@property (nonatomic, readonly) NSString *notice;
+@property (nonatomic, readonly) MKPolyline *polyline;
+@property (nonatomic, readonly) unsigned long long transportType;
 
 - (void).cxx_destruct;
 - (id)_geoStep;

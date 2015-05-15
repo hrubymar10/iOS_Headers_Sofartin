@@ -7,8 +7,8 @@
     NSArray *_menuItems;
 }
 
-@property(assign,retain) SUScriptFunction * action;
-@property(assign,retain) NSArray * menuItems;
+@property (nonatomic, retain) SUScriptFunction *action;
+@property (nonatomic, retain) NSArray *menuItems;
 
 - (id)action;
 - (id)copyScriptViewController;

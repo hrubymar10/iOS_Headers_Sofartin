@@ -19,26 +19,26 @@
     int _userTrackingMode;
 }
 
-@property(assign,retain) GEOURLCamera * camera;
-@property(assign,retain) GEOURLCenterSpan * centerSpan;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enableTraffic;
-@property(assign,readonly) bool hasCamera;
-@property(assign,readonly) bool hasCenterSpan;
-@property(assign,readwrite) bool hasEnableTraffic;
-@property(assign,readwrite) bool hasMapType;
-@property(assign,readonly) bool hasReferralIdentifier;
-@property(assign,readonly) bool hasRouteHandle;
-@property(assign,readwrite) bool hasTransportType;
-@property(assign,readwrite) bool hasUserTrackingMode;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int mapType;
-@property(assign,retain) NSString * referralIdentifier;
-@property(assign,retain) GEOURLRouteHandle * routeHandle;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) int transportType;
-@property(assign,readwrite) int userTrackingMode;
+@property (nonatomic, retain) GEOURLCamera *camera;
+@property (nonatomic, retain) GEOURLCenterSpan *centerSpan;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enableTraffic;
+@property (nonatomic, readonly) bool hasCamera;
+@property (nonatomic, readonly) bool hasCenterSpan;
+@property (nonatomic) bool hasEnableTraffic;
+@property (nonatomic) bool hasMapType;
+@property (nonatomic, readonly) bool hasReferralIdentifier;
+@property (nonatomic, readonly) bool hasRouteHandle;
+@property (nonatomic) bool hasTransportType;
+@property (nonatomic) bool hasUserTrackingMode;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int mapType;
+@property (nonatomic, retain) NSString *referralIdentifier;
+@property (nonatomic, retain) GEOURLRouteHandle *routeHandle;
+@property (readonly) Class superclass;
+@property (nonatomic) int transportType;
+@property (nonatomic) int userTrackingMode;
 
 - (id)camera;
 - (id)centerSpan;

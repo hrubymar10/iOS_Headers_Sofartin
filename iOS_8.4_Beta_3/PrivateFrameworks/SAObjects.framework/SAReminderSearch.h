@@ -4,12 +4,12 @@
 
 @interface SAReminderSearch : SADomainCommand
 
-@property(assign,copy) NSNumber * completionStatus;
-@property(assign,copy) NSDate * dueAfter;
-@property(assign,copy) NSDate * dueBefore;
-@property(assign,copy) NSString * listName;
-@property(assign,copy) NSString * subject;
-@property(assign,copy) NSString * timeZoneId;
+@property (nonatomic, copy) NSNumber *completionStatus;
+@property (nonatomic, copy) NSDate *dueAfter;
+@property (nonatomic, copy) NSDate *dueBefore;
+@property (nonatomic, copy) NSString *listName;
+@property (nonatomic, copy) NSString *subject;
+@property (nonatomic, copy) NSString *timeZoneId;
 
 + (id)search;
 + (id)searchWithDictionary:(id)arg1 context:(id)arg2;

@@ -35,8 +35,8 @@
     } mStartingSize;
 }
 
-@property(assign,readonly) TSCHChartRootLayoutItem * p_layoutTree;
-@property(assign,copy) NSDictionary * seriesIndexedPieWedgeExplosions;
+@property (readonly) TSCHChartRootLayoutItem *p_layoutTree;
+@property (nonatomic, copy) NSDictionary *seriesIndexedPieWedgeExplosions;
 
 + (id)propertiesThatInvalidateLayout;
 

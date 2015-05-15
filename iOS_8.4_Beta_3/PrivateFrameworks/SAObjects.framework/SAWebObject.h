@@ -4,8 +4,8 @@
 
 @interface SAWebObject : SADomainObject
 
-@property(assign,copy) NSString * query;
-@property(assign,retain) SAWebWebSearchResult * results;
+@property (nonatomic, copy) NSString *query;
+@property (nonatomic, retain) SAWebWebSearchResult *results;
 
 + (id)object;
 + (id)objectWithDictionary:(id)arg1 context:(id)arg2;

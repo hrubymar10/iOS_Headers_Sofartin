@@ -7,9 +7,9 @@
     SUScriptFunction *_openWithFunction;
 }
 
-@property(assign,copy) NSString * UTI;
-@property(assign,retain) WebScriptObject * cancelFunction;
-@property(assign,retain) WebScriptObject * openWithFunction;
+@property (copy) NSString *UTI;
+@property (retain) WebScriptObject *cancelFunction;
+@property (retain) WebScriptObject *openWithFunction;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

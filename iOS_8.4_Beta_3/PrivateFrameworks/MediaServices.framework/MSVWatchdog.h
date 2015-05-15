@@ -16,17 +16,17 @@
     NSObject<OS_dispatch_source> *_timer;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * dispatchQueue;
-@property(assign,readwrite) double interval;
-@property(assign,retain) NSString * mode;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSRunLoop * runLoop;
-@property(assign,readwrite) bool running;
-@property(assign,readwrite) bool scheduled;
-@property(assign,copy) id timeoutCallback;
-@property(assign,readwrite) double timeoutInterval;
-@property(assign,retain) NSObject<OS_dispatch_source> * timer;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *dispatchQueue;
+@property (nonatomic) double interval;
+@property (nonatomic, retain) NSString *mode;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSRunLoop *runLoop;
+@property (nonatomic) bool running;
+@property (nonatomic) bool scheduled;
+@property (nonatomic, copy) id timeoutCallback;
+@property (nonatomic) double timeoutInterval;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *timer;
 
 - (void).cxx_destruct;
 - (void)_cancelTimeout;

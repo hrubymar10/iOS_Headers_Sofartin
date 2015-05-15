@@ -8,17 +8,17 @@
     NSAttributedString *_text;
 }
 
-@property(getter=isExpirableComposition,assign,readonly) bool expirableComposition;
-@property(assign,readonly) bool hasContent;
-@property(assign,readonly) bool hasNonwhiteSpaceContent;
-@property(assign,readwrite) bool isFromExternalSource;
-@property(assign,retain) NSArray * mediaObjects;
-@property(assign,retain) NSArray * pasteboardItems;
-@property(getter=isSaveable,assign,readonly) bool saveable;
-@property(getter=isSendAnimated,assign,readonly) bool sendAnimated;
-@property(assign,copy) NSAttributedString * subject;
-@property(assign,copy) NSAttributedString * text;
-@property(getter=isTextOnly,assign,readonly) bool textOnly;
+@property (getter=isExpirableComposition, nonatomic, readonly) bool expirableComposition;
+@property (nonatomic, readonly) bool hasContent;
+@property (nonatomic, readonly) bool hasNonwhiteSpaceContent;
+@property (nonatomic) bool isFromExternalSource;
+@property (nonatomic, readonly, retain) NSArray *mediaObjects;
+@property (nonatomic, readonly, retain) NSArray *pasteboardItems;
+@property (getter=isSaveable, nonatomic, readonly) bool saveable;
+@property (getter=isSendAnimated, nonatomic, readonly) bool sendAnimated;
+@property (nonatomic, copy) NSAttributedString *subject;
+@property (nonatomic, copy) NSAttributedString *text;
+@property (getter=isTextOnly, nonatomic, readonly) bool textOnly;
 
 + (id)audioCompositionWithMediaObject:(id)arg1;
 + (id)composition;

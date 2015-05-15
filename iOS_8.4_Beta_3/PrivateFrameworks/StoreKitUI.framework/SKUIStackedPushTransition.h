@@ -8,13 +8,13 @@
     SKUIStackedBar *_toBar;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) SKUIStackedBar * fromBar;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double split;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) SKUIStackedBar * toBar;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) SKUIStackedBar *fromBar;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double split;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) SKUIStackedBar *toBar;
 
 - (void).cxx_destruct;
 - (void)animateTransition:(id)arg1;

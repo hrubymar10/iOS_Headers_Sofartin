@@ -11,12 +11,12 @@
     GEOPDViewportInfo *_viewportInfo;
 }
 
-@property(assign,readwrite) bool hasMaxResults;
-@property(assign,readonly) bool hasQuery;
-@property(assign,readonly) bool hasViewportInfo;
-@property(assign,readwrite) int maxResults;
-@property(assign,retain) NSString * query;
-@property(assign,retain) GEOPDViewportInfo * viewportInfo;
+@property (nonatomic) bool hasMaxResults;
+@property (nonatomic, readonly) bool hasQuery;
+@property (nonatomic, readonly) bool hasViewportInfo;
+@property (nonatomic) int maxResults;
+@property (nonatomic, retain) NSString *query;
+@property (nonatomic, retain) GEOPDViewportInfo *viewportInfo;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

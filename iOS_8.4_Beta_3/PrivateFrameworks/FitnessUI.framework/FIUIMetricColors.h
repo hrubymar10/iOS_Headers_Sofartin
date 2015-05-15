@@ -12,13 +12,13 @@
     UIColor *_valueDisplayColor;
 }
 
-@property(assign,retain) UIColor * adjustmentButtonBackgroundColor;
-@property(assign,retain) UIColor * buttonDisabledTextColor;
-@property(assign,retain) UIColor * buttonTextColor;
-@property(assign,retain) UIColor * gradientDarkColor;
-@property(assign,retain) UIColor * gradientLightColor;
-@property(assign,retain) UIColor * nonGradientTextColor;
-@property(assign,retain) UIColor * valueDisplayColor;
+@property (nonatomic, retain) UIColor *adjustmentButtonBackgroundColor;
+@property (nonatomic, retain) UIColor *buttonDisabledTextColor;
+@property (nonatomic, retain) UIColor *buttonTextColor;
+@property (nonatomic, retain) UIColor *gradientDarkColor;
+@property (nonatomic, retain) UIColor *gradientLightColor;
+@property (nonatomic, retain) UIColor *nonGradientTextColor;
+@property (nonatomic, retain) UIColor *valueDisplayColor;
 
 + (id)briskColors;
 + (id)calorieColors;

@@ -12,18 +12,18 @@
     int _state;
 }
 
-@property(assign,retain) AXAccessQueue * accessQueue;
-@property(assign,readwrite) bool accessQueueIsExternal;
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,readwrite) bool automaticallyCancelPendingBlockUponSchedulingNewBlock;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSObject<OS_dispatch_source> * dispatchTimer;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * label;
-@property(getter=isPending,assign,readonly) bool pending;
-@property(assign,readwrite) int state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) AXAccessQueue *accessQueue;
+@property (nonatomic) bool accessQueueIsExternal;
+@property (getter=isActive, nonatomic) bool active;
+@property (nonatomic) bool automaticallyCancelPendingBlockUponSchedulingNewBlock;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *dispatchTimer;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *label;
+@property (getter=isPending, nonatomic, readonly) bool pending;
+@property (nonatomic) int state;
+@property (readonly) Class superclass;
 
 + (void)initialize;
 + (id)timerTargettingMainAccessQueue;

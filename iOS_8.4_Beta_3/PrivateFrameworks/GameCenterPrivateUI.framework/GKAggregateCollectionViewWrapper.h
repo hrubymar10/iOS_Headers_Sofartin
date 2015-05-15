@@ -7,8 +7,8 @@
     UICollectionView *_wrappedView;
 }
 
-@property(assign,retain) GKAggregateMapping * mapping;
-@property(assign,retain) UICollectionView * wrappedView;
+@property (nonatomic, retain) GKAggregateMapping *mapping;
+@property (nonatomic, retain) UICollectionView *wrappedView;
 
 + (id)instanceMethodSignatureForSelector:(SEL)arg1;
 + (bool)instancesRespondToSelector:(SEL)arg1;

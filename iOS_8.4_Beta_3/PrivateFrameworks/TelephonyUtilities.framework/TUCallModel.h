@@ -16,17 +16,17 @@
     bool _takingCallsPrivateAllowed;
 }
 
-@property(getter=isAddCallAllowed,assign,readonly) bool addCallAllowed;
-@property(assign,readonly) int ambiguityState;
-@property(getter=isAmbiguous,assign,readonly) bool ambiguous;
-@property(getter=isEndAndAnswerAllowed,assign,readonly) bool endAndAnswerAllowed;
-@property(getter=isHardPauseAvailable,assign,readonly) bool hardPauseAvailable;
-@property(getter=isHoldAllowed,assign,readonly) bool holdAllowed;
-@property(getter=isHoldAndAnswerAllowed,assign,readonly) bool holdAndAnswerAllowed;
-@property(getter=isMergeable,assign,readonly) bool mergeable;
-@property(getter=isSendToVoicemailAllowed,assign,readonly) bool sendToVoicemailAllowed;
-@property(getter=isSwappable,assign,readonly) bool swappable;
-@property(getter=isTakingCallsPrivateAllowed,assign,readonly) bool takingCallsPrivateAllowed;
+@property (getter=isAddCallAllowed, nonatomic, readonly) bool addCallAllowed;
+@property (nonatomic, readonly) int ambiguityState;
+@property (getter=isAmbiguous, nonatomic, readonly) bool ambiguous;
+@property (getter=isEndAndAnswerAllowed, nonatomic, readonly) bool endAndAnswerAllowed;
+@property (getter=isHardPauseAvailable, nonatomic, readonly) bool hardPauseAvailable;
+@property (getter=isHoldAllowed, nonatomic, readonly) bool holdAllowed;
+@property (getter=isHoldAndAnswerAllowed, nonatomic, readonly) bool holdAndAnswerAllowed;
+@property (getter=isMergeable, nonatomic, readonly) bool mergeable;
+@property (getter=isSendToVoicemailAllowed, nonatomic, readonly) bool sendToVoicemailAllowed;
+@property (getter=isSwappable, nonatomic, readonly) bool swappable;
+@property (getter=isTakingCallsPrivateAllowed, nonatomic, readonly) bool takingCallsPrivateAllowed;
 
 + (id)sharedInstance;
 

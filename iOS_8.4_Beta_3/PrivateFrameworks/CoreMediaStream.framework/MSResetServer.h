@@ -9,12 +9,12 @@
     id _selfReference;
 }
 
-@property(assign,readwrite) MSMediaStreamDaemon * daemon;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * personID;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) MSMediaStreamDaemon *daemon;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *personID;
+@property (readonly) Class superclass;
 
 + (id)resetServerObjectWithPersonID:(id)arg1 baseURL:(id)arg2;
 

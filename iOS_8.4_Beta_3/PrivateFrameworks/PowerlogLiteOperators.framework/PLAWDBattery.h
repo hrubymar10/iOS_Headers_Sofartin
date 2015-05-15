@@ -14,15 +14,15 @@
     double _prevVoltage;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * batteryEventCallback;
-@property(assign,readwrite) long long batterySubmitCnt;
-@property(assign,readwrite) long long dispOnOffCnt;
-@property(assign,retain) PLEntryNotificationOperatorComposition * displayEventCallback;
-@property(assign,readwrite) double prevCapacity;
-@property(assign,readwrite) bool prevDeviceCharging;
-@property(assign,readwrite) double prevDispTimeStamp;
-@property(assign,readwrite) bool prevDisplayON;
-@property(assign,readwrite) double prevVoltage;
+@property (retain) PLEntryNotificationOperatorComposition *batteryEventCallback;
+@property long long batterySubmitCnt;
+@property long long dispOnOffCnt;
+@property (retain) PLEntryNotificationOperatorComposition *displayEventCallback;
+@property double prevCapacity;
+@property bool prevDeviceCharging;
+@property double prevDispTimeStamp;
+@property bool prevDisplayON;
+@property double prevVoltage;
 
 + (id)entryAggregateDefinitionAwdBattery;
 + (id)entryAggregateDefinitions;

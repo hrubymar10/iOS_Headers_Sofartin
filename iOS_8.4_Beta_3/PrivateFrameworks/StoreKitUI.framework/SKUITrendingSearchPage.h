@@ -7,8 +7,8 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSArray * searches;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSArray *searches;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (id)searches;

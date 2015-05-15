@@ -19,18 +19,18 @@
     int _suggestionsEntryListIndex;
 }
 
-@property(assign,readwrite) bool hasSessionID;
-@property(assign,readonly) bool hasSuggestionEntry;
-@property(assign,readwrite) bool hasSuggestionEntryIndex;
-@property(assign,readonly) bool hasSuggestionEntryMetadata;
-@property(assign,readonly) bool hasSuggestionMetadata;
-@property(assign,readwrite) bool hasSuggestionsEntryListIndex;
-@property(assign,readwrite) struct { unsigned long long x1; unsigned long long x2; } sessionID;
-@property(assign,retain) GEOPDAutocompleteEntry * suggestionEntry;
-@property(assign,readwrite) int suggestionEntryIndex;
-@property(assign,retain) NSData * suggestionEntryMetadata;
-@property(assign,retain) NSData * suggestionMetadata;
-@property(assign,readwrite) int suggestionsEntryListIndex;
+@property (nonatomic) bool hasSessionID;
+@property (nonatomic, readonly) bool hasSuggestionEntry;
+@property (nonatomic) bool hasSuggestionEntryIndex;
+@property (nonatomic, readonly) bool hasSuggestionEntryMetadata;
+@property (nonatomic, readonly) bool hasSuggestionMetadata;
+@property (nonatomic) bool hasSuggestionsEntryListIndex;
+@property (nonatomic) struct { unsigned long long x1; unsigned long long x2; } sessionID;
+@property (nonatomic, retain) GEOPDAutocompleteEntry *suggestionEntry;
+@property (nonatomic) int suggestionEntryIndex;
+@property (nonatomic, retain) NSData *suggestionEntryMetadata;
+@property (nonatomic, retain) NSData *suggestionMetadata;
+@property (nonatomic) int suggestionsEntryListIndex;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

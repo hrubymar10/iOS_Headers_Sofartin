@@ -67,20 +67,20 @@
     } _toleranceBefore;
 }
 
-@property(assign,retain) NSArray * availableMetadataFormats;
-@property(getter=isComposable,assign,readwrite) bool composable;
-@property(assign,retain) NSArray * contentChapters;
-@property(getter=isDeviceBatteryChargingOrFull,assign,readwrite) bool deviceBatteryChargingOrFull;
-@property(getter=isDisablingAutomaticTermination,assign,readwrite) bool disablingAutomaticTermination;
-@property(assign,readwrite) bool hasProtectedContent;
-@property(assign,retain) NSDictionary * metadata;
-@property(assign,retain) AVPlayer * player;
-@property(getter=isPreventingIdleDisplaySleep,assign,readwrite) bool preventingIdleDisplaySleep;
-@property(getter=isPreventingIdleSystemSleep,assign,readwrite) bool preventingIdleSystemSleep;
-@property(assign,readwrite) double rateBeforeScrubBegan;
-@property(getter=isScrubbing,assign,readwrite) bool scrubbing;
-@property(assign,readonly) bool shouldPreventIdleDisplaySleep;
-@property(assign,retain) AVValueTiming * timing;
+@property (nonatomic, retain) NSArray *availableMetadataFormats;
+@property (getter=isComposable, nonatomic) bool composable;
+@property (nonatomic, retain) NSArray *contentChapters;
+@property (getter=isDeviceBatteryChargingOrFull, nonatomic) bool deviceBatteryChargingOrFull;
+@property (getter=isDisablingAutomaticTermination, nonatomic) bool disablingAutomaticTermination;
+@property (nonatomic) bool hasProtectedContent;
+@property (nonatomic, retain) NSDictionary *metadata;
+@property (nonatomic, retain) AVPlayer *player;
+@property (getter=isPreventingIdleDisplaySleep, nonatomic) bool preventingIdleDisplaySleep;
+@property (getter=isPreventingIdleSystemSleep, nonatomic) bool preventingIdleSystemSleep;
+@property (nonatomic) double rateBeforeScrubBegan;
+@property (getter=isScrubbing, nonatomic) bool scrubbing;
+@property (nonatomic, readonly) bool shouldPreventIdleDisplaySleep;
+@property (nonatomic, retain) AVValueTiming *timing;
 
 + (id)keyPathsForValuesAffectingAllowsExternalPlayback;
 + (id)keyPathsForValuesAffectingCanPause;

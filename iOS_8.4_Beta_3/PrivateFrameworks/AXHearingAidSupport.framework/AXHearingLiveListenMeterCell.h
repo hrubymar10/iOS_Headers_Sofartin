@@ -7,8 +7,8 @@
     NSArray *dotImageViews;
 }
 
-@property(assign,retain) NSArray * dotImageViews;
-@property(assign,retain) NSString * liveListenUpdateUUID;
+@property (nonatomic, retain) NSArray *dotImageViews;
+@property (nonatomic, retain) NSString *liveListenUpdateUUID;
 
 - (void)audioLevelDidChange:(float)arg1;
 - (void)dealloc;

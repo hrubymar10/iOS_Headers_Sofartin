@@ -14,9 +14,9 @@
     NSArray *internalDetectedPhones;
 }
 
-@property(assign,readonly) long long masterEntityId;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) SGRecordId * recordId;
+@property (nonatomic, readonly) long long masterEntityId;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) SGRecordId *recordId;
 
 + (id)contactFromContactEntity:(id)arg1;
 + (id)contactWithMasterEntityId:(long long)arg1;

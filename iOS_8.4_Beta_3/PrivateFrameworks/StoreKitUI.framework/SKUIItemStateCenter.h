@@ -23,15 +23,15 @@
     BOOL _runningInStoreDemoMode;
 }
 
-@property(assign,readonly) SSSoftwareUpdatesStore * appUpdatesStore;
-@property(getter=isApplicationInstallRestricted,assign,readonly) bool applicationInstallRestricted;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isGratisEligible,assign,readonly) bool gratisEligible;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long parentalControlsRank;
-@property(getter=isRunningInStoreDemoMode,assign,readonly) bool runningInStoreDemoMode;
-@property(assign,readonly) Class superclass;
+@property (readonly) SSSoftwareUpdatesStore *appUpdatesStore;
+@property (getter=isApplicationInstallRestricted, readonly) bool applicationInstallRestricted;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isGratisEligible, nonatomic, readonly) bool gratisEligible;
+@property (readonly) unsigned long long hash;
+@property (readonly) long long parentalControlsRank;
+@property (getter=isRunningInStoreDemoMode, readonly) bool runningInStoreDemoMode;
+@property (readonly) Class superclass;
 
 + (id)defaultCenter;
 

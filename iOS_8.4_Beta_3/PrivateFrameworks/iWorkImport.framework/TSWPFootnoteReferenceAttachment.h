@@ -7,8 +7,8 @@
     NSString *_customMarkString;
 }
 
-@property(assign,retain) TSWPStorage * containedStorage;
-@property(assign,retain) NSString * customMarkString;
+@property (nonatomic, retain) TSWPStorage *containedStorage;
+@property (nonatomic, retain) NSString *customMarkString;
 
 - (void)adoptStylesheet:(id)arg1 withMapper:(id)arg2;
 - (void)applyMark;

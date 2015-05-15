@@ -7,8 +7,8 @@
     unsigned long long _uiEnvironment;
 }
 
-@property(assign,readwrite) bool hideOtherWindowsDuringAppearance;
-@property(assign,readwrite) unsigned long long uiEnvironment;
+@property (nonatomic) bool hideOtherWindowsDuringAppearance;
+@property (nonatomic) unsigned long long uiEnvironment;
 
 - (bool)hideOtherWindowsDuringAppearance;
 - (void)setHideOtherWindowsDuringAppearance:(bool)arg1;

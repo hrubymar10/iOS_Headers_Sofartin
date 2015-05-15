@@ -17,11 +17,11 @@
     double _panningViewTargetScale;
 }
 
-@property(assign,retain) UIPanGestureRecognizer * gestureRecognizer;
-@property(assign,retain) PKPassGroupView * panningGroupView;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } panningViewStartPosition;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } panningViewTargetPosition;
-@property(assign,readwrite) double panningViewTargetScale;
+@property (nonatomic, retain) UIPanGestureRecognizer *gestureRecognizer;
+@property (nonatomic, retain) PKPassGroupView *panningGroupView;
+@property (nonatomic) struct CGPoint { double x1; double x2; } panningViewStartPosition;
+@property (nonatomic) struct CGPoint { double x1; double x2; } panningViewTargetPosition;
+@property (nonatomic) double panningViewTargetScale;
 
 - (id)_dynamicAnimationWithStart:(double)arg1 target:(double)arg2 initialVelocity:(double)arg3;
 - (void)dealloc;

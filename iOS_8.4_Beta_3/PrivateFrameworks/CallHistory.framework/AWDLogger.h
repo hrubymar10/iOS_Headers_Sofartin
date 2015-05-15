@@ -6,7 +6,7 @@
     AWDServerConnection *_awdServer;
 }
 
-@property(assign,retain) AWDServerConnection * awdServer;
+@property (nonatomic, retain) AWDServerConnection *awdServer;
 
 + (id)instance;
 

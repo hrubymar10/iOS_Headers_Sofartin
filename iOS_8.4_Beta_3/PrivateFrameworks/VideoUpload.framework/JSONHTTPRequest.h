@@ -21,18 +21,18 @@
     NSDictionary *_unsignedPostParams;
 }
 
-@property(assign,readwrite) int HTTPMethod;
-@property(assign,readwrite) bool allowsCellularAccess;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSDictionary * getParams;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSDictionary * postParams;
-@property(assign,readonly) NSHTTPURLResponse * response;
-@property(assign,readwrite) int responseType;
-@property(assign,readwrite) bool signsMultipartPOSTData;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSDictionary * unsignedPostParams;
+@property (nonatomic) int HTTPMethod;
+@property (nonatomic) bool allowsCellularAccess;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSDictionary *getParams;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSDictionary *postParams;
+@property (nonatomic, readonly) NSHTTPURLResponse *response;
+@property (nonatomic) int responseType;
+@property (nonatomic) bool signsMultipartPOSTData;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSDictionary *unsignedPostParams;
 
 + (id)encodedStringForParameterDictionary:(id)arg1;
 

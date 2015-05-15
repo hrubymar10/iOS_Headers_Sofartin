@@ -10,11 +10,11 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readonly) NSString * accountID;
-@property(assign,readonly) NSString * attachmentUUID;
-@property(assign,copy) id completionBlock;
-@property(assign,copy) id progressBlock;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, readonly) NSString *accountID;
+@property (nonatomic, readonly) NSString *attachmentUUID;
+@property (nonatomic, readonly, copy) id completionBlock;
+@property (nonatomic, readonly, copy) id progressBlock;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
 
 - (void).cxx_destruct;
 - (id)accountID;

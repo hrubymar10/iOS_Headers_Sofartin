@@ -11,9 +11,9 @@
     bool _updating;
 }
 
-@property(assign,readwrite) <HSMediaLibraryImportObserverDelegate> * delegate;
-@property(assign,readwrite) double updateInterval;
-@property(getter=isUpdating,assign,readonly) bool updating;
+@property (nonatomic) <HSMediaLibraryImportObserverDelegate> *delegate;
+@property (nonatomic) double updateInterval;
+@property (getter=isUpdating, nonatomic, readonly) bool updating;
 
 - (void).cxx_destruct;
 - (void)_updateImportStatus:(id)arg1;

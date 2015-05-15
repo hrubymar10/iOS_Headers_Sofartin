@@ -8,9 +8,9 @@
     float _ratingValue;
 }
 
-@property(assign,readwrite) long long barRatingStyle;
-@property(assign,readwrite) long long numberOfBars;
-@property(assign,readwrite) float ratingValue;
+@property (nonatomic) long long barRatingStyle;
+@property (nonatomic) long long numberOfBars;
+@property (nonatomic) float ratingValue;
 
 - (long long)barRatingStyle;
 - (void)drawRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

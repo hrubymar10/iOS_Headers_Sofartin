@@ -38,21 +38,21 @@
     double _yawAngle;
 }
 
-@property(assign,readwrite) long long faceID;
-@property(assign,readwrite) bool hasLeftEyeBounds;
-@property(assign,readwrite) bool hasLeftEyeClosedConfidence;
-@property(assign,readwrite) bool hasRightEyeBounds;
-@property(assign,readwrite) bool hasRightEyeClosedConfidence;
-@property(assign,readwrite) bool hasRollAngle;
-@property(assign,readwrite) bool hasSmileConfidence;
-@property(assign,readwrite) bool hasYawAngle;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } leftEyeBounds;
-@property(assign,readwrite) int leftEyeClosedConfidence;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rightEyeBounds;
-@property(assign,readwrite) int rightEyeClosedConfidence;
-@property(assign,readwrite) double rollAngle;
-@property(assign,readwrite) int smileConfidence;
-@property(assign,readwrite) double yawAngle;
+@property (nonatomic) long long faceID;
+@property (nonatomic) bool hasLeftEyeBounds;
+@property (nonatomic) bool hasLeftEyeClosedConfidence;
+@property (nonatomic) bool hasRightEyeBounds;
+@property (nonatomic) bool hasRightEyeClosedConfidence;
+@property (nonatomic) bool hasRollAngle;
+@property (nonatomic) bool hasSmileConfidence;
+@property (nonatomic) bool hasYawAngle;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } leftEyeBounds;
+@property (nonatomic) int leftEyeClosedConfidence;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rightEyeBounds;
+@property (nonatomic) int rightEyeClosedConfidence;
+@property (nonatomic) double rollAngle;
+@property (nonatomic) int smileConfidence;
+@property (nonatomic) double yawAngle;
 
 - (long long)faceID;
 - (bool)hasLeftEyeBounds;

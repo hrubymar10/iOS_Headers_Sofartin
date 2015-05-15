@@ -9,7 +9,7 @@
     unsigned long long _reserved;
 }
 
-@property(assign,readonly) unsigned int machPort;
+@property (readonly) unsigned int machPort;
 
 + (void)_fixNSMachPortLeak;
 + (id)port;

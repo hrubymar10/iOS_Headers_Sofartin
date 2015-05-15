@@ -13,14 +13,14 @@
     NSObject<OS_dispatch_queue> *_xpcConnectionQueue;
 }
 
-@property(assign,readwrite) bool clientDebug;
-@property(assign,retain) NSMutableDictionary * pendingTaskCache;
-@property(assign,retain) NSMutableDictionary * permissionCache;
-@property(assign,retain) NSObject<OS_dispatch_queue> * permissionQueue;
-@property(assign,retain) NSString * processName;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
-@property(assign,retain) NSObject<OS_xpc_object> * xpcConnection;
-@property(assign,retain) NSObject<OS_dispatch_queue> * xpcConnectionQueue;
+@property bool clientDebug;
+@property (retain) NSMutableDictionary *pendingTaskCache;
+@property (retain) NSMutableDictionary *permissionCache;
+@property (retain) NSObject<OS_dispatch_queue> *permissionQueue;
+@property (retain) NSString *processName;
+@property (retain) NSObject<OS_dispatch_queue> *workQueue;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *xpcConnection;
+@property (retain) NSObject<OS_dispatch_queue> *xpcConnectionQueue;
 
 + (id)sharedInstance;
 

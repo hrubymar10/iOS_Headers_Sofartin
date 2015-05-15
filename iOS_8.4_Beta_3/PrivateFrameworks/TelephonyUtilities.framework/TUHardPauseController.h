@@ -9,11 +9,11 @@
     unsigned short _state;
 }
 
-@property(assign,readwrite) unsigned short cachedAppropriateState;
-@property(assign,retain) NSString * cachedDisplayString;
-@property(assign,readwrite) bool cachedValuesAreValid;
-@property(assign,readonly) NSString * displayString;
-@property(assign,readwrite) unsigned short state;
+@property unsigned short cachedAppropriateState;
+@property (retain) NSString *cachedDisplayString;
+@property bool cachedValuesAreValid;
+@property (nonatomic, readonly) NSString *displayString;
+@property (nonatomic) unsigned short state;
 
 + (id)sharedHardPauseController;
 

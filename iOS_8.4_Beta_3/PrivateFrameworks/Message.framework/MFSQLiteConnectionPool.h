@@ -18,12 +18,12 @@
     int _writersWaiting;
 }
 
-@property(assign,readonly) unsigned long long backgroundReadersWaiting;
-@property(assign,readwrite) unsigned long long cacheSize;
-@property(assign,readwrite) <MFSQLiteConnectionPoolDelegate> * delegate;
-@property(assign,readonly) unsigned long long maxConcurrentBackgroundReaders;
-@property(assign,readonly) unsigned long long maxConcurrentWriters;
-@property(assign,readonly) unsigned long long writersWaiting;
+@property (readonly) unsigned long long backgroundReadersWaiting;
+@property unsigned long long cacheSize;
+@property <MFSQLiteConnectionPoolDelegate> *delegate;
+@property (readonly) unsigned long long maxConcurrentBackgroundReaders;
+@property (readonly) unsigned long long maxConcurrentWriters;
+@property (readonly) unsigned long long writersWaiting;
 
 - (id)_connectionWithType:(unsigned long long)arg1;
 - (id)_semaphoreForConnectionType:(unsigned long long)arg1 waitCounter:(int**)arg2;

@@ -11,23 +11,23 @@
     MPUTransportButtonEventHandler *_transportButtonEventHandler;
 }
 
-@property(assign,readwrite) bool adjustsImageWhenHighlighted;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=_regularButton,assign,readonly) UIButton * regularButton;
-@property(assign,retain) UIImage * regularImage;
-@property(assign,readwrite) double regularImageAlpha;
-@property(assign,retain) UIColor * regularImageColor;
-@property(assign,readonly) UIImageView * regularImageView;
-@property(assign,readonly) Class superclass;
-@property(getter=_tintedButton,assign,readonly) UIButton * tintedButton;
-@property(assign,retain) UIImage * tintedImage;
-@property(assign,readwrite) double tintedImageAlpha;
-@property(assign,retain) UIColor * tintedImageColor;
-@property(assign,readonly) UIImageView * tintedImageView;
-@property(assign,readonly) MPUTransportButtonEventHandler * transportButtonEventHandler;
-@property(assign,readwrite) long long transportButtonImageViewContentMode;
+@property (nonatomic) bool adjustsImageWhenHighlighted;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=_regularButton, nonatomic, readonly) UIButton *regularButton;
+@property (nonatomic, retain) UIImage *regularImage;
+@property (nonatomic) double regularImageAlpha;
+@property (nonatomic, retain) UIColor *regularImageColor;
+@property (nonatomic, readonly) UIImageView *regularImageView;
+@property (readonly) Class superclass;
+@property (getter=_tintedButton, nonatomic, readonly) UIButton *tintedButton;
+@property (nonatomic, retain) UIImage *tintedImage;
+@property (nonatomic) double tintedImageAlpha;
+@property (nonatomic, retain) UIColor *tintedImageColor;
+@property (nonatomic, readonly) UIImageView *tintedImageView;
+@property (nonatomic, readonly) MPUTransportButtonEventHandler *transportButtonEventHandler;
+@property (nonatomic) long long transportButtonImageViewContentMode;
 
 + (id)transportButton;
 

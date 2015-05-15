@@ -6,7 +6,7 @@
     MPAVController *player;
 }
 
-@property(assign,retain) MPAVController * player;
+@property (nonatomic, retain) MPAVController *player;
 
 - (void).cxx_destruct;
 - (id)_automationID;

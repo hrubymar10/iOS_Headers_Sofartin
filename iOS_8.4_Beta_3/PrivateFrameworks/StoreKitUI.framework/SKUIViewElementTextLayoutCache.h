@@ -7,7 +7,7 @@
     NSMutableDictionary *_layoutMapTables;
 }
 
-@property(assign,readonly) SKUILayoutCache * layoutCache;
+@property (nonatomic, readonly) SKUILayoutCache *layoutCache;
 
 - (void).cxx_destruct;
 - (void)_addRequest:(id)arg1 forViewElement:(id)arg2;

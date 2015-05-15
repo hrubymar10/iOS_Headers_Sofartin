@@ -6,16 +6,16 @@
     NSDictionary *_defaultBillingAddresses;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) NSDictionary * defaultBillingAddresses;
-@property(assign,retain) CNContact * defaultContactEmail;
-@property(assign,retain) CNContact * defaultContactName;
-@property(assign,retain) CNContact * defaultContactPhone;
-@property(assign,retain) NSString * defaultPaymentPassIdentifier;
-@property(assign,retain) CNContact * defaultShippingAddress;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) NSDictionary *defaultBillingAddresses;
+@property (nonatomic, retain) CNContact *defaultContactEmail;
+@property (nonatomic, retain) CNContact *defaultContactName;
+@property (nonatomic, retain) CNContact *defaultContactPhone;
+@property (nonatomic, retain) NSString *defaultPaymentPassIdentifier;
+@property (nonatomic, retain) CNContact *defaultShippingAddress;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)defaults;
 

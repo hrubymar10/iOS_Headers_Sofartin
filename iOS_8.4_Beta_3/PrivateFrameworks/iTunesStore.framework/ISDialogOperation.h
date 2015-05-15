@@ -10,12 +10,12 @@
     id _userNotification;
 }
 
-@property(assign,readwrite) <ISDialogOperationDelegate> * delegate;
-@property(assign,retain) ISDialog * dialog;
-@property(assign,readwrite) bool performDefaultActions;
-@property(assign,retain) ISDialogButton * selectedButton;
-@property(assign,readonly) NSArray * textFieldValues;
-@property(assign,retain) id userNotification;
+@property <ISDialogOperationDelegate> *delegate;
+@property (retain) ISDialog *dialog;
+@property bool performDefaultActions;
+@property (retain) ISDialogButton *selectedButton;
+@property (readonly) NSArray *textFieldValues;
+@property (retain) id userNotification;
 
 + (id)operationWithDialog:(id)arg1;
 + (id)operationWithError:(id)arg1;

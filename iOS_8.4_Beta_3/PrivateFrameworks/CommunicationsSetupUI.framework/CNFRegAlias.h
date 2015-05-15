@@ -8,11 +8,11 @@
     NSString *_displayName;
 }
 
-@property(assign,retain) IMAccount * account;
-@property(assign,copy) NSString * alias;
-@property(assign,copy) NSString * displayName;
-@property(assign,retain) NSString * identifier;
-@property(assign,readonly) long long type;
+@property (nonatomic, retain) IMAccount *account;
+@property (nonatomic, copy) NSString *alias;
+@property (nonatomic, readonly, copy) NSString *displayName;
+@property (nonatomic, readonly, retain) NSString *identifier;
+@property (nonatomic, readonly) long long type;
 
 - (id)account;
 - (id)alias;

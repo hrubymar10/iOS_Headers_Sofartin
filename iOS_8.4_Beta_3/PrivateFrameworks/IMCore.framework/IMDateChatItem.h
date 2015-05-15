@@ -4,7 +4,7 @@
 
 @interface IMDateChatItem : IMTranscriptChatItem
 
-@property(assign,retain) NSDate * date;
+@property (nonatomic, readonly, retain) NSDate *date;
 
 - (Class)__ck_chatItemClass;
 - (id)_initWithItem:(id)arg1;

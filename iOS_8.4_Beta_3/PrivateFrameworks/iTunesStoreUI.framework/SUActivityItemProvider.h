@@ -10,10 +10,10 @@
     UIImage *_previewImage;
 }
 
-@property(assign,readwrite) <SUActivityItemProviderDelegate> * delegate;
-@property(setter=setSUActivity:,assign,retain) UIActivity * suActivity;
-@property(assign,readonly) id suLastProvidedItem;
-@property(setter=setSUPreviewImage:,assign,retain) UIImage * suPreviewImage;
+@property <SUActivityItemProviderDelegate> *delegate;
+@property (setter=setSUActivity:, retain) UIActivity *suActivity;
+@property (readonly) id suLastProvidedItem;
+@property (setter=setSUPreviewImage:, retain) UIImage *suPreviewImage;
 
 - (void)dealloc;
 - (id)delegate;

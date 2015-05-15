@@ -9,7 +9,7 @@
     id _value;
 }
 
-@property(assign,retain) id value;
+@property (nonatomic, retain) id value;
 
 - (void)dealloc;
 - (id)initWithKey:(id)arg1 startTime:(double)arg2 duration:(double)arg3;

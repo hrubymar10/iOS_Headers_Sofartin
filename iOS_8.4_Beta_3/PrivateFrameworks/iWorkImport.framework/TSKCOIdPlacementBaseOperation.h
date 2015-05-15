@@ -10,11 +10,11 @@
     int mToIndex;
 }
 
-@property(assign,readonly) TSKCOIdAddress * address;
-@property(assign,readonly) int fromIndex;
-@property(assign,readonly) bool isDominating;
-@property(assign,readonly) int placementType;
-@property(assign,readonly) int toIndex;
+@property (nonatomic, readonly) TSKCOIdAddress *address;
+@property (nonatomic, readonly) int fromIndex;
+@property (nonatomic, readonly) bool isDominating;
+@property (nonatomic, readonly) int placementType;
+@property (nonatomic, readonly) int toIndex;
 
 - (id)address;
 - (void)dealloc;

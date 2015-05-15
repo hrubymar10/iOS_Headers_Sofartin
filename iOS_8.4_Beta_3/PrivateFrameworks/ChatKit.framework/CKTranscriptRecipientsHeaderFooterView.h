@@ -11,12 +11,12 @@
     UIView *_topSeparator;
 }
 
-@property(assign,retain) UIView * bottomSeparator;
-@property(assign,retain) UILabel * headerLabel;
-@property(assign,retain) UITextView * locationSharingTextView;
-@property(assign,readwrite) double margin;
-@property(assign,retain) UILabel * preceedingSectionFooterLabel;
-@property(assign,retain) UIView * topSeparator;
+@property (nonatomic, retain) UIView *bottomSeparator;
+@property (nonatomic, retain) UILabel *headerLabel;
+@property (nonatomic, retain) UITextView *locationSharingTextView;
+@property (nonatomic) double margin;
+@property (nonatomic, retain) UILabel *preceedingSectionFooterLabel;
+@property (nonatomic, retain) UIView *topSeparator;
 
 + (id)identifier;
 

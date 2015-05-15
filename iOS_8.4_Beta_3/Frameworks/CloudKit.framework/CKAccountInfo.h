@@ -9,10 +9,10 @@
     NSString *_password;
 }
 
-@property(assign,readwrite) bool accountWantsPushRegistration;
-@property(assign,readonly) NSString * email;
-@property(assign,readwrite) bool isUnitTestingAccount;
-@property(assign,readonly) NSString * password;
+@property (nonatomic) bool accountWantsPushRegistration;
+@property (nonatomic, readonly) NSString *email;
+@property (nonatomic) bool isUnitTestingAccount;
+@property (nonatomic, readonly) NSString *password;
 
 + (bool)supportsSecureCoding;
 

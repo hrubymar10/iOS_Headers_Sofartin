@@ -9,15 +9,15 @@
     double _lastFreeSpaceRequest;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * deviceName;
-@property(assign,readonly) NSString * guid;
-@property(assign,readonly) NSString * hardwareName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * serialNumber;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSString * systemName;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) NSString *deviceName;
+@property (readonly) NSString *guid;
+@property (readonly) NSString *hardwareName;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSString *serialNumber;
+@property (readonly) Class superclass;
+@property (readonly) NSString *systemName;
 
 + (void)setSharedInstance:(id)arg1;
 + (id)sharedInstance;

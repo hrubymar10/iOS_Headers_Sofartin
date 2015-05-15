@@ -8,9 +8,9 @@
     NSDictionary *_nowPlayingInfo;
 }
 
-@property(assign,readonly) NSData * artworkData;
-@property(assign,readonly) NSString * artworkMIMEType;
-@property(assign,readonly) NSDictionary * nowPlayingInfo;
+@property (nonatomic, readonly) NSData *artworkData;
+@property (nonatomic, readonly) NSString *artworkMIMEType;
+@property (nonatomic, readonly) NSDictionary *nowPlayingInfo;
 
 + (unsigned int)_packetEventType;
 

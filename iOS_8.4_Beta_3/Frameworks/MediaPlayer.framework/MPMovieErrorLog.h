@@ -6,9 +6,9 @@
     AVPlayerItemErrorLog *_errorLog;
 }
 
-@property(assign,readonly) NSArray * events;
-@property(assign,readonly) NSData * extendedLogData;
-@property(assign,readonly) unsigned long long extendedLogDataStringEncoding;
+@property (nonatomic, readonly) NSArray *events;
+@property (nonatomic, readonly) NSData *extendedLogData;
+@property (nonatomic, readonly) unsigned long long extendedLogDataStringEncoding;
 
 - (void).cxx_destruct;
 - (id)_initWithAVItemErrorLog:(id)arg1;

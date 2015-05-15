@@ -10,17 +10,17 @@
     bool _showsHiddenCandidates;
 }
 
-@property(assign,readwrite) <UIKeyboardCandidateListDelegate> * candidateListDelegate;
-@property(assign,retain) TIKeyboardCandidateResultSet * candidateSet;
-@property(assign,readonly) NSArray * candidates;
-@property(assign,retain) Class cellClass;
-@property(assign,readonly) UIKBCandidateCollectionView * collectionView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UIKeyboardCandidateRowViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool showsHiddenCandidates;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) <UIKeyboardCandidateListDelegate> *candidateListDelegate;
+@property (nonatomic, retain) TIKeyboardCandidateResultSet *candidateSet;
+@property (nonatomic, readonly) NSArray *candidates;
+@property (nonatomic, retain) Class cellClass;
+@property (nonatomic, readonly) UIKBCandidateCollectionView *collectionView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UIKeyboardCandidateRowViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool showsHiddenCandidates;
+@property (readonly) Class superclass;
 
 + (double)suggestedHeightForCellClass:(Class)arg1;
 

@@ -7,12 +7,12 @@
     NSData *_encryptedData;
 }
 
-@property(assign,copy) NSData * data;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSData * encryptedData;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSData *data;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSData *encryptedData;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (bool)supportsSecureCoding;
 

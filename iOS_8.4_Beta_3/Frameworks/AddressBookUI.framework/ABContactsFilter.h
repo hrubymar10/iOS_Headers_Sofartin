@@ -10,17 +10,17 @@
     NSArray *_sources;
 }
 
-@property(assign,readonly) void* addressBook;
-@property(assign,readonly) void* directorySource;
-@property(getter=isEditable,assign,readonly) bool editable;
-@property(assign,readonly) void* groupForNewRecords;
-@property(assign,readonly) NSArray * groups;
-@property(assign,readonly) bool isDirectory;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) bool shouldChangeModelSelectionWhenDisplayed;
-@property(assign,readonly) bool showsAllContacts;
-@property(assign,readonly) void* sourceForNewRecords;
-@property(assign,readonly) NSArray * sources;
+@property (nonatomic, readonly) void*addressBook;
+@property (nonatomic, readonly) void*directorySource;
+@property (getter=isEditable, nonatomic, readonly) bool editable;
+@property (nonatomic, readonly) void*groupForNewRecords;
+@property (nonatomic, readonly) NSArray *groups;
+@property (nonatomic, readonly) bool isDirectory;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) bool shouldChangeModelSelectionWhenDisplayed;
+@property (nonatomic, readonly) bool showsAllContacts;
+@property (nonatomic, readonly) void*sourceForNewRecords;
+@property (nonatomic, readonly) NSArray *sources;
 
 + (id)_newContactsFilterFromGroupWrapperRepresentation:(id)arg1 withAddressBook:(void*)arg2;
 + (id)newContactsFilterFromDictionaryRepresentation:(id)arg1 withAddressBook:(void*)arg2;

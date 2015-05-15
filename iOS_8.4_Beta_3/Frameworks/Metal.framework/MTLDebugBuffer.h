@@ -9,10 +9,10 @@
     bool _purgeableStateHasBeenSet;
 }
 
-@property(assign,readwrite) unsigned long long options;
-@property(assign,readonly) const void* pointer;
-@property(assign,readonly) unsigned long long purgeableState;
-@property(assign,readonly) bool purgeableStateHasBeenSet;
+@property (nonatomic) unsigned long long options;
+@property (nonatomic, readonly) const void*pointer;
+@property (nonatomic, readonly) unsigned long long purgeableState;
+@property (nonatomic, readonly) bool purgeableStateHasBeenSet;
 
 - (id)description;
 - (id)initWithBuffer:(id)arg1 device:(id)arg2 bytes:(const void*)arg3 options:(unsigned long long)arg4;

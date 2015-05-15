@@ -7,20 +7,20 @@
     NSMutableDictionary *_parameters;
 }
 
-@property(assign,retain) NSArray * byday;
-@property(assign,retain) NSArray * byhour;
-@property(assign,retain) NSArray * byminute;
-@property(assign,retain) NSArray * bymonth;
-@property(assign,retain) NSArray * bymonthday;
-@property(assign,retain) NSArray * bysecond;
-@property(assign,retain) NSArray * bysetpos;
-@property(assign,retain) NSArray * byweekno;
-@property(assign,retain) NSArray * byyearday;
-@property(assign,readwrite) NSNumber * count;
-@property(assign,readwrite) int freq;
-@property(assign,readwrite) NSNumber * interval;
-@property(assign,retain) ICSDateValue * until;
-@property(assign,readwrite) NSNumber * wkst;
+@property (nonatomic, retain) NSArray *byday;
+@property (nonatomic, retain) NSArray *byhour;
+@property (nonatomic, retain) NSArray *byminute;
+@property (nonatomic, retain) NSArray *bymonth;
+@property (nonatomic, retain) NSArray *bymonthday;
+@property (nonatomic, retain) NSArray *bysecond;
+@property (nonatomic, retain) NSArray *bysetpos;
+@property (nonatomic, retain) NSArray *byweekno;
+@property (nonatomic, retain) NSArray *byyearday;
+@property (nonatomic) NSNumber *count;
+@property (nonatomic) int freq;
+@property (nonatomic) NSNumber *interval;
+@property (nonatomic, retain) ICSDateValue *until;
+@property (nonatomic) NSNumber *wkst;
 
 + (id)recurrenceRuleFromICSCString:(const char *)arg1 withTokenizer:(id)arg2;
 + (id)recurrenceRuleFromICSString:(id)arg1;

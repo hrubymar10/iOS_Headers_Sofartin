@@ -7,8 +7,8 @@
     NSArray *_resourceNames;
 }
 
-@property(assign,retain) NSArray * attributions;
-@property(assign,retain) NSArray * resourceNames;
+@property (nonatomic, retain) NSArray *attributions;
+@property (nonatomic, retain) NSArray *resourceNames;
 
 - (id)attributions;
 - (void)dealloc;

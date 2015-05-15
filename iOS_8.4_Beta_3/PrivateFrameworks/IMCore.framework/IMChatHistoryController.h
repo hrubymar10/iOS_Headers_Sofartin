@@ -6,7 +6,7 @@
     NSMutableDictionary *_runningQueries;
 }
 
-@property(assign,retain) NSMutableDictionary * _runningQueries;
+@property (retain) NSMutableDictionary *_runningQueries;
 
 + (id)sharedInstance;
 

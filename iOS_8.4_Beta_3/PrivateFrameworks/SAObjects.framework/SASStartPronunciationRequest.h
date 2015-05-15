@@ -4,7 +4,7 @@
 
 @interface SASStartPronunciationRequest : SASStartSpeech
 
-@property(assign,retain) SASPronunciationContext * context;
+@property (nonatomic, retain) SASPronunciationContext *context;
 
 + (id)startPronunciationRequest;
 + (id)startPronunciationRequestWithDictionary:(id)arg1 context:(id)arg2;

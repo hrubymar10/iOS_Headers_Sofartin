@@ -6,7 +6,7 @@
     bool _onlyShowsFourButtons;
 }
 
-@property(assign,readwrite) bool onlyShowsFourButtons;
+@property (nonatomic) bool onlyShowsFourButtons;
 
 - (void)_addButtonAtPosition:(long long)arg1 withIcon:(id)arg2 title:(id)arg3;
 - (void)addButtons;

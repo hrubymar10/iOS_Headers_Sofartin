@@ -7,7 +7,7 @@
     double _pictureDiameter;
 }
 
-@property(assign,readonly) double pictureDiameter;
+@property (nonatomic, readonly) double pictureDiameter;
 
 + (id)sharedCache;
 

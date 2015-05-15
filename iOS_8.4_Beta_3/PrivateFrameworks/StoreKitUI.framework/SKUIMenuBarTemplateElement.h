@@ -4,8 +4,8 @@
 
 @interface SKUIMenuBarTemplateElement : SKUIViewElement
 
-@property(assign,readonly) SKUIViewElement<SKUIMenuBarViewElement> * menuBar;
-@property(assign,readonly) SKUINavigationBarViewElement * navigationBarElement;
+@property (nonatomic, readonly) SKUIViewElement<SKUIMenuBarViewElement> *menuBar;
+@property (nonatomic, readonly) SKUINavigationBarViewElement *navigationBarElement;
 
 - (id)_menuBarChildOfElement:(id)arg1;
 - (id)menuBar;

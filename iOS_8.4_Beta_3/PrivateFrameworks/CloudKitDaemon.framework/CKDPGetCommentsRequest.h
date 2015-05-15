@@ -13,16 +13,16 @@
     NSString *_path;
 }
 
-@property(assign,retain) NSData * continuationMarker;
-@property(assign,readonly) bool hasContinuationMarker;
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,readwrite) bool hasLimit;
-@property(assign,readonly) bool hasOrderBy;
-@property(assign,readonly) bool hasPath;
-@property(assign,retain) CKDPCommentedOnId * identifier;
-@property(assign,readwrite) unsigned int limit;
-@property(assign,retain) CKDPQuerySort * orderBy;
-@property(assign,retain) NSString * path;
+@property (nonatomic, retain) NSData *continuationMarker;
+@property (nonatomic, readonly) bool hasContinuationMarker;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic) bool hasLimit;
+@property (nonatomic, readonly) bool hasOrderBy;
+@property (nonatomic, readonly) bool hasPath;
+@property (nonatomic, retain) CKDPCommentedOnId *identifier;
+@property (nonatomic) unsigned int limit;
+@property (nonatomic, retain) CKDPQuerySort *orderBy;
+@property (nonatomic, retain) NSString *path;
 
 + (id)options;
 

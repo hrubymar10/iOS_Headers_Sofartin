@@ -7,8 +7,8 @@
     NSString *_targetAssetUuid;
 }
 
-@property(assign,retain) CPLResource * resource;
-@property(assign,copy) NSString * targetAssetUuid;
+@property (nonatomic, retain) CPLResource *resource;
+@property (nonatomic, copy) NSString *targetAssetUuid;
 
 - (void)dealloc;
 - (unsigned long long)hash;

@@ -27,13 +27,13 @@
     } mTextSize;
 }
 
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,readwrite) struct CGImage { }* cachedImage;
-@property(assign,readwrite) double cachedImageScreenScale;
-@property(assign,retain) TSTExpressionNode * expressionNode;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(getter=neverShowsMenu,assign,readwrite) bool neverShowsMenu;
-@property(getter=isSelected,assign,readwrite) bool selected;
+@property (getter=isActive, nonatomic) bool active;
+@property (nonatomic) struct CGImage { }*cachedImage;
+@property (nonatomic) double cachedImageScreenScale;
+@property (nonatomic, retain) TSTExpressionNode *expressionNode;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (getter=neverShowsMenu, nonatomic) bool neverShowsMenu;
+@property (getter=isSelected, nonatomic) bool selected;
 
 - (id).cxx_construct;
 - (struct CGImage { }*)cachedImage;

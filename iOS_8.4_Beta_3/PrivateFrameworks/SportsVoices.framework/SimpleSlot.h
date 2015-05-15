@@ -6,7 +6,7 @@
     Cell *_cell;
 }
 
-@property(assign,retain) Cell * cell;
+@property (retain) Cell *cell;
 
 + (id)blank;
 + (id)empty;

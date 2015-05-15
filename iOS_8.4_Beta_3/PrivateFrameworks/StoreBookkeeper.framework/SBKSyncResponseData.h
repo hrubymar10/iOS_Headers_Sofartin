@@ -13,14 +13,14 @@
     NSArray *_updatedKeys;
 }
 
-@property(assign,readonly) NSArray * conflictedKeys;
-@property(assign,readonly) NSArray * deletedKeys;
-@property(assign,retain) NSMutableDictionary * responseOpEntiesByKey;
-@property(assign,readonly) NSArray * successfullyDeletedKeys;
-@property(assign,readonly) NSArray * successfullyUpdatedKeys;
-@property(assign,copy) NSString * syncAnchor;
-@property(assign,readonly) SBKSyncTransaction * transaction;
-@property(assign,readonly) NSArray * updatedKeys;
+@property (readonly) NSArray *conflictedKeys;
+@property (readonly) NSArray *deletedKeys;
+@property (retain) NSMutableDictionary *responseOpEntiesByKey;
+@property (readonly) NSArray *successfullyDeletedKeys;
+@property (readonly) NSArray *successfullyUpdatedKeys;
+@property (readonly, copy) NSString *syncAnchor;
+@property (readonly) SBKSyncTransaction *transaction;
+@property (readonly) NSArray *updatedKeys;
 
 + (id)deserializedResponseBodyWithTransaction:(id)arg1 responseDictionary:(id)arg2 response:(id)arg3;
 

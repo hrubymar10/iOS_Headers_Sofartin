@@ -9,10 +9,10 @@
     UIButton *_playbackButton;
 }
 
-@property(assign,readwrite) long long backgroundStyle;
-@property(assign,readonly) UIButton * cancelButton;
-@property(assign,readonly) UIButton * doneButton;
-@property(assign,readonly) UIButton * playbackButton;
+@property (nonatomic) long long backgroundStyle;
+@property (nonatomic, readonly) UIButton *cancelButton;
+@property (nonatomic, readonly) UIButton *doneButton;
+@property (nonatomic, readonly) UIButton *playbackButton;
 
 - (void)_commonPLCropOverlayEditPhotoBottomBarInitialization;
 - (void)_updateBackgroundStyle;

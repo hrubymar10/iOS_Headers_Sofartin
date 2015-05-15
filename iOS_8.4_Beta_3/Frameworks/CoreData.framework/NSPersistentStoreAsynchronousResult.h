@@ -10,10 +10,10 @@
     NSProgress *_requestProgress;
 }
 
-@property(assign,readonly) NSManagedObjectContext * managedObjectContext;
-@property(assign,retain) NSError * operationError;
-@property(assign,retain) NSProgress * progress;
-@property(assign,copy) id requestCompletionBlock;
+@property (readonly) NSManagedObjectContext *managedObjectContext;
+@property (retain) NSError *operationError;
+@property (retain) NSProgress *progress;
+@property (copy) id requestCompletionBlock;
 
 - (void)_cancelProgress;
 - (bool)_isCancelled;

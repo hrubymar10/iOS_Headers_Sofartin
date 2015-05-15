@@ -4,9 +4,9 @@
 
 @interface CRCameraReaderOutputExpirationDate : CRCameraReaderOutput
 
-@property(assign,readonly) NSNumber * dayValue;
-@property(assign,readonly) NSNumber * monthValue;
-@property(assign,readonly) NSNumber * yearValue;
+@property (readonly) NSNumber *dayValue;
+@property (readonly) NSNumber *monthValue;
+@property (readonly) NSNumber *yearValue;
 
 - (id)dayValue;
 - (id)monthValue;

@@ -28,14 +28,14 @@
     bool _waitingForReady;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CBPeripheralManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isAdvertising;
-@property(assign,readonly) CBPairingAgent * sharedPairingAgent;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CBPeripheralManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property bool isAdvertising;
+@property (nonatomic, readonly) CBPairingAgent *sharedPairingAgent;
+@property long long state;
+@property (readonly) Class superclass;
 
 + (long long)authorizationStatus;
 

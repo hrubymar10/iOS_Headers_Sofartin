@@ -8,12 +8,12 @@
     bool _showsThumb;
 }
 
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } currentTimeFrame;
-@property(assign,retain) UILabel * currentTimeLabel;
-@property(assign,readonly) double markerMidHeight;
-@property(assign,readonly) double markerWidth;
-@property(assign,readwrite) bool showsLine;
-@property(assign,readwrite) bool showsThumb;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } currentTimeFrame;
+@property (nonatomic, retain) UILabel *currentTimeLabel;
+@property (nonatomic, readonly) double markerMidHeight;
+@property (nonatomic, readonly) double markerWidth;
+@property (nonatomic) bool showsLine;
+@property (nonatomic) bool showsThumb;
 
 + (double)_spacingAdjustmentFontSize;
 + (id)timeMarkerFont;

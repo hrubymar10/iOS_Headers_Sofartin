@@ -7,10 +7,10 @@
     NSString *_value;
 }
 
-@property(assign,readonly) bool hasKey;
-@property(assign,readonly) bool hasValue;
-@property(assign,retain) NSString * key;
-@property(assign,retain) NSString * value;
+@property (nonatomic, readonly) bool hasKey;
+@property (nonatomic, readonly) bool hasValue;
+@property (nonatomic, retain) NSString *key;
+@property (nonatomic, retain) NSString *value;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

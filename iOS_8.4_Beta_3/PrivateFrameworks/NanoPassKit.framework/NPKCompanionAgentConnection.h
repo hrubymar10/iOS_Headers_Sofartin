@@ -10,9 +10,9 @@
     NSObject<OS_dispatch_queue> *_xpcConnectionQueue;
 }
 
-@property(assign,retain) NSMutableDictionary * cachedPasses;
-@property(assign,retain) NSMutableSet * cachedUniqueIDs;
-@property(assign,readonly) NSXPCConnection * xpcConnection;
+@property (retain) NSMutableDictionary *cachedPasses;
+@property (retain) NSMutableSet *cachedUniqueIDs;
+@property (readonly) NSXPCConnection *xpcConnection;
 
 - (void).cxx_destruct;
 - (void)_addPassToCache:(id)arg1;

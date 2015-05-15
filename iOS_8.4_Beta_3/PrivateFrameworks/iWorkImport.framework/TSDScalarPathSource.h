@@ -11,10 +11,10 @@
     int mType;
 }
 
-@property(assign,readonly) double maxScalar;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } naturalSize;
-@property(assign,readwrite) double scalar;
-@property(assign,readwrite) int type;
+@property (nonatomic, readonly) double maxScalar;
+@property (nonatomic) struct CGSize { double x1; double x2; } naturalSize;
+@property (nonatomic) double scalar;
+@property (nonatomic) int type;
 
 + (id)chevronWithScalar:(double)arg1 naturalSize:(struct CGSize { double x1; double x2; })arg2;
 + (id)pathSourceWithType:(int)arg1 scalar:(double)arg2 naturalSize:(struct CGSize { double x1; double x2; })arg3;

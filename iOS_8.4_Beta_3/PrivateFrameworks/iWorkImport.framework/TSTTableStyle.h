@@ -4,28 +4,28 @@
 
 @interface TSTTableStyle : TSSStyle <TSDMixing, TSTTableStrokeProviding>
 
-@property(assign,readonly) TSDStroke * bodyColumnStroke;
-@property(assign,readonly) TSDStroke * bodyRowStroke;
-@property(assign,readonly) TSDStroke * bodyRowStrokeEvenIfNotVisible;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) TSDStroke * defaultHorizontalBorderStroke;
-@property(assign,readonly) TSDStroke * defaultHorizontalBorderStrokeEvenIfNotVisible;
-@property(assign,readonly) TSDStroke * defaultVerticalBorderStroke;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) TSDStroke * footerRowBodyColumnStroke;
-@property(assign,readonly) TSDStroke * footerRowBodyRowStroke;
-@property(assign,readonly) TSDStroke * footerRowBorderStroke;
-@property(assign,readonly) TSDStroke * footerRowSeparatorStroke;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) TSDStroke * headerColumnBodyColumnStroke;
-@property(assign,readonly) TSDStroke * headerColumnBodyRowStroke;
-@property(assign,readonly) TSDStroke * headerColumnBorderStroke;
-@property(assign,readonly) TSDStroke * headerColumnSeparatorStroke;
-@property(assign,readonly) TSDStroke * headerRowBodyColumnStroke;
-@property(assign,readonly) TSDStroke * headerRowBodyRowStroke;
-@property(assign,readonly) TSDStroke * headerRowBorderStroke;
-@property(assign,readonly) TSDStroke * headerRowSeparatorStroke;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) TSDStroke *bodyColumnStroke;
+@property (nonatomic, readonly) TSDStroke *bodyRowStroke;
+@property (nonatomic, readonly) TSDStroke *bodyRowStrokeEvenIfNotVisible;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) TSDStroke *defaultHorizontalBorderStroke;
+@property (nonatomic, readonly) TSDStroke *defaultHorizontalBorderStrokeEvenIfNotVisible;
+@property (nonatomic, readonly) TSDStroke *defaultVerticalBorderStroke;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) TSDStroke *footerRowBodyColumnStroke;
+@property (nonatomic, readonly) TSDStroke *footerRowBodyRowStroke;
+@property (nonatomic, readonly) TSDStroke *footerRowBorderStroke;
+@property (nonatomic, readonly) TSDStroke *footerRowSeparatorStroke;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) TSDStroke *headerColumnBodyColumnStroke;
+@property (nonatomic, readonly) TSDStroke *headerColumnBodyRowStroke;
+@property (nonatomic, readonly) TSDStroke *headerColumnBorderStroke;
+@property (nonatomic, readonly) TSDStroke *headerColumnSeparatorStroke;
+@property (nonatomic, readonly) TSDStroke *headerRowBodyColumnStroke;
+@property (nonatomic, readonly) TSDStroke *headerRowBodyRowStroke;
+@property (nonatomic, readonly) TSDStroke *headerRowBorderStroke;
+@property (nonatomic, readonly) TSDStroke *headerRowSeparatorStroke;
+@property (readonly) Class superclass;
 
 + (void)initDefaultPropertyMap:(id)arg1 presetID:(unsigned long long)arg2 colors:(id)arg3 alternate:(int)arg4;
 + (void)initDefaultStrokePresetListInPropertyMap:(id)arg1 presetID:(unsigned long long)arg2 colors:(id)arg3;

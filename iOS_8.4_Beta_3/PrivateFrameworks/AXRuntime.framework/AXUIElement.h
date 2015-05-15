@@ -9,12 +9,12 @@
     bool _isValid;
 }
 
-@property(assign,readonly) struct __AXUIElement { }* axElement;
-@property(assign,readwrite) struct __CFDictionary { }* cachedAttributes;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) struct __AXUIElement { }*axElement;
+@property (nonatomic) struct __CFDictionary { }*cachedAttributes;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (void)applyElementAttributeCacheScheme:(int)arg1;
 + (void)initialize;

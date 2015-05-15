@@ -4,7 +4,7 @@
 
 @interface SALocalSearchGetNavigationStatus : SADomainCommand
 
-@property(assign,copy) NSNumber * getRoute;
+@property (nonatomic, copy) NSNumber *getRoute;
 
 + (id)getNavigationStatus;
 + (id)getNavigationStatusWithDictionary:(id)arg1 context:(id)arg2;

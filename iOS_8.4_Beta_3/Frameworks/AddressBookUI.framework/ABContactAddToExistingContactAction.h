@@ -7,12 +7,12 @@
     ABPeoplePickerNavigationController *_peoplePicker;
 }
 
-@property(assign,retain) CNContact * chosenContact;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) ABPeoplePickerNavigationController * peoplePicker;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) CNContact *chosenContact;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) ABPeoplePickerNavigationController *peoplePicker;
+@property (readonly) Class superclass;
 
 - (id)chosenContact;
 - (void)dealloc;

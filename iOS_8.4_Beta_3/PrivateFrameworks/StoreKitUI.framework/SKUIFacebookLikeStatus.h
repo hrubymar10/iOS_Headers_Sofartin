@@ -8,9 +8,9 @@
     bool _userLiked;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,copy) NSArray * friendNames;
-@property(getter=isUserLiked,assign,readwrite) bool userLiked;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, copy) NSArray *friendNames;
+@property (getter=isUserLiked, nonatomic) bool userLiked;
 
 - (void).cxx_destruct;
 - (id)URL;

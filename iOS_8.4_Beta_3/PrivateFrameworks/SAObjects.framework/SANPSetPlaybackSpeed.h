@@ -4,7 +4,7 @@
 
 @interface SANPSetPlaybackSpeed : SADomainCommand
 
-@property(assign,readwrite) double scalingFactor;
+@property (nonatomic) double scalingFactor;
 
 + (id)setPlaybackSpeed;
 + (id)setPlaybackSpeedWithDictionary:(id)arg1 context:(id)arg2;

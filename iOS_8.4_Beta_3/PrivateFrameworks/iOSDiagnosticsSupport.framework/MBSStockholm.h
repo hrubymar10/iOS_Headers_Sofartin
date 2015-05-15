@@ -8,13 +8,13 @@
     NSObject<OS_dispatch_semaphore> *_semaphore;
 }
 
-@property(assign,retain) NFCardEmulation * cardEmulation;
-@property(assign,readwrite) bool cardEmulationSuspended;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_semaphore> * semaphore;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NFCardEmulation *cardEmulation;
+@property (nonatomic) bool cardEmulationSuspended;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_semaphore> *semaphore;
+@property (readonly) Class superclass;
 
 - (id)cardEmulation;
 - (void)cardEmulation:(id)arg1 didChangeRestrictedMode:(bool)arg2;

@@ -15,15 +15,15 @@
     bool isPaused;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isPaused;
-@property(assign,readonly) bool isSpeaking;
-@property(assign,retain) NSNumber * originalSpeechRateForJobOverride;
-@property(assign,readonly) bool showControlCenterControls;
-@property(assign,readwrite) bool speechEnabled;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isPaused;
+@property (nonatomic, readonly) bool isSpeaking;
+@property (nonatomic, retain) NSNumber *originalSpeechRateForJobOverride;
+@property (nonatomic, readonly) bool showControlCenterControls;
+@property (nonatomic) bool speechEnabled;
+@property (readonly) Class superclass;
 
 + (id)availableLanguageCodes;
 + (struct URegularExpression { }*)createRegularExpressionFromString:(id)arg1;

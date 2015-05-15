@@ -4,8 +4,8 @@
 
 @interface DOMHTMLOptGroupElement : DOMHTMLElement
 
-@property(assign,readwrite) bool disabled;
-@property(assign,copy) NSString * label;
+@property bool disabled;
+@property (copy) NSString *label;
 
 - (id)createPickerCell;
 - (id)createSelectedItem;

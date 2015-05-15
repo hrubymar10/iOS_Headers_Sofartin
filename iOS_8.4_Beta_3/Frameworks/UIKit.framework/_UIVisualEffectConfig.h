@@ -7,8 +7,8 @@
     NSMutableArray *_layerConfigs;
 }
 
-@property(assign,readonly) _UIVisualEffectLayerConfig * contentConfig;
-@property(assign,readonly) NSArray * layerConfigs;
+@property (nonatomic, readonly) _UIVisualEffectLayerConfig *contentConfig;
+@property (nonatomic, readonly) NSArray *layerConfigs;
 
 + (id)configWithContentConfig:(id)arg1;
 + (id)configWithLayerConfigs:(id)arg1;

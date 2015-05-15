@@ -4,7 +4,7 @@
 
 @interface SAAssistantNotReady : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * language;
+@property (nonatomic, copy) NSString *language;
 
 + (id)assistantNotReady;
 + (id)assistantNotReadyWithDictionary:(id)arg1 context:(id)arg2;

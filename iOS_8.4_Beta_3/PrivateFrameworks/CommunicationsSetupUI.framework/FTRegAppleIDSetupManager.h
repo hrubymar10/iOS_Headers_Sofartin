@@ -12,14 +12,14 @@
     NSMutableDictionary *_setupOperations;
 }
 
-@property(assign,copy) NSArray * candidateAliases;
-@property(assign,retain) IDSAccountController * faceTimeAccountController;
-@property(assign,copy) id handler;
-@property(assign,retain) IDSAccountController * iMessageAccountController;
-@property(assign,copy) NSArray * selectedAliases;
-@property(assign,copy) NSString * selectionSummaryText;
-@property(assign,retain) NSMutableDictionary * setupOperations;
-@property(assign,readonly) bool shouldShowAliasSelectionUI;
+@property (nonatomic, copy) NSArray *candidateAliases;
+@property (nonatomic, retain) IDSAccountController *faceTimeAccountController;
+@property (nonatomic, copy) id handler;
+@property (nonatomic, retain) IDSAccountController *iMessageAccountController;
+@property (nonatomic, copy) NSArray *selectedAliases;
+@property (nonatomic, copy) NSString *selectionSummaryText;
+@property (nonatomic, retain) NSMutableDictionary *setupOperations;
+@property (nonatomic, readonly) bool shouldShowAliasSelectionUI;
 
 + (id)sharedInstance;
 

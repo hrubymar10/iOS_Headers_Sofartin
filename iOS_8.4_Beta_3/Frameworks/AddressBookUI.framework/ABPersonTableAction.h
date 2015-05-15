@@ -23,24 +23,24 @@
     NSString *_title;
 }
 
-@property(assign,retain) UIView * actionContentView;
-@property(assign,readwrite) bool allowDifferentiationSheet;
-@property(assign,readonly) UIButton * button;
-@property(assign,readwrite) <ABPersonTableActionDelegate> * delegate;
-@property(assign,readonly) NSString * detailText;
-@property(assign,copy) NSString * differentiationSheetTitle;
-@property(assign,readwrite) bool displaysShortTitle;
-@property(assign,readonly) UIButton * existingButton;
-@property(assign,readwrite) long long grouping;
-@property(assign,readwrite) bool indicatesFaceTimeHistory;
-@property(assign,readwrite) long long ordering;
-@property(assign,readwrite) struct __CFArray { }* properties;
-@property(assign,readonly) int property;
-@property(assign,readonly) SEL selector;
-@property(assign,readonly) NSString * shortTitle;
-@property(assign,readonly) int style;
-@property(assign,readonly) id target;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, retain) UIView *actionContentView;
+@property (nonatomic) bool allowDifferentiationSheet;
+@property (nonatomic, readonly) UIButton *button;
+@property (nonatomic) <ABPersonTableActionDelegate> *delegate;
+@property (nonatomic, readonly) NSString *detailText;
+@property (nonatomic, copy) NSString *differentiationSheetTitle;
+@property (nonatomic) bool displaysShortTitle;
+@property (nonatomic, readonly) UIButton *existingButton;
+@property (nonatomic) long long grouping;
+@property (nonatomic) bool indicatesFaceTimeHistory;
+@property (nonatomic) long long ordering;
+@property (nonatomic) struct __CFArray { }*properties;
+@property (nonatomic, readonly) int property;
+@property (nonatomic, readonly) SEL selector;
+@property (nonatomic, readonly) NSString *shortTitle;
+@property (nonatomic, readonly) int style;
+@property (nonatomic, readonly) id target;
+@property (nonatomic, readonly) NSString *title;
 
 - (id)actionContentView;
 - (bool)allowDifferentiationSheet;

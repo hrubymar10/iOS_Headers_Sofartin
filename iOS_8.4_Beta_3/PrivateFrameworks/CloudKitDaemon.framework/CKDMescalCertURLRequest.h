@@ -6,7 +6,7 @@
     NSData *_mescalCert;
 }
 
-@property(assign,retain) NSData * mescalCert;
+@property (nonatomic, retain) NSData *mescalCert;
 
 - (void).cxx_destruct;
 - (bool)allowsAnonymousAccount;

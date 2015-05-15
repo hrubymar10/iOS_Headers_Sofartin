@@ -7,8 +7,8 @@
     NSArray *_strings;
 }
 
-@property(assign,readonly) NSIndexSet * indexSetOfCommentStrings;
-@property(assign,readonly) NSArray * strings;
+@property (nonatomic, readonly) NSIndexSet *indexSetOfCommentStrings;
+@property (nonatomic, readonly) NSArray *strings;
 
 - (void).cxx_destruct;
 - (id)indexSetOfCommentStrings;

@@ -8,9 +8,9 @@
     unsigned int _role;
 }
 
-@property(assign,retain) SGStorageContact * contact;
-@property(assign,retain) SGIdentityKey * participatingIdentity;
-@property(assign,readwrite) unsigned int role;
+@property (nonatomic, retain) SGStorageContact *contact;
+@property (nonatomic, retain) SGIdentityKey *participatingIdentity;
+@property (nonatomic) unsigned int role;
 
 + (id)participantWithContact:(id)arg1 participatingIdentity:(id)arg2 roleType:(unsigned int)arg3;
 

@@ -7,10 +7,10 @@
     int mType;
 }
 
-@property(assign,readonly) unsigned long long index;
-@property(assign,readonly) bool isReferenceLine;
-@property(assign,readonly) bool isSeries;
-@property(assign,readonly) int type;
+@property (nonatomic, readonly) unsigned long long index;
+@property (nonatomic, readonly) bool isReferenceLine;
+@property (nonatomic, readonly) bool isSeries;
+@property (nonatomic, readonly) int type;
 
 + (id)styleSemanticTagWithType:(int)arg1 index:(unsigned long long)arg2;
 

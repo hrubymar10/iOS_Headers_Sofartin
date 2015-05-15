@@ -7,9 +7,9 @@
     NSMutableArray *_nodes;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) unsigned long long firstEmptyIndex;
-@property(assign,readonly) unsigned long long maximumIndex;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, readonly) unsigned long long firstEmptyIndex;
+@property (nonatomic, readonly) unsigned long long maximumIndex;
 
 + (bool)supportsSecureCoding;
 

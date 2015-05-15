@@ -16,14 +16,14 @@
     bool _shouldFilterDefaultValuesForNewProperties;
 }
 
-@property(assign,readwrite) unsigned long long changeType;
-@property(assign,copy) NSDate * dateDeleted;
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) bool inExpunged;
-@property(assign,readwrite) bool inTrash;
-@property(assign,copy) NSString * realIdentifier;
-@property(assign,copy) NSData * recordChangeData;
-@property(assign,copy) NSDate * recordModificationDate;
+@property (nonatomic) unsigned long long changeType;
+@property (nonatomic, copy) NSDate *dateDeleted;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic) bool inExpunged;
+@property (nonatomic) bool inTrash;
+@property (nonatomic, copy) NSString *realIdentifier;
+@property (nonatomic, copy) NSData *recordChangeData;
+@property (nonatomic, copy) NSDate *recordModificationDate;
 
 + (id)_descriptionForChangeType:(unsigned long long)arg1 isSparseFullChange:(bool)arg2;
 + (Class)classForStoredClassName:(id)arg1 forCPLArchiver:(id)arg2;

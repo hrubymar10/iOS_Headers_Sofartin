@@ -17,14 +17,14 @@
     NSString *_lockupTitle;
 }
 
-@property(assign,readonly) NSString * learnMoreAddPassButtonTitle;
-@property(assign,readonly) NSString * learnMoreDoneButtonTitle;
-@property(assign,readonly) NSString * learnMoreExplanation;
-@property(assign,readonly) NSString * learnMoreTitle;
-@property(assign,readonly) NSString * learnMoreViewPassButtonTitle;
-@property(assign,readonly) NSString * lockupDescription;
-@property(assign,readonly) NSString * lockupLearnMoreLinkTitle;
-@property(assign,readonly) NSString * lockupTitle;
+@property (nonatomic, readonly) NSString *learnMoreAddPassButtonTitle;
+@property (nonatomic, readonly) NSString *learnMoreDoneButtonTitle;
+@property (nonatomic, readonly) NSString *learnMoreExplanation;
+@property (nonatomic, readonly) NSString *learnMoreTitle;
+@property (nonatomic, readonly) NSString *learnMoreViewPassButtonTitle;
+@property (nonatomic, readonly) NSString *lockupDescription;
+@property (nonatomic, readonly) NSString *lockupLearnMoreLinkTitle;
+@property (nonatomic, readonly) NSString *lockupTitle;
 
 - (void).cxx_destruct;
 - (id)initWithITunesPassDictionary:(id)arg1 clientContext:(id)arg2;

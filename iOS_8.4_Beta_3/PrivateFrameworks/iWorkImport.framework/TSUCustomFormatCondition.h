@@ -8,9 +8,9 @@
     TSUCustomFormatData *mData;
 }
 
-@property(assign,readonly) int conditionType;
-@property(assign,readonly) double conditionValue;
-@property(assign,readonly) TSUCustomFormatData * data;
+@property (nonatomic, readonly) int conditionType;
+@property (nonatomic, readonly) double conditionValue;
+@property (nonatomic, readonly) TSUCustomFormatData *data;
 
 - (int)conditionType;
 - (double)conditionValue;

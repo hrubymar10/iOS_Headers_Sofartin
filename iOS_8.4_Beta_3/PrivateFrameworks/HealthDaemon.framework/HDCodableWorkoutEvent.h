@@ -11,10 +11,10 @@
     long long _type;
 }
 
-@property(assign,readwrite) double date;
-@property(assign,readwrite) bool hasDate;
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) long long type;
+@property (nonatomic) double date;
+@property (nonatomic) bool hasDate;
+@property (nonatomic) bool hasType;
+@property (nonatomic) long long type;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

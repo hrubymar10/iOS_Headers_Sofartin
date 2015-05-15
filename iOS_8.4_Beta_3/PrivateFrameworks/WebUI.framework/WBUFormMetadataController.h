@@ -6,7 +6,7 @@
     WebScriptWorld *_scriptWorld;
 }
 
-@property(assign,readonly) WebScriptWorld * scriptWorld;
+@property (nonatomic, readonly) WebScriptWorld *scriptWorld;
 
 + (id)sharedFormMetadataController;
 

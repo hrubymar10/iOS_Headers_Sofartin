@@ -13,14 +13,14 @@
     long long _status;
 }
 
-@property(assign,readonly) double completionScore;
-@property(assign,readonly) NSString * completionString;
-@property(assign,readonly) NSString * errorCodeString;
-@property(assign,readonly) NSString * feedbackQueryIdentifier;
-@property(assign,readonly) double maxAge;
-@property(assign,readonly) NSString * prefix;
-@property(assign,readonly) NSArray * results;
-@property(assign,readonly) long long status;
+@property (nonatomic, readonly) double completionScore;
+@property (nonatomic, readonly) NSString *completionString;
+@property (nonatomic, readonly) NSString *errorCodeString;
+@property (nonatomic, readonly) NSString *feedbackQueryIdentifier;
+@property (nonatomic, readonly) double maxAge;
+@property (nonatomic, readonly) NSString *prefix;
+@property (nonatomic, readonly) NSArray *results;
+@property (nonatomic, readonly) long long status;
 
 + (id)resultSetWithDictionary:(id)arg1 cache:(id)arg2;
 

@@ -8,9 +8,9 @@
     NSString *_unitDescription;
 }
 
-@property(assign,retain) NSString * localizationKey;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * unitDescription;
+@property (nonatomic, retain) NSString *localizationKey;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *unitDescription;
 
 + (id)init:(id)arg1 withDictionary:(id)arg2;
 

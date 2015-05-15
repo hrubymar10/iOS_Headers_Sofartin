@@ -7,12 +7,12 @@
     NSString *_searchString;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSSet * properties;
-@property(assign,copy) NSString * searchString;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSSet *properties;
+@property (nonatomic, copy) NSString *searchString;
+@property (readonly) Class superclass;
 
 + (id)predicateWithSearchString:(id)arg1 forProperties:(id)arg2;
 

@@ -6,7 +6,7 @@
     SKUIEditorialLockupCellLayout *_layout;
 }
 
-@property(assign,readonly) SKUIEditorialLockupCellLayout * layout;
+@property (nonatomic, readonly) SKUIEditorialLockupCellLayout *layout;
 
 - (void).cxx_destruct;
 - (void)configureForItem:(id)arg1 clientContext:(id)arg2;

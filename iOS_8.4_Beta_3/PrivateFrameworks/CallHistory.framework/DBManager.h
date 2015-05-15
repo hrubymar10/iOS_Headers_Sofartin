@@ -6,7 +6,7 @@
     NSPersistentStoreCoordinator *fPersistentStoreCoordinator;
 }
 
-@property(assign,retain) NSPersistentStoreCoordinator * fPersistentStoreCoordinator;
+@property (nonatomic, retain) NSPersistentStoreCoordinator *fPersistentStoreCoordinator;
 
 + (id)dbOptions:(bool)arg1;
 + (bool)destroyDBAtLocation:(id)arg1 withModelAtLocation:(id)arg2;

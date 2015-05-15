@@ -6,7 +6,7 @@
     id inputColorSpace;
 }
 
-@property(assign,retain) id inputColorSpace;
+@property (nonatomic, retain) id inputColorSpace;
 
 + (id)customAttributes;
 

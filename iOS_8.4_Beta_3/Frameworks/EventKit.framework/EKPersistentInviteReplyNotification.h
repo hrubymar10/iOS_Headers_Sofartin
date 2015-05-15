@@ -4,15 +4,15 @@
 
 @interface EKPersistentInviteReplyNotification : EKPersistentObject
 
-@property(assign,readonly) bool alerted;
-@property(assign,readonly) EKPersistentCalendar * calendar;
-@property(assign,readonly) NSString * calendarName;
-@property(assign,readonly) NSDate * creationDate;
-@property(assign,readonly) NSString * shareeAddress;
-@property(assign,readonly) NSString * shareeDisplayName;
-@property(assign,readonly) NSString * shareeFirstName;
-@property(assign,readonly) NSString * shareeLastName;
-@property(assign,readonly) int status;
+@property (nonatomic, readonly) bool alerted;
+@property (nonatomic, readonly) EKPersistentCalendar *calendar;
+@property (nonatomic, readonly) NSString *calendarName;
+@property (nonatomic, readonly) NSDate *creationDate;
+@property (nonatomic, readonly) NSString *shareeAddress;
+@property (nonatomic, readonly) NSString *shareeDisplayName;
+@property (nonatomic, readonly) NSString *shareeFirstName;
+@property (nonatomic, readonly) NSString *shareeLastName;
+@property (nonatomic, readonly) int status;
 
 + (id)defaultPropertiesToLoad;
 + (id)relations;

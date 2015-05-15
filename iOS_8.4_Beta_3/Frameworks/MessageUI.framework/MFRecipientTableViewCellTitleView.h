@@ -10,13 +10,13 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool highlighted;
-@property(assign,readwrite) bool shouldDim;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UILabel * titleLabel;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool highlighted;
+@property (nonatomic) bool shouldDim;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UILabel *titleLabel;
 
 + (id)defaultStringAttributes;
 + (double)height;

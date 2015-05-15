@@ -14,15 +14,15 @@
     UILabel *_slashLabel;
 }
 
-@property(assign,retain) NSArray * activityHConstraints;
-@property(assign,retain) UIActivityIndicatorView * activityIndicator;
-@property(assign,retain) NSArray * activityVConstraints;
-@property(assign,retain) UILabel * connectionStatusLabel;
-@property(assign,retain) UILabel * deviceNameLabel;
-@property(assign,retain) UILabel * inputLabel;
-@property(assign,retain) NSArray * labelConstraints;
-@property(assign,retain) UILabel * outputLabel;
-@property(assign,retain) UILabel * slashLabel;
+@property (nonatomic, retain) NSArray *activityHConstraints;
+@property (nonatomic, retain) UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, retain) NSArray *activityVConstraints;
+@property (nonatomic, retain) UILabel *connectionStatusLabel;
+@property (nonatomic, retain) UILabel *deviceNameLabel;
+@property (nonatomic, retain) UILabel *inputLabel;
+@property (nonatomic, retain) NSArray *labelConstraints;
+@property (nonatomic, retain) UILabel *outputLabel;
+@property (nonatomic, retain) UILabel *slashLabel;
 
 - (id)activityHConstraints;
 - (id)activityIndicator;

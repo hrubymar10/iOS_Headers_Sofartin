@@ -44,10 +44,10 @@
     } mStartingSize;
 }
 
-@property(assign,readonly) TSCHChartAbstractAreaLayoutItem * chartAreaLayoutItem;
-@property(assign,readwrite) unsigned long long dataSetIndex;
-@property(assign,readonly) TSCHLegendAreaLayoutItem * legendAreaLayoutItem;
-@property(assign,copy) NSDictionary * seriesIndexedPieWedgeExplosions;
+@property (nonatomic, readonly) TSCHChartAbstractAreaLayoutItem *chartAreaLayoutItem;
+@property (nonatomic) unsigned long long dataSetIndex;
+@property (nonatomic, readonly) TSCHLegendAreaLayoutItem *legendAreaLayoutItem;
+@property (nonatomic, copy) NSDictionary *seriesIndexedPieWedgeExplosions;
 
 - (void)beginResizeWithStartingSize:(struct CGSize { double x1; double x2; })arg1;
 - (void)buildSubTree;

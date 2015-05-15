@@ -13,12 +13,12 @@
     NSString *_title;
 }
 
-@property(assign,retain) KeychainSyncCountryInfo * countryInfo;
-@property(assign,readwrite) <KeychainSyncPhoneSettingsFragmentDelegate> * delegate;
-@property(assign,retain) NSString * phoneNumber;
-@property(assign,retain) PSEditableTableCell * phoneNumberCell;
-@property(assign,retain) NSArray * specifiers;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) KeychainSyncCountryInfo *countryInfo;
+@property (nonatomic) <KeychainSyncPhoneSettingsFragmentDelegate> *delegate;
+@property (nonatomic, retain) NSString *phoneNumber;
+@property (nonatomic, readonly, retain) PSEditableTableCell *phoneNumberCell;
+@property (nonatomic, readonly, retain) NSArray *specifiers;
+@property (nonatomic, retain) NSString *title;
 
 - (id)countryInfo;
 - (void)dealloc;

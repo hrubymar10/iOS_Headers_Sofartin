@@ -7,8 +7,8 @@
     AVWeakReference *_weakReferenceToListener;
 }
 
-@property(assign,readonly) int (* callback;
-@property(assign,readonly) id listener;
+@property (nonatomic, readonly) int (*callback;
+@property (nonatomic, readonly) id listener;
 
 - (int (*)callback;
 - (void)dealloc;

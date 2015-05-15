@@ -21,21 +21,21 @@
     long long _type;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,retain) SKUIArtworkList * artworkList;
-@property(assign,readwrite) unsigned long long dateFormat;
-@property(assign,retain) SKUIArtworkList * endArtworkList;
-@property(assign,copy) NSDate * endDate;
-@property(assign,readwrite) long long finalValue;
-@property(assign,copy) UIColor * flapBottomColor;
-@property(assign,copy) UIColor * flapTopColor;
-@property(getter=isFlapped,assign,readwrite) bool flapped;
-@property(assign,copy) UIColor * fontColor;
-@property(assign,readwrite) long long initialValue;
-@property(assign,copy) NSString * numberFormat;
-@property(assign,readwrite) long long rate;
-@property(assign,copy) NSDate * startDate;
-@property(assign,readwrite) long long type;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, retain) SKUIArtworkList *artworkList;
+@property (nonatomic) unsigned long long dateFormat;
+@property (nonatomic, retain) SKUIArtworkList *endArtworkList;
+@property (nonatomic, copy) NSDate *endDate;
+@property (nonatomic) long long finalValue;
+@property (nonatomic, copy) UIColor *flapBottomColor;
+@property (nonatomic, copy) UIColor *flapTopColor;
+@property (getter=isFlapped, nonatomic) bool flapped;
+@property (nonatomic, copy) UIColor *fontColor;
+@property (nonatomic) long long initialValue;
+@property (nonatomic, copy) NSString *numberFormat;
+@property (nonatomic) long long rate;
+@property (nonatomic, copy) NSDate *startDate;
+@property (nonatomic) long long type;
 
 - (void).cxx_destruct;
 - (id)URL;

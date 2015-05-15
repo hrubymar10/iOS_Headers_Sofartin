@@ -9,8 +9,8 @@
     double _timeStamp;
 }
 
-@property(assign,readwrite) bool hasTimeStamp;
-@property(assign,readwrite) double timeStamp;
+@property (nonatomic) bool hasTimeStamp;
+@property (nonatomic) double timeStamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

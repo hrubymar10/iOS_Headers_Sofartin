@@ -6,7 +6,7 @@
     NSCalendar *realCalendar;
 }
 
-@property(assign,readwrite) NSCalendar * realCalendar;
+@property NSCalendar *realCalendar;
 
 + (id)cyclicalFromRelated:(id)arg1;
 + (id)relatedFromCyclical:(id)arg1;

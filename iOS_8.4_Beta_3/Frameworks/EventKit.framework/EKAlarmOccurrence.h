@@ -13,14 +13,14 @@
     NSURL *_ownerURI;
 }
 
-@property(assign,readonly) NSDate * acknowledgedDate;
-@property(assign,readonly) EKObjectID * alarmID;
-@property(assign,readonly) NSString * externalID;
-@property(assign,readonly) NSDate * fireDate;
-@property(assign,readonly) NSDate * ownerDate;
-@property(assign,readonly) EKObjectID * ownerID;
-@property(assign,readonly) NSTimeZone * ownerTimeZone;
-@property(assign,readonly) NSURL * ownerURI;
+@property (nonatomic, readonly) NSDate *acknowledgedDate;
+@property (nonatomic, readonly) EKObjectID *alarmID;
+@property (nonatomic, readonly) NSString *externalID;
+@property (nonatomic, readonly) NSDate *fireDate;
+@property (nonatomic, readonly) NSDate *ownerDate;
+@property (nonatomic, readonly) EKObjectID *ownerID;
+@property (nonatomic, readonly) NSTimeZone *ownerTimeZone;
+@property (nonatomic, readonly) NSURL *ownerURI;
 
 + (id)alarmOccurrenceWithAlarmID:(id)arg1 ownerID:(id)arg2 ownerDate:(id)arg3 ownerTimeZone:(id)arg4 ownerURI:(id)arg5 fireDate:(id)arg6 externalID:(id)arg7 acknowledgedDate:(id)arg8;
 

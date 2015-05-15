@@ -13,14 +13,14 @@
     unsigned long long _subtypeID;
 }
 
-@property(assign,readwrite) bool defaultSubtype;
-@property(assign,readwrite) bool hasDefaultSubtype;
-@property(assign,readonly) bool hasIcon;
-@property(assign,readonly) bool hasSectionID;
-@property(assign,readwrite) bool hasSubtypeID;
-@property(assign,retain) BLTPBSectionIcon * icon;
-@property(assign,retain) NSString * sectionID;
-@property(assign,readwrite) unsigned long long subtypeID;
+@property (nonatomic) bool defaultSubtype;
+@property (nonatomic) bool hasDefaultSubtype;
+@property (nonatomic, readonly) bool hasIcon;
+@property (nonatomic, readonly) bool hasSectionID;
+@property (nonatomic) bool hasSubtypeID;
+@property (nonatomic, retain) BLTPBSectionIcon *icon;
+@property (nonatomic, retain) NSString *sectionID;
+@property (nonatomic) unsigned long long subtypeID;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

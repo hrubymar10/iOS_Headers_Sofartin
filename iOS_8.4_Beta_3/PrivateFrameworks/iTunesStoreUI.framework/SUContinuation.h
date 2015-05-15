@@ -6,7 +6,7 @@
     <SUContinuationDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <SUContinuationDelegate> * delegate;
+@property (nonatomic) <SUContinuationDelegate> *delegate;
 
 - (void)cancel;
 - (id)delegate;

@@ -27,24 +27,24 @@
     CAMTimerButton *_timerButton;
 }
 
-@property(assign,retain) CAMHDRButton * HDRButton;
-@property(getter=_isHDRButtonExpanded,setter=_setHDRButtonExpanded:,assign,readwrite) bool _HDRButtonExpanded;
-@property(assign,readonly) NSMutableArray * _allowedControls;
-@property(assign,readonly) UIView * _backgroundView;
-@property(setter=_setExpandedMenuButton:,assign,retain) CAMExpandableMenuButton * _expandedMenuButton;
-@property(setter=_setExpandedMenuButtonTappableInsets:,assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } _expandedMenuButtonTappableInsets;
-@property(getter=_isFlashButtonExpanded,setter=_setFlashButtonExpanded:,assign,readwrite) bool _flashButtonExpanded;
-@property(assign,readonly) UIView * _flipButtonTopLayoutSpacer;
-@property(getter=_isTimerButtonExpanded,setter=_setTimerButtonExpanded:,assign,readwrite) bool _timerButtonExpanded;
-@property(assign,readwrite) long long backgroundStyle;
-@property(assign,readwrite) <CAMTopBarDelegate> * delegate;
-@property(assign,retain) CAMElapsedTimeView * elapsedTimeView;
-@property(assign,retain) CAMFlashButton * flashButton;
-@property(assign,retain) CAMFlipButton * flipButton;
-@property(getter=isFloating,assign,readonly) bool floating;
-@property(assign,readwrite) long long orientation;
-@property(assign,readwrite) long long style;
-@property(assign,retain) CAMTimerButton * timerButton;
+@property (nonatomic, retain) CAMHDRButton *HDRButton;
+@property (getter=_isHDRButtonExpanded, setter=_setHDRButtonExpanded:, nonatomic) bool _HDRButtonExpanded;
+@property (nonatomic, readonly) NSMutableArray *_allowedControls;
+@property (nonatomic, readonly) UIView *_backgroundView;
+@property (setter=_setExpandedMenuButton:, nonatomic, retain) CAMExpandableMenuButton *_expandedMenuButton;
+@property (setter=_setExpandedMenuButtonTappableInsets:, nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } _expandedMenuButtonTappableInsets;
+@property (getter=_isFlashButtonExpanded, setter=_setFlashButtonExpanded:, nonatomic) bool _flashButtonExpanded;
+@property (nonatomic, readonly) UIView *_flipButtonTopLayoutSpacer;
+@property (getter=_isTimerButtonExpanded, setter=_setTimerButtonExpanded:, nonatomic) bool _timerButtonExpanded;
+@property (nonatomic) long long backgroundStyle;
+@property (nonatomic) <CAMTopBarDelegate> *delegate;
+@property (nonatomic, retain) CAMElapsedTimeView *elapsedTimeView;
+@property (nonatomic, retain) CAMFlashButton *flashButton;
+@property (nonatomic, retain) CAMFlipButton *flipButton;
+@property (getter=isFloating, nonatomic, readonly) bool floating;
+@property (nonatomic) long long orientation;
+@property (nonatomic) long long style;
+@property (nonatomic, retain) CAMTimerButton *timerButton;
 
 - (void).cxx_destruct;
 - (id)HDRButton;

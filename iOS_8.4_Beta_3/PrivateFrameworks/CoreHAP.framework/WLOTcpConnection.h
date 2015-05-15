@@ -8,13 +8,13 @@
     NSOutputStream *_outputStream;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <WLOTcpConnectionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSInputStream * inputStream;
-@property(assign,retain) NSOutputStream * outputStream;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <WLOTcpConnectionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSInputStream *inputStream;
+@property (nonatomic, retain) NSOutputStream *outputStream;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_readData:(bool)arg1;

@@ -6,8 +6,8 @@
     MSPDroppedPin *_droppedPin;
 }
 
-@property(assign,retain) MSPDroppedPin * droppedPin;
-@property(assign,readonly) bool hasDroppedPin;
+@property (nonatomic, retain) MSPDroppedPin *droppedPin;
+@property (nonatomic, readonly) bool hasDroppedPin;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

@@ -8,13 +8,13 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id visitHandler;
-@property(assign,retain) NSXPCConnection * xpcConnection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id visitHandler;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
 
 + (id)defaultManager;
 + (id)modeOfTransportationToString:(long long)arg1;

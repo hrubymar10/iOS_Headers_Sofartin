@@ -12,13 +12,13 @@
     bool _shouldBottomAlignArtwork;
 }
 
-@property(assign,retain) MPUArtworkView * artworkView;
-@property(assign,retain) UIImage * overlayImage;
-@property(assign,readwrite) double overlayScale;
-@property(assign,retain) NSArray * overlaySizeConstraints;
-@property(assign,retain) UIImageView * overlayView;
-@property(assign,readwrite) bool shouldAutoresizeMaskLayerToFillBounds;
-@property(assign,readwrite) bool shouldBottomAlignArtwork;
+@property (nonatomic, retain) MPUArtworkView *artworkView;
+@property (nonatomic, retain) UIImage *overlayImage;
+@property (nonatomic) double overlayScale;
+@property (nonatomic, retain) NSArray *overlaySizeConstraints;
+@property (nonatomic, retain) UIImageView *overlayView;
+@property (nonatomic) bool shouldAutoresizeMaskLayerToFillBounds;
+@property (nonatomic) bool shouldBottomAlignArtwork;
 
 - (void).cxx_destruct;
 - (id)artworkView;

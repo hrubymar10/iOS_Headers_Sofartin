@@ -6,7 +6,7 @@
     QLPreviewViewController *_controller;
 }
 
-@property(assign,readwrite) QLPreviewViewController * controller;
+@property QLPreviewViewController *controller;
 
 - (id)controller;
 - (void)layoutSubviews;

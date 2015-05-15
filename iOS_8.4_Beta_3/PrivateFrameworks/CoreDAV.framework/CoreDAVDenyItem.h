@@ -6,7 +6,7 @@
     NSMutableSet *_privileges;
 }
 
-@property(assign,retain) NSMutableSet * privileges;
+@property (nonatomic, retain) NSMutableSet *privileges;
 
 + (id)copyParseRules;
 

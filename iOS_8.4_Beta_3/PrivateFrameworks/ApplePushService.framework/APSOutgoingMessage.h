@@ -4,10 +4,10 @@
 
 @interface APSOutgoingMessage : APSMessage
 
-@property(getter=isCritical,assign,readwrite) bool critical;
-@property(assign,readwrite) unsigned long long payloadFormat;
-@property(assign,readwrite) unsigned long long payloadLength;
-@property(assign,readwrite) unsigned long long timeout;
+@property (getter=isCritical, nonatomic) bool critical;
+@property (nonatomic) unsigned long long payloadFormat;
+@property (nonatomic) unsigned long long payloadLength;
+@property (nonatomic) unsigned long long timeout;
 
 - (unsigned long long)_effectiveSendTimeout;
 - (id)eagernessTimeoutTime;

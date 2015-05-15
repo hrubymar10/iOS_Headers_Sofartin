@@ -15,14 +15,14 @@
     double _score;
 }
 
-@property(assign,readwrite) bool hasMaxScore;
-@property(assign,readwrite) bool hasNumRatingsUsedForScore;
-@property(assign,readwrite) bool hasRatingType;
-@property(assign,readwrite) bool hasScore;
-@property(assign,readwrite) double maxScore;
-@property(assign,readwrite) int numRatingsUsedForScore;
-@property(assign,readwrite) int ratingType;
-@property(assign,readwrite) double score;
+@property (nonatomic) bool hasMaxScore;
+@property (nonatomic) bool hasNumRatingsUsedForScore;
+@property (nonatomic) bool hasRatingType;
+@property (nonatomic) bool hasScore;
+@property (nonatomic) double maxScore;
+@property (nonatomic) int numRatingsUsedForScore;
+@property (nonatomic) int ratingType;
+@property (nonatomic) double score;
 
 + (id)ratingForPlaceData:(id)arg1 type:(int)arg2;
 

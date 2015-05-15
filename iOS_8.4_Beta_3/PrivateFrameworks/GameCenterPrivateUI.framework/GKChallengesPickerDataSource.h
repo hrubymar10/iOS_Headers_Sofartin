@@ -6,7 +6,7 @@
     GKChallenge *_challenge;
 }
 
-@property(assign,retain) GKChallenge * challenge;
+@property (nonatomic, retain) GKChallenge *challenge;
 
 - (bool)canSelectPlayerInfo:(id)arg1;
 - (id)challenge;

@@ -6,8 +6,8 @@
     NSData *_certificate;
 }
 
-@property(assign,retain) NSData * certificate;
-@property(assign,readonly) bool hasCertificate;
+@property (nonatomic, retain) NSData *certificate;
+@property (nonatomic, readonly) bool hasCertificate;
 
 - (void).cxx_destruct;
 - (id)certificate;

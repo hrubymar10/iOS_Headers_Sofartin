@@ -11,13 +11,13 @@
     id _target;
 }
 
-@property(assign,readwrite) SEL action;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,retain) CMGestureManager * gestureManager;
-@property(assign,readwrite) long long gestureState;
-@property(assign,readwrite) bool proximityState;
-@property(getter=isRecognized,assign,readonly) bool recognized;
-@property(assign,readwrite) id target;
+@property (nonatomic) SEL action;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic, retain) CMGestureManager *gestureManager;
+@property (nonatomic) long long gestureState;
+@property (nonatomic) bool proximityState;
+@property (getter=isRecognized, nonatomic, readonly) bool recognized;
+@property (nonatomic) id target;
 
 + (bool)isRaiseGestureEnabled;
 + (bool)isRaiseGestureSupported;

@@ -4,7 +4,7 @@
 
 @interface AAEmailLookupResponse : AAResponse
 
-@property(assign,readonly) NSDictionary * lookupResults;
+@property (nonatomic, readonly) NSDictionary *lookupResults;
 
 - (id)lookupResults;
 

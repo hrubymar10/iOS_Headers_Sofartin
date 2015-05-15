@@ -11,9 +11,9 @@
     bool _shouldInnerPulse;
 }
 
-@property(assign,retain) UIImage * innerImageMask;
-@property(assign,readwrite) bool rotateInnerImageToMatchCourse;
-@property(assign,readwrite) bool shouldInnerPulse;
+@property (nonatomic, retain) UIImage *innerImageMask;
+@property (nonatomic) bool rotateInnerImageToMatchCourse;
+@property (nonatomic) bool shouldInnerPulse;
 
 + (double)baseDiameter;
 + (double)innerDiameter;

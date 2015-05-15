@@ -7,7 +7,7 @@
     NSObject<OS_dispatch_source> *_updateTimer;
 }
 
-@property(assign,readonly) NSURL * downloadableContentURL;
+@property (nonatomic, readonly) NSURL *downloadableContentURL;
 
 + (id)sharedDefaults;
 

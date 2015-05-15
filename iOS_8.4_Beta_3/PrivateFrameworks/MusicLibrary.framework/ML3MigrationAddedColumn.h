@@ -9,11 +9,11 @@
     NSString *_joinColumnName;
 }
 
-@property(assign,readonly) NSString * columnName;
-@property(assign,readonly) NSString * foreignColumnName;
-@property(assign,readonly) NSString * foreignTableName;
-@property(assign,readonly) NSString * joinColumnName;
-@property(assign,readonly) bool shouldImportFromForeignTable;
+@property (nonatomic, readonly) NSString *columnName;
+@property (nonatomic, readonly) NSString *foreignColumnName;
+@property (nonatomic, readonly) NSString *foreignTableName;
+@property (nonatomic, readonly) NSString *joinColumnName;
+@property (nonatomic, readonly) bool shouldImportFromForeignTable;
 
 - (void).cxx_destruct;
 - (id)columnName;

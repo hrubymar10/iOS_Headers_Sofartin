@@ -9,10 +9,10 @@
     TSCH3DArray2D *mLightingModels;
 }
 
-@property(assign,retain) TSCH3DTransform * chartTransform;
-@property(assign,retain) TSCH3DTransform * elementsTransform;
-@property(assign,retain) TSCH3DLabelResources * labels;
-@property(assign,retain) TSCH3DArray2D * lightingModels;
+@property (nonatomic, retain) TSCH3DTransform *chartTransform;
+@property (nonatomic, retain) TSCH3DTransform *elementsTransform;
+@property (nonatomic, retain) TSCH3DLabelResources *labels;
+@property (nonatomic, retain) TSCH3DArray2D *lightingModels;
 
 - (id)chartTransform;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -8,9 +8,9 @@
     NSOperationQueue *_notifyQueue;
 }
 
-@property(assign,readwrite) int accountChangedToken;
-@property(assign,retain) NSMapTable * notificationObservers;
-@property(assign,retain) NSOperationQueue * notifyQueue;
+@property (nonatomic) int accountChangedToken;
+@property (nonatomic, retain) NSMapTable *notificationObservers;
+@property (nonatomic, retain) NSOperationQueue *notifyQueue;
 
 + (id)sharedNotifier;
 

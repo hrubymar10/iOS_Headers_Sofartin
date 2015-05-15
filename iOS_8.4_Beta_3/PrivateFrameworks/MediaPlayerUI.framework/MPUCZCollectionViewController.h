@@ -13,15 +13,15 @@
     } _itemSize;
 }
 
-@property(assign,readonly) UICollectionView * collectionView;
-@property(assign,readwrite) long long coverCountPerColumn;
-@property(assign,retain) MPUDataSource * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPUCZCollectionViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } itemSize;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) UICollectionView *collectionView;
+@property (nonatomic) long long coverCountPerColumn;
+@property (nonatomic, retain) MPUDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPUCZCollectionViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct CGSize { double x1; double x2; } itemSize;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_beginPreloadingAlbums;

@@ -11,9 +11,9 @@
     float _zoomFactor;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readwrite) float zoomFactor;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic) float zoomFactor;
 
 + (id)currentMagnifyMode;
 + (id)magnifyModeWithSize:(struct CGSize { double x1; double x2; })arg1 name:(id)arg2;

@@ -14,15 +14,15 @@
     NSMutableArray *_visibleTopActionRows;
 }
 
-@property(assign,readonly) Class cellConfigurationClass;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } contentOffsetRevealingFirstDataSourceSection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool shouldDeselectImmediately;
-@property(assign,readonly) bool shouldScrollToFirstDataSourceSectionOnInitialAppearance;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UITableView * tableView;
+@property (nonatomic, readonly) Class cellConfigurationClass;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } contentOffsetRevealingFirstDataSourceSection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool shouldDeselectImmediately;
+@property (nonatomic, readonly) bool shouldScrollToFirstDataSourceSectionOnInitialAppearance;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UITableView *tableView;
 
 + (Class)_tableViewClass;
 + (id)actionCellConfigurationClasses;

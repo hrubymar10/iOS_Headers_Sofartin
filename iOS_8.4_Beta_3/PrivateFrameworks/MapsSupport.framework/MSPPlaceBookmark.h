@@ -13,15 +13,15 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,retain) GEOLatLng * droppedPinCoordinate;
-@property(assign,readonly) bool hasDroppedPinCoordinate;
-@property(assign,readonly) bool hasMapItemStorage;
-@property(assign,readwrite) bool hasOrigin;
-@property(assign,readonly) bool hasTitle;
-@property(assign,retain) GEOMapItemStorage * mapItemStorage;
-@property(assign,readwrite) int origin;
-@property(assign,retain) NSString * title;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, retain) GEOLatLng *droppedPinCoordinate;
+@property (nonatomic, readonly) bool hasDroppedPinCoordinate;
+@property (nonatomic, readonly) bool hasMapItemStorage;
+@property (nonatomic) bool hasOrigin;
+@property (nonatomic, readonly) bool hasTitle;
+@property (nonatomic, retain) GEOMapItemStorage *mapItemStorage;
+@property (nonatomic) int origin;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

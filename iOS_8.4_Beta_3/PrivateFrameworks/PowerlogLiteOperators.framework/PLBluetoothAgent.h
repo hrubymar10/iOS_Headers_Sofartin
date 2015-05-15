@@ -10,8 +10,8 @@
     struct BTSessionImpl { } *session;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * batteryLevelChanged;
-@property(assign,readonly) NSString * btHardwareChipset;
+@property (retain) PLEntryNotificationOperatorComposition *batteryLevelChanged;
+@property (readonly) NSString *btHardwareChipset;
 
 + (id)accountingGroupDefinitions;
 + (id)defaults;

@@ -13,10 +13,10 @@
     NSDictionary *_textAttributes;
 }
 
-@property(assign,readonly) UILabel * label;
-@property(assign,readwrite) long long maximumNumberOfLines;
-@property(assign,readwrite) struct { long long x1; long long x2; double x3; } skipLimit;
-@property(assign,copy) NSDictionary * textAttributes;
+@property (nonatomic, readonly) UILabel *label;
+@property (nonatomic) long long maximumNumberOfLines;
+@property (nonatomic) struct { long long x1; long long x2; double x3; } skipLimit;
+@property (nonatomic, copy) NSDictionary *textAttributes;
 
 - (void).cxx_destruct;
 - (void)_hideSkipInformationForTimer:(id)arg1;

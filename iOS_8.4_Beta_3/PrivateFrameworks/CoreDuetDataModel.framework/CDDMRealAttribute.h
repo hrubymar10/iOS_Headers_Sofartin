@@ -4,29 +4,29 @@
 
 @interface CDDMRealAttribute : NSManagedObject
 
-@property(assign,retain) NSNumber * anonymizedBeacon;
-@property(assign,retain) NSNumber * anonymizedLocation;
-@property(assign,retain) NSNumber * category;
-@property(assign,retain) NSNumber * clientId;
-@property(assign,retain) NSDate * creationDate;
-@property(assign,retain) NSNumber * cumulativeComputeUtilizationGauge;
-@property(assign,retain) NSNumber * cumulativeIoReadBytesGauge;
-@property(assign,retain) NSNumber * cumulativeIoWriteBytesGauge;
-@property(assign,retain) NSNumber * cumulativeMillijoulesGauge;
-@property(assign,retain) NSNumber * cumulativeNetworkBytesGauge;
-@property(assign,retain) NSNumber * fallingEdge;
-@property(assign,retain) NSNumber * forecastFlavor;
-@property(assign,retain) NSNumber * forecastPeerScore;
-@property(assign,retain) NSNumber * forecastScoresValid;
-@property(assign,retain) NSNumber * forecastTemporalScore;
-@property(assign,retain) NSNumber * forecastWindowVariant;
-@property(assign,retain) NSNumber * integerId;
-@property(assign,retain) NSNumber * localDaysSinceSunday;
-@property(assign,retain) NSNumber * localTime;
-@property(assign,retain) NSNumber * localTimeQuarterHourSlot;
-@property(assign,retain) NSNumber * networkQuality;
-@property(assign,retain) NSNumber * risingEdge;
-@property(assign,retain) NSNumber * userId;
-@property(assign,retain) NSNumber * value;
+@property (nonatomic, retain) NSNumber *anonymizedBeacon;
+@property (nonatomic, retain) NSNumber *anonymizedLocation;
+@property (nonatomic, retain) NSNumber *category;
+@property (nonatomic, retain) NSNumber *clientId;
+@property (nonatomic, retain) NSDate *creationDate;
+@property (nonatomic, retain) NSNumber *cumulativeComputeUtilizationGauge;
+@property (nonatomic, retain) NSNumber *cumulativeIoReadBytesGauge;
+@property (nonatomic, retain) NSNumber *cumulativeIoWriteBytesGauge;
+@property (nonatomic, retain) NSNumber *cumulativeMillijoulesGauge;
+@property (nonatomic, retain) NSNumber *cumulativeNetworkBytesGauge;
+@property (nonatomic, retain) NSNumber *fallingEdge;
+@property (nonatomic, retain) NSNumber *forecastFlavor;
+@property (nonatomic, retain) NSNumber *forecastPeerScore;
+@property (nonatomic, retain) NSNumber *forecastScoresValid;
+@property (nonatomic, retain) NSNumber *forecastTemporalScore;
+@property (nonatomic, retain) NSNumber *forecastWindowVariant;
+@property (nonatomic, retain) NSNumber *integerId;
+@property (nonatomic, retain) NSNumber *localDaysSinceSunday;
+@property (nonatomic, retain) NSNumber *localTime;
+@property (nonatomic, retain) NSNumber *localTimeQuarterHourSlot;
+@property (nonatomic, retain) NSNumber *networkQuality;
+@property (nonatomic, retain) NSNumber *risingEdge;
+@property (nonatomic, retain) NSNumber *userId;
+@property (nonatomic, retain) NSNumber *value;
 
 @end

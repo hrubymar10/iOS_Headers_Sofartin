@@ -8,11 +8,11 @@
     int mType;
 }
 
-@property(assign,readonly) NSIndexSet * columnIndices;
-@property(assign,readonly) bool empty;
-@property(assign,readonly) unsigned long long ruleCount;
-@property(assign,readonly) NSArray * rules;
-@property(assign,readonly) int type;
+@property (nonatomic, readonly) NSIndexSet *columnIndices;
+@property (nonatomic, readonly) bool empty;
+@property (nonatomic, readonly) unsigned long long ruleCount;
+@property (nonatomic, readonly) NSArray *rules;
+@property (nonatomic, readonly) int type;
 
 + (id)sortOrderWithColumn:(unsigned char)arg1 direction:(int)arg2 type:(int)arg3;
 + (id)sortOrderWithRules:(id)arg1 type:(int)arg2;

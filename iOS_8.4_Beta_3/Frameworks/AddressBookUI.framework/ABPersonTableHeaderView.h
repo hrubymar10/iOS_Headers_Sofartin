@@ -19,26 +19,26 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,copy) NSString * alternateName;
-@property(assign,retain) UIView * customMessageView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ABPersonTableHeaderViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) ABPersonNameDisplayView * displayView;
-@property(assign,readonly) ABMultiCellContentView * editingView;
-@property(assign,retain) UIView * extraHeaderView;
-@property(assign,readwrite) bool extraHeaderViewAlignsToImage;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) ABPersonImageView * imageView;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * messageDetail;
-@property(assign,retain) UIFont * messageDetailFont;
-@property(assign,retain) UIFont * messageFont;
-@property(assign,retain) ABNamePropertyGroup * namePropertyGroup;
-@property(assign,retain) ABUIPerson * personForImageView;
-@property(assign,readwrite) bool representsLinkedPeople;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *alternateName;
+@property (nonatomic, retain) UIView *customMessageView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ABPersonTableHeaderViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) ABPersonNameDisplayView *displayView;
+@property (nonatomic, readonly) ABMultiCellContentView *editingView;
+@property (nonatomic, retain) UIView *extraHeaderView;
+@property (nonatomic) bool extraHeaderViewAlignsToImage;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) ABPersonImageView *imageView;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *messageDetail;
+@property (nonatomic, retain) UIFont *messageDetailFont;
+@property (nonatomic, retain) UIFont *messageFont;
+@property (nonatomic, retain) ABNamePropertyGroup *namePropertyGroup;
+@property (nonatomic, retain) ABUIPerson *personForImageView;
+@property (nonatomic) bool representsLinkedPeople;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
+@property (readonly) Class superclass;
 
 - (id)_displayView;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_displayViewFrameForWidth:(double)arg1;

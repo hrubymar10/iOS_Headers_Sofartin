@@ -124,25 +124,25 @@
     unsigned int _zooming;
 }
 
-@property(setter=_setCustomCenterOverlay:,assign,retain) UIView * _customCenterOverlay;
-@property(assign,readwrite) bool centerContentVertically;
-@property(assign,readonly) bool commentsTableIsVisible;
-@property(assign,readonly) PLCommentsViewController * commentsViewController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool force1XCroppedImage;
-@property(assign,readwrite) bool forceNativeScreenScale;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } overlayInsets;
-@property(assign,readonly) PHAsset * photo;
-@property(assign,readwrite) bool picked;
-@property(assign,readwrite) bool reviewing;
-@property(assign,readwrite) bool shouldHideProgressIndicator;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIImage * thumbnailImage;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } tileFrame;
-@property(assign,retain) UIImage * unscaledImage;
-@property(assign,readwrite) bool wantsCompactLayout;
+@property (setter=_setCustomCenterOverlay:, nonatomic, retain) UIView *_customCenterOverlay;
+@property (nonatomic) bool centerContentVertically;
+@property (nonatomic, readonly) bool commentsTableIsVisible;
+@property (nonatomic, readonly) PLCommentsViewController *commentsViewController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool force1XCroppedImage;
+@property (nonatomic) bool forceNativeScreenScale;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } overlayInsets;
+@property (nonatomic, readonly) PHAsset *photo;
+@property (nonatomic) bool picked;
+@property (nonatomic) bool reviewing;
+@property (nonatomic) bool shouldHideProgressIndicator;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIImage *thumbnailImage;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } tileFrame;
+@property (nonatomic, retain) UIImage *unscaledImage;
+@property (nonatomic) bool wantsCompactLayout;
 
 + (bool)_shouldForwardViewWillTransitionToSize;
 + (id)newPhotoTileViewControllerWithFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 image:(id)arg2 allowZoomToFill:(bool)arg3 mode:(int)arg4;

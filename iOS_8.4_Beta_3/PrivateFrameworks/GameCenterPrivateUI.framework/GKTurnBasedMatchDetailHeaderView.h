@@ -17,21 +17,21 @@
     GKLabel *_startedLabel;
 }
 
-@property(assign,retain) GKTextBubbleControl * actionBubble;
-@property(assign,readwrite) SEL bubbleAction;
-@property(assign,readwrite) id bubbleTarget;
-@property(assign,retain) NSString * bubbleText;
-@property(assign,readwrite) NSLayoutConstraint * bubbleToLastConstraint;
-@property(assign,readwrite) long long bubbleType;
-@property(assign,readwrite) bool compactHeight;
-@property(assign,retain) GKLabel * infoLabel;
-@property(assign,retain) NSString * infoText;
-@property(assign,retain) GKLabel * lastTurnLabel;
-@property(assign,retain) GKTurnBasedMatch * match;
-@property(assign,readwrite) NSLayoutConstraint * playingToTopConstraint;
-@property(assign,retain) GKLabel * playingWithLabel;
-@property(assign,readonly) NSString * playingWithString;
-@property(assign,retain) GKLabel * startedLabel;
+@property (nonatomic, retain) GKTextBubbleControl *actionBubble;
+@property (nonatomic) SEL bubbleAction;
+@property (nonatomic) id bubbleTarget;
+@property (nonatomic, retain) NSString *bubbleText;
+@property (nonatomic) NSLayoutConstraint *bubbleToLastConstraint;
+@property (nonatomic) long long bubbleType;
+@property (nonatomic) bool compactHeight;
+@property (nonatomic, retain) GKLabel *infoLabel;
+@property (nonatomic, retain) NSString *infoText;
+@property (nonatomic, retain) GKLabel *lastTurnLabel;
+@property (nonatomic, retain) GKTurnBasedMatch *match;
+@property (nonatomic) NSLayoutConstraint *playingToTopConstraint;
+@property (nonatomic, retain) GKLabel *playingWithLabel;
+@property (nonatomic, readonly) NSString *playingWithString;
+@property (nonatomic, retain) GKLabel *startedLabel;
 
 + (bool)requiresConstraintBasedLayout;
 

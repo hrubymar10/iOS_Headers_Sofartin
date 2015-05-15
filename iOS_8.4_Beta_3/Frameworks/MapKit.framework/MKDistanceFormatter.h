@@ -8,9 +8,9 @@
     unsigned long long _units;
 }
 
-@property(assign,copy) NSLocale * locale;
-@property(assign,readwrite) unsigned long long unitStyle;
-@property(assign,readwrite) unsigned long long units;
+@property (nonatomic, copy) NSLocale *locale;
+@property (nonatomic) unsigned long long unitStyle;
+@property (nonatomic) unsigned long long units;
 
 - (void).cxx_destruct;
 - (bool)_useMetric;

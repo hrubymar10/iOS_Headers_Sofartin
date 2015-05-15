@@ -6,7 +6,7 @@
     id _errorBlock;
 }
 
-@property(assign,copy) id errorBlock;
+@property (copy) id errorBlock;
 
 - (id)_initWithConnection:(id)arg1 proxyNumber:(unsigned long long)arg2 generationCount:(unsigned long long)arg3 interface:(id)arg4 error:(id)arg5;
 - (void)dealloc;

@@ -4,14 +4,14 @@
 
 @interface IKJSRestrictions : IKJSObject <IKJSRestrictions>
 
-@property(assign,readonly) bool allowArtistActivity;
-@property(assign,readonly) bool allowsErotica;
-@property(assign,readonly) bool allowsExplicit;
-@property(assign,readonly) bool appInstallationAllowed;
-@property(assign,readonly) long long maxAppRank;
-@property(assign,readonly) NSString * maxAppRating;
-@property(assign,readonly) long long maxMovieRank;
-@property(assign,readonly) long long maxTVShowRank;
+@property (nonatomic, readonly) bool allowArtistActivity;
+@property (nonatomic, readonly) bool allowsErotica;
+@property (nonatomic, readonly) bool allowsExplicit;
+@property (nonatomic, readonly) bool appInstallationAllowed;
+@property (nonatomic, readonly) long long maxAppRank;
+@property (nonatomic, readonly) NSString *maxAppRating;
+@property (nonatomic, readonly) long long maxMovieRank;
+@property (nonatomic, readonly) long long maxTVShowRank;
 
 + (id)restrictionsDidChangeNotificationName;
 

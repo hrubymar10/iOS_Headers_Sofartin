@@ -8,13 +8,13 @@
     bool _settingsAreValid;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NGSSettingsManager * glanceManager;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSHashTable * observers;
-@property(assign,readwrite) bool settingsAreValid;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NGSSettingsManager *glanceManager;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSHashTable *observers;
+@property (nonatomic) bool settingsAreValid;
+@property (readonly) Class superclass;
 
 + (id)sharedGlanceManager;
 

@@ -7,8 +7,8 @@
     bool _isValid;
 }
 
-@property(assign,retain) NSDate * date;
-@property(assign,readwrite) bool isValid;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic) bool isValid;
 
 + (id)contextWithDate:(id)arg1;
 

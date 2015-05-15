@@ -6,8 +6,8 @@
     id _internal;
 }
 
-@property(assign,readonly) SKPaymentQueueClient * paymentQueueClient;
-@property(assign,readonly) NSArray * transactions;
+@property (nonatomic, readonly) SKPaymentQueueClient *paymentQueueClient;
+@property (nonatomic, readonly) NSArray *transactions;
 
 + (bool)canMakePayments;
 + (id)defaultQueue;

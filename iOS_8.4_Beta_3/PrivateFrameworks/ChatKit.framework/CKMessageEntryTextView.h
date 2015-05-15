@@ -9,13 +9,13 @@
     bool _showingDictationPlaceholder;
 }
 
-@property(assign,copy) NSString * autocorrectionContext;
-@property(assign,copy) NSAttributedString * compositionText;
-@property(assign,retain) UILabel * placeholderLabel;
-@property(assign,copy) NSString * placeholderText;
-@property(assign,copy) NSString * responseContext;
-@property(getter=isShowingDictationPlaceholder,assign,readwrite) bool showingDictationPlaceholder;
-@property(getter=isSingleLine,assign,readonly) bool singleLine;
+@property (nonatomic, copy) NSString *autocorrectionContext;
+@property (nonatomic, copy) NSAttributedString *compositionText;
+@property (nonatomic, retain) UILabel *placeholderLabel;
+@property (nonatomic, copy) NSString *placeholderText;
+@property (nonatomic, copy) NSString *responseContext;
+@property (getter=isShowingDictationPlaceholder, nonatomic) bool showingDictationPlaceholder;
+@property (getter=isSingleLine, nonatomic, readonly) bool singleLine;
 
 - (id)autocorrectionContext;
 - (id)compositionText;

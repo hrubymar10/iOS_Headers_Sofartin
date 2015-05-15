@@ -8,11 +8,11 @@
     NSMapTable *_viewElementViews;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIPlayButton * playButton;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIPlayButton *playButton;
+@property (readonly) Class superclass;
 
 + (id)_attributedStringForButton:(id)arg1 context:(id)arg2;
 + (id)_attributedStringForButtonText:(id)arg1 type:(long long)arg2 style:(id)arg3 context:(id)arg4;

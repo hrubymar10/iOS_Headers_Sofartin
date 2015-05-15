@@ -4,12 +4,12 @@
 
 @interface AASetupAssistantCreateResponse : AAResponse
 
-@property(assign,readonly) NSString * HSAAction;
-@property(assign,readonly) NSString * HSAData;
-@property(assign,readonly) NSString * appleID;
-@property(assign,readonly) NSString * personID;
-@property(assign,readonly) NSNumber * status;
-@property(assign,readonly) NSString * statusMessage;
+@property (nonatomic, readonly) NSString *HSAAction;
+@property (nonatomic, readonly) NSString *HSAData;
+@property (nonatomic, readonly) NSString *appleID;
+@property (nonatomic, readonly) NSString *personID;
+@property (nonatomic, readonly) NSNumber *status;
+@property (nonatomic, readonly) NSString *statusMessage;
 
 - (id)HSAAction;
 - (id)HSAData;

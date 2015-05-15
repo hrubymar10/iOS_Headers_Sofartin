@@ -15,20 +15,20 @@
     NSMutableDictionary *_topicsToWaitingAppContainerTuples;
 }
 
-@property(assign,retain) APSConnection * apsConnection;
-@property(assign,retain) NSString * apsEnvironmentString;
-@property(assign,retain) NSMapTable * callbacks;
-@property(assign,readwrite) bool darkWakeEnabled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableSet * enabledTopics;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableDictionary * tokensCache;
-@property(assign,retain) NSMutableSet * topicsAwaitingPrivateToken;
-@property(assign,retain) NSMutableSet * topicsAwaitingPublicToken;
-@property(assign,retain) NSMutableDictionary * topicsToWaitingAppContainerTuples;
+@property (nonatomic, retain) APSConnection *apsConnection;
+@property (nonatomic, retain) NSString *apsEnvironmentString;
+@property (nonatomic, retain) NSMapTable *callbacks;
+@property (nonatomic) bool darkWakeEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMutableSet *enabledTopics;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMutableDictionary *tokensCache;
+@property (nonatomic, retain) NSMutableSet *topicsAwaitingPrivateToken;
+@property (nonatomic, retain) NSMutableSet *topicsAwaitingPublicToken;
+@property (nonatomic, retain) NSMutableDictionary *topicsToWaitingAppContainerTuples;
 
 + (id)sharedConnectionForAPSEnvironmentString:(id)arg1 darkWakeEnabled:(bool)arg2;
 

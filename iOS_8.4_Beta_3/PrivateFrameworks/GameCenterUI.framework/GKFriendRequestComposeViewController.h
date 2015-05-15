@@ -10,12 +10,12 @@
     unsigned long long _recipientCount;
 }
 
-@property(assign,retain) UIAlertController * alertController;
-@property(assign,retain) GKComposeHostedViewController * composeController;
-@property(assign,readwrite) <GKFriendRequestComposeViewControllerDelegate> * composeViewDelegate;
-@property(assign,retain) NSString * message;
-@property(assign,readwrite) unsigned long long recipientCount;
-@property(assign,readwrite) unsigned int rid;
+@property (nonatomic, retain) UIAlertController *alertController;
+@property (nonatomic, retain) GKComposeHostedViewController *composeController;
+@property (nonatomic) <GKFriendRequestComposeViewControllerDelegate> *composeViewDelegate;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic) unsigned long long recipientCount;
+@property (nonatomic) unsigned int rid;
 
 + (bool)_preventsAppearanceProxyCustomization;
 + (unsigned long long)maxNumberOfRecipients;

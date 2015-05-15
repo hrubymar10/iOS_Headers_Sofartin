@@ -10,8 +10,8 @@
     unsigned int _wasSelectedWhenTouchesBegan;
 }
 
-@property(assign,readwrite) <MFComposeRecipientAtomDelegate> * delegate;
-@property(assign,readonly) MFComposeRecipient * recipient;
+@property (nonatomic) <MFComposeRecipientAtomDelegate> *delegate;
+@property (nonatomic, readonly) MFComposeRecipient *recipient;
 
 - (void)dealloc;
 - (id)delegate;

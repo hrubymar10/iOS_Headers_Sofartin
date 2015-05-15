@@ -6,21 +6,21 @@
     void *_cameraProperties;
 }
 
-@property(getter=isAccessRestrictedAppleDevice,assign,readwrite) bool accessRestrictedAppleDevice;
-@property(assign,readwrite) bool allowsSyncingClock;
-@property(assign,readonly) unsigned long long batteryLevel;
-@property(assign,readonly) bool batteryLevelAvailable;
-@property(assign,readwrite) bool beingEjected;
-@property(assign,readwrite) unsigned long long contentCatalogPercentCompleted;
-@property(assign,readonly) NSArray * contents;
-@property(getter=isEjectable,assign,readwrite) bool ejectable;
-@property(assign,readwrite) unsigned long long estimatedNumberOfDownloadableItems;
-@property(getter=isLocked,assign,readwrite) bool locked;
-@property(assign,readonly) NSArray * mediaFiles;
-@property(assign,readonly) NSArray * notifyArray;
-@property(assign,readwrite) unsigned long long numberOfDownloadableItems;
-@property(assign,readonly) double timeOffset;
-@property(assign,copy) NSString * volumePath;
+@property (getter=isAccessRestrictedAppleDevice) bool accessRestrictedAppleDevice;
+@property bool allowsSyncingClock;
+@property (readonly) unsigned long long batteryLevel;
+@property (readonly) bool batteryLevelAvailable;
+@property bool beingEjected;
+@property unsigned long long contentCatalogPercentCompleted;
+@property (readonly) NSArray *contents;
+@property (getter=isEjectable) bool ejectable;
+@property unsigned long long estimatedNumberOfDownloadableItems;
+@property (getter=isLocked) bool locked;
+@property (readonly) NSArray *mediaFiles;
+@property (readonly) NSArray *notifyArray;
+@property unsigned long long numberOfDownloadableItems;
+@property (readonly) double timeOffset;
+@property (copy) NSString *volumePath;
 
 + (bool)automaticallyNotifiesObserversForKey:(id)arg1;
 

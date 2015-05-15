@@ -9,10 +9,10 @@
     int _status;
 }
 
-@property(assign,readonly) unsigned long long bytesRead;
-@property(assign,readonly) unsigned long long bytesWritten;
-@property(assign,retain) MFError * error;
-@property(assign,readonly) int status;
+@property (nonatomic, readonly) unsigned long long bytesRead;
+@property (nonatomic, readonly) unsigned long long bytesWritten;
+@property (nonatomic, retain) MFError *error;
+@property (nonatomic, readonly) int status;
 
 - (void)actionFailed:(long long)arg1 forTask:(id)arg2 error:(id)arg3;
 - (unsigned long long)bytesRead;

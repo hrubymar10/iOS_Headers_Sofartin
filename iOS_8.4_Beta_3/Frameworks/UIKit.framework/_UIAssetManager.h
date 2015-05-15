@@ -21,13 +21,13 @@
     long long onceToken_runtimeCatalog;
 }
 
-@property(assign,readonly) NSBundle * bundle;
-@property(assign,readonly) NSString * carFileName;
-@property(getter=_managingUIKitAssets,assign,readonly) bool managingUIKitAssets;
-@property(assign,retain) _UIAssetManager * nextAssetManager;
-@property(assign,readwrite) double preferredScale;
-@property(assign,retain) UITraitCollection * preferredTraitCollection;
-@property(assign,readonly) CUIMutableCatalog * runtimeCatalog;
+@property (nonatomic, readonly) NSBundle *bundle;
+@property (nonatomic, readonly) NSString *carFileName;
+@property (getter=_managingUIKitAssets, nonatomic, readonly) bool managingUIKitAssets;
+@property (nonatomic, retain) _UIAssetManager *nextAssetManager;
+@property (nonatomic) double preferredScale;
+@property (nonatomic, retain) UITraitCollection *preferredTraitCollection;
+@property (nonatomic, readonly) CUIMutableCatalog *runtimeCatalog;
 
 + (void)_convertTraitCollection:(id)arg1 toCUIScale:(double*)arg2 CUIIdiom:(long long*)arg3 UIKitIdiom:(long long*)arg4 subtype:(long long*)arg5;
 + (long long)_userInterfaceIdiomForDeviceClass:(unsigned long long)arg1;

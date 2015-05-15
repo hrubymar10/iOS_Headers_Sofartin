@@ -9,10 +9,10 @@
     NSMutableDictionary *_transfers;
 }
 
-@property(assign,copy) NSDictionary * UTITypes;
-@property(assign,copy) NSArray * classes;
-@property(assign,copy) NSDictionary * dynTypes;
-@property(assign,retain) NSMutableDictionary * transfers;
+@property (nonatomic, copy) NSDictionary *UTITypes;
+@property (nonatomic, copy) NSArray *classes;
+@property (nonatomic, copy) NSDictionary *dynTypes;
+@property (nonatomic, retain) NSMutableDictionary *transfers;
 
 + (id)sharedInstance;
 

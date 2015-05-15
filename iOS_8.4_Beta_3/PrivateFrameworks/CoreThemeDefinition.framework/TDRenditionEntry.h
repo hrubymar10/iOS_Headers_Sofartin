@@ -13,8 +13,8 @@
     } stackKey;
 }
 
-@property(assign,retain) NSData * assetData;
-@property(assign,retain) TDRenditionSpec * renditionSpec;
+@property (nonatomic, readonly, retain) NSData *assetData;
+@property (nonatomic, readonly, retain) TDRenditionSpec *renditionSpec;
 
 - (id)assetData;
 - (long long)compare:(id)arg1;

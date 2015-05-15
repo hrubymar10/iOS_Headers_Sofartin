@@ -6,7 +6,7 @@
     NSArray *_trustProperties;
 }
 
-@property(assign,retain) NSArray * trustProperties;
+@property (nonatomic, retain) NSArray *trustProperties;
 
 - (void).cxx_destruct;
 - (void)_setupNavItem;

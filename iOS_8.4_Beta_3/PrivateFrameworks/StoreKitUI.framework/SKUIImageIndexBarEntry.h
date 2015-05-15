@@ -6,7 +6,7 @@
     UIImage *_image;
 }
 
-@property(assign,readonly) UIImage * image;
+@property (nonatomic, readonly) UIImage *image;
 
 - (void).cxx_destruct;
 - (struct CGSize { double x1; double x2; })_calculatedContentSize;

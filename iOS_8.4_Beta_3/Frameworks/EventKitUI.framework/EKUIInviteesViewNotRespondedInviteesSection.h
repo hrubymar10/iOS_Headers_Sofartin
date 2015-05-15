@@ -20,25 +20,25 @@
     id _tableViewCellHook;
 }
 
-@property(assign,copy) id addInviteesTapped;
-@property(assign,retain) NSOperationQueue * availabilityRequestsQueue;
-@property(assign,retain) NSString * cachedAddInviteeCellReuseIdentifier;
-@property(assign,retain) NSString * cachedInviteeCellReuseIdentifier;
-@property(assign,readwrite) bool canSeeAttendeeStatuses;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool editable;
-@property(assign,retain) EKEvent * event;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableSet * participantAddressesForInFlightAvailabilityOperations;
-@property(assign,retain) NSMutableDictionary * participantAddressesToAvailabilityType;
-@property(assign,retain) NSMutableDictionary * participantAddressesToParticipantIndex;
-@property(assign,copy) id participantRemoved;
-@property(assign,copy) id participantTapped;
-@property(assign,retain) NSMutableArray * participants;
-@property(assign,readwrite) unsigned long long reuseIdentifierVersion;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) id tableViewCellHook;
+@property (nonatomic, copy) id addInviteesTapped;
+@property (nonatomic, retain) NSOperationQueue *availabilityRequestsQueue;
+@property (nonatomic, retain) NSString *cachedAddInviteeCellReuseIdentifier;
+@property (nonatomic, retain) NSString *cachedInviteeCellReuseIdentifier;
+@property (nonatomic) bool canSeeAttendeeStatuses;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool editable;
+@property (nonatomic, retain) EKEvent *event;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableSet *participantAddressesForInFlightAvailabilityOperations;
+@property (nonatomic, retain) NSMutableDictionary *participantAddressesToAvailabilityType;
+@property (nonatomic, retain) NSMutableDictionary *participantAddressesToParticipantIndex;
+@property (nonatomic, copy) id participantRemoved;
+@property (nonatomic, copy) id participantTapped;
+@property (nonatomic, retain) NSMutableArray *participants;
+@property (nonatomic) unsigned long long reuseIdentifierVersion;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) id tableViewCellHook;
 
 + (id)_participantAddressForParticipant:(id)arg1;
 

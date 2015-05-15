@@ -13,14 +13,14 @@
     NSString *_writeHAPCharacteristicType;
 }
 
-@property(assign,retain) NSString * format;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * readHAPCharacteristicName;
-@property(assign,retain) NSString * readHAPCharacteristicType;
-@property(assign,readwrite) bool supportsLocalization;
-@property(assign,retain) NSDictionary * values;
-@property(assign,retain) NSString * writeHAPCharacteristicName;
-@property(assign,retain) NSString * writeHAPCharacteristicType;
+@property (nonatomic, retain) NSString *format;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *readHAPCharacteristicName;
+@property (nonatomic, retain) NSString *readHAPCharacteristicType;
+@property (nonatomic) bool supportsLocalization;
+@property (nonatomic, retain) NSDictionary *values;
+@property (nonatomic, retain) NSString *writeHAPCharacteristicName;
+@property (nonatomic, retain) NSString *writeHAPCharacteristicType;
 
 + (bool)supportsSecureCoding;
 

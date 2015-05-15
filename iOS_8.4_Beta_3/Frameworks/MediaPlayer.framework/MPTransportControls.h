@@ -29,17 +29,17 @@
     id _volumeSlider;
 }
 
-@property(assign,readwrite) bool allowsWirelessPlayback;
-@property(assign,readwrite) unsigned long long desiredParts;
-@property(assign,readwrite) unsigned long long disabledParts;
-@property(assign,retain) MPAVItem * item;
-@property(assign,readonly) NSString * pauseButtonImage;
-@property(assign,readonly) NSString * playButtonImage;
-@property(assign,readonly) NSString * playPauseButtonImage;
-@property(assign,retain) MPAVController * player;
-@property(assign,readwrite) bool registeredForPlayerNotifications;
-@property(assign,readwrite) id target;
-@property(assign,readwrite) unsigned long long visibleParts;
+@property (nonatomic) bool allowsWirelessPlayback;
+@property (nonatomic) unsigned long long desiredParts;
+@property (nonatomic) unsigned long long disabledParts;
+@property (nonatomic, retain) MPAVItem *item;
+@property (nonatomic, readonly) NSString *pauseButtonImage;
+@property (nonatomic, readonly) NSString *playButtonImage;
+@property (nonatomic, readonly) NSString *playPauseButtonImage;
+@property (nonatomic, retain) MPAVController *player;
+@property (nonatomic) bool registeredForPlayerNotifications;
+@property (nonatomic) id target;
+@property (nonatomic) unsigned long long visibleParts;
 
 + (Class)buttonClass;
 + (bool)buttonImagesUseBackgroundImage;

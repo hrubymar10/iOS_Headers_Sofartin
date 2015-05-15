@@ -12,17 +12,17 @@
     IDSService *_service;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableDictionary * messageHandlers;
-@property(assign,retain) NSObject<OS_dispatch_queue> * messageQueue;
-@property(assign,retain) NSMutableDictionary * pendingMessageCompletions;
-@property(assign,retain) NSMutableDictionary * pendingMessageReplies;
-@property(assign,retain) NSObject<OS_dispatch_queue> * processingQueue;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) IDSService * service;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableDictionary *messageHandlers;
+@property (nonatomic, readonly, retain) NSObject<OS_dispatch_queue> *messageQueue;
+@property (nonatomic, retain) NSMutableDictionary *pendingMessageCompletions;
+@property (nonatomic, retain) NSMutableDictionary *pendingMessageReplies;
+@property (nonatomic, readonly, retain) NSObject<OS_dispatch_queue> *processingQueue;
+@property (nonatomic, readonly, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, readonly, retain) IDSService *service;
+@property (readonly) Class superclass;
 
 + (id)sharedEndpoint;
 

@@ -20,14 +20,14 @@
     bool _scheduledSendDelegateRoutesChanged;
 }
 
-@property(assign,copy) NSArray * availableRoutes;
-@property(assign,copy) NSString * category;
-@property(assign,readwrite) <MPAVRoutingControllerDelegate> * delegate;
-@property(assign,readwrite) long long discoveryMode;
-@property(assign,readonly) long long externalScreenType;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) MPAVRoute * pickedRoute;
-@property(assign,readonly) bool volumeControlIsAvailable;
+@property (nonatomic, readonly, copy) NSArray *availableRoutes;
+@property (nonatomic, copy) NSString *category;
+@property (nonatomic) <MPAVRoutingControllerDelegate> *delegate;
+@property (nonatomic) long long discoveryMode;
+@property (nonatomic, readonly) long long externalScreenType;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, readonly) MPAVRoute *pickedRoute;
+@property (nonatomic, readonly) bool volumeControlIsAvailable;
 
 - (void).cxx_destruct;
 - (void)_activeAudioRouteDidChangeNotification:(id)arg1;

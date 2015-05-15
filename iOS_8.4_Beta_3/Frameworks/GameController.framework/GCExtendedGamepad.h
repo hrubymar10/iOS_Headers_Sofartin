@@ -4,19 +4,19 @@
 
 @interface GCExtendedGamepad : NSObject
 
-@property(assign,readonly) GCControllerButtonInput * buttonA;
-@property(assign,readonly) GCControllerButtonInput * buttonB;
-@property(assign,readonly) GCControllerButtonInput * buttonX;
-@property(assign,readonly) GCControllerButtonInput * buttonY;
-@property(assign,readonly) GCController * controller;
-@property(assign,readonly) GCControllerDirectionPad * dpad;
-@property(assign,readonly) GCControllerButtonInput * leftShoulder;
-@property(assign,readonly) GCControllerDirectionPad * leftThumbstick;
-@property(assign,readonly) GCControllerButtonInput * leftTrigger;
-@property(assign,readonly) GCControllerButtonInput * rightShoulder;
-@property(assign,readonly) GCControllerDirectionPad * rightThumbstick;
-@property(assign,readonly) GCControllerButtonInput * rightTrigger;
-@property(assign,copy) id valueChangedHandler;
+@property (readonly) GCControllerButtonInput *buttonA;
+@property (readonly) GCControllerButtonInput *buttonB;
+@property (readonly) GCControllerButtonInput *buttonX;
+@property (readonly) GCControllerButtonInput *buttonY;
+@property (readonly) GCController *controller;
+@property (readonly) GCControllerDirectionPad *dpad;
+@property (readonly) GCControllerButtonInput *leftShoulder;
+@property (readonly) GCControllerDirectionPad *leftThumbstick;
+@property (readonly) GCControllerButtonInput *leftTrigger;
+@property (readonly) GCControllerButtonInput *rightShoulder;
+@property (readonly) GCControllerDirectionPad *rightThumbstick;
+@property (readonly) GCControllerButtonInput *rightTrigger;
+@property (copy) id valueChangedHandler;
 
 + (bool)supportsUSBInterfaceProtocol:(unsigned char)arg1;
 

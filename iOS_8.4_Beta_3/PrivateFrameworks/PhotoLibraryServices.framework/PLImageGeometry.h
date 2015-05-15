@@ -16,12 +16,12 @@
     } _inputRect;
 }
 
-@property(assign,readwrite) long long appliedOrientation;
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } appliedTransform;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } inputRect;
-@property(getter=isMirrored,assign,readonly) bool mirrored;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } outputRect;
-@property(getter=isSizeInverted,assign,readonly) bool sizeInverted;
+@property (nonatomic) long long appliedOrientation;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } appliedTransform;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } inputRect;
+@property (getter=isMirrored, nonatomic, readonly) bool mirrored;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } outputRect;
+@property (getter=isSizeInverted, nonatomic, readonly) bool sizeInverted;
 
 + (id)geometryWithInputSize:(struct CGSize { double x1; double x2; })arg1 initialOrientation:(long long)arg2;
 + (id)geometryWithOutputSize:(struct CGSize { double x1; double x2; })arg1 appliedOrientation:(long long)arg2;

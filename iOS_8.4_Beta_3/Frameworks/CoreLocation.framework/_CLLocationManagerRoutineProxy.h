@@ -10,14 +10,14 @@
     bool _updating;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CLLocationManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) CLLocationManagerRoutine * locationManagerRoutine;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool updating;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CLLocationManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) CLLocationManagerRoutine *locationManagerRoutine;
+@property (readonly) Class superclass;
+@property (nonatomic) bool updating;
 
 - (id)connection;
 - (void)createConnection;

@@ -7,8 +7,8 @@
     RadioShareInformation *_shareInformation;
 }
 
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) RadioShareInformation * shareInformation;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) RadioShareInformation *shareInformation;
 
 - (void).cxx_destruct;
 - (id)error;

@@ -12,13 +12,13 @@
     TCImportTracing *mTracing;
 }
 
-@property(assign,retain) <TCCancelDelegate> * cancelDelegate;
-@property(assign,retain) NSData * data;
-@property(assign,readwrite) <OCDReaderDelegate> * delegate;
-@property(assign,retain) NSString * fileName;
-@property(assign,readwrite) bool isThumbnail;
-@property(assign,retain) NSError * startError;
-@property(assign,retain) TCImportTracing * tracing;
+@property (nonatomic, retain) <TCCancelDelegate> *cancelDelegate;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic) <OCDReaderDelegate> *delegate;
+@property (nonatomic, retain) NSString *fileName;
+@property (nonatomic) bool isThumbnail;
+@property (nonatomic, retain) NSError *startError;
+@property (nonatomic, retain) TCImportTracing *tracing;
 
 - (id)cancelDelegate;
 - (id)data;

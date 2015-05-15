@@ -10,7 +10,7 @@
     NSNumberFormatter *_numberFormatter;
 }
 
-@property(assign,retain) SKUIColorScheme * colorScheme;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
 
 - (void).cxx_destruct;
 - (void)_reloadHeaderView;

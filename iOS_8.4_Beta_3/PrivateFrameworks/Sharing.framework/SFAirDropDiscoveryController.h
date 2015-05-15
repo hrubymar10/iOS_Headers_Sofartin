@@ -14,17 +14,17 @@
     bool _isVisible;
 }
 
-@property(assign,readwrite) <SFAirDropDiscoveryActionSheetDelegate> * actionSheetDelegate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SFAirDropDiscoveryControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long discoverableMode;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isLegacyDevice,assign,readonly) bool legacyDevice;
-@property(getter=isLegacyModeEnabled,assign,readwrite) bool legacyModeEnabled;
-@property(getter=isLegacyModeSettable,assign,readonly) bool legacyModeSettable;
-@property(assign,readonly) Class superclass;
-@property(getter=isVisible,assign,readonly) bool visible;
+@property <SFAirDropDiscoveryActionSheetDelegate> *actionSheetDelegate;
+@property (readonly, copy) NSString *debugDescription;
+@property <SFAirDropDiscoveryControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property long long discoverableMode;
+@property (readonly) unsigned long long hash;
+@property (getter=isLegacyDevice, readonly) bool legacyDevice;
+@property (getter=isLegacyModeEnabled) bool legacyModeEnabled;
+@property (getter=isLegacyModeSettable, readonly) bool legacyModeSettable;
+@property (readonly) Class superclass;
+@property (getter=isVisible, readonly) bool visible;
 
 - (void)actionSheet:(id)arg1 clickedButtonAtIndex:(long long)arg2;
 - (void)actionSheet:(id)arg1 didDismissWithButtonIndex:(long long)arg2;

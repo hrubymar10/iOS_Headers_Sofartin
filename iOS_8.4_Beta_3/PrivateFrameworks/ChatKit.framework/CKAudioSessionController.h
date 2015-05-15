@@ -8,9 +8,9 @@
     bool _shouldUseSpeaker;
 }
 
-@property(getter=isActive,assign,readwrite) bool active;
-@property(getter=isDirty,assign,readwrite) bool dirty;
-@property(assign,readwrite) bool shouldUseSpeaker;
+@property (getter=isActive) bool active;
+@property (getter=isDirty) bool dirty;
+@property bool shouldUseSpeaker;
 
 + (id)queue;
 + (id)shareInstance;

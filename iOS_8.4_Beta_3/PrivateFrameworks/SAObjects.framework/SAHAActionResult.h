@@ -4,10 +4,10 @@
 
 @interface SAHAActionResult : SADomainObject
 
-@property(assign,retain) SAHAEntity * entity;
-@property(assign,copy) NSString * outcome;
-@property(assign,copy) NSString * resultAttribute;
-@property(assign,retain) SAHAAttributeValue * resultValue;
+@property (nonatomic, retain) SAHAEntity *entity;
+@property (nonatomic, copy) NSString *outcome;
+@property (nonatomic, copy) NSString *resultAttribute;
+@property (nonatomic, retain) SAHAAttributeValue *resultValue;
 
 + (id)actionResult;
 + (id)actionResultWithDictionary:(id)arg1 context:(id)arg2;

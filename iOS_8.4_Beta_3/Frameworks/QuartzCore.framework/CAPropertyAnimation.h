@@ -4,10 +4,10 @@
 
 @interface CAPropertyAnimation : CAAnimation
 
-@property(getter=isAdditive,assign,readwrite) bool additive;
-@property(getter=isCumulative,assign,readwrite) bool cumulative;
-@property(assign,copy) NSString * keyPath;
-@property(assign,retain) CAValueFunction * valueFunction;
+@property (getter=isAdditive) bool additive;
+@property (getter=isCumulative) bool cumulative;
+@property (copy) NSString *keyPath;
+@property (retain) CAValueFunction *valueFunction;
 
 + (id)animationWithKeyPath:(id)arg1;
 

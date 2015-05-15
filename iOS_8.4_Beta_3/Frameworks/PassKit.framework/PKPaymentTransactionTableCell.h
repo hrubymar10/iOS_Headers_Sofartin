@@ -11,9 +11,9 @@
     NSString *_secondaryString;
 }
 
-@property(assign,retain) NSString * amountString;
-@property(assign,retain) NSString * primaryString;
-@property(assign,retain) NSString * secondaryString;
+@property (nonatomic, retain) NSString *amountString;
+@property (nonatomic, retain) NSString *primaryString;
+@property (nonatomic, retain) NSString *secondaryString;
 
 + (double)rowHeight;
 

@@ -11,16 +11,16 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readonly) bool canCancel;
-@property(getter=isCurrentlyPlayable,assign,readonly) bool currentlyPlayable;
-@property(assign,readonly) double downloadProgress;
-@property(getter=isPaused,assign,readonly) bool paused;
-@property(assign,readonly) long long persistentID;
-@property(assign,copy) id progressHandler;
-@property(getter=isPurchasing,assign,readonly) bool purchasing;
-@property(assign,readonly) double rawDownloadProgress;
-@property(assign,readonly) double rawDownloadTotal;
-@property(getter=isRestoreDownload,assign,readonly) bool restoreDownload;
+@property (readonly) bool canCancel;
+@property (getter=isCurrentlyPlayable, readonly) bool currentlyPlayable;
+@property (readonly) double downloadProgress;
+@property (getter=isPaused, readonly) bool paused;
+@property (nonatomic, readonly) long long persistentID;
+@property (copy) id progressHandler;
+@property (getter=isPurchasing, nonatomic, readonly) bool purchasing;
+@property (nonatomic, readonly) double rawDownloadProgress;
+@property (nonatomic, readonly) double rawDownloadTotal;
+@property (getter=isRestoreDownload, readonly) bool restoreDownload;
 
 + (id)newObserverForMediaCollection:(id)arg1;
 + (id)newObserverForMediaItem:(id)arg1;

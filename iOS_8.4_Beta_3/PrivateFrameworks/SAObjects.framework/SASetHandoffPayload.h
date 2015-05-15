@@ -4,7 +4,7 @@
 
 @interface SASetHandoffPayload : SABaseClientBoundCommand
 
-@property(assign,retain) <SAHandoffPayload> * handoffPayload;
+@property (nonatomic, retain) <SAHandoffPayload> *handoffPayload;
 
 + (id)setHandoffPayload;
 + (id)setHandoffPayloadWithDictionary:(id)arg1 context:(id)arg2;

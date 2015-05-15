@@ -14,14 +14,14 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned long long duration;
-@property(assign,readwrite) bool hasDuration;
-@property(assign,readwrite) bool hasSequenceNumber;
-@property(assign,readonly) bool hasService;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long sequenceNumber;
-@property(assign,retain) NSString * service;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned long long duration;
+@property (nonatomic) bool hasDuration;
+@property (nonatomic) bool hasSequenceNumber;
+@property (nonatomic, readonly) bool hasService;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long sequenceNumber;
+@property (nonatomic, retain) NSString *service;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

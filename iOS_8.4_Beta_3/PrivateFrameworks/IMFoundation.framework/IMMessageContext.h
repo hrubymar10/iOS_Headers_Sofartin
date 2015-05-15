@@ -10,10 +10,10 @@
     NSObject<OS_xpc_object> *_xpcMessage;
 }
 
-@property(assign,retain) id context;
-@property(assign,retain) IMLocalObject * localObject;
-@property(assign,readwrite) bool shouldBoost;
-@property(assign,readwrite) NSObject<OS_xpc_object> * xpcMessage;
+@property (retain) id context;
+@property (retain) IMLocalObject *localObject;
+@property bool shouldBoost;
+@property NSObject<OS_xpc_object> *xpcMessage;
 
 - (id)context;
 - (void)dealloc;

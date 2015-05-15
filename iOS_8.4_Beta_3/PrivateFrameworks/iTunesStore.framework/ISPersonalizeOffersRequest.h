@@ -7,8 +7,8 @@
     NSMutableDictionary *_itemIDsByType;
 }
 
-@property(assign,retain) NSNumber * accountIdentifier;
-@property(assign,readonly) NSArray * allItemTypes;
+@property (nonatomic, retain) NSNumber *accountIdentifier;
+@property (nonatomic, readonly) NSArray *allItemTypes;
 
 - (id)accountIdentifier;
 - (void)addItemIdentifier:(id)arg1 forItemType:(id)arg2;

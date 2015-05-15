@@ -9,10 +9,10 @@
     NSMutableDictionary *_sampleChannelsSignificantBattery;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * batteryLevelChangedNotifications;
-@property(assign,retain) NSMutableDictionary * sampleChannelsDaily;
-@property(assign,retain) NSMutableDictionary * sampleChannelsHalfHour;
-@property(assign,retain) NSMutableDictionary * sampleChannelsSignificantBattery;
+@property (retain) PLEntryNotificationOperatorComposition *batteryLevelChangedNotifications;
+@property (nonatomic, retain) NSMutableDictionary *sampleChannelsDaily;
+@property (nonatomic, retain) NSMutableDictionary *sampleChannelsHalfHour;
+@property (nonatomic, retain) NSMutableDictionary *sampleChannelsSignificantBattery;
 
 + (id)entryEventBackwardDefinitionAmcStatsPerfCounters;
 + (id)entryEventBackwardDefinitionAppleEmbeddedPcieLinkStates;

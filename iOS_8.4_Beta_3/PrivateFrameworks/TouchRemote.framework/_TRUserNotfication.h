@@ -8,9 +8,9 @@
     struct __CFUserNotification { } *_userNotification;
 }
 
-@property(assign,readonly) struct __CFUserNotification { }* CFUserNotification;
-@property(assign,readonly) int response;
-@property(assign,readonly) unsigned long long responseFlags;
+@property (nonatomic, readonly) struct __CFUserNotification { }*CFUserNotification;
+@property (nonatomic, readonly) int response;
+@property (nonatomic, readonly) unsigned long long responseFlags;
 
 - (struct __CFUserNotification { }*)CFUserNotification;
 - (void)cancel;

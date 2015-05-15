@@ -7,8 +7,8 @@
     unsigned long long _version;
 }
 
-@property(assign,readwrite) unsigned long long type;
-@property(assign,readwrite) unsigned long long version;
+@property (nonatomic) unsigned long long type;
+@property (nonatomic) unsigned long long version;
 
 + (double)_doubleFromDictionary:(id)arg1 key:(id)arg2 error:(bool*)arg3;
 + (long long)_integerFromDictionary:(id)arg1 key:(id)arg2 error:(bool*)arg3;

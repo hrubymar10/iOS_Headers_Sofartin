@@ -4,15 +4,15 @@
 
 @interface SAUIDisambiguationList : SAAceView
 
-@property(assign,copy) NSString * disambiguationKey;
-@property(assign,retain) SAUIDomainObjectPicker * domainObjectPicker;
-@property(assign,copy) NSArray * items;
-@property(assign,copy) NSString * selectionResponse;
-@property(assign,copy) NSString * speakableDelimiter;
-@property(assign,copy) NSString * speakableFinalDelimiter;
-@property(assign,copy) NSString * speakableSelectionResponse;
-@property(assign,copy) NSString * speakableSuffix;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *disambiguationKey;
+@property (nonatomic, retain) SAUIDomainObjectPicker *domainObjectPicker;
+@property (nonatomic, copy) NSArray *items;
+@property (nonatomic, copy) NSString *selectionResponse;
+@property (nonatomic, copy) NSString *speakableDelimiter;
+@property (nonatomic, copy) NSString *speakableFinalDelimiter;
+@property (nonatomic, copy) NSString *speakableSelectionResponse;
+@property (nonatomic, copy) NSString *speakableSuffix;
+@property (nonatomic, copy) NSString *title;
 
 + (id)disambiguationList;
 + (id)disambiguationListWithDictionary:(id)arg1 context:(id)arg2;

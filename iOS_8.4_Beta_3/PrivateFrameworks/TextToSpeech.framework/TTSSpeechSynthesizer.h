@@ -28,12 +28,12 @@
     float _volume;
 }
 
-@property(assign,readwrite) <TTSSpeechSynthesizerDelegate> * delegate;
-@property(assign,readwrite) float pitch;
-@property(assign,readwrite) float rate;
-@property(assign,readonly) NSString * resolvedVoiceIdentifier;
-@property(assign,retain) NSString * voiceIdentifier;
-@property(assign,readwrite) float volume;
+@property (nonatomic) <TTSSpeechSynthesizerDelegate> *delegate;
+@property (nonatomic) float pitch;
+@property (nonatomic) float rate;
+@property (nonatomic, readonly) NSString *resolvedVoiceIdentifier;
+@property (nonatomic, retain) NSString *voiceIdentifier;
+@property (nonatomic) float volume;
 
 + (id)availableLanguageCodes;
 + (id)availableVoices;

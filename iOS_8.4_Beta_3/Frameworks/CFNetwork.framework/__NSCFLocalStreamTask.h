@@ -8,11 +8,11 @@
     id _streamCompletion;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id streamCompletion;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (copy) id streamCompletion;
+@property (readonly) Class superclass;
 
 + (id)rawRequestForHost:(id)arg1 port:(long long)arg2 tls:(bool)arg3;
 

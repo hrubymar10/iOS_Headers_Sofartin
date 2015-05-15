@@ -7,10 +7,10 @@
     UILabel *_nameLabel;
 }
 
-@property(assign,retain) GKGame * game;
-@property(assign,retain) GKGameRecord * gameRecord;
-@property(assign,retain) UIImageView * iconView;
-@property(assign,retain) UILabel * nameLabel;
+@property (nonatomic, retain) GKGame *game;
+@property (nonatomic, retain) GKGameRecord *gameRecord;
+@property (nonatomic, retain) UIImageView *iconView;
+@property (nonatomic, retain) UILabel *nameLabel;
 
 + (double)defaultRowHeight;
 + (id)itemHeightList;

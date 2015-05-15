@@ -4,16 +4,16 @@
 
 @interface PLCloudResourceNode : PLManagedObject
 
-@property(assign,readwrite) unsigned short budgetingCategory;
-@property(assign,readwrite) unsigned short color;
-@property(assign,retain) PLCloudResourceNode * leftChild;
-@property(assign,retain) PLCloudResourceNode * next;
-@property(assign,retain) PLCloudResourceNode * parent;
-@property(assign,readwrite) unsigned short qualityClass;
-@property(assign,retain) PLCloudResource * resource;
-@property(assign,retain) PLCloudResourceNode * rightChild;
-@property(assign,readwrite) unsigned long long totalResourceCount;
-@property(assign,readwrite) unsigned long long totalResourceSize;
+@property (nonatomic) unsigned short budgetingCategory;
+@property (nonatomic) unsigned short color;
+@property (nonatomic, retain) PLCloudResourceNode *leftChild;
+@property (nonatomic, retain) PLCloudResourceNode *next;
+@property (nonatomic, retain) PLCloudResourceNode *parent;
+@property (nonatomic) unsigned short qualityClass;
+@property (nonatomic, retain) PLCloudResource *resource;
+@property (nonatomic, retain) PLCloudResourceNode *rightChild;
+@property (nonatomic) unsigned long long totalResourceCount;
+@property (nonatomic) unsigned long long totalResourceSize;
 
 + (id)entityName;
 

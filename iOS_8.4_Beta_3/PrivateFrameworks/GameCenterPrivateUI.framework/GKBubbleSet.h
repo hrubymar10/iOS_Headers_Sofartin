@@ -8,9 +8,9 @@
     long long _supportedBubbles;
 }
 
-@property(assign,readonly) NSArray * bubbleControls;
-@property(assign,retain) NSString * debuggingTag;
-@property(assign,readwrite) long long supportedBubbles;
+@property (nonatomic, readonly) NSArray *bubbleControls;
+@property (nonatomic, retain) NSString *debuggingTag;
+@property (nonatomic) long long supportedBubbles;
 
 + (id)setWithBubbleControls:(id)arg1;
 + (id)setWithBubbleTypes:(long long)arg1;

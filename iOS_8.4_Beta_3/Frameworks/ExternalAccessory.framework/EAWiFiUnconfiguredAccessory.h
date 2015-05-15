@@ -11,12 +11,12 @@
     NSString *_ssid;
 }
 
-@property(assign,copy) NSString * macAddress;
-@property(assign,copy) NSString * manufacturer;
-@property(assign,copy) NSString * model;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) unsigned long long properties;
-@property(assign,copy) NSString * ssid;
+@property (nonatomic, readonly, copy) NSString *macAddress;
+@property (nonatomic, readonly, copy) NSString *manufacturer;
+@property (nonatomic, readonly, copy) NSString *model;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly) unsigned long long properties;
+@property (nonatomic, readonly, copy) NSString *ssid;
 
 - (void).cxx_destruct;
 - (id)description;

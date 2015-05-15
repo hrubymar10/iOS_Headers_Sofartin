@@ -7,8 +7,8 @@
     NSString *_value;
 }
 
-@property(assign,readonly) NSString * label;
-@property(assign,readonly) NSString * value;
+@property (nonatomic, readonly) NSString *label;
+@property (nonatomic, readonly) NSString *value;
 
 - (void).cxx_destruct;
 - (id)description;

@@ -7,8 +7,8 @@
     int mTransformBehavior;
 }
 
-@property(assign,readonly) TSKCORangeAddress * address;
-@property(assign,readonly) int transformBehavior;
+@property (nonatomic, readonly) TSKCORangeAddress *address;
+@property (nonatomic, readonly) int transformBehavior;
 
 - (id)address;
 - (void)dealloc;

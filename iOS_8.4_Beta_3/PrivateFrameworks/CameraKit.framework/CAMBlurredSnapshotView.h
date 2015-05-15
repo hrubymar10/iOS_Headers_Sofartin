@@ -22,14 +22,14 @@
     } _targetFrame;
 }
 
-@property(assign,readonly) UIView * _dimmingView;
-@property(assign,readonly) UIView * _lowQualityBlurView;
-@property(assign,readonly) bool _supportsBlur;
-@property(assign,readwrite) bool blurred;
-@property(assign,readwrite) bool dimmed;
-@property(assign,readonly) UIView * snapshotView;
-@property(assign,readwrite) long long style;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } targetFrame;
+@property (nonatomic, readonly) UIView *_dimmingView;
+@property (nonatomic, readonly) UIView *_lowQualityBlurView;
+@property (nonatomic, readonly) bool _supportsBlur;
+@property (nonatomic) bool blurred;
+@property (nonatomic) bool dimmed;
+@property (nonatomic, readonly) UIView *snapshotView;
+@property (nonatomic) long long style;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } targetFrame;
 
 - (void).cxx_destruct;
 - (void)_applyLowQualityBlurAnimated:(bool)arg1 withCompletionBlock:(id)arg2;

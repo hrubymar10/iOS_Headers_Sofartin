@@ -20,21 +20,21 @@
     bool mValueLabelsOn;
 }
 
-@property(assign,readonly) double barGapRatio;
-@property(assign,readonly) double barGroupGapRatio;
-@property(assign,readonly) double barWidthRatio;
-@property(assign,readonly) id fill;
-@property(assign,readonly) TSCHChartAxis * groupAxis;
-@property(assign,readonly) unsigned int labelPosition;
-@property(assign,readonly) double opacity;
-@property(assign,readonly) TSWPParagraphStyle * paragraphStyle;
-@property(assign,readonly) TSCHChartSeries * series;
-@property(assign,readonly) unsigned long long seriesIndex;
-@property(assign,readonly) TSDShadow * shadow;
-@property(assign,readonly) TSDStroke * stroke;
-@property(assign,readonly) double unitSpaceIntercept;
-@property(assign,readonly) TSCHChartValueAxis * valueAxis;
-@property(assign,readonly) bool valueLabelsOn;
+@property (readonly) double barGapRatio;
+@property (readonly) double barGroupGapRatio;
+@property (readonly) double barWidthRatio;
+@property (readonly) id fill;
+@property (readonly) TSCHChartAxis *groupAxis;
+@property (readonly) unsigned int labelPosition;
+@property (readonly) double opacity;
+@property (readonly) TSWPParagraphStyle *paragraphStyle;
+@property (readonly) TSCHChartSeries *series;
+@property (readonly) unsigned long long seriesIndex;
+@property (readonly) TSDShadow *shadow;
+@property (readonly) TSDStroke *stroke;
+@property (readonly) double unitSpaceIntercept;
+@property (readonly) TSCHChartValueAxis *valueAxis;
+@property (readonly) bool valueLabelsOn;
 
 - (double)barGapRatio;
 - (double)barGroupGapRatio;

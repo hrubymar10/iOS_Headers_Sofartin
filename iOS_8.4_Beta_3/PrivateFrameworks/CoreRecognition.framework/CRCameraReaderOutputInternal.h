@@ -11,12 +11,12 @@
     NSNumber *_yearValue;
 }
 
-@property(assign,retain) NSNumber * dayValue;
-@property(assign,retain) NSNumber * monthValue;
-@property(assign,retain) NSString * stringValue;
-@property(assign,retain) NSString * type;
-@property(assign,retain) NSArray * vertices;
-@property(assign,retain) NSNumber * yearValue;
+@property (retain) NSNumber *dayValue;
+@property (retain) NSNumber *monthValue;
+@property (retain) NSString *stringValue;
+@property (retain) NSString *type;
+@property (retain) NSArray *vertices;
+@property (retain) NSNumber *yearValue;
 
 - (void).cxx_destruct;
 - (id)dayValue;

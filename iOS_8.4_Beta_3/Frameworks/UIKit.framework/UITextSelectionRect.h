@@ -4,12 +4,12 @@
 
 @interface UITextSelectionRect : NSObject
 
-@property(assign,readonly) bool containsEnd;
-@property(assign,readonly) bool containsStart;
-@property(getter=_isImpl,assign,readonly) UITextSelectionRectImpl * isImpl;
-@property(assign,readonly) bool isVertical;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rect;
-@property(assign,readonly) long long writingDirection;
+@property (nonatomic, readonly) bool containsEnd;
+@property (nonatomic, readonly) bool containsStart;
+@property (getter=_isImpl, nonatomic, readonly) UITextSelectionRectImpl *isImpl;
+@property (nonatomic, readonly) bool isVertical;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rect;
+@property (nonatomic, readonly) long long writingDirection;
 
 + (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })endEdgeFromRects:(id)arg1;
 + (bool)endIsHorizontal:(id)arg1;

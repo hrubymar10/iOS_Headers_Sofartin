@@ -10,10 +10,10 @@
     bool _toMany;
 }
 
-@property(assign,copy) id inversePropertyIsApplicable;
-@property(assign,readonly) NSSet * inversePropertyNames;
-@property(assign,readonly) bool ownsRelatedObject;
-@property(assign,readonly) bool toMany;
+@property (nonatomic, copy) id inversePropertyIsApplicable;
+@property (nonatomic, readonly) NSSet *inversePropertyNames;
+@property (nonatomic, readonly) bool ownsRelatedObject;
+@property (nonatomic, readonly) bool toMany;
 
 + (id)relationWithEntityName:(id)arg1 toMany:(bool)arg2 inversePropertyNames:(id)arg3;
 + (id)relationWithEntityName:(id)arg1 toMany:(bool)arg2 inversePropertyNames:(id)arg3 ownsRelated:(bool)arg4;

@@ -18,8 +18,8 @@
     bool _pauseOutgoing;
 }
 
-@property(assign,readwrite) bool pausesIncomingScene;
-@property(assign,readwrite) bool pausesOutgoingScene;
+@property (nonatomic) bool pausesIncomingScene;
+@property (nonatomic) bool pausesOutgoingScene;
 
 + (id)crossFadeWithDuration:(double)arg1;
 + (id)doorsCloseHorizontalWithDuration:(double)arg1;

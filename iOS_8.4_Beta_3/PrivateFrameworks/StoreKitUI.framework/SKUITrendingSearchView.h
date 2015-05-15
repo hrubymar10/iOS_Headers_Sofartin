@@ -13,9 +13,9 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,copy) NSArray * resultButtons;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic, copy) NSArray *resultButtons;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 + (id)defaultButtonFont;
 + (id)defaultTitleColor;

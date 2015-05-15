@@ -6,15 +6,15 @@
     NSDateFormatter *_dateFormatter;
 }
 
-@property(assign,copy) NSString * dateFormat;
-@property(assign,readonly) unsigned long long dateFormatterFullStyle;
-@property(assign,readonly) unsigned long long dateFormatterLongStyle;
-@property(assign,readonly) unsigned long long dateFormatterMediumStyle;
-@property(assign,readonly) unsigned long long dateFormatterNoStyle;
-@property(assign,readonly) unsigned long long dateFormatterShortStyle;
-@property(assign,readwrite) unsigned long long dateStyle;
-@property(assign,copy) NSString * localeIdentifier;
-@property(assign,readwrite) unsigned long long timeStyle;
+@property (copy) NSString *dateFormat;
+@property (readonly) unsigned long long dateFormatterFullStyle;
+@property (readonly) unsigned long long dateFormatterLongStyle;
+@property (readonly) unsigned long long dateFormatterMediumStyle;
+@property (readonly) unsigned long long dateFormatterNoStyle;
+@property (readonly) unsigned long long dateFormatterShortStyle;
+@property unsigned long long dateStyle;
+@property (copy) NSString *localeIdentifier;
+@property unsigned long long timeStyle;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

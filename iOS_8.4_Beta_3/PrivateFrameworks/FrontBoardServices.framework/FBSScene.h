@@ -4,13 +4,13 @@
 
 @interface FBSScene : NSObject
 
-@property(assign,retain) FBSSceneClientSettings * clientSettings;
-@property(assign,retain) NSArray * contexts;
-@property(assign,readwrite) <FBSSceneDelegate> * delegate;
-@property(assign,readonly) CADisplay * display;
-@property(assign,retain) FBSDisplay * fbsDisplay;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) FBSSceneSettings * settings;
+@property (nonatomic, readonly, retain) FBSSceneClientSettings *clientSettings;
+@property (nonatomic, readonly, retain) NSArray *contexts;
+@property (nonatomic) <FBSSceneDelegate> *delegate;
+@property (nonatomic, readonly) CADisplay *display;
+@property (nonatomic, readonly, retain) FBSDisplay *fbsDisplay;
+@property (nonatomic, readonly, copy) NSString *identifier;
+@property (nonatomic, readonly, retain) FBSSceneSettings *settings;
 
 - (id)_descriptionWithMultilinePrefix:(id)arg1;
 - (id)_init;

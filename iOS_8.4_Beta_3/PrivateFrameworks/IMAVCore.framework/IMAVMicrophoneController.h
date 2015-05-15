@@ -8,8 +8,8 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,retain) IMAVMicrophone * currentMicrophone;
-@property(assign,retain) NSArray * microphones;
+@property (nonatomic, retain) IMAVMicrophone *currentMicrophone;
+@property (nonatomic, readonly, retain) NSArray *microphones;
 
 + (id)sharedInstance;
 

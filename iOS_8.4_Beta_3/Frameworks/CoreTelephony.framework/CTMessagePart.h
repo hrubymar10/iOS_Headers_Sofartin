@@ -10,10 +10,10 @@
     NSData *_data;
 }
 
-@property(assign,copy) NSString * contentId;
-@property(assign,copy) NSString * contentLocation;
-@property(assign,copy) NSString * contentType;
-@property(assign,copy) NSData * data;
+@property (nonatomic, copy) NSString *contentId;
+@property (nonatomic, copy) NSString *contentLocation;
+@property (nonatomic, copy) NSString *contentType;
+@property (nonatomic, copy) NSData *data;
 
 - (void)addContentTypeParameterWithName:(id)arg1 value:(id)arg2;
 - (id)allContentTypeParameterNames;

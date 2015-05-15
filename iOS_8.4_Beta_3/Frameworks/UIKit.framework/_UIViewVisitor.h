@@ -9,10 +9,10 @@
     bool _visitMaskViews;
 }
 
-@property(assign,readwrite) bool _currentlyVisitingHierarchy;
-@property(assign,readwrite) bool tracksHierarchy;
-@property(assign,readonly) unsigned long long traversalDirection;
-@property(assign,readwrite) bool visitMaskViews;
+@property (nonatomic) bool _currentlyVisitingHierarchy;
+@property (nonatomic) bool tracksHierarchy;
+@property (nonatomic, readonly) unsigned long long traversalDirection;
+@property (nonatomic) bool visitMaskViews;
 
 + (void)_addHierarchyTrackingVisitor:(id)arg1;
 + (void)_removeHierarchyTrackingVisitor:(id)arg1;

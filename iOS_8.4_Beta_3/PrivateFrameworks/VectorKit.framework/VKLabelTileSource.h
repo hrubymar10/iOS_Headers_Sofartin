@@ -11,8 +11,8 @@
     bool _localizeLabels;
 }
 
-@property(assign,readwrite) long long labelScaleFactor;
-@property(assign,readwrite) bool localizeLabels;
+@property (nonatomic) long long labelScaleFactor;
+@property (nonatomic) bool localizeLabels;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

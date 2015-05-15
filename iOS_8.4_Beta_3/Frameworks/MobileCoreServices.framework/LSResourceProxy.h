@@ -16,9 +16,9 @@
     LSApplicationProxy *_typeOwner;
 }
 
-@property(assign,readonly) bool boundIconIsBadge;
-@property(assign,readonly) NSDictionary * iconsDictionary;
-@property(assign,readonly) NSString * localizedName;
+@property (nonatomic, readonly) bool boundIconIsBadge;
+@property (nonatomic, readonly) NSDictionary *iconsDictionary;
+@property (nonatomic, readonly) NSString *localizedName;
 
 + (struct CGSize { double x1; double x2; })_applicationIconCanvasSize;
 + (long long)_compareApplicationIconCanvasSize:(struct CGSize { double x1; double x2; })arg1 withSize:(struct CGSize { double x1; double x2; })arg2;

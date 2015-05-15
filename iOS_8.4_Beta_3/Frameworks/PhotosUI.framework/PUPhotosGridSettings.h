@@ -16,17 +16,17 @@
     bool _slowBackgroundFetch;
 }
 
-@property(assign,readwrite) bool badgeAllItemsAsVideos;
-@property(assign,readwrite) double defaultItemSideSize;
-@property(assign,readwrite) bool displayAllItemsAsBursts;
-@property(assign,readwrite) bool flashDegradedImages;
-@property(assign,readwrite) bool forceJPEGThumbnailsInDefaultGrid;
-@property(assign,readwrite) double maximumSpacing;
-@property(assign,readwrite) double minimumSpacing;
-@property(assign,readwrite) long long numberColumnsInDefaultGrid;
-@property(assign,readwrite) long long numberOfColumnsInWideGrid;
-@property(assign,readwrite) double sideMargins;
-@property(assign,readwrite) bool slowBackgroundFetch;
+@property (nonatomic) bool badgeAllItemsAsVideos;
+@property (nonatomic) double defaultItemSideSize;
+@property (nonatomic) bool displayAllItemsAsBursts;
+@property (nonatomic) bool flashDegradedImages;
+@property (nonatomic) bool forceJPEGThumbnailsInDefaultGrid;
+@property (nonatomic) double maximumSpacing;
+@property (nonatomic) double minimumSpacing;
+@property (nonatomic) long long numberColumnsInDefaultGrid;
+@property (nonatomic) long long numberOfColumnsInWideGrid;
+@property (nonatomic) double sideMargins;
+@property (nonatomic) bool slowBackgroundFetch;
 
 + (id)settingsControllerModule;
 + (id)sharedInstance;

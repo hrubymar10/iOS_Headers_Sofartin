@@ -17,15 +17,15 @@
     bool _renewing;
 }
 
-@property(assign,readonly) CKDClientContext * context;
-@property(assign,readwrite) bool isSetup;
-@property(assign,retain) NSError * lastSetupError;
-@property(assign,readwrite) struct FairPlayHWInfo_ { unsigned int x1; unsigned char x2[20]; } mescalHWInfo;
-@property(assign,readwrite) struct FPSAPContextOpaque_ { }* mescalSession;
-@property(assign,retain) NSObject<OS_dispatch_queue> * opQueue;
-@property(assign,retain) NSOperationQueue * renewQueue;
-@property(assign,retain) NSObject<OS_dispatch_group> * renewalGroup;
-@property(assign,readwrite) bool renewing;
+@property (nonatomic, readonly) CKDClientContext *context;
+@property (nonatomic) bool isSetup;
+@property (nonatomic, retain) NSError *lastSetupError;
+@property (nonatomic) struct FairPlayHWInfo_ { unsigned int x1; unsigned char x2[20]; } mescalHWInfo;
+@property (nonatomic) struct FPSAPContextOpaque_ { }*mescalSession;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *opQueue;
+@property (nonatomic, retain) NSOperationQueue *renewQueue;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *renewalGroup;
+@property bool renewing;
 
 - (void).cxx_destruct;
 - (void)_getHardwareInfo:(struct FairPlayHWInfo_ { unsigned int x1; unsigned char x2[20]; }*)arg1 withCompletionHandler:(id)arg2;

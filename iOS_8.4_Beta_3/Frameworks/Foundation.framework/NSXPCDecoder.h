@@ -19,9 +19,9 @@
     } _rootObject;
 }
 
-@property(assign,readwrite) NSXPCConnection * _connection;
-@property(assign,retain) NSXPCInterface * interface;
-@property(assign,readwrite) SEL replyToSelector;
+@property NSXPCConnection *_connection;
+@property (retain) NSXPCInterface *interface;
+@property SEL replyToSelector;
 
 + (id)_createXPCObjectWithData:(id)arg1;
 

@@ -24,16 +24,16 @@
     bool _willComplete;
 }
 
-@property(assign,readonly) UIView * backPageView;
-@property(assign,readonly) UIView * backView;
-@property(assign,readonly) long long curlState;
-@property(assign,readonly) long long curlType;
-@property(assign,readonly) UIView * frontPageView;
-@property(assign,readonly) UIView * frontView;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } initialLocation;
-@property(assign,readonly) _UIPageCurl * pageCurl;
-@property(getter=hasPendingAnimations,assign,readonly) bool pendingAnimations;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } referenceLocation;
+@property (nonatomic, readonly) UIView *backPageView;
+@property (nonatomic, readonly) UIView *backView;
+@property (nonatomic, readonly) long long curlState;
+@property (nonatomic, readonly) long long curlType;
+@property (nonatomic, readonly) UIView *frontPageView;
+@property (nonatomic, readonly) UIView *frontView;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } initialLocation;
+@property (nonatomic, readonly) _UIPageCurl *pageCurl;
+@property (getter=hasPendingAnimations, nonatomic, readonly) bool pendingAnimations;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } referenceLocation;
 
 - (long long)_effectiveTransitionDirection;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_pageViewFrame;

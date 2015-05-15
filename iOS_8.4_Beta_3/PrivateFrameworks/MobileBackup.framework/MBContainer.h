@@ -6,13 +6,13 @@
     NSMutableDictionary *_plist;
 }
 
-@property(assign,retain) NSString * containerDir;
-@property(assign,readonly) int containerType;
-@property(assign,readonly) NSString * containerTypeString;
-@property(assign,retain) NSDate * datePlacedInSafeHarbor;
-@property(assign,readonly) NSString * identifier;
-@property(getter=isSafeHarbor,assign,readonly) bool safeHarbor;
-@property(assign,readonly) NSString * safeHarborDir;
+@property (nonatomic, retain) NSString *containerDir;
+@property (nonatomic, readonly) int containerType;
+@property (nonatomic, readonly) NSString *containerTypeString;
+@property (nonatomic, retain) NSDate *datePlacedInSafeHarbor;
+@property (nonatomic, readonly) NSString *identifier;
+@property (getter=isSafeHarbor, nonatomic, readonly) bool safeHarbor;
+@property (nonatomic, readonly) NSString *safeHarborDir;
 
 + (id)containerWithDomainName:(id)arg1;
 + (id)containerWithPropertyList:(id)arg1;

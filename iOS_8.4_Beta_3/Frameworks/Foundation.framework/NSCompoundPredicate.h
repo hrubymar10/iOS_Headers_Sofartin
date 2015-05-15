@@ -8,8 +8,8 @@
     unsigned long long _type;
 }
 
-@property(assign,readonly) unsigned long long compoundPredicateType;
-@property(assign,copy) NSArray * subpredicates;
+@property (readonly) unsigned long long compoundPredicateType;
+@property (readonly, copy) NSArray *subpredicates;
 
 + (id)_operatorForType:(unsigned long long)arg1;
 + (id)andPredicateWithSubpredicates:(id)arg1;

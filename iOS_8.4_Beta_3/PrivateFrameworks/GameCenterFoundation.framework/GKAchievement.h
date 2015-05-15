@@ -10,17 +10,17 @@
     bool _showsCompletionBanner;
 }
 
-@property(getter=isCompleted,assign,readonly) bool completed;
-@property(assign,readwrite) GKGame * game;
-@property(assign,copy) NSString * groupIdentifier;
-@property(getter=isHidden,assign,readwrite) bool hidden;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) GKAchievementInternal * internal;
-@property(assign,copy) NSDate * lastReportedDate;
-@property(assign,readwrite) double percentComplete;
-@property(assign,retain) GKPlayer * player;
-@property(assign,copy) NSString * playerID;
-@property(assign,readwrite) bool showsCompletionBanner;
+@property (getter=isCompleted, nonatomic, readonly) bool completed;
+@property (nonatomic) GKGame *game;
+@property (nonatomic, readonly, copy) NSString *groupIdentifier;
+@property (getter=isHidden, nonatomic) bool hidden;
+@property (nonatomic, copy) NSString *identifier;
+@property (retain) GKAchievementInternal *internal;
+@property (nonatomic, copy) NSDate *lastReportedDate;
+@property (nonatomic) double percentComplete;
+@property (nonatomic, readonly, retain) GKPlayer *player;
+@property (nonatomic, copy) NSString *playerID;
+@property (nonatomic) bool showsCompletionBanner;
 
 + (id)instanceMethodSignatureForSelector:(SEL)arg1;
 + (bool)instancesRespondToSelector:(SEL)arg1;

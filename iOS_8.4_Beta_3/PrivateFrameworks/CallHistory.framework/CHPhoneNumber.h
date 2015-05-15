@@ -9,10 +9,10 @@
     NSString *_originalPhoneNumber;
 }
 
-@property(assign,copy) NSString * ISOCountryCode;
-@property(assign,readwrite) bool formatted;
-@property(assign,copy) NSString * formattedPhoneNumber;
-@property(assign,copy) NSString * originalPhoneNumber;
+@property (copy) NSString *ISOCountryCode;
+@property bool formatted;
+@property (copy) NSString *formattedPhoneNumber;
+@property (copy) NSString *originalPhoneNumber;
 
 - (void).cxx_destruct;
 - (id)ISOCountryCode;

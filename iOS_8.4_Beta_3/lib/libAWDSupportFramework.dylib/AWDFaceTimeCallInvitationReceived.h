@@ -14,14 +14,14 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,retain) NSString * guid;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasIsVideo;
-@property(assign,readwrite) bool hasOnLockScreen;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int isVideo;
-@property(assign,readwrite) unsigned int onLockScreen;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasIsVideo;
+@property (nonatomic) bool hasOnLockScreen;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int isVideo;
+@property (nonatomic) unsigned int onLockScreen;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

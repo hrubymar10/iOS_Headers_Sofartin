@@ -8,9 +8,9 @@
     EKTravelPrediction *_prediction;
 }
 
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) double delay;
-@property(assign,readonly) EKTravelPrediction * prediction;
+@property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) double delay;
+@property (nonatomic, readonly) EKTravelPrediction *prediction;
 
 + (bool)supportsSecureCoding;
 

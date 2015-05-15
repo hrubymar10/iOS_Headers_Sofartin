@@ -26,30 +26,30 @@
     NSString *_username;
 }
 
-@property(assign,readwrite) bool disconnectOnIdle;
-@property(assign,readwrite) int disconnectOnIdleTimeout;
-@property(assign,readwrite) bool disconnectOnLogout;
-@property(assign,readwrite) bool disconnectOnSleep;
-@property(assign,readwrite) bool disconnectOnUserSwitch;
-@property(assign,readwrite) bool disconnectOnWake;
-@property(assign,readwrite) int disconnectOnWakeTimeout;
-@property(assign,copy) NSUUID * identifier;
-@property(assign,retain) NEIdentityKeychainItem * identity;
-@property(assign,copy) NSData * identityData;
-@property(assign,copy) NSData * identityDataHash;
-@property(assign,readwrite) bool identityDataImported;
-@property(assign,copy) NSData * identityDataInternal;
-@property(assign,copy) NSString * identityDataPassword;
-@property(assign,copy) NSData * identityReference;
-@property(assign,copy) NSData * identityReferenceInternal;
-@property(assign,readwrite) long long keychainDomain;
-@property(assign,copy) NSString * passwordEncryption;
-@property(assign,copy) NEKeychainItem * passwordKeychainItem;
-@property(assign,copy) NSData * passwordReference;
-@property(assign,copy) NEProxySettings * proxySettings;
-@property(assign,copy) NSString * serverAddress;
-@property(assign,readonly) long long type;
-@property(assign,copy) NSString * username;
+@property bool disconnectOnIdle;
+@property int disconnectOnIdleTimeout;
+@property bool disconnectOnLogout;
+@property bool disconnectOnSleep;
+@property bool disconnectOnUserSwitch;
+@property bool disconnectOnWake;
+@property int disconnectOnWakeTimeout;
+@property (copy) NSUUID *identifier;
+@property (retain) NEIdentityKeychainItem *identity;
+@property (copy) NSData *identityData;
+@property (copy) NSData *identityDataHash;
+@property bool identityDataImported;
+@property (copy) NSData *identityDataInternal;
+@property (copy) NSString *identityDataPassword;
+@property (copy) NSData *identityReference;
+@property (copy) NSData *identityReferenceInternal;
+@property long long keychainDomain;
+@property (copy) NSString *passwordEncryption;
+@property (copy) NEKeychainItem *passwordKeychainItem;
+@property (copy) NSData *passwordReference;
+@property (copy) NEProxySettings *proxySettings;
+@property (copy) NSString *serverAddress;
+@property (readonly) long long type;
+@property (copy) NSString *username;
 
 + (bool)supportsSecureCoding;
 

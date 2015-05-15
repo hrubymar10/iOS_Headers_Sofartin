@@ -9,10 +9,10 @@
     NSString *_localizedCountryName;
 }
 
-@property(assign,retain) NSString * countryCode;
-@property(assign,retain) NSString * countryName;
-@property(assign,retain) NSString * dialingPrefix;
-@property(assign,retain) NSString * localizedCountryName;
+@property (nonatomic, retain) NSString *countryCode;
+@property (nonatomic, retain) NSString *countryName;
+@property (nonatomic, retain) NSString *dialingPrefix;
+@property (nonatomic, retain) NSString *localizedCountryName;
 
 + (void)_loadCountriesIfNeeded;
 + (id)allCountries;

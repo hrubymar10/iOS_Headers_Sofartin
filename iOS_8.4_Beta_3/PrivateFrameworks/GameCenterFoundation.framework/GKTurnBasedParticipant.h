@@ -6,19 +6,19 @@
     GKTurnBasedParticipantInternal *_internal;
 }
 
-@property(assign,retain) GKTurnBasedParticipantInternal * internal;
-@property(assign,readonly) NSString * inviteMessage;
-@property(assign,readonly) GKPlayer * invitedBy;
-@property(assign,readonly) bool isLocalPlayer;
-@property(assign,readonly) bool isWinner;
-@property(assign,copy) NSDate * lastTurnDate;
-@property(assign,readwrite) long long matchOutcome;
-@property(assign,readonly) NSString * matchOutcomeString;
-@property(assign,readonly) NSString * matchStatusString;
-@property(assign,retain) GKPlayer * player;
-@property(assign,copy) NSString * playerID;
-@property(assign,readonly) long long status;
-@property(assign,copy) NSDate * timeoutDate;
+@property (readonly, retain) GKTurnBasedParticipantInternal *internal;
+@property (nonatomic, readonly) NSString *inviteMessage;
+@property (nonatomic, readonly) GKPlayer *invitedBy;
+@property (nonatomic, readonly) bool isLocalPlayer;
+@property (nonatomic, readonly) bool isWinner;
+@property (nonatomic, copy) NSDate *lastTurnDate;
+@property (nonatomic) long long matchOutcome;
+@property (nonatomic, readonly) NSString *matchOutcomeString;
+@property (nonatomic, readonly) NSString *matchStatusString;
+@property (nonatomic, readonly, retain) GKPlayer *player;
+@property (nonatomic, readonly, copy) NSString *playerID;
+@property (nonatomic, readonly) long long status;
+@property (nonatomic, copy) NSDate *timeoutDate;
 
 + (id)instanceMethodSignatureForSelector:(SEL)arg1;
 + (bool)instancesRespondToSelector:(SEL)arg1;

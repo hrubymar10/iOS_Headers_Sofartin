@@ -7,8 +7,8 @@
     MCAPNConfiguration *_attachAPN;
 }
 
-@property(assign,retain) NSArray * APNs;
-@property(assign,retain) MCAPNConfiguration * attachAPN;
+@property (nonatomic, retain) NSArray *APNs;
+@property (nonatomic, retain) MCAPNConfiguration *attachAPN;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

@@ -6,7 +6,7 @@
     NSMutableArray *_subscriptions;
 }
 
-@property(assign,retain) NSMutableArray * subscriptions;
+@property (nonatomic, retain) NSMutableArray *subscriptions;
 
 - (void).cxx_destruct;
 - (void)addSubscriptions:(id)arg1;

@@ -18,20 +18,20 @@
     NSMutableDictionary *_valuesForUndefinedKeys;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) SCNGeometryElement * edgeCreasesElement;
-@property(assign,retain) SCNGeometrySource * edgeCreasesSource;
-@property(assign,retain) SCNMaterial * firstMaterial;
-@property(assign,readonly) long long geometryElementCount;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * levelsOfDetail;
-@property(assign,copy) NSArray * materials;
-@property(assign,copy) NSString * name;
-@property(assign,retain) SCNProgram * program;
-@property(assign,copy) NSDictionary * shaderModifiers;
-@property(assign,readwrite) unsigned long long subdivisionLevel;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) SCNGeometryElement *edgeCreasesElement;
+@property (nonatomic, retain) SCNGeometrySource *edgeCreasesSource;
+@property (nonatomic, retain) SCNMaterial *firstMaterial;
+@property (nonatomic, readonly) long long geometryElementCount;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *levelsOfDetail;
+@property (nonatomic, copy) NSArray *materials;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) SCNProgram *program;
+@property (nonatomic, copy) NSDictionary *shaderModifiers;
+@property (nonatomic) unsigned long long subdivisionLevel;
+@property (readonly) Class superclass;
 
 + (id)SCNJSExportProtocol;
 + (id)boxWithWidth:(double)arg1 height:(double)arg2 length:(double)arg3 cornerRadius:(double)arg4 options:(id)arg5;

@@ -18,13 +18,13 @@
     PQLStatement *_stmt;
 }
 
-@property(assign,readonly) unsigned long long columns;
-@property(assign,readonly) PQLConnection * db;
-@property(assign,retain) NSSet * defaultUnarchivingAllowedClasses;
-@property(assign,readonly) NSError * error;
-@property(assign,readwrite) bool requiresSecureCoding;
-@property(assign,readonly) unsigned long long rowNumber;
-@property(assign,readonly) struct sqlite3_stmt { }* stmt;
+@property (nonatomic, readonly) unsigned long long columns;
+@property (nonatomic, readonly) PQLConnection *db;
+@property (nonatomic, retain) NSSet *defaultUnarchivingAllowedClasses;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic) bool requiresSecureCoding;
+@property (nonatomic, readonly) unsigned long long rowNumber;
+@property (nonatomic, readonly) struct sqlite3_stmt { }*stmt;
 
 - (void).cxx_destruct;
 - (const char *)UTF8StringAtIndex:(int)arg1;

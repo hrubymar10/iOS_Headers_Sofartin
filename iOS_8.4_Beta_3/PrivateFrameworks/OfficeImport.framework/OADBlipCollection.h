@@ -6,7 +6,7 @@
     NSMutableArray *mBlips;
 }
 
-@property(assign,retain) NSMutableArray * blips;
+@property (nonatomic, retain) NSMutableArray *blips;
 
 - (unsigned int)addBlip:(id)arg1;
 - (id)blipAtIndex:(int)arg1;

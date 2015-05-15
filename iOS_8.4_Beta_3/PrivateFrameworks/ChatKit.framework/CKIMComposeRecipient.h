@@ -6,7 +6,7 @@
     IMHandle *_handle;
 }
 
-@property(assign,retain) IMHandle * handle;
+@property (nonatomic, readonly, retain) IMHandle *handle;
 
 - (id)address;
 - (id)commentedAddress;

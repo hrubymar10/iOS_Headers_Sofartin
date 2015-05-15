@@ -14,15 +14,15 @@
     NSNumber *_logDuration;
 }
 
-@property(assign,retain) NSMutableDictionary * commonInfo;
-@property(assign,retain) NSArray * connState;
-@property(assign,retain) NSString * error;
-@property(assign,retain) NSMutableArray * groupArrEntries;
-@property(assign,retain) NSString * groupEntryKey;
-@property(assign,retain) NSString * groupID;
-@property(assign,readwrite) unsigned char inited;
-@property(assign,retain) NSMutableDictionary * kvPairs;
-@property(assign,retain) NSNumber * logDuration;
+@property (nonatomic, retain) NSMutableDictionary *commonInfo;
+@property (retain) NSArray *connState;
+@property (retain) NSString *error;
+@property (retain) NSMutableArray *groupArrEntries;
+@property (retain) NSString *groupEntryKey;
+@property (retain) NSString *groupID;
+@property (nonatomic) unsigned char inited;
+@property (nonatomic, retain) NSMutableDictionary *kvPairs;
+@property (retain) NSNumber *logDuration;
 
 + (id)entryEventBackwardDefinitionBBMavHwRfGSM;
 

@@ -6,7 +6,7 @@
     NSArray *_credentials;
 }
 
-@property(assign,retain) NSArray * credentials;
+@property (nonatomic, retain) NSArray *credentials;
 
 - (id)credentials;
 - (void)dealloc;

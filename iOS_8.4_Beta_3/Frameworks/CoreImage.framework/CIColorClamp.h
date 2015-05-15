@@ -8,9 +8,9 @@
     CIVector *inputMinComponents;
 }
 
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIVector * inputMaxComponents;
-@property(assign,retain) CIVector * inputMinComponents;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIVector *inputMaxComponents;
+@property (nonatomic, retain) CIVector *inputMinComponents;
 
 + (id)customAttributes;
 

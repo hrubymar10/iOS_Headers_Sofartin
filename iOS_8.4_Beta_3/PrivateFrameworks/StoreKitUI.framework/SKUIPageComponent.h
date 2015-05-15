@@ -7,15 +7,15 @@
     SKUIViewElement *_viewElement;
 }
 
-@property(assign,readonly) long long componentType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * metricsElementName;
-@property(assign,readwrite) long long metricsLocationPosition;
-@property(getter=isMissingItemData,assign,readonly) bool missingItemData;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) SKUIViewElement * viewElement;
+@property (nonatomic, readonly) long long componentType;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *metricsElementName;
+@property (nonatomic) long long metricsLocationPosition;
+@property (getter=isMissingItemData, nonatomic, readonly) bool missingItemData;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) SKUIViewElement *viewElement;
 
 - (void).cxx_destruct;
 - (void)_enumerateMissingItemIdentifiersFromBricks:(id)arg1 startIndex:(long long)arg2 usingBlock:(id)arg3;

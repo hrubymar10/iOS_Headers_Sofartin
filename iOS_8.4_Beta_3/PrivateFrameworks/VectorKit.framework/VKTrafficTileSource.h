@@ -10,11 +10,11 @@
     VKTileSource *_roadTileSource;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) VKTileSource * roadTileSource;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) VKTileSource *roadTileSource;
+@property (readonly) Class superclass;
 
 - (void)_generatedTraffic:(id)arg1;
 - (bool)canFetchTileForKey:(const struct VKTileKey { unsigned int x1; int x2; int x3; unsigned int x4; }*)arg1;

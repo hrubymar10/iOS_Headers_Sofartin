@@ -6,7 +6,7 @@
     NSMutableArray *_requestElements;
 }
 
-@property(assign,retain) NSMutableArray * requestElements;
+@property (nonatomic, retain) NSMutableArray *requestElements;
 
 - (void)addRequestElements:(id)arg1;
 - (void)clearRequestElements;

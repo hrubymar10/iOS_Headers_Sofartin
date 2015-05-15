@@ -20,11 +20,11 @@
     unsigned int var_count;
 }
 
-@property(assign,readwrite) double constant;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property double constant;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)acquireFromPoolForUseCase:(long long)arg1;
 + (id)newExpressionWithCapacity:(unsigned long long)arg1;

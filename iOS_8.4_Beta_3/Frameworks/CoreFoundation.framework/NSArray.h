@@ -2,29 +2,29 @@
    Image: /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
  */
 
-@interface NSArray : NSObject <CKRecordValue, NSCopying, NSFastEnumeration, NSMutableCopying, NSSecureCoding, PQLBindable, PQLBindable>
+@interface NSArray : NSObject <CKRecordValue, NSCopying, NSFastEnumeration, NSMutableCopying, NSSecureCoding, PQLBindable>
 
-@property(assign,retain) IMMessageItem * __imLastMessageItem;
-@property(assign,readonly) NSDictionary * bw_builtInMicRouteDictionary;
-@property(assign,readonly) unsigned long long count;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) AXEventPathInfoRepresentation * firstPath;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isQueryResultSetInvalidated;
-@property(assign,retain) IMMessage * lastFinishedMessage;
-@property(assign,retain) IMMessage * lastIncomingFinishedMessage;
-@property(assign,retain) IMMessage * lastIncomingMessage;
-@property(assign,retain) IMMessage * lastMessage;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, retain) IMMessageItem *__imLastMessageItem;
+@property (nonatomic, readonly) NSDictionary *bw_builtInMicRouteDictionary;
+@property (readonly) unsigned long long count;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) AXEventPathInfoRepresentation *firstPath;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isQueryResultSetInvalidated;
+@property (nonatomic, readonly, retain) IMMessage *lastFinishedMessage;
+@property (nonatomic, readonly, retain) IMMessage *lastIncomingFinishedMessage;
+@property (nonatomic, readonly, retain) IMMessage *lastIncomingMessage;
+@property (nonatomic, readonly, retain) IMMessage *lastMessage;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
 
 + (id)_arrayWithIntArg:(int)arg1 additionalArgs:(char *)arg2;
 + (id)_gkArrayWithIndexSet:(id)arg1;

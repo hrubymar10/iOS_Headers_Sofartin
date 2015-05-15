@@ -28,16 +28,16 @@
     bool _willRelayoutForPreferredContentSizeChange;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIView * headerView;
-@property(assign,readwrite) UIViewController * selectedViewController;
-@property(assign,retain) UIView * selectorView;
-@property(assign,readwrite) <MKStackingViewControllerDelegate> * stackingDelegate;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIView * titleView;
-@property(assign,copy) NSArray * viewControllers;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIView *headerView;
+@property (nonatomic) UIViewController *selectedViewController;
+@property (nonatomic, retain) UIView *selectorView;
+@property (nonatomic) <MKStackingViewControllerDelegate> *stackingDelegate;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIView *titleView;
+@property (nonatomic, copy) NSArray *viewControllers;
 
 - (void).cxx_destruct;
 - (void)_addPreferredHeightConstraintForViewControllerIfNeeded:(id)arg1;

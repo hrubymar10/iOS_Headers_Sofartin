@@ -6,15 +6,15 @@
     struct CATextLayerPrivate { } *_state;
 }
 
-@property(assign,copy) NSString * alignmentMode;
-@property(assign,readwrite) bool allowsFontSubpixelQuantization;
-@property(assign,readwrite) void* font;
-@property(assign,readwrite) double fontSize;
-@property(assign,readwrite) struct CGColor { }* foregroundColor;
-@property(assign,copy) id string;
-@property(assign,copy) NSString * truncationMode;
-@property(assign,copy) id truncationString;
-@property(getter=isWrapped,assign,readwrite) bool wrapped;
+@property (copy) NSString *alignmentMode;
+@property bool allowsFontSubpixelQuantization;
+@property void*font;
+@property double fontSize;
+@property struct CGColor { }*foregroundColor;
+@property (copy) id string;
+@property (copy) NSString *truncationMode;
+@property (copy) id truncationString;
+@property (getter=isWrapped) bool wrapped;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (id)defaultValueForKey:(id)arg1;

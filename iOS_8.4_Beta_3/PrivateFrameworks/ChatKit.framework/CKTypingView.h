@@ -4,7 +4,7 @@
 
 @interface CKTypingView : UIView
 
-@property(assign,retain) CKTypingIndicatorLayer * layer;
+@property (nonatomic, readonly, retain) CKTypingIndicatorLayer *layer;
 
 + (Class)layerClass;
 

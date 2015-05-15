@@ -8,7 +8,7 @@
     NSMutableDictionary *_removedAttachmentsByURL;
 }
 
-@property(assign,readwrite) bool keepRemovedAttachments;
+@property bool keepRemovedAttachments;
 
 + (id)_setOfAllSources;
 + (id)allSources;

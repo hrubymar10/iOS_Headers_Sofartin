@@ -7,8 +7,8 @@
     id _resultHandler;
 }
 
-@property(assign,readonly) PHVideoRequestOptions * options;
-@property(assign,copy) id resultHandler;
+@property (nonatomic, readonly) PHVideoRequestOptions *options;
+@property (nonatomic, readonly, copy) id resultHandler;
 
 + (id)videoRequestWithAsset:(id)arg1 options:(id)arg2 domain:(id)arg3 resultHandler:(id)arg4;
 

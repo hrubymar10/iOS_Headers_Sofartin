@@ -6,7 +6,7 @@
     NSMutableDictionary *_lastEntryCache;
 }
 
-@property(assign,retain) NSMutableDictionary * lastEntryCache;
+@property (nonatomic, retain) NSMutableDictionary *lastEntryCache;
 
 - (void).cxx_destruct;
 - (void)clearLastEntryCache:(id)arg1;

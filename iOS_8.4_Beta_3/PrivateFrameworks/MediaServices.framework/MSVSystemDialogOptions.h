@@ -13,14 +13,14 @@
     bool _showOnLockscreen;
 }
 
-@property(assign,copy) NSString * alertHeader;
-@property(assign,copy) NSString * alertMessage;
-@property(assign,copy) NSString * alternateButtonTitle;
-@property(assign,copy) NSString * defaultButtonTitle;
-@property(assign,readwrite) bool dismissOverlaysOnLockscreen;
-@property(assign,readwrite) bool forceModalAlertAppearance;
-@property(assign,readwrite) bool showAsTopmost;
-@property(assign,readwrite) bool showOnLockscreen;
+@property (nonatomic, copy) NSString *alertHeader;
+@property (nonatomic, copy) NSString *alertMessage;
+@property (nonatomic, copy) NSString *alternateButtonTitle;
+@property (nonatomic, copy) NSString *defaultButtonTitle;
+@property (nonatomic) bool dismissOverlaysOnLockscreen;
+@property (nonatomic) bool forceModalAlertAppearance;
+@property (nonatomic) bool showAsTopmost;
+@property (nonatomic) bool showOnLockscreen;
 
 - (void).cxx_destruct;
 - (id)alertHeader;

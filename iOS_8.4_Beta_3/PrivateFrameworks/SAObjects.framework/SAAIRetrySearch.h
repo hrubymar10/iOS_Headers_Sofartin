@@ -4,7 +4,7 @@
 
 @interface SAAIRetrySearch : SABaseClientBoundCommand
 
-@property(assign,readwrite) double minimumDurationForRetry;
+@property (nonatomic) double minimumDurationForRetry;
 
 + (id)retrySearch;
 + (id)retrySearchWithDictionary:(id)arg1 context:(id)arg2;

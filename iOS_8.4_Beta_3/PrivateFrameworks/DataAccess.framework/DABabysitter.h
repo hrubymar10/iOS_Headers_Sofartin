@@ -9,10 +9,10 @@
     NSMutableDictionary *_restrictedWaiters;
 }
 
-@property(assign,retain) NSString * buildVersion;
-@property(assign,retain) NSMutableDictionary * failedWaiters;
-@property(assign,retain) NSMutableDictionary * refreshingWaiters;
-@property(assign,retain) NSMutableDictionary * restrictedWaiters;
+@property (nonatomic, retain) NSString *buildVersion;
+@property (nonatomic, retain) NSMutableDictionary *failedWaiters;
+@property (nonatomic, retain) NSMutableDictionary *refreshingWaiters;
+@property (nonatomic, retain) NSMutableDictionary *restrictedWaiters;
 
 + (id)sharedBabysitter;
 

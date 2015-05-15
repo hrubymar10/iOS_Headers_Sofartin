@@ -8,11 +8,11 @@
     int _state;
 }
 
-@property(assign,readwrite) double defaultDuration;
-@property(assign,readonly) NSString * defaultSound;
-@property(assign,readonly) double fireTime;
-@property(assign,readonly) double remainingTime;
-@property(assign,readonly) int state;
+@property (nonatomic) double defaultDuration;
+@property (nonatomic, readonly) NSString *defaultSound;
+@property (nonatomic, readonly) double fireTime;
+@property (nonatomic, readonly) double remainingTime;
+@property (nonatomic, readonly) int state;
 
 + (id)copyFetchScheduledNotification;
 + (bool)discardOldVersion;

@@ -8,7 +8,7 @@
     long long _seeMoreState;
 }
 
-@property(assign,readwrite) long long seeMoreState;
+@property (nonatomic) long long seeMoreState;
 
 + (id)_detailLabelFontForSeeMoreState:(long long)arg1;
 + (double)defaultHeightForTraitCollection:(id)arg1;

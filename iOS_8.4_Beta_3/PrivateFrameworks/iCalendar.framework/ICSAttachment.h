@@ -4,13 +4,13 @@
 
 @interface ICSAttachment : ICSProperty
 
-@property(assign,retain) NSString * fmtype;
-@property(assign,retain) NSString * managed_filename;
-@property(assign,retain) NSString * managed_id;
-@property(assign,readwrite) int size;
-@property(assign,readwrite) bool x_apple_autoarchived;
-@property(assign,retain) NSString * x_apple_ews_attachmentid;
-@property(assign,retain) NSString * x_apple_filename;
+@property (nonatomic, retain) NSString *fmtype;
+@property (nonatomic, retain) NSString *managed_filename;
+@property (nonatomic, retain) NSString *managed_id;
+@property (nonatomic) int size;
+@property (nonatomic) bool x_apple_autoarchived;
+@property (nonatomic, retain) NSString *x_apple_ews_attachmentid;
+@property (nonatomic, retain) NSString *x_apple_filename;
 
 - (void)_ICSStringWithOptions:(unsigned long long)arg1 appendingToString:(id)arg2;
 - (id)filename;

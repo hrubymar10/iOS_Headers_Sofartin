@@ -13,11 +13,11 @@
     UIView *_topBorderView;
 }
 
-@property(assign,retain) UIImage * decorationImage;
-@property(assign,readwrite) bool hasBlueBackgroundWhenSelected;
-@property(assign,readwrite) bool showTopBorder;
-@property(assign,retain) NSString * subtitle;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) UIImage *decorationImage;
+@property (nonatomic) bool hasBlueBackgroundWhenSelected;
+@property (nonatomic) bool showTopBorder;
+@property (nonatomic, retain) NSString *subtitle;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_reloadHighlightState;

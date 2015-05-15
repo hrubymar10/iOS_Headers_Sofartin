@@ -9,10 +9,10 @@
     PLCFNotificationOperatorComposition *_VRPPlaying;
 }
 
-@property(assign,readonly) PLCFNotificationOperatorComposition * VRPCreated;
-@property(assign,readonly) PLCFNotificationOperatorComposition * VRPFinalized;
-@property(assign,readonly) PLCFNotificationOperatorComposition * VRPPaused;
-@property(assign,readonly) PLCFNotificationOperatorComposition * VRPPlaying;
+@property (readonly) PLCFNotificationOperatorComposition *VRPCreated;
+@property (readonly) PLCFNotificationOperatorComposition *VRPFinalized;
+@property (readonly) PLCFNotificationOperatorComposition *VRPPaused;
+@property (readonly) PLCFNotificationOperatorComposition *VRPPlaying;
 
 + (id)accountingGroupDefinitions;
 + (id)defaults;

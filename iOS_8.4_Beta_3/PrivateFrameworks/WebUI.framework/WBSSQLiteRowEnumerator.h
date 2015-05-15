@@ -8,8 +8,8 @@
     WBSSQLiteStatement *_statement;
 }
 
-@property(assign,readonly) int lastResultCode;
-@property(assign,readonly) WBSSQLiteStatement * statement;
+@property (nonatomic, readonly) int lastResultCode;
+@property (nonatomic, readonly) WBSSQLiteStatement *statement;
 
 - (void).cxx_destruct;
 - (id)initWithResultsOfStatement:(id)arg1;

@@ -14,12 +14,12 @@
     NSString *_uriScheme;
 }
 
-@property(assign,readwrite) bool hasSessionId;
-@property(assign,readonly) bool hasSourceAppBundleId;
-@property(assign,readonly) bool hasUriScheme;
-@property(assign,readwrite) struct { unsigned long long x1; unsigned long long x2; } sessionId;
-@property(assign,retain) NSString * sourceAppBundleId;
-@property(assign,retain) NSString * uriScheme;
+@property (nonatomic) bool hasSessionId;
+@property (nonatomic, readonly) bool hasSourceAppBundleId;
+@property (nonatomic, readonly) bool hasUriScheme;
+@property (nonatomic) struct { unsigned long long x1; unsigned long long x2; } sessionId;
+@property (nonatomic, retain) NSString *sourceAppBundleId;
+@property (nonatomic, retain) NSString *uriScheme;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

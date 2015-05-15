@@ -12,13 +12,13 @@
     bool whitelistEnabled;
 }
 
-@property(assign,readwrite) bool alwaysAllowHTTPS;
-@property(assign,readonly) WFWhitelistSiteBuffer * filterBlacklist;
-@property(assign,readwrite) bool filterEnabled;
-@property(assign,readonly) WFWhitelistSiteBuffer * filterWhitelist;
-@property(assign,retain) NSString * username;
-@property(assign,readonly) WFWhitelistSiteBuffer * webWhitelist;
-@property(assign,readwrite) bool whitelistEnabled;
+@property bool alwaysAllowHTTPS;
+@property (readonly) WFWhitelistSiteBuffer *filterBlacklist;
+@property bool filterEnabled;
+@property (readonly) WFWhitelistSiteBuffer *filterWhitelist;
+@property (retain) NSString *username;
+@property (readonly) WFWhitelistSiteBuffer *webWhitelist;
+@property bool whitelistEnabled;
 
 + (id)_arrayByConvertingLinesInStringsAtPath:(id)arg1;
 + (id)_cachedWhitelistForPath:(id)arg1 username:(id)arg2;

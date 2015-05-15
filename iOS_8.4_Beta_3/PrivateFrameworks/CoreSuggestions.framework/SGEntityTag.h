@@ -8,9 +8,9 @@
     bool _stored;
 }
 
-@property(assign,readonly) bool indexed;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) bool stored;
+@property (nonatomic, readonly) bool indexed;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) bool stored;
 
 + (id)allDay;
 + (id)contactDetail:(id)arg1;

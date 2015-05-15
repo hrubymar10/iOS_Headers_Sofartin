@@ -4,12 +4,12 @@
 
 @interface HSMutableConnectionConfiguration : HSConnectionConfiguration
 
-@property(assign,retain) SSAccount * account;
-@property(assign,copy) NSURL * baseURL;
-@property(assign,copy) NSString * buildIdentifier;
-@property(assign,retain) NSNumber * familyMemberStoreID;
-@property(assign,copy) NSString * purchaseClientIdentifier;
-@property(assign,readwrite) long long requestReason;
+@property (nonatomic, retain) SSAccount *account;
+@property (nonatomic, copy) NSURL *baseURL;
+@property (nonatomic, copy) NSString *buildIdentifier;
+@property (nonatomic, retain) NSNumber *familyMemberStoreID;
+@property (nonatomic, copy) NSString *purchaseClientIdentifier;
+@property (nonatomic) long long requestReason;
 
 - (id)account;
 - (id)baseURL;

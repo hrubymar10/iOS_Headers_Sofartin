@@ -13,14 +13,14 @@
     NSURL *_viewItemURL;
 }
 
-@property(assign,readwrite) bool complete;
-@property(assign,retain) NSString * developerName;
-@property(assign,retain) NSString * emailBody;
-@property(assign,retain) NSString * emailSubject;
-@property(assign,retain) NSString * gameName;
-@property(assign,retain) UIImage * iconImage;
-@property(assign,retain) NSURL * shortViewItemURL;
-@property(assign,retain) NSURL * viewItemURL;
+@property (nonatomic) bool complete;
+@property (nonatomic, retain) NSString *developerName;
+@property (nonatomic, retain) NSString *emailBody;
+@property (nonatomic, retain) NSString *emailSubject;
+@property (nonatomic, retain) NSString *gameName;
+@property (nonatomic, retain) UIImage *iconImage;
+@property (nonatomic, retain) NSURL *shortViewItemURL;
+@property (nonatomic, retain) NSURL *viewItemURL;
 
 - (bool)complete;
 - (void)dealloc;

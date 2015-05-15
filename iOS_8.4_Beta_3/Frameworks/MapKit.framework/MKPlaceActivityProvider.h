@@ -7,8 +7,8 @@
     MKMapItem *_mapItem;
 }
 
-@property(assign,readwrite) <MKPlaceActivityProviderDelegate> * delegate;
-@property(assign,retain) MKMapItem * mapItem;
+@property (nonatomic) <MKPlaceActivityProviderDelegate> *delegate;
+@property (nonatomic, retain) MKMapItem *mapItem;
 
 - (void).cxx_destruct;
 - (id)activityAnnotationView;

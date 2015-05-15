@@ -107,8 +107,8 @@
     } mWorldToStage;
 }
 
-@property(assign,retain) TSCH3DCamera * camera;
-@property(assign,retain) TSCH3DScene * scene;
+@property (nonatomic, retain) TSCH3DCamera *camera;
+@property (nonatomic, retain) TSCH3DScene *scene;
 
 + (id)transforms;
 

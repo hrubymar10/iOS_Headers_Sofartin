@@ -10,11 +10,11 @@
     MFComposeRecipientTextView *_textView;
 }
 
-@property(assign,retain) UIButton * actionButton;
-@property(assign,retain) _UIBackdropView * backdropView;
-@property(assign,retain) CKConversation * conversation;
-@property(assign,retain) UIView * separator;
-@property(assign,retain) MFComposeRecipientTextView * textView;
+@property (nonatomic, retain) UIButton *actionButton;
+@property (nonatomic, retain) _UIBackdropView *backdropView;
+@property (nonatomic, retain) CKConversation *conversation;
+@property (nonatomic, retain) UIView *separator;
+@property (nonatomic, retain) MFComposeRecipientTextView *textView;
 
 - (id)actionButton;
 - (id)backdropView;

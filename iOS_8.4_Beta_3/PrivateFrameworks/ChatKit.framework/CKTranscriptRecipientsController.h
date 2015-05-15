@@ -20,25 +20,25 @@
     CKTranscriptRecipientCell *_sizingRecipientCell;
 }
 
-@property(assign,retain) CKTranscriptAddRecipientCell * addRecipientCell;
-@property(assign,retain) CKGroupRecipientSelectionController * addRecipientsController;
-@property(assign,retain) CKConversation * conversation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKTranscriptRecipientsControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSDictionary * facetimeAudioIDStatuses;
-@property(assign,retain) NSDictionary * facetimeIDStatuses;
-@property(assign,readwrite) bool fmfDisabled;
-@property(assign,readwrite) bool fmfRestricted;
-@property(assign,retain) NSTimer * fmfUpdateTimer;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CKTranscriptDetailsResizableCell * locationSendCell;
-@property(assign,retain) CKTranscriptLocationShareCell * locationShareCell;
-@property(assign,retain) UITextView * locationSharingTextView;
-@property(assign,retain) CKTranscriptDetailsResizableCell * locationStartShareCell;
-@property(assign,retain) NSString * serviceAvailabilityKey;
-@property(assign,retain) CKTranscriptRecipientCell * sizingRecipientCell;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) CKTranscriptAddRecipientCell *addRecipientCell;
+@property (nonatomic, retain) CKGroupRecipientSelectionController *addRecipientsController;
+@property (nonatomic, retain) CKConversation *conversation;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKTranscriptRecipientsControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSDictionary *facetimeAudioIDStatuses;
+@property (nonatomic, retain) NSDictionary *facetimeIDStatuses;
+@property (nonatomic) bool fmfDisabled;
+@property (nonatomic) bool fmfRestricted;
+@property (nonatomic, retain) NSTimer *fmfUpdateTimer;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CKTranscriptDetailsResizableCell *locationSendCell;
+@property (nonatomic, retain) CKTranscriptLocationShareCell *locationShareCell;
+@property (nonatomic, retain) UITextView *locationSharingTextView;
+@property (nonatomic, retain) CKTranscriptDetailsResizableCell *locationStartShareCell;
+@property (nonatomic, retain) NSString *serviceAvailabilityKey;
+@property (nonatomic, retain) CKTranscriptRecipientCell *sizingRecipientCell;
+@property (readonly) Class superclass;
 
 - (void)_configureDNDCell:(id)arg1 atIndexPath:(id)arg2;
 - (void)_configureRecipientCell:(id)arg1 atIndexPath:(id)arg2;

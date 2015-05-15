@@ -4,9 +4,9 @@
 
 @interface PURedeyeToolControllerSpec : PUPhotoEditToolControllerSpec
 
-@property(assign,readonly) bool displaysTooltipAtTopInPortrait;
-@property(assign,readonly) double tooltipLandscapeMargin;
-@property(assign,readonly) double tooltipPortraitMargin;
+@property (nonatomic, readonly) bool displaysTooltipAtTopInPortrait;
+@property (nonatomic, readonly) double tooltipLandscapeMargin;
+@property (nonatomic, readonly) double tooltipPortraitMargin;
 
 - (bool)displaysTooltipAtTopInPortrait;
 - (double)tooltipLandscapeMargin;

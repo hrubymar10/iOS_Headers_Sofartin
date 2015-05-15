@@ -11,12 +11,12 @@
     int _width;
 }
 
-@property(assign,readwrite) bool hasSpeed;
-@property(assign,readwrite) bool hasWidth;
-@property(assign,readwrite) int speed;
-@property(assign,readonly) long long vertexCount;
-@property(assign,readonly) struct { long long x1; long long x2; }* vertices;
-@property(assign,readwrite) int width;
+@property (nonatomic) bool hasSpeed;
+@property (nonatomic) bool hasWidth;
+@property (nonatomic) int speed;
+@property (nonatomic, readonly) long long vertexCount;
+@property (nonatomic, readonly) struct { long long x1; long long x2; }*vertices;
+@property (nonatomic) int width;
 
 - (bool)hasSpeed;
 - (bool)hasWidth;

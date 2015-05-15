@@ -13,14 +13,14 @@
     int _statusCode;
 }
 
-@property(assign,retain) NSString * addressID;
-@property(assign,retain) GEOLocation * addressLocation;
-@property(assign,readonly) bool hasAddressID;
-@property(assign,readonly) bool hasAddressLocation;
-@property(assign,readwrite) bool hasNumberOfVisitsBucketSize;
-@property(assign,readwrite) bool hasStatusCode;
-@property(assign,readwrite) unsigned int numberOfVisitsBucketSize;
-@property(assign,readwrite) int statusCode;
+@property (nonatomic, retain) NSString *addressID;
+@property (nonatomic, retain) GEOLocation *addressLocation;
+@property (nonatomic, readonly) bool hasAddressID;
+@property (nonatomic, readonly) bool hasAddressLocation;
+@property (nonatomic) bool hasNumberOfVisitsBucketSize;
+@property (nonatomic) bool hasStatusCode;
+@property (nonatomic) unsigned int numberOfVisitsBucketSize;
+@property (nonatomic) int statusCode;
 
 - (id)addressID;
 - (id)addressLocation;

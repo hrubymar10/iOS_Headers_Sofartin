@@ -12,12 +12,12 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,retain) NSString * guid;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasSmsRoundTripDuration;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned int smsRoundTripDuration;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasSmsRoundTripDuration;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned int smsRoundTripDuration;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

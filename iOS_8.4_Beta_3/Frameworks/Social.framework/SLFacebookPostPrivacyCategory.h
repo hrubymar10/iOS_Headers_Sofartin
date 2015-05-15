@@ -7,8 +7,8 @@
     NSString *_name;
 }
 
-@property(assign,retain) NSArray * audiencePrivacySettings;
-@property(assign,retain) NSString * name;
+@property (retain) NSArray *audiencePrivacySettings;
+@property (retain) NSString *name;
 
 - (void).cxx_destruct;
 - (id)audiencePrivacySettings;

@@ -6,8 +6,8 @@
     NSMutableSet *_activeTasks;
 }
 
-@property(assign,readonly) NSSet * activeTasks;
-@property(getter=isComplete,assign,readonly) bool complete;
+@property (nonatomic, readonly) NSSet *activeTasks;
+@property (getter=isComplete, nonatomic, readonly) bool complete;
 
 - (void).cxx_destruct;
 - (id)activeTasks;

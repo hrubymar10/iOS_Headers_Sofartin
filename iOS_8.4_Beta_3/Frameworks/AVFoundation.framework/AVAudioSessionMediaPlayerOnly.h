@@ -6,15 +6,15 @@
     AVAudioSessionMediaPlayerOnlyInternal *_audioSession;
 }
 
-@property(assign,readonly) NSString * category;
-@property(assign,readonly) long long currentHardwareInputNumberOfChannels;
-@property(assign,readonly) long long currentHardwareOutputNumberOfChannels;
-@property(assign,readonly) double currentHardwareSampleRate;
-@property(assign,readwrite) <AVAudioSessionDelegateMediaPlayerOnly> * delegate;
-@property(assign,readonly) bool inputIsAvailable;
-@property(assign,readonly) NSString * mode;
-@property(assign,readonly) double preferredHardwareSampleRate;
-@property(assign,readonly) double preferredIOBufferDuration;
+@property (readonly) NSString *category;
+@property (readonly) long long currentHardwareInputNumberOfChannels;
+@property (readonly) long long currentHardwareOutputNumberOfChannels;
+@property (readonly) double currentHardwareSampleRate;
+@property <AVAudioSessionDelegateMediaPlayerOnly> *delegate;
+@property (readonly) bool inputIsAvailable;
+@property (readonly) NSString *mode;
+@property (readonly) double preferredHardwareSampleRate;
+@property (readonly) double preferredIOBufferDuration;
 
 + (void)initialize;
 

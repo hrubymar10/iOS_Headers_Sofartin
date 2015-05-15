@@ -7,8 +7,8 @@
     NSString *_streamID;
 }
 
-@property(assign,retain) NSString * ctag;
-@property(assign,retain) NSString * streamID;
+@property (nonatomic, retain) NSString *ctag;
+@property (nonatomic, retain) NSString *streamID;
 
 + (id)subscribedStreamWithStreamID:(id)arg1;
 

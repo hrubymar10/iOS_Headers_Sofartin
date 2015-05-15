@@ -7,8 +7,8 @@
     NSArray *_merchantIdentifiers;
 }
 
-@property(assign,readonly) bool hasMerchantIdentifiers;
-@property(assign,readonly) bool ignoreMerchantIdentifiers;
+@property (nonatomic, readonly) bool hasMerchantIdentifiers;
+@property (nonatomic, readonly) bool ignoreMerchantIdentifiers;
 
 - (void)_probeEntitlementsWithToken:(struct { unsigned int x1[8]; })arg1;
 - (void)dealloc;

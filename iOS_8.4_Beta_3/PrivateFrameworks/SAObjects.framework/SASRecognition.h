@@ -4,12 +4,12 @@
 
 @interface SASRecognition : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * phrases;
-@property(assign,readwrite) long long sentenceConfidence;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *phrases;
+@property (nonatomic) long long sentenceConfidence;
+@property (readonly) Class superclass;
 
 + (id)recognition;
 + (id)recognitionWithDictionary:(id)arg1 context:(id)arg2;

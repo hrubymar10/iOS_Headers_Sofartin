@@ -6,9 +6,9 @@
     NSData *_inContentAsData;
 }
 
-@property(assign,retain) NSData * inContentAsData;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSArray * resultsForLogging;
+@property (readonly, retain) NSData *inContentAsData;
+@property (readonly, retain) NSString *name;
+@property (readonly, retain) NSArray *resultsForLogging;
 
 - (void)dealloc;
 - (id)inContent;

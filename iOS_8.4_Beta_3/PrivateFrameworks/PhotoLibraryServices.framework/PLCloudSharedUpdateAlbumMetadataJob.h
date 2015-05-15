@@ -6,7 +6,7 @@
     NSDictionary *_metadata;
 }
 
-@property(assign,retain) NSDictionary * metadata;
+@property (nonatomic, retain) NSDictionary *metadata;
 
 + (void)updateAlbumMetadata:(id)arg1;
 

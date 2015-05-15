@@ -12,9 +12,9 @@
     id _subscriber;
 }
 
-@property(assign,readonly) BRQueryItem * item;
-@property(assign,copy) id progressHandler;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, readonly) BRQueryItem *item;
+@property (nonatomic, copy) id progressHandler;
+@property (nonatomic) NSObject<OS_dispatch_queue> *queue;
 
 - (void)dealloc;
 - (id)description;

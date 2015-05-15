@@ -11,11 +11,11 @@
     long long _status;
 }
 
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) AVPlayer * player;
-@property(assign,readonly) AVPlayerItem * playerItem;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * serializationQueue;
-@property(assign,readonly) long long status;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) AVPlayer *player;
+@property (nonatomic, readonly) AVPlayerItem *playerItem;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *serializationQueue;
+@property (nonatomic, readonly) long long status;
 
 - (bool)addItemToPlayQueue;
 - (void)dealloc;

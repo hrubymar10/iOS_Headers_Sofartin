@@ -20,21 +20,21 @@
     } _visualStyling;
 }
 
-@property(assign,readonly) <UIKeyboardCandidateList> * candidateList;
-@property(assign,retain) TIKeyboardCandidateResultSet * candidateResultSet;
-@property(assign,readonly) NSArray * candidates;
-@property(assign,retain) UIKBCandidateCollectionView * candidatesCollectionView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UIKeyboardCandidateListDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long dummyCellCount;
-@property(assign,readwrite) double dummyCellWidth;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIKeyboardCandidateLogButton * logButton;
-@property(assign,retain) UIKeyboardCandidatePocketShadow * pocketShadow;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool usesCandidateSelection;
-@property(assign,readwrite) struct { unsigned int x1 : 6; unsigned int x2 : 1; unsigned int x3 : 1; unsigned int x4 : 8; unsigned int x5 : 16; } visualStyling;
+@property (nonatomic, readonly) <UIKeyboardCandidateList> *candidateList;
+@property (nonatomic, retain) TIKeyboardCandidateResultSet *candidateResultSet;
+@property (nonatomic, readonly) NSArray *candidates;
+@property (nonatomic, retain) UIKBCandidateCollectionView *candidatesCollectionView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UIKeyboardCandidateListDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) unsigned long long dummyCellCount;
+@property (nonatomic) double dummyCellWidth;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIKeyboardCandidateLogButton *logButton;
+@property (nonatomic, retain) UIKeyboardCandidatePocketShadow *pocketShadow;
+@property (readonly) Class superclass;
+@property (nonatomic) bool usesCandidateSelection;
+@property (nonatomic) struct { unsigned int x1 : 6; unsigned int x2 : 1; unsigned int x3 : 1; unsigned int x4 : 8; unsigned int x5 : 16; } visualStyling;
 
 - (id)_inheritedRenderConfig;
 - (void)_setRenderConfig:(id)arg1;

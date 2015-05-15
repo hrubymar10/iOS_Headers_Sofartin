@@ -8,10 +8,10 @@
     int mXMLFormat;
 }
 
-@property(assign,retain) CXNamespace * OCXDrawingNamespace;
-@property(assign,retain) CXNamespace * OCXRelationshipsNamespace;
-@property(assign,copy) NSString * OCXThemeRelationshipType;
-@property(assign,readonly) int xmlFormat;
+@property (nonatomic, retain) CXNamespace *OCXDrawingNamespace;
+@property (nonatomic, retain) CXNamespace *OCXRelationshipsNamespace;
+@property (nonatomic, readonly, copy) NSString *OCXThemeRelationshipType;
+@property (nonatomic, readonly) int xmlFormat;
 
 - (id)OCXCommentAuthorsRelationshipType;
 - (id)OCXCommentsRelationshipType;

@@ -4,14 +4,14 @@
 
 @interface SAMicroblogSocialCredential : AceObject <SABackgroundContextObject>
 
-@property(assign,copy) NSString * accessToken;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * personalizationPermission;
-@property(assign,copy) NSString * socialNetwork;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * tokenSecret;
+@property (nonatomic, copy) NSString *accessToken;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *personalizationPermission;
+@property (nonatomic, copy) NSString *socialNetwork;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *tokenSecret;
 
 + (id)socialCredential;
 + (id)socialCredentialWithDictionary:(id)arg1 context:(id)arg2;

@@ -8,8 +8,8 @@
     NSMutableArray *_views;
 }
 
-@property(assign,copy) NSMapTable * allViewTextProperties;
-@property(assign,readonly) NSArray * views;
+@property (nonatomic, readonly, copy) NSMapTable *allViewTextProperties;
+@property (nonatomic, readonly) NSArray *views;
 
 - (void).cxx_destruct;
 - (id)_addImageViewWithReuseIdentifier:(id)arg1 viewElement:(id)arg2 context:(id)arg3;

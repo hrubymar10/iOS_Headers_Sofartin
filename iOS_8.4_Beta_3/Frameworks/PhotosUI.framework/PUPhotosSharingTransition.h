@@ -9,10 +9,10 @@
     UIViewController<PUPhotosSharingTransitionViewController> *_sharingTransitionViewController;
 }
 
-@property(setter=_setTransitionLayout:,assign,retain) UICollectionViewLayout * _transitionLayout;
-@property(assign,readwrite) <PUPhotosSharingTransitionDelegate> * delegate;
-@property(assign,retain) PUPhotosSharingTransitionContext * photosSharingTransitionContext;
-@property(assign,retain) UIViewController<PUPhotosSharingTransitionViewController> * sharingTransitionViewController;
+@property (setter=_setTransitionLayout:, nonatomic, retain) UICollectionViewLayout *_transitionLayout;
+@property (nonatomic) <PUPhotosSharingTransitionDelegate> *delegate;
+@property (nonatomic, retain) PUPhotosSharingTransitionContext *photosSharingTransitionContext;
+@property (nonatomic, retain) UIViewController<PUPhotosSharingTransitionViewController> *sharingTransitionViewController;
 
 - (void).cxx_destruct;
 - (void)_setTransitionLayout:(id)arg1;

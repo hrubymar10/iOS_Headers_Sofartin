@@ -9,8 +9,8 @@
     int _type;
 }
 
-@property(assign,copy) id dismissalHandler;
-@property(assign,readonly) int type;
+@property (nonatomic, copy) id dismissalHandler;
+@property (nonatomic, readonly) int type;
 
 + (id)customElementActionWithTitle:(id)arg1 actionHandler:(id)arg2;
 + (id)standardElementActionWithType:(int)arg1;

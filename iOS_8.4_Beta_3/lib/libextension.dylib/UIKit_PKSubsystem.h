@@ -8,12 +8,12 @@
     bool _plugInKitProcess;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSDictionary * infoDictionary;
-@property(getter=isPlugInKitProcess,assign,readwrite) bool plugInKitProcess;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSDictionary *infoDictionary;
+@property (getter=isPlugInKitProcess, nonatomic) bool plugInKitProcess;
+@property (readonly) Class superclass;
 
 + (id)initForPlugInKit;
 + (id)sharedInstance;

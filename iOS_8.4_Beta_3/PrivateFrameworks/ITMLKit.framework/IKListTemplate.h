@@ -4,9 +4,9 @@
 
 @interface IKListTemplate : IKViewElement
 
-@property(assign,retain) IKBackgroundElement * background;
-@property(assign,retain) IKDocumentBannerElement * documentBanner;
-@property(assign,retain) IKListElement * list;
+@property (nonatomic, readonly, retain) IKBackgroundElement *background;
+@property (nonatomic, readonly, retain) IKDocumentBannerElement *documentBanner;
+@property (nonatomic, readonly, retain) IKListElement *list;
 
 - (id)background;
 - (id)documentBanner;

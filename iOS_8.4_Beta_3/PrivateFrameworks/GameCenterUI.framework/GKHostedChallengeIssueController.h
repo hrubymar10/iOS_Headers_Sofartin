@@ -11,12 +11,12 @@
     NSArray *_players;
 }
 
-@property(assign,retain) GKChallenge * challenge;
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * defaultMessage;
-@property(assign,copy) id dismissCompletionHandler;
-@property(assign,readwrite) bool forcePicker;
-@property(assign,retain) NSArray * players;
+@property (nonatomic, retain) GKChallenge *challenge;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic, copy) NSString *defaultMessage;
+@property (nonatomic, copy) id dismissCompletionHandler;
+@property (nonatomic) bool forcePicker;
+@property (nonatomic, retain) NSArray *players;
 
 + (bool)_preventsAppearanceProxyCustomization;
 + (id)hostedIssueControllerWithChallenge:(id)arg1 players:(id)arg2 defaultMessage:(id)arg3 completionHandler:(id)arg4;

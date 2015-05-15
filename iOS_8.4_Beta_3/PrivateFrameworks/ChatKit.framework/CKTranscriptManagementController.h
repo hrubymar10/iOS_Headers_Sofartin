@@ -13,18 +13,18 @@
     bool _removeMapViewAfterScrollAnimation;
 }
 
-@property(assign,retain) CKAttachmentViewController * attachmentsController;
-@property(assign,retain) CKConversation * conversation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInitialLoad,assign,readwrite) bool initialLoad;
-@property(assign,retain) CKTranscriptManagementView * managementView;
-@property(assign,retain) FMFMapViewController * mapController;
-@property(assign,readwrite) bool mapHidden;
-@property(assign,retain) CKTranscriptManagementNameField * nameField;
-@property(assign,readwrite) bool removeMapViewAfterScrollAnimation;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) CKAttachmentViewController *attachmentsController;
+@property (nonatomic, retain) CKConversation *conversation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isInitialLoad, nonatomic) bool initialLoad;
+@property (nonatomic, retain) CKTranscriptManagementView *managementView;
+@property (nonatomic, retain) FMFMapViewController *mapController;
+@property (nonatomic) bool mapHidden;
+@property (nonatomic, retain) CKTranscriptManagementNameField *nameField;
+@property (nonatomic) bool removeMapViewAfterScrollAnimation;
+@property (readonly) Class superclass;
 
 - (bool)_conversationHasLeft;
 - (void)_conversationJoinStateDidChange:(id)arg1;

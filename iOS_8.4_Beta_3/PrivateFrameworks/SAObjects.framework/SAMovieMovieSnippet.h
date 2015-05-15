@@ -4,8 +4,8 @@
 
 @interface SAMovieMovieSnippet : SAUISnippet
 
-@property(assign,retain) SAMovieMovie * movie;
-@property(assign,readwrite) bool playTrailer;
+@property (nonatomic, retain) SAMovieMovie *movie;
+@property (nonatomic) bool playTrailer;
 
 + (id)movieSnippet;
 + (id)movieSnippetWithDictionary:(id)arg1 context:(id)arg2;

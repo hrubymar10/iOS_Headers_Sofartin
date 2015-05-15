@@ -7,7 +7,7 @@
     <NSObject> *_userInfo;
 }
 
-@property(assign,retain) <NSObject> * userInfo;
+@property (retain) <NSObject> *userInfo;
 
 - (void)dealloc;
 - (id)decodeXPCObjectForKey:(id)arg1;

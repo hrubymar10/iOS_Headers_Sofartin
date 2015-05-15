@@ -7,7 +7,7 @@
     int _signatureMethod;
 }
 
-@property(assign,readwrite) int signatureMethod;
+@property (nonatomic) int signatureMethod;
 
 - (id)applyApplicationID:(id)arg1 toRequest:(id)arg2 containsMultiPartData:(bool)arg3;
 - (void)dealloc;

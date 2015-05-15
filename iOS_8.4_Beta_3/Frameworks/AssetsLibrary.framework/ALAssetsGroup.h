@@ -6,8 +6,8 @@
     id _internal;
 }
 
-@property(getter=isEditable,assign,readonly) bool editable;
-@property(assign,retain) ALAssetsGroupPrivate * internal;
+@property (getter=isEditable, nonatomic, readonly) bool editable;
+@property (nonatomic, retain) ALAssetsGroupPrivate *internal;
 
 - (void)_enumerateAssetsAtIndexes:(id)arg1 options:(unsigned long long)arg2 usingBlock:(id)arg3;
 - (id)_typeAsString;

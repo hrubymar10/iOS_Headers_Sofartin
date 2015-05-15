@@ -9,13 +9,13 @@
     UIWebView *_webView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RUIWebContainerViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIWebView * webView;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RUIWebContainerViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UIWebView *webView;
 
 - (void).cxx_destruct;
 - (void)_setHighlightedNow;

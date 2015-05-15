@@ -10,8 +10,8 @@
     MLEntity *_entity;
 }
 
-@property(assign,readonly) struct shared_ptr<mlcore::Entity> { struct Entity {} *x1; struct __shared_weak_count {} *x2; } coreEntity;
-@property(assign,readonly) MLEntity * entity;
+@property (nonatomic, readonly) struct shared_ptr<mlcore::Entity> { struct Entity {} *x1; struct __shared_weak_count {} *x2; } coreEntity;
+@property (nonatomic, readonly) MLEntity *entity;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

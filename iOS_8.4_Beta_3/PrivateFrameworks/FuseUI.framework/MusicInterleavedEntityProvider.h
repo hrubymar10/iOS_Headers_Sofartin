@@ -11,14 +11,14 @@
     NSArray *_sortedMergeInformation;
 }
 
-@property(assign,retain) MusicClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool didRequireMerging;
-@property(assign,copy) NSArray * entityProviders;
-@property(assign,copy) id entityUniqueIdentifierMergeInformationBlock;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) MusicClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool didRequireMerging;
+@property (nonatomic, copy) NSArray *entityProviders;
+@property (nonatomic, copy) id entityUniqueIdentifierMergeInformationBlock;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_didRequireMergingDidChange;

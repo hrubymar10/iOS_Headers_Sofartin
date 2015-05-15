@@ -7,8 +7,8 @@
     NSString *_serviceName;
 }
 
-@property(assign,readonly) NSString * characteristicName;
-@property(assign,readonly) NSString * serviceName;
+@property (nonatomic, readonly) NSString *characteristicName;
+@property (nonatomic, readonly) NSString *serviceName;
 
 - (void).cxx_destruct;
 - (id)characteristicName;

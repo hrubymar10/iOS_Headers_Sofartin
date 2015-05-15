@@ -6,7 +6,7 @@
     NSArray *_supportedPlaybackRates;
 }
 
-@property(assign,copy) NSArray * supportedPlaybackRates;
+@property (nonatomic, copy) NSArray *supportedPlaybackRates;
 
 - (void).cxx_destruct;
 - (id)_mediaRemoteCommandInfoOptions;

@@ -8,9 +8,9 @@
     id _shareTokenModifiedBlock;
 }
 
-@property(assign,retain) NSArray * shareTokenInfos;
-@property(assign,retain) NSMutableDictionary * shareTokenInfosByRequestID;
-@property(assign,copy) id shareTokenModifiedBlock;
+@property (nonatomic, retain) NSArray *shareTokenInfos;
+@property (nonatomic, retain) NSMutableDictionary *shareTokenInfosByRequestID;
+@property (nonatomic, copy) id shareTokenModifiedBlock;
 
 - (void).cxx_destruct;
 - (id)initWithShareTokenInfos:(id)arg1;

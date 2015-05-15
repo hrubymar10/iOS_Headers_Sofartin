@@ -4,12 +4,12 @@
 
 @interface RadioMutableTrackPlaybackDescriptor : RadioTrackPlaybackDescriptor
 
-@property(getter=isCurrent,assign,readwrite) bool current;
-@property(assign,retain) NSDate * expirationDate;
-@property(assign,readwrite) double pauseTime;
-@property(assign,retain) NSDate * skipDate;
-@property(assign,readwrite) long long storeID;
-@property(assign,copy) NSDictionary * trackInfo;
+@property (getter=isCurrent, nonatomic) bool current;
+@property (nonatomic, retain) NSDate *expirationDate;
+@property (nonatomic) double pauseTime;
+@property (nonatomic, retain) NSDate *skipDate;
+@property (nonatomic) long long storeID;
+@property (nonatomic, copy) NSDictionary *trackInfo;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setCurrent:(bool)arg1;

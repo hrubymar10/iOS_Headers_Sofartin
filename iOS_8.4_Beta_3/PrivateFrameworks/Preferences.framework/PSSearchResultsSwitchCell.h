@@ -10,10 +10,10 @@
     id _target;
 }
 
-@property(assign,readwrite) SEL getter;
-@property(assign,readwrite) SEL setter;
-@property(assign,retain) PSSpecifier * specifier;
-@property(assign,readwrite) id target;
+@property (nonatomic) SEL getter;
+@property (nonatomic) SEL setter;
+@property (nonatomic, retain) PSSpecifier *specifier;
+@property (nonatomic) id target;
 
 - (void)_switchValueChanged:(id)arg1;
 - (void)dealloc;

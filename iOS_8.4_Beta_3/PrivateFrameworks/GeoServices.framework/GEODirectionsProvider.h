@@ -9,9 +9,9 @@
     int _requestType;
 }
 
-@property(assign,copy) id errorHandler;
-@property(assign,copy) id finishedHandler;
-@property(assign,readwrite) bool isLoading;
+@property (nonatomic, copy) id errorHandler;
+@property (nonatomic, copy) id finishedHandler;
+@property (nonatomic) bool isLoading;
 
 - (void)cancelProviderRequest;
 - (void)cancelRequest;

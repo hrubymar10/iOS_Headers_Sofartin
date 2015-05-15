@@ -16,20 +16,20 @@
     int _videoQuality;
 }
 
-@property(assign,retain) MIPArtist * artist;
-@property(assign,retain) NSString * episodeId;
-@property(assign,retain) NSString * episodeSortId;
-@property(assign,readonly) bool hasArtist;
-@property(assign,readonly) bool hasEpisodeId;
-@property(assign,readonly) bool hasEpisodeSortId;
-@property(assign,readonly) bool hasNetworkName;
-@property(assign,readwrite) bool hasSeasonNumber;
-@property(assign,readonly) bool hasSeries;
-@property(assign,readwrite) bool hasVideoQuality;
-@property(assign,retain) NSString * networkName;
-@property(assign,readwrite) int seasonNumber;
-@property(assign,retain) MIPSeries * series;
-@property(assign,readwrite) int videoQuality;
+@property (nonatomic, retain) MIPArtist *artist;
+@property (nonatomic, retain) NSString *episodeId;
+@property (nonatomic, retain) NSString *episodeSortId;
+@property (nonatomic, readonly) bool hasArtist;
+@property (nonatomic, readonly) bool hasEpisodeId;
+@property (nonatomic, readonly) bool hasEpisodeSortId;
+@property (nonatomic, readonly) bool hasNetworkName;
+@property (nonatomic) bool hasSeasonNumber;
+@property (nonatomic, readonly) bool hasSeries;
+@property (nonatomic) bool hasVideoQuality;
+@property (nonatomic, retain) NSString *networkName;
+@property (nonatomic) int seasonNumber;
+@property (nonatomic, retain) MIPSeries *series;
+@property (nonatomic) int videoQuality;
 
 - (void).cxx_destruct;
 - (id)artist;

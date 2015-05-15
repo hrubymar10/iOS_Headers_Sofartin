@@ -7,12 +7,12 @@
     NSString *_fullName;
 }
 
-@property(assign,copy) NSSet * contactHandles;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * fullName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSSet *contactHandles;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *fullName;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (bool)supportsSecureCoding;
 

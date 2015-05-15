@@ -8,14 +8,14 @@
     NSArray *_subRegions;
 }
 
-@property(assign,retain) NSDictionary * _dictionary;
-@property(assign,retain) FTRegion * _parentRegion;
-@property(assign,readonly) NSString * basePhoneNumber;
-@property(assign,readonly) NSString * isoCode;
-@property(assign,readonly) NSString * label;
-@property(assign,readonly) FTRegion * parentRegion;
-@property(assign,readonly) NSString * regionID;
-@property(assign,readonly) NSArray * subRegions;
+@property (retain) NSDictionary *_dictionary;
+@property (retain) FTRegion *_parentRegion;
+@property (readonly) NSString *basePhoneNumber;
+@property (readonly) NSString *isoCode;
+@property (readonly) NSString *label;
+@property (readonly) FTRegion *parentRegion;
+@property (readonly) NSString *regionID;
+@property (readonly) NSArray *subRegions;
 
 - (id)_dictionary;
 - (id)_initWithDictionary:(id)arg1;

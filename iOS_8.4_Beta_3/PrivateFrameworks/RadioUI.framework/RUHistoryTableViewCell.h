@@ -13,18 +13,18 @@
     RUTrackDownloadView *_trackDownloadView;
 }
 
-@property(assign,copy) NSString * artist;
-@property(assign,readonly) UIImage * artworkImage;
-@property(assign,retain) RUAudioPreviewView * audioPreviewView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isExplicitTrack,assign,readwrite) bool explicitTrack;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hideArtworkImage;
-@property(assign,readwrite) bool isAd;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
-@property(assign,readonly) RUTrackDownloadView * trackDownloadView;
+@property (nonatomic, copy) NSString *artist;
+@property (nonatomic, readonly) UIImage *artworkImage;
+@property (nonatomic, retain) RUAudioPreviewView *audioPreviewView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isExplicitTrack, nonatomic) bool explicitTrack;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hideArtworkImage;
+@property (nonatomic) bool isAd;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, readonly) RUTrackDownloadView *trackDownloadView;
 
 + (id)_iAdLabelFont;
 + (id)_subtitleLabelFontForTraitCollection:(id)arg1;

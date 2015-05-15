@@ -9,14 +9,14 @@
     GKLabel *_textLabel;
 }
 
-@property(assign,readwrite) double bottomMargin;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double height;
-@property(assign,readwrite) bool isFirstSection;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) GKLabel * textLabel;
+@property (nonatomic) double bottomMargin;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double height;
+@property (nonatomic) bool isFirstSection;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) GKLabel *textLabel;
 
 - (double)bottomMargin;
 - (void)dealloc;

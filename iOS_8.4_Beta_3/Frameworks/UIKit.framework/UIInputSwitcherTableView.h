@@ -6,7 +6,7 @@
     UIKeyboardMenuView *_menu;
 }
 
-@property(assign,readwrite) UIKeyboardMenuView * menu;
+@property (nonatomic) UIKeyboardMenuView *menu;
 
 - (void)deselectRowAtIndexPath:(id)arg1 animated:(bool)arg2;
 - (id)menu;

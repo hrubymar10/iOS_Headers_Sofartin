@@ -10,9 +10,9 @@
     bool _usesVerticalLayout;
 }
 
-@property(assign,readwrite) UIStatusBarForegroundView * foregroundView;
-@property(assign,readwrite) bool persistentAnimationsEnabled;
-@property(assign,readonly) bool usesVerticalLayout;
+@property (nonatomic) UIStatusBarForegroundView *foregroundView;
+@property (nonatomic) bool persistentAnimationsEnabled;
+@property (nonatomic, readonly) bool usesVerticalLayout;
 
 - (void)_addOriginDelta:(double)arg1 toPoint:(struct CGPoint { double x1; double x2; }*)arg2;
 - (id)_createViewForItem:(id)arg1 withData:(id)arg2 actions:(int)arg3;

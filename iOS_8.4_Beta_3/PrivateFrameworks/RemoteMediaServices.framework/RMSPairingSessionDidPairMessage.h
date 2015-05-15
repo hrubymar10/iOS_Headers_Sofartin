@@ -11,12 +11,12 @@
     int _sessionIdentifier;
 }
 
-@property(assign,readonly) bool hasPairingGUID;
-@property(assign,readonly) bool hasServiceNetworkName;
-@property(assign,readwrite) bool hasSessionIdentifier;
-@property(assign,retain) NSString * pairingGUID;
-@property(assign,retain) NSString * serviceNetworkName;
-@property(assign,readwrite) int sessionIdentifier;
+@property (nonatomic, readonly) bool hasPairingGUID;
+@property (nonatomic, readonly) bool hasServiceNetworkName;
+@property (nonatomic) bool hasSessionIdentifier;
+@property (nonatomic, retain) NSString *pairingGUID;
+@property (nonatomic, retain) NSString *serviceNetworkName;
+@property (nonatomic) int sessionIdentifier;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

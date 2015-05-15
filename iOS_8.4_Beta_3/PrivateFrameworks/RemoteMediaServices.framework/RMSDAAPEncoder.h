@@ -6,7 +6,7 @@
     NSMutableData *_data;
 }
 
-@property(assign,readonly) NSData * data;
+@property (nonatomic, readonly) NSData *data;
 
 - (void).cxx_destruct;
 - (id)data;

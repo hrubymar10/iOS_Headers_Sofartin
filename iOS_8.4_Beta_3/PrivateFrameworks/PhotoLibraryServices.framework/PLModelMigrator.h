@@ -11,8 +11,8 @@
     double startTime;
 }
 
-@property(assign,retain) NSFileManager * fileManager;
-@property(assign,readonly) PLPhotoLibrary * photoLibrary;
+@property (nonatomic, retain) NSFileManager *fileManager;
+@property (nonatomic, readonly) PLPhotoLibrary *photoLibrary;
 
 + (bool)_addAlbumOrderKeys:(id)arg1;
 + (bool)_addLocationHashesToAssets:(id)arg1;

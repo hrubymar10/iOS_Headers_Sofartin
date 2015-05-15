@@ -16,23 +16,23 @@
     NSUUID *_uuid;
 }
 
-@property(assign,readwrite) int circleNotificationToken;
-@property(assign,readwrite) bool cloudDataSyncCompleted;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool iCloudAccountActive;
-@property(assign,readwrite) bool keychainSyncEnabled;
-@property(assign,readwrite) bool keychainSyncRequiredPopShown;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * messageReceiveQueue;
-@property(assign,readonly) NSUUID * messageTargetUUID;
-@property(assign,retain) HMMessageDispatcher * msgDispatcher;
-@property(assign,retain) NSObject<OS_dispatch_source> * popupTimer;
-@property(assign,readwrite) bool serverTokenAvailable;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long totalHomes;
-@property(assign,readwrite) long long totalTransientPeerDevices;
-@property(assign,retain) NSUUID * uuid;
+@property (nonatomic) int circleNotificationToken;
+@property (nonatomic) bool cloudDataSyncCompleted;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool iCloudAccountActive;
+@property (nonatomic) bool keychainSyncEnabled;
+@property (nonatomic) bool keychainSyncRequiredPopShown;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *messageReceiveQueue;
+@property (nonatomic, readonly) NSUUID *messageTargetUUID;
+@property (nonatomic, retain) HMMessageDispatcher *msgDispatcher;
+@property (nonatomic, retain) NSObject<OS_dispatch_source> *popupTimer;
+@property (nonatomic) bool serverTokenAvailable;
+@property (readonly) Class superclass;
+@property (nonatomic) long long totalHomes;
+@property (nonatomic) long long totalTransientPeerDevices;
+@property (nonatomic, retain) NSUUID *uuid;
 
 + (bool)isWhitelistedRemoteTransportMessage:(id)arg1;
 

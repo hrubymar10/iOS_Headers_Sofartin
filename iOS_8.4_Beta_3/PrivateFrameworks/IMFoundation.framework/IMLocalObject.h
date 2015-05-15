@@ -6,10 +6,10 @@
     id _internal;
 }
 
-@property(assign,readonly) NSObject<OS_xpc_object> * connection;
-@property(assign,readonly) bool isValid;
-@property(assign,readonly) NSString * portName;
-@property(assign,readwrite) id target;
+@property (nonatomic, readonly) NSObject<OS_xpc_object> *connection;
+@property (nonatomic, readonly) bool isValid;
+@property (nonatomic, readonly) NSString *portName;
+@property (nonatomic) id target;
 
 + (id)_imLocalObjectQueue;
 + (void)_registerIMLocalObject:(id)arg1;

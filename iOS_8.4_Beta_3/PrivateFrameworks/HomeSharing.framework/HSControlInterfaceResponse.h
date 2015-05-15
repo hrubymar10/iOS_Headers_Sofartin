@@ -6,7 +6,7 @@
     NSArray *_interfaces;
 }
 
-@property(assign,copy) NSArray * interfaces;
+@property (nonatomic, copy) NSArray *interfaces;
 
 - (void).cxx_destruct;
 - (id)interfaces;

@@ -7,8 +7,8 @@
     long long _provenance;
 }
 
-@property(assign,readonly) HKObject * dataObject;
-@property(assign,readonly) long long provenance;
+@property (nonatomic, readonly) HKObject *dataObject;
+@property (nonatomic, readonly) long long provenance;
 
 + (void)applyEntries:(id)arg1 withDaemon:(id)arg2;
 + (long long)behavior;

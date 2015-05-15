@@ -11,9 +11,9 @@
     NSMutableDictionary *_valuePersistenceBlocks;
 }
 
-@property(assign,readonly) <MPMediaLibraryDataProvider> * dataProvider;
-@property(assign,readonly) Class dataProviderEntityClass;
-@property(assign,readonly) long long identifier;
+@property (nonatomic, readonly) <MPMediaLibraryDataProvider> *dataProvider;
+@property (nonatomic, readonly) Class dataProviderEntityClass;
+@property (nonatomic, readonly) long long identifier;
 
 - (void).cxx_destruct;
 - (void)_onBarrierCacheValues:(id)arg1 persistValueInBackgroundBlock:(id)arg2;

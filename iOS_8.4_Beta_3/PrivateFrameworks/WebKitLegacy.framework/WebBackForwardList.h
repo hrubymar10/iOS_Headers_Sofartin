@@ -6,12 +6,12 @@
     WebBackForwardListPrivate *_private;
 }
 
-@property(assign,readonly) WebHistoryItem * backItem;
-@property(assign,readonly) int backListCount;
-@property(assign,readwrite) int capacity;
-@property(assign,readonly) WebHistoryItem * currentItem;
-@property(assign,readonly) WebHistoryItem * forwardItem;
-@property(assign,readonly) int forwardListCount;
+@property (nonatomic, readonly) WebHistoryItem *backItem;
+@property (nonatomic, readonly) int backListCount;
+@property (nonatomic) int capacity;
+@property (nonatomic, readonly) WebHistoryItem *currentItem;
+@property (nonatomic, readonly) WebHistoryItem *forwardItem;
+@property (nonatomic, readonly) int forwardListCount;
 
 + (void)initialize;
 

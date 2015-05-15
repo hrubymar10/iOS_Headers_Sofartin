@@ -8,9 +8,9 @@
     NSMutableArray *_shareURLsToFetch;
 }
 
-@property(assign,copy) id shareInfoFetchedBlock;
-@property(assign,retain) NSMutableDictionary * shareTokenInfosToFetchByURL;
-@property(assign,retain) NSMutableArray * shareURLsToFetch;
+@property (nonatomic, copy) id shareInfoFetchedBlock;
+@property (nonatomic, retain) NSMutableDictionary *shareTokenInfosToFetchByURL;
+@property (nonatomic, retain) NSMutableArray *shareURLsToFetch;
 
 - (void).cxx_destruct;
 - (id)_decodeProtectedFullToken:(id)arg1 tokenInfo:(id)arg2;

@@ -10,10 +10,10 @@
     unsigned int _type;
 }
 
-@property(assign,readwrite) bool cachesInputImage;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) NSString * type;
+@property bool cachesInputImage;
+@property (getter=isEnabled) bool enabled;
+@property (copy) NSString *name;
+@property (readonly) NSString *type;
 
 + (void)CAMLParserStartElement:(id)arg1;
 + (bool)automaticallyNotifiesObserversForKey:(id)arg1;

@@ -14,19 +14,19 @@
     NSArray *_pendingMembers;
 }
 
-@property(assign,readonly) bool canAddChildMembers;
-@property(assign,readonly) bool canAddMembers;
-@property(assign,readonly) NSString * childAccountButtonTitle;
-@property(assign,readonly) NSString * childAccountPrompt;
-@property(assign,readonly) NSArray * firstNames;
-@property(assign,readonly) NSArray * invites;
-@property(assign,readonly) AAFamilyMember * me;
-@property(assign,readonly) long long memberCount;
-@property(assign,readonly) NSArray * members;
-@property(assign,readonly) AAFamilyMember * organizer;
-@property(assign,readonly) long long pendingInviteCount;
-@property(assign,readonly) long long pendingMemberCount;
-@property(assign,readonly) NSArray * pendingMembers;
+@property (nonatomic, readonly) bool canAddChildMembers;
+@property (nonatomic, readonly) bool canAddMembers;
+@property (nonatomic, readonly) NSString *childAccountButtonTitle;
+@property (nonatomic, readonly) NSString *childAccountPrompt;
+@property (nonatomic, readonly) NSArray *firstNames;
+@property (nonatomic, readonly) NSArray *invites;
+@property (nonatomic, readonly) AAFamilyMember *me;
+@property (nonatomic, readonly) long long memberCount;
+@property (nonatomic, readonly) NSArray *members;
+@property (nonatomic, readonly) AAFamilyMember *organizer;
+@property (nonatomic, readonly) long long pendingInviteCount;
+@property (nonatomic, readonly) long long pendingMemberCount;
+@property (nonatomic, readonly) NSArray *pendingMembers;
 
 - (void).cxx_destruct;
 - (bool)canAddChildMembers;

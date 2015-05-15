@@ -8,9 +8,9 @@
     NSData *_selfPushToken;
 }
 
-@property(assign,copy) NSArray * peers;
-@property(assign,copy) NSNumber * reason;
-@property(assign,copy) NSData * selfPushToken;
+@property (copy) NSArray *peers;
+@property (copy) NSNumber *reason;
+@property (copy) NSData *selfPushToken;
 
 - (id)bagKey;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

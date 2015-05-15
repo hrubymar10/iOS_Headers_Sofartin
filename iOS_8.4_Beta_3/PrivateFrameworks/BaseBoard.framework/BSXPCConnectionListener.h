@@ -9,9 +9,9 @@
     NSString *_service;
 }
 
-@property(assign,retain) <BSXPCConnectionListenerHandler> * handler;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,copy) NSString * service;
+@property (readonly, retain) <BSXPCConnectionListenerHandler> *handler;
+@property (readonly) NSObject<OS_dispatch_queue> *queue;
+@property (readonly, copy) NSString *service;
 
 - (void)dealloc;
 - (id)description;

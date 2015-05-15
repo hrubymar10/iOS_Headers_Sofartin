@@ -9,10 +9,10 @@
     NSURL *_url;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,copy) NSNumber * searchHintIndex;
-@property(assign,copy) NSString * searchHintOriginalTerm;
-@property(assign,copy) NSString * term;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, copy) NSNumber *searchHintIndex;
+@property (nonatomic, copy) NSString *searchHintOriginalTerm;
+@property (nonatomic, copy) NSString *term;
 
 - (void).cxx_destruct;
 - (id)URL;

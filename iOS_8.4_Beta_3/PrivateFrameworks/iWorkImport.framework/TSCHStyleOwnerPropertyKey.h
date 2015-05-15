@@ -7,8 +7,8 @@
     TSCHStyleOwnerPath *mStyleOwnerPath;
 }
 
-@property(assign,readonly) int property;
-@property(assign,readonly) TSCHStyleOwnerPath * styleOwnerPath;
+@property (nonatomic, readonly) int property;
+@property (nonatomic, readonly) TSCHStyleOwnerPath *styleOwnerPath;
 
 + (id)propertyKeyWithStyleOwnerPath:(id)arg1 property:(int)arg2;
 

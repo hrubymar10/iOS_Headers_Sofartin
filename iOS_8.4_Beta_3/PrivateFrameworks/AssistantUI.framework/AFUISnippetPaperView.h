@@ -17,11 +17,11 @@
     bool _usingProvidedPaper;
 }
 
-@property(assign,readwrite) bool hasBeveledEdge;
-@property(assign,retain) UIColor * paperColor;
-@property(assign,retain) UIImage * paperImage;
-@property(assign,readwrite) double paperImageAlpha;
-@property(assign,readwrite) bool usesGradient;
+@property (nonatomic) bool hasBeveledEdge;
+@property (nonatomic, retain) UIColor *paperColor;
+@property (nonatomic, retain) UIImage *paperImage;
+@property (nonatomic) double paperImageAlpha;
+@property (nonatomic) bool usesGradient;
 
 - (void).cxx_destruct;
 - (struct { double x1; double x2; double x3; double x4; double x5; })_uiGradientValueForValue:(struct { float x1; float x2; float x3; float x4; })arg1;

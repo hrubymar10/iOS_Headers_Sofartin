@@ -10,8 +10,8 @@
     NSMutableSet *_touches;
 }
 
-@property(assign,readonly) double _initialTouchTimestamp;
-@property(assign,readonly) unsigned int _windowServerHitTestContextId;
+@property (nonatomic, readonly) double _initialTouchTimestamp;
+@property (nonatomic, readonly) unsigned int _windowServerHitTestContextId;
 
 - (bool)_addGestureRecognizersForView:(id)arg1 toTouch:(id)arg2 currentTouchMap:(struct __CFDictionary { }*)arg3 newTouchMap:(struct __CFDictionary { }*)arg4;
 - (void)_addTouch:(id)arg1 forDelayedDelivery:(bool)arg2;

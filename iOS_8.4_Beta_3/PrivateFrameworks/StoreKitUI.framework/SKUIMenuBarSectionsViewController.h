@@ -6,7 +6,7 @@
     unsigned long long _numberOfIterationsForShelfPageSections;
 }
 
-@property(assign,readwrite) unsigned long long numberOfIterationsForShelfPageSections;
+@property (nonatomic) unsigned long long numberOfIterationsForShelfPageSections;
 
 - (id)defaultSectionForComponent:(id)arg1;
 - (id)initWithLayoutStyle:(long long)arg1;

@@ -12,9 +12,9 @@
     id _upInsideBlock;
 }
 
-@property(assign,readwrite) NSObject<SKButtonNodeDelegate> * delegate;
-@property(assign,retain) SKAction * downAction;
-@property(assign,retain) SKAction * upAction;
+@property (nonatomic) NSObject<SKButtonNodeDelegate> *delegate;
+@property (nonatomic, retain) SKAction *downAction;
+@property (nonatomic, retain) SKAction *upAction;
 
 + (id)buttonWithFontNamed:(id)arg1;
 

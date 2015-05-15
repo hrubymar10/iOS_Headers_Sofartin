@@ -10,11 +10,11 @@
     UIActivityIndicatorView *_spinner;
 }
 
-@property(assign,retain) UILabel * label;
-@property(assign,readwrite) double leftInset;
-@property(assign,retain) UIColor * originalLabelFontColor;
-@property(assign,retain) NSArray * persistentConstraints;
-@property(assign,retain) UIActivityIndicatorView * spinner;
+@property (nonatomic, retain) UILabel *label;
+@property (nonatomic) double leftInset;
+@property (nonatomic, retain) UIColor *originalLabelFontColor;
+@property (nonatomic, retain) NSArray *persistentConstraints;
+@property (nonatomic, retain) UIActivityIndicatorView *spinner;
 
 + (id)_grayTextColor;
 + (id)_labelFont;

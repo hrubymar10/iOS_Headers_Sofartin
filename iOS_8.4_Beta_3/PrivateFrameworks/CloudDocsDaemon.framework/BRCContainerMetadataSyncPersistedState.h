@@ -8,8 +8,8 @@
     BRCAccountSession *_session;
 }
 
-@property(assign,retain) NSDate * lastSyncDate;
-@property(assign,retain) CKServerChangeToken * serverChangeToken;
+@property (retain) NSDate *lastSyncDate;
+@property (nonatomic, retain) CKServerChangeToken *serverChangeToken;
 
 + (id)loadFromClientStateInSession:(id)arg1;
 + (bool)supportsSecureCoding;

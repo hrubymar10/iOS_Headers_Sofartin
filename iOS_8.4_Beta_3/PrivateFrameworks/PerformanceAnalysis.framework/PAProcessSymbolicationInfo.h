@@ -8,9 +8,9 @@
     NSUUID *_sharedCacheUUID;
 }
 
-@property(assign,readonly) NSArray * imageInfos;
-@property(assign,readonly) unsigned long long sharedCacheOffset;
-@property(assign,readonly) NSUUID * sharedCacheUUID;
+@property (readonly) NSArray *imageInfos;
+@property (readonly) unsigned long long sharedCacheOffset;
+@property (readonly) NSUUID *sharedCacheUUID;
 
 - (void)dealloc;
 - (id)imageInfos;

@@ -11,8 +11,8 @@
     NSObject<OS_dispatch_queue> *_pendingIsolation;
 }
 
-@property(assign,readwrite) PLMomentAnalyzer * analyzer;
-@property(assign,readwrite) <PLMomentGenerationDataManagement> * momentGenerationDataManager;
+@property (nonatomic) PLMomentAnalyzer *analyzer;
+@property (nonatomic) <PLMomentGenerationDataManagement> *momentGenerationDataManager;
 
 + (id)_insertMegaMomentListsForMoments:(id)arg1 inMomentDataManager:(id)arg2;
 + (id)_insertMomentsForAssets:(id)arg1 inManager:(id)arg2 withAffectedMoments:(id)arg3;

@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,copy) id completion;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, copy) id completion;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 + (id)reachabilityScanTupleWithCompletion:(id)arg1 workQueue:(id)arg2 identifier:(id)arg3;
 

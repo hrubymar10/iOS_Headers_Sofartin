@@ -7,8 +7,8 @@
     bool _wantsCustomKerning;
 }
 
-@property(assign,readonly) bool supportsVerticalText;
-@property(assign,readonly) bool wantsCustomKerning;
+@property (nonatomic, readonly) bool supportsVerticalText;
+@property (nonatomic, readonly) bool wantsCustomKerning;
 
 + (id)sharedManager;
 

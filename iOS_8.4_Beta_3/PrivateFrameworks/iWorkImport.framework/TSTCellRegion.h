@@ -31,16 +31,16 @@
     } mLastCellID;
 }
 
-@property(assign,readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } boundingBottomRightCellID;
-@property(assign,readonly) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } boundingCellRange;
-@property(assign,readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } boundingTopLeftCellID;
-@property(assign,readonly) unsigned long long cellCount;
-@property(assign,readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } firstCellID;
-@property(assign,readonly) bool isEmpty;
-@property(assign,readonly) bool isRectangle;
-@property(assign,readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } lastCellID;
-@property(assign,readonly) unsigned short numberOfIntersectingColumns;
-@property(assign,readonly) unsigned short numberOfIntersectingRows;
+@property (nonatomic, readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } boundingBottomRightCellID;
+@property (nonatomic, readonly) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } boundingCellRange;
+@property (nonatomic, readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } boundingTopLeftCellID;
+@property (nonatomic, readonly) unsigned long long cellCount;
+@property (nonatomic, readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } firstCellID;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, readonly) bool isRectangle;
+@property (nonatomic, readonly) struct { unsigned short x1; unsigned char x2; unsigned char x3; } lastCellID;
+@property (nonatomic, readonly) unsigned short numberOfIntersectingColumns;
+@property (nonatomic, readonly) unsigned short numberOfIntersectingRows;
 
 + (id)invalidRegion;
 + (id)region:(id)arg1 addingRange:(struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; })arg2;

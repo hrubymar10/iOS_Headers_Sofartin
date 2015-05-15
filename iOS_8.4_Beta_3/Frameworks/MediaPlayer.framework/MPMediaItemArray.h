@@ -7,7 +7,7 @@
     NSArray *_items;
 }
 
-@property(assign,retain) NSArray * items;
+@property (nonatomic, readonly, retain) NSArray *items;
 
 + (bool)supportsSecureCoding;
 

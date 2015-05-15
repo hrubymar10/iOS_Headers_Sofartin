@@ -6,11 +6,11 @@
     NSNumber *_ID;
 }
 
-@property(assign,retain) NSNumber * ID;
-@property(assign,retain) CBUUID * UUID;
-@property(assign,retain) NSArray * characteristics;
-@property(assign,retain) NSArray * includedServices;
-@property(assign,readwrite) bool isPrimary;
+@property (retain) NSNumber *ID;
+@property (nonatomic, retain) CBUUID *UUID;
+@property (retain) NSArray *characteristics;
+@property (retain) NSArray *includedServices;
+@property (nonatomic) bool isPrimary;
 
 - (id)ID;
 - (void)dealloc;

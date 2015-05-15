@@ -6,11 +6,11 @@
     SSLookupRequest *_request;
 }
 
-@property(assign,retain) id authenticatesIfNeeded;
-@property(assign,copy) NSString * keyProfile;
-@property(assign,readwrite) long long localizationStyle;
-@property(assign,readonly) long long localizationStyleDevice;
-@property(assign,readonly) long long localizationStyleServer;
+@property (retain) id authenticatesIfNeeded;
+@property (copy) NSString *keyProfile;
+@property long long localizationStyle;
+@property (readonly) long long localizationStyleDevice;
+@property (readonly) long long localizationStyleServer;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

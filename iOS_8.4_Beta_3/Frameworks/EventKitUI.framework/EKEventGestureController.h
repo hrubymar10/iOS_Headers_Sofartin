@@ -51,22 +51,22 @@
     bool _usesXDragOffsetInCancelRegion;
 }
 
-@property(assign,readwrite) bool commitBlocked;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <EKEventGestureControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) EKDayOccurrenceView * draggingView;
-@property(assign,retain) EKDayOccurrenceView * draggingViewSource;
-@property(assign,retain) EKEvent * event;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } firstTouchPoint;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } latestTouchPoint;
-@property(assign,retain) NSString * sessionIdentifierForDebug;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } touchOffset;
-@property(assign,readwrite) <EKEventGestureControllerUntimedDelegate> * untimedDelegate;
-@property(assign,readwrite) bool usesHorizontalDragLocking;
-@property(assign,readwrite) bool usesXDragOffsetInCancelRegion;
+@property (nonatomic) bool commitBlocked;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <EKEventGestureControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) EKDayOccurrenceView *draggingView;
+@property (nonatomic, retain) EKDayOccurrenceView *draggingViewSource;
+@property (nonatomic, retain) EKEvent *event;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } firstTouchPoint;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } latestTouchPoint;
+@property (nonatomic, retain) NSString *sessionIdentifierForDebug;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } touchOffset;
+@property (nonatomic) <EKEventGestureControllerUntimedDelegate> *untimedDelegate;
+@property (nonatomic) bool usesHorizontalDragLocking;
+@property (nonatomic) bool usesXDragOffsetInCancelRegion;
 
 - (void).cxx_destruct;
 - (double)_Debug_HoursSinceStartOfDay:(double)arg1;

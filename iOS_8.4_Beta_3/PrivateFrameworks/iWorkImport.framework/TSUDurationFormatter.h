@@ -8,9 +8,9 @@
     TSULocale *mLocale;
 }
 
-@property(assign,readwrite) int compactStyleStartUnit;
-@property(assign,copy) NSString * format;
-@property(assign,readonly) TSULocale * locale;
+@property (nonatomic) int compactStyleStartUnit;
+@property (nonatomic, copy) NSString *format;
+@property (readonly) TSULocale *locale;
 
 - (int)compactStyleStartUnit;
 - (void)dealloc;

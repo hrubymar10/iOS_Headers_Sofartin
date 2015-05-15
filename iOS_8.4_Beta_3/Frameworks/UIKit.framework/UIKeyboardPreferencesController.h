@@ -4,7 +4,7 @@
 
 @interface UIKeyboardPreferencesController : NSObject
 
-@property(assign,readwrite) long long handBias;
+@property long long handBias;
 
 + (void)handleSpecificHardwareKeyboard;
 + (id)sharedPreferencesController;

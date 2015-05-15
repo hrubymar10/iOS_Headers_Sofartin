@@ -6,7 +6,7 @@
     MPMusicPlayerControllerServerInternal *_internal;
 }
 
-@property(assign,readonly) MPAVController * player;
+@property (nonatomic, readonly) MPAVController *player;
 
 + (bool)isMusicPlayerControllerServerRunning;
 + (id)sharedInstance;

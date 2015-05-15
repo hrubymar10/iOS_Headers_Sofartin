@@ -14,19 +14,19 @@
     NSArray *mValueAxisStyles;
 }
 
-@property(assign,readonly) NSArray * categoryAxisStyles;
-@property(assign,readonly) <TSCHStyleActAlike> * chartStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) <TSCHStyleActAlike> * legendStyle;
-@property(assign,readonly) NSArray * paragraphStyles;
-@property(assign,readonly) NSString * presetKind;
-@property(assign,readonly) <TSCHStyleActAlike> * refLineStyle;
-@property(assign,readonly) NSArray * seriesStyles;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct __CFUUID { }* uuid;
-@property(assign,readonly) NSArray * valueAxisStyles;
+@property (nonatomic, readonly) NSArray *categoryAxisStyles;
+@property (nonatomic, readonly) <TSCHStyleActAlike> *chartStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) <TSCHStyleActAlike> *legendStyle;
+@property (nonatomic, readonly) NSArray *paragraphStyles;
+@property (nonatomic, readonly) NSString *presetKind;
+@property (nonatomic, readonly) <TSCHStyleActAlike> *refLineStyle;
+@property (nonatomic, readonly) NSArray *seriesStyles;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct __CFUUID { }*uuid;
+@property (nonatomic, readonly) NSArray *valueAxisStyles;
 
 + (bool)needsObjectUUID;
 + (id)p_getDefaultErrorBarColor:(id)arg1 valueAxisStyles:(id)arg2;

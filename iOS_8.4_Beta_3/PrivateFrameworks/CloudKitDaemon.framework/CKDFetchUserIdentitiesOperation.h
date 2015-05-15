@@ -7,8 +7,8 @@
     NSArray *_identityInfos;
 }
 
-@property(assign,copy) id fetchUserIdentityProgressBlock;
-@property(assign,retain) NSArray * identityInfos;
+@property (nonatomic, copy) id fetchUserIdentityProgressBlock;
+@property (nonatomic, retain) NSArray *identityInfos;
 
 - (void).cxx_destruct;
 - (void)_fetchInfoFromCache;

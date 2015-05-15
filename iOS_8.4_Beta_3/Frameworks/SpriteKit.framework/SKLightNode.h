@@ -11,12 +11,12 @@
     UIColor *_shadowColor;
 }
 
-@property(assign,retain) UIColor * ambientColor;
-@property(assign,readwrite) unsigned int categoryBitMask;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readwrite) double falloff;
-@property(assign,retain) UIColor * lightColor;
-@property(assign,retain) UIColor * shadowColor;
+@property (nonatomic, retain) UIColor *ambientColor;
+@property (nonatomic) unsigned int categoryBitMask;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic) double falloff;
+@property (nonatomic, retain) UIColor *lightColor;
+@property (nonatomic, retain) UIColor *shadowColor;
 
 - (void).cxx_destruct;
 - (id)ambientColor;

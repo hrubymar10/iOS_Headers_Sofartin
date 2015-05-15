@@ -9,7 +9,7 @@
     UIWindow *_window;
 }
 
-@property(assign,readwrite) UIWindow * window;
+@property (nonatomic) UIWindow *window;
 
 - (void).cxx_destruct;
 - (void)_setRating:(long long)arg1 forItem:(id)arg2 account:(id)arg3 completionBlock:(id)arg4;

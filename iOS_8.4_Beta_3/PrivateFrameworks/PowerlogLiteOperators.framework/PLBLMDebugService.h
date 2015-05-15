@@ -13,14 +13,14 @@
     PLXPCResponderOperatorComposition *_xpcResponderBLMDebugQuery;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * bbCallback;
-@property(assign,retain) PLEntryNotificationOperatorComposition * ioreportCallback;
-@property(assign,retain) PLEntryNotificationOperatorComposition * processmonitorCallback;
-@property(assign,retain) PLEntryNotificationOperatorComposition * processnetworkCallback;
-@property(assign,retain) NSMutableDictionary * triggers;
-@property(assign,retain) PLEntryNotificationOperatorComposition * wifiCallback;
-@property(assign,retain) PLXPCListenerOperatorComposition * xpcListenerBLMDebugTrigger;
-@property(assign,retain) PLXPCResponderOperatorComposition * xpcResponderBLMDebugQuery;
+@property (retain) PLEntryNotificationOperatorComposition *bbCallback;
+@property (retain) PLEntryNotificationOperatorComposition *ioreportCallback;
+@property (retain) PLEntryNotificationOperatorComposition *processmonitorCallback;
+@property (retain) PLEntryNotificationOperatorComposition *processnetworkCallback;
+@property (retain) NSMutableDictionary *triggers;
+@property (retain) PLEntryNotificationOperatorComposition *wifiCallback;
+@property (retain) PLXPCListenerOperatorComposition *xpcListenerBLMDebugTrigger;
+@property (retain) PLXPCResponderOperatorComposition *xpcResponderBLMDebugQuery;
 
 + (id)entryEventNoneDefinitionBLMDebug;
 + (id)entryEventNoneDefinitions;

@@ -9,13 +9,13 @@
     bool _shouldUseCache;
 }
 
-@property(assign,copy) NSString * activeSectionVersionString;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SUSectionsResponse * sectionsResponse;
-@property(assign,readwrite) bool shouldUseCache;
-@property(assign,readonly) Class superclass;
+@property (copy) NSString *activeSectionVersionString;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) SUSectionsResponse *sectionsResponse;
+@property bool shouldUseCache;
+@property (readonly) Class superclass;
 
 - (id)_cachePathForVersion:(id)arg1 create:(bool)arg2;
 - (bool)_loadSectionsFromCacheForVersion:(id)arg1;

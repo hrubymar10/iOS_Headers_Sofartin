@@ -6,7 +6,7 @@
     NSMutableArray *_disambiguationLabels;
 }
 
-@property(assign,retain) NSMutableArray * disambiguationLabels;
+@property (nonatomic, retain) NSMutableArray *disambiguationLabels;
 
 - (void)addDisambiguationLabel:(id)arg1;
 - (void)clearDisambiguationLabels;

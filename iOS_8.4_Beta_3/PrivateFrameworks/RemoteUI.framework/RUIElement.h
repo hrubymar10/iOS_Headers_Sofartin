@@ -7,9 +7,9 @@
     bool _enabled;
 }
 
-@property(assign,retain) NSDictionary * attributes;
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) NSString * name;
+@property (nonatomic, retain) NSDictionary *attributes;
+@property (nonatomic) bool enabled;
+@property (nonatomic, readonly) NSString *name;
 
 - (void).cxx_destruct;
 - (id)URLAttributeForImageName:(id)arg1 getScale:(double*)arg2;

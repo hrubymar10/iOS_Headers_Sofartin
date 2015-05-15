@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_accountsQueue;
 }
 
-@property(assign,retain) NSHashTable * accounts;
-@property(assign,retain) NSObject<OS_dispatch_queue> * accountsQueue;
+@property (nonatomic, retain) NSHashTable *accounts;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *accountsQueue;
 
 + (id)sharedMonitor;
 

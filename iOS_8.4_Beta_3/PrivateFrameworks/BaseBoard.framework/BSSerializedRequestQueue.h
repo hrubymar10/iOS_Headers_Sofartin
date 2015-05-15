@@ -8,7 +8,7 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * serialQueue;
+@property (nonatomic, readonly, retain) NSObject<OS_dispatch_queue> *serialQueue;
 
 - (void)_enqueueSerialConditionalRequest:(id)arg1;
 - (void)dealloc;

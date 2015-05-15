@@ -8,9 +8,9 @@
     NSData *_texture;
 }
 
-@property(assign,readwrite) unsigned int quadHeight;
-@property(assign,readwrite) unsigned int quadWidth;
-@property(assign,retain) NSData * texture;
+@property (nonatomic) unsigned int quadHeight;
+@property (nonatomic) unsigned int quadWidth;
+@property (nonatomic, retain) NSData *texture;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

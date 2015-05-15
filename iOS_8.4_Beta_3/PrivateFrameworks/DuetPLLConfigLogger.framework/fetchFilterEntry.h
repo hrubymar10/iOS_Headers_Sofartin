@@ -7,8 +7,8 @@
     NSDate *_when;
 }
 
-@property(assign,retain) NSDictionary * what;
-@property(assign,retain) NSDate * when;
+@property (retain) NSDictionary *what;
+@property (retain) NSDate *when;
 
 - (void).cxx_destruct;
 - (id)init;

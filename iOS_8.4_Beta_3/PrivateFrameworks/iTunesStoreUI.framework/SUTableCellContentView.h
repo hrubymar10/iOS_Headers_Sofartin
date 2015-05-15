@@ -14,17 +14,17 @@
     unsigned int _useSubviewLayout;
 }
 
-@property(assign,readwrite) int clipCorners;
-@property(assign,retain) SUCellConfiguration * configuration;
-@property(assign,copy) NSString * debugDescription;
-@property(getter=isDeleteConfirmationVisible,assign,readwrite) bool deleteConfirmationVisisble;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool drawAsDisabled;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,readwrite) bool highlightsOnlyContentView;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool usesSubviews;
+@property (nonatomic) int clipCorners;
+@property (nonatomic, retain) SUCellConfiguration *configuration;
+@property (readonly, copy) NSString *debugDescription;
+@property (getter=isDeleteConfirmationVisible, nonatomic) bool deleteConfirmationVisisble;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool drawAsDisabled;
+@property (readonly) unsigned long long hash;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic) bool highlightsOnlyContentView;
+@property (readonly) Class superclass;
+@property (nonatomic) bool usesSubviews;
 
 - (id)_clipPath;
 - (id)_clippedImageForImage:(id)arg1;

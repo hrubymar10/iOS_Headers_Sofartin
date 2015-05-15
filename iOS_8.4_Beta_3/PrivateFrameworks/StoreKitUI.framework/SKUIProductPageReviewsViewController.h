@@ -25,18 +25,18 @@
     SKUIProductPageTableView *_tableView;
 }
 
-@property(assign,readwrite) bool askPermission;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIProductPageChildViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) SKUIFacebookLikeStatus * facebookLikeStatus;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIProductPageHeaderViewController * headerViewController;
-@property(assign,readonly) NSOperationQueue * operationQueue;
-@property(assign,readonly) SKUIProductPage * productPage;
-@property(assign,readonly) UIScrollView * scrollView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) bool askPermission;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIProductPageChildViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) SKUIFacebookLikeStatus *facebookLikeStatus;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIProductPageHeaderViewController *headerViewController;
+@property (nonatomic, readonly) NSOperationQueue *operationQueue;
+@property (nonatomic, readonly) SKUIProductPage *productPage;
+@property (nonatomic, readonly) UIScrollView *scrollView;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_addHeaderView;

@@ -8,9 +8,9 @@
     NSArray *_userRecordIDsToDiscover;
 }
 
-@property(assign,copy) id discoverUserInfosProgressBlock;
-@property(assign,retain) NSArray * emailsToDiscover;
-@property(assign,retain) NSArray * userRecordIDsToDiscover;
+@property (nonatomic, copy) id discoverUserInfosProgressBlock;
+@property (nonatomic, retain) NSArray *emailsToDiscover;
+@property (nonatomic, retain) NSArray *userRecordIDsToDiscover;
 
 - (void).cxx_destruct;
 - (void)_discoverEmails:(id)arg1 userRecordIDs:(id)arg2 completionBlock:(id)arg3;

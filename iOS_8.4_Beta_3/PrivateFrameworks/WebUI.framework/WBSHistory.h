@@ -12,15 +12,15 @@
     NSObject<OS_dispatch_queue> *_waitUntilHistoryHasLoadedQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasAnyHistoryItems;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long historyAgeLimitInDays;
-@property(assign,readonly) unsigned long long numberOfHistoryItems;
-@property(assign,readonly) unsigned long long numberOfHistoryItemsOnHistoryQueue;
-@property(assign,readwrite) bool pushNotificationsAreInitialized;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasAnyHistoryItems;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long historyAgeLimitInDays;
+@property (nonatomic, readonly) unsigned long long numberOfHistoryItems;
+@property (nonatomic, readonly) unsigned long long numberOfHistoryItemsOnHistoryQueue;
+@property (nonatomic) bool pushNotificationsAreInitialized;
+@property (readonly) Class superclass;
 
 + (void)clearExistingSharedHistory;
 + (id)existingSharedHistory;

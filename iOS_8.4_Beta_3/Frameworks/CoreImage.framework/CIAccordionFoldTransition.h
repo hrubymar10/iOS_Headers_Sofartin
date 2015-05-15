@@ -11,12 +11,12 @@
     NSNumber *inputTime;
 }
 
-@property(assign,retain) NSNumber * inputBottomHeight;
-@property(assign,retain) NSNumber * inputFoldShadowAmount;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputNumberOfFolds;
-@property(assign,retain) CIImage * inputTargetImage;
-@property(assign,retain) NSNumber * inputTime;
+@property (nonatomic, retain) NSNumber *inputBottomHeight;
+@property (nonatomic, retain) NSNumber *inputFoldShadowAmount;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputNumberOfFolds;
+@property (nonatomic, retain) CIImage *inputTargetImage;
+@property (nonatomic, retain) NSNumber *inputTime;
 
 + (id)customAttributes;
 

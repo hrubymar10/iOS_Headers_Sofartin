@@ -16,11 +16,11 @@
     unsigned int _touchTimeMin;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RMSDAAPTouchRemoteManagerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RMSDAAPTouchRemoteManagerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_createSocket;

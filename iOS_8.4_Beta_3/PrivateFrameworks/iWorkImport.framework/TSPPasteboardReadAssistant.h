@@ -10,12 +10,12 @@
     TSPPasteboardObject *_pasteboardObject;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) TSPObjectContext * pasteboardContext;
-@property(assign,readonly) TSPPasteboardObject * pasteboardObject;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) TSPObjectContext *pasteboardContext;
+@property (nonatomic, readonly) TSPPasteboardObject *pasteboardObject;
+@property (readonly) Class superclass;
 
 + (id)contentDescriptionFromPasteboard:(id)arg1;
 

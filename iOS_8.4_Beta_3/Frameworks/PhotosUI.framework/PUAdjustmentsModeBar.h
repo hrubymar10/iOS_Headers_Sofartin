@@ -36,24 +36,24 @@
     NSNumberFormatter *_zeroLevelValueFormatter;
 }
 
-@property(assign,readwrite) <PUAdjustmentsModeBarDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUAdjustmentsModeBarDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double interactiveTransitionProgress;
-@property(assign,readonly) long long interactiveTransitionState;
-@property(assign,readonly) bool isSlidersListReversed;
-@property(assign,readonly) long long layoutOrientation;
-@property(getter=isListViewExpanded,assign,readonly) bool listViewExpanded;
-@property(getter=isListViewExpandedExplicitly,assign,readonly) bool listViewExpandedExplicitly;
-@property(assign,readwrite) double playheadSize;
-@property(assign,retain) PUAdjustmentsMode * selectedMode;
-@property(assign,readwrite) double shortSideSize;
-@property(assign,readonly) bool shouldShowModePickerOnFirstDisplay;
-@property(assign,readwrite) double slidersLongContentLength;
-@property(assign,readwrite) double slidersShortSideLength;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) <PUAdjustmentsModeBarDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUAdjustmentsModeBarDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double interactiveTransitionProgress;
+@property (nonatomic, readonly) long long interactiveTransitionState;
+@property (nonatomic, readonly) bool isSlidersListReversed;
+@property (nonatomic, readonly) long long layoutOrientation;
+@property (getter=isListViewExpanded, nonatomic, readonly) bool listViewExpanded;
+@property (getter=isListViewExpandedExplicitly, nonatomic, readonly) bool listViewExpandedExplicitly;
+@property (nonatomic) double playheadSize;
+@property (nonatomic, retain) PUAdjustmentsMode *selectedMode;
+@property (nonatomic) double shortSideSize;
+@property (nonatomic, readonly) bool shouldShowModePickerOnFirstDisplay;
+@property (nonatomic) double slidersLongContentLength;
+@property (nonatomic) double slidersShortSideLength;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_formattedLevelValue:(double)arg1;

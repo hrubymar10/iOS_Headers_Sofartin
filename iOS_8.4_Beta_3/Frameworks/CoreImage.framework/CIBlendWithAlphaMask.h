@@ -8,9 +8,9 @@
     CIImage *inputMaskImage;
 }
 
-@property(assign,retain) CIImage * inputBackgroundImage;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIImage * inputMaskImage;
+@property (nonatomic, retain) CIImage *inputBackgroundImage;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIImage *inputMaskImage;
 
 + (id)customAttributes;
 

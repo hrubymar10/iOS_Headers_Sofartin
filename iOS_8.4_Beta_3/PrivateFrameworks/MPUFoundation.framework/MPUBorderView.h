@@ -7,10 +7,10 @@
     bool _hidesWhenFullyTransparent;
 }
 
-@property(assign,copy) MPUBorderConfiguration * borderConfiguration;
-@property(assign,readwrite) bool hidesWhenFullyTransparent;
-@property(assign,readonly) double requiredOutsetForDropShadow;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } resizableImageCapInsets;
+@property (nonatomic, copy) MPUBorderConfiguration *borderConfiguration;
+@property (nonatomic) bool hidesWhenFullyTransparent;
+@property (nonatomic, readonly) double requiredOutsetForDropShadow;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } resizableImageCapInsets;
 
 + (double)requiredOutsetForDropShadow;
 

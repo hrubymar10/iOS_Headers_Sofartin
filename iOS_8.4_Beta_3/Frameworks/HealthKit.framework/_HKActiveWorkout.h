@@ -16,17 +16,17 @@
     long long _workoutState;
 }
 
-@property(getter=_associatedObjectUUIDData,assign,readonly) NSData * associatedObjectUUIDData;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <_HKActiveWorkoutDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=_lifecycleDelegate,setter=_setLifecycleDelegate:,assign,readwrite) <_HKActiveWorkoutLifecycleDelegate> * lifecycleDelegate;
-@property(assign,readonly) NSDictionary * resumeDataByType;
-@property(assign,readonly) long long serverState;
-@property(getter=_shouldUseDeviceData,assign,readonly) bool shouldUseDeviceData;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) long long workoutState;
+@property (getter=_associatedObjectUUIDData, readonly) NSData *associatedObjectUUIDData;
+@property (readonly, copy) NSString *debugDescription;
+@property <_HKActiveWorkoutDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=_lifecycleDelegate, setter=_setLifecycleDelegate:) <_HKActiveWorkoutLifecycleDelegate> *lifecycleDelegate;
+@property (readonly) NSDictionary *resumeDataByType;
+@property (readonly) long long serverState;
+@property (getter=_shouldUseDeviceData, readonly) bool shouldUseDeviceData;
+@property (readonly) Class superclass;
+@property (readonly) long long workoutState;
 
 + (id)_clientInterface;
 + (id)_serverInterface;

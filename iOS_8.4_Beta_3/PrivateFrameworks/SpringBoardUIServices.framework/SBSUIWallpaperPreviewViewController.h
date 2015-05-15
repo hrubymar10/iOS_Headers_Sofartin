@@ -16,15 +16,15 @@
     UIImage *_wallpaperImage;
 }
 
-@property(assign,readwrite) bool colorSamplingEnabled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SBFLegibilitySettingsProviderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) _UILegibilitySettings * legibilitySettings;
-@property(assign,readwrite) bool motionEnabled;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UIImage * wallpaperImage;
+@property (nonatomic) bool colorSamplingEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SBFLegibilitySettingsProviderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) _UILegibilitySettings *legibilitySettings;
+@property (nonatomic) bool motionEnabled;
+@property (readonly) Class superclass;
+@property (readonly) UIImage *wallpaperImage;
 
 - (id)_backdropWallpaperView;
 - (id)_dateView;

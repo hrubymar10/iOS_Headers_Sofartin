@@ -6,7 +6,7 @@
     _UIAlertControllerTextFieldView *_textFieldView;
 }
 
-@property(assign,readwrite) _UIAlertControllerTextFieldView * textFieldView;
+@property (nonatomic) _UIAlertControllerTextFieldView *textFieldView;
 
 - (void)setTextFieldView:(id)arg1;
 - (id)textFieldView;

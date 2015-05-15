@@ -4,8 +4,8 @@
 
 @interface SSMetricsExitEvent : SSMetricsBaseEvent
 
-@property(assign,retain) NSString * exitType;
-@property(assign,retain) NSString * exitURL;
+@property (nonatomic, retain) NSString *exitType;
+@property (nonatomic, retain) NSString *exitURL;
 
 - (id)description;
 - (id)exitType;

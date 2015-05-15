@@ -6,7 +6,7 @@
     AVCaptureInputInternal_FigRecorder *_inputInternal;
 }
 
-@property(assign,readonly) NSArray * ports;
+@property (nonatomic, readonly) NSArray *ports;
 
 - (void)_applyOverridesToCaptureOptions:(id)arg1;
 - (struct OpaqueCMClock { }*)clock;

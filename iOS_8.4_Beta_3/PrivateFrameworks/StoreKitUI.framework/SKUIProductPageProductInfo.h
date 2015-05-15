@@ -7,7 +7,7 @@
     NSMutableArray *_values;
 }
 
-@property(assign,readonly) long long numberOfEntries;
+@property (nonatomic, readonly) long long numberOfEntries;
 
 - (void).cxx_destruct;
 - (void)enumerateEntriesWithBlock:(id)arg1;

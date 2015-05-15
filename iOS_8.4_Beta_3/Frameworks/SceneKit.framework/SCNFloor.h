@@ -12,10 +12,10 @@
     id _reserved;
 }
 
-@property(assign,readwrite) double reflectionFalloffEnd;
-@property(assign,readwrite) double reflectionFalloffStart;
-@property(assign,readwrite) double reflectionResolutionScaleFactor;
-@property(assign,readwrite) double reflectivity;
+@property (nonatomic) double reflectionFalloffEnd;
+@property (nonatomic) double reflectionFalloffStart;
+@property (nonatomic) double reflectionResolutionScaleFactor;
+@property (nonatomic) double reflectivity;
 
 + (id)SCNJSExportProtocol;
 + (id)floor;

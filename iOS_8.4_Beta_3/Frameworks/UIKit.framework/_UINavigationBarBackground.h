@@ -15,12 +15,12 @@
     UIImageView *_shadowView;
 }
 
-@property(setter=_setShadowView:,assign,retain) UIView * _shadowView;
-@property(assign,retain) _UINavigationBarAppearanceStorage * appearanceStorage;
-@property(assign,readwrite) long long barStyle;
-@property(assign,retain) UIColor * barTintColor;
-@property(assign,readwrite) bool barWantsAdaptiveBackdrop;
-@property(getter=isTranslucent,assign,readwrite) bool translucent;
+@property (setter=_setShadowView:, nonatomic, retain) UIView *_shadowView;
+@property (nonatomic, retain) _UINavigationBarAppearanceStorage *appearanceStorage;
+@property (nonatomic) long long barStyle;
+@property (nonatomic, retain) UIColor *barTintColor;
+@property (nonatomic) bool barWantsAdaptiveBackdrop;
+@property (getter=isTranslucent, nonatomic) bool translucent;
 
 - (id)_adaptiveBackdrop;
 - (id)_currentCustomBackground;

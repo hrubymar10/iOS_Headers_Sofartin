@@ -8,9 +8,9 @@
     NSString *_name;
 }
 
-@property(assign,readwrite) bool forRange;
-@property(assign,readwrite) bool hidden;
-@property(assign,retain) NSString * name;
+@property (nonatomic) bool forRange;
+@property (nonatomic) bool hidden;
+@property (nonatomic, retain) NSString *name;
 
 - (bool)allowsEditing;
 - (int)attributeArrayKind;

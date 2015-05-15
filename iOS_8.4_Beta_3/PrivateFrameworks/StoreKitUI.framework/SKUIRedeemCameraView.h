@@ -15,15 +15,15 @@
     SKUIRedeemTextField *_textField;
 }
 
-@property(assign,retain) SKUIITunesPassConfiguration * ITunesPassConfiguration;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIRedeemCameraViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * image;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
+@property (nonatomic, retain) SKUIITunesPassConfiguration *ITunesPassConfiguration;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIRedeemCameraViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *image;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
 
 - (void).cxx_destruct;
 - (id)ITunesPassConfiguration;

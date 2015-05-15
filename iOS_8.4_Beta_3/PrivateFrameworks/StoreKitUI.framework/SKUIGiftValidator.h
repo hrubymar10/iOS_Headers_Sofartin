@@ -10,8 +10,8 @@
     NSURL *_validationURL;
 }
 
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(getter=isValidating,assign,readonly) bool validating;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (getter=isValidating, nonatomic, readonly) bool validating;
 
 - (void).cxx_destruct;
 - (void)_finishValidationWithResponse:(id)arg1 error:(id)arg2 attemptNumber:(long long)arg3 block:(id)arg4;

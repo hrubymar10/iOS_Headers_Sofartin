@@ -11,9 +11,9 @@
     _UIDocumentStorage *_storage;
 }
 
-@property(assign,readonly) NSURL * dataStorageURL;
-@property(assign,readonly) NSURL * documentStorageURL;
-@property(assign,readonly) bool usesUbiquitousStorage;
+@property (readonly) NSURL *dataStorageURL;
+@property (readonly) NSURL *documentStorageURL;
+@property (readonly) bool usesUbiquitousStorage;
 
 + (void)requestSharedManager:(id)arg1;
 

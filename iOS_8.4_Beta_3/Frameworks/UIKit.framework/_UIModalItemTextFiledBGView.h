@@ -9,9 +9,9 @@
     long long _textFieldsCount;
 }
 
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,retain) UIColor * separatorsColor;
-@property(assign,readwrite) long long textFieldsCount;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic, retain) UIColor *separatorsColor;
+@property (nonatomic) long long textFieldsCount;
 
 - (id)backgroundColor;
 - (void)dealloc;

@@ -11,9 +11,9 @@
     NSString *_relevantText;
 }
 
-@property(assign,readonly) struct { double x1; double x2; } coordinate;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSString * relevantText;
+@property (nonatomic, readonly) struct { double x1; double x2; } coordinate;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *relevantText;
 
 + (bool)supportsSecureCoding;
 

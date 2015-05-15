@@ -21,8 +21,8 @@
     UILabel *_verbiageLabel;
 }
 
-@property(assign,readwrite) CNFRegSplashSignInController * controller;
-@property(assign,readwrite) long long serviceType;
+@property (nonatomic) CNFRegSplashSignInController *controller;
+@property (nonatomic) long long serviceType;
 
 - (void)_learnMorePressed:(id)arg1;
 - (id)_splashImage;

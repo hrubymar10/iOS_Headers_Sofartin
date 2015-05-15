@@ -12,17 +12,17 @@
     NSTimer *_timeoutHandler;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSError * error;
-@property(assign,retain) NSMutableArray * handlers;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSDate * locateStartTime;
-@property(assign,retain) CLLocation * location;
-@property(assign,readonly) bool locationAuthorizationDenied;
-@property(assign,retain) CLLocationManager * locationManager;
-@property(assign,retain) NSTimer * locationUpdateTimer;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic, retain) NSMutableArray *handlers;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSDate *locateStartTime;
+@property (nonatomic, retain) CLLocation *location;
+@property (nonatomic, readonly) bool locationAuthorizationDenied;
+@property (nonatomic, retain) CLLocationManager *locationManager;
+@property (nonatomic, retain) NSTimer *locationUpdateTimer;
+@property (readonly) Class superclass;
 
 + (Class)__CLLocationManagerClass;
 + (id)locationShifter;

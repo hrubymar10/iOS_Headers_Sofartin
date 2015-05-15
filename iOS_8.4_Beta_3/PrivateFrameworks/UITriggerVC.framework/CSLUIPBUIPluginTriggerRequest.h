@@ -11,11 +11,11 @@
     int _reason;
 }
 
-@property(assign,retain) NSMutableArray * dictionarys;
-@property(assign,readonly) bool hasName;
-@property(assign,readwrite) bool hasReason;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) int reason;
+@property (nonatomic, retain) NSMutableArray *dictionarys;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic) bool hasReason;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) int reason;
 
 - (void).cxx_destruct;
 - (void)addDictionary:(id)arg1;

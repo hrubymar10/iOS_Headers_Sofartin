@@ -11,13 +11,13 @@
     UISegmentedControl *_sortOrder;
 }
 
-@property(assign,copy) NSArray * compactConstraints;
-@property(assign,readwrite) long long listMode;
-@property(assign,retain) UIButton * listModeToggle;
-@property(assign,copy) NSArray * regularConstraints;
-@property(assign,readwrite) <_UIDocumentPickerViewServiceViewController> * serviceViewController;
-@property(assign,retain) UISegmentedControl * sortOrder;
-@property(assign,readwrite) int value;
+@property (nonatomic, copy) NSArray *compactConstraints;
+@property (nonatomic) long long listMode;
+@property (nonatomic, retain) UIButton *listModeToggle;
+@property (nonatomic, copy) NSArray *regularConstraints;
+@property (nonatomic) <_UIDocumentPickerViewServiceViewController> *serviceViewController;
+@property (nonatomic, retain) UISegmentedControl *sortOrder;
+@property (nonatomic) int value;
 
 - (void)_toggleListMode:(id)arg1;
 - (id)compactConstraints;

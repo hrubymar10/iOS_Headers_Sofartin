@@ -7,12 +7,12 @@
     <FUChartDataGroupDataSource> *_dataSource;
 }
 
-@property(assign,retain) NSArray * dataSets;
-@property(assign,readwrite) <FUChartDataGroupDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSArray *dataSets;
+@property (nonatomic) <FUChartDataGroupDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_dataSetAtIndexCreateIfNecessary:(unsigned long long)arg1;

@@ -6,7 +6,7 @@
     long long _databaseScope;
 }
 
-@property(assign,readwrite) long long databaseScope;
+@property (nonatomic) long long databaseScope;
 
 - (void)configureRequest:(id)arg1;
 - (long long)databaseScope;

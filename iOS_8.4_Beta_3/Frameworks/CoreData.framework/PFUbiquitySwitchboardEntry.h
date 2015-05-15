@@ -21,16 +21,16 @@
     PFUbiquityLocation *_ubiquityRootLocation;
 }
 
-@property(assign,readwrite) unsigned long long activeStoreCount;
-@property(assign,readonly) PFUbiquityFilePresenter * filePresenter;
-@property(assign,readonly) PFUbiquitySetupAssistant * finishingSetupAssistant;
-@property(assign,readonly) PFUbiquityFilePresenter * localFilePresenter;
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,readonly) PFUbiquityLocation * localRootLocation;
-@property(assign,retain) PFUbiquitySwitchboardEntryMetadata * metadata;
-@property(assign,readonly) PFUbiquityContainerMonitor * monitor;
-@property(assign,readonly) NSString * storeName;
-@property(assign,retain) PFUbiquityLocation * ubiquityRootLocation;
+@property unsigned long long activeStoreCount;
+@property (readonly) PFUbiquityFilePresenter *filePresenter;
+@property (readonly) PFUbiquitySetupAssistant *finishingSetupAssistant;
+@property (readonly) PFUbiquityFilePresenter *localFilePresenter;
+@property (nonatomic, readonly) NSString *localPeerID;
+@property (readonly) PFUbiquityLocation *localRootLocation;
+@property (nonatomic, retain) PFUbiquitySwitchboardEntryMetadata *metadata;
+@property (readonly) PFUbiquityContainerMonitor *monitor;
+@property (nonatomic, readonly) NSString *storeName;
+@property (nonatomic, retain) PFUbiquityLocation *ubiquityRootLocation;
 
 - (unsigned long long)activeStoreCount;
 - (void)afterDelay:(double)arg1 executeBlockOnGlobalConcurrentQueue:(id)arg2;

@@ -12,12 +12,12 @@
     } _touchAllowance;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) UIView * focusedView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } touchAllowance;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) UIView *focusedView;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } touchAllowance;
 
 - (void).cxx_destruct;
 - (bool)_gestureRecognizer:(id)arg1 shouldRecognizeSimultaneouslyWithGestureRecognizer:(id)arg2;

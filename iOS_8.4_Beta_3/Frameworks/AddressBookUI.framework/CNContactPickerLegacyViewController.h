@@ -8,12 +8,12 @@
     ABPeoplePickerNavigationController *_legacyPicker;
 }
 
-@property(assign,readwrite) bool clientHasContactsAccess;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) ABPeoplePickerNavigationController * legacyPicker;
-@property(assign,readonly) Class superclass;
+@property bool clientHasContactsAccess;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) ABPeoplePickerNavigationController *legacyPicker;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)clientHasContactsAccess;

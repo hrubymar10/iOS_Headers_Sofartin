@@ -6,7 +6,7 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSString *title;
 
 - (long long)compare:(id)arg1;
 - (void)dealloc;

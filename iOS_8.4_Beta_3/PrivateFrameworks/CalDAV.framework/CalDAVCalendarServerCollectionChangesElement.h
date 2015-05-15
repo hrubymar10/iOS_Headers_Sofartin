@@ -8,9 +8,9 @@
     long long _updated;
 }
 
-@property(assign,readwrite) long long created;
-@property(assign,readwrite) long long deleted;
-@property(assign,readwrite) long long updated;
+@property (nonatomic) long long created;
+@property (nonatomic) long long deleted;
+@property (nonatomic) long long updated;
 
 - (id)copyParseRules;
 - (long long)created;

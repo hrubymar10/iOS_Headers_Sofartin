@@ -7,8 +7,8 @@
     HKQuantity *_totalEnergyBurned;
 }
 
-@property(assign,readonly) unsigned long long operatorType;
-@property(assign,readonly) HKQuantity * totalEnergyBurned;
+@property (nonatomic, readonly) unsigned long long operatorType;
+@property (nonatomic, readonly) HKQuantity *totalEnergyBurned;
 
 + (id)filterForKeyPath:(id)arg1 predicateOperatorType:(unsigned long long)arg2 value:(id)arg3 dataTypes:(id)arg4;
 + (id)filterWithTotalEnergyBurned:(id)arg1 operatorType:(unsigned long long)arg2;

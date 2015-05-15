@@ -4,7 +4,7 @@
 
 @interface UIKBRenderFactory_Car : UIKBRenderFactory
 
-@property(assign,readonly) double carScale;
+@property (nonatomic, readonly) double carScale;
 
 - (id)_traitsForKey:(id)arg1 onKeyplane:(id)arg2;
 - (id)activeKeyColor;

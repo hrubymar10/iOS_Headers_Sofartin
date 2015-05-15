@@ -4,9 +4,9 @@
 
 @interface CKTextMessagePartChatItem : CKMessagePartChatItem
 
-@property(assign,readonly) bool containsHyperlink;
-@property(assign,copy) NSAttributedString * subject;
-@property(assign,copy) NSAttributedString * text;
+@property (nonatomic, readonly) bool containsHyperlink;
+@property (nonatomic, readonly, copy) NSAttributedString *subject;
+@property (nonatomic, readonly, copy) NSAttributedString *text;
 
 - (Class)balloonViewClass;
 - (id)composition;

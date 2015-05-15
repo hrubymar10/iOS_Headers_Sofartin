@@ -18,17 +18,17 @@
     double testVector;
 }
 
-@property(assign,readwrite) struct __SVMParameters { struct __SVMScaleOffset { float x_1_1_1; float x_1_1_2; } x1[7]; double x2; double x3; int x4; int x5; struct CIBurstSupportVector {} *x6; struct CIBurstSupportVector {} *x7; }* svmParameters;
-@property(assign,readwrite) float testAverageCameraTravelDistance;
-@property(assign,readwrite) float testAverageRegistrationErrorSkewness;
-@property(assign,readwrite) float testBeginningVsEndAEMatrixVsAverageAdjacentAEMatrix;
-@property(assign,readwrite) float testInOutRatio;
-@property(assign,readwrite) float testMaxInnerDistance;
-@property(assign,readwrite) float testMaxPeakRegistrationError;
-@property(assign,readwrite) float testMaxRegistrationErrorIntegral;
-@property(assign,readwrite) float testMaxRegistrationErrorSkewness;
-@property(assign,readwrite) float testMeanPeakRegistrationError;
-@property(assign,readwrite) float testMinRegionOfInterestSize;
+@property struct __SVMParameters { struct __SVMScaleOffset { float x_1_1_1; float x_1_1_2; } x1[7]; double x2; double x3; int x4; int x5; struct CIBurstSupportVector {} *x6; struct CIBurstSupportVector {} *x7; }*svmParameters;
+@property float testAverageCameraTravelDistance;
+@property float testAverageRegistrationErrorSkewness;
+@property float testBeginningVsEndAEMatrixVsAverageAdjacentAEMatrix;
+@property float testInOutRatio;
+@property float testMaxInnerDistance;
+@property float testMaxPeakRegistrationError;
+@property float testMaxRegistrationErrorIntegral;
+@property float testMaxRegistrationErrorSkewness;
+@property float testMeanPeakRegistrationError;
+@property float testMinRegionOfInterestSize;
 
 - (double)computeKernelValueWithSupportVector:(const struct CIBurstSupportVector { double x1; double x2[7]; }*)arg1;
 - (id)init;

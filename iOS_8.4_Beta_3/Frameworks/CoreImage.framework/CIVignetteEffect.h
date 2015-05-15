@@ -10,11 +10,11 @@
     NSNumber *inputRadius;
 }
 
-@property(assign,retain) CIVector * inputCenter;
-@property(assign,retain) NSNumber * inputFalloff;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) NSNumber * inputIntensity;
-@property(assign,retain) NSNumber * inputRadius;
+@property (nonatomic, retain) CIVector *inputCenter;
+@property (nonatomic, retain) NSNumber *inputFalloff;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) NSNumber *inputIntensity;
+@property (nonatomic, retain) NSNumber *inputRadius;
 
 + (id)customAttributes;
 

@@ -8,7 +8,7 @@
     UIView *_placeholderPreviewView;
 }
 
-@property(assign,readwrite) bool needsURLPlaceholderImage;
+@property (nonatomic) bool needsURLPlaceholderImage;
 
 - (void).cxx_destruct;
 - (void)ensurePlaceholderPreviewImage;

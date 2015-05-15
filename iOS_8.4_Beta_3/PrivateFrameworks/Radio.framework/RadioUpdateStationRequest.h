@@ -10,10 +10,10 @@
     NSString *_stationDescription;
 }
 
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSArray * seeds;
-@property(assign,readwrite) long long songMixType;
-@property(assign,copy) NSString * stationDescription;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSArray *seeds;
+@property (nonatomic) long long songMixType;
+@property (nonatomic, copy) NSString *stationDescription;
 
 - (void).cxx_destruct;
 - (id)_updatedStationDictionary;

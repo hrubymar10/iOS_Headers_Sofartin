@@ -17,15 +17,15 @@
     NSString *_stringValue;
 }
 
-@property(assign,readonly) bool boolValue;
-@property(assign,readonly) TSUColor * colorValue;
-@property(assign,readonly) double doubleValue;
-@property(assign,readonly) long long integerValue;
-@property(assign,readonly) bool isEmpty;
-@property(assign,readonly) <NSObject> * objectValue;
-@property(assign,readonly) TSDPathSource * pathSourceValue;
-@property(assign,readonly) NSString * stringValue;
-@property(assign,readonly) unsigned long long type;
+@property (nonatomic, readonly) bool boolValue;
+@property (nonatomic, readonly) TSUColor *colorValue;
+@property (nonatomic, readonly) double doubleValue;
+@property (nonatomic, readonly) long long integerValue;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, readonly) <NSObject> *objectValue;
+@property (nonatomic, readonly) TSDPathSource *pathSourceValue;
+@property (nonatomic, readonly) NSString *stringValue;
+@property (nonatomic, readonly) unsigned long long type;
 
 + (id)emptyValue;
 + (id)valueWithBool:(bool)arg1;

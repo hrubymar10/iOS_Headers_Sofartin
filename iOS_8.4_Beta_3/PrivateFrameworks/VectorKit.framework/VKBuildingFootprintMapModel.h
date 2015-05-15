@@ -214,17 +214,17 @@
     long long _vectorType;
 }
 
-@property(assign,readwrite) int buildingMode;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <VKBuildingFootprintMapModelDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool fadeTiles;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) VKMercatorTerrainHeightCache * heightCache;
-@property(assign,retain) VK3DObjectSubMapModel * landmarksModel;
-@property(assign,retain) VKSkyModel * skyModel;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long vectorType;
+@property (nonatomic) int buildingMode;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <VKBuildingFootprintMapModelDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool fadeTiles;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) VKMercatorTerrainHeightCache *heightCache;
+@property (nonatomic, retain) VK3DObjectSubMapModel *landmarksModel;
+@property (nonatomic, retain) VKSkyModel *skyModel;
+@property (readonly) Class superclass;
+@property (nonatomic) long long vectorType;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

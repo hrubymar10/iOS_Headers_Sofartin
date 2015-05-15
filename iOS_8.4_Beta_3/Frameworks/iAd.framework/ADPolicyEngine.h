@@ -25,30 +25,30 @@
     bool _visuallyEngaged;
 }
 
-@property(assign,readwrite) bool canAutoEnable;
-@property(assign,retain) NSData * currentSongData;
-@property(assign,retain) NSData * currentStationData;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enabled;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSData * heartbeatToken;
-@property(assign,retain) NSError * heartbeatTokenError;
-@property(assign,readwrite) double heartbeatTokenExpiration;
-@property(assign,retain) NSError * lastSharedMediaPlayerVideoAdError;
-@property(assign,readwrite) double nextInterstitialPresentationTime;
-@property(assign,readwrite) double nextPrerollPlaybackTime;
-@property(assign,retain) NSObject<OS_dispatch_queue> * policyEngineQueue;
-@property(assign,readonly) NSMutableArray * queuedCommands;
-@property(assign,retain) ADInterstitialAd * sharedInterstitialAd;
-@property(assign,readwrite) bool sharedInterstitialAdIsInUse;
-@property(assign,copy) NSString * sharedInterstitialAuthenticationUserName;
-@property(assign,copy) NSString * sharedInterstitialSection;
-@property(assign,copy) NSURL * sharedInterstitialServerURL;
-@property(assign,retain) ADBannerView * sharedMediaPlayerVideoAd;
-@property(assign,readwrite) bool sharedMediaPlayerVideoAdClaimed;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool visuallyEngaged;
+@property (nonatomic) bool canAutoEnable;
+@property (nonatomic, retain) NSData *currentSongData;
+@property (nonatomic, retain) NSData *currentStationData;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enabled;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSData *heartbeatToken;
+@property (nonatomic, retain) NSError *heartbeatTokenError;
+@property (nonatomic) double heartbeatTokenExpiration;
+@property (nonatomic, retain) NSError *lastSharedMediaPlayerVideoAdError;
+@property (nonatomic) double nextInterstitialPresentationTime;
+@property (nonatomic) double nextPrerollPlaybackTime;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *policyEngineQueue;
+@property (nonatomic, readonly) NSMutableArray *queuedCommands;
+@property (nonatomic, retain) ADInterstitialAd *sharedInterstitialAd;
+@property (nonatomic) bool sharedInterstitialAdIsInUse;
+@property (nonatomic, copy) NSString *sharedInterstitialAuthenticationUserName;
+@property (nonatomic, copy) NSString *sharedInterstitialSection;
+@property (nonatomic, copy) NSURL *sharedInterstitialServerURL;
+@property (nonatomic, retain) ADBannerView *sharedMediaPlayerVideoAd;
+@property (nonatomic) bool sharedMediaPlayerVideoAdClaimed;
+@property (readonly) Class superclass;
+@property (nonatomic) bool visuallyEngaged;
 
 + (id)sharedEngine;
 

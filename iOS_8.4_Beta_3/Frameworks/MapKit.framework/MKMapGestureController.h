@@ -23,22 +23,22 @@
     UITapGestureRecognizer *_twoFingerTapGestureRecognizer;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MKMapGestureControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) UITapGestureRecognizer * doubleTapGestureRecognizer;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MKBasicMapView * mapView;
-@property(assign,readonly) UIPanGestureRecognizer * panGestureRecognizer;
-@property(assign,readwrite) bool panWithMomentum;
-@property(assign,readonly) UIPinchGestureRecognizer * pinchGestureRecognizer;
-@property(getter=isRotationEnabled,assign,readwrite) bool rotationEnabled;
-@property(getter=isScrollEnabled,assign,readwrite) bool scrollEnabled;
-@property(assign,readonly) Class superclass;
-@property(getter=isTiltEnabled,assign,readwrite) bool tiltEnabled;
-@property(assign,readonly) UILongPressGestureRecognizer * twoFingerLongPressGestureRecognizer;
-@property(assign,readonly) UITapGestureRecognizer * twoFingerTapGestureRecognizer;
-@property(getter=isZoomEnabled,assign,readwrite) bool zoomEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MKMapGestureControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) UITapGestureRecognizer *doubleTapGestureRecognizer;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MKBasicMapView *mapView;
+@property (nonatomic, readonly) UIPanGestureRecognizer *panGestureRecognizer;
+@property (nonatomic) bool panWithMomentum;
+@property (nonatomic, readonly) UIPinchGestureRecognizer *pinchGestureRecognizer;
+@property (getter=isRotationEnabled, nonatomic) bool rotationEnabled;
+@property (getter=isScrollEnabled, nonatomic) bool scrollEnabled;
+@property (readonly) Class superclass;
+@property (getter=isTiltEnabled, nonatomic) bool tiltEnabled;
+@property (nonatomic, readonly) UILongPressGestureRecognizer *twoFingerLongPressGestureRecognizer;
+@property (nonatomic, readonly) UITapGestureRecognizer *twoFingerTapGestureRecognizer;
+@property (getter=isZoomEnabled, nonatomic) bool zoomEnabled;
 
 - (void).cxx_destruct;
 - (void)_clearGesture:(id)arg1;

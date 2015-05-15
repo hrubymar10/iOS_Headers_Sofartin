@@ -12,13 +12,13 @@
     unsigned long long _sectionOffset;
 }
 
-@property(assign,readonly) NSString * indexTitle;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) unsigned long long numberOfObjects;
-@property(assign,readonly) NSArray * objects;
-@property(assign,readwrite) unsigned long long oldSectionNumber;
-@property(assign,readonly) unsigned long long sectionNumber;
-@property(assign,readonly) unsigned long long sectionOffset;
+@property (nonatomic, readonly) NSString *indexTitle;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) unsigned long long numberOfObjects;
+@property (nonatomic, readonly) NSArray *objects;
+@property (nonatomic) unsigned long long oldSectionNumber;
+@property (nonatomic, readonly) unsigned long long sectionNumber;
+@property (nonatomic, readonly) unsigned long long sectionOffset;
 
 - (void)clearSectionObjectsCache;
 - (void)dealloc;

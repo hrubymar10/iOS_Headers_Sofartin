@@ -59,8 +59,8 @@
     int _viewWidth;
 }
 
-@property(assign,readwrite) <_UISiriWaveyViewDelegate> * delegate;
-@property(assign,readwrite) int mode;
+@property (nonatomic) <_UISiriWaveyViewDelegate> *delegate;
+@property (nonatomic) int mode;
 
 + (Class)layerClass;
 

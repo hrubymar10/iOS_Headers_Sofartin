@@ -10,16 +10,16 @@
     bool _showingChildController;
 }
 
-@property(assign,copy) id appearBlock;
-@property(assign,readonly) bool appeared;
-@property(assign,readonly) long long currentAppearanceStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CNFRegController * regController;
-@property(assign,readwrite) bool shouldRerootPreferences;
-@property(assign,readwrite) bool showingChildController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id appearBlock;
+@property (nonatomic, readonly) bool appeared;
+@property (nonatomic, readonly) long long currentAppearanceStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CNFRegController *regController;
+@property (nonatomic) bool shouldRerootPreferences;
+@property (nonatomic) bool showingChildController;
+@property (readonly) Class superclass;
 
 - (id)_existingLabelForSection:(long long)arg1 header:(bool)arg2;
 - (id)_existingLabelForSpecifier:(id)arg1 header:(bool)arg2;

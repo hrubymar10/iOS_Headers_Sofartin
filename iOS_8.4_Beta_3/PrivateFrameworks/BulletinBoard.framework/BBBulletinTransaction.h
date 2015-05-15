@@ -7,8 +7,8 @@
     unsigned long long _transactionID;
 }
 
-@property(assign,copy) NSString * bulletinID;
-@property(assign,readonly) unsigned long long transactionID;
+@property (nonatomic, readonly, copy) NSString *bulletinID;
+@property (nonatomic, readonly) unsigned long long transactionID;
 
 + (id)transactionWithBulletinID:(id)arg1;
 

@@ -8,7 +8,7 @@
     CADisplayLink *mDisplayLink;
 }
 
-@property(assign,readwrite) NSObject<TSDGLLayerDelegate> * delegate;
+@property NSObject<TSDGLLayerDelegate> *delegate;
 
 - (void)dealloc;
 - (id)delegate;

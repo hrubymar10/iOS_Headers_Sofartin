@@ -9,10 +9,10 @@
     PLNSNotificationOperatorComposition *_notificationSBApplicationStateChanged;
 }
 
-@property(assign,readonly) PLAccountingGroup * accountingGroupApplication;
-@property(assign,retain) PLAccountingGroup * appAccountingGroup;
-@property(assign,retain) NSMutableSet * keyboardPlugins;
-@property(assign,readonly) PLNSNotificationOperatorComposition * notificationSBApplicationStateChanged;
+@property (readonly) PLAccountingGroup *accountingGroupApplication;
+@property (retain) PLAccountingGroup *appAccountingGroup;
+@property (retain) NSMutableSet *keyboardPlugins;
+@property (readonly) PLNSNotificationOperatorComposition *notificationSBApplicationStateChanged;
 
 + (id)accountingGroupDefinitions;
 + (id)appNameForBundleID:(id)arg1;

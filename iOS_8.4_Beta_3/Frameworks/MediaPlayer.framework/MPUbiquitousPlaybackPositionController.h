@@ -14,15 +14,15 @@
     SBCPlaybackPositionSyncService *_uppServiceProxy;
 }
 
-@property(assign,readonly) bool applicationBecomingActive;
-@property(getter=isServiceActive,assign,readwrite) bool beganUsingPlaybackPositionMetadata;
-@property(assign,readwrite) bool databaseHasBookmarkableContents;
-@property(assign,readwrite) bool externallyActive;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(getter=isServiceActive,assign,readwrite) bool serviceActive;
-@property(assign,retain) NSObject<OS_dispatch_queue> * serviceQueue;
-@property(assign,retain) SBCPlaybackPositionDomain * uppDomain;
-@property(assign,retain) SBCPlaybackPositionSyncService * uppServiceProxy;
+@property (nonatomic, readonly) bool applicationBecomingActive;
+@property (getter=isServiceActive, nonatomic) bool beganUsingPlaybackPositionMetadata;
+@property (nonatomic) bool databaseHasBookmarkableContents;
+@property (nonatomic) bool externallyActive;
+@property (nonatomic, readonly, retain) NSObject<OS_dispatch_queue> *queue;
+@property (getter=isServiceActive, nonatomic) bool serviceActive;
+@property (nonatomic, readonly, retain) NSObject<OS_dispatch_queue> *serviceQueue;
+@property (nonatomic, retain) SBCPlaybackPositionDomain *uppDomain;
+@property (nonatomic, retain) SBCPlaybackPositionSyncService *uppServiceProxy;
 
 + (id)sharedUbiquitousPlaybackPositionController;
 

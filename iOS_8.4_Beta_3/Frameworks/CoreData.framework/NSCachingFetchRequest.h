@@ -9,8 +9,8 @@
     NSDictionary *_substitutionVariables;
 }
 
-@property(assign,readonly) id _identifier;
-@property(assign,copy) NSDictionary * substitutionVariables;
+@property (nonatomic, readonly) id _identifier;
+@property (nonatomic, copy) NSDictionary *substitutionVariables;
 
 + (id)_generateIdentifier;
 

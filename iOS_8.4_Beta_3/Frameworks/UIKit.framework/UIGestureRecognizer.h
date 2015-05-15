@@ -54,13 +54,13 @@
     UIView *_view;
 }
 
-@property(assign,readwrite) bool cancelsTouchesInView;
-@property(assign,readwrite) bool delaysTouchesBegan;
-@property(assign,readwrite) bool delaysTouchesEnded;
-@property(assign,readwrite) <UIGestureRecognizerDelegate> * delegate;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readonly) long long state;
-@property(assign,readonly) UIView * view;
+@property (nonatomic) bool cancelsTouchesInView;
+@property (nonatomic) bool delaysTouchesBegan;
+@property (nonatomic) bool delaysTouchesEnded;
+@property (nonatomic) <UIGestureRecognizerDelegate> *delegate;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic, readonly) long long state;
+@property (nonatomic, readonly) UIView *view;
 
 + (bool)_touchesBeganWasDelayedForTouch:(id)arg1;
 

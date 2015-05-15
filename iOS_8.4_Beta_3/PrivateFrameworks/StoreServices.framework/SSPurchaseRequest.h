@@ -15,16 +15,16 @@
     bool _shouldValidatePurchases;
 }
 
-@property(getter=isBackgroundRequest,assign,readwrite) bool backgroundRequest;
-@property(assign,readwrite) bool createsDownloads;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SSPurchaseRequestDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool needsAuthentication;
-@property(assign,readonly) NSArray * purchases;
-@property(assign,readwrite) bool shouldValidatePurchases;
-@property(assign,readonly) Class superclass;
+@property (getter=isBackgroundRequest, nonatomic) bool backgroundRequest;
+@property (nonatomic) bool createsDownloads;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SSPurchaseRequestDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool needsAuthentication;
+@property (readonly) NSArray *purchases;
+@property (nonatomic) bool shouldValidatePurchases;
+@property (readonly) Class superclass;
 
 - (void)_addPurchasesToManager;
 - (void)_finishPurchasesWithResponses:(id)arg1;

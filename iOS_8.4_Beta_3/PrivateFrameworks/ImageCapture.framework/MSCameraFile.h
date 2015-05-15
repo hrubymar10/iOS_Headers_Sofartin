@@ -6,21 +6,21 @@
     void *_msCameraFileProperties;
 }
 
-@property(assign,readwrite) int bitsPerPixel;
-@property(assign,copy) NSString * exifCreationDateTime;
-@property(assign,copy) NSString * exifModificationDateTime;
-@property(assign,readonly) struct timespec { long long x1; long long x2; } fsCreationTime;
-@property(assign,readonly) struct timespec { long long x1; long long x2; } fsModificationTime;
-@property(assign,readonly) unsigned long long fsSN;
-@property(assign,readonly) long long fsSize;
-@property(assign,readwrite) int imgHeight;
-@property(assign,readwrite) int imgWidth;
-@property(assign,readwrite) int thmHeight;
-@property(assign,readwrite) int thmOffset;
-@property(assign,readwrite) int thmSize;
-@property(assign,readwrite) int thmWidth;
-@property(assign,readwrite) unsigned int type;
-@property(assign,readwrite) bool updatedBasicMetadata;
+@property int bitsPerPixel;
+@property (copy) NSString *exifCreationDateTime;
+@property (copy) NSString *exifModificationDateTime;
+@property (readonly) struct timespec { long long x1; long long x2; } fsCreationTime;
+@property (readonly) struct timespec { long long x1; long long x2; } fsModificationTime;
+@property (readonly) unsigned long long fsSN;
+@property (readonly) long long fsSize;
+@property int imgHeight;
+@property int imgWidth;
+@property int thmHeight;
+@property int thmOffset;
+@property int thmSize;
+@property int thmWidth;
+@property unsigned int type;
+@property bool updatedBasicMetadata;
 
 - (int)bitsPerPixel;
 - (void)dealloc;

@@ -19,19 +19,19 @@
     TSUZipFileArchive *_zipArchive;
 }
 
-@property(assign,readonly) TSUZipFileArchive * componentZipArchive;
-@property(assign,readonly) SFUCryptoKey * decryptionKey;
-@property(assign,readonly) TSPDocumentProperties * documentProperties;
-@property(assign,readonly) <TSPFileCoordinatorDelegate> * fileCoordinatorDelegate;
-@property(assign,readonly) unsigned long long fileFormatVersion;
-@property(assign,readonly) bool isClosed;
-@property(assign,readonly) bool isPasswordProtected;
-@property(assign,readonly) NSError * lastReloadError;
-@property(assign,readonly) unsigned char packageIdentifier;
-@property(assign,readonly) long long packageType;
-@property(assign,readonly) NSString * passwordHint;
-@property(assign,readonly) NSData * passwordVerifier;
-@property(assign,retain) TSUZipFileArchive * zipArchive;
+@property (readonly) TSUZipFileArchive *componentZipArchive;
+@property (nonatomic, readonly) SFUCryptoKey *decryptionKey;
+@property (nonatomic, readonly) TSPDocumentProperties *documentProperties;
+@property (nonatomic, readonly) <TSPFileCoordinatorDelegate> *fileCoordinatorDelegate;
+@property (nonatomic, readonly) unsigned long long fileFormatVersion;
+@property (nonatomic, readonly) bool isClosed;
+@property (nonatomic, readonly) bool isPasswordProtected;
+@property (readonly) NSError *lastReloadError;
+@property (nonatomic, readonly) unsigned char packageIdentifier;
+@property (nonatomic, readonly) long long packageType;
+@property (nonatomic, readonly) NSString *passwordHint;
+@property (nonatomic, readonly) NSData *passwordVerifier;
+@property (retain) TSUZipFileArchive *zipArchive;
 
 + (id)dataEntryPathForFilename:(id)arg1;
 + (bool)isValidPackageAtURL:(id)arg1;

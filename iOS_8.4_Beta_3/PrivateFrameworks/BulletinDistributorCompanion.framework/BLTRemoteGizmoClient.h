@@ -6,11 +6,11 @@
     <BLTCompanionServer> *_server;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <BLTCompanionServer> * server;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <BLTCompanionServer> *server;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)addBulletin:(id)arg1 playLightsAndSirens:(bool)arg2;

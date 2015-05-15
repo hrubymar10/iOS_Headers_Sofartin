@@ -11,12 +11,12 @@
     bool notifyUsingAssetsdNotificationCenter;
 }
 
-@property(assign,readwrite) float currentMultiplier;
-@property(assign,readwrite) float currentTotal;
-@property(assign,readwrite) id delegate;
-@property(assign,retain) NSString * mediaPathString;
-@property(assign,retain) NSMutableArray * multipliers;
-@property(assign,readwrite) bool notifyUsingAssetsdNotificationCenter;
+@property (nonatomic) float currentMultiplier;
+@property (nonatomic) float currentTotal;
+@property (nonatomic) id delegate;
+@property (nonatomic, retain) NSString *mediaPathString;
+@property (nonatomic, retain) NSMutableArray *multipliers;
+@property (nonatomic) bool notifyUsingAssetsdNotificationCenter;
 
 + (id)unarchiveFromDictionary:(id)arg1;
 

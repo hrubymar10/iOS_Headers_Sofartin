@@ -9,10 +9,10 @@
     unsigned long long _version;
 }
 
-@property(assign,readonly) NSDictionary * cachedDataMap;
-@property(assign,readonly) NSDictionary * objectUUIDToIdentifierDictionary;
-@property(assign,readonly) long long rootObjectIdentifier;
-@property(assign,readonly) unsigned long long version;
+@property (nonatomic, readonly) NSDictionary *cachedDataMap;
+@property (nonatomic, readonly) NSDictionary *objectUUIDToIdentifierDictionary;
+@property (nonatomic, readonly) long long rootObjectIdentifier;
+@property (nonatomic, readonly) unsigned long long version;
 
 - (void).cxx_destruct;
 - (id)cachedDataMap;

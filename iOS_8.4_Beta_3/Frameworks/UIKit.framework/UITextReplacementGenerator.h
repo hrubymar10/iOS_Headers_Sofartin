@@ -7,8 +7,8 @@
     NSString *_stringToReplace;
 }
 
-@property(assign,retain) UITextRange * replacementRange;
-@property(assign,copy) NSString * stringToReplace;
+@property (nonatomic, retain) UITextRange *replacementRange;
+@property (nonatomic, copy) NSString *stringToReplace;
 
 - (void)addPlaceholderForEmptyReplacements:(id)arg1;
 - (void)dealloc;

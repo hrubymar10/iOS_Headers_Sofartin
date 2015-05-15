@@ -8,9 +8,9 @@
     NSNumber *_sequenceNumber;
 }
 
-@property(assign,readonly) NSUUID * UUID;
-@property(assign,readonly) NSArray * applications;
-@property(assign,readonly) NSNumber * sequenceNumber;
+@property (nonatomic, readonly) NSUUID *UUID;
+@property (nonatomic, readonly) NSArray *applications;
+@property (nonatomic, readonly) NSNumber *sequenceNumber;
 
 + (bool)supportsSecureCoding;
 

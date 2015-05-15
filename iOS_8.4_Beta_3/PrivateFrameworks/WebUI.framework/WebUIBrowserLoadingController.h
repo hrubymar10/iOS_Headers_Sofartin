@@ -28,18 +28,18 @@
     NSString *_userTypedAddress;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,readonly) NSString * URLString;
-@property(assign,retain) UIWebBrowserView * browserView;
-@property(assign,readonly) bool canGoBack;
-@property(assign,readonly) bool canGoForward;
-@property(assign,readwrite) <WebUIBrowserLoadingControllerDelegate> * delegate;
-@property(assign,readwrite) float estimatedProgress;
-@property(getter=isLoading,assign,readonly) bool loading;
-@property(assign,readwrite) long long loadingState;
-@property(getter=isSecure,assign,readonly) bool secure;
-@property(getter=isSimulatingClick,assign,readonly) bool simulatingClick;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic, readonly) NSString *URLString;
+@property (nonatomic, retain) UIWebBrowserView *browserView;
+@property (nonatomic, readonly) bool canGoBack;
+@property (nonatomic, readonly) bool canGoForward;
+@property (nonatomic) <WebUIBrowserLoadingControllerDelegate> *delegate;
+@property (nonatomic) float estimatedProgress;
+@property (getter=isLoading, nonatomic, readonly) bool loading;
+@property (nonatomic) long long loadingState;
+@property (getter=isSecure, nonatomic, readonly) bool secure;
+@property (getter=isSimulatingClick, nonatomic, readonly) bool simulatingClick;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)URL;

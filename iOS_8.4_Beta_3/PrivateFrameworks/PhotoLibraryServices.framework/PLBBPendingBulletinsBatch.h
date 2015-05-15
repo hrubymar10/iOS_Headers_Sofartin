@@ -14,9 +14,9 @@
     NSMutableArray *_pendingBulletins;
 }
 
-@property(assign,readonly) bool canAcceptMergeBulletins;
-@property(assign,readonly) bool canAcceptNewBulletins;
-@property(assign,readwrite) <PLBBPendingBulletinsBatchDelegate> * delegate;
+@property (readonly) bool canAcceptMergeBulletins;
+@property (readonly) bool canAcceptNewBulletins;
+@property <PLBBPendingBulletinsBatchDelegate> *delegate;
 
 - (void)_cancelCoalescingTimer;
 - (void)_cancelDownloadTimer;

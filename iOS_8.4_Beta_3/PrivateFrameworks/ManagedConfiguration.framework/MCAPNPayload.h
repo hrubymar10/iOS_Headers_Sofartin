@@ -7,7 +7,7 @@
     bool _wasInstalled;
 }
 
-@property(assign,readwrite) bool wasInstalled;
+@property (nonatomic) bool wasInstalled;
 
 + (id)apnDomainName;
 + (id)localizedPluralForm;

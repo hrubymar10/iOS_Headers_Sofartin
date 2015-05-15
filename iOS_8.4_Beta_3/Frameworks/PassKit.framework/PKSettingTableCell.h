@@ -8,10 +8,10 @@
     id _target;
 }
 
-@property(assign,readonly) SEL action;
-@property(getter=isOn,assign,readwrite) bool on;
-@property(assign,readwrite) UISwitch * settingSwitch;
-@property(assign,readonly) id target;
+@property (nonatomic, readonly) SEL action;
+@property (getter=isOn, nonatomic) bool on;
+@property (nonatomic) UISwitch *settingSwitch;
+@property (nonatomic, readonly) id target;
 
 - (SEL)action;
 - (void)dealloc;

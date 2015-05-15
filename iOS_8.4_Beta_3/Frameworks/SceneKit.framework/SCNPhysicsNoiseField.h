@@ -7,8 +7,8 @@
     double _smoothness;
 }
 
-@property(assign,readwrite) double animationSpeed;
-@property(assign,readwrite) double smoothness;
+@property (nonatomic) double animationSpeed;
+@property (nonatomic) double smoothness;
 
 + (id)SCNJSExportProtocol;
 + (bool)supportsSecureCoding;

@@ -9,10 +9,10 @@
     id _target;
 }
 
-@property(assign,readwrite) SEL actionSelector;
-@property(assign,readwrite) unsigned long long displayDidRefreshCount;
-@property(assign,readwrite) unsigned long long frameInterval;
-@property(assign,retain) id target;
+@property (nonatomic) SEL actionSelector;
+@property (nonatomic) unsigned long long displayDidRefreshCount;
+@property (nonatomic) unsigned long long frameInterval;
+@property (nonatomic, retain) id target;
 
 - (SEL)actionSelector;
 - (void)dealloc;

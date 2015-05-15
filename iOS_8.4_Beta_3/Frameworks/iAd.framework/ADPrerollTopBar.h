@@ -12,13 +12,13 @@
     UIStatusBar *_statusBar;
 }
 
-@property(assign,readwrite) <ADPrerollTopBarDelegate> * delegate;
-@property(assign,retain) ADPrerollButton * doneButton;
-@property(assign,readwrite) bool isFullscreen;
-@property(assign,readwrite) bool layoutForExpandedSize;
-@property(assign,retain) ADProgressView * progressView;
-@property(assign,retain) ADPrerollButton * scaleToFillButton;
-@property(assign,retain) UIStatusBar * statusBar;
+@property (nonatomic) <ADPrerollTopBarDelegate> *delegate;
+@property (nonatomic, retain) ADPrerollButton *doneButton;
+@property (nonatomic) bool isFullscreen;
+@property (nonatomic) bool layoutForExpandedSize;
+@property (nonatomic, retain) ADProgressView *progressView;
+@property (nonatomic, retain) ADPrerollButton *scaleToFillButton;
+@property (nonatomic, retain) UIStatusBar *statusBar;
 
 - (void)_doneButtonTapped:(id)arg1;
 - (void)_scaleToFillButtonTapped:(id)arg1;

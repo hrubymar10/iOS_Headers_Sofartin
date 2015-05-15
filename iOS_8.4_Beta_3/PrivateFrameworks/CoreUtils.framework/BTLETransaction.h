@@ -10,13 +10,13 @@
     bool _waitingToUpdate;
 }
 
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * replyCharacteristic;
-@property(assign,copy) NSData * replyData;
-@property(assign,retain) CBATTRequest * request;
-@property(assign,readonly) NSString * requestCharacteristic;
-@property(assign,copy) NSData * requestData;
-@property(assign,readwrite) bool waitingToUpdate;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSString *replyCharacteristic;
+@property (nonatomic, copy) NSData *replyData;
+@property (nonatomic, retain) CBATTRequest *request;
+@property (nonatomic, readonly) NSString *requestCharacteristic;
+@property (nonatomic, copy) NSData *requestData;
+@property (nonatomic) bool waitingToUpdate;
 
 - (void)dealloc;
 - (id)identifier;

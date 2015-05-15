@@ -20,21 +20,21 @@
     bool _storageReady;
 }
 
-@property(assign,retain) PLSQLiteConnection * connection;
-@property(assign,retain) PLKQueue * crashReporterKQueue;
-@property(assign,retain) PLNSNotificationOperatorComposition * dailyTaskNotification;
-@property(assign,retain) PLNSTimerOperatorComposition * dailyTaskTimer;
-@property(assign,retain) PLCFNotificationOperatorComposition * keybagFirstUnlockNotification;
-@property(assign,retain) PLStorageCache * lastEntryCache;
-@property(assign,retain) NSString * mainDBInCRFolderUUIDString;
-@property(assign,retain) PLNSTimerOperatorComposition * periodicCheckpointTimer;
-@property(assign,retain) NSMutableDictionary * processIDCache;
-@property(assign,retain) PLKQueue * profileDefaultsKQueue;
-@property(assign,retain) NSMutableSet * safeCopyInProgress;
-@property(assign,retain) PLXPCResponderOperatorComposition * safeFileResponder;
-@property(assign,readwrite) bool storageLocked;
-@property(assign,retain) PLStorageOperator * storageOperator;
-@property(assign,readwrite) bool storageReady;
+@property (retain) PLSQLiteConnection *connection;
+@property (retain) PLKQueue *crashReporterKQueue;
+@property (retain) PLNSNotificationOperatorComposition *dailyTaskNotification;
+@property (retain) PLNSTimerOperatorComposition *dailyTaskTimer;
+@property (retain) PLCFNotificationOperatorComposition *keybagFirstUnlockNotification;
+@property (retain) PLStorageCache *lastEntryCache;
+@property (nonatomic, retain) NSString *mainDBInCRFolderUUIDString;
+@property (retain) PLNSTimerOperatorComposition *periodicCheckpointTimer;
+@property (nonatomic, retain) NSMutableDictionary *processIDCache;
+@property (retain) PLKQueue *profileDefaultsKQueue;
+@property (retain) NSMutableSet *safeCopyInProgress;
+@property (retain) PLXPCResponderOperatorComposition *safeFileResponder;
+@property (nonatomic) bool storageLocked;
+@property (retain) PLStorageOperator *storageOperator;
+@property bool storageReady;
 
 + (id)allOperatorTableFiltersForRolloverDate:(id)arg1;
 + (id)mainDBinCRFolderPath;

@@ -6,7 +6,7 @@
     NSMapTable *_invalidationContextTable;
 }
 
-@property(getter=_invalidationContextTable,setter=_setInvalidationContextTable:,assign,retain) NSMapTable * invalidationContextTable;
+@property (getter=_invalidationContextTable, setter=_setInvalidationContextTable:, nonatomic, retain) NSMapTable *invalidationContextTable;
 
 - (id)_invalidationContextTable;
 - (void)_setInvalidationContextTable:(id)arg1;

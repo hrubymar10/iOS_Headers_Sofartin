@@ -30,26 +30,26 @@
     bool _usesBlurredBackground;
 }
 
-@property(assign,readwrite) bool alwaysDispatchesScrollEvents;
-@property(assign,retain) UIColor * backgroundColor;
-@property(assign,copy) NSDictionary * contextDictionary;
-@property(getter=isDoubleTapEnabled,assign,readwrite) bool doubleTapEnabled;
-@property(getter=isEmbedded,assign,readwrite) bool embedded;
-@property(assign,readwrite) bool flashesScrollIndicators;
-@property(assign,readwrite) bool inputViewObeysDOMFocus;
-@property(assign,readwrite) long long loadingIndicatorStyle;
-@property(assign,retain) UIColor * loadingTextColor;
-@property(assign,retain) UIColor * loadingTextShadowColor;
-@property(assign,retain) SUGradient * placeholderBackgroundGradient;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } scrollContentInsets;
-@property(getter=isScrollingDisabled,assign,readwrite) bool scrollingDisabled;
-@property(assign,readwrite) bool shouldLoadProgressively;
-@property(assign,readwrite) bool shouldShowFormAccessory;
-@property(assign,readwrite) bool showsBackgroundShadow;
-@property(assign,readwrite) bool showsHorizontalScrollIndicator;
-@property(assign,readwrite) bool showsVerticalScrollIndicator;
-@property(assign,retain) UIColor * topExtensionColor;
-@property(assign,readwrite) bool usesBlurredBackground;
+@property (nonatomic) bool alwaysDispatchesScrollEvents;
+@property (nonatomic, retain) UIColor *backgroundColor;
+@property (nonatomic, copy) NSDictionary *contextDictionary;
+@property (getter=isDoubleTapEnabled, nonatomic) bool doubleTapEnabled;
+@property (getter=isEmbedded, nonatomic) bool embedded;
+@property (nonatomic) bool flashesScrollIndicators;
+@property (nonatomic) bool inputViewObeysDOMFocus;
+@property (nonatomic) long long loadingIndicatorStyle;
+@property (nonatomic, retain) UIColor *loadingTextColor;
+@property (nonatomic, retain) UIColor *loadingTextShadowColor;
+@property (nonatomic, retain) SUGradient *placeholderBackgroundGradient;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } scrollContentInsets;
+@property (getter=isScrollingDisabled, nonatomic) bool scrollingDisabled;
+@property (nonatomic) bool shouldLoadProgressively;
+@property (nonatomic) bool shouldShowFormAccessory;
+@property (nonatomic) bool showsBackgroundShadow;
+@property (nonatomic) bool showsHorizontalScrollIndicator;
+@property (nonatomic) bool showsVerticalScrollIndicator;
+@property (nonatomic, retain) UIColor *topExtensionColor;
+@property (nonatomic) bool usesBlurredBackground;
 
 - (bool)alwaysDispatchesScrollEvents;
 - (id)backgroundColor;

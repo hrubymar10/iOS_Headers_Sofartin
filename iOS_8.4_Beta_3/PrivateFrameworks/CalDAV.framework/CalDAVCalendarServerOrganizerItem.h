@@ -7,8 +7,8 @@
     CoreDAVHrefItem *_href;
 }
 
-@property(assign,retain) CoreDAVLeafItem * commonName;
-@property(assign,retain) CoreDAVHrefItem * href;
+@property (nonatomic, retain) CoreDAVLeafItem *commonName;
+@property (nonatomic, retain) CoreDAVHrefItem *href;
 
 - (id)commonName;
 - (id)copyParseRules;

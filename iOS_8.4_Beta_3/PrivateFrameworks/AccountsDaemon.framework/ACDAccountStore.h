@@ -19,21 +19,21 @@
     ACRemoteDeviceProxy *_remoteDeviceProxy;
 }
 
-@property(assign,retain) ACDAccessPluginManager * accessPluginManager;
-@property(assign,retain) ACDAuthenticationDialogManager * authenticationDialogManager;
-@property(assign,retain) ACDAuthenticationPluginManager * authenticationPluginManager;
-@property(assign,readonly) ACDClientAuthorizationManager * authorizationManager;
-@property(assign,readwrite) ACDClient * client;
-@property(assign,retain) ACDDataclassOwnersManager * dataclassOwnersManager;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <ACDAccountStoreDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) ACDAccountStoreFilter * filter;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isMigrationInProgress,assign,readwrite) bool migrationInProgress;
-@property(assign,readwrite) bool notificationsEnabled;
-@property(assign,retain) ACRemoteDeviceProxy * remoteDeviceProxy;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) ACDAccessPluginManager *accessPluginManager;
+@property (nonatomic, retain) ACDAuthenticationDialogManager *authenticationDialogManager;
+@property (nonatomic, retain) ACDAuthenticationPluginManager *authenticationPluginManager;
+@property (nonatomic, readonly) ACDClientAuthorizationManager *authorizationManager;
+@property (nonatomic) ACDClient *client;
+@property (nonatomic, retain) ACDDataclassOwnersManager *dataclassOwnersManager;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <ACDAccountStoreDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) ACDAccountStoreFilter *filter;
+@property (readonly) unsigned long long hash;
+@property (getter=isMigrationInProgress, nonatomic) bool migrationInProgress;
+@property (nonatomic) bool notificationsEnabled;
+@property (nonatomic, retain) ACRemoteDeviceProxy *remoteDeviceProxy;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_accountTypeWithIdentifier:(id)arg1;

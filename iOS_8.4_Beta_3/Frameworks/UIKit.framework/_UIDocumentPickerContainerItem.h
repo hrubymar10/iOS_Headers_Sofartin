@@ -15,21 +15,21 @@
     _UIDocumentPickerContainerModel *_weak_parentModel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) id item;
-@property(assign,retain) _UIDocumentPickerContainerModel * model;
-@property(assign,readwrite) _UIDocumentPickerContainerModel * parentModel;
-@property(assign,readwrite) bool pickable;
-@property(assign,readonly) NSDate * sortDate;
-@property(assign,retain) NSString * subtitle;
-@property(assign,retain) NSString * subtitle2;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMapTable * thumbnailsBySize;
-@property(assign,retain) NSString * title;
-@property(assign,readonly) long long type;
-@property(assign,retain) NSURL * url;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) id item;
+@property (nonatomic, readonly, retain) _UIDocumentPickerContainerModel *model;
+@property (nonatomic) _UIDocumentPickerContainerModel *parentModel;
+@property (nonatomic) bool pickable;
+@property (nonatomic, readonly) NSDate *sortDate;
+@property (nonatomic, readonly, retain) NSString *subtitle;
+@property (nonatomic, readonly, retain) NSString *subtitle2;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMapTable *thumbnailsBySize;
+@property (nonatomic, readonly, retain) NSString *title;
+@property (nonatomic, readonly) long long type;
+@property (nonatomic, readonly, retain) NSURL *url;
 
 + (id)_lruThumbnailArray;
 + (void)clearLRUThumbnailCache;

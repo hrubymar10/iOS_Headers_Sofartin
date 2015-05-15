@@ -19,22 +19,22 @@
     id _nonLocalVersion;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(getter=_isBackup,assign,readonly) bool _isBackup;
-@property(getter=isConflict,assign,readonly) bool conflict;
-@property(getter=isDiscardable,assign,readwrite) bool discardable;
-@property(assign,copy) NSString * etag;
-@property(assign,readonly) bool hasLocalContents;
-@property(assign,readonly) bool hasThumbnail;
-@property(assign,copy) NSString * localizedName;
-@property(assign,copy) NSString * localizedNameOfSavingComputer;
-@property(assign,copy) NSDate * modificationDate;
-@property(assign,copy) NSString * originalPOSIXName;
-@property(assign,copy) NSString * originatorName;
-@property(assign,retain) <NSCoding> * persistentIdentifier;
-@property(getter=isResolved,assign,readwrite) bool resolved;
-@property(assign,readonly) unsigned long long size;
-@property(getter=isUbiquitous,assign,readonly) bool ubiquitous;
+@property (readonly, copy) NSURL *URL;
+@property (getter=_isBackup, readonly) bool _isBackup;
+@property (getter=isConflict, readonly) bool conflict;
+@property (getter=isDiscardable) bool discardable;
+@property (readonly, copy) NSString *etag;
+@property (readonly) bool hasLocalContents;
+@property (readonly) bool hasThumbnail;
+@property (readonly, copy) NSString *localizedName;
+@property (readonly, copy) NSString *localizedNameOfSavingComputer;
+@property (readonly, copy) NSDate *modificationDate;
+@property (readonly, copy) NSString *originalPOSIXName;
+@property (readonly, copy) NSString *originatorName;
+@property (readonly, retain) <NSCoding> *persistentIdentifier;
+@property (getter=isResolved) bool resolved;
+@property (readonly) unsigned long long size;
+@property (getter=isUbiquitous, readonly) bool ubiquitous;
 
 + (void*)_addConflictObserverForItemAtURL:(id)arg1 statusChangedHandler:(id)arg2;
 + (id)_addVersionOfItemAtURL:(id)arg1 withContentsOfURL:(id)arg2 options:(unsigned long long)arg3 temporaryStorageIdentifier:(id*)arg4 error:(id*)arg5;

@@ -7,8 +7,8 @@
     unsigned long long _feeds;
 }
 
-@property(assign,retain) NSDate * expiration;
-@property(assign,readonly) unsigned long long feeds;
+@property (nonatomic, readonly, retain) NSDate *expiration;
+@property (nonatomic, readonly) unsigned long long feeds;
 
 - (void)addFeeds:(unsigned long long)arg1;
 - (void)dealloc;

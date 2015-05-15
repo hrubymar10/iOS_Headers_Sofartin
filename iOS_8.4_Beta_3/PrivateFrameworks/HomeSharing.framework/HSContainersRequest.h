@@ -6,7 +6,7 @@
     bool _shouldParseResponse;
 }
 
-@property(assign,readwrite) bool shouldParseResponse;
+@property (nonatomic) bool shouldParseResponse;
 
 + (id)requestWithDatabaseID:(unsigned int)arg1;
 

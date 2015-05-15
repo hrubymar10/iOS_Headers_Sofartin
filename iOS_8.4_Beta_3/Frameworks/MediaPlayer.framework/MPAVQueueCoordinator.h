@@ -24,13 +24,13 @@
     NSMutableSet *_reusableItems;
 }
 
-@property(assign,readonly) unsigned long long activeQueueDepth;
-@property(assign,readonly) MPAVItem * currentItem;
-@property(assign,readonly) <MPAVQueueCoordinatorDataSource> * dataSource;
-@property(assign,copy) id equilibriumAchievedHandler;
-@property(assign,readonly) NSArray * items;
-@property(assign,readwrite) unsigned long long maximumQueueDepth;
-@property(assign,readonly) MPQueuePlayer * player;
+@property (nonatomic, readonly) unsigned long long activeQueueDepth;
+@property (nonatomic, readonly) MPAVItem *currentItem;
+@property (nonatomic, readonly) <MPAVQueueCoordinatorDataSource> *dataSource;
+@property (nonatomic, copy) id equilibriumAchievedHandler;
+@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic) unsigned long long maximumQueueDepth;
+@property (nonatomic, readonly) MPQueuePlayer *player;
 
 - (void).cxx_destruct;
 - (void)_beginBackgroundTaskAssertion;

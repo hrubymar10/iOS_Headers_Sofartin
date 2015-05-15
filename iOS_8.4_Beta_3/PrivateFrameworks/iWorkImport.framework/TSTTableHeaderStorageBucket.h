@@ -7,11 +7,11 @@
     struct map<unsigned int, SFUtility::ObjcSharedPtr<NSObject>, std::__1::less<unsigned int>, std::__1::allocator<std::__1::pair<const unsigned int, SFUtility::ObjcSharedPtr<NSObject> > > > { struct __tree<std::__1::__value_type<unsigned int, SFUtility::ObjcSharedPtr<NSObject> >, std::__1::__map_value_compare<unsigned int, std::__1::__value_type<unsigned int, SFUtility::ObjcSharedPtr<NSObject> >, std::__1::less<unsigned int>, true>, std::__1::allocator<std::__1::__value_type<unsigned int, SFUtility::ObjcSharedPtr<NSObject> > > > { struct __tree_node<std::__1::__value_type<unsigned int, SFUtility::ObjcSharedPtr<NSObject> >, void *> {} *x_1_1_1; struct __compressed_pair<std::__1::__tree_end_node<std::__1::__tree_node_base<void *> *>, std::__1::allocator<std::__1::__tree_node<std::__1::__value_type<unsigned int, SFUtility::ObjcSharedPtr<NSObject> >, void *> > > { struct __tree_end_node<std::__1::__tree_node_base<void *> *> { struct __tree_node_base<void *> {} *x_1_3_1; } x_2_2_1; } x_1_1_2; struct __compressed_pair<unsigned long, std::__1::__map_value_compare<unsigned int, std::__1::__value_type<unsigned int, SFUtility::ObjcSharedPtr<NSObject> >, std::__1::less<unsigned int>, true> > { unsigned long long x_3_2_1; } x_1_1_3; } x1; } *mMap;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double horizontalScaleFactor;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double horizontalScaleFactor;
+@property (readonly) Class superclass;
 
 - (long long)count;
 - (void)dealloc;

@@ -7,8 +7,8 @@
     TZFileSystemInterface *_fileSystemInterface;
 }
 
-@property(assign,retain) NSXPCConnection * connectionToService;
-@property(assign,retain) TZFileSystemInterface * fileSystemInterface;
+@property (retain) NSXPCConnection *connectionToService;
+@property (retain) TZFileSystemInterface *fileSystemInterface;
 
 + (id)sharedInstance;
 

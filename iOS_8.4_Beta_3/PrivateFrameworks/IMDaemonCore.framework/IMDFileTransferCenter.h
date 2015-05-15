@@ -12,8 +12,8 @@
     NSMutableArray *_transferringTransfers;
 }
 
-@property(assign,retain) NSString * contextStamp;
-@property(assign,readonly) bool hasActiveFileTransfers;
+@property (nonatomic, retain) NSString *contextStamp;
+@property (nonatomic, readonly) bool hasActiveFileTransfers;
 
 + (id)sharedInstance;
 

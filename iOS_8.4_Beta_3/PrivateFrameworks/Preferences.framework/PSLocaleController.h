@@ -15,15 +15,15 @@
     UITableView *_tableView;
 }
 
-@property(assign,retain) PSRegion * currentRegion;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSArray * filteredListContent;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PSLocaleSelector * localeSelector;
-@property(assign,retain) NSArray * regionsList;
-@property(assign,retain) NSArray * sections;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) PSRegion *currentRegion;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSArray *filteredListContent;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PSLocaleSelector *localeSelector;
+@property (nonatomic, retain) NSArray *regionsList;
+@property (nonatomic, retain) NSArray *sections;
+@property (readonly) Class superclass;
 
 - (id)_mainContentView;
 - (id)currentRegion;

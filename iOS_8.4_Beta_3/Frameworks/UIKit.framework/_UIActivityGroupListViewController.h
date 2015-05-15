@@ -10,11 +10,11 @@
     NSArray *_visibleActivityGroupViewControllers;
 }
 
-@property(assign,copy) NSArray * activityGroupViewControllers;
-@property(assign,readwrite) bool darkStyleOnLegacyApp;
-@property(getter=isEmbedded,assign,readwrite) bool embedded;
-@property(assign,retain) UILabel * placeholderLabel;
-@property(assign,copy) NSArray * visibleActivityGroupViewControllers;
+@property (nonatomic, copy) NSArray *activityGroupViewControllers;
+@property (nonatomic) bool darkStyleOnLegacyApp;
+@property (getter=isEmbedded, nonatomic) bool embedded;
+@property (nonatomic, retain) UILabel *placeholderLabel;
+@property (nonatomic, copy) NSArray *visibleActivityGroupViewControllers;
 
 - (id)activityGroupViewControllers;
 - (id)collectionView:(id)arg1 cellForItemAtIndexPath:(id)arg2;

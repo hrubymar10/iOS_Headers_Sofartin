@@ -20,17 +20,17 @@
     UIDelayedAction *ignoreTouch;
 }
 
-@property(assign,readwrite) double angle;
-@property(assign,readwrite) bool canBeginDrag;
-@property(assign,readwrite) SEL checkCanBeginDrag;
-@property(assign,retain) UIDelayedAction * ignoreTouch;
-@property(assign,readwrite) double maximumDeviation;
-@property(assign,readwrite) double minimumDistance;
-@property(assign,readwrite) double quietPeriod;
-@property(assign,readwrite) bool restrictsToAngle;
-@property(assign,readwrite) double startAngle;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } startPosition;
-@property(assign,retain) UITouch * touch;
+@property (nonatomic) double angle;
+@property (nonatomic) bool canBeginDrag;
+@property (nonatomic) SEL checkCanBeginDrag;
+@property (nonatomic, retain) UIDelayedAction *ignoreTouch;
+@property (nonatomic) double maximumDeviation;
+@property (nonatomic) double minimumDistance;
+@property (nonatomic) double quietPeriod;
+@property (nonatomic) bool restrictsToAngle;
+@property (nonatomic) double startAngle;
+@property (nonatomic) struct CGPoint { double x1; double x2; } startPosition;
+@property (nonatomic, retain) UITouch *touch;
 
 - (void)_resetGestureRecognizer;
 - (double)angle;

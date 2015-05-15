@@ -8,9 +8,9 @@
     long long _scope;
 }
 
-@property(assign,retain) CKDClientContext * context;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readwrite) long long scope;
+@property (nonatomic, retain) CKDClientContext *context;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic) long long scope;
 
 - (void).cxx_destruct;
 - (bool)_cachedRecordHasValidAssets:(id)arg1 forRequiredKeys:(id)arg2;

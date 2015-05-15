@@ -28,10 +28,10 @@
     } mSize;
 }
 
-@property(assign,readonly) <TSCH3DRenderBufferAllocator> * colorAllocator;
-@property(assign,readonly) <TSCH3DRenderBufferAllocator> * depthAllocator;
-@property(assign,readonly) struct FramebufferAttributes { int x1; long long x2; int x3; int x4; int x5; bool x6; bool x7; } framebufferAttributes;
-@property(assign,readonly) struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; } size;
+@property (nonatomic, readonly) <TSCH3DRenderBufferAllocator> *colorAllocator;
+@property (nonatomic, readonly) <TSCH3DRenderBufferAllocator> *depthAllocator;
+@property (nonatomic, readonly) struct FramebufferAttributes { int x1; long long x2; int x3; int x4; int x5; bool x6; bool x7; } framebufferAttributes;
+@property (nonatomic, readonly) struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; } size;
 
 + (unsigned long long)estimatedMemoryInBytesForSize:(struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; })arg1 samples:(unsigned long long)arg2 hasColorbuffer:(bool)arg3 hasDepthbuffer:(bool)arg4;
 + (id)loaderWithFramebufferAttributes:(const struct FramebufferAttributes { int x1; long long x2; int x3; int x4; int x5; bool x6; bool x7; }*)arg1 size:(const struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; }*)arg2 colorAllocator:(id)arg3 depthAllocator:(id)arg4;

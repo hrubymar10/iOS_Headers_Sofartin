@@ -4,17 +4,17 @@
 
 @interface SALocalSearchMapViewport : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double eastLongitude;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double northLatitude;
-@property(assign,readwrite) double southLatitude;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double timeInSecondsSinceViewportChanged;
-@property(assign,readwrite) double timeInSecondsSinceViewportEnteredForeground;
-@property(assign,copy) NSArray * vertices;
-@property(assign,readwrite) double westLongitude;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double eastLongitude;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double northLatitude;
+@property (nonatomic) double southLatitude;
+@property (readonly) Class superclass;
+@property (nonatomic) double timeInSecondsSinceViewportChanged;
+@property (nonatomic) double timeInSecondsSinceViewportEnteredForeground;
+@property (nonatomic, copy) NSArray *vertices;
+@property (nonatomic) double westLongitude;
 
 + (id)mapViewport;
 + (id)mapViewportWithDictionary:(id)arg1 context:(id)arg2;

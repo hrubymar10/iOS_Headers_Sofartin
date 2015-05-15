@@ -21,24 +21,24 @@
     BRCTransferStream *_uploader;
 }
 
-@property(assign,readonly) NSString * admissionTicket;
-@property(assign,readonly) BRCThrottleBase * applyThrottle;
-@property(assign,readonly) CKContainer * ckContainer;
-@property(assign,readonly) NSString * contextIdentifier;
-@property(assign,readonly) CDBudget * dataBudget;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) BRCUserDefaults * defaults;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) BRCThrottleBase * downloadThrottle;
-@property(assign,readonly) BRCTransferStream * downloader;
-@property(assign,readonly) CDBudget * energyBudget;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isShared;
-@property(assign,readonly) BRCThrottleBase * readerThrottle;
-@property(assign,readonly) BRCAccountSession * session;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) BRCThrottleBase * uploadThrottle;
-@property(assign,readonly) BRCTransferStream * uploader;
+@property (nonatomic, readonly) NSString *admissionTicket;
+@property (nonatomic, readonly) BRCThrottleBase *applyThrottle;
+@property (nonatomic, readonly) CKContainer *ckContainer;
+@property (nonatomic, readonly) NSString *contextIdentifier;
+@property (nonatomic, readonly) CDBudget *dataBudget;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) BRCUserDefaults *defaults;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) BRCThrottleBase *downloadThrottle;
+@property (nonatomic, readonly) BRCTransferStream *downloader;
+@property (nonatomic, readonly) CDBudget *energyBudget;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isShared;
+@property (nonatomic, readonly) BRCThrottleBase *readerThrottle;
+@property (nonatomic, readonly) BRCAccountSession *session;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) BRCThrottleBase *uploadThrottle;
+@property (nonatomic, readonly) BRCTransferStream *uploader;
 
 + (id)contextIdentifierForZone:(id)arg1;
 

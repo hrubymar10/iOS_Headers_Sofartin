@@ -14,18 +14,18 @@
     UIView *_webViewContainer;
 }
 
-@property(assign,readwrite) UIView * bottomSeparator;
-@property(assign,retain) APDDataManager * dataManager;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <APDGlossaryViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool displayAsModal;
-@property(assign,readwrite) UIButton * doneButton;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) APDNavigationTopic * navigationTopic;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSArray * viewInterfaceOrientations;
-@property(assign,readwrite) UIView * webViewContainer;
+@property (nonatomic) UIView *bottomSeparator;
+@property (nonatomic, retain) APDDataManager *dataManager;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <APDGlossaryViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool displayAsModal;
+@property (nonatomic) UIButton *doneButton;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) APDNavigationTopic *navigationTopic;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSArray *viewInterfaceOrientations;
+@property (nonatomic) UIView *webViewContainer;
 
 - (void).cxx_destruct;
 - (id)bottomSeparator;

@@ -6,7 +6,7 @@
     UIView *_loadingIndicator;
 }
 
-@property(assign,retain) UIView * loadingIndicator;
+@property (nonatomic, retain) UIView *loadingIndicator;
 
 + (double)defaultCellHeight;
 

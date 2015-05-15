@@ -12,8 +12,8 @@
     NSString *_selectedLabel;
 }
 
-@property(assign,readwrite) bool didCreateNewLabel;
-@property(assign,retain) NSString * selectedLabel;
+@property (nonatomic) bool didCreateNewLabel;
+@property (nonatomic, retain) NSString *selectedLabel;
 
 - (bool)_allowsAutorotation;
 - (void)_getRotationContentSettings:(struct { bool x1; bool x2; bool x3; bool x4; bool x5; double x6; int x7; }*)arg1;

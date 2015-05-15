@@ -12,13 +12,13 @@
     bool _suppressMapMovement;
 }
 
-@property(assign,retain) UIView * attachmentsCollectionView;
-@property(assign,readwrite) double bottomPadding;
-@property(assign,retain) UIView * mapView;
-@property(assign,retain) UIView * nameField;
-@property(assign,readwrite) double navigationBarTopInset;
-@property(assign,readwrite) double scrollYOffset;
-@property(assign,readwrite) bool suppressMapMovement;
+@property (nonatomic, retain) UIView *attachmentsCollectionView;
+@property (nonatomic) double bottomPadding;
+@property (nonatomic, retain) UIView *mapView;
+@property (nonatomic, retain) UIView *nameField;
+@property (nonatomic) double navigationBarTopInset;
+@property (nonatomic) double scrollYOffset;
+@property (nonatomic) bool suppressMapMovement;
 
 - (id)attachmentsCollectionView;
 - (double)bottomPadding;

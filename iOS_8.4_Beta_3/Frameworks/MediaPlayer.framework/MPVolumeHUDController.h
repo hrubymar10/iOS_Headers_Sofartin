@@ -7,7 +7,7 @@
     NSMutableArray *_contexts;
 }
 
-@property(assign,readonly) id mainContext;
+@property (nonatomic, readonly) id mainContext;
 
 + (id)sharedInstance;
 

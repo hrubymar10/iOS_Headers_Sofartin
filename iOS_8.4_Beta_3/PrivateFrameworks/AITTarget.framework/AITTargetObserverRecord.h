@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readonly) id handler;
-@property(assign,readonly) id observer;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (readonly) id handler;
+@property (readonly) id observer;
+@property (readonly) NSObject<OS_dispatch_queue> *queue;
 
 + (id)recordForObserver:(id)arg1 queue:(id)arg2 block:(id)arg3;
 

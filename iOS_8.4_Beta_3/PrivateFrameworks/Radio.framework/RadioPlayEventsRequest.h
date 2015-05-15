@@ -7,7 +7,7 @@
     SSURLConnectionRequest *_request;
 }
 
-@property(assign,copy) RadioPlayEventCollection * playEventCollection;
+@property (nonatomic, readonly, copy) RadioPlayEventCollection *playEventCollection;
 
 - (void).cxx_destruct;
 - (id)deviceName;

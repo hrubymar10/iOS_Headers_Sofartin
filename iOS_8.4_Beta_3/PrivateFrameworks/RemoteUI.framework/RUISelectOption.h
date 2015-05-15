@@ -7,8 +7,8 @@
     NSString *_value;
 }
 
-@property(assign,retain) NSString * label;
-@property(assign,retain) NSString * value;
+@property (nonatomic, retain) NSString *label;
+@property (nonatomic, retain) NSString *value;
 
 - (void).cxx_destruct;
 - (id)label;

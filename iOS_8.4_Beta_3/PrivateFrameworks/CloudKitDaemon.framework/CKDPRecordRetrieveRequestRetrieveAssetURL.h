@@ -12,12 +12,12 @@
     int _type;
 }
 
-@property(assign,retain) CKDPRequestedFields * assetFields;
-@property(assign,readonly) bool hasAssetFields;
-@property(assign,readwrite) bool hasRequestedTTL;
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) long long requestedTTL;
-@property(assign,readwrite) int type;
+@property (nonatomic, retain) CKDPRequestedFields *assetFields;
+@property (nonatomic, readonly) bool hasAssetFields;
+@property (nonatomic) bool hasRequestedTTL;
+@property (nonatomic) bool hasType;
+@property (nonatomic) long long requestedTTL;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (id)assetFields;

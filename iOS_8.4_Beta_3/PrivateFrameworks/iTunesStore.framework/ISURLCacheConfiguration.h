@@ -8,9 +8,9 @@
     NSString *_persistentIdentifier;
 }
 
-@property(assign,readwrite) unsigned long long diskCapacity;
-@property(assign,readwrite) unsigned long long memoryCapacity;
-@property(assign,copy) NSString * persistentIdentifier;
+@property (nonatomic) unsigned long long diskCapacity;
+@property (nonatomic) unsigned long long memoryCapacity;
+@property (nonatomic, copy) NSString *persistentIdentifier;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

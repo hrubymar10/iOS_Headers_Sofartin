@@ -41,22 +41,22 @@
     } _topicNumbers;
 }
 
-@property(assign,retain) NSDictionary * anchoredAttachmentPositions;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } anchoredRange;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) <TSDHint> * firstChildHint;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } footnoteAutoNumberRange;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } footnoteLayoutRange;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <TSDHint> * lastChildHint;
-@property(assign,readonly) unsigned long long nextWidowPullsDownFromCharIndex;
-@property(assign,readwrite) int pageKind;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,readonly) unsigned long long startAnchoredCharIndex;
-@property(assign,readonly) unsigned long long startCharIndex;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{TSWPTopicNumberHints={map<const TSWPListStyle *' */ struct * topicNumbers; /* unknown property attribute:  true> >=Q}}}QQ} */
+@property (nonatomic, retain) NSDictionary *anchoredAttachmentPositions;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } anchoredRange;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) <TSDHint> *firstChildHint;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } footnoteAutoNumberRange;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } footnoteLayoutRange;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <TSDHint> *lastChildHint;
+@property (nonatomic, readonly) unsigned long long nextWidowPullsDownFromCharIndex;
+@property (nonatomic) int pageKind;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic, readonly) unsigned long long startAnchoredCharIndex;
+@property (nonatomic, readonly) unsigned long long startCharIndex;
+@property (readonly) Class superclass;
+@property (nonatomic) /* Warning: unhandled struct encoding: '{TSWPTopicNumberHints={map<const TSWPListStyle *' */ struct *topicNumbers; /* unknown property attribute:  true> >=Q}}}QQ} */
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

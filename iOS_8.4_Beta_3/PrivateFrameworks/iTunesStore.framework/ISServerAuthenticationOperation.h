@@ -12,13 +12,13 @@
     ISDialogButton *_selectedButton;
 }
 
-@property(assign,retain) NSNumber * authenticatedAccountDSID;
-@property(assign,retain) SSAuthenticationContext * authenticationContext;
-@property(assign,retain) ISDialog * dialog;
-@property(assign,retain) ISDialogButton * performedButton;
-@property(assign,readwrite) bool performsButtonAction;
-@property(assign,retain) NSURL * redirectURL;
-@property(assign,retain) ISDialogButton * selectedButton;
+@property (retain) NSNumber *authenticatedAccountDSID;
+@property (retain) SSAuthenticationContext *authenticationContext;
+@property (retain) ISDialog *dialog;
+@property (retain) ISDialogButton *performedButton;
+@property bool performsButtonAction;
+@property (retain) NSURL *redirectURL;
+@property (retain) ISDialogButton *selectedButton;
 
 - (id)authenticatedAccountDSID;
 - (id)authenticationContext;

@@ -11,7 +11,7 @@
     bool _verticallyCenterTextViewIfLabelless;
 }
 
-@property(assign,readwrite) bool verticallyCenterTextViewIfLabelless;
+@property bool verticallyCenterTextViewIfLabelless;
 
 + (double)defaultLabelFontSize;
 + (double)defaultTextFontSize;

@@ -14,15 +14,15 @@
     bool _useExtendedAuthentication;
 }
 
-@property(assign,copy) NEDNSSettings * DNSSettings;
-@property(assign,readwrite) long long authenticationMethod;
-@property(assign,copy) NSArray * legacyExchangeMode;
-@property(assign,copy) NSArray * legacyProposals;
-@property(assign,copy) NSString * localIdentifier;
-@property(assign,copy) NSString * remoteIdentifier;
-@property(assign,copy) NEKeychainItem * sharedSecretKeychainItem;
-@property(assign,copy) NSData * sharedSecretReference;
-@property(assign,readwrite) bool useExtendedAuthentication;
+@property (copy) NEDNSSettings *DNSSettings;
+@property long long authenticationMethod;
+@property (copy) NSArray *legacyExchangeMode;
+@property (copy) NSArray *legacyProposals;
+@property (copy) NSString *localIdentifier;
+@property (copy) NSString *remoteIdentifier;
+@property (copy) NEKeychainItem *sharedSecretKeychainItem;
+@property (copy) NSData *sharedSecretReference;
+@property bool useExtendedAuthentication;
 
 + (bool)supportsSecureCoding;
 

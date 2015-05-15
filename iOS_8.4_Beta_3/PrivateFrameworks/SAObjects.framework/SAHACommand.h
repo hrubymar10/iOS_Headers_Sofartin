@@ -4,8 +4,8 @@
 
 @interface SAHACommand : SADomainCommand
 
-@property(assign,copy) NSArray * actions;
-@property(assign,retain) SAHAFilter * filter;
+@property (nonatomic, copy) NSArray *actions;
+@property (nonatomic, retain) SAHAFilter *filter;
 
 + (id)command;
 + (id)commandWithDictionary:(id)arg1 context:(id)arg2;

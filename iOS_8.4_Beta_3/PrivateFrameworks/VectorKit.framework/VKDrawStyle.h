@@ -262,8 +262,8 @@
     VKStyleManager *_styleManager;
 }
 
-@property(assign,readonly) float blendingFactor;
-@property(assign,readonly) id variant;
+@property (nonatomic, readonly) float blendingFactor;
+@property (nonatomic, readonly) id variant;
 
 + (int)renderStyleID;
 

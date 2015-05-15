@@ -6,7 +6,7 @@
     OCCDecryptor *mDecryptor;
 }
 
-@property(assign,readonly) OCCDecryptor * decryptor;
+@property (nonatomic, readonly) OCCDecryptor *decryptor;
 
 - (void)dealloc;
 - (id)decryptor;

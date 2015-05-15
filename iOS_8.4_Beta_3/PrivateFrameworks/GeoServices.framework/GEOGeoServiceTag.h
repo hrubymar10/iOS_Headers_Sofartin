@@ -10,9 +10,9 @@
     NSString *_tag;
 }
 
-@property(assign,readwrite) bool hasServiceType;
-@property(assign,readwrite) int serviceType;
-@property(assign,retain) NSString * tag;
+@property (nonatomic) bool hasServiceType;
+@property (nonatomic) int serviceType;
+@property (nonatomic, retain) NSString *tag;
 
 + (id)defaultTag;
 

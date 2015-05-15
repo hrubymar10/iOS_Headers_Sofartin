@@ -7,8 +7,8 @@
     long long _options;
 }
 
-@property(assign,retain) AFAlarm * criteria;
-@property(assign,readwrite) long long options;
+@property (nonatomic, retain) AFAlarm *criteria;
+@property (nonatomic) long long options;
 
 + (bool)supportsSecureCoding;
 

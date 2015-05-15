@@ -14,14 +14,14 @@
     UIKeyboardEmojiView *_touched;
 }
 
-@property(assign,retain) UITouch * activeTouch;
-@property(assign,retain) UIKeyboardEmojiGraphicsTraits * emojiGraphicsTraits;
-@property(assign,readwrite) UIResponder * hitTestResponder;
-@property(assign,retain) UIKeyboardEmojiInputController * inputController;
-@property(assign,retain) UIKeyboardEmojiView * onDisplay;
-@property(assign,retain) UIKeyboardEmojiView * pendingDisplay;
-@property(assign,retain) UIKBRenderConfig * renderConfig;
-@property(assign,retain) UIKeyboardEmojiView * touched;
+@property (retain) UITouch *activeTouch;
+@property (readonly, retain) UIKeyboardEmojiGraphicsTraits *emojiGraphicsTraits;
+@property (nonatomic) UIResponder *hitTestResponder;
+@property (retain) UIKeyboardEmojiInputController *inputController;
+@property (retain) UIKeyboardEmojiView *onDisplay;
+@property (retain) UIKeyboardEmojiView *pendingDisplay;
+@property (retain) UIKBRenderConfig *renderConfig;
+@property (retain) UIKeyboardEmojiView *touched;
 
 - (double)_currentScreenScale;
 - (id)activeTouch;

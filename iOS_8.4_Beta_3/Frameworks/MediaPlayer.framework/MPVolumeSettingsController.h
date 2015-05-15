@@ -9,8 +9,8 @@
     UIWindow *_previousWindow;
 }
 
-@property(assign,readwrite) UIWindow * hostingWindow;
-@property(assign,readwrite) UIWindow * previousWindow;
+@property (nonatomic) UIWindow *hostingWindow;
+@property (nonatomic) UIWindow *previousWindow;
 
 - (void).cxx_destruct;
 - (void)_flip;

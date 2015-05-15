@@ -13,12 +13,12 @@
     float _walkMore;
 }
 
-@property(assign,readwrite) bool hasNotWalkingVariancePerAxisPerSecond;
-@property(assign,readwrite) bool hasTimeheadingAverageChangeDirectionRate;
-@property(assign,readwrite) bool hasWalkMore;
-@property(assign,readwrite) float notWalkingVariancePerAxisPerSecond;
-@property(assign,readwrite) float timeheadingAverageChangeDirectionRate;
-@property(assign,readwrite) float walkMore;
+@property (nonatomic) bool hasNotWalkingVariancePerAxisPerSecond;
+@property (nonatomic) bool hasTimeheadingAverageChangeDirectionRate;
+@property (nonatomic) bool hasWalkMore;
+@property (nonatomic) float notWalkingVariancePerAxisPerSecond;
+@property (nonatomic) float timeheadingAverageChangeDirectionRate;
+@property (nonatomic) float walkMore;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

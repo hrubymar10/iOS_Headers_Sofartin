@@ -8,7 +8,7 @@
     NSMutableArray *_replacementRules;
 }
 
-@property(assign,copy) NSCharacterSet * charactersToBeSkipped;
+@property (nonatomic, copy) NSCharacterSet *charactersToBeSkipped;
 
 + (id)nonTerminalWithLabel:(id)arg1;
 

@@ -26,18 +26,18 @@
     bool _useMultiGet;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CoreDAVLocalDBTreeInfoProvider> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSURL * folderURL;
-@property(assign,readonly) NSDictionary * folderURLToChildrenURLOrder;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long multiGetBatchSize;
-@property(assign,retain) NSString * nextCTag;
-@property(assign,readwrite) bool preflightCTag;
-@property(assign,readonly) NSString * previousCTag;
-@property(assign,retain) NSString * previousSyncToken;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CoreDAVLocalDBTreeInfoProvider> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSURL *folderURL;
+@property (nonatomic, readonly) NSDictionary *folderURLToChildrenURLOrder;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long multiGetBatchSize;
+@property (nonatomic, retain) NSString *nextCTag;
+@property (nonatomic) bool preflightCTag;
+@property (nonatomic, readonly) NSString *previousCTag;
+@property (nonatomic, retain) NSString *previousSyncToken;
+@property (readonly) Class superclass;
 
 - (id)_copyContainerParserMappings;
 - (void)_folderModTask:(id)arg1 parsedPropStats:(id)arg2 error:(id)arg3;

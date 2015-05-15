@@ -31,20 +31,20 @@
     NSMutableArray *_variablesWithValueRestrictionViolations;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <NSISEngineDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } engineScalingCoefficients;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSISVariable * headForObjectiveRow;
-@property(assign,readwrite) struct __CFDictionary { }* integralizationAdjustmentsForConstraintMarkers;
-@property(assign,readwrite) bool revertsAfterUnsatisfiabilityHandler;
-@property(assign,retain) NSMapTable * rows;
-@property(assign,retain) NSMapTable * rowsCrossIndex;
-@property(assign,readwrite) bool shouldIntegralize;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableSet * variablesWithIntegralizationViolations;
-@property(assign,retain) NSMutableArray * variablesWithValueRestrictionViolations;
+@property (readonly, copy) NSString *debugDescription;
+@property <NSISEngineDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) struct CGSize { double x1; double x2; } engineScalingCoefficients;
+@property (readonly) unsigned long long hash;
+@property (retain) NSISVariable *headForObjectiveRow;
+@property struct __CFDictionary { }*integralizationAdjustmentsForConstraintMarkers;
+@property bool revertsAfterUnsatisfiabilityHandler;
+@property (retain) NSMapTable *rows;
+@property (retain) NSMapTable *rowsCrossIndex;
+@property bool shouldIntegralize;
+@property (readonly) Class superclass;
+@property (retain) NSMutableSet *variablesWithIntegralizationViolations;
+@property (retain) NSMutableArray *variablesWithValueRestrictionViolations;
 
 - (id)_brokenConstraintNegativeErrors;
 - (id)_brokenConstraintNegativeErrorsIfAvailable;

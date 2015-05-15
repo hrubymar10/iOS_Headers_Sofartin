@@ -14,17 +14,17 @@
     double _velocity;
 }
 
-@property(assign,readwrite) double damping;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) double duration;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double mass;
-@property(assign,readonly) double maximumVendedDelay;
-@property(assign,readwrite) double stiffness;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) CAMediaTimingFunction * timing;
-@property(assign,readwrite) double velocity;
+@property (nonatomic) double damping;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) double duration;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double mass;
+@property (nonatomic, readonly) double maximumVendedDelay;
+@property (nonatomic) double stiffness;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) CAMediaTimingFunction *timing;
+@property (nonatomic) double velocity;
 
 + (id)defaultTimingFunction;
 + (id)springAnimationWithKeyPath:(id)arg1;

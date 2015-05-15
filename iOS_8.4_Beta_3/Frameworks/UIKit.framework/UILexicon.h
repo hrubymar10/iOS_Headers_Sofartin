@@ -6,7 +6,7 @@
     NSArray *_entries;
 }
 
-@property(assign,readonly) NSArray * entries;
+@property (nonatomic, readonly) NSArray *entries;
 
 + (id)_lexiconWithTILexicon:(id)arg1;
 

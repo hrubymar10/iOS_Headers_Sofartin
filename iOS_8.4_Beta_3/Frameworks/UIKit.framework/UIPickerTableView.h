@@ -42,15 +42,15 @@
     } _visibleRect;
 }
 
-@property(getter=_textColor,setter=_setTextColor:,assign,retain) UIColor * _textColor;
-@property(getter=_usesModernStyle,setter=_setUsesModernStyle:,assign,readwrite) bool _usesModernStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long lastSelectedRow;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } selectionBarRect;
-@property(assign,readwrite) long long selectionBarRow;
-@property(assign,readonly) Class superclass;
+@property (getter=_textColor, setter=_setTextColor:, nonatomic, retain) UIColor *_textColor;
+@property (getter=_usesModernStyle, setter=_setUsesModernStyle:) bool _usesModernStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long lastSelectedRow;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } selectionBarRect;
+@property (nonatomic) long long selectionBarRow;
+@property (readonly) Class superclass;
 
 - (id)_anyDateLabel;
 - (bool)_beginTrackingWithEvent:(id)arg1;

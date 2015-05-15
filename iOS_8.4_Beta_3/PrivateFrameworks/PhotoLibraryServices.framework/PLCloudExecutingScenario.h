@@ -8,9 +8,9 @@
     PLCloudScenario *_scenario;
 }
 
-@property(assign,copy) id completionCallback;
-@property(assign,retain) PLCloudScenarioExecutionResult * executionState;
-@property(assign,retain) PLCloudScenario * scenario;
+@property (nonatomic, copy) id completionCallback;
+@property (nonatomic, retain) PLCloudScenarioExecutionResult *executionState;
+@property (nonatomic, retain) PLCloudScenario *scenario;
 
 - (id)completionCallback;
 - (void)dealloc;

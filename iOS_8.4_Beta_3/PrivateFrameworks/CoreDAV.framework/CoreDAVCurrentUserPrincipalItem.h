@@ -7,8 +7,8 @@
     CoreDAVItemWithNoChildren *_unauthenticated;
 }
 
-@property(assign,retain) CoreDAVHrefItem * href;
-@property(assign,retain) CoreDAVItemWithNoChildren * unauthenticated;
+@property (nonatomic, retain) CoreDAVHrefItem *href;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *unauthenticated;
 
 + (id)copyParseRules;
 

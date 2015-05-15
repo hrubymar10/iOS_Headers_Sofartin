@@ -10,10 +10,10 @@
     NSString *_identifier;
 }
 
-@property(assign,readwrite) bool carry;
-@property(assign,readwrite) bool hasCarry;
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,retain) NSString * identifier;
+@property (nonatomic) bool carry;
+@property (nonatomic) bool hasCarry;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, retain) NSString *identifier;
 
 - (void).cxx_destruct;
 - (bool)carry;

@@ -4,16 +4,16 @@
 
 @interface GCController : NSObject
 
-@property(getter=isAttachedToDevice,assign,readonly) bool attachedToDevice;
-@property(assign,copy) id controllerPausedHandler;
-@property(assign,readonly) struct __IOHIDDevice { }* deviceRef;
-@property(assign,retain) GCExtendedGamepad * extendedGamepad;
-@property(assign,retain) GCGamepad * gamepad;
-@property(assign,retain) GCMotion * motion;
-@property(assign,readwrite) long long playerIndex;
-@property(assign,retain) <GCNamedProfile> * profile;
-@property(assign,readonly) unsigned int service;
-@property(assign,copy) NSString * vendorName;
+@property (getter=isAttachedToDevice, readonly) bool attachedToDevice;
+@property (copy) id controllerPausedHandler;
+@property (readonly) struct __IOHIDDevice { }*deviceRef;
+@property (readonly, retain) GCExtendedGamepad *extendedGamepad;
+@property (readonly, retain) GCGamepad *gamepad;
+@property (readonly, retain) GCMotion *motion;
+@property (nonatomic) long long playerIndex;
+@property (retain) <GCNamedProfile> *profile;
+@property (readonly) unsigned int service;
+@property (readonly, copy) NSString *vendorName;
 
 + (void)__daemon__addController:(id)arg1;
 + (void)__daemon__controllerWithUDID:(unsigned long long)arg1 setValue:(float)arg2 forElement:(int)arg3;

@@ -4,25 +4,25 @@
 
 @interface TSUMutableCustomFormatData : TSUCustomFormatData
 
-@property(assign,readwrite) unsigned short currencyCodeIndex;
-@property(assign,readwrite) unsigned char decimalWidth;
-@property(assign,readwrite) bool formatContainsIntegerToken;
-@property(assign,copy) NSString * formatString;
-@property(assign,readwrite) int fractionAccuracy;
-@property(assign,readwrite) unsigned char indexFromRightOfLastDigitPlaceholder;
-@property(assign,copy) NSIndexSet * interstitialStringInsertionIndexes;
-@property(assign,copy) NSArray * interstitialStrings;
-@property(assign,readwrite) bool isComplexFormat;
-@property(assign,readwrite) bool isConditional;
-@property(assign,readwrite) unsigned char minimumIntegerWidth;
-@property(assign,readwrite) unsigned char numberOfHashDecimalPlaceholders;
-@property(assign,readwrite) unsigned char numberOfNonSpaceDecimalPlaceholderDigits;
-@property(assign,readwrite) unsigned char numberOfNonSpaceIntegerPlaceholderDigits;
-@property(assign,readwrite) bool requiresFractionReplacement;
-@property(assign,readwrite) double scaleFactor;
-@property(assign,readwrite) bool showThousandsSeparator;
-@property(assign,readwrite) unsigned char totalNumberOfDecimalPlaceholdersInFormat;
-@property(assign,readwrite) bool useAccountingStyle;
+@property (nonatomic) unsigned short currencyCodeIndex;
+@property (nonatomic) unsigned char decimalWidth;
+@property (nonatomic) bool formatContainsIntegerToken;
+@property (nonatomic, copy) NSString *formatString;
+@property (nonatomic) int fractionAccuracy;
+@property (nonatomic) unsigned char indexFromRightOfLastDigitPlaceholder;
+@property (nonatomic, copy) NSIndexSet *interstitialStringInsertionIndexes;
+@property (nonatomic, copy) NSArray *interstitialStrings;
+@property (nonatomic) bool isComplexFormat;
+@property (nonatomic) bool isConditional;
+@property (nonatomic) unsigned char minimumIntegerWidth;
+@property (nonatomic) unsigned char numberOfHashDecimalPlaceholders;
+@property (nonatomic) unsigned char numberOfNonSpaceDecimalPlaceholderDigits;
+@property (nonatomic) unsigned char numberOfNonSpaceIntegerPlaceholderDigits;
+@property (nonatomic) bool requiresFractionReplacement;
+@property (nonatomic) double scaleFactor;
+@property (nonatomic) bool showThousandsSeparator;
+@property (nonatomic) unsigned char totalNumberOfDecimalPlaceholdersInFormat;
+@property (nonatomic) bool useAccountingStyle;
 
 + (id)customFormatData;
 

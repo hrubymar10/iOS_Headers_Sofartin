@@ -6,7 +6,7 @@
     CoreDAVItem *_supported;
 }
 
-@property(assign,retain) CoreDAVItem * supported;
+@property (nonatomic, retain) CoreDAVItem *supported;
 
 + (id)copyParseRules;
 

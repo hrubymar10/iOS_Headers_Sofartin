@@ -10,10 +10,10 @@
     int _statusCode;
 }
 
-@property(assign,readonly) bool hasPlaceResult;
-@property(assign,readwrite) bool hasStatusCode;
-@property(assign,retain) GEOPlaceResult * placeResult;
-@property(assign,readwrite) int statusCode;
+@property (nonatomic, readonly) bool hasPlaceResult;
+@property (nonatomic) bool hasStatusCode;
+@property (nonatomic, retain) GEOPlaceResult *placeResult;
+@property (nonatomic) int statusCode;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -6,10 +6,10 @@
     void *_impl;
 }
 
-@property(assign,readwrite) long long distanceAttenuationModel;
-@property(assign,readwrite) float maximumDistance;
-@property(assign,readwrite) float referenceDistance;
-@property(assign,readwrite) float rolloffFactor;
+@property (nonatomic) long long distanceAttenuationModel;
+@property (nonatomic) float maximumDistance;
+@property (nonatomic) float referenceDistance;
+@property (nonatomic) float rolloffFactor;
 
 - (void)dealloc;
 - (long long)distanceAttenuationModel;

@@ -27,14 +27,14 @@
     NSDictionary *_streamStateNotificationInfo;
 }
 
-@property(assign,retain) NSDictionary * inspectionNotificationInfo;
-@property(assign,readwrite) bool isInPlayQueue;
-@property(assign,readonly) bool isPreparingForInspection;
-@property(assign,readwrite) bool isPreparingForInspectionAccurateDuration;
-@property(assign,readwrite) bool isPreparingForInspectionInitialSamples;
-@property(assign,retain) NSDictionary * lyricsNotificationInfo;
-@property(assign,retain) NSDictionary * playToEndNotificationInfo;
-@property(assign,retain) NSDictionary * streamStateNotificationInfo;
+@property (retain) NSDictionary *inspectionNotificationInfo;
+@property bool isInPlayQueue;
+@property (readonly) bool isPreparingForInspection;
+@property bool isPreparingForInspectionAccurateDuration;
+@property bool isPreparingForInspectionInitialSamples;
+@property (retain) NSDictionary *lyricsNotificationInfo;
+@property (retain) NSDictionary *playToEndNotificationInfo;
+@property (retain) NSDictionary *streamStateNotificationInfo;
 
 + (id)convertFigTimeDictionaryToTimeIntervalWithKey:(id)arg1 stringURLToNSURLWithKey:(id)arg2 inArrayOfDictionaries:(id)arg3;
 

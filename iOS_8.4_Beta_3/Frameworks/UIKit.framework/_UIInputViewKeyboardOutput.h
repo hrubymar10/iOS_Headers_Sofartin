@@ -7,8 +7,8 @@
     long long _positionOffset;
 }
 
-@property(assign,readwrite) bool didBeginOutput;
-@property(assign,readwrite) long long positionOffset;
+@property (nonatomic) bool didBeginOutput;
+@property (nonatomic) long long positionOffset;
 
 + (bool)supportsSecureCoding;
 

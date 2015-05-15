@@ -4,17 +4,17 @@
 
 @interface ICSAvailability : ICSComponent
 
-@property(assign,retain) ICSDate * created;
-@property(assign,retain) ICSDate * dtend;
-@property(assign,retain) ICSDate * dtstamp;
-@property(assign,retain) ICSDate * dtstart;
-@property(assign,retain) ICSDuration * duration;
-@property(assign,retain) ICSDate * last_modified;
-@property(assign,retain) ICSUserAddress * organizer;
-@property(assign,readwrite) unsigned long long sequence;
-@property(assign,retain) NSString * summary;
-@property(assign,retain) NSString * uid;
-@property(assign,retain) NSURL * url;
+@property (retain) ICSDate *created;
+@property (retain) ICSDate *dtend;
+@property (retain) ICSDate *dtstamp;
+@property (retain) ICSDate *dtstart;
+@property (retain) ICSDuration *duration;
+@property (retain) ICSDate *last_modified;
+@property (retain) ICSUserAddress *organizer;
+@property unsigned long long sequence;
+@property (retain) NSString *summary;
+@property (retain) NSString *uid;
+@property (retain) NSURL *url;
 
 + (id)name;
 

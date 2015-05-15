@@ -6,12 +6,12 @@
     SKUIViewElement *_cellTemplateViewElement;
 }
 
-@property(assign,readonly) SKUIViewElement * cellTemplateViewElement;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <SKUIEntityProviding> * entityProvider;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) SKUIViewElement *cellTemplateViewElement;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) <SKUIEntityProviding> *entityProvider;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

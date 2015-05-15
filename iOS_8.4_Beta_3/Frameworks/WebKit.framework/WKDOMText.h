@@ -4,7 +4,7 @@
 
 @interface WKDOMText : WKDOMNode
 
-@property(assign,copy) NSString * data;
+@property (nonatomic, copy) NSString *data;
 
 - (id)data;
 - (void)setData:(id)arg1;

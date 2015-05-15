@@ -10,13 +10,13 @@
     GEOMapServiceTraits *_traits;
 }
 
-@property(getter=isCanceled,assign,readonly) bool canceled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) GEOMapRegion * resultBoundingRegion;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) GEOMapServiceTraits * traits;
+@property (getter=isCanceled, nonatomic, readonly) bool canceled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) GEOMapRegion *resultBoundingRegion;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) GEOMapServiceTraits *traits;
 
 - (void)applyToCorrectedSearch:(id)arg1;
 - (void)cancel;

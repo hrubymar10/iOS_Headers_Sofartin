@@ -8,12 +8,12 @@
     CKDPRequestedFields *_requestedFields;
 }
 
-@property(assign,readonly) bool hasMinimumVersionEtag;
-@property(assign,readonly) bool hasRecordIdentifier;
-@property(assign,readonly) bool hasRequestedFields;
-@property(assign,retain) NSString * minimumVersionEtag;
-@property(assign,retain) CKDPRecordIdentifier * recordIdentifier;
-@property(assign,retain) CKDPRequestedFields * requestedFields;
+@property (nonatomic, readonly) bool hasMinimumVersionEtag;
+@property (nonatomic, readonly) bool hasRecordIdentifier;
+@property (nonatomic, readonly) bool hasRequestedFields;
+@property (nonatomic, retain) NSString *minimumVersionEtag;
+@property (nonatomic, retain) CKDPRecordIdentifier *recordIdentifier;
+@property (nonatomic, retain) CKDPRequestedFields *requestedFields;
 
 + (id)options;
 

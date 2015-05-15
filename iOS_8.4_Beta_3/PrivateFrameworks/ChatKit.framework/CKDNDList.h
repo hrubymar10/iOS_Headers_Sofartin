@@ -6,7 +6,7 @@
     NPSManager *_syncManager;
 }
 
-@property(assign,retain) NPSManager * syncManager;
+@property (nonatomic, retain) NPSManager *syncManager;
 
 + (id)sharedList;
 

@@ -11,12 +11,12 @@
     id _startBlock;
 }
 
-@property(assign,retain) CKDMMCS * MMCS;
-@property(assign,copy) id completionBlock;
-@property(assign,retain) CKDMMCSItemGroup * itemGroup;
-@property(assign,retain) NSMutableDictionary * itemsByID;
-@property(assign,copy) id progressBlock;
-@property(assign,copy) id startBlock;
+@property (nonatomic, retain) CKDMMCS *MMCS;
+@property (nonatomic, copy) id completionBlock;
+@property (nonatomic, retain) CKDMMCSItemGroup *itemGroup;
+@property (nonatomic, retain) NSMutableDictionary *itemsByID;
+@property (nonatomic, copy) id progressBlock;
+@property (nonatomic, copy) id startBlock;
 
 - (void).cxx_destruct;
 - (id)MMCS;

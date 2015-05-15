@@ -17,9 +17,9 @@
     int _savePending;
 }
 
-@property(assign,retain) NKIssue * currentlyReadingIssue;
-@property(assign,readonly) NSArray * downloadingAssets;
-@property(assign,readonly) NSArray * issues;
+@property (retain) NKIssue *currentlyReadingIssue;
+@property (readonly) NSArray *downloadingAssets;
+@property (readonly) NSArray *issues;
 
 + (bool)_isNewsstandApp;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;

@@ -14,16 +14,16 @@
     NSNumber *mSuperSamples;
 }
 
-@property(assign,readonly) TSCH3DCamera * camera;
-@property(assign,retain) TSCH3DGLFramebuffer * framebuffer;
-@property(assign,retain) TSCH3DSceneRenderPipeline * original;
-@property(assign,readwrite) bool preserveFramebufferContent;
-@property(assign,readonly) float renderScale;
-@property(assign,readwrite) float samples;
-@property(assign,readwrite) float scale;
-@property(assign,retain) TSCH3DScene * scene;
-@property(assign,retain) TSCH3DSceneRenderSetup * setup;
-@property(assign,readwrite) float superSamples;
+@property (nonatomic, readonly) TSCH3DCamera *camera;
+@property (nonatomic, retain) TSCH3DGLFramebuffer *framebuffer;
+@property (nonatomic, retain) TSCH3DSceneRenderPipeline *original;
+@property (nonatomic) bool preserveFramebufferContent;
+@property (nonatomic, readonly) float renderScale;
+@property (nonatomic) float samples;
+@property (nonatomic) float scale;
+@property (nonatomic, retain) TSCH3DScene *scene;
+@property (nonatomic, retain) TSCH3DSceneRenderSetup *setup;
+@property (nonatomic) float superSamples;
 
 + (id)pipelineWithProcessor:(id)arg1 session:(id)arg2 scene:(id)arg3;
 

@@ -4,15 +4,15 @@
 
 @interface SAConnectionPolicy : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enabled;
-@property(assign,copy) NSNumber * globalTimeout;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * policyId;
-@property(assign,copy) NSArray * routes;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSNumber * timeToLive;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enabled;
+@property (nonatomic, copy) NSNumber *globalTimeout;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *policyId;
+@property (nonatomic, copy) NSArray *routes;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSNumber *timeToLive;
 
 + (id)connectionPolicy;
 + (id)connectionPolicyWithDictionary:(id)arg1 context:(id)arg2;

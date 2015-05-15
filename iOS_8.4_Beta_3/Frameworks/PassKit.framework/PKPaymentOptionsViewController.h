@@ -15,14 +15,14 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPaymentOptionsViewControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id pickedABPersonHandler;
-@property(assign,copy) id pickedABPropertyHandler;
-@property(assign,readwrite) bool showDisclosureIndicators;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPaymentOptionsViewControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id pickedABPersonHandler;
+@property (nonatomic, copy) id pickedABPropertyHandler;
+@property (nonatomic) bool showDisclosureIndicators;
+@property (readonly) Class superclass;
 
 - (id)_passSnapshotter;
 - (bool)_presentedModally;

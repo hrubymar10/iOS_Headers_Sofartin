@@ -13,15 +13,15 @@
     MPUStackView *_stackView;
 }
 
-@property(assign,retain) UIImage * artworkImage;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } artworkSize;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIView * perspectiveTargetView;
-@property(assign,retain) MPUBorderDrawingCache * stackItemBorderDrawingCache;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } vanishingPoint;
+@property (nonatomic, retain) UIImage *artworkImage;
+@property (nonatomic) struct CGSize { double x1; double x2; } artworkSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIView *perspectiveTargetView;
+@property (nonatomic, retain) MPUBorderDrawingCache *stackItemBorderDrawingCache;
+@property (readonly) Class superclass;
+@property (nonatomic) struct CGPoint { double x1; double x2; } vanishingPoint;
 
 + (struct CGSize { double x1; double x2; })artworkSizeForOrientation:(long long)arg1;
 

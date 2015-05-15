@@ -9,10 +9,10 @@
     UIButton *_referenceButton;
 }
 
-@property(assign,retain) UIButton * hintButton;
-@property(assign,retain) UIImageView * hintImageView;
-@property(assign,retain) UILabel * hintLabel;
-@property(assign,retain) UIButton * referenceButton;
+@property (nonatomic, retain) UIButton *hintButton;
+@property (nonatomic, retain) UIImageView *hintImageView;
+@property (nonatomic, retain) UILabel *hintLabel;
+@property (nonatomic, retain) UIButton *referenceButton;
 
 - (void)dealloc;
 - (id)hintButton;

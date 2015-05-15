@@ -9,14 +9,14 @@
     NSString *_accountYouTubeName;
 }
 
-@property(assign,retain) NSString * account;
-@property(assign,retain) NSString * accountRefreshToken;
-@property(assign,retain) NSString * accountToken;
-@property(assign,retain) NSString * accountYouTubeName;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NSString *account;
+@property (nonatomic, retain) NSString *accountRefreshToken;
+@property (nonatomic, retain) NSString *accountToken;
+@property (nonatomic, retain) NSString *accountYouTubeName;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)_keychainServiceForCredentialComponent:(id)arg1;
 + (id)_keychainServiceForLegacyPassword;

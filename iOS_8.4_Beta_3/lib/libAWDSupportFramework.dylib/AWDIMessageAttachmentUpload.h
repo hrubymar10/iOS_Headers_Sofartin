@@ -26,26 +26,26 @@
     unsigned int _uploadDuration;
 }
 
-@property(assign,readwrite) unsigned int attachmentSize;
-@property(assign,readwrite) unsigned int connectionType;
-@property(assign,readwrite) int fzError;
-@property(assign,readwrite) int genericError;
-@property(assign,retain) NSString * guid;
-@property(assign,readwrite) bool hasAttachmentSize;
-@property(assign,readwrite) bool hasConnectionType;
-@property(assign,readwrite) bool hasFzError;
-@property(assign,readwrite) bool hasGenericError;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasLinkQuality;
-@property(assign,readwrite) bool hasMessageError;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasTokenError;
-@property(assign,readwrite) bool hasUploadDuration;
-@property(assign,readwrite) int linkQuality;
-@property(assign,readwrite) unsigned int messageError;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int tokenError;
-@property(assign,readwrite) unsigned int uploadDuration;
+@property (nonatomic) unsigned int attachmentSize;
+@property (nonatomic) unsigned int connectionType;
+@property (nonatomic) int fzError;
+@property (nonatomic) int genericError;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic) bool hasAttachmentSize;
+@property (nonatomic) bool hasConnectionType;
+@property (nonatomic) bool hasFzError;
+@property (nonatomic) bool hasGenericError;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasLinkQuality;
+@property (nonatomic) bool hasMessageError;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasTokenError;
+@property (nonatomic) bool hasUploadDuration;
+@property (nonatomic) int linkQuality;
+@property (nonatomic) unsigned int messageError;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int tokenError;
+@property (nonatomic) unsigned int uploadDuration;
 
 - (unsigned int)attachmentSize;
 - (unsigned int)connectionType;

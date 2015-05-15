@@ -20,21 +20,21 @@
     bool _usedProtectedChannelForMessageSync;
 }
 
-@property(assign,retain) NSMutableSet * attachmentsContentIdsNotYetSynced;
-@property(assign,readwrite) bool contentRequestedByUser;
-@property(assign,readwrite) unsigned long long contentResendInterval;
-@property(assign,readwrite) bool contentSynced;
-@property(assign,readwrite) bool contentSyncedBecauseUserRequested;
-@property(assign,readwrite) bool contentSyncedUsingNotificationPriority;
-@property(assign,retain) NSString * conversationId;
-@property(assign,retain) NSDate * dateReceived;
-@property(assign,retain) NSString * messageId;
-@property(assign,readwrite) unsigned long long resendInterval;
-@property(assign,readwrite) bool resendRequested;
-@property(assign,readwrite) unsigned long long status;
-@property(assign,readwrite) unsigned long long statusVersion;
-@property(assign,readwrite) bool usedNotificationPriorityForMessageSync;
-@property(assign,readwrite) bool usedProtectedChannelForMessageSync;
+@property (nonatomic, retain) NSMutableSet *attachmentsContentIdsNotYetSynced;
+@property (nonatomic) bool contentRequestedByUser;
+@property (nonatomic) unsigned long long contentResendInterval;
+@property (nonatomic) bool contentSynced;
+@property (nonatomic) bool contentSyncedBecauseUserRequested;
+@property (nonatomic) bool contentSyncedUsingNotificationPriority;
+@property (nonatomic, retain) NSString *conversationId;
+@property (nonatomic, retain) NSDate *dateReceived;
+@property (nonatomic, retain) NSString *messageId;
+@property (nonatomic) unsigned long long resendInterval;
+@property (nonatomic) bool resendRequested;
+@property (nonatomic) unsigned long long status;
+@property (nonatomic) unsigned long long statusVersion;
+@property (nonatomic) bool usedNotificationPriorityForMessageSync;
+@property (nonatomic) bool usedProtectedChannelForMessageSync;
 
 - (void).cxx_destruct;
 - (id)attachmentsContentIdsNotYetSynced;

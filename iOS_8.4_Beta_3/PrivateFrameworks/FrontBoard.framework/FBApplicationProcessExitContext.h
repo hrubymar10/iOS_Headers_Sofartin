@@ -9,13 +9,13 @@
     long long _terminationReason;
 }
 
-@property(assign,readonly) int exitCode;
-@property(assign,readonly) unsigned long long exitReason;
-@property(assign,readonly) long long exitStatus;
-@property(assign,readonly) bool exitedNormally;
-@property(assign,copy) FBProcessState * stateBeforeExiting;
-@property(assign,readonly) long long terminationReason;
-@property(assign,readonly) int terminationSignal;
+@property (nonatomic, readonly) int exitCode;
+@property (nonatomic, readonly) unsigned long long exitReason;
+@property (nonatomic, readonly) long long exitStatus;
+@property (nonatomic, readonly) bool exitedNormally;
+@property (nonatomic, readonly, copy) FBProcessState *stateBeforeExiting;
+@property (nonatomic, readonly) long long terminationReason;
+@property (nonatomic, readonly) int terminationSignal;
 
 + (id)descriptionForExitReason:(unsigned long long)arg1;
 + (unsigned long long)exitReasonForLaunchdExitReason:(unsigned long long)arg1;

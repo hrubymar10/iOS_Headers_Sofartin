@@ -17,18 +17,18 @@
     NSArray *_transactionHistory;
 }
 
-@property(assign,retain) NSDate * conflictLogDate;
-@property(assign,retain) NSDictionary * conflictingLogContent;
-@property(assign,retain) PFUbiquityKnowledgeVector * conflictingLogKnowledgeVector;
-@property(assign,retain) NSNumber * conflictingLogTransactionNumber;
-@property(assign,readwrite) int conflictingLogTransactionType;
-@property(assign,retain) NSString * conflictingObjectGlobalIDStr;
-@property(assign,retain) PFUbiquityKnowledgeVector * currentKnowledgeVector;
-@property(assign,retain) NSDictionary * globalIDIndexToLocalIDURIMap;
-@property(assign,retain) PFUbiquityImportContext * importContext;
-@property(assign,readonly) NSDictionary * relationshipToObjectIDsToCheck;
-@property(assign,retain) NSManagedObject * sourceObject;
-@property(assign,retain) NSArray * transactionHistory;
+@property (nonatomic, retain) NSDate *conflictLogDate;
+@property (nonatomic, retain) NSDictionary *conflictingLogContent;
+@property (nonatomic, retain) PFUbiquityKnowledgeVector *conflictingLogKnowledgeVector;
+@property (nonatomic, retain) NSNumber *conflictingLogTransactionNumber;
+@property (nonatomic) int conflictingLogTransactionType;
+@property (nonatomic, retain) NSString *conflictingObjectGlobalIDStr;
+@property (nonatomic, retain) PFUbiquityKnowledgeVector *currentKnowledgeVector;
+@property (nonatomic, retain) NSDictionary *globalIDIndexToLocalIDURIMap;
+@property (nonatomic, retain) PFUbiquityImportContext *importContext;
+@property (nonatomic, readonly) NSDictionary *relationshipToObjectIDsToCheck;
+@property (nonatomic, retain) NSManagedObject *sourceObject;
+@property (nonatomic, retain) NSArray *transactionHistory;
 
 + (id)createSnapshotFromManagedObject:(id)arg1 withSourceObject:(id)arg2;
 + (id)createTransactionLogForTransactionEntry:(id)arg1 withImportContext:(id)arg2 error:(id*)arg3;

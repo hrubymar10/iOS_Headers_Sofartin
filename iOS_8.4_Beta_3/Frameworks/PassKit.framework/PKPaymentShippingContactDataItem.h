@@ -4,9 +4,9 @@
 
 @interface PKPaymentShippingContactDataItem : PKPaymentDataItem
 
-@property(assign,readonly) NSString * email;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSString * phone;
+@property (nonatomic, readonly) NSString *email;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSString *phone;
 
 + (long long)dataType;
 

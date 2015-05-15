@@ -4,7 +4,7 @@
 
 @interface SAAcknowledgeAlert : SABaseClientBoundCommand
 
-@property(assign,retain) SADomainObject * object;
+@property (nonatomic, retain) SADomainObject *object;
 
 + (id)acknowledgeAlert;
 + (id)acknowledgeAlertWithDictionary:(id)arg1 context:(id)arg2;

@@ -6,7 +6,7 @@
     NSDictionary *_dictionary;
 }
 
-@property(assign,retain) NSDictionary * dictionary;
+@property (nonatomic, retain) NSDictionary *dictionary;
 
 + (id)proxyObjectWithDictionary:(id)arg1;
 

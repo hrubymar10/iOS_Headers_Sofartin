@@ -11,8 +11,8 @@
     NSMutableDictionary *_tokenDataForDSIDs;
 }
 
-@property(assign,readonly) HSHomeSharingLibrary * homeSharingLibrary;
-@property(assign,readonly) bool isSupportedSharingVersion;
+@property (nonatomic, readonly) HSHomeSharingLibrary *homeSharingLibrary;
+@property (nonatomic, readonly) bool isSupportedSharingVersion;
 
 + (void)_determineHomeSharingGroupIDWithCompletionHandler:(id)arg1;
 + (void)beginScanningForLibraries;

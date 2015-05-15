@@ -11,12 +11,12 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) SKUIArtworkList * artworkList;
-@property(assign,readonly) long long categoryIdentifier;
-@property(assign,readonly) NSArray * children;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSString * parentLabel;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) SKUIArtworkList *artworkList;
+@property (nonatomic, readonly) long long categoryIdentifier;
+@property (nonatomic, readonly) NSArray *children;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSString *parentLabel;
 
 - (void).cxx_destruct;
 - (id)URL;

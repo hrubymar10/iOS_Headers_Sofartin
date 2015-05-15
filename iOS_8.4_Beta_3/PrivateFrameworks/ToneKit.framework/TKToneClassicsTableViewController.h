@@ -7,12 +7,12 @@
     <TKTonePickerTableViewControllerHelper> *_tonePickerTableViewControllerHelper;
 }
 
-@property(setter=_setClassicTonesHeaderItem:,assign,retain) TKTonePickerItem * _classicTonesHeaderItem;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <TKTonePickerTableViewControllerHelper> * tonePickerTableViewControllerHelper;
+@property (setter=_setClassicTonesHeaderItem:, nonatomic, retain) TKTonePickerItem *_classicTonesHeaderItem;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) <TKTonePickerTableViewControllerHelper> *tonePickerTableViewControllerHelper;
 
 - (id)_classicTonesHeaderItem;
 - (void)_setClassicTonesHeaderItem:(id)arg1;

@@ -19,20 +19,20 @@
     NSString *_yahooCode;
 }
 
-@property(assign,readonly) NSString * classicIdentifier;
-@property(assign,retain) NSString * countryName;
-@property(assign,retain) NSString * countryOverride;
-@property(assign,readwrite) int identifier;
-@property(assign,readwrite) float latitude;
-@property(assign,retain) NSString * localeCode;
-@property(assign,readwrite) float longitude;
-@property(assign,retain) NSString * name;
-@property(assign,readonly) NSDictionary * properties;
-@property(assign,retain) NSString * timeZone;
-@property(assign,retain) NSString * unlocalizedCountryName;
-@property(assign,retain) NSString * unlocalizedCountryOverride;
-@property(assign,retain) NSString * unlocalizedName;
-@property(assign,retain) NSString * yahooCode;
+@property (nonatomic, readonly) NSString *classicIdentifier;
+@property (nonatomic, retain) NSString *countryName;
+@property (nonatomic, retain) NSString *countryOverride;
+@property (nonatomic) int identifier;
+@property (nonatomic) float latitude;
+@property (nonatomic, retain) NSString *localeCode;
+@property (nonatomic) float longitude;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, readonly) NSDictionary *properties;
+@property (nonatomic, retain) NSString *timeZone;
+@property (nonatomic, retain) NSString *unlocalizedCountryName;
+@property (nonatomic, retain) NSString *unlocalizedCountryOverride;
+@property (nonatomic, retain) NSString *unlocalizedName;
+@property (nonatomic, retain) NSString *yahooCode;
 
 - (id)classicIdentifier;
 - (id)countryName;

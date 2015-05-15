@@ -10,14 +10,14 @@
     NSArray *_players;
 }
 
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,retain) GKSession * gkSession;
-@property(assign,retain) GKVoiceChatSession * gkVoiceChatSession;
-@property(assign,copy) NSString * name;
-@property(assign,copy) id playerStateUpdateHandler;
-@property(assign,copy) id playerVoiceChatStateDidChangeHandler;
-@property(assign,retain) NSArray * players;
-@property(assign,readwrite) float volume;
+@property (getter=isActive, nonatomic) bool active;
+@property (nonatomic, retain) GKSession *gkSession;
+@property (nonatomic, retain) GKVoiceChatSession *gkVoiceChatSession;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, copy) id playerStateUpdateHandler;
+@property (nonatomic, copy) id playerVoiceChatStateDidChangeHandler;
+@property (nonatomic, retain) NSArray *players;
+@property (nonatomic) float volume;
 
 + (bool)isVoIPAllowed;
 

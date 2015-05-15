@@ -8,7 +8,7 @@
     UIScrollView *_scrollView;
 }
 
-@property(assign,readonly) SKUIDeveloperInfo * developerInfo;
+@property (nonatomic, readonly) SKUIDeveloperInfo *developerInfo;
 
 - (void).cxx_destruct;
 - (id)developerInfo;

@@ -9,22 +9,22 @@
     MTLToolsPointerArray *_renderCommandEncoders;
 }
 
-@property(assign,readonly) MTLToolsPointerArray * blitCommandEncoders;
-@property(assign,readonly) <MTLCommandQueue> * commandQueue;
-@property(assign,readonly) MTLToolsPointerArray * computeCommandEncoders;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * label;
-@property(assign,readonly) MTLToolsPointerArray * parallelRenderCommandEncoders;
-@property(getter=isProfilingEnabled,assign,readwrite) bool profilingEnabled;
-@property(assign,readonly) NSDictionary * profilingResults;
-@property(assign,readonly) MTLToolsPointerArray * renderCommandEncoders;
-@property(assign,readonly) bool retainedReferences;
-@property(assign,readonly) unsigned long long status;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) MTLToolsPointerArray *blitCommandEncoders;
+@property (readonly) <MTLCommandQueue> *commandQueue;
+@property (nonatomic, readonly) MTLToolsPointerArray *computeCommandEncoders;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) <MTLDevice> *device;
+@property (readonly) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (copy) NSString *label;
+@property (nonatomic, readonly) MTLToolsPointerArray *parallelRenderCommandEncoders;
+@property (getter=isProfilingEnabled) bool profilingEnabled;
+@property (readonly) NSDictionary *profilingResults;
+@property (nonatomic, readonly) MTLToolsPointerArray *renderCommandEncoders;
+@property (readonly) bool retainedReferences;
+@property (readonly) unsigned long long status;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)acceptVisitor:(id)arg1;

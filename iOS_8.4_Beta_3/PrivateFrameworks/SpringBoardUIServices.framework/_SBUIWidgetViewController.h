@@ -7,13 +7,13 @@
     NSString *_widgetIdentifier;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct CGSize { double x1; double x2; } preferredViewSize;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) <_SBUIWidgetHost> * widgetHost;
-@property(assign,copy) NSString * widgetIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } preferredViewSize;
+@property (readonly) Class superclass;
+@property (nonatomic) <_SBUIWidgetHost> *widgetHost;
+@property (nonatomic, copy) NSString *widgetIdentifier;
 
 - (void)dealloc;
 - (void)hostDidDismiss;

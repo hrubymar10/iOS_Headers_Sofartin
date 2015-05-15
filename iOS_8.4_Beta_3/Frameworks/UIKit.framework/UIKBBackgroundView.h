@@ -54,16 +54,16 @@
     int _visualStyle;
 }
 
-@property(assign,readonly) bool cacheDeferable;
-@property(assign,readonly) NSString * cacheKey;
-@property(assign,readonly) double cachedWidth;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSObject * geometryCacheKey;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool keepNonPersistent;
-@property(assign,retain) UIKBRenderConfig * renderConfig;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) bool cacheDeferable;
+@property (nonatomic, readonly) NSString *cacheKey;
+@property (nonatomic, readonly) double cachedWidth;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSObject *geometryCacheKey;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool keepNonPersistent;
+@property (nonatomic, retain) UIKBRenderConfig *renderConfig;
+@property (readonly) Class superclass;
 
 - (bool)cacheDeferable;
 - (id)cacheKey;

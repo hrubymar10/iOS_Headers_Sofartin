@@ -17,8 +17,8 @@
     } _proposedGLPoint4DValue;
 }
 
-@property(assign,readonly) struct { float x1; float x2; float x3; float x4; } GLPoint4DValue;
-@property(assign,readwrite) struct { float x1; float x2; float x3; float x4; } proposedGLPoint4DValue;
+@property (nonatomic, readonly) struct { float x1; float x2; float x3; float x4; } GLPoint4DValue;
+@property (nonatomic) struct { float x1; float x2; float x3; float x4; } proposedGLPoint4DValue;
 
 - (struct { float x1; float x2; float x3; float x4; })GLPoint4DValue;
 - (id)description;

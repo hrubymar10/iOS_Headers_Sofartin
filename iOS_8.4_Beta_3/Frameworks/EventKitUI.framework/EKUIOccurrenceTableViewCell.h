@@ -53,9 +53,9 @@
     bool _usesVibrantSeparatorOverlayDrawing;
 }
 
-@property(assign,readwrite) bool drawsOwnRowSeparators;
-@property(assign,readwrite) bool usesInsetMargin;
-@property(assign,readwrite) bool usesVibrantSeparatorOverlayDrawing;
+@property (nonatomic) bool drawsOwnRowSeparators;
+@property (nonatomic) bool usesInsetMargin;
+@property (nonatomic) bool usesVibrantSeparatorOverlayDrawing;
 
 + (id)_birthdayIcon;
 + (void)_clearCaches;

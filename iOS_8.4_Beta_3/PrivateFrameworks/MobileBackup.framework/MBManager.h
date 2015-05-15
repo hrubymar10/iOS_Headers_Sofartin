@@ -6,7 +6,7 @@
     id _delegate;
 }
 
-@property(assign,readwrite) NSObject<MBManagerDelegate> * delegate;
+@property (nonatomic) NSObject<MBManagerDelegate> *delegate;
 
 - (id)_init;
 - (bool)addFileToBackupUDID:(id)arg1 snapshotID:(unsigned long long)arg2 domainName:(id)arg3 relativePath:(id)arg4 fromPath:(id)arg5 error:(id*)arg6;

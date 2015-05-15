@@ -11,16 +11,16 @@
     PUZoomableGridViewControllerSpec *_zoomableGridSpec;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long highestZoomLevel;
-@property(assign,readonly) unsigned long long lowestZoomLevel;
-@property(assign,readonly) unsigned long long preferredDefaultZoomLevel;
-@property(assign,retain) PUSessionInfo * sessionInfo;
-@property(assign,readonly) PUCollectionViewIntermediateDataSource * sharedIntermediateDataSource;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) PUZoomableGridViewControllerSpec * zoomableGridSpec;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long highestZoomLevel;
+@property (nonatomic, readonly) unsigned long long lowestZoomLevel;
+@property (nonatomic, readonly) unsigned long long preferredDefaultZoomLevel;
+@property (nonatomic, retain) PUSessionInfo *sessionInfo;
+@property (nonatomic, readonly) PUCollectionViewIntermediateDataSource *sharedIntermediateDataSource;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) PUZoomableGridViewControllerSpec *zoomableGridSpec;
 
 - (void).cxx_destruct;
 - (void)_defaultsDidChange:(id)arg1;

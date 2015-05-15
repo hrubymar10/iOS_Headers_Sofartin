@@ -17,13 +17,13 @@
     UITextView *_textView;
 }
 
-@property(assign,readwrite) bool discardNextHypothesis;
-@property(assign,copy) NSString * lastHypothesis;
-@property(assign,readwrite) double minDurationBetweenHypotheses;
-@property(assign,retain) NSMutableArray * pendingEdits;
-@property(assign,copy) NSString * previousHypothesis;
-@property(assign,readwrite) double streamingCharacterInsertionRate;
-@property(assign,copy) NSString * targetHypothesis;
+@property (nonatomic) bool discardNextHypothesis;
+@property (nonatomic, copy) NSString *lastHypothesis;
+@property (nonatomic) double minDurationBetweenHypotheses;
+@property (nonatomic, retain) NSMutableArray *pendingEdits;
+@property (nonatomic, copy) NSString *previousHypothesis;
+@property (nonatomic) double streamingCharacterInsertionRate;
+@property (nonatomic, copy) NSString *targetHypothesis;
 
 - (void)_displayLinkFired:(id)arg1;
 - (void)_startStreamingAnimations;

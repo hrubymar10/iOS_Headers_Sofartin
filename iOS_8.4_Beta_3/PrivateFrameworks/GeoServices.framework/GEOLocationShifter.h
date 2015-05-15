@@ -10,9 +10,9 @@
     GEOLocationShiftFunctionRequest *_shiftRequest;
 }
 
-@property(assign,readonly) bool locationShiftEnabled;
-@property(assign,retain) GEOLocationShiftFunctionResponse * shiftFunction;
-@property(assign,retain) GEOLocationShiftFunctionRequest * shiftRequest;
+@property (nonatomic, readonly) bool locationShiftEnabled;
+@property (nonatomic, retain) GEOLocationShiftFunctionResponse *shiftFunction;
+@property (nonatomic, retain) GEOLocationShiftFunctionRequest *shiftRequest;
 
 - (void)_countryProvidersDidChange:(id)arg1;
 - (void)_requestShiftFunctionForLocation:(struct { double x1; double x2; })arg1 accuracy:(double)arg2;

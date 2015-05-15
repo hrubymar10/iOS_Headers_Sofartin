@@ -17,15 +17,15 @@
     GEOMapAccess *_map;
 }
 
-@property(assign,readonly) unsigned long long coordinateCount;
-@property(assign,readonly) struct { double x1; double x2; }* coordinates;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) int formOfWay;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double length;
-@property(assign,readonly) int roadClass;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long coordinateCount;
+@property (nonatomic, readonly) struct { double x1; double x2; }*coordinates;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) int formOfWay;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double length;
+@property (nonatomic, readonly) int roadClass;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

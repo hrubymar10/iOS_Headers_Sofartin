@@ -22,8 +22,8 @@
     } mPageRange;
 }
 
-@property(assign,retain) TSDDrawableInfo * info;
-@property(assign,readonly) TNPageController * pageController;
+@property (retain) TSDDrawableInfo *info;
+@property (readonly) TNPageController *pageController;
 
 - (id).cxx_construct;
 - (void)dealloc;

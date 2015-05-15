@@ -7,8 +7,8 @@
     NSHTTPURLResponse *_response;
 }
 
-@property(assign,readonly) NSHTTPURLResponse * URLResponse;
-@property(assign,readonly) NSData * data;
+@property (nonatomic, readonly) NSHTTPURLResponse *URLResponse;
+@property (nonatomic, readonly) NSData *data;
 
 - (void).cxx_destruct;
 - (id)URLResponse;

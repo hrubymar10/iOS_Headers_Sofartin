@@ -6,7 +6,7 @@
     long long _focusBubbleType;
 }
 
-@property(assign,readwrite) long long focusBubbleType;
+@property (nonatomic) long long focusBubbleType;
 
 + (double)preferredDuration;
 

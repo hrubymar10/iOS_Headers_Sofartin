@@ -12,15 +12,15 @@
     UIUpdateItem *_lastUpdateItem;
 }
 
-@property(assign,readonly) NSArray * deleteItems;
-@property(assign,retain) UIUpdateItem * firstUpdateItem;
-@property(assign,readonly) bool hasAutomaticAnimationItems;
-@property(assign,readonly) bool hasInserts;
-@property(assign,readonly) NSArray * insertItems;
-@property(assign,readonly) bool isDeleteBasedGap;
-@property(assign,readonly) bool isSectionBasedGap;
-@property(assign,retain) UIUpdateItem * lastUpdateItem;
-@property(assign,readonly) NSArray * updateItems;
+@property (nonatomic, readonly) NSArray *deleteItems;
+@property (nonatomic, retain) UIUpdateItem *firstUpdateItem;
+@property (nonatomic, readonly) bool hasAutomaticAnimationItems;
+@property (nonatomic, readonly) bool hasInserts;
+@property (nonatomic, readonly) NSArray *insertItems;
+@property (nonatomic, readonly) bool isDeleteBasedGap;
+@property (nonatomic, readonly) bool isSectionBasedGap;
+@property (nonatomic, retain) UIUpdateItem *lastUpdateItem;
+@property (nonatomic, readonly) NSArray *updateItems;
 
 + (id)gapWithUpdateItem:(id)arg1;
 

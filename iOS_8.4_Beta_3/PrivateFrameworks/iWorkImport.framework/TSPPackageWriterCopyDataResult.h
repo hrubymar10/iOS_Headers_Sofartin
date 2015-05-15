@@ -7,8 +7,8 @@
     NSString *_filename;
 }
 
-@property(assign,readonly) <TSPCryptoInfo> * encryptionInfo;
-@property(assign,readonly) NSString * filename;
+@property (nonatomic, readonly) <TSPCryptoInfo> *encryptionInfo;
+@property (nonatomic, readonly) NSString *filename;
 
 - (void).cxx_destruct;
 - (id)encryptionInfo;

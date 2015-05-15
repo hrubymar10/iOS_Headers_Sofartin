@@ -6,7 +6,7 @@
     MPMediaItem *_collectionRepresentativeItem;
 }
 
-@property(assign,retain) MPMediaItem * collectionRepresentativeItem;
+@property (nonatomic, retain) MPMediaItem *collectionRepresentativeItem;
 
 - (void).cxx_destruct;
 - (id)collectionRepresentativeItem;

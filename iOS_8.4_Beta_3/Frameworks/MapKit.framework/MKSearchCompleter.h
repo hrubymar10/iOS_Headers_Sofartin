@@ -23,16 +23,16 @@
     double _timeSinceLastInBoundingRegion;
 }
 
-@property(assign,readwrite) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } boundingRegion;
-@property(assign,readwrite) id context;
-@property(assign,readwrite) <MKSearchCompleterDelegate> * delegate;
-@property(assign,retain) CLLocation * deviceLocation;
-@property(assign,readwrite) long long entriesType;
-@property(assign,copy) NSString * fragment;
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) long long listType;
-@property(assign,readonly) NSArray * results;
-@property(assign,readwrite) double timeSinceLastInBoundingRegion;
+@property (nonatomic) struct { struct { double x_1_1_1; double x_1_1_2; } x1; struct { double x_2_1_1; double x_2_1_2; } x2; } boundingRegion;
+@property (nonatomic) id context;
+@property (nonatomic) <MKSearchCompleterDelegate> *delegate;
+@property (nonatomic, retain) CLLocation *deviceLocation;
+@property (nonatomic) long long entriesType;
+@property (nonatomic, copy) NSString *fragment;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic) long long listType;
+@property (nonatomic, readonly) NSArray *results;
+@property (nonatomic) double timeSinceLastInBoundingRegion;
 
 + (id)alloc;
 

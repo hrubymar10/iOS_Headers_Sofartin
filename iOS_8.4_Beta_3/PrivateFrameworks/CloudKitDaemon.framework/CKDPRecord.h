@@ -21,29 +21,29 @@
     CKDPRecordType *_type;
 }
 
-@property(assign,retain) NSMutableArray * conflictLoserEtags;
-@property(assign,retain) CKDPIdentifier * createdBy;
-@property(assign,retain) NSString * etag;
-@property(assign,retain) NSMutableArray * fields;
-@property(assign,readonly) bool hasCreatedBy;
-@property(assign,readonly) bool hasEtag;
-@property(assign,readonly) bool hasModifiedBy;
-@property(assign,readonly) bool hasModifiedByDevice;
-@property(assign,readwrite) bool hasPermission;
-@property(assign,readonly) bool hasProtectionInfo;
-@property(assign,readonly) bool hasRecordIdentifier;
-@property(assign,readonly) bool hasShareId;
-@property(assign,readonly) bool hasTimeStatistics;
-@property(assign,readonly) bool hasType;
-@property(assign,retain) CKDPIdentifier * modifiedBy;
-@property(assign,retain) NSString * modifiedByDevice;
-@property(assign,readwrite) int permission;
-@property(assign,retain) NSMutableArray * pluginFields;
-@property(assign,retain) CKDPProtectionInfo * protectionInfo;
-@property(assign,retain) CKDPRecordIdentifier * recordIdentifier;
-@property(assign,retain) CKDPShareIdentifier * shareId;
-@property(assign,retain) CKDPDateStatistics * timeStatistics;
-@property(assign,retain) CKDPRecordType * type;
+@property (nonatomic, retain) NSMutableArray *conflictLoserEtags;
+@property (nonatomic, retain) CKDPIdentifier *createdBy;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, retain) NSMutableArray *fields;
+@property (nonatomic, readonly) bool hasCreatedBy;
+@property (nonatomic, readonly) bool hasEtag;
+@property (nonatomic, readonly) bool hasModifiedBy;
+@property (nonatomic, readonly) bool hasModifiedByDevice;
+@property (nonatomic) bool hasPermission;
+@property (nonatomic, readonly) bool hasProtectionInfo;
+@property (nonatomic, readonly) bool hasRecordIdentifier;
+@property (nonatomic, readonly) bool hasShareId;
+@property (nonatomic, readonly) bool hasTimeStatistics;
+@property (nonatomic, readonly) bool hasType;
+@property (nonatomic, retain) CKDPIdentifier *modifiedBy;
+@property (nonatomic, retain) NSString *modifiedByDevice;
+@property (nonatomic) int permission;
+@property (nonatomic, retain) NSMutableArray *pluginFields;
+@property (nonatomic, retain) CKDPProtectionInfo *protectionInfo;
+@property (nonatomic, retain) CKDPRecordIdentifier *recordIdentifier;
+@property (nonatomic, retain) CKDPShareIdentifier *shareId;
+@property (nonatomic, retain) CKDPDateStatistics *timeStatistics;
+@property (nonatomic, retain) CKDPRecordType *type;
 
 + (id)recordFromData:(id)arg1;
 

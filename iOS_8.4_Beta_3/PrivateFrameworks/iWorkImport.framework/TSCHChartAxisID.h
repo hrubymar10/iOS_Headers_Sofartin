@@ -7,8 +7,8 @@
     int mType;
 }
 
-@property(assign,readonly) unsigned long long ordinal;
-@property(assign,readonly) int type;
+@property (readonly) unsigned long long ordinal;
+@property (readonly) int type;
 
 + (id)axisIDWithType:(int)arg1 ordinal:(unsigned long long)arg2;
 

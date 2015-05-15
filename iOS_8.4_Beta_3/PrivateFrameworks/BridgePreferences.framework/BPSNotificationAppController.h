@@ -15,23 +15,23 @@
     unsigned long long _settingsMode;
 }
 
-@property(assign,retain) NPSDomainAccessor * bbAppsSettings;
-@property(assign,retain) BBSectionInfo * bbSectionInfo;
-@property(assign,copy) NSString * bundleIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NGSGlance * glance;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) BPSInternalGlanceManager * manager;
-@property(assign,readonly) bool mirrorSettings;
-@property(assign,retain) NSMutableArray * notificationApplicationSpecifiers;
-@property(assign,readonly) NSMutableArray * notificationSpecifiers;
-@property(assign,readonly) PSSpecifier * previewSwitchSpecifier;
-@property(assign,readonly) NSMutableDictionary * sectionInfo;
-@property(assign,readwrite) unsigned long long settingsMode;
-@property(assign,readonly) bool showAlerts;
-@property(assign,readonly) bool showPreview;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) NPSDomainAccessor *bbAppsSettings;
+@property (nonatomic, retain) BBSectionInfo *bbSectionInfo;
+@property (nonatomic, copy) NSString *bundleIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NGSGlance *glance;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) BPSInternalGlanceManager *manager;
+@property (nonatomic, readonly) bool mirrorSettings;
+@property (nonatomic, retain) NSMutableArray *notificationApplicationSpecifiers;
+@property (nonatomic, readonly) NSMutableArray *notificationSpecifiers;
+@property (nonatomic, readonly) PSSpecifier *previewSwitchSpecifier;
+@property (nonatomic, readonly) NSMutableDictionary *sectionInfo;
+@property (nonatomic) unsigned long long settingsMode;
+@property (nonatomic, readonly) bool showAlerts;
+@property (nonatomic, readonly) bool showPreview;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_showSettingsNotifications;

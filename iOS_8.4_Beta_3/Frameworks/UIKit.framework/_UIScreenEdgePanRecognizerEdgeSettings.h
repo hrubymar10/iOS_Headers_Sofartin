@@ -14,16 +14,16 @@
     double _restrictedEdgeRegionTimeInterval;
 }
 
-@property(assign,readwrite) double backProjectionTime;
-@property(assign,readwrite) double bottomEdgeRegionSize;
-@property(assign,readwrite) double edgeAngleWindow;
-@property(assign,readwrite) double edgeAngleWindowDecayTime;
-@property(assign,readwrite) double edgeAngleWindowDegreees;
-@property(assign,readwrite) double edgeRegionSize;
-@property(assign,readwrite) double hysteresis;
-@property(assign,readwrite) double maximumSwipeDuration;
-@property(assign,readwrite) double restrictedEdgeRegionMinimumWeight;
-@property(assign,readwrite) double restrictedEdgeRegionTimeInterval;
+@property (nonatomic) double backProjectionTime;
+@property (nonatomic) double bottomEdgeRegionSize;
+@property (nonatomic) double edgeAngleWindow;
+@property (nonatomic) double edgeAngleWindowDecayTime;
+@property (nonatomic) double edgeAngleWindowDegreees;
+@property (nonatomic) double edgeRegionSize;
+@property (nonatomic) double hysteresis;
+@property (nonatomic) double maximumSwipeDuration;
+@property (nonatomic) double restrictedEdgeRegionMinimumWeight;
+@property (nonatomic) double restrictedEdgeRegionTimeInterval;
 
 + (id)keyPathsForValuesAffectingEdgeAngleWindowDegreees;
 + (id)settingsControllerModule;

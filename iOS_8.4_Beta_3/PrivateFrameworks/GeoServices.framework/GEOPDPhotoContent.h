@@ -12,12 +12,12 @@
     unsigned int _width;
 }
 
-@property(assign,readwrite) bool hasHeight;
-@property(assign,readonly) bool hasUrl;
-@property(assign,readwrite) bool hasWidth;
-@property(assign,readwrite) unsigned int height;
-@property(assign,retain) NSString * url;
-@property(assign,readwrite) unsigned int width;
+@property (nonatomic) bool hasHeight;
+@property (nonatomic, readonly) bool hasUrl;
+@property (nonatomic) bool hasWidth;
+@property (nonatomic) unsigned int height;
+@property (nonatomic, retain) NSString *url;
+@property (nonatomic) unsigned int width;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -11,8 +11,8 @@
     <_UIRotatingAlertControllerDelegate> *_rotatingSheetDelegate;
 }
 
-@property(assign,readwrite) unsigned long long arrowDirections;
-@property(assign,readwrite) <_UIRotatingAlertControllerDelegate> * rotatingSheetDelegate;
+@property (nonatomic) unsigned long long arrowDirections;
+@property (nonatomic) <_UIRotatingAlertControllerDelegate> *rotatingSheetDelegate;
 
 - (void)_didRotateAndLayout;
 - (void)_updateSheetPositionAfterRotation;

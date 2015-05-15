@@ -9,14 +9,14 @@
     long long _updateAction;
 }
 
-@property(getter=_action,assign,readonly) long long action;
-@property(getter=_gap,setter=_setGap:,assign,readwrite) id gap;
-@property(getter=_indexPath,assign,readonly) NSIndexPath * indexPath;
-@property(assign,readonly) NSIndexPath * indexPathAfterUpdate;
-@property(assign,readonly) NSIndexPath * indexPathBeforeUpdate;
-@property(getter=_isSectionOperation,assign,readonly) bool isSectionOperation;
-@property(getter=_newIndexPath,setter=_setNewIndexPath:,assign,retain) NSIndexPath * newIndexPath;
-@property(assign,readonly) long long updateAction;
+@property (getter=_action, nonatomic, readonly) long long action;
+@property (getter=_gap, setter=_setGap:, nonatomic) id gap;
+@property (getter=_indexPath, nonatomic, readonly) NSIndexPath *indexPath;
+@property (nonatomic, readonly) NSIndexPath *indexPathAfterUpdate;
+@property (nonatomic, readonly) NSIndexPath *indexPathBeforeUpdate;
+@property (getter=_isSectionOperation, nonatomic, readonly) bool isSectionOperation;
+@property (getter=_newIndexPath, setter=_setNewIndexPath:, nonatomic, retain) NSIndexPath *newIndexPath;
+@property (nonatomic, readonly) long long updateAction;
 
 - (long long)_action;
 - (id)_gap;

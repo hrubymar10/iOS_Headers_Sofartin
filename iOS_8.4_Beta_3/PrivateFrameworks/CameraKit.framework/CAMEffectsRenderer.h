@@ -25,20 +25,20 @@
     unsigned long long _totalFramesSinceLastReportedFrameDrop;
 }
 
-@property(getter=_isInBackground,setter=_setInBackground:,assign,readwrite) bool _inBackground;
-@property(setter=_setPreviewLayerEnabled:,assign,readwrite) bool _previewLayerEnabled;
-@property(setter=_setPreviewStartedBlock:,assign,copy) id _previewStartedBlock;
-@property(setter=_setPreviewStartedNotificationNeeded:,assign,readwrite) bool _previewStartedNotificationNeeded;
-@property(setter=_setRenderEffectsFullsizeView:,assign,retain) CAMEffectsFullsizeView * _renderEffectsFullsizeView;
-@property(setter=_setRenderGridView:,assign,retain) CAMEffectsGridView * _renderGridView;
-@property(assign,readwrite) unsigned long long atomicFilterIndex;
-@property(assign,retain) CAMVideoPreviewView * atomicVideoPreviewView;
-@property(assign,readwrite) long long cameraMode;
-@property(assign,readwrite) <PLCameraEffectsRendererDelegate> * delegate;
-@property(assign,readwrite) unsigned long long filterIndex;
-@property(assign,readwrite) bool mirrorFilterRendering;
-@property(getter=isShowingGrid,assign,readwrite) bool showGrid;
-@property(assign,retain) CAMVideoPreviewView * videoPreviewView;
+@property (getter=_isInBackground, setter=_setInBackground:) bool _inBackground;
+@property (setter=_setPreviewLayerEnabled:, nonatomic) bool _previewLayerEnabled;
+@property (setter=_setPreviewStartedBlock:, copy) id _previewStartedBlock;
+@property (setter=_setPreviewStartedNotificationNeeded:) bool _previewStartedNotificationNeeded;
+@property (setter=_setRenderEffectsFullsizeView:, retain) CAMEffectsFullsizeView *_renderEffectsFullsizeView;
+@property (setter=_setRenderGridView:, retain) CAMEffectsGridView *_renderGridView;
+@property unsigned long long atomicFilterIndex;
+@property (retain) CAMVideoPreviewView *atomicVideoPreviewView;
+@property long long cameraMode;
+@property (nonatomic) <PLCameraEffectsRendererDelegate> *delegate;
+@property (nonatomic) unsigned long long filterIndex;
+@property bool mirrorFilterRendering;
+@property (getter=isShowingGrid, nonatomic) bool showGrid;
+@property (nonatomic, retain) CAMVideoPreviewView *videoPreviewView;
 
 - (void).cxx_destruct;
 - (void)_animateGridLayerZoomToGrid:(bool)arg1;

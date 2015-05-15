@@ -14,14 +14,14 @@
     unsigned int _width;
 }
 
-@property(assign,retain) NSString * artworkIdentifier;
-@property(assign,readwrite) float compressionQuality;
-@property(assign,readonly) bool hasArtworkIdentifier;
-@property(assign,readwrite) bool hasCompressionQuality;
-@property(assign,readwrite) bool hasHeight;
-@property(assign,readwrite) bool hasWidth;
-@property(assign,readwrite) unsigned int height;
-@property(assign,readwrite) unsigned int width;
+@property (nonatomic, retain) NSString *artworkIdentifier;
+@property (nonatomic) float compressionQuality;
+@property (nonatomic, readonly) bool hasArtworkIdentifier;
+@property (nonatomic) bool hasCompressionQuality;
+@property (nonatomic) bool hasHeight;
+@property (nonatomic) bool hasWidth;
+@property (nonatomic) unsigned int height;
+@property (nonatomic) unsigned int width;
 
 - (void).cxx_destruct;
 - (id)artworkIdentifier;

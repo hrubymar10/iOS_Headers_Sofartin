@@ -8,8 +8,8 @@
     VSSpeechRequest *_request;
 }
 
-@property(assign,readwrite) <VSSpeechConnectionDelegate> * delegate;
-@property(assign,readonly) VSSpeechRequest * request;
+@property (nonatomic) <VSSpeechConnectionDelegate> *delegate;
+@property (nonatomic, readonly) VSSpeechRequest *request;
 
 - (void).cxx_destruct;
 - (id)_connection;

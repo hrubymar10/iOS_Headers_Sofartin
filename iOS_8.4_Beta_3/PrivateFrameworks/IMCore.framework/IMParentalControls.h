@@ -10,13 +10,13 @@
     bool _shouldPostNotifications;
 }
 
-@property(assign,readonly) bool _disableAV;
-@property(assign,readonly) bool _forceChatLogging;
-@property(assign,retain) NSMutableDictionary * _parentalControls;
-@property(assign,readonly) bool active;
-@property(assign,readonly) bool disableAV;
-@property(assign,readonly) bool forceChatLogging;
-@property(assign,readwrite) bool shouldPostNotifications;
+@property (nonatomic, readonly) bool _disableAV;
+@property (nonatomic, readonly) bool _forceChatLogging;
+@property (nonatomic, readonly, retain) NSMutableDictionary *_parentalControls;
+@property (nonatomic, readonly) bool active;
+@property (nonatomic, readonly) bool disableAV;
+@property (nonatomic, readonly) bool forceChatLogging;
+@property (nonatomic) bool shouldPostNotifications;
 
 + (id)objectForKey:(id)arg1;
 + (id)standardControls;

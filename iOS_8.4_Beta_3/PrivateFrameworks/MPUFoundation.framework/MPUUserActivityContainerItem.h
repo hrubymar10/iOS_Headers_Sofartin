@@ -8,12 +8,12 @@
     MPMediaEntity *_visualReferenceMediaEntity;
 }
 
-@property(assign,readonly) MPUContentItemIdentifierCollection * MPU_selectedContentItemIdentifierCollection;
-@property(assign,readonly) MPUContentItemIdentifierCollection * MPU_visualReferenceContentItemIdentifierCollection;
-@property(assign,readonly) long long containerItemType;
-@property(assign,readonly) _MPUProtoBufUserActivityContainerItem * protoBufUserActivityContainerItem;
-@property(assign,readonly) MPMediaEntity * selectedMediaEntity;
-@property(assign,readonly) MPMediaEntity * visualReferenceMediaEntity;
+@property (nonatomic, readonly) MPUContentItemIdentifierCollection *MPU_selectedContentItemIdentifierCollection;
+@property (nonatomic, readonly) MPUContentItemIdentifierCollection *MPU_visualReferenceContentItemIdentifierCollection;
+@property (nonatomic, readonly) long long containerItemType;
+@property (nonatomic, readonly) _MPUProtoBufUserActivityContainerItem *protoBufUserActivityContainerItem;
+@property (nonatomic, readonly) MPMediaEntity *selectedMediaEntity;
+@property (nonatomic, readonly) MPMediaEntity *visualReferenceMediaEntity;
 
 - (void).cxx_destruct;
 - (id)MPU_selectedContentItemIdentifierCollection;

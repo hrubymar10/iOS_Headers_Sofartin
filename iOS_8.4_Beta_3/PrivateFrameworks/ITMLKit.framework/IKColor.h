@@ -10,11 +10,11 @@
     long long _gradientType;
 }
 
-@property(assign,retain) UIColor * color;
-@property(assign,readwrite) long long colorType;
-@property(assign,copy) NSArray * gradientColors;
-@property(assign,readwrite) long long gradientDirectionType;
-@property(assign,readwrite) long long gradientType;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic) long long colorType;
+@property (nonatomic, copy) NSArray *gradientColors;
+@property (nonatomic) long long gradientDirectionType;
+@property (nonatomic) long long gradientType;
 
 - (void).cxx_destruct;
 - (id)color;

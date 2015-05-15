@@ -6,10 +6,10 @@
     UITextView *_textView;
 }
 
-@property(assign,readwrite) <EKEditItemViewControllerDelegate> * editDelegate;
-@property(assign,readwrite) bool editItemShouldBeAskedForInjectableViewController;
-@property(assign,copy) NSString * notes;
-@property(assign,readwrite) bool presentModally;
+@property (nonatomic) <EKEditItemViewControllerDelegate> *editDelegate;
+@property (nonatomic) bool editItemShouldBeAskedForInjectableViewController;
+@property (nonatomic, copy) NSString *notes;
+@property (nonatomic) bool presentModally;
 
 - (void).cxx_destruct;
 - (id)_textView;

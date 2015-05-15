@@ -7,8 +7,8 @@
     int _type;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) int type;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) int type;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

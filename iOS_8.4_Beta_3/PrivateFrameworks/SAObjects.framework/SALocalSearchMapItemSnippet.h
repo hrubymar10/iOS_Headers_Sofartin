@@ -4,11 +4,11 @@
 
 @interface SALocalSearchMapItemSnippet : SAUISnippet
 
-@property(assign,copy) NSArray * items;
-@property(assign,copy) NSArray * providerCommand;
-@property(assign,copy) NSNumber * regionOfInterestRadiusInMiles;
-@property(assign,retain) SALocation * searchRegionCenter;
-@property(assign,copy) NSNumber * userCurrentLocation;
+@property (nonatomic, copy) NSArray *items;
+@property (nonatomic, copy) NSArray *providerCommand;
+@property (nonatomic, copy) NSNumber *regionOfInterestRadiusInMiles;
+@property (nonatomic, retain) SALocation *searchRegionCenter;
+@property (nonatomic, copy) NSNumber *userCurrentLocation;
 
 + (id)mapItemSnippet;
 + (id)mapItemSnippetWithDictionary:(id)arg1 context:(id)arg2;

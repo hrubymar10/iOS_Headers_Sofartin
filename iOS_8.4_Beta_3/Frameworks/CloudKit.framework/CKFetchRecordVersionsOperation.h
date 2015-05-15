@@ -12,13 +12,13 @@
     NSArray *_recordIDs;
 }
 
-@property(assign,copy) NSArray * desiredKeys;
-@property(assign,copy) id fetchRecordVersionsCompletionBlock;
-@property(assign,copy) id fetchRecordVersionsProgressBlock;
-@property(assign,readwrite) bool isDeleted;
-@property(assign,copy) NSString * minimumVersionETag;
-@property(assign,retain) NSMutableDictionary * recordErrors;
-@property(assign,copy) NSArray * recordIDs;
+@property (nonatomic, copy) NSArray *desiredKeys;
+@property (nonatomic, copy) id fetchRecordVersionsCompletionBlock;
+@property (nonatomic, copy) id fetchRecordVersionsProgressBlock;
+@property (nonatomic) bool isDeleted;
+@property (nonatomic, copy) NSString *minimumVersionETag;
+@property (nonatomic, retain) NSMutableDictionary *recordErrors;
+@property (nonatomic, copy) NSArray *recordIDs;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

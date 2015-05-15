@@ -11,7 +11,7 @@
     struct XlSheetInfoTable { int (**x1)(); struct CsSimpleHeapVector<XlRecord> { struct ChVector<XlRecord *> { struct XlRecord {} **x_1_2_1; struct XlRecord {} **x_1_2_2; unsigned int x_1_2_3; unsigned int x_1_2_4; unsigned int x_1_2_5; } x_2_1_1; } x2; char *x3; } *mXlSheetInfoTable;
 }
 
-@property(assign,readwrite) bool importCSV;
+@property (nonatomic) bool importCSV;
 
 - (id)columnWidthConvertor;
 - (void)dealloc;

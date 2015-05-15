@@ -4,15 +4,15 @@
 
 @interface SASPronunciationContext : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSURL * domainObjectIdentifier;
-@property(assign,copy) NSString * domainObjectPropertyIdentifier;
-@property(assign,copy) NSString * fullName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * orthography;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSNumber * tokenOffset;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSURL *domainObjectIdentifier;
+@property (nonatomic, copy) NSString *domainObjectPropertyIdentifier;
+@property (nonatomic, copy) NSString *fullName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *orthography;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSNumber *tokenOffset;
 
 + (id)pronunciationContext;
 + (id)pronunciationContextWithDictionary:(id)arg1 context:(id)arg2;

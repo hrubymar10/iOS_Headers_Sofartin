@@ -17,13 +17,13 @@
     bool _useLightText;
 }
 
-@property(assign,retain) NSNumberFormatter * floatNumberFormatter;
-@property(assign,retain) NSString * legendBaseString;
-@property(assign,readwrite) double segmentLengthInPixels;
-@property(assign,retain) NSString * unitsString;
-@property(assign,readonly) double unitsWidth;
-@property(assign,copy) NSString * unpaddedUnitsString;
-@property(assign,readwrite) bool useLightText;
+@property (nonatomic, retain) NSNumberFormatter *floatNumberFormatter;
+@property (nonatomic, retain) NSString *legendBaseString;
+@property (nonatomic) double segmentLengthInPixels;
+@property (nonatomic, retain) NSString *unitsString;
+@property (nonatomic, readonly) double unitsWidth;
+@property (nonatomic, copy) NSString *unpaddedUnitsString;
+@property (nonatomic) bool useLightText;
 
 - (void).cxx_destruct;
 - (void)_calculateLegend:(bool)arg1;

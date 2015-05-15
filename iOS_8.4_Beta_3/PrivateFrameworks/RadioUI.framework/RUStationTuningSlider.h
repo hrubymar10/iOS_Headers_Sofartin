@@ -6,7 +6,7 @@
     RadioStation *_station;
 }
 
-@property(assign,retain) RadioStation * station;
+@property (nonatomic, retain) RadioStation *station;
 
 - (void).cxx_destruct;
 - (void)_snapToMixType;

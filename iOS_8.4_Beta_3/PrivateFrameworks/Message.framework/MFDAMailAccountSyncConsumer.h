@@ -17,9 +17,9 @@
     NSString *_tag;
 }
 
-@property(assign,readonly) bool moreAvailable;
-@property(assign,retain) id streamConsumer;
-@property(assign,readonly) NSString * tag;
+@property (nonatomic, readonly) bool moreAvailable;
+@property (nonatomic, retain) id streamConsumer;
+@property (nonatomic, readonly) NSString *tag;
 
 - (void)_setTag:(id)arg1;
 - (id)actionsConsumer;

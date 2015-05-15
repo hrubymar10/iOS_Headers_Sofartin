@@ -17,18 +17,18 @@
     bool _valid;
 }
 
-@property(assign,readonly) BBSettingsGateway * bbGateway;
-@property(assign,copy) NSArray * behaviorOverrides;
-@property(assign,retain) NSDateComponents * fromComponents;
-@property(assign,readwrite) bool isEffectiveWhileUnlocked;
-@property(assign,readwrite) unsigned long long mode;
-@property(assign,readwrite) long long overrideStatus;
-@property(assign,readwrite) unsigned long long overrideType;
-@property(assign,copy) NSArray * overrides;
-@property(assign,readwrite) unsigned long long privilegeTypes;
-@property(assign,readwrite) int recordID;
-@property(assign,retain) NSDateComponents * toComponents;
-@property(assign,readwrite) bool valid;
+@property (nonatomic, readonly) BBSettingsGateway *bbGateway;
+@property (nonatomic, copy) NSArray *behaviorOverrides;
+@property (nonatomic, retain) NSDateComponents *fromComponents;
+@property (nonatomic) bool isEffectiveWhileUnlocked;
+@property (nonatomic) unsigned long long mode;
+@property (nonatomic) long long overrideStatus;
+@property (nonatomic) unsigned long long overrideType;
+@property (nonatomic, copy) NSArray *overrides;
+@property (nonatomic) unsigned long long privilegeTypes;
+@property (nonatomic) int recordID;
+@property (nonatomic, retain) NSDateComponents *toComponents;
+@property (nonatomic) bool valid;
 
 + (bool)isDNDScheduled;
 + (void)setManualEnabled:(bool)arg1;

@@ -14,12 +14,12 @@
     NSDictionary *_transitions;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool shouldShowCancelButton;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id completionHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool shouldShowCancelButton;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_airplaySectionCellForTableView:(id)arg1 atRow:(long long)arg2;

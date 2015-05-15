@@ -7,19 +7,19 @@
     NSString *_imageKind;
 }
 
-@property(assign,retain) NSURL * URL;
-@property(assign,readonly) NSString * URLString;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long height;
-@property(assign,copy) NSString * imageKind;
-@property(assign,readonly) long long imageOrientation;
-@property(assign,readonly) double imageScale;
-@property(assign,readonly) struct CGSize { double x1; double x2; } imageSize;
-@property(getter=isPrerendered,assign,readonly) bool prerendered;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) long long width;
+@property (nonatomic, retain) NSURL *URL;
+@property (nonatomic, readonly) NSString *URLString;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long height;
+@property (nonatomic, copy) NSString *imageKind;
+@property (nonatomic, readonly) long long imageOrientation;
+@property (nonatomic, readonly) double imageScale;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } imageSize;
+@property (getter=isPrerendered, nonatomic, readonly) bool prerendered;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) long long width;
 
 - (id)URL;
 - (id)URLString;

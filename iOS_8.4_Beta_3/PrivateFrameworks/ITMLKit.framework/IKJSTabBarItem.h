@@ -12,13 +12,13 @@
     NSString *_rootURL;
 }
 
-@property(assign,readonly) NSString * identifier;
-@property(assign,retain) JSManagedValue * managedNavigationDocument;
-@property(assign,retain) JSManagedValue * managedSelf;
-@property(assign,readonly) <IKAppNavigationController> * navigationControllerDelegate;
-@property(assign,readonly) IKJSNavigationDocument * navigationDocument;
-@property(assign,readwrite) IKJSTabBar * owner;
-@property(assign,readonly) NSString * rootURL;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, retain) JSManagedValue *managedNavigationDocument;
+@property (nonatomic, retain) JSManagedValue *managedSelf;
+@property (nonatomic, readonly) <IKAppNavigationController> *navigationControllerDelegate;
+@property (nonatomic, readonly) IKJSNavigationDocument *navigationDocument;
+@property (nonatomic) IKJSTabBar *owner;
+@property (nonatomic, readonly) NSString *rootURL;
 
 - (void).cxx_destruct;
 - (void)dealloc;

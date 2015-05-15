@@ -21,17 +21,17 @@
     TIKeyboardTouchEvent *_touchEvent;
 }
 
-@property(assign,retain) TIKeyboardCandidate * acceptedCandidate;
-@property(getter=isAutoshifted,assign,readwrite) bool autoshifted;
-@property(getter=isBackspace,assign,readwrite) bool backspace;
-@property(getter=isFlick,assign,readwrite) bool flick;
-@property(getter=isMultitap,assign,readwrite) bool multitap;
-@property(assign,copy) <NSCopying><NSObject><NSSecureCoding> * object;
-@property(getter=isPopupVariant,assign,readwrite) bool popupVariant;
-@property(assign,copy) NSString * string;
-@property(getter=isSynthesizedByAcceptingCandidate,assign,readwrite) bool synthesizedByAcceptingCandidate;
-@property(assign,retain) TIKeyboardTouchEvent * touchEvent;
-@property(getter=isUppercase,assign,readwrite) bool uppercase;
+@property (nonatomic, retain) TIKeyboardCandidate *acceptedCandidate;
+@property (getter=isAutoshifted, nonatomic) bool autoshifted;
+@property (getter=isBackspace, nonatomic) bool backspace;
+@property (getter=isFlick, nonatomic) bool flick;
+@property (getter=isMultitap, nonatomic) bool multitap;
+@property (nonatomic, copy) <NSCopying><NSObject><NSSecureCoding> *object;
+@property (getter=isPopupVariant, nonatomic) bool popupVariant;
+@property (nonatomic, copy) NSString *string;
+@property (getter=isSynthesizedByAcceptingCandidate, nonatomic) bool synthesizedByAcceptingCandidate;
+@property (nonatomic, retain) TIKeyboardTouchEvent *touchEvent;
+@property (getter=isUppercase, nonatomic) bool uppercase;
 
 + (bool)supportsSecureCoding;
 

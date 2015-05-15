@@ -9,15 +9,15 @@
     bool _horizontal;
 }
 
-@property(setter=_setAllowsArchivingAsSubview:,assign,readwrite) bool _allowsArchivingAsSubview;
-@property(setter=_setArchivedIdentifier:,assign,copy) NSString * _archivedIdentifier;
-@property(setter=_setConstraintsToRemoveAtRuntime:,assign,copy) NSArray * _constraintsToRemoveAtRuntime;
-@property(getter=isHorizontal,setter=_setHorizontal:,assign,readwrite) bool _horizontal;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double length;
-@property(assign,readonly) Class superclass;
+@property (setter=_setAllowsArchivingAsSubview:, nonatomic) bool _allowsArchivingAsSubview;
+@property (setter=_setArchivedIdentifier:, nonatomic, copy) NSString *_archivedIdentifier;
+@property (setter=_setConstraintsToRemoveAtRuntime:, nonatomic, copy) NSArray *_constraintsToRemoveAtRuntime;
+@property (getter=isHorizontal, setter=_setHorizontal:, nonatomic) bool _horizontal;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double length;
+@property (readonly) Class superclass;
 
 + (id)_horizontalLayoutGuide;
 + (id)_verticalLayoutGuide;

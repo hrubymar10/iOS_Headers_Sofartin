@@ -6,7 +6,7 @@
     PFUbiquityBaselineHeuristics *_heuristics;
 }
 
-@property(assign,readwrite) NSObject<PFUbiquityBaselineRollOperationDelegate> * delegate;
+@property NSObject<PFUbiquityBaselineRollOperationDelegate> *delegate;
 
 - (void)dealloc;
 - (id)delegate;

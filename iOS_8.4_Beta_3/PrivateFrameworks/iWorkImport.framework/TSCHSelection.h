@@ -7,13 +7,13 @@
     NSArray *mPaths;
 }
 
-@property(assign,retain) TSCHChartDrawableInfo * chartInfo;
-@property(assign,copy) TSCHSelectionPath * firstPath;
-@property(assign,readonly) unsigned long long pathCount;
-@property(assign,copy) TSCHSelectionPathType * pathType;
-@property(assign,copy) NSSet * pathTypes;
-@property(assign,copy) NSArray * paths;
-@property(assign,readonly) bool returnChartFrameForAutoscroll;
+@property (nonatomic, readonly, retain) TSCHChartDrawableInfo *chartInfo;
+@property (nonatomic, readonly, copy) TSCHSelectionPath *firstPath;
+@property (nonatomic, readonly) unsigned long long pathCount;
+@property (nonatomic, readonly, copy) TSCHSelectionPathType *pathType;
+@property (nonatomic, readonly, copy) NSSet *pathTypes;
+@property (nonatomic, readonly, copy) NSArray *paths;
+@property (nonatomic, readonly) bool returnChartFrameForAutoscroll;
 
 + (Class)archivedSelectionClass;
 + (id)emptySelectionWithChartInfo:(id)arg1;

@@ -7,8 +7,8 @@
     TSCETrackedReference *mTrackedReference;
 }
 
-@property(assign,readwrite) unsigned char columnIndex;
-@property(assign,retain) TSCETrackedReference * trackedReference;
+@property (nonatomic) unsigned char columnIndex;
+@property (nonatomic, retain) TSCETrackedReference *trackedReference;
 
 + (id)referenceWithColumnIndex:(unsigned char)arg1 trackedReference:(id)arg2;
 

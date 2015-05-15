@@ -50,12 +50,12 @@
     } _visibleRect;
 }
 
-@property(assign,retain) UIFont * font;
-@property(assign,readwrite) bool suppressLayoutSubviews;
-@property(assign,copy) NSString * text;
-@property(assign,readwrite) long long textAlignment;
-@property(assign,retain) UIColor * textColor;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } visibleRect;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic) bool suppressLayoutSubviews;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic) long long textAlignment;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } visibleRect;
 
 - (double)alphaForFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 - (void)animateAlignmentHunkAtIndex:(unsigned long long)arg1;

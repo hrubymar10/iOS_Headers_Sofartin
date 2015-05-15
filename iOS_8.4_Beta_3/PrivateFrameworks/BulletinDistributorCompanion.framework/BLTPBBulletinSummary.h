@@ -10,13 +10,13 @@
     NSString *_sectionID;
 }
 
-@property(assign,readwrite) unsigned int destinations;
-@property(assign,readonly) bool hasPublisherBulletinID;
-@property(assign,readonly) bool hasRecordID;
-@property(assign,retain) NSMutableArray * keys;
-@property(assign,retain) NSString * publisherBulletinID;
-@property(assign,retain) NSString * recordID;
-@property(assign,retain) NSString * sectionID;
+@property (nonatomic) unsigned int destinations;
+@property (nonatomic, readonly) bool hasPublisherBulletinID;
+@property (nonatomic, readonly) bool hasRecordID;
+@property (nonatomic, retain) NSMutableArray *keys;
+@property (nonatomic, retain) NSString *publisherBulletinID;
+@property (nonatomic, retain) NSString *recordID;
+@property (nonatomic, retain) NSString *sectionID;
 
 - (void).cxx_destruct;
 - (void)addKey:(id)arg1;

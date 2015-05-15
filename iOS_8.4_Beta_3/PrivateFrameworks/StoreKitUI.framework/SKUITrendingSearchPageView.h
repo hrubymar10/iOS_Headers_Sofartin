@@ -8,9 +8,9 @@
     SKUITrendingSearchView *_trendingSearchView;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,readwrite) <SKUITrendingSearchPageViewDelegate> * delegate;
-@property(assign,retain) SKUITrendingSearchPage * page;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic) <SKUITrendingSearchPageViewDelegate> *delegate;
+@property (nonatomic, retain) SKUITrendingSearchPage *page;
 
 - (void).cxx_destruct;
 - (void)_buttonAction:(id)arg1;

@@ -4,15 +4,15 @@
 
 @interface SAAceView : AceObject <SAAceSerializable>
 
-@property(assign,retain) <SAAceSerializable> * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSNumber * deferredRendering;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSNumber * listenAfterSpeaking;
-@property(assign,copy) NSString * speakableText;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * viewId;
+@property (nonatomic, retain) <SAAceSerializable> *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, copy) NSNumber *deferredRendering;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSNumber *listenAfterSpeaking;
+@property (nonatomic, copy) NSString *speakableText;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *viewId;
 
 + (id)aceView;
 + (id)aceViewWithDictionary:(id)arg1 context:(id)arg2;

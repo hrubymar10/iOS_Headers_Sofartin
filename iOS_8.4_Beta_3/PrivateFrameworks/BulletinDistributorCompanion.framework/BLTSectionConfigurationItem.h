@@ -7,8 +7,8 @@
     bool _optOutOfCoordination;
 }
 
-@property(assign,readwrite) bool optOutOfAttachmentTransmission;
-@property(assign,readwrite) bool optOutOfCoordination;
+@property (nonatomic) bool optOutOfAttachmentTransmission;
+@property (nonatomic) bool optOutOfCoordination;
 
 - (id)description;
 - (id)initWithDictionary:(id)arg1;

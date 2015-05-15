@@ -6,11 +6,11 @@
     SKComposeReviewViewController *_composeReviewViewController;
 }
 
-@property(assign,readwrite) SKComposeReviewViewController * composeReviewViewController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) SKComposeReviewViewController *composeReviewViewController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)exportedInterface;
 + (id)serviceViewControllerInterface;

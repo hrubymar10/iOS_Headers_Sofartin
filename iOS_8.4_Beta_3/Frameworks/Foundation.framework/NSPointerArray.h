@@ -4,8 +4,8 @@
 
 @interface NSPointerArray : NSObject <NSCoding, NSCopying, NSFastEnumeration>
 
-@property(assign,readwrite) unsigned long long count;
-@property(assign,copy) NSPointerFunctions * pointerFunctions;
+@property unsigned long long count;
+@property (readonly, copy) NSPointerFunctions *pointerFunctions;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (id)pointerArrayWithOptions:(unsigned long long)arg1;

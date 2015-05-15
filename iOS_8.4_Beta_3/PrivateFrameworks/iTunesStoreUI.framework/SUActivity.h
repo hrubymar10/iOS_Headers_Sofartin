@@ -10,7 +10,7 @@
     UIViewController *_suActivityViewController;
 }
 
-@property(assign,readwrite) <SUActivityDelegate> * ITunesStoreDelegate;
+@property (nonatomic) <SUActivityDelegate> *ITunesStoreDelegate;
 
 - (id)ITunesStoreDelegate;
 - (id)activityImage;

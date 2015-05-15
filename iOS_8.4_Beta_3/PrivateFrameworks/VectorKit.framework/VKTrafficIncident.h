@@ -36,26 +36,26 @@
     } _worldPoint;
 }
 
-@property(assign,readonly) NSString * crossStreet;
-@property(assign,readonly) NSDate * endDate;
-@property(assign,readonly) NSString * info;
-@property(assign,readonly) bool isNotForDisplay;
-@property(assign,readwrite) bool isOnSelectedRoute;
-@property(assign,readonly) NSDate * lastUpdatedDate;
-@property(assign,readonly) float maxZoom;
-@property(assign,readonly) float minZoom;
-@property(assign,readwrite) struct PolylineCoordinate { unsigned int x1; float x2; } routeOffset;
-@property(assign,readwrite) unsigned int routeOffsetInMeters;
-@property(assign,readwrite) long long routeRelevance;
-@property(assign,readonly) long long significance;
-@property(assign,readonly) NSDate * startDate;
-@property(assign,readonly) NSString * street;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
-@property(assign,readonly) long long type;
-@property(assign,readonly) unsigned long long uniqueID;
-@property(assign,readonly) NSString * uniqueString;
-@property(assign,readonly) struct VKPoint { double x1; double x2; double x3; } worldPoint;
+@property (nonatomic, readonly) NSString *crossStreet;
+@property (nonatomic, readonly) NSDate *endDate;
+@property (nonatomic, readonly) NSString *info;
+@property (nonatomic, readonly) bool isNotForDisplay;
+@property (nonatomic) bool isOnSelectedRoute;
+@property (nonatomic, readonly) NSDate *lastUpdatedDate;
+@property (nonatomic, readonly) float maxZoom;
+@property (nonatomic, readonly) float minZoom;
+@property (nonatomic) struct PolylineCoordinate { unsigned int x1; float x2; } routeOffset;
+@property (nonatomic) unsigned int routeOffsetInMeters;
+@property (nonatomic) long long routeRelevance;
+@property (nonatomic, readonly) long long significance;
+@property (nonatomic, readonly) NSDate *startDate;
+@property (nonatomic, readonly) NSString *street;
+@property (nonatomic, readonly, copy) NSString *subtitle;
+@property (nonatomic, readonly, copy) NSString *title;
+@property (nonatomic, readonly) long long type;
+@property (nonatomic, readonly) unsigned long long uniqueID;
+@property (nonatomic, readonly) NSString *uniqueString;
+@property (nonatomic, readonly) struct VKPoint { double x1; double x2; double x3; } worldPoint;
 
 - (id).cxx_construct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

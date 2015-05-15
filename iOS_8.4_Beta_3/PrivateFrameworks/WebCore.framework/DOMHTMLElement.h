@@ -4,20 +4,20 @@
 
 @interface DOMHTMLElement : DOMElement
 
-@property(assign,copy) NSString * accessKey;
-@property(assign,readonly) DOMHTMLCollection * children;
-@property(assign,copy) NSString * contentEditable;
-@property(assign,copy) NSString * dir;
-@property(assign,copy) NSString * idName;
-@property(assign,copy) NSString * innerHTML;
-@property(assign,copy) NSString * innerText;
-@property(assign,readonly) bool isContentEditable;
-@property(assign,copy) NSString * lang;
-@property(assign,copy) NSString * outerHTML;
-@property(assign,copy) NSString * outerText;
-@property(assign,readwrite) int tabIndex;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * titleDisplayString;
+@property (copy) NSString *accessKey;
+@property (readonly) DOMHTMLCollection *children;
+@property (copy) NSString *contentEditable;
+@property (copy) NSString *dir;
+@property (copy) NSString *idName;
+@property (copy) NSString *innerHTML;
+@property (copy) NSString *innerText;
+@property (readonly) bool isContentEditable;
+@property (copy) NSString *lang;
+@property (copy) NSString *outerHTML;
+@property (copy) NSString *outerText;
+@property int tabIndex;
+@property (copy) NSString *title;
+@property (readonly, copy) NSString *titleDisplayString;
 
 - (void)absolutePosition:(int*)arg1 :(int*)arg2 :(int*)arg3 :(int*)arg4;
 - (id)accessKey;

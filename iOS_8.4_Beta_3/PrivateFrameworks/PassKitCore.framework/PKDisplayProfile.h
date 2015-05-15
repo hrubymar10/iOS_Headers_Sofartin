@@ -6,7 +6,7 @@
     long long _type;
 }
 
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) long long type;
 
 + (Class)classForDisplayProfileType:(long long)arg1;
 + (id)displayProfileOfType:(long long)arg1 withDictionary:(id)arg2 bundle:(id)arg3;

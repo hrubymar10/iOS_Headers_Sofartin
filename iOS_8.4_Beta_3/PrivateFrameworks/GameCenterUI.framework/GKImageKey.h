@@ -13,11 +13,11 @@
     } _size;
 }
 
-@property(assign,retain) NSString * basename;
-@property(assign,readonly) NSString * cacheKey;
-@property(assign,readonly) NSString * filePath;
-@property(assign,retain) NSString * imageID;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, retain) NSString *basename;
+@property (nonatomic, readonly) NSString *cacheKey;
+@property (nonatomic, readonly) NSString *filePath;
+@property (nonatomic, retain) NSString *imageID;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
 
 + (id)fileNameWithIdentifierInImageSource:(id)arg1;
 + (id)keyForImageIdentifier:(id)arg1 withImageSource:(id)arg2;

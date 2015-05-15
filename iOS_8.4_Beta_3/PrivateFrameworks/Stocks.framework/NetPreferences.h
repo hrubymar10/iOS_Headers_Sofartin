@@ -10,7 +10,7 @@
     bool _serviceDebugging;
 }
 
-@property(getter=isNetworkReachable,assign,readwrite) bool networkReachable;
+@property (getter=isNetworkReachable, nonatomic) bool networkReachable;
 
 + (void)clearSharedPreferences;
 + (id)sharedPreferences;

@@ -9,25 +9,25 @@
     CTCellularPlanSubscription *_subscription;
 }
 
-@property(assign,readonly) int accountStatus;
-@property(assign,readonly) NSString * accountURL;
-@property(assign,readonly) bool autoRenew;
-@property(assign,readonly) double billingEndDate;
-@property(assign,readonly) double billingStartDate;
-@property(assign,readonly) NSString * carrierName;
-@property(assign,readonly) NSArray * dataUsage;
-@property(assign,retain) CTCellularPlanExtProperties * extendedProperties;
-@property(assign,readonly) NSString * iccid;
-@property(assign,readonly) bool isSelected;
-@property(assign,retain) NSString * phoneNumber;
-@property(assign,readonly) NSString * planDescription;
-@property(assign,readonly) int planStatus;
-@property(assign,readonly) int planType;
-@property(assign,retain) CTCellularPlanProfile * profile;
-@property(assign,readonly) NSData * profileId;
-@property(assign,readonly) int status;
-@property(assign,retain) CTCellularPlanSubscription * subscription;
-@property(assign,readonly) double timestamp;
+@property (nonatomic, readonly) int accountStatus;
+@property (nonatomic, readonly) NSString *accountURL;
+@property (nonatomic, readonly) bool autoRenew;
+@property (nonatomic, readonly) double billingEndDate;
+@property (nonatomic, readonly) double billingStartDate;
+@property (nonatomic, readonly) NSString *carrierName;
+@property (nonatomic, readonly) NSArray *dataUsage;
+@property (nonatomic, retain) CTCellularPlanExtProperties *extendedProperties;
+@property (nonatomic, readonly) NSString *iccid;
+@property (nonatomic, readonly) bool isSelected;
+@property (nonatomic, retain) NSString *phoneNumber;
+@property (nonatomic, readonly) NSString *planDescription;
+@property (nonatomic, readonly) int planStatus;
+@property (nonatomic, readonly) int planType;
+@property (nonatomic, retain) CTCellularPlanProfile *profile;
+@property (nonatomic, readonly) NSData *profileId;
+@property (nonatomic, readonly) int status;
+@property (nonatomic, retain) CTCellularPlanSubscription *subscription;
+@property (nonatomic, readonly) double timestamp;
 
 + (bool)supportsSecureCoding;
 

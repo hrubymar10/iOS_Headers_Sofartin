@@ -32,15 +32,15 @@
     long long _verticalAlignmentMode;
 }
 
-@property(assign,readwrite) long long blendMode;
-@property(assign,retain) UIColor * color;
-@property(assign,readwrite) double colorBlendFactor;
-@property(assign,retain) UIColor * fontColor;
-@property(assign,copy) NSString * fontName;
-@property(assign,readwrite) double fontSize;
-@property(assign,readwrite) long long horizontalAlignmentMode;
-@property(assign,copy) NSString * text;
-@property(assign,readwrite) long long verticalAlignmentMode;
+@property (nonatomic) long long blendMode;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic) double colorBlendFactor;
+@property (nonatomic, retain) UIColor *fontColor;
+@property (nonatomic, copy) NSString *fontName;
+@property (nonatomic) double fontSize;
+@property (nonatomic) long long horizontalAlignmentMode;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic) long long verticalAlignmentMode;
 
 + (id)_labelNodeWithFontNamed:(id)arg1;
 + (id)_labelNodeWithFontTexture:(id)arg1 fontDataString:(id)arg2;

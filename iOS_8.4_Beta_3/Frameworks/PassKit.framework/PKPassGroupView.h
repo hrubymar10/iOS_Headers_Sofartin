@@ -24,20 +24,20 @@
     double _verticalMotionRelativeValue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) <PKPassGroupViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long displayIndex;
-@property(assign,readwrite) PKPassView * frontmostPassView;
-@property(assign,retain) PKGroup * group;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double horizontalMotionRelativeValue;
-@property(assign,readonly) struct UIOffset { double x1; double x2; } offsetForFrontmostPassWhileStacked;
-@property(assign,readonly) UIPageControl * pageControl;
-@property(assign,readwrite) PKReusablePassViewQueue * passViewQueue;
-@property(assign,readwrite) long long presentationState;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double verticalMotionRelativeValue;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) <PKPassGroupViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) unsigned long long displayIndex;
+@property (nonatomic) PKPassView *frontmostPassView;
+@property (nonatomic, retain) PKGroup *group;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double horizontalMotionRelativeValue;
+@property (nonatomic, readonly) struct UIOffset { double x1; double x2; } offsetForFrontmostPassWhileStacked;
+@property (nonatomic, readonly) UIPageControl *pageControl;
+@property (nonatomic) PKReusablePassViewQueue *passViewQueue;
+@property (nonatomic) long long presentationState;
+@property (readonly) Class superclass;
+@property (nonatomic) double verticalMotionRelativeValue;
 
 - (void)_addPanAndLongPressGestureRecognizers;
 - (struct CGSize { double x1; double x2; })_contentSize;

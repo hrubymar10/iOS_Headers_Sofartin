@@ -7,7 +7,7 @@
     OITSUIntegerKeyDictionary *mCache;
 }
 
-@property(assign,readwrite) bool assertForCollisions;
+@property (nonatomic) bool assertForCollisions;
 
 - (bool)assertForCollisions;
 - (void)dealloc;

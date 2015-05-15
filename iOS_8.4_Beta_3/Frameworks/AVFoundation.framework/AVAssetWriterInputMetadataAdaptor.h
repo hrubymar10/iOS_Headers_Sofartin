@@ -6,7 +6,7 @@
     AVAssetWriterInputMetadataAdaptorInternal *_internal;
 }
 
-@property(assign,readonly) AVAssetWriterInput * assetWriterInput;
+@property (nonatomic, readonly) AVAssetWriterInput *assetWriterInput;
 
 + (id)assetWriterInputMetadataAdaptorWithAssetWriterInput:(id)arg1;
 + (void)initialize;

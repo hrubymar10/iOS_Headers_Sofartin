@@ -8,9 +8,9 @@
     NSArray *_options;
 }
 
-@property(assign,retain) <UIWebSelectedItemPrivate> * group;
-@property(assign,readonly) long long offset;
-@property(assign,retain) NSArray * options;
+@property (nonatomic, retain) <UIWebSelectedItemPrivate> *group;
+@property (nonatomic, readonly) long long offset;
+@property (nonatomic, retain) NSArray *options;
 
 - (void)dealloc;
 - (id)group;

@@ -9,8 +9,8 @@
     } _has;
 }
 
-@property(assign,readwrite) int discoveryTypes;
-@property(assign,readwrite) bool hasDiscoveryTypes;
+@property (nonatomic) int discoveryTypes;
+@property (nonatomic) bool hasDiscoveryTypes;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

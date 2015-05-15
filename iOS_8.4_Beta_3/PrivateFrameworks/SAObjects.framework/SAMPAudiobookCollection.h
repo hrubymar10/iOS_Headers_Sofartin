@@ -4,8 +4,8 @@
 
 @interface SAMPAudiobookCollection : SAMPCollection
 
-@property(assign,copy) NSString * artist;
-@property(assign,copy) NSString * sortArtist;
+@property (nonatomic, copy) NSString *artist;
+@property (nonatomic, copy) NSString *sortArtist;
 
 + (id)audiobookCollection;
 + (id)audiobookCollectionWithDictionary:(id)arg1 context:(id)arg2;

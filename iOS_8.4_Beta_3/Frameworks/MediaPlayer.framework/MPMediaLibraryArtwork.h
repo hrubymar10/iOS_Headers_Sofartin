@@ -8,11 +8,11 @@
     NSArray *_validSizes;
 }
 
-@property(assign,retain) ML3Artwork * artwork;
-@property(assign,readwrite) MPMediaLibraryArtworkRequest * artworkRequest;
-@property(assign,copy) NSDictionary * effectsMetadata;
-@property(assign,copy) NSURL * originalFileURL;
-@property(assign,readonly) NSArray * validSizes;
+@property (nonatomic, retain) ML3Artwork *artwork;
+@property (nonatomic) MPMediaLibraryArtworkRequest *artworkRequest;
+@property (nonatomic, copy) NSDictionary *effectsMetadata;
+@property (nonatomic, readonly, copy) NSURL *originalFileURL;
+@property (nonatomic, readonly) NSArray *validSizes;
 
 + (bool)artworkExistsForRequest:(id)arg1;
 + (id)availableArtworkWithRequest:(id)arg1;

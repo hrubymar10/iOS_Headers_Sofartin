@@ -20,18 +20,18 @@
     id _target;
 }
 
-@property(assign,readwrite) long long animateWithSection;
-@property(assign,readwrite) SEL configurator;
-@property(assign,readwrite) double desiredHeight;
-@property(assign,readwrite) double desiredWidth;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } globalSectionRange;
-@property(getter=isHidden,assign,readwrite) bool hidden;
-@property(assign,retain) NSString * kind;
-@property(assign,readwrite) Class reusableViewClass;
-@property(assign,readwrite) bool shouldPin;
-@property(assign,readwrite) bool shouldPinGlobal;
-@property(assign,readwrite) bool shouldUseGlobalIndexing;
-@property(assign,readwrite) id target;
+@property (nonatomic) long long animateWithSection;
+@property (nonatomic) SEL configurator;
+@property (nonatomic) double desiredHeight;
+@property (nonatomic) double desiredWidth;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } globalSectionRange;
+@property (getter=isHidden, nonatomic) bool hidden;
+@property (nonatomic, retain) NSString *kind;
+@property (nonatomic) Class reusableViewClass;
+@property (nonatomic) bool shouldPin;
+@property (nonatomic) bool shouldPinGlobal;
+@property (nonatomic) bool shouldUseGlobalIndexing;
+@property (nonatomic) id target;
 
 + (id)supplementaryMetrics;
 

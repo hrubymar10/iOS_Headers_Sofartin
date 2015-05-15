@@ -10,8 +10,8 @@
     unsigned long long _type;
 }
 
-@property(assign,readwrite) unsigned long long connectionType;
-@property(assign,readwrite) bool hasActiveRequest;
+@property (nonatomic) unsigned long long connectionType;
+@property (nonatomic) bool hasActiveRequest;
 
 + (id)_fullAggDKeyWithPrefix:(id)arg1 error:(id)arg2;
 + (id)_stringForGatekeeperType:(unsigned long long)arg1;

@@ -8,9 +8,9 @@
     unsigned char _subCommand;
 }
 
-@property(assign,readwrite) unsigned char command;
-@property(assign,retain) NSData * data;
-@property(assign,readwrite) unsigned char subCommand;
+@property (nonatomic) unsigned char command;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic) unsigned char subCommand;
 
 - (unsigned char)command;
 - (id)data;

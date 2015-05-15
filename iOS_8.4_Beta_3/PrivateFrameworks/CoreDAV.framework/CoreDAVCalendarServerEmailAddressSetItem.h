@@ -7,8 +7,8 @@
     CoreDAVItemWithNoChildren *_unauthenticated;
 }
 
-@property(assign,retain) NSMutableSet * emailAddresses;
-@property(assign,retain) CoreDAVItemWithNoChildren * unauthenticated;
+@property (nonatomic, retain) NSMutableSet *emailAddresses;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *unauthenticated;
 
 + (id)copyParseRules;
 

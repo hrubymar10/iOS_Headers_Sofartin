@@ -4,7 +4,7 @@
 
 @interface SASmsDraftShow : SADomainCommand
 
-@property(assign,copy) NSURL * smsIdentifier;
+@property (nonatomic, copy) NSURL *smsIdentifier;
 
 + (id)draftShow;
 + (id)draftShowWithDictionary:(id)arg1 context:(id)arg2;

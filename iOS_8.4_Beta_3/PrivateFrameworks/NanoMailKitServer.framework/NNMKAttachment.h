@@ -9,10 +9,10 @@
     unsigned long long _type;
 }
 
-@property(assign,retain) NSString * contentId;
-@property(assign,retain) NSString * fileName;
-@property(assign,readwrite) unsigned long long fileSize;
-@property(assign,readwrite) unsigned long long type;
+@property (nonatomic, retain) NSString *contentId;
+@property (nonatomic, retain) NSString *fileName;
+@property (nonatomic) unsigned long long fileSize;
+@property (nonatomic) unsigned long long type;
 
 + (bool)supportsSecureCoding;
 

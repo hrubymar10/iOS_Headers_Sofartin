@@ -11,12 +11,12 @@
     NSMutableArray *_orderedIdentifiers;
 }
 
-@property(assign,readwrite) int brailleInputMode;
-@property(assign,retain) NSBundle * bundle;
-@property(assign,retain) NSMutableDictionary * commandDictionary;
-@property(assign,retain) NSString * driverIdentifier;
-@property(assign,retain) NSString * modelIdentifier;
-@property(assign,retain) NSMutableArray * orderedIdentifiers;
+@property (nonatomic) int brailleInputMode;
+@property (nonatomic, retain) NSBundle *bundle;
+@property (nonatomic, retain) NSMutableDictionary *commandDictionary;
+@property (nonatomic, retain) NSString *driverIdentifier;
+@property (nonatomic, retain) NSString *modelIdentifier;
+@property (nonatomic, retain) NSMutableArray *orderedIdentifiers;
 
 - (int)brailleInputMode;
 - (id)bundle;

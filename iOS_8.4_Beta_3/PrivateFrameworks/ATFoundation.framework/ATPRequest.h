@@ -7,10 +7,10 @@
     NSString *_dataClass;
 }
 
-@property(assign,retain) NSString * command;
-@property(assign,retain) NSString * dataClass;
-@property(assign,readonly) bool hasCommand;
-@property(assign,readonly) bool hasDataClass;
+@property (nonatomic, retain) NSString *command;
+@property (nonatomic, retain) NSString *dataClass;
+@property (nonatomic, readonly) bool hasCommand;
+@property (nonatomic, readonly) bool hasDataClass;
 
 - (void).cxx_destruct;
 - (id)command;

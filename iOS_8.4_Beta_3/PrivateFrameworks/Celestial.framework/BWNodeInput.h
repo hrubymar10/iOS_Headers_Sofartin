@@ -22,24 +22,24 @@
     int _retainedBufferCount;
 }
 
-@property(assign,readwrite) long long configurationID;
-@property(assign,readwrite) BWNodeConnection * connection;
-@property(assign,readwrite) int delayedBufferCount;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,copy) BWFormat * format;
-@property(assign,copy) BWFormatRequirements * formatRequirements;
-@property(assign,readwrite) int indefinitelyHeldBufferCount;
-@property(assign,readonly) unsigned long long index;
-@property(assign,readonly) long long liveConfigurationID;
-@property(assign,retain) BWFormat * liveFormat;
-@property(assign,readonly) unsigned int mediaType;
-@property(assign,readonly) BWNode * node;
-@property(assign,readonly) unsigned int numberOfBuffersDropped;
-@property(assign,readonly) unsigned int numberOfBuffersReceived;
-@property(assign,readwrite) bool passesBuffersDownstream;
-@property(assign,readwrite) int passthroughMode;
-@property(assign,readwrite) int retainedBufferCount;
-@property(assign,readonly) BWVideoFormat * videoFormat;
+@property (nonatomic) long long configurationID;
+@property (nonatomic) BWNodeConnection *connection;
+@property (nonatomic) int delayedBufferCount;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic, copy) BWFormat *format;
+@property (nonatomic, copy) BWFormatRequirements *formatRequirements;
+@property (nonatomic) int indefinitelyHeldBufferCount;
+@property (nonatomic, readonly) unsigned long long index;
+@property (nonatomic, readonly) long long liveConfigurationID;
+@property (nonatomic, retain) BWFormat *liveFormat;
+@property (nonatomic, readonly) unsigned int mediaType;
+@property (nonatomic, readonly) BWNode *node;
+@property (nonatomic, readonly) unsigned int numberOfBuffersDropped;
+@property (nonatomic, readonly) unsigned int numberOfBuffersReceived;
+@property (nonatomic) bool passesBuffersDownstream;
+@property (nonatomic) int passthroughMode;
+@property (nonatomic) int retainedBufferCount;
+@property (nonatomic, readonly) BWVideoFormat *videoFormat;
 
 + (void)initialize;
 

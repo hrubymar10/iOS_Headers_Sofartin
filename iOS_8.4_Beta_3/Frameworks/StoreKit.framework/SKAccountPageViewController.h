@@ -11,7 +11,7 @@
     SKInvocationQueueProxy<SKUIServiceAccountPageViewController> *_serviceProxy;
 }
 
-@property(assign,readwrite) <SKAccountPageViewControllerDelegate> * delegate;
+@property (nonatomic) <SKAccountPageViewControllerDelegate> *delegate;
 
 - (void)_addRemoteView;
 - (void)_didPrepareWithResult:(bool)arg1 error:(id)arg2;

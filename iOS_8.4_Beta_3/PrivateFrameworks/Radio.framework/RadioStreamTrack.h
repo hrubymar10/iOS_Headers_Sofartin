@@ -4,10 +4,10 @@
 
 @interface RadioStreamTrack : RadioTrack
 
-@property(assign,retain) NSURL * certificateURL;
-@property(assign,retain) NSURL * contentURL;
-@property(assign,retain) NSURL * keyServerURL;
-@property(getter=isSkipable,assign,readonly) bool skipable;
+@property (nonatomic, readonly, retain) NSURL *certificateURL;
+@property (nonatomic, readonly, retain) NSURL *contentURL;
+@property (nonatomic, readonly, retain) NSURL *keyServerURL;
+@property (getter=isSkipable, nonatomic, readonly) bool skipable;
 
 - (id)certificateURL;
 - (id)contentURL;

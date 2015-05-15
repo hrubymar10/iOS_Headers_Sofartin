@@ -16,14 +16,14 @@
     NSMutableIndexSet *_unhandledIndexSet;
 }
 
-@property(assign,readwrite) bool hasListLabel;
-@property(assign,readwrite) bool isVisible;
-@property(assign,readwrite) double opacityFromRenderer;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,readwrite) TSWPShapeRep * rep;
-@property(assign,readwrite) long long stageIndex;
-@property(assign,copy) NSString * stringValue;
-@property(assign,retain) NSMutableIndexSet * unhandledIndexSet;
+@property (nonatomic) bool hasListLabel;
+@property (nonatomic) bool isVisible;
+@property (nonatomic) double opacityFromRenderer;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic) TSWPShapeRep *rep;
+@property (nonatomic) long long stageIndex;
+@property (nonatomic, copy) NSString *stringValue;
+@property (nonatomic, retain) NSMutableIndexSet *unhandledIndexSet;
 
 - (id).cxx_construct;
 - (void)dealloc;

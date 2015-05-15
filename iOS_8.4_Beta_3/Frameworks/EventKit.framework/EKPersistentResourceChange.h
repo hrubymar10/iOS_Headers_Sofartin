@@ -4,21 +4,21 @@
 
 @interface EKPersistentResourceChange : EKPersistentObject
 
-@property(assign,readonly) bool alerted;
-@property(assign,retain) EKPersistentCalendar * calendar;
-@property(assign,retain) EKPersistentCalendarItem * calendarItem;
-@property(assign,readonly) unsigned int changeType;
-@property(assign,copy) NSURL * changedByAddress;
-@property(assign,copy) NSString * changedByDisplayName;
-@property(assign,copy) NSString * changedByFirstName;
-@property(assign,copy) NSString * changedByLastName;
-@property(assign,readonly) unsigned int changedProperties;
-@property(assign,readonly) NSNumber * createCount;
-@property(assign,readonly) NSNumber * deleteCount;
-@property(assign,readonly) NSString * deletedTitle;
-@property(assign,readonly) unsigned int publicStatus;
-@property(assign,copy) NSDate * timestamp;
-@property(assign,readonly) NSNumber * updateCount;
+@property (nonatomic, readonly) bool alerted;
+@property (nonatomic, readonly, retain) EKPersistentCalendar *calendar;
+@property (nonatomic, readonly, retain) EKPersistentCalendarItem *calendarItem;
+@property (nonatomic, readonly) unsigned int changeType;
+@property (nonatomic, readonly, copy) NSURL *changedByAddress;
+@property (nonatomic, readonly, copy) NSString *changedByDisplayName;
+@property (nonatomic, readonly, copy) NSString *changedByFirstName;
+@property (nonatomic, readonly, copy) NSString *changedByLastName;
+@property (nonatomic, readonly) unsigned int changedProperties;
+@property (nonatomic, readonly) NSNumber *createCount;
+@property (nonatomic, readonly) NSNumber *deleteCount;
+@property (nonatomic, readonly) NSString *deletedTitle;
+@property (nonatomic, readonly) unsigned int publicStatus;
+@property (nonatomic, readonly, copy) NSDate *timestamp;
+@property (nonatomic, readonly) NSNumber *updateCount;
 
 + (id)defaultPropertiesToLoad;
 + (id)relations;

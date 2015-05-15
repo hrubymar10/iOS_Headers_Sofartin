@@ -7,8 +7,8 @@
     NSUUID *_outOfSyncToken;
 }
 
-@property(assign,readonly) NSUUID * outOfSyncToken;
-@property(getter=isRecordingOutOfSync,assign,readonly) bool recordingOutOfSync;
+@property (nonatomic, readonly) NSUUID *outOfSyncToken;
+@property (getter=isRecordingOutOfSync, nonatomic, readonly) bool recordingOutOfSync;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

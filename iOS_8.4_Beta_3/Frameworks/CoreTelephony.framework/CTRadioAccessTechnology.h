@@ -6,7 +6,7 @@
     CTTelephonyNetworkInfo *_networkInfo;
 }
 
-@property(assign,readonly) NSString * radioAccessTechnology;
+@property (readonly) NSString *radioAccessTechnology;
 
 - (void)dealloc;
 - (id)init;

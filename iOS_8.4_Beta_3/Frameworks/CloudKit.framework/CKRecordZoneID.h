@@ -7,8 +7,8 @@
     NSString *_zoneName;
 }
 
-@property(assign,retain) NSString * ownerName;
-@property(assign,retain) NSString * zoneName;
+@property (nonatomic, retain) NSString *ownerName;
+@property (nonatomic, retain) NSString *zoneName;
 
 + (bool)supportsSecureCoding;
 

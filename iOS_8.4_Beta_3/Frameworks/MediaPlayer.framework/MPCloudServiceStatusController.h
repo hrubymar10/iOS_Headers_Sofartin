@@ -22,18 +22,18 @@
     unsigned long long _subscriptionStatusObservationCount;
 }
 
-@property(getter=isCloudLibraryEnabled,assign,readonly) bool cloudLibraryEnabled;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasSubscriptionLease;
-@property(assign,readonly) bool hasSubscriptionSlot;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long matchStatus;
-@property(assign,readonly) SSVPlaybackLease * playbackLease;
-@property(getter=isPurchaseHistoryEnabled,assign,readonly) bool purchaseHistoryEnabled;
-@property(getter=isSubscriptionAvailable,assign,readonly) bool subscriptionAvailable;
-@property(assign,copy) SSVSubscriptionStatus * subscriptionStatus;
-@property(assign,readonly) Class superclass;
+@property (getter=isCloudLibraryEnabled, nonatomic, readonly) bool cloudLibraryEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasSubscriptionLease;
+@property (nonatomic, readonly) bool hasSubscriptionSlot;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long matchStatus;
+@property (nonatomic, readonly) SSVPlaybackLease *playbackLease;
+@property (getter=isPurchaseHistoryEnabled, nonatomic, readonly) bool purchaseHistoryEnabled;
+@property (getter=isSubscriptionAvailable, nonatomic, readonly) bool subscriptionAvailable;
+@property (nonatomic, readonly, copy) SSVSubscriptionStatus *subscriptionStatus;
+@property (readonly) Class superclass;
 
 + (id)sharedController;
 

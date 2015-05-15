@@ -7,11 +7,11 @@
     <XPCNSClientConnectionDelegate> *_delegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) <XPCNSClientConnectionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) <XPCNSClientConnectionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)XPCClientConnection:(id)arg1 didReceiveRequest:(id)arg2;

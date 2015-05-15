@@ -12,14 +12,14 @@
     unsigned long long _providerVersion;
 }
 
-@property(assign,retain) PLRevGeoCompoundNameInfo * compoundNameInfo;
-@property(assign,retain) PLRevGeoCompoundNameInfo * compoundSecondaryNameInfo;
-@property(assign,copy) NSString * countryCode;
-@property(assign,retain) <GEOMapItemPrivate> * geoMapItem;
-@property(assign,readwrite) bool isHome;
-@property(assign,readonly) bool isValid;
-@property(assign,retain) NSString * providerId;
-@property(assign,readwrite) unsigned long long providerVersion;
+@property (nonatomic, retain) PLRevGeoCompoundNameInfo *compoundNameInfo;
+@property (nonatomic, retain) PLRevGeoCompoundNameInfo *compoundSecondaryNameInfo;
+@property (nonatomic, readonly, copy) NSString *countryCode;
+@property (nonatomic, retain) <GEOMapItemPrivate> *geoMapItem;
+@property (nonatomic) bool isHome;
+@property (nonatomic, readonly) bool isValid;
+@property (nonatomic, retain) NSString *providerId;
+@property (nonatomic) unsigned long long providerVersion;
 
 + (id)_namingOrderForAssetReverseGeoDescription;
 + (id)_newRevGeoLocationInfoFromData:(id)arg1;

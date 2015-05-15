@@ -11,11 +11,11 @@
     EKSharee *_sharee;
 }
 
-@property(assign,readwrite) bool allowEditing;
-@property(assign,readwrite) bool allowResendInvitations;
-@property(assign,readwrite) bool allowStopSharing;
-@property(assign,readwrite) <EKShareeViewControllerDelegate> * delegate;
-@property(assign,retain) EKSharee * sharee;
+@property (nonatomic) bool allowEditing;
+@property (nonatomic) bool allowResendInvitations;
+@property (nonatomic) bool allowStopSharing;
+@property (nonatomic) <EKShareeViewControllerDelegate> *delegate;
+@property (nonatomic, retain) EKSharee *sharee;
 
 - (void).cxx_destruct;
 - (void)_allowEditingChanged:(id)arg1;

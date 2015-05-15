@@ -6,11 +6,11 @@
     _GKBubbleFlowTransitionInfo *_transitionInfo;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) _GKBubbleFlowTransitionInfo * transitionInfo;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) _GKBubbleFlowTransitionInfo *transitionInfo;
 
 - (void)_animateTransition:(id)arg1;
 - (void)_animateTransitionInTwoParts:(id)arg1;

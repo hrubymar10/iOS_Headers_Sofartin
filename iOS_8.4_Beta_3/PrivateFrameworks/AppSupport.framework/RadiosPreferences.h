@@ -12,9 +12,9 @@
     bool notifyForExternalChangeOnly;
 }
 
-@property(assign,readwrite) bool airplaneMode;
-@property(assign,readwrite) <RadiosPreferencesDelegate> * delegate;
-@property(assign,readwrite) bool notifyForExternalChangeOnly;
+@property (nonatomic) bool airplaneMode;
+@property (nonatomic) <RadiosPreferencesDelegate> *delegate;
+@property (nonatomic) bool notifyForExternalChangeOnly;
 
 + (bool)shouldMirrorAirplaneMode;
 

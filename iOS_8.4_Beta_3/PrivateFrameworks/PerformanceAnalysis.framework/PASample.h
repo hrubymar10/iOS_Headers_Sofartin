@@ -8,13 +8,13 @@
     double _wallTimestamp;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double machTimestamp;
-@property(assign,readonly) NSArray * sampleTasks;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) double wallTimestamp;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) double machTimestamp;
+@property (readonly) NSArray *sampleTasks;
+@property (readonly) Class superclass;
+@property (readonly) double wallTimestamp;
 
 + (id)classDictionaryKey;
 + (id)newInstanceWithoutReferencesFromBufferPosition:(const void*)arg1;

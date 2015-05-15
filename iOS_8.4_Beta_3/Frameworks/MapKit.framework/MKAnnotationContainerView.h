@@ -37,21 +37,21 @@
     NSMutableSet *_viewsToAnimate;
 }
 
-@property(assign,readwrite) bool allowsPopoverWhenNotInWindow;
-@property(assign,readonly) NSMutableArray * annotationViews;
-@property(assign,readonly) MKPinAnnotationView * bubblePin;
-@property(assign,readonly) MKAnnotationView * calloutAnnotationView;
-@property(assign,readonly) struct { long long x1; struct { double x_2_1_1; double x_2_1_2; } x2; struct CGPoint { double x_3_1_1; double x_3_1_2; } x3; struct CGPoint { double x_4_1_1; double x_4_1_2; } x4; id x5; bool x6; } currentComparisonContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MKAnnotationContainerViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasDroppingPins;
-@property(assign,readonly) bool hasPendingAnimations;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long mapType;
-@property(assign,readonly) UIPopoverController * popoverController;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) MKAnnotationView * userLocationView;
+@property (nonatomic) bool allowsPopoverWhenNotInWindow;
+@property (nonatomic, readonly) NSMutableArray *annotationViews;
+@property (nonatomic, readonly) MKPinAnnotationView *bubblePin;
+@property (nonatomic, readonly) MKAnnotationView *calloutAnnotationView;
+@property (nonatomic, readonly) struct { long long x1; struct { double x_2_1_1; double x_2_1_2; } x2; struct CGPoint { double x_3_1_1; double x_3_1_2; } x3; struct CGPoint { double x_4_1_1; double x_4_1_2; } x4; id x5; bool x6; } currentComparisonContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MKAnnotationContainerViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasDroppingPins;
+@property (nonatomic, readonly) bool hasPendingAnimations;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long mapType;
+@property (nonatomic, readonly) UIPopoverController *popoverController;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) MKAnnotationView *userLocationView;
 
 - (void).cxx_destruct;
 - (id)_annotationViewForSelectionAtPoint:(struct CGPoint { double x1; double x2; })arg1 avoidCurrent:(bool)arg2 maxDistance:(double)arg3;

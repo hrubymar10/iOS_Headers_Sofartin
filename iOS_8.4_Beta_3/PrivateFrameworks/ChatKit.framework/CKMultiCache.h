@@ -6,7 +6,7 @@
     unsigned long long _limit;
 }
 
-@property(assign,readwrite) unsigned long long limit;
+@property (nonatomic) unsigned long long limit;
 
 - (void)dealloc;
 - (id)init;

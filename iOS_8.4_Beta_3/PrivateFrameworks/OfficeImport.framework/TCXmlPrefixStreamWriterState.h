@@ -7,8 +7,8 @@
     NSString *_elementPrefix;
 }
 
-@property(assign,copy) NSString * attributePrefix;
-@property(assign,copy) NSString * elementPrefix;
+@property (nonatomic, copy) NSString *attributePrefix;
+@property (nonatomic, copy) NSString *elementPrefix;
 
 - (id)attributePrefix;
 - (void)dealloc;

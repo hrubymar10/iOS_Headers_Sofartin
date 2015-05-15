@@ -8,13 +8,13 @@
     UIView *_topBorderView;
 }
 
-@property(assign,copy) NSAttributedString * attributedPlaceholder;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,readwrite) long long keyboardType;
-@property(assign,copy) NSString * label;
-@property(assign,readonly) UIControl * textField;
-@property(assign,readwrite) <UITextFieldDelegate> * textFieldDelegate;
-@property(assign,copy) NSString * value;
+@property (nonatomic, copy) NSAttributedString *attributedPlaceholder;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, readonly) UIControl *textField;
+@property (nonatomic) <UITextFieldDelegate> *textFieldDelegate;
+@property (nonatomic, copy) NSString *value;
 
 - (void).cxx_destruct;
 - (id)attributedPlaceholder;

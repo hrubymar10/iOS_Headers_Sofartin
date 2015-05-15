@@ -8,9 +8,9 @@
     NSNumber *_token;
 }
 
-@property(assign,copy) id messageHandler;
-@property(assign,retain) NSObject<OS_dispatch_queue> * receiverQueue;
-@property(assign,retain) NSNumber * token;
+@property (nonatomic, copy) id messageHandler;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *receiverQueue;
+@property (nonatomic, retain) NSNumber *token;
 
 + (id)msgHandler:(id)arg1 token:(id)arg2 receiverQueue:(id)arg3;
 

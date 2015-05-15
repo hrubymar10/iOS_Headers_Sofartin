@@ -26,14 +26,14 @@
     unsigned int mGLVertexArrayObjects;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned int drawMode;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isDoubleBuffered;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSArray * vertexAttributes;
-@property(assign,readonly) unsigned long long vertexCount;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) unsigned int drawMode;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isDoubleBuffered;
+@property (readonly) Class superclass;
+@property (readonly) NSArray *vertexAttributes;
+@property (readonly) unsigned long long vertexCount;
 
 - (struct { float x1; float x2; })GLPoint2DForAttribute:(id)arg1 atIndex:(unsigned long long)arg2;
 - (struct { float x1; float x2; float x3; })GLPoint3DForAttribute:(id)arg1 atIndex:(unsigned long long)arg2;

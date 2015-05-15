@@ -8,13 +8,13 @@
     long long _state;
 }
 
-@property(assign,retain) XPCClient * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,retain) <WPAdvertisingDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) XPCClient *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, retain) <WPAdvertisingDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property long long state;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)connection;

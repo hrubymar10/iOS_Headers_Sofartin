@@ -6,8 +6,8 @@
     CKDPRecordZoneIdentifier *_zoneIdentifier;
 }
 
-@property(assign,readonly) bool hasZoneIdentifier;
-@property(assign,retain) CKDPRecordZoneIdentifier * zoneIdentifier;
+@property (nonatomic, readonly) bool hasZoneIdentifier;
+@property (nonatomic, retain) CKDPRecordZoneIdentifier *zoneIdentifier;
 
 + (id)options;
 

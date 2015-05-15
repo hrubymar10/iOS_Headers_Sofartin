@@ -4,15 +4,15 @@
 
 @interface RadioMutablePlayEvent : RadioPlayEvent
 
-@property(assign,retain) NSDate * datePlayed;
-@property(assign,readwrite) long long endReason;
-@property(assign,readwrite) double endTimeInTrack;
-@property(assign,copy) NSString * externalIdentifier;
-@property(assign,readwrite) double startTimeInTrack;
-@property(assign,readwrite) long long storeID;
-@property(assign,copy) NSData * timedMetadata;
-@property(assign,copy) NSDictionary * trackInfo;
-@property(assign,readwrite) long long type;
+@property (nonatomic, retain) NSDate *datePlayed;
+@property (nonatomic) long long endReason;
+@property (nonatomic) double endTimeInTrack;
+@property (nonatomic, copy) NSString *externalIdentifier;
+@property (nonatomic) double startTimeInTrack;
+@property (nonatomic) long long storeID;
+@property (nonatomic, copy) NSData *timedMetadata;
+@property (nonatomic, copy) NSDictionary *trackInfo;
+@property (nonatomic) long long type;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)setDatePlayed:(id)arg1;

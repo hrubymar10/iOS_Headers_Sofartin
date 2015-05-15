@@ -4,12 +4,12 @@
 
 @interface CABasicAnimation : CAPropertyAnimation
 
-@property(assign,retain) id byValue;
-@property(assign,readwrite) double endAngle;
-@property(assign,retain) id fromValue;
-@property(assign,readwrite) bool roundsToInteger;
-@property(assign,readwrite) double startAngle;
-@property(assign,retain) id toValue;
+@property (retain) id byValue;
+@property double endAngle;
+@property (retain) id fromValue;
+@property bool roundsToInteger;
+@property double startAngle;
+@property (retain) id toValue;
 
 + (id)normalizedAnimationWithKeyPath:(id)arg1 fromValue:(id)arg2 toValue:(id)arg3;
 

@@ -9,7 +9,7 @@
     RadioStation *_station;
 }
 
-@property(assign,readonly) RadioStation * station;
+@property (nonatomic, readonly) RadioStation *station;
 
 - (void).cxx_destruct;
 - (void)_loadStationShareInfoForShareType:(long long)arg1 withCompletionHandler:(id)arg2;

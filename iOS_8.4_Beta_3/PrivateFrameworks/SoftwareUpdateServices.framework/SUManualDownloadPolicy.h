@@ -15,15 +15,15 @@
     bool _powerRequired;
 }
 
-@property(getter=isDownloadAllowableForCellular,assign,readwrite) bool downloadAllowableForCellular;
-@property(getter=isDownloadAllowableForCellular2G,assign,readwrite) bool downloadAllowableForCellular2G;
-@property(getter=isDownloadAllowableForCellularRoaming,assign,readwrite) bool downloadAllowableForCellularRoaming;
-@property(getter=isDownloadAllowableForWiFi,assign,readwrite) bool downloadAllowableForWiFi;
-@property(getter=isDownloadFreeForCellular,assign,readwrite) bool downloadFreeForCellular;
-@property(getter=isDownloadable,assign,readwrite) bool downloadable;
-@property(assign,retain) Class fakeClass;
-@property(getter=hasEnoughDiskSpace,assign,readwrite) bool hasEnoughDiskSpace;
-@property(getter=isPowerRequired,assign,readwrite) bool powerRequired;
+@property (getter=isDownloadAllowableForCellular, nonatomic) bool downloadAllowableForCellular;
+@property (getter=isDownloadAllowableForCellular2G, nonatomic) bool downloadAllowableForCellular2G;
+@property (getter=isDownloadAllowableForCellularRoaming, nonatomic) bool downloadAllowableForCellularRoaming;
+@property (getter=isDownloadAllowableForWiFi, nonatomic) bool downloadAllowableForWiFi;
+@property (getter=isDownloadFreeForCellular, nonatomic) bool downloadFreeForCellular;
+@property (getter=isDownloadable, nonatomic) bool downloadable;
+@property (nonatomic, retain) Class fakeClass;
+@property (getter=hasEnoughDiskSpace, nonatomic) bool hasEnoughDiskSpace;
+@property (getter=isPowerRequired, nonatomic) bool powerRequired;
 
 - (Class)class;
 - (Class)fakeClass;

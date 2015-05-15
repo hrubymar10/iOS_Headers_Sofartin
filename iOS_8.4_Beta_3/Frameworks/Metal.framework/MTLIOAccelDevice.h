@@ -34,10 +34,10 @@
     unsigned long long _videoRam;
 }
 
-@property(assign,readonly) unsigned long long* defaultBufferOptions;
-@property(assign,readonly) unsigned int hwResourcePoolCount;
-@property(assign,readonly) id* hwResourcePools;
-@property(assign,readonly) int numCommandBuffers;
+@property (readonly) unsigned long long*defaultBufferOptions;
+@property (readonly) unsigned int hwResourcePoolCount;
+@property (readonly) id*hwResourcePools;
+@property (readonly) int numCommandBuffers;
 
 + (void)registerDevices;
 

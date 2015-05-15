@@ -7,8 +7,8 @@
     NSMutableArray *_interfaces;
 }
 
-@property(assign,readwrite) <CoreRCInterfaceListenerDelegate> * delegate;
-@property(assign,readonly) NSArray * interfaces;
+@property (nonatomic) <CoreRCInterfaceListenerDelegate> *delegate;
+@property (nonatomic, readonly) NSArray *interfaces;
 
 - (void)addInterface:(id)arg1;
 - (void)dealloc;

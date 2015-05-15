@@ -30,20 +30,20 @@
     double _trackInset;
 }
 
-@property(assign,readwrite) bool allowsDetailScrubbing;
-@property(assign,readwrite) bool allowsScrubbing;
-@property(assign,readwrite) double availableDuration;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPDetailSliderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool detailScrubbingAvailableForCurrentDuration;
-@property(assign,readwrite) double detailScrubbingVerticalRange;
-@property(assign,readwrite) double duration;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * localizedScrubSpeedText;
-@property(assign,readwrite) double minTimeLabelWidth;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long timeLabelStyle;
+@property (nonatomic) bool allowsDetailScrubbing;
+@property (nonatomic) bool allowsScrubbing;
+@property (nonatomic) double availableDuration;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPDetailSliderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool detailScrubbingAvailableForCurrentDuration;
+@property (nonatomic) double detailScrubbingVerticalRange;
+@property (nonatomic) double duration;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *localizedScrubSpeedText;
+@property (nonatomic) double minTimeLabelWidth;
+@property (readonly) Class superclass;
+@property (nonatomic) long long timeLabelStyle;
 
 + (Class)labelClass;
 

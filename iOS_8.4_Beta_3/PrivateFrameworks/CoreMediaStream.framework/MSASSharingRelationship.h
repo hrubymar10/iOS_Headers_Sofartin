@@ -17,18 +17,18 @@
     NSDate *_subscriptionDate;
 }
 
-@property(assign,retain) NSString * GUID;
-@property(assign,retain) NSString * albumGUID;
-@property(assign,retain) NSString * email;
-@property(assign,retain) NSArray * emails;
-@property(assign,retain) NSString * firstName;
-@property(assign,retain) NSString * fullName;
-@property(assign,readwrite) bool isMine;
-@property(assign,retain) NSString * lastName;
-@property(assign,retain) NSString * personID;
-@property(assign,retain) NSArray * phones;
-@property(assign,readwrite) int state;
-@property(assign,retain) NSDate * subscriptionDate;
+@property (nonatomic, retain) NSString *GUID;
+@property (nonatomic, retain) NSString *albumGUID;
+@property (nonatomic, retain) NSString *email;
+@property (nonatomic, retain) NSArray *emails;
+@property (nonatomic, retain) NSString *firstName;
+@property (nonatomic, retain) NSString *fullName;
+@property (nonatomic) bool isMine;
+@property (nonatomic, retain) NSString *lastName;
+@property (nonatomic, retain) NSString *personID;
+@property (nonatomic, retain) NSArray *phones;
+@property (nonatomic) int state;
+@property (nonatomic, retain) NSDate *subscriptionDate;
 
 + (id)MSASPSharingRelationshipFromProtocolDictionary:(id)arg1;
 + (bool)supportsSecureCoding;

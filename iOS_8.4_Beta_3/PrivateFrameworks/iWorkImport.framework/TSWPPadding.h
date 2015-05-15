@@ -9,14 +9,14 @@
     double _topInset;
 }
 
-@property(assign,readwrite) double bottomInset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double leftInset;
-@property(assign,readwrite) double rightInset;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double topInset;
+@property (nonatomic) double bottomInset;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double leftInset;
+@property (nonatomic) double rightInset;
+@property (readonly) Class superclass;
+@property (nonatomic) double topInset;
 
 + (id)padding;
 + (id)paddingWithTopInset:(double)arg1 leftInset:(double)arg2 bottomInset:(double)arg3 rightInset:(double)arg4;

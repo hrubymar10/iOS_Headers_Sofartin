@@ -4,13 +4,13 @@
 
 @interface DOMHTMLScriptElement : DOMHTMLElement
 
-@property(assign,copy) NSString * charset;
-@property(assign,readwrite) bool defer;
-@property(assign,copy) NSString * event;
-@property(assign,copy) NSString * htmlFor;
-@property(assign,copy) NSString * src;
-@property(assign,copy) NSString * text;
-@property(assign,copy) NSString * type;
+@property (copy) NSString *charset;
+@property bool defer;
+@property (copy) NSString *event;
+@property (copy) NSString *htmlFor;
+@property (copy) NSString *src;
+@property (copy) NSString *text;
+@property (copy) NSString *type;
 
 - (bool)async;
 - (id)charset;

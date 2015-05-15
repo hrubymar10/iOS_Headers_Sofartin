@@ -11,8 +11,8 @@
     long long _nsecsBeforeForgettingCounter;
 }
 
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) long long nsecsBeforeForgettingCounter;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) long long nsecsBeforeForgettingCounter;
 
 - (void).cxx_destruct;
 - (id)initWithName:(id)arg1 andParameters:(id)arg2;

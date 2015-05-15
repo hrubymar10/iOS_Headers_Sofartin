@@ -10,10 +10,10 @@
     NSMutableIndexSet *_selectedIndexes;
 }
 
-@property(assign,readonly) PHAssetCollection * assetCollection;
-@property(assign,readonly) PHFetchResult * fetchResult;
-@property(assign,readonly) NSArray * selectedAssets;
-@property(assign,readonly) NSIndexSet * selectedIndexes;
+@property (nonatomic, readonly) PHAssetCollection *assetCollection;
+@property (nonatomic, readonly) PHFetchResult *fetchResult;
+@property (nonatomic, readonly) NSArray *selectedAssets;
+@property (nonatomic, readonly) NSIndexSet *selectedIndexes;
 
 - (void).cxx_destruct;
 - (void)_ensureValidAssetIndexes;

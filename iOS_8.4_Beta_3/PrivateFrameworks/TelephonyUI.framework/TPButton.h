@@ -10,9 +10,9 @@
     bool _usesOverlayBlendingForContents;
 }
 
-@property(assign,readwrite) bool blursBackground;
-@property(assign,readwrite) bool roundsCorners;
-@property(assign,readwrite) bool usesOverlayBlendingForContents;
+@property (nonatomic) bool blursBackground;
+@property (nonatomic) bool roundsCorners;
+@property (nonatomic) bool usesOverlayBlendingForContents;
 
 + (double)defaultHeight;
 + (double)defaultHeightForColor:(int)arg1;

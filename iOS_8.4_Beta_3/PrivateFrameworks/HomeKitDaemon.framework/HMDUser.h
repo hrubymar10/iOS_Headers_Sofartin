@@ -12,13 +12,13 @@
     NSUUID *_uuid;
 }
 
-@property(assign,readonly) HMDHome * home;
-@property(assign,copy) NSString * pairingUsername;
-@property(assign,readonly) unsigned long long privilege;
-@property(assign,copy) NSData * publicKey;
-@property(getter=isRemoteGateway,assign,readonly) bool remoteGateway;
-@property(assign,copy) NSString * userID;
-@property(assign,copy) NSUUID * uuid;
+@property (nonatomic, readonly) HMDHome *home;
+@property (nonatomic, readonly, copy) NSString *pairingUsername;
+@property (nonatomic, readonly) unsigned long long privilege;
+@property (nonatomic, readonly, copy) NSData *publicKey;
+@property (getter=isRemoteGateway, nonatomic, readonly) bool remoteGateway;
+@property (nonatomic, readonly, copy) NSString *userID;
+@property (nonatomic, readonly, copy) NSUUID *uuid;
 
 + (bool)supportsSecureCoding;
 

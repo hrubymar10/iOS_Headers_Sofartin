@@ -11,13 +11,13 @@
     KNThumbnailManager *mThumbnailManager;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <KNDocumentRootDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isShowcastAllowed;
-@property(assign,retain) KNShow * show;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <KNDocumentRootDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isShowcastAllowed;
+@property (nonatomic, retain) KNShow *show;
+@property (readonly) Class superclass;
 
 + (void)localizeModelObject:(id)arg1 withTemplateBundle:(id)arg2;
 

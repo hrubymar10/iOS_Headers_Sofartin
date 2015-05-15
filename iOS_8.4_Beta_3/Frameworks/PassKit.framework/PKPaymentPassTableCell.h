@@ -16,9 +16,9 @@
     UIColor *_subTextLabelColor;
 }
 
-@property(assign,readwrite) UIColor * highlightColor;
-@property(assign,readwrite) UIColor * mainLabelColor;
-@property(assign,readwrite) UIColor * subTextLabelColor;
+@property (nonatomic) UIColor *highlightColor;
+@property (nonatomic) UIColor *mainLabelColor;
+@property (nonatomic) UIColor *subTextLabelColor;
 
 - (id)_stringForPassState:(unsigned long long)arg1;
 - (id)_textColorForPassState:(unsigned long long)arg1;

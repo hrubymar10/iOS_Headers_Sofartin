@@ -8,9 +8,9 @@
     SKUniform *uniform;
 }
 
-@property(assign,readwrite) unsigned long long seed;
-@property(assign,readwrite) unsigned long long textureTarget;
-@property(assign,retain) SKUniform * uniform;
+@property unsigned long long seed;
+@property unsigned long long textureTarget;
+@property (retain) SKUniform *uniform;
 
 - (void).cxx_destruct;
 - (id)init;

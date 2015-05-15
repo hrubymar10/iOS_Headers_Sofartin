@@ -18,7 +18,7 @@
     double _unreadMessageIndicatorUpdateTime;
 }
 
-@property(assign,readonly) bool hasUnreadMessages;
+@property (nonatomic, readonly) bool hasUnreadMessages;
 
 + (id)_allEmailValuesForRecord:(void*)arg1;
 + (id)_allEmailValuesInSet:(id)arg1;

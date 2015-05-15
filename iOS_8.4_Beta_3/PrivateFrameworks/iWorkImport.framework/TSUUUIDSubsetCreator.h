@@ -14,8 +14,8 @@
     TSUUUIDSetStore *_uuidSetStore;
 }
 
-@property(assign,readonly) const /* Warning: unhandled struct encoding: '{vector<TSU::UUIDData<TSP::UUIDData>' */ struct * baseUuidVector; /* unknown property attribute:  std::__1::allocator<TSU::UUIDData<TSP::UUIDData> > >=^{UUIDData<TSP::UUIDData>}}} */
-@property(assign,readonly) TSUUUIDSetStore * uuidSetStore;
+@property (readonly) const /* Warning: unhandled struct encoding: '{vector<TSU::UUIDData<TSP::UUIDData>' */ struct *baseUuidVector; /* unknown property attribute:  std::__1::allocator<TSU::UUIDData<TSP::UUIDData> > >=^{UUIDData<TSP::UUIDData>}}} */
+@property (readonly) TSUUUIDSetStore *uuidSetStore;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

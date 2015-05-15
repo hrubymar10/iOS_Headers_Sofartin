@@ -11,7 +11,7 @@
     bool _success;
 }
 
-@property(assign,readwrite) <SKUISettingsEditTransactionDelegate> * delegate;
+@property (nonatomic) <SKUISettingsEditTransactionDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (void)_delegateDidCompleteTransaction;

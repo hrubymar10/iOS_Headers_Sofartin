@@ -12,13 +12,13 @@
     int _type;
 }
 
-@property(assign,copy) NSArray * bcc;
-@property(assign,retain) NSString * body;
-@property(assign,copy) NSArray * cc;
-@property(assign,retain) NSURL * reference;
-@property(assign,copy) NSString * subject;
-@property(assign,copy) NSArray * to;
-@property(assign,readwrite) int type;
+@property (nonatomic, copy) NSArray *bcc;
+@property (nonatomic, retain) NSString *body;
+@property (nonatomic, copy) NSArray *cc;
+@property (nonatomic, retain) NSURL *reference;
+@property (nonatomic, copy) NSString *subject;
+@property (nonatomic, copy) NSArray *to;
+@property (nonatomic) int type;
 
 - (id)bcc;
 - (id)body;

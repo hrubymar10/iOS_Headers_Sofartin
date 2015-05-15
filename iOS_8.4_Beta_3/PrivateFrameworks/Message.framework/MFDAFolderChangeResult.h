@@ -9,10 +9,10 @@
     long long _statusCode;
 }
 
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) NSString * folderID;
-@property(assign,readonly) NSString * folderName;
-@property(assign,readonly) long long statusCode;
+@property (readonly) NSError *error;
+@property (readonly) NSString *folderID;
+@property (readonly) NSString *folderName;
+@property (readonly) long long statusCode;
 
 - (void)dealloc;
 - (id)description;

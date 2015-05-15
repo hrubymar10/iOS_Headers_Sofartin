@@ -9,14 +9,14 @@
     long long _selectedButtonIndex;
 }
 
-@property(assign,copy) NSNumber * authenticatedAccountIdentifier;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long performedButtonIndex;
-@property(assign,copy) NSURL * redirectURL;
-@property(assign,readwrite) long long selectedButtonIndex;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSNumber *authenticatedAccountIdentifier;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long performedButtonIndex;
+@property (nonatomic, copy) NSURL *redirectURL;
+@property (nonatomic) long long selectedButtonIndex;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)authenticatedAccountIdentifier;

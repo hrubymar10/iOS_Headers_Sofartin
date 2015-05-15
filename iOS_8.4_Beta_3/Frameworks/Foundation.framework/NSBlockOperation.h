@@ -7,7 +7,7 @@
     void *_reserved2;
 }
 
-@property(assign,copy) NSArray * executionBlocks;
+@property (readonly, copy) NSArray *executionBlocks;
 
 + (id)blockOperationWithBlock:(id)arg1;
 

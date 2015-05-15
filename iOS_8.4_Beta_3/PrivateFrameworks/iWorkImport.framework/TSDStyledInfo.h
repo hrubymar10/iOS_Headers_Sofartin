@@ -4,16 +4,16 @@
 
 @interface TSDStyledInfo : TSDDrawableInfo <TSSStyleClient>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) float opacity;
-@property(assign,readonly) bool pathIsOpen;
-@property(assign,copy) TSDReflection * reflection;
-@property(assign,copy) TSDShadow * shadow;
-@property(assign,copy) TSDStroke * stroke;
-@property(assign,retain) TSSStyle * style;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) float opacity;
+@property (nonatomic, readonly) bool pathIsOpen;
+@property (nonatomic, copy) TSDReflection *reflection;
+@property (nonatomic, copy) TSDShadow *shadow;
+@property (nonatomic, copy) TSDStroke *stroke;
+@property (nonatomic, retain) TSSStyle *style;
+@property (readonly) Class superclass;
 
 - (void)adoptStylesheet:(id)arg1 withMapper:(id)arg2;
 - (id)boxedValueForProperty:(int)arg1;

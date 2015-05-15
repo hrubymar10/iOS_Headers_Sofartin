@@ -4,7 +4,7 @@
 
 @interface SKUISortDescriptorListViewElement : SKUIViewElement
 
-@property(assign,copy) NSArray * sortDescriptorViewElements;
+@property (nonatomic, readonly, copy) NSArray *sortDescriptorViewElements;
 
 - (id)sortDescriptorViewElements;
 

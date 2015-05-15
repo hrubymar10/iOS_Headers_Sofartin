@@ -14,15 +14,15 @@
     double _volumeSuppressionOutroTime;
 }
 
-@property(assign,readonly) unsigned long long exportNumIntermediateSteps;
-@property(assign,readonly) float exportRampCurveExponent;
-@property(assign,readonly) double introTime;
-@property(assign,readonly) double outroTime;
-@property(assign,readonly) unsigned long long playbackNumIntermediateSteps;
-@property(assign,readonly) float playbackRampCurveExponent;
-@property(assign,readonly) double rampTime;
-@property(assign,readonly) double volumeSuppressionIntroTime;
-@property(assign,readonly) double volumeSuppressionOutroTime;
+@property (nonatomic, readonly) unsigned long long exportNumIntermediateSteps;
+@property (nonatomic, readonly) float exportRampCurveExponent;
+@property (nonatomic, readonly) double introTime;
+@property (nonatomic, readonly) double outroTime;
+@property (nonatomic, readonly) unsigned long long playbackNumIntermediateSteps;
+@property (nonatomic, readonly) float playbackRampCurveExponent;
+@property (nonatomic, readonly) double rampTime;
+@property (nonatomic, readonly) double volumeSuppressionIntroTime;
+@property (nonatomic, readonly) double volumeSuppressionOutroTime;
 
 - (void)computeRampToTargetRate:(float)arg1 forExport:(bool)arg2 outTimeSteps:(id*)arg3 outIntermediateRates:(id*)arg4;
 - (unsigned long long)exportNumIntermediateSteps;

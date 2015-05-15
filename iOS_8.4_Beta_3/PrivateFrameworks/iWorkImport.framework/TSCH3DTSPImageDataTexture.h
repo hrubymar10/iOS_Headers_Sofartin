@@ -8,8 +8,8 @@
     TSCH3DTSPMipmapData *mOptimizedMipmapData;
 }
 
-@property(assign,readonly) TSCH3DTSPImageData * data;
-@property(assign,readonly) TSPData * imageData;
+@property (nonatomic, readonly) TSCH3DTSPImageData *data;
+@property (nonatomic, readonly) TSPData *imageData;
 
 + (id)instanceWithArchive:(const struct Chart3DTSPImageDataTextureArchive { int (**x1)(); struct UnknownFieldSet { struct vector<google::protobuf::UnknownField, std::__1::allocator<google::protobuf::UnknownField> > {} *x_2_1_1; } x2; unsigned int x3[1]; int x4; struct DataReference {} *x5; struct DataReference {} *x6; struct Reference {} *x7; struct Reference {} *x8; }*)arg1 unarchiver:(id)arg2;
 + (id)textureWithImageData:(id)arg1 optimizedMipmapData:(id)arg2;

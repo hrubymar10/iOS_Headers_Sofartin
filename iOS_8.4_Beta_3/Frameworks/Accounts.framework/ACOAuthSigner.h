@@ -9,7 +9,7 @@
     bool _shouldIncludeAppIdInRequest;
 }
 
-@property(assign,readwrite) bool shouldIncludeAppIdInRequest;
+@property (nonatomic) bool shouldIncludeAppIdInRequest;
 
 - (void).cxx_destruct;
 - (void)_connectToRemoteOAuthSignerUsingEndpoint:(id)arg1;

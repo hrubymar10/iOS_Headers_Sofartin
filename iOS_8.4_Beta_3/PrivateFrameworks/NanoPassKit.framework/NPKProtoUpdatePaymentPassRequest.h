@@ -6,7 +6,7 @@
     NSString *_passTypeIdentifier;
 }
 
-@property(assign,retain) NSString * passTypeIdentifier;
+@property (nonatomic, retain) NSString *passTypeIdentifier;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

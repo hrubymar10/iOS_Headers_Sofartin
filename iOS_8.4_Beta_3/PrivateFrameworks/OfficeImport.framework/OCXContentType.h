@@ -8,8 +8,8 @@
     NSString *mPath;
 }
 
-@property(assign,readonly) NSString * contentType;
-@property(assign,readonly) NSString * path;
+@property (nonatomic, readonly) NSString *contentType;
+@property (nonatomic, readonly) NSString *path;
 
 - (id)contentType;
 - (void)dealloc;

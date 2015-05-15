@@ -8,9 +8,9 @@
     float _startValue;
 }
 
-@property(assign,readonly) float currentValue;
-@property(assign,readonly) float endValue;
-@property(assign,readonly) float startValue;
+@property (nonatomic, readonly) float currentValue;
+@property (nonatomic, readonly) float endValue;
+@property (nonatomic, readonly) float startValue;
 
 + (id)animationWithEndingFloatValue:(float)arg1 duration:(double)arg2 timingFunction:(id)arg3 completion:(id)arg4;
 

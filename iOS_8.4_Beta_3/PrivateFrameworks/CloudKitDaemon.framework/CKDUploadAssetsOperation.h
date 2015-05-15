@@ -16,17 +16,17 @@
     NSMapTable *_uploadTasksByPackages;
 }
 
-@property(assign,retain) NSMutableArray * MMCSItemsToUpload;
-@property(assign,retain) NSArray * assetsToUpload;
-@property(assign,retain) CKDCancelTokenGroup * cancelTokens;
-@property(assign,readwrite) unsigned long long maxPackageUploadsPerBatch;
-@property(assign,retain) NSMutableArray * openedPackages;
-@property(assign,retain) NSMutableArray * packageManifests;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,copy) id uploadCompletionBlock;
-@property(assign,copy) id uploadPreparationBlock;
-@property(assign,copy) id uploadProgressBlock;
-@property(assign,retain) NSMapTable * uploadTasksByPackages;
+@property (nonatomic, retain) NSMutableArray *MMCSItemsToUpload;
+@property (nonatomic, retain) NSArray *assetsToUpload;
+@property (nonatomic, retain) CKDCancelTokenGroup *cancelTokens;
+@property (nonatomic) unsigned long long maxPackageUploadsPerBatch;
+@property (nonatomic, retain) NSMutableArray *openedPackages;
+@property (nonatomic, retain) NSMutableArray *packageManifests;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, copy) id uploadCompletionBlock;
+@property (nonatomic, copy) id uploadPreparationBlock;
+@property (nonatomic, copy) id uploadProgressBlock;
+@property (nonatomic, retain) NSMapTable *uploadTasksByPackages;
 
 - (void).cxx_destruct;
 - (id)MMCSItemsToUpload;

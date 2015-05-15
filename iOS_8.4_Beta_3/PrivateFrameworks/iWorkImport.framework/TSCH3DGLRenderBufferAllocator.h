@@ -6,11 +6,11 @@
     TSCH3DRenderBufferStorage *mStorage;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isTexturable;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isTexturable;
+@property (readonly) Class superclass;
 
 + (id)allocator;
 + (id)allocatorWithStorage:(id)arg1;

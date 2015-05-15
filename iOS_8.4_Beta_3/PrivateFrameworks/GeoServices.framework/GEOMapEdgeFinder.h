@@ -13,8 +13,8 @@
     GEOMapTileFinder *_tileFinder;
 }
 
-@property(assign,copy) id edgeHandler;
-@property(assign,readonly) GEOMapAccess * map;
+@property (nonatomic, copy) id edgeHandler;
+@property (nonatomic, readonly) GEOMapAccess *map;
 
 - (id).cxx_construct;
 - (void)_buildersInTile:(id)arg1 localPoint:(const struct Matrix<float, 2, 1> { float x1[2]; }*)arg2 localRadiusSqr:(float)arg3 localSearch:(const struct Box<float, 2> { struct Matrix<float, 2, 1> { float x_1_1_1[2]; } x1; struct Matrix<float, 2, 1> { float x_2_1_1[2]; } x2; }*)arg4 handler:(id)arg5;

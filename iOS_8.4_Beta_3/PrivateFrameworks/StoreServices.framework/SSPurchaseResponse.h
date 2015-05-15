@@ -14,18 +14,18 @@
     NSMutableDictionary *_transactionIdentifiers;
 }
 
-@property(assign,retain) SSURLConnectionResponse * URLResponse;
-@property(assign,readwrite) bool cancelsPurchaseBatch;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSArray * downloadIdentifiers;
-@property(assign,copy) NSError * error;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) SSPurchase * purchase;
-@property(assign,readwrite) double requestStartTime;
-@property(assign,readwrite) double responseEndTime;
-@property(assign,readwrite) double responseStartTime;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) SSURLConnectionResponse *URLResponse;
+@property (nonatomic) bool cancelsPurchaseBatch;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSArray *downloadIdentifiers;
+@property (nonatomic, copy) NSError *error;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) SSPurchase *purchase;
+@property (nonatomic) double requestStartTime;
+@property (nonatomic) double responseEndTime;
+@property (nonatomic) double responseStartTime;
+@property (readonly) Class superclass;
 
 - (id)URLResponse;
 - (bool)cancelsPurchaseBatch;

@@ -6,11 +6,11 @@
     IKAppMediaItemBridge *_bridge;
 }
 
-@property(assign,readonly) IKAppMediaItemBridge * bridge;
-@property(assign,retain) NSString * description;
-@property(assign,retain) NSString * subtitle;
-@property(assign,retain) NSString * title;
-@property(assign,retain) NSString * url;
+@property (nonatomic, readonly) IKAppMediaItemBridge *bridge;
+@property (nonatomic, retain) NSString *description;
+@property (nonatomic, retain) NSString *subtitle;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *url;
 
 - (void).cxx_destruct;
 - (id)bridge;

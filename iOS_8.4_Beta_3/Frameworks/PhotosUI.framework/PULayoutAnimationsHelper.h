@@ -7,8 +7,8 @@
     bool _shouldAnimateTemporaryImageView;
 }
 
-@property(assign,readonly) PUSectionedGridLayout * layout;
-@property(assign,readwrite) bool shouldAnimateTemporaryImageView;
+@property (nonatomic, readonly) PUSectionedGridLayout *layout;
+@property (nonatomic) bool shouldAnimateTemporaryImageView;
 
 - (void).cxx_destruct;
 - (id)_adjustAnimation:(id)arg1 forReusableView:(id)arg2 toLayoutAttributes:(id)arg3;

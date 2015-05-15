@@ -6,7 +6,7 @@
     _IDSAccountController *_internal;
 }
 
-@property(assign,retain) NSSet * accounts;
+@property (nonatomic, readonly, retain) NSSet *accounts;
 
 - (id)_initWithService:(id)arg1;
 - (id)_initWithService:(id)arg1 onIDSQueue:(bool)arg2;

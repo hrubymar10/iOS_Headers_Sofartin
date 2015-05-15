@@ -7,8 +7,8 @@
     _UIDocumentPickerContainerItem *_item;
 }
 
-@property(assign,readwrite) bool enabled;
-@property(assign,retain) _UIDocumentPickerContainerItem * item;
+@property (nonatomic) bool enabled;
+@property (nonatomic, retain) _UIDocumentPickerContainerItem *item;
 
 - (void)dealloc;
 - (bool)enabled;

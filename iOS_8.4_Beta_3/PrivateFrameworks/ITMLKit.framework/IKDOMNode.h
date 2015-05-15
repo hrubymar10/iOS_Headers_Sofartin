@@ -13,25 +13,25 @@
     struct _xmlNode { void *x1; int x2; char *x3; struct _xmlNode {} *x4; struct _xmlNode {} *x5; struct _xmlNode {} *x6; struct _xmlNode {} *x7; struct _xmlNode {} *x8; struct _xmlDoc {} *x9; struct _xmlNs {} *x10; char *x11; struct _xmlAttr {} *x12; struct _xmlNs {} *x13; void *x14; unsigned short x15; unsigned short x16; } *_nodePtr;
 }
 
-@property(assign,readwrite) long long ITMLID;
-@property(assign,retain) IKDOMNodeList * childNodes;
-@property(assign,retain) NSHashTable * domObservers;
-@property(assign,retain) NSMutableDictionary * eventListenersMap;
-@property(assign,retain) IKDOMNode * firstChild;
-@property(assign,retain) IKDOMNodeData * jsNodeData;
-@property(assign,retain) IKDOMNode * lastChild;
-@property(assign,retain) JSManagedValue * managedChildNodeList;
-@property(assign,retain) JSManagedValue * managedOwnerDocument;
-@property(assign,retain) JSManagedValue * managedParent;
-@property(assign,retain) JSManagedValue * managedSelf;
-@property(assign,readonly) IKDOMNode * nextSibling;
-@property(assign,retain) NSString * nodeName;
-@property(assign,readonly) long long nodeType;
-@property(assign,retain) NSString * nodeValue;
-@property(assign,readonly) IKDOMDocument * ownerDocument;
-@property(assign,readonly) IKDOMNode * parentNode;
-@property(assign,readonly) IKDOMNode * previousSibling;
-@property(assign,retain) NSString * textContent;
+@property (nonatomic) long long ITMLID;
+@property (nonatomic, readonly, retain) IKDOMNodeList *childNodes;
+@property (nonatomic, retain) NSHashTable *domObservers;
+@property (nonatomic, retain) NSMutableDictionary *eventListenersMap;
+@property (nonatomic, readonly, retain) IKDOMNode *firstChild;
+@property (nonatomic, readonly, retain) IKDOMNodeData *jsNodeData;
+@property (nonatomic, readonly, retain) IKDOMNode *lastChild;
+@property (nonatomic, retain) JSManagedValue *managedChildNodeList;
+@property (nonatomic, retain) JSManagedValue *managedOwnerDocument;
+@property (nonatomic, retain) JSManagedValue *managedParent;
+@property (nonatomic, readonly, retain) JSManagedValue *managedSelf;
+@property (nonatomic, readonly) IKDOMNode *nextSibling;
+@property (nonatomic, readonly, retain) NSString *nodeName;
+@property (nonatomic, readonly) long long nodeType;
+@property (nonatomic, retain) NSString *nodeValue;
+@property (nonatomic, readonly) IKDOMDocument *ownerDocument;
+@property (nonatomic, readonly) IKDOMNode *parentNode;
+@property (nonatomic, readonly) IKDOMNode *previousSibling;
+@property (nonatomic, retain) NSString *textContent;
 
 + (id)_eventListenerMapKeyForType:(id)arg1 useCapture:(bool)arg2;
 + (void)handleNodeParentDidChange:(struct _xmlNode { void *x1; int x2; char *x3; struct _xmlNode {} *x4; struct _xmlNode {} *x5; struct _xmlNode {} *x6; struct _xmlNode {} *x7; struct _xmlNode {} *x8; struct _xmlDoc {} *x9; struct _xmlNs {} *x10; char *x11; struct _xmlAttr {} *x12; struct _xmlNs {} *x13; void *x14; unsigned short x15; unsigned short x16; }*)arg1;

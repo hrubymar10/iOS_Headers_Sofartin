@@ -2,41 +2,41 @@
    Image: /usr/lib/libobjc.A.dylib
  */
 
-@interface NSObject  <NSObject, PQLResultSetInitializer, PQLResultSetInitializer> {
+@interface NSObject <NSObject, PQLResultSetInitializer> {
     Class isa;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } accessibilityActivationPoint;
-@property(assign,retain) NSArray * accessibilityCustomActions;
-@property(assign,retain) NSArray * accessibilityElements;
-@property(assign,readwrite) bool accessibilityElementsHidden;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } accessibilityFrame;
-@property(assign,copy) NSString * accessibilityHint;
-@property(assign,copy) NSString * accessibilityLabel;
-@property(assign,retain) NSString * accessibilityLanguage;
-@property(assign,readwrite) long long accessibilityNavigationStyle;
-@property(assign,copy) UIBezierPath * accessibilityPath;
-@property(assign,readwrite) unsigned long long accessibilityTraits;
-@property(assign,copy) NSString * accessibilityValue;
-@property(assign,readwrite) bool accessibilityViewIsModal;
-@property(assign,retain) id autoContentAccessingProxy;
-@property(assign,readonly) Class classForKeyedArchiver;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isAccessibilityElement;
-@property(assign,readwrite) void* observationInfo;
-@property(assign,readwrite) bool shouldGroupAccessibilityChildren;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(getter=_traitStorageList,setter=_setTraitStorageList:,assign,readwrite) _UITraitStorageList * traitStorageList;
+@property (nonatomic) struct CGPoint { double x1; double x2; } accessibilityActivationPoint;
+@property (nonatomic, retain) NSArray *accessibilityCustomActions;
+@property (nonatomic, retain) NSArray *accessibilityElements;
+@property (nonatomic) bool accessibilityElementsHidden;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } accessibilityFrame;
+@property (nonatomic, copy) NSString *accessibilityHint;
+@property (nonatomic, copy) NSString *accessibilityLabel;
+@property (nonatomic, retain) NSString *accessibilityLanguage;
+@property (nonatomic) long long accessibilityNavigationStyle;
+@property (nonatomic, copy) UIBezierPath *accessibilityPath;
+@property (nonatomic) unsigned long long accessibilityTraits;
+@property (nonatomic, copy) NSString *accessibilityValue;
+@property (nonatomic) bool accessibilityViewIsModal;
+@property (readonly, retain) id autoContentAccessingProxy;
+@property (readonly) Class classForKeyedArchiver;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isAccessibilityElement;
+@property void*observationInfo;
+@property (nonatomic) bool shouldGroupAccessibilityChildren;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (getter=_traitStorageList, setter=_setTraitStorageList:) _UITraitStorageList *traitStorageList;
 
 + (id)CA_CAMLPropertyForKey:(id)arg1;
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;

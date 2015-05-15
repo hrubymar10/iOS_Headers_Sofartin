@@ -4,10 +4,10 @@
 
 @interface NoteChangeObject : NSManagedObject
 
-@property(assign,retain) NSNumber * changeType;
-@property(assign,retain) NSMutableSet * noteIntegerIds;
-@property(assign,retain) NSMutableSet * noteServerIds;
-@property(assign,retain) NSMutableSet * noteServerIntIds;
-@property(assign,retain) NoteStoreObject * store;
+@property (nonatomic, retain) NSNumber *changeType;
+@property (nonatomic, retain) NSMutableSet *noteIntegerIds;
+@property (nonatomic, retain) NSMutableSet *noteServerIds;
+@property (nonatomic, retain) NSMutableSet *noteServerIntIds;
+@property (nonatomic, retain) NoteStoreObject *store;
 
 @end

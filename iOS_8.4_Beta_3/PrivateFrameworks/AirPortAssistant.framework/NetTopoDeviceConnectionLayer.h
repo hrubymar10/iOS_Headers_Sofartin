@@ -31,15 +31,15 @@
     struct CGColor { } *_whiteColor;
 }
 
-@property(assign,readonly) unsigned long long connectionMedium;
-@property(assign,readwrite) unsigned long long connectionMediumFallback;
-@property(assign,readwrite) unsigned long long connectionStyle;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } downstreamConnectionPoint;
-@property(assign,readonly) struct CGPath { }* hitTestPath;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } siblingMergePoint;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } upstreamConnectionPoint;
-@property(assign,readwrite) unsigned long long upstreamConnectionSide;
-@property(assign,readwrite) unsigned long long upstreamDeviceSpatialRelationship;
+@property (nonatomic, readonly) unsigned long long connectionMedium;
+@property (nonatomic) unsigned long long connectionMediumFallback;
+@property (nonatomic) unsigned long long connectionStyle;
+@property (nonatomic) struct CGPoint { double x1; double x2; } downstreamConnectionPoint;
+@property (nonatomic, readonly) struct CGPath { }*hitTestPath;
+@property (nonatomic) struct CGPoint { double x1; double x2; } siblingMergePoint;
+@property (nonatomic) struct CGPoint { double x1; double x2; } upstreamConnectionPoint;
+@property (nonatomic) unsigned long long upstreamConnectionSide;
+@property (nonatomic) unsigned long long upstreamDeviceSpatialRelationship;
 
 - (void)addBottomWindingConnectionToPath:(struct CGPath { }*)arg1 withOffset:(double)arg2;
 - (void)addCurvedArrowConnectionToPath:(struct CGPath { }*)arg1 withOffset:(double)arg2;

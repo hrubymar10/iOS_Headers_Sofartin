@@ -32,17 +32,17 @@
     SCNPhysicsWorld *_world;
 }
 
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,readwrite) unsigned long long categoryBitMask;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } direction;
-@property(getter=isExclusive,assign,readwrite) bool exclusive;
-@property(assign,readwrite) double falloffExponent;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } halfExtent;
-@property(assign,readwrite) double minimumDistance;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } offset;
-@property(assign,readwrite) long long scope;
-@property(assign,readwrite) double strength;
-@property(assign,readwrite) bool usesEllipsoidalExtent;
+@property (getter=isActive, nonatomic) bool active;
+@property (nonatomic) unsigned long long categoryBitMask;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } direction;
+@property (getter=isExclusive, nonatomic) bool exclusive;
+@property (nonatomic) double falloffExponent;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } halfExtent;
+@property (nonatomic) double minimumDistance;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } offset;
+@property (nonatomic) long long scope;
+@property (nonatomic) double strength;
+@property (nonatomic) bool usesEllipsoidalExtent;
 
 + (id)SCNJSExportProtocol;
 + (id)customFieldWithEvaluationBlock:(id)arg1;

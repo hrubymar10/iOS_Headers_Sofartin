@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *queue;
 }
 
-@property(assign,copy) id block;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, copy) id block;
+@property NSObject<OS_dispatch_queue> *queue;
 
 - (id)block;
 - (id)queue;

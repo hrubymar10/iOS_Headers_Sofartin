@@ -10,8 +10,8 @@
     int _state;
 }
 
-@property(assign,readwrite) bool animatesDrop;
-@property(assign,readwrite) unsigned long long pinColor;
+@property (nonatomic) bool animatesDrop;
+@property (nonatomic) unsigned long long pinColor;
 
 + (id)_bounceAnimation;
 + (struct CGPoint { double x1; double x2; })_calloutOffset;

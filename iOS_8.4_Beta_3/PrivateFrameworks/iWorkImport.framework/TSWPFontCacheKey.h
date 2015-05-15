@@ -8,8 +8,8 @@
     unsigned long long _hash;
 }
 
-@property(assign,readonly) NSString * fontName;
-@property(assign,readonly) double fontSize;
+@property (nonatomic, readonly) NSString *fontName;
+@property (nonatomic, readonly) double fontSize;
 
 + (id)cacheKeyWithFontName:(id)arg1 size:(double)arg2;
 

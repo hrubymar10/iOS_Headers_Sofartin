@@ -8,9 +8,9 @@
     float mVolume;
 }
 
-@property(assign,copy) NSArray * media;
-@property(assign,readwrite) int mode;
-@property(assign,readwrite) float volume;
+@property (nonatomic, copy) NSArray *media;
+@property (nonatomic) int mode;
+@property (nonatomic) float volume;
 
 + (bool)needsObjectUUID;
 

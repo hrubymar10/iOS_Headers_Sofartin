@@ -10,11 +10,11 @@
     bool _verboseLoggingEnabled;
 }
 
-@property(assign,copy) NEDNSSettings * DNSSettings;
-@property(assign,copy) NEIPv4Settings * IPv4Settings;
-@property(assign,copy) NEIPv6Settings * IPv6Settings;
-@property(assign,readwrite) long long authenticationMethod;
-@property(assign,readwrite) bool verboseLoggingEnabled;
+@property (copy) NEDNSSettings *DNSSettings;
+@property (copy) NEIPv4Settings *IPv4Settings;
+@property (copy) NEIPv6Settings *IPv6Settings;
+@property long long authenticationMethod;
+@property bool verboseLoggingEnabled;
 
 + (bool)supportsSecureCoding;
 

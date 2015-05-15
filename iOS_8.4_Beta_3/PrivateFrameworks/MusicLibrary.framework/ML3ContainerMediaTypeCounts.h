@@ -7,7 +7,7 @@
     struct __CFDictionary { } *_map;
 }
 
-@property(assign,readwrite) unsigned long long count;
+@property (nonatomic) unsigned long long count;
 
 - (void)addMediaType:(unsigned int)arg1 count:(unsigned long long)arg2;
 - (unsigned long long)count;

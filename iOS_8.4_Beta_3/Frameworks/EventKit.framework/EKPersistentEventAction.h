@@ -4,12 +4,12 @@
 
 @interface EKPersistentEventAction : EKPersistentObject
 
-@property(assign,copy) NSData * externalData;
-@property(assign,copy) NSString * externalFolderID;
-@property(assign,copy) NSString * externalID;
-@property(assign,copy) NSString * externalModTag;
-@property(assign,copy) NSString * externalScheduleID;
-@property(assign,retain) EKPersistentCalendarItem * owner;
+@property (nonatomic, copy) NSData *externalData;
+@property (nonatomic, copy) NSString *externalFolderID;
+@property (nonatomic, copy) NSString *externalID;
+@property (nonatomic, copy) NSString *externalModTag;
+@property (nonatomic, copy) NSString *externalScheduleID;
+@property (nonatomic, retain) EKPersistentCalendarItem *owner;
 
 + (id)relations;
 

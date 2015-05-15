@@ -10,10 +10,10 @@
     id _protobufValueToDictionaryValueTransformer;
 }
 
-@property(assign,copy) NSDictionary * dictionaryKeyToProtobufKeyMapping;
-@property(assign,copy) id dictionaryValueToProtobufValueTransformer;
-@property(assign,retain) Class protobufClass;
-@property(assign,copy) id protobufValueToDictionaryValueTransformer;
+@property (nonatomic, copy) NSDictionary *dictionaryKeyToProtobufKeyMapping;
+@property (nonatomic, copy) id dictionaryValueToProtobufValueTransformer;
+@property (nonatomic, retain) Class protobufClass;
+@property (nonatomic, copy) id protobufValueToDictionaryValueTransformer;
 
 - (void).cxx_destruct;
 - (id)dictionaryFromProtobuf:(id)arg1;

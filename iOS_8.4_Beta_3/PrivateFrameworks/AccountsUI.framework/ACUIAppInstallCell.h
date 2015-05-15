@@ -10,7 +10,7 @@
     UILabel *_publisherLabel;
 }
 
-@property(assign,readwrite) int installState;
+@property (nonatomic) int installState;
 
 + (id)specifierForAppWithDescription:(id)arg1 target:(id)arg2 action:(SEL)arg3;
 

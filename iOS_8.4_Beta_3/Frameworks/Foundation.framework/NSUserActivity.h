@@ -8,20 +8,20 @@
     id _internal;
 }
 
-@property(setter=_setFrameworkDelegate:,assign,readwrite) <NSUserActivityDelegate> * _frameworkDelegate;
-@property(setter=_setFrameworkPayload:,assign,copy) NSDictionary * _frameworkPayload;
-@property(assign,retain) LSUserActivity * _internalUserActivity;
-@property(assign,copy) NSDate * _lastActivityDate;
-@property(setter=_setOptions:,assign,copy) NSDictionary * _options;
-@property(assign,readonly) unsigned long long _suggestedActionType;
-@property(assign,retain) NSUUID * _uniqueIdentifier;
-@property(assign,copy) NSString * activityType;
-@property(assign,readwrite) <NSUserActivityDelegate> * delegate;
-@property(assign,readwrite) bool needsSave;
-@property(assign,readwrite) bool supportsContinuationStreams;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSDictionary * userInfo;
-@property(assign,copy) NSURL * webpageURL;
+@property (setter=_setFrameworkDelegate:) <NSUserActivityDelegate> *_frameworkDelegate;
+@property (setter=_setFrameworkPayload:, copy) NSDictionary *_frameworkPayload;
+@property (readonly, retain) LSUserActivity *_internalUserActivity;
+@property (readonly, copy) NSDate *_lastActivityDate;
+@property (setter=_setOptions:, copy) NSDictionary *_options;
+@property (readonly) unsigned long long _suggestedActionType;
+@property (readonly, retain) NSUUID *_uniqueIdentifier;
+@property (readonly, copy) NSString *activityType;
+@property <NSUserActivityDelegate> *delegate;
+@property bool needsSave;
+@property bool supportsContinuationStreams;
+@property (copy) NSString *title;
+@property (copy) NSDictionary *userInfo;
+@property (copy) NSURL *webpageURL;
 
 + (void)_fetchUserActivityWithUUID:(id)arg1 completionHandler:(id)arg2;
 + (void)_reportToCoreDuet:(id)arg1;

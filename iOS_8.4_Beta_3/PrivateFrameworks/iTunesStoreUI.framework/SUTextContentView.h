@@ -6,7 +6,7 @@
     UILabel *_placeholderLabel;
 }
 
-@property(assign,retain) NSString * placeholder;
+@property (nonatomic, retain) NSString *placeholder;
 
 - (bool)becomeFirstResponder;
 - (void)dealloc;

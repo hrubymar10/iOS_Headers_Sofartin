@@ -6,7 +6,7 @@
     <EKCellShortener> *_shortener;
 }
 
-@property(assign,readwrite) <EKCellShortener> * shortener;
+@property (nonatomic) <EKCellShortener> *shortener;
 
 - (void).cxx_destruct;
 - (void)_checkValueWidth;

@@ -10,11 +10,11 @@
     NSString *_personLastName;
 }
 
-@property(setter=_setPersonIconImageView:,assign,retain) UIImageView * _personIconImageView;
-@property(setter=_setPersonMonogramImage:,assign,retain) UIImage * _personMonogramImage;
-@property(assign,copy) NSString * personFirstName;
-@property(assign,retain) UIImage * personIcon;
-@property(assign,copy) NSString * personLastName;
+@property (setter=_setPersonIconImageView:, nonatomic, retain) UIImageView *_personIconImageView;
+@property (setter=_setPersonMonogramImage:, nonatomic, retain) UIImage *_personMonogramImage;
+@property (nonatomic, copy) NSString *personFirstName;
+@property (nonatomic, retain) UIImage *personIcon;
+@property (nonatomic, copy) NSString *personLastName;
 
 - (id)_personIconImageView;
 - (id)_personMonogramImage;

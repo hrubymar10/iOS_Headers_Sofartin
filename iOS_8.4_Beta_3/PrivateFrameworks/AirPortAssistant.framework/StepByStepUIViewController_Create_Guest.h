@@ -9,10 +9,10 @@
     NSString *_wifiPassword;
 }
 
-@property(assign,readwrite) int guestNetSecMode;
-@property(assign,readwrite) bool guestNetworkEnabled;
-@property(assign,copy) NSString * wifiName;
-@property(assign,copy) NSString * wifiPassword;
+@property (nonatomic) int guestNetSecMode;
+@property (nonatomic) bool guestNetworkEnabled;
+@property (nonatomic, copy) NSString *wifiName;
+@property (nonatomic, copy) NSString *wifiPassword;
 
 - (void)addGuestNetworkIsEnabledSection;
 - (void)addGuestNetworkPasswordSection;

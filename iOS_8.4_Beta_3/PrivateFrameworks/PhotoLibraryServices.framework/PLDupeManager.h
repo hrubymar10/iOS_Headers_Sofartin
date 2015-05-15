@@ -17,7 +17,7 @@
     NSSet *_softPauseReasons;
 }
 
-@property(assign,readonly) PLPhotoLibrary * photoLibrary;
+@property (nonatomic, readonly) PLPhotoLibrary *photoLibrary;
 
 + (bool)_computeHashForAsset:(id)arg1;
 + (id)_hashForFileAtPath:(id)arg1 utiType:(id)arg2;

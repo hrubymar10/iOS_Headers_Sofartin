@@ -11,9 +11,9 @@
     NSURL *_temporaryFileURL;
 }
 
-@property(assign,copy) NSString * fileType;
-@property(assign,copy) NSURL * fileURL;
-@property(assign,copy) NSURL * temporaryFileURL;
+@property (nonatomic, copy) NSString *fileType;
+@property (nonatomic, copy) NSURL *fileURL;
+@property (nonatomic, copy) NSURL *temporaryFileURL;
 
 + (id)_fileModificationDateForURL:(id)arg1;
 

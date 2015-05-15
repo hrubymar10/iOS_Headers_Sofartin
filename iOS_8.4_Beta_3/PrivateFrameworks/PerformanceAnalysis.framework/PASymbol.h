@@ -9,14 +9,14 @@
     NSMutableArray *_sourceInfos;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isEmptySymbol;
-@property(assign,readonly) unsigned long long length;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) unsigned long long offsetIntoOwner;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isEmptySymbol;
+@property (readonly) unsigned long long length;
+@property (readonly) NSString *name;
+@property (readonly) unsigned long long offsetIntoOwner;
+@property (readonly) Class superclass;
 
 + (id)classDictionaryKey;
 + (id)newInstanceWithoutReferencesFromBufferPosition:(const void*)arg1;

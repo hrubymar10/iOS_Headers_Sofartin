@@ -15,15 +15,15 @@
     } _timeRangeInContentToUse;
 }
 
-@property(assign,retain) NSURL * AVOutputURL;
-@property(assign,readwrite) double contentDuration;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) struct { double x1; double x2; } timeRangeInComposition;
-@property(assign,readwrite) struct { double x1; double x2; } timeRangeInContentToUse;
-@property(assign,readonly) NSURL * waveformURL;
+@property (nonatomic, retain) NSURL *AVOutputURL;
+@property (nonatomic) double contentDuration;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic) struct { double x1; double x2; } timeRangeInComposition;
+@property (nonatomic) struct { double x1; double x2; } timeRangeInContentToUse;
+@property (nonatomic, readonly) NSURL *waveformURL;
 
 - (void).cxx_destruct;
 - (id)AVOutputURL;

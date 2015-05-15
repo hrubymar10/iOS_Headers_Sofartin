@@ -4,7 +4,7 @@
 
 @interface TSWPTOCAttachment : TSWPDrawableAttachment
 
-@property(assign,retain) TSWPTOCInfo * tocInfo;
+@property (nonatomic, readonly, retain) TSWPTOCInfo *tocInfo;
 
 - (int)elementKind;
 - (id)initFromUnarchiver:(id)arg1;

@@ -6,7 +6,7 @@
     AVAssetReaderSampleReferenceOutputInternal *_sampleReferenceOutputInternal;
 }
 
-@property(assign,readonly) AVAssetTrack * track;
+@property (nonatomic, readonly) AVAssetTrack *track;
 
 + (id)assetReaderSampleReferenceOutputWithTrack:(id)arg1;
 

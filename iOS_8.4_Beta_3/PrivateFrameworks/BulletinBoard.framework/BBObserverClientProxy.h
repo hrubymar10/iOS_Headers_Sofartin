@@ -10,11 +10,11 @@
     BBServer *_serverWeak;
 }
 
-@property(assign,retain) NSMutableDictionary * bulletinIDsToTransaction;
-@property(assign,retain) NSString * clientBundleIdentifier;
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,readwrite) BBServer * serverWeak;
+@property (nonatomic, retain) NSMutableDictionary *bulletinIDsToTransaction;
+@property (nonatomic, retain) NSString *clientBundleIdentifier;
+@property (nonatomic, retain) NSXPCConnection *connection;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic) BBServer *serverWeak;
 
 + (id)xpcInterface;
 

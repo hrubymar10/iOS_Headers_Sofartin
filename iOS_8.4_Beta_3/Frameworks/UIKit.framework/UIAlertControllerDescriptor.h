@@ -7,8 +7,8 @@
     bool _hasTitle;
 }
 
-@property(assign,readwrite) bool hasMessage;
-@property(assign,readwrite) bool hasTitle;
+@property bool hasMessage;
+@property bool hasTitle;
 
 - (bool)hasMessage;
 - (bool)hasTitle;

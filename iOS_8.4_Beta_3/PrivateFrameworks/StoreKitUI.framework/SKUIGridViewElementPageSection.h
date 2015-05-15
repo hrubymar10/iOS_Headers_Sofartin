@@ -15,12 +15,12 @@
     NSArray *_viewElements;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEditing,assign,readonly) bool editing;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIGridComponent * pageComponent;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEditing, nonatomic, readonly) bool editing;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIGridComponent *pageComponent;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_containsOnlyShelfElements;

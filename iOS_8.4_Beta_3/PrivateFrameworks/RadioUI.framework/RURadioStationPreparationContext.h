@@ -8,11 +8,11 @@
     RadioStation *_station;
 }
 
-@property(assign,copy) NSArray * allPreparedAdSlotRadioTracks;
-@property(assign,readonly) bool shouldIncrementSkipCount;
-@property(assign,readonly) NSDate * skipDate;
-@property(assign,readonly) RadioStation * station;
-@property(assign,copy) NSArray * tracks;
+@property (nonatomic, readonly, copy) NSArray *allPreparedAdSlotRadioTracks;
+@property (nonatomic, readonly) bool shouldIncrementSkipCount;
+@property (nonatomic, readonly) NSDate *skipDate;
+@property (nonatomic, readonly) RadioStation *station;
+@property (nonatomic, readonly, copy) NSArray *tracks;
 
 - (void).cxx_destruct;
 - (void)addPreparedAdSlot:(id)arg1 forRadioTrack:(id)arg2;

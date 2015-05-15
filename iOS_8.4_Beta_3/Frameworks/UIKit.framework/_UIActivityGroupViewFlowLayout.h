@@ -29,16 +29,16 @@
     NSArray *_preparedUpdateItems;
 }
 
-@property(assign,readwrite) struct UIOffset { double x1; double x2; } draggingOffset;
-@property(assign,retain) _UIActivityGroupActivityCell * draggingView;
-@property(assign,retain) UILongPressGestureRecognizer * editingGestureRecognizer;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } evaluatedContentSize;
-@property(assign,readwrite) double evaluatedHorizontalItemOffset;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } evaluatedInset;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } evaluatedItemSize;
-@property(assign,copy) NSIndexPath * indexPathForDraggedItem;
-@property(assign,copy) NSArray * preparedLayoutAttributes;
-@property(assign,copy) NSArray * preparedUpdateItems;
+@property (nonatomic) struct UIOffset { double x1; double x2; } draggingOffset;
+@property (nonatomic, retain) _UIActivityGroupActivityCell *draggingView;
+@property (nonatomic, retain) UILongPressGestureRecognizer *editingGestureRecognizer;
+@property (nonatomic) struct CGSize { double x1; double x2; } evaluatedContentSize;
+@property (nonatomic) double evaluatedHorizontalItemOffset;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } evaluatedInset;
+@property (nonatomic) struct CGSize { double x1; double x2; } evaluatedItemSize;
+@property (nonatomic, copy) NSIndexPath *indexPathForDraggedItem;
+@property (nonatomic, copy) NSArray *preparedLayoutAttributes;
+@property (nonatomic, copy) NSArray *preparedUpdateItems;
 
 - (double)_evaluateHorizontalItemOffsetForItemSize:(struct CGSize { double x1; double x2; })arg1 inset:(struct UIEdgeInsets { double x1; double x2; double x3; double x4; })arg2;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })_evaluateInsetForSectionAtIndex:(long long)arg1;

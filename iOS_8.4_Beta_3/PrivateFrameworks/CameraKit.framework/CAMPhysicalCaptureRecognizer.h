@@ -9,10 +9,10 @@
     bool _suspended;
 }
 
-@property(assign,readwrite) long long activeButton;
-@property(assign,copy) NSArray * desiredButtons;
-@property(assign,readwrite) long long physicalButtonType;
-@property(getter=isSuspended,assign,readwrite) bool suspended;
+@property (nonatomic) long long activeButton;
+@property (nonatomic, copy) NSArray *desiredButtons;
+@property (nonatomic) long long physicalButtonType;
+@property (getter=isSuspended, nonatomic) bool suspended;
 
 - (void).cxx_destruct;
 - (long long)_captureButtonForPhysicalButtonType:(long long)arg1;

@@ -11,8 +11,8 @@
     MFDAMessageStore *store;
 }
 
-@property(assign,retain) MFError * error;
-@property(assign,retain) MFActivityMonitor * monitor;
+@property (nonatomic, retain) MFError *error;
+@property (nonatomic, retain) MFActivityMonitor *monitor;
 
 - (void)dealloc;
 - (id)error;

@@ -6,7 +6,7 @@
     AVAudioMixInternal *_audioMix;
 }
 
-@property(assign,copy) NSArray * inputParameters;
+@property (nonatomic, readonly, copy) NSArray *inputParameters;
 
 - (id)_audioMixInputParametersForTrackID:(int)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

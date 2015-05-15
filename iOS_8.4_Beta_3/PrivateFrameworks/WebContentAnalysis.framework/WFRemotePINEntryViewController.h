@@ -6,7 +6,7 @@
     NSObject<WFPINEntryViewControllerProtocol> *_delegate;
 }
 
-@property(assign,readwrite) NSObject<WFPINEntryViewControllerProtocol> * delegate;
+@property (nonatomic) NSObject<WFPINEntryViewControllerProtocol> *delegate;
 
 + (id)exportedInterface;
 + (id)serviceViewControllerInterface;

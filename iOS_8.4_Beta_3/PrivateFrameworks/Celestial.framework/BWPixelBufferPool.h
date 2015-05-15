@@ -14,9 +14,9 @@
     BWVideoFormat *_videoFormat;
 }
 
-@property(assign,readonly) unsigned long long capacity;
-@property(assign,readonly) struct __CVPixelBufferPool { }* cvPixelBufferPool;
-@property(assign,readonly) struct __CFDictionary { }* cvPixelBufferPoolAuxAttributes;
+@property (nonatomic, readonly) unsigned long long capacity;
+@property (nonatomic, readonly) struct __CVPixelBufferPool { }*cvPixelBufferPool;
+@property (nonatomic, readonly) struct __CFDictionary { }*cvPixelBufferPoolAuxAttributes;
 
 + (void)initialize;
 

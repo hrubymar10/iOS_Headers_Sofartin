@@ -6,7 +6,7 @@
     SBKStoreURLBagContext *_bagContext;
 }
 
-@property(assign,readonly) SBKStoreURLBagContext * bagContext;
+@property (nonatomic, readonly) SBKStoreURLBagContext *bagContext;
 
 - (void).cxx_destruct;
 - (id)bagContext;

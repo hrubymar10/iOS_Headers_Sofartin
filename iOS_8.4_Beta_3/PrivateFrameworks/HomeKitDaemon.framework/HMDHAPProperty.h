@@ -6,7 +6,7 @@
     HAPMetadataProperty *_hapPropertyMetadata;
 }
 
-@property(assign,retain) HAPMetadataProperty * hapPropertyMetadata;
+@property (nonatomic, retain) HAPMetadataProperty *hapPropertyMetadata;
 
 + (bool)supportsSecureCoding;
 

@@ -4,9 +4,9 @@
 
 @interface SSMetricsEnterEvent : SSMetricsBaseEvent
 
-@property(assign,retain) NSString * enterType;
-@property(assign,retain) NSString * referringAppName;
-@property(assign,retain) NSString * referringURL;
+@property (nonatomic, retain) NSString *enterType;
+@property (nonatomic, retain) NSString *referringAppName;
+@property (nonatomic, retain) NSString *referringURL;
 
 - (id)description;
 - (id)enterType;

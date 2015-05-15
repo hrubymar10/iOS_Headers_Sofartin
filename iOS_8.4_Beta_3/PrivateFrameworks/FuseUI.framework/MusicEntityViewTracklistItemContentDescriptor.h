@@ -9,10 +9,10 @@
     bool _wantsMediaTypeImage;
 }
 
-@property(assign,copy) NSArray * detailTextDescriptors;
-@property(assign,retain) MusicEntityViewContentTextDescriptor * leadingTextDescriptor;
-@property(assign,retain) MusicEntityViewContentTextDescriptor * trailingTextDescriptor;
-@property(assign,readwrite) bool wantsMediaTypeImage;
+@property (nonatomic, copy) NSArray *detailTextDescriptors;
+@property (nonatomic, retain) MusicEntityViewContentTextDescriptor *leadingTextDescriptor;
+@property (nonatomic, retain) MusicEntityViewContentTextDescriptor *trailingTextDescriptor;
+@property (nonatomic) bool wantsMediaTypeImage;
 
 + (Class)tableViewCellClass;
 + (id)tableViewCellReuseIdentifier;

@@ -6,8 +6,8 @@
     long long _columnSpan;
 }
 
-@property(assign,readonly) long long columnSpan;
-@property(assign,readonly) SKUIHeaderViewElement * headerElement;
+@property (nonatomic, readonly) long long columnSpan;
+@property (nonatomic, readonly) SKUIHeaderViewElement *headerElement;
 
 - (id)applyUpdatesWithElement:(id)arg1;
 - (long long)columnSpan;

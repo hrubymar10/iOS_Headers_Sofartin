@@ -6,7 +6,7 @@
     NSFileProviderExtension *_principalInstance;
 }
 
-@property(assign,readwrite) NSFileProviderExtension * principalInstance;
+@property (nonatomic) NSFileProviderExtension *principalInstance;
 
 + (id)_extensionAuxiliaryHostProtocol;
 + (id)_extensionAuxiliaryVendorProtocol;

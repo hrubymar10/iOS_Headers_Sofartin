@@ -7,11 +7,11 @@
     MPQueueFeeder *_feeder;
 }
 
-@property(assign,readonly) double _innerControlMargin;
-@property(assign,readonly) double _nextButtonVInset;
-@property(assign,readonly) double _outterControlMargin;
-@property(assign,readonly) double _playPauseBottomVInset;
-@property(assign,readwrite) <MPUNowPlayingTransportControlsDelegate> * delegate;
+@property (nonatomic, readonly) double _innerControlMargin;
+@property (nonatomic, readonly) double _nextButtonVInset;
+@property (nonatomic, readonly) double _outterControlMargin;
+@property (nonatomic, readonly) double _playPauseBottomVInset;
+@property (nonatomic) <MPUNowPlayingTransportControlsDelegate> *delegate;
 
 + (Class)buttonClass;
 + (bool)buttonImagesUseBackgroundImage;

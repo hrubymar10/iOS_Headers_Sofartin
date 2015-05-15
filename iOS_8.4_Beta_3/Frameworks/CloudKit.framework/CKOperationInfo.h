@@ -15,16 +15,16 @@
     long long _usesBackgroundSessionOverride;
 }
 
-@property(assign,readwrite) bool allowsCellularAccess;
-@property(assign,retain) NSString * deviceIdentifier;
-@property(assign,retain) NSString * operationID;
-@property(assign,readwrite) id parentOperation;
-@property(assign,retain) NSString * parentSectionID;
-@property(assign,readwrite) long long qualityOfService;
-@property(assign,retain) CKContainerSetupInfo * setupInfo;
-@property(assign,retain) NSString * sourceApplicationBundleIdentifier;
-@property(assign,retain) NSString * sourceApplicationSecondaryIdentifier;
-@property(assign,readwrite) long long usesBackgroundSessionOverride;
+@property (nonatomic) bool allowsCellularAccess;
+@property (nonatomic, retain) NSString *deviceIdentifier;
+@property (nonatomic, retain) NSString *operationID;
+@property (nonatomic) id parentOperation;
+@property (nonatomic, retain) NSString *parentSectionID;
+@property (nonatomic) long long qualityOfService;
+@property (nonatomic, retain) CKContainerSetupInfo *setupInfo;
+@property (nonatomic, retain) NSString *sourceApplicationBundleIdentifier;
+@property (nonatomic, retain) NSString *sourceApplicationSecondaryIdentifier;
+@property (nonatomic) long long usesBackgroundSessionOverride;
 
 + (bool)supportsSecureCoding;
 

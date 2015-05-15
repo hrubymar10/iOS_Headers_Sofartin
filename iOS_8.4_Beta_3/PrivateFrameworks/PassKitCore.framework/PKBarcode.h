@@ -9,11 +9,11 @@
     NSDictionary *_options;
 }
 
-@property(assign,copy) NSString * altText;
-@property(assign,readwrite) long long format;
-@property(assign,readonly) bool isTall;
-@property(assign,copy) NSData * messageData;
-@property(assign,copy) NSDictionary * options;
+@property (nonatomic, copy) NSString *altText;
+@property (nonatomic) long long format;
+@property (nonatomic, readonly) bool isTall;
+@property (nonatomic, copy) NSData *messageData;
+@property (nonatomic, copy) NSDictionary *options;
 
 + (bool)supportsSecureCoding;
 

@@ -38,8 +38,8 @@
     int _transactionType;
 }
 
-@property(assign,readwrite) <MSSharingProtocolDelegate> * delegate;
-@property(assign,readonly) NSString * personID;
+@property (nonatomic) <MSSharingProtocolDelegate> *delegate;
+@property (nonatomic, readonly) NSString *personID;
 
 + (id)_dictShareStateFromShareState:(int)arg1;
 + (id)_invalidFieldErrorWithFieldName:(id)arg1;

@@ -4,7 +4,7 @@
 
 @interface RURadioFeaturedStationsCollectionViewTemplate : RURadioStationsCollectionViewTemplate
 
-@property(assign,readonly) RURadioStationsCollectionViewTemplateTextElement * titleTextElement;
+@property (nonatomic, readonly) RURadioStationsCollectionViewTemplateTextElement *titleTextElement;
 
 + (struct { unsigned long long x1; double x2; double x3; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_4_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_4_1_2; } x4; struct CGAffineTransform { double x_5_1_1; double x_5_1_2; double x_5_1_3; double x_5_1_4; double x_5_1_5; double x_5_1_6; } x5; double x6; double x7; double x8; })_attributesForStackItemAtIndex:(long long)arg1 displayScale:(double)arg2;
 + (double)_horizontalEdgePaddingForHorizontalSizeClass:(long long)arg1 displayScale:(double)arg2 rootViewWidth:(double)arg3;

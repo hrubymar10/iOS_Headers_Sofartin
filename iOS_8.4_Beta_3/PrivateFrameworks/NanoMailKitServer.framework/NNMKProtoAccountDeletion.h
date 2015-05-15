@@ -6,8 +6,8 @@
     NSString *_accountId;
 }
 
-@property(assign,retain) NSString * accountId;
-@property(assign,readonly) bool hasAccountId;
+@property (nonatomic, retain) NSString *accountId;
+@property (nonatomic, readonly) bool hasAccountId;
 
 - (void).cxx_destruct;
 - (id)accountId;

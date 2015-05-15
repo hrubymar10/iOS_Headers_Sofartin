@@ -6,7 +6,7 @@
     NSPredicate *_predicate;
 }
 
-@property(assign,retain) NSPredicate * predicate;
+@property (nonatomic, retain) NSPredicate *predicate;
 
 - (void).cxx_destruct;
 - (bool)_validateThrottleParams:(id)arg1;

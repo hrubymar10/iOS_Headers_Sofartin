@@ -10,8 +10,8 @@
     SSURLBag *_urlBag;
 }
 
-@property(assign,copy) NSString * certificateURLBagKey;
-@property(assign,copy) id outputBlock;
+@property (copy) NSString *certificateURLBagKey;
+@property (copy) id outputBlock;
 
 - (void).cxx_destruct;
 - (id)_resolveCertificateURLReturningError:(id*)arg1;

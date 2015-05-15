@@ -13,8 +13,8 @@
     id _searchID;
 }
 
-@property(assign,retain) NSError * error;
-@property(assign,readwrite) bool numberOfMatchesExceededLimit;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic) bool numberOfMatchesExceededLimit;
 
 - (void)_finishWithError:(id)arg1;
 - (id)_processGroupsInResults:(id)arg1;

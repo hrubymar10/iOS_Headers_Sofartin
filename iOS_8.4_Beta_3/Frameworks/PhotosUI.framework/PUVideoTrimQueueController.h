@@ -23,13 +23,13 @@
     NSArray *_videosSources;
 }
 
-@property(assign,readonly) PLManagedAlbum * album;
-@property(assign,retain) NSString * albumName;
-@property(assign,retain) NSString * commentText;
-@property(assign,readwrite) <PUVideoTrimQueueControllerDelegate> * delegate;
-@property(assign,retain) NSArray * recipients;
-@property(assign,readonly) NSDictionary * trimmedVideoInfo;
-@property(assign,readonly) NSArray * videosSources;
+@property (nonatomic, readonly) PLManagedAlbum *album;
+@property (nonatomic, retain) NSString *albumName;
+@property (nonatomic, retain) NSString *commentText;
+@property (nonatomic) <PUVideoTrimQueueControllerDelegate> *delegate;
+@property (nonatomic, retain) NSArray *recipients;
+@property (nonatomic, readonly) NSDictionary *trimmedVideoInfo;
+@property (nonatomic, readonly) NSArray *videosSources;
 
 - (void).cxx_destruct;
 - (void)_dequeueTrimmingControl;

@@ -10,11 +10,11 @@
     <AccountRefreshProtocol> *_syncAccount;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSDictionary * originalProperties;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSDictionary *originalProperties;
+@property (readonly) Class superclass;
 
 + (id)_accountCreationMap;
 + (id)_creatorsInfo;

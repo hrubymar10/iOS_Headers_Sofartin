@@ -9,9 +9,9 @@
     NSObject<OS_dispatch_queue> *_timerQueue;
 }
 
-@property(assign,retain) MSTimerGate * gate;
-@property(assign,retain) NSXPCConnection * server;
-@property(assign,retain) NSObject<OS_dispatch_queue> * timerQueue;
+@property (nonatomic, retain) MSTimerGate *gate;
+@property (nonatomic, retain) NSXPCConnection *server;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *timerQueue;
 
 - (void).cxx_destruct;
 - (id)gate;

@@ -6,7 +6,7 @@
     NSCache *__cache;
 }
 
-@property(assign,retain) NSCache * _cache;
+@property (nonatomic, retain) NSCache *_cache;
 
 + (id)sharedInstance;
 

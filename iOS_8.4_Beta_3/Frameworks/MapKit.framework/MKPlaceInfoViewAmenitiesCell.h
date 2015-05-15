@@ -9,8 +9,8 @@
     NSMutableArray *_values;
 }
 
-@property(assign,retain) NSArray * keyValues;
-@property(assign,retain) NSMutableArray * labelConstraints;
+@property (nonatomic, retain) NSArray *keyValues;
+@property (nonatomic, retain) NSMutableArray *labelConstraints;
 
 + (double)intrinsicContentHeight;
 + (id)reuseIdentifier;

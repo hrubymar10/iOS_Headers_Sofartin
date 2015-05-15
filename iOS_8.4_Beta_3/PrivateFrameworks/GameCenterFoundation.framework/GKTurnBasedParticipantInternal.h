@@ -14,16 +14,16 @@
     NSDate *_timeoutDate;
 }
 
-@property(assign,retain) NSString * inviteMessage;
-@property(assign,retain) GKPlayerInternal * invitedBy;
-@property(assign,retain) NSDate * lastTurnDate;
-@property(assign,readwrite) unsigned int matchOutcome;
-@property(assign,retain) GKPlayerInternal * player;
-@property(assign,readonly) NSString * playerID;
-@property(assign,retain) NSString * sessionID;
-@property(assign,readwrite) unsigned char slot;
-@property(assign,retain) NSString * status;
-@property(assign,retain) NSDate * timeoutDate;
+@property (nonatomic, retain) NSString *inviteMessage;
+@property (nonatomic, retain) GKPlayerInternal *invitedBy;
+@property (nonatomic, retain) NSDate *lastTurnDate;
+@property (nonatomic) unsigned int matchOutcome;
+@property (nonatomic, retain) GKPlayerInternal *player;
+@property (nonatomic, readonly) NSString *playerID;
+@property (nonatomic, retain) NSString *sessionID;
+@property (nonatomic) unsigned char slot;
+@property (nonatomic, retain) NSString *status;
+@property (nonatomic, retain) NSDate *timeoutDate;
 
 + (id)secureCodedPropertyKeys;
 

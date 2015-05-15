@@ -8,9 +8,9 @@
     double _overlap;
 }
 
-@property(assign,retain) NSArray * bubbleTokens;
-@property(assign,retain) NSArray * bubbles;
-@property(assign,readwrite) double overlap;
+@property (nonatomic, retain) NSArray *bubbleTokens;
+@property (nonatomic, retain) NSArray *bubbles;
+@property (nonatomic) double overlap;
 
 - (id)bubbleTokens;
 - (id)bubbles;

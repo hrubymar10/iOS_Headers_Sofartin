@@ -8,10 +8,10 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,retain) NSObject<PLAlbumProtocol> * album;
-@property(assign,retain) <PLAssetContainer> * container;
-@property(assign,readonly) bool keyAssetDidChange;
-@property(assign,readonly) bool titleDidChange;
+@property (nonatomic, readonly, retain) NSObject<PLAlbumProtocol> *album;
+@property (nonatomic, readonly, retain) <PLAssetContainer> *container;
+@property (nonatomic, readonly) bool keyAssetDidChange;
+@property (nonatomic, readonly) bool titleDidChange;
 
 + (id)notificationWithContainer:(id)arg1 snapshot:(id)arg2 changedAssets:(id)arg3;
 

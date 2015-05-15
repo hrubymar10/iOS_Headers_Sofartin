@@ -6,7 +6,7 @@
     NSArray *_connectionRules;
 }
 
-@property(assign,copy) NSArray * connectionRules;
+@property (copy) NSArray *connectionRules;
 
 + (bool)supportsSecureCoding;
 

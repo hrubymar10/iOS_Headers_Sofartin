@@ -11,9 +11,9 @@
     long long _indexOfVisibleItemForBoundsChange;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } cachedCollectionViewContentSize;
-@property(assign,retain) NSDictionary * cachedLayoutAttributes;
-@property(assign,readwrite) long long indexOfVisibleItemForBoundsChange;
+@property (nonatomic) struct CGSize { double x1; double x2; } cachedCollectionViewContentSize;
+@property (nonatomic, retain) NSDictionary *cachedLayoutAttributes;
+@property (nonatomic) long long indexOfVisibleItemForBoundsChange;
 
 - (void).cxx_destruct;
 - (struct CGPoint { double x1; double x2; })_contentOffsetForItemAtIndex:(long long)arg1 collectionViewBounds:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg2;

@@ -12,11 +12,11 @@
     NSValue *titlePositionOffset;
 }
 
-@property(assign,retain) NSValue * backButtonTitlePositionOffset;
-@property(assign,retain) NSValue * miniBackButtonTitlePositionOffset;
-@property(assign,retain) NSValue * miniTitlePositionOffset;
-@property(assign,retain) UIColor * tintColor;
-@property(assign,retain) NSValue * titlePositionOffset;
+@property (nonatomic, retain) NSValue *backButtonTitlePositionOffset;
+@property (nonatomic, retain) NSValue *miniBackButtonTitlePositionOffset;
+@property (nonatomic, retain) NSValue *miniTitlePositionOffset;
+@property (nonatomic, retain) UIColor *tintColor;
+@property (nonatomic, retain) NSValue *titlePositionOffset;
 
 - (id)anyBackButtonBackgroundImage;
 - (id)anyBackgroundImage;

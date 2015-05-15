@@ -6,7 +6,7 @@
     NSMutableArray *_assets;
 }
 
-@property(assign,retain) NSMutableArray * assets;
+@property (nonatomic, retain) NSMutableArray *assets;
 
 + (id)fromProto:(id)arg1;
 + (id)toProto:(id)arg1;

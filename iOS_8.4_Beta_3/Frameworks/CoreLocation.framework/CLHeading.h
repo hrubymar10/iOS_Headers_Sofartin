@@ -6,17 +6,17 @@
     id _internal;
 }
 
-@property(assign,retain) NSString * compactDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasGeomagneticVector;
-@property(assign,readonly) double heading;
-@property(assign,readonly) double headingAccuracy;
-@property(assign,readonly) double magneticHeading;
-@property(assign,copy) NSDate * timestamp;
-@property(assign,readonly) double trueHeading;
-@property(assign,readonly) double x;
-@property(assign,readonly) double y;
-@property(assign,readonly) double z;
+@property (nonatomic, readonly, retain) NSString *compactDescription;
+@property (nonatomic, readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasGeomagneticVector;
+@property (nonatomic, readonly) double heading;
+@property (nonatomic, readonly) double headingAccuracy;
+@property (nonatomic, readonly) double magneticHeading;
+@property (nonatomic, readonly, copy) NSDate *timestamp;
+@property (nonatomic, readonly) double trueHeading;
+@property (nonatomic, readonly) double x;
+@property (nonatomic, readonly) double y;
+@property (nonatomic, readonly) double z;
 
 + (bool)supportsSecureCoding;
 

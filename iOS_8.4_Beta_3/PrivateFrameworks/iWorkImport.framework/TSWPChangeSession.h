@@ -8,9 +8,9 @@
     unsigned int _sessionUID;
 }
 
-@property(assign,retain) TSKAnnotationAuthor * author;
-@property(assign,retain) NSDate * date;
-@property(assign,readwrite) unsigned int sessionUID;
+@property (nonatomic, retain) TSKAnnotationAuthor *author;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic) unsigned int sessionUID;
 
 + (bool)needsObjectUUID;
 

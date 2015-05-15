@@ -10,11 +10,11 @@
     long long _style;
 }
 
-@property(assign,readonly) UIView * _backgroundView;
-@property(assign,readonly) UIImageView * _badgeImageView;
-@property(assign,readonly) UILabel * _textLabel;
-@property(assign,readwrite) long long numberOfPhotos;
-@property(assign,readwrite) long long style;
+@property (nonatomic, readonly) UIView *_backgroundView;
+@property (nonatomic, readonly) UIImageView *_badgeImageView;
+@property (nonatomic, readonly) UILabel *_textLabel;
+@property (nonatomic) long long numberOfPhotos;
+@property (nonatomic) long long style;
 
 - (id)_backgroundView;
 - (id)_badgeImageView;

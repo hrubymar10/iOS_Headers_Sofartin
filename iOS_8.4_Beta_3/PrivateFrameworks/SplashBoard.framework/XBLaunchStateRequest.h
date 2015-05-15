@@ -32,19 +32,19 @@
     unsigned long long _statusBarState;
 }
 
-@property(assign,readwrite) long long currentOrientation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isLaunchingLive;
-@property(assign,readwrite) bool isMainScene;
-@property(assign,readwrite) long long launchingOrientation;
-@property(assign,readwrite) double scale;
-@property(assign,copy) NSString * sceneID;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } screenBounds;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } statusBarJailRect;
-@property(assign,readwrite) unsigned long long statusBarState;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long currentOrientation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isLaunchingLive;
+@property (nonatomic) bool isMainScene;
+@property (nonatomic) long long launchingOrientation;
+@property (nonatomic) double scale;
+@property (nonatomic, copy) NSString *sceneID;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } screenBounds;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } statusBarJailRect;
+@property (nonatomic) unsigned long long statusBarState;
+@property (readonly) Class superclass;
 
 - (long long)currentOrientation;
 - (void)dealloc;

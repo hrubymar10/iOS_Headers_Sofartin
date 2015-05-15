@@ -16,12 +16,12 @@
     bool _shouldUseTransformWhenReplicatingState;
 }
 
-@property(assign,copy) UIColor * borderColor;
-@property(assign,readwrite) double borderWidth;
-@property(assign,readwrite) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } deferredTransform;
-@property(assign,readwrite) bool shouldDeferSettingTransform;
-@property(assign,readwrite) bool shouldSkipImageWhenReplicatingState;
-@property(assign,readwrite) bool shouldUseTransformWhenReplicatingState;
+@property (nonatomic, copy) UIColor *borderColor;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } deferredTransform;
+@property (nonatomic) bool shouldDeferSettingTransform;
+@property (nonatomic) bool shouldSkipImageWhenReplicatingState;
+@property (nonatomic) bool shouldUseTransformWhenReplicatingState;
 
 - (bool)_shouldAnimatePropertyWithKey:(id)arg1;
 - (id)borderColor;

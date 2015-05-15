@@ -9,10 +9,10 @@
     TSCH3DLabelResources *mLabels;
 }
 
-@property(assign,retain) TSCH3DChartTitlePositioner * cachedPositioner;
-@property(assign,readonly) TSCHChartInfo * chartInfo;
-@property(assign,readwrite) bool hidden;
-@property(assign,readonly) TSCH3DLabelResources * labels;
+@property (nonatomic, retain) TSCH3DChartTitlePositioner *cachedPositioner;
+@property (nonatomic, readonly) TSCHChartInfo *chartInfo;
+@property (nonatomic) bool hidden;
+@property (nonatomic, readonly) TSCH3DLabelResources *labels;
 
 + (id)propertiesWithInfo:(id)arg1 styleIndex:(unsigned long long)arg2;
 

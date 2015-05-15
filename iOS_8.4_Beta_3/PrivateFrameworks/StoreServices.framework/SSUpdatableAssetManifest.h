@@ -15,18 +15,18 @@
     NSString *_version;
 }
 
-@property(assign,copy) NSArray * assets;
-@property(assign,retain) SSUpdatableAsset * bootstrapAsset;
-@property(assign,retain) NSURL * cacheURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSDictionary * extraInfo;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double lastModifiedTimestamp;
-@property(assign,copy) NSString * name;
-@property(assign,retain) NSURL * serverURL;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * version;
+@property (nonatomic, copy) NSArray *assets;
+@property (nonatomic, retain) SSUpdatableAsset *bootstrapAsset;
+@property (nonatomic, retain) NSURL *cacheURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSDictionary *extraInfo;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double lastModifiedTimestamp;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) NSURL *serverURL;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *version;
 
 + (unsigned long long)_scaleDefinedByPath:(id)arg1;
 

@@ -9,13 +9,13 @@
     NSString *_vendorId;
 }
 
-@property(assign,retain) NSMutableArray * attributionUrls;
-@property(assign,retain) NSString * externalComponentId;
-@property(assign,retain) NSString * externalItemId;
-@property(assign,readonly) bool hasExternalComponentId;
-@property(assign,readonly) bool hasExternalItemId;
-@property(assign,readonly) bool hasVendorId;
-@property(assign,retain) NSString * vendorId;
+@property (nonatomic, retain) NSMutableArray *attributionUrls;
+@property (nonatomic, retain) NSString *externalComponentId;
+@property (nonatomic, retain) NSString *externalItemId;
+@property (nonatomic, readonly) bool hasExternalComponentId;
+@property (nonatomic, readonly) bool hasExternalItemId;
+@property (nonatomic, readonly) bool hasVendorId;
+@property (nonatomic, retain) NSString *vendorId;
 
 + (id)attributionForPlaceDataEntity:(id)arg1;
 + (id)attributionForPlaceDataPhotos:(id)arg1;

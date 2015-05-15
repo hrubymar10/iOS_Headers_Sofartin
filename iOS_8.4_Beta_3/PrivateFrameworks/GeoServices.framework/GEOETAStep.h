@@ -16,16 +16,16 @@
     int _zilchPointIndex;
 }
 
-@property(assign,readwrite) unsigned int distanceRemaining;
-@property(assign,readwrite) unsigned int expectedTime;
-@property(assign,readwrite) bool hasDistanceRemaining;
-@property(assign,readwrite) bool hasExpectedTime;
-@property(assign,readwrite) bool hasStepID;
-@property(assign,readonly) bool hasTimeCheckpoints;
-@property(assign,readwrite) bool hasZilchPointIndex;
-@property(assign,readwrite) unsigned int stepID;
-@property(assign,retain) GEOTimeCheckpoints * timeCheckpoints;
-@property(assign,readwrite) int zilchPointIndex;
+@property (nonatomic) unsigned int distanceRemaining;
+@property (nonatomic) unsigned int expectedTime;
+@property (nonatomic) bool hasDistanceRemaining;
+@property (nonatomic) bool hasExpectedTime;
+@property (nonatomic) bool hasStepID;
+@property (nonatomic, readonly) bool hasTimeCheckpoints;
+@property (nonatomic) bool hasZilchPointIndex;
+@property (nonatomic) unsigned int stepID;
+@property (nonatomic, retain) GEOTimeCheckpoints *timeCheckpoints;
+@property (nonatomic) int zilchPointIndex;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

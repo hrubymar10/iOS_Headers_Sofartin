@@ -6,13 +6,13 @@
     AVCaptureFileOutputInternal_FigRecorder *_fileOutputInternal;
 }
 
-@property(assign,readwrite) struct { long long x1; int x2; unsigned int x3; long long x4; } maxRecordedDuration;
-@property(assign,readwrite) long long maxRecordedFileSize;
-@property(assign,readwrite) long long minFreeDiskSpaceLimit;
-@property(assign,readonly) NSURL * outputFileURL;
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } recordedDuration;
-@property(assign,readonly) long long recordedFileSize;
-@property(getter=isRecording,assign,readonly) bool recording;
+@property (nonatomic) struct { long long x1; int x2; unsigned int x3; long long x4; } maxRecordedDuration;
+@property (nonatomic) long long maxRecordedFileSize;
+@property (nonatomic) long long minFreeDiskSpaceLimit;
+@property (nonatomic, readonly) NSURL *outputFileURL;
+@property (nonatomic, readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } recordedDuration;
+@property (nonatomic, readonly) long long recordedFileSize;
+@property (getter=isRecording, nonatomic, readonly) bool recording;
 
 + (void)initialize;
 

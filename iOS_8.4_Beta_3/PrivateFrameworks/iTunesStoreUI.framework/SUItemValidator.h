@@ -7,7 +7,7 @@
     NSMutableArray *_itemTests;
 }
 
-@property(assign,readonly) NSArray * validationTests;
+@property (nonatomic, readonly) NSArray *validationTests;
 
 - (void)addCollectionValidationTests:(id)arg1;
 - (void)addItemValidationTests:(id)arg1;

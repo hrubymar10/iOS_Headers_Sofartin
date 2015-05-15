@@ -7,8 +7,8 @@
     int _pid;
 }
 
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) int pid;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic) int pid;
 
 + (bool)supportsSecureCoding;
 

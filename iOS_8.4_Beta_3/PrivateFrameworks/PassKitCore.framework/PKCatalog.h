@@ -7,8 +7,8 @@
     NSDate *_timestamp;
 }
 
-@property(assign,retain) NSMutableArray * groups;
-@property(assign,retain) NSDate * timestamp;
+@property (nonatomic, retain) NSMutableArray *groups;
+@property (nonatomic, retain) NSDate *timestamp;
 
 + (id)catalogWithContentsOfURL:(id)arg1;
 + (bool)supportsSecureCoding;

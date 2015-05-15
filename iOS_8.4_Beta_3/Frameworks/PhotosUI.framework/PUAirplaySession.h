@@ -10,9 +10,9 @@
     NSDictionary *_slideshowTransitions;
 }
 
-@property(assign,readonly) PUAirplayRoute * airplayRoute;
-@property(assign,readonly) MediaControlClient * mediaControlClient;
-@property(assign,copy) NSString * password;
+@property (nonatomic, readonly) PUAirplayRoute *airplayRoute;
+@property (nonatomic, readonly) MediaControlClient *mediaControlClient;
+@property (nonatomic, copy) NSString *password;
 
 - (void).cxx_destruct;
 - (void)_authenticateWithCompletion:(id)arg1;

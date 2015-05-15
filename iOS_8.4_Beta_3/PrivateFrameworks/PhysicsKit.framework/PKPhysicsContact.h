@@ -18,13 +18,13 @@
     double _impulse;
 }
 
-@property(assign,readonly) PKPhysicsBody * bodyA;
-@property(assign,readonly) PKPhysicsBody * bodyB;
-@property(assign,readonly) double collisionImpulse;
-@property(assign,readonly) struct CGVector { double x1; double x2; } contactNormal;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } contactPoint;
-@property(assign,readwrite) bool didBegin;
-@property(assign,readwrite) bool didEnd;
+@property (nonatomic, readonly) PKPhysicsBody *bodyA;
+@property (nonatomic, readonly) PKPhysicsBody *bodyB;
+@property (nonatomic, readonly) double collisionImpulse;
+@property (nonatomic, readonly) struct CGVector { double x1; double x2; } contactNormal;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } contactPoint;
+@property bool didBegin;
+@property bool didEnd;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

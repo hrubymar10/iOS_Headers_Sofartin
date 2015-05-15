@@ -15,16 +15,16 @@
     NSDate *_timestamp;
 }
 
-@property(assign,retain) PLAgent * agent;
-@property(assign,retain) NSDate * apTimestamp;
-@property(assign,retain) NSDate * calibratedTimestamp;
-@property(assign,retain) NSDate * date;
-@property(assign,retain) NSData * rawData;
-@property(assign,retain) NSNumber * seqNum;
-@property(assign,readonly) unsigned int ticksInGPSONState;
-@property(assign,readonly) unsigned int ticksInGoodState;
-@property(assign,readwrite) double timeCalibration;
-@property(assign,retain) NSDate * timestamp;
+@property (nonatomic, retain) PLAgent *agent;
+@property (nonatomic, readonly, retain) NSDate *apTimestamp;
+@property (nonatomic, readonly, retain) NSDate *calibratedTimestamp;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic, retain) NSData *rawData;
+@property (nonatomic, retain) NSNumber *seqNum;
+@property (nonatomic, readonly) unsigned int ticksInGPSONState;
+@property (nonatomic, readonly) unsigned int ticksInGoodState;
+@property (nonatomic) double timeCalibration;
+@property (nonatomic, readonly, retain) NSDate *timestamp;
 
 + (id)getMsgHandler;
 

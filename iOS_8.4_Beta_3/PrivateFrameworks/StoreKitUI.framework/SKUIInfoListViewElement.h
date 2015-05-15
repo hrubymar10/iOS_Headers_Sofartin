@@ -6,7 +6,7 @@
     long long _infoListType;
 }
 
-@property(assign,readonly) long long infoListType;
+@property (nonatomic, readonly) long long infoListType;
 
 - (id)applyUpdatesWithElement:(id)arg1;
 - (void)enumerateChildrenUsingBlock:(id)arg1;

@@ -21,20 +21,20 @@
     int _updateType;
 }
 
-@property(assign,readwrite) bool autoDownloadAllowableForCellular;
-@property(assign,retain) SUDocumentation * documentation;
-@property(assign,readwrite) unsigned long long downloadSize;
-@property(getter=isDownloadable,assign,readwrite) bool downloadable;
-@property(getter=isDownloadableOverCellular,assign,readwrite) bool downloadableOverCellular;
-@property(assign,readwrite) unsigned long long installationSize;
-@property(getter=_msuPrepareSize,setter=_setMsuPrepareSize:,assign,readwrite) unsigned long long msuPrepareSize;
-@property(assign,retain) NSString * productBuildVersion;
-@property(assign,retain) NSString * productSystemName;
-@property(assign,retain) NSString * productVersion;
-@property(assign,retain) NSString * publisher;
-@property(getter=_isStreamingZipCapable,setter=_setStreamingZipCapable:,assign,readwrite) bool streamingZipCapable;
-@property(getter=_unarchiveSize,setter=_setUnarchiveSize:,assign,readwrite) unsigned long long unarchiveSize;
-@property(assign,readwrite) int updateType;
+@property (nonatomic) bool autoDownloadAllowableForCellular;
+@property (nonatomic, retain) SUDocumentation *documentation;
+@property (nonatomic) unsigned long long downloadSize;
+@property (getter=isDownloadable, nonatomic) bool downloadable;
+@property (getter=isDownloadableOverCellular, nonatomic) bool downloadableOverCellular;
+@property (nonatomic) unsigned long long installationSize;
+@property (getter=_msuPrepareSize, setter=_setMsuPrepareSize:, nonatomic) unsigned long long msuPrepareSize;
+@property (nonatomic, retain) NSString *productBuildVersion;
+@property (nonatomic, retain) NSString *productSystemName;
+@property (nonatomic, retain) NSString *productVersion;
+@property (nonatomic, retain) NSString *publisher;
+@property (getter=_isStreamingZipCapable, setter=_setStreamingZipCapable:, nonatomic) bool streamingZipCapable;
+@property (getter=_unarchiveSize, setter=_setUnarchiveSize:, nonatomic) unsigned long long unarchiveSize;
+@property (nonatomic) int updateType;
 
 + (bool)supportsSecureCoding;
 

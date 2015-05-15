@@ -8,7 +8,7 @@
     long long _options;
 }
 
-@property(assign,readonly) ICSTokenizer * lexer;
+@property (readonly) ICSTokenizer *lexer;
 
 + (id)entitiesFromNSData:(id)arg1 options:(long long)arg2;
 

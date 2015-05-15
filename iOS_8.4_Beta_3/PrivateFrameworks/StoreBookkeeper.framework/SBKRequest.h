@@ -17,14 +17,14 @@
     SBKTransaction *_transaction;
 }
 
-@property(assign,retain) NSData * bodyData;
-@property(getter=isConcurrent,assign,readonly) bool concurrent;
-@property(assign,readwrite) bool includeDeviceGUID;
-@property(assign,readwrite) long long method;
-@property(assign,retain) ISDataProvider * responseDataProvider;
-@property(assign,readwrite) bool shouldAuthenticate;
-@property(assign,readonly) double timeoutInterval;
-@property(assign,retain) SBKTransaction * transaction;
+@property (nonatomic, retain) NSData *bodyData;
+@property (getter=isConcurrent, nonatomic, readonly) bool concurrent;
+@property (nonatomic) bool includeDeviceGUID;
+@property (nonatomic) long long method;
+@property (nonatomic, retain) ISDataProvider *responseDataProvider;
+@property (nonatomic) bool shouldAuthenticate;
+@property (nonatomic, readonly) double timeoutInterval;
+@property (nonatomic, retain) SBKTransaction *transaction;
 
 + (id)_contentEncodingTypeStringForBodyContentEncodingType:(long long)arg1;
 + (id)_contentTypeStringForBodyContentType:(long long)arg1;

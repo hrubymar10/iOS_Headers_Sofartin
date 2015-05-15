@@ -4,7 +4,7 @@
 
 @interface SKUIPredicateViewElement : SKUIViewElement
 
-@property(assign,readonly) NSPredicate * entityValuePredicate;
+@property (nonatomic, readonly) NSPredicate *entityValuePredicate;
 
 - (id)entityValuePredicate;
 

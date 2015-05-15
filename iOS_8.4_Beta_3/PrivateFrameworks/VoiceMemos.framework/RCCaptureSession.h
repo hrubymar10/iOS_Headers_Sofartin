@@ -21,15 +21,15 @@
     NSHashTable *_weakObservers;
 }
 
-@property(assign,readonly) RCAVState * AVState;
-@property(assign,readonly) double captureDestinationComposedDuration;
-@property(assign,readonly) RCCaptureInputWaveformDataSource * captureWaveformDataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) RCCaptureInputDevice * inputDevice;
-@property(assign,readonly) bool isCaptureSessionFinished;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) RCAVState *AVState;
+@property (nonatomic, readonly) double captureDestinationComposedDuration;
+@property (nonatomic, readonly) RCCaptureInputWaveformDataSource *captureWaveformDataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) RCCaptureInputDevice *inputDevice;
+@property (nonatomic, readonly) bool isCaptureSessionFinished;
+@property (readonly) Class superclass;
 
 + (void)playCaptureDidFinishSoundEffectWithCompletionBlock:(id)arg1;
 + (void)playCaptureWillStartSoundEffectWithCompletionBlock:(id)arg1;

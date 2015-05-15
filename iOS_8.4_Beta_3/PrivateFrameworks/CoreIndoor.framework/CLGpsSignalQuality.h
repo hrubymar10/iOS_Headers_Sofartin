@@ -6,7 +6,7 @@
     int _quality;
 }
 
-@property(assign,readwrite) int quality;
+@property (nonatomic) int quality;
 
 + (bool)supportsSecureCoding;
 

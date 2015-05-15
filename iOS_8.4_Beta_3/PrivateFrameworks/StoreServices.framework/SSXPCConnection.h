@@ -10,8 +10,8 @@
     NSObject<OS_dispatch_queue> *_replyQueue;
 }
 
-@property(assign,copy) id disconnectBlock;
-@property(assign,copy) id messageBlock;
+@property (copy) id disconnectBlock;
+@property (copy) id messageBlock;
 
 - (id)_initSSXPCConnection;
 - (void)_reloadEventHandler;

@@ -4,7 +4,7 @@
 
 @interface PKPaymentShippingMethodDataItem : PKPaymentDataItem
 
-@property(assign,readonly) PKShippingMethod * shippingMethod;
+@property (nonatomic, readonly) PKShippingMethod *shippingMethod;
 
 + (long long)dataType;
 

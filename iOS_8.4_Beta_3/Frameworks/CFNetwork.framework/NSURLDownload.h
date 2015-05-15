@@ -6,13 +6,13 @@
     NSURLDownloadInternal *_internal;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) bool deletesFileUponFailure;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSURLRequest * request;
-@property(assign,copy) NSData * resumeData;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property bool deletesFileUponFailure;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly, copy) NSURLRequest *request;
+@property (readonly, copy) NSData *resumeData;
+@property (readonly) Class superclass;
 
 + (id)_downloadWithLoadingCFURLConnection:(struct _CFURLConnection { }*)arg1 request:(struct _CFURLRequest { }*)arg2 response:(struct _CFURLResponse { }*)arg3 delegate:(id)arg4 proxy:(id)arg5;
 + (id)_downloadWithLoadingConnection:(id)arg1 request:(id)arg2 response:(id)arg3 delegate:(id)arg4 proxy:(id)arg5;

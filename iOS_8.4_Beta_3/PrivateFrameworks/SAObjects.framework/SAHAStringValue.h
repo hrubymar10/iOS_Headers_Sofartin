@@ -4,7 +4,7 @@
 
 @interface SAHAStringValue : SAHAAttributeValue
 
-@property(assign,copy) NSString * value;
+@property (nonatomic, copy) NSString *value;
 
 + (id)stringValue;
 + (id)stringValueWithDictionary:(id)arg1 context:(id)arg2;

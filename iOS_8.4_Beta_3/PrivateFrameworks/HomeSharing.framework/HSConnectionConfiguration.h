@@ -13,14 +13,14 @@
     NSString *_userAgent;
 }
 
-@property(assign,readonly) SSAccount * account;
-@property(assign,readonly) NSURL * baseURL;
-@property(assign,readonly) NSString * buildIdentifier;
-@property(assign,readonly) NSDictionary * cookieHeaders;
-@property(assign,readonly) NSNumber * familyMemberStoreID;
-@property(assign,readonly) NSString * purchaseClientIdentifier;
-@property(assign,readonly) long long requestReason;
-@property(assign,readonly) NSString * userAgent;
+@property (nonatomic, readonly) SSAccount *account;
+@property (nonatomic, readonly) NSURL *baseURL;
+@property (nonatomic, readonly) NSString *buildIdentifier;
+@property (nonatomic, readonly) NSDictionary *cookieHeaders;
+@property (nonatomic, readonly) NSNumber *familyMemberStoreID;
+@property (nonatomic, readonly) NSString *purchaseClientIdentifier;
+@property (nonatomic, readonly) long long requestReason;
+@property (nonatomic, readonly) NSString *userAgent;
 
 + (bool)supportsSecureCoding;
 

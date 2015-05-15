@@ -4,16 +4,16 @@
 
 @interface SACommandSupport : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * aceVersion;
-@property(assign,copy) NSString * commandId;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAObjectSupport * resultSupport;
-@property(assign,copy) NSURL * serverEndpoint;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * supportedConstraints;
-@property(assign,readwrite) long long weight;
+@property (nonatomic, copy) NSString *aceVersion;
+@property (nonatomic, copy) NSString *commandId;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAObjectSupport *resultSupport;
+@property (nonatomic, copy) NSURL *serverEndpoint;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *supportedConstraints;
+@property (nonatomic) long long weight;
 
 + (id)commandSupport;
 + (id)commandSupportWithDictionary:(id)arg1 context:(id)arg2;

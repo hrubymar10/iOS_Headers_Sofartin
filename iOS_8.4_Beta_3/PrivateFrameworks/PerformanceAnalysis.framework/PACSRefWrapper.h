@@ -9,7 +9,7 @@
     } _csRef;
 }
 
-@property(assign,readonly) struct _CSTypeRef { unsigned long long x1; unsigned long long x2; } csRef;
+@property (readonly) struct _CSTypeRef { unsigned long long x1; unsigned long long x2; } csRef;
 
 - (struct _CSTypeRef { unsigned long long x1; unsigned long long x2; })csRef;
 - (void)dealloc;

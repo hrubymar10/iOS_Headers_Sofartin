@@ -9,11 +9,11 @@
     unsigned long long _sortDescriptorFlags;
 }
 
-@property(assign,readonly) bool ascending;
-@property(assign,readonly) id comparator;
-@property(assign,copy) NSString * key;
-@property(assign,retain) id reversedSortDescriptor;
-@property(assign,readonly) SEL selector;
+@property (readonly) bool ascending;
+@property (readonly) id comparator;
+@property (readonly, copy) NSString *key;
+@property (readonly, retain) id reversedSortDescriptor;
+@property (readonly) SEL selector;
 
 + (id)_defaultSelectorName;
 + (void)initialize;

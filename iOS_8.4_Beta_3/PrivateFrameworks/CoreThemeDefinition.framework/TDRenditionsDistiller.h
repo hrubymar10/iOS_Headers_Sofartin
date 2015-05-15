@@ -14,7 +14,7 @@
     bool shouldCompressCSIDataFlag;
 }
 
-@property(assign,retain) TDLogger * logger;
+@property (retain) TDLogger *logger;
 
 - (void)_distill:(id)arg1;
 - (void)_enqueueCSIDataInfo:(id)arg1;

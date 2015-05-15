@@ -13,16 +13,16 @@
     NSString *_messageId;
 }
 
-@property(assign,retain) NSString * contentId;
-@property(assign,retain) NSData * dateSynced;
-@property(assign,readwrite) unsigned int fullSyncVersion;
-@property(assign,readonly) bool hasContentId;
-@property(assign,readonly) bool hasDateSynced;
-@property(assign,readwrite) bool hasFullSyncVersion;
-@property(assign,readonly) bool hasImageData;
-@property(assign,readonly) bool hasMessageId;
-@property(assign,retain) NSData * imageData;
-@property(assign,retain) NSString * messageId;
+@property (nonatomic, retain) NSString *contentId;
+@property (nonatomic, retain) NSData *dateSynced;
+@property (nonatomic) unsigned int fullSyncVersion;
+@property (nonatomic, readonly) bool hasContentId;
+@property (nonatomic, readonly) bool hasDateSynced;
+@property (nonatomic) bool hasFullSyncVersion;
+@property (nonatomic, readonly) bool hasImageData;
+@property (nonatomic, readonly) bool hasMessageId;
+@property (nonatomic, retain) NSData *imageData;
+@property (nonatomic, retain) NSString *messageId;
 
 - (void).cxx_destruct;
 - (id)contentId;

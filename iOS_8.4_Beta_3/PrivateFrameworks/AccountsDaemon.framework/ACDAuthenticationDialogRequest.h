@@ -11,12 +11,12 @@
     NSURL *_url;
 }
 
-@property(assign,retain) ACAccount * account;
-@property(assign,copy) NSString * authDelegateClassBundlePath;
-@property(assign,copy) NSString * authDelegateClassName;
-@property(assign,copy) id completion;
-@property(assign,readwrite) bool confirmationRequired;
-@property(assign,copy) NSURL * url;
+@property (nonatomic, retain) ACAccount *account;
+@property (nonatomic, copy) NSString *authDelegateClassBundlePath;
+@property (nonatomic, copy) NSString *authDelegateClassName;
+@property (nonatomic, copy) id completion;
+@property (nonatomic) bool confirmationRequired;
+@property (nonatomic, copy) NSURL *url;
 
 - (void).cxx_destruct;
 - (id)account;

@@ -24,26 +24,26 @@
     bool _wantsSkinnyMask;
 }
 
-@property(assign,readwrite) unsigned long long balloonCorners;
-@property(assign,readwrite) bool canUseOpaqueMask;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKBalloonViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) CKManualUpdater * displayUpdater;
-@property(assign,retain) UITapGestureRecognizer * doubleTapGestureRecognizer;
-@property(getter=isFilled,assign,readwrite) bool filled;
-@property(assign,readwrite) bool hasOverlay;
-@property(assign,readwrite) bool hasTail;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UILongPressGestureRecognizer * longPressGestureRecognizer;
-@property(assign,readonly) bool needsGroupOpacity;
-@property(assign,readwrite) BOOL orientation;
-@property(assign,retain) CKBalloonImageView * overlay;
-@property(assign,readonly) UIColor * overlayColor;
-@property(getter=isShowingMenu,assign,readwrite) bool showingMenu;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textAlignmentInsets;
-@property(assign,readwrite) bool wantsSkinnyMask;
+@property (nonatomic) unsigned long long balloonCorners;
+@property (nonatomic) bool canUseOpaqueMask;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKBalloonViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) CKManualUpdater *displayUpdater;
+@property (nonatomic, retain) UITapGestureRecognizer *doubleTapGestureRecognizer;
+@property (getter=isFilled, nonatomic) bool filled;
+@property (nonatomic) bool hasOverlay;
+@property (nonatomic) bool hasTail;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UILongPressGestureRecognizer *longPressGestureRecognizer;
+@property (nonatomic, readonly) bool needsGroupOpacity;
+@property (nonatomic) BOOL orientation;
+@property (nonatomic, retain) CKBalloonImageView *overlay;
+@property (nonatomic, readonly) UIColor *overlayColor;
+@property (getter=isShowingMenu, nonatomic) bool showingMenu;
+@property (readonly) Class superclass;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } textAlignmentInsets;
+@property (nonatomic) bool wantsSkinnyMask;
 
 - (void)_dismissOverlay;
 - (void)_performAction:(SEL)arg1 sender:(id)arg2;

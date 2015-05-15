@@ -13,8 +13,8 @@
     UILabel *_valueView;
 }
 
-@property(assign,readwrite) PKPaymentAuthorizationLayout * layout;
-@property(assign,readwrite) long long style;
+@property (nonatomic) PKPaymentAuthorizationLayout *layout;
+@property (nonatomic) long long style;
 
 - (void)_createSubviews;
 - (double)_initialLeading;

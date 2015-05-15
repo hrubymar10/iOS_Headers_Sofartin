@@ -6,7 +6,7 @@
     NSDictionary *_context;
 }
 
-@property(assign,copy) NSDictionary * context;
+@property (nonatomic, copy) NSDictionary *context;
 
 + (id)_exportedInterface;
 + (id)_remoteViewControllerInterface;

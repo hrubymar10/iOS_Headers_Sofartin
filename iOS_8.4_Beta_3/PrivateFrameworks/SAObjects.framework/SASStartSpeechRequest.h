@@ -4,11 +4,11 @@
 
 @interface SASStartSpeechRequest : SASStartSpeech
 
-@property(assign,readwrite) bool eyesFree;
-@property(assign,readwrite) bool handsFree;
-@property(assign,readwrite) bool talkOnly;
-@property(assign,copy) NSDictionary * voiceTriggerEventInfo;
-@property(assign,copy) NSArray * voiceTriggerPhrases;
+@property (nonatomic) bool eyesFree;
+@property (nonatomic) bool handsFree;
+@property (nonatomic) bool talkOnly;
+@property (nonatomic, copy) NSDictionary *voiceTriggerEventInfo;
+@property (nonatomic, copy) NSArray *voiceTriggerPhrases;
 
 + (id)startSpeechRequest;
 + (id)startSpeechRequestWithDictionary:(id)arg1 context:(id)arg2;

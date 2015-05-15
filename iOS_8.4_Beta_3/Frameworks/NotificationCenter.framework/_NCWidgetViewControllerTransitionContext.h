@@ -6,7 +6,7 @@
     bool _autoLayoutTransition;
 }
 
-@property(getter=isAutoLayoutTransition,assign,readwrite) bool autoLayoutTransition;
+@property (getter=isAutoLayoutTransition, nonatomic) bool autoLayoutTransition;
 
 - (bool)isAutoLayoutTransition;
 - (void)setAutoLayoutTransition:(bool)arg1;

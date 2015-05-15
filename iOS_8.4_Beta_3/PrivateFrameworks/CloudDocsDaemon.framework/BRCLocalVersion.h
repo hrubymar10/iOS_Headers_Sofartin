@@ -7,8 +7,8 @@
     CKRecord *_uploadedAssets;
 }
 
-@property(assign,retain) NSError * uploadError;
-@property(assign,retain) CKRecord * uploadedAssets;
+@property (nonatomic, retain) NSError *uploadError;
+@property (nonatomic, retain) CKRecord *uploadedAssets;
 
 + (bool)supportsSecureCoding;
 

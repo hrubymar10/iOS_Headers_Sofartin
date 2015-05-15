@@ -8,9 +8,9 @@
     NSString *_stateName;
 }
 
-@property(assign,copy) NSString * animationName;
-@property(assign,copy) NSString * associatedBundleID;
-@property(assign,copy) NSString * stateName;
+@property (nonatomic, copy) NSString *animationName;
+@property (nonatomic, copy) NSString *associatedBundleID;
+@property (nonatomic, copy) NSString *stateName;
 
 + (id)contextWithState:(id)arg1 animationName:(id)arg2;
 + (bool)supportsSecureCoding;

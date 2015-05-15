@@ -10,11 +10,11 @@
     NSMutableDictionary *_userRecordIDsToUserInfos;
 }
 
-@property(assign,copy) id discoverUserInfosCompletionBlock;
-@property(assign,copy) NSArray * emailAddresses;
-@property(assign,retain) NSMutableDictionary * emailsToUserInfos;
-@property(assign,copy) NSArray * userRecordIDs;
-@property(assign,retain) NSMutableDictionary * userRecordIDsToUserInfos;
+@property (nonatomic, copy) id discoverUserInfosCompletionBlock;
+@property (nonatomic, copy) NSArray *emailAddresses;
+@property (nonatomic, retain) NSMutableDictionary *emailsToUserInfos;
+@property (nonatomic, copy) NSArray *userRecordIDs;
+@property (nonatomic, retain) NSMutableDictionary *userRecordIDsToUserInfos;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

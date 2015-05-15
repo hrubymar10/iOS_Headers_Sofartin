@@ -8,7 +8,7 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readwrite) bool allCategoriesEnabledOverride;
+@property (nonatomic) bool allCategoriesEnabledOverride;
 
 + (id)sharedController;
 

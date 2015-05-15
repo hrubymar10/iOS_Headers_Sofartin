@@ -12,22 +12,22 @@
     unsigned long long _threadId;
 }
 
-@property(assign,readonly) PAAggregatedProcessInstance * aggregatedTask;
-@property(assign,readonly) PAProcessInstanceAggregator * aggregator;
-@property(assign,readonly) NSMutableArray * contiguousThreadArrays;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long dispatchQueueId;
-@property(assign,readonly) unsigned long long firstTimestampIndex;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isIdleWorkQueueThread;
-@property(assign,readonly) bool isMainThread;
-@property(assign,readonly) bool isProcessorIdleThread;
-@property(assign,readonly) unsigned long long lastTimestampIndex;
-@property(assign,readwrite) int maxPriority;
-@property(assign,readwrite) int minPriority;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long threadId;
+@property (readonly) PAAggregatedProcessInstance *aggregatedTask;
+@property (readonly) PAProcessInstanceAggregator *aggregator;
+@property (readonly) NSMutableArray *contiguousThreadArrays;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property unsigned long long dispatchQueueId;
+@property (readonly) unsigned long long firstTimestampIndex;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isIdleWorkQueueThread;
+@property (readonly) bool isMainThread;
+@property (readonly) bool isProcessorIdleThread;
+@property (readonly) unsigned long long lastTimestampIndex;
+@property int maxPriority;
+@property int minPriority;
+@property (readonly) Class superclass;
+@property unsigned long long threadId;
 
 - (void)addSampleThread:(id)arg1 atTimestampIndex:(unsigned long long)arg2;
 - (id)aggregatedTask;

@@ -6,7 +6,7 @@
     UILabel *_displayLabel;
 }
 
-@property(assign,readonly) NSString * displayText;
+@property (nonatomic, readonly) NSString *displayText;
 
 + (id)displayLabelForReuse;
 + (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })displayLabelFrameForValueViewFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1 styleProvider:(id)arg2 whenEditing:(bool)arg3;

@@ -4,18 +4,18 @@
 
 @interface SASToken : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSNumber * confidenceScore;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSNumber * endTime;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * originalText;
-@property(assign,copy) NSString * recognitionStability;
-@property(assign,readwrite) bool removeSpaceAfter;
-@property(assign,readwrite) bool removeSpaceBefore;
-@property(assign,copy) NSNumber * startTime;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
+@property (nonatomic, copy) NSNumber *confidenceScore;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSNumber *endTime;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *originalText;
+@property (nonatomic, copy) NSString *recognitionStability;
+@property (nonatomic) bool removeSpaceAfter;
+@property (nonatomic) bool removeSpaceBefore;
+@property (nonatomic, copy) NSNumber *startTime;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
 
 + (id)token;
 + (id)tokenWithDictionary:(id)arg1 context:(id)arg2;

@@ -10,11 +10,11 @@
     bool _takeOutTransactions;
 }
 
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * callbackQueue;
-@property(assign,readwrite) bool performingWork;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSMutableArray * remainingWork;
-@property(assign,readwrite) bool takeOutTransactions;
+@property (nonatomic) NSObject<OS_dispatch_queue> *callbackQueue;
+@property (nonatomic) bool performingWork;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSMutableArray *remainingWork;
+@property (nonatomic) bool takeOutTransactions;
 
 - (void).cxx_destruct;
 - (void)_onQueue_doWorkIfNecessary;

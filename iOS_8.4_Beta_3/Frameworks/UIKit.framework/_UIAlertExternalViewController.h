@@ -9,7 +9,7 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,readwrite) UIAlertView * representedAlert;
+@property (nonatomic) UIAlertView *representedAlert;
 
 - (void)_buttonTapped:(id)arg1;
 - (id)_buttonWithTitle:(id)arg1 index:(long long)arg2;

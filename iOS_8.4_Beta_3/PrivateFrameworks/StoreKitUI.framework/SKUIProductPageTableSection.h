@@ -7,8 +7,8 @@
     bool _expanded;
 }
 
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(getter=isExpanded,assign,readwrite) bool expanded;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (getter=isExpanded, nonatomic) bool expanded;
 
 - (void).cxx_destruct;
 - (id)clientContext;

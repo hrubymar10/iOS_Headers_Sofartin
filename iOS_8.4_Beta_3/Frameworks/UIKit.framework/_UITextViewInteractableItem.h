@@ -15,13 +15,13 @@
     UIWindow *_windowForActionSheetPresentation;
 }
 
-@property(assign,readonly) NSArray * actions;
-@property(assign,readonly) NSDictionary * defaultAction;
-@property(assign,readwrite) bool interactionIsFinished;
-@property(assign,readonly) NSString * localizedTitle;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,readwrite) UITextView * textView;
-@property(assign,retain) UIWindow * windowForActionSheetPresentation;
+@property (nonatomic, readonly) NSArray *actions;
+@property (nonatomic, readonly) NSDictionary *defaultAction;
+@property (nonatomic) bool interactionIsFinished;
+@property (nonatomic, readonly) NSString *localizedTitle;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic) UITextView *textView;
+@property (nonatomic, retain) UIWindow *windowForActionSheetPresentation;
 
 - (id)_actionSheet;
 - (void)_cleanupSheet;

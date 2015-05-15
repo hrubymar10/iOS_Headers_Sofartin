@@ -7,8 +7,8 @@
     NSString *_searchString;
 }
 
-@property(assign,copy) NSArray * properties;
-@property(assign,copy) NSString * searchString;
+@property (nonatomic, copy) NSArray *properties;
+@property (nonatomic, copy) NSString *searchString;
 
 + (id)predicateWithConcatenatedProperties:(id)arg1 searchString:(id)arg2;
 

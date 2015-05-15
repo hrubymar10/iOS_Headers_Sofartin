@@ -7,8 +7,8 @@
     float _proposedGLfloatValue;
 }
 
-@property(assign,readonly) float GLfloatValue;
-@property(assign,readwrite) float proposedGLfloatValue;
+@property (nonatomic, readonly) float GLfloatValue;
+@property (nonatomic) float proposedGLfloatValue;
 
 - (float)GLfloatValue;
 - (id)description;

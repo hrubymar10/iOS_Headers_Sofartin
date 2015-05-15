@@ -16,18 +16,18 @@
     unsigned int _transportType;
 }
 
-@property(assign,retain) NSString * clientModel;
-@property(assign,retain) NSString * clientVersion;
-@property(assign,readonly) bool hasClientModel;
-@property(assign,readonly) bool hasClientVersion;
-@property(assign,readonly) bool hasSessionUUID;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasTransportType;
-@property(assign,retain) NSString * sessionUUID;
-@property(assign,readwrite) int status;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int transportType;
+@property (nonatomic, retain) NSString *clientModel;
+@property (nonatomic, retain) NSString *clientVersion;
+@property (nonatomic, readonly) bool hasClientModel;
+@property (nonatomic, readonly) bool hasClientVersion;
+@property (nonatomic, readonly) bool hasSessionUUID;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasTransportType;
+@property (nonatomic, retain) NSString *sessionUUID;
+@property (nonatomic) int status;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int transportType;
 
 - (id)clientModel;
 - (id)clientVersion;

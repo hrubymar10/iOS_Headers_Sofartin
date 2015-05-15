@@ -9,13 +9,13 @@
     NSDictionary *_options;
 }
 
-@property(assign,copy) NSData * activityPayload;
-@property(assign,copy) NSData * advertisementPayload;
-@property(assign,retain) SFPeerDevice * device;
-@property(assign,copy) NSString * deviceIdentifier;
-@property(assign,copy) NSString * deviceModelIdentifier;
-@property(assign,copy) NSString * deviceName;
-@property(assign,copy) NSDictionary * options;
+@property (copy) NSData *activityPayload;
+@property (readonly, copy) NSData *advertisementPayload;
+@property (readonly, retain) SFPeerDevice *device;
+@property (readonly, copy) NSString *deviceIdentifier;
+@property (readonly, copy) NSString *deviceModelIdentifier;
+@property (readonly, copy) NSString *deviceName;
+@property (readonly, copy) NSDictionary *options;
 
 + (bool)supportsSecureCoding;
 

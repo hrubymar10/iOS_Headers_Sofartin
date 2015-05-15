@@ -56,12 +56,12 @@
     double _pinchWidth;
 }
 
-@property(getter=isBorderAndAccessoriesVisible,assign,readwrite) bool borderAndAccessoriesVisible;
-@property(assign,readonly) struct CGSize { double x1; double x2; } imageSize;
-@property(assign,copy) NSString * name;
-@property(assign,retain) PLManagedAsset * photo;
-@property(assign,readonly) bool showsPlaceholder;
-@property(assign,retain) PLVideoView * videoView;
+@property (getter=isBorderAndAccessoriesVisible, nonatomic) bool borderAndAccessoriesVisible;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, retain) PLManagedAsset *photo;
+@property (nonatomic, readonly) bool showsPlaceholder;
+@property (nonatomic, retain) PLVideoView *videoView;
 
 + (double)imageBorderWidth;
 

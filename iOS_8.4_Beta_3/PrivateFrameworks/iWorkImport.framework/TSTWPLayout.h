@@ -60,19 +60,19 @@
     int _cachedVerticalAlignment;
 }
 
-@property(assign,readwrite) bool cacheIsValid;
-@property(assign,readwrite) unsigned int cachedAutoSizeFlags;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cachedAutosizedFrame;
-@property(assign,readwrite) struct { unsigned short x1; unsigned char x2; unsigned char x3; } cachedCellID;
-@property(assign,retain) TSTCellStyle * cachedCellStyle;
-@property(assign,readwrite) bool cachedCellWraps;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cachedMaskRect;
-@property(assign,readwrite) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } cachedMaskSpillRange;
-@property(assign,readwrite) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } cachedMergeRange;
-@property(assign,retain) TSWPPadding * cachedPadding;
-@property(assign,readwrite) int cachedParagraphAlignment;
-@property(assign,retain) TSWPParagraphStyle * cachedTextStyle;
-@property(assign,readwrite) int cachedVerticalAlignment;
+@property (nonatomic) bool cacheIsValid;
+@property (nonatomic) unsigned int cachedAutoSizeFlags;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cachedAutosizedFrame;
+@property (nonatomic) struct { unsigned short x1; unsigned char x2; unsigned char x3; } cachedCellID;
+@property (nonatomic, retain) TSTCellStyle *cachedCellStyle;
+@property (nonatomic) bool cachedCellWraps;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cachedMaskRect;
+@property (nonatomic) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } cachedMaskSpillRange;
+@property (nonatomic) struct TSUColumnRowRect { struct { unsigned short x_1_1_1; unsigned char x_1_1_2; unsigned char x_1_1_3; } x1; struct { unsigned short x_2_1_1; unsigned short x_2_1_2; } x2; } cachedMergeRange;
+@property (nonatomic, retain) TSWPPadding *cachedPadding;
+@property (nonatomic) int cachedParagraphAlignment;
+@property (nonatomic, retain) TSWPParagraphStyle *cachedTextStyle;
+@property (nonatomic) int cachedVerticalAlignment;
 
 - (id).cxx_construct;
 - (bool)cacheIsValid;

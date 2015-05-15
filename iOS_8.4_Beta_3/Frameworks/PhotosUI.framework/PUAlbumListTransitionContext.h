@@ -11,12 +11,12 @@
     bool _usesContentOffsetAutoAdjust;
 }
 
-@property(assign,retain) <PLAssetContainer> * collection;
-@property(assign,retain) NSIndexPath * keyItemIndexPath;
-@property(assign,retain) PHCollection * phCollection;
-@property(assign,retain) PUPhotoDecoration * photoDecoration;
-@property(assign,retain) UICollectionViewTransitionLayout * transitionLayout;
-@property(assign,readwrite) bool usesContentOffsetAutoAdjust;
+@property (nonatomic, retain) <PLAssetContainer> *collection;
+@property (nonatomic, retain) NSIndexPath *keyItemIndexPath;
+@property (nonatomic, retain) PHCollection *phCollection;
+@property (nonatomic, retain) PUPhotoDecoration *photoDecoration;
+@property (nonatomic, retain) UICollectionViewTransitionLayout *transitionLayout;
+@property (nonatomic) bool usesContentOffsetAutoAdjust;
 
 - (void).cxx_destruct;
 - (id)collection;

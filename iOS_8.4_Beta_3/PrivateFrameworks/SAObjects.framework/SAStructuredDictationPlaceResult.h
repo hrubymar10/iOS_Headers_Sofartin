@@ -4,12 +4,12 @@
 
 @interface SAStructuredDictationPlaceResult : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * placeResultType;
-@property(assign,copy) NSData * resultData;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *placeResultType;
+@property (nonatomic, copy) NSData *resultData;
+@property (readonly) Class superclass;
 
 + (id)structuredDictationPlaceResult;
 + (id)structuredDictationPlaceResultWithDictionary:(id)arg1 context:(id)arg2;

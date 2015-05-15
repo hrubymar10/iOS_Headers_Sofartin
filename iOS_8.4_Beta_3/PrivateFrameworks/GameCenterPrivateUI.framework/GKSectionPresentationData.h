@@ -20,21 +20,21 @@
     double _showMoreMaxY;
 }
 
-@property(assign,readwrite) double footerMaxY;
-@property(assign,readwrite) double footerMinY;
-@property(assign,readwrite) double headerMaxY;
-@property(assign,readwrite) double headerMinY;
-@property(assign,readwrite) double itemsMaxY;
-@property(assign,readwrite) double itemsMinY;
-@property(assign,readwrite) double maxY;
-@property(assign,readwrite) double minY;
-@property(assign,readwrite) unsigned long long numFooters;
-@property(assign,readwrite) unsigned long long numHeaders;
-@property(assign,readwrite) unsigned long long numItems;
-@property(assign,readwrite) unsigned long long numOverlays;
-@property(assign,readwrite) unsigned long long overlayOffset;
-@property(assign,readwrite) long long section;
-@property(assign,readwrite) double showMoreMaxY;
+@property (nonatomic) double footerMaxY;
+@property (nonatomic) double footerMinY;
+@property (nonatomic) double headerMaxY;
+@property (nonatomic) double headerMinY;
+@property (nonatomic) double itemsMaxY;
+@property (nonatomic) double itemsMinY;
+@property (nonatomic) double maxY;
+@property (nonatomic) double minY;
+@property (nonatomic) unsigned long long numFooters;
+@property (nonatomic) unsigned long long numHeaders;
+@property (nonatomic) unsigned long long numItems;
+@property (nonatomic) unsigned long long numOverlays;
+@property (nonatomic) unsigned long long overlayOffset;
+@property (nonatomic) long long section;
+@property (nonatomic) double showMoreMaxY;
 
 - (id)description;
 - (double)footerMaxY;

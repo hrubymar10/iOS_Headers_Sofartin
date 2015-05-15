@@ -12,14 +12,14 @@
     int _requestType;
 }
 
-@property(assign,retain) GEOPDAutocompleteParametersAllEntries * allEntries;
-@property(assign,retain) GEOPDAutocompleteParametersFullEntriesOnly * fullEntries;
-@property(assign,readonly) bool hasAllEntries;
-@property(assign,readonly) bool hasFullEntries;
-@property(assign,readonly) bool hasLocalitiesAndLandmarks;
-@property(assign,readwrite) bool hasRequestType;
-@property(assign,retain) GEOPDAutocompleteParametersLocalitiesAndLandmarks * localitiesAndLandmarks;
-@property(assign,readwrite) int requestType;
+@property (nonatomic, retain) GEOPDAutocompleteParametersAllEntries *allEntries;
+@property (nonatomic, retain) GEOPDAutocompleteParametersFullEntriesOnly *fullEntries;
+@property (nonatomic, readonly) bool hasAllEntries;
+@property (nonatomic, readonly) bool hasFullEntries;
+@property (nonatomic, readonly) bool hasLocalitiesAndLandmarks;
+@property (nonatomic) bool hasRequestType;
+@property (nonatomic, retain) GEOPDAutocompleteParametersLocalitiesAndLandmarks *localitiesAndLandmarks;
+@property (nonatomic) int requestType;
 
 - (id)allEntries;
 - (void)copyTo:(id)arg1;

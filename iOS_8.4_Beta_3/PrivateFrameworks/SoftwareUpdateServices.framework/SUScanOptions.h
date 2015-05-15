@@ -8,9 +8,9 @@
     NSMutableSet *_types;
 }
 
-@property(getter=isForced,assign,readwrite) bool forced;
-@property(assign,retain) NSString * identifier;
-@property(assign,retain) NSSet * types;
+@property (getter=isForced, nonatomic) bool forced;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, retain) NSSet *types;
 
 + (bool)supportsSecureCoding;
 

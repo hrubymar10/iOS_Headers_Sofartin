@@ -18,11 +18,11 @@
     } _magnifiedImageSize;
 }
 
-@property(assign,retain) UIImageView * imageView;
-@property(assign,retain) UIImage * itemImage;
-@property(assign,retain) NSIndexPath * itemIndexPath;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } magnifiedDragEdgeInsets;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } magnifiedImageSize;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, retain) UIImage *itemImage;
+@property (nonatomic, retain) NSIndexPath *itemIndexPath;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } magnifiedDragEdgeInsets;
+@property (nonatomic) struct CGSize { double x1; double x2; } magnifiedImageSize;
 
 - (void).cxx_destruct;
 - (void)hideAnimate:(bool)arg1;

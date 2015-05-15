@@ -10,8 +10,8 @@
     UIView *_titleView;
 }
 
-@property(assign,readonly) unsigned long long passType;
-@property(assign,readwrite) bool showActivityIndicator;
+@property (nonatomic, readonly) unsigned long long passType;
+@property (nonatomic) bool showActivityIndicator;
 
 - (void)_addTapped;
 - (void)addTapped;

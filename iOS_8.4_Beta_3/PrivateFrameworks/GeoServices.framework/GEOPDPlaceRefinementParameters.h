@@ -17,19 +17,19 @@
     int _resultProviderId;
 }
 
-@property(assign,retain) GEOStructuredAddress * addressHint;
-@property(assign,retain) NSMutableArray * formattedAddressLineHints;
-@property(assign,readonly) bool hasAddressHint;
-@property(assign,readonly) bool hasLocationHint;
-@property(assign,readwrite) bool hasMuid;
-@property(assign,readonly) bool hasPlaceNameHint;
-@property(assign,readwrite) bool hasPlaceTypeHint;
-@property(assign,readwrite) bool hasResultProviderId;
-@property(assign,retain) GEOLatLng * locationHint;
-@property(assign,readwrite) unsigned long long muid;
-@property(assign,retain) NSString * placeNameHint;
-@property(assign,readwrite) int placeTypeHint;
-@property(assign,readwrite) int resultProviderId;
+@property (nonatomic, retain) GEOStructuredAddress *addressHint;
+@property (nonatomic, retain) NSMutableArray *formattedAddressLineHints;
+@property (nonatomic, readonly) bool hasAddressHint;
+@property (nonatomic, readonly) bool hasLocationHint;
+@property (nonatomic) bool hasMuid;
+@property (nonatomic, readonly) bool hasPlaceNameHint;
+@property (nonatomic) bool hasPlaceTypeHint;
+@property (nonatomic) bool hasResultProviderId;
+@property (nonatomic, retain) GEOLatLng *locationHint;
+@property (nonatomic) unsigned long long muid;
+@property (nonatomic, retain) NSString *placeNameHint;
+@property (nonatomic) int placeTypeHint;
+@property (nonatomic) int resultProviderId;
 
 - (void)addFormattedAddressLineHint:(id)arg1;
 - (id)addressHint;

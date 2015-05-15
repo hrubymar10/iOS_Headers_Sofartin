@@ -8,7 +8,7 @@
     NSDictionary *_resolvedRecipientsByEmailAddress;
 }
 
-@property(assign,readonly) NSError * error;
+@property (readonly) NSError *error;
 
 - (void)actionFailed:(long long)arg1 forTask:(id)arg2 error:(id)arg3;
 - (void)dealloc;

@@ -9,9 +9,9 @@
     NSDictionary *_properties;
 }
 
-@property(assign,readonly) Class entityClass;
-@property(assign,readonly) ML3MusicLibrary * library;
-@property(assign,readonly) long long persistentId;
+@property (nonatomic, readonly) Class entityClass;
+@property (nonatomic, readonly) ML3MusicLibrary *library;
+@property (nonatomic, readonly) long long persistentId;
 
 + (unsigned int*)allExportPropertyKeysForEntityClass:(Class)arg1 returnedCount:(unsigned int*)arg2;
 

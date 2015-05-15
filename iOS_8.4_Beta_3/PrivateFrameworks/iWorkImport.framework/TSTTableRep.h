@@ -90,30 +90,30 @@
     } mZoomToEditVisibleCellRange;
 }
 
-@property(assign,retain) TSTSearchReference * activeSearchReference;
-@property(assign,readwrite) <TSTTableAnimationController> * animationController;
-@property(assign,readonly) <TSTCanvasReferenceController> * canvasReferenceController;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } canvasVisibleRect;
-@property(assign,readwrite) TSTSelectionDragController * cellDragController;
-@property(assign,retain) NSMutableDictionary * childTextReps;
-@property(assign,readonly) TSTAnimation * currentAnimation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) <TSTTableRepDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isZoomToEditOperationInProgress;
-@property(assign,readonly) TSTMasterLayout * masterLayout;
-@property(assign,readwrite) struct { unsigned short x1; unsigned char x2; unsigned char x3; } ratingsDragCellID;
-@property(assign,readonly) TSTCellSelection * selection;
-@property(assign,readonly) int selectionType;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) <TSTTableChromeProvider> * tableChrome;
-@property(assign,readonly) TSTTableInfo * tableInfo;
-@property(assign,readonly) TSTLayout * tableLayout;
-@property(assign,readonly) TSTTableModel * tableModel;
-@property(getter=isTableNameValid,assign,readwrite) bool tableNameValid;
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } transformFromCanvas;
-@property(assign,readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } transformToCanvas;
+@property (nonatomic, retain) TSTSearchReference *activeSearchReference;
+@property (nonatomic) <TSTTableAnimationController> *animationController;
+@property (nonatomic, readonly) <TSTCanvasReferenceController> *canvasReferenceController;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } canvasVisibleRect;
+@property (nonatomic) TSTSelectionDragController *cellDragController;
+@property (nonatomic, retain) NSMutableDictionary *childTextReps;
+@property (nonatomic, readonly) TSTAnimation *currentAnimation;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) <TSTTableRepDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isZoomToEditOperationInProgress;
+@property (nonatomic, readonly) TSTMasterLayout *masterLayout;
+@property (nonatomic) struct { unsigned short x1; unsigned char x2; unsigned char x3; } ratingsDragCellID;
+@property (nonatomic, readonly) TSTCellSelection *selection;
+@property (nonatomic, readonly) int selectionType;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) <TSTTableChromeProvider> *tableChrome;
+@property (nonatomic, readonly) TSTTableInfo *tableInfo;
+@property (nonatomic, readonly) TSTLayout *tableLayout;
+@property (nonatomic, readonly) TSTTableModel *tableModel;
+@property (getter=isTableNameValid, nonatomic) bool tableNameValid;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } transformFromCanvas;
+@property (nonatomic, readonly) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } transformToCanvas;
 
 + (Class)tableRepDelegateClass;
 

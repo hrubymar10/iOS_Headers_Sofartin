@@ -25,20 +25,20 @@
     double mVerticalCellSpacing;
 }
 
-@property(assign,readonly) unsigned long long cellCount;
-@property(assign,readonly) NSArray * cells;
-@property(assign,readonly) double effectiveStrokeWidth;
-@property(assign,readonly) id fill;
-@property(assign,readonly) double horizontalCellSpacing;
-@property(assign,readonly) struct CGSize { double x1; double x2; } largestCellSize;
-@property(assign,readonly) bool legendOn;
-@property(assign,readonly) double opacity;
-@property(assign,readonly) TSWPParagraphStyle * paragraphStyle;
-@property(assign,readonly) bool reverseSingleColumnLegendOrder;
-@property(assign,readonly) TSDShadow * shadow;
-@property(assign,readonly) TSDStroke * stroke;
-@property(assign,readonly) double symbolGap;
-@property(assign,readonly) double verticalCellSpacing;
+@property (readonly) unsigned long long cellCount;
+@property (readonly) NSArray *cells;
+@property (readonly) double effectiveStrokeWidth;
+@property (readonly) id fill;
+@property (readonly) double horizontalCellSpacing;
+@property (readonly) struct CGSize { double x1; double x2; } largestCellSize;
+@property (readonly) bool legendOn;
+@property (readonly) double opacity;
+@property (readonly) TSWPParagraphStyle *paragraphStyle;
+@property (readonly) bool reverseSingleColumnLegendOrder;
+@property (readonly) TSDShadow *shadow;
+@property (readonly) TSDStroke *stroke;
+@property (readonly) double symbolGap;
+@property (readonly) double verticalCellSpacing;
 
 - (unsigned long long)cellCount;
 - (id)cellForSeriesIndex:(unsigned long long)arg1 cellType:(int)arg2;

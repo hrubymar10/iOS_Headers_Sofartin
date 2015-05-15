@@ -13,13 +13,13 @@
     unsigned char _versionNumber;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,readonly) bool encrypted;
-@property(assign,readonly) bool fileXfer;
-@property(assign,readonly) unsigned short priority;
-@property(assign,readonly) unsigned int sequenceNumber;
-@property(assign,readonly) unsigned short streamID;
-@property(assign,readonly) unsigned char versionNumber;
+@property (nonatomic, readonly, retain) NSData *data;
+@property (nonatomic, readonly) bool encrypted;
+@property (nonatomic, readonly) bool fileXfer;
+@property (nonatomic, readonly) unsigned short priority;
+@property (nonatomic, readonly) unsigned int sequenceNumber;
+@property (nonatomic, readonly) unsigned short streamID;
+@property (nonatomic, readonly) unsigned char versionNumber;
 
 - (id)_nonHeaderData;
 - (unsigned char)command;

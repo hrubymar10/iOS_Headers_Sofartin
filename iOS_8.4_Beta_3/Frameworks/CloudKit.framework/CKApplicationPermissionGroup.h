@@ -8,9 +8,9 @@
     unsigned long long _enabledPermissions;
 }
 
-@property(assign,retain) NSArray * applicationBundleIDs;
-@property(assign,retain) NSArray * containerIDs;
-@property(assign,readwrite) unsigned long long enabledPermissions;
+@property (nonatomic, retain) NSArray *applicationBundleIDs;
+@property (nonatomic, retain) NSArray *containerIDs;
+@property (nonatomic) unsigned long long enabledPermissions;
 
 + (bool)supportsSecureCoding;
 

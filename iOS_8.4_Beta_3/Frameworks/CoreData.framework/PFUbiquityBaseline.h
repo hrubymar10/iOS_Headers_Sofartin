@@ -14,16 +14,16 @@
     NSString *_storeName;
 }
 
-@property(assign,readonly) _PFZipFileArchive * baselineArchive;
-@property(assign,readonly) PFUbiquityLocation * baselineArchiveLocation;
-@property(assign,readonly) PFUbiquityLocation * baselinePeerArchiveLocation;
-@property(assign,readonly) PFUbiquityLocation * baselineStagingLocation;
-@property(assign,readonly) PFUbiquityBaselineMetadata * metadata;
-@property(assign,readonly) NSString * modelVersionHash;
-@property(assign,readonly) NSPersistentStore * store;
-@property(assign,readonly) NSString * storeFilename;
-@property(assign,readonly) NSDictionary * storeFilenameToData;
-@property(assign,readonly) NSString * storeName;
+@property (readonly) _PFZipFileArchive *baselineArchive;
+@property (readonly) PFUbiquityLocation *baselineArchiveLocation;
+@property (readonly) PFUbiquityLocation *baselinePeerArchiveLocation;
+@property (readonly) PFUbiquityLocation *baselineStagingLocation;
+@property (readonly) PFUbiquityBaselineMetadata *metadata;
+@property (readonly) NSString *modelVersionHash;
+@property (readonly) NSPersistentStore *store;
+@property (readonly) NSString *storeFilename;
+@property (readonly) NSDictionary *storeFilenameToData;
+@property (readonly) NSString *storeName;
 
 + (bool)checkPeerReceiptsUnderRootLocation:(id)arg1 forAgreementWithLocalPeerID:(id)arg2 storeName:(id)arg3 modelVersionHash:(id)arg4 error:(id*)arg5;
 + (id)createArchiveWithModel:(id)arg1 metadata:(id)arg2 storeFilenameToData:(id)arg3 storeFilename:(id)arg4 error:(id*)arg5;

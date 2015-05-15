@@ -6,14 +6,14 @@
     AVCaptureSessionInternal *_internal;
 }
 
-@property(assign,readwrite) bool automaticallyConfiguresApplicationAudioSession;
-@property(assign,readonly) NSArray * inputs;
-@property(getter=isInterrupted,assign,readonly) bool interrupted;
-@property(assign,readonly) struct OpaqueCMClock { }* masterClock;
-@property(assign,readonly) NSArray * outputs;
-@property(getter=isRunning,assign,readonly) bool running;
-@property(assign,copy) NSString * sessionPreset;
-@property(assign,readwrite) bool usesApplicationAudioSession;
+@property (nonatomic) bool automaticallyConfiguresApplicationAudioSession;
+@property (nonatomic, readonly) NSArray *inputs;
+@property (getter=isInterrupted, nonatomic, readonly) bool interrupted;
+@property (nonatomic, readonly) struct OpaqueCMClock { }*masterClock;
+@property (nonatomic, readonly) NSArray *outputs;
+@property (getter=isRunning, nonatomic, readonly) bool running;
+@property (nonatomic, copy) NSString *sessionPreset;
+@property (nonatomic) bool usesApplicationAudioSession;
 
 + (id)allSessionPresets;
 + (id)alloc;

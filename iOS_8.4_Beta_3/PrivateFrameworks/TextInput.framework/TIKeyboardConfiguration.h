@@ -10,11 +10,11 @@
     NSString *_layoutTag;
 }
 
-@property(assign,copy) NSString * accentKeyString;
-@property(assign,readwrite) bool assertDefaultKeyPlane;
-@property(assign,copy) TIKeyboardInputManagerState * inputManagerState;
-@property(assign,retain) TIKeyboardIntermediateText * intermediateText;
-@property(assign,copy) NSString * layoutTag;
+@property (nonatomic, copy) NSString *accentKeyString;
+@property (nonatomic) bool assertDefaultKeyPlane;
+@property (nonatomic, copy) TIKeyboardInputManagerState *inputManagerState;
+@property (nonatomic, retain) TIKeyboardIntermediateText *intermediateText;
+@property (nonatomic, copy) NSString *layoutTag;
 
 + (bool)supportsSecureCoding;
 

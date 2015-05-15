@@ -9,10 +9,10 @@
     long long _state;
 }
 
-@property(assign,readwrite) double currentTime;
-@property(assign,readwrite) double duration;
-@property(assign,retain) NSError * error;
-@property(assign,readwrite) long long playerState;
+@property (nonatomic) double currentTime;
+@property (nonatomic) double duration;
+@property (nonatomic, retain) NSError *error;
+@property (nonatomic) long long playerState;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (double)currentTime;

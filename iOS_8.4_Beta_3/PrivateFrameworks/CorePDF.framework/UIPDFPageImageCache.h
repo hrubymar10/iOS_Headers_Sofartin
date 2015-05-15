@@ -14,9 +14,9 @@
     NSOperationQueue *_renderQueue;
 }
 
-@property(assign,readonly) UIPDFDocument * document;
-@property(assign,readonly) unsigned long long lookAhead;
-@property(assign,readonly) unsigned long long pageCount;
+@property (readonly) UIPDFDocument *document;
+@property (readonly) unsigned long long lookAhead;
+@property (readonly) unsigned long long pageCount;
 
 - (void)addRenderJob:(id)arg1;
 - (void)cacheImageOfPage:(unsigned long long)arg1 maxSize:(struct CGSize { double x1; double x2; })arg2;

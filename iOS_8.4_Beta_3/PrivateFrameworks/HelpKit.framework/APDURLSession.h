@@ -11,15 +11,15 @@
     NSURLRequest *_request;
 }
 
-@property(assign,retain) id completionHandler;
-@property(assign,retain) NSURLSessionDataTask * dataTask;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * lastModified;
-@property(assign,retain) NSURLRequest * request;
-@property(assign,readonly) NSURLSessionTask * sessionTask;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) id completionHandler;
+@property (nonatomic, retain) NSURLSessionDataTask *dataTask;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *lastModified;
+@property (nonatomic, retain) NSURLRequest *request;
+@property (nonatomic, readonly) NSURLSessionTask *sessionTask;
+@property (readonly) Class superclass;
 
 + (id)defaultOperationQueue;
 + (id)defaultURLSessionConfiguration;

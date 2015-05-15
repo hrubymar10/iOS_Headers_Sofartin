@@ -7,8 +7,8 @@
     id _completionHandler;
 }
 
-@property(assign,copy) id block;
-@property(assign,copy) id completionHandler;
+@property (nonatomic, copy) id block;
+@property (nonatomic, copy) id completionHandler;
 
 - (void).cxx_destruct;
 - (id)block;

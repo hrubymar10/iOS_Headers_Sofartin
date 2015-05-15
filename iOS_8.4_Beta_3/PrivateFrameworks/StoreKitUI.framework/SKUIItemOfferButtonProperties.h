@@ -23,24 +23,24 @@
     bool _universal;
 }
 
-@property(assign,readwrite) double alpha;
-@property(assign,copy) NSAttributedString * attributedText;
-@property(assign,retain) UIColor * borderBackgroundColor;
-@property(assign,retain) UIColor * borderColor;
-@property(assign,retain) CAFilter * borderCompositingFilter;
-@property(assign,readwrite) double borderCornerRadius;
-@property(assign,readwrite) double borderWidth;
-@property(assign,readwrite) bool cancelRecognizer;
-@property(assign,readwrite) long long confirmationTitleStyle;
-@property(assign,readwrite) bool hasBorderView;
-@property(assign,readwrite) bool hasTitleLabel;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) double progress;
-@property(assign,readwrite) bool progressIndeterminate;
-@property(assign,readwrite) long long progressType;
-@property(assign,retain) UIColor * textColor;
-@property(assign,readwrite) long long titleStyle;
-@property(assign,readwrite) bool universal;
+@property (nonatomic) double alpha;
+@property (nonatomic, copy) NSAttributedString *attributedText;
+@property (nonatomic, retain) UIColor *borderBackgroundColor;
+@property (nonatomic, retain) UIColor *borderColor;
+@property (nonatomic, retain) CAFilter *borderCompositingFilter;
+@property (nonatomic) double borderCornerRadius;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) bool cancelRecognizer;
+@property (nonatomic) long long confirmationTitleStyle;
+@property (nonatomic) bool hasBorderView;
+@property (nonatomic) bool hasTitleLabel;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) double progress;
+@property (nonatomic) bool progressIndeterminate;
+@property (nonatomic) long long progressType;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic) long long titleStyle;
+@property (nonatomic) bool universal;
 
 - (void).cxx_destruct;
 - (double)alpha;

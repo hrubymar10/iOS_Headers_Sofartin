@@ -12,13 +12,13 @@
     bool _shouldSendFingerOffNotification;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isFingerDetectionEnabled,assign,readwrite) bool fingerDetectionEnabled;
-@property(getter=isFingerOn,assign,readonly) bool fingerOn;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isPaused,assign,readonly) bool paused;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isFingerDetectionEnabled, nonatomic) bool fingerDetectionEnabled;
+@property (getter=isFingerOn, nonatomic, readonly) bool fingerOn;
+@property (readonly) unsigned long long hash;
+@property (getter=isPaused, nonatomic, readonly) bool paused;
+@property (readonly) Class superclass;
 
 + (id)sharedInstance;
 

@@ -4,12 +4,12 @@
 
 @interface GCControllerAxisInput : GCControllerElement
 
-@property(getter=isDigital,assign,readonly) bool digital;
-@property(getter=isFlipped,assign,readonly) bool flipped;
-@property(assign,readonly) GCControllerButtonInput * negative;
-@property(assign,readonly) GCControllerButtonInput * positive;
-@property(assign,readonly) float value;
-@property(assign,copy) id valueChangedHandler;
+@property (getter=isDigital, nonatomic, readonly) bool digital;
+@property (getter=isFlipped, nonatomic, readonly) bool flipped;
+@property (nonatomic, readonly) GCControllerButtonInput *negative;
+@property (nonatomic, readonly) GCControllerButtonInput *positive;
+@property (readonly) float value;
+@property (copy) id valueChangedHandler;
 
 - (bool)_setValue:(float)arg1;
 - (id)description;

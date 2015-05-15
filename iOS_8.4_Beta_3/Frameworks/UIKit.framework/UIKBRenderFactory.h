@@ -11,12 +11,12 @@
     NSMutableArray *_segmentTraits;
 }
 
-@property(assign,readonly) bool boldTextEnabled;
-@property(assign,readwrite) bool lightweightFactory;
-@property(assign,readonly) UIKBRenderConfig * renderConfig;
-@property(assign,readwrite) double rivenSizeFactor;
-@property(assign,readwrite) double scale;
-@property(assign,readonly) NSArray * segmentTraits;
+@property (nonatomic, readonly) bool boldTextEnabled;
+@property (nonatomic) bool lightweightFactory;
+@property (nonatomic, readonly) UIKBRenderConfig *renderConfig;
+@property (nonatomic) double rivenSizeFactor;
+@property (nonatomic) double scale;
+@property (nonatomic, readonly) NSArray *segmentTraits;
 
 + (bool)_enabled;
 + (long long)_graphicsQuality;

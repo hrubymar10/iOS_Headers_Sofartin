@@ -12,12 +12,12 @@
     NSString *_uniqueid;
 }
 
-@property(assign,readwrite) unsigned int delayMs;
-@property(assign,readwrite) bool hasDelayMs;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readonly) bool hasUniqueid;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,retain) NSString * uniqueid;
+@property (nonatomic) unsigned int delayMs;
+@property (nonatomic) bool hasDelayMs;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, readonly) bool hasUniqueid;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic, retain) NSString *uniqueid;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

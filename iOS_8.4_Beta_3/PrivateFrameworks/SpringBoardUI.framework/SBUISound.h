@@ -22,21 +22,21 @@
     NSDictionary *_vibrationPattern;
 }
 
-@property(setter=_setResolvedSoundID:,assign,readwrite) unsigned int _resolvedSystemSoundID;
-@property(assign,copy) NSString * accountIdentifier;
-@property(assign,readwrite) int alertType;
-@property(assign,retain) AVItem * avItem;
-@property(assign,retain) NSDictionary * controllerAttributes;
-@property(assign,readwrite) double maxDuration;
-@property(getter=isRepeating,assign,readwrite) bool repeats;
-@property(assign,retain) NSString * ringtoneName;
-@property(assign,copy) NSString * songPath;
-@property(assign,readwrite) unsigned long long soundBehavior;
-@property(assign,readwrite) long long soundType;
-@property(assign,readwrite) unsigned int systemSoundID;
-@property(assign,copy) NSString * toneIdentifier;
-@property(assign,copy) NSString * vibrationIdentifier;
-@property(assign,retain) NSDictionary * vibrationPattern;
+@property (setter=_setResolvedSoundID:, nonatomic) unsigned int _resolvedSystemSoundID;
+@property (nonatomic, copy) NSString *accountIdentifier;
+@property (nonatomic) int alertType;
+@property (nonatomic, retain) AVItem *avItem;
+@property (nonatomic, retain) NSDictionary *controllerAttributes;
+@property (nonatomic) double maxDuration;
+@property (getter=isRepeating, nonatomic) bool repeats;
+@property (nonatomic, retain) NSString *ringtoneName;
+@property (nonatomic, copy) NSString *songPath;
+@property (nonatomic) unsigned long long soundBehavior;
+@property (nonatomic) long long soundType;
+@property (nonatomic) unsigned int systemSoundID;
+@property (nonatomic, copy) NSString *toneIdentifier;
+@property (nonatomic, copy) NSString *vibrationIdentifier;
+@property (nonatomic, retain) NSDictionary *vibrationPattern;
 
 - (id)_completionBlock;
 - (unsigned int)_resolvedSystemSoundID;

@@ -6,7 +6,7 @@
     ML3ArtworkConfiguration *_artworkConfiguration;
 }
 
-@property(assign,retain) ML3ArtworkConfiguration * artworkConfiguration;
+@property (nonatomic, retain) ML3ArtworkConfiguration *artworkConfiguration;
 
 + (id)systemConfiguration;
 

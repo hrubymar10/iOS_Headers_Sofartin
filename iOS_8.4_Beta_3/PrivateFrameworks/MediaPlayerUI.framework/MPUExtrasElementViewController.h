@@ -8,7 +8,7 @@
     bool _wide;
 }
 
-@property(getter=isWide,assign,readwrite) bool wide;
+@property (getter=isWide, nonatomic) bool wide;
 
 + (id)_borderView;
 

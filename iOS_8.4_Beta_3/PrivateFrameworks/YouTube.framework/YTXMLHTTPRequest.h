@@ -8,8 +8,8 @@
     bool _needsHostHeader;
 }
 
-@property(assign,readwrite) bool needsAccountAuth;
-@property(assign,readwrite) bool needsHostHeader;
+@property (nonatomic) bool needsAccountAuth;
+@property (nonatomic) bool needsHostHeader;
 
 - (void)dealloc;
 - (void)didAuthenticate:(id)arg1;

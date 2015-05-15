@@ -9,10 +9,10 @@
     unsigned long long _shuffleType;
 }
 
-@property(assign,readonly) MPMediaItem * firstItem;
-@property(assign,readonly) MPMediaQuery * mediaQuery;
-@property(assign,readonly) unsigned long long repeatType;
-@property(assign,readonly) unsigned long long shuffleType;
+@property (nonatomic, readonly) MPMediaItem *firstItem;
+@property (nonatomic, readonly) MPMediaQuery *mediaQuery;
+@property (nonatomic, readonly) unsigned long long repeatType;
+@property (nonatomic, readonly) unsigned long long shuffleType;
 
 - (void).cxx_destruct;
 - (id)createPlaybackContext;

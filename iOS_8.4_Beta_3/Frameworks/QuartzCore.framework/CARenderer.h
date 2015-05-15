@@ -6,10 +6,10 @@
     struct CARendererPriv { id x1; struct Weak<id> { id x_2_1_1; } x2; id x3; struct Context {} *x4; struct Renderer {} *x5; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_6_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_6_1_2; } x6; struct Update {} *x7; unsigned int x8; unsigned int x9[2]; unsigned int x10[2]; unsigned int x11; unsigned int x12 : 8; unsigned long long x13; BOOL x14[0]; } *_priv;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
-@property(assign,retain) CAContext * context;
-@property(assign,readwrite) <CARendererDelegate> * delegate;
-@property(assign,retain) CALayer * layer;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
+@property (retain) CAContext *context;
+@property <CARendererDelegate> *delegate;
+@property (retain) CALayer *layer;
 
 + (id)rendererWithEAGLContext:(id)arg1 options:(id)arg2;
 

@@ -7,8 +7,8 @@
     NSURLProtectionSpace *_protectionSpace;
 }
 
-@property(assign,readonly) NSURLCredential * credential;
-@property(assign,readonly) NSURLProtectionSpace * protectionSpace;
+@property (nonatomic, readonly) NSURLCredential *credential;
+@property (nonatomic, readonly) NSURLProtectionSpace *protectionSpace;
 
 - (void).cxx_destruct;
 - (id)completion;

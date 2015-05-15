@@ -4,11 +4,11 @@
 
 @interface IKTimelineElement : IKViewElement
 
-@property(assign,retain) NSArray * events;
-@property(assign,readonly) double refreshInterval;
-@property(assign,readonly) unsigned long long timelineType;
-@property(assign,retain) IKTextElement * title;
-@property(assign,retain) NSURL * url;
+@property (nonatomic, readonly, retain) NSArray *events;
+@property (nonatomic, readonly) double refreshInterval;
+@property (nonatomic, readonly) unsigned long long timelineType;
+@property (nonatomic, readonly, retain) IKTextElement *title;
+@property (nonatomic, readonly, retain) NSURL *url;
 
 - (id)events;
 - (double)refreshInterval;

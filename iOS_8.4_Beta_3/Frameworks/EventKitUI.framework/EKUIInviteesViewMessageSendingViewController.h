@@ -7,12 +7,12 @@
     id _messageSendingComplete;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) EKEvent * event;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id messageSendingComplete;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) EKEvent *event;
+@property (readonly) unsigned long long hash;
+@property (copy) id messageSendingComplete;
+@property (readonly) Class superclass;
 
 + (id)_attendeesIgnorningMe:(id)arg1;
 + (id)_recipientEmailAddressesToDisplayNames:(id)arg1;

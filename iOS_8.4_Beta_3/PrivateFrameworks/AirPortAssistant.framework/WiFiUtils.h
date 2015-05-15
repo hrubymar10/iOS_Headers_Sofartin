@@ -16,9 +16,9 @@
     struct WiFiShimContext { } *_wifiShim;
 }
 
-@property(assign,retain) NSTimer * _scanTimer;
-@property(assign,readwrite) double periodicScanInterval;
-@property(assign,readwrite) int periodicScanType;
+@property (nonatomic, retain) NSTimer *_scanTimer;
+@property (nonatomic) double periodicScanInterval;
+@property (nonatomic) int periodicScanType;
 
 + (int)barsForRSSI:(int)arg1;
 + (id)copyFilteredNetworks:(id)arg1 ignoreOptions:(int)arg2;

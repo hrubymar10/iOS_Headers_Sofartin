@@ -9,10 +9,10 @@
     SUScriptViewController *_viewController;
 }
 
-@property(assign,retain) NSString * badgeValue;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) bool transient;
-@property(assign,readonly) SUScriptViewController * viewController;
+@property (retain) NSString *badgeValue;
+@property (readonly) NSString *identifier;
+@property (readonly) bool transient;
+@property (readonly) SUScriptViewController *viewController;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

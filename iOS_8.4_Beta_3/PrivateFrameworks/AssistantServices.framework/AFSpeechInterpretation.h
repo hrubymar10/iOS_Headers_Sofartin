@@ -6,7 +6,7 @@
     NSArray *_tokens;
 }
 
-@property(assign,copy) NSArray * tokens;
+@property (nonatomic, copy) NSArray *tokens;
 
 + (bool)supportsSecureCoding;
 

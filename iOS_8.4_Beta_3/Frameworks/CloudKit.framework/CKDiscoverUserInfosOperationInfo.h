@@ -8,9 +8,9 @@
     NSArray *_userRecordIDs;
 }
 
-@property(assign,retain) NSArray * emails;
-@property(assign,readwrite) bool shouldDiscoverAllContacts;
-@property(assign,retain) NSArray * userRecordIDs;
+@property (nonatomic, retain) NSArray *emails;
+@property (nonatomic) bool shouldDiscoverAllContacts;
+@property (nonatomic, retain) NSArray *userRecordIDs;
 
 + (bool)supportsSecureCoding;
 

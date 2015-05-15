@@ -6,7 +6,7 @@
     NSString *_homeDirectoryPath;
 }
 
-@property(assign,copy) NSString * homeDirectoryPath;
+@property (nonatomic, copy) NSString *homeDirectoryPath;
 
 + (void)_removeDatabases:(id)arg1 withHomeDirectoryPath:(id)arg2;
 + (void)removeAllDatabasesWithHomeDirectoryPath:(id)arg1;

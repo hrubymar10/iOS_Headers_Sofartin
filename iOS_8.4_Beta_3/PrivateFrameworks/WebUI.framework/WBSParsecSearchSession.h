@@ -22,11 +22,11 @@
     bool _valid;
 }
 
-@property(assign,readonly) WBSParsecSearchClient * client;
-@property(assign,retain) WBSCompletionQuery * currentQuery;
-@property(assign,readwrite) <WBSParsecSearchSessionDelegate> * delegate;
-@property(setter=setUIScale:,assign,readwrite) double uiScale;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (nonatomic, readonly) WBSParsecSearchClient *client;
+@property (nonatomic, retain) WBSCompletionQuery *currentQuery;
+@property (nonatomic) <WBSParsecSearchSessionDelegate> *delegate;
+@property (setter=setUIScale:, nonatomic) double uiScale;
+@property (getter=isValid, nonatomic, readonly) bool valid;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

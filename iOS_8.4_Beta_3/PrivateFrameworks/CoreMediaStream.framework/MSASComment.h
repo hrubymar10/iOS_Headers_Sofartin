@@ -20,21 +20,21 @@
     NSDate *_timestamp;
 }
 
-@property(assign,retain) NSString * GUID;
-@property(assign,readwrite) int ID;
-@property(assign,retain) NSDate * clientTimestamp;
-@property(assign,retain) NSString * content;
-@property(assign,retain) NSString * email;
-@property(assign,retain) NSString * firstName;
-@property(assign,retain) NSString * fullName;
-@property(assign,readwrite) bool isBatchComment;
-@property(assign,readwrite) bool isCaption;
-@property(assign,readwrite) bool isDeletable;
-@property(assign,readwrite) bool isLike;
-@property(assign,readwrite) bool isMine;
-@property(assign,retain) NSString * lastName;
-@property(assign,retain) NSString * personID;
-@property(assign,retain) NSDate * timestamp;
+@property (nonatomic, retain) NSString *GUID;
+@property (nonatomic) int ID;
+@property (nonatomic, retain) NSDate *clientTimestamp;
+@property (nonatomic, retain) NSString *content;
+@property (nonatomic, retain) NSString *email;
+@property (nonatomic, retain) NSString *firstName;
+@property (nonatomic, retain) NSString *fullName;
+@property (nonatomic) bool isBatchComment;
+@property (nonatomic) bool isCaption;
+@property (nonatomic) bool isDeletable;
+@property (nonatomic) bool isLike;
+@property (nonatomic) bool isMine;
+@property (nonatomic, retain) NSString *lastName;
+@property (nonatomic, retain) NSString *personID;
+@property (nonatomic, retain) NSDate *timestamp;
 
 + (id)MSASPCommentFromProtocolDictionary:(id)arg1;
 + (id)comment;

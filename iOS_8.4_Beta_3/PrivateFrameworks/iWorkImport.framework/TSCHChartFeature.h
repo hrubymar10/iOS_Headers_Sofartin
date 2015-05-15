@@ -8,8 +8,8 @@
     NSArray *mValueAxisIDs;
 }
 
-@property(assign,retain) NSArray * categoryAxisIDs;
-@property(assign,retain) NSArray * valueAxisIDs;
+@property (nonatomic, readonly, retain) NSArray *categoryAxisIDs;
+@property (nonatomic, readonly, retain) NSArray *valueAxisIDs;
 
 - (id)categoryAxisIDs;
 - (id)categoryLabelPositioner;

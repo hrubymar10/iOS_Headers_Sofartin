@@ -12,13 +12,13 @@
     NSObject<OS_xpc_object> *_xpcUpdates;
 }
 
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSSet * deletes;
-@property(assign,copy) NSSet * inserts;
-@property(assign,copy) NSSet * updates;
-@property(assign,retain) NSObject<OS_xpc_object> * xpcDeletes;
-@property(assign,retain) NSObject<OS_xpc_object> * xpcInserts;
-@property(assign,retain) NSObject<OS_xpc_object> * xpcUpdates;
+@property (nonatomic, copy) id completionHandler;
+@property (nonatomic, copy) NSSet *deletes;
+@property (nonatomic, copy) NSSet *inserts;
+@property (nonatomic, copy) NSSet *updates;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *xpcDeletes;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *xpcInserts;
+@property (nonatomic, retain) NSObject<OS_xpc_object> *xpcUpdates;
 
 + (void)_addChangeRequests:(id)arg1 toXPCDict:(id)arg2 withKey:(const char *)arg3;
 + (void)applyPhotoKitInserts:(id)arg1 updates:(id)arg2 deletes:(id)arg3 completionHandler:(id)arg4;

@@ -4,10 +4,10 @@
 
 @interface SAMovieV2TheaterListCell : SADomainObject
 
-@property(assign,retain) SADistance * relativeDistance;
-@property(assign,copy) NSString * theaterAddress;
-@property(assign,copy) NSString * theaterName;
-@property(assign,retain) SAMovieV2MovieListSnippet * theaterShowtimeListSnippet;
+@property (nonatomic, retain) SADistance *relativeDistance;
+@property (nonatomic, copy) NSString *theaterAddress;
+@property (nonatomic, copy) NSString *theaterName;
+@property (nonatomic, retain) SAMovieV2MovieListSnippet *theaterShowtimeListSnippet;
 
 + (id)theaterListCell;
 + (id)theaterListCellWithDictionary:(id)arg1 context:(id)arg2;

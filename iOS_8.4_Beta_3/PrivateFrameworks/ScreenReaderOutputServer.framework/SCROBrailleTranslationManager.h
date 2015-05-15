@@ -16,11 +16,11 @@
     NSBundle *_translatorBundle;
 }
 
-@property(assign,readwrite) bool alwaysUsesNemethCodeForTechnicalText;
-@property(assign,readonly) bool auxiliaryTableSupportsContractedBraille;
-@property(assign,readonly) bool auxiliaryTableSupportsEightDotBraille;
-@property(assign,readonly) bool primaryTableSupportsContractedBraille;
-@property(assign,readonly) bool primaryTableSupportsEightDotBraille;
+@property (nonatomic) bool alwaysUsesNemethCodeForTechnicalText;
+@property (nonatomic, readonly) bool auxiliaryTableSupportsContractedBraille;
+@property (nonatomic, readonly) bool auxiliaryTableSupportsEightDotBraille;
+@property (nonatomic, readonly) bool primaryTableSupportsContractedBraille;
+@property (nonatomic, readonly) bool primaryTableSupportsEightDotBraille;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (void)initialize;

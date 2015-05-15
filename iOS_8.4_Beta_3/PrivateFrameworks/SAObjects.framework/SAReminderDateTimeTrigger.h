@@ -4,10 +4,10 @@
 
 @interface SAReminderDateTimeTrigger : SAReminderTrigger
 
-@property(assign,copy) NSDate * date;
-@property(assign,retain) SAReminderDateTimeTriggerOffset * offset;
-@property(assign,retain) SAReminderDateTimeTriggerOffset * relativeTimeOffset;
-@property(assign,copy) NSString * timeZoneId;
+@property (nonatomic, copy) NSDate *date;
+@property (nonatomic, retain) SAReminderDateTimeTriggerOffset *offset;
+@property (nonatomic, retain) SAReminderDateTimeTriggerOffset *relativeTimeOffset;
+@property (nonatomic, copy) NSString *timeZoneId;
 
 + (id)dateTimeTrigger;
 + (id)dateTimeTriggerWithDictionary:(id)arg1 context:(id)arg2;

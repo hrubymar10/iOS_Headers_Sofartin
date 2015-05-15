@@ -7,8 +7,8 @@
     id _animationDidStopBlock;
 }
 
-@property(assign,copy) id animationDidStartBlock;
-@property(assign,copy) id animationDidStopBlock;
+@property (nonatomic, copy) id animationDidStartBlock;
+@property (nonatomic, copy) id animationDidStopBlock;
 
 - (void)animationDidStart:(id)arg1;
 - (id)animationDidStartBlock;

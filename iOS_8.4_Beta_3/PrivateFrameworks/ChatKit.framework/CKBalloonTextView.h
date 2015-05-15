@@ -9,14 +9,14 @@
     bool _singleLine;
 }
 
-@property(assign,copy) NSAttributedString * attributedText;
-@property(assign,readwrite) double capOffsetFromBoundsTop;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) double lastLineBaselineOffsetFromBoundsTop;
-@property(getter=isSingleLine,assign,readwrite) bool singleLine;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSAttributedString *attributedText;
+@property (nonatomic) double capOffsetFromBoundsTop;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) double lastLineBaselineOffsetFromBoundsTop;
+@property (getter=isSingleLine, nonatomic) bool singleLine;
+@property (readonly) Class superclass;
 
 - (id)attributedText;
 - (double)capOffsetFromBoundsTop;

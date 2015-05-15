@@ -8,8 +8,8 @@
     unsigned long long _options;
 }
 
-@property(assign,readonly) unsigned long long archiveLength;
-@property(assign,readonly) bool isValid;
+@property (nonatomic, readonly) unsigned long long archiveLength;
+@property (nonatomic, readonly) bool isValid;
 
 - (void).cxx_destruct;
 - (void)addEntry:(id)arg1;

@@ -20,14 +20,14 @@
     unsigned long long _zoomLevel;
 }
 
-@property(assign,retain) NSString * attributionString;
-@property(assign,retain) id context;
-@property(assign,readwrite) struct { double x1; double x2; } coordinate;
-@property(assign,readwrite) MKMapSnapshotCreator * delegate;
-@property(assign,readonly) UIImage * image;
-@property(assign,retain) id requester;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readwrite) unsigned long long zoomLevel;
+@property (nonatomic, retain) NSString *attributionString;
+@property (nonatomic, retain) id context;
+@property (nonatomic) struct { double x1; double x2; } coordinate;
+@property (nonatomic) MKMapSnapshotCreator *delegate;
+@property (nonatomic, readonly) UIImage *image;
+@property (nonatomic, retain) id requester;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic) unsigned long long zoomLevel;
 
 - (void).cxx_destruct;
 - (id)attributionString;

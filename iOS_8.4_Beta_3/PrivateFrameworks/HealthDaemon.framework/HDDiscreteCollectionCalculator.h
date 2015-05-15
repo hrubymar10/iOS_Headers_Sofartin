@@ -25,7 +25,7 @@
     bool _detailBySource;
 }
 
-@property(assign,readwrite) bool detailBySource;
+@property (nonatomic) bool detailBySource;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

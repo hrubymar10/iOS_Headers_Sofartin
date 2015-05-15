@@ -27,11 +27,11 @@
     bool _videoConferenceCallRinging;
 }
 
-@property(setter=_setActivePattern:,assign,retain) NSDictionary * _activePattern;
-@property(assign,retain) NSDictionary * _patterns;
-@property(getter=_isTorchDeviceOn,setter=_setTorchDeviceOn:,assign,readwrite) bool _torchDeviceOn;
-@property(getter=_isTorchDeviceOpen,setter=_setTorchDeviceOpen:,assign,readwrite) bool _torchDeviceOpen;
-@property(setter=_setTypeToUseForVisualAlertAfterCaptureSessionStopsRunning:,assign,readwrite) unsigned long long _typeToUseForVisualAlertAfterCaptureSessionStopsRunning;
+@property (setter=_setActivePattern:, nonatomic, retain) NSDictionary *_activePattern;
+@property (nonatomic, readonly, retain) NSDictionary *_patterns;
+@property (getter=_isTorchDeviceOn, setter=_setTorchDeviceOn:, nonatomic) bool _torchDeviceOn;
+@property (getter=_isTorchDeviceOpen, setter=_setTorchDeviceOpen:, nonatomic) bool _torchDeviceOpen;
+@property (setter=_setTypeToUseForVisualAlertAfterCaptureSessionStopsRunning:, nonatomic) unsigned long long _typeToUseForVisualAlertAfterCaptureSessionStopsRunning;
 
 + (void)initialize;
 + (id)sharedVisualAlertManager;

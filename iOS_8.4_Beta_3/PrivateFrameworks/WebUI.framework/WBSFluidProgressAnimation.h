@@ -9,10 +9,10 @@
     CAMediaTimingFunction *_timingFunction;
 }
 
-@property(assign,readwrite) double animationDuration;
-@property(assign,readwrite) double destinationPosition;
-@property(assign,readwrite) double initialPosition;
-@property(assign,retain) CAMediaTimingFunction * timingFunction;
+@property (nonatomic) double animationDuration;
+@property (nonatomic) double destinationPosition;
+@property (nonatomic) double initialPosition;
+@property (nonatomic, retain) CAMediaTimingFunction *timingFunction;
 
 - (void).cxx_destruct;
 - (double)animationDuration;

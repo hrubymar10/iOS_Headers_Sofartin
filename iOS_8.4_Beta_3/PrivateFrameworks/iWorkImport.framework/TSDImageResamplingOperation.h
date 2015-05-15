@@ -13,11 +13,11 @@
     TSPObjectContext *mObjectContext;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } desiredSize;
-@property(assign,copy) NSString * displayName;
-@property(assign,retain) TSDImageProvider * imageProvider;
-@property(assign,readwrite) struct CGPath { }* maskingPath;
-@property(assign,retain) TSPObjectContext * objectContext;
+@property (nonatomic) struct CGSize { double x1; double x2; } desiredSize;
+@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic, retain) TSDImageProvider *imageProvider;
+@property (nonatomic) struct CGPath { }*maskingPath;
+@property (nonatomic, retain) TSPObjectContext *objectContext;
 
 - (void)dealloc;
 - (struct CGSize { double x1; double x2; })desiredSize;

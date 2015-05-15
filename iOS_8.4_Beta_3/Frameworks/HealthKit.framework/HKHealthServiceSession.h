@@ -12,13 +12,13 @@
     id _transitoryDataHandler;
 }
 
-@property(assign,copy) id characteristicsHandler;
-@property(assign,retain) NSArray * interestedTransitoryKeys;
-@property(assign,retain) NSLock * propertyLock;
-@property(assign,readonly) HKHealthService * service;
-@property(assign,copy) id sessionHandler;
-@property(assign,readwrite) unsigned long long sessionIdentifier;
-@property(assign,copy) id transitoryDataHandler;
+@property (nonatomic, copy) id characteristicsHandler;
+@property (retain) NSArray *interestedTransitoryKeys;
+@property (nonatomic, retain) NSLock *propertyLock;
+@property (nonatomic, readonly) HKHealthService *service;
+@property (nonatomic, copy) id sessionHandler;
+@property (nonatomic) unsigned long long sessionIdentifier;
+@property (copy) id transitoryDataHandler;
 
 - (void).cxx_destruct;
 - (id)characteristicsHandler;

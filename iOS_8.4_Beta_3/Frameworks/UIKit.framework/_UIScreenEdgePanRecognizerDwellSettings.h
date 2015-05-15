@@ -12,13 +12,13 @@
     double _longPressTipPermittedVerticalMovement;
 }
 
-@property(assign,readwrite) double longPressFlatPermittedHorizontalMovement;
-@property(assign,readwrite) double longPressFlatPermittedVerticalMovement;
-@property(assign,readwrite) double longPressPermittedHorizontalMovement;
-@property(assign,readwrite) double longPressPermittedVerticalMovement;
-@property(assign,readwrite) double longPressRequiredDuration;
-@property(assign,readwrite) double longPressTipPermittedHorizontalMovement;
-@property(assign,readwrite) double longPressTipPermittedVerticalMovement;
+@property (nonatomic) double longPressFlatPermittedHorizontalMovement;
+@property (nonatomic) double longPressFlatPermittedVerticalMovement;
+@property (nonatomic) double longPressPermittedHorizontalMovement;
+@property (nonatomic) double longPressPermittedVerticalMovement;
+@property (nonatomic) double longPressRequiredDuration;
+@property (nonatomic) double longPressTipPermittedHorizontalMovement;
+@property (nonatomic) double longPressTipPermittedVerticalMovement;
 
 + (id)settingsControllerModule;
 

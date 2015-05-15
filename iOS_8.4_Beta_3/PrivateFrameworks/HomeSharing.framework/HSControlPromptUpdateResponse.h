@@ -8,9 +8,9 @@
     NSDictionary *_promptDictionary;
 }
 
-@property(assign,readwrite) unsigned int nextPromptID;
-@property(assign,retain) HSControlPrompt * prompt;
-@property(assign,copy) NSDictionary * promptDictionary;
+@property (nonatomic) unsigned int nextPromptID;
+@property (nonatomic, retain) HSControlPrompt *prompt;
+@property (nonatomic, copy) NSDictionary *promptDictionary;
 
 - (void).cxx_destruct;
 - (unsigned int)nextPromptID;

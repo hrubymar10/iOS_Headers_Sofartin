@@ -9,10 +9,10 @@
     NSArray *_var;
 }
 
-@property(assign,readwrite) double averageVar;
-@property(assign,retain) NSArray * mean;
-@property(assign,readwrite) double temporalResolution;
-@property(assign,retain) NSArray * var;
+@property double averageVar;
+@property (retain) NSArray *mean;
+@property double temporalResolution;
+@property (retain) NSArray *var;
 
 - (void).cxx_destruct;
 - (double)averageProgressVariance;

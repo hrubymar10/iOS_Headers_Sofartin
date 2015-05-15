@@ -11,8 +11,8 @@
     NSArray *_images;
 }
 
-@property(assign,readonly) NSString * artKey;
-@property(assign,retain) NSArray * images;
+@property (nonatomic, readonly) NSString *artKey;
+@property (nonatomic, retain) NSArray *images;
 
 - (id)artKey;
 - (bool)beginContentAccess;

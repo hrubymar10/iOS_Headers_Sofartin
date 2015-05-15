@@ -12,8 +12,8 @@
     NSMutableArray *_script;
 }
 
-@property(assign,copy) NSArray * operationPrecedenceArray;
-@property(assign,retain) NSMutableArray * script;
+@property (nonatomic, copy) NSArray *operationPrecedenceArray;
+@property (nonatomic, retain) NSMutableArray *script;
 
 - (void)addToCurrentScriptAtomEditOperation:(long long)arg1 editIndex:(unsigned long long)arg2 newText:(id)arg3 indexInArrayB:(unsigned long long)arg4;
 - (void)computeDistanceMatrix;

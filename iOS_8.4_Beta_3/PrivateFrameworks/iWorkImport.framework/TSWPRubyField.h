@@ -6,9 +6,9 @@
     NSString *_rubyText;
 }
 
-@property(assign,readonly) NSString * baseText;
-@property(assign,readonly) int baseTextScript;
-@property(assign,copy) NSString * rubyText;
+@property (nonatomic, readonly) NSString *baseText;
+@property (nonatomic, readonly) int baseTextScript;
+@property (nonatomic, copy) NSString *rubyText;
 
 - (bool)allowsEditing;
 - (int)attributeArrayKind;

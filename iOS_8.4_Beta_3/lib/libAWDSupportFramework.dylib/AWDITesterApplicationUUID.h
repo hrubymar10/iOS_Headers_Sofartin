@@ -10,10 +10,10 @@
     NSString *_uuid;
 }
 
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readonly) bool hasUuid;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,retain) NSString * uuid;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, readonly) bool hasUuid;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic, retain) NSString *uuid;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

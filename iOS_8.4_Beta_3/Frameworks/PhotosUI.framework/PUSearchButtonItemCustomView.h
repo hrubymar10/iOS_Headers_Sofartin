@@ -7,8 +7,8 @@
     bool _nudgesSearchIcon;
 }
 
-@property(assign,readwrite) UINavigationBar * navigationBar;
-@property(assign,readwrite) bool nudgesSearchIcon;
+@property (nonatomic) UINavigationBar *navigationBar;
+@property (nonatomic) bool nudgesSearchIcon;
 
 - (void).cxx_destruct;
 - (void)didMoveToSuperview;

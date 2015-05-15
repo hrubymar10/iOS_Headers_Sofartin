@@ -6,13 +6,13 @@
     long long _matchLocation;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long matchLocation;
-@property(assign,readonly) NSString * parsecDomainIdentifier;
-@property(assign,readonly) Class superclass;
-@property(getter=isTopHit,assign,readonly) bool topHit;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long matchLocation;
+@property (nonatomic, readonly) NSString *parsecDomainIdentifier;
+@property (readonly) Class superclass;
+@property (getter=isTopHit, nonatomic, readonly) bool topHit;
 
 + (long long)matchLocationForString:(id)arg1 inTitle:(id)arg2;
 + (long long)matchLocationForString:(id)arg1 inURLString:(id)arg2;

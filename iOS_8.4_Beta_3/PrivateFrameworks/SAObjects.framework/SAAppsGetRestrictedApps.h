@@ -4,7 +4,7 @@
 
 @interface SAAppsGetRestrictedApps : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * appIds;
+@property (nonatomic, copy) NSArray *appIds;
 
 + (id)getRestrictedApps;
 + (id)getRestrictedAppsWithDictionary:(id)arg1 context:(id)arg2;

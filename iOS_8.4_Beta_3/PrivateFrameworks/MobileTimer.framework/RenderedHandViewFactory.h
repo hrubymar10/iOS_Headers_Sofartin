@@ -23,9 +23,9 @@
     } _viewSize;
 }
 
-@property(assign,readonly) bool allowCaching;
-@property(assign,readonly) NSString * key;
-@property(assign,readwrite) unsigned long long registeredClientsCount;
+@property (nonatomic, readonly) bool allowCaching;
+@property (nonatomic, readonly) NSString *key;
+@property (nonatomic) unsigned long long registeredClientsCount;
 
 + (void)flushAllCaches;
 + (id)keyForBundle:(id)arg1 imagePath:(id)arg2 offset:(struct CGPoint { double x1; double x2; })arg3 scale:(struct CGSize { double x1; double x2; })arg4;

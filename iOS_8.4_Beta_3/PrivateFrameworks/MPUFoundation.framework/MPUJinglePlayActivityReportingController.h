@@ -16,9 +16,9 @@
     bool _shouldReportPlayActivityEvents;
 }
 
-@property(assign,readonly) SSVPlayActivityController * playActivityController;
-@property(assign,readwrite) bool shouldReportAggregateTimePlayActivityEvents;
-@property(assign,readwrite) bool shouldReportPlayActivityEvents;
+@property (nonatomic, readonly) SSVPlayActivityController *playActivityController;
+@property (nonatomic) bool shouldReportAggregateTimePlayActivityEvents;
+@property (nonatomic) bool shouldReportPlayActivityEvents;
 
 - (void).cxx_destruct;
 - (void)_applicationWillTerminateNotification:(id)arg1;

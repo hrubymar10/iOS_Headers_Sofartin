@@ -10,14 +10,14 @@
     UIImage *_placeholderImage;
 }
 
-@property(assign,readonly) SKUIResourceLoader * artworkLoader;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIImageDataConsumer * imageDataConsumer;
-@property(assign,readonly) struct CGSize { double x1; double x2; } imageSize;
-@property(assign,readonly) UIImage * placeholderImage;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) SKUIResourceLoader *artworkLoader;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIImageDataConsumer *imageDataConsumer;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic, readonly) UIImage *placeholderImage;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_loadImage:(id)arg1;

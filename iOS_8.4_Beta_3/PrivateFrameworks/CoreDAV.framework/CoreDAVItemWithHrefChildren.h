@@ -7,8 +7,8 @@
     CoreDAVItemWithNoChildren *_unauthenticated;
 }
 
-@property(assign,retain) NSMutableSet * hrefs;
-@property(assign,retain) CoreDAVItemWithNoChildren * unauthenticated;
+@property (nonatomic, retain) NSMutableSet *hrefs;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *unauthenticated;
 
 + (id)copyParseRules;
 

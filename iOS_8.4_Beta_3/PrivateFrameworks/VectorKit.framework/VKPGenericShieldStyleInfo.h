@@ -28,24 +28,24 @@
     float _textStrokeSize;
 }
 
-@property(assign,readwrite) unsigned int backgroundColor;
-@property(assign,readwrite) unsigned int borderColor;
-@property(assign,readwrite) bool hasBackgroundColor;
-@property(assign,readwrite) bool hasBorderColor;
-@property(assign,readwrite) bool hasStyle;
-@property(assign,readwrite) bool hasTextColor;
-@property(assign,readwrite) bool hasTextDropShadowColor;
-@property(assign,readwrite) bool hasTextDropShadowSize;
-@property(assign,readwrite) bool hasTextStrokeColor;
-@property(assign,readwrite) bool hasTextStrokeSize;
-@property(assign,readwrite) int style;
-@property(assign,readwrite) unsigned int textColor;
-@property(assign,readwrite) unsigned int textDropShadowColor;
-@property(assign,readonly) float* textDropShadowOffsets;
-@property(assign,readonly) unsigned long long textDropShadowOffsetsCount;
-@property(assign,readwrite) float textDropShadowSize;
-@property(assign,readwrite) unsigned int textStrokeColor;
-@property(assign,readwrite) float textStrokeSize;
+@property (nonatomic) unsigned int backgroundColor;
+@property (nonatomic) unsigned int borderColor;
+@property (nonatomic) bool hasBackgroundColor;
+@property (nonatomic) bool hasBorderColor;
+@property (nonatomic) bool hasStyle;
+@property (nonatomic) bool hasTextColor;
+@property (nonatomic) bool hasTextDropShadowColor;
+@property (nonatomic) bool hasTextDropShadowSize;
+@property (nonatomic) bool hasTextStrokeColor;
+@property (nonatomic) bool hasTextStrokeSize;
+@property (nonatomic) int style;
+@property (nonatomic) unsigned int textColor;
+@property (nonatomic) unsigned int textDropShadowColor;
+@property (nonatomic, readonly) float*textDropShadowOffsets;
+@property (nonatomic, readonly) unsigned long long textDropShadowOffsetsCount;
+@property (nonatomic) float textDropShadowSize;
+@property (nonatomic) unsigned int textStrokeColor;
+@property (nonatomic) float textStrokeSize;
 
 - (void)addTextDropShadowOffset:(float)arg1;
 - (unsigned int)backgroundColor;

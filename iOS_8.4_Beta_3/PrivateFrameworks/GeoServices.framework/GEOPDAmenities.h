@@ -8,8 +8,8 @@
     unsigned long long _amenitysSpace;
 }
 
-@property(assign,readonly) struct { int x1; bool x2; struct { unsigned int x_3_1_1 : 1; unsigned int x_3_1_2 : 1; } x3; }* amenitys;
-@property(assign,readonly) unsigned long long amenitysCount;
+@property (nonatomic, readonly) struct { int x1; bool x2; struct { unsigned int x_3_1_1 : 1; unsigned int x_3_1_2 : 1; } x3; }*amenitys;
+@property (nonatomic, readonly) unsigned long long amenitysCount;
 
 + (id)amentiesForPlaceData:(id)arg1;
 

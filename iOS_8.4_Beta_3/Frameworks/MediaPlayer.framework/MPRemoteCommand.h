@@ -10,7 +10,7 @@
     NSMutableArray *_targetInvocations;
 }
 
-@property(getter=isEnabled,assign,readwrite) bool enabled;
+@property (getter=isEnabled, nonatomic) bool enabled;
 
 - (void).cxx_destruct;
 - (void)_addTarget:(id)arg1 action:(SEL)arg2 retainTarget:(bool)arg3;

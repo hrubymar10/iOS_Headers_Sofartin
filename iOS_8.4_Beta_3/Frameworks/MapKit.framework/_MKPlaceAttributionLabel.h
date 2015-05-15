@@ -9,10 +9,10 @@
     double textBaselineOffset;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) double imageBaselineOffset;
-@property(assign,retain) NSString * imagePlaceholder;
-@property(assign,readwrite) double textBaselineOffset;
+@property (retain) UIImage *image;
+@property double imageBaselineOffset;
+@property (retain) NSString *imagePlaceholder;
+@property double textBaselineOffset;
 
 - (void).cxx_destruct;
 - (id)attributionWithString:(id)arg1;

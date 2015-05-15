@@ -9,10 +9,10 @@
     bool _unified;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,retain) ABUIPerson * person;
-@property(assign,retain) NSString * type;
-@property(getter=isUnified,assign,readwrite) bool unified;
+@property (retain) NSString *name;
+@property (retain) ABUIPerson *person;
+@property (retain) NSString *type;
+@property (getter=isUnified) bool unified;
 
 - (void)dealloc;
 - (id)description;
